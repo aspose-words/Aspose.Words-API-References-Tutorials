@@ -1,5 +1,5 @@
 ---
-title: Λάβετε ιδιότητες θέματος εγγράφου στο Word
+title: Λήψη ιδιοτήτων θέματος εγγράφου στο Word
 linktitle: Λάβετε ιδιότητες θέματος
 second_title: Aspose.Words Document Processing API
 description: Εξερευνήστε τις ιδιότητες θέματος ενός εγγράφου με το Aspose.Words για .NET. Προσαρμόστε στυλ και χρώματα για μια μοναδική εμφάνιση.

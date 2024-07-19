@@ -67,7 +67,7 @@ doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
 Deze coderegel beschermt het document en staat alleen toe dat formuliervelden worden bewerkt. Het wachtwoord "wachtwoord" wordt gebruikt om de beveiliging af te dwingen.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Sla het beveiligde document op  
 Laten we ten slotte ons document opslaan in de opgegeven map.

@@ -62,7 +62,7 @@ doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 
 ## Wniosek
 
-Gratulacje! Pomyślnie nauczyłeś się generować niestandardowe obrazy kodów kreskowych za pomocą Aspose.Words dla Java. Ta wszechstronna biblioteka otwiera świat możliwości automatyzacji i manipulacji dokumentami.
+Gratulacje! Pomyślnie nauczyłeś się generować niestandardowe obrazy kodów kreskowych przy użyciu Aspose.Words dla Java. Ta wszechstronna biblioteka otwiera świat możliwości automatyzacji i manipulacji dokumentami.
 
 ## Często zadawane pytania
 

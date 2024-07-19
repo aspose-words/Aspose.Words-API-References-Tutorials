@@ -88,7 +88,7 @@ Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 ```
 
-V tomto kroku přistoupíme k druhé části a její obsah připojíme ke třetí části. Nyní třetí oddíl obsahuje obsah prvního i druhého oddílu.
+tomto kroku přistoupíme k druhé části a její obsah připojíme ke třetí části. Nyní třetí oddíl obsahuje obsah prvního i druhého oddílu.
 
 ## Krok 6: Uložení dokumentu
 

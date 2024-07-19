@@ -2,7 +2,7 @@
 title: Insérer une table des matières dans un document Word
 linktitle: Insérer une table des matières dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment insérer une table des matières dans Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour une navigation transparente dans les documents.
+description: Découvrez comment insérer une table des matières dans Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour une navigation fluide dans les documents.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-table-of-contents/
@@ -127,4 +127,4 @@ Aspose.Words prend en charge la génération de plusieurs tables des matières a
 Oui, Aspose.Words garantit la compatibilité avec les différentes versions des formats Microsoft Word.
 
 ### Où puis-je trouver plus d’aide et de support pour Aspose.Words ?
-Pour plus d'aide, visitez le[Forum Aspose.Words](https://forum.aspose.com/c/words/8) ou consultez le[documentation officielle](https://reference.aspose.com/words/net/).
+ Pour plus d'aide, visitez le[Forum Aspose.Words](https://forum.aspose.com/c/words/8) ou consultez le[documentation officielle](https://reference.aspose.com/words/net/).

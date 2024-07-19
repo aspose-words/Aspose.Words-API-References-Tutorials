@@ -15,7 +15,7 @@ Neste tutorial, orientaremos você sobre como dividir um documento do Word em p�
 Para começar, especifique o diretório do seu documento e carregue-o em um objeto Document. Veja como:
 
 ```csharp
-// Caminho para o diretório de documentos.
+//Caminho para o diretório de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

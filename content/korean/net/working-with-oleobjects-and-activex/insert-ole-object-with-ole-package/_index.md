@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3단계: OLE 패키지를 사용하여 OLE 개체 삽입
- 문서 생성기 사용`InsertOleObject` OLE 패키지가 포함된 OLE 개체를 문서에 삽입하는 방법입니다. 데이터 스트림, 개체 유형, 표시 옵션 및 기타 필요한 설정을 지정합니다.
+ 문서 생성기 사용`InsertOleObject`OLE 패키지가 포함된 OLE 개체를 문서에 삽입하는 방법입니다. 데이터 스트림, 개체 유형, 표시 옵션 및 기타 필요한 설정을 지정합니다.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Q: OLE 패키지가 포함된 OLE 개체를 문서에 삽입하는 방법은 무엇입니까?
 
- 답변:`InsertOleObject`문서 작성기의 메소드(`DocumentBuilder`) OLE 패키지가 포함된 OLE 개체를 문서에 삽입합니다. 데이터 스트림, 개체 유형, 표시 옵션 및 기타 필요한 설정을 지정합니다. 예는 다음과 같습니다.
+ 답변:`InsertOleObject` 문서 작성기의 메소드(`DocumentBuilder`) OLE 패키지가 포함된 OLE 개체를 문서에 삽입합니다. 데이터 스트림, 개체 유형, 표시 옵션 및 기타 필요한 설정을 지정합니다. 예는 다음과 같습니다.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### Q: 문서를 어떻게 저장하나요?
 
- A: 문서를 사용하세요`Save` 문서를 파일로 저장하는 방법입니다. 예는 다음과 같습니다.
+ A: 문서를 사용하세요`Save`문서를 파일로 저장하는 방법입니다. 예는 다음과 같습니다.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

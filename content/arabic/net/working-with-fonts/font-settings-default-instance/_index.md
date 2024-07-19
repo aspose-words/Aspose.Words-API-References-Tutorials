@@ -55,7 +55,7 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 
 ## الخطوة 3: قم بتحميل المستند
 
- بعد تكوين مصادر الخطوط، فإن الخطوة التالية هي تحميل المستند الخاص بك في Aspose.Words`Document`هدف. يتيح لك هذا التعامل مع المستند وحفظه في النهاية.
+ بعد تكوين مصادر الخطوط، فإن الخطوة التالية هي تحميل المستند الخاص بك في Aspose.Words`Document` هدف. يتيح لك هذا التعامل مع المستند وحفظه في النهاية.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

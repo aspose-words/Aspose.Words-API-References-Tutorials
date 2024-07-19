@@ -99,7 +99,7 @@ Uitleg:
 - `builder.Write("This is a new bookmark.");`: Dit schrijft de tekst "Dit is een nieuwe bladwijzer." in de bladwijzer.
 - `builder.EndBookmark("NewBookmark");`: Hiermee wordt de bladwijzer met de naam "NewBookmark" beëindigd.
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Nadat u wijzigingen in de bladwijzers heeft aangebracht, moet u het document opslaan om deze wijzigingen te behouden.
 

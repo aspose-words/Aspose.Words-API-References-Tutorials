@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## चरण 2: इंडेंटेड कोड के लिए स्टाइलिंग जोड़ें
 
-हम इंडेंटेड कोड के लिए एक कस्टम स्टाइल जोड़ेंगे`Styles.Add` की विधि`Document` इस उदाहरण में, हम इंडेंटेड कोड के लिए "IndentedCode" नामक एक शैली बना रहे हैं।
+ हम इंडेंटेड कोड के लिए एक कस्टम स्टाइल जोड़ेंगे`Styles.Add` की विधि`Document` इस उदाहरण में, हम इंडेंटेड कोड के लिए "IndentedCode" नामक एक शैली बना रहे हैं।
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

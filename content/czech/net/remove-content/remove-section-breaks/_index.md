@@ -40,13 +40,13 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
     // Zkopírujte obsah aktuální sekce na začátek poslední sekce.
     doc.LastSection.PrependContent(doc.Sections[i]);
-    // Odstraňte zkopírovanou sekci.
+    // Odstraňte zkopírovanou část.
     doc.Sections[i].Remove();
 }
 ```
 
 ## Krok 4: Uložte upravený dokument
- Nakonec upravený dokument uložíme pomocí`Save` metoda. Zadejte požadovanou cestu k výstupnímu souboru a formát (např. DOCX) pro upravený dokument.
+Nakonec upravený dokument uložíme pomocí`Save` metoda. Zadejte požadovanou cestu k výstupnímu souboru a formát (např. DOCX) pro upravený dokument.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
@@ -67,7 +67,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
 	// Zkopírujte obsah aktuální sekce na začátek poslední sekce.
 	doc.LastSection.PrependContent(doc.Sections[i]);
-	// Odstraňte zkopírovanou sekci.
+	// Odstraňte zkopírovanou část.
 	doc.Sections[i].Remove();
 }
 

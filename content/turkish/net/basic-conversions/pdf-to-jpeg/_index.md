@@ -15,7 +15,7 @@ Hiç kendinizi bir PDF dosyasını JPEG görüntüsüne dönüştürmeniz gereke
 
 İşin özüne geçmeden önce, tüm ördeklerimizin arka arkaya olduğundan emin olalım. İşte ihtiyacınız olan şey:
 
-1.  Aspose.Words for .NET: Bu güçlü kütüphanenin kurulu olduğundan emin olun. Değilse indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Bu güçlü kütüphanenin kurulu olduğundan emin olun. Değilse indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 2. .NET Framework: Makinenizde .NET ortamının kurulu olduğundan emin olun.
 3. Visual Studio: İçinde rahatça gezinebildiğiniz sürece herhangi bir sürüm işinizi görecektir.
 4.  Bir PDF dosyası: PDF dosyanızı dönüştürülmeye hazır hale getirin. Bu eğitim için adlı bir dosya kullanacağız.`Pdf Document.pdf`.

@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Schritt 3: Einfügen eines OLE-Objekts
- Verwenden Sie den Document Builder`InsertOleObject` Methode zum Einfügen eines OLE-Objekts in das Dokument. Geben Sie die OLE-Objekt-URL, den Objekttyp, die Anzeigeoptionen und andere erforderliche Einstellungen an.
+ Verwenden Sie den Document Builder`InsertOleObject`Methode zum Einfügen eines OLE-Objekts in das Dokument. Geben Sie die OLE-Objekt-URL, den Objekttyp, die Anzeigeoptionen und andere erforderliche Einstellungen an.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "html-Datei", true, true, null);
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### F: Wie fügt man ein OLE-Objekt in das Dokument ein?
 
- A: Verwenden Sie die`InsertOleObject`Methode des Dokument-Builders (`DocumentBuilder`), um ein OLE-Objekt in das Dokument einzufügen. Geben Sie die URL des OLE-Objekts, den Objekttyp, die Anzeigeoptionen und andere erforderliche Einstellungen an. Hier ist ein Beispiel:
+ A: Verwenden Sie die`InsertOleObject` Methode des Dokument-Builders (`DocumentBuilder`), um ein OLE-Objekt in das Dokument einzufügen. Geben Sie die URL des OLE-Objekts, den Objekttyp, die Anzeigeoptionen und andere erforderliche Einstellungen an. Hier ist ein Beispiel:
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "html-Datei", true, true, null);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "html-Datei", true, true, null
 
 #### F: Wie speichere ich das Dokument?
 
- A: Verwenden Sie das Dokument`Save` Methode, um das Dokument in einer Datei zu speichern. Hier ist ein Beispiel:
+ A: Verwenden Sie das Dokument`Save`Methode, um das Dokument in einer Datei zu speichern. Hier ist ein Beispiel:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

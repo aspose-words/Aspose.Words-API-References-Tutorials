@@ -115,7 +115,7 @@ Masz problemy z rozszerzeniami internetowymi? Sprawdź dokumentację Aspose.Word
 
 ## Wniosek
 
-W tym przewodniku zbadaliśmy możliwości Aspose.Words dla Pythona w rozszerzaniu funkcjonalności dokumentów za pomocą rozszerzeń internetowych. Postępując zgodnie ze szczegółowymi instrukcjami, nauczyłeś się tworzyć, integrować i optymalizować rozszerzenia internetowe w swoich dokumentach. Już dziś zacznij ulepszać swój system zarządzania dokumentami dzięki możliwościom Aspose.Words!
+W tym przewodniku zbadaliśmy możliwości Aspose.Words dla Pythona w rozszerzaniu funkcjonalności dokumentów za pomocą rozszerzeń internetowych. Postępując zgodnie ze szczegółowymi instrukcjami, nauczyłeś się tworzyć, integrować i optymalizować rozszerzenia internetowe w swoich dokumentach. Zacznij ulepszać swój system zarządzania dokumentami dzięki możliwościom Aspose.Words już dziś!
 
 ## Często zadawane pytania
 

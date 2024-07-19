@@ -62,7 +62,7 @@ R: Il nodo principale in Node.js si riferisce al nodo immediatamente superiore n
 
 #### D: Come ottenere il nodo genitore di un nodo specifico?
 
-R: Per ottenere il nodo genitore di un nodo specifico, puoi utilizzare il file`parentNode` proprietà del nodo. Questa proprietà restituisce il nodo padre del nodo corrente.
+ R: Per ottenere il nodo genitore di un nodo specifico, puoi utilizzare il file`parentNode` proprietà del nodo. Questa proprietà restituisce il nodo padre del nodo corrente.
 
 #### D: Come verificare se un nodo ha un nodo genitore?
 
@@ -70,7 +70,7 @@ R: Per ottenere il nodo genitore di un nodo specifico, puoi utilizzare il file`p
 
 #### D: Possiamo cambiare il nodo genitore di un nodo?
 
- R: Nella maggior parte dei casi, il nodo principale di un nodo è determinato dalla struttura del documento XML e non può essere modificato direttamente. Tuttavia, puoi spostare un nodo su un altro nodo utilizzando metodi specifici, come`appendChild` O`insertBefore`.
+R: Nella maggior parte dei casi, il nodo principale di un nodo è determinato dalla struttura del documento XML e non può essere modificato direttamente. Tuttavia, puoi spostare un nodo su un altro nodo utilizzando metodi specifici, come`appendChild` O`insertBefore`.
 
 #### D: Come sfogliare la gerarchia dei nodi principali?
 

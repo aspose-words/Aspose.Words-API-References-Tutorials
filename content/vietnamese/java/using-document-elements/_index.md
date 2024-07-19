@@ -56,7 +56,7 @@ Tìm hiểu cách sử dụng danh sách trong Aspose.Words cho Java với hư�
 ### [Sử dụng Markdown trong Aspose.Words cho Java](./using-markdown/)
 Tìm hiểu cách sử dụng Markdown trong Aspose.Words cho Java với hướng dẫn từng bước này. Tạo, tạo kiểu và lưu tài liệu Markdown một cách dễ dàng.
 ### [Sử dụng nút trong Aspose.Words cho Java](./using-nodes/)
-Tìm hiểu cách thao tác các nút trong Aspose.Words cho Java với hướng dẫn từng bước này. Mở khóa sức mạnh xử lý tài liệu.
+Tìm hiểu cách thao tác các nút trong Aspose.Words cho Java bằng hướng dẫn từng bước này. Mở khóa sức mạnh xử lý tài liệu.
 ### [Sử dụng đối tượng OLE và điều khiển ActiveX trong Aspose.Words cho Java](./using-ole-objects-and-activex/)
 Tìm hiểu cách sử dụng các đối tượng OLE và điều khiển ActiveX trong Aspose.Words cho Java. Tạo tài liệu tương tác một cách dễ dàng. Bắt đầu ngay bây giờ!
 ### [Sử dụng các bản sửa đổi trong Aspose.Words cho Java](./using-revisions/)

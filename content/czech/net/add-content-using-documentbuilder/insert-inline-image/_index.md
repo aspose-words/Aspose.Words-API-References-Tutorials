@@ -9,7 +9,7 @@ url: /cs/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 ## Úvod
 
-V oblasti zpracování dokumentů pomocí aplikací .NET stojí Aspose.Words jako robustní řešení pro programovou manipulaci s dokumenty Word. Jednou z jeho klíčových funkcí je schopnost bez námahy vkládat vložené obrázky, což zvyšuje vizuální přitažlivost a funkčnost vašich dokumentů. Tento výukový program se ponoří hluboko do toho, jak můžete využít Aspose.Words pro .NET k bezproblémovému vkládání obrázků do dokumentů aplikace Word.
+oblasti zpracování dokumentů pomocí aplikací .NET stojí Aspose.Words jako robustní řešení pro programovou manipulaci s dokumenty Word. Jednou z jeho klíčových funkcí je schopnost bez námahy vkládat vložené obrázky, což zvyšuje vizuální přitažlivost a funkčnost vašich dokumentů. Tento výukový program se ponoří hluboko do toho, jak můžete využít Aspose.Words pro .NET k bezproblémovému vkládání obrázků do dokumentů aplikace Word.
 
 ## Předpoklady
 

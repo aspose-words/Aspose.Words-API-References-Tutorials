@@ -10,7 +10,7 @@ url: /vi/java/document-manipulation/using-cleanup-options/
 
 ## Giới thiệu về Sử dụng Tùy chọn Dọn dẹp trong Aspose.Words cho Java
 
-Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng các tùy chọn dọn dẹp trong Aspose.Words cho Java để thao tác và dọn dẹp tài liệu trong quá trình trộn thư. Các tùy chọn dọn dẹp cho phép bạn kiểm soát các khía cạnh khác nhau của việc dọn dẹp tài liệu, chẳng hạn như xóa các đoạn trống, các vùng không sử dụng, v.v.
+Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng các tùy chọn dọn dẹp trong Aspose.Words cho Java để thao tác và dọn dẹp tài liệu trong quá trình trộn thư. Các tùy chọn dọn dẹp cho phép bạn kiểm soát các khía cạnh khác nhau của việc dọn dẹp tài liệu, chẳng hạn như xóa các đoạn văn trống, các vùng không sử dụng, v.v.
 
 ## Điều kiện tiên quyết
 

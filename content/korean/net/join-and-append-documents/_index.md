@@ -23,14 +23,14 @@ url: /ko/net/join-and-append-documents/
 | [공백에 문서 추가](./append-document-to-blank/) | .NET용 Aspose.Words를 사용하여 빈 문서에 문서를 원활하게 추가하는 방법을 알아보세요. 단계별 가이드, 코드 조각, FAQ가 포함되어 있습니다. |
 | [가져오기 형식 옵션으로 추가](./append-with-import-format-options/) | 자세한 단계별 지침에 따라 서식을 유지하면서 .NET용 Aspose.Words를 사용하여 Word 문서를 손쉽게 추가하세요. |
 | [다른 페이지 설정](./different-page-setup/) | .NET용 Aspose.Words를 사용하여 Word 문서를 병합할 때 다양한 페이지 구성을 설정하는 방법을 알아보세요. 단계별 가이드가 포함되어 있습니다. |
-| [연속 가입](./join-continuous/) | .NET용 Aspose.Words를 사용하여 두 개의 Word 문서를 원활하게 결합하는 방법을 알아보세요. 원활하고 효율적인 문서 병합을 위해 단계별 가이드를 따르세요. |
+| [연속 가입](./join-continuous/) | .NET용 Aspose.Words를 사용하여 두 개의 Word 문서를 원활하게 결합하는 방법을 알아보세요. 원활하고 효율적인 문서 병합을 위한 단계별 가이드를 따르세요. |
 | [새 페이지에 가입](./join-new-page/) | .NET용 Aspose.Words를 사용하여 Word에서 문서를 결합하고 추가하는 방법을 알아보세요. 효율적인 문서 병합을 위한 단계별 가이드를 따르세요. |
 | [소스 형식 유지](./keep-source-formatting/) | .NET용 Aspose.Words를 사용하여 서식을 유지하면서 Word 문서를 병합하는 방법을 알아보세요. 문서 조립 작업을 자동화하려는 개발자에게 이상적입니다. |
 | [소스를 함께 유지](./keep-source-together/) | 서식을 유지하면서 .NET용 Aspose.Words를 사용하여 Word 문서를 병합하는 방법을 알아보세요. 이 포괄적인 가이드는 설정부터 실행까지 모든 것을 다룹니다. |
 | [목록 소스 형식 유지](./list-keep-source-formatting/) | .NET용 Aspose.Words를 사용하여 서식을 유지하면서 Word 문서를 병합하는 방법을 알아보세요. 이 튜토리얼에서는 원활한 문서 병합을 위한 단계별 지침을 제공합니다. |
-| [목록 사용 대상 스타일](./list-use-destination-styles/) | Aspose.Words for .NET을 사용하여 문서 목록을 원활하게 병합하고 관리하는 방법을 알아보세요. 효율적인 문서 통합을 위한 단계별 튜토리얼을 따르십시오. |
+| [목록 사용 대상 스타일](./list-use-destination-styles/) | 목록 형식을 유지하면서 .NET용 Aspose.Words를 사용하여 Word 문서를 병합하는 방법을 알아보세요. 문서 스타일을 그대로 유지하기 위한 단계별 가이드입니다. |
 | [페이지 번호 매기기 다시 시작](./restart-page-numbering/) | .NET용 Aspose.Words를 사용하여 Word 문서를 결합하고 추가하는 동안 페이지 번호 매기기를 다시 시작하는 방법을 알아보세요. |
-| [페이지 레이아웃 업데이트](./update-page-layout/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 페이지 레이아웃을 쉽게 업데이트하세요. |
+| [페이지 레이아웃 업데이트](./update-page-layout/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 페이지 레이아웃을 업데이트하는 방법을 알아보세요. 문서 디자인을 수정하는 데 적합합니다. |
 | [대상 스타일 사용](./use-destination-styles/) | .NET용 Aspose.Words에서 대상 스타일을 사용하여 일관된 서식을 유지하면서 문서를 원활하게 추가하는 방법을 알아보세요. |
 | [스마트 스타일 동작](./smart-style-behavior/) | Word 문서를 .NET용 Aspose.Words와 원활하게 병합하여 스타일을 유지하고 전문적인 결과를 보장하는 방법을 알아보세요. |
 | [빌더를 사용하여 문서 삽입](./insert-document-with-builder/) | .NET용 Aspose.Words를 사용하여 두 개의 Word 문서를 병합하는 방법을 알아보세요. DocumentBuilder를 사용하여 문서를 삽입하고 서식을 유지하는 단계별 가이드입니다. |

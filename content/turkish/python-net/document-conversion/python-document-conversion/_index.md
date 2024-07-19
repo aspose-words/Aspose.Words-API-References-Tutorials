@@ -267,4 +267,4 @@ Evet, Aspose.Words, Word belgelerinin JPEG, PNG, BMP ve GIF gibi çeşitli gör�
 
 ### Dönüştürme sırasında büyük Word belgelerini nasıl işleyebilirim?
 
-Aspose.Words for Python, büyük Word belgelerini verimli bir şekilde yönetmek için tasarlanmıştır. Geliştiriciler, kapsamlı dosyaları işlerken bellek kullanımını ve performansı optimize edebilir.
+Aspose.Words for Python, büyük Word belgelerini verimli bir şekilde işlemek için tasarlanmıştır. Geliştiriciler, kapsamlı dosyaları işlerken bellek kullanımını ve performansı optimize edebilir.

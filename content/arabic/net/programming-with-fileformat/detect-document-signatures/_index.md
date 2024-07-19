@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## الخطوة 2: كشف التوقيعات الرقمية
 
- بعد ذلك، نستخدم`DetectFileFormat` طريقة`FileFormatUtil` فئة للكشف عن معلومات تنسيق الملف. في هذا المثال، نفترض أن المستند يسمى "Digitally Signed.docx" ويقع في دليل المستندات المحدد.
+ بعد ذلك، نستخدم`DetectFileFormat` طريقة`FileFormatUtil`فئة للكشف عن معلومات تنسيق الملف. في هذا المثال، نفترض أن المستند يسمى "Digitally Signed.docx" ويقع في دليل المستندات المحدد.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ if (info.HasDigitalSignature)
 
 #### كيفية اكتشاف وجود توقيع رقمي على مستند Word باستخدام Aspose.Words لـ .NET؟
 
- لاكتشاف وجود توقيع رقمي على مستند Word باستخدام Aspose.Words لـ .NET، يمكنك اتباع الخطوات الواردة في البرنامج التعليمي. باستخدام`DetectFileFormat` طريقة`FileFormatUtil` سيسمح لك الفصل باكتشاف معلومات تنسيق الملف. ثم يمكنك التحقق من`HasDigitalSignature` ملكية`FileFormatInfo`كائن لتحديد ما إذا كان المستند يحتوي على توقيع رقمي. إذا تم اكتشاف توقيع رقمي، يمكنك عرض رسالة تفيد بأنه سيتم فقدان التوقيعات إذا تم فتح/حفظ المستند باستخدام Aspose.Words.
+ لاكتشاف وجود توقيع رقمي على مستند Word باستخدام Aspose.Words لـ .NET، يمكنك اتباع الخطوات الواردة في البرنامج التعليمي. باستخدام`DetectFileFormat` طريقة`FileFormatUtil` سيسمح لك الفصل باكتشاف معلومات تنسيق الملف. ثم يمكنك التحقق من`HasDigitalSignature` ملكية`FileFormatInfo` كائن لتحديد ما إذا كان المستند يحتوي على توقيع رقمي. إذا تم اكتشاف توقيع رقمي، يمكنك عرض رسالة تفيد بأن التوقيعات ستفقد إذا تم فتح/حفظ المستند باستخدام Aspose.Words.
 
 #### كيفية تحديد الدليل الذي يحتوي على المستندات التي سيتم البحث فيها عن التوقيع الرقمي؟
 

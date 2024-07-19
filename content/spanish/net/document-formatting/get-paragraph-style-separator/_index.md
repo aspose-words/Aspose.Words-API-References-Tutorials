@@ -17,7 +17,7 @@ url: /es/net/document-formatting/get-paragraph-style-separator/
 Antes de pasar al código, asegurémonos de que tiene todas las herramientas que necesita:
 
 - Visual Studio: asegúrese de tenerlo instalado. De lo contrario, descárguelo e instálelo desde el sitio web de Microsoft.
--  Aspose.Words para .NET: si aún no lo tiene, obtenga la última versión[aquí](https://releases.aspose.com/words/net/).
+- Aspose.Words para .NET: si aún no lo tiene, obtenga la última versión[aquí](https://releases.aspose.com/words/net/).
 - Un documento de Word de muestra: debe contener separadores de estilo de párrafo con los que podamos trabajar. Puede crear uno o utilizar un documento existente.
 
 ## Importar espacios de nombres

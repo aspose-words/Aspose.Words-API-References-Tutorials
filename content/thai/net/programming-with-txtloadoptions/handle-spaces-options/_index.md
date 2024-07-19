@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- ในขั้นตอนนี้ เราจะกำหนดค่าตัวเลือกสำหรับการโหลดเอกสาร TXT เราสร้างใหม่`TxtLoadOptions` วัตถุและตั้งค่า`LeadingSpacesOptions`และ`TrailingSpacesOptions` คุณสมบัติที่จะ`TxtLeadingSpacesOptions.Trim`และ`TxtTrailingSpacesOptions.Trim` ตามลำดับ ซึ่งจะเป็นการบอกให้ Aspose.Words ลบช่องว่างนำหน้าและต่อท้ายออกจากบรรทัดเมื่อโหลดเอกสาร
+ ในขั้นตอนนี้ เรากำหนดค่าตัวเลือกสำหรับการโหลดเอกสาร TXT เราสร้างใหม่`TxtLoadOptions` วัตถุและตั้งค่า`LeadingSpacesOptions`และ`TrailingSpacesOptions` คุณสมบัติที่จะ`TxtLeadingSpacesOptions.Trim`และ`TxtTrailingSpacesOptions.Trim` ตามลำดับ ซึ่งจะเป็นการบอกให้ Aspose.Words ลบช่องว่างนำหน้าและต่อท้ายออกจากบรรทัดเมื่อโหลดเอกสาร
 
 ## ขั้นตอนที่ 4: การโหลดเอกสาร
 

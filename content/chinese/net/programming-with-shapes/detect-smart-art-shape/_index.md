@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "Smart Art.docx");
 
 ## 步骤 3：检测 SmartArt 形状
 
-现在到了最激动人心的部分——检测文档中的 SmartArt 形状。我们将计算包含 SmartArt 的形状数量。
+现在到了最激动人心的部分——检测文档中的 SmartArt 形状。我们将计算包含 SmartArt 的形状的数量。
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmartArt);

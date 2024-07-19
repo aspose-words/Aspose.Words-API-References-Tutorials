@@ -31,7 +31,7 @@ using System;
 
 ## Krok 1: Vytvořte nový dokument
 
- Nejprve vytvořte nový dokument a a`DocumentBuilder` usnadnit přidávání a manipulaci s obsahem.
+ Nejprve vytvořte nový dokument a a`DocumentBuilder` pro usnadnění přidávání a manipulace s obsahem.
 
 ```csharp
 Document doc = new Document();

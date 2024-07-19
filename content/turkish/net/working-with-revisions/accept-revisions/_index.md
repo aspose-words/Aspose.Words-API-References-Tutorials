@@ -15,7 +15,7 @@ Bu eğitimde, Aspose.Words for .NET'in Revizyonları Kabul Et özelliğini kulla
 Bu örnekte bir belge oluşturuyoruz ve içerik ekliyoruz. Değişiklikleri ve revizyonları göstermek için birkaç paragraf kullanıyoruz. İşte nasıl:
 
 ```csharp
-// Belgeler dizininin yolu.
+//Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 
 ### Aspose.Words for .NET kullanarak Düzeltmeleri Kabul Etme için örnek kaynak kodu
 
-Aspose.Words for .NET kullanarak bir belgedeki değişiklikleri kabul etmek için tam kaynak kodu:
+Aspose.Words for .NET kullanarak bir belgedeki değişiklikleri kabul etmek için gereken kaynak kodun tamamı burada:
 
 
 ```csharp

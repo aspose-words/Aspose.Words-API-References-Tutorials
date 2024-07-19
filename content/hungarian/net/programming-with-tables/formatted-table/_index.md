@@ -97,7 +97,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Itt a dokumentumkészítőt használjuk a táblázat elkészítéséhez lépésről lépésre. Hívással kezdjük`StartTable()` a táblázat inicializálásához. Akkor használjuk`InsertCell()` sejtek beillesztésére és`Write()` tartalom hozzáadásához az egyes cellákhoz. Különböző formázási tulajdonságokat is használunk a táblázatsorok, cellák és szövegek formázásának meghatározására.
+ Itt a dokumentumkészítőt használjuk a táblázat elkészítéséhez lépésről lépésre. Hívással kezdjük`StartTable()` a táblázat inicializálásához. Akkor használjuk`InsertCell()` sejtek beillesztésére és`Write()` hogy tartalmat adjon az egyes cellákhoz. Különböző formázási tulajdonságokat is használunk a táblázatsorok, cellák és szövegek formázásának meghatározására.
 
 ## 4. lépés: Mentse el a dokumentumot
 Végül el kell mentenünk a formázott táblázatot tartalmazó dokumentumot. Használja a következő kódot:

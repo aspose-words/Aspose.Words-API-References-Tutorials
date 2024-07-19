@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Nakonfigurujte možnosti načítání pomocí nastavení písma
-Dále vytvoříme instanci`LoadOptions` a určete nastavení písma vytvořením nové instance`FontSettings` a přiřadit jej`loadOptions.FontSettings`.
+ Dále vytvoříme instanci`LoadOptions` určete nastavení písma vytvořením nové instance`FontSettings` a přiřadit jej`loadOptions.FontSettings`.
 
 ```csharp
 // Nakonfigurujte možnosti načítání pomocí nastavení písma
@@ -57,15 +57,15 @@ V tomto tutoriálu jsme viděli, jak používat možnosti načítání s nastave
 
 #### Otázka: Jak mohu určit výchozí písmo při načítání dokumentu do Aspose.Words?
 
- A: Chcete-li určit výchozí písmo při načítání dokumentu v Aspose.Words, můžete použít`LoadOptions` třídu a nastavte`DefaultFontName`vlastnost na název požadovaného písma.
+ A: Chcete-li určit výchozí písmo při načítání dokumentu v Aspose.Words, můžete použít`LoadOptions` třídu a nastavte`DefaultFontName` vlastnost na název požadovaného písma.
 
 #### Otázka: Jaká další nastavení písma mohu určit pomocí možností načítání v Aspose.Words?
 
- Odpověď: Kromě zadání výchozího písma můžete také určit další nastavení písma, jako je výchozí kódování, pomocí příslušných vlastností`LoadOptions` třídy, jako např`DefaultEncoding`.
+ Odpověď: Kromě zadání výchozího písma můžete také určit další nastavení písma, jako je výchozí kódování, pomocí příslušných vlastností`LoadOptions` třídy, jako je např`DefaultEncoding`.
 
 #### Otázka: Co se stane, když zadané výchozí písmo není k dispozici při načítání dokumentu?
 
-Odpověď: Pokud zadané výchozí písmo není dostupné, když je dokument načten v Aspose.Words, použije se pro zobrazení textu v dokumentu náhradní písmo. To může způsobit mírný rozdíl ve vzhledu od původního písma.
+Odpověď: Pokud zadané výchozí písmo není k dispozici, když je dokument načten v Aspose.Words, použije se pro zobrazení textu v dokumentu náhradní písmo. To může způsobit mírný rozdíl ve vzhledu od původního písma.
 
 #### Otázka: Mohu zadat různá nastavení písma pro každý nahraný dokument?
 

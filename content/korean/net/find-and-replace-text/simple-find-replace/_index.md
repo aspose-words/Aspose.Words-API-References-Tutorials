@@ -69,7 +69,7 @@ Console.WriteLine("Original document text: " + doc.Range.Text);
 
 ## 4단계: 텍스트 바꾸기
 
-이곳이 바로 마법이 일어나는 곳입니다! 교체해드리겠습니다"_CustomerName_ "를 사용하여 "제임스 본드"와`Replace` 방법. 
+이곳이 바로 마법이 일어나는 곳입니다! "를 교체하겠습니다._CustomerName_ "를 사용하여 "제임스 본드"와`Replace` 방법. 
 
 ```csharp
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));

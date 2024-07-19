@@ -74,7 +74,7 @@ Pomyśl o tym jak o nakryciu obrusu i ustawieniu pierwszych naczyń. Dbamy o to,
 
 ## Krok 4: Utwórz drugi wiersz z niestandardowym formatowaniem
 
-Teraz wykażmy się kreatywnością przy drugim rzędzie. Ustawimy wysokość wiersza, inaczej wyrównamy tekst i dodamy trochę uroku, zmieniając orientację tekstu.
+Teraz wykażmy się kreatywnością z drugim rzędem. Ustawimy wysokość wiersza, inaczej wyrównamy tekst i dodamy trochę uroku, zmieniając orientację tekstu.
 
 ```csharp
 builder.InsertCell();

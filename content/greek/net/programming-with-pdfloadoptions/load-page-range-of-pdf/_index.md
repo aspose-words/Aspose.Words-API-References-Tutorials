@@ -15,7 +15,7 @@ url: /el/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 Χρησιμοποιήστε τον ακόλουθο κώδικα για να φορτώσετε μια συγκεκριμένη περιοχή σελίδων από ένα έγγραφο PDF:
 
 ```csharp
-// Διαδρομή στον κατάλογο εγγράφων.
+//Διαδρομή στον κατάλογο εγγράφων.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };

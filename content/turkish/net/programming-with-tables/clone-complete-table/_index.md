@@ -37,7 +37,7 @@ Daha sonra tablonun tamamını kopyalayıp belgeye orijinalin arkasına ekleyece
 // Diziyi klonlayın
 Table tableClone = (Table)table.Clone(true);
 
-//Klonlanmış tabloyu belgeye orijinalin arkasına ekleyin
+// Klonlanmış tabloyu belgeye orijinalden sonra ekleyin
 table.ParentNode.InsertAfter(tableClone, table);
 
 // İki tablo arasına boş bir paragraf ekleyin
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 	// Tabloyu kopyalayın ve belgeye orijinalin arkasına ekleyin.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// İki tablo arasına boş bir paragraf ekleyin,
+	//İki tablo arasına boş bir paragraf ekleyin,
 	// Aksi takdirde, kaydedildikten sonra tek bir belgede birleştirileceklerdir, bunun belge doğrulamayla ilgisi vardır.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

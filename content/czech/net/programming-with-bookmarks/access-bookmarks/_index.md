@@ -113,7 +113,7 @@ Vysvětlení:
 
 ## Závěr
 
-Přístup a manipulace se záložkami v dokumentu aplikace Word pomocí Aspose.Words for .NET je přímočarý proces, který může výrazně zlepšit vaše možnosti zpracování dokumentů. Podle kroků uvedených v této příručce můžete bez námahy načítat dokumenty, přistupovat k záložkám podle indexu nebo názvu, manipulovat s obsahem záložek, přidávat nové záložky a ukládat změny. Ať už automatizujete sestavy, generujete dynamické dokumenty nebo jen potřebujete spolehlivý způsob zpracování záložek, Aspose.Words pro .NET vás pokryje.
+Přístup a manipulace se záložkami v dokumentu aplikace Word pomocí Aspose.Words for .NET je přímočarý proces, který může výrazně zlepšit vaše možnosti zpracování dokumentů. Podle kroků uvedených v této příručce můžete bez námahy načítat dokumenty, přistupovat k záložkám podle indexu nebo názvu, manipulovat s obsahem záložek, přidávat nové záložky a ukládat změny. Ať už automatizujete sestavy, generujete dynamické dokumenty nebo jen potřebujete spolehlivý způsob, jak zacházet se záložkami, Aspose.Words pro .NET vás pokryje.
 
 ## FAQ
 

@@ -2,75 +2,77 @@
 title: Gambar
 linktitle: Gambar
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan dan menyesuaikan gambar dengan Aspose.Words untuk .NET Panduan langkah demi langkah.
+description: Pelajari cara menambahkan gambar ke dokumen Anda menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurnakan dokumen Anda dengan visual dalam waktu singkat.
 type: docs
 weight: 10
 url: /id/net/working-with-markdown/image/
 ---
+## Perkenalan
 
-Dalam contoh ini, kami akan menjelaskan cara menggunakan fitur gambar dengan Aspose.Words untuk .NET. Gambar memungkinkan Anda menyisipkan ilustrasi dan grafik ke dalam dokumen.
+Apakah Anda siap terjun ke dunia Aspose.Words untuk .NET? Hari ini, kita akan mempelajari cara menambahkan gambar ke dokumen Anda. Baik Anda sedang mengerjakan laporan, brosur, atau sekadar menyempurnakan dokumen sederhana, menambahkan gambar dapat membuat perbedaan besar. Jadi, mari kita mulai!
 
-## Langkah 1: Menggunakan pembuat dokumen
+## Prasyarat
 
-Pertama, kita akan menggunakan pembuat dokumen untuk menambahkan konten ke dokumen kita.
+Sebelum kita beralih ke kode, pastikan Anda memiliki semua yang Anda butuhkan:
+
+1.  Aspose.Words untuk .NET: Anda dapat mengunduhnya dari[Asumsikan situs web](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan .NET apa pun seperti Visual Studio.
+3. Pengetahuan Dasar C#: Jika Anda familiar dengan C#, Anda siap melakukannya!
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini penting untuk mengakses kelas dan metode Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah sederhana. Setiap langkah akan memiliki judul dan penjelasan mendetail untuk memastikan Anda mengikutinya dengan lancar.
+
+## Langkah 1: Inisialisasi DocumentBuilder
+
+ Untuk memulainya, Anda perlu membuat`DocumentBuilder` obyek. Objek ini akan membantu Anda menambahkan konten ke dokumen Anda.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Langkah 2: Memasukkan gambar
+## Langkah 2: Sisipkan Gambar
 
- Kita dapat menyisipkan gambar menggunakan`Shape` kelas dan menentukan jenis gambar, di sini`ShapeType.Image` . Kami juga mengatur jenis bungkus gambar`WrapType.Inline`.
-
-```csharp
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape. WrapType = WrapType. Inline;
-```
-
-## Langkah 3: Kustomisasi Gambar
-
- Kami menyesuaikan gambar dengan menentukan jalur lengkapnya, misalnya`"/attachment/1456/pic001.png"`, dan menambahkan judul pada gambar.
+Selanjutnya, Anda akan memasukkan gambar ke dalam dokumen Anda. Inilah cara Anda melakukannya:
 
 ```csharp
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "Title";
+Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
-### Contoh kode sumber untuk gambar dengan Aspose.Words untuk .NET
+ Mengganti`"path_to_your_image.jpg"` dengan jalur sebenarnya dari file gambar Anda. Itu`InsertImage` metode akan menambahkan gambar ke dokumen Anda.
+
+## Langkah 3: Atur Properti Gambar
+
+Anda dapat mengatur berbagai properti untuk gambar. Misalnya, mari kita atur judul gambar:
 
 ```csharp
-// Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.
-DocumentBuilder builder = new DocumentBuilder();
-
-// Sisipkan gambar.
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape.WrapType = WrapType.Inline;
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "title";
-builder.InsertNode(shape);
+shape.ImageData.Title = "Your Image Title";
 ```
 
-Selamat! Anda sekarang telah mempelajari cara menggunakan fitur gambar dengan Aspose.Words untuk .NET.
+## Kesimpulan
 
+Menambahkan gambar ke dokumen Anda dapat meningkatkan daya tarik visual dan efektivitasnya secara signifikan. Dengan Aspose.Words untuk .NET, proses ini menjadi mudah dan efisien. Dengan mengikuti langkah-langkah yang diuraikan di atas, Anda dapat dengan mudah mengintegrasikan gambar ke dalam dokumen Anda dan meningkatkan keterampilan pembuatan dokumen Anda ke tingkat berikutnya.
 
-### FAQ
+## FAQ
 
-#### T: Bagaimana cara menyisipkan gambar dari file lokal ke Aspose.Words?
+### Bisakah saya menambahkan banyak gambar ke satu dokumen?  
+ Ya, Anda dapat menambahkan gambar sebanyak yang Anda suka dengan mengulanginya`InsertImage` metode untuk setiap gambar.
 
- A: Untuk menyisipkan gambar dari file lokal ke Aspose.Words, Anda dapat menggunakan`Shape` kelas dan`InsertImage` metode.
+### Format gambar apa yang didukung oleh Aspose.Words untuk .NET?  
+Aspose.Words mendukung berbagai format gambar termasuk JPEG, PNG, BMP, GIF, dan lainnya.
 
-#### T: Bisakah saya menyisipkan gambar dari URL di Aspose.Words?
+### Bisakah saya mengubah ukuran gambar di dalam dokumen?  
+ Sangat! Anda dapat mengatur properti tinggi dan lebar`Shape` objek untuk mengubah ukuran gambar.
 
- A: Ya, Anda dapat menyisipkan gambar dari URL di Aspose.Words. Anda dapat menggunakan hal yang sama`InsertImage`metode dan tentukan URL gambar alih-alih jalur file lokal.
+### Apakah mungkin menambahkan gambar dari URL?  
+ Ya, Anda dapat menambahkan gambar dari URL dengan memberikan URL di dalamnya`InsertImage` metode.
 
-#### T: Bagaimana cara mengubah ukuran gambar di Aspose.Words?
-
- A: Untuk mengubah ukuran gambar di Aspose.Words, Anda dapat menggunakan`Width`Dan`Height` properti dari`Shape` obyek.
-
-#### T: Dapatkah saya menerapkan filter pada gambar di Aspose.Words?
-
- A: Ya, Anda dapat menerapkan filter pada gambar di Aspose.Words. Misalnya, Anda dapat menerapkan filter buram pada gambar menggunakan`ApplyGaussianBlur` metode`Shape` obyek.
-
-#### T: Bagaimana cara mengganti satu gambar dengan gambar lain di Aspose.Words?
-
- A: Untuk mengganti satu gambar dengan gambar lainnya di Aspose.Words, Anda dapat menggunakan`Replace` metode`Shape` kelas. Metode ini mengambil parameter tersebut`Shape` objek gambar yang akan diganti dan`Shape` objek gambar baru.
+### Bagaimana cara mendapatkan uji coba gratis Aspose.Words untuk .NET?  
+ Anda bisa mendapatkan uji coba gratis dari[Asumsikan situs web](https://releases.aspose.com/).

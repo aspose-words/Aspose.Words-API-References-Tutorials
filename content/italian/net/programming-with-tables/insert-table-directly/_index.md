@@ -19,7 +19,7 @@ Prima di immergerti nel codice, assicuriamoci di avere tutto il necessario per i
 3. Conoscenza di base di C#: comprendere le basi della programmazione C#.
 4. Directory dei documenti: un percorso di directory in cui salverai i tuoi documenti.
 
-Con questi prerequisiti in atto, sei pronto per iniziare a scrivere codice!
+Con questi prerequisiti in atto, sei pronto per iniziare a programmare!
 
 ## Importa spazi dei nomi
 

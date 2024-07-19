@@ -1,6 +1,6 @@
 ---
-title: 带修订的文字处理
-linktitle: 带修订的文字处理
+title: 文字处理与修订
+linktitle: 文字处理与修订
 second_title: Aspose.Words 文档处理 API
 description: 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的修订版本。分步教程，包含用于管理和查看修订版本的示例代码。
 type: docs

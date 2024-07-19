@@ -32,7 +32,7 @@ using System;
 
 ## Passaggio 1: caricare il documento Word
 
-Iniziamo caricando il documento Word contenente i segnalibri delle righe aggrovigliate. IL`Document` la classe gestisce la manipolazione dei documenti in Aspose.Words. Ecco come caricare il documento:
+ Iniziamo caricando il documento Word contenente i segnalibri delle righe aggrovigliate. IL`Document` la classe gestisce la manipolazione dei documenti in Aspose.Words. Ecco come caricare il documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // Sostituisci con la posizione del documento
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Controlla se le righe sono valide e adiacenti
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Sposta la fine del segnalibro all'ultimo paragrafo dell'ultima cella della riga superiore
+		   //Sposta la fine del segnalibro all'ultimo paragrafo dell'ultima cella della riga superiore
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ Ecco una spiegazione passo passo di cosa fa il codice:
 
  Iteriamo attraverso tutti i segnalibri nel documento utilizzando a`foreach` ciclo continuo.
 Per ogni segnalibro, recuperiamo la riga madre sia dell'inizio del segnalibro (`bookmark.BookmarkStart`) e la fine del segnalibro (`bookmark.BookmarkEnd` ) usando il`GetAncestor` metodo.
-Controlliamo quindi se sono state trovate entrambe le righe (`row1 != null`E`row2 != null`e se sono righe adiacenti (`row1.NextSibling == row2`). Ciò garantisce di modificare solo i segnalibri che si estendono su righe adiacenti.
+Controlliamo quindi se sono state trovate entrambe le righe (`row1 != null`E`row2 != null`) e se sono righe adiacenti (`row1.NextSibling == row2`). Ciò garantisce di modificare solo i segnalibri che si estendono su righe adiacenti.
 Se le condizioni sono soddisfatte, spostiamo il nodo finale del segnalibro alla fine dell'ultimo paragrafo nell'ultima cella della riga superiore (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) districandoli efficacemente.
 
 ## Passaggio 3: Elimina riga tramite segnalibro
@@ -87,12 +87,12 @@ Ecco una ripartizione di questa funzione:
 
 Prendiamo il nome del segnalibro (`bookmarkName`) come input.
  Recuperiamo l'oggetto segnalibro corrispondente utilizzando`doc.Range.Bookmarks[bookmarkName]`.
- Quindi otteniamo che la riga madre del segnalibro inizi a utilizzare`GetAncestor` (simile a`Untangle` funzione).
+Quindi otteniamo che la riga madre del segnalibro inizi a utilizzare`GetAncestor` (simile a`Untangle` funzione).
 Infine, controlliamo se il segnalibro e la riga esistono (`bookmark != null` E
 
 ## Passaggio 4: verificare la districazione
 
- Mentre il`Untangle`La funzione dovrebbe garantire la sicurezza degli altri segnalibri, è sempre buona norma verificarla. Ecco come possiamo verificare se il processo di districazione non ha eliminato accidentalmente la fine di un altro segnalibro:
+ Mentre il`Untangle` La funzione dovrebbe garantire la sicurezza degli altri segnalibri, è sempre buona norma verificarla. Ecco come possiamo verificare se il processo di districazione non ha eliminato accidentalmente la fine di un altro segnalibro:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

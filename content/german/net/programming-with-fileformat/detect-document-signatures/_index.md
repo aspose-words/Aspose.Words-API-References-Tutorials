@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Digitale Signaturen erkennen
 
- Als nächstes verwenden wir die`DetectFileFormat` Methode der`FileFormatUtil` Klasse zum Erkennen der Dateiformatinformationen. In diesem Beispiel gehen wir davon aus, dass das Dokument „Digitally signature.docx“ heißt und sich im angegebenen Dokumentverzeichnis befindet.
+ Als nächstes verwenden wir die`DetectFileFormat` Methode der`FileFormatUtil`Klasse zum Erkennen der Dateiformatinformationen. In diesem Beispiel gehen wir davon aus, dass das Dokument „Digitally signature.docx“ heißt und sich im angegebenen Dokumentverzeichnis befindet.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ Dieses Tutorial bietet Ihnen eine Schritt-für-Schritt-Anleitung zum Erkennen di
 
 #### Wie erkennt man mit Aspose.Words für .NET das Vorhandensein einer digitalen Signatur in einem Word-Dokument?
 
- Um das Vorhandensein einer digitalen Signatur in einem Word-Dokument mit Aspose.Words für .NET zu erkennen, können Sie die im Tutorial beschriebenen Schritte befolgen. Mit dem`DetectFileFormat` Methode der`FileFormatUtil` Klasse ermöglicht es Ihnen, Dateiformatinformationen zu erkennen. Dann können Sie die`HasDigitalSignature` Eigentum der`FileFormatInfo`Objekt, um festzustellen, ob das Dokument eine digitale Signatur enthält. Wenn eine digitale Signatur erkannt wird, können Sie eine Meldung anzeigen, dass Signaturen verloren gehen, wenn das Dokument mit Aspose.Words geöffnet/gespeichert wird.
+ Um das Vorhandensein einer digitalen Signatur in einem Word-Dokument mit Aspose.Words für .NET zu erkennen, können Sie die im Tutorial beschriebenen Schritte befolgen. Mit dem`DetectFileFormat` Methode der`FileFormatUtil` Klasse ermöglicht es Ihnen, Dateiformatinformationen zu erkennen. Dann können Sie die`HasDigitalSignature` Eigentum der`FileFormatInfo` Objekt, um festzustellen, ob das Dokument eine digitale Signatur enthält. Wenn eine digitale Signatur erkannt wird, können Sie eine Meldung anzeigen, dass Signaturen verloren gehen, wenn das Dokument mit Aspose.Words geöffnet/gespeichert wird.
 
 #### Wie gebe ich das Verzeichnis mit den Dokumenten an, in denen nach der digitalen Signatur gesucht werden soll?
 

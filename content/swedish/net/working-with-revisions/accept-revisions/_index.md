@@ -15,7 +15,7 @@ I den här handledningen går vi igenom hur du accepterar revisioner av ett Word
 I det här exemplet skapar vi ett dokument och lägger till innehåll. Vi använder flera stycken för att illustrera ändringar och revideringar. Här är hur:
 
 ```csharp
-// Sökväg till dokumentkatalogen.
+//Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

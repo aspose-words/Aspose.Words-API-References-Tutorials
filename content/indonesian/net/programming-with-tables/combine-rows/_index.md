@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/programming-with-tables/combine-rows/
 ---
 
-Dalam tutorial ini, kita akan mempelajari cara menggunakan Aspose.Words for .NET untuk menggabungkan baris tabel dalam dokumen Word. Kami akan mengikuti panduan langkah demi langkah untuk memahami kode dan menerapkan fitur ini. Di akhir tutorial ini, Anda akan mampu memanipulasi dan menggabungkan baris tabel di dokumen Word Anda secara terprogram.
+Dalam tutorial ini, kita akan mempelajari cara menggunakan Aspose.Words untuk .NET untuk menggabungkan baris tabel dalam dokumen Word. Kami akan mengikuti panduan langkah demi langkah untuk memahami kode dan menerapkan fitur ini. Di akhir tutorial ini, Anda akan dapat memanipulasi dan menggabungkan baris tabel di dokumen Word Anda secara terprogram.
 
 ## Langkah 1: Pengaturan Proyek
 1. Luncurkan Visual Studio dan buat proyek C# baru.

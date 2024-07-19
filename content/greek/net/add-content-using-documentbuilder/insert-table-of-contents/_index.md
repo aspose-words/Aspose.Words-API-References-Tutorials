@@ -127,4 +127,4 @@ doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 Ναι, το Aspose.Words διασφαλίζει τη συμβατότητα με διάφορες εκδόσεις μορφών Microsoft Word.
 
 ### Πού μπορώ να βρω περισσότερη βοήθεια και υποστήριξη για το Aspose.Words;
-Για περισσότερη βοήθεια, επισκεφθείτε το[Aspose.Words Forum](https://forum.aspose.com/c/words/8) ή ελέγξτε το[επίσημη τεκμηρίωση](https://reference.aspose.com/words/net/).
+ Για περισσότερη βοήθεια, επισκεφθείτε το[Aspose.Words Forum](https://forum.aspose.com/c/words/8) ή ελέγξτε το[επίσημη τεκμηρίωση](https://reference.aspose.com/words/net/).

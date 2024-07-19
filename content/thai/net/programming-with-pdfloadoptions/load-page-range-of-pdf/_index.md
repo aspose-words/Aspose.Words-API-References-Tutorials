@@ -15,7 +15,7 @@ url: /th/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ใช้รหัสต่อไปนี้เพื่อโหลดช่วงหน้าเฉพาะจากเอกสาร PDF:
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสาร
+//พาธไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };

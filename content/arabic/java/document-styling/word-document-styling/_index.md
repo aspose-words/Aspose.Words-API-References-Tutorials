@@ -68,7 +68,7 @@ builder.insertImage("path/to/image.png");
 builder.insertShape(ShapeType.RECTANGLE, 100, 100);
 ```
 
-### 4. حفظ الوثيقة
+### 4. حفظ المستند
 
 بعد إضافة محتوى إلى المستند، احفظه بالتنسيق المطلوب، مثل DOCX أو PDF.
 
@@ -273,7 +273,7 @@ Document doc2 = new Document("path/to/doc2.docx");
 doc1.appendDocument(doc2, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-لتقسيم مستند، يمكنك حفظ أقسام معينة لفصل المستندات.
+لتقسيم مستند، يمكنك حفظ أقسام محددة لفصل المستندات.
 
 ### 3. تحويل المستندات إلى تنسيقات مختلفة
 

@@ -19,7 +19,7 @@ La funzione Carica PDF crittografato di Aspose.Words per .NET consente di carica
 Il primo passo è caricare il documento PDF crittografato nella tua applicazione. Ecco come farlo:
 
 ```csharp
-// Percorso della directory dei documenti.
+//Percorso della directory dei documenti.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

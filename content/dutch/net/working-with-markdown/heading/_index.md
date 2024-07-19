@@ -66,7 +66,7 @@ A: Om de verschillende niveaus van Markdown-koppen te gebruiken, kunt u een vari
 
 #### Vraag: Zijn er beperkingen bij het gebruik van Markdown-headers?
 
-A: Er zijn geen strikte beperkingen, maar het wordt aanbevolen om een duidelijke en beknopte rapportagestructuur te handhaven.
+A: Er zijn geen strikte beperkingen, maar het wordt aanbevolen om een duidelijke en beknopte rapportagestructuur te hanteren.
 
 #### Vraag: Kan ik het uiterlijk van Markdown-headers aanpassen?
 

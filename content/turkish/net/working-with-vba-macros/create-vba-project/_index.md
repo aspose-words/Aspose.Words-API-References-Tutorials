@@ -90,7 +90,7 @@ C: Word belgesindeki bir VBA projesi, görevleri otomatikleştirmek, özel işle
 
 #### S: Word belgesinde VBA projesi oluşturmanın önkoşulları nelerdir?
 
-C: Word belgesinde VBA projesi oluşturmadan önce C# programlama dili hakkında yeterli bilgiye sahip olmanız gerekir. Ayrıca projenize Aspose.Words for .NET kütüphanesini de kurmanız gerekir.
+C: Word belgesinde VBA projesi oluşturmadan önce C# programlama dili hakkında çalışma bilgisine sahip olmanız gerekir. Ayrıca projenize Aspose.Words for .NET kütüphanesini de kurmanız gerekir.
 
 #### S: Koddaki belge dizini nasıl ayarlanır?
 

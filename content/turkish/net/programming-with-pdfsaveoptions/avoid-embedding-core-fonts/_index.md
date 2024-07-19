@@ -68,7 +68,7 @@ Bu eğitimde, Aspose.Words for .NET'e temel yazı tiplerini gömmeyerek bir PDF 
 ### Sıkça Sorulan Sorular
 
 #### S: Temel yazı tiplerini PDF dosyasına gömmeme seçeneği nedir ve bu neden önemlidir?
-C: Bir PDF dosyasına temel yazı tiplerini gömmeme seçeneği, bir Word belgesini dönüştürürken Arial, Times New Roman vb. gibi temel yazı tiplerinin PDF'ye gömülmesi gerekip gerekmediğini kontrol eder. Bu, PDF okuyucu sistemlerinde yaygın olarak bulunan yazı tiplerini dahil etmekten kaçınarak PDF dosyasının boyutunu azaltmak açısından önemli olabilir. Ayrıca, PDF belgesinin farklı cihazlar ve platformlar arasında daha iyi uyumluluğunun ve tutarlı görünümünün sağlanmasına da yardımcı olabilir.
+C: Bir PDF dosyasına temel yazı tiplerini gömmeme seçeneği, bir Word belgesini dönüştürürken Arial, Times New Roman vb. gibi temel yazı tiplerinin PDF'ye gömülmesi gerekip gerekmediğini kontrol eder. Bu, PDF okuyucu sistemlerinde yaygın olarak bulunan yazı tiplerini dahil etmekten kaçınarak PDF dosyasının boyutunu azaltmak için önemli olabilir. Ayrıca, PDF belgesinin farklı cihazlar ve platformlar arasında daha iyi uyumluluğunun ve tutarlı görünümünün sağlanmasına da yardımcı olabilir.
 
 #### S: Aspose.Words for .NET'i temel yazı tiplerini bir PDF dosyasına gömmeyecek şekilde nasıl yapılandırabilirim?
 C: Aspose.Words for .NET'i temel yazı tiplerini bir PDF dosyasına yerleştirmeyecek şekilde yapılandırmak için şu adımları izleyin:

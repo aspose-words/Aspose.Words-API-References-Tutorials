@@ -17,7 +17,7 @@ Hai mai provato a navigare nel labirinto di un documento di Word, solo per esser
 Prima di addentrarci nel codice, assicuriamoci di avere tutti gli strumenti necessari:
 
 - Visual Studio: assicurati di averlo installato. In caso contrario, scaricalo e installalo dal sito Web Microsoft.
--  Aspose.Words per .NET: se non lo hai ancora, prendi l'ultima versione[Qui](https://releases.aspose.com/words/net/).
+- Aspose.Words per .NET: se non lo hai ancora, prendi l'ultima versione[Qui](https://releases.aspose.com/words/net/).
 - Un documento Word di esempio: dovrebbe contenere separatori di stile di paragrafo con cui possiamo lavorare. Puoi crearne uno o utilizzare un documento esistente.
 
 ## Importa spazi dei nomi

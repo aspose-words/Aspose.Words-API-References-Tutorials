@@ -110,7 +110,7 @@ Terakhir, simpan dokumen ke direktori yang ditentukan.
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-Ini menyimpan dokumen Anda dengan nama yang ditentukan dan memastikan bagan Anda dengan label data yang diformat dipertahankan.
+Tindakan ini akan menyimpan dokumen Anda dengan nama tertentu dan memastikan bagan Anda dengan label data yang diformat tetap dipertahankan.
 
 ## Kesimpulan
 

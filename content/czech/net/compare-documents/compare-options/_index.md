@@ -112,7 +112,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## Závěr
 
-A tady to máte! Úspěšně jste porovnali dva dokumenty aplikace Word pomocí Aspose.Words for .NET. Tento proces může být skutečným zachráncem, když pracujete na velkých projektech a potřebujete zajistit konzistenci a přesnost. Pamatujte, že klíčem je pečlivě nastavit možnosti porovnání, aby bylo srovnání přizpůsobeno vašim konkrétním potřebám. Šťastné kódování!
+A tady to máte! Úspěšně jste porovnali dva dokumenty aplikace Word pomocí Aspose.Words for .NET. Tento proces může být skutečným zachráncem, když pracujete na velkých projektech a potřebujete zajistit konzistenci a přesnost. Pamatujte, že klíčem je pečlivě nastavit možnosti srovnání, aby bylo srovnání přizpůsobeno vašim konkrétním potřebám. Šťastné kódování!
 
 ## FAQ
 

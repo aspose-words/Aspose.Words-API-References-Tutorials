@@ -18,7 +18,7 @@ A dokumentumfeldolgozás területén a struktúra megértése és a tartalom hat
 
 ## Mit fogsz tanulni
 
-Ebben az oktatóanyag-sorozatban az Aspose.Words Pythonhoz és .NET-hez való Aspose.Words használatával elmélyülhet a dokumentumok szerkezetének és tartalomkezelésének bonyolultságában. Az oktatóanyagok a témák széles skáláját fedik le, többek között:
+Ebben az oktatóanyag-sorozatban az Aspose.Words Pythonhoz és .NET-hez egyaránt használható dokumentumszerkezetének és tartalomkezelésének bonyolultságába fog beleásni. Az oktatóanyagok a témák széles skáláját fedik le, többek között:
 
 - Navigálás a dokumentumelemekben: Tanuljon meg áthaladni dokumentumokon, szakaszokon, bekezdéseken, táblázatokon és egyebeken keresztül.
 - Szövegkivonás: Fedezze fel a szöveges tartalom dokumentumokból elemzés vagy további feldolgozás céljából történő kinyerésére szolgáló módszereket.

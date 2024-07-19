@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-charts/define-xyaxis-properties/
 
 在深入編碼之前，您需要滿足一些先決條件：
 
-1.  Aspose.Words for .NET：請確定您擁有 Aspose.Words for .NET 函式庫。你可以[在這裡下載](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：請確定您擁有 Aspose.Words for .NET 函式庫。你可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. 開發環境：您需要一個整合開發環境（IDE），例如 Visual Studio。
 3. .NET Framework：確保您的開發環境已設定為 .NET 開發。
 4. C# 基礎知識：本指南假設您對 C# 程式設計有基本了解。

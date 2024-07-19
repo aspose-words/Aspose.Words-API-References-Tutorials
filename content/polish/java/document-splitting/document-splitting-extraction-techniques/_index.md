@@ -77,7 +77,7 @@ Aby wyodrębnić obrazy z dokumentu programu Word, możesz użyć następująceg
 // Załaduj dokument źródłowy
 Document doc = new Document("input.docx");
 
-// Utwórz ekstraktor obrazów
+// Utwórz ekstraktor obrazu
 ImageExtractor extractor = new ImageExtractor(doc);
 
 // Wyodrębnij obrazy z dokumentu
@@ -123,7 +123,7 @@ Zachęcamy do zapoznania się z dokumentacją Aspose.Words for Java, aby poznać
 
  Możesz pobrać Aspose.Words dla Java ze strony internetowej:[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)
 
-### Czy mogę używać Aspose.Words dla Java w moich projektach komercyjnych?
+### Czy mogę używać Aspose.Words for Java w moich projektach komercyjnych?
 
 Tak, Aspose.Words dla Java jest dostępny zarówno do użytku osobistego, jak i komercyjnego.
 

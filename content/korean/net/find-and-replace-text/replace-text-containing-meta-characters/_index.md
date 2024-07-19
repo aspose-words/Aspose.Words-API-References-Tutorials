@@ -87,7 +87,7 @@ int count = doc.Range.Replace("section&p", "section&p----------------------&p", 
 다음으로 사용자 정의 텍스트 태그를 섹션 나누기로 대체하겠습니다. 자리 표시자를 좀 더 기능적인 것으로 바꾸는 것과 같습니다.
 
 ```csharp
-// 사용자 정의 텍스트 태그 대신 섹션 나누기를 삽입하십시오.
+// 사용자 정의 텍스트 태그 대신 섹션 나누기를 삽입합니다.
 count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 ```
 

@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## 3단계: 중첩된 수준에 대한 스타일 만들기
 
- 다음을 사용하여 중첩된 수준에 대한 스타일을 만들 수 있습니다.`Styles.Add` 의 방법`Document` 물체. 이 예에서는 중첩된 인용 수준을 나타내기 위해 "Quote1"이라는 스타일을 만듭니다.
+ 다음을 사용하여 중첩된 수준에 대한 스타일을 만들 수 있습니다.`Styles.Add` 의 방법`Document`물체. 이 예에서는 중첩된 인용 수준을 나타내기 위해 "Quote1"이라는 스타일을 만듭니다.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

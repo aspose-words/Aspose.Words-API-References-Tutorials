@@ -32,7 +32,7 @@ using System;
 
 ## 1. lépés: Töltse be a Word-dokumentumot
 
-Kezdjük az összegabalyodott sor könyvjelzőit tartalmazó Word dokumentum betöltésével. A`Document` osztály kezeli az Aspose.Words dokumentumkezelést. Így töltheti be a dokumentumot:
+ Kezdjük az összegabalyodott sor könyvjelzőit tartalmazó Word dokumentum betöltésével. A`Document` osztály kezeli az Aspose.Words dokumentumkezelést. Így töltheti be a dokumentumot:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // Cserélje ki a dokumentum helyével
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Ellenőrizze, hogy a sorok érvényesek és szomszédosak-e
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Mozgassa a könyvjelző végét a felső sor utolsó cellájának utolsó bekezdésébe
+		   //Mozgassa a könyvjelző végét a felső sor utolsó cellájának utolsó bekezdésébe
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ private void Untangle(Document doc)
 
  A dokumentumban található összes könyvjelzőn keresztül iterálunk az a`foreach` hurok.
 Minden könyvjelzőnél lekérjük mindkét könyvjelző kezdősorának szülősorát (`bookmark.BookmarkStart`) és a könyvjelző vége (`bookmark.BookmarkEnd` ) használni a`GetAncestor` módszer.
-Ezután ellenőrizzük, hogy mindkét sor megtalálható-e (`row1 != null`és`row2 != null`és ha szomszédos sorok (`row1.NextSibling == row2`). Ez biztosítja, hogy csak a szomszédos sorokon átívelő könyvjelzőket módosítsuk.
+Ezután ellenőrizzük, hogy mindkét sor megtalálható-e (`row1 != null`és`row2 != null`) és ha szomszédos sorok (`row1.NextSibling == row2`). Ez biztosítja, hogy csak a szomszédos sorokon átívelő könyvjelzőket módosítsuk.
 Ha a feltételek teljesülnek, a könyvjelző végcsomópontját áthelyezzük a felső sor utolsó cellájának utolsó bekezdésének végére (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) hatékonyan kibogozni őket.
 
 ## 3. lépés: Sor törlése könyvjelzővel
@@ -87,12 +87,12 @@ private void DeleteRowByBookmark(Document doc, string bookmarkName)
 
 Felvesszük a könyvjelző nevét (`bookmarkName`) bemenetként.
  A megfelelő könyvjelző objektumot a segítségével lekérjük`doc.Range.Bookmarks[bookmarkName]`.
- Ezután a könyvjelző szülősorát kezdjük el használni`GetAncestor` (hasonlóan a`Untangle` funkció).
+Ezután a könyvjelző szülősorát kezdjük el használni`GetAncestor` (hasonlóan a`Untangle` funkció).
 Végül ellenőrizzük, hogy létezik-e a könyvjelző és a sor (`bookmark != null` és
 
 ## 4. lépés: Ellenőrizze a kibontást
 
- Amíg a`Untangle`funkciónak biztosítania kell a többi könyvjelző biztonságát, ezt mindig jó gyakorlat ellenőrizni. Így ellenőrizhetjük, hogy a kibontási folyamat nem törölte-e véletlenül egy másik könyvjelző végét:
+ Amíg a`Untangle` funkciónak biztosítania kell a többi könyvjelző biztonságát, ezt mindig jó gyakorlat ellenőrizni. Így ellenőrizhetjük, hogy a kibontási folyamat nem törölte-e véletlenül egy másik könyvjelző végét:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

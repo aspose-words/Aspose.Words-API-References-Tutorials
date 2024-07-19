@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-Dans cette étape, nous utilisons le`GetAncestor` méthode pour trouver la ligne parent des nœuds de début et de fin du signet. Cela nous aide à identifier les lignes exactes impliquées.
+ Dans cette étape, nous utilisons le`GetAncestor` méthode pour trouver la ligne parent des nœuds de début et de fin du signet. Cela nous aide à identifier les lignes exactes impliquées.
 
 ## Étape 4 : Vérifiez les lignes adjacentes
 
@@ -93,7 +93,7 @@ Titre de l'étape 5 : déplacer la fin du signet
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-Dans cette étape, nous utilisons le`AppendChild`méthode pour déplacer le nœud de fin du signet. En l'ajoutant au dernier paragraphe de la dernière cellule de la ligne supérieure, nous nous assurons que le signet est correctement démêlé.
+ Dans cette étape, nous utilisons le`AppendChild` méthode pour déplacer le nœud de fin du signet. En l'ajoutant au dernier paragraphe de la dernière cellule de la ligne supérieure, nous nous assurons que le signet est correctement démêlé.
 
 ## Conclusion
 

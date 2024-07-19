@@ -1,6 +1,6 @@
 ---
-title: Kabarcık Grafiği Word Belgesine Ekle
-linktitle: Kabarcık Grafiği Word Belgesine Ekle
+title: Kabarcık Grafiğini Word Belgesine Ekle
+linktitle: Kabarcık Grafiğini Word Belgesine Ekle
 second_title: Aspose.Words Belge İşleme API'si
 description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesine nasıl kabarcık grafiği ekleyeceğinizi öğrenin. Belgelerinizi geliştirin.
 type: docs
@@ -91,7 +91,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla kab
 
  Kesinlikle! Aspose.Words for .NET, renk ve etiketlerden veri serisi formatlamasına kadar çok çeşitli özelleştirme seçenekleri sunar. Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
 
-### Tek bir belgeye birden fazla grafik eklemek mümkün müdür?
+### Tek bir belgeye birden fazla grafik eklemek mümkün mü?
 
 Evet, istediğiniz kadar grafik ekleyebilirsiniz. Eklemek istediğiniz her grafik için adımları tekrarlamanız yeterlidir.
 

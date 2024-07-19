@@ -2,7 +2,7 @@
 title: نطاقات حذف النص في مستند Word
 linktitle: نطاقات حذف النص في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية حذف النص في نطاقات معينة في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية حذف النص في نطاقات محددة في مستند Word باستخدام Aspose.Words لـ .NET.
 type: docs
 weight: 10
 url: /ar/net/programming-with-ranges/ranges-delete-text/
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-#### س: كيف يمكنني حذف النص في نطاقات محددة من مستند Word باستخدام Aspose.Words لـ .NET؟
+#### س: كيف يمكنني حذف النص في نطاقات معينة من مستند Word باستخدام Aspose.Words لـ .NET؟
 
  ج: بمجرد تحميل المستند، يمكنك حذف النص الموجود في نطاقات محددة عن طريق الوصول إلى النطاق المطلوب واستدعاء`Delete` طريقة. على سبيل المثال، لحذف كل النص من القسم الأول من المستند، يمكنك استخدام الكود التالي:
 

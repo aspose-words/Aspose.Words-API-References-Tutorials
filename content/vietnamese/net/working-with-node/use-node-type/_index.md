@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## Bước 3: Nhận loại nút tài liệu
- Để lấy loại nút của tài liệu, chúng tôi sử dụng`NodeType` tài sản.
+Để lấy loại nút của tài liệu, chúng tôi sử dụng`NodeType` tài sản.
 
 ```csharp
 NodeType type = doc.NodeType;

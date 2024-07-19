@@ -73,4 +73,4 @@ Ismerje meg, hogyan menthet dokumentumokat RTF formátumban az Aspose.Words for 
 ### [Dokumentumok mentése szöveges fájlként az Aspose.Words for Java programban](./saving-documents-as-text-files/)
 Ismerje meg, hogyan menthet el dokumentumokat szöveges fájlként az Aspose.Words for Java programban. Kövesse lépésenkénti útmutatónkat Java kódpéldákkal.
 ### [Dokumentumformátum meghatározása az Aspose.Words for Java programban](./determining-document-format/)
-Ismerje meg, hogyan észlelheti a dokumentumformátumokat Java nyelven az Aspose.Words segítségével. Azonosítsa a DOC, DOCX és egyebeket. A fájlok hatékony rendszerezése.
+Ismerje meg, hogyan észlelheti a dokumentumformátumokat Java nyelven az Aspose.Words segítségével. A DOC, DOCX és egyebek azonosítása. A fájlok hatékony rendszerezése.

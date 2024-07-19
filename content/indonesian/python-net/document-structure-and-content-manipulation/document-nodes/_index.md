@@ -2,7 +2,7 @@
 title: Memahami dan Menavigasi Node Dokumen
 linktitle: Memahami dan Menavigasi Node Dokumen
 second_title: API Manajemen Dokumen Aspose.Words Python
-description: Belajar memanipulasi dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah ini mencakup pemuatan, pemformatan, tabel, gambar, dan banyak lagi. Tingkatkan keterampilan pemrosesan dokumen Anda hari ini!
+description: Belajar memanipulasi dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah ini mencakup pemuatan, pemformatan, tabel, gambar, dan lainnya. Tingkatkan keterampilan pemrosesan dokumen Anda hari ini!
 type: docs
 weight: 20
 url: /id/python-net/document-structure-and-content-manipulation/document-nodes/
@@ -16,7 +16,7 @@ Aspose.Words for Python adalah perpustakaan kaya fitur yang memungkinkan Anda me
 
 ## Memuat dan Menyimpan Dokumen
 
-Untuk memulai, Anda perlu menginstal perpustakaan Aspose.Words dan mengimpornya ke skrip Python Anda. Anda dapat memuat dokumen Word yang sudah ada atau membuat dokumen baru dari awal. Menyimpan dokumen Anda yang telah dimodifikasi juga mudah.
+Untuk memulai, Anda perlu menginstal perpustakaan Aspose.Words dan mengimpornya ke skrip Python Anda. Anda dapat memuat dokumen Word yang sudah ada atau membuat yang baru dari awal. Menyimpan dokumen Anda yang telah dimodifikasi juga mudah.
 
 ```python
 import aspose.words as aw
@@ -30,7 +30,7 @@ doc.save("output.docx")
 
 ## Menavigasi Pohon Dokumen
 
-Dokumen disusun sebagai pohon simpul, di mana setiap simpul mewakili elemen seperti paragraf, tabel, gambar, dll. Menavigasi pohon ini penting untuk manipulasi dokumen.
+Dokumen disusun sebagai pohon node, di mana setiap node mewakili elemen seperti paragraf, tabel, gambar, dll. Menavigasi pohon ini sangat penting untuk manipulasi dokumen.
 
 ```python
 # Access the first paragraph of the document

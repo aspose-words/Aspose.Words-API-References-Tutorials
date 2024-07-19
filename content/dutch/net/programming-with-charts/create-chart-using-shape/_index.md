@@ -70,7 +70,7 @@ chart.Legend.Position = LegendPosition.Left;
 chart.Legend.Overlay = true;
 ```
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Ten slotte moet u het document opslaan. Deze stap zorgt ervoor dat al uw wijzigingen naar het bestand worden geschreven.
 

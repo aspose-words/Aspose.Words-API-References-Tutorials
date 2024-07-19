@@ -30,7 +30,7 @@ FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
 ## 3단계: IF 조건 평가
 
- 그만큼`EvaluateCondition()` 방법은 IF 필드의 상태를 평가하는 데 사용됩니다.
+ 그만큼`EvaluateCondition()` 방법은 IF 필드의 조건을 평가하는 데 사용됩니다.
 
 ```csharp
 FieldIfComparisonResult actualResult = field.EvaluateCondition();

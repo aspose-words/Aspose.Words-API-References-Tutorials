@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Dále musíme přesunout kurzor na konkrétní odstavec v dokumentu, kam chceme vložit slučovací pole.
 
 ```csharp
-// Přesuňte kurzor na odstavec.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Krok 6: Vložte slučovací pole

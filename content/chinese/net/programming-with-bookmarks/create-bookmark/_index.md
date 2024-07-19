@@ -99,7 +99,7 @@ options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
 
 ## 步骤 6：保存文档
 
-将文档另存为 PDF
+将文档保存为 PDF
 
 最后，使用指定的选项保存文档。
 

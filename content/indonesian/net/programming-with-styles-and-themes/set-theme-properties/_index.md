@@ -75,7 +75,7 @@ Mengatur properti tema di dokumen Word memungkinkan Anda menyesuaikan tampilan d
 
 #### Bisakah saya menerapkan tema berbeda ke bagian dokumen berbeda?
 
- Ya, Anda dapat menerapkan tema berbeda ke bagian dokumen berbeda dengan memodifikasi properti tema di bagian tersebut. Dengan mengakses`Theme` objek, Anda dapat mengubah font dan warna khusus untuk bagian tertentu, memungkinkan Anda membuat gaya visual berbeda dalam dokumen yang sama.
+ Ya, Anda dapat menerapkan tema berbeda ke berbagai bagian dokumen dengan memodifikasi properti tema di bagian tersebut. Dengan mengakses`Theme` objek, Anda dapat mengubah font dan warna khusus untuk bagian tertentu, memungkinkan Anda membuat gaya visual berbeda dalam dokumen yang sama.
 
 #### Bisakah saya menyimpan dokumen yang dimodifikasi dalam format berbeda?
 

@@ -104,7 +104,7 @@ row.AppendChild(authorSdt);
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
 ```
 
-### Aspose.Words for .NET Kullanarak Özel Xml Parçasına Eşlenen Tablo Tekrarlayan Bölüm Oluşturmak için örnek kaynak kodu 
+### Aspose.Words for .NET Kullanarak Özel Xml Parçasına Eşlenen Tablo Yinelenen Bölüm Oluşturmak için örnek kaynak kodu 
 
 ```csharp
 	// Belge dizininizin yolu

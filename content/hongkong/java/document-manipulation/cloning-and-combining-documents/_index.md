@@ -10,7 +10,7 @@ url: /zh-hant/java/document-manipulation/cloning-and-combining-documents/
 
 ## Aspose.Words for Java 中複製和組合文件的簡介
 
-在本教程中，我們將探索如何使用 Aspose.Words for Java 複製和合併文件。我們將介紹各種場景，包括複製文件、在替換點插入文件、書籤以及在郵件合併作業期間。
+在本教程中，我們將探索如何使用 Aspose.Words for Java 複製和組合文件。我們將介紹各種場景，包括複製文件、在替換點插入文件、書籤以及在郵件合併作業期間。
 
 ## 第 1 步：克隆文檔
 

@@ -19,7 +19,7 @@ Markdown ile Kelime İşleme, Aspose.Words for .NET kütüphanesini kullanarak M
 | [Satır İçi Kod](./inline-code/) | Aspose.Words for .NET ile satır içi kodun nasıl yazılacağını öğrenin. Adım adım kılavuz. |
 | [Otomatik bağlantı](./autolink/) | Aspose.Words for .NET ile otomatik bağlantı eklemeyi öğrenin Adım adım kılavuz. |
 | [Bağlantı](./link/) | Aspose.Words for .NET ile nasıl bağlantı ekleyeceğinizi öğrenin. Adım adım rehber. |
-| [Resim](./image/) | Aspose.Words for .NET ile görüntüyü nasıl ekleyeceğinizi ve özelleştireceğinizi öğrenin. Adım adım kılavuz. |
+| [Resim](./image/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak belgelerinize nasıl görsel ekleyeceğinizi öğrenin. Dokümanlarınızı görsellerle anında geliştirin. |
 | [Yatay kural](./horizontal-rule/) | Aspose.Words for .NET ile yatay bir kuralın nasıl ekleneceğini öğrenin. Adım adım kılavuz. |
 | [Başlık](./heading/) | Aspose.Words for .NET ile başlığın nasıl kullanılacağını öğrenin. Adım adım kılavuz. |
 | [Set metni Başlığı](./setext-heading/) | Aspose.Words for .NET ile belgelerinizi formatlamak için Setext başlıklarını nasıl kullanacağınızı öğrenin. Adım adım kılavuz. |
@@ -27,8 +27,8 @@ Markdown ile Kelime İşleme, Aspose.Words for .NET kütüphanesini kullanarak M
 | [Çitle çevrili kod](./fenced-code/) | Aspose.Words for .NET ile çitlenmiş kod özelliğini nasıl kullanacağınızı öğrenin. Adım adım kılavuz. |
 | [Alıntı](./quote/) | Aspose.Words for .NET ile teklifin nasıl kullanılacağını öğrenin Adım adım kılavuz. |
 | [Maddeli liste](./bulleted-list/) | Aspose.Words for .NET ile madde işaretli liste oluşturmayı öğrenin. Adım adım kılavuz. |
-| [Sıralı Liste](./ordered-list/) | Aspose.Words for .NET ile sıralı liste oluşturmayı öğrenin Adım adım kılavuz. |
-| [Masa](./table/) | Aspose.Words for .NET ile nasıl tablo oluşturulacağını öğrenin Adım adım kılavuz. |
+| [Sıralı Liste](./ordered-list/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerinde nasıl sıralı listeler oluşturacağınızı öğrenin. Belge oluşturmayı otomatikleştirmek için mükemmeldir. |
+| [Masa](./table/) | Bu adım adım kılavuzla Aspose.Words for .NET'te tabloları nasıl oluşturup özelleştireceğinizi öğrenin. Yapılandırılmış ve görsel olarak çekici belgeler oluşturmak için mükemmeldir. |
 | [Markdown Belgesini Okuyun](./read-markdown-document/) | Aspose.Words for .NET ile işaretleme belgesini nasıl okuyacağınızı öğrenin Adım adım kılavuz. |
 | [Vurgular](./emphases/) | Aspose.Words for .NET ile vurguları (kalın ve italik) nasıl kullanacağınızı öğrenin. Adım adım kılavuz. |
-| [Uyarı Kaynağını Kullan](./use-warning-source/) | Aspose.Words for .NET ile uyarı kaynağının nasıl kullanılacağını öğrenin. Adım adım kılavuz. |
+| [Uyarı Kaynağını Kullan](./use-warning-source/) | Markdown uyarılarını işlemek için WarningSource sınıfının kullanımına ilişkin bu adım adım kılavuzla Aspose.Words for .NET konusunda uzmanlaşın. C# geliştiricileri için mükemmel. |

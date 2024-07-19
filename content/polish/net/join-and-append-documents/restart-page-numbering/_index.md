@@ -35,9 +35,9 @@ Przyjrzyjmy się teraz praktycznym krokom związanym z ponownym uruchomieniem nu
 
 ## Krok 1: Załaduj dokumenty źródłowe i docelowe:
 
-Zdefiniuj zmienną łańcuchową`dataDir` aby zapisać ścieżkę do katalogu dokumentów. Zastąp „TWOJ KATALOG DOKUMENTÓW” rzeczywistą lokalizacją.
+ Zdefiniuj zmienną łańcuchową`dataDir` aby zapisać ścieżkę do katalogu dokumentów. Zastąp „TWOJ KATALOG DOKUMENTÓW” rzeczywistą lokalizacją.
 
- Utwórz dwa`Document` obiekty za pomocą`Aspose.Words.Document` konstruktor. Pierwszy (`srcDoc`) będzie zawierać dokument źródłowy zawierający treść, która ma zostać dołączona. Drugi (`dstDoc`) reprezentuje dokument docelowy, w którym zintegrujemy treść źródłową z ponownie uruchomioną numeracją stron.
+ Utwórz dwa`Document` obiekty za pomocą`Aspose.Words.Document`konstruktor. Pierwszy (`srcDoc`) będzie zawierać dokument źródłowy zawierający treść, która ma zostać dołączona. Drugi (`dstDoc`) reprezentuje dokument docelowy, w którym zintegrujemy treść źródłową z ponownie uruchomioną numeracją stron.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Zamień na rzeczywisty katalog
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Krok 3: Włączenie ponownego uruchomienia numeracji stron:
 
- W tym samym`PageSetup` obiekt pierwszej sekcji dokumentu źródłowego, ustaw`RestartPageNumbering`własność do`true`Ten kluczowy krok instruuje Aspose.Words, aby ponownie zainicjował numerację stron dla dołączonej treści.
+ W tym samym`PageSetup` obiekt pierwszej sekcji dokumentu źródłowego, ustaw`RestartPageNumbering`własność do`true`. Ten kluczowy krok instruuje Aspose.Words, aby ponownie zainicjował numerację stron dla dołączonej treści.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

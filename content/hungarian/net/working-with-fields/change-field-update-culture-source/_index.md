@@ -33,7 +33,7 @@ builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
 ```
 
-A fenti kódban a betűtípus nyelvi beállítását németre (1031-es területi azonosító) állítjuk be, és két mezőt szúrunk be meghatározott dátumformátummal.
+A fenti kódban a betűtípus nyelvi beállítását németre (1031-es helyi azonosító) állítjuk be, és két mezőt szúrunk be meghatározott dátumformátummal.
 
 ## 3. lépés: Mezőfrissítési kultúraforrás módosítása
 A mezőfrissítési kultúraforrás módosításához használja a FieldOptions osztályt:

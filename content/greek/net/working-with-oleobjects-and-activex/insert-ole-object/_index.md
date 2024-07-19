@@ -27,14 +27,14 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Βήμα 3: Εισαγάγετε ένα αντικείμενο OLE
- Χρησιμοποιήστε το Document Builder's`InsertOleObject` μέθοδος για την εισαγωγή ενός αντικειμένου OLE στο έγγραφο. Καθορίστε τη διεύθυνση URL αντικειμένου OLE, τον τύπο αντικειμένου, τις επιλογές εμφάνισης και άλλες απαραίτητες ρυθμίσεις.
+ Χρησιμοποιήστε το Document Builder's`InsertOleObject`μέθοδος για την εισαγωγή ενός αντικειμένου OLE στο έγγραφο. Καθορίστε τη διεύθυνση URL αντικειμένου OLE, τον τύπο αντικειμένου, τις επιλογές εμφάνισης και άλλες απαραίτητες ρυθμίσεις.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
 ```
 
 ## Βήμα 4: Αποθηκεύστε το έγγραφο
- Χρησιμοποιήστε το έγγραφο`Save` μέθοδο αποθήκευσης του εγγράφου σε αρχείο.
+ Χρησιμοποιήστε το έγγραφο`Save` μέθοδος αποθήκευσης του εγγράφου σε αρχείο.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Ε: Πώς να εισαγάγετε ένα αντικείμενο OLE στο έγγραφο;
 
- Α: Χρησιμοποιήστε το`InsertOleObject`μέθοδος δημιουργίας εγγράφων (`DocumentBuilder`) για να εισαγάγετε ένα αντικείμενο OLE στο έγγραφο. Καθορίστε τη διεύθυνση URL αντικειμένου OLE, τον τύπο αντικειμένου, τις επιλογές εμφάνισης και άλλες απαραίτητες ρυθμίσεις. Εδώ είναι ένα παράδειγμα:
+ Α: Χρησιμοποιήστε το`InsertOleObject` μέθοδος δημιουργίας εγγράφων (`DocumentBuilder`) για να εισαγάγετε ένα αντικείμενο OLE στο έγγραφο. Καθορίστε τη διεύθυνση URL αντικειμένου OLE, τον τύπο αντικειμένου, τις επιλογές εμφάνισης και άλλες απαραίτητες ρυθμίσεις. Εδώ είναι ένα παράδειγμα:
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
 
 #### Ε: Πώς να αποθηκεύσετε το έγγραφο;
 
- Α: Χρησιμοποιήστε το έγγραφο`Save` μέθοδο αποθήκευσης του εγγράφου σε αρχείο. Εδώ είναι ένα παράδειγμα:
+ Α: Χρησιμοποιήστε το έγγραφο`Save`μέθοδο αποθήκευσης του εγγράφου σε αρχείο. Εδώ είναι ένα παράδειγμα:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

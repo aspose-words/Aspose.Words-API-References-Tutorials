@@ -15,7 +15,7 @@ Ocitli jste se někdy v situaci, kdy jste potřebovali převést soubor PDF na o
 
 Než se pustíme do toho hnusného, ujistíme se, že máme všechny kachny v řadě. Zde je to, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nastavené prostředí .NET.
 3. Visual Studio: Bude stačit jakákoli verze, pokud vám vyhovuje její procházení.
 4.  Soubor PDF: Připravte si soubor PDF ke konverzi. Pro tento tutoriál použijeme soubor s názvem`Pdf Document.pdf`.
@@ -74,7 +74,7 @@ S načteným PDF je čas provést převod. Tento krok je překvapivě přímoča
 
 ## Závěr
 
-A tady to máte! Převod PDF na JPEG pomocí Aspose.Words for .NET je snadný jako facka. Pomocí několika řádků kódu můžete transformovat své dokumenty a otevřít svět možností. Ať už jste vývojář, který chce zefektivnit svůj pracovní postup, nebo jen někdo, kdo si rád pohrává s kódem, Aspose.Words vám pomůže.
+tady to máte! Převod PDF na JPEG pomocí Aspose.Words for .NET je snadný jako facka. Pomocí několika řádků kódu můžete transformovat své dokumenty a otevřít svět možností. Ať už jste vývojář, který chce zefektivnit svůj pracovní postup, nebo jen někdo, kdo si rád pohrává s kódem, Aspose.Words vám pomůže.
 
 ## FAQ
 

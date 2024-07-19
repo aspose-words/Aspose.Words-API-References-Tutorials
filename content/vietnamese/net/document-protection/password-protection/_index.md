@@ -15,10 +15,10 @@ Này! Bạn đã bao giờ tự hỏi làm cách nào để có thể bảo mậ
 
 Trước khi chúng ta đi sâu vào nội dung chi tiết của việc bảo vệ tài liệu Word bằng mật khẩu, bạn sẽ cần một số thứ:
 
-1. Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển C# nào khác.
 3. Kiến thức C# cơ bản: Hiểu biết cơ bản về lập trình C#.
-4.  Aspose License: Nhận giấy phép từ[đây](https://purchase.aspose.com/buy) hoặc sử dụng một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
+4.  Aspose License: Nhận giấy phép từ[đây](https://purchase.aspose.com/buy)hoặc sử dụng một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
 
 ## Nhập không gian tên
 

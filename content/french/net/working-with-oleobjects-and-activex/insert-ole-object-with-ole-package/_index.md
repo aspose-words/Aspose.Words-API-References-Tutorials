@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Étape 3 : Insérer un objet OLE avec un package OLE
- Utilisez le générateur de documents`InsertOleObject` méthode pour insérer un objet OLE avec un package OLE dans le document. Spécifiez le flux de données, le type d'objet, les options d'affichage et d'autres paramètres nécessaires.
+ Utilisez le générateur de documents`InsertOleObject`méthode pour insérer un objet OLE avec un package OLE dans le document. Spécifiez le flux de données, le type d'objet, les options d'affichage et d'autres paramètres nécessaires.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -95,9 +95,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-#### Q : Comment insérer un objet OLE avec un package OLE dans le document ?
+#### : Comment insérer un objet OLE avec un package OLE dans le document ?
 
- R : Utilisez le`InsertOleObject`méthode du générateur de documents (`DocumentBuilder`) pour insérer un objet OLE avec un package OLE dans le document. Spécifiez le flux de données, le type d'objet, les options d'affichage et d'autres paramètres nécessaires. Voici un exemple :
+ R : Utilisez le`InsertOleObject` méthode du générateur de documents (`DocumentBuilder`) pour insérer un objet OLE avec un package OLE dans le document. Spécifiez le flux de données, le type d'objet, les options d'affichage et d'autres paramètres nécessaires. Voici un exemple :
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### Q : Comment enregistrer le document ?
 
- R : Utiliser le document`Save` méthode pour enregistrer le document dans un fichier. Voici un exemple :
+ R : Utiliser le document`Save`méthode pour enregistrer le document dans un fichier. Voici un exemple :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

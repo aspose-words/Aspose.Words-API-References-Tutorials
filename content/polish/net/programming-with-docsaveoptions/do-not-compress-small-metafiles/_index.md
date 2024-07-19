@@ -94,7 +94,7 @@ Tak, Aspose.Words dla .NET pozwala skonfigurować opcje zapisywania dla różnyc
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
 
- Chociaż możesz używać Aspose.Words dla .NET bez licencji do oceny, wymagana jest licencja, aby odblokować pełną funkcjonalność. Można uzyskać licencję[Tutaj](https://purchase.aspose.com/buy) lub użyj A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+ Chociaż możesz używać Aspose.Words dla .NET bez licencji do oceny, wymagana jest licencja, aby odblokować pełną funkcjonalność. Można uzyskać licencję[Tutaj](https://purchase.aspose.com/buy)lub użyj A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
 
 ### Jak mogę zapewnić zgodność moich dokumentów ze standardami PDF/A?
 

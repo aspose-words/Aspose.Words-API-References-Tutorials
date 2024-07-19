@@ -8,7 +8,7 @@ weight: 19
 url: /vi/java/document-manipulation/using-structured-document-tags/
 ---
 
-## Giới thiệu về Sử dụng Thẻ Tài liệu Có Cấu trúc (SDT) trong Aspose.Words cho Java
+## Giới thiệu về cách sử dụng Thẻ tài liệu có cấu trúc (SDT) trong Aspose.Words cho Java
 
 Thẻ tài liệu có cấu trúc (SDT) là một tính năng mạnh mẽ trong Aspose.Words dành cho Java, cho phép bạn tạo và thao tác nội dung có cấu trúc trong tài liệu của mình. Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn các khía cạnh khác nhau của việc sử dụng SDT trong Aspose.Words cho Java. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, bạn sẽ tìm thấy những hiểu biết sâu sắc có giá trị và ví dụ thực tế trong bài viết này.
 

@@ -9,7 +9,7 @@ url: /id/net/join-and-append-documents/append-with-import-format-options/
 ---
 ## Perkenalan
 
-Hai! Pernahkah Anda merasa perlu menggabungkan beberapa dokumen Word menjadi satu tetapi terjebak dengan masalah pemformatan yang mengganggu itu? Jangan takut! Hari ini, kami mempelajari lebih dalam bagaimana Anda dapat menambahkan satu dokumen Word ke dokumen lain menggunakan Aspose.Words untuk .NET sambil menjaga pemformatan Anda tetap rapi dan rapi. Bersiaplah, karena di akhir panduan ini, Anda akan menjadi maestro penggabungan dokumen!
+Hai! Pernahkah Anda merasa perlu menggabungkan beberapa dokumen Word menjadi satu tetapi terjebak dengan masalah pemformatan yang mengganggu itu? Jangan takut! Hari ini, kami mempelajari lebih dalam bagaimana Anda dapat menambahkan satu dokumen Word ke dokumen lainnya menggunakan Aspose.Words untuk .NET sambil menjaga pemformatan Anda tetap rapi dan rapi. Bersiaplah, karena di akhir panduan ini, Anda akan menjadi maestro penggabungan dokumen!
 
 ## Prasyarat
 
@@ -90,7 +90,7 @@ Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menam
 
 ## FAQ
 
-### Bisakah saya tetap menyimpan penomoran dokumen tujuan dan bukan sumbernya?
+### Bisakah saya menyimpan penomoran dokumen tujuan dan bukan sumbernya?
  Ya, Anda dapat memodifikasinya`ImportFormatOptions` untuk mencapai hal ini.
 
 ### Bagaimana jika saya tidak memiliki Aspose.Words untuk .NET?

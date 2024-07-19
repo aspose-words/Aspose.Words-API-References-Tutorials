@@ -2,7 +2,7 @@
 title: Word 문서 복제
 linktitle: Word 문서 복제
 second_title: Aspose.Words 문서 처리 API
-description: 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서를 쉽게 복제하는 방법을 알아보세요. 초보자와 숙련된 개발자 모두에게 적합합니다.
+description: 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서를 손쉽게 복제하는 방법을 알아보세요. 초보자와 숙련된 개발자 모두에게 적합합니다.
 type: docs
 weight: 10
 url: /ko/net/clone-and-combine-documents/cloning-document/
@@ -35,7 +35,7 @@ using Aspose.Words;
 먼저 Visual Studio에서 프로젝트를 설정해야 합니다. 이미 프로젝트가 준비되어 있으면 이 단계를 건너뛸 수 있습니다. 그렇지 않은 경우 다음을 따르십시오.
 
 1. Visual Studio 열기: Visual Studio를 실행하고 새 C# 콘솔 앱 프로젝트를 만듭니다.
-2.  프로젝트 이름 지정: 프로젝트에 의미 있는 이름을 지정하십시오. 다음과 같은 것`CloneWordDocumentDemo` 할 것입니다.
+2.  프로젝트 이름 지정: 프로젝트에 의미 있는 이름을 지정하세요. 다음과 같은 것`CloneWordDocumentDemo` 할 것입니다.
 3.  Aspose.Words 참조 추가: 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고`Manage NuGet Packages` , 검색`Aspose.Words`. 설치하세요.
 
 ## 2단계: 환경 준비
@@ -81,7 +81,7 @@ Aspose.Words를 사용하면 문서 복제가 매우 쉽습니다.
 
 모든 것이 준비되었으면 이제 코드를 실행하고 결과를 확인할 차례입니다.
 
-1.  프로젝트 빌드:`Build` 메뉴를 선택하고`Build Solution`. 오류가 없는지 확인하십시오.
+1. 프로젝트 빌드:`Build` 메뉴를 선택하고`Build Solution`. 오류가 없는지 확인하십시오.
 2.  프로젝트 실행: 히트`F5` 또는`Start` 버튼을 눌러 프로젝트를 실행하세요. 모든 것이 올바르게 설정되면 새로 복제된 문서가 문서 디렉토리에 나타나야 합니다.
 
 ## 6단계: 출력 확인

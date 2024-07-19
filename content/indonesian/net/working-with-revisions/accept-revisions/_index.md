@@ -15,7 +15,7 @@ Dalam tutorial ini, kami akan memandu Anda dalam menerima revisi pada dokumen Wo
 Dalam contoh ini, kita membuat dokumen dan menambahkan konten. Kami menggunakan beberapa paragraf untuk menggambarkan perubahan dan revisi. Begini caranya:
 
 ```csharp
-// Jalur ke direktori dokumen.
+//Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

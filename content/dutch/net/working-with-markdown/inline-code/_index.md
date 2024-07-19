@@ -66,11 +66,11 @@ Gefeliciteerd! U hebt nu geleerd hoe u inline codefunctionaliteit kunt gebruiken
 
 #### Vraag: Hoe kan ik de inlinecode in Aspose.Words gebruiken?
 
- A: Om inlinecode in Aspose.Words te gebruiken, kunt u de juiste tags gebruiken om de tekst te omringen die moet worden opgemaakt als inlinecode. U kunt bijvoorbeeld gebruik maken van de`<code>` of`<kbd>` tag om tekst te omringen die moet worden opgemaakt als inlinecode.
+A: Om inlinecode in Aspose.Words te gebruiken, kunt u de juiste tags gebruiken om de tekst te omringen die moet worden opgemaakt als inlinecode. U kunt bijvoorbeeld gebruik maken van de`<code>` of`<kbd>` tag om tekst te omringen die moet worden opgemaakt als inlinecode.
 
 #### Vraag: Is het mogelijk om het lettertype of de kleur van de inline code op te geven in Aspose.Words?
 
- A: Ja, u kunt het lettertype of de kleur van de inlinecode opgeven in Aspose.Words. U kunt gebruik maken van de`Font.Name`En`Font.Color` eigenschappen van de`Run` object om het lettertype en de kleur van inline code in te stellen. U kunt bijvoorbeeld gebruiken`run.Font.Name = "Courier New"` om het lettertype voor inline code op te geven en`run.Font.Color = Color.Blue`om de kleur op te geven.
+ A: Ja, u kunt het lettertype of de kleur van de inlinecode opgeven in Aspose.Words. U kunt gebruik maken van de`Font.Name`En`Font.Color` eigenschappen van de`Run` object om het lettertype en de kleur van inline code in te stellen. U kunt bijvoorbeeld gebruiken`run.Font.Name = "Courier New"` om het lettertype voor inline code op te geven en`run.Font.Color = Color.Blue` om de kleur op te geven.
 
 #### Vraag: Kan ik de inlinecode gebruiken in een alinea die andere tekstelementen bevat?
 

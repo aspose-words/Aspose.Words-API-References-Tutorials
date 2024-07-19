@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Schritt 1: Laden Sie das Quelldokument
 
- Zuerst müssen Sie das Quelldokument laden, aus dem Sie Kopf- und Fußzeilen entfernen möchten. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis, in dem sich das Quelldokument befindet.
+Zuerst müssen Sie das Quelldokument laden, aus dem Sie Kopf- und Fußzeilen entfernen möchten. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis, in dem sich das Quelldokument befindet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

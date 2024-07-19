@@ -1,6 +1,6 @@
 ---
-title: Infoga områdesdiagram i ett Word-dokument
-linktitle: Infoga områdesdiagram i ett Word-dokument
+title: Infoga Ytdiagram i ett Word-dokument
+linktitle: Infoga Ytdiagram i ett Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar ett områdesdiagram i ett dokument med Aspose.Words för .NET. Lägg till seriedata och spara dokumentet med diagrammet.
 type: docs
@@ -66,7 +66,7 @@ Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- Denna kodrad hämtar`Chart` objekt från formen vi just infogade.
+ Denna kodrad hämtar`Chart` objekt från formen vi precis infogade.
 
 ## Steg 4: Lägg till seriedata till diagrammet
 

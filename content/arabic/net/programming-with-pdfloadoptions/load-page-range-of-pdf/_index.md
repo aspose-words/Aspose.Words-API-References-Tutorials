@@ -15,7 +15,7 @@ url: /ar/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 استخدم الكود التالي لتحميل نطاق صفحات محدد من مستند PDF:
 
 ```csharp
-// المسار إلى دليل المستندات.
+//المسار إلى دليل المستندات.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -27,7 +27,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 ## الخطوة 2: حفظ الوثيقة
 
- وأخيرًا، يمكنك حفظ المستند الذي يحتوي على نطاق الصفحات المحدد باستخدام ملف`Save` طريقة:
+ وأخيرًا، يمكنك حفظ المستند الذي يحتوي على نطاق الصفحات المحدد باستخدام الملف`Save` طريقة:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");

@@ -46,7 +46,7 @@ table. ClearBorders();
 ```
 
 ## Adım 6: Masanın etrafında yeşil bir kenarlık tanımlayın
- Artık masanın çevresine yeşil bir çerçeve koyabiliriz.`SetBorder()` Tablonun her iki tarafı için yöntem. Bu örnekte 1,5 punto kalınlığında ve yeşil renkte "Tek" tipi bordür kullanıyoruz.
+ Artık masanın çevresine yeşil bir kenarlık koyabiliriz.`SetBorder()` Tablonun her iki tarafı için yöntem. Bu örnekte 1,5 punto kalınlığında ve yeşil renkte "Tek" tipi bordür kullanıyoruz.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);

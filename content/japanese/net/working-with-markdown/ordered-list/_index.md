@@ -2,96 +2,96 @@
 title: 順序付きリスト
 linktitle: 順序付きリスト
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して順序付きリストを作成する方法をステップバイステップ ガイドで学習します。
+description: Aspose.Words for .NET を使用して Word 文書に順序付きリストを作成する方法を、ステップバイステップ ガイドで学習します。文書作成の自動化に最適です。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/ordered-list/
 ---
+## 導入
 
-この例では、Aspose.Words for .NET で順序付きリスト機能を使用する方法について説明します。順序付きリストを使用すると、番号を使用して項目を順番に整理できます。
+それで、Aspose.Words for .NET を使って、素晴らしい Word 文書をプログラムで作成することに決めたのですね。素晴らしい選択です! 今日は、Word 文書で順序付きリストを作成する方法を詳しく説明します。ステップ バイ ステップで説明しますので、コーディング初心者でも熟練したプロでも、このガイドは非常に役立ちます。さあ、始めましょう!
 
-## ステップ1: ドキュメントジェネレーターの使用
+## 前提条件
 
-まず、ドキュメント ジェネレーターを使用して新しいドキュメントを作成します。
+コードに進む前に、いくつか必要なものがあります。
+
+1.  Aspose.Words for .NET: Aspose.Words for .NETがインストールされていることを確認してください。インストールされていない場合はダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio またはその他の .NET 互換 IDE。
+3. C# の基礎知識: 簡単に理解するには、C# の基礎を理解している必要があります。
+
+## 名前空間のインポート
+
+プロジェクトで Aspose.Words を使用するには、必要な名前空間をインポートする必要があります。これは、作業を開始する前にツールボックスを設定するようなものです。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+コードを一口サイズのステップに分解して、各部分を説明しましょう。準備はいいですか? さあ、始めましょう!
+
+## ステップ1: ドキュメントを初期化する
+
+まず最初に、新しいドキュメントを作成する必要があります。これは、コンピューター上で空白の Word ドキュメントを開くようなものと考えてください。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ2: 順序付きリスト形式を適用する
+ここでは、新しいドキュメントと DocumentBuilder オブジェクトを初期化しています。DocumentBuilder はペンのようなもので、ドキュメントにコンテンツを書き込むことができます。
 
-ドキュメントビルダーの`ApplyBulletDefault`メソッド。リスト レベルに移動して必要な形式を設定することで、番号付け形式をカスタマイズすることもできます。
+## ステップ2: 番号付きリスト形式を適用する
 
-```csharp
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
-```
-
-## ステップ3: リストにアイテムを追加する
-
-ドキュメントジェネレーターの`Writeln`方法。
+ここで、デフォルトの番号付きリスト形式を適用してみましょう。これは、番号付きの箇条書きを使用するように Word 文書を設定するのと似ています。
 
 ```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.ListFormat.ApplyNumberDefault();
 ```
+
+このコード行はリストの番号付けを設定します。簡単ですよね?
+
+## ステップ3: リスト項目を追加する
+
+次に、リストにいくつかの項目を追加してみましょう。買い物リストを書き留めていると想像してください。
+
+```csharp
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
+```
+
+これらの行を使用して、最初の 2 つの項目をリストに追加します。
 
 ## ステップ4: リストをインデントする
 
-ドキュメントジェネレーターの`ListIndent`方法。
+アイテムの下にサブアイテムを追加したい場合はどうすればいいでしょうか? やってみましょう!
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
-```
-
-## ステップ5: ドキュメントを保存する
-
-最後に、ドキュメントを希望の形式で保存できます。
-
-### Aspose.Words for .NET を使用した順序付きリストのサンプル ソース コード
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
-
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-
 builder.ListFormat.ListIndent();
 
 builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-おめでとうございます。これで、Aspose.Words for .NET で順序付きリスト機能を使用する方法を学習しました。
+の`ListIndent`メソッドはリストをインデントしてサブリストを作成します。これで、ネストされた ToDo リストのような階層型リストが作成されます。
 
+## 結論
 
-### よくある質問
+プログラムで Word 文書に順序付きリストを作成するのは、最初は大変に思えるかもしれませんが、Aspose.Words for .NET を使えば簡単です。これらの簡単な手順に従うだけで、文書にリストを簡単に追加して管理できます。レポートを生成する場合でも、構造化された文書を作成する場合でも、ワークフローを自動化する場合でも、Aspose.Words for .NET が対応します。今すぐ始めましょう。コーディングを開始して、魔法が繰り広げられるのを見てください。
 
-#### Q: Markdown で順序付きリストを作成するにはどうすればよいですか?
+## よくある質問
 
-A: Markdownで順序付きリストを作成するには、各リスト項目を数字とそれに続くピリオド（`1.`, `2.`, `3.`）の後にスペースを入れます。
+### リストの番号付けスタイルをカスタマイズできますか?  
+はい、番号のスタイルは、`ListFormat`プロパティ。ローマ数字、文字などのさまざまな番号スタイルを設定できます。
 
-#### Q: Markdown で順序付きリストをネストできますか?
+### インデントのレベルをさらに追加するにはどうすればよいですか?  
+あなたは`ListIndent`メソッドを複数回実行して、より深いレベルのサブリストを作成します。`ListIndent`インデントを 1 レベル追加します。
 
-A: はい、ネストされた各リスト項目の前に 4 つのオフセットスペースを追加することで、Markdown で順序付きリストをネストすることができます。
+### 箇条書きと番号付きリストを混在させてもいいですか?  
+もちろんです！同じ文書内で異なるリスト形式を適用するには、`ListFormat`財産。
 
-#### Q: 順序付きリストの番号付けをカスタマイズするにはどうすればよいですか?
+### 以前のリストから番号を続けて付けることは可能ですか?  
+はい、同じリスト形式を使用して番号付けを継続できます。Aspose.Words を使用すると、異なる段落間でのリスト番号付けを制御できます。
 
-A: 標準の Markdown では、順序付きリストの番号付けは自動的に生成されます。ただし、一部の Markdown エディターでは、特定の拡張機能を使用してカスタマイズできます。
-
-#### Q: Markdown の順序付きリストはインデントをサポートしていますか?
-
-A: はい、Markdown の順序付きリストはインデントをサポートしています。スペースまたはタブを使用して左シフトを追加できます。
-
-#### Q: リスト項目にリンクやインラインテキストを追加できますか?
-
-A: はい、適切な Markdown 構文を使用して、リスト項目にリンクまたはインライン テキストを追加できます。
+### リスト形式を削除するにはどうすればよいですか?  
+リスト形式を削除するには、`ListFormat.RemoveNumbers()`これにより、リスト項目が通常の段落に戻ります。

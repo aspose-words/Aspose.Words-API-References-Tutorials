@@ -36,7 +36,7 @@ using System;
 Đầu tiên, xác định thư mục nơi tài liệu của bạn được lưu trữ. Điều này rất cần thiết cho việc định vị và xử lý tài liệu của bạn.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu
+// Đường dẫn tới thư mục tài liệu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "WMF with image.docx");
 
 ## Bước 3: Định cấu hình tùy chọn hiển thị Metafile
 
-Thiết lập các tùy chọn hiển thị siêu tệp để xác định cách xử lý siêu tệp (ví dụ: tệp WMF) trong quá trình hiển thị.
+Thiết lập các tùy chọn kết xuất siêu tệp để xác định cách xử lý các siêu tệp (ví dụ: tệp WMF) trong quá trình kết xuất.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions

@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## 1. Adım: Kaynak Belgeyi Yükleyin
 
- Öncelikle üstbilgileri ve altbilgileri kaldırmak istediğiniz kaynak belgeyi yüklemeniz gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` kaynak belgenin bulunduğu belge dizininizin gerçek yolu ile birlikte.
+Öncelikle üstbilgileri ve altbilgileri kaldırmak istediğiniz kaynak belgeyi yüklemeniz gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` kaynak belgenin bulunduğu belge dizininizin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

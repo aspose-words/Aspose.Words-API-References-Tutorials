@@ -64,7 +64,7 @@ Agora vem a parte divertida. Vamos inserir um campo TC em nosso documento. O cam
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Esta linha de código diz ao Aspose.Words para inserir um campo TC com o texto de entrada "Entry Text". O`\\f t` parte é uma opção que determina como a entrada é exibida no Índice.
+ Esta linha de código diz ao Aspose.Words para inserir um campo TC com o texto de entrada "Entry Text". O`\\f t`parte é uma opção que determina como a entrada é exibida no Índice.
 
 ## Etapa 4: salve o documento
 

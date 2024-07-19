@@ -15,7 +15,7 @@ Antes de mergulhar no código, é importante entender a biblioteca Aspose.Words 
 
 ## Configurando opções de carregamento
 
-O primeiro passo é configurar as opções de carregamento do nosso arquivo CHM. Use a classe LoadOptions para especificar parâmetros de carregamento. No nosso caso, precisamos definir a propriedade Encoding com a codificação apropriada para arquivos CHM, normalmente “windows-1251”. Veja como fazer isso:
+O primeiro passo é configurar as opções de carregamento do nosso arquivo CHM. Use a classe LoadOptions para especificar parâmetros de carregamento. No nosso caso, precisamos definir a propriedade Encoding com a codificação apropriada para arquivos CHM, normalmente "windows-1251". Veja como fazer isso:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding. GetEncoding("windows-1251") };
@@ -54,11 +54,11 @@ Neste guia, explicamos como carregar um arquivo CHM usando a biblioteca Aspose.W
 
 #### P: O que são arquivos CHM e por que são usados?
 
-R: Os arquivos CHM, abreviação de arquivos Compiled HTML Help, são um tipo de formato de arquivo de ajuda comumente usado para fornecer documentação e assistência para aplicativos de software. Eles são frequentemente usados para fornecer ajuda e suporte contextual aos usuários.
+R: Os arquivos CHM, abreviação de Compiled HTML Help files, são um tipo de formato de arquivo de ajuda comumente usado para fornecer documentação e assistência para aplicativos de software. Eles são frequentemente usados para fornecer ajuda e suporte contextual aos usuários.
 
 #### P: Como o Aspose.Words lida com arquivos CHM em um aplicativo C#?
 
-R: Aspose.Words for .NET fornece as ferramentas e funcionalidades necessárias para carregar arquivos CHM em documentos do Word perfeitamente. Ao utilizar as opções de carregamento apropriadas, os desenvolvedores podem garantir que os arquivos CHM sejam importados corretamente.
+R: Aspose.Words for .NET fornece as ferramentas e funcionalidades necessárias para carregar arquivos CHM em documentos do Word sem problemas. Ao utilizar as opções de carregamento apropriadas, os desenvolvedores podem garantir que os arquivos CHM sejam importados corretamente.
 
 #### P: Posso personalizar as opções de carregamento com base em arquivos CHM específicos?
 

@@ -9,7 +9,7 @@ url: /cs/net/join-and-append-documents/remove-source-headers-footers/
 ---
 ## Úvod
 
-V tomto komplexním průvodci se ponoříme do toho, jak efektivně odstranit záhlaví a zápatí z dokumentu aplikace Word pomocí Aspose.Words for .NET. Záhlaví a zápatí se běžně používají pro číslování stránek, názvy dokumentů nebo jiný opakující se obsah v dokumentech aplikace Word. Ať už slučujete dokumenty nebo čistíte formátování, zvládnutí tohoto procesu může zefektivnit vaše úkoly správy dokumentů. Pojďme prozkoumat proces krok za krokem, jak toho dosáhnout pomocí Aspose.Words for .NET.
+tomto komplexním průvodci se ponoříme do toho, jak efektivně odstranit záhlaví a zápatí z dokumentu aplikace Word pomocí Aspose.Words for .NET. Záhlaví a zápatí se běžně používají pro číslování stránek, názvy dokumentů nebo jiný opakující se obsah v dokumentech aplikace Word. Ať už slučujete dokumenty nebo čistíte formátování, zvládnutí tohoto procesu může zefektivnit vaše úkoly správy dokumentů. Pojďme prozkoumat proces krok za krokem, jak toho dosáhnout pomocí Aspose.Words for .NET.
 
 ## Předpoklady
 
@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Krok 1: Načtěte zdrojový dokument
 
- Nejprve musíte načíst zdrojový dokument, ze kterého chcete odstranit záhlaví a zápatí. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašeho dokumentu, kde se nachází zdrojový dokument.
+Nejprve musíte načíst zdrojový dokument, ze kterého chcete odstranit záhlaví a zápatí. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašeho dokumentu, kde se nachází zdrojový dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -21,7 +21,7 @@ Di dunia yang berbasis data saat ini, kemampuan untuk memvisualisasikan dan memf
 Sepanjang seri tutorial ini, kami akan memandu Anda melalui berbagai aspek visualisasi dan pemformatan data di Aspose.Words. Anda akan mempelajari topik-topik seperti:
 
 - Inklusi Data Dinamis: Pelajari cara mengisi dokumen dengan data dinamis secara terprogram.
-- Pembuatan Bagan: Jelajahi teknik membuat bagan yang menarik secara visual untuk memvisualisasikan tren data.
+- Pembuatan Bagan: Jelajahi teknik untuk membuat bagan yang menarik secara visual untuk memvisualisasikan tren data.
 - Pemformatan Tabel: Kuasai seni memformat tabel untuk mengatur data secara efektif.
 - Penataan Dokumen: Temukan metode untuk menata dokumen, memastikan konsistensi dan profesionalisme.
 - Pembuatan Laporan: Pahami cara membuat laporan komprehensif dengan mudah.

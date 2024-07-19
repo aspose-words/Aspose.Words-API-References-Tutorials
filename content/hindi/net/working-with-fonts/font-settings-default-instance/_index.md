@@ -55,7 +55,7 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 
 ## चरण 3: दस्तावेज़ लोड करें
 
- आपके फ़ॉन्ट स्रोत कॉन्फ़िगर होने के बाद, अगला चरण आपके दस्तावेज़ को Aspose.Words में लोड करना है`Document`यह आपको दस्तावेज़ में हेरफेर करने और अंततः उसे सहेजने की अनुमति देता है।
+ आपके फ़ॉन्ट स्रोत कॉन्फ़िगर होने के बाद, अगला चरण आपके दस्तावेज़ को Aspose.Words में लोड करना है`Document` यह आपको दस्तावेज़ में हेरफेर करने और अंततः उसे सहेजने की अनुमति देता है।
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

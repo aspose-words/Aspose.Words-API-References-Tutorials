@@ -23,7 +23,7 @@ DocumentBuilder を使用したコンテンツの追加は、Aspose.Words ライ
 | [Word 文書にチェックボックス フォーム フィールドを挿入する](./insert-check-box-form-field/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書にチェック ボックス フォーム フィールドを挿入する方法を学習します。開発者に最適です。 |
 | [Word 文書にコンボ ボックス フォーム フィールドを挿入する](./insert-combo-box-form-field/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書にコンボ ボックス フォーム フィールドを挿入する方法を学習します。 |
 | [Word 文書に HTML を挿入する](./insert-html/) | 詳細なステップバイステップのチュートリアルで、Aspose.Words for .NET を使用して HTML を Word 文書にシームレスに挿入する方法を学びます。開発者に最適です。 |
-| [Word 文書にハイパーリンクを挿入する](./insert-hyperlink/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書にハイパーリンクを簡単に挿入する方法を学習します。C# 開発者に最適です。 |
+| [Word 文書にハイパーリンクを挿入する](./insert-hyperlink/) | Aspose.Words for .NET を使用して Word 文書にハイパーリンクを挿入する方法をステップバイステップ ガイドで学習します。文書作成タスクの自動化に最適です。 |
 | [Word 文書に目次を挿入する](./insert-table-of-contents/) | Aspose.Words for .NET を使用して Word に目次を挿入する方法を学びます。シームレスなドキュメント ナビゲーションを実現するには、ステップ バイ ステップ ガイドに従ってください。 |
 | [Word 文書にインライン画像を挿入する](./insert-inline-image/) | Aspose.Words for .NET を使用して Word 文書にインライン画像を挿入する方法を学びます。コード例と FAQ を含むステップバイステップ ガイドです。 |
 | [Word 文書にフローティング画像を挿入する](./insert-floating-image/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書にフローティング イメージを挿入する方法を学習します。文書の強化に最適です。 |

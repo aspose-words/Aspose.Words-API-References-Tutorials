@@ -30,20 +30,20 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 //为整个表格设置边框。
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 //设置该单元格的填充。
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 //为第二个单元格指定不同的单元格填充。
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 //清除先前操作的单元格格式。
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 //为该行中的第一个单元格创建更粗的边框。它将有所不同
 //相对于表格定义的边框。
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 ### 使用 Aspose.Words for .NET 格式化表格和具有不同边框的单元格的示例源代码 
 
 ```csharp
-	//文档目录的路径
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+//文档目录的路径
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//设置整个表格的边框。
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	//设置此单元格的单元格阴影。
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	//为第二个单元格指定不同的单元格阴影。
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	//清除以前操作的单元格格式。
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	//为该行的第一个单元格创建更大的边框。这将有所不同
-	//与表格设置的边框相比。
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//设置整个表格的边框。
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+//设置此单元格的单元格阴影。
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+//为第二个单元格指定不同的单元格阴影。
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+//清除以前操作的单元格格式。
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+//为该行的第一个单元格创建更大的边框。这将有所不同
+//与表格设置的边框相比。
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## 结论

@@ -16,11 +16,11 @@ url: /ko/net/programming-with-document-properties/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [변수 가져오기](./get-variables/) | .NET용 Aspose.Words를 사용하여 문서 변수를 검색하는 단계별 가이드입니다. |
-| [속성 열거](./enumerate-properties/) | .NET용 Aspose.Words를 사용하여 문서 속성을 열거하는 단계별 가이드입니다. |
-| [사용자 정의 문서 속성 추가](./add-custom-document-properties/) | .NET용 Aspose.Words를 사용하여 문서에 사용자 정의 속성을 추가하는 방법을 단계별로 안내합니다. |
-| [사용자 정의 문서 속성 제거](./remove-custom-document-properties/) | .NET용 Aspose.Words를 사용하여 문서에서 사용자 정의 속성을 제거하는 단계별 가이드입니다. |
-| [개인정보 삭제](./remove-personal-information/) | .NET용 Aspose.Words를 사용하여 문서에서 개인 정보를 제거하는 방법에 대한 단계별 가이드입니다. |
-| [콘텐츠 링크 구성](./configuring-link-to-content/) | .NET용 Aspose.Words를 사용하여 문서의 콘텐츠에 대한 연결을 설정하는 단계별 가이드입니다. |
-| [측정 단위 간 변환](./convert-between-measurement-units/) | .NET용 Aspose.Words를 사용하여 문서의 측정 단위 간 변환에 대한 단계별 가이드입니다. |
-| [제어 문자 사용](./use-control-characters/) | .NET용 Aspose.Words에서 제어 문자를 사용하는 방법에 대한 단계별 가이드입니다. |
+| [변수 가져오기](./get-variables/) | .NET용 Aspose.Words를 마스터하세요. 이 단계별 가이드를 통해 Word 문서에서 변수를 로드하고 추출하는 방법을 알아보세요. |
+| [속성 열거](./enumerate-properties/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 속성을 열거하는 방법을 알아보세요. 모든 기술 수준의 개발자에게 적합합니다. |
+| [사용자 정의 문서 속성 추가](./add-custom-document-properties/) | .NET용 Aspose.Words를 사용하여 Word 파일에 사용자 정의 문서 속성을 추가하는 방법을 알아보세요. 추가 메타데이터로 문서를 향상하려면 단계별 가이드를 따르세요. |
+| [사용자 정의 문서 속성 제거](./remove-custom-document-properties/) | .NET용 Aspose.Words를 사용하여 Word 파일에서 사용자 정의 문서 속성을 제거합니다. 빠르고 쉬운 솔루션을 얻으려면 단계별 가이드를 따르십시오. 개발자에게 적합합니다. |
+| [개인정보 삭제](./remove-personal-information/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 문서에서 개인 정보를 제거하는 방법을 알아보세요. 문서 관리를 단순화하세요. |
+| [콘텐츠 링크 구성](./configuring-link-to-content/) | 자세한 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 콘텐츠에 대한 링크를 구성하는 방법을 알아보세요. |
+| [측정 단위 간 변환](./convert-between-measurement-units/) | .NET용 Aspose.Words에서 측정 단위를 변환하는 방법을 알아보세요. 문서 여백, 머리글, 바닥글을 인치와 포인트 단위로 설정하려면 단계별 가이드를 따르세요. |
+| [제어 문자 사용](./use-control-characters/) | .NET용 Aspose.Words를 사용하여 Word 문서 작업을 자동화하는 방법을 알아보세요. 이 가이드에서는 작업 흐름을 효율적으로 만드는 설정, 텍스트 교체 등을 다룹니다. |

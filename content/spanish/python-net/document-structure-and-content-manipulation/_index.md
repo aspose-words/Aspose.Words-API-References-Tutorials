@@ -49,7 +49,7 @@ Aprenda a manipular encabezados y pies de página en documentos de Word usando A
 ### [Administrar la separación de palabras y el flujo de texto en documentos de Word](./document-hyphenation/)
 Aprenda a administrar la separación de palabras y el flujo de texto en documentos de Word usando Aspose.Words para Python. Cree documentos pulidos y fáciles de leer con ejemplos paso a paso y código fuente. 
 ### [Crear y administrar listas en documentos de Word](./document-lists/)
-Aprenda a crear y administrar listas en documentos de Word utilizando la API Aspose.Words Python. Guía paso a paso con código fuente para formatear, personalizar, anidar y más listas. 
+Aprenda a crear y administrar listas en documentos de Word usando la API Aspose.Words Python. Guía paso a paso con código fuente para formatear listas, personalizarlas, anidarlas y más. 
 ### [Utilizar el formato Markdown en documentos de Word](./document-markdown/)
 Aprenda cómo integrar el formato Markdown en documentos de Word usando Aspose.Words para Python. Guía paso a paso con ejemplos de código para la creación de contenido dinámico y visualmente atractivo. 
 ### [Comprender y navegar por los nodos de documentos](./document-nodes/)

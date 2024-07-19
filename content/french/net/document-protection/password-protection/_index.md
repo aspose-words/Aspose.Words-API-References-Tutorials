@@ -15,10 +15,10 @@ Salut! Vous êtes-vous déjà demandé comment protéger vos documents Word cont
 
 Avant de plonger dans le vif du sujet de la protection par mot de passe de vos documents Word, vous aurez besoin de quelques éléments :
 
-1. Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous de disposer de la bibliothèque Aspose.Words pour .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Visual Studio ou tout autre environnement de développement C#.
 3. Connaissances de base en C# : Une compréhension fondamentale de la programmation C#.
-4.  Licence Aspose : obtenez une licence auprès de[ici](https://purchase.aspose.com/buy) ou utilisez un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
+4.  Licence Aspose : obtenez une licence auprès de[ici](https://purchase.aspose.com/buy)ou utilisez un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
 
 ## Importer des espaces de noms
 

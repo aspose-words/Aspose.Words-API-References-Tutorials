@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: สร้างและจัดรูปแบบเอกสาร
- สร้างอินสแตนซ์ของ`Document` ชั้นเรียนและ`DocumentBuilder` คลาสเพื่อสร้างเอกสาร ใช้`Font` ทรัพย์สินของ`DocumentBuilder`เพื่อเข้าถึงคุณสมบัติการจัดรูปแบบแบบอักษร
+ สร้างอินสแตนซ์ของ`Document` ชั้นเรียนและ`DocumentBuilder` คลาสเพื่อสร้างเอกสาร ใช้`Font` ทรัพย์สินของ`DocumentBuilder` เพื่อเข้าถึงคุณสมบัติการจัดรูปแบบแบบอักษร
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## ขั้นตอนที่ 3: บันทึกเอกสาร
- ใช้`Save` วิธีการบันทึกเอกสารโดยใช้การจัดรูปแบบแบบอักษร แทนที่`"WorkingWithFonts.SetFontFormatting.docx"` พร้อมชื่อไฟล์ที่ต้องการ
+ ใช้`Save`วิธีการบันทึกเอกสารโดยใช้การจัดรูปแบบแบบอักษร แทนที่`"WorkingWithFonts.SetFontFormatting.docx"` พร้อมชื่อไฟล์ที่ต้องการ
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

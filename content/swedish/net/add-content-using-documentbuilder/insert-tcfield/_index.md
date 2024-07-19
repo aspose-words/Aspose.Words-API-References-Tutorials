@@ -64,7 +64,7 @@ Nu kommer den roliga delen. Vi kommer att infoga ett TC-fält i vårt dokument. 
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Denna kodrad säger till Aspose.Words att infoga ett TC-fält med inmatningstexten "Entry Text". De`\\f t` del är en omkopplare som bestämmer hur posten visas i innehållsförteckningen.
+ Denna kodrad säger till Aspose.Words att infoga ett TC-fält med inmatningstexten "Entry Text". De`\\f t`del är en omkopplare som bestämmer hur posten visas i innehållsförteckningen.
 
 ## Steg 4: Spara dokumentet
 

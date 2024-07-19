@@ -145,7 +145,7 @@ Evet, yer imlerine eklenen içeriğe çeşitli biçimlendirme stilleri uygulayab
 
 Evet, yer imleri uygun Aspose.Words API kullanılarak DOCX, DOC ve daha fazlası dahil olmak üzere çeşitli belge formatlarında kullanılabilir.
 
-### Analiz için yer imlerinden veri çıkarmak mümkün mü?
+### Analiz için yer imlerinden veri çıkarmak mümkün müdür?
 
 Kesinlikle! Yer işaretlerinden metin ve diğer içerikleri çıkarabilirsiniz; bu, özellikle özetler oluşturmak veya daha fazla analiz yapmak için kullanışlıdır.
 

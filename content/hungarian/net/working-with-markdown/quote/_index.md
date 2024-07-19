@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## 3. lépés: Stílusok létrehozása a beágyazott szintek számára
 
- A beágyazott szintekhez stílusokat hozhatunk létre a`Styles.Add` módszere a`Document` tárgy. Ebben a példában egy "Idézet1" nevű stílust hozunk létre, amely egy beágyazott idézetszintet képvisel.
+ A beágyazott szintekhez stílusokat hozhatunk létre a`Styles.Add` módszere a`Document`tárgy. Ebben a példában egy "Idézet1" nevű stílust hozunk létre, amely egy beágyazott idézetszintet képvisel.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

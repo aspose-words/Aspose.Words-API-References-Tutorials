@@ -106,7 +106,7 @@ Congratulazioni! Hai imparato con successo come nascondere un asse del grafico i
 ## Domande frequenti
 
 ### Cos'è Aspose.Words per .NET?
-Aspose.Words per .NET è una potente API per creare, modificare, convertire e manipolare documenti Word all'interno delle applicazioni .NET.
+Aspose.Words per .NET è una potente API per creare, modificare, convertire e manipolare documenti Word all'interno di applicazioni .NET.
 
 ### Posso nascondere entrambi gli assi X e Y in un grafico?
  Sì, puoi nascondere entrambi gli assi impostando il file`Hidden` proprietà di entrambi`AxisX`E`AxisY` A`true`.

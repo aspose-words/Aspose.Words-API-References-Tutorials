@@ -78,7 +78,7 @@ A: Bidang tampilan hasil di Aspose.Words adalah jenis bidang yang menampilkan ha
 
 #### T: Bagaimana cara memperbarui bidang tampilan hasil di dokumen Word dengan Aspose.Words?
 
-J: Untuk memperbarui bidang tampilan hasil di dokumen Word dengan Aspose.Words, Anda dapat menggunakan metode UpdateFields. Metode ini menelusuri dokumen dan memperbarui semua bidang, termasuk bidang tampilan hasil, menghitung ulang nilai berdasarkan data saat ini.
+J: Untuk memperbarui bidang tampilan hasil di dokumen Word dengan Aspose.Words, Anda dapat menggunakan metode UpdateFields. Metode ini mengulang dokumen dan memperbarui semua bidang, termasuk bidang tampilan hasil, menghitung ulang nilai berdasarkan data saat ini.
 
 #### T: Dapatkah saya memformat hasil yang ditampilkan oleh bidang tampilan hasil?
 

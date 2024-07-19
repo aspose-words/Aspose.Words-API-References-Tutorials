@@ -2,7 +2,7 @@
 title: Különböző dokumentumformátumok kezelése
 linktitle: Különböző dokumentumformátumok kezelése
 second_title: Aspose.Words Java Document Processing API
-description: Fedezze fel az Aspose.Words for Java erejét a különféle dokumentumformátumok kezelésében. Tanuljon meg szövegszerkesztést, konverziót és egyebeket gyakorlati példákon keresztül.
+description: Használja ki az Aspose.Words for Java erejét a különféle dokumentumformátumok kezelésében. Tanuljon meg szövegszerkesztést, konverziót és egyebeket gyakorlati példákon keresztül.
 type: docs
 weight: 10
 url: /hu/java/word-processing/handling-different-document-formats/

@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
 ## Kesimpulan
-Selamat! Anda telah berhasil mempelajari cara mengubah lokal di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, Anda kini dapat mengontrol format tanggal dan angka selama operasi gabungan surat. Sesuaikan lokal sesuai dengan kebutuhan Anda untuk memastikan pemformatan yang akurat dan konsisten dalam dokumen Anda.
+Selamat! Anda telah berhasil mempelajari cara mengubah lokal di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, Anda kini dapat mengontrol format tanggal dan angka selama operasi penggabungan surat. Sesuaikan lokal sesuai dengan kebutuhan Anda untuk memastikan pemformatan yang akurat dan konsisten dalam dokumen Anda.
 
 ### FAQ
 

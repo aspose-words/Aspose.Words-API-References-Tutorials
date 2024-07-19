@@ -15,7 +15,7 @@ Czy kiedykolwiek znalazłeś się w sytuacji, w której musiałeś przekonwertow
 
 Zanim przejdziemy do sedna sprawy, upewnijmy się, że mamy wszystkie nasze kaczki w rzędzie. Oto, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną tę potężną bibliotekę. Jeśli nie, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną tę potężną bibliotekę. Jeśli nie, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
 2. .NET Framework: Upewnij się, że na komputerze jest skonfigurowane środowisko .NET.
 3. Visual Studio: wystarczy każda wersja, o ile potrafisz się po niej poruszać.
 4.  Plik PDF: przygotuj plik PDF do konwersji. W tym samouczku użyjemy pliku o nazwie`Pdf Document.pdf`.
@@ -74,7 +74,7 @@ Po załadowaniu pliku PDF czas przeprowadzić konwersję. Ten krok jest zaskakuj
 
 ## Wniosek
 
-I masz to! Konwersja pliku PDF do formatu JPEG za pomocą Aspose.Words dla .NET jest dziecinnie prosta. Za pomocą zaledwie kilku linijek kodu możesz przekształcić swoje dokumenty i otworzyć świat możliwości. Niezależnie od tego, czy jesteś programistą chcącym usprawnić przepływ pracy, czy po prostu osobą, która uwielbia majstrować przy kodzie, Aspose.Words zapewni Ci wsparcie.
+masz to! Konwersja pliku PDF do formatu JPEG za pomocą Aspose.Words dla .NET jest dziecinnie prosta. Za pomocą zaledwie kilku linijek kodu możesz przekształcić swoje dokumenty i otworzyć świat możliwości. Niezależnie od tego, czy jesteś programistą chcącym usprawnić przepływ pracy, czy po prostu osobą, która uwielbia majstrować przy kodzie, Aspose.Words zapewni Ci wsparcie.
 
 ## Często zadawane pytania
 

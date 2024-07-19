@@ -76,9 +76,9 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
  Genom att skapa en instans av`DocumentBuilder` och skickar vårt dokument till det är vi redo att börja lägga till innehåll.
 
-## Steg 5: Infoga formulärfältet Combo Box
+## Steg 5: Infoga kombinationsrutans formulärfält
 
- Här händer magin. Vi kommer att använda`InsertComboBox` metod för att lägga till ett formulärfält med kombinationsruta i vårt dokument.
+ Det är här magin händer. Vi kommer att använda`InsertComboBox` metod för att lägga till ett formulärfält med kombinationsruta i vårt dokument.
 
 ```csharp
 builder.InsertComboBox("DropDown", items, 0);

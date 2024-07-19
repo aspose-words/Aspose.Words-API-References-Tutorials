@@ -32,7 +32,7 @@ Para criar uma lista de documentos, siga estas etapas:
 3. Adicione itens de lista ao documento.
 4. Salve o documento.
 
-Aqui está um exemplo de trecho de código para você começar:
+Aqui está um trecho de código de exemplo para você começar:
 
 ```java
 // Importar pacotes necessários

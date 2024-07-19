@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- In diesem letzten Schritt speichern wir das resultierende Dokument im .docx-Format mit dem`Save` Methode und Übergabe des Pfads zur Ausgabedatei.
+ In diesem letzten Schritt speichern wir das resultierende Dokument im .docx-Format mit dem`Save` Methode und Übergabe des Pfads an die Ausgabedatei.
 
 Jetzt können Sie den Quellcode ausführen, um das Textdokument zu laden, indem Sie Optionen zur Behandlung von Leerzeichen angeben. Das resultierende Dokument wird im angegebenen Verzeichnis unter dem Namen „WorkingWithTxtLoadOptions.HandleSpacesOptions.docx“ gespeichert.
 

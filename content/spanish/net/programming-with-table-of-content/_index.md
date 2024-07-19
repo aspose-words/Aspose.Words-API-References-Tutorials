@@ -9,7 +9,7 @@ url: /es/net/programming-with-table-of-content/
 ---
 Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con tabla de contenido lo guiarán a través de los pasos para manipular y personalizar tablas de contenido en sus documentos de Word. Aprenderá cómo crear, actualizar y personalizar tablas de contenido para organizar eficazmente el contenido de sus documentos.
 
-Estos tutoriales proporcionan ejemplos de código paso a paso y explicaciones claras sobre cómo utilizar las funciones de Aspose.Words para .NET para trabajar con tablas de contenido. Aprenderá a agregar niveles de encabezado, especificar estilos de formato, personalizar la apariencia y el comportamiento de las tablas de contenido y administrar actualizaciones automáticas.
+Estos tutoriales proporcionan ejemplos de código paso a paso y explicaciones claras sobre cómo utilizar las funciones Aspose.Words para .NET para trabajar con tablas de contenido. Aprenderá a agregar niveles de encabezado, especificar estilos de formato, personalizar la apariencia y el comportamiento de las tablas de contenido y administrar actualizaciones automáticas.
 
 Ya sea un principiante o un desarrollador experimentado, estos tutoriales lo ayudarán a dominar las técnicas avanzadas para crear y mantener tablas de contenido profesionales en sus documentos de Word usando Aspose.Words para .NET. Mejore la organización de sus documentos y facilite la navegación a sus usuarios con estos tutoriales completos e informativos.
 

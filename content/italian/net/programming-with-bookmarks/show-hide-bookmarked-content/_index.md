@@ -2,156 +2,133 @@
 title: Mostra Nascondi contenuto con segnalibro nel documento di Word
 linktitle: Mostra Nascondi contenuto con segnalibro nel documento di Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come mostrare o nascondere dinamicamente il contenuto con segnalibri nei documenti Word utilizzando Aspose.Words per .NET con questa guida passo passo completa.
+description: Scopri come mostrare e nascondere il contenuto con segnalibri nei documenti Word utilizzando Aspose.Words per .NET con questa guida dettagliata passo passo.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
-
 ## introduzione
 
-Ehilà! Hai mai desiderato controllare la visibilità di contenuti specifici all'interno di un documento Word in base a determinate condizioni? Con Aspose.Words per .NET, puoi mostrare o nascondere dinamicamente il contenuto dei segnalibri con solo poche righe di codice. In questo tutorial ti guiderò attraverso il processo passo dopo passo, assicurandoti di comprendere ogni parte del codice. Alla fine, sarai un professionista nel manipolare i segnalibri nei documenti Word. Iniziamo!
+Pronti a tuffarvi nel mondo della manipolazione dei documenti con Aspose.Words per .NET? Che tu sia uno sviluppatore che desidera automatizzare le attività sui documenti o semplicemente qualcuno curioso di gestire i file di Word a livello di codice, sei nel posto giusto. Oggi esploreremo come mostrare e nascondere il contenuto con segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questa guida passo passo ti renderà un professionista nel controllo della visibilità dei contenuti in base ai segnalibri. Iniziamo!
 
 ## Prerequisiti
 
-Prima di immergerci nel tutorial, assicuriamoci di avere tutto ciò di cui hai bisogno:
+Prima di passare al nocciolo della questione, ci sono alcune cose di cui avrai bisogno:
 
-1. Conoscenza di base di C#: dovresti avere dimestichezza con la sintassi e i concetti di C#.
-2.  Aspose.Words per .NET: scaricalo[Qui](https://releases.aspose.com/words/net/) . Se non sei pronto per l'acquisto, puoi iniziare con a[prova gratuita](https://releases.aspose.com/).
-3. Visual Studio: funzionerà qualsiasi versione recente, ma si consiglia di utilizzare la versione più recente.
-4. .NET Framework: assicurati che sia installato sul tuo computer.
-
-Pronto per iniziare? Grande! Iniziamo importando gli spazi dei nomi necessari.
+1. Visual Studio: qualsiasi versione compatibile con .NET.
+2.  Aspose.Words per .NET: scaricalo[Qui](https://releases.aspose.com/words/net/).
+3. Comprensione di base di C#: se riesci a scrivere un semplice programma "Hello World", sei a posto.
+4. Un documento Word con segnalibri: utilizzeremo un documento di esempio con segnalibri per questo tutorial.
 
 ## Importa spazi dei nomi
 
-Per utilizzare Aspose.Words per .NET, dobbiamo importare gli spazi dei nomi richiesti. Questo passaggio garantisce l'accesso a tutte le classi e i metodi che utilizzeremo.
+Per prima cosa, importiamo gli spazi dei nomi necessari. Ciò garantisce che disponiamo di tutti gli strumenti necessari per il nostro compito.
 
 ```csharp
 using System;
 using Aspose.Words;
-using Aspose.Words.Fields;
+using Aspose.Words.Bookmark;
 ```
 
-Questi spazi dei nomi sono fondamentali per lavorare con documenti Word e manipolarne il contenuto.
+Con questi spazi dei nomi in atto, siamo pronti per iniziare il nostro viaggio.
 
-## Passaggio 1: impostazione del documento
+## Passaggio 1: impostazione del progetto
 
-Innanzitutto, creiamo un nuovo documento Word e un generatore di documenti. Il generatore di documenti ci aiuta ad aggiungere e manipolare facilmente il contenuto all'interno del documento.
+Va bene, iniziamo configurando il nostro progetto in Visual Studio.
+
+### Crea un nuovo progetto
+
+Aprire Visual Studio e creare un nuovo progetto di app console (.NET Core). Chiamalo con qualcosa di accattivante, come "BookmarkVisibilityManager".
+
+### Aggiungi Aspose.Words per .NET
+
+Dovrai aggiungere Aspose.Words per .NET al tuo progetto. È possibile farlo tramite Gestione pacchetti NuGet.
+
+1. Vai a Strumenti > Gestione pacchetti NuGet > Gestisci pacchetti NuGet per la soluzione.
+2. Cerca "Aspose.Words".
+3. Installa il pacchetto.
+
+Grande! Ora che il nostro progetto è impostato, passiamo al caricamento del nostro documento.
+
+## Passaggio 2: caricamento del documento
+
+Dobbiamo caricare il documento Word che contiene i segnalibri. Per questo tutorial utilizzeremo un documento di esempio denominato "Bookmarks.docx".
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-In questo passaggio inizializziamo un nuovo documento e un generatore di documenti. Questo imposta il nostro ambiente per ulteriori operazioni.
+ Questo frammento di codice imposta il percorso della directory dei documenti e carica il documento nel file`doc` oggetto.
 
-## Passaggio 2: aggiunta di contenuti aggiunti ai segnalibri
+## Passaggio 3: mostra/nascondi contenuto aggiunto ai segnalibri
 
-Successivamente, aggiungeremo del contenuto al documento e creeremo un segnalibro attorno ad esso. Questo segnalibro ci aiuterà a identificare e manipolare il contenuto.
+Ora arriva la parte divertente: mostrare o nascondere il contenuto in base ai segnalibri. Creeremo un metodo chiamato`ShowHideBookmarkedContent` per gestire questa cosa.
 
-```csharp
-builder.Write("This is some text before the bookmark.");
-builder.StartBookmark("MyBookmark");
-builder.Write("This is the bookmarked content.");
-builder.EndBookmark("MyBookmark");
-builder.Write("This is some text after the bookmark.");
-```
-
- Qui aggiungiamo del testo prima e dopo il contenuto aggiunto ai segnalibri. IL`StartBookmark`E`EndBookmark` metodi definiscono i confini del segnalibro.
-
-## Passaggio 3: inserimento di un campo condizionale
-
-Per controllare la visibilità del contenuto aggiunto ai segnalibri, utilizzeremo un campo condizionale. Questo campo controllerà una condizione e visualizzerà o nasconderà il contenuto di conseguenza.
+Ecco il metodo che attiverà la visibilità dei contenuti aggiunti ai segnalibri:
 
 ```csharp
-builder.MoveToDocumentEnd();
-Field field = builder.InsertField("IF \"", null);
-builder.MoveTo(field.Start.NextSibling);
-builder.InsertField("MERGEFIELD MyBookmark", null);
-builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
-```
-
-In questo passaggio inseriamo un campo IF che controlla il valore del segnalibro. Se il valore è "vero", verrà visualizzato "Visibile"; altrimenti verrà visualizzato "Nascosto".
-
-## Passaggio 4: riorganizzazione dei nodi
-
-Successivamente, dobbiamo riorganizzare i nodi per garantire che la logica condizionale si applichi correttamente al contenuto aggiunto ai segnalibri.
-
-```csharp
-Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
-Node currentNode = field.Start;
-bool flag = true;
-
-while (currentNode != null && flag)
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool isHidden)
 {
-    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-        flag = false;
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-    currentNode = nextNode;
-}
-
-Node endNode = bm.BookmarkEnd;
-flag = true;
-
-while (currentNode != null && flag)
-{
-    if (currentNode.NodeType == NodeType.FieldEnd)
-        flag = false;
-
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-    endNode = currentNode;
-    currentNode = nextNode;
+    Node currentNode = bm.BookmarkStart;
+    while (currentNode != null && currentNode.NodeType != NodeType.BookmarkEnd)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+        {
+            Run run = currentNode as Run;
+            run.Font.Hidden = isHidden;
+        }
+        currentNode = currentNode.NextSibling;
+    }
 }
 ```
 
-Qui spostiamo i nodi per assicurarci che la condizione comprenda correttamente il contenuto aggiunto ai segnalibri.
+### Scomposizione del metodo
 
-## Passaggio 5: esecuzione della stampa unione
+-  Recupero dei segnalibri:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` recupera il segnalibro.
+- Attraversamento dei nodi: attraversiamo i nodi all'interno del segnalibro.
+-  Attiva/disattiva visibilità: se il nodo è a`Run` (una sequenza di testo contigua), impostiamo its`Hidden` proprietà.
 
-Infine, eseguiremo una stampa unione per impostare il valore del segnalibro e determinare se il contenuto deve essere mostrato o nascosto.
+## Passaggio 4: applicazione del metodo
 
-```csharp
-doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
-```
-
-Questo passaggio imposta il valore del segnalibro su "true", che renderà visibile il contenuto in base alla nostra condizione.
-
-## Passaggio 6: salvataggio del documento
-
-Dopo tutte le manipolazioni, l'ultimo passaggio è salvare il documento modificato.
+Con il nostro metodo in atto, applichiamolo per mostrare o nascondere il contenuto in base a un segnalibro.
 
 ```csharp
-doc.Save("ShowHideBookmarkedContent.docx");
+ShowHideBookmarkedContent(doc, "MyBookmark1", true);
 ```
 
-Qui salviamo il documento con un nome file descrittivo per indicare le modifiche.
+Questa riga di codice nasconderà il contenuto del segnalibro denominato "MyBookmark1".
+
+## Passaggio 5: salvataggio del documento
+
+Infine, salviamo il nostro documento modificato.
+
+```csharp
+doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
+```
+
+Ciò salva il documento con le modifiche che abbiamo apportato.
 
 ## Conclusione
 
- E questo è tutto! Hai imparato con successo come mostrare o nascondere il contenuto dei segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questo tutorial ha trattato la creazione di un documento, l'aggiunta di segnalibri, l'inserimento di campi condizionali, la riorganizzazione dei nodi e l'esecuzione di una stampa unione. Aspose.Words offre una miriade di funzionalità, quindi non esitare a esplorare il[Documentazione dell'API](https://reference.aspose.com/words/net/) per funzionalità più avanzate.
+il gioco è fatto! Hai appena imparato come mostrare e nascondere il contenuto con segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questo potente strumento semplifica la manipolazione dei documenti, sia che tu stia automatizzando report, creando modelli o semplicemente armeggiando con file Word. Buona programmazione!
 
 ## Domande frequenti
 
-### 1. Cos'è Aspose.Words per .NET?
+### Posso attivare o disattivare più segnalibri contemporaneamente?
+ Sì, puoi chiamare il`ShowHideBookmarkedContent` per ciascun segnalibro che desideri attivare/disattivare.
 
-Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di creare, modificare e convertire documenti Word a livello di codice. È ampiamente utilizzato per attività di automazione dei documenti.
+### Nascondere il contenuto influisce sulla struttura del documento?
+No, nascondere il contenuto influisce solo sulla sua visibilità. Il contenuto rimane nel documento.
 
-### 2. Posso utilizzare Aspose.Words per .NET gratuitamente?
+### Posso utilizzare questo metodo per altri tipi di contenuti?
+Questo metodo attiva/disattiva specificamente le sequenze di testo. Per altri tipi di contenuto, dovrai modificare la logica di attraversamento del nodo.
 
- Puoi provare Aspose.Words per .NET utilizzando a[prova gratuita](https://releases.aspose.com/). Per un utilizzo a lungo termine, dovrai acquistare una licenza.
+### Aspose.Words per .NET è gratuito?
+ Aspose.Words offre una prova gratuita[Qui](https://releases.aspose.com/) , ma per l'uso in produzione è necessaria una licenza completa. Puoi acquistarlo[Qui](https://purchase.aspose.com/buy).
 
-### 3. Come posso modificare altre proprietà di un segnalibro?
-
- Aspose.Words ti consente di manipolare varie proprietà di un segnalibro, come il testo e la posizione. Fare riferimento al[Documentazione dell'API](https://reference.aspose.com/words/net/) per istruzioni dettagliate.
-
-### 4. Come posso ottenere supporto per Aspose.Words per .NET?
-
-Puoi ottenere supporto visitando il[Aspose forum di supporto](https://forum.aspose.com/c/words/8).
-
-### 5. Posso manipolare altri tipi di contenuti con Aspose.Words per .NET?
-
-Sì, Aspose.Words per .NET supporta vari tipi di manipolazione dei contenuti, inclusi testo, immagini, tabelle e altro.
+### Come posso ottenere supporto se riscontro problemi?
+ Puoi ottenere supporto dalla comunità Aspose[Qui](https://forum.aspose.com/c/words/8).

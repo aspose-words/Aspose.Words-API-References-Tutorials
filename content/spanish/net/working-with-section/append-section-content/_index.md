@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: agregar secciones al documento
 
-continuación, agregaremos algunas secciones a nuestro documento. Cada sección contendrá algo de texto e insertaremos saltos de sección entre ellas.
+A continuación, agregaremos algunas secciones a nuestro documento. Cada sección contendrá algo de texto e insertaremos saltos de sección entre ellas.
 
 ```csharp
 builder.Write("Section 1");

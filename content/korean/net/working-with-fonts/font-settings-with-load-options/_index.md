@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2단계: 글꼴 설정으로 로딩 옵션 구성
-다음으로 인스턴스를 생성하겠습니다.`LoadOptions` 새 인스턴스를 생성하여 글꼴 설정을 지정합니다.`FontSettings` 그리고 그것을 할당`loadOptions.FontSettings`.
+ 다음으로 인스턴스를 생성하겠습니다.`LoadOptions`새 인스턴스를 생성하여 글꼴 설정을 지정합니다.`FontSettings` 그리고 그것을 할당`loadOptions.FontSettings`.
 
 ```csharp
 // 글꼴 설정으로 로딩 옵션 구성
@@ -57,7 +57,7 @@ Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 
 #### Q: Aspose.Words에 문서를 로드할 때 기본 글꼴을 어떻게 지정합니까?
 
- A: Aspose.Words에서 문서를 로드할 때 기본 글꼴을 지정하려면`LoadOptions` 클래스를 설정하고`DefaultFontName`속성을 원하는 글꼴 이름으로 설정합니다.
+ A: Aspose.Words에서 문서를 로드할 때 기본 글꼴을 지정하려면`LoadOptions` 클래스를 설정하고`DefaultFontName` 속성을 원하는 글꼴 이름으로 설정합니다.
 
 #### Q: Aspose.Words의 로딩 옵션으로 지정할 수 있는 다른 글꼴 설정은 무엇입니까?
 

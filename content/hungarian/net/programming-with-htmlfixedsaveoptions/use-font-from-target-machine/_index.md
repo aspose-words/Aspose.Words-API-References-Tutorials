@@ -34,7 +34,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFo
 
 Létrehozunk egy új HtmlFixedSaveOptions objektumot, és igazra állítjuk a UseTargetMachineFonts tulajdonságot, hogy a célgép betűtípusait használjuk a konvertálás során.
 
-## Javított HTML dokumentum konvertálás
+## Javítva a HTML dokumentum átalakítás
 
 Most, hogy konfiguráltuk a mentési beállításokat, folytathatjuk a dokumentum konvertálását rögzített HTML-re. A Dokumentum osztály Mentés metódusával mentheti a konvertált dokumentumot rögzített HTML formátumba a mentési beállítások megadásával. Íme egy példa:
 

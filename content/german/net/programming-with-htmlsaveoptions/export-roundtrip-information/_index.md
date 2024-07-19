@@ -33,7 +33,7 @@ Nun konfigurieren wir die HTML-Speicheroptionen, um die Roundtrip-Informationen 
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Dieser Code erstellt eine Instanz von`HtmlSaveOptions`und setzt den`ExportRoundtripInformation` Möglichkeit,`true` um Roundtrip-Informationen beim Export einzuschließen.
+ Dieser Code erstellt eine Instanz von`HtmlSaveOptions` und setzt den`ExportRoundtripInformation` Möglichkeit,`true` um Roundtrip-Informationen beim Export einzuschließen.
 
 ## Schritt 4: Konvertieren und Speichern des Dokuments im HTML-Format
 

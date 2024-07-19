@@ -14,7 +14,7 @@ url: /ko/net/basic-conversions/
 | 제목 | 설명 |
 | --- | --- |
 | [문서를 Docx로 변환](./doc-to-docx/) | .NET용 Aspose.Words를 사용하여 DOC를 DOCX로 변환하는 방법을 알아보세요. 코드 예제가 포함된 단계별 가이드입니다. 개발자에게 적합합니다.  |
-| [Docx를 Rtf로 변환](./docx-to-rtf/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 DOCX를 RTF로 변환하는 방법을 알아보세요. 효율적인 솔루션을 찾는 개발자에게 이상적입니다.  |  
+| [Docx를 Rtf로 변환](./docx-to-rtf/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 DOCX를 RTF로 변환하는 방법을 알아보세요. 원활한 문서 처리를 위한 손쉬운 변환. |  
 | [Word 파일을 PDF로 변환](./docx-to-pdf/) | 가이드와 함께 Aspose.Words for .NET을 사용하여 Word 파일을 PDF로 쉽게 변환하는 방법을 알아보세요. 빠르고 안정적인 문서 변환을 원하는 개발자에게 적합합니다. | 
 | [Docx를 바이트로 변환](./docx-to-byte/) | 효율적인 문서 처리를 위해 Aspose.Words를 사용하여 Docx를 .NET에서 바이트 배열로 변환하는 방법을 알아보세요. 단계별 가이드가 포함되어 있습니다. |  
 | [Docx를 Epub로 변환](./docx-to-epub/) | .NET용 Aspose.Words를 사용하여 DOCX를 EPUB로 쉽게 변환하세요. .NET 애플리케이션에 원활하게 통합하려면 튜토리얼을 따르세요. |

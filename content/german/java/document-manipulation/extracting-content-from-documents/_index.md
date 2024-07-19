@@ -79,7 +79,7 @@ Document dstDoc = ExtractContentHelper.generateDocument(doc, extractedNodes);
 dstDoc.save("Your Directory Path" + "ExtractContent.ExtractContentBetweenParagraphs.docx");
 ```
 
-## Extrahieren von Inhalten zwischen Absatzformaten
+## Extrahieren von Inhalten zwischen Absatzstilen
 
 ```java
 // Java-Codebeispiel zum Extrahieren von Inhalten zwischen Absatzstilen
@@ -238,7 +238,7 @@ Herzlichen Glückwunsch! Sie haben gelernt, wie Sie mit Aspose.Words für Java I
 
 ### Wie extrahiere ich Inhalte aus bestimmten Dokumentabschnitten?
 
-Um Inhalte aus bestimmten Dokumentabschnitten zu extrahieren, können Sie die Start- und Endpunkte der Abschnitte identifizieren und die entsprechenden Aspose.Words für Java-Methoden verwenden, um Inhalte zwischen ihnen zu extrahieren.
+Um Inhalt aus bestimmten Dokumentabschnitten zu extrahieren, können Sie die Start- und Endpunkte der Abschnitte identifizieren und die entsprechenden Aspose.Words für Java-Methoden verwenden, um Inhalt zwischen ihnen zu extrahieren.
 
 ### Kann ich Inhalte aus passwortgeschützten Dokumenten extrahieren?
 

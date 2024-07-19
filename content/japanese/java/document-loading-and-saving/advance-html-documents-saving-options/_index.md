@@ -89,7 +89,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```
 
 ## 8. MHTMLリソースのCID URLをエクスポートする
-の`exportCidUrlsForMhtmlResources`このメソッドは、ドキュメントを MHTML 形式で保存するときに使用されます。これにより、リソースのコンテンツ ID URL をエクスポートできます。
+の`exportCidUrlsForMhtmlResources`このメソッドは、ドキュメントを MHTML 形式で保存するときに使用されます。これにより、リソースの Content-ID URL をエクスポートできます。
 
 ```java
 @Test
@@ -99,7 +99,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```
 
 ## 9. フォント名を解決する
-の`resolveFontNames`この方法は、ドキュメントを HTML 形式で保存するときにフォント名を解決するのに役立ち、異なるプラットフォーム間で一貫したレンダリングを保証します。
+の`resolveFontNames`このメソッドは、ドキュメントを HTML 形式で保存するときにフォント名を解決するのに役立ち、異なるプラットフォーム間で一貫したレンダリングを保証します。
 
 ```java
 @Test

@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://example.com/resources"
 
  Αυτός ο κώδικας δημιουργεί μια παρουσία του`HtmlSaveOptions` και ορίζει τις ακόλουθες επιλογές:
 
-- `CssStyleSheetType` Έχει οριστεί`CssStyleSheetType.External`για εξαγωγή του φύλλου στυλ CSS σε ένα εξωτερικό αρχείο.
+- `CssStyleSheetType` Έχει οριστεί`CssStyleSheetType.External` για εξαγωγή του φύλλου στυλ CSS σε ένα εξωτερικό αρχείο.
 - `ExportFontResources` Έχει οριστεί`true` για εξαγωγή πόρων γραμματοσειρών.
 - `ResourceFolder` καθορίζει τον κατάλογο προορισμού όπου θα αποθηκευτούν οι πόροι.
-- `ResourceFolderAlias` καθορίζει το ψευδώνυμο URL που θα χρησιμοποιηθεί για την πρόσβαση σε πόρους.
+- `ResourceFolderAlias`καθορίζει το ψευδώνυμο URL που θα χρησιμοποιηθεί για την πρόσβαση σε πόρους.
 
 ## Βήμα 4: Μετατροπή και αποθήκευση του εγγράφου σε HTML
 

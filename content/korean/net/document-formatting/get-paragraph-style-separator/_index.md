@@ -17,7 +17,7 @@ Word 문서의 미로를 헤쳐나가다가 교활한 단락 스타일 구분 �
 코드를 시작하기 전에 필요한 모든 도구가 있는지 확인하겠습니다.
 
 - Visual Studio: 설치되어 있는지 확인하세요. 그렇지 않은 경우 Microsoft 웹사이트에서 다운로드하여 설치하세요.
--  .NET용 Aspose.Words: 아직 가지고 있지 않다면 최신 버전을 다운로드하세요.[여기](https://releases.aspose.com/words/net/).
+- .NET용 Aspose.Words: 아직 가지고 있지 않다면 최신 버전을 다운로드하세요.[여기](https://releases.aspose.com/words/net/).
 - 샘플 Word 문서: 여기에는 작업할 단락 스타일 구분 기호가 포함되어야 합니다. 문서를 만들거나 기존 문서를 사용할 수 있습니다.
 
 ## 네임스페이스 가져오기

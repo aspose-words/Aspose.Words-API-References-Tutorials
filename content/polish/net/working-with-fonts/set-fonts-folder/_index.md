@@ -73,4 +73,4 @@ Odp.: Jeśli czcionka użyta w dokumencie nie występuje w folderach czcionek zd
 
 #### P: Czy foldery czcionek zdefiniowane w Aspose.Words mają pierwszeństwo przed czcionkami zainstalowanymi w systemie?
 
-O: Tak, foldery czcionek zdefiniowane w Aspose.Words mają pierwszeństwo przed czcionkami zainstalowanymi w systemie. Oznacza to, że jeśli czcionka o tej samej nazwie występuje zarówno w zdefiniowanych folderach czcionek, jak i w czcionkach systemowych, przy przetwarzaniu dokumentów Worda używana będzie wersja z folderu czcionek.
+O: Tak, foldery czcionek zdefiniowane w Aspose.Words mają pierwszeństwo przed czcionkami zainstalowanymi w systemie. Oznacza to, że jeśli czcionka o tej samej nazwie występuje zarówno w zdefiniowanych folderach czcionek, jak i czcionkach systemowych, przy przetwarzaniu dokumentów Worda używana będzie wersja z folderu czcionek.

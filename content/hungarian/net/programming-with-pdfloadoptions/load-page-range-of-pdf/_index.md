@@ -15,7 +15,7 @@ Ebben az oktatóanyagban végigvezetjük, hogyan tölthet be egy adott oldaltart
 következő kóddal tölthet be egy adott oldaltartományt egy PDF-dokumentumból:
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
+// dokumentumok könyvtár elérési útja.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };

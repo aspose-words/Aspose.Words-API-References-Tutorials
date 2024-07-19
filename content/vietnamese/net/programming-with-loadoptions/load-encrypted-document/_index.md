@@ -33,7 +33,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new Odt
 
 Trong ví dụ này, chúng tôi lưu tài liệu với tên "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt" bằng cách chỉ định mật khẩu mới "newpassword".
 
-### Mã nguồn mẫu cho LoadOptions với chức năng "Tải tài liệu được mã hóa" bằng Aspose.Words for .NET
+### Mã nguồn mẫu cho LoadOptions với chức năng "Tải tài liệu được mã hóa" bằng Aspose.Words cho .NET
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn

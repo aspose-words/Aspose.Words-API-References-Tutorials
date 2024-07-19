@@ -103,7 +103,7 @@ Eso es todo ! Ha comprimido correctamente las imágenes de un documento y ha gen
 
 ## Conclusión
 
-En este tutorial, explicamos cómo comprimir imágenes en un documento PDF usando Aspose.Words para .NET. Si sigue los pasos descritos, puede reducir fácilmente el tamaño de las imágenes en su documento PDF y generar un PDF con la compresión de imagen adecuada. Utilice las funciones de compresión de imágenes de Aspose.Words para .NET para optimizar el tamaño de sus documentos PDF y al mismo tiempo preservar la calidad de la imagen.
+En este tutorial, explicamos cómo comprimir imágenes en un documento PDF usando Aspose.Words para .NET. Siguiendo los pasos descritos, puede reducir fácilmente el tamaño de las imágenes en su documento PDF y generar un PDF con la compresión de imagen adecuada. Utilice las funciones de compresión de imágenes de Aspose.Words para .NET para optimizar el tamaño de sus documentos PDF preservando la calidad de la imagen.
 
 ### Preguntas frecuentes
 

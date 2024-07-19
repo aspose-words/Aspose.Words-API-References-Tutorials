@@ -55,7 +55,7 @@ saveOptions.ListIndentation.Character = '\t';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- V tomto posledním kroku uložíme dokument se zadanými možnostmi uložení. Používáme`Save()` metoda dokumentu předá celou cestu k výstupnímu souboru a možnosti uložení.
+ V tomto posledním kroku dokument uložíme se zadanými možnostmi uložení. Používáme`Save()` metoda dokumentu předá celou cestu k výstupnímu souboru a možnosti uložení.
 
 
 Nyní můžete spustit zdrojový kód a vygenerovat dokument s odsazením seznamu pomocí znaků tabulátoru. Výstupní soubor bude uložen do zadaného adresáře s názvem "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".

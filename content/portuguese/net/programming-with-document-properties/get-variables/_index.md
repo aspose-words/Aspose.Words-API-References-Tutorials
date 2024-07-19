@@ -2,83 +2,117 @@
 title: Obter variáveis
 linktitle: Obter variáveis
 second_title: API de processamento de documentos Aspose.Words
-description: Guia passo a passo para recuperar variáveis de documentos com Aspose.Words for .NET.
+description: Domine Aspose.Words para .NET. Aprenda a carregar e extrair variáveis de documentos do Word com este guia passo a passo.
 type: docs
 weight: 10
 url: /pt/net/programming-with-document-properties/get-variables/
 ---
+## Introdução
 
-Neste tutorial, orientaremos você no código-fonte C# para recuperar variáveis de um documento com Aspose.Words for .NET. Este recurso permite acessar variáveis definidas em um documento.
+Olá, colega programador! Pronto para mergulhar no mundo do Aspose.Words for .NET? Apertem os cintos, porque estamos prestes a embarcar em uma jornada que facilitará muito o manuseio de documentos do Word em seus aplicativos .NET. Neste guia detalharemos tudo o que você precisa saber, passo a passo, com explicações claras e tom coloquial. Então, pegue uma xícara de café, fique confortável e vamos começar!
 
-## Etapa 1: configuração do projeto
+## Pré-requisitos
 
-Para começar, crie um novo projeto C# em seu IDE favorito. Certifique-se de que a biblioteca Aspose.Words for .NET seja referenciada em seu projeto.
+Antes de entrarmos no âmago da questão, vamos ter certeza de que você tem tudo o que precisa:
 
-## Passo 2: Carregando o documento
+1. Conhecimento básico de C# e .NET: Você deve estar familiarizado com os conceitos básicos de C# e do .NET framework.
+2.  Biblioteca Aspose.Words for .NET: Baixe a biblioteca Aspose.Words for .NET em[aqui](https://releases.aspose.com/words/net/).
+3. Visual Studio: certifique-se de ter o Visual Studio instalado em sua máquina.
 
-Nesta etapa carregaremos o documento Word do qual queremos recuperar as variáveis. Use o seguinte código para carregar o documento:
+## Importar namespaces
 
-```csharp
-// Caminho para o diretório de documentos.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-```
-
- Substituir`"YOUR DOCUMENTS DIRECTORY"` com o caminho real do diretório onde seu documento está localizado.
-
-## Etapa 3: Recuperando variáveis
-
-Agora iremos recuperar as variáveis definidas no documento. Use o seguinte código:
+Primeiramente, vamos importar os namespaces necessários. É como preparar o cenário antes da grande apresentação.
 
 ```csharp
-string variables = "";
-foreach(KeyValuePair<string, string> entry in doc.Variables)
-{
-     string name = entry.Key;
-     string value = entry.Value;
-     if (variables == "")
-     {
-         variables = "Name: " + name + ", " + "Value: " + value;
-     }
-     else
-     {
-         variables = variables + "\nName: " + name + ", " + "Value: " + value;
-     }
-}
-
-Console.WriteLine("\nThe document contains the following variables:\n" + variables);
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
 ```
 
-Este código itera sobre cada par de valores-chave nas variáveis do documento e recupera o nome e o valor de cada variável. As variáveis são então concatenadas para exibir as informações de cada variável.
+## Etapa 1: configurando seu projeto
 
-### Exemplo de código-fonte para obter variáveis usando Aspose.Words for .NET
+### Criando um novo projeto
 
-```csharp
+Vamos começar criando um novo projeto no Visual Studio.
 
-	// O caminho para o diretório de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Document.docx");
-	
-	string variables = "";
-	foreach (KeyValuePair<string, string> entry in doc.Variables)
-	{
-		string name = entry.Key;
-		string value = entry.Value;
-		if (variables == "")
-		{
-			variables = "Name: " + name + "," + "Value: {1}" + value;
-		}
-		else
-		{
-			variables = variables + "Name: " + name + "," + "Value: {1}" + value;
-		}
-	}
-	
+1. Abra o Visual Studio e selecione “Criar um novo projeto”.
+2. Escolha “Aplicativo de console (.NET Core)” e clique em “Avançar”.
+3. Dê um nome ao seu projeto e clique em “Criar”.
 
-	Console.WriteLine("\nDocument have following variables " + variables);
+### Instalando Aspose.Words
 
-```
+Agora, vamos colocar a biblioteca Aspose.Words em nosso projeto.
 
- Certifique-se de especificar o caminho correto do documento no`dataDir` variável.
+1. Abra o Gerenciador de Pacotes NuGet no Visual Studio.
+2. Procure por "Aspose.Words" e instale-o.
 
-Agora você aprendeu como recuperar variáveis de um documento usando Aspose.Words for .NET. Seguindo o guia passo a passo fornecido neste tutorial, você pode acessar e visualizar facilmente variáveis de seus próprios documentos.
+## Etapa 2: Carregar um documento do Word
+
+ Vamos carregar um documento Word em nosso aplicativo. Usaremos um simples`Document` objetar a fazer isso.
+
+1. Crie uma nova variável de string para armazenar o caminho para o diretório do seu documento:
+    ```csharp
+    string dataDir = "YOUR DOCUMENT DIRECTORY";
+    ```
+
+2.  Criar uma`Document` objeto e carregue o documento:
+    ```csharp
+    Document doc = new Document(dataDir + "Document.docx");
+    ```
+
+Esta etapa é como abrir um livro. Estamos apenas informando ao nosso programa onde encontrar o documento e abrindo-o para que possamos começar a trabalhar com ele.
+
+## Passo 3: Extraindo Variáveis do Documento
+
+Agora, vamos extrair as variáveis do nosso documento.
+
+1. Crie uma variável de string para armazenar as variáveis:
+    ```csharp
+    string variables = "";
+    ```
+
+2. Faça um loop pelas variáveis do documento e concatene-as na variável string:
+    ```csharp
+    foreach (KeyValuePair<string, string> entry in doc.Variables)
+    {
+        string name = entry.Key;
+        string value = entry.Value;
+        if (variables == "")
+        {
+            variables = "Name: " + name + ", " + "Value: {1}" + value;
+        }
+        else
+        {
+            variables = variables + " Name: " + name + ", " + "Value: {1}" + value;
+        }
+    }
+    ```
+
+3. Imprima as variáveis:
+    ```csharp
+    Console.WriteLine("\nDocument has the following variables: " + variables);
+    ```
+
+
+Pense nesta etapa como folhear o livro e anotar todas as notas importantes. Estamos examinando o documento, extraindo os pares de valores-chave e armazenando-os em uma string para exibição posterior.
+
+## Conclusão
+
+E aí está! Você usou Aspose.Words for .NET com sucesso para carregar um documento do Word e extrair suas variáveis. Seguindo essas etapas, você pode manipular facilmente documentos do Word em seus aplicativos .NET. Continue experimentando e explorando os recursos da biblioteca para ver o que mais você pode conseguir.
+
+## Perguntas frequentes
+
+### Posso usar Aspose.Words for .NET com outras linguagens de programação?
+Sim, Aspose.Words oferece suporte a vários idiomas, mas neste tutorial nos concentramos em C#.
+
+### Como obtenho uma licença temporária do Aspose.Words?
+ Você pode obter uma licença temporária em[aqui](https://purchase.aspose.com/temporary-license/).
+
+### Existe uma maneira de manipular outros formatos de documentos com Aspose.Words?
+Absolutamente! Aspose.Words suporta vários formatos como DOC, DOCX, ODT, RTF e muito mais.
+
+### Posso usar Aspose.Words para aplicativos da web?
+Sim, você pode integrar Aspose.Words em aplicativos da web, aplicativos de desktop e muito mais.
+
+### Onde posso encontrar mais exemplos e documentação?
+ Confira a[Documentação Aspose.Words](https://reference.aspose.com/words/net/) para mais exemplos e guias detalhados.

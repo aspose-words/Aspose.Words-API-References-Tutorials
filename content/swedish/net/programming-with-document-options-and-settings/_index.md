@@ -14,12 +14,12 @@ Handledningarna förklarar hur du anpassar alternativen för dokumentladdning. D
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Optimera för Ms Word](./optimize-for-ms-word/) | Steg-för-steg-guide för att optimera ett dokument för MS Word med Aspose.Words för .NET. |
-| [Visa grammatiska och stavningsfel](./show-grammatical-and-spelling-errors/) | Steg-för-steg-guide för att möjliggöra visning av grammatiska fel och stavfel i ett dokument med Aspose.Words för .NET. |
-| [Rensa oanvända stilar och listor](./cleanup-unused-styles-and-lists/) | Steg-för-steg-guide för att rensa bort oanvända stilar och listor i ett dokument med Aspose.Words för .NET. |
-| [Cleanup Duplicate Style](./cleanup-duplicate-style/) | Steg för steg guide för att rensa upp dubbletter av stilar i ett dokument med Aspose.Words för .NET. Fullständig källkod ingår. |
-| [Visa alternativ](./view-options/) | Steg-för-steg-guide för att konfigurera dokumentvisningsalternativ med Aspose.Words för .NET. |
-| [Dokument sidinställningar](./document-page-setup/) | Steg-för-steg-guide för att sätta upp en dokumentlayout med Aspose.Words för .NET. |
-| [Lägg till japanska som redigeringsspråk](./add-japanese-as-editing-languages/) | Steg-för-steg-guide för att lägga till japanska som redigeringsspråk med Aspose.Words för .NET. |
-| [Ställ in ryska som standardredigeringsspråk](./set-russian-as-default-editing-language/) | Steg-för-steg-guide för att ställa in ryska som standardredigeringsspråk för ett dokument med Aspose.Words för .NET. |
-| [Ställ in sidinställningar och avsnittsformatering](./set-page-setup-and-section-formatting/) | Steg-för-steg-guide för att ställa in ett dokuments layout och sektionsformatering med Aspose.Words för .NET. |
+| [Optimera för Ms Word](./optimize-for-ms-word/) | Optimera enkelt Word documegrammaticalnter för olika versioner av MS Word med Aspose.Words för .NET med denna steg-för-steg-guide. |
+| [Visa grammatiska och stavningsfel](./show-grammatical-and-spelling-errors/) | Lär dig hur du visar grammatiska och stavningsfel i Word-dokument med Aspose.Words för .NET med denna omfattande handledning. |
+| [Rensa oanvända stilar och listor](./cleanup-unused-styles-and-lists/) | Rensa upp dina Word-dokument med Aspose.Words för .NET genom att ta bort oanvända stilar och listor. Följ denna steg-för-steg-guide för att effektivisera dina dokument utan ansträngning. |
+| [Cleanup Duplicate Style](./cleanup-duplicate-style/) | Lär dig hur du rengör dubbletter av stilar i dina Word-dokument med Aspose.Words för .NET med vår omfattande steg-för-steg-guide. |
+| [Visa alternativ](./view-options/) | Lär dig hur du visar alternativ i Word-dokument med Aspose.Words för .NET. Den här guiden tar upp hur du ställer in vytyper, justerar zoomnivåer och sparar ditt dokument. |
+| [Dokument sidinställningar](./document-page-setup/) | Sidinställning för masterdokument med Aspose.Words för .NET i enkla steg. Lär dig att ladda, ställa in layout, definiera tecken per rad, rader per sida och spara ditt dokument. |
+| [Lägg till japanska som redigeringsspråk](./add-japanese-as-editing-languages/) | Lär dig hur du lägger till japanska som redigeringsspråk i dina dokument med Aspose.Words för .NET med denna detaljerade, steg-för-steg-guide. |
+| [Ställ in ryska som standardredigeringsspråk](./set-russian-as-default-editing-language/) | Lär dig hur du ställer in ryska som standardredigeringsspråk i Word-dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för detaljerade instruktioner. |
+| [Ställ in sidinställningar och avsnittsformatering](./set-page-setup-and-section-formatting/) | Lär dig hur du ställer in sidinställningar och avsnittsformatering i Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Förbättra ditt dokuments presentation utan ansträngning. |

@@ -62,7 +62,7 @@ R: El nodo principal en Node.js se refiere al siguiente nodo superior en la jera
 
 #### P: ¿Cómo obtener el nodo principal de un nodo específico?
 
-R: Para obtener el nodo principal de un nodo específico, puede utilizar el`parentNode` propiedad del nodo. Esta propiedad devuelve el nodo padre del nodo actual.
+ R: Para obtener el nodo principal de un nodo específico, puede utilizar el`parentNode` propiedad del nodo. Esta propiedad devuelve el nodo padre del nodo actual.
 
 #### P: ¿Cómo comprobar si un nodo tiene un nodo principal?
 
@@ -70,7 +70,7 @@ R: Para obtener el nodo principal de un nodo específico, puede utilizar el`pare
 
 #### P: ¿Podemos cambiar el nodo principal de un nodo?
 
- R: En la mayoría de los casos, el nodo principal de un nodo está determinado por la estructura del documento XML y no se puede cambiar directamente. Sin embargo, puede mover un nodo a otro usando métodos específicos, como`appendChild` o`insertBefore`.
+R: En la mayoría de los casos, el nodo principal de un nodo está determinado por la estructura del documento XML y no se puede cambiar directamente. Sin embargo, puede mover un nodo a otro usando métodos específicos, como`appendChild` o`insertBefore`.
 
 #### P: ¿Cómo explorar la jerarquía de los nodos principales?
 

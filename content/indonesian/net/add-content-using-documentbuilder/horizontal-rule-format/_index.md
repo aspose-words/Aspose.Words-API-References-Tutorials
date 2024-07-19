@@ -84,7 +84,7 @@ Menguasai penyisipan aturan horizontal dalam dokumen Word menggunakan Aspose.Wor
 ## FAQ
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram dalam aplikasi .NET.
+Aspose.Words untuk .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram dalam aplikasi .NET.
 
 ### Bagaimana cara mengunduh Aspose.Words untuk .NET?
  Anda dapat mengunduh Aspose.Words untuk .NET dari[Di Sini](https://releases.aspose.com/words/net/).

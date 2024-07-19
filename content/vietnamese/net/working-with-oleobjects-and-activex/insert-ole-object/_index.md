@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 3: Chèn đối tượng OLE
- Sử dụng Trình tạo tài liệu`InsertOleObject` phương pháp chèn một đối tượng OLE vào tài liệu. Chỉ định URL đối tượng OLE, loại đối tượng, tùy chọn hiển thị và các cài đặt cần thiết khác.
+ Sử dụng Trình tạo tài liệu`InsertOleObject`phương pháp chèn một đối tượng OLE vào tài liệu. Chỉ định URL đối tượng OLE, loại đối tượng, tùy chọn hiển thị và các cài đặt cần thiết khác.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", đúng, đúng, null);
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Hỏi: Làm cách nào để chèn đối tượng OLE vào tài liệu?
 
- Đáp: Hãy sử dụng`InsertOleObject`phương pháp của người xây dựng tài liệu (`DocumentBuilder`) để chèn một đối tượng OLE vào tài liệu. Chỉ định URL đối tượng OLE, loại đối tượng, tùy chọn hiển thị và các cài đặt cần thiết khác. Đây là một ví dụ :
+ Đáp: Hãy sử dụng`InsertOleObject` phương pháp của người xây dựng tài liệu (`DocumentBuilder`) để chèn một đối tượng OLE vào tài liệu. Chỉ định URL đối tượng OLE, loại đối tượng, tùy chọn hiển thị và các cài đặt cần thiết khác. Đây là một ví dụ :
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", đúng, đúng, null);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", đúng, đúng, nu
 
 #### Hỏi: Làm thế nào để lưu tài liệu?
 
- A: Sử dụng tài liệu`Save` phương pháp lưu tài liệu vào một tập tin. Đây là một ví dụ :
+ A: Sử dụng tài liệu`Save`phương pháp lưu tài liệu vào một tập tin. Đây là một ví dụ :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

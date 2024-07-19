@@ -73,11 +73,11 @@ V tomto článku jsme se naučili ukládat dokumenty ve formátu ODT pomocí Asp
 
 ### Jaká je výhoda ukládání dokumentů ve formátu ODT?
 
-Ukládání dokumentů ve formátu ODT zajišťuje kompatibilitu s open source kancelářskými balíky, jako jsou OpenOffice a LibreOffice, což uživatelům těchto softwarových balíčků usnadňuje přístup k vašim dokumentům a jejich úpravy.
+Ukládání dokumentů ve formátu ODT zajišťuje kompatibilitu s open source kancelářskými sadami, jako jsou OpenOffice a LibreOffice, což uživatelům těchto softwarových balíčků usnadňuje přístup k vašim dokumentům a jejich úpravy.
 
-### Musím při ukládání ve formátu ODT specifikovat měrnou jednotku?
+### Musím při ukládání ve formátu ODT zadat měrnou jednotku?
 
-Ano, je dobré specifikovat měrnou jednotku. Open Office standardně používá centimetry, takže nastavením na palce zajistíte konzistentní formátování.
+Ano, je dobrým zvykem specifikovat měrnou jednotku. Open Office standardně používá centimetry, takže nastavením na palce zajistíte konzistentní formátování.
 
 ### Mohu převést více dokumentů do formátu ODT v dávkovém procesu?
 

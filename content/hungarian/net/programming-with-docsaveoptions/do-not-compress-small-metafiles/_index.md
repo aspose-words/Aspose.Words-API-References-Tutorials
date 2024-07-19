@@ -94,7 +94,7 @@ Igen, az Aspose.Words for .NET lehetővé teszi a mentési beállítások konfig
 
 ### Szükségem van licencre az Aspose.Words for .NET használatához?
 
- Míg az Aspose.Words for .NET szoftvert licenc nélkül is használhatja kiértékeléshez, a teljes funkció feloldásához licenc szükséges. Engedélyt szerezhet[itt](https://purchase.aspose.com/buy) vagy használja a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
+ Míg az Aspose.Words for .NET szoftvert licenc nélkül is használhatja kiértékeléshez, a teljes funkció feloldásához licenc szükséges. Engedélyt szerezhet[itt](https://purchase.aspose.com/buy)vagy használja a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
 
 ### Hogyan biztosíthatom, hogy a dokumentumaim megfeleljenek a PDF/A szabványoknak?
 

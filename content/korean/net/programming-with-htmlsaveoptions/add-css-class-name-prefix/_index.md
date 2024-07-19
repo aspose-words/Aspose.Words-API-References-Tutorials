@@ -19,7 +19,7 @@ url: /ko/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 이 단계에서는 HTML로 변환하려는 Word 문서를 로드합니다. 문서를 로드하려면 다음 코드를 사용하세요.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
+//문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- 이 코드는`HtmlSaveOptions` 그리고 세트`CssStyleSheetType` 에게`CssStyleSheetType.External`외부 CSS 스타일 시트를 생성하고`CssClassNamePrefix` 에게`"pfx_"` 접두사로`"pfx_"` CSS 클래스의 이름을 지정합니다.
+ 이 코드는`HtmlSaveOptions` 그리고 세트`CssStyleSheetType` 에게`CssStyleSheetType.External` 외부 CSS 스타일 시트를 생성하고`CssClassNamePrefix` 에게`"pfx_"` 접두사로`"pfx_"` CSS 클래스의 이름을 지정합니다.
 
 ## 4단계: 문서를 HTML로 변환 및 저장
 

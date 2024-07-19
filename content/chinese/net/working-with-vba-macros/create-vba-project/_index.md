@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 步骤 2：创建新的 VBA 文档和项目
-接下来，我们将通过实例化创建一个新文档`Document`通过实例化`VbaProject`班级。
+接下来，我们将通过实例化`Document`通过实例化`VbaProject`班级。
 
 ```csharp
 //创建新文档

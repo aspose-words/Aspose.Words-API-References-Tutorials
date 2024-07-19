@@ -17,7 +17,7 @@ Czy kiedykolwiek próbowałeś poruszać się po labiryncie dokumentu programu W
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystkie potrzebne narzędzia:
 
 - Visual Studio: Upewnij się, że masz go zainstalowanego. Jeśli nie, pobierz i zainstaluj go ze strony internetowej Microsoft.
--  Aspose.Words dla .NET: Jeśli jeszcze go nie masz, pobierz najnowszą wersję[Tutaj](https://releases.aspose.com/words/net/).
+- Aspose.Words dla .NET: Jeśli jeszcze go nie masz, pobierz najnowszą wersję[Tutaj](https://releases.aspose.com/words/net/).
 - Przykładowy dokument programu Word: powinien zawierać separatory stylu akapitu, z którymi będziemy mogli pracować. Możesz go utworzyć lub skorzystać z istniejącego dokumentu.
 
 ## Importuj przestrzenie nazw

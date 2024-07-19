@@ -15,7 +15,7 @@ Grafieken zijn een krachtig hulpmiddel voor het visualiseren van gegevens. Wanne
 
 Voordat je in de codering duikt, zijn er een paar vereisten die je moet hebben:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: u hebt een geïntegreerde ontwikkelomgeving (IDE) zoals Visual Studio nodig.
 3. .NET Framework: Zorg ervoor dat uw ontwikkelomgeving is ingesteld voor .NET-ontwikkeling.
 4. Basiskennis van C#: Deze handleiding gaat ervan uit dat u een basiskennis hebt van programmeren in C#.
@@ -99,7 +99,7 @@ yAxis.Scaling.Minimum = new AxisBound(100);
 yAxis.Scaling.Maximum = new AxisBound(700);
 ```
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Sla het document ten slotte op in de door u opgegeven map. Hierdoor wordt het Word-document met het aangepaste diagram gegenereerd.
 

@@ -35,9 +35,9 @@ Bây giờ, hãy đi sâu vào các bước thực tế liên quan đến việc
 
 ## Bước 1: Tải tài liệu nguồn và đích:
 
-Xác định một biến chuỗi`dataDir` để lưu trữ đường dẫn đến thư mục tài liệu của bạn. Thay thế "THƯ MỤC TÀI LIỆU CỦA BẠN" bằng vị trí thực tế.
+ Xác định một biến chuỗi`dataDir` để lưu trữ đường dẫn đến thư mục tài liệu của bạn. Thay thế "THƯ MỤC TÀI LIỆU CỦA BẠN" bằng vị trí thực tế.
 
- Tạo hai`Document` các đối tượng sử dụng`Aspose.Words.Document` người xây dựng. Cái đầu tiên (`srcDoc`) sẽ giữ tài liệu nguồn chứa nội dung được thêm vào. Thư hai (`dstDoc`) đại diện cho tài liệu đích nơi chúng tôi sẽ tích hợp nội dung nguồn với việc đánh số trang được khởi động lại.
+ Tạo hai`Document` các đối tượng sử dụng`Aspose.Words.Document`người xây dựng. Cái đầu tiên (`srcDoc`) sẽ giữ tài liệu nguồn chứa nội dung được thêm vào. Thư hai (`dstDoc`) đại diện cho tài liệu đích nơi chúng tôi sẽ tích hợp nội dung nguồn với việc đánh số trang được khởi động lại.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Thay thế bằng thư mục thực tế của bạn
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Bước 3: Kích hoạt khởi động lại đánh số trang:
 
- Trong cùng một`PageSetup` đối tượng của phần đầu tiên của tài liệu nguồn, hãy đặt`RestartPageNumbering`tài sản để`true`Bước quan trọng này hướng dẫn Aspose.Words bắt đầu đánh số trang mới cho nội dung được nối thêm.
+ Trong cùng một`PageSetup` đối tượng của phần đầu tiên của tài liệu nguồn, hãy đặt`RestartPageNumbering`tài sản để`true`. Bước quan trọng này hướng dẫn Aspose.Words bắt đầu đánh số trang mới cho nội dung được nối thêm.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

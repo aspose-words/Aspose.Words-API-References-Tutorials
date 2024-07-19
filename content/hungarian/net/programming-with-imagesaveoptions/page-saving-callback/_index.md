@@ -87,6 +87,6 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 Ebben az oktatóanyagban megvizsgáltuk az oldalmentési visszahívási funkciót az Aspose.Words képmentési lehetőségeivel a .NET-hez. Megtanultuk, hogyan kell egyéni műveleteket végrehajtani a dokumentum minden oldalának képként történő mentésekor.
 
-Ez a funkció akkor hasznos, ha bizonyos műveleteket szeretne végrehajtani az egyes oldalakon a képekké konvertáláskor. Hozzáférhet az oldal információihoz, és testreszabhatja a biztonsági mentési beállításokat, vagy más oldalspecifikus feldolgozást hajthat végre.
+Ez a funkció akkor hasznos, ha bizonyos műveleteket szeretne végrehajtani az egyes oldalakon, amikor képekké konvertál. Hozzáférhet az oldal információihoz, és testreszabhatja a biztonsági mentési beállításokat, vagy más oldalspecifikus feldolgozást hajthat végre.
 
 Az Aspose.Words for .NET fejlett funkciók széles skáláját kínálja a dokumentumok kezeléséhez és létrehozásához. Az Oldal mentése Emlékeztető egyike a sok hatékony eszköznek, amellyel testreszabhatja az oldalak képekké történő mentésének folyamatát.

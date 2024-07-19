@@ -8,7 +8,7 @@ weight: 10
 url: /ar/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
 
-في هذا البرنامج التعليمي، سنرشدك خلال التعليمات البرمجية المصدر لـ C# لإضافة بادئة اسم فئة CSS باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إضافة بادئة مخصصة لأسماء فئات CSS التي تم إنشاؤها عند تحويل مستند إلى HTML.
+في هذا البرنامج التعليمي، سنرشدك عبر التعليمات البرمجية المصدر لـ C# لإضافة بادئة اسم فئة CSS باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إضافة بادئة مخصصة لأسماء فئات CSS التي تم إنشاؤها عند تحويل مستند إلى HTML.
 
 ## الخطوة 1: إعداد المشروع
 
@@ -19,7 +19,7 @@ url: /ar/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 في هذه الخطوة، سنقوم بتحميل مستند Word الذي نريد تحويله إلى HTML. استخدم الكود التالي لتحميل المستند:
 
 ```csharp
-// المسار إلى دليل المستندات.
+//المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ومجموعات`CssStyleSheetType` ل`CssStyleSheetType.External`لإنشاء ورقة أنماط CSS خارجية، و`CssClassNamePrefix` ل`"pfx_"` إلى البادئة`"pfx_"` لأسماء فئة CSS.
+ يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ومجموعات`CssStyleSheetType` ل`CssStyleSheetType.External` لإنشاء ورقة أنماط CSS خارجية، و`CssClassNamePrefix` ل`"pfx_"` إلى البادئة`"pfx_"` لأسماء فئة CSS.
 
 ## الخطوة 4: تحويل وحفظ المستند إلى HTML
 

@@ -22,7 +22,7 @@ url: /ko/net/basic-conversions/pdf-to-docx/
 
 ### 환경 설정
 
-1.  .NET용 Aspose.Words 다운로드 및 설치:[Aspose 웹사이트](https://releases.aspose.com/words/net/) 그리고 최신 버전을 받으세요.
+1.  .NET용 Aspose.Words 다운로드 및 설치:[Aspose 웹 사이트](https://releases.aspose.com/words/net/) 그리고 최신 버전을 받으세요.
 2. 새 프로젝트 만들기: IDE를 열고 새 .NET 프로젝트를 만든 다음 Aspose.Words에 대한 참조를 추가합니다.
 3. PDF 문서 준비: 변환하려는 PDF 문서를 프로젝트 디렉토리에 준비하세요.
 
@@ -56,7 +56,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Pdf Document.pdf");
 ```
 
- 여기서는 인스턴스를 생성합니다.`Document`클래스를 선택하고 PDF 파일의 경로를 전달합니다. 이 작업을 수행하면 변환 준비가 완료된 PDF가 메모리에 로드됩니다.
+ 여기서는 인스턴스를 생성합니다.`Document` 클래스를 선택하고 PDF 파일의 경로를 전달합니다. 이 작업을 수행하면 변환 준비가 완료된 PDF가 메모리에 로드됩니다.
 
 ## 3단계: PDF를 Word 문서로 저장
 

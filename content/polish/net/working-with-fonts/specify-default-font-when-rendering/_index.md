@@ -62,7 +62,7 @@ tym samouczku nauczyliśmy się, jak określić domyślną czcionkę podczas ren
 
 #### P: Jak mogę określić domyślną czcionkę podczas konwersji do formatu PDF w Aspose.Words?
 
- Odp.: Aby określić domyślną czcionkę podczas konwersji do formatu PDF w Aspose.Words, możesz użyć`PdfOptions` klasę i ustaw`DefaultFontName`właściwość na nazwę żądanej czcionki.
+ Odp.: Aby określić domyślną czcionkę podczas konwersji do formatu PDF w Aspose.Words, możesz użyć`PdfOptions` klasę i ustaw`DefaultFontName` właściwość na nazwę żądanej czcionki.
 
 #### P: Co się stanie, jeśli domyślna czcionka nie będzie dostępna podczas konwersji do formatu PDF?
 

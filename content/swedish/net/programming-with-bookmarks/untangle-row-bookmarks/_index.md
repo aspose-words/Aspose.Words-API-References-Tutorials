@@ -32,7 +32,7 @@ using System;
 
 ## Steg 1: Ladda Word-dokumentet
 
-Vi börjar med att ladda Word-dokumentet som innehåller de trassliga radens bokmärken. De`Document` klass hanterar dokumentmanipulation i Aspose.Words. Så här laddar du dokumentet:
+ Vi börjar med att ladda Word-dokumentet som innehåller de trassliga radens bokmärken. De`Document` klass hanterar dokumentmanipulation i Aspose.Words. Så här laddar du dokumentet:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // Ersätt med din dokumentplats
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
 ## Steg 2: Lossa radbokmärken
 
- Det är här magin händer! De`Untangle` funktion tar hand om att reda ut radbokmärkena. Låt oss bryta ner dess funktionalitet:
+ Det är här magin händer! De`Untangle` funktion tar hand om att reda ut radbokmärkena. Låt oss dela upp dess funktionalitet:
 
 ```csharp
 private void Untangle(Document doc)
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Kontrollera om raderna är giltiga och angränsande
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Flytta bokmärkesänden till det sista stycket i den översta radens sista cell
+		   //Flytta bokmärkesänden till det sista stycket i den översta radens sista cell
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ Här är en steg-för-steg förklaring av vad koden gör:
 
  Vi itererar igenom alla bokmärken i dokumentet med hjälp av en`foreach` slinga.
 För varje bokmärke hämtar vi den överordnade raden för både bokmärkets start (`bookmark.BookmarkStart`) och bokmärkesänden (`bookmark.BookmarkEnd` ) använda`GetAncestor` metod.
-Vi kontrollerar sedan om båda raderna hittas (`row1 != null`och`row2 != null`och om de är intilliggande rader (`row1.NextSibling == row2`). Detta säkerställer att vi bara ändrar bokmärken som sträcker sig över intilliggande rader.
+Vi kontrollerar sedan om båda raderna hittas (`row1 != null`och`row2 != null`) och om de är intilliggande rader (`row1.NextSibling == row2`). Detta säkerställer att vi bara ändrar bokmärken som sträcker sig över intilliggande rader.
 Om villkoren är uppfyllda flyttar vi bokmärkets slutnod till slutet av sista stycket i den sista cellen i den översta raden (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) effektivt reda ut dem.
 
 ## Steg 3: Ta bort rad efter bokmärke
@@ -87,12 +87,12 @@ Här är en uppdelning av denna funktion:
 
 Vi tar bokmärkets namn (`bookmarkName`) som indata.
  Vi hämtar motsvarande bokmärkesobjekt med hjälp av`doc.Range.Bookmarks[bookmarkName]`.
- Vi får sedan den överordnade raden för bokmärket att börja använda`GetAncestor` (liknande`Untangle` fungera).
+Vi får sedan den överordnade raden för bokmärket att börja använda`GetAncestor` (liknande`Untangle` fungera).
 Slutligen kontrollerar vi om bokmärket och raden finns (`bookmark != null` och
 
 ## Steg 4: Verifiera reda ut
 
- Medan`Untangle`funktion bör säkerställa säkerheten för andra bokmärken, det är alltid bra att verifiera. Så här kan vi kontrollera om upplösningsprocessen inte av misstag raderade slutet av ett annat bokmärke:
+ Medan`Untangle` funktion bör säkerställa säkerheten för andra bokmärken, det är alltid bra att verifiera. Så här kan vi kontrollera om upplösningsprocessen inte av misstag raderade slutet av ett annat bokmärke:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

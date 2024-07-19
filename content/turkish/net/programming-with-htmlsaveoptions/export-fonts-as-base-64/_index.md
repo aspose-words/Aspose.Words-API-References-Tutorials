@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 
-Bu eğitimde, temel 64 yazı tiplerini Aspose.Words for .NET ile dışa aktarmak için C# kaynak kodunu size anlatacağız. Bu özellik, bir belgeyi HTML biçiminde kaydederken yazı tiplerini temel 64 verileri olarak dışa aktarmanıza olanak tanır.
+Bu eğitimde, temel 64 yazı tiplerini Aspose.Words for .NET ile dışa aktarmak için C# kaynak kodunu size anlatacağız. Bu özellik, bir belgeyi HTML formatında kaydederken yazı tiplerini temel 64 veri olarak dışa aktarmanıza olanak tanır.
 
 ## Adım 1: Proje Kurulumu
 

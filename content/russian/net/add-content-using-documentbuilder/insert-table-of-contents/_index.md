@@ -127,4 +127,4 @@ Aspose.Words поддерживает создание нескольких ог
 Да, Aspose.Words обеспечивает совместимость с различными версиями форматов Microsoft Word.
 
 ### Где я могу найти дополнительную помощь и поддержку для Aspose.Words?
-Для получения дополнительной помощи посетите[Форум Aspose.Words](https://forum.aspose.com/c/words/8) или проверьте[официальная документация](https://reference.aspose.com/words/net/).
+ Для получения дополнительной помощи посетите[Форум Aspose.Words](https://forum.aspose.com/c/words/8) или проверьте[официальная документация](https://reference.aspose.com/words/net/).

@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. lépés: Szúrjon be egy OLE-objektumot egy OLE-csomaggal
- Használja a Dokumentumgenerátort`InsertOleObject` módszer egy OLE-csomaggal rendelkező OLE objektum dokumentumba való beillesztésére. Adja meg az adatfolyamot, az objektum típusát, a megjelenítési beállításokat és az egyéb szükséges beállításokat.
+ Használja a Dokumentumgenerátort`InsertOleObject`módszer egy OLE-csomaggal rendelkező OLE objektum dokumentumba való beillesztésére. Adja meg az adatfolyamot, az objektum típusát, a megjelenítési beállításokat és az egyéb szükséges beállításokat.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### K: Hogyan lehet beszúrni egy OLE-objektumot OLE-csomaggal a dokumentumba?
 
- V: Használja a`InsertOleObject` dokumentumkészítő módszere (`DocumentBuilder`) egy OLE-csomaggal rendelkező OLE objektum beszúrásához a dokumentumba. Adja meg az adatfolyamot, az objektum típusát, a megjelenítési beállításokat és az egyéb szükséges beállításokat. Íme egy példa:
+ V: Használja a`InsertOleObject` a dokumentumkészítő módszere (`DocumentBuilder`) egy OLE-csomaggal rendelkező OLE objektum beszúrásához a dokumentumba. Adja meg az adatfolyamot, az objektum típusát, a megjelenítési beállításokat és az egyéb szükséges beállításokat. Íme egy példa:
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### K: Hogyan lehet menteni a dokumentumot?
 
- V: Használja a dokumentumot`Save` módszerrel mentheti a dokumentumot fájlba. Íme egy példa:
+ V: Használja a dokumentumot`Save`módszerrel mentheti a dokumentumot fájlba. Íme egy példa:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

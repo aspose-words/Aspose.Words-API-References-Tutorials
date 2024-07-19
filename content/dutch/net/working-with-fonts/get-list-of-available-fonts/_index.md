@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Stap 2: Configureer lettertypebronnen
-Vervolgens maken we een exemplaar van`FontSettings` en haal de bestaande lettertypebronnen op met behulp van de`GetFontsSources()` methode. We zullen ook een nieuwe lettertypebron toevoegen door een map met lettertypen op te geven.
+ Vervolgens maken we een exemplaar van`FontSettings` en haal de bestaande lettertypebronnen op met behulp van de`GetFontsSources()` methode. We zullen ook een nieuwe lettertypebron toevoegen door een map met lettertypen op te geven.
 
 ```csharp
 // Configureer lettertypebronnen

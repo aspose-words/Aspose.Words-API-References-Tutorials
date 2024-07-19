@@ -35,9 +35,9 @@ Låt oss nu dyka in i de praktiska stegen för att starta om sidnumreringen i di
 
 ## Steg 1: Ladda käll- och måldokumenten:
 
-Definiera en strängvariabel`dataDir` för att lagra sökvägen till din dokumentkatalog. Ersätt "DIN DOKUMENTKATOLOG" med den faktiska platsen.
+ Definiera en strängvariabel`dataDir` för att lagra sökvägen till din dokumentkatalog. Ersätt "DIN DOKUMENTKATOLOG" med den faktiska platsen.
 
- Skapa två`Document` objekt med hjälp av`Aspose.Words.Document` konstruktör. Den första (`srcDoc`) kommer att hålla källdokumentet som innehåller innehållet som ska läggas till. Den andra (`dstDoc`) representerar måldokumentet där vi kommer att integrera källinnehållet med omstartad sidnumrering.
+ Skapa två`Document` objekt med hjälp av`Aspose.Words.Document`konstruktör. Den första (`srcDoc`) kommer att hålla källdokumentet som innehåller innehållet som ska läggas till. Den andra (`dstDoc`) representerar måldokumentet där vi kommer att integrera källinnehållet med omstartad sidnumrering.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Ersätt med din faktiska katalog
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Steg 3: Aktivera omstart av sidnumrering:
 
- Inom samma`PageSetup` objektet i källdokumentets första avsnitt, ställ in`RestartPageNumbering`egendom till`true`Detta avgörande steg instruerar Aspose.Words att initiera sidnumreringen på nytt för det bifogade innehållet.
+ Inom samma`PageSetup` objektet i källdokumentets första avsnitt, ställ in`RestartPageNumbering`egendom till`true`. Detta avgörande steg instruerar Aspose.Words att initiera sidnumreringen på nytt för det bifogade innehållet.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

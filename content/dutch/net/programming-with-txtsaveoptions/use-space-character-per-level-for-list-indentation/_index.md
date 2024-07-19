@@ -91,7 +91,7 @@ namespace Example
 
 ## Conclusie
 
-In deze handleiding hebben we uitgelegd hoe u Aspose.Words voor .NET kunt gebruiken om de functionaliteit 'Gebruik één spatie per niveau voor het inspringen van de lijst' toe te passen. Door de aangegeven stappen te volgen en de meegeleverde C#-broncode te gebruiken, kunt u eenvoudig de inspringing van lijsten in uw Word-documenten configureren met één spatie per niveau. Aspose.Words biedt enorme flexibiliteit en kracht voor woordenverwerking met tekstopmaak en lijstbeheer, waardoor u goed gestructureerde documenten kunt maken in uw C#-toepassing.
+In deze handleiding hebben we uitgelegd hoe u Aspose.Words voor .NET kunt gebruiken om de functionaliteit 'Gebruik één spatie per niveau voor lijstinspringing' toe te passen. Door de aangegeven stappen te volgen en de meegeleverde C#-broncode te gebruiken, kunt u eenvoudig de inspringing van lijsten in uw Word-documenten configureren met één spatie per niveau. Aspose.Words biedt enorme flexibiliteit en kracht voor woordenverwerking met tekstopmaak en lijstbeheer, waardoor u goed gestructureerde documenten kunt maken in uw C#-toepassing.
 
 ### Veel Gestelde Vragen
 

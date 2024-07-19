@@ -33,7 +33,7 @@ Node section = doc.FirstChild;
 ```
 
 ## 4. lépés: Ellenőrizze a szülőcsomópontot
-Most, hogy megvan az adott csomópont, ellenőrizhetjük, hogy a szülőcsomópontja megegyezik-e magával a dokumentummal. Ebben a példában összehasonlítjuk a szülő csomópontot a dokumentummal az egyenlőség operátor (`==`) és megjeleníti az eredményt.
+Most, hogy megvan az adott csomópont, ellenőrizhetjük, hogy a szülőcsomópontja megegyezik-e magával a dokumentummal. Ebben a példában összehasonlítjuk a szülő csomópontot a dokumentummal az egyenlőség operátor (`==`), és megjeleníti az eredményt.
 
 ```csharp
 Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
@@ -62,7 +62,7 @@ V: A Node.js szülőcsomópontja az XML-dokumentum hierarchiájában a következ
 
 #### K: Hogyan szerezhető be egy adott csomópont szülőcsomópontja?
 
-V: Egy adott csomópont szülőcsomópontjának lekéréséhez használhatja a`parentNode` a csomópont tulajdonsága. Ez a tulajdonság az aktuális csomópont szülőcsomópontját adja vissza.
+ V: Egy adott csomópont szülőcsomópontjának lekéréséhez használhatja a`parentNode` a csomópont tulajdonsága. Ez a tulajdonság az aktuális csomópont szülőcsomópontját adja vissza.
 
 #### K: Hogyan ellenőrizhető, hogy egy csomópontnak van-e szülőcsomópontja?
 
@@ -70,7 +70,7 @@ V: Egy adott csomópont szülőcsomópontjának lekéréséhez használhatja a`p
 
 #### K: Meg tudjuk változtatni egy csomópont szülőcsomópontját?
 
- V: A legtöbb esetben egy csomópont szülőcsomópontját az XML-dokumentum szerkezete határozza meg, és közvetlenül nem módosítható. Egy csomópontot azonban áthelyezhet egy másik csomópontra meghatározott módszerekkel, például`appendChild` vagy`insertBefore`.
+V: A legtöbb esetben egy csomópont szülőcsomópontját az XML-dokumentum szerkezete határozza meg, és közvetlenül nem módosítható. Egy csomópontot azonban áthelyezhet egy másik csomópontra meghatározott módszerekkel, például`appendChild` vagy`insertBefore`.
 
 #### K: Hogyan lehet tallózni a szülőcsomópontok hierarchiájában?
 

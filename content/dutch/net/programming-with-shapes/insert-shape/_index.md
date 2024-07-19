@@ -2,7 +2,7 @@
 title: Vorm invoegen
 linktitle: Vorm invoegen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u vormen invoegt in een Word-document met Aspose.Words voor .NET.
+description: Leer hoe u vormen in een Word-document invoegt met Aspose.Words voor .NET.
 type: docs
 weight: 10
 url: /nl/net/programming-with-shapes/insert-shape/

@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- Biz yapılandırıyoruz`ParagraphFormat`özellikler. Her mülkün ne yaptığını açıklayalım:
+Biz yapılandırıyoruz`ParagraphFormat` özellikler. Her mülkün ne yaptığını açıklayalım:
 - Hizalama: Paragrafı ortalar.
 - LeftIndent: Sol girintiyi 50 noktaya ayarlar.
 - RightIndent: Sağ girintiyi 50 noktaya ayarlar.

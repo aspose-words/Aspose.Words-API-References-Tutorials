@@ -57,7 +57,7 @@ Aspose.Words for Java のパワーを解き放ちます。ステップバイス�
 ### [Aspose.Words for Java でドキュメントからコンテンツを抽出する](./extracting-content-from-documents/)
 Aspose.Words for Java を使用してドキュメントからコンテンツを簡単に抽出する方法を学びます。ステップバイステップのガイドとコード サンプルにより、プロセスが簡素化されます。
 ### [Aspose.Words for Java でコンテンツを抽出するためのヘルパー メソッド](./helper-methods-for-extracting-content/)
-Aspose.Words for Java を使用して Word 文書からコンテンツを効率的に抽出する方法を学びます。この包括的なガイドで、ヘルパー メソッド、カスタム フォーマットなどについて説明します。
+Aspose.Words for Java を使用して Word 文書からコンテンツを効率的に抽出する方法を学びます。この包括的なガイドで、ヘルパー メソッド、カスタム書式設定などについて説明します。
 ### [Aspose.Words for Java でのテキストの検索と置換](./finding-and-replacing-text/)
 Aspose.Words for Java を使用して Word 文書内のテキストを検索および置換する方法を学びます。コード例を使用したステップバイステップのガイド。Java 文書の操作スキルを強化します。
 ### [Aspose.Words for Java でドキュメントからコンテンツを削除する](./removing-content-from-documents/)
@@ -87,7 +87,7 @@ Aspose.Words for Java でドキュメントを複製および結合する方法�
 ### [Aspose.Words for Java でドキュメントを比較する](./comparing-documents/)
 効率的なドキュメント分析のための強力な Java ライブラリである Aspose.Words for Java でドキュメントを比較する方法を学習します。 
 ### [Aspose.Words for Java でのドキュメントの書式設定](./formatting-documents/)
-包括的なガイドで、Aspose.Words for Java でのドキュメントの書式設定の技術を学習します。強力な機能を調べて、ドキュメント処理スキルを強化します。
+弊社の総合ガイドで、Aspose.Words for Java でのドキュメントの書式設定の技術を習得してください。強力な機能を調べて、ドキュメント処理スキルを強化してください。
 ### [Aspose.Words for Java でのドキュメントの結合と追加](./joining-and-appending-documents/)
 Aspose.Words for Java を使用して、ドキュメントを簡単に結合および追加する方法を学びます。書式設定を保持し、ヘッダーやフッターなどを管理します。
 ### [Aspose.Words for Java でのドキュメント オプションと設定の使用](./using-document-options-and-settings/)

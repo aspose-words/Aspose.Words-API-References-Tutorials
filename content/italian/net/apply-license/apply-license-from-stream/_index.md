@@ -9,7 +9,7 @@ url: /it/net/apply-license/apply-license-from-stream/
 ---
 ## introduzione
 
-Ehi, colleghi programmatori! Se ti stai immergendo nel mondo di Aspose.Words per .NET, una delle prime cose che devi fare è applicare una licenza per sbloccare tutto il potenziale della libreria. In questa guida ti spiegheremo come applicare una licenza da uno stream. Credimi, è più semplice di quanto sembri e alla fine di questo tutorial la tua applicazione sarà operativa senza problemi. Pronto per iniziare? Saltiamo subito dentro!
+Ehi, colleghi programmatori! Se ti stai immergendo nel mondo di Aspose.Words per .NET, una delle prime cose che devi fare è applicare una licenza per sbloccare tutto il potenziale della libreria. In questa guida ti spiegheremo come applicare una licenza da uno stream. Credimi, è più semplice di quanto sembri e alla fine di questo tutorial la tua applicazione sarà operativa senza problemi. Pronti per iniziare? Saltiamo subito dentro!
 
 ## Prerequisiti
 

@@ -15,7 +15,7 @@ Grafy jsou mocným nástrojem pro vizualizaci dat. Když potřebujete vytvořit 
 
 Než se ponoříte do kódování, musíte mít splněno několik předpokladů:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Potřebujete integrované vývojové prostředí (IDE), jako je Visual Studio.
 3. .NET Framework: Ujistěte se, že je vaše vývojové prostředí nastaveno pro vývoj .NET.
 4. Základní znalost C#: Tato příručka předpokládá, že máte základní znalosti o programování v C#.
@@ -119,7 +119,7 @@ Můžete vytvářet různé typy grafů, včetně plošných, sloupcových, spoj
 ### Jak nainstaluji Aspose.Words for .NET?
  Aspose.Words for .NET si můžete stáhnout z[tady](https://releases.aspose.com/words/net/) a postupujte podle dodaných pokynů k instalaci.
 
-### Mohu přizpůsobit vzhled svých grafů?
+### Mohu si přizpůsobit vzhled svých grafů?
 Ano, Aspose.Words for .NET umožňuje rozsáhlé přizpůsobení grafů, včetně barev, písem a vlastností os.
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?

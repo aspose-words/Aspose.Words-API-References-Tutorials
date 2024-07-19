@@ -57,7 +57,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
 
-// Állítsa a „PageSet” értéket „0” értékre, hogy csak a dokumentum első oldalát konvertálja.
+// Állítsa a "PageSet" értéket "0"-ra, ha csak a dokumentum első oldalát szeretné konvertálni.
 options.PageSet = new PageSet(0);
 
 // Módosítsa a kép fényerejét és kontrasztját.

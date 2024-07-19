@@ -17,7 +17,7 @@ Antes de sujarmos as mãos, vamos garantir que você tenha tudo o que precisa:
 
 1.  Aspose.Words for .NET: Certifique-se de ter o Aspose.Words for .NET instalado. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
 2. .NET Framework: qualquer versão que suporte Aspose.Words for .NET.
-3. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+3. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 4. Conhecimento básico de C#: apenas o básico para entender a sintaxe e a estrutura.
 
 ## Importar namespaces
@@ -119,7 +119,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 
 ## Conclusão
 
-aí está! Você acabou de combinar dois documentos do Word com configurações de página diferentes usando Aspose.Words for .NET. Esta poderosa biblioteca torna muito fácil manipular documentos programaticamente. Esteja você criando relatórios complexos, montando livros ou gerenciando qualquer documento com várias seções, o Aspose.Words está à sua volta.
+aí está! Você acabou de combinar dois documentos do Word com configurações de página diferentes usando Aspose.Words for .NET. Esta biblioteca poderosa torna muito fácil manipular documentos programaticamente. Esteja você criando relatórios complexos, montando livros ou gerenciando qualquer documento com várias seções, o Aspose.Words está à sua volta.
 
 ## Perguntas frequentes
 

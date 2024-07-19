@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 วนซ้ำทุกช่องในเอกสารและลบออก:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 ลูปนี้จะวนซ้ำย้อนกลับผ่านคอลเลกชันฟิลด์เพื่อหลีกเลี่ยงปัญหาในการแก้ไขคอลเลกชันในขณะที่วนซ้ำ

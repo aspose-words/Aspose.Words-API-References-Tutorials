@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/working-with-fields/insert-field/
 ---
 
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, die gebruikmaakt van de functie "Een veld invoegen" van Aspose.Words voor .NET. Zorg ervoor dat u elke stap zorgvuldig volgt om de gewenste resultaten te krijgen.
+Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, die gebruikmaakt van de functie 'Een veld invoegen' van Aspose.Words voor .NET. Zorg ervoor dat u elke stap zorgvuldig volgt om de gewenste resultaten te krijgen.
 
 ## Stap 1: Documentmap instellen
 

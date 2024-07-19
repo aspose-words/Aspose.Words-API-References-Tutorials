@@ -83,7 +83,7 @@ builder.EndBookmark("FineBookmark");
 
  De`EndBookmark` -methode voltooit de bladwijzer waarmee we eerder zijn begonnen.
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Laten we ten slotte ons document opslaan in de opgegeven map.
 

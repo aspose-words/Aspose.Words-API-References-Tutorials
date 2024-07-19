@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Krok 3: Tworzenie stylów dla zagnieżdżonych poziomów
 
- Możemy tworzyć style dla zagnieżdżonych poziomów za pomocą`Styles.Add` metoda`Document` obiekt. W tym przykładzie tworzymy styl o nazwie „Cytat1”, który będzie reprezentował zagnieżdżony poziom cytatu.
+ Możemy tworzyć style dla zagnieżdżonych poziomów za pomocą`Styles.Add` metoda`Document`obiekt. W tym przykładzie tworzymy styl o nazwie „Cytat1”, który będzie reprezentował zagnieżdżony poziom cytatu.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

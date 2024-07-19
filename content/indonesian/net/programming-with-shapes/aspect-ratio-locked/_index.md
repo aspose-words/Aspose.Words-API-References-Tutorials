@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/programming-with-shapes/aspect-ratio-locked/
 ---
 
-Tutorial ini menjelaskan cara mengunci atau membuka kunci rasio aspek bentuk di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengunci rasio aspek, Anda dapat mempertahankan proporsi asli bentuk saat mengubah ukurannya.
+Tutorial ini menjelaskan cara mengunci atau membuka kunci rasio aspek bentuk dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengunci rasio aspek, Anda dapat mempertahankan proporsi asli bentuk saat mengubah ukurannya.
 
 ## Prasyarat
 Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:

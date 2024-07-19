@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Este código cria uma instância de`HtmlSaveOptions` define o`ResolveFontNames` opção para`true`para resolver nomes de fontes ausentes ao converter para HTML. Também o`PrettyFormat` opção está definida como`true` para obter um código HTML bem formatado.
+ Este código cria uma instância de`HtmlSaveOptions` e define o`ResolveFontNames` opção para`true`para resolver nomes de fontes ausentes ao converter para HTML. Também o`PrettyFormat` opção está definida como`true` para obter um código HTML bem formatado.
 
 ## Passo 4: Convertendo e salvando o documento em HTML
 

@@ -2,7 +2,7 @@
 title: Convertir a celdas fusionadas horizontalmente
 linktitle: Convertir a celdas fusionadas horizontalmente
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo convertir celdas de tabla en celdas fusionadas horizontalmente en un documento de Word con Aspose.Words para .NET.
+description: Aprenda a convertir celdas de una tabla en celdas fusionadas horizontalmente en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/convert-to-horizontally-merged-cells/

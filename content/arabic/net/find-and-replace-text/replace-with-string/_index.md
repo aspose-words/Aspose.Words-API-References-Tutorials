@@ -75,7 +75,7 @@ doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forw
 
 ## الخطوة 5: احفظ المستند
 
-وأخيرا، نقوم بحفظ الوثيقة المعدلة. هذه هي اللحظة التي نؤطر فيها تحفتنا النهائية.
+وأخيرا، نقوم بحفظ الوثيقة المعدلة. هذه هي اللحظة التي نؤطر فيها تحفتنا الفنية النهائية.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");

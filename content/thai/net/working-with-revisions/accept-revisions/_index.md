@@ -15,7 +15,7 @@ url: /th/net/working-with-revisions/accept-revisions/
 ในตัวอย่างนี้ เรากำลังสร้างเอกสารและเพิ่มเนื้อหา เราใช้หลายย่อหน้าเพื่อแสดงการเปลี่ยนแปลงและการแก้ไข มีวิธีดังนี้:
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสาร
+//พาธไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

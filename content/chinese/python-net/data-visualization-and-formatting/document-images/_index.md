@@ -39,7 +39,7 @@ doc = aw.Document()
 shape = doc.pages[0].shapes.add_picture("image.jpg", 100, 100)
 
 # Insert an image from a URL
-shape = doc.pages[0].shapes.add_remote_image("https://例如.com/image.jpg", 100, 100)
+shape = doc.pages[0].shapes.add_remote_image("https://example.com/image.jpg", 100, 100)
 ```
 
 ## 调整图像大小和位置

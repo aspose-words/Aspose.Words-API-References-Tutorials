@@ -2,7 +2,7 @@
 title: Gestión de firmas digitales y autenticidad
 linktitle: Gestión de firmas digitales y autenticidad
 second_title: API de gestión de documentos Aspose.Words Python
-description: Aprenda a administrar firmas digitales y garantizar la autenticidad de los documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente.
+description: Aprenda a gestionar firmas digitales y garantizar la autenticidad de los documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente.
 type: docs
 weight: 17
 url: /es/python-net/document-combining-and-comparison/manage-digital-signatures/

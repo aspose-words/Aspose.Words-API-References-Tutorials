@@ -2,7 +2,7 @@
 title: ละเว้นข้อความภายในลบการแก้ไข
 linktitle: ละเว้นข้อความภายในลบการแก้ไข
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีจัดการกับการแก้ไขที่ติดตามในเอกสาร Word โดยใช้ Aspose.Words for .NET จัดการเอกสารอัตโนมัติด้วยบทช่วยสอนที่ครอบคลุมนี้
+description: เรียนรู้วิธีจัดการกับการแก้ไขที่ติดตามในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET จัดการเอกสารอัตโนมัติด้วยบทช่วยสอนที่ครอบคลุมนี้
 type: docs
 weight: 10
 url: /th/net/find-and-replace-text/ignore-text-inside-delete-revisions/

@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://example.com/resources"
 
  Tento kód vytvoří instanci`HtmlSaveOptions` a nastaví následující možnosti:
 
-- `CssStyleSheetType` je nastaveno na`CssStyleSheetType.External`pro export šablony stylů CSS do externího souboru.
+- `CssStyleSheetType` je nastaveno na`CssStyleSheetType.External` pro export šablony stylů CSS do externího souboru.
 - `ExportFontResources` je nastaveno na`true` pro export zdrojů písem.
 - `ResourceFolder` určuje cílový adresář, kam budou prostředky uloženy.
-- `ResourceFolderAlias` určuje alias URL, který bude použit pro přístup ke zdrojům.
+- `ResourceFolderAlias`určuje alias URL, který bude použit pro přístup ke zdrojům.
 
 ## Krok 4: Převod a uložení dokumentu do HTML
 

@@ -15,10 +15,10 @@ Halihó! Gondolkozott már azon, hogyan védheti meg Word-dokumentumait a nem k�
 
 Mielőtt belevetnénk magunkat a Word-dokumentumok jelszóval való védelmének ügyébe, néhány dologra szüksége lesz:
 
-1. Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más C# fejlesztői környezet.
 3. Alapvető C# ismeretek: A C# programozás alapvető ismerete.
-4.  Aspose License: Szerezzen licencet a következőtől[itt](https://purchase.aspose.com/buy) vagy használja a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
+4.  Aspose Licenc: Szerezzen licencet a következőtől[itt](https://purchase.aspose.com/buy)vagy használja a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
 
 ## Névterek importálása
 

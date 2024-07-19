@@ -76,7 +76,7 @@ builder. EndTable();
 ```
 
 ## Paso 9: guarde el documento modificado
-Finalmente, guardamos el documento modificado en un archivo. Puede elegir un nombre y una ubicación apropiados para el documento de salida.
+Finalmente, guardamos el documento modificado en un archivo. Puede elegir un nombre y una ubicación adecuados para el documento de salida.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");

@@ -22,7 +22,7 @@ Az SDT-k használata számos előnnyel jár, többek között:
 - Dinamikus tartalom: Az SDT-k lehetővé teszik automatikusan frissülő dinamikus tartalom, például dátum- és időbélyegzők beszúrását.
 - Könnyű együttműködés: Az együttműködők a tartalomra összpontosíthatnak anélkül, hogy megváltoztatnák a dokumentum szerkezetét.
 
-## Az Aspose.Words for Python használatának első lépései
+## Az Aspose.Words for Python használatának megkezdése
 
 Mielőtt belemerülnénk az SDT-k használatába, kezdjük az Aspose.Words for Python használatával. Az Aspose.Words egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, módosítását és konvertálását. A kezdéshez kövesse az alábbi lépéseket:
 
@@ -67,7 +67,7 @@ Az SDT-k dokumentumhoz való hozzáadása néhány egyszerű lépésből áll:
    doc.get_first_section().get_body().append_child(sdt)
    ```
 
-## Munkavégzés az SDT tartalomvezérlőkkel
+## Munka az SDT tartalomvezérlőkkel
 
 Az SDT tartalomvezérlők lehetővé teszik a felhasználók számára a dokumentummal való interakciót. Nézzünk meg néhány gyakori tartalomvezérlőt:
 

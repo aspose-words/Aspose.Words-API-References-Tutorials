@@ -30,28 +30,28 @@ För att börja skapa tabellen använder vi`StartTable()` metoden för dokumentb
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // Sätt ramar för hela bordet.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // Ställ in utfyllnad för den här cellen.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // Ange en annan cellfyllning för den andra cellen.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // Rensa cellformatering från tidigare operationer.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
-// Skapa tjockare ramar för den första cellen i den här raden. Det blir annorlunda
+builder.InsertCell();
+// Skapa tjockare ramar för den första cellen i den här raden. Det kommer att bli annorlunda
 // i förhållande till gränserna definierade för tabellen.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
 builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ Grattis! Du har nu formaterat en tabell och en cell med olika ramar med Aspose.W
 ### Exempel på källkod för formatera tabell och cell med olika gränser med Aspose.Words för .NET 
 
 ```csharp
-	// Sökväg till din dokumentkatalog
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Sökväg till din dokumentkatalog
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//Ställ in gränserna för hela bordet.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// Ställ in cellskuggningen för den här cellen.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// Ange en annan cellskuggning för den andra cellen.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// Rensa cellformateringen från tidigare operationer.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// Skapa större ramar för den första cellen i denna rad. Detta kommer att bli annorlunda
-	// jämfört med gränserna för tabellen.
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//Ställ in gränserna för hela bordet.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// Ställ in cellskuggningen för den här cellen.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// Ange en annan cellskuggning för den andra cellen.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// Rensa cellformateringen från tidigare operationer.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// Skapa större ramar för den första cellen i denna rad. Detta kommer att bli annorlunda
+// jämfört med gränserna för tabellen.
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## Slutsats

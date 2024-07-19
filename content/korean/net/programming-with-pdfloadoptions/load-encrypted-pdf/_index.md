@@ -19,7 +19,7 @@ url: /ko/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 첫 번째 단계는 암호화된 PDF 문서를 애플리케이션에 로드하는 것입니다. 수행 방법은 다음과 같습니다.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
+//문서 디렉터리의 경로입니다.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

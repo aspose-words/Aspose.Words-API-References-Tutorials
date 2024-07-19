@@ -14,7 +14,7 @@ url: /el/java/document-splitting/document-page-separation/
 
 Πριν βουτήξουμε στον κώδικα, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
-- Εγκαταστάθηκε το Java Development Kit (JDK).
+- Εγκατεστημένο Java Development Kit (JDK).
 -  Βιβλιοθήκη Aspose.Words for Java (Μπορείτε να την κατεβάσετε από[εδώ](https://releases.aspose.com/words/java/))
 - Ολοκληρωμένο περιβάλλον ανάπτυξης (IDE) της επιλογής σας (Eclipse, IntelliJ IDEA, κ.λπ.)
 

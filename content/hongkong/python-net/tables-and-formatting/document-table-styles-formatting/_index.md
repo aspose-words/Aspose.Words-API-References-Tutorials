@@ -8,7 +8,7 @@ weight: 12
 url: /zh-hant/python-net/tables-and-formatting/document-table-styles-formatting/
 ---
 
-文件桌在以有組織且具有視覺吸引力的方式呈現資訊方面發揮著至關重要的作用。 Aspose.Words for Python 提供了一組強大的工具，使開發人員能夠有效地使用表格並自訂其樣式和格式。在本文中，我們將探討如何使用 Aspose.Words for Python API 操作和增強文件表。讓我們深入了解吧！
+文件桌在以有組織且具有視覺吸引力的方式呈現資訊方面發揮著至關重要的作用。 Aspose.Words for Python 提供了一組功能強大的工具，使開發人員能夠有效地使用表格並自訂其樣式和格式。在本文中，我們將探討如何使用 Aspose.Words for Python API 操作和增強文件表。讓我們深入了解吧！
 
 ## Python 版 Aspose.Words 入門
 
@@ -135,7 +135,7 @@ Aspose.Words for Python 提供了一系列樣式選項，使您的表單在視�
     row.row_format.height_rule = aspose.words.HeightRule.AUTO
     ```
 
-2. 調整列寬：自動調整列寬以適合內容。
+2. 調整列寬：自動調整列寬以適應內容。
 
     ```python
     table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)

@@ -20,7 +20,7 @@ Att använda SDT erbjuder flera fördelar, inklusive:
 - Automation: Med SDT:er kan du automatisera dokumentgenerering, vilket gör det enklare att skapa mallar och rapporter.
 - Datavalidering: SDT:er kan genomdriva datavalideringsregler, minska fel och upprätthålla dataintegritet.
 - Dynamiskt innehåll: SDT:er möjliggör infogning av dynamiskt innehåll som uppdateras automatiskt, såsom datum- och tidsstämplar.
-- Enkelt att samarbeta: Samarbetspartners kan fokusera på innehåll utan att ändra dokumentets struktur.
+- Lätt att samarbeta: Samarbetspartners kan fokusera på innehåll utan att ändra dokumentets struktur.
 
 ## Komma igång med Aspose.Words för Python
 

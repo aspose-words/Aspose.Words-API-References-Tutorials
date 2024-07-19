@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Vytvořte a naformátujte dokument
- Vytvořte instanci souboru`Document` třída a`DocumentBuilder` třídy k sestavení dokumentu. Použijte`Font` vlastnictvím`DocumentBuilder`pro přístup k vlastnostem formátování písma.
+ Vytvořte instanci souboru`Document` třída a`DocumentBuilder` třídy k sestavení dokumentu. Použijte`Font` vlastnictvím`DocumentBuilder` pro přístup k vlastnostem formátování písma.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## Krok 3: Uložte dokument
- Použijte`Save` způsob uložení dokumentu s použitým formátováním písma. Nahradit`"WorkingWithFonts.SetFontFormatting.docx"` s požadovaným názvem souboru.
+ Použijte`Save`způsob uložení dokumentu s použitým formátováním písma. Nahradit`"WorkingWithFonts.SetFontFormatting.docx"` s požadovaným názvem souboru.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

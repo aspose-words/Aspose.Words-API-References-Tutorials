@@ -2,7 +2,7 @@
 title: 使用表格样式和格式进行文字处理
 linktitle: 使用表格样式和格式进行文字处理
 second_title: Aspose.Words 文档处理 API
-description: 了解如何在 Aspose.Words for .NET 中编程表格样式和格式。通过分步教程和 C# 中的示例代码了解如何应用预定义样式、自定义单元格格式、边框等。
+description: 了解如何在 Aspose.Words for .NET 中对表格样式和格式进行编程。通过分步教程和 C# 中的示例代码了解如何应用预定义样式、自定义单元格格式、边框等。
 type: docs
 weight: 1580
 url: /zh/net/programming-with-table-styles-and-formatting/

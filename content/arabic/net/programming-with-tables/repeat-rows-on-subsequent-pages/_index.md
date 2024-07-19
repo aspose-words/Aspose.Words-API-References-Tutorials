@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-//أدخل الخلية الأولى من الصف الأول
+// أدخل الخلية الأولى من الصف الأول
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- نستخدم هنا أداة إنشاء المستندات لإنشاء جدول يحتوي على صفين للرأس وصفوف بيانات متعددة. ال`RowFormat.HeadingFormat` تُستخدم المعلمات لتحديد صفوف الرأس التي يجب تكرارها في الصفحات اللاحقة.
+ نستخدم هنا أداة إنشاء المستندات لإنشاء جدول يحتوي على صفين للرؤوس وصفوف بيانات متعددة. ال`RowFormat.HeadingFormat` تُستخدم المعلمات لتحديد صفوف الرأس التي يجب تكرارها في الصفحات اللاحقة.
 
 ## الخطوة 4: حفظ المستند المعدل
 أخيرا الولايات المتحدة

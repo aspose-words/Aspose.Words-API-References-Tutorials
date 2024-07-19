@@ -64,7 +64,7 @@ Bu, belgemizi oluşturur ve bizi onu oluşturmaya başlamaya hazırlar.
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Bu kod satırı Aspose.Words'e "Giriş Metni" giriş metnini içeren bir TC alanı eklemesini söyler.`\\f t` bölüm, girişin İçindekiler Tablosunda nasıl görüntüleneceğini belirleyen bir anahtardır.
+ Bu kod satırı Aspose.Words'e "Giriş Metni" giriş metnini içeren bir TC alanı eklemesini söyler.`\\f t`bölüm, girişin İçindekiler Tablosunda nasıl görüntüleneceğini belirleyen bir anahtardır.
 
 ## Adım 4: Belgeyi Kaydedin
 

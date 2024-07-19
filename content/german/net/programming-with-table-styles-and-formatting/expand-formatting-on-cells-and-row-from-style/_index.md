@@ -41,7 +41,7 @@ Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
 Console.WriteLine("Shading cell before style expansion: " + cellShadingBefore);
 ```
 
-## Schritt 5: Tabellenstile erweitern zur direkten Formatierung
+## Schritt 5: Tabellenstile zur direkten Formatierung erweitern
  Nun erweitern wir die Tabellenstile um die direkte Formatierung über die`ExpandTableStylesToDirectFormatting()` Methode.
 
 ```csharp
@@ -69,7 +69,7 @@ Shading the cell after style expansion: " + cellShadingAfter);
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	Cell firstCell = table.FirstRow.FirstCell;
 	// Drucken Sie zuerst die Farbe der Zellenschattierung.
-	// Dieses sollte leer sein, da die aktuelle Schattierung im Tabellenstil gespeichert ist.
+	// Dies sollte leer sein, da die aktuelle Schattierung im Tabellenstil gespeichert ist.
 	Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
 	Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 	doc.ExpandTableStylesToDirectFormatting();

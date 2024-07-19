@@ -15,10 +15,10 @@ url: /el/net/document-protection/password-protection/
 
 Προτού βουτήξουμε στην αυθεντική προστασία των εγγράφων του Word με κωδικό πρόσβασης, υπάρχουν μερικά πράγματα που θα χρειαστείτε:
 
-1. Aspose.Words για .NET: Βεβαιωθείτε ότι έχετε τη βιβλιοθήκη Aspose.Words για .NET. Μπορείς[κατεβάστε το εδώ](https://releases.aspose.com/words/net/).
+1.  Aspose.Words για .NET: Βεβαιωθείτε ότι έχετε τη βιβλιοθήκη Aspose.Words για .NET. Μπορείς[κατεβάστε το εδώ](https://releases.aspose.com/words/net/).
 2. Περιβάλλον ανάπτυξης: Visual Studio ή οποιοδήποτε άλλο περιβάλλον ανάπτυξης C#.
 3. Βασικές γνώσεις C#: Θεμελιώδης κατανόηση του προγραμματισμού C#.
-4.  Aspose License: Λάβετε άδεια από[εδώ](https://purchase.aspose.com/buy) ή χρησιμοποιήστε α[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/) για αξιολόγηση.
+4.  Aspose License: Λάβετε άδεια από[εδώ](https://purchase.aspose.com/buy)ή χρησιμοποιήστε α[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/) για αξιολόγηση.
 
 ## Εισαγωγή χώρων ονομάτων
 

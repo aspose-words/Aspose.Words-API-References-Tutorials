@@ -47,7 +47,7 @@ formField2.Font.Color = Color.Red;
 
 ## Steg 4: Spara dokumentet
 
-Spara slutligen det ändrade dokumentet:
+Slutligen, spara det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
@@ -82,7 +82,7 @@ Använd gärna den här koden i dina egna projekt och modifiera den efter dina s
 
 #### F: Vad händer om formulärfältet med det angivna namnet inte finns i dokumentet?
 
- S: Om formulärfältet med det angivna namnet inte finns i dokumentet,`Document.Range.FormFields[name]` metod kommer tillbaka`null`. Du kan kontrollera detta resultat för att hantera fall där formulärfältet inte hittas.
+ S: Om formulärfältet med det angivna namnet inte finns i dokumentet,`Document.Range.FormFields[name]` metoden kommer tillbaka`null`. Du kan kontrollera detta resultat för att hantera fall där formulärfältet inte hittas.
 
 #### F: Hur kan jag ändra egenskaperna för ett hittat formulärfält?
 

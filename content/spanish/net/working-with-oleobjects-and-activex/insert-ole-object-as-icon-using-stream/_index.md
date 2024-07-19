@@ -88,7 +88,7 @@ A. Para crear un nuevo documento y generador de documentos, puede seguir estos p
 ```csharp
 Document doc = new Document();
 ```
- Utilizar el`DocumentBuilder`clase para crear un generador de documentos asociado con el documento creado anteriormente:
+ Utilizar el`DocumentBuilder` clase para crear un generador de documentos asociado con el documento creado anteriormente:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,9 +118,9 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### P. ¿Cómo incrusto el código para insertar un objeto OLE como icono de una secuencia en mi proyecto?
 
 A. Para incrustar el código para insertar un objeto OLE como un icono de una secuencia en su proyecto, siga estos pasos:
--  Importe las referencias necesarias agregando las apropiadas`using` declaraciones.
+- Importe las referencias necesarias agregando las apropiadas`using` declaraciones.
 -  Cree un nuevo documento y un generador de documentos utilizando el`Document`y`DocumentBuilder` clases.
 - Utilice el código para insertar el objeto OLE como un icono de una secuencia.
--  Guarde el documento usando el`Save` método con la ruta de destino adecuada.
+-  Guarde el documento utilizando el`Save` método con la ruta de destino adecuada.
 
 Si sigue estos pasos, podrá insertar con éxito un objeto OLE como icono de una secuencia utilizando Aspose.Words para .NET. Asegúrese de seguir las instrucciones e importar las referencias necesarias para obtener los resultados deseados.

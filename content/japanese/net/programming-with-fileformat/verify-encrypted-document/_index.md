@@ -38,7 +38,7 @@ Console.WriteLine(info.IsEncrypted);
 
 以上です。Aspose.Words for .NET を使用してドキュメントが暗号化されているかどうかを正常に確認できました。
 
-### Aspose.Words for .NET を使用して暗号化されたドキュメントを検証するためのサンプル ソース コード
+### Aspose.Words for .NET で暗号化されたドキュメントを検証するためのサンプル ソース コード
 
 ```csharp
 

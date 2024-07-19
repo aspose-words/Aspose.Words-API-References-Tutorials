@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-//แทรกเซลล์แรกของแถวแรก
+// แทรกเซลล์แรกของแถวแรก
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();

@@ -16,7 +16,7 @@ In diesem umfassenden Leitfaden werden wir uns eingehend mit dem Prozess der Gen
 
 Bevor wir uns mit der Erstellung benutzerdefinierter Barcode-Etiketten im Detail befassen, stellen wir sicher, dass die Voraussetzungen erfüllt sind:
 
-1. Java-Entwicklungsumgebung: Stellen Sie sicher, dass auf Ihrem System Java und eine integrierte Entwicklungsumgebung (IDE) installiert sind.
+1. Java-Entwicklungsumgebung: Stellen Sie sicher, dass Java und eine integrierte Entwicklungsumgebung (IDE) auf Ihrem System installiert sind.
 
 2.  Aspose.Words für Java: Laden Sie Aspose.Words für Java herunter und installieren Sie es von[Hier](https://releases.aspose.com/words/java/).
 
@@ -121,7 +121,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
 	}
 	
-	//Codetextposition anpassen
+	//Passen Sie die Position des Codetexts an
 	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
 	if (parameters.getDisplayText())
 		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);

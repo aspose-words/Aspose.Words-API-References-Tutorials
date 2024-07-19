@@ -91,7 +91,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ### 儲存文件
 
-最後，使用儲存文檔`Save`的方法`Document`班級。
+最後，使用以下命令儲存文檔`Save`的方法`Document`班級。
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");

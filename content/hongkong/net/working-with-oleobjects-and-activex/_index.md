@@ -8,9 +8,9 @@ weight: 1080
 url: /zh-hant/net/working-with-oleobjects-and-activex/
 ---
 
-使用 OLE 和 ActiveX 物件進行文字處理的 Aspose.Words for .NET 教學課程將引導您了解有效操作 Word 文件中的 OLE 和 ActiveX 物件的各種功能和技術。在這些教學中，您將學習如何在 Word 文件中插入、檢出、更新和刪除 OLE 和 ActiveX 對象，例如圖表、電子表格和 ActiveX 控制項。您還將了解如何自訂這些物件的外觀和行為，以及如何處理與 OLE 和 ActiveX 物件相關的錯誤和異常。
+使用 OLE 和 ActiveX 物件進行文字處理的 Aspose.Words for .NET 教學課程將引導您了解有效操作 Word 文件中的 OLE 和 ActiveX 物件的各種功能和技術。在這些教學中，您將學習如何在 Word 文件中插入、簽出、更新和刪除 OLE 和 ActiveX 對象，例如圖表、電子表格和 ActiveX 控制項。您還將了解如何自訂這些物件的外觀和行為，以及如何處理與 OLE 和 ActiveX 物件相關的錯誤和異常。
 
-這些教學課程為您提供了在 Aspose.Words for .NET 中使用 OLE 和 ActiveX 物件進行文字處理的逐步實作方法。您將學習如何使用 Aspose.Words 函式庫提供的不同類別和方法來操作這些物件。清晰且帶有註釋的程式碼範例將幫助您理解和練習所提出的概念。有了這些知識，您將能夠充分利用 Word 文件中 OLE 和 ActiveX 物件的功能，為其添加互動性和視覺豐富性。
+這些教學課程為您提供了在 Aspose.Words for .NET 中使用 OLE 和 ActiveX 物件進行文字處理的逐步實作方法。您將學習如何使用 Aspose.Words 函式庫提供的不同類別和方法來操作這些物件。清晰且帶有註釋的程式碼範例將幫助您理解和練習所提出的概念。有了這些知識，您將能夠充分利用 Word 文件中的 OLE 和 ActiveX 物件的功能，為其添加互動性和視覺豐富性。
 
  ## 教學
 | 標題 | 描述 |

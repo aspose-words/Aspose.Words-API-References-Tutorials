@@ -126,7 +126,7 @@ for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
 
 ## Conclusie
 
-Het maken van een uitgebreide inhoudsopgave met Aspose.Words voor Python kan de gebruikerservaring van uw documenten aanzienlijk verbeteren. Door deze stappen te volgen, kunt u de navigeerbaarheid van documenten verbeteren, snelle toegang tot belangrijke secties bieden en uw inhoud op een meer georganiseerde en leesvriendelijke manier presenteren.
+Het maken van een uitgebreide inhoudsopgave met Aspose.Words voor Python kan de gebruikerservaring van uw documenten aanzienlijk verbeteren. Door deze stappen te volgen, kunt u de navigeerbaarheid van documenten verbeteren, snelle toegang tot belangrijke secties bieden en uw inhoud op een meer georganiseerde en lezersvriendelijke manier presenteren.
 
 ## Veelgestelde vragen
 

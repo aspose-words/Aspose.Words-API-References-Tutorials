@@ -80,7 +80,7 @@ Och där har du det! Att ta bort en rad efter bokmärke i ett Word-dokument med 
 Ja, du kan ta bort flera rader genom att iterera över flera bokmärken och använda samma metod.
 
 ### Vad händer om bokmärket inte hittas?
- Om bokmärket inte hittas,`row` variabeln kommer att vara null och`Remove` metod kommer inte att anropas, vilket förhindrar eventuella fel.
+ Om bokmärket inte hittas,`row` variabeln kommer att vara null, och`Remove` metod kommer inte att anropas, vilket förhindrar eventuella fel.
 
 ### Kan jag ångra borttagningen efter att ha sparat dokumentet?
 När dokumentet har sparats är ändringarna permanenta. Se till att ha en säkerhetskopia om du behöver ångra ändringar.

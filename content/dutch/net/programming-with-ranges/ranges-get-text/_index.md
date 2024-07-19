@@ -109,7 +109,7 @@ A: Ja, u kunt slechts een specifiek gedeelte van de tekst binnen een bereik extr
 
 #### Vraag: Kan ik tekst extraheren uit met een wachtwoord beveiligde of gecodeerde Word-documenten met Aspose.Words voor .NET?
 
- A: Ja, Aspose.Words voor .NET ondersteunt het extraheren van tekst uit met een wachtwoord beveiligde of gecodeerde Word-documenten. U moet echter het juiste wachtwoord of de decoderingssleutels opgeven wanneer u het document laadt met behulp van de`Document` klasse constructor. Dit zorgt ervoor dat het document correct wordt gedecodeerd voordat toegang wordt verkregen tot de tekstinhoud.
+ A: Ja, Aspose.Words voor .NET ondersteunt het extraheren van tekst uit met een wachtwoord beveiligde of gecodeerde Word-documenten. U moet echter het juiste wachtwoord of de decoderingssleutels opgeven wanneer u het document laadt met behulp van de`Document` klasse constructeur. Dit zorgt ervoor dat het document correct wordt gedecodeerd voordat toegang wordt verkregen tot de tekstinhoud.
 
 #### Vraag: Kan ik opgemaakte of opgemaakte tekst (zoals rich text of HTML) uit een Word-document extraheren met Aspose.Words voor .NET?
 

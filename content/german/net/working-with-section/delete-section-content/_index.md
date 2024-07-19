@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Schritt 3: Abschnittsinhalt löschen
-Um den Inhalt des Abschnitts zu löschen, verwenden wir den`ClearContent` Methode.
+ Um den Inhalt des Abschnitts zu löschen, verwenden wir den`ClearContent` Methode.
 
 ```csharp
 section.ClearContent();

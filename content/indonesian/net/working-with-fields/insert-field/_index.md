@@ -82,7 +82,7 @@ J: Word menawarkan beragam tipe bidang yang bisa Anda gunakan dalam dokumen Anda
 - Perhitungan: melakukan perhitungan matematis menggunakan rumus.
 - Teks Pengisi: Menghasilkan teks acak untuk mengisi dokumen Anda.
 
-#### T: Bisakah saya mengkustomisasi tampilan bidang di Word?
+#### T: Dapatkah saya mengkustomisasi tampilan bidang di Word?
 
 J: Ya, Anda bisa mengkustomisasi tampilan bidang di Word dengan menggunakan opsi pemformatan yang tersedia. Misalnya, Anda dapat mengubah font, ukuran, warna, dan gaya teks dalam suatu bidang. Anda juga dapat menerapkan efek pemformatan seperti huruf tebal, miring, dan garis bawah.
   

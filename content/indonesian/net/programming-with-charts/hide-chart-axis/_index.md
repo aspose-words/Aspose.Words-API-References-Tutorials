@@ -9,7 +9,7 @@ url: /id/net/programming-with-charts/hide-chart-axis/
 ---
 ## Perkenalan
 
-Membuat dokumen Word yang dinamis dan menarik secara visual sering kali melibatkan penggabungan bagan dan grafik. Salah satu skenario seperti itu mungkin memerlukan penyembunyian sumbu bagan untuk presentasi yang lebih rapi. Aspose.Words for .NET menyediakan API yang komprehensif dan mudah digunakan untuk tugas-tugas tersebut. Tutorial ini akan memandu Anda melalui langkah-langkah untuk menyembunyikan sumbu bagan di dokumen Word menggunakan Aspose.Words untuk .NET.
+Membuat dokumen Word yang dinamis dan menarik secara visual sering kali melibatkan penggabungan bagan dan grafik. Salah satu skenario tersebut mungkin memerlukan penyembunyian sumbu bagan untuk presentasi yang lebih rapi. Aspose.Words for .NET menyediakan API yang komprehensif dan mudah digunakan untuk tugas-tugas tersebut. Tutorial ini akan memandu Anda melalui langkah-langkah untuk menyembunyikan sumbu bagan di dokumen Word menggunakan Aspose.Words untuk .NET.
 
 ## Prasyarat
 

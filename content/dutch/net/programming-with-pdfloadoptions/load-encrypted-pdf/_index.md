@@ -19,7 +19,7 @@ Met de functie Gecodeerde PDF laden van Aspose.Words voor .NET kunt u PDF-bestan
 De eerste stap is het laden van het gecodeerde PDF-document in uw applicatie. Hier leest u hoe u het moet doen:
 
 ```csharp
-// Pad naar de documentenmap.
+//Pad naar de documentenmap.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

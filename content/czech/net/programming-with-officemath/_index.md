@@ -7,7 +7,7 @@ type: docs
 weight: 1550
 url: /cs/net/programming-with-officemath/
 ---
-Výukové programy Aspose.Words for .NET o textovém zpracování pomocí OfficeMath vás provedou používáním funkcí OfficeMath k manipulaci a formátování matematických rovnic ve vašich dokumentech aplikace Word. Dozvíte se, jak vytvářet, upravovat a mazat matematické rovnice, a také jak používat konkrétní styly a formátování. Tyto výukové programy vám poskytnou podrobné pochopení manipulace s matematickými rovnicemi v dokumentech aplikace Word.
+Výukové programy Aspose.Words for .NET o textovém zpracování pomocí OfficeMath vás provedou používáním funkcí OfficeMath k manipulaci a formátování matematických rovnic ve vašich dokumentech aplikace Word. Dozvíte se, jak vytvářet, upravovat a mazat matematické rovnice, a také jak používat konkrétní styly a formátování. Tyto výukové programy vám poskytnou důkladné pochopení manipulace s matematickými rovnicemi v dokumentech aplikace Word.
 
  ## Tutoriály
 | Titul | Popis |

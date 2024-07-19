@@ -21,7 +21,7 @@ El primer paso es cargar el documento de Word que contiene la tabla de contenido
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-En este ejemplo, cargamos el documento "Tabla de contenidos.docx" ubicado en el directorio de documentos.
+En este ejemplo, cargamos el documento "Tabla de contenido.docx" ubicado en el directorio de documentos.
 
 ## Cambiar pestañas en la tabla de contenido
 
@@ -40,7 +40,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-En este ejemplo, utilizamos un bucle para recorrer cada párrafo del documento. Luego verificamos si el párrafo tiene formato usando los estilos de resultados de la tabla de contenido (TOC). Si es así accedemos a la primera pestaña utilizada en este párrafo y la modificamos quitando la pestaña antigua y añadiendo una nueva pestaña con una posición modificada.
+En este ejemplo, utilizamos un bucle para recorrer cada párrafo del documento. Luego verificamos si el párrafo tiene el formato utilizando los estilos de resultados de la tabla de contenido (TOC). Si es así accedemos a la primera pestaña utilizada en este párrafo y la modificamos quitando la pestaña antigua y añadiendo una nueva pestaña con una posición modificada.
 
 ## Guardar documento modificado
 

@@ -43,7 +43,7 @@ options. HorizontalResolution = 72f;
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
 ```
 
- Ở bước cuối cùng này, chúng tôi lưu hình ảnh của phạm vi trang được chỉ định ở định dạng JPEG bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu đã chỉ định.
+ Ở bước cuối cùng này, chúng tôi lưu hình ảnh của phạm vi trang được chỉ định ở định dạng JPEG bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu được chỉ định.
 
 Bây giờ bạn có thể chạy mã nguồn để chuyển đổi một phạm vi trang cụ thể trong tài liệu của mình sang hình ảnh JPEG. Tệp kết quả sẽ được lưu trong thư mục được chỉ định với tên "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg".
 

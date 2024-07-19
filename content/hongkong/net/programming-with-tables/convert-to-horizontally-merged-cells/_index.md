@@ -14,7 +14,7 @@ url: /zh-hant/net/programming-with-tables/convert-to-horizontally-merged-cells/
 1. 啟動 Visual Studio 並建立一個新的 C# 專案。
 2. 新增對 Aspose.Words for .NET 函式庫的參考。
 
-## 第 2 步：載入文件並存取表格
+## 第 2 步：載入文件並存取表
 要對錶啟動文字處理，我們需要載入包含該表的文件並存取它。按著這些次序：
 
 ```csharp
@@ -53,4 +53,4 @@ table. ConvertToHorizontallyMergedCells();
 ```
 
 ## 結論
-在本教學中，我們學習如何使用 Aspose.Words for .NET 將表格儲存格轉換為 Word 文件中的水平合併儲存格。透過遵循本逐步指南並實現提供的 C# 程式碼，您可以透過程式設計 Word 文件中的表格儲存格。此功能可讓您在表格中以靈活且個人化的方式管理和組織資料。
+在本教學中，我們學習如何使用 Aspose.Words for .NET 將表格儲存格轉換為 Word 文件中的水平合併儲存格。透過遵循本逐步指南並實現提供的 C# 程式碼，您可以以程式設計方式操作 Word 文件中的表格儲存格。此功能可讓您在表格中以靈活且個人化的方式管理和組織資料。

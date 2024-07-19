@@ -2,7 +2,7 @@
 title: Establecer posición relativa horizontal o vertical
 linktitle: Establecer posición relativa horizontal o vertical
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a configurar la posición relativa horizontal o vertical de una tabla en un documento de Word con Aspose.Words para .NET.
+description: Aprenda a establecer la posición relativa horizontal o vertical de una tabla en un documento de Word con Aspose.Words para .NET.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/set-relative-horizontal-or-vertical-position/

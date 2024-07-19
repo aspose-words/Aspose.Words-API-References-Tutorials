@@ -215,7 +215,7 @@ C'est tout ! Vous avez détecté avec succès le format de différents fichiers 
 
 #### Quels formats de documents Aspose.Words for .NET prend-il en charge ?
 
-Aspose.Words for .NET prend en charge une variété de formats de documents, notamment les documents Microsoft Word 97-2003 (DOC), les modèles (DOT), les documents Office Open XML WordprocessingML (DOCX), les documents Office Open XML WordprocessingML avec macros (DOCM), Office Open. Modèles XML WordprocessingML sans macros (DOTX), modèles Office Open XML WordprocessingML avec macros (DOTM), documents Flat OPC, documents RTF, documents Microsoft Word 2003 WordprocessingML, documents HTML, documents MHTML (archive Web), documents OpenDocument Text (ODT), Modèles OpenDocument Text (OTT), documents MS Word 6 ou Word 95 et formats de documents inconnus.
+Aspose.Words pour .NET prend en charge une variété de formats de documents, notamment les documents Microsoft Word 97-2003 (DOC), les modèles (DOT), les documents Office Open XML WordprocessingML (DOCX), les documents Office Open XML WordprocessingML avec macros (DOCM), Office Open. Modèles XML WordprocessingML sans macros (DOTX), modèles Office Open XML WordprocessingML avec macros (DOTM), documents Flat OPC, documents RTF, documents Microsoft Word 2003 WordprocessingML, documents HTML, documents MHTML (archives Web), documents OpenDocument Text (ODT), Modèles OpenDocument Text (OTT), documents MS Word 6 ou Word 95 et formats de documents inconnus.
 
 #### Comment gérer les fichiers de documents cryptés lors de la détection du format ?
 

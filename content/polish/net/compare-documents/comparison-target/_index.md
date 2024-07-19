@@ -13,7 +13,7 @@ No hej! Czy kiedykolwiek zdarzyło Ci się porównywać dwie wersje dokumentu pr
 
 ## Warunki wstępne
 
-Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
+Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby rozpocząć:
 
 1.  Aspose.Words dla .NET: Potrzebujesz tej biblioteki. Jeśli jeszcze go nie masz, chwyć go[Tutaj](https://releases.aspose.com/words/net/).
 2.  Licencja: Będziesz potrzebować ważnej licencji, aby odblokować pełny potencjał Aspose.Words. Możesz kupić jeden[Tutaj](https://purchase.aspose.com/buy) lub zdobądź licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).

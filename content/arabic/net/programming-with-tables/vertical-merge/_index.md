@@ -65,7 +65,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
-في هذا الكود، نستخدم منشئ DocumentBuilder لإدراج الخلايا في الجدول. نحن نطبق الدمج الرأسي على الخلايا باستخدام خاصية CellFormat.VerticalMerge. نستخدم CellMerge.First لدمج الخلية الأولى، وCellMerge.Previous للدمج مع الخلية السابقة، وCellMerge.None لعدم الدمج العمودي.
+في هذا الكود، نستخدم منشئ DocumentBuilder لإدراج الخلايا في الجدول. نحن نطبق الدمج الرأسي على الخلايا باستخدام خاصية CellFormat.VerticalMerge. نحن نستخدم CellMerge.First لدمج الخلية الأولى، وCellMerge.Previous للدمج مع الخلية السابقة، وCellMerge.None لعدم الدمج الرأسي.
 
 ## الخطوة 4: حفظ المستند المعدل
 أخيرًا، نحتاج إلى حفظ المستند المعدل بالخلايا المدمجة. استخدم الكود التالي:

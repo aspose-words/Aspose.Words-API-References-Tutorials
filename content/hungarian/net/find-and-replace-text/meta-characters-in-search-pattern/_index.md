@@ -33,7 +33,7 @@ Ebben az oktatóanyagban a folyamatot egyszerű lépésekre bontjuk. Minden lép
 
 ## 1. lépés: A dokumentumkönyvtár beállítása
 
-Mielőtt elkezdené a dokumentum kezelését, meg kell határoznia a dokumentumkönyvtár elérési útját. Ide kerül a kimeneti fájl mentése.
+A dokumentum kezelésének megkezdése előtt meg kell határoznia a dokumentumkönyvtár elérési útját. Ide kerül a kimeneti fájl mentése.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -105,7 +105,7 @@ Aspose.Words for .NET est une bibliothèque complète permettant de travailler a
 
  Aspose.Words vous permet de modifier diverses propriétés de mise en page telles que l'orientation, les marges et le format du papier. Se référer au[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
 
-### 4. Comment puis-je obtenir de l'assistance pour Aspose.Words pour .NET ?
+### 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
 
  L'assistance est disponible via le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 

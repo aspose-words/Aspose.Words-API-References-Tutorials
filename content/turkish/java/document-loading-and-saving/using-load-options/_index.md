@@ -61,7 +61,7 @@ public void setMsWordVersion() throws Exception {
 }
 ```
 
- Belge yükleme için MS Word sürümünü belirleyebilirsiniz. Bu örnekte sürümü Microsoft Word 2010 olarak ayarladık.`setMswVersion`.
+ Belge yükleme için MS Word sürümünü belirtebilirsiniz. Bu örnekte sürümü Microsoft Word 2010 olarak ayarladık.`setMswVersion`.
 
 ## Geçici Klasörü Kullan
 

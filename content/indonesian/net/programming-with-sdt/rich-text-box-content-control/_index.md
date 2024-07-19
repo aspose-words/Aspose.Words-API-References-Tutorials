@@ -50,7 +50,7 @@ sdtRichText.ChildNodes.Add(para);
 ```
 
 ## Langkah 5: Tambahkan Kontrol Konten ke Dokumen
- Tambahkan kontrol konten kotak teks kaya ke isi dokumen dengan menggunakan`AppendChild` metode isi bagian pertama dokumen.
+ Tambahkan kontrol konten kotak teks kaya ke badan dokumen dengan menggunakan`AppendChild` metode isi bagian pertama dokumen.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);

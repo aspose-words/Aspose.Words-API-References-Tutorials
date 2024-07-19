@@ -203,7 +203,7 @@ Aspose.Words for Java trao quyền cho các nhà phát triển Java khả năng 
 
     Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
 
-### Aspose.Words có giữ nguyên định dạng ban đầu của tài liệu đã hợp nhất không?
+### Aspose.Words có giữ nguyên định dạng ban đầu của tài liệu được hợp nhất không?
 
     Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
 

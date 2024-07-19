@@ -33,7 +33,7 @@ Ora configureremo le opzioni di salvataggio HTML per esportare le informazioni d
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Questo codice crea un'istanza di`HtmlSaveOptions` imposta il`ExportRoundtripInformation` opzione a`true` per includere informazioni di andata e ritorno durante l'esportazione.
+ Questo codice crea un'istanza di`HtmlSaveOptions` e imposta il`ExportRoundtripInformation` opzione a`true` per includere informazioni di andata e ritorno durante l'esportazione.
 
 ## Passaggio 4: convertire e salvare il documento in HTML
 

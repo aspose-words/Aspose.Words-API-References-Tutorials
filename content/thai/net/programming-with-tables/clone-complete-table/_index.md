@@ -37,7 +37,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 // โคลนอาร์เรย์
 Table tableClone = (Table)table.Clone(true);
 
-//แทรกตารางที่คัดลอกมาลงในเอกสารหลังต้นฉบับ
+// แทรกตารางที่คัดลอกมาลงในเอกสารหลังต้นฉบับ
 table.ParentNode.InsertAfter(tableClone, table);
 
 // แทรกย่อหน้าว่างระหว่างสองตาราง
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 	// โคลนตารางและแทรกลงในเอกสารหลังต้นฉบับ
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// แทรกย่อหน้าว่างระหว่างสองตาราง
+	//แทรกย่อหน้าว่างระหว่างสองตาราง
 	// มิฉะนั้นจะรวมเป็นหนึ่งเดียวเมื่อบันทึก ซึ่งเกี่ยวข้องกับการตรวจสอบเอกสาร
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

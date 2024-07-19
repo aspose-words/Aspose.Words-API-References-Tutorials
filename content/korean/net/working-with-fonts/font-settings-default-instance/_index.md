@@ -55,7 +55,7 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 
 ## 3단계: 문서 로드
 
- 글꼴 소스가 구성되면 다음 단계는 문서를 Aspose.Words에 로드하는 것입니다.`Document`물체. 이를 통해 문서를 조작하고 결국 저장할 수 있습니다.
+ 글꼴 소스가 구성되면 다음 단계는 문서를 Aspose.Words에 로드하는 것입니다.`Document` 물체. 이를 통해 문서를 조작하고 결국 저장할 수 있습니다.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

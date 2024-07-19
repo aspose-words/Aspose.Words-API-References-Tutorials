@@ -95,7 +95,7 @@ dataPoint01.Marker.Size = 20;
 
  Pro`dataPoint01`, změníme symbol značky na diamant a nastavíme velikost značky na 20.
 
-### Přizpůsobte datový bod v řadě 1
+### Přizpůsobte datový bod v sérii 1
 
 ```csharp
 ChartDataPoint dataPoint12 = series1.DataPoints[2];

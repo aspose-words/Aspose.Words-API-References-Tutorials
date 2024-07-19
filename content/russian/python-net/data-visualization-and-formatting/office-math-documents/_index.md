@@ -156,4 +156,4 @@ download_link = "https://Releases.aspose.com/words/python/" + save_response.save
 
 ### Где я могу найти дополнительные ресурсы по работе с Aspose.Words для Python?
 
-Более подробную документацию и примеры см.[Ссылки на API Aspose.Words для Python](https://reference.aspose.com/words/python-net/).
+Для получения более подробной документации и примеров посетите[Ссылки на API Aspose.Words для Python](https://reference.aspose.com/words/python-net/).

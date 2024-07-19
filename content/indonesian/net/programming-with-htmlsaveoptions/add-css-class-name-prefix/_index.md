@@ -19,7 +19,7 @@ Untuk memulai, buat proyek C# baru di IDE favorit Anda. Pastikan perpustakaan As
 Pada langkah ini, kita akan memuat dokumen Word yang ingin kita konversi ke HTML. Gunakan kode berikut untuk memuat dokumen:
 
 ```csharp
-// Jalur ke direktori dokumen.
+//Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Kode ini membuat sebuah instance dari`HtmlSaveOptions` dan set`CssStyleSheetType` ke`CssStyleSheetType.External`untuk menghasilkan style sheet CSS eksternal, dan`CssClassNamePrefix` ke`"pfx_"` untuk awalan`"pfx_"` untuk memberi nama kelas CSS.
+ Kode ini membuat sebuah instance dari`HtmlSaveOptions` dan set`CssStyleSheetType` ke`CssStyleSheetType.External` untuk menghasilkan style sheet CSS eksternal, dan`CssClassNamePrefix` ke`"pfx_"` untuk awalan`"pfx_"` untuk memberi nama kelas CSS.
 
 ## Langkah 4: Mengonversi dan menyimpan dokumen ke HTML
 

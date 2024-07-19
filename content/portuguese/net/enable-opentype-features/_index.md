@@ -7,7 +7,7 @@ type: docs
 weight: 40
 url: /pt/net/enable-opentype-features/
 ---
-Aprenda como habilitar recursos OpenType em seus documentos do Word com Aspose.Words for .NET. Este tutorial detalhado orienta você passo a passo no uso de recursos OpenType, como ligaduras, alternativas estilísticas, substituições contextuais e muito mais. Aprenda como ativar esses recursos para melhorar a tipografia e a aparência dos seus documentos do Word.
+Aprenda como habilitar recursos OpenType em seus documentos do Word com Aspose.Words for .NET. Este tutorial detalhado orienta você passo a passo no uso de recursos OpenType, como ligaduras, alternativas estilísticas, substituições contextuais e muito mais. Aprenda como habilitar esses recursos para melhorar a tipografia e a aparência de seus documentos do Word.
 
  ## Tutoriais
 | Título | Descrição |

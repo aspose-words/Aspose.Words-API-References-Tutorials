@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-//Chèn ô đầu tiên của hàng đầu tiên
+// Chèn ô đầu tiên của hàng đầu tiên
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();

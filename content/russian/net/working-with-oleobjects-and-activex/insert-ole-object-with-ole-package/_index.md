@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте объект OLE с пакетом OLE.
- Воспользуйтесь генератором документов`InsertOleObject` метод для вставки объекта OLE с пакетом OLE в документ. Укажите поток данных, тип объекта, параметры отображения и другие необходимые настройки.
+ Воспользуйтесь генератором документов`InsertOleObject`метод для вставки объекта OLE с пакетом OLE в документ. Укажите поток данных, тип объекта, параметры отображения и другие необходимые настройки.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Вопрос: Как вставить в документ OLE-объект с OLE-пакетом?
 
- А: Используйте`InsertOleObject`метод конструктора документов (`DocumentBuilder`), чтобы вставить в документ объект OLE с пакетом OLE. Укажите поток данных, тип объекта, параметры отображения и другие необходимые настройки. Вот пример:
+ А: Используйте`InsertOleObject` метод конструктора документов (`DocumentBuilder`), чтобы вставить в документ объект OLE с пакетом OLE. Укажите поток данных, тип объекта, параметры отображения и другие необходимые настройки. Вот пример:
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### Вопрос: Как сохранить документ?
 
- A: Используйте документ`Save` метод сохранения документа в файл. Вот пример:
+ A: Используйте документ`Save`метод сохранения документа в файл. Вот пример:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

@@ -62,7 +62,7 @@ Section cloneSection = doc.Sections[0].Clone();
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-#### प्रश्न: Aspose.Words for .NET में दस्तावेज़ और क्लोन अनुभाग कैसे लोड करें?
+#### प्रश्न: .NET के लिए Aspose.Words में दस्तावेज़ और क्लोन अनुभाग कैसे लोड करें?
 
  उत्तर: Word दस्तावेज़ को किसी उदाहरण में लोड करने के लिए`Document` क्लास में दस्तावेज़ के पहले भाग को क्लोन करने के लिए, आप निम्नलिखित कोड का उपयोग कर सकते हैं:
 

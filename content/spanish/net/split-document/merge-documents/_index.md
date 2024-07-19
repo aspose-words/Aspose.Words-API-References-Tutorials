@@ -13,7 +13,7 @@ url: /es/net/split-document/merge-documents/
 
 ## Requisitos previos
 
-Antes de sumergirnos, asegurémonos de que tienes todo lo que necesitas:
+Antes de sumergirnos, asegurémonos de que tiene todo lo que necesita:
 
 1. Conocimientos básicos de C#: debe sentirse cómodo con la sintaxis y los conceptos de C#.
 2.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/) . Si recién estás explorando, puedes comenzar con un[prueba gratis](https://releases.aspose.com/).
@@ -111,4 +111,4 @@ Puede obtener soporte visitando el[Aspose foro de soporte](https://forum.aspose.
 
 ### 5. ¿Puedo combinar otros formatos de archivo con Aspose.Words para .NET?
 
-Sí, Aspose.Words admite la combinación de varios formatos de archivo, incluidos DOCX, PDF y HTML.
+Sí, Aspose.Words admite la combinación de varios formatos de archivos, incluidos DOCX, PDF y HTML.

@@ -117,7 +117,7 @@ Tak, Aspose.Words zapewnia różne opcje dostosowywania procesu importowania, w 
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
 
- Tak, Aspose.Words dla .NET jest produktem komercyjnym. Możesz zdobyć[bezpłatna wersja próbna](https://releases.aspose.com/) lub kup licencję[Tutaj](https://purchase.aspose.com/buy).
+ Tak, Aspose.Words dla .NET jest produktem komercyjnym. Możesz dostać[bezpłatna wersja próbna](https://releases.aspose.com/) lub kup licencję[Tutaj](https://purchase.aspose.com/buy).
 
 ### Czy przy użyciu tej metody mogę połączyć więcej niż dwa dokumenty?
 

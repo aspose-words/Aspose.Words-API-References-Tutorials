@@ -14,7 +14,7 @@ W tym samouczku nauczymy się, jak utworzyć prostą tabelę w dokumencie progra
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
 2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
 
-## Krok 2: Tworzenie dokumentu i inicjowanie generatora dokumentów
+## Krok 2: Tworzenie dokumentu i inicjalizacja generatora dokumentów
 Aby rozpocząć budowanie tabeli, musimy utworzyć nowy dokument i zainicjować kreator dokumentów. Wykonaj następujące kroki:
 
 ```csharp

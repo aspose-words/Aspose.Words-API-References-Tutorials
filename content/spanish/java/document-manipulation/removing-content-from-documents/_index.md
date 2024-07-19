@@ -14,7 +14,7 @@ Antes de sumergirnos en las técnicas de eliminación, presentemos brevemente As
 
 ## Eliminar saltos de página
 
-Los saltos de página se utilizan a menudo para controlar el diseño de un documento. Sin embargo, puede haber casos en los que sea necesario eliminarlos. A continuación se explica cómo eliminar saltos de página utilizando Aspose.Words para Java:
+Los saltos de página se utilizan a menudo para controlar el diseño de un documento. Sin embargo, puede haber casos en los que sea necesario eliminarlos. Así es como puedes eliminar saltos de página usando Aspose.Words para Java:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");

@@ -72,7 +72,7 @@ R : Les polices TrueType sont un format de police populaire. Ils sont souvent u
 
 #### Q : Puis-je spécifier plusieurs dossiers de polices TrueType dans Aspose.Words ?
 
- : Oui, vous pouvez spécifier plusieurs dossiers de polices TrueType dans Aspose.Words à l'aide de l'option`SetTrueTypeFontsFolder` méthode du`Fonts` classe avec une liste d’emplacements de dossiers.
+ : Oui, vous pouvez spécifier plusieurs dossiers de polices TrueType dans Aspose.Words à l'aide du`SetTrueTypeFontsFolder` méthode du`Fonts` classe avec une liste d’emplacements de dossiers.
 
 #### Q : Comment puis-je vérifier le dossier des polices TrueType configuré dans Aspose.Words ?
 

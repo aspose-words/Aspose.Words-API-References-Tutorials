@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-En este paso, estamos usando el`GetAncestor` Método para encontrar la fila principal de los nodos de inicio y fin del marcador. Esto nos ayuda a identificar las filas exactas involucradas.
+ En este paso, estamos usando el`GetAncestor` Método para encontrar la fila principal de los nodos de inicio y fin del marcador. Esto nos ayuda a identificar las filas exactas involucradas.
 
 ## Paso 4: busque filas adyacentes
 
@@ -93,7 +93,7 @@ Encabezado del paso 5: Mover el final del marcador
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-En este paso, estamos usando el`AppendChild`Método para mover el nodo final del marcador. Al agregarlo al último párrafo de la última celda de la fila superior, nos aseguramos de que el marcador esté correctamente desenredado.
+ En este paso, estamos usando el`AppendChild` Método para mover el nodo final del marcador. Al agregarlo al último párrafo de la última celda de la fila superior, nos aseguramos de que el marcador esté correctamente desenredado.
 
 ## Conclusión
 

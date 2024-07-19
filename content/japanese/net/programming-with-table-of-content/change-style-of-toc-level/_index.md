@@ -117,7 +117,7 @@ A: はい、スタイルの変更に加えて、Aspose.Words for .NET を使用�
 
 #### Q: Aspose.Words for .NET を使用して、既存の Word 文書の目次のスタイルを変更できますか?
 
- A: はい、Aspose.Words for .NETを使用して既存のWord文書の目次のスタイルを変更できます。`Document`クラスでは、スタイルプロパティを`Styles`プロパティを変更し、ドキュメントを保存して変更を適用します。
+ A: はい、Aspose.Words for .NETを使用して既存のWord文書の目次のスタイルを変更できます。`Document`クラスでは、スタイルプロパティを`Styles`プロパティを選択し、ドキュメントを保存して変更を適用します。
 
 #### Q: Aspose.Words for .NET は、Word 文書内の他のスタイルや書式の変更をサポートしていますか?
 

@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Selanjutnya, kita perlu memindahkan kursor ke paragraf tertentu di dokumen tempat kita ingin menyisipkan bidang gabungan.
 
 ```csharp
-// Pindahkan kursor ke paragraf.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Langkah 6: Masukkan Bidang Gabungan

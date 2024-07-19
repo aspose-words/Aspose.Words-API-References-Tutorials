@@ -36,7 +36,7 @@ using Aspose.Words.Paragraphs;
 
 ## 步骤 1：初始化 Document 和 DocumentBuilder
 
-在开始格式化之前，我们需要一个文档来处理。将此步骤视为为您的杰作创建空白画布。
+在开始格式化之前，我们需要一个文档来处理。将此步骤视为为您的杰作创建一张空白画布。
 
 ```csharp
 //文档目录的路径。

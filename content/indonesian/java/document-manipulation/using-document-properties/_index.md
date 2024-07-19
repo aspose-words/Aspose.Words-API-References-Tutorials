@@ -150,7 +150,7 @@ Properti dokumen memainkan peran penting dalam mengelola dan mengatur dokumen An
 
 ### Bisakah saya menambahkan properti dokumen khusus ke dokumen?
 
- Ya, Anda dapat menambahkan properti dokumen kustom ke dokumen menggunakan`CustomDocumentProperties` koleksi. Anda dapat menentukan properti kustom dengan berbagai tipe data, termasuk string, boolean, tanggal, dan nilai numerik.
+ Ya, Anda dapat menambahkan properti dokumen kustom ke dokumen menggunakan`CustomDocumentProperties` koleksi. Anda dapat menentukan properti khusus dengan berbagai tipe data, termasuk string, boolean, tanggal, dan nilai numerik.
 
 ### Bagaimana cara menghapus properti dokumen khusus tertentu?
 

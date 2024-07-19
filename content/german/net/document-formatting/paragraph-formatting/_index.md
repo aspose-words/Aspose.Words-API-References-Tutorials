@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- Wir konfigurieren die`ParagraphFormat`Eigenschaften. Lassen Sie uns aufschlüsseln, was jede Eigenschaft bewirkt:
+Wir konfigurieren die`ParagraphFormat` Eigenschaften. Lassen Sie uns aufschlüsseln, was jede Eigenschaft bewirkt:
 - Ausrichtung: Zentriert den Absatz.
 - LeftIndent: Legt den linken Einzug auf 50 Punkt fest.
 - RightIndent: Legt den rechten Einzug auf 50 Punkte fest.

@@ -2,7 +2,7 @@
 title: Word文件樣式
 linktitle: Word文件樣式
 second_title: Aspose.Words Java 文件處理 API
-description: 了解如何使用 Aspose.Words for Java 設定樣式和處理文件！使用原始程式碼範例創建視覺上令人驚嘆的輸出。
+description: 了解如何使用 Aspose.Words for Java 設計和處理文件！使用原始程式碼範例創建視覺上令人驚嘆的輸出。
 type: docs
 weight: 10
 url: /zh-hant/java/document-styling/word-document-styling/

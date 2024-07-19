@@ -2,7 +2,7 @@
 title: Zaktualizuj dane zakładek w dokumencie programu Word
 linktitle: Zaktualizuj dane zakładek
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Bezproblemowo aktualizuj zawartość dokumentów programu Word za pomocą zakładek i aplikacji Aspose.Words .NET. Ten przewodnik odblokowuje możliwości automatyzacji raportów, personalizowania szablonów i nie tylko.
+description: Bezproblemowo aktualizuj zawartość dokumentów programu Word za pomocą zakładek i programu Aspose.Words .NET. Ten przewodnik odblokowuje możliwości automatyzacji raportów, personalizowania szablonów i nie tylko.
 type: docs
 weight: 10
 url: /pl/net/programming-with-bookmarks/update-bookmark-data/

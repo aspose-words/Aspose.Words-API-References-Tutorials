@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://ejemplo.com/recursos"
 
  Este código crea una instancia de`HtmlSaveOptions` y establece las siguientes opciones:
 
-- `CssStyleSheetType` se establece en`CssStyleSheetType.External`para exportar la hoja de estilos CSS a un archivo externo.
+- `CssStyleSheetType` se establece en`CssStyleSheetType.External` para exportar la hoja de estilos CSS a un archivo externo.
 - `ExportFontResources` se establece en`true` para exportar recursos de fuentes.
 - `ResourceFolder` especifica el directorio de destino donde se guardarán los recursos.
-- `ResourceFolderAlias` especifica el alias de URL que se utilizará para acceder a los recursos.
+- `ResourceFolderAlias`especifica el alias de URL que se utilizará para acceder a los recursos.
 
 ## Paso 4: convertir y guardar el documento a HTML
 

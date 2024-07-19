@@ -98,7 +98,7 @@ Een alinea kan knooppunten bevatten zoals reeksen, vormen, opmerkingen en andere
  Ja, u kunt verschillende knooppunttypen, zoals vormen, opmerkingen en meer, manipuleren door hun aan te vinken`NodeType`.
 
 ### 4. Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
- U kunt beginnen met een gratis proefperiode of een tijdelijke licentie verkrijgen via[hier](https://purchase.aspose.com/temporary-license/).
+ kunt beginnen met een gratis proefperiode of een tijdelijke licentie verkrijgen via[hier](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Waar kan ik meer voorbeelden en documentatie vinden?
  Bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/) voor meer voorbeelden en gedetailleerde documentatie.

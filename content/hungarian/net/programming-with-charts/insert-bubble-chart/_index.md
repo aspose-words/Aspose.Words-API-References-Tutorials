@@ -58,7 +58,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 4. lépés: Helyezze be a buborékdiagramot
 
- Most jön az izgalmas rész – a buborékdiagram beillesztése. Használjuk a`InsertChart` típusdiagram hozzáadásának módja`Bubble` dokumentumunkhoz.
+ Most jön az izgalmas rész – a buborékdiagram beillesztése. Használjuk a`InsertChart` típusdiagram hozzáadásának módszere`Bubble` dokumentumunkhoz.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bubble, 432, 252);

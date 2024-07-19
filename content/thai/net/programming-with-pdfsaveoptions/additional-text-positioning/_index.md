@@ -33,7 +33,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { AdditionalTextPositioning = tr
 
 ## ขั้นตอนที่ 3: แปลงเอกสารเป็น PDF
 
- ใช้`Save` วิธีการแปลงเอกสาร Word เป็น PDF โดยระบุตัวเลือกการแปลง:
+ ใช้`Save` วิธีการแปลงเอกสาร Word เป็น PDF โดยการระบุตัวเลือกการแปลง:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", saveOptions);

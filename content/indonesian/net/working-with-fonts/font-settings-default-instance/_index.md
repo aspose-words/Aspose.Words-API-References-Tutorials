@@ -55,7 +55,7 @@ Dalam contoh ini:
 
 ## Langkah 3: Muat Dokumen
 
- Dengan sumber font Anda dikonfigurasi, langkah selanjutnya adalah memuat dokumen Anda ke dalam Aspose.Words`Document`obyek. Hal ini memungkinkan Anda untuk memanipulasi dan akhirnya menyimpan dokumen.
+ Dengan sumber font Anda dikonfigurasi, langkah selanjutnya adalah memuat dokumen Anda ke dalam Aspose.Words`Document` obyek. Hal ini memungkinkan Anda untuk memanipulasi dan akhirnya menyimpan dokumen.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -77,7 +77,7 @@ Selamat! Anda telah menguasai dasar-dasar mengelola pengaturan font menggunakan 
 
 ## FAQ
 
-### Q1: Bisakah saya menggunakan font dari beberapa folder khusus?
+### Q1: Dapatkah saya menggunakan font dari beberapa folder khusus?
 
  Ya, Anda dapat menentukan beberapa`FolderFontSource` contoh di dalam`SetFontsSources` metode untuk memasukkan font dari folder yang berbeda.
 

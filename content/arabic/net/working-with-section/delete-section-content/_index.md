@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## الخطوة 3: حذف محتوى القسم
-لمسح محتوى القسم، سنستخدم محتوى القسم`ClearContent` طريقة.
+ لمسح محتوى القسم، سنستخدم محتوى القسم`ClearContent` طريقة.
 
 ```csharp
 section.ClearContent();

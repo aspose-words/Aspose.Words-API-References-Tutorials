@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Passaggio 3: creazione di stili per livelli nidificati
 
- Possiamo creare stili per livelli nidificati utilizzando il file`Styles.Add` metodo del`Document` oggetto. In questo esempio, stiamo creando uno stile chiamato "Quote1" per rappresentare un livello di quota nidificato.
+ Possiamo creare stili per livelli nidificati utilizzando il file`Styles.Add` metodo del`Document`oggetto. In questo esempio, stiamo creando uno stile chiamato "Quote1" per rappresentare un livello di quota nidificato.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

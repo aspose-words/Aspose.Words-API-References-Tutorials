@@ -138,7 +138,7 @@ document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
 
 #### س: كيف يمكنني إيقاف تتبع المراجعة في مستند Aspose.Words for .NET؟
 
- ج: لإيقاف تتبع المراجعات في مستند Aspose.Words for .NET، يمكنك استخدام`StopTrackRevisions` طريقة`Document` هدف.
+ ج: لإيقاف تعقب المراجعات في مستند Aspose.Words for .NET، يمكنك استخدام`StopTrackRevisions` طريقة`Document` هدف.
 
 ```csharp
 doc.StopTrackRevisions();

@@ -30,20 +30,20 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // กำหนดเส้นขอบให้ทั้งตาราง
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // ตั้งค่าช่องว่างภายในสำหรับเซลล์นี้
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // ระบุช่องว่างภายในเซลล์อื่นสำหรับเซลล์ที่สอง
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // ล้างการจัดรูปแบบเซลล์จากการดำเนินการก่อนหน้า
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // สร้างเส้นขอบที่หนาขึ้นสำหรับเซลล์แรกในแถวนี้ มันจะแตกต่างออกไป
 // สัมพันธ์กับเส้นขอบที่กำหนดไว้สำหรับตาราง
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 ### ตัวอย่างซอร์สโค้ดสำหรับจัดรูปแบบตารางและเซลล์ที่มีเส้นขอบต่างกันโดยใช้ Aspose.Words สำหรับ .NET 
 
 ```csharp
-	// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//กำหนดเส้นขอบให้ทั้งตาราง
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// ตั้งค่าการแรเงาเซลล์สำหรับเซลล์นี้
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// ระบุการแรเงาเซลล์อื่นสำหรับเซลล์ที่สอง
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// ล้างการจัดรูปแบบเซลล์จากการดำเนินการก่อนหน้า
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// สร้างเส้นขอบให้ใหญ่ขึ้นสำหรับเซลล์แรกของแถวนี้ สิ่งนี้จะแตกต่างออกไป
-	// เมื่อเทียบกับเส้นขอบที่กำหนดไว้สำหรับตาราง
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//กำหนดเส้นขอบให้ทั้งตาราง
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// ตั้งค่าการแรเงาเซลล์สำหรับเซลล์นี้
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// ระบุการแรเงาเซลล์อื่นสำหรับเซลล์ที่สอง
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// ล้างการจัดรูปแบบเซลล์จากการดำเนินการก่อนหน้า
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// สร้างเส้นขอบให้ใหญ่ขึ้นสำหรับเซลล์แรกของแถวนี้ สิ่งนี้จะแตกต่างออกไป
+// เมื่อเทียบกับเส้นขอบที่กำหนดไว้สำหรับตาราง
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## บทสรุป

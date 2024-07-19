@@ -7,7 +7,7 @@ type: docs
 weight: 1610
 url: /nl/net/programming-with-fileformat/
 ---
-De Aspose.Words voor .NET-tutorials over woordenverwerking met het bestandsformaat bieden een uitgebreide bron voor ontwikkelaars die verschillende bestandsformaten in hun toepassingen willen manipuleren en ermee willen werken. De tutorials behandelen verschillende aspecten van tekstverwerking met bestandsformaten, waaronder het lezen, schrijven, converteren en manipuleren van Word-documenten.
+De Aspose.Words voor .NET-tutorials over woordenverwerking met het bestandsformaat bieden een uitgebreide bron voor ontwikkelaars die verschillende bestandsformaten in hun toepassingen willen manipuleren en ermee willen werken. De tutorials behandelen verschillende aspecten van woordenverwerking met bestandsformaten, waaronder het lezen, schrijven, converteren en manipuleren van Word-documenten.
 
 In deze tutorials leert u hoe u de krachtige functies van Aspose.Words voor .NET kunt gebruiken om gegevens uit Word-documenten te extraheren, elementen zoals tekst, afbeeldingen en tabellen toe te voegen en lay-outbewerkingen uit te voeren. geavanceerde vorm en lay-out. U leert ook hoe u documenteigenschappen beheert, zoals metagegevens, kop- en voetteksten en opmerkingen.
 

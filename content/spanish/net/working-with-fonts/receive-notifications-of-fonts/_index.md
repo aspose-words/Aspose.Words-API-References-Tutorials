@@ -9,7 +9,7 @@ url: /es/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Si alguna vez ha tenido problemas con las fuentes que no se representan correctamente en sus documentos, no está solo. Administrar la configuración de fuentes y recibir notificaciones sobre sustituciones de fuentes puede ahorrarle muchos dolores de cabeza. En esta guía completa, exploraremos cómo manejar las notificaciones de fuentes usando Aspose.Words para .NET, asegurando que sus documentos siempre luzcan lo mejor posible.
+Si alguna vez ha tenido problemas con las fuentes que no se muestran correctamente en sus documentos, no está solo. Administrar la configuración de fuentes y recibir notificaciones sobre sustituciones de fuentes puede ahorrarle muchos dolores de cabeza. En esta guía completa, exploraremos cómo manejar las notificaciones de fuentes usando Aspose.Words para .NET, asegurando que sus documentos siempre luzcan lo mejor posible.
 
 ## Requisitos previos
 

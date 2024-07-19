@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## Krok 4: Sprawdź węzeł nadrzędny i dokument właściciela
- Teraz, gdy utworzyliśmy węzeł akapitu, możemy sprawdzić, czy ma on węzeł nadrzędny i czy dokument będący właścicielem jest taki sam jak`doc`.
+Teraz, gdy utworzyliśmy węzeł akapitu, możemy sprawdzić, czy ma on węzeł nadrzędny i czy dokument będący właścicielem jest taki sam jak`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ Odpowiedź: W większości przypadków właściciel dokumentu węzła jest ustal
 
 #### P: Jak uzyskać dostęp do węzłów dokumentu właściciela?
 
- O: Aby uzyskać dostęp do węzłów w zastrzeżonym dokumencie, możesz skorzystać z metod i właściwości udostępnianych przez interfejs API XML używany w środowisku Node.js. Możesz na przykład użyć metod takich jak`getElementsByTagName` Lub`querySelector` aby wybrać określone węzły w dokumencie.
+O: Aby uzyskać dostęp do węzłów w zastrzeżonym dokumencie, możesz skorzystać z metod i właściwości udostępnianych przez interfejs API XML używany w środowisku Node.js. Możesz na przykład użyć metod takich jak`getElementsByTagName` Lub`querySelector` aby wybrać określone węzły w dokumencie.

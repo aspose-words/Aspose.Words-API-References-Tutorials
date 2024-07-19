@@ -88,7 +88,7 @@ il gioco è fatto! Con solo poche righe di codice, hai imparato l'arte di contro
 ## Domande frequenti
 
 ### Cos'è il controllo delle interruzioni di linea in Estremo Oriente?
-Il controllo delle interruzioni di riga dell'Estremo Oriente è un'impostazione che gestisce il modo in cui il testo va a capo nelle lingue asiatiche, garantendo formattazione e leggibilità corrette.
+Il controllo delle interruzioni di riga dell'Estremo Oriente è un'impostazione che gestisce il modo in cui il testo va a capo nelle lingue asiatiche, garantendo formattazione e leggibilità adeguate.
 
 ### Perché dovrei disabilitare la punteggiatura sporgente?
 Disabilitare la punteggiatura sporgente aiuta a mantenere un aspetto pulito e professionale, soprattutto nei documenti con tipografia asiatica.

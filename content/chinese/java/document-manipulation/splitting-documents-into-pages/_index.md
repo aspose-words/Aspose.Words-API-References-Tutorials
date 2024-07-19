@@ -23,7 +23,7 @@ Aspose.Words for Java 是一个 Java 库，允许您以编程方式操作 Word �
 
 ## 3. 设置你的环境
 
-首先，请按如下方式设置您的开发环境：
+首先，按如下方式设置您的开发环境：
 
 - 在您首选的集成开发环境 (IDE) 中创建一个 Java 项目。
 - 将 Aspose.Words for Java 库添加到您的项目中。您可以参考[文档](https://reference.aspose.com/words/java/)了解详细说明。
@@ -681,7 +681,7 @@ private static void removePageBreak(Run run)
 
 ### Aspose.Words for Java 是一个免费的库吗？
 
-不，Aspose.Words for Java 不是免费库。它是一款需要支付许可费的商业产品。您可以访问[Aspose.Words for Java 定价页面](https://purchase.aspose.com/words/java)有关许可和定价细节的更多信息。
+不，Aspose.Words for Java 不是免费库。它是一款需要许可费的商业产品。您可以访问[Aspose.Words for Java 定价页面](https://purchase.aspose.com/words/java)有关许可和定价细节的更多信息。
 
 ### 我可以将文档拆分为自定义页面大小和格式吗？
 

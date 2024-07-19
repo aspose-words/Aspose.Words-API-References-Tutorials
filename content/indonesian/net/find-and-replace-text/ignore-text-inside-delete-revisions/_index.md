@@ -38,7 +38,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Sisipkan Teks dan Lacak Revisi
 
-Anda dapat menyisipkan teks ke dalam dokumen dan melacak revisi dengan memulai dan menghentikan pelacakan revisi:
+Anda dapat memasukkan teks ke dalam dokumen dan melacak revisi dengan memulai dan menghentikan pelacakan revisi:
 ```csharp
 builder.Writeln("Deleted");
 builder.Write("Text");

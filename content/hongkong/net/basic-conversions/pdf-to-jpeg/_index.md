@@ -15,7 +15,7 @@ url: /zh-hant/net/basic-conversions/pdf-to-jpeg/
 
 在我們深入討論實際問題之前，讓我們先確保我們已經把所有的事情都安排好了。這是您需要的：
 
-1.  Aspose.Words for .NET：確保您安裝了這個功能強大的程式庫。如果沒有的話可以下載[這裡](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：確保您安裝了這個功能強大的程式庫。如果沒有的話可以下載[這裡](https://releases.aspose.com/words/net/).
 2. .NET Framework：確保您的電腦上已設定 .NET 環境。
 3. Visual Studio：任何版本都可以，只要您能夠輕鬆地瀏覽它即可。
 4.  PDF 檔案：準備好轉換 PDF 檔案。在本教程中，我們將使用一個名為`Pdf Document.pdf`.
@@ -54,7 +54,7 @@ Install-Package Aspose.Words
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2. 載入 PDF：使用`Document`來自 Aspose.Words 的類別來載入 PDF。
+2. 載入 PDF：使用`Document`Aspose.Words 中的類別來載入 PDF。
 
     ```csharp
     Document doc = new Document(dataDir + "Pdf Document.pdf");

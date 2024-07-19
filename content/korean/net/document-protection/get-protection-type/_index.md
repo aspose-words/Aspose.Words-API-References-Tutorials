@@ -81,7 +81,7 @@ Aspose.Words for .NET은 프로그래밍 방식으로 Word 문서를 생성, 편
 Aspose.Words는 NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments 및 AllowOnlyFormFields와 같은 다양한 보호 유형을 감지할 수 있습니다.
 
 ### 문제가 발생하면 어떻게 지원을 받을 수 있나요?
- 문제가 있는 경우[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도와주기 위해.
+ 문제가 있는 경우[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8)도와주기 위해.
 
 ### Aspose.Words는 .NET Core와 호환됩니까?
 예, Aspose.Words는 .NET Framework 및 .NET Core와 모두 호환됩니다.

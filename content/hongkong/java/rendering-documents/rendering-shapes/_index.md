@@ -51,7 +51,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ## 6. 自訂渲染
 
-您可以根據您的具體要求進一步自訂渲染。您可以調整比例、品質等參數。
+您可以根據您的特定要求進一步自訂渲染。您可以調整比例、品質等參數。
 
 ## 7. 儲存渲染影像
 

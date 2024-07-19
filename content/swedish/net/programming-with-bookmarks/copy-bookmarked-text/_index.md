@@ -9,7 +9,7 @@ url: /sv/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 ## Introduktion
 
-Har du någonsin funnit dig själv behöva kopiera specifika avsnitt från ett Word-dokument till ett annat? Nåväl, du har tur! I den här handledningen går vi igenom hur du kopierar bokmärkt text från ett Word-dokument till ett annat med Aspose.Words för .NET. Oavsett om du bygger en dynamisk rapport eller automatiserar dokumentgenerering, kommer den här guiden att förenkla processen för dig.
+Har du någonsin funnit dig själv behöva kopiera specifika avsnitt från ett Word-dokument till ett annat? Tja, du har tur! I den här handledningen går vi igenom hur du kopierar bokmärkt text från ett Word-dokument till ett annat med Aspose.Words för .NET. Oavsett om du bygger en dynamisk rapport eller automatiserar dokumentgenerering, kommer den här guiden att förenkla processen för dig.
 
 ## Förutsättningar
 
@@ -70,7 +70,7 @@ AppendBookmarkedText(importer, srcBookmark, dstNode);
 
 ## Steg 5: Definiera metoden AppendBookmarkedText
 
-Här händer magin. Definiera en metod för att hantera kopieringen av den bokmärkta texten:
+Det är här magin händer. Definiera en metod för att hantera kopieringen av den bokmärkta texten:
 
 ```csharp
 private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)

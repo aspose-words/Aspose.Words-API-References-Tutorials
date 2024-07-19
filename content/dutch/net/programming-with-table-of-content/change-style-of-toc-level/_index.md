@@ -31,7 +31,7 @@ Zodra het document is gemaakt, hebt u toegang tot documentstijlen en kunt u de s
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-In dit voorbeeld gebruiken we de eigenschap Styles van de klasse Document om toegang te krijgen tot documentstijlen. Vervolgens gebruiken we de StyleIdentifier.Toc1 stijl-ID om toegang te krijgen tot de stijl die wordt gebruikt voor het eerste niveau van de inhoudsopgave. Ten slotte wijzigen we de eigenschap Font.Bold van de stijl om deze vet te maken.
+In dit voorbeeld gebruiken we de eigenschap Styles van de klasse Document om toegang te krijgen tot documentstijlen. Vervolgens gebruiken we de StyleIdentifier.Toc1 stijl-ID om toegang te krijgen tot de stijl die wordt gebruikt voor het eerste niveau van de inhoudsopgave. Ten slotte wijzigen we de eigenschap Font.Bold van de stijl om deze vetgedrukt te maken.
 
 ## Bewaar het gewijzigde document
 

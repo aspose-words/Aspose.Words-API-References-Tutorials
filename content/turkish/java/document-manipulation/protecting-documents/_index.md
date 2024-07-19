@@ -12,7 +12,7 @@ url: /tr/java/document-manipulation/protecting-documents/
 
 Belge koruması, hassas bilgilerle uğraşırken hayati bir özelliktir. Aspose.Words for Java, belgelerinizi yetkisiz erişime karşı korumak için güçlü özellikler sağlar.
 
-## Belgeleri Parolalarla Koruma
+## Belgeleri Şifrelerle Korumak
 
 Belgelerinizi korumak için bir şifre belirleyebilirsiniz. Belgeye yalnızca şifreyi bilen kullanıcılar erişebilir. Bunu kodda nasıl yapacağımızı görelim:
 

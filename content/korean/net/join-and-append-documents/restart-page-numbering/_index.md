@@ -35,9 +35,9 @@ using Aspose.Words.Settings;
 
 ## 1단계: 소스 및 대상 문서 로드:
 
-문자열 변수 정의`dataDir` 문서 디렉토리의 경로를 저장합니다. "YOUR DOCUMENT DIRECTORY"를 실제 위치로 바꾸십시오.
+ 문자열 변수 정의`dataDir` 문서 디렉토리의 경로를 저장합니다. "YOUR DOCUMENT DIRECTORY"를 실제 위치로 바꾸십시오.
 
- 2개 생성`Document` 를 사용하는 객체`Aspose.Words.Document` 건설자. 첫번째 (`srcDoc`)에는 추가할 콘텐츠가 포함된 소스 문서가 보관됩니다. 두번째 (`dstDoc`)는 다시 시작된 페이지 번호 매기기와 함께 소스 콘텐츠를 통합할 대상 문서를 나타냅니다.
+ 2개 생성`Document` 를 사용하는 객체`Aspose.Words.Document`건설자. 첫번째 (`srcDoc`)에는 추가할 콘텐츠가 포함된 소스 문서가 보관됩니다. 두번째 (`dstDoc`)는 다시 시작된 페이지 번호 매기기와 함께 소스 콘텐츠를 통합할 대상 문서를 나타냅니다.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // 실제 디렉터리로 바꾸세요.
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## 3단계: 페이지 번호 매기기 다시 시작 활성화:
 
- 같은 것 안에서`PageSetup` 소스 문서의 첫 번째 섹션 개체를 설정합니다.`RestartPageNumbering`재산`true`이 중요한 단계는 Aspose.Words가 추가된 콘텐츠에 대해 페이지 번호 매기기를 새로 시작하도록 지시합니다.
+ 같은 것 안에서`PageSetup` 소스 문서의 첫 번째 섹션 개체를 설정합니다.`RestartPageNumbering`재산`true`. 이 중요한 단계는 Aspose.Words가 추가된 콘텐츠에 대해 페이지 번호 매기기를 새로 시작하도록 지시합니다.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

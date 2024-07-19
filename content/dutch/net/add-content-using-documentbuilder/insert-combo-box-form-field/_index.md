@@ -89,7 +89,7 @@ In deze regel:
 - `items` is de array met items die we eerder hebben gedefinieerd.
 - `0`is de index van het standaard geselecteerde item (in dit geval 'Eén').
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Laten we tot slot ons document opslaan. Met deze stap worden alle wijzigingen naar een nieuw Word-bestand geschreven.
 

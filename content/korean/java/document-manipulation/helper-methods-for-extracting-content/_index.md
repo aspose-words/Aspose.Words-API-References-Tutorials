@@ -1,5 +1,5 @@
 ---
-title: Aspose.Words for Java에서 콘텐츠를 추출하기 위한 도우미 방법
+title: Aspose.Words for Java에서 콘텐츠를 추출하기 위한 도우미 메서드
 linktitle: 콘텐츠 추출을 위한 도우미 메서드
 second_title: Aspose.Words Java 문서 처리 API
 description: Aspose.Words for Java를 사용하여 Word 문서에서 콘텐츠를 효율적으로 추출하는 방법을 알아보세요. 이 종합 가이드에서 도우미 메서드, 사용자 정의 형식 등을 살펴보세요.

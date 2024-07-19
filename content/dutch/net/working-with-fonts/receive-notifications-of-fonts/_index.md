@@ -87,7 +87,7 @@ doc.WarningCallback = callback;
 doc.FontSettings = fontSettings;
 ```
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Sla ten slotte het document op nadat u de lettertype-instellingen hebt toegepast en eventuele lettertypevervangingen hebt afgehandeld. Bewaar het in een formaat naar keuze; hier slaan we het op als PDF.
 

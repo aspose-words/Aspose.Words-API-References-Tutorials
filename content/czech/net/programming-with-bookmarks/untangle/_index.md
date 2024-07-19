@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
- tomto kroku používáme`GetAncestor` metoda k nalezení nadřazeného řádku jak počátečního, tak koncového uzlu záložky. To nám pomáhá přesně určit příslušné řádky.
+ V tomto kroku používáme`GetAncestor` metoda k nalezení nadřazeného řádku jak počátečního, tak koncového uzlu záložky. To nám pomáhá přesně určit příslušné řádky.
 
 ## Krok 4: Zkontrolujte sousedící řádky
 
@@ -93,7 +93,7 @@ Krok 5 Nadpis: Přesunutí konce záložky
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
- tomto kroku používáme`AppendChild`metoda přesunutí koncového uzlu záložky. Jeho připojením k poslednímu odstavci poslední buňky horního řádku zajistíme, že je záložka správně rozmotaná.
+ V tomto kroku používáme`AppendChild` metoda přesunutí koncového uzlu záložky. Jeho připojením k poslednímu odstavci poslední buňky horního řádku zajistíme, že je záložka správně rozmotaná.
 
 ## Závěr
 

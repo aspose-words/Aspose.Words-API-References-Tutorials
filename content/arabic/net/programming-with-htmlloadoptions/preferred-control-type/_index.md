@@ -87,8 +87,8 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 #### س: كيف يمكنني التأكد من أن Aspose.Words يستخدم نوع التحكم المفضل عند تحميل مستند HTML؟
 
- ج: من خلال تحديد`PreferredControlType`الملكية ل`HtmlControlType.StructuredDocumentTag`كما هو موضح في مثال الكود المصدري، سوف يستخدم Aspose.Words SDTs لتمثيل عناصر HTML عند تحميل المستند.
+ ج: من خلال تحديد`PreferredControlType`الملكية ل`HtmlControlType.StructuredDocumentTag`كما هو موضح في مثال التعليمات البرمجية المصدر، سوف يستخدم Aspose.Words SDTs لتمثيل عناصر HTML عند تحميل المستند.
 
 #### س: هل يمكنني استخدام أنواع التحكم الأخرى كخيار مفضل؟
 
- ج: نعم، فيما عدا ذلك`HtmlControlType.StructuredDocumentTag` ، Aspose.Words for .NET يدعم أنواع التحكم الأخرى مثل`HtmlControlType.ContentControl`و`HtmlControlType.CustomXmlMarkup`.
+ ج: نعم، فيما عدا ذلك`HtmlControlType.StructuredDocumentTag` يدعم Aspose.Words for .NET أنواع التحكم الأخرى مثل`HtmlControlType.ContentControl`و`HtmlControlType.CustomXmlMarkup`.

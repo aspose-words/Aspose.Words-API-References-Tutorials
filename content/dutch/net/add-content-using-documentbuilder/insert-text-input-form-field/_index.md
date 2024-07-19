@@ -69,7 +69,7 @@ builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 - Waarde: "Hallo" - De initiële waarde van het formulierveld.
 - Maximale lengte: 0 - Dit stelt geen limiet aan de lengte van de invoer.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Ten slotte moeten we het document in de opgegeven map opslaan. Hierdoor wordt een .docx-bestand gemaakt met het ingevoegde tekstinvoerformulierveld.
 

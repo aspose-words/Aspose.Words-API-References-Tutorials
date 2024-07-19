@@ -15,10 +15,10 @@ Ehilà! Ti sei mai chiesto come proteggere i tuoi documenti Word da modifiche in
 
 Prima di addentrarci nel nocciolo della questione della protezione tramite password dei tuoi documenti Word, ci sono alcune cose di cui avrai bisogno:
 
-1. Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words per .NET. Puoi[scaricalo qui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words per .NET. Puoi[scaricalo qui](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: Visual Studio o qualsiasi altro ambiente di sviluppo C#.
 3. Conoscenza di base di C#: una comprensione fondamentale della programmazione C#.
-4.  Licenza Aspose: ottieni una licenza da[Qui](https://purchase.aspose.com/buy) oppure usa a[licenza temporanea](https://purchase.aspose.com/temporary-license/) Per la valutazione.
+4.  Licenza Aspose: ottieni una licenza da[Qui](https://purchase.aspose.com/buy)oppure usa a[licenza temporanea](https://purchase.aspose.com/temporary-license/) Per la valutazione.
 
 ## Importa spazi dei nomi
 

@@ -121,7 +121,7 @@ Bạn có thể tùy chỉnh thêm biểu đồ của mình bằng cách điều
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã khám phá cách làm việc với biểu đồ bằng Aspose.Words cho Java. Bạn đã học cách tạo nhiều loại biểu đồ khác nhau, tùy chỉnh thuộc tính trục, định dạng nhãn dữ liệu, v.v. Aspose.Words for Java cung cấp các công cụ mạnh mẽ để thêm cách trình bày dữ liệu trực quan vào tài liệu của bạn, nâng cao cách bạn trình bày thông tin.
+Trong hướng dẫn này, chúng ta đã khám phá cách làm việc với biểu đồ bằng Aspose.Words cho Java. Bạn đã học cách tạo nhiều loại biểu đồ, tùy chỉnh thuộc tính trục, định dạng nhãn dữ liệu, v.v. Aspose.Words for Java cung cấp các công cụ mạnh mẽ để thêm cách trình bày dữ liệu trực quan vào tài liệu của bạn, nâng cao cách bạn trình bày thông tin.
 
 ## Câu hỏi thường gặp
 

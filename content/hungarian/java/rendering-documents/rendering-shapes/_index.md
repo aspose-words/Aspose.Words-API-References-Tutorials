@@ -95,7 +95,7 @@ Igen, az Aspose.Words for Java a dokumentumformátumok széles skáláját támo
 
  Biztosan! Hozzáférhet az Aspose.Words for Java ingyenes próbaverziójához a[Aspose.Releases](https://releases.aspose.com/).
 
-### 5. kérdés: Hol kérhetek támogatást, vagy hol tehetek fel kérdéseket az Aspose.Words for Java programmal kapcsolatban?
+### 5. kérdés: Hol kérhetek támogatást, vagy hol tehetek fel kérdéseket az Aspose.Words for Java-val kapcsolatban?
 
  Ha kérdése vagy támogatása van, keresse fel a[Aspose.Words for Java fórum](https://forum.aspose.com/).
 

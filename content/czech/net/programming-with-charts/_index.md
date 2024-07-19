@@ -9,7 +9,7 @@ url: /cs/net/programming-with-charts/
 ---
 Výukové programy programování grafiky Aspose.Words for .NET nabízejí komplexní zdroj pro výuku, jak vytvářet a manipulovat s grafikou v dokumentech aplikace Word. Výukové programy vás provedou kroky pro přidávání grafů, přizpůsobení jejich vzhledu, úpravy dat a další. Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy vám pomohou zvládnout grafické funkce v Aspose.Words.
 
-V těchto výukových programech se naučíte vytvářet různé typy grafů, jako jsou sloupcové grafy, koláčové grafy, plošné grafy, spojnicové grafy atd. Dozvíte se také, jak přizpůsobit prvky grafu, jako jsou nadpisy, legendy, popisky dat a sekery. Výukové programy vám ukážou, jak manipulovat s daty grafu přidáním, úpravou nebo odstraněním datových řad.
+těchto výukových programech se naučíte vytvářet různé typy grafů, jako jsou sloupcové grafy, koláčové grafy, plošné grafy, spojnicové grafy atd. Dozvíte se také, jak přizpůsobit prvky grafu, jako jsou nadpisy, legendy, popisky dat a sekery. Výukové programy vám ukážou, jak manipulovat s daty grafu přidáním, úpravou nebo odstraněním datových řad.
 
 Pomocí těchto výukových programů budete moci vylepšit své dokumenty Word přidáním vizuálně přitažlivé a informativní grafiky. Naučíte se, jak využít pokročilé grafické funkce v Aspose.Words pro .NET a efektivně je integrovat do vašich aplikací. Prozkoumejte tyto výukové programy a rozšiřte své grafické dovednosti v Aspose.Words.
 
@@ -32,5 +32,5 @@ Pomocí těchto výukových programů budete moci vylepšit své dokumenty Word 
 | [Zaškrtněte Zarovnání štítků s více řádky v grafu](./tick-multi-line-label-alignment/) | Naučte se, jak zaškrtnout víceřádkové zarovnání štítků v grafu pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro vývojáře všech úrovní. |
 | [Přizpůsobit štítek dat grafu](./chart-data-label/) | Naučte se, jak přizpůsobit štítky dat grafu pomocí Aspose.Words for .NET v podrobném průvodci. Ideální pro .NET vývojáře. |
 | [Nastavit výchozí možnosti pro štítky dat v grafu](./default-options-for-data-labels/) | Přečtěte si, jak nastavit výchozí možnosti pro popisky dat v grafu pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce a vytvořte a přizpůsobte grafy bez námahy. |
-| [Přizpůsobte jeden datový bod grafu v grafu](./single-chart-data-point/) | V podrobném podrobném průvodci se dozvíte, jak upravit jednotlivé datové body grafu pomocí Aspose.Words for .NET. Vylepšete své grafy jedinečnými značkami a velikostmi. |
+| [Přizpůsobte jeden datový bod grafu v grafu](./single-chart-data-point/) | podrobném podrobném průvodci se dozvíte, jak upravit jednotlivé datové body grafu pomocí Aspose.Words for .NET. Vylepšete své grafy jedinečnými značkami a velikostmi. |
 | [Přizpůsobte jednu sérii grafů v grafu](./single-chart-series/) | Naučte se, jak přizpůsobit jednotlivé řady grafů v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémový zážitek. |

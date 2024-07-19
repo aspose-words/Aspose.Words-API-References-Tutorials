@@ -62,7 +62,7 @@ Questo conclude la nostra guida sull'utilizzo della funzione "Ottieni nomi campi
 
 #### Q1: Cos'è la stampa unione in Aspose.Words?
 
-La stampa unione in Aspose.Words è un processo per unire i dati da una fonte esterna (ad esempio, un foglio di calcolo Excel o un database) con un modello di documento Word per creare documenti personalizzati. Ciò facilita la generazione automatizzata di lettere, rapporti e altri documenti simili.
+La stampa unione in Aspose.Words è un processo per unire dati da una fonte esterna (ad esempio foglio di calcolo Excel o database) con un modello di documento Word per creare documenti personalizzati. Ciò facilita la generazione automatizzata di lettere, rapporti e altri documenti simili.
 
 #### Q2: Come posso ottenere l'elenco dei campi di stampa unione disponibili in un documento di Word?
 

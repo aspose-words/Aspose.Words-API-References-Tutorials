@@ -7,7 +7,7 @@ type: docs
 weight: 1570
 url: /vi/net/programming-with-watermark/
 ---
-Xử lý từ có hình mờ là một tài nguyên toàn diện hướng dẫn bạn thực hiện quy trình Xử lý từ có hình mờ trong tài liệu Word bằng thư viện Aspose.Words cho .NET. Các hướng dẫn cung cấp giải thích từng bước, mã nguồn chi tiết và các ví dụ thực tế để thêm, tùy chỉnh và quản lý hình mờ trong tài liệu Word của bạn. Bạn sẽ tìm hiểu cách thêm văn bản, hình ảnh, hình dạng hoặc đồ họa làm hình mờ, điều chỉnh vị trí và giao diện của chúng cũng như các tùy chọn nâng cao như thêm hình mờ tùy chỉnh bằng cách sử dụng các trường. Tài nguyên này rất cần thiết cho các nhà phát triển muốn tự động hóa việc quản lý hình mờ trong tài liệu Word của họ bằng Aspose.Words for .NET.
+Xử lý văn bản có hình mờ là một tài nguyên toàn diện hướng dẫn bạn thực hiện quy trình Xử lý văn bản có hình mờ trong tài liệu Word bằng thư viện Aspose.Words cho .NET. Các hướng dẫn cung cấp giải thích từng bước, mã nguồn chi tiết và các ví dụ thực tế để thêm, tùy chỉnh và quản lý hình mờ trong tài liệu Word của bạn. Bạn sẽ tìm hiểu cách thêm văn bản, hình ảnh, hình dạng hoặc đồ họa làm hình mờ, điều chỉnh vị trí và giao diện của chúng cũng như các tùy chọn nâng cao như thêm hình mờ tùy chỉnh bằng cách sử dụng các trường. Tài nguyên này rất cần thiết cho các nhà phát triển muốn tự động hóa việc quản lý hình mờ trong tài liệu Word của họ bằng Aspose.Words for .NET.
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |

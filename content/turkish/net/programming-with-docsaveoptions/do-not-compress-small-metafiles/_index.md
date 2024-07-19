@@ -94,7 +94,7 @@ Evet, Aspose.Words for .NET, çeşitli dosya formatları için kaydetme seçenek
 
 ### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
 
- Aspose.Words for .NET'i değerlendirme lisansı olmadan kullanabilirsiniz ancak tam işlevsellikten yararlanmak için bir lisans gereklidir. Lisans alabilirsiniz[Burada](https://purchase.aspose.com/buy) veya bir kullanın[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+ Aspose.Words for .NET'i değerlendirme lisansı olmadan kullanabilirsiniz ancak tam işlevsellikten yararlanmak için bir lisans gereklidir. Lisans alabilirsiniz[Burada](https://purchase.aspose.com/buy)veya bir kullanın[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
 
 ### Belgelerimin PDF/A standartlarıyla uyumlu olmasını nasıl sağlayabilirim?
 

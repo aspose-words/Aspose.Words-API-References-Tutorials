@@ -113,7 +113,7 @@ Wyjaśnienie:
 
 ## Wniosek
 
-Dostęp i manipulowanie zakładkami w dokumencie programu Word za pomocą Aspose.Words dla .NET to prosty proces, który może znacznie zwiększyć możliwości przetwarzania dokumentów. Wykonując czynności opisane w tym przewodniku, możesz bez wysiłku ładować dokumenty, uzyskiwać dostęp do zakładek według indeksu lub nazwy, manipulować zawartością zakładek, dodawać nowe zakładki i zapisywać zmiany. Niezależnie od tego, czy automatyzujesz raporty, generujesz dynamiczne dokumenty, czy po prostu potrzebujesz niezawodnego sposobu obsługi zakładek, Aspose.Words dla .NET jest dla Ciebie rozwiązaniem.
+Dostęp do zakładek i manipulowanie nimi w dokumencie programu Word za pomocą Aspose.Words dla .NET to prosty proces, który może znacznie zwiększyć możliwości przetwarzania dokumentów. Wykonując czynności opisane w tym przewodniku, możesz bez wysiłku ładować dokumenty, uzyskiwać dostęp do zakładek według indeksu lub nazwy, manipulować zawartością zakładek, dodawać nowe zakładki i zapisywać zmiany. Niezależnie od tego, czy automatyzujesz raporty, generujesz dynamiczne dokumenty, czy po prostu potrzebujesz niezawodnego sposobu obsługi zakładek, Aspose.Words dla .NET jest dla Ciebie rozwiązaniem.
 
 ## Często zadawane pytania
 

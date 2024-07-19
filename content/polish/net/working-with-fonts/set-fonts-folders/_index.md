@@ -74,7 +74,7 @@ Odp.: Jeśli w dokumencie programu Word brakuje wymaganych czcionek, Aspose.Word
 
 #### P: Jak mogę usunąć niestandardowe czcionki z dokumentu Word za pomocą Aspose.Words?
 
-Odp.: Aby usunąć niestandardowe czcionki z dokumentu programu Word za pomocą Aspose.Words, możesz użyć interfejsu API do oczyszczenia dokumentu i usunięcia niestandardowych czcionek, które nie są już potrzebne. Zmniejszy to rozmiar pliku i ułatwi zarządzanie czcionkami.
+Odp.: Aby usunąć niestandardowe czcionki z dokumentu programu Word za pomocą Aspose.Words, możesz użyć interfejsu API w celu oczyszczenia dokumentu i usunięcia niestandardowych czcionek, które nie są już potrzebne. Zmniejszy to rozmiar pliku i ułatwi zarządzanie czcionkami.
 
 #### P: Czy ważne jest skonfigurowanie folderów czcionek w dokumencie programu Word?
 

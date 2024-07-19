@@ -81,7 +81,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép bạn tạo, c
 Aspose.Words có thể phát hiện nhiều loại bảo vệ khác nhau như NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments và AllowOnlyFormFields.
 
 ### Làm cách nào tôi có thể nhận được hỗ trợ nếu gặp sự cố?
- Đối với bất kỳ vấn đề, bạn có thể truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được giúp đỡ.
+ Đối với bất kỳ vấn đề, bạn có thể truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8)để được giúp đỡ.
 
 ### Aspose.Words có tương thích với .NET Core không?
 Có, Aspose.Words tương thích với cả .NET Framework và .NET Core.

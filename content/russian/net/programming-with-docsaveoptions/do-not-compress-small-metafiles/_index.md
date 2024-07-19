@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 
 ### Нужна ли мне лицензия для использования Aspose.Words для .NET?
 
- Хотя вы можете использовать Aspose.Words for .NET без оценочной лицензии, для разблокировки всех функций требуется лицензия. Вы можете получить лицензию[здесь](https://purchase.aspose.com/buy) или используйте[временная лицензия](https://purchase.aspose.com/temporary-license/) для оценки.
+ Хотя вы можете использовать Aspose.Words for .NET без оценочной лицензии, для разблокировки всех функций требуется лицензия. Вы можете получить лицензию[здесь](https://purchase.aspose.com/buy)или используйте[временная лицензия](https://purchase.aspose.com/temporary-license/) для оценки.
 
 ### Как я могу гарантировать, что мои документы соответствуют стандартам PDF/A?
 

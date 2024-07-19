@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
  Ez a kód létrehozza a`Document` a dokumentum betöltésével a megadott könyvtárból.
 
-## 3. lépés: HTML biztonsági mentési beállítások konfigurálása
+## 3. lépés: A HTML biztonsági mentési beállítások konfigurálása
 
 Most konfiguráljuk a HTML mentési beállításokat a dokumentum erőforrások exportálásához. Használja a következő kódot:
 
@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://example.com/resources"
 
  Ez a kód létrehozza a`HtmlSaveOptions` és a következő beállításokat állítja be:
 
-- `CssStyleSheetType` be van állítva`CssStyleSheetType.External` CSS-stíluslap exportálásához külső fájlba.
+- `CssStyleSheetType` be van állítva`CssStyleSheetType.External` a CSS-stíluslap exportálásához külső fájlba.
 - `ExportFontResources` be van állítva`true` font erőforrások exportálásához.
 - `ResourceFolder` megadja a célkönyvtárat, ahová az erőforrásokat menteni kell.
-- `ResourceFolderAlias` Az erőforrásokhoz való hozzáféréshez használt URL-álnevet adja meg.
+- `ResourceFolderAlias`Az erőforrásokhoz való hozzáféréshez használt URL-álnevet adja meg.
 
 ## 4. lépés: A dokumentum konvertálása és mentése HTML formátumba
 

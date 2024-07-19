@@ -51,8 +51,8 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng liê
 
 #### Câu hỏi: Làm cách nào tôi có thể tùy chỉnh văn bản hiển thị của liên kết trong Aspose.Words?
 
-Trả lời: Để tùy chỉnh văn bản hiển thị của một liên kết trong Aspose.Words, bạn có thể sửa đổi nội dung giữa`<a>` thẻ. Ví dụ,`<a href="https://www.aspose.com">Click here</a>` sẽ hiển thị dòng chữ "Click here" dưới dạng siêu liên kết.
+ Trả lời: Để tùy chỉnh văn bản hiển thị của một liên kết trong Aspose.Words, bạn có thể sửa đổi nội dung giữa`<a>` thẻ. Ví dụ,`<a href="https://www.aspose.com">Click here</a>` sẽ hiển thị dòng chữ "Click here" dưới dạng siêu liên kết.
 
 #### Câu hỏi: Tôi có thể chỉ định mục tiêu cho liên kết trong Aspose.Words không?
 
- Trả lời: Có, bạn có thể chỉ định mục tiêu cho liên kết trong Aspose.Words bằng cách sử dụng`target` thuộc tính của`<a>` nhãn. Ví dụ,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` sẽ mở liên kết trong một cửa sổ hoặc tab mới.
+Trả lời: Có, bạn có thể chỉ định mục tiêu cho liên kết trong Aspose.Words bằng cách sử dụng`target` thuộc tính của`<a>` nhãn. Ví dụ,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` sẽ mở liên kết trong một cửa sổ hoặc tab mới.

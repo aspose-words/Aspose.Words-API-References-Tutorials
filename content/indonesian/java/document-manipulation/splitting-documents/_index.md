@@ -56,7 +56,7 @@ for (int page = 0; page < pageCount; page++)
 Setelah memisahkan dokumen, Anda mungkin ingin menggabungkan kembali bagian-bagian yang terpisah. Berikut cara menggabungkan beberapa dokumen menjadi satu dokumen menggunakan Aspose.Words untuk Java.
 
 ```java
-// Kode Java untuk menggabungkan dokumen terpisah menggunakan Aspose.Words untuk Java
+// Kode Java untuk menggabungkan dokumen terpisah menggunakan Aspose.Words for Java
 File directory = new File("Your Directory Path");
 Collection<File> documentPaths = FileUtils.listFiles(directory, new WildcardFileFilter("SplitDocument.PageByPage_*.docx"), null);
 String sourceDocumentPath = FileUtils.getFile("Your Directory Path", "SplitDocument.PageByPage_1.docx").getPath();
@@ -108,7 +108,7 @@ Ya, Aspose.Words untuk Java sangat cocok untuk bekerja dengan dokumen berukuran 
 
 ### Bisakah saya menggabungkan kembali dokumen yang terpisah dengan Aspose.Words untuk Java?
 
-Sangat. Aspose.Words untuk Java memungkinkan Anda menggabungkan dokumen terpisah dengan lancar, memastikan Anda dapat bekerja dengan bagian individual dan keseluruhan dokumen sesuai kebutuhan.
+Sangat. Aspose.Words untuk Java memungkinkan Anda menggabungkan dokumen terpisah dengan mulus, memastikan Anda dapat bekerja dengan bagian individual dan keseluruhan dokumen sesuai kebutuhan.
 
 ### Di mana saya dapat mengakses Aspose.Words untuk Java dan mulai menggunakannya?
 

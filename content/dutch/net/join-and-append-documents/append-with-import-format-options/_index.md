@@ -86,7 +86,7 @@ Boom! U hebt met succes twee Word-documenten samengevoegd terwijl de opmaak inta
 
 ## Conclusie
 
-En daar heb je het! Door deze stappen te volgen, kunt u moeiteloos documenten toevoegen met Aspose.Words voor .NET zonder de opmaak te verliezen. Of u nu een ontwikkelaar bent die het documentbeheer wil stroomlijnen of gewoon iemand bent die van georganiseerde documenten houdt, deze handleiding heeft de oplossing voor u. Veel codeerplezier!
+En daar heb je het! Door deze stappen te volgen, kunt u moeiteloos documenten toevoegen met Aspose.Words voor .NET zonder de opmaak te verliezen. Of u nu een ontwikkelaar bent die documentbeheer wil stroomlijnen of gewoon iemand bent die van georganiseerde documenten houdt, deze handleiding heeft de oplossing voor u. Veel codeerplezier!
 
 ## Veelgestelde vragen
 

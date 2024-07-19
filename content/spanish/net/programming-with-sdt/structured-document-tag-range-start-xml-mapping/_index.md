@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-sdt/structured-document-tag-range-start-xml-mapping/
 ---
 
-Este tutorial explica cómo configurar la asignación XML para un inicio de rango de etiquetas de documento estructurado en un documento de Word usando Aspose.Words para .NET. El mapeo XML le permite mostrar partes específicas de una fuente de datos XML dentro del control de contenido.
+Este tutorial explica cómo configurar la asignación XML para un rango de etiquetas de documento estructurado que comienza en un documento de Word usando Aspose.Words para .NET. El mapeo XML le permite mostrar partes específicas de una fuente de datos XML dentro del control de contenido.
 
 ## Requisitos previos
 Para seguir este tutorial, necesita tener lo siguiente:

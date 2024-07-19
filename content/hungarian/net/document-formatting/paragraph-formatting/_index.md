@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- Beállítjuk a`ParagraphFormat`tulajdonságait. Nézzük meg, mit csinálnak az egyes tulajdonságok:
+Beállítjuk a`ParagraphFormat` tulajdonságait. Nézzük meg, mit csinálnak az egyes tulajdonságok:
 - Igazítás: Középre helyezi a bekezdést.
 - LeftIndent: A bal behúzást 50 pontra állítja.
 - RightIndent: A jobb oldali behúzást 50 pontra állítja.

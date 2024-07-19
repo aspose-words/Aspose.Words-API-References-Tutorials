@@ -101,6 +101,6 @@ A: Um festzustellen, ob sich ein Textfeld in der Mitte der Sequenz befindet, mü
 
 A: Um zu prüfen, ob ein Textfeld das Ende der Sequenz ist, können Sie prüfen, ob es kein nächstes Formular hat (`Next`), hat aber eine vorherige Form (`Previous`). Wenn ja, bedeutet dies, dass dies das Ende der Sequenz ist.
 
-#### F: Können wir die Sequenz von anderen Elementen als Textfeldern überprüfen?
+#### F: Können wir die Sequenz von anderen Elementen als Textfeldern prüfen?
 
 A: Ja, mit der Aspose.Words-Bibliothek für .NET ist es möglich, die Reihenfolge anderer Elemente wie Absätze, Tabellen, Bilder usw. zu überprüfen. Der Vorgang variiert je nach dem spezifischen Element, das Sie überprüfen möchten.

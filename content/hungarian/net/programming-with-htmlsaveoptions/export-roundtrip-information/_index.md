@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
  Ez a kód létrehozza a`Document` a dokumentum betöltésével a megadott könyvtárból.
 
-## 3. lépés: HTML biztonsági mentési beállítások konfigurálása
+## 3. lépés: A HTML biztonsági mentési beállítások konfigurálása
 
 Most konfiguráljuk a HTML mentési beállításokat a dokumentum körútinformációinak exportálására. Használja a következő kódot:
 
@@ -33,7 +33,7 @@ Most konfiguráljuk a HTML mentési beállításokat a dokumentum körútinform�
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Ez a kód létrehozza a`HtmlSaveOptions`és beállítja a`ExportRoundtripInformation` opciót`true` hogy exportáláskor tartalmazza az oda-vissza útra vonatkozó információkat.
+ Ez a kód létrehozza a`HtmlSaveOptions` és beállítja a`ExportRoundtripInformation` opciót`true` hogy exportáláskor tartalmazza az oda-vissza útra vonatkozó információkat.
 
 ## 4. lépés: A dokumentum konvertálása és mentése HTML formátumba
 

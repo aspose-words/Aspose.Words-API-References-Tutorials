@@ -98,7 +98,7 @@ Sau khi thao tác các phần, đã đến lúc lưu tài liệu của chúng ta
 doc.Save("output.docx");
 ```
 
-Ở đây, chúng tôi lưu tài liệu dưới dạng "output.docx". Bạn có thể mở tệp này trong Microsoft Word để xem các thay đổi.
+Ở đây, chúng tôi lưu tài liệu dưới dạng "output.docx". Bạn có thể mở tệp này trong Microsoft Word để xem những thay đổi.
 
 ## Phần kết luận
 

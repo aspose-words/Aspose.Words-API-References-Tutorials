@@ -104,7 +104,7 @@ series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 
 ## Steg 7: Spara dokumentet
 
-Slutligen sparar du dokumentet i den angivna katalogen.
+Slutligen, spara dokumentet i den angivna katalogen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");

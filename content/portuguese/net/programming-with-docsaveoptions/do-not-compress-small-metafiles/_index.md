@@ -94,7 +94,7 @@ Sim, o Aspose.Words for .NET permite configurar opções de salvamento para dive
 
 ### Preciso de uma licença para usar o Aspose.Words for .NET?
 
- Embora você possa usar o Aspose.Words for .NET sem uma licença para avaliação, é necessária uma licença para desbloquear a funcionalidade completa. Você pode obter uma licença[aqui](https://purchase.aspose.com/buy) ou use um[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
+ Embora você possa usar o Aspose.Words for .NET sem uma licença para avaliação, é necessária uma licença para desbloquear a funcionalidade completa. Você pode obter uma licença[aqui](https://purchase.aspose.com/buy)ou use um[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
 
 ### Como posso garantir que meus documentos estejam em conformidade com os padrões PDF/A?
 

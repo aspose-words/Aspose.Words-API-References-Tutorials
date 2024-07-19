@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Bước 2: Phát hiện chữ ký số
 
- Tiếp theo, chúng tôi sử dụng`DetectFileFormat` phương pháp của`FileFormatUtil` class để phát hiện thông tin định dạng tệp. Trong ví dụ này, chúng tôi giả sử tài liệu có tên là "Được ký điện tử.docx" và nằm trong thư mục tài liệu được chỉ định.
+ Tiếp theo, chúng tôi sử dụng`DetectFileFormat` phương pháp của`FileFormatUtil`class để phát hiện thông tin định dạng tệp. Trong ví dụ này, chúng tôi giả sử tài liệu có tên là "Được ký điện tử.docx" và nằm trong thư mục tài liệu được chỉ định.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ Hướng dẫn này đã cung cấp cho bạn hướng dẫn từng bước về
 
 #### Làm cách nào để phát hiện sự hiện diện của chữ ký số trên tài liệu Word bằng Aspose.Words cho .NET?
 
- Để phát hiện sự hiện diện của chữ ký số trên tài liệu Word bằng Aspose.Words cho .NET, bạn có thể làm theo các bước được cung cấp trong hướng dẫn. Sử dụng`DetectFileFormat` phương pháp của`FileFormatUtil` class sẽ cho phép bạn phát hiện thông tin định dạng tệp. Sau đó bạn có thể kiểm tra`HasDigitalSignature` tài sản của`FileFormatInfo`để xác định xem tài liệu có chứa chữ ký số hay không. Nếu phát hiện thấy chữ ký số, bạn có thể hiển thị thông báo cho biết chữ ký sẽ bị mất nếu tài liệu được mở/lưu bằng Aspose.Words.
+ Để phát hiện sự hiện diện của chữ ký số trên tài liệu Word bằng Aspose.Words cho .NET, bạn có thể làm theo các bước được cung cấp trong hướng dẫn. Sử dụng`DetectFileFormat` phương pháp của`FileFormatUtil` class sẽ cho phép bạn phát hiện thông tin định dạng tệp. Sau đó bạn có thể kiểm tra`HasDigitalSignature` tài sản của`FileFormatInfo` để xác định xem tài liệu có chứa chữ ký số hay không. Nếu phát hiện thấy chữ ký số, bạn có thể hiển thị thông báo cho biết chữ ký sẽ bị mất nếu tài liệu được mở/lưu bằng Aspose.Words.
 
 #### Làm cách nào để chỉ định thư mục chứa tài liệu cần tìm kiếm chữ ký số?
 

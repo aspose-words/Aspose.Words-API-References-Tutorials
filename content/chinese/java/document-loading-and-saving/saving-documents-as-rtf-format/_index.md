@@ -8,7 +8,7 @@ weight: 23
 url: /zh/java/document-loading-and-saving/saving-documents-as-rtf-format/
 ---
 
-## Aspose.Words for Java 中将文档保存为 RTF 格式的简介
+## 在 Aspose.Words for Java 中将文档保存为 RTF 格式的简介
 
 在本指南中，我们将引导您完成使用 Aspose.Words for Java 将文档保存为 RTF（富文本格式）的过程。RTF 是一种常用的文档格式，可在各种文字处理应用程序中提供高水平的兼容性。
 

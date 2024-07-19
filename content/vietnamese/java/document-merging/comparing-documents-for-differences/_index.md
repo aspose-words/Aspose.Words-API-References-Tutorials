@@ -22,7 +22,7 @@ Trước khi đi sâu vào chi tiết, hãy đảm bảo bạn có mọi thứ b
 
 ## Thiết lập dự án Java của bạn
 
-Để bắt đầu, hãy tạo một dự án Java mới trong IDE của bạn và thêm thư viện Aspose.Words vào các phần phụ thuộc của dự án.
+Để bắt đầu, hãy tạo một dự án Java mới trong IDE của bạn và thêm thư viện Aspose.Words vào các phần phụ thuộc của dự án của bạn.
 
 ## Bước 1: Tải tài liệu
 

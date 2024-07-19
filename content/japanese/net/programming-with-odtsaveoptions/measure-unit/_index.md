@@ -36,7 +36,7 @@ OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUn
 
 ## ドキュメントをODTに変換する
 
-保存オプションの設定が完了したので、ドキュメントを ODT に変換する手順に進みます。Document クラスの Save メソッドを使用して、保存オプションを指定して、変換されたドキュメントを ODT 形式で保存します。次に例を示します。
+保存オプションの設定が完了したので、ドキュメントを ODT に変換する手順に進みます。Document クラスの Save メソッドを使用して、保存オプションを指定し、変換したドキュメントを ODT 形式で保存します。次に例を示します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);

@@ -26,7 +26,7 @@ Carregaremos um documento existente usando o caminho do documento.
 Document doc = new Document(MyDir + "Document.docx");
 ```
 
-## Etapa 3: adicionar marca d’água de texto com opções específicas
+## Etapa 3: adicionar marca d'água de texto com opções específicas
 
  Criaremos uma instância do`TextWatermarkOptions`class e defina as opções desejadas para a marca d'água do texto.
 

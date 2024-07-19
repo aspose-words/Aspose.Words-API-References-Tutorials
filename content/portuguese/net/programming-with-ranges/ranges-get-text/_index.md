@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pt/net/programming-with-ranges/ranges-get-text/
 ---
-Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e manipular documentos Word em um aplicativo C#. Entre os recursos oferecidos pelo Aspose.Words está a capacidade de obter o texto contido em intervalos específicos de documentos do Word. Neste guia, orientaremos você sobre como usar o código-fonte C# do Aspose.Words for .NET para extrair texto de um documento do Word.
+Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e manipular documentos do Word em um aplicativo C#. Entre os recursos oferecidos pelo Aspose.Words está a capacidade de obter o texto contido em intervalos específicos de documentos do Word. Neste guia, orientaremos você sobre como usar o código-fonte C# do Aspose.Words for .NET para extrair texto de um documento do Word.
 
 ## Compreendendo a biblioteca Aspose.Words
 

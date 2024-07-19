@@ -60,7 +60,7 @@ Document doc = new Document(dataDir + "Digitally signed.docx");
 
  Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents. Cet extrait de code initialise un nouveau`Document` objet et charge votre document Word signé.
 
-## Étape 3 : accéder aux signatures numériques
+## Étape 3 : Accédez aux signatures numériques
 
 Une fois votre document chargé, il est temps d'accéder aux signatures numériques.
 

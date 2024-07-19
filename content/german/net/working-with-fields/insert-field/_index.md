@@ -63,7 +63,7 @@ A: Ein Feld in Word ist ein Element, mit dem Sie dynamische Daten in ein Dokumen
 
 #### F: Wie fügt man ein Feld in ein Word-Dokument ein?
 
-A: Um ein Feld in ein Word-Dokument einzufügen, können Sie diese Schritte befolgen:
+A: Um ein Feld in ein Word-Dokument einzufügen, können Sie die folgenden Schritte ausführen:
 
 1. Platzieren Sie den Cursor an der Stelle, an der Sie das Feld einfügen möchten.
 2. Gehen Sie in der Multifunktionsleiste auf die Registerkarte „Einfügen“.

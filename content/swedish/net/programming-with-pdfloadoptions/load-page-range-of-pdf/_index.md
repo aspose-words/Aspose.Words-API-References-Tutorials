@@ -15,7 +15,7 @@ I den här handledningen går vi igenom hur du laddar ett specifikt sidintervall
 Använd följande kod för att ladda ett specifikt sidintervall från ett PDF-dokument:
 
 ```csharp
-// Sökväg till dokumentkatalogen.
+//Sökväg till dokumentkatalogen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };

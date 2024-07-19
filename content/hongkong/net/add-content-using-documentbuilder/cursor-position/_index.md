@@ -120,7 +120,7 @@ doc.Save("ManipulatedDocument.docx");
 
 ### 什麼是 Aspose.Words for .NET？
 
-Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員使用 C# 或其他 .NET 語言以程式設計方式建立、操作和轉換 Word 文件。
+Aspose.Words for .NET 是一個功能強大的程式庫，允許開發人員使用 C# 或其他 .NET 語言以程式設計方式建立、操作和轉換 Word 文件。
 
 ### 我可以免費使用 Aspose.Words 嗎？
 

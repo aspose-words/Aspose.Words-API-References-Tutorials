@@ -109,7 +109,7 @@ Dans cet article, nous avons expliqué comment supprimer les pieds de page d'un 
 
 #### Q : Pourquoi devrais-je utiliser Aspose.Words pour supprimer les pieds de page dans un document Word ?
 
-R : Aspose.Words est une bibliothèque de classes puissante et polyvalente permettant de manipuler des documents Word dans des applications .NET. En utilisant Aspose.Words, vous pouvez facilement supprimer les pieds de page de vos documents Word. Cela peut être utile pour diverses raisons, telles que la suppression d'informations sensibles, l'adaptation du document à un autre usage ou simplement l'élimination d'éléments indésirables. Aspose.Words facilite cette tâche en vous fournissant une méthode simple et efficace pour supprimer les pieds de page de vos documents.
+R : Aspose.Words est une bibliothèque de classes puissante et polyvalente permettant de manipuler des documents Word dans des applications .NET. En utilisant Aspose.Words, vous pouvez facilement supprimer les pieds de page de vos documents Word. Cela peut être utile pour diverses raisons, telles que la suppression d'informations sensibles, l'adaptation du document pour un autre usage ou simplement l'élimination d'éléments indésirables. Aspose.Words facilite cette tâche en vous fournissant une méthode simple et efficace pour supprimer les pieds de page de vos documents.
 
 #### Q : Comment télécharger un document dans Aspose.Words pour .NET ?
 

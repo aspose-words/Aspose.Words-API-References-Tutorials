@@ -30,7 +30,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 ```
 
 ## Βήμα 4: Καθορίστε το στυλ του πίνακα
@@ -51,7 +51,7 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
  Για να προσαρμόσουμε αυτόματα το μέγεθος του πίνακα με βάση τα περιεχόμενά του, χρησιμοποιούμε το`AutoFit()` μέθοδος με το`AutoFitBehavior.AutoFitToContents` η ΣΥΜΠΕΡΙΦΟΡΑ.
 
 ```csharp
-table. AutoFit(AutoFitBehavior.AutoFitToContents);
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Βήμα 7: Προσθήκη περιεχομένου στα κελιά
@@ -62,24 +62,24 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 ```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
-builder. InsertCell();
-builder. Writen("Quantity (kg)");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Apples");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("20");
-builder. EndRow();
-builder. InsertCell();
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Bananas");
-builder. InsertCell();
-builder. Writen("40");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("40");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Carrots");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("50");
-builder. EndRow();
+builder.EndRow();
 ```
 
 ## Βήμα 8: Αποθηκεύστε το τροποποιημένο έγγραφο
@@ -89,46 +89,46 @@ builder. EndRow();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
-Συγχαρητήρια ! Έχετε πλέον δημιουργήσει έναν πίνακα προσαρμοσμένου στυλ χρησιμοποιώντας το Aspose.Words για .NET.
+συγχαρητήρια ! Έχετε πλέον δημιουργήσει έναν πίνακα προσαρμοσμένου στυλ χρησιμοποιώντας το Aspose.Words για .NET.
 
 ### Δείγμα πηγαίου κώδικα για Build Table With Style χρησιμοποιώντας Aspose.Words για .NET 
 
 ```csharp
-	// Διαδρομή στον κατάλογο εγγράφων σας
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Διαδρομή στον κατάλογο εγγράφων σας
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	// Πρέπει να εισαγάγουμε τουλάχιστον μία σειρά πρώτα πριν ορίσουμε οποιαδήποτε μορφοποίηση πίνακα.
-	builder.InsertCell();
-	// Ορίστε το στυλ πίνακα που χρησιμοποιείται με βάση το μοναδικό αναγνωριστικό στυλ.
-	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	// Εφαρμόστε ποιες λειτουργίες πρέπει να μορφοποιηθούν με βάση το στυλ.
-	table.StyleOptions =
-		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-	table.AutoFit(AutoFitBehavior.AutoFitToContents);
-	builder.Writeln("Item");
-	builder.CellFormat.RightPadding = 40;
-	builder.InsertCell();
-	builder.Writeln("Quantity (kg)");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Apples");
-	builder.InsertCell();
-	builder.Writeln("20");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Bananas");
-	builder.InsertCell();
-	builder.Writeln("40");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Carrots");
-	builder.InsertCell();
-	builder.Writeln("50");
-	builder.EndRow();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+// Πρέπει να εισαγάγουμε τουλάχιστον μία σειρά πρώτα πριν ορίσουμε οποιαδήποτε μορφοποίηση πίνακα.
+builder.InsertCell();
+// Ορίστε το στυλ πίνακα που χρησιμοποιείται με βάση το μοναδικό αναγνωριστικό στυλ.
+table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
+// Εφαρμόστε ποιες λειτουργίες πρέπει να μορφοποιηθούν με βάση το στυλ.
+table.StyleOptions =
+	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
+builder.Writeln("Item");
+builder.CellFormat.RightPadding = 40;
+builder.InsertCell();
+builder.Writeln("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Apples");
+builder.InsertCell();
+builder.Writeln("20");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Bananas");
+builder.InsertCell();
+builder.Writeln("40");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Carrots");
+builder.InsertCell();
+builder.Writeln("50");
+builder.EndRow();
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## συμπέρασμα

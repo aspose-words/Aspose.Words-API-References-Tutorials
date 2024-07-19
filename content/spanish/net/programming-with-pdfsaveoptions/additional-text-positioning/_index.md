@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-pdfsaveoptions/additional-text-positioning/
 ---
 
-En este tutorial, lo guiaremos a través de los pasos para mejorar el posicionamiento de texto PDF con una función adicional de posicionamiento de texto con Aspose.Words para .NET. Esta función le permite controlar la ubicación de texto adicional al convertir un documento de Word a PDF. Siga los pasos a continuación:
+En este tutorial, lo guiaremos a través de los pasos para mejorar el posicionamiento de texto PDF con una función de posicionamiento de texto adicional con Aspose.Words para .NET. Esta función le permite controlar la ubicación de texto adicional al convertir un documento de Word a PDF. Siga los pasos a continuación:
 
 ## Paso 1: cargar el documento
 

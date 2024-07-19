@@ -61,7 +61,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan állíthat be prioritást a betűt�
 
 #### K: Hogyan állíthatok be prioritást a font mappáknak az Aspose.Wordsben?
 
- V: Az Aspose.Words betűtípusmappák prioritásának beállításához használhatja a`SetFontsFoldersWithPriority` módszere a`Fonts` osztályba a font mappák helyeinek és azok fontossági sorrendjének megadásával.
+ V: Az Aspose.Words betűtípusmappák prioritásának beállításához használhatja a`SetFontsFoldersWithPriority` módszere a`Fonts` osztályba a betűtípusmappák helyeinek és azok fontossági sorrendjének megadásával.
 
 #### K: Mi történik, ha egy betűtípus több különböző prioritású mappában van?
 

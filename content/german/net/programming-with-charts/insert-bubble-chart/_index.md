@@ -29,7 +29,7 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Charts;
 ```
 
-Lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Befolgen Sie diese sorgfältig, und Ihr Blasendiagramm ist im Handumdrehen fertig.
+Lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Befolgen Sie die Schritte sorgfältig, und Ihr Blasendiagramm ist im Handumdrehen fertig.
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
@@ -97,7 +97,7 @@ Ja, Sie können so viele Diagramme hinzufügen, wie Sie benötigen. Wiederholen 
 
 ### Kann ich Aspose.Words für .NET mit anderen .NET-Sprachen verwenden?
 
-Auf jeden Fall. Obwohl in diesem Handbuch C# verwendet wird, ist Aspose.Words für .NET mit anderen .NET-Sprachen wie VB.NET kompatibel.
+Auf jeden Fall. Während in diesem Handbuch C# verwendet wird, ist Aspose.Words für .NET mit anderen .NET-Sprachen wie VB.NET kompatibel.
 
 ### Wie erhalte ich eine kostenlose Testversion von Aspose.Words für .NET?
 

@@ -31,13 +31,13 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Certifique-se de substituir "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho real para o diretório de documentos.
 
 ## Etapa 3: clone completo do array
-A seguir, clonaremos a tabela inteira e a inseriremos no documento após o original. Use o seguinte código:
+seguir, clonaremos a tabela inteira e a inseriremos no documento após o original. Use o seguinte código:
 
 ```csharp
 // Clonar a matriz
 Table tableClone = (Table)table.Clone(true);
 
-//Insira a tabela clonada no documento após o original
+// Insira a tabela clonada no documento após o original
 table.ParentNode.InsertAfter(tableClone, table);
 
 // Insira um parágrafo vazio entre as duas tabelas
@@ -68,7 +68,7 @@ Certifique-se de especificar o caminho e o nome de arquivo corretos para o docum
 	// Clone a tabela e insira-a no documento após o original.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Insira um parágrafo vazio entre as duas tabelas,
+	//Insira um parágrafo vazio entre as duas tabelas,
 	// caso contrário, eles serão combinados em um só ao salvar. Isso tem a ver com a validação do documento.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

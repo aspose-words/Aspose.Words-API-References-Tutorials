@@ -64,7 +64,7 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 Sla het samengevoegde document op de gewenste locatie op.
 
 ```csharp

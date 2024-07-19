@@ -194,7 +194,7 @@ Documentrevisie is een cruciaal aspect van samenwerking en waarborgt de nauwkeur
    - Absoluut! Aspose.Words maakt selectieve acceptatie of afwijzing van revisies mogelijk op basis van specifieke criteria, waardoor u een nauwkeurige controle over het revisieproces krijgt.
 
 ### Hoe gaat Aspose.Words om met conflicten bij gelijktijdige bewerkingen
-   - Aspose.Words biedt geavanceerde functies voor het detecteren en afhandelen van conflicten in het geval van gelijktijdige bewerkingen door meerdere gebruikers, waardoor een naadloze samenwerkingservaring wordt gegarandeerd.
+   - Aspose.Words biedt geavanceerde functies om conflicten te detecteren en af te handelen in het geval van gelijktijdige bewerkingen door meerdere gebruikers, waardoor een naadloze samenwerkingservaring wordt gegarandeerd.
 
 ### Kan ik werken met complexe revisies met tabellen en afbeeldingen?
    - Ja, Aspose.Words biedt uitgebreide ondersteuning voor het verwerken van complexe revisies waarbij tabellen, afbeeldingen en andere elementen betrokken zijn, zodat alle aspecten van het document correct worden beheerd.

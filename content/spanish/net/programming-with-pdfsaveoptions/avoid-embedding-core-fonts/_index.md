@@ -63,7 +63,7 @@ Si sigue estos pasos, podrá controlar fácilmente si las fuentes base deben inc
 
 ## Conclusión
 
-En este tutorial, explicamos cómo reducir el tamaño de un archivo PDF al no incorporar fuentes básicas con Aspose.Words para .NET. Esta función le permite controlar si las fuentes base deben incrustarse en el PDF al convertir un documento de Word. Si sigue los pasos descritos, puede controlar fácilmente la incorporación o no de fuentes básicas, lo que puede ayudar a reducir el tamaño del archivo PDF y garantizar una mejor compatibilidad y una apariencia consistente del documento en diferentes dispositivos y plataformas. No olvide considerar las consecuencias de no incrustar fuentes base y experimentar para asegurarse de que el documento se muestre como se esperaba.
+En este tutorial, explicamos cómo reducir el tamaño de un archivo PDF al no incorporar fuentes básicas con Aspose.Words para .NET. Esta función le permite controlar si las fuentes base deben incrustarse en el PDF al convertir un documento de Word. Si sigue los pasos descritos, puede controlar fácilmente la incrustación o no incrustación de fuentes básicas, lo que puede ayudar a reducir el tamaño del archivo PDF y garantizar una mejor compatibilidad y una apariencia consistente del documento en diferentes dispositivos y plataformas. No olvide considerar las consecuencias de no incrustar fuentes base y experimentar para asegurarse de que el documento se muestre como se esperaba.
 
 ### Preguntas frecuentes
 

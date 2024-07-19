@@ -95,7 +95,7 @@ Ja, Aspose.Words ondersteunt verschillende indelingen en u kunt documenten zoals
 Ja, Aspose.Words is compatibel met .NET Core. U kunt het ook gebruiken in .NET Core-toepassingen.
 
 ### Heb ik een licentie nodig voor Aspose.Words en Aspose.Email?
- Ja, voor beide bibliotheken zijn licenties vereist. U kunt een tijdelijke licentie verkrijgen bij de[Aspose aankooppagina](https://purchase.aspose.com/temporary-license/) voor evaluatiedoeleinden.
+ Ja, voor beide bibliotheken zijn licenties vereist. U kunt een tijdelijke licentie aanvragen bij de[Aspose aankooppagina](https://purchase.aspose.com/temporary-license/) voor evaluatiedoeleinden.
 
 ### Waar kan ik meer documentatie vinden?
- U kunt gedetailleerde documentatie voor Aspose.Words vinden[hier](https://reference.aspose.com/words/net/) en voor Aspose.E-mail[hier](https://reference.aspose.com/email/net/).
+ U kunt gedetailleerde documentatie voor Aspose.Words vinden[hier](https://reference.aspose.com/words/net/) en voor Aspose.Email[hier](https://reference.aspose.com/email/net/).

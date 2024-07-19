@@ -92,14 +92,14 @@ private void DeleteRowByBookmark(Document doc, string bookmarkName)
 
 ## 步骤 4：确认解开
 
-虽然`Untangle`函数应该确保其他书签的安全，验证它始终是很好的做法。下面是我们如何检查解开过程是否意外删除了另一个书签的末尾：
+虽然`Untangle`函数应该确保其他书签的安全，验证它始终是一种很好的做法。下面是我们如何检查解开过程是否意外删除了另一个书签的末尾：
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
    throw new Exception("Wrong, the end of the bookmark was deleted.");
 ```
 
-此代码片段检查在删除带有“ROW2”书签的行后，名为“ROW1”的书签的末尾是否仍然存在。如果它为空，则抛出异常，表明解开过程存在问题。 
+此代码片段检查在删除带有“ROW2”书签的行后，名为“ROW1”的书签的末尾是否仍然存在。如果它为空，则抛出异常，表示解开过程存在问题。 
 
 ## 步骤 5：保存文档
 
@@ -131,7 +131,7 @@ doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 
 ### 我可以使用此代码来解开不相邻行之间的书签吗？
 
-目前，代码主要专注于解开跨相邻行的书签。修改代码以处理非相邻行需要额外的逻辑来识别和处理这些情况。
+目前，代码主要专注于解开跨相邻行的书签。修改代码以处理非相邻行将需要额外的逻辑来识别和处理这些情况。
 
 ### 使用此方法有什么限制吗？
 

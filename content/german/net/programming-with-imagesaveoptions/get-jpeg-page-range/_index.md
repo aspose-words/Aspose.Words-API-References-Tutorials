@@ -47,7 +47,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 
 Jetzt können Sie den Quellcode ausführen, um einen bestimmten Seitenbereich in Ihrem Dokument in JPEG-Bilder umzuwandeln. Die resultierende Datei wird im angegebenen Verzeichnis unter dem Namen „WorkingWithImageSaveOptions.GetJpegPageRange.jpeg“ gespeichert.
 
-### Beispielquellcode zum Abrufen eines JPEG-Seitenbereichs mit Aspose.Words für .NET
+### Beispielquellcode zum Abrufen des JPEG-Seitenbereichs mit Aspose.Words für .NET
 
 ```csharp 
  // Pfad zu Ihrem Dokumentverzeichnis

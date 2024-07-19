@@ -15,7 +15,7 @@ V tomto příkladu vám ukážeme, jak rozdělit dokument aplikace Word do samos
 Chcete-li začít, musíme zadat adresář vašeho dokumentu a načíst dokument do objektu Document. Zde je postup:
 
 ```csharp
-// Cesta k adresáři dokumentů.
+//Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
@@ -76,7 +76,7 @@ V tomto tutoriálu jsme prozkoumali funkci Rozdělit dokument podle sekcí Aspos
 
 Použití funkce Rozdělit dokument podle oddílů může být výhodné, když potřebujete manipulovat nebo analyzovat konkrétní části dokumentu, jako jsou kapitoly, oddíly nebo jiné oddíly. Aspose.Words for .NET poskytuje spolehlivé a přímočaré řešení pro oddělování sekcí a umožňuje efektivní zpracování dokumentů.
 
-Neváhejte a prozkoumejte další výkonné funkce nabízené Aspose.Words pro .NET, abyste zlepšili své možnosti zpracování dokumentů a zefektivnili svůj pracovní postup.
+Neváhejte a prozkoumejte další výkonné funkce, které nabízí Aspose.Words for .NET, abyste zlepšili své možnosti zpracování dokumentů a zefektivnili svůj pracovní postup.
 
 ### Nejčastější dotazy
 

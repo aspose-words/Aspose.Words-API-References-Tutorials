@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 Parcourez tous les champs du document et supprimez-les :
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 Cette boucle parcourt la collection de champs en arrière pour éviter les problèmes liés à la modification de la collection lors de l'itération.
@@ -88,7 +84,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Conclusion
 
-En conclusion, ce didacticiel a fourni un guide complet sur la façon de supprimer efficacement des champs des documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez automatiser le processus de suppression de champs au sein de vos applications, améliorant ainsi la productivité et l'efficacité des tâches de gestion documentaire.
+En conclusion, ce didacticiel a fourni un guide complet sur la façon de supprimer efficacement des champs des documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez automatiser le processus de suppression de champs au sein de vos applications, améliorant ainsi la productivité et l'efficacité des tâches de gestion de documents.
 
 ## FAQ
 

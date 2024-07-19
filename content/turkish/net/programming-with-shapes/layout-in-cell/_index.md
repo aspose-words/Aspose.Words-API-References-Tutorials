@@ -137,4 +137,4 @@ doc
 	doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 ```
 
-Bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tablo hücresindeki şekli başarıyla yerleştirdiniz.
+Bu kadar! Aspose.Words for .NET'i kullanarak Word belgesindeki bir tablo hücresindeki şekli başarıyla yerleştirdiniz.

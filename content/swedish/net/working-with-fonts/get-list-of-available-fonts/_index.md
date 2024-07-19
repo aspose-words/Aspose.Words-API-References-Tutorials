@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Konfigurera teckensnittskällor
-Därefter skapar vi en instans av`FontSettings` och hämta de befintliga teckensnittskällorna med hjälp av`GetFontsSources()` metod. Vi kommer också att lägga till en ny typsnittskälla genom att ange en mapp som innehåller typsnitt.
+ Därefter skapar vi en instans av`FontSettings` och hämta de befintliga teckensnittskällorna med hjälp av`GetFontsSources()` metod. Vi kommer också att lägga till en ny typsnittskälla genom att ange en mapp som innehåller typsnitt.
 
 ```csharp
 // Konfigurera teckensnittskällor
@@ -37,7 +37,7 @@ fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## Steg 3: Få listan över tillgängliga typsnitt
+## Steg 3: Hämta listan över tillgängliga teckensnitt
  Nu kommer vi att bläddra bland de tillgängliga typsnitten med hjälp av`GetAvailableFonts()` metod på den första uppdaterade teckensnittskällan.
 
 ```csharp

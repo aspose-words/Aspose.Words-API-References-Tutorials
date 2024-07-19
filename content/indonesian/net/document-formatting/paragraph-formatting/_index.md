@@ -16,7 +16,7 @@ Pernahkah Anda terjebak dalam pertarungan tanpa akhir dengan format dokumen Word
 Sebelum kita memulai petualangan pemformatan ini, mari siapkan perangkat kita. Inilah yang Anda perlukan:
 
 1.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/).
-2. Visual Studio: Editor kode tepercaya Anda.
+2. Visual Studio: Editor kode terpercaya Anda.
 3. .NET Framework: Pastikan sudah diinstal.
 4. Pengetahuan Dasar C#: Jangan khawatir, Anda tidak perlu menjadi seorang penyihir, cukup beberapa pemahaman dasar saja sudah cukup.
 
@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- Kami sedang mengonfigurasi`ParagraphFormat`properti. Mari kita uraikan fungsi masing-masing properti:
+Kami sedang mengonfigurasi`ParagraphFormat` properti. Mari kita uraikan fungsi masing-masing properti:
 - Penyelarasan: Memusatkan paragraf.
 - LeftIndent: Mengatur indentasi kiri menjadi 50 poin.
 - RightIndent: Mengatur indentasi kanan menjadi 50 poin.

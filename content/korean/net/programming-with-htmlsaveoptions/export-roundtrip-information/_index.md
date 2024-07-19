@@ -33,7 +33,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- 이 코드는`HtmlSaveOptions`그리고`ExportRoundtripInformation` 옵션`true` 내보낼 때 왕복 정보를 포함합니다.
+ 이 코드는`HtmlSaveOptions` 그리고`ExportRoundtripInformation` 옵션`true` 내보낼 때 왕복 정보를 포함합니다.
 
 ## 4단계: 문서를 HTML로 변환 및 저장
 

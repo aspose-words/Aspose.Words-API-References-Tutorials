@@ -19,7 +19,7 @@ La función Cargar PDF cifrado de Aspose.Words para .NET le permite cargar archi
 El primer paso es cargar el documento PDF cifrado en su aplicación. He aquí cómo hacerlo:
 
 ```csharp
-// Ruta al directorio de documentos.
+//Ruta al directorio de documentos.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

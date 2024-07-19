@@ -22,7 +22,7 @@ url: /ar/java/document-converting/converting-documents-different-formats/
 
 ## الخطوة الثانية: إعداد مشروع جافا الخاص بك
 
-بمجرد قيامك بتنزيل Aspose.Words for Java، قم بإنشاء مشروع Java جديد في بيئة التطوير المتكاملة (IDE) المفضلة لديك. قم بإضافة ملف Aspose.Words JAR إلى مسار فئة مشروعك.
+بمجرد قيامك بتنزيل Aspose.Words for Java، قم بإنشاء مشروع Java جديد في بيئة التطوير المتكاملة (IDE) المفضلة لديك. أضف ملف Aspose.Words JAR إلى مسار فئة مشروعك.
 
 ## تحويل المستندات إلى تنسيقات مختلفة
 

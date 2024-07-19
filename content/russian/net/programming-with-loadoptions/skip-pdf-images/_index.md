@@ -39,7 +39,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Настройте параметры загрузки с помощью функции «Пропустить изображения PDF»
+// Настройте параметры загрузки с помощью функции «Пропустить изображения PDF».
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 
 // Загрузите документ PDF, пропуская изображения PDF.

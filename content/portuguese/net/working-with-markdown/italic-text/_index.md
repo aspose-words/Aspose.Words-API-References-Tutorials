@@ -46,11 +46,11 @@ Parabéns! Agora você aprendeu como usar o recurso de texto em itálico com Asp
 
 #### P: Como posso colocar o texto em itálico no Aspose.Words?
 
-R: Para colocar o texto em itálico no Aspose.Words, você pode usar o`Font.Italic` propriedade do`Run`objeto. Você pode definir esta propriedade como`true` para colocar em itálico um texto específico. Por exemplo, você pode usar`run.Font.Italic=true` colocar em itálico o texto contido no`Run` objeto.
+ R: Para colocar o texto em itálico no Aspose.Words, você pode usar o`Font.Italic` propriedade do`Run`objeto. Você pode definir esta propriedade como`true` para colocar em itálico um texto específico. Por exemplo, você pode usar`run.Font.Italic=true` colocar em itálico o texto contido no`Run` objeto.
 
 #### P: É possível colocar vários trechos de texto em itálico no mesmo parágrafo?
 
- R: Sim, você pode colocar em itálico vários trechos de texto em um único parágrafo usando vários`Run` objetos. Você pode criar vários`Run` objetos e definir o`Font.Italic`propriedade para`true` para cada objeto colocar em itálico as partes desejadas do texto. Então você pode adicioná-los ao parágrafo usando o`Paragraph.AppendChild(run)` método.
+ R: Sim, você pode colocar em itálico vários trechos de texto em um único parágrafo usando vários`Run` objetos. Você pode criar vários`Run` objetos e definir o`Font.Italic`propriedade para`true`para cada objeto colocar em itálico as partes desejadas do texto. Então você pode adicioná-los ao parágrafo usando o`Paragraph.AppendChild(run)` método.
 
 #### P: Posso colocar em itálico o texto que está em uma tabela ou célula no Aspose.Words?
 

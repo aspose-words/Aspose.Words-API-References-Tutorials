@@ -10,7 +10,7 @@ url: /zh-hant/java/document-manipulation/splitting-documents-into-html-pages/
 
 ## 在 Aspose.Words for Java 中將文件分割為 HTML 頁面簡介
 
-在本逐步指南中，我們將探討如何使用 Aspose.Words for Java 將文件分割為 HTML 頁面。 Aspose.Words 是一個強大的 Java API，用於處理 Microsoft Word 文檔，它提供了廣泛的文檔操作功能，包括將文檔轉換為各種格式（包括 HTML）的能力。
+在本逐步指南中，我們將探討如何使用 Aspose.Words for Java 將文件分割為 HTML 頁面。 Aspose.Words 是一個功能強大的 Java API，用於處理 Microsoft Word 文檔，它提供了廣泛的文檔操作功能，包括將文檔轉換為各種格式（包括 HTML）的能力。
 
 ## 先決條件
 
@@ -151,7 +151,7 @@ Aspose.Words for Java 支援多種 Microsoft Word 文件格式，包括 DOC、DO
 
 ### 如何處理轉換後的 HTML 中的圖片？
 
-Aspose.Words for Java 可以透過將轉換後的 HTML 中的映像儲存為與 HTML 檔案相同的資料夾中的單獨檔案來處理這些映像。這可確保圖像在 HTML 輸出中正確顯示。
+Aspose.Words for Java 可以透過將轉換後的 HTML 中的圖片儲存為與 HTML 檔案相同的資料夾中的單獨檔案來處理這些映像。這可確保圖像在 HTML 輸出中正確顯示。
 
 ### 是否有 Aspose.Words for Java 的試用版？
 

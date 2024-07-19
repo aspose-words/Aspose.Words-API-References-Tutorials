@@ -84,7 +84,7 @@ Dalam tutorial ini, kita membahas cara membuat dan mengkustomisasi diagram garis
 
 ## FAQ
 
-### Bisakah saya menggunakan Aspose.Words for .NET untuk membuat tipe bagan lainnya?
+### Bisakah saya menggunakan Aspose.Words untuk .NET untuk membuat jenis bagan lainnya?
 
  Ya, Aspose.Words untuk .NET mendukung berbagai jenis bagan, termasuk diagram batang, diagram lingkaran, dan banyak lagi. Anda dapat menjelajahi dokumentasinya[Di Sini](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
 

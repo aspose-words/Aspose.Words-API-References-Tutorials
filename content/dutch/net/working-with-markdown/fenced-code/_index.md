@@ -35,7 +35,7 @@ Nu kunnen we een omheind codeblok zonder informatiereeks toevoegen met behulp va
 builder.Writeln("This is an fenced code");
 ```
 
-## Stap 4: Voeg een omheinde code toe met een inforeeks
+## Stap 4: Voeg omheinde code toe met inforeeks
 
 We kunnen ook een omheind codeblok toevoegen met een reeks informatie met behulp van een andere aangepaste stijl. In dit voorbeeld maken we een stijl met de naam "FencedCode.C#" om een blok C#-code weer te geven.
 

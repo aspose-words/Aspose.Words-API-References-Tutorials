@@ -2,126 +2,93 @@
 title: 列出使用目標樣式
 linktitle: 列出使用目標樣式
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 無縫合併和管理文件清單。按照我們的分步教程進行高效的文檔整合。
+description: 了解如何使用 Aspose.Words for .NET 合併 Word 文件而不遺失清單格式。保持文檔樣式完整的分步指南。
 type: docs
 weight: 10
 url: /zh-hant/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## 介紹
 
-在保持樣式一致的同時整合文件可能具有挑戰性，尤其是清單。 Aspose.Words for .NET 提供了強大的工具來管理這些複雜性，確保您的文件保持格式完整性。本教學將引導您完成將文件與清單合併的過程，使用目標樣式打造精美的最終產品。
+您是否曾經嘗試過合併 Word 文件卻被格式問題困擾？有時就像嘗試混合油和水，對嗎？好吧，今天我們將深入研究一個使用 Aspose.Words for .NET 的巧妙技巧，它可以幫助您擺脫這種頭痛。我們將學習如何將清單從一個文件匯入到另一個文件而不弄亂編號和樣式。準備好讓您的生活變得更輕鬆了嗎？讓我們開始吧！
 
 ## 先決條件
 
-在深入學習本教學之前，請確保您具備以下條件：
-- Visual Studio 安裝在您的電腦上。
-- Aspose.Words for .NET 函式庫整合到您的專案中。
-- 對 C# 程式語言有基本了解。
+在我們開始施展魔法之前，讓我們確保您已擁有所需的一切：
+
+1.  Aspose.Words for .NET：如果您還沒有，請下載它[這裡](https://releases.aspose.com/words/net/).
+2. Visual Studio：任何最新版本都可以。
+3. 對 C# 的基本了解：您不需要成為嚮導，但熟悉一些會有所幫助。
+
+請確定您已在專案中安裝並設定了 Aspose.Words。如果您不確定如何執行此操作，[文件](https://reference.aspose.com/words/net/)是一個很好的起點。
 
 ## 導入命名空間
 
-首先匯入必要的命名空間以利用 Aspose.Words 功能：
+首先，讓我們在 C# 檔案中導入必要的命名空間：
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.Lists;
+using Aspose.Words.Saving;
 ```
 
-讓我們將這個過程分解為清晰的步驟：
+明白了嗎？驚人的。現在，讓我們一步步分解。
 
 ## 第 1 步：設定文檔路徑
 
-確保您已定義文件所在的目錄路徑：
+每個專案都從組織文件開始。讓我們將程式碼指向儲存文件的目錄。
 
 ```csharp
-string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+//文檔目錄的路徑。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-代替`"YOUR_DOCUMENT_DIRECTORY_PATH"`與儲存文件的實際目錄路徑。
+代替`"YOUR DOCUMENT DIRECTORY"`與儲存文檔的實際路徑。容易，對吧？
 
-## 第 2 步：載入來源和目標文檔
+## 第 2 步：載入來源文檔和目標文檔
 
-使用 Aspose.Words 載入來源文件和目標文件：
+接下來，我們需要載入來源文檔和目標文檔。可以將其視為在電腦上開啟兩個 Word 文件。
 
 ```csharp
-Document srcDoc = new Document(dataDir + "DocumentSource.docx");
-Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
+Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-調整`"DocumentSource.docx"`和`"DocumentDestination.docx"`與您的實際檔案名稱。
+這裡，`srcDoc`是您的來源文件（包含您要複製的清單的文件），並且`dstDoc`是您的目標文件（您想要貼上這些清單的文件）。
 
-## 步驟 3：設定來源文檔的節開始
+## 步驟 3：配置導入選項
 
-為了確保文件順利合併，設定來源文件的節起始位置：
+我們需要指定一些選項以確保清單正確導入。此步驟可確保如果有任何編號衝突，則保留來源文件中的編號。
 
 ```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-此設定有助於保持文件之間的連續性。
+## 步驟 4：將來源文檔附加到目標文檔
 
-## 第 4 步：管理清單集成
-
-迭代來源文件中的段落來處理清單項目：
+現在，讓我們進行合併。這就是奇蹟發生的地方。我們在使用指定的導入選項時將來源文件附加到目標文件。
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-此程式碼片段確保來源文件中的清單無縫整合到目標文件中，並保持其原始格式。
-
-## 步驟 5：將來源文檔附加到目標文檔
-
-將修改後的來源文檔合併到目標文檔中：
-
-```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-```
-
-此命令會合併文檔，同時保留目標樣式。
+您已成功合併兩個文檔，並保持清單完整。
 
 ## 結論
 
-透過執行這些步驟，您可以使用 Aspose.Words for .NET 有效地管理和合併文件之間的清單。這種方法可確保您的最終文件保持一致的樣式和格式，從而提高整體文件管理效率。
+你有它！使用 Aspose.Words for .NET 可以輕鬆合併文檔，而不必擔心格式問題。無論您正在處理一個大項目還是只是需要整理一些文件，此方法都將使您的清單看起來清晰。因此，下次您遇到文件合併困境時，請記住本指南並像專業人士一樣解決它！
 
 ## 常見問題解答
 
-### 如何使用 Aspose.Words for .NET 處理巢狀清單？
-Aspose.Words 提供了透過迭代文件節點和檢查清單結構來管理巢狀清單的方法。
+### 什麼是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一個功能強大的程式庫，用於以程式設計方式處理 Word 文件。它允許您建立、修改和轉換各種格式的文件。
 
-### 在文件合併中使用目標樣式有什麼好處？
-目標樣式有助於保持合併文件格式的一致性，確保專業的外觀。
+### 如何安裝 Aspose.Words for .NET？
+您可以從[網站](https://releases.aspose.com/words/net/)並按照安裝說明進行操作[文件](https://reference.aspose.com/words/net/).
 
-### Aspose.Words支援跨平台文件合併嗎？
-是的，Aspose.Words 支援跨各種平台的文件合併，包括 Windows 和 Linux 環境。
+### 我可以免費使用 Aspose.Words 嗎？
+ Aspose.Words 提供了[免費試用](https://releases.aspose.com/)功能有限。要獲得完全訪問權限，您需要購買許可證[這裡](https://purchase.aspose.com/buy).
 
-### 我可以在文件合併期間自訂清單格式嗎？
-Aspose.Words 允許對清單格式進行廣泛的自定義，從而實現客製化的文件整合解決方案。
+### 什麼是導入格式選項？
+ ImportFormatOptions 可讓您指定將內容從一個文件匯入到另一個文件時如何處理格式。例如，`KeepSourceNumbering`確保保留來源文件中的清單編號。
 
-### 在哪裡可以找到有關使用 Aspose.Words 進行高級文件管理的更多資源？
-探索[Aspose.Words 文檔](https://reference.aspose.com/words/net/)取得全面的指南和 API 參考。
+### 我可以在哪裡獲得 Aspose.Words 的支援？
+您可以從以下方面獲得支持[Aspose.Words 論壇](https://forum.aspose.com/c/words/8)，您可以在其中提出問題並從社區和 Aspose 開發人員那裡獲得幫助。

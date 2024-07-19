@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Étape 2 : Appliquer le style de texte barré
 
-Nous allons activer le style de texte barré en définissant le`StrikeThrough` propriété du`Font` s'opposer à`true`.
+ Nous allons activer le style de texte barré en définissant le`StrikeThrough` propriété du`Font` s'opposer à`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

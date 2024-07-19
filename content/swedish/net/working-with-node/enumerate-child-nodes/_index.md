@@ -98,7 +98,7 @@ Ett stycke kan innehålla noder som körningar, former, kommentarer och andra in
  Ja, du kan manipulera olika nodtyper som former, kommentarer och mer genom att kontrollera deras`NodeType`.
 
 ### 4. Behöver jag en licens för att använda Aspose.Words för .NET?
- Du kan börja med en gratis provperiod eller skaffa en tillfällig licens från[här](https://purchase.aspose.com/temporary-license/).
+Du kan börja med en gratis provperiod eller skaffa en tillfällig licens från[här](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Var kan jag hitta fler exempel och dokumentation?
  Besök[Aspose.Words för .NET API dokumentation](https://reference.aspose.com/words/net/) för fler exempel och detaljerad dokumentation.

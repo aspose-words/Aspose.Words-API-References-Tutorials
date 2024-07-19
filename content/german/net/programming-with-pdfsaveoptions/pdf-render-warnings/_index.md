@@ -73,7 +73,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Schritt 5: Implementieren des Warn-Callbacks
 
- Erstellen Sie eine Klasse, die das implementiert`IWarningCallback` Schnittstelle zur Behandlung aller während der Dokumentverarbeitung generierten Warnungen.
+ Erstellen Sie eine Klasse, die das`IWarningCallback` Schnittstelle zur Behandlung aller während der Dokumentverarbeitung generierten Warnungen.
 
 ```csharp
 public class HandleDocumentWarnings : IWarningCallback

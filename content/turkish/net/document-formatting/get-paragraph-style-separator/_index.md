@@ -17,7 +17,7 @@ Hiç bir Word belgesinin labirentinde gezinmeyi denediniz mi, ancak o sinsi para
 Koda geçmeden önce ihtiyacınız olan tüm araçlara sahip olduğunuzdan emin olalım:
 
 - Visual Studio: Yüklediğinizden emin olun. Değilse, Microsoft web sitesinden indirip yükleyin.
--  Aspose.Words for .NET: Henüz sahip değilseniz en son sürümü edinin[Burada](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Henüz sahip değilseniz en son sürümü edinin[Burada](https://releases.aspose.com/words/net/).
 - Örnek Bir Word Belgesi: Bu, üzerinde çalışabileceğimiz paragraf stili ayırıcıları içermelidir. Bir tane oluşturabilir veya mevcut bir belgeyi kullanabilirsiniz.
 
 ## Ad Alanlarını İçe Aktar

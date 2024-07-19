@@ -2,7 +2,7 @@
 title: 正規表現で置換
 linktitle: 正規表現で置換
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書内で正規表現を使用して検索および置換する方法を学びます。詳細なステップバイステップ ガイドに従って、テキスト操作をマスターしてください。
+description: Aspose.Words for .NET を使用して、Word 文書内で正規表現を使用して検索および置換する方法を学びます。詳細なステップバイステップのガイドに従って、テキスト操作をマスターしてください。
 type: docs
 weight: 10
 url: /ja/net/find-and-replace-text/replace-with-regex/

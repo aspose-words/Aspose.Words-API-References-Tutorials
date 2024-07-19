@@ -64,7 +64,7 @@ Teraz nadchodzi zabawna część. Zamierzamy wstawić pole TC do naszego dokumen
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Ta linia kodu mówi Aspose.Words, aby wstawił pole TC z tekstem wpisu „Tekst wpisu”. The`\\f t` częścią jest przełącznik określający sposób wyświetlania wpisu w spisie treści.
+ Ta linia kodu mówi Aspose.Words, aby wstawił pole TC z tekstem wpisu „Tekst wpisu”. The`\\f t`częścią jest przełącznik określający sposób wyświetlania wpisu w spisie treści.
 
 ## Krok 4: Zapisz dokument
 

@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 قم بالتكرار عبر جميع الحقول الموجودة في المستند وإزالتها:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 تتكرر هذه الحلقة بشكل عكسي عبر مجموعة الحقول لتجنب مشكلات تعديل المجموعة أثناء التكرار.

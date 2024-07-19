@@ -56,7 +56,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Pdf Document.pdf");
 ```
 
- هنا، نقوم بإنشاء مثيل لـ`Document`class وقم بتمرير مسار ملف PDF الخاص بنا إليه. يقوم هذا الإجراء بتحميل ملف PDF إلى الذاكرة، ويكون جاهزًا للتحويل.
+ هنا، نقوم بإنشاء مثيل لـ`Document` class وقم بتمرير مسار ملف PDF الخاص بنا إليه. يقوم هذا الإجراء بتحميل ملف PDF إلى الذاكرة، ويكون جاهزًا للتحويل.
 
 ## الخطوة 3: حفظ ملف PDF كمستند Word
 

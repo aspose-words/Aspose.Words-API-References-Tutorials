@@ -88,7 +88,7 @@ hyphenation_options.consecutive_hyphen_limit = 2
 
 ## Förbättra läsbarheten
 
-### Justering av linjeavstånd
+### Justera radavstånd
 
 Korrekt radavstånd förbättrar läsbarheten. Du kan ställa in radavstånd i dokumentet för att förbättra det övergripande visuella utseendet.
 

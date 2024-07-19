@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 इसके बाद, हमें कर्सर को दस्तावेज़ में उस विशिष्ट पैराग्राफ़ पर ले जाना होगा जहाँ हम मर्ज फ़ील्ड सम्मिलित करना चाहते हैं।
 
 ```csharp
-// कर्सर को पैराग्राफ़ पर ले जाएँ.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## चरण 6: मर्ज फ़ील्ड डालें

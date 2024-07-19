@@ -32,7 +32,7 @@ using System;
 
 ## Schritt 1: Laden Sie das Word-Dokument
 
-Wir beginnen mit dem Laden des Word-Dokuments, das die verwickelten Zeilenlesezeichen enthält.`Document` Klasse behandelt die Dokumentbearbeitung in Aspose.Words. So wird das Dokument geladen:
+ Wir beginnen mit dem Laden des Word-Dokuments, das die verwickelten Zeilenlesezeichen enthält.`Document` Klasse behandelt die Dokumentbearbeitung in Aspose.Words. So wird das Dokument geladen:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // Ersetzen Sie es durch den Speicherort Ihres Dokuments.
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Prüfen, ob Zeilen gültig und benachbart sind
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Verschieben Sie das Lesezeichenende zum letzten Absatz der letzten Zelle der obersten Zeile.
+		   //Verschieben Sie das Lesezeichenende zum letzten Absatz der letzten Zelle der obersten Zeile.
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ Hier ist eine schrittweise Erklärung, was der Code macht:
 
  Wir durchlaufen alle Lesezeichen im Dokument mit einem`foreach` Schleife.
 Für jedes Lesezeichen rufen wir die übergeordnete Zeile sowohl des Lesezeichenanfangs (`bookmark.BookmarkStart`) und das Lesezeichenende (`bookmark.BookmarkEnd` ) Verwendung der`GetAncestor` Methode.
-Anschließend prüfen wir, ob beide Zeilen gefunden werden (`row1 != null`Und`row2 != null`und wenn es sich um benachbarte Zeilen handelt (`row1.NextSibling == row2`). Dadurch wird sichergestellt, dass wir nur Lesezeichen ändern, die sich über benachbarte Zeilen erstrecken.
+Anschließend prüfen wir, ob beide Zeilen gefunden werden (`row1 != null`Und`row2 != null`) und wenn es sich um benachbarte Zeilen handelt (`row1.NextSibling == row2`). Dadurch wird sichergestellt, dass wir nur Lesezeichen ändern, die sich über benachbarte Zeilen erstrecken.
 Wenn die Bedingungen erfüllt sind, verschieben wir den Lesezeichen-Endknoten an das Ende des letzten Absatzes in der letzten Zelle der obersten Zeile (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) und entwirrt sie effektiv.
 
 ## Schritt 3: Zeile per Lesezeichen löschen
@@ -87,12 +87,12 @@ Hier ist eine Aufschlüsselung dieser Funktion:
 
 Wir nehmen den Lesezeichennamen (`bookmarkName`) als Eingabe.
  Wir ermitteln das entsprechende Lesezeichenobjekt mit`doc.Range.Bookmarks[bookmarkName]`.
- Wir erhalten dann die übergeordnete Zeile des Lesezeichens mit`GetAncestor` (ähnlich wie`Untangle` Funktion).
+Wir erhalten dann die übergeordnete Zeile des Lesezeichens mit`GetAncestor` (ähnlich wie`Untangle` Funktion).
 Abschließend prüfen wir, ob das Lesezeichen und die Zeile vorhanden sind (`bookmark != null` Und
 
 ## Schritt 4: Entwirrung überprüfen
 
- Während`Untangle`Funktion soll die Sicherheit anderer Lesezeichen gewährleisten, es ist immer eine gute Praxis, dies zu überprüfen. So können wir überprüfen, ob beim Entwirrungsprozess nicht versehentlich das Ende eines anderen Lesezeichens gelöscht wurde:
+ Während`Untangle` Funktion soll die Sicherheit anderer Lesezeichen gewährleisten, es ist immer eine gute Praxis, dies zu überprüfen. So können wir überprüfen, ob beim Entwirrungsprozess nicht versehentlich das Ende eines anderen Lesezeichens gelöscht wurde:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -135,4 +135,4 @@ Derzeit konzentriert sich der Code auf das Entwirren von Lesezeichen, die sich �
 
 ### Gibt es bei der Verwendung dieses Ansatzes irgendwelche Einschränkungen?
 
-Bei diesem Ansatz wird davon ausgegangen, dass Lesezeichen in Tabellenzellen klar definiert sind. Wenn Lesezeichen außerhalb von Zellen oder an unerwarteten Stellen platziert werden, funktioniert der Entwirrungsprozess möglicherweise nicht wie beabsichtigt.
+Bei diesem Ansatz wird davon ausgegangen, dass Lesezeichen innerhalb der Tabellenzellen klar definiert sind. Wenn Lesezeichen außerhalb von Zellen oder an unerwarteten Stellen platziert werden, funktioniert der Entwirrungsprozess möglicherweise nicht wie beabsichtigt.

@@ -19,7 +19,7 @@ Mit der Funktion „Verschlüsselte PDFs laden“ von Aspose.Words für .NET kö
 Der erste Schritt besteht darin, das verschlüsselte PDF-Dokument in Ihre Anwendung zu laden. So geht's:
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
+//Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

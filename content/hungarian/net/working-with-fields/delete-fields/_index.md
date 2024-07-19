@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 Ismételje meg a dokumentum összes mezőjét, és távolítsa el őket:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 Ez a ciklus visszafelé iterál a mezőgyűjteményben, hogy elkerülje a gyűjtemény iteráció közbeni módosításával kapcsolatos problémákat.

@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Vložte objekt OLE s balíčkem OLE
- Použijte generátor dokumentů`InsertOleObject` metoda pro vložení objektu OLE s balíčkem OLE do dokumentu. Zadejte datový proud, typ objektu, možnosti zobrazení a další nezbytná nastavení.
+ Použijte generátor dokumentů`InsertOleObject`metoda pro vložení objektu OLE s balíčkem OLE do dokumentu. Zadejte datový proud, typ objektu, možnosti zobrazení a další nezbytná nastavení.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -88,7 +88,7 @@ using System.IO;
 
 #### Otázka: Jak vytvořit nový dokument a generátor dokumentů?
 
- Odpověď: Nový dokument můžete vytvořit pomocí`Document` třídu a tvůrce dokumentů pomocí`DocumentBuilder` třídy, jak je uvedeno níže:
+ Odpověď: Můžete vytvořit nový dokument pomocí`Document` třídu a tvůrce dokumentů pomocí`DocumentBuilder` třídy, jak je uvedeno níže:
 
 ```csharp
 Document doc = new Document();
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Otázka: Jak vložit objekt OLE s balíčkem OLE do dokumentu?
 
- A: Použijte`InsertOleObject`metoda tvůrce dokumentů (`DocumentBuilder`) pro vložení objektu OLE s balíkem OLE do dokumentu. Zadejte datový proud, typ objektu, možnosti zobrazení a další nezbytná nastavení. Zde je příklad:
+ A: Použijte`InsertOleObject` metoda tvůrce dokumentů (`DocumentBuilder`) pro vložení objektu OLE s balíkem OLE do dokumentu. Zadejte datový proud, typ objektu, možnosti zobrazení a další nezbytná nastavení. Zde je příklad:
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### Otázka: Jak uložit dokument?
 
- A: Použijte dokument`Save` způsob uložení dokumentu do souboru. Zde je příklad:
+ A: Použijte dokument`Save`způsob uložení dokumentu do souboru. Zde je příklad:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

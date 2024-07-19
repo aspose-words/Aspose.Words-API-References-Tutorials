@@ -13,8 +13,8 @@ Chuyển đổi cơ bản hướng dẫn bạn thực hiện các chuyển đổ
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Chuyển đổi Doc sang Docx](./doc-to-docx/) | Tìm hiểu cách chuyển đổi DOC sang DOCX bằng Aspose.Words for .NET. Hướng dẫn từng bước với các ví dụ về mã. Hoàn hảo cho các nhà phát triển.  |
-| [Chuyển đổi Docx sang Rtf](./docx-to-rtf/) | Tìm hiểu cách chuyển đổi DOCX sang RTF bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Lý tưởng cho các nhà phát triển đang tìm kiếm một giải pháp hiệu quả.  |  
+| [Chuyển đổi Doc sang Docx](./doc-to-docx/) | Tìm hiểu cách chuyển đổi DOC sang DOCX bằng Aspose.Words cho .NET. Hướng dẫn từng bước với các ví dụ về mã. Hoàn hảo cho các nhà phát triển.  |
+| [Chuyển đổi Docx sang Rtf](./docx-to-rtf/) | Tìm hiểu cách chuyển đổi DOCX sang RTF bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Chuyển đổi dễ dàng để xử lý tài liệu liền mạch. |  
 | [Chuyển tập tin Word sang PDF](./docx-to-pdf/) | Tìm hiểu cách dễ dàng chuyển đổi tệp Word sang PDF bằng Aspose.Words cho .NET với hướng dẫn của chúng tôi. Hoàn hảo cho các nhà phát triển đang tìm kiếm chuyển đổi tài liệu nhanh chóng và đáng tin cậy. | 
 | [Chuyển đổi Docx sang Byte](./docx-to-byte/) | Tìm hiểu cách chuyển đổi Docx thành mảng byte trong .NET bằng Aspose.Words để xử lý tài liệu hiệu quả. Hướng dẫn từng bước bao gồm. |  
 | [Chuyển đổi Docx sang Epub](./docx-to-epub/) | Chuyển đổi DOCX sang EPUB dễ dàng với Aspose.Words for .NET. Hãy làm theo hướng dẫn của chúng tôi để tích hợp liền mạch vào các ứng dụng .NET của bạn. |

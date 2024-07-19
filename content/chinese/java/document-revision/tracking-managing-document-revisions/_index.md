@@ -26,7 +26,7 @@ Aspose.Words for Java 是一个功能强大且功能丰富的 Java 库，允许�
 
 ### 创建您的第一个文档
 
-让我们从使用 Aspose.Words for Java 创建新 Word 文档的简单示例开始。在此示例中，我们将创建一个文档并向其中添加一些文本。
+让我们从一个简单的示例开始，使用 Aspose.Words for Java 创建一个新 Word 文档。在此示例中，我们将创建一个文档并向其中添加一些文本。
 
 ```java
 import com.aspose.words.Document;

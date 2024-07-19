@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Därefter måste vi flytta markören till ett specifikt stycke i dokumentet där vi vill infoga sammanslagningsfältet.
 
 ```csharp
-// Flytta markören till stycket.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Steg 6: Infoga sammanfogningsfältet

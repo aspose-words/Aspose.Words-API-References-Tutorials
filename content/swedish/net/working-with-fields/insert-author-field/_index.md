@@ -80,7 +80,7 @@ S: Ett författarefält i Aspose.Words är ett specialfält som automatiskt info
 
 #### F: Hur uppdaterar man författarefältet i ett Word-dokument med Aspose.Words?
 
-S: Författarfältet i ett Word-dokument kan uppdateras för att återspegla den aktuella författarens namn. För detta kan du använda metoden UpdateFields som är tillgänglig i klassen Document. Denna metod kommer att uppdatera alla fält i dokumentet, inklusive författarefältet.
+S: Författarfältet i ett Word-dokument kan uppdateras för att återspegla den aktuella författarens namn. För detta kan du använda metoden UpdateFields som är tillgänglig i klassen Document. Denna metod kommer att uppdatera alla fält i dokumentet, inklusive författarens fält.
 
 #### F: Är det möjligt att anpassa formatet för författarefältet i ett Word-dokument?
 

@@ -106,7 +106,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Q: Aspose.Words for .NET で段落がリスト項目であるかどうかを確認する方法を教えてください。
 
- A:`IsListItem`の財産`Paragraph`オブジェクトは段落がリスト項目であるかどうかをチェックします。`IsListItem`不動産収益`true`段落がリスト項目である場合は、そうでない場合は`false`.
+ A:`IsListItem`の財産`Paragraph`段落がリスト項目であるかどうかを確認するオブジェクト。`IsListItem`不動産収益`true`段落がリスト項目である場合は、そうでない場合は`false`.
 
 ```csharp
 if (paragraph.IsListItem)

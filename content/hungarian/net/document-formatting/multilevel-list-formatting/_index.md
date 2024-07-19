@@ -42,7 +42,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Alkalmazza az alapértelmezett számozást
 
- A számozott listával kezdéshez használja a`ApplyNumberDefault` módszer. Ezzel beállítja az alapértelmezett számozott lista formázást.
+ Számozott listával kezdéshez használja a`ApplyNumberDefault` módszer. Ezzel beállítja az alapértelmezett számozott lista formázást.
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();

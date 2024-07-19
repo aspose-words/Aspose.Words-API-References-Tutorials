@@ -71,7 +71,7 @@ No momento, estamos usando as opções padrão, mas você pode personalizá-las,
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
 ```
 
- O padrão regex`[s|m]ad` corresponde a qualquer palavra que termine em "anúncio" e que comece com "s" ou "m". A string de substituição "ruim" substituirá todas as correspondências encontradas.
+ O padrão regex`[s|m]ad` corresponde a qualquer palavra que termine em "ad" e que comece com "s" ou "m". A string de substituição "ruim" substituirá todas as correspondências encontradas.
 
 ## Etapa 5: salve o documento modificado
 

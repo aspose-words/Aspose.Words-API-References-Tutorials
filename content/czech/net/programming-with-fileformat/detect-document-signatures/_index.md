@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Zjistěte digitální podpisy
 
- Dále použijeme`DetectFileFormat` metoda`FileFormatUtil` třídy k detekci informací o formátu souboru. V tomto příkladu předpokládáme, že dokument se nazývá "Digitálně podepsaný.docx" a je umístěn v určeném adresáři dokumentů.
+ Dále použijeme`DetectFileFormat` metoda`FileFormatUtil`třídy k detekci informací o formátu souboru. V tomto příkladu předpokládáme, že dokument se nazývá "Digitálně podepsaný.docx" a je umístěn v určeném adresáři dokumentů.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ Tento tutoriál vám poskytl krok za krokem průvodce, jak detekovat digitální
 
 #### Jak zjistit přítomnost digitálního podpisu na dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
- Chcete-li zjistit přítomnost digitálního podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete postupovat podle kroků uvedených v tutoriálu. Za použití`DetectFileFormat` metoda`FileFormatUtil` class vám umožní zjistit informace o formátu souboru. Poté můžete zkontrolovat`HasDigitalSignature` vlastnictvím`FileFormatInfo`objekt k určení, zda dokument obsahuje digitální podpis. Pokud je detekován digitální podpis, můžete zobrazit zprávu, že podpisy budou ztraceny, pokud je dokument otevřen/uložen pomocí Aspose.Words.
+ Chcete-li zjistit přítomnost digitálního podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete postupovat podle kroků uvedených v tutoriálu. Za použití`DetectFileFormat` metoda`FileFormatUtil` class vám umožní zjistit informace o formátu souboru. Poté můžete zkontrolovat`HasDigitalSignature` vlastnictvím`FileFormatInfo` objekt k určení, zda dokument obsahuje digitální podpis. Pokud je detekován digitální podpis, můžete zobrazit zprávu, že podpisy budou ztraceny, pokud je dokument otevřen/uložen pomocí Aspose.Words.
 
 #### Jak určit adresář obsahující dokumenty, ve kterých se má hledat digitální podpis?
 

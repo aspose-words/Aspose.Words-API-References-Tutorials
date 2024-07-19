@@ -88,7 +88,7 @@ Section sectionToAppend = doc.Sections[1];
 section.AppendContent(sectionToAppend);
 ```
 
-I det här steget kommer vi åt det andra avsnittet och lägger till dess innehåll till det tredje avsnittet. Nu innehåller det tredje avsnittet innehållet i både det första och det andra avsnittet.
+det här steget kommer vi åt det andra avsnittet och lägger till dess innehåll till det tredje avsnittet. Nu innehåller det tredje avsnittet innehållet i både det första och det andra avsnittet.
 
 ## Steg 6: Spara dokumentet
 

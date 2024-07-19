@@ -15,7 +15,7 @@ url: /el/net/working-with-revisions/accept-revisions/
 Σε αυτό το παράδειγμα, δημιουργούμε ένα έγγραφο και προσθέτουμε περιεχόμενο. Χρησιμοποιούμε πολλές παραγράφους για να απεικονίσουμε αλλαγές και αναθεωρήσεις. Δείτε πώς:
 
 ```csharp
-// Διαδρομή στον κατάλογο εγγράφων.
+//Διαδρομή στον κατάλογο εγγράφων.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

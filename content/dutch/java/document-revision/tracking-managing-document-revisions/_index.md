@@ -2,7 +2,7 @@
 title: Documentrevisies volgen en beheren
 linktitle: Documentrevisies volgen en beheren
 second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer in deze uitgebreide handleiding hoe u documentrevisies kunt bijhouden en beheren met Aspose.Words voor Java. Ontvang stapsgewijze instructies en broncodevoorbeelden.
+description: Leer in deze uitgebreide handleiding hoe u documentrevisies kunt volgen en beheren met Aspose.Words voor Java. Ontvang stapsgewijze instructies en broncodevoorbeelden.
 type: docs
 weight: 10
 url: /nl/java/document-revision/tracking-managing-document-revisions/

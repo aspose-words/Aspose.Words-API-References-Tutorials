@@ -78,7 +78,7 @@ cell.cell_format.horizontal_merge = CellMerge.FIRST
 cell.cell_format.horizontal_merge = CellMerge.NONE
 ```
 
-## スタイルとカスタマイズ:
+## スタイリングとカスタマイズ:
 
 Aspose.Words には、表の外観を向上させるさまざまなスタイル設定オプションが用意されています。セルの背景色、テキストの配置、フォントの書式設定などを設定できます。
 

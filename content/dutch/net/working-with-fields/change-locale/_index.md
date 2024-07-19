@@ -60,7 +60,7 @@ Thread.CurrentThread.CurrentCulture = currentCulture;
 
 In de bovenstaande code herstellen we de oorspronkelijke cultuur van de thread.
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 Sla het gewijzigde document op in een bestand met behulp van de Save-methode van de Document-klasse:
 
 ```csharp

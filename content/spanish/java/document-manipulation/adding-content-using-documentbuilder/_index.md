@@ -239,7 +239,7 @@ En esta guía completa, hemos explorado las capacidades de Aspose.Words para Doc
 
 ### P: ¿Qué es Aspose.Words para Java?
 
-R: Aspose.Words para Java es una biblioteca de Java que permite a los desarrolladores crear, modificar y manipular documentos de Microsoft Word mediante programación. Proporciona una amplia gama de funciones para la generación, el formato y la inserción de contenido de documentos.
+R: Aspose.Words para Java es una biblioteca de Java que permite a los desarrolladores crear, modificar y manipular documentos de Microsoft Word mediante programación. Proporciona una amplia gama de funciones para la generación, formato e inserción de contenido de documentos.
 
 ### P: ¿Cómo puedo agregar una tabla de contenido a mi documento?
 

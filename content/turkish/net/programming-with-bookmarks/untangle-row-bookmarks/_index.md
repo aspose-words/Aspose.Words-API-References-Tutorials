@@ -32,7 +32,7 @@ using System;
 
 ## Adım 1: Word Belgesini Yükleyin
 
-Karışık satır yer imlerini içeren Word belgesini yükleyerek başlıyoruz.`Document` sınıf Aspose.Words'te belge düzenlemeyi yönetir. Belgeyi nasıl yükleyeceğiniz aşağıda açıklanmıştır:
+ Karışık satır yer imlerini içeren Word belgesini yükleyerek başlıyoruz.`Document` sınıf Aspose.Words'te belge düzenlemeyi yönetir. Belgeyi nasıl yükleyeceğiniz aşağıda açıklanmıştır:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // Belge konumunuzla değiştirin
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Satırların geçerli ve bitişik olup olmadığını kontrol edin
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Yer işaretinin ucunu üst satırın son hücresinin son paragrafına taşı
+		   //Yer işaretinin ucunu üst satırın son hücresinin son paragrafına taşı
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ Kodun ne yaptığına ilişkin adım adım açıklama aşağıda verilmiştir:
 
  Bir belge kullanarak belgedeki tüm yer imlerini yineliyoruz.`foreach` döngü.
 Her yer imi için, hem yer imi başlangıcının (`bookmark.BookmarkStart`) ve yer imi sonu (`bookmark.BookmarkEnd` ) kullanmak`GetAncestor` yöntem.
-Daha sonra her iki satırın da bulunup bulunmadığını kontrol ederiz (`row1 != null`Ve`row2 != null`ve eğer bitişik satırlarsa (`row1.NextSibling == row2`). Bu, yalnızca bitişik satırlara yayılan yer işaretlerini değiştirmemizi sağlar.
+Daha sonra her iki satırın da bulunup bulunmadığını kontrol ederiz (`row1 != null`Ve`row2 != null`) ve eğer bitişik satırlarsa (`row1.NextSibling == row2`). Bu, yalnızca bitişik satırlara yayılan yer işaretlerini değiştirmemizi sağlar.
 Koşullar karşılanırsa, yer imi bitiş düğümünü üst satırın son hücresindeki son paragrafın sonuna taşırız (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) onları etkili bir şekilde çözer.
 
 ## 3. Adım: Yer İşaretine Göre Satırı Sil
@@ -87,12 +87,12 @@ private void DeleteRowByBookmark(Document doc, string bookmarkName)
 
 Yer imi adını alıyoruz (`bookmarkName`) giriş olarak.
  İlgili yer imi nesnesini kullanarak alıyoruz`doc.Range.Bookmarks[bookmarkName]`.
- Daha sonra yer iminin üst satırını kullanmaya başlarız`GetAncestor` (benzer`Untangle` işlev).
+Daha sonra yer iminin üst satırını kullanmaya başlarız`GetAncestor` (benzer`Untangle` işlev).
 Son olarak yer işaretinin ve satırın mevcut olup olmadığını kontrol ederiz (`bookmark != null` Ve
 
 ## 4. Adım: Dolaşmayı Doğrulayın
 
- iken`Untangle`işlevi diğer yer imlerinin güvenliğini sağlamalıdır; doğrulamak her zaman iyi bir uygulamadır. Karışıklığı çözme işleminin yanlışlıkla başka bir yer iminin sonunu silip silmediğini şu şekilde kontrol edebiliriz:
+ iken`Untangle` işlevi diğer yer imlerinin güvenliğini sağlamalıdır; doğrulamak her zaman iyi bir uygulamadır. Karışıklığı çözme işleminin yanlışlıkla başka bir yer iminin sonunu silip silmediğini şu şekilde kontrol edebiliriz:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

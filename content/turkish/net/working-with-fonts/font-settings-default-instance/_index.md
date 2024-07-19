@@ -55,7 +55,7 @@ Bu örnekte:
 
 ## 3. Adım: Belgeyi Yükleyin
 
- Yazı tipi kaynaklarınız yapılandırıldıktan sonraki adım, belgenizi Aspose.Words'e yüklemektir.`Document`nesne. Bu, belgeyi değiştirmenize ve sonunda kaydetmenize olanak tanır.
+ Yazı tipi kaynaklarınız yapılandırıldıktan sonraki adım, belgenizi Aspose.Words'e yüklemektir.`Document` nesne. Bu, belgeyi değiştirmenize ve sonunda kaydetmenize olanak tanır.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

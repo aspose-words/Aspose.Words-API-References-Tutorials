@@ -15,10 +15,10 @@ url: /ru/net/document-protection/password-protection/
 
 Прежде чем мы углубимся в тонкости защиты паролем ваших документов Word, вам понадобится несколько вещей:
 
-1. Aspose.Words для .NET: убедитесь, что у вас есть библиотека Aspose.Words для .NET. Ты можешь[скачай это здесь](https://releases.aspose.com/words/net/).
+1.  Aspose.Words для .NET: убедитесь, что у вас есть библиотека Aspose.Words для .NET. Ты можешь[скачай это здесь](https://releases.aspose.com/words/net/).
 2. Среда разработки: Visual Studio или любая другая среда разработки C#.
 3. Базовые знания C#: фундаментальное понимание программирования на C#.
-4.  Aspose License: Получите лицензию от[здесь](https://purchase.aspose.com/buy) или используйте[временная лицензия](https://purchase.aspose.com/temporary-license/) для оценки.
+4.  Aspose License: Получите лицензию от[здесь](https://purchase.aspose.com/buy)или используйте[временная лицензия](https://purchase.aspose.com/temporary-license/) для оценки.
 
 ## Импортировать пространства имен
 

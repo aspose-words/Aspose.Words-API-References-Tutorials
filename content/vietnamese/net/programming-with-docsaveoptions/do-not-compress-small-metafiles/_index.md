@@ -94,7 +94,7 @@ Có, Aspose.Words for .NET cho phép bạn định cấu hình các tùy chọn 
 
 ### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
 
- Mặc dù bạn có thể sử dụng Aspose.Words cho .NET mà không cần giấy phép đánh giá, nhưng cần có giấy phép để mở khóa toàn bộ chức năng. Bạn có thể có được giấy phép[đây](https://purchase.aspose.com/buy) hoặc sử dụng một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
+ Mặc dù bạn có thể sử dụng Aspose.Words cho .NET mà không cần giấy phép đánh giá, nhưng cần có giấy phép để mở khóa toàn bộ chức năng. Bạn có thể có được giấy phép[đây](https://purchase.aspose.com/buy)hoặc sử dụng một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
 
 ### Làm cách nào để đảm bảo tài liệu của tôi tuân thủ các tiêu chuẩn PDF/A?
 

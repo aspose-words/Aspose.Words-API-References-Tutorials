@@ -2,7 +2,7 @@
 title: 了解 Word 文档中的字体和文本样式
 linktitle: 了解 Word 文档中的字体和文本样式
 second_title: Aspose.Words Python 文档管理 API
-description: 探索 Word 文档中的字体和文本样式。了解如何使用 Aspose.Words for Python 增强可读性和视觉吸引力。包含分步示例的综合指南。
+description: 探索 Word 文档中的字体和文本样式世界。了解如何使用 Aspose.Words for Python 增强可读性和视觉吸引力。包含分步示例的综合指南。
 type: docs
 weight: 13
 url: /zh/python-net/document-structure-and-content-manipulation/document-fonts/
@@ -37,7 +37,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/document-fonts/
 
 ## 对齐和行距
 
-文本对齐会影响文档的美观度。将文本左对齐、右对齐、居中对齐或两端对齐，以获得美观的外观。适当的行距可提高可读性并防止文本显得拥挤。
+文本对齐会影响文档的美观度。左对齐、右对齐、居中对齐或两端对齐可使文本看起来更美观。适当的行距可提高可读性，避免文本显得拥挤。
 
 ## 创建标题和副标题
 

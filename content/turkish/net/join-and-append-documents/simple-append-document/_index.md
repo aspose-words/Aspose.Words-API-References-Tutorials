@@ -70,7 +70,7 @@ Benzer şekilde, kaynak belgeyi eklemek istediğiniz belgeyi yükleyin. Bu, hede
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
- Yine yeni bir tane yaratıyoruz`Document` nesnenizi oluşturun ve dizininizden "Northwind traders.docx" adlı dosyayı yükleyin.
+ Yine yeni bir tane yaratıyoruz`Document` nesnenizi oluşturun ve dizininizden "Northwind traders.docx" isimli dosyayı yükleyin.
 
 ## Adım 5: Kaynak Belgeyi Ekleyin
 

@@ -15,7 +15,7 @@ A diagramok hatékony eszközt jelentenek az adatok megjelenítésére. Ha profe
 
 Mielőtt belemerülne a kódolásba, meg kell felelnie néhány előfeltételnek:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztési környezet: Szüksége van egy integrált fejlesztői környezetre (IDE), például a Visual Studiora.
 3. .NET-keretrendszer: Győződjön meg arról, hogy a fejlesztői környezete be van állítva a .NET-fejlesztéshez.
 4. Alapvető C# ismerete: Ez az útmutató feltételezi, hogy rendelkezik a C# programozás alapvető ismereteivel.

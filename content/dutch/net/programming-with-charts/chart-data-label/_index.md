@@ -101,7 +101,7 @@ labels.Separator = "/";
 - labels.ShowValue: Geeft de waarde van de gegevenspunten weer.
 - labels.Separator: Stelt het scheidingsteken voor de gegevenslabels in.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Sla het document ten slotte op in de opgegeven map.
 

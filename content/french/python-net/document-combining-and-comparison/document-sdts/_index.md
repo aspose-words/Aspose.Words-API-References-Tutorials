@@ -127,7 +127,7 @@ Suivez ces bonnes pratiques lorsque vous utilisez des SDT :
 
 ## Étude de cas : création d'un modèle de rapport dynamique
 
-Considérons une étude de cas dans laquelle nous construisons un modèle de rapport dynamique à l'aide de SDT. Nous allons créer des espaces réservés pour le titre du rapport, le nom de l'auteur et le contenu. Ensuite, nous remplirons par programmation ces espaces réservés avec des données pertinentes.
+Considérons une étude de cas dans laquelle nous construisons un modèle de rapport dynamique à l'aide de SDT. Nous allons créer des espaces réservés pour le titre du rapport, le nom de l'auteur et le contenu. Ensuite, nous remplirons par programmation ces espaces réservés avec les données pertinentes.
 
 ## Conclusion
 

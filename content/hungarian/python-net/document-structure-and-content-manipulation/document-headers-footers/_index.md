@@ -10,7 +10,7 @@ url: /hu/python-net/document-structure-and-content-manipulation/document-headers
 A Word-dokumentumok fejlécei és láblécei döntő szerepet játszanak abban, hogy kontextust, márkaépítést és további információkat biztosítsanak a tartalomhoz. Ha ezeket az elemeket az Aspose.Words for Python API-val manipulálja, jelentősen javíthatja a dokumentumok megjelenését és funkcionalitását. Ebben a lépésről lépésre bemutatjuk, hogyan dolgozhatunk fejlécekkel és láblécekkel az Aspose.Words for Python használatával.
 
 
-## Az Aspose.Words for Python használatának első lépései
+## Az Aspose.Words for Python használatának megkezdése
 
 Mielőtt belevágna a fejléc- és lábléckezelésbe, be kell állítania az Aspose.Words for Python alkalmazást. Kovesd ezeket a lepeseket:
 

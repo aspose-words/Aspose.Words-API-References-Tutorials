@@ -83,7 +83,7 @@ Az Aspose.Words segítségével könnyedén módosíthatja a szövegek irányát
 
 Fontos megjegyezni, hogy ez a funkció különösen akkor hasznos, ha olyan nyelvekkel dolgozunk, amelyek speciális szövegirányt igényelnek. Az Aspose.Words megkönnyíti ezt a feladatot, mivel hatékony eszközöket biztosít a szövegek irányának kezelésére a dokumentumokban.
 
-Ne felejtse el használni a megfelelő betöltési beállításokat, például az automatikus szövegirány beállítását, hogy a kívánt eredményt kapja a dokumentumokban.
+Ne felejtse el használni a megfelelő betöltési beállításokat, például az automatikus szövegirány beállítását, hogy elérje a kívánt eredményt a dokumentumokban.
 
 Az Aspose.Words for .NET számos fejlett szolgáltatást kínál a dokumentumok kezeléséhez és létrehozásához. Az Aspose.Words által biztosított dokumentáció és példák további tanulmányozásával teljes mértékben kiaknázhatja ennek a nagy teljesítményű könyvtárnak a lehetőségeit.
 

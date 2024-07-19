@@ -80,7 +80,7 @@ A megjegyzésfeloldás segít a visszajelzések nyomon követésében és kezel�
 
 #### K: Hogyan oldhatok meg egy megjegyzést az Aspose.Words for .NET-ben?
 
- V: Az Aspose.Words for .NET-ben található megjegyzések megoldásához használhatja a`Comment.Resolve` módszer, amely meghatározza a`Comment` megoldani kívánt objektum. Ezzel megoldottként jelöli meg a megjegyzést, és elrejti a végleges dokumentumban.
+ V: Az Aspose.Words for .NET-ben található megjegyzések megoldásához használhatja a`Comment.Resolve` módszer, amely meghatározza a`Comment` feloldani kívánt objektumot. Ezzel megoldottként jelöli meg a megjegyzést, és elrejti a végleges dokumentumban.
 
 #### K: Hogyan adhatok választ egy megoldott megjegyzésre az Aspose.Words for .NET-ben?
 

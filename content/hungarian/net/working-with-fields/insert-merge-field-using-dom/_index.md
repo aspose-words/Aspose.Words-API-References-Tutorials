@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Ezután a kurzort a dokumentum egy adott bekezdésére kell mozgatnunk, ahová az egyesítési mezőt be akarjuk szúrni.
 
 ```csharp
-// Mozgassa a kurzort a bekezdésre.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## 6. lépés: Illessze be az Egyesítés mezőt
@@ -107,7 +107,7 @@ Ha követi ezeket a lépéseket, az Aspose.Words for .NET segítségével egysze
 ## GYIK
 
 ### 1. Mi az egyesítési mező?
-Az egyesítési mező egy helyőrző a dokumentumban, amely dinamikusan lecserélhető adatforrásból, például adatbázisból vagy CSV-fájlból származó adatokkal.
+Az egyesítési mező egy olyan helyőrző a dokumentumban, amely dinamikusan lecserélhető adatforrásból, például adatbázisból vagy CSV-fájlból származó adatokkal.
 
 ### 2. Használhatom ingyenesen az Aspose.Words-t?
  Az Aspose.Words ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/). A hosszú távú használathoz licencet kell vásárolnia.

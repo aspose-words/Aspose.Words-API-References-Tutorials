@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: configura le origini dei caratteri
-Successivamente, creeremo un'istanza di`FontSettings` e ottieni le fonti dei caratteri esistenti utilizzando il file`GetFontsSources()` metodo. Aggiungeremo anche una nuova fonte di carattere specificando una cartella contenente i caratteri.
+ Successivamente, creeremo un'istanza di`FontSettings` e ottieni le fonti dei caratteri esistenti utilizzando il file`GetFontsSources()` metodo. Aggiungeremo anche una nuova fonte di carattere specificando una cartella contenente i caratteri.
 
 ```csharp
 // Configura le origini dei caratteri

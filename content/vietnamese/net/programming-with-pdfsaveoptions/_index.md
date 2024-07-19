@@ -11,7 +11,7 @@ Hướng dẫn Aspose.Words for .NET về Xử lý văn bản bằng PdfSaveOpti
 
 Bạn sẽ tìm hiểu cách điều chỉnh các tùy chọn chất lượng hình ảnh, chọn mức nén cho hình ảnh, đặt cài đặt bảo mật PDF như mã hóa và quyền, thậm chí chèn hình mờ vào tệp PDF được tạo. Các hướng dẫn cũng bao gồm các mẫu mã chi tiết để giúp bạn thực hành các tính năng này trong dự án của mình.
 
-Cho dù bạn muốn chuyển đổi tài liệu Word sang PDF để phân phối, lưu trữ hoặc in trực tuyến, những hướng dẫn này sẽ cung cấp cho bạn kiến thức để đạt được kết quả chính xác, chất lượng cao. Với Aspose.Words for .NET và PdfSaveOptions, bạn có thể tối ưu hóa quy trình chuyển đổi tệp và nhận được các tệp PDF đáp ứng nhu cầu cụ thể của mình.
+Cho dù bạn muốn chuyển đổi tài liệu Word sang PDF để phân phối, lưu trữ hay in trực tuyến, những hướng dẫn này sẽ cung cấp cho bạn kiến thức để đạt được kết quả chính xác, chất lượng cao. Với Aspose.Words for .NET và PdfSaveOptions, bạn có thể tối ưu hóa quy trình chuyển đổi tệp và nhận được các tệp PDF đáp ứng nhu cầu cụ thể của mình.
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
@@ -24,7 +24,7 @@ Cho dù bạn muốn chuyển đổi tài liệu Word sang PDF để phân phố
 | [Giảm kích thước PDF bằng cách tắt phông chữ nhúng](./disable-embed-windows-fonts/) | Tìm hiểu cách tắt tính năng nhúng phông chữ của Windows khi chuyển đổi tài liệu sang PDF bằng Aspose.Words cho .NET. |
 | [Tối ưu hóa kích thước PDF bằng cách bỏ qua phông chữ Arial & Times Roman được nhúng](./skip-embedded-arial-and-times-roman-fonts/) | Hướng dẫn từng bước để tạo PDF mà không cần nhúng phông chữ Arial và Times Roman bằng Aspose.Words cho .NET. |
 | [Giảm kích thước tệp PDF bằng cách không nhúng phông chữ cốt lõi](./avoid-embedding-core-fonts/) | Tìm hiểu cách tránh nhúng phông chữ cơ bản khi chuyển đổi tài liệu Word sang PDF bằng Aspose.Words cho .NET. |
-| [Thoát URI trong tài liệu PDF](./escape-uri/) | Hướng dẫn từng bước để thoát Uri bằng Aspose.Words cho .NET. |
+| [Thoát URI trong tài liệu PDF](./escape-uri/) | Tìm hiểu cách thoát URI trong tệp PDF bằng Aspose.Words cho .NET. Hướng dẫn chi tiết này sẽ hướng dẫn bạn từng bước thực hiện quy trình. |
 | [Xuất Dấu trang Đầu trang Chân trang Tài liệu Word sang Tài liệu PDF](./export-header-footer-bookmarks/) | Hướng dẫn từng bước để xuất dấu trang đầu trang và chân trang bằng Aspose.Words cho .NET. |
 | [Giảm kích thước PDF bằng cách chia tỷ lệ phông chữ Wmf thành kích thước siêu tệp](./scale-wmf-fonts-to-metafile-size/) | Hướng dẫn từng bước để điều chỉnh kích thước phông chữ WMF khi chuyển đổi sang PDF bằng Aspose.Words cho .NET. |
 | [Cải thiện việc đăng văn bản PDF bằng cách định vị văn bản bổ sung](./additional-text-positioning/) | Tìm hiểu cách kiểm soát vị trí của văn bản bổ sung khi chuyển đổi tài liệu Word sang PDF bằng Aspose.Words for .NET. |

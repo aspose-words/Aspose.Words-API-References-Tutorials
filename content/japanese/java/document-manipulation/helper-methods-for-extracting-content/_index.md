@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でコンテンツを抽出するためのヘルパー メソッド
 linktitle: コンテンツ抽出のためのヘルパーメソッド
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用して Word 文書からコンテンツを効率的に抽出する方法を学びます。この包括的なガイドで、ヘルパー メソッド、カスタム フォーマットなどについて説明します。
+description: Aspose.Words for Java を使用して Word 文書からコンテンツを効率的に抽出する方法を学びます。この包括的なガイドで、ヘルパー メソッド、カスタム書式設定などについて説明します。
 type: docs
 weight: 14
 url: /ja/java/document-manipulation/helper-methods-for-extracting-content/

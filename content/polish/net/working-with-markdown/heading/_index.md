@@ -62,7 +62,7 @@ Odpowiedź: Nagłówek Markdown to element używany do tworzenia nagłówków i 
 
 #### P: Jak korzystać z różnych poziomów nagłówków Markdown?
 
-O: Aby używać różnych poziomów nagłówków Markdown, możesz dodać różną liczbę symboli funta (#) przed tekstem nagłówka.
+Odp.: Aby używać różnych poziomów nagłówków Markdown, możesz dodać różną liczbę symboli funta (#) przed tekstem nagłówka.
 
 #### P: Czy istnieją jakieś ograniczenia w używaniu nagłówków Markdown?
 

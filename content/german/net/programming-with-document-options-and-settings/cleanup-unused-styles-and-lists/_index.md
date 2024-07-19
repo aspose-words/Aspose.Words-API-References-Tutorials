@@ -2,91 +2,101 @@
 title: Unbenutzte Stile und Listen bereinigen
 linktitle: Unbenutzte Stile und Listen bereinigen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Bereinigen nicht verwendeter Stile und Listen in einem Dokument mit Aspose.Words für .NET.
+description: Bereinigen Sie Ihre Word-Dokumente mit Aspose.Words für .NET, indem Sie nicht verwendete Stile und Listen entfernen. Folgen Sie dieser Schritt-für-Schritt-Anleitung, um Ihre Dokumente mühelos zu optimieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch den C#-Quellcode, um nicht verwendete Stile und Listen mit Aspose.Words für .NET zu bereinigen. Mit dieser Funktion können Sie Stile und Listen entfernen, die in einem Dokument nicht verwendet werden.
+Hallo! Hatten Sie schon einmal das Gefühl, dass Ihre Word-Dokumente ein wenig unübersichtlich werden? Sie wissen schon, diese ungenutzten Stile und Listen, die einfach da herumliegen, Platz beanspruchen und Ihr Dokument komplexer aussehen lassen, als es sein muss? Nun, Sie haben Glück! Heute tauchen wir in einen netten kleinen Trick ein, bei dem wir Aspose.Words für .NET verwenden, um diese ungenutzten Stile und Listen aufzuräumen. Es ist, als würden Sie Ihrem Dokument ein schönes, erfrischendes Bad geben. Also, schnappen Sie sich Ihren Kaffee, lehnen Sie sich zurück und lassen Sie uns anfangen!
 
-## Schritt 1: Projekt-Setup
+## Voraussetzungen
 
-Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Bibliothek Aspose.Words für .NET verwiesen wird.
+Bevor wir uns in die Einzelheiten stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen. Hier ist eine kurze Checkliste:
 
-## Schritt 2: Dokument einlegen
+- Grundkenntnisse in C#: Sie sollten mit der C#-Programmierung vertraut sein.
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie diese Bibliothek installiert haben. Wenn nicht, können Sie sie herunterladen[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Jede C#-kompatible IDE wie Visual Studio.
+- Beispieldokument: Ein Word-Dokument mit einigen unbenutzten Stilen und Listen, die bereinigt werden müssen.
 
-In diesem Schritt laden wir das Word-Dokument mit den unbenutzten Stilen und Listen, die wir bereinigen möchten. Verwenden Sie den folgenden Code, um das Dokument zu laden:
+## Namespaces importieren
+
+Das Wichtigste zuerst: Bringen wir unsere Namespaces in Ordnung. Sie müssen einige wichtige Namespaces importieren, um mit Aspose.Words arbeiten zu können.
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Cleaning;
+```
+
+## Schritt 1: Laden Sie Ihr Dokument
+
+Der erste Schritt besteht darin, das Dokument zu laden, das Sie bereinigen möchten. Sie müssen den Pfad zu Ihrem Dokumentverzeichnis angeben. Hier befindet sich Ihre Word-Datei.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
 
- Ersetzen`"YOUR DOCUMENTS DIRECTORY"` durch den tatsächlichen Pfad des Verzeichnisses, in dem sich Ihr Dokument befindet.
+## Schritt 2: Aktuelle Stile und Listen prüfen
 
-## Schritt 3: Stile und Listen vor dem Bereinigen zählen
-
-Vor der Bereinigung zählen wir die Anzahl der im Dokument vorhandenen Stile und Listen. Verwenden Sie den folgenden Code, um die Zähler anzuzeigen:
+Bevor wir mit dem Aufräumen beginnen, sollten wir uns ansehen, wie viele Stile und Listen derzeit in Ihrem Dokument vorhanden sind. Dadurch erhalten wir eine Vergleichsbasis nach dem Aufräumen.
 
 ```csharp
-Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
-$"Number of lists before cleaning: {doc.Lists.Count}");
+Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists before Cleanup: {doc.Lists.Count}");
 ```
 
-Diese Anweisungen zeigen die Anzahl der im Dokument vor der Bereinigung vorhandenen Stile und Listen.
+## Schritt 3: Bereinigungsoptionen festlegen
 
-## Schritt 4: Nicht verwendete Stile und Listen bereinigen
-
-Lassen Sie uns nun nicht verwendete Stile und Listen aus dem Dokument entfernen. Verwenden Sie den folgenden Code, um die Bereinigung durchzuführen:
+Jetzt ist es an der Zeit, die Bereinigungsoptionen zu definieren. In diesem Beispiel werden wir nicht verwendete Stile entfernen, aber die nicht verwendeten Listen behalten. Sie können diese Optionen nach Ihren Bedürfnissen anpassen.
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-doc. Cleanup(cleanupOptions);
 ```
 
- Dieser Code entfernt nicht verwendete Stile und Listen aus dem Dokument unter Verwendung der angegebenen Optionen. In diesem Beispiel haben wir die`UnusedStyles` Option zum Entfernen nicht verwendeter Stile und deaktivierte die`UnusedLists` Option zum Aufbewahren der Listen, auch wenn sie nicht verwendet werden.
+## Schritt 4: Führen Sie die Bereinigung durch
 
-## Schritt 5: Stile und Listen nach der Bereinigung zählen
-
-Nach der Bereinigung zählen wir die Stile und Listen erneut, um zu prüfen, ob sie reduziert wurden. Verwenden Sie den folgenden Code, um die neuen Zähler anzuzeigen:
+Nachdem wir unsere Bereinigungsoptionen festgelegt haben, können wir nun das Dokument bereinigen. Dieser Schritt entfernt die nicht verwendeten Stile und lässt die nicht verwendeten Listen intakt.
 
 ```csharp
-Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-				  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
+doc.Cleanup(cleanupOptions);
 ```
 
-Diese Anweisungen zeigen die Anzahl der Stile und Listen, die nach der Bereinigung übrig bleiben.
+## Schritt 5: Stile und Listen nach der Bereinigung prüfen
 
-### Beispielquellcode zum Bereinigen nicht verwendeter Stile und Listen mit Aspose.Words für .NET
+Um die Auswirkungen unserer Bereinigung zu sehen, überprüfen wir noch einmal die Anzahl der Stile und Listen. Dadurch wird angezeigt, wie viele Stile entfernt wurden.
 
 ```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Unused styles.docx");
-
-	// Zusammen mit den integrierten Stilen verfügt das Dokument nun über acht Stile.
-	// Ein benutzerdefinierter Stil wird als „verwendet“ markiert, solange sich im Dokument Text befindet
-	// in diesem Stil formatiert. Das bedeutet, dass die 4 Stile, die wir hinzugefügt haben, derzeit nicht verwendet werden.
-	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
-					  $"Count of lists before Cleanup: {doc.Lists.Count}");
-
-	// Löscht nicht verwendete Stile und Listen aus dem Dokument, abhängig von den angegebenen CleanupOptions.
-	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-	doc.Cleanup(cleanupOptions);
-
-	Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-					  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
-    
+Console.WriteLine($"Count of styles after Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 ```
 
- Achten Sie darauf, den korrekten Dokumentpfad im`dataDir` Variable.
+## Schritt 6: Speichern Sie das bereinigte Dokument
 
-Sie haben nun gelernt, wie Sie mit Aspose.Words für .NET ungenutzte Stile und Listen aus einem Dokument entfernen. Indem Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie diese Funktion ganz einfach auf Ihre eigenen Dokumente anwenden.
+Zum Schluss speichern wir unser bereinigtes Dokument. Dadurch wird sichergestellt, dass alle Änderungen gespeichert werden und Ihr Dokument so aufgeräumt wie möglich ist.
 
+```csharp
+doc.Save(dataDir + "CleanedDocument.docx");
+```
+
+## Abschluss
+
+Und da haben Sie es! Sie haben Ihr Word-Dokument erfolgreich bereinigt, indem Sie nicht verwendete Stile und Listen mit Aspose.Words für .NET entfernt haben. Es ist, als würden Sie Ihren digitalen Schreibtisch entrümpeln und Ihre Dokumente übersichtlicher und effizienter machen. Klopfen Sie sich selbst auf die Schulter für die gut gemachte Arbeit!
+
+## Häufig gestellte Fragen
+
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente programmgesteuert mit C# erstellen, ändern und konvertieren können.
+
+### Kann ich nicht verwendete Stile und Listen gleichzeitig entfernen?
+Ja, Sie können beides einstellen`UnusedLists`Und`UnusedStyles` Zu`true` im`CleanupOptions` um beides zu entfernen.
+
+### Ist es möglich, die Bereinigung rückgängig zu machen?
+Nein, sobald die Bereinigung abgeschlossen und das Dokument gespeichert ist, können Sie die Änderungen nicht mehr rückgängig machen. Bewahren Sie immer eine Sicherungskopie Ihres Originaldokuments auf.
+
+### Benötige ich eine Lizenz für Aspose.Words für .NET?
+ Ja, Aspose.Words für .NET erfordert eine Lizenz für die volle Funktionalität. Sie erhalten eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license) oder[Kaufe eins](https://purchase.aspose.com/buy).
+
+### Wo finde ich weitere Informationen und Unterstützung?
+ Eine ausführliche Dokumentation finden Sie[Hier](https://reference.aspose.com/words/net/) und erhalten Sie Unterstützung von der[Aspose-Forum](https://forum.aspose.com/c/words/8).

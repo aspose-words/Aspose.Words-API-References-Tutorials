@@ -12,7 +12,7 @@ In deze stapsgewijze zelfstudie laten we u zien hoe u woorden in verschillende t
 
 Zorg er om te beginnen voor dat Aspose.Words voor .NET is geïnstalleerd en geconfigureerd in uw ontwikkelomgeving. Download en installeer de bibliotheek vanaf de officiële site als u dat nog niet heeft gedaan.
 
-## Stap 1: Initialiseren van het documentobject
+## Stap 1: Het documentobject initialiseren
 
  Initialiseer eerst de`Document` object door het pad op te geven naar uw brondocument dat tekst in verschillende talen bevat:
 

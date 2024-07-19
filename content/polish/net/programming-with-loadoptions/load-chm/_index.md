@@ -68,6 +68,6 @@ Odp.: Absolutnie! Aspose.Words oferuje różne opcje ładowania, które można d
 
 Odp.: Chociaż Aspose.Words jest przeznaczony głównie dla dokumentów Word, obsługuje także inne formaty plików, takie jak PDF, HTML, EPUB i inne, co czyni go wszechstronnym narzędziem do przetwarzania dokumentów.
 
-#### P: W jaki sposób ładowanie plików CHM może przynieść korzyść mojej aplikacji C#?
+#### P: W jaki sposób ładowanie plików CHM może przynieść korzyści mojej aplikacji C#?
 
 O: Prawidłowe ładowanie plików CHM do aplikacji C# gwarantuje, że pomoc i dokumentacja udostępniana użytkownikom są dokładne, co zwiększa ogólne doświadczenie użytkownika i poprawia użyteczność oprogramowania.

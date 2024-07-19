@@ -98,7 +98,7 @@ foreach (Node child in children)
  예, 모양, 주석 등과 같은 다양한 노드 유형을 확인하여 조작할 수 있습니다.`NodeType`.
 
 ### 4. Aspose.Words for .NET을 사용하려면 라이선스가 필요합니까?
- 무료 평가판으로 시작하거나 다음에서 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
+무료 평가판으로 시작하거나 다음에서 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 
 ### 5. 더 많은 예제와 문서는 어디서 찾을 수 있나요?
  방문하다[.NET API 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 더 많은 예제와 자세한 문서를 보려면

@@ -71,7 +71,7 @@ table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-Συγχαρητήρια ! Τώρα έχετε εφαρμόσει ένα περίγραμμα περιγράμματος σε έναν πίνακα χρησιμοποιώντας το Aspose.Words για .NET.
+συγχαρητήρια ! Τώρα έχετε εφαρμόσει ένα περίγραμμα περιγράμματος σε έναν πίνακα χρησιμοποιώντας το Aspose.Words για .NET.
 
 ### Δείγμα πηγαίου κώδικα για Apply Outline Border χρησιμοποιώντας Aspose.Words για .NET 
 

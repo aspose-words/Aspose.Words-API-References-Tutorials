@@ -138,11 +138,11 @@ text_input_field.text = "John Doe"
 text_input_field.placeholder_text = "Enter your full name"
 ```
 
-Bidang masukan teks memberikan cara mudah untuk menangkap data tekstual, menjadikannya alat penting dalam pengumpulan data berbasis dokumen.
+Bidang input teks memberikan cara mudah untuk menangkap data tekstual, menjadikannya alat penting dalam pengumpulan data berbasis dokumen.
 
 ### Kotak centang dan Tombol Radio
 
-Kotak centang dan tombol radio ideal untuk skenario yang memerlukan pilihan pilihan ganda. Kotak centang memungkinkan pengguna untuk memilih beberapa opsi, sementara tombol radio membatasi pengguna pada satu pilihan.
+Kotak centang dan tombol radio ideal untuk skenario yang memerlukan pilihan pilihan ganda. Kotak centang memungkinkan pengguna untuk memilih beberapa opsi, sedangkan tombol radio membatasi pengguna pada satu pilihan.
 
 Untuk membuat bidang formulir kotak centang, gunakan
 

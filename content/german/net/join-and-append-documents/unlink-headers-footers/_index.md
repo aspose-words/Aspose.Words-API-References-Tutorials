@@ -57,11 +57,11 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Schritt 4: Verknüpfung von Kopf- und Fußzeilen aufheben
 
- Dieser Schritt ist entscheidend. Um die Verknüpfung der Kopf- und Fußzeilen des Quelldokuments mit denen des Zieldokuments aufzuheben, verwenden Sie die`LinkToPrevious` Methode. Diese Methode stellt sicher, dass die Kopf- und Fußzeilen nicht in das angehängte Dokument übernommen werden.
+ Dieser Schritt ist entscheidend. Um die Verknüpfung der Kopf- und Fußzeilen des Quelldokuments mit denen des Zieldokuments aufzuheben, verwenden Sie die`LinkToPrevious` -Methode. Diese Methode stellt sicher, dass die Kopf- und Fußzeilen nicht in das angehängte Dokument übernommen werden.
 
 ```csharp
 // Um dies zu verhindern, entfernen Sie die Verknüpfungen zwischen Kopf- und Fußzeilen im Quelldokument.
-//daran, die Kopf- und Fußzeilen des Zieldokuments fortzusetzen.
+//daran hindert, die Kopf- und Fußzeilen des Zieldokuments fortzusetzen.
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 

@@ -41,7 +41,7 @@ doc = aw.Document()
 
 ### Krok 3: Vložení objektu OLE
 
-Nyní můžete do dokumentu vložit objekt OLE. Vložme například excelovou tabulku:
+Nyní můžete do dokumentu vložit objekt OLE. Například vložíme excelovou tabulku:
 
 ```python
 ole_stream = open('path_to_spreadsheet.xlsx', 'rb')

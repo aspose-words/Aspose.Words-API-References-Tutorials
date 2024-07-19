@@ -136,7 +136,7 @@ Gratulacje! Pomyślnie wstawiłeś tabelę bezpośrednio do dokumentu programu W
 ### Jak mogę pobrać Aspose.Words dla .NET?
  Możesz pobrać Aspose.Words dla .NET z[strona pobierania](https://releases.aspose.com/words/net/).
 
-### Czy przed zakupem mogę wypróbować Aspose.Words dla .NET?
+### Czy mogę wypróbować Aspose.Words dla .NET przed zakupem?
  Tak, możesz poprosić o[bezpłatna wersja próbna](https://releases.aspose.com/) aby ocenić bibliotekę przed zakupem.
 
 ### Jak kupić Aspose.Words dla .NET?

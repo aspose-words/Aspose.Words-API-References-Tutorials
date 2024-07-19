@@ -42,7 +42,7 @@ Erfahren Sie in diesem Schritt-für-Schritt-Tutorial, wie Sie Aspose.Words für 
 ### [Verwenden von Schriftarten in Aspose.Words für Java](./using-fonts/)
 Entdecken Sie die Schriftformatierung in Aspose.Words für Java: Größe, Stil, Farbe und mehr. Erstellen Sie mühelos schön formatierte Dokumente.
 ### [Verwenden von Fußnoten und Endnoten in Aspose.Words für Java](./using-footnotes-and-endnotes/)
-Erfahren Sie, wie Sie Fußnoten und Endnoten in Aspose.Words für Java effektiv nutzen. Verbessern Sie noch heute Ihre Fähigkeiten zur Dokumentformatierung!
+Erfahren Sie, wie Sie Fußnoten und Endnoten in Aspose.Words für Java effektiv verwenden. Verbessern Sie noch heute Ihre Fähigkeiten zur Dokumentformatierung!
 ### [Verwenden von Formularfeldern in Aspose.Words für Java](./using-form-fields/)
 „Erfahren Sie, wie Sie mit Aspose.Words für Java interaktive Word-Dokumente mit Formularfeldern erstellen. Legen Sie jetzt los!“
 ### [Verwenden von HarfBuzz in Aspose.Words für Java](./using-harfbuzz/)

@@ -24,7 +24,7 @@ pip install aspose-words
 
 ## Megjegyzések hozzáadása egy dokumentumhoz
 
-A Word-dokumentumhoz az Aspose.Words for Python használatával megjegyzést fűzni egyszerű. Íme egy egyszerű példa:
+Megjegyzés hozzáadása Word-dokumentumhoz az Aspose.Words for Python használatával egyszerű. Íme egy egyszerű példa:
 
 ```python
 import aspose.words as aw
@@ -47,7 +47,7 @@ run.insert_comment(comment)
 
 ## Megjegyzések lekérése egy dokumentumból
 
-A megjegyzések lekérése egy dokumentumból ugyanilyen egyszerű. Ismételheti a megjegyzéseket egy dokumentumban, és hozzáférhet azok tulajdonságaihoz:
+A megjegyzések lekérése egy dokumentumból ugyanilyen egyszerű. Iterálhatja a megjegyzéseket egy dokumentumban, és hozzáférhet azok tulajdonságaihoz:
 
 ```python
 for comment in doc.comments:

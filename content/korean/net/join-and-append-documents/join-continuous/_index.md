@@ -2,7 +2,7 @@
 title: 연속 가입
 linktitle: 연속 가입
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 두 개의 Word 문서를 원활하게 결합하는 방법을 알아보세요. 원활하고 효율적인 문서 병합을 위해 단계별 가이드를 따르세요.
+description: .NET용 Aspose.Words를 사용하여 두 개의 Word 문서를 원활하게 결합하는 방법을 알아보세요. 원활하고 효율적인 문서 병합을 위한 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/join-and-append-documents/join-continuous/

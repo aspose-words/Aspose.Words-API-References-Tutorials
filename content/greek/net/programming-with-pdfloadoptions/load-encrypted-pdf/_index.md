@@ -19,7 +19,7 @@ url: /el/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 Το πρώτο βήμα είναι να φορτώσετε το κρυπτογραφημένο έγγραφο PDF στην εφαρμογή σας. Δείτε πώς να το κάνετε:
 
 ```csharp
-// Διαδρομή στον κατάλογο εγγράφων.
+//Διαδρομή στον κατάλογο εγγράφων.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

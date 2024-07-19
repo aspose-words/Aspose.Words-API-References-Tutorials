@@ -88,7 +88,7 @@ Trong hướng dẫn này, chúng tôi đã khám phá các bước để thêm 
 ### Các câu hỏi thường gặp
 
 #### Hỏi: Chữ ký điện tử là gì và tại sao nó lại quan trọng trong tài liệu PDF?
-Đáp: Chữ ký số là một kỹ thuật bảo mật giúp đảm bảo tính xác thực, tính toàn vẹn và không thể chối bỏ của tài liệu điện tử, chẳng hạn như tệp PDF. Nó sử dụng chứng chỉ kỹ thuật số để thêm một lớp bảo mật cho tài liệu, giúp xác minh danh tính của tác giả và phát hiện mọi thay đổi tiếp theo đối với nội dung.
+Đáp: Chữ ký số là một kỹ thuật bảo mật giúp đảm bảo tính xác thực, tính toàn vẹn và tính không thể chối bỏ của tài liệu điện tử, chẳng hạn như tệp PDF. Nó sử dụng chứng chỉ kỹ thuật số để thêm một lớp bảo mật cho tài liệu, giúp xác minh danh tính của tác giả và phát hiện mọi thay đổi tiếp theo đối với nội dung.
 
 #### Câu hỏi: Làm cách nào tôi có thể thêm chữ ký điện tử vào tài liệu PDF bằng chứng chỉ với Aspose.Words cho .NET?
 Trả lời: Để thêm chữ ký điện tử vào tài liệu PDF bằng chứng chỉ có Aspose.Words cho .NET, hãy làm theo các bước sau:

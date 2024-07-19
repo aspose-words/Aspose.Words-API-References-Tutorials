@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 
 #### Q：程式碼中如何設定文檔目錄？
 
- A：在提供的代碼中，您需要替換`"YOUR DOCUMENTS DIRECTORY"`輸入要儲存包含 VBA 專案的 Word 文件的目錄的相應路徑。
+ A：在提供的代碼中，您需要替換`"YOUR DOCUMENTS DIRECTORY"`輸入要儲存包含 VBA 專案的 Word 文件的目錄的適當路徑。
 
 #### Q：如何在VBA模組中指定巨集原始碼？
 

@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. Adım: Sayfa Düzenini Güncelleyin
-
- Ara`UpdatePageLayout`yöntem. Bu, belgeyi bellekte işler ve işleme sırasında meydana gelen tüm uyarıları yakalar.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Adım 4: Uyarı Geri Aramasını Ayarlayın
+## 3. Adım: Uyarı Geri Aramasını Ayarlayın
 
  Uyarıları yakalamak ve işlemek için aşağıdakileri uygulayan bir sınıf oluşturun:`IWarningCallback` arayüz. Bu sınıf, belge işleme sırasında meydana gelen uyarıları günlüğe kaydeder.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Biz yalnızca değiştirilen yazı tipleriyle ilgileniyoruz.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Adım 5: Geri Aramayı Belgeye Atayın
+## Adım 4: Geri Aramayı Belgeye Atayın
 
 Uyarı geri aramasını belgeye atayın. Bu, tüm yazı tipi sorunlarının yakalanıp günlüğe kaydedilmesini sağlar.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## 5. Adım: Sayfa Düzenini Güncelleyin
+
+ Ara`UpdatePageLayout` yöntem. Bu, belgeyi bellekte işler ve işleme sırasında meydana gelen tüm uyarıları yakalar.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Adım 6: Belgeyi Kaydedin

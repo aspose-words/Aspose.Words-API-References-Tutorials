@@ -9,11 +9,11 @@ url: /pt/java/document-styling/document-watermarking-page-setup/
 ---
 ## Introdução
 
-No domínio da manipulação de documentos, Aspose.Words for Java se destaca como uma ferramenta poderosa, permitindo que os desenvolvedores exerçam controle sobre todos os aspectos do processamento de documentos. Neste guia abrangente, nos aprofundaremos nos meandros da marca d'água de documentos e configuração de páginas usando Aspose.Words for Java. Quer você seja um desenvolvedor experiente ou esteja apenas começando no mundo do processamento de documentos Java, este guia passo a passo irá equipá-lo com o conhecimento e o código-fonte de que você precisa.
+No domínio da manipulação de documentos, Aspose.Words for Java se destaca como uma ferramenta poderosa, permitindo aos desenvolvedores exercer controle sobre todos os aspectos do processamento de documentos. Neste guia abrangente, nos aprofundaremos nos meandros da marca d'água de documentos e configuração de páginas usando Aspose.Words for Java. Quer você seja um desenvolvedor experiente ou esteja apenas começando no mundo do processamento de documentos Java, este guia passo a passo irá equipá-lo com o conhecimento e o código-fonte de que você precisa.
 
 ## Marca d'água de documento
 
-### Adicionando marcas d’água
+### Adicionando marcas d'água
 
 Adicionar marcas d'água a documentos pode ser crucial para promover a marca ou proteger seu conteúdo. Aspose.Words for Java torna essa tarefa simples. Veja como:
 
@@ -34,7 +34,7 @@ watermark.setWrapType(WrapType.NONE);
 watermark.setVerticalAlignment(VerticalAlignment.CENTER);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
 
-// Insira a marca d'água
+// Insira a marca d’água
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
 // Salve o documento
@@ -120,13 +120,13 @@ doc.getFirstSection().getPageSetup().setPageWidth(842.0);
 doc.getFirstSection().getPageSetup().setPageHeight(595.0);
 ```
 
-### Qual é a fonte padrão para marcas d’água?
+### Qual é a fonte padrão para marcas d'água?
 
 A fonte padrão para marcas d'água é Calibri com tamanho de fonte 36.
 
 ### Como posso adicionar números de página a partir de uma página específica?
 
-Você pode conseguir isso definindo o número da página inicial em seu documento da seguinte maneira:
+Você pode conseguir isso definindo o número da página inicial em seu documento da seguinte forma:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageStartingNumber(5);

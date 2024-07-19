@@ -9,7 +9,7 @@ url: /id/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 ## Perkenalan
 
-Hai, rekan pembuat kode! Pernahkah Anda menemukan diri Anda terjerat dalam jaringan manipulasi dokumen Word, mencoba mencari cara untuk berpindah ke ujung bookmark dengan tepat dan menambahkan konten tepat setelahnya? Baiklah, hari ini adalah hari keberuntungan kamu! Kami mendalami Aspose.Words untuk .NET, pustaka hebat yang memungkinkan Anda menangani dokumen Word seperti seorang profesional. Tutorial ini akan memandu Anda melalui langkah-langkah untuk berpindah ke akhir bookmark dan menyisipkan beberapa teks di sana. Ayo tayangkan pertunjukan ini!
+Hai, rekan pembuat kode! Pernahkah Anda menemukan diri Anda terjerat dalam jaringan manipulasi dokumen Word, mencoba mencari cara untuk berpindah ke ujung bookmark dengan tepat dan menambahkan konten tepat setelahnya? Baiklah, hari ini adalah hari keberuntungan kamu! Kami mendalami Aspose.Words untuk .NET, pustaka canggih yang memungkinkan Anda menangani dokumen Word seperti seorang profesional. Tutorial ini akan memandu Anda melalui langkah-langkah untuk berpindah ke akhir bookmark dan menyisipkan beberapa teks di sana. Ayo tayangkan pertunjukan ini!
 
 ## Prasyarat
 
@@ -103,7 +103,7 @@ builder.MoveToBookmark("MyBookmark1", false, true);
 ## Langkah 5: Sisipkan Teks di Ujung Bookmark
 
 
-Setelah Anda berada di akhir penanda, Anda dapat menyisipkan teks atau konten lainnya. Mari tambahkan satu baris teks sederhana:
+Setelah Anda berada di akhir bookmark, Anda dapat menyisipkan teks atau konten lainnya. Mari tambahkan satu baris teks sederhana:
 
 ```csharp
 builder.Writeln("This is a bookmark.");

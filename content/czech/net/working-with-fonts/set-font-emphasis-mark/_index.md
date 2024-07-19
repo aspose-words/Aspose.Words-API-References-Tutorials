@@ -81,4 +81,4 @@ Odpověď: Ano, pomocí Aspose.Words můžete do určité části textu v dokume
 
 #### Otázka: Mohou být akcenty přizpůsobeny mým potřebám?
 
-Odpověď: Ano, znaménka s diakritikou lze upravit podle vašich potřeb pomocí Aspose.Words. Vlastnosti stylu akcentních značek, jako je barva, velikost, typ čáry a další, můžete upravit tak, aby odpovídaly vašim předvolbám formátování.
+Odpověď: Ano, akcenty lze upravit podle vašich potřeb pomocí Aspose.Words. Vlastnosti stylu akcentních značek, jako je barva, velikost, typ čáry a další, můžete upravit tak, aby odpovídaly vašim předvolbám formátování.

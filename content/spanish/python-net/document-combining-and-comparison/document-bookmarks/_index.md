@@ -120,7 +120,7 @@ A medida que se familiarice con los marcadores, podrá explorar técnicas avanza
 
 ## Conclusión
 
-Los marcadores de documentos son herramientas invaluables que le permiten navegar y administrar documentos grandes de manera eficiente. Con la API Aspose.Words para Python, tiene la capacidad de integrar sin problemas funciones relacionadas con marcadores en sus aplicaciones, haciendo que sus tareas de procesamiento de documentos sean más fluidas y optimizadas.
+Los marcadores de documentos son herramientas invaluables que le permiten navegar y administrar documentos grandes de manera eficiente. Con la API de Aspose.Words para Python, tiene la capacidad de integrar sin problemas funciones relacionadas con marcadores en sus aplicaciones, haciendo que sus tareas de procesamiento de documentos sean más fluidas y optimizadas.
 
 ## Preguntas frecuentes
 

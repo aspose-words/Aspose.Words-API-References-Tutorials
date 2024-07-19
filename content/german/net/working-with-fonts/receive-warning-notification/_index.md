@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Schritt 3: Seitenlayout aktualisieren
-
- Ruf den`UpdatePageLayout`-Methode. Dadurch wird das Dokument im Speicher gerendert und es werden alle Warnungen erfasst, die während des Renderings auftreten.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Schritt 4: Warn-Rückruf einrichten
+## Schritt 3: Warn-Rückruf einrichten
 
  Um Warnungen zu erfassen und zu verarbeiten, erstellen Sie eine Klasse, die die`IWarningCallback` Schnittstelle. Diese Klasse protokolliert alle Warnungen, die während der Dokumentverarbeitung auftreten.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Für uns geht es lediglich um den Austausch von Schriftarten.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Schritt 5: Den Rückruf dem Dokument zuweisen
+## Schritt 4: Den Rückruf dem Dokument zuordnen
 
 Weisen Sie dem Dokument den Warnrückruf zu. Dadurch wird sichergestellt, dass alle Schriftartprobleme erfasst und protokolliert werden.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Schritt 5: Seitenlayout aktualisieren
+
+ Ruf den`UpdatePageLayout` -Methode. Dadurch wird das Dokument im Speicher gerendert und es werden alle Warnungen erfasst, die während des Renderings auftreten.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Schritt 6: Speichern Sie das Dokument

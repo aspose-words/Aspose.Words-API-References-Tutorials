@@ -16,11 +16,11 @@ Que vous soyez débutant ou développeur expérimenté, les didacticiels Aspose.
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Obtenir des variables](./get-variables/) | Guide étape par étape pour récupérer les variables de document avec Aspose.Words for .NET. |
-| [Énumérer les propriétés](./enumerate-properties/) | Guide étape par étape pour énumérer les propriétés d’un document avec Aspose.Words for .NET. |
-| [Ajouter des propriétés de document personnalisées](./add-custom-document-properties/) | Guide étape par étape pour ajouter des propriétés personnalisées à un document avec Aspose.Words for .NET. |
-| [Supprimer les propriétés du document personnalisé](./remove-custom-document-properties/) | Guide étape par étape pour supprimer les propriétés personnalisées d'un document avec Aspose.Words for .NET. |
-| [Supprimer les informations personnelles](./remove-personal-information/) | Guide étape par étape pour supprimer les informations personnelles d’un document avec Aspose.Words for .NET. |
-| [Configuration du lien vers le contenu](./configuring-link-to-content/) | Guide étape par étape pour configurer des liens vers le contenu d'un document avec Aspose.Words pour .NET. |
-| [Convertir entre les unités de mesure](./convert-between-measurement-units/) | Guide étape par étape pour la conversion entre les unités de mesure dans un document avec Aspose.Words for .NET. |
-| [Utiliser des caractères de contrôle](./use-control-characters/) | Guide étape par étape pour utiliser les caractères de contrôle avec Aspose.Words for .NET. |
+| [Obtenir des variables](./get-variables/) | Maîtrisez Aspose.Words pour .NET. Apprenez à charger et extraire des variables à partir de documents Word avec ce guide étape par étape. |
+| [Énumérer les propriétés](./enumerate-properties/) | Découvrez comment énumérer les propriétés dans un document Word à l'aide d'Aspose.Words for .NET avec ce guide étape par étape. Parfait pour les développeurs de tous niveaux. |
+| [Ajouter des propriétés de document personnalisées](./add-custom-document-properties/) | Découvrez comment ajouter des propriétés de document personnalisées dans des fichiers Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour améliorer vos documents avec des métadonnées supplémentaires. |
+| [Supprimer les propriétés du document personnalisé](./remove-custom-document-properties/) | Supprimez les propriétés de document personnalisées dans les fichiers Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour une solution rapide et facile. Parfait pour les développeurs. |
+| [Supprimer les informations personnelles](./remove-personal-information/) | Découvrez comment supprimer des informations personnelles des documents à l'aide d'Aspose.Words for .NET avec ce guide étape par étape. Simplifiez la gestion des documents. |
+| [Configuration du lien vers le contenu](./configuring-link-to-content/) | Découvrez comment configurer un lien vers le contenu d'un document Word à l'aide d'Aspose.Words for .NET grâce à notre didacticiel détaillé étape par étape. |
+| [Convertir entre les unités de mesure](./convert-between-measurement-units/) | Découvrez comment convertir des unités de mesure dans Aspose.Words pour .NET. Suivez notre guide étape par étape pour définir les marges, les en-têtes et les pieds de page des documents en pouces et en points. |
+| [Utiliser des caractères de contrôle](./use-control-characters/) | Découvrez comment automatiser les tâches liées aux documents Word à l'aide d'Aspose.Words pour .NET. Ce guide couvre la configuration, le remplacement de texte et bien plus encore, rendant votre flux de travail efficace. |

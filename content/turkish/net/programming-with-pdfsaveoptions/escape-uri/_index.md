@@ -2,101 +2,100 @@
 title: PDF Belgesinde URI'dan Kaçış
 linktitle: PDF Belgesinde URI'dan Kaçış
 second_title: Aspose.Words Belge İşleme API'si
-description: Adım adım kılavuz Aspose.Words for .NET ile PDF Belgesinde URI'den Nasıl Kaçılır.
+description: Aspose.Words for .NET kullanarak PDF'lerdeki URI'lerden nasıl çıkış yapacağınızı öğrenin. Bu ayrıntılı kılavuz, süreç boyunca size adım adım yol gösterir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/escape-uri/
 ---
+## giriiş
 
-Bu makale, Aspose.Words for .NET ile PDF Belgesinde URI'den Nasıl Çıkış Yapılacağı konusunda adım adım bir kılavuz sağlar. Kodun her bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgeye kaçışlı Uri içeren köprülerin nasıl ekleneceğini anlayabileceksiniz.
+Selam! Aspose.Words for .NET kullanarak bir Word belgesini PDF olarak kaydederken URI'lerin nasıl işleneceğini hiç merak ettiniz mi? Doğru yerdesiniz! Bugün, belgeniz dönüştürülürken bunların doğru şekilde çalıştığından emin olmak için PDF belgelerindeki kaçış URI'lerini derinlemesine inceleyeceğiz. Gelin bu yolculuğa adım adım birlikte çıkalım ve yol boyunca her konsepti kavramanızı sağlayın.
 
-Başlamadan önce projenize Aspose.Words for .NET kütüphanesini kurup yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
+## Önkoşullar
 
-## 1. Adım: Belge dizinini tanımlayın
+Başlamadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
- Başlamak için belgelerinizin bulunduğu dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
+1.  Aspose.Words for .NET: En son sürüme sahip olduğunuzdan emin olun. İndirebilirsin[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya başka herhangi bir .NET geliştirme ortamı.
+3. Temel C# Bilgisi: Bu eğitimde, C# programlama konusunda temel bir anlayışa sahip olduğunuz varsayılmaktadır.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Aspose.Words işlevlerine erişim için bu çok önemlidir.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Tamam, hadi süreci sindirilebilir adımlara ayıralım. Takip edin ve kısa sürede URI'lerden kaçma konusunda profesyonel olacaksınız!
+
+## 1. Adım: Belge Dizininizi Kurun
+
+Koda dalmadan önce belgeler dizininizin yolunu ayarlayın. Dosyalarınızın kaydedileceği yer burasıdır.
+
+```csharp
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Adım 2: Bir belge ve DocumentBuilder oluşturun
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`PDF belgenizi kaydetmek istediğiniz asıl yolla.
 
- Daha sonra yeni bir tane oluşturmamız gerekiyor`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturma nesnesi.
+## Adım 2: Yeni Bir Belge Oluşturun
+
+Daha sonra Aspose.Words'ü kullanarak yeni bir belge oluşturacağız. Bu belge, köprüler eklemek için tuvalimiz olarak hizmet edecektir.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Kaçışlı Uri ile köprüler ekleyin
+ Burada,`Document` yeni Word belgenizdir ve`DocumentBuilder` belge oluşturma sürecini kolaylaştıran yardımcı bir sınıftır.
 
- Kullan`InsertHyperlink` yöntemi`DocumentBuilder` Belgeye köprü eklemek için nesne. Uri kullanılarak kaçılmalıdır`Uri.EscapeUriString` Biçim hatalarını önlemek için işlev.
+## 3. Adım: Köprü Ekleme
+
+Şimdi belgeye bir köprü ekleyelim. Bu köprü, URI kaçış sürecimizin odak noktası olacaktır.
 
 ```csharp
-builder.InsertHyperlink("Testlink",
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), false);
-builder. Writen();
-builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"),
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), false);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
 ```
+
+ Bu satırda,`"Testlink"` köprünün görüntü metnidir ve`"https://www.google.com/search?q= aspose"` URL'dir.`false` parametresi, bağlantının köprü olarak biçimlendirilmemesi gerektiğini belirtir (yani altı çizili ve mavi olmayacaktır).
 
 ## 4. Adım: Belgeyi PDF olarak kaydedin
 
- Son olarak belgeyi PDF olarak kaydedebiliriz.`Save` yöntemi`Document` nesne. Çıkış dosyası adını belirtin.
+Son olarak belgeyi PDF olarak kaydedin. Aspose.Words'ün PDF çıktısındaki URI'den kaçma işlemini burada halleder.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-Bu kadar ! Aspose.Words for .NET kullanarak bir belgeye, kaçışlı Uri'ler içeren köprüleri başarıyla eklediniz.
-
-### Aspose.Words for .NET ile kaçan Uri için örnek kaynak kodu
-
-
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHyperlink("Testlink", 
-		"https://www.google.com/search?q=%2Fthe%20test", false);
-	builder.Writeln();
-	builder.InsertHyperlink("https:// www.google.com/search?q=%2Fthe%20test",
-		"https://www.google.com/search?q=%2Fthe%20test", false);
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");    
-  
-```
+ Bu satır, belgeyi dosya adıyla belirtilen dizine kaydeder.`WorkingWithPdfSaveOptions.EscapeUri.pdf`.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir PDF belgesinde URI'lerden nasıl çıkış yapılacağını anlattık. URI'lerden kaçınarak biçimlendirme hatalarını önleyebilir ve köprülerin PDF belgesinde doğru şekilde yorumlanıp görüntülenmesini sağlayabilirsiniz. Kaçışlı URI'lere sahip köprüleri PDF belgenize eklemek için özetlenen adımları izleyin. Kaçtığınızdan emin olun.
+İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesini PDF olarak kaydederken URI'lerden nasıl kaçacağınızı öğrendiniz. Bu işlem, köprülerinizin sonuçtaki PDF'de işlevsel kalmasını ve düzgün biçimlendirilmiş olmasını sağlar. 
 
-### Sıkça Sorulan Sorular
+Bu küçük ama önemli tekniklerde uzmanlaşmanın belgelerinizin kalitesini ve işlevselliğini büyük ölçüde artırabileceğini unutmayın. Mutlu kodlama!
 
-#### S: PDF belgesindeki kaçış URI'si nedir ve neden önemlidir?
-C: Bir PDF belgesindeki Kaçış URI'si, biçim hatalarını önlemek için bir URL'deki özel karakterleri kaçış dizilerine dönüştürme yöntemini ifade eder. Bu önemlidir çünkü bir URL'deki özel karakterler, URL'nin yapısını bozabilir ve yanlış yorumlanmaya veya hatalı oluşturmaya yol açabilir. Özel karakterlerden kaçınarak URL'nin PDF belgesinde doğru şekilde yorumlandığını ve görüntülendiğini garanti ederiz.
+## SSS'ler
 
-#### S: Bir PDF belgesindeki URI'lerden kaçmak için Aspose.Words for .NET'i nasıl kullanabilirim?
-C: Aspose.Words for .NET kullanarak bir PDF belgesindeki URI'lerden kaçmak için şu adımları izleyin:
+### Aspose.Words for .NET nedir?
 
- Belgelerinizin bulunduğu dizin yolunu değiştirerek ayarlayın.`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgeleri oluşturmasına, yönetmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır.
 
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` belgeyi oluşturma nesnesi.
+### PDF'lerde URI'den kaçış neden önemlidir?
 
- Kullan`InsertHyperlink` yöntemi`DocumentBuilder` Belgeye köprü eklemek için nesne. kullanarak URI'den kaçtığınızdan emin olun.`Uri.EscapeUriString` Biçim hatalarını önlemek için işlev.
+URI kaçışı, URL'lerdeki özel karakterlerin doğru şekilde yorumlanmasını sağlayarak bozuk bağlantıların önlenmesini ve bunların amaçlandığı gibi çalışmasını sağlar.
 
- Kullan`Save` yöntemi`Document` Çıktı dosyasının adını belirterek belgeyi PDF formatında kaydetme nesnesini seçin.
+### Aspose.Words for .NET'te diğer bağlantı türlerini kullanabilir miyim?
 
-#### S: Bir PDF belgesinde URI'lerden kaçmanın faydaları nelerdir?
-C: Bir PDF belgesinde URI'nin kaçmasının faydaları şunlardır:
+Kesinlikle! Aspose.Words, dahili belge bağlantıları, yer imleri ve harici URL'ler dahil olmak üzere çeşitli bağlantı türlerini destekler.
 
-Biçim hatalarının önlenmesi: URI kaçışı, URL'deki özel karakterlerden kaynaklanan biçim hatalarının önlenmesine yardımcı olarak URL'nin PDF belgesinde doğru şekilde yorumlanmasını ve görüntülenmesini sağlar.
+### Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?
 
-PDF okuyucularla uyumluluk: Kaçışlı URI'ler genellikle PDF okuyucular tarafından iyi bir şekilde desteklenir ve daha iyi uyumluluk ve tutarlı bir kullanıcı deneyimi sağlar.
+ Ücretsiz deneme alabilirsiniz[Burada](https://releases.aspose.com/).
 
-#### S: Bir URI'de hangi özel karakterlerden kaçınılmalıdır?
- C: Bir URI'de çıkış yapılması gereken özel karakterler şunlardır: space, <, >, ", #, %, {, },|, \, ^, ~, [, ], `, ;, /, ?, :, @, =, &, $, +, ,, [, ], and !.
+### Aspose.Words for .NET hakkında daha ayrıntılı belgeleri nerede bulabilirim?
+
+ Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

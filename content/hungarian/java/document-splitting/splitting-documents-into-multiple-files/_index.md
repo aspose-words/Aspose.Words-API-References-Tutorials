@@ -48,7 +48,7 @@ for (int i = 0; i < splitDocuments.length; i++) {
 }
 ```
 
-Ez a kód minden felosztott részt fájlnévvel ment el, például „split-part-1.docx”, „split-part-2.docx” stb.
+Ez a kód minden felosztott részt egy fájlnévvel ment el, például „split-part-1.docx”, „split-part-2.docx” stb.
 
 ## GYIK
 

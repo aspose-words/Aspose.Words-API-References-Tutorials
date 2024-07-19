@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 	//表を複製し、元の表の後にドキュメントに挿入します。
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// 2つの表の間に空の段落を挿入します。
+	//2つの表の間に空の段落を挿入します。
 	//そうでなければ、保存時に 1 つに結合されます。これはドキュメントの検証に関係します。
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

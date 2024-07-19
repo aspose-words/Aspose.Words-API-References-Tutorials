@@ -24,7 +24,7 @@ Se você deseja converter documentos do Word em PDF para distribuição, arquiva
 | [Reduza o tamanho do PDF desativando fontes incorporadas](./disable-embed-windows-fonts/) | Aprenda como desabilitar a incorporação de fontes do Windows ao converter documentos em PDF com Aspose.Words for .NET. |
 | [Otimize o tamanho do PDF com fontes Skip Embedded Arial e Times Roman](./skip-embedded-arial-and-times-roman-fonts/) | Guia passo a passo para gerar PDF sem incorporar fontes Arial e Times Roman com Aspose.Words for .NET. |
 | [Reduza o tamanho do arquivo PDF não incorporando fontes principais](./avoid-embedding-core-fonts/) | Aprenda como evitar a incorporação básica de fontes ao converter documentos do Word em PDF com Aspose.Words for .NET. |
-| [Escape URI em documento PDF](./escape-uri/) | Guia passo a passo para escapar do Uri com Aspose.Words for .NET. |
+| [Escape URI em documento PDF](./escape-uri/) | Aprenda como escapar de URIs em PDFs usando Aspose.Words for .NET. Este guia detalhado orienta você no processo passo a passo. |
 | [Exportar marcadores de rodapé de cabeçalho de documento do Word para documento PDF](./export-header-footer-bookmarks/) | Guia passo a passo para exportar marcadores de cabeçalho e rodapé com Aspose.Words for .NET. |
 | [Reduza o tamanho do PDF com a escala de fontes Wmf para o tamanho do metarquivo](./scale-wmf-fonts-to-metafile-size/) | Guia passo a passo para ajustar o tamanho da fonte WMF ao converter para PDF com Aspose.Words for .NET. |
 | [Melhore o posicionamento de texto em PDF com posicionamento de texto adicional](./additional-text-positioning/) | Aprenda como controlar o posicionamento de texto adicional ao converter documentos do Word em PDF com Aspose.Words for .NET. |

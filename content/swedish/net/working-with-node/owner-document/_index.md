@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## Steg 4: Kontrollera överordnad nod och ägardokument
- Nu när vi har skapat styckenoden kan vi kontrollera om den har en överordnad nod och om det ägande dokumentet är detsamma som`doc`.
+Nu när vi har skapat styckenoden kan vi kontrollera om den har en överordnad nod och om det ägande dokumentet är detsamma som`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ S: I de flesta fall bestäms dokumentägaren för en nod när noden skapas och k
 
 #### F: Hur kommer man åt noderna i ett ägardokument?
 
- S: För att komma åt noder i ett patentskyddat dokument kan du använda metoderna och egenskaperna som tillhandahålls av XML API som används i din Node.js-miljö. Till exempel kan du använda metoder som`getElementsByTagName` eller`querySelector` för att välja specifika noder i dokumentet.
+S: För att komma åt noder i ett patentskyddat dokument kan du använda metoderna och egenskaperna som tillhandahålls av XML API som används i din Node.js-miljö. Till exempel kan du använda metoder som`getElementsByTagName` eller`querySelector` för att välja specifika noder i dokumentet.

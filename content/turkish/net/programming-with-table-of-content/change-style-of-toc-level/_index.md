@@ -85,7 +85,7 @@ Bu kod parçacığı yeni, boş bir Word belgesi oluşturur.
 
 #### S: Aspose.Words for .NET'i kullanarak içindekiler tablosundaki belirli bir düzeyin stilini nasıl değiştirebilirim?
 
- C: Bir belge yükledikten sonra, belgenin stillerine erişip gerekli değişiklikleri yaparak içindekiler tablosundaki belirli bir düzeyin stilini değiştirebilirsiniz. Aspose.Words for .NET'te şunları kullanabilirsiniz:`Styles` mülkiyeti`Document` Belge stillerine erişmek için sınıfa gidin ve ardından özelliklerini kullanarak istediğiniz stili değiştirin. Örneğin, içindekiler tablosunun ilk düzeyinin stilini kalın olarak değiştirmek için aşağıdaki kodu kullanabilirsiniz:
+ C: Bir belge yükledikten sonra, belgenin stillerine erişerek ve gerekli değişiklikleri yaparak içindekiler tablosundaki belirli bir düzeyin stilini değiştirebilirsiniz. Aspose.Words for .NET'te şunları kullanabilirsiniz:`Styles` mülkiyeti`Document` Belge stillerine erişmek için sınıfa gidin ve ardından özelliklerini kullanarak istediğiniz stili değiştirin. Örneğin, içindekiler tablosunun ilk düzeyinin stilini kalın olarak değiştirmek için aşağıdaki kodu kullanabilirsiniz:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
@@ -121,4 +121,4 @@ C: Evet, stili değiştirmenin yanı sıra Aspose.Words for .NET'i kullanarak i�
 
 #### S: Aspose.Words for .NET, Word belgelerinde diğer stillerin ve formatların değiştirilmesini destekliyor mu?
 
-C: Evet, Aspose.Words for .NET, Word belgelerinde çeşitli stillerin ve formatların değiştirilmesi konusunda kapsamlı destek sağlar. Paragraflar, başlıklar, tablolar, listeler ve daha fazlası gibi farklı öğelerin stillerini değiştirmenize olanak tanır. İhtiyaçlarınıza göre yazı tiplerini, renkleri, hizalamayı, girintiyi, aralığı ve diğer biçimlendirme özelliklerini değiştirebilirsiniz.
+C: Evet, Aspose.Words for .NET, Word belgelerindeki çeşitli stilleri ve formatları değiştirmek için kapsamlı destek sağlar. Paragraflar, başlıklar, tablolar, listeler ve daha fazlası gibi farklı öğelerin stillerini değiştirmenize olanak tanır. İhtiyaçlarınıza göre yazı tiplerini, renkleri, hizalamayı, girintiyi, aralığı ve diğer biçimlendirme özelliklerini değiştirebilirsiniz.

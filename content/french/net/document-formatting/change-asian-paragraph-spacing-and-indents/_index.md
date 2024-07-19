@@ -106,4 +106,4 @@ Oui, ces paramètres peuvent être appliqués à n’importe quel texte, mais il
 Absolument! Vous pouvez parcourir une collection de documents et appliquer ces paramètres par programmation à chacun d’eux.
 
 ### Que faire si je rencontre des problèmes ou si j'ai des questions ?
-Si vous rencontrez des problèmes ou avez d'autres questions, le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) est un excellent endroit pour demander de l'aide.
+ Si vous rencontrez des problèmes ou avez d'autres questions, le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) est un excellent endroit pour demander de l'aide.

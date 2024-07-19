@@ -127,4 +127,4 @@ Aspose.Words unterstützt die Generierung mehrerer Inhaltsverzeichnisse mit unte
 Ja, Aspose.Words stellt die Kompatibilität mit verschiedenen Versionen von Microsoft Word-Formaten sicher.
 
 ### Wo finde ich weitere Hilfe und Unterstützung für Aspose.Words?
-Weitere Hilfe erhalten Sie im[Aspose.Words Forum](https://forum.aspose.com/c/words/8) oder schauen Sie sich die[amtliche Dokumentation](https://reference.aspose.com/words/net/).
+ Weitere Hilfe erhalten Sie im[Aspose.Words Forum](https://forum.aspose.com/c/words/8) oder schauen Sie sich die[amtliche Dokumentation](https://reference.aspose.com/words/net/).

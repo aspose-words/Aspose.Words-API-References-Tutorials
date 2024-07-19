@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Etapa 1: carregar o documento de origem
 
- Em primeiro lugar, você precisa carregar o documento de origem do qual deseja remover cabeçalhos e rodapés. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório do documento onde o documento de origem está localizado.
+Em primeiro lugar, você precisa carregar o documento de origem do qual deseja remover cabeçalhos e rodapés. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório do documento onde o documento de origem está localizado.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

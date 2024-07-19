@@ -68,7 +68,7 @@ series1.Name = "Chart Series Name 2";
 
 ## Langkah 5: Ratakan Garisnya
 
-Ingin garis-garis itu terlihat halus dan ramping? Mari kita lakukan itu menggunakan spline Catmull-Rom.
+Ingin garis-garis itu terlihat halus dan rapi? Mari kita lakukan itu menggunakan spline Catmull-Rom.
 
 ```csharp
 series0.Smooth = true;

@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## 3. lépés: A szakasz tartalmának törlése
- szakasz tartalmának törléséhez a szakasz tartalmát használjuk`ClearContent` módszer.
+ A szakasz tartalmának törléséhez a szakasz tartalmát használjuk`ClearContent` módszer.
 
 ```csharp
 section.ClearContent();

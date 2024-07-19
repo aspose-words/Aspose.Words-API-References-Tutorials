@@ -20,7 +20,7 @@ Než se ponoříme do kódu, ujistěte se, že máte splněny následující př
 
 ## Úvod
 
-V dnešním digitálním světě je převod dokumentů aplikace Word na stránky HTML běžným požadavkem. Aspose.Words zjednodušuje tento úkol tím, že poskytuje Java API, které nám umožňuje snadno rozdělit dokumenty aplikace Word na stránky HTML. Začněme.
+V dnešním digitálním světě je převod dokumentů Wordu na stránky HTML běžným požadavkem. Aspose.Words zjednodušuje tento úkol tím, že poskytuje Java API, které nám umožňuje snadno rozdělit dokumenty aplikace Word na stránky HTML. Začněme.
 
 ## Nastavení projektu
 
@@ -28,7 +28,7 @@ Chcete-li začít, vytvořte projekt Java a přidejte knihovnu Aspose.Words for 
 
 ## Načítání dokumentu aplikace Word
 
-Ve svém kódu Java musíte nejprve načíst dokument aplikace Word, který chcete rozdělit. Zde je příklad, jak na to:
+V kódu Java musíte nejprve načíst dokument aplikace Word, který chcete rozdělit. Zde je příklad, jak na to:
 
 ```java
 Document doc = new Document("your-document.docx");

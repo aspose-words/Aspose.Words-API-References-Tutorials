@@ -83,7 +83,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 
 ## Conclusión
 
-¡Y ahí lo tienes! Si sigue estos pasos, desvinculará exitosamente los encabezados y pies de página de su documento de origen y los agregará a su documento de destino usando Aspose.Words para .NET. Esta técnica puede resultar particularmente útil cuando trabaja con documentos complejos que requieren diferentes encabezados y pies de página para diferentes secciones. ¡Feliz codificación!
+¡Y ahí lo tienes! Al seguir estos pasos, desvinculó exitosamente los encabezados y pies de página de su documento de origen y los agregó a su documento de destino usando Aspose.Words para .NET. Esta técnica puede resultar particularmente útil cuando trabaja con documentos complejos que requieren diferentes encabezados y pies de página para diferentes secciones. ¡Feliz codificación!
 
 ## Preguntas frecuentes
 
@@ -100,4 +100,4 @@ Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos d
 ¡Absolutamente! Aspose.Words para .NET se puede utilizar con cualquier lenguaje .NET, incluidos VB.NET y F#.
 
 ### ¿Dónde puedo encontrar más documentación y soporte para Aspose.Words para .NET?  
- Puede encontrar documentación completa sobre el[Página de documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/) , y hay soporte disponible en el[asponer foro](https://forum.aspose.com/c/words/8).
+ Puede encontrar documentación completa sobre el[Página de documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/) , y hay soporte disponible en el[aspose foro](https://forum.aspose.com/c/words/8).

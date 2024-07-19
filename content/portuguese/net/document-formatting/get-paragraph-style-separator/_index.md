@@ -17,7 +17,7 @@ Você já tentou navegar pelo labirinto de um documento do Word, apenas para ser
 Antes de entrarmos no código, vamos ter certeza de que você tem todas as ferramentas necessárias:
 
 - Visual Studio: certifique-se de tê-lo instalado. Caso contrário, baixe e instale-o no site da Microsoft.
--  Aspose.Words for .NET: Se você ainda não o possui, obtenha a versão mais recente[aqui](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Se você ainda não o possui, obtenha a versão mais recente[aqui](https://releases.aspose.com/words/net/).
 - Um exemplo de documento do Word: deve conter separadores de estilo de parágrafo para trabalharmos. Você pode criar um ou usar um documento existente.
 
 ## Importar namespaces

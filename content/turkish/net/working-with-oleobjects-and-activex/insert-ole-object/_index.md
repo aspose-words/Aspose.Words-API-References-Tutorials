@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. Adım: Bir OLE nesnesi ekleyin
- Belge Oluşturucu'yu kullanın`InsertOleObject` Belgeye bir OLE nesnesi ekleme yöntemi. OLE nesne URL'sini, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin.
+ Belge Oluşturucu'yu kullanın`InsertOleObject`Belgeye bir OLE nesnesi ekleme yöntemi. OLE nesne URL'sini, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### S: Belgeye bir OLE nesnesi nasıl eklenir?
 
- C: Kullan`InsertOleObject`belge oluşturucunun yöntemi (`DocumentBuilder`) belgeye bir OLE nesnesi eklemek için. OLE nesne URL'sini, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin. İşte bir örnek :
+ C: Kullan`InsertOleObject` belge oluşturucunun yöntemi (`DocumentBuilder`) belgeye bir OLE nesnesi eklemek için. OLE nesne URL'sini, nesne türünü, görüntüleme seçeneklerini ve diğer gerekli ayarları belirtin. İşte bir örnek :
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
 
 #### S: Belge nasıl kaydedilir?
 
- C: Belgeyi kullanın`Save` Belgeyi bir dosyaya kaydetme yöntemi. İşte bir örnek :
+ C: Belgeyi kullanın`Save`Belgeyi bir dosyaya kaydetme yöntemi. İşte bir örnek :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

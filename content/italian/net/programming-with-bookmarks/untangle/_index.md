@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-In questo passaggio utilizziamo il file`GetAncestor` metodo per trovare la riga madre sia del nodo iniziale che di quello finale del segnalibro. Questo ci aiuta a individuare le righe esatte coinvolte.
+ In questo passaggio utilizziamo il file`GetAncestor` metodo per trovare la riga madre sia del nodo iniziale che di quello finale del segnalibro. Questo ci aiuta a individuare le righe esatte coinvolte.
 
 ## Passaggio 4: controlla le righe adiacenti
 
@@ -93,7 +93,7 @@ Passaggio 5 Intestazione: spostamento della fine del segnalibro
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-In questo passaggio utilizziamo il file`AppendChild`metodo per spostare il nodo finale del segnalibro. Aggiungendolo all'ultimo paragrafo dell'ultima cella della riga superiore, ci assicuriamo che il segnalibro sia correttamente districato.
+ In questo passaggio utilizziamo il file`AppendChild` metodo per spostare il nodo finale del segnalibro. Aggiungendolo all'ultimo paragrafo dell'ultima cella della riga superiore, ci assicuriamo che il segnalibro sia correttamente districato.
 
 ## Conclusione
 

@@ -51,8 +51,8 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fitur tautan dengan As
 
 #### T: Bagaimana cara mengkustomisasi teks tampilan tautan di Aspose.Words?
 
-J: Untuk menyesuaikan teks tampilan tautan di Aspose.Words, Anda dapat mengubah konten di antara`<a>` tag. Misalnya,`<a href="https://www.aspose.com">Click here</a>` akan menampilkan teks "Klik di sini" sebagai hyperlink.
+ J: Untuk menyesuaikan teks tampilan tautan di Aspose.Words, Anda dapat mengubah konten di antara`<a>` tag. Misalnya,`<a href="https://www.aspose.com">Click here</a>` akan menampilkan teks "Klik di sini" sebagai hyperlink.
 
 #### T: Dapatkah saya menentukan target untuk tautan di Aspose.Words?
 
- A: Ya, Anda dapat menentukan target untuk tautan di Aspose.Words menggunakan`target` atribut dari`<a>` menandai. Misalnya,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` akan membuka tautan di jendela atau tab baru.
+A: Ya, Anda dapat menentukan target untuk tautan di Aspose.Words menggunakan`target` atribut dari`<a>` menandai. Misalnya,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` akan membuka tautan di jendela atau tab baru.

@@ -60,7 +60,7 @@ for revision in revisions:
 
 ## Porovnání různých verzí
 
-Aspose.Words umožňuje porovnat dva dokumenty a vizualizovat rozdíly mezi nimi:
+Aspose.Words vám umožňuje porovnat dva dokumenty a vizualizovat rozdíly mezi nimi:
 
 ```python
 doc1 = asposewords.Document("document_v1.docx")

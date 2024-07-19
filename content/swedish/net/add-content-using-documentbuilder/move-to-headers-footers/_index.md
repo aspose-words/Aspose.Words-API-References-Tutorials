@@ -71,7 +71,7 @@ builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 builder.Write("Header for all other pages");
 ```
 
- I det här steget använder vi`MoveToHeaderFooter` metod för att navigera till önskat sidhuvud eller sidfot. De`Write` Metoden används sedan för att lägga till text till dessa avsnitt.
+ I det här steget använder vi`MoveToHeaderFooter` metod för att navigera till önskat sidhuvud eller sidfot. De`Write` Metoden används sedan för att lägga till text i dessa avsnitt.
 
 ## Steg 4: Lägg till innehåll i dokumenttexten
 
@@ -89,7 +89,7 @@ Här lägger vi till text i dokumentet och infogar en sidbrytning för att skapa
 
 ## Steg 5: Spara dokumentet
 
-Slutligen sparar du dokumentet i den angivna katalogen.
+Slutligen, spara dokumentet i den angivna katalogen.
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");

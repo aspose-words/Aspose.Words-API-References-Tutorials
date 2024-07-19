@@ -2,7 +2,7 @@
 title: Enkel text hitta och ersätt i Word
 linktitle: Enkel text hitta och ersätt i Word
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du enkelt hittar och ersätter text i Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide ingår.
+description: Lär dig hur du enkelt hittar och ersätter text i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide ingår.
 type: docs
 weight: 10
 url: /sv/net/find-and-replace-text/simple-find-replace/

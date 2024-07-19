@@ -142,8 +142,8 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 4. Aspose.Words에 대한 임시 라이선스는 어떻게 얻나요?
 
- 임시면허를 발급받으실 수 있습니다.[Aspose 웹사이트](https://purchase.aspose.com/temporary-license/).
+ 임시면허를 발급받으실 수 있습니다.[Aspose 웹 사이트](https://purchase.aspose.com/temporary-license/).
 
 ### 5. .NET용 Aspose.Words는 무료인가요?
 
-Aspose.Words for .NET은 상용 제품이지만 다음 사이트에서 무료 평가판을 받을 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/).
+Aspose.Words for .NET은 상용 제품이지만 다음 사이트에서 무료 평가판을 받을 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).

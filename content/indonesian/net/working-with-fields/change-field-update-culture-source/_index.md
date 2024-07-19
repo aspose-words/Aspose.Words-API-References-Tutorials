@@ -87,7 +87,7 @@ Selamat! Anda telah berhasil mempelajari cara mengubah sumber budaya pembaruan b
 
 #### T: Bagaimana cara mengubah sumber budaya pembaruan lapangan di Aspose.Words untuk .NET?
 
- J: Untuk mengubah sumber budaya pembaruan bidang di Aspose.Words untuk .NET, Anda dapat menggunakan`Document.FieldOptions.CultureSource` properti dan tetapkan nilainya menjadi`FieldCultureSource.FieldCode` atau`FieldCultureSource.CurrentThread` . Misalnya, Anda bisa menggunakan`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` untuk menggunakan budaya yang ditentukan dalam kode lapangan.
+ A: Untuk mengubah sumber budaya pembaruan bidang di Aspose.Words untuk .NET, Anda dapat menggunakan`Document.FieldOptions.CultureSource` properti dan tetapkan nilainya menjadi`FieldCultureSource.FieldCode` atau`FieldCultureSource.CurrentThread` . Misalnya, Anda bisa menggunakan`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` untuk menggunakan budaya yang ditentukan dalam kode lapangan.
 
 #### T: Bagaimana cara menentukan budaya tertentu untuk memperbarui bidang di Aspose.Words untuk .NET?
 

@@ -18,7 +18,7 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## ขั้นตอนที่ 2: สร้างเอกสารและตัวสร้างเอกสารใหม่
+## ขั้นตอนที่ 2: สร้างเอกสารและเครื่องมือสร้างเอกสารใหม่
  ในขั้นตอนนี้ เราจะสร้างเอกสารใหม่โดยใช้`Document` คลาสและตัวสร้างเอกสารโดยใช้`DocumentBuilder` ระดับ.
 
 ```csharp
@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 3: แทรกวัตถุ OLE เป็นไอคอน
- ใช้ตัวสร้างเอกสาร`InsertOleObjectAsIcon`วิธีการแทรกวัตถุ OLE เป็นไอคอนลงในเอกสาร ระบุเส้นทางไฟล์ OLE ค่าสถานะที่แสดง เส้นทางไอคอน และชื่อวัตถุที่ฝังตัว
+ ใช้ตัวสร้างเอกสาร`InsertOleObjectAsIcon` วิธีการแทรกวัตถุ OLE เป็นไอคอนลงในเอกสาร ระบุเส้นทางไฟล์ OLE ค่าสถานะที่แสดง เส้นทางไอคอน และชื่อวัตถุที่ฝังตัว
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### ถาม จะสร้างเอกสารและตัวสร้างเอกสารใหม่ใน Aspose.Words สำหรับ .NET ได้อย่างไร
 
- ตอบ: คุณสามารถสร้างเอกสารใหม่โดยใช้ไฟล์`Document` คลาสและตัวสร้างเอกสารโดยใช้`DocumentBuilder` ระดับ. นี่คือตัวอย่าง:
+ ตอบ: คุณสามารถสร้างเอกสารใหม่โดยใช้ไฟล์`Document` คลาสและตัวสร้างเอกสารโดยใช้`DocumentBuilder`ระดับ. นี่คือตัวอย่าง:
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### ถามจะบันทึกเอกสารโดยแทรกวัตถุ OLE เป็นไอคอนได้อย่างไร
 
- ตอบ: ใช้เอกสาร`Save` วิธีการบันทึกเอกสารเป็นไฟล์ นี่คือตัวอย่าง:
+ ตอบ: ใช้เอกสาร`Save`วิธีการบันทึกเอกสารเป็นไฟล์ นี่คือตัวอย่าง:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

@@ -24,7 +24,7 @@ Aspose.Words for .NET 教程“使用 PdfSaveOptions 进行文字处理”将带
 | [通过禁用嵌入字体来减小 PDF 大小](./disable-embed-windows-fonts/) | 了解如何在使用 Aspose.Words for .NET 将文档转换为 PDF 时禁用 Windows 字体嵌入。 |
 | [使用“跳过嵌入的 Arial 和 Times Roman 字体”优化 PDF 大小](./skip-embedded-arial-and-times-roman-fonts/) | 使用 Aspose.Words for .NET 生成不嵌入 Arial 和 Times Roman 字体的 PDF 的分步指南。 |
 | [通过不嵌入核心字体来减小 PDF 文件大小](./avoid-embedding-core-fonts/) | 了解如何在使用 Aspose.Words for .NET 将 Word 文档转换为 PDF 时避免基本字体嵌入。 |
-| [PDF 文档中的转义 URI](./escape-uri/) | 使用 Aspose.Words for .NET 转义 Uri 的分步指南。 |
+| [PDF 文档中的转义 URI](./escape-uri/) | 了解如何使用 Aspose.Words for .NET 转义 PDF 中的 URI。本详细指南将逐步指导您完成整个过程。 |
 | [将 Word 文档页眉页脚书签导出为 PDF 文档](./export-header-footer-bookmarks/) | 使用 Aspose.Words for .NET 导出页眉和页脚书签的分步指南。 |
 | [通过将 Wmf 字体缩放至图元文件大小来减小 PDF 大小](./scale-wmf-fonts-to-metafile-size/) | 使用 Aspose.Words for .NET 转换为 PDF 时调整 WMF 字体大小的分步指南。 |
 | [使用附加文本定位功能改善 PDF 文本定位](./additional-text-positioning/) | 了解如何在使用 Aspose.Words for .NET 将 Word 文档转换为 PDF 时控制附加文本的位置。 |

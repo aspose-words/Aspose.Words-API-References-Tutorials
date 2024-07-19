@@ -11,7 +11,7 @@ Les didacticiels sur le traitement de mots avec révisions vous guident à trave
 
 En suivant ces didacticiels, vous comprendrez comment gérer efficacement les révisions de vos documents Word à l'aide d'Aspose.Words for .NET. Vous apprendrez à contrôler les modifications apportées au contenu du document, à collaborer avec d'autres utilisateurs et à conserver un historique des modifications apportées. Les didacticiels fournissent des exemples de code détaillés et des explications claires pour vous aider à maîtriser ces fonctionnalités.
 
-Que vous soyez débutant ou développeur expérimenté, ces didacticiels vous aideront à profiter pleinement des fonctionnalités de révision d'Aspose.Words for .NET et à optimiser votre flux de traitement de documents. En suivant les étapes décrites dans les tutoriels, vous pourrez facilement intégrer des fonctionnalités de révision dans vos applications et améliorer la gestion des modifications dans vos documents Word.
+Que vous soyez débutant ou développeur expérimenté, ces tutoriels vous aideront à profiter pleinement des fonctionnalités de révision d'Aspose.Words for .NET et à optimiser votre flux de traitement de documents. En suivant les étapes décrites dans les tutoriels, vous pourrez facilement intégrer des fonctionnalités de révision dans vos applications et améliorer la gestion des modifications dans vos documents Word.
 
  ## Tutoriels
 | Titre | Description |

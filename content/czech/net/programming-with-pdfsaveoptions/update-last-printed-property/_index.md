@@ -1,6 +1,6 @@
 ---
-title: Aktualizovat naposledy vytištěnou vlastnost v dokumentu PDF
-linktitle: Aktualizovat naposledy vytištěnou vlastnost v dokumentu PDF
+title: Aktualizujte naposledy vytištěnou vlastnost v dokumentu PDF
+linktitle: Aktualizujte naposledy vytištěnou vlastnost v dokumentu PDF
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Podrobný průvodce aktualizací vlastnosti "Last Printed" při převodu do PDF pomocí Aspose.Words for .NET.
 type: docs

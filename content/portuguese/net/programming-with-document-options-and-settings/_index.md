@@ -14,12 +14,12 @@ Os tutoriais explicam como personalizar as opções de carregamento de documento
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Otimizar para Ms Word](./optimize-for-ms-word/) | Guia passo a passo para otimizar um documento para MS Word com Aspose.Words for .NET. |
-| [Mostrar erros gramaticais e ortográficos](./show-grammatical-and-spelling-errors/) | Guia passo a passo para ativar a exibição de erros gramaticais e ortográficos em um documento com Aspose.Words for .NET. |
-| [Limpar estilos e listas não utilizados](./cleanup-unused-styles-and-lists/) | Guia passo a passo para limpar estilos e listas não utilizados em um documento com Aspose.Words for .NET. |
-| [Limpar estilo duplicado](./cleanup-duplicate-style/) | Guia passo a passo para limpar estilos duplicados em um documento usando Aspose.Words for .NET. Código fonte completo incluído. |
-| [Ver opções](./view-options/) | Guia passo a passo para configurar opções de exibição de documentos com Aspose.Words for .NET. |
-| [Configuração da página do documento](./document-page-setup/) | Guia passo a passo para configurar um layout de documento com Aspose.Words for .NET. |
-| [Adicionar japonês como idioma de edição](./add-japanese-as-editing-languages/) | Guia passo a passo para adicionar japonês como idioma de edição com Aspose.Words for .NET. |
-| [Definir russo como idioma de edição padrão](./set-russian-as-default-editing-language/) | Guia passo a passo para definir o russo como idioma de edição padrão de um documento com Aspose.Words for .NET. |
-| [Definir configuração de página e formatação de seção](./set-page-setup-and-section-formatting/) | Guia passo a passo para configurar o layout de um documento e a formatação de seção com Aspose.Words for .NET. |
+| [Otimizar para Ms Word](./optimize-for-ms-word/) | Otimize facilmente documentos gramaticais do Word para diferentes versões do MS Word usando Aspose.Words for .NET com este guia passo a passo. |
+| [Mostrar erros gramaticais e ortográficos](./show-grammatical-and-spelling-errors/) | Aprenda como exibir erros gramaticais e ortográficos em documentos do Word usando Aspose.Words for .NET com este tutorial abrangente. |
+| [Limpar estilos e listas não utilizados](./cleanup-unused-styles-and-lists/) | Limpe seus documentos do Word com Aspose.Words for .NET removendo estilos e listas não utilizados. Siga este guia passo a passo para agilizar seus documentos sem esforço. |
+| [Limpar estilo duplicado](./cleanup-duplicate-style/) | Aprenda como limpar estilos duplicados em seus documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo abrangente. |
+| [Ver opções](./view-options/) | Aprenda como visualizar opções em documentos do Word usando Aspose.Words for .NET. Este guia aborda a configuração de tipos de visualização, o ajuste dos níveis de zoom e o salvamento do documento. |
+| [Configuração da página do documento](./document-page-setup/) | Domine a configuração da página do documento com Aspose.Words for .NET em etapas fáceis. Aprenda a carregar, definir layout, definir caracteres por linha, linhas por página e salvar seu documento. |
+| [Adicionar japonês como idioma de edição](./add-japanese-as-editing-languages/) | Aprenda como adicionar japonês como idioma de edição em seus documentos usando Aspose.Words for .NET com este guia passo a passo detalhado. |
+| [Definir russo como idioma de edição padrão](./set-russian-as-default-editing-language/) | Aprenda como definir o russo como idioma de edição padrão em documentos do Word usando Aspose.Words for .NET. Siga nosso guia passo a passo para obter instruções detalhadas. |
+| [Definir configuração de página e formatação de seção](./set-page-setup-and-section-formatting/) | Aprenda como definir a configuração da página e a formatação da seção em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo. Melhore a apresentação do seu documento sem esforço. |

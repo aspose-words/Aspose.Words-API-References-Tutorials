@@ -10,7 +10,7 @@ url: /id/python-net/document-splitting-and-formatting/
 
 ## Pengantar Pemisahan dan Pemformatan Dokumen dengan Tutorial Aspose.Words
 
-Selamat datang di dunia tutorial Aspose.Words yang didedikasikan untuk pemisahan dan pemformatan dokumen! Seri tutorial ini dirancang untuk memberdayakan pengembang yang menggunakan Python dan .NET dengan pengetahuan dan keterampilan yang diperlukan untuk membagi dan memformat dokumen secara efisien. Baik Anda menangani file besar, mengekstrak bagian tertentu, atau memastikan pemformatan konsisten, tutorial ini akan memberi Anda alat untuk menyempurnakan tugas pemrosesan dokumen Anda.
+Selamat datang di dunia tutorial Aspose.Words yang didedikasikan untuk pemisahan dan pemformatan dokumen! Seri tutorial ini dirancang untuk memberdayakan pengembang yang menggunakan Python dan .NET dengan pengetahuan dan keterampilan yang dibutuhkan untuk membagi dan memformat dokumen secara efisien. Baik Anda menangani file besar, mengekstrak bagian tertentu, atau memastikan pemformatan konsisten, tutorial ini akan memberi Anda alat untuk menyempurnakan tugas pemrosesan dokumen Anda.
 
 ## Mengapa Pemisahan dan Pemformatan Dokumen Penting
 
@@ -41,4 +41,4 @@ Pelajari cara menggabungkan dan mengkloning dokumen secara efisien menggunakan A
 ### [Membandingkan Versi Dokumen untuk Pengendalian Revisi yang Efektif](./compare-document-versions/)
 Pelajari cara membandingkan versi dokumen secara efektif menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk kontrol revisi. Meningkatkan kolaborasi dan mencegah kesalahan.
 ### [Menguasai Teknik Pemformatan Dokumen untuk Dampak Visual](./document-formatting-techniques/)
-Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk Python. Buat dokumen yang menarik secara visual dengan gaya font, tabel, gambar, dan banyak lagi. Panduan langkah demi langkah dengan contoh kode.
+Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk Python. Buat dokumen yang menarik secara visual dengan gaya font, tabel, gambar, dan lainnya. Panduan langkah demi langkah dengan contoh kode.

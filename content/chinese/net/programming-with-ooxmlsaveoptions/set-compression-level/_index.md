@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveO
 
 在本教程中，我们探索了使用 Aspose.Words for .NET 保存文档时设置压缩级别的功能。通过指定适当的压缩级别，您可以优化文档大小和生成速度。
 
-这`OoxmlSaveOptions`类提供了通过设置来控制压缩级别的灵活性`CompressionLevel`属性设置为适当的值，例如`SuperFast`。这可让您根据您的特定需求在文件大小和备份速度之间取得适当的平衡。
+这`OoxmlSaveOptions`类提供了通过设置来控制压缩级别的灵活性`CompressionLevel`属性设置为适当的值，例如`SuperFast`。这可让您根据特定需求在文件大小和备份速度之间取得适当的平衡。
 
 当您需要减小生成的文件大小（尤其是大型文档）时，使用压缩会很有用。这可以更轻松地存储、共享和传输文档。
 

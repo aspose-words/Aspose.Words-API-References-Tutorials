@@ -58,7 +58,7 @@ byte[] imageBytes = Files.readAllBytes(Paths.get("watermark.png"));
 Shape watermark = new Shape(doc, ShapeType.IMAGE);
 watermark.getImageData().setImage(imageBytes);
 
-// Ορίστε το μέγεθος και τη θέση του υδατογραφήματος
+// Ρυθμίστε το μέγεθος και τη θέση του υδατογραφήματος
 watermark.setWidth(200.0);
 watermark.setHeight(100.0);
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.CENTER);

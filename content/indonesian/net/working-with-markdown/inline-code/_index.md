@@ -66,11 +66,11 @@ Selamat! Anda sekarang telah mempelajari cara menggunakan fungsionalitas kode se
 
 #### T: Bagaimana cara menggunakan kode sebaris di Aspose.Words?
 
- J: Untuk menggunakan kode sebaris di Aspose.Words, Anda dapat menggunakan tag yang sesuai untuk mengelilingi teks yang akan diformat sebagai kode sebaris. Misalnya, Anda dapat menggunakan`<code>` atau`<kbd>` tag untuk mengelilingi teks untuk diformat sebagai kode sebaris.
+J: Untuk menggunakan kode sebaris di Aspose.Words, Anda dapat menggunakan tag yang sesuai untuk mengelilingi teks yang akan diformat sebagai kode sebaris. Misalnya, Anda dapat menggunakan`<code>` atau`<kbd>` tag untuk mengelilingi teks untuk diformat sebagai kode sebaris.
 
 #### T: Apakah mungkin untuk menentukan font atau warna kode sebaris di Aspose.Words?
 
- A: Ya, Anda dapat menentukan font atau warna kode inline di Aspose.Words. Anda dapat menggunakan`Font.Name`Dan`Font.Color` properti dari`Run` objek untuk mengatur font dan warna kode sebaris. Misalnya, Anda bisa menggunakan`run.Font.Name = "Courier New"` untuk menentukan font untuk kode sebaris dan`run.Font.Color = Color.Blue`untuk menentukan warnanya.
+ A: Ya, Anda dapat menentukan font atau warna kode inline di Aspose.Words. Anda dapat menggunakan`Font.Name`Dan`Font.Color` properti dari`Run` objek untuk mengatur font dan warna kode sebaris. Misalnya, Anda bisa menggunakan`run.Font.Name = "Courier New"` untuk menentukan font untuk kode sebaris dan`run.Font.Color = Color.Blue` untuk menentukan warnanya.
 
 #### T: Bisakah saya menggunakan kode sebaris dalam paragraf yang berisi elemen teks lain?
 

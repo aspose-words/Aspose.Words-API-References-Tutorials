@@ -18,7 +18,7 @@ url: /hi/java/document-printing/print-document-printdialog/
 इससे पहले कि हम कोड में उतरें, सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ मौजूद हैं:
 
 - जावा डेवलपमेंट किट (JDK): सुनिश्चित करें कि आपके सिस्टम पर जावा स्थापित है।
--  Aspose.Words for Java: आप लाइब्रेरी को यहां से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/).
+-  जावा के लिए Aspose.Words: आप लाइब्रेरी को यहां से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/).
 
 ## अपना जावा प्रोजेक्ट सेट अप करना
 

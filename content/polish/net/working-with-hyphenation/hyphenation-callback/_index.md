@@ -20,7 +20,7 @@ Zanim zabrudzimy sobie ręce kodem, upewnijmy się, że mamy wszystko, czego pot
 2. IDE: środowisko programistyczne, takie jak Visual Studio.
 3. Podstawowa znajomość C#: Zrozumienie C# i frameworku .NET.
 4. Słowniki dzielenia wyrazów: słowniki dzielenia wyrazów dla języków, których planujesz używać.
-5.  Licencja Aspose: Ważna licencja Aspose. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli go nie masz.
+5.  Licencja Aspose: Ważna licencja Aspose. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli go nie masz.
 
 ## Importuj przestrzenie nazw
 

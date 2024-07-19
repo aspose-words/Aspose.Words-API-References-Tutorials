@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Paso 1: cargue el documento fuente
 
- En primer lugar, debe cargar el documento fuente del que desea eliminar encabezados y pies de página. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos donde se encuentra el documento fuente.
+En primer lugar, debe cargar el documento fuente del que desea eliminar encabezados y pies de página. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos donde se encuentra el documento fuente.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

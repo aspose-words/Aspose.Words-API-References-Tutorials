@@ -81,14 +81,14 @@ Att klona dokumentet är enkelt med Aspose.Words:
 
 Med allt på plats är det dags att köra din kod och se resultatet:
 
-1.  Bygg ditt projekt: Klicka på`Build` menyn och välj`Build Solution`. Se till att det inte finns några fel.
+1. Bygg ditt projekt: Klicka på`Build` menyn och välj`Build Solution`. Se till att det inte finns några fel.
 2.  Kör ditt projekt: Hit`F5` eller klicka på`Start` knappen för att köra ditt projekt. Om allt är korrekt inställt bör ett nytt klonat dokument dyka upp i din dokumentkatalog.
 
 ## Steg 6: Verifiera utdata
 
 Slutligen, låt oss kontrollera om vårt klonade dokument är som förväntat:
 
-1.  Navigera till din dokumentkatalog: Öppna`Documents` mapp och hitta det klonade dokumentet som heter`CloneAndCombineDocuments.CloningDocument.docx`.
+1.  Navigera till din dokumentkatalog: Öppna`Documents` mapp och hitta det klonade dokumentet med namnet`CloneAndCombineDocuments.CloningDocument.docx`.
 2.  Öppna det klonade dokumentet: Dubbelklicka för att öppna det i Microsoft Word och verifiera att det är en exakt kopia av ditt original`Document.docx`.
 
 ## Slutsats

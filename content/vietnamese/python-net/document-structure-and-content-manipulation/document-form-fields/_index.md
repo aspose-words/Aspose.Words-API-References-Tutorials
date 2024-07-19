@@ -250,7 +250,7 @@ pip install aspose-words
 
 ### Các trường biểu mẫu có thể truy cập được đối với người dùng khuyết tật không?
 
-Tuyệt đối. Khi thiết kế biểu mẫu, hãy xem xét nguyên tắc trợ năng để đảm bảo rằng người dùng khuyết tật có thể tương tác với các trường biểu mẫu bằng trình đọc màn hình và các công nghệ hỗ trợ khác.
+Tuyệt đối. Khi thiết kế biểu mẫu, hãy xem xét các nguyên tắc trợ năng để đảm bảo rằng người dùng khuyết tật có thể tương tác với các trường biểu mẫu bằng trình đọc màn hình và các công nghệ hỗ trợ khác.
 
 ### Tôi có thể xuất dữ liệu đã chụp sang cơ sở dữ liệu bên ngoài không?
 

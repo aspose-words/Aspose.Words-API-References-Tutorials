@@ -55,7 +55,7 @@ Ebben a példában:
 
 ## 3. lépés: Töltse be a dokumentumot
 
- Ha beállította a fontforrásokat, a következő lépés a dokumentum betöltése egy Aspose.Words fájlba`Document`tárgy. Ez lehetővé teszi a dokumentum kezelését és végül mentését.
+ Ha beállította a fontforrásokat, a következő lépés a dokumentum betöltése egy Aspose.Words fájlba`Document` tárgy. Ez lehetővé teszi a dokumentum kezelését és végül mentését.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

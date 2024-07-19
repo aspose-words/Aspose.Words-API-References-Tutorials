@@ -30,7 +30,7 @@ A lo largo de esta serie de tutoriales, lo guiaremos a través de una variedad d
 - Protección de documentos: aprenda cómo proteger documentos con permisos y protección con contraseña.
 - Exportación y conversión: explore opciones para exportar documentos a varios formatos y plataformas.
 
-Al final de esta serie, poseerá las habilidades para crear documentos bien estructurados y visualmente atractivos con configuraciones personalizadas que se alineen con sus requisitos específicos.
+Al final de esta serie, poseerá las habilidades para crear documentos visualmente atractivos y bien estructurados con configuraciones personalizadas que se alineen con sus requisitos específicos.
 
 ## Tutoriales de configuración y opciones de documentos
 ### [Técnicas avanzadas para unir y anexar documentos](./join-append-documents/)

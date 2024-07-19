@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://example.com/resources"
 
  Bu kod bir örneğini oluşturur`HtmlSaveOptions` ve aşağıdaki seçenekleri ayarlar:
 
-- `CssStyleSheetType` ayarlandı`CssStyleSheetType.External`CSS stil sayfasını harici bir dosyaya aktarmak için.
+- `CssStyleSheetType` ayarlandı`CssStyleSheetType.External` CSS stil sayfasını harici bir dosyaya aktarmak için.
 - `ExportFontResources` ayarlandı`true` yazı tipi kaynaklarını dışa aktarmak için.
 - `ResourceFolder` kaynakların kaydedileceği hedef dizini belirtir.
-- `ResourceFolderAlias` kaynaklara erişmek için kullanılacak URL takma adını belirtir.
+- `ResourceFolderAlias`kaynaklara erişmek için kullanılacak URL takma adını belirtir.
 
 ## Adım 4: Belgeyi HTML'ye dönüştürme ve kaydetme
 

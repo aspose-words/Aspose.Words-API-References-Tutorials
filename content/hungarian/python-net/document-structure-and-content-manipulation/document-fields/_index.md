@@ -49,7 +49,7 @@ builder.insert_field('= 5 + 3')
 
 ## Adatok kinyerése a mezőkből
 
- A táblaadatokat a`Field` osztály:
+ A terepi adatokat a`Field` osztály:
 
 ```python
 field = doc.range.fields[0]

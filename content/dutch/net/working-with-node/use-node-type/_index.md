@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## Stap 3: Haal het documentknooppunttype op
- Om het knooppunttype van een document te achterhalen, gebruiken we de`NodeType` eigendom.
+Om het knooppunttype van een document te achterhalen, gebruiken we de`NodeType` eigendom.
 
 ```csharp
 NodeType type = doc.NodeType;

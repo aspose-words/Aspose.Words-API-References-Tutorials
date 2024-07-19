@@ -9,7 +9,7 @@ url: /zh/net/basic-conversions/docx-to-byte/
 ---
 ## 介绍
 
-在 .NET 开发领域，Aspose.Words 是一款功能强大的工具，可用于以编程方式处理 Word 文档。无论您是构建生成报告、自动化文档工作流程还是增强文档处理功能的应用程序，Aspose.Words 都能提供您所需的强大功能。本文深入探讨如何使用 Aspose.Words for .NET 将 Docx 文件转换为字节数组，并提供详细的分步指南来帮助您有效地利用此功能。
+在 .NET 开发领域，Aspose.Words 是一款功能强大的编程式 Word 文档处理工具。无论您是构建生成报告、自动化文档工作流程还是增强文档处理功能的应用程序，Aspose.Words 都能提供您所需的强大功能。本文深入探讨如何使用 Aspose.Words for .NET 将 Docx 文件转换为字节数组，并提供详细的分步指南来帮助您有效利用此功能。
 
 ## 先决条件
 

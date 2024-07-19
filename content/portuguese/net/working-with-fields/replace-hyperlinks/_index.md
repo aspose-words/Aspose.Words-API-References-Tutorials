@@ -58,7 +58,7 @@ foreach (Field field in doc.Range.Fields)
             continue;
         
         // Substitua o endereço do hiperlink e o resultado.
-        hyperlink.Address = "http://www.aspose.com”;
+        hyperlink.Address = "http://www.aspose.com";
         hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
     }
 }

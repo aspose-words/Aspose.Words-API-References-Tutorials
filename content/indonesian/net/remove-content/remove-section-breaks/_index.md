@@ -46,7 +46,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 ```
 
 ## Langkah 4: Simpan Dokumen yang Dimodifikasi
- Terakhir, kami akan menyimpan dokumen yang dimodifikasi menggunakan`Save` metode. Tentukan jalur dan format file keluaran yang diinginkan (misalnya, DOCX) untuk dokumen yang dimodifikasi.
+Terakhir, kami akan menyimpan dokumen yang dimodifikasi menggunakan`Save` metode. Tentukan jalur dan format file keluaran yang diinginkan (misalnya, DOCX) untuk dokumen yang dimodifikasi.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

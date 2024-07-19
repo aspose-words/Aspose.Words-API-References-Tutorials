@@ -50,7 +50,7 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
         para.get_runs().get(0).set_text("new_text")
 ```
 
-## Arbeiten mit Formatierungen
+## Mit Formatierungen arbeiten
 
 Aspose.Words ermöglicht Ihnen das Arbeiten mit Formatierungsstilen:
 

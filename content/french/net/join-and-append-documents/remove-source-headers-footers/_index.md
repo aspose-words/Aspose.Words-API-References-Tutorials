@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Étape 1 : Charger le document source
 
- Tout d'abord, vous devez charger le document source dont vous souhaitez supprimer les en-têtes et les pieds de page. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents où se trouve le document source.
+Tout d'abord, vous devez charger le document source dont vous souhaitez supprimer les en-têtes et les pieds de page. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents où se trouve le document source.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

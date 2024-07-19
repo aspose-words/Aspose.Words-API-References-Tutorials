@@ -23,7 +23,7 @@ url: /zh-hant/net/add-content-using-documentbuilder/
 | [在 Word 文件中插入複選框表單字段](./insert-check-box-form-field/) | 透過這份詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中插入複選框表單欄位。非常適合開發人員。 |
 | [在 Word 文件中插入組合框表單字段](./insert-combo-box-form-field/) | 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中插入組合框表單欄位。 |
 | [在Word文檔中插入Html](./insert-html/) | 透過我們詳細的逐步教學，了解如何使用 Aspose.Words for .NET 將 HTML 無縫插入到 Word 文件中。非常適合開發人員。 |
-| [在Word文件中插入超鏈接](./insert-hyperlink/) | 透過這份詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中輕鬆插入超連結。非常適合 C# 開發人員。 |
+| [在Word文件中插入超鏈接](./insert-hyperlink/) | 透過我們的逐步指南，了解如何使用 Aspose.Words for .NET 將超連結插入 Word 文件中。非常適合自動化文件建立任務。 |
 | [在 Word 文件中插入目錄](./insert-table-of-contents/) | 了解如何使用 Aspose.Words for .NET 在 Word 中插入目錄。請按照我們的逐步指南進行無縫文件導航。 |
 | [在 Word 文件中插入內嵌影像](./insert-inline-image/) | 了解如何使用 Aspose.Words for .NET 將內嵌影像插入 Word 文件中。包含程式碼範例和常見問題的逐步指南。 |
 | [在Word文件中插入浮動影像](./insert-floating-image/) | 透過這份詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中插入浮動圖像。非常適合增強您的文件。 |

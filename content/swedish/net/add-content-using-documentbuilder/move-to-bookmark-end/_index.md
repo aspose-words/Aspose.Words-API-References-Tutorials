@@ -134,7 +134,7 @@ Där har du det! Du har precis lärt dig hur du flyttar till slutet av ett bokm�
 
 ### 2. Vad händer om mitt bokmärkesnamn är felaktigt?
 
- Om bokmärkets namn är felaktigt eller inte finns,`MoveToBookmark` metod kommer tillbaka`false`, och DocumentBuilder kommer inte att flyttas till någon plats.
+ Om bokmärkets namn är felaktigt eller inte finns,`MoveToBookmark` metoden kommer tillbaka`false`, och DocumentBuilder kommer inte att flyttas till någon plats.
 
 ### 3. Kan jag infoga andra typer av innehåll i bokmärkesänden?
 

@@ -22,7 +22,7 @@ Belge içeriğini değiştirmenin ayrıntılarına dalmadan önce, başlamak iç
 
 2. API Referansı
    
-   Aşağıdaki belgeleri inceleyerek Aspose.Words for Java API'sini öğrenin:[Aspose.Words for Java API Referansı](https://reference.aspose.com/words/java/). Bu kaynak, bu yolculuk boyunca rehberiniz olacak.
+   Aşağıdaki belgeleri inceleyerek Aspose.Words for Java API'sini öğrenin:[Aspose.Words for Java API Referansı](https://reference.aspose.com/words/java/). Bu kaynak, bu yolculuk boyunca rehberiniz olacaktır.
 
 3. Java Bilgisi
    

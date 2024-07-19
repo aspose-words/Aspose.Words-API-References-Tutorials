@@ -106,4 +106,4 @@ Sì, queste impostazioni possono essere applicate a qualsiasi testo, ma sono par
 Assolutamente! È possibile scorrere una raccolta di documenti e applicare queste impostazioni a livello di codice a ciascuno di essi.
 
 ### Cosa succede se riscontro problemi o ho domande?
-Se riscontri problemi o hai ulteriori domande, il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8) è un ottimo posto per cercare aiuto.
+ Se riscontri problemi o hai ulteriori domande, il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8) è un ottimo posto per cercare aiuto.

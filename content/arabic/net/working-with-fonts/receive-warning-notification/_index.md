@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تحديث تخطيط الصفحة
-
- اتصل ب`UpdatePageLayout`طريقة. يؤدي هذا إلى عرض المستند في الذاكرة والتقاط أي تحذيرات تحدث أثناء العرض.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## الخطوة 4: إعداد رد الاتصال التحذيري
+## الخطوة 3: إعداد رد الاتصال التحذيري
 
  لالتقاط التحذيرات والتعامل معها، قم بإنشاء فئة تنفذ`IWarningCallback` واجهه المستخدم. ستقوم هذه الفئة بتسجيل أي تحذيرات تحدث أثناء معالجة المستندات.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // نحن مهتمون فقط باستبدال الخطوط.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## الخطوة 5: تعيين رد الاتصال للمستند
+## الخطوة 4: تعيين رد الاتصال للمستند
 
 قم بتعيين رد الاتصال التحذيري للمستند. وهذا يضمن التقاط أي مشكلات تتعلق بالخط وتسجيلها.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## الخطوة 5: تحديث تخطيط الصفحة
+
+ اتصل ب`UpdatePageLayout` طريقة. يؤدي هذا إلى عرض المستند في الذاكرة والتقاط أي تحذيرات تحدث أثناء العرض.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## الخطوة 6: احفظ المستند

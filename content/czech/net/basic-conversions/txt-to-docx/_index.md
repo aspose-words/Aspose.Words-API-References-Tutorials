@@ -48,7 +48,7 @@ doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 
 ## Závěr
 
-V tomto tutoriálu jsme se zabývali tím, jak převést textový soubor na dokument aplikace Word pomocí Aspose.Words for .NET. Dodržením těchto jednoduchých kroků můžete zautomatizovat proces převodu textového obsahu do strukturovanějšího a upravitelného formátu a zlepšit tak pracovní postupy zpracování dokumentů.
+tomto tutoriálu jsme se zabývali tím, jak převést textový soubor na dokument aplikace Word pomocí Aspose.Words for .NET. Dodržením těchto jednoduchých kroků můžete zautomatizovat proces převodu textového obsahu do strukturovanějšího a upravitelného formátu a zlepšit tak pracovní postupy zpracování dokumentů.
 
 ## FAQ
 

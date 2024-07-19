@@ -17,7 +17,7 @@ Próbált már egy Word-dokumentum labirintusában navigálni, de megbotlott az 
 Mielőtt belevágnánk a kódba, győződjön meg arról, hogy rendelkezik-e minden szükséges eszközzel:
 
 - Visual Studio: Győződjön meg arról, hogy telepítve van. Ha nem, töltse le és telepítse a Microsoft webhelyéről.
--  Aspose.Words for .NET: Ha még nem rendelkezik vele, szerezze be a legújabb verziót[itt](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Ha még nem rendelkezik vele, szerezze be a legújabb verziót[itt](https://releases.aspose.com/words/net/).
 - Egy minta Word dokumentum: Ennek tartalmaznia kell bekezdésstílus-elválasztókat, amelyekkel dolgozhatunk. Létrehozhat egyet, vagy használhat meglévő dokumentumot.
 
 ## Névterek importálása

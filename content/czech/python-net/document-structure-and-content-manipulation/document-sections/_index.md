@@ -68,7 +68,7 @@ footer.paragraphs.add_run("Footer Text")
 
 ## Správa zalomení stránek
 
-Konce stránek zajišťují, že obsah plynule přechází mezi sekcemi. Konce stránek můžete vložit na konkrétní místa v dokumentu:
+Konce stránek zajišťují hladký tok obsahu mezi sekcemi. Konce stránek můžete vložit na konkrétní místa v dokumentu:
 
 ```python
 # Insert page break
@@ -96,7 +96,7 @@ Ano, v dokumentu můžete mít více oddílů, z nichž každý má vlastní nas
 Ano, Aspose.Words podporuje různé formáty Wordu, včetně DOC, DOCX, RTF a dalších.
 
 ### Jak přidám obrázky do záhlaví nebo zápatí?
- Můžete použít`Shape` třídy pro přidání obrázků do záhlaví nebo zápatí. Podrobné pokyny naleznete v dokumentaci API.
+ Můžete použít`Shape` třídy pro přidání obrázků do záhlaví nebo zápatí. Podrobné pokyny najdete v dokumentaci API.
 
 ### Kde si mohu stáhnout nejnovější verzi Aspose.Words pro Python?
  Nejnovější verzi Aspose.Words pro Python si můžete stáhnout z webu[Stránka vydání Aspose.Words](https://releases.aspose.com/words/python/).

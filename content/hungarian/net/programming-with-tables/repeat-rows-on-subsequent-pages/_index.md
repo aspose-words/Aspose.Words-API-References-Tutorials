@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-//Szúrja be az első sor első celláját
+// Szúrja be az első sor első celláját
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();

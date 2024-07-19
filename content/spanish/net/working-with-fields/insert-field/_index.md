@@ -65,7 +65,7 @@ R: Un campo en Word es un elemento que le permite insertar y manipular datos din
 
 R: Para insertar un campo en un documento de Word, puede seguir estos pasos:
 
-1. Coloque el cursor donde desee insertar el campo.
+1. Coloque el cursor donde desea insertar el campo.
 2. Vaya a la pestaña "Insertar" en la cinta.
 3. Haga clic en el botón "Campo" en el grupo "Texto" para abrir el cuadro de diálogo de campos.
 4. Seleccione el tipo de campo que desea insertar de la lista desplegable.

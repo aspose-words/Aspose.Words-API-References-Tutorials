@@ -9,7 +9,7 @@ url: /vi/net/programming-with-charts/insert-scatter-chart/
 ---
 ## Giới thiệu
 
-Trong hướng dẫn này, bạn sẽ tìm hiểu cách tận dụng Aspose.Words cho .NET để chèn biểu đồ phân tán vào tài liệu Word của bạn. Biểu đồ phân tán là công cụ trực quan mạnh mẽ có thể hiển thị hiệu quả các điểm dữ liệu dựa trên hai biến, làm cho tài liệu của bạn hấp dẫn và nhiều thông tin hơn.
+Trong hướng dẫn này, bạn sẽ tìm hiểu cách tận dụng Aspose.Words cho .NET để chèn biểu đồ phân tán vào tài liệu Word của bạn. Biểu đồ phân tán là công cụ trực quan mạnh mẽ có thể hiển thị hiệu quả các điểm dữ liệu dựa trên hai biến số, làm cho tài liệu của bạn hấp dẫn và giàu thông tin hơn.
 
 ## Điều kiện tiên quyết
 

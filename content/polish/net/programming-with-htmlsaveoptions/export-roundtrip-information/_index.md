@@ -33,7 +33,7 @@ Teraz skonfigurujemy opcje zapisywania HTML, aby wyeksportować informacje o dok
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Ten kod tworzy instancję`HtmlSaveOptions` ustawia`ExportRoundtripInformation` opcja`true` aby uwzględnić informacje o podróży w obie strony podczas eksportowania.
+ Ten kod tworzy instancję`HtmlSaveOptions` i ustawia`ExportRoundtripInformation` opcja`true` aby uwzględnić informacje o podróży w obie strony podczas eksportowania.
 
 ## Krok 4: Konwertowanie i zapisywanie dokumentu do formatu HTML
 

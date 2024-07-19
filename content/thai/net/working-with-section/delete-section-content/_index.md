@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## ขั้นตอนที่ 3: ลบเนื้อหาส่วน
-เพื่อล้างเนื้อหาของส่วน เราจะใช้ส่วน`ClearContent` วิธี.
+ เพื่อล้างเนื้อหาของส่วน เราจะใช้ส่วน`ClearContent` วิธี.
 
 ```csharp
 section.ClearContent();

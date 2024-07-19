@@ -19,8 +19,8 @@ Ezeket az oktatóanyagokat követve könnyedén kezelheti a Word-dokumentumok sz
 | Cím | Leírás |
 | --- | --- |
 | [Szakasz hozzáadása](./add-section/) | Ebből az oktatóanyagból megtudhatja, hogyan adhat hozzá szakaszt egy Word-dokumentumhoz az Aspose.Words for .NET használatával. Útmutató lépésről lépésre a dokumentum felépítéséhez. |
-| [Szakasz törlése](./delete-section/) | Ebből az oktatóanyagból megtudhatja, hogyan távolíthat el egy adott szakaszt egy Word-dokumentumból az Aspose.Words for .NET segítségével. |
-| [Minden szakasz törlése](./delete-all-sections/) | Ebből az oktatóanyagból megtudhatja, hogyan távolíthat el minden részt egy Word-dokumentumból az Aspose.Words for .NET használatával. |
+| [Szakasz törlése](./delete-section/) | Dokumentumkezelési alap az Aspose.Words for .NET segítségével. Néhány egyszerű lépésben megtudhatja, hogyan törölhet szakaszokat a Word dokumentumokból. |
+| [Minden szakasz törlése](./delete-all-sections/) | Ebből a könnyen követhető, lépésenkénti útmutatóból megtudhatja, hogyan törölheti a Word-dokumentum összes szakaszát az Aspose.Words for .NET használatával. |
 | [Szakasz Word tartalma hozzáfűzése](./append-section-content/) | Ebből az oktatóanyagból megtudhatja, hogyan adhat Word-tartalmat egy Word-dokumentum adott szakaszaihoz az Aspose.Words for .NET használatával.  |
 | [Klón szakasz](./clone-section/) | Ebből az oktatóanyagból megtudhatja, hogyan klónozhat egy szakaszt egy Word-dokumentumban az Aspose.Words for .NET használatával. Lépésről lépésre útmutató. |
 | [Szakasz másolása](./copy-section/) | Ebből az oktatóanyagból megtudhatja, hogyan másolhat át egy szakaszt egy Word-dokumentumból egy másik dokumentumba az Aspose.Words for .NET használatával. |

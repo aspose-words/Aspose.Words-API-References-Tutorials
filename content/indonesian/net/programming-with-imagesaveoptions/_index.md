@@ -14,7 +14,7 @@ Tutorial ini juga mencakup konsep dasar manipulasi gambar, termasuk menyisipkan,
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff](./expose-threshold-control-for-tiff-binarization/) | Pelajari cara mengontrol ambang binerisasi TIFF dengan Aspose.Words untuk .NET. Tutorial lengkap untuk kualitas gambar yang lebih baik. |
+| [Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff](./expose-threshold-control-for-tiff-binarization/) | Pelajari cara mengontrol ambang binarisasi TIFF dengan Aspose.Words untuk .NET. Tutorial lengkap untuk kualitas gambar yang lebih baik. |
 | [Dapatkan Rentang Halaman Tiff](./get-tiff-page-range/) | Pelajari cara mengekstrak berbagai halaman TIFF dengan Aspose.Words untuk .NET. Tutorial lengkap untuk file TIFF khusus. |
 | [Format 1Bpp Terindeks](./format-1bpp-indexed/) | Pelajari cara memformat gambar dalam 1 bpp yang diindeks dengan Aspose.Words untuk .NET. Tutorial lengkap untuk gambar dengan kedalaman warna rendah. |
 | [Dapatkan Rentang Halaman JPEG](./get-jpeg-page-range/) | Pelajari cara mendapatkan berbagai halaman JPEG dengan Aspose.Words untuk .NET. Tutorial lengkap untuk mengekstrak gambar khusus. |

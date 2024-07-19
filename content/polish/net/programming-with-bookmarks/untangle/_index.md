@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
- tym kroku używamy`GetAncestor` metoda znajdowania wiersza nadrzędnego zarówno węzła początkowego, jak i końcowego zakładki. Pomaga nam to dokładnie określić, o które wiersze chodzi.
+ W tym kroku używamy`GetAncestor` metoda znajdowania wiersza nadrzędnego zarówno węzła początkowego, jak i końcowego zakładki. Pomaga nam to dokładnie określić, o które wiersze chodzi.
 
 ## Krok 4: Sprawdź sąsiadujące rzędy
 
@@ -93,7 +93,7 @@ Krok 5 Nagłówek: Przesuwanie końca zakładki
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
- tym kroku używamy`AppendChild`metoda przesuwania węzła końcowego zakładki. Dołączając go do ostatniego akapitu ostatniej komórki górnego wiersza, mamy pewność, że zakładka jest prawidłowo rozplątana.
+ W tym kroku używamy`AppendChild` metoda przesuwania węzła końcowego zakładki. Dołączając go do ostatniego akapitu ostatniej komórki górnego wiersza, mamy pewność, że zakładka jest prawidłowo rozplątana.
 
 ## Wniosek
 
@@ -107,7 +107,7 @@ Tak, Aspose.Words dla .NET to potężna biblioteka, która pozwala manipulować 
 
 ### Co się stanie, jeśli zakładka obejmuje więcej niż dwa wiersze?
 
-tym samouczku omówiono zakładki rozciągające się na dwa sąsiednie wiersze. W bardziej złożonych przypadkach potrzebna byłaby dodatkowa logika do obsługi zakładek obejmujących wiele wierszy lub sekcji.
+W tym samouczku omówiono zakładki rozciągające się na dwa sąsiednie wiersze. W bardziej złożonych przypadkach potrzebna byłaby dodatkowa logika do obsługi zakładek obejmujących wiele wierszy lub sekcji.
 
 ### Czy dostępna jest wersja próbna Aspose.Words dla .NET?
 

@@ -81,7 +81,7 @@ A dokumentum klónozása gyerekjáték az Aspose.Words segítségével:
 
 Ha minden a helyén van, ideje futtatni a kódot, és látni az eredményeket:
 
-1.  Építse fel projektjét: Kattintson a`Build` menüt, és válassza ki`Build Solution`. Győződjön meg arról, hogy nincsenek hibák.
+1. Építse fel projektjét: Kattintson a`Build` menüt, és válassza ki`Build Solution`. Győződjön meg arról, hogy nincsenek hibák.
 2.  Futtassa projektjét: nyomja meg a gombot`F5` vagy kattintson a`Start` gombot a projekt futtatásához. Ha minden megfelelően van beállítva, egy új klónozott dokumentumnak kell megjelennie a dokumentumok könyvtárában.
 
 ## 6. lépés: Ellenőrizze a kimenetet
@@ -89,7 +89,7 @@ Ha minden a helyén van, ideje futtatni a kódot, és látni az eredményeket:
 Végül nézzük meg, hogy a klónozott dokumentumunk megfelel-e az elvárásoknak:
 
 1.  Keresse meg a Dokumentumok könyvtárát: Nyissa meg a`Documents` mappát, és keresse meg a klónozott dokumentumot`CloneAndCombineDocuments.CloningDocument.docx`.
-2.  Nyissa meg a klónozott dokumentumot: Kattintson duplán a Microsoft Wordben való megnyitásához, és ellenőrizze, hogy az eredeti példány pontos másolata-e`Document.docx`.
+2.  Nyissa meg a klónozott dokumentumot: Kattintson duplán a Microsoft Wordben való megnyitásához, és ellenőrizze, hogy az eredeti példány pontos másolata-e.`Document.docx`.
 
 ## Következtetés
 

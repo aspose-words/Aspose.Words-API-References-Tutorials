@@ -44,7 +44,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
 ```
 
-## 将文档另存为 PDF
+## 将文档保存为 PDF
 
 最后，将修改后的文档保存为 PDF 或您喜欢的格式。替换`"WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf"`使用您想要的输出文件路径：
 

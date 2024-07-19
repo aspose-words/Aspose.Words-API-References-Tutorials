@@ -9,7 +9,7 @@ url: /de/python-net/document-combining-and-comparison/
 ---
 ## Einführung in die Dokumentkombination und den Vergleich mit Aspose.Words
 
-Willkommen in der Welt der Aspose.Words-Tutorials zum Kombinieren und Vergleichen von Dokumenten! In dieser Tutorial-Reihe werden wir uns mit den leistungsstarken Funktionen von Aspose.Words für Python und .NET befassen, mit denen Sie Dokumente einfach und präzise zusammenführen und vergleichen können. Egal, ob Sie mit Verträgen, Berichten oder anderen Textdokumenten arbeiten, die Beherrschung der Techniken zum Kombinieren und Vergleichen von Dokumenten kann Ihre Dokumentverarbeitungsabläufe erheblich verbessern.
+Willkommen in der Welt der Aspose.Words-Tutorials zum Thema Dokumentenkombination und -vergleich! In dieser Tutorial-Reihe werden wir uns mit den leistungsstarken Funktionen von Aspose.Words für Python und .NET befassen, mit denen Sie Dokumente einfach und präzise zusammenführen und vergleichen können. Ganz gleich, ob Sie mit Verträgen, Berichten oder anderen Textdokumenten arbeiten: Die Beherrschung der Techniken zum Kombinieren und Vergleichen von Dokumenten kann Ihre Dokumentenverarbeitungsabläufe erheblich verbessern.
 
 ## Die Bedeutung der Dokumentenkombination und des Dokumentenvergleichs
 

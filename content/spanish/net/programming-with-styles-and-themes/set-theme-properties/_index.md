@@ -79,4 +79,4 @@ Configurar las propiedades del tema en un documento de Word le permite personali
 
 #### ¿Puedo guardar el documento modificado en diferentes formatos?
 
- Sí, puede guardar el documento modificado en varios formatos admitidos por Aspose.Words para .NET. El`Save` método de la`Document` object le permite especificar el formato del archivo de salida, como DOCX, PDF, HTML y más. Elija el formato apropiado según sus requisitos.
+ Sí, puede guardar el documento modificado en varios formatos admitidos por Aspose.Words para .NET. El`Save` método de la`Document` El objeto le permite especificar el formato del archivo de salida, como DOCX, PDF, HTML y más. Elija el formato apropiado según sus requisitos.

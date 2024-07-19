@@ -81,4 +81,4 @@ S: Ja, du kan lägga till accenttecken på en specifik del av texten i ett Word-
 
 #### F: Kan accentmärkena anpassas efter mina behov?
 
-S: Ja, accenttecken kan anpassas efter dina behov med Aspose.Words. Du kan justera stilegenskaperna för accentmärken, som färg, storlek, linjetyp med mera, för att matcha dina formateringsinställningar.
+S: Ja, accenttecken kan anpassas efter dina behov med Aspose.Words. Du kan justera stilegenskaperna för accentmärken, som färg, storlek, linjetyp med mera, för att matcha dina formateringspreferenser.

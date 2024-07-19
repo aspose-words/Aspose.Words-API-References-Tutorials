@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Wstaw obiekt OLE jako ikonę
- Skorzystaj z Konstruktora Dokumentów`InsertOleObjectAsIcon`metoda wstawiania obiektu OLE jako ikony do dokumentu. Określ ścieżkę pliku OLE, flagę wyświetlania, ścieżkę ikony i nazwę osadzonego obiektu.
+ Skorzystaj z Konstruktora Dokumentów`InsertOleObjectAsIcon` metoda wstawiania obiektu OLE jako ikony do dokumentu. Określ ścieżkę pliku OLE, flagę wyświetlania, ścieżkę ikony i nazwę osadzonego obiektu.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -51,7 +51,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
 ```
 
-To jest kompletny przykładowy kod do wstawiania obiektu OLE jako ikony za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać kroki opisane wcześniej, aby zintegrować ten kod ze swoim projektem.
+To jest kompletny przykładowy kod do wstawiania obiektu OLE jako ikony za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać opisane wcześniej kroki, aby zintegrować ten kod ze swoim projektem.
 
 ## Wniosek
 
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### P. Jak utworzyć nowy dokument i generator dokumentów w Aspose.Words dla .NET?
 
- Odp.: Możesz utworzyć nowy dokument za pomocą`Document` klasę i narzędzie do tworzenia dokumentów przy użyciu metody`DocumentBuilder` klasa. Oto przykład :
+ Odp.: Możesz utworzyć nowy dokument za pomocą`Document` klasę i narzędzie do tworzenia dokumentów przy użyciu metody`DocumentBuilder`klasa. Oto przykład :
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### P. Jak zapisać dokument z wstawionym obiektem OLE jako ikoną?
 
- O: Skorzystaj z dokumentu`Save` metoda zapisania dokumentu do pliku. Oto przykład :
+ O: Skorzystaj z dokumentu`Save`metoda zapisania dokumentu do pliku. Oto przykład :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

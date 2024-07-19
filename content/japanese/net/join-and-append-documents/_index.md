@@ -26,11 +26,11 @@ url: /ja/net/join-and-append-documents/
 | [連続参加](./join-continuous/) | Aspose.Words for .NET を使用して 2 つの Word 文書をシームレスに結合する方法を学びます。スムーズで効率的な文書の結合については、ステップ バイ ステップ ガイドに従ってください。 |
 | [新しいページに参加する](./join-new-page/) | Aspose.Words for .NET を使用して Word でドキュメントを結合および追加する方法を学びます。効率的なドキュメントの結合については、ステップバイステップのガイドに従ってください。 |
 | [ソースの書式を維持](./keep-source-formatting/) | Aspose.Words for .NET を使用して、書式設定を保持しながら Word 文書を結合する方法を学びます。ドキュメント アセンブリ タスクを自動化したい開発者に最適です。 |
-| [ソースをまとめる](./keep-source-together/) | Aspose.Words for .NET を使用して、書式設定を保持しながら Word 文書を結合する方法を学びます。この包括的なガイドでは、セットアップから実行まですべてをカバーしています。 |
+| [ソースをまとめる](./keep-source-together/) | Aspose.Words for .NET を使用して、書式設定を維持しながら Word 文書を結合する方法を学びます。この包括的なガイドでは、セットアップから実行まですべてをカバーしています。 |
 | [リストのソース書式を保持](./list-keep-source-formatting/) | Aspose.Words for .NET を使用して、書式を保持しながら Word 文書を結合する方法を学びます。このチュートリアルでは、シームレスな文書結合の手順を順を追って説明します。 |
-| [宛先スタイルの使用リスト](./list-use-destination-styles/) | Aspose.Words for .NET を使用してドキュメント リストをシームレスに結合および管理する方法を学びます。効率的なドキュメント統合については、ステップ バイ ステップのチュートリアルに従ってください。 |
+| [宛先スタイルの使用リスト](./list-use-destination-styles/) | Aspose.Words for .NET を使用して、リストの書式設定を失うことなく Word 文書を結合する方法を学びます。文書のスタイルをそのまま維持するためのステップバイステップ ガイド。 |
 | [ページ番号付けを再開](./restart-page-numbering/) | Aspose.Words for .NET を使用して Word 文書を結合および追加するときにページ番号付けを再開する方法を学習します。 |
-| [ページレイアウトの更新](./update-page-layout/) | 詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word 文書のページ レイアウトを簡単に更新します。 |
+| [ページレイアウトの更新](./update-page-layout/) | この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書のページ レイアウトを更新する方法を学習します。ドキュメント デザインの調整に最適です。 |
 | [宛先スタイルを使用する](./use-destination-styles/) | Aspose.Words for .NET で宛先スタイルを使用して、一貫した書式を維持しながらドキュメントをシームレスに追加する方法を学びます。 |
 | [スマートスタイルの動作](./smart-style-behavior/) | Aspose.Words for .NET を使用して Word 文書をシームレスに結合し、スタイルを保持してプロフェッショナルな結果を保証する方法を学習します。 |
 | [ビルダーでドキュメントを挿入](./insert-document-with-builder/) | Aspose.Words for .NET を使用して 2 つの Word 文書を結合する方法を学びます。DocumentBuilder を使用して文書を挿入し、書式を保持するためのステップバイステップ ガイドです。 |

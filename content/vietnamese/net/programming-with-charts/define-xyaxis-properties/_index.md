@@ -15,7 +15,7 @@ Biểu đồ là một công cụ mạnh mẽ để trực quan hóa dữ liệu
 
 Trước khi đi sâu vào mã hóa, bạn cần phải có một số điều kiện tiên quyết:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Bạn cần một môi trường phát triển tích hợp (IDE) như Visual Studio.
 3. .NET Framework: Đảm bảo môi trường phát triển của bạn được thiết lập để phát triển .NET.
 4. Kiến thức cơ bản về C#: Hướng dẫn này giả sử bạn có hiểu biết cơ bản về lập trình C#.

@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Título: Agregue un gráfico a su documento
 
-continuación, agreguemos un gráfico a su documento. Aquí es donde comienza la magia. Insertaremos un gráfico de columnas que actuará como nuestro lienzo en blanco.
+A continuación, agreguemos un gráfico a su documento. Aquí es donde comienza la magia. Insertaremos un gráfico de columnas que actuará como nuestro lienzo en blanco.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);

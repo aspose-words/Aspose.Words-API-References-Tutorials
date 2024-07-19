@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Paso 3: insertar un objeto OLE
- Utilice el generador de documentos`InsertOleObject` Método para insertar un objeto OLE en el documento. Especifique la URL del objeto OLE, el tipo de objeto, las opciones de visualización y otras configuraciones necesarias.
+ Utilice el generador de documentos`InsertOleObject`Método para insertar un objeto OLE en el documento. Especifique la URL del objeto OLE, el tipo de objeto, las opciones de visualización y otras configuraciones necesarias.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", verdadero, verdadero, nulo);
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### P: ¿Cómo insertar un objeto OLE en el documento?
 
- R: Utilice el`InsertOleObject`método del creador de documentos (`DocumentBuilder`) para insertar un objeto OLE en el documento. Especifique la URL del objeto OLE, el tipo de objeto, las opciones de visualización y otras configuraciones necesarias. Aquí hay un ejemplo :
+ R: Utilice el`InsertOleObject` método del creador de documentos (`DocumentBuilder`) para insertar un objeto OLE en el documento. Especifique la URL del objeto OLE, el tipo de objeto, las opciones de visualización y otras configuraciones necesarias. Aquí hay un ejemplo :
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", verdadero, verdadero, nulo);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", verdadero, verdade
 
 #### P: ¿Cómo guardar el documento?
 
- R: Utilice el documento`Save` método para guardar el documento en un archivo. Aquí hay un ejemplo :
+ R: Utilice el documento`Save`método para guardar el documento en un archivo. Aquí hay un ejemplo :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

@@ -15,7 +15,7 @@ Grafikler verileri görselleştirmek için güçlü bir araçtır. Dinamik grafi
 
 Kodlamaya başlamadan önce yerine getirmeniz gereken birkaç önkoşul vardır:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET kitaplığına sahip olduğunuzdan emin olun. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Aspose.Words for .NET kitaplığına sahip olduğunuzdan emin olun. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio gibi entegre bir geliştirme ortamına (IDE) ihtiyacınız var.
 3. .NET Framework: Geliştirme ortamınızın .NET geliştirme için ayarlandığından emin olun.
 4. Temel C# Bilgisi: Bu kılavuz, C# programlama konusunda temel bilgiye sahip olduğunuzu varsaymaktadır.

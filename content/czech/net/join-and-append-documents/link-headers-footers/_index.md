@@ -83,7 +83,7 @@ Propojení záhlaví a zápatí mezi dokumenty pomocí Aspose.Words for .NET je 
 Ano, Aspose.Words bez problémů zvládá různá rozvržení a zachovává integritu záhlaví a zápatí.
 
 ### Ovlivňuje propojení záhlaví a zápatí jiné formátování v dokumentech?
-Ne, propojení záhlaví a zápatí ovlivní pouze zadané sekce, ostatní obsah a formátování zůstanou nedotčené.
+Ne, propojení záhlaví a zápatí ovlivní pouze zadané sekce a ostatní obsah a formátování zůstanou nedotčené.
 
 ### Je Aspose.Words kompatibilní se všemi verzemi .NET?
 Aspose.Words podporuje různé verze .NET Framework a .NET Core, což zajišťuje kompatibilitu napříč platformami.

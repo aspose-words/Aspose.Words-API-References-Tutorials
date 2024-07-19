@@ -2,52 +2,67 @@
 title: Meja
 linktitle: Meja
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat tabel dengan Aspose.Words untuk .NET Panduan langkah demi langkah.
+description: Pelajari cara membuat dan mengkustomisasi tabel di Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk menghasilkan dokumen terstruktur dan menarik secara visual.
 type: docs
 weight: 10
 url: /id/net/working-with-markdown/table/
 ---
+## Perkenalan
 
+Bekerja dengan tabel dalam dokumen adalah persyaratan umum. Baik Anda membuat laporan, faktur, atau data terstruktur apa pun, tabel sangat diperlukan. Dalam tutorial ini, saya akan memandu Anda dalam membuat dan mengkustomisasi tabel menggunakan Aspose.Words untuk .NET. Ayo selami!
 
-Dalam contoh ini, kami akan memandu Anda tentang cara membuat tabel menggunakan Aspose.Words untuk .NET. Tabel adalah struktur data yang mengatur informasi ke dalam baris dan kolom.
+## Prasyarat
 
-## Langkah 1: Menggunakan pembuat dokumen
+Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
 
-Pertama, kita akan menggunakan pembuat dokumen untuk menambahkan konten ke dokumen kita.
+- Visual Studio: Anda memerlukan lingkungan pengembangan untuk menulis dan menguji kode Anda. Visual Studio adalah pilihan yang bagus.
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika Anda tidak memilikinya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+- Pemahaman Dasar C#: Beberapa keakraban dengan pemrograman C# diperlukan untuk diikuti.
+
+## Impor Namespace
+
+Sebelum kita masuk ke langkah-langkahnya, mari impor namespace yang diperlukan:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
+
+Hal pertama yang pertama, kita perlu membuat dokumen baru dan menginisialisasi kelas DocumentBuilder, yang akan membantu kita dalam membuat tabel.
+
+```csharp
+// Inisialisasi DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
+Langkah ini seperti menyiapkan ruang kerja Anda. Anda telah menyiapkan dokumen kosong dan pena Anda.
 
-## Langkah 2: Tambahkan sel dan data
+## Langkah 2: Mulailah Membangun Meja Anda
 
- Kami akan menambahkan sel dan data ke tabel kami menggunakan`InsertCell` metode dan`Writeln` metode pembuat dokumen.
-
-```csharp
-builder. InsertCell();
-builder.Writeln("a");
-builder. InsertCell();
-builder.Writeln("b");
-
-builder. InsertCell();
-builder.Writeln("c");
-builder. InsertCell();
-builder.Writeln("d");
-```
-
-### Contoh kode sumber untuk membuat tabel dengan Aspose.Words untuk .NET
+Sekarang kita sudah memiliki alatnya, mari kita mulai membuat tabelnya. Kita akan mulai dengan menyisipkan sel pertama dari baris pertama.
 
 ```csharp
-// Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.
-DocumentBuilder builder = new DocumentBuilder();
-
 // Tambahkan baris pertama.
 builder.InsertCell();
 builder.Writeln("a");
+
+// Masukkan sel kedua.
 builder.InsertCell();
 builder.Writeln("b");
 
+// Akhiri baris pertama.
+builder.EndRow();
+```
+
+Bayangkan langkah ini seperti menggambar baris pertama tabel Anda di selembar kertas dan mengisi dua sel pertama dengan "a" dan "b".
+
+## Langkah 3: Tambahkan Lebih Banyak Baris
+
+Mari tambahkan baris lain ke tabel kita.
+
+```csharp
 // Tambahkan baris kedua.
 builder.InsertCell();
 builder.Writeln("c");
@@ -55,26 +70,25 @@ builder.InsertCell();
 builder.Writeln("d");
 ```
 
-Selamat! Anda sekarang telah mempelajari cara membuat tabel dengan Aspose.Words untuk .NET.
+Di sini, kita cukup memperluas tabel kita dengan menambahkan baris lain dengan dua sel yang diisi dengan "c" dan "d".
 
-### FAQ
+## Kesimpulan
 
-#### Q: Bagaimana cara membuat tabel di Markdown?
+Membuat dan menyesuaikan tabel di Aspose.Words untuk .NET sangatlah mudah setelah Anda memahaminya. Dengan mengikuti langkah-langkah ini, Anda dapat membuat tabel terstruktur dan menarik secara visual di dokumen Anda. Selamat membuat kode!
 
-A: Untuk membuat tabel di Markdown, gunakan sintaks pipa (`|`untuk membatasi sel dan tanda hubung (`-`) untuk membatasi header tabel.
+## FAQ
 
-#### T: Bisakah kami menyesuaikan tampilan tabel di Markdown?
+### Bisakah saya menambahkan lebih dari dua sel berturut-turut?
+ Ya, Anda dapat menambahkan sel sebanyak yang Anda butuhkan dalam satu baris dengan mengulanginya`InsertCell()`Dan`Writeln()` metode.
 
-J: Dalam Markdown standar, opsi penyesuaian tabel terbatas. Namun, beberapa editor Markdown mengizinkan Anda menambahkan gaya CSS ke tabel untuk menyesuaikan tampilannya.
+### Bagaimana cara menggabungkan sel dalam tabel?
+ Anda dapat menggabungkan sel menggunakan`CellFormat.HorizontalMerge`Dan`CellFormat.VerticalMerge` properti.
 
-#### T: Bagaimana cara menggabungkan sel dalam tabel di Markdown?
+### Apakah mungkin menambahkan gambar ke sel tabel?
+ Sangat! Anda dapat memasukkan gambar ke dalam sel menggunakan`DocumentBuilder.InsertImage` metode.
 
-A: Penggabungan sel dalam tabel di Markdown bergantung pada editor Markdown yang digunakan. Beberapa editor Markdown mendukung penggabungan sel menggunakan sintaksis tertentu.
+### Bisakah saya menata setiap sel secara berbeda?
+ Ya, Anda dapat menerapkan gaya berbeda ke sel individual dengan mengaksesnya melalui`Cells` koleksi berturut-turut.
 
-#### T: Apakah tabel di Markdown mendukung gaya CSS?
-
-J: Dalam Markdown standar, tabel tidak menawarkan dukungan langsung untuk gaya CSS. Namun, beberapa editor Markdown mengizinkan Anda menambahkan gaya CSS ke tabel untuk menyesuaikan tampilannya.
-
-#### T: Bisakah kita menambahkan tautan atau teks dalam format sebaris di sel tabel di Markdown?
-
-J: Ya, Anda bisa menambahkan link atau teks sebaris ke sel tabel di Markdown menggunakan sintaks Markdown yang sesuai.
+### Bagaimana cara menghapus batas dari tabel?
+ Anda dapat menghapus batas dengan mengatur gaya batas menjadi`LineStyle.None` untuk setiap jenis perbatasan.

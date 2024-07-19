@@ -20,7 +20,7 @@ Innan vi dyker in i implementeringen, se till att du har följande förutsättni
 
 1. Skapa ett nytt Java-projekt i din föredragna Integrated Development Environment (IDE).
 
-2. Lägg till Aspose.Words for Java-biblioteket till ditt projekt genom att inkludera JAR-filen i din klasssökväg.
+2. Lägg till Aspose.Words för Java-biblioteket till ditt projekt genom att inkludera JAR-filen i din klasssökväg.
 
 ## Lägga till en digital signatur
 

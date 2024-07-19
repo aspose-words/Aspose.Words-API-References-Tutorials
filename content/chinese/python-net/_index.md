@@ -33,7 +33,7 @@ Aspose.Words Python 教程指导开发人员实现文档处理工作流程自动
 ### [文档保护](./document-protection/)
 使用 Aspose.Words for Python 保护您的文档！实施密码加密、用户权限和数字签名，以实现强大的文档保护。
 ### [文档结构和内容操作](./document-structure-and-content-manipulation/)
-探索 Python 和 .NET 的 Aspose.Words 教程，重点介绍文档结构和内容操作。了解如何有效地导航、提取和修改文档元素。提供源代码示例。
+探索适用于 Python 和 .NET 的 Aspose.Words 教程，重点介绍文档结构和内容操作。了解如何有效地导航、提取和修改文档元素。提供源代码示例。
 ### [内容提取和操作](./content-extraction-and-manipulation/)
 通过 Aspose.Words 教程探索内容提取和操作的世界。了解如何使用 Python 和 .NET 高效地提取和操作内容，从而增强您的文档处理能力。
 ### [文档合并与比较](./document-combining-and-comparison/)

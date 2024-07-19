@@ -14,7 +14,7 @@ En este tutorial, le explicaremos cómo dividir un documento de Word en partes m
 Para comenzar, especifique el directorio de su documento y cárguelo en un objeto Documento. Así es cómo:
 
 ```csharp
-// Ruta al directorio de documentos.
+//Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```
@@ -66,7 +66,7 @@ No dude en explorar funciones y opciones adicionales proporcionadas por Aspose.W
 
 #### ¿Cómo puedo dividir un documento de Word en partes más pequeñas según los títulos usando Aspose.Words para .NET?
 
- Para dividir un documento de Word según los encabezados, puede utilizar la función Por encabezado HTML de Aspose.Words para .NET. Siga el código fuente proporcionado y configure el`DocumentSplitCriteria` a`HeadingParagraph` en el`HtmlSaveOptions` objeto. Esto dividirá el documento en partes más pequeñas en cada encabezado.
+ Para dividir un documento de Word según los encabezados, puede utilizar la función Por encabezado HTML de Aspose.Words para .NET. Siga el código fuente proporcionado y configure el`DocumentSplitCriteria` a`HeadingParagraph` en el`HtmlSaveOptions` objeto. Esto dividirá el documento en partes más pequeñas en cada título.
 
 #### ¿En qué formatos puedo dividir el documento de Word?
 

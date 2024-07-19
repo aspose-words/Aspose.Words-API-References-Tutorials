@@ -14,7 +14,7 @@ url: /ko/python-net/tables-and-formatting/document-table-styles-formatting/
 
 문서 표 스타일 및 서식의 세부 사항을 살펴보기 전에 필요한 도구가 설정되어 있는지 확인하십시오.
 
-1. Python용 Aspose.Words 설치: pip를 사용하여 Aspose.Words 라이브러리를 설치하는 것으로 시작합니다. 이 작업은 다음 명령을 사용하여 수행할 수 있습니다.
+1. Python용 Aspose.Words 설치: pip를 사용하여 Aspose.Words 라이브러리를 설치하는 것으로 시작합니다. 이는 다음 명령을 사용하여 수행할 수 있습니다.
    
     ```bash
     pip install aspose-words

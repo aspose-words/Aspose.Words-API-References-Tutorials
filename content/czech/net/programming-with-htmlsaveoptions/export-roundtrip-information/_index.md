@@ -33,7 +33,7 @@ Nyní nakonfigurujeme možnosti uložení HTML pro export informací o zpětné 
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Tento kód vytvoří instanci`HtmlSaveOptions` nastaví`ExportRoundtripInformation` možnost`true` k zahrnutí informací o zpáteční cestě při exportu.
+ Tento kód vytvoří instanci`HtmlSaveOptions` a nastaví`ExportRoundtripInformation` možnost`true` k zahrnutí informací o zpáteční cestě při exportu.
 
 ## Krok 4: Převod a uložení dokumentu do HTML
 

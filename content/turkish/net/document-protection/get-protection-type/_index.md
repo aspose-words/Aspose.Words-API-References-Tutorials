@@ -81,7 +81,7 @@ Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmanıza, düze
 Aspose.Words, NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments ve AllowOnlyFormFields gibi çeşitli koruma türlerini tespit edebilir.
 
 ### Sorunla karşılaşırsam nasıl destek alabilirim?
- Her türlü sorun için adresini ziyaret edebilirsiniz.[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım için.
+ Her türlü sorun için adresini ziyaret edebilirsiniz.[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8)yardım için.
 
 ### Aspose.Words .NET Core ile uyumlu mu?
 Evet, Aspose.Words hem .NET Framework hem de .NET Core ile uyumludur.

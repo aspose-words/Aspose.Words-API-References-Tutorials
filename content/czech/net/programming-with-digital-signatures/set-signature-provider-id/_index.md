@@ -101,7 +101,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ID poskytovatele podpisu jednoznačně identifikuje poskytovatele digitálního podpisu a zajišťuje autentičnost a bezpečnost.
 
-### Mohu k podpisu použít jakýkoli soubor .pfx?
+### Mohu pro podepisování použít jakýkoli soubor .pfx?
 
 Ano, pokud se jedná o platný digitální certifikát. Ujistěte se, že máte správné heslo, pokud je chráněno.
 

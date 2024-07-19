@@ -14,7 +14,7 @@ Neste guia abrangente, mergulharemos no mundo das formas de documentos em Aspose
 
 ## Introdução às formas de documentos
 
- Antes de entrarmos no código, vamos configurar nosso ambiente. Certifique-se de ter Aspose.Words for Java integrado ao seu projeto. Se ainda não o fez, você pode baixá-lo no site Aspose[Baixe Aspose.Words para Java](https://releases.aspose.com/words/java/)
+ Antes de entrarmos no código, vamos configurar nosso ambiente. Certifique-se de ter o Aspose.Words for Java integrado ao seu projeto. Se ainda não o fez, você pode baixá-lo no site Aspose[Baixe Aspose.Words para Java](https://releases.aspose.com/words/java/)
 
 ## Adicionando formas a documentos
 
@@ -162,7 +162,7 @@ for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true)) {
 
 ## Conclusão
 
-Neste guia, exploramos o mundo das formas de documentos em Aspose.Words for Java. Você aprendeu como adicionar diversas formas aos seus documentos, manipular suas propriedades e trabalhar com formas SmartArt. Com esse conhecimento, você pode criar documentos interativos e visualmente atraentes com facilidade.
+Neste guia, exploramos o mundo das formas de documentos em Aspose.Words for Java. Você aprendeu como adicionar diversas formas aos seus documentos, manipular suas propriedades e trabalhar com formas SmartArt. Com esse conhecimento, você pode criar documentos visualmente atraentes e interativos com facilidade.
 
 ## Perguntas frequentes
 

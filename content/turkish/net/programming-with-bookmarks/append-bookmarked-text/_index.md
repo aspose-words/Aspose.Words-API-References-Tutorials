@@ -117,7 +117,7 @@ Mevcut örnek, aynı ebeveyne sahip olduklarını varsaymaktadır. Farklı ebeve
 ### Eklenen metnin orijinal formatını koruyabilir miyim?
  Kesinlikle!`ImportFormatMode.KeepSourceFormatting` orijinal formatın korunmasını sağlar.
 
-### Hedef belgedeki belirli bir konuma metin eklemek mümkün müdür?
+### Hedef belgedeki belirli bir konuma metin eklemek mümkün mü?
 Evet, hedef belgede istediğiniz düğüme giderek metni herhangi bir konuma ekleyebilirsiniz.
 
 ### Bir yer imindeki metni yeni bir bölüme eklemem gerekirse ne olur?

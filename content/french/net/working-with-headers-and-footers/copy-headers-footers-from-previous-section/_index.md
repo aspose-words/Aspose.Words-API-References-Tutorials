@@ -46,7 +46,7 @@ Ensuite, accédez à la section actuelle du document dans laquelle vous souhaite
 Section currentSection = builder.CurrentSection;
 ```
 
-## Étape 3 : définir la section précédente
+## Étape 3 : Définir la section précédente
 
 Définissez la section précédente à partir de laquelle vous souhaitez copier les en-têtes et pieds de page. S'il n'y a pas de section précédente, vous pouvez simplement revenir sans effectuer aucune action.
 
@@ -91,7 +91,7 @@ doc.Save("OutputDocument.docx");
 
  Nous récupérons la section courante en utilisant`builder.CurrentSection`Cette section sera la cible où nous copierons les en-têtes et pieds de page de la section précédente.
 
-### Étape 3 : définir la section précédente
+### Étape 3 : Définir la section précédente
 
  En vérifiant`currentSection.PreviousSibling`, on obtient la section précédente. Si la section précédente est nulle, la méthode retourne sans effectuer d'autres actions. Cette vérification évite les erreurs qui pourraient survenir s'il n'y a pas de section précédente.
 

@@ -73,7 +73,7 @@ builder.Write("Header for all other pages");
 
  Dans cette étape, nous utilisons le`MoveToHeaderFooter` méthode pour accéder à la section d’en-tête ou de pied de page souhaitée. Le`Write` La méthode est ensuite utilisée pour ajouter du texte à ces sections.
 
-## Étape 4 : ajouter du contenu au corps du document
+## Étape 4 : Ajouter du contenu au corps du document
 
 Pour illustrer les en-têtes et les pieds de page, ajoutons du contenu au corps du document et créons quelques pages.
 
@@ -112,7 +112,7 @@ Aspose.Words for .NET est une bibliothèque qui permet aux développeurs de cré
 ### Est-il possible d’avoir des en-têtes et pieds de page différents pour chaque section ?
  Absolument! Vous pouvez avoir des en-têtes et des pieds de page uniques pour chaque section en configurant différents`HeaderFooterType` pour chaque rubrique.
 
-### Comment créer des mises en page plus complexes dans les en-têtes et les pieds de page ?
+### Comment créer des mises en page plus complexes dans les en-têtes et pieds de page ?
 Vous pouvez utiliser des tableaux, des images et diverses options de formatage fournies par Aspose.Words pour créer des mises en page complexes.
 
 ### Où puis-je trouver plus d'exemples et de didacticiels ?

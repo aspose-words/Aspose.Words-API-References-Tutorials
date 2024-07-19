@@ -74,4 +74,4 @@ Trong hướng dẫn này, chúng tôi đã giải thích cách tải tài liệ
 
 #### Hỏi: Tôi có thể áp dụng chức năng này cho một phần cụ thể của tài liệu PDF không?
 
- A: Có, bạn có thể áp dụng`PdfLoadOptions` với`SkipPdfImages` đặt thành`true` vào một phần cụ thể của tài liệu PDF bằng cách tải riêng phần đó bằng Aspose.Words for .NET.
+ Đ: Có, bạn có thể áp dụng`PdfLoadOptions` với`SkipPdfImages` đặt thành`true` vào một phần cụ thể của tài liệu PDF bằng cách tải riêng phần đó bằng Aspose.Words for .NET.

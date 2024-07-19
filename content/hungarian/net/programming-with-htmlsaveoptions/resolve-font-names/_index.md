@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Missing font.docx");
 
  Ez a kód létrehozza a`Document` a dokumentum betöltésével a megadott könyvtárból.
 
-## 3. lépés: HTML biztonsági mentési beállítások konfigurálása
+## 3. lépés: A HTML biztonsági mentési beállítások konfigurálása
 
 Most konfiguráljuk a HTML mentési beállításokat, hogy feloldjuk a konverzió során hiányzó betűtípusneveket. Használja a következő kódot:
 
@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Ez a kód létrehozza a`HtmlSaveOptions`és beállítja a`ResolveFontNames` opciót`true` hiányzó betűtípusnevek feloldásához HTML-re konvertáláskor. Továbbá a`PrettyFormat` opcióra van állítva`true` hogy szépen formázott HTML kódot kapjunk.
+ Ez a kód létrehozza a`HtmlSaveOptions` és beállítja a`ResolveFontNames` opciót`true` hiányzó betűtípusnevek feloldásához HTML-re konvertáláskor. Továbbá a`PrettyFormat` opcióra van állítva`true` hogy szépen formázott HTML kódot kapjunk.
 
 ## 4. lépés: A dokumentum konvertálása és mentése HTML formátumba
 

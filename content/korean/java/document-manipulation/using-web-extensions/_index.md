@@ -59,7 +59,7 @@ taskPane.getWebExtension().getBindings().add(new WebExtensionBinding("UnnamedBin
 doc.save("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## 작업 창 정보 검색
+## 작업창 정보 검색
 
 문서의 작업창에 대한 정보를 검색하려면 작업창을 반복하고 해당 참조에 액세스하면 됩니다.
 
@@ -89,7 +89,7 @@ for (TaskPane taskPaneInfo : doc.getWebExtensionTaskPanes())
 
 예, 웹 확장 작업창의 모양과 동작을 사용자 지정할 수 있습니다. 자습서에 설명된 대로 작업창의 너비, 도킹 상태 및 가시성과 같은 속성을 조정할 수 있습니다. 또한 웹 확장의 속성 및 바인딩을 사용하여 해당 동작 및 문서 콘텐츠와의 상호 작용을 제어할 수 있습니다.
 
-### Aspose.Words for Java에서는 어떤 유형의 웹 확장이 지원되나요?
+### Aspose.Words for Java에서는 어떤 유형의 웹 확장이 지원됩니까?
 
 Aspose.Words for Java는 Office 추가 기능(OMEX) 및 SharePoint 추가 기능(SPSS)과 같은 다양한 저장소 유형을 포함하여 다양한 유형의 웹 확장을 지원합니다. 튜토리얼에 표시된 대로 웹 확장을 설정할 때 상점 유형 및 기타 속성을 지정할 수 있습니다.
 

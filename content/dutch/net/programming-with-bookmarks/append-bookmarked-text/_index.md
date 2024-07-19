@@ -83,7 +83,7 @@ Vervolgens moeten we het knooppunt bepalen waar we stoppen met het kopiëren van
 Node endNode = endPara.NextSibling;
 ```
 
-## Stap 5: Voeg een bladwijzertekst toe aan het bestemmingsdocument
+## Stap 5: Voeg een tekst met bladwijzer toe aan het doeldocument
 
 Laten we ten slotte de knooppunten doorlopen vanaf de startparagraaf tot het knooppunt na de eindparagraaf, en deze aan het doeldocument toevoegen.
 

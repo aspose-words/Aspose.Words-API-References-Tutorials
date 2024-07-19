@@ -14,12 +14,12 @@ Aspose.Words for .NET "Belge Seçenekleri ve Ayarlarıyla Kelime İşleme" eğit
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Ms Word İçin Optimize Etme](./optimize-for-ms-word/) | Aspose.Words for .NET ile bir belgeyi MS Word için optimize etmeye yönelik adım adım kılavuz. |
-| [Dilbilgisi ve Yazım Hatalarını Göster](./show-grammatical-and-spelling-errors/) | Aspose.Words for .NET ile bir belgede gramer ve yazım hatalarının görüntülenmesini sağlayan adım adım kılavuz. |
-| [Kullanılmayan Stilleri ve Listeleri Temizleme](./cleanup-unused-styles-and-lists/) | Aspose.Words for .NET ile bir belgedeki kullanılmayan stilleri ve listeleri temizlemeye yönelik adım adım kılavuz. |
-| [Yinelenen Stili Temizleme](./cleanup-duplicate-style/) | Aspose.Words for .NET kullanarak bir belgedeki yinelenen stilleri temizlemek için adım adım kılavuz. Tam kaynak kodu dahil. |
-| [Seçenekleri gör](./view-options/) | Aspose.Words for .NET ile belge görüntüleme seçeneklerini yapılandırmak için adım adım kılavuz. |
-| [Belge Sayfası Düzeni](./document-page-setup/) | Aspose.Words for .NET ile belge düzeni oluşturmaya yönelik adım adım kılavuz. |
-| [Japoncayı Düzenleme Dili Olarak Ekle](./add-japanese-as-editing-languages/) | Aspose.Words for .NET ile Japonca'yı düzenleme dili olarak eklemek için adım adım kılavuz. |
-| [Rusçayı Varsayılan Düzenleme Dili Olarak Ayarla](./set-russian-as-default-editing-language/) | Aspose.Words for .NET ile bir belgenin varsayılan düzenleme dili olarak Rusça'yı ayarlamak için adım adım kılavuz. |
-| [Sayfa Yapısını ve Bölüm Formatını Ayarlama](./set-page-setup-and-section-formatting/) | Aspose.Words for .NET ile bir belgenin düzenini ve bölüm formatını ayarlamaya yönelik adım adım kılavuz. |
+| [Ms Word İçin Optimize Etme](./optimize-for-ms-word/) | Bu adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerinin gramer bilgilerini MS Word'ün farklı sürümleri için kolayca optimize edin. |
+| [Dilbilgisi ve Yazım Hatalarını Göster](./show-grammatical-and-spelling-errors/) | Bu kapsamlı eğitimle Aspose.Words for .NET kullanarak Word belgelerinde gramer ve yazım hatalarını nasıl görüntüleyeceğinizi öğrenin. |
+| [Kullanılmayan Stilleri ve Listeleri Temizleme](./cleanup-unused-styles-and-lists/) | Kullanılmayan stilleri ve listeleri kaldırarak Word belgelerinizi Aspose.Words for .NET ile temizleyin. Belgelerinizi zahmetsizce düzenlemek için bu adım adım kılavuzu izleyin. |
+| [Yinelenen Stili Temizleme](./cleanup-duplicate-style/) | Kapsamlı adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerinizdeki yinelenen stilleri nasıl temizleyeceğinizi öğrenin. |
+| [Seçenekleri gör](./view-options/) | Aspose.Words for .NET kullanarak Word belgelerindeki seçenekleri nasıl görüntüleyeceğinizi öğrenin. Bu kılavuz görünüm türlerini ayarlamayı, yakınlaştırma düzeylerini ayarlamayı ve belgenizi kaydetmeyi kapsar. |
+| [Belge Sayfası Düzeni](./document-page-setup/) | Aspose.Words for .NET ile kolay adımlarla ana belge sayfası kurulumu. Yüklemeyi, düzeni ayarlamayı, satır başına karakter, sayfa başına satır tanımlamayı ve belgenizi kaydetmeyi öğrenin. |
+| [Japoncayı Düzenleme Dili Olarak Ekle](./add-japanese-as-editing-languages/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak belgelerinize Japonca'yı düzenleme dili olarak nasıl ekleyeceğinizi öğrenin. |
+| [Rusçayı Varsayılan Düzenleme Dili Olarak Ayarla](./set-russian-as-default-editing-language/) | Aspose.Words for .NET kullanarak Word belgelerinde Rusça'yı varsayılan düzenleme dili olarak nasıl ayarlayacağınızı öğrenin. Ayrıntılı talimatlar için adım adım kılavuzumuzu izleyin. |
+| [Sayfa Yapısını ve Bölüm Formatını Ayarlama](./set-page-setup-and-section-formatting/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerinde sayfa düzenini ve bölüm formatını nasıl ayarlayacağınızı öğrenin. Belgenizin sunumunu zahmetsizce geliştirin. |

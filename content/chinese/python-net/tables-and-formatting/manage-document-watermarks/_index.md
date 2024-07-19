@@ -8,7 +8,7 @@ weight: 10
 url: /zh/python-net/tables-and-formatting/manage-document-watermarks/
 ---
 
-水印是文档中微妙而又有影响力的元素，增加了一层专业性和美感。使用 Aspose.Words for Python，您可以轻松创建和格式化水印以增强文档的视觉吸引力。本教程将指导您逐步使用 Aspose.Words for Python API 向文档添加水印。
+水印是文档中微妙而又有影响力的元素，增加了一层专业性和美感。使用 Aspose.Words for Python，您可以轻松创建和格式化水印，以增强文档的视觉吸引力。本教程将指导您逐步使用 Aspose.Words for Python API 向文档添加水印。
 
 ## 文档水印简介
 

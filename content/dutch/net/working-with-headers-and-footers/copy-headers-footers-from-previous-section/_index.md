@@ -73,7 +73,7 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
     currentSection.HeadersFooters.Add(headerFooter.Clone(true));
 ```
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Sla het document ten slotte op een gewenste locatie op. Deze stap zorgt ervoor dat al uw wijzigingen naar het documentbestand worden geschreven.
 
@@ -103,7 +103,7 @@ We wissen alle bestaande kop- en voetteksten in de huidige sectie om ervoor te z
 
  Met behulp van een foreach-lus herhalen we ze allemaal`HeaderFooter` in het vorige gedeelte. De`Clone(true)` methode maakt een diepe kopie van de kop- of voettekst, waardoor alle inhoud en opmaak behouden blijven.
 
-### Stap 6: Bewaar het document
+### Stap 6: Sla het document op
 
  De`doc.Save("OutputDocument.docx")` line schrijft alle wijzigingen in het document en slaat het op met de opgegeven bestandsnaam.
 

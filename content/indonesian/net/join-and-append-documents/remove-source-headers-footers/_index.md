@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Langkah 1: Muat Dokumen Sumber
 
- Pertama, Anda perlu memuat dokumen sumber yang ingin Anda hapus header dan footernya. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda tempat dokumen sumber berada.
+Pertama, Anda perlu memuat dokumen sumber yang ingin Anda hapus header dan footernya. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda tempat dokumen sumber berada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

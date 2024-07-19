@@ -35,9 +35,9 @@ Passons maintenant aux étapes pratiques nécessaires à la relance de la numér
 
 ## Étape 1 : Chargez les documents source et de destination :
 
-Définir une variable chaîne`dataDir` pour stocker le chemin d'accès à votre répertoire de documents. Remplacez « VOTRE RÉPERTOIRE DE DOCUMENTS » par l'emplacement réel.
+ Définir une variable chaîne`dataDir` pour stocker le chemin d'accès à votre répertoire de documents. Remplacez « VOTRE RÉPERTOIRE DE DOCUMENTS » par l'emplacement réel.
 
- Créez-en deux`Document` objets utilisant le`Aspose.Words.Document` constructeur. Le premier (`srcDoc`) contiendra le document source contenant le contenu à ajouter. La deuxième (`dstDoc`) représente le document de destination dans lequel nous intégrerons le contenu source avec une numérotation de page redémarrée.
+ Créez-en deux`Document` objets utilisant le`Aspose.Words.Document`constructeur. Le premier (`srcDoc`) contiendra le document source contenant le contenu à ajouter. La deuxième (`dstDoc`) représente le document de destination dans lequel nous intégrerons le contenu source avec une numérotation de page redémarrée.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Remplacez par votre répertoire actuel
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Étape 3 : Activation du redémarrage de la numérotation des pages :
 
- Dans le même`PageSetup` objet de la première section du document source, définissez le`RestartPageNumbering`propriété à`true`Cette étape cruciale demande à Aspose.Words de relancer la numérotation des pages pour le contenu ajouté.
+ Dans le même`PageSetup` objet de la première section du document source, définissez le`RestartPageNumbering`propriété à`true`. Cette étape cruciale demande à Aspose.Words de relancer la numérotation des pages pour le contenu ajouté.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

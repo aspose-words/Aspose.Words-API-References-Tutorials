@@ -81,7 +81,7 @@ Aspose.Words dla .NET to potężna biblioteka, która pozwala programowo tworzy�
 Aspose.Words może wykryć różne typy ochrony, takie jak NoProtection, ReadOnly,AllowOnlyRevisions,AllowOnlyComments iAllowOnlyFormFields.
 
 ### Jak mogę uzyskać pomoc, jeśli napotkam problemy?
- W przypadku jakichkolwiek problemów możesz odwiedzić stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
+ W przypadku jakichkolwiek problemów możesz odwiedzić stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) pomoc.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?
 Tak, Aspose.Words jest kompatybilny zarówno z .NET Framework, jak i .NET Core.

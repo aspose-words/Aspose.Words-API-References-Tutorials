@@ -109,7 +109,7 @@ Ya, Anda dapat memiliki header dan footer yang berbeda untuk halaman ganjil dan 
 header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 ```
 
-### Dapatkah saya menambahkan bidang khusus, seperti judul dokumen, ke header atau footer?
+### Bisakah saya menambahkan bidang khusus, seperti judul dokumen, ke header atau footer?
 
 Ya, Anda dapat menambahkan bidang khusus ke header atau footer. Membuat`Run` elemen dan masukkan ke dalam konten header atau footer, berikan teks yang diinginkan. Sesuaikan pemformatan sesuai kebutuhan.
 

@@ -55,7 +55,7 @@ Trong ví dụ này:
 
 ## Bước 3: Tải tài liệu
 
- Với nguồn phông chữ của bạn được định cấu hình, bước tiếp theo là tải tài liệu của bạn vào Aspose.Words`Document`sự vật. Điều này cho phép bạn thao tác và cuối cùng là lưu tài liệu.
+ Với nguồn phông chữ của bạn được định cấu hình, bước tiếp theo là tải tài liệu của bạn vào Aspose.Words`Document` sự vật. Điều này cho phép bạn thao tác và cuối cùng là lưu tài liệu.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

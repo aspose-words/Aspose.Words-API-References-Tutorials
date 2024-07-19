@@ -9,7 +9,7 @@ url: /sv/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 ## Introduktion
 
-Hallå där! Så du har arbetat med Word-dokument och behöver ett sätt att snabbt hoppa till början eller slutet av ditt dokument programmatiskt, va? Nåväl, du är på rätt plats! I den här guiden fördjupar vi oss i hur du flyttar markören till början eller slutet av ett Word-dokument med Aspose.Words för .NET. Tro mig, i slutet av detta kommer du att navigera i dina dokument som ett proffs. Låt oss börja!
+Hallå där! Så du har arbetat med Word-dokument och behöver ett sätt att snabbt hoppa till början eller slutet av ditt dokument programmatiskt, va? Tja, du är på rätt plats! I den här guiden fördjupar vi oss i hur du flyttar markören till början eller slutet av ett Word-dokument med Aspose.Words för .NET. Tro mig, i slutet av detta kommer du att navigera i dina dokument som ett proffs. Låt oss börja!
 
 ## Förutsättningar
 

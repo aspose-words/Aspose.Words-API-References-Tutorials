@@ -2,126 +2,93 @@
 title: Daftar Gunakan Gaya Tujuan
 linktitle: Daftar Gunakan Gaya Tujuan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggabungkan dan mengelola daftar dokumen secara lancar dengan Aspose.Words untuk .NET. Ikuti tutorial langkah demi langkah kami untuk integrasi dokumen yang efisien.
+description: Pelajari cara menggabungkan dokumen Word menggunakan Aspose.Words untuk .NET tanpa kehilangan format daftar. Panduan langkah demi langkah untuk menjaga gaya dokumen Anda tetap utuh.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## Perkenalan
 
-Mengintegrasikan dokumen sambil mempertahankan gaya yang konsisten dapat menjadi tantangan, terutama dengan daftar. Aspose.Words untuk .NET menyediakan alat canggih untuk mengelola kompleksitas ini, memastikan dokumen Anda mempertahankan integritas pemformatannya. Tutorial ini akan memandu Anda melalui proses penggabungan dokumen dengan daftar, menggunakan gaya tujuan untuk produk akhir yang disempurnakan.
+Pernahkah Anda mencoba menggabungkan dokumen Word dan bingung dengan formatnya? Kadang-kadang seperti mencoba mencampurkan minyak dan air, bukan? Nah, hari ini kita akan menyelami trik menarik menggunakan Aspose.Words untuk .NET yang akan menyelamatkan Anda dari sakit kepala ini. Kita akan mempelajari cara mengimpor daftar dari satu dokumen ke dokumen lainnya tanpa mengacaukan penomoran dan gaya. Siap membuat hidup Anda sedikit lebih mudah? Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum mendalami tutorial ini, pastikan Anda memiliki hal berikut:
-- Visual Studio diinstal pada mesin Anda.
-- Aspose.Words untuk perpustakaan .NET terintegrasi ke dalam proyek Anda.
-- Pemahaman dasar bahasa pemrograman C#.
+Sebelum kita terjun ke keajaibannya, pastikan Anda memiliki semua yang Anda butuhkan:
+
+1.  Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduhlah[Di Sini](https://releases.aspose.com/words/net/).
+2. Visual Studio: Versi terbaru apa pun bisa digunakan.
+3. Pemahaman dasar tentang C#: Anda tidak perlu menjadi seorang penyihir, tetapi beberapa keakraban akan membantu.
+
+ Pastikan Anda telah menginstal dan menyiapkan Aspose.Words di proyek Anda. Jika Anda tidak yakin tentang cara melakukan ini,[dokumentasi](https://reference.aspose.com/words/net/) adalah tempat yang bagus untuk memulai.
 
 ## Impor Namespace
 
-Mulailah dengan mengimpor namespace yang diperlukan untuk memanfaatkan fungsionalitas Aspose.Words:
+Hal pertama yang pertama, mari impor namespace yang diperlukan dalam file C# Anda:
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.Lists;
+using Aspose.Words.Saving;
 ```
 
-Mari kita bagi prosesnya menjadi langkah-langkah yang jelas:
+Punya itu? Luar biasa. Sekarang, mari kita uraikan langkah demi langkah.
 
-## Langkah 1: Siapkan Jalur Dokumen
+## Langkah 1: Siapkan Jalur Dokumen Anda
 
-Pastikan Anda telah menentukan jalur direktori tempat dokumen Anda berada:
+Setiap proyek dimulai dengan mengatur file Anda. Mari arahkan kode kita ke direktori tempat dokumen Anda disimpan.
 
 ```csharp
-string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR_DOCUMENT_DIRECTORY_PATH"` dengan jalur direktori sebenarnya tempat dokumen Anda disimpan.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Anda disimpan. Mudah, bukan?
 
-## Langkah 2: Muat Dokumen Sumber dan Tujuan
+## Langkah 2: Muat Dokumen Sumber dan Tujuan Anda
 
-Muat dokumen sumber dan tujuan menggunakan Aspose.Words:
+Selanjutnya, kita perlu memuat dokumen sumber dan tujuan. Anggap saja seperti membuka dua file Word di komputer Anda.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "DocumentSource.docx");
-Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
+Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
- Menyesuaikan`"DocumentSource.docx"`Dan`"DocumentDestination.docx"` dengan nama file Anda yang sebenarnya.
+ Di Sini,`srcDoc` adalah dokumen sumber Anda (yang berisi daftar yang ingin Anda salin), dan`dstDoc` adalah dokumen tujuan Anda (tempat Anda ingin menempelkan daftar tersebut).
 
-## Langkah 3: Tetapkan Bagian Mulai untuk Dokumen Sumber
+## Langkah 3: Konfigurasikan Opsi Impor
 
-Untuk memastikan dokumen digabungkan dengan lancar, atur bagian awal dokumen sumber:
+Kita perlu menentukan beberapa opsi untuk memastikan daftar diimpor dengan benar. Langkah ini memastikan bahwa jika ada konflik penomoran, penomoran dari dokumen sumber tetap dipertahankan.
 
 ```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-Pengaturan ini membantu menjaga kesinambungan antar dokumen.
+## Langkah 4: Tambahkan Dokumen Sumber ke Dokumen Tujuan
 
-## Langkah 4: Kelola Integrasi Daftar
-
-Ulangi paragraf dalam dokumen sumber untuk menangani item daftar:
+Sekarang, mari kita lakukan penggabungan. Ini adalah dimana keajaiban terjadi. Kami menambahkan dokumen sumber ke dokumen tujuan saat menggunakan opsi impor yang ditentukan.
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-Segmen kode ini memastikan bahwa daftar dari dokumen sumber terintegrasi secara mulus ke dalam dokumen tujuan, mempertahankan format aslinya.
-
-## Langkah 5: Tambahkan Dokumen Sumber ke Dokumen Tujuan
-
-Gabungkan dokumen sumber yang dimodifikasi ke dalam dokumen tujuan:
-
-```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-```
-
-Perintah ini menggabungkan dokumen sambil mempertahankan gaya tujuan.
+Anda telah berhasil menggabungkan dua dokumen, menjaga daftarnya tetap utuh.
 
 ## Kesimpulan
 
-Dengan mengikuti langkah-langkah ini, Anda dapat secara efektif mengelola dan menggabungkan daftar antar dokumen menggunakan Aspose.Words untuk .NET. Pendekatan ini memastikan bahwa dokumen akhir Anda mempertahankan gaya dan format yang konsisten, sehingga meningkatkan efisiensi manajemen dokumen secara keseluruhan.
+Itu dia! Menggabungkan dokumen tanpa kehilangan akal sehat atas masalah pemformatan sangatlah mudah dengan Aspose.Words untuk .NET. Baik Anda sedang mengerjakan proyek besar atau hanya perlu merapikan beberapa file, metode ini akan membuat daftar Anda tetap terlihat rapi. Jadi, jika lain kali Anda menghadapi dilema penggabungan dokumen, ingatlah panduan ini dan atasi seperti seorang profesional!
 
 ## FAQ
 
-### Bagaimana cara menangani daftar bersarang menggunakan Aspose.Words untuk .NET?
-Aspose.Words menyediakan metode untuk mengelola daftar bertumpuk dengan melakukan iterasi melalui node dokumen dan memeriksa struktur daftar.
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen dalam berbagai format.
 
-### Apa manfaat menggunakan gaya tujuan dalam penggabungan dokumen?
-Gaya tujuan membantu menjaga keseragaman format di seluruh dokumen yang digabungkan, memastikan tampilan profesional.
+### Bagaimana cara menginstal Aspose.Words untuk .NET?
+ Anda dapat mengunduhnya dari[situs web](https://releases.aspose.com/words/net/) dan ikuti petunjuk instalasi di[dokumentasi](https://reference.aspose.com/words/net/).
 
-### Apakah Aspose.Words mendukung penggabungan dokumen lintas platform?
-Ya, Aspose.Words mendukung penggabungan dokumen di berbagai platform, termasuk lingkungan Windows dan Linux.
+### Bisakah saya menggunakan Aspose.Words secara gratis?
+ Aspose.Words menawarkan a[uji coba gratis](https://releases.aspose.com/) dengan fitur terbatas. Untuk akses penuh, Anda harus membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
-### Bisakah saya mengkustomisasi pemformatan daftar selama penggabungan dokumen?
-Aspose.Words memungkinkan penyesuaian format daftar yang ekstensif, memungkinkan solusi integrasi dokumen yang disesuaikan.
+### Apa itu ImportFormatOptions?
+ ImportFormatOptions memungkinkan Anda menentukan bagaimana pemformatan ditangani saat mengimpor konten dari satu dokumen ke dokumen lainnya. Misalnya,`KeepSourceNumbering` memastikan bahwa penomoran daftar dari dokumen sumber dipertahankan.
 
-### Di mana saya dapat menemukan lebih banyak sumber daya tentang manajemen dokumen tingkat lanjut dengan Aspose.Words?
- Mengeksplorasi[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) untuk panduan komprehensif dan referensi API.
+### Di mana saya bisa mendapatkan dukungan untuk Aspose.Words?
+ Anda bisa mendapatkan dukungan dari[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8), tempat Anda dapat mengajukan pertanyaan dan mendapatkan bantuan dari komunitas dan pengembang Aspose.

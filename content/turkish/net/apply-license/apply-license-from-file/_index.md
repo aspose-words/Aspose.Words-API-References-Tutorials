@@ -85,7 +85,7 @@ else
 ## SSS'ler
 
 ### Lisans ayarlamazsam ne olur?  
-Bir lisans ayarlamazsanız Aspose.Words, filigranlı belgeler ve sınırlı işlevsellik gibi sınırlamalara sahip olan değerlendirme modunda çalışacaktır.
+Bir lisans ayarlamazsanız Aspose.Words, filigranlı belgeler ve kısıtlı işlevsellik gibi sınırlamalara sahip olan değerlendirme modunda çalışacaktır.
 
 ### Bir akıştan lisans kullanabilir miyim?  
  Evet, lisans dosyası kaynak olarak katıştırılmışsa lisansı bir akıştan yükleyebilirsiniz. Kullan`SetLicense` bir akışı kabul eden yöntem.

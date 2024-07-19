@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3단계: 페이지 레이아웃 업데이트
-
- 를 불러`UpdatePageLayout`방법. 이렇게 하면 문서가 메모리에 렌더링되고 렌더링 중에 발생하는 모든 경고가 캡처됩니다.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## 4단계: 경고 콜백 설정
+## 3단계: 경고 콜백 설정
 
  경고를 캡처하고 처리하려면 다음을 구현하는 클래스를 만듭니다.`IWarningCallback` 상호 작용. 이 클래스는 문서 처리 중에 발생하는 모든 경고를 기록합니다.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // 우리는 대체되는 글꼴에만 관심이 있습니다.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## 5단계: 문서에 콜백 할당
+## 4단계: 문서에 콜백 할당
 
 문서에 경고 콜백을 할당합니다. 이렇게 하면 모든 글꼴 문제가 캡처되고 기록됩니다.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## 5단계: 페이지 레이아웃 업데이트
+
+ 를 불러`UpdatePageLayout` 방법. 이렇게 하면 문서가 메모리에 렌더링되고 렌더링 중에 발생하는 모든 경고가 캡처됩니다.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## 6단계: 문서 저장

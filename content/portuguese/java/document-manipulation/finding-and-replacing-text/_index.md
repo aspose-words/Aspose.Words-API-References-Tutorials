@@ -143,7 +143,7 @@ doc.getRange().replace("text-to-replace", "new-html-content", options);
 doc.save("modified-document.docx");
 ```
 
- Neste exemplo, usamos um costume`ReplaceWithHtmlEvaluator` para substituir texto por conteúdo HTML.
+ Neste exemplo, usamos um personalizado`ReplaceWithHtmlEvaluator` para substituir texto por conteúdo HTML.
 
 ## Substituindo texto em cabeçalhos e rodapés
 

@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Bước 2: Thêm kiểu cho mã thụt lề
 
-Chúng tôi sẽ thêm kiểu tùy chỉnh cho mã thụt lề bằng cách sử dụng`Styles.Add` phương pháp của`Document` sự vật. Trong ví dụ này, chúng tôi đang tạo một kiểu có tên là "IndentedCode" cho mã thụt lề.
+ Chúng tôi sẽ thêm kiểu tùy chỉnh cho mã thụt lề bằng cách sử dụng`Styles.Add` phương pháp của`Document` sự vật. Trong ví dụ này, chúng tôi đang tạo một kiểu có tên là "IndentedCode" cho mã thụt lề.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

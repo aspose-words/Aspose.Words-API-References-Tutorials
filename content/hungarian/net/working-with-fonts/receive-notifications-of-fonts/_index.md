@@ -79,7 +79,7 @@ public class HandleDocumentWarnings : IWarningCallback
 
 ## 5. lépés: Rendelje hozzá a visszahívási és betűtípus-beállításokat a dokumentumhoz
 
-Rendelje hozzá a figyelmeztető visszahívást és a konfigurált betűtípus-beállításokat a dokumentumhoz. Ez biztosítja, hogy minden betűtípus-probléma rögzítésre és naplózásra kerüljön.
+Rendelje hozzá a figyelmeztető visszahívást és a konfigurált betűtípus-beállításokat a dokumentumhoz. Ez biztosítja, hogy minden betűtípussal kapcsolatos probléma rögzítésre és naplózásra kerüljön.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();

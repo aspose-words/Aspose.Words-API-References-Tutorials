@@ -24,7 +24,7 @@ Oavsett om du vill konvertera Word-dokument till PDF för onlinedistribution, ar
 | [Minska PDF-storleken genom att inaktivera inbäddade teckensnitt](./disable-embed-windows-fonts/) | Lär dig hur du inaktiverar Windows-fontinbäddning när du konverterar dokument till PDF med Aspose.Words för .NET. |
 | [Optimera PDF-storlek med Skip Embedded Arial och Times Roman-teckensnitt](./skip-embedded-arial-and-times-roman-fonts/) | Steg-för-steg-guide för att generera PDF utan att bädda in Arial- och Times Roman-teckensnitt med Aspose.Words för .NET. |
 | [Minska PDF-filstorleken genom att inte bädda in kärnteckensnitt](./avoid-embedding-core-fonts/) | Lär dig hur du undviker grundläggande teckensnittsinbäddning när du konverterar Word-dokument till PDF med Aspose.Words för .NET. |
-| [Escape URI i PDF-dokument](./escape-uri/) | Steg-för-steg guide för att fly Uri med Aspose.Words för .NET. |
+| [Escape URI i PDF-dokument](./escape-uri/) | Lär dig hur du undkommer URI:er i PDF-filer med Aspose.Words för .NET. Denna detaljerade guide leder dig genom processen steg för steg. |
 | [Exportera Word-dokument sidfotsbokmärken till PDF-dokument](./export-header-footer-bookmarks/) | Steg för steg guide för att exportera sidhuvuden och sidfotsbokmärken med Aspose.Words för .NET. |
 | [Minska PDF-storleken med skala Wmf-teckensnitt till metafilstorlek](./scale-wmf-fonts-to-metafile-size/) | Steg-för-steg-guide för att justera WMF-teckensnittsstorlek vid konvertering till PDF med Aspose.Words för .NET. |
 | [Förbättra PDF-textpositionering med ytterligare textpositionering](./additional-text-positioning/) | Lär dig hur du kontrollerar placeringen av ytterligare text när du konverterar Word-dokument till PDF med Aspose.Words för .NET. |

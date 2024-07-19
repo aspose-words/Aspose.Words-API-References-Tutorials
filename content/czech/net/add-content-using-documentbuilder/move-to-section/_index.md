@@ -9,7 +9,7 @@ url: /cs/net/add-content-using-documentbuilder/move-to-section/
 ---
 ## Úvod
 
-V dnešním digitálním světě je automatizace klíčem ke zvýšení produktivity. Aspose.Words for .NET je robustní knihovna, která umožňuje vývojářům programově manipulovat s dokumenty Wordu. Jedním z běžných úkolů je přesun do různých částí dokumentu za účelem přidání nebo úpravy obsahu. V tomto tutoriálu se ponoříme do toho, jak se přesunout do konkrétní části dokumentu aplikace Word pomocí Aspose.Words for .NET. Proces rozebereme krok za krokem, abyste se ujistili, že jej budete snadno sledovat.
+V dnešním digitálním světě je automatizace klíčem ke zvýšení produktivity. Aspose.Words for .NET je robustní knihovna, která umožňuje vývojářům manipulovat s dokumenty Wordu programově. Jedním z běžných úkolů je přesun do různých sekcí v dokumentu za účelem přidání nebo úpravy obsahu. V tomto tutoriálu se ponoříme do toho, jak se přesunout do konkrétní části dokumentu aplikace Word pomocí Aspose.Words for .NET. Proces rozebereme krok za krokem, abyste se ujistili, že jej budete snadno sledovat.
 
 ## Předpoklady
 

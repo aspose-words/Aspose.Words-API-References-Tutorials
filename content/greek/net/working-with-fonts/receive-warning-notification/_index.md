@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Βήμα 3: Ενημερώστε τη διάταξη σελίδας
-
- Καλέστε το`UpdatePageLayout`μέθοδος. Αυτό αποδίδει το έγγραφο στη μνήμη και καταγράφει τυχόν προειδοποιήσεις που προκύπτουν κατά την απόδοση.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Βήμα 4: Ρυθμίστε την προειδοποίηση επανάκλησης
+## Βήμα 3: Ρυθμίστε την προειδοποίηση επανάκλησης
 
  Για να καταγράψετε και να χειριστείτε τις προειδοποιήσεις, δημιουργήστε μια κλάση που υλοποιεί το`IWarningCallback` διεπαφή. Αυτή η κλάση θα καταγράφει τυχόν προειδοποιήσεις που προκύπτουν κατά την επεξεργασία εγγράφων.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Μας ενδιαφέρει μόνο η αντικατάσταση γραμματοσειρών.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Βήμα 5: Αντιστοιχίστε την επιστροφή κλήσης στο έγγραφο
+## Βήμα 4: Αντιστοιχίστε την επιστροφή κλήσης στο έγγραφο
 
 Αντιστοιχίστε την προειδοποιητική επανάκληση στο έγγραφο. Αυτό διασφαλίζει ότι τυχόν προβλήματα γραμματοσειράς καταγράφονται και καταγράφονται.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Βήμα 5: Ενημερώστε τη διάταξη σελίδας
+
+ Καλέστε το`UpdatePageLayout` μέθοδος. Αυτό αποδίδει το έγγραφο στη μνήμη και καταγράφει τυχόν προειδοποιήσεις που προκύπτουν κατά την απόδοση.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Βήμα 6: Αποθηκεύστε το έγγραφο

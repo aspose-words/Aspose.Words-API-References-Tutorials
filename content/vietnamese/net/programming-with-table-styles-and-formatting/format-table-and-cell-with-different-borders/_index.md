@@ -30,20 +30,20 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // Đặt đường viền cho toàn bộ bảng.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // Đặt phần đệm cho ô này.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // Chỉ định phần đệm ô khác cho ô thứ hai.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // Xóa định dạng ô từ các thao tác trước đó.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // Tạo đường viền dày hơn cho ô đầu tiên trong hàng này. Nó sẽ khác
 // so với các đường viền được xác định cho bảng.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ Xin chúc mừng! Bây giờ bạn đã định dạng một bảng và một ô
 ### Mã nguồn mẫu cho Định dạng bảng và ô có đường viền khác nhau bằng Aspose.Words cho .NET 
 
 ```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//Đặt đường viền cho toàn bộ bảng.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// Đặt bóng cho ô này.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// Chỉ định màu bóng ô khác cho ô thứ hai.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// Xóa định dạng ô khỏi các thao tác trước đó.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// Tạo đường viền lớn hơn cho ô đầu tiên của hàng này. Điều này sẽ khác
-	// so với các đường viền được thiết lập cho bảng.
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//Đặt đường viền cho toàn bộ bảng.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// Đặt bóng cho ô này.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// Chỉ định màu bóng ô khác cho ô thứ hai.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// Xóa định dạng ô khỏi các thao tác trước đó.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// Tạo đường viền lớn hơn cho ô đầu tiên của hàng này. Điều này sẽ khác
+// so với các đường viền được thiết lập cho bảng.
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## Phần kết luận

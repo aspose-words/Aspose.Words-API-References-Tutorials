@@ -52,7 +52,7 @@ doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.
 
 ## 6. Kesimpulan
 
-Tanda hubung memainkan peran penting dalam menjaga kualitas dan estetika dokumen Anda, terutama ketika berhadapan dengan konten multibahasa. Aspose.Words untuk Java menyederhanakan proses penerapan aturan tanda hubung untuk memastikan dokumen Anda terlihat terbaik.
+Tanda hubung memainkan peran penting dalam menjaga kualitas dan estetika dokumen Anda, terutama ketika menangani konten multibahasa. Aspose.Words untuk Java menyederhanakan proses penerapan aturan tanda hubung untuk memastikan dokumen Anda terlihat terbaik.
 
 Mulailah membuat dokumen profesional dan menarik secara visual hari ini dengan fitur tanda hubung Aspose.Words untuk Java!
 
@@ -64,7 +64,7 @@ Tanda hubung adalah proses menambahkan tanda hubung di akhir baris untuk meningk
 
 ### 2. Bisakah saya menggunakan tanda hubung dalam berbagai bahasa?
 
-Ya kamu bisa. Aspose.Words untuk Java memungkinkan Anda mendaftar dan memuat kamus tanda hubung untuk berbagai bahasa.
+Ya kamu bisa. Aspose.Words untuk Java memungkinkan Anda mendaftarkan dan memuat kamus tanda hubung untuk berbagai bahasa.
 
 ### 3. Apakah Aspose.Words for Java mudah diintegrasikan ke dalam proyek Java saya?
 

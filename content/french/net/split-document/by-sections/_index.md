@@ -15,7 +15,7 @@ Dans cet exemple, nous allons vous montrer comment diviser un document Word en s
 Pour commencer, nous devons spécifier le répertoire de votre document et charger le document dans un objet Document. Voici comment:
 
 ```csharp
-// Chemin d'accès au répertoire des documents.
+//Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

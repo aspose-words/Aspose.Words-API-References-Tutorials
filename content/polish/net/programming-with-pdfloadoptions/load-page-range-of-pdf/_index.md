@@ -15,7 +15,7 @@ W tym samouczku przeprowadzimy Cię przez proces ładowania określonego zakresu
 Użyj poniższego kodu, aby załadować określony zakres stron z dokumentu PDF:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
+//Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
  W tym przykładzie ładujemy pierwszą stronę dokumentu PDF. Możesz zmienić wartości`PageIndex`I`PageCount` do żądanego zakresu stron.
 
-## Krok 2: Zapisanie dokumentu
+## Krok 2: Zapisywanie dokumentu
 
  Na koniec możesz zapisać dokument zawierający określony zakres stron za pomocą`Save` metoda:
 

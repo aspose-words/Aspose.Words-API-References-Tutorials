@@ -2,101 +2,100 @@
 title: PDF 文档中的转义 URI
 linktitle: PDF 文档中的转义 URI
 second_title: Aspose.Words 文档处理 API
-description: 逐步指南如何使用 Aspose.Words for .NET 转义 PDF 文档中的 URI。
+description: 了解如何使用 Aspose.Words for .NET 转义 PDF 中的 URI。本详细指南将逐步指导您完成整个过程。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/escape-uri/
 ---
+## 介绍
 
-本文提供了如何使用 Aspose.Words for .NET 在 PDF 文档中转义 URI 的分步指南。我们将详细解释代码的每个部分。在本教程结束时，您将能够了解如何在文档中插入带有转义 Uri 的超链接。
+嗨！有没有想过在使用 Aspose.Words for .NET 将 Word 文档保存为 PDF 时如何处理 URI？你来对地方了！今天，我们将深入探讨 PDF 文档中的 URI 转义，以确保它们在文档转换时正常运行。让我们一起一步一步踏上这段旅程，确保您一路掌握每个概念。
 
-开始之前，请确保您已在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到该库和安装说明。
+## 先决条件
 
-## 步骤1：定义文档目录
+在开始之前，请确保您已准备好所需的一切：
 
-首先，您需要定义文档所在目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档目录的实际路径。
+1.  Aspose.Words for .NET：确保您拥有最新版本。您可以下载它[这里](https://releases.aspose.com/words/net/).
+2. 开发环境：Visual Studio 或任何其他.NET 开发环境。
+3. C# 基础知识：本教程假设您对 C# 编程有基本的了解。
+
+## 导入命名空间
+
+首先，您需要导入必要的命名空间。这对于访问 Aspose.Words 功能至关重要。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+好吧，让我们将这个过程分解成易于理解的步骤。跟着做，你很快就会成为转义 URI 的专家！
+
+## 步骤 1：设置文档目录
+
+在深入研究代码之前，请设置文档目录的路径。这是保存文件的位置。
+
+```csharp
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 2：创建文档和 DocumentBuilder
+代替`"YOUR DOCUMENT DIRECTORY"`与您想要保存 PDF 文档的实际路径。
 
-接下来，我们需要创建一个新的`Document`对象和一个`DocumentBuilder`对象来构建文档。
+## 步骤 2：创建新文档
+
+接下来，我们将使用 Aspose.Words 创建一个新文档。该文档将作为我们插入超链接的画布。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 步骤 3：插入带有转义 Uri 的超链接
+这里，`Document`是你的新 Word 文档，并且`DocumentBuilder`是一个简化文档创建过程的辅助类。
 
-使用`InsertHyperlink`方法`DocumentBuilder`对象以将超链接插入文档。必须使用`Uri.EscapeUriString`函数以避免格式错误。
+## 步骤 3：插入超链接
+
+现在，让我们在文档中插入一个超链接。此超链接将成为我们 URI 转义过程的焦点。
 
 ```csharp
-builder.InsertHyperlink("Testlink",
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test”），false）；
-builder. Writen();
-builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test”），
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test”），false）；
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q=aspose", false);
 ```
+
+在这条线中，`"Testlink"`是超链接的显示文本，并且`"https://www.google.com/search?q= aspose"`是 URL。`false`参数表示链接不应被格式化为超链接（即，它不会带有下划线和蓝色）。
 
 ## 步骤 4：将文档另存为 PDF
 
-最后，我们可以使用`Save`方法`Document`对象。指定输出文件名。
+最后，将文档保存为 PDF。此时 Aspose.Words 负责转义 PDF 输出中的 URI。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-就这样！您已成功使用 Aspose.Words for .NET 在文档中插入带有转义 Uri 的超链接。
-
-### 使用 Aspose.Words for .NET 进行 Uri 转义的示例源代码
-
-
-```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHyperlink("Testlink", 
-		"https://www.google.com/search?q=%2Fthe%20test",错误);
-	builder.Writeln();
-	builder.InsertHyperlink("https:// www.google.com/search?q=%2Fthe%20test",
-		"https://www.google.com/search?q=%2Fthe%20test",错误);
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");    
-  
-```
+此行将文档保存到指定目录，文件名为`WorkingWithPdfSaveOptions.EscapeUri.pdf`.
 
 ## 结论
 
-在本教程中，我们介绍了如何使用 Aspose.Words for .NET 转义 PDF 文档中的 URI。通过转义 URI，您可以避免格式错误并确保超链接在 PDF 文档中得到正确解释和显示。按照概述的步骤将带有转义 URI 的超链接插入 PDF 文档。务必转义。
+就这样！您刚刚学习了如何使用 Aspose.Words for .NET 将 Word 文档保存为 PDF 时转义 URI。此过程可确保您的超链接在生成的 PDF 中保持功能正常且格式正确。 
 
-### 经常问的问题
+请记住，掌握这些虽小但很重要的技术可以大大提高文档的质量和功能。祝您编码愉快！
 
-#### 问：PDF 文档中的转义 URI 是什么？为什么它很重要？
-答：PDF 文档中的转义 URI 是指将 URL 中的特殊字符转换为转义序列以避免格式错误的方法。这很重要，因为 URL 中的特殊字符会破坏 URL 的结构并导致误解或不正确的渲染。通过转义特殊字符，我们可以保证 URL 被正确解释并显示在 PDF 文档中。
+## 常见问题解答
 
-#### 问：如何使用 Aspose.Words for .NET 转义 PDF 文档中的 URI？
-答：要使用 Aspose.Words for .NET 转义 PDF 文档中的 URI，请按照以下步骤操作：
+### 什么是 Aspose.Words for .NET？
 
-通过替换来设置文档所在的目录路径`"YOUR DOCUMENT DIRECTORY"`与您的文档目录的实际路径。
+Aspose.Words for .NET 是一个功能强大的库，允许开发人员在 .NET 应用程序中创建、操作和转换 Word 文档。
 
-创建一个新的实例`Document`类和一个`DocumentBuilder`对象来构建文档。
+### 为什么 URI 转义在 PDF 中很重要？
 
-使用`InsertHyperlink`方法`DocumentBuilder`对象将超链接插入到文档中。请务必使用`Uri.EscapeUriString`函数以避免格式错误。
+URI 转义可确保正确解释 URL 中的特殊字符，从而防止出现断开的链接并确保它们按预期工作。
 
-使用`Save`方法`Document`对象通过指定输出文件的名称将文档保存为 PDF 格式。
+### 我可以在 Aspose.Words for .NET 中使用其他类型的链接吗？
 
-#### 问：在 PDF 文档中转义 URI 有什么好处？
-答：PDF 文档中进行 URI 转义的好处有：
+当然！Aspose.Words 支持各种类型的链接，包括内部文档链接、书签和外部 URL。
 
-防止格式错误：URI 转义有助于防止由 URL 中的特殊字符导致的格式错误，确保 URL 被正确解释并显示在 PDF 文档中。
+### 如何免费试用 Aspose.Words for .NET？
 
-与 PDF 阅读器的兼容性：转义的 URI 通常受到 PDF 阅读器的良好支持，从而确保更好的兼容性和一致的用户体验。
+您可以免费试用[这里](https://releases.aspose.com/).
 
-#### 问：URI 中应该转义哪些特殊字符？
-答：URI 中必须转义的特殊字符有：空格、<、>、"、#、%、{、}，|, \, ^, ~, [, ], `, ;, /, ?, :, @, =, &, $, +, ,, [, ], and !.
+### 在哪里可以找到有关 Aspose.Words for .NET 的更详细文档？
+
+您可以找到详细的文档[这里](https://reference.aspose.com/words/net/).

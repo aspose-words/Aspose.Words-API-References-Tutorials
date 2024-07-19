@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: A dokumentum létrehozása és formázása
- Hozzon létre egy példányt a`Document` osztály és a`DocumentBuilder` osztályt a dokumentum elkészítéséhez. Használja a`Font` tulajdona a`DocumentBuilder` betűtípus formázási tulajdonságainak eléréséhez.
+ Hozzon létre egy példányt a`Document` osztály és a`DocumentBuilder` osztályt a dokumentum elkészítéséhez. Használja a`Font` tulajdona a`DocumentBuilder` a betűtípus formázási tulajdonságainak eléréséhez.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## 3. lépés: Mentse el a dokumentumot
- Használja a`Save` módszerrel mentheti a dokumentumot az alkalmazott betűtípus-formátummal. Cserélje ki`"WorkingWithFonts.SetFontFormatting.docx"` a kívánt fájlnévvel.
+ Használja a`Save`módszerrel mentheti a dokumentumot az alkalmazott betűtípus-formátummal. Cserélje ki`"WorkingWithFonts.SetFontFormatting.docx"` a kívánt fájlnévvel.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

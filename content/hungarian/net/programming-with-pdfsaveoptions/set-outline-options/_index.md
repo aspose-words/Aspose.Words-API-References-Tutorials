@@ -81,7 +81,7 @@ V: Az Aspose.Words for .NET használatával PDF-dokumentumban a vázlatbeállít
 
  Töltse be a PDF-be konvertálni kívánt dokumentumot a`Document` osztályt, és adja meg a dokumentum elérési útját a megadott dokumentumok könyvtárban.
 
- Konfigurálja a mentés PDF-ként opcióit a példány létrehozásával`PdfSaveOptions` osztályban és a`OutlineOptions` tulajdonságot a vázlatbeállítások beállításához. A vázlatban szereplő címsorszintek számát a gombbal adhatja meg`HeadingsOutlineLevels` tulajdonság és a kiterjesztett körvonalszintek száma a segítségével`ExpandedOutlineLevels` ingatlan.
+ Konfigurálja a mentés PDF-ként opcióit a példány létrehozásával`PdfSaveOptions` osztályban és a`OutlineOptions` tulajdonság a vázlatbeállítások beállításához. A vázlatban szereplő címsorszintek számát a gombbal adhatja meg`HeadingsOutlineLevels` tulajdonság és a kiterjesztett körvonalszintek száma a segítségével`ExpandedOutlineLevels` ingatlan.
 
  Mentse el a dokumentumot PDF formátumban a`Save` módszere a`Document` osztály, amely megadja az elérési utat és a mentési lehetőségeket.
 

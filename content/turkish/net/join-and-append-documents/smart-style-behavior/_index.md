@@ -9,7 +9,7 @@ url: /tr/net/join-and-append-documents/smart-style-behavior/
 ---
 ## giriiş
 
-Merhaba, Kelime sihirbazları! Hiç kendinizi stili bozmadan belgeleri birleştirme zorluğunun içinde buldunuz mu? Her biri kendine has özelliklere sahip iki Word belgeniz olduğunu ve bu benzersiz dokunuşu kaybetmeden bunları birleştirmeniz gerektiğini düşünün. Kulağa zor geliyor, değil mi? Bugün, Smart Style Behavior'u kullanarak bunu zahmetsizce nasıl başarabileceğinizi göstermek için Aspose.Words for .NET'in büyülü dünyasına dalıyoruz. Bu eğitimin sonunda, stilden anlayan bir büyücü gibi belgeleri birleştirme konusunda uzman olacaksınız!
+Merhaba, Kelime sihirbazları! Hiç kendinizi stili bozmadan belgeleri birleştirmenin zorluğunun içinde buldunuz mu? Her biri kendine has özelliklere sahip iki Word belgeniz olduğunu ve bu benzersiz dokunuşu kaybetmeden bunları birleştirmeniz gerektiğini düşünün. Kulağa zor geliyor, değil mi? Bugün, Smart Style Behavior'u kullanarak bunu zahmetsizce nasıl başarabileceğinizi göstermek için Aspose.Words for .NET'in büyülü dünyasına dalıyoruz. Bu eğitimin sonunda, stilden anlayan bir büyücü gibi belgeleri birleştirme konusunda uzman olacaksınız!
 
 ## Önkoşullar
 
@@ -128,5 +128,5 @@ Bu seçenek olmadan kaynak belgenin stilleri iyi bir şekilde bütünleşmeyebil
 ### Bu yöntemi farklı dosya formatları için kullanabilir miyim?
 Bu eğitim Word belgelerine (.docx) özeldir. Diğer formatlar için ek adımlara veya farklı yöntemlere ihtiyacınız olabilir.
 
-### Sorunlarla karşılaşırsam nereden destek alabilirim?
+### Sorunla karşılaşırsam nereden destek alabilirim?
  Herhangi bir sorun için şu adresi ziyaret edin:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).

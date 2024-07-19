@@ -51,8 +51,8 @@ builder.InsertHyperlink("Aspose", "https://www.aspose.com"، خطأ)؛
 
 #### س: كيف يمكنني تخصيص نص العرض الخاص بالارتباط في Aspose.Words؟
 
-ج: لتخصيص نص عرض الرابط في Aspose.Words، يمكنك تعديل المحتوى بين`<a>` العلامات. على سبيل المثال،`<a href="https://www.aspose.com">Click here</a>` سيعرض النص "انقر هنا" كارتباط تشعبي.
+ ج: لتخصيص نص عرض الرابط في Aspose.Words، يمكنك تعديل المحتوى بين`<a>` العلامات. على سبيل المثال،`<a href="https://www.aspose.com">Click here</a>` سيعرض النص "انقر هنا" كارتباط تشعبي.
 
 #### س: هل يمكنني تحديد هدف لارتباط في Aspose.Words؟
 
- ج: نعم، يمكنك تحديد هدف للارتباط في Aspose.Words باستخدام الأمر`target` سمة من`<a>` بطاقة شعار. على سبيل المثال،`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` سيفتح الرابط في نافذة أو علامة تبويب جديدة.
+ج: نعم، يمكنك تحديد هدف للارتباط في Aspose.Words باستخدام الأمر`target` سمة من`<a>` بطاقة شعار. على سبيل المثال،`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` سيفتح الرابط في نافذة أو علامة تبويب جديدة.

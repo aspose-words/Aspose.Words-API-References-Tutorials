@@ -14,7 +14,7 @@ Une table des matières fournit un aperçu de la structure d'un document, permet
 
 ## Configuration de l'environnement
 
- Avant de commencer, assurez-vous que Aspose.Words pour Python est installé. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/python/). De plus, assurez-vous de disposer d'un exemple de document Word que vous souhaitez améliorer avec une table des matières.
+ Avant de commencer, assurez-vous que Aspose.Words pour Python est installé. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/python/). De plus, assurez-vous d'avoir un exemple de document Word que vous souhaitez améliorer avec une table des matières.
 
 ## Chargement d'un document
 

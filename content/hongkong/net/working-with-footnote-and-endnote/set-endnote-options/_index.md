@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 第 3 步：新增文字和尾註
 
-使用`Write`的方法`DocumentBuilder`新增文字文字的對象，以及`InsertFootnote`插入尾註的方法：
+使用`Write`的方法`DocumentBuilder`物件向文件添加文本，以及`InsertFootnote`插入尾註的方法：
 
 ```csharp
 builder.Write("Some text");

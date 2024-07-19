@@ -78,11 +78,11 @@ Trả lời: Nút đoạn văn trong tài liệu XML được sử dụng để 
 
 #### Câu hỏi: Làm cách nào để thêm nút đoạn văn vào tài liệu XML hiện có?
 
- Đáp: Để thêm nút đoạn văn vào tài liệu XML hiện có, bạn có thể sử dụng`appendChild`phương pháp thêm nút đoạn văn làm nút con của một phần tử khác trong tài liệu XML. Ví dụ: bạn có thể thêm nó làm phần tử con của phần tử gốc tài liệu.
+ Đáp: Để thêm nút đoạn văn vào tài liệu XML hiện có, bạn có thể sử dụng`appendChild` phương pháp thêm nút đoạn văn làm nút con của một phần tử khác trong tài liệu XML. Ví dụ: bạn có thể thêm nó làm phần tử con của phần tử gốc tài liệu.
 
 #### Câu hỏi: Làm cách nào để xác định nội dung của nút đoạn văn?
 
- Trả lời: Để đặt nội dung của nút đoạn văn, bạn có thể sử dụng`createTextNode` để tạo một nút văn bản chứa nội dung mong muốn, sau đó sử dụng`appendChild` phương pháp thêm nút văn bản đó làm nút con của nút đoạn văn.
+ Trả lời: Để đặt nội dung của nút đoạn văn, bạn có thể sử dụng`createTextNode` để tạo một nút văn bản chứa nội dung mong muốn, sau đó sử dụng`appendChild`phương pháp thêm nút văn bản đó làm nút con của nút đoạn văn.
 
 #### Câu hỏi: Làm cách nào để định dạng văn bản trong nút đoạn văn?
 

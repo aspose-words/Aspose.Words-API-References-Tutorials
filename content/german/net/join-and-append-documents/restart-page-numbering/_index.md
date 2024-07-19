@@ -35,9 +35,9 @@ Lassen Sie uns nun einen Blick auf die praktischen Schritte zum Neustarten der S
 
 ## Schritt 1: Laden Sie die Quell- und Zieldokumente:
 
-Definieren einer Zeichenfolgenvariable`dataDir` um den Pfad zu Ihrem Dokumentverzeichnis zu speichern. Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Speicherort.
+ Definieren einer Zeichenfolgenvariable`dataDir` um den Pfad zu Ihrem Dokumentverzeichnis zu speichern. Ersetzen Sie „IHR DOKUMENTVERZEICHNIS“ durch den tatsächlichen Speicherort.
 
- Erstellen Sie zwei`Document` Objekte mit dem`Aspose.Words.Document` Konstruktor. Der erste (`srcDoc`) enthält das Quelldokument mit dem anzuhängenden Inhalt. Das zweite (`dstDoc`) stellt das Zieldokument dar, in das wir den Quellinhalt mit neu gestarteter Seitennummerierung integrieren.
+ Erstellen Sie zwei`Document` Objekte mit dem`Aspose.Words.Document`Konstruktor. Der erste (`srcDoc`) enthält das Quelldokument mit dem anzuhängenden Inhalt. Das zweite (`dstDoc`) stellt das Zieldokument dar, in das wir den Quellinhalt mit neu gestarteter Seitennummerierung integrieren.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Ersetzen Sie es durch Ihr aktuelles Verzeichnis
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Schritt 3: Neustart der Seitennummerierung aktivieren:
 
- Innerhalb derselben`PageSetup` Objekt des ersten Abschnitts des Quelldokuments, setzen Sie die`RestartPageNumbering`Eigentum an`true`Dieser wichtige Schritt weist Aspose.Words an, die Seitennummerierung für den angehängten Inhalt neu zu starten.
+ Innerhalb derselben`PageSetup` Objekt des ersten Abschnitts des Quelldokuments, setzen Sie die`RestartPageNumbering`Eigentum an`true`. Dieser wichtige Schritt weist Aspose.Words an, die Seitennummerierung für den angehängten Inhalt neu zu starten.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

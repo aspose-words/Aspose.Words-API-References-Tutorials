@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Langkah 3: Memasukkan kolom ASK
+## Langkah 3: Memasukkan bidang ASK
 
  Kami menggunakan`AppendField()` metode untuk menyisipkan bidang ASK ke dalam paragraf.
 
@@ -94,7 +94,7 @@ J: Untuk menyisipkan kolom ASK di dokumen Word tanpa menggunakan Pembuat Dokumen
 
 #### T: Bagaimana cara mendapatkan respons pengguna untuk bidang ASK di dokumen Word?
 
-J: Untuk mendapatkan respon pengguna untuk bidang ASK di dokumen Word, Anda bisa menggunakan metode GetFieldNames yang tersedia di kelas Dokumen. Metode ini mengembalikan daftar nama bidang yang ada dalam dokumen. Anda kemudian dapat memeriksa apakah nama bidang ASK ada dalam daftar dan mengambil respons terkait.
+J: Untuk mendapatkan respon pengguna untuk kolom ASK di dokumen Word, Anda bisa menggunakan metode GetFieldNames yang tersedia di kelas Dokumen. Metode ini mengembalikan daftar nama bidang yang ada dalam dokumen. Anda kemudian dapat memeriksa apakah nama bidang ASK ada dalam daftar dan mengambil respons terkait.
 
 #### Q: Bisakah kolom ASK digunakan untuk meminta informasi lebih lanjut dari pengguna?
 

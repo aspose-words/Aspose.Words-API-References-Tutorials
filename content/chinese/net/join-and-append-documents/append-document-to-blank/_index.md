@@ -37,11 +37,11 @@ using Aspose.Words;
 
 1. 打开 Visual Studio 并选择文件 > 新建 > 项目。
 2. 选择控制台应用程序（.NET Core）或控制台应用程序（.NET Framework）。
-3. 为您的项目命名并单击“创建”。
+3. 命名您的项目并单击“创建”。
 
 ### 安装 Aspose.Words
 
-1. 在 Visual Studio 中，转到“工具”>“NuGet 包管理器”>“包管理器控制台”。
+1. 在 Visual Studio 中，转到工具>NuGet 包管理器>包管理器控制台。
 2. 运行以下命令安装 Aspose.Words：
 
    ```powershell

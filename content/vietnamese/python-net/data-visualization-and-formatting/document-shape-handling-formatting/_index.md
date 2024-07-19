@@ -98,4 +98,4 @@ Tuyệt đối! Aspose.Words for Python cung cấp các tùy chọn để tùy c
 Bạn có thể thêm hình ảnh vào tài liệu của mình bằng cách sử dụng`append_image` phương thức, cung cấp đường dẫn đến tệp hình ảnh.
 
 ### Có nhiều tính năng nâng cao hơn có sẵn trong Aspose.Words cho Python không?
-Có, Aspose.Words for Python cung cấp nhiều tính năng nâng cao, bao gồm bảng, biểu đồ, siêu liên kết, v.v., để tạo tài liệu động và hấp dẫn.
+Có, Aspose.Words for Python cung cấp nhiều tính năng nâng cao, bao gồm bảng, biểu đồ, siêu liên kết, v.v. để tạo tài liệu động và hấp dẫn.

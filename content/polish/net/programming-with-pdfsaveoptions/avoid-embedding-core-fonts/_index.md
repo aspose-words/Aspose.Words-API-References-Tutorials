@@ -58,7 +58,7 @@ Oto kompletny kod źródłowy umożliwiający użycie tej funkcji w celu unikni�
 
 ```
 
-Wykonując te kroki, możesz łatwo kontrolować, czy czcionki podstawowe powinny być osadzane w pliku PDF podczas konwertowania dokumentu Word za pomocą Aspose.Words dla .NET.
+Wykonując te kroki, możesz łatwo kontrolować, czy czcionki podstawowe powinny być osadzane w pliku PDF podczas konwersji dokumentu Word za pomocą Aspose.Words dla .NET.
 
 
 ## Wniosek

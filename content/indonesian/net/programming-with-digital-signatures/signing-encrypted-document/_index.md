@@ -75,7 +75,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Langkah 6: Menandatangani Dokumen
 
- Terakhir, gunakan`DigitalSignatureUtil.Sign` metode untuk menandatangani dokumen Word terenkripsi Anda. Metode ini memerlukan file input, file output, pemegang sertifikat, dan opsi tanda.
+ Terakhir, gunakan`DigitalSignatureUtil.Sign` metode untuk menandatangani dokumen Word terenkripsi Anda. Metode ini memerlukan file masukan, file keluaran, pemegang sertifikat, dan opsi tanda.
 
 ```csharp
 DigitalSignatureUtil.Sign(

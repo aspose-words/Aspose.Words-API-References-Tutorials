@@ -15,7 +15,7 @@ Bevor Sie sich in den Code vertiefen, ist es wichtig, die Aspose.Words-Bibliothe
 
 ## Konfigurieren der Ladeoptionen
 
-Der erste Schritt besteht darin, die Ladeoptionen für unser Dokument zu konfigurieren. Verwenden Sie die Klasse LoadOptions, um Ladeparameter anzugeben. In unserem Fall möchten wir die Formen in mathematische Office-Formeln konvertieren, daher müssen wir die Eigenschaft ConvertShapeToOfficeMath auf „true“ setzen. So geht‘s:
+Der erste Schritt besteht darin, die Ladeoptionen für unser Dokument zu konfigurieren. Verwenden Sie die Klasse LoadOptions, um Ladeparameter anzugeben. In unserem Fall möchten wir die Formen in mathematische Office-Formeln konvertieren, daher müssen wir die Eigenschaft ConvertShapeToOfficeMath auf true setzen. So geht's:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveF
 
 ## Abschluss
 
-In dieser Anleitung haben wir erklärt, wie Sie ein Dokument laden, indem Sie Formen in Office-Mathematikformeln mithilfe der Aspose.Words-Bibliothek für .NET konvertieren. Indem Sie die angegebenen Schritte befolgen und den bereitgestellten C#-Quellcode verwenden, können Sie diese Funktion problemlos in Ihrer C#-Anwendung anwenden. Die Konvertierung von Formen in Office-Mathematikformeln bietet eine bessere Kompatibilität und Darstellung von Dokumenten, die mathematische Elemente enthalten.
+In dieser Anleitung haben wir erklärt, wie Sie ein Dokument laden, indem Sie Formen mithilfe der Aspose.Words-Bibliothek für .NET in Office-Mathematikformeln umwandeln. Indem Sie die angegebenen Schritte befolgen und den bereitgestellten C#-Quellcode verwenden, können Sie diese Funktion problemlos in Ihrer C#-Anwendung anwenden. Die Umwandlung von Formen in Office-Mathematikformeln sorgt für bessere Kompatibilität und Darstellung von Dokumenten, die mathematische Elemente enthalten.
 
 
 ### Häufig gestellte Fragen

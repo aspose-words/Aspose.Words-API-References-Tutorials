@@ -13,7 +13,7 @@ Bu kapsamlı kılavuzda, belge revizyonlarını etkili bir şekilde yönetmek i�
 
 ## Önkoşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+Eğiticiye dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 - Makinenizde Visual Studio yüklü.
 - Aspose.Words for .NET kütüphanesi projenize entegre edilmiştir.
 - C# programlama dili ve .NET çerçevesi hakkında temel bilgi.

@@ -16,7 +16,7 @@ Ei! Você já quis aprimorar seus documentos do Word com alguns gráficos elegan
 Antes de começarmos, vamos ter certeza de que temos tudo o que precisamos. Aqui está uma lista de verificação rápida:
 
 1.  Biblioteca Aspose.Words for .NET: você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
-2. Visual Studio: Qualquer versão recente deve resolver o problema.
+2. Visual Studio: qualquer versão recente deve resolver o problema.
 3. Uma compreensão básica de C#: Nada muito sofisticado, apenas o básico serve.
 
 ## Importar namespaces

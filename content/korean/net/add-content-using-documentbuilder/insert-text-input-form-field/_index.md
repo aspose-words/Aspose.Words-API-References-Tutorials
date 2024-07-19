@@ -71,7 +71,7 @@ builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 
 ## 5단계: 문서 저장
 
-마지막으로 문서를 지정된 디렉터리에 저장해야 합니다. 그러면 텍스트 입력 양식 필드가 삽입된 .docx 파일이 생성됩니다.
+마지막으로 문서를 지정된 디렉터리에 저장해야 합니다. 삽입된 텍스트 입력 양식 필드가 있는 .docx 파일이 생성됩니다.
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx");

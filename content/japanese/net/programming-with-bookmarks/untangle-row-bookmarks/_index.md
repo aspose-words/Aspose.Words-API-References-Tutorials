@@ -66,7 +66,7 @@ private void Untangle(Document doc)
 
 ドキュメント内のすべてのブックマークを反復処理するには、`foreach`ループ。
 各ブックマークについて、ブックマークの開始行（`bookmark.BookmarkStart`) とブックマークの終了 (`bookmark.BookmarkEnd` ）を使用して`GetAncestor`方法。
-次に、両方の行が見つかるかどうかを確認します（`row1 != null`そして`row2 != null`であり、隣接する行である場合 (`row1.NextSibling == row2`)。これにより、隣接する行にまたがるブックマークのみが変更されます。
+次に、両方の行が見つかるかどうかを確認します（`row1 != null`そして`row2 != null`) であり、隣接する行である場合 (`row1.NextSibling == row2`)。これにより、隣接する行にまたがるブックマークのみが変更されます。
 条件が満たされた場合、ブックマーク終了ノードを最上行の最後のセルの最後の段落の末尾に移動します（`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) 効果的にそれらを解きほぐします。
 
 ## ステップ3: ブックマークで行を削除する

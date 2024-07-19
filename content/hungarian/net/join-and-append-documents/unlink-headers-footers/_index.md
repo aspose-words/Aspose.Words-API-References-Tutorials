@@ -75,7 +75,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## 6. lépés: Mentse el a záródokumentumot
 
-Végül mentse el az újonnan létrehozott dokumentumot. Ehhez a dokumentumhoz a forrásdokumentum tartalma hozzá lesz fűzve a céldokumentumhoz, a fejlécek és láblécek összekapcsolása nélkül.
+Végül mentse az újonnan létrehozott dokumentumot. Ehhez a dokumentumhoz a forrásdokumentum tartalma hozzá lesz fűzve a céldokumentumhoz, a fejlécek és láblécek összekapcsolása nélkül.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");

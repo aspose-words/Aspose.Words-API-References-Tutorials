@@ -15,7 +15,7 @@ Ebben az oktatóanyagban megtanuljuk, hogyan lehet lebegő táblázat helyzetét
 2. Adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra.
 
 ## 2. lépés: A dokumentum betöltése és a táblázatok elérése
-A táblázatokkal történő szövegfeldolgozás elindításához be kell töltenünk az azokat tartalmazó dokumentumot, és el kell érnünk őket. Kovesd ezeket a lepeseket:
+táblázatokkal történő szövegfeldolgozás elindításához be kell töltenünk az azokat tartalmazó dokumentumot, és el kell érnünk őket. Kovesd ezeket a lepeseket:
 
 ```csharp
 // A dokumentumkönyvtár elérési útja

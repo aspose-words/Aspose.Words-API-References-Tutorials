@@ -8,7 +8,7 @@ weight: 10
 url: /pl/java/using-document-elements/using-comments/
 ---
 
-świecie przetwarzania dokumentów dodawanie komentarzy do dokumentów może być istotną funkcją. Umożliwia współpracę, przesyłanie opinii i adnotacji na temat treści. Aspose.Words dla Java zapewnia solidne i wszechstronne API do pracy z dokumentami, a w tym samouczku krok po kroku odkryjemy, jak używać komentarzy w Aspose.Words dla Java.
+świecie przetwarzania dokumentów dodawanie komentarzy do dokumentów może być istotną funkcją. Umożliwia współpracę, przesyłanie opinii i adnotacji na temat treści. Aspose.Words dla Java zapewnia solidny i wszechstronny interfejs API do pracy z dokumentami, a w tym samouczku krok po kroku odkryjemy, jak używać komentarzy w Aspose.Words dla Java.
 
 ## 1. Wstęp
 Komentarze są cenne przy dokumentowaniu kodu lub dostarczaniu wyjaśnień w dokumencie. Aspose.Words dla Java umożliwia programowe dodawanie komentarzy do dokumentów, co czyni go doskonałym wyborem do generowania dynamicznych i interaktywnych dokumentów.

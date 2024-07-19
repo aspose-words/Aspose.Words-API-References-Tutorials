@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: crea e formatta il documento
- Crea un'istanza di`Document` classe e il`DocumentBuilder` classe per creare il documento. Usa il`Font` proprietà del`DocumentBuilder`per accedere alle proprietà di formattazione dei caratteri.
+ Crea un'istanza di`Document` classe e il`DocumentBuilder` classe per creare il documento. Usa il`Font` proprietà del`DocumentBuilder` per accedere alle proprietà di formattazione dei caratteri.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## Passaggio 3: salva il documento
- Usa il`Save` metodo per salvare il documento con la formattazione del carattere applicata. Sostituire`"WorkingWithFonts.SetFontFormatting.docx"` con il nome file desiderato.
+ Usa il`Save`metodo per salvare il documento con la formattazione del carattere applicata. Sostituire`"WorkingWithFonts.SetFontFormatting.docx"` con il nome file desiderato.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

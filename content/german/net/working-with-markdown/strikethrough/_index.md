@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Schritt 2: Durchgestrichenen Textstil anwenden
 
-Wir aktivieren den durchgestrichenen Textstil, indem wir die`StrikeThrough` Eigentum der`Font` Einwände erheben gegen`true`.
+ Wir aktivieren den durchgestrichenen Textstil, indem wir die`StrikeThrough` Eigentum der`Font` Einwände erheben gegen`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

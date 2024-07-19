@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Přidejte styl pro odsazený kód
 
-Přidáme vlastní styl pro odsazený kód pomocí`Styles.Add` metoda`Document` objekt. V tomto příkladu vytváříme styl nazvaný "IndentedCode" pro odsazený kód.
+ Přidáme vlastní styl pro odsazený kód pomocí`Styles.Add` metoda`Document` objekt. V tomto příkladu vytváříme styl nazvaný "IndentedCode" pro odsazený kód.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

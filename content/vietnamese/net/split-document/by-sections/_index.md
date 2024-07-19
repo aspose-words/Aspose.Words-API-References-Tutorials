@@ -15,7 +15,7 @@ Trong ví dụ này, chúng tôi sẽ hướng dẫn bạn cách chia tài liệ
 Để bắt đầu, chúng ta cần chỉ định thư mục tài liệu của bạn và tải tài liệu vào đối tượng Document. Đây là cách thực hiện:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
+//Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

@@ -9,7 +9,7 @@ url: /sv/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
 ## Introduktion
 
-Hej där, andra teknikentusiaster! Har du någonsin hamnat i en situation där du behövde komma åt och verifiera digitala signaturer i ett Word-dokument men hade ingen aning om var du skulle börja? Nåväl, du har tur! Idag dyker vi in i den underbara världen av Aspose.Words för .NET, ett kraftfullt bibliotek som gör det enkelt att hantera Word-dokument. Vi kommer att leda dig genom processen steg för steg, så i slutet av den här guiden kommer du att vara ett proffs på att verifiera digitala signaturer i Word-dokument. Låt oss börja!
+Hej där, andra teknikentusiaster! Har du någonsin hamnat i en situation där du behövde komma åt och verifiera digitala signaturer i ett Word-dokument men hade ingen aning om var du skulle börja? Tja, du har tur! Idag dyker vi in i den underbara världen av Aspose.Words för .NET, ett kraftfullt bibliotek som gör det enkelt att hantera Word-dokument. Vi kommer att leda dig genom processen steg för steg, så i slutet av den här guiden kommer du att vara ett proffs på att verifiera digitala signaturer i Word-dokument. Låt oss börja!
 
 ## Förutsättningar
 

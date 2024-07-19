@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveO
 
 Neste tutorial, exploramos a funcionalidade de definir o nível de compactação ao salvar um documento usando Aspose.Words for .NET. Ao especificar o nível apropriado de compactação, você pode otimizar o tamanho do documento e a velocidade de geração.
 
- O`OoxmlSaveOptions` classe fornece flexibilidade para controlar o nível de compactação, definindo o`CompressionLevel` propriedade a um valor apropriado, como`SuperFast`. Isso permite que você encontre o equilíbrio certo entre tamanho de arquivo e velocidade de backup com base em suas necessidades específicas.
+ O`OoxmlSaveOptions` classe fornece flexibilidade para controlar o nível de compactação, definindo o`CompressionLevel` propriedade a um valor apropriado, como`SuperFast`. Isso permite que você encontre o equilíbrio certo entre tamanho do arquivo e velocidade de backup com base em suas necessidades específicas.
 
 Usar a compactação pode ser benéfico quando você precisa reduzir o tamanho dos arquivos gerados, especialmente para documentos grandes. Isso pode facilitar o armazenamento, o compartilhamento e a transmissão de documentos.
 

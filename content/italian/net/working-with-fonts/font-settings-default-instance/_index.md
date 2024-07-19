@@ -55,7 +55,7 @@ In questo esempio:
 
 ## Passaggio 3: caricare il documento
 
- Con le origini dei caratteri configurate, il passaggio successivo è caricare il documento in un Aspose.Words`Document`oggetto. Ciò consente di manipolare ed eventualmente salvare il documento.
+ Con le origini dei caratteri configurate, il passaggio successivo è caricare il documento in un Aspose.Words`Document` oggetto. Ciò consente di manipolare ed eventualmente salvare il documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

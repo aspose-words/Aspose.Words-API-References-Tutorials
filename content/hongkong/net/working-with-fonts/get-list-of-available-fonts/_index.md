@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/get-list-of-available-fonts/
 ---
-在本教程中，我們將解釋如何取得 Aspose.Words for .NET 中可用的字體清單。可用字體清單可讓您了解可以在文件中使用哪些字體。我們將逐步引導您瞭解並實作 .NET 專案中的程式碼。
+在本教程中，我們將解釋如何取得 Aspose.Words for .NET 中可用的字體清單。可用字體清單可讓您了解可以在文件中使用哪些字體。我們將逐步指導您瞭解並實作 .NET 專案中的程式碼。
 
 ## 先決條件
 在開始之前，請確保您擁有以下物品：

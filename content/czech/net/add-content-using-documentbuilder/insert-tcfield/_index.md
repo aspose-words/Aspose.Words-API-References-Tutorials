@@ -64,7 +64,7 @@ Nyní přichází ta zábavná část. Do našeho dokumentu vložíme pole TC. P
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Tento řádek kódu říká Aspose.Words, aby vložil pole TC se vstupním textem "Entry Text". The`\\f t` část je přepínač, který určuje, jak se záznam zobrazí v obsahu.
+ Tento řádek kódu říká Aspose.Words, aby vložil pole TC se vstupním textem "Entry Text". The`\\f t`část je přepínač, který určuje, jak se záznam zobrazí v obsahu.
 
 ## Krok 4: Uložte dokument
 

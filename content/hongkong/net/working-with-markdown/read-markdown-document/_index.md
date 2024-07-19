@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 
 #### Q：如何使用.NET閱讀Markdown文檔？
 
-A：要使用.NET讀取Markdown文檔，可以使用Markdown相容的函式庫，例如`Markdig`或者`CommonMark.NET`。這些程式庫提供了從 Markdown 文件中解析和提取內容的功能。
+ A：要使用.NET讀取Markdown文檔，可以使用Markdown相容的函式庫，例如`Markdig`或者`CommonMark.NET`。這些程式庫提供了從 Markdown 文件中解析和提取內容的功能。
 
 #### Q：如何使用 .NET 將 Markdown 文件轉換為 HTML？
 

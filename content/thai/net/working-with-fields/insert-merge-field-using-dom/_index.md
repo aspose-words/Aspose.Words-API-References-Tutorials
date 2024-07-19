@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ต่อไป เราต้องย้ายเคอร์เซอร์ไปยังย่อหน้าเฉพาะในเอกสารที่เราต้องการแทรกช่องผสาน
 
 ```csharp
-// ย้ายเคอร์เซอร์ไปที่ย่อหน้า
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## ขั้นตอนที่ 6: แทรกฟิลด์ผสาน

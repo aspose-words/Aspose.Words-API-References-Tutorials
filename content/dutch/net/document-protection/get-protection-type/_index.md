@@ -37,7 +37,7 @@ Laten we het proces opsplitsen in eenvoudige, gemakkelijk te volgen stappen. Elk
 Stel eerst uw C#-project in Visual Studio in. Hier is hoe:
 
 1. Een nieuw project maken: Open Visual Studio, ga naar Bestand > Nieuw > Project en selecteer een console-app (.NET Core of .NET Framework).
-2. Installeer Aspose.Words: Klik met de rechtermuisknop op uw project in de Solution Explorer, selecteer "NuGet-pakketten beheren", zoek naar "Aspose.Words" en installeer het.
+2. Aspose.Words installeren: Klik met de rechtermuisknop op uw project in de Solution Explorer, selecteer "NuGet-pakketten beheren", zoek naar "Aspose.Words" en installeer het.
 
 ## Stap 2: Laad uw document
 
@@ -81,7 +81,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee u Word-documenten pr
 Aspose.Words kan verschillende beveiligingstypen detecteren, zoals NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments en AllowOnlyFormFields.
 
 ### Hoe kan ik ondersteuning krijgen als ik problemen tegenkom?
- Voor eventuele problemen kunt u terecht bij de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.
+ Voor eventuele problemen kunt u terecht bij de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8)voor hulp.
 
 ### Is Aspose.Words compatibel met .NET Core?
 Ja, Aspose.Words is compatibel met zowel .NET Framework als .NET Core.

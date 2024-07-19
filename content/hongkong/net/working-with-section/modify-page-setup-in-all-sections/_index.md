@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 第 2 步：新增部分
 
-接下來，我們需要在文件中新增多個部分。每個部分將包含一些文字來幫助我們視覺化更改。
+接下來，我們需要在文件中新增多個部分。每個部分將包含一些文字來幫助我們視覺化變更。
 
 ```csharp
 builder.Writeln("Section 1");

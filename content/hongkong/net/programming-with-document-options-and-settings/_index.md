@@ -14,12 +14,12 @@ Aspose.Words for .NET「使用文件選項和設定進行文字處理」教學�
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [針對 Ms Word 進行最佳化](./optimize-for-ms-word/) | 使用 Aspose.Words for .NET 優化 MS Word 文件的逐步指南。 |
-| [顯示語法和拼字錯誤](./show-grammatical-and-spelling-errors/) | 使用 Aspose.Words for .NET 在文件中顯示語法和拼字錯誤的逐步指南。 |
-| [清理未使用的樣式和列表](./cleanup-unused-styles-and-lists/) | 使用 Aspose.Words for .NET 清理文件中未使用的樣式和清單的逐步指南。 |
-| [清理重複樣式](./cleanup-duplicate-style/) | 使用 Aspose.Words for .NET 清理文件中重複樣式的逐步指南。包括完整的源代碼。 |
-| [查看選項](./view-options/) | 使用 Aspose.Words for .NET 設定文件顯示選項的逐步指南。 |
-| [文檔頁面設定](./document-page-setup/) | 使用 Aspose.Words for .NET 設定文件佈局的逐步指南。 |
-| [加入日語作為編輯語言](./add-japanese-as-editing-languages/) | 使用 Aspose.Words for .NET 新增日文作為編輯語言的逐步指南。 |
-| [將俄語設定為預設編輯語言](./set-russian-as-default-editing-language/) | 使用 Aspose.Words for .NET 將俄語設定為文件的預設編輯語言的逐步指南。 |
-| [設定頁面設定和部分格式](./set-page-setup-and-section-formatting/) | 使用 Aspose.Words for .NET 設定文件佈局和部分格式的逐步指南。 |
+| [針對 Ms Word 進行最佳化](./optimize-for-ms-word/) | 透過此逐步指南，使用 Aspose.Words for .NET 輕鬆優化不同版本的 MS Word 的 Word 文件語法。 |
+| [顯示語法和拼字錯誤](./show-grammatical-and-spelling-errors/) | 透過這個綜合教程，了解如何使用 Aspose.Words for .NET 顯示 Word 文件中的語法和拼字錯誤。 |
+| [清理未使用的樣式和列表](./cleanup-unused-styles-and-lists/) | 透過刪除未使用的樣式和列表，使用 Aspose.Words for .NET 清理您的 Word 文件。請按照此逐步指南輕鬆簡化您的文件。 |
+| [清理重複樣式](./cleanup-duplicate-style/) | 透過我們全面的逐步指南，了解如何使用 Aspose.Words for .NET 清理 Word 文件中的重複樣式。 |
+| [查看選項](./view-options/) | 了解如何使用 Aspose.Words for .NET 檢視 Word 文件中的選項。本指南涵蓋設定視圖類型、調整縮放等級和儲存文件。 |
+| [文檔頁面設定](./document-page-setup/) | 透過 Aspose.Words for .NET 透過簡單的步驟掌握文件頁面設定。了解載入、設定佈局、定義每行字元、每頁行數以及儲存文件。 |
+| [加入日語作為編輯語言](./add-japanese-as-editing-languages/) | 透過這份詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在文件中加入日文作為編輯語言。 |
+| [將俄語設定為預設編輯語言](./set-russian-as-default-editing-language/) | 了解如何使用 Aspose.Words for .NET 將俄語設定為 Word 文件中的預設編輯語言。請按照我們的逐步指南取得詳細說明。 |
+| [設定頁面設定和部分格式](./set-page-setup-and-section-formatting/) | 透過我們的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中設定頁面設定和章節格式。輕鬆增強文件的演示效果。 |

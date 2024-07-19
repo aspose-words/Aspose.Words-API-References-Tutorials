@@ -9,7 +9,7 @@ url: /id/net/programming-with-digital-signatures/creating-and-signing-new-signat
 ---
 ## Perkenalan
 
-Hai! Jadi, Anda memiliki dokumen Word dan Anda perlu menambahkan baris tanda tangan lalu menandatanganinya secara digital. Kedengarannya rumit? Sama sekali tidak! Berkat Aspose.Words untuk .NET, Anda dapat mencapainya dengan lancar hanya dengan beberapa baris kode. Dalam tutorial ini, kami akan memandu Anda melalui seluruh proses mulai dari menyiapkan lingkungan hingga menyimpan dokumen Anda dengan tanda tangan baru yang berkilau. Siap? Ayo selami!
+Hai! Jadi, Anda memiliki dokumen Word dan Anda perlu menambahkan baris tanda tangan lalu menandatanganinya secara digital. Kedengarannya rumit? Sama sekali tidak! Berkat Aspose.Words untuk .NET, Anda dapat mencapainya dengan lancar hanya dengan beberapa baris kode. Dalam tutorial ini, kami akan memandu Anda melalui seluruh proses mulai dari menyiapkan lingkungan hingga menyimpan dokumen Anda dengan tanda tangan baru yang keren. Siap? Ayo selami!
 
 ## Prasyarat
 

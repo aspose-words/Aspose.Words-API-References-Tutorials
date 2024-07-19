@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 दस्तावेज़ में सभी फ़ील्ड को पुनरावृत्त करें और उन्हें हटा दें:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 यह लूप पुनरावृत्ति करते समय संग्रह को संशोधित करने से संबंधित समस्याओं से बचने के लिए फ़ील्ड संग्रह के माध्यम से पीछे की ओर पुनरावृत्ति करता है।

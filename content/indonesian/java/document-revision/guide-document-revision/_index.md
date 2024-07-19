@@ -15,7 +15,7 @@ Di dunia yang serba cepat saat ini, manajemen dokumen dan kolaborasi merupakan a
 
 ### 1.1 Apa yang dimaksud dengan Revisi Dokumen?
 
-Revisi dokumen mengacu pada proses membuat perubahan pada dokumen, baik itu file teks, spreadsheet, atau presentasi. Perubahan tersebut dapat berupa pengeditan konten, penyesuaian format, atau penambahan komentar. Dalam lingkungan kolaboratif, banyak penulis dan peninjau dapat berkontribusi pada sebuah dokumen, yang menyebabkan berbagai revisi seiring berjalannya waktu.
+Revisi dokumen mengacu pada proses membuat perubahan pada dokumen, baik itu file teks, spreadsheet, atau presentasi. Perubahan tersebut dapat berupa pengeditan konten, penyesuaian format, atau penambahan komentar. Dalam lingkungan kolaboratif, banyak penulis dan peninjau dapat berkontribusi pada sebuah dokumen, yang mengarah pada berbagai revisi seiring berjalannya waktu.
 
 ### 1.2 Pentingnya Revisi Dokumen dalam Kerja Kolaborasi
 

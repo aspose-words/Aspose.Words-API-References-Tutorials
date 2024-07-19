@@ -2,105 +2,131 @@
 title: पसंदीदा चौड़ाई सेटिंग्स
 linktitle: पसंदीदा चौड़ाई सेटिंग्स
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words के साथ Word दस्तावेज़ में पसंदीदा तालिका सेल चौड़ाई सेट करना सीखें।
+description: इस चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए Aspose.Words में निरपेक्ष, सापेक्ष और स्वचालित चौड़ाई सेटिंग्स के साथ तालिकाएँ बनाना सीखें।
 type: docs
 weight: 10
 url: /hi/net/programming-with-tables/preferred-width-settings/
 ---
+## परिचय
 
-इस ट्यूटोरियल में, हम सीखेंगे कि Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में टेबल सेल के लिए पसंदीदा चौड़ाई सेटिंग कैसे सेट करें। हम कोड को समझने और इस सुविधा को लागू करने के लिए चरण-दर-चरण मार्गदर्शिका का पालन करेंगे। इस ट्यूटोरियल के अंत तक, आप अपने Word दस्तावेज़ों में अपने टेबल सेल के लिए अलग-अलग पसंदीदा चौड़ाई निर्दिष्ट करने में सक्षम होंगे।
+टेबल आपके वर्ड दस्तावेज़ों में जानकारी को व्यवस्थित करने और प्रस्तुत करने का एक शक्तिशाली तरीका है। Aspose.Words for .NET में टेबल के साथ काम करते समय, आपके पास टेबल सेल की चौड़ाई सेट करने के लिए कई विकल्प होते हैं ताकि यह सुनिश्चित हो सके कि वे आपके दस्तावेज़ के लेआउट में पूरी तरह से फिट हों। यह गाइड आपको Aspose.Words for .NET का उपयोग करके पसंदीदा चौड़ाई सेटिंग्स के साथ टेबल बनाने की प्रक्रिया से गुजारेगी, जिसमें निरपेक्ष, सापेक्ष और स्वचालित आकार विकल्पों पर ध्यान केंद्रित किया जाएगा। 
 
-## चरण 1: प्रोजेक्ट सेटअप
-1. Visual Studio लॉन्च करें और एक नया C# प्रोजेक्ट बनाएं।
-2. Aspose.Words for .NET लाइब्रेरी में संदर्भ जोड़ें।
+## आवश्यक शर्तें
 
-## चरण 2: दस्तावेज़ बनाना और दस्तावेज़ जनरेटर को आरंभ करना
-दस्तावेज़ और दस्तावेज़ जनरेटर के साथ वर्ड्स प्रोसेसिंग शुरू करने के लिए, इन चरणों का पालन करें:
+ट्यूटोरियल में आगे बढ़ने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
+
+1.  Aspose.Words for .NET: सुनिश्चित करें कि आपके विकास परिवेश में Aspose.Words for .NET स्थापित है। आप इसे डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/net/).
+
+2. .NET विकास वातावरण: Visual Studio जैसे .NET विकास वातावरण की स्थापना करें।
+
+3. C# का बुनियादी ज्ञान: C# प्रोग्रामिंग से परिचित होने से आपको कोड स्निपेट और उदाहरणों को बेहतर ढंग से समझने में मदद मिलेगी।
+
+4.  Aspose.Words दस्तावेज़ीकरण: देखें[Aspose.Words दस्तावेज़ीकरण](https://reference.aspose.com/words/net/) विस्तृत API जानकारी और आगे पढ़ने के लिए.
+
+## नामस्थान आयात करें
+
+कोडिंग शुरू करने से पहले, आपको अपने C# प्रोजेक्ट में आवश्यक नेमस्पेस आयात करने होंगे:
 
 ```csharp
-// आपके दस्तावेज़ निर्देशिका का पथ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// दस्तावेज़ निर्माण
+ये नामस्थान Aspose.Words और टेबल ऑब्जेक्ट की मुख्य कार्यात्मकताओं तक पहुंच प्रदान करते हैं, जिससे आप दस्तावेज़ तालिकाओं में हेरफेर कर सकते हैं।
+
+आइए विभिन्न पसंदीदा चौड़ाई सेटिंग्स के साथ तालिका बनाने की प्रक्रिया को स्पष्ट, प्रबंधनीय चरणों में विभाजित करें।
+
+## चरण 1: दस्तावेज़ और दस्तावेज़बिल्डर को आरंभ करें
+
+शीर्षक: नया दस्तावेज़ और दस्तावेज़बिल्डर बनाना
+
+ स्पष्टीकरण: एक नया वर्ड दस्तावेज़ बनाकर शुरू करें और`DocumentBuilder` उदाहरण.`DocumentBuilder` क्लास आपके दस्तावेज़ में सामग्री जोड़ने का एक सरल तरीका प्रदान करता है।
+
+```csharp
+// दस्तावेज़ को सहेजने के लिए पथ निर्धारित करें.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// एक नया दस्तावेज़ बनाएँ.
 Document doc = new Document();
 
-// दस्तावेज़ जनरेटर आरंभ करें
+// इस दस्तावेज़ के लिए एक दस्तावेज़बिल्डर बनाएँ.
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-"आपकी दस्तावेज़ निर्देशिका" को अपनी दस्तावेज़ निर्देशिका के वास्तविक पथ से प्रतिस्थापित करना सुनिश्चित करें।
+ यहां, आप उस निर्देशिका को निर्दिष्ट करते हैं जहां दस्तावेज़ सहेजा जाएगा और प्रारंभ किया जाएगा`Document`और`DocumentBuilder` वस्तुएं.
 
-## चरण 3: पसंदीदा चौड़ाई के साथ तालिका बनाना
-इसके बाद, हम तीन सेल वाली एक टेबल बनाएंगे जिनकी चौड़ाई अलग-अलग होगी। निम्नलिखित कोड का उपयोग करें:
+## चरण 2: पूर्ण चौड़ाई के साथ पहला टेबल सेल डालें
+
+तालिका में पहले सेल को 40 पॉइंट की निश्चित चौड़ाई के साथ डालें। इससे यह सुनिश्चित होगा कि तालिका के आकार की परवाह किए बिना यह सेल हमेशा 40 पॉइंट की चौड़ाई बनाए रखेगा।
 
 ```csharp
-// तालिका की शुरुआत
-builder. StartTable();
 
-// पूर्ण आकार का सेल डालें
-builder. InsertCell();
+// एक पूर्ण आकार का सेल डालें.
+builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-builder.Writeln("Cell with a width of 40 points");
-
-// सापेक्ष आकार का एक सेल डालें (प्रतिशत में)
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-builder.Writeln("Cell with 20% width");
-
-// स्वतः आकारित सेल सम्मिलित करें
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-builder.Writeln("Auto-size cell. The size of this cell is calculated from the preferred width of the table. In this case, the cell will fill the rest of the available space.");
-
-// तालिका का अंत
-builder. EndTable();
+builder.Writeln("Cell at 40 points width");
 ```
 
-यहाँ हम तीन सेल वाली एक टेबल बनाने के लिए डॉक्यूमेंट बिल्डर का उपयोग करते हैं। पहले सेल की पसंदीदा चौड़ाई 40 पॉइंट है, दूसरे सेल की पसंदीदा चौड़ाई टेबल की चौड़ाई का 20% है, और तीसरे सेल की एक स्वचालित पसंदीदा चौड़ाई है जो समायोजित होती है
+इस चरण में, आप तालिका बनाना शुरू करते हैं और एक पूर्ण चौड़ाई वाला सेल सम्मिलित करते हैं।`PreferredWidth.FromPoints(40)` विधि सेल की चौड़ाई 40 पॉइंट पर सेट करती है, और`Shading.BackgroundPatternColor` एक हल्का पीला पृष्ठभूमि रंग लागू करता है.
 
-  उपलब्ध स्थान के आधार पर।
+## चरण 3: सापेक्ष आकार का सेल डालें
 
-## चरण 4: संशोधित दस्तावेज़ को सहेजना
-अंत में, हमें संशोधित दस्तावेज़ को तालिका कक्षों के लिए परिभाषित पसंदीदा चौड़ाई सेटिंग्स के साथ सहेजना होगा। निम्नलिखित कोड का उपयोग करें:
+तालिका की कुल चौड़ाई का 20% चौड़ाई वाला एक और सेल डालें। यह सापेक्ष आकार सुनिश्चित करता है कि सेल तालिका की चौड़ाई के अनुपात में समायोजित हो।
 
 ```csharp
+// सापेक्ष (प्रतिशत) आकार का सेल डालें.
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
+builder.Writeln("Cell at 20% width");
+```
+
+इस सेल की चौड़ाई तालिका की कुल चौड़ाई की 20% होगी, जिससे इसे विभिन्न स्क्रीन आकारों या दस्तावेज़ लेआउट के अनुकूल बनाया जा सकेगा।
+
+### चरण 4: एक ऑटो आकार सेल डालें
+
+अंत में, एक सेल डालें जो तालिका में शेष उपलब्ध स्थान के आधार पर अपने आप अपना आकार निर्धारित कर ले।
+
+```csharp
+// एक स्वतः आकारित सेल डालें.
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
+builder.Writeln("Cell automatically sized. The size of this cell is calculated from the table preferred width.");
+builder.Writeln("In this case the cell will fill up the rest of the available space.");
+```
+
+`PreferredWidth.Auto` सेटिंग इस सेल को अन्य सेल के हिसाब से बची हुई जगह के आधार पर विस्तार या संकुचन करने की अनुमति देती है। यह सुनिश्चित करता है कि टेबल लेआउट संतुलित और पेशेवर दिखे।
+
+## चरण 5: दस्तावेज़ को अंतिम रूप दें और सहेजें
+
+एक बार जब आप अपनी सभी कोशिकाएं सम्मिलित कर लें, तो तालिका को पूरा करें और दस्तावेज़ को अपने निर्दिष्ट पथ पर सहेजें।
+
+```csharp
+// दस्तावेज़ सहेजें.
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-आउटपुट दस्तावेज़ के लिए सही पथ और फ़ाइल नाम निर्दिष्ट करना सुनिश्चित करें।
-
-### .NET के लिए Aspose.Words का उपयोग करके पसंदीदा चौड़ाई सेटिंग्स के लिए नमूना स्रोत कोड 
-
-```csharp
-	// आपके दस्तावेज़ निर्देशिका का पथ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// तीन कक्षों से बनी एक तालिका पंक्ति डालें जिनकी अलग-अलग पसंदीदा चौड़ाई हो।
-	builder.StartTable();
-	// एक पूर्ण आकार का सेल डालें.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-	builder.Writeln("Cell at 40 points width");
-	// सापेक्ष (प्रतिशत) आकार का सेल डालें.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-	builder.Writeln("Cell at 20% width");
-	// एक स्वतः आकार का सेल डालें.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-	builder.Writeln(
-		"Cell automatically sized. The size of this cell is calculated from the table preferred width.");
-	builder.Writeln("In this case the cell will fill up the rest of the available space.");
-	doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
-```
+यह चरण तालिका को अंतिम रूप देता है और दस्तावेज़ को "WorkingWithTables.PreferredWidthSettings.docx" फ़ाइल नाम के साथ आपकी निर्दिष्ट निर्देशिका में सहेजता है।
 
 ## निष्कर्ष
-इस ट्यूटोरियल में, हमने सीखा कि Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में टेबल सेल के लिए पसंदीदा चौड़ाई सेटिंग कैसे सेट करें। इस चरण-दर-चरण मार्गदर्शिका का पालन करके और प्रदान किए गए C# कोड को लागू करके, आप अपने Word दस्तावेज़ों में अपनी विशिष्ट आवश्यकताओं के अनुसार अपनी टेबल सेल की चौड़ाई को अनुकूलित कर सकते हैं।
+
+Aspose.Words for .NET में पसंदीदा चौड़ाई सेटिंग के साथ टेबल बनाना एक बार जब आप उपलब्ध विभिन्न आकार विकल्पों को समझ लेते हैं तो यह बहुत आसान हो जाता है। चाहे आपको निश्चित, सापेक्ष या स्वचालित सेल चौड़ाई की आवश्यकता हो, Aspose.Words विभिन्न टेबल लेआउट परिदृश्यों को कुशलतापूर्वक संभालने के लिए लचीलापन प्रदान करता है। इस गाइड में बताए गए चरणों का पालन करके, आप यह सुनिश्चित कर सकते हैं कि आपकी टेबल आपके Word दस्तावेज़ों में अच्छी तरह से संरचित और दिखने में आकर्षक हों।
+
+## अक्सर पूछे जाने वाले प्रश्न
+
+### निरपेक्ष और सापेक्ष सेल चौड़ाई के बीच क्या अंतर है?
+पूर्ण कक्ष चौड़ाई निश्चित होती है और बदलती नहीं है, जबकि सापेक्ष चौड़ाई तालिका की कुल चौड़ाई के आधार पर समायोजित होती है।
+
+### क्या मैं सापेक्ष चौड़ाई के लिए ऋणात्मक प्रतिशत का उपयोग कर सकता हूँ?
+नहीं, सेल की चौड़ाई के लिए नकारात्मक प्रतिशत मान्य नहीं हैं। केवल सकारात्मक प्रतिशत की अनुमति है।
+
+### ऑटो साइज़िंग सुविधा कैसे काम करती है?
+स्वचालित आकार निर्धारण, अन्य कक्षों के आकार निर्धारण के बाद तालिका में शेष बचे स्थान को भरने के लिए कक्ष की चौड़ाई को समायोजित करता है।
+
+### क्या मैं अलग-अलग चौड़ाई सेटिंग वाले कक्षों पर अलग-अलग शैलियाँ लागू कर सकता हूँ?
+हां, आप कक्षों पर उनकी चौड़ाई सेटिंग की परवाह किए बिना विभिन्न शैलियाँ और स्वरूपण लागू कर सकते हैं।
+
+### यदि तालिका की कुल चौड़ाई सभी कक्षों की चौड़ाई के योग से कम है तो क्या होगा?
+तालिका उपलब्ध स्थान में फिट होने के लिए कोशिकाओं की चौड़ाई को स्वचालित रूप से समायोजित कर देगी, जिसके कारण कुछ कोशिकाएं छोटी हो सकती हैं।

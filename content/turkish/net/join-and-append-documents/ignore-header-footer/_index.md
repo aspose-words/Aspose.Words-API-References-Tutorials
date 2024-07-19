@@ -109,7 +109,7 @@ Aspose.Words for .NET ile çalışmak, belge işleme iş akışlarınızı önem
 
 ### Belgenin üstbilgi ve altbilgilerin yanı sıra diğer bölümlerini de göz ardı edebilir miyim?
 
-Evet, Aspose.Words farklı bölümleri ve formatlamayı göz ardı etmek de dahil olmak üzere içe aktarma sürecini özelleştirmek için çeşitli seçenekler sunar.
+Evet, Aspose.Words farklı bölümleri ve formatlamayı göz ardı etmek de dahil olmak üzere içe aktarma işlemini özelleştirmek için çeşitli seçenekler sunar.
 
 ### Üstbilgileri ve altbilgileri göz ardı etmek yerine onları korumak mümkün müdür?
 

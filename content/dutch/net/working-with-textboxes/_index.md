@@ -7,7 +7,7 @@ type: docs
 weight: 1320
 url: /nl/net/working-with-textboxes/
 ---
-Woordenverwerking met tekstvakken is een uitgebreide bron die u stap voor stap door de woordenverwerking met tekstvakken in Word-documenten leidt met behulp van de Aspose.Words-bibliotheek voor .NET. In de tutorials leert u hoe u tekstvakken kunt toevoegen, wijzigen en verwijderen, hoe u ze kunt positioneren en hoe u hun grootte, stijl en eigenschappen kunt definiëren. U leert ook hoe u de inhoud in tekstvakken beheert, inclusief het toevoegen en bewerken van tekst, het toevoegen van lijsten, tabellen en andere items. Deze hulpbron is essentieel voor ontwikkelaars die tekstvakken in Word-documenten willen manipuleren met Aspose.Words voor .NET, waardoor meer flexibiliteit en maatwerk wordt geboden bij het maken van professionele documenten.
+Woordenverwerking met tekstvakken is een uitgebreide hulpbron die u stap voor stap meeneemt door Woordenverwerking met tekstvakken in Word-documenten met behulp van de Aspose.Words-bibliotheek voor .NET. In de tutorials leert u hoe u tekstvakken kunt toevoegen, wijzigen en verwijderen, hoe u ze kunt positioneren en hoe u hun grootte, stijl en eigenschappen kunt definiëren. U leert ook hoe u de inhoud in tekstvakken beheert, inclusief het toevoegen en bewerken van tekst, het toevoegen van lijsten, tabellen en andere items. Deze bron is essentieel voor ontwikkelaars die tekstvakken in Word-documenten willen manipuleren met Aspose.Words voor .NET, waardoor meer flexibiliteit en maatwerk wordt geboden bij het maken van professionele documenten.
 
  ## Handleidingen
 | Titel | Beschrijving |

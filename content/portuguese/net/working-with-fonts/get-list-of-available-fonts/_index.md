@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Etapa 2: configurar fontes de fontes
- seguir, criaremos uma instância de`FontSettings` e obtenha as fontes de fontes existentes usando o`GetFontsSources()` método. Também adicionaremos uma nova fonte de fonte especificando uma pasta que contém as fontes.
+ A seguir, criaremos uma instância de`FontSettings` e obtenha as fontes de fontes existentes usando o`GetFontsSources()` método. Também adicionaremos uma nova fonte de fonte especificando uma pasta que contém as fontes.
 
 ```csharp
 // Configurar fontes de fontes

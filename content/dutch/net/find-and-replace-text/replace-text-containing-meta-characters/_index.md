@@ -84,7 +84,7 @@ In deze code vervangen we de tekst 'sectie' gevolgd door een alinea-einde (`&p`)
 
 ## Stap 5: Sectie-einden invoegen
 
-Vervolgens vervangen we een aangepaste teksttag door een sectie-einde. Het is alsof je een tijdelijke aanduiding vervangt door iets functioneler.
+Vervolgens vervangen we een aangepaste teksttag door een sectie-einde. Het is alsof je een tijdelijke aanduiding vervangt door iets functionelers.
 
 ```csharp
 // Voeg een sectie-einde in in plaats van een aangepaste teksttag.
@@ -93,7 +93,7 @@ count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
  Hier,`{insert-section}` wordt vervangen door een sectie-einde (`&b`).
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Laten we tot slot ons harde werk bewaren. Zie dit als het drukken op 'Opslaan' op je meesterwerk.
 

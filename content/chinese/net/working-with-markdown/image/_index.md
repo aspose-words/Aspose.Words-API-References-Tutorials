@@ -2,17 +2,37 @@
 title: 图像
 linktitle: 图像
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 分步指南插入和自定义图像。
+description: 通过本分步指南了解如何使用 Aspose.Words for .NET 将图像添加到您的文档中。立即使用视觉效果增强您的文档。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/image/
 ---
+## 介绍
 
-在此示例中，我们将解释如何使用 Aspose.Words for .NET 的图像功能。图片允许您将插图和图形插入文档。
+您准备好深入了解 Aspose.Words for .NET 的世界了吗？今天，我们将探索如何将图像添加到您的文档中。无论您是在编写报告、小册子，还是只是为简单的文档增添色彩，添加图像都会带来巨大的变化。那么，让我们开始吧！
 
-## 步骤 1：使用文档生成器
+## 先决条件
 
-首先，我们将使用文档生成器向文档添加内容。
+在我们进入代码之前，让我们确保您拥有所需的一切：
+
+1.  Aspose.Words for .NET：您可以从[Aspose 网站](https://releases.aspose.com/words/net/).
+2. 开发环境：任何 .NET 开发环境，如 Visual Studio。
+3. C# 基础知识：如果您熟悉 C#，那么就可以开始了！
+
+## 导入命名空间
+
+首先，让我们导入必要的命名空间。这对于访问 Aspose.Words 类和方法至关重要。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+现在，让我们将流程分解为简单的步骤。每个步骤都会有一个标题和详细的说明，以确保您顺利完成。
+
+## 步骤 1：初始化 DocumentBuilder
+
+首先，你需要创建一个`DocumentBuilder`对象。此对象将帮助您向文档添加内容。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
@@ -20,57 +40,39 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 第 2 步：插入图片
 
-我们可以使用`Shape`类并指定图像的类型，这里`ShapeType.Image`。我们还将图像的环绕类型设置为`WrapType.Inline`.
+接下来，您需要将图像插入文档。操作方法如下：
 
 ```csharp
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape. WrapType = WrapType. Inline;
+Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
-## 步骤 3：图像自定义
+代替`"path_to_your_image.jpg"`替换为图像文件的实际路径。`InsertImage`方法会将图像添加到您的文档中。
 
-我们通过指定其完整路径来定制图像，例如`"/attachment/1456/pic001.png"`，并为图像添加标题。
+## 步骤 3：设置图像属性
+
+您可以为图像设置各种属性。例如，让我们设置图像的标题：
 
 ```csharp
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "Title";
+shape.ImageData.Title = "Your Image Title";
 ```
 
-### 使用 Aspose.Words for .NET 的图像示例源代码
+## 结论
 
-```csharp
-//使用文档生成器向文档添加内容。
-DocumentBuilder builder = new DocumentBuilder();
+将图像添加到文档中可以大大增强其视觉吸引力和有效性。使用 Aspose.Words for .NET，此过程变得简单而高效。通过遵循上述步骤，您可以轻松地将图像集成到文档中，并将您的文档创建技能提升到一个新的水平。
 
-//插入图片。
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape.WrapType = WrapType.Inline;
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "title";
-builder.InsertNode(shape);
-```
+## 常见问题解答
 
-恭喜！现在您已经了解了如何使用 Aspose.Words for .NET 的图像功能。
+### 我可以将多张图片添加到一个文档中吗？  
+是的，你可以添加任意数量的图片，只需重复`InsertImage`方法。
 
+### Aspose.Words for .NET 支持哪些图像格式？  
+Aspose.Words 支持各种图像格式，包括 JPEG、PNG、BMP、GIF 等。
 
-### 常见问题解答
+### 我可以调整文档中图像的大小吗？  
+当然可以！您可以设置`Shape`对象来调整图像大小。
 
-#### 问：如何将本地文件中的图像插入 Aspose.Words？
+### 可以从 URL 添加图像吗？  
+是的，您可以通过在`InsertImage`方法。
 
-答：要将本地文件中的图像插入 Aspose.Words，您可以使用`Shape`类和`InsertImage`方法。
-
-#### 问：我可以从 Aspose.Words 中的 URL 插入图像吗？
-
-答：是的，您可以在 Aspose.Words 中从 URL 插入图像。您可以使用相同的`InsertImage`方法并指定图像URL而不是本地文件路径。
-
-#### 问：如何在 Aspose.Words 中调整图像大小？
-
-答：要在 Aspose.Words 中调整图像大小，您可以使用`Width`和`Height`的属性`Shape`目的。
-
-#### 问：我可以在 Aspose.Words 中对图像应用过滤器吗？
-
-答：是的，您可以在 Aspose.Words 中将滤镜应用于图像。例如，您可以使用`ApplyGaussianBlur`方法`Shape`目的。
-
-#### 问：如何在 Aspose.Words 中用另一幅图像替换一幅图像？
-
-答：要在 Aspose.Words 中将一个图像替换为另一个图像，您可以使用`Replace`方法`Shape`类。此方法将作为参数`Shape`要替换的图像的对象和`Shape`新图像的对象。
+### 如何获得 Aspose.Words for .NET 的免费试用版？  
+您可以从[Aspose 网站](https://releases.aspose.com/).

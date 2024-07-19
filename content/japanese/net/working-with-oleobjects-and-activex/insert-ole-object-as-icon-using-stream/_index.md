@@ -115,7 +115,7 @@ A. 文書をファイルに保存するには、`Save`宛先パスを指定す�
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-#### Q. ストリームから OLE オブジェクトをアイコンとして挿入するコードをプロジェクトに埋め込むにはどうすればよいですか?
+#### Q. ストリームから OLE オブジェクトをアイコンとして挿入するコードをプロジェクトに埋め込むにはどうすればよいでしょうか?
 
 A. ストリームから OLE オブジェクトをアイコンとしてプロジェクトに挿入するコードを埋め込むには、次の手順に従います。
 - 適切な参照を追加して必要な参照をインポートします`using`声明。

@@ -16,11 +16,11 @@ W tych samouczkach programiści poznają możliwości inteligencji dokumentów w
 
 ## Usprawnianie procesów przetwarzania dokumentów
 
-Samouczki skupiają się na usprawnianiu procesów przetwarzania dokumentów za pomocą modułu Document Intelligence. Programiści zyskają wgląd w analizę nastrojów, wyodrębnianie słów kluczowych i klasyfikację dokumentów. Włączając technologię Document Intelligence opartą na sztucznej inteligencji, programiści mogą usprawnić przetwarzanie tekstu i przetwarzanie dokumentów, poprawiając produktywność i proces podejmowania decyzji.
+Samouczki skupiają się na usprawnianiu procesów przetwarzania dokumentów za pomocą modułu Document Intelligence. Programiści zyskają wgląd w analizę nastrojów, wyodrębnianie słów kluczowych i klasyfikację dokumentów. Włączając technologię Document Intelligence opartą na sztucznej inteligencji, programiści mogą usprawnić zadania związane z przetwarzaniem tekstów i dokumentów, poprawiając produktywność i proces podejmowania decyzji.
 
 ## Usprawnij zarządzanie dokumentami
 
-Opanowując analizę dokumentów za pomocą Aspose.Words dla Pythona, programiści mogą zwiększyć swoje możliwości zarządzania dokumentami. Samouczki zawierają instrukcje krok po kroku, próbki kodu i praktyczne przykłady, umożliwiające programistom wykorzystanie potencjału analizy dokumentów w celu inteligentniejszego przetwarzania dokumentów i zarządzania nimi w oparciu o dane. Skorzystaj z tych samouczków, aby przekształcić dokumenty w cenne zasoby dla Twojej firmy.
+Opanowując analizę dokumentów za pomocą Aspose.Words dla Pythona, programiści mogą zwiększyć swoje możliwości zarządzania dokumentami. Samouczki zawierają instrukcje krok po kroku, próbki kodu i praktyczne przykłady, umożliwiające programistom wykorzystanie potencjału modułu Document Intelligence w celu inteligentniejszego przetwarzania dokumentów i zarządzania nimi w oparciu o dane. Skorzystaj z tych samouczków, aby przekształcić dokumenty w cenne zasoby dla Twojej firmy.
 
 ## Samouczki dotyczące inteligencji dokumentów w języku Python
 ### [Inteligencja dokumentów głównych](./master-document-intelligence/)

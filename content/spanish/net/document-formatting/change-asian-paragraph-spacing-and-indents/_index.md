@@ -102,8 +102,8 @@ Sí, estas configuraciones se pueden aplicar a cualquier texto, pero son particu
 ### ¿Dónde puedo encontrar más documentación?
  Puede encontrar documentación completa sobre el[Página de documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/).
 
-### ¿Puedo automatizar este proceso para varios documentos?
+### ¿Puedo automatizar este proceso para múltiples documentos?
 ¡Absolutamente! Puede recorrer una colección de documentos y aplicar estas configuraciones mediante programación a cada uno.
 
 ### ¿Qué pasa si tengo problemas o tengo preguntas?
-Si tiene algún problema o tiene más preguntas, el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) es un gran lugar para buscar ayuda.
+ Si tiene algún problema o tiene más preguntas, el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) es un gran lugar para buscar ayuda.

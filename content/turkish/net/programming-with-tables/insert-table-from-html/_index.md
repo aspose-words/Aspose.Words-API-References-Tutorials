@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-tables/insert-table-from-html/
 ---
 
-Bu eğitimde Aspose.Words for .NET kullanarak HTML'den bir Word belgesine nasıl tablo ekleyeceğimizi öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, HTML'den tabloları Word belgelerinize programlı olarak ekleyebileceksiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak HTML'den bir Word belgesine nasıl tablo ekleyeceğimizi öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda HTML'den tabloları Word belgelerinize programlı olarak ekleyebileceksiniz.
 
 ## Adım 1: Proje Kurulumu
 1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.

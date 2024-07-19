@@ -113,7 +113,7 @@ Penjelasan:
 
 ## Kesimpulan
 
-Mengakses dan memanipulasi bookmark di dokumen Word menggunakan Aspose.Words untuk .NET adalah proses sederhana yang dapat meningkatkan kemampuan pemrosesan dokumen Anda secara signifikan. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat dengan mudah memuat dokumen, mengakses bookmark berdasarkan indeks atau nama, memanipulasi konten bookmark, menambahkan bookmark baru, dan menyimpan perubahan Anda. Baik Anda mengotomatiskan laporan, membuat dokumen dinamis, atau hanya memerlukan cara yang andal untuk menangani bookmark, Aspose.Words untuk .NET siap membantu Anda.
+Mengakses dan memanipulasi bookmark di dokumen Word menggunakan Aspose.Words untuk .NET adalah proses sederhana yang dapat meningkatkan kemampuan pemrosesan dokumen Anda secara signifikan. Dengan mengikuti langkah-langkah yang dijelaskan dalam panduan ini, Anda dapat dengan mudah memuat dokumen, mengakses bookmark berdasarkan indeks atau nama, memanipulasi konten bookmark, menambahkan bookmark baru, dan menyimpan perubahan Anda. Baik Anda mengotomatiskan laporan, membuat dokumen dinamis, atau hanya memerlukan cara yang andal untuk menangani bookmark, Aspose.Words untuk .NET siap membantu Anda.
 
 ## FAQ
 

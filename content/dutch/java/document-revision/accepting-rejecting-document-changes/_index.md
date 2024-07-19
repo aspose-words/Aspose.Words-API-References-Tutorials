@@ -10,7 +10,7 @@ url: /nl/java/document-revision/accepting-rejecting-document-changes/
 
 ## Inleiding tot Aspose.Words voor Java
 
-Aspose.Words voor Java is een robuuste bibliotheek waarmee Java-ontwikkelaars eenvoudig Word-documenten kunnen maken, manipuleren en converteren. Een van de belangrijkste kenmerken is de mogelijkheid om met documentwijzigingen te werken, waardoor het een hulpmiddel van onschatbare waarde is voor het gezamenlijk bewerken van documenten.
+Aspose.Words voor Java is een robuuste bibliotheek waarmee Java-ontwikkelaars gemakkelijk Word-documenten kunnen maken, manipuleren en converteren. Een van de belangrijkste kenmerken is de mogelijkheid om met documentwijzigingen te werken, waardoor het een hulpmiddel van onschatbare waarde is voor het gezamenlijk bewerken van documenten.
 
 ## Documentwijzigingen begrijpen
 
@@ -64,7 +64,7 @@ doc.rejectRevision(1);
 
 ## Het document opslaan
 
-Na het accepteren of afwijzen van wijzigingen is het van cruciaal belang om het document met de gewenste wijzigingen op te slaan:
+Na het accepteren of afwijzen van wijzigingen is het cruciaal om het document met de gewenste wijzigingen op te slaan:
 
 ```java
 // Sla het gewijzigde document op

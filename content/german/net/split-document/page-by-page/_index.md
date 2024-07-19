@@ -15,7 +15,7 @@ In diesem Tutorial zeigen wir Ihnen, wie Sie ein Word-Dokument mithilfe der Doku
 Geben Sie zunächst das Verzeichnis für Ihr Dokument an und laden Sie das Dokument in ein Dokumentobjekt. So geht's:
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
+//Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

@@ -45,7 +45,7 @@ sdt.Clear();
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
 ```
 
-### Exemple de code source pour Clear Contents Control à l’aide d’Aspose.Words pour .NET 
+### Exemple de code source pour Clear Contents Control à l’aide d’Aspose.Words for .NET 
 
 ```csharp
 	// Chemin d'accès à votre répertoire de documents

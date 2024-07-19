@@ -111,7 +111,7 @@ builder.Writeln("This is a bookmark.");
 
 En dat is het! U bent met succes naar het einde van een bladwijzer gegaan en daar tekst ingevoegd.
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 
 Vergeet ten slotte niet uw wijzigingen op te slaan:
@@ -142,7 +142,7 @@ Daar heb je het! U hebt zojuist geleerd hoe u naar het einde van een bladwijzer 
 
 ### 4. Hoe krijg ik een tijdelijke licentie voor Aspose.Words?
 
- U kunt een tijdelijke licentie verkrijgen bij de[Aspose-website](https://purchase.aspose.com/temporary-license/).
+ U kunt een tijdelijke licentie aanvragen bij de[Aspose-website](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Is Aspose.Words voor .NET gratis?
 

@@ -140,7 +140,7 @@ public void convertShapeToOfficeMath() throws Exception {
 }
 @Test
 public void setMsWordVersion() throws Exception {
-	// Cree un nuevo objeto LoadOptions, que cargará documentos de acuerdo con la especificación de MS Word 2019 de forma predeterminada.
+	// Cree un nuevo objeto LoadOptions, que cargará documentos de acuerdo con la especificación MS Word 2019 de forma predeterminada.
 	// y cambie la versión de carga a Microsoft Word 2010.
 	LoadOptions loadOptions = new LoadOptions();
 	{

@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 
-I den här handledningen kommer vi att lära oss hur du hämtar den föredragna breddtypen och dess värde från en tabellcell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna hämta önskad breddtyp (absolut, relativ eller automatisk) och dess värde för en specifik cell i dina Word-dokumenttabeller.
+den här handledningen kommer vi att lära oss hur du hämtar den föredragna breddtypen och dess värde från en tabellcell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna hämta önskad breddtyp (absolut, relativ eller automatisk) och dess värde för en specifik cell i dina Word-dokumenttabeller.
 
 ## Steg 1: Projektinställning
 1. Starta Visual Studio och skapa ett nytt C#-projekt.
@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Aktivera automatisk bordsjustering
 table. AllowAutoFit = true;
 
-//Hämta den första cellen i den första raden
+// Hämta den första cellen i den första raden
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Hämta önskad breddtyp och dess värde
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
- Här använder vi dokumentet för att hämta den första tabellen, sedan aktiverar vi automatisk tabellpassning med`AllowAutoFit` fast egendom. Sedan hämtar vi den första cellen i den första raden i tabellen. Från denna cell kan vi hämta den föredragna breddtypen med`PreferredWidth.Type` egendom och dess värde med`PreferredWidth.Value` fast egendom.
+Här använder vi dokumentet för att hämta den första tabellen, sedan aktiverar vi automatisk tabellpassning med`AllowAutoFit` fast egendom. Sedan hämtar vi den första cellen i den första raden i tabellen. Från denna cell kan vi hämta den föredragna breddtypen med`PreferredWidth.Type` egendom och dess värde med`PreferredWidth.Value` fast egendom.
 
 ### Exempel på källkod för Hämta önskad breddtyp med Aspose.Words för .NET 
 

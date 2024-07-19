@@ -82,7 +82,7 @@ J: Untuk menyematkan semua font dalam dokumen PDF menggunakan Aspose.Words untuk
  Simpan dokumen dalam format PDF dengan font tertanam menggunakan`Save` metode`Document`objek, menentukan nama file keluaran dan opsi penyimpanan yang dikonfigurasi sebelumnya.
 
 #### T: Mengapa penting untuk menyematkan semua font dalam dokumen PDF?
-J: Menyematkan semua font dalam dokumen PDF penting untuk memastikan bahwa dokumen akan ditampilkan dengan benar, meskipun font tertentu tidak tersedia di sistem tempat PDF dibuka. Hal ini membantu menjaga tampilan, pemformatan, dan keterbacaan dokumen, memastikan bahwa font yang digunakan ditampilkan secara konsisten di berbagai perangkat dan platform.
+J: Menyematkan semua font dalam dokumen PDF penting untuk memastikan bahwa dokumen akan ditampilkan dengan benar, meskipun font yang ditentukan tidak tersedia di sistem tempat PDF dibuka. Hal ini membantu menjaga tampilan, pemformatan, dan keterbacaan dokumen, memastikan bahwa font yang digunakan ditampilkan secara konsisten di berbagai perangkat dan platform.
 
 #### T: Apa manfaat menyematkan font dalam dokumen PDF?
 A: Keuntungan menyematkan font pada dokumen PDF adalah:

@@ -88,7 +88,7 @@ Tak, dzięki Aspose.Words dla Java możesz tworzyć tabele ze scalonymi komórka
 
 Aspose.Words dla Java zapewnia szeroką gamę opcji formatowania tabel, komórek, wierszy i kolumn. Możesz ustawić style czcionek, kolory tła, obramowania i wyrównanie, aby uzyskać pożądany wygląd stołu.
 
-### 3. Czy mogę wyeksportować wygenerowaną tabelę do różnych formatów?
+### 3. Czy mogę wyeksportować wygenerowaną tabelę do innych formatów?
 
 Absolutnie! Aspose.Words for Java obsługuje eksportowanie dokumentów Word do różnych formatów, w tym PDF, HTML, XPS i innych. Możesz łatwo przekonwertować wygenerowaną tabelę na żądany format, korzystając z dostępnych opcji eksportu.
 

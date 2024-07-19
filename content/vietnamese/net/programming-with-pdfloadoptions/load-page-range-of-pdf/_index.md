@@ -15,7 +15,7 @@ Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách tải m�
 Sử dụng mã sau để tải một phạm vi trang cụ thể từ tài liệu PDF:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
+//Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };

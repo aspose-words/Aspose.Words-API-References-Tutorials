@@ -22,7 +22,7 @@ Sebelum kita mendalami pengelolaan izin dokumen, mari kita mulai dengan menyiapk
 
 3. Sertakan Aspose.Words dalam Proyek Anda: Tambahkan Aspose.Words untuk Java ke proyek Java Anda sebagai ketergantungan.
 
-Sekarang kita sudah menjalankan Aspose.Words untuk Java, mari kita jelajahi cara mengelola izin dokumen.
+Sekarang setelah Aspose.Words untuk Java aktif dan berjalan, mari kita jelajahi cara mengelola izin dokumen.
 
 ## Memahami Izin Dokumen
 

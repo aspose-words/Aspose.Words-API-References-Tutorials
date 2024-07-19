@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
 
-Cet article fournit un guide étape par étape sur la façon d'utiliser la fonctionnalité d'incorporation de polices dans un document PDF d'Aspose.Words for .NET. Nous allons parcourir l'extrait de code et expliquer chaque partie en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment intégrer toutes les polices dans un document et générer un PDF avec les polices intégrées à l'aide d'Aspose.Words pour .NET.
+Cet article fournit un guide étape par étape sur la façon d'utiliser la fonctionnalité d'incorporation de polices dans un document PDF d'Aspose.Words pour .NET. Nous allons parcourir l'extrait de code et expliquer chaque partie en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment intégrer toutes les polices dans un document et générer un PDF avec les polices intégrées à l'aide d'Aspose.Words pour .NET.
 
 Avant de commencer, assurez-vous que la bibliothèque Aspose.Words for .NET est installée et configurée dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
 

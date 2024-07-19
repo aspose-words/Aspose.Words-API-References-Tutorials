@@ -119,4 +119,4 @@ doc.save("FormattedDocument.doc");
 
 ### هل Aspose.Words for Java متوافق مع بيئة Java IDEs المختلفة؟
 
-نعم، Aspose.Words for Java متوافق مع العديد من بيئات التطوير المتكاملة لـ Java (IDEs) مثل Eclipse وIntelliJ IDEA وNetBeans. يمكنك دمجه في IDE المفضل لديك لتبسيط مهام معالجة المستندات الخاصة بك.
+نعم، يتوافق Aspose.Words for Java مع العديد من بيئات التطوير المتكاملة لـ Java (IDEs) مثل Eclipse وIntelliJ IDEA وNetBeans. يمكنك دمجه في IDE المفضل لديك لتبسيط مهام معالجة المستندات الخاصة بك.

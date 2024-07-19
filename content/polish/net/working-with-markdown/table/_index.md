@@ -2,52 +2,67 @@
 title: Tabela
 linktitle: Tabela
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak utworzyć tabelę za pomocą Aspose.Words dla .NET Przewodnik krok po kroku.
+description: Dowiedz się, jak tworzyć i dostosowywać tabele w Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny do generowania uporządkowanych i atrakcyjnych wizualnie dokumentów.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/table/
 ---
+## Wstęp
 
+Praca z tabelami w dokumentach jest powszechnym wymaganiem. Niezależnie od tego, czy generujesz raporty, faktury, czy jakiekolwiek dane strukturalne, tabele są niezbędne. W tym samouczku przeprowadzę Cię przez proces tworzenia i dostosowywania tabel przy użyciu Aspose.Words dla .NET. Zanurzmy się!
 
-W tym przykładzie przeprowadzimy Cię przez proces tworzenia tabeli przy użyciu Aspose.Words dla .NET. Tabela to struktura danych organizująca informacje w wiersze i kolumny.
+## Warunki wstępne
 
-## Krok 1: Korzystanie z generatora dokumentów
+Zanim zaczniemy, upewnij się, że spełniasz następujące wymagania wstępne:
 
-Najpierw użyjemy generatora dokumentów, aby dodać treść do naszego dokumentu.
+- Visual Studio: Do pisania i testowania kodu potrzebne jest środowisko programistyczne. Visual Studio to dobry wybór.
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli go nie masz, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+- Podstawowa znajomość języka C#: Aby kontynuować, konieczna jest pewna znajomość programowania w języku C#.
+
+## Importuj przestrzenie nazw
+
+Zanim przejdziemy do kolejnych kroków, zaimportujmy niezbędne przestrzenie nazw:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
+
+Na początek musimy utworzyć nowy dokument i zainicjować klasę DocumentBuilder, która pomoże nam w konstrukcji naszej tabeli.
+
+```csharp
+// Zainicjuj program DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
+Ten krok przypomina konfigurowanie przestrzeni roboczej. Masz gotowy pusty dokument i długopis.
 
-## Krok 2: Dodaj komórki i dane
+## Krok 2: Zacznij budować swój stół
 
- Komórki i dane dodamy do naszej tabeli za pomocą metody`InsertCell` metoda i`Writeln` metoda generatora dokumentów.
-
-```csharp
-builder. InsertCell();
-builder.Writeln("a");
-builder. InsertCell();
-builder.Writeln("b");
-
-builder. InsertCell();
-builder.Writeln("c");
-builder. InsertCell();
-builder.Writeln("d");
-```
-
-### Przykładowy kod źródłowy do tworzenia tabeli za pomocą Aspose.Words dla .NET
+Teraz, gdy mamy już narzędzia, zacznijmy budować stół. Zaczniemy od wstawienia pierwszej komórki pierwszego wiersza.
 
 ```csharp
-// Użyj narzędzia do tworzenia dokumentów, aby dodać treść do dokumentu.
-DocumentBuilder builder = new DocumentBuilder();
-
 // Dodaj pierwszy rząd.
 builder.InsertCell();
 builder.Writeln("a");
+
+// Wstaw drugą komórkę.
 builder.InsertCell();
 builder.Writeln("b");
 
+// Zakończ pierwszy rząd.
+builder.EndRow();
+```
+
+Pomyśl o tym kroku jak o narysowaniu pierwszego rzędu tabeli na kartce papieru i wypełnieniu pierwszych dwóch komórek literami „a” i „b”.
+
+## Krok 3: Dodaj więcej wierszy
+
+Dodajmy kolejny wiersz do naszej tabeli.
+
+```csharp
 // Dodaj drugi rząd.
 builder.InsertCell();
 builder.Writeln("c");
@@ -55,26 +70,25 @@ builder.InsertCell();
 builder.Writeln("d");
 ```
 
-Gratulacje! Nauczyłeś się teraz, jak utworzyć tabelę za pomocą Aspose.Words dla .NET.
+Tutaj po prostu rozszerzamy naszą tabelę, dodając kolejny wiersz z dwiema komórkami wypełnionymi „c” i „d”.
 
-### Często zadawane pytania
+## Wniosek
 
-#### P: Jak utworzyć tabelę w Markdown?
+Tworzenie i dostosowywanie tabel w Aspose.Words dla .NET jest proste, gdy już to zrozumiesz. Wykonując poniższe kroki, możesz generować w swoich dokumentach uporządkowane i atrakcyjne wizualnie tabele. Miłego kodowania!
 
-O: Aby utworzyć tabelę w Markdown, użyj składni potoków (`|`), aby rozdzielić komórki i myślniki (`-`), aby rozgraniczyć nagłówki tabeli.
+## Często zadawane pytania
 
-#### P: Czy możemy dostosować wygląd tabeli w Markdown?
+### Czy mogę dodać więcej niż dwie komórki z rzędu?
+ Tak, możesz dodać dowolną liczbę komórek z rzędu, powtarzając`InsertCell()`I`Writeln()` metody.
 
-Odp.: W standardowym Markdown opcje dostosowywania tabeli są ograniczone. Jednak niektóre edytory Markdown umożliwiają dodawanie stylów CSS do tabel w celu dostosowania ich wyglądu.
+### Jak scalić komórki w tabeli?
+ Możesz łączyć komórki za pomocą`CellFormat.HorizontalMerge`I`CellFormat.VerticalMerge` nieruchomości.
 
-#### P: Jak scalić komórki w tabeli w Markdown?
+### Czy można dodawać obrazy do komórek tabeli?
+ Absolutnie! Możesz wstawiać obrazy do komórek za pomocą`DocumentBuilder.InsertImage` metoda.
 
-Odp.: Łączenie komórek w tabeli w Markdown zależy od używanego edytora Markdown. Niektóre edytory Markdown obsługują łączenie komórek przy użyciu określonej składni.
+### Czy mogę inaczej stylizować poszczególne komórki?
+ Tak, możesz zastosować różne style do poszczególnych komórek, uzyskując do nich dostęp za pośrednictwem`Cells` zbiór rzędu.
 
-#### P: Czy tabele w Markdown obsługują stylizację CSS?
-
-O: W standardowym Markdown tabele nie oferują bezpośredniej obsługi stylów CSS. Jednak niektóre edytory Markdown umożliwiają dodawanie stylów CSS do tabel w celu dostosowania ich wyglądu.
-
-#### P: Czy w komórkach tabeli w Markdown możemy dodawać linki lub tekst w formacie inline?
-
-O: Tak, możesz dodawać łącza lub tekst osadzony do komórek tabeli w Markdown, używając odpowiedniej składni Markdown.
+### Jak usunąć obramowania ze stołu?
+ Możesz usunąć obramowania, ustawiając styl obramowania na`LineStyle.None` dla każdego typu obramowania.

@@ -12,7 +12,7 @@ Ten artykuł zawiera przewodnik krok po kroku dotyczący korzystania z funkcji o
 
 Zanim zaczniemy, upewnij się, że masz zainstalowaną i skonfigurowaną bibliotekę Aspose.Words for .NET w swoim projekcie. Bibliotekę i instrukcje instalacji można znaleźć na stronie internetowej Aspose.
 
-## Krok 1: Zdefiniuj ścieżkę katalogu dokumentów
+## Krok 1: Zdefiniuj ścieżkę katalogu dokumentu
 
  Aby rozpocząć, musisz zdefiniować ścieżkę do katalogu, w którym znajdują się Twoje dokumenty. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
 

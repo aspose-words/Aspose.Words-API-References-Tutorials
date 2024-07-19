@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Krok 3: Usuń zawartość sekcji
-Aby wyczyścić zawartość sekcji, użyjemy sekcji`ClearContent` metoda.
+ Aby wyczyścić zawartość sekcji, użyjemy sekcji`ClearContent` metoda.
 
 ```csharp
 section.ClearContent();

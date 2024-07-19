@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## ขั้นตอนที่ 2: เพิ่มสไตล์สำหรับโค้ดที่เยื้อง
 
-เราจะเพิ่มสไตล์ที่กำหนดเองสำหรับโค้ดที่เยื้องโดยใช้`Styles.Add` วิธีการของ`Document` วัตถุ. ในตัวอย่างนี้ เรากำลังสร้างสไตล์ที่เรียกว่า "IndentedCode" สำหรับโค้ดที่มีการเยื้อง
+ เราจะเพิ่มสไตล์ที่กำหนดเองสำหรับโค้ดที่เยื้องโดยใช้`Styles.Add` วิธีการของ`Document` วัตถุ. ในตัวอย่างนี้ เรากำลังสร้างสไตล์ที่เรียกว่า "IndentedCode" สำหรับโค้ดที่มีการเยื้อง
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

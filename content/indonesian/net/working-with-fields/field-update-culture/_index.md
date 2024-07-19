@@ -58,7 +58,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Masukkan kolom waktu.
+// Masukkan bidang waktu.
 builder. InsertField(FieldType.FieldTime, true);
 
 // Konfigurasikan budaya pembaruan lapangan.
@@ -91,7 +91,7 @@ J: Untuk mengatur budaya pembaruan bidang dalam dokumen Word dengan Aspose.Words
 
 J: Aspose.Words mendukung budaya yang berbeda untuk memperbarui bidang. Anda dapat menentukan budaya apa pun yang didukung oleh sistem operasi. Misalnya, "en-US" untuk bahasa Inggris Amerika, "fr-FR" untuk bahasa Prancis, "de-DE" untuk bahasa Jerman, dll.
 
-#### T: Apakah mungkin untuk menetapkan budaya spesifik untuk satu bidang, bukan untuk keseluruhan dokumen?
+#### T: Apakah mungkin untuk menetapkan budaya tertentu untuk satu bidang, bukan untuk keseluruhan dokumen?
 
 J: Ya, dimungkinkan untuk menetapkan budaya spesifik untuk satu bidang, bukan untuk keseluruhan dokumen. Di Aspose.Words, setiap bidang memiliki properti Format yang dapat digunakan untuk mengatur budaya pemformatan khusus untuk bidang tersebut. Ini memungkinkan Anda mengontrol bagaimana bidang ini ditampilkan dan diperbarui secara terpisah dari bidang lain dalam dokumen.
 

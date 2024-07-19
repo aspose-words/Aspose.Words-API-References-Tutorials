@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Activer l'ajustement automatique des tables
 table. AllowAutoFit = true;
 
-//Récupérer la première cellule de la première ligne
+// Récupérer la première cellule de la première ligne
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Récupérer le type de largeur préféré et sa valeur
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
- Ici, nous utilisons le document pour récupérer la première table, puis nous activons l'ajustement automatique de la table avec le`AllowAutoFit` propriété. Ensuite on récupère la première cellule de la première ligne du tableau. A partir de cette cellule, nous pouvons récupérer le type de largeur préféré avec le`PreferredWidth.Type` propriété et sa valeur avec le`PreferredWidth.Value` propriété.
+Ici, nous utilisons le document pour récupérer la première table, puis nous activons l'ajustement automatique de la table avec le`AllowAutoFit` propriété. Ensuite on récupère la première cellule de la première ligne du tableau. A partir de cette cellule, nous pouvons récupérer le type de largeur préféré avec le`PreferredWidth.Type` propriété et sa valeur avec le`PreferredWidth.Value` propriété.
 
 ### Exemple de code source pour récupérer le type de largeur préféré à l’aide d’Aspose.Words pour .NET 
 

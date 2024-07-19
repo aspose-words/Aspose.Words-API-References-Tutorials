@@ -55,7 +55,7 @@ En este ejemplo:
 
 ## Paso 3: cargue el documento
 
- Con sus fuentes de fuentes configuradas, el siguiente paso es cargar su documento en Aspose.Words`Document`objeto. Esto le permite manipular y eventualmente guardar el documento.
+ Con sus fuentes de fuentes configuradas, el siguiente paso es cargar su documento en Aspose.Words`Document` objeto. Esto le permite manipular y eventualmente guardar el documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

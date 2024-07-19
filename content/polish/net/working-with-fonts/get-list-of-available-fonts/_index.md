@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Skonfiguruj źródła czcionek
-Następnie utworzymy instancję`FontSettings` i pobierz istniejące źródła czcionek za pomocą`GetFontsSources()` metoda. Dodamy także nowe źródło czcionek poprzez określenie folderu zawierającego czcionki.
+ Następnie utworzymy instancję`FontSettings` i pobierz istniejące źródła czcionek za pomocą`GetFontsSources()` metoda. Dodamy także nowe źródło czcionek poprzez określenie folderu zawierającego czcionki.
 
 ```csharp
 // Skonfiguruj źródła czcionek

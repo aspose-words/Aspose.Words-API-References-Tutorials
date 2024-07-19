@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2단계: 문서 만들기 및 서식 지정
- 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder` 문서를 작성하는 클래스입니다. 사용`Font` 의 재산`DocumentBuilder`글꼴 서식 속성에 액세스합니다.
+ 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder` 문서를 작성하는 클래스입니다. 사용`Font` 의 재산`DocumentBuilder` 글꼴 서식 속성에 액세스합니다.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## 3단계: 문서 저장
- 사용`Save` 글꼴 서식이 적용된 문서를 저장하는 방법입니다. 바꾸다`"WorkingWithFonts.SetFontFormatting.docx"` 원하는 파일명으로
+ 사용`Save`글꼴 서식이 적용된 문서를 저장하는 방법입니다. 바꾸다`"WorkingWithFonts.SetFontFormatting.docx"` 원하는 파일명으로
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

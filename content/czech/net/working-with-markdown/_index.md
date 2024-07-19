@@ -19,7 +19,7 @@ Words Processing with Markdown poskytuje komplexní zdroj pro výuku, jak pracov
 | [Vložený kód](./inline-code/) | Naučte se vkládat kód pomocí Aspose.Words for .NET Podrobný průvodce. |
 | [Automatické propojení](./autolink/) | Naučte se vkládat automatické odkazy pomocí Aspose.Words for .NET Podrobný průvodce. |
 | [Odkaz](./link/) | Naučte se vkládat odkazy pomocí Aspose.Words pro .NET. Průvodce krok za krokem. |
-| [obraz](./image/) | Naučte se vkládat a přizpůsobovat obrázek pomocí Aspose.Words for .NET Podrobný průvodce. |
+| [obraz](./image/) | Naučte se přidávat obrázky do dokumentů pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Vylepšete své dokumenty pomocí vizuálů během okamžiku. |
 | [Horizontální pravidlo](./horizontal-rule/) | Naučte se vložit vodorovné pravidlo pomocí Aspose.Words for .NET Podrobný průvodce. |
 | [Nadpis](./heading/) | Naučte se používat nadpis s Aspose.Words pro .NET Podrobný průvodce. |
 | [Nadpis setextu](./setext-heading/) | Naučte se používat záhlaví Setext k formátování dokumentů pomocí Aspose.Words for .NET Podrobný průvodce. |
@@ -27,8 +27,8 @@ Words Processing with Markdown poskytuje komplexní zdroj pro výuku, jak pracov
 | [Oplocený kód](./fenced-code/) | Naučte se používat funkci chráněného kódu pomocí Aspose.Words for .NET Podrobný průvodce. |
 | [Citát](./quote/) | Naučte se používat nabídku s Aspose.Words pro .NET Podrobný průvodce. |
 | [Seznam s odrážkami](./bulleted-list/) | Naučte se, jak vytvořit seznam s odrážkami pomocí Aspose.Words for .NET Podrobný průvodce. |
-| [Objednaný seznam](./ordered-list/) | Naučte se, jak vytvořit uspořádaný seznam pomocí Aspose.Words for .NET Podrobný průvodce. |
-| [Stůl](./table/) | Naučte se, jak vytvořit tabulku pomocí Aspose.Words for .NET Podrobný průvodce. |
+| [Objednaný seznam](./ordered-list/) | Naučte se, jak vytvářet uspořádané seznamy v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí našeho podrobného průvodce. Ideální pro automatizaci tvorby dokumentů. |
+| [Stůl](./table/) | Naučte se vytvářet a přizpůsobovat tabulky v Aspose.Words pro .NET pomocí tohoto podrobného průvodce. Ideální pro generování strukturovaných a vizuálně přitažlivých dokumentů. |
 | [Přečtěte si dokument Markdown](./read-markdown-document/) | Naučte se číst dokument markdown pomocí Aspose.Words for .NET Podrobný průvodce. |
 | [Důrazy](./emphases/) | Naučte se používat důrazy (tučné a kurzíva) s Aspose.Words pro .NET Podrobný průvodce. |
-| [Použijte zdroj varování](./use-warning-source/) | Naučte se používat zdroj varování s Aspose.Words for .NET Podrobný průvodce. |
+| [Použijte zdroj varování](./use-warning-source/) | Ovládněte Aspose.Words for .NET pomocí tohoto podrobného průvodce používáním třídy WarningSource pro zpracování varování Markdown. Ideální pro vývojáře v C#. |

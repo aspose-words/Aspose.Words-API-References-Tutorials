@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-node/enumerate-child-nodes/
 ---
 
-dokumentumok programozott kezelése gyerekjáték lehet a megfelelő eszközökkel. Az Aspose.Words for .NET egy olyan hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén kezeljék a Word dokumentumokat. Ma egy Word-dokumentumban lévő gyermekcsomópontok felsorolásának folyamatán fogunk végigmenni az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató az előfeltételektől a gyakorlati példákig mindent lefed, biztosítva, hogy alaposan megértse a folyamatot.
+A dokumentumok programozott kezelése gyerekjáték lehet a megfelelő eszközökkel. Az Aspose.Words for .NET egy olyan hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy könnyedén kezeljék a Word dokumentumokat. Ma egy Word-dokumentumban lévő gyermekcsomópontok felsorolásának folyamatán fogunk végigmenni az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató az előfeltételektől a gyakorlati példákig mindent lefed, biztosítva, hogy alaposan megértse a folyamatot.
 
 ## Előfeltételek
 
@@ -98,7 +98,7 @@ Egy bekezdés tartalmazhat csomópontokat, például futásokat, alakzatokat, me
  Igen, különféle csomóponttípusokat, például alakzatokat, megjegyzéseket és egyebeket módosíthat azok ellenőrzésével`NodeType`.
 
 ### 4. Szükségem van licencre az Aspose.Words for .NET használatához?
- Kezdheti egy ingyenes próbaverzióval, vagy szerezhet ideiglenes licencet[itt](https://purchase.aspose.com/temporary-license/).
+Kezdheti egy ingyenes próbaverzióval, vagy szerezhet ideiglenes licencet[itt](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Hol találok további példákat és dokumentációt?
  Meglátogatni a[Aspose.Words .NET API dokumentációhoz](https://reference.aspose.com/words/net/) további példákért és részletes dokumentációért.

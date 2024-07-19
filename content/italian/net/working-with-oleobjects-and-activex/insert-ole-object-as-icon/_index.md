@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Passaggio 3: inserire un oggetto OLE come icona
- Utilizza il Generatore di documenti`InsertOleObjectAsIcon`metodo per inserire un oggetto OLE come icona nel documento. Specificare il percorso del file OLE, il contrassegno di visualizzazione, il percorso dell'icona e il nome dell'oggetto incorporato.
+ Utilizza il Generatore di documenti`InsertOleObjectAsIcon` metodo per inserire un oggetto OLE come icona nel documento. Specificare il percorso del file OLE, il contrassegno di visualizzazione, il percorso dell'icona e il nome dell'oggetto incorporato.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### D. Come creare un nuovo documento e generatore di documenti in Aspose.Words per .NET?
 
- R: Puoi creare un nuovo documento utilizzando il file`Document` classe e un generatore di documenti che utilizza il file`DocumentBuilder` classe. Ecco un esempio:
+ R: Puoi creare un nuovo documento utilizzando il file`Document` classe e un generatore di documenti che utilizza il file`DocumentBuilder`classe. Ecco un esempio:
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### D. Come salvare il documento con l'oggetto OLE inserito come icona?
 
- R: Usa il documento`Save` metodo per salvare il documento in un file. Ecco un esempio:
+ R: Usa il documento`Save`metodo per salvare il documento in un file. Ecco un esempio:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

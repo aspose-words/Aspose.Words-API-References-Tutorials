@@ -136,7 +136,7 @@ In questo esempio, apriamo un documento con una tabella e uniamo i campi, impost
 
 ## Conclusione
 
-In questo tutorial hai imparato come utilizzare le opzioni di pulizia in Aspose.Words per Java per manipolare e ripulire i documenti durante il processo di stampa unione. Queste opzioni forniscono un controllo capillare sulla pulizia dei documenti, consentendoti di creare facilmente documenti raffinati e personalizzati.
+In questo tutorial hai imparato come utilizzare le opzioni di pulizia in Aspose.Words per Java per manipolare e pulire i documenti durante il processo di stampa unione. Queste opzioni forniscono un controllo capillare sulla pulizia dei documenti, consentendoti di creare facilmente documenti raffinati e personalizzati.
 
 ## Domande frequenti
 

@@ -87,11 +87,11 @@ Tebrikler! Aspose.Words for .NET'i kullanarak Word belgelerindeki alan güncelle
 
 #### S: Aspose.Words for .NET'te alan güncelleme kültürü kaynağını nasıl değiştirebilirim?
 
- C: Aspose.Words for .NET'te alan güncelleme kültürü kaynağını değiştirmek için`Document.FieldOptions.CultureSource` özelliği ve değerini şu şekilde ayarlayın:`FieldCultureSource.FieldCode` veya`FieldCultureSource.CurrentThread` . Örneğin, kullanabilirsiniz`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` alan kodunda tanımlanan kültürü kullanmak için.
+ C: Aspose.Words for .NET'te alan güncelleme kültürü kaynağını değiştirmek için`Document.FieldOptions.CultureSource` özelliği ve değerini şu şekilde ayarlayın:`FieldCultureSource.FieldCode` veya`FieldCultureSource.CurrentThread` . Örneğin şunları kullanabilirsiniz:`document.FieldOptions.CultureSource = FieldCultureSource.FieldCode` alan kodunda tanımlanan kültürü kullanmak için.
 
 #### S: Aspose.Words for .NET'te alanları güncellemek için belirli bir kültürü nasıl belirleyebilirim?
 
- C: Aspose.Words for .NET'te alanları güncellemek için belirli bir kültür belirlemek amacıyla`Document.FieldOptions.FieldUpdateCultureInfo` özelliği ayarlayın ve`CultureInfo` İstenilen kültüre karşılık gelen nesne. Örneğin, kullanabilirsiniz`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` Fransız (Fransa) kültürünü belirtmek için.
+ C: Aspose.Words for .NET'te alanları güncellemek için belirli bir kültür belirlemek amacıyla`Document.FieldOptions.FieldUpdateCultureInfo` özelliği ayarlayın ve`CultureInfo` İstenilen kültüre karşılık gelen nesne. Örneğin şunları kullanabilirsiniz:`document.FieldOptions.FieldUpdateCultureInfo = new CultureInfo("fr-FR")` Fransız (Fransa) kültürünü belirtmek için.
 
 #### S: Aspose.Words for .NET'te otomatik alan güncellemeyi devre dışı bırakmak mümkün mü?
 
@@ -99,4 +99,4 @@ Tebrikler! Aspose.Words for .NET'i kullanarak Word belgelerindeki alan güncelle
 
 #### S: Aspose.Words for .NET'te belge alanlarını manuel olarak nasıl güncelleyebilirim?
 
- C: Aspose.Words for .NET'te bir belgedeki alanları manuel olarak güncellemek için`Field.Update` Her alan için ayrı ayrı yöntem. Örneğin, kullanabilirsiniz`field.Update()` Belirli bir alanı güncellemek için.
+ C: Aspose.Words for .NET'te bir belgedeki alanları manuel olarak güncellemek için`Field.Update` Her alan için ayrı ayrı yöntem. Örneğin şunları kullanabilirsiniz:`field.Update()` Belirli bir alanı güncellemek için.

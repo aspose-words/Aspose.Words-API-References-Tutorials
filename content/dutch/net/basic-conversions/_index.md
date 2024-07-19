@@ -14,7 +14,7 @@ Basic Conversions leidt u door de basisdocumentconversies met behulp van de Aspo
 | Titel | Beschrijving |
 | --- | --- |
 | [Converteer Doc naar Docx](./doc-to-docx/) | Leer hoe u DOC naar DOCX converteert met Aspose.Words voor .NET. Stapsgewijze handleiding met codevoorbeelden. Ideaal voor ontwikkelaars.  |
-| [Converteer Docx naar Rtf](./docx-to-rtf/) | Leer hoe u DOCX naar RTF converteert met Aspose.Words voor .NET met deze stapsgewijze handleiding. Ideaal voor ontwikkelaars die op zoek zijn naar een efficiënte oplossing.  |  
+| [Converteer Docx naar Rtf](./docx-to-rtf/) | Leer hoe u DOCX naar RTF converteert met Aspose.Words voor .NET met onze stapsgewijze handleiding. Eenvoudige conversie voor naadloze documentverwerking. |  
 | [Converteer Word-bestand naar PDF](./docx-to-pdf/) | Leer met onze gids hoe u eenvoudig Word-bestanden naar PDF kunt converteren met Aspose.Words voor .NET. Perfect voor ontwikkelaars die op zoek zijn naar snelle en betrouwbare documentconversie. | 
 | [Converteer Docx naar byte](./docx-to-byte/) | Leer hoe u Docx naar byte-array in .NET converteert met Aspose.Words voor efficiënte documentverwerking. Stap-voor-stap handleiding inbegrepen. |  
 | [Converteer Docx naar Epub](./docx-to-epub/) | Converteer DOCX eenvoudig naar EPUB met Aspose.Words voor .NET. Volg onze tutorial voor naadloze integratie in uw .NET-applicaties. |

@@ -2,7 +2,7 @@
 title: Sử dụng nút trong Aspose.Words cho Java
 linktitle: Sử dụng nút
 second_title: API xử lý tài liệu Java Aspose.Words
-description: Tìm hiểu cách thao tác các nút trong Aspose.Words cho Java với hướng dẫn từng bước này. Mở khóa sức mạnh xử lý tài liệu.
+description: Tìm hiểu cách thao tác các nút trong Aspose.Words cho Java bằng hướng dẫn từng bước này. Mở khóa sức mạnh xử lý tài liệu.
 type: docs
 weight: 20
 url: /vi/java/using-document-elements/using-nodes/

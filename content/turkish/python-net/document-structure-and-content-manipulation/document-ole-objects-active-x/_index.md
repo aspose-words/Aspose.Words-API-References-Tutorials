@@ -8,7 +8,7 @@ weight: 21
 url: /tr/python-net/document-structure-and-content-manipulation/document-ole-objects-active-x/
 ---
 
-Günümüzün dijital çağında zengin ve etkileşimli belgeler oluşturmak etkili iletişim için çok önemlidir. Aspose.Words for Python, OLE (Nesne Bağlama ve Gömme) nesnelerini ve ActiveX kontrollerini doğrudan Word belgelerinize yerleştirmenizi sağlayan güçlü bir araç seti sağlar. Bu özellik, entegre e-tablolar, grafikler, multimedya ve daha fazlasını içeren belgeler oluşturmanıza olanak tanıyan bir olasılıklar dünyasının kapılarını açar. Bu eğitimde, Aspose.Words for Python'u kullanarak OLE nesnelerini ve ActiveX kontrollerini gömme sürecinde size yol göstereceğiz.
+Günümüzün dijital çağında, zengin ve etkileşimli belgeler oluşturmak etkili iletişim için çok önemlidir. Aspose.Words for Python, OLE (Nesne Bağlama ve Gömme) nesnelerini ve ActiveX kontrollerini doğrudan Word belgelerinize yerleştirmenizi sağlayan güçlü bir araç seti sağlar. Bu özellik, entegre e-tablolar, grafikler, multimedya ve daha fazlasını içeren belgeler oluşturmanıza olanak tanıyan bir olasılıklar dünyasının kapılarını açar. Bu eğitimde, Aspose.Words for Python'u kullanarak OLE nesnelerini ve ActiveX kontrollerini gömme sürecinde size yol göstereceğiz.
 
 
 ## Aspose.Words for Python'a Başlarken

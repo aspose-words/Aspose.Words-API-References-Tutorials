@@ -14,12 +14,12 @@ In den Tutorials wird erläutert, wie Sie die Dokumentladeoptionen anpassen. Sie
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Für MS Word optimieren](./optimize-for-ms-word/) | Schritt-für-Schritt-Anleitung zur Optimierung eines Dokuments für MS Word mit Aspose.Words für .NET. |
-| [Grammatik- und Rechtschreibfehler anzeigen](./show-grammatical-and-spelling-errors/) | Schritt-für-Schritt-Anleitung zum Aktivieren der Anzeige von Grammatik- und Rechtschreibfehlern in einem Dokument mit Aspose.Words für .NET. |
-| [Unbenutzte Stile und Listen bereinigen](./cleanup-unused-styles-and-lists/) | Schritt-für-Schritt-Anleitung zum Bereinigen nicht verwendeter Stile und Listen in einem Dokument mit Aspose.Words für .NET. |
-| [Doppelten Stil bereinigen](./cleanup-duplicate-style/) | Schritt-für-Schritt-Anleitung zum Bereinigen doppelter Stile in einem Dokument mit Aspose.Words für .NET. Vollständiger Quellcode enthalten. |
-| [Optionen anzeigen](./view-options/) | Schritt-für-Schritt-Anleitung zum Konfigurieren von Dokumentanzeigeoptionen mit Aspose.Words für .NET. |
-| [Dokumentseiten-Setup](./document-page-setup/) | Schritt-für-Schritt-Anleitung zum Einrichten eines Dokumentlayouts mit Aspose.Words für .NET. |
-| [Japanisch als Bearbeitungssprache hinzufügen](./add-japanese-as-editing-languages/) | Schritt-für-Schritt-Anleitung zum Hinzufügen von Japanisch als Bearbeitungssprache mit Aspose.Words für .NET. |
-| [Russisch als Standardbearbeitungssprache festlegen](./set-russian-as-default-editing-language/) | Schritt-für-Schritt-Anleitung zum Festlegen von Russisch als Standardbearbeitungssprache eines Dokuments mit Aspose.Words für .NET. |
-| [Seiteneinrichtung und Abschnittsformatierung festlegen](./set-page-setup-and-section-formatting/) | Schritt-für-Schritt-Anleitung zum Einrichten des Layouts und der Abschnittsformatierung eines Dokuments mit Aspose.Words für .NET. |
+| [Für MS Word optimieren](./optimize-for-ms-word/) | Mit dieser Schritt-für-Schritt-Anleitung können Sie mit Aspose.Words für .NET ganz einfach die Grammatik von Word-Dokumenten für verschiedene Versionen von MS Word optimieren. |
+| [Grammatik- und Rechtschreibfehler anzeigen](./show-grammatical-and-spelling-errors/) | Erfahren Sie in diesem umfassenden Tutorial, wie Sie mit Aspose.Words für .NET Grammatik- und Rechtschreibfehler in Word-Dokumenten anzeigen. |
+| [Unbenutzte Stile und Listen bereinigen](./cleanup-unused-styles-and-lists/) | Bereinigen Sie Ihre Word-Dokumente mit Aspose.Words für .NET, indem Sie nicht verwendete Stile und Listen entfernen. Folgen Sie dieser Schritt-für-Schritt-Anleitung, um Ihre Dokumente mühelos zu optimieren. |
+| [Doppelten Stil bereinigen](./cleanup-duplicate-style/) | Erfahren Sie in unserer umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET doppelte Stile in Ihren Word-Dokumenten bereinigen. |
+| [Optionen anzeigen](./view-options/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Optionen in Word-Dokumenten anzeigen. In diesem Handbuch erfahren Sie, wie Sie Ansichtstypen festlegen, Zoomstufen anpassen und Ihr Dokument speichern. |
+| [Dokumentseiten-Setup](./document-page-setup/) | Beherrschen Sie die Einrichtung von Dokumentseiten mit Aspose.Words für .NET in einfachen Schritten. Erfahren Sie, wie Sie Ihr Dokument laden, das Layout festlegen, Zeichen pro Zeile und Zeilen pro Seite definieren und speichern. |
+| [Japanisch als Bearbeitungssprache hinzufügen](./add-japanese-as-editing-languages/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Japanisch als Bearbeitungssprache in Ihre Dokumente einfügen. |
+| [Russisch als Standardbearbeitungssprache festlegen](./set-russian-as-default-editing-language/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Russisch als Standardbearbeitungssprache in Word-Dokumenten festlegen. Folgen Sie unserer Schritt-für-Schritt-Anleitung für detaillierte Anweisungen. |
+| [Seiteneinrichtung und Abschnittsformatierung festlegen](./set-page-setup-and-section-formatting/) | Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET die Seiteneinrichtung und Abschnittsformatierung in Word-Dokumenten festlegen. Verbessern Sie mühelos die Präsentation Ihres Dokuments. |

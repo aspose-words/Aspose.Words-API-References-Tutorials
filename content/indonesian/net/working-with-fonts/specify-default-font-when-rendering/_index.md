@@ -62,7 +62,7 @@ Dalam tutorial ini, kita mempelajari cara menentukan font default saat merender 
 
 #### T: Bagaimana cara menentukan font default saat mengonversi ke PDF di Aspose.Words?
 
- A: Untuk menentukan font default saat mengonversi ke PDF di Aspose.Words, Anda dapat menggunakan`PdfOptions` kelas dan atur`DefaultFontName`properti ke nama font yang diinginkan.
+ A: Untuk menentukan font default saat mengonversi ke PDF di Aspose.Words, Anda dapat menggunakan`PdfOptions` kelas dan atur`DefaultFontName` properti ke nama font yang diinginkan.
 
 #### Q: Bagaimana jika font default tidak tersedia saat mengkonversi ke PDF?
 

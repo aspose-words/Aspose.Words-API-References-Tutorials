@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Langkah 3: Membuat Objek DocumentBuilder
 
- Itu`DocumentBuilder` class adalah alat yang ampuh di perpustakaan Aspose.Words. Ini memungkinkan kita menavigasi dan memanipulasi dokumen.
+ Itu`DocumentBuilder` class adalah alat yang ampuh di perpustakaan Aspose.Words. Ini memungkinkan kita untuk menavigasi dan memanipulasi dokumen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
@@ -118,7 +118,7 @@ Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang
  Ya, Aspose.Words untuk .NET memerlukan lisensi untuk fungsionalitas penuh. Anda bisa mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/) untuk evaluasi.
 
 ### Bisakah saya mengotomatiskan proses ini?  
-Sangat! Metode yang dijelaskan dapat dimasukkan ke dalam aplikasi yang lebih besar untuk mengotomatisasi tugas pemrosesan dokumen.
+Sangat! Metode yang dijelaskan dapat dimasukkan ke dalam aplikasi yang lebih besar untuk mengotomatiskan tugas pemrosesan dokumen.
 
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan?  
 Untuk informasi lebih lanjut, Anda dapat memeriksa[dokumentasi](https://reference.aspose.com/words/net/) , atau kunjungi[forum dukungan](https://forum.aspose.com/c/words/8) untuk bantuan.

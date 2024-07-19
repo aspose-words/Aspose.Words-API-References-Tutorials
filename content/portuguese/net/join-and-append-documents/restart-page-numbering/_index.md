@@ -35,9 +35,9 @@ Agora, vamos mergulhar nas etapas práticas envolvidas na reinicialização da n
 
 ## Etapa 1: Carregar os Documentos de Origem e Destino:
 
-Defina uma variável de string`dataDir` para armazenar o caminho para o diretório do seu documento. Substitua "SEU DIRETÓRIO DE DOCUMENTOS" pela localização real.
+ Defina uma variável de string`dataDir` para armazenar o caminho para o diretório do seu documento. Substitua "SEU DIRETÓRIO DE DOCUMENTOS" pela localização real.
 
- Crie dois`Document` objetos usando o`Aspose.Words.Document` construtor. O primeiro (`srcDoc`) conterá o documento de origem contendo o conteúdo a ser anexado. O segundo (`dstDoc`) representa o documento de destino onde integraremos o conteúdo de origem com a numeração de páginas reiniciada.
+ Crie dois`Document` objetos usando o`Aspose.Words.Document`construtor. O primeiro (`srcDoc`) conterá o documento de origem contendo o conteúdo a ser anexado. O segundo (`dstDoc`) representa o documento de destino onde integraremos o conteúdo de origem com a numeração de páginas reiniciada.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Substitua pelo seu diretório real
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Etapa 3: Habilitando o reinício da numeração de páginas:
 
- Dentro do mesmo`PageSetup` objeto da primeira seção do documento de origem, defina o`RestartPageNumbering`propriedade para`true`Esta etapa crucial instrui Aspose.Words a iniciar novamente a numeração de páginas para o conteúdo anexado.
+ Dentro do mesmo`PageSetup` objeto da primeira seção do documento de origem, defina o`RestartPageNumbering`propriedade para`true`. Esta etapa crucial instrui Aspose.Words a iniciar novamente a numeração de páginas para o conteúdo anexado.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

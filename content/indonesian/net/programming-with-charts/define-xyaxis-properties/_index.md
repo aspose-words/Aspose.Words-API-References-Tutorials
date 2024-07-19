@@ -15,7 +15,7 @@ Bagan adalah alat yang ampuh untuk memvisualisasikan data. Saat Anda perlu membu
 
 Sebelum mendalami pengkodean, ada beberapa prasyarat yang perlu Anda miliki:
 
-1.  Aspose.Words for .NET: Pastikan Anda memiliki perpustakaan Aspose.Words for .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Pastikan Anda memiliki perpustakaan Aspose.Words for .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Anda memerlukan lingkungan pengembangan terintegrasi (IDE) seperti Visual Studio.
 3. .NET Framework: Pastikan lingkungan pengembangan Anda diatur untuk pengembangan .NET.
 4. Pengetahuan Dasar C#: Panduan ini mengasumsikan Anda memiliki pemahaman dasar tentang pemrograman C#.

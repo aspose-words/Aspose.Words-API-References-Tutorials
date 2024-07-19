@@ -75,7 +75,7 @@ Dat is alles ! U hebt met succes het gewenste besturingstype opgegeven bij het l
 
 #### Vraag: Wat is de functie "Voorkeursbesturingstype" in Aspose.Words voor .NET?
 
-A: Met de functie "Voorkeurstype besturingselement" kunt u het voorkeurstype besturingselement opgeven om HTML-elementen weer te geven bij het laden van een HTML-document. Het helpt bij het selecteren van het juiste besturingstype voor een betere weergave en verwerking van de HTML-inhoud.
+A: Met de functie "Voorkeurstype besturingselement" kunt u het voorkeurstype besturingselement specificeren om HTML-elementen weer te geven bij het laden van een HTML-document. Het helpt bij het selecteren van het juiste besturingstype voor een betere weergave en verwerking van de HTML-inhoud.
 
 #### Vraag: Hoe stel ik het gewenste besturingstype in bij het laden van een HTML-document?
 

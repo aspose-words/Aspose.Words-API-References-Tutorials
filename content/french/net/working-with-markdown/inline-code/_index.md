@@ -66,11 +66,11 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de co
 
 #### Q : Comment puis-je utiliser le code en ligne dans Aspose.Words ?
 
- R : Pour utiliser du code en ligne dans Aspose.Words, vous pouvez utiliser des balises appropriées pour entourer le texte à formater en code en ligne. Par exemple, vous pouvez utiliser le`<code>` ou`<kbd>` balise pour entourer le texte à formater en code en ligne.
+R : Pour utiliser du code en ligne dans Aspose.Words, vous pouvez utiliser des balises appropriées pour entourer le texte à formater en code en ligne. Par exemple, vous pouvez utiliser le`<code>` ou`<kbd>` balise pour entourer le texte à formater en code en ligne.
 
 #### Q : Est-il possible de spécifier la police ou la couleur du code en ligne dans Aspose.Words ?
 
- R : Oui, vous pouvez spécifier la police ou la couleur du code en ligne dans Aspose.Words. Vous pouvez utiliser le`Font.Name`et`Font.Color` propriétés du`Run` objet pour définir la police et la couleur du code en ligne. Par exemple, vous pouvez utiliser`run.Font.Name = "Courier New"` pour spécifier la police du code en ligne et`run.Font.Color = Color.Blue`pour préciser la couleur.
+ R : Oui, vous pouvez spécifier la police ou la couleur du code en ligne dans Aspose.Words. Vous pouvez utiliser le`Font.Name`et`Font.Color` propriétés du`Run` objet pour définir la police et la couleur du code en ligne. Par exemple, vous pouvez utiliser`run.Font.Name = "Courier New"` pour spécifier la police du code en ligne et`run.Font.Color = Color.Blue` pour préciser la couleur.
 
 #### Q : Puis-je utiliser le code en ligne dans un paragraphe contenant d'autres éléments de texte ?
 

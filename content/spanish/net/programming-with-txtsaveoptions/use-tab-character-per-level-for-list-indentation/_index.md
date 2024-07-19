@@ -104,7 +104,7 @@ Configure su entorno de desarrollo agregando las referencias necesarias e import
 
  Configure las opciones de guardado creando un`TxtSaveOptions` objeto y estableciendo las propiedades`ListIndentation.Count` al número de caracteres de tabulación por nivel y`ListIndentation.Character` a`'\t'` para utilizar los caracteres de tabulación.
 
- Guarde el documento usando el`Save()` método del documento especificando la ruta completa del archivo de salida y las opciones de guardado.
+ Guarde el documento utilizando el`Save()` método del documento especificando la ruta completa del archivo de salida y las opciones de guardado.
 
 #### P: ¿Es posible personalizar la cantidad de caracteres de tabulación por nivel para la sangría de la lista?
  Sí, puede personalizar el número de caracteres de tabulación por nivel para la sangría de la lista cambiando el valor de`ListIndentation.Count` propiedad en el`TxtSaveOptions` clase. Puede especificar la cantidad de caracteres de tabulación que desea para cada nivel de sangría.

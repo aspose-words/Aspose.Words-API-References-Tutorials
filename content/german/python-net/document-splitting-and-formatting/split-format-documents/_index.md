@@ -68,7 +68,7 @@ for i, section in enumerate(sections):
 ```
 
 ### Kann ich verschiedenen Absätzen innerhalb eines Abschnitts unterschiedliche Formatierungen zuweisen?
-Ja, Sie können Absätzen innerhalb eines Abschnitts unterschiedliche Formatierungen zuweisen. Gehen Sie die Absätze im Abschnitt durch und wenden Sie die gewünschte Formatierung mithilfe der`paragraph.runs` Eigentum.
+Ja, Sie können Absätzen innerhalb eines Abschnitts unterschiedliche Formatierungen zuweisen. Gehen Sie durch die Absätze im Abschnitt und wenden Sie die gewünschte Formatierung mithilfe der`paragraph.runs` Eigentum.
 
 ```python
 for paragraph in section.paragraphs:

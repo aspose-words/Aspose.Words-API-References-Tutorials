@@ -56,7 +56,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 ```
 
- Burada bir oluşturuyoruz`DocumentBuilder` nesnesini seçin ve onu belirli boyutlarda (432x252) bir alan grafiğini belgemize eklemek için kullanın.
+ Burada bir oluşturuyoruz`DocumentBuilder` nesneyi seçin ve bunu belgemize belirli boyutlarda (432x252) bir alan grafiği eklemek için kullanın.
 
 ## 3. Adım: Grafik Nesnesine Erişin
 
@@ -112,7 +112,7 @@ Kesinlikle! Aspose.Words for .NET, grafiklerinizin görünümünü özelleştirm
 Evet, tek bir Word belgesine istediğiniz kadar grafik ekleyebilirsiniz.
 
 ### Aspose.Words for .NET diğer grafik türlerini destekliyor mu?
-Evet, Aspose.Words for .NET; çubuk, çizgi, pasta ve daha fazlasını içeren çeşitli grafik türlerini destekler.
+Evet, Aspose.Words for .NET çubuk, çizgi, pasta ve daha fazlasını içeren çeşitli grafik türlerini destekler.
 
 ### Aspose.Words for .NET için nereden geçici lisans alabilirim?
  adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/).

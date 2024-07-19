@@ -2,7 +2,7 @@
 title: Word 문서에서 주석 기능 활용하기
 linktitle: Word 문서에서 주석 기능 활용하기
 second_title: Aspose.Words Python 문서 관리 API
-description: Aspose.Words for Python을 사용하여 Word 문서에서 주석 기능을 활용하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다. 협업을 강화하고 문서 검토를 간소화합니다.
+description: Aspose.Words for Python을 사용하여 Word 문서에서 주석 기능을 활용하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다. 협업을 강화하고 문서 검토를 간소화하세요.
 type: docs
 weight: 11
 url: /ko/python-net/document-structure-and-content-manipulation/document-comments/

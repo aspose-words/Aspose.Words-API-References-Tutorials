@@ -2,7 +2,7 @@
 title: Técnicas de divisão e extração de documentos
 linktitle: Técnicas de divisão e extração de documentos
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda a divisão e extração de documentos usando Aspose.Words para Java. Guia passo a passo com código fonte para manipulação eficiente. Desbloqueie o poder do Aspose
+description: Aprenda a divisão e extração de documentos usando Aspose.Words para Java. Guia passo a passo com código-fonte para manipulação eficiente. Desbloqueie o poder do Aspose
 type: docs
 weight: 14
 url: /pt/java/document-splitting/document-splitting-extraction-techniques/

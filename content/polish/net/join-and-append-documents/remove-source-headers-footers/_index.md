@@ -9,7 +9,7 @@ url: /pl/net/join-and-append-documents/remove-source-headers-footers/
 ---
 ## Wstęp
 
-W tym obszernym przewodniku zagłębimy się w skuteczne usuwanie nagłówków i stopek z dokumentu programu Word za pomocą Aspose.Words dla .NET. Nagłówki i stopki są powszechnie używane do numerowania stron, tytułów dokumentów lub innych powtarzających się treści w dokumentach programu Word. Niezależnie od tego, czy scalasz dokumenty, czy usuwasz formatowanie, opanowanie tego procesu może usprawnić zadania związane z zarządzaniem dokumentami. Przyjrzyjmy się krok po kroku procesowi osiągnięcia tego za pomocą Aspose.Words dla .NET.
+tym obszernym przewodniku zagłębimy się w skuteczne usuwanie nagłówków i stopek z dokumentu programu Word za pomocą Aspose.Words dla .NET. Nagłówki i stopki są powszechnie używane do numerowania stron, tytułów dokumentów lub innych powtarzających się treści w dokumentach programu Word. Niezależnie od tego, czy scalasz dokumenty, czy usuwasz formatowanie, opanowanie tego procesu może usprawnić zadania związane z zarządzaniem dokumentami. Przyjrzyjmy się krok po kroku procesowi osiągnięcia tego za pomocą Aspose.Words dla .NET.
 
 ## Warunki wstępne
 
@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Krok 1: Załaduj dokument źródłowy
 
- Najpierw musisz załadować dokument źródłowy, z którego chcesz usunąć nagłówki i stopki. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów, w którym znajduje się dokument źródłowy.
+Najpierw musisz załadować dokument źródłowy, z którego chcesz usunąć nagłówki i stopki. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów, w którym znajduje się dokument źródłowy.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

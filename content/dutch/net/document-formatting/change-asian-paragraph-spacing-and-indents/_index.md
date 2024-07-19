@@ -77,7 +77,7 @@ format.LineUnitAfter = 10;  // ParagraphFormat.SpaceAfter wordt bijgewerkt
 
 Door de regeleenheid ervoor en erna in te stellen op respectievelijk 5 en 10 eenheden, zorgt u ervoor dat er voldoende ruimte tussen de alinea's is, waardoor het document beter leesbaar wordt.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Ten slotte moeten we, nadat we al deze aanpassingen hebben aangebracht, het gewijzigde document opslaan.
 
@@ -106,4 +106,4 @@ Ja, deze instellingen kunnen op elke tekst worden toegepast, maar ze zijn vooral
 Absoluut! U kunt een verzameling documenten doorlopen en deze instellingen programmatisch op elk document toepassen.
 
 ### Wat moet ik doen als ik problemen ondervind of vragen heb?
-Als u problemen ondervindt of verdere vragen heeft, kunt u de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) is een geweldige plek om hulp te zoeken.
+ Als u problemen ondervindt of verdere vragen heeft, kunt u de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) is een geweldige plek om hulp te zoeken.

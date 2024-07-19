@@ -7,7 +7,7 @@ type: docs
 weight: 1360
 url: /es/net/find-and-replace-text/
 ---
-El tutorial Buscar y reemplazar texto explica cómo utilizar las funciones Buscar y reemplazar texto para realizar ediciones rápidas y eficientes en sus documentos de Word. Aprenderá cómo buscar palabras, frases o patrones específicos y reemplazarlos con contenido nuevo. Con estas técnicas, puede automatizar las tareas de edición de texto, ahorrar tiempo y mejorar la eficiencia de su flujo de trabajo de procesamiento de documentos.
+El tutorial Buscar y reemplazar texto explica cómo utilizar las funciones Buscar y reemplazar texto para realizar ediciones rápidas y eficientes en sus documentos de Word. Aprenderá a buscar palabras, frases o patrones específicos y reemplazarlos con contenido nuevo. Con estas técnicas, puede automatizar las tareas de edición de texto, ahorrar tiempo y mejorar la eficiencia de su flujo de trabajo de procesamiento de documentos.
 
 Aspose.Words para .NET es una potente biblioteca que ofrece una amplia gama de funciones para el procesamiento de textos con documentos de Word en aplicaciones .NET. El tutorial proporciona ejemplos de código detallados y explica los pasos necesarios para realizar operaciones de búsqueda y reemplazo de texto. Aprenderá a utilizar los métodos y propiedades de la API de Aspose.Words para buscar y reemplazar texto, teniendo en cuenta diferentes opciones como mayúsculas y minúsculas, sensibilidad al acento y más.
 
@@ -26,4 +26,4 @@ Ya sea que necesite reemplazar palabras específicas, actualizar plantillas de t
 | [Reemplazar con expresiones regulares](./replace-with-regex/) | Aprenda a utilizar expresiones regulares para buscar y reemplazar en documentos de Word con Aspose.Words para .NET. Siga nuestra guía detallada paso a paso para dominar la manipulación de texto. |
 | [Reconocer y sustituciones dentro de patrones de reemplazo](./recognize-and-substitutions-within-replacement-patterns/) | Aprenda a reconocer y sustituir texto dentro de patrones de reemplazo usando Aspose.Words para .NET. Guía paso a paso con ejemplos detallados. |
 | [Reemplazar con cadena](./replace-with-string/) | Aprenda cómo reemplazar cadenas en documentos de Word usando Aspose.Words para .NET con esta guía paso a paso. Perfecto para desarrolladores que buscan automatizar la edición de documentos. |
-| [Reemplazar texto en la tabla](./replace-text-in-table/) | Reemplace texto sin esfuerzo en una tabla de Word usando Aspose.Words para .NET con esta guía detallada paso a paso. |
+| [Reemplazar texto en la tabla](./replace-text-in-table/) | Reemplace sin esfuerzo texto en una tabla de Word usando Aspose.Words para .NET con esta guía detallada paso a paso. |

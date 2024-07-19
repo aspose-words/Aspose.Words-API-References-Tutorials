@@ -41,7 +41,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
  En este paso, inicializamos un nuevo documento y un`DocumentBuilder` objeto. El`DocumentBuilder` es su herramienta para construir el documento.
 
-## Paso 2: Insertar un campo de combinación
+## Paso 2: insertar un campo de combinación
 
 continuación, insertemos un campo de combinación. Piense en esto como colocar un marcador en su documento donde se fusionarán los datos.
 

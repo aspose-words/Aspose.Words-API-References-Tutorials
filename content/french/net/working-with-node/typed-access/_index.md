@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Accès rapide et typé à la première ligne du tableau.
+     //Accès rapide et typé à la première ligne du tableau.
      table.FirstRow?.Remove();
 
      // Accès rapide et tapé à la dernière ligne du tableau.

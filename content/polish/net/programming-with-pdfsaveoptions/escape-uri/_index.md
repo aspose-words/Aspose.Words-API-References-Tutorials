@@ -2,101 +2,100 @@
 title: Ucieczka z URI w dokumencie PDF
 linktitle: Ucieczka z URI w dokumencie PDF
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku Jak uciec od URI w dokumencie PDF za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak uniknąć identyfikatorów URI w plikach PDF za pomocą Aspose.Words dla .NET. Ten szczegółowy przewodnik przeprowadzi Cię przez ten proces krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-pdfsaveoptions/escape-uri/
 ---
+## Wstęp
 
-Ten artykuł zawiera przewodnik krok po kroku dotyczący sposobu ucieczki identyfikatora URI w dokumencie PDF za pomocą Aspose.Words dla .NET. Szczegółowo wyjaśnimy każdą część kodu. Pod koniec tego samouczka będziesz mógł zrozumieć, jak wstawiać hiperłącza ze zmienionym Uri w dokumencie.
+No hej! Czy zastanawiałeś się kiedyś, jak obsługiwać identyfikatory URI podczas zapisywania dokumentu programu Word jako pliku PDF przy użyciu Aspose.Words dla .NET? Jesteś we właściwym miejscu! Dzisiaj zajmiemy się szczegółowo kwestią ucieczki identyfikatorów URI w dokumentach PDF, aby upewnić się, że działają one poprawnie po konwersji dokumentu. Wyruszmy razem w tę podróż, krok po kroku, upewniając się, że po drodze zrozumiesz każdą koncepcję.
 
-Zanim zaczniesz, upewnij się, że w swoim projekcie zainstalowałeś i skonfigurowałeś bibliotekę Aspose.Words for .NET. Bibliotekę i instrukcje instalacji można znaleźć na stronie internetowej Aspose.
+## Warunki wstępne
 
-## Krok 1: Zdefiniuj katalog dokumentów
+Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
- Na początek musisz zdefiniować ścieżkę do katalogu, w którym znajdują się Twoje dokumenty. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub dowolne inne środowisko programistyczne .NET.
+3. Podstawowa znajomość języka C#: W tym samouczku założono, że masz podstawową wiedzę na temat programowania w języku C#.
+
+## Importuj przestrzenie nazw
+
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw. Jest to kluczowe dla uzyskania dostępu do funkcjonalności Aspose.Words.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+W porządku, podzielmy proces na zrozumiałe etapy. Postępuj zgodnie ze wskazówkami, a w mgnieniu oka staniesz się profesjonalistą w unikaniu identyfikatorów URI!
+
+## Krok 1: Skonfiguruj katalog dokumentów
+
+Zanim zagłębisz się w kod, ustaw ścieżkę do katalogu dokumentów. Tutaj będą zapisywane Twoje pliki.
+
+```csharp
+// Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Krok 2: Utwórz dokument i narzędzie DocumentBuilder
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, w której chcesz zapisać dokument PDF.
 
- Następnie musimy utworzyć nowy`Document` obiekt i a`DocumentBuilder` obiekt do zbudowania dokumentu.
+## Krok 2: Utwórz nowy dokument
+
+Następnie utworzymy nowy dokument za pomocą Aspose.Words. Dokument ten będzie naszym kanwą do wstawiania hiperłączy.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Wstaw hiperłącza ze zmienionym Uri
+ Tutaj,`Document` jest twoim nowym dokumentem programu Word i`DocumentBuilder` to klasa pomocnicza, która upraszcza proces tworzenia dokumentu.
 
- Użyj`InsertHyperlink` metoda`DocumentBuilder` obiekt, aby wstawić hiperłącza do dokumentu. Uri należy uciec za pomocą`Uri.EscapeUriString` funkcję pozwalającą uniknąć błędów formatowania.
+## Krok 3: Wstaw hiperłącze
+
+Teraz wstawmy hiperłącze do dokumentu. To hiperłącze będzie głównym przedmiotem naszego procesu ucieczki URI.
 
 ```csharp
-builder.InsertHyperlink("Testlink",
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test”), fałsz);
-builder. Writen();
-builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test”),
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test”), fałsz);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose”, false);
 ```
+
+ W tej linii`"Testlink"` jest tekstem wyświetlanym dla hiperłącza, oraz`"https://www.google.com/search?q= aspose"` to adres URL. The`false` Parametr wskazuje, że link nie powinien być sformatowany jako hiperłącze (tzn. nie będzie podkreślony i niebieski).
 
 ## Krok 4: Zapisz dokument jako plik PDF
 
- Wreszcie możemy zapisać dokument jako plik PDF za pomocą`Save` metoda`Document` obiekt. Określ nazwę pliku wyjściowego.
+Na koniec zapisz dokument jako plik PDF. W tym miejscu Aspose.Words zajmuje się ucieczką od URI w wynikach PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-To wszystko ! Pomyślnie wstawiłeś hiperłącza ze zmienionymi identyfikatorami Uri do dokumentu przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy ucieczki Uri za pomocą Aspose.Words dla .NET
-
-
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHyperlink("Testlink", 
-		"https://www.google.com/search?q=%2Fthe%20test", fałsz);
-	builder.Writeln();
-	builder.InsertHyperlink("https:// www.google.com/search?q=%2Fthe%20test",
-		"https://www.google.com/search?q=%2Fthe%20test", fałsz);
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");    
-  
-```
+ Ta linia zapisuje dokument w określonym katalogu z nazwą pliku`WorkingWithPdfSaveOptions.EscapeUri.pdf`.
 
 ## Wniosek
 
-W tym samouczku omówiliśmy, jak uciec od identyfikatorów URI w dokumencie PDF za pomocą Aspose.Words dla .NET. Uciekając od identyfikatorów URI, można uniknąć błędów formatowania i zapewnić poprawną interpretację i wyświetlanie hiperłączy w dokumencie PDF. Postępuj zgodnie z instrukcjami, aby wstawić hiperłącza ze zmienionymi identyfikatorami URI do dokumentu PDF. Koniecznie ucieknij.
+masz to! Właśnie nauczyłeś się, jak uniknąć identyfikatorów URI podczas zapisywania dokumentu programu Word jako pliku PDF przy użyciu Aspose.Words dla .NET. Ten proces gwarantuje, że hiperłącza pozostaną funkcjonalne i prawidłowo sformatowane w wynikowym pliku PDF. 
 
-### Często Zadawane Pytania
+Pamiętaj, że opanowanie tych małych, ale znaczących technik może znacznie poprawić jakość i funkcjonalność Twoich dokumentów. Miłego kodowania!
 
-#### P: Jaki jest identyfikator URI ucieczki w dokumencie PDF i dlaczego jest on ważny?
-Odp.: URI ucieczki w dokumencie PDF odnosi się do metody konwertowania znaków specjalnych w adresie URL na sekwencje ucieczki w celu uniknięcia błędów formatu. Jest to ważne, ponieważ znaki specjalne w adresie URL mogą zakłócać jego strukturę i prowadzić do błędnej interpretacji lub nieprawidłowego renderowania. Uciekając od znaków specjalnych, gwarantujemy, że adres URL zostanie poprawnie zinterpretowany i wyświetlony w dokumencie PDF.
+## Często zadawane pytania
 
-#### P: Jak mogę użyć Aspose.Words dla .NET do ucieczki przed identyfikatorami URI w dokumencie PDF?
-O: Aby uciec od identyfikatorów URI w dokumencie PDF przy użyciu Aspose.Words dla .NET, wykonaj następujące kroki:
+### Co to jest Aspose.Words dla .NET?
 
- Ustaw ścieżkę katalogu, w którym znajdują się Twoje dokumenty, zastępując`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+Aspose.Words dla .NET to potężna biblioteka, która pozwala programistom tworzyć, manipulować i konwertować dokumenty Word w aplikacjach .NET.
 
- Utwórz nową instancję`Document` klasa i A`DocumentBuilder` obiekt do zbudowania dokumentu.
+### Dlaczego ucieczka URI jest ważna w plikach PDF?
 
- Użyj`InsertHyperlink` metoda`DocumentBuilder` obiekt, aby wstawić hiperłącza do dokumentu. Pamiętaj, aby uciec od identyfikatora URI za pomocą`Uri.EscapeUriString` funkcję pozwalającą uniknąć błędów formatowania.
+Unikanie URI zapewnia poprawną interpretację znaków specjalnych w adresach URL, zapobiegając uszkodzeniu linków i zapewniając ich działanie zgodnie z przeznaczeniem.
 
- Użyj`Save` metoda`Document` obiekt, aby zapisać dokument w formacie PDF, podając nazwę pliku wyjściowego.
+### Czy mogę używać innych typów łączy w Aspose.Words dla .NET?
 
-#### P: Jakie są zalety zmiany identyfikatorów URI w dokumencie PDF?
-O: Korzyści z ucieczki identyfikatora URI w dokumencie PDF są następujące:
+Absolutnie! Aspose.Words obsługuje różne typy linków, w tym linki do dokumentów wewnętrznych, zakładki i zewnętrzne adresy URL.
 
-Zapobieganie błędom formatu: ucieczka URI pomaga zapobiegać błędom formatu spowodowanym znakami specjalnymi w adresie URL, zapewniając, że adres URL zostanie poprawnie zinterpretowany i wyświetlony w dokumencie PDF.
+### Jak mogę uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
 
-Zgodność z czytnikami plików PDF: URI ze zmianą znaczenia są na ogół dobrze obsługiwane przez czytniki plików PDF, zapewniając lepszą kompatybilność i spójne doświadczenie użytkownika.
+ Możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
 
-#### P: Jakie znaki specjalne należy zmieniać w identyfikatorze URI?
- Odp.: Znaki specjalne, które należy zmienić w identyfikatorze URI, to: spacja, <, >, ", #,%, {, },|, \, ^, ~, [, ], `, ;, /, ?, :, @, =, &, $, +, ,, [, ], and !.
+### Gdzie mogę znaleźć bardziej szczegółową dokumentację dotyczącą Aspose.Words dla .NET?
+
+ Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).

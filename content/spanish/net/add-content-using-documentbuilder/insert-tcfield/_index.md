@@ -64,7 +64,7 @@ Ahora viene la parte divertida. Vamos a insertar un campo TC en nuestro document
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Esta línea de código le dice a Aspose.Words que inserte un campo TC con el texto de entrada "Texto de entrada". El`\\f t` La parte es un interruptor que determina cómo se muestra la entrada en la tabla de contenido.
+ Esta línea de código le dice a Aspose.Words que inserte un campo TC con el texto de entrada "Texto de entrada". El`\\f t`La parte es un interruptor que determina cómo se muestra la entrada en la tabla de contenido.
 
 ## Paso 4: guarde el documento
 

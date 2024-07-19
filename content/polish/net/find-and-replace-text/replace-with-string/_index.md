@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
  Tutaj,`Document` reprezentuje dokument programu Word, z którym będziemy pracować, oraz`DocumentBuilder` jest naszym narzędziem do jego modyfikacji.
 
-## Krok 3: Dodaj treść początkową
+## Krok 3: Dodaj zawartość początkową
 
 Dodajmy teraz trochę początkowej treści do naszego dokumentu. Ten krok przypomina przygotowanie płótna przed malowaniem.
 

@@ -9,7 +9,7 @@ url: /sv/net/programming-with-charts/
 ---
 Aspose.Words för .NET Graphics Programmering Tutorials erbjuder en omfattande resurs för att lära dig hur du skapar och manipulerar grafik i dina Word-dokument. Handledningar leder dig genom stegen för att lägga till diagram, anpassa deras utseende, redigera data och mer. Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa tutorials hjälpa dig att bemästra grafikfunktionerna i Aspose.Words.
 
-I dessa handledningar kommer du att lära dig hur du skapar olika typer av diagram som stapeldiagram, cirkeldiagram, områdesdiagram, linjediagram, etc. Du kommer också att lära dig hur du anpassar diagramelement som titlar, legender, dataetiketter och yxor. Handledningarna visar dig hur du manipulerar diagramdata genom att lägga till, ändra eller ta bort dataserier.
+dessa handledningar kommer du att lära dig hur du skapar olika typer av diagram som stapeldiagram, cirkeldiagram, områdesdiagram, linjediagram, etc. Du kommer också att lära dig hur du anpassar diagramelement som titlar, legender, dataetiketter och yxor. Handledningarna visar dig hur du manipulerar diagramdata genom att lägga till, ändra eller ta bort dataserier.
 
 Med dessa handledningar kommer du att kunna förbättra dina Word-dokument genom att lägga till visuellt tilltalande och informativ grafik. Du kommer att lära dig hur du drar fördel av de avancerade grafikfunktionerna i Aspose.Words för .NET och integrerar dem effektivt i dina applikationer. Utforska dessa handledningar för att utöka dina grafikkunskaper i Aspose.Words.
 
@@ -20,7 +20,7 @@ Med dessa handledningar kommer du att kunna förbättra dina Word-dokument genom
 | [Skapa och anpassa diagram med Shape](./create-chart-using-shape/) | Lär dig hur du skapar och anpassar diagram i Word-dokument med Aspose.Words för .NET med denna steg-för-steg-guide. Perfekt för datavisualisering. |
 | [Infoga enkelt kolumndiagram i ett Word-dokument](./insert-simple-column-chart/) | Lär dig hur du infogar ett enkelt kolumndiagram i Word med Aspose.Words för .NET. Förbättra dina dokument med dynamiska visuella datapresentationer. |
 | [Infoga kolumndiagram i ett Word-dokument](./insert-column-chart/) | Lär dig hur du infogar kolumndiagram i Word-dokument med Aspose.Words för .NET. Förbättra datavisualiseringen i dina rapporter och presentationer. |
-| [Infoga områdesdiagram i ett Word-dokument](./insert-area-chart/) | Lär dig hur du infogar ett områdesdiagram i ett Word-dokument med Aspose.Words för .NET i den här omfattande steg-för-steg-guiden. |
+| [Infoga Ytdiagram i ett Word-dokument](./insert-area-chart/) | Lär dig hur du infogar ett områdesdiagram i ett Word-dokument med Aspose.Words för .NET i den här omfattande steg-för-steg-guiden. |
 | [Infoga bubbeldiagram i Word-dokument](./insert-bubble-chart/) | Lär dig hur du infogar ett bubbeldiagram i ett Word-dokument med Aspose.Words för .NET med denna steg-för-steg-guide. Förbättra dina dokument. |
 | [Infoga punktdiagram i Word-dokument](./insert-scatter-chart/) | Lär dig hur du infogar ett punktdiagram i Word med Aspose.Words för .NET. Enkla steg för att integrera visuella datarepresentationer i dina dokument. |
 | [Definiera XY-axelegenskaper i ett diagram](./define-xyaxis-properties/) | Lär dig hur du definierar XY-axelegenskaper i ett diagram med Aspose.Words för .NET med denna steg-för-steg-guide. Perfekt för .NET-utvecklare. |

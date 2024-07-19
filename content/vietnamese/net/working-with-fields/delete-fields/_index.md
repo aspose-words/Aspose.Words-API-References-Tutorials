@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 Lặp lại qua tất cả các trường trong tài liệu và xóa chúng:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 Vòng lặp này lặp ngược qua bộ sưu tập trường để tránh các vấn đề khi sửa đổi bộ sưu tập trong khi lặp.

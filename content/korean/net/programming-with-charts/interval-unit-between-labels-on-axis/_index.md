@@ -26,7 +26,7 @@ Aspose.Words를 시작하기 전에 다음 설정이 있는지 확인하세요.
 시작하려면 Visual Studio를 시작하고 새 C# 프로젝트를 만듭니다.
 
 ### .NET용 Aspose.Words 설치
- NuGet 패키지 관리자를 통해 또는 다음에서 직접 다운로드하여 .NET용 Aspose.Words를 설치할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
+ NuGet 패키지 관리자를 통해 또는 다음에서 직접 다운로드하여 .NET용 Aspose.Words를 설치할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
 
 ### Aspose.Words 네임스페이스 가져오기
 C# 코드 파일에서 Aspose.Words 네임스페이스를 가져와 해당 클래스와 메서드에 액세스합니다.

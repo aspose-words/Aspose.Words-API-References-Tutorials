@@ -48,7 +48,7 @@ if (textBox1.IsValidLinkTarget(textBox2))
 ```
 ## Wniosek
 
-Gratulacje! Nauczyłeś się teraz, jak utworzyć łącze między dwoma polami tekstowymi w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Korzystając z tego przewodnika krok po kroku, można było skonfigurować dokument, utworzyć kształty pól tekstowych, uzyskać dostęp do pól tekstowych, sprawdzić ważność celu łącza i na koniec utworzyć samo łącze.
+Gratulacje! Nauczyłeś się teraz, jak utworzyć łącze pomiędzy dwoma polami tekstowymi w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla platformy .NET. Korzystając z tego przewodnika krok po kroku, można było skonfigurować dokument, utworzyć kształty pól tekstowych, uzyskać dostęp do pól tekstowych, sprawdzić ważność celu łącza i na koniec utworzyć samo łącze.
 
 ### Często zadawane pytania dotyczące tworzenia łącza w programie Word
 
@@ -66,7 +66,7 @@ Odp.: Aby połączyć pola tekstowe w programie Word przy użyciu Aspose.Words d
 
 #### P: Czy możliwe jest tworzenie łączy pomiędzy elementami innymi niż pola tekstowe?
 
-Odp.: Tak, używając biblioteki Aspose.Words dla .NET, możliwe jest tworzenie łączy pomiędzy różnymi elementami, takimi jak akapity, tabele, obrazy itp. Proces będzie się różnić w zależności od konkretnego elementu, który chcesz połączyć.
+O: Tak, używając biblioteki Aspose.Words dla .NET, możliwe jest tworzenie łączy pomiędzy różnymi elementami, takimi jak akapity, tabele, obrazy itp. Proces będzie się różnić w zależności od konkretnego elementu, który chcesz połączyć.
 
 #### P: Jakie inne funkcje można dodać do pól tekstowych w programie Word przy użyciu Aspose.Words dla .NET?
 

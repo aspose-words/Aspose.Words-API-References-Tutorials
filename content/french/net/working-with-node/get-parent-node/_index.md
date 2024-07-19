@@ -62,7 +62,7 @@ R : Le nœud parent dans Node.js fait référence au nœud immédiatement supé
 
 #### Q : Comment obtenir le nœud parent d’un nœud spécifique ?
 
-R : Pour obtenir le nœud parent d'un nœud spécifique, vous pouvez utiliser le`parentNode` propriété du nœud. Cette propriété renvoie le nœud parent du nœud actuel.
+ R : Pour obtenir le nœud parent d'un nœud spécifique, vous pouvez utiliser le`parentNode` propriété du nœud. Cette propriété renvoie le nœud parent du nœud actuel.
 
 #### Q : Comment vérifier si un nœud a un nœud parent ?
 
@@ -70,7 +70,7 @@ R : Pour obtenir le nœud parent d'un nœud spécifique, vous pouvez utiliser l
 
 #### Q : Pouvons-nous changer le nœud parent d’un nœud ?
 
- R : Dans la plupart des cas, le nœud parent d'un nœud est déterminé par la structure du document XML et ne peut pas être modifié directement. Cependant, vous pouvez déplacer un nœud vers un autre nœud à l'aide de méthodes spécifiques, telles que`appendChild` ou`insertBefore`.
+ : Dans la plupart des cas, le nœud parent d'un nœud est déterminé par la structure du document XML et ne peut pas être modifié directement. Cependant, vous pouvez déplacer un nœud vers un autre nœud à l'aide de méthodes spécifiques, telles que`appendChild` ou`insertBefore`.
 
 #### Q : Comment parcourir la hiérarchie des nœuds parents ?
 

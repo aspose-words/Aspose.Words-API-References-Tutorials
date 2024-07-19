@@ -114,7 +114,7 @@ public void createAndAddParagraphNode() throws Exception
 ### Ε3. Υπάρχει δωρεάν δοκιμή διαθέσιμη;
  Ναι, μπορείτε να λάβετε μια δωρεάν δοκιμή του Aspose.Words για Java[εδώ](https://releases.aspose.com/).
 
-### Ε4. Πού μπορώ να πάρω μια προσωρινή άδεια;
+### Q4. Πού μπορώ να πάρω μια προσωρινή άδεια;
  Μπορείτε να αποκτήσετε μια προσωρινή άδεια χρήσης για το Aspose.Words για Java[εδώ](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. Πού μπορώ να βρω υποστήριξη για το Aspose.Words για Java;

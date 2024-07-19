@@ -1,6 +1,6 @@
 ---
-title: Få dokumentformat i Word
-linktitle: Få dokumentformat i Word
+title: Få dokumentstilar i Word
+linktitle: Få dokumentstilar i Word
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du får dokumentstilar i Word med Aspose.Words för .NET. Komplett handledning för att manipulera stilarna i dina dokument.
 type: docs

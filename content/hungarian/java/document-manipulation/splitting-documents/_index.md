@@ -82,7 +82,7 @@ mergedDoc.save("Your Directory Path" + "SplitDocument.MergeDocuments.docx");
 Néha előfordulhat, hogy egy bizonyos oldaltartományt kell kivonnia egy dokumentumból. A következőképpen oszthatja fel a dokumentumokat oldaltartományra az Aspose.Words for Java használatával.
 
 ```java
-// Java kód egy dokumentum meghatározott oldaltartományra történő felosztásához az Aspose.Words for Java használatával
+// Java kód, amellyel egy dokumentumot egy adott oldaltartományra oszthat fel az Aspose.Words for Java használatával
 Document doc = new Document("Your Directory Path" + "Big document.docx");
 Document extractedPages = doc.extractPages(3, 6);
 extractedPages.save("Your Directory Path" + "SplitDocument.ByPageRange.docx");

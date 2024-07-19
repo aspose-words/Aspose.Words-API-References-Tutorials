@@ -43,7 +43,7 @@ Document doc = new Document("path/to/your/document.docx");
 
 ## Schritt 2: Zugriff auf den ersten Absatz
 
-Als nächstes müssen wir auf einen bestimmten Absatz im Dokument zugreifen. Der Einfachheit halber nehmen wir den ersten Absatz.
+Als Nächstes müssen wir auf einen bestimmten Absatz im Dokument zugreifen. Der Einfachheit halber nehmen wir den ersten Absatz.
 
 ```csharp
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
@@ -98,7 +98,7 @@ Ein Absatz kann Knoten wie Läufe, Formen, Kommentare und andere Inline-Elemente
  Ja, Sie können verschiedene Knotentypen wie Formen, Kommentare und mehr bearbeiten, indem Sie deren`NodeType`.
 
 ### 4. Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
- Sie können mit einer kostenlosen Testversion beginnen oder eine temporäre Lizenz erwerben von[Hier](https://purchase.aspose.com/temporary-license/).
+Sie können mit einer kostenlosen Testversion beginnen oder eine temporäre Lizenz erwerben von[Hier](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Wo finde ich weitere Beispiele und Dokumentation?
  Besuche den[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/) für weitere Beispiele und ausführliche Dokumentation.

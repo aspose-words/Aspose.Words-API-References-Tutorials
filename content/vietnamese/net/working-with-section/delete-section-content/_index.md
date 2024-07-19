@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Bước 3: Xóa nội dung chuyên mục
-Để xóa nội dung của phần này, chúng tôi sẽ sử dụng`ClearContent` phương pháp.
+ Để xóa nội dung của phần này, chúng tôi sẽ sử dụng`ClearContent` phương pháp.
 
 ```csharp
 section.ClearContent();

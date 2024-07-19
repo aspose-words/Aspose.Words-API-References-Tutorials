@@ -2,7 +2,7 @@
 title: Membuat dan Mengelola Daftar di Dokumen Word
 linktitle: Membuat dan Mengelola Daftar di Dokumen Word
 second_title: API Manajemen Dokumen Aspose.Words Python
-description: Pelajari cara membuat dan mengelola daftar di dokumen Word menggunakan Aspose.Words Python API. Panduan langkah demi langkah dengan kode sumber untuk pemformatan daftar, penyesuaian, penyusunan susunan, dan banyak lagi.
+description: Pelajari cara membuat dan mengelola daftar di dokumen Word menggunakan Aspose.Words Python API. Panduan langkah demi langkah dengan kode sumber untuk pemformatan daftar, penyesuaian, penyusunan, dan banyak lagi.
 type: docs
 weight: 18
 url: /id/python-net/document-structure-and-content-manipulation/document-lists/
@@ -106,7 +106,7 @@ Menghapus daftar sama pentingnya dengan membuat daftar. Anda dapat menghapus daf
 
 ## Menyimpan dan Mengekspor Dokumen
 
-Setelah membuat dan menyesuaikan daftar, Anda dapat menyimpan dokumen dalam berbagai format, termasuk DOCX dan PDF.
+Setelah Anda membuat dan menyesuaikan daftar, Anda dapat menyimpan dokumen dalam berbagai format, termasuk DOCX dan PDF.
 
 ## Kesimpulan
 

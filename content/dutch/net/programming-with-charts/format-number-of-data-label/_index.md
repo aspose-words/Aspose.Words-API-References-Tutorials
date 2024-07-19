@@ -9,7 +9,7 @@ url: /nl/net/programming-with-charts/format-number-of-data-label/
 ---
 ## Invoering
 
-Bij het maken van boeiende en informatieve documenten gaat het vaak om het opnemen van diagrammen met goed opgemaakte gegevenslabels. Als u een .NET-ontwikkelaar bent en uw Word-documenten wilt verbeteren met geavanceerde grafieken, is Aspose.Words voor .NET een fantastische bibliotheek om u te helpen dat te bereiken. In deze zelfstudie wordt u stap voor stap door het proces geleid van het opmaken van nummerlabels in een diagram met Aspose.Words voor .NET.
+Bij het maken van boeiende en informatieve documenten gaat het vaak om het opnemen van diagrammen met goed opgemaakte gegevenslabels. Als u een .NET-ontwikkelaar bent en uw Word-documenten wilt uitbreiden met geavanceerde grafieken, is Aspose.Words voor .NET een fantastische bibliotheek om u daarbij te helpen. In deze zelfstudie wordt u stap voor stap door het proces geleid van het opmaken van nummerlabels in een diagram met Aspose.Words voor .NET.
 
 ## Vereisten
 

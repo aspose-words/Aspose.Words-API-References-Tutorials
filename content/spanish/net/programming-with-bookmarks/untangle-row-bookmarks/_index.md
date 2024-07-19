@@ -32,7 +32,7 @@ using System;
 
 ## Paso 1: cargue el documento de Word
 
-Comenzamos cargando el documento de Word que contiene los marcadores de filas enredadas. El`Document` La clase maneja la manipulación de documentos en Aspose.Words. A continuación se explica cómo cargar el documento:
+ Comenzamos cargando el documento de Word que contiene los marcadores de filas enredadas. El`Document` La clase maneja la manipulación de documentos en Aspose.Words. A continuación se explica cómo cargar el documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // Reemplace con la ubicación de su documento
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Compruebe si las filas son válidas y adyacentes
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Mover el final del marcador al último párrafo de la última celda de la fila superior
+		   //Mover el final del marcador al último párrafo de la última celda de la fila superior
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ Aquí hay una explicación paso a paso de lo que hace el código:
 
  Repetimos todos los marcadores del documento utilizando un`foreach` bucle.
 Para cada marcador, recuperamos la fila principal tanto del inicio del marcador (`bookmark.BookmarkStart`) y el final del marcador (`bookmark.BookmarkEnd` ) utilizando el`GetAncestor` método.
-Luego verificamos si se encuentran ambas filas (`row1 != null`y`row2 != null`y si son filas adyacentes (`row1.NextSibling == row2`). Esto garantiza que solo modifiquemos los marcadores que abarcan filas adyacentes.
+Luego verificamos si se encuentran ambas filas (`row1 != null`y`row2 != null`) y si son filas adyacentes (`row1.NextSibling == row2`). Esto garantiza que solo modifiquemos los marcadores que abarcan filas adyacentes.
 Si se cumplen las condiciones, movemos el nodo final del marcador al final del último párrafo en la última celda de la fila superior (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) desenredarlos efectivamente.
 
 ## Paso 3: eliminar fila por marcador
@@ -87,12 +87,12 @@ Aquí hay un desglose de esta función:
 
 Tomamos el nombre del marcador (`bookmarkName`) como entrada.
  Recuperamos el objeto marcador correspondiente usando`doc.Range.Bookmarks[bookmarkName]`.
- Luego comenzamos a usar la fila principal del marcador.`GetAncestor` (Similar a`Untangle` función).
+Luego comenzamos a usar la fila principal del marcador.`GetAncestor` (Similar a`Untangle` función).
 Finalmente, verificamos si el marcador y la fila existen (`bookmark != null` y
 
 ## Paso 4: verificar el desenredado
 
- Mientras que la`Untangle`La función debe garantizar la seguridad de otros marcadores, siempre es una buena práctica verificarlo. Así es como podemos verificar si el proceso de desenredado no eliminó accidentalmente el final de otro marcador:
+ Mientras que la`Untangle` La función debe garantizar la seguridad de otros marcadores, siempre es una buena práctica verificarlo. Así es como podemos verificar si el proceso de desenredado no eliminó accidentalmente el final de otro marcador:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

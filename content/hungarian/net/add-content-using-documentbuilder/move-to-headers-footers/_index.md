@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Ezután meg kell adnunk, hogy a fejléceknek és lábléceknek különbözniük kell az első, páros és páratlan oldalakon.
 
 ```csharp
-//Adja meg, hogy az első, a páros és a páratlan oldalak fejléceit és lábléceit eltérően szeretnénk-e használni.
+//Adja meg, hogy az első, a páros és a páratlan oldalak fejléceit és lábléceit eltérően szeretnénk megadni.
 builder.PageSetup.DifferentFirstPageHeaderFooter = true;
 builder.PageSetup.OddAndEvenPagesHeaderFooter = true;
 ```

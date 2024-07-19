@@ -97,7 +97,7 @@ Mais ne vous arrêtez pas là ! Explorez plus de fonctionnalités d'Aspose.Words
 ## FAQ
 
 ### Que sont les fonctionnalités OpenType ?
-Les fonctionnalités OpenType incluent des fonctionnalités typographiques avancées telles que les ligatures, le crénage et les jeux stylistiques qui améliorent l'apparence du texte dans les documents.
+Les fonctionnalités OpenType incluent des fonctionnalités typographiques avancées telles que les ligatures, le crénage et les ensembles stylistiques qui améliorent l'apparence du texte dans les documents.
 
 ### Pourquoi utiliser HarfBuzz avec Aspose.Words ?
 HarfBuzz est un moteur de mise en forme de texte open source qui offre une prise en charge robuste des fonctionnalités OpenType, améliorant ainsi la qualité typographique de vos documents.

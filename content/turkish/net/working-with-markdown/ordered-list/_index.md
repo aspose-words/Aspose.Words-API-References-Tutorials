@@ -2,96 +2,96 @@
 title: Sıralı Liste
 linktitle: Sıralı Liste
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile sıralı liste oluşturmayı öğrenin Adım adım kılavuz.
+description: Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerinde nasıl sıralı listeler oluşturacağınızı öğrenin. Belge oluşturmayı otomatikleştirmek için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/ordered-list/
 ---
+## giriiş
 
-Bu örnekte Aspose.Words for .NET ile sıralı liste fonksiyonunun nasıl kullanılacağını açıklayacağız. Sıralı Liste, öğeleri sayılarla sırayla düzenlemenize olanak tanır.
+Program aracılığıyla harika Word belgeleri oluşturmak için Aspose.Words for .NET'e dalmaya karar verdiniz. Harika seçim! Bugün, bir Word belgesinde sıralı bir listenin nasıl oluşturulacağını açıklayacağız. Bunu adım adım ilerleyeceğiz, bu nedenle ister kodlamaya yeni başlayan ister deneyimli bir profesyonel olun, bu kılavuzu son derece yararlı bulacaksınız. Başlayalım!
 
-## 1. Adım: Belge oluşturucuyu kullanma
+## Önkoşullar
 
-Öncelikle yeni bir belge oluşturmak için belge oluşturucuyu kullanacağız.
+Koda dalmadan önce ihtiyacınız olacak birkaç şey var:
+
+1.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. Eğer yoksa indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya herhangi bir .NET uyumlu IDE.
+3. Temel C# Bilgisi: Kolayca takip edebileceğiniz C# temelleri konusunda rahat olmalısınız.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words'ü projenizde kullanmak için gerekli ad alanlarını içe aktarmanız gerekir. Bu, çalışmaya başlamadan önce alet kutunuzu kurmaya benzer.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Kodu küçük adımlara ayıralım ve her bir parçayı açıklayalım. Hazır? İşte başlıyoruz!
+
+## 1. Adım: Belgeyi Başlatın
+
+Öncelikle yeni bir belge oluşturmanız gerekir. Bunu bilgisayarınızda boş bir Word belgesi açmak gibi düşünün.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Sıralı liste formatını uygulama
+Burada yeni bir belgeyi ve DocumentBuilder nesnesini başlatıyoruz. DocumentBuilder kaleminiz gibidir ve belgeye içerik yazmanıza olanak tanır.
 
- Belge oluşturucuyu kullanarak sıralı liste formatını uygulayacağız.`ApplyBulletDefault`yöntem. Ayrıca liste seviyelerine gidip istediğimiz formatı ayarlayarak numaralandırma formatını da özelleştirebiliriz.
+## 2. Adım: Numaralı Liste Formatını Uygulayın
+
+Şimdi varsayılan numaralandırılmış liste formatını uygulayalım. Bu, Word belgenizi numaralı madde işaretleri kullanacak şekilde ayarlamaya benzer.
 
 ```csharp
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
+builder.ListFormat.ApplyNumberDefault();
 ```
 
-## 3. Adım: Listeye öğe ekleme
+Bu kod satırı listenizin numaralandırmasını ayarlar. Kolay değil mi?
 
- Belge oluşturucuyu kullanarak listeye öğeler ekleyebiliriz.`Writeln` yöntem.
+## 3. Adım: Liste Öğelerini Ekleme
 
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## 4. Adım: Listeye girinti ekleyin
-
- Belge oluşturucuyu kullanarak listeyi girintili hale getirebiliriz`ListIndent` yöntem.
+Sonra listemize bazı öğeler ekleyelim. Bir alışveriş listesini not ettiğinizi hayal edin.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
-```
-
-## Adım 5: Belgeyi kaydetme
-
-Son olarak belgeyi istediğimiz formatta kaydedebiliriz.
-
-### Aspose.Words for .NET ile sıralı liste için örnek kaynak kodu
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+Bu satırlarla ilk iki maddeyi listenize eklemiş oluyorsunuz.
+
+## Adım 4: Listeyi Girintilendirin
+
+Bir öğenin altına alt öğeler eklemek isterseniz ne olur? Hadi bunu yapalım!
+
+```csharp
 builder.ListFormat.ListIndent();
 
 builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Tebrikler! Artık Aspose.Words for .NET ile sıralı liste özelliğini nasıl kullanacağınızı öğrendiniz.
+`ListIndent` yöntem, bir alt liste oluşturarak listeyi girintiler. Artık daha çok iç içe geçmiş yapılacaklar listesi gibi hiyerarşik bir liste oluşturuyorsunuz.
 
+## Çözüm
 
-### SSS'ler
+Bir Word belgesinde programlı olarak sıralı bir liste oluşturmak ilk başta göz korkutucu görünebilir, ancak Aspose.Words for .NET ile bu çok kolaydır. Bu basit adımları izleyerek belgelerinize kolayca liste ekleyebilir ve yönetebilirsiniz. İster rapor oluşturuyor olun, ister yapılandırılmış belgeler oluşturuyor olun, ister yalnızca iş akışlarınızı otomatikleştiriyor olun, Aspose.Words for .NET ihtiyacınızı karşılar. Peki neden bekleyelim? Kodlamaya başlayın ve sihrin ortaya çıktığını görün!
 
-#### S: Markdown'da sıralı bir liste nasıl oluşturulur?
+## SSS'ler
 
-C: Markdown'da sıralı bir liste oluşturmak için her liste öğesine bir sayı ve ardından bir nokta (`1.`, `2.`, `3.`), ardından bir boşluk gelir.
+### Listenin numaralandırma stilini özelleştirebilir miyim?  
+ Evet, numaralandırma stilini kullanarak özelleştirebilirsiniz.`ListFormat` özellikler. Romen rakamları, harfler vb. gibi farklı numaralandırma stillerini ayarlayabilirsiniz.
 
-#### S: Sıralı listeleri Markdown'da iç içe geçirebilir miyiz?
+### Daha fazla girinti düzeyini nasıl eklerim?  
+ Şunu kullanabilirsiniz:`ListIndent` Daha derin düzeyde alt listeler oluşturmak için yöntemi birden çok kez kullanın. Her çağrı`ListIndent` bir düzeyde girinti ekler.
 
-C: Evet, Markdown'da sıralı listeleri iç içe geçmiş her liste öğesinin önüne dört boşluk ekleyerek iç içe yerleştirmek mümkündür.
+### Madde işaretlerini ve numaralandırılmış listeleri karıştırabilir miyim?  
+ Kesinlikle! kullanarak aynı belge içinde farklı liste formatlarını uygulayabilirsiniz.`ListFormat` mülk.
 
-#### S: Sıralı listelerin numaralandırması nasıl özelleştirilir?
+### Önceki listeden numaralandırmaya devam etmek mümkün mü?  
+Evet, aynı liste formatını kullanarak numaralandırmaya devam edebilirsiniz. Aspose.Words, farklı paragraflardaki liste numaralandırmasını kontrol etmenize olanak tanır.
 
-C: Standart Markdown'da sıralı liste numaralandırması otomatik olarak oluşturulur. Ancak bazı Markdown düzenleyicileri, belirli uzantıları kullanarak onu özelleştirmenize izin verir.
-
-#### S: Markdown'daki sıralı listeler girintiyi destekliyor mu?
-
-C: Evet, Markdown'daki sıralı listeler girintiyi destekler. Boşlukları veya sekmeleri kullanarak sola kaydırma ekleyebilirsiniz.
-
-#### S: Liste öğelerine bağlantılar veya satır içi metin eklenebilir mi?
-
-C: Evet, uygun Markdown sözdizimini kullanarak liste öğelerine bağlantılar veya satır içi metin ekleyebilirsiniz.
+### Liste biçimini nasıl kaldırabilirim?  
+ Liste formatını arayarak kaldırabilirsiniz.`ListFormat.RemoveNumbers()`. Bu, liste öğelerini tekrar normal paragraflara dönüştürecektir.

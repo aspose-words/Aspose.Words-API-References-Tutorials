@@ -35,7 +35,7 @@ url: /ko/python-net/document-structure-and-content-manipulation/
 ### [Word 문서의 구조 및 내용 관리](./document-structure-content/)
 Aspose.Words for Python을 사용하여 Word 문서를 효율적으로 관리하는 방법을 알아보세요. 이 단계별 가이드에서는 문서 구조, 텍스트 조작, 서식 지정, 이미지, 표 등을 다룹니다. 
 ### [Word 문서에서 주석 기능 활용하기](./document-comments/)
-Aspose.Words for Python을 사용하여 Word 문서에서 주석 기능을 활용하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다. 협업을 강화하고 문서 검토를 간소화합니다.
+Aspose.Words for Python을 사용하여 Word 문서에서 주석 기능을 활용하는 방법을 알아보세요. 소스 코드가 포함된 단계별 가이드입니다. 협업을 강화하고 문서 검토를 간소화하세요.
 ### [Word 문서의 필드 및 데이터 처리](./document-fields/)
 Aspose.Words for Python을 사용하여 Word 문서의 필드와 데이터를 처리하는 방법을 알아보세요. 동적 콘텐츠, 자동화 등에 대한 코드 예제가 포함된 단계별 가이드입니다. 
 ### [Word 문서의 글꼴 및 텍스트 스타일 이해](./document-fonts/)

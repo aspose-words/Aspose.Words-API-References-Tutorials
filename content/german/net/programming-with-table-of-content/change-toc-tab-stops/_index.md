@@ -11,7 +11,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Erstellen, Bearbe
 
 ## Die Aspose.Words-Bibliothek verstehen
 
-Bevor Sie sich in den Code vertiefen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Textverarbeitung mit Word-Dokumenten einfach und effizient macht. Sie bietet eine breite Palette an Funktionen zum Erstellen, Bearbeiten und Manipulieren von Word-Dokumenten, einschließlich der Änderung von Inhaltsverzeichnis-Registerkarten.
+Bevor Sie sich in den Code vertiefen, ist es wichtig, die Aspose.Words-Bibliothek für .NET zu verstehen. Aspose.Words ist eine beliebte Bibliothek, die die Textverarbeitung mit Word-Dokumenten einfach und effizient macht. Sie bietet eine breite Palette an Funktionen zum Erstellen, Bearbeiten und Manipulieren von Word-Dokumenten, einschließlich der Änderung von Inhaltsverzeichnisregisterkarten.
 
 ## Laden des Dokuments mit dem Inhaltsverzeichnis
 

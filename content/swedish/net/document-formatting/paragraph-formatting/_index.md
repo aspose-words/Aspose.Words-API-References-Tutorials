@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- Vi konfigurerar`ParagraphFormat`egenskaper. Låt oss dela upp vad varje egenskap gör:
+Vi konfigurerar`ParagraphFormat` egenskaper. Låt oss dela upp vad varje egenskap gör:
 - Justering: Centrerar stycket.
 - LeftIndent: Ställer in vänster indrag till 50 punkter.
 - RightIndent: Ställer in höger indrag till 50 poäng.

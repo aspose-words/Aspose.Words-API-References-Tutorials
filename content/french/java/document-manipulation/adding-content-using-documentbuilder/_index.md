@@ -187,7 +187,7 @@ builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN,
 doc.save("path/to/your/document.docx");
 ```
 
-## Ajouter des paragraphes
+## Ajout de paragraphes
 
 ```java
 Document doc = new Document();

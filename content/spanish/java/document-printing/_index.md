@@ -12,7 +12,7 @@ La impresión de documentos es un aspecto esencial del procesamiento de textos y
 
 ## Explorando las capacidades de impresión de documentos
 
-En estos tutoriales, los desarrolladores profundizarán en los diversos aspectos de la impresión de documentos utilizando Aspose.Words para Java. Aprenderán a personalizar la configuración de impresión, como especificar el número de copias, seleccionar la impresora y ajustar la orientación de la página. Aspose.Words proporciona opciones flexibles para manejar requisitos de impresión complejos, incluida la impresión de páginas específicas, un rango de páginas o incluso un subconjunto de secciones del documento. Estos tutoriales guían a los desarrolladores a través del proceso de controlar mediante programación el proceso de impresión para satisfacer sus necesidades específicas.
+En estos tutoriales, los desarrolladores profundizarán en los diversos aspectos de la impresión de documentos utilizando Aspose.Words para Java. Aprenderán a personalizar la configuración de impresión, como especificar el número de copias, seleccionar la impresora y ajustar la orientación de la página. Aspose.Words proporciona opciones flexibles para manejar requisitos de impresión complejos, incluida la impresión de páginas específicas, un rango de páginas o incluso un subconjunto de secciones de documentos. Estos tutoriales guían a los desarrolladores a través del proceso de controlar mediante programación el proceso de impresión para satisfacer sus necesidades específicas.
 
 ## Optimización del rendimiento de impresión de documentos
 

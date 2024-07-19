@@ -193,7 +193,7 @@ public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
 
 ### 我可以更改條碼的顏色嗎？
 
-是的，您可以透過在程式碼中指定前景色和背景色來變更條碼的顏色。透過此自訂，您可以將條碼的外觀與文件的設計相符。
+是的，您可以透過在程式碼中指定前景色和背景色來變更條碼的顏色。此自訂可讓您將條碼的外觀與文件的設計相匹配。
 
 ### Aspose.Words for Java 支援哪些條碼類型？
 

@@ -43,4 +43,4 @@ Cree una tabla de contenidos fácil de leer con Aspose.Words para Python. Aprend
 ### [Proteger documentos con técnicas de protección avanzadas](./secure-documents-protection/)
 Asegure sus documentos con protección avanzada usando Aspose.Words para Python. Aprenda a agregar contraseñas, cifrar contenido, aplicar firmas digitales y más.
 ### [Gestión de firmas digitales y autenticidad](./manage-digital-signatures/)
-Aprenda a administrar firmas digitales y garantizar la autenticidad de los documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente.
+Aprenda a gestionar firmas digitales y garantizar la autenticidad de los documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente.

@@ -16,5 +16,5 @@ url: /ar/net/programming-with-ranges/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [نطاقات حذف النص في مستند Word](./ranges-delete-text/) | تعرف على كيفية حذف النص في نطاقات معينة في مستند Word باستخدام Aspose.Words لـ .NET. |
+| [نطاقات حذف النص في مستند Word](./ranges-delete-text/) | تعرف على كيفية حذف النص في نطاقات محددة في مستند Word باستخدام Aspose.Words لـ .NET. |
 | [النطاقات احصل على نص في مستند Word](./ranges-get-text/) | تعرف على كيفية استخراج النص بسهولة من مستند Word باستخدام Aspose.Words لـ .NET. |

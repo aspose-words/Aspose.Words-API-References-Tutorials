@@ -46,11 +46,11 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng văn
 
 #### Câu hỏi: Làm cách nào tôi có thể in nghiêng văn bản trong Aspose.Words?
 
-Đáp: Để in nghiêng văn bản trong Aspose.Words, bạn có thể sử dụng`Font.Italic` tài sản của`Run`sự vật. Bạn có thể đặt thuộc tính này thành`true` để in nghiêng văn bản cụ thể. Ví dụ, bạn có thể sử dụng`run.Font.Italic=true` để in nghiêng văn bản có trong`Run` sự vật.
+ Đáp: Để in nghiêng văn bản trong Aspose.Words, bạn có thể sử dụng`Font.Italic` tài sản của`Run`sự vật. Bạn có thể đặt thuộc tính này thành`true` để in nghiêng văn bản cụ thể. Ví dụ, bạn có thể sử dụng`run.Font.Italic=true` để in nghiêng văn bản có trong`Run` sự vật.
 
 #### Hỏi: Có thể in nghiêng nhiều đoạn văn bản trong cùng một đoạn văn không?
 
- Đ: Có, bạn có thể in nghiêng nhiều đoạn văn bản trong một đoạn văn bằng cách sử dụng nhiều`Run` các đối tượng. Bạn có thể tạo nhiều`Run` các đối tượng và thiết lập`Font.Italic`tài sản để`true` để mỗi đối tượng in nghiêng những phần văn bản mong muốn. Sau đó, bạn có thể thêm chúng vào đoạn văn bằng cách sử dụng`Paragraph.AppendChild(run)` phương pháp.
+ Đ: Có, bạn có thể in nghiêng nhiều đoạn văn bản trong một đoạn văn bằng cách sử dụng nhiều`Run` các đối tượng. Bạn có thể tạo nhiều`Run` các đối tượng và thiết lập`Font.Italic`tài sản để`true`để mỗi đối tượng in nghiêng những phần văn bản mong muốn. Sau đó, bạn có thể thêm chúng vào đoạn văn bằng cách sử dụng`Paragraph.AppendChild(run)` phương pháp.
 
 #### Câu hỏi: Tôi có thể in nghiêng văn bản trong bảng hoặc ô trong Aspose.Words không?
 

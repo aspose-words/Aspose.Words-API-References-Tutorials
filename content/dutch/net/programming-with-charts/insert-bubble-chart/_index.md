@@ -73,7 +73,7 @@ Chart chart = shape.Chart;
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 }, new double[] { 10, 4, 8 });
 ```
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Ten slotte slaan we ons document met het bellendiagram op in de opgegeven map. Hiermee is het proces voltooid.
 

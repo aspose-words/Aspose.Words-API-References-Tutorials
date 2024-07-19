@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 2: Buat dan format dokumen
- Buat sebuah instance dari`Document` kelas dan`DocumentBuilder` kelas untuk membuat dokumen. Menggunakan`Font` properti dari`DocumentBuilder`untuk mengakses properti pemformatan font.
+ Buat sebuah instance dari`Document` kelas dan`DocumentBuilder` kelas untuk membuat dokumen. Menggunakan`Font` properti dari`DocumentBuilder` untuk mengakses properti pemformatan font.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## Langkah 3: Simpan dokumen
- Menggunakan`Save` metode untuk menyimpan dokumen dengan format font yang diterapkan. Mengganti`"WorkingWithFonts.SetFontFormatting.docx"` dengan nama file yang diinginkan.
+ Menggunakan`Save`metode untuk menyimpan dokumen dengan format font yang diterapkan. Mengganti`"WorkingWithFonts.SetFontFormatting.docx"` dengan nama file yang diinginkan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

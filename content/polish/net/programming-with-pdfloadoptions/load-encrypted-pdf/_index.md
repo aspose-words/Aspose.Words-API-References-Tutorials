@@ -19,7 +19,7 @@ Funkcja Załaduj zaszyfrowany plik PDF w Aspose.Words dla .NET umożliwia ładow
 Pierwszym krokiem jest załadowanie zaszyfrowanego dokumentu PDF do aplikacji. Oto jak to zrobić:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
+//Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

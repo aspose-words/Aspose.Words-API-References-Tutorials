@@ -66,7 +66,7 @@ V tomto tutoriálu jsme prozkoumali funkci "Podle rozsahu stránek" Aspose.Words
 
 Použití funkce "Podle rozsahu stránek" může být užitečné, když potřebujete pracovat s konkrétními částmi dokumentu, jako je extrahování kapitol, oddílů nebo vybraných stránek. Aspose.Words for .NET poskytuje spolehlivé a přímočaré řešení pro extrakci stránek, což vám umožní efektivněji spravovat a manipulovat s dokumenty.
 
-Neváhejte a prozkoumejte další výkonné funkce nabízené Aspose.Words pro .NET, abyste zlepšili své možnosti zpracování dokumentů a zefektivnili svůj pracovní postup.
+Neváhejte a prozkoumejte další výkonné funkce, které nabízí Aspose.Words for .NET, abyste zlepšili své možnosti zpracování dokumentů a zefektivnili svůj pracovní postup.
 
 ### Nejčastější dotazy
 

@@ -10,7 +10,7 @@ url: /zh/java/document-conversion-and-export/using-document-shapes/
 
 ## Aspose.Words for Java 中使用文档形状的简介
 
-在本综合指南中，我们将深入探讨 Aspose.Words for Java 中的文档形状世界。形状是创建具有视觉吸引力和交互性的文档时必不可少的元素。无论您需要添加标注、按钮、图像还是水印，Aspose.Words for Java 都提供了高效完成这些操作的工具。让我们通过源代码示例逐步探索如何使用这些形状。
+在本综合指南中，我们将深入研究 Aspose.Words for Java 中的文档形状世界。形状是创建具有视觉吸引力和交互性的文档时必不可少的元素。无论您需要添加标注、按钮、图像还是水印，Aspose.Words for Java 都提供了高效完成这些操作的工具。让我们通过源代码示例逐步探索如何使用这些形状。
 
 ## 开始使用文档形状
 

@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-Bu adımda, şunu kullanıyoruz:`GetAncestor` Hem yer imi başlangıç hem de yer imi bitiş düğümlerinin üst satırını bulma yöntemi. Bu, ilgili satırları tam olarak belirlememize yardımcı olur.
+ Bu adımda, şunu kullanıyoruz:`GetAncestor` Hem yer imi başlangıç hem de yer imi bitiş düğümlerinin üst satırını bulma yöntemi. Bu, ilgili satırları tam olarak belirlememize yardımcı olur.
 
 ## Adım 4: Bitişik Satırları Kontrol Edin
 
@@ -83,7 +83,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
  Burada, her iki satırın da bulunup bulunmadığını ve bitişik olup olmadıklarını kontrol etmek için bir koşul ekliyoruz.`NextSibling` mülkiyet bitişikliği doğrulamamıza yardımcı olur.
 
-## Adım 5: Yer İşaretinin Sonunu Taşı
+## Adım 5: Yer İşaretinin Sonunu Taşıyın
 
 Son olarak, eğer koşullar karşılanırsa, yer imi bitiş düğümünü üst satırın son hücresindeki son paragrafın sonuna taşırız. Bu adım, yer imini etkili bir şekilde çözer.
 
@@ -93,11 +93,11 @@ Adım 5 Başlık: Yer İşaretinin Sonunu Taşıma
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-Bu adımda, şunu kullanıyoruz:`AppendChild`yer imi bitiş düğümünü taşıma yöntemi. Bunu üst satırın son hücresinin son paragrafına ekleyerek yer iminin doğru şekilde çözülmesini sağlıyoruz.
+ Bu adımda, şunu kullanıyoruz:`AppendChild` yer imi bitiş düğümünü taşıma yöntemi. Bunu üst satırın son hücresinin son paragrafına ekleyerek yer iminin doğru şekilde çözülmesini sağlıyoruz.
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretlerini çözmek göz korkutucu görünebilir, ancak bunu yönetilebilir adımlara bölerek süreç çok daha net hale gelir. Bir belge yükleme, yer imleri arasında yineleme yapma, ilgili satırları belirleme, bitişikliği kontrol etme ve son olarak yer imi uç düğümünü taşıma adımlarını inceledik. Bu kılavuzla, Word belgelerinizdeki yer işaretlerini daha etkili bir şekilde yönetebilmelisiniz.
+Aspose.Words for .NET kullanarak bir Word belgesindeki yer imlerini çözmek göz korkutucu görünebilir, ancak bunu yönetilebilir adımlara bölerek süreç çok daha net hale gelir. Bir belge yükleme, yer imleri arasında yineleme yapma, ilgili satırları belirleme, bitişikliği kontrol etme ve son olarak yer imi uç düğümünü taşıma adımlarını inceledik. Bu kılavuzla, Word belgelerinizdeki yer işaretlerini daha etkili bir şekilde yönetebilmelisiniz.
 
 ## SSS'ler
 

@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## Krok 4: Zkontrolujte nadřazený uzel a dokument vlastníka
- Nyní, když jsme vytvořili uzel odstavce, můžeme zkontrolovat, zda má nadřazený uzel a zda je vlastnící dokument stejný jako`doc`.
+Nyní, když jsme vytvořili uzel odstavce, můžeme zkontrolovat, zda má nadřazený uzel a zda je vlastnící dokument stejný jako`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ Odpověď: Ve většině případů je vlastník dokumentu uzlu určen při vytv
 
 #### Otázka: Jak získat přístup k uzlům dokumentu vlastníka?
 
- Odpověď: Pro přístup k uzlům v proprietárním dokumentu můžete použít metody a vlastnosti poskytované rozhraním XML API používaným ve vašem prostředí Node.js. Můžete například použít metody jako`getElementsByTagName` nebo`querySelector` vyberte konkrétní uzly v dokumentu.
+Odpověď: Pro přístup k uzlům v proprietárním dokumentu můžete použít metody a vlastnosti poskytované rozhraním XML API používaným ve vašem prostředí Node.js. Můžete například použít metody jako`getElementsByTagName` nebo`querySelector` vyberte konkrétní uzly v dokumentu.

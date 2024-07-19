@@ -47,7 +47,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 
 Nu kunt u de broncode uitvoeren om een specifiek paginabereik in uw document naar JPEG-afbeeldingen te converteren. Het resulterende bestand wordt opgeslagen in de opgegeven map met de naam "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg".
 
-### Voorbeeldbroncode voor Get Jpeg Page Range met Aspose.Words voor .NET
+### Voorbeeldbroncode voor Get Jpeg Page Range met Aspose.Words For .NET
 
 ```csharp 
  // Pad naar uw documentmap

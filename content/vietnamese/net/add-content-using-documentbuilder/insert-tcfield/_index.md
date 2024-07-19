@@ -34,7 +34,7 @@ using Aspose.Words.Fields;
 
 ## Bước 1: Thiết lập dự án của bạn
 
-Trước khi bắt đầu viết mã, hãy thiết lập dự án của chúng ta. Mở môi trường phát triển của bạn và tạo một dự án .NET mới. Đảm bảo thêm tham chiếu đến thư viện Aspose.Words for .NET. Nếu bạn đang sử dụng NuGet, bạn có thể dễ dàng cài đặt nó thông qua Bảng điều khiển quản lý gói:
+Trước khi bắt đầu viết mã, hãy thiết lập dự án của chúng ta. Mở môi trường phát triển của bạn và tạo một dự án .NET mới. Đảm bảo thêm tham chiếu đến thư viện Aspose.Words cho .NET. Nếu bạn đang sử dụng NuGet, bạn có thể dễ dàng cài đặt nó thông qua Bảng điều khiển quản lý gói:
 
 ```shell
 Install-Package Aspose.Words
@@ -64,7 +64,7 @@ Bây giờ đến phần thú vị đây. Chúng tôi sẽ chèn trường TC v�
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Dòng mã này yêu cầu Aspose.Words chèn trường TC có văn bản nhập "Văn bản nhập". Các`\\f t` một phần là một công tắc xác định cách hiển thị mục nhập trong Mục lục.
+ Dòng mã này yêu cầu Aspose.Words chèn trường TC có văn bản nhập "Văn bản nhập". Các`\\f t`một phần là một công tắc xác định cách hiển thị mục nhập trong Mục lục.
 
 ## Bước 4: Lưu tài liệu
 

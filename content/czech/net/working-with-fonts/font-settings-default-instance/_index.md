@@ -55,7 +55,7 @@ V tomto příkladu:
 
 ## Krok 3: Vložte dokument
 
- S nakonfigurovanými zdroji písem je dalším krokem načtení dokumentu do souboru Aspose.Words`Document`objekt. To vám umožní manipulovat a případně uložit dokument.
+ S nakonfigurovanými zdroji písem je dalším krokem načtení dokumentu do souboru Aspose.Words`Document` objekt. To vám umožní manipulovat a případně uložit dokument.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Passo 3: Configure as opções de salvamento do PDF
 
- Para incorporar todas as fontes no PDF resultante, precisamos configurar o`PdfSaveOptions` objeto com o`EmbedFullFonts` propriedade definida como`true`. Isso garante que todas as fontes usadas no documento sejam incluídas no arquivo PDF gerado.
+ Para incorporar todas as fontes no PDF resultante, precisamos configurar o`PdfSaveOptions` objeto com o`EmbedFullFonts` propriedade definida como`true`. Isso garante que todas as fontes utilizadas no documento sejam incluídas no arquivo PDF gerado.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
@@ -94,7 +94,7 @@ Preservação da formatação: as fontes incorporadas preservam a formatação e
 Legibilidade aprimorada: A incorporação de fontes garante melhor legibilidade do documento, pois as fontes especificadas são usadas para exibir o texto, mesmo que as fontes originais não estejam disponíveis.
 
 #### P: A incorporação de todas as fontes aumenta o tamanho do arquivo PDF?
-R: Sim, incorporar todas as fontes em um documento PDF pode aumentar o tamanho do arquivo PDF gerado, pois os dados da fonte devem ser incluídos no arquivo. No entanto, este aumento no tamanho é geralmente insignificante para a maioria dos documentos, e os benefícios da incorporação de fontes muitas vezes superam este ligeiro aumento no tamanho.
+R: Sim, incorporar todas as fontes em um documento PDF pode aumentar o tamanho do arquivo PDF gerado, pois os dados da fonte devem ser incluídos no arquivo. No entanto, esse aumento no tamanho geralmente é insignificante para a maioria dos documentos, e os benefícios da incorporação de fontes geralmente superam esse ligeiro aumento no tamanho.
 
 #### P: Posso selecionar fontes específicas para incorporar em um documento PDF?
  R: Sim, com Aspose.Words for .NET você pode selecionar fontes específicas para incorporar em um documento PDF usando opções de configuração avançadas. Por exemplo, você pode usar o`SubsetFonts` propriedade do`PdfSaveOptions` objeto para especificar quais fontes incluir ou usar opções adicionais para definir filtros de seleção de fontes personalizados.

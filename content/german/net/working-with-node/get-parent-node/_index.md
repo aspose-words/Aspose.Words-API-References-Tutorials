@@ -62,7 +62,7 @@ A: Der übergeordnete Knoten in Node.js bezieht sich auf den nächsthöheren Kno
 
 #### F: Wie erhalte ich den übergeordneten Knoten eines bestimmten Knotens?
 
-A: Um den übergeordneten Knoten eines bestimmten Knotens abzurufen, können Sie den`parentNode` Eigenschaft des Knotens. Diese Eigenschaft gibt den übergeordneten Knoten des aktuellen Knotens zurück.
+ A: Um den übergeordneten Knoten eines bestimmten Knotens abzurufen, können Sie den`parentNode` Eigenschaft des Knotens. Diese Eigenschaft gibt den übergeordneten Knoten des aktuellen Knotens zurück.
 
 #### F: Wie kann ich überprüfen, ob ein Knoten einen übergeordneten Knoten hat?
 
@@ -70,7 +70,7 @@ A: Um den übergeordneten Knoten eines bestimmten Knotens abzurufen, können Sie
 
 #### F: Können wir den übergeordneten Knoten eines Knotens ändern?
 
- A: In den meisten Fällen wird der übergeordnete Knoten eines Knotens durch die Struktur des XML-Dokuments bestimmt und kann nicht direkt geändert werden. Sie können einen Knoten jedoch mithilfe bestimmter Methoden in einen anderen Knoten verschieben, z. B.`appendChild` oder`insertBefore`.
+A: In den meisten Fällen wird der übergeordnete Knoten eines Knotens durch die Struktur des XML-Dokuments bestimmt und kann nicht direkt geändert werden. Sie können einen Knoten jedoch mithilfe bestimmter Methoden in einen anderen Knoten verschieben, z. B.`appendChild` oder`insertBefore`.
 
 #### F: Wie durchsuche ich die Hierarchie der übergeordneten Knoten?
 

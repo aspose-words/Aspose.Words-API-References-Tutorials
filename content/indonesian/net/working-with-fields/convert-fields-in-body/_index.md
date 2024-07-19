@@ -74,7 +74,7 @@ Menguasai seni memanipulasi bidang dokumen menggunakan Aspose.Words untuk .NET m
 ## Pertanyaan yang Sering Diajukan (FAQ)
 
 ### Apa bidang dokumen di Aspose.Words untuk .NET?
-Bidang dokumen di Aspose.Words adalah placeholder yang dapat menyimpan dan menampilkan data dinamis, seperti tanggal, nomor halaman, dan penghitungan.
+Bidang dokumen di Aspose.Words adalah placeholder yang dapat menyimpan dan menampilkan data dinamis, seperti tanggal, nomor halaman, dan perhitungan.
 
 ### Bagaimana cara menangani berbagai jenis bidang di Aspose.Words untuk .NET?
 Aspose.Words mendukung berbagai jenis bidang seperti DATE, PAGE, MERGEFIELD, dan banyak lagi, memungkinkan pengembang untuk memanipulasinya secara terprogram.

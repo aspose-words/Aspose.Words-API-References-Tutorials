@@ -81,7 +81,7 @@ Aspose.Words for .NET هي مكتبة قوية تتيح لك إنشاء مستن
 يمكن لـ Aspose.Words اكتشاف أنواع الحماية المختلفة مثل NoProtection وReadOnly وAllowOnlyRevisions وAllowOnlyComments وAllowOnlyFormFields.
 
 ### كيف يمكنني الحصول على الدعم إذا واجهت مشاكل؟
- لأية مشاكل، يمكنك زيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) للمساعدة.
+ لأية مشاكل، يمكنك زيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8)للمساعدة.
 
 ### هل Aspose.Words متوافق مع .NET Core؟
 نعم، Aspose.Words متوافق مع كل من .NET Framework و.NET Core.

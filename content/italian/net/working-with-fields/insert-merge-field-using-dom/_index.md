@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Successivamente, dobbiamo spostare il cursore su un paragrafo specifico del documento in cui vogliamo inserire il campo di unione.
 
 ```csharp
-// Sposta il cursore sul paragrafo.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Passaggio 6: inserire il campo Unisci

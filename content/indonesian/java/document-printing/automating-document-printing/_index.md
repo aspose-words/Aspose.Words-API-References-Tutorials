@@ -69,7 +69,7 @@ public static void main(String[] args) throws Exception {
 
 ## Kesimpulan
 
-Mengotomatiskan pencetakan dokumen menggunakan Aspose.Words untuk Java dapat menyederhanakan alur kerja Anda secara signifikan dan menghemat waktu Anda yang berharga. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat dengan mudah mengintegrasikan otomatisasi pencetakan dokumen ke dalam aplikasi Java Anda.
+Mengotomatiskan pencetakan dokumen menggunakan Aspose.Words untuk Java dapat menyederhanakan alur kerja Anda secara signifikan dan menghemat waktu Anda yang berharga. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat mengintegrasikan otomatisasi pencetakan dokumen ke dalam aplikasi Java Anda dengan lancar.
 
 ## FAQ
 
@@ -79,7 +79,7 @@ Mengotomatiskan pencetakan dokumen menggunakan Aspose.Words untuk Java dapat men
 
 ### Bisakah saya mengotomatiskan tugas terkait dokumen lainnya dengan Aspose.Words untuk Java?
 
-Ya, Aspose.Words untuk Java menyediakan berbagai kemampuan otomatisasi dokumen. Anda dapat melakukan tugas-tugas seperti konversi dokumen, ekstraksi teks, dan banyak lagi. Jelajahi dokumentasi Aspose.Words untuk detail yang komprehensif.
+Ya, Aspose.Words untuk Java menyediakan berbagai kemampuan otomatisasi dokumen. Anda dapat melakukan tugas-tugas seperti konversi dokumen, ekstraksi teks, dan banyak lagi. Jelajahi dokumentasi Aspose.Words untuk detail komprehensif.
 
 ### Apakah Aspose.Words untuk Java kompatibel dengan format dokumen yang berbeda?
 

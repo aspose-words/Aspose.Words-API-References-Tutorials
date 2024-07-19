@@ -32,7 +32,7 @@ using System;
 
 ## Bước 1: Tải tài liệu Word
 
-Chúng tôi bắt đầu bằng cách tải tài liệu Word có chứa dấu trang hàng rối. Các`Document` lớp xử lý thao tác tài liệu trong Aspose.Words. Đây là cách tải tài liệu:
+ Chúng tôi bắt đầu bằng cách tải tài liệu Word có chứa dấu trang hàng rối. Các`Document` lớp xử lý thao tác tài liệu trong Aspose.Words. Đây là cách tải tài liệu:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // Thay thế bằng vị trí tài liệu của bạn
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Kiểm tra xem các hàng có hợp lệ và liền kề không
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Di chuyển phần cuối dấu trang đến đoạn cuối cùng của ô cuối cùng ở hàng trên cùng
+		   //Di chuyển phần cuối dấu trang đến đoạn cuối cùng của ô cuối cùng ở hàng trên cùng
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ Dưới đây là giải thích từng bước về chức năng của mã:
 
  Chúng tôi lặp qua tất cả dấu trang trong tài liệu bằng cách sử dụng`foreach` vòng.
 Đối với mỗi dấu trang, chúng tôi truy xuất hàng gốc của cả dấu trang bắt đầu (`bookmark.BookmarkStart`) và phần cuối dấu trang (`bookmark.BookmarkEnd` ) sử dụng`GetAncestor` phương pháp.
-Sau đó chúng tôi kiểm tra xem cả hai hàng có được tìm thấy không (`row1 != null`Và`row2 != null`và nếu chúng là các hàng liền kề (`row1.NextSibling == row2`). Điều này đảm bảo chúng tôi chỉ sửa đổi dấu trang trải dài trên các hàng liền kề.
+Sau đó chúng tôi kiểm tra xem cả hai hàng có được tìm thấy không (`row1 != null`Và`row2 != null`) và nếu chúng là các hàng liền kề (`row1.NextSibling == row2`). Điều này đảm bảo chúng tôi chỉ sửa đổi dấu trang trải dài trên các hàng liền kề.
 Nếu đáp ứng các điều kiện, chúng ta di chuyển nút cuối dấu trang đến cuối đoạn cuối trong ô cuối cùng của hàng trên cùng (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) gỡ rối chúng một cách hiệu quả.
 
 ## Bước 3: Xóa hàng theo dấu trang
@@ -87,12 +87,12 @@ private void DeleteRowByBookmark(Document doc, string bookmarkName)
 
 Chúng tôi lấy tên dấu trang (`bookmarkName`) làm đầu vào.
  Chúng tôi truy xuất đối tượng đánh dấu tương ứng bằng cách sử dụng`doc.Range.Bookmarks[bookmarkName]`.
- Sau đó chúng tôi lấy hàng gốc của dấu trang bắt đầu sử dụng`GetAncestor` (tương tự như`Untangle` chức năng).
+Sau đó chúng tôi lấy hàng gốc của dấu trang bắt đầu sử dụng`GetAncestor` (tương tự như`Untangle` chức năng).
 Cuối cùng, chúng tôi kiểm tra xem dấu trang và hàng có tồn tại không (`bookmark != null` Và
 
 ## Bước 4: Xác minh gỡ rối
 
- Trong khi`Untangle`phải đảm bảo sự an toàn của các dấu trang khác, việc xác minh luôn là một cách tốt. Dưới đây là cách chúng tôi có thể kiểm tra xem quá trình gỡ rối có vô tình xóa phần cuối của dấu trang khác hay không:
+ Trong khi`Untangle` phải đảm bảo sự an toàn của các dấu trang khác, việc xác minh luôn là một cách tốt. Dưới đây là cách chúng tôi có thể kiểm tra xem quá trình gỡ rối có vô tình xóa phần cuối của dấu trang khác hay không:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -135,4 +135,4 @@ Hiện tại, mã này tập trung vào việc gỡ rối các dấu trang trả
 
 ### Có bất kỳ hạn chế nào khi sử dụng phương pháp này không?
 
-Cách tiếp cận này giả định rằng dấu trang được xác định rõ ràng trong các ô của bảng. Nếu dấu trang được đặt bên ngoài ô hoặc ở vị trí không mong muốn thì quá trình gỡ rối có thể không hoạt động như dự kiến.
+Cách tiếp cận này giả định rằng dấu trang được xác định rõ ràng trong các ô của bảng. Nếu dấu trang được đặt bên ngoài ô hoặc ở vị trí không mong muốn thì quá trình gỡ rối có thể không hoạt động như dự định.

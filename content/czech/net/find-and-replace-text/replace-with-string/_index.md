@@ -40,7 +40,7 @@ Pro začátek potřebujeme adresář, kde budou umístěny naše dokumenty. To j
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Nahradit`"YOUR DOCUMENT DIRECTORY"` s cestou k vašemu adresáři dokumentů. Toto je domovská základna pro naše soubory.
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` s cestou k adresáři s dokumenty. Toto je domovská základna pro naše soubory.
 
 ## Krok 2: Inicializujte dokument a tvůrce
 

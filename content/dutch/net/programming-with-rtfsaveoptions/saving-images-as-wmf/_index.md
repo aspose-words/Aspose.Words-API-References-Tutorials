@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOption
 
 In deze zelfstudie hebben we de functionaliteit onderzocht van het opslaan van afbeeldingen als WMF met RTF-opslagopties in Aspose.Words voor .NET. We hebben geleerd hoe u afbeeldingen uit een document in WMF-indeling kunt opslaan bij het converteren naar RTF-indeling.
 
-Deze functie is handig als u de kwaliteit en resolutie van afbeeldingen in uw RTF-documenten wilt behouden. Door afbeeldingen op te slaan in WMF-formaat, zorgt u ervoor dat het uiterlijk en de scherpte intact blijven.
+Deze functie is handig als u de kwaliteit en resolutie van afbeeldingen in uw RTF-documenten wilt behouden. Door afbeeldingen op te slaan in WMF-formaat, kunt u ervoor zorgen dat hun uiterlijk en scherpte intact blijven.
 
 Aspose.Words voor .NET biedt veel geavanceerde functies voor het manipuleren en genereren van documenten. Het opslaan van afbeeldingen in WMF-formaat tijdens het converteren naar RTF-formaat is een van de vele krachtige tools die het u biedt.
 

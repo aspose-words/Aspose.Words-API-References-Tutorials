@@ -2,126 +2,93 @@
 title: 列出使用目标样式
 linktitle: 列出使用目标样式
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 无缝合并和管理文档列表。按照我们的分步教程进行高效的文档集成。
+description: 了解如何使用 Aspose.Words for .NET 合并 Word 文档而不丢失列表格式。分步指南可帮助您保持文档样式完好无损。
 type: docs
 weight: 10
 url: /zh/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## 介绍
 
-集成文档并保持一致的样式可能具有挑战性，尤其是列表。Aspose.Words for .NET 提供了强大的工具来管理这些复杂性，确保您的文档保持其格式完整性。本教程将指导您完成将文档与列表合并的过程，并使用目标样式来获得精美的最终产品。
+您是否曾尝试合并 Word 文档，但却被格式问题所困扰？有时就像试图混合油和水，对吗？好吧，今天我们将深入研究使用 Aspose.Words for .NET 的巧妙技巧，它将帮助您摆脱这种麻烦。我们将学习如何将列表从一个文档导入另一个文档，而不会弄乱编号和样式。准备好让您的生活更轻松了吗？让我们开始吧！
 
 ## 先决条件
 
-在深入学习本教程之前，请确保您已具备以下条件：
-- 您的机器上安装了 Visual Studio。
-- Aspose.Words for .NET 库集成到您的项目中。
-- 对 C# 编程语言有基本的了解。
+在我们进入魔法世界之前，让我们先确保你已经拥有了所需的一切：
+
+1.  Aspose.Words for .NET：如果您还没有下载，请下载[这里](https://releases.aspose.com/words/net/).
+2. Visual Studio：任何最新版本都可以。
+3. 对 C# 的基本了解：您不需要成为一名巫师，但有一定的熟悉度会有所帮助。
+
+确保已在项目中安装并设置了 Aspose.Words。如果您不确定如何操作，[文档](https://reference.aspose.com/words/net/)是一个很好的起点。
 
 ## 导入命名空间
 
-首先导入必要的命名空间以利用 Aspose.Words 功能：
+首先，让我们在 C# 文件中导入必要的命名空间：
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.Lists;
+using Aspose.Words.Saving;
 ```
 
-让我们将这个过程分解为明确的步骤：
+明白了吗？太棒了。现在让我们一步步来分析一下。
 
 ## 步骤 1：设置文档路径
 
-确保您已定义文档所在的目录路径：
+每个项目都从组织文件开始。让我们将代码指向存储文档的目录。
 
 ```csharp
-string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-代替`"YOUR_DOCUMENT_DIRECTORY_PATH"`使用存储文档的实际目录路径。
+代替`"YOUR DOCUMENT DIRECTORY"`替换为文档存储的实际路径。很简单，对吧？
 
-## 步骤 2：加载源文档和目标文档
+## 第 2 步：加载源文档和目标文档
 
-使用 Aspose.Words 加载源文档和目标文档：
+接下来，我们需要加载源文档和目标文档。可以将其想象为在计算机上打开两个 Word 文件。
 
 ```csharp
-Document srcDoc = new Document(dataDir + "DocumentSource.docx");
-Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
+Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-调整`"DocumentSource.docx"`和`"DocumentDestination.docx"`使用您的实际文件名。
+这里，`srcDoc`是您的源文档（包含您要复制的列表的文档），并且`dstDoc`是您的目标文档（您想要粘贴这些列表的文档）。
 
-## 步骤 3：设置源文档的节开始
+## 步骤 3：配置导入选项
 
-为了确保文档顺利合并，请设置源文档的章节开始：
+我们需要指定一些选项以确保列表正确导入。此步骤可确保如果发生任何编号冲突，则保留源文档中的编号。
 
 ```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-此设置有助于保持文档之间的连续性。
+## 步骤 4：将源文档附加到目标文档
 
-## 步骤 4：管理列表集成
-
-遍历源文档中的段落来处理列表项：
+现在，让我们进行合并。这就是奇迹发生的地方。我们使用指定的导入选项将源文档附加到目标文档。
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-此代码段确保源文档中的列表无缝集成到目标文档中，并保持其原始格式。
-
-## 步骤 5：将源文档附加到目标文档
-
-将修改后的源文档合并到目标文档中：
-
-```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-```
-
-此命令合并文档同时保留目标样式。
+您已成功合并两个文档，且列表保持完整。
 
 ## 结论
 
-通过遵循这些步骤，您可以使用 Aspose.Words for .NET 有效地管理和合并文档之间的列表。这种方法可确保您的最终文档保持一致的样式和格式，从而提高整体文档管理效率。
+就是这样！使用 Aspose.Words for .NET，合并文档变得轻而易举，无需担心格式问题。无论您是在处理大型项目还是只需要整理一些文件，此方法都能让您的列表保持清晰。因此，下次您遇到文档合并难题时，请记住本指南并像专业人士一样解决它！
 
 ## 常见问题解答
 
-### 如何使用 Aspose.Words for .NET 处理嵌套列表？
-Aspose.Words 提供了通过迭代文档节点和检查列表结构来管理嵌套列表的方法。
+### 什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个功能强大的库，可用于以编程方式处理 Word 文档。它允许您创建、修改和转换各种格式的文档。
 
-### 在文档合并中使用目标样式有哪些好处？
-目标样式有助于保持合并文档的格式统一，确保专业的外观。
+### 如何安装 Aspose.Words for .NET？
+您可以从[网站](https://releases.aspose.com/words/net/)并按照安装说明进行操作[文档](https://reference.aspose.com/words/net/).
 
-### Aspose.Words 是否支持跨平台文档合并？
-是的，Aspose.Words 支持跨各种平台的文档合并，包括 Windows 和 Linux 环境。
+### 我可以免费使用 Aspose.Words 吗？
+ Aspose.Words 提供[免费试用](https://releases.aspose.com/)功能有限。如需完全访问，您需要购买许可证[这里](https://purchase.aspose.com/buy).
 
-### 我可以在文档合并期间自定义列表格式吗？
-Aspose.Words 允许对列表格式进行广泛的自定义，从而实现定制的文档集成解决方案。
+### 什么是 ImportFormatOptions？
+ ImportFormatOptions 允许您指定在将内容从一个文档导入另一个文档时如何处理格式。例如，`KeepSourceNumbering`确保保留源文档的列表编号。
 
-### 在哪里可以找到有关使用 Aspose.Words 进行高级文档管理的更多资源？
-探索[Aspose.Words 文档](https://reference.aspose.com/words/net/)获得全面的指南和 API 参考。
+### 我可以在哪里获得 Aspose.Words 的支持？
+您可以从[Aspose.Words 论坛](https://forum.aspose.com/c/words/8)，您可以在这里提出问题并获得社区和 Aspose 开发人员的帮助。

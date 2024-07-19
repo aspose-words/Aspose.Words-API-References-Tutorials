@@ -97,7 +97,7 @@ options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
 
  Uitleg: De`PdfSaveOptions` Met class kunt u opgeven hoe het document als PDF moet worden opgeslagen. De`BookmarksOutlineLevels` eigenschap definieert de hiërarchie van de bladwijzers in de PDF.
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Sla het document op als PDF
 

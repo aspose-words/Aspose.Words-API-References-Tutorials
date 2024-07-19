@@ -64,7 +64,7 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
         paragraph.get_range().replace(text_to_replace, new_text, False, False)
 ```
 
-## Görsellerin Kaldırılması
+## Resimlerin Kaldırılması
 
 Belgeden görselleri kaldırmanız gerekiyorsa benzer bir yaklaşım kullanabilirsiniz. Öncelikle görselleri tanımlayın ve ardından kaldırın:
 

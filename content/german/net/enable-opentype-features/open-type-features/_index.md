@@ -40,7 +40,7 @@ Lassen Sie uns das Beispiel nun im Format einer Schritt-für-Schritt-Anleitung i
 
 ### Hinzufügen einer Aspose.Words-Referenz
 
-Um Aspose.Words zu verwenden, müssen Sie es zu Ihrem Projekt hinzufügen. Sie können dies über den NuGet Package Manager tun:
+Um Aspose.Words zu verwenden, müssen Sie es zu Ihrem Projekt hinzufügen. Sie können dies über den NuGet-Paketmanager tun:
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt.
 2. Wählen Sie „NuGet-Pakete verwalten“ aus.

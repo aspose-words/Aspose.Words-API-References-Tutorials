@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Langkah 3: Akses tabel
- Untuk menerapkan batas garis besar, kita perlu mengakses tabel di dokumen. Itu`Table` kelas mewakili tabel di Aspose.Words.
+ Untuk menerapkan batas garis, kita perlu mengakses tabel di dokumen. Itu`Table` kelas mewakili tabel di Aspose.Words.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

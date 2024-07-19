@@ -151,7 +151,7 @@ try {
 }
 ```
 
-### 解决常见问题
+### 常见问题故障排除
 
 如果在打印过程中遇到任何问题，请参阅[Aspose.Words for Java API 参考](https://reference.aspose.com/words/java/)了解故障排除步骤和社区支持。
 
@@ -197,7 +197,7 @@ Aspose.Words for Java 可以与大多数支持通过 Java 应用程序打印文�
 
 ### 我可以从网络应用程序打印文档吗？
 
-是的，您可以使用 Aspose.Words for Java 以编程方式从 Web 应用程序打印文档。
+是的，您可以使用 Aspose.Words for Java 从 Web 应用程序以编程方式打印文档。
 
 ### 如何打印大型文档的特定页面？
 

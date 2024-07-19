@@ -2,7 +2,7 @@
 title: Цитировать
 linktitle: Цитировать
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как использовать цитату с Aspose.Words для .NET. Пошаговое руководство.
+description: Узнайте, как использовать цитату с Aspose.Words for .NET. Пошаговое руководство.
 type: docs
 weight: 10
 url: /ru/net/working-with-markdown/quote/
@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Шаг 3. Создание стилей для вложенных уровней
 
- Мы можем создавать стили для вложенных уровней, используя команду`Styles.Add` метод`Document` объект. В этом примере мы создаем стиль под названием «Quote1», который представляет собой вложенный уровень котировок.
+ Мы можем создавать стили для вложенных уровней, используя команду`Styles.Add` метод`Document`объект. В этом примере мы создаем стиль под названием «Quote1», который представляет собой вложенный уровень котировок.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

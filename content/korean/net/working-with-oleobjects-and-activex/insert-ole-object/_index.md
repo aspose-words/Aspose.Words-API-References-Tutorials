@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3단계: OLE 개체 삽입
- 문서 작성기 사용`InsertOleObject` 문서에 OLE 개체를 삽입하는 방법입니다. OLE 개체 URL, 개체 유형, 표시 옵션 및 기타 필요한 설정을 지정합니다.
+ 문서 작성기 사용`InsertOleObject`문서에 OLE 개체를 삽입하는 방법입니다. OLE 개체 URL, 개체 유형, 표시 옵션 및 기타 필요한 설정을 지정합니다.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Q: 문서에 OLE 개체를 삽입하는 방법은 무엇입니까?
 
- 답변:`InsertOleObject`문서 작성기의 메소드(`DocumentBuilder`) 문서에 OLE 개체를 삽입합니다. OLE 개체 URL, 개체 유형, 표시 옵션 및 기타 필요한 설정을 지정합니다. 예는 다음과 같습니다.
+ 답변:`InsertOleObject` 문서 작성기의 메소드(`DocumentBuilder`) 문서에 OLE 개체를 삽입합니다. OLE 개체 URL, 개체 유형, 표시 옵션 및 기타 필요한 설정을 지정합니다. 예는 다음과 같습니다.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
 
 #### Q: 문서를 어떻게 저장하나요?
 
- A: 문서를 사용하세요`Save` 문서를 파일로 저장하는 방법입니다. 예는 다음과 같습니다.
+ A: 문서를 사용하세요`Save`문서를 파일로 저장하는 방법입니다. 예는 다음과 같습니다.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

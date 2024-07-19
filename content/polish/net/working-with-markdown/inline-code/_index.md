@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-markdown/inline-code/
 ---
 
-W tym przykładzie przeprowadzimy Cię przez proces korzystania z funkcji kodu wbudowanego w Aspose.Words dla .NET. Kod wbudowany służy do wizualnego przedstawiania fragmentów kodu w akapicie.
+tym przykładzie przeprowadzimy Cię przez proces korzystania z funkcji kodu wbudowanego w Aspose.Words dla .NET. Kod wbudowany służy do wizualnego przedstawiania fragmentów kodu w akapicie.
 
 ## Krok 1: Korzystanie z generatora dokumentów
 
@@ -66,11 +66,11 @@ Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji kodu wbudowanego w 
 
 #### P: Jak mogę użyć kodu wbudowanego w Aspose.Words?
 
- Odp.: Aby użyć kodu wbudowanego w Aspose.Words, możesz użyć odpowiednich znaczników, aby otoczyć tekst, który ma być sformatowany jako kod wbudowany. Można na przykład użyć`<code>` Lub`<kbd>` znacznik do otaczania tekstu, który ma być sformatowany jako kod wbudowany.
+Odp.: Aby użyć kodu wbudowanego w Aspose.Words, możesz użyć odpowiednich znaczników, aby otoczyć tekst, który ma być sformatowany jako kod wbudowany. Można na przykład użyć`<code>` Lub`<kbd>` znacznik do otaczania tekstu, który ma być sformatowany jako kod wbudowany.
 
 #### P: Czy można określić czcionkę lub kolor kodu wbudowanego w Aspose.Words?
 
- O: Tak, możesz określić czcionkę lub kolor kodu wbudowanego w Aspose.Words. Możesz skorzystać z`Font.Name`I`Font.Color` właściwości`Run` obiekt, aby ustawić czcionkę i kolor kodu wbudowanego. Możesz na przykład użyć`run.Font.Name = "Courier New"` aby określić czcionkę dla kodu wbudowanego i`run.Font.Color = Color.Blue`aby określić kolor.
+ O: Tak, możesz określić czcionkę lub kolor kodu wbudowanego w Aspose.Words. Możesz skorzystać z`Font.Name`I`Font.Color` właściwości`Run` obiekt, aby ustawić czcionkę i kolor kodu wbudowanego. Możesz na przykład użyć`run.Font.Name = "Courier New"` aby określić czcionkę dla kodu wbudowanego i`run.Font.Color = Color.Blue` aby określić kolor.
 
 #### P: Czy mogę użyć kodu wbudowanego w akapicie zawierającym inne elementy tekstowe?
 

@@ -36,7 +36,7 @@ Agora, vamos analisar passo a passo o processo de localização e substituição
 
 ## Etapa 1: configurando seu diretório de documentos
 
-Primeiramente, vamos configurar o caminho para o diretório de documentos. É aqui que o seu documento Word será salvo após a substituição do texto.
+Primeiramente, vamos configurar o caminho para o diretório de documentos. É aqui que o seu documento do Word será salvo após a substituição do texto.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 3: قم بإدراج كائن OLE مع حزمة OLE
- استخدم منشئ المستندات`InsertOleObject` طريقة لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
+ استخدم منشئ المستندات`InsertOleObject`طريقة لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### س: كيفية إدراج كائن OLE مع حزمة OLE في المستند؟
 
- ج: استخدم`InsertOleObject`طريقة منشئ المستندات (`DocumentBuilder`) لإدراج كائن OLE مع حزمة OLE في المستند. حدد تدفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى. هنا مثال :
+ ج: استخدم`InsertOleObject` طريقة منشئ المستندات (`DocumentBuilder`) لإدراج كائن OLE مع حزمة OLE في المستند. حدد دفق البيانات ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى. هنا مثال :
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### س: كيفية حفظ الوثيقة؟
 
- ج: استخدم الوثيقة`Save` طريقة حفظ المستند في ملف . هنا مثال :
+ ج: استخدم الوثيقة`Save`طريقة حفظ المستند في ملف . هنا مثال :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

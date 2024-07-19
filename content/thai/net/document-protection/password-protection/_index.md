@@ -15,10 +15,10 @@ url: /th/net/document-protection/password-protection/
 
 ก่อนที่เราจะเจาะลึกถึงสาระสำคัญของการป้องกันด้วยรหัสผ่านในเอกสาร Word ของคุณ มีบางสิ่งที่คุณต้องการ:
 
-1. Aspose.Words สำหรับ .NET: ตรวจสอบให้แน่ใจว่าคุณมีไลบรารี Aspose.Words สำหรับ .NET คุณสามารถ[ดาวน์โหลดได้ที่นี่](https://releases.aspose.com/words/net/).
+1.  Aspose.Words สำหรับ .NET: ตรวจสอบให้แน่ใจว่าคุณมีไลบรารี Aspose.Words สำหรับ .NET คุณสามารถ[ดาวน์โหลดได้ที่นี่](https://releases.aspose.com/words/net/).
 2. สภาพแวดล้อมการพัฒนา: Visual Studio หรือสภาพแวดล้อมการพัฒนา C# อื่น ๆ
 3. ความรู้พื้นฐาน C#: ความเข้าใจพื้นฐานของการเขียนโปรแกรม C#
-4.  Aspose License: รับใบอนุญาตจาก[ที่นี่](https://purchase.aspose.com/buy) หรือใช้[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) สำหรับการประเมินผล
+4.  Aspose License: รับใบอนุญาตจาก[ที่นี่](https://purchase.aspose.com/buy)หรือใช้[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) สำหรับการประเมินผล
 
 ## นำเข้าเนมสเปซ
 

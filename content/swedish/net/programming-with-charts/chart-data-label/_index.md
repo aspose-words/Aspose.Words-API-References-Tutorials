@@ -103,7 +103,7 @@ labels.Separator = "/";
 
 ## Steg 5: Spara dokumentet
 
-Slutligen sparar du dokumentet i den angivna katalogen.
+Slutligen, spara dokumentet i den angivna katalogen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");

@@ -15,7 +15,7 @@ url: /th/net/split-document/page-by-page/
 ในการเริ่มต้น ให้ระบุไดเร็กทอรีสำหรับเอกสารของคุณและโหลดเอกสารลงในออบเจ็กต์ Document มีวิธีดังนี้:
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสาร
+//พาธไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

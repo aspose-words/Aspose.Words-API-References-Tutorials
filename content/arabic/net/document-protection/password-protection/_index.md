@@ -15,10 +15,10 @@ url: /ar/net/document-protection/password-protection/
 
 قبل أن نتعمق في التفاصيل الجوهرية لحماية مستندات Word الخاصة بك بكلمة مرور، هناك بعض الأشياء التي ستحتاج إليها:
 
-1. Aspose.Words for .NET: تأكد من أن لديك مكتبة Aspose.Words for .NET. أنت تستطيع[قم بتنزيله هنا](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: تأكد من أن لديك مكتبة Aspose.Words for .NET. أنت تستطيع[قم بتنزيله هنا](https://releases.aspose.com/words/net/).
 2. بيئة التطوير: Visual Studio أو أي بيئة تطوير أخرى لـ C#.
 3. المعرفة الأساسية لـ C#: الفهم الأساسي لبرمجة C#.
-4.  Aspose License: احصل على ترخيص من[هنا](https://purchase.aspose.com/buy) أو استخدم أ[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
+4.  Aspose License: احصل على ترخيص من[هنا](https://purchase.aspose.com/buy)أو استخدم أ[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
 
 ## استيراد مساحات الأسماء
 

@@ -19,7 +19,7 @@ Aby rozpocząć, utwórz nowy projekt C# w swoim ulubionym środowisku IDE. Upew
 W tym kroku załadujemy dokument Word, który chcemy przekonwertować na HTML. Aby załadować dokument, użyj poniższego kodu:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
+//Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Ten kod tworzy instancję`HtmlSaveOptions` i zestawy`CssStyleSheetType` Do`CssStyleSheetType.External`wygenerować zewnętrzny arkusz stylów CSS i`CssClassNamePrefix` Do`"pfx_"` prefiksować`"pfx_"` nadawać nazwy klasom CSS.
+ Ten kod tworzy instancję`HtmlSaveOptions` i zestawy`CssStyleSheetType` Do`CssStyleSheetType.External` wygenerować zewnętrzny arkusz stylów CSS i`CssClassNamePrefix` Do`"pfx_"` prefiksować`"pfx_"` nadawać nazwy klasom CSS.
 
 ## Krok 4: Konwertowanie i zapisywanie dokumentu do formatu HTML
 

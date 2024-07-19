@@ -22,15 +22,15 @@ url: /zh-hant/net/join-and-append-documents/
 | [附加文檔](./append-document/) | 了解如何使用 Aspose.Words for .NET 將一個文件的內容附加到另一個文件。 |
 | [將文件附加到空白](./append-document-to-blank/) | 了解如何使用 Aspose.Words for .NET 將文件無縫附加到空白文件。包括逐步指南、程式碼片段和常見問題。 |
 | [新增導入格式選項](./append-with-import-format-options/) | 使用 Aspose.Words for .NET 輕鬆附加 Word 文檔，透過詳細的逐步指導維護格式。 |
-| [不同的頁面設置](./different-page-setup/) | 了解如何在使用 Aspose.Words for .NET 合併 Word 文件時設定不同的頁面配置。包括逐步指南。 |
+| [不同的頁面設定](./different-page-setup/) | 了解如何在使用 Aspose.Words for .NET 合併 Word 文件時設定不同的頁面配置。包括逐步指南。 |
 | [加入持續](./join-continuous/) | 了解如何使用 Aspose.Words for .NET 無縫連接兩個 Word 文件。請依照我們的逐步指南進行順利、有效率的文件合併。 |
 | [加入新頁面](./join-new-page/) | 了解如何使用 Aspose.Words for .NET 在 Word 中加入和追加文件。請按照我們的逐步指南進行高效率的文檔合併。 |
 | [保持來源格式](./keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保留格式。非常適合希望自動化文件組裝任務的開發人員。 |
 | [將原始碼放在一起](./keep-source-together/) | 了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保留格式。這份綜合指南涵蓋了從設定到執行的所有內容。 |
 | [清單保留來源格式](./list-keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保留格式。本教學提供無縫文件合併的逐步指導。 |
-| [列出使用目標樣式](./list-use-destination-styles/) | 了解如何使用 Aspose.Words for .NET 無縫合併和管理文件清單。按照我們的分步教程進行高效的文檔整合。 |
+| [列出使用目標樣式](./list-use-destination-styles/) | 了解如何使用 Aspose.Words for .NET 合併 Word 文件而不遺失清單格式。保持文檔樣式完整的分步指南。 |
 | [重新開始頁碼編號](./restart-page-numbering/) | 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文件時重新開始頁碼編號。 |
-| [更新頁面佈局](./update-page-layout/) | 透過我們詳細的逐步指南，使用 Aspose.Words for .NET 輕鬆更新 Word 文件中的頁面佈局。 |
+| [更新頁面佈局](./update-page-layout/) | 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 更新 Word 文件中的頁面佈局。非常適合調整文件設計。 |
 | [使用目標樣式](./use-destination-styles/) | 了解如何透過 Aspose.Words for .NET 使用目標樣式來無縫附加文檔，同時保持格式一致。 |
 | [聰明的風格行為](./smart-style-behavior/) | 了解如何將 Word 文件與 Aspose.Words for .NET 無縫合併，保留樣式並確保專業的結果。 |
 | [使用生成器插入文檔](./insert-document-with-builder/) | 了解如何使用 Aspose.Words for .NET 合併兩個 Word 文件。使用 DocumentBuilder 插入文件並保留格式的逐步指南。 |

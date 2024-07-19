@@ -51,8 +51,8 @@ Félicitation ! Vous avez maintenant appris à utiliser la fonctionnalité de li
 
 #### Q : Comment puis-je personnaliser le texte d'affichage d'un lien dans Aspose.Words ?
 
- : Pour personnaliser le texte d'affichage d'un lien dans Aspose.Words, vous pouvez modifier le contenu entre le`<a>` Mots clés. Par exemple,`<a href="https://www.aspose.com">Click here</a>` affichera le texte « Cliquez ici » sous forme de lien hypertexte.
+ R : Pour personnaliser le texte d'affichage d'un lien dans Aspose.Words, vous pouvez modifier le contenu entre le`<a>` Mots clés. Par exemple,`<a href="https://www.aspose.com">Click here</a>` affichera le texte « Cliquez ici » sous forme de lien hypertexte.
 
 #### Q : Puis-je spécifier une cible pour un lien dans Aspose.Words ?
 
- R : Oui, vous pouvez spécifier une cible pour un lien dans Aspose.Words à l'aide du`target` attribut du`<a>` étiqueter. Par exemple,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` ouvrira le lien dans une nouvelle fenêtre ou un nouvel onglet.
+R : Oui, vous pouvez spécifier une cible pour un lien dans Aspose.Words à l'aide du`target` attribut du`<a>` étiqueter. Par exemple,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` ouvrira le lien dans une nouvelle fenêtre ou un nouvel onglet.

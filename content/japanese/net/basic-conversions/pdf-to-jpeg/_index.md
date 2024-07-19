@@ -15,7 +15,7 @@ PDF ファイルを JPEG 画像に変換する必要がある状況に遭遇し�
 
 細かい点に入る前に、準備が整っていることを確認しましょう。必要なものは次のとおりです。
 
-1.  Aspose.Words for .NET: この強力なライブラリがインストールされていることを確認してください。インストールされていない場合はダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: この強力なライブラリがインストールされていることを確認してください。インストールされていない場合はダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
 2. .NET Framework: マシンに .NET 環境が設定されていることを確認してください。
 3. Visual Studio: 操作に慣れていれば、どのバージョンでも構いません。
 4.  PDFファイル: 変換するPDFファイルを準備します。このチュートリアルでは、`Pdf Document.pdf`.

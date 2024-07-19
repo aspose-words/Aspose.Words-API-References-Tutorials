@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/load-encrypted-document/
 ---
-Cuando se procesa Words con documentos de Word cifrados en una aplicación C#, es importante poder cargarlos correctamente proporcionando la contraseña correcta. Con la biblioteca Aspose.Words para .NET, puede cargar fácilmente documentos cifrados en Word utilizando las opciones de carga adecuadas. En esta guía paso a paso, le mostraremos cómo usar el código fuente C# de Aspose.Words para .NET para cargar un documento cifrado usando las opciones de carga LoadOptions.
+Cuando se procesa Words con documentos de Word cifrados en una aplicación C#, es importante poder cargarlos correctamente proporcionando la contraseña correcta. Con la biblioteca Aspose.Words para .NET, puede cargar fácilmente documentos de Word cifrados utilizando las opciones de carga adecuadas. En esta guía paso a paso, le mostraremos cómo usar el código fuente C# de Aspose.Words para .NET para cargar un documento cifrado usando las opciones de carga LoadOptions.
 
 ## Comprender la biblioteca Aspose.Words
 

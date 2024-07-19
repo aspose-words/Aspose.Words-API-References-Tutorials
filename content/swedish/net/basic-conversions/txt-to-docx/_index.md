@@ -48,7 +48,7 @@ doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 
 ## Slutsats
 
-I den här handledningen tog vi upp hur man konverterar en textfil till ett Word-dokument med Aspose.Words för .NET. Genom att följa dessa enkla steg kan du automatisera processen att konvertera textinnehåll till ett mer strukturerat och redigerbart format, vilket förbättrar dina dokumentbearbetningsarbetsflöden.
+den här handledningen tog vi upp hur man konverterar en textfil till ett Word-dokument med Aspose.Words för .NET. Genom att följa dessa enkla steg kan du automatisera processen att konvertera textinnehåll till ett mer strukturerat och redigerbart format, vilket förbättrar dina dokumentbearbetningsarbetsflöden.
 
 ## FAQ's
 

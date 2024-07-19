@@ -19,7 +19,7 @@ url: /zh-hant/net/working-with-markdown/
 | [內聯程式碼](./inline-code/) | 了解如何使用 Aspose.Words for .NET 逐步指南內嵌程式碼。 |
 | [自動連結](./autolink/) | 了解如何使用 Aspose.Words for .NET 逐步指南插入自動連結。 |
 | [關聯](./link/) | 了解如何使用 Aspose.Words for .NET 插入連結。逐步指南。 |
-| [影像](./image/) | 了解如何使用 Aspose.Words for .NET 逐步指南插入和自訂映像。 |
+| [影像](./image/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 將圖片新增至文件。立即透過視覺效果增強您的文件。 |
 | [水平線](./horizontal-rule/) | 了解如何使用 Aspose.Words for .NET 逐步指南插入水平線。 |
 | [標題](./heading/) | 了解如何透過 Aspose.Words for .NET 逐步指南使用標題。 |
 | [固定文字標題](./setext-heading/) | 透過 Aspose.Words for .NET 逐步指南了解如何使用 Setext 標題來格式化文件。 |
@@ -27,8 +27,8 @@ url: /zh-hant/net/working-with-markdown/
 | [圍欄代碼](./fenced-code/) | 了解如何透過 Aspose.Words for .NET 逐步指南使用隔離程式碼功能。 |
 | [引用](./quote/) | 了解如何透過 Aspose.Words for .NET 逐步指南使用參考。 |
 | [項目符號列表](./bulleted-list/) | 了解如何使用 Aspose.Words for .NET 逐步指南建立項目符號清單。 |
-| [有序列表](./ordered-list/) | 了解如何使用 Aspose.Words for .NET 逐步指南建立有序清單。 |
-| [桌子](./table/) | 了解如何使用 Aspose.Words for .NET 逐步指南建立表單。 |
+| [有序列表](./ordered-list/) | 透過我們的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中建立有序清單。非常適合自動化文件創建。 |
+| [桌子](./table/) | 透過此逐步指南，了解如何在 Aspose.Words for .NET 中建立和自訂表格。非常適合產生結構化且具有視覺吸引力的文件。 |
 | [閱讀 Markdown 文檔](./read-markdown-document/) | 了解如何使用 Aspose.Words for .NET 逐步指南閱讀 Markdown 文件。 |
 | [重點](./emphases/) | 了解如何透過 Aspose.Words for .NET 逐步指南使用強調符號（粗體和斜體）。 |
-| [使用警告來源](./use-warning-source/) | 了解如何透過 Aspose.Words for .NET 逐步指南使用警告來源。 |
+| [使用警告來源](./use-warning-source/) | 透過此逐步指南掌握 Aspose.Words for .NET，了解如何使用 warningSource 類別處理 Markdown 警告。非常適合 C# 開發人員。 |

@@ -83,7 +83,7 @@ R: El uso de una devolución de llamada de advertencia le permite estar al tanto
 
 #### P: ¿Cómo creo una función de devolución de llamada para manejar advertencias?
 
- R: Para crear una función de devolución de llamada para manejar advertencias, necesita crear una clase que implemente la`IWarningCallback` interfaz. El`Warning`Se llamará al método de esta clase cada vez que se emita una advertencia durante la carga del documento. Puede personalizar este método para manejar las advertencias según los requisitos de su aplicación.
+ R: Para crear una función de devolución de llamada para manejar advertencias, necesita crear una clase que implemente la`IWarningCallback` interfaz. El`Warning`Se llamará al método de esta clase cada vez que se emita una advertencia durante la carga del documento. Puede personalizar este método para manejar advertencias según los requisitos de su aplicación.
 
 #### P: ¿Qué puedo hacer con la información de advertencia en la función de devolución de llamada?
 

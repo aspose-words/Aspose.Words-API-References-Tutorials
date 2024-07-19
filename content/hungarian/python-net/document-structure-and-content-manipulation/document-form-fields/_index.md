@@ -13,7 +13,7 @@ mai digitális korban a hatékony adatrögzítés és a dokumentumok rendszerez�
 
 Az űrlapmezők a dokumentumon belüli interaktív elemek, amelyek lehetővé teszik a felhasználók számára, hogy adatokat vigyenek be, kiválaszthassanak, és interakcióba lépjenek a dokumentum tartalmával. Gyakran használják különféle forgatókönyvekben, például felmérésekben, visszajelzési űrlapokon, jelentkezési űrlapokon stb. Az Aspose.Words for Python egy robusztus könyvtár, amely képessé teszi a fejlesztőket arra, hogy programozottan létrehozzák, kezeljék és kezeljék ezeket az űrlapmezőket.
 
-## Az Aspose.Words for Python használatának első lépései
+## Az Aspose.Words for Python használatának megkezdése
 
 Mielőtt belemerülnénk az űrlapmezők létrehozásába és elsajátításába, állítsuk be a környezetünket, és ismerkedjünk meg az Aspose.Words for Python programmal. A kezdéshez kövesse az alábbi lépéseket:
 

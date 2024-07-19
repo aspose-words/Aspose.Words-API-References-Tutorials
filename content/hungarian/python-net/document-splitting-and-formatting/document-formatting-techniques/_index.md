@@ -81,7 +81,7 @@ builder.insert_shape(aw.Drawing.Shapes.ARROW_RIGHT, 100, 100, 50, 50)
 
 ## Táblázatok hozzáadása a strukturált tartalomhoz
 
-A táblázatok szisztematikusan rendezik az információkat. Táblázatok hozzáadása ezzel a kóddal:
+A táblázatok szisztematikusan rendezik az információkat. Adjon hozzá táblázatokat ezzel a kóddal:
 
 ```python
 table = builder.start_table()

@@ -1,6 +1,6 @@
 ---
-title: Ordbehandling med Htmlsaveoptions
-linktitle: Ordbehandling med Htmlsaveoptions
+title: Ordbehandling med Htmlsave-alternativ
+linktitle: Ordbehandling med Htmlsave-alternativ
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du programmerar med HTML-sparalternativ i Aspose.Words för .NET. Konvertera enkelt Word-dokument till HTML med bibehållen formatering och innehåll.
 type: docs

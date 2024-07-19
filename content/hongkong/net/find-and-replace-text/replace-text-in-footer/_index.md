@@ -78,7 +78,7 @@ footer.Range.Replace("(C) 2006 Aspose Pty Ltd.", "Copyright (C) 2020 by Aspose P
 
 ## 第五步：儲存修改後的文檔
 
-最後，我們需要儲存修改後的文件。我們將指定新文件的路徑和檔案名稱。
+最後，我們需要儲存修改後的文件。我們將指定新文件的路徑和文件名。
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");

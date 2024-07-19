@@ -2,7 +2,7 @@
 title: Använda avstavning i Aspose.Words för Java
 linktitle: Använda avstavning
 second_title: Aspose.Words Java Document Processing API
-description: Lär dig hur du använder avstavning effektivt i Aspose.Words för Java med denna omfattande handledning. Förbättra dokumentets läsbarhet idag!
+description: Lär dig hur du använder avstavning effektivt i Aspose.Words för Java med denna omfattande handledning. Förbättra dokumentläsbarheten idag!
 type: docs
 weight: 17
 url: /sv/java/using-document-elements/using-hyphenation/

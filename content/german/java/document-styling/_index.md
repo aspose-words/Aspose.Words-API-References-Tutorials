@@ -20,7 +20,7 @@ Sobald Sie die grundlegenden Fähigkeiten zur Dokumentgestaltung erworben haben,
 
 ## Optimierung der Dokumentformatierungseffizienz
 
-In diesen Tutorials konzentrieren wir uns nicht nur auf die Erstellung optisch ansprechender Dokumente, sondern auch auf die Optimierung des Styling-Prozesses für mehr Effizienz. Aspose.Words für Java bietet eine breite Palette von APIs, mit denen Entwickler Dokument-Styling-Aufgaben automatisieren können. Sie lernen, wie Sie Stile programmgesteuert anwenden, Dokumentlayouts dynamisch auf Datenbasis generieren und bedingte Formatierungen implementieren, um bestimmte Inhalte hervorzuheben. Durch die Nutzung dieser effizienten Styling-Techniken können Sie den manuellen Aufwand drastisch reduzieren und dynamische, benutzerdefinierte Dokumente erstellen, die Ihren spezifischen Anforderungen an die Dokumentverarbeitung gerecht werden.
+In diesen Tutorials konzentrieren wir uns nicht nur auf die Erstellung optisch ansprechender Dokumente, sondern auch auf die Optimierung des Styling-Prozesses für mehr Effizienz. Aspose.Words für Java bietet eine breite Palette von APIs, mit denen Entwickler Dokument-Styling-Aufgaben automatisieren können. Sie lernen, wie Sie Stile programmgesteuert anwenden, Dokumentlayouts dynamisch auf der Grundlage von Daten generieren und bedingte Formatierungen implementieren, um bestimmte Inhalte hervorzuheben. Durch die Nutzung dieser effizienten Styling-Techniken können Sie den manuellen Aufwand drastisch reduzieren und dynamische, benutzerdefinierte Dokumente erstellen, die Ihren spezifischen Anforderungen an die Dokumentverarbeitung gerecht werden.
 
 ## Tutorials zum Dokument-Styling
 ### [Word-Dokumentformatierung](./word-document-styling/)

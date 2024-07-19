@@ -110,7 +110,7 @@ Pomyślnie połączyłeś dwa dokumenty programu Word przy użyciu Aspose.Words 
 ### Co to jest Aspose.Words dla .NET?
  Aspose.Words dla .NET to potężna biblioteka do tworzenia, manipulowania i konwertowania dokumentów Word w aplikacjach .NET.[Ucz się więcej](https://reference.aspose.com/words/net/).
 
-### Czy przed zakupem mogę wypróbować Aspose.Words dla .NET?
+### Czy mogę wypróbować Aspose.Words dla .NET przed zakupem?
  Tak, możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
 ### Jak mogę uzyskać tymczasową licencję na Aspose.Words dla .NET?

@@ -77,7 +77,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 
 #### Q：Aspose.Words 支援其他文件格式嗎？
 
-答：是的，除了Word文件之外，Aspose.Words還支援多種文件格式，包括PDF、HTML、EPUB等，使其成為文件處理的全面解決方案。
+答：是的，除了Word文件外，Aspose.Words還支援多種文件格式，包括PDF、HTML、EPUB等，使其成為文件處理的全面解決方案。
 
 #### Q：Aspose.Words 適合大規模應用嗎？
 

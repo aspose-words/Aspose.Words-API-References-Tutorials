@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/working-with-markdown/inline-code/
 ---
 
-I det här exemplet kommer vi att gå igenom hur du använder inline-kodfunktionen med Aspose.Words för .NET. Inline-kod används för att visuellt representera kodbitar inuti ett stycke.
+det här exemplet kommer vi att gå igenom hur du använder inline-kodfunktionen med Aspose.Words för .NET. Inline-kod används för att visuellt representera kodbitar inuti ett stycke.
 
 ## Steg 1: Använda en dokumentgenerator
 
@@ -66,11 +66,11 @@ Grattis! Du har nu lärt dig hur du använder inline-kodfunktionalitet med Aspos
 
 #### F: Hur kan jag använda inline-koden i Aspose.Words?
 
- S: För att använda inline-kod i Aspose.Words kan du använda lämpliga taggar för att omge texten som ska formateras som inline-kod. Du kan till exempel använda`<code>` eller`<kbd>` tagg till surroundtext som ska formateras som inline-kod.
+S: För att använda inline-kod i Aspose.Words kan du använda lämpliga taggar för att omge texten som ska formateras som inline-kod. Du kan till exempel använda`<code>` eller`<kbd>` tagg till surroundtext som ska formateras som inline-kod.
 
 #### F: Är det möjligt att ange inline kodtypsnitt eller färg i Aspose.Words?
 
- S: Ja, du kan ange teckensnittet eller färgen på inline-koden i Aspose.Words. Du kan använda`Font.Name`och`Font.Color` egenskaper hos`Run` objekt för att ställa in teckensnitt och färg för inline-koden. Du kan till exempel använda`run.Font.Name = "Courier New"` för att ange teckensnitt för inline-kod och`run.Font.Color = Color.Blue`för att ange färgen.
+ S: Ja, du kan ange teckensnittet eller färgen på inline-koden i Aspose.Words. Du kan använda`Font.Name`och`Font.Color` egenskaper hos`Run` objekt för att ställa in teckensnitt och färg för inline-koden. Du kan till exempel använda`run.Font.Name = "Courier New"` för att ange teckensnitt för inline-kod och`run.Font.Color = Color.Blue` för att ange färgen.
 
 #### F: Kan jag använda inline-koden i ett stycke som innehåller andra textelement?
 

@@ -75,7 +75,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Paso 5: guarde el documento combinado
 
-Finalmente, guardamos el documento combinado en el directorio especificado. Esto completa el proceso de unión de los documentos.
+Finalmente, guardamos el documento combinado en el directorio especificado. Esto completa el proceso de unir los documentos.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");

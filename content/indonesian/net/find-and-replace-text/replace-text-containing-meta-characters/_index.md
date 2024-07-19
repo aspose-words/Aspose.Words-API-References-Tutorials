@@ -80,7 +80,7 @@ Langkah inilah keajaiban terjadi! Kita akan mengganti kata "bagian" diikuti deng
 int count = doc.Range.Replace("section&p", "section&p----------------------&p", findReplaceOptions);
 ```
 
-Dalam kode ini, kita mengganti teks "bagian" diikuti dengan jeda paragraf (`&p`) dengan teks yang sama ditambah garis bawah, dan membuatnya terpusat.
+Dalam kode ini, kami mengganti teks "bagian" diikuti dengan jeda paragraf (`&p`) dengan teks yang sama ditambah garis bawah, dan membuatnya terpusat.
 
 ## Langkah 5: Masukkan Istirahat Bagian
 

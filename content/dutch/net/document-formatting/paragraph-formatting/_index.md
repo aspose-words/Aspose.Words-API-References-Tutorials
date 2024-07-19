@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- We configureren de`ParagraphFormat`eigenschappen. Laten we eens kijken wat elke eigenschap doet:
+We configureren de`ParagraphFormat` eigenschappen. Laten we eens kijken wat elke eigenschap doet:
 - Uitlijning: Centreert de alinea.
 - LeftIndent: Stelt de linkerinspringing in op 50 punten.
 - RightIndent: Stelt de juiste inspringing in op 50 punten.

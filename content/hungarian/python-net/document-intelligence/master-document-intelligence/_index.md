@@ -16,7 +16,7 @@ A dokumentumintelligencia arra a folyamatra vonatkozik, amely automatikusan kiny
 
 A Python erőteljes és sokoldalú programozási nyelvvé vált, így népszerű választás a dokumentumintelligencia feladatokhoz. Könyvtárainak és csomagjainak gazdag készlete, egyszerűségével és olvashatóságával kombinálva ideális nyelvvé teszi a Pythont az összetett dokumentumfeldolgozási feladatok kezelésére.
 
-## Az Aspose.Words for Python használatának első lépései
+## Az Aspose.Words for Python használatának megkezdése
 
 Az Aspose.Words egy vezető Python-könyvtár, amely a dokumentumfeldolgozási lehetőségek széles skáláját kínálja. A kezdéshez telepítenie kell a könyvtárat, és be kell állítania Python-környezetét. Az alábbiakban található az Aspose.Words telepítésének forráskódja:
 

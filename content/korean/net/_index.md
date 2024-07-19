@@ -52,7 +52,7 @@ is_root: true
 | [Officemath를 이용한 단어 처리](./programming-with-officemath/) | .NET용 Aspose.Words에서 Office 수학 공식을 사용하여 단어 처리를 살펴보세요. Word 문서에서 수학 방정식을 생성, 편집 및 서식 지정하기 위한 단계별 자습서 및 샘플 코드입니다. |  
 | [도형을 이용한 단어 처리](./programming-with-shapes/) | .NET용 Aspose.Words에서 모양 프로그래밍을 살펴보세요. C#의 단계별 자습서와 샘플 코드를 통해 Word 문서에서 도형을 조작하고 사용자 지정하는 방법을 알아보세요. |  
 | [워터마크를 이용한 단어 처리](./programming-with-watermark/) | .NET용 Aspose.Words에서 워터마크를 사용하여 프로그래밍하는 방법을 알아보세요. 단계별 자습서와 샘플 C# 코드를 통해 텍스트 또는 이미지 워터마크를 추가하고, 모양을 사용자 지정하고, 페이지에 배치하는 방법 등을 알아보세요. |  
-| [표 스타일 및 서식을 사용한 단어 처리](./programming-with-table-styles-and-formatting/) | .NET용 Aspose.Words에서 테이블 스타일과 서식을 프로그래밍하는 방법을 알아보세요. C#의 단계별 자습서와 샘플 코드를 통해 미리 정의된 스타일을 적용하고, 셀 서식, 테두리 등을 사용자 지정하는 방법을 알아보세요. |  
+| [표 스타일과 서식을 사용한 단어 처리](./programming-with-table-styles-and-formatting/) | .NET용 Aspose.Words에서 테이블 스타일과 서식을 프로그래밍하는 방법을 알아보세요. C#의 단계별 자습서와 샘플 코드를 통해 미리 정의된 스타일을 적용하고, 셀 서식, 테두리 등을 사용자 지정하는 방법을 알아보세요. |  
 | [표를 이용한 단어 처리](./programming-with-tables/) | .NET용 Aspose.Words에서 테이블을 프로그래밍하는 방법을 알아보세요. 단계별 자습서와 C# 코드 예제를 통해 Word 문서에서 테이블을 만들고, 조작하고, 서식을 지정하는 방법을 알아보세요. |  
 | [Htmlloadoptions를 사용한 단어 처리](./programming-with-htmlloadoptions/) | .NET용 Aspose.Words에서 HTML 로딩 옵션을 사용하여 프로그래밍하는 방법을 알아보세요. 튜토리얼은 HTML 문서를 로드하기 위한 다양한 기능을 안내합니다. |  
 | [Loadoptions를 사용한 단어 처리](./programming-with-loadoptions/) | .NET용 Aspose.Words에서 LoadOptions를 사용하여 프로그래밍하는 방법을 알아보세요. Word 문서 로드 및 사용자 정의를 위한 샘플 코드가 포함된 자세한 튜토리얼입니다. |  

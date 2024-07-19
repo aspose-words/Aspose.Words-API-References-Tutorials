@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## 3. Adım: Bölüm İçeriğini Sil
-Bölümün içeriğini temizlemek için bölümün`ClearContent` yöntem.
+ Bölümün içeriğini temizlemek için bölümün`ClearContent` yöntem.
 
 ```csharp
 section.ClearContent();
@@ -61,7 +61,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinin belirli bir b�
 
 #### S: Aspose.Words for .NET'te belge dizini nasıl ayarlanır?
 
-C: Belgelerinizi içeren dizinin yolunu ayarlamak için değiştirmelisiniz`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
+C: Belgelerinizi içeren dizinin yolunu ayarlamak için değiştirmeniz gerekir`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 // Belgeler dizininizin yolu

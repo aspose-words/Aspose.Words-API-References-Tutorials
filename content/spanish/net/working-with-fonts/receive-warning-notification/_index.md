@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Paso 3: actualizar el diseño de la página
-
- Llama a`UpdatePageLayout`método. Esto representa el documento en la memoria y captura cualquier advertencia que ocurra durante la representación.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Paso 4: configurar la devolución de llamada de advertencia
+## Paso 3: configurar la devolución de llamada de advertencia
 
  Para capturar y manejar advertencias, cree una clase que implemente el`IWarningCallback` interfaz. Esta clase registrará cualquier advertencia que ocurra durante el procesamiento de documentos.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Sólo nos interesa que se sustituyan las fuentes.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Paso 5: asignar la devolución de llamada al documento
+## Paso 4: asignar la devolución de llamada al documento
 
 Asigne la devolución de llamada de advertencia al documento. Esto garantiza que cualquier problema con las fuentes se capture y registre.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Paso 5: actualizar el diseño de la página
+
+ Llama a`UpdatePageLayout` método. Esto representa el documento en la memoria y captura cualquier advertencia que ocurra durante la representación.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Paso 6: guarde el documento

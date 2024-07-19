@@ -148,4 +148,4 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 
 #### Q：我可以使用 Aspose.Words for .NET 修改現有 Word 文件目錄中的選項卡嗎？
 
-答：是的，您可以使用 Aspose.Words for .NET 修改現有 Word 文件目錄中的標籤。透過載入文件、迭代段落並對製表位進行必要的更改，您可以更新目錄中的選項卡。最後，儲存文件以套用修改。
+答：是的，您可以使用 Aspose.Words for .NET 修改現有 Word 文件目錄中的標籤。透過載入文件、遍歷段落並對製表位進行必要的更改，您可以更新目錄中的選項卡。最後，儲存文件以套用修改。

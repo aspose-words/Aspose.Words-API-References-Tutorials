@@ -88,6 +88,6 @@ Aspose.Words for .NET 的 ConvertFieldsInDocument 功能是一个将 Word 文档
 
 答：不会，在 Aspose.Words 中转换字段不会影响 Word 文档中的原始数据。更新字段时会应用转换，但原始数据保持不变。这可确保您可以随时返回文档的原始状态。
 
-#### 问：是否可以在 Aspose.Words 中自定义字段转换？
+#### 问：可以在 Aspose.Words 中自定义字段转换吗？
 
 答：是的，可以使用特定的格式代码或调整可用的转换选项来自定义 Aspose.Words 中的字段转换。您可以定义日期、数字、文本等的自定义格式，以满足您的特定需求。

@@ -9,7 +9,7 @@ url: /de/net/join-and-append-documents/use-destination-styles/
 ---
 ## Einführung
 
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek zur programmgesteuerten Bearbeitung von Word-Dokumenten. Egal, ob Sie Dokumente zusammenführen oder komplexe Formatierungen verwalten, Aspose.Words bietet eine Reihe robuster Funktionen, die Ihnen die Arbeit erleichtern. Heute werden wir uns mit der Verwendung von Zielstilen beim Anhängen von Dokumenten befassen. Diese Anleitung führt Sie durch alles, von den Voraussetzungen bis hin zu Schritt-für-Schritt-Anleitungen.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zur programmgesteuerten Bearbeitung von Word-Dokumenten. Egal, ob Sie Dokumente zusammenführen oder komplexe Formatierungen verwalten, Aspose.Words bietet eine Reihe robuster Funktionen, die Ihnen die Arbeit erleichtern. Heute werden wir uns mit der Verwendung von Zielstilen beim Anhängen von Dokumenten befassen. Diese Anleitung führt Sie durch alles, von den Voraussetzungen bis hin zu schrittweisen Anweisungen.
 
 ## Voraussetzungen
 

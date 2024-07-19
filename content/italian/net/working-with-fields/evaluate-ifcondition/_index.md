@@ -18,7 +18,7 @@ Nel codice fornito, iniziamo creando un generatore di documenti.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Passaggio 2: inserisci il campo IF
+## Passaggio 2: inserire il campo IF
 
  Noi usiamo il`InsertField()` metodo per inserire il campo IF nel documento specificando la condizione da valutare.
 

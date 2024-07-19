@@ -19,8 +19,8 @@ url: /ko/net/working-with-section/
 | 제목 | 설명 |
 | --- | --- |
 | [섹션 추가](./add-section/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에 섹션을 추가하는 방법을 알아봅니다. 문서 구성을 위한 단계별 가이드입니다. |
-| [섹션 삭제](./delete-section/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 특정 섹션을 제거하는 방법을 알아봅니다. |
-| [모든 섹션 삭제](./delete-all-sections/) | 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서에서 모든 섹션을 제거하는 방법을 알아봅니다. |
+| [섹션 삭제](./delete-section/) | .NET용 Aspose.Words를 사용한 마스터 문서 조작. 몇 가지 간단한 단계를 통해 Word 문서에서 섹션을 삭제하는 방법을 알아보세요. |
+| [모든 섹션 삭제](./delete-all-sections/) | 따라하기 쉬운 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 모든 섹션을 삭제하는 방법을 알아보세요. |
 | [섹션 단어 내용 추가](./append-section-content/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 특정 섹션에 단어 콘텐츠를 추가하는 방법을 알아봅니다.  |
 | [클론 섹션](./clone-section/) | 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서의 섹션을 복제하는 방법을 알아봅니다. 단계별 가이드. |
 | [섹션 복사](./copy-section/) | 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 섹션을 다른 문서로 복사하는 방법을 알아봅니다. |

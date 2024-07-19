@@ -86,7 +86,7 @@ Ebben az oktatóanyagban megvizsgáltuk az Aspose.Words for .NET Comparison Gran
 
 #### K: Mi a célja a Comparison Granularity használatának az Aspose.Words for .NET-ben?
 
-V: Comparison Granularity in Aspose.Words for .NET lehetővé teszi, hogy meghatározza a részletességi szintet a dokumentumok összehasonlításakor. Ezzel a funkcióval különböző szintű dokumentumokat hasonlíthat össze, például karakterszinten, szószinten vagy akár blokkszinten. Az egyes részletességi szintek különböző szintű részletezést biztosítanak az összehasonlítási eredményekben.
+V: Comparison Granularity in Aspose.Words for .NET lehetővé teszi, hogy meghatározza a részletességi szintet a dokumentumok összehasonlításakor. Ezzel a funkcióval különböző szintű dokumentumokat hasonlíthat össze, például karakterszinten, szószinten vagy akár blokkszinten. Az egyes részletességi szintek eltérő részletességet biztosítanak az összehasonlítási eredményekben.
 
 #### K: Hogyan használhatom a Comparison Granularity-t az Aspose.Words for .NET-ben?
 

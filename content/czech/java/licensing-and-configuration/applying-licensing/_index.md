@@ -44,7 +44,7 @@ Je důležité zacházet s licenčními výjimkami elegantně. Pokud dojde k pro
 
 ## 6. Testování vaší licencované aplikace Aspose.Words
 
-Po použití licence důkladně otestujte aplikaci Aspose.Words, abyste se ujistili, že všechny funkce fungují podle očekávání. Tento krok je zásadní pro zajištění, že vaše dokumenty budou generovány bez jakýchkoli zkušebních omezení.
+Po použití licence důkladně otestujte aplikaci Aspose.Words, abyste se ujistili, že všechny funkce fungují podle očekávání. Tento krok je zásadní pro zajištění toho, že vaše dokumenty budou generovány bez jakýchkoli zkušebních omezení.
 ## Kompletní zdrojový kód
 ```java
         License license = new License();

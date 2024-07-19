@@ -69,7 +69,7 @@ Om uw Word-document te beschermen, moet u een wachtwoord instellen en bepaalde a
 
 ### 6.1 Documentwachtwoord instellen
 
-Het instellen van een wachtwoord is de meest elementaire vorm van documentbeveiliging. Het voorkomt dat onbevoegde gebruikers het document openen zonder het juiste wachtwoord.
+Het instellen van een wachtwoord is de meest elementaire vorm van documentbeveiliging. Het voorkomt dat ongeautoriseerde gebruikers het document openen zonder het juiste wachtwoord.
 
 ```python
 # Sample Python code for setting a document password

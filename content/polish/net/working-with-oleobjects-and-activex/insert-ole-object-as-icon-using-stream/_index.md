@@ -88,7 +88,7 @@ A. Aby utworzyć nowy dokument i generator dokumentów, możesz wykonać następ
 ```csharp
 Document doc = new Document();
 ```
- Użyj`DocumentBuilder`class, aby utworzyć narzędzie do tworzenia dokumentów powiązane z wcześniej utworzonym dokumentem:
+ Użyj`DocumentBuilder` class, aby utworzyć narzędzie do tworzenia dokumentów powiązane z wcześniej utworzonym dokumentem:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### P. Jak osadzić kod umożliwiający wstawienie obiektu OLE jako ikony ze strumienia do mojego projektu?
 
 A. Aby osadzić kod umożliwiający wstawienie obiektu OLE jako ikony ze strumienia do projektu, wykonaj następujące kroki:
--  Zaimportuj niezbędne referencje, dodając odpowiednie`using` sprawozdania.
+- Zaimportuj niezbędne referencje, dodając odpowiednie`using` sprawozdania.
 -  Utwórz nowy dokument i narzędzie do tworzenia dokumentów za pomocą`Document`I`DocumentBuilder` zajęcia.
 - Użyj kodu do wstawienia obiektu OLE jako ikony ze strumienia.
 -  Zapisz dokument za pomocą`Save` metodę z odpowiednią ścieżką docelową.

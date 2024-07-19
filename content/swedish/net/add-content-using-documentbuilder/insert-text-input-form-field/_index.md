@@ -2,7 +2,7 @@
 title: Infoga textinmatningsformulärfält i Word-dokument
 linktitle: Infoga textinmatningsformulärfält i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du infogar ett formulärfält för textinmatning i ett Word-dokument med Aspose.Words för .NET med denna steg-för-steg handledning. Perfekt för att skapa interaktiva formulär.
+description: Lär dig hur du infogar ett textinmatningsformulärfält i ett Word-dokument med Aspose.Words för .NET med denna steg-för-steg handledning. Perfekt för att skapa interaktiva formulär.
 type: docs
 weight: 10
 url: /sv/net/add-content-using-documentbuilder/insert-text-input-form-field/
@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 4: Infoga textinmatningsformulärfält
 
- Här händer magin. Vi kommer att använda`InsertTextInput` metod för`DocumentBuilder` klass för att lägga till ett textinmatningsformulärfält. Detta formulärfält tillåter användare att mata in text i dokumentet.
+ Det är här magin händer. Vi kommer att använda`InsertTextInput` metod för`DocumentBuilder` klass för att lägga till ett textinmatningsformulärfält. Detta formulärfält tillåter användare att mata in text i dokumentet.
 
 ```csharp
 builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);

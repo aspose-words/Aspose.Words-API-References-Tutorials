@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Otomatik masa ayarını etkinleştirin
 table. AllowAutoFit = true;
 
-//İlk satırın ilk hücresini al
+// İlk satırın ilk hücresini al
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Tercih edilen genişlik türünü ve değerini alın
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
- Burada ilk tabloyu getirmek için belgeyi kullanıyoruz, ardından otomatik tablo uyumunu etkinleştiriyoruz.`AllowAutoFit` mülk. Daha sonra tablonun ilk satırının ilk hücresini alıyoruz. Bu hücreden tercih edilen genişlik tipini şu komutla alabiliriz:`PreferredWidth.Type` mülk ve değeri ile`PreferredWidth.Value` mülk.
+Burada ilk tabloyu getirmek için belgeyi kullanıyoruz, ardından otomatik tablo uyumunu etkinleştiriyoruz.`AllowAutoFit` mülk. Daha sonra tablonun ilk satırının ilk hücresini alıyoruz. Bu hücreden tercih edilen genişlik tipini şu komutla alabiliriz:`PreferredWidth.Type` mülk ve değeri ile`PreferredWidth.Value` mülk.
 
 ### Aspose.Words for .NET kullanarak Tercih Edilen Genişlik Tipini Alma için örnek kaynak kodu 
 

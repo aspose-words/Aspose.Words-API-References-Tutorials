@@ -62,7 +62,7 @@ Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Uzyskaj 
 
 #### P1: Co to jest korespondencja seryjna w Aspose.Words?
 
-Korespondencja seryjna w Aspose.Words to proces łączenia danych z zewnętrznego źródła (np. arkusza kalkulacyjnego Excel lub bazy danych) z szablonowym dokumentem Word w celu tworzenia spersonalizowanych dokumentów. Ułatwia to automatyczne generowanie pism, raportów i innych podobnych dokumentów.
+Korespondencja seryjna w Aspose.Words to proces łączenia danych z zewnętrznego źródła (np. arkusza kalkulacyjnego lub bazy danych Excel) z szablonowym dokumentem Word w celu tworzenia spersonalizowanych dokumentów. Ułatwia to automatyczne generowanie pism, raportów i innych podobnych dokumentów.
 
 #### P2: Jak uzyskać listę pól korespondencji seryjnej dostępnych w dokumencie programu Word?
 

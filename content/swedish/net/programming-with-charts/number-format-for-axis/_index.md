@@ -9,7 +9,7 @@ url: /sv/net/programming-with-charts/number-format-for-axis/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin arbetat med diagram i dina dokument och önskat att du kunde formatera siffrorna på din axel för att få dem att se mer professionella ut? Nåväl, du har tur! I den här handledningen ska vi dyka djupt in i hur du kan uppnå just det med Aspose.Words för .NET. Detta kraftfulla bibliotek låter dig hantera Word-dokument på ett sätt som är lätt som en plätt. Och idag fokuserar vi på att ge dessa diagramaxlar en makeover med anpassade nummerformat.
+Hallå där! Har du någonsin arbetat med diagram i dina dokument och önskat att du kunde formatera siffrorna på din axel för att få dem att se mer professionella ut? Tja, du har tur! I den här handledningen ska vi dyka djupt in i hur du kan uppnå just det med Aspose.Words för .NET. Detta kraftfulla bibliotek låter dig hantera Word-dokument på ett sätt som är lätt som en plätt. Och idag fokuserar vi på att ge dessa diagramaxlar en makeover med anpassade nummerformat.
 
 ## Förutsättningar
 

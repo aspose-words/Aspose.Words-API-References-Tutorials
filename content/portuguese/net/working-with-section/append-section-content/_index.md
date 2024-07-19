@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Etapa 2: adicionar seções ao documento
 
-seguir, adicionaremos algumas seções ao nosso documento. Cada seção conterá algum texto e inseriremos quebras de seção entre elas.
+A seguir, adicionaremos algumas seções ao nosso documento. Cada seção conterá algum texto e inseriremos quebras de seção entre elas.
 
 ```csharp
 builder.Write("Section 1");

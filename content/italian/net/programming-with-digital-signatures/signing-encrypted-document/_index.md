@@ -39,7 +39,7 @@ Per prima cosa, configura il tuo progetto Visual Studio. Apri Visual Studio e cr
 
 ## Passaggio 2: aggiunta di Aspose.Words al tuo progetto
 
-Successivamente, dobbiamo aggiungere Aspose.Words al tuo progetto. Esistono alcuni modi per eseguire questa operazione, ma l'uso di NuGet è il più semplice. 
+Successivamente, dobbiamo aggiungere Aspose.Words al tuo progetto. Esistono alcuni modi per eseguire questa operazione, ma l'utilizzo di NuGet è il più semplice. 
 
 1. Aprire la console di gestione pacchetti NuGet da Strumenti > Gestione pacchetti NuGet > Console di gestione pacchetti.
 2. Esegui il seguente comando:

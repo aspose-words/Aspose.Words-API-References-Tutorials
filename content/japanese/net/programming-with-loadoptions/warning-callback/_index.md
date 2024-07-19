@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 この例では、指定された読み込みオプションを使用して、ドキュメント ディレクトリにあるドキュメント「Document.docx」を読み込みます。
 
-### 読み込みオプションのサンプルソースコード
+### 読み込みオプションのソースコード例
 
   Aspose.Words for .NET を使用した「警告コールバック」機能を備えた LoadOptions
 

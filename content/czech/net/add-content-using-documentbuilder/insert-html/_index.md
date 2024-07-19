@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Vytvoření nového dokumentu
 
- Dále vytvoříme novou instanci`Document` třída. Toto představuje náš dokument Word.
+ Dále vytvoříme novou instanci souboru`Document` třída. Toto představuje náš dokument Word.
 
 ```csharp
 Document doc = new Document();

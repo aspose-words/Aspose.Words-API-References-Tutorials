@@ -9,7 +9,7 @@ url: /es/net/document-formatting/paragraph-formatting/
 ---
 ## Introducción
 
-¿Alguna vez te has encontrado atrapado en una batalla interminable con el formato de documentos de Word? No estás solo. Todos hemos pasado por eso, jugueteando con la configuración de los párrafos, sólo para terminar con un documento que parece más un rompecabezas que un informe profesional. ¿Pero adivina que? Existe una solución mágica para todos sus problemas de formato: Aspose.Words para .NET. Imagínese tener una herramienta que pueda formatear sus párrafos exactamente como usted desea, sin los dolores de cabeza habituales. Suena de ensueño, ¿verdad? Bueno, abróchese el cinturón porque estamos a punto de sumergirnos en el mundo del formato de párrafos con Aspose.Words para .NET, haciendo que sus documentos luzcan pulidos y profesionales con solo unas pocas líneas de código.
+¿Alguna vez te has encontrado atrapado en una batalla interminable con el formato de documentos de Word? No estás solo. Todos hemos pasado por eso, jugueteando con la configuración de los párrafos, sólo para terminar con un documento que parece más un rompecabezas que un informe profesional. ¿Pero adivina que? Existe una solución mágica para todos sus problemas de formato: Aspose.Words para .NET. Imagínese tener una herramienta que pueda formatear sus párrafos exactamente como usted desea, sin los dolores de cabeza habituales. Suena de ensueño, ¿verdad? Bueno, abróchese el cinturón porque estamos a punto de sumergirnos en el mundo del formato de párrafos con Aspose.Words para .NET, haciendo que sus documentos luzcan pulidos y profesionales con sólo unas pocas líneas de código.
 
 ## Requisitos previos
 
@@ -59,13 +59,13 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- Estamos configurando el`ParagraphFormat`propiedades. Analicemos qué hace cada propiedad:
+Estamos configurando el`ParagraphFormat` propiedades. Analicemos qué hace cada propiedad:
 - Alineación: Centra el párrafo.
 - LeftIndent: establece la sangría izquierda en 50 puntos.
 - RightIndent: establece la sangría derecha en 50 puntos.
 - SpaceAfter: Agrega 25 puntos de espacio después del párrafo.
 
-## Paso 3: agregue texto al documento
+## Paso 3: agregar texto al documento
 
 Con nuestro formato implementado, es hora de agregar algo de texto. Esto es como pintar en tu lienzo.
 

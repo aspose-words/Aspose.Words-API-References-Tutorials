@@ -32,8 +32,8 @@ Aspose.Words for .NET 튜토리얼은 Word 문서 처리에 대한 Word 문서�
 | [수평 병합](./horizontal-merge/) | .NET용 Aspose.Words를 사용하여 Word 테이블의 셀을 수평으로 병합하는 방법을 알아보세요. |
 | [가로로 병합된 셀로 변환](./convert-to-horizontally-merged-cells/) | Aspose.Words for .NET을 사용하여 Word 문서에서 표 셀을 수평으로 병합된 셀로 변환하는 방법을 알아보세요. |
 | [후속 페이지에서 행 반복](./repeat-rows-on-subsequent-pages/) | .NET용 Aspose.Words를 사용하여 Word 문서의 다음 페이지에서 표 행을 반복하는 방법을 알아보세요. |
-| [페이지 너비에 자동 맞춤](./auto-fit-to-page-width/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 페이지 너비에 표를 자동으로 맞추는 방법을 알아보세요. |
-| [기본 너비 설정](./preferred-width-settings/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 기본 테이블 셀 너비를 설정하는 방법을 알아보세요. |
+| [창에 자동 맞춤](./auto-fit-to-page-width/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 창에 테이블을 쉽게 자동 맞춤할 수 있습니다. 깔끔하고 전문적인 문서에 적합합니다. |
+| [기본 너비 설정](./preferred-width-settings/) | 이 단계별 가이드를 통해 Aspose.Words for .NET에서 절대, 상대 및 자동 너비 설정을 사용하여 테이블을 만드는 방법을 알아보세요. |
 | [기본 너비 유형 검색](./retrieve-preferred-width-type/) | .NET용 Aspose.Words를 사용하여 Word 테이블에서 셀의 유형 및 기본 너비 값을 검색하는 방법을 알아보세요. |
 | [테이블 위치 가져오기](./get-table-position/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 표의 위치를 얻는 방법을 알아보세요. |
 | [부동 테이블 위치 가져오기](./get-floating-table-position/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 부동 테이블의 위치를 얻는 방법을 알아보세요. |

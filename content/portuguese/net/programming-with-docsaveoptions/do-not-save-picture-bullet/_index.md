@@ -40,7 +40,7 @@ Em primeiro lugar, você precisa especificar o caminho para o diretório de docu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Substituir`"YOUR DOCUMENTS DIRECTORY"` com o caminho real no seu sistema onde seus documentos estão localizados.
+ Substituir`"YOUR DOCUMENTS DIRECTORY"` com o caminho real em seu sistema onde seus documentos estão localizados.
 
 ## Etapa 2: carregar o documento com marcadores de imagem
 
@@ -93,5 +93,5 @@ Não, esse recurso específico é para marcadores de imagens. No entanto, Aspose
 ### Existe uma avaliação gratuita do Aspose.Words for .NET?
  Sim, você pode obter um teste gratuito[aqui](https://releases.aspose.com/).
 
-### Como posso adquirir uma licença do Aspose.Words for .NET?
+### Como faço para adquirir uma licença do Aspose.Words for .NET?
  Você pode comprar uma licença no[Aspose Loja](https://purchase.aspose.com/buy).

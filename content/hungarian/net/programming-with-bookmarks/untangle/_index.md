@@ -9,7 +9,7 @@ url: /hu/net/programming-with-bookmarks/untangle/
 ---
 ## Bevezetés
 
-Word-dokumentumban programozott navigáció kicsit olyan lehet, mint egy labirintusban való eligazodás. Előfordulhat, hogy könyvjelzőkkel, címsorokkal, táblázatokkal és egyéb módosítandó elemekkel találkozhat. Ma egy gyakori, de bonyolult feladatba merülünk: a Word-dokumentumban lévő könyvjelzők feloldása az Aspose.Words for .NET segítségével. Ez az oktatóanyag lépésről lépésre végigvezeti Önt a folyamaton, biztosítva, hogy az utazás minden részét megértse.
+A Word-dokumentumban programozott navigáció kicsit olyan lehet, mint egy labirintusban való eligazodás. Előfordulhat, hogy könyvjelzőkkel, címsorokkal, táblázatokkal és egyéb módosítandó elemekkel találkozhat. Ma egy gyakori, de bonyolult feladatba merülünk: a Word-dokumentumban lévő könyvjelzők feloldása az Aspose.Words for .NET segítségével. Ez az oktatóanyag lépésről lépésre végigvezeti Önt a folyamaton, biztosítva, hogy az utazás minden részét megértse.
 
 ## Előfeltételek
 
@@ -21,7 +21,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy mindennel rende
 
 ## Névterek importálása
 
-A kezdéshez feltétlenül importálja a szükséges névtereket. Ez lehetővé teszi a Word dokumentumok Aspose.Words segítségével történő kezeléséhez szükséges osztályok és módszerek elérését.
+kezdéshez feltétlenül importálja a szükséges névtereket. Ez lehetővé teszi a Word dokumentumok Aspose.Words segítségével történő kezeléséhez szükséges osztályok és módszerek elérését.
 
 ```csharp
 using Aspose.Words;
@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-Ebben a lépésben a`GetAncestor` módszerrel megkeresheti a könyvjelző kezdő és záró csomópontjának szülősorát. Ez segít pontosan meghatározni az érintett sorokat.
+ Ebben a lépésben a`GetAncestor` módszerrel megkeresheti a könyvjelző kezdő és záró csomópontjának szülősorát. Ez segít pontosan meghatározni az érintett sorokat.
 
 ## 4. lépés: Ellenőrizze a szomszédos sorokat
 
@@ -93,7 +93,7 @@ Végül, ha a feltételek teljesülnek, áthelyezzük a könyvjelző végcsomóp
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-Ebben a lépésben a`AppendChild`módszer a könyvjelző végcsomópontjának mozgatásához. Ha hozzáfűzi a felső sor utolsó cellájának utolsó bekezdéséhez, biztosítjuk, hogy a könyvjelző helyesen legyen kibontva.
+ Ebben a lépésben a`AppendChild` módszer a könyvjelző végcsomópontjának mozgatásához. Ha hozzáfűzi a felső sor utolsó cellájának utolsó bekezdéséhez, biztosítjuk, hogy a könyvjelző helyesen legyen kibontva.
 
 ## Következtetés
 

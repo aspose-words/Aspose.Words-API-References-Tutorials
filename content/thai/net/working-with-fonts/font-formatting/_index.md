@@ -23,7 +23,7 @@ url: /th/net/working-with-fonts/font-formatting/
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## ขั้นตอนที่ 2: สร้างเอกสารและตัวสร้างเอกสารใหม่
+## ขั้นตอนที่ 2: สร้างเอกสารและเครื่องมือสร้างเอกสารใหม่
  ต่อไป เราจะสร้างเอกสารใหม่โดยสร้างอินสแตนซ์ของ`Document` คลาสและตัวสร้างเอกสารโดยการสร้างอินสแตนซ์`DocumentBuilder` ระดับ.
 
 ```csharp

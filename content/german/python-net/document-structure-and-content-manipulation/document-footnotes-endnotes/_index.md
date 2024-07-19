@@ -24,7 +24,7 @@ Fußnoten und Endnoten dienen dazu, zusätzliche Informationen in einem Dokument
 
 ## Hinzufügen von Fußnoten und Endnoten mit Aspose.Words für Python
 
-Um Fußnoten und Endnoten programmgesteuert mit Aspose.Words für Python hinzuzufügen, folgen Sie diesen Schritten:
+Um Fußnoten und Endnoten programmgesteuert mit Aspose.Words für Python hinzuzufügen, befolgen Sie diese Schritte:
 
 1.  Installation: Installieren Sie das Aspose.Words für Python-Paket mit`pip install aspose-words`.
 
@@ -73,7 +73,7 @@ Sie können Fußnoten und Endnoten programmgesteuert verwalten, indem Sie:
 
 - Halten Sie Fußnoten kurz und relevant
 - Verwenden Sie Endnoten für ausführlichere Erklärungen
-- Behalten Sie eine einheitliche Formatierung bei
+- Achten Sie auf eine einheitliche Formatierung
 - Überprüfen Sie die Richtigkeit der Zitate
 
 ## Fehlerbehebung bei allgemeinen Problemen

@@ -124,7 +124,7 @@ Word 文件中的書籤是一個佔位符，用於標記文件的特定位置或
 是的，但使用 Aspose.Words 載入文件時需要提供密碼。
 
 ### 如何列出文件中的所有書籤？
-您可以迭代`Bookmarks`集合於`Range`的對象`Document`.
+您可以迭代`Bookmarks`集合在`Range`的對象`Document`.
 
 ### 我可以使用 Aspose.Words for .NET 刪除書籤嗎？
 是的，您可以透過呼叫刪除書籤`Remove`書籤物件上的方法。

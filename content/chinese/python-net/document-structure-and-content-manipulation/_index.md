@@ -2,7 +2,7 @@
 title: 文档结构和内容操作
 linktitle: 文档结构和内容操作
 second_title: Aspose.Words Python 文档管理 API
-description: 探索 Python 和 .NET 的 Aspose.Words 教程，重点介绍文档结构和内容操作。了解如何有效地导航、提取和修改文档元素。提供源代码示例。
+description: 探索适用于 Python 和 .NET 的 Aspose.Words 教程，重点介绍文档结构和内容操作。了解如何有效地导航、提取和修改文档元素。提供源代码示例。
 type: docs
 weight: 10
 url: /zh/python-net/document-structure-and-content-manipulation/
@@ -29,7 +29,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/
 - 文档合并：探索将多个文档合并为一个整体的策略。
 - 文档转换：了解如何将文档转换为各种格式，例如 PDF 或 HTML。
 
-完成这些教程后，您将掌握使用 Aspose.Words 导航、提取和操作文档结构和内容的坚实基础。通过详细的解释和源代码示例，您将能够高效、有效地处理与文档相关的任务。
+完成这些教程后，您将掌握使用 Aspose.Words 浏览、提取和操作文档结构和内容的坚实基础。通过详细的解释和源代码示例，您将能够高效、有效地处理与文档相关的任务。
 
 ## 文档结构和内容操作教程
 ### [管理 Word 文档的结构和内容](./document-structure-content/)
@@ -39,7 +39,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/
 ### [处理 Word 文档中的字段和数据](./document-fields/)
 了解如何使用 Aspose.Words for Python 处理 Word 文档中的字段和数据。分步指南，其中包含动态内容、自动化等的代码示例。 
 ### [了解 Word 文档中的字体和文本样式](./document-fonts/)
-探索 Word 文档中的字体和文本样式。了解如何使用 Aspose.Words for Python 增强可读性和视觉吸引力。包含分步示例的综合指南。
+探索 Word 文档中的字体和文本样式世界。了解如何使用 Aspose.Words for Python 增强可读性和视觉吸引力。包含分步示例的综合指南。
 ### [探索 Word 文档中的脚注和尾注](./document-footnotes-endnotes/)
 探索如何使用 Aspose.Words for Python 在 Word 文档中有效使用脚注和尾注。学习以编程方式添加、自定义和管理这些元素。 
 ### [掌握 Word 文档中的表单字段和数据捕获](./document-form-fields/)

@@ -121,7 +121,7 @@ Você pode personalizar a aparência acessando as propriedades do gráfico e def
 
 ### E se eu precisar atualizar os dados do gráfico de forma dinâmica?
 
-Você pode atualizar os dados do gráfico dinamicamente manipulando as propriedades da série e do eixo de forma programática com base em seus requisitos.
+Você pode atualizar os dados do gráfico dinamicamente manipulando as propriedades da série e do eixo programaticamente com base em seus requisitos.
 
 ### Onde posso encontrar documentação mais detalhada para Aspose.Words for .NET?
 

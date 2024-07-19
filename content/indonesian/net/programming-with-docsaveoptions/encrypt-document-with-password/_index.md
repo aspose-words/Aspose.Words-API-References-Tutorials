@@ -23,7 +23,7 @@ Punya segalanya? Besar! Mari kita lanjutkan ke penyiapan proyek kita.
 
 ## Impor Namespace
 
-Sebelum kita mulai, Anda harus mengimpor namespace yang diperlukan. Bayangkan namespace sebagai perangkat yang Anda perlukan untuk proyek DIY Anda.
+Sebelum kita mulai, Anda perlu mengimpor namespace yang diperlukan. Pikirkan ruang nama sebagai perangkat yang Anda perlukan untuk proyek DIY Anda.
 
 ```csharp
 using Aspose.Words;

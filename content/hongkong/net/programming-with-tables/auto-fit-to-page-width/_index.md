@@ -2,113 +2,102 @@
 title: 自動適應視窗
 linktitle: 自動適應視窗
 second_title: Aspose.Words 文件處理 API
-description: 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 將表格自動調整為 Word 文件中的頁面寬度。非常適合自動化文件工作流程。
+description: 透過此逐步指南，使用 Aspose.Words for .NET 輕鬆將表格自動調整到 Word 文件中的視窗。非常適合清潔、專業的文件。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-tables/auto-fit-to-page-width/
 ---
-
 ## 介紹
 
-嘿！您是否希望使用 Aspose.Words for .NET 自動執行文件處理任務？無論您是產生報告、建立範本還是操作現有文檔，Aspose.Words 都是一款功能強大的工具，可以幫助您實現所有這些目標以及更多目標。在本教學中，我們將深入探討如何使用 Aspose.Words for .NET 自動調整表格以適應 Word 文件中的頁面寬度。我們將引導您完成從設定環境到在程式碼中實現該功能的每一步。讀完本指南後，您將牢牢掌握如何以程式設計方式處理表格格式。
+您是否曾因 Word 文件中的表格與頁面不完美契合而感到沮喪？你調整邊距、調整列大小，但它看起來仍然很尷尬。如果您使用 Aspose.Words for .NET，這個問題有一個巧妙的解決方案—自動調整表格到視窗。這個漂亮的功能可以調整表格寬度，使其與頁面寬度完美對齊，使您的文件看起來優雅而專業。在本指南中，我們將引導您完成使用 Aspose.Words for .NET 實現這一目標的步驟，確保您的表格始終像手套一樣貼合。
 
 ## 先決條件
 
-在開始之前，讓我們確保您擁有所需的一切：
+在深入研究程式碼之前，讓我們確保一切準備就緒：
 
-1. C# 基礎知識：熟悉 C# 文法和概念至關重要。
-2.  Aspose.Words for .NET：下載[這裡](https://releases.aspose.com/words/net/) 。您可以從[免費試用](https://releases.aspose.com/).
-3. Visual Studio：任何最新版本都可以使用，但建議使用最新版本。
-4. .NET Framework：確保您的系統上已安裝它。
+1. Visual Studio：您需要像 Visual Studio 這樣的 IDE 來編寫和執行 .NET 程式碼。
+2.  Aspose.Words for .NET：請確定您已安裝 Aspose.Words for .NET。你可以下載它[這裡](https://releases.aspose.com/words/net/).
+3. C#基礎知識：熟悉C#程式語言將幫助您更輕鬆地理解程式碼片段。
 
-東西都齊全了嗎？偉大的！讓我們繼續有趣的部分。
+在解決了這些先決條件後，讓我們開始令人興奮的部分—編碼！
 
 ## 導入命名空間
 
-首先，我們需要導入必要的名稱空間。這很重要，因為它使我們能夠存取我們將在本教程中使用的類別和方法。
+要開始使用 Aspose.Words for .NET，您需要匯入必要的命名空間。這告訴您的程式在哪裡可以找到您將使用的類別和方法。
+
+以下是匯入 Aspose.Words 命名空間的方法：
 
 ```csharp
-using System;
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-這些命名空間對於在 Aspose.Words 中處理文件和表格格式至關重要。
+這`Aspose.Words`命名空間包含用於操作Word文件的核心類，而`Aspose.Words.Tables`專門用於處理桌子。
 
-## 第 1 步：設定文檔目錄
+## 第 1 步：設定您的文檔
 
-首先，讓我們指定保存文檔的目錄。這有助於 Aspose.Words 定位並保存我們想要操作的檔案。
+首先，您需要載入包含要自動調整的表格的 Word 文件。為此，您將使用`Document`Aspose.Words 提供的類別。
 
 ```csharp
+//定義文檔目錄的路徑
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+//從指定路徑載入文檔
+Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-代替`"YOUR DOCUMENT DIRECTORY"`與文件資料夾的實際路徑。
+在此步驟中，您定義文件的儲存路徑並將其載入到`Document`目的。代替`"YOUR DOCUMENT DIRECTORY"`與您的文件所在的實際路徑。
 
-## 第 2 步：建立新文檔
+## 第 2 步：訪問表
 
-接下來，我們將建立一個新的Word文件並初始化`DocumentBuilder`幫助我們建立文件內容。
+載入文件後，下一步是存取要修改的表格。您可以像這樣檢索文件中的第一個表格：
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+//從文件中取得第一個表格
+Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-在這裡，我們初始化一個`Document`物件和一個`DocumentBuilder`我們將使用它來插入和格式化內容的物件。
+此程式碼片段取得文件中找到的第一個表。如果您的文件包含多個表並且您需要一個特定的表，則可能需要相應地調整索引。
 
-## 第 3 步：插入表格
+## 第 3 步：自動調整表格
 
-現在，讓我們在文件中插入一個表格。我們首先建立一個佔據頁面寬度一半的表格。
+現在您已經有了表格，您可以套用自動調整功能。這將自動調整表格以適應頁面的寬度：
 
 ```csharp
-Table table = builder.StartTable();
-builder.InsertCell();
+//自動調整表格以適應視窗寬度
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
-builder.Writeln("Cell #1");
-builder.InsertCell();
-builder.Writeln("Cell #2");
-builder.InsertCell();
-builder.Writeln("Cell #3");
 ```
 
-在此步驟中，我們建立一個表格，插入儲存格，並在每個儲存格中新增一些文字。這`AutoFit`方法用於設定表格的寬度以適合頁面寬度。
+這`AutoFit`方法與`AutoFitBehavior.AutoFitToWindow`確保調整表格寬度以適合頁面的整個寬度。
 
-## 第 4 步：儲存文檔
+## 第四步：儲存修改後的文檔
 
-最後，我們需要保存我們的文件。這會將我們所做的更改寫入新的 Word 文件。
+自動調整表格後，最後一步是將變更儲存到新文件：
 
 ```csharp
-doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
+//將修改後的文件儲存到新文件中
+doc.Save(dataDir + "WorkingWithTables.AutoFitTableToWindow.docx");
 ```
 
-這行程式碼使用給定的檔案名稱將文件儲存到指定的目錄。
-
-## 第 5 步：運行程式碼
-
-編寫完程式碼後，在 Visual Studio 中執行它。您的文件將保存在指定的目錄中，表格會自動適應頁面寬度。
+這會將修改後的文件與自動調整的表格儲存到新文件中。現在，您可以在 Word 中開啟此文檔，表格將完全適合頁面寬度。
 
 ## 結論
 
-現在你就得到它了！您已成功學習如何使用 Aspose.Words for .NET 將表格自動調整為 Word 文件中的頁面寬度。本教學介紹了設定環境、建立表格和格式化表格以及儲存文件。 Aspose.Words 提供了大量功能，因此請務必探索[API文件](https://reference.aspose.com/words/net/)以充分發揮其能力。
+現在您已經完成了 — 使用 Aspose.Words for .NET 將表格自動調整到視窗是一件輕而易舉的事！透過遵循這些簡單的步驟，您可以確保您的表格始終看起來專業且完美適合您的文件。無論您是要處理大量表格還是只是想整理文檔，此功能都會改變遊戲規則。試試一下，讓您的文件在整潔、對齊的表格中熠熠生輝！
 
 ## 常見問題解答
 
-### 1. 什麼是 Aspose.Words for .NET？
+### 我可以在文件中自動調整多個表格嗎？  
+是的，您可以循環瀏覽文件中的所有表格並對每個表格套用自動調整方法。
 
-Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員以程式設計方式建立、操作和轉換 Word 文件。它非常適合自動化文件相關任務。
+### 自動調整會影響表格的內容嗎？  
+不會，自動調整會調整表格的寬度，但不會改變儲存格內的內容。
 
-### 2. 我可以免費使用Aspose.Words for .NET嗎？
+### 如果我的表格有我想要保留的特定列寬怎麼辦？  
+自動調整將覆蓋特定的列寬。如果您需要保持一定的寬度，則可能需要在套用自動調整之前手動調整列。
 
-您可以嘗試使用 Aspose.Words for .NET[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
+### 我可以對其他文件格式的表格使用自動調整功能嗎？  
+Aspose.Words 主要支援 Word 文件 (.docx)。對於其他格式，您可能需要先將它們轉換為 .docx。
 
-### 3. 如何設定不同的表格格式？
-
-您可以使用 Aspose.Words 提供的不同方法自訂表格格式。檢查[API文件](https://reference.aspose.com/words/net/)取得詳細說明。
-
-### 4. 如何獲得 Aspose.Words for .NET 支援？
-
-您可以透過訪問獲得支持[Aspose 支援論壇](https://forum.aspose.com/c/words/8).
-
-### 5. 我可以操作圖像和圖表等其他元素嗎？
-
-是的，Aspose.Words 允許您操作各種元素，例如圖像、圖表和 SmartArt。探索[文件](https://reference.aspose.com/words/net/)更多細節。
+### 如何獲得 Aspose.Words 的試用版？  
+您可以下載免費試用版[這裡](https://releases.aspose.com/).

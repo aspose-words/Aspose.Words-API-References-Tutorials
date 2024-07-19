@@ -14,7 +14,7 @@ Les extensions Web sont devenues partie intégrante des systèmes modernes de ge
 
 ## Conditions préalables
 
-Avant d’entrer dans les détails techniques, assurez-vous d’avoir les conditions préalables suivantes en place :
+Avant de plonger dans les détails techniques, assurez-vous que les conditions préalables suivantes sont remplies :
 
 - Compréhension de base de la programmation Python.
 -  Référence de l'API Aspose.Words pour Python (disponible sur[ici](https://reference.aspose.com/words/python-net/).

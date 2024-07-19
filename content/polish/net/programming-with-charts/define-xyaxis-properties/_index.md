@@ -15,7 +15,7 @@ Wykresy są potężnym narzędziem do wizualizacji danych. Kiedy potrzebujesz tw
 
 Zanim zagłębisz się w kodowanie, musisz spełnić kilka warunków wstępnych:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: potrzebujesz zintegrowanego środowiska programistycznego (IDE), takiego jak Visual Studio.
 3. .NET Framework: Upewnij się, że środowisko programistyczne jest skonfigurowane pod kątem programowania .NET.
 4. Podstawowa znajomość języka C#: W tym przewodniku założono, że masz podstawową wiedzę na temat programowania w języku C#.
@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Charts;
 ```
 
-Podzielimy proces na proste kroki, z których każdy skupia się na określonej części definiowania właściwości osi XY na wykresie.
+Podzielimy ten proces na proste kroki, z których każdy skupia się na określonej części definiowania właściwości osi XY na wykresie.
 
 ## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
 

@@ -2,91 +2,101 @@
 title: 未使用のスタイルとリストをクリーンアップする
 linktitle: 未使用のスタイルとリストをクリーンアップする
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメント内の未使用のスタイルとリストをクリーンアップするためのステップバイステップ ガイド。
+description: Aspose.Words for .NET を使用して、使用されていないスタイルとリストを削除し、Word 文書をクリーンアップします。このステップ バイ ステップ ガイドに従って、文書を簡単に合理化します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
+## 導入
 
-このチュートリアルでは、C# ソース コードを使用して、Aspose.Words for .NET で未使用のスタイルとリストをクリーンアップする方法を説明します。この機能を使用すると、ドキュメントで使用されていないスタイルとリストを削除できます。
+こんにちは! Word 文書が少し乱雑になってきたと感じたことはありませんか? 使用されていないスタイルやリストがそのまま放置され、スペースを占有し、文書が必要以上に複雑に見えてしまうことはありませんか? いいえ、ラッキーです! 今日は、Aspose.Words for .NET を使用して、使用されていないスタイルやリストを整理するちょっとしたコツを紹介します。文書を気持ちよくリフレッシュするようなものです。では、コーヒーを片手に、ゆっくり座って、始めましょう!
 
-## ステップ1: プロジェクトのセットアップ
+## 前提条件
 
-まず、お気に入りの IDE で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET ライブラリが参照されていることを確認します。
+細かい詳細に入る前に、必要なものがすべて揃っているかどうか確認しましょう。簡単なチェックリストを以下に示します。
 
-## ステップ2: ドキュメントの読み込み
+- C# の基礎知識: C# プログラミングに慣れている必要があります。
+-  Aspose.Words for .NET: このライブラリがインストールされていることを確認してください。インストールされていない場合はダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio などの C# 互換 IDE。
+- サンプル ドキュメント: クリーンアップする未使用のスタイルとリストがいくつか含まれた Word ドキュメント。
 
-この手順では、クリーンアップする未使用のスタイルとリストを含む Word 文書を読み込みます。次のコードを使用して文書を読み込みます。
+## 名前空間のインポート
+
+まず最初に、名前空間を整理しましょう。Aspose.Words を使用するには、いくつかの重要な名前空間をインポートする必要があります。
 
 ```csharp
-//ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Cleaning;
+```
+
+## ステップ1: ドキュメントを読み込む
+
+最初のステップは、クリーンアップするドキュメントを読み込むことです。ドキュメント ディレクトリへのパスを指定する必要があります。これは、Word ファイルが保存されている場所です。
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
 
-交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが配置されているディレクトリの実際のパスを入力します。
+## ステップ2: 現在のスタイルとリストを確認する
 
-## ステップ3: クリーンアップの前にスタイルとリストを数える
-
-クリーンアップする前に、ドキュメント内に存在するスタイルとリストの数をカウントします。カウンターを表示するには、次のコードを使用します。
+クリーンアップを開始する前に、ドキュメントに現在いくつのスタイルとリストが含まれているかを確認することをお勧めします。これにより、クリーンアップ後に比較するための基準が得られます。
 
 ```csharp
-Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
-$"Number of lists before cleaning: {doc.Lists.Count}");
+Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists before Cleanup: {doc.Lists.Count}");
 ```
 
-これらの手順では、クリーンアップ前のドキュメント内に存在するスタイルとリストの数が表示されます。
+## ステップ3: クリーンアップオプションを定義する
 
-## ステップ4: 使用されていないスタイルとリストをクリーンアップする
-
-次に、ドキュメントから未使用のスタイルとリストをクリーンアップします。クリーンアップを実行するには、次のコードを使用します。
+ここで、クリーンアップ オプションを定義します。この例では、未使用のスタイルを削除しますが、未使用のリストは保持します。これらのオプションは、必要に応じて調整できます。
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-doc. Cleanup(cleanupOptions);
 ```
 
-このコードは、指定されたオプションを使用して、ドキュメントから未使用のスタイルとリストを削除します。この例では、`UnusedStyles`未使用のスタイルを削除し、`UnusedLists`使用されていない場合でもリストを保持するオプション。
+## ステップ4: クリーンアップを実行する
 
-## ステップ5: クリーニング後のスタイルとリストを数える
-
-クリーンアップを行った後、スタイルとリストを再度カウントして、折りたたまれているかどうかを確認します。新しいカウンターを表示するには、次のコードを使用します。
+クリーンアップ オプションを設定すると、ドキュメントをクリーンアップできます。この手順では、未使用のスタイルが削除され、未使用のリストはそのまま保持されます。
 
 ```csharp
-Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-				  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
+doc.Cleanup(cleanupOptions);
 ```
 
-これらの手順では、クリーニング後に残っているスタイルとリストの数を示します。
+## ステップ5: クリーンアップ後にスタイルとリストを確認する
 
-### Aspose.Words for .NET を使用して未使用のスタイルとリストをクリーンアップするためのサンプル ソース コード
+クリーンアップの影響を確認するには、スタイルとリストの数をもう一度確認してみましょう。これにより、削除されたスタイルの数が表示されます。
 
 ```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Unused styles.docx");
-
-	//組み込みスタイルと組み合わせると、ドキュメントには 8 つのスタイルが含まれるようになります。
-	//ドキュメント内にテキストがある場合、カスタムスタイルは「使用済み」としてマークされます。
-	//そのスタイルでフォーマットされています。つまり、追加した 4 つのスタイルは現在使用されていません。
-	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
-					  $"Count of lists before Cleanup: {doc.Lists.Count}");
-
-	//指定された CleanupOptions に応じて、ドキュメントから未使用のスタイルとリストをクリーンアップします。
-	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-	doc.Cleanup(cleanupOptions);
-
-	Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-					  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
-    
+Console.WriteLine($"Count of styles after Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 ```
 
-必ず正しいドキュメントパスを指定してください。`dataDir`変数。
+## ステップ6: クリーンアップしたドキュメントを保存する
 
-Aspose.Words for .NET を使用して、ドキュメントから未使用のスタイルとリストをクリーンアップする方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、この機能を自分のドキュメントに簡単に適用できます。
+最後に、整理されたドキュメントを保存しましょう。これにより、すべての変更が保存され、ドキュメントが可能な限り整理されます。
 
+```csharp
+doc.Save(dataDir + "CleanedDocument.docx");
+```
+
+## 結論
+
+これで完了です。Aspose.Words for .NET を使用して、使用されていないスタイルとリストを削除し、Word 文書を整理できました。これは、デジタル デスクを整理し、文書をより管理しやすく、効率的にするようなものです。よくやったと自分を褒めてあげましょう。
+
+## よくある質問
+
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、C# を使用してプログラム的に Word 文書を作成、変更、変換できる強力なライブラリです。
+
+### 未使用のスタイルとリストを同時に削除できますか?
+はい、両方設定できます`UnusedLists`そして`UnusedStyles`に`true`の中に`CleanupOptions`両方を削除します。
+
+### クリーンアップを元に戻すことは可能ですか?
+いいえ、クリーンアップが完了してドキュメントが保存されると、変更を元に戻すことはできません。 常に元のドキュメントのバックアップを保存してください。
+
+### Aspose.Words for .NET のライセンスは必要ですか?
+はい、Aspose.Words for .NETの全機能を使用するにはライセンスが必要です。[一時ライセンス](https://purchase.aspose.com/temporary-license)または[1つ購入する](https://purchase.aspose.com/buy).
+
+### さらに詳しい情報やサポートはどこで入手できますか?
+詳細なドキュメントは以下をご覧ください[ここ](https://reference.aspose.com/words/net/)そして、[Aspose フォーラム](https://forum.aspose.com/c/words/8).

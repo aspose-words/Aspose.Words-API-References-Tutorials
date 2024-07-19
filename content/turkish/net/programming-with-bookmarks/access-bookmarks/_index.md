@@ -9,7 +9,7 @@ url: /tr/net/programming-with-bookmarks/access-bookmarks/
 ---
 ## giriiş
 
-Günümüzün dijital çağında belge işleme görevlerinin otomatikleştirilmesi bir zorunluluktur. İster büyük belge kümeleriyle uğraşıyor olun, ister yalnızca iş akışınızı kolaylaştırmaya ihtiyacınız olsun, Word belgelerini programlı olarak nasıl yöneteceğinizi anlamak size büyük miktarda zaman kazandırabilir. Bunun önemli bir yönü, bir Word belgesindeki yer imlerine erişmektir. Bu kılavuz, Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretlerine erişme sürecinde size yol gösterecektir. O halde hemen dalalım ve sizi bilgilendirelim!
+Günümüzün dijital çağında belge işleme görevlerinin otomatikleştirilmesi bir zorunluluktur. İster büyük belge kümeleriyle uğraşıyor olun, ister yalnızca iş akışınızı kolaylaştırmaya ihtiyacınız olsun, Word belgelerini programlı olarak nasıl yöneteceğinizi anlamak size büyük miktarda zaman kazandırabilir. Bunun önemli bir yönü, bir Word belgesindeki yer imlerine erişmektir. Bu kılavuz, Aspose.Words for .NET kullanarak bir Word belgesindeki yer imlerine erişme sürecinde size yol gösterecektir. O halde hemen dalalım ve sizi bilgilendirelim!
 
 ## Önkoşullar
 
@@ -31,7 +31,7 @@ using Aspose.Words.Bookmark;
 
 ## 1. Adım: Belgeyi Yükleyin
 
-Öncelikle Word belgenizi Aspose.Words Document nesnesine yüklemeniz gerekir. İşte tüm sihrin başladığı yer burası.
+Öncelikle Word belgenizi Aspose.Words Document nesnesine yüklemeniz gerekir. Burası tüm sihrin başladığı yer.
 
 ```csharp
 // Belgeler dizininin yolu.

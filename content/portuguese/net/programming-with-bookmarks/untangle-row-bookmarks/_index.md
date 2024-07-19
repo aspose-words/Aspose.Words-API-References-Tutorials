@@ -32,7 +32,7 @@ using System;
 
 ## Etapa 1: carregue o documento do Word
 
-Começamos carregando o documento do Word que contém os marcadores de linha emaranhados. O`Document` classe lida com a manipulação de documentos em Aspose.Words. Veja como carregar o documento:
+ Começamos carregando o documento do Word que contém os marcadores de linha emaranhados. O`Document` classe lida com a manipulação de documentos em Aspose.Words. Veja como carregar o documento:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // Substitua pela localização do seu documento
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Verifique se as linhas são válidas e adjacentes
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Mover o final do marcador para o último parágrafo da última célula da linha superior
+		   //Mover o final do marcador para o último parágrafo da última célula da linha superior
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ Aqui está uma explicação passo a passo do que o código faz:
 
  Iteramos todos os marcadores do documento usando um`foreach` laço.
 Para cada marcador, recuperamos a linha pai do início do marcador (`bookmark.BookmarkStart`) e o final do marcador (`bookmark.BookmarkEnd` ) usando o`GetAncestor` método.
-Em seguida, verificamos se ambas as linhas foram encontradas (`row1 != null`e`row2 != null`e se forem linhas adjacentes (`row1.NextSibling == row2`). Isso garante que modifiquemos apenas os marcadores que abrangem linhas adjacentes.
+Em seguida, verificamos se ambas as linhas foram encontradas (`row1 != null`e`row2 != null`) e se forem linhas adjacentes (`row1.NextSibling == row2`). Isso garante que modifiquemos apenas os marcadores que abrangem linhas adjacentes.
 Se as condições forem atendidas, movemos o nó final do marcador para o final do último parágrafo na última célula da linha superior (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) desembaraçando-os efetivamente.
 
 ## Etapa 3: excluir linha por marcador
@@ -87,12 +87,12 @@ Aqui está um detalhamento desta função:
 
 Pegamos o nome do marcador (`bookmarkName`) como entrada.
  Recuperamos o objeto de marcador correspondente usando`doc.Range.Bookmarks[bookmarkName]`.
- Em seguida, obtemos a linha pai do marcador que começa a usar`GetAncestor` (semelhante ao`Untangle` função).
+Em seguida, obtemos a linha pai do marcador que começa a usar`GetAncestor` (semelhante ao`Untangle` função).
 Finalmente, verificamos se o marcador e a linha existem (`bookmark != null` e
 
 ## Etapa 4: verifique o desembaraço
 
- Enquanto o`Untangle`função deve garantir a segurança de outros marcadores, é sempre uma boa prática verificar. Veja como podemos verificar se o processo de desembaraço não excluiu acidentalmente o final de outro marcador:
+ Enquanto o`Untangle` função deve garantir a segurança de outros marcadores, é sempre uma boa prática verificar. Veja como podemos verificar se o processo de desembaraço não excluiu acidentalmente o final de outro marcador:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

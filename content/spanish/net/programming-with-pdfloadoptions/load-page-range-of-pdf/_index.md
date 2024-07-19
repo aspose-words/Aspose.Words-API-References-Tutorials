@@ -15,7 +15,7 @@ En este tutorial, le explicaremos cómo cargar un rango de páginas específico 
 Utilice el siguiente código para cargar un rango de páginas específico desde un documento PDF:
 
 ```csharp
-// Ruta al directorio de documentos.
+//Ruta al directorio de documentos.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };

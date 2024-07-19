@@ -42,9 +42,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ez a kódrészlet inicializálja a dokumentumot, és beállít egy építőt. A`dataDir` az Ön dokumentumának alapja.
+ Ez a kódrészlet inicializálja a dokumentumot, és beállít egy építőt. A`dataDir` a dokumentum alapja.
 
-## 2. lépés: A betűtípus testreszabása és tartalom hozzáadása
+## 2. lépés: A betűtípus testreszabása és a tartalom hozzáadása
 
 Ezután adjunk hozzá szöveget a dokumentumunkhoz. Tekintsd ezt úgy, mintha megírnád a darabod forgatókönyvét.
 
@@ -73,7 +73,7 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 
 ## 4. lépés: Cserélje ki a szöveget metakarakterekre
 
-Ez a lépés az, ahol megtörténik a varázslat! Cseréljük a "szakasz" szót, majd egy bekezdéstörést, és adjunk hozzá egy aláhúzást.
+Ez a lépés az, ahol a varázslat megtörténik! Cseréljük a "szakasz" szót, majd egy bekezdéstörést, és adjunk hozzá egy aláhúzást.
 
 ```csharp
 // Kétszer minden bekezdéstörést a "szakasz" szó után, adjon hozzá egyfajta aláhúzást, és tegye középre.

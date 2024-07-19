@@ -49,7 +49,7 @@ doc.startTrackRevisions("John Doe", new Date());
 
 ## 6. Hacer revisiones
 
-Hagamos una revisión agregando otro párrafo:
+Hagamos una revisión añadiendo otro párrafo:
 
 ```java
 para = body.appendParagraph("Paragraph 4. ");

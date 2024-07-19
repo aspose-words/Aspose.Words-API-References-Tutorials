@@ -30,4 +30,4 @@ Naučte se, jak vylepšit své dokumenty pomocí tvarů a grafiky pomocí Aspose
 ### [Tisk a vykreslování dokumentů](./document-printing-rendering/)
 Objevte efektivní tisk a vykreslování dokumentů pomocí Aspose.Words for Java. Naučte se krok za krokem s příklady zdrojového kódu.
 ### [Vykreslování dokumentů do HTML](./rendering-documents-html/)
-Naučte se, jak snadno vykreslit dokumenty do HTML pomocí Aspose.Words for Java. Podrobný průvodce pro efektivní převod dokumentů.
+Naučte se, jak snadno vykreslovat dokumenty do HTML pomocí Aspose.Words for Java. Podrobný průvodce pro efektivní převod dokumentů.

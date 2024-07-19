@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- 이 단계에서는 이미지에 대한 백업 옵션을 구성합니다. 우리는 새로운 것을 만듭니다`ImageSaveOptions` 원하는 저장 형식을 지정하는 객체입니다. 여기서 JPEG 형식은 "Jpeg"입니다. 또한 다음을 사용하여 변환할 페이지 범위를 설정했습니다.`PageSet`물체. 마지막으로 이미지의 밝기와 대비를 조정합니다.`ImageBrightness`그리고`ImageContrast` 각각 속성. 또한 다음을 사용하여 수평 해상도를 변경합니다.`HorizontalResolution` 재산.
+ 이 단계에서는 이미지에 대한 백업 옵션을 구성합니다. 우리는 새로운 것을 만듭니다`ImageSaveOptions` 원하는 저장 형식을 지정하는 객체입니다. 여기서 JPEG 형식은 "Jpeg"입니다. 또한 다음을 사용하여 변환할 페이지 범위를 설정합니다.`PageSet`물체. 마지막으로 이미지의 밝기와 대비를 조정합니다.`ImageBrightness`그리고`ImageContrast` 각각 속성. 또한 다음을 사용하여 수평 해상도를 변경합니다.`HorizontalResolution` 재산.
 
 ## 4단계: 이미지 백업하기
 
@@ -61,7 +61,7 @@ ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
 options.PageSet = new PageSet(0);
 
 // 이미지의 밝기와 대비를 변경합니다.
-// 둘 다 0-1 척도이며 기본적으로 0.5입니다.
+// 둘 다 0-1 규모이며 기본적으로 0.5입니다.
 options.ImageBrightness = 0.3f;
 options.ImageContrast = 0.7f;
 

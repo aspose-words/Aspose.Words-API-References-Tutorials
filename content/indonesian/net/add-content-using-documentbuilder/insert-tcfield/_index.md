@@ -64,7 +64,7 @@ Sekarang, inilah bagian yang menyenangkan. Kami akan memasukkan bidang TC ke dal
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Baris kode ini memberitahu Aspose.Words untuk menyisipkan bidang TC dengan teks entri "Teks Entri". Itu`\\f t` bagiannya adalah tombol yang menentukan bagaimana entri ditampilkan di Daftar Isi.
+ Baris kode ini memberitahu Aspose.Words untuk menyisipkan bidang TC dengan teks entri "Teks Entri". Itu`\\f t`bagiannya adalah tombol yang menentukan bagaimana entri ditampilkan di Daftar Isi.
 
 ## Langkah 4: Simpan Dokumen
 

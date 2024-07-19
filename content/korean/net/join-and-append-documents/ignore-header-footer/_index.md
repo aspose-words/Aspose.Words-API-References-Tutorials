@@ -36,7 +36,7 @@ using Aspose.Words.Saving;
 Visual Studio에서 새 콘솔 앱 프로젝트를 만드는 것부터 시작해 보겠습니다.
 
 1. 비주얼 스튜디오를 엽니다.
-2. "새 프로젝트 만들기"를 선택하세요.
+2. "새 프로젝트 만들기"를 선택합니다.
 3. "콘솔 앱(.NET Core)"을 선택합니다.
 4. 프로젝트 이름을 지정하고 "만들기"를 클릭하세요.
 
@@ -125,4 +125,4 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
 ### .NET용 Aspose.Words에 대한 추가 예제와 문서는 어디서 찾을 수 있나요?
 
- 다음에서 포괄적인 문서와 예제를 찾을 수 있습니다.[Aspose 웹사이트](https://reference.aspose.com/words/net/).
+ 다음에서 포괄적인 문서와 예제를 찾을 수 있습니다.[Aspose 웹 사이트](https://reference.aspose.com/words/net/).

@@ -131,7 +131,7 @@ Bu eğitimde Aspose.Words for Java kullanarak grafiklerle nasıl çalışılaca�
 
 ### Veri etiketlerini özel sayı biçimleriyle nasıl biçimlendirebilirim?
 
-Veri etiketlerini şuraya erişerek biçimlendirebilirsiniz:`DataLabels` bir serinin özellikleri ve kullanılarak istenen format kodunun ayarlanması`getNumberFormat().setFormatCode()`.
+Veri etiketlerini şuraya erişerek biçimlendirebilirsiniz:`DataLabels` bir serinin özellikleri ve kullanılarak istenilen format kodunun ayarlanması`getNumberFormat().setFormatCode()`.
 
 ### Bir grafikte eksen özelliklerini nasıl özelleştiririm?
 

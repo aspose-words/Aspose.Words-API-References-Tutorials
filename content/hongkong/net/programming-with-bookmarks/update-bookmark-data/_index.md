@@ -21,7 +21,7 @@ url: /zh-hant/net/programming-with-bookmarks/update-bookmark-data/
 
 ## 導入命名空間
 
-檢查完先決條件後，就可以設定項目了。第一步涉及導入必要的 Aspose.Words 命名空間。它看起來是這樣的：
+一旦您檢查了先決條件，就可以設定您的項目了。第一步涉及導入必要的 Aspose.Words 命名空間。它看起來是這樣的：
 
 ```csharp
 using Aspose.Words;

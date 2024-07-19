@@ -9,7 +9,7 @@ url: /tr/net/find-and-replace-text/simple-find-replace/
 ---
 ## giriiş
 
-Merhaba, gelecek vadeden kodlayıcı! Hiç bir Word belgesindeki bir kelimenin veya ifadenin birden çok örneğini, her birini manuel olarak bulma ve değiştirme gibi sıkıcı bir görev olmadan güncellemeniz gerekti mi? Şunu yazan bir şablonunuz olduğunu hayal edin: "_CustomerName_" ve bunun yerine "James Bond" demeniz gerekiyor. Kolay, değil mi? Aspose.Words for .NET ile olabilir! Bu eğitimde size bir Word'deki metni bulma ve değiştirme sürecinde yol göstereceğiz Aspose.Words for .NET'i kullanarak belgenizi bağlayın ve metin işleme görevlerinizi kolaylaştırmaya hazırlanın!
+Merhaba, gelecek vadeden kodlayıcı! Bir Word belgesindeki bir kelimenin veya ifadenin birden çok örneğini, her birini manuel olarak bulma ve değiştirme gibi sıkıcı bir görev olmadan güncellemeniz gerekti mi? Şunu yazan bir şablonunuz olduğunu hayal edin: "_CustomerName_" ve bunun yerine "James Bond" demeniz gerekiyor. Kolay, değil mi? Aspose.Words for .NET ile olabilir! Bu eğitimde size bir Word'deki metni bulma ve değiştirme sürecinde yol göstereceğiz Aspose.Words for .NET'i kullanarak belgenizi bağlayın ve metin işleme görevlerinizi kolaylaştırmaya hazırlanın!
 
 ## Önkoşullar
 

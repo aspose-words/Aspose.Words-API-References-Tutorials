@@ -22,7 +22,7 @@ Sebelum kita mendalami detail konversi dokumen, mari kita mulai dengan Aspose.Wo
 
 ## Langkah 2: Menyiapkan Proyek Java Anda
 
-Setelah Anda mengunduh Aspose.Words untuk Java, buat proyek Java baru di IDE pilihan Anda. Tambahkan file JAR Aspose.Words ke classpath proyek Anda.
+Setelah Anda mengunduh Aspose.Words untuk Java, buat proyek Java baru di IDE pilihan Anda. Tambahkan file JAR Aspose.Words ke jalur kelas proyek Anda.
 
 ## Mengonversi Dokumen ke Format Berbeda
 

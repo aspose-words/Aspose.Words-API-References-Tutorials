@@ -35,9 +35,9 @@ using Aspose.Words.Settings;
 
 ## Adım 1: Kaynak ve Hedef Belgelerini Yükleyin:
 
-Bir dize değişkeni tanımlayın`dataDir` belge dizininizin yolunu saklamak için. "BELGE DİZİNİNİZ"i gerçek konumla değiştirin.
+ Bir dize değişkeni tanımlayın`dataDir` belge dizininizin yolunu saklamak için. "BELGE DİZİNİNİZ"i gerçek konumla değiştirin.
 
- İki tane oluştur`Document` kullanarak nesneler`Aspose.Words.Document` yapıcı. İlki (`srcDoc`) eklenecek içeriği içeren kaynak belgeyi tutacaktır. İkinci (`dstDoc`), kaynak içeriği yeniden başlatılan sayfa numaralandırmayla entegre edeceğimiz hedef belgeyi temsil eder.
+ İki tane oluştur`Document` kullanarak nesneler`Aspose.Words.Document`yapıcı. İlki (`srcDoc`) eklenecek içeriği içeren kaynak belgeyi tutacaktır. İkinci (`dstDoc`), kaynak içeriği yeniden başlatılan sayfa numaralandırmayla entegre edeceğimiz hedef belgeyi temsil eder.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Gerçek dizininizle değiştirin
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Adım 3: Sayfa Numaralandırmanın Yeniden Başlatılmasını Etkinleştirme:
 
- Aynı kapsamda`PageSetup` kaynak belgenin ilk bölümünün nesnesini ayarlayın`RestartPageNumbering`mülkiyet`true`Bu önemli adım, Aspose.Words'e eklenen içerik için sayfa numaralandırmasını yeniden başlatma talimatını verir.
+ Aynı kapsamda`PageSetup` kaynak belgenin ilk bölümünün nesnesini ayarlayın`RestartPageNumbering`mülkiyet`true`. Bu önemli adım, Aspose.Words'e eklenen içerik için sayfa numaralandırmasını yeniden başlatma talimatını verir.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
@@ -87,7 +87,7 @@ dstDoc.Save(dataDir + "final_document.docx");
 
 ## Çözüm
 
-Sonuç olarak, Aspose.Words for .NET'te sayfa sonları ve numaralandırma konusunda ustalaşmak, gösterişli ve iyi yapılandırılmış belgeler oluşturmanıza olanak sağlar. Bu kılavuzda özetlenen teknikleri uygulayarak, içeriği yeniden başlatılan sayfa numaralandırmayla sorunsuz bir şekilde bütünleştirerek profesyonel ve okuyucu dostu bir sunum sağlayabilirsiniz. Aspose.Words'ün belge işleme için çok sayıda ek özellik sunduğunu unutmayın.
+Sonuç olarak, Aspose.Words for .NET'te sayfa sonları ve numaralandırma konusunda ustalaşmak, gösterişli ve iyi yapılandırılmış belgeler oluşturmanıza olanak tanır. Bu kılavuzda özetlenen teknikleri uygulayarak içeriği yeniden başlatılan sayfa numaralandırmayla sorunsuz bir şekilde entegre edebilir, profesyonel ve okuyucu dostu bir sunum sağlayabilirsiniz. Aspose.Words'ün belge işleme için çok sayıda ek özellik sunduğunu unutmayın.
 
 ## SSS'ler
 

@@ -67,7 +67,7 @@ Opsi ini mempersonalisasi garis tanda tangan, menjadikannya jelas dan profesiona
 
 ## Langkah 3: Masukkan Baris Tanda Tangan
 
-Dengan menetapkan pilihan kita, sekarang kita dapat memasukkan baris tanda tangan ke dalam dokumen.
+Dengan menetapkan pilihan kita, sekarang kita dapat menyisipkan baris tanda tangan ke dalam dokumen.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;

@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## الخطوة 3: تهيئة DocumentBuilder
 
-لإدراج HTML، سنحتاج إلى مساعدة`DocumentBuilder` فصل. تسهل هذه الفئة المفيدة إضافة محتوى إلى وثيقتنا.
+لإدراج HTML، سنحتاج إلى مساعدة`DocumentBuilder` فصل. تسهل هذه الفئة المفيدة إضافة محتوى إلى مستندنا.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

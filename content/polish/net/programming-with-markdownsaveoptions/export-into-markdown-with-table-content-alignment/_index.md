@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-Oto przewodnik krok po kroku wyjaśniający następujący kod źródłowy C#, który pomaga eksportować zawartość do pliku Markdown z wyrównaniem zawartości tabeli przy użyciu biblioteki Aspose.Words dla platformy .NET. Zanim użyjesz tego kodu, upewnij się, że w swoim projekcie umieściłeś bibliotekę Aspose.Words.
+Oto przewodnik krok po kroku wyjaśniający następujący kod źródłowy języka C#, który pomaga eksportować zawartość do pliku Markdown z wyrównaniem zawartości tabeli przy użyciu biblioteki Aspose.Words dla platformy .NET. Zanim użyjesz tego kodu, upewnij się, że w swoim projekcie umieściłeś bibliotekę Aspose.Words.
 
 ## Krok 1: Ustaw ścieżkę katalogu dokumentów
 

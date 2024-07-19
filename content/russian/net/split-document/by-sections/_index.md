@@ -15,7 +15,7 @@ url: /ru/net/split-document/by-sections/
 Для начала нам нужно указать каталог вашего документа и загрузить документ в объект Document. Вот как:
 
 ```csharp
-// Путь к каталогу документов.
+//Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

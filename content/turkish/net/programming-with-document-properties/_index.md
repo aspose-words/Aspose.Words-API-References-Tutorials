@@ -16,11 +16,11 @@ Bu eğitimler, belge özellikleriyle etkileşimde bulunmak amacıyla Aspose.Word
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Değişkenleri Al](./get-variables/) | Aspose.Words for .NET ile belge değişkenlerini almak için adım adım kılavuz. |
-| [Özellikleri Numaralandır](./enumerate-properties/) | Aspose.Words for .NET ile belge özelliklerini numaralandırmak için adım adım kılavuz. |
-| [Özel Belge Özellikleri Ekle](./add-custom-document-properties/) | Aspose.Words for .NET ile bir belgeye özel özellikler eklemek için adım adım kılavuz. |
-| [Özel Belge Özelliklerini Kaldır](./remove-custom-document-properties/) | Aspose.Words for .NET ile bir belgeden özel özellikleri kaldırmak için adım adım kılavuz. |
-| [Kişisel Bilgileri Kaldır](./remove-personal-information/) | Aspose.Words for .NET ile kişisel bilgilerin bir belgeden kaldırılmasına ilişkin adım adım kılavuz. |
-| [İçeriğe Bağlantıyı Yapılandırma](./configuring-link-to-content/) | Aspose.Words for .NET ile bir belgedeki içeriğe bağlantı kurma konusunda adım adım kılavuz. |
-| [Ölçü Birimleri Arasında Dönüştürme](./convert-between-measurement-units/) | Aspose.Words for .NET ile bir belgedeki ölçü birimleri arasında dönüştürme yapmak için adım adım kılavuz. |
-| [Kontrol Karakterlerini Kullan](./use-control-characters/) | Aspose.Words for .NET ile kontrol karakterlerini kullanma konusunda adım adım kılavuz. |
+| [Değişkenleri Al](./get-variables/) | Aspose.Words for .NET'te ustalaşın. Bu adım adım kılavuzla Word belgelerinden değişkenleri yüklemeyi ve çıkarmayı öğrenin. |
+| [Özellikleri Numaralandır](./enumerate-properties/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesindeki özellikleri nasıl numaralandıracağınızı öğrenin. Tüm beceri seviyelerindeki geliştiriciler için mükemmeldir. |
+| [Özel Belge Özellikleri Ekle](./add-custom-document-properties/) | Aspose.Words for .NET kullanarak Word dosyalarına özel belge özelliklerinin nasıl ekleneceğini öğrenin. Belgelerinizi ek meta verilerle geliştirmek için adım adım kılavuzumuzu izleyin. |
+| [Özel Belge Özelliklerini Kaldır](./remove-custom-document-properties/) | Aspose.Words for .NET'i kullanarak Word dosyalarındaki özel belge özelliklerini kaldırın. Hızlı ve kolay bir çözüm için adım adım kılavuzumuzu izleyin. Geliştiriciler için mükemmel. |
+| [Kişisel Bilgileri Kaldır](./remove-personal-information/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak kişisel bilgileri belgelerden nasıl kaldıracağınızı öğrenin. Belge yönetimini basitleştirin. |
+| [İçeriğe Bağlantıyı Yapılandırma](./configuring-link-to-content/) | Ayrıntılı, adım adım eğitimimizle Aspose.Words for .NET kullanarak bir Word belgesindeki içeriğe yönelik bağlantıyı nasıl yapılandıracağınızı öğrenin. |
+| [Ölçü Birimleri Arasında Dönüştürme](./convert-between-measurement-units/) | Aspose.Words for .NET'te ölçü birimlerini nasıl dönüştüreceğinizi öğrenin. Belge kenar boşluklarını, üstbilgilerini ve altbilgilerini inç ve nokta cinsinden ayarlamak için adım adım kılavuzumuzu izleyin. |
+| [Kontrol Karakterlerini Kullan](./use-control-characters/) | Aspose.Words for .NET kullanarak Word belgesi görevlerini nasıl otomatikleştireceğinizi keşfedin. Bu kılavuz kurulum, metin değiştirme ve daha fazlasını kapsayarak iş akışınızı verimli hale getirir. |

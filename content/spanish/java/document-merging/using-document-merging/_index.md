@@ -179,7 +179,7 @@ public class DocumentMerger {
 
 ## 10. Conclusión
 
-Aspose.Words para Java brinda a los desarrolladores de Java la capacidad de fusionar documentos de Word sin esfuerzo. Si sigue la guía paso a paso de este artículo, ahora puede fusionar documentos, manejar el formato, insertar saltos y gestionar conflictos con facilidad. Con Aspose.Words para Java, la combinación de documentos se convierte en un proceso automatizado y fluido, lo que ahorra tiempo y esfuerzo valiosos.
+Aspose.Words para Java permite a los desarrolladores de Java la capacidad de fusionar documentos de Word sin esfuerzo. Si sigue la guía paso a paso de este artículo, ahora puede fusionar documentos, manejar el formato, insertar pausas y gestionar conflictos con facilidad. Con Aspose.Words para Java, la combinación de documentos se convierte en un proceso fluido y automatizado, lo que ahorra tiempo y esfuerzo valiosos.
 
 ## 11. Preguntas frecuentes 
 

@@ -15,10 +15,10 @@ Hallå där! Har du någonsin undrat hur du kan skydda dina Word-dokument från 
 
 Innan vi dyker in i det tråkiga med att lösenordsskydda dina Word-dokument, finns det några saker du behöver:
 
-1. Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket. Du kan[ladda ner den här](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket. Du kan[ladda ner den här](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Visual Studio eller någon annan C#-utvecklingsmiljö.
 3. Grundläggande C#-kunskap: En grundläggande förståelse för C#-programmering.
-4.  Aspose-licens: Få en licens från[här](https://purchase.aspose.com/buy) eller använd en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för utvärdering.
+4.  Aspose-licens: Få en licens från[här](https://purchase.aspose.com/buy)eller använd en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för utvärdering.
 
 ## Importera namnområden
 

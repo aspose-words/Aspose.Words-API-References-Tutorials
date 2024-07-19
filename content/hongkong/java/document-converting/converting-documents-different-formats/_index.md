@@ -22,7 +22,7 @@ url: /zh-hant/java/document-converting/converting-documents-different-formats/
 
 ## 第 2 步：設定您的 Java 項目
 
-下載 Aspose.Words for Java 後，在您首選的 IDE 中建立一個新的 Java 專案。將 Aspose.Words JAR 檔案加入到專案的類別路徑中。
+下載 Aspose.Words for Java 後，在您首選的 IDE 中建立一個新的 Java 專案。將 Aspose.Words JAR 檔案加入專案的類別路徑。
 
 ## 將文件轉換為不同格式
 

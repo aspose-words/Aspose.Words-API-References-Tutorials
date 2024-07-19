@@ -15,7 +15,7 @@ Dalam contoh ini, kami akan menunjukkan kepada Anda cara membagi dokumen Word me
 Untuk memulai, kita perlu menentukan direktori dokumen Anda dan memuat dokumen ke dalam objek Dokumen. Begini caranya:
 
 ```csharp
-// Jalur ke direktori dokumen.
+//Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
@@ -86,7 +86,7 @@ Ya, Anda dapat menyesuaikan kriteria pemisahan sesuai dengan kebutuhan spesifik 
 #### Q2: Apakah mungkin untuk menggabungkan kembali bagian-bagian tersebut menjadi satu dokumen?
  Ya, Anda dapat menggabungkan kembali bagian-bagian yang terpisah menjadi satu dokumen dengan mengimpor dan menggabungkan bagian-bagian dari beberapa dokumen menggunakan`ImportNode`Dan`Sections.Add` metode. Hal ini memungkinkan Anda membalikkan proses pemisahan dan merekonstruksi dokumen asli.
 
-#### Q3: Apakah ada batasan jumlah bagian yang dapat dipisahkan menggunakan fitur "Berdasarkan Bagian"?
+#### Q3: Apakah ada batasan jumlah bagian yang dapat dibagi menggunakan fitur "Berdasarkan Bagian"?
 Jumlah bagian yang dapat dipisahkan menggunakan fitur "Berdasarkan Bagian" bergantung pada kemampuan Aspose.Words untuk .NET dan sumber daya sistem yang tersedia. Secara umum, ini mendukung pemisahan dokumen dengan jumlah bagian yang banyak, namun dokumen yang sangat panjang atau jumlah bagian yang sangat banyak mungkin memerlukan sumber daya sistem tambahan dan waktu pemrosesan.
 
 #### Q4: Dapatkah saya melakukan operasi tertentu pada setiap bagian setelah pemisahan?

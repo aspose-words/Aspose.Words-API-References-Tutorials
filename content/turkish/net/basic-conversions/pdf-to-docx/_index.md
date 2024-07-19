@@ -56,7 +56,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Pdf Document.pdf");
 ```
 
- Burada bir örneğini oluşturuyoruz.`Document`sınıfına gidin ve PDF dosyamızın yolunu ona iletin. Bu eylem, PDF'yi dönüştürmeye hazır şekilde belleğe yükler.
+ Burada bir örneğini oluşturuyoruz.`Document` sınıfına gidin ve PDF dosyamızın yolunu ona iletin. Bu eylem, PDF'yi dönüştürmeye hazır şekilde belleğe yükler.
 
 ## 3. Adım: PDF'yi Word Belgesi olarak kaydetme
 

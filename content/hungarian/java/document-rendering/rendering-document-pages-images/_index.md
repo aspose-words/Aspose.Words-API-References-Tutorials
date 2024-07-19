@@ -35,7 +35,7 @@ public class DocumentToImageConversion {
 
 ## 2. lépés: Töltse be a dokumentumot
 
-Ebben a lépésben betöltjük azt a Word-dokumentumot, amelyet képpé szeretnénk konvertálni. Ügyeljen arra, hogy cserélje ki`"sample.docx"` a dokumentum elérési útjával.
+Ebben a lépésben betöltjük azt a Word-dokumentumot, amelyet képpé szeretnénk konvertálni. Mindenképpen cserélje ki`"sample.docx"` a dokumentum elérési útjával.
 
 ```java
 // Töltse be a Word dokumentumot
@@ -88,7 +88,7 @@ Igen, az Aspose.Words for Java a dokumentumformátumok széles skáláját támo
 
 ### Az Aspose.Words alkalmas kötegelt dokumentumok feldolgozására?
 
-Igen, az Aspose.Words kiválóan alkalmas kötegelt dokumentumok feldolgozására. A Java segítségével hatékonyan automatizálhatja több dokumentum képpé konvertálását.
+Igen, az Aspose.Words kiválóan alkalmas kötegelt dokumentumok feldolgozására. A Java használatával hatékonyan automatizálhatja több dokumentum képpé konvertálását.
 
 ### Hol találok további dokumentációt és példákat?
 

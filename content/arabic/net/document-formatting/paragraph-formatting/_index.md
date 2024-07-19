@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- نحن نقوم بتكوين`ParagraphFormat`ملكيات. دعونا نحلل ما تفعله كل خاصية:
+نحن نقوم بتكوين`ParagraphFormat` ملكيات. دعونا نحلل ما تفعله كل خاصية:
 - محاذاة: لتوسيط الفقرة.
 - LeftIndent: يضبط المسافة البادئة اليسرى على 50 نقطة.
 - RightIndent: يضبط المسافة البادئة اليمنى على 50 نقطة.

@@ -30,7 +30,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 ```
 
 ## ステップ4: テーブルのスタイルを定義する
@@ -51,7 +51,7 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
 配列の内容に応じて配列のサイズを自動的に調整するには、`AutoFit()`方法`AutoFitBehavior.AutoFitToContents`行動。
 
 ```csharp
-table. AutoFit(AutoFitBehavior.AutoFitToContents);
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## ステップ7: セルにコンテンツを追加する
@@ -62,24 +62,24 @@ kg)」とそれに対応するデータを表示します。
 ```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
-builder. InsertCell();
-builder. Writen("Quantity (kg)");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Apples");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("20");
-builder. EndRow();
-builder. InsertCell();
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Bananas");
-builder. InsertCell();
-builder. Writen("40");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("40");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Carrots");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("50");
-builder. EndRow();
+builder.EndRow();
 ```
 
 ## ステップ8: 変更したドキュメントを保存する
@@ -94,41 +94,41 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 ### Aspose.Words for .NET を使用してスタイル付きテーブルを作成するためのサンプル ソース コード 
 
 ```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+//ドキュメントディレクトリへのパス
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	//テーブルの書式を設定する前に、まず少なくとも 1 行を挿入する必要があります。
-	builder.InsertCell();
-	//一意のスタイル識別子に基づいて、使用するテーブル スタイルを設定します。
-	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	//スタイルによってフォーマットする機能を適用します。
-	table.StyleOptions =
-		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-	table.AutoFit(AutoFitBehavior.AutoFitToContents);
-	builder.Writeln("Item");
-	builder.CellFormat.RightPadding = 40;
-	builder.InsertCell();
-	builder.Writeln("Quantity (kg)");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Apples");
-	builder.InsertCell();
-	builder.Writeln("20");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Bananas");
-	builder.InsertCell();
-	builder.Writeln("40");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Carrots");
-	builder.InsertCell();
-	builder.Writeln("50");
-	builder.EndRow();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+//テーブルの書式を設定する前に、まず少なくとも 1 行を挿入する必要があります。
+builder.InsertCell();
+//一意のスタイル識別子に基づいて、使用するテーブル スタイルを設定します。
+table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
+//スタイルによってフォーマットする機能を適用します。
+table.StyleOptions =
+	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
+builder.Writeln("Item");
+builder.CellFormat.RightPadding = 40;
+builder.InsertCell();
+builder.Writeln("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Apples");
+builder.InsertCell();
+builder.Writeln("20");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Bananas");
+builder.InsertCell();
+builder.Writeln("40");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Carrots");
+builder.InsertCell();
+builder.Writeln("50");
+builder.EndRow();
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## 結論

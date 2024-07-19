@@ -9,7 +9,7 @@ url: /zh-hant/net/basic-conversions/docx-to-markdown/
 ---
 ## 介紹
 
-在 .NET 開發領域，以程式設計方式操作 Word 文件可以大幅提高工作效率和功能。 Aspose.Words for .NET 是一個功能強大的 API，它使開發人員能夠將文件處理功能無縫整合到他們的應用程式中。無論您想要轉換、建立、修改，甚至從頭開始產生文檔，Aspose.Words 都提供了強大的工具來高效地簡化這些任務。
+在 .NET 開發領域，以程式設計方式操作 Word 文件可以大大提高生產力和功能。 Aspose.Words for .NET 是一個功能強大的 API，它使開發人員能夠將文件處理功能無縫整合到他們的應用程式中。無論您想要轉換、建立、修改，甚至從頭開始產生文檔，Aspose.Words 都提供了強大的工具來高效地簡化這些任務。
 
 ## 先決條件
 

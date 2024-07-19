@@ -104,7 +104,7 @@ tady to máte! Úspěšně jste přidali jeden dokument aplikace Word k jinému 
 
  Absolutně! Opakovaným voláním můžete připojit tolik dokumentů, kolik potřebujete`AppendDocument` metoda s různými zdrojovými dokumenty.
 
-### Co když moje dokumenty mají jiné formátování?
+### Co když mají moje dokumenty jiné formátování?
 
  Způsob zpracování formátování můžete ovládat pomocí`ImportFormatMode` parametr. Možnosti zahrnují`KeepSourceFormatting`, `UseDestinationStyles`, a více.
 

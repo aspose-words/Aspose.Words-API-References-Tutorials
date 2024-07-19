@@ -88,4 +88,4 @@ A: Ja, es ist möglich, das Format des Autorfelds in einem Word-Dokument anzupas
 
 #### F: Ist das Autorenfeld sensibel gegenüber späteren Änderungen des Autorennamens?
 
-A: Ja, das Autorenfeld reagiert auf nachträgliche Änderungen des Autorennamens. Wenn Sie den Autorennamen in den Dokumenteigenschaften ändern, wird das Autorenfeld beim Aktualisieren von Dokumentfeldern automatisch mit dem neuen Namen aktualisiert.
+A: Ja, das Autorenfeld reagiert empfindlich auf nachträgliche Änderungen des Autorennamens. Wenn Sie den Autorennamen in den Dokumenteigenschaften ändern, wird das Autorenfeld beim Aktualisieren von Dokumentfeldern automatisch mit dem neuen Namen aktualisiert.

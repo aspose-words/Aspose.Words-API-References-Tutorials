@@ -81,7 +81,7 @@ doc.watermark = image_watermark
 
 ## Ajustando as propriedades da marca d'água da imagem
 
-Você pode controlar o tamanho e a posição da marca d'água da imagem:
+Você pode controlar o tamanho e a posição da marca d’água da imagem:
 
 ```python
 # Adjust image watermark properties
@@ -100,7 +100,7 @@ section = doc.sections[0]
 section.watermark = watermark
 ```
 
-## Criando marcas d'água transparentes
+## Criando marcas d’água transparentes
 
 Para criar uma marca d'água transparente, ajuste o nível de transparência:
 
@@ -109,7 +109,7 @@ Para criar uma marca d'água transparente, ajuste o nível de transparência:
 watermark.transparency = 0.5  # Range: 0 (opaque) to 1 (fully transparent)
 ```
 
-## Salvando o documento com marcas d'água
+## Salvando o documento com marcas d’água
 
 Depois de adicionar marcas d'água, salve o documento com as marcas d'água aplicadas:
 

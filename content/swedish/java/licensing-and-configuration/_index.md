@@ -37,6 +37,6 @@ Licensiering och konfiguration av Aspose.Words för Java är en grundläggande a
 
  Kom ihåg att för detaljerade kodexempel och ytterligare vägledning, se[Aspose.Words för Java-dokumentation](https://reference.aspose.com/words/java/). Börja din resa idag och lås upp världen av möjligheter som Aspose.Words erbjuder Java-utvecklare.
 
-## Licensie- och konfigurationshandledningar
+## Licenserings- och konfigurationsguider
 ### [Tillämpa licens på Aspose.Words för Java](./applying-licensing/)
 Lär dig hur du ansöker om licenser för Aspose.Words för Java steg för steg. Få åtkomst nu och lås upp dess fulla potential.

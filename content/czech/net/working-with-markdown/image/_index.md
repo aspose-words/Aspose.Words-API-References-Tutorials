@@ -2,75 +2,77 @@
 title: obraz
 linktitle: obraz
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se vkládat a přizpůsobovat obrázek pomocí Aspose.Words for .NET Podrobný průvodce.
+description: Naučte se přidávat obrázky do dokumentů pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Vylepšete své dokumenty pomocí vizuálů během okamžiku.
 type: docs
 weight: 10
 url: /cs/net/working-with-markdown/image/
 ---
+## Úvod
 
-tomto příkladu vysvětlíme, jak používat funkci obrázku s Aspose.Words pro .NET. Obrázky umožňují vkládat do dokumentu ilustrace a grafiku.
+Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes se podíváme na to, jak přidat obrázky do dokumentů. Ať už pracujete na zprávě, brožuře nebo jen okořeňujete jednoduchý dokument, přidání obrázků může znamenat obrovský rozdíl. Takže, pojďme začít!
 
-## Krok 1: Použití generátoru dokumentů
+## Předpoklady
 
-Nejprve použijeme generátor dokumentů k přidání obsahu do našeho dokumentu.
+Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
+
+1.  Aspose.Words for .NET: Můžete si jej stáhnout z[Aspose webové stránky](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Jakékoli vývojové prostředí .NET, jako je Visual Studio.
+3. Základní znalost C#: Pokud jste obeznámeni s C#, můžete začít!
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. To je nezbytné pro přístup k třídám a metodám Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Nyní si celý proces rozdělíme do jednoduchých kroků. Každý krok bude mít nadpis a podrobné vysvětlení, abyste se ujistili, že budete postupovat hladce.
+
+## Krok 1: Inicializujte DocumentBuilder
+
+ Chcete-li začít, musíte vytvořit a`DocumentBuilder` objekt. Tento objekt vám pomůže přidat obsah do vašeho dokumentu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Vložení obrázku
+## Krok 2: Vložte obrázek
 
- Můžeme vložit obrázek pomocí`Shape` třídu a specifikaci typu obrázku zde`ShapeType.Image` . Nastavíme také typ obtékání obrázku na`WrapType.Inline`.
-
-```csharp
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape. WrapType = WrapType. Inline;
-```
-
-## Krok 3: Přizpůsobení obrázku
-
- Obrázek přizpůsobíme například zadáním jeho celé cesty`"/attachment/1456/pic001.png"`a přidání názvu k obrázku.
+Dále do dokumentu vložíte obrázek. Postup je následující:
 
 ```csharp
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "Title";
+Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
-### Příklad zdrojového kódu pro obrázky s Aspose.Words pro .NET
+ Nahradit`"path_to_your_image.jpg"` se skutečnou cestou k souboru obrázku. The`InsertImage` metoda přidá obrázek do vašeho dokumentu.
+
+## Krok 3: Nastavte vlastnosti obrázku
+
+Pro obrázek můžete nastavit různé vlastnosti. Nastavíme například název obrázku:
 
 ```csharp
-// K přidání obsahu do dokumentu použijte tvůrce dokumentů.
-DocumentBuilder builder = new DocumentBuilder();
-
-// Vložit obrázek.
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape.WrapType = WrapType.Inline;
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "title";
-builder.InsertNode(shape);
+shape.ImageData.Title = "Your Image Title";
 ```
 
-gratuluji! Nyní jste se naučili používat funkci obrázků s Aspose.Words pro .NET.
+## Závěr
 
+Přidáním obrázků do dokumentů můžete výrazně zvýšit jejich vizuální přitažlivost a efektivitu. S Aspose.Words pro .NET se tento proces stává přímočarým a efektivním. Podle výše uvedených kroků můžete snadno integrovat obrázky do svých dokumentů a posunout své dovednosti při vytváření dokumentů na další úroveň.
 
-### FAQ
+## FAQ
 
-#### Otázka: Jak mohu vložit obrázek z místního souboru do Aspose.Words?
+### Mohu do jednoho dokumentu přidat více obrázků?  
+ Ano, opakováním můžete přidat tolik obrázků, kolik chcete`InsertImage` metoda pro každý obrázek.
 
- A: Chcete-li vložit obrázek z místního souboru do Aspose.Words, můžete použít`Shape` třída a`InsertImage` metoda.
+### Jaké formáty obrázků podporuje Aspose.Words pro .NET?  
+Aspose.Words podporuje různé formáty obrázků včetně JPEG, PNG, BMP, GIF a dalších.
 
-#### Otázka: Mohu vložit obrázek z adresy URL do Aspose.Words?
+### Mohu změnit velikost obrázků v dokumentu?  
+ Absolutně! Můžete nastavit vlastnosti výšky a šířky`Shape` objekt pro změnu velikosti obrázků.
 
- Odpověď: Ano, do Aspose.Words můžete vložit obrázek z adresy URL. Můžete použít totéž`InsertImage` místo cesty k místnímu souboru zadejte adresu URL obrázku.
+### Je možné přidat obrázky z adresy URL?  
+ Ano, můžete přidat obrázky z adresy URL zadáním adresy URL v`InsertImage` metoda.
 
-#### Otázka: Jak mohu změnit velikost obrázku v Aspose.Words?
-
- A: Chcete-li změnit velikost obrázku v Aspose.Words, můžete použít`Width`a`Height` vlastnosti`Shape` objekt.
-
-#### Otázka: Mohu použít filtry na obrázky v Aspose.Words?
-
- Odpověď: Ano, můžete použít filtry na obrázky v Aspose.Words. Můžete například použít filtr rozostření na obrázek pomocí`ApplyGaussianBlur` metoda`Shape` objekt.
-
-#### Otázka: Jak mohu v Aspose.Words nahradit jeden obrázek jiným?
-
- A: Chcete-li nahradit jeden obrázek jiným v Aspose.Words, můžete použít`Replace` metoda`Shape` třída. Tato metoda bere jako parametr`Shape` objekt obrázku, který má být nahrazen, a`Shape` objekt nového obrázku.
+### Jak získám bezplatnou zkušební verzi Aspose.Words pro .NET?  
+ Můžete získat bezplatnou zkušební verzi od[Aspose webové stránky](https://releases.aspose.com/).

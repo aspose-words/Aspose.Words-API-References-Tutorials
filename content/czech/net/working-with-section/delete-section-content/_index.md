@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Krok 3: Odstraňte obsah sekce
- vymazání obsahu sekce použijeme sekci`ClearContent` metoda.
+ K vymazání obsahu sekce použijeme sekci`ClearContent` metoda.
 
 ```csharp
 section.ClearContent();

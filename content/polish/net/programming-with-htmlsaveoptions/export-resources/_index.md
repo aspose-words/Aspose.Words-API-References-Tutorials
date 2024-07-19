@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://przykład.com/zasoby”
 
  Ten kod tworzy instancję`HtmlSaveOptions` i ustawia następujące opcje:
 
-- `CssStyleSheetType` jest ustawione na`CssStyleSheetType.External`aby wyeksportować arkusz stylów CSS do pliku zewnętrznego.
+- `CssStyleSheetType` jest ustawione na`CssStyleSheetType.External` aby wyeksportować arkusz stylów CSS do pliku zewnętrznego.
 - `ExportFontResources` jest ustawione na`true` aby wyeksportować zasoby czcionek.
 - `ResourceFolder` określa katalog docelowy, w którym zostaną zapisane zasoby.
-- `ResourceFolderAlias` określa alias adresu URL, który będzie używany w celu uzyskania dostępu do zasobów.
+- `ResourceFolderAlias`określa alias adresu URL, który będzie używany w celu uzyskania dostępu do zasobów.
 
 ## Krok 4: Konwertowanie i zapisywanie dokumentu do formatu HTML
 

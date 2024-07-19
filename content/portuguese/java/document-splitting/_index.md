@@ -12,7 +12,7 @@ divisão de documentos é um aspecto crucial do processamento de texto e de docu
 
 ## Divisão eficiente de documentos
 
-Nestes tutoriais, os desenvolvedores explorarão várias técnicas para dividir documentos com eficiência usando Aspose.Words for Java. Eles aprenderão como dividir documentos por intervalo de páginas, contagem de parágrafos ou até mesmo critérios personalizados. Aspose.Words fornece uma API flexível para lidar com cenários de divisão complexos, garantindo que os desenvolvedores possam adaptar o processo às suas necessidades exclusivas de gerenciamento de documentos.
+Nestes tutoriais, os desenvolvedores explorarão várias técnicas para dividir documentos com eficiência usando Aspose.Words for Java. Eles aprenderão como dividir documentos por intervalo de páginas, contagem de parágrafos ou até mesmo critérios personalizados. Aspose.Words fornece uma API flexível para lidar com cenários complexos de divisão, garantindo que os desenvolvedores possam adaptar o processo às suas necessidades exclusivas de gerenciamento de documentos.
 
 ## Automatize a divisão de documentos
 
@@ -34,4 +34,4 @@ Aprenda como realizar a separação de páginas do documento usando Aspose.Words
 ### [Extraindo o conteúdo do documento por páginas](./extracting-document-content-pages/)
 Aprenda como extrair o conteúdo do documento por páginas usando Aspose.Words for Java. Este guia passo a passo com código-fonte tornará você um especialista rapidamente.
 ### [Técnicas de divisão e extração de documentos](./document-splitting-extraction-techniques/)
-Aprenda a divisão e extração de documentos usando Aspose.Words para Java. Guia passo a passo com código fonte para manipulação eficiente. Desbloqueie o poder do Aspose
+Aprenda a divisão e extração de documentos usando Aspose.Words para Java. Guia passo a passo com código-fonte para manipulação eficiente. Desbloqueie o poder do Aspose

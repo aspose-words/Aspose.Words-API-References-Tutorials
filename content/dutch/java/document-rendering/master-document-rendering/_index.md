@@ -211,13 +211,13 @@ doc.save("output.png", saveOptions);
 
 ## Conclusie
 
-Het beheersen van documentweergave is essentieel voor het bouwen van robuuste applicaties die documenten efficiënt verwerken. Met Aspose.Words voor Java beschikt u over een krachtige toolset om documenten naadloos te manipuleren en weer te geven. In deze zelfstudie hebben we de basisbeginselen van het renderen van documenten behandeld, het werken met documentlay-outs, het renderen naar verschillende uitvoerformaten en geavanceerde renderingtechnieken. Door de uitgebreide API van Aspose.Words voor Java te gebruiken, kunt u boeiende documentgerichte toepassingen creëren die een superieure gebruikerservaring bieden.
+Het beheersen van documentweergave is essentieel voor het bouwen van robuuste applicaties die documenten efficiënt verwerken. Met Aspose.Words voor Java beschikt u over een krachtige toolset om documenten naadloos te manipuleren en weer te geven. In deze zelfstudie hebben we de basisbeginselen van het renderen van documenten besproken, het werken met documentlay-outs, het renderen naar verschillende uitvoerformaten en geavanceerde renderingtechnieken. Door de uitgebreide API van Aspose.Words voor Java te gebruiken, kunt u boeiende documentgerichte toepassingen creëren die een superieure gebruikerservaring bieden.
 
 ## Veelgestelde vragen
 
 ### Wat is het verschil tussen documentweergave en documentverwerking?
 
-Bij documentweergave worden elektronische documenten omgezet in een visuele weergave die gebruikers kunnen bekijken, bewerken of afdrukken, terwijl documentverwerking taken omvat zoals het samenvoegen van e-mail, conversie en beveiliging.
+Bij documentweergave worden elektronische documenten omgezet in een visuele representatie die gebruikers kunnen bekijken, bewerken of afdrukken, terwijl documentverwerking taken omvat zoals het samenvoegen van e-mail, conversie en beveiliging.
 
 ### Is Aspose.Words compatibel met alle Java-versies?
 

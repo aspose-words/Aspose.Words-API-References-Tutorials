@@ -27,14 +27,14 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Βήμα 3: Εισαγάγετε ένα αντικείμενο OLE ως εικονίδιο
- Χρησιμοποιήστε το Document Builder's`InsertOleObjectAsIcon`μέθοδος για την εισαγωγή ενός αντικειμένου OLE ως εικονίδιο στο έγγραφο. Καθορίστε τη διαδρομή αρχείου OLE, τη σημαία εμφάνισης, τη διαδρομή εικονιδίου και το όνομα του ενσωματωμένου αντικειμένου.
+ Χρησιμοποιήστε το Document Builder's`InsertOleObjectAsIcon` μέθοδος για την εισαγωγή ενός αντικειμένου OLE ως εικονίδιο στο έγγραφο. Καθορίστε τη διαδρομή αρχείου OLE, τη σημαία εμφάνισης, τη διαδρομή εικονιδίου και το όνομα του ενσωματωμένου αντικειμένου.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
 ```
 
 ## Βήμα 4: Αποθηκεύστε το έγγραφο
- Χρησιμοποιήστε το έγγραφο`Save` μέθοδο αποθήκευσης του εγγράφου σε αρχείο.
+ Χρησιμοποιήστε το έγγραφο`Save` μέθοδος αποθήκευσης του εγγράφου σε αρχείο.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### Ε. Πώς να δημιουργήσετε ένα νέο πρόγραμμα δημιουργίας εγγράφων και εγγράφων στο Aspose.Words για .NET;
 
- Α: Μπορείτε να δημιουργήσετε ένα νέο έγγραφο χρησιμοποιώντας το`Document` κλάση και ένα πρόγραμμα δημιουργίας εγγράφων χρησιμοποιώντας το`DocumentBuilder` τάξη. Εδώ είναι ένα παράδειγμα:
+ Α: Μπορείτε να δημιουργήσετε ένα νέο έγγραφο χρησιμοποιώντας το`Document` κλάση και ένα πρόγραμμα δημιουργίας εγγράφων χρησιμοποιώντας το`DocumentBuilder`τάξη. Εδώ είναι ένα παράδειγμα:
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### Ε. Πώς να αποθηκεύσετε το έγγραφο με το αντικείμενο OLE να έχει εισαχθεί ως εικονίδιο;
 
- Α: Χρησιμοποιήστε το έγγραφο`Save` μέθοδο αποθήκευσης του εγγράφου σε αρχείο. Εδώ είναι ένα παράδειγμα:
+ Α: Χρησιμοποιήστε το έγγραφο`Save`μέθοδο αποθήκευσης του εγγράφου σε αρχείο. Εδώ είναι ένα παράδειγμα:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

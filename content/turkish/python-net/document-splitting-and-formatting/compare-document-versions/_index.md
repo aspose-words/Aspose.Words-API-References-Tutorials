@@ -87,7 +87,7 @@ Bu adımları izleyerek Aspose.Words for Python'u kullanarak belge sürümlerini
 ### Değişiklikleri farklı renklerde vurgulayabilir miyim?
 Evet, değişiklikleri ayırt etmek için çeşitli vurgu renkleri arasından seçim yapabilirsiniz.
 
-### İkiden fazla belge versiyonunu karşılaştırmak mümkün mü?
+### İkiden fazla belge versiyonunu karşılaştırmak mümkün müdür?
 Aspose.Words for Python, birden fazla belge sürümünün aynı anda karşılaştırılmasına olanak tanır.
 
 ### Aspose.Words for Python diğer belge formatlarını destekliyor mu?

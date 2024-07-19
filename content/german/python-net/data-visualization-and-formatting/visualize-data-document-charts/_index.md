@@ -14,7 +14,7 @@ Die Visualisierung von Daten ist eine wirkungsvolle Technik, um Informationen zu
 
 ## Datenvisualisierung verstehen
 
-Datenvisualisierung ist die grafische Darstellung von Informationen, die Benutzern hilft, Daten besser zu verstehen und zu interpretieren. Sie vereinfacht komplexe Konzepte und Zusammenhänge, indem sie Daten in visuelle Elemente wie Diagramme, Graphen und Karten umwandelt. Dies ermöglicht uns, Erkenntnisse effektiv zu kommunizieren und unterstützt Entscheidungsprozesse.
+Datenvisualisierung ist die grafische Darstellung von Informationen, die Benutzern hilft, Daten besser zu verstehen und zu interpretieren. Sie vereinfacht komplexe Konzepte und Zusammenhänge, indem sie Daten in visuelle Elemente wie Diagramme, Graphen und Karten umwandelt. So können wir Erkenntnisse effektiv kommunizieren und Entscheidungsprozesse unterstützen.
 
 ## Einführung in Aspose.Words für Python
 

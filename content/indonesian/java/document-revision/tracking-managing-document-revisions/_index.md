@@ -69,7 +69,7 @@ Dalam contoh ini, kita membuka dokumen yang ada dan mulai melacak revisi dengan 
 
 ### Menerima atau Menolak Revisi
 
-Setelah revisi dilacak, Anda dapat menerima atau menolaknya secara terprogram menggunakan Aspose.Words untuk Java. Berikut ini contoh cara menerima semua revisi dalam dokumen:
+Setelah revisi dilacak, Anda dapat menerima atau menolaknya secara terprogram menggunakan Aspose.Words untuk Java. Berikut ini contoh cara menerima semua revisi dalam sebuah dokumen:
 
 ```java
 Document doc = new Document("MyDocument.docx");
@@ -123,4 +123,4 @@ Anda dapat mengunduh Aspose.Words untuk Java dari situs web di[https://releases.
 
 ## Kesimpulan
 
-Dalam panduan komprehensif ini, kami telah mempelajari cara melacak dan mengelola revisi dokumen menggunakan Aspose.Words untuk Java. Dari memahami dasar-dasar Aspose.Words untuk Java hingga mengaktifkan pelacakan revisi dan mengelola versi dokumen, kini Anda memiliki pengetahuan untuk menangani manajemen revisi dokumen secara efektif dalam proyek Anda. Aspose.Words for Java adalah alat canggih yang menyederhanakan proses, baik Anda seorang pemula atau pengembang berpengalaman. Mulai gunakan sekarang dan sederhanakan tugas pengelolaan dokumen Anda.
+Dalam panduan komprehensif ini, kami telah menjelajahi cara melacak dan mengelola revisi dokumen menggunakan Aspose.Words untuk Java. Dari memahami dasar-dasar Aspose.Words untuk Java hingga mengaktifkan pelacakan revisi dan mengelola versi dokumen, kini Anda memiliki pengetahuan untuk menangani manajemen revisi dokumen secara efektif dalam proyek Anda. Aspose.Words for Java adalah alat canggih yang menyederhanakan proses, baik Anda seorang pemula atau pengembang berpengalaman. Mulai gunakan sekarang dan sederhanakan tugas pengelolaan dokumen Anda.

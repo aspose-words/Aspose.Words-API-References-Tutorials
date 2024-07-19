@@ -100,7 +100,7 @@ A Class HandleMergeField forráskódja
             // Úgy döntöttünk, hogy az összes logikai értéket jelölőnégyzet űrlapmezőként akarjuk kiadni.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
-                // Vigye a "kurzort" az aktuális egyesítési mezőre.
+                // Vigye a „kurzort” az aktuális egyesítési mezőre.
                 mBuilder.moveToMergeField(e.getFieldName());
                 String checkBoxName = MessageFormat.format("{0}{1}", e.getFieldName(), e.getRecordIndex());
                 mBuilder.insertCheckBox(checkBoxName, (Boolean) e.getFieldValue(), 0);

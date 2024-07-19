@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Βήμα 2: Προσθέστε στυλ για κώδικα με εσοχή
 
-Θα προσθέσουμε ένα προσαρμοσμένο στυλ για τον κώδικα με εσοχή χρησιμοποιώντας το`Styles.Add` μέθοδος του`Document` αντικείμενο. Σε αυτό το παράδειγμα, δημιουργούμε ένα στυλ που ονομάζεται "IndentedCode" για κώδικα με εσοχή.
+ Θα προσθέσουμε ένα προσαρμοσμένο στυλ για τον κώδικα με εσοχή χρησιμοποιώντας το`Styles.Add` μέθοδος του`Document` αντικείμενο. Σε αυτό το παράδειγμα, δημιουργούμε ένα στυλ που ονομάζεται "IndentedCode" για κώδικα με εσοχή.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

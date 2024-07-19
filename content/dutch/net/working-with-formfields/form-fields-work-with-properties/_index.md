@@ -12,7 +12,7 @@ In deze stapsgewijze zelfstudie laten we u zien hoe u met formulierveldeigenscha
 
  Om aan de slag te gaan, moet u ervoor zorgen dat Aspose.Words voor .NET is geïnstalleerd en ingesteld in uw ontwikkelomgeving. Als u dit nog niet hebt gedaan, downloadt en installeert u de bibliotheek van[Aspose.Releases]https://releases.aspose.com/words/net/.
 
-## Stap 1: Initialiseren van het documentobject
+## Stap 1: Het documentobject initialiseren
 
  Initialiseer eerst de`Document` object door het pad op te geven naar uw brondocument met formuliervelden:
 
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Stap 2: Toegang tot een formulierveld
 
-Haal vervolgens een specifiek formulierveld op uit de formulierveldverzameling van het document. In dit voorbeeld hebben we toegang tot het formulierveld op index 3:
+Haal vervolgens een specifiek formulierveld op uit de formulierveldverzameling van het document. In dit voorbeeld hebben we toegang tot het formulierveld in index 3:
 
 ```csharp
 FormField formField = doc.Range.FormFields[3];

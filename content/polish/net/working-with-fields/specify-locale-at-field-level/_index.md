@@ -66,7 +66,7 @@ To był przykładowy kod źródłowy określający lokalizację na poziomie pola
 
  O: Aby określić ustawienia regionalne na poziomie pola w Aspose.Words dla .NET, możesz użyć opcji`FieldOptions` klasa i jej`FieldLocale` właściwość, aby ustawić żądane ustawienia regionalne. Możesz na przykład użyć`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` aby określić ustawienia regionalne języka francuskiego (Francja).
 
-#### P: Czy możliwe jest określenie różnych ustawień regionalnych dla każdego pola w Aspose.Words dla .NET?
+#### P: Czy można określić inne ustawienia regionalne dla każdego pola w Aspose.Words dla .NET?
 
  O: Tak, możliwe jest określenie różnych ustawień regionalnych dla każdego pola w Aspose.Words dla .NET. Możesz skorzystać z`FieldOptions.FieldLocale` właściwość przed utworzeniem lub aktualizacją określonego pola w celu przypisania mu innych ustawień regionalnych.
 

@@ -9,7 +9,7 @@ url: /it/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## introduzione
 
-Ehilà! Se ti stai immergendo nel mondo dell'automazione dei documenti, sei nel posto giusto. Oggi esploreremo come inserire un campo TC (Table of Contents) in un documento Word utilizzando Aspose.Words per .NET. Credimi, alla fine di questo tutorial ti sentirai come un mago che lancia incantesimi nei tuoi documenti Word. Pronto per iniziare? Facciamolo!
+Ehilà! Se ti stai immergendo nel mondo dell'automazione dei documenti, sei nel posto giusto. Oggi esploreremo come inserire un campo TC (Table of Contents) in un documento Word utilizzando Aspose.Words per .NET. Credimi, alla fine di questo tutorial ti sentirai come un mago che lancia incantesimi nei tuoi documenti Word. Pronti per iniziare? Facciamolo!
 
 ## Prerequisiti
 
@@ -64,7 +64,7 @@ Adesso arriva la parte divertente. Inseriremo un campo TC nel nostro documento. 
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Questa riga di codice indica ad Aspose.Words di inserire un campo TC con il testo della voce "Testo voce". IL`\\f t` la parte è un interruttore che determina come viene visualizzata la voce nel sommario.
+ Questa riga di codice indica ad Aspose.Words di inserire un campo TC con il testo della voce "Testo voce". IL`\\f t`la parte è un interruttore che determina come viene visualizzata la voce nel sommario.
 
 ## Passaggio 4: salva il documento
 

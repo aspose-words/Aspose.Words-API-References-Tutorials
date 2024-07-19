@@ -186,7 +186,7 @@ Aspose.Words for Java, geliştiricilerin Word belgelerini programlı olarak olu�
 
 ### 2. Aspose.Words for Java'yı ticari bir projede kullanabilir miyim?
 
-Evet, Aspose.Words for Java ticari kullanım için lisanslanmıştır.
+Evet, Aspose.Words for Java ticari kullanım için lisanslıdır.
 
 ### 3. Aspose.Words for Java, Microsoft Word'ün farklı sürümleriyle uyumlu mudur?
 

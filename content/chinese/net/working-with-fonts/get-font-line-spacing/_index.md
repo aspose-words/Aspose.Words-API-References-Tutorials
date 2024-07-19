@@ -15,7 +15,7 @@ url: /zh/net/working-with-fonts/get-font-line-spacing/
 - 项目中安装的 .NET Aspose.Words 库
 
 ## 步骤 1：创建新文档和文档生成器
-首先，我们将通过实例化创建一个新文档`Document`类和文档生成器通过实例化`DocumentBuilder`班级。
+首先，我们将通过实例化创建一个新文档`Document`通过实例化`DocumentBuilder`班级。
 
 ```csharp
 //创建新文档
@@ -69,9 +69,9 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 答：使用 Aspose.Words，您可以轻松更改 Word 文档中特定文本的行距。使用 API 选择所需的文本，并通过指定适当的值来调整行距。
 
-#### 问：是否可以在 Word 文档的行间应用精确的间距？
+#### 问：是否可以在 Word 文档中应用行间精确间距？
 
-答：是的，Aspose.Words 允许您在 Word 文档中应用行间距的精确值。您可以使用 API 为行间距指定精确值。
+答：是的，Aspose.Words 允许您在 Word 文档中应用行间精确间距。您可以使用 API 为行距指定精确值。
 
 #### 问：如何调整整个 Word 文档的行距？
 

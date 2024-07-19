@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-In diesem Schritt verwenden wir die`GetAncestor` Methode, um die übergeordnete Zeile der Lesezeichen-Start- und Lesezeichen-Endknoten zu finden. Dies hilft uns, die genauen beteiligten Zeilen zu ermitteln.
+ In diesem Schritt verwenden wir die`GetAncestor` Methode, um die übergeordnete Zeile der Lesezeichen-Start- und Lesezeichen-Endknoten zu finden. Dies hilft uns, die genauen beteiligten Zeilen zu ermitteln.
 
 ## Schritt 4: Auf benachbarte Zeilen prüfen
 
@@ -93,7 +93,7 @@ Schritt 5 Überschrift: Verschieben des Lesezeichenendes
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-In diesem Schritt verwenden wir die`AppendChild`Methode zum Verschieben des Lesezeichen-Endknotens. Indem wir ihn an den letzten Absatz der letzten Zelle der obersten Zeile anhängen, stellen wir sicher, dass das Lesezeichen richtig entwirrt wird.
+ In diesem Schritt verwenden wir die`AppendChild` Methode zum Verschieben des Lesezeichen-Endknotens. Indem wir ihn an den letzten Absatz der letzten Zelle der obersten Zeile anhängen, stellen wir sicher, dass das Lesezeichen richtig entwirrt wird.
 
 ## Abschluss
 

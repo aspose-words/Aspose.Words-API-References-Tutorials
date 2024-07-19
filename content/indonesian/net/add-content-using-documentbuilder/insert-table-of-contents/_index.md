@@ -52,7 +52,7 @@ builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
 ## Langkah 3: Mulai Konten Dokumen di Halaman Baru
 
-Untuk memastikan pemformatan yang benar, mulai konten dokumen sebenarnya di halaman baru:
+Untuk memastikan pemformatan yang tepat, mulai konten dokumen sebenarnya di halaman baru:
 
 ```csharp
 // Sisipkan hentian halaman
@@ -127,4 +127,4 @@ Aspose.Words mendukung pembuatan beberapa Daftar Isi dengan pengaturan berbeda d
 Ya, Aspose.Words memastikan kompatibilitas dengan berbagai versi format Microsoft Word.
 
 ### Di mana saya dapat menemukan lebih banyak bantuan dan dukungan untuk Aspose.Words?
-Untuk bantuan lebih lanjut, kunjungi[Aspose.Forum Kata-kata](https://forum.aspose.com/c/words/8) atau periksa[dokumentasi resmi](https://reference.aspose.com/words/net/).
+ Untuk bantuan lebih lanjut, kunjungi[Aspose.Forum Kata-kata](https://forum.aspose.com/c/words/8) atau periksa[dokumentasi resmi](https://reference.aspose.com/words/net/).

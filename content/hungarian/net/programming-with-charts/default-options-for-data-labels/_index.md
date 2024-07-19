@@ -141,5 +141,5 @@ Az Aspose.Words ingyenesen használható a[ideiglenes engedély](https://purchas
  Igen, az Aspose.Words kompatibilis a .NET Core-al. További információt a[dokumentáció](https://reference.aspose.com/words/net/).
 
 ### Hogyan vásárolhatok licencet az Aspose.Words számára?
- Engedélyt vásárolhat a[Aspose bolt](https://purchase.aspose.com/buy).
+ Engedélyt vásárolhat a[Aspose üzlet](https://purchase.aspose.com/buy).
 

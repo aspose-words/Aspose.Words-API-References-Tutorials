@@ -16,7 +16,7 @@ Antes de profundizar en el meollo de la cuestión, asegurémonos de tener todo l
 
 -  Aspose.Words para la biblioteca .NET: si aún no lo ha hecho, descárguelo desde[aquí](https://releases.aspose.com/words/net/) . También puedes optar por un[prueba gratis](https://releases.aspose.com/) si estás explorando la biblioteca.
 - Entorno de desarrollo: un IDE como Visual Studio será su patio de recreo.
-- Comprensión básica de C#: si bien cubriremos todo en detalle, será beneficioso tener un conocimiento básico de C#.
+- Comprensión básica de C#: si bien cubriremos todo en detalle, una comprensión básica de C# será beneficiosa.
 
 ¿Listo para rodar? ¡Empecemos!
 

@@ -119,7 +119,7 @@ Het maken van complexe tabelindelingen vereist vaak het samenvoegen en splitsen 
     table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
     ```
 
-2. Cellen splitsen: Splits cellen terug in hun afzonderlijke componenten.
+2. Gespleten cellen: Splits cellen terug in hun afzonderlijke componenten.
 
     ```python
     cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE

@@ -31,7 +31,7 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## Steg 4: Gå till dokumentsektionen
+## Steg 4: Öppna dokumentsektionen
  För att lägga till stycket i dokumentet måste vi komma åt den sista delen av dokumentet med hjälp av`LastSection` fast egendom.
 
 ```csharp
@@ -78,11 +78,11 @@ S: En styckenod i ett XML-dokument används för att representera ett stycke tex
 
 #### F: Hur lägger man till en styckenod i ett befintligt XML-dokument?
 
- S: För att lägga till en styckenod till ett befintligt XML-dokument kan du använda`appendChild`metod för att lägga till styckenoden som ett underordnat element till ett annat element i XML-dokumentet. Du kan till exempel lägga till det som ett underordnat element till dokumentrotelementet.
+ S: För att lägga till en styckenod till ett befintligt XML-dokument kan du använda`appendChild` metod för att lägga till styckenoden som ett underordnat element till ett annat element i XML-dokumentet. Du kan till exempel lägga till det som ett underordnat element till dokumentrotelementet.
 
 #### F: Hur definierar man innehållet i en styckenod?
 
- S: För att ställa in innehållet i en styckenod kan du använda`createTextNode` metod för att skapa en textnod som innehåller det önskade innehållet, använd sedan`appendChild` metod för att lägga till den textnoden som ett underordnat till noden i stycket.
+ S: För att ställa in innehållet i en styckenod kan du använda`createTextNode` metod för att skapa en textnod som innehåller det önskade innehållet, använd sedan`appendChild`metod för att lägga till den textnoden som ett underordnat till noden i stycket.
 
 #### F: Hur formaterar jag text i en styckenod?
 

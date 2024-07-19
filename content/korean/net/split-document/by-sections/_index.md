@@ -15,7 +15,7 @@ url: /ko/net/split-document/by-sections/
 시작하려면 문서의 디렉터리를 지정하고 문서를 Document 개체에 로드해야 합니다. 방법은 다음과 같습니다.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
+//문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
@@ -76,7 +76,7 @@ for (int i = 0; i < doc.Sections.Count; i++)
 
 섹션별로 문서 분할 기능을 사용하면 장, 섹션 또는 기타 구분과 같은 문서의 특정 부분을 조작하거나 분석해야 할 때 유용할 수 있습니다. Aspose.Words for .NET은 섹션 분리를 처리하는 안정적이고 간단한 솔루션을 제공하여 효율적인 문서 처리를 가능하게 합니다.
 
-문서 처리 기능을 향상하고 작업 흐름을 간소화하기 위해 Aspose.Words for .NET이 제공하는 다른 강력한 기능을 자유롭게 탐색해 보세요.
+문서 처리 기능을 향상하고 작업 흐름을 간소화하기 위해 Aspose.Words for .NET에서 제공하는 다른 강력한 기능을 자유롭게 탐색해 보세요.
 
 ### 자주 묻는 질문
 

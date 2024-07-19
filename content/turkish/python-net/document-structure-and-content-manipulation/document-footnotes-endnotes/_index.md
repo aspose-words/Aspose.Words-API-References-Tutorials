@@ -8,7 +8,7 @@ weight: 14
 url: /tr/python-net/document-structure-and-content-manipulation/document-footnotes-endnotes/
 ---
 
-Dipnotlar ve son notlar, içeriğinizin ana akışını bozmadan ek bilgi veya referanslar sağlamanıza olanak tanıyan, Word belgelerindeki temel öğelerdir. Bu araçlar, çalışmanızın netliğini ve güvenilirliğini artırmak için akademik, profesyonel ve hatta yaratıcı yazımda yaygın olarak kullanılır. Bu kılavuzda, Aspose.Words for Python API'sini kullanarak Word belgelerinizdeki dipnotları ve son notları nasıl etkili bir şekilde kullanabileceğinizi keşfedeceğiz.
+Dipnotlar ve son notlar, içeriğinizin ana akışını bozmadan ek bilgi veya referanslar sağlamanıza olanak tanıyan, Word belgelerindeki temel öğelerdir. Bu araçlar, çalışmanızın netliğini ve güvenilirliğini artırmak için akademik, profesyonel ve hatta yaratıcı yazımda yaygın olarak kullanılır. Bu kılavuzda, Aspose.Words for Python API'sini kullanarak Word belgelerinizde dipnotları ve son notları nasıl etkili bir şekilde kullanabileceğinizi keşfedeceğiz.
 
 ## Dipnotlara ve Sonnotlara Giriş
 

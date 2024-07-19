@@ -93,6 +93,6 @@ O: Korzystanie z ostrzegawczego wywołania zwrotnego pozwala na zapoznanie się 
 
 O: Tak, możesz ponownie użyć tego samego wywołania zwrotnego z ostrzeżeniem dla wielu operacji ładowania dokumentów. Dobrą praktyką jest spójne podejście do obsługi ostrzeżeń w całej aplikacji.
 
-#### P: Czy przy ładowaniu dokumentu obowiązkowe jest użycie wywołania zwrotnego z ostrzeżeniem?
+#### P: Czy przy ładowaniu dokumentu obowiązkowe jest używanie wywołania zwrotnego z ostrzeżeniem?
 
 O: Nie, użycie ostrzegawczego wywołania zwrotnego jest opcjonalne, ale zaleca się jego wdrożenie, aby mieć świadomość wszelkich potencjalnych problemów z załadowanymi dokumentami.

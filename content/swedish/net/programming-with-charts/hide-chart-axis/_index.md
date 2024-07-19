@@ -91,7 +91,7 @@ Denna kodrad döljer Y-axeln, vilket gör den osynlig i diagrammet.
 
 ## Steg 6: Spara dokumentet
 
-Slutligen sparar du dokumentet i den angivna katalogen.
+Slutligen, spara dokumentet i den angivna katalogen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");

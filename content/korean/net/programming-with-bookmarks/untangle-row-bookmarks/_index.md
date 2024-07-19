@@ -32,7 +32,7 @@ using System;
 
 ## 1단계: Word 문서 로드
 
-얽힌 행 책갈피가 포함된 Word 문서를 로드하는 것부터 시작합니다. 그만큼`Document` 클래스는 Aspose.Words에서 문서 조작을 처리합니다. 문서를 로드하는 방법은 다음과 같습니다.
+ 얽힌 행 책갈피가 포함된 Word 문서를 로드하는 것부터 시작합니다. 그만큼`Document` 클래스는 Aspose.Words에서 문서 조작을 처리합니다. 문서를 로드하는 방법은 다음과 같습니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // 문서 위치로 바꾸기
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // 행이 유효하고 인접한지 확인하세요.
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // 북마크 끝을 맨 위 행 마지막 셀의 마지막 단락으로 이동합니다.
+		   //북마크 끝을 맨 위 행 마지막 셀의 마지막 단락으로 이동합니다.
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ private void Untangle(Document doc)
 
  우리는 다음을 사용하여 문서의 모든 북마크를 반복합니다.`foreach` 고리.
 각 북마크에 대해 북마크 시작(`bookmark.BookmarkStart`) 및 북마크 끝(`bookmark.BookmarkEnd` )를 사용하여`GetAncestor` 방법.
-그런 다음 두 행이 모두 발견되었는지 확인합니다(`row1 != null`그리고`row2 != null`그리고 인접한 행인 경우(`row1.NextSibling == row2`). 이렇게 하면 인접한 행에 걸쳐 있는 책갈피만 수정할 수 있습니다.
+그런 다음 두 행이 모두 발견되었는지 확인합니다(`row1 != null`그리고`row2 != null`) 그리고 인접한 행인 경우(`row1.NextSibling == row2`). 이렇게 하면 인접한 행에 걸쳐 있는 책갈피만 수정할 수 있습니다.
 조건이 충족되면 북마크 끝 노드를 맨 위 행의 마지막 셀에 있는 마지막 단락의 끝으로 이동합니다(`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) 효과적으로 엉킨 부분을 풀어줍니다.
 
 ## 3단계: 북마크별로 행 삭제
@@ -87,12 +87,12 @@ private void DeleteRowByBookmark(Document doc, string bookmarkName)
 
 북마크 이름을 사용합니다(`bookmarkName`)를 입력으로 사용합니다.
  다음을 사용하여 해당 북마크 객체를 검색합니다.`doc.Range.Bookmarks[bookmarkName]`.
- 그런 다음 북마크의 상위 행을 사용하여 시작합니다.`GetAncestor` (비슷하다`Untangle` 기능).
+그런 다음 북마크의 상위 행을 사용하여 시작합니다.`GetAncestor` (비슷하다`Untangle` 기능).
 마지막으로 북마크와 행이 존재하는지 확인합니다(`bookmark != null` 그리고
 
 ## 4단계: 풀림 확인
 
- 동안`Untangle`기능은 다른 북마크의 안전을 보장해야 하므로 항상 확인하는 것이 좋습니다. 풀기 과정에서 다른 책갈피의 끝 부분이 실수로 삭제되지 않았는지 확인하는 방법은 다음과 같습니다.
+ 동안`Untangle` 기능은 다른 북마크의 안전을 보장해야 하므로 항상 확인하는 것이 좋습니다. 풀기 과정에서 다른 책갈피의 끝 부분이 실수로 삭제되지 않았는지 확인하는 방법은 다음과 같습니다.
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

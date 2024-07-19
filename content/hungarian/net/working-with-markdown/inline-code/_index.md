@@ -66,11 +66,11 @@ Gratulálok ! Most megtanulta, hogyan kell használni a soron belüli kódfunkci
 
 #### K: Hogyan használhatom az Aspose.Words szövegközi kódját?
 
- V: Az Aspose.Words szövegközi kód használatához megfelelő címkéket használhat a beágyazott kódként formázandó szöveg körül. Használhatja például a`<code>` vagy`<kbd>` tag a körülvevő szöveghez, amelyet soron belüli kódként kell formázni.
+V: Az Aspose.Words szövegközi kód használatához megfelelő címkéket használhat a beágyazott kódként formázandó szöveg körül. Használhatja például a`<code>` vagy`<kbd>` tag a körülvevő szöveghez, amelyet soron belüli kódként kell formázni.
 
 #### K: Megadható-e soron belüli kód betűtípusa vagy színe az Aspose.Words-ben?
 
- V: Igen, megadhatja a soron belüli kód betűtípusát vagy színét az Aspose.Words-ben. Használhatja a`Font.Name`és`Font.Color` tulajdonságai a`Run` objektum a soron belüli kód betűtípusának és színének beállításához. Például használhatja`run.Font.Name = "Courier New"` a szövegközi kód betűtípusának megadásához és`run.Font.Color = Color.Blue` szín megadásához.
+ V: Igen, megadhatja a soron belüli kód betűtípusát vagy színét az Aspose.Words-ben. Használhatja a`Font.Name`és`Font.Color` tulajdonságai a`Run` objektum a soron belüli kód betűtípusának és színének beállításához. Például használhatja`run.Font.Name = "Courier New"` a szövegközi kód betűtípusának megadásához és`run.Font.Color = Color.Blue` a szín megadásához.
 
 #### K: Használhatom a soron belüli kódot olyan bekezdésben, amely más szövegelemeket tartalmaz?
 

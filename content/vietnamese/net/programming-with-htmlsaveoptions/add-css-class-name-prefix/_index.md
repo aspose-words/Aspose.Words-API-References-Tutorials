@@ -19,7 +19,7 @@ Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn mã nguồn C# 
 Trong bước này, chúng tôi sẽ tải tài liệu Word mà chúng tôi muốn chuyển đổi sang HTML. Sử dụng đoạn mã sau để tải tài liệu:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
+//Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Mã này tạo ra một thể hiện của`HtmlSaveOptions` và bộ`CssStyleSheetType` ĐẾN`CssStyleSheetType.External`để tạo một biểu định kiểu CSS bên ngoài và`CssClassNamePrefix` ĐẾN`"pfx_"` đến tiền tố`"pfx_"` để đặt tên cho lớp CSS.
+ Mã này tạo ra một thể hiện của`HtmlSaveOptions` và bộ`CssStyleSheetType` ĐẾN`CssStyleSheetType.External` để tạo một biểu định kiểu CSS bên ngoài và`CssClassNamePrefix` ĐẾN`"pfx_"` đến tiền tố`"pfx_"` để đặt tên cho lớp CSS.
 
 ## Bước 4: Chuyển đổi và lưu tài liệu sang HTML
 

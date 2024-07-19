@@ -15,7 +15,7 @@ Diagram är ett kraftfullt verktyg för att visualisera data. När du behöver s
 
 Innan du dyker in i kodningen finns det några förutsättningar du måste ha på plats:
 
-1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket. Du kan[ladda ner den här](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket. Du kan[ladda ner den här](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Du behöver en integrerad utvecklingsmiljö (IDE) som Visual Studio.
 3. .NET Framework: Se till att din utvecklingsmiljö är inställd för .NET-utveckling.
 4. Grundläggande kunskaper om C#: Den här guiden förutsätter att du har en grundläggande förståelse för C#-programmering.

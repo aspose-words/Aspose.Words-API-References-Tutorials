@@ -2,83 +2,117 @@
 title: الحصول على المتغيرات
 linktitle: الحصول على المتغيرات
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لاسترداد متغيرات المستند باستخدام Aspose.Words لـ .NET.
+description: إتقان Aspose.Words لـ .NET. تعلم كيفية تحميل واستخراج المتغيرات من مستندات Word باستخدام هذا الدليل التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-document-properties/get-variables/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سنرشدك عبر التعليمات البرمجية المصدر لـ C# لاسترداد المتغيرات من مستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الوصول إلى المتغيرات المحددة في المستند.
+مرحبًا يا زميل المبرمج! هل أنت مستعد للغوص في عالم Aspose.Words لـ .NET؟ استعدوا لأننا على وشك الشروع في رحلة ستجعل التعامل مع مستندات Word في تطبيقات .NET أمرًا سهلاً. في هذا الدليل، سنقوم بتفصيل كل ما تحتاج إلى معرفته، خطوة بخطوة، مع شرح واضح ونبرة محادثة. لذا، تناول كوبًا من القهوة، واستمتع بالراحة، ودعنا نبدأ!
 
-## الخطوة 1: إعداد المشروع
+## المتطلبات الأساسية
 
-للبدء، قم بإنشاء مشروع C# جديد في بيئة التطوير المتكاملة (IDE) المفضلة لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+قبل أن ندخل في التفاصيل الجوهرية، دعونا نتأكد من حصولك على كل ما تحتاجه:
 
-## الخطوة 2: تحميل الوثيقة
+1. المعرفة الأساسية بـ C# و.NET: يجب أن تكون على دراية بأساسيات C# وإطار عمل .NET.
+2.  Aspose.Words لمكتبة .NET: قم بتنزيل مكتبة Aspose.Words لـ .NET من[هنا](https://releases.aspose.com/words/net/).
+3. Visual Studio: تأكد من تثبيت Visual Studio على جهازك.
 
-في هذه الخطوة، سنقوم بتحميل مستند Word الذي نريد استرجاع المتغيرات منه. استخدم الكود التالي لتحميل المستند:
+## استيراد مساحات الأسماء
 
-```csharp
-// المسار إلى دليل المستندات.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-```
-
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` بالمسار الفعلي للدليل الذي يوجد به المستند الخاص بك.
-
-## الخطوة 3: استرجاع المتغيرات
-
-الآن سوف نقوم باسترداد المتغيرات المحددة في الوثيقة. استخدم الكود التالي:
+أول الأشياء أولاً، فلنستورد مساحات الأسماء الضرورية. هذا يشبه إعداد المسرح قبل الأداء الكبير.
 
 ```csharp
-string variables = "";
-foreach(KeyValuePair<string, string> entry in doc.Variables)
-{
-     string name = entry.Key;
-     string value = entry.Value;
-     if (variables == "")
-     {
-         variables = "Name: " + name + ", " + "Value: " + value;
-     }
-     else
-     {
-         variables = variables + "\nName: " + name + ", " + "Value: " + value;
-     }
-}
-
-Console.WriteLine("\nThe document contains the following variables:\n" + variables);
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
 ```
 
-يتكرر هذا الرمز على كل زوج من المفاتيح والقيمة في متغيرات المستند ويسترد اسم وقيمة كل متغير. يتم بعد ذلك ربط المتغيرات لعرض المعلومات الخاصة بكل متغير.
+## الخطوة 1: إعداد مشروعك
 
-### مثال على التعليمات البرمجية المصدر للحصول على المتغيرات باستخدام Aspose.Words لـ .NET
+### إنشاء مشروع جديد
 
-```csharp
+لنبدأ الأمور بإنشاء مشروع جديد في Visual Studio.
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Document.docx");
-	
-	string variables = "";
-	foreach (KeyValuePair<string, string> entry in doc.Variables)
-	{
-		string name = entry.Key;
-		string value = entry.Value;
-		if (variables == "")
-		{
-			variables = "Name: " + name + "," + "Value: {1}" + value;
-		}
-		else
-		{
-			variables = variables + "Name: " + name + "," + "Value: {1}" + value;
-		}
-	}
-	
+1. افتح Visual Studio وحدد "إنشاء مشروع جديد".
+2. اختر "تطبيق وحدة التحكم (.NET Core)" وانقر على "التالي".
+3. قم بتسمية مشروعك وانقر على "إنشاء".
 
-	Console.WriteLine("\nDocument have following variables " + variables);
+### تثبيت Aspose.Words
 
-```
+الآن، لندخل مكتبة Aspose.Words في مشروعنا.
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+1. افتح مدير الحزم NuGet في Visual Studio.
+2. ابحث عن "Aspose.Words" وقم بتثبيته.
 
-لقد تعلمت الآن كيفية استرداد المتغيرات من مستند باستخدام Aspose.Words لـ .NET. باتباع الدليل التفصيلي المقدم في هذا البرنامج التعليمي، يمكنك بسهولة الوصول إلى المتغيرات وعرضها من مستنداتك الخاصة.
+## الخطوة 2: تحميل مستند Word
+
+ لنقم بتحميل مستند Word في تطبيقنا. سوف نستخدم بسيطة`Document` اعترض على القيام بذلك.
+
+1. قم بإنشاء متغير سلسلة جديد للاحتفاظ بالمسار إلى دليل المستند الخاص بك:
+    ```csharp
+    string dataDir = "YOUR DOCUMENT DIRECTORY";
+    ```
+
+2.  إنشاء`Document` الكائن وتحميل المستند:
+    ```csharp
+    Document doc = new Document(dataDir + "Document.docx");
+    ```
+
+هذه الخطوة تشبه فتح كتاب. نحن فقط نخبر برنامجنا بمكان العثور على المستند ثم نفتحه حتى نتمكن من البدء في العمل معه.
+
+## الخطوة 3: استخراج متغيرات الوثيقة
+
+الآن، دعونا نستخرج المتغيرات من وثيقتنا.
+
+1. قم بإنشاء متغير سلسلة للاحتفاظ بالمتغيرات:
+    ```csharp
+    string variables = "";
+    ```
+
+2. قم بالمرور عبر متغيرات المستند وقم بتسلسلها في متغير السلسلة:
+    ```csharp
+    foreach (KeyValuePair<string, string> entry in doc.Variables)
+    {
+        string name = entry.Key;
+        string value = entry.Value;
+        if (variables == "")
+        {
+            variables = "Name: " + name + ", " + "Value: {1}" + value;
+        }
+        else
+        {
+            variables = variables + " Name: " + name + ", " + "Value: {1}" + value;
+        }
+    }
+    ```
+
+3. طباعة المتغيرات:
+    ```csharp
+    Console.WriteLine("\nDocument has the following variables: " + variables);
+    ```
+
+
+فكر في هذه الخطوة على أنها تقليب الكتاب وتدوين جميع الملاحظات المهمة. نحن نراجع المستند، ونستخرج أزواج المفتاح والقيمة، ونخزنها في سلسلة لعرضها لاحقًا.
+
+## خاتمة
+
+وهناك لديك! لقد استخدمت Aspose.Words for .NET بنجاح لتحميل مستند Word واستخراج متغيراته. باتباع هذه الخطوات، يمكنك بسهولة التعامل مع مستندات Word في تطبيقات .NET الخاصة بك. استمر في تجربة واستكشاف ميزات المكتبة لمعرفة ما يمكنك تحقيقه أيضًا.
+
+## الأسئلة الشائعة
+
+### هل يمكنني استخدام Aspose.Words لـ .NET مع لغات البرمجة الأخرى؟
+نعم، يدعم Aspose.Words لغات متعددة، ولكن في هذا البرنامج التعليمي، ركزنا على لغة C#.
+
+### كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words؟
+ يمكنك الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/).
+
+### هل هناك طريقة للتعامل مع تنسيقات المستندات الأخرى باستخدام Aspose.Words؟
+قطعاً! يدعم Aspose.Words تنسيقات مختلفة مثل DOC وDOCX وODT وRTF والمزيد.
+
+### هل يمكنني استخدام Aspose.Words لتطبيقات الويب؟
+نعم، يمكنك دمج Aspose.Words في تطبيقات الويب وتطبيقات سطح المكتب والمزيد.
+
+### أين يمكنني العثور على المزيد من الأمثلة والوثائق؟
+ تفحص ال[وثائق Aspose.Words](https://reference.aspose.com/words/net/) لمزيد من الأمثلة والأدلة التفصيلية.

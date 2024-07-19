@@ -108,7 +108,7 @@ masz to! Pomyślnie dołączyłeś jeden dokument programu Word do drugiego za p
 
  Możesz kontrolować sposób obsługi formatowania za pomocą`ImportFormatMode` parametr. Opcje obejmują`KeepSourceFormatting`, `UseDestinationStyles`, i więcej.
 
-### Czy korzystanie z Aspose.Words jest darmowe?
+### Czy korzystanie z Aspose.Words jest bezpłatne?
 
  Aspose.Words oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/) . Aby uzyskać pełną funkcjonalność, musisz kupić licencję od[Tutaj](https://purchase.aspose.com/buy).
 

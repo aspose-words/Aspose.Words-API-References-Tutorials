@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 
 ## Conclusión
 
-En esta guía, explicamos cómo cargar un documento convirtiendo metarchivos a imágenes PNG usando la biblioteca Aspose.Words para .NET. Si sigue los pasos proporcionados y utiliza el código fuente de C# proporcionado, puede aplicar fácilmente esta funcionalidad en su aplicación C#. La conversión de metarchivos a PNG garantiza una mejor compatibilidad y una representación precisa de los documentos.
+En esta guía, explicamos cómo cargar un documento convirtiendo metarchivos a imágenes PNG utilizando la biblioteca Aspose.Words para .NET. Si sigue los pasos proporcionados y utiliza el código fuente de C# proporcionado, puede aplicar fácilmente esta funcionalidad en su aplicación C#. La conversión de metarchivos a PNG garantiza una mejor compatibilidad y una representación precisa de los documentos.
 
 
 ### Preguntas frecuentes

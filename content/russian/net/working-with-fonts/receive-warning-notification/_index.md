@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Шаг 3. Обновите макет страницы.
-
- Позвоните в`UpdatePageLayout`метод. Это визуализирует документ в памяти и фиксирует все предупреждения, возникающие во время рендеринга.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Шаг 4. Настройте обратный вызов с предупреждением
+## Шаг 3. Настройте обратный вызов с предупреждением
 
  Чтобы захватывать и обрабатывать предупреждения, создайте класс, реализующий`IWarningCallback` интерфейс. Этот класс будет регистрировать любые предупреждения, возникающие во время обработки документа.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Нас интересует только подмена шрифтов.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Шаг 5. Назначьте обратный вызов документу
+## Шаг 4. Назначьте обратный вызов документу
 
 Назначьте обратный вызов предупреждения документу. Это гарантирует, что любые проблемы со шрифтами будут зафиксированы и зарегистрированы.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Шаг 5. Обновите макет страницы.
+
+ Позвоните в`UpdatePageLayout` метод. Это визуализирует документ в памяти и фиксирует все предупреждения, возникающие во время рендеринга.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Шаг 6: Сохраните документ

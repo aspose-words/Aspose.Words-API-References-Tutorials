@@ -16,7 +16,7 @@ Ao trabalhar com documentos Word, manter um layout consistente e estruturado é 
 Antes de começarmos, certifique-se de ter o seguinte:
 
 -  Biblioteca Aspose.Words for .NET: você pode baixá-la[aqui](https://releases.aspose.com/words/net/).
-- Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
+- Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 - Conhecimento básico de C#: Compreender os fundamentos da programação C# o ajudará a acompanhar os exemplos.
 -  Licença Aspose: Embora uma licença temporária possa ser adquirida[aqui](https://purchase.aspose.com/temporary-license/), o uso de uma licença completa garantirá acesso a todos os recursos sem limitações.
 

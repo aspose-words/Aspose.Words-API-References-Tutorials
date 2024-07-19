@@ -55,7 +55,7 @@ Dans cet exemple :
 
 ## Étape 3 : Charger le document
 
- Une fois vos sources de polices configurées, l'étape suivante consiste à charger votre document dans un fichier Aspose.Words.`Document`objet. Cela vous permet de manipuler et éventuellement de sauvegarder le document.
+ Une fois vos sources de polices configurées, l'étape suivante consiste à charger votre document dans un fichier Aspose.Words.`Document` objet. Cela vous permet de manipuler et éventuellement de sauvegarder le document.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -73,7 +73,7 @@ En suivant ces étapes, vous avez configuré avec succès les paramètres de pol
 
 ## Conclusion
 
-Toutes nos félicitations! Vous maîtrisez les bases de la gestion des paramètres de police à l'aide d'Aspose.Words for .NET. Que vous travailliez sur un projet simple ou sur un système de traitement de documents complexe, ces compétences vous aideront à garantir que vos documents auront exactement l'apparence que vous souhaitez. N'oubliez pas que la flexibilité offerte par Aspose.Words permet un large éventail de personnalisations, alors n'hésitez pas à explorer et expérimenter différents paramètres.
+Toutes nos félicitations! Vous maîtrisez les bases de la gestion des paramètres de police à l'aide d'Aspose.Words for .NET. Que vous travailliez sur un projet simple ou sur un système de traitement de documents complexe, ces compétences vous aideront à garantir que vos documents correspondent exactement à vos souhaits. N'oubliez pas que la flexibilité offerte par Aspose.Words permet un large éventail de personnalisations, alors n'hésitez pas à explorer et expérimenter différents paramètres.
 
 ## FAQ
 

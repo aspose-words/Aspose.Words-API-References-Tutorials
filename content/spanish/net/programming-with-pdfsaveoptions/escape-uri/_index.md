@@ -2,101 +2,100 @@
 title: URI de escape en documento PDF
 linktitle: URI de escape en documento PDF
 second_title: API de procesamiento de documentos Aspose.Words
-description: Guía paso a paso Cómo escapar de URI en un documento PDF con Aspose.Words para .NET.
+description: Aprenda cómo escapar de URI en archivos PDF usando Aspose.Words para .NET. Esta guía detallada lo guiará a través del proceso paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/escape-uri/
 ---
+## Introducción
 
-Este artículo proporciona una guía paso a paso sobre cómo escapar del URI en un documento PDF con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo insertar hipervínculos con Uri de escape en un documento.
+¡Hola! ¿Alguna vez se preguntó cómo manejar los URI al guardar un documento de Word como PDF usando Aspose.Words para .NET? ¡Estás en el lugar correcto! Hoy, profundizaremos en el escape de URI en documentos PDF para garantizar que funcionen correctamente cuando se convierta su documento. Embarquémonos juntos en este viaje, paso a paso, asegurándonos de comprender cada concepto a lo largo del camino.
 
-Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
+## Requisitos previos
 
-## Paso 1: definir el directorio de documentos
+Antes de comenzar, asegurémonos de que tiene todo lo que necesita:
 
- Para comenzar, debe definir la ruta al directorio donde se encuentran sus documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
+1.  Aspose.Words para .NET: asegúrese de tener la última versión. Puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
+2. Entorno de desarrollo: Visual Studio o cualquier otro entorno de desarrollo .NET.
+3. Conocimientos básicos de C#: este tutorial asume que tienes conocimientos básicos de programación en C#.
+
+## Importar espacios de nombres
+
+Lo primero es lo primero: debe importar los espacios de nombres necesarios. Esto es crucial para acceder a las funcionalidades de Aspose.Words.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Muy bien, dividamos el proceso en pasos digeribles. ¡Síguenos y serás un profesional escapando de URI en poco tiempo!
+
+## Paso 1: configure su directorio de documentos
+
+Antes de profundizar en el código, configure la ruta a su directorio de documentos. Aquí es donde se guardarán sus archivos.
+
+```csharp
+// La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Paso 2: crear un documento y un DocumentBuilder
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real donde desea guardar su documento PDF.
 
- A continuación, necesitamos crear un nuevo`Document` objeto y un`DocumentBuilder` objeto para construir el documento.
+## Paso 2: cree un nuevo documento
+
+A continuación, crearemos un nuevo documento usando Aspose.Words. Este documento nos servirá como lienzo para insertar hipervínculos.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 3: inserte hipervínculos con Uri escapado
+ Aquí,`Document` es su nuevo documento de Word y`DocumentBuilder` es una clase auxiliar que simplifica el proceso de creación de documentos.
 
- Utilizar el`InsertHyperlink` método de la`DocumentBuilder` objeto para insertar hipervínculos en el documento. Se debe escapar de Uri usando el`Uri.EscapeUriString` función para evitar errores de formato.
+## Paso 3: inserte un hipervínculo
+
+Ahora, insertemos un hipervínculo en el documento. Este hipervínculo será el foco de nuestro proceso de escape de URI.
 
 ```csharp
-builder.InsertHyperlink("Testlink",
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), falso);
-builder. Writen();
-builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"),
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), falso);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", falso);
 ```
+
+ En esta línea,`"Testlink"` es el texto mostrado para el hipervínculo, y`"https://www.google.com/search?q= aspose"` es la URL. El`false` El parámetro indica que el enlace no debe tener formato de hipervínculo (es decir, no estará subrayado ni en azul).
 
 ## Paso 4: guarde el documento como PDF
 
- Finalmente, podemos guardar el documento como PDF usando el`Save` método de la`Document` objeto. Especifique el nombre del archivo de salida.
+Finalmente, guarde el documento como PDF. Aquí es donde Aspose.Words se encarga de escapar del URI en la salida del PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-Eso es todo ! Ha insertado con éxito hipervínculos con Uri escapados en un documento utilizando Aspose.Words para .NET.
-
-### Código fuente de muestra para Uri escapando con Aspose.Words para .NET
-
-
-```csharp
-
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHyperlink("Testlink", 
-		"https://www.google.com/search?q=%2Fthe%20test", falso);
-	builder.Writeln();
-	builder.InsertHyperlink("https:// www.google.com/search?q=%2Fthe%20test",
-		"https://www.google.com/search?q=%2Fthe%20test", falso);
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");    
-  
-```
+ Esta línea guarda el documento en el directorio especificado con el nombre de archivo`WorkingWithPdfSaveOptions.EscapeUri.pdf`.
 
 ## Conclusión
 
-En este tutorial, cubrimos cómo escapar de los URI en un documento PDF usando Aspose.Words para .NET. Al escapar de los URI, puede evitar errores de formato y garantizar que los hipervínculos se interpreten y muestren correctamente en el documento PDF. Siga los pasos descritos para insertar hipervínculos con URI de escape en su documento PDF. Asegúrate de escapar.
+¡Y ahí lo tienes! Acaba de aprender cómo escapar de los URI al guardar un documento de Word como PDF usando Aspose.Words para .NET. Este proceso garantiza que sus hipervínculos sigan siendo funcionales y formateados correctamente en el PDF resultante. 
 
-### Preguntas frecuentes
+Recuerde, dominar estas pequeñas pero importantes técnicas puede mejorar enormemente la calidad y funcionalidad de sus documentos. ¡Feliz codificación!
 
-#### P: ¿Qué es el URI de escape en un documento PDF y por qué es importante?
-R: URI de escape en un documento PDF se refiere al método de convertir caracteres especiales en una URL en secuencias de escape para evitar errores de formato. Esto es importante porque los caracteres especiales en una URL pueden alterar la estructura de la URL y dar lugar a interpretaciones erróneas o una representación incorrecta. Al poner escape a los caracteres especiales, garantizamos que la URL se interpreta y muestra correctamente en el documento PDF.
+## Preguntas frecuentes
 
-#### P: ¿Cómo puedo utilizar Aspose.Words para .NET para escapar de los URI en un documento PDF?
-R: Para escapar de los URI en un documento PDF usando Aspose.Words para .NET, siga estos pasos:
+### ¿Qué es Aspose.Words para .NET?
 
- Establezca la ruta del directorio donde se encuentran sus documentos reemplazando`"YOUR DOCUMENT DIRECTORY"` con la ruta real de su directorio de documentos.
+Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrolladores crear, manipular y convertir documentos de Word en aplicaciones .NET.
 
- Crear una nueva instancia del`Document` clase y un`DocumentBuilder` objeto para construir el documento.
+### ¿Por qué es importante el escape URI en los archivos PDF?
 
- Utilizar el`InsertHyperlink` método de la`DocumentBuilder` objeto para insertar hipervínculos en el documento. Asegúrese de escapar del URI usando el`Uri.EscapeUriString` función para evitar errores de formato.
+El escape de URI garantiza que los caracteres especiales de las URL se interpreten correctamente, evitando enlaces rotos y garantizando que funcionen según lo previsto.
 
- Utilizar el`Save` método de la`Document` objeto para guardar el documento en formato PDF especificando el nombre del archivo de salida.
+### ¿Puedo utilizar otros tipos de enlaces en Aspose.Words para .NET?
 
-#### P: ¿Cuáles son los beneficios de URI de escape en un documento PDF?
-R: Los beneficios del escape URI en un documento PDF son:
+¡Absolutamente! Aspose.Words admite varios tipos de enlaces, incluidos enlaces de documentos internos, marcadores y URL externas.
 
-Prevención de errores de formato: el escape de URI ayuda a prevenir errores de formato causados por caracteres especiales en una URL, lo que garantiza que la URL se interprete y muestre correctamente en el documento PDF.
+### ¿Cómo puedo obtener una prueba gratuita de Aspose.Words para .NET?
 
-Compatibilidad con lectores de PDF: los lectores de PDF generalmente admiten bien los URI de escape, lo que garantiza una mejor compatibilidad y una experiencia de usuario consistente.
+ Puedes obtener una prueba gratuita[aquí](https://releases.aspose.com/).
 
-#### P: ¿Qué caracteres especiales se deben utilizar como caracteres de escape en un URI?
- R: Los caracteres especiales que deben tener caracteres de escape en un URI son: espacio, <, >, ", #, %, {, },|, \, ^, ~, [, ], `, ;, /, ?, :, @, =, &, $, +, ,, [, ], and !.
+### ¿Dónde puedo encontrar documentación más detallada sobre Aspose.Words para .NET?
+
+ Puedes encontrar la documentación detallada.[aquí](https://reference.aspose.com/words/net/).

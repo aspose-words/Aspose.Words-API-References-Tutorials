@@ -55,7 +55,7 @@ saveOptions.ListIndentation.Character = '\t';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-この最後のステップでは、指定された保存オプションでドキュメントを保存します。`Save()`出力ファイルの完全なパスと保存オプションを渡すドキュメントのメソッド。
+この最後のステップでは、指定した保存オプションで文書を保存します。`Save()`出力ファイルの完全なパスと保存オプションを渡すドキュメントのメソッド。
 
 
 これで、ソース コードを実行して、タブ文字を使用してリストをインデントしたドキュメントを生成できます。出力ファイルは、指定されたディレクトリに「WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt」という名前で保存されます。

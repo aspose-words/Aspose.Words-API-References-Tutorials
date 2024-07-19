@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Etapa 2: adicionar texto ao documento
 
-A seguir, vamos adicionar algum texto ao documento. Este texto será alvo de nossas operações de substituição.
+A seguir, vamos adicionar algum texto ao documento. Este texto será alvo de nossas operações de reposição.
 
 ```csharp
 builder.Write("Jason give money to Paul.");

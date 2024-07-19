@@ -58,7 +58,7 @@ Neste exemplo, criamos um array com três itens: “Um”, “Dois” e “Três
 
 ## Etapa 3: crie um novo documento
 
- Agora, vamos criar uma nova instância do`Document` aula. Isso representa o documento do Word com o qual trabalharemos.
+ Agora, vamos criar uma nova instância do`Document` aula. Isso representa o documento do Word com o qual vamos trabalhar.
 
 ```csharp
 Document doc = new Document();

@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Belgeyi oluşturun ve biçimlendirin
- Bir örneğini oluşturun`Document` sınıf ve`DocumentBuilder` belgeyi oluşturmak için sınıf. Kullan`Font` mülkiyeti`DocumentBuilder`yazı tipi biçimlendirme özelliklerine erişmek için.
+ Bir örneğini oluşturun`Document` sınıf ve`DocumentBuilder` belgeyi oluşturmak için sınıf. Kullan`Font` mülkiyeti`DocumentBuilder` yazı tipi biçimlendirme özelliklerine erişmek için.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## 3. Adım: Belgeyi kaydedin
- Kullan`Save` Belgeyi uygulanan yazı tipi formatıyla kaydetme yöntemi. Yer değiştirmek`"WorkingWithFonts.SetFontFormatting.docx"` İstenilen dosya adı ile.
+ Kullan`Save`Belgeyi uygulanan yazı tipi formatıyla kaydetme yöntemi. Yer değiştirmek`"WorkingWithFonts.SetFontFormatting.docx"` İstenilen dosya adı ile.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

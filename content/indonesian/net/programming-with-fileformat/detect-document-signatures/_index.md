@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Deteksi tanda tangan digital
 
- Selanjutnya kita menggunakan`DetectFileFormat` metode`FileFormatUtil` kelas untuk mendeteksi informasi format file. Dalam contoh ini, kami berasumsi bahwa dokumen tersebut bernama "Ditandatangani secara digital.docx" dan terletak di direktori dokumen yang ditentukan.
+ Selanjutnya kita menggunakan`DetectFileFormat` metode`FileFormatUtil`kelas untuk mendeteksi informasi format file. Dalam contoh ini, kami berasumsi bahwa dokumen tersebut bernama "Ditandatangani secara digital.docx" dan terletak di direktori dokumen yang ditentukan.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ Tutorial ini memberi Anda panduan langkah demi langkah tentang cara mendeteksi t
 
 #### Bagaimana cara mendeteksi keberadaan tanda tangan digital pada dokumen Word menggunakan Aspose.Words for .NET?
 
- Untuk mendeteksi keberadaan tanda tangan digital pada dokumen Word menggunakan Aspose.Words for .NET, Anda dapat mengikuti langkah-langkah yang disediakan dalam tutorial. Menggunakan`DetectFileFormat` metode`FileFormatUtil` kelas akan memungkinkan Anda mendeteksi informasi format file. Kemudian Anda dapat memeriksanya`HasDigitalSignature` properti dari`FileFormatInfo`objek untuk menentukan apakah dokumen tersebut berisi tanda tangan digital. Jika tanda tangan digital terdeteksi, Anda dapat menampilkan pesan yang menyatakan bahwa tanda tangan akan hilang jika dokumen dibuka/disimpan dengan Aspose.Words.
+ Untuk mendeteksi keberadaan tanda tangan digital pada dokumen Word menggunakan Aspose.Words for .NET, Anda dapat mengikuti langkah-langkah yang disediakan dalam tutorial. Menggunakan`DetectFileFormat` metode`FileFormatUtil` kelas akan memungkinkan Anda mendeteksi informasi format file. Kemudian Anda dapat memeriksanya`HasDigitalSignature` properti dari`FileFormatInfo` objek untuk menentukan apakah dokumen tersebut berisi tanda tangan digital. Jika tanda tangan digital terdeteksi, Anda dapat menampilkan pesan yang menyatakan bahwa tanda tangan akan hilang jika dokumen dibuka/disimpan dengan Aspose.Words.
 
 #### Bagaimana cara menentukan direktori yang berisi dokumen untuk mencari tanda tangan digital?
 

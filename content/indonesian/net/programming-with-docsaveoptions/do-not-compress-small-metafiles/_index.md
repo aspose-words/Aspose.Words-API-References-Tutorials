@@ -94,7 +94,7 @@ Ya, Aspose.Words untuk .NET memungkinkan Anda mengonfigurasi opsi penyimpanan un
 
 ### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
 
- Meskipun Anda dapat menggunakan Aspose.Words untuk .NET tanpa lisensi untuk evaluasi, lisensi diperlukan untuk membuka fungsionalitas penuh. Anda bisa mendapatkan lisensi[Di Sini](https://purchase.aspose.com/buy) atau gunakan a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk evaluasi.
+ Meskipun Anda dapat menggunakan Aspose.Words untuk .NET tanpa lisensi untuk evaluasi, lisensi diperlukan untuk membuka fungsionalitas penuh. Anda bisa mendapatkan lisensi[Di Sini](https://purchase.aspose.com/buy)atau gunakan a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk evaluasi.
 
 ### Bagaimana saya bisa memastikan dokumen saya mematuhi standar PDF/A?
 

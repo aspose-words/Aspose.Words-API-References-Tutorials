@@ -55,7 +55,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Шаг 3: Написание исходного текста
 
- Теперь давайте напишем в документ текст, который позже заменим. Мы используем`DocumentBuilder` вставить текст «Привет_CustomerName_,".
+ Теперь давайте напишем в документ какой-нибудь текст, который позже заменим. Мы используем`DocumentBuilder` вставить текст «Привет_CustomerName_,".
 
 ```csharp
 builder.Writeln("Hello _CustomerName_,");

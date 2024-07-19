@@ -76,7 +76,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
-### F: Hur kontrollerar jag om dokumentet är krypterat?
+### F: Hur kontrollerar man om dokumentet är krypterat?
  Du kan använda`IsEncrypted` egendom av`FileFormatInfo` objekt för att kontrollera om dokumentet är krypterat. Den här egenskapen återkommer`true` om dokumentet är krypterat, annars returneras det`false`. Resultatet visas i konsolen:
 
 ```csharp

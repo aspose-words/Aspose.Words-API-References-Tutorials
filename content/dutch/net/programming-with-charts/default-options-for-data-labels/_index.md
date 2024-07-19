@@ -75,7 +75,7 @@ Hier voegen we een cirkeldiagram in ons document in. De`InsertChart` methode ver
 Nu zullen we alle bestaande reeksen in het diagram wissen en onze aangepaste reeksen toevoegen. Deze reeks vertegenwoordigt onze gegevenspunten.
 
 ```csharp
-// Bestaande kaartreeksen wissen
+// Bestaande kaartseries wissen
 chart.Series.Clear();
 
 // Voeg nieuwe series toe aan het diagram
@@ -107,7 +107,7 @@ labels.Separator = " - ";
 
  Hier hebben we toegang tot de`DataLabels`eigendom van onze serie om het uiterlijk en de informatie die op elk gegevenslabel wordt weergegeven, aan te passen. We hebben ervoor gekozen om zowel het percentage als de waarde weer te geven, aanhaallijnen te verbergen en een aangepast scheidingsteken in te stellen.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Ten slotte slaan we ons document op in de opgegeven map. Deze stap zorgt ervoor dat al onze wijzigingen naar een bestand worden geschreven.
 

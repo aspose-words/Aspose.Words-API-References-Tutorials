@@ -62,7 +62,7 @@ In questo tutorial, abbiamo imparato come specificare il carattere predefinito d
 
 #### D: Come posso specificare un carattere predefinito durante la conversione in PDF in Aspose.Words?
 
- R: Per specificare un carattere predefinito durante la conversione in PDF in Aspose.Words, è possibile utilizzare il file`PdfOptions` classe e impostare il file`DefaultFontName`proprietà al nome del carattere desiderato.
+ R: Per specificare un carattere predefinito durante la conversione in PDF in Aspose.Words, è possibile utilizzare il file`PdfOptions` classe e impostare il file`DefaultFontName` proprietà al nome del carattere desiderato.
 
 #### D: Cosa succede se il carattere predefinito non è disponibile durante la conversione in PDF?
 

@@ -21,7 +21,7 @@ url: /th/net/working-with-fields/convert-fields-in-paragraph/
 ก่อนที่คุณจะสามารถแปลงฟิลด์ได้ คุณต้องโหลดเอกสารที่มีฟิลด์ที่จะแปลงก่อน อย่าลืมระบุเส้นทางที่ถูกต้องไปยังไดเร็กทอรีที่มีเอกสาร ต่อไปนี้เป็นวิธีอัปโหลดเอกสาร:
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสาร
+//พาธไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // โหลดเอกสาร
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ### ตัวอย่างซอร์สโค้ดสำหรับการแปลงฟิลด์ในย่อหน้าโดยใช้ Aspose.Words สำหรับ .NET
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสาร
+//พาธไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // โหลดเอกสาร

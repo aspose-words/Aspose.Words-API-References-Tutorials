@@ -81,12 +81,12 @@ Mengkloning dokumen sangatlah mudah dengan Aspose. Kata-kata:
 
 Setelah semuanya siap, saatnya menjalankan kode Anda dan melihat hasilnya:
 
-1.  Bangun Proyek Anda: Klik pada`Build` menu dan pilih`Build Solution`. Pastikan tidak ada kesalahan.
+1. Bangun Proyek Anda: Klik pada`Build` menu dan pilih`Build Solution`. Pastikan tidak ada kesalahan.
 2.  Jalankan Proyek Anda: Tekan`F5` atau klik`Start` tombol untuk menjalankan proyek Anda. Jika semuanya sudah diatur dengan benar, dokumen kloning baru akan muncul di direktori dokumen Anda.
 
 ## Langkah 6: Verifikasi Outputnya
 
-Terakhir, mari kita periksa apakah dokumen kloning kita sudah sesuai dengan yang diharapkan:
+Terakhir, mari kita periksa apakah dokumen kloning kita sesuai dengan yang diharapkan:
 
 1.  Navigasi ke Direktori Dokumen Anda: Buka`Documents` folder dan temukan nama dokumen kloning`CloneAndCombineDocuments.CloningDocument.docx`.
 2.  Buka Dokumen Kloning: Klik dua kali untuk membukanya di Microsoft Word dan verifikasi bahwa itu adalah salinan persis dari dokumen asli Anda`Document.docx`.

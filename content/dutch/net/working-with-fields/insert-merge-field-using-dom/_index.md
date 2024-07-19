@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Vervolgens moeten we de cursor naar een specifieke paragraaf in het document verplaatsen waar we het samenvoegveld willen invoegen.
 
 ```csharp
-// Cursor naar alinea verplaatsen.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Stap 6: Voeg het samenvoegveld in

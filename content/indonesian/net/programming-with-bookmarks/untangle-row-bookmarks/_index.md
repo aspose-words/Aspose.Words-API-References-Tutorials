@@ -32,7 +32,7 @@ using System;
 
 ## Langkah 1: Muat Dokumen Word
 
-Kita mulai dengan memuat dokumen Word yang berisi baris-baris penanda yang kusut. Itu`Document` kelas menangani manipulasi dokumen di Aspose.Words. Berikut cara memuat dokumen:
+ Kita mulai dengan memuat dokumen Word yang berisi baris-baris penanda yang kusut. Itu`Document` kelas menangani manipulasi dokumen di Aspose.Words. Berikut cara memuat dokumen:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // Ganti dengan lokasi dokumen Anda
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Periksa apakah baris valid dan berdekatan
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Pindahkan ujung penanda ke paragraf terakhir sel terakhir baris atas
+		   //Pindahkan ujung penanda ke paragraf terakhir sel terakhir baris atas
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ Berikut penjelasan langkah demi langkah tentang fungsi kode:
 
  Kami mengulangi semua bookmark di dokumen menggunakan a`foreach` lingkaran.
 Untuk setiap bookmark, kami mengambil baris induk dari kedua awal bookmark (`bookmark.BookmarkStart`) dan ujung penanda (`bookmark.BookmarkEnd` ) menggunakan`GetAncestor` metode.
-Kami kemudian memeriksa apakah kedua baris ditemukan (`row1 != null`Dan`row2 != null`dan jika keduanya merupakan baris yang berdekatan (`row1.NextSibling == row2`). Hal ini memastikan kami hanya mengubah bookmark yang tersebar di baris yang berdekatan.
+Kami kemudian memeriksa apakah kedua baris ditemukan (`row1 != null`Dan`row2 != null`) dan jika keduanya merupakan baris yang berdekatan (`row1.NextSibling == row2`). Hal ini memastikan kami hanya mengubah bookmark yang tersebar di baris yang berdekatan.
 Jika kondisi terpenuhi, kita pindahkan node akhir penanda ke akhir paragraf terakhir di sel terakhir baris atas (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) secara efektif menguraikannya.
 
 ## Langkah 3: Hapus Baris berdasarkan Bookmark
@@ -87,12 +87,12 @@ Berikut rincian fungsi ini:
 
 Kami mengambil nama bookmark (`bookmarkName`) sebagai masukan.
  Kami mengambil objek bookmark yang sesuai menggunakan`doc.Range.Bookmarks[bookmarkName]`.
- Kami kemudian membuat baris induk dari bookmark mulai digunakan`GetAncestor` (mirip dengan`Untangle` fungsi).
+Kami kemudian membuat baris induk dari bookmark mulai digunakan`GetAncestor` (mirip dengan`Untangle` fungsi).
 Terakhir, kami memeriksa apakah bookmark dan barisnya ada (`bookmark != null` Dan
 
 ## Langkah 4: Verifikasi Penguraian Kekusutan
 
- Selagi`Untangle`fungsi harus memastikan keamanan bookmark lain, selalu merupakan praktik yang baik untuk memverifikasi. Inilah cara kami memeriksa apakah proses penguraian tidak secara tidak sengaja menghapus bagian akhir bookmark lain:
+ Selagi`Untangle` fungsi harus memastikan keamanan bookmark lain, selalu merupakan praktik yang baik untuk memverifikasi. Inilah cara kami memeriksa apakah proses penguraian tidak secara tidak sengaja menghapus bagian akhir bookmark lain:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

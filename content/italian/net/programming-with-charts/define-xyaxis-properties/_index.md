@@ -15,7 +15,7 @@ I grafici sono un potente strumento per visualizzare i dati. Quando hai bisogno 
 
 Prima di immergerti nella codifica, è necessario soddisfare alcuni prerequisiti:
 
-1.  Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words per .NET. Puoi[scaricalo qui](https://releases.aspose.com/words/net/).
+1. Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words per .NET. Puoi[scaricalo qui](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: è necessario un ambiente di sviluppo integrato (IDE) come Visual Studio.
 3. .NET Framework: assicurati che il tuo ambiente di sviluppo sia configurato per lo sviluppo .NET.
 4. Conoscenza di base di C#: questa guida presuppone che tu abbia una conoscenza di base della programmazione C#.

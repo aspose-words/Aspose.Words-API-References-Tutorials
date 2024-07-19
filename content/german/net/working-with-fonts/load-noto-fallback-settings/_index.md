@@ -65,7 +65,7 @@ In diesem Tutorial haben wir gesehen, wie man Noto-Schriftartenersetzungseinstel
 
 A: Um Noto-Schriftartenersetzungseinstellungen in ein Word-Dokument mit Aspose.Words zu laden, müssen Sie zuerst Noto-Schriftarten von der offiziellen Quelle herunterladen. Anschließend können Sie die Aspose.Words-API verwenden, um diese Schriftarten in das Dokument zu laden und sie bei Bedarf für die Ersetzung zu konfigurieren.
 
-#### F: Stellt die Verwendung von Noto-Schriftarten als Ersetzung in Word-Dokumenten eine konsistente Textvisualisierung sicher?
+#### F: Ist durch die Verwendung von Noto-Schriftarten als Ersatz in Word-Dokumenten eine konsistente Textvisualisierung gewährleistet?
 
 A: Ja, die Verwendung von Noto-Schriftarten als Ersatz in Word-Dokumenten gewährleistet eine konsistente Textvisualisierung. Noto-Schriftarten sind so konzipiert, dass sie viele Sprachen und Zeichen unterstützen und so ein einheitliches Erscheinungsbild gewährleisten, selbst wenn die erforderlichen Schriftarten nicht verfügbar sind.
 

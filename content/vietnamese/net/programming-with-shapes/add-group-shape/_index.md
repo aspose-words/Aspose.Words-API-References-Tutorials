@@ -2,7 +2,7 @@
 title: Thêm hình dạng nhóm
 linktitle: Thêm hình dạng nhóm
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách thêm hình dạng nhóm có nhiều hình dạng vào tài liệu Word bằng Aspose.Words for .NET.
+description: Tìm hiểu cách thêm hình dạng nhóm có nhiều hình dạng vào tài liệu Word bằng Aspose.Words cho .NET.
 type: docs
 weight: 10
 url: /vi/net/programming-with-shapes/add-group-shape/

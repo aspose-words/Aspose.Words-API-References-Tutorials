@@ -100,7 +100,7 @@ doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 OpenType 기능에는 문서의 텍스트 모양을 개선하는 합자, 커닝, 스타일 세트와 같은 고급 인쇄 기능이 포함되어 있습니다.
 
 ### Aspose.Words와 함께 HarfBuzz를 사용하는 이유는 무엇입니까?
-HarfBuzz는 OpenType 기능에 대한 강력한 지원을 제공하여 문서의 인쇄 품질을 향상시키는 오픈 소스 텍스트 변형 엔진입니다.
+HarfBuzz는 OpenType 기능에 대한 강력한 지원을 제공하여 문서의 인쇄 품질을 향상시키는 오픈 소스 텍스트 형성 엔진입니다.
 
 ### Aspose.Words와 함께 다른 텍스트 형성 엔진을 사용할 수 있나요?
 예, Aspose.Words는 다양한 텍스트 형성 엔진을 지원합니다. 그러나 포괄적인 OpenType 기능 지원으로 인해 HarfBuzz를 적극 권장합니다.
@@ -109,4 +109,4 @@ HarfBuzz는 OpenType 기능에 대한 강력한 지원을 제공하여 문서의
  Aspose.Words는 .NET Framework, .NET Core 및 .NET Standard를 포함한 다양한 .NET 버전을 지원합니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 호환성 정보를 확인하세요.
 
 ### Aspose.Words를 구매하기 전에 어떻게 시험해 볼 수 있나요?
- 다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/) 그리고 임시 라이센스를 요청하세요[여기](https://purchase.aspose.com/temporary-license/).
+ 다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/) 그리고 임시 라이센스를 요청하세요[여기](https://purchase.aspose.com/temporary-license/).

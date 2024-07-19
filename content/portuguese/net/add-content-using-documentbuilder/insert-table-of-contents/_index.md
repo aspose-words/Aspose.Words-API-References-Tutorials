@@ -127,4 +127,4 @@ Aspose.Words suporta a geração de vários índices com configurações diferen
 Sim, Aspose.Words garante compatibilidade com várias versões de formatos do Microsoft Word.
 
 ### Onde posso encontrar mais ajuda e suporte para Aspose.Words?
-Para obter mais assistência, visite o[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) ou confira o[documentação oficial](https://reference.aspose.com/words/net/).
+ Para obter mais assistência, visite o[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) ou confira o[documentação oficial](https://reference.aspose.com/words/net/).

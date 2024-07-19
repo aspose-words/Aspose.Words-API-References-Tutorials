@@ -69,7 +69,7 @@ Aspose.Words para .NET ofrece muchas funciones avanzadas para la manipulación y
 ### Preguntas frecuentes
 
 #### P: ¿Qué es la función "Guardar imágenes como WMF con opciones de guardado RTF" con Aspose.Words para .NET?
-R: La función "Guardar imágenes como WMF con opciones de guardado RTF" con Aspose.Words para .NET permite guardar imágenes de documentos en formato Metarchivo de Windows (WMF) al convertir a RTF. Esto proporciona la capacidad de conservar la calidad y resolución de la imagen en documentos RTF.
+R: La función "Guardar imágenes como WMF con opciones de guardado RTF" de Aspose.Words para .NET permite guardar imágenes de documentos en formato Metarchivo de Windows (WMF) al convertir a RTF. Esto proporciona la capacidad de conservar la calidad y resolución de la imagen en documentos RTF.
 
 #### P: ¿Cómo puedo utilizar esta función con Aspose.Words para .NET?
 R: Para utilizar esta función con Aspose.Words para .NET, puede seguir estos pasos:

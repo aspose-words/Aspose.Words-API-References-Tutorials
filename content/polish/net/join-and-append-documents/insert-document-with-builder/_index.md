@@ -115,7 +115,7 @@ Aspose.Words dla .NET to potężna biblioteka, która pozwala programistom progr
  Tak, za pomocą`ImportFormatMode.KeepSourceFormatting`, formatowanie dokumentu źródłowego zostaje zachowane po wstawieniu go do dokumentu docelowego.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?  
- Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
 
 ### Czy mogę zautomatyzować ten proces?  
 Absolutnie! Opisaną metodę można włączyć do większych aplikacji w celu automatyzacji zadań związanych z przetwarzaniem dokumentów.

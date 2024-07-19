@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Langkah 3: Membuat gaya untuk level bertingkat
 
- Kita dapat membuat gaya untuk level bertingkat menggunakan`Styles.Add` metode`Document` obyek. Dalam contoh ini, kita membuat gaya yang disebut "Quote1" untuk mewakili tingkat kutipan bertingkat.
+ Kita dapat membuat gaya untuk level bertingkat menggunakan`Styles.Add` metode`Document`obyek. Dalam contoh ini, kita membuat gaya yang disebut "Quote1" untuk mewakili tingkat kutipan bertingkat.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

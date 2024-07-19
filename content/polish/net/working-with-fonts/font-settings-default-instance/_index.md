@@ -55,7 +55,7 @@ W tym przykładzie:
 
 ## Krok 3: Załaduj dokument
 
- Po skonfigurowaniu źródeł czcionek następnym krokiem jest załadowanie dokumentu do Aspose.Words`Document`obiekt. Pozwala to na manipulowanie i ostatecznie zapisanie dokumentu.
+ Po skonfigurowaniu źródeł czcionek następnym krokiem jest załadowanie dokumentu do Aspose.Words`Document` obiekt. Pozwala to na manipulowanie i ostatecznie zapisanie dokumentu.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

@@ -9,7 +9,7 @@ url: /pl/net/add-content-using-documentbuilder/insert-html/
 ---
 ## Wstęp
 
-Cześć, entuzjasta kodowania! Czy zastanawiałeś się kiedyś, jak wstawić kod HTML do dokumentu programu Word za pomocą Aspose.Words dla .NET? Niezależnie od tego, czy chcesz dodać fantazyjne formatowanie, czy po prostu chcesz usprawnić proces tworzenia dokumentów, jesteś we właściwym miejscu. W tym samouczku zagłębimy się w szczegóły używania Aspose.Words dla .NET do osadzania kodu HTML bezpośrednio w dokumentach programu Word. I nie martw się; sprawimy, że wszystko będzie proste, wciągające i wręcz zabawne!
+Witaj, miłośniku kodowania! Czy zastanawiałeś się kiedyś, jak wstawić kod HTML do dokumentu programu Word za pomocą Aspose.Words dla .NET? Niezależnie od tego, czy chcesz dodać fantazyjne formatowanie, czy po prostu chcesz usprawnić proces tworzenia dokumentów, jesteś we właściwym miejscu. W tym samouczku zagłębimy się w szczegóły używania Aspose.Words dla .NET do osadzania kodu HTML bezpośrednio w dokumentach programu Word. I nie martw się; sprawimy, że wszystko będzie proste, wciągające i wręcz zabawne!
 
 ## Warunki wstępne
 

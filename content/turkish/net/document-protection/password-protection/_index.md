@@ -15,10 +15,10 @@ Selam! Word belgelerinizi istenmeyen düzenlemelerden ve meraklı gözlerden nas
 
 Word belgelerinizi parolayla korumanın en ince ayrıntılarına dalmadan önce ihtiyacınız olacak birkaç şey var:
 
-1. Aspose.Words for .NET: Aspose.Words for .NET kütüphanesine sahip olduğunuzdan emin olun. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesine sahip olduğunuzdan emin olun. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya başka herhangi bir C# geliştirme ortamı.
 3. Temel C# Bilgisi: C# programlamanın temel anlayışı.
-4.  Lisansı Aspose: Şu adresten lisans alın:[Burada](https://purchase.aspose.com/buy) veya bir kullanın[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+4.  Lisansı Aspose: Şu adresten lisans alın:[Burada](https://purchase.aspose.com/buy)veya bir kullanın[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
 
 ## Ad Alanlarını İçe Aktar
 

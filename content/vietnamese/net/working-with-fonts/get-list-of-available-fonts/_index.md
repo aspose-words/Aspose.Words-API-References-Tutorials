@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Định cấu hình nguồn phông chữ
-Tiếp theo, chúng ta sẽ tạo một thể hiện của`FontSettings` và lấy các nguồn phông chữ hiện có bằng cách sử dụng`GetFontsSources()` phương pháp. Chúng tôi cũng sẽ thêm nguồn phông chữ mới bằng cách chỉ định thư mục chứa phông chữ.
+ Tiếp theo, chúng ta sẽ tạo một thể hiện của`FontSettings` và lấy các nguồn phông chữ hiện có bằng cách sử dụng`GetFontsSources()` phương pháp. Chúng tôi cũng sẽ thêm nguồn phông chữ mới bằng cách chỉ định thư mục chứa phông chữ.
 
 ```csharp
 // Định cấu hình nguồn phông chữ

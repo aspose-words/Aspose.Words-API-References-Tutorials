@@ -2,126 +2,93 @@
 title: Hedef Stillerini Listele
 linktitle: Hedef Stillerini Listele
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile belge listelerini sorunsuz bir şekilde nasıl birleştireceğinizi ve yöneteceğinizi öğrenin. Verimli belge entegrasyonu için adım adım eğitimimizi izleyin.
+description: Aspose.Words for .NET kullanarak liste formatını kaybetmeden Word belgelerini nasıl birleştireceğinizi öğrenin. Belge stillerinizi olduğu gibi korumak için adım adım kılavuz.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## giriiş
 
-Tutarlı stili korurken belgeleri entegre etmek, özellikle listelerde zor olabilir. Aspose.Words for .NET, bu karmaşıklıkları yönetmek için güçlü araçlar sunarak belgelerinizin biçimlendirme bütünlüğünü korumasını sağlar. Bu eğitim, gösterişli bir son ürün için hedef stilleri kullanarak belgeleri listelerle birleştirme sürecinde size rehberlik edecektir.
+Hiç Word belgelerini birleştirmeyi denediniz mi ve biçimlendirmeyle uğraştınız mı? Bazen yağla suyu karıştırmaya benziyor, değil mi? Bugün Aspose.Words for .NET'i kullanarak sizi bu baş ağrısından kurtaracak güzel bir numaraya dalıyoruz. Numaralandırmayı ve stilleri bozmadan listeleri bir belgeden diğerine nasıl aktaracağımızı öğreneceğiz. Hayatınızı biraz daha kolaylaştırmaya hazır mısınız? Başlayalım!
 
 ## Önkoşullar
 
-Bu eğitime dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
-- Makinenizde Visual Studio yüklü.
-- Aspose.Words for .NET kütüphanesi projenize entegre edilmiştir.
-- C# programlama dilinin temel anlayışı.
+Sihre dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1.  Aspose.Words for .NET: Henüz yapmadıysanız indirin[Burada](https://releases.aspose.com/words/net/).
+2. Visual Studio: Herhangi bir güncel sürüm işe yarayacaktır.
+3. Temel C# anlayışı: Sihirbaz olmanıza gerek yok, ancak biraz aşinalık yardımcı olacaktır.
+
+ Projenizde Aspose.Words'ün kurulu ve kurulu olduğundan emin olun. Bunu nasıl yapacağınızdan emin değilseniz,[dokümantasyon](https://reference.aspose.com/words/net/) başlamak için harika bir yerdir.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words işlevselliklerinden yararlanmak için gerekli ad alanlarını içe aktararak başlayın:
+Öncelikle gerekli ad alanlarını C# dosyanıza aktaralım:
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.Lists;
+using Aspose.Words.Saving;
 ```
 
-Süreci net adımlara ayıralım:
+Bunları anladın mı? Mükemmel. Şimdi bu konuyu adım adım inceleyelim.
 
-## 1. Adım: Belge Yollarını Ayarlayın
+## 1. Adım: Belge Yollarınızı Ayarlayın
 
-Belgelerinizin bulunduğu dizin yolunu tanımladığınızdan emin olun:
+Her proje dosyalarınızı düzenlemekle başlar. Kodumuzu belgelerinizin saklandığı dizine yönlendirelim.
 
 ```csharp
-string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR_DOCUMENT_DIRECTORY_PATH"` belgelerinizin saklandığı gerçek dizin yolu ile.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgelerinizin saklandığı gerçek yolla. Kolay değil mi?
 
-## Adım 2: Kaynak ve Hedef Belgelerini Yükleyin
+## 2. Adım: Kaynak ve Hedef Belgelerinizi Yükleyin
 
-Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yükleyin:
+Daha sonra hem kaynak hem de hedef belgeleri yüklememiz gerekiyor. Bunu bilgisayarınızda iki Word dosyasını açmak gibi düşünün.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "DocumentSource.docx");
-Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
+Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
- Ayarlamak`"DocumentSource.docx"`Ve`"DocumentDestination.docx"` gerçek dosya adlarınızla.
+ Burada,`srcDoc` kaynak belgenizdir (kopyalamak istediğiniz listelerin bulunduğu belge) ve`dstDoc` hedef belgenizdir (bu listeleri yapıştırmak istediğiniz belge).
 
-## Adım 3: Kaynak Belge için Bölüm Başlangıcını Ayarlayın
+## 3. Adım: İçe Aktarma Seçeneklerini Yapılandırın
 
-Belgelerin sorunsuz bir şekilde birleştirilmesini sağlamak için kaynak belgenin bölüm başlangıcını ayarlayın:
+Listelerin doğru şekilde içe aktarıldığından emin olmak için bazı seçenekleri belirtmemiz gerekiyor. Bu adım, herhangi bir numaralandırma çakışması olması durumunda kaynak belgedeki numaralandırmanın korunmasını sağlar.
 
 ```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-Bu ayar, belgeler arasında sürekliliğin korunmasına yardımcı olur.
+## Adım 4: Kaynak Belgeyi Hedef Belgeye Ekleme
 
-## Adım 4: Liste Entegrasyonunu Yönetin
-
-Liste öğelerini işlemek için kaynak belgedeki paragrafları yineleyin:
+Şimdi birleştirme işlemini yapalım. Sihir yapılan yer burasıdır. Belirtilen içe aktarma seçeneklerini kullanırken kaynak belgeyi hedef belgeye ekleriz.
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-Bu kod bölümü, kaynak belgedeki listelerin orijinal biçimlerini koruyarak hedef belgeye sorunsuz bir şekilde entegre edilmesini sağlar.
-
-## Adım 5: Kaynak Belgeyi Hedef Belgeye Ekleme
-
-Değiştirilen kaynak belgeyi hedef belgeyle birleştirin:
-
-```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-```
-
-Bu komut, hedef stilleri korurken belgeleri birleştirir.
+Listeleri olduğu gibi tutarak iki belgeyi başarıyla birleştirdiniz.
 
 ## Çözüm
 
-Bu adımları izleyerek Aspose.Words for .NET'i kullanarak belgeler arasındaki listeleri etkili bir şekilde yönetebilir ve birleştirebilirsiniz. Bu yaklaşım, nihai belgenizin tutarlı stil ve biçimlendirmeye sahip olmasını sağlayarak genel belge yönetimi verimliliğini artırır.
+İşte aldın! Aspose.Words for .NET ile, formatlama sorunları konusunda aklınızı kaybetmeden belgeleri birleştirmek çocuk oyuncağıdır. İster büyük bir proje üzerinde çalışıyor olun, ister sadece bazı dosyaları toparlamanız gerekiyor olsun, bu yöntem listelerinizin net görünmesini sağlayacaktır. Dolayısıyla bir dahaki sefere belge birleştirme ikilemiyle karşılaştığınızda, bu kılavuzu hatırlayın ve bu sorunu bir profesyonel gibi ele alın!
 
 ## SSS'ler
 
-### Aspose.Words for .NET'i kullanarak iç içe listeleri nasıl işleyebilirim?
-Aspose.Words, belge düğümleri arasında yineleme yaparak ve liste yapılarını kontrol ederek iç içe geçmiş listeleri yönetmeye yönelik yöntemler sağlar.
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için güçlü bir kütüphanedir. Çeşitli formatlarda belgeler oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanır.
 
-### Belge birleştirmede hedef stillerini kullanmanın faydaları nelerdir?
-Hedef stilleri, birleştirilmiş belgelerde biçimlendirmede tekdüzeliğin korunmasına yardımcı olarak profesyonel bir görünüm sağlar.
+### Aspose.Words for .NET'i nasıl yüklerim?
+ adresinden indirebilirsiniz.[İnternet sitesi](https://releases.aspose.com/words/net/) ve kurulum talimatlarını takip edin.[dokümantasyon](https://reference.aspose.com/words/net/).
 
-### Aspose.Words platformlar arası belge birleştirmeyi destekliyor mu?
-Evet, Aspose.Words, Windows ve Linux ortamları da dahil olmak üzere çeşitli platformlarda belge birleştirmeyi destekler.
+### Aspose.Words'ü ücretsiz kullanabilir miyim?
+ Aspose.Words şunları sunar:[ücretsiz deneme](https://releases.aspose.com/) sınırlı özelliklere sahip. Tam erişim için bir lisans satın almanız gerekir[Burada](https://purchase.aspose.com/buy).
 
-### Belge birleştirme sırasında liste biçimlendirmesini özelleştirebilir miyim?
-Aspose.Words, liste formatının kapsamlı şekilde kişiselleştirilmesine olanak tanıyarak özel belge entegrasyon çözümlerine olanak tanır.
+### ImportFormatOptions nedir?
+ ImportFormatOptions, içeriği bir belgeden diğerine aktarırken biçimlendirmenin nasıl işleneceğini belirtmenize olanak tanır. Örneğin,`KeepSourceNumbering` kaynak belgedeki liste numaralandırmasının korunmasını sağlar.
 
-### Aspose.Words ile gelişmiş belge yönetimi hakkında daha fazla kaynağı nerede bulabilirim?
- Keşfetmek[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) kapsamlı kılavuzlar ve API referansları için.
+### Aspose.Words için nereden destek alabilirim?
+ adresinden destek alabilirsiniz.[Aspose.Words forumu](https://forum.aspose.com/c/words/8), soru sorabileceğiniz ve topluluktan ve Aspose geliştiricilerinden yardım alabileceğiniz yer.

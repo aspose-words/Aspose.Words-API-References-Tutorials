@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## चरण 2: स्ट्राइकथ्रू टेक्स्ट शैली लागू करें
 
-हम स्ट्राइकथ्रू टेक्स्ट शैली को सेट करके सक्षम करेंगे`StrikeThrough` की संपत्ति`Font` करने के लिए वस्तु`true`.
+ हम स्ट्राइकथ्रू टेक्स्ट शैली को सेट करके सक्षम करेंगे`StrikeThrough` की संपत्ति`Font` करने के लिए वस्तु`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

@@ -95,6 +95,6 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 答：是的，您可以在 Aspose.Words 中自定义尾注编号的格式。使用`NumberFormat`的财产`EndnoteOptions`类来设置所需的格式，例如阿拉伯数字、罗马数字、字母等。
 
-#### 问： 是否可以在文档的各个部分之间继续尾注编号？
+#### 问： 可以在文档各部分之间继续尾注编号吗？
 
 答：是的，可以在文档的各节之间继续尾注编号。使用`RestartRule`的财产`EndnoteOptions`类并将其设置为`RestartContinuous`允许各部分之间继续编号。

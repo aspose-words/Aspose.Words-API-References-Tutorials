@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 
 Neste tutorial, aprendemos como inserir um separador de estilo em um documento usando Aspose.Words for .NET. Criamos um novo documento, definimos um estilo personalizado e usamos o separador de estilos para diferenciar seções de texto com estilos diferentes.
 
-O uso de separadores de estilo oferece flexibilidade adicional ao formatar seus documentos. Isso ajuda a manter a consistência visual, ao mesmo tempo que permite variações estilísticas.
+O uso de separadores de estilo oferece flexibilidade adicional ao formatar seus documentos. Isso ajuda a manter a consistência visual ao mesmo tempo que permite variações estilísticas.
 
 Aspose.Words for .NET fornece uma API poderosa para gerenciar estilos em seus documentos. Você pode explorar ainda mais esta biblioteca para personalizar a aparência dos seus documentos e criar resultados profissionais.
 

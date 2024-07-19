@@ -52,7 +52,7 @@ Trong hướng dẫn này, chúng tôi đã giải thích cách tải tài liệ
 
 ### Câu hỏi thường gặp khi sử dụng thư mục tạm thời trong tài liệu word
 
-Khi xử lý tài liệu Word trong ứng dụng C# bằng Aspose.Words cho .NET, bạn có thể gặp các tình huống trong đó việc sử dụng thư mục tạm thời trở nên cần thiết để lưu trữ các tệp tạm thời được tạo trong quá trình xử lý tài liệu. Dưới đây là một số câu hỏi thường gặp về chức năng này:
+Khi xử lý tài liệu Word trong ứng dụng C# bằng Aspose.Words cho .NET, bạn có thể gặp các tình huống trong đó cần sử dụng thư mục tạm thời để lưu trữ các tệp tạm thời được tạo trong quá trình xử lý tài liệu. Dưới đây là một số câu hỏi thường gặp về chức năng này:
 
 #### Hỏi: Tại sao tôi cần sử dụng thư mục tạm thời khi xử lý tài liệu Word?
 

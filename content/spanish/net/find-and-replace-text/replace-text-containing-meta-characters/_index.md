@@ -105,7 +105,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 
 ## Conclusión
 
-¡Y ahí lo tienes! Ahora domina el arte de reemplazar texto que contiene metacaracteres en un documento de Word usando Aspose.Words para .NET. Desde configurar su entorno hasta guardar su documento final, cada paso está diseñado para brindarle control sobre la manipulación de su texto. ¡Así que adelante, sumérjase en sus documentos y realice esos reemplazos con confianza!
+¡Y ahí lo tienes! Ahora domina el arte de reemplazar texto que contiene metacaracteres en un documento de Word usando Aspose.Words para .NET. Desde configurar su entorno hasta guardar su documento final, cada paso está diseñado para brindarle control sobre la manipulación de su texto. ¡Así que adelante, sumérgete en tus documentos y realiza esos reemplazos con confianza!
 
 ## Preguntas frecuentes
 

@@ -2,126 +2,93 @@
 title: 宛先スタイルの使用リスト
 linktitle: 宛先スタイルの使用リスト
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメント リストをシームレスに結合および管理する方法を学びます。効率的なドキュメント統合については、ステップ バイ ステップのチュートリアルに従ってください。
+description: Aspose.Words for .NET を使用して、リストの書式設定を失うことなく Word 文書を結合する方法を学びます。文書のスタイルをそのまま維持するためのステップバイステップ ガイド。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## 導入
 
-一貫したスタイルを維持しながらドキュメントを統合することは、特にリストの場合は困難です。Aspose.Words for .NET は、これらの複雑さを管理するための強力なツールを提供し、ドキュメントの書式設定の整合性を維持します。このチュートリアルでは、宛先スタイルを使用してリストを含むドキュメントを結合し、洗練された最終製品を作成するプロセスについて説明します。
+Word 文書を結合しようとして、書式設定に困ったことはありませんか? まるで油と水を混ぜようとしているような気分になりますよね? さて、今日は、この頭痛の種から解放してくれる、Aspose.Words for .NET を使った巧妙なトリックを紹介します。番号付けやスタイルを台無しにすることなく、ある文書から別の文書にリストをインポートする方法を学びます。生活を少し楽にする準備はできましたか? さあ、始めましょう!
 
 ## 前提条件
 
-このチュートリアルに進む前に、次のものを用意してください。
-- マシンに Visual Studio がインストールされています。
-- Aspose.Words for .NET ライブラリがプロジェクトに統合されました。
-- C# プログラミング言語の基本的な理解。
+魔法を始める前に、必要なものがすべて揃っていることを確認しましょう。
+
+1.  Aspose.Words for .NET: まだダウンロードしていない場合はダウンロードしてください[ここ](https://releases.aspose.com/words/net/).
+2. Visual Studio: 最新バージョンであればどれでも構いません。
+3. C# の基本的な理解: 魔法使いになる必要はありませんが、ある程度の知識があると役立ちます。
+
+ Aspose.Wordsがプロジェクトにインストールされ、設定されていることを確認してください。方法がわからない場合は、[ドキュメンテーション](https://reference.aspose.com/words/net/)始めるのに最適な場所です。
 
 ## 名前空間のインポート
 
-まず、Aspose.Words の機能を活用するために必要な名前空間をインポートします。
+まず最初に、C# ファイルに必要な名前空間をインポートしましょう。
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.Lists;
+using Aspose.Words.Saving;
 ```
 
-プロセスを明確なステップに分解してみましょう。
+わかりましたか？素晴らしいですね。では、これをステップごとに説明していきましょう。
 
 ## ステップ1: ドキュメントパスを設定する
 
-ドキュメントが存在するディレクトリ パスを定義していることを確認します。
+すべてのプロジェクトは、ファイルの整理から始まります。ドキュメントが保存されているディレクトリをコードで指定してみましょう。
 
 ```csharp
-string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+//ドキュメント ディレクトリへのパス。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-交換する`"YOUR_DOCUMENT_DIRECTORY_PATH"`ドキュメントが保存されている実際のディレクトリ パスを入力します。
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントが保存されている実際のパスを入力します。簡単ですよね?
 
 ## ステップ2: ソースドキュメントと宛先ドキュメントを読み込む
 
-Aspose.Words を使用してソース ドキュメントと宛先ドキュメントを読み込みます。
+次に、ソース ドキュメントと宛先ドキュメントの両方を読み込む必要があります。コンピューター上で 2 つの Word ファイルを開くと考えてください。
 
 ```csharp
-Document srcDoc = new Document(dataDir + "DocumentSource.docx");
-Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
+Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-調整する`"DocumentSource.docx"`そして`"DocumentDestination.docx"`実際のファイル名を使用します。
+ここ、`srcDoc`はソース文書（コピーしたいリストがある文書）であり、`dstDoc`は、宛先ドキュメント（リストを貼り付けるドキュメント）です。
 
-## ステップ3: ソースドキュメントのセクション開始を設定する
+## ステップ3: インポートオプションを構成する
 
-ドキュメントがスムーズに結合されるようにするには、ソース ドキュメントのセクションの開始を設定します。
+リストが正しくインポートされるように、いくつかのオプションを指定する必要があります。この手順により、番号付けの競合が発生した場合でも、ソース ドキュメントの番号付けが保持されます。
 
 ```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-この設定は、ドキュメント間の連続性を維持するのに役立ちます。
+## ステップ4: ソースドキュメントを宛先ドキュメントに追加する
 
-## ステップ4: リスト統合を管理する
-
-リスト項目を処理するには、ソース ドキュメント内の段落を反復処理します。
+さて、マージをしてみましょう。ここで魔法が起こります。指定されたインポート オプションを使用して、ソース ドキュメントを宛先ドキュメントに追加します。
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-このコード セグメントにより、ソース ドキュメントのリストが元の書式を維持しながら、宛先ドキュメントにシームレスに統合されます。
-
-## ステップ5: ソースドキュメントを宛先ドキュメントに追加する
-
-変更されたソース ドキュメントを宛先ドキュメントに結合します。
-
-```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-```
-
-このコマンドは、宛先のスタイルを保持しながらドキュメントを統合します。
+リストをそのまま維持したまま、2 つのドキュメントを正常に結合しました。
 
 ## 結論
 
-これらの手順に従うことで、Aspose.Words for .NET を使用して、ドキュメント間のリストを効果的に管理および結合できます。このアプローチにより、最終的なドキュメントのスタイルと書式設定が一貫して維持され、全体的なドキュメント管理の効率が向上します。
+これで完了です。Aspose.Words for .NET を使用すると、書式設定の問題に悩まされることなくドキュメントを結合することが簡単になります。大規模なプロジェクトに取り組んでいる場合でも、いくつかのファイルを整理する必要がある場合でも、この方法を使用するとリストの見栄えがよくなります。次にドキュメント結合のジレンマに直面したときは、このガイドを思い出してプロのように対処してください。
 
 ## よくある質問
 
-### Aspose.Words for .NET を使用してネストされたリストを処理するにはどうすればよいですか?
-Aspose.Words は、ドキュメント ノードを反復処理し、リスト構造をチェックすることで、ネストされたリストを管理するメソッドを提供します。
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、Word 文書をプログラムで操作するための強力なライブラリです。さまざまな形式の文書を作成、変更、変換できます。
 
-### ドキュメントの結合で宛先スタイルを使用する利点は何ですか?
-宛先スタイルは、結合されたドキュメント全体の書式設定の統一性を維持し、プロフェッショナルな外観を実現します。
+### Aspose.Words for .NET をインストールするにはどうすればよいですか?
+ダウンロードはこちらから[Webサイト](https://releases.aspose.com/words/net/)インストール手順に従ってください。[ドキュメンテーション](https://reference.aspose.com/words/net/).
 
-### Aspose.Words はクロスプラットフォームのドキュメント結合をサポートしていますか?
-はい、Aspose.Words は、Windows および Linux 環境を含むさまざまなプラットフォーム間でのドキュメントの結合をサポートしています。
+### Aspose.Words を無料で使用できますか?
+ Aspose.Wordsは、[無料トライアル](https://releases.aspose.com/)機能が制限されています。フルアクセスするにはライセンスを購入する必要があります[ここ](https://purchase.aspose.com/buy).
 
-### ドキュメントの結合中にリストの書式設定をカスタマイズできますか?
-Aspose.Words では、リストの書式を広範囲にカスタマイズできるため、カスタマイズされたドキュメント統合ソリューションを実現できます。
+### ImportFormatOptions とは何ですか?
+ ImportFormatOptionsを使用すると、あるドキュメントから別のドキュメントにコンテンツをインポートするときに書式をどのように処理するかを指定できます。たとえば、`KeepSourceNumbering`ソース ドキュメントのリスト番号が保持されることを保証します。
 
-### Aspose.Words を使用した高度なドキュメント管理に関する詳細なリソースはどこで入手できますか?
-探検する[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)包括的なガイドと API リファレンスについては、こちらをご覧ください。
+### Aspose.Words のサポートはどこで受けられますか?
+サポートを受けるには[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)では、コミュニティや Aspose 開発者から質問したりサポートを受けたりすることができます。

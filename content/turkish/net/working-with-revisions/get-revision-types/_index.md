@@ -89,7 +89,7 @@ FromRevision)
 }
 ```
 
-#### S: Aspose.Words for .NET'te bir paragrafın taşınıp taşınmadığı (eklenip eklenmediği) nasıl kontrol edilir?
+#### S: Aspose.Words for .NET'te bir paragrafın taşınıp taşınmadığını (eklendiğini) nasıl kontrol edebilirim?
 
  C: Bir paragraf kullanın`IsMoveToRevision` taşınıp taşınmadığını (eklenip eklenmediğini) kontrol etmek için özellik.
 

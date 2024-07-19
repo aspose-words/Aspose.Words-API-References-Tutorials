@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://example.com/resources"
 
  यह कोड एक उदाहरण बनाता है`HtmlSaveOptions` और निम्नलिखित विकल्प सेट करता है:
 
-- `CssStyleSheetType` इसके लिए सेट है`CssStyleSheetType.External`CSS स्टाइल शीट को बाहरी फ़ाइल में निर्यात करने के लिए.
+- `CssStyleSheetType` इसके लिए सेट है`CssStyleSheetType.External` CSS स्टाइल शीट को बाहरी फ़ाइल में निर्यात करने के लिए.
 - `ExportFontResources` इसके लिए सेट है`true` फ़ॉन्ट संसाधनों को निर्यात करने के लिए.
 - `ResourceFolder` गंतव्य निर्देशिका निर्दिष्ट करता है जहां संसाधन सहेजे जाएंगे।
-- `ResourceFolderAlias` URL उपनाम निर्दिष्ट करता है जिसका उपयोग संसाधनों तक पहुँचने के लिए किया जाएगा।
+- `ResourceFolderAlias`URL उपनाम निर्दिष्ट करता है जिसका उपयोग संसाधनों तक पहुँचने के लिए किया जाएगा।
 
 ## चरण 4: दस्तावेज़ को HTML में परिवर्तित करना और सहेजना
 

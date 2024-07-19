@@ -48,7 +48,7 @@ Document doc = new Document(dataDir + "Signature line.docx");
 
 ## Шаг 2: Получите доступ к строке подписи
 
-Далее нам нужно получить доступ к строке подписи в документе. Строка подписи внедряется как объект фигуры в документ Word.
+Далее нам нужно получить доступ к строке подписи в документе. Строка подписи внедряется как объект формы в документ Word.
 
 ```csharp
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;

@@ -17,7 +17,7 @@ Sebelum kita mulai mengutak-atik kode, ada beberapa hal yang perlu Anda siapkan:
 
 1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan yang kuat ini. Jika Anda belum mendapatkannya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan .NET yang berfungsi, seperti Visual Studio.
-3. Pengetahuan Dasar tentang C#: Keakraban dengan pemrograman C# akan sangat membantu.
+3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan sangat membantu.
 4. Contoh Dokumen: Dokumen Word dengan poin gambar untuk tujuan pengujian.
 
 ## Impor Namespace

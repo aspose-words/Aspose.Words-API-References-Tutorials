@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Stap 1: Laad het brondocument
 
- Eerst moet u het brondocument laden waarvan u kop- en voetteksten wilt verwijderen. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap waar het brondocument zich bevindt.
+Eerst moet u het brondocument laden waarvan u kop- en voetteksten wilt verwijderen. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap waar het brondocument zich bevindt.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

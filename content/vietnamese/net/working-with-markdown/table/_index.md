@@ -2,52 +2,67 @@
 title: Bàn
 linktitle: Bàn
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tạo bảng bằng Aspose.Words for .NET Hướng dẫn từng bước.
+description: Tìm hiểu cách tạo và tùy chỉnh bảng trong Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo để tạo các tài liệu có cấu trúc và hấp dẫn trực quan.
 type: docs
 weight: 10
 url: /vi/net/working-with-markdown/table/
 ---
+## Giới thiệu
 
+Làm việc với các bảng trong tài liệu là một yêu cầu phổ biến. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ dữ liệu có cấu trúc nào thì bảng đều không thể thiếu. Trong hướng dẫn này, tôi sẽ hướng dẫn bạn cách tạo và tùy chỉnh bảng bằng Aspose.Words cho .NET. Hãy đi sâu vào!
 
-Trong ví dụ này, chúng tôi sẽ hướng dẫn bạn cách tạo bảng bằng Aspose.Words cho .NET. Bảng là một cấu trúc dữ liệu tổ chức thông tin thành các hàng và cột.
+## Điều kiện tiên quyết
 
-## Bước 1: Sử dụng trình tạo tài liệu
+Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có các điều kiện tiên quyết sau:
 
-Đầu tiên, chúng tôi sẽ sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu của mình.
+- Visual Studio: Bạn cần một môi trường phát triển để viết và kiểm tra mã của mình. Visual Studio là một lựa chọn tốt.
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu bạn không có nó, bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+- Hiểu biết cơ bản về C#: Cần phải làm quen với lập trình C#.
+
+## Nhập không gian tên
+
+Trước khi bắt đầu các bước, hãy nhập các không gian tên cần thiết:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## Bước 1: Khởi tạo Document và DocumentBuilder
+
+Trước tiên, chúng ta cần tạo một tài liệu mới và khởi tạo lớp DocumentBuilder, lớp này sẽ giúp chúng ta xây dựng bảng của mình.
+
+```csharp
+// Khởi tạo DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
+Bước này giống như thiết lập không gian làm việc của bạn. Bạn đã có sẵn tài liệu trống và bút của mình.
 
-## Bước 2: Thêm ô và dữ liệu
+## Bước 2: Bắt đầu xây dựng bảng của bạn
 
- Chúng ta sẽ thêm các ô và dữ liệu vào bảng bằng cách sử dụng`InsertCell` phương pháp và`Writeln` phương pháp của trình tạo tài liệu.
-
-```csharp
-builder. InsertCell();
-builder.Writeln("a");
-builder. InsertCell();
-builder.Writeln("b");
-
-builder. InsertCell();
-builder.Writeln("c");
-builder. InsertCell();
-builder.Writeln("d");
-```
-
-### Mã nguồn ví dụ để tạo bảng với Aspose.Words cho .NET
+Bây giờ chúng ta đã có các công cụ, hãy bắt đầu xây dựng bảng. Chúng ta sẽ bắt đầu bằng cách chèn ô đầu tiên của hàng đầu tiên.
 
 ```csharp
-// Sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu.
-DocumentBuilder builder = new DocumentBuilder();
-
 // Thêm hàng đầu tiên.
 builder.InsertCell();
 builder.Writeln("a");
+
+// Chèn ô thứ hai.
 builder.InsertCell();
 builder.Writeln("b");
 
+// Kết thúc hàng đầu tiên.
+builder.EndRow();
+```
+
+Hãy coi bước này giống như vẽ hàng đầu tiên của bảng trên một tờ giấy và điền "a" và "b" vào hai ô đầu tiên.
+
+## Bước 3: Thêm hàng khác
+
+Hãy thêm một hàng khác vào bảng của chúng tôi.
+
+```csharp
 // Thêm hàng thứ hai.
 builder.InsertCell();
 builder.Writeln("c");
@@ -55,26 +70,25 @@ builder.InsertCell();
 builder.Writeln("d");
 ```
 
-Xin chúc mừng! Bây giờ bạn đã học cách tạo bảng bằng Aspose.Words cho .NET.
+Ở đây, chúng ta chỉ cần mở rộng bảng bằng cách thêm một hàng khác có hai ô chứa "c" và "d".
 
-### Câu hỏi thường gặp
+## Phần kết luận
 
-#### Câu hỏi: Làm cách nào để tạo bảng trong Markdown?
+Việc tạo và tùy chỉnh các bảng trong Aspose.Words cho .NET thật đơn giản khi bạn đã hiểu rõ về nó. Bằng cách làm theo các bước này, bạn có thể tạo các bảng có cấu trúc và hấp dẫn trực quan trong tài liệu của mình. Chúc mừng mã hóa!
 
-Trả lời: Để tạo bảng trong Markdown, hãy sử dụng cú pháp của pipe (`|`để phân cách các ô và dấu gạch ngang (`-`) để phân định các tiêu đề bảng.
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Chúng tôi có thể tùy chỉnh giao diện của bảng trong Markdown không?
+### Tôi có thể thêm nhiều hơn hai ô liên tiếp không?
+ Có, bạn có thể thêm bao nhiêu ô tùy ý vào một hàng bằng cách lặp lại thao tác`InsertCell()`Và`Writeln()` phương pháp.
 
-Trả lời: Trong Markdown tiêu chuẩn, các tùy chọn tùy chỉnh bảng bị hạn chế. Tuy nhiên, một số trình chỉnh sửa Markdown cho phép bạn thêm kiểu CSS vào bảng để tùy chỉnh giao diện của chúng.
+### Làm cách nào để hợp nhất các ô trong bảng?
+ Bạn có thể hợp nhất các ô bằng cách sử dụng`CellFormat.HorizontalMerge`Và`CellFormat.VerticalMerge` của cải.
 
-#### Câu hỏi: Làm cách nào để hợp nhất các ô trong bảng trong Markdown?
+### Có thể thêm hình ảnh vào ô bảng không?
+ Tuyệt đối! Bạn có thể chèn hình ảnh vào ô bằng cách sử dụng`DocumentBuilder.InsertImage` phương pháp.
 
-Trả lời: Việc hợp nhất các ô trong bảng trong Markdown tùy thuộc vào trình soạn thảo Markdown được sử dụng. Một số trình soạn thảo Markdown hỗ trợ hợp nhất các ô bằng cú pháp cụ thể.
+### Tôi có thể tạo kiểu khác nhau cho từng ô riêng lẻ không?
+ Có, bạn có thể áp dụng các kiểu khác nhau cho từng ô riêng lẻ bằng cách truy cập chúng thông qua`Cells` tập hợp một hàng.
 
-#### Câu hỏi: Các bảng trong Markdown có hỗ trợ tạo kiểu CSS không?
-
-Trả lời: Trong Markdown tiêu chuẩn, các bảng không cung cấp hỗ trợ trực tiếp cho các kiểu CSS. Tuy nhiên, một số trình chỉnh sửa Markdown cho phép bạn thêm kiểu CSS vào bảng để tùy chỉnh giao diện của chúng.
-
-#### Câu hỏi: Chúng tôi có thể thêm liên kết hoặc văn bản ở định dạng nội tuyến vào các ô của bảng trong Markdown không?
-
-Trả lời: Có, bạn có thể thêm liên kết hoặc văn bản nội tuyến vào các ô bảng trong Markdown bằng cú pháp Markdown thích hợp.
+### Làm cách nào để xóa đường viền khỏi bảng?
+ Bạn có thể xóa đường viền bằng cách đặt kiểu đường viền thành`LineStyle.None` cho từng loại đường viền.

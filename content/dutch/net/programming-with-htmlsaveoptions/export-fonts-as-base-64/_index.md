@@ -61,4 +61,4 @@ Deze code converteert het document naar HTML en slaat het op in een bestand, waa
 
  Zorg ervoor dat u het juiste pad naar de documentenmap opgeeft in het`dataDir` variabel.
 
-U hebt nu geleerd hoe u basis 64-lettertypen kunt exporteren wanneer u een document als HTML opslaat met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u lettertypen eenvoudig veilig exporteren en insluiten in uw HTML-documenten.
+hebt nu geleerd hoe u basis 64-lettertypen kunt exporteren wanneer u een document als HTML opslaat met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u lettertypen eenvoudig veilig exporteren en insluiten in uw HTML-documenten.

@@ -58,7 +58,7 @@ section.ClearHeadersFooters();
 ## Slutsats
 den här handledningen har vi sett hur du tar bort sidhuvud och sidfotsinnehåll från ett Word-dokument med Aspose.Words för .NET. Genom att ta bort innehåll från sidhuvuden och sidfötter kan du återställa eller ta bort de specifika elementen från ditt dokument. Känn dig fri att anpassa och använda den här funktionen efter dina specifika behov.
 
-### Vanliga frågor för att ta bort sidhuvudsinnehåll
+### Vanliga frågor för att ta bort sidfotsinnehåll
 
 #### F: Hur ställer jag in dokumentkatalogen i Aspose.Words för .NET?
 

@@ -16,7 +16,7 @@ url: /zh-hant/net/working-with-fields/delete-fields/
 
 在深入學習本教程之前，請確保您具備以下先決條件：
 
-### 軟體要求
+### 軟體需求
 
 1. Visual Studio：已在您的系統上安裝並設定。
 2.  Aspose.Words for .NET：下載並整合到您的 Visual Studio 專案中。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 遍歷文件中的所有欄位並刪除它們：
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 此循環向後迭代字段集合，以避免迭代時修改集合出現問題。

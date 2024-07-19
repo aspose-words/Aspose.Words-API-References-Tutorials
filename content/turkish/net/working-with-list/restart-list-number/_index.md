@@ -114,7 +114,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### S: Aspose.Words'te bir listenin numaralandırmasını nasıl yeniden başlatabilirim?
 
- C: Aspose.Words'te bir listenin numaralandırılmasını yeniden başlatmak için`ListRestartAtNumber` yöntemi`List` sınıf. Bu yöntem, listenin yeniden başlatılması gereken yeni bir arama değeri ayarlamanıza olanak tanır. Örneğin, kullanabilirsiniz`list.ListRestartAtNumber(1)` Numaralandırmayı 1'den yeniden başlatmak için
+ C: Aspose.Words'te bir listenin numaralandırılmasını yeniden başlatmak için`ListRestartAtNumber` yöntemi`List` sınıf. Bu yöntem, listenin yeniden başlatılması gereken yeni bir arama değeri ayarlamanıza olanak tanır. Örneğin şunları kullanabilirsiniz:`list.ListRestartAtNumber(1)` Numaralandırmayı 1'den yeniden başlatmak için
 
 #### S: Aspose.Words'te yeniden başlatılan liste numaralandırmasının önekini ve sonekini özelleştirmek mümkün mü?
 
@@ -126,7 +126,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### S: Aspose.Words'te çok seviyeli liste numaralandırmayı yeniden başlatmak mümkün mü?
 
- C: Evet, Aspose.Words birden fazla liste düzeyinde yeniden numaralandırmayı destekler. Şunu uygulayabilirsiniz:`ListRestartAtNumber` Numaralandırmayı tek tek yeniden başlatmak için her liste düzeyindeki yöntemi kullanın. Örneğin, kullanabilirsiniz`list.Levels[0].ListRestartAtNumber(1)` ilk liste düzeyini 1'den yeniden başlatmak için ve`list.Levels[1].ListRestartAtNumber(1)` 1'den başlayarak ikinci düzey listeyi yeniden başlatmak için.
+ C: Evet, Aspose.Words birden fazla liste düzeyinde yeniden numaralandırmayı destekler. Şunu uygulayabilirsiniz:`ListRestartAtNumber` Numaralandırmayı tek tek yeniden başlatmak için her liste düzeyindeki yöntemi kullanın. Örneğin şunları kullanabilirsiniz:`list.Levels[0].ListRestartAtNumber(1)` ilk liste düzeyini 1'den yeniden başlatmak için ve`list.Levels[1].ListRestartAtNumber(1)` 1'den başlayarak ikinci düzey listeyi yeniden başlatmak için.
 
 
 

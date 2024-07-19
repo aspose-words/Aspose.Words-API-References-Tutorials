@@ -41,7 +41,7 @@ Descubra tutoriales completos sobre combinación y comparación de documentos ut
 ### [División y formato de documentos](./document-splitting-and-formatting/)
 Explore los tutoriales de Aspose.Words sobre división y formato de documentos en Python y .NET. Aprenda a dividir y formatear documentos de manera eficiente, mejorando sus tareas de procesamiento de documentos. 
 ### [Opciones y configuraciones del documento](./document-options-and-settings/)
-Explore los tutoriales de Aspose.Words sobre opciones y configuraciones de documentos en Python y .NET. Aprenda a optimizar la creación y el formato de documentos utilizando instrucciones paso a paso y ejemplos de código fuente.
+Explore los tutoriales de Aspose.Words sobre opciones y configuraciones de documentos en Python y .NET. Aprenda a optimizar la creación y el formato de documentos utilizando guías paso a paso y ejemplos de código fuente.
 ### [Visualización y formato de datos](./data-visualization-and-formatting/)
 Descubra los tutoriales de Aspose.Words sobre visualización y formato de datos en Python y .NET. Aprenda a presentar datos de forma eficaz, cree informes sorprendentes y dé formato a documentos mediante programación.
 ### [Tablas y formato](./tables-and-formatting/)

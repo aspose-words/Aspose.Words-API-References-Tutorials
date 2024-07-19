@@ -95,11 +95,11 @@ Enfin, enregistrez le document après avoir appliqué les paramètres de police 
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ```
 
-En suivant ces étapes, vous avez configuré votre application pour gérer correctement les substitutions de polices et recevoir des notifications chaque fois qu'une substitution se produit.
+En suivant ces étapes, vous avez configuré votre application pour gérer les substitutions de polices avec élégance et recevoir des notifications chaque fois qu'une substitution se produit.
 
 ## Conclusion
 
-Vous maîtrisez désormais le processus de réception de notifications pour les substitutions de polices à l'aide d'Aspose.Words for .NET. Cette compétence vous aidera à garantir que vos documents soient toujours à leur meilleur, même lorsque les polices nécessaires ne sont pas disponibles. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d'Aspose.Words.
+Vous maîtrisez désormais le processus de réception de notifications pour les substitutions de polices à l'aide d'Aspose.Words for .NET. Cette compétence vous aidera à garantir que vos documents soient toujours à leur meilleur, même lorsque les polices nécessaires ne sont pas disponibles. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d’Aspose.Words.
 
 ## FAQ
 

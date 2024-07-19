@@ -15,10 +15,10 @@ No hej! Czy zastanawiałeś się kiedyś, jak zabezpieczyć dokumenty programu W
 
 Zanim zagłębimy się w szczegóły zabezpieczania dokumentów programu Word hasłem, będziesz potrzebować kilku rzeczy:
 
-1. Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne inne środowisko programistyczne C#.
 3. Podstawowa znajomość języka C#: Podstawowa znajomość programowania w języku C#.
-4.  Licencja Aspose: Uzyskaj licencję od[Tutaj](https://purchase.aspose.com/buy) lub użyj A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+4.  Licencja Aspose: Uzyskaj licencję od[Tutaj](https://purchase.aspose.com/buy)lub użyj A[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
 
 ## Importuj przestrzenie nazw
 

@@ -115,7 +115,7 @@ doc.save("output.docx")
 
 ### 實施文件自動化
 
-使用 Aspose.Words 自動產生文件。這減少了人工幹預、最大限度地減少錯誤並提高了效率。以下是如何使用 Aspose.Words 自動產生文件的範例：
+使用 Aspose.Words 自動產生文件。這減少了人工幹預，最大限度地減少錯誤並提高效率。以下是如何使用 Aspose.Words 自動產生文件的範例：
 
 ```python
 import aspose.words as aw

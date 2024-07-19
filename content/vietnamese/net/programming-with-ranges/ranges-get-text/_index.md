@@ -101,11 +101,11 @@ string text = doc.Range.Text;
 
 #### Câu hỏi: Làm cách nào để xử lý định dạng và cấu trúc khi trích xuất văn bản từ các phạm vi bằng Aspose.Words cho .NET?
 
-Trả lời: Khi trích xuất văn bản từ các phạm vi bằng Aspose.Words cho .NET, định dạng và cấu trúc của văn bản được trích xuất sẽ được giữ nguyên. Văn bản được trích xuất sẽ giữ lại định dạng ban đầu, chẳng hạn như kiểu phông chữ, kích thước, màu sắc và các thuộc tính định dạng khác. Tuy nhiên, hãy lưu ý rằng văn bản được trích xuất có thể không bao gồm một số thành phần hoặc thuộc tính không hiển thị nhất định được liên kết với nội dung gốc, chẳng hạn như văn bản ẩn hoặc các thay đổi được theo dõi.
+Trả lời: Khi trích xuất văn bản từ các phạm vi bằng Aspose.Words cho .NET, định dạng và cấu trúc của văn bản được trích xuất sẽ được giữ nguyên. Văn bản được trích xuất sẽ giữ lại định dạng ban đầu, chẳng hạn như kiểu phông chữ, kích thước, màu sắc và các thuộc tính định dạng khác. Tuy nhiên, lưu ý rằng văn bản được trích xuất có thể không bao gồm các thành phần hoặc thuộc tính không hiển thị nhất định được liên kết với nội dung gốc, chẳng hạn như văn bản ẩn hoặc các thay đổi được theo dõi.
 
 #### Câu hỏi: Tôi có thể chỉ trích xuất một phần văn bản cụ thể trong một phạm vi bằng Aspose.Words cho .NET không?
 
-Đáp: Có, bạn chỉ có thể trích xuất một phần văn bản cụ thể trong một phạm vi bằng Aspose.Words for .NET. Khi bạn đã truy cập phạm vi mong muốn, bạn có thể thao tác văn bản được truy xuất bằng kỹ thuật thao tác chuỗi tiêu chuẩn để trích xuất một phần cụ thể hoặc áp dụng tính năng lọc tùy chỉnh theo yêu cầu của bạn.
+Đáp: Có, bạn chỉ có thể trích xuất một phần văn bản cụ thể trong một phạm vi bằng Aspose.Words for .NET. Khi bạn đã truy cập phạm vi mong muốn, bạn có thể thao tác văn bản được truy xuất bằng các kỹ thuật thao tác chuỗi tiêu chuẩn để trích xuất một phần cụ thể hoặc áp dụng tính năng lọc tùy chỉnh theo yêu cầu của bạn.
 
 #### Câu hỏi: Tôi có thể trích xuất văn bản từ tài liệu Word được bảo vệ bằng mật khẩu hoặc mã hóa bằng Aspose.Words cho .NET không?
 

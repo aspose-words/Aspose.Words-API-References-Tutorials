@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- Stiamo configurando il`ParagraphFormat`proprietà. Analizziamo cosa fa ciascuna proprietà:
+Stiamo configurando il`ParagraphFormat` proprietà. Analizziamo cosa fa ciascuna proprietà:
 - Allineamento: centra il paragrafo.
 - LeftIndent: imposta il rientro sinistro su 50 punti.
 - RightIndent: imposta il rientro destro su 50 punti.

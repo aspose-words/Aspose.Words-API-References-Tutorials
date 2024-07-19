@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Este código crea una instancia de`HtmlSaveOptions` establece el`ExportTextInputFormFieldAsText` opción de`true` para exportar campos de formulario de entrada de texto como texto sin formato. Además, especifica la carpeta donde se guardarán las imágenes extraídas.
+ Este código crea una instancia de`HtmlSaveOptions` y establece el`ExportTextInputFormFieldAsText` opción de`true` para exportar campos de formulario de entrada de texto como texto sin formato. Además, especifica la carpeta donde se guardarán las imágenes extraídas.
 
 ## Paso 4: convertir y guardar el documento a HTML
 

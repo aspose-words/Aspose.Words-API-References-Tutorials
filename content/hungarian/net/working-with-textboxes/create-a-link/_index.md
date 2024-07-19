@@ -70,4 +70,4 @@ V: Igen, az Aspose.Words könyvtár használatával .NET-hez lehetőség van kü
 
 #### K: Milyen egyéb funkciókat lehet hozzáadni a Word szövegdobozaihoz az Aspose.Words for .NET használatával?
 
-V: Az Aspose.Words for .NET programmal számos egyéb funkciót is hozzáadhat a szövegmezőkhöz, például szövegformázást, képek hozzáadását, stílusok megváltoztatását stb. Az Aspose.Words for .NET dokumentációjában felfedezheti az összes funkciót. elérhető.
+V: Az Aspose.Words for .NET programmal számos egyéb funkciót is hozzáadhat a szövegmezőkhöz, például szövegformázást, képek hozzáadását, stílusok megváltoztatását stb. Az Aspose.Words for .NET dokumentációjában megtudhatja az összes funkciót. elérhető.

@@ -15,7 +15,7 @@ Dans ce didacticiel, nous vous expliquerons comment charger une plage de pages s
 Utilisez le code suivant pour charger une plage de pages spécifique à partir d'un document PDF :
 
 ```csharp
-// Chemin d'accès au répertoire des documents.
+//Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };

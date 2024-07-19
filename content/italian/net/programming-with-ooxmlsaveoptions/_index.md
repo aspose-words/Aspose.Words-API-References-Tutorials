@@ -11,7 +11,7 @@ tutorial Aspose.Words per .NET sull'elaborazione delle parole con OOXMLSaveOptio
 
  I tutorial forniscono anche esempi pratici di codice che illustrano l'uso delle varie funzionalità di OOXMLSaveOptions. Imparerai come specificare le opzioni di salvataggio durante la creazione o la modifica di un documento Word, utilizzando metodi come`CompatibilityOptions`, `ImageCompression` , E`ExportFontResources`. I tutorial ti aiuteranno a capire come queste opzioni influenzano il formato di output e a scegliere le impostazioni appropriate per i tuoi progetti.
 
-Sia che tu voglia creare documenti compatibili con versioni precedenti di Word, ridurre le dimensioni del file comprimendo immagini o incorporare caratteri specifici, i tutorial di Aspose.Words per .NET sull'elaborazione delle parole con OOXMLSaveOptions ti guideranno attraverso tutto. passi necessari. Potrai sfruttare appieno le funzionalità di salvataggio di OOXML e creare documenti Word professionali e ottimizzati.
+Sia che tu voglia creare documenti compatibili con versioni precedenti di Word, ridurre le dimensioni del file comprimendo immagini o incorporare caratteri specifici, i tutorial di Aspose.Words per .NET sull'elaborazione delle parole con OOXMLSaveOptions ti guideranno attraverso tutto. passaggi necessari. Potrai sfruttare appieno le funzionalità di salvataggio di OOXML e creare documenti Word professionali e ottimizzati.
 
  ## Tutorial
 | Titolo | Descrizione |

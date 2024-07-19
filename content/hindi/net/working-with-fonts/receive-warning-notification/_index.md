@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## चरण 3: पेज लेआउट अपडेट करें
-
- बुलाएं`UpdatePageLayout`विधि। यह दस्तावेज़ को मेमोरी में रेंडर करता है और रेंडरिंग के दौरान होने वाली किसी भी चेतावनी को कैप्चर करता है।
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## चरण 4: चेतावनी कॉलबैक सेट करें
+## चरण 3: चेतावनी कॉलबैक सेट करें
 
  चेतावनियों को पकड़ने और संभालने के लिए, एक वर्ग बनाएं जो इसे लागू करता है`IWarningCallback` इंटरफ़ेस। यह वर्ग दस्तावेज़ प्रसंस्करण के दौरान होने वाली किसी भी चेतावनी को लॉग करेगा।
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // हम केवल प्रतिस्थापित किए जाने वाले फ़ॉन्ट में रुचि रखते हैं।
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## चरण 5: दस्तावेज़ को कॉलबैक असाइन करें
+## चरण 4: दस्तावेज़ को कॉलबैक असाइन करें
 
 दस्तावेज़ को चेतावनी कॉलबैक असाइन करें। यह सुनिश्चित करता है कि किसी भी फ़ॉन्ट समस्या को कैप्चर और लॉग किया गया है।
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## चरण 5: पेज लेआउट अपडेट करें
+
+ बुलाएं`UpdatePageLayout` विधि। यह दस्तावेज़ को मेमोरी में रेंडर करता है और रेंडरिंग के दौरान होने वाली किसी भी चेतावनी को कैप्चर करता है।
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## चरण 6: दस्तावेज़ सहेजें

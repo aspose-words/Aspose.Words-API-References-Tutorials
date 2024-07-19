@@ -16,7 +16,7 @@ A szövegfájlok Word dokumentumokká konvertálása általános követelmény a
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
 - A Microsoft Visual Studio telepítve van a számítógépére.
 -  Aspose.Words a .NET könyvtárhoz. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
-- C# programozási nyelv alapvető ismerete.
+- A C# programozási nyelv alapvető ismerete.
 
 ## Névterek importálása
 

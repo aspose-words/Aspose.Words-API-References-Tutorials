@@ -61,7 +61,7 @@ Låt oss nu lägga till lite inledande innehåll i vårt dokument. Detta steg ä
 builder.Writeln("sad mad bad");
 ```
 
-Vi har lagt till en enkel textrad som vi kommer att arbeta med. Känn dig fri att anpassa detta innehåll.
+Vi har lagt till en enkel textrad som vi kommer att arbeta med. Skräddarsy gärna detta innehåll.
 
 ## Steg 4: Utför åtgärden Sök och ersätt
 

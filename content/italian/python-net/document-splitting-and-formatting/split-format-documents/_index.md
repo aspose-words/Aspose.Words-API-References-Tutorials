@@ -67,7 +67,7 @@ for i, section in enumerate(sections):
     new_document.save(f"path/to/save/section_{i}.docx")
 ```
 
-### Posso applicare una formattazione diversa a paragrafi diversi all'interno di una sezione?
+### Posso applicare una formattazione diversa a diversi paragrafi all'interno di una sezione?
 Sì, puoi applicare una formattazione diversa ai paragrafi all'interno di una sezione. Scorri i paragrafi nella sezione e applica la formattazione desiderata utilizzando il comando`paragraph.runs` proprietà.
 
 ```python

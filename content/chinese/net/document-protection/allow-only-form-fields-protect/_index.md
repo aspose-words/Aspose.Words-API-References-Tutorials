@@ -9,7 +9,7 @@ url: /zh/net/document-protection/allow-only-form-fields-protect/
 ---
 ## 介绍
 
-嗨！您是否曾经需要保护 Word 文档的特定部分，同时保留其他部分可编辑？Aspose.Words for .NET 让这变得非常简单。在本教程中，我们将深入探讨如何仅允许保护 Word 文档中的表单字段。在本指南结束时，您将对使用 Aspose.Words for .NET 进行文档保护有扎实的了解。准备好了吗？让我们开始吧！
+嗨！您是否需要保护 Word 文档的特定部分，同时保留其他部分可编辑？Aspose.Words for .NET 让这一切变得非常简单。在本教程中，我们将深入探讨如何在 Word 文档中仅允许表单字段保护。在本指南结束时，您将对使用 Aspose.Words for .NET 进行文档保护有扎实的了解。准备好了吗？让我们开始吧！
 
 ## 先决条件
 

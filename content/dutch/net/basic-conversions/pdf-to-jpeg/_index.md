@@ -15,7 +15,7 @@ Heeft u zich ooit in een situatie bevonden waarin u een PDF-bestand naar een JPE
 
 Voordat we in de kern duiken, laten we ervoor zorgen dat we al onze eenden op een rij hebben. Dit is wat je nodig hebt:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat deze krachtige bibliotheek is geïnstalleerd. Zo niet, dan kunt u deze downloaden[hier](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET: Zorg ervoor dat deze krachtige bibliotheek is geïnstalleerd. Zo niet, dan kunt u deze downloaden[hier](https://releases.aspose.com/words/net/).
 2. .NET Framework: Zorg ervoor dat de .NET-omgeving op uw computer is ingesteld.
 3. Visual Studio: elke versie is geschikt, zolang u er maar comfortabel doorheen navigeert.
 4.  Een PDF-bestand: Zorg ervoor dat uw PDF-bestand gereed is om te worden geconverteerd. Voor deze zelfstudie gebruiken we een bestand met de naam`Pdf Document.pdf`.

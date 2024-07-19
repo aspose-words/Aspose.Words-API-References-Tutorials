@@ -23,8 +23,7 @@ url: /ko/net/programming-with-bookmarks/
 | [Word 문서에서 북마크된 텍스트 복사](./copy-bookmarked-text/) | .NET용 Aspose.Words를 사용하여 Word 문서 간에 북마크된 텍스트를 쉽게 복사할 수 있습니다. 이 단계별 가이드를 통해 방법을 알아보세요. |
 | [Word 문서에 북마크된 텍스트 추가](./append-bookmarked-text/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 북마크된 텍스트를 추가하는 방법을 알아보세요. 개발자에게 적합합니다. |
 | [Word 문서에 북마크 만들기](./create-bookmark/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 북마크를 만드는 방법을 알아보세요. 문서 탐색 및 정리에 적합합니다. |
-| [Word 문서에서 책갈피 숨기기 표시](./show-hide-bookmarks/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 북마크를 동적으로 표시하거나 숨기는 방법을 알아보세요. 개발자에게 적합합니다. |
-| [Word 문서에서 북마크된 콘텐츠 숨기기 표시](./show-hide-bookmarked-content/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 북마크된 콘텐츠를 동적으로 표시하거나 숨기는 방법을 알아보세요. |
+| [Word 문서에서 북마크된 콘텐츠 숨기기 표시](./show-hide-bookmarked-content/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 북마크된 콘텐츠를 표시하고 숨기는 방법을 알아보세요. |
 | [Word 문서에서 행 책갈피 풀기](./untangle-row-bookmarks/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 얽힌 행 북마크를 쉽게 풀 수 있습니다. 이 가이드는 보다 깨끗하고 안전한 북마크 관리를 위한 과정을 안내합니다. |
 | [Word 문서에서 풀기](./untangle/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 북마크 풀기를 마스터하세요. .NET 개발자에게 적합합니다. |
 | [Word 문서에서 책갈피로 행 삭제](./delete-row-by-bookmark/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 북마크로 행을 삭제하는 방법을 알아보세요. 효율적인 문서 관리를 위한 단계별 가이드를 따르세요. |

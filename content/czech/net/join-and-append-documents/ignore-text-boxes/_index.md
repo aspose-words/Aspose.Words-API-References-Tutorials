@@ -120,4 +120,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
  Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat podporu pro Aspose.Words pro .NET?
- Podporu získáte na fórech Aspose[tady](https://forum.aspose.com/c/words/8).
+ Pro podporu navštivte fóra Aspose[tady](https://forum.aspose.com/c/words/8).

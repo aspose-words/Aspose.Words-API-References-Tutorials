@@ -62,7 +62,7 @@ Aqui, configuramos as opções de salvamento para usar um caractere de tabulaç�
 
 ## Etapa 3: salve o documento como texto
 
-Agora que definimos as opções de salvamento de texto, podemos salvar o documento como um arquivo de texto. O código a seguir demonstra como fazer isso:
+Agora que definimos as opções para salvar texto, podemos salvar o documento como um arquivo de texto. O código a seguir demonstra como fazer isso:
 
 ```java
 doc.save("output.txt", saveOptions);
@@ -70,7 +70,7 @@ doc.save("output.txt", saveOptions);
 
  Substituir`"output.txt"` com o caminho do arquivo desejado onde deseja salvar o arquivo de texto.
 
-## Código-fonte completo para salvar documentos como arquivos de texto em Aspose.Words para Java
+## Código-fonte completo para salvar documentos como arquivos de texto em Aspose.Words for Java
 
 ```java
     public void addBidiMarks() throws Exception

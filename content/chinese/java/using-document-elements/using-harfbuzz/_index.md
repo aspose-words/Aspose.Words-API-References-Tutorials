@@ -74,7 +74,7 @@ doc.save(outPath + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 
 HarfBuzz 是一个开源文本塑造引擎，支持复杂的脚本和语言，这使其成为正确呈现文本的必需条件。
 
-### 2. 为什么将HarfBuzz与Aspose.Words一起使用？
+### 2.为什么将HarfBuzz与Aspose.Words一起使用？
 
 HarfBuzz 增强了 Aspose.Words 的文本塑造功能，确保准确呈现复杂的脚本和语言。
 

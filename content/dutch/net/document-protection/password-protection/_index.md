@@ -15,10 +15,10 @@ Hallo daar! Heeft u zich ooit afgevraagd hoe u uw Word-documenten kunt beveilige
 
 Voordat we ingaan op de details van het beveiligen van uw Word-documenten met een wachtwoord, zijn er een paar dingen die u nodig heeft:
 
-1. Aspose.Words voor .NET: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere C#-ontwikkelomgeving.
 3. Basiskennis van C#: Een fundamenteel begrip van C#-programmeren.
-4.  Aspose-licentie: verkrijg een licentie van[hier](https://purchase.aspose.com/buy) of gebruik een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
+4.  Aspose-licentie: verkrijg een licentie van[hier](https://purchase.aspose.com/buy)of gebruik een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
 
 ## Naamruimten importeren
 

@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Steg 3: Ta bort avsnittsinnehåll
-För att rensa avsnittets innehåll använder vi avsnittets`ClearContent` metod.
+ För att rensa avsnittets innehåll använder vi avsnittets`ClearContent` metod.
 
 ```csharp
 section.ClearContent();

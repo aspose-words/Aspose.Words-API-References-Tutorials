@@ -41,7 +41,7 @@ ResourceFolderAlias = "http://example.com/resources"
 
 このコードはインスタンスを作成します`HtmlSaveOptions`次のオプションを設定します。
 
-- `CssStyleSheetType`に設定されています`CssStyleSheetType.External`CSS スタイルシートを外部ファイルにエクスポートします。
+- `CssStyleSheetType`に設定されています`CssStyleSheetType.External` CSS スタイルシートを外部ファイルにエクスポートします。
 - `ExportFontResources`に設定されています`true`フォントリソースをエクスポートします。
 - `ResourceFolder`リソースを保存する宛先ディレクトリを指定します。
 - `ResourceFolderAlias`リソースにアクセスするために使用する URL エイリアスを指定します。

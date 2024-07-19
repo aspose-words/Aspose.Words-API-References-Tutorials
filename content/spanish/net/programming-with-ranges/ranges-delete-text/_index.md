@@ -67,7 +67,7 @@ En esta guía, cubrimos cómo usar Aspose.Words para .NET para eliminar texto en
 
 #### P: ¿Cuál es el propósito de la funcionalidad "Eliminar rangos de texto en un documento de Word" en Aspose.Words para .NET?
 
-R: La funcionalidad "Eliminar texto en rangos en un documento de Word" en Aspose.Words para .NET le permite eliminar texto específico dentro de rangos definidos de un documento de Word. Proporciona la posibilidad de eliminar contenido de texto de secciones, párrafos u otros rangos específicos dentro del documento.
+R: La funcionalidad "Eliminar texto en rangos en documentos de Word" en Aspose.Words para .NET le permite eliminar texto específico dentro de rangos definidos de un documento de Word. Proporciona la posibilidad de eliminar contenido de texto de secciones, párrafos u otros rangos específicos dentro del documento.
 
 #### P: ¿Qué es Aspose.Words para .NET?
 
@@ -109,7 +109,7 @@ En este ejemplo, el documento modificado se guarda como "WorkingWithRangesDelete
 
 R: Sí, la funcionalidad "Eliminar texto en rangos en documentos de Word" en Aspose.Words para .NET elimina permanentemente el texto de los rangos especificados en el documento. El contenido del texto se elimina y el documento se actualiza en consecuencia.
 
-#### P: ¿Existe alguna limitación o consideración al utilizar la funcionalidad "Rangos para eliminar texto en un documento de Word" en Aspose.Words para .NET?
+#### P: ¿Existe alguna limitación o consideración al utilizar la funcionalidad "Eliminar texto en rangos en un documento de Word" en Aspose.Words para .NET?
 
 R: Cuando utilice la función "Eliminar texto en rangos en un documento de Word", es importante asegurarse de que está apuntando a los rangos correctos para la eliminación. Se debe tener cuidado para evitar eliminar accidentalmente contenido no deseado. Además, considere el impacto en el formato y la estructura del documento después de la eliminación, ya que otros elementos pueden cambiar o ajustarse en consecuencia.
 

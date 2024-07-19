@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-Ở bước này, chúng tôi đang sử dụng`GetAncestor` phương pháp tìm hàng cha của cả nút bắt đầu đánh dấu và nút kết thúc đánh dấu. Điều này giúp chúng tôi xác định chính xác các hàng liên quan.
+ Ở bước này, chúng tôi đang sử dụng`GetAncestor` phương pháp tìm hàng cha của cả nút bắt đầu đánh dấu và nút kết thúc đánh dấu. Điều này giúp chúng tôi xác định chính xác các hàng liên quan.
 
 ## Bước 4: Kiểm tra các hàng liền kề
 
@@ -93,7 +93,7 @@ Bước 5 Tiêu đề: Di chuyển phần cuối dấu trang
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-Ở bước này, chúng tôi đang sử dụng`AppendChild`phương pháp di chuyển nút cuối dấu trang. Bằng cách thêm dấu trang vào đoạn cuối cùng của ô cuối cùng ở hàng trên cùng, chúng tôi đảm bảo rằng dấu trang được gỡ rối chính xác.
+ Ở bước này, chúng tôi đang sử dụng`AppendChild` phương pháp di chuyển nút cuối dấu trang. Bằng cách thêm dấu trang vào đoạn cuối cùng của ô cuối cùng ở hàng trên cùng, chúng tôi đảm bảo rằng dấu trang được gỡ rối chính xác.
 
 ## Phần kết luận
 

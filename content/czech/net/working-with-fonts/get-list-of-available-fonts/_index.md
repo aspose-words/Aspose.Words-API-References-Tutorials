@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Nakonfigurujte zdroje písem
-Dále vytvoříme instanci`FontSettings` a získat existující zdroje písem pomocí`GetFontsSources()` metoda. Přidáme také nový zdroj písem zadáním složky obsahující písma.
+ Dále vytvoříme instanci`FontSettings` a získat existující zdroje písem pomocí`GetFontsSources()` metoda. Přidáme také nový zdroj písem zadáním složky obsahující písma.
 
 ```csharp
 // Konfigurace zdrojů písem

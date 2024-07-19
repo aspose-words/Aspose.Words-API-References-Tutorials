@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## Bước 4: Kiểm tra nút cha và tài liệu chủ sở hữu
- Bây giờ chúng ta đã tạo nút đoạn văn, chúng ta có thể kiểm tra xem nó có nút cha hay không và liệu tài liệu sở hữu có giống với nút đó không`doc`.
+Bây giờ chúng ta đã tạo nút đoạn văn, chúng ta có thể kiểm tra xem nó có nút cha hay không và liệu tài liệu sở hữu có giống với nút đó không`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ Trả lời: Trong hầu hết các trường hợp, chủ sở hữu tài liệ
 
 #### Câu hỏi: Làm cách nào để truy cập các nút của tài liệu chủ sở hữu?
 
- Trả lời: Để truy cập các nút trong tài liệu độc quyền, bạn có thể sử dụng các phương thức và thuộc tính do API XML sử dụng trong môi trường Node.js của bạn cung cấp. Ví dụ: bạn có thể sử dụng các phương pháp như`getElementsByTagName` hoặc`querySelector` để chọn các nút cụ thể trong tài liệu.
+Trả lời: Để truy cập các nút trong tài liệu độc quyền, bạn có thể sử dụng các phương thức và thuộc tính do API XML sử dụng trong môi trường Node.js của bạn cung cấp. Ví dụ: bạn có thể sử dụng các phương pháp như`getElementsByTagName` hoặc`querySelector` để chọn các nút cụ thể trong tài liệu.

@@ -126,7 +126,7 @@ for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
 
 ## 結論
 
-使用 Aspose.Words for Python 建立綜合目錄可以顯著改善文件的使用者體驗。透過執行這些步驟，您可以增強文件的導航性，提供對關鍵部分的快速訪問，並以更有組織性和讀者友好的方式呈現您的內容。
+使用 Aspose.Words for Python 建立綜合目錄可以顯著改善文件的使用者體驗。透過執行這些步驟，您可以增強文件的可導航性，提供對關鍵部分的快速訪問，並以更有組織性和讀者友好的方式呈現您的內容。
 
 ## 常見問題解答
 

@@ -15,7 +15,7 @@ Volt már olyan helyzetben, amikor PDF-fájlt kellett JPEG-képpé konvertálnia
 
 Mielőtt belevágnánk a kacsikba, győződjünk meg arról, hogy az összes kacsánk egy sorban van. Íme, amire szüksége van:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van ez a hatékony könyvtár. Ha nem, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van ez a hatékony könyvtár. Ha nem, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
 2. .NET-keretrendszer: Győződjön meg arról, hogy a .NET-környezet be van állítva a gépen.
 3. Visual Studio: Bármelyik verzió megfelel, ha kényelmesen navigál rajta.
 4.  PDF-fájl: Készítse elő PDF-fájlját a konvertálásra. Ehhez az oktatóanyaghoz egy nevű fájlt fogunk használni`Pdf Document.pdf`.

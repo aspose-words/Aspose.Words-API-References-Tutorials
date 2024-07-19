@@ -23,7 +23,7 @@ url: /hi/net/working-with-fields/
 | [DOM का उपयोग करके मर्ज फ़ील्ड डालें](./insert-merge-field-using-dom/) | .NET के लिए Aspose.Words के साथ अपने Word दस्तावेज़ों में कस्टम फ़ील्ड मर्ज फ़ील्ड सम्मिलित करना सीखें। |
 | [DOM का उपयोग करके मेल मर्ज पता ब्लॉक फ़ील्ड डालें](./insert-mail-merge-address-block-field-using-dom/) | .NET के लिए Aspose.Words के साथ अपने Word दस्तावेज़ों में मेल मर्ज पता ब्लॉक फ़ील्ड सम्मिलित करना सीखें। |
 | [डॉक्यूमेंट बिल्डर के बिना फ़ील्डइंक्लूडटेक्स्ट डालें](./insert-field-include-text-without-document-builder/) | .NET के लिए Aspose.Words के साथ अपने Word दस्तावेज़ों में FieldIncludeText फ़ील्ड सम्मिलित करना सीखें। |
-| [फ़ील्ड डालें कोई नहीं](./insert-field-none/) | .NET के लिए Aspose.Words के साथ अपने Word दस्तावेज़ों में AUCUN शीर्षक जोड़ना सीखें। |
+| [फ़ील्ड डालें कोई नहीं](./insert-field-none/) | सीखें कि कैसे अपने दस्तावेज़ों में AUCUN को शामिल करें, Word और Aspose.Words को .NET में बदलें। |
 | [फ़ील्ड डालें](./insert-field/) | Aspose.Words for .NET के साथ अपने Word दस्तावेज़ों में फ़ील्ड सम्मिलित करना सीखें। गतिशील फ़ील्ड के साथ अपने दस्तावेज़ों को वैयक्तिकृत करें। |
 | [फ़ील्ड बिल्डर का उपयोग करके फ़ील्ड सम्मिलित करें](./insert-field-using-field-builder/) | .NET के लिए Aspose.Words के साथ अपने Word दस्तावेज़ों में कस्टम फ़ील्ड सम्मिलित करना सीखें। |
 | [लेखक फ़ील्ड डालें](./insert-author-field/) | Aspose.Words for .NET के साथ अपने Word दस्तावेज़ों में AUTHOR फ़ील्ड सम्मिलित करना सीखें। अपने दस्तावेज़ों को वैयक्तिकृत करने के लिए लेखक का नाम निर्दिष्ट करें। |

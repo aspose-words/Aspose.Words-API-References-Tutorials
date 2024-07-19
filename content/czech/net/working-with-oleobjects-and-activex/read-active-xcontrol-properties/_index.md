@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
 
-tomto podrobném průvodci vám ukážeme, jak číst vlastnosti ovládacích prvků ActiveX v souboru aplikace Word pomocí Aspose.Words for .NET. Poskytneme vám kompletní zdrojový kód a ukážeme vám, jak formátovat výstup markdown.
+V tomto podrobném průvodci vám ukážeme, jak číst vlastnosti ovládacích prvků ActiveX v souboru aplikace Word pomocí Aspose.Words for .NET. Poskytneme vám kompletní zdrojový kód a ukážeme vám, jak formátovat výstup markdown.
 
 ## Krok 1: Inicializace dokumentu
 
@@ -92,7 +92,7 @@ Tato příručka vám ukázala, jak číst vlastnosti ovládacích prvků Active
 
 #### Otázka: Jaký je první krok ke čtení vlastností ovládacích prvků ActiveX v souboru aplikace Word?
 
- A: Prvním krokem je inicializace`Document` objekt načtením dokumentu aplikace Word obsahující ovládací prvky ActiveX. Nezapomeňte vyměnit`MyDir` se skutečnou cestou k adresáři obsahujícímu dokument.
+ Odpověď: Prvním krokem je inicializace`Document` objekt načtením dokumentu aplikace Word obsahující ovládací prvky ActiveX. Nezapomeňte vyměnit`MyDir` se skutečnou cestou k adresáři obsahujícímu dokument.
 
 #### Otázka: Jak dostanu ovládací prvky ActiveX do dokumentu?
 

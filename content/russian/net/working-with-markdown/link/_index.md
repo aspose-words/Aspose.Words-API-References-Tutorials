@@ -51,8 +51,8 @@ builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 
 #### Вопрос: Как настроить отображение текста ссылки в Aspose.Words?
 
-О: Чтобы настроить отображаемый текст ссылки в Aspose.Words, вы можете изменить содержимое между`<a>` теги. Например,`<a href="https://www.aspose.com">Click here</a>` отобразит текст «Нажмите здесь» в виде гиперссылки.
+ О: Чтобы настроить отображаемый текст ссылки в Aspose.Words, вы можете изменить содержимое между`<a>` теги. Например,`<a href="https://www.aspose.com">Click here</a>` отобразит текст «Нажмите здесь» в виде гиперссылки.
 
 #### Вопрос: Могу ли я указать цель для ссылки в Aspose.Words?
 
- О: Да, вы можете указать цель для ссылки в Aspose.Words, используя`target` атрибут`<a>` ярлык. Например,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` откроет ссылку в новом окне или вкладке.
+О: Да, вы можете указать цель для ссылки в Aspose.Words, используя`target` атрибут`<a>` ярлык. Например,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` откроет ссылку в новом окне или вкладке.

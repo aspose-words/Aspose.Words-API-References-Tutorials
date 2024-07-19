@@ -173,7 +173,7 @@ Document doc2 = new Document("modified.docx");
 doc1.compare(doc2, "comparison_result.docx");
 ```
 
-## 解决常见问题
+## 常见问题故障排除
 
 即使是最好的开发人员也会遇到问题。我们将在本节中解决常见问题及其解决方案。
 

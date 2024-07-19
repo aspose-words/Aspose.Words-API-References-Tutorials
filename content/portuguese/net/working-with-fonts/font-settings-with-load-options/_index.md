@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Etapa 2: configurar opções de carregamento com configurações de fonte
- seguir, criaremos uma instância de`LoadOptions` e especifique as configurações de fonte criando uma nova instância de`FontSettings` e atribuindo-o a`loadOptions.FontSettings`.
+ A seguir, criaremos uma instância de`LoadOptions` especifique as configurações de fonte criando uma nova instância de`FontSettings` e atribuindo-o a`loadOptions.FontSettings`.
 
 ```csharp
 // Configure opções de carregamento com configurações de fonte
@@ -57,7 +57,7 @@ Neste tutorial, vimos como usar opções de carregamento com configurações de 
 
 #### P: Como posso especificar uma fonte padrão ao carregar um documento no Aspose.Words?
 
- R: Para especificar uma fonte padrão ao carregar um documento no Aspose.Words, você pode usar o`LoadOptions` classe e definir o`DefaultFontName`propriedade ao nome da fonte desejada.
+ R: Para especificar uma fonte padrão ao carregar um documento no Aspose.Words, você pode usar o`LoadOptions` classe e definir o`DefaultFontName` propriedade ao nome da fonte desejada.
 
 #### P: Que outras configurações de fonte posso especificar com as opções de carregamento no Aspose.Words?
 

@@ -15,7 +15,7 @@ In dit voorbeeld laten we u zien hoe u een Word-document in afzonderlijke sectie
 Om te beginnen geeft u de map voor uw document op en laadt u het document in een Document-object. Hier is hoe:
 
 ```csharp
-// Pad naar de documentenmap.
+//Pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```
@@ -74,7 +74,7 @@ Ja, Aspose.Words voor .NET ondersteunt het splitsen van een document in verschil
 
 #### Kan ik meerdere documenten tegelijk splitsen?
 
-Ja, u kunt het splitsingsproces tegelijkertijd op meerdere documenten toepassen door een verzameling documenten te doorlopen en de splitsingscode voor elk document afzonderlijk uit te voeren. Hierdoor kunt u meerdere documenten efficiënt verwerken en voor elk document afzonderlijke secties genereren.
+Ja, u kunt het splitsingsproces op meerdere documenten tegelijk toepassen door een verzameling documenten te doorlopen en de splitsingscode voor elk document afzonderlijk uit te voeren. Hierdoor kunt u meerdere documenten efficiënt verwerken en voor elk document afzonderlijke secties genereren.
 
 #### Hoe kan ik de secties weer samenvoegen tot één document?
 

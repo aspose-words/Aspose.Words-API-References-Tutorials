@@ -16,7 +16,7 @@ V tomto tutoriálu vás provedeme procesem tisku dokumentů pomocí Aspose.Words
 
 ### Co je tisk dokumentů?
 
-Tisk dokumentu se týká procesu výroby fyzické kopie digitálního dokumentu. Je to zásadní aspekt zpracování textu a dokumentů, který uživatelům umožňuje mít hmatatelné kopie svých digitálních souborů. V kontextu Aspose.Words for Java umožňuje tisk dokumentů vývojářům automatizovat proces tisku, díky čemuž je efektivní a pohodlný.
+Tisk dokumentu se týká procesu výroby fyzické kopie digitálního dokumentu. Je to zásadní aspekt zpracování textu a dokumentů, který uživatelům umožňuje mít hmatatelné kopie svých digitálních souborů. V kontextu Aspose.Words for Java umožňuje tisk dokumentů vývojářům automatizovat proces tisku, takže je efektivní a pohodlný.
 
 ### Proč používat Aspose.Words pro Javu?
 

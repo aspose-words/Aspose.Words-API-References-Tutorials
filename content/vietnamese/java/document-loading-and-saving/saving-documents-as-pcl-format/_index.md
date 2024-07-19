@@ -63,7 +63,7 @@ doc.save("Your Directory Path" + "WorkingWithPclSaveOptions.RasterizeTransformed
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã khám phá cách lưu tài liệu dưới định dạng PCL trong Aspose.Words cho Java. Chỉ với vài bước đơn giản, bạn có thể chuyển đổi tài liệu Word của mình sang định dạng phù hợp để in trên máy in laser. Aspose.Words for Java cho phép bạn tự động hóa quy trình này, giúp quy trình này hiệu quả và không gặp rắc rối.
+Trong hướng dẫn này, chúng tôi đã khám phá cách lưu tài liệu dưới định dạng PCL trong Aspose.Words cho Java. Chỉ với vài bước đơn giản, bạn có thể chuyển đổi tài liệu Word của mình sang định dạng phù hợp để in trên máy in laser. Aspose.Words for Java cho phép bạn tự động hóa quy trình này, giúp quy trình này hiệu quả và không gặp rắc rối.
 
 ## Câu hỏi thường gặp
 

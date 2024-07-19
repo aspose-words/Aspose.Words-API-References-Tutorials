@@ -7,7 +7,7 @@ type: docs
 weight: 23
 url: /fr/java/licensing-and-configuration/
 ---
-Dans le domaine du traitement de documents Java, Aspose.Words constitue une formidable boîte à outils. Que vous soyez un développeur chevronné ou que vous commenciez tout juste votre parcours dans le monde de la programmation Java, il est essentiel de comprendre les nuances des licences et de la configuration d'Aspose.Words. Cet article vous fournira un guide complet sur l'octroi de licences et la configuration d'Aspose.Words pour Java, vous garantissant ainsi d'exploiter tout son potentiel de manière transparente.
+Dans le domaine du traitement de documents Java, Aspose.Words constitue une formidable boîte à outils. Que vous soyez un développeur chevronné ou que vous commenciez tout juste votre parcours dans le monde de la programmation Java, il est essentiel de comprendre les nuances des licences et de la configuration d'Aspose.Words. Cet article vous fournira un guide complet sur l'octroi de licences et la configuration d'Aspose.Words pour Java, vous permettant d'exploiter tout son potentiel de manière transparente.
 
 ## Licence Aspose.Words pour Java
 

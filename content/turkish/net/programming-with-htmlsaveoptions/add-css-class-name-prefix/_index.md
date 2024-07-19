@@ -19,7 +19,7 @@ Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Projenizde Aspo
 Bu adımda HTML'ye dönüştürmek istediğimiz Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// Belgeler dizininin yolu.
+//Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Bu kod bir örneğini oluşturur`HtmlSaveOptions` ve setler`CssStyleSheetType` ile`CssStyleSheetType.External`harici bir CSS stil sayfası oluşturmak ve`CssClassNamePrefix` ile`"pfx_"` önek için`"pfx_"` CSS sınıfını adlandırmak için.
+ Bu kod bir örneğini oluşturur`HtmlSaveOptions` ve setler`CssStyleSheetType` ile`CssStyleSheetType.External` harici bir CSS stil sayfası oluşturmak ve`CssClassNamePrefix` ile`"pfx_"` önek için`"pfx_"` CSS sınıfını adlandırmak için.
 
 ## Adım 4: Belgeyi HTML'ye dönüştürme ve kaydetme
 

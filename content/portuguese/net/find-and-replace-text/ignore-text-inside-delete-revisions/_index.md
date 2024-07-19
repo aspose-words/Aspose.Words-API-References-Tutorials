@@ -9,7 +9,7 @@ url: /pt/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 ## Introdução
 
-No domínio do desenvolvimento .NET, Aspose.Words se destaca como uma biblioteca robusta para trabalhar programaticamente com documentos do Microsoft Word. Quer você seja um desenvolvedor experiente ou apenas começando, dominar os recursos do Aspose.Words pode aumentar significativamente sua capacidade de manipular, criar e gerenciar documentos do Word com eficiência. Este tutorial se aprofunda em um de seus recursos poderosos: lidar com revisões rastreadas em documentos usando Aspose.Words for .NET.
+No domínio do desenvolvimento .NET, Aspose.Words se destaca como uma biblioteca robusta para trabalhar programaticamente com documentos do Microsoft Word. Quer você seja um desenvolvedor experiente ou apenas começando, dominar os recursos do Aspose.Words pode melhorar significativamente sua capacidade de manipular, criar e gerenciar documentos do Word com eficiência. Este tutorial se aprofunda em um de seus recursos poderosos: lidar com revisões rastreadas em documentos usando Aspose.Words for .NET.
 
 ## Pré-requisitos
 

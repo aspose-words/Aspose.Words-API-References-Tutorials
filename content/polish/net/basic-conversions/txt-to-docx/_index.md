@@ -48,7 +48,7 @@ doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 
 ## Wniosek
 
-W tym samouczku omówiliśmy, jak przekonwertować plik tekstowy na dokument programu Word za pomocą Aspose.Words dla .NET. Wykonując te proste kroki, możesz zautomatyzować proces konwertowania treści tekstowych na bardziej uporządkowany i edytowalny format, usprawniając przepływ pracy w przetwarzaniu dokumentów.
+tym samouczku omówiliśmy, jak przekonwertować plik tekstowy na dokument programu Word za pomocą Aspose.Words dla .NET. Wykonując te proste kroki, możesz zautomatyzować proces konwertowania treści tekstowych na bardziej uporządkowany i edytowalny format, usprawniając przepływ pracy w przetwarzaniu dokumentów.
 
 ## Często zadawane pytania
 

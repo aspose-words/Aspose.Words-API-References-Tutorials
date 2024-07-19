@@ -16,7 +16,7 @@ Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistět
 
 ## Krok 2: Vložení obrázku SVG do dokumentu
 
-tomto kroku vložíme do dokumentu, který má být převeden, obrázek SVG. Chcete-li vložit obrázek SVG pomocí značky HTML, použijte následující kód:
+V tomto kroku vložíme do dokumentu, který má být převeden, obrázek SVG. Chcete-li vložit obrázek SVG pomocí značky HTML, použijte následující kód:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -35,9 +35,9 @@ Laten we nu eens kijken naar de praktische stappen die nodig zijn voor het opnie
 
 ## Stap 1: Laad de bron- en doeldocumenten:
 
-Definieer een stringvariabele`dataDir` om het pad naar uw documentmap op te slaan. Vervang "UW DOCUMENTENMAP" door de werkelijke locatie.
+ Definieer een stringvariabele`dataDir` om het pad naar uw documentmap op te slaan. Vervang "UW DOCUMENTENMAP" door de werkelijke locatie.
 
- Maak er twee`Document` objecten met behulp van de`Aspose.Words.Document` bouwer. De eerste (`srcDoc`) bevat het brondocument met de toe te voegen inhoud. De seconde (`dstDoc`) vertegenwoordigt het doeldocument waarin we de broninhoud integreren met opnieuw gestarte paginanummering.
+ Maak er twee`Document` objecten met behulp van de`Aspose.Words.Document`bouwer. De eerste (`srcDoc`) bevat het brondocument met de toe te voegen inhoud. De seconde (`dstDoc`) vertegenwoordigt het doeldocument waarin we de broninhoud integreren met opnieuw gestarte paginanummering.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Vervang door uw werkelijke map
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Stap 3: Opnieuw starten van paginanummering inschakelen:
 
- Binnen hetzelfde`PageSetup` object van de eerste sectie van het brondocument, stelt u de`RestartPageNumbering`eigendom aan`true`Deze cruciale stap instrueert Aspose.Words om de paginanummering opnieuw te starten voor de toegevoegde inhoud.
+ Binnen hetzelfde`PageSetup` object van de eerste sectie van het brondocument, stelt u de`RestartPageNumbering`eigendom aan`true`. Deze cruciale stap instrueert Aspose.Words om de paginanummering opnieuw te starten voor de toegevoegde inhoud.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

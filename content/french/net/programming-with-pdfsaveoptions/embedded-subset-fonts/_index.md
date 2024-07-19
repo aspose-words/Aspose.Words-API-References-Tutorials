@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-C'est tout ! Vous avez intégré avec succès des sous-ensembles de polices dans un document et généré un PDF contenant uniquement les glyphes utilisés dans le document avec Aspose.Words for .NET.
+C'est tout ! Vous avez réussi à intégrer des sous-ensembles de polices dans un document et à générer un PDF contenant uniquement les glyphes utilisés dans le document avec Aspose.Words for .NET.
 
 ### Exemple de code source pour intégrer des sous-ensembles de polices avec Aspose.Words for .NET
 

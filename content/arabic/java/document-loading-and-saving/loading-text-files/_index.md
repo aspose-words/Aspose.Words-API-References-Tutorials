@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-//القائمة الرابعة، مع وجود مسافة بيضاء بين رقم القائمة ومحتويات عناصر القائمة،
+//القائمة الرابعة، مع وجود مسافة بيضاء بين رقم القائمة ومحتويات عنصر القائمة،
 // سيتم اكتشافه كقائمة فقط إذا تم تعيين "DetectNumberingWithWhitespaces" في كائن LoadOptions على القيمة true،
 // لتجنب اكتشاف الفقرات التي تبدأ بأرقام كقوائم عن طريق الخطأ.
 TxtLoadOptions loadOptions = new TxtLoadOptions();

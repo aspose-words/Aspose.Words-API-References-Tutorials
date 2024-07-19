@@ -9,7 +9,7 @@ url: /cs/net/working-with-markdown/strikethrough/
 ---
 
 
-V tomto příkladu vás provedeme tím, jak použít styl přeškrtnutého textu pomocí Aspose.Words for .NET. Přeškrtnutý text se používá k označení, že text je odstraněn nebo již není platný.
+tomto příkladu vás provedeme tím, jak použít styl přeškrtnutého textu pomocí Aspose.Words for .NET. Přeškrtnutý text se používá k označení, že text je odstraněn nebo již není platný.
 
 ## Krok 1: Použití generátoru dokumentů
 
@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Použijte styl přeškrtnutého textu
 
-Styl přeškrtnutého textu povolíme nastavením`StrikeThrough` vlastnictvím`Font` namítat proti`true`.
+ Styl přeškrtnutého textu povolíme nastavením`StrikeThrough` vlastnictvím`Font` namítat proti`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

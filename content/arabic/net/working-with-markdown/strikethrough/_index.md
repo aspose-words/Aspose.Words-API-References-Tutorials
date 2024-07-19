@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## الخطوة 2: تطبيق نمط النص الذي يتوسطه خط
 
-سنقوم بتمكين نمط النص الذي يتوسطه خط من خلال تعيين`StrikeThrough` ملكية`Font` يعترض على`true`.
+ سنقوم بتمكين نمط النص الذي يتوسطه خط من خلال تعيين`StrikeThrough` ملكية`Font` يعترض على`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

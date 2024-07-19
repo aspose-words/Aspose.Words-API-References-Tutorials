@@ -48,7 +48,7 @@ Document doc = new Document(new ByteArrayInputStream(TEXT_DOC.getBytes()), loadO
 doc.save("Your Directory Path" + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
 ```
 
- Den här koden visar hur man laddar ett textdokument med olika listformat och använder`DetectNumberingWithWhitespaces` alternativ för att upptäcka listor korrekt.
+ Den här koden visar hur man laddar ett textdokument med olika listformat och använder`DetectNumberingWithWhitespaces` alternativet för att upptäcka listor korrekt.
 
 ## Steg 2: Hantera utrymmesalternativ
 

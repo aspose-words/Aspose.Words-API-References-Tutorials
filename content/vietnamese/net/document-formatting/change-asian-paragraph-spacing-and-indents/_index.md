@@ -94,7 +94,7 @@ Và bạn có nó rồi đấy! Bạn vừa học cách thay đổi khoảng cá
 ## Câu hỏi thường gặp
 
 ### Tôi có thể sử dụng các cài đặt này cho kiểu chữ không phải Châu Á không?
-Có, những cài đặt này có thể được áp dụng cho bất kỳ văn bản nào, nhưng chúng đặc biệt hữu ích cho kiểu chữ Châu Á do các yêu cầu về khoảng cách và thụt lề duy nhất.
+Có, những cài đặt này có thể được áp dụng cho bất kỳ văn bản nào, nhưng chúng đặc biệt hữu ích cho kiểu chữ châu Á do các yêu cầu về khoảng cách và thụt lề duy nhất.
 
 ### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
  Có, Aspose.Words for .NET là thư viện trả phí, nhưng bạn có thể tải xuống[dùng thử miễn phí](https://releases.aspose.com/) hoặc một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để thử nó.
@@ -106,4 +106,4 @@ Có, những cài đặt này có thể được áp dụng cho bất kỳ văn 
 Tuyệt đối! Bạn có thể lặp qua một bộ sưu tập tài liệu và áp dụng các cài đặt này theo chương trình cho từng tài liệu.
 
 ### Nếu tôi gặp phải vấn đề hoặc có thắc mắc thì sao?
-Nếu bạn gặp bất kỳ vấn đề nào hoặc có thêm câu hỏi,[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) là một nơi tuyệt vời để tìm kiếm sự giúp đỡ.
+ Nếu bạn gặp bất kỳ vấn đề nào hoặc có thêm câu hỏi,[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) là một nơi tuyệt vời để tìm kiếm sự giúp đỡ.

@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/working-with-markdown/quote/
 ---
 
-In dit voorbeeld leggen we uit hoe u de aanhalingstekensfunctie met Aspose kunt gebruiken. Woorden voor .NET Quote worden gebruikt om tekstgedeelten te markeren door ze met een speciale rand te omringen.
+In dit voorbeeld leggen we uit hoe je de aanhalingstekensfunctie met Aspose kunt gebruiken. Woorden voor .NET Quote worden gebruikt om delen van de tekst te markeren door ze te omringen met een speciale rand.
 
 ## Stap 1: Een documentgenerator gebruiken
 
@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Stap 3: Stijlen maken voor geneste niveaus
 
- We kunnen stijlen voor geneste niveaus maken met behulp van de`Styles.Add` werkwijze van de`Document` voorwerp. In dit voorbeeld maken we een stijl met de naam 'Quote1' om een genest citaatniveau weer te geven.
+ We kunnen stijlen voor geneste niveaus maken met behulp van de`Styles.Add` werkwijze van de`Document`voorwerp. In dit voorbeeld maken we een stijl met de naam 'Quote1' om een genest citaatniveau weer te geven.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

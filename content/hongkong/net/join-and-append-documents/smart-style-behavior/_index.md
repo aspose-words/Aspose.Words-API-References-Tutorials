@@ -96,7 +96,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
 解釋：
-此命令將來源文件合併到目標文件的目前位置（即分頁符號之後的末端），並使用目標文件的樣式，同時在需要的地方智慧套用來源樣式。
+此命令將來源文件合併到目標文件的當前位置（即分頁符號之後的末尾），並且它使用目標文件的樣式，同時在需要的地方智慧應用來源樣式。
 
 ## 步驟 6：儲存組合文檔
 
@@ -112,7 +112,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 
 ## 結論
 
-好了，夥計們！透過這些步驟，您已經了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保持其獨特的樣式。不再有風格失誤或格式問題——每次都只有流暢、時尚的文檔。無論您是合併報告、提案或任何其他文檔，此方法都可以確保一切看起來都恰到好處。
+好了，夥計們！透過這些步驟，您已經了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保持其獨特的樣式。不再有風格錯誤或格式問題——每次都只有流暢、時尚的文檔。無論您是合併報告、提案或任何其他文檔，此方法都可以確保一切看起來都恰到好處。
 
 ## 常見問題解答
 

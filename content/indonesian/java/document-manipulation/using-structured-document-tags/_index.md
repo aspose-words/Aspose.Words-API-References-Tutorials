@@ -202,7 +202,7 @@ doc.save("RepeatingTableDocument.docx");
 
 ## Bekerja dengan Tag Dokumen Terstruktur Multi-Bagian
 
-Tag Dokumen Terstruktur dapat menjangkau beberapa bagian dalam sebuah dokumen. Di bagian ini, kita akan mempelajari cara bekerja dengan SDT multi-bagian.
+Tag Dokumen Terstruktur dapat mencakup beberapa bagian dalam sebuah dokumen. Di bagian ini, kita akan mempelajari cara bekerja dengan SDT multi-bagian.
 
 ```java
 Document doc = new Document("MultiSectionDocument.docx");

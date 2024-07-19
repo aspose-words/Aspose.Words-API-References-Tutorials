@@ -68,7 +68,7 @@ Baris kode ini menghapus rekomendasi baca-saja dari dokumen Anda, sehingga dapat
 
 ## Langkah 5: Tidak Terapkan Perlindungan
 
-Untuk memastikan tidak ada batasan lain pada dokumen Anda, terapkan pengaturan tanpa perlindungan.
+Untuk memastikan bahwa tidak ada batasan lain pada dokumen Anda, terapkan pengaturan tanpa perlindungan.
 
 ```csharp
 // Terapkan perlindungan tulis tanpa perlindungan apa pun.

@@ -19,7 +19,7 @@ Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistět
 V tomto kroku načteme dokument Wordu, který chceme převést do HTML. K načtení dokumentu použijte následující kód:
 
 ```csharp
-// Cesta k adresáři dokumentů.
+//Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Tento kód vytvoří instanci`HtmlSaveOptions` a sady`CssStyleSheetType` na`CssStyleSheetType.External`vygenerovat externí šablonu stylů CSS a`CssClassNamePrefix` na`"pfx_"` předponovat`"pfx_"` pojmenovat třídu CSS.
+ Tento kód vytvoří instanci`HtmlSaveOptions` a sady`CssStyleSheetType` na`CssStyleSheetType.External` vygenerovat externí šablonu stylů CSS a`CssClassNamePrefix` na`"pfx_"` předponovat`"pfx_"` pojmenovat třídu CSS.
 
 ## Krok 4: Převod a uložení dokumentu do HTML
 

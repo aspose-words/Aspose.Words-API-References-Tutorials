@@ -19,7 +19,7 @@ Funktionen Ladda krypterad PDF i Aspose.Words för .NET låter dig ladda PDF-fil
 Det första steget är att ladda det krypterade PDF-dokumentet i din applikation. Så här gör du:
 
 ```csharp
-// Sökväg till dokumentkatalogen.
+//Sökväg till dokumentkatalogen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

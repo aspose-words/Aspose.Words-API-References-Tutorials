@@ -54,7 +54,7 @@ Field field = fieldBuilder.BuildAndInsert(doc.FirstSection.Body.FirstParagraph);
 field. Update();
 ```
 
-### Példa forráskód egy mező beszúrásához a FieldBuilder és Aspose.Words for .NET használatával
+### Példa forráskód egy mező beszúrásához a FieldBuilder használatával Aspose.Words for .NET használatával
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.

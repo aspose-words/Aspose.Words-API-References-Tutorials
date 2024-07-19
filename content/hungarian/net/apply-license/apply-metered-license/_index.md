@@ -2,7 +2,7 @@
 title: Alkalmazza a mért licencet
 linktitle: Alkalmazza a mért licencet
 second_title: Aspose.Words Document Processing API
-description: Lépésről lépésre szóló útmutatónk segítségével megtudhatja, hogyan alkalmazhat mérőszámos licencet az Aspose.Words for .NET-ben. Rugalmas, költséghatékony licencelés egyszerűen.
+description: Lépésről lépésre szóló útmutatónkból megtudhatja, hogyan alkalmazhat mérőszámos licencet az Aspose.Words for .NET-ben. Rugalmas, költséghatékony licencelés egyszerűen.
 type: docs
 weight: 10
 url: /hu/net/apply-license/apply-metered-license/

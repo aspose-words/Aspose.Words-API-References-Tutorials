@@ -16,7 +16,7 @@ Ať už chcete vytvářet dokumenty kompatibilní se staršími verzemi aplikace
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Šifrovat Docx pomocí hesla](./encrypt-docx-with-password/) | Naučte se zašifrovat soubor DOCX pomocí hesla pomocí Aspose.Words for .NET. Kompletní výukový program pro zabezpečení dokumentů. |
+| [Šifrovat Docx pomocí hesla](./encrypt-docx-with-password/) | Naučte se zašifrovat soubor DOCX pomocí hesla pomocí Aspose.Words for .NET. Kompletní návod pro zabezpečení dokumentů. |
 | [Soulad s Ooxml ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Naučte se, jak zajistit shodu s Ooxml Iso 29500_2008_Strict při ukládání dokumentů pomocí Aspose.Words for .NET. |
 | [Aktualizovat vlastnost posledního uloženého času](./update-last-saved-time-property/) | Přečtěte si, jak automaticky aktualizovat vlastnost Last Saved Time při ukládání dokumentu pomocí Aspose.Words for .NET. |
 | [Udržujte starší ovládací znaky](./keep-legacy-control-chars/) | Naučte se, jak zachovat starší řídicí znaky při ukládání dokumentu pomocí Aspose.Words for .NET. |

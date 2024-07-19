@@ -88,7 +88,7 @@ doc.Protect(ProtectionType.ReadOnly);
 Açıklama:
 
 - `Protect` belgede yöntem çağrılır`ProtectionType.ReadOnly` argüman olarak.
-- Bu yöntem, salt okunur korumayı uygulayarak belgede parola olmadan değişiklik yapılmasını önler.
+- Bu yöntem, salt okunur korumayı uygulayarak belgede parola olmadan değişiklik yapılmasını engeller.
 
 ## Adım 5: Belgeyi Kaydedin
 

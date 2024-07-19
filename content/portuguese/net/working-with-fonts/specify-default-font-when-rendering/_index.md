@@ -62,7 +62,7 @@ Neste tutorial, aprendemos como especificar a fonte padrão ao renderizar um doc
 
 #### P: Como posso especificar uma fonte padrão ao converter para PDF no Aspose.Words?
 
- R: Para especificar uma fonte padrão ao converter para PDF no Aspose.Words, você pode usar o`PdfOptions` classe e definir o`DefaultFontName`propriedade ao nome da fonte desejada.
+ R: Para especificar uma fonte padrão ao converter para PDF no Aspose.Words, você pode usar o`PdfOptions` classe e definir o`DefaultFontName` propriedade ao nome da fonte desejada.
 
 #### P: E se a fonte padrão não estiver disponível durante a conversão para PDF?
 

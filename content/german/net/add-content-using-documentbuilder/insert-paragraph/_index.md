@@ -83,7 +83,7 @@ Ja, Aspose.Words für .NET unterstützt .NET Core-Anwendungen zusammen mit dem .
 ### Ist Aspose.Words für .NET mit Microsoft Word-Versionen kompatibel?
 Ja, Aspose.Words für .NET gewährleistet Kompatibilität mit verschiedenen Microsoft Word-Versionen, einschließlich der neuesten Versionen.
 
-### Unterstützt Aspose.Words für .NET die Dokumentenverschlüsselung?
+### Unterstützt Aspose.Words für .NET die Dokumentverschlüsselung?
 Ja, Sie können Ihre Dokumente mit Aspose.Words für .NET programmgesteuert verschlüsseln und sichern.
 
 ### Wo finde ich weitere Hilfe und Unterstützung für Aspose.Words für .NET?

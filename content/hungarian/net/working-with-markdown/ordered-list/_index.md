@@ -2,96 +2,96 @@
 title: Rendezett lista
 linktitle: Rendezett lista
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan hozhat létre rendezett listát az Aspose.Words for .NET segítségével Lépésről lépésre.
+description: A lépésenkénti útmutatónkból megtudhatja, hogyan hozhat létre rendezett listákat Word dokumentumokban az Aspose.Words for .NET használatával. Tökéletes a dokumentumkészítés automatizálására.
 type: docs
 weight: 10
 url: /hu/net/working-with-markdown/ordered-list/
 ---
+## Bevezetés
 
-Ebben a példában elmagyarázzuk, hogyan használható a rendezett lista funkció az Aspose.Words for .NET-ben. A Rendezett lista lehetővé teszi az elemek sorba rendezését számokkal.
+Tehát úgy döntött, hogy belevág az Aspose.Words for .NET-be, hogy elképesztő Word-dokumentumokat készítsen programozottan. Fantasztikus választás! Ma azt fogjuk lebontani, hogyan lehet rendezett listát létrehozni egy Word-dokumentumban. Lépésről lépésre haladunk, így akár kezdő kódoló, akár tapasztalt profi vagy, ezt az útmutatót rendkívül hasznosnak találod. Kezdjük el!
 
-## 1. lépés: Dokumentumgenerátor használata
+## Előfeltételek
 
-Először egy dokumentumgenerátort fogunk használni egy új dokumentum létrehozásához.
+Mielőtt belemerülnénk a kódba, néhány dologra lesz szüksége:
+
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha nem, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: Visual Studio vagy bármely más .NET-kompatibilis IDE.
+3. Alapvető C# ismerete: Kényelmesnek kell lennie a C# alapjaival, hogy könnyen követhesse.
+
+## Névterek importálása
+
+Az Aspose.Words projektben való használatához importálnia kell a szükséges névtereket. Ez olyan, mint az eszköztár beállítása a munka megkezdése előtt.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Bontsuk fel a kódot falatnyi lépésekre, és magyarázzuk el az egyes részeket. Kész? Essünk neki!
+
+## 1. lépés: Inicializálja a dokumentumot
+
+Először is létre kell hoznia egy új dokumentumot. Tekintse ezt úgy, mintha egy üres Word-dokumentumot nyitna meg a számítógépén.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: A rendezett listaformátum alkalmazása
+Itt egy új dokumentumot és egy DocumentBuilder objektumot inicializálunk. A DocumentBuilder olyan, mint a toll, amely lehetővé teszi, hogy tartalmat írjon a dokumentumba.
 
- A megrendelt listaformátumot a dokumentumkészítő segítségével alkalmazzuk`ApplyBulletDefault`módszer. A számozási formátumot is testreszabhatjuk, ha a listaszintekre lépünk, és beállítjuk a kívánt formátumot.
+## 2. lépés: Számozott lista formátum alkalmazása
+
+Most alkalmazzuk az alapértelmezett számozott listaformátumot. Ez olyan, mintha a Word-dokumentumot úgy állítaná be, hogy számozott pontokat használjon.
 
 ```csharp
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
+builder.ListFormat.ApplyNumberDefault();
 ```
 
-## 3. lépés: Elemek hozzáadása a listához
+Ez a kódsor beállítja a lista számozását. Könnyű, igaz?
 
- A listához tételeket a dokumentumgenerátor segítségével tudunk felvenni`Writeln` módszer.
+## 3. lépés: Listaelemek hozzáadása
 
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## 4. lépés: húzza be a listát
-
- A listát a dokumentumgenerátor segítségével behúzhatjuk`ListIndent` módszer.
+Ezután adjunk hozzá néhány elemet a listánkhoz. Képzeld el, hogy felírsz egy élelmiszerbolt-listát.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
-```
-
-## 5. lépés: A dokumentum mentése
-
-Végül elmenthetjük a dokumentumot a kívánt formátumban.
-
-### Példa forráskódra rendezett listához az Aspose.Words for .NET-hez
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+Ezekkel a sorokkal hozzáadja az első két elemet a listához.
+
+## 4. lépés: A lista behúzása
+
+Mi a teendő, ha alelemeket szeretne hozzáadni egy elemhez? Csináljuk meg!
+
+```csharp
 builder.ListFormat.ListIndent();
 
 builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Gratulálok ! Most megtanulta, hogyan kell használni a rendezett lista funkciót az Aspose.Words for .NET-hez.
+ A`ListIndent` metódus behúzza a listát, létrehozva egy allistát. Most egy hierarchikus listát hoz létre, hasonlóan egy beágyazott teendőlistához.
 
+## Következtetés
 
-### GYIK
+A Word-dokumentumban rendezett lista programozott létrehozása elsőre ijesztőnek tűnhet, de az Aspose.Words for .NET használatával gyerekjáték. Ezen egyszerű lépések követésével könnyedén hozzáadhat és kezelhet listákat a dokumentumokban. Akár jelentéseket készít, akár strukturált dokumentumokat hoz létre, vagy csak automatizálja a munkafolyamatokat, az Aspose.Words for .NET megoldást nyújt Önnek. Szóval minek várni? Kezdje el a kódolást, és nézze meg a varázslat kibontakozását!
 
-#### K: Hogyan lehet rendezett listát létrehozni a Markdownban?
+## GYIK
 
-V: Ha rendezett listát szeretne létrehozni a Markdown alkalmazásban, minden listaelemet kezdjen egy számmal, majd egy ponttal (`1.`, `2.`, `3.`), szóköz követi.
+### Testreszabhatom a lista számozási stílusát?  
+ Igen, testreszabhatja a számozási stílust a`ListFormat` tulajdonságait. Különféle számozási stílusokat állíthat be, például római számokat, betűket stb.
 
-#### K: Beágyazhatunk rendezett listákat a Markdownba?
+### Hogyan adhatok hozzá több behúzási szintet?  
+ Használhatja a`ListIndent` módszerrel többször is mélyebb szintű allisták létrehozásához. Minden hívás`ListIndent` hozzáad egy szint behúzást.
 
-V: Igen, lehetőség van rendezett listák egymásba ágyazására a Markdown alkalmazásban úgy, hogy minden beágyazott listaelem elé négy eltolási szóközt ad.
+### Keverhetem a felsorolásjeleket és a számozott listákat?  
+ Teljesen! Különböző listaformátumokat alkalmazhat ugyanazon a dokumentumon belül a`ListFormat` ingatlan.
 
-#### K: Hogyan lehet testreszabni a rendezett listák számozását?
+### Lehetséges a számozást egy korábbi listából folytatni?  
+Igen, folytathatja a számozást ugyanazzal a listaformátummal. Az Aspose.Words lehetővé teszi a listák számozásának szabályozását a különböző bekezdésekben.
 
-V: A szabványos Markdown esetén a rendezett listaszámozás automatikusan generálódik. Egyes Markdown szerkesztők azonban lehetővé teszik, hogy testre szabhassa bizonyos bővítmények segítségével.
-
-#### K: Támogatják a Markdown rendezett listái a behúzást?
-
-V: Igen, a Markdown-ban lévő rendezett listák támogatják a behúzást. Balra eltolást szóközök vagy tabulátorok használatával adhat hozzá.
-
-#### K: Hozzá lehet adni linkeket vagy szövegközi szöveget a listaelemekhez?
-
-V: Igen, a megfelelő Markdown szintaxis használatával linkeket vagy szövegközi szöveget is hozzáadhat a listaelemekhez.
+### Hogyan távolíthatom el a lista formátumát?  
+ A lista formátumot hívással távolíthatja el`ListFormat.RemoveNumbers()`. Ezzel a listaelemek normál bekezdésekké változnak.

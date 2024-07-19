@@ -9,7 +9,7 @@ url: /hu/net/basic-conversions/docx-to-txt/
 ---
 ## Bevezetés
 
-A DOCX fájlok TXT formátumba konvertálása alapvető fontosságú lehet különféle alkalmazásokhoz, például a tartalom kibontásának egyszerűsítéséhez vagy a dokumentumok átalakítása egyszerű szöveges elemzéshez. Az Aspose.Words for .NET segítségével ez a folyamat egyszerűsített és hatékony. Ebben az átfogó útmutatóban végigvezetjük az egyes lépéseken, biztosítva, hogy világosan megértse a folyamatot. Tehát merüljünk bele, és alakítsuk át ezeket a DOCX fájlokat könnyedén TXT-fájlokká!
+DOCX fájlok TXT formátumba konvertálása alapvető fontosságú lehet különféle alkalmazásokhoz, például a tartalom kibontásának egyszerűsítéséhez vagy a dokumentumok átalakítása egyszerű szöveges elemzéshez. Az Aspose.Words for .NET segítségével ez a folyamat egyszerűsített és hatékony. Ebben az átfogó útmutatóban végigvezetjük az egyes lépéseken, biztosítva, hogy világosan megértse a folyamatot. Tehát merüljünk bele, és alakítsuk át ezeket a DOCX fájlokat könnyedén TXT-fájlokká!
 
 ## Előfeltételek
 

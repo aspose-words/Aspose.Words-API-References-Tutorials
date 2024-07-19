@@ -106,4 +106,4 @@ Ya, pengaturan ini dapat diterapkan pada teks apa pun, tetapi pengaturan ini san
 Sangat! Anda dapat menelusuri kumpulan dokumen dan menerapkan pengaturan ini secara terprogram ke masing-masing dokumen.
 
 ### Bagaimana jika saya mengalami masalah atau memiliki pertanyaan?
-Jika Anda mengalami masalah atau memiliki pertanyaan lebih lanjut,[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) adalah tempat yang bagus untuk mencari bantuan.
+ Jika Anda mengalami masalah atau memiliki pertanyaan lebih lanjut,[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) adalah tempat yang bagus untuk mencari bantuan.

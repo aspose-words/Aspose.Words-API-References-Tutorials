@@ -83,7 +83,7 @@ shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 
 Dans cette étape, nous avons appliqué une texture croisée diagonale avec du corail clair comme couleur de fond et du saumon clair comme couleur de premier plan. C'est comme habiller votre paragraphe avec des vêtements de marque !
 
-## Étape 5 : ajouter du texte au paragraphe
+## Étape 5 : Ajouter du texte au paragraphe
 
 Qu'est-ce qu'un paragraphe sans texte ? Ajoutons un exemple de phrase pour voir notre formatage en action.
 

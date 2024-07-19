@@ -65,7 +65,7 @@ Chúng tôi đã thêm một dòng văn bản đơn giản mà chúng tôi sẽ 
 
 ## Bước 4: Thực hiện thao tác Tìm và Thay thế
 
-Đây là nơi hành động thực sự xảy ra. Chúng ta sẽ tìm từ "buồn" và thay thế nó bằng "tệ".
+Đây là nơi hành động thực sự xảy ra. Chúng ta sẽ tìm từ "buồn" và thay thế bằng "tệ".
 
 ```csharp
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));

@@ -99,7 +99,7 @@ break;
 
 Det är allt ! Du har framgångsrikt upptäckt formatet för olika dokumentfiler med Aspose.Words för .NET.
 
-### Exempel på källkod för filformatsdetektering med Aspose.Words för .NET
+### Exempel på källkod för detektering av filformat med Aspose.Words för .NET
 
 ```csharp
 

@@ -106,4 +106,4 @@ Ja, dessa inställningar kan tillämpas på vilken text som helst, men de är s�
 Absolut! Du kan gå igenom en samling dokument och tillämpa dessa inställningar programmatiskt på var och en.
 
 ### Vad händer om jag stöter på problem eller har frågor?
-Om du stöter på några problem eller har ytterligare frågor kan du[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) är ett bra ställe att söka hjälp.
+ Om du stöter på några problem eller har ytterligare frågor kan du[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) är ett bra ställe att söka hjälp.

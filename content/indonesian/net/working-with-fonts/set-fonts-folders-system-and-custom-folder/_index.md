@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara mengatur folder font sistem dan folder khusus saat merender dokumen menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah menentukan beberapa folder font, termasuk folder sistem dan folder khusus, untuk digunakan saat merender dokumen Anda. Aspose.Words menawarkan API yang kuat dan fleksibel untuk Pemrosesan Kata dengan font di dokumen Anda. Dengan pengetahuan ini, Anda dapat mengontrol dan menyesuaikan sumber font yang digunakan saat merender dokumen sesuai kebutuhan spesifik Anda.
+Dalam tutorial ini, kita mempelajari cara mengatur folder font sistem dan folder kustom saat merender dokumen menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah menentukan beberapa folder font, termasuk folder sistem dan folder khusus, untuk digunakan saat merender dokumen Anda. Aspose.Words menawarkan API yang kuat dan fleksibel untuk Pemrosesan Kata dengan font di dokumen Anda. Dengan pengetahuan ini, Anda dapat mengontrol dan menyesuaikan sumber font yang digunakan saat merender dokumen sesuai kebutuhan spesifik Anda.
 
 ### FAQ
 

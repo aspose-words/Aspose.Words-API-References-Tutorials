@@ -95,6 +95,6 @@ Vzhled polí formuláře můžete upravit, například upravit velikost a barvu 
     Ano, máte přístup k bezplatné zkušební verzi Aspose.Words for Java[tady](https://releases.aspose.com/).
 
 5. ### Kde mohu získat podporu pro Aspose.Words pro Java?
-    Pro podporu a pomoc navštivte[Fórum Aspose.Words](https://forum.aspose.com/).
+    Pro podporu a pomoc navštivte stránku[Fórum Aspose.Words](https://forum.aspose.com/).
 
 Začněte s Aspose.Words for Java a odemkněte potenciál vytváření dynamických a interaktivních dokumentů Word. Šťastné kódování!

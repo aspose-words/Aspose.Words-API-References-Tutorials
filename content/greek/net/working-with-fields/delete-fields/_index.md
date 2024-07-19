@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 Επαναλάβετε όλα τα πεδία του εγγράφου και αφαιρέστε τα:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 Αυτός ο βρόχος επαναλαμβάνεται προς τα πίσω μέσω της συλλογής πεδίων για να αποφευχθούν προβλήματα με την τροποποίηση της συλλογής κατά την επανάληψη.

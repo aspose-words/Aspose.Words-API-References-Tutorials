@@ -1,6 +1,6 @@
 ---
 title: Usando marcas d’água em documentos em Aspose.Words para Java
-linktitle: Usando marcas d’água em documentos
+linktitle: Usando marcas d'água em documentos
 second_title: API de processamento de documentos Java Aspose.Words
 description: Aprenda como adicionar marcas d'água a documentos em Aspose.Words for Java. Personalize marcas d'água de texto e imagem para obter documentos com aparência profissional.
 type: docs
@@ -41,7 +41,7 @@ options.setSemitransparent(false);
 // Defina o texto e as opções da marca d'água
 doc.getWatermark().setText("Test", options);
 
-// Salve o documento com a marca d’água
+// Salve o documento com a marca d'água
 doc.save("DocumentWithWatermark.docx");
 ```
 
@@ -67,7 +67,7 @@ watermark.setRelativeVerticalPosition(RelativeVerticalPosition.CENTER);
 // Adicione a marca d'água ao documento
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
-// Salve o documento com a marca d’água
+// Salve o documento com a marca d'água
 doc.save("DocumentWithImageWatermark.docx");
 ```
 
@@ -75,7 +75,7 @@ doc.save("DocumentWithImageWatermark.docx");
 
 Você pode personalizar marcas d'água ajustando sua aparência e posição. Para marcas d'água de texto, você pode alterar a fonte, o tamanho, a cor e o layout. Para marcas d'água de imagens, você pode modificar seu tamanho e posição conforme demonstrado nos exemplos anteriores.
 
-## Removendo marcas d'água
+## Removendo marcas d’água
 
 Para remover marcas d'água de um documento, você pode usar o seguinte código:
 
@@ -83,7 +83,7 @@ Para remover marcas d'água de um documento, você pode usar o seguinte código:
 //Crie uma instância de documento
 Document doc = new Document("DocumentWithWatermark.docx");
 
-// Remova a marca d'água
+// Remova a marca d’água
 for (Shape shape : doc.getShapes())
 {
     if (shape.getName().contains("Watermark"))

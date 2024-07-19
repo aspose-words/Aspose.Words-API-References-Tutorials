@@ -30,7 +30,7 @@ using Aspose.Words.Tables;
 
 ## Etapa 1: carregue seu documento
 
-primeiro passo é carregar o documento Word com o qual deseja trabalhar. Este documento conterá os marcadores que você precisa para desembaraçar.
+O primeiro passo é carregar o documento Word com o qual deseja trabalhar. Este documento conterá os marcadores que você precisa para desembaraçar.
 
 Passo 1 Título: Carregando o Documento
 
@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-Nesta etapa, estamos usando o`GetAncestor` método para encontrar a linha pai dos nós inicial e final do marcador. Isso nos ajuda a identificar as linhas exatas envolvidas.
+ Nesta etapa, estamos usando o`GetAncestor` método para encontrar a linha pai dos nós inicial e final do marcador. Isso nos ajuda a identificar as linhas exatas envolvidas.
 
 ## Etapa 4: verifique as linhas adjacentes
 
@@ -93,7 +93,7 @@ Passo 5 Título: Movendo o Fim do Marcador
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-Nesta etapa, estamos usando o`AppendChild`método para mover o nó final do marcador. Ao anexá-lo ao último parágrafo da última célula da linha superior, garantimos que o marcador seja desembaraçado corretamente.
+ Nesta etapa, estamos usando o`AppendChild` método para mover o nó final do marcador. Ao anexá-lo ao último parágrafo da última célula da linha superior, garantimos que o marcador seja desembaraçado corretamente.
 
 ## Conclusão
 

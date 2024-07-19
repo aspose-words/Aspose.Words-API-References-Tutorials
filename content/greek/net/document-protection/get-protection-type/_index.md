@@ -81,7 +81,7 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 Το Aspose.Words μπορεί να εντοπίσει διάφορους τύπους προστασίας, όπως NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments και AllowOnlyFormFields.
 
 ### Πώς μπορώ να λάβω υποστήριξη εάν αντιμετωπίσω προβλήματα;
- Για τυχόν προβλήματα, μπορείτε να επισκεφτείτε το[Φόρουμ υποστήριξης Aspose.Words](https://forum.aspose.com/c/words/8) για βοήθεια.
+ Για τυχόν προβλήματα, μπορείτε να επισκεφτείτε το[Φόρουμ υποστήριξης Aspose.Words](https://forum.aspose.com/c/words/8)για βοήθεια.
 
 ### Είναι το Aspose.Words συμβατό με .NET Core;
 Ναι, το Aspose.Words είναι συμβατό τόσο με .NET Framework όσο και με .NET Core.

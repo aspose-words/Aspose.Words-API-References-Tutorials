@@ -20,7 +20,7 @@ Belgeleri birleştirme ve karşılaştırma yeteneği çeşitli senaryolarda ço
 Bu eğitim serisi boyunca belge birleştirme ve karşılaştırmayla ilgili çok çeşitli konuları ele alacağız. Aşağıdaki konularda kapsamlı bir anlayış kazanacaksınız:
 
 - Belgeleri Birleştirme: Biçimlendirme ve düzen bütünlüğünü koruyarak birden çok belgeyi tek bir uyumlu dosyada sorunsuz bir şekilde nasıl birleştireceğinizi öğrenin.
-- Belgeleri Karşılaştırma: İki veya daha fazla belge arasındaki farkları belirleyip vurgulayarak etkili revizyon takibine olanak tanıyan teknikleri keşfedin.
+- Belgeleri Karşılaştırma: İki veya daha fazla belge arasındaki farkları tanımlayıp vurgulayan teknikleri keşfedin ve etkili revizyon takibine olanak sağlayın.
 - Karmaşık Belgeleri Yönetme: Belirli bölümleri birleştirmek, tablolar ve resimlerle ilgilenmek ve dipnotları ve son notları yönetmek gibi gelişmiş senaryoları keşfedin.
 - Otomasyon ve Özelleştirme: Belge işleme görevlerini nasıl otomatikleştireceğinizi öğrenin ve birleştirme ve karşılaştırma sürecini özel ihtiyaçlarınıza uyacak şekilde özelleştirin.
 - Python ve .NET Entegrasyonu: Farklı programlama tercihlerine sahip geliştiricilere hitap eden, hem Python hem de .NET ortamlarına yönelik örneklere ve kod parçacıklarına dalın.

@@ -59,14 +59,14 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 Voor elke bladwijzer moeten we de rijen vinden die het begin en het einde van de bladwijzer bevatten. Dit is van cruciaal belang om te bepalen of de bladwijzer zich over aangrenzende rijen uitstrekt.
 
-Stap 3 Kop: Rijen identificeren
+Stap 3 Kop: rijen identificeren
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-In deze stap gebruiken we de`GetAncestor` methode om de bovenliggende rij van zowel het begin- als het eindknooppunt van de bladwijzer te vinden. Dit helpt ons de exacte betrokken rijen te identificeren.
+ In deze stap gebruiken we de`GetAncestor` methode om de bovenliggende rij van zowel het begin- als het eindknooppunt van de bladwijzer te vinden. Dit helpt ons de exacte betrokken rijen te identificeren.
 
 ## Stap 4: Controleer op aangrenzende rijen
 
@@ -93,11 +93,11 @@ Stap 5 Kop: het bladwijzereinde verplaatsen
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-In deze stap gebruiken we de`AppendChild`methode om het eindknooppunt van de bladwijzer te verplaatsen. Door het toe te voegen aan de laatste alinea van de laatste cel van de bovenste rij, zorgen we ervoor dat de bladwijzer correct wordt ontward.
+ In deze stap gebruiken we de`AppendChild` methode om het eindknooppunt van de bladwijzer te verplaatsen. Door het toe te voegen aan de laatste alinea van de laatste cel van de bovenste rij, zorgen we ervoor dat de bladwijzer correct wordt ontward.
 
 ## Conclusie
 
-Het ontwarren van bladwijzers in een Word-document met Aspose.Words voor .NET kan lastig lijken, maar door het op te delen in beheersbare stappen wordt het proces veel duidelijker. We hebben het laden van een document doorlopen, de bladwijzers doorlopen, relevante rijen geïdentificeerd, gecontroleerd op aangrenzende bestanden en ten slotte het eindknooppunt van de bladwijzer verplaatst. Met deze handleiding zou u effectiever met bladwijzers in uw Word-documenten moeten kunnen omgaan.
+Het ontwarren van bladwijzers in een Word-document met Aspose.Words voor .NET kan lastig lijken, maar door het op te delen in beheersbare stappen wordt het proces veel duidelijker. We hebben het laden van een document doorlopen, de bladwijzers doorlopen, relevante rijen geïdentificeerd, gecontroleerd op aangrenzende bestanden en uiteindelijk het eindknooppunt van de bladwijzer verplaatst. Met deze handleiding zou u effectiever met bladwijzers in uw Word-documenten moeten kunnen omgaan.
 
 ## Veelgestelde vragen
 

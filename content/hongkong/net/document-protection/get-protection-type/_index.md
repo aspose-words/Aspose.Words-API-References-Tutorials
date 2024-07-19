@@ -84,4 +84,4 @@ Aspose.Words可以偵測各種保護類型，例如NoProtection、ReadOnly、All
 如有任何問題，您可以訪問[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8)求助。
 
 ### Aspose.Words 與 .NET Core 相容嗎？
-是的，Aspose.Words 與 .NET Framework 和 .NET Core 也相容。
+是的，Aspose.Words 與 .NET Framework 和 .NET Core 相容。

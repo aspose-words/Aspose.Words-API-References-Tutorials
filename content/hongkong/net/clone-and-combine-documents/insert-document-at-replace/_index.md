@@ -9,7 +9,7 @@ url: /zh-hant/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## 介紹
 
-嘿，文檔大師！您是否曾經發現自己陷入了程式碼困境，試圖找出如何將一個 Word 文件無縫插入到另一個文件中？別擔心，因為今天我們將深入了解 Aspose.Words for .NET 的世界，讓這項任務變得輕而易舉。我們將詳細介紹如何使用這個強大的程式庫在尋找和取代操作期間的特定點插入文件。準備好成為 Aspose.Words 嚮導了嗎？讓我們開始吧！
+嘿，文檔大師！您是否曾經發現自己陷入了程式碼困境，試圖找出如何將一個 Word 文件無縫插入到另一個文件中？不要害怕，因為今天我們將深入了解 Aspose.Words for .NET 的世界，讓這項任務變得輕而易舉。我們將詳細介紹如何使用這個強大的程式庫在尋找和取代操作期間的特定點插入文件。準備好成為 Aspose.Words 嚮導了嗎？讓我們開始吧！
 
 ## 先決條件
 
@@ -17,7 +17,7 @@ url: /zh-hant/net/clone-and-combine-documents/insert-document-at-replace/
 
 -  Visual Studio：確保您的電腦上安裝了 Visual Studio。如果您還沒有，您可以從以下位置下載[這裡](https://visualstudio.microsoft.com/).
 - Aspose.Words for .NET：您需要 Aspose.Words 函式庫。您可以從[阿斯普斯網站](https://releases.aspose.com/words/net/).
-- 基本 C# 知識：對 C# 和 .NET 的基本了解將幫助您遵循本教學。
+- 基本 C# 知識：對 C# 和 .NET 的基本了解將幫助您學習本教學。
 
 好吧，拋開這些，讓我們開始寫一些程式碼吧！
 

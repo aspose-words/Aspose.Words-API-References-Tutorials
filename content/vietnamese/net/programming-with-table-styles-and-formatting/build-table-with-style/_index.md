@@ -30,7 +30,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 ```
 
 ## Bước 4: Xác định kiểu dáng của bảng
@@ -51,7 +51,7 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
  Để tự động điều chỉnh kích thước của mảng dựa trên nội dung của nó, chúng ta sử dụng`AutoFit()` phương pháp với`AutoFitBehavior.AutoFitToContents` hành vi.
 
 ```csharp
-table. AutoFit(AutoFitBehavior.AutoFitToContents);
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Bước 7: Thêm nội dung vào ô
@@ -62,24 +62,24 @@ kg)" và dữ liệu tương ứng.
 ```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
-builder. InsertCell();
-builder. Writen("Quantity (kg)");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Apples");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("20");
-builder. EndRow();
-builder. InsertCell();
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Bananas");
-builder. InsertCell();
-builder. Writen("40");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("40");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Carrots");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("50");
-builder. EndRow();
+builder.EndRow();
 ```
 
 ## Bước 8: Lưu tài liệu đã sửa đổi
@@ -94,41 +94,41 @@ Xin chúc mừng! Bây giờ bạn đã xây dựng một bảng có kiểu tùy
 ### Mã nguồn mẫu cho Xây dựng bảng có kiểu bằng cách sử dụng Aspose.Words cho .NET 
 
 ```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	// Chúng ta phải chèn ít nhất một hàng trước khi thiết lập bất kỳ định dạng bảng nào.
-	builder.InsertCell();
-	// Đặt kiểu bảng được sử dụng dựa trên mã định danh kiểu duy nhất.
-	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	// Áp dụng những tính năng nào sẽ được định dạng theo kiểu.
-	table.StyleOptions =
-		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-	table.AutoFit(AutoFitBehavior.AutoFitToContents);
-	builder.Writeln("Item");
-	builder.CellFormat.RightPadding = 40;
-	builder.InsertCell();
-	builder.Writeln("Quantity (kg)");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Apples");
-	builder.InsertCell();
-	builder.Writeln("20");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Bananas");
-	builder.InsertCell();
-	builder.Writeln("40");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Carrots");
-	builder.InsertCell();
-	builder.Writeln("50");
-	builder.EndRow();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+// Chúng ta phải chèn ít nhất một hàng trước khi thiết lập bất kỳ định dạng bảng nào.
+builder.InsertCell();
+// Đặt kiểu bảng được sử dụng dựa trên mã định danh kiểu duy nhất.
+table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
+// Áp dụng những tính năng nào sẽ được định dạng theo kiểu.
+table.StyleOptions =
+	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
+builder.Writeln("Item");
+builder.CellFormat.RightPadding = 40;
+builder.InsertCell();
+builder.Writeln("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Apples");
+builder.InsertCell();
+builder.Writeln("20");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Bananas");
+builder.InsertCell();
+builder.Writeln("40");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Carrots");
+builder.InsertCell();
+builder.Writeln("50");
+builder.EndRow();
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## Phần kết luận

@@ -80,7 +80,7 @@ doc.Unprotect("newPassword");
 
  In de bovenstaande code voegen we eerst een nieuwe beveiliging toe met het wachtwoord`"newPassword"`en verwijder het vervolgens onmiddellijk met hetzelfde wachtwoord.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Vergeet ten slotte niet om, nadat u alle noodzakelijke wijzigingen heeft aangebracht, uw document op te slaan. Hier is de code om het document op te slaan:
 

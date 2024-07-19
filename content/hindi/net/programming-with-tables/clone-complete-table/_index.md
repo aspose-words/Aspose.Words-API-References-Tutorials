@@ -37,7 +37,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 // सरणी को क्लोन करें
 Table tableClone = (Table)table.Clone(true);
 
-//मूल तालिका के बाद दस्तावेज़ में क्लोन की गई तालिका डालें
+// मूल तालिका के बाद दस्तावेज़ में क्लोन की गई तालिका डालें
 table.ParentNode.InsertAfter(tableClone, table);
 
 // दो तालिकाओं के बीच एक खाली पैराग्राफ डालें
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 	// तालिका को क्लोन करें और उसे मूल के बाद दस्तावेज़ में डालें।
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// दो तालिकाओं के बीच एक खाली पैराग्राफ डालें,
+	//दो तालिकाओं के बीच एक खाली पैराग्राफ डालें,
 	// या फिर वे सहेजने पर एक में संयुक्त हो जाएंगे, इसका दस्तावेज़ सत्यापन से संबंध है।
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

@@ -2,17 +2,37 @@
 title: 영상
 linktitle: 영상
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words 단계별 가이드를 통해 이미지를 삽입하고 사용자 정의하는 방법을 알아보세요.
+description: 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 문서에 이미지를 추가하는 방법을 알아보세요. 즉시 시각적 요소로 문서를 개선하세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-markdown/image/
 ---
+## 소개
 
-이 예에서는 Aspose.Words for .NET에서 이미지 기능을 사용하는 방법을 설명합니다. 그림을 사용하면 그림과 그래픽을 문서에 삽입할 수 있습니다.
+.NET용 Aspose.Words의 세계로 뛰어들 준비가 되셨습니까? 오늘은 문서에 이미지를 추가하는 방법을 살펴보겠습니다. 보고서, 브로셔 또는 간단한 문서를 작성하는 경우 이미지를 추가하면 큰 차이를 만들 수 있습니다. 자, 시작해 봅시다!
 
-## 1단계: 문서 생성기 사용
+## 전제조건
 
-먼저 문서 생성기를 사용하여 문서에 콘텐츠를 추가하겠습니다.
+코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
+
+1.  .NET용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio와 같은 모든 .NET 개발 환경.
+3. C#의 기본 지식: C#에 익숙하다면 이제 시작하세요!
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져오겠습니다. 이는 Aspose.Words 클래스 및 메소드에 액세스하는 데 필수적입니다.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+이제 프로세스를 간단한 단계로 나누어 보겠습니다. 각 단계에는 제목과 자세한 설명이 있어 원활하게 따라갈 수 있습니다.
+
+## 1단계: DocumentBuilder 초기화
+
+ 시작하려면`DocumentBuilder` 물체. 이 개체는 문서에 콘텐츠를 추가하는 데 도움이 됩니다.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
@@ -20,57 +40,39 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2단계: 이미지 삽입
 
- 다음을 사용하여 이미지를 삽입할 수 있습니다.`Shape` 클래스를 지정하고 이미지 유형을 지정합니다.`ShapeType.Image` . 또한 이미지의 랩 유형을 다음과 같이 설정했습니다.`WrapType.Inline`.
+다음으로 문서에 이미지를 삽입해 보겠습니다. 방법은 다음과 같습니다.
 
 ```csharp
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape. WrapType = WrapType. Inline;
+Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
-## 3단계: 이미지 사용자 정의
+ 바꾸다`"path_to_your_image.jpg"` 이미지 파일의 실제 경로를 사용하세요. 그만큼`InsertImage` 메소드는 문서에 이미지를 추가합니다.
 
- 예를 들어 전체 경로를 지정하여 이미지를 사용자 정의합니다.`"/attachment/1456/pic001.png"`, 이미지에 제목을 추가합니다.
+## 3단계: 이미지 속성 설정
+
+이미지에 대한 다양한 속성을 설정할 수 있습니다. 예를 들어 이미지 제목을 설정해 보겠습니다.
 
 ```csharp
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "Title";
+shape.ImageData.Title = "Your Image Title";
 ```
 
-### .NET용 Aspose.Words가 포함된 이미지의 소스 코드 예
+## 결론
 
-```csharp
-// 문서 빌더를 사용하여 문서에 콘텐츠를 추가합니다.
-DocumentBuilder builder = new DocumentBuilder();
+문서에 이미지를 추가하면 시각적 매력과 효율성이 크게 향상될 수 있습니다. .NET용 Aspose.Words를 사용하면 이 프로세스가 간단하고 효율적이 됩니다. 위에 설명된 단계를 따르면 이미지를 문서에 쉽게 통합하고 문서 작성 기술을 한 단계 더 발전시킬 수 있습니다.
 
-// 이미지를 삽입하세요.
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape.WrapType = WrapType.Inline;
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "title";
-builder.InsertNode(shape);
-```
+## FAQ
 
-축하합니다! 이제 Aspose.Words for .NET에서 이미지 기능을 사용하는 방법을 배웠습니다.
+### 단일 문서에 여러 이미지를 추가할 수 있나요?  
+ 예, 다음 단계를 반복하여 원하는 만큼 이미지를 추가할 수 있습니다.`InsertImage` 각 이미지에 대한 방법입니다.
 
+### .NET용 Aspose.Words는 어떤 이미지 형식을 지원합니까?  
+Aspose.Words는 JPEG, PNG, BMP, GIF 등을 포함한 다양한 이미지 형식을 지원합니다.
 
-### FAQ
+### 문서 내의 이미지 크기를 조정할 수 있나요?  
+ 전적으로! 높이와 너비 속성을 설정할 수 있습니다.`Shape` 이미지 크기를 조정하는 개체입니다.
 
-#### Q: 로컬 파일의 이미지를 Aspose.Words에 어떻게 삽입할 수 있나요?
+### URL에서 이미지를 추가할 수 있나요?  
+ 예, URL을 제공하여 URL에서 이미지를 추가할 수 있습니다.`InsertImage` 방법.
 
- A: 로컬 파일의 이미지를 Aspose.Words에 삽입하려면 다음을 사용할 수 있습니다.`Shape` 수업과`InsertImage` 방법.
-
-#### Q: Aspose.Words의 URL에서 이미지를 삽입할 수 있나요?
-
- A: 예, Aspose.Words의 URL에서 이미지를 삽입할 수 있습니다. 당신은 같은 것을 사용할 수 있습니다`InsertImage`메서드를 사용하고 로컬 파일 경로 대신 이미지 URL을 지정하세요.
-
-#### Q: Aspose.Words에서 이미지 크기를 어떻게 조정할 수 있나요?
-
- A: Aspose.Words에서 이미지 크기를 조정하려면`Width`그리고`Height` 의 속성`Shape` 물체.
-
-#### Q: Aspose.Words의 이미지에 필터를 적용할 수 있나요?
-
- A: 예, Aspose.Words의 이미지에 필터를 적용할 수 있습니다. 예를 들어 다음을 사용하여 이미지에 흐림 필터를 적용할 수 있습니다.`ApplyGaussianBlur` 의 방법`Shape` 물체.
-
-#### Q: Aspose.Words에서 한 이미지를 다른 이미지로 바꾸려면 어떻게 해야 합니까?
-
- A: Aspose.Words에서 한 이미지를 다른 이미지로 바꾸려면 다음을 사용할 수 있습니다.`Replace` 의 방법`Shape` 수업. 이 메소드는 매개변수로`Shape` 교체할 이미지의 객체와`Shape` 새로운 이미지의 대상.
+### .NET용 Aspose.Words의 무료 평가판을 받으려면 어떻게 해야 합니까?  
+ 다음에서 무료 평가판을 받을 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).

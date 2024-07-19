@@ -98,7 +98,7 @@ Werk de inhoudsopgave bij om de documentstructuur weer te geven:
 doc.UpdateFields();
 ```
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Sla ten slotte uw document op in een opgegeven map:
 
@@ -127,4 +127,4 @@ Aspose.Words ondersteunt het genereren van meerdere inhoudsopgaven met verschill
 Ja, Aspose.Words garandeert compatibiliteit met verschillende versies van Microsoft Word-formaten.
 
 ### Waar kan ik meer hulp en ondersteuning vinden voor Aspose.Words?
-Voor meer hulp kunt u terecht op de[Aspose.Words-forum](https://forum.aspose.com/c/words/8) of bekijk de[officiële documentatie](https://reference.aspose.com/words/net/).
+ Voor meer hulp kunt u terecht op de[Aspose.Words-forum](https://forum.aspose.com/c/words/8) of bekijk de[officiële documentatie](https://reference.aspose.com/words/net/).

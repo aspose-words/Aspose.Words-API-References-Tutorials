@@ -17,7 +17,7 @@ Word 문서로 작업할 때 두 문서가 동일한지 확인하는 것은 중�
 
 1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 아직 갖고 있지 않다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
 2. 개발 환경: .NET 개발 환경이 설정되어 있는지 확인하세요. Visual Studio를 적극 권장합니다.
-3. 샘플 문서: 비교할 두 개의 Word 문서를 준비하십시오.
+3. 샘플 문서: 비교할 두 개의 Word 문서를 준비하세요.
 
 ## 네임스페이스 가져오기
 
@@ -81,7 +81,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 예, Aspose.Words for .NET은 다양한 형식의 문서 비교를 지원합니다.
 
 ### 문서에 변경 내용이 추적되면 어떻게 되나요?
-Aspose.Words for .NET은 비교 프로세스에 추적된 변경 사항을 포함하므로 모든 차이점을 확인할 수 있습니다.
+Aspose.Words for .NET은 비교 프로세스에 추적된 변경 사항을 포함하므로 모든 차이점을 볼 수 있습니다.
 
 ### 서식 지정과 같은 특정 유형의 변경 사항을 무시할 수 있습니까?
 예, 특정 유형의 변경 사항을 무시하도록 비교 옵션을 사용자 정의할 수 있습니다.

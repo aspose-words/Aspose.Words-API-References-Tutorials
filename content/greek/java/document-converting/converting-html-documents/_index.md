@@ -50,7 +50,7 @@ String htmlContent = "<p>This is an example HTML content.</p>";
 builder.insertHtml(htmlContent);
 ```
 
-## Βήμα 4: Αποθήκευση ως έγγραφο Word
+## Βήμα 4: Αποθήκευση ως έγγραφο του Word
 
 Τώρα που έχετε φορτώσει το περιεχόμενο HTML, μπορείτε να το αποθηκεύσετε ως έγγραφο του Word. Επιλέξτε την επιθυμητή μορφή εξόδου, όπως το DOCX.
 

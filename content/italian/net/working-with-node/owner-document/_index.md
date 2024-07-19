@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## Passaggio 4: controlla il nodo principale e il documento proprietario
- Ora che abbiamo creato il nodo del paragrafo, possiamo verificare se ha un nodo genitore e se il documento proprietario è lo stesso di`doc`.
+Ora che abbiamo creato il nodo del paragrafo, possiamo verificare se ha un nodo genitore e se il documento proprietario è lo stesso di`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ R: Nella maggior parte dei casi, il proprietario del documento di un nodo viene 
 
 #### D: Come accedere ai nodi di un documento proprietario?
 
- R: Per accedere ai nodi in un documento proprietario, puoi utilizzare i metodi e le proprietà forniti dall'API XML utilizzata nel tuo ambiente Node.js. Ad esempio, puoi utilizzare metodi come`getElementsByTagName` O`querySelector` per selezionare nodi specifici nel documento.
+R: Per accedere ai nodi in un documento proprietario, puoi utilizzare i metodi e le proprietà forniti dall'API XML utilizzata nel tuo ambiente Node.js. Ad esempio, puoi utilizzare metodi come`getElementsByTagName` O`querySelector` per selezionare nodi specifici nel documento.

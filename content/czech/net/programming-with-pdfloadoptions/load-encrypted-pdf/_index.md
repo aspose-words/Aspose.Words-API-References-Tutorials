@@ -19,7 +19,7 @@ Funkce Load Encrypted PDF Aspose.Words for .NET umožňuje načítat soubory PDF
 Prvním krokem je načtení zašifrovaného dokumentu PDF do vaší aplikace. Jak na to:
 
 ```csharp
-// Cesta k adresáři dokumentů.
+//Cesta k adresáři dokumentů.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

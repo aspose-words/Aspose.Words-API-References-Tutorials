@@ -46,11 +46,11 @@ Gratulálok ! Most megtanulta, hogyan kell használni a dőlt szöveg funkciót 
 
 #### K: Hogyan tudom dőlt betűvel írni az Aspose.Words szöveget?
 
-V: Az Aspose.Words szöveg dőlt betűzéséhez használhatja a`Font.Italic` tulajdona a`Run`tárgy. Beállíthatja ezt a tulajdonságot`true` adott szöveg dőlt betűzésére. Például használhatja`run.Font.Italic=true` a szövegben található szöveg dőlt betűssé tételéhez`Run` tárgy.
+ V: Az Aspose.Words szöveg dőlt betűzéséhez használhatja a`Font.Italic` tulajdona a`Run`tárgy. Beállíthatja ezt a tulajdonságot`true` adott szöveg dőlt betűzésére. Például használhatja`run.Font.Italic=true` a szövegben található szöveg dőlt betűssé tételéhez`Run` tárgy.
 
 #### K: Lehetséges-e ugyanabban a bekezdésben több szövegrészt dőlt betűvel szedni?
 
- V: Igen, több szöveget is dőlt betűvel írhat egyetlen bekezdésben a többszörös használatával`Run` tárgyakat. Többet is létrehozhat`Run` objektumok és állítsa be a`Font.Italic`tulajdonát`true` hogy minden objektum dőlt betűvel szedje a kívánt szövegrészeket. Ezután hozzáadhatja őket a bekezdéshez a`Paragraph.AppendChild(run)` módszer.
+ V: Igen, több szöveget is dőlt betűvel írhat egyetlen bekezdésben a többszörös használatával`Run` tárgyakat. Többet is létrehozhat`Run` objektumok és állítsa be a`Font.Italic`tulajdonát`true`hogy minden objektum dőlt betűvel szedje a kívánt szövegrészeket. Ezután hozzáadhatja őket a bekezdéshez a`Paragraph.AppendChild(run)` módszer.
 
 #### K: Dönthetek-e olyan szöveget, amely az Aspose.Words táblázatában vagy cellájában található?
 

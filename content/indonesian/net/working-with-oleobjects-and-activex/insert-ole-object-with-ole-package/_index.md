@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Langkah 3: Masukkan objek OLE dengan paket OLE
- Gunakan Pembuat Dokumen`InsertOleObject` metode untuk menyisipkan objek OLE dengan paket OLE ke dalam dokumen. Tentukan aliran data, tipe objek, opsi tampilan, dan pengaturan lain yang diperlukan.
+ Gunakan Pembuat Dokumen`InsertOleObject`metode untuk menyisipkan objek OLE dengan paket OLE ke dalam dokumen. Tentukan aliran data, tipe objek, opsi tampilan, dan pengaturan lain yang diperlukan.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### T: Bagaimana cara menyisipkan objek OLE dengan paket OLE ke dalam dokumen?
 
- J: Gunakan`InsertOleObject`metode pembuat dokumen (`DocumentBuilder`) untuk menyisipkan objek OLE dengan paket OLE ke dalam dokumen. Tentukan aliran data, tipe objek, opsi tampilan, dan pengaturan lain yang diperlukan. Berikut ini contohnya:
+ J: Gunakan`InsertOleObject` metode pembuat dokumen (`DocumentBuilder`) untuk menyisipkan objek OLE dengan paket OLE ke dalam dokumen. Tentukan aliran data, tipe objek, opsi tampilan, dan pengaturan lain yang diperlukan. Berikut ini contohnya:
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### Q: Bagaimana cara menyimpan dokumen?
 
- J: Gunakan dokumen tersebut`Save` metode untuk menyimpan dokumen ke file. Berikut ini contohnya:
+ J: Gunakan dokumen tersebut`Save`metode untuk menyimpan dokumen ke file. Berikut ini contohnya:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

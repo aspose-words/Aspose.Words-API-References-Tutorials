@@ -58,7 +58,7 @@ Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 
 ```csharp
 //指定如果源文档和目标文档中的编号发生冲突，
-//则将使用源文档的编号。
+//那么将使用源文档的编号。
 ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 

@@ -14,12 +14,12 @@ Tutorial menjelaskan cara menyesuaikan opsi pemuatan dokumen. Anda akan mempelaj
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Optimalkan Untuk Ms Word](./optimize-for-ms-word/) | Panduan langkah demi langkah untuk mengoptimalkan dokumen untuk MS Word dengan Aspose.Words untuk .NET. |
-| [Tampilkan Kesalahan Tata Bahasa dan Ejaan](./show-grammatical-and-spelling-errors/) | Panduan langkah demi langkah untuk mengaktifkan tampilan kesalahan tata bahasa dan ejaan dalam dokumen dengan Aspose.Words untuk .NET. |
-| [Bersihkan Gaya dan Daftar yang Tidak Digunakan](./cleanup-unused-styles-and-lists/) | Panduan langkah demi langkah untuk membersihkan gaya dan daftar yang tidak digunakan dalam dokumen dengan Aspose.Words untuk .NET. |
-| [Gaya Duplikat Pembersihan](./cleanup-duplicate-style/) | Panduan langkah demi langkah untuk membersihkan gaya duplikat dalam dokumen menggunakan Aspose.Words untuk .NET. Kode sumber lengkap disertakan. |
-| [Lihat Opsi](./view-options/) | Panduan langkah demi langkah untuk mengonfigurasi opsi tampilan dokumen dengan Aspose.Words untuk .NET. |
-| [Pengaturan Halaman Dokumen](./document-page-setup/) | Panduan langkah demi langkah untuk menyiapkan tata letak dokumen dengan Aspose.Words untuk .NET. |
-| [Tambahkan Bahasa Jepang Sebagai Bahasa Pengeditan](./add-japanese-as-editing-languages/) | Panduan langkah demi langkah untuk menambahkan bahasa Jepang sebagai bahasa pengeditan dengan Aspose.Words untuk .NET. |
-| [Tetapkan Bahasa Rusia Sebagai Bahasa Pengeditan Default](./set-russian-as-default-editing-language/) | Panduan langkah demi langkah untuk menyetel bahasa Rusia sebagai bahasa pengeditan default dokumen dengan Aspose.Words untuk .NET. |
-| [Atur Pengaturan Halaman dan Pemformatan Bagian](./set-page-setup-and-section-formatting/) | Panduan langkah demi langkah untuk menyiapkan tata letak dokumen dan pemformatan bagian dengan Aspose.Words untuk .NET. |
+| [Optimalkan Untuk Ms Word](./optimize-for-ms-word/) | Optimalkan dokumen tata bahasa Word dengan mudah untuk berbagai versi MS Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. |
+| [Tampilkan Kesalahan Tata Bahasa dan Ejaan](./show-grammatical-and-spelling-errors/) | Pelajari cara menampilkan kesalahan tata bahasa dan ejaan dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial komprehensif ini. |
+| [Bersihkan Gaya dan Daftar yang Tidak Digunakan](./cleanup-unused-styles-and-lists/) | Bersihkan dokumen Word Anda dengan Aspose.Words untuk .NET dengan menghapus gaya dan daftar yang tidak digunakan. Ikuti panduan langkah demi langkah ini untuk menyederhanakan dokumen Anda dengan mudah. |
+| [Gaya Duplikat Pembersihan](./cleanup-duplicate-style/) | Pelajari cara membersihkan gaya duplikat di dokumen Word Anda menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah komprehensif kami. |
+| [Lihat Opsi](./view-options/) | Pelajari cara melihat opsi di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan ini mencakup pengaturan jenis tampilan, penyesuaian tingkat zoom, dan penyimpanan dokumen Anda. |
+| [Pengaturan Halaman Dokumen](./document-page-setup/) | Penyiapan halaman dokumen master dengan Aspose.Words untuk .NET dalam langkah mudah. Pelajari cara memuat, mengatur tata letak, menentukan karakter per baris, baris per halaman, dan menyimpan dokumen Anda. |
+| [Tambahkan Bahasa Jepang Sebagai Bahasa Pengeditan](./add-japanese-as-editing-languages/) | Pelajari cara menambahkan bahasa Jepang sebagai bahasa pengeditan di dokumen Anda menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. |
+| [Tetapkan Bahasa Rusia Sebagai Bahasa Pengeditan Default](./set-russian-as-default-editing-language/) | Pelajari cara mengatur bahasa Rusia sebagai bahasa pengeditan default di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk instruksi terperinci. |
+| [Atur Pengaturan Halaman dan Pemformatan Bagian](./set-page-setup-and-section-formatting/) | Pelajari cara mengatur pengaturan halaman dan pemformatan bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurnakan presentasi dokumen Anda dengan mudah. |

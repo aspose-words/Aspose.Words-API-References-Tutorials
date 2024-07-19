@@ -62,7 +62,7 @@ In deze zelfstudie hebben we geleerd hoe u het standaardlettertype kunt opgeven 
 
 #### Vraag: Hoe kan ik een standaardlettertype opgeven bij het converteren naar PDF in Aspose.Words?
 
- A: Om een standaardlettertype op te geven bij het converteren naar PDF in Aspose.Words, kunt u de`PdfOptions` klasse en stel de`DefaultFontName`eigenschap toe aan de naam van het gewenste lettertype.
+ A: Om een standaardlettertype op te geven bij het converteren naar PDF in Aspose.Words, kunt u de`PdfOptions` klasse en stel de`DefaultFontName` eigenschap toe aan de naam van het gewenste lettertype.
 
 #### Vraag: Wat moet ik doen als het standaardlettertype niet beschikbaar is bij het converteren naar PDF?
 
@@ -74,7 +74,7 @@ A: Ja, u kunt een standaardlettertype opgeven voor andere uitvoerformaten, zoals
 
 #### Vraag: Hoe kan ik het standaardlettertype controleren dat is opgegeven in Aspose.Words?
 
- A: Om het standaardlettertype dat is opgegeven in Aspose.Words te controleren, kunt u de`DefaultFontName` eigendom van de`PdfOptions` class en haal de naam op van het geconfigureerde lettertype.
+ A: Om het standaardlettertype dat is opgegeven in Aspose.Words te controleren, kunt u de`DefaultFontName` eigendom van de`PdfOptions` class en haal de naam van het geconfigureerde lettertype op.
 
 #### Vraag: Is het mogelijk om voor elke sectie van het document een ander standaardlettertype op te geven?
 

@@ -118,7 +118,7 @@ Aspose.Words for .NET 是一个功能强大的库，允许开发人员以编程�
 是的，Aspose.Words for .NET 需要许可证才能使用全部功能。您可以获得[临时执照](https://purchase.aspose.com/temporary-license/)进行评估。
 
 ### 我可以自动完成这个过程吗？  
-绝对可以！所描述的方法可以合并到更大的应用程序中，以自动执行文档处理任务。
+当然！所描述的方法可以合并到更大的应用程序中，以自动执行文档处理任务。
 
 ### 我可以在哪里找到更多资源和支持？  
 欲了解更多信息，您可以查看[文档](https://reference.aspose.com/words/net/)或访问[支持论坛](https://forum.aspose.com/c/words/8)寻求帮助。

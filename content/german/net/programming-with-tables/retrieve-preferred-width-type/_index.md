@@ -37,7 +37,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 // Automatische Tischanpassung aktivieren
 table. AllowAutoFit = true;
 
-//Abrufen der ersten Zelle der ersten Zeile
+// Abrufen der ersten Zelle der ersten Zeile
 Cell firstCell = table.FirstRow.FirstCell;
 
 // Abrufen des bevorzugten Breitentyps und seines Wertes
@@ -45,7 +45,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
- Hier verwenden wir das Dokument, um die erste Tabelle abzurufen. Anschließend aktivieren wir die automatische Tabellenanpassung mit dem`AllowAutoFit` Eigenschaft. Dann holen wir uns die erste Zelle der ersten Zeile der Tabelle. Aus dieser Zelle können wir den bevorzugten Breitentyp mit dem`PreferredWidth.Type` Eigentum und dessen Wert mit der`PreferredWidth.Value` Eigentum.
+Hier verwenden wir das Dokument, um die erste Tabelle abzurufen. Anschließend aktivieren wir die automatische Tabellenanpassung mit dem`AllowAutoFit` Eigenschaft. Dann holen wir uns die erste Zelle der ersten Zeile der Tabelle. Aus dieser Zelle können wir den bevorzugten Breitentyp mit dem`PreferredWidth.Type` Eigentum und dessen Wert mit der`PreferredWidth.Value` Eigentum.
 
 ### Beispielquellcode zum Abrufen des bevorzugten Breitentyps mit Aspose.Words für .NET 
 

@@ -84,7 +84,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 #### Aspose.Words for .NET 的哪些其他功能可以與數位簽章偵測結合使用？
 
- Aspose.Words for .NET 提供了多種用於處理和操作 Word 文件的功能。除了檢測數位簽章之外，您還可以使用該庫從文件中提取文字、圖像或元資料、應用程式格式變更、合併文件、將文件轉換為不同的格式等等。您可以探索[Aspose.Words for .NET API 參考](https://reference.aspose.com/words/net/)發現所有可用的功能並找到最適合您需求的功能。
+ Aspose.Words for .NET 提供了多種用於處理和操作 Word 文件的功能。除了偵測數位簽章之外，您還可以使用該程式庫從文件中提取文字、影像或元資料、應用程式格式變更、合併文件、將文件轉換為不同的格式等等。您可以探索[Aspose.Words for .NET API 參考](https://reference.aspose.com/words/net/)發現所有可用的功能並找到最適合您需求的功能。
 
 #### 使用 Aspose.Words for .NET 偵測數位簽章有哪些限制？
 

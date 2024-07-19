@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://voorbeeld.com/resources"
 
  Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions` en stelt de volgende opties in:
 
-- `CssStyleSheetType` ingesteld op`CssStyleSheetType.External`om het CSS-stijlblad naar een extern bestand te exporteren.
+- `CssStyleSheetType` ingesteld op`CssStyleSheetType.External` om het CSS-stijlblad naar een extern bestand te exporteren.
 - `ExportFontResources` ingesteld op`true` om lettertypebronnen te exporteren.
 - `ResourceFolder` specificeert de doelmap waar de bronnen worden opgeslagen.
-- `ResourceFolderAlias` specificeert de URL-alias die wordt gebruikt om toegang te krijgen tot bronnen.
+- `ResourceFolderAlias`specificeert de URL-alias die wordt gebruikt om toegang te krijgen tot bronnen.
 
 ## Stap 4: Het document converteren en opslaan naar HTML
 

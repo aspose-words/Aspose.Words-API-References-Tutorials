@@ -48,7 +48,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 ```
 
-출력 문서의 올바른 경로와 파일 이름을 지정했는지 확인하십시오.
+출력 문서에 대한 올바른 경로와 파일 이름을 지정했는지 확인하십시오.
 
 ### .NET용 Aspose.Words를 사용하여 내용에 표 자동 맞춤의 샘플 소스 코드 
 

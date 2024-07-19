@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 次に、差し込みフィールドを挿入するドキュメント内の特定の段落にカーソルを移動する必要があります。
 
 ```csharp
-//カーソルを段落に移動します。
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## ステップ6: 差し込みフィールドを挿入する

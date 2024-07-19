@@ -1,5 +1,5 @@
 ---
-title: Διαχείριση εγγράφων | Aspose.Words Python Document Processing API
+title: Διαχείριση Εγγράφων | Aspose.Words Python Document Processing API
 linktitle: Aspose.Words for Python Tutorials
 type: docs
 weight: 12

@@ -138,7 +138,7 @@ pip install aspose-words
 
 ### Állíthatom dinamikusan az oszlopszélességet?
 
-Igen, kiszámíthatja a rendelkezésre álló területet, és ennek megfelelően módosíthatja az oszlopszélességeket az adaptív kialakítás érdekében.
+Igen, kiszámíthatja a rendelkezésre álló területet, és ennek megfelelően beállíthatja az oszlopszélességet az adaptív kialakítás érdekében.
 
 ### Alkalmas az Aspose.Words egyéb dokumentumkezelésre?
 

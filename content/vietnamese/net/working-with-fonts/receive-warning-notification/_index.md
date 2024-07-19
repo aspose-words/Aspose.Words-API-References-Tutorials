@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Bước 3: Cập nhật bố cục trang
-
- Gọi`UpdatePageLayout`phương pháp. Thao tác này sẽ hiển thị tài liệu trong bộ nhớ và ghi lại mọi cảnh báo xảy ra trong quá trình hiển thị.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Bước 4: Thiết lập cuộc gọi lại cảnh báo
+## Bước 3: Thiết lập cuộc gọi lại cảnh báo
 
  Để nắm bắt và xử lý các cảnh báo, hãy tạo một lớp thực hiện`IWarningCallback` giao diện. Lớp này sẽ ghi lại mọi cảnh báo xảy ra trong quá trình xử lý tài liệu.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Chúng tôi chỉ quan tâm đến phông chữ được thay thế.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Bước 5: Gán lệnh gọi lại cho tài liệu
+## Bước 4: Gán lệnh gọi lại cho tài liệu
 
 Gán lệnh gọi lại cảnh báo cho tài liệu. Điều này đảm bảo rằng mọi vấn đề về phông chữ đều được ghi lại và ghi lại.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Bước 5: Cập nhật bố cục trang
+
+ Gọi`UpdatePageLayout` phương pháp. Thao tác này sẽ hiển thị tài liệu trong bộ nhớ và ghi lại mọi cảnh báo xảy ra trong quá trình hiển thị.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Bước 6: Lưu tài liệu

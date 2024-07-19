@@ -11,7 +11,7 @@ Saat Memproses Kata dengan dokumen Word dalam aplikasi C#, mungkin perlu menentu
 
 ## Memahami perpustakaan Aspose.Words
 
-Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan yang kuat untuk membuat, mengedit, mengonversi, dan melindungi dokumen Word di berbagai platform termasuk .NET. Ia menawarkan banyak fitur untuk memanipulasi dokumen, seperti menyisipkan teks, mengubah format, menambahkan bagian, dan banyak lagi.
+Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan yang kuat untuk membuat, mengedit, mengonversi, dan melindungi dokumen Word di berbagai platform termasuk .NET. Ia menawarkan banyak fitur untuk memanipulasi dokumen, seperti menyisipkan teks, mengubah format, menambahkan bagian, dan banyak lagi.
 
 ## Mengonfigurasi Opsi Pemuatan
 
@@ -64,14 +64,14 @@ Menentukan versi MS Word memastikan bahwa dokumen dimuat dan diproses dengan ben
 
 J: Aspose.Words untuk .NET mendukung berbagai versi MS Word, termasuk Word 97, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016, Word 2019, dan banyak lagi.
 
-#### T: Dapatkah saya memuat dokumen dengan versi MS Word yang berbeda dengan yang terinstal di sistem saya?
+#### T: Bisakah saya memuat dokumen dengan versi MS Word yang berbeda dengan yang terinstal di sistem saya?
 
 J: Ya, Aspose.Words memungkinkan Anda menentukan versi MS Word yang berbeda saat memuat dokumen, memastikan kompatibilitas meskipun sistem target memiliki versi MS Word yang berbeda.
 
 #### T: Apa manfaat pengaturan versi MS Word untuk aplikasi C# saya?
 
-J: Mengatur versi MS Word memastikan bahwa dokumen diproses sesuai dengan format dan fitur yang diinginkan dari versi spesifik tersebut, sehingga memberikan keluaran yang konsisten.
+J: Mengatur versi MS Word memastikan bahwa dokumen diproses sesuai dengan format yang diinginkan dan fitur versi spesifik tersebut, sehingga memberikan keluaran yang konsisten.
 
-#### T: Apakah Aspose.Words terbatas pada penanganan dokumen DOCX saja?
+#### T: Apakah Aspose.Words terbatas hanya menangani dokumen DOCX saja?
 
 J: Tidak, Aspose.Words mendukung berbagai format dokumen, termasuk DOC, RTF, HTML, PDF, dan banyak lagi, menjadikannya alat serbaguna untuk menangani berbagai jenis dokumen.

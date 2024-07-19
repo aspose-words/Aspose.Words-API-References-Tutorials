@@ -15,7 +15,7 @@ W tym samouczku przeprowadzimy Cię przez proces akceptowania poprawek w dokumen
 W tym przykładzie tworzymy dokument i dodajemy treść. Używamy kilku akapitów do zilustrowania zmian i poprawek. Oto jak:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
+//Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -131,7 +131,7 @@ doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak akceptować poprawki w dokumencie programu Word za pomocą funkcji Akceptuj poprawki w Aspose.Words dla .NET. Wykonaliśmy kroki, aby dodać i edytować treść dokumentu, śledzić poprawki, usuwać poprawiony akapit, akceptować wszystkie zmiany i zaprzestać śledzenia wersji. Teraz możesz zastosować tę wiedzę, aby skutecznie zarządzać wersjami we własnych dokumentach Word za pomocą Aspose.Words dla .NET.
+W tym samouczku nauczyliśmy się, jak akceptować poprawki w dokumencie programu Word za pomocą funkcji Akceptuj poprawki w Aspose.Words dla .NET. Wykonaliśmy kroki umożliwiające dodawanie i edytowanie treści dokumentu, śledzenie poprawek, usuwanie poprawionych akapitów, akceptowanie wszystkich zmian i zaprzestanie śledzenia wersji. Teraz możesz zastosować tę wiedzę, aby skutecznie zarządzać wersjami we własnych dokumentach Word za pomocą Aspose.Words dla .NET.
 
 ### Często zadawane pytania
 

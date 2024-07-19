@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/working-with-fields/specify-locale-at-field-level/
 ---
 
-Aquí hay una guía paso a paso para explicar el siguiente código fuente de C# que permite especificar la localización a nivel de campo utilizando la función Aspose.Words para .NET. Asegúrese de haber incluido la biblioteca Aspose.Words en su proyecto antes de usar este código.
+Aquí hay una guía paso a paso para explicar el siguiente código fuente de C# que permite especificar la localización a nivel de campo usando la función Aspose.Words para .NET. Asegúrese de haber incluido la biblioteca Aspose.Words en su proyecto antes de usar este código.
 
 ## Paso 1: establecer la ruta del directorio de documentos
 

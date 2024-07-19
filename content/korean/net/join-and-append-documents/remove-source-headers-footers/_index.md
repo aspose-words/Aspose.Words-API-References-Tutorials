@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## 1단계: 원본 문서 로드
 
- 먼저 머리글과 바닥글을 제거하려는 소스 문서를 로드해야 합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 소스 문서가 있는 문서 디렉터리의 실제 경로를 사용합니다.
+먼저 머리글과 바닥글을 제거하려는 소스 문서를 로드해야 합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 소스 문서가 있는 문서 디렉터리의 실제 경로를 사용합니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

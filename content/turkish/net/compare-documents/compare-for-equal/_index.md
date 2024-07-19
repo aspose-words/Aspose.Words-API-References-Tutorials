@@ -9,7 +9,7 @@ url: /tr/net/compare-documents/compare-for-equal/
 ---
 ## giriiş
 
-Word belgeleriyle çalışırken iki belgenin aynı olmasını sağlamak çok önemli bir görev olabilir. İster bir sözleşmenin farklı sürümlerini karşılaştırıyor olun, ister yetkisiz değişiklikleri kontrol edin, ister belge bütünlüğünü doğrulayın, belgeleri karşılaştırmanın otomatik bir yoluna sahip olmak, zamandan ve emekten önemli ölçüde tasarruf sağlayabilir. Aspose.Words for .NET, Word belgelerini karşılaştırmak ve farklılıkları belirlemek için güçlü bir çözüm sunar. Bu makalede, Aspose.Words for .NET'i kullanarak iki Word belgesini eşitlik açısından karşılaştırma sürecinde size rehberlik edeceğiz. 
+Word belgeleriyle çalışırken iki belgenin aynı olmasını sağlamak çok önemli bir görev olabilir. İster bir sözleşmenin farklı versiyonlarını karşılaştırıyor olun, ister yetkisiz değişiklikleri kontrol edin, ister belge bütünlüğünü doğrulayın, belgeleri karşılaştırmanın otomatik bir yoluna sahip olmak, zamandan ve emekten önemli ölçüde tasarruf sağlayabilir. Aspose.Words for .NET, Word belgelerini karşılaştırmak ve farklılıkları belirlemek için güçlü bir çözüm sunar. Bu makalede, Aspose.Words for .NET'i kullanarak iki Word belgesini eşitlik açısından karşılaştırma sürecinde size rehberlik edeceğiz. 
 
 ## Önkoşullar
 

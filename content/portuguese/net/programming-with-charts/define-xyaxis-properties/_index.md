@@ -15,7 +15,7 @@ Os gráficos são uma ferramenta poderosa para visualizar dados. Quando você pr
 
 Antes de mergulhar na codificação, existem alguns pré-requisitos que você precisa ter em vigor:
 
-1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: você precisa de um ambiente de desenvolvimento integrado (IDE) como o Visual Studio.
 3. .NET Framework: certifique-se de que seu ambiente de desenvolvimento esteja configurado para desenvolvimento .NET.
 4. Conhecimento básico de C#: Este guia pressupõe que você tenha um conhecimento básico de programação em C#.
@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Etapa 2: inserir um gráfico
 
-seguir, você inserirá um gráfico no documento. Neste exemplo, usaremos um gráfico de área. Você pode personalizar as dimensões do gráfico conforme necessário.
+A seguir, você inserirá um gráfico no documento. Neste exemplo, usaremos um gráfico de área. Você pode personalizar as dimensões do gráfico conforme necessário.
 
 ```csharp
 // Inserir gráfico

@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Schritt 2: Stil für eingerückten Code hinzufügen
 
-Wir werden einen benutzerdefinierten Stil für den eingerückten Code hinzufügen, indem wir`Styles.Add` Methode der`Document` Objekt. In diesem Beispiel erstellen wir einen Stil namens „IndentedCode“ für eingerückten Code.
+ Wir werden einen benutzerdefinierten Stil für den eingerückten Code hinzufügen, indem wir`Styles.Add` Methode der`Document` Objekt. In diesem Beispiel erstellen wir einen Stil namens „IndentedCode“ für eingerückten Code.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

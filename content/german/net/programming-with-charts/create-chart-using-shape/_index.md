@@ -13,7 +13,7 @@ Das Erstellen und Anpassen von Diagrammen in Ihren Dokumenten ist in der heutige
 
 ## Voraussetzungen
 
-Bevor Sie sich in den Code vertiefen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+Bevor Sie in den Code eintauchen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 -  Aspose.Words für .NET-Bibliothek: Sie können sie herunterladen[Hier](https://releases.aspose.com/words/net/).
 - Visual Studio: Jede Version, die .NET unterstützt.

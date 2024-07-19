@@ -2,126 +2,93 @@
 title: Danh sách sử dụng kiểu đích
 linktitle: Danh sách sử dụng kiểu đích
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách hợp nhất và quản lý danh sách tài liệu một cách liền mạch với Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tích hợp tài liệu hiệu quả.
+description: Tìm hiểu cách hợp nhất tài liệu Word bằng Aspose.Words cho .NET mà không làm mất định dạng danh sách. Hướng dẫn từng bước để giữ nguyên kiểu tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## Giới thiệu
 
-Việc tích hợp tài liệu trong khi vẫn duy trì kiểu dáng nhất quán có thể là một thách thức, đặc biệt là với danh sách. Aspose.Words for .NET cung cấp các công cụ mạnh mẽ để quản lý những vấn đề phức tạp này, đảm bảo tài liệu của bạn giữ được tính toàn vẹn về định dạng. Hướng dẫn này sẽ hướng dẫn bạn qua quá trình hợp nhất tài liệu với danh sách, sử dụng kiểu đích để tạo ra sản phẩm cuối cùng bóng bẩy.
+Bạn đã bao giờ thử hợp nhất các tài liệu Word và gặp rắc rối với việc định dạng chưa? Đôi khi nó giống như cố gắng trộn dầu và nước, phải không? Chà, hôm nay chúng ta sẽ đi sâu vào một thủ thuật đơn giản bằng cách sử dụng Aspose.Words cho .NET để giúp bạn thoát khỏi vấn đề đau đầu này. Chúng ta sẽ tìm hiểu cách nhập danh sách từ tài liệu này sang tài liệu khác mà không làm xáo trộn việc đánh số và kiểu dáng. Sẵn sàng để làm cho cuộc sống của bạn dễ dàng hơn một chút? Bắt đầu nào!
 
 ## Điều kiện tiên quyết
 
-Trước khi đi sâu vào hướng dẫn này, hãy đảm bảo bạn có những điều sau:
-- Visual Studio được cài đặt trên máy của bạn.
-- Thư viện Aspose.Words for .NET được tích hợp vào dự án của bạn.
-- Hiểu biết cơ bản về ngôn ngữ lập trình C#.
+Trước khi bắt tay vào thực hiện điều kỳ diệu, hãy đảm bảo bạn có mọi thứ mình cần:
+
+1.  Aspose.Words for .NET: Nếu bạn chưa có, hãy tải xuống[đây](https://releases.aspose.com/words/net/).
+2. Visual Studio: Bất kỳ phiên bản gần đây nào cũng được.
+3. Hiểu biết cơ bản về C#: Bạn không cần phải là một chuyên gia, nhưng một chút hiểu biết sẽ giúp ích.
+
+ Đảm bảo bạn đã cài đặt và thiết lập Aspose.Words trong dự án của mình. Nếu bạn không chắc chắn về cách thực hiện việc này,[tài liệu](https://reference.aspose.com/words/net/) là một nơi tuyệt vời để bắt đầu.
 
 ## Nhập không gian tên
 
-Bắt đầu bằng cách nhập các không gian tên cần thiết để tận dụng các chức năng của Aspose.Words:
+Trước tiên, hãy nhập các không gian tên cần thiết vào tệp C# của bạn:
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.Lists;
+using Aspose.Words.Saving;
 ```
 
-Hãy chia quy trình thành các bước rõ ràng:
+Có những cái đó? Tuyệt vời. Bây giờ, hãy chia nhỏ điều này từng bước một.
 
-## Bước 1: Thiết lập đường dẫn tài liệu
+## Bước 1: Thiết lập đường dẫn tài liệu của bạn
 
-Đảm bảo bạn đã xác định đường dẫn thư mục chứa tài liệu của mình:
+Mọi dự án đều bắt đầu bằng việc sắp xếp các tập tin của bạn. Hãy trỏ mã của chúng tôi vào thư mục lưu trữ tài liệu của bạn.
 
 ```csharp
-string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+// Đường dẫn đến thư mục tài liệu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Thay thế`"YOUR_DOCUMENT_DIRECTORY_PATH"` với đường dẫn thư mục thực nơi tài liệu của bạn được lưu trữ.
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ. Dễ dàng phải không?
 
-## Bước 2: Tải tài liệu nguồn và đích
+## Bước 2: Tải tài liệu nguồn và đích của bạn
 
-Tải tài liệu nguồn và đích bằng Aspose.Words:
+Tiếp theo, chúng ta cần tải cả tài liệu nguồn và đích. Hãy coi việc này giống như việc mở hai tệp Word trên máy tính của bạn.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "DocumentSource.docx");
-Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
+Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
- Điều chỉnh`"DocumentSource.docx"`Và`"DocumentDestination.docx"` với tên tập tin thực tế của bạn.
+ Đây,`srcDoc` là tài liệu nguồn của bạn (tài liệu có danh sách bạn muốn sao chép) và`dstDoc` là tài liệu đích của bạn (tài liệu mà bạn muốn dán các danh sách đó).
 
-## Bước 3: Đặt phần bắt đầu cho tài liệu nguồn
+## Bước 3: Định cấu hình tùy chọn nhập
 
-Để đảm bảo các tài liệu được hợp nhất một cách suôn sẻ, hãy đặt phần bắt đầu của tài liệu nguồn:
+Chúng ta cần chỉ định một số tùy chọn để đảm bảo danh sách được nhập chính xác. Bước này đảm bảo rằng nếu có bất kỳ xung đột đánh số nào thì việc đánh số từ tài liệu nguồn sẽ được giữ nguyên.
 
 ```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-Cài đặt này giúp duy trì tính liên tục giữa các tài liệu.
+## Bước 4: Nối tài liệu nguồn vào tài liệu đích
 
-## Bước 4: Quản lý tích hợp danh sách
-
-Lặp lại các đoạn văn trong tài liệu nguồn để xử lý các mục trong danh sách:
+Bây giờ chúng ta hãy thực hiện việc hợp nhất. Đây là nơi phép thuật xảy ra. Chúng tôi nối tài liệu nguồn vào tài liệu đích trong khi sử dụng các tùy chọn nhập được chỉ định.
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-Đoạn mã này đảm bảo rằng các danh sách từ tài liệu nguồn tích hợp liền mạch vào tài liệu đích, duy trì định dạng ban đầu của chúng.
-
-## Bước 5: Nối tài liệu nguồn vào tài liệu đích
-
-Hợp nhất tài liệu nguồn đã sửa đổi vào tài liệu đích:
-
-```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-```
-
-Lệnh này hợp nhất các tài liệu trong khi vẫn giữ nguyên kiểu đích.
+Bạn đã hợp nhất thành công hai tài liệu, giữ nguyên danh sách.
 
 ## Phần kết luận
 
-Bằng cách làm theo các bước này, bạn có thể quản lý và hợp nhất danh sách giữa các tài liệu một cách hiệu quả bằng Aspose.Words for .NET. Cách tiếp cận này đảm bảo rằng tài liệu cuối cùng của bạn duy trì kiểu dáng và định dạng nhất quán, nâng cao hiệu quả quản lý tài liệu tổng thể.
+Ở đó bạn có nó! Việc hợp nhất các tài liệu mà không cần bận tâm về các vấn đề định dạng thật dễ dàng với Aspose.Words dành cho .NET. Cho dù bạn đang làm việc trong một dự án lớn hay chỉ cần dọn dẹp một số tệp, phương pháp này sẽ giữ cho danh sách của bạn trông sắc nét. Vì vậy, lần tới khi bạn gặp phải tình huống khó xử khi hợp nhất tài liệu, hãy nhớ hướng dẫn này và giải quyết nó như một người chuyên nghiệp!
 
 ## Câu hỏi thường gặp
 
-### Làm cách nào tôi có thể xử lý các danh sách lồng nhau bằng Aspose.Words cho .NET?
-Aspose.Words cung cấp các phương thức để quản lý danh sách lồng nhau bằng cách lặp qua các nút tài liệu và kiểm tra cấu trúc danh sách.
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Nó cho phép bạn tạo, sửa đổi và chuyển đổi tài liệu ở nhiều định dạng khác nhau.
 
-### Lợi ích của việc sử dụng kiểu đích trong việc hợp nhất tài liệu là gì?
-Kiểu đích giúp duy trì tính đồng nhất trong định dạng trên các tài liệu được hợp nhất, đảm bảo giao diện chuyên nghiệp.
+### Làm cách nào để cài đặt Aspose.Words cho .NET?
+ Bạn có thể tải nó xuống từ[trang mạng](https://releases.aspose.com/words/net/) và làm theo hướng dẫn cài đặt trong[tài liệu](https://reference.aspose.com/words/net/).
 
-### Aspose.Words có hỗ trợ hợp nhất tài liệu đa nền tảng không?
-Có, Aspose.Words hỗ trợ hợp nhất tài liệu trên nhiều nền tảng khác nhau, bao gồm cả môi trường Windows và Linux.
+### Tôi có thể sử dụng Aspose.Words miễn phí không?
+ Aspose.Words cung cấp một[dùng thử miễn phí](https://releases.aspose.com/) với những tính năng hạn chế. Để có toàn quyền truy cập, bạn cần phải mua giấy phép[đây](https://purchase.aspose.com/buy).
 
-### Tôi có thể tùy chỉnh định dạng danh sách trong quá trình hợp nhất tài liệu không?
-Aspose.Words cho phép tùy chỉnh rộng rãi định dạng danh sách, cho phép các giải pháp tích hợp tài liệu phù hợp.
+### Tùy chọn ImportFormatOptions là gì?
+ ImportFormatOptions cho phép bạn chỉ định cách xử lý định dạng khi nhập nội dung từ tài liệu này sang tài liệu khác. Ví dụ,`KeepSourceNumbering` đảm bảo rằng việc đánh số danh sách từ tài liệu nguồn được giữ nguyên.
 
-### Tôi có thể tìm thêm tài nguyên về quản lý tài liệu nâng cao bằng Aspose.Words ở đâu?
- Khám phá[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.
+### Tôi có thể nhận hỗ trợ cho Aspose.Words ở đâu?
+ Bạn có thể nhận được sự hỗ trợ từ[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8), nơi bạn có thể đặt câu hỏi và nhận trợ giúp từ cộng đồng cũng như nhà phát triển Aspose.

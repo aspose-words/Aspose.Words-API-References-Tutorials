@@ -68,7 +68,7 @@ Section section = doc.Sections[2];
 
  Na tym etapie uzyskujemy dostęp do trzeciej części naszego dokumentu. Pamiętaj, że indeks jest liczony od zera, więc`Sections[2]` odnosi się do części trzeciej.
 
-## Krok 4: Dołączanie treści do sekcji
+## Krok 4: Dołączanie zawartości do sekcji
 
 Dołączmy treść pierwszej sekcji do początku trzeciej sekcji.
 

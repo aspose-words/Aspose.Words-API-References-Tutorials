@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
 
-Ez a cikk lépésről lépésre ismerteti a betűkészlet részhalmaz beágyazási funkciójának használatát az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megértheti, hogyan ágyazhat be betűtípusok részhalmazait egy dokumentumba, és hogyan hozhat létre PDF-fájlt, amely csak a dokumentumban használt karakterjeleket tartalmazza.
+Ez a cikk lépésről lépésre ismerteti a betűkészlet részhalmaz beágyazási funkciójának használatát az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megértheti, hogyan ágyazhat be betűtípus-alkészleteket egy dokumentumba, és hogyan hozhat létre PDF-fájlt, amely csak a dokumentumban használt karakterjeleket tartalmazza.
 
 Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
 
@@ -72,7 +72,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan ágyazhatunk be betűtípus-alkész
 V: Betűkészlet-alkészletek beágyazása egy PDF-dokumentumba az a folyamat, amely során csak a dokumentumban használt karakterjeleket veszik figyelembe, nem pedig az összes betűtípust. Ez csökkenti a PDF-fájl méretét, mivel csak a dokumentumban ténylegesen használt karakterek megjelenítéséhez szükséges betűtípus-adatokat tartalmazza.
 
 #### K: Mi a különbség a teljes betűtípusok és a betűkészletek részhalmazainak beágyazása között?
-V: A teljes betűtípus-beágyazás azt jelenti, hogy a dokumentumban használt összes betűtípust belefoglalja a PDF-fájlba, ami biztosítja, hogy a dokumentum pontosan úgy jelenik meg, ahogyan tervezték, de növelheti a PDF-fájl méretét. Ezzel szemben a betűkészlet-alkészletek beágyazása csak a dokumentumban használt karakterjeleket tartalmazza, ezáltal csökkentve a PDF-fájl méretét, de korlátozva a dokumentum megjelenésének pontos replikálását, ha később további karaktereket adnak hozzá.
+V: A teljes betűtípus-beágyazás azt jelenti, hogy a dokumentumban használt összes betűtípust belefoglalja a PDF-fájlba, ami biztosítja, hogy a dokumentum pontosan úgy jelenik meg, ahogyan tervezték, de növelheti a PDF-fájl méretét. Ezzel szemben a betűtípus-alkészletek beágyazása csak a dokumentumban használt karakterjeleket tartalmazza, ezáltal csökkentve a PDF-fájl méretét, de korlátozva a dokumentum megjelenésének pontos replikálását, ha később további karaktereket adnak hozzá.
 
 #### K: Hogyan ágyazhatok be betűtípus-alkészleteket egy PDF-dokumentumba az Aspose.Words for .NET használatával?
 V: Ha az Aspose.Words for .NET segítségével betűkészlet-alkészleteket szeretne beágyazni egy PDF-dokumentumba, kövesse az alábbi lépéseket:

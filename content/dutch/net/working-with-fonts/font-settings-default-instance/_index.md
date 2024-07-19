@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/working-with-fonts/font-settings-default-instance/
 ---
 
-Welkom bij deze uitgebreide tutorial over het beheren van lettertype-instellingen met Aspose.Words voor .NET. Als u ooit problemen heeft ondervonden met het omgaan met lettertypen in uw documenten, begeleidt deze handleiding u door alles wat u moet weten om lettertypen effectief aan te passen en te beheren. Laten we erin duiken!
+Welkom bij deze uitgebreide tutorial over het beheren van lettertype-instellingen met Aspose.Words voor .NET. Als u ooit problemen heeft ondervonden bij het omgaan met lettertypen in uw documenten, begeleidt deze handleiding u door alles wat u moet weten om lettertypen effectief aan te passen en te beheren. Laten we erin duiken!
 
 ## Vereisten
 
@@ -55,7 +55,7 @@ In dit voorbeeld:
 
 ## Stap 3: Laad het document
 
- Als uw lettertypebronnen zijn geconfigureerd, is de volgende stap het laden van uw document in een Aspose.Words`Document`voorwerp. Hierdoor kunt u het document manipuleren en uiteindelijk opslaan.
+ Als uw lettertypebronnen zijn geconfigureerd, is de volgende stap het laden van uw document in een Aspose.Words`Document` voorwerp. Hierdoor kunt u het document manipuleren en uiteindelijk opslaan.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -73,7 +73,7 @@ Door deze stappen te volgen, hebt u met succes aangepaste lettertype-instellinge
 
 ## Conclusie
 
-Gefeliciteerd! U beheerst de basisprincipes van het beheren van lettertype-instellingen met Aspose.Words voor .NET. Of u nu aan een eenvoudig project of aan een complex documentverwerkingssysteem werkt, deze vaardigheden helpen u ervoor te zorgen dat uw documenten er precies zo uitzien als u dat wilt. Houd er rekening mee dat de flexibiliteit van Aspose.Words een breed scala aan aanpassingen mogelijk maakt, dus aarzel niet om verschillende instellingen te verkennen en ermee te experimenteren.
+Gefeliciteerd! U beheerst de basisprincipes van het beheren van lettertype-instellingen met Aspose.Words voor .NET. Of u nu aan een eenvoudig project of aan een complex documentverwerkingssysteem werkt, deze vaardigheden helpen u ervoor te zorgen dat uw documenten er precies zo uitzien als u dat wilt. Vergeet niet dat de flexibiliteit van Aspose.Words een breed scala aan aanpassingen mogelijk maakt, dus aarzel niet om verschillende instellingen te verkennen en ermee te experimenteren.
 
 ## Veelgestelde vragen
 

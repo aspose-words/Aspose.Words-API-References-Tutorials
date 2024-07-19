@@ -78,7 +78,7 @@ Aspose.Words for .NET 是一个功能强大的库，允许您以编程方式创�
 你可以从[免费试用](https://releases.aspose.com/) ，但要获得完整功能，您需要购买许可证。查看[购买选项](https://purchase.aspose.com/buy).
 
 ### Aspose.Words 可以检测哪些保护类型？
-Aspose.Words 可以检测各种保护类型，例如 NoProtection、ReadOnly、AllowOnlyRevisions、AllowOnlyComments 和 AllowOnlyFormFields。
+Aspose.Words 可以检测各种保护类型，例如NoProtection、ReadOnly、AllowOnlyRevisions、AllowOnlyComments 和 AllowOnlyFormFields。
 
 ### 如果我遇到问题，如何获得支持？
 如有任何疑问，您可以访问[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8)求助。

@@ -94,7 +94,7 @@ Ano, Aspose.Words for .NET vám umožňuje konfigurovat možnosti ukládání pr
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
 
- I když můžete Aspose.Words for .NET používat bez licence pro hodnocení, k odemknutí plné funkčnosti je vyžadována licence. Můžete získat licenci[tady](https://purchase.aspose.com/buy) nebo použijte a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
+ I když můžete Aspose.Words for .NET používat bez licence pro hodnocení, k odemknutí plné funkčnosti je vyžadována licence. Můžete získat licenci[tady](https://purchase.aspose.com/buy)nebo použijte a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro hodnocení.
 
 ### Jak mohu zajistit, aby mé dokumenty odpovídaly standardům PDF/A?
 

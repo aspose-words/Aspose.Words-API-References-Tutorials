@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Βήμα 2: Εφαρμόστε στυλ κειμένου διαγραφής
 
-Θα ενεργοποιήσουμε το στυλ κειμένου διαγραφής ορίζοντας το`StrikeThrough` ιδιοκτησία του`Font` αντιτίθεμαι`true`.
+ Θα ενεργοποιήσουμε το στυλ κειμένου διαγραφής ορίζοντας το`StrikeThrough` ιδιοκτησία του`Font` αντιτίθεμαι`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

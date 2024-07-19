@@ -98,7 +98,7 @@ Un paragrafo può contenere nodi come sequenze, forme, commenti e altri elementi
  Sì, puoi manipolare vari tipi di nodi come forme, commenti e altro controllandoli`NodeType`.
 
 ### 4. Ho bisogno di una licenza per utilizzare Aspose.Words per .NET?
- Puoi iniziare con una prova gratuita o ottenere una licenza temporanea da[Qui](https://purchase.aspose.com/temporary-license/).
+Puoi iniziare con una prova gratuita o ottenere una licenza temporanea da[Qui](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Dove posso trovare ulteriori esempi e documentazione?
  Visitare il[Aspose.Words per la documentazione dell'API .NET](https://reference.aspose.com/words/net/) per ulteriori esempi e documentazione dettagliata.

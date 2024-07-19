@@ -17,7 +17,7 @@ Haben Sie schon einmal versucht, sich durch das Labyrinth eines Word-Dokuments z
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie über alle benötigten Tools verfügen:
 
 - Visual Studio: Stellen Sie sicher, dass Sie es installiert haben. Wenn nicht, laden Sie es von der Microsoft-Website herunter und installieren Sie es.
--  Aspose.Words für .NET: Wenn Sie es noch nicht haben, holen Sie sich die neueste Version[Hier](https://releases.aspose.com/words/net/).
+- Aspose.Words für .NET: Wenn Sie es noch nicht haben, holen Sie sich die neueste Version[Hier](https://releases.aspose.com/words/net/).
 - Ein Beispiel-Word-Dokument: Dieses sollte Absatzformattrennzeichen enthalten, mit denen wir arbeiten können. Sie können eins erstellen oder ein vorhandenes Dokument verwenden.
 
 ## Namespaces importieren

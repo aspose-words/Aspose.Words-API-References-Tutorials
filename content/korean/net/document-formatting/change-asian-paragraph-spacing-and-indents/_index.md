@@ -106,4 +106,4 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 전적으로! 문서 컬렉션을 반복하여 각 문서에 프로그래밍 방식으로 이러한 설정을 적용할 수 있습니다.
 
 ### 문제가 발생하거나 질문이 있으면 어떻게 하나요?
-문제가 발생하거나 추가 질문이 있는 경우[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 구하기에 좋은 곳입니다.
+ 문제가 발생하거나 추가 질문이 있는 경우[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 구하기에 좋은 곳입니다.

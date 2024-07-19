@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- Konfigurujeme`ParagraphFormat`vlastnosti. Pojďme si rozebrat, co každá vlastnost dělá:
+Konfigurujeme`ParagraphFormat` vlastnosti. Pojďme si rozebrat, co každá vlastnost dělá:
 - Zarovnání: Zarovná odstavec na střed.
 - LeftIndent: Nastaví levé odsazení na 50 bodů.
 - RightIndent: Nastaví pravé odsazení na 50 bodů.

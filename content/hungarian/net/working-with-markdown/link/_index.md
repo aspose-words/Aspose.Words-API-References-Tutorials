@@ -36,7 +36,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Link beszúrása.
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", false);
 ```
-Gratulálok ! Most megtanulta, hogyan kell használni a linkek funkciót az Aspose.Words for .NET-hez.
+Gratulálok ! Most már megtanulta, hogyan kell használni a linkek funkciót az Aspose.Words for .NET-hez.
 
 
 ### GYIK
@@ -51,8 +51,8 @@ Gratulálok ! Most megtanulta, hogyan kell használni a linkek funkciót az Aspo
 
 #### K: Hogyan szabhatom testre egy hivatkozás megjelenített szövegét az Aspose.Wordsben?
 
-V: Egy hivatkozás megjelenített szövegének testreszabásához az Aspose.Wordsben módosíthatja a tartalmat a`<a>` címkéket. Például,`<a href="https://www.aspose.com">Click here</a>` hiperhivatkozásként jeleníti meg a "Kattintson ide" szöveget.
+ V: Egy hivatkozás megjelenített szövegének testreszabásához az Aspose.Wordsben módosíthatja a tartalmat a`<a>` címkéket. Például,`<a href="https://www.aspose.com">Click here</a>` hiperhivatkozásként jeleníti meg a "Kattintson ide" szöveget.
 
 #### K: Megadhatok célt egy hivatkozáshoz az Aspose.Wordsben?
 
- V: Igen, megadhat célt egy hivatkozáshoz az Aspose.Words-ben a`target` attribútuma a`<a>` címke. Például,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` új ablakban vagy lapon nyitja meg a hivatkozást.
+V: Igen, megadhat célt egy hivatkozáshoz az Aspose.Words-ben a`target` attribútuma a`<a>` címke. Például,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` új ablakban vagy lapon nyitja meg a hivatkozást.

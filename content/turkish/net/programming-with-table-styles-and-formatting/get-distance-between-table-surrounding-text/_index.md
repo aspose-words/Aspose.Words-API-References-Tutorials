@@ -51,4 +51,4 @@ Console.WriteLine("Distance between the table and the text on the left: " + tabl
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir tablodaki çevreleyen metinler arasındaki mesafeyi nasıl elde edeceğimizi öğrendik. Bu adım adım kılavuzu izleyerek Word belgelerinizde bir tablo ile onu çevreleyen metin arasındaki çeşitli mesafelere kolayca erişebilirsiniz. Aspose.Words, belgelerinizdeki tabloları düzenlemek ve biçimlendirmek için güçlü ve esnek bir API sunar. Bu bilgiyle tablolarınızın düzenini metne göre analiz edebilir ve belirli ihtiyaçları karşılayabilirsiniz.
+Bu eğitimde Aspose.Words for .NET'i kullanarak bir tablodaki çevreleyen metinler arasındaki mesafeyi nasıl elde edeceğimizi öğrendik. Bu adım adım kılavuzu izleyerek Word belgelerinizde bir tablo ile onu çevreleyen metin arasındaki çeşitli mesafelere kolayca erişebilirsiniz. Aspose.Words, belgelerinizdeki tabloları düzenlemek ve biçimlendirmek için güçlü ve esnek bir API sunar. Bu bilgiyle tablolarınızın düzenini metne göre analiz edebilir ve belirli ihtiyaçları karşılayabilirsiniz.

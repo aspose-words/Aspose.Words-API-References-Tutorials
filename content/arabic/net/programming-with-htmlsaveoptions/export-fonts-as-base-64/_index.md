@@ -33,7 +33,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ومجموعات`ExportFontsAsBase64` ل`true` لتحديد الخطوط التي يجب تصديرها كبيانات أساسية 64 عند الحفظ بتنسيق HTML.
+ يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ومجموعات`ExportFontsAsBase64` ل`true` لتحديد أنه يجب تصدير الخطوط كبيانات أساسية 64 عند الحفظ بتنسيق HTML.
 
 ## الخطوة 4: تحويل وحفظ المستند إلى HTML
 

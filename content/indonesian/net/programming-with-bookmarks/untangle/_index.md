@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-Pada langkah ini, kami menggunakan`GetAncestor` metode untuk menemukan baris induk dari node awal bookmark dan akhir bookmark. Ini membantu kami menentukan dengan tepat baris-baris yang terlibat.
+ Pada langkah ini, kami menggunakan`GetAncestor` metode untuk menemukan baris induk dari node awal bookmark dan akhir bookmark. Ini membantu kami menentukan dengan tepat baris-baris yang terlibat.
 
 ## Langkah 4: Periksa Baris yang Berdekatan
 
@@ -93,7 +93,7 @@ Langkah 5 Judul: Memindahkan Ujung Bookmark
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-Pada langkah ini, kami menggunakan`AppendChild`metode untuk memindahkan node akhir bookmark. Dengan menambahkannya ke paragraf terakhir dari sel terakhir baris atas, kami memastikan bahwa bookmark tersebut terurai dengan benar.
+ Pada langkah ini, kami menggunakan`AppendChild` metode untuk memindahkan node akhir bookmark. Dengan menambahkannya ke paragraf terakhir dari sel terakhir baris atas, kami memastikan bahwa bookmark tersebut terurai dengan benar.
 
 ## Kesimpulan
 

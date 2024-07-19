@@ -15,10 +15,10 @@ Ei! Já se perguntou como você pode proteger seus documentos do Word contra edi
 
 Antes de mergulharmos nos detalhes da proteção com senha de seus documentos do Word, há algumas coisas que você precisa:
 
-1. Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro ambiente de desenvolvimento C#.
 3. Conhecimento básico de C#: Uma compreensão fundamental da programação C#.
-4.  Licença Aspose: Obtenha uma licença de[aqui](https://purchase.aspose.com/buy) ou use um[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
+4.  Licença Aspose: Obtenha uma licença de[aqui](https://purchase.aspose.com/buy)ou use um[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
 
 ## Importar namespaces
 

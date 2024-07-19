@@ -125,7 +125,7 @@ Absolutně! Při ukládání dokumentu jako PDF můžete vytvořit libovolný po
 
 ### Je možné smazat záložku?
 
- Ano, záložku můžete smazat pomocí`Bookmarks.Remove` zadáním názvu záložky.
+ Ano, záložku můžete odstranit pomocí`Bookmarks.Remove` zadáním názvu záložky.
 
 ### Mohu vytvářet záložky v jiných formátech než PDF?
 

@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 문서의 모든 필드를 반복하고 제거합니다.
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 이 루프는 필드 컬렉션을 거꾸로 반복하여 반복하는 동안 컬렉션 수정과 관련된 문제를 방지합니다.

@@ -39,7 +39,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 // 문서 디렉토리 경로
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// "PDF 이미지 건너뛰기" 기능으로 로딩 옵션 구성
+// "PDF 이미지 건너뛰기" 기능으로 로드 옵션 구성
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 
 // PDF 이미지를 건너뛰고 PDF 문서 로드
@@ -70,7 +70,7 @@ A: PDF 이미지를 건너뛰어도 로드된 문서의 레이아웃이나 모�
 
 #### Q: PDF 이미지 건너뛰기는 모든 PDF 문서에 적합합니까?
 
-A: PDF 이미지 건너뛰기는 애플리케이션의 기본 기능에 이미지가 필수적이지 않은 시나리오에 가장 적합합니다. 주로 텍스트 콘텐츠를 다루거나 이미지 조작이 필요하지 않은 애플리케이션에 적합합니다.
+A: PDF 이미지 건너뛰기는 애플리케이션의 주요 기능에 이미지가 필수적이지 않은 시나리오에 가장 적합합니다. 주로 텍스트 콘텐츠를 다루거나 이미지 조작이 필요하지 않은 애플리케이션에 적합합니다.
 
 #### 질문: PDF 문서의 특정 섹션에 이 기능을 적용할 수 있습니까?
 

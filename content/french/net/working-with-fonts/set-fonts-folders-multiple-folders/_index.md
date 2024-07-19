@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Étape 3 : définir les dossiers de polices
+## Étape 3 : Définir les dossiers de polices
  Vous pouvez désormais définir plusieurs dossiers de polices à l'aide du`FontSettings` la classe et le`SetFontsFolders()` méthode. Vous pouvez spécifier les chemins d'accès aux dossiers de polices que vous souhaitez utiliser dans un tableau. Dans cet exemple, nous avons spécifié deux dossiers de polices : "C:\MyFonts\" et " D:\Divers\Fonts\".
 
 ```csharp

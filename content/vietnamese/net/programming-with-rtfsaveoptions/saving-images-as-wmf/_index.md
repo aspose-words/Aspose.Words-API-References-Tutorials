@@ -39,7 +39,7 @@ RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
 ```
 
- Ở bước cuối cùng này, chúng tôi lưu tài liệu kết quả ở định dạng RTF bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu đã chỉ định.
+ Ở bước cuối cùng này, chúng tôi lưu tài liệu kết quả ở định dạng RTF bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu được chỉ định.
 
 Bây giờ bạn có thể chạy mã nguồn để lưu hình ảnh tài liệu ở định dạng WMF trong khi chuyển đổi sang định dạng RTF. Tài liệu thu được sẽ được lưu trong thư mục được chỉ định với tên "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf".
 

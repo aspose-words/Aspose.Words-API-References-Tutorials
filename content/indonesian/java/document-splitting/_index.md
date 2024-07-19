@@ -26,7 +26,7 @@ Dengan menguasai pemisahan dokumen menggunakan Aspose.Words for Java, pengembang
 
 Pelajari cara membagi dokumen secara efisien menggunakan Aspose.Words untuk Java. Panduan langkah demi langkah untuk pemrosesan dokumen dan manipulasi kata. Tingkatkan produktivitas sekarang!
 ### [Memisahkan Dokumen menjadi Beberapa File](./splitting-documents-into-multiple-files/)
-Buka kecanggihan Aspose.Words untuk Java dengan panduan langkah demi langkah kami dalam membagi dokumen menjadi beberapa file. Dapatkan wawasan ahli dan contoh kode sumber.
+Buka kehebatan Aspose.Words untuk Java dengan panduan langkah demi langkah kami tentang membagi dokumen menjadi beberapa file. Dapatkan wawasan ahli dan contoh kode sumber.
 ### [Memisahkan Dokumen menjadi Halaman HTML](./splitting-documents-into-html-pages/)
 Pelajari cara membagi dokumen Word menjadi halaman HTML menggunakan Aspose.Words untuk Java. Panduan langkah demi langkah kami dengan kode sumber membuat prosesnya mudah dan efisien. Mulai konversi dokumen Anda hari ini!
 ### [Pemisahan Halaman Dokumen](./document-page-separation/)

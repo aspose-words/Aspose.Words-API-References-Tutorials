@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Langkah 2: Tambahkan gaya untuk kode yang menjorok ke dalam
 
-Kami akan menambahkan gaya khusus untuk kode indentasi menggunakan`Styles.Add` metode`Document` obyek. Dalam contoh ini, kita membuat gaya yang disebut "IndentedCode" untuk kode yang diindentasi.
+ Kami akan menambahkan gaya khusus untuk kode indentasi menggunakan`Styles.Add` metode`Document` obyek. Dalam contoh ini, kita membuat gaya yang disebut "IndentedCode" untuk kode yang diindentasi.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

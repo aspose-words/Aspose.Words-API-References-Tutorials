@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
 
-In deze zelfstudie leiden we u stapsgewijs door het proces voor het opmaken van een tabel en een cel met verschillende randen met behulp van Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze zelfstudie weet u hoe u aangepaste randen kunt toepassen op specifieke tabellen en cellen in uw Word-documenten met behulp van Aspose.Words voor .NET.
+In deze zelfstudie begeleiden we u stapsgewijs door het proces voor het opmaken van een tabel en een cel met verschillende randen met behulp van Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze zelfstudie weet u hoe u aangepaste randen kunt toepassen op specifieke tabellen en cellen in uw Word-documenten met behulp van Aspose.Words voor .NET.
 
 ## Stap 1: Definieer de documentmap
 Eerst moet u het pad naar uw documentenmap instellen. Dit is de locatie waar u uw bewerkte Word-document wilt opslaan. Vervang "UW DOCUMENTENDIRECTORY" door het juiste pad.
@@ -30,20 +30,20 @@ Om te beginnen met het maken van de tabel, gebruiken we de`StartTable()` methode
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // Stel randen in voor de hele tafel.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // Stel de opvulling voor deze cel in.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // Geef een andere celopvulling op voor de tweede cel.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // Wis celopmaak van eerdere bewerkingen.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // Maak dikkere randen voor de eerste cel in deze rij. Het zal anders zijn
 // ten opzichte van de randen die voor de tabel zijn gedefinieerd.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ Gefeliciteerd! U hebt nu een tabel en een cel met verschillende randen opgemaakt
 ### Voorbeeldbroncode voor het opmaken van tabel en cel met verschillende randen met behulp van Aspose.Words voor .NET 
 
 ```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//Stel de randen in voor de hele tafel.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// Stel de celarcering voor deze cel in.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// Geef een andere celarcering op voor de tweede cel.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// Wis de celopmaak van eerdere bewerkingen.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// Maak grotere randen voor de eerste cel van deze rij. Dit zal anders zijn
-	// vergeleken met de randen die voor de tafel zijn ingesteld.
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//Stel de randen in voor de hele tafel.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// Stel de celarcering voor deze cel in.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// Geef een andere celarcering op voor de tweede cel.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// Wis de celopmaak van eerdere bewerkingen.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// Maak grotere randen voor de eerste cel van deze rij. Dit zal anders zijn
+// vergeleken met de randen die voor de tafel zijn ingesteld.
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## Conclusie

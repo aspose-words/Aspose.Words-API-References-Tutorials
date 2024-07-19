@@ -34,7 +34,7 @@ Field field = doc.Range.Fields[0];
 field. Remove();
 ```
 
-## Krok 4: Zapisywanie dokumentu
+## Krok 4: Zapisanie dokumentu
 
  Na koniec nazywamy`Save()` metoda zapisania zmodyfikowanego dokumentu.
 

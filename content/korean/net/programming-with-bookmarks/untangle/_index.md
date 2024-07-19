@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-이 단계에서는`GetAncestor` 북마크 시작 노드와 북마크 끝 노드 모두의 상위 행을 찾는 방법입니다. 이는 관련된 정확한 행을 찾아내는 데 도움이 됩니다.
+ 이 단계에서는`GetAncestor` 북마크 시작 노드와 북마크 끝 노드 모두의 상위 행을 찾는 방법입니다. 이는 관련된 정확한 행을 찾아내는 데 도움이 됩니다.
 
 ## 4단계: 인접한 행 확인
 
@@ -93,7 +93,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
-이 단계에서는`AppendChild`북마크 끝 노드를 이동하는 방법입니다. 맨 위 행의 마지막 셀의 마지막 단락에 이를 추가함으로써 북마크가 올바르게 풀렸는지 확인합니다.
+ 이 단계에서는`AppendChild` 북마크 끝 노드를 이동하는 방법입니다. 맨 위 행의 마지막 셀의 마지막 단락에 이를 추가함으로써 북마크가 올바르게 풀렸는지 확인합니다.
 
 ## 결론
 

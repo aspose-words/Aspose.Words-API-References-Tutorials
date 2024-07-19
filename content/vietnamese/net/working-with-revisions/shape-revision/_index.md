@@ -2,7 +2,7 @@
 title: Sửa đổi hình dạng
 linktitle: Sửa đổi hình dạng
 second_title: API xử lý tài liệu Aspose.Words
-description: Sửa đổi hình dạng trong tài liệu Word bằng Aspose.Words for .NET.
+description: Sửa đổi hình dạng trong tài liệu Word bằng Aspose.Words cho .NET.
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/shape-revision/

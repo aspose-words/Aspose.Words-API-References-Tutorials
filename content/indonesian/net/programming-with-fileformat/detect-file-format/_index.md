@@ -209,7 +209,7 @@ Itu saja ! Anda telah berhasil mendeteksi format file dokumen yang berbeda mengg
 
 ### FAQ untuk deteksi format file dokumen
 
-#### Bagaimana cara mendeteksi format file dokumen menggunakan Aspose.Words for .NET?
+#### Bagaimana cara mendeteksi format file dokumen menggunakan Aspose.Words untuk .NET?
 
  Untuk mendeteksi format file dokumen menggunakan Aspose.Words for .NET, Anda dapat mengikuti langkah-langkah yang disediakan dalam tutorial. Menggunakan`DetectFileFormat` metode`FileFormatUtil` kelas akan memungkinkan Anda mendeteksi format file dokumen. Ini akan memungkinkan Anda menentukan apakah itu dokumen Microsoft Word 97-2003, templat, dokumen Office Open XML WordprocessingML, atau format lain yang didukung. Kode yang diberikan dalam tutorial akan memandu Anda dalam mengimplementasikan fitur ini.
 

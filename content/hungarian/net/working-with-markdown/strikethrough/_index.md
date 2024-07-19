@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. lépés: Alkalmazza az áthúzott szövegstílust
 
-Az áthúzott szövegstílust a beállításával engedélyezzük`StrikeThrough` tulajdona a`Font` tiltakozni`true`.
+ Az áthúzott szövegstílust a beállításával engedélyezzük`StrikeThrough` tulajdona a`Font` tiltakozni`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

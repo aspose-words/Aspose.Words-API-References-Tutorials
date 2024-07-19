@@ -56,7 +56,7 @@ Document docFromBytes = new Document(inStream);
 
 ## Wniosek
 
-Podsumowując, wykorzystanie Aspose.Words dla .NET do konwersji plików Docx na tablice bajtowe i odwrotnie jest proste i wydajne. Ta funkcja jest nieoceniona w zastosowaniach wymagających manipulowania dokumentami i przechowywania ich w formacie bajtowym. Wykonując kroki opisane powyżej, możesz bezproblemowo zintegrować tę funkcjonalność z projektami .NET, z łatwością usprawniając przepływ pracy w przetwarzaniu dokumentów.
+Podsumowując, wykorzystanie Aspose.Words dla .NET do konwersji plików Docx na tablice bajtowe i odwrotnie jest proste i wydajne. Ta funkcja jest nieoceniona w zastosowaniach wymagających manipulowania dokumentami i przechowywania ich w formacie bajtowym. Wykonując kroki opisane powyżej, możesz bezproblemowo zintegrować tę funkcjonalność ze swoimi projektami .NET, z łatwością usprawniając przepływy pracy związane z przetwarzaniem dokumentów.
 
 ## Często zadawane pytania
 

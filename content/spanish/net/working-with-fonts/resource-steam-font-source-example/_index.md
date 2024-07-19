@@ -2,7 +2,7 @@
 title: Ejemplo de fuente de fuente de recurso Steam
 linktitle: Ejemplo de fuente de fuente de recurso Steam
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a utilizar una fuente de flujo de recursos con Aspose.Words para .NET en esta guía detallada. Asegúrese de que sus documentos se reproduzcan correctamente en todo momento.
+description: Aprenda a utilizar una fuente de fuente de flujo de recursos con Aspose.Words para .NET en esta guía detallada. Asegúrese de que sus documentos se reproduzcan correctamente en todo momento.
 type: docs
 weight: 10
 url: /es/net/working-with-fonts/resource-steam-font-source-example/

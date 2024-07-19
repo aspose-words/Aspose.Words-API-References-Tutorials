@@ -82,7 +82,7 @@ builder. EndTable();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
 ```
 
-Συγχαρητήρια ! Τώρα έχετε εφαρμόσει τη μορφοποίηση σειρών σε έναν πίνακα χρησιμοποιώντας το Aspose.Words για .NET.
+συγχαρητήρια ! Τώρα έχετε εφαρμόσει τη μορφοποίηση σειρών σε έναν πίνακα χρησιμοποιώντας το Aspose.Words για .NET.
 
 ### Δείγμα πηγαίου κώδικα για Εφαρμογή μορφοποίησης σειράς χρησιμοποιώντας το Aspose.Words για .NET 
 

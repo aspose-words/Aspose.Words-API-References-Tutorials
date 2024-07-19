@@ -51,7 +51,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("sad mad bad");
 ```
 
-Di sini, kami membuat dokumen baru dan menambahkan teks "sad mad bad" ke dalamnya. Teks ini akan menjadi data pengujian kami untuk penggantian regex.
+Di sini, kami membuat dokumen baru dan menambahkan teks "sedih, sangat buruk" ke dalamnya. Teks ini akan menjadi data pengujian kami untuk penggantian regex.
 
 ## Langkah 3: Tentukan Opsi Temukan dan Ganti
 

@@ -62,7 +62,7 @@ En este tutorial, aprendimos cómo especificar la fuente predeterminada al repre
 
 #### P: ¿Cómo puedo especificar una fuente predeterminada al convertir a PDF en Aspose.Words?
 
- R: Para especificar una fuente predeterminada al convertir a PDF en Aspose.Words, puede usar el`PdfOptions` clase y establecer el`DefaultFontName`propiedad al nombre de la fuente deseada.
+ R: Para especificar una fuente predeterminada al convertir a PDF en Aspose.Words, puede usar el`PdfOptions` clase y establecer el`DefaultFontName` propiedad al nombre de la fuente deseada.
 
 #### P: ¿Qué pasa si la fuente predeterminada no está disponible al convertir a PDF?
 

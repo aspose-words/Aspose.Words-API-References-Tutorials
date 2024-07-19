@@ -122,7 +122,7 @@ builder.insertHtml("<p>This is an HTML paragraph.</p>");
 doc.save("path/to/your/document.docx");
 ```
 
-## Köprü Ekleme
+## Köprüler Ekleme
 
 ```java
 Document doc = new Document();

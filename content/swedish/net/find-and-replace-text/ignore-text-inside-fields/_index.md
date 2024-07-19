@@ -53,7 +53,7 @@ FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 
 ## Steg 4: Utför textersättning
 
-Använd reguljära uttryck för textersättning. Här ersätter vi förekomster av bokstaven 'e' med en asterisk '*' genom hela dokumentets sortiment:
+Använd reguljära uttryck för textersättning. Här ersätter vi förekomster av bokstaven 'e' med en asterisk '*' i hela dokumentets sortiment:
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);

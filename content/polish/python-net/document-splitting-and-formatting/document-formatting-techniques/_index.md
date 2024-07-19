@@ -149,7 +149,7 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## Wniosek
 
-Opanowanie technik formatowania dokumentów za pomocą Aspose.Words dla Pythona umożliwia programowe tworzenie atrakcyjnych wizualnie i dobrze ustrukturyzowanych dokumentów. Od stylów czcionek po tabele, nagłówki i hiperłącza — biblioteka oferuje kompleksowy zestaw narzędzi poprawiających efekt wizualny treści.
+Opanowanie technik formatowania dokumentów za pomocą Aspose.Words dla Pythona umożliwia programowe tworzenie atrakcyjnych wizualnie i dobrze zorganizowanych dokumentów. Od stylów czcionek po tabele, nagłówki i hiperłącza — biblioteka oferuje kompleksowy zestaw narzędzi poprawiających efekt wizualny treści.
 
 ## Często zadawane pytania
 

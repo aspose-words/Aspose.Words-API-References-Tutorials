@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Passaggio 3: aggiorna il layout della pagina
-
- Chiama il`UpdatePageLayout`metodo. Ciò esegue il rendering del documento in memoria e acquisisce eventuali avvisi che si verificano durante il rendering.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Passaggio 4: impostare la richiamata di avviso
+## Passaggio 3: impostare la richiamata di avviso
 
  Per acquisire e gestire gli avvisi, crea una classe che implementa il file`IWarningCallback` interfaccia. Questa classe registrerà tutti gli avvisi che si verificano durante l'elaborazione del documento.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Siamo interessati solo alla sostituzione dei caratteri.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Passaggio 5: assegnare la richiamata al documento
+## Passaggio 4: assegnare la richiamata al documento
 
 Assegnare la richiamata di avviso al documento. Ciò garantisce che eventuali problemi relativi ai caratteri vengano acquisiti e registrati.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Passaggio 5: aggiorna il layout della pagina
+
+ Chiama il`UpdatePageLayout` metodo. Ciò esegue il rendering del documento in memoria e acquisisce eventuali avvisi che si verificano durante il rendering.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Passaggio 6: salva il documento

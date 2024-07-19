@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Stap 2: Digitale handtekeningen detecteren
 
- Vervolgens gebruiken we de`DetectFileFormat` werkwijze van de`FileFormatUtil` klasse om informatie over het bestandsformaat te detecteren. In dit voorbeeld gaan we ervan uit dat het document "Digitaal ondertekend.docx" heet en zich in de opgegeven documentenmap bevindt.
+ Vervolgens gebruiken we de`DetectFileFormat` werkwijze van de`FileFormatUtil`klasse om informatie over het bestandsformaat te detecteren. In dit voorbeeld gaan we ervan uit dat het document "Digitaal ondertekend.docx" heet en zich in de opgegeven documentenmap bevindt.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ Deze tutorial heeft u een stapsgewijze handleiding gegeven over hoe u digitale h
 
 #### Hoe kan ik de aanwezigheid van een digitale handtekening op een Word-document detecteren met Aspose.Words voor .NET?
 
- Om de aanwezigheid van een digitale handtekening op een Word-document te detecteren met Aspose.Words voor .NET, kunt u de stappen in de zelfstudie volgen. De ... gebruiken`DetectFileFormat` werkwijze van de`FileFormatUtil` class kunt u informatie over het bestandsformaat detecteren. Dan kun je de`HasDigitalSignature` eigendom van de`FileFormatInfo`object om te bepalen of het document een digitale handtekening bevat. Als er een digitale handtekening wordt gedetecteerd, kunt u een bericht weergeven waarin staat dat handtekeningen verloren gaan als het document wordt geopend/opgeslagen met Aspose.Words.
+ Om de aanwezigheid van een digitale handtekening op een Word-document te detecteren met Aspose.Words voor .NET, kunt u de stappen in de zelfstudie volgen. De ... gebruiken`DetectFileFormat` werkwijze van de`FileFormatUtil` class kunt u informatie over het bestandsformaat detecteren. Dan kun je de`HasDigitalSignature` eigendom van de`FileFormatInfo` object om te bepalen of het document een digitale handtekening bevat. Als er een digitale handtekening wordt gedetecteerd, kunt u een bericht weergeven waarin staat dat handtekeningen verloren gaan als het document wordt geopend/opgeslagen met Aspose.Words.
 
 #### Hoe specificeer ik de map met de documenten waarin naar de digitale handtekening moet worden gezocht?
 

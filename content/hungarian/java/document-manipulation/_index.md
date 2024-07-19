@@ -63,7 +63,7 @@ Ismerje meg, hogyan kereshet és cserélhet szöveget Word dokumentumokban az As
 ### [Tartalom eltávolítása a dokumentumokból az Aspose.Words for Java programban](./removing-content-from-documents/)
 Ismerje meg, hogyan távolíthat el tartalmat a Word-dokumentumokból Java nyelven az Aspose.Words for Java használatával. Távolítsa el az oldaltöréseket, szakasztöréseket és egyebeket. Optimalizálja dokumentumfeldolgozását.
 ### [Könyvjelzők használata az Aspose.Words for Java programban](./using-bookmarks/)
-Optimalizálja dokumentumfeldolgozását az Aspose.Words for Java segítségével. Ebben a lépésenkénti útmutatóban megtudhatja, hogyan használhatja a könyvjelzőket a hatékony tartalomnavigációhoz és kezeléshez.
+Optimalizálja dokumentumfeldolgozását az Aspose.Words for Java segítségével. Ebben a lépésenkénti útmutatóban tanulja meg a könyvjelzők használatát a hatékony tartalomnavigáció és -kezelés érdekében.
 ### [Dokumentumtartományok használata az Aspose.Words for Java-ban](./using-document-ranges/)
 Az Aspose.Words for Java dokumentumtartomány-manipuláció mestere. Tanulja meg a szöveg törlését, kibontását és formázását ezzel az átfogó útmutatóval.
 ### [Strukturált dokumentumcímkék (SDT) használata az Aspose.Words for Java programban](./using-structured-document-tags/)

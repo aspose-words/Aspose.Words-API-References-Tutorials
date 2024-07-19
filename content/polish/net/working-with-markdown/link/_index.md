@@ -51,8 +51,8 @@ Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji łączy w Aspose.Wo
 
 #### P: Jak mogę dostosować wyświetlany tekst łącza w Aspose.Words?
 
-Odp.: Aby dostosować wyświetlany tekst łącza w Aspose.Words, możesz modyfikować zawartość między`<a>` tagi. Na przykład,`<a href="https://www.aspose.com">Click here</a>` wyświetli tekst „Kliknij tutaj” jako hiperłącze.
+ Odp.: Aby dostosować wyświetlany tekst łącza w Aspose.Words, możesz modyfikować zawartość między`<a>` tagi. Na przykład,`<a href="https://www.aspose.com">Click here</a>` wyświetli tekst „Kliknij tutaj” jako hiperłącze.
 
 #### P: Czy mogę określić cel łącza w Aspose.Words?
 
- O: Tak, możesz określić cel łącza w Aspose.Words za pomocą`target` atrybut`<a>` etykietka. Na przykład,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` otworzy link w nowym oknie lub nowej karcie.
+O: Tak, możesz określić cel łącza w Aspose.Words za pomocą`target` atrybut`<a>` etykietka. Na przykład,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` otworzy link w nowym oknie lub nowej karcie.

@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Skapa och formatera dokumentet
- Skapa en instans av`Document` klass och`DocumentBuilder` klass för att bygga dokumentet. Använd`Font` egendom av`DocumentBuilder`för att komma åt egenskaper för teckensnittsformatering.
+ Skapa en instans av`Document` klass och`DocumentBuilder` klass för att bygga dokumentet. Använd`Font` egendom av`DocumentBuilder` för att komma åt egenskaper för teckensnittsformatering.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## Steg 3: Spara dokumentet
- Använd`Save` metod för att spara dokumentet med typsnittsformateringen tillämpad. Byta ut`"WorkingWithFonts.SetFontFormatting.docx"` med önskat filnamn.
+ Använd`Save`metod för att spara dokumentet med typsnittsformateringen tillämpad. Byta ut`"WorkingWithFonts.SetFontFormatting.docx"` med önskat filnamn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

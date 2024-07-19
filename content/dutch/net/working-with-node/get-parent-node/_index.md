@@ -62,7 +62,7 @@ A: Het bovenliggende knooppunt in Node.js verwijst naar het volgende hogere knoo
 
 #### Vraag: Hoe kan ik het bovenliggende knooppunt van een specifiek knooppunt verkrijgen?
 
-A: Om het bovenliggende knooppunt van een specifiek knooppunt te verkrijgen, kunt u de`parentNode` eigenschap van het knooppunt. Deze eigenschap retourneert het bovenliggende knooppunt van het huidige knooppunt.
+ A: Om het bovenliggende knooppunt van een specifiek knooppunt te verkrijgen, kunt u de`parentNode` eigenschap van het knooppunt. Deze eigenschap retourneert het bovenliggende knooppunt van het huidige knooppunt.
 
 #### Vraag: Hoe controleer ik of een knooppunt een bovenliggend knooppunt heeft?
 
@@ -70,7 +70,7 @@ A: Om het bovenliggende knooppunt van een specifiek knooppunt te verkrijgen, kun
 
 #### Vraag: Kunnen we het bovenliggende knooppunt van een knooppunt wijzigen?
 
- A: In de meeste gevallen wordt het bovenliggende knooppunt van een knooppunt bepaald door de structuur van het XML-document en kan niet rechtstreeks worden gewijzigd. U kunt een knooppunt echter met specifieke methoden naar een ander knooppunt verplaatsen, zoals`appendChild` of`insertBefore`.
+A: In de meeste gevallen wordt het bovenliggende knooppunt van een knooppunt bepaald door de structuur van het XML-document en kan niet rechtstreeks worden gewijzigd. U kunt een knooppunt echter met specifieke methoden naar een ander knooppunt verplaatsen, zoals`appendChild` of`insertBefore`.
 
 #### Vraag: Hoe blader ik door de hiërarchie van bovenliggende knooppunten?
 

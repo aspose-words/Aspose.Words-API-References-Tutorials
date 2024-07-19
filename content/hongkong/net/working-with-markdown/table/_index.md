@@ -2,52 +2,67 @@
 title: 桌子
 linktitle: 桌子
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 逐步指南建立表單。
+description: 透過此逐步指南，了解如何在 Aspose.Words for .NET 中建立和自訂表格。非常適合產生結構化且具有視覺吸引力的文件。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-markdown/table/
 ---
+## 介紹
 
+使用文件中的表格是一項常見要求。無論您是產生報告、發票或任何結構化數據，表格都是不可或缺的。在本教程中，我將引導您使用 Aspose.Words for .NET 建立和自訂表格。讓我們深入了解吧！
 
-在此範例中，我們將引導您了解如何使用 Aspose.Words for .NET 建立表格。表是一種將資訊組織成行和列的資料結構。
+## 先決條件
 
-## 第 1 步：使用文件產生器
+在我們開始之前，請確保您具備以下先決條件：
 
-首先，我們將使用文件產生器將內容新增至文件。
+- Visual Studio：您需要一個開發環境來編寫和測試程式碼。 Visual Studio 是不錯的選擇。
+-  Aspose.Words for .NET：確保您已安裝 Aspose.Words 程式庫。如果沒有的話可以下載[這裡](https://releases.aspose.com/words/net/).
+- 對 C# 的基本了解：需要熟悉 C# 程式設計才能進行後續操作。
+
+## 導入命名空間
+
+在進入步驟之前，讓我們先導入必要的命名空間：
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## 步驟1：初始化Document和DocumentBuilder
+
+首先，我們需要建立一個新文件並初始化 DocumentBuilder 類，這將幫助我們建立表格。
+
+```csharp
+//初始化文檔生成器。
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
+此步驟就像設定您的工作區。您已準備好空白文件和筆。
 
-## 第 2 步：新增儲存格和數據
+## 第 2 步：開始建立你的桌子
 
-我們將使用以下命令將儲存格和資料新增至表格中`InsertCell`方法和`Writeln`文檔生成器的方法。
-
-```csharp
-builder. InsertCell();
-builder.Writeln("a");
-builder. InsertCell();
-builder.Writeln("b");
-
-builder. InsertCell();
-builder.Writeln("c");
-builder. InsertCell();
-builder.Writeln("d");
-```
-
-### 使用 Aspose.Words for .NET 建立表格的範例原始程式碼
+現在我們有了工具，讓我們開始建立表格。我們首先插入第一行的第一個儲存格。
 
 ```csharp
-//使用文件產生器將內容新增至文件。
-DocumentBuilder builder = new DocumentBuilder();
-
 //新增第一行。
 builder.InsertCell();
 builder.Writeln("a");
+
+//插入第二個單元格。
 builder.InsertCell();
 builder.Writeln("b");
 
+//結束第一行。
+builder.EndRow();
+```
+
+將此步驟視為在一張紙上繪製表格的第一行，並用“a”和“b”填充前兩個單元格。
+
+## 第 3 步：新增更多行
+
+讓我們在表中新增另一行。
+
+```csharp
 //新增第二行。
 builder.InsertCell();
 builder.Writeln("c");
@@ -55,26 +70,25 @@ builder.InsertCell();
 builder.Writeln("d");
 ```
 
-恭喜！現在您已經學習如何使用 Aspose.Words for .NET 建立表格。
+在這裡，我們只是透過添加另一行來擴展表格，其中包含兩個填充“c”和“d”的單元格。
 
-### 常見問題解答
+## 結論
 
-#### Q：如何在 Markdown 建立表格？
+一旦掌握了竅門，在 Aspose.Words for .NET 中建立和自訂表格就變得非常簡單。透過執行這些步驟，您可以在文件中產生結構化且具有視覺吸引力的表格。快樂編碼！
 
-答：要在 Markdown 中建立表格，請使用管道語法 (`|`來分隔儲存格和破折號 (`-`) 來分隔表頭。
+## 常見問題解答
 
-#### Q：我們可以在 Markdown 中自訂表格的外觀嗎？
+### 我可以連續添加兩個以上的單元格嗎？
+是的，您可以透過重複以下操作在一行中新增任意數量的儲存格`InsertCell()`和`Writeln()`方法。
 
-答：在標準 Markdown 中，表格自訂選項是有限的。但是，某些 Markdown 編輯器可讓您為表格新增 CSS 樣式以自訂其外觀。
+### 如何合併表格中的儲存格？
+您可以使用以下命令合併儲存格`CellFormat.HorizontalMerge`和`CellFormat.VerticalMerge`特性。
 
-#### Q：如何在 Markdown 中合併表格中的儲存格？
+### 是否可以將圖像新增至表格單元格？
+絕對地！您可以使用以下命令將圖像插入到單元格中`DocumentBuilder.InsertImage`方法。
 
-答：在 Markdown 中合併表格中的儲存格取決於所使用的 Markdown 編輯器。一些 Markdown 編輯器支援使用特定語法合併單元格。
+### 我可以對各個單元格設定不同的樣式嗎？
+是的，您可以透過存取單一儲存格來將不同的樣式套用到它們`Cells`行的集合。
 
-#### Q：Markdown 中的表格支援 CSS 樣式嗎？
-
-答：在標準 Markdown 中，表格不提供 CSS 樣式的直接支援。但是，某些 Markdown 編輯器可讓您為表格新增 CSS 樣式以自訂其外觀。
-
-#### Q：我們可以在 Markdown 表格的儲存格中新增內聯格式的連結或文字嗎？
-
-答：是的，您可以使用適當的 Markdown 語法將連結或內嵌文字新增至 Markdown 中的表格儲存格。
+### 如何刪除表格的邊框？
+您可以將邊框樣式設定為來刪除邊框`LineStyle.None`對於每種邊框類型。

@@ -12,7 +12,7 @@ Sei pronto per intraprendere un viaggio per padroneggiare l'arte di estrarre il 
 
 ## introduzione
 
-Aspose.Words per Java rappresenta un punto di svolta quando si tratta di lavorare con documenti Word a livello di codice. Che tu sia uno sviluppatore Java esperto o che tu abbia appena iniziato il tuo viaggio nella codifica, questa guida ti guiderà attraverso il processo di estrazione del contenuto dei documenti per pagine, fornendoti un prezioso set di competenze per varie applicazioni.
+Aspose.Words per Java rappresenta un punto di svolta quando si tratta di lavorare con documenti Word a livello di programmazione. Che tu sia uno sviluppatore Java esperto o che tu abbia appena iniziato il tuo viaggio nella codifica, questa guida ti guiderà attraverso il processo di estrazione del contenuto dei documenti per pagine, fornendoti un prezioso set di competenze per varie applicazioni.
 
 ## Iniziare
 

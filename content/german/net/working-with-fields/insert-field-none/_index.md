@@ -2,7 +2,7 @@
 title: Feld einfügen Keines
 linktitle: Feld einfügen Keines
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine leere Stelle in Ihre Word-Dokumente einfügen.
+description: Erfahren Sie, wie Sie AUCUN-Werte in Ihre Word-Dokumente mit Aspose.Words für .NET einfügen.
 type: docs
 weight: 10
 url: /de/net/working-with-fields/insert-field-none/

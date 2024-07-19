@@ -26,7 +26,7 @@ DocumentBuilder builder = new DocumentBuilder();
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 ```
 
-Aquí utilizamos la condición "1=1" como ejemplo, pero puede personalizar la condición según sea necesario.
+Aquí usamos la condición "1=1" como ejemplo, pero puede personalizar la condición según sea necesario.
 
 ## Paso 3: evaluar la condición IF
 
@@ -54,7 +54,7 @@ FieldIfComparisonResult actualResult = field.EvaluateCondition();
 Console.WriteLine(actualResult);
 ```
 
-En este ejemplo, creamos un generador de documentos, insertamos un campo IF con una condición especificada y luego evaluamos la condición. El resultado de la evaluación se muestra entonces en la consola.
+En este ejemplo, creamos un generador de documentos, insertamos un campo IF con una condición especificada y luego evaluamos la condición. El resultado de la evaluación se muestra luego en la consola.
 
 Con esto concluye nuestra guía sobre el uso de la función "Evaluar condición IF" con Aspose.Words para .NET.
 

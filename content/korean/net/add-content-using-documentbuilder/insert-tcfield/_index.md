@@ -9,7 +9,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## 소개
 
-안녕하세요! 문서 자동화의 세계에 뛰어들고 있다면 바로 이곳에 오셨습니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서에 TC(목차) 필드를 삽입하는 방법을 살펴보겠습니다. 저를 믿으세요. 이 튜토리얼이 끝나면 여러분은 Word 문서에서 마법사가 주문을 거는 듯한 느낌을 받게 될 것입니다. 시작할 준비가 되셨나요? 이렇게 해보자!
+안녕하세요! 문서 자동화의 세계에 뛰어들고 있다면 바로 이곳에 오셨습니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서에 TC(목차) 필드를 삽입하는 방법을 살펴보겠습니다. 저를 믿으세요. 이 튜토리얼이 끝나면 여러분은 Word 문서에서 마법사가 주문을 거는 듯한 느낌을 받게 될 것입니다. 시작할 준비가 되셨나요? 해보자!
 
 ## 전제조건
 
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- 이 코드 줄은 Aspose.Words에게 "Entry Text"라는 입력 텍스트가 있는 TC 필드를 삽입하도록 지시합니다. 그만큼`\\f t` part는 목차에 항목이 표시되는 방식을 결정하는 스위치입니다.
+ 이 코드 줄은 Aspose.Words에게 "Entry Text"라는 입력 텍스트가 있는 TC 필드를 삽입하도록 지시합니다. 그만큼`\\f t`part는 목차에 항목이 표시되는 방식을 결정하는 스위치입니다.
 
 ## 4단계: 문서 저장
 

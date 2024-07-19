@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2단계: 취소선 텍스트 스타일 적용
 
-취소선 텍스트 스타일을 활성화하려면`StrikeThrough` 의 재산`Font` 반대하다`true`.
+ 취소선 텍스트 스타일을 활성화하려면`StrikeThrough` 의 재산`Font` 반대하다`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

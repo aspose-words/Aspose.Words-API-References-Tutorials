@@ -19,7 +19,7 @@ url: /ar/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 الخطوة الأولى هي تحميل مستند PDF المشفر في التطبيق الخاص بك. هيريس كيفية القيام بذلك:
 
 ```csharp
-// المسار إلى دليل المستندات.
+//المسار إلى دليل المستندات.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

@@ -79,7 +79,7 @@ header.appendChild(field);
 
 Um ein nahtloses Erlebnis beim Gestalten von Kopf- und Fußzeilen von Dokumenten zu gewährleisten, beachten Sie die folgenden bewährten Methoden:
 
-- Halten Sie Kopf- und Fußzeilen präzise und relevant für den Inhalt Ihres Dokuments.
+- Halten Sie Kopf- und Fußzeilen präzise und passend zum Inhalt Ihres Dokuments.
 - Verwenden Sie in Kopf- und Fußzeilen eine einheitliche Formatierung, beispielsweise hinsichtlich Schriftgröße und -stil.
 - Testen Sie Ihr Dokument auf verschiedenen Geräten und in verschiedenen Formaten, um eine ordnungsgemäße Darstellung sicherzustellen.
 

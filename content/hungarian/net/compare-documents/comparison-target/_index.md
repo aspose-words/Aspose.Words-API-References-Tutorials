@@ -61,7 +61,7 @@ Document docB = new Document(dataDir + "DocumentB.docx");
 
 ## 4. lépés: Klónozza a dokumentumot
 
-A klónozás olyan, mintha egy azonos ikertestvért készítenél a dokumentumból. Ez a lépés biztosítja, hogy legyen egy biztonsági másolat, amelyet összehasonlíthat az eredetivel.
+A klónozás olyan, mintha egy azonos ikerpárt készítenél a dokumentumból. Ez a lépés biztosítja, hogy legyen egy biztonsági másolat, amelyet összehasonlíthat az eredetivel.
 
 ```csharp
 Document docB = docA.Clone();

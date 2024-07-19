@@ -23,7 +23,7 @@ string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-// 디렉터리가 아직 없으면 디렉터리를 만듭니다.
+// 디렉토리가 아직 존재하지 않는 경우 디렉토리를 생성하십시오.
 if (Directory.Exists(supportedDir) == false)
 Directory.CreateDirectory(supportedDir);
 if (Directory.Exists(unknownDir) == false)

@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## 4단계: 상위 노드 및 소유자 문서 확인
- 이제 단락 노드를 만들었으므로 해당 노드에 상위 노드가 있는지, 소유 문서가 다음과 같은지 확인할 수 있습니다.`doc`.
+이제 단락 노드를 만들었으므로 해당 노드에 상위 노드가 있는지, 소유 문서가 다음과 같은지 확인할 수 있습니다.`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ A: 대부분의 경우 노드의 문서 소유자는 노드가 생성될 때 결
 
 #### Q: 소유자 문서의 노드에 액세스하는 방법은 무엇입니까?
 
- A: 독점 문서의 노드에 액세스하려면 Node.js 환경에서 사용되는 XML API에서 제공하는 메서드와 속성을 사용할 수 있습니다. 예를 들어 다음과 같은 방법을 사용할 수 있습니다.`getElementsByTagName` 또는`querySelector` 문서에서 특정 노드를 선택합니다.
+A: 독점 문서의 노드에 액세스하려면 Node.js 환경에서 사용되는 XML API에서 제공하는 메서드와 속성을 사용할 수 있습니다. 예를 들어 다음과 같은 방법을 사용할 수 있습니다.`getElementsByTagName` 또는`querySelector` 문서에서 특정 노드를 선택합니다.

@@ -30,7 +30,7 @@ Para utilizar Aspose.Words para Java, debe agregar la biblioteca a su proyecto. 
 
 1.  Descargue la biblioteca Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
-2. Agregue el archivo JAR a la ruta de clase de su proyecto.
+2. Agregue el archivo JAR a la ruta de clases de su proyecto.
 
 ## Cargando un documento
 

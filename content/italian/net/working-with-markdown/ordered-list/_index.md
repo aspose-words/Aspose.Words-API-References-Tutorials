@@ -2,96 +2,96 @@
 title: Lista ordinata
 linktitle: Lista ordinata
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come creare un elenco ordinato con Aspose.Words per .NET Guida passo passo.
+description: Scopri come creare elenchi ordinati nei documenti Word utilizzando Aspose.Words per .NET con la nostra guida passo passo. Perfetto per automatizzare la creazione di documenti.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/ordered-list/
 ---
+## introduzione
 
-In questo esempio, spiegheremo come utilizzare la funzionalità dell'elenco ordinato con Aspose.Words per .NET. L'elenco ordinato ti consente di organizzare gli elementi in sequenza con i numeri.
+Quindi, hai deciso di immergerti in Aspose.Words per .NET per creare straordinari documenti Word a livello di codice. Scelta fantastica! Oggi analizzeremo come creare un elenco ordinato in un documento di Word. Lo procederemo passo dopo passo, quindi che tu sia un principiante della programmazione o un professionista esperto, troverai questa guida estremamente utile. Iniziamo!
 
-## Passaggio 1: utilizzo di un generatore di documenti
+## Prerequisiti
 
-Per prima cosa utilizzeremo un generatore di documenti per creare un nuovo documento.
+Prima di immergerci nel codice, ci sono alcune cose di cui avrai bisogno:
+
+1.  Aspose.Words per .NET: assicurati di avere Aspose.Words per .NET installato. In caso contrario, puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: Visual Studio o qualsiasi altro IDE compatibile con .NET.
+3. Conoscenza di base di C#: dovresti avere dimestichezza con le nozioni di base di C# per seguirle facilmente.
+
+## Importa spazi dei nomi
+
+Per utilizzare Aspose.Words nel tuo progetto, devi importare gli spazi dei nomi necessari. È come impostare la tua cassetta degli attrezzi prima di iniziare a lavorare.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Suddividiamo il codice in piccoli passaggi e spieghiamo ogni parte. Pronto? Eccoci qui!
+
+## Passaggio 1: inizializzare il documento
+
+Per prima cosa, devi creare un nuovo documento. Pensa a questo come all'apertura di un documento Word vuoto sul tuo computer.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 2: applicazione del formato elenco ordinato
+Qui stiamo inizializzando un nuovo documento e un oggetto DocumentBuilder. DocumentBuilder è come la tua penna e ti consente di scrivere contenuti nel documento.
 
- Applicheremo il formato dell'elenco ordinato utilizzando quello del generatore di documenti`ApplyBulletDefault`metodo. Possiamo anche personalizzare il formato della numerazione andando ai livelli dell'elenco e impostando il formato che desideriamo.
+## Passaggio 2: applicare il formato elenco numerato
+
+Ora applichiamo un formato di elenco numerato predefinito. È come impostare il documento di Word in modo che utilizzi i punti elenco numerati.
 
 ```csharp
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
+builder.ListFormat.ApplyNumberDefault();
 ```
 
-## Passaggio 3: aggiunta di elementi all'elenco
+Questa riga di codice imposta la numerazione del tuo elenco. Facile, vero?
 
- Possiamo aggiungere elementi all'elenco utilizzando il generatore di documenti`Writeln` metodo.
+## Passaggio 3: aggiungi elementi all'elenco
 
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Passaggio 4: rientra l'elenco
-
- Possiamo rientrare l'elenco utilizzando il generatore di documenti`ListIndent` metodo.
+Successivamente, aggiungiamo alcuni elementi al nostro elenco. Immagina di annotare la lista della spesa.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
-```
-
-## Passaggio 5: salvataggio del documento
-
-Infine, possiamo salvare il documento nel formato desiderato.
-
-### Codice sorgente di esempio per elenco ordinato con Aspose.Words per .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+Con queste righe aggiungi i primi due elementi alla tua lista.
+
+## Passaggio 4: rientro dell'elenco
+
+Cosa succede se desideri aggiungere elementi secondari sotto un articolo? Facciamolo!
+
+```csharp
 builder.ListFormat.ListIndent();
 
 builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Congratulazioni! Ora hai imparato come utilizzare la funzionalità di elenco ordinato con Aspose.Words per .NET.
+ IL`ListIndent` Il metodo rientra nell'elenco, creando un sottoelenco. Ora stai creando un elenco gerarchico, proprio come un elenco di cose da fare nidificate.
 
+## Conclusione
 
-### Domande frequenti
+Creare un elenco ordinato in un documento Word a livello di programmazione può sembrare scoraggiante all'inizio, ma con Aspose.Words per .NET è un gioco da ragazzi. Seguendo questi semplici passaggi, puoi facilmente aggiungere e gestire elenchi nei tuoi documenti. Che tu stia generando report, creando documenti strutturati o semplicemente automatizzando i tuoi flussi di lavoro, Aspose.Words per .NET ti copre. Quindi, perché aspettare? Inizia a programmare e osserva la magia svolgersi!
 
-#### D: Come creare un elenco ordinato in Markdown?
+## Domande frequenti
 
-R: Per creare un elenco ordinato in Markdown, inizia ogni elemento dell'elenco con un numero seguito da un punto (`1.`, `2.`, `3.`), seguito da uno spazio.
+### Posso personalizzare lo stile di numerazione dell'elenco?  
+ Sì, puoi personalizzare lo stile di numerazione utilizzando il file`ListFormat` proprietà. Puoi impostare diversi stili di numerazione come numeri romani, lettere, ecc.
 
-#### D: Possiamo nidificare elenchi ordinati in Markdown?
+### Come posso aggiungere più livelli di rientro?  
+ Puoi usare il`ListIndent` metodo più volte per creare livelli più profondi di sottoelenchi. Ogni chiamata a`ListIndent` aggiunge un livello di rientro.
 
-R: Sì, è possibile nidificare elenchi ordinati in Markdown aggiungendo quattro spazi di offset davanti a ciascun elemento dell'elenco nidificato.
+### Posso combinare elenchi puntati ed elenchi numerati?  
+ Assolutamente! È possibile applicare diversi formati di elenco all'interno dello stesso documento utilizzando il file`ListFormat` proprietà.
 
-#### D: Come personalizzare la numerazione degli elenchi ordinati?
+### È possibile continuare la numerazione da un elenco precedente?  
+Sì, puoi continuare la numerazione utilizzando lo stesso formato elenco. Aspose.Words ti consente di controllare la numerazione degli elenchi tra diversi paragrafi.
 
-R: Nel Markdown standard, la numerazione dell'elenco ordinato viene generata automaticamente. Tuttavia, alcuni editor Markdown ti consentono di personalizzarlo utilizzando estensioni specifiche.
-
-#### D: Gli elenchi ordinati in Markdown supportano il rientro?
-
-R: Sì, gli elenchi ordinati in Markdown supportano il rientro. Puoi aggiungere uno spostamento a sinistra utilizzando spazi o tabulazioni.
-
-#### D: È possibile aggiungere collegamenti o testo in linea agli elementi dell'elenco?
-
-R: Sì, puoi aggiungere collegamenti o testo in linea agli elementi dell'elenco utilizzando la sintassi Markdown appropriata.
+### Come posso rimuovere il formato dell'elenco?  
+ Puoi rimuovere il formato dell'elenco chiamando`ListFormat.RemoveNumbers()`. Ciò trasformerà gli elementi dell'elenco in paragrafi regolari.

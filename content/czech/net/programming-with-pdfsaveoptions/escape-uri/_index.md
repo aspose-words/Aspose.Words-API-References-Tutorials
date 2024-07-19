@@ -2,101 +2,100 @@
 title: Escape URI v dokumentu PDF
 linktitle: Escape URI v dokumentu PDF
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce Jak uniknout URI v dokumentu PDF pomocí Aspose.Words pro .NET.
+description: Naučte se, jak uniknout z URI v souborech PDF pomocí Aspose.Words for .NET. Tento podrobný průvodce vás provede procesem krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/escape-uri/
 ---
+## Úvod
 
-Tento článek poskytuje krok za krokem návod, jak Escape URI v dokumentu PDF pomocí Aspose.Words pro .NET. Každou část kódu si podrobně vysvětlíme. Na konci tohoto tutoriálu budete schopni porozumět tomu, jak vložit hypertextové odkazy s kódovaným Uri do dokumentu.
+Nazdárek! Přemýšleli jste někdy, jak zacházet s URI při ukládání dokumentu aplikace Word jako PDF pomocí Aspose.Words for .NET? Jste na správném místě! Dnes se ponoříme hluboko do únikových URI v dokumentech PDF, abychom zajistili jejich správnou funkci při převodu dokumentu. Vydejme se na tuto cestu společně, krok za krokem, a ujistěte se, že na cestě pochopíte každý koncept.
 
-Než začnete, ujistěte se, že jste ve svém projektu nainstalovali a nakonfigurovali knihovnu Aspose.Words for .NET. Knihovnu a pokyny k instalaci najdete na webu Aspose.
+## Předpoklady
 
-## Krok 1: Definujte adresář dokumentů
+Než začneme, ujistěte se, že máte vše, co potřebujete:
 
- Chcete-li začít, musíte definovat cestu k adresáři, kde jsou umístěny vaše dokumenty. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
+3. Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
+
+## Importovat jmenné prostory
+
+Nejprve musíte importovat potřebné jmenné prostory. To je zásadní pro přístup k funkcím Aspose.Words.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Dobře, pojďme si tento proces rozdělit na stravitelné kroky. Postupujte podle toho a okamžitě budete profesionálem v úniku z URI!
+
+## Krok 1: Nastavte adresář dokumentů
+
+Než se ponoříte do kódu, nastavte cestu k adresáři dokumentů. Zde budou uloženy vaše soubory.
+
+```csharp
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Krok 2: Vytvořte dokument a DocumentBuilder
+ Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou, kam chcete uložit dokument PDF.
 
- Dále musíme vytvořit nový`Document` objekt a a`DocumentBuilder` objekt k vytvoření dokumentu.
+## Krok 2: Vytvořte nový dokument
+
+Dále vytvoříme nový dokument pomocí Aspose.Words. Tento dokument bude sloužit jako naše plátno pro vkládání hypertextových odkazů.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Vložte hypertextové odkazy s kódem Uri
+ Tady,`Document` je váš nový dokument aplikace Word a`DocumentBuilder` je pomocná třída, která zjednodušuje proces vytváření dokumentu.
 
- Použijte`InsertHyperlink` metoda`DocumentBuilder` objekt pro vložení hypertextových odkazů do dokumentu. Uri musí uniknout pomocí`Uri.EscapeUriString` funkce, aby se zabránilo chybám ve formátu.
+## Krok 3: Vložte hypertextový odkaz
+
+Nyní do dokumentu vložíme hypertextový odkaz. Tento hypertextový odkaz bude středem našeho procesu úniku z URI.
 
 ```csharp
-builder.InsertHyperlink("Testlink",
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), nepravda);
-builder. Writen();
-builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"),
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), nepravda);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
 ```
+
+ V tomto řádku`"Testlink"` je zobrazovaný text pro hypertextový odkaz a`"https://www.google.com/search?q= aspose"` je URL. The`false` parametr označuje, že odkaz by neměl být formátován jako hypertextový odkaz (tj. nebude podtržený a modrý).
 
 ## Krok 4: Uložte dokument jako PDF
 
- Nakonec můžeme dokument uložit jako PDF pomocí`Save` metoda`Document` objekt. Zadejte název výstupního souboru.
+Nakonec dokument uložte jako PDF. Zde se Aspose.Words stará o únik z URI ve výstupu PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-To je vše ! Úspěšně jste do dokumentu pomocí Aspose.Words for .NET vložili hypertextové odkazy s kódem Uri.
-
-### Ukázka zdrojového kódu pro únik Uri pomocí Aspose.Words pro .NET
-
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHyperlink("Testlink", 
-		"https://www.google.com/search?q=%2Fthe%20test", false);
-	builder.Writeln();
-	builder.InsertHyperlink("https:// www.google.com/search?q=%2Fthe%20test",
-		"https://www.google.com/search?q=%2Fthe%20test", false);
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");    
-  
-```
+ Tento řádek uloží dokument do zadaného adresáře s názvem souboru`WorkingWithPdfSaveOptions.EscapeUri.pdf`.
 
 ## Závěr
 
-V tomto tutoriálu jsme se zabývali tím, jak uniknout z URI v dokumentu PDF pomocí Aspose.Words pro .NET. Escapováním URI se můžete vyhnout chybám ve formátování a zajistit, aby byly hypertextové odkazy správně interpretovány a zobrazeny v dokumentu PDF. Chcete-li do dokumentu PDF vložit hypertextové odkazy s kódem URI, postupujte podle uvedených kroků. Určitě uteč.
+tady to máte! Právě jste se naučili, jak uniknout URI při ukládání dokumentu aplikace Word jako PDF pomocí Aspose.Words for .NET. Tento proces zajišťuje, že vaše hypertextové odkazy zůstanou ve výsledném PDF funkční a správně naformátované. 
 
-### Často kladené otázky
+Pamatujte, že zvládnutí těchto malých, ale významných technik může výrazně zlepšit kvalitu a funkčnost vašich dokumentů. Šťastné kódování!
 
-#### Otázka: Co je escape URI v dokumentu PDF a proč je důležité?
-Odpověď: Escape URI v dokumentu PDF odkazuje na metodu převodu speciálních znaků v URL na escape sekvence, aby se předešlo chybám ve formátu. To je důležité, protože speciální znaky v adrese URL mohou narušit strukturu adresy URL a vést k nesprávné interpretaci nebo nesprávnému vykreslení. Escapováním speciálních znaků zaručujeme, že adresa URL bude správně interpretována a zobrazena v dokumentu PDF.
+## FAQ
 
-#### Otázka: Jak mohu pomocí Aspose.Words for .NET uniknout identifikátorům URI v dokumentu PDF?
-Odpověď: Chcete-li uniknout identifikátorům URI v dokumentu PDF pomocí Aspose.Words for .NET, postupujte takto:
+### Co je Aspose.Words for .NET?
 
- Nahrazením nastavte cestu k adresáři, kde jsou umístěny vaše dokumenty`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty aplikace Word v aplikacích .NET.
 
- Vytvořte novou instanci souboru`Document` třída a a`DocumentBuilder` objekt k vytvoření dokumentu.
+### Proč je escapování URI důležité v souborech PDF?
 
- Použijte`InsertHyperlink` metoda`DocumentBuilder` objekt pro vložení hypertextových odkazů do dokumentu. Nezapomeňte uniknout URI pomocí`Uri.EscapeUriString` funkce, aby se zabránilo chybám ve formátu.
+Escapování URI zajišťuje správnou interpretaci speciálních znaků v adresách URL, zabraňuje nefunkčním odkazům a zajišťuje, že fungují tak, jak mají.
 
- Použijte`Save` metoda`Document` objekt pro uložení dokumentu ve formátu PDF zadáním názvu výstupního souboru.
+### Mohu v Aspose.Words pro .NET použít jiné typy odkazů?
 
-#### Otázka: Jaké jsou výhody escapování URI v dokumentu PDF?
-Odpověď: Výhody escapování URI v dokumentu PDF jsou:
+Absolutně! Aspose.Words podporuje různé typy odkazů, včetně odkazů na interní dokumenty, záložek a externích adres URL.
 
-Prevence chyb formátu: Escapování URI pomáhá předcházet chybám formátu způsobeným speciálními znaky v adrese URL a zajišťuje, že adresa URL je správně interpretována a zobrazena v dokumentu PDF.
+### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
 
-Kompatibilita se čtečkami PDF: Unifikované URI jsou čtečkami PDF obecně dobře podporovány, což zajišťuje lepší kompatibilitu a konzistentní uživatelskou zkušenost.
+ Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
 
-#### Otázka: Jaké speciální znaky by měly být v URI kódovány?
- A: Speciální znaky, které musí být v URI uvozeny, jsou: mezera, <, >, ", #, %, {, },|, \, ^, ~, [, ], `, ;, /, ?, :, @, =, &, $, +, ,, [, ], and !.
+### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?
+
+ Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).

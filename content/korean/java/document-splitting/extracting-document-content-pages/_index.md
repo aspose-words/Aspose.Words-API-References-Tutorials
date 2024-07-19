@@ -138,7 +138,7 @@ Document doc = new Document("encrypted.docx", new LoadOptions("password"));
 
 예, Aspose.Words for Java를 사용하여 비밀번호로 보호된 문서에서 콘텐츠를 추출할 수 있습니다. 위에 표시된 대로 문서를 로드할 때 올바른 비밀번호를 제공하기만 하면 됩니다.
 
-### Aspose.Words for Java는 Java 11 이상과 호환됩니까?
+### Aspose.Words for Java는 Java 11 이상과 호환되나요?
 
 예, Aspose.Words for Java는 Java 11 이상 버전과 호환됩니다.
 

@@ -78,11 +78,11 @@ A: Een alineaknooppunt in een XML-document wordt gebruikt om een alinea tekst we
 
 #### Vraag: Hoe voeg ik een alineaknooppunt toe aan een bestaand XML-document?
 
- A: Om een alineaknooppunt aan een bestaand XML-document toe te voegen, kunt u de`appendChild`methode om het alineaknooppunt toe te voegen als onderliggend element van een ander element in het XML-document. U kunt het bijvoorbeeld toevoegen als onderliggend element van het hoofdelement van het document.
+ A: Om een alineaknooppunt aan een bestaand XML-document toe te voegen, kunt u de`appendChild` methode om het alineaknooppunt toe te voegen als onderliggend element van een ander element in het XML-document. U kunt het bijvoorbeeld toevoegen als onderliggend element van het hoofdelement van het document.
 
 #### Vraag: Hoe definieer ik de inhoud van een alineaknooppunt?
 
- A: Om de inhoud van een alineaknooppunt in te stellen, kunt u de`createTextNode` methode om een tekstknooppunt te maken dat de gewenste inhoud bevat, en gebruik vervolgens de`appendChild` methode om dat tekstknooppunt toe te voegen als een onderliggend punt van het knooppunt van de alinea.
+ A: Om de inhoud van een alineaknooppunt in te stellen, kunt u de`createTextNode` methode om een tekstknooppunt te maken dat de gewenste inhoud bevat, en gebruik vervolgens de`appendChild`methode om dat tekstknooppunt toe te voegen als een onderliggend punt van het knooppunt van de alinea.
 
 #### Vraag: Hoe kan ik tekst in een alineaknooppunt opmaken?
 

@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## 3. lépés: Dokumentumcsomópont-típus lekérése
- Egy dokumentum csomóponttípusának meghatározásához a`NodeType` ingatlan.
+Egy dokumentum csomóponttípusának meghatározásához a`NodeType` ingatlan.
 
 ```csharp
 NodeType type = doc.NodeType;

@@ -111,11 +111,11 @@ Det här steget är som att lägga sista handen på vårt konstverk. Bordsstrukt
 doc.Save("YourDirectoryPath/AddContentUsingDocumentBuilder.BuildTable.docx");
 ```
 
-Se det här som att rama in vårt mästerverk och visa det. Ditt bord är nu en del av ett Word-dokument, redo att delas och beundras.
+Se detta som att rama in vårt mästerverk och visa det. Ditt bord är nu en del av ett Word-dokument, redo att delas och beundras.
 
 ## Slutsats
 
-Och där har du det! Du har framgångsrikt byggt en tabell i ett Word-dokument med Aspose.Words för .NET. Denna handledning ledde dig genom varje steg, från att initiera dokumentet till att spara den slutliga produkten. Med Aspose.Words är möjligheterna oändliga. Oavsett om du skapar rapporter, fakturor eller vilket annat dokument som helst, har du nu möjlighet att formatera och anpassa tabeller till ditt hjärta.
+Och där har du det! Du har framgångsrikt byggt en tabell i ett Word-dokument med Aspose.Words för .NET. Den här handledningen gick igenom varje steg, från att initiera dokumentet till att spara den slutliga produkten. Med Aspose.Words är möjligheterna oändliga. Oavsett om du skapar rapporter, fakturor eller vilket annat dokument som helst, har du nu möjlighet att formatera och anpassa tabeller till ditt hjärta.
 
 Kom ihåg att övning ger färdighet. Så tveka inte att experimentera med olika tabellformat och stilar. Glad kodning!
 

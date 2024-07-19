@@ -19,8 +19,8 @@ Seguindo estes tutoriais, você poderá gerenciar seções em seus documentos do
 | Título | Descrição |
 | --- | --- |
 | [Adicionar seção](./add-section/) | Neste tutorial, aprenda como adicionar uma seção a um documento do Word usando Aspose.Words for .NET. Guia passo a passo para estruturar seu documento. |
-| [Excluir seção](./delete-section/) | Neste tutorial, aprenda como remover uma seção específica de um documento do Word com Aspose.Words for .NET. |
-| [Excluir todas as seções](./delete-all-sections/) | Neste tutorial, aprenda como remover todas as seções de um documento do Word usando Aspose.Words for .NET. |
+| [Excluir seção](./delete-section/) | Domine a manipulação de documentos com Aspose.Words for .NET. Aprenda como excluir seções de documentos do Word em algumas etapas simples. |
+| [Excluir todas as seções](./delete-all-sections/) | Aprenda como excluir todas as seções em um documento do Word usando Aspose.Words for .NET com este guia passo a passo fácil de seguir. |
 | [Anexar conteúdo da palavra da seção](./append-section-content/) | Neste tutorial, aprenda como adicionar conteúdo de palavras a seções específicas de um documento do Word usando Aspose.Words for .NET.  |
 | [Seção Clonar](./clone-section/) | Neste tutorial, aprenda como clonar uma seção em um documento do Word usando Aspose.Words for .NET. Guia passo a passo. |
 | [Copiar Seção](./copy-section/) | Neste tutorial, aprenda como copiar uma seção de um documento do Word para outro documento usando Aspose.Words for .NET. |

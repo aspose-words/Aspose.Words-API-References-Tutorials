@@ -52,7 +52,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak uzyskać typy wersji słów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępowaliśmy zgodnie z instrukcjami, aby załadować dokument, przejrzeć akapity i sprawdzić typy recenzji słownych powiązanych z każdym akapitem. Teraz możesz zastosować tę wiedzę do analizowania recenzji słów we własnych dokumentach Word przy użyciu Aspose.Words dla .NET.
+W tym samouczku nauczyliśmy się, jak uzyskać typy wersji słów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępowaliśmy zgodnie z instrukcjami, aby załadować dokument, przejrzeć akapity i sprawdzić typy recenzji słownych powiązanych z każdym akapitem. Teraz możesz zastosować tę wiedzę do analizy recenzji słów we własnych dokumentach Word przy użyciu Aspose.Words dla .NET.
 
 ### Często zadawane pytania dotyczące typów wersji słów
 

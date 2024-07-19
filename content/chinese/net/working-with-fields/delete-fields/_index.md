@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 遍历文档中的所有字段并将其删除：
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 此循环向后迭代字段集合，以避免在迭代时修改集合的问题。

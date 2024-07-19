@@ -10,7 +10,7 @@ url: /zh-hant/python-net/word-automation/word-automation-made-easy/
 
 ## 介紹
 
-在當今快節奏的世界中，自動化任務對於提高效率和生產力至關重要。其中一項任務是 Word Automation，我們可以透過程式設計方式建立、操作和處理 Word 文件。在本逐步教學中，我們將探索如何使用 Aspose.Words for Python 輕鬆實現 Word 自動化，Aspose.Words 是一個功能強大的函式庫，為文字處理和文件操作提供了廣泛的功能。
+在當今快節奏的世界中，自動化任務對於提高效率和生產力至關重要。其中一項任務是 Word Automation，我們可以透過程式設計方式建立、操作和處理 Word 文件。在本逐步教學中，我們將探索如何使用 Aspose.Words for Python 輕鬆實現 Word 自動化，這是一個功能強大的函式庫，為文字處理和文件操作提供了廣泛的功能。
 
 ## 了解文字自動化
 
@@ -52,7 +52,7 @@ doc = aw.Document()
 paragraph = doc.get_child_nodes(aw.NodeType.PARAGRAPH, True).add("Hello, this is my first paragraph.")
 ```
 
-## 格式化文檔
+## 設定文檔格式
 
 格式對於使我們的文件具有視覺吸引力和結構性至關重要。 Aspose.Words 允許我們套用各種格式選項。
 
@@ -112,7 +112,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 ## 進階 Word 自動化功能
 
-Aspose.Words 提供高級功能，例如郵件合併、文件加密以及使用書籤、超連結和註釋。
+Aspose.Words 提供了高級功能，例如郵件合併、文件加密以及使用書籤、超連結和註釋。
 
 ## 自動化文件處理
 

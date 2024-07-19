@@ -15,7 +15,7 @@ V tomto tutoriálu vás provedeme tím, jak načíst konkrétní rozsah stránek
 načtení určitého rozsahu stránek z dokumentu PDF použijte následující kód:
 
 ```csharp
-// Cesta k adresáři dokumentů.
+//Cesta k adresáři dokumentů.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };

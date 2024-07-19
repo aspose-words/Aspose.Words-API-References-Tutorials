@@ -17,7 +17,7 @@ url: /zh-hant/net/programming-with-charts/single-chart-data-point/
 
 -  Aspose.Words for .NET Library：確保您擁有最新版本。[在這裡下載](https://releases.aspose.com/words/net/).
 - .NET Framework：請確定您的電腦上安裝了 .NET Framework。
-- 對 C# 的基本了解：對 C# 程式設計的基本掌握會有所幫助。
+- 對 C# 的基本了解：對 C# 程式設計的基本掌握會很有幫助。
 - 整合開發環境（IDE）：建議使用Visual Studio。
 
 ## 導入命名空間
@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-這`InsertChart`方法將圖表類型、寬度和高度作為參數。在本例中，我們插入一個寬度為 432、高度為 252 的折線圖。
+這`InsertChart`方法將圖表類型、寬度和高度作為參數。在本例中，我們插入寬度為 432、高度為 252 的折線圖。
 
 ## 第 3 步：造訪圖表系列
 

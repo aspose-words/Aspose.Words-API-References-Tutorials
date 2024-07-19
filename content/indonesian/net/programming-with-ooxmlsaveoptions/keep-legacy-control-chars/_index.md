@@ -66,4 +66,4 @@ Dalam tutorial ini, kita menjelajahi fungsionalitas mempertahankan karakter kont
 
 Aspose.Words for .NET menawarkan serangkaian opsi pencadangan yang fleksibel dan kuat untuk memenuhi kebutuhan manipulasi dokumen Anda. Dengan menggunakan opsi yang sesuai, Anda dapat menyesuaikan proses pencadangan untuk mempertahankan karakteristik spesifik dokumen Anda.
 
-Jangan ragu untuk menggabungkan fungsi ini ke dalam proyek Aspose.Words for .NET Anda untuk memastikan integritas dan pelestarian karakter kontrol lama dalam dokumen Anda.
+Jangan ragu untuk memasukkan fungsi ini ke dalam proyek Aspose.Words for .NET Anda untuk memastikan integritas dan pelestarian karakter kontrol lama dalam dokumen Anda.

@@ -98,7 +98,7 @@ Akapit może zawierać węzły, takie jak przebiegi, kształty, komentarze i inn
  Tak, możesz manipulować różnymi typami węzłów, takimi jak kształty, komentarze i inne, sprawdzając ich`NodeType`.
 
 ### 4. Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
- Możesz rozpocząć od bezpłatnego okresu próbnego lub uzyskać tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
+Możesz rozpocząć od bezpłatnego okresu próbnego lub uzyskać tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Gdzie mogę znaleźć więcej przykładów i dokumentacji?
  Odwiedzić[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/) aby uzyskać więcej przykładów i szczegółowej dokumentacji.

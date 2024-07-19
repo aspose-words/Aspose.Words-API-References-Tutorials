@@ -120,7 +120,7 @@ Ebben az oktatóanyagban megvizsgáltuk, hogyan hozhat létre és kezelhet list�
 ### Testreszabhatom a listáim számozási stílusát?
 Teljesen! Az Aspose.Words Python lehetővé teszi a számozási formátumok, a felsorolás-stílusok és az igazítás testreszabását, hogy listáit az Ön egyedi igényeihez igazítsa.
 
-### Lehetséges beágyazott listák létrehozása az Aspose.Words használatával?
+### Lehetséges beágyazott listákat létrehozni az Aspose.Words használatával?
 Igen, létrehozhat beágyazott listákat, ha allistákat ad hozzá a fő listához. Ez hasznos az információk hierarchikus megjelenítéséhez.
 
 ### Átalakíthatom a meglévő egyszerű szövegemet listákká?

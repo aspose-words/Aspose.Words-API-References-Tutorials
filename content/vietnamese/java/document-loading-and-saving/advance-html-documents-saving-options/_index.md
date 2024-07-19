@@ -75,7 +75,7 @@ public void convertMetafilesToSvg() throws Exception {
 ```
 
 ## 7. Thêm tiền tố tên lớp CSS
- Với`addCssClassNamePrefix` phương thức này, bạn có thể thêm tiền tố vào tên lớp CSS trong HTML được xuất. Điều này giúp ngăn ngừa xung đột với các phong cách hiện có.
+ Với`addCssClassNamePrefix` phương thức này, bạn có thể thêm tiền tố vào tên lớp CSS trong HTML đã xuất. Điều này giúp ngăn ngừa xung đột với các phong cách hiện có.
 
 ```java
 @Test

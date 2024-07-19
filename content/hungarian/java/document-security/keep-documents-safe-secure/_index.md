@@ -199,7 +199,7 @@ biztonsági intézkedések alkalmazása után alaposan tesztelje le dokumentumai
 
 ## 14. Következtetés
 
-Ebben a lépésenkénti útmutatóban megvizsgáltuk a dokumentumbiztonság fontosságát, és azt, hogy az Aspose.Words for Java hogyan védheti meg dokumentumait az illetéktelen hozzáféréstől. A könyvtár olyan funkcióinak kihasználásával, mint a jelszavas védelem, a titkosítás, a digitális aláírás, a vízjel és a szerkesztés, biztosíthatja dokumentumai biztonságát.
+Ebben a lépésenkénti útmutatóban megvizsgáltuk a dokumentumbiztonság fontosságát, és azt, hogy az Aspose.Words for Java hogyan védheti meg dokumentumait az illetéktelen hozzáféréstől. A könyvtár funkcióinak, például a jelszavas védelemnek, a titkosításnak, a digitális aláírásnak, a vízjelnek és a szerkesztésnek a kihasználásával gondoskodhat arról, hogy dokumentumai biztonságban maradjanak.
 
 ## GYIK
 

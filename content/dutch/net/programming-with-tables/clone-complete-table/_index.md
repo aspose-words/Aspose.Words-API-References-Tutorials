@@ -37,7 +37,7 @@ Vervolgens klonen we de hele tabel en voegen deze na het origineel in het docume
 // Kloon de array
 Table tableClone = (Table)table.Clone(true);
 
-//Plaats de gekloonde tabel na het origineel in het document
+// Plaats de gekloonde tabel na het origineel in het document
 table.ParentNode.InsertAfter(tableClone, table);
 
 // Voeg een lege alinea in tussen de twee tabellen
@@ -68,7 +68,7 @@ Zorg ervoor dat u het juiste pad en de juiste bestandsnaam voor het uitvoerdocum
 	// Kloon de tabel en plaats deze na het origineel in het document.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Voeg een lege alinea in tussen de twee tabellen,
+	//Voeg een lege alinea in tussen de twee tabellen,
 	// anders worden ze bij het opslaan tot één samengevoegd. Dit heeft te maken met documentvalidatie.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

@@ -88,7 +88,7 @@ A. Yeni bir belge ve belge oluşturucu oluşturmak için şu adımları takip ed
 ```csharp
 Document doc = new Document();
 ```
- Kullan`DocumentBuilder`önceden oluşturulan belgeyle ilişkili bir belge oluşturucu oluşturmak için sınıf:
+ Kullan`DocumentBuilder` önceden oluşturulan belgeyle ilişkili bir belge oluşturucu oluşturmak için sınıf:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### S. Bir OLE nesnesini bir akıştan simge olarak projeme eklemek için kodu nasıl eklerim?
 
 A. Bir OLE nesnesini bir akıştan simge olarak projenize ekleme kodunu eklemek için şu adımları izleyin:
--  Uygun referansları ekleyerek gerekli referansları içe aktarın`using` ifadeler.
+- Uygun referansları ekleyerek gerekli referansları içe aktarın`using` ifadeler.
 -  kullanarak yeni bir belge ve belge oluşturucu oluşturun.`Document`Ve`DocumentBuilder` sınıflar.
 - OLE nesnesini bir akıştan simge olarak eklemek için kodu kullanın.
 -  kullanarak belgeyi kaydedin.`Save` uygun hedef yolu ile yöntem.

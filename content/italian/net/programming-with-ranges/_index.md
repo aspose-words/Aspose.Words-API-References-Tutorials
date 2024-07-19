@@ -7,7 +7,7 @@ type: docs
 weight: 1390
 url: /it/net/programming-with-ranges/
 ---
-I tutorial Aspose.Words per .NET "Elaborazione delle parole con intervalli" sono una risorsa completa per imparare a manipolare e lavorare con intervalli di testo nei documenti di Word. Questi tutorial ti guideranno attraverso esempi pratici, mostrandoti come selezionare, copiare, spostare ed eliminare intervalli di testo, nonché come applicare una formattazione specifica a tali intervalli.
+tutorial Aspose.Words per .NET "Elaborazione delle parole con intervalli" sono una risorsa completa per imparare a manipolare e lavorare con intervalli di testo nei documenti di Word. Questi tutorial ti guideranno attraverso esempi pratici, mostrandoti come selezionare, copiare, spostare ed eliminare intervalli di testo, nonché come applicare una formattazione specifica a tali intervalli.
 
 In questi tutorial imparerai come utilizzare le varie funzionalità offerte da Aspose.Words per .NET per lavorare in modo efficiente e accurato con gli intervalli di testo. Imparerai come identificare gli intervalli utilizzando diversi metodi di selezione, manipolarne il contenuto utilizzando operazioni di copia, taglio ed eliminazione e applicare formati come grassetto, corsivo e colore del carattere. carattere negli intervalli selezionati.
 

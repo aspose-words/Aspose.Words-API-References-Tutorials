@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Schriftartquellen konfigurieren
-Als nächstes erstellen wir eine Instanz von`FontSettings` und holen Sie sich die bestehenden Fontquellen mit dem`GetFontsSources()` Methode. Wir werden auch eine neue Schriftartquelle hinzufügen, indem wir einen Ordner mit Schriftarten angeben.
+ Als nächstes erstellen wir eine Instanz von`FontSettings` und holen Sie sich die bestehenden Fontquellen mit dem`GetFontsSources()` Methode. Wir werden auch eine neue Schriftartquelle hinzufügen, indem wir einen Ordner mit Schriftarten angeben.
 
 ```csharp
 // Konfigurieren von Schriftartquellen

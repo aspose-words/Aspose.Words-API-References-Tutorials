@@ -1,6 +1,6 @@
 ---
-title: szakaszok elérése index szerint
-linktitle: szakaszok elérése index szerint
+title: A szakaszok elérése index szerint
+linktitle: A szakaszok elérése index szerint
 second_title: Aspose.Words Document Processing API
 description: Ebből az oktatóanyagból megtudhatja, hogyan érheti el a Word-dokumentum részeit index segítségével, és hogyan módosíthatja azok beállításait az Aspose.Words for .NET segítségével.
 type: docs

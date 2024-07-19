@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Stap 3: Pagina-indeling bijwerken
-
- Bel de`UpdatePageLayout`methode. Hierdoor wordt het document in het geheugen weergegeven en worden eventuele waarschuwingen vastgelegd die tijdens het renderen optreden.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Stap 4: Stel de waarschuwingscallback in
+## Stap 3: Stel de waarschuwingscallback in
 
  Om waarschuwingen vast te leggen en af te handelen, maakt u een klasse die de`IWarningCallback` koppel. Deze klasse registreert alle waarschuwingen die optreden tijdens de documentverwerking.
 
@@ -62,16 +54,12 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Wij zijn alleen geïnteresseerd in het vervangen van lettertypen.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Stap 5: Wijs de terugbelactie toe aan het document
+## Stap 4: Wijs de terugbelactie toe aan het document
 
 Wijs de waarschuwingscallback toe aan het document. Dit zorgt ervoor dat eventuele lettertypeproblemen worden vastgelegd en geregistreerd.
 
@@ -79,8 +67,15 @@ Wijs de waarschuwingscallback toe aan het document. Dit zorgt ervoor dat eventue
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
 ```
+## Stap 5: Pagina-indeling bijwerken
 
-## Stap 6: Bewaar het document
+ Bel de`UpdatePageLayout` methode. Hierdoor wordt het document in het geheugen weergegeven en worden eventuele waarschuwingen vastgelegd die tijdens het renderen optreden.
+
+```csharp
+doc.UpdatePageLayout();
+```
+
+## Stap 6: Sla het document op
 
 Sla ten slotte het document op. Zelfs als het document eerder is weergegeven, worden eventuele opslagwaarschuwingen tijdens deze stap aan de gebruiker gemeld.
 

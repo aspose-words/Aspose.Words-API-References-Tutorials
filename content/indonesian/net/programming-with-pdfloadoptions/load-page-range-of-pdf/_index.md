@@ -15,7 +15,7 @@ Dalam tutorial ini, kami akan memandu Anda tentang cara memuat rentang halaman t
 Gunakan kode berikut untuk memuat rentang halaman tertentu dari dokumen PDF:
 
 ```csharp
-// Jalur ke direktori dokumen.
+//Jalur ke direktori dokumen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };

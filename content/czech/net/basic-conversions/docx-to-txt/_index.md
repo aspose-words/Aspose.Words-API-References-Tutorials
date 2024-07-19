@@ -34,7 +34,7 @@ Pojďme si proces převodu rozdělit do zvládnutelných kroků, abyste jej mohl
 Než se ponoříte do kódu, ujistěte se, že je váš projekt správně nastaven.
 
 1. Vytvoření nového projektu: Otevřete Visual Studio a vytvořte nový projekt C#.
-2. Instalace Aspose.Words for .NET: K instalaci knihovny Aspose.Words for .NET použijte Správce balíčků NuGet. Můžete to udělat tak, že kliknete pravým tlačítkem na váš projekt, vyberete „Spravovat balíčky NuGet“ a vyhledáte „Aspose.Words“.
+2. Instalace Aspose.Words for .NET: K instalaci knihovny Aspose.Words for .NET použijte Správce balíčků NuGet. Můžete to udělat tak, že kliknete pravým tlačítkem na svůj projekt, vyberete „Spravovat balíčky NuGet“ a vyhledáte „Aspose.Words“.
 
 ## Krok 2: Přidejte cestu k adresáři dokumentů
 
@@ -46,7 +46,7 @@ Dále budete muset zadat cestu k adresáři dokumentů. Zde jsou uloženy vaše 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-2. Ujistěte se, že cesta je správná: Dvakrát zkontrolujte, zda je cesta k adresáři správná, abyste předešli chybám, které nebyly nalezeny.
+2. Ujistěte se, že cesta je správná: Dvakrát zkontrolujte, zda je cesta k adresáři správná, abyste se vyhnuli chybám, které nebyly nalezeny.
 
 ## Krok 3: Vložte dokument DOCX
 

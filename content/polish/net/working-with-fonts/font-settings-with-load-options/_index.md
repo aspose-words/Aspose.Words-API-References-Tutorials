@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Skonfiguruj opcje ładowania za pomocą ustawień czcionek
-Następnie utworzymy instancję`LoadOptions` i określ ustawienia czcionki, tworząc nową instancję`FontSettings` i przypisanie go do`loadOptions.FontSettings`.
+ Następnie utworzymy instancję`LoadOptions` określ ustawienia czcionki, tworząc nową instancję`FontSettings` i przypisanie go do`loadOptions.FontSettings`.
 
 ```csharp
 // Skonfiguruj opcje ładowania za pomocą ustawień czcionek
@@ -57,7 +57,7 @@ W tym samouczku widzieliśmy, jak używać opcji ładowania z ustawieniami czcio
 
 #### P: Jak mogę określić domyślną czcionkę podczas ładowania dokumentu do Aspose.Words?
 
- O: Aby określić domyślną czcionkę podczas ładowania dokumentu w Aspose.Words, możesz użyć`LoadOptions` klasę i ustaw`DefaultFontName`właściwość na nazwę żądanej czcionki.
+ O: Aby określić domyślną czcionkę podczas ładowania dokumentu w Aspose.Words, możesz użyć`LoadOptions` klasę i ustaw`DefaultFontName` właściwość na nazwę żądanej czcionki.
 
 #### P: Jakie inne ustawienia czcionek mogę określić za pomocą opcji ładowania w Aspose.Words?
 

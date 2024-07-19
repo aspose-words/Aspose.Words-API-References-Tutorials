@@ -54,7 +54,7 @@ HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 
 ## 3. Adım: Bul ve Değiştir Seçeneklerini Ayarlayın
 
-Metin değiştirme işlemini gerçekleştirmeden önce bulma ve değiştirme işlemi için bazı seçenekleri ayarlamamız gerekiyor. Bu, büyük/küçük harf duyarlılığını ve yalnızca tam kelimelerin eşleşip eşleşmeyeceğini içerir.
+Metin değiştirme işlemini gerçekleştirmeden önce bul ve değiştir işlemi için bazı seçenekleri ayarlamamız gerekiyor. Bu, büyük/küçük harf duyarlılığını ve yalnızca tam kelimelerin eşleşip eşleşmeyeceğini içerir.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions

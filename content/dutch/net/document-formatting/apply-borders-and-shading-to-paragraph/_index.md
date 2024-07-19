@@ -93,7 +93,7 @@ builder.Write("I'm a formatted paragraph with double border and nice shading.");
 
 Deze regel voegt onze tekst in het document in. Eenvoudig, maar nu verpakt in een stijlvol kader en een schaduwrijke achtergrond.
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Eindelijk is het tijd om ons werk te redden. Laten we het document opslaan in de opgegeven map met een beschrijvende naam.
 

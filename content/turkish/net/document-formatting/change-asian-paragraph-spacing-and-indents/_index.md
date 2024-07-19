@@ -106,4 +106,4 @@ Evet, bu ayarlar herhangi bir metne uygulanabilir ancak benzersiz aralık ve gir
 Kesinlikle! Bir belge koleksiyonunda döngü yapabilir ve bu ayarları programlı olarak her birine uygulayabilirsiniz.
 
 ### Sorunlarla karşılaşırsam veya sorularım olursa ne yapmalıyım?
-Herhangi bir sorunla karşılaşırsanız veya başka sorularınız varsa,[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım istemek için harika bir yerdir.
+ Herhangi bir sorunla karşılaşırsanız veya başka sorularınız varsa,[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım istemek için harika bir yerdir.

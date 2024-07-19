@@ -9,13 +9,13 @@ url: /sv/net/basic-conversions/pdf-to-jpeg/
 ---
 ## Introduktion
 
-Har du någonsin hamnat i en situation där du behövde konvertera en PDF-fil till en JPEG-bild? Kanske för enklare delning, inbäddning i en presentation eller bara för en snabb förhandsvisning? Nåväl, du har tur! I den här handledningen dyker vi djupt in i Aspose.Words-världen för .NET för att visa dig exakt hur du sparar en PDF som en JPEG. Tro mig, det är lättare än du tror. Så ta en kopp kaffe, luta dig tillbaka och låt oss förvandla dessa PDF-filer till fantastiska JPEG-filer!
+Har du någonsin hamnat i en situation där du behövde konvertera en PDF-fil till en JPEG-bild? Kanske för enklare delning, inbäddning i en presentation eller bara för en snabb förhandsvisning? Tja, du har tur! I den här handledningen dyker vi djupt in i Aspose.Words-världen för .NET för att visa dig exakt hur du sparar en PDF som en JPEG. Tro mig, det är lättare än du tror. Så ta en kopp kaffe, luta dig tillbaka och låt oss förvandla dessa PDF-filer till fantastiska JPEG-filer!
 
 ## Förutsättningar
 
 Innan vi hoppar in i det nitty-gritty, låt oss se till att vi har alla våra ankor på rad. Här är vad du behöver:
 
-1.  Aspose.Words för .NET: Se till att du har detta kraftfulla bibliotek installerat. Om inte kan du ladda ner den[här](https://releases.aspose.com/words/net/).
+1. Aspose.Words för .NET: Se till att du har detta kraftfulla bibliotek installerat. Om inte kan du ladda ner den[här](https://releases.aspose.com/words/net/).
 2. .NET Framework: Se till att du har .NET-miljön inställd på din dator.
 3. Visual Studio: Vilken version som helst, så länge du är bekväm med att navigera genom den.
 4.  En PDF-fil: Ha din PDF-fil redo att konverteras. För den här handledningen använder vi en fil med namnet`Pdf Document.pdf`.

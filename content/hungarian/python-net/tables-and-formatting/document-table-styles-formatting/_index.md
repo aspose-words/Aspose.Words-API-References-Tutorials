@@ -10,7 +10,7 @@ url: /hu/python-net/tables-and-formatting/document-table-styles-formatting/
 
 dokumentumtáblázatok döntő szerepet játszanak az információk szervezett és tetszetős megjelenítésében. Az Aspose.Words for Python hatékony eszközkészletet biztosít, amely lehetővé teszi a fejlesztők számára, hogy hatékonyan dolgozzanak a táblázatokkal, és testreszabják azok stílusát és formázását. Ebben a cikkben megvizsgáljuk, hogyan lehet manipulálni és javítani a dokumentumtáblázatokat az Aspose.Words for Python API használatával. Merüljünk el!
 
-## Az Aspose.Words for Python használatának első lépései
+## Az Aspose.Words for Python használatának megkezdése
 
 Mielőtt belemerülnénk a dokumentumtábla-stílusok és formázások sajátosságaiba, győződjön meg arról, hogy be van állítva a szükséges eszközök:
 
@@ -127,7 +127,7 @@ Az Aspose.Words for Python számos stílusbeállítást kínál, hogy a tábláz
 
 ## Sorok és oszlopok magasságának és szélességének beállítása
 
-A sor- és oszlopméretek finomhangolása a kiegyensúlyozott táblázatelrendezés érdekében:
+Finomítsa a sor- és oszlopméreteket a kiegyensúlyozott táblázatelrendezéshez:
 
 1. Sor magasságának beállítása: A sor magasságának módosítása a tartalom alapján.
 

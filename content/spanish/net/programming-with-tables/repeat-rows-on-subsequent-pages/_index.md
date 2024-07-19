@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-//Inserta la primera celda de la primera fila.
+// Inserta la primera celda de la primera fila.
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();
@@ -117,4 +117,4 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
 ## Conclusión
-En este tutorial, aprendimos cómo repetir las filas de una tabla en páginas posteriores de un documento de Word usando Aspose.Words para .NET. Siguiendo esta guía paso a paso e implementando el código C# proporcionado, puede especificar qué líneas repetir según sus necesidades específicas en sus documentos de Word.
+En este tutorial, aprendimos cómo repetir las filas de una tabla en páginas posteriores de un documento de Word usando Aspose.Words para .NET. Si sigue esta guía paso a paso e implementa el código C# proporcionado, puede especificar qué líneas repetir según sus necesidades específicas en sus documentos de Word.

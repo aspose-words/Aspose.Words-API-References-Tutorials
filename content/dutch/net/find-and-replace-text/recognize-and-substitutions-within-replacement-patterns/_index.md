@@ -82,7 +82,7 @@ doc.Range.Replace(regex, @"$2 take money from $1", options);
 
  Hier,`$2`En`$1` zijn vervangingspatronen.`$2` verwijst naar de tweede gevangengenomen groep (Paul), en`$1` verwijst naar de eerste gevangengenomen groep (Jason). Het resultaat zal zijn: "Paul neemt geld van Jason."
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Vergeet ten slotte niet uw document op te slaan om de wijzigingen te zien.
 

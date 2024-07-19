@@ -276,7 +276,7 @@ Ano, pomocí Aspose.Words for Java můžete nastavit různá ohraničení pro je
 
 ### Jaký je účel nastavení názvu a popisu tabulky?
 
-Nastavení názvu a popisu tabulky zlepšuje přístupnost a organizaci vašeho dokumentu a usnadňuje čtenářům a pomocným technologiím porozumění obsahu.
+Nastavení názvu tabulky a popisu zlepšuje přístupnost a organizaci vašeho dokumentu a usnadňuje čtenářům a pomocným technologiím porozumění obsahu.
 
 ### Jak mohu použít podmíněné formátování na konkrétní řádky v tabulce?
 

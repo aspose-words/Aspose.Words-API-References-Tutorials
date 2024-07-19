@@ -105,4 +105,4 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 ```
 
 ## Conclusión
-En este tutorial, aprendimos cómo crear una tabla simple en un documento de Word usando Aspose.Words para .NET. Si sigue esta guía paso a paso e implementa el código C# proporcionado, puede crear tablas personalizadas en sus documentos de Word mediante programación. Esta función le permite formatear y organizar sus datos de una manera estructurada y clara.
+En este tutorial, aprendimos cómo crear una tabla simple en un documento de Word usando Aspose.Words para .NET. Si sigue esta guía paso a paso e implementa el código C# proporcionado, puede crear tablas personalizadas en sus documentos de Word mediante programación. Esta característica le permite formatear y organizar sus datos de una manera estructurada y clara.

@@ -55,7 +55,7 @@ Neste exemplo:
 
 ## Etapa 3: carregue o documento
 
- Com suas fontes de fontes configuradas, a próxima etapa é carregar seu documento em um Aspose.Words`Document`objeto. Isso permite manipular e eventualmente salvar o documento.
+ Com suas fontes de fontes configuradas, a próxima etapa é carregar seu documento em um Aspose.Words`Document` objeto. Isso permite manipular e eventualmente salvar o documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -73,7 +73,7 @@ Seguindo essas etapas, você configurou com êxito as configurações de fonte p
 
 ## Conclusão
 
-Parabéns! Você dominou os fundamentos do gerenciamento de configurações de fonte usando Aspose.Words for .NET. Esteja você trabalhando em um projeto simples ou em um sistema complexo de processamento de documentos, essas habilidades o ajudarão a garantir que seus documentos tenham a aparência que você deseja. Lembre-se, a flexibilidade fornecida pelo Aspose.Words permite uma ampla gama de personalizações, então não hesite em explorar e experimentar diferentes configurações.
+Parabéns! Você dominou os fundamentos do gerenciamento de configurações de fonte usando Aspose.Words for .NET. Esteja você trabalhando em um projeto simples ou em um sistema complexo de processamento de documentos, essas habilidades o ajudarão a garantir que seus documentos tenham a aparência que você deseja. Lembre-se de que a flexibilidade fornecida pelo Aspose.Words permite uma ampla gama de personalizações, então não hesite em explorar e experimentar diferentes configurações.
 
 ## Perguntas frequentes
 

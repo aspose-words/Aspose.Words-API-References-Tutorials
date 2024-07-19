@@ -78,11 +78,11 @@ Odp.: Węzeł akapitu w dokumencie XML służy do reprezentowania akapitu tekstu
 
 #### P: Jak dodać węzeł akapitu do istniejącego dokumentu XML?
 
- O: Aby dodać węzeł akapitu do istniejącego dokumentu XML, możesz użyć metody`appendChild`metoda dodania węzła akapitu jako elementu podrzędnego innego elementu w dokumencie XML. Można na przykład dodać go jako element podrzędny elementu głównego dokumentu.
+ O: Aby dodać węzeł akapitu do istniejącego dokumentu XML, możesz użyć metody`appendChild` metoda dodania węzła akapitu jako elementu podrzędnego innego elementu w dokumencie XML. Można na przykład dodać go jako element podrzędny elementu głównego dokumentu.
 
 #### P: Jak zdefiniować zawartość węzła akapitu?
 
- O: Aby ustawić zawartość węzła akapitu, możesz użyć opcji`createTextNode` metodę tworzenia węzła tekstowego zawierającego żądaną treść, a następnie użyj metody`appendChild` metoda dodania tego węzła tekstowego jako elementu podrzędnego węzła akapitu.
+ O: Aby ustawić zawartość węzła akapitu, możesz użyć opcji`createTextNode` metodę tworzenia węzła tekstowego zawierającego żądaną treść, a następnie użyj metody`appendChild`metoda dodania tego węzła tekstowego jako elementu podrzędnego węzła akapitu.
 
 #### P: Jak sformatować tekst w węźle akapitu?
 

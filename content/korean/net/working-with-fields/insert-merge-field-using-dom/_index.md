@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 다음으로, 병합 필드를 삽입하려는 문서의 특정 단락으로 커서를 이동해야 합니다.
 
 ```csharp
-// 커서를 단락으로 이동합니다.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## 6단계: 병합 필드 삽입

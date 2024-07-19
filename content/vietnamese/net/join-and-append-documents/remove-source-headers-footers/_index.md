@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Bước 1: Tải tài liệu nguồn
 
- Trước tiên, bạn cần tải tài liệu nguồn mà bạn muốn xóa đầu trang và chân trang. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế tới thư mục tài liệu của bạn, nơi chứa tài liệu nguồn.
+Trước tiên, bạn cần tải tài liệu nguồn mà bạn muốn xóa đầu trang và chân trang. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế tới thư mục tài liệu của bạn, nơi chứa tài liệu nguồn.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

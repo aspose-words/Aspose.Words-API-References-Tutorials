@@ -38,7 +38,7 @@ string[] fieldNames = doc.MailMerge.GetFieldNames();
 
  Itu`fieldNames` variabel sekarang berisi nama bidang gabungan.
 
-### Contoh Kode Sumber untuk Mendapatkan Penggabungan Nama Bidang dengan Aspose.Words untuk .NET
+### Contoh Kode Sumber untuk Dapatkan Gabungkan Nama Bidang dengan Aspose.Words untuk .NET
 
 ```csharp
 // Jalur ke direktori dokumen.

@@ -58,7 +58,7 @@ Aqui está o código-fonte completo para usar o recurso para evitar a incorpora�
 
 ```
 
-Seguindo essas etapas, você pode controlar facilmente se as fontes básicas devem ser incorporadas no PDF ao converter um documento do Word com Aspose.Words for .NET.
+Seguindo essas etapas, você pode controlar facilmente se as fontes básicas devem ser incorporadas ao PDF ao converter um documento do Word com Aspose.Words for .NET.
 
 
 ## Conclusão

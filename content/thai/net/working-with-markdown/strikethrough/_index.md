@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## ขั้นตอนที่ 2: ใช้รูปแบบข้อความขีดทับ
 
-เราจะเปิดใช้งานรูปแบบข้อความขีดทับโดยการตั้งค่า`StrikeThrough` ทรัพย์สินของ`Font` วัตถุประสงค์`true`.
+ เราจะเปิดใช้งานรูปแบบข้อความขีดทับโดยการตั้งค่า`StrikeThrough` ทรัพย์สินของ`Font` วัตถุประสงค์`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

@@ -94,7 +94,7 @@ Sì, Aspose.Words per .NET ti consente di configurare le opzioni di salvataggio 
 
 ### Ho bisogno di una licenza per utilizzare Aspose.Words per .NET?
 
- Sebbene sia possibile utilizzare Aspose.Words per .NET senza una licenza per la valutazione, è necessaria una licenza per sbloccare la funzionalità completa. È possibile ottenere una licenza[Qui](https://purchase.aspose.com/buy) oppure usa a[licenza temporanea](https://purchase.aspose.com/temporary-license/) Per la valutazione.
+ Sebbene sia possibile utilizzare Aspose.Words per .NET senza una licenza per la valutazione, è necessaria una licenza per sbloccare la funzionalità completa. È possibile ottenere una licenza[Qui](https://purchase.aspose.com/buy)oppure usa a[licenza temporanea](https://purchase.aspose.com/temporary-license/) Per la valutazione.
 
 ### Come posso garantire che i miei documenti siano conformi agli standard PDF/A?
 

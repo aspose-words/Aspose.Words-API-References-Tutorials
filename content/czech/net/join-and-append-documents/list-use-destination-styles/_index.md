@@ -2,126 +2,93 @@
 title: Seznam použít styly cíle
 linktitle: Seznam použít styly cíle
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak hladce slučovat a spravovat seznamy dokumentů pomocí Aspose.Words pro .NET. Postupujte podle našeho podrobného návodu pro efektivní integraci dokumentů.
+description: Naučte se sloučit dokumenty aplikace Word pomocí Aspose.Words for .NET bez ztráty formátování seznamu. Podrobný průvodce pro zachování stylů dokumentů beze změny.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## Úvod
 
-Integrace dokumentů při zachování konzistentního stylu může být náročná, zejména u seznamů. Aspose.Words for .NET poskytuje robustní nástroje pro správu těchto složitostí a zajišťuje, že si vaše dokumenty zachovají svou integritu formátování. Tento výukový program vás provede procesem slučování dokumentů se seznamy pomocí cílových stylů pro vyleštěný konečný produkt.
+Zkoušeli jste někdy sloučit dokumenty Wordu a zamotali jste se s formátováním? Je to jako zkusit občas smíchat olej a vodu, že? No, dnes se ponoříme do úhledného triku pomocí Aspose.Words pro .NET, který vás ušetří této bolesti hlavy. Naučíme se, jak importovat seznamy z jednoho dokumentu do druhého, aniž bychom si pokazili číslování a styly. Jste připraveni si trochu usnadnit život? Začněme!
 
 ## Předpoklady
 
-Než se pustíte do tohoto návodu, ujistěte se, že máte následující:
-- Visual Studio nainstalované na vašem počítači.
-- Knihovna Aspose.Words for .NET integrovaná do vašeho projektu.
-- Základní znalost programovacího jazyka C#.
+Než se pustíme do kouzla, ujistěte se, že máte vše, co potřebujete:
+
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+2. Visual Studio: Bude stačit jakákoli nejnovější verze.
+3. Základní porozumění C#: Nemusíte být čaroděj, ale trocha znalosti vám pomůže.
+
+ Ujistěte se, že máte Aspose.Words nainstalované a nastavené ve svém projektu. Pokud si nejste jisti, jak to udělat,[dokumentace](https://reference.aspose.com/words/net/) je skvělé místo, kde začít.
 
 ## Importovat jmenné prostory
 
-Začněte importováním potřebných jmenných prostorů pro využití funkcí Aspose.Words:
+Nejprve importujme potřebné jmenné prostory do vašeho souboru C#:
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.Lists;
+using Aspose.Words.Saving;
 ```
 
-Rozdělme si proces do jasných kroků:
+Máš to? Skvělý. Pojďme si to nyní rozebrat krok za krokem.
 
-## Krok 1: Nastavte cesty dokumentu
+## Krok 1: Nastavte cesty k dokumentu
 
-Ujistěte se, že jste definovali cestu k adresáři, kde jsou uloženy vaše dokumenty:
+Každý projekt začíná uspořádáním vašich souborů. Ukažme náš kód na adresář, kde jsou uloženy vaše dokumenty.
 
 ```csharp
-string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Nahradit`"YOUR_DOCUMENT_DIRECTORY_PATH"` se skutečnou cestou k adresáři, kde jsou uloženy vaše dokumenty.
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kde jsou vaše dokumenty uloženy. Snadné, že?
 
 ## Krok 2: Načtěte zdrojové a cílové dokumenty
 
-Načtěte zdrojové a cílové dokumenty pomocí Aspose.Words:
+Dále musíme načíst zdrojové i cílové dokumenty. Představte si to jako otevření dvou souborů aplikace Word v počítači.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "DocumentSource.docx");
-Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
+Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
- Upravit`"DocumentSource.docx"`a`"DocumentDestination.docx"` se skutečnými názvy souborů.
+ Tady,`srcDoc` je váš zdrojový dokument (ten se seznamy, které chcete zkopírovat), a`dstDoc` je váš cílový dokument (ten, kam chcete tyto seznamy vložit).
 
-## Krok 3: Nastavte začátek sekce pro zdrojový dokument
+## Krok 3: Nakonfigurujte možnosti importu
 
-Chcete-li zajistit hladké sloučení dokumentů, nastavte začátek sekce zdrojového dokumentu:
+Musíme zadat některé možnosti, abychom se ujistili, že jsou seznamy importovány správně. Tento krok zajistí, že v případě konfliktu číslování se zachová číslování ze zdrojového dokumentu.
 
 ```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-Toto nastavení pomáhá zachovat kontinuitu mezi dokumenty.
+## Krok 4: Připojte zdrojový dokument k cílovému dokumentu
 
-## Krok 4: Správa integrace seznamu
-
-Procházením odstavců ve zdrojovém dokumentu můžete zpracovávat položky seznamu:
+Nyní provedeme sloučení. Tady se děje kouzlo. Zdrojový dokument připojíme k cílovému dokumentu při použití zadaných možností importu.
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-Tento segment kódu zajišťuje, že seznamy ze zdrojového dokumentu se hladce integrují do cílového dokumentu a zachovají si své původní formátování.
-
-## Krok 5: Připojte zdrojový dokument k cílovému dokumentu
-
-Sloučit upravený zdrojový dokument do cílového dokumentu:
-
-```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-```
-
-Tento příkaz sloučí dokumenty při zachování cílových stylů.
+Úspěšně jste sloučili dva dokumenty a seznamy zůstaly nedotčené.
 
 ## Závěr
 
-Pomocí následujících kroků můžete efektivně spravovat a slučovat seznamy mezi dokumenty pomocí Aspose.Words for .NET. Tento přístup zajišťuje, že si váš konečný dokument zachová konzistentní styl a formátování, čímž se zvýší celková efektivita správy dokumentů.
+Tady to máš! Slučování dokumentů bez ztráty mysli na problémy s formátováním je s Aspose.Words pro .NET hračkou. Ať už pracujete na velkém projektu nebo jen potřebujete uklidit nějaké soubory, tato metoda udrží vaše seznamy ostré. Takže až budete příště čelit dilematu se slučováním dokumentů, zapamatujte si tuto příručku a pusťte se do toho jako profík!
 
 ## FAQ
 
-### Jak mohu zpracovat vnořené seznamy pomocí Aspose.Words pro .NET?
-Aspose.Words poskytuje metody pro správu vnořených seznamů iterací mezi uzly dokumentu a kontrolou struktur kontrolních seznamů.
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty Wordu. Umožňuje vytvářet, upravovat a převádět dokumenty v různých formátech.
 
-### Jaké jsou výhody použití cílových stylů při slučování dokumentů?
-Cílové styly pomáhají udržovat jednotnost formátování napříč sloučenými dokumenty a zajišťují profesionální vzhled.
+### Jak nainstaluji Aspose.Words for .NET?
+ Můžete si jej stáhnout z[webová stránka](https://releases.aspose.com/words/net/) a postupujte podle pokynů k instalaci v[dokumentace](https://reference.aspose.com/words/net/).
 
-### Podporuje Aspose.Words slučování dokumentů napříč platformami?
-Ano, Aspose.Words podporuje slučování dokumentů napříč různými platformami, včetně prostředí Windows a Linux.
+### Mohu používat Aspose.Words zdarma?
+ Aspose.Words nabízí a[zkušební verze zdarma](https://releases.aspose.com/) s omezenými funkcemi. Pro plný přístup si budete muset zakoupit licenci[tady](https://purchase.aspose.com/buy).
 
-### Mohu přizpůsobit formátování seznamu během slučování dokumentů?
-Aspose.Words umožňuje rozsáhlé přizpůsobení formátování seznamu, což umožňuje přizpůsobená řešení integrace dokumentů.
+### Co jsou možnosti ImportFormat?
+ ImportFormatOptions umožňují určit, jak se bude zpracovávat formátování při importu obsahu z jednoho dokumentu do druhého. Například,`KeepSourceNumbering` zajišťuje zachování číslování seznamů ze zdrojového dokumentu.
 
-### Kde najdu další zdroje o pokročilé správě dokumentů pomocí Aspose.Words?
- Prozkoumat[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) pro komplexní průvodce a reference API.
+### Kde mohu získat podporu pro Aspose.Words?
+ Můžete získat podporu od[Fórum Aspose.Words](https://forum.aspose.com/c/words/8), kde můžete klást otázky a získat pomoc od komunity a vývojářů Aspose.

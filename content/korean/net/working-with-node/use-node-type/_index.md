@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## 3단계: 문서 노드 유형 가져오기
- 문서의 노드 유형을 얻으려면 다음을 사용합니다.`NodeType` 재산.
+문서의 노드 유형을 얻으려면 다음을 사용합니다.`NodeType` 재산.
 
 ```csharp
 NodeType type = doc.NodeType;

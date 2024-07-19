@@ -44,7 +44,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Etapa 2: inicializar o documento e o construtor
 
-A seguir, precisamos criar um novo documento Word e um DocumentBuilder. Pense nisso como estabelecer as bases e preparar suas ferramentas.
+A seguir, precisamos criar um novo documento Word e um DocumentBuilder. Pense nisso como lançar as bases e preparar suas ferramentas.
 
 ```csharp
 Document doc = new Document();

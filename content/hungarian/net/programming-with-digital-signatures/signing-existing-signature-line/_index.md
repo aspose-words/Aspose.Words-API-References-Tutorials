@@ -51,7 +51,7 @@ SignatureLine signatureLine = ((Shape) doc.FirstSection.Body.GetChild(NodeType.S
 
 ## 3. lépés: Aláírási beállítások beállítása
 
-A jelbeállítások beállítása elengedhetetlen. Ez magában foglalja az aláírási sor azonosítójának megadását és az aláírásként használt kép megadását.
+jelbeállítások beállítása elengedhetetlen. Ez magában foglalja az aláírási sor azonosítójának megadását és az aláírásként használt kép megadását.
 
 ```csharp
 SignOptions signOptions = new SignOptions

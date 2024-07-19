@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Dodaj tekst do dokumentu
 
-Następnie dodajmy trochę tekstu do dokumentu. Tekst ten będzie celem naszych działań zastępczych.
+Następnie dodajmy trochę tekstu do dokumentu. Ten tekst będzie celem naszych działań zastępczych.
 
 ```csharp
 builder.Write("Jason give money to Paul.");
@@ -105,7 +105,7 @@ Aspose.Words dla .NET to potężna biblioteka do pracy z dokumentami Word w apli
  Możesz zainstalować Aspose.Words dla .NET z[link do pobrania](https://releases.aspose.com/words/net/). Postępuj zgodnie z dostarczonymi instrukcjami instalacji.
 
 ### Czy mogę używać wyrażeń regularnych w Aspose.Words dla .NET?
-Tak, Aspose.Words obsługuje wyrażenia regularne dla operacji wyszukiwania i zamiany, umożliwiając złożone manipulacje tekstem.
+Tak, Aspose.Words obsługuje wyrażenia regularne dla operacji znajdowania i zamieniania, umożliwiając złożone manipulacje tekstem.
 
 ### Jakie są wzorce podstawień w wyrażeniach regularnych?
  Wzory substytucji, np`$1`I`$2`, odnoszą się do przechwyconych grup w dopasowaniu wyrażeń regularnych. Służą do zmiany układu lub ponownego wykorzystania części dopasowanego tekstu w ciągu zastępczym.

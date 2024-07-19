@@ -38,7 +38,7 @@ Paragraph para = new Paragraph(doc);
 Section section = doc.LastSection;
 ```
 
-## Etapa 5: adicione o nó de parágrafo ao documento
+## Etapa 5: adicione o nó do parágrafo ao documento
  Agora que temos a seção do documento, podemos adicionar o nó do parágrafo à seção usando o comando`AppendChild` método na seção`Body` propriedade.
 
 ```csharp
@@ -78,11 +78,11 @@ R: Um nó de parágrafo em um documento XML é usado para representar um parágr
 
 #### P: Como adicionar um nó de parágrafo a um documento XML existente?
 
- R: Para adicionar um nó de parágrafo a um documento XML existente, você pode usar o`appendChild`método para adicionar o nó de parágrafo como filho de outro elemento no documento XML. Por exemplo, você pode adicioná-lo como filho do elemento raiz do documento.
+ R: Para adicionar um nó de parágrafo a um documento XML existente, você pode usar o`appendChild` método para adicionar o nó de parágrafo como filho de outro elemento no documento XML. Por exemplo, você pode adicioná-lo como filho do elemento raiz do documento.
 
 #### P: Como definir o conteúdo de um nó de parágrafo?
 
- R: Para definir o conteúdo de um nó de parágrafo, você pode usar o`createTextNode` método para criar um nó de texto contendo o conteúdo desejado e, em seguida, use o método`appendChild` método para adicionar esse nó de texto como filho do nó do parágrafo.
+ R: Para definir o conteúdo de um nó de parágrafo, você pode usar o`createTextNode` método para criar um nó de texto contendo o conteúdo desejado e, em seguida, use o método`appendChild`método para adicionar esse nó de texto como filho do nó do parágrafo.
 
 #### P: Como formato o texto em um nó de parágrafo?
 

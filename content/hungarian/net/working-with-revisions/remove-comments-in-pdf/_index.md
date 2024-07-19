@@ -66,7 +66,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan távolíthat el megjegyzéseket egy
 
 #### K: Hogyan lehet dokumentumot feltölteni az Aspose.Words for .NET-be?
 
- V: Használja a`Document` osztályú Aspose.Words .NET-hez a dokumentum fájlból való betöltéséhez. Megadhatja a teljes dokumentum elérési utat.
+ V: Használja a`Document` osztályú Aspose.Words .NET-hez a dokumentum fájlból való betöltéséhez. Megadhatja a dokumentum teljes elérési útját.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");

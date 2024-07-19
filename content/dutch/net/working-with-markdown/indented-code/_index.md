@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Stap 2: Voeg styling toe voor ingesprongen code
 
-We zullen een aangepaste stijl toevoegen voor de ingesprongen code met behulp van de`Styles.Add` werkwijze van de`Document` voorwerp. In dit voorbeeld maken we een stijl met de naam "IndentedCode" voor ingesprongen code.
+ We zullen een aangepaste stijl toevoegen voor de ingesprongen code met behulp van de`Styles.Add` werkwijze van de`Document` voorwerp. In dit voorbeeld maken we een stijl met de naam "IndentedCode" voor ingesprongen code.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

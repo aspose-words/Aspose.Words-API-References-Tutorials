@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : configurer les options de chargement avec les paramètres de police
-Ensuite, nous allons créer une instance de`LoadOptions` et spécifiez les paramètres de police en créant une nouvelle instance de`FontSettings` et l'attribuer à`loadOptions.FontSettings`.
+ Ensuite, nous allons créer une instance de`LoadOptions`et spécifiez les paramètres de police en créant une nouvelle instance de`FontSettings` et l'attribuer à`loadOptions.FontSettings`.
 
 ```csharp
 // Configurer les options de chargement avec les paramètres de police
@@ -57,7 +57,7 @@ Dans ce didacticiel, nous avons vu comment utiliser les options de chargement av
 
 #### Q : Comment puis-je spécifier une police par défaut lors du chargement d'un document dans Aspose.Words ?
 
- R : Pour spécifier une police par défaut lors du chargement d'un document dans Aspose.Words, vous pouvez utiliser l'option`LoadOptions` classe et définir le`DefaultFontName`propriété au nom de la police souhaitée.
+ R : Pour spécifier une police par défaut lors du chargement d'un document dans Aspose.Words, vous pouvez utiliser l'option`LoadOptions` classe et définir le`DefaultFontName` propriété au nom de la police souhaitée.
 
 #### Q : Quels autres paramètres de police puis-je spécifier avec les options de chargement dans Aspose.Words ?
 

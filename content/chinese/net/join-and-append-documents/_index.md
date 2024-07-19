@@ -28,9 +28,9 @@ url: /zh/net/join-and-append-documents/
 | [保留源格式](./keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 合并 Word 文档并保留格式。非常适合希望自动执行文档组装任务的开发人员。 |
 | [保持源代码一致](./keep-source-together/) | 了解如何使用 Aspose.Words for .NET 合并 Word 文档并保留格式。本综合指南涵盖从设置到执行的所有内容。 |
 | [列表保留源格式](./list-keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 合并 Word 文档并保留格式。本教程提供无缝文档合并的分步指导。 |
-| [列出使用目标样式](./list-use-destination-styles/) | 了解如何使用 Aspose.Words for .NET 无缝合并和管理文档列表。按照我们的分步教程进行高效的文档集成。 |
+| [列出使用目标样式](./list-use-destination-styles/) | 了解如何使用 Aspose.Words for .NET 合并 Word 文档而不丢失列表格式。分步指南可帮助您保持文档样式完好无损。 |
 | [重新开始页码编号](./restart-page-numbering/) | 了解如何使用 Aspose.Words for .NET 合并和附加 Word 文档时重新开始页码编号。 |
-| [更新页面布局](./update-page-layout/) | 按照我们详细的分步指南，使用 Aspose.Words for .NET 轻松更新 Word 文档中的页面布局。 |
+| [更新页面布局](./update-page-layout/) | 通过这份全面的分步指南，了解如何使用 Aspose.Words for .NET 更新 Word 文档中的页面布局。非常适合调整文档设计。 |
 | [使用目标样式](./use-destination-styles/) | 了解如何使用 Aspose.Words for .NET 的目标样式来无缝附加文档，同时保持一致的格式。 |
 | [智能风格行为](./smart-style-behavior/) | 了解如何使用 Aspose.Words for .NET 无缝合并 Word 文档，保留样式并确保专业结果。 |
 | [使用生成器插入文档](./insert-document-with-builder/) | 了解如何使用 Aspose.Words for .NET 合并两个 Word 文档。使用 DocumentBuilder 插入文档并保留格式的分步指南。 |

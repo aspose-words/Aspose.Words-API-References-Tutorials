@@ -91,7 +91,7 @@ shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 builder.Write("I'm a formatted paragraph with double border and nice shading.");
 ```
 
-該行將我們的文字插入文件中。很簡單，但現在它被包裹在時尚的框架和陰影背景中。
+此行將我們的文字插入文件中。很簡單，但現在它被包裹在時尚的框架和陰影背景中。
 
 ## 第 6 步：儲存文檔
 

@@ -10,7 +10,7 @@ url: /id/java/document-revision/accepting-rejecting-document-changes/
 
 ## Pengantar Aspose.Words untuk Java
 
-Aspose.Words untuk Java adalah perpustakaan tangguh yang memungkinkan pengembang Java membuat, memanipulasi, dan mengonversi dokumen Word dengan mudah. Salah satu fitur utamanya adalah kemampuan untuk bekerja dengan perubahan dokumen, menjadikannya alat yang sangat berharga untuk pengeditan dokumen kolaboratif.
+Aspose.Words for Java adalah perpustakaan tangguh yang memungkinkan pengembang Java membuat, memanipulasi, dan mengonversi dokumen Word dengan mudah. Salah satu fitur utamanya adalah kemampuan untuk bekerja dengan perubahan dokumen, menjadikannya alat yang sangat berharga untuk pengeditan dokumen kolaboratif.
 
 ## Memahami Perubahan Dokumen
 

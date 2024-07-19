@@ -1,6 +1,6 @@
 ---
-title: 不同的頁面設置
-linktitle: 不同的頁面設置
+title: 不同的頁面設定
+linktitle: 不同的頁面設定
 second_title: Aspose.Words 文件處理 API
 description: 了解如何在使用 Aspose.Words for .NET 合併 Word 文件時設定不同的頁面配置。包括逐步指南。
 type: docs

@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
  Ez a kód létrehozza a`Document` a dokumentum betöltésével a megadott könyvtárból.
 
-## 3. lépés: HTML biztonsági mentési beállítások konfigurálása
+## 3. lépés: A HTML biztonsági mentési beállítások konfigurálása
 
 Most beállítjuk a HTML mentési beállításokat a szövegbeviteli űrlapmezők egyszerű szövegként történő exportálásához. Használja a következő kódot:
 
@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Ez a kód létrehozza a`HtmlSaveOptions`és beállítja a`ExportTextInputFormFieldAsText` opciót`true` szövegbeviteli űrlapmezők egyszerű szövegként történő exportálásához. Ezenkívül meghatározza azt a mappát, ahová a kibontott képeket menti.
+ Ez a kód létrehozza a`HtmlSaveOptions` és beállítja a`ExportTextInputFormFieldAsText` opciót`true` szövegbeviteli űrlapmezők egyszerű szövegként történő exportálásához. Ezenkívül meghatározza azt a mappát, ahová a kibontott képeket menti.
 
 ## 4. lépés: A dokumentum konvertálása és mentése HTML formátumba
 

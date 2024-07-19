@@ -2,7 +2,7 @@
 title: Verwenden von Dokumentoptionen und -einstellungen in Aspose.Words für Java
 linktitle: Verwenden von Dokumentoptionen und -einstellungen
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
-description: Nutzen Sie die Leistungsfähigkeit von Aspose.Words für Java. Beherrschen Sie Dokumentoptionen und -einstellungen für eine nahtlose Dokumentenverwaltung. Optimieren, anpassen und mehr.
+description: Nutzen Sie die Leistungsfähigkeit von Aspose.Words für Java. Master-Dokumentoptionen und -einstellungen für nahtloses Dokumentenmanagement. Optimieren, anpassen und mehr.
 type: docs
 weight: 31
 url: /de/java/document-manipulation/using-document-options-and-settings/
@@ -155,7 +155,7 @@ doc.save("Your Directory Path" + "ShowErrors.docx");
 
 ### Was ist der Zweck der Bereinigung nicht verwendeter Stile und Listen?
 
-Durch das Bereinigen nicht verwendeter Stile und Listen können Sie eine saubere und organisierte Dokumentstruktur beibehalten. Dadurch wird unnötiges Durcheinander beseitigt und die Lesbarkeit und Konsistenz des Dokuments verbessert.
+Durch das Bereinigen nicht verwendeter Stile und Listen bleibt die Dokumentstruktur sauber und übersichtlich. Dadurch wird unnötiges Durcheinander beseitigt und die Lesbarkeit und Konsistenz des Dokuments verbessert.
 
 ### Wie kann ich doppelte Stile aus einem Dokument entfernen?
 

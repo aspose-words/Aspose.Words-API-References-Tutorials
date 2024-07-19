@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 2: Konfigurasikan sumber font
-Selanjutnya, kita akan membuat sebuah instance dari`FontSettings` dan dapatkan sumber font yang ada menggunakan`GetFontsSources()` metode. Kami juga akan menambahkan sumber font baru dengan menentukan folder yang berisi font.
+ Selanjutnya, kita akan membuat sebuah instance dari`FontSettings` dan dapatkan sumber font yang ada menggunakan`GetFontsSources()` metode. Kami juga akan menambahkan sumber font baru dengan menentukan folder yang berisi font.
 
 ```csharp
 // Konfigurasikan sumber font

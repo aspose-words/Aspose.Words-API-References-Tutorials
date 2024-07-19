@@ -21,7 +21,7 @@ Dưới đây là hướng dẫn trình bày cách sử dụng tính năng Chuy�
 Trước khi có thể chuyển đổi các trường, bạn phải tải tài liệu chứa các trường cần chuyển đổi. Đảm bảo chỉ định đường dẫn chính xác đến thư mục chứa tài liệu. Đây là cách tải tài liệu lên:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
+//Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Tải tài liệu.
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ### Ví dụ về mã nguồn cho Chuyển đổi trường trong đoạn văn bằng Aspose.Words cho .NET
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
+//Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Tải tài liệu.

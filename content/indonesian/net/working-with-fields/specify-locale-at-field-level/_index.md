@@ -68,7 +68,7 @@ Ini adalah contoh kode sumber untuk menentukan lokalisasi di tingkat bidang dala
 
 #### T: Apakah mungkin untuk menentukan lokal yang berbeda untuk setiap bidang di Aspose.Words untuk .NET?
 
- J: Ya, dimungkinkan untuk menentukan lokal berbeda untuk setiap bidang di Aspose.Words untuk .NET. Anda dapat menggunakan`FieldOptions.FieldLocale` properti sebelum membuat atau memperbarui bidang tertentu untuk menetapkan lokal yang berbeda.
+ J: Ya, dimungkinkan untuk menentukan lokal yang berbeda untuk setiap bidang di Aspose.Words untuk .NET. Anda dapat menggunakan`FieldOptions.FieldLocale` properti sebelum membuat atau memperbarui bidang tertentu untuk menetapkan lokal yang berbeda.
 
 #### T: Bagaimana cara mendapatkan lokal yang saat ini digunakan untuk bidang di Aspose.Words untuk .NET?
 

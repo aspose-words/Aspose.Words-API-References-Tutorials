@@ -125,7 +125,7 @@ doc.save(output_path)
 
 ## Conclusión:
 
-Optimizar tablas para la presentación de datos es una habilidad que le permite crear documentos con imágenes claras y atractivas. Al aprovechar las capacidades de Aspose.Words para Python, puede diseñar tablas que transmitan información compleja de manera efectiva y al mismo tiempo mantengan una apariencia profesional.
+Optimizar tablas para la presentación de datos es una habilidad que le permite crear documentos con imágenes claras y atractivas. Al aprovechar las capacidades de Aspose.Words para Python, puede diseñar tablas que transmitan eficazmente información compleja manteniendo una apariencia profesional.
 
 ## Preguntas frecuentes:
 

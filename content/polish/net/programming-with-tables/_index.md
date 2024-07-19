@@ -32,8 +32,8 @@ Postępując zgodnie z tymi samouczkami, będziesz mógł w pełni wykorzystać 
 | [Połączenie poziome](./horizontal-merge/) | Dowiedz się, jak poziomo scalać komórki w tabeli programu Word za pomocą Aspose.Words dla .NET. |
 | [Konwertuj na poziomo połączone komórki](./convert-to-horizontally-merged-cells/) | Dowiedz się, jak konwertować komórki tabeli na komórki scalone poziomo w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
 | [Powtórz wiersze na kolejnych stronach](./repeat-rows-on-subsequent-pages/) | Dowiedz się, jak powtarzać wiersze tabeli na kolejnych stronach dokumentu programu Word za pomocą Aspose.Words dla .NET. |
-| [Automatyczne dopasowanie do szerokości strony](./auto-fit-to-page-width/) | Dowiedz się, jak automatycznie dopasować tabelę do szerokości strony w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
-| [Preferowane ustawienia szerokości](./preferred-width-settings/) | Dowiedz się, jak ustawić preferowaną szerokość komórek tabeli w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
+| [Automatyczne dopasowanie do okna](./auto-fit-to-page-width/) | Z łatwością automatycznie dopasuj tabele do okna w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny do czystszych, profesjonalnych dokumentów. |
+| [Preferowane ustawienia szerokości](./preferred-width-settings/) | Dowiedz się, jak tworzyć tabele z ustawieniami szerokości bezwzględnej, względnej i automatycznej w Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. |
 | [Pobierz preferowany typ szerokości](./retrieve-preferred-width-type/) | Dowiedz się, jak pobrać typ i preferowaną wartość szerokości komórki w tabeli programu Word za pomocą Aspose.Words dla .NET. |
 | [Uzyskaj pozycję stołu](./get-table-position/) | Dowiedz się, jak uzyskać pozycję tabeli w dokumencie programu Word za pomocą Aspose.Words dla .NET. |
 | [Uzyskaj pozycję pływającego stołu](./get-floating-table-position/) | Dowiedz się, jak uzyskać pozycję tabel pływających w dokumencie programu Word za pomocą Aspose.Words dla .NET. |

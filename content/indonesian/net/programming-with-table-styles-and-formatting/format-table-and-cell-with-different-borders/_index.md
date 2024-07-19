@@ -30,20 +30,20 @@ Untuk mulai membuat tabel, kami menggunakan`StartTable()` metode pembuat dokumen
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // Tetapkan batas untuk seluruh tabel.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // Tetapkan padding untuk sel ini.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // Tentukan padding sel yang berbeda untuk sel kedua.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // Hapus pemformatan sel dari operasi sebelumnya.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // Buat batas yang lebih tebal untuk sel pertama di baris ini. Ini akan berbeda
 // relatif terhadap batas yang ditentukan untuk tabel.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ Selamat! Anda sekarang telah memformat tabel dan sel dengan batas berbeda menggu
 ### Contoh kode sumber untuk Format Tabel Dan Sel Dengan Batas Berbeda menggunakan Aspose.Words untuk .NET 
 
 ```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//Tetapkan batas untuk seluruh tabel.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// Atur bayangan sel untuk sel ini.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// Tentukan bayangan sel yang berbeda untuk sel kedua.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// Hapus pemformatan sel dari operasi sebelumnya.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// Buat batas yang lebih besar untuk sel pertama baris ini. Ini akan berbeda
-	// dibandingkan dengan batas yang ditetapkan untuk tabel.
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//Tetapkan batas untuk seluruh tabel.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// Atur bayangan sel untuk sel ini.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// Tentukan bayangan sel yang berbeda untuk sel kedua.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// Hapus pemformatan sel dari operasi sebelumnya.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// Buat batas yang lebih besar untuk sel pertama baris ini. Ini akan berbeda
+// dibandingkan dengan batas yang ditetapkan untuk tabel.
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## Kesimpulan

@@ -59,7 +59,7 @@ Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## 5. lépés: Módosított dokumentumszöveg kiadása
+## 5. lépés: A módosított dokumentumszöveg kiadása
 
 Töltse le és nyomtassa ki a módosított szöveget a végrehajtott cserék ellenőrzéséhez:
 ```csharp

@@ -24,7 +24,7 @@ Artık hazır olduğumuza göre heyecan verici kısım olan kodlamaya geçelim!
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktaralım. İşte tüm sihrin başladığı yer burası.
+Öncelikle gerekli ad alanlarını içe aktaralım. Burası tüm sihrin başladığı yer.
 
 ```csharp
 using Aspose.Words;

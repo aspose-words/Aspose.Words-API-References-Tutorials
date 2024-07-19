@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## Schritt 4: Überprüfen Sie den übergeordneten Knoten und das Eigentümerdokument
- Nachdem wir nun den Absatzknoten erstellt haben, können wir prüfen, ob er einen übergeordneten Knoten hat und ob das übergeordnete Dokument dasselbe ist wie`doc`.
+Nachdem wir nun den Absatzknoten erstellt haben, können wir prüfen, ob er einen übergeordneten Knoten hat und ob das übergeordnete Dokument dasselbe ist wie`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ A: In den meisten Fällen wird der Dokumentbesitzer eines Knotens bei der Erstel
 
 #### F: Wie greife ich auf die Knoten eines Eigentümerdokuments zu?
 
- A: Um auf Knoten in einem proprietären Dokument zuzugreifen, können Sie die Methoden und Eigenschaften verwenden, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie`getElementsByTagName` oder`querySelector` um bestimmte Knoten im Dokument auszuwählen.
+A: Um auf Knoten in einem proprietären Dokument zuzugreifen, können Sie die Methoden und Eigenschaften verwenden, die von der XML-API bereitgestellt werden, die in Ihrer Node.js-Umgebung verwendet wird. Sie können beispielsweise Methoden wie`getElementsByTagName` oder`querySelector` um bestimmte Knoten im Dokument auszuwählen.

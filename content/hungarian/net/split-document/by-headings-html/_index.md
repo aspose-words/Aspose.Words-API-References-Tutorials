@@ -14,7 +14,7 @@ Ebben az oktatóanyagban végigvezetjük, hogyan oszthat fel egy Word-dokumentum
 A kezdéshez adja meg a dokumentum könyvtárát, és töltse be a dokumentumot egy dokumentum objektumba. Itt van, hogyan:
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
+// dokumentumok könyvtár elérési útja.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

@@ -10,7 +10,7 @@ url: /es/java/document-manipulation/joining-and-appending-documents/
 
 ## Introducción a unir y anexar documentos en Aspose.Words para Java
 
-En este tutorial, exploraremos cómo unir y adjuntar documentos usando la biblioteca Aspose.Words para Java. Aprenderá cómo combinar varios documentos sin problemas conservando el formato y la estructura.
+En este tutorial, exploraremos cómo unir y adjuntar documentos usando la biblioteca Aspose.Words para Java. Aprenderá cómo fusionar varios documentos sin problemas conservando el formato y la estructura.
 
 ## Requisitos previos
 
@@ -128,7 +128,7 @@ Aspose.Words para Java proporciona herramientas potentes y flexibles para unir y
 
 ### ¿Puedo conservar la numeración de páginas al adjuntar documentos?
 
- Sí, puede conservar la numeración de páginas utilizando el`convertNumPageFieldsToPageRef` método y actualización del diseño de la página.
+ Sí, puede conservar la numeración de páginas utilizando el`convertNumPageFieldsToPageRef` método y actualizar el diseño de la página.
 
 ### ¿Qué es el comportamiento de estilo inteligente?
 

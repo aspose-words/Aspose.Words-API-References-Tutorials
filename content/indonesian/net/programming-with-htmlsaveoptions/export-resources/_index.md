@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://contoh.com/resources"
 
  Kode ini membuat sebuah instance dari`HtmlSaveOptions` dan menetapkan opsi berikut:
 
-- `CssStyleSheetType` diatur ke`CssStyleSheetType.External`untuk mengekspor style sheet CSS ke file eksternal.
+- `CssStyleSheetType` diatur ke`CssStyleSheetType.External` untuk mengekspor style sheet CSS ke file eksternal.
 - `ExportFontResources` diatur ke`true` untuk mengekspor sumber daya font.
 - `ResourceFolder` menentukan direktori tujuan tempat sumber daya akan disimpan.
-- `ResourceFolderAlias` menentukan alias URL yang akan digunakan untuk mengakses sumber daya.
+- `ResourceFolderAlias`menentukan alias URL yang akan digunakan untuk mengakses sumber daya.
 
 ## Langkah 4: Mengonversi dan menyimpan dokumen ke HTML
 

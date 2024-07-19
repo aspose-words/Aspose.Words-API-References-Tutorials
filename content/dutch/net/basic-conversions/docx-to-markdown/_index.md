@@ -64,7 +64,7 @@ doc.Save(dataDir + "ConvertedDocument.md", SaveFormat.Markdown);
 
 ## Conclusie
 
-Concluderend stelt Aspose.Words voor .NET ontwikkelaars in staat om moeiteloos DOCX-bestanden naar Markdown-formaat te converteren via een gestroomlijnde API. Door de hierboven beschreven stappen te volgen, kunt u documentconversiemogelijkheden efficiënt in uw .NET-toepassingen integreren, waardoor de documentverwerkingsworkflows worden verbeterd.
+Concluderend stelt Aspose.Words voor .NET ontwikkelaars in staat om moeiteloos DOCX-bestanden naar Markdown-formaat te converteren via een gestroomlijnde API. Door de hierboven beschreven stappen te volgen, kunt u documentconversiemogelijkheden efficiënt integreren in uw .NET-toepassingen, waardoor de documentverwerkingsworkflows worden verbeterd.
 
 ## Veelgestelde vragen
 

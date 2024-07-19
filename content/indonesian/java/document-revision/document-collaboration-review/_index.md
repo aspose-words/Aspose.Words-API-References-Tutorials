@@ -22,7 +22,7 @@ Sebelum kita mendalami kolaborasi dan peninjauan dokumen, mari siapkan Aspose.Wo
 
 3. Inisialisasi Aspose.Words: Inisialisasi Aspose.Words dalam kode Java Anda untuk mulai menggunakan fitur-fiturnya.
 
-Sekarang kita sudah menyiapkan Aspose.Words untuk Java, mari beralih ke kolaborasi dokumen.
+Sekarang kita telah menyiapkan Aspose.Words untuk Java, mari beralih ke kolaborasi dokumen.
 
 ## Kolaborasi Dokumen
 

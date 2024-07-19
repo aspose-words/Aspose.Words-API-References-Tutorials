@@ -29,7 +29,7 @@ Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 ## 3. Adım: Gelişmiş alanı ekleme
 
- biz kullanıyoruz`AppendField()` Paragrafa gelişmiş bir alan ekleme yöntemi.
+ biz kullanıyoruz`AppendField()` paragrafa gelişmiş alan ekleme yöntemi.
 
 ```csharp
 FieldAdvance field = (FieldAdvance)para.AppendField(FieldType.FieldAdvance, false);

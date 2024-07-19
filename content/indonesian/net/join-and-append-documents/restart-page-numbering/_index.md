@@ -35,9 +35,9 @@ Sekarang, mari selami langkah-langkah praktis dalam memulai ulang penomoran hala
 
 ## Langkah 1: Muat Dokumen Sumber dan Tujuan:
 
-Tentukan variabel string`dataDir` untuk menyimpan jalur ke direktori dokumen Anda. Ganti "DIREKTORI DOKUMEN ANDA" dengan lokasi sebenarnya.
+ Tentukan variabel string`dataDir` untuk menyimpan jalur ke direktori dokumen Anda. Ganti "DIREKTORI DOKUMEN ANDA" dengan lokasi sebenarnya.
 
- Buat dua`Document` objek menggunakan`Aspose.Words.Document` konstruktor. Yang pertama (`srcDoc`) akan menyimpan dokumen sumber yang berisi konten yang akan ditambahkan. Kedua (`dstDoc`) mewakili dokumen tujuan tempat kami akan mengintegrasikan konten sumber dengan penomoran halaman yang dimulai ulang.
+ Buat dua`Document` objek menggunakan`Aspose.Words.Document`konstruktor. Yang pertama (`srcDoc`) akan menyimpan dokumen sumber yang berisi konten yang akan ditambahkan. Kedua (`dstDoc`) mewakili dokumen tujuan tempat kami akan mengintegrasikan konten sumber dengan penomoran halaman yang dimulai ulang.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Ganti dengan direktori Anda yang sebenarnya
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Langkah 3: Mengaktifkan Mulai Ulang Penomoran Halaman:
 
- Dalam hal yang sama`PageSetup` objek bagian pertama dokumen sumber, atur`RestartPageNumbering`properti ke`true`Langkah penting ini menginstruksikan Aspose.Words untuk memulai penomoran halaman lagi untuk konten yang ditambahkan.
+ Dalam hal yang sama`PageSetup` objek bagian pertama dokumen sumber, atur`RestartPageNumbering`properti ke`true`. Langkah penting ini menginstruksikan Aspose.Words untuk memulai penomoran halaman lagi untuk konten yang ditambahkan.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

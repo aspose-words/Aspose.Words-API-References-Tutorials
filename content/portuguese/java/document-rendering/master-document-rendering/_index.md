@@ -30,7 +30,7 @@ Para usar Aspose.Words for Java, você precisa incluir o arquivo Aspose.Words JA
 
 ## Carregando e manipulando documentos
 
-Depois de configurar o Aspose.Words para Java, você pode começar a carregar e manipular documentos. Aspose.Words oferece suporte a vários formatos de documento, como DOCX, DOC, RTF, HTML e muito mais. Você pode carregar esses documentos na memória e acessar seu conteúdo de forma programática.
+Depois de configurar o Aspose.Words para Java, você pode começar a carregar e manipular documentos. Aspose.Words oferece suporte a vários formatos de documentos, como DOCX, DOC, RTF, HTML e muito mais. Você pode carregar esses documentos na memória e acessar seu conteúdo de forma programática.
 
 ### Carregando diferentes formatos de documentos
 

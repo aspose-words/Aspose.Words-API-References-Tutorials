@@ -105,7 +105,7 @@ public class ExtractListItemsExample {
         // Gå till listan
         List list = doc.getLists().get(0);
 
-        // Gå igenom listobjekt och skriv ut dem
+        // Iterera genom listobjekt och skriv ut dem
         for (ListItem listItem : list.getListItems()) {
             System.out.println(listItem.getText());
         }

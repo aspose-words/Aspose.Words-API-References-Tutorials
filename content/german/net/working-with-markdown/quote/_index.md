@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Schritt 3: Stile für verschachtelte Ebenen erstellen
 
- Wir können Stile für verschachtelte Ebenen erstellen mit dem`Styles.Add` Methode der`Document` Objekt. In diesem Beispiel erstellen wir einen Stil namens „Quote1“, um eine verschachtelte Zitatebene darzustellen.
+ Wir können Stile für verschachtelte Ebenen erstellen mit dem`Styles.Add` Methode der`Document`Objekt. In diesem Beispiel erstellen wir einen Stil namens „Quote1“, um eine verschachtelte Zitatebene darzustellen.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

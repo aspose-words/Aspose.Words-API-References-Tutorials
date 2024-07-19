@@ -2,7 +2,7 @@
 title: Dokumentredigering och dataskydd
 linktitle: Dokumentredigering och dataskydd
 second_title: Aspose.Words Java Document Processing API
-description: Lär dig hur du skyddar dina dokument och redigerar känslig data med Aspose.Words för Java. Steg-för-steg guide med källkod.
+description: Lär dig hur du säkrar dina dokument och redigerar känslig data med Aspose.Words för Java. Steg-för-steg guide med källkod.
 type: docs
 weight: 14
 url: /sv/java/document-security/document-redaction-data-protection/

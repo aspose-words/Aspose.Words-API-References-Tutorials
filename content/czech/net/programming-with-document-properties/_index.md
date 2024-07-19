@@ -16,11 +16,11 @@ Ať už jste začátečník nebo zkušený vývojář, výukové programy Aspose
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Získejte proměnné](./get-variables/) | Podrobný průvodce pro načtení proměnných dokumentu pomocí Aspose.Words pro .NET. |
-| [Výčet vlastností](./enumerate-properties/) | Podrobný průvodce výčtem vlastností dokumentu pomocí Aspose.Words pro .NET. |
-| [Přidat uživatelské vlastnosti dokumentu](./add-custom-document-properties/) | Krok za krokem průvodce přidáním vlastních vlastností do dokumentu pomocí Aspose.Words pro .NET. |
-| [Odebrat uživatelské vlastnosti dokumentu](./remove-custom-document-properties/) | Podrobný průvodce odstraněním uživatelských vlastností z dokumentu pomocí Aspose.Words for .NET. |
-| [Odebrat osobní údaje](./remove-personal-information/) | Podrobný průvodce odstraněním osobních údajů z dokumentu pomocí Aspose.Words for .NET. |
-| [Konfigurace odkazu na obsah](./configuring-link-to-content/) | Podrobný průvodce nastavením propojení s obsahem v dokumentu pomocí Aspose.Words pro .NET. |
-| [Převod mezi měrnými jednotkami](./convert-between-measurement-units/) | Podrobný průvodce převodem mezi měrnými jednotkami v dokumentu pomocí Aspose.Words pro .NET. |
-| [Použijte řídicí znaky](./use-control-characters/) | Podrobný průvodce používáním řídicích znaků s Aspose.Words pro .NET. |
+| [Získejte proměnné](./get-variables/) | Master Aspose.Words pro .NET. Naučte se načítat a extrahovat proměnné z dokumentů aplikace Word pomocí tohoto podrobného průvodce. |
+| [Výčet vlastností](./enumerate-properties/) | Naučte se, jak vytvořit výčet vlastností v dokumentu aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Ideální pro vývojáře všech úrovní dovedností. |
+| [Přidat uživatelské vlastnosti dokumentu](./add-custom-document-properties/) | Naučte se přidávat vlastní vlastnosti dokumentu do souborů aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce a vylepšete své dokumenty o další metadata. |
+| [Odebrat uživatelské vlastnosti dokumentu](./remove-custom-document-properties/) | Odeberte vlastní vlastnosti dokumentu v souborech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro rychlé a snadné řešení. Ideální pro vývojáře. |
+| [Odebrat osobní údaje](./remove-personal-information/) | Naučte se, jak odstranit osobní informace z dokumentů pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Zjednodušte správu dokumentů. |
+| [Konfigurace odkazu na obsah](./configuring-link-to-content/) | Naučte se, jak nakonfigurovat odkaz na obsah v dokumentu aplikace Word pomocí Aspose.Words for .NET s naším podrobným, podrobným výukovým programem. |
+| [Převod mezi měrnými jednotkami](./convert-between-measurement-units/) | Naučte se převádět měrné jednotky v Aspose.Words pro .NET. Postupujte podle našeho podrobného průvodce a nastavte okraje, záhlaví a zápatí dokumentu v palcích a bodech. |
+| [Použijte řídicí znaky](./use-control-characters/) | Objevte, jak automatizovat úlohy dokumentů aplikace Word pomocí Aspose.Words for .NET. Tato příručka pokrývá nastavení, nahrazování textu a další, aby byl váš pracovní postup efektivní. |

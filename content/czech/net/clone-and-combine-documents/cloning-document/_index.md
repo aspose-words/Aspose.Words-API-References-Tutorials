@@ -81,7 +81,7 @@ Klonování dokumentu je s Aspose hračkou. Slova:
 
 Když je vše na svém místě, je čas spustit kód a zobrazit výsledky:
 
-1.  Sestavte svůj projekt: Klikněte na`Build` menu a vyberte`Build Solution`. Ujistěte se, že nejsou žádné chyby.
+1. Sestavte svůj projekt: Klikněte na`Build` menu a vyberte`Build Solution`. Ujistěte se, že nejsou žádné chyby.
 2.  Spusťte svůj projekt: Hit`F5` nebo klikněte na`Start` tlačítko pro spuštění projektu. Pokud je vše správně nastaveno, měl by se v adresáři dokumentů objevit nový klonovaný dokument.
 
 ## Krok 6: Ověřte výstup

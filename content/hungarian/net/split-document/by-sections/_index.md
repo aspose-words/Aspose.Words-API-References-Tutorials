@@ -15,7 +15,7 @@ Ebben a példában bemutatjuk, hogyan oszthat fel egy Word-dokumentumot külön 
 A kezdéshez meg kell adnunk a dokumentum könyvtárát, és be kell töltenünk a dokumentumot egy Dokumentum objektumba. Itt van, hogyan:
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
+// dokumentumok könyvtár elérési útja.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

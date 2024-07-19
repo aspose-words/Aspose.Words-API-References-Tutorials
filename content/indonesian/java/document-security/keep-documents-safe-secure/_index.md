@@ -191,7 +191,7 @@ Untuk memastikan keamanan dokumen yang kuat, ikuti praktik terbaik berikut:
 - Perbarui langkah-langkah keamanan Anda secara berkala agar tetap terdepan dalam menghadapi potensi ancaman.
 - Gunakan kata sandi dan algoritma enkripsi yang kuat.
 - Batasi akses ke dokumen sensitif jika diperlukan.
-- Latih karyawan untuk mengenali dan merespons risiko keamanan.
+- Melatih karyawan untuk mengenali dan merespons risiko keamanan.
 
 ## 13. Pengujian Keamanan Dokumen
 

@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
 ## Wniosek
-Gratulacje! Pomyślnie nauczyłeś się zmieniać ustawienia regionalne w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz teraz kontrolować formatowanie dat i liczb podczas operacji korespondencji seryjnej. Dostosuj ustawienia regionalne zgodnie ze swoimi wymaganiami, aby zapewnić dokładne i spójne formatowanie w dokumentach.
+Gratulacje! Pomyślnie nauczyłeś się zmieniać ustawienia regionalne w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i wykorzystując dostarczony kod źródłowy, możesz teraz kontrolować formatowanie dat i liczb podczas operacji korespondencji seryjnej. Dostosuj ustawienia regionalne zgodnie ze swoimi wymaganiami, aby zapewnić dokładne i spójne formatowanie w dokumentach.
 
 ### Często zadawane pytania
 

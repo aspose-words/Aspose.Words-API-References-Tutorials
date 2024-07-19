@@ -66,7 +66,7 @@ Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
- det här steget använder vi`GetAncestor` metod för att hitta den överordnade raden för både bokmärkets start- och bokmärkesslutnod. Detta hjälper oss att lokalisera de exakta raderna som är involverade.
+ I det här steget använder vi`GetAncestor` metod för att hitta den överordnade raden för både bokmärkets start- och bokmärkesslutnod. Detta hjälper oss att lokalisera de exakta raderna som är involverade.
 
 ## Steg 4: Kontrollera om det finns angränsande rader
 
@@ -93,7 +93,7 @@ Steg 5 Rubrik: Flytta bokmärkesänden
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
- det här steget använder vi`AppendChild`metod för att flytta bokmärkets slutnod. Genom att lägga till det i det sista stycket i den översta radens sista cell säkerställer vi att bokmärket är korrekt löst.
+ I det här steget använder vi`AppendChild` metod för att flytta bokmärkets slutnod. Genom att lägga till det i det sista stycket i den översta radens sista cell säkerställer vi att bokmärket är korrekt löst.
 
 ## Slutsats
 

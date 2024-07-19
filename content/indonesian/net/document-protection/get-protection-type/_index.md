@@ -1,6 +1,6 @@
 ---
-title: Dapatkan Jenis Perlindungan Dalam Dokumen Word
-linktitle: Dapatkan Jenis Perlindungan Dalam Dokumen Word
+title: Dapatkan Jenis Perlindungan di Dokumen Word
+linktitle: Dapatkan Jenis Perlindungan di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara memeriksa jenis perlindungan dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah, contoh kode, dan FAQ disertakan.
 type: docs
@@ -21,7 +21,7 @@ Sebelum kita beralih ke bagian pengkodean, pastikan Anda memiliki semua yang And
 
 ## Impor Namespace
 
-Sebelum memulai pengkodean, Anda perlu mengimpor namespace yang diperlukan. Ini memastikan Anda memiliki akses ke semua kelas dan metode yang disediakan oleh Aspose.Words.
+Sebelum memulai coding, Anda perlu mengimpor namespace yang diperlukan. Ini memastikan Anda memiliki akses ke semua kelas dan metode yang disediakan oleh Aspose.Words.
 
 ```csharp
 using System;
@@ -81,7 +81,7 @@ Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan Anda membu
 Aspose.Words dapat mendeteksi berbagai jenis perlindungan seperti NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments, dan AllowOnlyFormFields.
 
 ### Bagaimana saya bisa mendapatkan dukungan jika saya mengalami masalah?
- Untuk masalah apa pun, Anda dapat mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan.
+ Untuk masalah apa pun, Anda dapat mengunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8)untuk bantuan.
 
 ### Apakah Aspose.Words kompatibel dengan .NET Core?
 Ya, Aspose.Words kompatibel dengan .NET Framework dan .NET Core.

@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 3: إضافة بيانات XML مخصصة إلى CustomXmlPart
- إنشاء`CustomXmlPart` وإضافة بيانات XML مخصصة إليها. في هذا المثال، قمنا بإنشاء سلسلة XML تمثل مجموعة من الكتب مع عناوينها ومؤلفيها.
+ إنشاء`CustomXmlPart` وإضافة بيانات XML مخصصة إليها. في هذا المثال، قمنا بإنشاء سلسلة XML تمثل مجموعة من الكتب بعناوينها ومؤلفيها.
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",

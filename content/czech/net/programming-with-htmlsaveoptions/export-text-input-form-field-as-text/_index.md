@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Tento kód vytvoří instanci`HtmlSaveOptions` nastaví`ExportTextInputFormFieldAsText` možnost`true` exportovat pole formuláře pro zadávání textu jako prostý text. Navíc určuje složku, do které budou extrahované obrázky uloženy.
+ Tento kód vytvoří instanci`HtmlSaveOptions` a nastaví`ExportTextInputFormFieldAsText` možnost`true` exportovat pole formuláře pro zadávání textu jako prostý text. Navíc určuje složku, do které budou extrahované obrázky uloženy.
 
 ## Krok 4: Převod a uložení dokumentu do HTML
 

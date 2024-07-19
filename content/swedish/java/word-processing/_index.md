@@ -20,7 +20,7 @@ Här är några av de viktigaste fördelarna med att använda Aspose.Words för 
 
 * Omfattande funktionsuppsättning för ordbehandling och dokumentbehandling
 * Omfattande dokumentation och tutorials
-* Lättanvända API:er
+* Lätt att använda API:er
 * Stöd för ett brett utbud av dokumentformat
 * Hög prestanda och skalbarhet
 

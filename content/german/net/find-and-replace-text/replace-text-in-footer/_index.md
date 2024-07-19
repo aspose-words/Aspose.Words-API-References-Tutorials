@@ -15,7 +15,7 @@ Hallo! Sind Sie bereit, in die Welt der Dokumentbearbeitung mit Aspose.Words fü
 
 Bevor wir uns in den Code stürzen, müssen einige Dinge bereitstehen:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können es herunterladen von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können es von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Sie benötigen eine Entwicklungsumgebung wie Visual Studio.
 3. Grundkenntnisse in C#: Das Verständnis der C#-Grundlagen hilft Ihnen, dem Code zu folgen.
 4. Beispieldokument: Ein Word-Dokument mit einer Fußzeile zum Bearbeiten. Für dieses Tutorial verwenden wir „Footer.docx“.

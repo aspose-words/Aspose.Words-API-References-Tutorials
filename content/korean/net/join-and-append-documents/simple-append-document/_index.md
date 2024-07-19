@@ -18,7 +18,7 @@ url: /ko/net/join-and-append-documents/simple-append-document/
 1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다음에서 라이브러리를 다운로드하세요.[여기](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 기타 .NET 호환 IDE를 사용할 수 있습니다.
 3. C#에 대한 기본 지식: 이 자습서에서는 사용자가 C# 프로그래밍에 대한 기본 지식을 가지고 있다고 가정합니다.
-4. 두 개의 Word 문서: 병합할 두 개의 Word 문서가 준비되어 있는지 확인하세요.
+4. 두 개의 Word 문서: 병합할 두 개의 Word 문서가 준비되어 있는지 확인하십시오.
 
 ## 네임스페이스 가져오기
 

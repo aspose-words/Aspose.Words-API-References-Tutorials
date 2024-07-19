@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. lépés: Szúrjon be egy OLE objektumot ikonként
- Használja a Dokumentumkészítőt`InsertOleObjectAsIcon`módszer egy OLE objektum ikonként történő beszúrására a dokumentumba. Adja meg az OLE fájl elérési útját, a megjelenítési jelzőt, az ikon elérési útját és a beágyazott objektum nevét.
+ Használja a Dokumentumkészítőt`InsertOleObjectAsIcon` módszer egy OLE objektum ikonként történő beszúrására a dokumentumba. Adja meg az OLE fájl elérési útját, a megjelenítési jelzőt, az ikon elérési útját és a beágyazott objektum nevét.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### K. Hogyan lehet új dokumentumot és dokumentumgenerátort létrehozni az Aspose.Words for .NET-ben?
 
- V: Új dokumentumot hozhat létre a`Document` osztályt és egy dokumentumkészítőt a`DocumentBuilder` osztály. Íme egy példa:
+ V: Új dokumentumot hozhat létre a`Document` osztályt és egy dokumentumkészítőt a`DocumentBuilder`osztály. Íme egy példa:
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### K. Hogyan lehet elmenteni a dokumentumot az ikonként beszúrt OLE objektummal?
 
- V: Használja a dokumentumot`Save` módszerrel mentheti a dokumentumot fájlba. Íme egy példa:
+ V: Használja a dokumentumot`Save`módszerrel mentheti a dokumentumot fájlba. Íme egy példa:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

@@ -19,12 +19,12 @@ url: /zh/net/working-with-section/
 | 标题 | 描述 |
 | --- | --- |
 | [添加部分](./add-section/) | 在本教程中，学习如何使用 Aspose.Words for .NET 向 Word 文档添加部分。分步指南来构建您的文档。 |
-| [删除部分](./delete-section/) | 在本教程中，学习如何使用 Aspose.Words for .NET 从 Word 文档中删除特定部分。 |
-| [删除所有部分](./delete-all-sections/) | 在本教程中，学习如何使用 Aspose.Words for .NET 从 Word 文档中删除所有部分。 |
+| [删除部分](./delete-section/) | 掌握使用 Aspose.Words for .NET 进行文档操作。了解如何通过几个简单的步骤从 Word 文档中删除部分。 |
+| [删除所有部分](./delete-all-sections/) | 通过本简单易懂的分步指南了解如何使用 Aspose.Words for .NET 删除 Word 文档中的所有部分。 |
 | [追加节词内容](./append-section-content/) | 在本教程中，学习如何使用 Aspose.Words for .NET 将 Word 内容添加到 Word 文档的特定部分。  |
 | [克隆部分](./clone-section/) | 在本教程中，学习如何使用 Aspose.Words for .NET 克隆 Word 文档中的某个部分。分步指南。 |
 | [复制部分](./copy-section/) | 在本教程中，学习如何使用 Aspose.Words for .NET 将某个部分从 Word 文档复制到另一个文档。 |
 | [删除页眉页脚内容](./delete-header-footer-content/) | 在本教程中，学习如何使用 Aspose.Words for .NET 从 Word 文档中删除页眉和页脚内容。  |
 | [删除部分内容](./delete-section-content/) | 在本教程中，学习如何使用 Aspose.Words for .NET 从 Word 文档的特定部分删除内容。 |
 | [修改所有部分的 Word 页面设置](./modify-page-setup-in-all-sections/) | 在本教程中，学习如何使用 Aspose.Words for .NET 修改 Word 文档所有部分的 Word 页面设置。 |
-| [按索引访问部分](./sections-access-by-index/) | 在本教程中，了解如何通过索引访问 Word 文档的各个部分并使用 Aspose.Words for .NET 更改其设置。 |
+| [按索引访问部分](./sections-access-by-index/) | 在本教程中，学习如何通过索引访问 Word 文档的各个部分并使用 Aspose.Words for .NET 更改其设置。 |

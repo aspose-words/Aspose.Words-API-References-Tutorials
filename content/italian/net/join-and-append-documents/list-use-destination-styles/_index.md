@@ -2,126 +2,93 @@
 title: Elenco Usa stili di destinazione
 linktitle: Elenco Usa stili di destinazione
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come unire e gestire elenchi di documenti senza problemi con Aspose.Words per .NET. Segui il nostro tutorial passo passo per un'integrazione efficiente dei documenti.
+description: Scopri come unire documenti Word utilizzando Aspose.Words per .NET senza perdere la formattazione dell'elenco. Guida passo passo per mantenere intatti gli stili dei tuoi documenti.
 type: docs
 weight: 10
 url: /it/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## introduzione
 
-Integrare i documenti mantenendo uno stile coerente può essere complicato, soprattutto con gli elenchi. Aspose.Words per .NET fornisce strumenti robusti per gestire queste complessità, garantendo che i tuoi documenti mantengano la loro integrità di formattazione. Questo tutorial ti guiderà attraverso il processo di unione dei documenti con gli elenchi, utilizzando gli stili di destinazione per un prodotto finale raffinato.
+Hai mai provato a unire documenti Word e sei rimasto intrappolato nella formattazione? A volte è come provare a mescolare olio e acqua, giusto? Bene, oggi ci immergeremo in un trucco accurato utilizzando Aspose.Words per .NET che ti salverà da questo mal di testa. Impareremo come importare elenchi da un documento all'altro senza rovinare la numerazione e gli stili. Pronto a renderti la vita un po' più semplice? Iniziamo!
 
 ## Prerequisiti
 
-Prima di immergerti in questo tutorial, assicurati di avere quanto segue:
-- Visual Studio installato sul tuo computer.
-- Libreria Aspose.Words per .NET integrata nel tuo progetto.
-- Conoscenza base del linguaggio di programmazione C#.
+Prima di tuffarci nella magia, assicuriamoci di avere tutto ciò di cui hai bisogno:
+
+1.  Aspose.Words per .NET: se non l'hai già fatto, scaricalo[Qui](https://releases.aspose.com/words/net/).
+2. Visual Studio: qualsiasi versione recente andrà bene.
+3. Una conoscenza di base di C#: non è necessario essere un mago, ma una certa familiarità sarà utile.
+
+ Assicurati di avere Aspose.Words installato e configurato nel tuo progetto. Se non sei sicuro di come eseguire questa operazione, il file[documentazione](https://reference.aspose.com/words/net/) è un ottimo punto di partenza.
 
 ## Importa spazi dei nomi
 
-Inizia importando gli spazi dei nomi necessari per sfruttare le funzionalità di Aspose.Words:
+Per prima cosa, importiamo gli spazi dei nomi necessari nel file C#:
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.Lists;
+using Aspose.Words.Saving;
 ```
 
-Suddividiamo il processo in passaggi chiari:
+Capiti? Eccezionale. Ora, analizziamolo passo dopo passo.
 
-## Passaggio 1: impostare i percorsi dei documenti
+## Passaggio 1: imposta i percorsi dei documenti
 
-Assicurati di aver definito il percorso della directory in cui risiedono i tuoi documenti:
+Ogni progetto inizia con l'organizzazione dei file. Indichiamo il nostro codice alla directory in cui sono archiviati i tuoi documenti.
 
 ```csharp
-string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Sostituire`"YOUR_DOCUMENT_DIRECTORY_PATH"` con il percorso effettivo della directory in cui sono archiviati i tuoi documenti.
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo in cui sono archiviati i tuoi documenti. Facile, vero?
 
-## Passaggio 2: caricare i documenti di origine e di destinazione
+## Passaggio 2: carica i documenti di origine e di destinazione
 
-Carica i documenti di origine e di destinazione utilizzando Aspose.Words:
+Successivamente, dobbiamo caricare sia il documento di origine che quello di destinazione. Immagina di aprire due file Word sul tuo computer.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "DocumentSource.docx");
-Document dstDoc = new Document(dataDir + "DocumentDestination.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
+Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
- Regolare`"DocumentSource.docx"`E`"DocumentDestination.docx"` con i nomi dei file effettivi.
+ Qui,`srcDoc` è il tuo documento sorgente (quello con gli elenchi che desideri copiare) e`dstDoc` è il tuo documento di destinazione (quello in cui vuoi incollare quegli elenchi).
 
-## Passaggio 3: impostare l'inizio della sezione per il documento di origine
+## Passaggio 3: configura le opzioni di importazione
 
-Per garantire che i documenti si uniscano senza problemi, imposta l'inizio della sezione del documento di origine:
+Dobbiamo specificare alcune opzioni per assicurarci che gli elenchi vengano importati correttamente. Questo passaggio garantisce che, in caso di conflitto di numerazione, venga preservata la numerazione del documento di origine.
 
 ```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-Questa impostazione aiuta a mantenere la continuità tra i documenti.
+## Passaggio 4: aggiungi il documento di origine al documento di destinazione
 
-## Passaggio 4: gestire l'integrazione dell'elenco
-
-Scorrere i paragrafi nel documento di origine per gestire gli elementi dell'elenco:
+Ora eseguiamo la fusione. Qui è dove avviene la magia. Aggiungiamo il documento di origine al documento di destinazione utilizzando le opzioni di importazione specificate.
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-Questo segmento di codice garantisce che gli elenchi del documento di origine si integrino perfettamente nel documento di destinazione, mantenendo la formattazione originale.
-
-## Passaggio 5: aggiungi il documento di origine al documento di destinazione
-
-Unisci il documento di origine modificato nel documento di destinazione:
-
-```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-```
-
-Questo comando consolida i documenti preservando gli stili di destinazione.
+Hai unito con successo due documenti, mantenendo intatti gli elenchi.
 
 ## Conclusione
 
-Seguendo questi passaggi, puoi gestire e unire efficacemente elenchi tra documenti utilizzando Aspose.Words per .NET. Questo approccio garantisce che il documento finale mantenga uno stile e una formattazione coerenti, migliorando l'efficienza complessiva della gestione dei documenti.
+Ecco qua! Unire documenti senza perdere la testa per problemi di formattazione è un gioco da ragazzi con Aspose.Words per .NET. Che tu stia lavorando a un grande progetto o abbia semplicemente bisogno di riordinare alcuni file, questo metodo manterrà i tuoi elenchi nitidi. Quindi la prossima volta che ti troverai ad affrontare il dilemma della fusione dei documenti, ricorda questa guida e affrontala come un professionista!
 
 ## Domande frequenti
 
-### Come posso gestire elenchi nidificati utilizzando Aspose.Words per .NET?
-Aspose.Words fornisce metodi per gestire elenchi nidificati scorrendo i nodi del documento e controllando le strutture degli elenchi.
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria per lavorare con documenti Word a livello di codice. Ti consente di creare, modificare e convertire documenti in vari formati.
 
-### Quali sono i vantaggi derivanti dall'utilizzo degli stili di destinazione nell'unione dei documenti?
-Gli stili di destinazione aiutano a mantenere l'uniformità nella formattazione tra i documenti uniti, garantendo un aspetto professionale.
+### Come installo Aspose.Words per .NET?
+ Puoi scaricarlo da[sito web](https://releases.aspose.com/words/net/) e seguire le istruzioni di installazione nel file[documentazione](https://reference.aspose.com/words/net/).
 
-### Aspose.Words supporta l'unione di documenti multipiattaforma?
-Sì, Aspose.Words supporta l'unione di documenti su varie piattaforme, inclusi ambienti Windows e Linux.
+### Posso usare Aspose.Words gratuitamente?
+ Aspose.Words offre a[prova gratuita](https://releases.aspose.com/) con funzionalità limitate. Per l'accesso completo, dovrai acquistare una licenza[Qui](https://purchase.aspose.com/buy).
 
-### Posso personalizzare la formattazione dell'elenco durante l'unione dei documenti?
-Aspose.Words consente un'ampia personalizzazione della formattazione degli elenchi, consentendo soluzioni di integrazione dei documenti su misura.
+### Cosa sono le opzioni ImportFormat?
+ ImportFormatOptions consente di specificare come viene gestita la formattazione durante l'importazione di contenuto da un documento a un altro. Per esempio,`KeepSourceNumbering` garantisce che la numerazione dell'elenco dal documento di origine venga preservata.
 
-### Dove posso trovare più risorse sulla gestione avanzata dei documenti con Aspose.Words?
- Esplorare[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) per guide complete e riferimenti API.
+### Dove posso ottenere supporto per Aspose.Words?
+ Puoi ottenere supporto da[Forum Aspose.Words](https://forum.aspose.com/c/words/8), dove puoi porre domande e ottenere aiuto dalla community e dagli sviluppatori Aspose.

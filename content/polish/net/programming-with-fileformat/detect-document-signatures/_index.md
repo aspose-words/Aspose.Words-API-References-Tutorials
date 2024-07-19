@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Wykryj podpisy cyfrowe
 
- Następnie używamy`DetectFileFormat` metoda`FileFormatUtil` class do wykrywania informacji o formacie pliku. W tym przykładzie zakładamy, że dokument nosi nazwę „Podpisany cyfrowo.docx” i znajduje się w określonym katalogu dokumentów.
+ Następnie używamy`DetectFileFormat` metoda`FileFormatUtil`class do wykrywania informacji o formacie pliku. W tym przykładzie zakładamy, że dokument nosi nazwę „Podpisany cyfrowo.docx” i znajduje się w określonym katalogu dokumentów.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ Ten samouczek zawiera przewodnik krok po kroku dotyczący wykrywania podpisu cyf
 
 #### Jak wykryć obecność podpisu cyfrowego w dokumencie programu Word za pomocą Aspose.Words dla .NET?
 
- Aby wykryć obecność podpisu cyfrowego w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz wykonać kroki opisane w samouczku. Używając`DetectFileFormat` metoda`FileFormatUtil` class pozwoli Ci wykryć informacje o formacie pliku. Następnie możesz sprawdzić`HasDigitalSignature` własność`FileFormatInfo`obiekt, aby sprawdzić, czy dokument zawiera podpis cyfrowy. Jeśli zostanie wykryty podpis cyfrowy, możesz wyświetlić komunikat informujący, że podpisy zostaną utracone, jeśli dokument zostanie otwarty/zapisany za pomocą Aspose.Words.
+ Aby wykryć obecność podpisu cyfrowego w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz wykonać kroki opisane w samouczku. Używając`DetectFileFormat` metoda`FileFormatUtil` class pozwoli Ci wykryć informacje o formacie pliku. Następnie możesz sprawdzić`HasDigitalSignature` własność`FileFormatInfo` obiekt, aby sprawdzić, czy dokument zawiera podpis cyfrowy. Jeśli zostanie wykryty podpis cyfrowy, możesz wyświetlić komunikat informujący, że podpisy zostaną utracone, jeśli dokument zostanie otwarty/zapisany za pomocą Aspose.Words.
 
 #### Jak określić katalog zawierający dokumenty, w których należy szukać podpisu cyfrowego?
 

@@ -106,4 +106,4 @@ Ano, tato nastavení lze použít na jakýkoli text, ale jsou zvláště užite�
 Absolutně! Můžete procházet kolekcí dokumentů a tato nastavení programově aplikovat na každý z nich.
 
 ### Co když narazím na problémy nebo mám otázky?
-Pokud narazíte na nějaké problémy nebo máte další otázky,[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) je skvělé místo, kde hledat pomoc.
+ Pokud narazíte na nějaké problémy nebo máte další otázky,[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) je skvělé místo, kde hledat pomoc.

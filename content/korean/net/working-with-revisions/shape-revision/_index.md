@@ -101,7 +101,7 @@ Assert.AreEqual(2, shapes.Count);
 // 첫 번째 모양을 제거합니다.
 shapes[0].Remove();
 
-// 변경 사항을 추적하는 동안 해당 모양을 제거했기 때문에 해당 모양은 삭제 개정으로 간주됩니다.
+// 변경 사항을 추적하는 동안 해당 모양을 제거했기 때문에 해당 모양은 삭제 개정으로 계산됩니다.
 Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
 Assert.True(shapes[0].IsDeleteRevision);
 

@@ -9,7 +9,7 @@ url: /id/net/programming-with-bookmarks/update-bookmark-data/
 ---
 ## Perkenalan
 
-Pernahkah Anda menghadapi situasi di mana Anda perlu memperbarui bagian tertentu secara dinamis dalam dokumen Word? Mungkin Anda membuat laporan dengan placeholder untuk data, atau mungkin Anda bekerja dengan template yang sering memerlukan penyesuaian konten. Nah, jangan khawatir lagi! Aspose.Words untuk .NET hadir sebagai ksatria berbaju besi, menawarkan solusi yang kuat dan mudah digunakan untuk mengelola bookmark dan menjaga dokumen Anda tetap mutakhir.
+Pernahkah Anda menghadapi situasi di mana Anda perlu memperbarui bagian tertentu secara dinamis dalam dokumen Word? Mungkin Anda membuat laporan dengan placeholder untuk data, atau mungkin Anda bekerja dengan template yang sering memerlukan penyesuaian konten. Nah, jangan khawatir lagi! Aspose.Words untuk .NET hadir sebagai ksatria berbaju baja, menawarkan solusi yang kuat dan mudah digunakan untuk mengelola bookmark dan menjaga dokumen Anda tetap mutakhir.
 
 ## Prasyarat
 

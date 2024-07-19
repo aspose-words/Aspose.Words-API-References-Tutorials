@@ -62,7 +62,7 @@ Este é um exemplo de código completo para inserir um objeto OLE como um ícone
 
 ## Conclusão
 
-guia passo a passo acima explica como inserir um objeto OLE como um ícone em um documento do Word usando um fluxo com Aspose.Words for .NET. Seguindo os passos descritos, você poderá integrar esta funcionalidade ao seu projeto. Certifique-se de importar as referências necessárias, criar um novo documento e gerador de documentos, inserir o objeto OLE como um ícone do fluxo e salvar o documento. Use o código de exemplo fornecido como ponto de partida e personalize-o de acordo com suas necessidades.
+O guia passo a passo acima explica como inserir um objeto OLE como um ícone em um documento do Word usando um fluxo com Aspose.Words for .NET. Seguindo os passos descritos, você poderá integrar esta funcionalidade ao seu projeto. Certifique-se de importar as referências necessárias, criar um novo documento e gerador de documentos, inserir o objeto OLE como um ícone do fluxo e salvar o documento. Use o código de exemplo fornecido como ponto de partida e personalize-o de acordo com suas necessidades.
 
 ### Perguntas frequentes
 
@@ -88,7 +88,7 @@ A. Para criar um novo documento e gerador de documentos, você pode seguir estas
 ```csharp
 Document doc = new Document();
 ```
- Use o`DocumentBuilder`classe para criar um construtor de documentos associado ao documento criado anteriormente:
+ Use o`DocumentBuilder` classe para criar um construtor de documentos associado ao documento criado anteriormente:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### P. Como incorporar o código para inserir um objeto OLE como um ícone de um fluxo em meu projeto?
 
 A. Para incorporar o código para inserir um objeto OLE como um ícone de um fluxo em seu projeto, siga estas etapas:
--  Importe as referências necessárias adicionando o apropriado`using` declarações.
+- Importe as referências necessárias adicionando o apropriado`using` declarações.
 -  Crie um novo documento e um construtor de documentos usando o`Document`e`DocumentBuilder` Aulas.
 - Use o código para inserir o objeto OLE como um ícone de um fluxo.
 -  Salve o documento usando o`Save` método com o caminho de destino apropriado.

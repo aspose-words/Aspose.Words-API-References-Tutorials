@@ -127,4 +127,4 @@ Ja, Sie können verschachtelte Listen erstellen, indem Sie Ihrer Hauptliste Unte
 Ja, Aspose.Words Python bietet Methoden zum Parsen und Formatieren von einfachem Text in Listen, wodurch die Strukturierung Ihrer Inhalte vereinfacht wird.
 
 ### Wie kann ich mein Dokument nach dem Erstellen von Listen speichern?
- Sie können Ihr Dokument speichern mit dem`doc.save()` Methode und Angabe des gewünschten Ausgabeformats, beispielsweise DOCX oder PDF.
+ Sie können Ihr Dokument speichern, indem Sie`doc.save()` Methode und Angabe des gewünschten Ausgabeformats, beispielsweise DOCX oder PDF.

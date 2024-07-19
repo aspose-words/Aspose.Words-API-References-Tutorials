@@ -32,7 +32,7 @@ url: /el/java/document-merging/merging-documents-documentbuilder/
 // Αρχικοποιήστε το αντικείμενο Document
 Document doc = new Document();
 
-// Αρχικοποιήστε το DocumentBuilder
+// Εκκινήστε το DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 

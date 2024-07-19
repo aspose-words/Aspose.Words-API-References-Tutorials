@@ -150,4 +150,4 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### Где я могу узнать больше об Aspose.Words для Python?
 
-Более подробную документацию и примеры см.[Справочник по API Aspose.Words для Python](https://reference.aspose.com/words/python-net/).
+Для получения более подробной документации и примеров посетите[Справочник по API Aspose.Words для Python](https://reference.aspose.com/words/python-net/).

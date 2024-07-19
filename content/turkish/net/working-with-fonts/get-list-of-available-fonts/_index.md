@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Yazı tipi kaynaklarını yapılandırın
-Daha sonra, şunun bir örneğini oluşturacağız:`FontSettings` ve mevcut yazı tipi kaynaklarını kullanarak`GetFontsSources()` yöntem. Fontları içeren bir klasör belirleyerek yeni bir font kaynağı da ekleyeceğiz.
+ Daha sonra, şunun bir örneğini oluşturacağız:`FontSettings` ve mevcut yazı tipi kaynaklarını kullanarak`GetFontsSources()` yöntem. Fontları içeren bir klasör belirleyerek yeni bir font kaynağı da ekleyeceğiz.
 
 ```csharp
 // Yazı tipi kaynaklarını yapılandırma

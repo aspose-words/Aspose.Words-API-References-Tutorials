@@ -15,7 +15,7 @@ En este tutorial, lo guiaremos en la aceptación de revisiones de un documento d
 En este ejemplo, estamos creando un documento y agregando contenido. Usamos varios párrafos para ilustrar los cambios y revisiones. Así es cómo:
 
 ```csharp
-// Ruta al directorio de documentos.
+//Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

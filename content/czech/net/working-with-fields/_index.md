@@ -27,7 +27,7 @@ Toto je komplexní zdroj pro výuku, jak pracovat s poli v dokumentech aplikace 
 | [Vložit pole](./insert-field/) | Naučte se vložit pole do dokumentů aplikace Word pomocí Aspose.Words for .NET. Přizpůsobte si své dokumenty pomocí dynamických polí. |
 | [Vložit pole pomocí Tvůrce polí](./insert-field-using-field-builder/) | Naučte se vkládat vlastní pole do dokumentů aplikace Word pomocí Aspose.Words for .NET. |
 | [Vložit pole autora](./insert-author-field/) | Naučte se, jak vložit pole AUTHOR do dokumentů aplikace Word pomocí Aspose.Words for .NET. Chcete-li své dokumenty přizpůsobit, zadejte jméno autora. |
-| [Vložit ASKField s Out Document Builder](./insert-askfield-with-out-document-builder/) | Naučte se, jak vložit pole ASK do dokumentů aplikace Word pomocí Aspose.Words for .NET. |
+| [Vložte ASKField s Out Document Builder](./insert-askfield-with-out-document-builder/) | Naučte se, jak vložit pole ASK do dokumentů aplikace Word pomocí Aspose.Words for .NET. |
 | [Vložit pokročilé pole bez Tvůrce dokumentů](./insert-advance-field-with-out-document-builder/) | Naučte se, jak vložit pokročilé pole do dokumentů aplikace Word pomocí Aspose.Words for .NET. |
 | [Získejte názvy polí hromadné korespondence](./get-mail-merge-field-names/) | Naučte se, jak získat názvy polí hromadné korespondence v dokumentech aplikace Word pomocí Aspose.Words for .NET. |
 | [Smazat pole](./delete-fields/) | Průvodce krok za krokem pro odstranění slučovacích polí v dokumentech aplikace Word pomocí Aspose.Words for .NET |

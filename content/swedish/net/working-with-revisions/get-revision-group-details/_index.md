@@ -18,7 +18,7 @@ Det första steget är att ladda upp dokumentet som innehåller ändringarna.
 Document doc = new Document(MyDir + "Revisions.docx");
 ```
 
-## Steg 2: Bläddra i versioner
+## Steg 2: Bläddra versioner
 
 Därefter går vi igenom de versioner som finns i dokumentet och visar deras detaljer, såsom typ, författare, datum och reviderad text.
 

@@ -59,7 +59,7 @@ Seguindo essas etapas, você pode criar facilmente um PDF assinado digitalmente 
 
 ### Exemplo de código-fonte para PDF assinado digitalmente usando titular do certificado usando Aspose.Words para .NET
 
-Aqui está o código-fonte completo para PDF assinado digitalmente usando titular de certificado de um documento usando Aspose.Words for .NET:
+Aqui está o código-fonte completo do PDF assinado digitalmente usando o titular do certificado de um documento usando Aspose.Words for .NET:
 
 ```csharp
 

@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/export-cid-urls-for-mhtml-resources/
 ---
 
-tomto tutoriálu vás provedeme zdrojovým kódem C# pro export CID URL pro zdroje MHTML pomocí Aspose.Words pro .NET. Tato funkce umožňuje exportovat CID URL zdrojů MHTML při ukládání dokumentu ve formátu MHTML.
+V tomto tutoriálu vás provedeme zdrojovým kódem C# pro export CID URL pro zdroje MHTML pomocí Aspose.Words pro .NET. Tato funkce umožňuje exportovat CID URL zdrojů MHTML při ukládání dokumentu ve formátu MHTML.
 
 ## Krok 1: Nastavení projektu
 

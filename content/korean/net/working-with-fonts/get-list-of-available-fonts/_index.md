@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2단계: 글꼴 소스 구성
-다음으로 인스턴스를 생성하겠습니다.`FontSettings` 다음을 사용하여 기존 글꼴 소스를 가져옵니다.`GetFontsSources()` 방법. 또한 글꼴이 포함된 폴더를 지정하여 새 글꼴 소스를 추가하겠습니다.
+ 다음으로 인스턴스를 생성하겠습니다.`FontSettings` 다음을 사용하여 기존 글꼴 소스를 가져옵니다.`GetFontsSources()` 방법. 또한 글꼴이 포함된 폴더를 지정하여 새 글꼴 소스를 추가하겠습니다.
 
 ```csharp
 // 글꼴 소스 구성

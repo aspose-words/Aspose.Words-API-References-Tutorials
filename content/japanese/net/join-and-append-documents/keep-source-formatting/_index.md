@@ -88,7 +88,7 @@ dstDoc.Save(dataDir + "MergedDocument.docx");
 Aspose.Words はさまざまなインポート モードをサポートしています。KeepSourceFormatting モードでは、ほとんどの書式設定属性が保持されます。
 
 ### Aspose.Words は .NET Core アプリケーションと互換性がありますか?
-はい、Aspose.Words は .NET Core をサポートしているため、さまざまなプラットフォームで使用できます。
+はい、Aspose.Words は .NET Core をサポートしており、さまざまなプラットフォームで使用できます。
 
 ### Aspose.Words を使用して大きなドキュメントを効率的に処理するにはどうすればよいですか?
 Aspose.Words は、ページ区切りやメモリ管理の機能など、大規模なドキュメントを操作するための効率的な API を提供します。

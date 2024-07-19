@@ -10,7 +10,7 @@ url: /pt/python-net/document-intelligence/master-document-intelligence/
 
 ## Compreendendo a inteligência de documentos
 
-Inteligência documental refere-se ao processo de extração automática de informações valiosas de documentos, como texto, metadados, tabelas e gráficos. Envolve a análise de dados não estruturados nos documentos e a sua conversão em formatos estruturados e utilizáveis. A inteligência documental permite que as organizações simplifiquem seus fluxos de trabalho documentais, melhorem a tomada de decisões baseada em dados e aumentem a produtividade geral.
+A inteligência documental refere-se ao processo de extração automática de informações valiosas de documentos, como texto, metadados, tabelas e gráficos. Envolve a análise de dados não estruturados nos documentos e a sua conversão em formatos estruturados e utilizáveis. A inteligência documental permite que as organizações simplifiquem seus fluxos de trabalho documentais, melhorem a tomada de decisões baseada em dados e aumentem a produtividade geral.
 
 ## importância da inteligência documental em Python
 

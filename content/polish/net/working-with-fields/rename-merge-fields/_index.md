@@ -46,7 +46,7 @@ foreach(Field f in doc.Range.Fields)
 }
 ```
 
-## Krok 4: Zapisywanie dokumentu
+## Krok 4: Zapisanie dokumentu
 
  Na koniec nazywamy`Save()` metoda zapisania zmodyfikowanego dokumentu.
 

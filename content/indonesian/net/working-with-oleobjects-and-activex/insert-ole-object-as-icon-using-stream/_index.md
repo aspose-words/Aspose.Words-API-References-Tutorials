@@ -88,7 +88,7 @@ A. Untuk membuat dokumen baru dan pembuat dokumen, Anda dapat mengikuti langkah-
 ```csharp
 Document doc = new Document();
 ```
- Menggunakan`DocumentBuilder`kelas untuk membuat pembuat dokumen yang terkait dengan dokumen yang dibuat sebelumnya:
+ Menggunakan`DocumentBuilder` kelas untuk membuat pembuat dokumen yang terkait dengan dokumen yang dibuat sebelumnya:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,7 +118,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### T. Bagaimana cara menyematkan kode untuk menyisipkan objek OLE sebagai ikon dari aliran ke dalam proyek saya?
 
 A. Untuk menyematkan kode untuk menyisipkan objek OLE sebagai ikon dari aliran ke dalam proyek Anda, ikuti langkah-langkah berikut:
--  Impor referensi yang diperlukan dengan menambahkan yang sesuai`using` pernyataan.
+- Impor referensi yang diperlukan dengan menambahkan yang sesuai`using` pernyataan.
 -  Buat dokumen baru dan pembuat dokumen menggunakan`Document`Dan`DocumentBuilder` kelas.
 - Gunakan kode untuk menyisipkan objek OLE sebagai ikon dari aliran.
 -  Simpan dokumen menggunakan`Save` metode dengan jalur tujuan yang sesuai.

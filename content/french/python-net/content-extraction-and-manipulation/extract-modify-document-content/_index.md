@@ -1,6 +1,6 @@
 ---
-title: Extraction et modification de contenu dans des documents Word
-linktitle: Extraction et modification de contenu dans des documents Word
+title: Extraire et modifier du contenu dans des documents Word
+linktitle: Extraire et modifier du contenu dans des documents Word
 second_title: API de gestion de documents Python Aspose.Words
 description: Découvrez comment extraire et modifier le contenu de documents Word à l'aide d'Aspose.Words pour Python. Guide étape par étape avec le code source.
 type: docs

@@ -39,7 +39,7 @@ Mit Aspose.Words ist das Hinzufügen von Bildern zu Ihren Dokumenten ein unkompl
 shape = doc.pages[0].shapes.add_picture("image.jpg", 100, 100)
 
 # Insert an image from a URL
-shape = doc.pages[0].shapes.add_remote_image("https://beispiel.com/bild.jpg", 100, 100)
+shape = doc.pages[0].shapes.add_remote_image("https://example.com/image.jpg", 100, 100)
 ```
 
 ## Anpassen der Bildgröße und -platzierung

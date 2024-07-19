@@ -1,6 +1,6 @@
 ---
-title: Âncora Vertical
-linktitle: Âncora Vertical
+title: Âncora vertical
+linktitle: Âncora vertical
 second_title: API de processamento de documentos Aspose.Words
 description: Aprenda como posicionar uma forma verticalmente em um documento usando o recurso de âncora vertical no Aspose.Words for .NET.
 type: docs

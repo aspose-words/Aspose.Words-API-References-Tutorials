@@ -22,7 +22,7 @@ Antes de profundizar en los detalles de cómo buscar y reemplazar texto, asegúr
 
  Puede descargar la biblioteca Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
-## Buscar y reemplazar texto simple
+## Encontrar y reemplazar texto simple
 
 ```java
 // Cargar el documento
@@ -80,7 +80,7 @@ doc.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-Esto es útil cuando desea excluir el texto dentro de campos, como campos de combinación, para que no se reemplace.
+Esto es útil cuando desea excluir el texto dentro de los campos, como los campos de combinación, para que no se reemplace.
 
 ## Ignorar el texto dentro de las revisiones de eliminación
 

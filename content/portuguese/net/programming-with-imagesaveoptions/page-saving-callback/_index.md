@@ -89,4 +89,4 @@ Neste tutorial, exploramos a funcionalidade de retorno de chamada para salvar p�
 
 Este recurso é útil quando você deseja realizar operações específicas em cada página ao converter para imagens. Você pode acessar informações da página e usá-las para personalizar opções de backup ou executar outro processamento específico da página.
 
-Aspose.Words for .NET oferece uma ampla gama de recursos avançados para manipulação e geração de documentos. O Lembrete de Salvar Página é uma das muitas ferramentas poderosas que oferece para personalizar o processo de salvar páginas em imagens.
+Aspose.Words for .NET oferece uma ampla gama de recursos avançados para manipulação e geração de documentos. O lembrete de salvar página é uma das muitas ferramentas poderosas que permite personalizar o processo de salvar páginas em imagens.

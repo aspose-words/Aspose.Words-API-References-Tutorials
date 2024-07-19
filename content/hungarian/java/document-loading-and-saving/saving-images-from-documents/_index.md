@@ -72,7 +72,7 @@ doc.save("Your Directory Path" + "CustomizedJPEG.jpeg", options);
 
 ## 5. lépés: Az Oldalmentés Visszahívás használata
 
-Az oldalmentés személyre szabásához használhatja a visszahívást. Íme egy példa:
+Az oldalmentés személyre szabásához használhat visszahívást. Íme egy példa:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -133,7 +133,7 @@ public void getJpegPageRange() throws Exception
 {
 	Document doc = new Document("Your Directory Path" + "Rendering.docx");
 	ImageSaveOptions options = new ImageSaveOptions(SaveFormat.JPEG);
-	// Állítsa a „PageSet” értéket „0” értékre, hogy csak a dokumentum első oldalát konvertálja.
+	// Állítsa a "PageSet" értéket "0"-ra, ha csak a dokumentum első oldalát szeretné konvertálni.
 	options.setPageSet(new PageSet(0));
 	// Módosítsa a kép fényerejét és kontrasztját.
 	// Mindkettő 0-1 skálán van, és alapértelmezés szerint 0,5.

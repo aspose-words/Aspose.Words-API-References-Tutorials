@@ -15,7 +15,7 @@ Bu örnekte, Aspose.Words for .NET'in Bölümlere Göre özelliğini kullanarak 
 Başlamak için belgenizin dizinini belirtmemiz ve belgeyi bir Document nesnesine yüklememiz gerekiyor. İşte nasıl:
 
 ```csharp
-// Belgeler dizininin yolu.
+//Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

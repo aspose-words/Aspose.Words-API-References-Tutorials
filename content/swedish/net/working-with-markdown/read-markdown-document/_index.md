@@ -57,7 +57,7 @@ Grattis! Du har nu lärt dig hur du läser ett Markdown-dokument med Aspose.Word
 
 #### F: Hur läser man ett Markdown-dokument med .NET?
 
-S: För att läsa ett Markdown-dokument med .NET kan du använda ett Markdown-kompatibelt bibliotek, som t.ex.`Markdig` eller`CommonMark.NET`. Dessa bibliotek tillhandahåller funktionalitet för att analysera och extrahera innehåll från ett Markdown-dokument.
+ S: För att läsa ett Markdown-dokument med .NET kan du använda ett Markdown-kompatibelt bibliotek, som t.ex.`Markdig` eller`CommonMark.NET`. Dessa bibliotek tillhandahåller funktionalitet för att analysera och extrahera innehåll från ett Markdown-dokument.
 
 #### F: Hur konverterar man ett Markdown-dokument till HTML med .NET?
 
@@ -69,7 +69,7 @@ S: Ja, vissa Markdown i .NET-bibliotek erbjuder anpassningsalternativ vid konver
 
 #### F: Vilka är de rekommenderade .NET-biblioteken för att manipulera Markdown-dokument?
 
- S: Rekommenderade .NET-bibliotek för att manipulera Markdown-dokument är`Markdig`och`CommonMark.NET`. De erbjuder stor flexibilitet och fullt stöd för Markdown-funktioner.
+S: Rekommenderade .NET-bibliotek för att manipulera Markdown-dokument är`Markdig`och`CommonMark.NET`. De erbjuder stor flexibilitet och fullt stöd för Markdown-funktioner.
 
 #### F: Hur hanterar jag fel när jag läser ett Markdown-dokument?
 

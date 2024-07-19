@@ -128,7 +128,7 @@ Ya, Anda dapat menambahkan beberapa dokumen dengan memanggil berulang kali`Appen
 
  Anda bisa memulai dengan a[uji coba gratis](https://releases.aspose.com/) atau dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk fitur tambahan.
 
-### Bisakah saya menambahkan dokumen dengan tipe berbeda, seperti DOCX dan DOC?
+### Bisakah saya menambahkan dokumen dengan jenis berbeda, seperti DOCX dan DOC?
 
 Ya, Aspose.Words mendukung berbagai format dokumen, dan Anda dapat menambahkan berbagai jenis dokumen secara bersamaan.
 

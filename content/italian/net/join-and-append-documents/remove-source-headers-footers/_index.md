@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Passaggio 1: caricare il documento di origine
 
- Innanzitutto, devi caricare il documento di origine da cui desideri rimuovere intestazioni e piè di pagina. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti in cui si trova il documento di origine.
+Innanzitutto, devi caricare il documento di origine da cui desideri rimuovere intestazioni e piè di pagina. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti in cui si trova il documento di origine.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

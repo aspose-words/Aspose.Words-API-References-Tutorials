@@ -103,7 +103,7 @@ In questo esempio, abbiamo creato un nuovo documento, inserito interruzioni di p
 R: Per inserire campi nidificati in un documento di Word utilizzando Aspose.Words per .NET, è possibile seguire questi passaggi:
 
 1. Ottieni il paragrafo in cui desideri inserire i campi nidificati.
-2.  Creare un`FieldStart` oggetto per il campo genitore.
+2.  Creare un`FieldStart` oggetto per il campo padre.
 3.  Aggiungi i campi figlio utilizzando il comando`FieldStart.NextSibling` metodo passando il corrispondente`FieldStart` oggetti come parametri.
 
 #### D: Quali sono i vantaggi dell'utilizzo di campi nidificati in un documento di Word con Aspose.Words per .NET?

@@ -18,7 +18,7 @@ Aspose.Words for Java एक Java API है जो डेवलपर्स क
 
 दस्तावेज़ विभाजन में जाने से पहले, आइए संक्षेप में देखें कि अपने जावा प्रोजेक्ट में Aspose.Words for Java को कैसे सेट अप करें:
 
-1. Aspose.Words for Java लाइब्रेरी को डाउनलोड और इंस्टॉल करें: Aspose.Releases ( से Aspose.Words for Java लाइब्रेरी को डाउनलोड करके शुरू करेंhttps://releases.aspose.com/words/जावाडाउनलोड करने के बाद, लाइब्रेरी को अपने जावा प्रोजेक्ट में शामिल करें।
+1. Aspose.Words for Java लाइब्रेरी को डाउनलोड और इंस्टॉल करें: Aspose.Releases ( से Aspose.Words for Java लाइब्रेरी को डाउनलोड करके शुरू करेंhttps://releases.aspose.com/words/javaडाउनलोड करने के बाद, लाइब्रेरी को अपने जावा प्रोजेक्ट में शामिल करें।
 
 2. Aspose.Words लाइसेंस आरंभ करें: Aspose.Words for Java को इसकी पूर्ण क्षमता में उपयोग करने के लिए, आपको एक वैध लाइसेंस सेट करना होगा। लाइसेंस के बिना, लाइब्रेरी सीमित मूल्यांकन मोड में काम करेगी।
 

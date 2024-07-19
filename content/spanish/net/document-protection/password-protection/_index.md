@@ -15,10 +15,10 @@ url: /es/net/document-protection/password-protection/
 
 Antes de profundizar en el meollo de la cuestión de proteger con contraseña sus documentos de Word, hay algunas cosas que necesitará:
 
-1. Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro entorno de desarrollo C#.
 3. Conocimientos básicos de C#: una comprensión fundamental de la programación en C#.
-4.  Licencia Aspose: Obtenga una licencia de[aquí](https://purchase.aspose.com/buy) o usar un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
+4.  Licencia Aspose: Obtenga una licencia de[aquí](https://purchase.aspose.com/buy) usar un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
 
 ## Importar espacios de nombres
 

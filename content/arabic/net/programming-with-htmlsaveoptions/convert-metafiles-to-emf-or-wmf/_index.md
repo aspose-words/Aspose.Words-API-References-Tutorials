@@ -7,80 +7,103 @@ type: docs
 weight: 10
 url: /ar/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سنرشدك عبر التعليمات البرمجية المصدر لـ C# لتحويل ملفات التعريف إلى تنسيق EMF أو WMF باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تحويل الصور بتنسيق ملف تعريف إلى تنسيقات أكثر توافقًا مثل EMF أو WMF عند تحويل مستند إلى HTML.
+مرحبًا بك في رحلة عميقة أخرى إلى عالم Aspose.Words لـ .NET. اليوم، نتعامل مع خدعة رائعة: تحويل صور SVG إلى تنسيقات EMF أو WMF في مستندات Word الخاصة بك. قد يبدو هذا تقنيًا بعض الشيء، لكن لا تقلق. وبحلول نهاية هذا البرنامج التعليمي، سوف تصبح محترفًا في ذلك. سواء كنت مطورًا متمرسًا أو بدأت للتو في استخدام Aspose.Words for .NET، فسيرشدك هذا الدليل إلى كل ما تحتاج إلى معرفته، خطوة بخطوة.
 
-## الخطوة 1: إعداد المشروع
+## المتطلبات الأساسية
 
-للبدء، قم بإنشاء مشروع C# جديد في بيئة التطوير المتكاملة (IDE) المفضلة لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+قبل أن نتعمق في التعليمات البرمجية، دعونا نتأكد من إعداد كل شيء. إليك ما تحتاجه:
 
-## الخطوة 2: إدراج صورة في المستند
+1. Aspose.Words لمكتبة .NET: تأكد من أن لديك الإصدار الأحدث. إذا لم يكن لديك، يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+2. .NET Framework: تأكد من تثبيت .NET Framework على جهازك.
+3. بيئة التطوير: بيئة تطوير متكاملة مثل Visual Studio ستجعل حياتك أسهل.
+4. المعرفة الأساسية بـ C#: لست بحاجة إلى أن تكون خبيرًا، ولكن الفهم الأساسي سيساعدك.
 
-في هذه الخطوة، سنقوم بإدراج صورة في المستند المراد تحويله. استخدم التعليمة البرمجية التالية لإدراج صورة من مصدر بيانات باستخدام علامة HTML:
+حصلت على كل شيء؟ عظيم! هيا بنا نبدأ.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، نحتاج إلى استيراد مساحات الأسماء الضرورية. يعد هذا أمرًا بالغ الأهمية لأنه يخبر برنامجنا بمكان العثور على الفئات والأساليب التي سنستخدمها.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+تغطي مساحات الأسماء هذه كل شيء بدءًا من وظائف النظام الأساسية وحتى وظيفة Aspose.Words المحددة التي نحتاجها في هذا البرنامج التعليمي.
+
+## الخطوة 1: قم بإعداد دليل المستندات الخاص بك
+
+لنبدأ بتحديد المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي سيتم فيه حفظ مستند Word الخاص بك بعد تحويل ملفات التعريف.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Write("Here is an image as is: ");
-builder.InsertHtml(
-	@"<img src=""data:image/png;base64,
-		iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP
-		C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
-		AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
-		REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
-		ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
-		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`Document`و`DocumentBuilder` لبناء الوثيقة. يقوم بإدراج`<img>` ضع علامة في المستند باستخدام صورة مشفرة باستخدام Base64.
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي الذي تريد حفظ المستند فيه.
 
-## الخطوة 3: قم بتعيين خيارات حفظ HTML
+## الخطوة 2: إنشاء سلسلة HTML باستخدام SVG
 
-سنقوم الآن بتعيين خيارات حفظ HTML، بما في ذلك تنسيق ملف التعريف الذي سيتم استخدامه للصور. استخدم الكود التالي:
+بعد ذلك، نحتاج إلى سلسلة HTML تحتوي على صورة SVG التي نريد تحويلها. إليك مثال بسيط:
 
 ```csharp
-HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
+string html = 
+    @"<html>
+        <svg xmlns='http://www.w3.org/2000/svg' width='500' height='40' viewBox='0 0 500 40'>
+            <text x='0' y='35' font-family='Verdana' font-size='35'>Hello world!</text>
+        </svg>
+    </html>";
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ومجموعات`MetafileFormat` ل`HtmlMetafileFormat.EmfOrWmf` لتحديد أنه يجب تحويل ملفات التعريف إلى تنسيق EMF أو WMF عند التحويل إلى HTML.
+يتضمن مقتطف HTML هذا ملف SVG أساسيًا يقول "Hello World!".
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+## الخطوة 3: قم بتحميل HTML باستخدام خيار ConvertSvgToEmf
 
-وأخيرًا، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML المحددة مسبقًا. استخدم الكود التالي:
+ والآن نستخدم`HtmlLoadOptions` لتحديد الطريقة التي نريد بها التعامل مع صور SVG في HTML. جلسة`ConvertSvgToEmf` ل`true` يضمن تحويل صور SVG إلى تنسيق EMF.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
+HtmlLoadOptions loadOptions = new HtmlLoadOptions { ConvertSvgToEmf = true };
+Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
 ```
 
-يقوم هذا الرمز بتحويل المستند إلى HTML وحفظه في ملف يحتوي على ملفات التعريف المحولة بتنسيق EMF أو WMF اعتمادًا على مجموعة خيارات الحفظ.
+ يقوم مقتطف الكود هذا بإنشاء ملف جديد`Document` كائن عن طريق تحميل سلسلة HTML فيه باستخدام خيارات التحميل المحددة.
 
-### مثال على التعليمات البرمجية المصدر لتحويل ملفات التعريف إلى Emf أو Wmf باستخدام Aspose.Words لـ .NET
+## الخطوة 4: قم بتعيين HtmlSaveOptions لتنسيق ملف التعريف
+
+ لحفظ المستند بتنسيق ملف التعريف الصحيح، نستخدم`HtmlSaveOptions` . هنا، وضعنا`MetafileFormat` ل`HtmlMetafileFormat.Png` ، ولكن يمكنك تغيير هذا إلى`Emf` أو`Wmf` اعتمادا على احتياجاتك.
 
 ```csharp
-
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.Write("Here is an image as is: ");
-	builder.InsertHtml(
-		@"<img src=""data:image/png;base64,
-			iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP
-			C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
-			AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
-			REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
-			ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
-			vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
-
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
-
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
-
+HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Png };
 ```
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+## الخطوة 5: احفظ المستند
 
-لقد تعلمت الآن كيفية تحويل ملفات التعريف إلى تنسيقات EMF أو WMF عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المقدم في هذا البرنامج التعليمي، يمكنك بسهولة إدارة ملفات التعريف في مستندات HTML المحولة.
+وأخيرًا، نقوم بحفظ المستند باستخدام خيارات الحفظ المحددة.
+
+```csharp
+doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToPng.html", saveOptions);
+```
+
+يؤدي هذا إلى حفظ المستند في الدليل المحدد بتنسيق ملف التعريف المحول كما هو محدد.
+
+## خاتمة
+
+وهناك لديك! باتباع هذه الخطوات، تكون قد نجحت في تحويل صور SVG إلى تنسيقات EMF أو WMF في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. تعد هذه الطريقة مفيدة لضمان التوافق والحفاظ على السلامة المرئية لمستنداتك عبر الأنظمة الأساسية المختلفة. ترميز سعيد!
+
+## الأسئلة الشائعة
+
+### هل يمكنني تحويل تنسيقات الصور الأخرى باستخدام هذه الطريقة؟
+نعم، يمكنك تحويل تنسيقات الصور المختلفة عن طريق ضبط خيارات التحميل والحفظ وفقًا لذلك.
+
+### هل من الضروري استخدام إصدار .NET Framework محدد؟
+يدعم Aspose.Words for .NET العديد من إصدارات .NET Framework، ولكن من الجيد دائمًا استخدام الإصدار الأحدث للحصول على أفضل التوافق والميزات.
+
+### ما هي ميزة تحويل SVG إلى EMF أو WMF؟
+يضمن تحويل SVG إلى EMF أو WMF الحفاظ على الرسومات المتجهة وعرضها بشكل صحيح في البيئات التي قد لا تدعم SVG بشكل كامل.
+
+### هل يمكنني أتمتة هذه العملية لمستندات متعددة؟
+قطعاً! يمكنك التكرار عبر ملفات HTML متعددة، وتطبيق نفس العملية لأتمتة التحويل لمعالجة الدُفعات.
+
+### أين يمكنني العثور على المزيد من الموارد والدعم لـ Aspose.Words لـ .NET؟
+ يمكنك العثور على وثائق شاملة[هنا](https://reference.aspose.com/words/net/) واحصل على الدعم من مجتمع Aspose[هنا](https://forum.aspose.com/c/words/8).

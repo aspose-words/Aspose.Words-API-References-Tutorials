@@ -46,7 +46,7 @@ List list = doc.getLists().get(0);
 list.isRestartAtEachSection(true);
 ```
 
-### Ρύθμιση του DocumentBuilder: 
+### Ρύθμιση DocumentBuilder: 
 Δημιουργήστε ένα DocumentBuilder για να προσθέσετε περιεχόμενο στο έγγραφό σας.
 
 ```java

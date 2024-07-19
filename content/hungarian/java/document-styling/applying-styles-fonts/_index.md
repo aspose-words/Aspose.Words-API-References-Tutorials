@@ -107,7 +107,7 @@ Az Aspose.Words for Java hatékony feltételes formázási lehetőségeket bizto
 Teljesen! Az Aspose.Words for Java a betűtípusok és karakterek széles skáláját támogatja különböző nyelvekből és szkriptekből.
 
 ### Hogyan adhatok hiperhivatkozásokat a szöveghez meghatározott stílusokkal?
- Hiperhivatkozások szöveghez való hozzáadásához használja a`FieldHyperlink`osztály stílusokkal kombinálva a kívánt formázás eléréséhez.
+ Ha hiperhivatkozásokat szeretne hozzáadni a szöveghez, használja a`FieldHyperlink`osztály stílusokkal kombinálva a kívánt formázás eléréséhez.
 
 ### Vannak-e korlátozások a dokumentum méretét vagy összetettségét illetően?
 Az Aspose.Words for Java különböző méretű és összetettségű dokumentumokat tud kezelni. A rendkívül nagy dokumentumok azonban további memóriaforrásokat igényelhetnek.

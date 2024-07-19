@@ -8,7 +8,7 @@ weight: 10
 url: /ko/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
 
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 테이블에서 셀 간격을 허용하는 단계별 프로세스를 안내합니다. 이 작업을 수행하는 C# 소스 코드를 설명하고 이를 이해하고 자신의 프로젝트에서 구현하는 데 도움이 되는 포괄적인 가이드를 제공합니다. 이 튜토리얼을 마치면 .NET용 Aspose.Words를 사용하여 Word 문서에서 테이블 서식을 조작하는 방법을 명확하게 이해하게 될 것입니다.
+이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 테이블에서 셀 간격을 허용하는 단계별 프로세스를 안내합니다. 이 작업을 수행하는 C# 소스 코드를 설명하고 이를 이해하고 자신의 프로젝트에서 구현하는 데 도움이 되는 포괄적인 가이드를 제공합니다. 이 튜토리얼이 끝나면 Aspose.Words for .NET을 사용하여 Word 문서에서 테이블 서식을 조작하는 방법을 명확하게 이해하게 될 것입니다.
 
 ## 1단계: 문서 디렉터리 설정
 먼저 문서 디렉터리의 경로를 설정해야 합니다. 이것은 Word 문서가 저장되는 위치입니다. "YOUR DOCUMENT DIRECTORY"를 적절한 경로로 바꾸십시오.

@@ -11,7 +11,7 @@ Aspose.Words untuk .NET adalah perpustakaan yang kuat untuk membuat, mengedit, d
 
 ## Memahami perpustakaan Aspose.Words
 
-Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk mengekstraksi teks dari rentang tertentu.
+Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk mengekstraksi teks dari rentang tertentu.
 
 ## Memuat dokumen Word
 
@@ -35,7 +35,7 @@ Dalam contoh ini, kita menggunakan properti Range dari kelas Dokumen untuk menga
 
 ## Tampilan teks yang diekstraksi
 
-Sekarang kita telah mengekstrak teks dari rentang yang ditentukan, kita dapat menampilkan atau memprosesnya sesuai kebutuhan aplikasi Anda. Misalnya, Anda dapat menampilkannya di layar atau menyimpannya ke file keluaran. Berikut ini contoh untuk menampilkan teks yang diekstraksi:
+Sekarang kita telah mengekstrak teks dari rentang yang ditentukan, kita dapat menampilkan atau memprosesnya sesuai kebutuhan aplikasi Anda. Misalnya, Anda dapat menampilkannya di layar atau menyimpannya ke file keluaran. Berikut ini contoh untuk menampilkan teks yang diekstrak:
 
 ```csharp
 Console.WriteLine(text);
@@ -107,7 +107,7 @@ J: Saat mengekstraksi teks dari rentang menggunakan Aspose.Words untuk .NET, for
 
 J: Ya, Anda hanya dapat mengekstrak bagian teks tertentu dalam rentang menggunakan Aspose.Words untuk .NET. Setelah Anda mengakses rentang yang diinginkan, Anda dapat memanipulasi teks yang diambil menggunakan teknik manipulasi string standar untuk mengekstrak bagian tertentu atau menerapkan pemfilteran khusus sesuai kebutuhan Anda.
 
-#### T: Bisakah saya mengekstrak teks dari dokumen Word yang dilindungi kata sandi atau terenkripsi menggunakan Aspose.Words untuk .NET?
+#### T: Dapatkah saya mengekstrak teks dari dokumen Word yang dilindungi kata sandi atau terenkripsi menggunakan Aspose.Words untuk .NET?
 
  J: Ya, Aspose.Words untuk .NET mendukung ekstraksi teks dari dokumen Word yang dilindungi kata sandi atau terenkripsi. Namun, Anda perlu memberikan kata sandi atau kunci dekripsi yang benar saat memuat dokumen menggunakan`Document` konstruktor kelas. Hal ini memastikan bahwa dokumen didekripsi dengan benar sebelum mengakses konten teksnya.
 

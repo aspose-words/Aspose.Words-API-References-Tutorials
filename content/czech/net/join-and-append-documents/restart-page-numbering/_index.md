@@ -35,9 +35,9 @@ Nyní se pojďme ponořit do praktických kroků spojených s restartováním č
 
 ## Krok 1: Načtěte zdrojové a cílové dokumenty:
 
-Definujte řetězcovou proměnnou`dataDir` pro uložení cesty k vašemu adresáři dokumentů. Nahraďte „VÁŠ ADRESÁŘ DOKUMENTŮ“ skutečným umístěním.
+ Definujte řetězcovou proměnnou`dataDir` pro uložení cesty k vašemu adresáři dokumentů. Nahraďte „VÁŠ ADRESÁŘ DOKUMENTŮ“ skutečným umístěním.
 
- Vytvořte dva`Document` objekty pomocí`Aspose.Words.Document` konstruktér. První (`srcDoc`) bude obsahovat zdrojový dokument obsahující obsah, který má být připojen. Druhý (`dstDoc`) představuje cílový dokument, do kterého integrujeme zdrojový obsah s restartovaným číslováním stránek.
+ Vytvořte dva`Document` objekty pomocí`Aspose.Words.Document`konstruktér. První (`srcDoc`) bude obsahovat zdrojový dokument obsahující obsah, který má být připojen. Druhý (`dstDoc`) představuje cílový dokument, do kterého integrujeme zdrojový obsah s restartovaným číslováním stránek.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Nahraďte svým skutečným adresářem
@@ -59,7 +59,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 
 ## Krok 3: Povolení restartování číslování stránek:
 
- V rámci stejného`PageSetup` objekt první části zdrojového dokumentu, nastavte`RestartPageNumbering`majetek do`true`Tento zásadní krok dává Aspose.Words pokyn, aby znovu zahájil číslování stránek pro připojený obsah.
+ V rámci stejného`PageSetup` objekt první části zdrojového dokumentu, nastavte`RestartPageNumbering`majetek do`true`. Tento zásadní krok dává Aspose.Words pokyn, aby znovu zahájil číslování stránek pro připojený obsah.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;

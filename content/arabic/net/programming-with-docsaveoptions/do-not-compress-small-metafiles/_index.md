@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 
 ### هل أحتاج إلى ترخيص لاستخدام Aspose.Words لـ .NET؟
 
- على الرغم من أنه يمكنك استخدام Aspose.Words for .NET بدون ترخيص للتقييم، إلا أن الترخيص مطلوب لفتح الوظائف الكاملة. يمكنك الحصول على ترخيص[هنا](https://purchase.aspose.com/buy) أو استخدم أ[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
+ على الرغم من أنه يمكنك استخدام Aspose.Words for .NET بدون ترخيص للتقييم، إلا أن الترخيص مطلوب لفتح الوظائف الكاملة. يمكنك الحصول على ترخيص[هنا](https://purchase.aspose.com/buy)أو استخدم أ[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
 
 ### كيف يمكنني التأكد من أن مستنداتي تتوافق مع معايير PDF/A؟
 

@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Ce code crée une instance de`HtmlSaveOptions`et définit le`ResolveFontNames` possibilité de`true`pour résoudre les noms de polices manquants lors de la conversion en HTML. Également`PrettyFormat` l'option est définie sur`true` pour obtenir un code HTML bien formaté.
+ Ce code crée une instance de`HtmlSaveOptions` et définit le`ResolveFontNames` possibilité de`true`pour résoudre les noms de polices manquants lors de la conversion en HTML. Également`PrettyFormat` l'option est définie sur`true` pour obtenir un code HTML bien formaté.
 
 ## Étape 4 : Conversion et enregistrement du document au format HTML
 

@@ -69,7 +69,7 @@ public void setEndnoteOptions() throws Exception {
 }
 ```
 
-## 6. Tùy chỉnh cài đặt ghi chú cuối
+## 6. Tùy chỉnh cài đặt ghi chú
 
 Bạn có thể tùy chỉnh thêm cài đặt ghi chú cuối để đáp ứng yêu cầu tài liệu của mình.
 

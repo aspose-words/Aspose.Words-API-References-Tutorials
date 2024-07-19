@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## 3단계: 섹션 콘텐츠 삭제
-섹션의 내용을 지우려면 섹션의`ClearContent` 방법.
+ 섹션의 내용을 지우려면 섹션의`ClearContent` 방법.
 
 ```csharp
 section.ClearContent();

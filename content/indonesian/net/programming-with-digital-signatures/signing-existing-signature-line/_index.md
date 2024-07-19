@@ -13,7 +13,7 @@ Hai! Pernahkah Anda perlu menandatangani dokumen digital tetapi merasa agak mere
 
 ## Prasyarat
 
-Sebelum kita mendalami detailnya, pastikan kita memiliki semua yang kita butuhkan:
+Sebelum kita mendalami detailnya, pastikan kita memiliki semua yang kita perlukan:
 
 1.  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Jika belum, Anda bisa mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan C#.

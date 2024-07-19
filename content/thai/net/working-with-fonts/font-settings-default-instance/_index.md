@@ -55,7 +55,7 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 
 ## ขั้นตอนที่ 3: โหลดเอกสาร
 
- เมื่อกำหนดค่าแหล่งแบบอักษรของคุณแล้ว ขั้นตอนต่อไปคือการโหลดเอกสารของคุณลงใน Aspose.Words`Document`วัตถุ. ซึ่งช่วยให้คุณสามารถจัดการและบันทึกเอกสารได้ในที่สุด
+ เมื่อกำหนดค่าแหล่งแบบอักษรของคุณแล้ว ขั้นตอนต่อไปคือการโหลดเอกสารของคุณลงใน Aspose.Words`Document` วัตถุ. ซึ่งช่วยให้คุณสามารถจัดการและบันทึกเอกสารได้ในที่สุด
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

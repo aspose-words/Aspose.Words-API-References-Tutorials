@@ -122,7 +122,7 @@ class MultipagePrintDocument implements Printable
                 int leftPos = (int) (thumbLeft + pf.getImageableX());
                 int topPos = (int) (thumbTop + pf.getImageableY());
                 // Vykreslete stránku dokumentu do grafického objektu pomocí vypočítaných souřadnic
-                // a velikost zástupného symbolu pro miniaturu.
+                // a velikost zástupného symbolu miniatur.
                 // Užitečná návratová hodnota je měřítko, ve kterém byla stránka vykreslena.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);

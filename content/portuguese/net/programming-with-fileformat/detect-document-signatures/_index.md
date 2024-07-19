@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Passo 2: Detectar assinaturas digitais
 
- A seguir, usamos o`DetectFileFormat` método do`FileFormatUtil` classe para detectar as informações de formato de arquivo. Neste exemplo, presumimos que o documento se chama "Assinado digitalmente.docx" e está localizado no diretório de documentos especificado.
+ A seguir, usamos o`DetectFileFormat` método do`FileFormatUtil`classe para detectar as informações de formato de arquivo. Neste exemplo, presumimos que o documento se chama "Assinado digitalmente.docx" e está localizado no diretório de documentos especificado.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ Este tutorial forneceu um guia passo a passo sobre como detectar assinatura digi
 
 #### Como detectar a presença de assinatura digital em um documento Word usando Aspose.Words for .NET?
 
- Para detectar a presença de uma assinatura digital em um documento do Word usando Aspose.Words for .NET, você pode seguir as etapas fornecidas no tutorial. Usando o`DetectFileFormat` método do`FileFormatUtil` class permitirá que você detecte informações de formato de arquivo. Então você pode verificar o`HasDigitalSignature` propriedade do`FileFormatInfo`objeto para determinar se o documento contém uma assinatura digital. Se uma assinatura digital for detectada, você poderá exibir uma mensagem informando que as assinaturas serão perdidas se o documento for aberto/salvo com Aspose.Words.
+ Para detectar a presença de uma assinatura digital em um documento do Word usando Aspose.Words for .NET, você pode seguir as etapas fornecidas no tutorial. Usando o`DetectFileFormat` método do`FileFormatUtil` class permitirá que você detecte informações de formato de arquivo. Então você pode verificar o`HasDigitalSignature` propriedade do`FileFormatInfo` objeto para determinar se o documento contém uma assinatura digital. Se uma assinatura digital for detectada, você poderá exibir uma mensagem informando que as assinaturas serão perdidas se o documento for aberto/salvo com Aspose.Words.
 
 #### Como especificar o diretório que contém os documentos onde procurar a assinatura digital?
 
@@ -88,4 +88,4 @@ Ao abrir ou salvar um documento com Aspose.Words, as assinaturas digitais presen
 
 #### Quais são as limitações da detecção de assinaturas digitais com Aspose.Words for .NET?
 
-detecção de assinatura digital com Aspose.Words for .NET limita-se à detecção da presença de assinaturas em um documento. No entanto, Aspose.Words não fornece funcionalidade para verificar a autenticidade ou integridade das assinaturas digitais. Para realizar operações mais avançadas em assinaturas digitais, você precisará usar outras ferramentas ou bibliotecas especializadas.
+A detecção de assinatura digital com Aspose.Words for .NET limita-se à detecção da presença de assinaturas em um documento. No entanto, Aspose.Words não fornece funcionalidade para verificar a autenticidade ou integridade das assinaturas digitais. Para realizar operações mais avançadas em assinaturas digitais, você precisará usar outras ferramentas ou bibliotecas especializadas.

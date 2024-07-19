@@ -90,7 +90,7 @@ builder.InsertImage(imagePath,
    WrapType.Square);
 ```
 
-以下是每個參數的意思：
+每個參數的意義如下：
 - `imagePath`：影像檔案的路徑。
 - `RelativeHorizontalPosition.Margin`：相對於邊距的水平位置。
 - `100`：距邊距的水平偏移量（以磅為單位）。

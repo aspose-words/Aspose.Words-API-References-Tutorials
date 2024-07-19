@@ -105,7 +105,7 @@ header = doc.get_first_section().get_headers_footers().get_by_header_footer_type
 header.get_paragraphs().add("Header content")
 ```
 
-## Köprü Ekleme
+## Köprüler Ekleme
 
  Köprüler kullanılarak eklenebilir`insert_hyperlink` yöntem:
 
@@ -141,7 +141,7 @@ Aspose.Words for Python, Word belgelerini zahmetsizce değiştirmenizi ve deği�
 
 Evet, Aspose.Words for Python API'sini kullanarak kalın, renk ve yazı tipi boyutu gibi metin formatlarını değiştirebilirsiniz.
 
-### Belgedeki belirli bir metni değiştirmek mümkün müdür?
+### Belgedeki belirli bir metni değiştirmek mümkün mü?
 
  Elbette kullanabilirsiniz`replace` Belgedeki belirli metni değiştirme yöntemi.
 

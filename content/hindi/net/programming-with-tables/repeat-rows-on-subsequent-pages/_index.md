@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-//पहली पंक्ति का पहला सेल डालें
+// पहली पंक्ति का पहला सेल डालें
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();

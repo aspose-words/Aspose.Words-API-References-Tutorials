@@ -15,7 +15,7 @@ Ebben az oktatóanyagban végigvezetjük a Word-dokumentumok módosításainak e
 Ebben a példában egy dokumentumot hozunk létre, és tartalmat adunk hozzá. Számos bekezdést használunk a változtatások és átdolgozások szemléltetésére. Itt van, hogyan:
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
+// dokumentumok könyvtár elérési útja.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

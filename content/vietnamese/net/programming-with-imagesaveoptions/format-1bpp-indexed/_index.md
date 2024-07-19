@@ -43,7 +43,7 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
 doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);
 ```
 
- Ở bước cuối cùng này, chúng tôi lưu hình ảnh tài liệu ở định dạng PNG bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu đã chỉ định.
+ Ở bước cuối cùng này, chúng tôi lưu hình ảnh tài liệu ở định dạng PNG bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu được chỉ định.
 
 Bây giờ bạn có thể chạy mã nguồn để định dạng hình ảnh tài liệu ở định dạng PNG với độ sâu màu được lập chỉ mục là 1 bpp. Tệp kết quả sẽ được lưu trong thư mục được chỉ định với tên "WorkingWithImageSaveOptions.Format1BppIndexed.Png".
 

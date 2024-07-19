@@ -21,7 +21,7 @@ Mielőtt belevágnánk a kódolási részbe, győződjünk meg arról, hogy mind
 
 ## Névterek importálása
 
-A kódolás megkezdése előtt importálnia kell a szükséges névtereket. Ez biztosítja, hogy hozzáférjen az Aspose.Words által biztosított összes osztályhoz és metódushoz.
+kódolás megkezdése előtt importálnia kell a szükséges névtereket. Ez biztosítja, hogy hozzáférjen az Aspose.Words által biztosított összes osztályhoz és metódushoz.
 
 ```csharp
 using System;
@@ -81,7 +81,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi Word-d
 Az Aspose.Words különféle védelmi típusokat képes észlelni, mint például a NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments és AllowOnlyFormFields.
 
 ### Hogyan kaphatok támogatást, ha problémákba ütközöm?
- Bármilyen probléma esetén keresse fel a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
+ Bármilyen probléma esetén keresse fel a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8)segítségért.
 
 ### Az Aspose.Words kompatibilis a .NET Core-al?
 Igen, az Aspose.Words a .NET-keretrendszerrel és a .NET Core-val is kompatibilis.

@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 	doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ```
 
-बस! आपने .NET के लिए Aspose.Words का उपयोग करके अपने Word दस्तावेज़ में सामग्री नियंत्रण की शैली सफलतापूर्वक सेट कर ली है।
+बस! आपने Aspose.Words for .NET का उपयोग करके अपने Word दस्तावेज़ में सामग्री नियंत्रण की शैली सफलतापूर्वक सेट कर ली है।

@@ -104,7 +104,7 @@ private Document getDocument() {
 /// индекс страницы на основе 1.
 /// </парам>
 /// <возвращается>
-/// <см. Cref="Документ"/>.
+/// <см. cref="Документ"/>.
 /// </возврат>
 public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
@@ -119,7 +119,7 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 /// Индекс конечной страницы на основе 1.
 /// </парам>
 /// <возвращается>
-/// <см. Cref="Документ"/>.
+/// <см. cref="Документ"/>.
 /// </возврат>
 public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exception {
 	Document result = (Document) getDocument().deepClone(false);

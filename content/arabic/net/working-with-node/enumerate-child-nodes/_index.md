@@ -98,7 +98,7 @@ foreach (Node child in children)
  نعم، يمكنك التعامل مع أنواع العقد المختلفة مثل الأشكال والتعليقات والمزيد عن طريق التحقق منها`NodeType`.
 
 ### 4. هل أحتاج إلى ترخيص لاستخدام Aspose.Words لـ .NET؟
- يمكنك البدء بتجربة مجانية أو الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/).
+يمكنك البدء بتجربة مجانية أو الحصول على ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/).
 
 ### 5. أين يمكنني العثور على المزيد من الأمثلة والوثائق؟
  قم بزيارة[Aspose.Words لوثائق .NET API](https://reference.aspose.com/words/net/) لمزيد من الأمثلة والوثائق التفصيلية.

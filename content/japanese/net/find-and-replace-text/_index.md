@@ -23,7 +23,7 @@ Aspose.Words for .NET は、.NET アプリケーションで Word ドキュメ�
 | [内部のテキストを無視してリビジョンを削除](./ignore-text-inside-delete-revisions/) | Aspose.Words for .NET を使用して、Word 文書の追跡された変更を処理する方法を学びます。この包括的なチュートリアルで、文書の自動化をマスターします。 |
 | [内部のテキストを無視する リビジョンを挿入する](./ignore-text-inside-insert-revisions/) | Aspose.Words for .NET を使用してドキュメントのリビジョンを効果的に管理する方法を学びます。編集を効率化するために、挿入リビジョン内のテキストを無視するテクニックを学びます。 |
 | [フッターのテキストを置換](./replace-text-in-footer/) | Aspose.Words for .NET を使用して Word 文書のフッターのテキストを置換する方法を学びます。このガイドに従って、詳細な例を使用してテキストの置換をマスターしてください。 |
-| [正規表現で置換](./replace-with-regex/) | Aspose.Words for .NET を使用して、Word 文書内で正規表現を使用して検索および置換する方法を学びます。詳細なステップバイステップ ガイドに従って、テキスト操作をマスターしてください。 |
+| [正規表現で置換](./replace-with-regex/) | Aspose.Words for .NET を使用して、Word 文書内で正規表現を使用して検索および置換する方法を学びます。詳細なステップバイステップのガイドに従って、テキスト操作をマスターしてください。 |
 | [置換パターン内の認識と置換](./recognize-and-substitutions-within-replacement-patterns/) | Aspose.Words for .NET を使用して、置換パターン内のテキストを認識して置換する方法を学びます。詳細な例を含むステップバイステップのガイドです。 |
-| [文字列で置換](./replace-with-string/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の文字列を置換する方法を学習します。ドキュメント編集を自動化したい開発者に最適です。 |
+| [文字列で置換](./replace-with-string/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の文字列を置換する方法を学習します。文書編集を自動化したい開発者に最適です。 |
 | [表内のテキストを置換](./replace-text-in-table/) | この詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word テーブル内のテキストを簡単に置き換えます。 |

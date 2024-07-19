@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Dieser Code erstellt eine Instanz von`HtmlSaveOptions`und setzt den`ExportTextInputFormFieldAsText` Möglichkeit,`true` um Texteingabeformularfelder als einfachen Text zu exportieren. Darüber hinaus gibt es den Ordner an, in dem die extrahierten Bilder gespeichert werden.
+ Dieser Code erstellt eine Instanz von`HtmlSaveOptions` und setzt den`ExportTextInputFormFieldAsText` Möglichkeit,`true` um Texteingabeformularfelder als einfachen Text zu exportieren. Darüber hinaus gibt es den Ordner an, in dem die extrahierten Bilder gespeichert werden.
 
 ## Schritt 4: Konvertieren und Speichern des Dokuments im HTML-Format
 

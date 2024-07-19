@@ -62,7 +62,7 @@ tomto tutoriálu jsme se naučili, jak určit výchozí písmo při vykreslován
 
 #### Otázka: Jak mohu určit výchozí písmo při převodu do PDF v Aspose.Words?
 
- A: Chcete-li určit výchozí písmo při převodu do PDF v Aspose.Words, můžete použít`PdfOptions` třídu a nastavte`DefaultFontName`vlastnost na název požadovaného písma.
+ A: Chcete-li určit výchozí písmo při převodu do PDF v Aspose.Words, můžete použít`PdfOptions` třídu a nastavte`DefaultFontName` vlastnost na název požadovaného písma.
 
 #### Otázka: Co když není při převodu do PDF k dispozici výchozí písmo?
 

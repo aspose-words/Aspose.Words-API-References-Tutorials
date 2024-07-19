@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Passaggio 3: Elimina il contenuto della sezione
-Per cancellare il contenuto della sezione, utilizzeremo i file della sezione`ClearContent` metodo.
+ Per cancellare il contenuto della sezione, utilizzeremo i file della sezione`ClearContent` metodo.
 
 ```csharp
 section.ClearContent();

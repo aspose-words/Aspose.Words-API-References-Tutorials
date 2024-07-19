@@ -16,5 +16,5 @@ Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy v
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Změnit styl obsahu v dokumentu aplikace Word](./change-style-of-toc-level/) | Naučte se, jak snadno změnit styl úrovně obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Změňte styl obsahu v dokumentu aplikace Word](./change-style-of-toc-level/) | Naučte se, jak snadno změnit styl úrovně obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
 | [Změnit zarážky tabulátoru obsahu v dokumentu aplikace Word](./change-toc-tab-stops/) | Naučte se, jak změnit karty obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET. |

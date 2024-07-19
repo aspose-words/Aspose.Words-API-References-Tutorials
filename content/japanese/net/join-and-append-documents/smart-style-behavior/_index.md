@@ -15,7 +15,7 @@ Word の達人の皆様、こんにちは。スタイルを保ったまま文書
 
 このドキュメント結合の冒険に乗り出す前に、必要なものがすべて揃っていることを確認しましょう。
 
--  Aspose.Words for .NET: 最新バージョンを入手してください。そうでない場合は、[ダウンロードページ](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: 最新バージョンであることを確認してください。そうでない場合は、[ダウンロードページ](https://releases.aspose.com/words/net/).
 - 開発環境: Visual Studio など、.NET と互換性のある環境であれば何でも構いません。
 - 2 つの Word 文書: このチュートリアルでは、「Document source.docx」と「Northwind traders.docx」を使用します。
 -  Asposeライセンス: 制限を回避するには、[一時ライセンス](https://purchase.aspose.com/temporary-license/)まだ購入していない場合。

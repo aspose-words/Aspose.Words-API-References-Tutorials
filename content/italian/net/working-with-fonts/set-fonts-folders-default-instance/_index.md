@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-fonts/set-fonts-folders-default-instance/
 ---
 
-In questo tutorial ti guideremo attraverso il processo passo passo per impostare la cartella dei caratteri predefinita durante il rendering di un documento utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come impostare la cartella dei caratteri predefinita da utilizzare durante il rendering dei tuoi documenti utilizzando Aspose.Words per .NET.
+In questo tutorial, ti guideremo attraverso il processo passo passo per impostare la cartella dei caratteri predefinita durante il rendering di un documento utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come impostare la cartella dei caratteri predefinita da utilizzare durante il rendering dei tuoi documenti utilizzando Aspose.Words per .NET.
 
 ## Passaggio 1: definire la directory dei documenti
 Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento renderizzato modificato. Sostituisci "DIRECTORY DOCUMENTI" con il percorso appropriato.

@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 接下来，我们需要将光标移动到文档中想要插入合并字段的特定段落。
 
 ```csharp
-//将光标移至段落。
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## 步骤 6：插入合并字段

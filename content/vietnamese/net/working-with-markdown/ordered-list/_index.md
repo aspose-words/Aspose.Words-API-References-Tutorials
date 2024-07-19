@@ -2,96 +2,96 @@
 title: Danh sách được yêu cầu
 linktitle: Danh sách được yêu cầu
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tạo danh sách có thứ tự với Aspose.Words for .NET Hướng dẫn từng bước.
+description: Tìm hiểu cách tạo danh sách có thứ tự trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Hoàn hảo để tự động hóa việc tạo tài liệu.
 type: docs
 weight: 10
 url: /vi/net/working-with-markdown/ordered-list/
 ---
+## Giới thiệu
 
-Trong ví dụ này, chúng tôi sẽ giải thích cách sử dụng chức năng danh sách có thứ tự với Aspose.Words cho .NET. Danh sách có thứ tự cho phép bạn sắp xếp các mục một cách tuần tự bằng các con số.
+Vì vậy, bạn đã quyết định đi sâu vào Aspose.Words for .NET để tạo các tài liệu Word tuyệt vời theo chương trình. Sự lựa chọn tuyệt vời! Hôm nay, chúng ta sẽ chia sẻ cách tạo danh sách có thứ tự trong tài liệu Word. Chúng tôi sẽ thực hiện từng bước một, vì vậy, cho dù bạn là người mới viết mã hay một chuyên gia dày dạn kinh nghiệm, bạn sẽ thấy hướng dẫn này cực kỳ hữu ích. Bắt đầu nào!
 
-## Bước 1: Sử dụng trình tạo tài liệu
+## Điều kiện tiên quyết
 
-Đầu tiên, chúng ta sẽ sử dụng trình tạo tài liệu để tạo tài liệu mới.
+Trước khi chúng ta đi sâu vào mã, có một số điều bạn cần:
+
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Nếu không, bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
+3. Kiến thức cơ bản về C#: Bạn nên nắm vững kiến thức cơ bản về C# để dễ dàng theo dõi.
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words trong dự án của bạn, bạn cần nhập các không gian tên cần thiết. Điều này giống như việc thiết lập hộp công cụ của bạn trước khi bắt đầu làm việc.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Hãy chia mã thành các bước nhỏ và giải thích từng phần. Sẵn sàng? Chúng ta đi đây!
+
+## Bước 1: Khởi tạo tài liệu
+
+Trước tiên, bạn cần tạo một tài liệu mới. Hãy coi điều này giống như việc mở một tài liệu Word trống trên máy tính của bạn.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 2: Áp dụng định dạng danh sách có thứ tự
+Ở đây, chúng ta đang khởi tạo một tài liệu mới và một đối tượng DocumentBuilder. DocumentBuilder giống như chiếc bút của bạn, cho phép bạn viết nội dung vào tài liệu.
 
- Chúng tôi sẽ áp dụng định dạng danh sách có thứ tự bằng cách sử dụng trình tạo tài liệu`ApplyBulletDefault`phương pháp. Chúng ta cũng có thể tùy chỉnh định dạng đánh số bằng cách vào các cấp độ danh sách và đặt định dạng mà chúng ta muốn.
+## Bước 2: Áp dụng định dạng danh sách đánh số
 
-```csharp
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
-```
-
-## Bước 3: Thêm mục vào danh sách
-
- Chúng ta có thể thêm các mục vào danh sách bằng cách sử dụng trình tạo tài liệu`Writeln` phương pháp.
+Bây giờ, hãy áp dụng định dạng danh sách được đánh số mặc định. Điều này giống như việc thiết lập tài liệu Word của bạn để sử dụng các dấu đầu dòng được đánh số.
 
 ```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.ListFormat.ApplyNumberDefault();
 ```
+
+Dòng mã này thiết lập việc đánh số cho danh sách của bạn. Dễ dàng phải không?
+
+## Bước 3: Thêm mục danh sách
+
+Tiếp theo, hãy thêm một số mục vào danh sách của chúng tôi. Hãy tưởng tượng bạn đang ghi lại một danh sách hàng tạp hóa.
+
+```csharp
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
+```
+
+Với những dòng này, bạn đang thêm hai mục đầu tiên vào danh sách của mình.
 
 ## Bước 4: Thụt lề danh sách
 
- Chúng ta có thể thụt lề danh sách bằng cách sử dụng trình tạo tài liệu`ListIndent` phương pháp.
+Nếu bạn muốn thêm các mục con vào một mục thì sao? Hãy làm điều đó!
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
-```
-
-## Bước 5: Lưu tài liệu
-
-Cuối cùng, chúng ta có thể lưu tài liệu ở định dạng mong muốn.
-
-### Mã nguồn mẫu cho danh sách có thứ tự với Aspose.Words for .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
-
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-
 builder.ListFormat.ListIndent();
 
 builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng danh sách có thứ tự với Aspose.Words cho .NET.
+ Các`ListIndent` phương thức thụt lề danh sách, tạo danh sách phụ. Bây giờ bạn đang tạo một danh sách phân cấp, giống như một danh sách việc cần làm lồng nhau.
 
+## Phần kết luận
 
-### Câu hỏi thường gặp
+Việc tạo danh sách có thứ tự trong tài liệu Word theo chương trình lúc đầu có vẻ khó khăn, nhưng với Aspose.Words cho .NET, điều đó thật dễ dàng. Bằng cách làm theo các bước đơn giản này, bạn có thể dễ dàng thêm và quản lý danh sách trong tài liệu của mình. Cho dù bạn đang tạo báo cáo, tạo tài liệu có cấu trúc hay chỉ tự động hóa quy trình làm việc của mình, Aspose.Words for .NET đều có thể giúp bạn. Vì vậy, tại sao phải chờ đợi? Bắt đầu viết mã và xem điều kỳ diệu diễn ra!
 
-#### Câu hỏi: Làm cách nào để tạo danh sách có thứ tự trong Markdown?
+## Câu hỏi thường gặp
 
-Trả lời: Để tạo danh sách có thứ tự trong Markdown, hãy bắt đầu mỗi mục danh sách bằng một số, theo sau là dấu chấm (`1.`, `2.`, `3.`), theo sau là khoảng trắng.
+### Tôi có thể tùy chỉnh kiểu đánh số của danh sách không?  
+ Có, bạn có thể tùy chỉnh kiểu đánh số bằng cách sử dụng`ListFormat` của cải. Bạn có thể đặt các kiểu đánh số khác nhau như chữ số La Mã, chữ cái, v.v.
 
-#### Câu hỏi: Chúng tôi có thể lồng các danh sách theo thứ tự trong Markdown không?
+### Làm cách nào để thêm nhiều mức thụt lề hơn?  
+ Bạn có thể dùng`ListIndent` nhiều lần để tạo ra các cấp độ danh sách phụ sâu hơn. Mỗi cuộc gọi đến`ListIndent` thêm một mức thụt lề.
 
-Trả lời: Có, có thể lồng các danh sách có thứ tự trong Markdown bằng cách thêm bốn khoảng trắng bù trừ trước mỗi mục danh sách lồng nhau.
+### Tôi có thể trộn lẫn các dấu đầu dòng và danh sách đánh số không?  
+ Tuyệt đối! Bạn có thể áp dụng các định dạng danh sách khác nhau trong cùng một tài liệu bằng cách sử dụng`ListFormat` tài sản.
 
-#### Hỏi: Làm cách nào để tùy chỉnh việc đánh số danh sách theo thứ tự?
+### Có thể tiếp tục đánh số từ danh sách trước đó không?  
+Có, bạn có thể tiếp tục đánh số bằng cách sử dụng cùng một định dạng danh sách. Aspose.Words cho phép bạn kiểm soát việc đánh số danh sách trên các đoạn văn khác nhau.
 
-Trả lời: Trong Markdown tiêu chuẩn, việc đánh số danh sách theo thứ tự được tạo tự động. Tuy nhiên, một số trình chỉnh sửa Markdown cho phép bạn tùy chỉnh nó bằng các tiện ích mở rộng cụ thể.
-
-#### Câu hỏi: Danh sách thứ tự trong Markdown có hỗ trợ thụt lề không?
-
-Đáp: Có, danh sách được sắp xếp theo thứ tự trong Markdown hỗ trợ thụt lề. Bạn có thể thêm dịch chuyển trái bằng cách sử dụng dấu cách hoặc tab.
-
-#### Câu hỏi: Có thể thêm liên kết hoặc văn bản nội tuyến vào danh sách các mục không?
-
-Đáp: Có, bạn có thể thêm liên kết hoặc văn bản nội tuyến vào danh sách các mục bằng cú pháp Markdown thích hợp.
+### Làm cách nào để xóa định dạng danh sách?  
+ Bạn có thể xóa định dạng danh sách bằng cách gọi`ListFormat.RemoveNumbers()`. Điều này sẽ biến các mục trong danh sách trở lại thành các đoạn văn thông thường.

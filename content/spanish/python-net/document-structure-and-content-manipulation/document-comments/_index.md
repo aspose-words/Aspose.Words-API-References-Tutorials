@@ -123,7 +123,7 @@ doc.import_comments("comments.xml")
 
 ## Conclusión
 
-Aspose.Words para Python simplifica el trabajo con comentarios en documentos de Word y ofrece una API integral para agregar, recuperar, modificar y administrar comentarios. Al integrar Aspose.Words para Python en sus proyectos, puede mejorar la colaboración y agilizar el proceso de revisión dentro de sus documentos.
+Aspose.Words para Python simplifica el trabajo con comentarios en documentos de Word y ofrece una API completa para agregar, recuperar, modificar y administrar comentarios. Al integrar Aspose.Words para Python en sus proyectos, puede mejorar la colaboración y agilizar el proceso de revisión dentro de sus documentos.
 
 ## Preguntas frecuentes
 

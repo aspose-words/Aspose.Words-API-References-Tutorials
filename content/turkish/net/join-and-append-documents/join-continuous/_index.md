@@ -101,5 +101,5 @@ Evet, Aspose.Words for .NET hem .NET Framework hem de .NET Core ile uyumludur.
 ### Farklı sayfa düzenlerine sahip belgeleri birleştirebilir miyim?
 Evet, ancak sorunsuz bir birleştirme sağlamak için sayfa yapısı özelliklerini ayarlamanız gerekebilir.
 
-### Sorunlarla karşılaşırsam nereden destek alabilirim?
+### Sorunla karşılaşırsam nereden destek alabilirim?
  Aspose topluluk forumundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/words/8).

@@ -79,7 +79,7 @@ Chúc mừng! Bạn đã học cách hợp nhất các tài liệu bằng Aspose
 
 Để hợp nhất nhiều tài liệu thành một, bạn có thể làm theo các bước được nêu trong hướng dẫn này. Tải từng tài liệu, nhập nội dung của chúng bằng DocumentBuilder và lưu tài liệu đã hợp nhất.
 
-### Tôi có thể kiểm soát thứ tự nội dung khi hợp nhất các tài liệu không?
+### Tôi có thể kiểm soát thứ tự nội dung khi hợp nhất tài liệu không?
 
 Có, bạn có thể kiểm soát thứ tự nội dung bằng cách điều chỉnh trình tự mà bạn nhập các nút từ các tài liệu khác nhau. Điều này cho phép bạn tùy chỉnh quá trình hợp nhất tài liệu theo yêu cầu của bạn.
 

@@ -32,7 +32,7 @@ using System;
 
 ## Stap 1: Laad het Word-document
 
-We beginnen met het laden van het Word-document met de verwarde rijbladwijzers. De`Document` klasse verwerkt documentmanipulatie in Aspose.Words. Zo laadt u het document:
+ We beginnen met het laden van het Word-document met de verwarde rijbladwijzers. De`Document` klasse verwerkt documentmanipulatie in Aspose.Words. Zo laadt u het document:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY"; // Vervang door uw documentlocatie
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Controleer of rijen geldig en aangrenzend zijn
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Verplaats het bladwijzereinde naar de laatste alinea van de laatste cel van de bovenste rij
+		   //Verplaats het bladwijzereinde naar de laatste alinea van de laatste cel van de bovenste rij
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ Hier volgt een stapsgewijze uitleg van wat de code doet:
 
  We doorlopen alle bladwijzers in het document met behulp van a`foreach` lus.
 Voor elke bladwijzer halen we de bovenliggende rij op van zowel de bladwijzerstart (`bookmark.BookmarkStart`) en het bladwijzereinde (`bookmark.BookmarkEnd` ) de ... gebruiken`GetAncestor` methode.
-Vervolgens controleren we of beide rijen worden gevonden (`row1 != null`En`row2 != null`en als het aangrenzende rijen zijn (`row1.NextSibling == row2`). Dit zorgt ervoor dat we alleen bladwijzers wijzigen die zich over aangrenzende rijen uitstrekken.
+Vervolgens controleren we of beide rijen worden gevonden (`row1 != null`En`row2 != null`) en als het aangrenzende rijen zijn (`row1.NextSibling == row2`). Dit zorgt ervoor dat we alleen bladwijzers wijzigen die zich over aangrenzende rijen uitstrekken.
 Als aan de voorwaarden is voldaan, verplaatsen we het eindknooppunt van de bladwijzer naar het einde van de laatste alinea in de laatste cel van de bovenste rij (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) om ze effectief te ontwarren.
 
 ## Stap 3: Rij per bladwijzer verwijderen
@@ -87,12 +87,12 @@ Hier is een overzicht van deze functie:
 
 We nemen de bladwijzernaam (`bookmarkName`) als invoer.
  We halen het bijbehorende bladwijzerobject op met behulp van`doc.Range.Bookmarks[bookmarkName]`.
- We krijgen dan de bovenliggende rij van de bladwijzer die we gaan gebruiken`GetAncestor` (vergelijkbaar met de`Untangle` functie).
+We krijgen dan de bovenliggende rij van de bladwijzer die we gaan gebruiken`GetAncestor` (vergelijkbaar met de`Untangle` functie).
 Ten slotte controleren we of de bladwijzer en rij bestaan (`bookmark != null` En
 
 ## Stap 4: Controleer het ontwarren
 
- Terwijl de`Untangle`functie de veiligheid van andere bladwijzers moet garanderen, het is altijd een goede gewoonte om dit te verifiëren. Zo kunnen we controleren of het ontwarringsproces niet per ongeluk het einde van een andere bladwijzer heeft verwijderd:
+ Terwijl de`Untangle` functie de veiligheid van andere bladwijzers moet garanderen, het is altijd een goede gewoonte om dit te verifiëren. Zo kunnen we controleren of het ontwarringsproces niet per ongeluk het einde van een andere bladwijzer heeft verwijderd:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -101,7 +101,7 @@ if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
 
 Dit codefragment controleert of het einde van de bladwijzer met de naam 'ROW1' nog steeds bestaat nadat de rij met de bladwijzer 'ROW2' is verwijderd. Als deze nul is, wordt er een uitzondering gegenereerd, wat aangeeft dat er een probleem is met het ontwarringsproces. 
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
  Tenslotte, na het ontwarren van de bladwijzers en mogelijk het verwijderen van rijen, slaat u het gewijzigde document op met behulp van de`Save` methode:
 
@@ -131,7 +131,7 @@ De code bevat een uitzonderingshandler die een uitzondering genereert als het on
 
 ### Kan ik deze code gebruiken om bladwijzers in niet-aangrenzende rijen te ontwarren?
 
-Momenteel richt de code zich op het ontwarren van bladwijzers die zich over aangrenzende rijen uitstrekken. Het aanpassen van de code om niet-aangrenzende rijen te verwerken zou extra logica vereisen om deze scenario's te identificeren en af te handelen.
+Momenteel richt de code zich op het ontwarren van bladwijzers die zich over aangrenzende rijen uitstrekken. Het aanpassen van de code om niet-aangrenzende rijen te verwerken zou extra logica vereisen om die scenario's te identificeren en af te handelen.
 
 ### Zijn er beperkingen aan het gebruik van deze aanpak?
 

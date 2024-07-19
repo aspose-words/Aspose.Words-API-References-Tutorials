@@ -88,7 +88,7 @@ doc.Range.Replace("This is Line 1&mThis is Line 2", "Page break is replaced with
 
 ## Steg 7: Spara dokumentet
 
-Slutligen sparar du dokumentet i den angivna katalogen.
+Slutligen, spara dokumentet i den angivna katalogen.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.MetaCharactersInSearchPattern.docx");

@@ -15,7 +15,7 @@ gyors technológiai fejlődés modern korszakában az automatizálás a hatékon
 
 A mai digitális környezetben a Word-dokumentumok hatékony kezelése és feldolgozása kulcsfontosságú. Az Aspose.Words for Python robusztus API-ként szolgál, amely felhatalmazza a fejlesztőket a Word-dokumentumok különböző aspektusainak programozottan történő manipulálására és automatizálására. VBA-makróval párosítva az automatizálási képességek még erősebbé válnak, lehetővé téve a bonyolult feladatok zökkenőmentes végrehajtását.
 
-## Az Aspose.Words for Python használatának első lépései
+## Az Aspose.Words for Python használatának megkezdése
 
 Az automatizálási út megkezdéséhez telepítenie kell az Aspose.Words for Python programot. Letöltheti a[Aspose honlapja](https://releases.aspose.com/words/python/). A telepítés után elindíthatja Python-projektjét, és importálhatja a szükséges modulokat.
 
@@ -79,7 +79,7 @@ End Sub
 
 ## Több dokumentum kötegelt feldolgozása
 
-Az Aspose.Words Python VBA makróval kombinálva lehetővé teszi több dokumentum kötegelt módban történő feldolgozását. Ez különösen értékes olyan helyzetekben, ahol nagyszabású dokumentumautomatizálásra van szükség.
+Az Aspose.Words Python VBA-makróval kombinálva lehetővé teszi több dokumentum kötegelt módban történő feldolgozását. Ez különösen értékes olyan helyzetekben, ahol nagyszabású dokumentumautomatizálásra van szükség.
 
 ```vba
 Sub BatchProcessDocuments()

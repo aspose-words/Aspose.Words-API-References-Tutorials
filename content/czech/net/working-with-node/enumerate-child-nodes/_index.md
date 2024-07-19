@@ -63,7 +63,7 @@ Tento řádek kódu shromažďuje všechny podřízené uzly jakéhokoli typu v 
 
 ## Krok 4: Iterace přes podřízené uzly
 
-podřízenými uzly v ruce je můžeme iterovat a provádět konkrétní akce na základě jejich typů. V tomto případě vytiskneme text všech nalezených uzlů běhu.
+S podřízenými uzly v ruce je můžeme iterovat a provádět konkrétní akce na základě jejich typů. V tomto případě vytiskneme text všech nalezených uzlů běhu.
 
 ```csharp
 foreach (Node child in children)
@@ -98,7 +98,7 @@ Odstavec může obsahovat uzly, jako jsou úseky, tvary, komentáře a další v
  Ano, můžete manipulovat s různými typy uzlů, jako jsou tvary, komentáře a další, jejich kontrolou`NodeType`.
 
 ### 4. Potřebuji licenci k používání Aspose.Words pro .NET?
- Můžete začít s bezplatnou zkušební verzí nebo získat dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/).
+Můžete začít s bezplatnou zkušební verzí nebo získat dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Kde najdu další příklady a dokumentaci?
  Navštivte[Dokumentace Aspose.Words for .NET API](https://reference.aspose.com/words/net/) pro další příklady a podrobnou dokumentaci.

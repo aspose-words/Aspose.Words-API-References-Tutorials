@@ -8,7 +8,7 @@ weight: 14
 url: /cs/java/document-manipulation/helper-methods-for-extracting-content/
 ---
 
-## Úvod do pomocných metod pro extrahování obsahu v Aspose.Words pro Javu
+## Úvod do pomocných metod pro extrahování obsahu v Aspose.Words pro Java
 
 Aspose.Words for Java je výkonná knihovna, která umožňuje vývojářům pracovat s dokumenty Wordu programově. Jedním z běžných úkolů při práci s dokumenty aplikace Word je extrahování obsahu z nich. V tomto článku prozkoumáme některé pomocné metody pro efektivní extrakci obsahu pomocí Aspose.Words for Java.
 

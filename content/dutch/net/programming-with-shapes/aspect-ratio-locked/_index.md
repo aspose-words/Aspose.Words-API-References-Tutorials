@@ -45,7 +45,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
 shape.AspectRatioLocked = false; // Ontgrendel de beeldverhouding
 ```
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
  Sla het document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithShapes.AspectRatioLocked.docx".
 
 ```csharp

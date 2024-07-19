@@ -32,7 +32,7 @@ Table secondTable = (Table)doc.GetChild(NodeType.Table, 1, true);
 Certifique-se de substituir "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho real para o diretório de documentos.
 
 ## Etapa 3: combinar linhas da tabela
-seguir, combinaremos as linhas da segunda tabela com o final da primeira tabela. Use o seguinte código:
+A seguir, combinaremos as linhas da segunda tabela com o final da primeira tabela. Use o seguinte código:
 
 ```csharp
 // Combinação de linhas da tabela

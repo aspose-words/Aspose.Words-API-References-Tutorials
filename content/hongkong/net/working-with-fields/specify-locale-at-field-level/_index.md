@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/working-with-fields/specify-locale-at-field-level/
 ---
 
-以下是解釋以下 C# 原始程式碼的逐步指南，該程式碼允許使用 Aspose.Words for .NET 功能在欄位層級指定本地化。在使用此程式碼之前，請確保您已在專案中包含 Aspose.Words 程式庫。
+以下逐步指南解釋了以下 C# 原始程式碼，該程式碼允許使用 Aspose.Words for .NET 功能在欄位層級指定本地化。在使用此程式碼之前，請確保您已在專案中包含 Aspose.Words 程式庫。
 
 ## 步驟1：設定文檔目錄路徑
 

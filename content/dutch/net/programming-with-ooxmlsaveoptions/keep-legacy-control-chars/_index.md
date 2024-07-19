@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
  In deze laatste stap slaan we het document op met behulp van de`Save` methode en geef het pad door naar het uitvoerbestand met de`.docx` extensie, samen met de opgegeven opslagopties.
 
-Nu kunt u de broncode uitvoeren om oudere stuurtekens te behouden bij het opslaan van een document. Het resulterende bestand wordt opgeslagen in de opgegeven map met de naam "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
+Nu kunt u broncode uitvoeren om oudere stuurtekens te behouden bij het opslaan van een document. Het resulterende bestand wordt opgeslagen in de opgegeven map met de naam "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
 
 ### Voorbeeldbroncode voor Keep Legacy Control Chars met Aspose.Words voor .NET 
 ```csharp
@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
 In deze zelfstudie hebben we de functionaliteit onderzocht van het behouden van oudere stuurtekens bij het opslaan van een document met Aspose.Words voor .NET. We hebben geleerd hoe we de speciale tekens kunnen behouden die belangrijk kunnen zijn voor de juiste documentopmaak of weergave.
 
- Het behouden van verouderde besturingstekens is vooral handig bij het verwerken van woorden met documenten die oudere of specifieke functies gebruiken, zoals speciale besturingstekens. Door het inschakelen van de`KeepLegacyControlChars` optie bij het opslaan van het document zorgt u ervoor dat deze tekens behouden blijven.
+ Het behouden van oudere stuurtekens is vooral handig bij het verwerken van woorden met documenten die oudere of specifieke functies gebruiken, zoals speciale stuurtekens. Door het inschakelen van de`KeepLegacyControlChars` optie bij het opslaan van het document zorgt u ervoor dat deze tekens behouden blijven.
 
 Aspose.Words voor .NET biedt een reeks flexibele en krachtige back-upopties om aan uw behoeften op het gebied van documentmanipulatie te voldoen. Door de juiste opties te gebruiken, kunt u het back-upproces aanpassen om de specifieke kenmerken van uw documenten te behouden.
 

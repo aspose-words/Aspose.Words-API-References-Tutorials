@@ -39,7 +39,7 @@ doc.save(outPath + "WorkingWithHyphenation.HyphenateWordsOfLanguages.pdf");
 
 Artık sözlükleri kaydettiğinize göre belgelerinize tireleme uygulama zamanı geldi. Aspose.Words bu süreci basitleştirerek belgelerinizin şık ve profesyonel görünmesini sağlar.
 
-## 5. Tireleme Sözlüklerini Yükleme
+## 5. Tireleme Sözlüklerinin Yüklenmesi
 
 Bazı durumlarda tireleme sözlüklerini dinamik olarak yüklemeniz gerekebilir. Bu, farklı dil gereksinimlerine uyum sağlamanıza olanak tanır. Belirli bir dil için tireleme sözlüğünü şu şekilde yükleyebilirsiniz:
 

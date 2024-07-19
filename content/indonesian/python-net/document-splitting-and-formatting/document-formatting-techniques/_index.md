@@ -2,7 +2,7 @@
 title: Menguasai Teknik Pemformatan Dokumen untuk Dampak Visual
 linktitle: Menguasai Teknik Pemformatan Dokumen untuk Dampak Visual
 second_title: API Manajemen Dokumen Aspose.Words Python
-description: Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk Python. Buat dokumen yang menarik secara visual dengan gaya font, tabel, gambar, dan banyak lagi. Panduan langkah demi langkah dengan contoh kode.
+description: Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk Python. Buat dokumen yang menarik secara visual dengan gaya font, tabel, gambar, dan lainnya. Panduan langkah demi langkah dengan contoh kode.
 type: docs
 weight: 14
 url: /id/python-net/document-splitting-and-formatting/document-formatting-techniques/

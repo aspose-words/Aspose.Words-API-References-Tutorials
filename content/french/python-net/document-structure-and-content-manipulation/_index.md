@@ -61,7 +61,7 @@ Découvrez comment formater des paragraphes et du texte dans des documents Word 
 ### [Suivi et examen des révisions des documents](./document-revisions/)
 Découvrez comment suivre et réviser les révisions de documents à l'aide d'Aspose.Words pour Python. Guide étape par étape avec code source pour une collaboration efficace. Améliorez votre gestion documentaire dès aujourd'hui !
 ### [Gestion des sections et de la mise en page du document](./document-sections/)
-Découvrez comment gérer les sections et les mises en page d'un document avec Aspose.Words pour Python. Créez, modifiez des sections, personnalisez les mises en page, et bien plus encore. Commencez maintenant! 
+Découvrez comment gérer les sections et les mises en page d'un document avec Aspose.Words pour Python. Créez, modifiez des sections, personnalisez des mises en page, et bien plus encore. Commencez maintenant! 
 ### [Améliorer le contenu visuel avec des zones de texte dans les documents Word](./document-textboxes/)
 Améliorez les visuels des documents à l'aide d'Aspose.Words Python ! Découvrez étape par étape comment créer et personnaliser des zones de texte dans des documents Word. Améliorez la mise en page, le formatage et le style du contenu pour des documents attrayants.
 ### [Déverrouiller l'automatisation avancée avec les macros VBA dans les documents Word](./document-vba-macros/)

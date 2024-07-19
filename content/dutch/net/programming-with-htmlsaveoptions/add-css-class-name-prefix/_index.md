@@ -19,7 +19,7 @@ Maak om te beginnen een nieuw C#-project in uw favoriete IDE. Zorg ervoor dat er
 In deze stap laden we het Word-document dat we naar HTML willen converteren. Gebruik de volgende code om het document te laden:
 
 ```csharp
-// Pad naar de documentenmap.
+//Pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions` en sets`CssStyleSheetType` naar`CssStyleSheetType.External`om een extern CSS-stijlblad te genereren, en`CssClassNamePrefix` naar`"pfx_"` naar voorvoegsel`"pfx_"` om de CSS-klasse te benoemen.
+ Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions` en sets`CssStyleSheetType` naar`CssStyleSheetType.External` om een extern CSS-stijlblad te genereren, en`CssClassNamePrefix` naar`"pfx_"` naar voorvoegsel`"pfx_"` om de CSS-klasse te benoemen.
 
 ## Stap 4: Het document converteren en opslaan naar HTML
 
@@ -69,4 +69,4 @@ Deze code converteert het document naar HTML en slaat het op in een bestand waar
 
  Zorg ervoor dat u het juiste documentpad opgeeft in het`dataDir` variabel.
 
-U hebt nu geleerd hoe u een CSS-klassenaamvoorvoegsel kunt toevoegen bij het converteren van een document naar HTML met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u de CSS-klassenamen in uw geconverteerde HTML-documenten aanpassen.
+hebt nu geleerd hoe u een CSS-klassenaamvoorvoegsel kunt toevoegen bij het converteren van een document naar HTML met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u de CSS-klassenamen in uw geconverteerde HTML-documenten aanpassen.

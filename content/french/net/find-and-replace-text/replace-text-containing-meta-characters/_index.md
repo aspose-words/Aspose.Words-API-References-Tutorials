@@ -95,7 +95,7 @@ count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 ## Étape 6 : Enregistrez le document
 
-Enfin, sauvons notre travail acharné. Considérez cela comme si vous appuyiez sur « Enregistrer » sur votre chef-d'œuvre.
+Enfin, sauvons notre dur labeur. Considérez cela comme si vous appuyiez sur « Enregistrer » sur votre chef-d'œuvre.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");

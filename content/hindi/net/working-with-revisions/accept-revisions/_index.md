@@ -15,7 +15,7 @@ url: /hi/net/working-with-revisions/accept-revisions/
 इस उदाहरण में, हम एक दस्तावेज़ बना रहे हैं और उसमें सामग्री जोड़ रहे हैं। हम परिवर्तनों और संशोधनों को दर्शाने के लिए कई पैराग्राफ़ का उपयोग करते हैं। यहाँ बताया गया है कि कैसे:
 
 ```csharp
-// दस्तावेज़ निर्देशिका का पथ.
+//दस्तावेज़ निर्देशिका का पथ.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

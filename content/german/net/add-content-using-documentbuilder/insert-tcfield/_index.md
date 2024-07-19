@@ -64,7 +64,7 @@ Jetzt kommt der spaßige Teil. Wir werden ein TC-Feld in unser Dokument einfüge
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Diese Codezeile weist Aspose.Words an, ein TC-Feld mit dem Eintragstext "Eintragstext" einzufügen. Das`\\f t` Teil ist ein Schalter, der bestimmt, wie der Eintrag im Inhaltsverzeichnis angezeigt wird.
+ Diese Codezeile weist Aspose.Words an, ein TC-Feld mit dem Eintragstext "Eintragstext" einzufügen. Das`\\f t`Teil ist ein Schalter, der bestimmt, wie der Eintrag im Inhaltsverzeichnis angezeigt wird.
 
 ## Schritt 4: Speichern Sie das Dokument
 

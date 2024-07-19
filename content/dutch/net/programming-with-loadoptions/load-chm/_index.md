@@ -21,7 +21,7 @@ De eerste stap is het configureren van de laadopties voor ons CHM-bestand. Gebru
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding. GetEncoding("windows-1251") };
 ```
 
-We maken een nieuw LoadOptions-object en stellen de eigenschap Encoding in op "windows-1251" -codering voor CHM-bestanden.
+We maken een nieuw LoadOptions-object en stellen de eigenschap Encoding in op "windows-1251"-codering voor CHM-bestanden.
 
 ## CHM-bestand laden
 

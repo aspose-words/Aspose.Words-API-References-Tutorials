@@ -98,7 +98,7 @@ Một đoạn văn có thể chứa các nút như lượt chạy, hình dạng,
  Có, bạn có thể thao tác với nhiều loại nút khác nhau như hình dạng, nhận xét, v.v. bằng cách kiểm tra chúng`NodeType`.
 
 ### 4. Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
- Bạn có thể bắt đầu với bản dùng thử miễn phí hoặc nhận giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/).
+Bạn có thể bắt đầu với bản dùng thử miễn phí hoặc nhận giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Tôi có thể tìm thêm ví dụ và tài liệu ở đâu?
  Tham quan[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/) để biết thêm ví dụ và tài liệu chi tiết.

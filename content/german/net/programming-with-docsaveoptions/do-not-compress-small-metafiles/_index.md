@@ -94,7 +94,7 @@ Ja, Aspose.Words für .NET ermöglicht Ihnen die Konfiguration von Speicheroptio
 
 ### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
 
- Während Sie Aspose.Words für .NET ohne Lizenz zur Evaluierung verwenden können, ist eine Lizenz erforderlich, um die volle Funktionalität freizuschalten. Sie können eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy) oder verwenden Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zur Auswertung.
+ Während Sie Aspose.Words für .NET ohne Lizenz zur Evaluierung verwenden können, ist eine Lizenz erforderlich, um die volle Funktionalität freizuschalten. Sie können eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy)oder verwenden Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zur Auswertung.
 
 ### Wie kann ich sicherstellen, dass meine Dokumente den PDF/A-Standards entsprechen?
 

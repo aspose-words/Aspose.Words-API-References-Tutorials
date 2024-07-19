@@ -7,7 +7,7 @@ type: docs
 weight: 1620
 url: /fr/net/programming-with-htmlsaveoptions/
 ---
-Aspose.Words for .NET est une bibliothèque puissante permettant de manipuler et de générer des documents Word dans des applications .NET. Les tutoriels du site de référence Aspose.Words for .NET constituent une ressource précieuse pour les développeurs cherchant à maîtriser cette bibliothèque et à exploiter pleinement ses fonctionnalités.
+Aspose.Words for .NET est une bibliothèque puissante permettant de manipuler et de générer des documents Word dans des applications .NET. Les didacticiels du site de référence Aspose.Words for .NET constituent une ressource précieuse pour les développeurs cherchant à maîtriser cette bibliothèque et à exploiter pleinement ses fonctionnalités.
 
 Le didacticiel « Traitement des mots avec HtmlSaveOptions » se concentre sur l'utilisation des options d'enregistrement HTML dans Aspose.Words pour .NET. Ce didacticiel guide les développeurs à travers les différentes options disponibles pour personnaliser la conversion des documents Word en HTML. Des exemples de code détaillés sont fournis pour démontrer l'utilisation de ces options et obtenir les résultats de conversion souhaités.
 

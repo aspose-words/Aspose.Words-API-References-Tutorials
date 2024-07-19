@@ -40,7 +40,7 @@ Hal pertama yang pertama, kita perlu menentukan di mana dokumen kita akan disimp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke folder dokumen Anda. Di sinilah gaya dokumen Word Anda akan disimpan.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke folder dokumen Anda. Di sinilah dokumen Word gaya Anda akan disimpan.
 
 ## Langkah 2: Membuat Dokumen Baru
 
@@ -55,7 +55,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 3: Menerapkan Gaya Paragraf
 
-Ini adalah dimana keajaiban terjadi! Kita akan menerapkan gaya paragraf pada dokumen kita.
+Ini adalah dimana keajaiban terjadi! Kami akan menerapkan gaya paragraf ke dokumen kami.
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;

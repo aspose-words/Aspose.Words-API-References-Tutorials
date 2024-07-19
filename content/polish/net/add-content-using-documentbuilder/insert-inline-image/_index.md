@@ -9,7 +9,7 @@ url: /pl/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 ## Wstęp
 
-W dziedzinie przetwarzania dokumentów za pomocą aplikacji .NET Aspose.Words wyróżnia się jako solidne rozwiązanie do programowego manipulowania dokumentami Word. Jedną z jego kluczowych funkcji jest możliwość łatwego wstawiania obrazów w tekście, co zwiększa atrakcyjność wizualną i funkcjonalność dokumentów. W tym samouczku szczegółowo opisano, w jaki sposób można wykorzystać Aspose.Words dla .NET do płynnego osadzania obrazów w dokumentach programu Word.
+dziedzinie przetwarzania dokumentów za pomocą aplikacji .NET Aspose.Words wyróżnia się jako solidne rozwiązanie do programowego manipulowania dokumentami Word. Jedną z jego kluczowych funkcji jest możliwość łatwego wstawiania obrazów w tekście, co zwiększa atrakcyjność wizualną i funkcjonalność dokumentów. W tym samouczku szczegółowo opisano, w jaki sposób można wykorzystać Aspose.Words dla .NET do płynnego osadzania obrazów w dokumentach programu Word.
 
 ## Warunki wstępne
 

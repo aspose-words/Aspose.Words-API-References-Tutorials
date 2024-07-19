@@ -34,7 +34,7 @@ Ez a kód megjeleníti a dokumentum nevét és a beépített tulajdonságait, be
 
 ### Egyedi tulajdonságok
 
-Az egyéni dokumentumtulajdonságok kezeléséhez használhatja a következő kódrészletet:
+Az egyéni dokumentumtulajdonságok kezeléséhez a következő kódrészletet használhatja:
 
 ```java
 @Test

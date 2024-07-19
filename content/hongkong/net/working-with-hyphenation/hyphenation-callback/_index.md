@@ -62,7 +62,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 第 3 步：載入文檔
 
-現在，讓我們載入需要連字符的文檔。
+現在，讓我們載入需要連字的文檔。
 
 ```csharp
 Document document = new Document(dataDir + "German text.docx");

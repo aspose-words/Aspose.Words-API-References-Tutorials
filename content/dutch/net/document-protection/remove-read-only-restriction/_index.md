@@ -77,7 +77,7 @@ doc.Protect(ProtectionType.NoProtection);
 
 Deze stap is van cruciaal belang omdat u ervoor zorgt dat er geen schrijfbeveiliging op uw document wordt toegepast.
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Sla ten slotte het gewijzigde document op de gewenste locatie op.
 

@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 第 3 步：更新頁面佈局
-
-致電`UpdatePageLayout`方法。這會在記憶體中渲染文件並捕獲渲染期間發生的任何警告。
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## 步驟 4：設定警告回調
+## 步驟 3：設定警告回調
 
 若要擷取和處理警告，請建立一個實現以下功能的類`IWarningCallback`介面.此類別將記錄文件處理期間發生的任何警告。
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        //我們只對被替換的字體感興趣。
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## 第 5 步：將回調分配給文檔
+## 第 4 步：將回調分配給文檔
 
 將警告回調分配給文件。這可確保捕獲並記錄任何字體問題。
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## 第 5 步：更新頁面佈局
+
+致電`UpdatePageLayout`方法。這會在記憶體中渲染文件並捕獲渲染期間發生的任何警告。
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## 第 6 步：儲存文檔

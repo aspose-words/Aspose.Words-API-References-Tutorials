@@ -21,7 +21,7 @@ url: /ko/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 // 문서 디렉토리 경로
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// 문서작성
+// 문서 작성
 Document doc = new Document();
 
 // 문서 생성기 초기화
@@ -42,7 +42,7 @@ builder.RowFormat.HeadingFormat = true;
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.CellFormat.Width = 100;
 
-//첫 번째 행의 첫 번째 셀 삽입
+// 첫 번째 행의 첫 번째 셀 삽입
 builder. InsertCell();
 builder.Writeln("Header line 1");
 builder. EndRow();

@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Langkah 3: Perbarui Tata Letak Halaman
-
- Hubungi`UpdatePageLayout`metode. Ini merender dokumen dalam memori dan menangkap peringatan apa pun yang terjadi selama rendering.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Langkah 4: Atur Panggilan Balik Peringatan
+## Langkah 3: Atur Panggilan Balik Peringatan
 
  Untuk menangkap dan menangani peringatan, buatlah kelas yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan mencatat setiap peringatan yang terjadi selama pemrosesan dokumen.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Kami hanya tertarik pada font yang diganti.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Langkah 5: Tetapkan Callback ke Dokumen
+## Langkah 4: Tetapkan Callback ke Dokumen
 
 Tetapkan panggilan balik peringatan ke dokumen. Ini memastikan bahwa masalah font apa pun telah ditangkap dan dicatat.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Langkah 5: Perbarui Tata Letak Halaman
+
+ Hubungi`UpdatePageLayout` metode. Ini merender dokumen dalam memori dan menangkap peringatan apa pun yang terjadi selama rendering.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Langkah 6: Simpan Dokumen

@@ -258,7 +258,7 @@ public void splitNodesAcrossPages() throws Exception
 	collector.getDocument().accept(new SectionSplitter(this));
 }
 /// <tóm tắt>
-/// Điều này được <see cref="SectionSplitter"/> gọi để cập nhật số trang của các nút phân tách.
+/// Điều này được <see cref="SectionSplitter"/> gọi để cập nhật số trang của các nút phân chia.
 /// </tóm tắt>
 /// <param name="node">
 /// Nút.

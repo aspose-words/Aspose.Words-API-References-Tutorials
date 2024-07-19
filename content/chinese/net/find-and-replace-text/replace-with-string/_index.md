@@ -14,7 +14,7 @@ url: /zh/net/find-and-replace-text/replace-with-string/
 
 ## 先决条件
 
-在我们开始编写代码之前，请确保您已准备好所需的一切：
+在我们开始编写代码之前，让我们确保您已准备好所需的一切：
 
 1.  Aspose.Words for .NET：下载最新版本[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何 C# IDE。
@@ -65,7 +65,7 @@ builder.Writeln("sad mad bad");
 
 ## 步骤 4：执行查找和替换操作
 
-真正的行动就在这里。我们要找到单词“sad”，并将其替换为“bad”。
+真正的动作就在这里。我们要找到单词“sad”，并将其替换为“bad”。
 
 ```csharp
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));

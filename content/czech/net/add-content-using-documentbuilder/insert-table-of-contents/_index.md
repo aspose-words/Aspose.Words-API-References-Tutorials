@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 ## Úvod
-V tomto tutoriálu se naučíte, jak efektivně přidat obsah (TOC) do dokumentů aplikace Word pomocí Aspose.Words for .NET. Tato funkce je nezbytná pro organizaci a procházení dlouhých dokumentů, zlepšuje čitelnost a poskytuje rychlý přehled částí dokumentu.
+tomto tutoriálu se naučíte, jak efektivně přidat obsah (TOC) do dokumentů aplikace Word pomocí Aspose.Words for .NET. Tato funkce je nezbytná pro organizaci a procházení dlouhých dokumentů, zlepšuje čitelnost a poskytuje rychlý přehled částí dokumentu.
 
 ## Předpoklady
 
@@ -127,4 +127,4 @@ Aspose.Words podporuje generování více obsahů s různými nastaveními v rá
 Ano, Aspose.Words zajišťuje kompatibilitu s různými verzemi formátů Microsoft Word.
 
 ### Kde najdu další pomoc a podporu pro Aspose.Words?
-Pro další pomoc navštivte stránku[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) nebo se podívejte na[oficiální dokumentace](https://reference.aspose.com/words/net/).
+ Pro další pomoc navštivte stránku[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) nebo se podívejte na[oficiální dokumentace](https://reference.aspose.com/words/net/).

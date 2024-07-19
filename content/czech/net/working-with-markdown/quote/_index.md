@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Krok 3: Vytvoření stylů pro vnořené úrovně
 
- Můžeme vytvořit styly pro vnořené úrovně pomocí`Styles.Add` metoda`Document` objekt. V tomto příkladu vytváříme styl nazvaný "Citace1", který představuje úroveň vnořené nabídky.
+ Můžeme vytvořit styly pro vnořené úrovně pomocí`Styles.Add` metoda`Document`objekt. V tomto příkladu vytváříme styl nazvaný "Citace1", který představuje úroveň vnořené nabídky.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
@@ -75,4 +75,4 @@ Odpověď: Citace Markdown nepodporují konkrétní atributy. Jsou jednoduše zv
 
 #### Q: Můžete vložit uvozovky do Markdown?
 
-Odpověď: Ano, do Markdown je možné vnořit uvozovky přidáním další úrovně lomených závorek (`>`).
+Odpověď: Ano, je možné vnořit uvozovky do Markdown přidáním další úrovně lomených závorek (`>`).

@@ -32,10 +32,10 @@ using System;
 
 ## Krok 1: Načtěte dokument aplikace Word
 
-Začneme načtením dokumentu aplikace Word obsahující záložky spletených řádků. The`Document` třída zpracovává manipulaci s dokumenty v Aspose.Words. Postup načtení dokumentu:
+ Začneme načtením dokumentu aplikace Word obsahující záložky spletených řádků. The`Document` třída zpracovává manipulaci s dokumenty v Aspose.Words. Postup načtení dokumentu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY"; // Nahraďte umístěním vašeho dokumentu
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Nahraďte umístěním dokumentu
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
 ## Krok 2: Rozbalte záložky řádků
 
- Tady se děje kouzlo! The`Untangle` funkce se stará o rozmotání záložek řádků. Pojďme si rozebrat jeho funkčnost:
+ Tady se děje kouzlo! The`Untangle` funkce se stará o rozmotání záložek řádků. Pojďme si jeho funkčnost rozebrat:
 
 ```csharp
 private void Untangle(Document doc)
@@ -56,7 +56,7 @@ private void Untangle(Document doc)
 
 	   // Zkontrolujte, zda jsou řádky platné a sousedící
 	   if (row1 != null && row2 != null && row1.NextSibling == row2)
-		   // Přesunout konec záložky na poslední odstavec poslední buňky horního řádku
+		   //Přesunout konec záložky na poslední odstavec poslední buňky horního řádku
 		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
    }
 }
@@ -66,7 +66,7 @@ Zde je podrobné vysvětlení toho, co kód dělá:
 
  Iterujeme všechny záložky v dokumentu pomocí a`foreach` smyčka.
 Pro každou záložku získáme nadřazený řádek začátku záložky (`bookmark.BookmarkStart`) a konec záložky (`bookmark.BookmarkEnd` ) za použití`GetAncestor` metoda.
-Poté zkontrolujeme, zda byly nalezeny oba řádky (`row1 != null`a`row2 != null`a pokud se jedná o sousední řádky (`row1.NextSibling == row2`). To zajišťuje, že upravíme pouze záložky, které se rozprostírají přes sousední řádky.
+Poté zkontrolujeme, zda byly nalezeny oba řádky (`row1 != null`a`row2 != null`) a pokud se jedná o sousední řádky (`row1.NextSibling == row2`). To zajišťuje, že upravíme pouze záložky, které se rozprostírají přes sousední řádky.
 Pokud jsou podmínky splněny, přesuneme koncový uzel záložky na konec posledního odstavce v poslední buňce horního řádku (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) efektivně je rozmotat.
 
 ## Krok 3: Odstraňte řádek podle záložky
@@ -87,12 +87,12 @@ Zde je rozpis této funkce:
 
 Vezmeme název záložky (`bookmarkName`) jako vstup.
  Načteme odpovídající objekt záložky pomocí`doc.Range.Bookmarks[bookmarkName]`.
- Poté se začne používat nadřazený řádek záložky`GetAncestor` (podobně jako`Untangle` funkce).
+Poté se začne používat nadřazený řádek záložky`GetAncestor` (podobně jako`Untangle` funkce).
 Nakonec zkontrolujeme, zda záložka a řádek existují (`bookmark != null` a
 
 ## Krok 4: Ověřte rozpletení
 
- Zatímco`Untangle`funkce by měla zajistit bezpečnost ostatních záložek, je vždy dobré to ověřit. Zde je návod, jak můžeme zkontrolovat, zda proces rozmotávání omylem nesmazal konec jiné záložky:
+ Zatímco`Untangle` funkce by měla zajistit bezpečnost ostatních záložek, je vždy dobré to ověřit. Zde je návod, jak můžeme zkontrolovat, zda proces rozmotávání omylem nesmazal konec jiné záložky:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

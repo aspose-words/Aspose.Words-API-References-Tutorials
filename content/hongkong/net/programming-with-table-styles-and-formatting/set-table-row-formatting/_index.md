@@ -52,7 +52,7 @@ table. TopPadding = 30;
 table. BottomPadding = 30;
 ```
 
-## 第 6 步：向行新增內容
+## 第 6 步：為行新增內容
 最後，我們可以使用文檔產生器將內容新增到該行`Writeln()`方法。
 
 ```csharp

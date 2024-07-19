@@ -85,7 +85,7 @@ Aspose.Words dla .NET to biblioteka do przetwarzania dokumentów, która umożli
 ### Gdzie mogę znaleźć dokumentację Aspose.Words dla .NET?
  Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).
 
-### Czy przed zakupem mogę wypróbować Aspose.Words dla .NET?
+### Czy mogę wypróbować Aspose.Words dla .NET przed zakupem?
  Tak, możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
 ### Jak uzyskać wsparcie dla Aspose.Words dla .NET?

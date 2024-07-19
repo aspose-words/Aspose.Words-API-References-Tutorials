@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Daha sonra, imleci belgede birleştirme alanını eklemek istediğimiz belirli bir paragrafa taşımamız gerekir.
 
 ```csharp
-// İmleci paragrafa taşıyın.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Adım 6: Birleştirme Alanını Ekleyin

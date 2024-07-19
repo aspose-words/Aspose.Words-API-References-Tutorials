@@ -78,6 +78,6 @@ R: Sim, você pode especificar várias pastas de fontes TrueType em Aspose.Words
 
  R: Para verificar a pasta TrueType Fonts configurada em Aspose.Words, você pode usar o`GetTrueTypeFontsFolder` método do`Fonts` class para obter a localização da pasta TrueType Fonts configurada.
 
-#### P: Por que é importante configurar a pasta de fontes TrueType em Aspose.Words?
+#### P: Por que é importante configurar a pasta de fontes TrueType no Aspose.Words?
 
 R: Configurar a pasta de fontes TrueType no Aspose.Words é importante porque ajuda o Aspose.Words a localizar as fontes necessárias ao processar documentos do Word. Isso garante consistência na formatação e aparência dos documentos, mesmo em sistemas diferentes.

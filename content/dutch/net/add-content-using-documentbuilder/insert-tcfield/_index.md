@@ -64,7 +64,7 @@ Nu komt het leuke gedeelte. We gaan een TC-veld in ons document invoegen. Het TC
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Deze coderegel vertelt Aspose.Words om een TC-veld in te voegen met de invoertekst "Entry Text". De`\\f t` part is een schakelaar die bepaalt hoe het item wordt weergegeven in de inhoudsopgave.
+ Deze coderegel vertelt Aspose.Words om een TC-veld in te voegen met de invoertekst "Entry Text". De`\\f t`part is een schakelaar die bepaalt hoe het item wordt weergegeven in de inhoudsopgave.
 
 ## Stap 4: Sla het document op
 

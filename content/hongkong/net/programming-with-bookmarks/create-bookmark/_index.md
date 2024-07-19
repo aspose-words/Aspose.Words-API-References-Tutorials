@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-bookmarks/create-bookmark/
 
 在我們開始之前，您需要具備以下條件：
 
-1.  Aspose.Words for .NET Library：從以下位置下載並安裝[這裡](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library：從以下位址下載並安裝[這裡](https://releases.aspose.com/words/net/).
 2. 開發環境：Visual Studio 或任何其他.NET 開發環境。
 3. C# 基礎：了解基本 C# 程式設計概念。
 

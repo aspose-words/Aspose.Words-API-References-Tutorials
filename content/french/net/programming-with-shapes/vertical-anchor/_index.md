@@ -45,7 +45,7 @@ Définissez la propriété d'ancrage vertical de la forme pour contrôler son al
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
-## Étape 5 : Ajouter du contenu à la forme
+## Étape 5 : ajouter du contenu à la forme
  Utilisez le`MoveTo` méthode du`DocumentBuilder` objet pour déplacer le curseur vers le premier paragraphe de la forme. Ensuite, utilisez le`Write` méthode pour ajouter du contenu à la forme.
 
 ```csharp

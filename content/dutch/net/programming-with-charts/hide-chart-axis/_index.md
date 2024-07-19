@@ -89,7 +89,7 @@ chart.AxisY.Hidden = true;
 
 Deze coderegel verbergt de Y-as, waardoor deze onzichtbaar wordt in het diagram.
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
 
 Sla het document ten slotte op in de opgegeven map.
 

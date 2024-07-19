@@ -96,4 +96,4 @@ Zorg ervoor dat u het juiste pad en naambestand voor het uitvoerdocument opgeeft
 ```
 
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u een geneste tabel in een Word-document kunt maken met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen en de meegeleverde C#-code te implementeren, kunt u programmatisch geneste tabellen maken in uw Word-documenten op basis van uw specifieke behoeften.
+In deze zelfstudie hebben we geleerd hoe u een geneste tabel in een Word-document kunt maken met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen en de meegeleverde C#-code te implementeren, kunt u programmatisch geneste tabellen maken in uw Word-documenten volgens uw specifieke behoeften.

@@ -17,7 +17,7 @@ url: /zh/java/licensing-and-configuration/
 
 2. 获取许可证文件：购买后，您将收到一个许可证文件。此文件对于在您的 Java 项目中配置 Aspose.Words 至关重要。
 
-3. 集成许可证：要启用 Aspose.Words，请将许可证集成到您的 Java 应用程序中。这通常涉及加载许可证文件并将其应用于 Aspose.Words。请参阅[API 文档](https://reference.aspose.com/words/java/)了解详细的代码示例。
+3. 集成许可证：要启用 Aspose.Words，请将许可证集成到 Java 应用程序中。这通常涉及加载许可证文件并将其应用于 Aspose.Words。请参阅[API 文档](https://reference.aspose.com/words/java/)了解详细的代码示例。
 
 ## 配置设置
 

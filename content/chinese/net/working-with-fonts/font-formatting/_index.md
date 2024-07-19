@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 第 2 步：创建新文档和文档生成器
-接下来，我们将通过实例化创建一个新文档`Document`类和文档生成器通过实例化`DocumentBuilder`班级。
+接下来，我们将通过实例化`Document`通过实例化`DocumentBuilder`班级。
 
 ```csharp
 //创建新文档

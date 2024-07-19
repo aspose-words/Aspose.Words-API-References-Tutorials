@@ -55,7 +55,7 @@ I det här exemplet:
 
 ## Steg 3: Ladda dokumentet
 
- Med dina teckensnittskällor konfigurerade är nästa steg att ladda ditt dokument i en Aspose.Words`Document`objekt. Detta gör att du kan manipulera och så småningom spara dokumentet.
+ Med dina teckensnittskällor konfigurerade är nästa steg att ladda ditt dokument i en Aspose.Words`Document` objekt. Detta gör att du kan manipulera och så småningom spara dokumentet.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

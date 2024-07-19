@@ -52,7 +52,7 @@ table. TopPadding = 30;
 table. BottomPadding = 30;
 ```
 
-## Étape 6 : Ajouter du contenu à la ligne
+## Étape 6 : ajouter du contenu à la ligne
  Enfin, nous pouvons ajouter du contenu à la ligne en utilisant le générateur de documents`Writeln()` méthode.
 
 ```csharp

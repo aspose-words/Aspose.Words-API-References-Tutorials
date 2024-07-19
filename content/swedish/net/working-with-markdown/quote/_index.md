@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Steg 3: Skapa stilar för kapslade nivåer
 
- Vi kan skapa stilar för kapslade nivåer med hjälp av`Styles.Add` metod för`Document` objekt. I det här exemplet skapar vi en stil som heter "Quote1" för att representera en kapslad citatnivå.
+ Vi kan skapa stilar för kapslade nivåer med hjälp av`Styles.Add` metod för`Document`objekt. I det här exemplet skapar vi en stil som heter "Quote1" för att representera en kapslad citatnivå.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

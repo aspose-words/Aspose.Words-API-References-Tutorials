@@ -57,7 +57,7 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie ein Markdown-Dokument 
 
 #### F: Wie lese ich ein Markdown-Dokument mit .NET?
 
-A: Um ein Markdown-Dokument mit .NET zu lesen, können Sie eine Markdown-kompatible Bibliothek verwenden, wie zum Beispiel`Markdig` oder`CommonMark.NET`. Diese Bibliotheken bieten Funktionen zum Parsen und Extrahieren von Inhalten aus einem Markdown-Dokument.
+ A: Um ein Markdown-Dokument mit .NET zu lesen, können Sie eine Markdown-kompatible Bibliothek verwenden, wie zum Beispiel`Markdig` oder`CommonMark.NET`. Diese Bibliotheken bieten Funktionen zum Parsen und Extrahieren von Inhalten aus einem Markdown-Dokument.
 
 #### F: Wie konvertiere ich ein Markdown-Dokument mit .NET in HTML?
 
@@ -69,7 +69,7 @@ A: Ja, einige Markdown-Bibliotheken in .NET bieten Anpassungsoptionen bei der Ko
 
 #### F: Welche .NET-Bibliotheken werden zum Bearbeiten von Markdown-Dokumenten empfohlen?
 
- A: Empfohlene .NET-Bibliotheken zur Bearbeitung von Markdown-Dokumenten sind`Markdig`Und`CommonMark.NET`. Sie bieten große Flexibilität und volle Unterstützung für Markdown-Funktionen.
+A: Empfohlene .NET-Bibliotheken zur Bearbeitung von Markdown-Dokumenten sind`Markdig`Und`CommonMark.NET`. Sie bieten große Flexibilität und volle Unterstützung für Markdown-Funktionen.
 
 #### F: Wie gehe ich mit Fehlern beim Lesen eines Markdown-Dokuments um?
 

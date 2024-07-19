@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // الوصول السريع والمكتوب إلى الصف الأول من الجدول.
+     //الوصول السريع والمكتوب إلى الصف الأول من الجدول.
      table.FirstRow?.Remove();
 
      // الوصول السريع والمكتوب إلى الصف الأخير من الجدول.

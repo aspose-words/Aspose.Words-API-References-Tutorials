@@ -74,7 +74,7 @@ Ha dokumentumokat kell egyesítenie, és az eredményt PDF formátumban kell men
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Itt összeolvadunk`Document1.docx`és`Document2.docx` és mentse el az eredményt PDF fájlként.
+ Itt összeolvadunk`Document1.docx`és`Document2.docx` és mentse az eredményt PDF fájlként.
 
 ## 5. lépés: Dokumentumpéldány létrehozása egyesített dokumentumokból
 

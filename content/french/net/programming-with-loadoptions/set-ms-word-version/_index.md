@@ -1,6 +1,6 @@
 ---
-title: Définir la version de MS Word
-linktitle: Définir la version de MS Word
+title: Définir la version de Ms Word
+linktitle: Définir la version de Ms Word
 second_title: API de traitement de documents Aspose.Words
 description: Découvrez comment charger un document avec une version spécifiée de MS Word à l'aide d'Aspose.Words pour .NET.
 type: docs
@@ -62,7 +62,7 @@ Spécifier la version de MS Word garantit que le document est chargé et traité
 
 #### Q : Quelles versions de MS Word Aspose.Words prend-il en charge ?
 
-R : Aspose.Words for .NET prend en charge diverses versions de MS Word, notamment Word 97, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016, Word 2019, etc.
+R : Aspose.Words for .NET prend en charge différentes versions de MS Word, notamment Word 97, Word 2003, Word 2007, Word 2010, Word 2013, Word 2016, Word 2019, etc.
 
 #### Q : Puis-je charger un document avec une version de MS Word différente de celle installée sur mon système ?
 

@@ -45,7 +45,7 @@ Tento fragment kódu nejprve definuje cestu k adresáři, kde se nachází váš
 
 ## Krok 2: Otevřete záložku
 
- Představte si záložku jako příznak označující konkrétní místo v dokumentu. Abychom mohli upravit jeho obsah, musíme jej nejprve najít. Aspose.Words nabízí`Bookmarks` sběr v rámci`Range` objekt, což vám umožní načíst konkrétní záložku podle jejího názvu. Děláme to takto:
+ Představte si záložku jako příznak označující konkrétní místo v dokumentu. Abychom mohli upravit jeho obsah, musíme jej nejprve najít. Aspose.Words nabízí`Bookmarks` sběr v rámci`Range` objekt, což vám umožní načíst konkrétní záložku podle jejího názvu. Uděláme to takto:
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks["MyBookmark1"];

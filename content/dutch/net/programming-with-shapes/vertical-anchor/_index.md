@@ -53,7 +53,7 @@ builder.MoveTo(textBox.FirstParagraph);
 builder.Write("Textbox contents");
 ```
 
-## Stap 6: Bewaar het document
+## Stap 6: Sla het document op
  Sla het document op in de opgegeven map met behulp van de`Save`methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithShapes.VerticalAnchor.docx".
 
 ```csharp

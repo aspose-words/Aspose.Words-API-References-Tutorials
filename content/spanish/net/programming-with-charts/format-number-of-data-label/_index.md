@@ -13,7 +13,7 @@ La creación de documentos atractivos e informativos a menudo implica incluir gr
 
 ## Requisitos previos
 
-Antes de profundizar en el código, existen algunos requisitos previos que debe cumplir:
+Antes de profundizar en el código, hay algunos requisitos previos que debe cumplir:
 
 -  Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words para .NET. Si aún no lo has instalado, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: debe tener configurado un entorno de desarrollo .NET. Se recomienda encarecidamente Visual Studio.

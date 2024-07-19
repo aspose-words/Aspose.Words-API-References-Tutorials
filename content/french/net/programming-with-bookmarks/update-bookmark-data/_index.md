@@ -29,7 +29,7 @@ using Aspose.Words;
 
  Cette ligne amène le`Aspose.Words` espace de noms dans votre code, vous donnant accès aux classes et fonctionnalités nécessaires pour travailler avec des documents Word.
 
-Passons maintenant au vif du sujet : mettre à jour les données de signets existants dans un document Word. Voici un aperçu du processus sous forme d'instructions claires et étape par étape :
+Entrons maintenant dans le vif du sujet : mettre à jour les données de signets existants dans un document Word. Voici un aperçu du processus sous forme d'instructions claires, étape par étape :
 
 ## Étape 1 : Charger le document
 

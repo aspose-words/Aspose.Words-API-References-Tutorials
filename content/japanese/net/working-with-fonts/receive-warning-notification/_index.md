@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## ステップ3: ページレイアウトを更新する
-
-電話する`UpdatePageLayout`メソッド。これにより、ドキュメントがメモリ内でレンダリングされ、レンダリング中に発生した警告がキャプチャされます。
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## ステップ4: 警告コールバックを設定する
+## ステップ3: 警告コールバックを設定する
 
 警告を捕捉して処理するには、`IWarningCallback`インターフェース。このクラスは、ドキュメント処理中に発生するすべての警告をログに記録します。
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        //私たちが関心があるのは、置き換えられるフォントだけです。
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## ステップ5: ドキュメントにコールバックを割り当てる
+## ステップ4: ドキュメントにコールバックを割り当てる
 
 ドキュメントに警告コールバックを割り当てます。これにより、フォントの問題がすべてキャプチャされ、ログに記録されます。
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## ステップ5: ページレイアウトを更新する
+
+電話する`UpdatePageLayout`メソッド。これにより、ドキュメントがメモリ内でレンダリングされ、レンダリング中に発生した警告がキャプチャされます。
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## ステップ6: ドキュメントを保存する

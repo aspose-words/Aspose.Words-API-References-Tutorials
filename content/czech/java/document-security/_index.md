@@ -23,7 +23,7 @@ Zvládnutím zabezpečení dokumentů pomocí Aspose.Words for Java mohou vývoj
 ## Kurzy zabezpečení dokumentů
 ### [Jak udržet své dokumenty v bezpečí](./keep-documents-safe-secure/)
 Zabezpečte své dokumenty pomocí Aspose.Words for Java. Šifrujte, chraňte a přidávejte digitální podpisy bez námahy. Udržujte svá data v bezpečí.
-### [Zabezpečení dokumentů pomocí hesel](./securing-documents-passwords/)
+### [Zabezpečení dokumentů hesly](./securing-documents-passwords/)
 Zjistěte, jak zabezpečit dokumenty hesly pomocí Aspose.Words for Java. Tento podrobný průvodce obsahuje zdrojový kód a odborné tipy. Chraňte svá data.
 ### [Správa oprávnění k dokumentům](./managing-document-permissions/)
 Naučte se efektivně spravovat oprávnění k dokumentům pomocí Aspose.Words for Java. Tento komplexní průvodce poskytuje podrobné pokyny a příklady zdrojového kódu.

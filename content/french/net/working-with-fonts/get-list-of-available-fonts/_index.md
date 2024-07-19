@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Configurer les sources de polices
-Ensuite, nous allons créer une instance de`FontSettings` et récupérez les sources de polices existantes en utilisant le`GetFontsSources()` méthode. Nous ajouterons également une nouvelle source de polices en spécifiant un dossier contenant les polices.
+ Ensuite, nous allons créer une instance de`FontSettings` et récupérez les sources de polices existantes en utilisant le`GetFontsSources()` méthode. Nous ajouterons également une nouvelle source de polices en spécifiant un dossier contenant les polices.
 
 ```csharp
 // Configurer les sources de polices

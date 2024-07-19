@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Etapa 1: inicializar o documento
 
-primeira etapa envolve a criação de um novo documento do Word ou o carregamento de um existente. Este documento servirá como ponto de partida para a enumeração.
+A primeira etapa envolve a criação de um novo documento do Word ou o carregamento de um existente. Este documento servirá como ponto de partida para a enumeração.
 
 ```csharp
 Document doc = new Document();
@@ -98,7 +98,7 @@ Um parágrafo pode conter nós como trechos, formas, comentários e outros eleme
  Sim, você pode manipular vários tipos de nós, como formas, comentários e muito mais, verificando seus`NodeType`.
 
 ### 4. Preciso de uma licença para usar o Aspose.Words for .NET?
- Você pode começar com uma avaliação gratuita ou obter uma licença temporária em[aqui](https://purchase.aspose.com/temporary-license/).
+Você pode começar com uma avaliação gratuita ou obter uma licença temporária em[aqui](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Onde posso encontrar mais exemplos e documentação?
  Visite a[Documentação da API Aspose.Words para .NET](https://reference.aspose.com/words/net/) para obter mais exemplos e documentação detalhada.

@@ -127,4 +127,4 @@ Aspose.Words, tek bir belgede farklı ayarlarla birden fazla İçindekiler oluş
 Evet, Aspose.Words, Microsoft Word formatlarının çeşitli sürümleriyle uyumluluk sağlar.
 
 ### Aspose.Words için nerede daha fazla yardım ve destek bulabilirim?
-Daha fazla yardım için şu adresi ziyaret edin:[Aspose.Words Forumu](https://forum.aspose.com/c/words/8) veya şuraya göz atın[resmi belgeler](https://reference.aspose.com/words/net/).
+ Daha fazla yardım için şu adresi ziyaret edin:[Aspose.Words Forumu](https://forum.aspose.com/c/words/8) veya şuraya göz atın[resmi belgeler](https://reference.aspose.com/words/net/).

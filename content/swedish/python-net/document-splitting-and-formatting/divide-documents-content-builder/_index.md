@@ -91,10 +91,10 @@ I den här handledningen undersökte vi hur man använder Aspose.Words för Pyth
 ### Hur kan jag installera Aspose.Words för Python?
  Du kan installera det med kommandot:`pip install aspose-words`.
 
-### Vilka typer av avsnittsbrytningar finns?
+### Vilka typer av avsnittsbrytningar finns tillgängliga?
 Aspose.Words för Python tillhandahåller olika typer av avsnittsbrytningar, såsom ny sida, kontinuerliga och jämna sidbrytningar.
 
-### Kan jag anpassa formateringen för varje avsnitt?
+### Kan jag anpassa formateringen av varje avsnitt?
 Ja, du kan använda olika formatering, stilar och typsnitt på varje avsnitt med Content Builder-modulen.
 
 ### Är Aspose.Words lämpligt för att generera rapporter?

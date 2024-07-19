@@ -62,7 +62,7 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 
 #### س: كيف يمكنني تحديد خط افتراضي عند التحويل إلى PDF في Aspose.Words؟
 
- ج: لتحديد خط افتراضي عند التحويل إلى PDF في Aspose.Words، يمكنك استخدام`PdfOptions` فئة وتعيين`DefaultFontName`خاصية اسم الخط المطلوب.
+ ج: لتحديد خط افتراضي عند التحويل إلى PDF في Aspose.Words، يمكنك استخدام`PdfOptions` فئة وتعيين`DefaultFontName` خاصية اسم الخط المطلوب.
 
 #### س: ماذا لو لم يكن الخط الافتراضي متاحًا عند التحويل إلى PDF؟
 

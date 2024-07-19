@@ -130,7 +130,7 @@ Paragraph para = new Paragraph(doc);
 
 // เพิ่มข้อความด้วยขนาดตัวอักษรและสีที่กำหนดเอง
 Run run = new Run(doc, "Customized Text");
-run.getFont().setSize(18); // กำหนดขนาดตัวอักษรเป็น 18 พอยท์
+run.getFont().setSize(18); // กำหนดขนาดตัวอักษรเป็น 18 พอยต์
 run.getFont().setColor(Color.BLUE); // ตั้งค่าสีข้อความเป็นสีน้ำเงิน
 
 para.appendChild(run);

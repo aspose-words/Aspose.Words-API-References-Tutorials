@@ -127,6 +127,6 @@ Aspose.Words for Java 提供强大的文档分割和内容提取功能。借助�
 
 是的，Aspose.Words for Java 可供个人使用和商业使用。
 
-### 在哪里可以访问更多 Aspose.Words for Java 教程和资源？
+### 在哪里可以获得更多 Aspose.Words for Java 教程和资源？
 
 有关更多教程和资源，请访问 Aspose 文档：[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/)

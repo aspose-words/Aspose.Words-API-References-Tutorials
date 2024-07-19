@@ -18,7 +18,7 @@ Antes de mergulharmos no código, certifique-se de ter os seguintes pré-requisi
 
 1.  Biblioteca Aspose.Words para Java: Você deve ter a biblioteca Aspose.Words para Java instalada. Se ainda não o fez, você pode baixá-lo em[aqui](https://releases.aspose.com/words/java/).
 
-2. Ambiente de Desenvolvimento Java: Certifique-se de ter o Java instalado em seu sistema.
+2. Ambiente de desenvolvimento Java: certifique-se de ter o Java instalado em seu sistema.
 
 ## Carregando documentos HTML
 

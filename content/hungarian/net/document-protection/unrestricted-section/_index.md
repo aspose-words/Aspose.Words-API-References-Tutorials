@@ -90,7 +90,7 @@ doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
  Itt a dokumentum jelszóval védett, és csak az űrlapmezők szerkeszthetők. Ne felejtse el cserélni`"password"` a kívánt jelszóval.
 
-### Adott szakasz védelmének megszüntetése
+### Szüntesse meg az adott szakasz védelmét
 
 Alapértelmezés szerint minden szakasz védett. Szelektíven ki kell kapcsolnunk az első szakasz védelmét.
 

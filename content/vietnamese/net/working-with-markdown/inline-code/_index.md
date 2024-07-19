@@ -66,11 +66,11 @@ Xin chúc mừng! Bây giờ bạn đã học cách sử dụng chức năng mã
 
 #### Câu hỏi: Làm cách nào tôi có thể sử dụng mã nội tuyến trong Aspose.Words?
 
- Trả lời: Để sử dụng mã nội tuyến trong Aspose.Words, bạn có thể sử dụng các thẻ thích hợp để bao quanh văn bản cần định dạng dưới dạng mã nội tuyến. Ví dụ: bạn có thể sử dụng`<code>` hoặc`<kbd>` thẻ để bao quanh văn bản được định dạng dưới dạng mã nội tuyến.
+Trả lời: Để sử dụng mã nội tuyến trong Aspose.Words, bạn có thể sử dụng các thẻ thích hợp để bao quanh văn bản cần định dạng dưới dạng mã nội tuyến. Ví dụ: bạn có thể sử dụng`<code>` hoặc`<kbd>` thẻ để bao quanh văn bản được định dạng dưới dạng mã nội tuyến.
 
 #### Câu hỏi: Có thể chỉ định phông chữ hoặc màu mã nội tuyến trong Aspose.Words không?
 
- Đáp: Có, bạn có thể chỉ định phông chữ hoặc màu sắc của mã nội tuyến trong Aspose.Words. Bạn có thể dùng`Font.Name`Và`Font.Color` thuộc tính của`Run` đối tượng để đặt phông chữ và màu sắc của mã nội tuyến. Ví dụ, bạn có thể sử dụng`run.Font.Name = "Courier New"` để chỉ định phông chữ cho mã nội tuyến và`run.Font.Color = Color.Blue`để chỉ định màu sắc.
+ Đáp: Có, bạn có thể chỉ định phông chữ hoặc màu sắc của mã nội tuyến trong Aspose.Words. Bạn có thể dùng`Font.Name`Và`Font.Color` thuộc tính của`Run` đối tượng để đặt phông chữ và màu sắc của mã nội tuyến. Ví dụ, bạn có thể sử dụng`run.Font.Name = "Courier New"` để chỉ định phông chữ cho mã nội tuyến và`run.Font.Color = Color.Blue` để chỉ định màu sắc.
 
 #### Hỏi: Tôi có thể sử dụng mã nội tuyến trong đoạn văn có chứa các thành phần văn bản khác không?
 

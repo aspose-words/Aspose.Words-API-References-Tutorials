@@ -12,7 +12,7 @@ Het afdrukken van documenten is een essentieel aspect van tekstverwerking en doc
 
 ## Onderzoek naar de mogelijkheden voor het afdrukken van documenten
 
-In deze tutorials gaan ontwikkelaars dieper in op de verschillende aspecten van het afdrukken van documenten met behulp van Aspose.Words voor Java. Ze leren hoe ze de afdrukinstellingen kunnen aanpassen, zoals het opgeven van het aantal exemplaren, het selecteren van de printer en het aanpassen van de paginarichting. Aspose.Words biedt flexibele opties om aan complexe afdrukvereisten te voldoen, waaronder het afdrukken van specifieke pagina's, een reeks pagina's of zelfs een subset van documentsecties. Deze tutorials begeleiden ontwikkelaars bij het programmatisch besturen van het afdrukproces om aan hun specifieke behoeften te voldoen.
+In deze tutorials gaan ontwikkelaars dieper in op de verschillende aspecten van het afdrukken van documenten met Aspose.Words voor Java. Ze leren hoe ze de afdrukinstellingen kunnen aanpassen, zoals het opgeven van het aantal exemplaren, het selecteren van de printer en het aanpassen van de paginarichting. Aspose.Words biedt flexibele opties om aan complexe afdrukvereisten te voldoen, waaronder het afdrukken van specifieke pagina's, een reeks pagina's of zelfs een subset van documentsecties. Deze tutorials begeleiden ontwikkelaars bij het programmatisch besturen van het afdrukproces om aan hun specifieke behoeften te voldoen.
 
 ## Optimalisatie van de afdrukprestaties van documenten
 

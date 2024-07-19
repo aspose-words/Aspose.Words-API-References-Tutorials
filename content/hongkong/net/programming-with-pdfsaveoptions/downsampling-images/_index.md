@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 ### 經常問的問題
 
 #### Q：什麼是透過影像採樣來減少 PDF 文件的大小？
-答：透過影像取樣減小 PDF 文件大小是在轉換為 PDF 時透過降低影像的解析度來減少產生的 PDF 檔案的大小。這優化了儲存空間的使用，並使共享和傳輸 PDF 檔案變得更加容易。
+答：透過影像取樣減小 PDF 文件大小是指在轉換為 PDF 時，透過降低影像的解析度來減少產生的 PDF 檔案的大小。這優化了儲存空間的使用，並使共享和傳輸 PDF 檔案變得更加容易。
 
 #### Q：如何使用 Aspose.Words for .NET 透過影像取樣來減少 PDF 文件大小？
 答：若要使用 Aspose.Words for .NET 透過影像取樣來減少 PDF 文件大小，請依照下列步驟操作：
@@ -90,6 +90,6 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 
 減少 PDF 文件大小：影像採樣會降低 PDF 文件中影像的分辨率，從而顯著減少 PDF 文件大小。這使得共享和傳輸文件變得容易，尤其是透過電子郵件或線上。
 
-最佳化儲存空間：減少 PDF 檔案的大小有助於優化儲存空間的使用，尤其是當您有許多包含高解析度影像的 PDF 檔案時。
+最佳化儲存空間：減少 PDF 檔案的大小有助於優化儲存空間的使用，特別是當您有許多包含高解析度影像的 PDF 檔案時。
 
 效能改進：較小的 PDF 檔案載入速度更快，並且可以在不同裝置上更快地開啟和檢視。

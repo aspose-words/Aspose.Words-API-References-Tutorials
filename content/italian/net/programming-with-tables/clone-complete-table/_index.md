@@ -37,7 +37,7 @@ Successivamente, cloneremo l'intera tabella e la inseriremo nel documento dopo l
 // Clona l'array
 Table tableClone = (Table)table.Clone(true);
 
-//Inserisci la tabella clonata nel documento dopo l'originale
+// Inserisci la tabella clonata nel documento dopo l'originale
 table.ParentNode.InsertAfter(tableClone, table);
 
 // Inserisci un paragrafo vuoto tra le due tabelle
@@ -68,7 +68,7 @@ Assicurati di specificare il percorso e il nome file corretti per il documento d
 	// Clona la tabella e inseriscila nel documento dopo l'originale.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	// Inserisci un paragrafo vuoto tra le due tabelle,
+	//Inserisci un paragrafo vuoto tra le due tabelle,
 	// oppure verranno combinati in uno solo al momento del salvataggio, ciò ha a che fare con la convalida del documento.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

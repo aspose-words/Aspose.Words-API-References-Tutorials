@@ -19,7 +19,7 @@ url: /th/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ขั้นตอนแรกคือการโหลดเอกสาร PDF ที่เข้ารหัสลงในแอปพลิเคชันของคุณ ต่อไปนี้เป็นวิธีดำเนินการ:
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสาร
+//พาธไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

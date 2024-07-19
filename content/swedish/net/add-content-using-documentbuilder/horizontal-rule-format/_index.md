@@ -96,4 +96,4 @@ Ja, du kan anpassa olika aspekter som justering, bredd, höjd, färg och skuggni
 Ja, Aspose.Words används flitigt i företagsmiljöer för sina robusta dokumenthanteringsmöjligheter.
 
 ### Var kan jag få support för Aspose.Words för .NET?
- För support och samhällsengagemang, besök[Aspose.Words forum](https://forum.aspose.com/c/words/8).
+ För stöd och samhällsengagemang, besök[Aspose.Words forum](https://forum.aspose.com/c/words/8).

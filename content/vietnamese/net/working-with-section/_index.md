@@ -19,8 +19,8 @@ Bằng cách làm theo các hướng dẫn này, bạn sẽ có thể quản lý
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
 | [Thêm phần](./add-section/) | Trong hướng dẫn này, hãy tìm hiểu cách thêm một phần vào tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước để cấu trúc tài liệu của bạn. |
-| [Xóa phần](./delete-section/) | Trong hướng dẫn này, hãy tìm hiểu cách xóa một phần cụ thể khỏi tài liệu Word bằng Aspose.Words cho .NET. |
-| [Xóa tất cả các phần](./delete-all-sections/) | Trong hướng dẫn này, hãy tìm hiểu cách xóa tất cả các phần khỏi tài liệu Word bằng Aspose.Words cho .NET. |
+| [Xóa phần](./delete-section/) | Thao tác tài liệu thành thạo với Aspose.Words cho .NET. Tìm hiểu cách xóa các phần khỏi tài liệu Word bằng một vài bước đơn giản. |
+| [Xóa tất cả các phần](./delete-all-sections/) | Tìm hiểu cách xóa tất cả các phần trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước dễ thực hiện này. |
 | [Nối phần nội dung Word](./append-section-content/) | Trong hướng dẫn này, hãy tìm hiểu cách thêm nội dung từ vào các phần cụ thể của tài liệu Word bằng Aspose.Words cho .NET.  |
 | [Phần nhân bản](./clone-section/) | Trong hướng dẫn này, hãy tìm hiểu cách sao chép một phần trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước một. |
 | [Sao chép phần](./copy-section/) | Trong hướng dẫn này, hãy tìm hiểu cách sao chép một phần từ tài liệu Word sang tài liệu khác bằng Aspose.Words cho .NET. |

@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## चरण 3: एक OLE ऑब्जेक्ट को आइकन के रूप में सम्मिलित करें
- दस्तावेज़ बिल्डर का उपयोग करें`InsertOleObjectAsIcon`दस्तावेज़ में एक आइकन के रूप में OLE ऑब्जेक्ट सम्मिलित करने की विधि। OLE फ़ाइल पथ, डिस्प्ले फ़्लैग, आइकन पथ और एम्बेडेड ऑब्जेक्ट नाम निर्दिष्ट करें।
+ दस्तावेज़ बिल्डर का उपयोग करें`InsertOleObjectAsIcon` दस्तावेज़ में एक आइकन के रूप में OLE ऑब्जेक्ट सम्मिलित करने की विधि। OLE फ़ाइल पथ, डिस्प्ले फ़्लैग, आइकन पथ और एम्बेडेड ऑब्जेक्ट नाम निर्दिष्ट करें।
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### प्र. .NET के लिए Aspose.Words में नया दस्तावेज़ और दस्तावेज़ जनरेटर कैसे बनाएं?
 
- उत्तर: आप इसका उपयोग करके एक नया दस्तावेज़ बना सकते हैं`Document` क्लास और एक दस्तावेज़ बिल्डर का उपयोग कर`DocumentBuilder` क्लास. यहाँ एक उदाहरण है:
+ उत्तर: आप इसका उपयोग करके एक नया दस्तावेज़ बना सकते हैं`Document` क्लास और एक दस्तावेज़ बिल्डर का उपयोग कर`DocumentBuilder`क्लास. यहाँ एक उदाहरण है:
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### प्रश्न: OLE ऑब्जेक्ट को आइकन के रूप में सम्मिलित करके दस्तावेज़ को कैसे सेव करें?
 
- उत्तर: दस्तावेज़ का उपयोग करें`Save` दस्तावेज़ को फ़ाइल में सहेजने की विधि। यहाँ एक उदाहरण दिया गया है:
+ उत्तर: दस्तावेज़ का उपयोग करें`Save`दस्तावेज़ को फ़ाइल में सहेजने की विधि। यहाँ एक उदाहरण दिया गया है:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

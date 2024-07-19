@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // 테이블의 첫 번째 행에 빠르게 입력하여 액세스할 수 있습니다.
+     //테이블의 첫 번째 행에 빠르게 입력하여 액세스할 수 있습니다.
      table.FirstRow?.Remove();
 
      // 테이블의 마지막 행에 빠르게 입력하여 액세스할 수 있습니다.

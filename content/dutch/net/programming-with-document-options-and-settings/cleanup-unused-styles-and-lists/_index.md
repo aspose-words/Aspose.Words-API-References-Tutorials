@@ -2,91 +2,101 @@
 title: Ruim ongebruikte stijlen en lijsten op
 linktitle: Ruim ongebruikte stijlen en lijsten op
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het opschonen van ongebruikte stijlen en lijsten in een document met Aspose.Words voor .NET.
+description: Ruim uw Word-documenten op met Aspose.Words voor .NET door ongebruikte stijlen en lijsten te verwijderen. Volg deze stapsgewijze handleiding om uw documenten moeiteloos te stroomlijnen.
 type: docs
 weight: 10
 url: /nl/net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u door de C#-broncode om ongebruikte stijlen en lijsten op te ruimen met Aspose.Words voor .NET. Met deze functie kunt u stijlen en lijsten verwijderen die niet in een document worden gebruikt.
+Hallo daar! Heeft u ooit het gevoel gehad dat uw Word-documenten een beetje rommelig worden? Weet je, die ongebruikte stijlen en lijsten die daar maar blijven staan, ruimte in beslag nemen en je document er complexer uit laten zien dan nodig is? Nou, je hebt geluk! Vandaag duiken we in een leuk trucje met Aspose.Words voor .NET om die ongebruikte stijlen en lijsten op te ruimen. Het is alsof u uw document een lekker verfrissend bad geeft. Dus pak je koffie, leun achterover en laten we aan de slag gaan!
 
-## Stap 1: Projectconfiguratie
+## Vereisten
 
-Maak om te beginnen een nieuw C#-project in uw favoriete IDE. Zorg ervoor dat er in uw project naar de Aspose.Words voor .NET-bibliotheek wordt verwezen.
+Voordat we ingaan op de details, moeten we ervoor zorgen dat je alles hebt wat je nodig hebt. Hier is een korte checklist:
 
-## Stap 2: Het document laden
+- Basiskennis van C#: U moet vertrouwd zijn met programmeren in C#.
+-  Aspose.Words voor .NET: Zorg ervoor dat deze bibliotheek is geïnstalleerd. Zo niet, dan kunt u deze downloaden[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Elke C#-compatibele IDE zoals Visual Studio.
+- Voorbeelddocument: een Word-document met enkele ongebruikte stijlen en lijsten die moeten worden opgeschoond.
 
-In deze stap laden we het Word-document met de ongebruikte stijlen en lijsten die we willen opruimen. Gebruik de volgende code om het document te laden:
+## Naamruimten importeren
+
+Laten we eerst en vooral onze naamruimten op orde brengen. U moet een paar essentiële naamruimten importeren om met Aspose.Words te kunnen werken.
 
 ```csharp
-// Pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Cleaning;
+```
+
+## Stap 1: Laad uw document
+
+De eerste stap is het laden van het document dat u wilt opruimen. U moet het pad naar uw documentmap opgeven. Dit is waar uw Word-bestand zich bevindt.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
 
- Vervangen`"YOUR DOCUMENTS DIRECTORY"` met het daadwerkelijke pad van de map waar uw document zich bevindt.
+## Stap 2: Controleer de huidige stijlen en lijsten
 
-## Stap 3: Tel stijlen en lijsten voordat u gaat schoonmaken
-
-Voordat we het document opschonen, tellen we het aantal stijlen en lijsten dat in het document aanwezig is. Gebruik de volgende code om de tellers weer te geven:
+Voordat we beginnen met opruimen, is het een goed idee om te zien hoeveel stijlen en lijsten er momenteel in uw document staan. Dit geeft ons een basislijn waarmee we na de schoonmaak kunnen vergelijken.
 
 ```csharp
-Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
-$"Number of lists before cleaning: {doc.Lists.Count}");
+Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists before Cleanup: {doc.Lists.Count}");
 ```
 
-Deze instructies tonen het aantal stijlen en lijsten dat in het document aanwezig is vóór het opschonen.
+## Stap 3: Definieer opruimopties
 
-## Stap 4: Ruim ongebruikte stijlen en lijsten op
-
-Laten we nu ongebruikte stijlen en lijsten uit het document opruimen. Gebruik de volgende code om het opschonen uit te voeren:
+Nu is het tijd om de opruimopties te definiëren. In dit voorbeeld gaan we ongebruikte stijlen verwijderen, maar behouden we de ongebruikte lijsten. U kunt deze opties aanpassen op basis van uw behoeften.
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-doc. Cleanup(cleanupOptions);
 ```
 
- Deze code ruimt ongebruikte stijlen en lijsten uit het document op met behulp van de opgegeven opties. In dit voorbeeld hebben we de`UnusedStyles` optie om ongebruikte stijlen te verwijderen en de`UnusedLists` optie om de lijsten te behouden, zelfs als ze niet worden gebruikt.
+## Stap 4: Voer de opruiming uit
 
-## Stap 5: Tel stijlen en lijsten na het schoonmaken
-
-Nadat we het opruimen hebben uitgevoerd, tellen we de stijlen en lijsten opnieuw om te controleren of ze zijn samengevouwen. Gebruik de volgende code om de nieuwe tellers weer te geven:
+Nu onze opruimopties zijn ingesteld, kunnen we het document nu opruimen. Met deze stap worden de ongebruikte stijlen verwijderd en blijven de ongebruikte lijsten intact.
 
 ```csharp
-Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-				  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
+doc.Cleanup(cleanupOptions);
 ```
 
-Deze instructies tonen het aantal stijlen en lijsten dat overblijft na het schoonmaken.
+## Stap 5: Controleer stijlen en lijsten na het opruimen
 
-### Voorbeeldbroncode voor het opschonen van ongebruikte stijlen en lijsten met Aspose.Words voor .NET
+Laten we het aantal stijlen en lijsten opnieuw controleren om de impact van onze opruiming te zien. Dit laat zien hoeveel stijlen zijn verwijderd.
 
 ```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Unused styles.docx");
-
-	// Gecombineerd met de ingebouwde stijlen heeft het document nu acht stijlen.
-	// Een aangepaste stijl wordt gemarkeerd als 'gebruikt' terwijl er tekst in het document aanwezig is
-	// in die stijl opgemaakt. Dit betekent dat de 4 stijlen die we hebben toegevoegd momenteel ongebruikt zijn.
-	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
-					  $"Count of lists before Cleanup: {doc.Lists.Count}");
-
-	// Reinigt ongebruikte stijlen en lijsten uit het document, afhankelijk van de opgegeven CleanupOptions.
-	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-	doc.Cleanup(cleanupOptions);
-
-	Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-					  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
-    
+Console.WriteLine($"Count of styles after Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 ```
 
- Zorg ervoor dat u het juiste documentpad opgeeft in het`dataDir` variabel.
+## Stap 6: Bewaar het opgeschoonde document
 
-U hebt nu geleerd hoe u ongebruikte stijlen en lijsten uit een document kunt opschonen met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u deze functie eenvoudig op uw eigen documenten toepassen.
+Laten we tot slot ons opgeschoonde document opslaan. Dit zorgt ervoor dat alle wijzigingen worden opgeslagen en dat uw document zo netjes mogelijk is.
 
+```csharp
+doc.Save(dataDir + "CleanedDocument.docx");
+```
+
+## Conclusie
+
+En daar heb je het! U hebt uw Word-document met succes opgeschoond door ongebruikte stijlen en lijsten te verwijderen met Aspose.Words voor .NET. Het is alsof u uw digitale bureau opruimt, waardoor uw documenten beter beheersbaar en efficiënter worden. Geef jezelf een schouderklopje voor een goed stuk werk!
+
+## Veelgestelde vragen
+
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee u Word-documenten programmatisch kunt maken, wijzigen en converteren met behulp van C#.
+
+### Kan ik zowel ongebruikte stijlen als lijsten tegelijkertijd verwijderen?
+Ja, je kunt beide instellen`UnusedLists`En`UnusedStyles` naar`true` in de`CleanupOptions` om beide te verwijderen.
+
+### Is het mogelijk om de opruiming ongedaan te maken?
+Nee, zodra het opruimen is voltooid en het document is opgeslagen, kunt u de wijzigingen niet meer ongedaan maken. Bewaar altijd een back-up van uw originele document.
+
+### Heb ik een licentie nodig voor Aspose.Words voor .NET?
+ Ja, Aspose.Words voor .NET vereist een licentie voor volledige functionaliteit. Je kunt een[tijdelijke licentie](https://purchase.aspose.com/temporary-license) of[koop er een](https://purchase.aspose.com/buy).
+
+### Waar kan ik meer informatie en ondersteuning vinden?
+ U kunt gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/) en krijg steun van de[Aspose-forum](https://forum.aspose.com/c/words/8).

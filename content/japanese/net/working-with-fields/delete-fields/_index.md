@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 ドキュメント内のすべてのフィールドを反復処理して削除します。
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 このループは、フィールド コレクションを逆方向に反復処理して、反復処理中にコレクションを変更する問題を回避します。

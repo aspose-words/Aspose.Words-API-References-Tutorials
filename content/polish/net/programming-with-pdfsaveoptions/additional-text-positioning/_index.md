@@ -57,7 +57,7 @@ Oto kompletny kod źródłowy umożliwiający korzystanie z dodatkowej funkcjona
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", saveOptions);
 
 ```
-Wykonując poniższe kroki, możesz łatwo kontrolować położenie dodatkowego tekstu podczas konwersji dokumentu Word do formatu PDF za pomocą Aspose.Words dla .NET.
+Wykonując te kroki, możesz łatwo kontrolować położenie dodatkowego tekstu podczas konwersji dokumentu Word do formatu PDF za pomocą Aspose.Words dla .NET.
 
 
 ## Wniosek
