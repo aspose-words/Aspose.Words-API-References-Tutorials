@@ -32,8 +32,8 @@ By following these tutorials, you will be able to fully exploit the table manipu
 | [Horizontal Merge](./horizontal-merge/) | Learn how to horizontally merge cells in a Word table with Aspose.Words for .NET. |
 | [Convert To Horizontally Merged Cells](./convert-to-horizontally-merged-cells/) | Learn how to convert table cells to horizontally merged cells in a Word document with Aspose.Words for .NET. |
 | [Repeat Rows On Subsequent Pages](./repeat-rows-on-subsequent-pages/) | Learn how to repeat table rows on subsequent pages in a Word document with Aspose.Words for .NET. |
-| [Auto Fit To Page Width](./auto-fit-to-page-width/) | Learn how to auto fit a table to page width in a Word document with Aspose.Words for .NET. |
-| [Preferred Width Settings](./preferred-width-settings/) | Learn how to set preferred table cell widths in a Word document with Aspose.Words for .NET. |
+| [Auto Fit To Window](./auto-fit-to-page-width/) | Easily auto-fit tables to the window in Word documents using Aspose.Words for .NET with this step-by-step guide. Perfect for cleaner, professional documents. |
+| [Preferred Width Settings](./preferred-width-settings/) | Learn how to create tables with absolute, relative, and automatic width settings in Aspose.Words for .NET with this step-by-step guide. |
 | [Retrieve Preferred Width Type](./retrieve-preferred-width-type/) | Learn how to retrieve the type and preferred width value of a cell in a Word table with Aspose.Words for .NET. |
 | [Get Table Position](./get-table-position/) | Learn how to get the position of a table in a Word document with Aspose.Words for .NET. |
 | [Get Floating Table Position](./get-floating-table-position/) | Learn how to get the position of floating tables in a Word document with Aspose.Words for .NET. |
