@@ -28,7 +28,7 @@ These Aspose.Words for .NET tutorials provide you with valuable resources to mas
 | [Keep Source Formatting](./keep-source-formatting/) | Learn how to merge Word documents while preserving formatting using Aspose.Words for .NET. Ideal for developers looking to automate document assembly tasks. |
 | [Keep Source Together](./keep-source-together/) | Learn how to merge Word documents using Aspose.Words for .NET while preserving formatting. This comprehensive guide covers everything from setup to execution. |
 | [List Keep Source Formatting](./list-keep-source-formatting/) | Learn how to merge Word documents while preserving formatting using Aspose.Words for .NET. This tutorial provides step-by-step guidance for seamless document merging. |
-| [List Use Destination Styles](./list-use-destination-styles/) | Learn how to merge and manage document lists seamlessly with Aspose.Words for .NET. Follow our step-by-step tutorial for efficient document integration. |
+| [List Use Destination Styles](./list-use-destination-styles/) | Learn how to merge Word documents using Aspose.Words for .NET without losing list formatting. Step-by-step guide to keep your document styles intact. |
 | [Restart Page Numbering](./restart-page-numbering/) | Learn how to restart page numbering while joining and appending Word documents using Aspose.Words for .NET. |
 | [Update Page Layout](./update-page-layout/) | Effortlessly update the page layout in Word documents using Aspose.Words for .NET with our detailed, step-by-step guide. |
 | [Use Destination Styles](./use-destination-styles/) | Learn how to use destination styles with Aspose.Words for .NET to append documents seamlessly while maintaining consistent formatting. |
