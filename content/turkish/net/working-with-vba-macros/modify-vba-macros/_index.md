@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## 3. Adım: Makro kaynak kodunu değiştirin
- Şimdi VBA projesinin ilk makrosunun kaynak kodunu değiştireceğiz. Değiştir`newSourceCode` Kullanmak istediğiniz yeni kaynak kodunu içeren değişken.
+Şimdi VBA projesinin ilk makrosunun kaynak kodunu değiştireceğiz. Değiştir`newSourceCode` Kullanmak istediğiniz yeni kaynak kodunu içeren değişken.
 
 ```csharp
 const string newSourceCode = "Test change source code";

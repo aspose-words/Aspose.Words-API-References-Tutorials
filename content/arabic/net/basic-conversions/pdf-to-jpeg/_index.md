@@ -15,7 +15,7 @@ url: /ar/net/basic-conversions/pdf-to-jpeg/
 
 قبل أن ننتقل إلى التفاصيل الجوهرية، دعونا نتأكد من أن لدينا كل جهودنا على التوالي. إليك ما تحتاجه:
 
-1.  Aspose.Words for .NET: تأكد من تثبيت هذه المكتبة القوية. إذا لم يكن الأمر كذلك، يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: تأكد من تثبيت هذه المكتبة القوية. إذا لم يكن الأمر كذلك، يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
 2. .NET Framework: تأكد من إعداد بيئة .NET على جهازك.
 3. Visual Studio: أي إصدار سيفي بالغرض، طالما أنك مرتاح للتنقل خلاله.
 4.  ملف PDF: اجعل ملف PDF الخاص بك جاهزًا للتحويل. في هذا البرنامج التعليمي، سنستخدم ملفًا اسمه`Pdf Document.pdf`.
@@ -33,7 +33,7 @@ using Aspose.Words;
 
 ## الخطوة 1: قم بإعداد مشروعك
 
-قبل الغوص في التعليمات البرمجية، تحتاج إلى إعداد مشروعك. إليك الطريقة:
+قبل الغوص في الكود، تحتاج إلى إعداد مشروعك. إليك الطريقة:
 
 1. افتح Visual Studio: ابدأ بتشغيل Visual Studio وإنشاء مشروع C# جديد.
 2.  تثبيت Aspose.Words: استخدم NuGet Package Manager لتثبيت Aspose.Words لـ .NET. يمكن ان تجدها[هنا](https://releases.aspose.com/words/net/).

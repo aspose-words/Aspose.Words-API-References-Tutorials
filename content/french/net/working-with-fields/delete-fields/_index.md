@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 Parcourez tous les champs du document et supprimez-les :
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 Cette boucle parcourt la collection de champs en arrière pour éviter les problèmes liés à la modification de la collection lors de l'itération.

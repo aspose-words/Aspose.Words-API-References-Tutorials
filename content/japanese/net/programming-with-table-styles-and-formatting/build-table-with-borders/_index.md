@@ -46,7 +46,7 @@ table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");
 ```
 
-おめでとうございます! Aspose.Words for .NET を使用して、カスタム境界線のあるテーブルを作成しました。
+おめでとうございます！Aspose.Words for .NET を使用して、カスタム境界線のあるテーブルを作成しました。
 
 ### Aspose.Words for .NET を使用して境界線付きの表を作成するためのサンプル ソース コード 
 
@@ -64,4 +64,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.do
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET を使用して境界線付きの表を作成する方法を学習しました。このステップバイステップ ガイドに従うことで、Word 文書内の表の境界線を簡単にカスタマイズできます。Aspose.Words は、文書内の表を操作および書式設定するための強力で柔軟な API を提供します。この知識があれば、Word 文書の視覚的なプレゼンテーションを改善し、特定のニーズを満たすことができます。
+このチュートリアルでは、Aspose.Words for .NET を使用して境界線付きの表を作成する方法を学習しました。このステップ バイ ステップ ガイドに従うことで、Word 文書内の表の境界線を簡単にカスタマイズできます。Aspose.Words は、文書内の表を操作および書式設定するための強力で柔軟な API を提供します。この知識があれば、Word 文書の視覚的なプレゼンテーションを改善し、特定のニーズを満たすことができます。

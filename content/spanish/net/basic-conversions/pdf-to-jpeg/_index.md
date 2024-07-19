@@ -15,7 +15,7 @@ url: /es/net/basic-conversions/pdf-to-jpeg/
 
 Antes de entrar en el meollo de la cuestión, asegurémonos de tener todos nuestros patos en fila. Esto es lo que necesitas:
 
-1.  Aspose.Words para .NET: asegúrese de tener instalada esta potente biblioteca. Si no, puedes descargarlo.[aquí](https://releases.aspose.com/words/net/).
+1. Aspose.Words para .NET: asegúrese de tener instalada esta poderosa biblioteca. Si no, puedes descargarlo.[aquí](https://releases.aspose.com/words/net/).
 2. .NET Framework: asegúrese de tener el entorno .NET configurado en su máquina.
 3. Visual Studio: cualquier versión servirá, siempre y cuando se sienta cómodo navegando por ella.
 4.  Un archivo PDF: tenga su archivo PDF listo para convertir. Para este tutorial, usaremos un archivo llamado`Pdf Document.pdf`.
@@ -64,7 +64,7 @@ Ahora que nuestro proyecto está listo, carguemos el documento PDF. ¡Aquí es d
 
 Con nuestro PDF cargado, llega el momento de realizar la conversión. Este paso es sorprendentemente sencillo.
 
-1.  Guardar como JPEG: utilice el`Save` método para convertir el PDF en una imagen JPEG.
+1.  Guardar como JPEG: utilice el`Save` Método para convertir el PDF en una imagen JPEG.
 
     ```csharp
     doc.Save(dataDir + "BaseConversions.PdfToJpeg.jpeg");

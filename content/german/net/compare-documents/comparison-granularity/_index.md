@@ -60,7 +60,7 @@ builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOpti
 
 ## Abschluss
 
-In diesem Artikel haben wir die Funktion „Granularität vergleichen“ von Aspose.Words für .NET untersucht. Mit dieser Funktion können Sie Dokumente auf Zeichenebene vergleichen und Änderungen melden. Sie können dieses Wissen nutzen, um in Ihren Projekten detaillierte Dokumentvergleiche durchzuführen.
+In diesem Artikel haben wir die Funktion „Granularität vergleichen“ von Aspose.Words für .NET untersucht. Mit dieser Funktion können Sie Dokumente auf Zeichenebene vergleichen und Änderungen melden. Sie können dieses Wissen nutzen, um detaillierte Dokumentvergleiche in Ihren Projekten durchzuführen.
 
 ### Beispielquellcode für Vergleichsgranularität mit Aspose.Words für .NET
 

@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Langkah 3: Membuat gaya untuk level bertingkat
 
- Kita dapat membuat gaya untuk level bertingkat menggunakan`Styles.Add` metode`Document` obyek. Dalam contoh ini, kita membuat gaya yang disebut "Quote1" untuk mewakili tingkat kutipan bertingkat.
+ Kita dapat membuat gaya untuk level bertingkat menggunakan`Styles.Add` metode`Document`obyek. Dalam contoh ini, kita membuat gaya yang disebut "Quote1" untuk mewakili tingkat kutipan bertingkat.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
@@ -75,4 +75,4 @@ J: Kutipan penurunan harga tidak mendukung atribut tertentu. Mereka hanya disoro
 
 #### T: Bisakah Anda menyematkan kutipan di Markdown?
 
-A: Ya, dimungkinkan untuk menyarangkan tanda kutip di Markdown dengan menambahkan tanda kurung sudut tambahan (`>`).
+J: Ya, dimungkinkan untuk menyarangkan tanda kutip di Markdown dengan menambahkan tanda kurung sudut tambahan (`>`).

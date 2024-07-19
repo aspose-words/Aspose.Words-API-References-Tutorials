@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- I det här steget konfigurerar vi säkerhetskopieringsalternativ för bilder. Vi skapar en ny`ImageSaveOptions` objekt som anger önskat sparaformat, här "Jpeg" för JPEG-formatet. Vi ställer också in antalet sidor som ska konverteras med hjälp av`PageSet`objekt. Slutligen justerar vi bildens ljusstyrka och kontrast med hjälp av`ImageBrightness` och`ImageContrast` respektive fastigheter. Vi ändrar också den horisontella upplösningen med hjälp av`HorizontalResolution` fast egendom.
+ I det här steget konfigurerar vi säkerhetskopieringsalternativ för bilder. Vi skapar en ny`ImageSaveOptions` objekt som anger önskat sparaformat, här "Jpeg" för JPEG-formatet. Vi ställer också in antalet sidor som ska konverteras med hjälp av`PageSet`objekt. Slutligen justerar vi bildens ljusstyrka och kontrast med hjälp av`ImageBrightness`och`ImageContrast` respektive fastigheter. Vi ändrar också den horisontella upplösningen med hjälp av`HorizontalResolution` fast egendom.
 
 ## Steg 4: Säkerhetskopiera bilder
 

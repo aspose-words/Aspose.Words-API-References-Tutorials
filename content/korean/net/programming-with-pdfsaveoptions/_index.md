@@ -24,7 +24,7 @@ PdfSaveOptions를 사용한 단어 처리에 대한 .NET용 Aspose.Words 자습�
 | [포함된 글꼴을 비활성화하여 PDF 크기 줄이기](./disable-embed-windows-fonts/) | .NET용 Aspose.Words를 사용하여 문서를 PDF로 변환할 때 Windows 글꼴 포함을 비활성화하는 방법을 알아보세요. |
 | [내장된 Arial 및 Times Roman 글꼴 건너뛰기로 PDF 크기 최적화](./skip-embedded-arial-and-times-roman-fonts/) | .NET용 Aspose.Words를 사용하여 Arial 및 Times Roman 글꼴을 포함하지 않고 PDF를 생성하는 단계별 가이드입니다. |
 | [핵심 글꼴을 포함하지 않음으로써 PDF 파일 크기 줄이기](./avoid-embedding-core-fonts/) | .NET용 Aspose.Words를 사용하여 Word 문서를 PDF로 변환할 때 기본 글꼴 포함을 피하는 방법을 알아보세요. |
-| [PDF 문서의 이스케이프 URI](./escape-uri/) | .NET용 Aspose.Words를 사용하여 Uri를 이스케이프 처리하는 단계별 가이드입니다. |
+| [PDF 문서의 이스케이프 URI](./escape-uri/) | .NET용 Aspose.Words를 사용하여 PDF에서 URI를 이스케이프하는 방법을 알아보세요. 이 자세한 가이드는 프로세스를 단계별로 안내합니다. |
 | [Word 문서 머리글 바닥글 책갈피를 PDF 문서로 내보내기](./export-header-footer-bookmarks/) | .NET용 Aspose.Words를 사용하여 머리글 및 바닥글 북마크를 내보내는 단계별 안내입니다. |
 | [Wmf 글꼴을 메타파일 크기로 조정하여 PDF 크기 줄이기](./scale-wmf-fonts-to-metafile-size/) | .NET용 Aspose.Words를 사용하여 PDF로 변환할 때 WMF 글꼴 크기를 조정하는 단계별 가이드입니다. |
 | [추가 텍스트 위치 지정으로 PDF 텍스트 위치 개선](./additional-text-positioning/) | .NET용 Aspose.Words를 사용하여 Word 문서를 PDF로 변환할 때 추가 텍스트의 배치를 제어하는 방법을 알아보세요. |

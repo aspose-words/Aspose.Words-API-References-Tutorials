@@ -172,7 +172,7 @@ Om de wachtwoordbeveiliging van een met een wachtwoord beveiligd document te ver
 
 ### Kan ik aangepaste eigenschappen instellen bij het opslaan van een document in OOXML-indeling?
 
- Ja, u kunt aangepaste eigenschappen voor een document instellen voordat u het in OOXML-indeling opslaat. Gebruik de`BuiltInDocumentProperties` En`CustomDocumentProperties` klassen om verschillende eigenschappen in te stellen, zoals auteur, titel, trefwoorden en aangepaste eigenschappen.
+ Ja, u kunt aangepaste eigenschappen voor een document instellen voordat u het in OOXML-indeling opslaat. Gebruik de`BuiltInDocumentProperties`En`CustomDocumentProperties` klassen om verschillende eigenschappen in te stellen, zoals auteur, titel, trefwoorden en aangepaste eigenschappen.
 
 ### Wat is het standaardcompressieniveau bij het opslaan van een document in OOXML-indeling?
 

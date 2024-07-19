@@ -21,7 +21,7 @@ Avant de commencer, assurez-vous d'avoir les prérequis suivants :
 
 ## Importer des espaces de noms
 
-Tout d’abord, assurez-vous que les espaces de noms nécessaires sont importés dans votre projet. Cela aide à accéder aux classes et méthodes requises pour notre tâche de conversion.
+Tout d’abord, assurez-vous d’avoir importé les espaces de noms nécessaires dans votre projet. Cela aide à accéder aux classes et méthodes requises pour notre tâche de conversion.
 
 ```csharp
 using Aspose.Words;

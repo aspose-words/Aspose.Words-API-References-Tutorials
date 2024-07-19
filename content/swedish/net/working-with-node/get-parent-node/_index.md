@@ -62,7 +62,7 @@ S: Den överordnade noden i Node.js hänvisar till nästa högre nod i hierarkin
 
 #### F: Hur får man föräldernoden för en specifik nod?
 
-S: För att få föräldernoden för en specifik nod kan du använda`parentNode` nodens egenskap. Den här egenskapen returnerar föräldernoden för den aktuella noden.
+ S: För att få föräldernoden för en specifik nod kan du använda`parentNode` nodens egenskap. Den här egenskapen returnerar föräldernoden för den aktuella noden.
 
 #### F: Hur kontrollerar man om en nod har en föräldernod?
 
@@ -70,7 +70,7 @@ S: För att få föräldernoden för en specifik nod kan du använda`parentNode`
 
 #### F: Kan vi ändra modernoden för en nod?
 
- S: I de flesta fall bestäms den överordnade noden för en nod av strukturen i XML-dokumentet och kan inte ändras direkt. Du kan dock flytta en nod till en annan nod med hjälp av specifika metoder, som t.ex`appendChild` eller`insertBefore`.
+S: I de flesta fall bestäms den överordnade noden för en nod av strukturen i XML-dokumentet och kan inte ändras direkt. Du kan dock flytta en nod till en annan nod med hjälp av specifika metoder, som t.ex`appendChild` eller`insertBefore`.
 
 #### F: Hur bläddrar man i hierarkin av överordnade noder?
 

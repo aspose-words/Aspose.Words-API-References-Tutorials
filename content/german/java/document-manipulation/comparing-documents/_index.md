@@ -1,6 +1,6 @@
 ---
 title: Vergleichen von Dokumenten in Aspose.Words für Java
-linktitle: Vergleichen von Dokumenten
+linktitle: Dokumente vergleichen
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
 description: Erfahren Sie, wie Sie Dokumente in Aspose.Words für Java vergleichen, einer leistungsstarken Java-Bibliothek für effiziente Dokumentanalyse.
 type: docs
@@ -8,17 +8,17 @@ weight: 28
 url: /de/java/document-manipulation/comparing-documents/
 ---
 
-## Einführung in den Dokumentenvergleich
+## Einführung in den Dokumentvergleich
 
-Beim Dokumentenvergleich werden zwei Dokumente analysiert und Unterschiede ermittelt, was in verschiedenen Szenarien, beispielsweise in rechtlichen, behördlichen oder Inhaltsverwaltungssituationen, von entscheidender Bedeutung sein kann. Aspose.Words für Java vereinfacht diesen Prozess und macht ihn für Java-Entwickler zugänglich.
+Beim Dokumentenvergleich werden zwei Dokumente analysiert und Unterschiede identifiziert, was in verschiedenen Szenarien, beispielsweise in rechtlichen, behördlichen oder Inhaltsverwaltungssituationen, von entscheidender Bedeutung sein kann. Aspose.Words für Java vereinfacht diesen Prozess und macht ihn für Java-Entwickler zugänglich.
 
 ## Einrichten Ihrer Umgebung
 
- Bevor wir uns in den Dokumentenvergleich vertiefen, stellen Sie sicher, dass Sie Aspose.Words für Java installiert haben. Sie können die Bibliothek von der[Aspose.Words für Java-Versionen](https://releases.aspose.com/words/java/) Seite. Sobald es heruntergeladen ist, fügen Sie es in Ihr Java-Projekt ein.
+ Bevor wir uns in den Dokumentenvergleich vertiefen, stellen Sie sicher, dass Sie Aspose.Words für Java installiert haben. Sie können die Bibliothek von der[Aspose.Words für Java-Versionen](https://releases.aspose.com/words/java/) Seite. Nach dem Download fügen Sie es in Ihr Java-Projekt ein.
 
 ## Grundlegender Dokumentenvergleich
 
- Beginnen wir mit den Grundlagen des Dokumentenvergleichs. Wir verwenden zwei Dokumente,`docA` Und`docB`, und vergleichen Sie sie.
+ Beginnen wir mit den Grundlagen des Dokumentenvergleichs. Wir verwenden zwei Dokumente,`docA`Und`docB`, und vergleichen Sie sie.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-In diesem Codeausschnitt laden wir zwei Dokumente,`docA` Und`docB` und verwenden Sie dann die`compare` Methode, um sie zu vergleichen. Wir geben den Autor als „Benutzer“ an und der Vergleich wird durchgeführt. Abschließend prüfen wir, ob es Revisionen gibt, die auf Unterschiede zwischen den Dokumenten hinweisen.
+In diesem Codeausschnitt laden wir zwei Dokumente,`docA`Und`docB` und verwenden Sie dann die`compare` Methode, um sie zu vergleichen. Wir geben den Autor als „Benutzer“ an und der Vergleich wird durchgeführt. Abschließend prüfen wir, ob es Revisionen gibt, die auf Unterschiede zwischen den Dokumenten hinweisen.
 
 ## Anpassen des Vergleichs mit Optionen
 

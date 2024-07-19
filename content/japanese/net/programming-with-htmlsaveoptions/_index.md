@@ -16,7 +16,7 @@ Word 文書を HTML に変換して Web 上に表示したり、Word 文書に H
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [輸出往復情報](./export-roundtrip-information/) | Aspose.Words for .NET を使用してドキュメントを HTML として保存するときにラウンドトリップ情報をエクスポートするためのステップバイステップ ガイド。 |
+| [輸出ラウンドトリップ情報](./export-roundtrip-information/) | Aspose.Words for .NET を使用してドキュメントを HTML として保存するときにラウンドトリップ情報をエクスポートするためのステップバイステップ ガイド。 |
 | [フォントをBase64としてエクスポート](./export-fonts-as-base-64/) | Aspose.Words for .NET を使用してドキュメントを保存するときに、Base 64 フォントをエクスポートするためのステップ バイ ステップ ガイド。 |
 | [リソースのエクスポート](./export-resources/) | Aspose.Words for .NET を使用して HTML として保存するときにドキュメント リソースをエクスポートするためのステップ バイ ステップ ガイド。 |
 | [メタファイルを EMF または WMF に変換する](./convert-metafiles-to-emf-or-wmf/) | Aspose.Words for .NET を使用してドキュメントを HTML に変換するときに、メタファイルを EMF または WMF 形式に変換するためのステップ バイ ステップ ガイド。 |

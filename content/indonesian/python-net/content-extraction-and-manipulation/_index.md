@@ -20,7 +20,7 @@ Di dunia yang berbasis data saat ini, mengekstraksi dan memanipulasi konten dari
 Sepanjang tutorial ini, Anda akan mendalami konsep inti dan teknik ekstraksi dan manipulasi konten menggunakan Aspose.Words. Tutorialnya mencakup berbagai topik, termasuk:
 
 - Ekstraksi Teks: Pelajari cara mengekstrak teks dari berbagai bagian dokumen.
-- Pemformatan dan Gaya: Pahami cara memanipulasi pemformatan dan gaya dalam konten yang diekstraksi.
+- Pemformatan dan Penataan Gaya: Pahami cara memanipulasi pemformatan dan gaya dalam konten yang diekstraksi.
 - Ekstraksi Tabel: Jelajahi teknik untuk mengekstraksi data tabel dari dokumen.
 - Ekstraksi Gambar: Pelajari cara mengekstrak gambar dan grafik yang tertanam dalam dokumen.
 - Pencarian dan Penggantian Konten: Temukan metode untuk mencari dan mengganti konten tertentu.
@@ -30,7 +30,7 @@ Sepanjang tutorial ini, Anda akan mendalami konsep inti dan teknik ekstraksi dan
 Di akhir tutorial ini, Anda akan dibekali dengan pengetahuan untuk menangani beragam tugas manipulasi konten dokumen dengan mudah. Anda akan mendapatkan wawasan tentang praktik terbaik untuk mengekstraksi dan memanipulasi konten, memastikan alur kerja pemrosesan dokumen Anda efisien, akurat, dan disesuaikan dengan kebutuhan spesifik Anda.
 
 ## Tutorial Ekstraksi dan Manipulasi Konten
-### [Mengekstrak dan Memodifikasi Konten dalam Dokumen Word](./extract-modify-document-content/)
+### [Mengekstrak dan Memodifikasi Konten di Dokumen Word](./extract-modify-document-content/)
 Pelajari cara mengekstrak dan mengubah konten dalam dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber.
 ### [Ekstraksi Konten yang Efisien dalam Dokumen Word](./document-content-extraction/)
 Ekstrak konten dari dokumen Word secara efisien menggunakan Aspose.Words untuk Python. Pelajari langkah demi langkah dengan contoh kode.

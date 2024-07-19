@@ -2,7 +2,7 @@
 title: Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff
 linktitle: Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengontrol ambang binerisasi TIFF dengan Aspose.Words untuk .NET. Tutorial lengkap untuk kualitas gambar yang lebih baik.
+description: Pelajari cara mengontrol ambang binarisasi TIFF dengan Aspose.Words untuk .NET. Tutorial lengkap untuk kualitas gambar yang lebih baik.
 type: docs
 weight: 10
 url: /id/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
@@ -36,7 +36,7 @@ ThresholdForFloydSteinbergDithering = 254
 };
 ```
 
- Pada langkah ini, kami mengonfigurasi opsi cadangan untuk gambar. Kami membuat yang baru`ImageSaveOptions` objek yang menentukan format penyimpanan yang diinginkan, di sini "Tiff" untuk format TIFF. Kami juga mengatur opsi kompresi, mode warna gambar, dan metode binarisasi TIFF dengan ambang binarisasi yang ditentukan.
+ Pada langkah ini, kami mengonfigurasi opsi cadangan untuk gambar. Kami membuat yang baru`ImageSaveOptions` objek menentukan format penyimpanan yang diinginkan, di sini "Tiff" untuk format TIFF. Kami juga mengatur opsi kompresi, mode warna gambar, dan metode binarisasi TIFF dengan ambang binarisasi yang ditentukan.
 
 ## Langkah 4: Mencadangkan gambar
 

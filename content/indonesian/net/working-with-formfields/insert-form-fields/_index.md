@@ -14,7 +14,7 @@ Dalam tutorial langkah demi langkah ini, kami akan memandu Anda tentang cara men
 
 ## Langkah 1: Menginisialisasi Objek Dokumen dan DocumentBuilder
 
- Pertama, inisialisasi`Document` Dan`DocumentBuilder` objek:
+ Pertama, inisialisasi`Document`Dan`DocumentBuilder` objek:
 
 ```csharp
 Document doc = new Document();

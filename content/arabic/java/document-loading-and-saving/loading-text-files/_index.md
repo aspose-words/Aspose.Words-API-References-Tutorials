@@ -36,7 +36,7 @@ final String TEXT_DOC = "Full stop delimiters:\n" +
         "1 Fourth list item 1\n" +
         "2 Fourth list item 2\n" +
         "3 Fourth list item 3";
-//القائمة الرابعة، مع وجود مسافة بيضاء بين رقم القائمة ومحتويات عناصر القائمة،
+//القائمة الرابعة، مع وجود مسافة بيضاء بين رقم القائمة ومحتويات عنصر القائمة،
 // سيتم اكتشافه كقائمة فقط إذا تم تعيين "DetectNumberingWithWhitespaces" في كائن LoadOptions على القيمة true،
 // لتجنب اكتشاف الفقرات التي تبدأ بأرقام كقوائم عن طريق الخطأ.
 TxtLoadOptions loadOptions = new TxtLoadOptions();
@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- في هذا المثال، نقوم بتحميل مستند نصي وقص المسافات البادئة واللاحقة باستخدام`TxtLeadingSpacesOptions.TRIM` و`TxtTrailingSpacesOptions.TRIM`.
+ في هذا المثال، نقوم بتحميل مستند نصي وقص المسافات البادئة واللاحقة باستخدام`TxtLeadingSpacesOptions.TRIM`و`TxtTrailingSpacesOptions.TRIM`.
 
 ## الخطوة 3: التحكم في اتجاه النص
 
@@ -179,7 +179,7 @@ Aspose.Words for Java هي مكتبة قوية لمعالجة المستندات
 
 ### كيف أتعامل مع المسافات في المستندات النصية المحملة؟
 
- يمكنك التحكم في كيفية التعامل مع المسافات البادئة والزائدة في المستندات النصية المحملة باستخدام`TxtLoadOptions` . خيارات مثل`TxtLeadingSpacesOptions` و`TxtTrailingSpacesOptions`تسمح لك بقص المساحات أو الحفاظ عليها حسب الحاجة. راجع قسم "خيارات التعامل مع المساحات" في هذا الدليل للحصول على مثال.
+ يمكنك التحكم في كيفية التعامل مع المسافات البادئة والزائدة في المستندات النصية المحملة باستخدام`TxtLoadOptions` . خيارات مثل`TxtLeadingSpacesOptions`و`TxtTrailingSpacesOptions`تسمح لك بقص المساحات أو الحفاظ عليها حسب الحاجة. راجع قسم "خيارات التعامل مع المساحات" في هذا الدليل للحصول على مثال.
 
 ### ما أهمية اتجاه النص في Aspose.Words لـ Java؟
 

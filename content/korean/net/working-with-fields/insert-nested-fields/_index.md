@@ -112,11 +112,11 @@ A: 중첩 필드를 사용하면 .NET용 Aspose.Words가 포함된 Word 문서�
 
 #### Q: Aspose.Words for .NET을 사용하여 Word 문서에 다중 레벨 중첩 필드를 가질 수 있습니까?
 
- A: 예, Aspose.Words for .NET을 사용하면 Word 문서에 다중 레벨 중첩 필드가 있을 수 있습니다. 다음을 사용하여 중첩된 필드의 복잡한 계층 구조를 만들 수 있습니다.`FieldStart.NextSibling` 기존 상위 필드에 하위 필드를 추가하는 방법입니다.
+A: 예, Aspose.Words for .NET을 사용하면 Word 문서에 다중 레벨 중첩 필드가 있을 수 있습니다. 다음을 사용하여 중첩된 필드의 복잡한 계층 구조를 만들 수 있습니다.`FieldStart.NextSibling` 기존 상위 필드에 하위 필드를 추가하는 방법입니다.
 
 #### Q: Aspose.Words for .NET을 사용하여 Word 문서에서 중첩 필드의 속성을 어떻게 사용자 정의할 수 있나요?
 
- A: .NET용 Aspose.Words를 사용하여 Word 문서에서 중첩 필드의 속성을 사용자 정의하려면 해당`FieldStart`필요에 따라 개체의 속성을 수정합니다. 원하는 결과를 얻기 위해 중첩된 필드의 형식 지정 옵션, 값, 계산 등을 설정할 수 있습니다.
+ A: .NET용 Aspose.Words를 사용하여 Word 문서에서 중첩 필드의 속성을 사용자 정의하려면 해당`FieldStart` 필요에 따라 개체의 속성을 수정합니다. 원하는 결과를 얻기 위해 중첩된 필드의 형식 지정 옵션, 값, 계산 등을 설정할 수 있습니다.
 
 #### Q: 중첩된 필드를 삽입하면 Aspose.Words for .NET을 사용하는 Word 문서 성능에 영향을 미치나요?
 

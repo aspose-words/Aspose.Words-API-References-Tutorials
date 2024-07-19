@@ -36,7 +36,7 @@ DocumentBuilder builder = new DocumentBuilder();
 builder.InsertHorizontalRule();
 ```
 
-恭喜！現在您已經了解如何將水平標尺功能與 Aspose.Words for .NET 一起使用。
+恭喜！現在您已經了解如何將水平標尺功能與 Aspose.Words for .NET 結合使用。
 
 
 ### 常見問題解答

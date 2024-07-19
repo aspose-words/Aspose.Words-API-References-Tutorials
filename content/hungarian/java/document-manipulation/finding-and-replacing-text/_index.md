@@ -38,7 +38,7 @@ builder.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 doc.save("modified-document.docx");
 ```
 
- Ebben a példában betöltünk egy Word dokumentumot, létrehozunk a`DocumentBuilder` , és használja a`replace` módszer a "régi szöveg" megkeresésére és az "új szöveg" szövegre cseréjére a dokumentumban.
+ Ebben a példában betöltünk egy Word dokumentumot, létrehozunk a`DocumentBuilder` , és használja a`replace` módszer a "régi szöveg" megkeresésére és az "új szövegre" cseréjére a dokumentumban.
 
 ## Reguláris kifejezések használata
 
@@ -73,7 +73,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreFields(true);
 
-// Szöveg lecserélésekor használjon opciókat
+// Szöveg cseréjekor használja a beállításokat
 doc.getRange().replace("text-to-replace", "new-text", options);
 
 // Mentse el a módosított dokumentumot
@@ -94,7 +94,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreDeleted(true);
 
-// Szöveg lecserélésekor használjon opciókat
+// Szöveg cseréjekor használja a beállításokat
 doc.getRange().replace("text-to-replace", "new-text", options);
 
 // Mentse el a módosított dokumentumot
@@ -115,7 +115,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setIgnoreInserted(true);
 
-// Szöveg lecserélésekor használjon opciókat
+// Szöveg cseréjekor használja a beállításokat
 doc.getRange().replace("text-to-replace", "new-text", options);
 
 // Mentse el a módosított dokumentumot
@@ -136,7 +136,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceWithHtmlEvaluator(options));
 
-// Szöveg lecserélésekor használjon opciókat
+// Szöveg cseréjekor használja a beállításokat
 doc.getRange().replace("text-to-replace", "new-html-content", options);
 
 // Mentse el a módosított dokumentumot
@@ -205,7 +205,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceTextWithFieldHandler(FieldType.FIELD_MERGE_FIELD));
 
-// Szöveg lecserélésekor használjon opciókat
+// Szöveg cseréjekor használja a beállításokat
 doc.getRange().replace(Pattern.compile("PlaceHolder(\\d+)"), "", options);
 
 // Mentse el a módosított dokumentumot
@@ -214,7 +214,7 @@ doc.save("modified-document.docx");
 
  Ebben a példában a szöveget mezőkre cseréljük, és megadjuk a mező típusát (pl.`FieldType.FIELD_MERGE_FIELD`).
 
-## Csere kiértékelővel
+## Csere értékelővel
 
 Egyéni kiértékelő segítségével dinamikusan meghatározhatja a helyettesítő szöveget.
 
@@ -226,7 +226,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new MyReplaceEvaluator());
 
-// Szöveg lecserélésekor használjon opciókat
+// Szöveg cseréjekor használja a beállításokat
 doc.getRange().replace(Pattern.compile("[s|m]ad"), "", options);
 
 // Mentse el a módosított dokumentumot
@@ -302,7 +302,7 @@ Document doc = new Document("your-document.docx");
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseLegacyOrder(true);
 
-// Szöveg lecserélésekor használjon opciókat
+// Szöveg cseréjekor használja a beállításokat
 doc.getRange().replace(Pattern.compile("\\[(.*?)\\]"), "", options);
 
 // Mentse el a módosított dokumentumot

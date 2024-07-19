@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Krok 3: Uzyskaj dostęp do tabeli i ustaw tytuł i opis
- Teraz możesz uzyskać dostęp do tabeli w dokumencie za pomocą`GetChild()` metoda i`Table` klasa. Następnie ustaw tytuł i opis tabeli za pomocą`Title` I`Description` nieruchomości.
+ Teraz możesz uzyskać dostęp do tabeli w dokumencie za pomocą`GetChild()` metoda i`Table` klasa. Następnie ustaw tytuł i opis tabeli za pomocą`Title`I`Description` nieruchomości.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

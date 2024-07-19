@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Yer değiştirmek`"Your Document Directory"` Ve`"Your Output Directory"` uygun yollar ile.
+ Yer değiştirmek`"Your Document Directory"`Ve`"Your Output Directory"` uygun yollar ile.
 
 ## 4. Adres Mektup Birleştirmeyi Özelleştirme
 
@@ -84,7 +84,7 @@ Object[] fieldValues = {
 doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
-Class HandleMergeField'ın kaynak kodu
+HandleMergeField Sınıfının kaynak kodu
 
 ```java
     private static class HandleMergeField implements IFieldMergingCallback

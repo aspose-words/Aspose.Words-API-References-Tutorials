@@ -17,7 +17,7 @@ url: /ko/net/working-with-fonts/font-settings-default-instance/
 - C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 단계를 원활하게 이해하고 구현하는 데 도움이 됩니다.
 -  .NET용 Aspose.Words 라이브러리: 다음에서 .NET용 Aspose.Words를 다운로드하고 설치하세요.[다운로드 링크](https://releases.aspose.com/words/net/).
 - 개발 환경: 코드를 작성하고 실행하는 데 Visual Studio와 같은 적합한 환경입니다.
--  샘플 문서: 샘플 문서(예:`Rendering.docx`) 글꼴 설정을 적용합니다.
+- 샘플 문서: 샘플 문서(예:`Rendering.docx`) 글꼴 설정을 적용합니다.
 
 ## 네임스페이스 가져오기
 
@@ -55,7 +55,7 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 
 ## 3단계: 문서 로드
 
-글꼴 소스가 구성되면 다음 단계는 문서를 Aspose.Words에 로드하는 것입니다.`Document` 물체. 이를 통해 문서를 조작하고 결국 저장할 수 있습니다.
+ 글꼴 소스가 구성되면 다음 단계는 문서를 Aspose.Words에 로드하는 것입니다.`Document` 물체. 이를 통해 문서를 조작하고 결국 저장할 수 있습니다.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### Q1: 여러 사용자 정의 폴더의 글꼴을 사용할 수 있습니까?
 
- 예, 여러 개를 지정할 수 있습니다`FolderFontSource`내의 인스턴스`SetFontsSources` 다른 폴더의 글꼴을 포함하는 방법.
+ 예, 여러 개를 지정할 수 있습니다`FolderFontSource` 내의 인스턴스`SetFontsSources` 다른 폴더의 글꼴을 포함하는 방법.
 
 ### Q2: .NET용 Aspose.Words 무료 평가판을 받으려면 어떻게 해야 합니까?
 

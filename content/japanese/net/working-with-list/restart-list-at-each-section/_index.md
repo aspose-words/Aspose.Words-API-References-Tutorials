@@ -95,7 +95,7 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 
 #### Q: Aspose.Words のリストの番号付け形式をカスタマイズできますか?
 
- A: はい、Aspose.Wordsではリストの番号付け形式をカスタマイズできます。`List`クラスはこれに関するいくつかのプロパティを提供します。`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`これらのプロパティを使用して、リストの種類 (番号付き、箇条書きなど)、番号の形式 (アラビア数字、ローマ数字、文字など)、およびその他の番号の書式設定オプションを設定できます。
+ A: はい、Aspose.Wordsではリストの番号付け形式をカスタマイズできます。`List`クラスは、これに関するいくつかのプロパティを提供します。`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`これらのプロパティを使用して、リストの種類 (番号付き、箇条書きなど)、番号の形式 (アラビア数字、ローマ数字、文字など)、およびその他の番号の書式設定オプションを設定できます。
 
 #### Q: Aspose.Words の番号付きリストに追加のレベルを追加することは可能ですか?
 

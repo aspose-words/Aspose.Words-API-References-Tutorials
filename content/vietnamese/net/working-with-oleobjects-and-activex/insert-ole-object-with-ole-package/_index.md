@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 3: Chèn đối tượng OLE bằng gói OLE
- Sử dụng Trình tạo tài liệu`InsertOleObject` phương pháp chèn một đối tượng OLE với gói OLE vào tài liệu. Chỉ định luồng dữ liệu, loại đối tượng, tùy chọn hiển thị và các cài đặt cần thiết khác.
+ Sử dụng Trình tạo tài liệu`InsertOleObject`phương pháp chèn một đối tượng OLE với gói OLE vào tài liệu. Chỉ định luồng dữ liệu, loại đối tượng, tùy chọn hiển thị và các cài đặt cần thiết khác.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -72,7 +72,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 Để kết luận, chúng tôi đã thực hiện hướng dẫn từng bước để chèn đối tượng OLE vào tài liệu Word có gói OLE bằng Aspose.Words cho .NET.
 
-Bằng cách làm theo các bước này, bạn sẽ có thể chèn thành công các đối tượng OLE với các gói OLE vào tài liệu Word của mình bằng Aspose.Words cho .NET. Hãy nhớ nhập các tài liệu tham khảo cần thiết và làm theo hướng dẫn cẩn thận để có được kết quả mong muốn.
+Bằng cách làm theo các bước này, bạn sẽ có thể chèn thành công các đối tượng OLE với các gói OLE vào tài liệu Word của mình bằng Aspose.Words for .NET. Hãy nhớ nhập các tài liệu tham khảo cần thiết và làm theo hướng dẫn cẩn thận để có được kết quả mong muốn.
 
 ### Câu hỏi thường gặp về chèn đối tượng ole vào word bằng gói ole
 
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Câu hỏi: Làm cách nào để chèn đối tượng OLE có gói OLE vào tài liệu?
 
- Đáp: Hãy sử dụng`InsertOleObject`phương pháp của người xây dựng tài liệu (`DocumentBuilder`) để chèn một đối tượng OLE có gói OLE vào tài liệu. Chỉ định luồng dữ liệu, loại đối tượng, tùy chọn hiển thị và các cài đặt cần thiết khác. Đây là một ví dụ :
+ Đáp: Hãy sử dụng`InsertOleObject` phương pháp của người xây dựng tài liệu (`DocumentBuilder`) để chèn một đối tượng OLE có gói OLE vào tài liệu. Chỉ định luồng dữ liệu, loại đối tượng, tùy chọn hiển thị và các cài đặt cần thiết khác. Đây là một ví dụ :
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### Hỏi: Làm thế nào để lưu tài liệu?
 
- A: Sử dụng tài liệu`Save` phương pháp lưu tài liệu vào một tập tin. Đây là một ví dụ :
+ A: Sử dụng tài liệu`Save`phương pháp lưu tài liệu vào một tập tin. Đây là một ví dụ :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

@@ -86,7 +86,7 @@ if (sdtDropDown.getSdtType() == SdtType.DROP_DOWN_LIST) {
 doc.save("ModifiedDocument.docx");
 ```
 
-### 사진 콘텐츠 제어 수정
+### 사진 콘텐츠 컨트롤 수정
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");

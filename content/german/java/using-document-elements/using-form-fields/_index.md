@@ -14,7 +14,7 @@ Im heutigen digitalen Zeitalter sind Dokumentenautomatisierung und -bearbeitung 
 Aspose.Words für Java ist eine leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente in Java-Anwendungen erstellen, bearbeiten und konvertieren können. Sie bietet eine breite Palette an Funktionen für die Handhabung verschiedener Dokumentelemente, einschließlich Formularfeldern.
 
 ## 2. Einrichten Ihrer Umgebung
- Bevor Sie Aspose.Words für Java verwenden, müssen Sie Ihre Entwicklungsumgebung einrichten. Stellen Sie sicher, dass Java und die Aspose.Words-Bibliothek installiert sind. Sie können die Bibliothek von herunterladen[Hier](https://releases.aspose.com/words/java/).
+ Bevor Sie Aspose.Words für Java verwenden, müssen Sie Ihre Entwicklungsumgebung einrichten. Stellen Sie sicher, dass Sie Java und die Aspose.Words-Bibliothek installiert haben. Sie können die Bibliothek von herunterladen[Hier](https://releases.aspose.com/words/java/).
 
 ## 3. Neues Dokument erstellen
 Erstellen Sie zunächst ein neues Word-Dokument mit Aspose.Words für Java. Sie können den folgenden Code als Referenz verwenden:

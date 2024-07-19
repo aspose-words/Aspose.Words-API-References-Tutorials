@@ -65,4 +65,4 @@ Ja, Aspose.Words unterstützt verschiedene .NET-Frameworks und gewährleistet so
 Ja, Sie können mithilfe der Aspose.Words-APIs mehrere Textdateien stapelweise verarbeiten, um Ihre Dokumentkonvertierungsaufgaben zu optimieren.
 
 ### Wo finde ich weitere Ressourcen und Support für Aspose.Words?
- Besuche den[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) Und[Hilfeforum](https://forum.aspose.com/c/words/8) für weitere Informationen und Unterstützung.
+ Besuche den[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/)Und[Hilfeforum](https://forum.aspose.com/c/words/8) für weitere Informationen und Unterstützung.

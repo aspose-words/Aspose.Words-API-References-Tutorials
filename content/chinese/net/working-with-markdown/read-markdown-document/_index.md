@@ -19,7 +19,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Quotes.md");
 ```
 
-## 第 2 步：删除标题格式
+## 第 2 步：删除页眉格式
 
 我们可以删除文档最后一段标题的格式。在本例中，我们为该段落指定“引文”样式。
 
@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 
 #### 问：有哪些推荐的用于操作 Markdown 文档的 .NET 库？
 
-答：推荐使用 .NET 库来操作 Markdown 文档`Markdig`和`CommonMark.NET`它们提供了极大的灵活性和对 Markdown 功能的全面支持。
+答：推荐使用 .NET 库来操作 Markdown 文档`Markdig`和`CommonMark.NET`。它们提供了极大的灵活性和对 Markdown 功能的全面支持。
 
 #### 问：读取 Markdown 文档时出现错误如何处理？
 

@@ -2,90 +2,121 @@
 title: Untangle In Word Document
 linktitle: Untangle In Word Document
 second_title: Aspose.Words Document Processing API
-description: Learn how to untangle in word document nested bookmarks in adjacent table rows using Aspose.Words for .NET.
+description: Master untangling bookmarks in Word documents using Aspose.Words for .NET with our detailed step-by-step guide. Perfect for .NET developers.
 type: docs
 weight: 10
 url: /net/programming-with-bookmarks/untangle/
 ---
+## Introduction
 
-In this article, we will explore the C# source code above to understand how to use the Untangle function in the Aspose.Words for .NET library. This function unravels nested bookmarks that are in adjacent table rows.
+Navigating through a Word document programmatically can be a bit like finding your way through a maze. You might encounter bookmarks, headings, tables, and other elements that need to be manipulated. Today, we’re diving into a common yet intricate task: untangling bookmarks in a Word document using Aspose.Words for .NET. This tutorial will guide you through the process step-by-step, ensuring you understand every part of the journey.
 
 ## Prerequisites
 
-- Basic knowledge of the C# language.
-- .NET development environment with Aspose.Words library installed.
+Before we dive into the code, let’s make sure you have everything you need:
 
-## Step 1: Browse Document Bookmarks
+1. Aspose.Words for .NET: You’ll need the Aspose.Words for .NET library. If you don’t have it, you can [download it here](https://releases.aspose.com/words/net/).
+2. Development Environment: A .NET development environment such as Visual Studio.
+3. Basic Knowledge of C#: Understanding the basics of C# will help you follow along with the code snippets and explanations.
 
-We use a foreach loop to loop through all the bookmarks present in the document:
+## Import Namespaces
+
+To start, make sure you import the necessary namespaces. This will allow you to access the classes and methods needed for manipulating Word documents with Aspose.Words.
 
 ```csharp
-foreach(Bookmark bookmark in doc.Range.Bookmarks)
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## Step 1: Load Your Document
+
+The first step is to load the Word document you want to work with. This document will contain the bookmarks you need to untangle.
+
+Step 1 Heading: Loading the Document
+
+```csharp
+Document doc = new Document("path/to/your/document.docx");
+```
+
+In this line, we’re simply loading the document from a specified path. Make sure the path points to your actual Word document.
+
+## Step 2: Iterate Through Bookmarks
+
+Next, we need to iterate through all the bookmarks in the document. This allows us to access each bookmark and its properties.
+
+Step 2 Heading: Iterating Through Bookmarks
+
+```csharp
+foreach (Bookmark bookmark in doc.Range.Bookmarks)
 {
-     // Code for handling bookmarks here
+    // Processing each bookmark
 }
 ```
 
-## Step 2: Get parent rows from bookmarks
+Here, we’re using a `foreach` loop to go through each bookmark in the document’s range. This loop will enable us to handle each bookmark individually.
 
-We use the `GetAncestor` methods to retrieve the parent rows of the bookmark's start and end nodes:
+## Step 3: Identify Bookmark Start and End Rows
+
+For each bookmark, we need to find the rows that contain the start and end of the bookmark. This is crucial for determining whether the bookmark spans across adjacent rows.
+
+Step 3 Heading: Identifying Rows
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-## Step 3: Untangle Nested Bookmarks
+In this step, we’re using the `GetAncestor` method to find the parent row of both the bookmark start and bookmark end nodes. This helps us pinpoint the exact rows involved.
 
-If both parent lines are found and the bookmark begins and ends in adjacent lines, we move the end node of the bookmark to the end of the last paragraph of the last cell in the top row:
+## Step 4: Check for Adjacent Rows
+
+Before we move the bookmark end, we need to ensure that the bookmark start and end are in adjacent rows. This condition is essential to correctly untangle the bookmark.
+
+Step 4 Heading: Checking Row Adjacency
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
-     row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+{
+    // Rows are adjacent, proceed with moving the bookmark end
+}
 ```
 
-### Example source code for Untangle using Aspose.Words for .NET
+Here, we’re adding a condition to check if both rows are found and if they are adjacent. The `NextSibling` property helps us verify adjacency.
 
-Here is the full source code example for untangling nested bookmarks using Aspose.Words for .NET:
+## Step 5: Move the Bookmark End
+
+Finally, if the conditions are met, we move the bookmark end node to the end of the last paragraph in the top row’s last cell. This step effectively untangles the bookmark.
+
+Step 5 Heading: Moving the Bookmark End
 
 ```csharp
-
-	foreach (Bookmark bookmark in doc.Range.Bookmarks)
-	{
-		// Get the parent row of both the bookmark and bookmark end node.
-		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-		// If both rows are found okay, and the bookmark start and end are contained in adjacent rows,
-		// move the bookmark end node to the end of the last paragraph in the top row's last cell.
-		if (row1 != null && row2 != null && row1.NextSibling == row2)
-			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-	}
-
+row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
+
+In this step, we’re using the `AppendChild` method to move the bookmark end node. By appending it to the last paragraph of the top row’s last cell, we ensure that the bookmark is correctly untangled.
 
 ## Conclusion
 
-In this article, we explored the C# source code to understand how to use the Untangle function of Aspose.Words for .NET. We've followed a step-by-step guide to untangle nested bookmarks in adjacent table rows.
+Untangling bookmarks in a Word document using Aspose.Words for .NET can seem daunting, but by breaking it down into manageable steps, the process becomes much clearer. We’ve walked through loading a document, iterating through bookmarks, identifying relevant rows, checking for adjacency, and finally, moving the bookmark end node. With this guide, you should be able to handle bookmarks in your Word documents more effectively.
 
-### FAQ's
+## FAQ's
 
-#### Q: Does the Untangle function only work with nested bookmarks in adjacent table rows?
+### Can I use Aspose.Words for .NET to manipulate other elements besides bookmarks?
 
-A: Yes, the Untangle feature is designed specifically to untangle nested bookmarks that are in adjacent table rows. If the bookmarks are not in adjacent lines, this function will not be applicable.
+Yes, Aspose.Words for .NET is a powerful library that allows you to manipulate a wide range of document elements including paragraphs, tables, images, and more.
 
-#### Q: How can I identify nested bookmarks in my Word document?
+### What if the bookmark spans more than two rows?
 
-A: You can identify nested bookmarks by looping through bookmarks in the document and checking to see if the start bookmark and end bookmark are in adjacent table rows. You can use the source code provided in this article as a starting point to implement this functionality.
+This tutorial addresses bookmarks that span across two adjacent rows. For more complex cases, additional logic would be needed to handle bookmarks spanning multiple rows or sections.
 
-#### Q: Does the Unscramble function modify the content of the original document?
+### Is there a trial version of Aspose.Words for .NET available?
 
-A: Yes, the Untangle function modifies the original document by moving the end node of the bookmark to the end of the last paragraph of the last cell in the top row. Make sure to save a backup copy of the document before applying this feature.
+Yes, you can [download a free trial](https://releases.aspose.com/) from the Aspose website to explore the library’s features.
 
-#### Q: How can I disentangle nested bookmarks in other types of document elements, such as sections or paragraphs?
+### How can I get support if I encounter issues?
 
-A: The Untangle function presented in this article is specifically designed to untangle nested bookmarks in adjacent table rows. If you want to disentangle nested bookmarks in other document elements, you will need to adapt the code accordingly and use appropriate methods to access the desired elements.
+You can visit the [Aspose support forum](https://forum.aspose.com/c/words/8) for help with any issues or questions you may have.
 
-#### Q: Are there any other methods to untangle nested bookmarks in a Word document using Aspose.Words for .NET?
+### Do I need a license to use Aspose.Words for .NET?
 
-A: The method presented in this article is a common method for untangling nested bookmarks in adjacent table rows. However, there may be other approaches or techniques depending on the specific needs of your project. You can check out the [Aspose.Words for .NET API references](https://reference.aspose.com/words/net/) to further explore the available features.
+Yes, Aspose.Words for .NET requires a license for full functionality. You can purchase a license [here](https://purchase.aspose.com/buy) or request a [temporary license](https://purchase.aspose.com/temporary-license) for evaluation purposes.

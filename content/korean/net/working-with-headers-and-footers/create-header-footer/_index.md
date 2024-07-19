@@ -59,7 +59,7 @@ pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
 ```
 
-## 4단계: 첫 페이지에 머리글 추가
+## 4단계: 첫 번째 페이지에 머리글 추가
 
 첫 번째 페이지의 헤더 섹션으로 이동하여 헤더 텍스트를 구성합니다.
 

@@ -19,7 +19,7 @@ url: /ru/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 На этом этапе мы загрузим документ Word, который хотим преобразовать в HTML. Используйте следующий код для загрузки документа:
 
 ```csharp
-// Путь к каталогу документов.
+//Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Этот код создает экземпляр`HtmlSaveOptions` и наборы`CssStyleSheetType` к`CssStyleSheetType.External`для создания внешней таблицы стилей CSS и`CssClassNamePrefix` к`"pfx_"` префикс`"pfx_"` для имен классов CSS.
+ Этот код создает экземпляр`HtmlSaveOptions` и наборы`CssStyleSheetType` к`CssStyleSheetType.External` для создания внешней таблицы стилей CSS и`CssClassNamePrefix` к`"pfx_"` префикс`"pfx_"` для имен классов CSS.
 
 ## Шаг 4. Преобразование и сохранение документа в HTML.
 

@@ -81,7 +81,7 @@ Het klonen van het document is een fluitje van een cent met Aspose.Words:
 
 Nu alles op zijn plaats is, is het tijd om uw code uit te voeren en de resultaten te bekijken:
 
-1.  Bouw uw project: Klik op de`Build` menu en selecteer`Build Solution`. Zorg ervoor dat er geen fouten zijn.
+1. Bouw uw project: Klik op de`Build` menu en selecteer`Build Solution`. Zorg ervoor dat er geen fouten zijn.
 2.  Voer uw project uit: druk op`F5` of klik op de`Start` knop om uw project uit te voeren. Als alles correct is ingesteld, zou een nieuw gekloond document in uw documentenmap moeten verschijnen.
 
 ## Stap 6: Controleer de uitvoer

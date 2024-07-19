@@ -25,7 +25,7 @@ Under den här självstudieserien kommer vi att täcka ett brett utbud av ämnen
 - Automatisering och anpassning: Förstå hur du automatiserar dokumentbearbetningsuppgifter och anpassar sammanslagnings- och jämförelseprocessen för att passa dina specifika behov.
 - Python- och .NET-integration: Dyk ner i exempel och kodavsnitt för både Python- och .NET-miljöer, tillgodose utvecklare med olika programmeringspreferenser.
 
-I slutet av dessa tutorials kommer du att vara utrustad med färdigheter att sömlöst kombinera och jämföra dokument med Aspose.Words. Oavsett om du är nybörjare eller en erfaren utvecklare kommer dessa steg-för-steg-guider att ge dig möjlighet att integrera dessa funktioner i dina dokumentarbetsflöden på ett effektivt sätt.
+I slutet av dessa tutorials kommer du att vara utrustad med färdigheter att sömlöst kombinera och jämföra dokument med Aspose.Words. Oavsett om du är nybörjare eller erfaren utvecklare, kommer dessa steg-för-steg-guider att ge dig möjlighet att integrera dessa funktioner i dina dokumentarbetsflöden på ett effektivt sätt.
 
 ## Handledning för dokumentkombination och jämförelse
 ### [Sammanfoga och jämföra dokument i Word](./merge-compare-documents/)

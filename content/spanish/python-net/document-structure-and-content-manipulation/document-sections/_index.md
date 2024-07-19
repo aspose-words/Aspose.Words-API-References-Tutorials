@@ -7,7 +7,7 @@ type: docs
 weight: 24
 url: /es/python-net/document-structure-and-content-manipulation/document-sections/
 ---
-En el ámbito de la manipulación de documentos, Aspose.Words para Python se presenta como una poderosa herramienta para administrar sin esfuerzo las secciones y el diseño de los documentos. Este tutorial lo guiará a través de los pasos esenciales para utilizar la API Python de Aspose.Words para manipular secciones de documentos, cambiar diseños y mejorar su flujo de trabajo de procesamiento de documentos.
+En el ámbito de la manipulación de documentos, Aspose.Words para Python se presenta como una herramienta poderosa para administrar sin esfuerzo las secciones y el diseño de los documentos. Este tutorial lo guiará a través de los pasos esenciales para utilizar la API Python de Aspose.Words para manipular secciones de documentos, cambiar diseños y mejorar su flujo de trabajo de procesamiento de documentos.
 
 ## Introducción a la biblioteca Python Aspose.Words
 

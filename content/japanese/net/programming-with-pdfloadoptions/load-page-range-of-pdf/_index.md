@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 	doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
    
 ```
-PDF ドキュメントのディレクトリへの正しいパスを指定することを忘れないでください。
+PDF ドキュメントのディレクトリへの正しいパスを必ず指定してください。
 
 
 

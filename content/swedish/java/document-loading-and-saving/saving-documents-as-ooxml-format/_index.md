@@ -172,7 +172,7 @@ För att ta bort lösenordsskyddet från ett lösenordsskyddat dokument kan du �
 
 ### Kan jag ställa in anpassade egenskaper när jag sparar ett dokument i OOXML-format?
 
- Ja, du kan ställa in anpassade egenskaper för ett dokument innan du sparar det i OOXML-format. Använd`BuiltInDocumentProperties` och`CustomDocumentProperties` klasser för att ställa in olika egenskaper som författare, titel, nyckelord och anpassade egenskaper.
+ Ja, du kan ställa in anpassade egenskaper för ett dokument innan du sparar det i OOXML-format. Använd`BuiltInDocumentProperties`och`CustomDocumentProperties` klasser för att ställa in olika egenskaper som författare, titel, nyckelord och anpassade egenskaper.
 
 ### Vilken är standardkomprimeringsnivån när du sparar ett dokument i OOXML-format?
 

@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. lépés: Frissítse az oldal elrendezését
-
- Hívja a`UpdatePageLayout` módszer. Ez a dokumentumot a memóriában jeleníti meg, és rögzíti a renderelés során előforduló figyelmeztetéseket.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## 4. lépés: A figyelmeztetés visszahívásának beállítása
+## 3. lépés: A figyelmeztetés visszahívásának beállítása
 
  A figyelmeztetések rögzítéséhez és kezeléséhez hozzon létre egy osztályt, amely megvalósítja a`IWarningCallback` felület. Ez az osztály naplózza a dokumentumfeldolgozás során előforduló figyelmeztetéseket.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Minket csak a betűtípusok helyettesítése érdekel.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## 5. lépés: Rendelje hozzá a visszahívást a dokumentumhoz
+## 4. lépés: Rendelje hozzá a visszahívást a dokumentumhoz
 
 Rendelje hozzá a figyelmeztetés visszahívását a dokumentumhoz. Ez biztosítja, hogy minden betűtípus-probléma rögzítésre és naplózásra kerüljön.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## 5. lépés: Frissítse az oldal elrendezését
+
+ Hívja a`UpdatePageLayout` módszer. Ez a dokumentumot a memóriában jeleníti meg, és rögzíti a renderelés során előforduló figyelmeztetéseket.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## 6. lépés: Mentse el a dokumentumot
@@ -106,7 +101,7 @@ Nem, csak egy alapértelmezett betűtípust adhat meg helyettesítéshez. Azonba
 
 ###  3. kérdés: Kezelhetek-e más típusú figyelmeztetéseket`IWarningCallback`?
 
- Igen, a`IWarningCallback` A felület különféle típusú figyelmeztetéseket tud kezelni, nem csak a betűtípusok helyettesítését.
+ Igen, a`IWarningCallback` felület különféle típusú figyelmeztetéseket tud kezelni, nem csak a betűtípusok helyettesítését.
 
 ### 4. kérdés: Hol találok támogatást az Aspose.Words számára?
 

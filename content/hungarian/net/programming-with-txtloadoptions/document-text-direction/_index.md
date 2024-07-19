@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- Ebben a lépésben elérjük a dokumentum első bekezdését a`FirstSection` és`Body` tulajdonságait. Ezután elérjük a`ParagraphFormat.Bidi` tulajdonság a bekezdés szövegirányának lekéréséhez. Ezután megjelenítjük ezt az értéket a konzolon.
+ Ebben a lépésben elérjük a dokumentum első bekezdését a`FirstSection`és`Body` tulajdonságait. Ezután elérjük a`ParagraphFormat.Bidi` tulajdonság a bekezdés szövegirányának lekéréséhez. Ezután megjelenítjük ezt az értéket a konzolon.
 
 ## 5. lépés: Mentse el a dokumentumot
 

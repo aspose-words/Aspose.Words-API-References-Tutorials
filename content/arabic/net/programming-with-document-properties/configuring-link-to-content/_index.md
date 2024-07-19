@@ -2,82 +2,97 @@
 title: تكوين الارتباط إلى المحتوى
 linktitle: تكوين الارتباط إلى المحتوى
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لإعداد الارتباط بالمحتوى في مستند باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية تكوين رابط للمحتوى في مستند Word باستخدام Aspose.Words لـ .NET من خلال برنامجنا التعليمي التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-document-properties/configuring-link-to-content/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سنرشدك خلال التعليمات البرمجية المصدر لـ C# لإعداد الارتباط بالمحتوى باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة الارتباط بمحتوى محدد في المستند.
+هل تساءلت يومًا عن كيفية ربط المحتوى في مستند Word برمجيًا؟ باستخدام Aspose.Words for .NET، يمكنك بسهولة إضافة خصائص محتوى مرتبطة إلى مستندات Word الخاصة بك. توفر هذه المكتبة القوية مجموعة واسعة من الوظائف، مما يسهل التعامل مع مستندات Word من خلال التعليمات البرمجية. في هذا البرنامج التعليمي، سنرشدك خلال عملية تكوين رابط للمحتوى داخل مستند Word، مما يضمن فهمك لكل خطوة على طول الطريق.
 
-## الخطوة 1: إعداد المشروع
+## المتطلبات الأساسية
 
-للبدء، قم بإنشاء مشروع C# جديد في بيئة التطوير المتكاملة (IDE) المفضلة لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+قبل أن نتعمق في الدليل التفصيلي خطوة بخطوة، دعنا نتأكد من أن لديك كل ما تحتاجه للبدء:
 
-## الخطوة 2: إنشاء المستند والمنشئ
+-  Aspose.Words لـ .NET: تأكد من أن لديك أحدث إصدار من Aspose.Words لـ .NET. إذا لم تكن قد قمت بذلك بالفعل، يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+- .NET Framework: تأكد من تثبيت .NET Framework على جهازك.
+- بيئة التطوير: Visual Studio أو أي بيئة تطوير متكاملة أخرى تدعم تطوير .NET.
 
-في هذه الخطوة سنقوم بإنشاء مستند جديد وتهيئة المنشئ. استخدم الكود التالي:
+## استيراد مساحات الأسماء
+
+قبل البدء في البرمجة، تحتاج إلى استيراد مساحات الأسماء الضرورية إلى مشروعك. وهذا يضمن أن جميع الفئات والأساليب المطلوبة متاحة للاستخدام.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Properties;
+```
+
+الآن، دعنا نقسم عملية تكوين رابط للمحتوى في مستند Word إلى خطوات سهلة المتابعة.
+
+## الخطوة 1: تهيئة المستند وDocumentBuilder
+
+للبدء، تحتاج إلى تهيئة مستند Word جديد وكائن DocumentBuilder. توفر فئة DocumentBuilder طرقًا لإضافة محتوى إلى المستند.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إنشاء إشارة مرجعية
+## الخطوة 2: إنشاء إشارة مرجعية
 
-الآن سنقوم بإنشاء إشارة مرجعية في المستند. استخدم الكود التالي لإنشاء إشارة مرجعية تحتوي على نص بداخلها:
+بعد ذلك، سنقوم بإنشاء إشارة مرجعية في المستند. تعتبر الإشارات المرجعية مفيدة لوضع علامات على مواقع محددة في المستند والتي يمكنك الرجوع إليها لاحقًا.
 
 ```csharp
-builder. StartBookmark("MyBookmark");
+builder.StartBookmark("MyBookmark");
 builder.Writeln("Text inside a bookmark.");
-builder. EndBookmark("MyBookmark");
+builder.EndBookmark("MyBookmark");
 ```
 
-ينشئ هذا الرمز إشارة مرجعية تسمى "MyBookmark" ويضيف بعض النص بداخلها.
+## الخطوة 3: الوصول إلى خصائص المستند المخصصة
 
-## الخطوة 4: إعداد رابط المحتوى
-
-سنقوم الآن بتكوين الارتباط بالمحتوى باستخدام خصائص المستند. استخدم الكود التالي لإضافة واسترداد الرابط للمحتوى:
+تسمح لك خصائص المستند المخصصة بإضافة بيانات تعريف إلى مستندك. هنا، سوف نقوم باسترداد قائمة بجميع خصائص المستند المخصصة من الملف.
 
 ```csharp
-// احصل على قائمة بجميع الخصائص المخصصة في المستند.
 CustomDocumentProperties customProperties = doc.CustomDocumentProperties;
-// إضافة خاصية مرتبطة بالمحتوى.
+```
+
+## الخطوة 4: أضف رابطًا إلى خاصية المحتوى
+
+الآن، سنقوم بإضافة خاصية ترتبط بالمحتوى المميز بإشارتنا المرجعية. ستشير هذه الخاصية إلى الإشارة المرجعية التي أنشأناها سابقًا.
+
+```csharp
 DocumentProperty customProperty = customProperties.AddLinkToContent("Bookmark", "MyBookmark");
 customProperty = customProperties["Bookmark"];
+```
 
+## الخطوة 5: التحقق من الارتباط بالمحتوى
+
+للتأكد من تكوين الارتباط بالمحتوى بشكل صحيح، سنتحقق مما إذا كانت الخاصية مرتبطة بالفعل بالمحتوى ونستعيد مصدرها وقيمتها.
+
+```csharp
 bool isLinkedToContent = customProperty.IsLinkToContent;
-
 string linkSource = customProperty.LinkSource;
-
 string customPropertyValue = customProperty.Value.ToString();
 ```
 
-يضيف هذا الرمز خاصية مرتبطة بالمحتوى تسمى "إشارة مرجعية" مع الإشارة المرجعية "MyBookmark". ثم يقوم بعد ذلك باسترداد معلومات الخاصية ذات الصلة بالمحتوى مثل حالة الارتباط ومصدر الارتباط وقيمة الخاصية.
+## خاتمة
 
-### مثال على التعليمات البرمجية المصدر لتكوين الارتباط بالمحتوى باستخدام Aspose.Words لـ .NET
+ تهانينا! لقد نجحت في تكوين رابط للمحتوى في مستند Word باستخدام Aspose.Words لـ .NET. باتباع هذه الخطوات، يمكنك إضافة وإدارة الخصائص المخصصة المرتبطة بمحتوى معين في مستندات Word، مما يجعل إدارة المستندات أكثر ديناميكية وكفاءة. إذا كان لديك أي أسئلة أو واجهت أي مشاكل، فلا تتردد في مراجعة[وثائق Aspose.Words](https://reference.aspose.com/words/net/) أو طلب المساعدة على[Aspose منتدى الدعم](https://forum.aspose.com/c/words/8).
 
-```csharp
+## الأسئلة الشائعة
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.StartBookmark("MyBookmark");
-	builder.Writeln("Text inside a bookmark.");
-	builder.EndBookmark("MyBookmark");
+### ما هو Aspose.Words لـ .NET؟
+تعد Aspose.Words for .NET مكتبة قوية للعمل مع مستندات Word برمجيًا. يوفر ميزات واسعة النطاق لإنشاء مستندات Word وتعديلها وتحويلها.
 
-	// استرداد قائمة بجميع خصائص المستند المخصصة من الملف.
-	CustomDocumentProperties customProperties = doc.CustomDocumentProperties;
-	// إضافة مرتبطة بخاصية المحتوى.
-	DocumentProperty customProperty = customProperties.AddLinkToContent("Bookmark", "MyBookmark");
-	customProperty = customProperties["Bookmark"];
+### كيف أقوم بتثبيت Aspose.Words لـ .NET؟
+ يمكنك تثبيت Aspose.Words لـ .NET عن طريق تنزيله من[هنا](https://releases.aspose.com/words/net/) وإضافة DLL إلى مشروعك. وبدلاً من ذلك، يمكنك تثبيته عبر NuGet Package Manager في Visual Studio.
 
-	bool isLinkedToContent = customProperty.IsLinkToContent;
-	
-	string linkSource = customProperty.LinkSource;
-	
-	string customPropertyValue = customProperty.Value.ToString();
+### هل يمكنني إضافة روابط متعددة لمحتوى مختلف في نفس المستند؟
+نعم، يمكنك إضافة روابط متعددة لمحتوى مختلف في نفس المستند عن طريق إنشاء إشارات مرجعية متعددة وربط الخصائص المخصصة بكل إشارة مرجعية.
 
-```
+### هل Aspose.Words لـ .NET مجاني؟
+ يعد Aspose.Words for .NET منتجًا تجاريًا، ولكن يمكنك البدء باستخدام نسخة تجريبية مجانية متاحة[هنا](https://releases.aspose.com/).
 
-لقد تعلمت الآن كيفية تكوين الارتباط بالمحتوى في مستند باستخدام Aspose.Words for .NET. باتباع الدليل التفصيلي المقدم في هذا البرنامج التعليمي، يمكنك بسهولة إنشاء وتكوين روابط لمحتوى معين في مستنداتك الخاصة.
+### أين يمكنني الحصول على الدعم لـ Aspose.Words لـ .NET؟
+ يمكنك الحصول على دعم لـ Aspose.Words لـ .NET على[Aspose منتدى الدعم](https://forum.aspose.com/c/words/8).

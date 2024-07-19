@@ -106,4 +106,4 @@ Ja, deze instellingen kunnen op elke tekst worden toegepast, maar ze zijn vooral
 Absoluut! U kunt een verzameling documenten doorlopen en deze instellingen programmatisch op elk document toepassen.
 
 ### Wat moet ik doen als ik problemen ondervind of vragen heb?
-Als u problemen ondervindt of verdere vragen heeft, kunt u de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) is een geweldige plek om hulp te zoeken.
+ Als u problemen ondervindt of verdere vragen heeft, kunt u de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) is een geweldige plek om hulp te zoeken.

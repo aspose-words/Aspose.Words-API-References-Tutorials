@@ -65,7 +65,7 @@ Aspose.Words for Java を使用して Java で Word 文書からコンテンツ�
 ### [Aspose.Words for Java でのブックマークの使用](./using-bookmarks/)
 Aspose.Words for Java を使用してドキュメント処理を最適化します。このステップ バイ ステップ ガイドでは、ブックマークを使用して効率的なコンテンツ ナビゲーションと操作を行う方法を学習します。
 ### [Aspose.Words for Java でのドキュメント範囲の使用](./using-document-ranges/)
-Aspose.Words for Java でのドキュメント範囲の操作をマスターします。この包括的なガイドで、テキストの削除、抽出、書式設定を学習します。
+Aspose.Words for Java でのドキュメント範囲の操作をマスターします。この包括的なガイドで、テキストの削除、抽出、および書式設定を学習します。
 ### [Aspose.Words for Java で構造化ドキュメント タグ (SDT) を使用する](./using-structured-document-tags/)
 この包括的なガイドでは、Aspose.Words for Java で構造化ドキュメント タグ (SDT) を使用する方法を学習します。SDT を作成、変更し、カスタム XML データにバインドします。
 ### [Aspose.Words for Java でのスタイルとテーマの使用](./using-styles-and-themes/)
@@ -79,7 +79,7 @@ Aspose.Words for Java を使用してドキュメントをページに分割す�
 ### [Aspose.Words for Java でドキュメントを分割する](./splitting-documents/)
 Aspose.Words for Java でドキュメントを効率的に分割する方法を学びます。見出し、セクション、ページ範囲のテクニックを探ります。
 ### [Aspose.Words for Java でドキュメントを HTML ページに分割する](./splitting-documents-into-html-pages/)
-Aspose.Words for Java を使用してドキュメントを HTML ページに分割する方法を学びます。シームレスなドキュメント変換を行うには、ステップ バイ ステップ ガイドに従ってください。
+Aspose.Words for Java を使用してドキュメントを HTML ページに分割する方法を学びます。シームレスなドキュメント変換を行うには、ステップバイステップのガイドに従ってください。
 ### [Aspose.Words for Java で DocumentBuilder を使用してコンテンツを追加する](./adding-content-using-documentbuilder/)
 Aspose.Words for Java でドキュメント作成をマスターしましょう。テキスト、表、画像などを追加するためのステップバイステップ ガイド。魅力的な Word ドキュメントを簡単に作成できます。
 ### [Aspose.Words for Java でのドキュメントの複製と結合](./cloning-and-combining-documents/)

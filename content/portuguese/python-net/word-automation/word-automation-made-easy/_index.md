@@ -125,7 +125,7 @@ Word Automation com Aspose.Words for Python abre um mundo de possibilidades na g
 ## Perguntas frequentes
 
 ### O Aspose.Words é compatível com outras plataformas como Java ou .NET?
-Sim, o Aspose.Words está disponível para múltiplas plataformas, incluindo Java e .NET, permitindo que os desenvolvedores o utilizem em sua linguagem de programação preferida.
+Sim, Aspose.Words está disponível para múltiplas plataformas, incluindo Java e .NET, permitindo que os desenvolvedores o utilizem em sua linguagem de programação preferida.
 
 ### Posso converter documentos do Word em PDF usando Aspose.Words?
 Absolutamente! Aspose.Words suporta vários formatos, incluindo conversão de DOCX para PDF.

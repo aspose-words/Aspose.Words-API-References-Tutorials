@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## ステップ3: 高度なフィールドを挿入する
+## ステップ3: 高度なフィールドの挿入
 
 私たちは`AppendField()`段落に高度なフィールドを挿入する方法。
 

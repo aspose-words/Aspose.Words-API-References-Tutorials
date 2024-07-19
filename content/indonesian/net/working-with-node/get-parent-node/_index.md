@@ -62,7 +62,7 @@ J: Node induk di Node.js mengacu pada node berikutnya yang lebih tinggi dalam hi
 
 #### Q: Bagaimana cara mendapatkan node induk dari node tertentu?
 
-A: Untuk mendapatkan node induk dari node tertentu, Anda dapat menggunakan`parentNode` milik simpul. Properti ini mengembalikan node induk dari node saat ini.
+ A: Untuk mendapatkan node induk dari node tertentu, Anda dapat menggunakan`parentNode` milik simpul. Properti ini mengembalikan node induk dari node saat ini.
 
 #### T: Bagaimana cara memeriksa apakah suatu node memiliki node induk?
 
@@ -70,7 +70,7 @@ A: Untuk mendapatkan node induk dari node tertentu, Anda dapat menggunakan`paren
 
 #### Q: Bisakah kita mengubah node induk dari sebuah node?
 
- J: Dalam kebanyakan kasus, node induk dari sebuah node ditentukan oleh struktur dokumen XML dan tidak dapat diubah secara langsung. Namun, Anda dapat memindahkan sebuah node ke node lain menggunakan metode tertentu, seperti`appendChild` atau`insertBefore`.
+J: Dalam kebanyakan kasus, simpul induk dari suatu simpul ditentukan oleh struktur dokumen XML dan tidak dapat diubah secara langsung. Namun, Anda dapat memindahkan sebuah node ke node lain menggunakan metode tertentu, seperti`appendChild` atau`insertBefore`.
 
 #### T: Bagaimana cara menelusuri hierarki node induk?
 

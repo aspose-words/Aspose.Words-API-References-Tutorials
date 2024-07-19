@@ -2,7 +2,7 @@
 title: Documentrevisies volgen en beheren
 linktitle: Documentrevisies volgen en beheren
 second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer in deze uitgebreide handleiding hoe u documentrevisies kunt bijhouden en beheren met Aspose.Words voor Java. Ontvang stapsgewijze instructies en broncodevoorbeelden.
+description: Leer in deze uitgebreide handleiding hoe u documentrevisies kunt volgen en beheren met Aspose.Words voor Java. Ontvang stapsgewijze instructies en broncodevoorbeelden.
 type: docs
 weight: 10
 url: /nl/java/document-revision/tracking-managing-document-revisions/
@@ -103,7 +103,7 @@ In dit voorbeeld slaan we een kopie van het document op met de tekst "_v2" achte
 
 ### Kan ik revisies programmatisch accepteren of afwijzen?
 
- Ja, u kunt revisies accepteren of afwijzen met Aspose.Words voor Java. Maak gebruik van de`acceptAllRevisions` En`rejectAllRevisions` methoden om revisies te beheren.
+ Ja, u kunt revisies accepteren of afwijzen met Aspose.Words voor Java. Maak gebruik van de`acceptAllRevisions`En`rejectAllRevisions` methoden om revisies te beheren.
 
 ### Is het mogelijk om meerdere versies van een document te maken?
 

@@ -27,7 +27,7 @@ Document doc = new Document();
 Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 ```
 
-## Langkah 3: Memasukkan kolom ASK
+## Langkah 3: Memasukkan bidang ASK
 
  Kami menggunakan`AppendField()` metode untuk menyisipkan bidang ASK ke dalam paragraf.
 

@@ -16,6 +16,6 @@ Dengan mengikuti tutorial ini, Anda akan mempelajari praktik terbaik untuk menyi
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Enkripsi Dokumen Dengan Kata Sandi](./encrypt-document-with-password/) | Pelajari cara mengenkripsi dokumen dengan kata sandi menggunakan Aspose.Words untuk .NET.  |
-| [Jangan Kompres Metafile Kecil](./do-not-compress-small-metafiles/) | Pelajari cara menggunakan Aspose.Words untuk .NET untuk mengaktifkan fitur Jangan Kompres Metafile Kecil saat menyimpan dokumen. |
-| [Jangan Simpan Gambar Bullet](./do-not-save-picture-bullet/) | Pelajari cara menonaktifkan penyimpanan poin gambar di dokumen Word menggunakan Aspose.Words untuk .NET. |
+| [Enkripsi Dokumen Dengan Kata Sandi](./encrypt-document-with-password/) | Pelajari cara mengenkripsi dokumen dengan kata sandi menggunakan Aspose.Words untuk .NET dalam panduan langkah demi langkah yang mendetail ini. Amankan informasi sensitif Anda dengan mudah. |
+| [Jangan Kompres Metafile Kecil](./do-not-compress-small-metafiles/) | Pelajari cara menggunakan Aspose.Words untuk .NET untuk memastikan metafile kecil di dokumen Word tidak dikompresi, sehingga menjaga kualitas dan integritasnya. Panduan langkah demi langkah disertakan. |
+| [Jangan Simpan Gambar Bullet](./do-not-save-picture-bullet/) | pelajari cara menangani poin gambar di Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sederhanakan manajemen dokumen dan buat dokumen Word profesional dengan mudah. |

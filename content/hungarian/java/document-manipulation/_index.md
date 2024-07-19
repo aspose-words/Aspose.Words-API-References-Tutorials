@@ -63,7 +63,7 @@ Ismerje meg, hogyan kereshet és cserélhet szöveget Word dokumentumokban az As
 ### [Tartalom eltávolítása a dokumentumokból az Aspose.Words for Java programban](./removing-content-from-documents/)
 Ismerje meg, hogyan távolíthat el tartalmat a Word-dokumentumokból Java nyelven az Aspose.Words for Java használatával. Távolítsa el az oldaltöréseket, szakasztöréseket és egyebeket. Optimalizálja dokumentumfeldolgozását.
 ### [Könyvjelzők használata az Aspose.Words for Java programban](./using-bookmarks/)
-Optimalizálja dokumentumfeldolgozását az Aspose.Words for Java segítségével. Ebben a lépésenkénti útmutatóban megtudhatja, hogyan használhatja a könyvjelzőket a hatékony tartalomnavigációhoz és kezeléshez.
+Optimalizálja dokumentumfeldolgozását az Aspose.Words for Java segítségével. Ebben a lépésenkénti útmutatóban tanulja meg a könyvjelzők használatát a hatékony tartalomnavigáció és -kezelés érdekében.
 ### [Dokumentumtartományok használata az Aspose.Words for Java-ban](./using-document-ranges/)
 Az Aspose.Words for Java dokumentumtartomány-manipuláció mestere. Tanulja meg a szöveg törlését, kibontását és formázását ezzel az átfogó útmutatóval.
 ### [Strukturált dokumentumcímkék (SDT) használata az Aspose.Words for Java programban](./using-structured-document-tags/)
@@ -73,10 +73,10 @@ Ismerje meg, hogyan javíthatja a dokumentumok formázását az Aspose.Words for
 ### [Tartalomjegyzék létrehozása az Aspose.Words for Java programban](./generating-table-of-contents/)
 Ismerje meg, hogyan hozhat létre és szabhat testre tartalomjegyzéket (TOC) az Aspose.Words for Java használatával. Rendezett és professzionális dokumentumokat készíthet könnyedén.
 ### [Dokumentumok védelme az Aspose.Words for Java programban](./protecting-documents/)
-Ismerje meg, hogyan védheti meg Java Word dokumentumait az Aspose.Words for Java segítségével. Védje adatait jelszóval és még sok mással.
+Ismerje meg, hogyan védheti meg Java Word dokumentumait az Aspose.Words for Java segítségével. Védje meg adatait jelszóval és még sok mással.
 ### [Dokumentumok felosztása oldalakra az Aspose.Words for Java programban](./splitting-documents-into-pages/)
 Ismerje meg, hogyan oszthat fel dokumentumokat oldalakra az Aspose.Words for Java használatával. Lépésről lépésre útmutató forráskóddal a hatékony dokumentumfeldolgozás érdekében.
-### [Dokumentumok felosztása az Aspose.Words for Java programban](./splitting-documents/)
+### [Dokumentumok felosztása az Aspose.Words for Java-ban](./splitting-documents/)
 Ismerje meg, hogyan oszthat fel hatékonyan dokumentumokat az Aspose.Words for Java programban. Fedezze fel a címsorok, szakaszok és oldaltartományok technikáit.
 ### [Dokumentumok felosztása HTML oldalakra az Aspose.Words for Java programban](./splitting-documents-into-html-pages/)
 Ismerje meg, hogyan oszthat fel dokumentumokat HTML-oldalakra az Aspose.Words for Java segítségével. Kövesse lépésenkénti útmutatónkat a zökkenőmentes dokumentumátalakításhoz.

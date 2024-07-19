@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-In diesem Schritt wenden wir das Standardformat der Listennummern an, indem wir`ApplyNumberDefault()` Methode des Listenformatierers. Als nächstes fügen wir drei Elemente zu unserer Liste hinzu, indem wir die`Writeln()` Und`Write()` Methoden. Wir verwenden die`ListIndent()` Methode, um die Einrückung auf jeder Ebene zu erhöhen.
+In diesem Schritt wenden wir das Standardformat der Listennummern an, indem wir`ApplyNumberDefault()` Methode des Listenformatierers. Als nächstes fügen wir unserer Liste drei Elemente hinzu, indem wir die`Writeln()`Und`Write()` Methoden. Wir verwenden die`ListIndent()` Methode, um die Einrückung auf jeder Ebene zu erhöhen.
 
 ## Schritt 4: Aufzeichnungsoptionen konfigurieren
 
@@ -100,9 +100,9 @@ Richten Sie Ihre Entwicklungsumgebung ein, indem Sie die erforderlichen Referenz
 
  Erstelle eine neue`Document` Objekt und ein zugehöriges`DocumentBuilder` Objekt.
 
- Verwenden Sie die`DocumentBuilder` zum Erstellen einer Liste mit mehreren Einrückungsebenen mit den Methoden`ApplyNumberDefault()` um das Standardlistennummernformat anzuwenden,`Writeln()` Und`Write()` um Elemente zur Liste hinzuzufügen, und`ListIndent()`um die Einrückung auf jeder Ebene zu erhöhen.
+ Verwenden Sie die`DocumentBuilder` zum Erstellen einer Liste mit mehreren Einrückungsebenen mit den Methoden`ApplyNumberDefault()` um das Standardlistennummernformat anzuwenden,`Writeln()`Und`Write()` um Elemente zur Liste hinzuzufügen, und`ListIndent()`um die Einrückung auf jeder Ebene zu erhöhen.
 
- Konfigurieren Sie die Speicheroptionen durch die Erstellung eines`TxtSaveOptions` Objekt und Festlegen der Eigenschaften`ListIndentation.Count` zur Anzahl der Tabulatorzeichen pro Ebene und`ListIndentation.Character` Zu`'\t'` um die Tabulatorzeichen zu verwenden.
+ Konfigurieren Sie die Speicheroptionen durch die Erstellung eines`TxtSaveOptions` Objekt und Festlegen der Eigenschaften`ListIndentation.Count` auf die Anzahl der Tabulatorzeichen pro Ebene und`ListIndentation.Character` Zu`'\t'` um die Tabulatorzeichen zu verwenden.
 
  Speichern Sie das Dokument mit dem`Save()` Methode des Dokuments, die den vollständigen Pfad der Ausgabedatei und die Speicheroptionen angibt.
 

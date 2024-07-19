@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- Bu adımda şuraya erişiyoruz:`Theme` nesnesi`Document`belge temasını almak için nesne. Daha sonra ikincil yazı tipleri gibi tema özelliklerini değiştirebiliriz (`MinorFonts.Latin`) ve renkler (`Colors.Hyperlink`).
+Bu adımda şuraya erişiyoruz:`Theme` nesnesi`Document` belge temasını almak için nesne. Daha sonra ikincil yazı tipleri gibi tema özelliklerini değiştirebiliriz (`MinorFonts.Latin`) ve renkler (`Colors.Hyperlink`).
 
 ## 4. Adım: Belgeyi kaydedin
 
@@ -75,7 +75,7 @@ Bir Word belgesinde tema özelliklerini ayarlamak, belgenizin görünümünü ve
 
 #### Bir belgenin farklı bölümlerine farklı temalar uygulayabilir miyim?
 
- Evet, bir belgenin farklı bölümlerine, bu bölümlerdeki tema özelliklerini değiştirerek farklı temalar uygulayabilirsiniz. Erişerek`Theme` Belirli bir bölüme özel yazı tiplerini ve renkleri değiştirerek aynı belge içinde farklı görsel stiller oluşturmanıza olanak tanıyabilirsiniz.
+ Evet, bir belgenin farklı bölümlerine, bu bölümlerdeki tema özelliklerini değiştirerek farklı temalar uygulayabilirsiniz. Erişerek`Theme` Nesnenin belirli bir bölümüne özgü yazı tiplerini ve renkleri değiştirerek aynı belge içinde farklı görsel stiller oluşturmanıza olanak tanıyabilirsiniz.
 
 #### Değiştirilen belgeyi farklı formatlarda kaydedebilir miyim?
 

@@ -17,7 +17,7 @@ Per seguire questo tutorial, è necessario disporre di quanto segue:
 - Conoscenza base di C# ed elaborazione testi con documenti Word.
 
 ## Passaggio 1: crea un nuovo documento e DocumentBuilder
- Crea una nuova istanza di`Document` classe e a`DocumentBuilder`oggetto di lavorare con il documento.
+ Crea una nuova istanza di`Document` classe e a`DocumentBuilder` oggetto di lavorare con il documento.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Passaggio 2: inserisci una forma immagine
- Usa il`InsertImage` metodo del`DocumentBuilder` oggetto per inserire una forma di immagine nel documento. Fornire il percorso del file immagine come parametro.
+ Usa il`InsertImage` metodo del`DocumentBuilder`oggetto per inserire una forma di immagine nel documento. Fornire il percorso del file immagine come parametro.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

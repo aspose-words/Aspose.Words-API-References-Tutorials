@@ -15,7 +15,7 @@ In deze zelfstudie laten we u zien hoe u een specifiek paginabereik uit een PDF-
 Gebruik de volgende code om een specifiek paginabereik uit een PDF-document te laden:
 
 ```csharp
-// Pad naar de documentenmap.
+//Pad naar de documentenmap.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- In dit voorbeeld laden we de eerste pagina van het PDF-document. U kunt de waarden van wijzigen`PageIndex` En`PageCount` naar het gewenste paginabereik.
+ In dit voorbeeld laden we de eerste pagina van het PDF-document. U kunt de waarden van wijzigen`PageIndex`En`PageCount` naar het gewenste paginabereik.
 
 ## Stap 2: Het document opslaan
 

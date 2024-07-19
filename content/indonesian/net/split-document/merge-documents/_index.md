@@ -2,7 +2,7 @@
 title: Gabungkan Dokumen Word
 linktitle: Gabungkan Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggabungkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk mengotomatisasi alur kerja dokumen Anda.
+description: Pelajari cara menggabungkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk mengotomatiskan alur kerja dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/split-document/merge-documents/
@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- Pada langkah ini, kami menggabungkan`Document1.docx` Dan`Document2.docx` ke dalam file baru bernama`MergedDocument.docx`.
+ Pada langkah ini, kami menggabungkan`Document1.docx`Dan`Document2.docx` ke dalam file baru bernama`MergedDocument.docx`.
 
 ## Langkah 3: Menggabungkan dengan Opsi Simpan
 
@@ -74,7 +74,7 @@ Jika Anda perlu menggabungkan dokumen dan menyimpan hasilnya sebagai PDF, Aspose
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Di sini, kami bergabung`Document1.docx` Dan`Document2.docx` dan simpan hasilnya sebagai file PDF.
+ Di sini, kami bergabung`Document1.docx`Dan`Document2.docx` dan simpan hasilnya sebagai file PDF.
 
 ## Langkah 5: Membuat Instans Dokumen dari Dokumen yang Digabung
 
@@ -103,7 +103,7 @@ Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang
 
 ### 3. Bagaimana cara menangani pemformatan yang berbeda selama penggabungan?
 
- Aspose.Words menyediakan berbagai mode format penggabungan seperti`KeepSourceFormatting` Dan`MergeFormatting` . Mengacu kepada[dokumentasi API](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
+ Aspose.Words menyediakan berbagai mode format penggabungan seperti`KeepSourceFormatting`Dan`MergeFormatting` . Mengacu kepada[dokumentasi API](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
 
 ### 4. Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
 

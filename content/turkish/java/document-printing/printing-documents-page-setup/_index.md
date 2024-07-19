@@ -75,7 +75,7 @@ Bu makalede Aspose.Words for Java kullanarak özel sayfa düzeniyle belgelerin n
 
 ### Belgemin kağıt boyutunu nasıl değiştirebilirim?
 
- Belgenizin kağıt boyutunu değiştirmek için`setPageWidth` Ve`setPageHeight` yöntemleri`PageSetup` sınıfını seçin ve istediğiniz boyutları noktalar halinde belirtin.
+ Belgenizin kağıt boyutunu değiştirmek için`setPageWidth`Ve`setPageHeight` yöntemleri`PageSetup` sınıfını seçin ve istediğiniz boyutları noktalar halinde belirtin.
 
 ### Bir belgenin birden fazla kopyasını yazdırabilir miyim?
 

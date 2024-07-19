@@ -2,196 +2,135 @@
 title: Maak een bladwijzer in een Word-document
 linktitle: Maak een bladwijzer in een Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u bladwijzers in een Word-document kunt maken en voorbeeldniveaus van bladwijzers in een PDF kunt opgeven met behulp van Aspose.Words voor .NET.
+description: Leer hoe u bladwijzers in Word-documenten kunt maken met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. Perfect voor documentnavigatie en organisatie.
 type: docs
 weight: 10
 url: /nl/net/programming-with-bookmarks/create-bookmark/
 ---
+## Invoering
 
-In dit artikel zullen we de bovenstaande C#-broncode verkennen om te begrijpen hoe u de functie Bladwijzer maken in de Aspose.Words voor .NET-bibliotheek kunt gebruiken. Met deze functie kunt u bladwijzers in een document maken en voorbeeldniveaus voor bladwijzers opgeven in een uitgevoerd PDF-bestand.
+Het maken van bladwijzers in een Word-document kan een grote verandering teweegbrengen, vooral als u moeiteloos door grote documenten wilt navigeren. Vandaag doorlopen we het proces van het maken van bladwijzers met Aspose.Words voor .NET. Deze tutorial neemt je stap voor stap mee, zodat je elk onderdeel van het proces begrijpt. Dus laten we er meteen in duiken!
 
 ## Vereisten
 
-- Basiskennis van de C#-taal.
-- .NET-ontwikkelomgeving met Aspose.Words-bibliotheek geïnstalleerd.
+Voordat we beginnen, moet u over het volgende beschikken:
 
-## Stap 1: Het document en de generator maken
+1.  Aspose.Words voor .NET-bibliotheek: downloaden en installeren vanaf[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Visual Studio of een andere .NET-ontwikkelomgeving.
+3. Basiskennis van C#: inzicht in de basisconcepten van C#-programmeren.
 
- Voordat we bladwijzers maken, moeten we een document en een documentbouwer maken met behulp van de`Document` En`DocumentBuilder` voorwerpen:
+## Naamruimten importeren
+
+Om met Aspose.Words voor .NET te werken, moet u de benodigde naamruimten importeren:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Stap 1: Stel het Document en DocumentBuilder in
+
+Initialiseer het document
+
+Eerst moeten we een nieuw document maken en het`DocumentBuilder`. Dit is het startpunt voor het toevoegen van inhoud en bladwijzers aan uw document.
+
+```csharp
+// Het pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 2: De hoofdbladwijzer maken
+ Uitleg: De`Document` object is je canvas. De`DocumentBuilder` is als uw pen, waarmee u inhoud kunt schrijven en bladwijzers in het document kunt maken.
 
- Wij gebruiken de`StartBookmark` methode om een hoofdbladwijzer te starten en de`EndBookmark` methode om er een einde aan te maken. Tussendoor kunnen we tekst en andere bladwijzers toevoegen:
+## Stap 2: Maak de hoofdbladwijzer
+
+Start en beëindig de hoofdbladwijzer
+
+Als u een bladwijzer wilt maken, moet u het begin- en eindpunt opgeven. Hier maken we een bladwijzer met de naam "Mijn bladwijzer".
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-// Voeg hier meer bladwijzers of tekst toe.
-
-builder. EndBookmark("My Bookmark");
 ```
 
-## Stap 3: Geneste bladwijzers maken
+ Uitleg: De`StartBookmark` methode markeert het begin van de bladwijzer, en`Writeln` voegt tekst toe aan de bladwijzer.
 
- We kunnen ook geneste bladwijzers maken binnen een hoofdbladwijzer. Wij gebruiken hetzelfde`StartBookmark` En`EndBookmark` methoden om geneste bladwijzers te maken en te beëindigen:
+## Stap 3: Maak een geneste bladwijzer
+
+Voeg geneste bladwijzer toe in de hoofdbladwijzer
+
+U kunt bladwijzers in andere bladwijzers nesten. Hier voegen we "Geneste bladwijzer" toe aan "Mijn bladwijzer".
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## Stap 4: Voorvertoningsniveaus van bladwijzers opgeven in het uitgevoerde PDF-bestand
+ Uitleg: Het nesten van bladwijzers maakt een meer gestructureerde en hiërarchische organisatie van de inhoud mogelijk. De`EndBookmark` methode sluit de huidige bladwijzer.
 
- Wij gebruiken de`PdfSaveOptions` object om de voorbeeldniveaus van de bladwijzers in het uitgevoerde PDF-bestand op te geven. Wij gebruiken de`BookmarksOutlineLevels` eigendom
+## Stap 4: Voeg tekst toe buiten de geneste bladwijzer
 
-  om hoofdbladwijzers en geneste bladwijzers met hun respectievelijke niveaus toe te voegen:
+Ga door met het toevoegen van inhoud
+
+Na de geneste bladwijzer kunnen we doorgaan met het toevoegen van meer inhoud binnen de hoofdbladwijzer.
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+Uitleg: Dit zorgt ervoor dat de hoofdbladwijzer zowel de geneste bladwijzer als aanvullende tekst omvat.
+
+## Stap 5: Configureer de PDF-opslagopties
+
+PDF-opslagopties voor bladwijzers instellen
+
+Wanneer we het document als PDF opslaan, kunnen we opties configureren om bladwijzers op te nemen.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+ Uitleg: De`PdfSaveOptions` Met class kunt u opgeven hoe het document als PDF moet worden opgeslagen. De`BookmarksOutlineLevels` eigenschap definieert de hiërarchie van de bladwijzers in de PDF.
+
+## Stap 6: Sla het document op
+
+Sla het document op als PDF
+
+Sla ten slotte het document op met de opgegeven opties.
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### Voorbeeldbroncode voor het maken van een bladwijzer met Aspose.Words voor .NET
-
-Hier is de volledige voorbeeldbroncode om te demonstreren hoe u bladwijzers maakt met Aspose.Words voor .NET:
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+ Uitleg: De`Save` methode slaat het document op in het opgegeven formaat en de opgegeven locatie. De PDF bevat nu de bladwijzers die we hebben gemaakt.
 
 ## Conclusie
 
-In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de functie Bladwijzer maken van Aspose.Words voor .NET kunt gebruiken. We hebben een stapsgewijze handleiding gevolgd voor het maken van bladwijzers in een document en het opgeven van bladwijzervoorbeeldniveaus in een uitgevoerd PDF-bestand.
+Het maken van bladwijzers in een Word-document met Aspose.Words voor .NET is eenvoudig en enorm handig voor documentnavigatie en -organisatie. Of u nu rapporten genereert, eBooks maakt of grote documenten beheert, bladwijzers maken het leven gemakkelijker. Volg de stappen die in deze zelfstudie worden beschreven en u heeft binnen een mum van tijd een PDF met bladwijzer klaar.
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat zijn de vereisten voor het gebruik van de functie "Bladwijzers maken" in Aspose.Words voor .NET?
+### Kan ik meerdere bladwijzers op verschillende niveaus aanmaken?
 
-A: Om de functie "Bladwijzers maken" in Aspose.Words voor .NET te gebruiken, moet u basiskennis van de taal C# hebben. U hebt ook een .NET-ontwikkelomgeving nodig waarin de Aspose.Words-bibliotheek is geïnstalleerd.
+Absoluut! U kunt zoveel bladwijzers maken als nodig is en hun hiërarchische niveaus definiëren wanneer u het document als PDF opslaat.
 
-#### Vraag: Hoe maak ik een document in Aspose.Words voor .NET?
+### Hoe werk ik de tekst van een bladwijzer bij?
 
- A: Om een document in Aspose.Words voor .NET te maken, kunt u de`Document` klas. Hier is een voorbeeldcode:
+ U kunt naar de bladwijzer navigeren met behulp van`DocumentBuilder.MoveToBookmark` en vervolgens de tekst bijwerken.
 
-```csharp
-Document doc = new Document();
-```
+### Is het mogelijk om een bladwijzer te verwijderen?
 
-#### Vraag: Hoe maak ik een hoofdbladwijzer in een document met Aspose.Words voor .NET?
+ Ja, u kunt een bladwijzer verwijderen met behulp van de`Bookmarks.Remove` methode door de naam van de bladwijzer op te geven.
 
- A: Om een hoofdbladwijzer in een document te maken met Aspose.Words voor .NET, kunt u de`StartBookmark` methode om de bladwijzer te starten, tekst of andere bladwijzers toe te voegen en vervolgens de` EndBookmark` om er een einde aan te maken. Hier is een voorbeeldcode:
+### Kan ik bladwijzers in andere formaten dan PDF maken?
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+Ja, Aspose.Words ondersteunt bladwijzers in verschillende formaten, waaronder DOCX, HTML en EPUB.
 
-#### Vraag: Hoe maak ik een geneste bladwijzer in een hoofdbladwijzer met Aspose.Words voor .NET?
+### Hoe kan ik ervoor zorgen dat de bladwijzers correct in de PDF worden weergegeven?
 
- A: Om een geneste bladwijzer binnen een hoofdbladwijzer te maken met behulp van Aspose.Words voor .NET, kunt u dezelfde`StartBookmark` En`EndBookmark` methoden om de geneste bladwijzer te starten en te beëindigen. Hier is een voorbeeldcode:
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### Vraag: Hoe kan ik de voorbeeldniveaus van bladwijzers opgeven in een uitvoer-PDF met Aspose.Words voor .NET?
-
- A: Om de voorbeeldniveaus van bladwijzers in een uitvoer-PDF op te geven met behulp van Aspose.Words voor .NET, kunt u de`PdfSaveOptions` klasse en de`BookmarksOutlineLevels` eigendom. U kunt hoofdbladwijzers en geneste bladwijzers met hun respectievelijke niveaus toevoegen. Hier is een voorbeeldcode:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### Vraag: Hoe kan ik een document opslaan nadat ik bladwijzers heb gemaakt met Aspose.Words voor .NET?
-
- A: Om een document op te slaan nadat u bladwijzers hebt gemaakt met Aspose.Words voor .NET, kunt u de`Save` werkwijze van de`Document` object dat het doelbestandspad specificeert. Hier is een voorbeeldcode:
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### Vraag: Hoe kan ik de voorbeeldniveaus van bladwijzers opgeven in een uitvoer-PDF met Aspose.Words voor .NET?
-
- A: Om de voorbeeldniveaus van bladwijzers in een uitvoer-PDF op te geven met behulp van Aspose.Words voor .NET, kunt u de`PdfSaveOptions` klasse en de`BookmarksOutlineLevels` eigendom. U kunt hoofdbladwijzers en geneste bladwijzers met hun respectievelijke niveaus toevoegen. Hier is een voorbeeldcode:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### Vraag: Hoe kan ik geneste bladwijzers maken in een hoofdbladwijzer met Aspose.Words voor .NET?
-
- A: Om geneste bladwijzers binnen een hoofdbladwijzer te maken met Aspose.Words voor .NET, kunt u dezelfde`StartBookmark` En`EndBookmark` methoden om geneste bladwijzers te starten en te beëindigen. Zorg ervoor dat u de bovenliggende bladwijzer opgeeft als parameter bij het aanroepen van de`StartBookmark` methode. Hier is een voorbeeldcode:
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### Vraag: Hoe kan ik tekst toevoegen aan een bladwijzer met Aspose.Words voor .NET?
-
- A: Om tekst toe te voegen aan een bladwijzer met Aspose.Words voor .NET, kunt u de`Write` werkwijze van de`DocumentBuilder`object dat de toe te voegen tekst specificeert. Hier is een voorbeeldcode:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### Vraag: Hoe maak ik een hoofdbladwijzer in een document met Aspose.Words voor .NET?
-
- A: Om een hoofdbladwijzer in een document te maken met Aspose.Words voor .NET, kunt u de`StartBookmark` methode om de bladwijzer te starten en de`EndBookmark` methode om er een einde aan te maken. Hier is een voorbeeldcode:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+ Zorg ervoor dat u de definieert`BookmarksOutlineLevels` behoorlijk in de`PdfSaveOptions`. Dit zorgt ervoor dat de bladwijzers worden opgenomen in de omtrek van de PDF.

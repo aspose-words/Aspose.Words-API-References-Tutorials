@@ -46,7 +46,7 @@ builder.ParagraphFormat.Style = indentedCode;
 builder.Writeln("This is an indented code");
 ```
 
-おめでとうございます。これで、Aspose.Words for .NET でインデントされたコード機能を使用する方法を学習しました。
+おめでとうございます！これで、Aspose.Words for .NET でインデントされたコード機能を使用する方法を学習しました。
 
 
 ### よくある質問
@@ -61,7 +61,7 @@ A: Markdown でインデントされたコードを使用するには、コー�
 
 #### Q: Markdown でインデントされたコードの利点は何ですか?
 
-A: Markdown でインデントされたコードにより、コードの読みやすさが向上し、読者が理解しやすくなります。
+A: Markdown でインデントされたコードを使用すると、コードの読みやすさが向上し、読者が理解しやすくなります。
 
 #### Q: Markdown のインデントされたコードとコード ブロックの違いは何ですか?
 

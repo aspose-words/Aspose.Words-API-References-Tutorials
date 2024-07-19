@@ -12,7 +12,7 @@ Saat mengonversi dokumen Word ke HTML tetap dalam aplikasi C#, Anda mungkin ingi
 
 ## Memahami perpustakaan Aspose.Words
 
-Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan yang kuat untuk membuat, mengedit, mengonversi, dan melindungi dokumen Word di berbagai platform termasuk .NET. Ia menawarkan banyak fitur untuk memanipulasi dokumen, seperti menyisipkan teks, mengubah format, menambahkan bagian, dan banyak lagi.
+Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan yang kuat untuk membuat, mengedit, mengonversi, dan melindungi dokumen Word di berbagai platform termasuk .NET. Ia menawarkan banyak fitur untuk memanipulasi dokumen, seperti menyisipkan teks, mengubah format, menambahkan bagian, dan banyak lagi.
 
 ## Memuat dokumen Word
 
@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Muat dokumen Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Konfigurasikan opsi pencadangan dengan fitur "Gunakan font dari mesin target".
+// Konfigurasikan opsi pencadangan dengan fitur "Gunakan font dari mesin target".
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Ubah dokumen menjadi HTML tetap

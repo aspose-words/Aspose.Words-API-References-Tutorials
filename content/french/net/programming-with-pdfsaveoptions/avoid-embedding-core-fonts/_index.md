@@ -68,7 +68,7 @@ Dans ce didacticiel, nous avons expliqué comment réduire la taille d'un fichie
 ### Questions fréquemment posées
 
 #### Q : Quelle est l'option permettant de ne pas intégrer les polices de base dans un fichier PDF et pourquoi est-ce important ?
-: L'option permettant de ne pas intégrer les polices de base dans un fichier PDF contrôle si les polices de base telles que Arial, Times New Roman, etc. doivent être intégrées dans le PDF lors de la conversion d'un document Word. Cela peut être important pour réduire la taille du fichier PDF en évitant d'inclure les polices couramment disponibles sur les systèmes de lecture PDF. Cela peut également contribuer à garantir une meilleure compatibilité et une apparence cohérente du document PDF sur différents appareils et plates-formes.
+R : L'option permettant de ne pas intégrer les polices de base dans un fichier PDF contrôle si les polices de base telles que Arial, Times New Roman, etc. doivent être intégrées dans le PDF lors de la conversion d'un document Word. Cela peut être important pour réduire la taille du fichier PDF en évitant d'inclure les polices couramment disponibles sur les systèmes de lecture PDF. Cela peut également contribuer à garantir une meilleure compatibilité et une apparence cohérente du document PDF sur différents appareils et plates-formes.
 
 #### Q : Comment puis-je configurer Aspose.Words pour .NET pour ne pas intégrer les polices de base dans un fichier PDF ?
 R : Pour configurer Aspose.Words for .NET afin qu'il n'intègre pas les polices principales dans un fichier PDF, procédez comme suit :

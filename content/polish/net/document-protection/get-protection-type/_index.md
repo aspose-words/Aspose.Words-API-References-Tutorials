@@ -2,74 +2,86 @@
 title: Uzyskaj typ ochrony w dokumencie programu Word
 linktitle: Uzyskaj typ ochrony w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak używać funkcji Uzyskaj typ ochrony w dokumencie tekstowym Aspose.Words dla .NET w celu określenia typu ochrony dokumentu.
+description: Dowiedz się, jak sprawdzić typ ochrony dokumentów programu Word za pomocą Aspose.Words dla .NET. Zawiera przewodnik krok po kroku, przykłady kodu i często zadawane pytania.
 type: docs
 weight: 10
 url: /pl/net/document-protection/get-protection-type/
 ---
-Witamy w tym przewodniku krok po kroku, który wyjaśnia kod źródłowy C# dla funkcji Get Protection Type w Aspose.Words dla .NET. W tym artykule pokażemy, jak korzystać z tej zaawansowanej funkcji w celu określenia typu ochrony dokumentu. Ochrona dokumentów jest niezbędna, aby zapewnić poufność i integralność plików. Przeprowadzimy Cię przez kroki potrzebne do integracji Aspose.Words dla .NET i korzystania z funkcji Uzyskaj typ ochrony.
+## Wstęp
 
-## Krok 1: Ładowanie dokumentu
+No hej! Czy zastanawiałeś się kiedyś, jak programowo sprawdzić typ ochrony dokumentów programu Word? Niezależnie od tego, czy zabezpieczasz wrażliwe dane, czy po prostu ciekawi Cię status dokumentu, wiedza, jak uzyskać typ ochrony, może być bardzo przydatna. Dzisiaj przejdziemy przez ten proces, korzystając z Aspose.Words dla .NET, potężnej biblioteki, która sprawia, że praca z dokumentami programu Word jest dziecinnie prosta. Zapnij pasy i zanurzmy się!
 
-Pierwszym krokiem do korzystania z funkcji Uzyskaj typ ochrony jest przesłanie dokumentu, nad którym chcesz pracować. Można to zrobić za pomocą klasy Document udostępnionej przez Aspose.Words dla .NET. Oto przykładowy kod umożliwiający załadowanie dokumentu z pliku:
+## Warunki wstępne
+
+Zanim przejdziemy do części dotyczącej kodowania, upewnijmy się, że masz wszystko, czego potrzebujesz:
+
+1.  Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę[Aspose.Words dla biblioteki .NET](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: IDE takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci podążać dalej.
+
+## Importuj przestrzenie nazw
+
+Zanim zaczniesz kodować, musisz zaimportować niezbędne przestrzenie nazw. Dzięki temu masz dostęp do wszystkich klas i metod udostępnianych przez Aspose.Words.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
+using System;
+using Aspose.Words;
 ```
 
-Pamiętaj, aby podać poprawną ścieżkę do pliku dokumentu.
+## Przewodnik krok po kroku
 
-## Krok 2: Pobieranie typu ochrony
+Podzielmy proces na proste, łatwe do wykonania kroki. Każdy krok poprowadzi Cię przez określoną część zadania, upewniając się, że wszystko rozumiesz.
 
-Po przesłaniu dokumentu można użyć właściwości ProtectionType obiektu Document, aby pobrać typ ochrony zastosowanej do dokumentu. Oto jak możesz to zrobić:
+## Krok 1: Skonfiguruj swój projekt
+
+Najpierw skonfiguruj projekt C# w programie Visual Studio. Oto jak:
+
+1. Utwórz nowy projekt: Otwórz program Visual Studio, przejdź do opcji Plik > Nowy > Projekt i wybierz aplikację konsolową (.NET Core lub .NET Framework).
+2. Zainstaluj Aspose.Words: Kliknij prawym przyciskiem myszy swój projekt w Eksploratorze rozwiązań, wybierz „Zarządzaj pakietami NuGet”, wyszukaj „Aspose.Words” i zainstaluj go.
+
+## Krok 2: Załaduj swój dokument
+
+ Teraz, gdy projekt jest już skonfigurowany, załadujmy dokument programu Word, który chcesz sprawdzić. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentu.
+
+```csharp
+// Ścieżka do katalogu dokumentów
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Document.docx");
+```
+
+## Krok 3: Uzyskaj typ ochrony
+
+To tutaj dzieje się magia! Typ ochrony dokumentu pobierzemy za pomocą Aspose.Words.
 
 ```csharp
 ProtectionType protectionType = doc.ProtectionType;
 ```
 
-### Przykładowy kod źródłowy dla typu Get Protection przy użyciu Aspose.Words dla .NET
+## Krok 4: Wyświetl typ ochrony
 
-Oto kompletny kod źródłowy funkcji Get Protection Type przy użyciu Aspose.Words dla .NET:
+Na koniec wyświetlmy typ ochrony w konsoli. Pomaga to zrozumieć bieżący stan ochrony Twojego dokumentu.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
-ProtectionType protectionType = doc.ProtectionType;
+Console.WriteLine("The protection type of the document is: " + protectionType);
 ```
 
 ## Wniosek
 
-tym artykule wyjaśniliśmy, jak używać funkcji Get Protection Type w Aspose.Words dla .NET w celu określenia typu ochrony dokumentu. Wykonując opisane kroki, będziesz mógł łatwo zintegrować tę funkcjonalność z własnymi projektami C# i efektywnie manipulować chronionymi dokumentami. Aspose.Words dla .NET oferuje dużą elastyczność
+I masz to! Pomyślnie pobrałeś typ ochrony dokumentu Word przy użyciu Aspose.Words dla .NET. Może to być niezwykle przydatne do zapewnienia odpowiedniego zabezpieczenia dokumentów lub po prostu do celów audytu. Pamiętaj, że Aspose.Words oferuje mnóstwo innych funkcji, które mogą pomóc w łatwym manipulowaniu dokumentami programu Word. Spróbuj i szczęśliwego kodowania!
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jaka jest właściwość ProtectionType w Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka, która pozwala programowo tworzyć, edytować, konwertować i manipulować dokumentami programu Word.
 
- O:`ProtectionType` Właściwość w Aspose.Words dla .NET to funkcja, która pozwala określić typ ochrony zastosowanej do dokumentu Word. Dostarcza informacji o poziomie ochrony dokumentu, np. czy dokument jest chroniony przed komentarzami, zmianami, formularzami lub innymi rodzajami ograniczeń.
+### Czy mogę używać Aspose.Words za darmo?
+ Możesz zacząć od A[bezpłatna wersja próbna](https://releases.aspose.com/) , ale aby uzyskać pełną funkcjonalność, musisz kupić licencję. Sprawdź[opcje zakupu](https://purchase.aspose.com/buy).
 
-#### P: Jak mogę odzyskać typ ochrony dokumentu za pomocą Aspose.Words dla .NET?
+### Jakie typy ochrony może wykryć Aspose.Words?
+Aspose.Words może wykryć różne typy ochrony, takie jak NoProtection, ReadOnly,AllowOnlyRevisions,AllowOnlyComments iAllowOnlyFormFields.
 
-Odp.: Aby pobrać typ ochrony dokumentu za pomocą Aspose.Words dla .NET, możesz wykonać następujące kroki:
-1.  Załaduj dokument za pomocą`Document` klasa.
-2.  Uzyskać dostęp do`ProtectionType` własność`Document`obiekt, aby pobrać typ ochrony.
+### Jak mogę uzyskać pomoc, jeśli napotkam problemy?
+ W przypadku jakichkolwiek problemów możesz odwiedzić stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) pomoc.
 
-#### P: Czy mogę określić, czy dokument jest chroniony dla formularzy lub pól formularzy, korzystając z właściwości ProtectionType?
-
- O: Tak, możesz określić, czy dokument jest chroniony dla formularzy lub pól formularzy, korzystając z opcji`ProtectionType` właściwość w Aspose.Words dla .NET. Jeśli typ ochrony jest ustawiony na`AllowOnlyFormFields`, oznacza to, że dokument jest chroniony i można edytować tylko pola formularza.
-
-#### P: Jakie inne typy ochrony może zwrócić właściwość ProtectionType?
-
- O:`ProtectionType` Właściwość w Aspose.Words dla .NET może zwracać różne typy ochrony, w tym:
-- `NoProtection`: Dokument nie jest chroniony.
-- `AllowOnlyRevisions`: Dokument jest chroniony i można wprowadzać jedynie poprawki.
-- `AllowOnlyComments`: Dokument jest chroniony i można dodawać wyłącznie komentarze.
-- `AllowOnlyFormFields`: Dokument jest chroniony i można edytować tylko pola formularza.
-- `ReadOnly`: Dokument jest chroniony i ustawiony jako tylko do odczytu.
-
-#### P: Czy mogę zmodyfikować typ ochrony dokumentu za pomocą właściwości ProtectionType?
-
- O: Nie,`ProtectionType`Właściwość w Aspose.Words dla .NET jest właściwością tylko do odczytu. Umożliwia przywrócenie bieżącego typu ochrony dokumentu, ale nie zapewnia bezpośrednich możliwości modyfikacji typu ochrony. Aby zmodyfikować typ ochrony, należy skorzystać z innych metod i właściwości dostępnych w pliku`Document` klasa, np`Protect` Lub`Unprotect`.
-
-#### P: Czy można chronić dokument wieloma typami ochrony jednocześnie?
-
-Odp.: Nie, Aspose.Words dla .NET pozwala na zastosowanie tylko jednego typu ochrony do dokumentu na raz. Można jednak łączyć różne typy ochrony, włączając ochronę, ustawiając jeden typ, wyłączając ochronę, a następnie włączając go ponownie z innym typem.
-
+### Czy Aspose.Words jest kompatybilny z .NET Core?
+Tak, Aspose.Words jest kompatybilny zarówno z .NET Framework, jak i .NET Core.

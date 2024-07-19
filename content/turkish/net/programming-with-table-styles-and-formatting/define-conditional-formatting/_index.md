@@ -41,7 +41,7 @@ builder. EndTable();
 ```
 
 ## 4. Adım: Tablo stili oluşturun ve koşullu biçimlendirmeyi ayarlayın
- Artık aşağıdaki komutu kullanarak bir tablo stili oluşturabiliriz.`TableStyle` sınıf ve`Add()` belgeden yöntem`s `Stiller` collection. We can then set the conditional formatting for the first row of the table by accessing the `Koşullu Stiller` property of the table style and using the `FirstRow'un özelliği.
+ Artık tablo stilini kullanarak bir tablo stili oluşturabiliriz.`TableStyle` sınıf ve`Add()` belgeden yöntem`s `Stiller` collection. We can then set the conditional formatting for the first row of the table by accessing the `Koşullu Stiller` property of the table style and using the `FirstRow'un özelliği.
 
 ```csharp
 TableStyle tableStyle = (TableStyle)doc.Styles.Add(StyleType.Table, "MyTableStyle1");

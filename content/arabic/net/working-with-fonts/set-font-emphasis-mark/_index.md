@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## الخطوة 2: إنشاء وتخصيص المستند
- إنشاء مثيل لـ`Document` الطبقة وما يرتبط بها`DocumentBuilder` لبناء محتوى الوثيقة. استخدم ال`Font.EmphasisMark` خاصية لتعيين نمط التركيز على الخط`EmphasisMark.UnderSolidCircle` . ثم استخدم`Write` و`Writeln` أساليب`DocumentBuilder` لإضافة نص مع التركيز على الخط المحدد.
+ إنشاء مثيل لـ`Document` الطبقة وما يرتبط بها`DocumentBuilder` لبناء محتوى الوثيقة. استخدم ال`Font.EmphasisMark` خاصية لتعيين نمط التركيز على الخط`EmphasisMark.UnderSolidCircle` . ثم استخدم`Write`و`Writeln` أساليب`DocumentBuilder` لإضافة نص مع التركيز على الخط المحدد.
 
 ```csharp
 Document document = new Document();

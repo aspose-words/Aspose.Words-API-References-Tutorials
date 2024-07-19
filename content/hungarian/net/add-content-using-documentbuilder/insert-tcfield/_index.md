@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## 2. lépés: Hozzon létre egy új dokumentumot
 
- Rendben, kezdjük egy új Word-dokumentum létrehozásával. Használjuk a`Document` és`DocumentBuilder` osztályok Aspose.Words, hogy a dolgok gördül.
+ Rendben, kezdjük egy új Word-dokumentum létrehozásával. Használjuk a`Document`és`DocumentBuilder` osztályok Aspose.Words, hogy a dolgok gördül.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
@@ -64,7 +64,7 @@ Most jön a szórakoztató rész. Beszúrunk egy TC mezőt a dokumentumunkba. A 
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Ez a kódsor arra utasítja az Aspose.Words-t, hogy szúrjon be egy TC mezőt az "Entry Text" beviteli szöveggel. A`\\f t` rész egy kapcsoló, amely meghatározza, hogy a bejegyzés hogyan jelenjen meg a tartalomjegyzékben.
+ Ez a kódsor arra utasítja az Aspose.Words-t, hogy szúrjon be egy TC mezőt az "Entry Text" beviteli szöveggel. A`\\f t`rész egy kapcsoló, amely meghatározza, hogy a bejegyzés hogyan jelenjen meg a tartalomjegyzékben.
 
 ## 4. lépés: Mentse el a dokumentumot
 
@@ -85,7 +85,7 @@ Bumm! Most hozott létre egy Word-dokumentumot TC mezővel. Milyen fantasztikus?
 
 ### 1. Mi az a TC mező a Wordben?
 
-Word TC (Tartalomjegyzék) mezője a tartalomjegyzékbe felvenni kívánt konkrét bejegyzések megjelölésére szolgál.
+A Word TC (Tartalomjegyzék) mezője a tartalomjegyzékbe felvenni kívánt konkrét bejegyzések megjelölésére szolgál.
 
 ### 2. Szükségem van licencre az Aspose.Words for .NET használatához?
 

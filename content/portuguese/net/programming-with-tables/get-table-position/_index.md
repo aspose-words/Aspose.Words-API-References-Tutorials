@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Aqui usamos uma condição para verificar se o array é do tipo float. Se sim, imprimimos o`RelativeHorizontalAlignment` e`RelativeVerticalAlignment` propriedades para obter o alinhamento horizontal e vertical relativo da tabela. Caso contrário, imprimimos o`Alignment` propriedade para obter o alinhamento da matriz.
+ Aqui usamos uma condição para verificar se o array é do tipo float. Se sim, imprimimos o`RelativeHorizontalAlignment`e`RelativeVerticalAlignment` propriedades para obter o alinhamento horizontal e vertical relativo da tabela. Caso contrário, imprimimos o`Alignment` propriedade para obter o alinhamento da matriz.
 
 ### Exemplo de código-fonte para obter posição da tabela usando Aspose.Words for .NET 
 

@@ -94,7 +94,7 @@ Có, Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu, bao g�
 
 ### Làm cách nào tôi có thể đặt các tùy chọn in bổ sung, chẳng hạn như hướng trang và khổ giấy?
 
- Bạn có thể đặt các tùy chọn in bổ sung, chẳng hạn như hướng trang và khổ giấy, bằng cách định cấu hình`PrintOptions` đối tượng trước khi in tài liệu. Sử dụng các phương pháp như`setOrientation` Và`setPaperSize` để tùy chỉnh cài đặt in.
+ Bạn có thể đặt các tùy chọn in bổ sung, chẳng hạn như hướng trang và khổ giấy, bằng cách định cấu hình`PrintOptions` đối tượng trước khi in tài liệu. Sử dụng các phương pháp như`setOrientation`Và`setPaperSize` để tùy chỉnh cài đặt in.
 
 ### Có phiên bản dùng thử của Aspose.Words cho Java không?
 

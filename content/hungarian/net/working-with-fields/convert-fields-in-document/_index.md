@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 3. lépés: Töltse be a dokumentumot
- Használja a`Document` osztályú Aspose.Words a konvertálni kívánt csatolt mezőket tartalmazó Word dokumentum betöltéséhez.
+ Használja a`Document`osztályú Aspose.Words a konvertálni kívánt csatolt mezőket tartalmazó Word dokumentum betöltéséhez.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

@@ -66,7 +66,7 @@ Ebben az oktatóanyagban elmagyaráztuk, hogyan konvertálhat Word-dokumentumot 
 
 ### Gyakran Ismételt Kérdések
 
-#### K: Mi az a Word-ből PDF 1.7 konvertálás?
+#### K: Mi a Word 1.7 konvertálása PDF-be?
 V: A Word dokumentumok PDF 1.7 formátumba konvertálásával a PDF 1.7 szabványnak megfelelő PDF fájlok jönnek létre. Ez a szabvány a PDF-fájlok jellemzőit és követelményeit határozza meg, lehetővé téve az optimális kompatibilitást és olvashatóságot a különböző platformokon.
 
 #### K: Hogyan konvertálhatok Word-dokumentumot PDF 1.7-re az Aspose.Words for .NET használatával?

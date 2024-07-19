@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Hier verwenden wir den Dokumentgenerator, um eine Tabelle mit zwei Kopfzeilen und mehreren Datenzeilen zu erstellen. Die`RowFormat.HeadingFormat`Parameter werden verwendet, um Kopfzeilen zu markieren, die auf nachfolgenden Seiten wiederholt werden sollen.
+ Hier verwenden wir den Dokumentgenerator, um eine Tabelle mit zwei Kopfzeilen und mehreren Datenzeilen zu erstellen. Die`RowFormat.HeadingFormat` Parameter werden verwendet, um Kopfzeilen zu markieren, die auf nachfolgenden Seiten wiederholt werden sollen.
 
 ## Schritt 4: Speichern des geänderten Dokuments
 Endlich USA

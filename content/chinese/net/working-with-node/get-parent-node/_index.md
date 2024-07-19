@@ -52,13 +52,13 @@ Node section = doc.FirstChild;
 Console.WriteLine("Section parent is the document: " + (doc == section.ParentNode));
 ```
 
-这是使用 Aspose.Words for .NET 获取特定节点父节点的完整代码示例。请确保导入必要的引用并按照前面描述的步骤将此代码集成到您的项目中。
+这是使用 Aspose.Words for .NET 获取特定节点的父节点的完整代码示例。请确保导入必要的引用并按照前面描述的步骤将此代码集成到您的项目中。
 
 ### 常见问题解答
 
 #### 问：Node.js 中的父节点是什么？
 
-A：Node.js 中的父节点指的是 XML 文档层次结构中的下一个更高节点。这是包含指定节点的节点。
+A：Node.js 中的父节点是指 XML 文档层次结构中的下一个更高节点。这是包含指定节点的节点。
 
 #### 问：如何获取特定节点的父节点？
 

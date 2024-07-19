@@ -2,68 +2,127 @@
 title: Bỏ qua đầu trang chân trang
 linktitle: Bỏ qua đầu trang chân trang
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách nối thêm tài liệu trong khi bỏ qua nội dung đầu trang và chân trang bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách hợp nhất các tài liệu Word trong khi bỏ qua đầu trang và chân trang bằng Aspose.Words cho .NET với hướng dẫn từng bước này.
 type: docs
 weight: 10
 url: /vi/net/join-and-append-documents/ignore-header-footer/
 ---
+## Giới thiệu
 
-Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để nối thêm tài liệu trong khi bỏ qua nội dung đầu trang và chân trang. Mã nguồn được cung cấp trình bày cách thiết lập các tùy chọn định dạng nhập để loại trừ đầu trang và chân trang trong quá trình nối thêm.
+Việc hợp nhất các tài liệu Word đôi khi có thể hơi phức tạp, đặc biệt khi bạn muốn giữ nguyên một số phần trong khi bỏ qua những phần khác, như đầu trang và chân trang. May mắn thay, Aspose.Words for .NET cung cấp một cách hay để giải quyết vấn đề này. Trong hướng dẫn này, tôi sẽ hướng dẫn bạn từng bước thực hiện quy trình, đảm bảo bạn hiểu rõ từng phần. Chúng tôi sẽ giữ nó nhẹ nhàng, mang tính trò chuyện và hấp dẫn, giống như trò chuyện với một người bạn. Sẵn sàng? Hãy đi sâu vào!
 
-## Bước 1: Thiết lập dự án
+## Điều kiện tiên quyết
 
-Đảm bảo rằng bạn có các điều kiện tiên quyết sau:
+Trước khi bắt đầu, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
 
--  Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải nó xuống từ[Aspose.Releases]https://releases.aspose.com/words/net/ hoặc sử dụng trình quản lý gói NuGet để cài đặt nó.
-- Đường dẫn thư mục tài liệu nơi chứa tài liệu nguồn và đích.
+-  Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+- Visual Studio: Mọi phiên bản gần đây đều hoạt động.
+- Hiểu biết cơ bản về C#: Đừng lo lắng, tôi sẽ hướng dẫn bạn mã.
+- Hai tài liệu Word: Một tài liệu sẽ được nối vào tài liệu kia.
 
-## Bước 2: Mở tài liệu nguồn và đích
+## Nhập không gian tên
 
- Mở tài liệu nguồn và đích bằng cách sử dụng`Document` hàm tạo lớp. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+Trước tiên, chúng ta cần nhập các không gian tên cần thiết vào dự án C# của mình. Điều này rất quan trọng vì nó cho phép chúng ta sử dụng các lớp và phương thức Aspose.Words mà không cần liên tục tham chiếu đến không gian tên đầy đủ.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Bước 1: Thiết lập dự án của bạn
+
+### Tạo một dự án mới
+
+Hãy bắt đầu bằng cách tạo một dự án Ứng dụng Console mới trong Visual Studio.
+
+1. Mở Visual Studio.
+2. Chọn "Tạo dự án mới".
+3. Chọn "Ứng dụng bảng điều khiển (.NET Core)".
+4. Đặt tên cho dự án của bạn và nhấp vào "Tạo".
+
+### Cài đặt Aspose.Words cho .NET
+
+Tiếp theo, chúng ta cần thêm Aspose.Words for .NET vào dự án của mình. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet:
+
+1. Nhấp chuột phải vào dự án của bạn trong Solution Explorer.
+2. Chọn "Quản lý gói NuGet".
+3. Tìm kiếm "Aspose.Words" và cài đặt nó.
+
+## Bước 2: Tải tài liệu của bạn
+
+Bây giờ dự án của chúng ta đã được thiết lập, hãy tải các tài liệu Word mà chúng ta muốn hợp nhất. Vì mục đích của hướng dẫn này, chúng tôi sẽ gọi chúng là "Nguồn tài liệu.docx" và "Northwind Traders.docx".
+
+Đây là cách bạn tải chúng bằng Aspose.Words:
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDocument = new Document(dataDir + "Document source.docx");
 Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Bước 3: Thiết lập tùy chọn định dạng nhập
+Đoạn mã này đặt đường dẫn đến thư mục tài liệu của bạn và tải tài liệu vào bộ nhớ.
 
- Tạo một thể hiện của`ImportFormatOptions` lớp và thiết lập`IgnoreHeaderFooter`tài sản để`false`. Điều này đảm bảo rằng nội dung đầu trang và chân trang được đưa vào trong quá trình nối thêm.
+## Bước 3: Định cấu hình tùy chọn nhập
+
+Trước khi hợp nhất các tài liệu, chúng ta cần thiết lập các tùy chọn nhập của mình. Bước này rất cần thiết vì nó cho phép chúng ta chỉ định rằng chúng ta muốn bỏ qua đầu trang và chân trang.
+
+Đây là mã để định cấu hình các tùy chọn nhập:
 
 ```csharp
-ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
+ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
-## Bước 4: Nối tài liệu nguồn vào tài liệu đích
+ Bằng cách thiết lập`IgnoreHeaderFooter` ĐẾN`true`, chúng tôi đang yêu cầu Aspose.Words bỏ qua đầu trang và chân trang trong quá trình hợp nhất.
 
- Sử dụng`AppendDocument` phương pháp của tài liệu đích để nối thêm tài liệu nguồn. Vượt qua`ImportFormatMode.KeepSourceFormatting`làm tham số thứ hai và các tùy chọn định dạng nhập làm tham số thứ ba.
+## Bước 4: Hợp nhất các tài liệu
+
+Với các tùy chọn nhập và tải tài liệu của chúng tôi đã được định cấu hình, đã đến lúc hợp nhất các tài liệu.
+
+Đây là cách thực hiện:
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## Bước 5: Lưu tài liệu đích
+Dòng mã này nối tài liệu nguồn vào tài liệu đích trong khi vẫn giữ định dạng nguồn và bỏ qua đầu trang và chân trang.
 
-Cuối cùng, lưu tài liệu đích đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
+## Bước 5: Lưu tài liệu đã hợp nhất
+
+Cuối cùng, chúng ta cần lưu tài liệu đã hợp nhất. 
+
+Đây là mã để lưu tài liệu đã hợp nhất của bạn:
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ```
 
-Điều này hoàn tất việc triển khai thêm tài liệu trong khi bỏ qua nội dung đầu trang và chân trang bằng Aspose.Words for .NET.
+Thao tác này sẽ lưu tài liệu đã hợp nhất trong thư mục được chỉ định với tên tệp "JoinAndAppendDocuments.IgnoreHeaderFooter.docx".
 
-### Mã nguồn ví dụ cho Bỏ qua chân trang tiêu đề bằng Aspose.Words cho .NET 
+## Phần kết luận
 
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Và bạn có nó rồi đấy! Bạn đã hợp nhất thành công hai tài liệu Word trong khi bỏ qua đầu trang và chân trang của chúng bằng Aspose.Words for .NET. Phương pháp này rất hữu ích cho các nhiệm vụ quản lý tài liệu khác nhau trong đó việc duy trì các phần tài liệu cụ thể là rất quan trọng.
 
-	Document srcDocument = new Document(dataDir + "Document source.docx");
-	Document dstDocument = new Document(dataDir + "Northwind traders.docx");
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
-	dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
-	dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
-```
+Làm việc với Aspose.Words cho .NET có thể hợp lý hóa đáng kể quy trình xử lý tài liệu của bạn. Hãy nhớ rằng, nếu bạn gặp khó khăn hoặc cần thêm thông tin, bạn luôn có thể kiểm tra[tài liệu](https://reference.aspose.com/words/net/).
+
+## Câu hỏi thường gặp
+
+### Tôi có thể bỏ qua các phần khác của tài liệu ngoài đầu trang và chân trang không?
+
+Có, Aspose.Words cung cấp nhiều tùy chọn khác nhau để tùy chỉnh quy trình nhập, bao gồm bỏ qua các phần và định dạng khác nhau.
+
+### Có thể giữ lại đầu trang và chân trang thay vì bỏ qua chúng không?
+
+ Tuyệt đối. Đơn giản chỉ cần thiết lập`IgnoreHeaderFooter` ĐẾN`false` bên trong`ImportFormatOptions`.
+
+### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
+
+ Có, Aspose.Words for .NET là một sản phẩm thương mại. Bạn có thể nhận được một[dùng thử miễn phí](https://releases.aspose.com/) hoặc mua giấy phép[đây](https://purchase.aspose.com/buy).
+
+### Tôi có thể hợp nhất nhiều hơn hai tài liệu bằng phương pháp này không?
+
+ Có, bạn có thể nối nhiều tài liệu trong một vòng lặp bằng cách lặp lại`AppendDocument` phương pháp cho mỗi tài liệu bổ sung.
+
+### Tôi có thể tìm thêm ví dụ và tài liệu về Aspose.Words cho .NET ở đâu?
+
+ Bạn có thể tìm thấy tài liệu và ví dụ toàn diện về[trang web giả định](https://reference.aspose.com/words/net/).

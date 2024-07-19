@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-tables/keep-table-together/
 ---
 
-den här handledningen ska vi lära oss hur man håller ihop en tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av den här handledningen kommer du att kunna behålla en tabell intakt utan att den delas över flera sidor i dina Word-dokument.
+I den här handledningen ska vi lära oss hur man håller ihop en tabell i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av den här handledningen kommer du att kunna behålla en tabell intakt utan att den delas över flera sidor i dina Word-dokument.
 
 ## Steg 1: Projektinställning
 1. Starta Visual Studio och skapa ett nytt C#-projekt.
@@ -63,7 +63,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// Vi måste aktivera KeepWithNext för varje stycke i tabellen för att förhindra att den bryts över en sida,
-	// förutom de sista styckena i den sista raden i tabellen.
+	//förutom de sista styckena i den sista raden i tabellen.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

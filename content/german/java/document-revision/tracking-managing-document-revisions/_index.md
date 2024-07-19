@@ -103,7 +103,7 @@ In diesem Beispiel speichern wir eine Kopie des Dokuments mit dem "_v2"-Suffix, 
 
 ### Kann ich Revisionen programmgesteuert annehmen oder ablehnen?
 
- Ja, Sie können Revisionen mit Aspose.Words für Java annehmen oder ablehnen. Nutzen Sie die`acceptAllRevisions` Und`rejectAllRevisions` Methoden zur Verwaltung von Revisionen.
+ Ja, Sie können Revisionen mit Aspose.Words für Java annehmen oder ablehnen. Nutzen Sie die`acceptAllRevisions`Und`rejectAllRevisions` Methoden zur Verwaltung von Revisionen.
 
 ### Ist es möglich, mehrere Versionen eines Dokuments zu erstellen?
 
@@ -119,7 +119,7 @@ Ja, Aspose.Words für Java ist vielseitig und kann von Entwicklern aller Niveaus
 
 ### Wo kann ich Aspose.Words für Java herunterladen?
 
-Sie können Aspose.Words für Java von der Website herunterladen unter[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Folgen Sie den Installationsanweisungen, um zu beginnen.
+Sie können Aspose.Words für Java von der Website herunterladen unter[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/). Befolgen Sie die Installationsanweisungen, um zu beginnen.
 
 ## Abschluss
 

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 2: Muat dokumen dan konfigurasikan pengaturan substitusi font
- Selanjutnya, kita akan memuat dokumen menggunakan`Document` kelas dan konfigurasikan pengaturan penggantian font menggunakan`FontSettings`kelas. Kami akan memuat pengaturan fallback font Noto menggunakan`LoadNotoFallbackSettings()` metode.
+ Selanjutnya, kita akan memuat dokumen menggunakan`Document` kelas dan konfigurasikan pengaturan penggantian font menggunakan`FontSettings` kelas. Kami akan memuat pengaturan fallback font Noto menggunakan`LoadNotoFallbackSettings()` metode.
 
 ```csharp
 // Muat dokumen dan konfigurasikan pengaturan substitusi font
@@ -65,9 +65,9 @@ Dalam tutorial ini, kita melihat cara memuat pengaturan substitusi font Noto di 
 
 A: Untuk memuat pengaturan substitusi font Noto di dokumen Word dengan Aspose.Words, Anda harus mendownload font Noto terlebih dahulu dari sumber resminya. Kemudian Anda dapat menggunakan Aspose.Words API untuk memuat font tersebut ke dalam dokumen dan mengonfigurasinya untuk substitusi bila diperlukan.
 
-#### T: Apakah penggunaan font Noto sebagai substitusi di dokumen Word menjamin visualisasi teks yang konsisten?
+#### T: Apakah penggunaan font Noto sebagai substitusi di dokumen Word memastikan visualisasi teks konsisten?
 
-J: Ya, menggunakan font Noto untuk substitusi di dokumen Word memastikan visualisasi teks konsisten. Font Noto dirancang untuk mendukung banyak bahasa dan karakter, membantu mempertahankan tampilan yang konsisten bahkan ketika font yang diperlukan tidak tersedia.
+J: Ya, menggunakan font Noto sebagai substitusi di dokumen Word memastikan visualisasi teks konsisten. Font Noto dirancang untuk mendukung banyak bahasa dan karakter, membantu mempertahankan tampilan yang konsisten bahkan ketika font yang diperlukan tidak tersedia.
 
 #### T: Apakah font Noto gratis?
 

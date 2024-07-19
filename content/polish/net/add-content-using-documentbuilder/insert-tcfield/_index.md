@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Krok 2: Utwórz nowy dokument
 
- W porządku, zacznijmy od utworzenia nowego dokumentu programu Word. Skorzystamy z`Document` I`DocumentBuilder` klasy z Aspose.Words, aby wszystko się potoczyło.
+ W porządku, zacznijmy od utworzenia nowego dokumentu programu Word. Skorzystamy z`Document`I`DocumentBuilder` klasy z Aspose.Words, aby wszystko się potoczyło.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
@@ -64,7 +64,7 @@ Teraz nadchodzi zabawna część. Zamierzamy wstawić pole TC do naszego dokumen
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Ta linia kodu mówi Aspose.Words, aby wstawił pole TC z tekstem wpisu „Tekst wpisu”. The`\\f t` częścią jest przełącznik określający sposób wyświetlania wpisu w spisie treści.
+ Ta linia kodu mówi Aspose.Words, aby wstawił pole TC z tekstem wpisu „Tekst wpisu”. The`\\f t`częścią jest przełącznik określający sposób wyświetlania wpisu w spisie treści.
 
 ## Krok 4: Zapisz dokument
 

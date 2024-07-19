@@ -55,7 +55,7 @@ To wszystko ! Pomyślnie osadziłeś podzestawy czcionek w dokumencie i wygenero
 	Document doc = new Document(dataDir + "Rendering.docx");
 
 	// Wyjściowy plik PDF będzie zawierał podzbiory czcionek w dokumencie.
-	// Czcionki PDF uwzględniają wyłącznie glify użyte w dokumencie.
+	// Czcionki PDF uwzględniają tylko glify użyte w dokumencie.
 	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 	
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);

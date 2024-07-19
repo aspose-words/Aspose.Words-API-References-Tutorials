@@ -15,7 +15,7 @@ Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách chấp nh
 Trong ví dụ này, chúng tôi đang tạo một tài liệu và thêm nội dung. Chúng tôi sử dụng một số đoạn văn để minh họa những thay đổi và sửa đổi. Đây là cách thực hiện:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
+//Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Giải pháp 2:
 
- Đáp: Bạn cũng có thể kích hoạt tính năng theo dõi sửa đổi bằng cách sử dụng`Document` hàm tạo chấp nhận`trackRevisions` Và`author` thông số.
+ Đáp: Bạn cũng có thể kích hoạt tính năng theo dõi sửa đổi bằng cách sử dụng`Document` hàm tạo chấp nhận`trackRevisions`Và`author` thông số.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

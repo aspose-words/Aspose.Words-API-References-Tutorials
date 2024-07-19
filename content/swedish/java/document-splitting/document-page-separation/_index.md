@@ -26,7 +26,7 @@ Innan vi dyker in i koden, se till att du har följande förutsättningar på pl
 
 2. Lägg till Aspose.Words Library:
 
-   Lägg till Aspose.Words for Java-biblioteket till ditt projekt. Du kan göra detta genom att inkludera JAR-filen i ditt projekts byggväg.
+   Lägg till Aspose.Words for Java-biblioteket till ditt projekt. Du kan göra detta genom att inkludera JAR-filen i ditt projekts byggsökväg.
 
 ## Steg 1: Ladda dokumentet
 
@@ -49,7 +49,7 @@ DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 List<Document> pages = splitter.splitIntoPages();
 ```
 
- De`pages` listan kommer nu att innehålla separata dokument, som var och en representerar en enda sida i originaldokumentet.
+ De`pages` Listan kommer nu att innehålla separata dokument, som var och en representerar en enda sida i originaldokumentet.
 
 ## Steg 3: Spara sidorna
 

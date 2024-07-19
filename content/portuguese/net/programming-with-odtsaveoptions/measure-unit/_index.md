@@ -8,7 +8,7 @@ weight: 10
 url: /pt/net/programming-with-odtsaveoptions/measure-unit/
 ---
 
-Ao converter um documento do Word para o formato OpenDocument Text (ODT) em um aplicativo C#, talvez você queira especificar a unidade de medida usada para formatação mensurável e propriedades de conteúdo. Com a biblioteca Aspose.Words para .NET, você pode especificar facilmente essa funcionalidade usando as opções de salvamento OdtSaveOptions. Neste guia passo a passo, orientaremos você sobre como usar o código-fonte Aspose.Words for .NET C# para converter um documento do Word em ODT, especificando a unidade de medida usando OdtSaveOptions.
+Ao converter um documento do Word para o formato OpenDocument Text (ODT) em um aplicativo C#, talvez você queira especificar a unidade de medida usada para formatação mensurável e propriedades de conteúdo. Com a biblioteca Aspose.Words para .NET, você pode especificar facilmente essa funcionalidade usando as opções de salvamento OdtSaveOptions. Neste guia passo a passo, orientaremos você sobre como usar o código-fonte Aspose.Words para .NET C# para converter um documento do Word em ODT, especificando a unidade de medida usando OdtSaveOptions.
 
 ## Compreendendo a biblioteca Aspose.Words
 

@@ -72,7 +72,7 @@ doc.save("Your Directory Path" + "CustomizedJPEG.jpeg", options);
 
 ## 5. lépés: Az Oldalmentés Visszahívás használata
 
-Az oldalmentés személyre szabásához használhatja a visszahívást. Íme egy példa:
+Az oldalmentés személyre szabásához használhat visszahívást. Íme egy példa:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");

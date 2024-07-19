@@ -17,14 +17,14 @@ url: /el/net/programming-with-shapes/aspect-ratio-locked/
 - Βασικές γνώσεις C# και Επεξεργασία λέξεων με έγγραφα Word.
 
 ## Βήμα 1: Ρυθμίστε τον Κατάλογο Εγγράφων
- Ξεκινήστε ρυθμίζοντας τη διαδρομή προς τον κατάλογο εγγράφων σας. Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"` με την πραγματική διαδρομή προς τον κατάλογο όπου θέλετε να αποθηκεύσετε το έγγραφο.
+ Ξεκινήστε ρυθμίζοντας τη διαδρομή προς τον κατάλογο εγγράφων σας. Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"`με την πραγματική διαδρομή προς τον κατάλογο όπου θέλετε να αποθηκεύσετε το έγγραφο.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Βήμα 2: Δημιουργήστε ένα νέο Document και DocumentBuilder
- Δημιουργήστε μια νέα παρουσία του`Document` τάξη και α`DocumentBuilder`αντίρρηση για εργασία με το έγγραφο.
+ Δημιουργήστε μια νέα παρουσία του`Document` τάξη και α`DocumentBuilder` αντίρρηση για εργασία με το έγγραφο.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Βήμα 3: Εισαγάγετε ένα σχήμα εικόνας
- Χρησιμοποιήστε το`InsertImage` μέθοδος του`DocumentBuilder` αντικείμενο για να εισαγάγετε ένα σχήμα εικόνας στο έγγραφο. Δώστε τη διαδρομή προς το αρχείο εικόνας ως παράμετρο.
+ Χρησιμοποιήστε το`InsertImage` μέθοδος του`DocumentBuilder`αντικείμενο για να εισαγάγετε ένα σχήμα εικόνας στο έγγραφο. Δώστε τη διαδρομή προς το αρχείο εικόνας ως παράμετρο.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  Ρυθμίστε το`AspectRatioLocked` ιδιότητα του σχήματος να`true` ή`false` για να κλειδώσετε ή να ξεκλειδώσετε την αναλογία διαστάσεων, αντίστοιχα.
 
 ```csharp
-shape.AspectRatioLocked = false; //Ξεκλειδώστε την αναλογία διαστάσεων
+shape.AspectRatioLocked = false; // Ξεκλειδώστε την αναλογία διαστάσεων
 ```
 
 ## Βήμα 5: Αποθηκεύστε το έγγραφο

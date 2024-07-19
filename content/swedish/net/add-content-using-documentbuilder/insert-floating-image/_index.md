@@ -132,7 +132,7 @@ Att infoga en flytande bild i ett Word-dokument med Aspose.Words för .NET är e
 
  Du kan justera`RelativeHorizontalPosition`, `RelativeVerticalPosition`, och offset parametrar för att placera bilden efter behov.
 
-### Vilka andra typer av omslag finns tillgängliga för bilder?
+### Vilka andra radbrytningstyper finns tillgängliga för bilder?
 
  Aspose.Words stöder olika inpackningstyper som t.ex`Inline`, `TopBottom`, `Tight`, `Through`, och mer. Du kan välja den som bäst passar din dokumentlayout.
 

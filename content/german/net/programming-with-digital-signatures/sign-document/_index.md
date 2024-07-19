@@ -2,102 +2,109 @@
 title: Word-Dokument signieren
 linktitle: Word-Dokument signieren
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Word-Dokument digital signieren.
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie ein Word-Dokument mit Aspose.Words für .NET signieren. Sichern Sie Ihre Dokumente mit Leichtigkeit.
 type: docs
 weight: 10
 url: /de/net/programming-with-digital-signatures/sign-document/
 ---
-In diesem Tutorial führen wir Sie durch die Schritte zur Verwendung der Dokumentsignaturfunktion mit Aspose.Words für .NET. Mit dieser Funktion können Sie ein Word-Dokument mithilfe eines Zertifikats digital signieren. Befolgen Sie die folgenden Schritte:
+## Einführung
 
-## Schritt 1: Zertifikat laden
+In der heutigen digitalen Welt ist die Sicherung Ihrer Dokumente wichtiger denn je. Digitale Signaturen bieten eine Möglichkeit, die Authentizität und Integrität Ihrer Dokumente sicherzustellen. Wenn Sie ein Word-Dokument programmgesteuert mit Aspose.Words für .NET signieren möchten, sind Sie hier richtig. Diese Anleitung führt Sie Schritt für Schritt auf einfache und ansprechende Weise durch den gesamten Prozess.
 
-Beginnen Sie mit dem Laden des Signaturzertifikats mithilfe der Klasse CertificateHolder:
+## Voraussetzungen
+
+Bevor Sie sich in den Code vertiefen, müssen einige Dinge bereit sein:
+
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version von Aspose.Words für .NET installiert haben. Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/).
+2. .NET-Umgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung eingerichtet haben (z. B. Visual Studio).
+3. Digitales Zertifikat: Erhalten Sie ein digitales Zertifikat (z. B. eine PFX-Datei) zum Signieren von Dokumenten.
+4. Zu unterzeichnendes Dokument: Halten Sie ein Word-Dokument bereit, das Sie unterzeichnen möchten.
+
+## Namespaces importieren
+
+Als Erstes müssen Sie die erforderlichen Namespaces importieren. Fügen Sie Ihrem Projekt die folgenden using-Direktiven hinzu:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.Security.Cryptography.X509Certificates;
+```
+
+Lassen Sie uns den Prozess nun in überschaubare Schritte unterteilen.
+
+## Schritt 1: Laden Sie das digitale Zertifikat
+
+Der erste Schritt besteht darin, das digitale Zertifikat aus der Datei zu laden. Dieses Zertifikat wird zum Signieren des Dokuments verwendet.
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Laden Sie das digitale Zertifikat.
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Achten Sie darauf, den richtigen Pfad zu Ihrem Zertifikat und dem zugehörigen Passwort anzugeben.
+### Erläuterung
 
-## Schritt 2: Unterzeichnen des Dokuments
+- `dataDir`: Dies ist das Verzeichnis, in dem Ihr Zertifikat und Ihre Dokumente gespeichert sind.
+- `CertificateHolder.Create` : Diese Methode lädt das Zertifikat aus dem angegebenen Pfad. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Verzeichnis und`"morzal.pfx"` mit dem Namen Ihrer Zertifikatsdatei. Die`"aw"` ist das Passwort für das Zertifikat.
 
-Verwenden Sie die Klasse DigitalSignatureUtil, um das Dokument zu signieren:
+## Schritt 2: Laden Sie das Word-Dokument
 
-```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-	certHolder);
-```
-
-Achten Sie darauf, die richtigen Pfade für das Quelldokument und das signierte Dokument anzugeben.
-
-### Beispielquellcode zum Signieren von Dokumenten mit Aspose.Words für .NET
-
-Hier ist der vollständige Quellcode zum Signieren eines Dokuments mit Aspose.Words für .NET:
+Laden Sie als Nächstes das Word-Dokument, das Sie signieren möchten.
 
 ```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-		certHolder);
-
+// Laden Sie das zu signierende Dokument hoch.
+Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-Indem Sie diese Schritte befolgen, können Sie ein Word-Dokument ganz einfach mit Aspose.Words für .NET signieren.
+### Erläuterung
+
+- `Document` : Diese Klasse stellt das Word-Dokument dar. Ersetzen`"Digitally signed.docx"`durch den Namen Ihres Dokuments.
+
+## Schritt 3: Unterschreiben Sie das Dokument
+
+ Verwenden Sie nun die`DigitalSignatureUtil.Sign` Methode zum Signieren des Dokuments.
+
+```csharp
+// Unterschreiben Sie das Dokument.
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx", certHolder);
+```
+
+### Erläuterung
+
+- `DigitalSignatureUtil.Sign`: Diese Methode signiert das Dokument mit dem geladenen Zertifikat. Der erste Parameter ist der Pfad zum Originaldokument, der zweite der Pfad zum signierten Dokument und der dritte der Zertifikatsinhaber.
+
+## Schritt 4: Speichern Sie das signierte Dokument
+
+Speichern Sie abschließend das signierte Dokument am angegebenen Speicherort.
+
+```csharp
+// Speichern Sie das signierte Dokument.
+doc.Save(dataDir + "Document.Signed.docx");
+```
+
+### Erläuterung
+
+- `doc.Save` : Diese Methode speichert das signierte Dokument. Ersetzen`"Document.Signed.docx"` mit dem gewünschten Namen Ihres signierten Dokuments.
 
 ## Abschluss
 
- In diesem Tutorial haben wir die Funktion zur Dokumentsignatur in Aspose.Words für .NET untersucht. Durch Laden eines Signaturzertifikats und Verwenden des`DigitalSignatureUtil.Sign` Methode können wir ein Word-Dokument digital signieren. Die Dokumentsignatur dient der Authentifizierung und stellt die Integrität des Dokumentinhalts sicher. Damit ist sie eine wertvolle Funktion für eine sichere und vertrauenswürdige Dokumentenverwaltung.
+Und da haben Sie es! Sie haben erfolgreich ein Word-Dokument mit Aspose.Words für .NET signiert. Indem Sie diese einfachen Schritte befolgen, können Sie sicherstellen, dass Ihre Dokumente sicher signiert und authentifiziert sind. Denken Sie daran, dass digitale Signaturen ein leistungsstarkes Werkzeug zum Schutz der Integrität Ihrer Dokumente sind. Nutzen Sie sie daher, wann immer nötig.
 
-### FAQs zum Signieren von Word-Dokumenten
+## Häufig gestellte Fragen
 
-#### F: Was ist Dokumentsignierung in Aspose.Words für .NET?
+### Was ist eine digitale Signatur?
+Eine digitale Signatur ist eine elektronische Form einer Unterschrift, mit der die Identität des Unterzeichners authentifiziert und sichergestellt werden kann, dass das Dokument nicht verändert wurde.
 
-A: Unter Dokumentsignierung in Aspose.Words für .NET versteht man den Vorgang, ein Word-Dokument mithilfe eines Zertifikats digital zu signieren. Diese Funktion fügt dem Dokument eine digitale Signatur hinzu und sorgt so für Authentizität, Integrität und Nichtabstreitbarkeit des Dokumentinhalts.
+### Warum brauche ich ein digitales Zertifikat?
+Zum Erstellen einer digitalen Signatur ist ein digitales Zertifikat erforderlich. Es enthält einen öffentlichen Schlüssel und die Identität des Zertifikatsinhabers und ermöglicht so die Überprüfung der Signatur.
 
-#### F: Wie kann ich das Signaturzertifikat in Aspose.Words für .NET laden?
+### Kann ich zum Signieren eine beliebige PFX-Datei verwenden?
+Ja, solange die PFX-Datei ein gültiges digitales Zertifikat enthält und Sie über das Kennwort für den Zugriff darauf verfügen.
 
- A: Um das Signaturzertifikat in Aspose.Words für .NET zu laden, können Sie den`CertificateHolder` Klasse. Erstellen Sie eine Instanz von`CertificateHolder` indem Sie den Pfad zur Zertifikatsdatei und das zugehörige Passwort angeben. Hier ein Beispiel:
+### Ist die Nutzung von Aspose.Words für .NET kostenlos?
+ Aspose.Words für .NET ist eine kommerzielle Bibliothek. Sie können eine kostenlose Testversion herunterladen[Hier](https://releases.aspose.com/) , aber Sie müssen eine Lizenz für die volle Funktionalität erwerben. Sie können es kaufen[Hier](https://purchase.aspose.com/buy).
 
-```csharp
-CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx", "password");
-```
-
-Achten Sie darauf, den korrekten Pfad zu Ihrem Zertifikat und das dazugehörige Passwort anzugeben.
-
-#### F: Wie signiere ich ein Word-Dokument mit Aspose.Words für .NET?
-
- A: Um ein Word-Dokument mit Aspose.Words für .NET zu signieren, können Sie das`DigitalSignatureUtil` Klasse. Rufen Sie die`Sign` Methode, die den Pfad zum Quelldokument, den Pfad zum signierten Dokument (Ausgabe) und den`CertificateHolder` Objekt. Hier ist ein Beispiel:
-
-```csharp
-DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/document.docx", certHolder);
-```
-
-Stellen Sie sicher, dass Sie die richtigen Pfade für das Quelldokument und das signierte Dokument (Ausgabe) angeben.
-
-#### F: Was ist der Zweck der Dokumentensignatur?
-
-A: Das Signieren von Dokumenten dient dazu, die Authentizität und Integrität eines Dokuments sicherzustellen. Durch das digitale Signieren eines Dokuments können Sie dessen Herkunft nachweisen, sicherstellen, dass sein Inhalt nicht verändert wurde, und die Nichtabstreitbarkeit nachweisen. Das Signieren von Dokumenten wird häufig für juristische, finanzielle und vertrauliche Dokumente verwendet.
-
-#### F: Kann ich in Aspose.Words für .NET jedes beliebige Zertifikat zum Signieren von Dokumenten verwenden?
-
-A: Zum Signieren von Dokumenten in Aspose.Words für .NET müssen Sie ein gültiges X.509-Zertifikat verwenden. Dieses Zertifikat kann von einer vertrauenswürdigen Zertifizierungsstelle (CA) bezogen werden, oder es kann zu Testzwecken ein selbstsigniertes Zertifikat verwendet werden.
-
-#### F: Welches Dateiformat unterstützt Aspose.Words für .NET für die Dokumentsignierung?
-
- A: Aspose.Words für .NET unterstützt die Dokumentsignatur für Word-Dokumente im DOCX-Dateiformat. Sie können DOCX-Dateien mit dem`DigitalSignatureUtil` Klasse und das entsprechende Zertifikat.
-
-#### F: Kann ich mehrere Word-Dokumente mit demselben Zertifikat signieren?
-
-A: Ja, Sie können mehrere Word-Dokumente mit demselben Zertifikat signieren. Nachdem Sie das Zertifikat mit dem`CertificateHolder` Klasse können Sie sie wiederverwenden, um mehrere Dokumente zu signieren, indem Sie die`DigitalSignatureUtil.Sign` Methode mit unterschiedlichen Quell- und signierten Dokumentpfaden.
-
-#### F: Wird durch die Dokumentsignierung das Originaldokument geändert?
-
-A: Das Signieren von Dokumenten mit Aspose.Words für .NET ändert das Originaldokument nicht. Stattdessen wird eine digital signierte Kopie des Dokuments erstellt, wobei das Originaldokument unverändert bleibt. Die digital signierte Kopie enthält die hinzugefügte digitale Signatur und stellt so die Integrität des Dokumentinhalts sicher.
-
-#### F: Kann ich die digitale Signatur eines signierten Dokuments mit Aspose.Words für .NET überprüfen?
-
- A: Ja, Aspose.Words für .NET bietet Funktionen zur Überprüfung der digitalen Signatur eines signierten Dokuments. Sie können die`DigitalSignatureUtil.Verify` Methode zur Überprüfung der Gültigkeit und Authentizität der digitalen Signatur.
+### Wo finde ich weitere Informationen zu Aspose.Words für .NET?
+ Eine ausführliche Dokumentation finden Sie[Hier](https://reference.aspose.com/words/net/) und Unterstützung[Hier](https://forum.aspose.com/c/words/8).

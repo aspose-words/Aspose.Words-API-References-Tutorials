@@ -39,7 +39,7 @@ Táblázatok létrehozásához és dokumentumokba való beszúrásához az Aspos
     table = builder.start_table()
     ```
 
-2.  Adatok beszúrása: Adatok hozzáadása a táblához az építő segítségével`insert_cell` és`write` mód.
+2.  Adatok beszúrása: Adatok hozzáadása a táblához az építő segítségével`insert_cell`és`write` mód.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Táblázatok létrehozásához és dokumentumokba való beszúrásához az Aspos
 
 ## Alapvető táblázatformázás alkalmazása
 
- Az alapvető táblázatformázás a által biztosított módszerekkel érhető el`Table` és`Cell` osztályok. A következőképpen javíthatja asztala megjelenését:
+ Az alapvető táblázatformázás a által biztosított módszerekkel érhető el`Table`és`Cell` osztályok. A következőképpen javíthatja asztala megjelenését:
 
 1. Oszlopszélesség beállítása: Állítsa be az oszlopok szélességét a megfelelő igazítás és látványosság érdekében.
 
@@ -127,7 +127,7 @@ Az Aspose.Words for Python számos stílusbeállítást kínál, hogy a tábláz
 
 ## Sorok és oszlopok magasságának és szélességének beállítása
 
-A sor- és oszlopméretek finomhangolása a kiegyensúlyozott táblázatelrendezés érdekében:
+Finomítsa a sor- és oszlopméreteket a kiegyensúlyozott táblázatelrendezéshez:
 
 1. Sor magasságának beállítása: A sor magasságának módosítása a tartalom alapján.
 
@@ -232,7 +232,7 @@ Ha elkészült a táblázat, exportálhatja különféle formátumokba, példáu
 
 ## Következtetés
 
-Az Aspose.Words for Python átfogó eszköztárat kínál dokumentumtáblázatok létrehozásához, stílusához és formázásához. A cikkben ismertetett lépések követésével hatékonyan kezelheti a dokumentumok táblázatait, testreszabhatja megjelenésüket, és exportálhatja azokat különböző formátumokba. Használja ki az Aspose.Words erejét, hogy javítsa dokumentumbemutatóit, és világos, tetszetős információkat biztosítson olvasóinak.
+Az Aspose.Words for Python átfogó eszköztárat kínál dokumentumtáblázatok létrehozásához, stílusához és formázásához. A cikkben ismertetett lépések követésével hatékonyan kezelheti a dokumentumok táblázatait, testreszabhatja megjelenésüket, és exportálhatja azokat különböző formátumokba. Használja ki az Aspose.Word erejét, hogy javítsa dokumentumbemutatóit, és világos, tetszetős információkat biztosítson olvasóinak.
 
 ## GYIK
 

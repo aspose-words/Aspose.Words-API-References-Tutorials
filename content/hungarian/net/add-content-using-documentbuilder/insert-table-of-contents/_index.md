@@ -52,7 +52,7 @@ builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
 ## 3. lépés: Indítsa el a dokumentumtartalmat egy új oldalon
 
-A megfelelő formázás érdekében kezdje el a tényleges dokumentumtartalmat egy új oldalon:
+megfelelő formázás érdekében kezdje el a tényleges dokumentumtartalmat egy új oldalon:
 
 ```csharp
 // Oldaltörés beszúrása
@@ -127,4 +127,4 @@ Az Aspose.Words támogatja több tartalomjegyzék létrehozását különböző 
 Igen, az Aspose.Words biztosítja a kompatibilitást a Microsoft Word formátumok különböző verzióival.
 
 ### Hol találok további segítséget és támogatást az Aspose.Words számára?
-További segítségért keresse fel a[Aspose.Words Forum](https://forum.aspose.com/c/words/8) vagy nézd meg a[hivatalos dokumentáció](https://reference.aspose.com/words/net/).
+ További segítségért keresse fel a[Aspose.Words Forum](https://forum.aspose.com/c/words/8) vagy nézd meg a[hivatalos dokumentáció](https://reference.aspose.com/words/net/).

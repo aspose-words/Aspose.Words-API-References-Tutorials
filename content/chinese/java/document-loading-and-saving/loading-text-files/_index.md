@@ -177,7 +177,7 @@ Aspose.Words for Java 是一个功能强大的文档处理库，允许开发人�
 
 是的，Aspose.Words for Java 允许您将加载的文本文档转换为各种格式，包括 DOCX、PDF 等。您可以使用`Document`类来执行转换。查看文档以获取具体的转换示例。
 
-### 如何处理已加载的文本文档中的空格？
+### 如何处理已加载文本文档中的空格？
 
 您可以使用以下方式控制加载的文本文档中前导空格和尾随空格的处理方式`TxtLoadOptions` 选项包括`TxtLeadingSpacesOptions`和`TxtTrailingSpacesOptions`允许您根据需要修剪或保留空格。请参阅本指南中的“处理空格选项”部分以获取示例。
 

@@ -31,7 +31,7 @@ Una vez cargado el documento, podrás acceder a los diferentes rangos del docume
 string text = doc.Range.Text;
 ```
 
-En este ejemplo, usamos la propiedad Rango de la clase Documento para acceder al rango completo del documento. Luego usamos la propiedad Texto para obtener el texto contenido en ese rango.
+En este ejemplo, utilizamos la propiedad Rango de la clase Documento para acceder al rango completo del documento. Luego usamos la propiedad Texto para obtener el texto contenido en ese rango.
 
 ## Visualización del texto extraído
 
@@ -61,7 +61,7 @@ Console.WriteLine(text);
 
 ## Conclusión
 
-En esta guía, cubrimos cómo usar Aspose.Words para .NET para extraer texto de un documento de Word utilizando el código fuente C# proporcionado. Si sigue los pasos proporcionados, puede extraer fácilmente texto de rangos específicos en sus documentos de Word en su aplicación C#. Aspose.Words ofrece una tremenda flexibilidad y potencia para el procesamiento de textos con contenido de documentos, permitiéndole procesar y utilizar texto según sus necesidades específicas.
+En esta guía, hemos cubierto cómo usar Aspose.Words para .NET para extraer texto de un documento de Word utilizando el código fuente C# proporcionado. Si sigue los pasos proporcionados, puede extraer fácilmente texto de rangos específicos en sus documentos de Word en su aplicación C#. Aspose.Words ofrece una tremenda flexibilidad y potencia para el procesamiento de textos con contenido de documentos, permitiéndole procesar y utilizar texto según sus necesidades específicas.
 
 ### Las preguntas frecuentes sobre rangos obtienen texto en un documento de Word
 
@@ -75,7 +75,7 @@ R: Aspose.Words para .NET es una potente biblioteca para el procesamiento de tex
 
 #### P: ¿Cómo cargo un documento de Word usando Aspose.Words para .NET?
 
-R: Para cargar un documento de Word usando Aspose.Words para .NET, puede usar el`Document` clase y su constructor. Debe proporcionar la ruta del archivo o la secuencia del documento como parámetro. He aquí un ejemplo:
+ R: Para cargar un documento de Word usando Aspose.Words para .NET, puede usar el`Document` clase y su constructor. Debe proporcionar la ruta del archivo o la secuencia del documento como parámetro. He aquí un ejemplo:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

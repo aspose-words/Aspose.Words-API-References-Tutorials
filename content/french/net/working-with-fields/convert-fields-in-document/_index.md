@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 3 : Charger le document
- Utilisez le`Document` classe de Aspose.Words pour charger le document Word contenant les champs liés que vous souhaitez convertir.
+ Utilisez le`Document`classe de Aspose.Words pour charger le document Word contenant les champs liés que vous souhaitez convertir.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");
@@ -70,7 +70,7 @@ La fonction ConvertFieldsInDocument d'Aspose.Words for .NET est un outil puissan
 
 #### Q : Qu'est-ce qu'une conversion de champ dans Aspose.Words ?
 
-R : Une conversion de champ dans Aspose.Words fait référence à la possibilité de transformer les données d'un champ dans un document Word en utilisant différents formats ou types de données. Cela vous permet de modifier la présentation ou la structure des données dans le document final.
+: Une conversion de champ dans Aspose.Words fait référence à la possibilité de transformer les données d'un champ dans un document Word en utilisant différents formats ou types de données. Cela vous permet de modifier la présentation ou la structure des données dans le document final.
 
 #### Q : Comment convertir les champs d'un document Word avec Aspose.Words ?
 

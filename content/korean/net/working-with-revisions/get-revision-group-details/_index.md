@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Q: Aspose.Words for .NET에서 개정 그룹의 세부 정보를 어떻게 얻나요?
 
-A: 루프를 사용하여 문서의 개정판을 살펴보고 각 개정판의 속성에 액세스하여 원하는 세부 정보를 얻으세요. 당신은 사용할 수 있습니다`RevisionType`, `Author`, `DateTime` 그리고`ParentNode` 개정 유형, 작성자, 날짜 및 개정된 텍스트를 각각 가져오는 속성입니다.
+A: 루프를 사용하여 문서의 개정판을 살펴보고 각 개정판의 속성에 액세스하여 원하는 세부 정보를 얻으세요. 당신은 사용할 수 있습니다`RevisionType`, `Author`, `DateTime`그리고`ParentNode` 개정 유형, 작성자, 날짜 및 개정된 텍스트를 각각 가져오는 속성입니다.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

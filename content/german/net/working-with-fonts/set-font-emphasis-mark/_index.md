@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Erstellen und Anpassen des Dokuments
- Erstellen Sie eine Instanz des`Document` Klasse und eine zugehörige`DocumentBuilder` um den Dokumentinhalt zu erstellen. Verwenden Sie die`Font.EmphasisMark` Eigenschaft, um den Schrifthervorhebungsstil auf`EmphasisMark.UnderSolidCircle` . Dann verwenden Sie die`Write` Und`Writeln` Methoden der`DocumentBuilder` um Text mit der angegebenen Schrifthervorhebung hinzuzufügen.
+ Erstellen Sie eine Instanz des`Document` Klasse und eine zugehörige`DocumentBuilder` um den Dokumentinhalt zu erstellen. Verwenden Sie die`Font.EmphasisMark` Eigenschaft, um den Schrifthervorhebungsstil auf`EmphasisMark.UnderSolidCircle` . Dann verwenden Sie die`Write`Und`Writeln` Methoden der`DocumentBuilder` um Text mit der angegebenen Schrifthervorhebung hinzuzufügen.
 
 ```csharp
 Document document = new Document();
@@ -42,7 +42,7 @@ builder.Write("Simple text");
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
-### Beispielquellcode zum Festlegen von Schriftarthervorhebungszeichen mit Aspose.Words für .NET 
+### Beispielquellcode zum Festlegen von Hervorhebungszeichen mit Aspose.Words für .NET 
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -73,7 +73,7 @@ A: Ja, mit Aspose.Words können Sie den Stil von Akzentzeichen in einem Word-Dok
 
 #### F: Wie kann ich mit Aspose.Words alle Akzentzeichen aus einem Word-Dokument entfernen?
 
-A: Um alle Akzentzeichen aus einem Word-Dokument mit Aspose.Words zu entfernen, können Sie die API verwenden, um das Dokument zu durchsuchen, vorhandene Akzentzeichen zu erkennen und diese mit den entsprechenden Methoden zu entfernen. Dadurch werden alle Hervorhebungszeichen aus dem Dokument entfernt.
+A: Um mit Aspose.Words alle Akzentzeichen aus einem Word-Dokument zu entfernen, können Sie die API verwenden, um das Dokument zu durchsuchen, vorhandene Akzentzeichen zu erkennen und diese mit den entsprechenden Methoden zu entfernen. Dadurch werden alle Hervorhebungszeichen aus dem Dokument entfernt.
 
 #### F: Kann ich einem bestimmten Textteil in einem Word-Dokument Akzentzeichen hinzufügen?
 

@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-tables/get-table-position/
 ---
 
-Dans ce tutoriel, nous allons apprendre comment obtenir la position d'un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous pourrez obtenir par programmation les propriétés de positionnement des tableaux dans vos documents Word.
+Dans ce tutoriel, nous allons apprendre comment obtenir la position d'un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Nous suivrons un guide étape par étape pour comprendre le code et implémenter cette fonctionnalité. À la fin de ce didacticiel, vous pourrez obtenir par programme les propriétés de positionnement des tableaux dans vos documents Word.
 
 ## Étape 1 : Configuration du projet
 1. Lancez Visual Studio et créez un nouveau projet C#.
@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Ici, nous utilisons une condition pour vérifier si le tableau est de type float. Si c'est le cas, nous imprimons le`RelativeHorizontalAlignment` et`RelativeVerticalAlignment` propriétés pour obtenir l’alignement horizontal et vertical relatif de la table. Sinon, nous imprimons le`Alignment` propriété pour obtenir l’alignement du tableau.
+ Ici, nous utilisons une condition pour vérifier si le tableau est de type float. Si c'est le cas, nous imprimons le`RelativeHorizontalAlignment`et`RelativeVerticalAlignment` propriétés pour obtenir l’alignement horizontal et vertical relatif de la table. Sinon, nous imprimons le`Alignment` propriété pour obtenir l’alignement du tableau.
 
 ### Exemple de code source pour obtenir la position de la table à l'aide d'Aspose.Words pour .NET 
 

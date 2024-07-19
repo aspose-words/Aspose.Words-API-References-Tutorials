@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 Durchlaufen Sie alle Felder im Dokument und entfernen Sie sie:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 Diese Schleife durchläuft die Feldersammlung rückwärts, um Probleme beim Ändern der Sammlung während der Iteration zu vermeiden.

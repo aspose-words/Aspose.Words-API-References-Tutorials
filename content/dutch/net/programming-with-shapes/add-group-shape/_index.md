@@ -17,14 +17,14 @@ Om deze tutorial te volgen, heb je het volgende nodig:
 - Basiskennis van C# en woordenverwerking met Word-documenten.
 
 ## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+ Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Stap 2: Maak een nieuw document en GroupShape
- Maak een nieuw exemplaar van de`Document` klasse en`GroupShape`bezwaar maken tegen het werken met het document.
+ Maak een nieuw exemplaar van de`Document` klasse en`GroupShape` bezwaar maken tegen het werken met het document.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Stap 3: Vormen maken en toevoegen aan de GroupShape
- Creëer individuele vormen zoals`accentBorderShape` En`actionButtonShape` de ... gebruiken`Shape` klas. Pas hun eigenschappen naar wens aan. Voeg deze vormen toe aan de`groupShape` voorwerp.
+ Creëer individuele vormen zoals`accentBorderShape`En`actionButtonShape` de ... gebruiken`Shape` klas. Pas hun eigenschappen naar wens aan. Voeg deze vormen toe aan de`groupShape` voorwerp.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Stap 4: Stel afmetingen in voor de GroupShape
- Stel de breedte, hoogte en coördinaatgrootte in voor de`groupShape`.
+Stel de breedte, hoogte en coördinaatgrootte in voor de`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## Stap 6: Sla het document op
- Sla het document op in de opgegeven map met behulp van de`Save`methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithShapes.AddGroupShape.docx".
+ Sla het document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithShapes.AddGroupShape.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

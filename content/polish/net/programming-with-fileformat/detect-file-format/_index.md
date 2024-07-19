@@ -14,7 +14,7 @@ Zanim zaczniesz, upewnij się, że w swoim projekcie zainstalowałeś i skonfigu
 
 ## Krok 1: Zdefiniuj katalogi
 
- Na początek musisz zdefiniować katalogi, w których chcesz przechowywać pliki, zgodnie z ich formatem. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów. Tworzymy katalogi „Obsługiwane”, „Nieznane”, „Zaszyfrowane” i „Pre97”, jeśli jeszcze nie istnieją.
+ Na początek musisz zdefiniować katalogi, w których chcesz przechowywać pliki, zgodnie z ich formatem. Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką do katalogu dokumentów. Tworzymy katalogi „Obsługiwane”, „Nieznane”, „Zaszyfrowane” i „Pre97”, jeśli jeszcze nie istnieją.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## Krok 2: Przeglądaj pliki
 
- Następnie używamy`GetFiles` metoda`Directory` class, aby uzyskać listę plików w określonym katalogu. Używamy również A`Where`klauzula wykluczająca określony plik o nazwie „Uszkodzony dokument.docx”.
+ Następnie używamy`GetFiles` metoda`Directory` class, aby uzyskać listę plików w określonym katalogu. Używamy również A`Where` klauzula wykluczająca określony plik o nazwie „Uszkodzony dokument.docx”.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ To wszystko ! Pomyślnie wykrył format różnych plików dokumentów przy użyc
 
 #### Jak wykryć format pliku dokumentu za pomocą Aspose.Words dla .NET?
 
- Aby wykryć format pliku dokumentu za pomocą Aspose.Words dla .NET, możesz wykonać kroki opisane w samouczku. Używając`DetectFileFormat` metoda`FileFormatUtil`class pozwoli Ci wykryć format pliku dokumentu. Umożliwi to określenie, czy jest to dokument programu Microsoft Word 97-2003, szablon, dokument Office Open XML WordprocessingML, czy też inny obsługiwany format. Kod podany w samouczku przeprowadzi Cię przez proces wdrażania tej funkcji.
+ Aby wykryć format pliku dokumentu za pomocą Aspose.Words dla .NET, możesz wykonać kroki opisane w samouczku. Używając`DetectFileFormat` metoda`FileFormatUtil` class pozwoli Ci wykryć format pliku dokumentu. Umożliwi to określenie, czy jest to dokument programu Microsoft Word 97-2003, szablon, dokument Office Open XML WordprocessingML, czy też inny obsługiwany format. Kod podany w samouczku przeprowadzi Cię przez proces wdrażania tej funkcji.
 
 #### Jakie formaty dokumentów obsługuje Aspose.Words dla .NET?
 

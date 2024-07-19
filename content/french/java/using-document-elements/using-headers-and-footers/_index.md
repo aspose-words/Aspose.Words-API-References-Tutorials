@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Numérotation des pages
 
- Vous pouvez inclure des numéros de page dans vos en-têtes et pieds de page en utilisant des champs tels que`PAGE` et`NUMPAGES`. Ces champs sont automatiquement mis à jour lorsque vous ajoutez ou supprimez des pages.
+ Vous pouvez inclure des numéros de page dans vos en-têtes et pieds de page en utilisant des champs tels que`PAGE`et`NUMPAGES`. Ces champs sont automatiquement mis à jour lorsque vous ajoutez ou supprimez des pages.
 
 ## 9. Informations sur les droits d'auteur dans les pieds de page
 

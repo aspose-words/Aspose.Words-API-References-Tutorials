@@ -39,7 +39,7 @@ Chcete-li vytvořit a vložit tabulky do dokumentů pomocí Aspose.Words pro Pyt
     table = builder.start_table()
     ```
 
-2.  Vložit data: Přidejte data do tabulky pomocí stavitele`insert_cell` a`write` metody.
+2.  Vložit data: Přidejte data do tabulky pomocí stavitele`insert_cell`a`write` metody.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Chcete-li vytvořit a vložit tabulky do dokumentů pomocí Aspose.Words pro Pyt
 
 ## Použití základního formátování tabulky
 
- Základní formátování tabulky lze dosáhnout pomocí metod, které poskytuje`Table` a`Cell` třídy. Zde je návod, jak můžete vylepšit vzhled vašeho stolu:
+ Základní formátování tabulky lze dosáhnout pomocí metod, které poskytuje`Table`a`Cell` třídy. Zde je návod, jak můžete vylepšit vzhled vašeho stolu:
 
 1. Nastavení šířky sloupců: Upravte šířku sloupců, abyste zajistili správné zarovnání a vizuální přitažlivost.
 

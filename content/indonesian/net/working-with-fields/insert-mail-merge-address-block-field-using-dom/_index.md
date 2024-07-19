@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### T: Bagaimana cara menentukan data sumber untuk bidang alamat surat di Aspose.Words untuk .NET?
 
- J: Untuk menentukan data sumber untuk bidang alamat surat di Aspose.Words untuk .NET, Anda dapat menggunakan`FieldAddressBlock.StartAddress` Dan`FieldAddressBlock.EndAddress` properti. Properti ini digunakan untuk menentukan rentang alamat di sumber data eksternal, seperti file CSV, database, dll.
+ J: Untuk menentukan data sumber untuk bidang alamat surat di Aspose.Words untuk .NET, Anda dapat menggunakan`FieldAddressBlock.StartAddress`Dan`FieldAddressBlock.EndAddress` properti. Properti ini digunakan untuk menentukan rentang alamat di sumber data eksternal, seperti file CSV, database, dll.
 
 #### T: Bisakah saya menyertakan elemen opsional di bidang alamat surat dengan Aspose.Words untuk .NET?
 

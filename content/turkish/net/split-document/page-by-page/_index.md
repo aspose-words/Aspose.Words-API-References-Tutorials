@@ -15,7 +15,7 @@ Bu eğitimde, Aspose.Words for .NET'in belge işleme özelliğini kullanarak bir
 Başlamak için belgenizin dizinini belirtin ve belgeyi bir Belge nesnesine yükleyin. İşte nasıl:
 
 ```csharp
-// Belgeler dizininin yolu.
+//Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

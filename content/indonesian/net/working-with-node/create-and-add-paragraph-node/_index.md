@@ -78,11 +78,11 @@ J: Node paragraf dalam dokumen XML digunakan untuk mewakili paragraf teks. Ini b
 
 #### T: Bagaimana cara menambahkan simpul paragraf ke dokumen XML yang sudah ada?
 
- J: Untuk menambahkan simpul paragraf ke dokumen XML yang sudah ada, Anda bisa menggunakan`appendChild`metode untuk menambahkan simpul paragraf sebagai anak elemen lain dalam dokumen XML. Misalnya, Anda dapat menambahkannya sebagai anak dari elemen akar dokumen.
+ J: Untuk menambahkan simpul paragraf ke dokumen XML yang sudah ada, Anda bisa menggunakan`appendChild` metode untuk menambahkan simpul paragraf sebagai anak elemen lain dalam dokumen XML. Misalnya, Anda dapat menambahkannya sebagai anak dari elemen akar dokumen.
 
 #### T: Bagaimana cara menentukan konten simpul paragraf?
 
- A: Untuk mengatur isi node paragraf, Anda dapat menggunakan`createTextNode` metode untuk membuat simpul teks berisi konten yang diinginkan, lalu gunakan`appendChild` metode untuk menambahkan simpul teks itu sebagai anak dari simpul paragraf.
+ A: Untuk mengatur isi node paragraf, Anda dapat menggunakan`createTextNode` metode untuk membuat simpul teks berisi konten yang diinginkan, lalu gunakan`appendChild`metode untuk menambahkan simpul teks itu sebagai anak dari simpul paragraf.
 
 #### T: Bagaimana cara memformat teks dalam simpul paragraf?
 

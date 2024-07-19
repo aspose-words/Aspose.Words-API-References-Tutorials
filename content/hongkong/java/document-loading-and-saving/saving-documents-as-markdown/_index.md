@@ -83,7 +83,7 @@ Document doc = new Document("document_with_images.docx");
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 saveOptions.setImagesFolder("images_folder/");
 
-//儲存帶有圖像的文檔
+//儲存帶有影像的文檔
 doc.save("document_with_images.md", saveOptions);
 ```
 

@@ -72,7 +72,7 @@ Dalam tutorial ini, kita mempelajari cara menyematkan subset font dalam dokumen 
 J: Menyematkan subkumpulan font dalam dokumen PDF adalah proses menyertakan hanya mesin terbang yang digunakan dalam dokumen, bukan menyertakan semua font lengkap. Ini mengurangi ukuran file PDF dengan hanya menyertakan data font yang diperlukan untuk menampilkan karakter yang sebenarnya digunakan dalam dokumen.
 
 #### T: Apa perbedaan antara menyematkan font lengkap dan menyematkan subkumpulan font?
-J: Penyematan font penuh berarti memasukkan semua font yang digunakan dalam dokumen ke dalam file PDF, yang memastikan bahwa dokumen akan ditampilkan persis seperti desainnya, namun dapat memperbesar ukuran file PDF. Sebaliknya, menyematkan subset font hanya berisi mesin terbang yang digunakan dalam dokumen, sehingga mengurangi ukuran file PDF, namun membatasi kemampuan untuk mereplikasi tampilan dokumen secara tepat jika karakter tambahan ditambahkan nanti.
+J: Penyematan font penuh berarti menyertakan semua font yang digunakan dalam dokumen ke dalam file PDF, yang memastikan bahwa dokumen akan ditampilkan persis seperti desainnya, namun dapat memperbesar ukuran file PDF. Sebaliknya, menyematkan subset font hanya berisi mesin terbang yang digunakan dalam dokumen, sehingga mengurangi ukuran file PDF, namun membatasi kemampuan untuk mereplikasi tampilan dokumen secara tepat jika karakter tambahan ditambahkan nanti.
 
 #### T: Bagaimana cara menyematkan subkumpulan font dalam dokumen PDF menggunakan Aspose.Words untuk .NET?
 J: Untuk menyematkan subkumpulan font dalam dokumen PDF menggunakan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:

@@ -2,34 +2,58 @@
 title: Formater le nombre d'étiquettes de données dans un graphique
 linktitle: Formater le nombre d'étiquettes de données dans un graphique
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment formater le nombre d'étiquettes de données dans un graphique à l'aide d'Aspose.Words pour .NET. Personnalisez facilement les formats numériques pour les étiquettes de données.
+description: Découvrez comment formater les étiquettes de données dans les graphiques à l'aide d'Aspose.Words for .NET avec ce guide étape par étape. Améliorez vos documents Word sans effort.
 type: docs
 weight: 10
 url: /fr/net/programming-with-charts/format-number-of-data-label/
 ---
+## Introduction
 
-Ce didacticiel explique comment utiliser Aspose.Words for .NET pour formater le nombre d'étiquettes de données dans un graphique. Le code source fourni montre comment créer un graphique, ajouter des données de série et personnaliser le format numérique des étiquettes de données.
+La création de documents attrayants et informatifs implique souvent d'inclure des graphiques avec des étiquettes de données bien formatées. Si vous êtes un développeur .NET cherchant à améliorer vos documents Word avec des graphiques sophistiqués, Aspose.Words for .NET est une bibliothèque fantastique pour vous aider à y parvenir. Ce didacticiel vous guidera pas à pas tout au long du processus de formatage des étiquettes numériques dans un graphique à l'aide d'Aspose.Words for .NET.
 
-## Étape 1 : Configurer le projet
+## Conditions préalables
 
-Assurez-vous que vous disposez des conditions préalables suivantes :
+Avant de vous plonger dans le code, vous devez mettre en place quelques prérequis :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
-- Un chemin de répertoire de document où le document de sortie sera enregistré.
+-  Aspose.Words for .NET : assurez-vous que la bibliothèque Aspose.Words for .NET est installée. Si vous ne l'avez pas encore installé, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+- Environnement de développement : vous devez disposer d'un environnement de développement .NET. Visual Studio est fortement recommandé.
+- Connaissance de base de C# : une connaissance de la programmation C# est essentielle car ce didacticiel implique l'écriture et la compréhension du code C#.
+-  Licence temporaire : pour utiliser Aspose.Words sans aucune limitation, vous pouvez obtenir une[permis temporaire](https://purchase.aspose.com/temporary-license/).
 
-## Étape 2 : Créez un nouveau document et insérez un graphique
+Passons maintenant au processus étape par étape de formatage des étiquettes numériques dans un graphique.
 
- Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
+## Importer des espaces de noms
+
+Tout d’abord, nous devons importer les espaces de noms nécessaires pour travailler avec Aspose.Words for .NET. Ajoutez les lignes suivantes en haut de votre fichier C# :
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Étape 1 : Configurez votre répertoire de documents
+
+Avant de pouvoir commencer à manipuler votre document Word, vous devez spécifier le répertoire dans lequel votre document sera enregistré. Ceci est essentiel pour l’opération de sauvegarde ultérieure.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
+
+## Étape 2 : initialiser le document et DocumentBuilder
+
+ L'étape suivante consiste à initialiser un nouveau`Document` et un`DocumentBuilder` . Le`DocumentBuilder` est une classe d'assistance qui nous permet de construire le contenu du document.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ensuite, insérez un graphique dans le document à l'aide du`InsertChart` méthode du`DocumentBuilder`. Dans cet exemple, nous allons insérer un graphique linéaire.
+## Étape 3 : Insérer un graphique dans le document
+
+ Maintenant, insérons un graphique dans le document en utilisant le`DocumentBuilder`. Dans ce didacticiel, nous utiliserons un graphique linéaire comme exemple.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,94 +61,74 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## Étape 3 : Ajouter des données de série au graphique
+Ici, nous insérons un graphique linéaire avec une largeur et une hauteur spécifiques et définissons le titre du graphique.
 
-Ajoutez des données de série au graphique. Dans cet exemple, nous ajouterons trois catégories et leurs valeurs correspondantes.
+## Étape 4 : Effacer la série par défaut et ajouter une nouvelle série
+
+Par défaut, le graphique comportera des séries pré-générées. Nous devons les effacer et ajouter notre propre série avec des points de données spécifiques.
 
 ```csharp
+// Supprimez la série générée par défaut.
 chart.Series.Clear();
+
+// Ajoutez une nouvelle série avec des points de données personnalisés.
 ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-    new string[] { "Category 1", "Category 2", "Category 3" }, 
-    new double[] { 2.5, 1.5, 3.5 });
-series1.HasDataLabels = true;
+	new string[] { "Category 1", "Category 2", "Category 3" }, 
+	new double[] { 2.5, 1.5, 3.5 });
 ```
 
-## Étape 4 : Personnalisez le format numérique des étiquettes de données
+## Étape 5 : Activer les étiquettes de données
 
- Pour formater le nombre d'étiquettes de données, accédez au`DataLabels` collection associée à la série.
+Pour afficher les étiquettes de données sur le graphique, nous devons les activer pour notre série.
 
 ```csharp
+series1.HasDataLabels = true;
 series1.DataLabels.ShowValue = true;
-series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-Dans cet exemple, nous définissons différents formats de nombres pour chaque étiquette de données. La première étiquette de données est formatée sous forme de devise, la seconde sous forme de date et la troisième sous forme de pourcentage.
+## Étape 6 : Formater les étiquettes de données
 
-## Étape 5 : Enregistrez le document
+Le cœur de ce didacticiel est le formatage des étiquettes de données. Nous pouvons appliquer différents formats de nombres à chaque étiquette de données individuellement.
 
- Enfin, enregistrez le document dans le répertoire spécifié à l'aide du`Save` méthode du`Document` objet.
+```csharp
+series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Format monétaire
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Format de date
+series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Format pourcentage
+```
+
+ De plus, vous pouvez lier le format d'une étiquette de données à une cellule source. Lorsqu'il est lié, le`NumberFormat` sera réinitialisé au général et hérité de la cellule source.
+
+```csharp
+series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
+```
+
+## Étape 7 : Enregistrez le document
+
+Enfin, enregistrez le document dans le répertoire spécifié.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-Ceci termine la mise en œuvre du formatage du nombre d’étiquettes de données dans un graphique à l’aide d’Aspose.Words pour .NET.
-
-### Exemple de code source pour le format du numéro d'étiquette de données à l'aide d'Aspose.Words pour .NET 
-
-```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Text = "Data Labels With Different Number Format";
-	// Supprimez la série générée par défaut.
-	chart.Series.Clear();
-	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-		new string[] { "Category 1", "Category 2", "Category 3" }, 
-		new double[] { 2.5, 1.5, 3.5 });
-	series1.HasDataLabels = true;
-	series1.DataLabels.ShowValue = true;
-	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// Ou vous pouvez définir le code de format pour qu'il soit lié à une cellule source,
-	//dans ce cas, NumberFormat sera réinitialisé sur général et hérité d'une cellule source.
-	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
-	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
-```
+Cela enregistre votre document sous le nom spécifié et garantit que votre graphique avec les étiquettes de données formatées est préservé.
 
 ## Conclusion
 
-Dans ce didacticiel, vous avez appris à formater le nombre d'étiquettes de données dans un graphique à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez créer un graphique, ajouter des données de série et personnaliser le format numérique des étiquettes de données en fonction de vos besoins.
+Le formatage des étiquettes de données dans un graphique à l'aide d'Aspose.Words pour .NET peut considérablement améliorer la lisibilité et le professionnalisme de vos documents Word. En suivant ce guide étape par étape, vous devriez maintenant pouvoir créer un graphique, ajouter des séries de données et formater les étiquettes de données pour répondre à vos besoins. Aspose.Words for .NET est un outil puissant qui permet une personnalisation et une automatisation approfondies des documents Word, ce qui en fait un atout inestimable pour les développeurs .NET.
 
- Aspose.Words for .NET fournit une API complète pour le traitement de mots avec des graphiques dans des documents Word, vous permettant de manipuler divers aspects du graphique, y compris les étiquettes de données. En accédant au`DataLabels` collection associée à une série, vous pouvez personnaliser le format numérique des étiquettes de données individuelles.
+## FAQ
 
-L'API vous permet de contrôler l'affichage des valeurs, de définir différents formats numériques pour chaque étiquette de données et de lier le format numérique à une cellule source. Cette flexibilité vous permet de présenter des données numériques dans des graphiques avec le formatage souhaité, tel que des symboles monétaires, des formats de date et des valeurs en pourcentage.
+### Qu’est-ce qu’Aspose.Words pour .NET ?
+Aspose.Words for .NET est une bibliothèque puissante permettant de créer, manipuler et convertir des documents Word par programme à l'aide de C#.
 
-En utilisant Aspose.Words pour .NET, vous pouvez intégrer de puissantes fonctionnalités de création de graphiques dans vos applications .NET et générer des documents d'aspect professionnel avec des graphiques et des étiquettes de données entièrement formatés.
+### Puis-je formater d’autres types de graphiques avec Aspose.Words pour .NET ?
+Oui, Aspose.Words for .NET prend en charge une variété de types de graphiques, notamment à barres, à colonnes, à secteurs, etc.
 
-### FAQ
+### Comment puis-je obtenir une licence temporaire pour Aspose.Words for .NET ?
+ Vous pouvez obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
 
-#### T1. Qu’est-ce qu’Aspose.Words pour .NET ?
-Aspose.Words for .NET est une bibliothèque de traitement de documents riche en fonctionnalités qui permet aux développeurs de créer, manipuler et enregistrer des documents Word par programme dans des applications .NET. Il offre un large éventail de fonctionnalités pour le traitement de texte avec des éléments de document, notamment des graphiques et des étiquettes de données.
+### Est-il possible de lier des étiquettes de données aux cellules sources dans Excel ?
+Oui, vous pouvez lier des étiquettes de données aux cellules source, permettant ainsi d'hériter du format numérique de la cellule source.
 
-#### Q2. Comment puis-je installer Aspose.Words pour .NET ?
-Vous pouvez installer Aspose.Words pour .NET en le téléchargeant à l'aide du gestionnaire de packages NuGet dans Visual Studio. Recherchez simplement « Aspose.Words » dans le gestionnaire de packages NuGet et installez-le dans votre projet.
-
-#### Q3. Puis-je formater d’autres aspects du graphique à l’aide d’Aspose.Words for .NET ?
-Oui, Aspose.Words for .NET offre des fonctionnalités étendues pour formater divers aspects d'un graphique. En plus des étiquettes de données, vous pouvez personnaliser le type de graphique, les données de série, les propriétés des axes, la légende, le titre, la zone de tracé et de nombreux autres éléments du graphique. L'API offre un contrôle précis sur l'apparence et le formatage des graphiques.
-
-#### Q4. Puis-je appliquer différents formats de nombres à différentes étiquettes de données dans la même série ?
-Oui, Aspose.Words for .NET vous permet d'appliquer différents formats de nombres à des étiquettes de données individuelles au sein de la même série. En accédant au`DataLabels` collection associée à une série, vous pouvez définir la`FormatCode` propriété de chaque étiquette de données pour spécifier le format numérique souhaité. Cela vous permet de présenter des valeurs numériques dans différents formats au sein du même graphique.
-
-#### Q5. Puis-je utiliser des formats numériques personnalisés pour les étiquettes de données ?
- Oui, Aspose.Words for .NET prend en charge les formats numériques personnalisés pour les étiquettes de données. Vous pouvez spécifier le format numérique souhaité en réglant le`FormatCode` propriété d'une étiquette de données en un code de format personnalisé. Cela vous donne la possibilité d'appliquer une large gamme de formats numériques, tels que des symboles monétaires, des formats de date, des valeurs en pourcentage, etc.
-
-#### Q6. Puis-je enregistrer le graphique avec des étiquettes de données formatées dans différents formats ?
-Oui, Aspose.Words for .NET vous permet d'enregistrer le document contenant le graphique avec des étiquettes de données formatées dans différents formats, tels que DOCX, PDF, HTML, etc. Vous pouvez choisir le format approprié en fonction de vos besoins et utiliser le`Save` méthode du`Document` objet pour enregistrer le document. Les étiquettes de données formatées seront conservées dans le document enregistré.
+### Où puis-je trouver une documentation plus détaillée pour Aspose.Words pour .NET ?
+ Vous pouvez trouver une documentation complète[ici](https://reference.aspose.com/words/net/).

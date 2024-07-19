@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- Trong bước này, chúng tôi định cấu hình các tùy chọn sao lưu cho hình ảnh. Chúng tôi tạo ra một cái mới`ImageSaveOptions` đối tượng chỉ định định dạng lưu mong muốn, ở đây là "Jpeg" cho định dạng JPEG. Chúng tôi cũng đặt phạm vi trang cần chuyển đổi bằng cách sử dụng`PageSet`sự vật. Cuối cùng, chúng ta điều chỉnh độ sáng và độ tương phản của hình ảnh bằng cách sử dụng`ImageBrightness` Và`ImageContrast` các thuộc tính tương ứng. Chúng tôi cũng thay đổi độ phân giải ngang bằng cách sử dụng`HorizontalResolution` tài sản.
+ Trong bước này, chúng tôi định cấu hình các tùy chọn sao lưu cho hình ảnh. Chúng tôi tạo ra một cái mới`ImageSaveOptions` đối tượng chỉ định định dạng lưu mong muốn, ở đây là "Jpeg" cho định dạng JPEG. Chúng tôi cũng đặt phạm vi trang cần chuyển đổi bằng cách sử dụng`PageSet`sự vật. Cuối cùng, chúng ta điều chỉnh độ sáng và độ tương phản của hình ảnh bằng cách sử dụng`ImageBrightness`Và`ImageContrast` các thuộc tính tương ứng. Chúng tôi cũng thay đổi độ phân giải ngang bằng cách sử dụng`HorizontalResolution` tài sản.
 
 ## Bước 4: Sao lưu hình ảnh
 

@@ -95,7 +95,7 @@ Diese Zeile fügt unseren Text in das Dokument ein. Einfach, aber jetzt ist er i
 
 ## Schritt 6: Speichern Sie das Dokument
 
-Schließlich ist es Zeit, unsere Arbeit zu speichern. Speichern wir das Dokument im angegebenen Verzeichnis unter einem aussagekräftigen Namen.
+Schließlich ist es Zeit, unsere Arbeit zu speichern. Speichern wir das Dokument im angegebenen Verzeichnis unter einem beschreibenden Namen.
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");

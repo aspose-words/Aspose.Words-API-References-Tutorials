@@ -9,9 +9,9 @@ url: /zh-hant/net/programming-with-pdfsaveoptions/
 ---
 使用 PdfSaveOptions 進行文字處理的 Aspose.Words for .NET 教學將引導您了解使用 PDF 儲存選項進行文字處理的各種功能和技術。這些教學課程可協助您了解如何透過變更版面設定、字體、圖片、元資料等來自訂 Word 到 PDF 轉換。
 
-您將了解如何調整影像品質選項、選擇影像的壓縮等級、設定 PDF 安全性設定（例如加密和權限），甚至將浮水印插入生成的 PDF 檔案中。這些教學課程還包括詳細的程式碼範例，可協助您在專案中練習這些功能。
+您將了解如何調整影像品質選項、選擇影像的壓縮等級、設定加密和權限等 PDF 安全性設置，甚至將浮水印插入生成的 PDF 檔案中。這些教學課程還包括詳細的程式碼範例，可協助您在專案中練習這些功能。
 
-無論您想要將 Word 文件轉換為 PDF 以便在線上分發、存檔還是列印，這些教學課程都可以為您提供獲得準確、高品質結果的知識。透過 Aspose.Words for .NET 和 PdfSaveOptions，您可以最佳化檔案轉換過程並獲得滿足您特定需求的 PDF 檔案。
+無論您想要將 Word 文件轉換為 PDF 以便在線上分發、存檔或列印，這些教學課程都可以為您提供獲得準確、高品質結果的知識。透過 Aspose.Words for .NET 和 PdfSaveOptions，您可以最佳化檔案轉換過程並獲得滿足您特定需求的 PDF 檔案。
 
  ## 教學
 | 標題 | 描述 |
@@ -24,7 +24,7 @@ url: /zh-hant/net/programming-with-pdfsaveoptions/
 | [透過停用嵌入字體來減少 PDF 大小](./disable-embed-windows-fonts/) | 了解如何在使用 Aspose.Words for .NET 將文件轉換為 PDF 時停用 Windows 字體嵌入。 |
 | [透過跳過嵌入的 Arial 和 Times Roman 字體優化 PDF 大小](./skip-embedded-arial-and-times-roman-fonts/) | 使用 Aspose.Words for .NET 產生 PDF 而不嵌入 Arial 和 Times Roman 字體的逐步指南。 |
 | [透過不嵌入核心字體來減少 PDF 文件大小](./avoid-embedding-core-fonts/) | 了解使用 Aspose.Words for .NET 將 Word 文件轉換為 PDF 時如何避免基本字體嵌入。 |
-| [PDF 文件中的轉義 URI](./escape-uri/) | 使用 Aspose.Words for .NET 轉義 Uri 的逐步指南。 |
+| [PDF 文件中的轉義 URI](./escape-uri/) | 了解如何使用 Aspose.Words for .NET 轉義 PDF 中的 URI。本詳細指南將逐步引導您完成整個過程。 |
 | [將 Word 文件頁首頁腳書籤匯出至 PDF 文檔](./export-header-footer-bookmarks/) | 使用 Aspose.Words for .NET 匯出頁首和頁尾書籤的逐步指南。 |
 | [透過將 Wmf 字體縮放到圖元檔案大小來減少 PDF 大小](./scale-wmf-fonts-to-metafile-size/) | 使用 Aspose.Words for .NET 轉換為 PDF 時調整 WMF 字體大小的逐步指南。 |
 | [透過附加文字定位來改善 PDF 文字定位](./additional-text-positioning/) | 了解使用 Aspose.Words for .NET 將 Word 文件轉換為 PDF 時如何控製附加文字的位置。 |

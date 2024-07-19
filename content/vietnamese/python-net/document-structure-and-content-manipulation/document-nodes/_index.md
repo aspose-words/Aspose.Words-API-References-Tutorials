@@ -41,7 +41,7 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, False):
     print(paragraph.to_string())
 ```
 
-## Làm việc với các đoạn văn và các dòng lệnh
+## Làm việc với các đoạn văn và dòng lệnh
 
 Đoạn văn chứa các dòng chạy, là các phần văn bản có cùng định dạng. Bạn có thể thêm đoạn văn mới, sửa đổi đoạn văn hiện có và áp dụng định dạng.
 

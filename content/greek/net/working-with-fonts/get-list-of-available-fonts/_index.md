@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Προσθέστε μια νέα πηγή φακέλου που θα δώσει εντολή στο Aspose.Words να αναζητήσει γραμματοσειρές στον παρακάτω φάκελο.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//Προσθέστε τον προσαρμοσμένο φάκελο που περιέχει τις γραμματοσειρές μας στη λίστα με τις υπάρχουσες πηγές γραμματοσειρών.
+// Προσθέστε τον προσαρμοσμένο φάκελο που περιέχει τις γραμματοσειρές μας στη λίστα με τις υπάρχουσες πηγές γραμματοσειρών.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 #### Ε: Πώς μπορώ να χρησιμοποιήσω τη λίστα με τις διαθέσιμες γραμματοσειρές στα έγγραφα του Word;
 
-Α: Για να χρησιμοποιήσετε τη λίστα με τις διαθέσιμες γραμματοσειρές στα έγγραφα του Word, μπορείτε να περιηγηθείτε στη λίστα και να επιλέξετε τις κατάλληλες γραμματοσειρές χρησιμοποιώντας τις μεθόδους και τις ιδιότητες του`FontSettings` τάξη στο Aspose.Λέξεις.
+ Α: Για να χρησιμοποιήσετε τη λίστα με τις διαθέσιμες γραμματοσειρές στα έγγραφα του Word, μπορείτε να περιηγηθείτε στη λίστα και να επιλέξετε τις κατάλληλες γραμματοσειρές χρησιμοποιώντας τις μεθόδους και τις ιδιότητες του`FontSettings` τάξη στο Aspose.Λέξεις.

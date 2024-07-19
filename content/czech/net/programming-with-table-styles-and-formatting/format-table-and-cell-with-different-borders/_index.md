@@ -30,20 +30,20 @@ Chcete-li začít vytvářet tabulku, použijeme`StartTable()` metodou tvůrce d
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // Nastavte okraje pro celou tabulku.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // Nastavit odsazení pro tuto buňku.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // Zadejte pro druhou buňku jiné odsazení buňky.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // Vymazat formátování buněk z předchozích operací.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // Vytvořte silnější ohraničení pro první buňku v tomto řádku. Bude to jiné
 // vzhledem k hranicím definovaným pro tabulku.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ gratuluji! Nyní jste pomocí Aspose.Words for .NET naformátovali tabulku a bu�
 ### Ukázka zdrojového kódu pro formátování tabulky a buňky s různými okraji pomocí Aspose.Words pro .NET 
 
 ```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//Nastavte okraje pro celou tabulku.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// Nastavte stínování buňky pro tuto buňku.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// Zadejte jiné stínování buňky pro druhou buňku.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// Vymažte formátování buňky z předchozích operací.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// Vytvořte větší ohraničení pro první buňku tohoto řádku. Tohle bude jiné
-	// ve srovnání s hranicemi stanovenými pro tabulku.
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//Nastavte okraje pro celou tabulku.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// Nastavte stínování buňky pro tuto buňku.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// Zadejte jiné stínování buňky pro druhou buňku.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// Vymažte formátování buňky z předchozích operací.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// Vytvořte větší ohraničení pro první buňku tohoto řádku. Tohle bude jiné
+// ve srovnání s hranicemi stanovenými pro tabulku.
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## Závěr

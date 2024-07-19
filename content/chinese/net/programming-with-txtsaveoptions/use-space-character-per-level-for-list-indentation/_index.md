@@ -15,7 +15,7 @@ Aspose.Words for .NET 是一个功能强大的库，可用于在 C# 应用程序
 
 ## 创建文档并添加内容
 
-第一步是创建一个新文档并向其中添加内容。使用 Document 类创建一个新的文档实例。然后使用 DocumentBuilder 类添加文本并创建一个具有多级缩进的列表。以下是示例：
+第一步是创建一个新文档并向其中添加内容。使用 Document 类创建一个新文档实例。然后使用 DocumentBuilder 类添加文本并创建一个具有多级缩进的列表。以下是示例：
 
 ```csharp
 Document doc = new Document();
@@ -103,7 +103,7 @@ Aspose.Words for .NET 是一个功能强大的库，用于在 C# 应用程序中
 
 使用创建一个新文档`Document`班级。
 
-使用`DocumentBuilder`类来向文档添加内容并创建具有多级缩进的列表。
+使用`DocumentBuilder`类向文档添加内容并创建具有多级缩进的列表。
 
 添加内容并配置列表缩进后，使用`TxtSaveOptions`类并设置`ListIndentation.Count`属性缩进级别数和`ListIndentation.Character`空间上的财产（`' '`）来使用。
 

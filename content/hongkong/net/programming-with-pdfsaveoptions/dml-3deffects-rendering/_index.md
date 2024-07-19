@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 使用`Save`的方法`Document`類別透過指定儲存選項將文件儲存為 PDF 格式。
 
 #### Q：如何檢查產生的 PDF 文件中是否已渲染 3D DML 效果？
-答：若要檢查產生的 PDF 文件中是否已呈現 3D DML 效果，請使用相容的 PDF 檢視器（例如 Adobe Acrobat Reader）開啟 PDF 文件，然後檢查該文件。您應該會看到原始文件中顯示的 3D 效果。
+答：若要檢查產生的 PDF 文件中是否已渲染 3D DML 效果，請使用相容的 PDF 檢視器（例如 Adobe Acrobat Reader）開啟 PDF 文件，然後檢查該文件。您應該會看到原始文件中顯示的 3D 效果。
 
 
 

@@ -12,7 +12,7 @@ Aspose.Words for Java cung cấp các công cụ mạnh mẽ để tạo kiểu 
 
 ## Hiểu các nguyên tắc cơ bản về kiểu dáng tài liệu
 
-Trước khi đi sâu vào các kỹ thuật tạo kiểu tài liệu nâng cao, điều cần thiết là phải nắm bắt các nguyên tắc cơ bản. Trong các hướng dẫn này, chúng tôi sẽ đề cập đến những kiến thức cơ bản về xử lý và tạo kiểu tài liệu, khám phá các yếu tố khác nhau góp phần tạo nên tính thẩm mỹ cho tài liệu. Bạn sẽ học cách thiết lập cấu trúc tài liệu, áp dụng các kiểu tiêu đề khác nhau và định dạng các đoạn văn để tạo nội dung rõ ràng và có tổ chức. Ngoài ra, chúng ta sẽ khám phá cách sử dụng danh sách, bảng và các thành phần khác để trình bày dữ liệu một cách hiệu quả và hấp dẫn về mặt trực quan. Những kỹ năng nền tảng này sẽ đóng vai trò là cơ sở vững chắc để thành thạo nghệ thuật tạo kiểu tài liệu bằng Aspose.Words cho Java.
+Trước khi đi sâu vào các kỹ thuật tạo kiểu tài liệu nâng cao, điều cần thiết là phải nắm bắt các nguyên tắc cơ bản. Trong những hướng dẫn này, chúng tôi sẽ đề cập đến những kiến thức cơ bản về xử lý và tạo kiểu tài liệu, khám phá các yếu tố khác nhau góp phần tạo nên tính thẩm mỹ cho tài liệu. Bạn sẽ học cách thiết lập cấu trúc tài liệu, áp dụng các kiểu tiêu đề khác nhau và định dạng các đoạn văn để tạo nội dung rõ ràng và có tổ chức. Ngoài ra, chúng ta sẽ khám phá cách sử dụng danh sách, bảng và các thành phần khác để trình bày dữ liệu một cách hiệu quả và hấp dẫn về mặt trực quan. Những kỹ năng nền tảng này sẽ đóng vai trò là cơ sở vững chắc để thành thạo nghệ thuật tạo kiểu tài liệu bằng Aspose.Words cho Java.
 
 ## Tận dụng các tính năng tạo kiểu nâng cao
 

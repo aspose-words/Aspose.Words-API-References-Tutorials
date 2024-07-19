@@ -149,7 +149,7 @@ Menerapkan gaya dan tema menggunakan Aspose.Words untuk Python memberdayakan And
 
 ## FAQ
 
-### Bagaimana cara mengunduh Aspose.Words untuk Python?
+### Bagaimana saya bisa mengunduh Aspose.Words untuk Python?
 
  Anda dapat mengunduh Aspose.Words untuk Python dari situs web:[Tautan Unduh](https://releases.aspose.com/words/python/).
 

@@ -10,7 +10,7 @@ url: /es/java/table-processing/managing-tables-layouts/
 
 ## Introducción
 
-Cuando se trata de trabajar con documentos en Java, Aspose.Words es una herramienta potente y versátil. En esta guía completa, lo guiaremos a través del proceso de administración de tablas y diseños dentro de sus documentos usando Aspose.Words para Java. Ya sea un desarrollador principiante o experimentado, encontrará información valiosa y ejemplos prácticos de código fuente para optimizar sus tareas de gestión de documentos.
+Cuando se trata de trabajar con documentos en Java, Aspose.Words es una herramienta potente y versátil. En esta guía completa, lo guiaremos a través del proceso de administración de tablas y diseños dentro de sus documentos usando Aspose.Words para Java. Ya sea un principiante o un desarrollador experimentado, encontrará información valiosa y ejemplos prácticos de código fuente para optimizar sus tareas de gestión de documentos.
 
 ## Comprender la importancia del diseño del documento
 

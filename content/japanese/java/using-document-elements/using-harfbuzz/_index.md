@@ -76,7 +76,7 @@ HarfBuzz は、複雑なスクリプトと言語をサポートするオープ�
 
 ### 2. Aspose.Words で HarfBuzz を使用する理由は何ですか?
 
-HarfBuzz は Aspose.Words のテキスト整形機能を強化し、複雑なスクリプトや言語の正確なレンダリングを保証します。
+HarfBuzz は Aspose.Words のテキスト形成機能を強化し、複雑なスクリプトや言語の正確なレンダリングを保証します。
 
 ### 3. HarfBuzz を他の Aspose 製品と一緒に使用できますか?
 

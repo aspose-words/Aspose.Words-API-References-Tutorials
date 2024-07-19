@@ -16,7 +16,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel
 - A projektben telepített .NET Aspose.Words könyvtár
 
 ## 1. lépés: Hozzon létre egy dokumentumot és egy konstruktort
- Először létrehozunk egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` konstruktor a dokumentum elkészítéséhez.
+ Először is létrehozunk egy példányt a`Document` osztály és egy kapcsolódó`DocumentBuilder` konstruktor a dokumentum elkészítéséhez.
 
 ```csharp
 Document doc = new Document();
@@ -73,7 +73,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### K: Hogyan lehet tartalmat hozzáadni a dokumentumhoz az Aspose.Words for .NET-ben?
 
- V: Ha tartalmat szeretne hozzáadni a dokumentumhoz az Aspose.Words for .NET-ben, használja a`DocumentBuilder` konstruktőr. Ebben a példában két sornyi szöveget adunk hozzá:
+ V: Ha tartalmat szeretne hozzáadni a dokumentumhoz az Aspose.Words for .NET alkalmazásban, használja a`DocumentBuilder` konstruktőr. Ebben a példában két sornyi szöveget adunk hozzá:
 
 ```csharp
 builder. Writen("Hello1");

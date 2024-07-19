@@ -22,7 +22,7 @@ Document doc = new Document(MyDir + "Large document.docx");
 
 ## 第 2 步：将文档分成几个部分
 
-现在我们要遍历文档的每个部分，并将文档逐节拆分成更小的部分。操作方法如下：
+现在我们要遍历文档的每个部分，并将文档逐节拆分成更小的部分。具体操作如下：
 
 ```csharp
 for (int i = 0; i < doc. Sections. Count; i++)

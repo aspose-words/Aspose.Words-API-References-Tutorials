@@ -17,7 +17,7 @@ url: /zh/net/document-formatting/get-paragraph-style-separator/
 在我们进入代码之前，让我们确保您已拥有所需的所有工具：
 
 - Visual Studio：确保已安装。如果没有，请从 Microsoft 网站下载并安装。
--  Aspose.Words for .NET：如果您还没有，请获取最新版本[这里](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET：如果您还没有，请获取最新版本[这里](https://releases.aspose.com/words/net/).
 - 示例 Word 文档：此文档应包含可供我们使用的段落样式分隔符。您可以创建一个文档或使用现有文档。
 
 ## 导入命名空间

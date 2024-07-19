@@ -28,7 +28,7 @@ Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có sẵn các đi�
 
 ## Bước 2: Tải tài liệu Word
 
- Trong bước này, chúng tôi sẽ tải một tài liệu Word mẫu mà chúng tôi muốn làm việc. Thay thế`"Your Document Directory"` với đường dẫn thực tế tới tài liệu Word của bạn:
+ Trong bước này, chúng tôi sẽ tải một tài liệu Word mẫu mà chúng tôi muốn làm việc. Thay thế`"Your Document Directory"` với đường dẫn thực tế đến tài liệu Word của bạn:
 
 ```java
 String dataDir = "Your Document Directory";

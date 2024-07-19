@@ -116,7 +116,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 
 ## 3. Aspose.Words for .NET'in ana özellikleri nelerdir?
 
- Aspose.Words for .NET, belge oluşturma, biçimlendirme, dönüştürme ve işleme gibi çok çeşitli özellikler sunar. Yetenekleri hakkında daha fazla bilgiyi şuradan okuyabilirsiniz.[API belgeleri](https://reference.aspose.com/words/net/).
+Aspose.Words for .NET, belge oluşturma, biçimlendirme, dönüştürme ve işleme gibi çok çeşitli özellikler sunar. Yetenekleri hakkında daha fazla bilgiyi şuradan okuyabilirsiniz.[API belgeleri](https://reference.aspose.com/words/net/).
 
 ## 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 

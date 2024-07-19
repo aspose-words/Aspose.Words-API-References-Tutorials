@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/programming-with-table-styles-and-formatting/define-conditional-formatting/
 ---
 
-In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess zum Definieren einer bedingten Formatierung mit Aspose.Words für .NET. Wir erklären den mitgelieferten C#-Quellcode und stellen Ihnen eine umfassende Anleitung zur Verfügung, die Ihnen hilft, diese Funktion zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials wissen Sie, wie Sie mit Aspose.Words für .NET eine bedingte Formatierung auf eine Tabelle in Ihren Word-Dokumenten anwenden.
+In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess zum Definieren bedingter Formatierung mit Aspose.Words für .NET. Wir erklären den mitgelieferten C#-Quellcode und stellen Ihnen eine umfassende Anleitung zur Verfügung, die Ihnen hilft, diese Funktion zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials wissen Sie, wie Sie mit Aspose.Words für .NET bedingte Formatierung auf eine Tabelle in Ihren Word-Dokumenten anwenden.
 
 ## Schritt 1: Dokumentverzeichnis festlegen
 Zunächst müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis festlegen. Dies ist der Ort, an dem Sie Ihr bearbeitetes Word-Dokument speichern möchten. Ersetzen Sie „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad.
@@ -49,8 +49,8 @@ tableStyle.ConditionalStyles.FirstRow.Shading.BackgroundPatternColor = Color.Gre
 tableStyle.ConditionalStyles.FirstRow.Shading.Texture = TextureIndex.TextureNone;
 ```
 
-## Schritt 5: Den Tabellenstil auf die Tabelle anwenden
- Zum Schluss wenden wir den von uns erstellten Tabellenstil auf die Tabelle an, indem wir`Style` Eigenschaft der Tabelle.
+## Schritt 5: Tabellenstil auf die Tabelle anwenden
+ Zum Schluss wenden wir den erstellten Tabellenstil auf die Tabelle an, indem wir`Style` Eigenschaft der Tabelle.
 
 ```csharp
 table.Style = tableStyle;

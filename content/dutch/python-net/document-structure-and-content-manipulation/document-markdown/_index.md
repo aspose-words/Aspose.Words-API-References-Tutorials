@@ -91,7 +91,7 @@ doc.save("output.docx")
 
 ## Conclusie
 
-In deze handleiding hebben we de fascinerende combinatie van Markdown-opmaak in Word-documenten onderzocht met behulp van Aspose.Words voor Python. We hebben de basisbeginselen besproken van het opzetten van uw omgeving, het laden en maken van documenten, het toevoegen van Markdown-tekst, het opmaken, het invoegen van afbeeldingen, het omgaan met tabellen en lijsten, en de pagina-opmaak. Deze krachtige integratie opent een overvloed aan creatieve mogelijkheden voor het genereren van dynamische en visueel aantrekkelijke inhoud.
+In deze handleiding hebben we de fascinerende combinatie van Markdown-opmaak in Word-documenten onderzocht met behulp van Aspose.Words voor Python. We hebben de basisbeginselen besproken van het instellen van uw omgeving, het laden en maken van documenten, het toevoegen van Markdown-tekst, het opmaken, het invoegen van afbeeldingen, het omgaan met tabellen en lijsten, en de pagina-opmaak. Deze krachtige integratie opent een overvloed aan creatieve mogelijkheden voor het genereren van dynamische en visueel aantrekkelijke inhoud.
 
 ## Veelgestelde vragen
 

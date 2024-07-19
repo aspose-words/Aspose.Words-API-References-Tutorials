@@ -2,119 +2,123 @@
 title: Přizpůsobte jednu sérii grafů v grafu
 linktitle: Přizpůsobte jednu sérii grafů v grafu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak přizpůsobit jednotlivé řady grafů v grafu pomocí Aspose.Words for .NET.
+description: Naučte se, jak přizpůsobit jednotlivé řady grafů v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémový zážitek.
 type: docs
 weight: 10
 url: /cs/net/programming-with-charts/single-chart-series/
 ---
+## Úvod
 
-Tento tutoriál vysvětluje, jak používat Aspose.Words pro .NET k přizpůsobení jednotlivých řad grafů v grafu. Poskytnutý zdrojový kód ukazuje, jak vytvořit graf, získat přístup ke konkrétním řadám a upravit jejich vlastnosti.
+Nazdárek! Chtěli jste někdy oživit své dokumenty Word nějakými elegantními tabulkami? Tak to jste na správném místě! Dnes se ponoříme do světa Aspose.Words pro .NET, abychom přizpůsobili jednotlivé řady grafů v grafu. Ať už jste ostřílený profík nebo teprve začínáte, tento průvodce vás krok za krokem provede celým procesem. Tak se připoutejte a pojďme mapovat!
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Ujistěte se, že máte následující předpoklady:
+Než začneme, ujistěte se, že máme vše, co potřebujeme. Zde je rychlý kontrolní seznam:
 
-- Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
-- Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
+1.  Aspose.Words for .NET Library: Můžete si ji stáhnout z[tady](https://releases.aspose.com/words/net/).
+2. Visual Studio: Všechny nejnovější verze by měly stačit.
+3. Základní porozumění C#: Nic moc přepychového, stačí jen základy.
 
-## Krok 2: Vytvořte nový dokument a vložte graf
+## Importovat jmenné prostory
 
- Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
+Nejprve musíme importovat potřebné jmenné prostory. Je to jako připravit jeviště před velkou show.
 
 ```csharp
-// Cesta k vašemu adresáři dokumentů
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Krok 1: Nastavte svůj dokument
+
+Začněme nastavením nového dokumentu aplikace Word. Tady se bude dít všechna kouzla.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Cesta k vašemu adresáři dokumentů
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Dále použijte`InsertChart` metoda`DocumentBuilder` pro vložení spojnicového grafu do dokumentu.
+## Krok 2: Vložte graf
+
+Dále do našeho dokumentu vložíme spojnicový graf. Berte to jako přidání plátna, na které namalujeme naše mistrovské dílo.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Krok 3: Přístup k řadě grafů a jejich přizpůsobení
+## Krok 3: Přístup k řadě grafů
 
- Chcete-li upravit jednu řadu grafů, musíte mít přístup k`ChartSeries` objekty grafu.
+Nyní se podívejme na sérii grafů. Zde začneme s přizpůsobením.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
 ChartSeries series1 = chart.Series[1];
+```
 
+## Krok 4: Přejmenujte řadu grafů
+
+Pojďme dát naší grafové sérii nějaké smysluplné názvy. Je to jako označit své štětce předtím, než začnete malovat.
+
+```csharp
 series0.Name = "Chart Series Name 1";
 series1.Name = "Chart Series Name 2";
+```
 
+## Krok 5: Vyhlaďte čáry
+
+Chcete, aby tyto linie vypadaly hladce a uhlazeně? Udělejme to pomocí Catmull-Rom splajnů.
+
+```csharp
 series0.Smooth = true;
 series1.Smooth = true;
+```
 
+## Krok 6: Zacházení se zápornými hodnotami
+
+Někdy mohou být data negativní. Zajistěme, aby to naše tabulka zvládla elegantně.
+
+```csharp
 series0.InvertIfNegative = true;
+```
+
+## Krok 7: Přizpůsobte značky
+
+Fixy jsou jako malé tečky na našich linkách. Nechme je vyniknout.
+
+```csharp
 series0.Marker.Symbol = MarkerSymbol.Circle;
 series0.Marker.Size = 15;
-
 series1.Marker.Symbol = MarkerSymbol.Star;
 series1.Marker.Size = 10;
 ```
 
-## Krok 4: Uložte dokument
+## Krok 8: Uložte dokument
 
- Nakonec uložte dokument do určeného adresáře pomocí`Save` metoda`Document` objekt.
+Nakonec náš dokument uložíme. Zde obdivujeme naši práci.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 ```
 
-Tím je dokončena implementace přizpůsobení jedné řady grafů pomocí Aspose.Words pro .NET.
-
-### Příklad zdrojového kódu pro Single Chart Series pomocí Aspose.Words pro .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = chart.Series[0];
-	ChartSeries series1 = chart.Series[1];
-	series0.Name = "Chart Series Name 1";
-	series1.Name = "Chart Series Name 2";
-	// Můžete také určit, zda má být čára spojující body v grafu vyhlazena pomocí Catmull-Rom splajnů.
-	series0.Smooth = true;
-	series1.Smooth = true;
-	// Určuje, zda má nadřazený prvek ve výchozím nastavení invertovat své barvy, pokud je hodnota záporná.
-	series0.InvertIfNegative = true;
-	series0.Marker.Symbol = MarkerSymbol.Circle;
-	series0.Marker.Size = 15;
-	series1.Marker.Symbol = MarkerSymbol.Star;
-	series1.Marker.Size = 10;
-	doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
-```
-
 ## Závěr
 
-V tomto tutoriálu jste se naučili, jak upravit jednu řadu grafu v grafu pomocí Aspose.Words for .NET. Podle podrobného průvodce a pomocí poskytnutého zdrojového kódu můžete vytvořit nový dokument, vložit spojnicový graf, získat přístup ke konkrétním sériím grafů a upravit jejich vlastnosti, abyste dosáhli požadovaného přizpůsobení.
+A tady to máte! Úspěšně jste přizpůsobili jednu řadu grafů v dokumentu aplikace Word pomocí Aspose.Words pro .NET. Docela cool, že? Toto je jen špička ledovce; s Aspose.Words můžete dělat mnohem víc. Takže pokračujte v experimentování a vytváření úžasných dokumentů!
 
-Aspose.Words for .NET poskytuje výkonné funkce pro manipulaci s grafy v dokumentech aplikace Word. Přístupem k jednotlivým řadám grafů můžete použít konkrétní úpravy a přizpůsobit jejich vzhled a chování. To vám umožní změnit název řady, povolit vyhlazení čáry grafu, přizpůsobit značky pro datové body, invertovat barvy pro záporné hodnoty a další pro vylepšení vizuální reprezentace vašeho grafu.
+## FAQ
 
-Přizpůsobení jedné řady grafů vám poskytuje flexibilitu pro zvýraznění konkrétních dat nebo zdůraznění konkrétních trendů v grafu. S Aspose.Words for .NET můžete snadno přistupovat a upravovat vlastnosti řad grafů, což vám umožňuje vytvářet vizuálně přitažlivé a informativní grafy ve vašich dokumentech aplikace Word.
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vytvářet, upravovat, převádět a manipulovat s dokumenty Wordu programově.
 
-### Nejčastější dotazy
+### Mohu používat Aspose.Words zdarma?
+ Ano, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/).
 
-#### Q1. Mohu přizpůsobit více řad grafů v grafu?
- Ano, pomocí Aspose.Words for .NET můžete upravit více řad grafů v grafu. Přístupem k`ChartSeries`objektů v grafu, můžete vybrat a upravit více řad na základě jejich indexů nebo specifických kritérií. Pomocí smyčky nebo jednotlivých přiřazení upravte požadované vlastnosti pro každou řadu grafů. Tímto způsobem můžete použít různá přizpůsobení na více řad ve stejném grafu.
+### Jak získám podporu pro Aspose.Words?
+ Na jejich stránkách můžete získat podporu od komunity Aspose[Fórum](https://forum.aspose.com/c/words/8).
 
-#### Q2. Jak mohu změnit název řady grafů?
- Chcete-li změnit název řady grafu v grafu pomocí Aspose.Words for .NET, musíte mít přístup k`Name` vlastnictvím`ChartSeries` objekt a nastavte jej na požadovaný název. Název série se obvykle zobrazuje v legendě grafu nebo v popiscích dat a poskytuje popisný štítek pro sérii. Úpravou názvu řady můžete poskytnout smysluplné názvy, které odrážejí data reprezentovaná každou řadou.
+### Je možné přizpůsobit jiné typy grafů?
+Absolutně! Aspose.Words podporuje různé typy grafů, jako jsou pruhové, výsečové a bodové grafy.
 
-#### Q3. Co je vyhlazování řad grafů?
-Vyhlazení řad grafů je technika vizuálního vylepšení, která umožňuje vytvořit hladkou čáru spojující body v grafu. Aplikuje vyhlazovací algoritmus, jako jsou Catmull-Rom splajny, k interpolaci mezi datovými body a vytvoření vizuálně příjemné křivky. Chcete-li povolit vyhlazování řad v grafu pomocí Aspose.Words pro .NET, přejděte na`Smooth` vlastnictvím`ChartSeries` objekt a nastavte jej na`true`. Vyhlazování může být užitečné pro zobrazení trendů nebo vzorů v datech s nepravidelnými výkyvy.
-
-#### Q4. Jak mohu přizpůsobit značky pro datové body v řadě grafů?
- Chcete-li upravit značky pro datové body v řadě grafů pomocí Aspose.Words for .NET, musíte mít přístup k`Marker` vlastnictvím`ChartSeries` objektu a upravovat jeho vlastnosti jako např`Symbol` a`Size`. Značky jsou vizuální indikátory umístěné na grafu, které představují jednotlivé datové body. Můžete si vybrat z různých vestavěných symbolů značek a upravit jejich velikost, abyste zvýraznili nebo odlišili konkrétní datové body v rámci série.
-
-#### Q5. Mohu invertovat barvy pro záporné hodnoty v řadě grafů?
- Ano, můžete invertovat barvy pro záporné hodnoty v řadě grafů pomocí Aspose.Words for .NET. Nastavením`InvertIfNegative` vlastnictvím`ChartSeries` namítat proti`true`, budou barvy datových bodů se zápornými hodnotami invertovány, takže budou vizuálně odlišné od kladných hodnot. Tato funkce může být užitečná při porovnávání kladných a záporných hodnot v řadě grafů a poskytuje jasné rozlišení mezi těmito dvěma.
+### Kde najdu další dokumentaci?
+ Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) pro podrobnější návody a příklady.

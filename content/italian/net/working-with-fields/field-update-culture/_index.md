@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passo 3: Inserimento del campo ora
 
- Noi usiamo il`InsertField()` metodo per inserire un campo ora nel documento.
+ Noi usiamo il`InsertField()`metodo per inserire un campo ora nel documento.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

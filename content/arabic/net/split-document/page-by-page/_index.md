@@ -15,7 +15,7 @@ url: /ar/net/split-document/page-by-page/
 للبدء، حدد الدليل للمستند الخاص بك وقم بتحميل المستند إلى كائن Document. إليك الطريقة:
 
 ```csharp
-// المسار إلى دليل المستندات.
+//المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

@@ -17,7 +17,7 @@ Sebelum mendalami tutorial, pastikan Anda memiliki hal berikut:
 - Pengetahuan Dasar C#: Memahami pemrograman C# akan memudahkan untuk mengikuti dan mengimplementasikan langkah-langkahnya.
 -  Aspose.Words untuk .NET Library: Unduh dan instal perpustakaan dari[tautan unduhan](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Siapkan lingkungan pengembangan seperti Visual Studio untuk menulis dan menjalankan kode Anda.
--  Contoh Dokumen: Contoh dokumen (misalnya,`Rendering.docx`) untuk digunakan selama tutorial ini.
+- Contoh Dokumen: Contoh dokumen (misalnya,`Rendering.docx`) untuk digunakan selama tutorial ini.
 
 ## Impor Namespace
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Langkah 5: Buat Kelas Penangan Peringatan
 
- Untuk menangani peringatan secara efektif, buat kelas khusus yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan menangkap dan mencatat peringatan penggantian font apa pun.
+Untuk menangani peringatan secara efektif, buat kelas khusus yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan menangkap dan mencatat peringatan penggantian font apa pun.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Anda sekarang telah menguasai proses penanganan substitusi font tanpa sufiks men
 
 ### Q1: Bagaimana cara menggunakan font dari beberapa direktori khusus?
 
- Anda dapat menambahkan banyak`FolderFontSource` contoh ke`fontSources`daftar dan perbarui sumber font yang sesuai.
+ Anda dapat menambahkan banyak`FolderFontSource` contoh ke`fontSources` daftar dan perbarui sumber font yang sesuai.
 
 ### Q2: Di mana saya dapat mengunduh uji coba gratis Aspose.Words untuk .NET?
 

@@ -2,70 +2,105 @@
 title: Anhängen mit Importformatoptionen
 linktitle: Anhängen mit Importformatoptionen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Dokument mit Importformatoptionen anhängen.
+description: Fügen Sie mit Aspose.Words für .NET mühelos Word-Dokumente an und behalten Sie dabei die Formatierung mit einer detaillierten Schritt-für-Schritt-Anleitung bei.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/append-with-import-format-options/
 ---
+## Einführung
 
-In diesem Tutorial wird erklärt, wie Sie mit Aspose.Words für .NET den Inhalt eines Dokuments mit Importformatoptionen an ein anderes anhängen. Der bereitgestellte Quellcode zeigt, wie Sie die Quell- und Zieldokumente öffnen, Importformatoptionen angeben und das Quelldokument an das Zieldokument anhängen.
+Hallo! Mussten Sie schon einmal mehrere Word-Dokumente zu einem zusammenführen, hatten aber Probleme mit der Formatierung? Keine Angst! Heute tauchen wir tief in die Frage ein, wie Sie mit Aspose.Words für .NET ein Word-Dokument an ein anderes anhängen können, ohne dass Ihre Formatierung dabei säuberlich und ordentlich bleibt. Schnall dich an, denn am Ende dieses Handbuchs sind Sie ein Meister im Zusammenführen von Dokumenten!
 
-## Schritt 1: Einrichten des Projekts
+## Voraussetzungen
 
-Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor wir uns auf den spaßigen Teil stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen. Hier ist eine kurze Checkliste:
 
--  Aspose.Words für .NET-Bibliothek installiert. Sie können es herunterladen von[Aspose.Releases]https://releases.aspose.com/words/net/ oder verwenden Sie den NuGet-Paketmanager, um es zu installieren.
-- Ein Dokumentverzeichnispfad, in dem sich die Quell- und Zieldokumente befinden.
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie diese Bibliothek installiert haben. Sie können sie herunterladen von[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Jede .NET-kompatible Umgebung wie Visual Studio.
+3. Grundkenntnisse in C#: Sie müssen kein Zauberer sein, aber ein wenig Vertrautheit mit C# wird Ihnen sehr weiterhelfen.
 
-## Schritt 2: Öffnen Sie die Quell- und Zieldokumente
+## Namespaces importieren
 
- Öffnen Sie die Quell- und Zieldokumente mit dem`Document` Klassenkonstruktor. Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
+Als Erstes importieren wir die erforderlichen Namespaces. Damit ist die Bühne für unser Programmierabenteuer bereitet.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Lassen Sie uns den Prozess in einfache, verständliche Schritte aufteilen.
+
+## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
+
+Jede Reise beginnt mit einem ersten Schritt. In diesem Fall geht es um die Angabe Ihres Dokumentenverzeichnisses. Stellen Sie es sich so vor, als würden Sie vor einer Autofahrt Ihr GPS einstellen.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad, in dem Ihre Dokumente gespeichert sind. Von dort werden wir unsere Quell- und Zieldokumente abrufen.
+
+## Schritt 2: Laden Sie die Quell- und Zieldokumente
+
+Als nächstes müssen wir unsere Dokumente laden. Es ist, als würden wir zwei Puzzleteile aufheben.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Schritt 3: Importformatoptionen festlegen
+Hier laden wir unsere Quell- und Zieldokumente in den Speicher. Stellen Sie sicher, dass Ihre Dateinamen mit denen in Ihrem Verzeichnis übereinstimmen.
 
- Erstellen Sie eine Instanz des`ImportFormatOptions` Klasse, um die Importformatoptionen anzugeben. In diesem Beispiel verwenden wir die`KeepSourceNumbering` -Eigenschaft, um sicherzustellen, dass bei Konflikten mit dem Zieldokument die Nummerierung aus dem Quelldokument verwendet wird.
+## Schritt 3: Importformatoptionen definieren
+
+Und jetzt geschieht die Magie. Wir definieren, wie die Formatierung während des Anfügevorgangs gehandhabt werden soll.
 
 ```csharp
+// Geben Sie an, dass bei Nummerierungskonflikten in Quell- und Zieldokumenten
+// dann wird die Nummerierung aus dem Quelldokument verwendet.
 ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## Schritt 4: Anhängen des Quelldokuments an das Zieldokument
+Dieses Snippet stellt sicher, dass bei einem Nummerierungskonflikt zwischen Ihren Dokumenten die Nummerierung des Quelldokuments Vorrang hat. Praktisch, oder?
 
- Verwenden Sie die`AppendDocument` Methode des Zieldokuments, um das Quelldokument anzuhängen. Übergeben Sie`ImportFormatMode.UseDestinationStyles` als zweiten Parameter, um die Stile und Formatierungen des Zieldokuments zu verwenden.
+## Schritt 4: Dokumente anhängen
+
+Zeit, alles zusammenzuführen! Wir hängen das Quelldokument unter Verwendung der definierten Importformatoptionen an das Zieldokument an.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## Schritt 5: Zieldokument speichern
+ Hier fügen wir hinzu`srcDoc` Zu`dstDoc` mit Zielstilen. Die`options` Der Parameter stellt sicher, dass unsere Formatierungsregeln angewendet werden.
 
-Speichern Sie abschließend das geänderte Zieldokument mit dem`Save` Methode der`Document` Objekt.
+## Schritt 5: Zusammengeführtes Dokument speichern
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
-```
-
-Damit ist die Implementierung des Anhängens eines Dokuments mit Importformatoptionen mithilfe von Aspose.Words für .NET abgeschlossen.
-
-### Beispielquellcode für „Anhängen mit Importformatoptionen“ unter Verwendung von Aspose.Words für .NET 
+Zu guter Letzt speichern wir unser neu zusammengeführtes Dokument. Das ist, als ob Sie die Kirsche auf Ihren Eisbecher setzen würden.
 
 ```csharp
-	// Pfad zu Ihrem Dokumentverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document srcDoc = new Document(dataDir + "Document source with list.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Geben Sie an, dass bei Nummerierungskonflikten in Quell- und Zieldokumenten
-	// dann wird die Nummerierung aus dem Quelldokument verwendet.
-	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
-
+dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
+
+Boom! Sie haben erfolgreich zwei Word-Dokumente zusammengeführt und dabei die Formatierung beibehalten. 
+
+## Abschluss
+
+Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie mühelos Dokumente mit Aspose.Words für .NET anhängen, ohne dass Ihre Formatierung verloren geht. Egal, ob Sie Entwickler sind, der seine Dokumentenverwaltung optimieren möchte, oder einfach jemand, der organisierte Dokumente liebt, dieser Leitfaden hat alles für Sie. Viel Spaß beim Programmieren!
+
+## Häufig gestellte Fragen
+
+### Kann ich die Nummerierung des Zieldokuments anstelle der der Quelle beibehalten?
+ Ja, Sie können die`ImportFormatOptions` um das zu erreichen.
+
+### Was ist, wenn ich Aspose.Words für .NET nicht habe?
+ Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/).
+
+### Kann ich diese Methode für andere Dokumenttypen wie PDFs verwenden?
+Aspose.Words ist speziell für Word-Dokumente. Für PDFs benötigen Sie möglicherweise Aspose.PDF.
+
+### Wie gehe ich mit Bildern in den Dokumenten um?
+Bilder werden normalerweise reibungslos verarbeitet. Stellen Sie jedoch sicher, dass Ihre Quell- und Zieldokumente richtig formatiert sind.
+
+###ment vor dem Speichern?
+Sie können das Dokument in einem Stream rendern oder einen Viewer in Ihrer Anwendung verwenden, um eine Vorschau anzuzeigen.

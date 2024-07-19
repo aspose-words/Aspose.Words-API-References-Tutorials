@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Carica il documento di Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Configura le opzioni di backup con la funzione "Utilizza caratteri dal computer di destinazione".
+// Configura le opzioni di backup con la funzione "Utilizza caratteri dal computer di destinazione".
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Converti il documento in HTML fisso

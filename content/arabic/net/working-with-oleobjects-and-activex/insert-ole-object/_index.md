@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 3: قم بإدراج كائن OLE
- استخدم منشئ المستندات`InsertOleObject` طريقة لإدراج كائن OLE في المستند. حدد عنوان URL لكائن OLE ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
+ استخدم منشئ المستندات`InsertOleObject`طريقة لإدراج كائن OLE في المستند. حدد عنوان URL لكائن OLE ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com"، "htmlfile"، true، true، null)؛
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### س: كيفية إدراج كائن OLE في المستند؟
 
- ج: استخدم`InsertOleObject`طريقة منشئ المستندات (`DocumentBuilder`) لإدراج كائن OLE في المستند. حدد عنوان URL لكائن OLE ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى. هنا مثال :
+ ج: استخدم`InsertOleObject` طريقة منشئ المستندات (`DocumentBuilder`) لإدراج كائن OLE في المستند. حدد عنوان URL لكائن OLE ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى. هنا مثال :
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com"، "htmlfile"، true، true، null)؛
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com"، "htmlfile"، true، true، nu
 
 #### س: كيفية حفظ الوثيقة؟
 
- ج: استخدم الوثيقة`Save` طريقة حفظ المستند في ملف . هنا مثال :
+ ج: استخدم الوثيقة`Save`طريقة حفظ المستند في ملف . هنا مثال :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

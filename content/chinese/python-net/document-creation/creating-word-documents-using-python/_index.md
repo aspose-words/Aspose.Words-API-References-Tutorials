@@ -189,7 +189,7 @@ doc.save("output.docx")
 
 ### 7. 我可以使用 Aspose.Words for Python 将图像插入 Word 文档吗？
 
-当然可以！Aspose.Words for Python 支持将图像插入 Word 文档。您可以从本地文件或内存中添加图像，调整其大小，并将它们放置在文档中。
+当然可以！Aspose.Words for Python 支持将图像插入 Word 文档。您可以从本地文件或内存中添加图像、调整其大小以及将其放置在文档中。
 
 ### 8. Aspose.Words for Python 是否支持邮件合并以生成个性化文档？
 

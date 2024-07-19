@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- tym kroku stosujemy domyślny format numerów list za pomocą`ApplyNumberDefault()` metoda formatera listy. Następnie dodajemy trzy pozycje do naszej listy, korzystając z narzędzia do tworzenia dokumentów`Writeln()` I`Write()` metody. Używamy`ListIndent()` metoda zwiększania wcięcia na każdym poziomie.
+ tym kroku stosujemy domyślny format numerów list za pomocą`ApplyNumberDefault()` metoda formatera listy. Następnie dodajemy trzy pozycje do naszej listy, korzystając z narzędzia do tworzenia dokumentów`Writeln()`I`Write()` metody. Używamy`ListIndent()` metoda zwiększania wcięcia na każdym poziomie.
 
 ## Krok 4: Skonfiguruj opcje nagrywania
 
@@ -100,7 +100,7 @@ Skonfiguruj środowisko programistyczne, dodając niezbędne odniesienia i impor
 
  Stwórz nowy`Document` obiekt i powiązany`DocumentBuilder` obiekt.
 
- Użyj`DocumentBuilder` aby utworzyć listę z wieloma poziomami wcięć, korzystając z metod`ApplyNumberDefault()` aby zastosować domyślny format numeru listy,`Writeln()` I`Write()` aby dodać elementy do listy i`ListIndent()`aby zwiększyć wcięcie na każdym poziomie.
+ Użyj`DocumentBuilder` aby utworzyć listę z wieloma poziomami wcięć, korzystając z metod`ApplyNumberDefault()` aby zastosować domyślny format numeru listy,`Writeln()`I`Write()` aby dodać elementy do listy i`ListIndent()`aby zwiększyć wcięcie na każdym poziomie.
 
  Skonfiguruj opcje zapisywania, tworząc plik`TxtSaveOptions` obiekt i ustawienie właściwości`ListIndentation.Count` do liczby znaków tabulacji na poziom i`ListIndentation.Character` Do`'\t'` używać znaków tabulacji.
 

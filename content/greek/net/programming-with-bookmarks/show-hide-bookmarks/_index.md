@@ -2,138 +2,153 @@
 title: Εμφάνιση απόκρυψης σελιδοδεικτών στο έγγραφο του Word
 linktitle: Εμφάνιση απόκρυψης σελιδοδεικτών στο έγγραφο του Word
 second_title: Aspose.Words Document Processing API
-description: Μάθετε πώς να εμφανίζετε ή να αποκρύπτετε έναν συγκεκριμένο σελιδοδείκτη στο έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET.
+description: Μάθετε πώς να εμφανίζετε ή να αποκρύπτετε δυναμικά σελιδοδείκτες σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET με τον αναλυτικό οδηγό μας. Ιδανικό για προγραμματιστές.
 type: docs
 weight: 10
 url: /el/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## Εισαγωγή
 
-Σε αυτό το άρθρο, θα εξερευνήσουμε τον πηγαίο κώδικα C# παραπάνω για να κατανοήσουμε πώς να χρησιμοποιήσετε τη συνάρτηση Εμφάνιση απόκρυψης σελιδοδεικτών στη βιβλιοθήκη Aspose.Words για .NET. Αυτή η δυνατότητα σάς επιτρέπει να εμφανίζετε ή να αποκρύπτετε έναν συγκεκριμένο σελιδοδείκτη στο έγγραφο του Word.
+Βρεθήκατε ποτέ να χρειάζεται να κρύψετε ή να εμφανίσετε ορισμένα μέρη του εγγράφου του Word δυναμικά; Λοιπόν, είσαι τυχερός! Με το Aspose.Words για .NET, μπορείτε να διαχειριστείτε εύκολα την ορατότητα του περιεχομένου με σελιδοδείκτη στα έγγραφά σας. Αυτό το σεμινάριο θα σας καθοδηγήσει στη διαδικασία εμφάνισης και απόκρυψης σελιδοδεικτών σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Θα αναλύσουμε τον κώδικα βήμα προς βήμα, οπότε είτε είστε έμπειρος προγραμματιστής είτε αρχάριος, θα βρείτε εύκολο να ακολουθήσετε αυτόν τον οδηγό.
 
 ## Προαπαιτούμενα
 
-- Βασικές γνώσεις της γλώσσας C#.
-- Περιβάλλον ανάπτυξης .NET με εγκατεστημένη τη βιβλιοθήκη Aspose.Words.
+Πριν βουτήξουμε στον κώδικα, ας βεβαιωθούμε ότι έχετε όλα όσα χρειάζεστε:
 
-## Βήμα 1: Φόρτωση του εγγράφου
+1.  Aspose.Words για .NET: Βεβαιωθείτε ότι έχετε εγκαταστήσει τη βιβλιοθήκη Aspose.Words για .NET. Εάν όχι, μπορείτε να το κατεβάσετε[εδώ](https://releases.aspose.com/words/net/).
+2. Περιβάλλον ανάπτυξης: Ένα IDE σαν το Visual Studio.
+3. Βασικές γνώσεις C#: Η εξοικείωση με τον προγραμματισμό C# θα είναι επωφελής.
+4. Ένα έγγραφο του Word: Ένα δείγμα εγγράφου του Word με σελιδοδείκτες.
 
- Χρησιμοποιούμε το`Document` κλάση για να φορτώσει το υπάρχον έγγραφο από ένα αρχείο:
+## Εισαγωγή χώρων ονομάτων
+
+Πριν ξεκινήσετε με τον κώδικα, πρέπει να εισαγάγετε τους απαραίτητους χώρους ονομάτων. Προσθέστε τα ακόλουθα στην αρχή του αρχείου C#:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## Βήμα 1: Φορτώστε το έγγραφό σας
+
+Πρώτα πρώτα, πρέπει να φορτώσετε το έγγραφο του Word που περιέχει τους σελιδοδείκτες. Δείτε πώς μπορείτε να το κάνετε:
+
+```csharp
+// Η διαδρομή προς τον κατάλογο εγγράφων.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## Βήμα 2: Εμφάνιση ή απόκρυψη ενός συγκεκριμένου σελιδοδείκτη
+### Εξήγηση
 
- Χρησιμοποιούμε το`ShowHideBookmarkedContent` λειτουργία για εμφάνιση ή απόκρυψη ενός συγκεκριμένου σελιδοδείκτη στο έγγραφο. Αυτή η συνάρτηση λαμβάνει ως παραμέτρους το έγγραφο, το όνομα του σελιδοδείκτη και ένα boolean για να δείξει εάν θα εμφανιστεί ή θα αποκρύψει ο σελιδοδείκτης:
+- dataDir: Αυτή είναι η διαδρομή καταλόγου όπου βρίσκεται το έγγραφο του Word.
+-  Document doc: Αυτό εκκινεί μια νέα παρουσία του`Document` τάξη με το καθορισμένο αρχείο σας.
+
+## Βήμα 2: Εμφάνιση ή Απόκρυψη περιεχομένου με σελιδοδείκτη
+
+Στη συνέχεια, θα ορίσουμε μια μέθοδο εμφάνισης ή απόκρυψης του σελιδοδείκτη περιεχομένου. Εδώ είναι η πλήρης μέθοδος:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{MERGEFIELD bookmark}" = "true" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### Εξήγηση
+
+- Σελιδοδείκτης bm: Ανακτά τον σελιδοδείκτη από το έγγραφο.
+- Πρόγραμμα δημιουργίας DocumentBuilder: Βοηθά στην πλοήγηση και την τροποποίηση του εγγράφου.
+- Πεδίο πεδίου: Εισάγει ένα πεδίο IF για να ελέγξει την κατάσταση του σελιδοδείκτη.
+- Node currentNode: Διασχίζει τους κόμβους για να βρει την αρχή και το τέλος του πεδίου.
+
+## Βήμα 3: Εκτελέστε τη συνάρτηση Εμφάνιση/Απόκρυψη
+
+ Τώρα, πρέπει να καλέσετε το`ShowHideBookmarkedContent` μέθοδος, διαβίβαση του εγγράφου, όνομα σελιδοδείκτη και σημαία ορατότητας:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## Βήμα 3: Αποθήκευση του τροποποιημένου εγγράφου
+### Εξήγηση
 
- Χρησιμοποιούμε το`Save` μέθοδος αποθήκευσης του τροποποιημένου εγγράφου σε αρχείο:
+- doc: Το αντικείμενο του εγγράφου σας.
+- "MyBookmark1": Το όνομα του σελιδοδείκτη που θέλετε να εμφανίσετε/κρύψετε.
+- false: Η σημαία ορατότητας (αληθής για εμφάνιση, ψευδής για απόκρυψη).
+
+## Βήμα 4: Αποθηκεύστε το έγγραφό σας
+
+Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### Παράδειγμα πηγαίου κώδικα για Εμφάνιση Απόκρυψης Σελιδοδεικτών με χρήση του Aspose.Words για .NET
+### Εξήγηση
 
-Ακολουθεί το πλήρες παράδειγμα πηγαίου κώδικα για να δείξετε την εμφάνιση ή την απόκρυψη ενός συγκεκριμένου σελιδοδείκτη χρησιμοποιώντας το Aspose.Words για .NET:
+- dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx": Η διαδρομή και το όνομα του νέου εγγράφου όπου θα αποθηκευτούν οι αλλαγές.
 
-```csharp
-
-	// Η διαδρομή προς τον κατάλογο εγγράφων.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### ShowHideBookmarkedContent πηγαίος κώδικας
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {IF "{MERGEFIELD bookmark}" = "true" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## συμπέρασμα
 
-Σε αυτό το άρθρο, εξερευνήσαμε τον πηγαίο κώδικα C# για να κατανοήσουμε πώς να χρησιμοποιήσετε τη δυνατότητα Εμφάνιση απόκρυψης σελιδοδεικτών του Aspose.Words για .NET. Ακολουθήσαμε έναν οδηγό βήμα προς βήμα για να εμφανίσουμε ή να αποκρύψουμε έναν συγκεκριμένο σελιδοδείκτη σε ένα έγγραφο.
+Και εκεί το έχετε! Μάθατε με επιτυχία πώς να εμφανίζετε και να αποκρύπτετε σελιδοδείκτες σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Αυτή η τεχνική μπορεί να είναι απίστευτα χρήσιμη για τη δυναμική δημιουργία εγγράφων με περιεχόμενο υπό όρους.
 
-### Συχνές ερωτήσεις για εμφάνιση απόκρυψης σελιδοδεικτών στο έγγραφο του Word
+## Συχνές ερωτήσεις
 
-#### Ε: Μπορώ να εμφανίσω ή να αποκρύψω πολλούς σελιδοδείκτες στο ίδιο έγγραφο;
+### Τι είναι το Aspose.Words για .NET;
+Το Aspose.Words για .NET είναι μια ισχυρή βιβλιοθήκη επεξεργασίας εγγράφων που επιτρέπει στους προγραμματιστές να δημιουργούν, να τροποποιούν και να μετατρέπουν έγγραφα του Word μέσω προγραμματισμού.
 
-Α: Ναι, μπορείτε να εμφανίσετε ή να αποκρύψετε πολλούς σελιδοδείκτες στο ίδιο έγγραφο επαναλαμβάνοντας τα βήματα 2 και 3 για κάθε σελιδοδείκτη που θέλετε να επεξεργαστείτε.
+### Πώς μπορώ να αποκτήσω το Aspose.Words για .NET;
+ Μπορείτε να κάνετε λήψη του Aspose.Words για .NET από[εδώ](https://releases.aspose.com/words/net/). Διατίθεται επίσης δωρεάν δοκιμή.
 
-#### Ε: Ο παρεχόμενος κώδικας λειτουργεί με άλλες μορφές εγγράφων του Word, όπως .doc ή .docm;
+### Μπορώ να χρησιμοποιήσω αυτήν τη μέθοδο για άλλους τύπους σελιδοδεικτών;
+Ναι, αυτή η μέθοδος μπορεί να προσαρμοστεί για τη διαχείριση της ορατότητας για τυχόν σελιδοδείκτες στο έγγραφο του Word.
 
-Α: Ναι, ο παρεχόμενος κώδικας λειτουργεί με διάφορες μορφές εγγράφων του Word που υποστηρίζονται από το Aspose.Words, όπως .doc και .docm. Απλώς βεβαιωθείτε ότι χρησιμοποιείτε το σωστό όνομα αρχείου και διαδρομή κατά τη φόρτωση και την αποθήκευση του εγγράφου.
+### Τι γίνεται αν το έγγραφό μου δεν περιέχει τον καθορισμένο σελιδοδείκτη;
+Εάν ο σελιδοδείκτης δεν υπάρχει, η μέθοδος θα εμφανίσει σφάλμα. Βεβαιωθείτε ότι ο σελιδοδείκτης υπάρχει πριν επιχειρήσετε να τον εμφανίσετε/κρύψετε.
 
-#### Ε: Πώς μπορώ να εμφανίσω ξανά έναν κρυφό σελιδοδείκτη;
-
- Α: Για να εμφανίσετε ξανά έναν κρυφό σελιδοδείκτη, πρέπει να χρησιμοποιήσετε τον ίδιο`ShowHideBookmarkedContent` συνάρτηση περνώντας την τιμή`true` για τη δυαδική παράμετρο που υποδεικνύει εάν θα εμφανιστεί ή θα αποκρύψετε τον σελιδοδείκτη.
-
-#### Ε: Μπορώ να χρησιμοποιήσω συνθήκες για την εμφάνιση ή την απόκρυψη σελιδοδεικτών με βάση τις τιμές των πεδίων συγχώνευσης στο έγγραφο;
-
- Α: Ναι, μπορείτε να χρησιμοποιήσετε συνθήκες και να συγχωνεύσετε τιμές πεδίων για να προσδιορίσετε εάν ένας σελιδοδείκτης πρέπει να εμφανίζεται ή να κρυφτεί. Μπορείτε να προσαρμόσετε τον κωδικό του`ShowHideBookmarkedContent` λειτουργία για να λαμβάνει υπόψη τις κατάλληλες συνθήκες και τιμές.
-
-#### Ε: Πώς μπορώ να διαγράψω έναν σελιδοδείκτη σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET;
-
- Α: Για να αφαιρέσετε έναν σελιδοδείκτη σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET, μπορείτε να χρησιμοποιήσετε το`RemoveBookmarks` μέθοδος του`Document` τάξη. Εδώ είναι ένα δείγμα κώδικα:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### Πώς μπορώ να λάβω υποστήριξη εάν αντιμετωπίσω προβλήματα;
+ Μπορείτε να λάβετε υποστήριξη από την κοινότητα Aspose[εδώ](https://forum.aspose.com/c/words/8).

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2단계: 문서 만들기 및 사용자 지정
- 인스턴스를 생성합니다.`Document` 클래스와 관련`DocumentBuilder` 문서 콘텐츠를 구축합니다. 사용`Font.EmphasisMark` 글꼴 강조 스타일을 설정하는 속성`EmphasisMark.UnderSolidCircle` . 그런 다음`Write` 그리고`Writeln` 방법`DocumentBuilder` 지정된 글꼴 강조로 텍스트를 추가합니다.
+ 인스턴스를 생성합니다.`Document` 클래스와 관련`DocumentBuilder` 문서 콘텐츠를 구축합니다. 사용`Font.EmphasisMark` 글꼴 강조 스타일을 설정하는 속성`EmphasisMark.UnderSolidCircle` . 그런 다음`Write`그리고`Writeln` 방법`DocumentBuilder` 지정된 글꼴 강조로 텍스트를 추가합니다.
 
 ```csharp
 Document document = new Document();

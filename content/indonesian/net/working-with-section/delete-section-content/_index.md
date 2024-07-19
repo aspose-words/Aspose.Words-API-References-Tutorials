@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Langkah 3: Hapus Konten Bagian
-Untuk menghapus konten bagian tersebut, kami akan menggunakan konten bagian tersebut`ClearContent` metode.
+ Untuk menghapus konten bagian tersebut, kami akan menggunakan konten bagian tersebut`ClearContent` metode.
 
 ```csharp
 section.ClearContent();
@@ -61,7 +61,7 @@ Dalam tutorial ini, kita melihat cara menghapus konten dari bagian tertentu doku
 
 #### T: Bagaimana cara mengatur direktori dokumen di Aspose.Words untuk .NET?
 
- A: Untuk menyetel jalur ke direktori yang berisi dokumen Anda, Anda harus mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai. Berikut cara melakukannya:
+A: Untuk menyetel jalur ke direktori yang berisi dokumen Anda, Anda harus mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai. Berikut cara melakukannya:
 
 ```csharp
 // Jalur ke direktori dokumen Anda

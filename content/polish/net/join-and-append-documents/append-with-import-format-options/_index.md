@@ -2,70 +2,105 @@
 title: Dołącz z opcjami formatu importu
 linktitle: Dołącz z opcjami formatu importu
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dołączyć dokument z opcjami formatu importu za pomocą Aspose.Words dla .NET.
+description: Bez wysiłku dołączaj dokumenty Word za pomocą Aspose.Words dla .NET, zachowując formatowanie dzięki szczegółowym wskazówkom krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/append-with-import-format-options/
 ---
+## Wstęp
 
-tym samouczku wyjaśniono, jak używać Aspose.Words dla .NET do dołączania zawartości jednego dokumentu do drugiego z opcjami formatu importu. Dostarczony kod źródłowy pokazuje, jak otworzyć dokumenty źródłowe i docelowe, określić opcje formatu importu i dołączyć dokument źródłowy do dokumentu docelowego.
+No hej! Czy kiedykolwiek miałeś potrzebę połączenia wielu dokumentów programu Word w jeden, ale utknąłeś w tych irytujących problemach z formatowaniem? Nie bój się! Dzisiaj zagłębiamy się w sposób, w jaki można dołączać jeden dokument programu Word do drugiego za pomocą Aspose.Words dla .NET, zachowując przy tym porządek w formatowaniu. Zapnij pasy, bo pod koniec tego przewodnika będziesz mistrzem łączenia dokumentów!
 
-## Krok 1: Skonfiguruj projekt
+## Warunki wstępne
 
-Upewnij się, że masz następujące wymagania wstępne:
+Zanim przejdziemy do zabawnej części, upewnijmy się, że masz wszystko, czego potrzebujesz. Oto krótka lista kontrolna:
 
--  Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać z[Aspose.Releases]https://releases.aspose.com/words/net/ lub użyj menedżera pakietów NuGet, aby go zainstalować.
-- Ścieżka katalogu dokumentów, w którym znajdują się dokumenty źródłowe i docelowe.
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną tę bibliotekę. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: dowolne środowisko zgodne z platformą .NET, takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Nie musisz być czarodziejem, ale odrobina znajomości języka C# bardzo Ci się przyda.
 
-## Krok 2: Otwórz dokumenty źródłowe i docelowe
+## Importuj przestrzenie nazw
 
- Otwórz dokumenty źródłowe i docelowe za pomocą narzędzia`Document` konstruktor klasy. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+Na początek zaimportujmy niezbędne przestrzenie nazw. To przygotowuje grunt pod naszą przygodę z kodowaniem.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Podzielmy proces na łatwe i zrozumiałe etapy.
+
+## Krok 1: Skonfiguruj katalog dokumentów
+
+Każda podróż zaczyna się od pierwszego kroku, a tutaj jest to określenie katalogu dokumentów. Pomyśl o tym jak o ustawieniu GPS przed podróżą.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której przechowywane są dokumenty. To stąd będziemy pobierać dokumenty źródłowe i docelowe.
+
+## Krok 2: Załaduj dokumenty źródłowe i docelowe
+
+Następnie musimy załadować nasze dokumenty. To tak, jakbyś podnosił dwa elementy układanki.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Krok 3: Określ opcje formatu importu
+Tutaj ładujemy nasze dokumenty źródłowe i docelowe do pamięci. Upewnij się, że nazwy plików odpowiadają nazwom w katalogu.
 
- Utwórz instancję`ImportFormatOptions` class, aby określić opcje formatu importu. W tym przykładzie używamy`KeepSourceNumbering` aby mieć pewność, że w przypadku kolizji z dokumentem docelowym zostanie użyta numeracja z dokumentu źródłowego.
+## Krok 3: Zdefiniuj opcje formatu importu
+
+Tutaj dzieje się magia. Zdefiniujemy, w jaki sposób formatowanie powinno być obsługiwane podczas operacji dołączania.
 
 ```csharp
+// Określ, że jeśli numeracja koliduje w dokumentach źródłowych i docelowych,
+// wówczas zastosowana zostanie numeracja z dokumentu źródłowego.
 ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## Krok 4: Dołącz dokument źródłowy do dokumentu docelowego
+Ten fragment gwarantuje, że w przypadku konfliktu numeracji między dokumentami, numeracja dokumentu źródłowego będzie nadrzędna. Przydatne, prawda?
 
- Użyj`AppendDocument` metoda dokumentu docelowego w celu dołączenia dokumentu źródłowego. Przechodzić`ImportFormatMode.UseDestinationStyles` jako drugi parametr umożliwiający użycie stylów i formatowania dokumentu docelowego.
+## Krok 4: Dołącz dokumenty
+
+Czas to wszystko połączyć! Dołączymy dokument źródłowy do dokumentu docelowego, korzystając ze zdefiniowanych opcji formatu importu.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## Krok 5: Zapisz dokument docelowy
+ Tutaj dołączamy`srcDoc` Do`dstDoc` przy użyciu stylów docelowych. The`options` Parametr zapewnia zastosowanie naszych reguł formatowania.
 
-Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
+## Krok 5: Zapisz scalony dokument
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
-```
-
-To kończy implementację dołączania dokumentu z opcjami formatu importu przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy opcji Dołącz z opcjami formatu importu przy użyciu Aspose.Words dla .NET 
+Na koniec zapiszmy nasz nowo połączony dokument. To jak położyć wisienkę na deserze lodowym.
 
 ```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document srcDoc = new Document(dataDir + "Document source with list.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Określ, że jeśli numeracja koliduje w dokumentach źródłowych i docelowych,
-	// wówczas zastosowana zostanie numeracja z dokumentu źródłowego.
-	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
-
+dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
+
+Bum! Pomyślnie połączyłeś dwa dokumenty programu Word, zachowując nienaruszone formatowanie. 
+
+## Wniosek
+
+masz to! Wykonując poniższe kroki, możesz bez wysiłku dołączać dokumenty przy użyciu Aspose.Words dla .NET bez utraty formatowania. Niezależnie od tego, czy jesteś programistą chcącym usprawnić zarządzanie dokumentami, czy po prostu osobą, która uwielbia uporządkowane dokumenty, w tym przewodniku znajdziesz wszystko, czego potrzebujesz. Miłego kodowania!
+
+## Często zadawane pytania
+
+### Czy mogę zachować numerację dokumentu docelowego zamiast numeracji źródłowej?
+ Tak, możesz modyfikować`ImportFormatOptions` osiągnąć to.
+
+### Co się stanie, jeśli nie mam Aspose.Words dla .NET?
+ Możesz pobrać bezpłatną wersję próbną ze strony[Tutaj](https://releases.aspose.com/).
+
+### Czy mogę użyć tej metody w przypadku innych typów dokumentów, takich jak pliki PDF?
+Aspose.Words jest przeznaczony specjalnie dla dokumentów Word. W przypadku plików PDF może być potrzebny plik Aspose.PDF.
+
+### Jak postępować z obrazami w dokumentach?
+Obrazy są zwykle przetwarzane bezproblemowo, ale upewnij się, że dokumenty źródłowe i docelowe są odpowiednio sformatowane.
+
+###ment przed zapisaniem?
+Możesz renderować dokument do strumienia lub użyć przeglądarki w aplikacji, aby wyświetlić jego podgląd.

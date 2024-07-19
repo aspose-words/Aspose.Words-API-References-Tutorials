@@ -107,4 +107,4 @@ Igen, a HTML beillesztése után tovább manipulálhatja a dokumentumot az Aspos
  Kezdheti a[ingyenes próbaverzió](https://releases.aspose.com/) vagy megszerezni a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) a teljes funkciókért.
 
 ### Hol találok további oktatóanyagokat és példákat?  
- A[dokumentáció](https://reference.aspose.com/words/net/) és[támogató fórumok](https://forum.aspose.com/c/words/8)remek kiindulópont a részletesebb útmutatók és a közösségi támogatás érdekében.
+ A[dokumentáció](https://reference.aspose.com/words/net/)és[támogató fórumok](https://forum.aspose.com/c/words/8)remek kiindulópont a részletesebb útmutatók és a közösségi támogatás érdekében.

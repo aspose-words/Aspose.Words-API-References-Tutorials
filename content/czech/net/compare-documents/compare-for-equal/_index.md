@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Krok 2: Vložte své dokumenty
 
- Dále budete muset načíst dokumenty aplikace Word, které chcete porovnat. V tomto příkladu budeme předpokládat, že máte dva pojmenované dokumenty`Document.docx` a`Document2.docx` umístěný v adresáři vašich dokumentů.
+ Dále budete muset načíst dokumenty aplikace Word, které chcete porovnat. V tomto příkladu budeme předpokládat, že máte dva pojmenované dokumenty`Document.docx`a`Document2.docx` umístěný v adresáři vašich dokumentů.
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -65,7 +65,7 @@ docA.Compare(docBClone, "user", DateTime.Now);
 
 ## Krok 5: Zkontrolujte revize
 
- Po porovnání dokumentů můžete zkontrolovat`Revisions` sběr, abyste zjistili, zda existují nějaké rozdíly. Pokud je sbírka prázdná, dokumenty jsou totožné.
+ Po porovnání dokumentů můžete zkontrolovat`Revisions` sběru, abyste zjistili, zda existují nějaké rozdíly. Pokud je sbírka prázdná, dokumenty jsou totožné.
 
 ```csharp
 Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");

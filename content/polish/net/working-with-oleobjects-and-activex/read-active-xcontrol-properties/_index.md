@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
 
-tym przewodniku krok po kroku pokażemy, jak odczytać właściwości kontrolek ActiveX w pliku Word za pomocą Aspose.Words dla .NET. Dostarczymy Ci pełny kod źródłowy i pokażemy, jak sformatować wynik przeceny.
+W tym przewodniku krok po kroku pokażemy, jak odczytać właściwości kontrolek ActiveX w pliku Word za pomocą Aspose.Words dla .NET. Dostarczymy Ci pełny kod źródłowy i pokażemy, jak sformatować wynik przeceny.
 
 ## Krok 1: Inicjalizacja dokumentu
 

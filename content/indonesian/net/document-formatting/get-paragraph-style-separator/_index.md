@@ -17,7 +17,7 @@ Pernah mencoba menjelajahi labirin dokumen Word, hanya untuk tersandung oleh pem
 Sebelum kita masuk ke kodenya, pastikan Anda memiliki semua alat yang Anda perlukan:
 
 - Visual Studio: Pastikan Anda telah menginstalnya. Jika tidak, unduh dan instal dari situs web Microsoft.
--  Aspose.Words untuk .NET: Jika Anda belum memilikinya, ambil versi terbaru[Di Sini](https://releases.aspose.com/words/net/).
+- Aspose.Words untuk .NET: Jika Anda belum memilikinya, ambil versi terbaru[Di Sini](https://releases.aspose.com/words/net/).
 - Contoh Dokumen Word: Ini harus berisi pemisah gaya paragraf untuk kita gunakan. Anda dapat membuatnya atau menggunakan dokumen yang sudah ada.
 
 ## Impor Namespace

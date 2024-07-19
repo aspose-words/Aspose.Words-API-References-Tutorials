@@ -31,7 +31,7 @@ Aspose.Words for Java to bogata w funkcje biblioteka, która umożliwia programi
 
 ## Pierwsze kroki z Aspose.Words dla Java
 
-### 2.1 Instalacja Aspose.Words dla Javy
+### 2.1 Instalacja Aspose.Words dla Java
 
 Zanim zagłębisz się w wersję dokumentu, musisz skonfigurować Aspose.Words dla Java w swoim środowisku programistycznym. Aby rozpocząć, wykonaj te proste kroki:
 

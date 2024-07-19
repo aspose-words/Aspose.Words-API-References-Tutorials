@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Skonfiguruj opcje ładowania za pomocą ustawień czcionek
- Następnie utworzymy instancję`LoadOptions` i określ ustawienia czcionki, tworząc nową instancję`FontSettings` i przypisanie go do`loadOptions.FontSettings`.
+ Następnie utworzymy instancję`LoadOptions` określ ustawienia czcionki, tworząc nową instancję`FontSettings` i przypisanie go do`loadOptions.FontSettings`.
 
 ```csharp
 // Skonfiguruj opcje ładowania za pomocą ustawień czcionek
@@ -57,7 +57,7 @@ W tym samouczku widzieliśmy, jak używać opcji ładowania z ustawieniami czcio
 
 #### P: Jak mogę określić domyślną czcionkę podczas ładowania dokumentu do Aspose.Words?
 
-O: Aby określić domyślną czcionkę podczas ładowania dokumentu w Aspose.Words, możesz użyć`LoadOptions` klasę i ustaw`DefaultFontName` właściwość na nazwę żądanej czcionki.
+ O: Aby określić domyślną czcionkę podczas ładowania dokumentu w Aspose.Words, możesz użyć`LoadOptions` klasę i ustaw`DefaultFontName` właściwość na nazwę żądanej czcionki.
 
 #### P: Jakie inne ustawienia czcionek mogę określić za pomocą opcji ładowania w Aspose.Words?
 
@@ -69,4 +69,4 @@ Odp.: Jeśli określona czcionka domyślna nie jest dostępna, gdy dokument jest
 
 #### P: Czy mogę określić inne ustawienia czcionki dla każdego przesłanego dokumentu?
 
- Odp.: Tak, możesz określić różne ustawienia czcionki dla każdego załadowanego dokumentu, używając oddzielnych instancji metody`LoadOptions`class i ustawienie żądanych ustawień czcionki dla każdej instancji. Dzięki temu możesz dostosować wygląd czcionki dla każdego dokumentu niezależnie.
+ Odp.: Tak, możesz określić różne ustawienia czcionki dla każdego załadowanego dokumentu, używając oddzielnych instancji metody`LoadOptions` class i ustawienie żądanych ustawień czcionki dla każdej instancji. Dzięki temu możesz dostosować wygląd czcionki dla każdego dokumentu niezależnie.

@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Steg 3: Gå till raden för att ändra
- För att ändra formateringen av en tabellrad måste vi navigera till den specifika raden i tabellen. Vi använder`GetChild()` och`FirstRow` metoder för att få referensen till den första raden i tabellen.
+ För att ändra formateringen av en tabellrad måste vi navigera till den specifika raden i tabellen. Vi använder`GetChild()`och`FirstRow` metoder för att få referensen till den första raden i tabellen.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

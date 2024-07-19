@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- 여기서는 배열이 float 유형인지 확인하기 위해 조건을 사용합니다. 그렇다면 우리는`RelativeHorizontalAlignment` 그리고`RelativeVerticalAlignment` 테이블의 상대적 수평 및 수직 정렬을 가져오는 속성입니다. 그렇지 않으면 우리는`Alignment` 배열 정렬을 가져오는 속성입니다.
+ 여기서는 배열이 float 유형인지 확인하기 위해 조건을 사용합니다. 그렇다면 우리는`RelativeHorizontalAlignment`그리고`RelativeVerticalAlignment` 테이블의 상대적 수평 및 수직 정렬을 가져오는 속성입니다. 그렇지 않으면 우리는`Alignment` 배열 정렬을 가져오는 속성입니다.
 
 ### .NET용 Aspose.Words를 사용하여 테이블 위치 가져오기의 샘플 소스 코드 
 

@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Infoga OM-fältet i dokumentet.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Utvärdera IF-villkoret.
+// Utvärdera IF-villkoret.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Visa resultatet av utvärderingen.

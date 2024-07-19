@@ -14,7 +14,7 @@ url: /th/net/programming-with-fileformat/detect-file-format/
 
 ## ขั้นตอนที่ 1: กำหนดไดเรกทอรี
 
- ในการเริ่มต้น คุณจะต้องกำหนดไดเร็กทอรีที่คุณต้องการจัดเก็บไฟล์ตามรูปแบบ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีเอกสารของคุณ เราสร้างไดเร็กทอรี "Supported", "Unknown", "Encrypted" และ "Pre97" หากยังไม่มีอยู่
+ ในการเริ่มต้น คุณจะต้องกำหนดไดเร็กทอรีที่คุณต้องการจัดเก็บไฟล์ตามรูปแบบ แทนที่`"YOUR DOCUMENT DIRECTORY"`ด้วยเส้นทางจริงไปยังไดเร็กทอรีเอกสารของคุณ เราสร้างไดเร็กทอรี "Supported", "Unknown", "Encrypted" และ "Pre97" หากยังไม่มีอยู่
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## ขั้นตอนที่ 2: เรียกดูไฟล์
 
- จากนั้นเราก็ใช้`GetFiles` วิธีการของ`Directory` คลาสเพื่อรับรายการไฟล์ในไดเร็กทอรีที่ระบุ เรายังใช้ก`Where`ส่วนคำสั่งเพื่อยกเว้นไฟล์เฉพาะชื่อ "Corrupted document.docx"
+ จากนั้นเราก็ใช้`GetFiles` วิธีการของ`Directory` คลาสเพื่อรับรายการไฟล์ในไดเร็กทอรีที่ระบุ เรายังใช้ก`Where` ส่วนคำสั่งเพื่อยกเว้นไฟล์เฉพาะชื่อ "Corrupted document.docx"
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ break;
 
 #### จะตรวจสอบรูปแบบของไฟล์เอกสารโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
 
- หากต้องการตรวจจับรูปแบบของไฟล์เอกสารโดยใช้ Aspose.Words สำหรับ .NET คุณสามารถทำตามขั้นตอนที่ให้ไว้ในบทช่วยสอน ใช้`DetectFileFormat` วิธีการของ`FileFormatUtil`class จะช่วยให้คุณสามารถตรวจจับรูปแบบของไฟล์เอกสารได้ ซึ่งจะช่วยให้คุณสามารถระบุได้ว่าเป็นเอกสาร Microsoft Word 97-2003, เทมเพลต, เอกสาร Office Open XML WordprocessingML หรือรูปแบบอื่นๆ ที่รองรับ รหัสที่ให้ไว้ในบทช่วยสอนจะแนะนำคุณตลอดขั้นตอนการใช้งานคุณสมบัตินี้
+ หากต้องการตรวจจับรูปแบบของไฟล์เอกสารโดยใช้ Aspose.Words สำหรับ .NET คุณสามารถทำตามขั้นตอนที่ให้ไว้ในบทช่วยสอน ใช้`DetectFileFormat` วิธีการของ`FileFormatUtil` class จะช่วยให้คุณสามารถตรวจจับรูปแบบของไฟล์เอกสารได้ ซึ่งจะช่วยให้คุณสามารถระบุได้ว่าเป็นเอกสาร Microsoft Word 97-2003, เทมเพลต, เอกสาร Office Open XML WordprocessingML หรือรูปแบบอื่นๆ ที่รองรับ รหัสที่ให้ไว้ในบทช่วยสอนจะแนะนำคุณตลอดขั้นตอนการใช้งานคุณสมบัตินี้
 
 #### Aspose.Words for .NET รองรับรูปแบบเอกสารใดบ้าง
 

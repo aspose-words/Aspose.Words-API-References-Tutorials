@@ -14,7 +14,7 @@ url: /ar/net/working-with-formfields/insert-form-fields/
 
 ## الخطوة 1: تهيئة المستند وكائنات DocumentBuilder
 
- أولاً، قم بتهيئة`Document` و`DocumentBuilder` أشياء:
+ أولاً، قم بتهيئة`Document`و`DocumentBuilder` أشياء:
 
 ```csharp
 Document doc = new Document();
@@ -72,6 +72,6 @@ doc.Save("OutputDocument.docx");
 
 ج: نعم، يمكنك تعيين قيمة افتراضية لحقل نموذج في Aspose.Words. استخدم ال`FormField.Result` الخاصية لتحديد القيمة الأولية لحقل النموذج.
 
-#### س: كيف يمكنني استرجاع البيانات المدخلة في حقول النموذج في Aspose.Words؟
+#### س: كيف يمكنني استرداد البيانات المدخلة في حقول النموذج في Aspose.Words؟
 
  ج: لاسترداد البيانات المدخلة في حقول النموذج في Aspose.Words، يمكنك استخدام`FormField.Result` الخاصية التي تحتوي على القيمة التي أدخلها المستخدم. يمكنك الوصول إلى هذه الخاصية لكل حقل نموذج في مستندك.

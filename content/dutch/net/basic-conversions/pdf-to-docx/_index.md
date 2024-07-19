@@ -56,7 +56,7 @@ Laten we nu het PDF-document in ons project laden met Aspose.Words.
 Document doc = new Document(dataDir + "Pdf Document.pdf");
 ```
 
- Hier maken we een exemplaar van de`Document`class en geef het pad van ons PDF-bestand eraan door. Met deze actie wordt de PDF in het geheugen geladen, klaar voor conversie.
+ Hier maken we een exemplaar van de`Document` class en geef het pad van ons PDF-bestand eraan door. Met deze actie wordt de PDF in het geheugen geladen, klaar voor conversie.
 
 ## Stap 3: De PDF opslaan als een Word-document
 

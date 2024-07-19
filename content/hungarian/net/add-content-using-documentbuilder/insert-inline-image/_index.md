@@ -9,7 +9,7 @@ url: /hu/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 ## Bevezetés
 
-A .NET-alkalmazásokkal végzett dokumentumfeldolgozás területén az Aspose.Words robusztus megoldás a Word-dokumentumok programozott kezeléséhez. Egyik kulcsfontosságú jellemzője, hogy könnyedén beilleszthető képsorokba, ami javítja a dokumentumok vizuális vonzerejét és funkcionalitását. Ez az oktatóanyag mélyrehatóan foglalkozik azzal, hogyan használhatja ki az Aspose.Words for .NET-et a képek zökkenőmentes beágyazására a Word-dokumentumokba.
+.NET-alkalmazásokkal végzett dokumentumfeldolgozás területén az Aspose.Words robusztus megoldás a Word-dokumentumok programozott kezeléséhez. Egyik kulcsfontosságú jellemzője, hogy könnyedén beilleszthető képsorokba, ami javítja a dokumentumok vizuális vonzerejét és funkcionalitását. Ez az oktatóanyag mélyrehatóan foglalkozik azzal, hogyan használhatja ki az Aspose.Words for .NET-et a képek zökkenőmentes beágyazására a Word-dokumentumokba.
 
 ## Előfeltételek
 

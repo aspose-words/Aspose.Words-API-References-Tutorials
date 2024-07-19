@@ -2,115 +2,100 @@
 title: Csak az űrlapmezők védelme engedélyezése a Word-dokumentumban
 linktitle: Csak az űrlapmezők védelme engedélyezése a Word-dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan használhatja az Aspose.Words for .NET-et a Word-dokumentum védelmére, és csak az űrlapmezők szerkesztését engedélyezi.
+description: Ismerje meg, hogyan védheti meg a Word-dokumentumokat, és csak az űrlapmezőket teszi lehetővé az Aspose.Words for .NET használatával. Kövesse útmutatónkat, hogy dokumentumai biztonságosak és könnyen szerkeszthetők legyenek.
 type: docs
 weight: 10
 url: /hu/net/document-protection/allow-only-form-fields-protect/
 ---
-dokumentumvédelem alapvető funkció a C#-alkalmazáson belüli fájlokkal végzett szövegfeldolgozás során. A .NET Aspose.Words könyvtárával könnyedén megvédheti dokumentumait, és csak az űrlapmezők szerkesztését engedélyezheti. Ebben a részletes útmutatóban végigvezetjük, hogyan használhatja a C# forráskódot, hogy csak az űrlapmezőket engedélyezze az Aspose.Words for .NET Csak űrlapmezők védelme funkciójával.
+## Bevezetés
 
-## 1. lépés: A dokumentumkönyvtár beállítása
+Halihó! Szüksége volt valaha egy Word-dokumentum bizonyos részei védelmére, miközben más részeit szerkeszthetővé kell tenni? Az Aspose.Words for .NET ezt rendkívül egyszerűvé teszi. Ebben az oktatóanyagban azt mutatjuk be, hogyan lehet csak az űrlapmezők védelmét engedélyezni egy Word-dokumentumban. Az útmutató végére sziklaszilárd ismerete lesz az Aspose.Words for .NET használatával történő dokumentumvédelemről. Kész? ugorjunk be!
 
-Az első lépés a dokumentum könyvtárának meghatározása. Meg kell adnia az elérési utat, ahová a védett dokumentumot menteni kívánja. Például :
+## Előfeltételek
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Mielőtt belemerülnénk a kódolási részbe, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
-Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára.
+1.  Aspose.Words for .NET Library: Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+2. Visual Studio: Bármelyik legújabb verziója jól működik.
+3. Alapvető C# ismerete: Az alapok megértése segít az oktatóanyag követésében.
 
-## 2. lépés: szakaszok és szöveg beszúrása
+## Névterek importálása
 
-Ezután szakaszokat és szöveget kell beillesztenie a dokumentumba. Használja az Aspose.Words által biztosított DocumentBuilder osztályt a dokumentum tartalmának felépítéséhez. Íme egy egyszerű példa:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Text added to a document.");
-```
-
-Ebben a példában létrehozunk egy új üres dokumentumot, majd a DocumentBuilder segítségével szövegsort adunk hozzá.
-
-## 3. lépés: A dokumentumvédelem engedélyezése
-
- A dokumentumvédelem csak akkor működik, ha a dokumentumvédelem be van kapcsolva. A dokumentumvédelmet a`Protect` a Dokumentum osztály metódusa. Itt van, hogyan:
+Először is importálnunk kell a szükséges névtereket. Ez beállítja a környezetünket az Aspose.Words használatára.
 
 ```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Ebben a példában a dokumentumvédelmet a ` védelmi típus megadásával engedélyezzük
+## 1. lépés: Állítsa be projektjét
 
-AllowOnlyFormFields` és jelszó beállítása.
+Hozzon létre egy új projektet a Visual Studióban  
+Nyissa meg a Visual Studio-t, és hozzon létre egy új Console App (.NET Core) projektet. Nevezd valami értelmesnek, például "AsposeWordsProtection".
 
-## 4. lépés: Csak űrlapmezők engedélyezése
+## 2. lépés: Az Aspose.Words for .NET telepítése
 
-Most, hogy a dokumentumvédelem engedélyezve van, meg kell adnunk, hogy csak az űrlapmezők szerkesztése engedélyezett. Ez biztosítja, hogy a felhasználók csak a dokumentum azon részeit szerkeszthessék, amelyek űrlapmezők. Itt van, hogyan:
+Telepítés a NuGet Package Manageren keresztül  
+Kattintson a jobb gombbal a projektre a Solution Explorerben, válassza a „NuGet-csomagok kezelése” lehetőséget, és keressen rá`Aspose.Words`. Telepítse.
 
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
+## 3. lépés: Inicializálja a dokumentumot
 
-Feltétlenül cserélje ki a „jelszó” kifejezést a korábban beállított jelszóra.
-
-## 5. lépés: A védett dokumentum mentése
-
- Végül elmentheti a védett dokumentumot a`Save` a Dokumentum osztály metódusa. Adja meg a teljes fájl elérési utat és a kívánt fájlnevet. Például :
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
-```
-
-Feltétlenül cserélje ki a "dataDir" kifejezést a dokumentumkönyvtár elérési útjára.
-
-### Példa forráskód az Allow Only Form Fields Protect funkcióhoz az Aspose.Words for .NET használatával
+Hozzon létre egy új dokumentum objektumot  
+Kezdjük azzal, hogy hozzunk létre egy új dokumentumot és egy dokumentumkészítőt a szöveg hozzáadásához.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Szúrjon be két részt szöveggel.
+// Inicializáljon egy új dokumentumot és DocumentBuildert
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
+```
 
-// A dokumentumvédelem csak akkor működik, ha a dokumentumvédelem be van kapcsolva, és csak az űrlapmezők szerkesztése engedélyezett.
+ Itt létrehozunk egy újat`Document`és`DocumentBuilder` példa. A`DocumentBuilder` lehetővé teszi számunkra, hogy szöveget adjunk a dokumentumunkhoz.
+
+## 4. lépés: Védje meg a dokumentumot
+
+Alkalmazzon védelmet, amely csak az űrlapmezők szerkesztését teszi lehetővé  
+Most adjuk hozzá a védelmet a dokumentumunkhoz.
+
+```csharp
+// Védje a dokumentumot, csak az űrlapmezők szerkesztését engedélyezve
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
 
-// Mentse el a védett dokumentumot.
+Ez a kódsor védi a dokumentumot, és csak az űrlapmezők szerkesztését teszi lehetővé. A "jelszó" jelszó a védelem érvényesítésére szolgál.
+
+## 5. lépés: Mentse el a dokumentumot
+
+Mentse el a védett dokumentumot  
+Végül mentsük el a dokumentumunkat a megadott könyvtárba.
+
+```csharp
+// Mentse el a védett dokumentumot
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
+Ezzel elmenti a dokumentumot az alkalmazott védelemmel.
+
 ## Következtetés
 
-Ebben az útmutatóban megvizsgáltuk, hogyan használhatjuk az Aspose.Words könyvtárat .NET-hez a dokumentumok védelmére, és csak az űrlapmezők szerkesztését engedélyezzük. A megadott lépések követésével könnyedén megvalósíthatja ezt a funkciót a C# alkalmazásban. A dokumentumok védelme elengedhetetlen a dokumentumai biztonságának és bizalmasságának szavatolásához.
+És megvan! Most tanulta meg, hogyan védheti meg a Word-dokumentumot úgy, hogy csak az űrlapmezőket lehessen szerkeszteni az Aspose.Words for .NET segítségével. Ez egy praktikus funkció, amikor biztosítania kell, hogy a dokumentum bizonyos részei változatlanok maradjanak, miközben lehetővé teszi bizonyos mezők kitöltését.
 
-### A Word dokumentumban csak az űrlapmezők engedélyezésével kapcsolatos GYIK
+## GYIK
 
-#### K: Mi a dokumentumvédelem az Aspose.Words for .NET-ben?
+###	 Hogyan távolíthatom el a védelmet egy dokumentumról?  
+ A védelem eltávolításához használja a`doc.Unprotect("password")` módszer, ahol a "jelszó" a dokumentum védelmére használt jelszó.
 
-V: Az Aspose.Words for .NET dokumentumvédelme egy olyan szolgáltatás, amely bizonyos műveletek, például szerkesztés, formázás vagy tartalommódosítás korlátozásával lehetővé teszi a dokumentumok védelmét. Segít megőrizni a dokumentumok sértetlenségét és titkosságát azáltal, hogy megakadályozza a jogosulatlan módosításokat.
+###	 Alkalmazhatok különböző típusú védelmet az Aspose.Words for .NET használatával?  
+ Igen, az Aspose.Words különféle védelmi típusokat támogat, mint pl`ReadOnly`, `NoProtection` , és`AllowOnlyRevisions`.
 
-#### K: Hogyan védhetek meg egy dokumentumot, és csak az űrlapmezőket engedélyezhetem az Aspose.Words for .NET használatával?
+###	 Lehetséges-e eltérő jelszót használni a különböző szakaszokhoz?  
+Nem, az Aspose.Words dokumentum szintű védelme a teljes dokumentumra vonatkozik. Nem rendelhet különböző jelszavakat a különböző szakaszokhoz.
 
-V: Ha meg szeretne védeni egy dokumentumot, és csak űrlapmezőket szeretne szerkeszteni az Aspose.Words for .NET használatával, kövesse az alábbi lépéseket:
-1. Határozza meg a dokumentum könyvtárának elérési útját.
-2.  Szúrjon be szakaszokat és szöveget a dokumentumba a gombbal`DocumentBuilder` osztály.
-3.  Engedélyezze a dokumentumvédelmet a`Protect` módszere a`Document` osztály, megadva a védelmi típust as`AllowOnlyFormFields` és jelszó megadása.
-4.  Mentse el a védett dokumentumot a`Save` módszere a`Document` osztály.
+###	 Mi történik, ha helytelen jelszót használnak?  
+Ha helytelen jelszót használ, a dokumentum védett marad, és a megadott módosítások nem érvényesülnek.
 
-#### K: Beszúrhatok űrlapmezőket védett dokumentumokba az Aspose.Words for .NET használatával?
-
-V: Igen, beszúrhat űrlapmezőket egy védett dokumentumba az Aspose.Words for .NET használatával. Az iratvédelem a`AllowOnlyFormFields` típus lehetővé teszi a felhasználók számára, hogy csak az űrlapmezőket szerkeszthessék, miközben védik a dokumentum többi tartalmát. Használhatja a`DocumentBuilder` osztályt, hogy űrlapmezőket szúrjon be a dokumentumba a védelem engedélyezése előtt.
-
-#### K: Eltávolíthatom a dokumentumvédelmet egy védett dokumentumról?
-
- V: Igen, az Aspose.Words for .NET használatával eltávolíthatja a védett dokumentumokról a dokumentumvédelmet. A védelem eltávolításához használhatja a`Unprotect` módszere a`Document` osztályt, és adja meg a helyes jelszót. Ezzel eltávolítja a védelmet, és lehetővé teszi a dokumentum korlátlan szerkesztését.
-
-#### K: Lehetséges egy dokumentum több védelmi típussal történő védelme?
-
- V: Nem, az Aspose.Words for .NET egyszerre csak egy védelmi típus alkalmazását teszi lehetővé egy dokumentumon. Azonban a`AllowOnlyFormFields` védelmi típus hatékonyan korlátozhatja a szerkesztést az űrlapmezőkre, miközben más védelmi típusokat is engedélyez, mint pl`AllowOnlyComments` vagy`AllowOnlyRevisions`formamező védelemmel kombinálandó.
-
-#### K: Beállíthatok különböző jelszavakat a különböző védelmi típusokhoz egy dokumentumban?
-
-V: Nem, az Aspose.Words for .NET lehetővé teszi, hogy egyetlen jelszót állítson be a dokumentumok védelméhez, a védelem típusától függetlenül. Ugyanazt a jelszót fogja használni a dokumentumvédelem engedélyezéséhez és letiltásához.
+###	 Ellenőrizhetem programozottan, hogy egy dokumentum védett-e?  
+ Igen, használhatod a`doc.ProtectionType` tulajdonság egy dokumentum védelmi állapotának ellenőrzéséhez.

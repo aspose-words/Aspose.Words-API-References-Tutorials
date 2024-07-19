@@ -85,7 +85,7 @@ Congratulazioni! Hai convertito con successo un documento DOCX in MHTML e lo hai
 
 ## Domande frequenti
 
-### Posso utilizzare questo metodo per convertire altri formati di documenti?
+### Posso utilizzare questo metodo per convertire altri formati di documento?
 Sì, Aspose.Words supporta vari formati e puoi convertire documenti come DOC, DOCX, RTF e altri in MHTML.
 
 ### Come posso aggiungere allegati all'e-mail?

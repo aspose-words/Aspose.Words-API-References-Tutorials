@@ -2,7 +2,7 @@
 title: Gestion des sections et de la mise en page du document
 linktitle: Gestion des sections et de la mise en page du document
 second_title: API de gestion de documents Python Aspose.Words
-description: Découvrez comment gérer les sections et les mises en page d'un document avec Aspose.Words pour Python. Créez, modifiez des sections, personnalisez les mises en page, et bien plus encore. Commencez maintenant!
+description: Découvrez comment gérer les sections et les mises en page d'un document avec Aspose.Words pour Python. Créez, modifiez des sections, personnalisez des mises en page, et bien plus encore. Commencez maintenant!
 type: docs
 weight: 24
 url: /fr/python-net/document-structure-and-content-manipulation/document-sections/

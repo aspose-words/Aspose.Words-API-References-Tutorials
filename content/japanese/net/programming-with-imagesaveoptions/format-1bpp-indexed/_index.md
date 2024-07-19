@@ -2,7 +2,7 @@
 title: フォーマット 1Bpp インデックス
 linktitle: フォーマット 1Bpp インデックス
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して 1 bpp インデックスで画像をフォーマットする方法を学びます。色深度の低い画像に関する完全なチュートリアルです。
+description: Aspose.Words for .NET を使用してインデックスされた 1 bpp で画像をフォーマットする方法を学びます。色深度の低い画像に関する完全なチュートリアルです。
 type: docs
 weight: 10
 url: /ja/net/programming-with-imagesaveoptions/format-1bpp-indexed/
@@ -72,6 +72,6 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
 このチュートリアルでは、Aspose.Words for .NET の 1Bpp インデックス形式機能について説明しました。ドキュメント内の画像を、色深度 1 ビット/ピクセル (1 bpp) とインデックス カラー モードを使用して PNG 形式でフォーマットする方法を学習しました。
 
-この機能は、色深度が低くファイル サイズが小さい画像を取得する場合に便利です。1Bpp インデックス形式では、インデックス カラー パレットを使用して画像を表現できるため、特定のアプリケーションで役立ちます。
+この機能は、色深度が低くファイル サイズが小さい画像を取得する場合に便利です。1Bpp インデックス形式では、インデックス カラー パレットを使用して画像を表現できるため、特定のアプリケーションでは便利です。
 
 Aspose.Words for .NET は、ドキュメントの操作と生成のための幅広い高度な機能を提供します。1Bpp インデックス形式は、Aspose.Words for .NET が提供する数多くの強力なツールの 1 つです。

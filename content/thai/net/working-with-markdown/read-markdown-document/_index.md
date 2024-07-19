@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 
 #### ถาม: จะอ่านเอกสาร Markdown โดยใช้ .NET ได้อย่างไร
 
-ตอบ: หากต้องการอ่านเอกสาร Markdown โดยใช้ .NET คุณสามารถใช้ไลบรารีที่เข้ากันได้กับ Markdown เช่น`Markdig` หรือ`CommonMark.NET`- ไลบรารีเหล่านี้มีฟังก์ชันในการแยกวิเคราะห์และแยกเนื้อหาจากเอกสาร Markdown
+ ตอบ: หากต้องการอ่านเอกสาร Markdown โดยใช้ .NET คุณสามารถใช้ไลบรารีที่เข้ากันได้กับ Markdown เช่น`Markdig` หรือ`CommonMark.NET`- ไลบรารีเหล่านี้มีฟังก์ชันในการแยกวิเคราะห์และแยกเนื้อหาออกจากเอกสาร Markdown
 
 #### ถาม: จะแปลงเอกสาร Markdown เป็น HTML โดยใช้ .NET ได้อย่างไร
 
@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 
 #### ถาม: ไลบรารี .NET ที่แนะนำสำหรับการจัดการเอกสาร Markdown คืออะไร
 
- ตอบ: ไลบรารี .NET ที่แนะนำสำหรับการจัดการเอกสาร Markdown ได้แก่`Markdig` และ`CommonMark.NET`- มีความยืดหยุ่นสูงและรองรับฟีเจอร์ Markdown อย่างเต็มที่
+ตอบ: ไลบรารี .NET ที่แนะนำสำหรับการจัดการเอกสาร Markdown ได้แก่`Markdig`และ`CommonMark.NET`- มีความยืดหยุ่นสูงและรองรับฟีเจอร์ Markdown อย่างเต็มที่
 
 #### ถาม: ฉันจะจัดการกับข้อผิดพลาดเมื่ออ่านเอกสาร Markdown ได้อย่างไร
 

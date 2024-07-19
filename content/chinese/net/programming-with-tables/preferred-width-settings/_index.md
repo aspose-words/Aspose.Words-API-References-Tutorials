@@ -2,105 +2,131 @@
 title: 首选宽度设置
 linktitle: 首选宽度设置
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置首选表格单元格宽度。
+description: 通过本分步指南了解如何在 Aspose.Words for .NET 中创建具有绝对、相对和自动宽度设置的表格。
 type: docs
 weight: 10
 url: /zh/net/programming-with-tables/preferred-width-settings/
 ---
+## 介绍
 
-在本教程中，我们将学习如何使用 Aspose.Words for .NET 设置 Word 文档中表格单元格的首选宽度设置。我们将按照分步指南来理解代码并实现此功能。在本教程结束时，您将能够为 Word 文档中的表格单元格指定不同的首选宽度。
+表格是组织和呈现 Word 文档中信息的有效方式。在 Aspose.Words for .NET 中使用表格时，您可以使用多种选项来设置表格单元格的宽度，以确保它们完全适合您的文档布局。本指南将引导您完成使用 Aspose.Words for .NET 创建具有首选宽度设置的表格的过程，重点介绍绝对、相对和自动调整大小选项。 
 
-## 步骤 1：项目设置
-1. 启动 Visual Studio 并创建一个新的 C# 项目。
-2. 添加对 Aspose.Words for .NET 库的引用。
+## 先决条件
 
-## 第 2 步：创建文档并初始化文档生成器
-要使用文档和文档生成器启动文字处理，请按照以下步骤操作：
+在深入学习本教程之前，请确保您已准备好以下内容：
+
+1.  Aspose.Words for .NET：确保您的开发环境中安装了 Aspose.Words for .NET。您可以下载它[这里](https://releases.aspose.com/words/net/).
+
+2. .NET 开发环境：设置 .NET 开发环境，例如 Visual Studio。
+
+3. C# 基础知识：熟悉 C# 编程将帮助您更好地理解代码片段和示例。
+
+4.  Aspose.Words 文档：请参阅[Aspose.Words 文档](https://reference.aspose.com/words/net/)了解详细的 API 信息和进一步阅读内容。
+
+## 导入命名空间
+
+在开始编码之前，您需要将必要的命名空间导入到您的 C# 项目中：
 
 ```csharp
-//文档目录的路径
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-//文档创建
+这些命名空间提供对 Aspose.Words 和 Table 对象的核心功能和访问，允许您操作文档表。
+
+让我们将创建具有不同首选宽度设置的表格的过程分解为清晰、易于管理的步骤。
+
+## 步骤 1：初始化 Document 和 DocumentBuilder
+
+标题：创建新文档和 DocumentBuilder
+
+说明：首先创建一个新的 Word 文档和一个`DocumentBuilder`实例。`DocumentBuilder`类提供了一种向文档添加内容的简单方法。
+
+```csharp
+//定义保存文档的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+//创建一个新文档。
 Document doc = new Document();
 
-//初始化文档生成器
+//为该 Document 创建一个 DocumentBuilder。
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-确保将“YOUR DOCUMENTS DIRECTORY”替换为您的文档目录的实际路径。
+在这里，您可以指定文档的保存目录并初始化`Document`和`DocumentBuilder`对象。
 
-## 步骤 3：构建具有首选宽度的表格
-接下来，我们将构建一个包含三个具有不同首选宽度的单元格的表格。使用以下代码：
+## 步骤 2：插入具有绝对宽度的第一个表格单元格
+
+将第一个单元格插入到表格中，固定宽度为 40 点。这将确保无论表格大小如何，此单元格的宽度始终为 40 点。
 
 ```csharp
-//表格开头
-builder. StartTable();
 
-//插入绝对大小的单元格
-builder. InsertCell();
+//插入绝对大小的单元格。
+builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-builder.Writeln("Cell with a width of 40 points");
-
-//插入相对大小的单元格（以百分比表示）
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-builder.Writeln("Cell with 20% width");
-
-//插入自动调整大小的单元格
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-builder.Writeln("Auto-size cell. The size of this cell is calculated from the preferred width of the table. In this case, the cell will fill the rest of the available space.");
-
-//表格结束
-builder. EndTable();
+builder.Writeln("Cell at 40 points width");
 ```
 
-这里我们使用文档构建器构建一个包含三个单元格的表格。第一个单元格的首选宽度为 40 点，第二个单元格的首选宽度为表格宽度的 20%，第三个单元格的首选宽度会自动调整
+在此步骤中，您开始创建表格并插入具有绝对宽度的单元格。`PreferredWidth.FromPoints(40)`方法将单元格的宽度设置为 40 点，并且`Shading.BackgroundPatternColor`应用浅黄色背景颜色。
 
-  取决于可用空间。
+## 步骤 3：插入相对大小的单元格
 
-## 步骤 4：保存修改后的文档
-最后，我们需要保存修改后的文档，并使用为表格单元格定义的首选宽度设置。使用以下代码：
+插入另一个单元格，其宽度为表格总宽度的 20%。此相对大小可确保单元格根据表格宽度按比例调整。
 
 ```csharp
+//插入相对（百分比）大小的单元格。
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
+builder.Writeln("Cell at 20% width");
+```
+
+该单元格的宽度将占表格总宽度的 20％，使其能够适应不同的屏幕尺寸或文档布局。
+
+### 步骤 4：插入自动调整大小的单元格
+
+最后，插入一个根据表格中剩余的可用空间自动调整大小的单元格。
+
+```csharp
+//插入自动调整大小的单元格。
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
+builder.Writeln("Cell automatically sized. The size of this cell is calculated from the table preferred width.");
+builder.Writeln("In this case the cell will fill up the rest of the available space.");
+```
+
+这`PreferredWidth.Auto`设置允许此单元格根据其他单元格被考虑后的剩余空间进行扩展或收缩。这可确保表格布局看起来平衡且专业。
+
+## 步骤 5：完成并保存文档
+
+插入所有单元格后，完成表格并将文档保存到指定路径。
+
+```csharp
+//保存文档。
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-确保为输出文档指定正确的路径和文件名。
-
-### 使用 Aspose.Words for .NET 的首选宽度设置示例源代码 
-
-```csharp
-	//文档目录的路径
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	//插入由三个具有不同优选宽度的单元格组成的表格行。
-	builder.StartTable();
-	//插入绝对大小的单元格。
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-	builder.Writeln("Cell at 40 points width");
-	//插入相对（百分比）大小的单元格。
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-	builder.Writeln("Cell at 20% width");
-	//插入自动调整大小的单元格。
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-	builder.Writeln(
-		"Cell automatically sized. The size of this cell is calculated from the table preferred width.");
-	builder.Writeln("In this case the cell will fill up the rest of the available space.");
-	doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
-```
+此步骤完成表格并将文档以文件名“WorkingWithTables.PreferredWidthSettings.docx”保存在您指定的目录中。
 
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 设置 Word 文档中表格单元格的首选宽度设置。通过遵循本分步指南并实现提供的 C# 代码，您可以根据 Word 文档中的特定需求自定义表格单元格宽度。
+
+一旦您了解了可用的不同大小选项，在 Aspose.Words for .NET 中创建具有首选宽度设置的表格就很简单了。无论您需要固定、相对还是自动单元格宽度，Aspose.Words 都能灵活地高效处理各种表格布局场景。通过遵循本指南中概述的步骤，您可以确保您的表格在 Word 文档中结构良好且具有视觉吸引力。
+
+## 常见问题解答
+
+### 绝对单元格宽度和相对单元格宽度有什么区别？
+绝对单元格宽度是固定的且不会改变，而相对宽度会根据表格的总宽度进行调整。
+
+### 我可以使用负百分比来表示相对宽度吗？
+不可以，负百分比对于单元格宽度无效。只允许使用正百分比。
+
+### 自动调整尺寸功能如何工作？
+自动调整大小功能会在调整其他单元格大小后调整单元格的宽度以填充表格中的所有剩余空间。
+
+### 我可以对具有不同宽度设置的单元格应用不同的样式吗？
+是的，您可以对单元格应用各种样式和格式，而不管其宽度设置如何。
+
+### 如果表格的总宽度小于所有单元格宽度的总和会发生什么？
+表格会自动调整单元格的宽度以适应可用空间，这可能会导致某些单元格缩小。

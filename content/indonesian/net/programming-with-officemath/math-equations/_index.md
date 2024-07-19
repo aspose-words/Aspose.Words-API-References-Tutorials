@@ -44,7 +44,7 @@ officeMath.DisplayType = OfficeMathDisplayType.Display;
 
 Dalam contoh ini, kami menyetel jenis tampilan persamaan matematika ke "Tampilan", yang berarti persamaan tersebut akan ditampilkan pada barisnya sendiri.
 
-Demikian pula, Anda dapat mengatur perataan persamaan matematika menggunakan properti Justifikasi. Berikut ini contohnya:
+Demikian pula, Anda dapat mengatur perataan persamaan matematika menggunakan properti Justification. Berikut ini contohnya:
 
 ```csharp
 officeMath.Justification = OfficeMathJustification.Left;
@@ -54,7 +54,7 @@ Dalam contoh ini, kami mengatur perataan persamaan matematika ke kiri.
 
 ## Menyimpan dokumen dengan persamaan matematika
 
-Setelah Anda mengonfigurasi properti persamaan matematika, Anda dapat menyimpan dokumen yang dimodifikasi menggunakan metode Simpan dari kelas Dokumen. Berikut ini contohnya:
+Setelah Anda mengkonfigurasi properti persamaan matematika, Anda dapat menyimpan dokumen yang dimodifikasi menggunakan metode Simpan dari kelas Dokumen. Berikut ini contohnya:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx

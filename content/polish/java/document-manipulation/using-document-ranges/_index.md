@@ -59,7 +59,7 @@ Zakresy dokumentów w Aspose.Words for Java zapewniają możliwość wydajnej pr
 
 Zakres dokumentów w Aspose.Words for Java to określona część dokumentu, którą można niezależnie manipulować lub wyodrębniać. Umożliwia wykonywanie ukierunkowanych operacji w dokumencie.
 
-### Jak usunąć zawartość z zakresu dokumentu?
+### Jak usunąć zawartość z zakresu dokumentów?
 
  Aby usunąć zawartość w zakresie dokumentu, możesz użyć opcji`delete()` metoda. Na przykład,`doc.getRange().delete()` usunie zawartość w całym zakresie dokumentu.
 

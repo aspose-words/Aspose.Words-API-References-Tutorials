@@ -19,7 +19,7 @@ url: /hi/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 इस चरण में, हम उस Word दस्तावेज़ को लोड करेंगे जिसे हम HTML में बदलना चाहते हैं। दस्तावेज़ को लोड करने के लिए निम्न कोड का उपयोग करें:
 
 ```csharp
-// दस्तावेज़ निर्देशिका का पथ.
+//दस्तावेज़ निर्देशिका का पथ.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- यह कोड एक उदाहरण बनाता है`HtmlSaveOptions` और सेट`CssStyleSheetType` को`CssStyleSheetType.External`एक बाहरी CSS स्टाइल शीट उत्पन्न करने के लिए, और`CssClassNamePrefix` को`"pfx_"` उपसर्ग करना`"pfx_"` सीएसएस वर्ग के नाम.
+ यह कोड एक उदाहरण बनाता है`HtmlSaveOptions` और सेट`CssStyleSheetType` को`CssStyleSheetType.External` एक बाहरी CSS स्टाइल शीट उत्पन्न करने के लिए, और`CssClassNamePrefix` को`"pfx_"` उपसर्ग करना`"pfx_"` सीएसएस वर्ग के नाम.
 
 ## चरण 4: दस्तावेज़ को HTML में परिवर्तित करना और सहेजना
 

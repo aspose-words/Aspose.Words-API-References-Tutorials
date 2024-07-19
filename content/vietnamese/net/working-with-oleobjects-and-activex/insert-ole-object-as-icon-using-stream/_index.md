@@ -88,7 +88,7 @@ A. Để tạo một tài liệu và trình tạo tài liệu mới, bạn có t
 ```csharp
 Document doc = new Document();
 ```
- Sử dụng`DocumentBuilder`lớp để tạo trình tạo tài liệu được liên kết với tài liệu đã tạo trước đó:
+ Sử dụng`DocumentBuilder` lớp để tạo trình tạo tài liệu được liên kết với tài liệu đã tạo trước đó:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,8 +118,8 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### Câu hỏi: Làm cách nào để nhúng mã để chèn đối tượng OLE làm biểu tượng từ luồng vào dự án của tôi?
 
 A. Để nhúng mã để chèn đối tượng OLE dưới dạng biểu tượng từ luồng vào dự án của bạn, hãy làm theo các bước sau:
--  Nhập các tài liệu tham khảo cần thiết bằng cách thêm thích hợp`using` các câu lệnh.
--  Tạo một tài liệu mới và trình tạo tài liệu bằng cách sử dụng`Document` Và`DocumentBuilder` các lớp học.
+- Nhập các tài liệu tham khảo cần thiết bằng cách thêm thích hợp`using` các câu lệnh.
+-  Tạo một tài liệu mới và trình tạo tài liệu bằng cách sử dụng`Document`Và`DocumentBuilder` các lớp học.
 - Sử dụng mã để chèn đối tượng OLE làm biểu tượng từ luồng.
 -  Lưu tài liệu bằng cách sử dụng`Save` phương pháp với đường dẫn đích thích hợp.
 

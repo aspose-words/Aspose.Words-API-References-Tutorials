@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Tạo và định dạng tài liệu
- Tạo một thể hiện của`Document` lớp học và`DocumentBuilder`lớp để xây dựng tài liệu. Sử dụng`Font` tài sản của`DocumentBuilder` để truy cập các thuộc tính định dạng phông chữ.
+ Tạo một thể hiện của`Document` lớp học và`DocumentBuilder` lớp để xây dựng tài liệu. Sử dụng`Font` tài sản của`DocumentBuilder` để truy cập các thuộc tính định dạng phông chữ.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## Bước 3: Lưu tài liệu
- Sử dụng`Save` phương pháp lưu tài liệu với định dạng phông chữ được áp dụng. Thay thế`"WorkingWithFonts.SetFontFormatting.docx"` với tên tập tin mong muốn.
+ Sử dụng`Save`phương pháp lưu tài liệu với định dạng phông chữ được áp dụng. Thay thế`"WorkingWithFonts.SetFontFormatting.docx"` với tên tập tin mong muốn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 步驟 2： 載入文件並建立 XML 部件
-使用以下命令載入 Word 文檔`Document`建構函數，將文檔的路徑作為參數傳遞。建立一個 XML 元件，其中包含要在結構化文件標記內顯示的資料。
+使用以下命令載入 Word 文檔`Document`建構函數，將文檔的路徑作為參數傳遞。建立一個 XML 元件，其中包含要在結構化文件標記中顯示的資料。
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

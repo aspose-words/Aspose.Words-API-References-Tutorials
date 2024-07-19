@@ -30,7 +30,7 @@ doc.save("output.docx")
 
 ## Menavigasi Pohon Dokumen
 
-Dokumen disusun sebagai pohon simpul, di mana setiap simpul mewakili elemen seperti paragraf, tabel, gambar, dll. Menavigasi pohon ini penting untuk manipulasi dokumen.
+Dokumen disusun sebagai pohon node, di mana setiap node mewakili elemen seperti paragraf, tabel, gambar, dll. Menavigasi pohon ini sangat penting untuk manipulasi dokumen.
 
 ```python
 # Access the first paragraph of the document

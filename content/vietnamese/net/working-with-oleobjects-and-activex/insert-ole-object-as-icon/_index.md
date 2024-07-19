@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 3: Chèn đối tượng OLE làm biểu tượng
- Sử dụng Trình tạo tài liệu`InsertOleObjectAsIcon`phương pháp chèn một đối tượng OLE làm biểu tượng vào tài liệu. Chỉ định đường dẫn tệp OLE, cờ hiển thị, đường dẫn biểu tượng và tên đối tượng được nhúng.
+ Sử dụng Trình tạo tài liệu`InsertOleObjectAsIcon` phương pháp chèn một đối tượng OLE làm biểu tượng vào tài liệu. Chỉ định đường dẫn tệp OLE, cờ hiển thị, đường dẫn biểu tượng và tên đối tượng được nhúng.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### H. Làm cách nào để tạo trình tạo tài liệu và tài liệu mới trong Aspose.Words cho .NET?
 
- Đáp: Bạn có thể tạo một tài liệu mới bằng cách sử dụng`Document` lớp và trình tạo tài liệu bằng cách sử dụng`DocumentBuilder` lớp học. Đây là một ví dụ :
+ Đáp: Bạn có thể tạo một tài liệu mới bằng cách sử dụng`Document` lớp và trình tạo tài liệu bằng cách sử dụng`DocumentBuilder`lớp học. Đây là một ví dụ :
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### H. Làm cách nào để lưu tài liệu với đối tượng OLE được chèn dưới dạng biểu tượng?
 
- A: Sử dụng tài liệu`Save` phương pháp lưu tài liệu vào một tập tin. Đây là một ví dụ :
+ A: Sử dụng tài liệu`Save`phương pháp lưu tài liệu vào một tập tin. Đây là một ví dụ :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

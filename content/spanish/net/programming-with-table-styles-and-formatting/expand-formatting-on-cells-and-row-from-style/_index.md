@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Paso 3: ve a la primera celda de la primera tabla
- Para comenzar, debemos navegar hasta la primera celda de la primera tabla del documento. Usamos el`GetChild()` y`FirstRow.FirstCell` métodos para obtener la referencia a la primera celda.
+ Para comenzar, debemos navegar hasta la primera celda de la primera tabla del documento. Usamos el`GetChild()`y`FirstRow.FirstCell` métodos para obtener la referencia a la primera celda.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

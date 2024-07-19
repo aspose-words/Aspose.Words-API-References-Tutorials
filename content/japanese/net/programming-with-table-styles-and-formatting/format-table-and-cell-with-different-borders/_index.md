@@ -30,20 +30,20 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 //表全体の境界線を設定します。
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 //このセルのパディングを設定します。
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // 2 番目のセルに異なるセル パディングを指定します。
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 //以前の操作によるセルの書式設定をクリアします。
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 //この行の最初のセルに太い罫線を作成します。
 //テーブルに定義された境界線を基準にします。
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 ### Aspose.Words for .NET を使用して表とセルを異なる境界線で書式設定するためのサンプル ソース コード 
 
 ```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+//ドキュメントディレクトリへのパス
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//表全体の境界線を設定します。
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	//このセルのセルの網掛けを設定します。
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// 2 番目のセルに異なるセルの網かけを指定します。
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	//以前の操作によるセルの書式設定をクリアします。
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	//この行の最初のセルに大きい境界線を作成します。これは異なります
-	//テーブルに設定された境界線と比較します。
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//表全体の境界線を設定します。
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+//このセルのセルの網掛けを設定します。
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// 2 番目のセルに異なるセルの網かけを指定します。
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+//以前の操作によるセルの書式設定をクリアします。
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+//この行の最初のセルに大きい境界線を作成します。これは異なります
+//テーブルに設定された境界線と比較します。
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## 結論

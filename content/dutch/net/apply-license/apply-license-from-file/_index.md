@@ -16,7 +16,7 @@ Hallo daar! Als je in de wereld van Aspose.Words voor .NET duikt, staat je iets 
 Voordat we ingaan op de details, moeten we ervoor zorgen dat je alles hebt wat je nodig hebt:
 
 1.  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van de[Aspose-releasespagina](https://releases.aspose.com/words/net/).
-2.  Geldig Aspose-licentiebestand: Als u er nog geen heeft, kunt u een gratis proefversie krijgen van[hier](https://releases.aspose.com/) of koop er een bij[hier](https://purchase.aspose.com/buy).
+2.  Geldig Aspose-licentiebestand: als u er nog geen heeft, kunt u een gratis proefversie krijgen van[hier](https://releases.aspose.com/) of koop er een bij[hier](https://purchase.aspose.com/buy).
 3. Ontwikkelomgeving: een IDE zoals Visual Studio.
 4. Basiskennis van C#: dit zal u helpen de codevoorbeelden te volgen.
 

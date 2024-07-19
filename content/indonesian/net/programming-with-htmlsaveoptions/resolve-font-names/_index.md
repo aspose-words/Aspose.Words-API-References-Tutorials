@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Kode ini membuat sebuah instance dari`HtmlSaveOptions`dan mengatur`ResolveFontNames` pilihan untuk`true`untuk mengatasi nama font yang hilang saat mengonversi ke HTML. Juga`PrettyFormat` opsi diatur ke`true` untuk mendapatkan kode HTML yang diformat dengan baik.
+ Kode ini membuat sebuah instance dari`HtmlSaveOptions` dan mengatur`ResolveFontNames` pilihan untuk`true`untuk mengatasi nama font yang hilang saat mengonversi ke HTML. Juga`PrettyFormat` opsi diatur ke`true` untuk mendapatkan kode HTML yang diformat dengan baik.
 
 ## Langkah 4: Mengonversi dan menyimpan dokumen ke HTML
 

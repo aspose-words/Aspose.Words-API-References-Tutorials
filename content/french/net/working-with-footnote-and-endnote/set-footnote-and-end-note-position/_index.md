@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Étape 2 : Définition de la position des notes de bas de page et des notes de fin
 
- Ensuite, accédez au`FootnoteOptions` et`EndnoteOptions`propriétés du document pour définir la position des notes de bas de page et des notes de fin. Dans cet exemple, nous définissons la position des notes de bas de page sous le texte et la position des notes de fin à la fin de la section :
+ Ensuite, accédez au`FootnoteOptions`et`EndnoteOptions`propriétés du document pour définir la position des notes de bas de page et des notes de fin. Dans cet exemple, nous définissons la position des notes de bas de page sous le texte et la position des notes de fin à la fin de la section :
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

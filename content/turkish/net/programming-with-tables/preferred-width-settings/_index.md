@@ -2,105 +2,131 @@
 title: Tercih Edilen Genişlik Ayarları
 linktitle: Tercih Edilen Genişlik Ayarları
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesinde tercih edilen tablo hücresi genişliklerini nasıl ayarlayacağınızı öğrenin.
+description: Bu adım adım kılavuzla Aspose.Words for .NET'te mutlak, göreceli ve otomatik genişlik ayarlarına sahip tablolar oluşturmayı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/preferred-width-settings/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde tablo hücreleri için tercih edilen genişlik ayarlarının nasıl yapılacağını öğreneceğiz. Kodu anlamak ve bu özelliği uygulamak için adım adım kılavuzu takip edeceğiz. Bu eğitimin sonunda, Word belgelerinizdeki tablo hücreleriniz için tercih edilen farklı genişlikleri belirtebileceksiniz.
+Tablolar, Word belgelerinizdeki bilgileri düzenlemenin ve sunmanın güçlü bir yoludur. Aspose.Words for .NET'te tablolarla çalışırken, belgenizin düzenine mükemmel şekilde uymalarını sağlamak amacıyla tablo hücrelerinin genişliğini ayarlamak için çeşitli seçenekleriniz vardır. Bu kılavuz, mutlak, göreceli ve otomatik boyutlandırma seçeneklerine odaklanarak Aspose.Words for .NET'i kullanarak tercih edilen genişlik ayarlarına sahip tablolar oluşturma sürecinde size yol gösterecektir. 
 
-## Adım 1: Proje Kurulumu
-1. Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
-2. Aspose.Words for .NET kitaplığına bir referans ekleyin.
+## Önkoşullar
 
-## Adım 2: Belgeyi oluşturma ve belge oluşturucuyu başlatma
-Belge ve belge oluşturucuyla Sözcük İşleme'yi başlatmak için şu adımları izleyin:
+Eğiticiye dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+
+1.  Aspose.Words for .NET: Geliştirme ortamınızda Aspose.Words for .NET'in kurulu olduğundan emin olun. İndirebilirsin[Burada](https://releases.aspose.com/words/net/).
+
+2. .NET Geliştirme Ortamı: Visual Studio gibi bir .NET geliştirme ortamını kurun.
+
+3. Temel C# Bilgisi: C# programlamaya aşinalık, kod parçacıklarını ve örnekleri daha iyi anlamanıza yardımcı olacaktır.
+
+4.  Aspose.Words Belgeleri: Bkz.[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) ayrıntılı API bilgileri ve daha fazla bilgi için.
+
+## Ad Alanlarını İçe Aktar
+
+Kodlamaya başlamadan önce gerekli ad alanlarını C# projenize aktarmanız gerekir:
 
 ```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// Belge oluşturma
+Bu ad alanları Aspose.Words ve Table nesnesinin temel işlevlerine erişim sağlayarak belge tablolarını değiştirmenize olanak tanır.
+
+Tercih edilen farklı genişlik ayarlarına sahip bir tablo oluşturma sürecini net, yönetilebilir adımlara ayıralım.
+
+## Adım 1: Document'ı ve DocumentBuilder'ı başlatın
+
+Başlık: Yeni Bir Belge ve DocumentBuilder Oluşturma
+
+ Açıklama: Yeni bir Word belgesi oluşturarak başlayın ve`DocumentBuilder` misal.`DocumentBuilder` class, belgenize içerik eklemenin basit bir yolunu sağlar.
+
+```csharp
+// Belgenin kaydedileceği yolu tanımlayın.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Yeni bir Belge oluşturun.
 Document doc = new Document();
 
-// Belge oluşturucuyu başlat
+// Bu Belge için bir DocumentBuilder oluşturun.
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-"BELGELERİNİZ DİZİNİ"ni belge dizininizin gerçek yolu ile değiştirdiğinizden emin olun.
+ Burada belgenin kaydedileceği dizini belirlersiniz ve`Document`Ve`DocumentBuilder` nesneler.
 
-## 3. Adım: Tabloyu tercih edilen genişliklerde oluşturma
-Daha sonra, farklı tercih edilen genişliklere sahip üç hücreden oluşan bir tablo oluşturacağız. Aşağıdaki kodu kullanın:
+## Adım 2: İlk Tablo Hücresini Mutlak Genişliğe Sahip Yerleştirin
+
+İlk hücreyi 40 puntoluk sabit genişlikte tabloya ekleyin. Bu, tablo boyutundan bağımsız olarak bu hücrenin her zaman 40 puntoluk bir genişliği korumasını sağlayacaktır.
 
 ```csharp
-// Tablonun başlangıcı
-builder. StartTable();
 
-// Mutlak boyutta bir hücre ekleme
-builder. InsertCell();
+// Mutlak boyutlu bir hücre ekleyin.
+builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-builder.Writeln("Cell with a width of 40 points");
-
-// Göreceli boyutta bir hücre ekleme (yüzde olarak)
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-builder.Writeln("Cell with 20% width");
-
-// Otomatik boyutlu bir hücre ekleme
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-builder.Writeln("Auto-size cell. The size of this cell is calculated from the preferred width of the table. In this case, the cell will fill the rest of the available space.");
-
-// Tablonun sonu
-builder. EndTable();
+builder.Writeln("Cell at 40 points width");
 ```
 
-Burada üç hücreli bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz. İlk hücrenin tercih edilen genişliği 40 noktadır, ikinci hücrenin tercih edilen genişliği masa genişliğinin %20'sidir ve üçüncü hücrenin otomatik olarak ayarlanan tercih edilen genişliği vardır.
+Bu adımda tabloyu oluşturmaya başlayacak ve mutlak genişliğe sahip bir hücre ekleyeceksiniz.`PreferredWidth.FromPoints(40)` yöntemi hücrenin genişliğini 40 noktaya ayarlar ve`Shading.BackgroundPatternColor` açık sarı arka plan rengi uygular.
 
-  mevcut alana bağlı olarak.
+## Adım 3: Göreceli Boyutta Bir Hücre Ekleme
 
-## Adım 4: Değiştirilen belgeyi kaydetme
-Son olarak değiştirilen belgeyi, tablo hücreleri için tanımlanan tercih edilen genişlik ayarlarıyla kaydetmemiz gerekiyor. Aşağıdaki kodu kullanın:
+Tablonun toplam genişliğinin %20'si kadar genişliğe sahip başka bir hücre ekleyin. Bu göreceli boyutlandırma, hücrenin masanın genişliğine orantılı olarak ayarlanmasını sağlar.
 
 ```csharp
+// Göreceli (yüzde) boyutlu bir hücre ekleyin.
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
+builder.Writeln("Cell at 20% width");
+```
+
+Bu hücrenin genişliği, tablonun toplam genişliğinin %20'si olacak ve bu da tablonun farklı ekran boyutlarına veya belge düzenlerine uyarlanabilmesini sağlayacaktır.
+
+### Adım 4: Otomatik Boyutlandırılmış Hücre Ekleme
+
+Son olarak, tabloda kalan kullanılabilir alana göre kendisini otomatik olarak boyutlandıran bir hücre ekleyin.
+
+```csharp
+// Otomatik boyutlu bir hücre ekleyin.
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
+builder.Writeln("Cell automatically sized. The size of this cell is calculated from the table preferred width.");
+builder.Writeln("In this case the cell will fill up the rest of the available space.");
+```
+
+`PreferredWidth.Auto` ayarı, bu hücrenin, diğer hücreler hesaba katıldıktan sonra kalan alana göre genişlemesine veya daralmasına olanak tanır. Bu, masa düzeninin dengeli ve profesyonel görünmesini sağlar.
+
+## Adım 5: Belgeyi Sonlandırın ve Kaydedin
+
+Tüm hücrelerinizi ekledikten sonra tabloyu doldurun ve belgeyi belirttiğiniz yola kaydedin.
+
+```csharp
+// Belgeyi kaydedin.
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-Çıktı belgesi için doğru yolu ve dosya adını belirttiğinizden emin olun.
-
-### Aspose.Words for .NET kullanılarak Tercih Edilen Genişlik Ayarları için örnek kaynak kodu 
-
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Farklı tercih edilen genişliklere sahip üç hücreden oluşan bir tablo satırı ekleyin.
-	builder.StartTable();
-	// Mutlak boyutlu bir hücre ekleyin.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-	builder.Writeln("Cell at 40 points width");
-	// Göreceli (yüzde) boyutlu bir hücre ekleyin.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-	builder.Writeln("Cell at 20% width");
-	// Otomatik boyutlu bir hücre ekleyin.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-	builder.Writeln(
-		"Cell automatically sized. The size of this cell is calculated from the table preferred width.");
-	builder.Writeln("In this case the cell will fill up the rest of the available space.");
-	doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
-```
+Bu adım, tabloyu sonlandırır ve belgeyi, belirlediğiniz dizine "WorkingWithTables.PreferredWidthSettings.docx" dosya adıyla kaydeder.
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde tablo hücreleri için tercih edilen genişlik ayarlarının nasıl yapılacağını öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, tablo hücre genişliklerinizi Word belgelerinizdeki özel ihtiyaçlarınıza göre özelleştirebilirsiniz.
+
+Aspose.Words for .NET'te tercih edilen genişlik ayarlarıyla tablolar oluşturmak, mevcut farklı boyutlandırma seçeneklerini anladığınızda çok kolaydır. İster sabit, göreli veya otomatik hücre genişliklerine ihtiyacınız olsun, Aspose.Words çeşitli tablo düzeni senaryolarını verimli bir şekilde yönetme esnekliği sağlar. Bu kılavuzda özetlenen adımları izleyerek tablolarınızın iyi yapılandırılmış ve Word belgelerinizde görsel olarak çekici olmasını sağlayabilirsiniz.
+
+## SSS'ler
+
+### Mutlak ve bağıl hücre genişlikleri arasındaki fark nedir?
+Mutlak hücre genişlikleri sabittir ve değişmez; göreceli genişlikler ise tablonun toplam genişliğine göre ayarlanır.
+
+### Göreli genişlikler için negatif yüzdeler kullanabilir miyim?
+Hayır, hücre genişlikleri için negatif yüzdeler geçerli değildir. Yalnızca pozitif yüzdelere izin verilir.
+
+### Otomatik boyutlandırma özelliği nasıl çalışır?
+Otomatik boyutlandırma, diğer hücreler boyutlandırıldıktan sonra tabloda kalan alanı dolduracak şekilde hücrenin genişliğini ayarlar.
+
+### Farklı genişlik ayarlarına sahip hücrelere farklı stiller uygulayabilir miyim?
+Evet, genişlik ayarlarına bakılmaksızın hücrelere çeşitli stiller ve biçimlendirmeler uygulayabilirsiniz.
+
+### Tablonun toplam genişliği tüm hücre genişliklerinin toplamından azsa ne olur?
+Tablo, hücrelerin genişliklerini mevcut alana sığacak şekilde otomatik olarak ayarlayacaktır; bu, bazı hücrelerin küçülmesine neden olabilir.

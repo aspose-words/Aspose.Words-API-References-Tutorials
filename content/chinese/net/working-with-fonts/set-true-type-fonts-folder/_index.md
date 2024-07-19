@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
 
 #### 问：我可以在 Aspose.Words 中指定多个 TrueType 字体文件夹吗？
 
-答：是的，您可以使用 Aspose.Words 中的以下命令指定多个 TrueType 字体文件夹：`SetTrueTypeFontsFolder`方法`Fonts`带有文件夹位置列表的类。
+答：是的，您可以使用 Aspose.Words 中的`SetTrueTypeFontsFolder`方法`Fonts`带有文件夹位置列表的类。
 
 #### 问：如何检查在 Aspose.Words 中配置的 TrueType 字体文件夹？
 

@@ -17,7 +17,7 @@ Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Adım 4: Tablo ve Tablo Yapısı Oluşturun
- kullanarak bir tablo oluşturmaya başlayın.`StartTable` yöntemi`DocumentBuilder` . kullanarak tablo hücreleri ve içerik ekleyin.`InsertCell` Ve`Write` yöntemler.
+ kullanarak bir tablo oluşturmaya başlayın.`StartTable` yöntemi`DocumentBuilder` . kullanarak tablo hücreleri ve içerik ekleyin.`InsertCell`Ve`Write` yöntemler.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Oluşturmak`Row`yinelenen bölümdeki her bir öğeyi temsil etmek ve onu yinelenen bölüm öğesine eklemek için.
+ Oluşturmak`Row` yinelenen bölümdeki her bir öğeyi temsil etmek ve onu yinelenen bölüm öğesine eklemek için.
 
 ```csharp
 Row row = new Row(doc);

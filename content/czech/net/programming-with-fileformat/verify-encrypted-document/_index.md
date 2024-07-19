@@ -1,6 +1,6 @@
 ---
-title: Ověřte zašifrovaný dokument aplikace Word
-linktitle: Ověřte zašifrovaný dokument aplikace Word
+title: Ověřte šifrovaný dokument Word
+linktitle: Ověřte šifrovaný dokument Word
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Podrobný průvodce ověřením, že dokument aplikace Word je zašifrován pomocí Aspose.Words for .NET.
 type: docs
@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Krok 3: Zkontrolujte, zda je dokument zašifrován
 
- Používáme`IsEncrypted` vlastnictvím`FileFormatInfo`objekt pro kontrolu, zda je dokument zašifrován. Tato vlastnost se vrací`true` pokud je dokument zašifrován, jinak se vrátí`false`. Výsledek zobrazíme v konzole.
+ Používáme`IsEncrypted` vlastnictvím`FileFormatInfo` objekt pro kontrolu, zda je dokument zašifrován. Tato vlastnost se vrací`true` pokud je dokument zašifrován, jinak se vrátí`false`. Výsledek zobrazíme v konzole.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### Otázka: Jak zjistit formát souboru?
- Můžete použít`DetectFileFormat` metoda`FileFormatUtil`třídy k detekci informací o formátu souboru. V následujícím příkladu předpokládáme, že zašifrovaný dokument se nazývá „Encrypted.docx“ a je umístěn v určeném adresáři dokumentů:
+ Můžete použít`DetectFileFormat` metoda`FileFormatUtil` třídy k detekci informací o formátu souboru. V následujícím příkladu předpokládáme, že zašifrovaný dokument se nazývá „Encrypted.docx“ a je umístěn v určeném adresáři dokumentů:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### Otázka: Jak zkontrolovat, zda je dokument zašifrován?
- Můžete použít`IsEncrypted` vlastnictvím`FileFormatInfo`objekt pro kontrolu, zda je dokument zašifrován. Tato vlastnost se vrací`true` pokud je dokument zašifrován, jinak se vrátí`false`. Výsledek se zobrazí v konzole:
+ Můžete použít`IsEncrypted` vlastnictvím`FileFormatInfo` objekt pro kontrolu, zda je dokument zašifrován. Tato vlastnost se vrací`true` pokud je dokument zašifrován, jinak se vrátí`false`. Výsledek se zobrazí v konzole:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

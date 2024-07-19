@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Belgeyi oluşturun ve özelleştirin
- Bir örneğini oluşturun`Document` sınıf ve ilişkili`DocumentBuilder` belge içeriğini oluşturmak için. Kullan`Font.EmphasisMark` yazı tipi vurgu stilini ayarlama özelliği`EmphasisMark.UnderSolidCircle` . Daha sonra şunu kullanın:`Write` Ve`Writeln` yöntemleri`DocumentBuilder` Belirtilen yazı tipi vurgusuna sahip metin eklemek için.
+ Bir örneğini oluşturun`Document` sınıf ve ilişkili`DocumentBuilder` belge içeriğini oluşturmak için. Kullan`Font.EmphasisMark` yazı tipi vurgu stilini ayarlama özelliği`EmphasisMark.UnderSolidCircle` . Daha sonra şunu kullanın:`Write`Ve`Writeln` yöntemleri`DocumentBuilder` Belirtilen yazı tipi vurgusuna sahip metin eklemek için.
 
 ```csharp
 Document document = new Document();

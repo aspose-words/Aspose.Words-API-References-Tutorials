@@ -49,7 +49,7 @@ tableStyle.ConditionalStyles.FirstRow.Shading.BackgroundPatternColor = Color.Gre
 tableStyle.ConditionalStyles.FirstRow.Shading.Texture = TextureIndex.TextureNone;
 ```
 
-## 步骤 5：将表格样式应用到表格
+## 步骤 5：将表格样式应用于表格
 最后，我们使用`Style`表的属性。
 
 ```csharp

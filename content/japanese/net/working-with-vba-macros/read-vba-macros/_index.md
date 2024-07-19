@@ -38,7 +38,7 @@ Console.WriteLine(module.SourceCode);
 }
 ```
 
-### Aspose.Words for .NET を使用して VBA マクロを読み取るためのサンプル ソース コード 
+### Aspose.Words for .NET を使用して Vba マクロを読み取るためのサンプル ソース コード 
 
 ```csharp
 

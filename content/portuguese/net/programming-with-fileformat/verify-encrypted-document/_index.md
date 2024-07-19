@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Etapa 3: verifique se o documento está criptografado
 
- Nós usamos o`IsEncrypted` propriedade do`FileFormatInfo`objeto para verificar se o documento está criptografado. Esta propriedade retorna`true` se o documento estiver criptografado, caso contrário ele retornará`false`. Exibimos o resultado no console.
+ Nós usamos o`IsEncrypted` propriedade do`FileFormatInfo` objeto para verificar se o documento está criptografado. Esta propriedade retorna`true` se o documento estiver criptografado, caso contrário ele retornará`false`. Exibimos o resultado no console.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### P: Como detectar o formato do arquivo?
- Você pode usar o`DetectFileFormat` método do`FileFormatUtil`classe para detectar informações de formato de arquivo. No exemplo a seguir, presumimos que o documento criptografado se chama "Encrypted.docx" e está localizado no diretório de documentos especificado:
+ Você pode usar o`DetectFileFormat` método do`FileFormatUtil` classe para detectar informações de formato de arquivo. No exemplo a seguir, presumimos que o documento criptografado se chama "Encrypted.docx" e está localizado no diretório de documentos especificado:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### P: Como verificar se o documento está criptografado?
- Você pode usar o`IsEncrypted` propriedade do`FileFormatInfo`objeto para verificar se o documento está criptografado. Esta propriedade retorna`true` se o documento estiver criptografado, caso contrário ele retornará`false`. O resultado é exibido no console:
+ Você pode usar o`IsEncrypted` propriedade do`FileFormatInfo` objeto para verificar se o documento está criptografado. Esta propriedade retorna`true` se o documento estiver criptografado, caso contrário ele retornará`false`. O resultado é exibido no console:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

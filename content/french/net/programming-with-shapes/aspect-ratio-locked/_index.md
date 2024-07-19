@@ -17,14 +17,14 @@ Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 - Connaissance de base de C# et du traitement de mots avec des documents Word.
 
 ## Étape 1 : configurer le répertoire de documents
- Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
+ Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Étape 2 : Créer un nouveau document et DocumentBuilder
- Créez une nouvelle instance du`Document` classe et un`DocumentBuilder`s'opposer à travailler avec le document.
+ Créez une nouvelle instance du`Document` classe et un`DocumentBuilder` s'opposer à travailler avec le document.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Étape 3 : Insérer une forme d'image
- Utilisez le`InsertImage` méthode du`DocumentBuilder` objet pour insérer une forme d’image dans le document. Fournissez le chemin d’accès au fichier image en tant que paramètre.
+ Utilisez le`InsertImage` méthode du`DocumentBuilder`objet pour insérer une forme d’image dans le document. Fournissez le chemin d’accès au fichier image en tant que paramètre.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  Met le`AspectRatioLocked` propriété de la forme à`true` ou`false` pour verrouiller ou déverrouiller le rapport hauteur/largeur, respectivement.
 
 ```csharp
-shape.AspectRatioLocked = false; //Débloquez le rapport hauteur/largeur
+shape.AspectRatioLocked = false; // Débloquez le rapport hauteur/largeur
 ```
 
 ## Étape 5 : Enregistrez le document

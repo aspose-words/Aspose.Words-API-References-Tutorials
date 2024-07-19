@@ -31,7 +31,7 @@ doc = asposewords.Document("document.docx")
 print(doc.get_text())
 ```
 
-## 启用修订跟踪
+## 启用修订
 
 要启用文档的跟踪更改，您需要设置`TrackRevisions`财产`True`：
 

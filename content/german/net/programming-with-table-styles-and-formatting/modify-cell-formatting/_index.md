@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Schritt 3: Gehen Sie zur zu ändernden Zelle
- Um die Formatierung einer Zelle zu ändern, müssen wir zu der entsprechenden Zelle in der Tabelle navigieren. Wir verwenden die`GetChild()` Und`FirstRow.FirstCell` Methoden, um den Verweis auf die erste Zelle des ersten Arrays zu erhalten.
+ Um die Formatierung einer Zelle zu ändern, müssen wir zu der entsprechenden Zelle in der Tabelle navigieren. Wir verwenden die`GetChild()`Und`FirstRow.FirstCell` Methoden, um den Verweis auf die erste Zelle des ersten Arrays zu erhalten.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

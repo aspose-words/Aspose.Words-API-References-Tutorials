@@ -85,7 +85,7 @@ Gratulálunk! Most tanulta meg, hogyan léphet át egy adott táblázatcellára 
  Igen, a megfelelő táblázatindex megadásával a`MoveToCell` módszerrel navigálhat a dokumentum bármely táblázatának bármely cellájára.
 
 ### Hogyan kezelhetem a több sort vagy oszlopot átívelő cellákat?
- Használhatja a`RowSpan` és`ColSpan` tulajdonságai a`Cell` osztály az egyesített cellák kezeléséhez.
+ Használhatja a`RowSpan`és`ColSpan` tulajdonságai a`Cell` osztály az egyesített cellák kezeléséhez.
 
 ### Lehetséges a cellán belüli szöveg formázása?
  Teljesen! Használat`DocumentBuilder` módszerek, mint`Font.Size`, `Font.Bold`és mások a szöveg formázásához.

@@ -2,95 +2,115 @@
 title: Salt Okunur Kısıtlamasını Kaldır
 linktitle: Salt Okunur Kısıtlamasını Kaldır
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesindeki salt okunur kısıtlamayı nasıl kaldıracağınızı öğrenin.
+description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET'i kullanarak Word belgelerindeki salt okunur kısıtlamaları kolayca kaldırın. Geliştiriciler için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/document-protection/remove-read-only-restriction/
 ---
-Bu eğitimde Aspose.Words for .NET salt okunur kısıtlama kaldırma özelliğini kullanma adımlarında size yol göstereceğiz. Bu özellik, bir Word belgesini düzenlenebilir hale getirmek için salt okunur kısıtlamasını kaldırmanıza olanak tanır. Aşağıdaki adımları takip et:
+## giriiş
 
-## Adım 1: Belgeyi Oluşturma ve Korumayı Ayarlama
+Doğru araçları ve yöntemleri bilmiyorsanız, bir Word belgesinden salt okunur kısıtlamasını kaldırmak oldukça zor bir iş olabilir. Neyse ki Aspose.Words for .NET bunu başarmanın kusursuz bir yolunu sunuyor. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki salt okunur kısıtlamayı kaldırma sürecinde size yol göstereceğiz.
 
-Document sınıfının bir örneğini oluşturarak başlayın:
+## Önkoşullar
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-doc.WriteProtection.SetPassword("MyPassword");
-```
+Adım adım kılavuza geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-WriteProtection nesnesinin SetPassword() özelliğini kullanarak belge için bir parola ayarlayın:
+-  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Henüz yüklemediyseniz adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio gibi bir .NET geliştirme ortamı.
+- Temel C# Bilgisi: Temel C# programlama kavramlarını anlamak faydalı olacaktır.
 
-"MyPassword" kısmını belgeyi korumak için kullandığınız gerçek şifreyle değiştirdiğinizden emin olun.
+## Ad Alanlarını İçe Aktar
 
-## 2. Adım: Salt okunur kısıtlamasını kaldırın
-
-Salt okunur kısıtlamasını kaldırmak için ReadOnlyRecommended özelliğini false olarak ayarlayın:
+Gerçek kodla başlamadan önce projenize gerekli ad alanlarının aktarıldığından emin olun:
 
 ```csharp
-doc.WriteProtection.ReadOnlyRecommended = false;
+using Aspose.Words;
+using Aspose.Words.Protection;
 ```
 
-## 3. Adım: Sınırsız Koruma Uygulayın
+## 1. Adım: Projenizi Kurun
 
-Son olarak, Belge nesnesinin Koruma() yöntemini kullanarak sınırsız koruma uygulayın:
+Öncelikle projenizi geliştirme ortamınızda kurun. Visual Studio'yu açın, yeni bir C# projesi oluşturun ve Aspose.Words for .NET kitaplığına bir referans ekleyin.
 
-```csharp
-doc.Protect(ProtectionType.NoProtection);
-doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
-```
+## Adım 2: Belgeyi Başlatın
 
-Belgeyi salt okunur kısıtlaması olmadan kaydetmek için doğru yolu ve dosya adını belirttiğinizden emin olun.
-
-### Aspose.Words for .NET kullanarak Salt Okunur Kısıtlamasını Kaldırmak için örnek kaynak kodu
-
-Aspose.Words for .NET kullanarak salt okunur kısıtlamayı kaldırmak için tam kaynak kodu:
+Artık projeniz ayarlandığına göre bir sonraki adım, değiştirmek istediğiniz Word belgesini başlatmaktır.
 
 ```csharp
 // Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+Document doc = new Document(dataDir + "YourDocument.docx");
+```
 
-// En fazla 15 karakter uzunluğunda bir şifre girin.
+ Bu adımda değiştirin`"YOUR DOCUMENT DIRECTORY"` belgenizin saklandığı gerçek yolla.`"YourDocument.docx"` değiştirmek istediğiniz belgenin adıdır.
+
+## 3. Adım: Bir Şifre Belirleyin (İsteğe Bağlı)
+
+Parola ayarlamak isteğe bağlıdır ancak belgenizde değişiklik yapmadan önce ekstra bir güvenlik katmanı ekleyebilir.
+
+```csharp
+//En fazla 15 karakter uzunluğunda bir şifre girin.
 doc.WriteProtection.SetPassword("MyPassword");
+```
 
-//Salt okunur seçeneğini kaldırın.
+En fazla 15 karakter uzunluğunda istediğiniz bir şifre belirleyebilirsiniz.
+
+## 4. Adım: Salt Okunur Önerisini Kaldırma
+
+Şimdi salt okunur öneriyi belgeden kaldıralım.
+
+```csharp
+// Salt okunur seçeneğini kaldırın.
 doc.WriteProtection.ReadOnlyRecommended = false;
+```
 
+Bu kod satırı, salt okunur öneriyi belgenizden kaldırarak belgeyi düzenlenebilir hale getirir.
+
+## Adım 5: Koruma Yok Uygulayın
+
+Belgenizde başka kısıtlama olmadığından emin olmak için koruma yok ayarını uygulayın.
+
+```csharp
 // Herhangi bir koruma olmadan yazma korumasını uygulayın.
 doc.Protect(ProtectionType.NoProtection);
+```
+
+Bu adım, belgenize herhangi bir yazma koruması uygulanmamasını sağladığı için çok önemlidir.
+
+## Adım 6: Belgeyi Kaydedin
+
+Son olarak değiştirilen belgeyi istediğiniz konuma kaydedin.
+
+```csharp
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 ```
 
-Bu adımları izleyerek Aspose.Words for .NET ile bir Word belgesindeki salt okunur kısıtlamayı kolayca kaldırabilirsiniz.
-
+ Bu adımda, değiştirilen belge şu adla kaydedilir:`"DocumentProtection.RemoveReadOnlyRestriction.docx"`.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki salt okunur kısıtlamanın nasıl kaldırılacağını öğrendik. Verilen adımları takip ederek kısıtlamayı kolayca kaldırabilir ve belgeyi tekrar düzenlenebilir hale getirebilirsiniz. Aspose.Words for .NET, belge koruma ve kısıtlamalarını yönetmek için kapsamlı bir dizi özellik sunarak size Word belgelerinizin güvenlik ve düzenleme özellikleri üzerinde esneklik ve kontrol sağlar.
+Ve bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesindeki salt okunur kısıtlamayı başarıyla kaldırdınız. Bu süreç basittir ve belgelerinizin gereksiz kısıtlamalar olmadan serbestçe düzenlenebilmesini sağlar. 
 
-### SSS'ler
+İster küçük bir proje üzerinde çalışıyor olun ister birden fazla belgeyle ilgileniyor olun, belge korumalarının nasıl yönetileceğini bilmek size çok fazla zaman ve güçlük kazandırabilir. Öyleyse devam edin ve projelerinizde deneyin. Mutlu kodlama!
 
-#### S: Aspose.Words for .NET'teki salt okunur kısıtlaması nedir?
+## SSS'ler
 
-C: Aspose.Words for .NET'teki salt okunur kısıtlaması, bir Word belgesini salt okunur olarak ayarlamanıza izin vererek kullanıcıların içerikte veya formatta herhangi bir değişiklik yapmasını engelleyen bir özelliği ifade eder. Bu kısıtlama belgenin bütünlüğünün korunmasına yardımcı olur ve belgenin kazara veya kötü niyetle değiştirilmemesini sağlar.
+### Salt okunur kısıtlamasını parola ayarlamadan kaldırabilir miyim?
 
-#### S: Aspose.Words for .NET'i kullanarak salt okunur kısıtlamayı nasıl kaldırabilirim?
+Evet, şifre belirlemek isteğe bağlıdır. Salt okunur öneriyi doğrudan kaldırabilir ve hiçbir koruma uygulamayabilirsiniz.
 
-C: Aspose.Words for .NET kullanarak bir Word belgesindeki salt okunur kısıtlamayı kaldırmak için şu adımları takip edebilirsiniz:
-1.  Bir örneğini oluşturun`Document` sınıfını kullanın ve belge için bir parola belirleyin.`SetPassword` yöntemi`WriteProtection` nesne.
-2.  Yı kur`ReadOnlyRecommended` mülkiyeti`WriteProtection` itiraz etmek`false` Salt okunur öneriyi kaldırmak için.
-3.  kullanarak belgeye sınırsız koruma uygulayın.`Protect` yöntemi`Document` ile nesne`NoProtection` koruma türü.
-4.  Belgeyi salt okunur kısıtlaması olmadan kaydedin.`Save` yöntemi`Document` nesne.
+### Belgede zaten farklı bir koruma türü varsa ne olur?
 
-#### S: Salt okunur kısıtlamasını bir Word belgesinden parola olmadan kaldırabilir miyim?
+`doc.Protect(ProtectionType.NoProtection)` yöntemi belgeden her türlü korumanın kaldırılmasını sağlar.
 
-C: Hayır, doğru şifreyi girmeden bir Word belgesindeki salt okunur kısıtlamasını kaldıramazsınız. Salt okunur kısıtlaması güvenlik amacıyla ayarlanmıştır ve parola olmadan kaldırılması, belgenin bütünlüğünü koruma amacına zarar verecektir.
+### Kısıtlamayı kaldırmadan önce bir belgenin salt okunur olup olmadığını bilmenin bir yolu var mı?
 
-#### S: Yanlış parolaya sahip bir Word belgesindeki salt okunur kısıtlamayı kaldırabilir miyim?
+ Evet, kontrol edebilirsiniz`ReadOnlyRecommended` Herhangi bir değişiklik yapmadan önce belgenin salt okunur olup olmadığını görmek için özelliği.
 
-C: Hayır, yanlış parolaya sahip bir Word belgesindeki salt okunur kısıtlamasını kaldıramazsınız. Salt okunur kısıtlamasını kaldırmak ve belgeyi yeniden düzenlenebilir hale getirmek için doğru parolanın sağlanması gerekir. Bu, yalnızca doğru şifreye sahip yetkili kullanıcıların belgeyi değiştirebilmesini sağlar.
+### Birden fazla belgedeki kısıtlamaları aynı anda kaldırmak için bu yöntemi kullanabilir miyim?
 
-#### S: Aspose.Words for .NET kullanarak diğer belge koruma türlerini kaldırmak mümkün müdür?
+Evet, birden fazla belge arasında geçiş yapabilir ve salt okunur kısıtlamaları kaldırmak için her birine aynı yöntemi uygulayabilirsiniz.
 
-C: Evet, Aspose.Words for .NET, parola koruması, form koruması veya belge düzenleme kısıtlamaları gibi diğer belge koruma türlerini kaldırmak için çeşitli yöntemler sunar. Belgeye uygulanan koruma türüne bağlı olarak Aspose.Words tarafından sağlanan ilgili yöntem ve özellikleri kullanarak belirli korumayı kaldırabilir ve belgeyi düzenlenebilir hale getirebilirsiniz.
+### Belge parola korumalıysa ve parolayı bilmiyorsam ne olur?
+
+Ne yazık ki, herhangi bir kısıtlamayı kaldırmak için şifreyi bilmeniz gerekiyor. Parola olmadan koruma ayarlarını değiştiremezsiniz.

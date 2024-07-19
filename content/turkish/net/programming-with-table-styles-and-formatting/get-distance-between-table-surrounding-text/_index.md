@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3. Adım: Tablo ile onu çevreleyen metin arasındaki mesafeyi öğrenin
- Tablo ile onu çevreleyen metin arasındaki mesafeyi elde etmek için belgedeki tabloya aşağıdaki komutu kullanarak erişmemiz gerekir:`GetChild()` yöntem ve`NodeType.Table` mülk. Daha sonra dizi özelliklerini kullanarak farklı mesafeleri görüntüleyebiliriz.`DistanceTop`, `DistanceBottom`, `DistanceRight` Ve`DistanceLeft`.
+ Tablo ile onu çevreleyen metin arasındaki mesafeyi elde etmek için belgedeki tabloya aşağıdaki komutu kullanarak erişmemiz gerekir:`GetChild()` yöntem ve`NodeType.Table` mülk. Daha sonra dizi özelliklerini kullanarak farklı mesafeleri görüntüleyebiliriz.`DistanceTop`, `DistanceBottom`, `DistanceRight`Ve`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

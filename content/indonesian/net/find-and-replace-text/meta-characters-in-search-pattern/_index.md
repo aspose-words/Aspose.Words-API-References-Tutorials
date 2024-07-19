@@ -2,166 +2,115 @@
 title: Karakter Meta Dalam Pola Pencarian
 linktitle: Karakter Meta Dalam Pola Pencarian
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan metakarakter dalam pola pencarian dengan Aspose.Words untuk .NET untuk memanipulasi dokumen Word.
+description: Pelajari cara menggunakan karakter meta dalam pola pencarian dengan Aspose.Words untuk .NET dalam panduan langkah demi langkah yang mendetail ini. Optimalkan pemrosesan dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/find-and-replace-text/meta-characters-in-search-pattern/
 ---
-Pada artikel ini, kita akan menjelajahi kode sumber C# di atas untuk memahami cara menggunakan fungsi Meta Characters In Search Pattern di perpustakaan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menggunakan metakarakter khusus untuk melakukan pencarian lanjutan dan penggantian di dokumen Word.
+## Perkenalan
+
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk menangani dokumen Word secara terprogram. Hari ini, kita akan mempelajari cara memanfaatkan karakter meta dalam pola pencarian menggunakan perpustakaan ini. Jika Anda ingin menguasai manipulasi dokumen, panduan ini adalah sumber referensi Anda. Kami akan memandu setiap langkah untuk memastikan Anda dapat mengganti teks secara efisien menggunakan karakter meta.
 
 ## Prasyarat
 
-- Pengetahuan dasar bahasa C#.
-- Lingkungan pengembangan .NET dengan perpustakaan Aspose.Words diinstal.
+Sebelum kita beralih ke kode, pastikan Anda sudah menyiapkan semuanya:
 
-## Langkah 1: Membuat Dokumen Baru
+1.  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Halaman Rilis Aspose](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan C# lainnya.
+3. Pengetahuan Dasar C#: Pemahaman dasar-dasar pemrograman C# akan bermanfaat.
 
- Sebelum kita mulai menggunakan metakarakter dalam pola pencarian, kita perlu membuat dokumen baru menggunakan Aspose.Words untuk .NET. Hal ini dapat dilakukan dengan membuat contoh a`Document` obyek:
+## Impor Namespace
+
+Pertama, mari impor namespace yang diperlukan:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+
+Dalam tutorial ini, kami akan membagi prosesnya menjadi beberapa langkah sederhana. Setiap langkah akan memiliki judul dan penjelasan rinci untuk memandu Anda.
+
+## Langkah 1: Menyiapkan Direktori Dokumen
+
+Sebelum Anda mulai memanipulasi dokumen, Anda perlu menentukan jalur ke direktori dokumen Anda. Di sinilah file keluaran Anda akan disimpan.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen Anda.
+
+## Langkah 2: Membuat Dokumen Baru
+
+Selanjutnya, kita membuat dokumen Word baru dan objek DocumentBuilder. Kelas DocumentBuilder menyediakan metode untuk menambahkan konten ke dokumen.
+
+```csharp
 Document doc = new Document();
-```
-
-## Langkah 2: Sisipkan teks ke dalam dokumen
-
- Setelah kita memiliki dokumen, kita dapat menyisipkan teks menggunakan a`DocumentBuilder` obyek. Dalam contoh kami, kami menggunakan`Writeln` Dan`Write` metode untuk menyisipkan dua baris teks:
-
-```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("This is line 1");
-builder.Writeln("This is line 2");
 ```
 
-## Langkah 3: Temukan dan ganti teks dengan metakarakter
+## Langkah 3: Menulis Konten Awal
 
- Sekarang kita akan menggunakan`Range.Replace` berfungsi untuk mencari dan mengganti teks menggunakan pola pencarian yang mengandung metakarakter khusus. Dalam contoh kita, kita mengganti frasa "Ini adalah baris 1&pIni adalah baris 2" dengan "Baris ini diganti" menggunakan`&p` metakarakter untuk mewakili jeda paragraf:
+Kami akan menulis beberapa konten awal ke dokumen menggunakan DocumentBuilder.
 
 ```csharp
-doc.Range.Replace("This is row 1&pThis is line 2", "This line is replaced");
+builder.Writeln("This is Line 1");
+builder.Writeln("This is Line 2");
 ```
 
-## Langkah 4: Memasukkan hentian halaman ke dalam dokumen
+## Langkah 4: Mengganti Teks Menggunakan Karakter Meta Paragraph Break
 
- Untuk mengilustrasikan penggunaan metakarakter lain, kami akan menyisipkan hentian halaman ke dalam dokumen menggunakan`InsertBreak` metode dengan`BreakType.PageBreak` parameter. Kami pertama-tama memindahkan kursor dari`DocumentBuilder` di akhir dokumen, lalu kita sisipkan hentian halaman dan baris teks baru:
+ Karakter meta dapat mewakili berbagai elemen seperti paragraf, tab, dan jeda baris. Di sini, kami menggunakan`&p` untuk mewakili jeda paragraf.
 
 ```csharp
-builder. MoveToDocumentEnd();
-builder.Write("This is line 1");
-builder. InsertBreak(BreakType.PageBreak);
-builder.Writeln("This is line 2");
+doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");
 ```
 
-## Langkah 5: Temukan dan ganti dengan metakarakter lain
+## Langkah 5: Pindah ke Akhir Dokumen dan Menambahkan Konten
 
- Sekarang kita akan melakukan pencarian lain dan mengganti menggunakan`&m` metakarakter untuk mewakili hentian halaman. Kami mengganti frasa "Ini baris 1&mIni baris 2" dengan "Bagian halaman diganti dengan teks baru." :
+Mari pindahkan kursor ke akhir dokumen dan tambahkan lebih banyak konten, termasuk hentian halaman.
 
 ```csharp
-doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
+builder.MoveToDocumentEnd();
+builder.Write("This is Line 1");
+builder.InsertBreak(BreakType.PageBreak);
+builder.Writeln("This is Line 2");
 ```
 
-## Langkah 6: Menyimpan dokumen yang telah diedit
+## Langkah 6: Mengganti Teks Menggunakan Karakter Meta Line Break Manual
 
-Terakhir, kami menyimpan dokumen yang dimodifikasi ke direktori tertentu menggunakan`Save` metode:
+ Sekarang, kita akan menggunakan`&m` karakter meta untuk mewakili jeda baris manual dan mengganti teks yang sesuai.
 
 ```csharp
-doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
+doc.Range.Replace("This is Line 1&mThis is Line 2", "Page break is replaced with new text.");
 ```
 
-### Contoh kode sumber untuk Karakter Meta Dalam Pola Pencarian menggunakan Aspose.Words untuk .NET
+## Langkah 7: Menyimpan Dokumen
 
-Berikut ini contoh kode sumber lengkap untuk mendemonstrasikan penggunaan metakarakter dalam pola pencarian dengan Aspose.Words untuk .NET:
+Terakhir, simpan dokumen ke direktori yang ditentukan.
 
 ```csharp
-
-	/* meta-characters
-	&p - paragraph break
-	&b - section break
-	&m - page break
-	&l - manual line break
-	*/
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Writeln("This is Line 1");
-	builder.Writeln("This is Line 2");
-
-	doc.Range.Replace("This is Line 1&pThis is Line 2", "This is replaced line");
-
-	builder.MoveToDocumentEnd();
-	builder.Write("This is Line 1");
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.Writeln("This is Line 2");
-
-	doc.Range.Replace("This is Line 1&mThis is Line 2", "Page break is replaced with new text.");
-
-	doc.Save(dataDir + "FindAndReplace.MetaCharactersInSearchPattern.docx");
-
+doc.Save(dataDir + "FindAndReplace.MetaCharactersInSearchPattern.docx");
 ```
 
 ## Kesimpulan
 
-Dalam artikel ini, kami menjelajahi kode sumber C# untuk memahami cara menggunakan metakarakter dalam pola pencarian Aspose.Words untuk .NET. Kami mengikuti panduan langkah demi langkah untuk membuat dokumen, menyisipkan teks, melakukan pencarian dan penggantian menggunakan karakter meta khusus, menyisipkan hentian halaman, dan menyimpan dokumen yang diedit.
+Selamat! Anda telah berhasil memanipulasi dokumen Word menggunakan karakter meta dalam pola pencarian dengan Aspose.Words untuk .NET. Teknik ini sangat berguna untuk mengotomatiskan tugas pengeditan dan pemformatan dokumen. Teruslah bereksperimen dengan karakter meta yang berbeda untuk menemukan cara yang lebih ampuh dalam menangani dokumen Anda.
 
-### FAQ
+## FAQ
 
-#### T: Apa yang dimaksud dengan fitur Meta Characters In Search Pattern di Aspose.Words untuk .NET?
+### Apa karakter meta di Aspose.Words untuk .NET?
+Karakter meta adalah karakter khusus yang digunakan untuk mewakili elemen seperti jeda paragraf, jeda baris manual, tab, dll., dalam pola pencarian.
 
-J: Fitur Meta Characters In Search Pattern di Aspose.Words untuk .NET memungkinkan Anda menggunakan karakter meta khusus untuk melakukan pencarian lanjutan dan penggantian di dokumen Word. Metakarakter ini memungkinkan Anda mewakili hentian paragraf, hentian bagian, hentian halaman, dan elemen khusus lainnya dalam pola pencarian Anda.
+### Bagaimana cara menginstal Aspose.Words untuk .NET?
+ Anda dapat mengunduhnya dari[Halaman Rilis Aspose](https://releases.aspose.com/words/net/). Ikuti petunjuk instalasi yang disediakan.
 
-#### T: Bagaimana cara membuat dokumen baru di Aspose.Words untuk .NET?
+### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
+Aspose.Words untuk .NET dirancang khusus untuk bahasa .NET seperti C#. Namun, Aspose juga menyediakan perpustakaan untuk platform lain.
 
- J: Sebelum menggunakan metakarakter dalam templat pencarian, Anda harus membuat dokumen baru menggunakan Aspose.Words untuk .NET. Hal ini dapat dilakukan dengan membuat contoh a`Document` obyek. Berikut ini contoh kode untuk membuat dokumen baru:
+### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
+ Anda dapat memperoleh lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-```
-
-#### T: Bagaimana cara menyisipkan teks ke dalam dokumen menggunakan Aspose.Words untuk .NET?
-
- J: Setelah Anda memiliki dokumen, Anda dapat menyisipkan teks menggunakan a`DocumentBuilder` obyek. Dalam contoh kami, kami menggunakan`Writeln` Dan`Write` metode untuk menyisipkan dua baris teks:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("This is line 1");
-builder.Writeln("This is line 2");
-```
-
-#### T: Bagaimana cara mencari dan mengganti teks dengan metakarakter dalam dokumen menggunakan Aspose.Words untuk .NET?
-
- A: Untuk mencari dan mengganti teks dengan metakarakter, Anda dapat menggunakan`Range.Replace` metode. Dalam contoh kita, kita mengganti frasa "Ini adalah baris 1&pIni adalah baris 2" dengan "Baris ini diganti" menggunakan`&p` metakarakter untuk mewakili jeda paragraf:
-
-```csharp
-doc.Range.Replace("This is row 1&pThis is row 2", "This row is replaced");
-```
-
-#### T: Bagaimana cara menyisipkan hentian halaman dalam dokumen menggunakan Aspose.Words untuk .NET?
-
-J: Untuk mengilustrasikan penggunaan metakarakter lain, kami akan menyisipkan hentian halaman ke dalam dokumen menggunakan`InsertBreak` metode dengan`BreakType.PageBreak` parameter. Kami pertama-tama memindahkan kursor dari`DocumentBuilder` di akhir dokumen, lalu kita sisipkan hentian halaman dan baris teks baru:
-
-```csharp
-builder. MoveToDocumentEnd();
-builder.Write("This is line 1");
-builder. InsertBreak(BreakType.PageBreak);
-builder.Writeln("This is line 2");
-```
-
-#### T: Bagaimana cara mencari dan mengganti dengan metakarakter lain dalam dokumen menggunakan Aspose.Words untuk .NET?
-
- A: Sekarang kami akan melakukan pencarian lain dan mengganti menggunakan`&m` metakarakter untuk mewakili hentian halaman. Kami mengganti frasa "Ini baris 1&mIni baris 2" dengan "Bagian halaman diganti dengan teks baru." :
-
-```csharp
-doc.Range.Replace("This is line 1&mThis is line 2", "The page break is replaced with new text.");
-```
-
-#### T: Bagaimana cara menyimpan dokumen yang diedit di Aspose.Words untuk .NET?
-
- J: Setelah Anda membuat perubahan pada dokumen, Anda dapat menyimpannya ke direktori tertentu menggunakan`Save` metode:
-
-```csharp
-doc.Save(dataDir + "SearchAndReplace.MetaCharactersInSearchPattern.docx");
-```
+### Di mana saya dapat menemukan dokumentasi lebih rinci untuk Aspose.Words untuk .NET?
+ Anda dapat menemukan dokumentasi lengkap di[Halaman Dokumentasi Apose](https://reference.aspose.com/words/net/).

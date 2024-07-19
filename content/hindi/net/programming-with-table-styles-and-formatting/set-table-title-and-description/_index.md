@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## चरण 3: तालिका तक पहुंचें और शीर्षक और विवरण सेट करें
- अब आप दस्तावेज़ में तालिका तक पहुँच सकते हैं`GetChild()` विधि और`Table` वर्ग। इसके बाद, तालिका शीर्षक और विवरण सेट करें`Title` और`Description` गुण।
+ अब आप दस्तावेज़ में तालिका तक पहुँच सकते हैं`GetChild()` विधि और`Table` वर्ग। इसके बाद, तालिका शीर्षक और विवरण सेट करें`Title`और`Description` गुण।
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

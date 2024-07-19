@@ -147,7 +147,7 @@ class MultipagePrintDocument implements Printable
     }
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
-        //シート上の列数と行数を定義します。
+        //シート上の列と行の数を定義します。
         //横長の用紙です。
         switch (pagesPerSheet) {
             case 16:

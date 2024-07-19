@@ -120,7 +120,7 @@ Je Word-document met de zwevende afbeelding is nu klaar!
 
 ## Conclusie
 
-Het invoegen van een zwevende afbeelding in een Word-document met Aspose.Words voor .NET is een eenvoudig proces als het wordt opgesplitst in beheersbare stappen. Door deze handleiding te volgen, kunt u professioneel ogende afbeeldingen aan uw documenten toevoegen, waardoor de visuele aantrekkingskracht ervan wordt vergroot. Aspose.Words biedt een robuuste API die documentmanipulatie kinderspel maakt, of u nu aan rapporten, voorstellen of een ander documenttype werkt.
+Het invoegen van een zwevende afbeelding in een Word-document met Aspose.Words voor .NET is een eenvoudig proces als het wordt opgesplitst in beheersbare stappen. Door deze handleiding te volgen, kunt u professioneel ogende afbeeldingen aan uw documenten toevoegen, waardoor de visuele aantrekkingskracht ervan wordt vergroot. Aspose.Words biedt een robuuste API die documentmanipulatie eenvoudig maakt, of u nu aan rapporten, voorstellen of een ander documenttype werkt.
 
 ## Veelgestelde vragen
 

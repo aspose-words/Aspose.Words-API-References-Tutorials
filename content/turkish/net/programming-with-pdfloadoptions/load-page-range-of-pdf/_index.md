@@ -10,12 +10,12 @@ url: /tr/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 
 Bu eğitimde, Aspose.Words for .NET kullanarak bir PDF belgesinden belirli bir sayfa aralığını nasıl yükleyeceğinizi anlatacağız. Aşağıdaki adımları takip et:
 
-## 1. Adım: Çeşitli PDF Sayfalarını Yükleme
+## Adım 1: Çeşitli PDF Sayfalarını Yükleme
 
 Bir PDF belgesinden belirli bir sayfa aralığını yüklemek için aşağıdaki kodu kullanın:
 
 ```csharp
-// Belgeler dizininin yolu.
+//Belgeler dizininin yolu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Bu örnekte PDF belgesinin ilk sayfasını yüklüyoruz. Değerlerini değiştirebilirsiniz`PageIndex` Ve`PageCount` istediğiniz sayfa aralığına
+ Bu örnekte PDF belgesinin ilk sayfasını yüklüyoruz. Değerlerini değiştirebilirsiniz`PageIndex`Ve`PageCount` istediğiniz sayfa aralığına
 
 ## Adım 2: Belgeyi kaydetme
 

@@ -2,70 +2,104 @@
 title: Sluit je aan bij Continu
 linktitle: Sluit je aan bij Continu
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u twee documenten continu kunt samenvoegen met behoud van de opmaak met behulp van Aspose.Words voor .NET.
+description: Leer hoe u naadloos twee Word-documenten kunt samenvoegen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor een soepele en efficiënte samenvoeging van documenten.
 type: docs
 weight: 10
 url: /nl/net/join-and-append-documents/join-continuous/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u twee documenten continu kunt samenvoegen met Aspose.Words voor .NET. De meegeleverde broncode laat zien hoe u een document aan het einde van een ander document kunt toevoegen met behoud van de oorspronkelijke opmaak.
+Wilt u twee Word-documenten naadloos samenvoegen tot één, zonder onderbrekingen? Aspose.Words voor .NET biedt een fantastische manier om dit te bereiken door de functie Continuous Section Break te gebruiken. Deze tutorial begeleidt u stap voor stap door het proces, zodat u eenvoudig en zonder problemen documenten kunt samenvoegen. Laten we erin duiken!
 
-## Stap 1: Zet het project op
+## Vereisten
 
-Zorg ervoor dat u aan de volgende vereisten voldoet:
+Voordat we aan de slag gaan, zorgen we ervoor dat u over alles beschikt wat u nodig heeft:
 
--  Aspose.Words voor .NET-bibliotheek geïnstalleerd. Je kunt het downloaden van[Aspose.Releases]https://releases.aspose.com/words/net/ of gebruik NuGet-pakketbeheer om het te installeren.
-- Een documentmappad waar de bron- en doeldocumenten zich bevinden.
+-  Aspose.Words voor .NET: Download en installeer als je dat nog niet hebt gedaan[Aspose.Words voor .NET](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: U kunt Visual Studio of een andere .NET-ontwikkelomgeving gebruiken.
+- Voorbeelddocumenten: Zorg ervoor dat u twee Word-documenten gereed heeft die u wilt samenvoegen.
 
-## Stap 2: Open de bron- en doeldocumenten
+## Naamruimten importeren
 
- Open de bron- en doeldocumenten met behulp van de`Document` klasse constructor. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+Om Aspose.Words voor .NET te gebruiken, moet u de benodigde naamruimten in uw project importeren. Zo doe je het:
+
+```csharp
+using Aspose.Words;
+```
+
+Laten we het voorbeeld nu voor de duidelijkheid in meerdere stappen opsplitsen.
+
+## Stap 1: Stel uw documentenmap in
+
+Eerst moeten we de map instellen waarin uw documenten zijn opgeslagen. Hierdoor kan onze code de bestanden lokaliseren die we willen samenvoegen.
 
 ```csharp
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar uw documenten zijn opgeslagen.
+
+## Stap 2: Laad de bron- en doeldocumenten
+
+Vervolgens laden we de bron- en doeldocumenten in ons programma. Dit zijn de twee documenten die u wilt samenvoegen.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Stap 3: Doorlopende sectiestart instellen
+Zorg ervoor dat de bestandsnamen en paden overeenkomen met de daadwerkelijke bestanden die u wilt gebruiken.
 
-Om het brondocument direct na de inhoud van het doeldocument te laten verschijnen, stelt u de`SectionStart` eigenschap van de eerste sectie in het brondocument`SectionStart.Continuous`.
+## Stap 3: Stel Sectiestart in als Continu
+
+ Om de inhoud van het brondocument onmiddellijk na het doeldocument te laten verschijnen, moeten we de`SectionStart` eigenschap van de eerste sectie in het brondocument`Continuous`.
 
 ```csharp
+// Zorg ervoor dat het document direct na de inhoud van het doeldocument verschijnt.
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
+Dit zorgt ervoor dat er geen onderbrekingen zijn tussen de documenten wanneer ze worden samengevoegd.
+
 ## Stap 4: Voeg het brondocument toe
 
- Voeg het brondocument toe aan het doeldocument met behulp van de`AppendDocument` werkwijze van de`Document` klas. Stel de importformaatmodus in op`ImportFormatMode.KeepSourceFormatting` om de originele stijlen uit het brondocument te behouden.
+Nu voegen we het brondocument toe aan het doeldocument. Deze stap zorgt ervoor dat de inhoud van het brondocument aan het einde van het doeldocument wordt toegevoegd.
 
 ```csharp
+// Voeg het brondocument toe met behulp van de originele stijlen uit het brondocument.
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Stap 5: Sla het gewijzigde document op
+ Gebruik makend van`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de opmaak van het brondocument behouden blijft in het uiteindelijk samengevoegde document.
 
-Sla ten slotte het gewijzigde bestemmingsdocument op met behulp van de`Save` werkwijze van de`Document` voorwerp.
+## Stap 5: Sla het samengevoegde document op
+
+Ten slotte slaan we het samengevoegde document op in de opgegeven map. Hiermee is het proces van het samenvoegen van de documenten voltooid.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```
 
-Hiermee is de implementatie voltooid van het continu samenvoegen van twee documenten met behulp van Aspose.Words voor .NET.
+Zorg ervoor dat het pad en de bestandsnaam correct zijn voor uw behoeften.
 
-### Voorbeeldbroncode voor Join Continuous met Aspose.Words voor .NET 
+## Conclusie
 
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+En daar heb je het! Met slechts een paar regels code heeft u met succes twee Word-documenten samengevoegd tot één doorlopend document met behulp van Aspose.Words voor .NET. Dit proces is niet alleen eenvoudig maar ook zeer efficiënt, waardoor uw documenten hun oorspronkelijke opmaak behouden.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Zorg ervoor dat het document direct na de inhoud van het doeldocument verschijnt.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// Voeg het brondocument toe met behulp van de originele stijlen uit het brondocument.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
-```
+## Veelgestelde vragen
+
+### Kan ik meer dan twee documenten samenvoegen?
+Ja, u kunt het proces herhalen om meerdere documenten samen te voegen door extra documenten te laden en deze opeenvolgend toe te voegen.
+
+### Blijft de originele opmaak behouden?
+ Ja, gebruiken`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de opmaak van het brondocument behouden blijft.
+
+### Is Aspose.Words voor .NET compatibel met .NET Core?
+Ja, Aspose.Words voor .NET is compatibel met zowel .NET Framework als .NET Core.
+
+### Kan ik documenten met verschillende pagina-instellingen samenvoegen?
+Ja, maar mogelijk moet u de eigenschappen van de pagina-instelling aanpassen om een naadloze samenvoeging te garanderen.
+
+### Waar kan ik ondersteuning krijgen als ik problemen tegenkom?
+ U kunt ondersteuning krijgen van het Aspose-communityforum[hier](https://forum.aspose.com/c/words/8).

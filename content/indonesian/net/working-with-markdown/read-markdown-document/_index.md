@@ -57,7 +57,7 @@ Selamat! Anda sekarang telah mempelajari cara membaca dokumen Markdown dengan As
 
 #### T: Bagaimana cara membaca dokumen Markdown menggunakan .NET?
 
-J: Untuk membaca dokumen Markdown menggunakan .NET, Anda bisa menggunakan pustaka yang kompatibel dengan Markdown, seperti`Markdig` atau`CommonMark.NET`. Pustaka ini menyediakan fungsionalitas untuk mengurai dan mengekstrak konten dari dokumen penurunan harga.
+ J: Untuk membaca dokumen Markdown menggunakan .NET, Anda bisa menggunakan pustaka yang kompatibel dengan Markdown, seperti`Markdig` atau`CommonMark.NET`. Pustaka ini menyediakan fungsionalitas untuk mengurai dan mengekstrak konten dari dokumen penurunan harga.
 
 #### T: Bagaimana cara mengonversi dokumen Markdown ke HTML menggunakan .NET?
 
@@ -69,7 +69,7 @@ J: Ya, beberapa Markdown di perpustakaan .NET menawarkan opsi penyesuaian saat m
 
 #### T: Apa saja pustaka .NET yang direkomendasikan untuk memanipulasi dokumen Markdown?
 
- J: Pustaka .NET yang direkomendasikan untuk memanipulasi dokumen Markdown adalah`Markdig` Dan`CommonMark.NET`. Mereka menawarkan fleksibilitas luar biasa dan dukungan penuh untuk fitur penurunan harga.
+J: Pustaka .NET yang direkomendasikan untuk memanipulasi dokumen Markdown adalah`Markdig`Dan`CommonMark.NET`. Mereka menawarkan fleksibilitas luar biasa dan dukungan penuh untuk fitur penurunan harga.
 
 #### T: Bagaimana cara menangani kesalahan saat membaca dokumen Markdown?
 

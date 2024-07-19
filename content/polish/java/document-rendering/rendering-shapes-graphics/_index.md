@@ -139,7 +139,7 @@ Wzbogacanie dokumentów kształtami i grafiką może znacznie poprawić ich atra
 
 ### Jak zmienić rozmiar kształtu w dokumencie?
 
- Aby zmienić rozmiar kształtu, użyj opcji`setWidth` I`setHeight` metody na obiekcie kształtu. Na przykład, aby utworzyć kształt o szerokości 150 pikseli i wysokości 75 pikseli:
+ Aby zmienić rozmiar kształtu, użyj opcji`setWidth`I`setHeight` metody na obiekcie kształtu. Na przykład, aby utworzyć kształt o szerokości 150 pikseli i wysokości 75 pikseli:
 
 ```java
 shape.setWidth(150);

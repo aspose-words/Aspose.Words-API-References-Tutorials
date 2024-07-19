@@ -2,120 +2,133 @@
 title: Word 文件中不受限制的可編輯區域
 linktitle: Word 文件中不受限制的可編輯區域
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中建立不受限制的可編輯區域。
+description: 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中建立不受限制的可編輯區域。
 type: docs
 weight: 10
 url: /zh-hant/net/document-protection/unrestricted-editable-regions/
 ---
-在本教學中，我們將引導您完成使用 Aspose.Words for .NET 的無限可編輯區域功能的步驟。此功能可讓您在 Word 文件中定義可以不受限制地編輯內容的區域，即使文件的其餘部分是唯讀的也是如此。請依照以下步驟操作：
+## 介紹
 
-## 步驟1：載入文件並設定保護
+如果您曾經想要保護 Word 文件，但仍允許某些部分可編輯，那麼您來對地方了！本指南將引導您完成使用 Aspose.Words for .NET 在 Word 文件中設定不受限制的可編輯區域的過程。我們將涵蓋從先決條件到詳細步驟的所有內容，確保您獲得順暢的體驗。準備好？讓我們深入了解吧！
 
-首先載入現有文檔：
+## 先決條件
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+在我們開始之前，請確保您具備以下條件：
 
-透過設定唯讀保護類型和密碼來保護文檔
+1.  Aspose.Words for .NET：如果您還沒有，請下載它[這裡](https://releases.aspose.com/words/net/).
+2. 有效的 Aspose 許可證：您可以獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio：任何最新版本都應該可以正常運作。
+4. C# 和 .NET 的基本知識：這將幫助您遵循程式碼。
 
-## 第二步：建立可編輯區域
+現在一切都準備好了，讓我們進入有趣的部分吧！
 
-首先使用 EditableRangeStart 和 EditableRangeEnd 物件建立可編輯區域：
+## 導入命名空間
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-//為我們剛剛建立的 EditableRangeStart 建立一個 EditableRange 物件。
-EditableRange editableRange = edRangeStart.EditableRange;
-
-//將某些內容放入可編輯範圍內。
-builder.Writeln("Paragraph inside first editable range");
-
-//如果可編輯範圍有開頭和結尾，則它是格式良好的。
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## 步驟 3：在可編輯區域之外新增內容
-
-您可以在可編輯區域之外新增內容，該區域將保持唯讀狀態：
+要開始使用 Aspose.Words for .NET，您需要匯入必要的命名空間。您可以這樣做：
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## 步驟 4：儲存文檔
+## 第 1 步：設定您的項目
 
-最後儲存修改後的文件：
+首先，讓我們在 Visual Studio 中建立一個新的 C# 專案。
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. 開啟 Visual Studio：先開啟 Visual Studio 並建立一個新的控制台應用程式專案。
+2. 安裝 Aspose.Words：使用 NuGet 套件管理器安裝 Aspose.Words。您可以透過在程式包管理器控制台中執行以下命令來執行此操作：
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-請務必指定正確的路徑和檔案名稱以儲存具有可編輯區域的文件。
+## 第 2 步：載入文檔
 
-### 使用 Aspose.Words for .NET 的無限可編輯區域的範例原始程式碼
+現在，讓我們載入您想要保護的文件。確保您的目錄中已準備好 Word 文件。
 
-以下是使用 Aspose.Words for .NET 的無限可編輯區域的完整原始程式碼：
+1. 設定文檔目錄：定義文檔目錄的路徑。
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2. 載入文檔：使用`Document`類別來載入 Word 文件。
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-//文檔目錄的路徑。
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-//上傳文檔並將其設定為唯讀。
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## 第 3 步：保護文檔
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+接下來，我們將文檔設定為唯讀。這將確保沒有密碼就無法進行任何更改。
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1. 初始化DocumentBuilder：建立一個實例`DocumentBuilder`對文檔進行更改。
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. 設定保護等級：使用密碼保護文件。
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. 新增唯讀文字：插入唯讀文字。
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-//開始一個可編輯範圍。
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-//為我們剛剛建立的 EditableRangeStart 建立一個 EditableRange 物件。
-EditableRange editableRange = edRangeStart.EditableRange;
+## 第 4 步：建立可編輯範圍
 
-//將某些內容放入可編輯範圍內。
-builder.Writeln("Paragraph inside first editable range");
+這就是奇蹟發生的地方。我們將在文件中建立可以編輯的部分，儘管有整體唯讀保護。
 
-//如果可編輯範圍有開頭和結尾，則它是格式良好的。
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. 開始可編輯範圍：定義可編輯範圍的開始。
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2. 建立可編輯範圍物件：`EditableRange`物件將自動建立。
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. 插入可編輯文字：在可編輯範圍內新增文字。
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## 第5步：關閉可編輯範圍
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+沒有結束的可編輯範圍是不完整的。接下來我們來新增一下。
 
-```
-透過執行下列步驟，您可以使用 Aspose.Words for .NET 在 Word 文件中輕鬆建立不受限制的可編輯區域。
+1. 結束可編輯範圍：定義可編輯範圍的結束位置。
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. 在範圍之外添加唯讀文字：在可編輯範圍之外插入文字以演示保護。
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## 第 6 步：儲存文檔
+
+最後，讓我們儲存應用了保護和可編輯區域的文件。
+
+1. 儲存文件：使用`Save`方法來保存修改後的文件。
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## 結論
-在本教學中，我們學習如何使用 Aspose.Words for .NET 在 Word 文件中建立不受限制的可編輯區域。透過執行提供的步驟，您可以定義文件中的特定區域，使用者可以在其中自由編輯內容，同時保持文件的其餘部分為唯讀。 Aspose.Words for .NET 提供強大的文件保護和自訂功能，讓您可以控制 Word 文件的編輯功能。
 
-### Word 文件中不受限制的可編輯區域的常見問題解答
+現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立不受限制的可編輯區域。此功能對於協作環境非常有用，在協作環境中，文件的某些部分需要保持不變，而其他部分可以進行編輯。 
 
-#### Q：Aspose.Words for .NET 中的不受限制的可編輯區域是什麼？
+嘗試更複雜的場景和不同的保護級別，以充分利用 Aspose.Words。如果您有任何疑問或遇到問題，請隨時查看[文件](https://reference.aspose.com/words/net/)或聯繫[支援](https://forum.aspose.com/c/words/8).
 
-答：Aspose.Words for .NET 中的無限制可編輯區域是 Word 文件中可以不受任何限制地編輯內容的區域，即使文件的其餘部分設定為唯讀也是如此。這些區域提供了一種定義文件特定部分的方法，使用者可以在維護整體文件保護的同時修改這些部分。
+## 常見問題解答
 
-#### Q：如何使用 Aspose.Words for .NET 建立不受限制的可編輯區域？
+### 我可以在一個文件中擁有多個可編輯區域嗎？
+是的，您可以透過在文件的不同部分開始和結束可編輯範圍來建立多個可編輯區域。
 
-答：要使用 Aspose.Words for .NET 在 Word 文件中建立不受限制的可編輯區域，您可以按照以下步驟操作：
-1. 使用載入現有文檔`Document`班級。
-2. 使用以下命令將文件保護設定為唯讀`Protect`的方法`Document`目的。
-3. 使用`DocumentBuilder`類別透過新增建立可編輯範圍`EditableRangeStart`物件和一個`EditableRangeEnd`目的。
-4. 使用以下命令新增可編輯範圍內的內容`DocumentBuilder`.
-5. 使用以下命令儲存修改後的文檔`Save`的方法`Document`目的。
+### Aspose.Words 中還提供哪些其他保護類型？
+Aspose.Words 支援各種保護類型，例如AllowOnlyComments、AllowOnlyFormFields 和NoProtection。
 
-#### Q：Word 文件中可以有多個不受限制的可編輯區域嗎？
+### 是否可以取消文檔的保護？
+是的，您可以使用以下命令刪除保護`Unprotect`方法並提供正確的密碼。
 
-答：是的，Word 文件中可以有多個不受限制的可編輯區域。為了實現這一點，您可以建立多組`EditableRangeStart`和`EditableRangeEnd`物件使用`DocumentBuilder`班級。每組物件將定義一個單獨的可編輯區域，使用者可以在其中不受任何限制地修改內容。
+### 我可以為不同的部分指定不同的密碼嗎？
+不需要，文件級保護對整個文件套用單一密碼。
 
-#### Q：我可以將可編輯區域嵌套在一起嗎？
-
-答：不可以，您不能使用 Aspose.Words for .NET 將可編輯區域嵌套在一起。每個可編輯區域由`EditableRangeStart`和`EditableRangeEnd`對應該是獨立的，不能重疊或嵌套在另一個可編輯區域內。不支援嵌套的可編輯區域。
-
-#### Q：我可以取消可編輯區域內文檔的唯讀保護嗎？
-
-答：不可以，您無法刪除可編輯區域內文件的唯讀保護。唯讀保護套用於整個文檔，並且不能在特定的可編輯區域內選擇性地刪除。可編輯區域的目的是允許修改內容，同時保持整個文件唯讀。
+### 如何申請 Aspose.Words 許可證？
+您可以透過從文件或流載入許可證來套用許可證。查看文件以了解詳細步驟。

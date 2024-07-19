@@ -34,7 +34,7 @@ Field field = builder. InsertField(FieldType.FieldDate, true);
 field.LocaleId = 1049;
 ```
 
-我们使用文档生成器插入类型为`FieldType.FieldDate`到文档中。通过设置`LocaleId`财产`1049`，我们为该字段指定俄语本地化。
+我们使用文档生成器插入一个类型为`FieldType.FieldDate`到文档中。通过设置`LocaleId`财产`1049`，我们为该字段指定俄语本地化。
 
 ## 步骤 4：保存修改后的文档
 

@@ -86,4 +86,4 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## 结论
 
-在本指南中，我们介绍了如何使用 Aspose.Words for .NET 使用提供的 C# 源代码将数学方程式添加到 Word 文档。按照提供的步骤，您可以轻松地在 C# 应用程序中将数学方程式添加到 Word 文档中。Aspose.Words 为使用数学方程式进行文字处理提供了极大的灵活性和功能，使您能够创建专业、格式良好的文档。
+在本指南中，我们介绍了如何使用 Aspose.Words for .NET 使用提供的 C# 源代码将数学方程式添加到 Word 文档中。按照提供的步骤，您可以轻松地在 C# 应用程序中将数学方程式添加到 Word 文档中。Aspose.Words 为使用数学方程式进行文字处理提供了极大的灵活性和功能，使您能够创建专业、格式良好的文档。

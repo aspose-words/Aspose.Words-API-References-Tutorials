@@ -24,7 +24,7 @@ url: /zh/net/split-document/merge-documents/
 
 ## 导入命名空间
 
-首先，我们需要导入使用 Aspose.Words 所需的命名空间。这使我们能够访问所需的所有类和方法。
+首先，我们需要导入使用 Aspose.Words 所需的命名空间。这样我们就可以访问所需的所有类和方法。
 
 ```csharp
 using System;
@@ -89,7 +89,7 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## 结论
 
-就这样！您已经学会了如何使用 Aspose.Words for .NET 合并 Word 文档。本教程涵盖了设置环境、执行简单合并、使用保存选项合并、将合并的文档转换为 PDF 以及从合并的文档创建文档实例。Aspose.Words 提供了广泛的功能，因此请务必探索[API 文档](https://reference.aspose.com/words/net/)以充分发挥其潜力。
+就这样！您已经学会了如何使用 Aspose.Words for .NET 合并 Word 文档。本教程涵盖了设置环境、执行简单合并、使用保存选项合并、将合并的文档转换为 PDF 以及从合并的文档创建文档实例。Aspose.Words 提供了广泛的功能，因此请务必探索[API 文档](https://reference.aspose.com/words/net/)以释放其全部潜力。
 
 ## 常见问题解答
 

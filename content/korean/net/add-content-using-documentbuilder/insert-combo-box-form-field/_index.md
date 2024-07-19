@@ -18,7 +18,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 1.  .NET용 Aspose.Words: 무엇보다도 .NET용 Aspose.Words 라이브러리가 필요합니다. 아직 다운로드하지 않으셨다면, 아래에서 다운받으실 수 있습니다.[Aspose 다운로드 페이지](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 .NET을 지원하는 다른 IDE로 개발 환경이 설정되어 있는지 확인하세요.
 3. C#에 대한 기본 이해: 이 튜토리얼은 초보자에게 적합하지만 C#에 대한 기본적인 이해가 있으면 작업이 더 원활해집니다.
-4.  임시 라이센스(선택 사항): 제한 없이 전체 기능을 탐색하고 싶다면[임시면허](https://purchase.aspose.com/temporary-license/).
+4.  임시 라이센스(선택 사항): 제한 없이 전체 기능을 탐색하고 싶다면[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
 이러한 전제 조건을 갖추었다면 이 흥미진진한 여행을 시작할 준비가 된 것입니다!
 

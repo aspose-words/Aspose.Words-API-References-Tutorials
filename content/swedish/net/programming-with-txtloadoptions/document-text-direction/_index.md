@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- I det här steget kommer vi åt första stycket i dokumentet med hjälp av`FirstSection` och`Body` egenskaper. Därefter kommer vi åt`ParagraphFormat.Bidi` egenskap för att få textriktningen för stycket. Vi visar sedan detta värde i konsolen.
+ I det här steget kommer vi åt första stycket i dokumentet med hjälp av`FirstSection`och`Body` egenskaper. Därefter kommer vi åt`ParagraphFormat.Bidi` egenskap för att få textriktningen för stycket. Vi visar sedan detta värde i konsolen.
 
 ## Steg 5: Spara dokumentet
 

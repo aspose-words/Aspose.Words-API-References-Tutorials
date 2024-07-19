@@ -25,7 +25,7 @@ Tout au long de cette série de didacticiels, nous vous guiderons à travers div
 - Formatage des tableaux : maîtrisez l'art du formatage des tableaux pour organiser efficacement les données.
 - Style de document : découvrez des méthodes pour styliser les documents, garantissant cohérence et professionnalisme.
 - Génération de rapports : comprenez comment générer facilement des rapports complets.
-- Documents basés sur les données : explorez la fusion des données et des documents, permettant ainsi un reporting intelligent.
+- Documents basés sur les données : explorez la fusion des données et des documents, permettant ainsi des rapports intelligents.
 - Formatage personnalisé : découvrez comment appliquer un formatage personnalisé pour répondre aux exigences spécifiques du document.
 - Intégration Python et .NET : bénéficiez de didacticiels destinés aux développeurs Python et .NET.
 

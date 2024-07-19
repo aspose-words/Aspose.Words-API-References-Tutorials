@@ -75,7 +75,7 @@ Ebben a cikkben megvizsgáltuk, hogyan nyomtathat ki dokumentumokat egyéni olda
 
 ### Hogyan változtathatom meg a dokumentumom papírméretét?
 
- A dokumentum papírméretének módosításához használja a`setPageWidth` és`setPageHeight` módszerei a`PageSetup` osztályba, és pontokban adja meg a kívánt méreteket.
+ A dokumentum papírméretének módosításához használja a`setPageWidth`és`setPageHeight` módszerei a`PageSetup` osztályba, és pontokban adja meg a kívánt méreteket.
 
 ### Nyomtathatok több példányt egy dokumentumból?
 

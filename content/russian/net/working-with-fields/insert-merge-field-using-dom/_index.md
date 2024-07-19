@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Далее нам нужно переместить курсор к определенному абзацу документа, куда мы хотим вставить поле слияния.
 
 ```csharp
-// Переместите курсор на абзац.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Шаг 6. Вставьте поле слияния

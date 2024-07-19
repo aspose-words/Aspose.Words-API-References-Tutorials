@@ -10,7 +10,7 @@ url: /fr/python-net/word-automation/word-automation-made-easy/
 
 ## Introduction
 
-Dans le monde trépidant d’aujourd’hui, l’automatisation des tâches est devenue essentielle pour améliorer l’efficacité et la productivité. L'une de ces tâches est Word Automation, où nous pouvons créer, manipuler et traiter des documents Word par programme. Dans ce didacticiel étape par étape, nous explorerons comment réaliser facilement l'automatisation de Word à l'aide d'Aspose.Words for Python, une bibliothèque puissante qui offre un large éventail de fonctionnalités pour le traitement de texte et la manipulation de documents.
+Dans le monde trépidant d’aujourd’hui, l’automatisation des tâches est devenue essentielle pour améliorer l’efficacité et la productivité. L'une de ces tâches est Word Automation, où nous pouvons créer, manipuler et traiter des documents Word par programme. Dans ce didacticiel étape par étape, nous explorerons comment réaliser facilement l'automatisation de Word à l'aide d'Aspose.Words pour Python, une bibliothèque puissante qui offre un large éventail de fonctionnalités pour le traitement de texte et la manipulation de documents.
 
 ## Comprendre l'automatisation des mots
 
@@ -112,7 +112,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 ## Fonctionnalités avancées d'automatisation des mots
 
-Aspose.Words fournit des fonctionnalités avancées telles que le publipostage, le cryptage de documents et l'utilisation de signets, de liens hypertexte et de commentaires.
+Aspose.Words fournit des fonctionnalités avancées telles que le publipostage, le cryptage de documents et l'utilisation de signets, d'hyperliens et de commentaires.
 
 ## Automatisation du traitement des documents
 

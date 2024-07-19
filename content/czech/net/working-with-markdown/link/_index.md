@@ -51,8 +51,8 @@ gratuluji! Nyní jste se naučili, jak používat funkci odkazů s Aspose.Words 
 
 #### Otázka: Jak mohu přizpůsobit zobrazovaný text odkazu v Aspose.Words?
 
-A: Chcete-li upravit zobrazovaný text odkazu v Aspose.Words, můžete upravit obsah mezi`<a>` značky. Například,`<a href="https://www.aspose.com">Click here</a>` zobrazí text „Klikněte sem“ jako hypertextový odkaz.
+ A: Chcete-li upravit zobrazovaný text odkazu v Aspose.Words, můžete upravit obsah mezi`<a>` značky. Například,`<a href="https://www.aspose.com">Click here</a>` zobrazí text „Klikněte sem“ jako hypertextový odkaz.
 
 #### Otázka: Mohu určit cíl pro odkaz v Aspose.Words?
 
- Odpověď: Ano, můžete určit cíl pro odkaz v Aspose.Words pomocí`target` atribut toho`<a>` štítek. Například,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` otevře odkaz v novém okně nebo záložce.
+Odpověď: Ano, můžete určit cíl pro odkaz v Aspose.Words pomocí`target` atribut toho`<a>` štítek. Například,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` otevře odkaz v novém okně nebo záložce.

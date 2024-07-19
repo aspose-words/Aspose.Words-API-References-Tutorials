@@ -2,7 +2,7 @@
 title: Word 文書の比較の粒度
 linktitle: Word 文書の比較の粒度
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET の Word 文書機能で、文書を文字ごとに比較し、変更内容を報告できる詳細度の比較について学習します。
+description: Aspose.Words for .NET の Word 文書機能で、文書を文字ごとに比較し、変更を報告できる詳細度の比較について学習します。
 type: docs
 weight: 10
 url: /ja/net/compare-documents/comparison-granularity/
@@ -15,7 +15,7 @@ Aspose.Words for .NET の詳細な比較機能を使用すると、文字レベ�
 
 ## ステップ2: 環境の設定
 
-開始する前に、Aspose.Words for .NET を使用するための開発環境を設定する必要があります。Aspose.Words ライブラリがインストールされており、コードを埋め込むための適切な C# プロジェクトがあることを確認してください。
+開始する前に、Aspose.Words for .NET を使用するための開発環境をセットアップする必要があります。Aspose.Words ライブラリがインストールされており、コードを埋め込むための適切な C# プロジェクトがあることを確認してください。
 
 ## ステップ3: 必要なアセンブリを追加する
 
@@ -56,7 +56,7 @@ CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.C
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-の`Compare`メソッドは、ドキュメント A とドキュメント B を比較し、変更をドキュメント A に保存します。参照用に、作成者の名前と比較の日付を指定できます。
+の`Compare`メソッドは、ドキュメント A とドキュメント B を比較し、変更をドキュメント A に保存します。参照用に作成者の名前と比較の日付を指定できます。
 
 ## 結論
 
@@ -94,7 +94,7 @@ A: Aspose.Words for .NET で比較の粒度を使用するには、次の手順�
 1. Aspose.Words ライブラリを使用して開発環境をセットアップします。
 2. Aspose.Words を参照して、必要なアセンブリをプロジェクトに追加します。
 3. 比較したい文書を`DocumentBuilder`クラス。
-4. 比較オプションを設定するには、`CompareOptions`オブジェクトと設定`Granularity`物件を希望のレベル（例：`Granularity.CharLevel`文字レベルの比較用)。
+4. 比較オプションを設定するには、`CompareOptions`オブジェクトと設定`Granularity`物件を希望のレベルまで引き上げる（例：`Granularity.CharLevel`文字レベルの比較用)。
 5. 使用`Compare`一方の文書にメソッドを適用し、もう一方の文書と`CompareOptions`オブジェクトをパラメータとして渡します。このメソッドは、指定された粒度に基づいてドキュメントを比較し、最初のドキュメントの変更を保存します。
 
 #### Q: Aspose.Words for .NET で利用可能な比較の粒度レベルは何ですか?

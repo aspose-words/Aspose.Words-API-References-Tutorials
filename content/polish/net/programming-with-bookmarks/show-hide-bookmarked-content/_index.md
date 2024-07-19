@@ -2,156 +2,133 @@
 title: Pokaż Ukryj zawartość dodaną do zakładek w dokumencie programu Word
 linktitle: Pokaż Ukryj zawartość dodaną do zakładek w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dynamicznie wyświetlać lub ukrywać zawartość zakładek w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku.
+description: Dowiedz się, jak wyświetlać i ukrywać zawartość zakładek w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
-
 ## Wstęp
 
-No hej! Czy kiedykolwiek chciałeś kontrolować widoczność określonej treści w dokumencie programu Word w oparciu o określone warunki? Dzięki Aspose.Words dla .NET możesz dynamicznie pokazywać lub ukrywać zawartość zakładek za pomocą zaledwie kilku linijek kodu. W tym samouczku przeprowadzę Cię przez proces krok po kroku, upewniając się, że rozumiesz każdą część kodu. Na koniec będziesz profesjonalistą w manipulowaniu zakładkami w dokumentach programu Word. Zacznijmy!
+Gotowy do zanurzenia się w świat manipulacji dokumentami za pomocą Aspose.Words dla .NET? Niezależnie od tego, czy jesteś programistą chcącym zautomatyzować zadania związane z dokumentami, czy po prostu osobą interesującą się programową obsługą plików Word, jesteś we właściwym miejscu. Dzisiaj przyjrzymy się, jak wyświetlać i ukrywać zawartość zakładek w dokumencie programu Word za pomocą Aspose.Words dla .NET. Dzięki temu przewodnikowi krok po kroku staniesz się profesjonalistą w kontrolowaniu widoczności treści na podstawie zakładek. Zacznijmy!
 
 ## Warunki wstępne
 
-Zanim przejdziemy do samouczka, upewnijmy się, że masz wszystko, czego potrzebujesz:
+Zanim przejdziemy do sedna, jest kilka rzeczy, których będziesz potrzebować:
 
-1. Podstawowa znajomość języka C#: Powinieneś znać składnię i koncepcje języka C#.
-2.  Aspose.Words dla .NET: Pobierz[Tutaj](https://releases.aspose.com/words/net/) . Jeśli nie jesteś jeszcze gotowy na zakup, możesz zacząć od[bezpłatna wersja próbna](https://releases.aspose.com/).
-3. Visual Studio: każda najnowsza wersja będzie działać, ale zalecane jest użycie najnowszej wersji.
-4. .NET Framework: Upewnij się, że jest zainstalowany na Twoim komputerze.
-
-Gotowy żeby zacząć? Świetnie! Zacznijmy od zaimportowania niezbędnych przestrzeni nazw.
+1. Visual Studio: dowolna wersja zgodna z .NET.
+2.  Aspose.Words dla .NET: Pobierz[Tutaj](https://releases.aspose.com/words/net/).
+3. Podstawowa znajomość języka C#: Jeśli potrafisz napisać prosty program „Hello World”, wszystko jest gotowe.
+4. Dokument programu Word z zakładkami: W tym samouczku użyjemy przykładowego dokumentu z zakładkami.
 
 ## Importuj przestrzenie nazw
 
-Aby używać Aspose.Words dla .NET, musimy zaimportować wymagane przestrzenie nazw. Ten krok zapewnia nam dostęp do wszystkich klas i metod, których będziemy używać.
+Na początek zaimportujmy niezbędne przestrzenie nazw. Dzięki temu mamy pewność, że mamy wszystkie narzędzia potrzebne do wykonania naszego zadania.
 
 ```csharp
 using System;
 using Aspose.Words;
-using Aspose.Words.Fields;
+using Aspose.Words.Bookmark;
 ```
 
-Te przestrzenie nazw są niezbędne do pracy z dokumentami programu Word i manipulowania ich zawartością.
+Mając już gotowe przestrzenie nazw, możemy rozpocząć naszą podróż.
 
-## Krok 1: Konfiguracja dokumentu
+## Krok 1: Konfiguracja projektu
 
-Najpierw utwórzmy nowy dokument Word i narzędzie do tworzenia dokumentów. Kreator dokumentów pomaga nam łatwo dodawać zawartość dokumentu i manipulować nią.
+W porządku, zacznijmy od skonfigurowania naszego projektu w programie Visual Studio.
+
+### Utwórz nowy projekt
+
+Otwórz program Visual Studio i utwórz nowy projekt aplikacji konsolowej (.NET Core). Nazwij go czymś chwytliwym, na przykład „BookmarkVisibilityManager”.
+
+### Dodaj Aspose.Words dla .NET
+
+Będziesz musiał dodać Aspose.Words dla .NET do swojego projektu. Możesz to zrobić za pomocą Menedżera pakietów NuGet.
+
+1. Przejdź do opcji Narzędzia > Menedżer pakietów NuGet > Zarządzaj pakietami NuGet dla rozwiązania.
+2. Wyszukaj „Aspose.Words”.
+3. Zainstaluj pakiet.
+
+Świetnie! Teraz, gdy nasz projekt jest już skonfigurowany, przejdźmy do ładowania naszego dokumentu.
+
+## Krok 2: Ładowanie dokumentu
+
+Musimy załadować dokument Word zawierający zakładki. W tym samouczku użyjemy przykładowego dokumentu o nazwie „Bookmarks.docx”.
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-Na tym etapie inicjujemy nowy dokument i narzędzie do tworzenia dokumentów. To przygotowuje nasze środowisko do dalszych działań.
+ Ten fragment kodu ustawia ścieżkę do katalogu dokumentów i ładuje dokument do`doc` obiekt.
 
-## Krok 2: Dodawanie treści dodanych do zakładek
+## Krok 3: Pokaż/ukryj zawartość dodaną do zakładek
 
-Następnie dodamy trochę treści do dokumentu i utworzymy wokół niego zakładkę. Ta zakładka pomoże nam zidentyfikować i manipulować treścią.
+Teraz przychodzi zabawna część – pokazywanie lub ukrywanie treści na podstawie zakładek. Stworzymy metodę o nazwie`ShowHideBookmarkedContent` sobie z tym poradzić.
 
-```csharp
-builder.Write("This is some text before the bookmark.");
-builder.StartBookmark("MyBookmark");
-builder.Write("This is the bookmarked content.");
-builder.EndBookmark("MyBookmark");
-builder.Write("This is some text after the bookmark.");
-```
-
- Tutaj dodajemy tekst przed i po treści dodanej do zakładek. The`StartBookmark` I`EndBookmark` metody definiują granice zakładki.
-
-## Krok 3: Wstawianie pola warunkowego
-
-Aby kontrolować widoczność treści dodanej do zakładek, użyjemy pola warunkowego. To pole sprawdzi warunek i odpowiednio wyświetli lub ukryje treść.
+Oto metoda przełączania widoczności zawartości dodanej do zakładek:
 
 ```csharp
-builder.MoveToDocumentEnd();
-Field field = builder.InsertField("IF \"", null);
-builder.MoveTo(field.Start.NextSibling);
-builder.InsertField("MERGEFIELD MyBookmark", null);
-builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
-```
-
-W tym kroku wstawiamy pole JEŻELI, które sprawdza wartość zakładki. Jeśli wartość jest „prawda”, zostanie wyświetlony komunikat „Widoczny”; w przeciwnym razie wyświetli się komunikat „Ukryty”.
-
-## Krok 4: Zmiana układu węzłów
-
-Następnie musimy zmienić rozmieszczenie węzłów, aby mieć pewność, że logika warunkowa zostanie poprawnie zastosowana do treści dodanej do zakładek.
-
-```csharp
-Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
-Node currentNode = field.Start;
-bool flag = true;
-
-while (currentNode != null && flag)
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool isHidden)
 {
-    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-        flag = false;
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-    currentNode = nextNode;
-}
-
-Node endNode = bm.BookmarkEnd;
-flag = true;
-
-while (currentNode != null && flag)
-{
-    if (currentNode.NodeType == NodeType.FieldEnd)
-        flag = false;
-
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-    endNode = currentNode;
-    currentNode = nextNode;
+    Node currentNode = bm.BookmarkStart;
+    while (currentNode != null && currentNode.NodeType != NodeType.BookmarkEnd)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+        {
+            Run run = currentNode as Run;
+            run.Font.Hidden = isHidden;
+        }
+        currentNode = currentNode.NextSibling;
+    }
 }
 ```
 
-Tutaj przesuwamy węzły, aby upewnić się, że warunek prawidłowo obejmuje zawartość dodaną do zakładek.
+### Podział metody
 
-## Krok 5: Wykonywanie korespondencji seryjnej
+-  Pobieranie zakładek:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` pobiera zakładkę.
+- Przechodzenie węzłów: Przechodzimy przez węzły w obrębie zakładki.
+-  Przełącznik widoczności: Jeśli węzeł to a`Run` (ciągły ciąg tekstu), ustawiamy jego`Hidden` nieruchomość.
 
-Na koniec przeprowadzimy korespondencję seryjną, aby ustawić wartość zakładki i określić, czy treść powinna być pokazana czy ukryta.
+## Krok 4: Stosowanie metody
 
-```csharp
-doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
-```
-
-Ten krok ustawia wartość zakładki na „true”, co sprawi, że treść będzie widoczna na podstawie naszego warunku.
-
-## Krok 6: Zapisywanie dokumentu
-
-Po wszystkich manipulacjach ostatnim krokiem jest zapisanie zmodyfikowanego dokumentu.
+Dzięki naszej metodzie zastosujmy ją do pokazywania lub ukrywania treści na podstawie zakładki.
 
 ```csharp
-doc.Save("ShowHideBookmarkedContent.docx");
+ShowHideBookmarkedContent(doc, "MyBookmark1", true);
 ```
 
-Tutaj zapisujemy dokument z opisową nazwą pliku, aby wskazać zmiany.
+Ta linia kodu ukryje zawartość zakładki o nazwie „MyBookmark1”.
+
+## Krok 5: Zapisywanie dokumentu
+
+Na koniec zapiszmy nasz zmodyfikowany dokument.
+
+```csharp
+doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
+```
+
+Spowoduje to zapisanie dokumentu z wprowadzonymi przez nas zmianami.
 
 ## Wniosek
 
- I to wszystko! Pomyślnie nauczyłeś się, jak pokazywać lub ukrywać zawartość zakładek w dokumencie programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono tworzenie dokumentu, dodawanie zakładek, wstawianie pól warunkowych, zmianę układu węzłów i wykonywanie korespondencji seryjnej. Aspose.Words oferuje mnóstwo funkcji, więc nie wahaj się ich poznać[Dokumentacja API](https://reference.aspose.com/words/net/) dla bardziej zaawansowanych możliwości.
+masz to! Właśnie nauczyłeś się, jak pokazywać i ukrywać zawartość zakładek w dokumencie programu Word przy użyciu Aspose.Words dla .NET. To potężne narzędzie sprawia, że manipulowanie dokumentami jest dziecinnie proste, niezależnie od tego, czy automatyzujesz raporty, tworzysz szablony, czy po prostu majstrujesz przy plikach Word. Miłego kodowania!
 
 ## Często zadawane pytania
 
-### 1. Co to jest Aspose.Words dla .NET?
+### Czy mogę przełączać wiele zakładek jednocześnie?
+ Tak, możesz zadzwonić do`ShowHideBookmarkedContent` dla każdej zakładki, którą chcesz przełączyć.
 
-Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word. Jest szeroko stosowany do zadań automatyzacji dokumentów.
+### Czy ukrywanie treści wpływa na strukturę dokumentu?
+Nie, ukrywanie treści wpływa tylko na jej widoczność. Treść pozostaje w dokumencie.
 
-### 2. Czy mogę używać Aspose.Words dla .NET za darmo?
+### Czy mogę użyć tej metody do innych typów treści?
+Ta metoda w szczególności przełącza przebiegi tekstu. W przypadku innych typów zawartości należy zmodyfikować logikę przechodzenia węzłów.
 
- Możesz wypróbować Aspose.Words dla .NET przy użyciu pliku[bezpłatna wersja próbna](https://releases.aspose.com/). Aby używać długoterminowo, musisz kupić licencję.
+### Czy Aspose.Words dla .NET jest darmowy?
+ Aspose.Words oferuje bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/) , ale do użytku produkcyjnego wymagana jest pełna licencja. Możesz go kupić[Tutaj](https://purchase.aspose.com/buy).
 
-### 3. Jak modyfikować inne właściwości zakładki?
-
- Aspose.Words umożliwia manipulowanie różnymi właściwościami zakładki, takimi jak jej tekst i lokalizacja. Patrz[Dokumentacja API](https://reference.aspose.com/words/net/) szczegółowe instrukcje.
-
-### 4. Jak uzyskać wsparcie dla Aspose.Words dla .NET?
-
-Możesz uzyskać wsparcie, odwiedzając stronę[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8).
-
-### 5. Czy mogę manipulować innymi typami treści za pomocą Aspose.Words dla .NET?
-
-Tak, Aspose.Words dla .NET obsługuje różne typy manipulacji treścią, w tym tekstem, obrazami, tabelami i nie tylko.
+### Jak mogę uzyskać pomoc, jeśli napotkam problemy?
+ Możesz uzyskać wsparcie od społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).

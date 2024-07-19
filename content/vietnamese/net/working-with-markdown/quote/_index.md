@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Bước 3: Tạo kiểu cho các cấp độ lồng nhau
 
- Chúng ta có thể tạo kiểu cho các cấp độ lồng nhau bằng cách sử dụng`Styles.Add` phương pháp của`Document` sự vật. Trong ví dụ này, chúng tôi đang tạo kiểu có tên "Quote1" để thể hiện mức báo giá lồng nhau.
+ Chúng ta có thể tạo kiểu cho các cấp độ lồng nhau bằng cách sử dụng`Styles.Add` phương pháp của`Document`sự vật. Trong ví dụ này, chúng tôi đang tạo kiểu có tên "Quote1" để thể hiện mức báo giá lồng nhau.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

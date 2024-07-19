@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Zastępować`"original_document.docx"` I`"modified_document.docx"` ze ścieżkami do własnych dokumentów.
+ Zastępować`"original_document.docx"`I`"modified_document.docx"` ze ścieżkami do własnych dokumentów.
 
 ## Krok 2: Porównaj dokumenty
 

@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### F: Hur kan jag kontrollera om det finns förskjutningsrevisioner av former i ett Aspose.Words för .NET-dokument?
 
- S: För att leta efter formförskjutningsrevisioner i ett Aspose.Words för .NET-dokument, kan du ladda ett befintligt dokument som innehåller formförskjutningsrevisioner. Sedan kan du komma åt varje form`IsMoveFromRevision` och`IsMoveToRevision` egenskaper för att avgöra om den flyttas och i så fall varifrån och var:
+ S: För att leta efter formförskjutningsrevisioner i ett Aspose.Words för .NET-dokument, kan du ladda ett befintligt dokument som innehåller formförskjutningsrevisioner. Sedan kan du komma åt varje form`IsMoveFromRevision`och`IsMoveToRevision` egenskaper för att avgöra om den flyttas och i så fall varifrån och var:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Vložte pole IF do dokumentu.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Vyhodnoťte podmínku IF.
+// Vyhodnoťte podmínku IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Zobrazit výsledek vyhodnocení.

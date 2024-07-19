@@ -18,7 +18,7 @@ url: /el/java/document-splitting/document-splitting-extraction-techniques/
 
 Πριν βουτήξουμε στον κώδικα, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
-- Εγκαταστάθηκε το Java Development Kit (JDK).
+- Εγκατεστημένο Java Development Kit (JDK).
 - Η βιβλιοθήκη Aspose.Words for Java έγινε λήψη και προσθήκη στο έργο σας
 - Βασικές γνώσεις προγραμματισμού Java
 

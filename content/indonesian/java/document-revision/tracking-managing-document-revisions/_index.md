@@ -69,7 +69,7 @@ Dalam contoh ini, kita membuka dokumen yang ada dan mulai melacak revisi dengan 
 
 ### Menerima atau Menolak Revisi
 
-Setelah revisi dilacak, Anda dapat menerima atau menolaknya secara terprogram menggunakan Aspose.Words untuk Java. Berikut ini contoh cara menerima semua revisi dalam dokumen:
+Setelah revisi dilacak, Anda dapat menerima atau menolaknya secara terprogram menggunakan Aspose.Words untuk Java. Berikut ini contoh cara menerima semua revisi dalam sebuah dokumen:
 
 ```java
 Document doc = new Document("MyDocument.docx");
@@ -103,7 +103,7 @@ Dalam contoh ini, kami menyimpan salinan dokumen dengan "_akhiran v2" untuk menu
 
 ### Bisakah saya menerima atau menolak revisi secara terprogram?
 
- Ya, Anda dapat menerima atau menolak revisi menggunakan Aspose.Words for Java. Memanfaatkan`acceptAllRevisions` Dan`rejectAllRevisions` metode untuk mengelola revisi.
+ Ya, Anda dapat menerima atau menolak revisi menggunakan Aspose.Words for Java. Memanfaatkan`acceptAllRevisions`Dan`rejectAllRevisions` metode untuk mengelola revisi.
 
 ### Apakah mungkin membuat beberapa versi dokumen?
 

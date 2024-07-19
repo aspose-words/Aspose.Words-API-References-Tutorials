@@ -84,10 +84,10 @@ for (int i = 0; i < pages.size(); i++) {
 
 Aspose.Words for Java 是一个商业库，但它提供免费试用版。您可以访问他们的网站了解定价详情和许可信息。
 
-### 我可以将分开的页面合并回单个文档吗？
+### 我可以将分开的页面合并回一个文档吗？
 
 是的，您可以使用 Aspose.Words for Java 将分离的页面合并回单个文档。请参阅文档了解合并说明。
 
-### 在哪里可以找到更多 Aspose.Words 的资源和示例？
+### 在哪里可以找到更多有关 Aspose.Words 的资源和示例？
 
 您可以浏览 Aspose.Words for Java 文档[这里](https://reference.aspose.com/words/java/)以获取详细的示例、API 参考和教程。

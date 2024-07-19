@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/working-with-fields/field-update-culture/
 ---
 
-Itt található egy lépésről lépésre bemutatott útmutató a C# forráskód leírásához, amely az Aspose.Words for .NET "Field Culture Update" szolgáltatását használja. A kívánt eredmény elérése érdekében gondosan kövesse az egyes lépéseket.
+Itt található egy lépésről lépésre bemutatott útmutató a C# forráskód leírásához, amely az Aspose.Words for .NET "Field Culture Update" funkcióját használja. A kívánt eredmény elérése érdekében gondosan kövesse az egyes lépéseket.
 
 ## 1. lépés: Dokumentumkönyvtár beállítása
 
@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. lépés: Az időmező beszúrása
 
- Használjuk a`InsertField()` módszer egy időmező beillesztésére a dokumentumba.
+ Használjuk a`InsertField()`módszer egy időmező beillesztésére a dokumentumba.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

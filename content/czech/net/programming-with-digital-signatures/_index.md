@@ -14,10 +14,10 @@ Pomocí těchto výukových programů budete schopni zvládnout funkce digitáln
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Podepište dokument aplikace Word](./sign-document/) | Zjistěte, jak digitálně podepsat dokument Word pomocí Aspose.Words for .NET. |
-| [Podepisování zašifrovaného dokumentu Word](./signing-encrypted-document/) | Naučte se digitálně podepisovat zašifrovaný textový dokument pomocí Aspose.Words for .NET. |
-| [Vytváření a podepisování nového podpisového řádku](./creating-and-signing-new-signature-line/) | Naučte se, jak vytvořit a podepsat nový řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Podepisování existujícího řádku podpisu v dokumentu aplikace Word](./signing-existing-signature-line/) | Naučte se, jak podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Nastavte ID poskytovatele podpisu v dokumentu aplikace Word](./set-signature-provider-id/) | Naučte se, jak nastavit ID poskytovatele podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Vytvořte nový řádek podpisu a nastavte ID poskytovatele](./create-new-signature-line-and-set-provider-id/) | Naučte se, jak vytvořit nový řádek podpisu a nastavit ID poskytovatele v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Přístup a ověření podpisu v dokumentu aplikace Word](./access-and-verify-signature/) | Naučte se přistupovat k digitálním podpisům a ověřovat je v dokumentu Word pomocí Aspose.Words for .NET. |
+| [Podepište dokument aplikace Word](./sign-document/) | Naučte se, jak podepsat dokument aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Zabezpečte své dokumenty snadno. |
+| [Podepisování zašifrovaného dokumentu Word](./signing-encrypted-document/) | Naučte se podepisovat zašifrované dokumenty Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem. Ideální pro vývojáře. |
+| [Vytváření a podepisování nového podpisového řádku](./creating-and-signing-new-signature-line/) | Naučte se, jak vytvořit a digitálně podepsat podpisový řádek v dokumentu aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného kurzu. Ideální pro automatizaci dokumentů. |
+| [Podepisování existujícího řádku podpisu v dokumentu aplikace Word](./signing-existing-signature-line/) | Naučte se, jak podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro vývojáře. |
+| [Nastavte ID poskytovatele podpisu v dokumentu aplikace Word](./set-signature-provider-id/) | Bezpečně nastavte ID poskytovatele podpisu v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce o 2000 slovech a digitálně podepisujte své dokumenty. |
+| [Vytvořte nový řádek podpisu a nastavte ID poskytovatele](./create-new-signature-line-and-set-provider-id/) | Naučte se, jak vytvořit nový řádek podpisu a nastavit ID poskytovatele v dokumentech aplikace Word pomocí Aspose.Words for .NET. Průvodce krok za krokem. |
+| [Přístup a ověření podpisu v dokumentu aplikace Word](./access-and-verify-signature/) | Získejte přístup a ověřujte digitální podpisy v dokumentech aplikace Word pomocí Aspose.Words for .NET s tímto komplexním průvodcem krok za krokem. Zajistěte pravost dokumentů bez námahy. |

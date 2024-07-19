@@ -45,7 +45,7 @@ Enfin, nous pouvons enregistrer le document au format souhaité.
 // Utilisez un générateur de documents pour ajouter du contenu au document.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Insérer un lien hypertexte.
+//Insérer un lien hypertexte.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", faux) ;
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

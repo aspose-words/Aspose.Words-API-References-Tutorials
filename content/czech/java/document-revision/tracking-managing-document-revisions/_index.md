@@ -103,7 +103,7 @@ V tomto příkladu uložíme kopii dokumentu s příponou "_v2" přípona označ
 
 ### Mohu přijmout nebo odmítnout revize programově?
 
- Ano, můžete přijmout nebo odmítnout revize pomocí Aspose.Words for Java. Využijte`acceptAllRevisions` a`rejectAllRevisions` metody pro správu revizí.
+ Ano, můžete přijmout nebo odmítnout revize pomocí Aspose.Words for Java. Využijte`acceptAllRevisions`a`rejectAllRevisions` metody pro správu revizí.
 
 ### Je možné vytvořit více verzí dokumentu?
 

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 2: Buat dan sesuaikan dokumen
- Buat sebuah instance dari`Document` kelas dan yang terkait`DocumentBuilder` untuk membangun konten dokumen. Menggunakan`Font.EmphasisMark` properti untuk mengatur gaya penekanan font`EmphasisMark.UnderSolidCircle` . Kemudian gunakan`Write` Dan`Writeln` metode dari`DocumentBuilder` untuk menambahkan teks dengan penekanan font yang ditentukan.
+ Buat sebuah instance dari`Document` kelas dan yang terkait`DocumentBuilder` untuk membangun konten dokumen. Menggunakan`Font.EmphasisMark` properti untuk mengatur gaya penekanan font`EmphasisMark.UnderSolidCircle` . Kemudian gunakan`Write`Dan`Writeln` metode dari`DocumentBuilder` untuk menambahkan teks dengan penekanan font yang ditentukan.
 
 ```csharp
 Document document = new Document();

@@ -1,7 +1,7 @@
 ---
 title: Grundlegendes zu Schriftarten und Textformatierung in Word-Dokumenten
 linktitle: Grundlegendes zu Schriftarten und Textformatierung in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Entdecken Sie die Welt der Schriftarten und Textformatierungen in Word-Dokumenten. Erfahren Sie, wie Sie mit Aspose.Words für Python die Lesbarkeit und die visuelle Attraktivität verbessern. Umfassende Anleitung mit schrittweisen Beispielen.
 type: docs
 weight: 13

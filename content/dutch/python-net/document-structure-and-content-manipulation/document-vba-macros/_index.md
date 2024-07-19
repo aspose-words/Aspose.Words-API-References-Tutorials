@@ -67,7 +67,7 @@ End Sub
 
 ## Verbetering van de efficiëntie met voorwaardelijke logica
 
-Intelligente automatisering omvat het nemen van beslissingen op basis van de documentinhoud. Met Aspose.Words Python- en VBA-macro's kunt u voorwaardelijke logica implementeren om reacties te automatiseren op basis van vooraf gedefinieerde criteria.
+Intelligente automatisering omvat het nemen van beslissingen op basis van de documentinhoud. Met Aspose.Words Python- en VBA-macro's kunt u voorwaardelijke logica implementeren om antwoorden te automatiseren op basis van vooraf gedefinieerde criteria.
 
 ```vba
 Sub ApplyConditionalFormatting()

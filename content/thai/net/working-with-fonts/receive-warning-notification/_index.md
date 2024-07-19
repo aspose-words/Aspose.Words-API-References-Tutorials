@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## ขั้นตอนที่ 3: อัปเดตเค้าโครงหน้า
-
- โทรหา`UpdatePageLayout` วิธี. ซึ่งจะแสดงเอกสารในหน่วยความจำและบันทึกคำเตือนใดๆ ที่เกิดขึ้นระหว่างการเรนเดอร์
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## ขั้นตอนที่ 4: ตั้งค่าการโทรกลับคำเตือน
+## ขั้นตอนที่ 3: ตั้งค่าการโทรกลับคำเตือน
 
  หากต้องการบันทึกและจัดการคำเตือน ให้สร้างคลาสที่ใช้`IWarningCallback` อินเตอร์เฟซ. คลาสนี้จะบันทึกคำเตือนใดๆ ที่เกิดขึ้นระหว่างการประมวลผลเอกสาร
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // เราสนใจเฉพาะแบบอักษรที่ถูกแทนที่เท่านั้น
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## ขั้นตอนที่ 5: กำหนดการโทรกลับให้กับเอกสาร
+## ขั้นตอนที่ 4: กำหนดการโทรกลับให้กับเอกสาร
 
 กำหนดการเรียกกลับคำเตือนให้กับเอกสาร เพื่อให้แน่ใจว่าปัญหาแบบอักษรจะถูกบันทึกและบันทึกไว้
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## ขั้นตอนที่ 5: อัปเดตเค้าโครงหน้า
+
+ โทรหา`UpdatePageLayout` วิธี. ซึ่งจะแสดงเอกสารในหน่วยความจำและบันทึกคำเตือนใดๆ ที่เกิดขึ้นระหว่างการเรนเดอร์
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## ขั้นตอนที่ 6: บันทึกเอกสาร
@@ -106,7 +101,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ###  คำถามที่ 3: ฉันสามารถจัดการกับคำเตือนประเภทอื่นด้วยได้หรือไม่`IWarningCallback`?
 
- ใช่`IWarningCallback` อินเทอร์เฟซสามารถรองรับคำเตือนได้หลายประเภท ไม่ใช่แค่การแทนที่แบบอักษรเท่านั้น
+ ใช่`IWarningCallback`อินเทอร์เฟซสามารถรองรับคำเตือนได้หลายประเภท ไม่ใช่แค่การแทนที่แบบอักษรเท่านั้น
 
 ### คำถามที่ 4: ฉันจะรับการสนับสนุนสำหรับ Aspose.Words ได้ที่ไหน
 

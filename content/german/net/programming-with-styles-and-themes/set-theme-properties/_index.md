@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- In diesem Schritt greifen wir auf die`Theme` Gegenstand der`Document`Objekt, um das Dokumentdesign abzurufen. Als Nächstes können wir Designeigenschaften wie sekundäre Schriftarten ändern (`MinorFonts.Latin`) und Farben (`Colors.Hyperlink`).
+In diesem Schritt greifen wir auf die`Theme` Gegenstand der`Document` Objekt, um das Dokumentdesign abzurufen. Als Nächstes können wir Designeigenschaften wie sekundäre Schriftarten ändern (`MinorFonts.Latin`) und Farben (`Colors.Hyperlink`).
 
 ## Schritt 4: Speichern Sie das Dokument
 

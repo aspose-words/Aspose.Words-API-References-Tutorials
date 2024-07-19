@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Вставьте поле ЕСЛИ в документ.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Оцените условие ЕСЛИ.
+// Оцените условие ЕСЛИ.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Отобразите результат оценки.

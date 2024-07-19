@@ -17,7 +17,7 @@ Word 문서로 작업할 때 두 문서가 동일한지 확인하는 것은 중�
 
 1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 아직 갖고 있지 않다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
 2. 개발 환경: .NET 개발 환경이 설정되어 있는지 확인하세요. Visual Studio를 적극 권장합니다.
-3. 샘플 문서: 비교할 두 개의 Word 문서를 준비하십시오.
+3. 샘플 문서: 비교할 두 개의 Word 문서를 준비하세요.
 
 ## 네임스페이스 가져오기
 
@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## 2단계: 문서 로드
 
- 다음으로 비교하려는 Word 문서를 로드해야 합니다. 이 예에서는 다음과 같은 두 개의 문서가 있다고 가정합니다.`Document.docx` 그리고`Document2.docx` 문서 디렉토리에 있습니다.
+ 다음으로 비교하려는 Word 문서를 로드해야 합니다. 이 예에서는 다음과 같은 두 개의 문서가 있다고 가정합니다.`Document.docx`그리고`Document2.docx` 문서 디렉토리에 있습니다.
 
 ```csharp
 // 문서 디렉터리의 경로입니다.

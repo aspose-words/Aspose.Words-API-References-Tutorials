@@ -109,13 +109,13 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### Q: Aspose.Words for .NET을 사용하여 Word 문서에 삽입된 TOA 필드의 모양을 사용자 정의하는 방법은 무엇입니까?
 
-A: 삽입된 TOA 필드의 속성을 사용하여 모양을 사용자 정의할 수 있습니다.`FieldTOA` 서식 옵션을 지정하는 개체입니다.
+ A: 삽입된 TOA 필드의 속성을 사용하여 모양을 사용자 정의할 수 있습니다.`FieldTOA` 서식 옵션을 지정하는 개체입니다.
 
 #### Q: .NET용 Aspose.Words를 사용하여 단일 Word 문서에 여러 TOA 필드를 추가할 수 있습니까?
 
 A: 예, Aspose.Words for .NET을 사용하여 단일 Word 문서에 여러 TOA 필드를 추가할 수 있습니다. 각 필드에 대해 삽입 단계를 반복하면 됩니다.
 
-#### Q: Aspose.Words for .NET을 사용하여 TOA 필드가 Word 문서에 성공적으로 삽입되었는지 어떻게 확인할 수 있습니까?
+#### Q: Aspose.Words for .NET을 사용하여 TOA 필드가 Word 문서에 성공적으로 삽입되었는지 어떻게 확인할 수 있나요?
 
 A: TOA 필드가 성공적으로 삽입되었는지 확인하려면 문서 내용을 탐색하고 TOA 필드 인스턴스를 검색하면 됩니다.
 

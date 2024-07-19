@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Voeg een nieuwe mapbron toe die Aspose.Words de opdracht geeft om in de volgende map naar lettertypen te zoeken.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Voeg de aangepaste map die onze lettertypen bevat toe aan de lijst met bestaande lettertypebronnen.
+// Voeg de aangepaste map die onze lettertypen bevat toe aan de lijst met bestaande lettertypebronnen.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

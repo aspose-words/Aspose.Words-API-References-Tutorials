@@ -24,7 +24,7 @@ url: /th/net/programming-with-pdfsaveoptions/
 | [ลดขนาด PDF โดยการปิดการใช้งานแบบอักษรที่ฝัง](./disable-embed-windows-fonts/) | เรียนรู้วิธีปิดการใช้งานการฝังแบบอักษร Windows เมื่อแปลงเอกสารเป็น PDF ด้วย Aspose.Words สำหรับ .NET |
 | [ปรับขนาด PDF ให้เหมาะสมด้วยการข้ามแบบอักษร Arial และ Times Roman แบบฝัง](./skip-embedded-arial-and-times-roman-fonts/) | คำแนะนำทีละขั้นตอนในการสร้าง PDF โดยไม่ต้องฝังแบบอักษร Arial และ Times Roman ด้วย Aspose.Words สำหรับ .NET |
 | [ลดขนาดไฟล์ PDF โดยไม่ฝังแบบอักษรหลัก](./avoid-embedding-core-fonts/) | เรียนรู้วิธีหลีกเลี่ยงการฝังแบบอักษรพื้นฐานเมื่อแปลงเอกสาร Word เป็น PDF ด้วย Aspose.Words สำหรับ .NET |
-| [หลบหนี URI ในเอกสาร PDF](./escape-uri/) | คำแนะนำทีละขั้นตอนในการหลบหนี Uri ด้วย Aspose.Words สำหรับ .NET |
+| [หลบหนี URI ในเอกสาร PDF](./escape-uri/) | เรียนรู้วิธีหลีกเลี่ยง URI ใน PDF โดยใช้ Aspose.Words สำหรับ .NET คำแนะนำโดยละเอียดนี้จะแนะนำคุณตลอดกระบวนการทีละขั้นตอน |
 | [ส่งออกบุ๊กมาร์กส่วนหัวของเอกสาร Word เป็นเอกสาร PDF](./export-header-footer-bookmarks/) | คำแนะนำทีละขั้นตอนในการส่งออกบุ๊กมาร์กส่วนหัวและส่วนท้ายด้วย Aspose.Words สำหรับ .NET |
 | [ลดขนาด PDF ด้วยปรับขนาดแบบอักษร Wmf เป็นขนาด Metafile](./scale-wmf-fonts-to-metafile-size/) | คำแนะนำทีละขั้นตอนในการปรับขนาดตัวอักษร WMF เมื่อแปลงเป็น PDF ด้วย Aspose.Words สำหรับ .NET |
 | [ปรับปรุงการวางตำแหน่งข้อความ PDF ด้วยการวางตำแหน่งข้อความเพิ่มเติม](./additional-text-positioning/) | เรียนรู้วิธีควบคุมการวางตำแหน่งข้อความเพิ่มเติมเมื่อแปลงเอกสาร Word เป็น PDF ด้วย Aspose.Words สำหรับ .NET |

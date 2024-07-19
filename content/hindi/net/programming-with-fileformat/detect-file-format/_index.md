@@ -14,7 +14,7 @@ url: /hi/net/programming-with-fileformat/detect-file-format/
 
 ## चरण 1: निर्देशिकाएँ परिभाषित करें
 
- शुरू करने के लिए, आपको उन निर्देशिकाओं को परिभाषित करना होगा जहाँ आप फ़ाइलों को उनके प्रारूप के अनुसार संग्रहीत करना चाहते हैं।`"YOUR DOCUMENT DIRECTORY"` आपके दस्तावेज़ निर्देशिका के वास्तविक पथ के साथ। यदि वे पहले से मौजूद नहीं हैं, तो हम "समर्थित", "अज्ञात", "एन्क्रिप्टेड" और "प्री97" निर्देशिकाएँ बनाते हैं।
+ शुरू करने के लिए, आपको उन निर्देशिकाओं को परिभाषित करना होगा जहाँ आप फ़ाइलों को उनके प्रारूप के अनुसार संग्रहीत करना चाहते हैं।`"YOUR DOCUMENT DIRECTORY"`आपके दस्तावेज़ निर्देशिका के वास्तविक पथ के साथ। यदि वे पहले से मौजूद नहीं हैं, तो हम "समर्थित", "अज्ञात", "एन्क्रिप्टेड" और "प्री97" निर्देशिकाएँ बनाते हैं।
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## चरण 2: फ़ाइलें ब्राउज़ करें
 
- फिर हम उपयोग करते हैं`GetFiles` की विधि`Directory` निर्दिष्ट निर्देशिका में फ़ाइलों की सूची प्राप्त करने के लिए क्लास। हम एक का भी उपयोग करते हैं`Where`"भ्रष्ट document.docx" नामक एक विशिष्ट फ़ाइल को बाहर करने के लिए खंड।
+ फिर हम उपयोग करते हैं`GetFiles` की विधि`Directory` निर्दिष्ट निर्देशिका में फ़ाइलों की सूची प्राप्त करने के लिए क्लास। हम एक का भी उपयोग करते हैं`Where` "भ्रष्ट document.docx" नामक एक विशिष्ट फ़ाइल को बाहर करने के लिए खंड।
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,11 +211,11 @@ break;
 
 #### .NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ फ़ाइल के प्रारूप का पता कैसे लगाएं?
 
- .NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ फ़ाइल के प्रारूप का पता लगाने के लिए, आप ट्यूटोरियल में दिए गए चरणों का पालन कर सकते हैं।`DetectFileFormat` की विधि`FileFormatUtil`क्लास आपको दस्तावेज़ फ़ाइल के प्रारूप का पता लगाने की अनुमति देगा। यह आपको यह निर्धारित करने की अनुमति देगा कि यह Microsoft Word 97-2003 दस्तावेज़ है, टेम्पलेट है, Office Open XML WordprocessingML दस्तावेज़ है या अन्य समर्थित प्रारूप है। ट्यूटोरियल में प्रदान किया गया कोड आपको इस सुविधा को लागू करने में मार्गदर्शन करेगा।
+ .NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ फ़ाइल के प्रारूप का पता लगाने के लिए, आप ट्यूटोरियल में दिए गए चरणों का पालन कर सकते हैं।`DetectFileFormat` की विधि`FileFormatUtil` क्लास आपको दस्तावेज़ फ़ाइल के प्रारूप का पता लगाने की अनुमति देगा। यह आपको यह निर्धारित करने की अनुमति देगा कि यह Microsoft Word 97-2003 दस्तावेज़ है, टेम्पलेट है, Office Open XML WordprocessingML दस्तावेज़ है या अन्य समर्थित प्रारूप है। ट्यूटोरियल में प्रदान किया गया कोड आपको इस सुविधा को लागू करने में मार्गदर्शन करेगा।
 
 #### Aspose.Words for .NET किस दस्तावेज़ प्रारूप का समर्थन करता है?
 
-Aspose.Words for .NET विभिन्न प्रकार के दस्तावेज़ स्वरूपों का समर्थन करता है, जिसमें Microsoft Word 97-2003 दस्तावेज़ (DOC), टेम्पलेट (DOT), Office Open XML WordprocessingML दस्तावेज़ (DOCX), Office Open XML WordprocessingML दस्तावेज़ मैक्रोज़ के साथ (DOCM), Office Open XML WordprocessingML टेम्पलेट मैक्रोज़ के बिना (DOTX), Office Open XML WordprocessingML टेम्पलेट मैक्रोज़ के साथ (DOTM), फ़्लैट OPC दस्तावेज़, RTF दस्तावेज़, Microsoft Word 2003 WordprocessingML दस्तावेज़, HTML दस्तावेज़, MHTML (वेब संग्रह) दस्तावेज़, OpenDocument Text (ODT) दस्तावेज़, OpenDocument Text (OTT) टेम्पलेट, MS Word 6 या Word 95 दस्तावेज़ और अज्ञात दस्तावेज़ स्वरूप शामिल हैं।
+Aspose.Words for .NET विभिन्न प्रकार के दस्तावेज़ स्वरूपों का समर्थन करता है, जिसमें Microsoft Word 97-2003 दस्तावेज़ (DOC), टेम्पलेट्स (DOT), Office Open XML WordprocessingML दस्तावेज़ (DOCX), Office Open XML WordprocessingML दस्तावेज़ मैक्रोज़ के साथ (DOCM), Office Open XML WordprocessingML टेम्पलेट्स मैक्रोज़ के बिना (DOTX), Office Open XML WordprocessingML टेम्पलेट्स मैक्रोज़ के साथ (DOTM), फ़्लैट OPC दस्तावेज़, RTF दस्तावेज़, Microsoft Word 2003 WordprocessingML दस्तावेज़, HTML दस्तावेज़, MHTML (वेब संग्रह) दस्तावेज़, OpenDocument Text (ODT) दस्तावेज़, OpenDocument Text (OTT) टेम्पलेट्स, MS Word 6 या Word 95 दस्तावेज़, और अज्ञात दस्तावेज़ स्वरूप शामिल हैं।
 
 #### प्रारूप पहचान के दौरान एन्क्रिप्टेड दस्तावेज़ फ़ाइलों को कैसे संभालें?
 

@@ -96,7 +96,7 @@ doc.getMailMerge().execute(new String[] { "FullName", "Company", "Address", "Add
 doc.save("WorkingWithCleanupOptions.RemoveUnusedFields.docx");
 ```
 
-Trong ví dụ này, chúng tôi mở tài liệu có các trường phối, đặt tùy chọn dọn dẹp để xóa các trường không sử dụng và thực hiện phối thư với dữ liệu. Sau khi hợp nhất, mọi trường không sử dụng sẽ bị xóa khỏi tài liệu.
+Trong ví dụ này, chúng tôi mở một tài liệu có các trường phối, đặt các tùy chọn dọn dẹp để loại bỏ các trường không sử dụng và thực hiện phối thư với dữ liệu. Sau khi hợp nhất, mọi trường không sử dụng sẽ bị xóa khỏi tài liệu.
 
 ## Bước 5: Xóa các trường chứa
 

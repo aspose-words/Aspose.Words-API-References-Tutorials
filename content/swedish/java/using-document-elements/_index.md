@@ -50,7 +50,7 @@ Lär dig att använda HarfBuzz för avancerad textformning i Aspose.Words för J
 ### [Använda sidhuvuden och sidfötter i Aspose.Words för Java](./using-headers-and-footers/)
 Lär dig steg-för-steg hur du använder sidhuvuden och sidfötter i Aspose.Words för Java. Skapa professionella dokument utan ansträngning.
 ### [Använda avstavning i Aspose.Words för Java](./using-hyphenation/)
-Lär dig hur du använder avstavning effektivt i Aspose.Words för Java med denna omfattande handledning. Förbättra dokumentets läsbarhet idag!
+Lär dig hur du använder avstavning effektivt i Aspose.Words för Java med denna omfattande handledning. Förbättra dokumentläsbarheten idag!
 ### [Använda listor i Aspose.Words för Java](./using-lists/)
 Lär dig att använda listor i Aspose.Words för Java med denna steg-för-steg handledning. Organisera och formatera dina dokument effektivt.
 ### [Använda Markdown i Aspose.Words för Java](./using-markdown/)

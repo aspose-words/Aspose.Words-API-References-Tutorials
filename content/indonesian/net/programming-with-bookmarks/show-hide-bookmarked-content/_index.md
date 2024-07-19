@@ -2,156 +2,133 @@
 title: Tampilkan Sembunyikan Konten yang Ditandai di Dokumen Word
 linktitle: Tampilkan Sembunyikan Konten yang Ditandai di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menampilkan atau menyembunyikan konten yang ditandai secara dinamis di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
+description: Pelajari cara menampilkan dan menyembunyikan konten yang ditandai di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
-
 ## Perkenalan
 
-Hai! Pernahkah Anda ingin mengontrol visibilitas konten tertentu dalam dokumen Word berdasarkan kondisi tertentu? Dengan Aspose.Words untuk .NET, Anda dapat secara dinamis menampilkan atau menyembunyikan konten yang ditandai hanya dengan beberapa baris kode. Dalam tutorial ini, saya akan memandu Anda melalui proses langkah demi langkah, memastikan Anda memahami setiap bagian kode. Pada akhirnya, Anda akan menjadi ahli dalam memanipulasi bookmark di dokumen Word. Mari kita mulai!
+Siap terjun ke dunia manipulasi dokumen dengan Aspose.Words untuk .NET? Baik Anda seorang pengembang yang ingin mengotomatiskan tugas dokumen atau sekadar ingin menangani file Word secara terprogram, Anda berada di tempat yang tepat. Hari ini, kita akan mempelajari cara menampilkan dan menyembunyikan konten yang ditandai di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini akan menjadikan Anda ahli dalam mengontrol visibilitas konten berdasarkan bookmark. Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita masuk ke tutorialnya, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita masuk ke seluk beluknya, ada beberapa hal yang Anda perlukan:
 
-1. Pengetahuan Dasar C#: Anda harus terbiasa dengan sintaks dan konsep C#.
-2.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/) . Jika Anda belum siap untuk membeli, Anda bisa mulai dengan a[uji coba gratis](https://releases.aspose.com/).
-3. Visual Studio: Versi terbaru apa pun dapat digunakan, tetapi disarankan menggunakan versi terbaru.
-4. .NET Framework: Pastikan itu diinstal pada mesin Anda.
-
-Siap untuk memulai? Besar! Mari kita mulai dengan mengimpor namespace yang diperlukan.
+1. Visual Studio: Versi apa pun yang kompatibel dengan .NET.
+2.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/).
+3. Pemahaman Dasar C#: Jika Anda dapat menulis program sederhana "Hello World", Anda siap melakukannya.
+4. Dokumen Word dengan Bookmark: Kami akan menggunakan contoh dokumen dengan bookmark untuk tutorial ini.
 
 ## Impor Namespace
 
-Untuk menggunakan Aspose.Words untuk .NET, kita perlu mengimpor namespace yang diperlukan. Langkah ini memastikan kita memiliki akses ke semua kelas dan metode yang akan kita gunakan.
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini memastikan kami memiliki semua alat yang kami perlukan untuk tugas kami.
 
 ```csharp
 using System;
 using Aspose.Words;
-using Aspose.Words.Fields;
+using Aspose.Words.Bookmark;
 ```
 
-Namespace ini sangat penting untuk bekerja dengan dokumen Word dan memanipulasi kontennya.
+Dengan namespace ini, kita siap untuk memulai perjalanan kita.
 
-## Langkah 1: Menyiapkan Dokumen
+## Langkah 1: Menyiapkan Proyek Anda
 
-Pertama, mari buat dokumen Word baru dan pembuat dokumen. Pembuat dokumen membantu kita menambahkan dan memanipulasi konten dalam dokumen dengan mudah.
+Baiklah, mari kita mulai dengan menyiapkan proyek kita di Visual Studio.
+
+### Buat Proyek Baru
+
+Buka Visual Studio dan buat proyek Aplikasi Konsol (.NET Core) baru. Beri nama sesuatu yang menarik, seperti "BookmarkVisibilityManager".
+
+### Tambahkan Aspose.Words untuk .NET
+
+Anda harus menambahkan Aspose.Words untuk .NET ke proyek Anda. Anda dapat melakukan ini melalui Manajer Paket NuGet.
+
+1. Buka Alat > Manajer Paket NuGet > Kelola Paket NuGet untuk Solusi.
+2. Telusuri "Aspose.Words".
+3. Instal paketnya.
+
+Besar! Sekarang proyek kita sudah siap, mari beralih ke memuat dokumen kita.
+
+## Langkah 2: Memuat Dokumen
+
+Kita perlu memuat dokumen Word yang berisi bookmark. Untuk tutorial ini, kita akan menggunakan contoh dokumen bernama "Bookmarks.docx".
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-Pada langkah ini, kami menginisialisasi dokumen baru dan pembuat dokumen. Hal ini menyiapkan lingkungan kami untuk operasi lebih lanjut.
+ Cuplikan kode ini menetapkan jalur ke direktori dokumen Anda dan memuat dokumen ke dalam`doc` obyek.
 
-## Langkah 2: Menambahkan Konten yang Ditandai
+## Langkah 3: Tampilkan/Sembunyikan Konten yang Ditandai
 
-Selanjutnya, kita akan menambahkan beberapa konten ke dokumen dan membuat bookmark di sekitarnya. Bookmark ini akan membantu kami mengidentifikasi dan memanipulasi konten.
+Sekarang sampai pada bagian yang menyenangkan – menampilkan atau menyembunyikan konten berdasarkan bookmark. Kami akan membuat metode yang disebut`ShowHideBookmarkedContent` untuk menangani ini.
 
-```csharp
-builder.Write("This is some text before the bookmark.");
-builder.StartBookmark("MyBookmark");
-builder.Write("This is the bookmarked content.");
-builder.EndBookmark("MyBookmark");
-builder.Write("This is some text after the bookmark.");
-```
-
- Di sini, kami menambahkan beberapa teks sebelum dan sesudah konten yang ditandai. Itu`StartBookmark` Dan`EndBookmark` metode menentukan batas-batas bookmark.
-
-## Langkah 3: Memasukkan Bidang Bersyarat
-
-Untuk mengontrol visibilitas konten yang ditandai, kami akan menggunakan bidang bersyarat. Bidang ini akan memeriksa suatu kondisi dan menampilkan atau menyembunyikan konten yang sesuai.
+Berikut metode yang akan mengubah visibilitas konten yang di-bookmark:
 
 ```csharp
-builder.MoveToDocumentEnd();
-Field field = builder.InsertField("IF \"", null);
-builder.MoveTo(field.Start.NextSibling);
-builder.InsertField("MERGEFIELD MyBookmark", null);
-builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
-```
-
-Pada langkah ini, kita menyisipkan kolom IF yang memeriksa nilai bookmark. Jika nilainya "benar", maka akan ditampilkan "Terlihat"; jika tidak, ia akan menampilkan "Tersembunyi".
-
-## Langkah 4: Menata Ulang Node
-
-Selanjutnya, kita perlu mengatur ulang node untuk memastikan logika kondisional berlaku dengan benar pada konten yang ditandai.
-
-```csharp
-Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
-Node currentNode = field.Start;
-bool flag = true;
-
-while (currentNode != null && flag)
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool isHidden)
 {
-    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-        flag = false;
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-    currentNode = nextNode;
-}
-
-Node endNode = bm.BookmarkEnd;
-flag = true;
-
-while (currentNode != null && flag)
-{
-    if (currentNode.NodeType == NodeType.FieldEnd)
-        flag = false;
-
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-    endNode = currentNode;
-    currentNode = nextNode;
+    Node currentNode = bm.BookmarkStart;
+    while (currentNode != null && currentNode.NodeType != NodeType.BookmarkEnd)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+        {
+            Run run = currentNode as Run;
+            run.Font.Hidden = isHidden;
+        }
+        currentNode = currentNode.NextSibling;
+    }
 }
 ```
 
-Di sini, kami memindahkan node untuk memastikan kondisinya mencakup konten yang ditandai dengan benar.
+### Rincian Metode
 
-## Langkah 5: Menjalankan Penggabungan Surat
+-  Pengambilan Bookmark:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` mengambil bookmark.
+- Node Traversal: Kami melintasi node di dalam bookmark.
+-  Pengalih Visibilitas: Jika simpulnya adalah a`Run` (rangkaian teks yang berdekatan), kami mengaturnya`Hidden` Properti.
 
-Terakhir, kita akan menjalankan gabungan surat untuk menetapkan nilai bookmark dan menentukan apakah konten harus ditampilkan atau disembunyikan.
+## Langkah 4: Menerapkan Metode
 
-```csharp
-doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
-```
-
-Langkah ini menetapkan nilai bookmark menjadi "true", yang akan membuat konten terlihat berdasarkan kondisi kita.
-
-## Langkah 6: Menyimpan Dokumen
-
-Setelah semua manipulasi, langkah terakhir adalah menyimpan dokumen yang dimodifikasi.
+Dengan metode kami, mari terapkan untuk menampilkan atau menyembunyikan konten berdasarkan bookmark.
 
 ```csharp
-doc.Save("ShowHideBookmarkedContent.docx");
+ShowHideBookmarkedContent(doc, "MyBookmark1", true);
 ```
 
-Di sini, kami menyimpan dokumen dengan nama file deskriptif untuk menunjukkan perubahan.
+Baris kode ini akan menyembunyikan konten di dalam bookmark bernama "MyBookmark1".
+
+## Langkah 5: Menyimpan Dokumen
+
+Terakhir, mari simpan dokumen kita yang telah dimodifikasi.
+
+```csharp
+doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
+```
+
+Ini menyimpan dokumen dengan perubahan yang kami buat.
 
 ## Kesimpulan
 
- Dan itu saja! Anda telah berhasil mempelajari cara menampilkan atau menyembunyikan konten yang ditandai di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup pembuatan dokumen, menambahkan bookmark, menyisipkan bidang bersyarat, mengatur ulang node, dan mengeksekusi gabungan surat. Aspose.Words menawarkan banyak fitur, jadi jangan ragu untuk menjelajahinya[dokumentasi API](https://reference.aspose.com/words/net/) untuk kemampuan yang lebih maju.
+Dan itu dia! Anda baru saja mempelajari cara menampilkan dan menyembunyikan konten yang ditandai di dokumen Word menggunakan Aspose.Words untuk .NET. Alat canggih ini memudahkan manipulasi dokumen, baik Anda mengotomatiskan laporan, membuat templat, atau sekadar mengutak-atik file Word. Selamat membuat kode!
 
 ## FAQ
 
-### 1. Apa itu Aspose.Words untuk .NET?
+### Bisakah saya mengganti beberapa bookmark sekaligus?
+ Ya, Anda dapat menghubungi`ShowHideBookmarkedContent` metode untuk setiap bookmark yang ingin Anda alihkan.
 
-Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram. Ini banyak digunakan untuk tugas otomatisasi dokumen.
+### Apakah menyembunyikan konten memengaruhi struktur dokumen?
+Tidak, menyembunyikan konten hanya memengaruhi visibilitasnya. Kontennya tetap ada di dokumen.
 
-### 2. Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
+### Bisakah saya menggunakan metode ini untuk jenis konten lainnya?
+Metode ini secara khusus mengubah proses teks. Untuk tipe konten lainnya, Anda harus mengubah logika traversal simpul.
 
- Anda dapat mencoba Aspose.Words untuk .NET menggunakan a[uji coba gratis](https://releases.aspose.com/). Untuk penggunaan jangka panjang, Anda harus membeli lisensi.
+### Apakah Aspose.Words untuk .NET gratis?
+ Aspose.Words menawarkan uji coba gratis[Di Sini](https://releases.aspose.com/) , tetapi lisensi penuh diperlukan untuk penggunaan produksi. Anda dapat membelinya[Di Sini](https://purchase.aspose.com/buy).
 
-### 3. Bagaimana cara mengubah properti bookmark lainnya?
-
- Aspose.Words memungkinkan Anda memanipulasi berbagai properti bookmark, seperti teks dan lokasinya. Mengacu kepada[dokumentasi API](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
-
-### 4. Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
-
-Anda bisa mendapatkan dukungan dengan mengunjungi[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8).
-
-### 5. Bisakah saya memanipulasi jenis konten lain dengan Aspose.Words untuk .NET?
-
-Ya, Aspose.Words untuk .NET mendukung berbagai jenis manipulasi konten, termasuk teks, gambar, tabel, dan lainnya.
+### Bagaimana saya bisa mendapatkan dukungan jika saya mengalami masalah?
+ Anda bisa mendapatkan dukungan dari komunitas Aspose[Di Sini](https://forum.aspose.com/c/words/8).

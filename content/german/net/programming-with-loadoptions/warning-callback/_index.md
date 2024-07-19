@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/programming-with-loadoptions/warning-callback/
 ---
-Bei der Verarbeitung von Word-Dokumenten in einer C#-Anwendung kann es hilfreich sein, auf Warnungen zu achten, die beim Laden des Dokuments ausgegeben werden. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe der Ladeoptionen LoadOptions ganz einfach eine Rückruffunktion angeben, um Warnungen beim Laden des Dokuments zu verarbeiten. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen Schritt für Schritt, wie Sie mit dem C#-Quellcode von Aspose.Words für .NET ein Dokument mithilfe einer Rückruffunktion für Warnungen mithilfe der Ladeoptionen LoadOptions laden.
+Bei der Verarbeitung von Word-Dokumenten in einer C#-Anwendung kann es hilfreich sein, auf Warnungen zu achten, die beim Laden des Dokuments ausgegeben werden. Mit der Aspose.Words-Bibliothek für .NET können Sie mithilfe der Ladeoptionen LoadOptions ganz einfach eine Rückruffunktion angeben, um Warnungen beim Laden des Dokuments zu verarbeiten. In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit dem C#-Quellcode von Aspose.Words für .NET ein Dokument mithilfe einer Rückruffunktion für Warnungen mithilfe der Ladeoptionen LoadOptions laden.
 
 ## Die Aspose.Words-Bibliothek verstehen
 

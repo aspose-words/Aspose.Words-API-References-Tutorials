@@ -2,175 +2,123 @@
 title: Sao chép văn bản được đánh dấu trong tài liệu Word
 linktitle: Sao chép văn bản được đánh dấu trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách sao chép văn bản dấu trang trong tài liệu word sang tài liệu khác bằng Aspose.Words cho .NET.
+description: Dễ dàng sao chép văn bản được đánh dấu giữa các tài liệu Word bằng Aspose.Words cho .NET. Tìm hiểu cách thực hiện với hướng dẫn từng bước này.
 type: docs
 weight: 10
 url: /vi/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
+## Giới thiệu
 
-Trong bài viết này, chúng ta sẽ khám phá mã nguồn C# ở trên để hiểu cách sử dụng chức năng Sao chép văn bản được đánh dấu trong thư viện Aspose.Words cho .NET. Tính năng này cho phép bạn sao chép nội dung của một dấu trang cụ thể từ tài liệu nguồn này sang tài liệu khác.
+Bạn có bao giờ thấy mình cần sao chép các phần cụ thể từ tài liệu Word này sang tài liệu Word khác không? Vâng, bạn thật may mắn! Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách sao chép văn bản được đánh dấu từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words cho .NET. Cho dù bạn đang tạo báo cáo động hay tự động tạo tài liệu, hướng dẫn này sẽ đơn giản hóa quy trình cho bạn.
 
 ## Điều kiện tiên quyết
 
-- Kiến thức cơ bản về ngôn ngữ C#.
-- Môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+Trước khi chúng ta đi sâu vào, hãy đảm bảo bạn có những điều sau:
+
+-  Thư viện Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển .NET nào khác.
+- Kiến thức cơ bản về C#: Làm quen với lập trình C# và .NET framework.
+
+## Nhập không gian tên
+
+Để bắt đầu, hãy đảm bảo bạn đã nhập các không gian tên cần thiết vào dự án của mình:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Import;
+using Aspose.Words.Bookmark;
+```
 
 ## Bước 1: Tải tài liệu nguồn
 
- Trước khi sao chép văn bản đánh dấu, chúng ta cần tải tài liệu nguồn vào một`Document` đối tượng sử dụng đường dẫn tệp:
+Trước tiên, bạn cần tải tài liệu nguồn chứa văn bản đã đánh dấu mà bạn muốn sao chép.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## Bước 2: Lấy dấu trang nguồn
+ Đây,`dataDir` là đường dẫn đến thư mục tài liệu của bạn và`Bookmarks.docx` là tài liệu nguồn.
 
- Chúng tôi sử dụng`Bookmarks` thuộc tính của phạm vi tài liệu nguồn để lấy dấu trang cụ thể mà chúng tôi muốn sao chép:
+## Bước 2: Xác định dấu trang
+
+Tiếp theo, xác định dấu trang bạn muốn sao chép từ tài liệu nguồn.
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
+ Thay thế`"MyBookmark1"` với tên thật của dấu trang của bạn.
+
 ## Bước 3: Tạo tài liệu đích
 
-Chúng tôi tạo một tài liệu mới sẽ đóng vai trò là tài liệu đích để sao chép nội dung dấu trang:
+Bây giờ, tạo một tài liệu mới nơi văn bản được đánh dấu sẽ được sao chép.
 
 ```csharp
 Document dstDoc = new Document();
-```
-
-## Bước 4: Chỉ định vị trí sao chép
-
-Chúng tôi chỉ định vị trí mà chúng tôi muốn thêm văn bản đã sao chép. Trong ví dụ của chúng tôi, chúng tôi thêm văn bản vào cuối phần nội dung của phần cuối cùng của tài liệu đích:
-
-```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## Bước 5: Nhập và sao chép văn bản dấu trang
+## Bước 4: Nhập nội dung được đánh dấu
 
- Chúng tôi sử dụng một`NodeImporter`đối tượng nhập và sao chép văn bản đánh dấu từ tài liệu nguồn sang tài liệu đích:
+ Để đảm bảo kiểu dáng và định dạng được giữ nguyên, hãy sử dụng`NodeImporter` để nhập nội dung được đánh dấu từ tài liệu nguồn sang tài liệu đích.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+AppendBookmarkedText(importer, srcBookmark, dstNode);
+```
 
-AppendBookmarkedText(import, srcBookmark, dstNode);
+## Bước 5: Xác định phương thức AppendBookmarkedText
 
+Đây là nơi phép thuật xảy ra. Xác định phương thức xử lý việc sao chép văn bản được đánh dấu:
+
+```csharp
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+{
+    Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+    Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
+    if (startPara == null || endPara == null)
+        throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+    if (startPara.ParentNode != endPara.ParentNode)
+        throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+    Node endNode = endPara.NextSibling;
+
+    for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+    {
+        Node newNode = importer.ImportNode(curNode, true);
+        dstNode.AppendChild(newNode);
+    }
+}
+```
+
+## Bước 6: Lưu tài liệu đích
+
+Cuối cùng, lưu tài liệu đích để xác minh nội dung đã sao chép.
+
+```csharp
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-### Mã nguồn mẫu cho Sao chép văn bản được đánh dấu bằng Aspose.Words cho .NET
-
-Đây là mã nguồn ví dụ đầy đủ để minh họa việc sao chép văn bản từ dấu trang bằng Aspose.Words cho .NET:
-
-```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document srcDoc = new Document(dataDir + "Bookmarks.docx");
-
-	// Đây là dấu trang có nội dung chúng tôi muốn sao chép.
-	Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
-
-	// Chúng tôi sẽ thêm vào tài liệu này.
-	Document dstDoc = new Document();
-
-	// Giả sử chúng ta sẽ được thêm vào phần cuối của phần cuối cùng.
-	CompositeNode dstNode = dstDoc.LastSection.Body;
-
-	// Nếu bạn nhập nhiều lần mà không có một ngữ cảnh nào thì sẽ tạo ra nhiều kiểu.
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
-
-	AppendBookmarkedText(importer, srcBookmark, dstNode);
-	
-	dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
-
-```
-
-#### Nối thêm Mã nguồn văn bản được đánh dấu
-
-```csharp
-
-private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
-        {
-            // Đây là đoạn chứa phần đầu của dấu trang.
-            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-            // Đây là đoạn chứa phần cuối của dấu trang.
-            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-            if (startPara == null || endPara == null)
-                throw new InvalidOperationException(
-                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-            // Hãy giới hạn bản thân trong một kịch bản khá đơn giản.
-            if (startPara.ParentNode != endPara.ParentNode)
-                throw new InvalidOperationException(
-                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-            // Chúng tôi muốn sao chép tất cả các đoạn từ đoạn đầu đến (và bao gồm) đoạn cuối,
-            // do đó nút mà chúng ta dừng lại là nút sau đoạn kết thúc.
-            Node endNode = endPara.NextSibling;
-
-            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-            {
-                //Điều này tạo ra một bản sao của nút hiện tại và nhập nó (làm cho nó hợp lệ) trong ngữ cảnh
-                // của tài liệu đích. Nhập có nghĩa là điều chỉnh kiểu và liệt kê số nhận dạng một cách chính xác.
-                Node newNode = importer.ImportNode(curNode, true);
-
-                dstNode.AppendChild(newNode);
-            }
-        }
-
-```
 ## Phần kết luận
 
-Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu cách sử dụng hàm Sao chép văn bản được đánh dấu từ Aspose.Words cho .NET. Chúng tôi đã làm theo hướng dẫn từng bước để sao chép nội dung của dấu trang từ tài liệu nguồn sang tài liệu khác.
+Và thế là xong! Bạn đã sao chép thành công văn bản được đánh dấu từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words for .NET. Phương pháp này rất mạnh mẽ để tự động hóa các tác vụ thao tác tài liệu, giúp quy trình làm việc của bạn hiệu quả và hợp lý hơn.
 
-### Câu hỏi thường gặp về sao chép văn bản đã đánh dấu trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Các yêu cầu để sử dụng tính năng "Sao chép văn bản có dấu trang" trong Aspose.Words cho .NET là gì?
+### Tôi có thể sao chép nhiều dấu trang cùng một lúc không?
+Có, bạn có thể lặp qua nhiều dấu trang và sử dụng cùng một phương pháp để sao chép từng dấu trang.
 
-Đáp: Để sử dụng tính năng "Sao chép văn bản có dấu trang" trong Aspose.Words cho .NET, bạn cần có kiến thức cơ bản về ngôn ngữ C#. Bạn cũng cần có môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+### Điều gì xảy ra nếu không tìm thấy dấu trang?
+ Các`Range.Bookmarks` tài sản sẽ trở lại`null`, vì vậy hãy đảm bảo bạn xử lý trường hợp này để tránh trường hợp ngoại lệ.
 
-#### Câu hỏi: Làm cách nào để tải tài liệu nguồn vào Aspose.Words cho .NET?
+### Tôi có thể giữ nguyên định dạng của dấu trang gốc không?
+ Tuyệt đối! sử dụng`ImportFormatMode.KeepSourceFormatting` đảm bảo rằng định dạng ban đầu được giữ nguyên.
 
- Trả lời: Để tải tài liệu nguồn trong Aspose.Words cho .NET, bạn có thể sử dụng`Document` lớp bằng cách chỉ định đường dẫn tệp của tài liệu. Đây là một mã mẫu:
+### Có giới hạn về kích thước của văn bản được đánh dấu không?
+Không có giới hạn cụ thể nhưng hiệu suất có thể khác nhau đối với các tài liệu cực lớn.
 
-```csharp
-Document srcDoc = new Document("path/to/your/document.docx");
-```
-
-#### Câu hỏi: Làm cách nào để lấy nội dung của một dấu trang cụ thể trong tài liệu nguồn bằng Aspose.Words cho .NET?
-
- Trả lời: Để lấy nội dung của một dấu trang cụ thể trong tài liệu nguồn bằng Aspose.Words cho .NET, bạn có thể truy cập vào`Bookmarks` thuộc tính của phạm vi tài liệu nguồn và sử dụng tên dấu trang để truy xuất dấu trang cụ thể. Đây là một mã mẫu:
-
-```csharp
-Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
-```
-
-#### Hỏi: Làm cách nào để chỉ định vị trí của bản sao văn bản đánh dấu trong tài liệu đích bằng Aspose.Words cho .NET?
-
- Trả lời: Để chỉ định nơi bạn muốn thêm văn bản đánh dấu đã sao chép trong tài liệu đích bằng Aspose.Words for .NET, bạn có thể điều hướng đến phần nội dung của phần cuối cùng của tài liệu đích. Bạn có thể dùng`LastSection` thuộc tính để truy cập phần cuối cùng và`Body` property để truy cập vào phần thân của phần đó. Đây là một mã mẫu:
-
-```csharp
-CompositeNode dstNode = dstDoc.LastSection.Body;
-```
-
-#### Câu hỏi: Làm cách nào để nhập và sao chép văn bản dấu trang từ tài liệu nguồn sang tài liệu đích bằng Aspose.Words cho .NET?
-
- Trả lời: Để nhập và sao chép văn bản đánh dấu từ tài liệu nguồn sang tài liệu đích bằng Aspose.Words cho .NET, bạn có thể sử dụng`NodeImporter` lớp chỉ định tài liệu nguồn, tài liệu đích và chế độ định dạng cần giữ. Sau đó bạn có thể sử dụng`AppendBookmarkedText` phương pháp thêm văn bản đánh dấu vào tài liệu đích. Đây là một mã mẫu:
-
-```csharp
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
-AppendBookmarkedText(import, srcBookmark, dstNode);
-```
-
-#### Hỏi: Làm cách nào để lưu tài liệu đích sau khi sao chép văn bản đánh dấu bằng Aspose.Words cho .NET?
-
-Đáp: Để lưu tài liệu đích sau khi sao chép văn bản từ dấu trang bằng Aspose.Words cho .NET, bạn có thể sử dụng`Save` phương pháp của`Document` đối tượng chỉ định đường dẫn tệp đích. Đây là một mã mẫu:
-
-```csharp
-dstDoc.Save("path/to/your/destination-document.docx");
-```
+### Tôi có thể sao chép văn bản giữa các định dạng tài liệu Word khác nhau không?
+Có, Aspose.Words hỗ trợ nhiều định dạng Word khác nhau và phương pháp này hoạt động trên các định dạng này.

@@ -1,6 +1,6 @@
 ---
-title: Zobrazit název dokumentu v záhlaví okna
-linktitle: Zobrazit název dokumentu v záhlaví okna
+title: Zobrazení názvu dokumentu v záhlaví okna
+linktitle: Zobrazení názvu dokumentu v záhlaví okna
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak zobrazit název dokumentu v záhlaví okna při převodu do PDF pomocí Aspose.Words for .NET.
 type: docs

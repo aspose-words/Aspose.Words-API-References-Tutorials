@@ -7,7 +7,7 @@ type: docs
 weight: 21
 url: /pl/java/using-document-elements/using-ole-objects-and-activex/
 ---
-tym samouczku omówimy, jak pracować z obiektami OLE (łączenie i osadzanie obiektów) oraz kontrolkami ActiveX w Aspose.Words dla Java. Obiekty OLE i kontrolki ActiveX to potężne narzędzia umożliwiające ulepszanie dokumentów poprzez osadzanie lub łączenie zawartości zewnętrznej, takiej jak arkusze kalkulacyjne, pliki multimedialne lub interaktywne kontrolki. Obserwuj, jak zagłębimy się w przykłady kodu i dowiemy się, jak efektywnie korzystać z tych funkcji.
+tym samouczku odkryjemy, jak pracować z obiektami OLE (łączenie i osadzanie obiektów) i kontrolkami ActiveX w Aspose.Words dla Java. Obiekty OLE i kontrolki ActiveX to potężne narzędzia umożliwiające ulepszanie dokumentów poprzez osadzanie lub łączenie zawartości zewnętrznej, takiej jak arkusze kalkulacyjne, pliki multimedialne lub interaktywne kontrolki. Obserwuj, jak zagłębimy się w przykłady kodu i dowiemy się, jak efektywnie korzystać z tych funkcji.
 
 ### Warunki wstępne
 

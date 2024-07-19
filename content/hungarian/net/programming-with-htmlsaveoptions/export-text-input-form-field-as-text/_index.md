@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Ez a kód létrehozza a`HtmlSaveOptions`és beállítja a`ExportTextInputFormFieldAsText` opciót`true` szövegbeviteli űrlapmezők egyszerű szövegként történő exportálásához. Ezenkívül meghatározza azt a mappát, ahová a kibontott képeket menti.
+ Ez a kód létrehozza a`HtmlSaveOptions` és beállítja a`ExportTextInputFormFieldAsText` opciót`true` szövegbeviteli űrlapmezők egyszerű szövegként történő exportálásához. Ezenkívül meghatározza azt a mappát, ahová a kibontott képeket menti.
 
 ## 4. lépés: A dokumentum konvertálása és mentése HTML formátumba
 

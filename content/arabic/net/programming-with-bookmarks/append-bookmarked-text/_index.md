@@ -2,120 +2,123 @@
 title: إلحاق نص مرجعي في مستند Word
 linktitle: إلحاق نص مرجعي في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إضافة نص من إشارة مرجعية في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إلحاق نص بإشارة مرجعية في مستند Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل التفصيلي خطوة بخطوة. مثالية للمطورين.
 type: docs
 weight: 10
 url: /ar/net/programming-with-bookmarks/append-bookmarked-text/
 ---
+## مقدمة
 
-في هذه المقالة، سوف نستكشف كود مصدر C# أعلاه لفهم كيفية استخدام وظيفة إلحاق نص مرجعي في Aspose.Words لمكتبة .NET. تتيح لك هذه الميزة إضافة النص الموجود في إشارة مرجعية محددة لمستند Word إلى مستند آخر.
+مرحبًا يا من هناك! هل سبق لك أن حاولت إلحاق نص من قسم ذي إشارة مرجعية في مستند Word ووجدت الأمر صعبًا؟ انت محظوظ! سيرشدك هذا البرنامج التعليمي خلال العملية باستخدام Aspose.Words for .NET. سنقوم بتقسيمها إلى خطوات بسيطة حتى تتمكن من المتابعة بسهولة. هيا بنا نتعمق ونضيف هذا النص الذي تم وضع إشارة مرجعية عليه مثل المحترفين!
 
 ## المتطلبات الأساسية
 
-- المعرفة الأساسية بلغة C#.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+قبل أن نبدأ، دعونا نتأكد من أن لديك كل ما تحتاجه:
 
-## الخطوة 1: الحصول على الفقرات من الإشارة المرجعية
+-  Aspose.Words for .NET: تأكد من تثبيته. إذا لم يكن الأمر كذلك، يمكنك[قم بتنزيله هنا](https://releases.aspose.com/words/net/).
+- بيئة التطوير: أي بيئة تطوير .NET مثل Visual Studio.
+- المعرفة الأساسية بـ C#: فهم مفاهيم برمجة C# الأساسية سيساعدك.
+- مستند Word مع الإشارات المرجعية: مستند Word يحتوي على إشارات مرجعية، وسنستخدمه لإلحاق نص منه.
 
- قبل أن نبدأ بإضافة نص الإشارة المرجعية، نحتاج إلى الحصول على الفقرات التي تحتوي على بداية ونهاية الإشارة المرجعية. ويمكن القيام بذلك عن طريق الوصول إلى`BookmarkStart` و`BookmarkEnd` خصائص المرجعية:
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، فلنستورد مساحات الأسماء الضرورية. سيضمن ذلك أن لدينا جميع الأدوات التي نحتاجها في متناول أيدينا.
 
 ```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+using System;
+using Aspose.Words;
+using Aspose.Words.Importing;
 ```
 
-## الخطوة 2: التحقق من الفقرات الأصل
+دعونا نقسم المثال إلى خطوات تفصيلية.
 
-نحن نتحقق مما إذا كانت فقرات البداية والنهاية لها أصول صالحة، أي إذا كانت تنتمي بالفعل إلى فقرة ما. إذا لم يكن الأمر كذلك، فإننا ننشئ استثناءً:
+## الخطوة 1: تحميل المستند وتهيئة المتغيرات
+
+حسنًا، لنبدأ بتحميل مستند Word الخاص بنا وتهيئة المتغيرات التي سنحتاجها.
 
 ```csharp
+// قم بتحميل المستندات المصدر والوجهة.
+Document srcDoc = new Document("source.docx");
+Document dstDoc = new Document("destination.docx");
+
+// تهيئة مستورد المستندات.
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+
+// ابحث عن الإشارة المرجعية في المستند المصدر.
+Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## الخطوة 2: تحديد فقرات البداية والنهاية
+
+الآن، دعونا نحدد الفقرات التي تبدأ فيها الإشارة المرجعية وتنتهي فيها. وهذا أمر بالغ الأهمية لأننا بحاجة إلى التعامل مع النص ضمن هذه الحدود.
+
+```csharp
+// هذه هي الفقرة التي تحتوي على بداية الإشارة المرجعية.
+Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+
+// هذه هي الفقرة التي تحتوي على نهاية الإشارة المرجعية.
+Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
 if (startPara == null || endPara == null)
-throw new InvalidOperationException(
-"The parent of the beginning or the end of the bookmark is not a paragrap
-
-hey, this situation can't be handled yet.");
+    throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## الخطوة 3: التحقق من آباء الفقرات
+## الخطوة 3: التحقق من صحة أصل الفقرة
 
-نتحقق مما إذا كانت فقرات البداية والنهاية لهما نفس الأصل. إذا لم يكن الأمر كذلك، فهذا يعني أن الفقرات غير موجودة في نفس القسم أو المستند، ونحن نطرح استثناءً:
+نحن بحاجة إلى التأكد من أن فقرات البداية والنهاية لها نفس الأصل. هذا سيناريو بسيط لإبقاء الأمور واضحة.
 
 ```csharp
+// نقتصر على سيناريو بسيط إلى حد معقول.
 if (startPara.ParentNode != endPara.ParentNode)
-throw new InvalidOperationException(
-"Beginning and ending paragraphs have different parents, this situation cannot be handled yet.");
+    throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## الخطوة 4: نسخ الفقرات
+## الخطوة 4: تحديد العقدة للتوقف
 
-نقوم بالتكرار عبر العقد (الفقرات) من فقرة البداية إلى فقرة النهاية. لكل عقدة، نقوم بإنشاء نسخة واستيرادها في سياق المستند الوجهة:
+بعد ذلك، نحتاج إلى تحديد العقدة التي سنتوقف عندها عن نسخ النص. ستكون هذه العقدة مباشرة بعد نهاية الفقرة.
 
 ```csharp
+// نريد نسخ جميع الفقرات من فقرة البداية حتى (بما في ذلك) الفقرة النهاية،
+// وبالتالي فإن العقدة التي نتوقف عندها هي واحدة بعد نهاية الفقرة.
 Node endNode = endPara.NextSibling;
+```
 
+## الخطوة 5: إلحاق نص ذو إشارة مرجعية بالمستند الوجهة
+
+أخيرًا، دعونا نتنقل عبر العقد من فقرة البداية إلى العقدة التي تلي الفقرة النهاية، ونلحقها بالمستند الوجهة.
+
+```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-Node newNode = importer.ImportNode(curNode, true);
+    // يؤدي هذا إلى إنشاء نسخة من العقدة الحالية واستيرادها (مما يجعلها صالحة) في السياق
+    // من وثيقة الوجهة. الاستيراد يعني تعديل الأنماط ومعرفات القائمة بشكل صحيح.
+    Node newNode = importer.ImportNode(curNode, true);
 
-dstNode.AppendChild(newNode);
+    // قم بإلحاق العقدة المستوردة بالمستند الوجهة.
+    dstDoc.FirstSection.Body.AppendChild(newNode);
 }
-```
 
-### مثال على التعليمات البرمجية المصدر لإلحاق نص مرجعي باستخدام Aspose.Words لـ .NET
-
-فيما يلي المثال الكامل للتعليمة البرمجية المصدر لتوضيح إضافة نص من إشارة مرجعية باستخدام Aspose.Words لـ .NET:
-
-```csharp
-
-	// هذه هي الفقرة التي تحتوي على بداية الإشارة المرجعية.
-	Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-	// هذه هي الفقرة التي تحتوي على نهاية الإشارة المرجعية.
-	Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-	if (startPara == null || endPara == null)
-		throw new InvalidOperationException(
-			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-	// نقتصر على سيناريو بسيط إلى حد معقول.
-	if (startPara.ParentNode != endPara.ParentNode)
-		throw new InvalidOperationException(
-			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-	// نريد نسخ جميع الفقرات من فقرة البداية حتى (بما في ذلك) الفقرة النهاية،
-	// وبالتالي فإن العقدة التي نتوقف عندها هي واحدة بعد نهاية الفقرة.
-	Node endNode = endPara.NextSibling;
-
-	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-	{
-		//يؤدي هذا إلى إنشاء نسخة من العقدة الحالية واستيرادها (مما يجعلها صالحة) في السياق
-		// من وثيقة الوجهة. الاستيراد يعني تعديل الأنماط ومعرفات القائمة بشكل صحيح.
-		Node newNode = importer.ImportNode(curNode, true);
-
-		dstNode.AppendChild(newNode);
-	}
-
+// احفظ المستند الوجهة بالنص الملحق.
+dstDoc.Save("appended_document.docx");
 ```
 
 ## خاتمة
 
-في هذه المقالة، قمنا باستكشاف التعليمات البرمجية المصدر لـ C# لفهم كيفية استخدام وظيفة إلحاق نص مرجعي في Aspose.Words لـ .NET. لقد اتبعنا دليلاً خطوة بخطوة للحصول على فقرات من إشارة مرجعية، والتحقق من الأصول، ونسخ الفقرات إلى مستند آخر.
+وهناك لديك! لقد نجحت في إلحاق نص من قسم ذي إشارة مرجعية في مستند Word باستخدام Aspose.Words لـ .NET. هذه الأداة القوية تجعل معالجة المستندات أمرًا سهلاً، والآن لديك خدعة أخرى في جعبتك. ترميز سعيد!
 
-### الأسئلة الشائعة لإلحاق نص بإشارة مرجعية في مستند Word
+## الأسئلة الشائعة
 
-#### س1: ما هي المتطلبات الأساسية لاستخدام ميزة "إضافة نص مع الإشارات المرجعية" في Aspose.Words لـ .NET؟
+### هل يمكنني إلحاق نص من إشارات مرجعية متعددة دفعة واحدة؟
+نعم، يمكنك تكرار العملية لكل إشارة مرجعية وإلحاق النص وفقًا لذلك.
 
-ج: لاستخدام وظيفة "إضافة نص مع إشارات مرجعية" في Aspose.Words لـ .NET، يجب أن تكون لديك معرفة أساسية بلغة C#. تحتاج أيضًا إلى بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+### ماذا لو كانت فقرات البداية والنهاية لهما آباء مختلفين؟
+يفترض المثال الحالي أن لديهم نفس الوالد. بالنسبة للآباء المختلفين، هناك حاجة إلى معالجة أكثر تعقيدًا.
 
-#### س2: كيفية الحصول على الفقرات التي تحتوي على بداية ونهاية الإشارة المرجعية في مستند Word؟
+### هل يمكنني الاحتفاظ بالتنسيق الأصلي للنص الملحق؟
+ قطعاً! ال`ImportFormatMode.KeepSourceFormatting` يضمن الحفاظ على التنسيق الأصلي.
 
-ج: للحصول على الفقرات التي تحتوي على بداية ونهاية الإشارة المرجعية في مستند Word، يمكنك الوصول إلى`BookmarkStart` و`BookmarkEnd` خصائص المرجعية. هنا نموذج التعليمات البرمجية:
+### هل من الممكن إلحاق نص بموضع معين في المستند الوجهة؟
+نعم، يمكنك إلحاق النص بأي موضع عن طريق الانتقال إلى العقدة المطلوبة في المستند الوجهة.
 
-```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-```
-
-#### س3: ماذا يحدث إذا لم يكن لفقرات البداية والنهاية أصول صحيحة؟
-
-ج: إذا لم يكن لفقرات البداية والنهاية أصول صحيحة، أي أنها ليست فقرات حقيقية، فسيتم طرح استثناء. لا يمكن إدارة هذا الوضع في هذا الوقت.
+### ماذا لو كنت بحاجة إلى إلحاق نص من إشارة مرجعية بقسم جديد؟
+يمكنك إنشاء قسم جديد في المستند الوجهة وإلحاق النص هناك.

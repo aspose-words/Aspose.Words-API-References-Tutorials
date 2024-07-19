@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### P: Jak dostosować wygląd pola TOA wstawionego w dokumencie Word za pomocą Aspose.Words dla .NET?
 
-Odp.: Możesz dostosować wygląd wstawionego pola TOA, korzystając z właściwości pliku`FieldTOA` obiekt, aby określić opcje formatowania.
+ Odp.: Możesz dostosować wygląd wstawionego pola TOA, korzystając z właściwości pliku`FieldTOA` obiekt, aby określić opcje formatowania.
 
 #### P: Czy mogę dodać wiele pól TOA w jednym dokumencie programu Word przy użyciu Aspose.Words dla .NET?
 

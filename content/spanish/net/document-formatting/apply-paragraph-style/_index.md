@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
  Aquí hemos creado un nuevo`Document` objeto y un`DocumentBuilder` objeto para ayudarnos a construir nuestro documento.
 
-## Paso 3: aplicar estilo de párrafo
+## Paso 3: Aplicar estilo de párrafo
 
 ¡Aquí es donde ocurre la magia! Vamos a aplicar un estilo de párrafo a nuestro documento.
 

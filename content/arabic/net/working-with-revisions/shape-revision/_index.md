@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### س: كيف يمكنني التحقق من مراجعات إزاحة الأشكال في مستند Aspose.Words for .NET؟
 
- ج: للتحقق من مراجعات إزاحة الشكل في مستند Aspose.Words for .NET، يمكنك تحميل مستند موجود يحتوي على مراجعات إزاحة الشكل. ثم يمكنك الوصول إلى كل شكل`IsMoveFromRevision` و`IsMoveToRevision` خصائص لتحديد ما إذا كان يتم نقله وإذا كان الأمر كذلك، من أين وإلى أين:
+ ج: للتحقق من مراجعات إزاحة الشكل في مستند Aspose.Words for .NET، يمكنك تحميل مستند موجود يحتوي على مراجعات إزاحة الشكل. ثم يمكنك الوصول إلى كل شكل`IsMoveFromRevision`و`IsMoveToRevision` خصائص لتحديد ما إذا كان يتم نقله وإذا كان الأمر كذلك، من أين وإلى أين:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

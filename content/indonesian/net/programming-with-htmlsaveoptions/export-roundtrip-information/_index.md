@@ -33,7 +33,7 @@ Sekarang kita akan mengonfigurasi opsi penyimpanan HTML untuk mengekspor informa
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Kode ini membuat sebuah instance dari`HtmlSaveOptions`dan mengatur`ExportRoundtripInformation` pilihan untuk`true` untuk memasukkan informasi pulang pergi saat mengekspor.
+ Kode ini membuat sebuah instance dari`HtmlSaveOptions` dan mengatur`ExportRoundtripInformation` pilihan untuk`true` untuk memasukkan informasi pulang pergi saat mengekspor.
 
 ## Langkah 4: Mengonversi dan menyimpan dokumen ke HTML
 

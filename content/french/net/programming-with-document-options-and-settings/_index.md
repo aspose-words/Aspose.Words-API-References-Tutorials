@@ -14,12 +14,12 @@ Les didacticiels expliquent comment personnaliser les options de chargement des 
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Optimiser pour Ms Word](./optimize-for-ms-word/) | Guide étape par étape pour optimiser un document pour MS Word avec Aspose.Words pour .NET. |
-| [Afficher les fautes de grammaire et d'orthographe](./show-grammatical-and-spelling-errors/) | Guide étape par étape pour activer l'affichage des erreurs grammaticales et orthographiques dans un document avec Aspose.Words pour .NET. |
-| [Nettoyer les styles et les listes inutilisés](./cleanup-unused-styles-and-lists/) | Guide étape par étape pour nettoyer les styles et les listes inutilisés dans un document avec Aspose.Words for .NET. |
-| [Nettoyer le style en double](./cleanup-duplicate-style/) | Guide étape par étape pour nettoyer les styles en double dans un document à l’aide d’Aspose.Words for .NET. Code source complet inclus. |
-| [Afficher les options](./view-options/) | Guide étape par étape pour configurer les options d'affichage des documents avec Aspose.Words for .NET. |
-| [Mise en page du document](./document-page-setup/) | Guide étape par étape pour configurer une mise en page de document avec Aspose.Words pour .NET. |
-| [Ajouter le japonais comme langues d'édition](./add-japanese-as-editing-languages/) | Guide étape par étape pour ajouter le japonais comme langue d'édition avec Aspose.Words pour .NET. |
-| [Définir le russe comme langue d'édition par défaut](./set-russian-as-default-editing-language/) | Guide étape par étape pour définir le russe comme langue d'édition par défaut d'un document avec Aspose.Words pour .NET. |
-| [Définir la mise en page et le formatage des sections](./set-page-setup-and-section-formatting/) | Guide étape par étape pour configurer la mise en page et le formatage des sections d'un document avec Aspose.Words pour .NET. |
+| [Optimiser pour Ms Word](./optimize-for-ms-word/) | Optimisez facilement les documents Word pour différentes versions de MS Word à l'aide d'Aspose.Words pour .NET avec ce guide étape par étape. |
+| [Afficher les fautes de grammaire et d'orthographe](./show-grammatical-and-spelling-errors/) | Apprenez à afficher les erreurs grammaticales et orthographiques dans les documents Word à l'aide d'Aspose.Words for .NET avec ce didacticiel complet. |
+| [Nettoyer les styles et les listes inutilisés](./cleanup-unused-styles-and-lists/) | Nettoyez vos documents Word avec Aspose.Words pour .NET en supprimant les styles et les listes inutilisés. Suivez ce guide étape par étape pour rationaliser vos documents sans effort. |
+| [Nettoyer le style en double](./cleanup-duplicate-style/) | Découvrez comment nettoyer les styles en double dans vos documents Word à l'aide d'Aspose.Words for .NET grâce à notre guide complet étape par étape. |
+| [Afficher les options](./view-options/) | Découvrez comment afficher les options dans les documents Word à l'aide d'Aspose.Words pour .NET. Ce guide couvre la définition des types d'affichage, l'ajustement des niveaux de zoom et l'enregistrement de votre document. |
+| [Mise en page du document](./document-page-setup/) | Configuration de la page du document principal avec Aspose.Words pour .NET en quelques étapes simples. Apprenez à charger, définir la mise en page, définir les caractères par ligne, les lignes par page et enregistrer votre document. |
+| [Ajouter le japonais comme langues d'édition](./add-japanese-as-editing-languages/) | Apprenez à ajouter le japonais comme langue d'édition dans vos documents à l'aide d'Aspose.Words for .NET avec ce guide détaillé étape par étape. |
+| [Définir le russe comme langue d'édition par défaut](./set-russian-as-default-editing-language/) | Découvrez comment définir le russe comme langue d'édition par défaut dans les documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour des instructions détaillées. |
+| [Définir la mise en page et le formatage des sections](./set-page-setup-and-section-formatting/) | Découvrez comment définir la mise en page et le formatage des sections dans les documents Word à l'aide d'Aspose.Words for .NET avec notre guide étape par étape. Améliorez la présentation de votre document sans effort. |

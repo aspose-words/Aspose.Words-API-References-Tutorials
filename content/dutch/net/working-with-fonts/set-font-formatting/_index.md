@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Stap 2: Maak het document en formatteer het
- Maak een exemplaar van de`Document` klasse en de`DocumentBuilder`klasse om het document te bouwen. Gebruik de`Font` eigendom van de`DocumentBuilder` om toegang te krijgen tot de opmaakeigenschappen van lettertypen.
+ Maak een exemplaar van de`Document` klasse en de`DocumentBuilder` klasse om het document te bouwen. Gebruik de`Font` eigendom van de`DocumentBuilder` om toegang te krijgen tot de opmaakeigenschappen van lettertypen.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## Stap 3: Sla het document op
- Gebruik de`Save` methode om het document op te slaan met de toegepaste lettertypeopmaak. Vervangen`"WorkingWithFonts.SetFontFormatting.docx"` met de gewenste bestandsnaam.
+ Gebruik de`Save`methode om het document op te slaan met de toegepaste lettertypeopmaak. Vervangen`"WorkingWithFonts.SetFontFormatting.docx"` met de gewenste bestandsnaam.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

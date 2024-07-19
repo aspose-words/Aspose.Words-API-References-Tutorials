@@ -2,48 +2,90 @@
 title: Ignorer les zones de texte
 linktitle: Ignorer les zones de texte
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment ajouter un document tout en ignorant le formatage de la zone de texte à l'aide d'Aspose.Words pour .NET.
+description: Fusionnez des documents Word avec Aspose.Words pour .NET, en garantissant que le formatage des zones de texte est préservé. Suivez ce guide étape par étape pour un traitement fluide des documents.
 type: docs
 weight: 10
 url: /fr/net/join-and-append-documents/ignore-text-boxes/
 ---
+## Introduction
 
-Ce didacticiel explique comment utiliser Aspose.Words for .NET pour ajouter un document tout en préservant la mise en forme des zones de texte. Le code source fourni montre comment configurer les options de format d'importation pour inclure des zones de texte pendant le processus d'ajout.
+Bienvenue dans ce didacticiel détaillé sur l'utilisation d'Aspose.Words pour .NET pour fusionner des documents Word en ignorant les zones de texte. Si vous souhaitez rationaliser le traitement de vos documents et vous assurer que le formatage des zones de texte est conservé, vous êtes au bon endroit. Plongeons dans ce guide étape par étape.
 
-## Étape 1 : Configurer le projet
+## Conditions préalables
 
-Assurez-vous que vous disposez des conditions préalables suivantes :
+Avant de commencer, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
--  Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger depuis[Aspose.Releases]https://releases.aspose.com/words/net/ ou utilisez le gestionnaire de packages NuGet pour l'installer.
-- Un chemin de répertoire de documents où se trouvent les documents source et de destination.
+1.  Aspose.Words pour .NET : téléchargez-le[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement .NET : Visual Studio ou tout autre IDE préféré.
+3. Connaissance de base de C# : Compréhension des concepts de programmation de base en C#.
 
-## Étape 2 : Ouvrir les documents source et destination
+## Importer des espaces de noms
 
- Ouvrez les documents source et destination à l'aide du`Document` constructeur de classe. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
+Pour commencer, vous devrez importer les espaces de noms nécessaires dans votre projet :
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Importing;
+```
 
+## Étape 1 : Configurez votre projet
+
+Tout d’abord, assurez-vous que votre projet est correctement configuré. Ouvrez votre IDE, créez un nouveau projet et installez la bibliothèque Aspose.Words pour .NET via NuGet Package Manager.
+
+### Comment installer Aspose.Words
+
+1. Ouvrez le gestionnaire de packages NuGet dans votre IDE.
+2. Recherchez « Aspose.Words ».
+3. Cliquez sur "Installer".
+
+## Étape 2 : Définir le répertoire des documents
+
+Ensuite, spécifiez le répertoire où se trouvent vos documents source et destination.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
+
+## Étape 3 : Charger les documents
+
+Maintenant, chargez les documents source et de destination dans votre projet.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Étape 3 : Configurer les options de format d'importation
+## Étape 4 : configurer les options d'importation
 
- Créez une instance du`ImportFormatOptions` classe et définir le`IgnoreTextBoxes`propriété à`false`. Cela garantit que les zones de texte sont incluses lors du processus d'ajout tout en préservant leur mise en forme.
+ Pour garantir que le formatage des zones de texte est conservé, définissez le`IgnoreTextBoxes` possibilité de`false`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## Étape 4 : Ajouter le contenu de la zone de texte
+## Étape 5 : initialiser l'importateur de nœuds
 
- Créer un`NodeImporter`objet et utilisez-le pour importer des nœuds de zone de texte du document source vers le document de destination. Parcourez chaque paragraphe du document source et importez-le dans le document de destination.
+ Initialisez le`NodeImporter` pour importer des nœuds du document source vers le document de destination.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+```
+
+## Étape 6 : Importer des paragraphes à partir du document source
+
+Récupérez tous les paragraphes de la première section du document source.
+
+```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
+```
+
+## Étape 7 : Ajouter les paragraphes importés au document de destination
+
+Parcourez chaque paragraphe et ajoutez-le au document de destination.
+
+```csharp
 foreach (Paragraph srcPara in srcParas)
 {
     Node importedNode = importer.ImportNode(srcPara, true);
@@ -51,33 +93,31 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Étape 5 : Enregistrez le document de destination
+## Étape 8 : Enregistrez le document fusionné
 
-Enfin, enregistrez le document de destination modifié à l'aide du`Save` méthode du`Document` objet.
+Enfin, enregistrez le document fusionné sous un nouveau nom pour éviter d'écraser les fichiers d'origine.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ```
 
-Ceci termine la mise en œuvre de l’ajout d’un document tout en préservant le formatage de la zone de texte à l’aide d’Aspose.Words pour .NET.
+## Conclusion
 
-### Exemple de code source pour ignorer les zones de texte à l'aide d'Aspose.Words pour .NET 
+Vous avez fusionné avec succès deux documents Word à l'aide d'Aspose.Words pour .NET tout en vous assurant que les zones de texte ne sont pas ignorées lors de l'importation. Ce processus est inestimable pour maintenir l’intégrité du formatage de vos documents. Que vous traitiez de rapports, de contrats ou de tout autre type de document, Aspose.Words for .NET rend le processus transparent.
 
-```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Conservez le formatage des zones de texte source lors de l’importation.
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, true);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
-```
+### Qu’est-ce qu’Aspose.Words pour .NET ?
+ Aspose.Words for .NET est une bibliothèque puissante permettant de créer, manipuler et convertir des documents Word dans des applications .NET.[Apprendre encore plus](https://reference.aspose.com/words/net/).
+
+### Puis-je essayer Aspose.Words pour .NET avant d’acheter ?
+ Oui, vous pouvez télécharger un essai gratuit[ici](https://releases.aspose.com/).
+
+### Comment puis-je obtenir une licence temporaire pour Aspose.Words for .NET ?
+ Vous pouvez obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
+
+### Où puis-je trouver une documentation plus détaillée ?
+ Vous pouvez trouver la documentation complète[ici](https://reference.aspose.com/words/net/).
+
+### Comment puis-je obtenir de l’assistance pour Aspose.Words pour .NET ?
+ Pour obtenir de l'aide, visitez les forums Aspose[ici](https://forum.aspose.com/c/words/8).

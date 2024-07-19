@@ -17,7 +17,7 @@ Ooit geprobeerd door het labyrint van een Word-document te navigeren, om vervolg
 Voordat we ingaan op de code, moeten we ervoor zorgen dat u over alle benodigde tools beschikt:
 
 - Visual Studio: Zorg ervoor dat u het hebt geïnstalleerd. Als dit niet het geval is, downloadt en installeert u het vanaf de Microsoft-website.
--  Aspose.Words voor .NET: Als je het nog niet hebt, pak dan de nieuwste versie[hier](https://releases.aspose.com/words/net/).
+- Aspose.Words voor .NET: Als je het nog niet hebt, pak dan de nieuwste versie[hier](https://releases.aspose.com/words/net/).
 - Een voorbeeld van een Word-document: dit zou scheidingstekens voor alineastijlen moeten bevatten waarmee we kunnen werken. U kunt er een maken of een bestaand document gebruiken.
 
 ## Naamruimten importeren

@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Paragraphs.docx");
 ```
 
-## 步骤 3：配置保存为 PDF 选项
+## 步骤 3：配置另存为 PDF 选项
 
 为了导出文档结构，并在编辑 PDF 文件时使该结构在 Adobe Acrobat Pro 的“内容”导航窗格中可见，我们需要配置`PdfSaveOptions`对象与`ExportDocumentStructure`属性设置为`true`.
 

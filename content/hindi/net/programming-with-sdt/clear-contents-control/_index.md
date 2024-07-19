@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## चरण 2: दस्तावेज़ लोड करें और StructuredDocumentTag प्राप्त करें
- Word दस्तावेज़ को लोड करने के लिए निम्न का उपयोग करें:`Document` कंस्ट्रक्टर, दस्तावेज़ के पथ को पैरामीटर के रूप में पास करता है। फिर, वांछित प्राप्त करें`StructuredDocumentTag` दस्तावेज़ से। इस उदाहरण में, हम मानते हैं कि SDT दस्तावेज़ में पहला चाइल्ड नोड है।
+ Word दस्तावेज़ को लोड करने के लिए निम्न का उपयोग करें:`Document` कंस्ट्रक्टर, दस्तावेज़ के पथ को पैरामीटर के रूप में पास करता है। फिर, वांछित प्राप्त करें`StructuredDocumentTag`दस्तावेज़ से। इस उदाहरण में, हम मानते हैं कि SDT दस्तावेज़ में पहला चाइल्ड नोड है।
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## चरण 4: दस्तावेज़ सहेजें
- संशोधित दस्तावेज़ को सहेजें`Save`विधि। उचित फ़ाइल एक्सटेंशन के साथ वांछित फ़ाइल नाम प्रदान करें। इस उदाहरण में, हम दस्तावेज़ को "WorkingWithSdt.ClearContentsControl.doc" के रूप में सहेजते हैं।
+ संशोधित दस्तावेज़ को सहेजें`Save` विधि। उचित फ़ाइल एक्सटेंशन के साथ वांछित फ़ाइल नाम प्रदान करें। इस उदाहरण में, हम दस्तावेज़ को "WorkingWithSdt.ClearContentsControl.doc" के रूप में सहेजते हैं।
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

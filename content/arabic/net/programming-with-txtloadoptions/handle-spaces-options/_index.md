@@ -8,7 +8,7 @@ weight: 10
 url: /ar/net/programming-with-txtloadoptions/handle-spaces-options/
 ---
 
-في هذا البرنامج التعليمي، سنستكشف كود مصدر C# المقدم لوظيفة "إدارة المساحات باستخدام خيارات تحميل TXT" مع Aspose.Words لـ .NET. تتيح لك هذه الميزة تحديد سلوك التعامل مع المسافات البيضاء عند تحميل مستند TXT.
+في هذا البرنامج التعليمي، سنستكشف كود مصدر C# المقدم لوظيفة "إدارة المساحات باستخدام خيارات تحميل TXT" مع Aspose.Words for .NET. تتيح لك هذه الميزة تحديد سلوك التعامل مع المسافات البيضاء عند تحميل مستند TXT.
 
 ## الخطوة 1: تهيئة البيئة
 
@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- في هذه الخطوة، نقوم بتكوين الخيارات لتحميل مستند TXT. نحن نخلق جديدا`TxtLoadOptions` الكائن وتعيين`LeadingSpacesOptions` و`TrailingSpacesOptions` خصائص ل`TxtLeadingSpacesOptions.Trim` و`TxtTrailingSpacesOptions.Trim` على التوالى. هذا يخبر Aspose.Words بإزالة المسافات البادئة والزائدة من الأسطر عند تحميل المستند.
+ في هذه الخطوة، نقوم بتكوين الخيارات لتحميل مستند TXT. نحن نخلق جديدا`TxtLoadOptions` الكائن وتعيين`LeadingSpacesOptions`و`TrailingSpacesOptions` خصائص ل`TxtLeadingSpacesOptions.Trim`و`TxtTrailingSpacesOptions.Trim` على التوالى. هذا يخبر Aspose.Words بإزالة المسافات البادئة والزائدة من الأسطر عند تحميل المستند.
 
 ## الخطوة 4: تحميل الوثيقة
 
@@ -96,4 +96,4 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx")
 
 باستخدام Aspose.Words for .NET، يمكنك بسهولة التعامل مع المسافات البيضاء في مستنداتك، مما يؤدي إلى تحسين جودة التخطيط وسهولة قراءة المحتوى.
 
-لذا، لا تتردد في دمج إدارة المسافات البيضاء مع خيارات تحميل TXT في مشاريع Aspose.Words for .NET والاستفادة من مزاياها لإنشاء مستندات جيدة التنسيق وسهلة القراءة.
+لذا، لا تتردد في دمج إدارة المسافات البيضاء مع خيارات تحميل TXT في مشروعات Aspose.Words for .NET والاستفادة من مزاياها لإنشاء مستندات جيدة التنسيق وسهلة القراءة.

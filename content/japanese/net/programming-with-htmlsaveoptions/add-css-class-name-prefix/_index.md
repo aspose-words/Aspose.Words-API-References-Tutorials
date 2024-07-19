@@ -67,6 +67,6 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ```
 
-正しいドキュメントパスを必ず指定してください。`dataDir`変数。
+必ず正しいドキュメントパスを指定してください。`dataDir`変数。
 
 Aspose.Words for .NET を使用してドキュメントを HTML に変換するときに CSS クラス名プレフィックスを追加する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドの手順に従って、変換された HTML ドキュメントの CSS クラス名をカスタマイズできます。

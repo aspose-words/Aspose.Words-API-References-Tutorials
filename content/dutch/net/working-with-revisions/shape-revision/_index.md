@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### Vraag: Hoe kan ik controleren op verplaatsingsrevisies van vormen in een Aspose.Words voor .NET-document?
 
- A: Om te controleren op revisies van vormverplaatsingen in een Aspose.Words voor .NET-document, kunt u een bestaand document laden dat revisies van vormverplaatsingen bevat. Vervolgens hebt u toegang tot de vormen van elke vorm`IsMoveFromRevision` En`IsMoveToRevision` eigenschappen om te bepalen of het wordt verplaatst en zo ja, van waar en naar waar:
+ A: Om te controleren op revisies van vormverplaatsingen in een Aspose.Words voor .NET-document, kunt u een bestaand document laden dat revisies van vormverplaatsingen bevat. Vervolgens hebt u toegang tot de vormen van elke vorm`IsMoveFromRevision`En`IsMoveToRevision` eigenschappen om te bepalen of het wordt verplaatst en zo ja, van waar en naar waar:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

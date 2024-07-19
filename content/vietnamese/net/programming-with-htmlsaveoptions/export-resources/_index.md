@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://example.com/resource"
 
  Mã này tạo ra một thể hiện của`HtmlSaveOptions` và đặt các tùy chọn sau:
 
-- `CssStyleSheetType` được đặt thành`CssStyleSheetType.External`để xuất biểu định kiểu CSS sang tệp bên ngoài.
+- `CssStyleSheetType` được đặt thành`CssStyleSheetType.External` để xuất biểu định kiểu CSS sang tệp bên ngoài.
 - `ExportFontResources` được đặt thành`true` để xuất tài nguyên phông chữ.
 - `ResourceFolder` chỉ định thư mục đích nơi tài nguyên sẽ được lưu.
-- `ResourceFolderAlias` chỉ định bí danh URL sẽ được sử dụng để truy cập tài nguyên.
+- `ResourceFolderAlias`chỉ định bí danh URL sẽ được sử dụng để truy cập tài nguyên.
 
 ## Bước 4: Chuyển đổi và lưu tài liệu sang HTML
 

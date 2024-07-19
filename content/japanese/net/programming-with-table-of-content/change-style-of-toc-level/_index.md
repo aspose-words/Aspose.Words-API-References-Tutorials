@@ -71,7 +71,7 @@ A: Aspose.Words for .NET の「Word 文書の目次スタイルの変更」機�
 
 #### Q: Aspose.Words for .NET とは何ですか?
 
-A: Aspose.Words for .NET は、.NET アプリケーションで Word 文書を処理するために設計された強力なライブラリです。C# またはその他の .NET 言語を使用して、プログラムで Word 文書を作成、編集、操作、変換するための包括的な機能を提供します。
+A: Aspose.Words for .NET は、.NET アプリケーションで Word 文書を処理するために設計された強力なライブラリです。C# またはその他の .NET 言語を使用してプログラムで Word 文書を作成、編集、操作、変換するための包括的な機能を提供します。
 
 #### Q: Aspose.Words for .NET を使用して新しい Word 文書を作成するにはどうすればよいですか?
 
@@ -93,7 +93,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 このコードでは、`doc.Styles[StyleIdentifier.Toc1]`目次の最初のレベルのスタイルにアクセスし、`Font.Bold = true`そのスタイルの太字フォント スタイルを設定します。
 
-#### Q: Aspose.Words for .NET を使用して目次の複数レベルのスタイルを変更できますか?
+#### Q: Aspose.Words for .NET を使用して、目次の複数レベルのスタイルを変更できますか?
 
  A: はい、Aspose.Words for .NETを使用して、目次の複数のレベルのスタイルを変更できます。特定のレベルのスタイルを変更するには、`Styles`プロパティを選択し、各レベルに対して個別に必要な変更を加えます。
 

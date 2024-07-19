@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Als Nächstes müssen wir den Cursor zu einem bestimmten Absatz im Dokument bewegen, in den wir das Seriendruckfeld einfügen möchten.
 
 ```csharp
-// Bewegen Sie den Cursor zum Absatz.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Schritt 6: Fügen Sie das Seriendruckfeld ein

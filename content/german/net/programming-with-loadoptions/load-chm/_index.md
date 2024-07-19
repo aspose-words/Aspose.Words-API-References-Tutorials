@@ -54,7 +54,7 @@ In dieser Anleitung haben wir erklärt, wie man eine CHM-Datei mit der Aspose.Wo
 
 #### F: Was sind CHM-Dateien und warum werden sie verwendet?
 
-A: CHM-Dateien, kurz für Compiled HTML Help Files, sind ein Hilfedateiformat, das häufig zur Bereitstellung von Dokumentation und Hilfe für Softwareanwendungen verwendet wird. Sie werden oft verwendet, um Benutzern kontextsensitive Hilfe und Unterstützung zu bieten.
+A: CHM-Dateien, kurz für Compiled HTML Help Files, sind ein Hilfedateiformat, das häufig verwendet wird, um Dokumentation und Hilfe für Softwareanwendungen bereitzustellen. Sie werden oft verwendet, um Benutzern kontextsensitive Hilfe und Unterstützung zu bieten.
 
 #### F: Wie verarbeitet Aspose.Words CHM-Dateien in einer C#-Anwendung?
 

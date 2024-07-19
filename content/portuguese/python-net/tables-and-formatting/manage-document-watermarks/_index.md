@@ -8,7 +8,7 @@ weight: 10
 url: /pt/python-net/tables-and-formatting/manage-document-watermarks/
 ---
 
-As marcas d'água servem como um elemento sutil, porém impactante, nos documentos, adicionando uma camada de profissionalismo e estética. Com Aspose.Words for Python, você pode criar e formatar facilmente marcas d’água para melhorar o apelo visual de seus documentos. Este tutorial irá guiá-lo através do processo passo a passo de adição de marcas d’água aos seus documentos usando a API Aspose.Words for Python.
+As marcas d'água servem como um elemento sutil, porém impactante, nos documentos, adicionando uma camada de profissionalismo e estética. Com Aspose.Words for Python, você pode criar e formatar facilmente marcas d'água para melhorar o apelo visual de seus documentos. Este tutorial irá guiá-lo através do processo passo a passo de adição de marcas d’água aos seus documentos usando a API Aspose.Words para Python.
 
 ## Introdução às marcas d'água em documentos
 
@@ -35,7 +35,7 @@ Para adicionar uma marca d'água de texto, siga estas etapas:
 
 1. Crie um objeto de marca d'água.
 2. Especifique o texto da marca d'água.
-3. Adicione a marca d’água ao documento.
+3. Adicione a marca d'água ao documento.
 
 ```python
 # Create a watermark object
@@ -48,7 +48,7 @@ watermark.text = "Confidential"
 doc.watermark = watermark
 ```
 
-## Personalizando a aparência da marca d’água do texto
+## Personalizando a aparência da marca d'água do texto
 
 Você pode personalizar a aparência da marca d'água do texto ajustando várias propriedades:
 

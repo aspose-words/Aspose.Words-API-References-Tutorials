@@ -62,7 +62,7 @@ C: Node.js'deki ana düğüm, bir XML belgesinin hiyerarşisindeki bir sonraki d
 
 #### S: Belirli bir düğümün üst düğümü nasıl alınır?
 
-C: Belirli bir düğümün üst düğümünü almak için`parentNode` düğümün özelliği. Bu özellik geçerli düğümün üst düğümünü döndürür.
+ C: Belirli bir düğümün üst düğümünü almak için`parentNode` düğümün özelliği. Bu özellik geçerli düğümün üst düğümünü döndürür.
 
 #### S: Bir düğümün üst düğümü olup olmadığı nasıl kontrol edilir?
 
@@ -70,7 +70,7 @@ C: Belirli bir düğümün üst düğümünü almak için`parentNode` düğümü
 
 #### S: Bir düğümün üst düğümünü değiştirebilir miyiz?
 
- C: Çoğu durumda, bir düğümün üst düğümü XML belgesinin yapısına göre belirlenir ve doğrudan değiştirilemez. Ancak belirli yöntemleri kullanarak bir düğümü başka bir düğüme taşıyabilirsiniz:`appendChild` veya`insertBefore`.
+C: Çoğu durumda, bir düğümün üst düğümü XML belgesinin yapısına göre belirlenir ve doğrudan değiştirilemez. Ancak belirli yöntemleri kullanarak bir düğümü başka bir düğüme taşıyabilirsiniz.`appendChild` veya`insertBefore`.
 
 #### S: Üst düğümlerin hiyerarşisine nasıl göz atılır?
 

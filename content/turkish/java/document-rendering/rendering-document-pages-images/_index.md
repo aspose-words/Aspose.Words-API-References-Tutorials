@@ -76,7 +76,7 @@ Kaydetme seçeneklerini ve dosya yollarını özel ihtiyaçlarınıza göre ayar
 
 ### Belgeleri farklı görüntü formatlarında nasıl oluşturabilirim?
 
- İstenilen formatı istenilen formatta belirterek belgeleri çeşitli görüntü formatlarında oluşturabilirsiniz.`ImageSaveOptions`. Desteklenen formatlar PNG, JPEG, BMP, TIFF ve daha fazlasını içerir.
+ İstenilen formatı istenilen formatta belirterek belgeleri çeşitli görüntü formatlarında oluşturabilirsiniz.`ImageSaveOptions`. Desteklenen formatlar arasında PNG, JPEG, BMP, TIFF ve daha fazlası bulunur.
 
 ### Aspose.Words for Java farklı belge formatlarıyla uyumlu mu?
 

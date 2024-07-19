@@ -22,7 +22,7 @@ url: /ar/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## إعداد Aspose.Words لـ Python
 
-للبدء، اتبع هذه الخطوات لإعداد Aspose.Words لـ Python:
+للبدء، اتبع الخطوات التالية لإعداد Aspose.Words لـ Python:
 
 1. قم بتنزيل مكتبة Aspose.Words for Python من الرابط المقدم.
 2.  قم بتثبيت المكتبة باستخدام مدير الحزم المناسب (على سبيل المثال،`pip`).

@@ -121,11 +121,11 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### Q: Aspose.Words でリスト レベルを指定するにはどうすればよいですか?
 
- A: Aspose.Wordsでリストレベルを指定するには、`List`クラスを作成し、番号付きリストを作成します。その後、`Paragraph.ListFormat.ListLevelNumber`プロパティを使用して、各リスト項目のレベルを指定します。このリストをドキュメントのセクションに関連付けることで、リスト項目が目的のレベルを持つようにすることができます。
+ A: Aspose.Wordsでリストレベルを指定するには、`List`クラスを作成し、番号付きリストを作成します。その後、`Paragraph.ListFormat.ListLevelNumber`各リスト項目のレベルを指定するプロパティ。このリストをドキュメントのセクションに関連付けることで、リスト項目が目的のレベルになるようにすることができます。
 
 #### Q: Aspose.Words のリスト項目の番号付け形式を変更することは可能ですか?
 
- A: はい、Aspose.Wordsのリスト項目の番号付け形式を変更することができます。`ListLevel`クラスはこれに関するいくつかのプロパティを提供します。`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`これらのプロパティを使用して、アラビア数字、ローマ数字、文字など、リスト項目の番号付け形式を設定できます。
+ A: はい、Aspose.Wordsのリスト項目の番号付け形式を変更することができます。`ListLevel`クラスは、これに関するいくつかのプロパティを提供します。`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`これらのプロパティを使用して、アラビア数字、ローマ数字、文字など、リスト項目の番号付け形式を設定できます。
 
 #### Q: Aspose.Words の番号付きリストに追加のレベルを追加できますか?
 

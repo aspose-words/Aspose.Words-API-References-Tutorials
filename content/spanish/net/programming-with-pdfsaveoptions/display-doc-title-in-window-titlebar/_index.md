@@ -56,7 +56,7 @@ Aquí está el código fuente completo para mostrar el título del documento en 
 	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
         
 ```
-Si sigue estos pasos, puede mostrar fácilmente el título del documento en la barra de título de la ventana al convertir a PDF con Aspose.Words para .NET.
+Siguiendo estos pasos, puede mostrar fácilmente el título del documento en la barra de título de la ventana al convertir a PDF con Aspose.Words para .NET.
 
 ### Preguntas frecuentes
 

@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Schritt 3: Greifen Sie auf die Tabelle zu und legen Sie Titel und Beschreibung fest
- Nun können Sie die Tabelle im Dokument über den`GetChild()` Methode und die`Table` Klasse. Als nächstes legen Sie den Tabellentitel und die Beschreibung mit den`Title` Und`Description` Eigenschaften.
+ Nun können Sie die Tabelle im Dokument über den`GetChild()` Methode und die`Table` Klasse. Als nächstes legen Sie den Tabellentitel und die Beschreibung mit den`Title`Und`Description` Eigenschaften.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

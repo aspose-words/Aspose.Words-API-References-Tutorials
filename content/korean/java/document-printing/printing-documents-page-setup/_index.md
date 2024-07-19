@@ -75,7 +75,7 @@ job.print();
 
 ### 내 문서의 용지 크기를 어떻게 변경할 수 있나요?
 
- 문서의 용지 크기를 변경하려면`setPageWidth` 그리고`setPageHeight` 방법`PageSetup` 클래스를 선택하고 원하는 차원을 포인트 단위로 지정합니다.
+ 문서의 용지 크기를 변경하려면`setPageWidth`그리고`setPageHeight` 방법`PageSetup` 클래스를 선택하고 원하는 차원을 포인트 단위로 지정합니다.
 
 ### 한 문서를 여러 장 인쇄할 수 있나요?
 

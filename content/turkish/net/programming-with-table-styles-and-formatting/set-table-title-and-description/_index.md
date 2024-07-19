@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3. Adım: Tabloya erişin ve başlığı ve açıklamayı ayarlayın
- Artık belgedeki tabloya aşağıdaki komutu kullanarak erişebilirsiniz:`GetChild()` yöntem ve`Table` sınıf. Daha sonra tablo başlığını ve açıklamasını kullanarak ayarlayın.`Title` Ve`Description` özellikler.
+ Artık belgedeki tabloya aşağıdaki komutu kullanarak erişebilirsiniz:`GetChild()` yöntem ve`Table` sınıf. Daha sonra tablo başlığını ve açıklamasını kullanarak ayarlayın.`Title`Ve`Description` özellikler.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

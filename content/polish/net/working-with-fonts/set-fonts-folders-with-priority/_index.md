@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
 
-W tym samouczku przeprowadzimy Cię krok po kroku przez proces ustawiania folderów czcionek z priorytetem podczas renderowania dokumentu za pomocą Aspose.Words dla .NET. Wyjaśnimy dołączony kod źródłowy C# i udostępnimy kompleksowy przewodnik, który pomoże Ci zrozumieć i wdrożyć tę funkcję we własnych projektach. Pod koniec tego samouczka będziesz wiedział, jak określić wiele folderów czcionek z niestandardowym priorytetem wyszukiwania podczas renderowania dokumentów przy użyciu Aspose.Words dla .NET.
+W tym samouczku przeprowadzimy Cię krok po kroku przez proces ustawiania folderów czcionek z priorytetem podczas renderowania dokumentu przy użyciu Aspose.Words dla .NET. Wyjaśnimy dołączony kod źródłowy C# i udostępnimy kompleksowy przewodnik, który pomoże Ci zrozumieć i wdrożyć tę funkcję we własnych projektach. Pod koniec tego samouczka będziesz wiedział, jak określić wiele folderów czcionek z niestandardowym priorytetem wyszukiwania podczas renderowania dokumentów przy użyciu Aspose.Words dla .NET.
 
 ## Krok 1: Zdefiniuj katalog dokumentów
 Najpierw musisz ustawić ścieżkę do katalogu dokumentów. Jest to lokalizacja, w której chcesz zapisać edytowany, wyrenderowany dokument. Zastąp „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką.
@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Ustaw priorytet folderów czcionek
- Następnie możesz ustawić priorytet folderów czcionek za pomocą`FontSettings` klasa i`SetFontsSources()`metoda. Można określić wiele źródeł czcionek, korzystając z instancji`SystemFontSource` I`FolderFontSource`. W tym przykładzie zdefiniowaliśmy dwa źródła czcionek: domyślne źródło czcionek systemowych i niestandardowy folder czcionek z priorytetem 1.
+ Następnie możesz ustawić priorytet folderów czcionek za pomocą`FontSettings` klasa i`SetFontsSources()`metoda. Można określić wiele źródeł czcionek, korzystając z instancji`SystemFontSource`I`FolderFontSource`. W tym przykładzie zdefiniowaliśmy dwa źródła czcionek: domyślne źródło czcionek systemowych i niestandardowy folder czcionek z priorytetem 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

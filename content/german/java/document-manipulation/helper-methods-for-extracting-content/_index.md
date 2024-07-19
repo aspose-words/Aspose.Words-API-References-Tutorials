@@ -58,7 +58,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     Node originalEndNode = endNode;
 
     //Extrahieren Sie Inhalte basierend auf Knoten auf Blockebene (Absätze und Tabellen). Durchsuchen Sie übergeordnete Knoten, um sie zu finden.
-    // Wir werden den Inhalt des ersten und letzten Knotens aufteilen, je nachdem, ob die Markierungsknoten inline sind.
+    // Wir werden den Inhalt des ersten und letzten Knotens aufteilen, je nachdem, ob die Markierungsknoten eingebettet sind.
     startNode = getAncestorInBody(startNode);
     endNode = getAncestorInBody(endNode);
     boolean isExtracting = true;

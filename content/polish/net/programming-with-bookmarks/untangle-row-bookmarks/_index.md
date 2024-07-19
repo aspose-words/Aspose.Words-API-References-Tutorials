@@ -2,134 +2,137 @@
 title: Rozplątaj zakładki wierszy w dokumencie programu Word
 linktitle: Rozplątaj zakładki wierszy w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak rozplątać zagnieżdżone zakładki wierszy w dokumencie programu Word, aby usunąć określone wiersze bez wpływu na inne zakładki.
+description: Z łatwością rozwiąż splątane zakładki w dokumentach Word, korzystając z Aspose.Words dla .NET. Ten przewodnik przeprowadzi Cię przez proces przejrzystego i bezpieczniejszego zarządzania zakładkami.
 type: docs
 weight: 10
 url: /pl/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
+## Wstęp
 
-tym artykule zbadamy powyższy kod źródłowy C#, aby zrozumieć, jak używać funkcji Rozplątuj zakładki wierszy w bibliotece Aspose.Words dla .NET. Funkcja ta umożliwia umieszczenie końców zakładek linii w jednej linii z początkami zakładek.
+Czy kiedykolwiek spotkałeś się z sytuacją, w której usunięcie wiersza w dokumencie programu Word za pomocą zakładki powoduje bałagan w innych zakładkach w sąsiednich wierszach? Może to być niezwykle frustrujące, szczególnie w przypadku złożonych tabel. Na szczęście Aspose.Words dla .NET oferuje potężne rozwiązanie: rozplątywanie zakładek wierszy. 
+
+Ten przewodnik przeprowadzi Cię przez proces rozplątywania zakładek wierszy w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Podzielimy kod na łatwe do zrozumienia kroki i wyjaśnimy cel każdej funkcji, umożliwiając Ci bezproblemowe radzenie sobie z irytującymi problemami z zakładkami.
 
 ## Warunki wstępne
 
-- Podstawowa znajomość języka C#.
-- Środowisko programistyczne .NET z zainstalowaną biblioteką Aspose.Words.
+Zanim zaczniesz nurkować, będziesz potrzebować kilku rzeczy:
 
-## Krok 1: Ładowanie dokumentu
+1.  Aspose.Words dla .NET: Ta komercyjna biblioteka zapewnia funkcje umożliwiające programową pracę z dokumentami programu Word. 2. Możesz pobrać bezpłatną wersję próbną ze strony[link do pobrania](https://releases.aspose.com/words/net/) lub kup licencję od[kupić](https://purchase.aspose.com/buy).
+3. Środowisko programistyczne AC#: Visual Studio lub dowolne inne IDE C# będzie działać idealnie.
+4. Dokument programu Word z zakładkami wierszy: w celach demonstracyjnych użyjemy przykładowego dokumentu o nazwie „Zakładki kolumn tabeli.docx”.
 
- Używamy`Document` klasa, aby załadować istniejący dokument z pliku:
+## Importuj przestrzenie nazw
+
+Pierwszy krok polega na zaimportowaniu niezbędnych przestrzeni nazw do projektu C#. Te przestrzenie nazw zapewniają dostęp do klas i funkcjonalności, których będziemy używać w Aspose.Words dla .NET:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using System;
+```
+
+## Krok 1: Załaduj dokument Word
+
+ Zaczynamy od załadowania dokumentu Word zawierającego zakładki ze splątanymi wierszami. The`Document` klasa obsługuje manipulację dokumentami w Aspose.Words. Oto jak załadować dokument:
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Zastąp lokalizacją dokumentu
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## Krok 2: Rozwikłaj zakładki liniowe
+ Pamiętaj o wymianie`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do pliku „Zakładki kolumn tabeli.docx”.
 
- Używamy`Untangle` funkcja rozplątywania zakładek z wierszy. Ta funkcja wykonuje niestandardowe zadanie polegające na umieszczeniu końcówek linii w tej samej linii, w której zaczyna się zakładka:
+## Krok 2: Rozplątaj zakładki w rzędach
 
-```csharp
-Untangle(doc);
-```
-
-## Krok 3: Usuń linię po zakładce
-
- Używamy`DeleteRowByBookmark` funkcja usuwania określonego wiersza według jego zakładki:
+ To tutaj dzieje się magia! The`Untangle` funkcja zajmuje się rozplątaniem zakładek wierszy. Rozłóżmy jego funkcjonalność:
 
 ```csharp
-DeleteRowByBookmark(doc, "ROW2");
+private void Untangle(Document doc)
+{
+   foreach (Bookmark bookmark in doc.Range.Bookmarks)
+   {
+	   // Pobierz wiersz nadrzędny zarówno zakładki, jak i końca zakładki
+	   Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
+	   Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+	   // Sprawdź, czy wiersze są prawidłowe i sąsiadują ze sobą
+	   if (row1 != null && row2 != null && row1.NextSibling == row2)
+		   //Przenieś koniec zakładki na ostatni akapit ostatniej komórki w górnym wierszu
+		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+   }
+}
 ```
 
-## Krok 4: Sprawdź integralność innych zakładek
+Oto wyjaśnienie krok po kroku działania kodu:
 
-Sprawdzamy, czy pozostałe zakładki nie zostały uszkodzone, sprawdzając, czy końcówka zakładki jest nadal obecna:
+ Iterujemy po wszystkich zakładkach w dokumencie za pomocą a`foreach` pętla.
+Dla każdej zakładki pobieramy wiersz nadrzędny początku zakładki (`bookmark.BookmarkStart`) i koniec zakładki (`bookmark.BookmarkEnd` ) używając`GetAncestor` metoda.
+Następnie sprawdzamy, czy znaleziono oba wiersze (`row1 != null`I`row2 != null`) i jeśli są sąsiadującymi rzędami (`row1.NextSibling == row2`). Dzięki temu modyfikujemy tylko zakładki rozciągające się na sąsiednie wiersze.
+Jeżeli warunki są spełnione przesuwamy węzeł końcowy zakładki na koniec ostatniego akapitu w ostatniej komórce górnego wiersza (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) skutecznie je rozplątując.
+
+## Krok 3: Usuń wiersz według zakładki
+
+ Teraz, gdy zakładki są już rozplątane, możemy bezpiecznie usuwać wiersze, używając ich nazw zakładek. The`DeleteRowByBookmark` funkcja obsługuje to zadanie:
+
+```csharp
+private void DeleteRowByBookmark(Document doc, string bookmarkName)
+{
+   Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+   Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+   row?.Remove();
+}
+```
+
+Oto podział tej funkcji:
+
+Bierzemy nazwę zakładki (`bookmarkName`) jako dane wejściowe.
+ Pobieramy odpowiedni obiekt zakładki za pomocą`doc.Range.Bookmarks[bookmarkName]`.
+Następnie otrzymujemy wiersz nadrzędny zakładki, który zaczyna być używany`GetAncestor` (podobny do`Untangle` funkcjonować).
+Na koniec sprawdzamy, czy zakładka i wiersz istnieją (`bookmark != null` I
+
+## Krok 4: Sprawdź rozplątanie
+
+ Podczas`Untangle` powinna zapewniać bezpieczeństwo innych zakładek, zawsze warto to sprawdzić. Oto jak możemy sprawdzić, czy proces rozplątywania nie spowodował przypadkowego usunięcia końcówki kolejnej zakładki:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-throw new Exception("Wrong, the end of the bookmark was deleted.");
+   throw new Exception("Wrong, the end of the bookmark was deleted.");
+```
 
+Ten fragment kodu sprawdza, czy koniec zakładki o nazwie „ROW1” nadal istnieje po usunięciu wiersza z zakładką „ROW2”. Jeśli ma wartość null, zgłaszany jest wyjątek, wskazując problem z procesem rozplątywania. 
+
+## Krok 5: Zapisz dokument
+
+ Na koniec, po rozplątaniu zakładek i ewentualnym usunięciu wierszy, zapisz zmodyfikowany dokument za pomocą`Save` metoda:
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Przykładowy kod źródłowy dla zakładek Untangle Row przy użyciu Aspose.Words dla .NET
+Spowoduje to zapisanie dokumentu z rozplątanymi zakładkami i wszystkimi usuniętymi wierszami pod nową nazwą pliku „WorkingWithBookmarks.UntangleRowBookmarks.docx”. 
 
-Oto pełny przykładowy kod źródłowy umożliwiający rozplątanie zakładek z linii za pomocą Aspose.Words dla .NET:
-
-
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Table column bookmarks.docx");
-
-	//Wykonuje niestandardowe zadanie polegające na umieszczeniu końców zakładek wiersza w tym samym wierszu, w którym rozpoczyna się zakładka.
-	Untangle(doc);
-
-	// Teraz możemy łatwo usuwać wiersze według zakładek, nie uszkadzając zakładek innych wierszy.
-	DeleteRowByBookmark(doc, "ROW2");
-
-	// Ma to na celu jedynie sprawdzenie, czy druga zakładka nie została uszkodzona.
-	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-		throw new Exception("Wrong, the end of the bookmark was deleted.");
-
-	doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
-
-```
-
-#### Rozwikłaj kod źródłowy
-```csharp
-
-private void Untangle(Document doc)
-        {
-            foreach (Bookmark bookmark in doc.Range.Bookmarks)
-            {
-                // Pobierz wiersz nadrzędny zarówno zakładki, jak i węzła końcowego zakładki.
-                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-                // Jeśli oba wiersze zostaną znalezione prawidłowo, a początek i koniec zakładki znajdują się w sąsiednich wierszach,
-                // przesuń węzeł końcowy zakładki na koniec ostatniego akapitu w ostatniej komórce górnego wiersza.
-                if (row1 != null && row2 != null && row1.NextSibling == row2)
-                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-            }
-        }
-
-```
-
-#### Kod źródłowy DeleteRowByBookmark
-```csharp
-
- private void DeleteRowByBookmark(Document doc, string bookmarkName)
-        {
-            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
-
-            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
-            row?.Remove();
-        }
-
-```
 ## Wniosek
 
-W tym artykule zbadaliśmy kod źródłowy C#, aby zrozumieć, jak korzystać z funkcji Rozplątuj zakładki wierszy w Aspose.Words dla .NET. Postępowaliśmy zgodnie z przewodnikiem krok po kroku, jak rozplątać zakładki wierszy i usunąć określony wiersz bez uszkodzenia innych zakładek.
+ Wykonując poniższe kroki i korzystając z`Untangle`funkcji, możesz skutecznie rozplątać zakładki wierszy w dokumentach Word za pomocą Aspose.Words dla .NET. Dzięki temu usuwanie wierszy według zakładek nie spowoduje niezamierzonych konsekwencji w przypadku innych zakładek w sąsiednich wierszach. Pamiętaj o zastąpieniu symboli zastępczych, takich jak`"YOUR DOCUMENT DIRECTORY"` z rzeczywistymi ścieżkami i nazwami plików.
 
-### Często zadawane pytania dotyczące rozplątywania zakładek wierszy w dokumencie programu Word
+## Często zadawane pytania
 
-#### P: Czy rozszyfrowanie zakładek wierszy działa tylko z zakładkami wierszy w tabelach?
+### Czy Aspose.Words dla .NET jest darmowy?
 
-O: Tak, funkcja Rozplątuj zakładki wierszy została specjalnie zaprojektowana do rozplątywania zakładek wierszy znajdujących się w tabelach. Tej funkcji można używać do przetwarzania zakładek linii w tablicach i zapewniania, że końce zakładek znajdują się w tej samej linii, co początki zakładek.
+ Aspose.Words dla .NET to biblioteka komercyjna z bezpłatną wersją próbną. Można go pobrać z[link do pobrania](https://releases.aspose.com/words/net/).
 
-#### P: Czy funkcja Rozszyfruj zakładki linii modyfikuje zawartość oryginalnego dokumentu?
+### Czy mogę ręcznie rozplątać zakładki wierszy w programie Word?
 
-O: Tak, funkcja Rozszyfruj zakładki linii modyfikuje oryginalny dokument, przesuwając końce zakładek linii, aby umieścić je w tej samej linii, co początki zakładek. Przed zastosowaniem tej funkcji pamiętaj o zapisaniu kopii zapasowej dokumentu.
+Ręczne rozplątywanie zakładek w programie Word może być uciążliwe i podatne na błędy, choć jest to technicznie możliwe. Aspose.Words dla .NET automatyzuje ten proces, oszczędzając czas i wysiłek.
 
-#### P: Jak mogę zidentyfikować zakładki liniowe w dokumencie programu Word?
+###  Co się stanie, jeśli`Untangle` function encounters an error?
 
-Odp.: Zakładki wierszy są zwykle używane w tabelach do oznaczania określonych sekcji. Zakładki wierszy można zidentyfikować, przeglądając zakładki w dokumencie i sprawdzając, czy zakładki znajdują się w wierszach tabeli.
+Kod zawiera procedurę obsługi wyjątków, która zgłasza wyjątek, jeśli proces rozplątywania przypadkowo usunie koniec innej zakładki. Możesz dostosować tę obsługę błędów do swoich konkretnych potrzeb.
 
-#### P: Czy można rozplątać zakładki wierszy w tabelach, które nie sąsiadują ze sobą?
+### Czy mogę użyć tego kodu do rozplątania zakładek w niesąsiadujących wierszach?
 
-O: Funkcja Rozwikłaj zakładki wierszy przedstawiona w tym artykule ma na celu rozplątanie zakładek wierszy w sąsiednich tabelach. Aby rozdzielić zakładki wierszy w niesąsiadujących ze sobą tabelach, mogą być wymagane dodatkowe poprawki w kodzie, w zależności od struktury dokumentu.
+Obecnie kod koncentruje się na rozplątywaniu zakładek rozciągających się na sąsiednie wiersze. Modyfikowanie kodu w celu obsługi nieprzylegających wierszy wymagałoby dodatkowej logiki w celu zidentyfikowania i obsługi tych scenariuszy.
 
-#### P: Jakie inne manipulacje mogę wykonać na zakładkach wierszy po ich rozwikłaniu?
+### Czy istnieją jakieś ograniczenia w stosowaniu tej metody?
 
-Odp.: Po rozwikłaniu zakładek linii możesz w razie potrzeby wykonać różne manipulacje. Może to obejmować edycję, usuwanie lub dodawanie treści do zakładek. Z zakładkami liniowymi należy obchodzić się ostrożnie, aby uniknąć niepożądanego wpływu na resztę dokumentu.
+Podejście to zakłada, że zakładki są dobrze zdefiniowane w komórkach tabeli. Jeśli zakładki zostaną umieszczone poza komórkami lub w nieoczekiwanych lokalizacjach, proces rozplątywania może nie działać zgodnie z oczekiwaniami.

@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Lakukan sesuatu dengan kode dan hasil bidang.
+     //Lakukan sesuatu dengan kode dan hasil bidang.
 }
 ```
 
@@ -73,7 +73,7 @@ Ini menyimpulkan panduan kami tentang penggunaan fitur "Dapatkan Kode Bidang" de
 
 #### T: Bagaimana cara memperbarui bidang dalam dokumen menggunakan Aspose.Words untuk .NET?
 
- J: Untuk memperbarui bidang dokumen menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document.UpdateFields`metode. Ini akan memperbarui semua bidang yang ada dalam dokumen, seperti bidang gabungan, bidang tanggal, dll.
+ J: Untuk memperbarui bidang dokumen menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document.UpdateFields` metode. Ini akan memperbarui semua bidang yang ada dalam dokumen, seperti bidang gabungan, bidang tanggal, dll.
 
 #### T: Bagaimana cara mengambil nilai bidang tertentu di Aspose.Words untuk .NET?
 

@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- In deze stap voegen we samen`Document1.docx` En`Document2.docx` naar een nieuw bestand genaamd`MergedDocument.docx`.
+ In deze stap voegen we samen`Document1.docx`En`Document2.docx` naar een nieuw bestand genaamd`MergedDocument.docx`.
 
 ## Stap 3: Samenvoegen met opslagopties
 
@@ -74,11 +74,11 @@ Als u documenten moet samenvoegen en het resultaat als PDF moet opslaan, maakt A
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Hier fuseren we`Document1.docx` En`Document2.docx` en sla het resultaat op als PDF-bestand.
+ Hier fuseren we`Document1.docx`En`Document2.docx` en sla het resultaat op als PDF-bestand.
 
 ## Stap 5: Een documentinstantie maken op basis van samengevoegde documenten
 
-Soms wilt u misschien verder met het samengevoegde document werken voordat u het opslaat. U kunt een`Document` exemplaar uit samengevoegde documenten:
+Soms wilt u mogelijk verder met het samengevoegde document werken voordat u het opslaat. U kunt een`Document` exemplaar uit samengevoegde documenten:
 
 ```csharp
 Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);
@@ -103,7 +103,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
 
 ### 3. Hoe ga ik om met verschillende opmaak tijdens het samenvoegen?
 
- Aspose.Words biedt verschillende samenvoegformaten, zoals`KeepSourceFormatting` En`MergeFormatting` . Verwijs naar de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
+ Aspose.Words biedt verschillende samenvoegformaten, zoals`KeepSourceFormatting`En`MergeFormatting` . Verwijs naar de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
 
 ### 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 

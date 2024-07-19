@@ -16,11 +16,11 @@ Hướng dẫn bảo vệ tài liệu Aspose.Words for .NET hướng dẫn bạn
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Bảo vệ mật khẩu trong tài liệu Word](./password-protection/) | Tìm hiểu cách bảo vệ mật khẩu trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Chỉ cho phép bảo vệ các trường biểu mẫu trong tài liệu Word](./allow-only-form-fields-protect/) | Tìm hiểu cách sử dụng Aspose.Words cho .NET để bảo vệ trong tài liệu word và chỉ cho phép chỉnh sửa các trường biểu mẫu. |
-| [Loại bỏ bảo vệ tài liệu trong tài liệu Word](./remove-document-protection/) | Tìm hiểu cách loại bỏ tính năng bảo vệ trong tài liệu Word bằng Aspose.Words dành cho .NET. |
-| [Các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word](./unrestricted-editable-regions/) | Tìm hiểu cách tạo các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Phần không hạn chế trong tài liệu Word](./unrestricted-section/) | Tìm hiểu cách xác định các phần không bị hạn chế trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Nhận loại bảo vệ trong tài liệu Word](./get-protection-type/) | Tìm hiểu cách sử dụng chức năng Nhận loại bảo vệ trong tài liệu word của Aspose.Words cho .NET để xác định loại bảo vệ của tài liệu. |
-| [Bảo vệ chỉ đọc trong tài liệu Word](./read-only-protection/) | Tìm hiểu cách bảo vệ tài liệu Word chỉ đọc của bạn bằng Aspose.Words cho .NET. |
-| [Xóa hạn chế chỉ đọc](./remove-read-only-restriction/) | Tìm hiểu cách loại bỏ hạn chế chỉ đọc khỏi tài liệu Word bằng Aspose.Words cho .NET. |
+| [Bảo vệ mật khẩu trong tài liệu Word](./password-protection/) | Tìm hiểu cách bảo mật tài liệu Word của bạn bằng tính năng bảo vệ bằng mật khẩu bằng Aspose.Words cho .NET trong hướng dẫn từng bước chi tiết này. |
+| [Chỉ cho phép bảo vệ các trường biểu mẫu trong tài liệu Word](./allow-only-form-fields-protect/) | Tìm hiểu cách bảo vệ tài liệu Word, chỉ cho phép chỉnh sửa các trường biểu mẫu bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn của chúng tôi để đảm bảo tài liệu của bạn được an toàn và có thể chỉnh sửa dễ dàng. |
+| [Loại bỏ bảo vệ tài liệu trong tài liệu Word](./remove-document-protection/) | Tìm hiểu cách loại bỏ tính năng bảo vệ khỏi tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để dễ dàng bỏ bảo vệ tài liệu của bạn. |
+| [Các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word](./unrestricted-editable-regions/) | Tìm hiểu cách tạo các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. |
+| [Phần không hạn chế trong tài liệu Word](./unrestricted-section/) | Mở khóa các phần cụ thể trong tài liệu Word của bạn bằng Aspose.Words for .NET với hướng dẫn từng bước này. Hoàn hảo để bảo vệ nội dung nhạy cảm. |
+| [Nhận loại bảo vệ trong tài liệu Word](./get-protection-type/) | Tìm hiểu cách kiểm tra loại bảo vệ của tài liệu Word bằng Aspose.Words cho .NET. Bao gồm hướng dẫn từng bước, ví dụ về mã và Câu hỏi thường gặp. |
+| [Bảo vệ chỉ đọc trong tài liệu Word](./read-only-protection/) | Tìm hiểu cách bảo vệ tài liệu Word của bạn bằng cách áp dụng tính năng bảo vệ chỉ đọc bằng Aspose.Words cho .NET. Thực hiện theo hướng dẫn từng bước của chúng tôi. |
+| [Xóa hạn chế chỉ đọc](./remove-read-only-restriction/) | Dễ dàng loại bỏ các hạn chế chỉ đọc khỏi tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển. |

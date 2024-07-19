@@ -26,7 +26,7 @@ Document doc = new Document();
 ```
 
 ## 3. lépés: Nyissa meg a részt és a törzset
-dokumentumban található táblázatok eléréséhez először a dokumentum részéhez és törzséhez kell hozzáférnünk.
+A dokumentumban található táblázatok eléréséhez először a dokumentum részéhez és törzséhez kell hozzáférnünk.
 
 ```csharp
 Section section = doc.FirstSection;
@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Gyors és gépelt hozzáférés a táblázat első sorához.
+     //Gyors és gépelt hozzáférés a táblázat első sorához.
      table.FirstRow?.Remove();
 
      // Gyors és gépelt hozzáférés a táblázat utolsó sorához.

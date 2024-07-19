@@ -2,125 +2,143 @@
 title: Nieograniczona sekcja w dokumencie programu Word
 linktitle: Nieograniczona sekcja w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak definiować nieograniczone sekcje w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Odblokuj określone sekcje w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny do ochrony wrażliwych treści.
 type: docs
 weight: 10
 url: /pl/net/document-protection/unrestricted-section/
 ---
-W tym samouczku przeprowadzimy Cię przez kolejne etapy korzystania z funkcji nieograniczonej sekcji Aspose.Words dla .NET. Ta funkcja umożliwia zdefiniowanie określonych sekcji dokumentu programu Word, które nie są chronione, nawet jeśli chroniona jest reszta dokumentu. Wykonaj poniższe kroki:
+## Wstęp
 
-## Krok 1: Tworzenie dokumentu i sekcji
+No hej! Gotowy do zanurzenia się w świat Aspose.Words dla .NET? Dzisiaj zajmiemy się czymś niezwykle praktycznym: jak odblokować określone sekcje w dokumencie programu Word, jednocześnie chroniąc inne części. Jeśli kiedykolwiek musiałeś zabezpieczyć niektóre sekcje swojego dokumentu, ale inne pozostawić otwarte do edycji, ten samouczek jest dla Ciebie. Zacznijmy!
 
-Zacznij od utworzenia instancji klasy Document i obiektu DocumentBuilder:
+## Warunki wstępne
+
+Zanim przejdziemy do sedna, upewnij się, że masz wszystko, czego potrzebujesz:
+
+-  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+- Visual Studio: Lub dowolne inne IDE kompatybilne z .NET.
+- Podstawowa znajomość języka C#: Trochę znajomości języka C# ułatwi ci przejście przez ten samouczek.
+-  Licencja Aspose: Weź a[bezpłatna wersja próbna](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli potrzebujesz go do testów.
+
+## Importuj przestrzenie nazw
+
+Zanim zaczniesz kodować, upewnij się, że zaimportowałeś niezbędne przestrzenie nazw do projektu C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Krok 2: Dodaj treść do dokumentu
-Użyj obiektu DocumentBuilder, aby dodać treść do dokumentu i wstawić podziały sekcji:
+A teraz rozłóżmy to krok po kroku!
+
+## Krok 1: Skonfiguruj swój projekt
+
+### Zainicjuj katalog dokumentów
+
+Najpierw musisz ustawić ścieżkę do katalogu dokumentów. Tutaj zostaną zapisane Twoje pliki Worda.
 
 ```csharp
-builder.Writeln("Section 1. Unprotected.");
-builder. InsertBreak(BreakType. SectionBreakContinuous);
-builder.Writeln("Section 2. Protected.");
-```
-
-## Krok 3: Chroń dokument i sekcje
-
-Ochrona sekcji działa tylko wtedy, gdy włączona jest ochrona dokumentów i dozwolona jest tylko edycja w polach formularza. Możesz chronić dokument za pomocą metody Protect() obiektu Document:
-
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
-
-Pamiętaj, aby określić prawidłowy typ ochrony i ustawić żądane hasło.
-
-## Krok 4: Wyłączenie ochrony dla określonej sekcji
-
-Domyślnie wszystkie sekcje są chronione, ale możesz selektywnie wyłączyć ochronę dla konkretnej sekcji, korzystając z właściwości ProtectedForForms obiektu Sekcja:
-
-```csharp
-doc.Sections[0].ProtectedForForms = false;
-```
-
-W tym przykładzie ochrona jest wyłączona dla pierwszej sekcji.
-
-## Krok 5: Zapisz dokument
-
-Na koniec zapisz zmodyfikowany dokument:
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-```
-
-Pamiętaj, aby podać poprawną ścieżkę i nazwę pliku, aby zapisać dokument z nieograniczoną liczbą sekcji.
-
-### Przykładowy kod źródłowy dla sekcji nieograniczonej przy użyciu Aspose.Words dla .NET
-
-Oto pełny kod źródłowy nieograniczonej sekcji przy użyciu Aspose.Words dla .NET:
-
-
-```csharp
-
-// Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Wstaw dwie sekcje z tekstem.
+```
+
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której chcesz zapisać swoje dokumenty. Jest to niezwykle istotne, ponieważ gwarantuje, że Twoje pliki będą przechowywane we właściwej lokalizacji.
+
+### Utwórz nowy dokument
+
+Następnie utworzymy nowy dokument za pomocą Aspose.Words. Ten dokument będzie płótnem, na którym zastosujemy naszą magię.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ The`Document` klasa inicjuje nowy dokument, a`DocumentBuilder` pomaga nam łatwo dodawać treść do naszego dokumentu.
+
+## Krok 2: Wstaw sekcje
+
+### Dodaj niezabezpieczoną sekcję
+
+Zacznijmy od dodania pierwszej sekcji, która pozostanie niezabezpieczona.
+
+```csharp
 builder.Writeln("Section 1. Unprotected.");
+```
+
+Ta linia kodu dodaje tekst „Sekcja 1. Niezabezpieczona”. do dokumentu. Proste, prawda?
+
+### Dodaj sekcję chronioną
+
+Dodajmy teraz drugą sekcję i wstawmy podział sekcji, aby oddzielić ją od pierwszej.
+
+```csharp
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
-
-// Ochrona sekcji działa tylko wtedy, gdy ochrona dokumentu jest włączona i dozwolona jest tylko edycja w polach formularza.
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-
-//Domyślnie chronione są wszystkie sekcje, ale możemy selektywnie wyłączyć ochronę.
-doc.Sections[0].ProtectedForForms = false;
-doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-
-doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-
 ```
 
-Wykonując te kroki, będziesz mógł łatwo zdefiniować nieograniczone sekcje w swoim dokumencie Word za pomocą Aspose.Words dla .NET.
+ The`InsertBreak` Metoda wstawia ciągły podział sekcji, co pozwala nam mieć różne ustawienia dla każdej sekcji.
+
+## Krok 3: Chroń dokument
+
+### Włącz ochronę dokumentów
+
+ Aby chronić dokument, użyjemy rozszerzenia`Protect` metoda. Ta metoda gwarantuje, że można edytować tylko pola formularza, chyba że określono inaczej.
+
+```csharp
+doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
+
+ W tym przypadku dokument jest chroniony hasłem i można edytować jedynie pola formularza. Pamiętaj o wymianie`"password"` z żądanym hasłem.
+
+### Usuń ochronę określonej sekcji
+
+Domyślnie wszystkie sekcje są chronione. Musimy selektywnie wyłączyć ochronę dla pierwszej sekcji.
+
+```csharp
+doc.Sections[0].ProtectedForForms = false;
+```
+
+Ta linia gwarantuje, że pierwsza sekcja pozostanie niechroniona, podczas gdy reszta dokumentu będzie zabezpieczona.
+
+## Krok 4: Zapisz i załaduj dokument
+
+### Zapisz dokument
+
+Teraz nadszedł czas, aby zapisać dokument z zastosowanymi ustawieniami ochrony.
+
+```csharp
+doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
+```
+
+ Spowoduje to zapisanie dokumentu w określonym katalogu o podanej nazwie`DocumentProtection.UnrestrictedSection.docx`.
+
+### Załaduj dokument
+
+Na koniec ładujemy dokument, aby sprawdzić, czy wszystko jest poprawnie skonfigurowane.
+
+```csharp
+doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
+```
+
+Ten krok gwarantuje, że dokument zostanie poprawnie zapisany i będzie można go ponownie załadować bez utraty ustawień zabezpieczeń.
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy funkcję nieograniczonej sekcji w Aspose.Words dla .NET, która pozwala, aby określone sekcje w dokumencie programu Word pozostały niechronione, podczas gdy reszta dokumentu jest chroniona. Wykonując podane kroki, możesz łatwo zdefiniować sekcje w swoim dokumencie, w których użytkownicy będą mogli swobodnie edytować treść, zachowując jednocześnie ochronę innych sekcji. Aspose.Words dla .NET oferuje potężne możliwości ochrony i dostosowywania dokumentów, dając Ci kontrolę nad uprawnieniami do edycji w dokumentach Word.
+I masz to! Wykonując te kroki, pomyślnie utworzyłeś dokument Word z mieszanką sekcji chronionych i niechronionych przy użyciu Aspose.Words dla .NET. Ta metoda jest niezwykle przydatna, gdy trzeba zablokować niektóre części dokumentu, pozostawiając inne części do edycji.
 
-### Często zadawane pytania dotyczące nieograniczonej sekcji w dokumencie programu Word
+## Często zadawane pytania
 
-#### P: Jakie są nieograniczone sekcje w Aspose.Words dla .NET?
+### Czy mogę chronić więcej niż jedną sekcję?
+Tak, możesz selektywnie chronić i wyłączać ochronę wielu sekcji, jeśli zajdzie taka potrzeba.
 
-Odp.: Nieograniczone sekcje w Aspose.Words dla .NET to określone sekcje w dokumencie programu Word, które nie są chronione, nawet jeśli reszta dokumentu jest chroniona. Sekcje te umożliwiają użytkownikom modyfikowanie zawartej w nich treści, przy jednoczesnym zachowaniu ochrony pozostałych części dokumentu.
+### Czy po zapisaniu dokumentu można zmienić rodzaj ochrony?
+Tak, możesz ponownie otworzyć dokument i zmodyfikować ustawienia ochrony zgodnie z potrzebami.
 
-#### P: Jak mogę tworzyć nieograniczone sekcje przy użyciu Aspose.Words dla .NET?
+### Jakie inne typy ochrony są dostępne w Aspose.Words?
+ Aspose.Words obsługuje kilka typów ochrony, w tym`ReadOnly`, `Comments` , I`TrackedChanges`.
 
-Odp.: Aby utworzyć nieograniczone sekcje w dokumencie programu Word za pomocą Aspose.Words dla .NET, możesz wykonać następujące kroki:
-1.  Utwórz instancję`Document` klasa i A`DocumentBuilder` obiekt.
-2.  Użyj`DocumentBuilder` , aby dodać treść do dokumentu i wstawić podziały sekcji.
-3.  Chroń dokument za pomocą`Protect` metoda`Document` obiektu, określając żądany typ ochrony i hasło.
-4.  Wyłącz ochronę dla określonej sekcji, ustawiając opcję`ProtectedForForms` właściwość odpowiedniego`Section` oponować`false`.
-5. Zapisz zmodyfikowany dokument.
+### Czy mogę chronić dokument bez hasła?
+Tak, możesz chronić dokument bez podawania hasła.
 
-#### P: Czy mogę mieć wiele nieograniczonych sekcji w dokumencie programu Word?
-
- Odp.: Tak, w dokumencie programu Word możesz mieć wiele nieograniczonych sekcji. Poprzez selektywne wyłączanie ochrony dla określonych sekcji za pomocą`ProtectedForForms` własność`Section`obiektu, możesz zdefiniować wiele sekcji, w których użytkownicy będą mogli swobodnie modyfikować zawartość, jednocześnie chroniąc inne sekcje.
-
-#### Pytanie 4. Czy mogę usunąć ochronę z sekcji, która była początkowo chroniona?
- Tak, możesz usunąć ochronę z sekcji, która była początkowo chroniona, ustawiając opcję`ProtectedForForms` właściwość odpowiedniego`Section` oponować`false`. Dzięki temu użytkownicy mogą edytować treść w tej konkretnej sekcji bez żadnych ograniczeń.
-
-#### P: Jakie typy ochrony można zastosować do dokumentu programu Word?
-
-Odp.: Aspose.Words dla .NET zapewnia różne typy ochrony, które można zastosować do dokumentu programu Word, w tym:
-- NoProtection: Nie jest stosowana żadna ochrona.
-- ZezwalajTylkoRewizje: Użytkownicy mogą wprowadzać tylko poprawki do dokumentu.
-- Zezwalaj tylko na komentarze: użytkownicy mogą dodawać tylko komentarze do dokumentu.
-- ZezwalajOnlyFormFields: Użytkownicy mogą edytować tylko pola formularzy w dokumencie.
-- Tylko do odczytu: dokument jest tylko do odczytu i nie można go edytować.
-
-
+### Jak mogę sprawdzić, czy sekcja jest chroniona?
+ Możesz sprawdzić`ProtectedForForms` właściwość sekcji, aby określić, czy jest ona chroniona.

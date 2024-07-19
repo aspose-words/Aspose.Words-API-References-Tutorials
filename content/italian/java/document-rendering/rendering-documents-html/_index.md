@@ -90,7 +90,7 @@ Assolutamente! Aspose.Words per Java è progettato per una facile integrazione n
 
 ### Esistono limitazioni durante il rendering di documenti complessi in HTML?
 
-Mentre Aspose.Words per Java gestisce la maggior parte dei tipi di documenti senza problemi, documenti molto complessi con formattazione complessa potrebbero richiedere ulteriori modifiche nell'output HTML.
+Mentre Aspose.Words per Java gestisce la maggior parte dei tipi di documenti senza problemi, documenti molto complessi con formattazione complessa potrebbero richiedere ulteriori aggiustamenti nell'output HTML.
 
 ### Posso eseguire il rendering dei documenti in altri formati oltre all'HTML?
 

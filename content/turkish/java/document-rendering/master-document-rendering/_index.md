@@ -169,7 +169,7 @@ doc.save("output.png", imageOptions);
 
 ## Gelişmiş Rendering Teknikleri
 
-Aspose.Words, bir belgenin belirli bölümlerini işlemek için büyük belgeler veya özel gereksinimler için yararlı olabilecek gelişmiş teknikler sağlar.
+Aspose.Words, bir belgenin belirli bölümlerini işlemek için, büyük belgeler veya özel gereksinimler için yararlı olabilecek gelişmiş teknikler sağlar.
 
 ### Belirli Belge Sayfalarını Oluşturma
 

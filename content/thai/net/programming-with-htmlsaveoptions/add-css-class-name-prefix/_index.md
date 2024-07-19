@@ -19,7 +19,7 @@ url: /th/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ในขั้นตอนนี้ เราจะโหลดเอกสาร Word ที่เราต้องการแปลงเป็น HTML ใช้รหัสต่อไปนี้เพื่อโหลดเอกสาร:
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสาร
+//พาธไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- รหัสนี้สร้างอินสแตนซ์ของ`HtmlSaveOptions` และชุด`CssStyleSheetType` ถึง`CssStyleSheetType.External`เพื่อสร้างสไตล์ชีต CSS ภายนอกและ`CssClassNamePrefix` ถึง`"pfx_"` เพื่อนำหน้า`"pfx_"` เพื่อตั้งชื่อคลาส CSS
+ รหัสนี้สร้างอินสแตนซ์ของ`HtmlSaveOptions` และชุด`CssStyleSheetType` ถึง`CssStyleSheetType.External` เพื่อสร้างสไตล์ชีต CSS ภายนอกและ`CssClassNamePrefix` ถึง`"pfx_"` เพื่อนำหน้า`"pfx_"` เพื่อตั้งชื่อคลาส CSS
 
 ## ขั้นตอนที่ 4: การแปลงและบันทึกเอกสารเป็น HTML
 

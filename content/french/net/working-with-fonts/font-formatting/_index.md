@@ -49,7 +49,7 @@ font.Name = "Arial";
 font.Underline = Underline.Dash;
 ```
 
-## Étape 4 : ajouter du texte au document
+## Étape 4 : Ajouter du texte au document
 Ensuite, nous utiliserons le générateur de documents pour ajouter du texte formaté au document.
 
 ```csharp

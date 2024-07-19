@@ -2,7 +2,7 @@
 title: 使用 Aspose.Words for Java 加载和保存 HTML 文档
 linktitle: 使用以下方式加载和保存 HTML 文档
 second_title: Aspose.Words Java 文档处理 API
-description: 了解如何使用 Aspose.Words for Java 在 Java 中加载和保存 HTML 文档。带有代码示例的分步指南，可实现无缝文档集成。
+description: 了解如何使用 Aspose.Words for Java 在 Java 中加载和保存 HTML 文档。带有代码示例的分步指南，实现无缝文档集成。
 type: docs
 weight: 10
 url: /zh/java/document-loading-and-saving/loading-and-saving-html-documents/
@@ -16,7 +16,7 @@ url: /zh/java/document-loading-and-saving/loading-and-saving-html-documents/
 
 在深入研究代码之前，请确保您已满足以下先决条件：
 
-1.  Aspose.Words for Java 库：您应该已经安装了 Aspose.Words for Java 库。如果尚未安装，您可以从以下网址下载[这里](https://releases.aspose.com/words/java/).
+1.  Aspose.Words for Java 库：您应该已经安装了 Aspose.Words for Java 库。如果尚未安装，可以从以下位置下载[这里](https://releases.aspose.com/words/java/).
 
 2. Java 开发环境：确保您的系统上安装了 Java。
 
@@ -89,7 +89,7 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 Aspose.Words 支持多种文档格式，包括 DOC、DOCX、RTF、HTML、PDF 等。它为 Java 应用程序提供了全面的文档处理功能。
 
-### Aspose.Words适合企业级文档操作吗？
+### Aspose.Words 适合企业级文档操作吗？
 
 当然！Aspose.Words 是一款功能强大的解决方案，全球企业都使用它来实现文档自动化、报告和文档生成。它提供了丰富的功能，可用于管理大型应用程序中的文档。
 

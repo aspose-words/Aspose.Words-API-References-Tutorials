@@ -12,7 +12,7 @@ den digitala tidsåldern har hantering och manipulering av dokument programmatis
 
 ## Introduktion till Aspose.Words för Java
 
-Aspose.Words för Java är ett funktionsrikt bibliotek som låter Java-utvecklare skapa, manipulera och konvertera Word-dokument utan ansträngning. Oavsett om du behöver generera rapporter, automatisera dokumentskapandet eller konvertera filer mellan olika format, har Aspose.Words för Java dig täckt.
+Aspose.Words för Java är ett funktionsrikt bibliotek som låter Java-utvecklare skapa, manipulera och konvertera Word-dokument utan ansträngning. Oavsett om du behöver generera rapporter, automatisera dokumentskapande eller konvertera filer mellan olika format, har Aspose.Words för Java dig täckt.
 
 ## Konfigurera din utvecklingsmiljö
 

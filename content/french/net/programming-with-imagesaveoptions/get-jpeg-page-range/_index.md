@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- Dans cette étape, nous configurons les options de sauvegarde des images. Nous créons un nouveau`ImageSaveOptions` objet précisant le format de sauvegarde souhaité, ici "Jpeg" pour le format JPEG. Nous définissons également la plage de pages à convertir à l'aide du`PageSet`objet. Enfin, nous ajustons la luminosité et le contraste de l'image à l'aide du`ImageBrightness` et`ImageContrast` propriétés, respectivement. Nous modifions également la résolution horizontale en utilisant le`HorizontalResolution` propriété.
+ Dans cette étape, nous configurons les options de sauvegarde des images. Nous créons un nouveau`ImageSaveOptions` objet précisant le format de sauvegarde souhaité, ici "Jpeg" pour le format JPEG. Nous définissons également la plage de pages à convertir à l'aide du`PageSet`objet. Enfin, nous ajustons la luminosité et le contraste de l'image à l'aide du`ImageBrightness`et`ImageContrast` propriétés, respectivement. Nous modifions également la résolution horizontale en utilisant le`HorizontalResolution` propriété.
 
 ## Étape 4 : Sauvegarde des images
 

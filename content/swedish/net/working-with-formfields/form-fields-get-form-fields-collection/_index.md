@@ -1,6 +1,6 @@
 ---
-title: Formulärfält Få formulärfältsamling
-linktitle: Formulärfält Få formulärfältsamling
+title: Formulärfält Hämta formulärfältsamling
+linktitle: Formulärfält Hämta formulärfältsamling
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du hämtar och manipulerar insamling av formulärfält i Word-dokument med Aspose.Words för .NET.
 type: docs

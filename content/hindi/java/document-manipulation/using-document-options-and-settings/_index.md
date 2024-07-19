@@ -44,7 +44,7 @@ public void showGrammaticalAndSpellingErrors() throws Exception
 public void cleanupUnusedStylesAndLists() throws Exception
 {
     Document doc = new Document("Your Directory Path" + "Unused styles.docx");
-    // सफ़ाई विकल्प परिभाषित करें
+    // सफाई विकल्प परिभाषित करें
     CleanupOptions cleanupOptions = new CleanupOptions();
     cleanupOptions.setUnusedLists(false);
     cleanupOptions.setUnusedStyles(true);

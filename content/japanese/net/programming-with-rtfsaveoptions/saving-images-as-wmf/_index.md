@@ -78,7 +78,7 @@ A: Aspose.Words for .NET でこの機能を使用するには、次の手順に�
 
 ドキュメントをロードするには、`Document`メソッドを使用し、読み込む DOCX ファイルのパスを指定します。
 
- RTF保存オプションを設定するには、`RtfSaveOptions`オブジェクトと設定`SaveImagesAsWmf`財産に`true`. これはAspose.Wordsに文書画像を次のように保存するように指示します。 
+ RTF保存オプションを設定するには、`RtfSaveOptions`オブジェクトと設定`SaveImagesAsWmf`財産に`true`. これにより、Aspose.Wordsはドキュメント画像を次のように保存します。 
 RTF に変換するときの WMF。
 
 結果の文書をRTF形式で保存するには、`Save`メソッドを使用し、出力ファイルへの完全なパスと、指定された保存オプションを指定します。

@@ -42,7 +42,7 @@ field. Remove();
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-### 使用 Aspose.Words for .NET 删除字段的示例源代码
+### 使用 Aspose.Words for .NET 进行字段删除的示例源代码
 
 ```csharp
 //文档目录的路径。
@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 
 #### 问：使用 Aspose.Words for .NET 是否可以仅删除 Word 文档中的某些字段？
 
-答：是的，使用 Aspose.Words for .NET 可以仅删除 Word 文档中的某些字段。您可以使用特定条件（例如字段名称或其他相关属性）过滤要删除的字段。然后，您可以使用`FieldStart.Remove`方法。
+答：是的，可以使用 Aspose.Words for .NET 仅删除 Word 文档中的某些字段。您可以使用特定条件（例如字段名称或其他相关属性）过滤要删除的字段。然后，您可以使用`FieldStart.Remove`方法。
 
 #### 问：如何使用 Aspose.Words for .NET 检查 Word 文档中的某个字段是否已成功删除？
 

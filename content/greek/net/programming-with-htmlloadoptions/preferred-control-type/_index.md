@@ -26,7 +26,7 @@ const string html=@"
 ";
 ```
 
-## Βήμα 2: Ορίστε επιλογές φόρτωσης HTML
+## Βήμα 2: Ορίστε τις επιλογές φόρτωσης HTML
 
  Στη συνέχεια, δημιουργούμε ένα`HtmlLoadOptions` αντικείμενο και ορίστε το`PreferredControlType`ιδιοκτησία σε`HtmlControlType.StructuredDocumentTag`. Αυτό λέει στο Aspose.Words να χρησιμοποιεί StructuredDocumentTags για να αναπαριστά την HTML κατά τη φόρτωση.
 
@@ -91,4 +91,4 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 #### Ε: Μπορώ να χρησιμοποιήσω άλλους τύπους ελέγχου ως προτιμώμενη επιλογή;
 
- Α: Ναι, εκτός από`HtmlControlType.StructuredDocumentTag` , Aspose.Words για .NET υποστηρίζει άλλους τύπους ελέγχου όπως`HtmlControlType.ContentControl` και`HtmlControlType.CustomXmlMarkup`.
+ Α: Ναι, εκτός από`HtmlControlType.StructuredDocumentTag` , Aspose.Words για .NET υποστηρίζει άλλους τύπους ελέγχου όπως`HtmlControlType.ContentControl`και`HtmlControlType.CustomXmlMarkup`.

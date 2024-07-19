@@ -2,49 +2,57 @@
 title: ソースをまとめる
 linktitle: ソースをまとめる
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、ソース コンテンツを宛先ドキュメントと一緒に保ちながら Word ドキュメントを結合および追加する方法を学習します。
+description: Aspose.Words for .NET を使用して、書式設定を維持しながら Word 文書を結合する方法を学びます。この包括的なガイドでは、セットアップから実行まですべてをカバーしています。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/keep-source-together/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET の Keep Source Together 機能を使用する手順を説明します。この機能を使用すると、ソース ドキュメントのコンテンツと宛先ドキュメントのコンテンツを一緒に保持しながら、複数の Word ドキュメントを結合および追加できます。 
+今日のデジタル時代では、Word 文書をプログラムで操作することが、さまざまな業界で不可欠です。Aspose.Words for .NET を使用すると、開発者は文書処理タスクを効率的に自動化できます。この包括的なガイドでは、Aspose.Words for .NET を使用してソースの書式設定を保持しながら文書を結合するプロセスを順を追って説明します。
 
 ## 前提条件
 
-始める前に、次のものがあることを確認してください。
+Aspose.Words for .NET を使用してドキュメントの結合を開始する前に、次のものを用意してください。
 
-1. Aspose.Words for .NET がインストールされています。Aspose Web サイトからダウンロードするか、NuGet 経由でインストールできます。
-2. Visual Studio またはその他の C# 開発環境。
+- Visual Studio: .NET 開発用の統合開発環境 (IDE)。
+- Aspose.Words for .NET: 開発環境にインストールしてセットアップします。
+- C# の知識: C# プログラミング言語の基本的な理解。
 
-## ステップ1: ドキュメントディレクトリを初期化する
+## 名前空間のインポート
 
-まず、ドキュメントディレクトリへのパスを設定する必要があります。`dataDir`ドキュメントが保存されているパスへの変数。
+まず、必要な名前空間をインポートします。
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## ステップ2: ソースドキュメントと宛先ドキュメントを読み込む
+## ステップ1: ドキュメントを読み込む
 
-次に、Aspose.Wordsを使用してソースドキュメントと宛先ドキュメントをロードする必要があります。`Document`クラス。`Document`ドキュメント名に応じてコンストラクターを作成します。
+まず、ソースドキュメントと宛先ドキュメントをAspose.Wordsに読み込みます。`Document`オブジェクト。
 
 ```csharp
+//ドキュメントディレクトリへのパス
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+//ソースドキュメントと宛先ドキュメントを読み込む
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## ステップ3: ソース文書を宛先文書のコンテンツの後に表示されるように設定する
+## ステップ2: セクションの開始を設定する
 
-ソース文書が宛先文書のコンテンツの直後に表示されるようにするには、`SectionStart`ソース文書の最初のセクションのプロパティを`SectionStart.Continuous`.
+セクションの開始を構成して、ソース ドキュメントのコンテンツが宛先ドキュメントの後に連続して流れるようにします。
 
 ```csharp
+//ソース文書を宛先文書のコンテンツの直後に表示されるように設定する
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## ステップ 4: ソース文書の「次の段落と連動」段落書式を設定する
+## ステップ3: 段落をまとめる
 
-ソース文書内の段落をまとめておくには、文書内の各段落を反復処理して、`KeepWithNext`財産に`true`.
+書式の整合性を維持するには、ソース ドキュメント内の各段落が次の段落と一致するようにマークします。
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## ステップ5: ソースドキュメントを宛先ドキュメントに追加する
+## ステップ4: ドキュメントを追加する
 
-これで、ソース文書を宛先文書に追加することができます。`AppendDocument`方法の`Document`クラス。`ImportFormatMode.KeepSourceFormatting`パラメータにより、追加操作中にソースの書式が保持されます。
+ドキュメントを結合するには、`AppendDocument`メソッドは、ソース ドキュメントの書式設定を保持することを保証します。
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## ステップ6: 最終文書を保存する
+## ステップ5: 結合した文書を保存する
 
-最後に、「ソースをまとめる」機能を有効にして結合した文書を保存します。`Save`方法の`Document`クラス。
+最後に、結合したドキュメントを目的の場所に保存します。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### Aspose.Words for .NET を使用してソースをまとめるサンプル ソース コード 
+## 結論
 
-以下は、Aspose.Words for .NET を使用した C# の「ソースをまとめて保持」機能の完全なソース コードです。
+結論として、Aspose.Words for .NET は、元の書式設定をシームレスに維持しながら Word 文書を結合するタスクを簡素化します。この機能は、自動化された文書処理を必要とするアプリケーションにとって非常に重要です。
 
+## よくある質問
 
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Aspose.Words for .NET は異なる形式のドキュメントを結合できますか?
+はい、ソースの書式を維持しながら、形式に関係なくドキュメントを結合できます。
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//ソース ドキュメントを、宛先ドキュメントのコンテンツの直後に表示されるように設定します。
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### Aspose.Words for .NET は、大規模なドキュメントの効率的な結合をサポートしていますか?
+はい、大きなドキュメントを最適なパフォーマンスで処理します。
 
-これで完了です。Aspose.Words for .NET を使用して、Keep Source Together 機能を正常に実装できました。最終的なドキュメントには、ソース ドキュメント内の段落がまとめられた状態で結合されたコンテンツが含まれます。
+### Aspose.Words for .NET の試用版はありますか?
+はい、無料トライアルをダウンロードできます[ここ](https://releases.aspose.com/).
+
+### Aspose.Words for .NET のテクニカル サポートを受けるにはどうすればよいですか?
+テクニカルサポートは、[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).
+
+### Aspose.Words for .NET の一時ライセンスを購入できますか?
+はい、一時ライセンスを取得できます[ここ](https://purchase.aspose.com/temporary-license/).

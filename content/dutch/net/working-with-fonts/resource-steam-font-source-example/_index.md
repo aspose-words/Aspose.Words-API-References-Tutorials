@@ -99,7 +99,7 @@ U hebt nu het proces van het gebruik van een bronstroom als lettertypebron onder
 
 ###  Vraag 3: Kan ik andere soorten waarschuwingen verwerken?`IWarningCallback`?
 
- Ja de`IWarningCallback` interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
+ Ja de`IWarningCallback`interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
 
 ### V4: Waar kan ik ondersteuning vinden voor Aspose.Words?
 

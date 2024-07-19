@@ -91,4 +91,4 @@ S: StructuredDocumentTags (SDT) är XML-baserade element som kan användas för 
 
 #### F: Kan jag använda andra kontrolltyper som det föredragna alternativet?
 
- A: Ja, förutom`HtmlControlType.StructuredDocumentTag` , Aspose.Words för .NET stöder andra kontrolltyper som t.ex`HtmlControlType.ContentControl` och`HtmlControlType.CustomXmlMarkup`.
+ A: Ja, förutom`HtmlControlType.StructuredDocumentTag` , Aspose.Words för .NET stöder andra kontrolltyper som t.ex`HtmlControlType.ContentControl`och`HtmlControlType.CustomXmlMarkup`.

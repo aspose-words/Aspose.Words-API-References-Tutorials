@@ -21,7 +21,7 @@ TextBox textBox = shape.TextBox;
 
 ## 步骤 2：检查 TextBox 序列
 
-现在我们将使用以下方法检查 TextBox 的顺序`if`条件。提供的源代码包含三个单独的条件，用于检查 TextBox 相对于前后形状的位置。
+现在我们将使用以下方法检查 TextBox 的顺序：`if`条件。提供的源代码包含三个单独的条件，用于检查 TextBox 相对于前后形状的位置。
 
 ## 步骤3：检查序列头：
 

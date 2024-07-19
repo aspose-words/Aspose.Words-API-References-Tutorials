@@ -2,48 +2,84 @@
 title: Personalizza l'etichetta dei dati del grafico
 linktitle: Personalizza l'etichetta dei dati del grafico
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come aggiungere e personalizzare le etichette dei dati in un grafico utilizzando Aspose.Words per .NET per fornire ulteriori informazioni sui punti dati.
+description: Scopri come personalizzare le etichette dei dati del grafico utilizzando Aspose.Words per .NET in una guida passo passo. Perfetto per gli sviluppatori .NET.
 type: docs
 weight: 10
 url: /it/net/programming-with-charts/chart-data-label/
 ---
+## introduzione
 
-Questo tutorial spiega come aggiungere e personalizzare le etichette dei dati in un grafico utilizzando Aspose.Words per .NET. Le etichette dati forniscono informazioni aggiuntive sui punti dati in un grafico.
+Desideri abbellire le tue applicazioni .NET con funzionalità di elaborazione dei documenti dinamiche e personalizzate? Aspose.Words per .NET potrebbe essere proprio la tua risposta! In questa guida approfondiremo la personalizzazione delle etichette dei dati del grafico utilizzando Aspose.Words per .NET, una potente libreria per la creazione, la modifica e la conversione di documenti Word. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questo tutorial ti guiderà attraverso ogni passaggio, assicurandoti di comprendere come utilizzare questo strumento in modo efficace.
 
 ## Prerequisiti
-Per seguire questo tutorial, è necessario disporre di quanto segue:
 
-- Aspose.Words per la libreria .NET installata.
-- Conoscenza base di C# ed elaborazione testi con documenti Word.
+Prima di iniziare, assicurati di avere quanto segue:
 
-## Passaggio 1: impostare la directory dei documenti
- Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui desideri salvare il documento.
+1. Visual Studio: installa Visual Studio 2019 o versione successiva.
+2. .NET Framework: assicurati di avere .NET Framework 4.0 o versione successiva.
+3.  Aspose.Words per .NET: Scarica e installa Aspose.Words per .NET dal file[Link per scaricare](https://releases.aspose.com/words/net/).
+4. Conoscenza di base di C#: la familiarità con la programmazione C# è essenziale.
+5.  Una licenza valida: ottenere a[licenza temporanea](https://purchase.aspose.com/temporary-license/) o acquistarne uno da[Link per l'acquisto](https://purchase.aspose.com/buy).
+
+## Importa spazi dei nomi
+
+Per iniziare, devi importare gli spazi dei nomi necessari nel tuo progetto C#. Questo passaggio è fondamentale in quanto garantisce l'accesso a tutte le classi e i metodi forniti da Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Charts;
 ```
 
-## Passaggio 2: crea un nuovo documento e DocumentBuilder
- Crea una nuova istanza di`Document` classe e a`DocumentBuilder`oggetto di lavorare con il documento.
+## Passaggio 1: inizializzare il documento e DocumentBuilder
+
+Per creare e manipolare documenti Word, dobbiamo prima inizializzare un'istanza del file`Document` classe e a`DocumentBuilder` oggetto.
 
 ```csharp
+// Percorso della directory dei documenti
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 3: inserisci e configura un grafico
- Inserisci un grafico nel documento utilizzando il comando`InsertChart` metodo del`DocumentBuilder` oggetto. Imposta il tipo di grafico e le dimensioni desiderate.
+### Spiegazione
+
+- Document doc: crea una nuova istanza della classe Document.
+- Generatore DocumentBuilder: DocumentBuilder aiuta a inserire contenuto nell'oggetto Document.
+
+## Passaggio 2: inserisci un grafico
+
+ Successivamente, inseriremo un grafico a barre nel documento utilizzando il file`DocumentBuilder` oggetto.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Passaggio 4: personalizzare le etichette dati
-Accedi alla raccolta di etichette dati delle serie di grafici e modifica varie proprietà per personalizzare l'aspetto delle etichette dati.
+### Spiegazione
+
+- Forma forma: rappresenta il grafico come una forma nel documento.
+- builder.InsertChart(ChartType.Bar, 432, 252): inserisce un grafico a barre con le dimensioni specificate.
+
+## Passaggio 3: accedi alla serie di grafici
+
+Per personalizzare le etichette dei dati, dobbiamo prima accedere alle serie nel grafico.
 
 ```csharp
 ChartSeries series0 = shape.Chart.Series[0];
+```
+
+### Spiegazione
+
+- ChartSeries series0: recupera la prima serie del grafico, che personalizzeremo.
+
+## Passaggio 4: personalizzare le etichette dati
+
+Le etichette dati possono essere personalizzate per visualizzare varie informazioni. Configureremo le etichette per mostrare la chiave della legenda, il nome della serie e il valore, nascondendo il nome della categoria e la percentuale.
+
+```csharp
 ChartDataLabelCollection labels = series0.DataLabels;
 labels.ShowLegendKey = true;
 labels.ShowLeaderLines = true;
@@ -54,51 +90,46 @@ labels.ShowValue = true;
 labels.Separator = "/";
 ```
 
+### Spiegazione
+
+- Etichette ChartDataLabelCollection: accede alle etichette dati della serie.
+- label.ShowLegendKey: visualizza la chiave della legenda.
+- label.ShowLeaderLines: mostra le linee guida per le etichette dati posizionate molto al di fuori dei punti dati.
+- label.ShowCategoryName: nasconde il nome della categoria.
+- label.ShowPercentage: nasconde il valore percentuale.
+- label.ShowSeriesName: visualizza il nome della serie.
+- label.ShowValue: visualizza il valore dei punti dati.
+- label.Separator: imposta il separatore per le etichette dei dati.
+
 ## Passaggio 5: salva il documento
- Salvare il documento nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithCharts.ChartDataLabel.docx".
+
+Infine, salva il documento nella directory specificata.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
-### Codice sorgente di esempio per l'etichetta dati del grafico utilizzando Aspose.Words per .NET 
+### Spiegazione
 
-```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = shape.Chart.Series[0];
-	ChartDataLabelCollection labels = series0.DataLabels;
-	labels.ShowLegendKey = true;
-	// Per impostazione predefinita, quando aggiungi etichette dati ai punti dati in un grafico a torta, vengono visualizzate le linee guida per le etichette dati che lo sono
-	// posizionato molto al di fuori della fine dei punti dati. Le linee guida creano una connessione visiva tra un'etichetta dati e la sua
-	// punto dati corrispondente.
-	labels.ShowLeaderLines = true;
-	labels.ShowCategoryName = false;
-	labels.ShowPercentage = false;
-	labels.ShowSeriesName = true;
-	labels.ShowValue = true;
-	labels.Separator = "/";
-	labels.ShowValue = true;
-	doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
-```
-
-Questo è tutto! Hai aggiunto e personalizzato con successo le etichette dei dati in un grafico utilizzando Aspose.Words per .NET.
+- doc.Save: salva il documento con il nome specificato nella directory fornita.
 
 ## Conclusione
-In questo tutorial, hai imparato come aggiungere e personalizzare le etichette dei dati in un grafico utilizzando Aspose.Words per .NET. Seguendo la guida passo passo, puoi inserire un grafico, accedere alla raccolta di etichette dati e modificare le proprietà per personalizzare l'aspetto delle etichette dati. Aspose.Words per .NET fornisce una potente API per l'elaborazione di parole con documenti e grafici di Word, consentendo di creare grafici visivamente accattivanti e informativi con etichette di dati personalizzate.
 
-### Domande frequenti
+ Congratulazioni! Hai personalizzato con successo le etichette dei dati del grafico utilizzando Aspose.Words per .NET. Questa libreria offre una soluzione solida per la gestione dei documenti Word a livello di codice, rendendo più semplice per gli sviluppatori creare applicazioni di elaborazione dei documenti sofisticate e dinamiche. Tuffati nel[documentazione](https://reference.aspose.com/words/net/) per esplorare più caratteristiche e capacità.
 
-#### Q1. Cosa sono le etichette dati in un grafico?
-Le etichette dati in un grafico forniscono informazioni aggiuntive sui punti dati rappresentati nel grafico. Possono visualizzare valori, categorie, nomi di serie, percentuali o altri dettagli rilevanti a seconda del tipo di grafico e della configurazione.
+## Domande frequenti
 
-#### Q2. Posso personalizzare l'aspetto delle etichette dati?
-Sì, puoi personalizzare l'aspetto delle etichette dati in un grafico. Aspose.Words per .NET fornisce opzioni per modificare varie proprietà delle etichette dati, come mostrare chiavi di legenda, linee direttrici, nomi di categorie, nomi di serie, valori e altro. Puoi anche impostare separatori e formattare le etichette per soddisfare i tuoi requisiti specifici.
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria di elaborazione documenti che consente agli sviluppatori di creare, modificare e convertire documenti Word a livello di codice.
 
-#### Q3. Posso aggiungere etichette dati a qualsiasi tipo di grafico?
-Sì, puoi aggiungere etichette dati a vari tipi di grafici, inclusi grafici a barre, grafici a torta, grafici a linee e altro ancora. Il processo di aggiunta e personalizzazione delle etichette dati può variare leggermente a seconda del tipo di grafico e della libreria o dello strumento che stai utilizzando.
+### Come installo Aspose.Words per .NET?
+ È possibile scaricarlo e installarlo da[Link per scaricare](https://releases.aspose.com/words/net/). Seguire le istruzioni di installazione fornite.
+
+### Posso provare Aspose.Words per .NET gratuitamente?
+ Sì, puoi ottenere un[prova gratuita](https://releases.aspose.com/) o a[licenza temporanea](https://purchase.aspose.com/temporary-license/)per valutare il prodotto.
+
+### Aspose.Words per .NET è compatibile con .NET Core?
+Sì, Aspose.Words per .NET è compatibile con .NET Core, .NET Standard e .NET Framework.
+
+### Dove posso ottenere supporto per Aspose.Words per .NET?
+ Puoi visitare il[Forum di assistenza](https://forum.aspose.com/c/words/8) per aiuto e assistenza da parte della comunità e degli esperti di Aspose.

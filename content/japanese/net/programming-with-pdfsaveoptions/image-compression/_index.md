@@ -48,7 +48,7 @@ PreserveFormFields = true
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOptions);
 ```
 
-## ステップ5: 画像圧縮でPDF/A-2uに保存するためのオプションを設定する
+## ステップ5: 画像圧縮を使用してPDF/A-2uに保存するためのオプションを設定する
 
 画像圧縮を使用して PDF/A-2u 準拠の PDF を生成する場合は、追加の保存オプションを設定できます。
 

@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-odtsaveoptions/measure-unit/
 ---
 
-当您在 C# 应用程序中将 Word 文档转换为开放文档文本 (ODT) 格式时，您可能需要指定用于可测量格式和内容属性的测量单位。使用适用于 .NET 的 Aspose.Words 库，您可以使用 OdtSaveOptions 保存选项轻松指定此功能。在本分步指南中，我们将引导您了解如何使用适用于 .NET C# 源代码的 Aspose.Words 将 Word 文档转换为 ODT，方法是使用 OdtSaveOptions 指定测量单位。
+当您在 C# 应用程序中将 Word 文档转换为开放文档文本 (ODT) 格式时，您可能需要指定用于可测量格式和内容属性的测量单位。使用 .NET 的 Aspose.Words 库，您可以使用 OdtSaveOptions 保存选项轻松指定此功能。在本分步指南中，我们将引导您了解如何使用 Aspose.Words for .NET C# 源代码通过使用 OdtSaveOptions 指定测量单位将 Word 文档转换为 ODT。
 
 ## 了解 Aspose.Words 库
 

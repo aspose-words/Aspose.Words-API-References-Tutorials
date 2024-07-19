@@ -144,7 +144,7 @@ public void useControlCharacters()
 
 ## よくある質問
 
-### 組み込みドキュメント プロパティにアクセスするにはどうすればよいですか?
+### 組み込みのドキュメント プロパティにアクセスするにはどうすればよいですか?
 
  Aspose.Words for Javaの組み込みドキュメントプロパティにアクセスするには、`getBuiltInDocumentProperties`方法`Document`オブジェクト。このメソッドは、反復処理できる組み込みプロパティのコレクションを返します。
 

@@ -344,7 +344,7 @@ Trong mã này, chúng ta tạo một bảng đơn giản có ba hàng và ba c�
 
 ## Lưu và xuất tài liệu
 
-Khi bạn đã tạo và định dạng tài liệu của mình, điều cần thiết là lưu hoặc xuất tài liệu đó ở định dạng bạn mong muốn. Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu khác nhau, bao gồm DOCX, PDF, v.v. Đây là cách lưu tài liệu dưới dạng PDF:
+Khi bạn đã tạo và định dạng tài liệu của mình, điều cần thiết là lưu hoặc xuất tài liệu ở định dạng bạn muốn. Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu khác nhau, bao gồm DOCX, PDF, v.v. Đây là cách lưu tài liệu dưới dạng PDF:
 
 ```java
 // Tạo một tài liệu mới

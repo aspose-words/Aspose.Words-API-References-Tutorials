@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- Pada langkah ini, kami mengonfigurasi opsi cadangan untuk gambar. Kami membuat yang baru`ImageSaveOptions` objek menentukan format penyimpanan yang diinginkan, di sini "Jpeg" untuk format JPEG. Kami juga mengatur rentang halaman yang akan dikonversi menggunakan`PageSet`obyek. Terakhir, kami mengatur kecerahan dan kontras gambar menggunakan`ImageBrightness` Dan`ImageContrast` properti, masing-masing. Kami juga mengubah resolusi horizontal menggunakan`HorizontalResolution` Properti.
+ Pada langkah ini, kami mengonfigurasi opsi cadangan untuk gambar. Kami membuat yang baru`ImageSaveOptions` objek menentukan format penyimpanan yang diinginkan, di sini "Jpeg" untuk format JPEG. Kami juga mengatur rentang halaman yang akan dikonversi menggunakan`PageSet`obyek. Terakhir, kami mengatur kecerahan dan kontras gambar menggunakan`ImageBrightness`Dan`ImageContrast` properti, masing-masing. Kami juga mengubah resolusi horizontal menggunakan`HorizontalResolution` Properti.
 
 ## Langkah 4: Mencadangkan gambar
 

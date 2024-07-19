@@ -2,7 +2,7 @@
 title: Объединение и клонирование документов для сложных рабочих процессов
 linktitle: Объединение и клонирование документов для сложных рабочих процессов
 second_title: API управления документами Aspose.Words Python
-description: Узнайте, как эффективно объединять и клонировать документы с помощью Aspose.Words для Python. Пошаговое руководство с исходным кодом для работы с документами. Улучшите свои рабочие процессы с документами уже сегодня!
+description: Узнайте, как эффективно объединять и клонировать документы с помощью Aspose.Words для Python. Пошаговое руководство с исходным кодом для работы с документами. Улучшите свой документооборот уже сегодня!
 type: docs
 weight: 12
 url: /ru/python-net/document-splitting-and-formatting/combine-clone-documents/
@@ -11,7 +11,7 @@ url: /ru/python-net/document-splitting-and-formatting/combine-clone-documents/
 
 ## Установка Aspose.Words
 
- Прежде чем мы углубимся в детали, вам необходимо настроить Aspose.Words для Python. Скачать и установить его можно по следующей ссылке:[Скачать Aspose.Words для Python](https://releases.aspose.com/words/python/). 
+Прежде чем мы углубимся в детали, вам необходимо настроить Aspose.Words для Python. Скачать и установить его можно по следующей ссылке:[Скачать Aspose.Words для Python](https://releases.aspose.com/words/python/). 
 
 ## Объединение документов
 
@@ -127,7 +127,7 @@ Aspose.Words for Python — это универсальная библиотек
  Используйте`range.replace()` вместе с соответствующими параметрами для эффективного поиска и замены текста.
 
 ### Поддерживает ли Aspose.Words изменение форматирования?
-Конечно, вы можете изменить форматирование, используя такие методы, как`run.font.size` и`run.font.bold`.
+Конечно, вы можете изменить форматирование, используя такие методы, как`run.font.size`и`run.font.bold`.
 
 ### Где я могу получить доступ к документации Aspose.Words?
  Подробную документацию можно найти по адресу[Справочник по API Aspose.Words для Python](https://reference.aspose.com/words/python-net/).

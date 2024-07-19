@@ -34,7 +34,7 @@ builder. InsertCell();
 ```
 
 ## Stap 4: Definieer de lijnopmaak
- Nu kunnen we de rijopmaak instellen door naar het`RowFormat` voorwerp van de`DocumentBuilder` voorwerp. Met de bijbehorende eigenschappen kunnen we de lijnhoogte en de marges (paddings) instellen.
+ Nu kunnen we de rijopmaak instellen door toegang te krijgen tot de`RowFormat` voorwerp van de`DocumentBuilder` voorwerp. Met de bijbehorende eigenschappen kunnen we de lijnhoogte en de marges (paddings) instellen.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## Stap 7: Maak de tabel af en sla het document op
 In
 
- Uiteindelijk voltooien we het maken van de tabel met behulp van de`EndRow()` En`EndTable()` methode, dan slaan we het gewijzigde document op in een bestand.
+ Uiteindelijk voltooien we het maken van de tabel met behulp van de`EndRow()`En`EndTable()` methode, dan slaan we het gewijzigde document op in een bestand.
 
 ```csharp
 builder. EndRow();

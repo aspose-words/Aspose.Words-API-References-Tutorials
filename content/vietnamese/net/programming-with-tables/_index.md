@@ -7,7 +7,7 @@ type: docs
 weight: 1590
 url: /vi/net/programming-with-tables/
 ---
-Các hướng dẫn của Aspose.Words for .NET về Xử lý văn bản bằng bảng sẽ hướng dẫn bạn các tính năng và kỹ thuật khác nhau để thao tác với bảng trong tài liệu Word của bạn. Bạn sẽ tìm hiểu cách tạo, sửa đổi và định dạng bảng cũng như cách thêm ô, hàng và cột một cách linh hoạt. Những hướng dẫn này sẽ cung cấp cho bạn hướng dẫn chi tiết từng bước, ví dụ mã rõ ràng và giải thích để giúp bạn nắm vững thao tác bảng trong Aspose.Words cho .NET.
+Các hướng dẫn của Aspose.Words for .NET về Xử lý văn bản bằng bảng sẽ hướng dẫn bạn các tính năng và kỹ thuật khác nhau để thao tác với bảng trong tài liệu Word của bạn. Bạn sẽ học cách tạo, sửa đổi và định dạng bảng cũng như cách thêm ô, hàng và cột một cách linh hoạt. Những hướng dẫn này sẽ cung cấp cho bạn hướng dẫn chi tiết từng bước, ví dụ mã rõ ràng và giải thích để giúp bạn nắm vững thao tác bảng trong Aspose.Words cho .NET.
 
 Cho dù bạn muốn điều chỉnh bố cục bảng, hợp nhất các ô, thêm tiêu đề cột hay sắp xếp dữ liệu bảng, các hướng dẫn sẽ chỉ cho bạn cách hoàn thành các tác vụ này một cách hiệu quả với Aspose.Words cho .NET. Bạn cũng sẽ tìm hiểu cách trích xuất và cập nhật dữ liệu bảng, thêm đường viền và áp dụng kiểu tùy chỉnh cho ô. Các hướng dẫn sẽ cung cấp cho bạn sự hiểu biết sâu sắc về thao tác trên bảng, cho phép bạn tạo các tài liệu Word chuyên nghiệp và có cấu trúc tốt.
 
@@ -32,8 +32,8 @@ Bằng cách làm theo các hướng dẫn này, bạn sẽ có thể khai thác
 | [Hợp nhất theo chiều ngang](./horizontal-merge/) | Tìm hiểu cách hợp nhất các ô theo chiều ngang trong bảng Word với Aspose.Words cho .NET. |
 | [Chuyển đổi sang các ô được hợp nhất theo chiều ngang](./convert-to-horizontally-merged-cells/) | Tìm hiểu cách chuyển đổi các ô của bảng thành các ô được hợp nhất theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET. |
 | [Lặp lại hàng trên các trang tiếp theo](./repeat-rows-on-subsequent-pages/) | Tìm hiểu cách lặp lại các hàng trong bảng trên các trang tiếp theo trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Tự động điều chỉnh theo chiều rộng trang](./auto-fit-to-page-width/) | Tìm hiểu cách tự động điều chỉnh bảng theo chiều rộng trang trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Cài đặt chiều rộng ưa thích](./preferred-width-settings/) | Tìm hiểu cách đặt độ rộng ô bảng ưa thích trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Tự động vừa với cửa sổ](./auto-fit-to-page-width/) | Dễ dàng tự động điều chỉnh bảng vừa vặn với cửa sổ trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn từng bước này. Hoàn hảo cho các tài liệu sạch hơn, chuyên nghiệp hơn. |
+| [Cài đặt chiều rộng ưa thích](./preferred-width-settings/) | Tìm hiểu cách tạo bảng với cài đặt độ rộng tuyệt đối, tương đối và tự động trong Aspose.Words cho .NET với hướng dẫn từng bước này. |
 | [Truy xuất loại chiều rộng ưa thích](./retrieve-preferred-width-type/) | Tìm hiểu cách truy xuất loại và giá trị độ rộng ưa thích của một ô trong bảng Word bằng Aspose.Words cho .NET. |
 | [Nhận vị trí bảng](./get-table-position/) | Tìm hiểu cách lấy vị trí của bảng trong tài liệu Word bằng Aspose.Words cho .NET. |
 | [Nhận vị trí bàn nổi](./get-floating-table-position/) | Tìm hiểu cách lấy vị trí của bảng nổi trong tài liệu Word bằng Aspose.Words cho .NET. |

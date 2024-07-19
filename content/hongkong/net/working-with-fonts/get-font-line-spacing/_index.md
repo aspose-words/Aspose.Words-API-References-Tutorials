@@ -45,7 +45,7 @@ builder. Writen("qText");
 現在我們將訪問`Font`文檔第一段的物件並檢索該值`LineSpacing`財產。
 
 ```csharp
-//取得字體的行距
+//取得字體的行間距
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```

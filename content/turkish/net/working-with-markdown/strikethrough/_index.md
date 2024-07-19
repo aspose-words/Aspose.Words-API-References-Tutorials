@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. Adım: Üstü çizili metin stilini uygulayın
 
-Üstü çizili metin stilini ayarlayarak etkinleştireceğiz`StrikeThrough` mülkiyeti`Font` itiraz etmek`true`.
+ Üstü çizili metin stilini ayarlayarak etkinleştireceğiz`StrikeThrough` mülkiyeti`Font` itiraz etmek`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

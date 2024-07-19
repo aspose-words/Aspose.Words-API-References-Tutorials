@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Etapa 2: aplicar estilo de texto tachado
 
-Habilitaremos o estilo de texto tachado definindo o`StrikeThrough` propriedade do`Font` opor-se a`true`.
+ Habilitaremos o estilo de texto tachado definindo o`StrikeThrough` propriedade do`Font` opor-se a`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

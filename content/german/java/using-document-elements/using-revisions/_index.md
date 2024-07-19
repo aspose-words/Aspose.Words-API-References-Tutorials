@@ -8,7 +8,7 @@ weight: 22
 url: /de/java/using-document-elements/using-revisions/
 ---
 
-Wenn Sie Java-Entwickler sind und mit Dokumenten arbeiten und Revisionskontrollen implementieren müssen, bietet Aspose.Words für Java eine Reihe leistungsstarker Tools, mit denen Sie Revisionen effektiv verwalten können. In diesem Tutorial führen wir Sie Schritt für Schritt durch die Verwendung der Revision in Aspose.Words für Java. 
+Wenn Sie Java-Entwickler sind und mit Dokumenten arbeiten und Revisionskontrollen implementieren möchten, bietet Aspose.Words für Java eine Reihe leistungsstarker Tools, mit denen Sie Revisionen effektiv verwalten können. In diesem Tutorial führen wir Sie Schritt für Schritt durch die Verwendung der Revision in Aspose.Words für Java. 
 
 ## 1. Einführung in Aspose.Words für Java
 
@@ -57,7 +57,7 @@ para = body.appendParagraph("Paragraph 4. ");
 
 ## 7. Akzeptieren und Ablehnen von Revisionen
 
-Mit Aspose.Words für Java können Sie Revisionen in Ihrem Dokument annehmen oder ablehnen. Revisionen können nach der Dokumenterstellung problemlos in Microsoft Word verwaltet werden.
+Sie können Revisionen in Ihrem Dokument mit Aspose.Words für Java annehmen oder ablehnen. Revisionen können nach der Generierung des Dokuments problemlos in Microsoft Word verwaltet werden.
 
 ## 8. Beenden der Revisionsverfolgung
 

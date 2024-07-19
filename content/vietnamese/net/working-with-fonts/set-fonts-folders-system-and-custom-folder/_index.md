@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Thêm nguồn thư mục mới sẽ hướng dẫn Aspose.Words tìm kiếm phông chữ trong thư mục sau.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Thêm thư mục tùy chỉnh chứa phông chữ của chúng tôi vào danh sách các nguồn phông chữ hiện có.
+// Thêm thư mục tùy chỉnh chứa phông chữ của chúng tôi vào danh sách các nguồn phông chữ hiện có.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

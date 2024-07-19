@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- In deze stap configureren we de opties voor het laden van het TXT-document. Wij creëren een nieuwe`TxtLoadOptions` bezwaar maken en instellen`LeadingSpacesOptions` En`TrailingSpacesOptions` eigenschappen aan`TxtLeadingSpacesOptions.Trim` En`TxtTrailingSpacesOptions.Trim` respectievelijk. Dit vertelt Aspose.Words om voorloop- en volgspaties uit regels te verwijderen bij het laden van het document.
+ In deze stap configureren we de opties voor het laden van het TXT-document. Wij creëren een nieuwe`TxtLoadOptions` bezwaar maken en instellen`LeadingSpacesOptions`En`TrailingSpacesOptions` eigenschappen aan`TxtLeadingSpacesOptions.Trim`En`TxtTrailingSpacesOptions.Trim` respectievelijk. Dit vertelt Aspose.Words om voorloop- en volgspaties uit regels te verwijderen bij het laden van het document.
 
 ## Stap 4: Het document laden
 

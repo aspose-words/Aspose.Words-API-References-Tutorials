@@ -2,114 +2,125 @@
 title: Ochrona tylko do odczytu w dokumencie programu Word
 linktitle: Ochrona tylko do odczytu w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak chronić dokumenty tylko do odczytu w programie Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak chronić dokumenty programu Word, stosując ochronę tylko do odczytu za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/document-protection/read-only-protection/
 ---
-tym samouczku przeprowadzimy Cię przez kolejne etapy korzystania z funkcji ochrony tylko do odczytu w Aspose.Words dla .NET. Ta funkcja umożliwia ustawienie dokumentu programu Word jako tylko do odczytu, aby zapobiec nieupoważnionym modyfikacjom. Wykonaj poniższe kroki:
+## Wstęp
 
-## Krok 1: Tworzenie dokumentu i zastosowanie ochrony
+Jeśli chodzi o zarządzanie dokumentami programu Word, czasami trzeba ustawić je jako tylko do odczytu, aby chronić ich zawartość. Niezależnie od tego, czy chodzi o udostępnianie ważnych informacji bez ryzyka przypadkowych zmian, czy o zapewnienie integralności dokumentów prawnych, ochrona tylko do odczytu jest cenną funkcją. W tym samouczku omówimy, jak zaimplementować ochronę tylko do odczytu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Przeprowadzimy Cię przez każdy krok w szczegółowy i wciągający sposób, dzięki czemu będziesz mógł łatwo wykonać wszystkie kroki.
 
-Zacznij od utworzenia instancji klasy Document i obiektu DocumentBuilder:
+## Warunki wstępne
+
+Zanim zagłębimy się w kod, musisz spełnić kilka warunków wstępnych:
+
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Można go pobrać z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Skonfiguruj środowisko programistyczne z zainstalowaną platformą .NET. Visual Studio to dobry wybór.
+3. Podstawowa znajomość języka C#: W tym samouczku założono, że masz podstawową wiedzę na temat programowania w języku C#.
+
+## Importuj przestrzenie nazw
+
+Najpierw upewnijmy się, że zaimportowaliśmy niezbędne przestrzenie nazw. Jest to kluczowe, ponieważ pozwala nam uzyskać dostęp do klas i metod, których potrzebujemy z Aspose.Words dla .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Krok 2: Zapisz treść w dokumencie
-Użyj obiektu DocumentBuilder, aby zapisać treść w dokumencie:
+## Krok 1: Skonfiguruj dokument
+
+W tym kroku utworzymy nowy dokument i kreator dokumentów. Stanowi to podstawę naszej działalności.
 
 ```csharp
-builder.Write("Open document as read-only");
-```
-
-## Krok 3: Ustaw hasło i ustaw dokument jako tylko do odczytu
-
-Ustaw hasło do dokumentu za pomocą właściwości SetPassword() obiektu WriteProtection:
-
-```csharp
-doc.WriteProtection.SetPassword("MyPassword");
-```
-
-Pamiętaj, aby zastąpić „Moje hasło” rzeczywistym hasłem, którego chcesz używać.
-
-## Krok 4: Zastosuj dokument tylko do odczytu
-
-Ustaw dokument tylko do odczytu, ustawiając właściwość ReadOnlyRecommended na true:
-
-```csharp
-doc.WriteProtection.ReadOnlyRecommended = true;
-```
-
-## Krok 5: Zastosuj ochronę tylko do odczytu i zapisz dokument
-
-Na koniec zastosuj ochronę tylko do odczytu za pomocą metody Protect() obiektu Document:
-
-```csharp
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-```
-
-Pamiętaj, aby podać poprawną ścieżkę i nazwę pliku, aby zapisać chroniony dokument.
-
-### Przykładowy kod źródłowy ochrony tylko do odczytu przy użyciu Aspose.Words dla .NET
-
-Oto kompletny kod źródłowy ochrony tylko do odczytu przy użyciu Aspose.Words dla .NET:
-
-```csharp
-
 // Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
+// Napisz jakiś tekst do dokumentu.
 builder.Write("Open document as read-only");
-
-// Wprowadź hasło o długości do 15 znaków.
-doc.WriteProtection.SetPassword("MyPassword");
-
-// Ustaw dokument jako tylko do odczytu.
-doc.WriteProtection.ReadOnlyRecommended = true;
-
-// Zastosuj ochronę przed zapisem jako tylko do odczytu.
-doc.Protect(ProtectionType.ReadOnly);
-doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
-
 ```
 
-Wykonując poniższe kroki, możesz łatwo chronić swoje dokumenty
+Wyjaśnienie:
+
+- Zaczynamy od zdefiniowania ścieżki katalogu, w którym zostanie zapisany dokument.
+-  Nowy`Document` obiekt jest tworzony, oraz a`DocumentBuilder` jest z tym powiązany.
+- Za pomocą kreatora dodajemy do dokumentu prostą linijkę tekstu.
+
+## Krok 2: Ustaw hasło ochrony przed zapisem
+
+Następnie musimy ustawić hasło zabezpieczające przed zapisem. To hasło może mieć maksymalnie 15 znaków.
+
+```csharp
+//Wprowadź hasło o długości do 15 znaków.
+doc.WriteProtection.SetPassword("MyPassword");
+```
+
+Wyjaśnienie:
+
+-  The`SetPassword` metoda jest wywoływana na`WriteProtection` własność dokumentu.
+- Podajemy hasło (w tym przypadku „Moje hasło”), które będzie wymagane do usunięcia ochrony.
+
+## Krok 3: Włącz zalecenie tylko do odczytu
+
+Na tym etapie ustawiamy dokument jako zalecany tylko do odczytu. Oznacza to, że po otwarciu dokumentu użytkownik zostanie poproszony o otwarcie go w trybie tylko do odczytu.
+
+```csharp
+// Ustaw dokument jako zalecany tylko do odczytu.
+doc.WriteProtection.ReadOnlyRecommended = true;
+```
+
+Wyjaśnienie:
+
+-  The`ReadOnlyRecommended` właściwość jest ustawiona na`true`.
+- Spowoduje to monitowanie użytkowników o otwarcie dokumentu w trybie tylko do odczytu, chociaż mogą zignorować to zalecenie.
+
+## Krok 4: Zastosuj ochronę tylko do odczytu
+
+Na koniec stosujemy ochronę dokumentu tylko do odczytu. Ten krok wymusza ochronę.
+
+```csharp
+// Zastosuj ochronę przed zapisem jako tylko do odczytu.
+doc.Protect(ProtectionType.ReadOnly);
+```
+
+Wyjaśnienie:
+
+-  The`Protect` metoda jest wywoływana w dokumencie za pomocą`ProtectionType.ReadOnly` jako argument.
+- Ta metoda wymusza ochronę tylko do odczytu, uniemożliwiając jakąkolwiek modyfikację dokumentu bez hasła.
+
+## Krok 5: Zapisz dokument
+
+Ostatnim krokiem jest zapisanie dokumentu z zastosowanymi ustawieniami ochrony.
+
+```csharp
+// Zapisz chroniony dokument.
+doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
+```
+
+Wyjaśnienie:
+
+-  The`Save` metoda jest wywoływana na dokumencie, podając ścieżkę i nazwę pliku.
+- Dokument zostanie zapisany z włączonym zabezpieczeniem tylko do odczytu.
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy funkcję ochrony tylko do odczytu w Aspose.Words dla .NET, która pozwala ustawić dokumenty programu Word jako tylko do odczytu, aby zapobiec nieautoryzowanym modyfikacjom. Wykonując podane kroki, możesz łatwo zastosować ochronę tylko do odczytu dla swoich dokumentów i zwiększyć ich bezpieczeństwo. Ochrona tylko do odczytu pomaga zapewnić integralność i dokładność treści dokumentu, ograniczając możliwości edycji. Aspose.Words dla .NET zapewnia potężny i elastyczny interfejs API do obsługi ochrony dokumentów i obsługuje różne inne funkcje umożliwiające dostosowywanie i zabezpieczanie dokumentów programu Word.
+I masz to! Pomyślnie utworzyłeś dokument programu Word chroniony tylko do odczytu przy użyciu Aspose.Words dla .NET. Ta funkcja zapewnia, że zawartość dokumentu pozostanie nienaruszona i niezmieniona, zapewniając dodatkową warstwę bezpieczeństwa. Niezależnie od tego, czy udostępniasz poufne informacje, czy dokumenty prawne, ochrona tylko do odczytu jest niezbędnym narzędziem w Twoim arsenale zarządzania dokumentami.
 
-### Często zadawane pytania dotyczące ochrony tylko do odczytu w dokumencie programu Word
+## Często zadawane pytania
 
-#### P: Co to jest ochrona tylko do odczytu w Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka, która pozwala programistom tworzyć, modyfikować, konwertować i chronić dokumenty programu Word programowo przy użyciu języka C# lub innych języków .NET.
 
-O: Ochrona tylko do odczytu w Aspose.Words dla .NET to funkcja, która pozwala ustawić dokument programu Word jako tylko do odczytu, zapobiegając nieautoryzowanym modyfikacjom. Gdy dokument jest ustawiony jako tylko do odczytu, użytkownicy mogą go otwierać i przeglądać, ale nie mogą wprowadzać żadnych zmian w jego zawartości.
+### Czy mogę usunąć ochronę tylko do odczytu z dokumentu?
+ Tak, możesz usunąć ochronę tylko do odczytu, używając`Unprotect` metodę i podaniu prawidłowego hasła.
 
-#### P: Jak mogę zastosować ochronę tylko do odczytu do dokumentu programu Word przy użyciu Aspose.Words dla .NET?
+### Czy hasło ustawione w dokumencie jest zaszyfrowane?
+Tak, Aspose.Words szyfruje hasło, aby zapewnić bezpieczeństwo chronionego dokumentu.
 
-Odp.: Aby zastosować ochronę tylko do odczytu do dokumentu programu Word za pomocą Aspose.Words dla .NET, możesz wykonać następujące kroki:
-1.  Utwórz instancję`Document` klasa i A`DocumentBuilder` obiekt.
-2.  Użyj`DocumentBuilder` aby zapisać treść w dokumencie.
-3.  Ustaw hasło do dokumentu za pomocą`SetPassword` metoda`WriteProtection` obiekt.
-4.  Ustaw`ReadOnlyRecommended` własność`WriteProtection` oponować`true` aby zalecić otwarcie dokumentu w trybie tylko do odczytu.
-5.  Zastosuj ochronę tylko do odczytu za pomocą`Protect` metoda`Document` obiekt, określając`ProtectionType` Jak`ReadOnly`.
-6.  Zapisz chroniony dokument za pomocą`Save` metoda`Document` obiekt.
+### Czy mogę zastosować inne rodzaje ochrony za pomocą Aspose.Words dla .NET?
+Tak, Aspose.Words dla .NET obsługuje różne rodzaje ochrony, w tym zezwalanie tylko na komentowanie, wypełnianie formularzy lub śledzenie zmian.
 
-#### P: Czy mogę usunąć ochronę tylko do odczytu z dokumentu programu Word przy użyciu Aspose.Words dla .NET?
-
-Odp.: Tak, możesz usunąć ochronę tylko do odczytu z dokumentu programu Word za pomocą Aspose.Words dla .NET. Aby to zrobić, możesz użyć`Unprotect` metoda`Document` class, która usuwa wszelką istniejącą ochronę z dokumentu.
-
-#### P: Czy mogę ustawić inne hasło w celu ochrony tylko do odczytu w dokumencie programu Word?
-
- O: Nie, ochrona tylko do odczytu w Aspose.Words dla .NET nie pozwala na ustawienie osobnego hasła specjalnie dla ochrony tylko do odczytu. Hasło ustawione za pomocą`SetPassword` metoda`WriteProtection` obiekt dotyczy ogólnej ochrony dokumentów, obejmującej zarówno ochronę tylko do odczytu, jak i ochronę do odczytu i zapisu.
-
-#### P: Czy użytkownicy mogą ominąć ochronę tylko do odczytu w dokumencie programu Word?
-
-O: Ochrona dokumentu programu Word tylko do odczytu ma na celu zniechęcanie do przypadkowych lub nieautoryzowanych modyfikacji i zapobieganie im. Chociaż zapewnia poziom ochrony, może zostać ominięty przez użytkowników posiadających wystarczającą wiedzę techniczną lub uprawnienia do edycji. Jednakże ochrona tylko do odczytu działa odstraszająco i pomaga zachować integralność dokumentu.
+### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+ Tak, możesz pobrać bezpłatną wersję próbną ze strony[Strona z wydaniami Aspose](https://releases.aspose.com/).

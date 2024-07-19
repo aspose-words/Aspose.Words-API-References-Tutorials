@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## Langkah 3: Dapatkan Jenis Node Dokumen
- Untuk mendapatkan tipe node suatu dokumen, kami menggunakan`NodeType` Properti.
+Untuk mendapatkan tipe node suatu dokumen, kami menggunakan`NodeType` Properti.
 
 ```csharp
 NodeType type = doc.NodeType;

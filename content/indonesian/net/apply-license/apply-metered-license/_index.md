@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Metered;
 ```
 
-Baiklah, mari kita uraikan. Kami akan melalui prosesnya selangkah demi selangkah, sehingga Anda tidak akan melewatkan apa pun.
+Baiklah, mari kita uraikan. Kami akan melalui prosesnya langkah demi langkah, sehingga Anda tidak akan melewatkan apa pun.
 
 ## Langkah 1: Inisialisasi Kelas Terukur
 
@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Mengganti`"your_public_key"` Dan`"your_private_key"`dengan kunci sebenarnya yang Anda terima dari Aspose. Langkah ini pada dasarnya memberitahu Aspose bahwa Anda ingin menggunakan lisensi terukur.
+ Mengganti`"your_public_key"`Dan`"your_private_key"`dengan kunci sebenarnya yang Anda terima dari Aspose. Langkah ini pada dasarnya memberitahu Aspose bahwa Anda ingin menggunakan lisensi terukur.
 
 ## Langkah 3: Muat Dokumen Anda
 

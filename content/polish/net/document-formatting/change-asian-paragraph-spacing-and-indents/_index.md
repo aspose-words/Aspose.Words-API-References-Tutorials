@@ -106,4 +106,4 @@ Tak, te ustawienia można zastosować do dowolnego tekstu, ale są one szczegól
 Absolutnie! Można przeglądać kolekcję dokumentów i programowo stosować te ustawienia do każdego z nich.
 
 ### Co się stanie, jeśli napotkam problemy lub będę mieć pytania?
-Jeśli napotkasz jakiekolwiek problemy lub masz dodatkowe pytania,[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) to świetne miejsce, aby szukać pomocy.
+ Jeśli napotkasz jakiekolwiek problemy lub masz dodatkowe pytania,[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) to świetne miejsce, aby szukać pomocy.

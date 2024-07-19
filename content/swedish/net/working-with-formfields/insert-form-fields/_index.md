@@ -14,7 +14,7 @@ I denna steg-för-steg handledning kommer vi att guida dig om hur du infogar for
 
 ## Steg 1: Initiera Document- och DocumentBuilder-objekten
 
- Initiera först`Document` och`DocumentBuilder` föremål:
+ Initiera först`Document`och`DocumentBuilder` föremål:
 
 ```csharp
 Document doc = new Document();

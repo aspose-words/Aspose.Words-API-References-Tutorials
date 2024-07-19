@@ -68,7 +68,7 @@ V: Abszolút! Az Aspose.Words számos betöltési lehetőséget kínál, amelyek
 
 V: A piszkos mezők frissítése biztosítja, hogy a C#-alkalmazás a Word dokumentumok legfrissebb adatait jelenítse meg, javítva az általános felhasználói élményt és az információk pontosságát.
 
-#### K: Az Aspose.Word képes-e más dokumentumformátumokat is kezelni a Word mellett?
+#### K: Az Aspose.Word képes más dokumentumformátumokat is kezelni a Word mellett?
 
 V: Igen, az Aspose.Words különféle dokumentumformátumokat támogat, beleértve a PDF-t, HTML-t, EPUB-t és még sok mást, így átfogó megoldást kínál a dokumentumok kezeléséhez különböző platformokon.
 

@@ -19,7 +19,7 @@ A kezdéshez hozzon létre egy új C#-projektet kedvenc IDE-jében. Győződjön
 Ebben a lépésben betöltjük azt a Word dokumentumot, amelyet HTML-be szeretnénk konvertálni. A dokumentum betöltéséhez használja a következő kódot:
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
+// dokumentumok könyvtár elérési útja.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Ez a kód létrehozza a`HtmlSaveOptions` és beállítja`CssStyleSheetType` nak nek`CssStyleSheetType.External`külső CSS stíluslap létrehozásához, és`CssClassNamePrefix` nak nek`"pfx_"` előtaghoz`"pfx_"` a CSS osztály megnevezéséhez.
+ Ez a kód létrehozza a`HtmlSaveOptions` és beállítja`CssStyleSheetType` nak nek`CssStyleSheetType.External` külső CSS stíluslap létrehozásához, és`CssClassNamePrefix` nak nek`"pfx_"` előtaghoz`"pfx_"` a CSS osztály megnevezéséhez.
 
 ## 4. lépés: A dokumentum konvertálása és mentése HTML formátumba
 

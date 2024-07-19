@@ -122,7 +122,7 @@ public class ExtractListItemsExample {
 Ja, Sie können die Formatierung von Listenelementen, einschließlich Schriftart, Größe, Farbe und mehr, mit den Formatierungsfunktionen von Aspose.Words für Java anpassen.
 
 ### Ist Aspose.Words für Java mit verschiedenen Dokumentformaten kompatibel?
-Absolut! Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, darunter DOCX, PDF, HTML und mehr.
+Auf jeden Fall! Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, darunter DOCX, PDF, HTML und mehr.
 
 ### Wie kann ich eine Dokumentliste in PDF konvertieren?
 Um eine Dokumentliste in PDF zu konvertieren, laden Sie das Dokument einfach mit Aspose.Words für Java und speichern Sie es im PDF-Format. So einfach geht das!

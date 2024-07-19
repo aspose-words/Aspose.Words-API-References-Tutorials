@@ -17,7 +17,7 @@ Om deze tutorial te volgen, heb je het volgende nodig:
 - Basiskennis van C# en woordenverwerking met Word-documenten.
 
 ## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+ Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,7 +43,7 @@ para.Runs.Add(run);
 ```
 
 ## Stap 4: Voeg de Rich Text-inhoud toe aan het inhoudsbesturingselement
-Voeg de alinea met de rich-text-inhoud toe aan het`ChildNodes` verzameling van het inhoudsbesturingselement voor het rijke tekstvak.
+ Voeg de alinea met de rich-text-inhoud toe aan het`ChildNodes` verzameling van het inhoudsbesturingselement voor het rijke tekstvak.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);

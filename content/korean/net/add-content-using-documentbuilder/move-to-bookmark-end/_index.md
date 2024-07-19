@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. 북마크의 끝 부분이 아닌 시작 부분으로 이동할 수 있나요?
 
- 전적으로! 그냥 설정하세요`isBookmarkStart` 매개변수`true` 그리고`isBookmarkEnd` 에게`false` 에서`MoveToBookmark` 방법.
+ 전적으로! 그냥 설정하세요`isBookmarkStart` 매개변수`true`그리고`isBookmarkEnd` 에게`false` 에서`MoveToBookmark` 방법.
 
 ### 2. 북마크 이름이 올바르지 않으면 어떻게 되나요?
 
@@ -142,8 +142,8 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 4. Aspose.Words에 대한 임시 라이선스는 어떻게 얻나요?
 
- 임시면허를 발급받으실 수 있습니다.[Aspose 웹사이트](https://purchase.aspose.com/temporary-license/).
+ 임시면허를 발급받으실 수 있습니다.[Aspose 웹 사이트](https://purchase.aspose.com/temporary-license/).
 
 ### 5. .NET용 Aspose.Words는 무료인가요?
 
-Aspose.Words for .NET은 상용 제품이지만 다음 사이트에서 무료 평가판을 받을 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/).
+Aspose.Words for .NET은 상용 제품이지만 다음 사이트에서 무료 평가판을 받을 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).

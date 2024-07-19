@@ -75,7 +75,7 @@ Odp.: Aspose.Words dla .NET to potężna biblioteka do przetwarzania tekstu w do
 
 #### P: Jak załadować dokument Word przy użyciu Aspose.Words dla .NET?
 
-Odp.: Aby załadować dokument Word przy użyciu Aspose.Words dla .NET, możesz użyć`Document` klasa i jej konstruktor. Jako parametr musisz podać ścieżkę pliku lub strumień dokumentu. Oto przykład:
+ Odp.: Aby załadować dokument Word przy użyciu Aspose.Words dla .NET, możesz użyć`Document` klasa i jej konstruktor. Jako parametr musisz podać ścieżkę pliku lub strumień dokumentu. Oto przykład:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

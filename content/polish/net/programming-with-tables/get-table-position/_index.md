@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Tutaj używamy warunku, aby sprawdzić, czy tablica jest typu float. Jeśli tak, drukujemy`RelativeHorizontalAlignment` I`RelativeVerticalAlignment` właściwości, aby uzyskać względne wyrównanie tabeli w poziomie i pionie. W przeciwnym razie drukujemy`Alignment` właściwość, aby uzyskać wyrównanie tablicy.
+ Tutaj używamy warunku, aby sprawdzić, czy tablica jest typu float. Jeśli tak, drukujemy`RelativeHorizontalAlignment`I`RelativeVerticalAlignment` właściwości, aby uzyskać względne wyrównanie tabeli w poziomie i pionie. W przeciwnym razie drukujemy`Alignment` właściwość, aby uzyskać wyrównanie tablicy.
 
 ### Przykładowy kod źródłowy funkcji Get Table Position przy użyciu Aspose.Words dla platformy .NET 
 

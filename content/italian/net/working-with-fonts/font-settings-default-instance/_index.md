@@ -17,7 +17,7 @@ Prima di iniziare, assicurati di avere quanto segue:
 - Conoscenza di base di C#: la familiarità con la programmazione C# ti aiuterà a comprendere e implementare i passaggi senza problemi.
 -  Libreria Aspose.Words per .NET: scarica e installa Aspose.Words per .NET da[Link per scaricare](https://releases.aspose.com/words/net/).
 - Ambiente di sviluppo: un ambiente adatto come Visual Studio per scrivere ed eseguire il codice.
--  Documento di esempio: un documento di esempio (ad es.`Rendering.docx`) per applicare le impostazioni del carattere.
+- Documento di esempio: un documento di esempio (ad es.`Rendering.docx`) per applicare le impostazioni del carattere.
 
 ## Importa spazi dei nomi
 
@@ -55,7 +55,7 @@ In questo esempio:
 
 ## Passaggio 3: caricare il documento
 
-Con le origini dei caratteri configurate, il passaggio successivo è caricare il documento in un Aspose.Words`Document` oggetto. Ciò consente di manipolare ed eventualmente salvare il documento.
+ Con le origini dei caratteri configurate, il passaggio successivo è caricare il documento in un Aspose.Words`Document` oggetto. Ciò consente di manipolare ed eventualmente salvare il documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Congratulazioni! Hai imparato le basi della gestione delle impostazioni dei cara
 
 ### Q1: Posso utilizzare caratteri da più cartelle personalizzate?
 
- Sì, puoi specificarne più di uno`FolderFontSource`istanze all'interno del`SetFontsSources` metodo per includere caratteri da cartelle diverse.
+ Sì, puoi specificarne più di uno`FolderFontSource` istanze all'interno del`SetFontsSources` metodo per includere caratteri da cartelle diverse.
 
 ### Q2: Come posso ottenere una prova gratuita di Aspose.Words per .NET?
 

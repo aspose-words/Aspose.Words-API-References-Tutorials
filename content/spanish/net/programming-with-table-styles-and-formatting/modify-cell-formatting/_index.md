@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Paso 3: Ir a la celda a modificar
- Para cambiar el formato de una celda, debemos navegar hasta la celda específica de la tabla. Usamos el`GetChild()` y`FirstRow.FirstCell` métodos para obtener la referencia a la primera celda de la primera matriz.
+ Para cambiar el formato de una celda, debemos navegar hasta la celda específica de la tabla. Usamos el`GetChild()`y`FirstRow.FirstCell` métodos para obtener la referencia a la primera celda de la primera matriz.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

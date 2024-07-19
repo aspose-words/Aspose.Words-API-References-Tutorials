@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/working-with-textboxes/create-a-link/
 ---
-本分步指南介绍如何使用 .NET 的 Aspose.Words 库在 Word 文档的两个文本框之间创建链接。您将学习如何配置文档、创建文本框形状、访问文本框、检查链接目标的有效性以及最终创建链接本身。
+本分步指南介绍如何使用 .NET 的 Aspose.Words 库在 Word 文档中的两个文本框之间创建链接。您将学习如何配置文档、创建文本框形状、访问文本框、检查链接目标的有效性以及最终创建链接本身。
 
 ## 步骤 1：设置文档并创建 TextBox 形状
 

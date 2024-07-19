@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3. lépés: Nyissa meg a sort a módosításhoz
- Egy táblázatsor formázásának megváltoztatásához a táblázatban az adott sorhoz kell navigálnunk. Használjuk a`GetChild()` és`FirstRow` módszerek a táblázat első sorára való hivatkozás lekéréséhez.
+ Egy táblázatsor formázásának megváltoztatásához a táblázatban az adott sorhoz kell navigálnunk. Használjuk a`GetChild()`és`FirstRow` módszerek a táblázat első sorára való hivatkozás lekéréséhez.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

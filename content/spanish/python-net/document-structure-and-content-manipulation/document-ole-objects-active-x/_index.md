@@ -99,4 +99,4 @@ Si el control ActiveX no funciona, puede deberse a la configuración de segurida
 
 ## Conclusión
 
-La incorporación de objetos OLE y controles ActiveX usando Aspose.Words para Python abre un mundo de posibilidades para crear documentos de Word dinámicos e interactivos. Ya sea que desee incorporar hojas de cálculo, multimedia o formularios interactivos, esta función le permite comunicar sus ideas de manera efectiva.
+La incorporación de objetos OLE y controles ActiveX utilizando Aspose.Words para Python abre un mundo de posibilidades para crear documentos de Word dinámicos e interactivos. Ya sea que desee incorporar hojas de cálculo, multimedia o formularios interactivos, esta función le permite comunicar sus ideas de manera efectiva.

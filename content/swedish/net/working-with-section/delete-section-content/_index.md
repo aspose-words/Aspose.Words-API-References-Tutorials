@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Steg 3: Ta bort avsnittsinnehåll
-För att rensa avsnittets innehåll använder vi avsnittets`ClearContent` metod.
+ För att rensa avsnittets innehåll använder vi avsnittets`ClearContent` metod.
 
 ```csharp
 section.ClearContent();
@@ -61,7 +61,7 @@ I den här handledningen såg vi hur man tar bort innehåll från en specifik de
 
 #### F: Hur ställer jag in dokumentkatalogen i Aspose.Words för .NET?
 
- S: För att ställa in sökvägen till katalogen som innehåller dina dokument måste du ersätta`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg. Så här gör du:
+S: För att ställa in sökvägen till katalogen som innehåller dina dokument måste du ersätta`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg. Så här gör du:
 
 ```csharp
 // Sökväg till din dokumentkatalog

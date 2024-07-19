@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Заменять`"Your Document Directory"` и`"Your Output Directory"` с соответствующими путями.
+ Заменять`"Your Document Directory"`и`"Your Output Directory"` с соответствующими путями.
 
 ## 4. Настройка слияния почты
 

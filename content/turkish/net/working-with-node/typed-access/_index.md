@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Tablonun ilk satırına hızlı ve yazılı erişim.
+     //Tablonun ilk satırına hızlı ve yazılı erişim.
      table.FirstRow?.Remove();
 
      // Tablonun son satırına hızlı ve yazılı erişim.

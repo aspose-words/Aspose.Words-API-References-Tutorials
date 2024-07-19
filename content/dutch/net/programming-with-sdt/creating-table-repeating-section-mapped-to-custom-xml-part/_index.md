@@ -17,7 +17,7 @@ Om deze tutorial te volgen, heb je het volgende nodig:
 - Basiskennis van C# en woordenverwerking met Word-documenten.
 
 ## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+ Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Stap 4: Maak een tabel en tabelstructuur
- Begin met het maken van een tabel met behulp van de`StartTable` werkwijze van de`DocumentBuilder` . Voeg tabelcellen en inhoud toe met behulp van de`InsertCell` En`Write` methoden.
+ Begin met het maken van een tabel met behulp van de`StartTable` werkwijze van de`DocumentBuilder` . Voeg tabelcellen en inhoud toe met behulp van de`InsertCell`En`Write` methoden.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Maak een`Row`om elk item in de herhalende sectie weer te geven en toe te voegen aan het herhalende sectie-item.
+ Maak een`Row` om elk item in de herhalende sectie weer te geven en toe te voegen aan het herhalende sectie-item.
 
 ```csharp
 Row row = new Row(doc);

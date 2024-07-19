@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Krok 3: Získejte vzdálenost mezi tabulkou a okolním textem
- Abychom získali vzdálenost mezi tabulkou a okolním textem, musíme k tabulce v dokumentu přistupovat pomocí`GetChild()` metoda a`NodeType.Table` vlastnictví. Potom můžeme zobrazit různé vzdálenosti pomocí vlastností pole`DistanceTop`, `DistanceBottom`, `DistanceRight` a`DistanceLeft`.
+ Abychom získali vzdálenost mezi tabulkou a okolním textem, musíme k tabulce v dokumentu přistupovat pomocí`GetChild()` metoda a`NodeType.Table` vlastnictví. Potom můžeme zobrazit různé vzdálenosti pomocí vlastností pole`DistanceTop`, `DistanceBottom`, `DistanceRight`a`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

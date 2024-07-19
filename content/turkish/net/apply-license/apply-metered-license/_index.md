@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Yer değiştirmek`"your_public_key"` Ve`"your_private_key"`Aspose'tan aldığınız gerçek anahtarlarla. Bu adım aslında Aspose'a ölçülü lisans kullanmak istediğinizi bildirir.
+ Yer değiştirmek`"your_public_key"`Ve`"your_private_key"`Aspose'tan aldığınız gerçek anahtarlarla. Bu adım aslında Aspose'a ölçülü lisans kullanmak istediğinizi bildirir.
 
 ## 3. Adım: Belgenizi Yükleyin
 

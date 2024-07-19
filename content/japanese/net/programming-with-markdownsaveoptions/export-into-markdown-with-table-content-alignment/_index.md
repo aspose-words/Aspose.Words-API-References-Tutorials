@@ -61,7 +61,7 @@ doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
 
 さまざまなテーブル コンテンツの配置で Markdown エクスポート オプションを設定し、各配置オプションを使用して変更されたドキュメントを保存します。
 
-### Aspose.Words for .NET を使用してテーブル コンテンツの位置合わせを行った Markdown にエクスポートするサンプル ソース コード
+### Aspose.Words for .NET を使用してテーブル コンテンツを揃えて Markdown にエクスポートするサンプル ソース コード
 
 ```csharp
 

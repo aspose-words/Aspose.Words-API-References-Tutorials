@@ -1,6 +1,6 @@
 ---
-title: Dokumentformate in Word abrufen
-linktitle: Dokumentformate in Word abrufen
+title: Dokumentformatvorlagen in Word abrufen
+linktitle: Dokumentformatvorlagen in Word abrufen
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Dokumentstile in Word erhalten. Vollständiges Tutorial zum Bearbeiten der Stile Ihrer Dokumente.
 type: docs

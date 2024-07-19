@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/working-with-node/use-node-type/
 ---
 
-以下是解釋 C# 原始程式碼的逐步指南，說明如何將節點類型功能與 Aspose.Words for .NET 一起使用。
+以下是解釋 C# 原始程式碼的逐步指南，說明如何在 Aspose.Words for .NET 中使用節點類型功能。
 
 ## 第 1 步：導入必要的參考文獻
 在開始之前，請確保您已將使用 Aspose.Words for .NET 所需的參考匯入到您的專案中。這包括匯入 Aspose.Words 庫並將所需的命名空間新增至來源檔案。
@@ -50,7 +50,7 @@ NodeType type = doc.NodeType;
 
 #### Q：如何使用Node Type來操作XML文件中的節點？
 
-答：您可以使用節點類型來識別和操作 XML 文件中不同類型的節點。例如，您可以檢查節點是否是元素、文字、屬性等，然後執行對應的特定操作。
+答：您可以使用節點類型來識別和操作 XML 文件中不同類型的節點。例如，您可以檢查節點是否為元素、文字、屬性等，然後相應地執行特定操作。
 
 #### Q：Node Type 常用的節點類型有哪些？
 

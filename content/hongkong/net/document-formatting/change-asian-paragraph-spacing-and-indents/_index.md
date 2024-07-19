@@ -89,7 +89,7 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 更改 Word 文件中的亞洲段落間距和縮排。這並不難，不是嗎？透過執行這些步驟，即使在處理複雜的亞洲版式時，您也可以確保您的文件看起來專業且格式良好。不斷嘗試不同的值，看看什麼最適合您的文件。快樂編碼！
+現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 更改 Word 文件中的亞洲段落間距和縮排。這並不難，不是嗎？透過執行這些步驟，即使在處理複雜的亞洲版式時，您也可以確保您的文件看起來專業且格式良好。不斷嘗試不同的值，看看什麼最適合您的文件。快樂編碼！
 
 ## 常見問題解答
 

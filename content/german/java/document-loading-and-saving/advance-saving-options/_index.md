@@ -10,7 +10,7 @@ url: /de/java/document-loading-and-saving/advance-saving-options/
 
 # Schritt-für-Schritt-Anleitung: Erweiterte Speicheroptionen mit Aspose.Words für Java
 
-Im heutigen digitalen Zeitalter ist die Dokumentenbearbeitung eine alltägliche Aufgabe für Entwickler. Ob es um die Verschlüsselung von Dokumenten, die Handhabung von Metadateien oder die Verwaltung von Bildaufzählungszeichen geht, Aspose.Words für Java bietet eine leistungsstarke API zur Optimierung dieser Prozesse. In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für Java erweiterte Speicheroptionen nutzen können.
+Im heutigen digitalen Zeitalter ist die Dokumentbearbeitung eine alltägliche Aufgabe für Entwickler. Ob es um die Verschlüsselung von Dokumenten, die Handhabung von Metadateien oder die Verwaltung von Bildaufzählungszeichen geht, Aspose.Words für Java bietet eine leistungsstarke API zur Optimierung dieser Prozesse. In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für Java erweiterte Speicheroptionen nutzen können.
 
 ## Einführung in Aspose.Words für Java
 
@@ -58,7 +58,7 @@ public void doNotCompressSmallMetafiles() throws Exception {
 
 ## Vermeiden des Speicherns von Bildaufzählungszeichen
 
-Aufzählungszeichen mit Bildern können auffallen, aber Sie möchten sie vielleicht vermeiden. So geht's:
+Aufzählungszeichen mit Bildern können auffallen, aber Sie sollten sie vielleicht vermeiden. So geht's:
 
 ```java
 @Test
@@ -113,7 +113,7 @@ Herzlichen Glückwunsch! Sie haben gelernt, wie Sie mit Aspose.Words für Java e
 
 ### 1. Ist Aspose.Words für Java eine kostenlose Bibliothek?
 
- Nein, Aspose.Words für Java ist eine kommerzielle Bibliothek. Lizenzdetails finden Sie hier[Hier](https://purchase.aspose.com/buy).
+ Nein, Aspose.Words für Java ist eine kommerzielle Bibliothek. Lizenzdetails finden Sie[Hier](https://purchase.aspose.com/buy).
 
 ### 2. Wie kann ich eine kostenlose Testversion von Aspose.Words für Java erhalten?
 

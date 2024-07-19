@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Seitennummerierung
 
- Sie können Seitenzahlen in Ihre Kopf- und Fußzeilen einfügen, indem Sie Felder wie`PAGE` Und`NUMPAGES`. Diese Felder werden automatisch aktualisiert, wenn Sie Seiten hinzufügen oder entfernen.
+ Sie können Seitenzahlen in Ihre Kopf- und Fußzeilen einfügen, indem Sie Felder wie`PAGE`Und`NUMPAGES`. Diese Felder werden automatisch aktualisiert, wenn Sie Seiten hinzufügen oder entfernen.
 
 ## 9. Copyright-Informationen in Fußzeilen
 
@@ -147,7 +147,7 @@ Vergessen Sie nicht, Ihr Dokument nach der Erstellung und Anpassung mit dem`doc.
         builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
         builder.write("Aspose.Words Header/Footer Creation Primer.");
         builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-        // Wir verwenden eine Tabelle mit zwei Zellen, um einen Teiltext in der Zeile darzustellen (mit Seitennummerierung).
+        // Wir verwenden eine Tabelle mit zwei Zellen, um einen Textteil in der Zeile darzustellen (mit Seitennummerierung).
         // Soll linksbündig ausgerichtet sein, der restliche Textteil (mit Copyright) rechtsbündig.
         builder.startTable();
         builder.getCellFormat().clearFormatting();

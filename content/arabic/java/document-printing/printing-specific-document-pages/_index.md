@@ -27,7 +27,7 @@ url: /ar/java/document-printing/printing-specific-document-pages/
 
 ## إضافة تبعية Aspose.Words
 
-لاستخدام Aspose.Words for Java في مشروعك، تحتاج إلى إضافة ملف Aspose.Words JAR باعتباره تبعية. يمكنك تنزيل المكتبة من موقع Aspose أو استخدام أداة إنشاء مثل Maven أو Gradle لإدارة التبعيات.
+لاستخدام Aspose.Words for Java في مشروعك، تحتاج إلى إضافة ملف Aspose.Words JAR باعتباره تبعية. يمكنك تنزيل المكتبة من موقع Aspose الإلكتروني أو استخدام أداة إنشاء مثل Maven أو Gradle لإدارة التبعيات.
 
 ```xml
 <!-- Add Aspose.Words dependency in your pom.xml if using Maven -->
@@ -94,7 +94,7 @@ doc.print(printOptions);
 
 ### كيف يمكنني ضبط خيارات الطباعة الإضافية، مثل اتجاه الصفحة وحجم الورق؟
 
- يمكنك تعيين خيارات طباعة إضافية، مثل اتجاه الصفحة وحجم الورق، عن طريق تكوين`PrintOptions` الكائن قبل طباعة المستند. استخدم أساليب مثل`setOrientation` و`setPaperSize` لتخصيص إعدادات الطباعة.
+ يمكنك تعيين خيارات طباعة إضافية، مثل اتجاه الصفحة وحجم الورق، عن طريق تكوين`PrintOptions` الكائن قبل طباعة المستند. استخدم أساليب مثل`setOrientation`و`setPaperSize` لتخصيص إعدادات الطباعة.
 
 ### هل تتوفر نسخة تجريبية من Aspose.Words لـ Java؟
 

@@ -52,7 +52,7 @@ doc.Sections.Add(sectionToAdd);
 
 ```
 ## Abschluss
-In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET einem Word-Dokument einen neuen Abschnitt hinzufügt. Indem Sie die beschriebenen Schritte befolgen, können Sie Ihr Dokument ganz einfach organisieren und strukturieren, indem Sie Abschnitte hinzufügen. Sie können den Inhalt und die Eigenschaften des Abschnitts gerne an Ihre spezifischen Bedürfnisse anpassen.
+In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET einem Word-Dokument einen neuen Abschnitt hinzufügt. Indem Sie die beschriebenen Schritte befolgen, können Sie Ihr Dokument ganz einfach organisieren und strukturieren, indem Sie Abschnitte hinzufügen. Sie können den Inhalt und die Eigenschaften des Abschnitts gerne an Ihre spezifischen Anforderungen anpassen.
 
 ### Häufig gestellte Fragen
 

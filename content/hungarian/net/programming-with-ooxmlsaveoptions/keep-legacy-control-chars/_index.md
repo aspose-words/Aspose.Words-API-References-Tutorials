@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Legacy control character.doc");
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
 ```
 
- Ebben a lépésben konfiguráljuk az OOXML mentési beállításait egy új létrehozásával`OoxmlSaveOptions` tárgy. Megadjuk a kívánt mentési formátumot (itt,`FlatOpc` ), és engedélyezze a`KeepLegacyControlChars` lehetőség a régi vezérlőkarakterek megtartására.
+ Ebben a lépésben konfiguráljuk az OOXML mentési beállításait egy új létrehozásával`OoxmlSaveOptions` tárgy. Megadjuk a kívánt mentési formátumot (itt,`FlatOpc` ), és engedélyezze a`KeepLegacyControlChars` lehetőség az örökölt vezérlőkarakterek megtartására.
 
 ## 4. lépés: A dokumentum mentése örökölt vezérlőkarakterekkel
 

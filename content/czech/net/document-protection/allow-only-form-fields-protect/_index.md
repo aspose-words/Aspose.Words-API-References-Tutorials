@@ -2,115 +2,100 @@
 title: Povolit ochranu pouze polí formuláře v dokumentu aplikace Word
 linktitle: Povolit ochranu pouze polí formuláře v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se používat Aspose.Words for .NET k ochraně v dokumentu aplikace Word a povolit pouze úpravy polí formuláře.
+description: Zjistěte, jak chránit dokumenty aplikace Word a umožnit úpravu pouze polí formuláře pomocí Aspose.Words for .NET. Postupujte podle našeho průvodce, abyste zajistili, že vaše dokumenty budou bezpečné a snadno upravitelné.
 type: docs
 weight: 10
 url: /cs/net/document-protection/allow-only-form-fields-protect/
 ---
-Ochrana dokumentů je základní funkcí při zpracování textu se soubory ve vaší aplikaci C#. S knihovnou Aspose.Words pro .NET můžete snadno chránit své dokumenty a povolit pouze úpravy polí formuláře. V tomto podrobném průvodci vás provedeme tím, jak používat zdrojový kód C#, aby bylo možné upravovat pouze pole formuláře pomocí funkce Povolit pouze ochranu polí formuláře Aspose.Words for .NET.
+## Úvod
 
-## Krok 1: Nastavení adresáře dokumentů
+Nazdárek! Potřebovali jste někdy chránit konkrétní části dokumentu aplikace Word a ponechat jiné části upravitelné? Aspose.Words pro .NET to velmi usnadňuje. V tomto tutoriálu se ponoříme do toho, jak povolit ochranu pouze polí formuláře v dokumentu aplikace Word. Na konci této příručky budete mít skálopevné znalosti o ochraně dokumentů pomocí Aspose.Words pro .NET. Připraveni? Pojďme do toho!
 
-Prvním krokem je definovat adresář vašeho dokumentu. Musíte zadat cestu, kam chcete uložit chráněný dokument. Například :
+## Předpoklady
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Než se ponoříme do kódovací části, ujistěte se, že máte vše, co potřebujete:
 
-Nezapomeňte nahradit „VAŠE ADRESÁŘ DOKUMENTŮ“ skutečnou cestou k adresáři vašich dokumentů.
+1.  Aspose.Words for .NET Library: Můžete si ji stáhnout z[tady](https://releases.aspose.com/words/net/).
+2. Visual Studio: Jakákoli nejnovější verze bude fungovat dobře.
+3. Základní znalost C#: Pochopení základů vám pomůže postupovat společně s výukovým programem.
 
-## Krok 2: Vložení sekcí a textu
+## Importovat jmenné prostory
 
-Dále musíte do dokumentu vložit oddíly a text. K vytvoření obsahu dokumentu použijte třídu DocumentBuilder poskytovanou Aspose.Words. Zde je jednoduchý příklad:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Text added to a document.");
-```
-
-tomto příkladu vytvoříme nový prázdný dokument a poté pomocí DocumentBuilder přidáme řádek textu.
-
-## Krok 3: Povolení ochrany dokumentů
-
- Ochrana dokumentů funguje pouze tehdy, když je povolena ochrana dokumentů. Ochranu dokumentů můžete povolit pomocí`Protect` metoda třídy Document. Zde je postup:
+Nejprve musíme importovat potřebné jmenné prostory. Toto nastaví naše prostředí tak, aby používalo Aspose.Words.
 
 ```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-V tomto příkladu povolíme ochranu dokumentů zadáním typu ochrany `
+## Krok 1: Nastavte svůj projekt
 
-AllowOnlyFormFields` a nastavení hesla.
+Vytvořte nový projekt v sadě Visual Studio  
+Otevřete Visual Studio a vytvořte nový projekt Console App (.NET Core). Pojmenujte to nějak smysluplně, například „AsposeWordsProtection“.
 
-## Krok 4: Povolení pouze polí formuláře
+## Krok 2: Nainstalujte Aspose.Words for .NET
 
-Nyní, když je povolena ochrana dokumentů, musíme určit, že jsou povoleny pouze úpravy polí formuláře. To zajišťuje, že uživatelé mohou upravovat pouze části dokumentu, které jsou poli formuláře. Zde je postup:
+Nainstalujte přes NuGet Package Manager  
+Klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení, vyberte „Spravovat balíčky NuGet“ a vyhledejte`Aspose.Words`. Nainstalujte jej.
 
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
+## Krok 3: Inicializujte dokument
 
-Nezapomeňte nahradit „heslo“ heslem, které jste nastavili dříve.
-
-## Krok 5: Uložení chráněného dokumentu
-
- Nakonec můžete chráněný dokument uložit pomocí`Save` metoda třídy Document. Zadejte úplnou cestu k souboru a požadovaný název souboru. Například :
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
-```
-
-Nezapomeňte nahradit "dataDir" cestou k adresáři dokumentů.
-
-### Příklad zdrojového kódu pro funkci Povolit pouze ochranu polí formuláře pomocí Aspose.Words for .NET
+Vytvořte nový objekt dokumentu  
+Začněme vytvořením nového dokumentu a tvůrcem dokumentů pro přidání textu.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Vložte dvě sekce s nějakým textem.
+// Inicializujte nový dokument a DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
+```
 
-// Ochrana dokumentů funguje pouze v případě, že je ochrana dokumentů zapnutá a jsou povoleny pouze úpravy v polích formuláře.
+ Zde vytvoříme nový`Document`a`DocumentBuilder` instance. The`DocumentBuilder` nám umožňuje přidat text do našeho dokumentu.
+
+## Krok 4: Chraňte dokument
+
+Použít ochranu umožňující pouze úpravy polí formuláře  
+Nyní přidejte ochranu do našeho dokumentu.
+
+```csharp
+// Chraňte dokument a povolte upravovat pouze pole formuláře
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
 
-// Uložte chráněný dokument.
+Tento řádek kódu chrání dokument a umožňuje pouze úpravy polí formuláře. K vynucení ochrany se používá heslo „password“.
+
+## Krok 5: Uložte dokument
+
+Uložte chráněný dokument  
+Nakonec uložme náš dokument do zadaného adresáře.
+
+```csharp
+// Uložte chráněný dokument
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
+Tím se dokument uloží s aplikovanou ochranou.
+
 ## Závěr
 
-V této příručce jsme prozkoumali, jak používat knihovnu Aspose.Words pro .NET k ochraně dokumentu a umožnit pouze úpravy polí formuláře. Podle uvedených kroků můžete tuto funkci snadno implementovat do své aplikace C#. Ochrana dokumentů je nezbytná pro zajištění bezpečnosti a důvěrnosti vašich dokumentů.
+tady to máte! Právě jste se naučili, jak chránit dokument aplikace Word tak, aby bylo možné pomocí Aspose.Words for .NET upravovat pouze pole formuláře. To je užitečná funkce, když potřebujete zajistit, aby určité části dokumentu zůstaly nezměněny, a zároveň umožnit vyplnění konkrétních polí.
 
-### Časté dotazy pro povolují ochranu pouze polí formuláře v dokumentu aplikace Word
+## FAQ
 
-#### Otázka: Co je ochrana dokumentů v Aspose.Words pro .NET?
+###	 Jak mohu odstranit ochranu z dokumentu?  
+ Pro odstranění ochrany použijte`doc.Unprotect("password")` metoda, kde "heslo" je heslo používané k ochraně dokumentu.
 
-A: Ochrana dokumentů v Aspose.Words for .NET je funkce, která vám umožňuje zabezpečit vaše dokumenty omezením určitých akcí, jako jsou úpravy, formátování nebo úpravy obsahu. Pomáhá udržovat integritu a důvěrnost vašich dokumentů tím, že zabraňuje neoprávněným změnám.
+###	 Mohu použít různé typy ochrany pomocí Aspose.Words pro .NET?  
+ Ano, Aspose.Words podporuje různé typy ochrany jako např`ReadOnly`, `NoProtection` , a`AllowOnlyRevisions`.
 
-#### Otázka: Jak mohu chránit dokument a povolit úpravy pouze polí formuláře pomocí Aspose.Words for .NET?
+###	 Je možné použít jiné heslo pro různé sekce?  
+Ne, ochrana na úrovni dokumentu v Aspose.Words se vztahuje na celý dokument. Různým sekcím nelze přiřadit různá hesla.
 
-Odpověď: Chcete-li chránit dokument a povolit úpravy pouze polí formuláře pomocí Aspose.Words for .NET, můžete postupovat takto:
-1. Definujte cestu k adresáři pro váš dokument.
-2.  Vložte oddíly a text do dokumentu pomocí`DocumentBuilder` třída.
-3.  Povolte ochranu dokumentů pomocí`Protect` metoda`Document` třídy s uvedením typu ochrany jako`AllowOnlyFormFields` a poskytnutí hesla.
-4.  Uložte chráněný dokument pomocí`Save` metoda`Document` třída.
+###	 Co se stane, když použijete nesprávné heslo?  
+Pokud použijete nesprávné heslo, dokument zůstane chráněný a zadané změny se nepoužijí.
 
-#### Otázka: Mohu vložit pole formuláře do chráněného dokumentu pomocí Aspose.Words for .NET?
-
-Odpověď: Ano, pole formuláře můžete vložit do chráněného dokumentu pomocí Aspose.Words for .NET. Ochrana dokumentů pomocí`AllowOnlyFormFields` typ umožňuje uživatelům upravovat pouze pole formuláře a zároveň chránit zbytek obsahu dokumentu. Můžete použít`DocumentBuilder` třídy pro vložení polí formuláře do dokumentu před povolením ochrany.
-
-#### Otázka: Mohu odstranit ochranu dokumentu z chráněného dokumentu?
-
- Odpověď: Ano, můžete odstranit ochranu dokumentu z chráněného dokumentu pomocí Aspose.Words for .NET. Chcete-li odstranit ochranu, můžete použít`Unprotect` metoda`Document` třídy a zadejte správné heslo. Tím odstraníte ochranu a umožníte neomezené úpravy dokumentu.
-
-#### Otázka: Je možné chránit dokument několika typy ochrany?
-
- Odpověď: Ne, Aspose.Words for .NET umožňuje použít na dokument vždy pouze jeden typ ochrany. Nicméně,`AllowOnlyFormFields` typ ochrany může účinně omezit úpravy na pole formuláře a zároveň povolit jiné typy ochrany, jako např`AllowOnlyComments` nebo`AllowOnlyRevisions`který má být kombinován s ochranou pole formuláře.
-
-#### Otázka: Mohu v dokumentu nastavit různá hesla pro různé typy ochrany?
-
-Odpověď: Ne, Aspose.Words for .NET vám umožňuje nastavit jedno heslo pro ochranu dokumentů bez ohledu na typ ochrany. Pro aktivaci a deaktivaci ochrany dokumentů bude použito stejné heslo.
+###	 Mohu programově zkontrolovat, zda je dokument chráněn?  
+ Ano, můžete použít`doc.ProtectionType` vlastnost ke kontrole stavu ochrany dokumentu.

@@ -1,7 +1,7 @@
 ---
 title: Erstellen und Formatieren von Wasserzeichen für eine ansprechendere Dokumentdarstellung
 linktitle: Erstellen und Formatieren von Wasserzeichen für eine ansprechendere Dokumentdarstellung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Wasserzeichen in Dokumenten erstellen und formatieren. Schritt-für-Schritt-Anleitung mit Quellcode zum Hinzufügen von Text- und Bildwasserzeichen. Verbessern Sie mit diesem Tutorial die Ästhetik Ihres Dokuments.
 type: docs
 weight: 10
@@ -135,7 +135,7 @@ Ja, Sie können verschiedenen Abschnitten oder Seiten innerhalb eines Dokuments 
 
 ### Ist es möglich, ein gedrehtes Textwasserzeichen zu verwenden?
 
-Auf jeden Fall! Sie können das Textwasserzeichen drehen, indem Sie die Eigenschaft „Drehwinkel“ festlegen.
+Auf jeden Fall! Sie können das Textwasserzeichen drehen, indem Sie die Drehwinkeleigenschaft festlegen.
 
 ### Kann ich das Wasserzeichen vor Bearbeitung oder Entfernung schützen?
 

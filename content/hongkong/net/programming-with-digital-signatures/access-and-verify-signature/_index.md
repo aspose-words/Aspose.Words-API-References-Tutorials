@@ -2,122 +2,150 @@
 title: 存取並驗證 Word 文件中的簽名
 linktitle: 存取並驗證 Word 文件中的簽名
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 存取和驗證 Word 文件中的數位簽章。
+description: 透過這份全面的逐步指南，使用 Aspose.Words for .NET 存取和驗證 Word 文件中的數位簽章。輕鬆確保文件真實性。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
-在本教學中，我們將引導您完成使用 Aspose.Words for .NET 的存取和簽章驗證功能的步驟。此功能可讓您存取 Word 文件中的數位簽章並驗證其有效性。請依照以下步驟操作：
+## 介紹
 
-## 第 1 步：載入文件並存取簽名
+嘿，科技愛好者們！您是否曾經遇到過需要存取和驗證 Word 文件中的數位簽章但不知道從哪裡開始的情況？嗯，你很幸運！今天，我們將深入探討 Aspose.Words for .NET 的奇妙世界，這是一個功能強大的函式庫，讓處理 Word 文件變得輕而易舉。我們將逐步引導您完成整個過程，因此在本指南結束時，您將成為驗證 Word 文件中的數位簽章的專家。讓我們開始吧！
 
-首先上傳包含數位簽章的文件：
+## 先決條件
+
+在我們深入了解具體細節之前，您需要先做好以下幾件事：
+
+1. Visual Studio：確保您的電腦上安裝了 Visual Studio。您將在此處編寫和運行程式碼。
+2.  Aspose.Words for .NET：您需要安裝 Aspose.Words for .NET。你可以下載它[這裡](https://releases.aspose.com/words/net/)。不要忘記獲得免費試用[這裡](https://releases.aspose.com/)如果你還沒有！
+3. 經過數位簽署的 Word 文件：擁有已經過數位簽署的 Word 文件。這是您將用來驗證簽名的文件。
+
+## 導入命名空間
+
+首先，讓我們導入必要的名稱空間。這些命名空間將允許您在專案中使用 Aspose.Words 功能。
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.DigitalSignatures;
+```
+
+好吧，讓我們將其分解為可管理的步驟。每個步驟將指導您完成流程的特定部分。準備好？我們走吧！
+
+## 第 1 步：設定您的項目
+
+在驗證數位簽章之前，您需要在 Visual Studio 中設定專案。就是這樣：
+
+### 建立一個新項目
+
+1. 打開視覺工作室。
+2. 點擊建立新項目。
+3. 根據您的偏好，選擇控制台應用程式 (.NET Core) 或控制台應用程式 (.NET Framework)。
+4. 按一下“下一步”，為您的專案命名，然後按一下“建立”。
+
+### 安裝 Aspose.Words for .NET
+
+1. 在解決方案資源管理器中，以滑鼠右鍵按一下專案名稱並選擇管理 NuGet 套件。
+2. 在 NuGet 套件管理器中，搜尋 Aspose.Words。
+3. 點擊安裝將其添加到您的專案中。
+
+## 第 2 步：載入經過數位簽署的 Word 文檔
+
+現在您的專案已設定完畢，讓我們載入經過數位簽署的 Word 文件。
+
+```csharp
+//文檔目錄的路徑。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-## 第 2 步：瀏覽數位簽名
+代替`"YOUR DOCUMENT DIRECTORY"`與文檔目錄的實際路徑。此程式碼片段初始化一個新的`Document`物件並載入您簽名的 Word 文件。
 
-使用循環遍歷文件中的所有數位簽章：
+## 第 3 步：存取數位簽名
+
+載入文件後，就可以存取數位簽章了。
 
 ```csharp
 foreach (DigitalSignature signature in doc.DigitalSignatures)
 {
-	//存取簽名訊息
-	Console.WriteLine("* Signature Found *");
-	Console.WriteLine("Is valid: " + signature.IsValid);
-	//此屬性僅在 MS Word 文件中可用。
-	Console.WriteLine("Reason for signing: " + signature.Comments); 
-	Console.WriteLine("Time of signing: " + signature.SignTime);
-	Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-	Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-	Console.WriteLine();
+    Console.WriteLine("* Signature Found *");
+    Console.WriteLine("Is valid: " + signature.IsValid);
+    Console.WriteLine("Reason for signing: " + signature.Comments); 
+    Console.WriteLine("Time of signing: " + signature.SignTime);
+    Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+    Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+    Console.WriteLine();
 }
 ```
 
-請務必根據您的需求自訂顯示訊息。
+此程式碼循環遍歷文件中的每個數位簽名，並列印出有關簽名的各種詳細資訊。讓我們分解一下每個部分的作用：
 
-### 使用 Aspose.Words for .NET 存取和驗證簽署的範例原始程式碼
+1. 找到簽名：表示已找到簽名。
+2. 有效：檢查簽名是否有效。
+3. 簽名原因：顯示簽名原因（如果有）。
+4. 簽名時間：顯示文件簽名的時間戳記。
+5. 主題名稱：從憑證中檢索主題名稱。
+6. 頒發者名稱：從憑證中檢索頒發者名稱。
 
-以下是使用 Aspose.Words for .NET 進行存取和簽署驗證的完整原始程式碼：
+## 第 4 步：運行您的程式碼
+
+一切設定完畢後，就可以運行程式碼並查看結果了。
+
+
+1. 按 F5 或按一下 Visual Studio 中的「開始」按鈕來執行程式。
+2. 如果您的文件經過數位簽名，您將在控制台中看到列印的簽名詳細資訊。
+
+## 第 5 步：處理潛在錯誤
+
+處理可能發生的任何潛在錯誤始終是個好主意。讓我們在程式碼中加入一些基本的錯誤處理。
 
 ```csharp
-	
-	//文檔目錄的路徑。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Digitally signed.docx");
+try
+{
+    //文檔目錄的路徑。
+    string dataDir = "YOUR DOCUMENT DIRECTORY";
+    Document doc = new Document(dataDir + "Digitally signed.docx");
 
-	foreach (DigitalSignature signature in doc.DigitalSignatures)
-	{
-		Console.WriteLine("* Signature Found *");
-		Console.WriteLine("Is valid: " + signature.IsValid);
-		//此屬性僅在 MS Word 文件中可用。
-		Console.WriteLine("Reason for signing: " + signature.Comments); 
-		Console.WriteLine("Time of signing: " + signature.SignTime);
-		Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-		Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-		Console.WriteLine();
-	}
-
+    foreach (DigitalSignature signature in doc.DigitalSignatures)
+    {
+        Console.WriteLine("* Signature Found *");
+        Console.WriteLine("Is valid: " + signature.IsValid);
+        Console.WriteLine("Reason for signing: " + signature.Comments); 
+        Console.WriteLine("Time of signing: " + signature.SignTime);
+        Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+        Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+        Console.WriteLine();
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine("An error occurred: " + ex.Message);
+}
 ```
 
-透過執行這些步驟，您將能夠使用 Aspose.Words for .NET 輕鬆存取和驗證 Word 文件中的數位簽章。
+這將捕獲可能發生的任何異常並列印錯誤訊息。
 
 ## 結論
 
-在本教學中，我們探索了使用 Aspose.Words for .NET 存取和驗證 Word 文件中的數位簽章的功能。透過按照提供的步驟操作，您可以輕鬆載入文件、存取其數位簽章並驗證其有效性。存取和驗證數位簽章的能力提供了一種確保 Word 文件的完整性和真實性的方法。 Aspose.Words for .NET 提供了強大的 API，用於具有數位簽章的文字處理，使您能夠自動化驗證流程並增強文件的安全性。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功存取並驗證了 Word 文件中的數位簽章。它並不像看起來那麼令人畏懼，對吧？透過這些步驟，您可以自信地處理 Word 文件中的數位簽名，確保其真實性和完整性。快樂編碼！
 
-### 常見問題解答
+## 常見問題解答
 
-#### Q：Word 文件中的數位簽章是什麼？
+### 我可以使用 Aspose.Words for .NET 將數位簽章新增至 Word 文件嗎？
 
-答：Word 文件中的數位簽章是提供一種驗證文件完整性和來源的方法的電子簽章。它們是使用數位證書和加密演算法創建的，允許收件人驗證文件是否未被更改並且來自可信任來源。
+是的，您可以使用 Aspose.Words for .NET 在 Word 文件中新增數位簽章。該庫提供了用於添加和驗證數位簽章的全面功能。
 
-#### Q：如何使用 Aspose.Words for .NET 存取 Word 文件中的數位簽章？
+### Aspose.Words for .NET 可以驗證哪些類型的數位簽章？
 
-答：要使用 Aspose.Words for .NET 存取 Word 文件中的數位簽名，您可以按照以下步驟操作：
-1. 使用載入文檔`Document`類並指定文檔文件的路徑。
-2. 使用循環來迭代`DigitalSignatures`文檔的集合。每次迭代都代表一個數位簽章。
+Aspose.Words for .NET 可以驗證使用 X.509 憑證的 DOCX 檔案中的數位簽章。
 
-#### Q：我可以從 Word 文件中的數位簽章存取哪些資訊？
+### Aspose.Words for .NET 是否與所有版本的 Microsoft Word 相容？
 
-答：透過 Word 文件中的數位簽名，您可以存取各種信息，例如：
-- 有效性：檢查簽名是否有效。
-- 註：取得簽署者指定的簽名原因。
-- 簽名時間：取得文件簽名的時間。
-- 主題名稱：檢索簽署者或憑證主題的名稱。
-- 頒發者名稱：取得證書頒發者的名稱。
+Aspose.Words for .NET 支援所有版本的 Microsoft Word 文檔，包括 DOC、DOCX、RTF 等。
 
-#### Q：我可以使用 Aspose.Words for .NET 驗證 Word 文件中數位簽章的有效性嗎？
+### 如何取得 Aspose.Words for .NET 的臨時授權？
 
-答：是的，您可以使用 Aspose.Words for .NET 驗證 Word 文件中數位簽章的有效性。透過訪問`IsValid`的財產`DigitalSignature`對象，您可以確定簽名是否有效。
+您可以從以下位置取得 Aspose.Words for .NET 的臨時授權：[這裡](https://purchase.aspose.com/temporary-license/)。這使您可以不受任何限制地嘗試該庫的全部功能。
 
-#### Q：如何使用 Aspose.Words for .NET 驗證 Word 文件中數位簽章的有效性？
+### 在哪裡可以找到有關 Aspose.Words for .NET 的更多文件？
 
-答：要使用 Aspose.Words for .NET 驗證 Word 文件中數位簽章的有效性，您可以依照下列步驟操作：
-1. 訪問`DigitalSignatures`文檔的集合。
-2. 迭代每個`DigitalSignature`集合中的物件。
-3. 使用`IsValid`的財產`DigitalSignature`物件檢查簽名是否有效。
-
-#### Q：我可以從 Word 文件中的數位簽章中檢索簽章者的註解或簽章原因嗎？
-
-答：是的，您可以從 Word 文件中的數位簽章中擷取簽章者的註解或簽章原因。這`Comments`的財產`DigitalSignature`物件提供對簽署者在簽名過程中指定的註釋的存取。
-
-#### Q：Aspose.Words for .NET 中的簽章驗證功能支援什麼類型的文件？
-
-答：Aspose.Words for .NET 中的簽章驗證功能支援對 DOCX 檔案格式的 Word 文件中的數位簽章進行驗證。您可以使用此功能來驗證 DOCX 檔案中的簽名。
-
-#### Q：如何使用 Aspose.Words for .NET 存取 Word 文件中數位簽章的憑證詳細資料？
-
-答：要使用 Aspose.Words for .NET 訪問 Word 文件中數位簽名的證書詳細信息，您可以訪問`CertificateHolder`的財產`DigitalSignature`目的。來自`CertificateHolder`對象，您可以檢索證書的各種詳細信息，例如主題名稱和頒發者名稱。
-
-#### Q：我可以使用 Aspose.Words for .NET 自訂 Word 文件中數位簽章的顯示或處理嗎？
-
-答：是的，您可以使用 Aspose.Words for .NET 自訂 Word 文件中數位簽章的顯示或處理。透過訪問的屬性和方法`DigitalSignature`對象，您可以提取所需的資訊、執行其他驗證或將簽章驗證流程整合到應用程式的工作流程中。
-
-#### Q：是否可以使用 Aspose.Words for .NET 驗證 Word 文件中的多個數位簽章？
-
-答：是的，可以使用 Aspose.Words for .NET 驗證 Word 文件中的多個數位簽章。透過迭代`DigitalSignatures`文件集合後，您可以單獨存取和驗證每個數位簽章。
-
+您可以找到 Aspose.Words for .NET 的詳細文檔[這裡](https://reference.aspose.com/words/net/).

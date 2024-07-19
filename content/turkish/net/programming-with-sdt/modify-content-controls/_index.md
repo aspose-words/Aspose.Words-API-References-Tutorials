@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Belgeyi Yükleyin ve İçerik Kontrolleri Üzerinde Yineleyin
- Word belgesini kullanarak yükleyin`Document`yapıcı, belgenin yolunu parametre olarak iletir. Bir belge kullanarak belgedeki tüm yapılandırılmış belge etiketlerini yineleyin.`foreach` döngü.
+ Word belgesini kullanarak yükleyin`Document` yapıcı, belgenin yolunu parametre olarak iletir. Bir belge kullanarak belgedeki tüm yapılandırılmış belge etiketlerini yineleyin.`foreach` döngü.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Adım 6: Değiştirilen Belgeyi Kaydedin
- Değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydedin:`Save` yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.ModifyContentControls.docx" olarak kaydediyoruz.
+ Değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydedin:`Save`yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.ModifyContentControls.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

@@ -25,7 +25,7 @@ Aspose.Words är ett ledande Python-bibliotek som tillhandahåller ett brett utb
 pip install aspose-words
 ```
 
-## Grundläggande dokumenthantering
+## Grundläggande dokumentbehandling
 
 ### Skapa och redigera Word-dokument
 

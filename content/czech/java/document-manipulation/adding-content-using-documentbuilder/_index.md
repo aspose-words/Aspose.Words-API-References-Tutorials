@@ -38,7 +38,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Založte stůl
 Table table = builder.startTable();
 
-// Vložte buňky a obsah
+// Vložit buňky a obsah
 builder.insertCell();
 builder.write("Cell 1");
 

@@ -76,4 +76,4 @@ Oui, Aspose.Words for Java fournit une API conviviale, facilitant son intégrati
 
 ### 5. Comment puis-je accéder à Aspose.Words pour Java ?
 
- Pour accéder à Aspose.Words pour Java,[Cliquez ici](https://purchase.aspose.com/buy). Découvrez la puissance du traitement documentaire dans vos applications Java !
+ Pour accéder à Aspose.Words pour Java,[Cliquez ici](https://purchase.aspose.com/buy). Découvrez la puissance du traitement de documents dans vos applications Java !

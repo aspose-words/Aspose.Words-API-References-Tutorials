@@ -127,4 +127,4 @@ Aspose.Words mendukung pembuatan beberapa Daftar Isi dengan pengaturan berbeda d
 Ya, Aspose.Words memastikan kompatibilitas dengan berbagai versi format Microsoft Word.
 
 ### Di mana saya dapat menemukan lebih banyak bantuan dan dukungan untuk Aspose.Words?
-Untuk bantuan lebih lanjut, kunjungi[Aspose.Forum Kata-kata](https://forum.aspose.com/c/words/8) atau periksa[dokumentasi resmi](https://reference.aspose.com/words/net/).
+ Untuk bantuan lebih lanjut, kunjungi[Aspose.Forum Kata-kata](https://forum.aspose.com/c/words/8) atau periksa[dokumentasi resmi](https://reference.aspose.com/words/net/).

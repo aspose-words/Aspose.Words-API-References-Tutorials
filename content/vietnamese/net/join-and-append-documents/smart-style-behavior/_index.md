@@ -2,88 +2,131 @@
 title: Hành vi phong cách thông minh
 linktitle: Hành vi phong cách thông minh
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách duy trì hành vi phong cách thông minh khi nối và nối thêm tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách hợp nhất các tài liệu Word một cách liền mạch với Aspose.Words cho .NET, giữ nguyên kiểu dáng và đảm bảo kết quả chuyên nghiệp.
 type: docs
 weight: 10
 url: /vi/net/join-and-append-documents/smart-style-behavior/
 ---
+## Giới thiệu
 
-Hướng dẫn này sẽ hướng dẫn bạn trong quá trình sử dụng tính năng Hành vi Phong cách Thông minh của Aspose.Words cho .NET. Tính năng này cho phép bạn nối và nối các tài liệu Word trong khi vẫn duy trì hành vi kiểu thông minh.
+Này, các pháp sư Word! Bạn đã bao giờ thấy mình gặp rắc rối khi kết hợp các tài liệu trong khi vẫn giữ nguyên phong cách chưa? Hãy tưởng tượng bạn có hai tài liệu Word, mỗi tài liệu có nét đặc sắc riêng và bạn cần hợp nhất chúng mà không làm mất đi nét độc đáo đó. Nghe có vẻ khó khăn phải không? Chà, hôm nay, chúng ta sẽ đi sâu vào thế giới kỳ diệu của Aspose.Words dành cho .NET để chỉ cho bạn cách đạt được điều này một cách dễ dàng bằng cách sử dụng Hành vi Phong cách Thông minh. Đến cuối hướng dẫn này, bạn sẽ trở thành chuyên gia trong việc hợp nhất các tài liệu như một thầy phù thủy am hiểu về phong cách!
 
 ## Điều kiện tiên quyết
 
-Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
+Trước khi bắt tay vào cuộc phiêu lưu hợp nhất tài liệu này, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
 
-1. Đã cài đặt Aspose.Words cho .NET. Bạn có thể tải xuống từ trang web Aspose hoặc cài đặt nó qua NuGet.
-2. Visual Studio hoặc bất kỳ môi trường phát triển C# nào khác.
+-  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất. Nếu không, hãy lấy nó từ[trang tải xuống](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Bất kỳ môi trường tương thích .NET nào cũng được, như Visual Studio.
+- Hai Tài liệu Word: Đối với hướng dẫn này, chúng tôi sẽ sử dụng “Document source.docx” và “Northwind Traders.docx”.
+-  Aspose License: Để tránh mọi hạn chế, hãy lấy[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/)nếu bạn chưa mua một cái nào.
 
-## Bước 1: Khởi tạo thư mục tài liệu
+### Nhập không gian tên
 
- Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Sửa đổi giá trị của`dataDir` có thể thay đổi đường dẫn chứa tài liệu của bạn.
+Trước tiên, hãy sắp xếp các không gian tên của chúng ta theo thứ tự. Đây là những điều cần thiết để truy cập các tính năng chúng tôi cần từ Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Bước 2: Tải tài liệu nguồn và đích
+## Bước 1: Tải tài liệu của bạn
 
-Tiếp theo, bạn cần tải tài liệu nguồn và đích bằng Aspose.Words`Document` lớp học. Cập nhật tên tập tin trong`Document` hàm tạo theo tên tài liệu của bạn.
+Để bắt đầu, chúng ta cần tải tài liệu nguồn và đích vào ứng dụng của mình.
 
 ```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Tải tài liệu nguồn
 Document srcDoc = new Document(dataDir + "Document source.docx");
+
+// Tải tài liệu đích
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Bước 3: Chèn ngắt trang vào tài liệu đích
+Giải trình:
+ Ở đây, chúng tôi đang tải “Document source.docx” và “Northwind Traders.docx” từ thư mục được chỉ định. Đảm bảo thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
 
- Để đảm bảo rằng nội dung được nối thêm xuất hiện trên một trang mới trong tài liệu đích, bạn có thể chèn ngắt trang bằng cách sử dụng`DocumentBuilder`.
+## Bước 2: Khởi tạo DocumentBuilder
+
+ Tiếp theo, chúng ta cần tạo một`DocumentBuilder` đối tượng cho tài liệu đích. Điều này sẽ cho phép chúng ta thao tác nội dung của tài liệu.
 
 ```csharp
+// Khởi tạo DocumentBuilder cho tài liệu đích
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
+```
+
+Giải trình:
+ Các`DocumentBuilder` là một công cụ tiện dụng cung cấp các phương pháp để điều hướng và sửa đổi tài liệu. Ở đây, chúng tôi đang gắn nó vào tài liệu đích của chúng tôi.
+
+## Bước 3: Di chuyển đến cuối tài liệu và chèn ngắt trang
+
+Bây giờ, hãy điều hướng đến cuối tài liệu đích và chèn ngắt trang. Điều này đảm bảo nội dung từ tài liệu nguồn bắt đầu trên một trang mới.
+
+```csharp
+// Di chuyển đến cuối tài liệu
 builder.MoveToDocumentEnd();
+
+// Chèn ngắt trang
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## Bước 4: Đặt tùy chọn hành vi phong cách thông minh
+Giải trình:
+Bằng cách di chuyển đến cuối tài liệu và chèn dấu ngắt trang, chúng tôi đảm bảo rằng nội dung mới bắt đầu trên một trang mới, duy trì cấu trúc rõ ràng và có tổ chức.
 
-Để kích hoạt hành vi kiểu thông minh trong thao tác chắp thêm, bạn cần tạo một phiên bản của`ImportFormatOptions` và thiết lập`SmartStyleBehavior`tài sản để`true`.
+## Bước 4: Đặt hành vi phong cách thông minh
+
+ Trước khi hợp nhất các tài liệu, chúng ta cần thiết lập`SmartStyleBehavior` ĐẾN`true`. Tùy chọn này giúp duy trì các kiểu từ tài liệu nguồn một cách thông minh.
 
 ```csharp
+// Đặt hành vi kiểu thông minh
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
 ```
 
-## Bước 5: Nối tài liệu nguồn vào tài liệu đích
+Giải trình:
+`SmartStyleBehavior` đảm bảo rằng các kiểu từ tài liệu nguồn được tích hợp trơn tru vào tài liệu đích, tránh mọi xung đột về kiểu.
 
- Bây giờ, bạn có thể nối tài liệu nguồn vào tài liệu đích bằng cách sử dụng`InsertDocument` phương pháp của`DocumentBuilder` lớp học. Sử dụng`ImportFormatMode.UseDestinationStyles` tham số và truyền`ImportFormatOptions` đối tượng để duy trì hành vi phong cách thông minh.
+## Bước 5: Chèn tài liệu nguồn vào tài liệu đích
+
+Cuối cùng, hãy chèn tài liệu nguồn vào tài liệu đích bằng cách sử dụng các tùy chọn định dạng đã chỉ định.
 
 ```csharp
+// Chèn tài liệu nguồn vào vị trí hiện tại của tài liệu đích
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## Bước 6: Lưu tài liệu cuối cùng
+Giải trình:
+Lệnh này hợp nhất tài liệu nguồn vào tài liệu đích ở vị trí hiện tại (là cuối, sau khi ngắt trang) và nó sử dụng kiểu của tài liệu đích trong khi áp dụng các kiểu nguồn một cách thông minh khi cần thiết.
 
- Cuối cùng, lưu tài liệu đã hợp nhất với tính năng Hành vi Phong cách Thông minh được bật bằng cách sử dụng`Save` phương pháp của`Document` lớp học.
+## Bước 6: Lưu tài liệu kết hợp
+
+Cuối cùng nhưng không kém phần quan trọng, chúng tôi lưu tài liệu kết hợp của mình.
 
 ```csharp
+// Lưu tài liệu kết hợp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
 ```
 
-### Mã nguồn ví dụ cho Hành vi phong cách thông minh bằng cách sử dụng Aspose.Words cho .NET
+Giải trình:
+Chúng tôi đang lưu sản phẩm cuối cùng dưới dạng “JoinAndAppendDocuments.SmartStyleBehavior.docx” trong thư mục được chỉ định. Bây giờ bạn đã có một tài liệu được hợp nhất hoàn hảo với các kiểu được giữ nguyên!
 
-Đây là mã nguồn đầy đủ cho tính năng "Hành vi phong cách thông minh" trong C# bằng cách sử dụng Aspose.Words for .NET:
- 
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Phần kết luận
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	DocumentBuilder builder = new DocumentBuilder(dstDoc);
-	builder.MoveToDocumentEnd();
-	builder.InsertBreak(BreakType.PageBreak);
-	ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
-	builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
-	builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
-```
+Và bạn đã có nó rồi, các bạn! Với các bước này, bạn đã học được cách hợp nhất các tài liệu Word trong khi vẫn duy trì kiểu độc đáo của chúng bằng Aspose.Words for .NET. Không còn những rủi ro về kiểu dáng hay đau đầu về định dạng—luôn luôn có những tài liệu mượt mà, phong cách. Cho dù bạn đang kết hợp các báo cáo, đề xuất hay bất kỳ tài liệu nào khác, phương pháp này sẽ đảm bảo mọi thứ đều ổn.
 
-Đó là nó! Bạn đã triển khai thành công tính năng Hành vi phong cách thông minh bằng Aspose.Words cho .NET. Tài liệu cuối cùng sẽ chứa nội dung đã hợp nhất với hành vi phong cách thông minh được duy trì.
+## Câu hỏi thường gặp
+
+### Tôi có thể sử dụng phương pháp này cho nhiều hơn hai tài liệu không?
+Có, bạn có thể lặp lại quy trình để có thêm tài liệu. Chỉ cần tải từng tài liệu mới và chèn nó vào tài liệu đích như được hiển thị.
+
+### Nếu tôi không đặt thì sao`SmartStyleBehavior` to true?
+Nếu không có tùy chọn này, kiểu của tài liệu nguồn có thể không tích hợp tốt, dẫn đến các vấn đề về định dạng.
+
+### Aspose.Words cho .NET có miễn phí không?
+ Aspose.Words for .NET là một sản phẩm trả phí nhưng bạn có thể dùng thử miễn phí với một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
+
+### Tôi có thể sử dụng phương pháp này cho các định dạng tệp khác nhau không?
+Hướng dẫn này dành riêng cho tài liệu Word (.docx). Đối với các định dạng khác, bạn có thể cần các bước bổ sung hoặc các phương pháp khác.
+
+### Tôi có thể nhận hỗ trợ ở đâu nếu gặp vấn đề?
+ Đối với bất kỳ vấn đề nào, hãy truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8).

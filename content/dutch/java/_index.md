@@ -20,7 +20,7 @@ Hier zijn enkele voordelen van het gebruik van Aspose.Words Java Document Proces
 De tutorials behandelen een breed scala aan Aspose.Words-functies, van eenvoudige tabelverwerking tot geavanceerd samenvoegen van documenten en watermerken. Hiermee leert u hoe u Aspose.Words kunt gebruiken om al uw documentverwerkingstaken te automatiseren.
 ### Focus op praktische implementatie: 
 De tutorials zijn gericht op de praktische implementatie, zodat u kunt leren hoe u Aspose.Words kunt gebruiken om problemen met documentverwerking in de echte wereld op te lossen. Hierdoor kunt u snel aan de slag en Aspose.Words gaan gebruiken om uw documentverwerkingstaken te automatiseren.
-### Solide basis voor robuuste en schaalbare oplossingen voor documentverwerking:
+### Solide basis voor robuuste en schaalbare documentverwerkingsoplossingen:
 De tutorials bieden een solide basis voor het bouwen van robuuste en schaalbare oplossingen voor documentverwerking. Dit komt omdat de tutorials de essentiële concepten van documentverwerking behandelen, zoals het verwerken van tabellen, het samenvoegen van documenten en watermerken.
 ## Handleidingen voor documentverwerking
 ### [Tekstverwerking](./word-processing/) 

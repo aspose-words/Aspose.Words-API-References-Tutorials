@@ -113,7 +113,7 @@ Odp.: Aby wyróżnić tekst za pomocą Markdown, po prostu otocz tekst odpowiedn
 
 #### P: Czy możemy połączyć różne wyróżnienia w tym samym tekście?
 
- Odp.: Tak, możliwe jest łączenie różnych wyróżnień w tym samym tekście. Na przykład możesz pogrubić i pochylić słowo, używając obu`**` I`*` dookoła świata.
+ Odp.: Tak, możliwe jest łączenie różnych wyróżnień w tym samym tekście. Na przykład możesz pogrubić i pochylić słowo, używając obu`**`I`*` dookoła świata.
 
 #### P: Jakie opcje wyróżniania są dostępne w Markdown?
 

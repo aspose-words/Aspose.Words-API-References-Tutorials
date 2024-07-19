@@ -12,7 +12,7 @@ In diesem digitalen Zeitalter, in dem Informationen der Schlüssel sind, ist die
 
 ## 1. Einleitung
 
-In dieser schnelllebigen digitalen Welt hat die Sicherheit elektronischer Dokumente für Privatpersonen und Unternehmen gleichermaßen höchste Priorität. Datenlecks und Cyberangriffe haben Bedenken hinsichtlich der Vertraulichkeit und Integrität vertraulicher Informationen geweckt. Aspose.Words für Java schafft hier Abhilfe, indem es umfassende Funktionen bietet, die sicherstellen, dass Ihre Dokumente vor unbefugtem Zugriff geschützt bleiben.
+In dieser schnelllebigen digitalen Welt hat die Sicherheit elektronischer Dokumente für Privatpersonen und Unternehmen gleichermaßen höchste Priorität. Datenlecks und Cyberangriffe haben Bedenken hinsichtlich der Vertraulichkeit und Integrität vertraulicher Informationen geweckt. Aspose.Words für Java schafft hier Abhilfe, indem es umfassende Funktionen bietet, die sicherstellen, dass Ihre Dokumente vor unbefugtem Zugriff geschützt sind.
 
 ## 2. Dokumentensicherheit verstehen
 
@@ -96,7 +96,7 @@ doc.save("path/to/encrypted/document.docx");
 
 ## 7. Schutz bestimmter Dokumentelemente
 
-Manchmal möchten Sie möglicherweise nur bestimmte Teile Ihres Dokuments schützen, z. B. Kopf- und Fußzeilen oder bestimmte Absätze. Mit Aspose.Words können Sie beim Dokumentschutz folgende Detailgenauigkeit erreichen:
+Manchmal möchten Sie möglicherweise nur bestimmte Teile Ihres Dokuments schützen, z. B. Kopf- und Fußzeilen oder bestimmte Absätze. Mit Aspose.Words können Sie beim Dokumentschutz folgende Granularität erreichen:
 
 ```java
 // Einen bestimmten Abschnitt schützen (Nur-Lese-Schutz)

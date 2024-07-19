@@ -10,7 +10,7 @@ url: /de/java/document-printing/guide-to-document-printing/
 
 ## Einführung
 
-In diesem Tutorial führen wir Sie durch den Prozess des Dokumentendrucks mit Aspose.Words für Java. Egal, ob Sie Entwickler sind und an Textverarbeitungs- oder Dokumentenverarbeitungsprojekten arbeiten, das Verständnis, wie man Dokumente programmgesteuert druckt, kann äußerst hilfreich sein. Wir erklären Ihnen die wesentlichen Schritte, damit Sie im Handumdrehen mit dem Dokumentendruck beginnen können.
+In diesem Tutorial führen wir Sie durch den Prozess des Dokumentendrucks mit Aspose.Words für Java. Egal, ob Sie Entwickler sind und an Textverarbeitungs- oder Dokumentenverarbeitungsprojekten arbeiten, das Verständnis, wie man Dokumente programmgesteuert druckt, kann sehr hilfreich sein. Wir erklären Ihnen die wesentlichen Schritte, damit Sie im Handumdrehen mit dem Dokumentendruck beginnen können.
 
 ## Grundlegendes zum Drucken von Dokumenten
 
@@ -175,7 +175,7 @@ Der Dokumentendruck mit Aspose.Words für Java findet in verschiedenen Szenarien
 
 
 
-Entwickler können den Dokumentendruck in ihre Java-Anwendungen integrieren und so Benutzern das Drucken wichtiger Dokumente erleichtern.
+Entwickler können den Dokumentendruck in ihre Java-Anwendungen integrieren und Benutzern so das Drucken wichtiger Dokumente erleichtern.
 
 ### Automatisierter Dokumentendruck
 

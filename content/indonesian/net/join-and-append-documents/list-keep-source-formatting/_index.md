@@ -2,76 +2,87 @@
 title: Daftar Simpan Pemformatan Sumber
 linktitle: Daftar Simpan Pemformatan Sumber
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mempertahankan pemformatan daftar saat menggabungkan dan menambahkan dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menggabungkan dokumen Word sambil mempertahankan pemformatan menggunakan Aspose.Words untuk .NET. Tutorial ini memberikan panduan langkah demi langkah untuk penggabungan dokumen yang lancar.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## Perkenalan
 
-Tutorial ini akan memandu Anda melalui proses penggunaan fitur Pemformatan Sumber Daftar dari Aspose.Words untuk .NET. Fitur ini memungkinkan Anda untuk menggabungkan dan menambahkan dokumen Word sambil mempertahankan format sumber daftar.
+Dalam tutorial ini, kita akan mempelajari cara memanfaatkan Aspose.Words untuk .NET untuk menggabungkan dokumen sambil mempertahankan format sumber. Kemampuan ini penting untuk skenario di mana menjaga tampilan asli dokumen sangatlah penting.
 
 ## Prasyarat
 
-Sebelum memulai, pastikan Anda memiliki hal berikut:
+Sebelum melanjutkan, pastikan Anda memiliki prasyarat berikut:
 
-1. Aspose.Words untuk .NET diinstal. Anda dapat mendownloadnya dari situs Aspose atau menginstalnya melalui NuGet.
-2. Visual Studio atau lingkungan pengembangan C# lainnya.
+- Visual Studio diinstal pada mesin Anda.
+-  Aspose.Words untuk .NET diinstal. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Keakraban dasar dengan pemrograman C# dan lingkungan .NET.
 
-## Langkah 1: Inisialisasi Direktori Dokumen
+## Impor Namespace
 
- Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ubah nilai`dataDir` variabel ke jalur di mana dokumen Anda berada.
+Pertama, impor namespace yang diperlukan ke proyek C# Anda:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## Langkah 2: Muat Dokumen Sumber dan Tujuan
+## Langkah 1: Siapkan Proyek Anda
 
-Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
+Mulailah dengan membuat proyek C# baru di Visual Studio. Pastikan Aspose.Words untuk .NET direferensikan dalam proyek Anda. Jika belum, Anda dapat menambahkannya melalui NuGet Package Manager.
+
+## Langkah 2: Inisialisasi Variabel Dokumen
 
 ```csharp
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Memuat dokumen sumber dan tujuan
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Langkah 3: Atur Dokumen Sumber agar Mengalir Terus Menerus
+## Langkah 3: Konfigurasikan Pengaturan Bagian
 
- Untuk memastikan bahwa konten dari dokumen sumber mengalir terus menerus saat ditambahkan ke dokumen tujuan, Anda perlu mengaturnya`SectionStart` properti bagian pertama dalam dokumen sumber ke`SectionStart.Continuous`.
+Untuk mempertahankan alur yang berkelanjutan dalam dokumen yang digabungkan, sesuaikan awal bagian:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Langkah 4: Tambahkan Dokumen Sumber ke Dokumen Tujuan
+## Langkah 4: Gabungkan Dokumen
 
- Sekarang, Anda dapat menambahkan dokumen sumber ke dokumen tujuan menggunakan`AppendDocument` metode`Document` kelas. Itu`ImportFormatMode.KeepSourceFormatting`parameter memastikan bahwa pemformatan sumber, termasuk pemformatan daftar, dipertahankan selama operasi penambahan.
+Tambahkan konten dokumen sumber (`srcDoc`) ke dokumen tujuan (`dstDoc`) dengan tetap mempertahankan format aslinya:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Langkah 5: Simpan Dokumen Akhir
+## Langkah 5: Simpan Dokumen yang Digabung
 
- Terakhir, simpan dokumen yang digabungkan dengan fitur List Keep Source Formatting yang diaktifkan menggunakan`Save` metode`Document` kelas.
+Terakhir, simpan dokumen gabungan ke direktori yang Anda tentukan:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### Contoh kode sumber untuk Pemformatan Sumber Daftar Simpan menggunakan Aspose.Words untuk .NET 
+## Kesimpulan
 
-Berikut kode sumber lengkap untuk fitur Pemformatan Sumber Daftar di C# menggunakan Aspose.Words untuk .NET:
+Kesimpulannya, menggabungkan dokumen sambil mempertahankan format aslinya sangatlah mudah dengan Aspose.Words untuk .NET. Tutorial ini telah memandu Anda melalui proses tersebut, memastikan bahwa dokumen gabungan Anda mempertahankan tata letak dan gaya dokumen sumber.
 
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Tambahkan konten dokumen agar mengalir terus menerus.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### Bagaimana jika dokumen saya memiliki gaya yang berbeda?
+Aspose.Words menangani gaya yang berbeda dengan anggun, mempertahankan format aslinya semaksimal mungkin.
 
-Itu dia! Anda telah berhasil mengimplementasikan fitur Pemformatan Sumber Daftar menggunakan Aspose.Words untuk .NET. Dokumen akhir akan berisi konten yang digabungkan dengan format daftar dokumen sumber yang dipertahankan.
+### Bisakah saya menggabungkan dokumen dengan format berbeda?
+Ya, Aspose.Words mendukung penggabungan dokumen berbagai format, termasuk DOCX, DOC, RTF, dan lainnya.
+
+### Apakah Aspose.Words kompatibel dengan .NET Core?
+Ya, Aspose.Words sepenuhnya mendukung .NET Core, memungkinkan pengembangan lintas platform.
+
+### Bagaimana cara menangani dokumen berukuran besar secara efisien?
+Aspose.Words menyediakan API yang efisien untuk manipulasi dokumen, dioptimalkan untuk kinerja bahkan dengan dokumen berukuran besar.
+
+### Di mana saya dapat menemukan lebih banyak contoh dan dokumentasi?
+ Anda dapat menjelajahi lebih banyak contoh dan dokumentasi terperinci di[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/).

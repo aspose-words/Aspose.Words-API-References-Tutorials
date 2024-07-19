@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Qui utilizziamo il generatore di documenti per creare una tabella con due righe di intestazione e più righe di dati. IL`RowFormat.HeadingFormat` parametri vengono utilizzati per contrassegnare le righe di intestazione che dovrebbero essere ripetute nelle pagine successive.
+ Qui utilizziamo il generatore di documenti per creare una tabella con due righe di intestazione e più righe di dati. IL`RowFormat.HeadingFormat` i parametri vengono utilizzati per contrassegnare le righe di intestazione che dovrebbero essere ripetute nelle pagine successive.
 
 ## Passaggio 4: salvataggio del documento modificato
 Infine gli Stati Uniti

@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Αντικαθιστώ`"original_document.docx"` και`"modified_document.docx"` με τις διαδρομές προς τα δικά σας έγγραφα.
+ Αντικαθιστώ`"original_document.docx"`και`"modified_document.docx"` με τις διαδρομές προς τα δικά σας έγγραφα.
 
 ## Βήμα 2: Συγκρίνετε έγγραφα
 

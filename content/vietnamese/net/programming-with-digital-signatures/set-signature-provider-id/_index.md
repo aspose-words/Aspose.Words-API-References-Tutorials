@@ -2,108 +2,117 @@
 title: Đặt Id nhà cung cấp chữ ký trong tài liệu Word
 linktitle: Đặt Id nhà cung cấp chữ ký trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách đặt ID nhà cung cấp chữ ký trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Đặt ID nhà cung cấp chữ ký một cách an toàn trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết gồm 2000 từ của chúng tôi để ký điện tử vào tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để sử dụng tính năng Đặt ID nhà cung cấp chữ ký với Aspose.Words cho .NET. Tính năng này cho phép bạn chỉ định ID nhà cung cấp chữ ký cho dòng chữ ký trong tài liệu Word. Làm theo các bước dưới đây:
+## Giới thiệu
 
-## Bước 1: Load tài liệu và truy cập dòng chữ ký
+Này! Vậy là bạn đã có tài liệu Word tuyệt vời cần chữ ký điện tử này rồi phải không? Nhưng không chỉ bất kỳ chữ ký nào—bạn cần đặt ID Nhà cung cấp Chữ ký cụ thể. Cho dù bạn đang xử lý các tài liệu pháp lý, hợp đồng hay bất kỳ thủ tục giấy tờ nào, việc thêm chữ ký điện tử an toàn là rất quan trọng. Trong hướng dẫn này, tôi sẽ hướng dẫn bạn toàn bộ quá trình thiết lập ID Nhà cung cấp Chữ ký trong tài liệu Word bằng Aspose.Words cho .NET. Sẵn sàng? Hãy đi sâu vào!
 
-Bắt đầu bằng cách tải lên tài liệu có chứa dòng chữ ký:
+## Điều kiện tiên quyết
+
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
+
+1. Aspose.Words for .NET Library: Nếu bạn chưa có,[tải về tại đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích C# nào.
+3. Tài liệu Word: Một tài liệu có dòng chữ ký (`Signature line.docx`).
+4.  Chứng chỉ số: A`.pfx` tập tin chứng chỉ (ví dụ,`morzal.pfx`).
+5. Kiến thức cơ bản về C#: Chỉ là kiến thức cơ bản—đừng lo lắng, chúng tôi sẵn sàng trợ giúp!
+
+Bây giờ chúng ta hãy bắt tay vào hành động!
+
+## Nhập không gian tên
+
+Trước tiên, hãy đảm bảo bạn bao gồm các không gian tên cần thiết trong dự án của mình. Điều này là cần thiết để truy cập thư viện Aspose.Words và các lớp liên quan.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.DigitalSignatures;
+```
+
+Được rồi, hãy chia điều này thành các bước đơn giản, dễ hiểu.
+
+## Bước 1: Tải tài liệu Word của bạn
+
+Bước đầu tiên là tải tài liệu Word có chứa dòng chữ ký. Tài liệu này sẽ được sửa đổi để bao gồm chữ ký số với ID Nhà cung cấp Chữ ký được chỉ định.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
+```
 
+ Ở đây, chúng tôi chỉ định thư mục chứa tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến tài liệu của bạn.
+
+## Bước 2: Truy cập dòng chữ ký
+
+Tiếp theo, chúng ta cần truy cập dòng chữ ký trong tài liệu. Dòng chữ ký được nhúng dưới dạng đối tượng hình dạng trong tài liệu Word.
+
+```csharp
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## Bước 2: Đặt tùy chọn chữ ký
+ Dòng mã này lấy hình dạng đầu tiên trong phần thân của phần đầu tiên của tài liệu và chuyển nó thành một`SignatureLine` sự vật.
 
-Tạo một phiên bản của lớp SignOptions và đặt các tùy chọn ký, bao gồm ID nhà cung cấp:
+## Bước 3: Thiết lập tùy chọn đăng nhập
+
+Bây giờ, chúng tôi tạo các tùy chọn ký hiệu, bao gồm ID nhà cung cấp và ID dòng chữ ký từ dòng chữ ký được truy cập.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-ProviderId = signatureLine.ProviderId,
- SignatureLineId = signatureLine.Id
+    ProviderId = signatureLine.ProviderId,
+    SignatureLineId = signatureLine.Id
 };
 ```
 
-## Bước 3: Ký văn bản
+Các tùy chọn này sẽ được sử dụng khi ký tài liệu để đảm bảo ID Nhà cung cấp Chữ ký được đặt chính xác.
 
-Để ký tài liệu, bạn phải sử dụng lớp DigitalSignatureUtil và chỉ định chứng chỉ ký:
+## Bước 4: Tải chứng chỉ
+
+ Để ký tài liệu bằng kỹ thuật số, bạn cần có chứng chỉ. Đây là cách bạn tải`.pfx` tài liệu:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-	dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
-Đảm bảo chỉ định đường dẫn chính xác cho tài liệu, chứng chỉ và tài liệu đã ký.
+ Thay thế`"aw"` bằng mật khẩu cho tệp chứng chỉ của bạn nếu có.
 
-### Mã nguồn mẫu cho Đặt Id nhà cung cấp chữ ký bằng Aspose.Words cho .NET
+## Bước 5: Ký vào tài liệu
 
-Đây là mã nguồn hoàn chỉnh để đặt ID nhà cung cấp chữ ký bằng Aspose.Words cho .NET:
+ Cuối cùng, đã đến lúc ký tài liệu bằng cách sử dụng`DigitalSignatureUtil.Sign` phương pháp.
 
 ```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Signature line.docx");
-
-	SignatureLine signatureLine =
-		((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
-
-	SignOptions signOptions = new SignOptions
-	{
-		ProviderId = signatureLine.ProviderId, SignatureLineId = signatureLine.Id
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-		dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
-
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
+    dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
-Hoàn tất ID nhà cung cấp chữ ký trong tài liệu Word của bạn bằng Aspose.Words for .NET.
-
+ Việc này sẽ ký vào tài liệu của bạn và lưu nó dưới dạng một tệp mới,`Digitally signed.docx`.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã tìm hiểu cách đặt ID nhà cung cấp chữ ký cho dòng chữ ký trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được cung cấp, bạn có thể dễ dàng tải tài liệu, truy cập dòng chữ ký, đặt ID nhà cung cấp và ký vào tài liệu. Khả năng đặt ID nhà cung cấp chữ ký giúp thiết lập danh tính và độ tin cậy của người ký, nâng cao tính bảo mật và tính toàn vẹn của tài liệu Word của bạn. Aspose.Words for .NET cung cấp API mạnh mẽ để Xử lý từ bằng chữ ký số, cho phép bạn tùy chỉnh và quản lý quy trình chữ ký một cách dễ dàng.
+Và bạn có nó rồi đấy! Bạn đã đặt thành công ID nhà cung cấp chữ ký trong tài liệu Word bằng Aspose.Words cho .NET. Quá trình này không chỉ bảo mật tài liệu của bạn mà còn đảm bảo chúng tuân thủ các tiêu chuẩn chữ ký số. Bây giờ, hãy tiếp tục và thử nó với tài liệu của bạn. Bạn có câu hỏi nào không? Hãy xem phần Câu hỏi thường gặp bên dưới hoặc nhấn vào[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).
 
-### Câu hỏi thường gặp về đặt id nhà cung cấp chữ ký trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Hỏi: ID nhà cung cấp chữ ký trong tài liệu Word là gì?
+### ID Nhà cung cấp Chữ ký là gì?
 
-Trả lời: ID nhà cung cấp chữ ký trong tài liệu Word là mã định danh duy nhất chỉ định nhà cung cấp chữ ký điện tử. Nó giúp xác định thực thể hoặc tổ chức chịu trách nhiệm tạo và quản lý chữ ký số.
+ID nhà cung cấp chữ ký xác định duy nhất nhà cung cấp chữ ký số, đảm bảo tính xác thực và bảo mật.
 
-#### Câu hỏi: Làm cách nào tôi có thể đặt ID nhà cung cấp chữ ký cho dòng chữ ký trong tài liệu Word bằng Aspose.Words cho .NET?
+### Tôi có thể sử dụng bất kỳ tệp .pfx nào để ký không?
 
-Trả lời: Để đặt ID nhà cung cấp chữ ký cho dòng chữ ký trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
-1.  Tải tài liệu bằng cách sử dụng`Document` class và chỉ định đường dẫn đến tệp tài liệu.
-2.  Truy cập dòng chữ ký bằng phương pháp hoặc thuộc tính thích hợp. Ví dụ, bạn có thể sử dụng`GetChild` phương pháp để lấy hình dạng dòng chữ ký.
-3. Lấy ID nhà cung cấp từ dòng chữ ký.
-4.  Tạo một thể hiện của`SignOptions` lớp và thiết lập`ProviderId` thuộc tính vào ID nhà cung cấp được truy xuất.
-5.  Sử dụng`DigitalSignatureUtil.Sign` phương pháp ký tài liệu, cung cấp các tham số cần thiết bao gồm`SignOptions` sự vật.
+Có, miễn là đó là chứng chỉ kỹ thuật số hợp lệ. Đảm bảo bạn có mật khẩu chính xác nếu nó được bảo vệ.
 
-#### Câu hỏi: Làm cách nào để truy cập dòng chữ ký trong tài liệu Word bằng Aspose.Words cho .NET?
+### Làm cách nào để có được tệp .pfx?
 
- Trả lời: Để truy cập dòng chữ ký trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng phương pháp hoặc thuộc tính thích hợp để truy xuất hình dạng dòng chữ ký từ cấu trúc của tài liệu. Ví dụ: bạn có thể sử dụng`GetChild` phương pháp với các tham số thích hợp để có được hình dạng dòng chữ ký mong muốn.
+Bạn có thể lấy tệp .pfx từ Cơ quan cấp chứng chỉ (CA) hoặc tạo tệp bằng các công cụ như OpenSSL.
 
-#### Câu hỏi: Tôi có thể đặt ID nhà cung cấp chữ ký cho nhiều dòng chữ ký trong tài liệu Word không?
+### Tôi có thể ký nhiều tài liệu cùng một lúc không?
 
- Trả lời: Có, bạn có thể đặt ID nhà cung cấp chữ ký cho nhiều dòng chữ ký trong tài liệu Word. Bạn có thể lặp qua bộ sưu tập các dòng chữ ký trong tài liệu và đặt ID nhà cung cấp cho từng dòng chữ ký riêng lẻ bằng cách sử dụng`SignOptions.ProviderId` tài sản.
+Có, bạn có thể lặp qua nhiều tài liệu và áp dụng cùng một quy trình ký cho từng tài liệu.
 
-#### Câu hỏi: Mục đích của ID nhà cung cấp chữ ký trong tài liệu Word là gì?
+### Nếu tôi không có dòng chữ ký trong tài liệu của mình thì sao?
 
-Trả lời: ID nhà cung cấp chữ ký trong tài liệu Word phục vụ mục đích xác định thực thể hoặc tổ chức chịu trách nhiệm tạo và quản lý chữ ký số. Nó giúp thiết lập tính xác thực và độ tin cậy của chữ ký số bằng cách liên kết nó với một nhà cung cấp cụ thể.
-
-#### Câu hỏi: Loại chứng chỉ kỹ thuật số nào có thể được sử dụng để đặt ID nhà cung cấp chữ ký trong tài liệu Word?
-
-Trả lời: Bạn có thể sử dụng chứng chỉ kỹ thuật số X.509 với thông tin nhà cung cấp phù hợp để đặt ID nhà cung cấp chữ ký trong tài liệu Word. Chứng chỉ kỹ thuật số phải được cấp bởi cơ quan cấp chứng chỉ đáng tin cậy (CA) và chứa siêu dữ liệu cần thiết để xác định nhà cung cấp.
+Trước tiên, bạn cần chèn dòng chữ ký. Aspose.Words cung cấp các phương thức để thêm dòng chữ ký theo chương trình.

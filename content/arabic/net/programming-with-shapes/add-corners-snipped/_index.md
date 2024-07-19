@@ -17,14 +17,14 @@ url: /ar/net/programming-with-shapes/add-corners-snipped/
 - المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
+ ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## الخطوة 2: إنشاء مستند جديد وDocumentBuilder
- إنشاء مثيل جديد لـ`Document` فئة و أ`DocumentBuilder`كائن للعمل مع الوثيقة.
+ إنشاء مثيل جديد لـ`Document` فئة و أ`DocumentBuilder` كائن للعمل مع الوثيقة.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.InsertShape(ShapeType.TopCornersSnipped, 50, 50);
 ```
 
 ## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام ملف`Save` طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithShapes.AddCornersSnipped.docx".
+ احفظ المستند في الدليل المحدد باستخدام ملف`Save`طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithShapes.AddCornersSnipped.docx".
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)

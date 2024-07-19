@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Krok 2: Załaduj swoje dokumenty
 
- Następnie musisz załadować dokumenty programu Word, które chcesz porównać. W tym przykładzie założymy, że masz nazwy dwóch dokumentów`Document.docx` I`Document2.docx` znajduje się w katalogu dokumentów.
+ Następnie musisz załadować dokumenty programu Word, które chcesz porównać. W tym przykładzie założymy, że masz nazwy dwóch dokumentów`Document.docx`I`Document2.docx` znajduje się w katalogu dokumentów.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.

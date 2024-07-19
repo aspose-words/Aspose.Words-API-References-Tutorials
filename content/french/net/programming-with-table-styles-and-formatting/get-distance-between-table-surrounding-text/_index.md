@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
 ---
 
-Dans ce didacticiel, nous vous guiderons tout au long du processus étape par étape pour obtenir la distance entre le texte environnant dans un tableau à l'aide d'Aspose.Words for .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. A la fin de ce tutoriel, vous saurez comment accéder aux différentes distances entre un tableau et le texte qui l'entoure dans vos documents Word à l'aide d'Aspose.Words for .NET.
+Dans ce didacticiel, nous vous guiderons tout au long du processus étape par étape pour obtenir la distance entre le texte environnant dans un tableau à l'aide d'Aspose.Words for .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. A la fin de ce tutoriel, vous saurez comment accéder aux différentes distances entre un tableau et le texte qui l'entoure dans vos documents Word à l'aide d'Aspose.Words pour .NET.
 
 ## Étape 1 : Définir le répertoire des documents
 Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. C'est ici que se trouve votre document Word. Remplacez « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin approprié.
@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Étape 3 : Obtenez la distance entre le tableau et le texte environnant
- Pour obtenir la distance entre le tableau et le texte environnant, nous devons accéder au tableau dans le document en utilisant le`GetChild()` méthode et le`NodeType.Table` propriété. On peut alors afficher les différentes distances en utilisant les propriétés du tableau`DistanceTop`, `DistanceBottom`, `DistanceRight` et`DistanceLeft`.
+ Pour obtenir la distance entre le tableau et le texte environnant, nous devons accéder au tableau dans le document en utilisant le`GetChild()` méthode et le`NodeType.Table` propriété. On peut alors afficher les différentes distances en utilisant les propriétés du tableau`DistanceTop`, `DistanceBottom`, `DistanceRight`et`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

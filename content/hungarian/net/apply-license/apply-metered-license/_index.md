@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Cserélje ki`"your_public_key"` és`"your_private_key"`az Aspose-tól kapott tényleges kulcsokkal. Ez a lépés lényegében közli az Aspose-val, hogy mérsékelt licencet szeretne használni.
+ Cserélje ki`"your_public_key"`és`"your_private_key"`az Aspose-tól kapott tényleges kulcsokkal. Ez a lépés lényegében közli az Aspose-val, hogy mérsékelt licencet szeretne használni.
 
 ## 3. lépés: Töltse be a dokumentumot
 

@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Qui stiamo creando un'istanza di`Document` E`DocumentBuilder` . Pensa a`Document` come documento Word vuoto e`DocumentBuilder` come la tua penna.
+ Qui stiamo creando un'istanza di`Document`E`DocumentBuilder` . Pensa a`Document` come documento Word vuoto e`DocumentBuilder` come la tua penna.
 
 ## Passaggio 2: vai all'inizio del documento
 

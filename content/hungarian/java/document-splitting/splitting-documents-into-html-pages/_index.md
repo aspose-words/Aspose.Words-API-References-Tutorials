@@ -2,7 +2,7 @@
 title: Dokumentumok felosztása HTML oldalakra
 linktitle: Dokumentumok felosztása HTML oldalakra
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan oszthat fel Word dokumentumokat HTML-oldalakra az Aspose.Words for Java segítségével. A forráskóddal ellátott, lépésről lépésre mutató útmutatónk egyszerűvé és hatékonysá teszi a folyamatot. Kezdje el a dokumentumok konvertálását még ma!
+description: Ismerje meg, hogyan oszthat fel Word dokumentumokat HTML-oldalakra az Aspose.Words for Java segítségével. A forráskóddal ellátott, lépésről lépésre bemutatott útmutatónk egyszerűvé és hatékonysá teszi a folyamatot. Kezdje el a dokumentumok konvertálását még ma!
 type: docs
 weight: 11
 url: /hu/java/document-splitting/splitting-documents-into-html-pages/
@@ -20,7 +20,7 @@ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a következő e
 
 ## Bevezetés
 
-A mai digitális világban általános követelmény a Word-dokumentumok HTML-oldalakká alakítása. Az Aspose.Words leegyszerűsíti ezt a feladatot azáltal, hogy egy Java API-t biztosít, amely lehetővé teszi, hogy a Word dokumentumokat könnyedén HTML-oldalakra bontsuk. Kezdjük el.
+A mai digitális világban általános követelmény a Word-dokumentumok HTML-oldalakká alakítása. Az Aspose.Words leegyszerűsíti ezt a feladatot azáltal, hogy egy Java API-t biztosít, amely lehetővé teszi számunkra, hogy a Word dokumentumokat könnyedén HTML-oldalakra bontsuk. Kezdjük el.
 
 ## A Projekt beállítása
 

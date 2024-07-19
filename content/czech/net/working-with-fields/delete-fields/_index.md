@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 Projděte všechna pole v dokumentu a odstraňte je:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 Tato smyčka iteruje zpětně přes kolekci polí, aby se předešlo problémům s úpravou kolekce během iterace.

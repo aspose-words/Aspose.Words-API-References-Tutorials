@@ -12,7 +12,7 @@ Dokumentrevision är en avgörande aspekt av ordbehandling och dokumentbehandlin
 
 ## Spåra revisioner med Aspose.Words
 
-I dessa handledningar kommer utvecklare att lära sig hur man spårar revisioner med Aspose.Words för Java. Biblioteket erbjuder kraftfulla funktioner för revisionsspårning, vilket gör att användare kan markera ändringar, infoga kommentarer och hantera revisioner tillsammans. Genom att behärska revisionsspårning kan utvecklare effektivisera granskningsprocessen och säkerställa dokumentens noggrannhet och kvalitet.
+I dessa handledningar kommer utvecklare att lära sig hur man spårar revisioner med Aspose.Words för Java. Biblioteket tillhandahåller kraftfulla funktioner för revisionsspårning, så att användare kan markera ändringar, infoga kommentarer och hantera revisioner i samarbete. Genom att bemästra revisionsspårning kan utvecklare effektivisera granskningsprocessen och säkerställa dokumentens noggrannhet och kvalitet.
 
 ## Versionskontroll och dokumenthistorik
 

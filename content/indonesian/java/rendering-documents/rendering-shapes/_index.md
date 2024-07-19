@@ -83,7 +83,7 @@ Selamat! Anda telah berhasil mempelajari cara merender bentuk di Aspose.Words un
 
 Ya, Anda bisa merender beberapa bentuk dalam satu dokumen. Cukup ulangi proses untuk setiap bentuk yang ingin Anda render.
 
-### Q2: Apakah Aspose.Words untuk Java kompatibel dengan format dokumen yang berbeda?
+### Q2: Apakah Aspose.Words untuk Java kompatibel dengan berbagai format dokumen?
 
 Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOCX, PDF, HTML, dan banyak lagi.
 

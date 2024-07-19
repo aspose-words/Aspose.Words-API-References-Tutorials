@@ -21,7 +21,7 @@ url: /ko/net/programming-with-tables/insert-table-from-html/
 // 문서 디렉토리 경로
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// 문서작성
+// 문서 작성
 Document doc = new Document();
 
 // 문서 생성기 초기화

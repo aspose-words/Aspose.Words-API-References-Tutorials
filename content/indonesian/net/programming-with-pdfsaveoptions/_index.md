@@ -24,10 +24,10 @@ Baik Anda ingin mengonversi dokumen Word ke PDF untuk distribusi online, pengars
 | [Kurangi Ukuran PDF dengan Menonaktifkan Font Tersemat](./disable-embed-windows-fonts/) | Pelajari cara menonaktifkan penyematan font Windows saat mengonversi dokumen ke PDF dengan Aspose.Words untuk .NET. |
 | [Optimalkan Ukuran PDF dengan Lewati Font Arial & Times Roman yang Tersemat](./skip-embedded-arial-and-times-roman-fonts/) | Panduan langkah demi langkah untuk menghasilkan PDF tanpa menyematkan font Arial dan Times Roman dengan Aspose.Words untuk .NET. |
 | [Kurangi Ukuran File PDF dengan Tidak Menyematkan Font Inti](./avoid-embedding-core-fonts/) | Pelajari cara menghindari penyematan font dasar saat mengonversi dokumen Word ke PDF dengan Aspose.Words untuk .NET. |
-| [Escape URI dalam Dokumen PDF](./escape-uri/) | Panduan langkah demi langkah untuk keluar dari Uri dengan Aspose.Words untuk .NET. |
+| [Escape URI dalam Dokumen PDF](./escape-uri/) | Pelajari cara keluar dari URI dalam PDF menggunakan Aspose.Words untuk .NET. Panduan terperinci ini memandu Anda melalui proses langkah demi langkah. |
 | [Ekspor Bookmark Header Footer Dokumen Word ke Dokumen PDF](./export-header-footer-bookmarks/) | Panduan langkah demi langkah untuk mengekspor bookmark header dan footer dengan Aspose.Words untuk .NET. |
 | [Kurangi Ukuran PDF dengan Skala Font Wmf Ke Ukuran Metafile](./scale-wmf-fonts-to-metafile-size/) | Panduan langkah demi langkah untuk menyesuaikan ukuran font WMF saat mengonversi ke PDF dengan Aspose.Words untuk .NET. |
-| [Tingkatkan Penempatan Teks PDF dengan Pemosisian Teks Tambahan](./additional-text-positioning/) | Pelajari cara mengontrol penempatan teks tambahan saat mengonversi dokumen Word ke PDF dengan Aspose.Words untuk .NET. |
+| [Tingkatkan Penempatan Teks PDF dengan Penempatan Teks Tambahan](./additional-text-positioning/) | Pelajari cara mengontrol penempatan teks tambahan saat mengonversi dokumen Word ke PDF dengan Aspose.Words untuk .NET. |
 | [Konversi Dokumen Word Ke PDF 1.7](./conversion-to-pdf-17/) | Pelajari cara mengonversi dokumen ke PDF 1.7 dengan Aspose.Words untuk .NET. |
 | [Kurangi Ukuran Dokumen PDF dengan Downsampling Gambar](./downsampling-images/) | Pelajari cara mengurangi resolusi gambar saat mengonversi ke PDF dengan Aspose.Words untuk .NET. |
 | [Tetapkan Opsi Garis Besar dalam Dokumen PDF](./set-outline-options/) | Panduan langkah demi langkah untuk mengatur opsi kerangka dalam dokumen PDF dengan Aspose.Words untuk .NET. |

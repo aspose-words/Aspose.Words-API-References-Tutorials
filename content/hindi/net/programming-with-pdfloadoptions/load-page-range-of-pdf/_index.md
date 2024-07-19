@@ -15,7 +15,7 @@ url: /hi/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 किसी PDF दस्तावेज़ से विशिष्ट पृष्ठ श्रेणी लोड करने के लिए निम्नलिखित कोड का उपयोग करें:
 
 ```csharp
-// दस्तावेज़ निर्देशिका का पथ.
+//दस्तावेज़ निर्देशिका का पथ.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- इस उदाहरण में, हम PDF दस्तावेज़ का पहला पृष्ठ लोड कर रहे हैं। आप इसके मान बदल सकते हैं`PageIndex` और`PageCount` इच्छित पृष्ठ श्रेणी तक.
+ इस उदाहरण में, हम PDF दस्तावेज़ का पहला पृष्ठ लोड कर रहे हैं। आप इसके मान बदल सकते हैं`PageIndex`और`PageCount` इच्छित पृष्ठ श्रेणी तक.
 
 ## चरण 2: दस्तावेज़ को सहेजना
 

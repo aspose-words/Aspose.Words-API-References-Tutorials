@@ -72,13 +72,13 @@ Vui lòng khám phá thêm các tính năng của Aspose.Words for .NET để n�
 
 #### Làm cách nào tôi có thể truy xuất phông chữ chính và phụ của chủ đề tài liệu?
 
- Bạn có thể truy cập phông chữ chính và phụ của chủ đề tài liệu bằng cách sử dụng`MajorFonts` Và`MinorFonts` thuộc tính của`Theme` đối tượng tương ứng. Các thuộc tính này cung cấp quyền truy cập vào tên phông chữ được sử dụng trong chủ đề của tài liệu cho các ngôn ngữ hoặc khu vực khác nhau.
+ Bạn có thể truy cập phông chữ chính và phụ của chủ đề tài liệu bằng cách sử dụng`MajorFonts`Và`MinorFonts` thuộc tính của`Theme` đối tượng tương ứng. Các thuộc tính này cung cấp quyền truy cập vào tên phông chữ được sử dụng trong chủ đề của tài liệu cho các ngôn ngữ hoặc khu vực khác nhau.
 
 #### Tôi có thể lấy màu nhấn được sử dụng trong chủ đề của tài liệu không?
 
  Có, bạn có thể lấy màu nhấn được sử dụng trong chủ đề của tài liệu bằng cách truy cập vào`Colors` tài sản của`Theme` sự vật. Thuộc tính này cung cấp quyền truy cập vào các màu nhấn, chẳng hạn như`Accent1`, `Accent2`, `Accent3`, v.v. mà bạn có thể sử dụng cho mục đích tùy chỉnh hoặc phân tích.
 
-#### Làm cách nào tôi có thể sử dụng các thuộc tính chủ đề đã truy xuất?
+#### Làm cách nào tôi có thể sử dụng các thuộc tính chủ đề được truy xuất?
 
 Các thuộc tính chủ đề được truy xuất có thể được sử dụng cho nhiều mục đích khác nhau. Bạn có thể tùy chỉnh kiểu và bố cục của tài liệu dựa trên phông chữ và màu sắc được sử dụng trong chủ đề. Bạn cũng có thể thực hiện phân tích về cách sử dụng phông chữ và màu sắc trong tài liệu của mình hoặc áp dụng các thay đổi được nhắm mục tiêu cho các thành phần cụ thể dựa trên thuộc tính chủ đề.
 

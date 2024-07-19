@@ -2,24 +2,39 @@
 title: Nascondi l'asse del grafico in un documento Word
 linktitle: Nascondi l'asse del grafico in un documento Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come nascondere l'asse del grafico in un documento utilizzando Aspose.Words per .NET. Nascondi l'asse per una visualizzazione del grafico più chiara e mirata.
+description: Scopri come nascondere l'asse del grafico in un documento Word utilizzando Aspose.Words per .NET con il nostro tutorial dettagliato passo passo.
 type: docs
 weight: 10
 url: /it/net/programming-with-charts/hide-chart-axis/
 ---
+## introduzione
 
-Questo tutorial spiega come utilizzare Aspose.Words per .NET per nascondere l'asse del grafico in un documento. Il codice sorgente fornito dimostra come creare un grafico, aggiungere dati di serie e nascondere l'asse del grafico.
+La creazione di documenti Word dinamici e visivamente accattivanti spesso implica l'incorporazione di diagrammi e grafici. Uno di questi scenari potrebbe richiedere di nascondere l'asse del grafico per una presentazione più pulita. Aspose.Words per .NET fornisce un'API completa e facile da usare per tali attività. Questo tutorial ti guiderà attraverso i passaggi per nascondere un asse del grafico in un documento Word utilizzando Aspose.Words per .NET.
 
-## Passaggio 1: impostare il progetto
+## Prerequisiti
 
-Assicurati di avere i seguenti prerequisiti:
+Prima di immergerci nel tutorial, assicurati di avere i seguenti prerequisiti:
 
-- Aspose.Words per la libreria .NET installata. È possibile scaricarlo utilizzando Gestione pacchetti NuGet per installarlo.
-- Un percorso della directory del documento in cui verrà salvato il documento di output.
+-  Aspose.Words per .NET: puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+- Ambiente di sviluppo: qualsiasi IDE che supporti lo sviluppo .NET, come Visual Studio.
+- .NET Framework: assicurati di avere .NET Framework installato sul tuo computer.
+- Conoscenza di base di C#: la familiarità con il linguaggio di programmazione C# sarà utile.
 
-## Passaggio 2: crea un nuovo documento e inserisci un grafico
+## Importa spazi dei nomi
 
- Creane uno nuovo`Document` oggetto e a`DocumentBuilder` per costruire il documento.
+Per iniziare a lavorare con Aspose.Words per .NET, devi importare gli spazi dei nomi richiesti nel tuo progetto. Ecco come puoi farlo:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Suddividiamo il processo in passaggi semplici e facili da seguire.
+
+## Passaggio 1: inizializzare il documento e DocumentBuilder
+
+Il primo passaggio prevede la creazione di un nuovo documento Word e l'inizializzazione dell'oggetto DocumentBuilder.
 
 ```csharp
 // Percorso della directory dei documenti
@@ -29,88 +44,78 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Successivamente, inserisci un grafico nel documento utilizzando il comando`InsertChart` metodo del`DocumentBuilder`. In questo esempio inseriremo un grafico a colonne.
+ In questo passaggio definiamo il percorso in cui verrà salvato il documento. Quindi ne creiamo uno nuovo`Document` oggetto e a`DocumentBuilder` oggetto per iniziare a costruire il nostro documento.
+
+## Passaggio 2: inserisci un grafico
+
+ Successivamente, inseriremo un grafico nel documento utilizzando il file`DocumentBuilder` oggetto.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Passaggio 3: aggiungi i dati della serie al grafico
+ Qui inseriamo un istogramma con le dimensioni specificate. IL`InsertChart` il metodo restituisce a`Shape` oggetto che contiene il grafico.
 
-Aggiungi i dati della serie al grafico. In questo esempio aggiungeremo cinque elementi e i relativi valori corrispondenti.
+## Passaggio 3: cancella le serie esistenti
+
+Prima di aggiungere nuovi dati al grafico, dobbiamo cancellare tutte le serie esistenti.
 
 ```csharp
 chart.Series.Clear();
+```
+
+Questo passaggio garantisce che tutti i dati predefiniti nel grafico vengano rimossi, lasciando il posto ai nuovi dati che aggiungeremo successivamente.
+
+## Passaggio 4: aggiungi i dati della serie
+
+Ora aggiungiamo le nostre serie di dati al grafico.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Passaggio 4: nascondi l'asse del grafico
+In questo passaggio aggiungiamo una serie intitolata "Aspose Series 1" con categorie e valori corrispondenti.
 
- Per nascondere l'asse del grafico, accedi a`AxisY` proprietà del grafico e impostare il file`Hidden`proprietà a`true`.
+## Passaggio 5: nascondi l'asse Y
+
+ Per nascondere l'asse Y del grafico, impostiamo semplicemente il file`Hidden` proprietà dell'asse Y a`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-In questo esempio, nascondiamo l'asse Y del grafico.
+Questa riga di codice nasconde l'asse Y, rendendolo invisibile nel grafico.
 
-## Passaggio 5: salva il documento
+## Passaggio 6: salva il documento
 
- Infine, salva il documento nella directory specificata utilizzando il file`Save` metodo del`Document` oggetto.
+Infine, salva il documento nella directory specificata.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-Ciò completa l'implementazione di nascondere l'asse del grafico utilizzando Aspose.Words per .NET.
-
-### Codice sorgente di esempio per Nascondi asse del grafico utilizzando Aspose.Words per .NET 
-
-```csharp
-	// Percorso della directory dei documenti
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Hidden = true;
-	doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
-```
+Questo comando salva il documento di Word con il grafico nel percorso specificato.
 
 ## Conclusione
 
-In questo tutorial, hai imparato come nascondere l'asse del grafico in un documento Word utilizzando Aspose.Words per .NET. Seguendo la guida passo passo e utilizzando il codice sorgente fornito, puoi creare un grafico, aggiungere dati di serie e nascondere l'asse del grafico per ottenere l'effetto visivo desiderato.
+Congratulazioni! Hai imparato con successo come nascondere un asse del grafico in un documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione dei documenti Word a livello di codice. Seguendo questi passaggi, puoi creare documenti personalizzati e dall'aspetto professionale con il minimo sforzo.
 
- Aspose.Words per .NET fornisce un'API completa per l'elaborazione delle parole con grafici nei documenti Word, consentendo di manipolare vari aspetti del grafico, comprese le proprietà degli assi. Accedendo al`AxisY` proprietà del grafico, puoi nascondere l'asse Y per rimuoverlo dalla visualizzazione del grafico.
+## Domande frequenti
 
-Nascondere l'asse del grafico può essere utile quando vuoi concentrarti sui dati del grafico senza la distrazione delle linee e delle etichette degli assi. Fornisce un aspetto più pulito e minimalista al grafico.
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente API per creare, modificare, convertire e manipolare documenti Word all'interno di applicazioni .NET.
 
-Utilizzando Aspose.Words per .NET, puoi facilmente incorporare funzionalità di creazione di grafici nelle tue applicazioni .NET e generare documenti dall'aspetto professionale con grafici personalizzati e assi del grafico nascosti.
+### Posso nascondere entrambi gli assi X e Y in un grafico?
+ Sì, puoi nascondere entrambi gli assi impostando il file`Hidden` proprietà di entrambi`AxisX`E`AxisY` A`true`.
 
-### Domande frequenti
+### È disponibile una prova gratuita per Aspose.Words per .NET?
+ Sì, puoi ottenere una prova gratuita[Qui](https://releases.aspose.com/).
 
-#### Q1. Cos'è Aspose.Words per .NET?
-Aspose.Words per .NET è una potente libreria di elaborazione documenti che consente agli sviluppatori di creare, manipolare e salvare documenti Word a livello di codice nelle applicazioni .NET. Fornisce un'ampia gamma di funzionalità per l'elaborazione di parole con elementi di documenti, inclusi grafici e assi del grafico.
+### Dove posso trovare ulteriore documentazione?
+ È possibile trovare la documentazione dettagliata su Aspose.Words per .NET[Qui](https://reference.aspose.com/words/net/).
 
-#### Q2. Come posso installare Aspose.Words per .NET?
-È possibile installare Aspose.Words per .NET scaricandolo utilizzando il gestore pacchetti NuGet in Visual Studio. Cerca semplicemente "Aspose.Words" nel gestore pacchetti NuGet e installalo nel tuo progetto.
-
-#### Q3. Posso nascondere sia l'asse X che l'asse Y di un grafico?
- Sì, puoi nascondere sia l'asse X che l'asse Y di un grafico utilizzando Aspose.Words per .NET. Per nascondere l'asse X, puoi accedere a`AxisX` proprietà del grafico e impostare il file`Hidden`proprietà a`true` . Allo stesso modo, per nascondere l'asse Y, puoi accedere a`AxisY` proprietà e impostare il file`Hidden`proprietà a`true`. Ciò consente di rimuovere entrambi gli assi dalla visualizzazione del grafico.
-
-#### Q4. Posso mostrare nuovamente l'asse dopo averlo nascosto?
-Sì, puoi mostrare nuovamente l'asse del grafico dopo averlo nascosto utilizzando Aspose.Words per .NET. Per mostrare un asse nascosto, è sufficiente impostare il file`Hidden` proprietà del corrispondente`AxisX` O`AxisY` opporsi a`false`. Ciò renderà nuovamente visibile l'asse nel grafico.
-
-#### Q5. Posso personalizzare altre proprietà dell'asse del grafico?
- Sì, Aspose.Words per .NET ti consente di personalizzare varie proprietà dell'asse del grafico, come il titolo dell'asse, le etichette, il colore della linea e altro. Accedendo al`AxisX` E`AxisY` proprietà del grafico, puoi modificare proprietà come`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, e molti altri. Ciò ti offre un controllo dettagliato sull'aspetto e sul comportamento dell'asse del grafico.
-
-#### Q6. Posso salvare il grafico con l'asse nascosto in diversi formati di file?
- Sì, Aspose.Words per .NET ti consente di salvare il documento contenente il grafico con un asse nascosto in vari formati di file, come DOCX, PDF, HTML e altro. Puoi scegliere il formato di output desiderato in base alle tue esigenze e utilizzare il file`Save` metodo del`Document` oggetto per salvare il documento. L'asse nascosto verrà conservato nel documento salvato.
+### Come posso ottenere supporto per Aspose.Words per .NET?
+ Puoi ottenere supporto dalla comunità Aspose[Qui](https://forum.aspose.com/c/words/8).

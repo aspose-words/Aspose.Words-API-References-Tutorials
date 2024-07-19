@@ -18,7 +18,7 @@ Aspose.Words for Java'yı kullanmaya başlamadan önce Java geliştirme ortamın
 
 - 1. Adım: Java Development Kit'i (JDK) indirip yükleyin
 - Adım 2: En sevdiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturun
-- 3. Adım: Aspose.Words for Java kütüphanesini projenize ekleyin
+- Adım 3: Aspose.Words for Java kütüphanesini projenize ekleyin
 
 ## Yeni bir Word belgesi oluşturma
 

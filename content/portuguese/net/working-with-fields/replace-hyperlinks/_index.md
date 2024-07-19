@@ -10,7 +10,7 @@ url: /pt/net/working-with-fields/replace-hyperlinks/
 
 ## Introdução
 
-No mundo do desenvolvimento .NET, gerenciar e manipular documentos é uma tarefa crucial, muitas vezes exigindo um tratamento eficiente de hiperlinks dentro de documentos. Aspose.Words for .NET fornece recursos poderosos para substituir hiperlinks perfeitamente, garantindo que seus documentos sejam vinculados dinamicamente aos recursos certos. Este tutorial se aprofunda em como você pode conseguir isso usando Aspose.Words for .NET, guiando você passo a passo pelo processo.
+No mundo do desenvolvimento .NET, gerenciar e manipular documentos é uma tarefa crucial, muitas vezes exigindo um tratamento eficiente de hiperlinks dentro de documentos. Aspose.Words for .NET fornece recursos poderosos para substituir hiperlinks perfeitamente, garantindo que seus documentos sejam vinculados dinamicamente aos recursos certos. Este tutorial se aprofunda em como você pode conseguir isso usando Aspose.Words for .NET, orientando você passo a passo através do processo.
 
 ## Pré-requisitos
 

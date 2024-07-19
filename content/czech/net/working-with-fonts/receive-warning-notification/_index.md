@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Krok 3: Aktualizujte rozvržení stránky
-
- Zavolej`UpdatePageLayout` metoda. Tím se vykreslí dokument v paměti a zachytí se všechna varování, která se vyskytnou během vykreslování.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Krok 4: Nastavte zpětné volání upozornění
+## Krok 3: Nastavení zpětného volání upozornění
 
  Chcete-li zachytit a zpracovat varování, vytvořte třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zaznamená všechna varování, která se vyskytnou během zpracování dokumentu.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Máme zájem pouze o nahrazování písem.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Krok 5: Přiřaďte zpětné volání dokumentu
+## Krok 4: Přiřaďte zpětné volání dokumentu
 
 Přiřaďte dokumentu zpětné volání upozornění. Tím je zajištěno, že budou zachyceny a zaznamenány všechny problémy s písmy.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Krok 5: Aktualizujte rozvržení stránky
+
+ Zavolej`UpdatePageLayout` metoda. Tím se vykreslí dokument v paměti a zachytí se všechna varování, která se vyskytnou během vykreslování.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Krok 6: Uložte dokument
@@ -106,7 +101,7 @@ Ne, můžete zadat pouze jedno výchozí písmo pro nahrazení. Můžete však n
 
 ###  Q3: Mohu zpracovat jiné typy varování pomocí`IWarningCallback`?
 
- Ano,`IWarningCallback` rozhraní zvládne různé typy varování, nejen náhradu písem.
+ Ano,`IWarningCallback`rozhraní zvládne různé typy varování, nejen náhradu písem.
 
 ### Q4: Kde najdu podporu pro Aspose.Words?
 

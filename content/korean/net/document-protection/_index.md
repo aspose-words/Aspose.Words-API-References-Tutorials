@@ -16,11 +16,11 @@ url: /ko/net/document-protection/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [Word 문서의 비밀번호 보호](./password-protection/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 비밀번호를 보호하는 방법을 알아보세요. |
-| [Word 문서에서 양식 필드 보호만 허용](./allow-only-form-fields-protect/) | .NET용 Aspose.Words를 사용하여 Word 문서를 보호하고 양식 필드만 편집할 수 있도록 하는 방법을 알아보세요. |
-| [Word 문서에서 문서 보호 제거](./remove-document-protection/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 보호를 제거하는 방법을 알아보세요. |
-| [Word 문서의 무제한 편집 가능 영역](./unrestricted-editable-regions/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 제한 없이 편집 가능한 영역을 만드는 방법을 알아보세요. |
-| [Word 문서의 무제한 섹션](./unrestricted-section/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 제한되지 않은 섹션을 정의하는 방법을 알아보세요. |
-| [Word 문서에서 보호 유형 가져오기](./get-protection-type/) | .NET용 Aspose.Words의 Word 문서 기능으로 보호 유형 가져오기를 사용하여 문서의 보호 유형을 결정하는 방법을 알아보세요. |
-| [Word 문서의 읽기 전용 보호](./read-only-protection/) | .NET용 Aspose.Words를 사용하여 Word 문서의 읽기 전용을 보호하는 방법을 알아보세요. |
-| [읽기 전용 제한 제거](./remove-read-only-restriction/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 읽기 전용 제한을 제거하는 방법을 알아보세요. |
+| [Word 문서의 비밀번호 보호](./password-protection/) | 이 상세한 단계별 가이드에서 .NET용 Aspose.Words를 사용하여 비밀번호 보호로 Word 문서를 보호하는 방법을 알아보세요. |
+| [Word 문서에서 양식 필드 보호만 허용](./allow-only-form-fields-protect/) | .NET용 Aspose.Words를 사용하여 양식 필드만 편집할 수 있도록 Word 문서를 보호하는 방법을 알아보세요. 문서를 안전하고 쉽게 편집할 수 있도록 가이드를 따르세요. |
+| [Word 문서에서 문서 보호 제거](./remove-document-protection/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 보호를 제거하는 방법을 알아보세요. 문서 보호를 쉽게 해제하려면 단계별 가이드를 따르세요. |
+| [Word 문서의 무제한 편집 가능 영역](./unrestricted-editable-regions/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 무제한 편집 가능 영역을 만드는 방법을 알아보세요. |
+| [Word 문서의 무제한 섹션](./unrestricted-section/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 특정 섹션을 잠금 해제하세요. 민감한 콘텐츠를 보호하는 데 적합합니다. |
+| [Word 문서에서 보호 유형 가져오기](./get-protection-type/) | Aspose.Words for .NET을 사용하여 Word 문서의 보호 유형을 확인하는 방법을 알아보세요. 단계별 가이드, 코드 예제 및 FAQ가 포함되어 있습니다. |
+| [Word 문서의 읽기 전용 보호](./read-only-protection/) | .NET용 Aspose.Words를 사용하여 읽기 전용 보호를 적용하여 Word 문서를 보호하는 방법을 알아보세요. 단계별 가이드를 따르세요. |
+| [읽기 전용 제한 제거](./remove-read-only-restriction/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 읽기 전용 제한을 쉽게 제거하세요. 개발자에게 적합합니다. |

@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### T: Bagaimana cara memindahkan node dalam dokumen yang dilacak tanpa membuat revisi?
 
- J: Jika Anda ingin memindahkan node dalam dokumen yang dilacak tanpa membuat revisi, Anda dapat menggunakan`Remove` Dan`InsertAfter` atau`InsertBefore` metode dari`Node` obyek. Misalnya untuk memindahkan paragraf demi paragraf lainnya, Anda dapat menggunakan kode berikut:
+ J: Jika Anda ingin memindahkan node dalam dokumen yang dilacak tanpa membuat revisi, Anda dapat menggunakan`Remove`Dan`InsertAfter` atau`InsertBefore` metode dari`Node` obyek. Misalnya untuk memindahkan paragraf demi paragraf lainnya, Anda dapat menggunakan kode berikut:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

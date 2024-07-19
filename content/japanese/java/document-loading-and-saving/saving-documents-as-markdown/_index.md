@@ -16,7 +16,7 @@ url: /ja/java/document-loading-and-saving/saving-documents-as-markdown/
 
 始める前に、次の前提条件を満たしていることを確認してください。
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## ステップ1: Word文書を作成する

@@ -7,39 +7,51 @@ type: docs
 weight: 10
 url: /tr/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
+## giriiş
 
-Bu eğitimde, bir grafiğin eksenindeki etiketler arasındaki aralık birimini ayarlamak için Aspose.Words for .NET'in nasıl kullanılacağı açıklanmaktadır. Sağlanan kaynak kodu, bir grafiğin nasıl oluşturulacağını, seri verilerinin nasıl ekleneceğini ve eksen etiketlerinin nasıl özelleştirileceğini gösterir.
+Aspose.Words for .NET kullanımına ilişkin kapsamlı kılavuzumuza hoş geldiniz! İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, bu makale, .NET uygulamalarında Word belgelerini programlı olarak işlemek ve oluşturmak için Aspose.Words'ten yararlanma hakkında bilmeniz gereken her şeyi size anlatacaktır.
 
-## 1. Adım: Projeyi ayarlayın
+## Önkoşullar
 
-Aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Aspose.Words'e dalmadan önce aşağıdaki ayarlara sahip olduğunuzdan emin olun:
+- Makinenizde Visual Studio yüklü
+- C# programlama dili hakkında temel bilgi
+-  Aspose.Words for .NET kütüphanesine erişim (indirme bağlantısı[Burada](https://releases.aspose.com/words/net/))
 
-- Aspose.Words for .NET kütüphanesi kuruldu. Yüklemek için NuGet paket yöneticisini kullanarak indirebilirsiniz.
-- Çıktı belgesinin kaydedileceği belge dizini yolu.
+## Ad Alanlarını İçe Aktarma ve Başlarken
 
-## 2. Adım: Yeni bir belge oluşturun ve grafik ekleyin
+Gerekli ad alanlarını içe aktararak ve geliştirme ortamımızı kurarak başlayalım.
 
- Yeni bir tane oluştur`Document` nesne ve bir`DocumentBuilder` belgeyi oluşturmak için.
+### Projenizi Visual Studio'da Kurma
+Başlamak için Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
 
+### Aspose.Words for .NET'in Kurulumu
+ Aspose.Words for .NET'i NuGet Paket Yöneticisi aracılığıyla veya doğrudan şuradan indirerek kurabilirsiniz:[Web sitesi](https://releases.aspose.com/words/net/).
+
+### Aspose.Words Ad Alanını İçe Aktarma
+Sınıflarına ve yöntemlerine erişim kazanmak için C# kod dosyanızda Aspose.Words ad alanını içe aktarın:
+```csharp
+using Aspose.Words;
+```
+
+Bu bölümde Aspose.Words for .NET kullanarak grafiklerin nasıl oluşturulacağını ve özelleştirileceğini inceleyeceğiz.
+
+## Adım 1: Belgeye Grafik Ekleme
+Word belgesine grafik eklemek için şu adımları izleyin:
+
+### Adım 1.1: DocumentBuilder'ı Başlatın ve Grafik Ekleyin
 ```csharp
 // Belge dizininizin yolu
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
- Daha sonra şunu kullanın:`InsertChart` yöntemi`DocumentBuilder` Belgeye bir sütun grafiği eklemek için.
-
-```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. Adım: Grafiğe seri verilerini ekleyin
-
-Grafiğe seri verileri ekleyin. Bu örnekte, karşılık gelen değerleriyle birlikte beş öğe ekleyeceğiz.
-
+### Adım 1.2: Grafik Verilerini Yapılandırma
+Daha sonra serileri ve ilgili veri noktalarını ekleyerek grafik verilerini yapılandırın:
 ```csharp
 chart.Series.Clear();
 chart.Series.Add("Aspose Series 1",
@@ -47,63 +59,37 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## 4. Adım: Eksen etiketlerini özelleştirin
-
- X eksenindeki etiketler arasındaki aralık birimini ayarlamak için`AxisX` Grafiğin özelliğini seçin ve`TickLabelSpacing` özelliği istenilen değere getirir. Bu örnekte aralığı 2 olarak ayarladık.
+## Adım 2: Eksen Özelliklerini Ayarlama
+Şimdi grafiğimizin görünümünü kontrol etmek için eksen özelliklerini özelleştirelim:
 
 ```csharp
 chart.AxisX.TickLabelSpacing = 2;
 ```
 
-## 5. Adım: Belgeyi kaydedin
-
- Son olarak, belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntemi`Document` nesne.
-
+## Adım 3: Belgeyi Kaydetme
+Son olarak, belgeyi eklenen grafikle birlikte kaydedin:
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```
 
-Bu, Aspose.Words for .NET kullanılarak eksen üzerindeki etiketler arasındaki aralık biriminin ayarlanması uygulamasını tamamlar.
-
-### Aspose.Words for .NET kullanılarak Eksen Üzerindeki Etiketler Arasındaki Aralık Birimi için örnek kaynak kodu 
-
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisX.TickLabelSpacing = 2;
-	doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
-```
-
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir grafiğin eksenindeki etiketler arasındaki aralık birimini nasıl ayarlayacağınızı öğrendiniz. Adım adım kılavuzu izleyerek ve sağlanan kaynak kodunu kullanarak yeni bir belge oluşturabilir, sütun grafiği ekleyebilir, seri verileri ekleyebilir ve etiketler arasındaki boşluğu kontrol etmek için eksen etiketlerini özelleştirebilirsiniz.
+Tebrikler! Aspose.Words for .NET'i kullanarak grafikleri nasıl entegre edeceğinizi ve değiştireceğinizi öğrendiniz. Bu güçlü kitaplık, geliştiricilerin dinamik ve görsel olarak çekici belgeleri zahmetsizce oluşturmasına olanak tanır.
 
-Aspose.Words for .NET, Word belgelerindeki grafikleri yönetmek için güçlü özellikler sağlar. Eksen üzerindeki etiketler arasındaki aralık birimini ayarlayarak etiketlerin görüntülenme yoğunluğunu kontrol edebilir ve grafiklerinizin okunabilirliğini artırabilirsiniz. Bu, verilerin sunumunu optimize etmenize ve genel kullanıcı deneyimini geliştirmenize olanak tanır.
 
-Aspose.Words for .NET ile eksen etiketleri de dahil olmak üzere grafiğin çeşitli yönlerini özelleştirme esnekliğine sahip olursunuz. Etiketlerin uygun aralıklarla yerleştirildiğinden ve veri noktalarının net bir şekilde temsil edildiğinden emin olmak için istediğiniz aralık birimini ayarlayabilirsiniz.
+## SSS'ler
 
-### SSS
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, geliştiricilerin .NET uygulamaları içinde Word belgeleri oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan bir belge işleme kitaplığıdır.
 
-#### S1. Grafikteki eksen etiketleri nelerdir?
-Bir grafikteki eksen etiketleri, grafiğin yatay (X ekseni) veya dikey (Y ekseni) ekseni boyunca değerlerin metinsel temsilini ifade eder. Bu etiketler, grafikte çizilen veri noktalarının tanımlanmasına ve yorumlanmasına yardımcı olur. Eksen etiketleri bağlam sağlar ve kullanıcıların grafikteki değerlerin ölçeğini ve aralığını anlamalarına olanak tanır.
+### Aspose.Words for .NET belgelerini nerede bulabilirim?
+ Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
 
-#### Q2. Eksen etiketleri arasındaki boşluğu nasıl özelleştirebilirim?
- Aspose.Words for .NET kullanarak bir grafikte eksen etiketleri arasındaki boşluğu özelleştirmek için şuraya erişebilirsiniz:`AxisX` veya`AxisY` Grafiğin özelliğini değiştirin ve`TickLabelSpacing` mülk. Ayarlayarak`TickLabelSpacing` Belirli bir değere göre ilgili eksendeki etiketler arasındaki aralık birimini kontrol edebilir, aralığı gereksinimlerinize göre ayarlayabilirsiniz.
+### Satın almadan önce Aspose.Words for .NET'i deneyebilir miyim?
+ Evet, ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/).
 
-#### S3. X ekseni ve Y ekseni etiketleri için farklı aralıklar ayarlayabilir miyim?
-Evet, Aspose.Words for .NET'i kullanarak X ekseni ve Y ekseni etiketleri için farklı aralıklar ayarlayabilirsiniz. İlgili eksene erişin (`AxisX` X ekseni için veya`AxisY` Grafiğin Y ekseni için) ve`TickLabelSpacing`Her eksen için ayrı ayrı özellik. Bu, X ekseni ve Y eksenindeki etiketler için farklı aralık birimlerine ve aralıklara sahip olmanıza olanak tanıyarak grafiğin görünümü üzerinde ayrıntılı kontrol sağlar.
+### Aspose.Words for .NET için nasıl destek alabilirim?
+ Destek ve topluluk tartışmaları için şu adresi ziyaret edin:[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
 
-#### S4. Eksen üzerindeki etiketler arasındaki aralık biriminin önemi nedir?
-Eksen üzerindeki etiketler arasındaki aralık birimi, grafikte görüntülenen ardışık etiketler arasındaki aralığı belirler. Aralık birimini ayarlayarak etiketlerin yoğunluğunu kontrol edebilir ve aşırı kalabalıklaşmayı ve üst üste gelmeyi önleyecek şekilde uygun aralıklarla yerleştirildiğinden emin olabilirsiniz. Aralık birimini ayarlamak, verileri daha okunaklı ve görsel olarak çekici bir şekilde sunmanıza olanak tanır.
-
-#### S5. Eksen etiketlerinin diğer özelliklerini değiştirebilir miyim?
-Evet, Aspose.Words for .NET eksen etiketlerinin görünümünü ve davranışını özelleştirmek için geniş bir özellik yelpazesi sunar. Eksen etiketleri için istediğiniz formatı ve stili elde etmek amacıyla yazı tipi, boyut, renk, yön, hizalama ve daha fazlası gibi özellikleri değiştirebilirsiniz. Kitaplık, grafik öğeleri üzerinde kapsamlı kontrol sunarak, özel gereksinimlerinize göre uyarlanmış profesyonel görünümlü grafikler oluşturmanıza olanak tanır.
+### Aspose.Words for .NET lisansını nereden satın alabilirim?
+ Lisans satın alabilirsiniz[Burada](https://purchase.aspose.com/buy).

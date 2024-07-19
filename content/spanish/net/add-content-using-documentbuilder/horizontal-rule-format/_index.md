@@ -84,7 +84,7 @@ Dominar la inserción de reglas horizontales en documentos de Word utilizando As
 ## Preguntas frecuentes
 
 ### ¿Qué es Aspose.Words para .NET?
-Aspose.Words para .NET es una potente biblioteca para trabajar con documentos de Word mediante programación en aplicaciones .NET.
+Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos de Word mediante programación en aplicaciones .NET.
 
 ### ¿Cómo puedo descargar Aspose.Words para .NET?
  Puede descargar Aspose.Words para .NET desde[aquí](https://releases.aspose.com/words/net/).

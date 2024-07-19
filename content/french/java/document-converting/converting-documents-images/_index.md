@@ -10,7 +10,7 @@ url: /fr/java/document-converting/converting-documents-images/
 
 ## Introduction à la conversion de documents en images
 
-À l’ère numérique d’aujourd’hui, la gestion documentaire joue un rôle crucial dans divers secteurs. Parfois, vous devrez peut-être convertir des documents en images à diverses fins, telles que l'affichage de contenu sur un site Web ou la création de miniatures pour des documents. Les développeurs Java peuvent accomplir cette tâche efficacement en utilisant Aspose.Words for Java, une API puissante pour la manipulation de documents. Dans ce guide étape par étape, nous explorerons comment convertir des documents en images à l'aide d'Aspose.Words pour Java.
+À l’ère numérique d’aujourd’hui, la gestion documentaire joue un rôle crucial dans divers secteurs. Parfois, vous devrez peut-être convertir des documents en images à diverses fins, telles que l'affichage de contenu sur un site Web ou la création de vignettes pour des documents. Les développeurs Java peuvent accomplir cette tâche efficacement en utilisant Aspose.Words for Java, une API puissante pour la manipulation de documents. Dans ce guide étape par étape, nous explorerons comment convertir des documents en images à l'aide d'Aspose.Words pour Java.
 
 ## Conditions préalables
 
@@ -66,7 +66,7 @@ La conversion de documents en images en Java est facilitée avec Aspose.Words fo
  Pour définir la résolution de l'image, utilisez le`setResolution` méthode de`ImageSaveOptions` et spécifiez la résolution souhaitée en points par pouce (DPI).
 
 ### Puis-je convertir des pages spécifiques du document en images ?
- Oui, vous pouvez spécifier une plage de pages à l'aide de l'option`setPageCount` et`setPageIndex` Méthodes de`ImageSaveOptions` pour convertir des pages spécifiques en images.
+ Oui, vous pouvez spécifier une plage de pages à l'aide de l'option`setPageCount`et`setPageIndex` Méthodes de`ImageSaveOptions` pour convertir des pages spécifiques en images.
 
 ### Aspose.Words for Java est-il adapté à la conversion de documents par lots ?
 Absolument! Vous pouvez utiliser Aspose.Words pour Java pour convertir efficacement plusieurs documents en images par lots.

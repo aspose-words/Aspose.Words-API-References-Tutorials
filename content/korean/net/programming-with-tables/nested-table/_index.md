@@ -21,7 +21,7 @@ url: /ko/net/programming-with-tables/nested-table/
 // 문서 디렉토리 경로
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// 문서작성
+// 문서 작성
 Document doc = new Document();
 
 // 문서 생성기 초기화
@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// 이 호출은 첫 번째 테이블 내에 중첩 테이블을 만드는 데 중요합니다.
-	// 이 호출이 없으면 아래에 삽입된 셀이 외부 테이블에 추가됩니다.
+	//이 호출이 없으면 아래에 삽입된 셀이 외부 테이블에 추가됩니다.
 	builder.EndTable();
 	// 외부 테이블의 첫 번째 셀로 이동합니다.
 	builder.MoveTo(cell.FirstParagraph);

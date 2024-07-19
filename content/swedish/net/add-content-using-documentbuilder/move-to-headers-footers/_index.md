@@ -115,5 +115,5 @@ Aspose.Words för .NET är ett bibliotek som gör det möjligt för utvecklare a
 ### Hur skapar jag mer komplexa layouter i sidhuvuden och sidfötter?
 Du kan använda tabeller, bilder och olika formateringsalternativ från Aspose.Words för att skapa komplexa layouter.
 
-### Var kan jag hitta fler exempel och handledning?
+### Var kan jag hitta fler exempel och tutorials?
  Kolla in[dokumentation](https://reference.aspose.com/words/net/) och den[supportforum](https://forum.aspose.com/c/words/8) för fler exempel och samhällsstöd.

@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Étape 3 : Accédez au tableau et définissez le titre et la description
- Vous pouvez maintenant accéder au tableau du document en utilisant le`GetChild()` méthode et le`Table` classe. Ensuite, définissez le titre et la description du tableau à l'aide du`Title` et`Description` propriétés.
+ Vous pouvez maintenant accéder au tableau du document en utilisant le`GetChild()` méthode et le`Table` classe. Ensuite, définissez le titre et la description du tableau à l'aide du`Title`et`Description` propriétés.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

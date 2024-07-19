@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 2: Tetapkan folder font dengan prioritas
- Kemudian Anda dapat mengatur folder font dengan prioritas menggunakan`FontSettings` kelas dan`SetFontsSources()`metode. Anda dapat menentukan beberapa sumber font menggunakan contoh`SystemFontSource` Dan`FolderFontSource`. Dalam contoh ini, kami telah menetapkan dua sumber font: sumber font sistem default dan folder font khusus dengan prioritas 1.
+ Kemudian Anda dapat mengatur folder font dengan prioritas menggunakan`FontSettings` kelas dan`SetFontsSources()`metode. Anda dapat menentukan beberapa sumber font menggunakan contoh`SystemFontSource`Dan`FolderFontSource`. Dalam contoh ini, kami telah menetapkan dua sumber font: sumber font sistem default dan folder font khusus dengan prioritas 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

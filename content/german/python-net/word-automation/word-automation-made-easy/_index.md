@@ -1,7 +1,7 @@
 ---
 title: Word-Automatisierung leicht gemacht
 linktitle: Word-Automatisierung leicht gemacht
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Automatisieren Sie die Textverarbeitung mühelos mit Aspose.Words für Python. Erstellen, formatieren und bearbeiten Sie Dokumente programmgesteuert. Steigern Sie jetzt Ihre Produktivität!
 type: docs
 weight: 10
@@ -127,7 +127,7 @@ Die Word-Automatisierung mit Aspose.Words für Python eröffnet eine Welt voller
 ### Ist Aspose.Words mit anderen Plattformen wie Java oder .NET kompatibel?
 Ja, Aspose.Words ist für mehrere Plattformen verfügbar, darunter Java und .NET, sodass Entwickler es in ihrer bevorzugten Programmiersprache verwenden können.
 
-### Kann ich Word-Dokumente mit Aspose.Words in PDF konvertieren?
+### Kann ich mit Aspose.Words Word-Dokumente in PDF konvertieren?
 Auf jeden Fall! Aspose.Words unterstützt verschiedene Formate, einschließlich der Konvertierung von DOCX in PDF.
 
 ### Ist Aspose.Words für die Automatisierung umfangreicher Dokumentverarbeitungsaufgaben geeignet?

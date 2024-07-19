@@ -27,7 +27,7 @@ Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode"
 builder.ParagraphFormat.Style = fencedCode;
 ```
 
-## ขั้นตอนที่ 3: การเพิ่มโค้ดที่ไม่พอใจโดยไม่มีข้อมูล
+## ขั้นตอนที่ 3: การเพิ่มรหัสไม่พอใจโดยไม่มีข้อมูล
 
 ตอนนี้เราสามารถเพิ่มบล็อกโค้ดแบบมีรั้วกั้นโดยไม่มีสตริงข้อมูลโดยใช้สไตล์ที่กำหนดเอง "FencedCode"
 

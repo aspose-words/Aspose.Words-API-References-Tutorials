@@ -59,7 +59,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 
-// Konfigurieren Sie Sicherungsoptionen für die Konvertierung in das PCL-Format
+// Konfigurieren von Sicherungsoptionen für die Konvertierung in das PCL-Format
 PclSaveOptions saveOptions = new PclSaveOptions
 {
      SaveFormat = SaveFormat.Pcl,

@@ -170,7 +170,7 @@ Opsi pembersihan di Aspose.Words untuk Java adalah pengaturan yang memungkinkan 
 
 ### Bagaimana cara mengaktifkan penghapusan paragraf dengan tanda baca?
 
- Untuk mengaktifkan penghapusan paragraf dengan tanda baca, Anda dapat mengatur`cleanupParagraphsWithPunctuationMarks` opsi ke true dan tentukan tanda baca yang akan dipertimbangkan untuk pembersihan. Hal ini memungkinkan Anda membuat dokumen yang lebih halus dengan menghapus paragraf yang hanya berisi tanda baca yang tidak perlu.
+ Untuk mengaktifkan penghapusan paragraf dengan tanda baca, Anda dapat mengatur`cleanupParagraphsWithPunctuationMarks` opsi ke true dan tentukan tanda baca yang akan dipertimbangkan untuk pembersihan. Hal ini memungkinkan Anda membuat dokumen yang lebih halus dengan menghapus paragraf yang hanya berisi tanda baca yang tidak diperlukan.
 
 ### Bisakah saya menyesuaikan opsi pembersihan di Aspose.Words untuk Java?
 

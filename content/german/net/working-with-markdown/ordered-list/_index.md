@@ -2,96 +2,96 @@
 title: Bestellliste
 linktitle: Bestellliste
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie in der Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET geordnete Listen erstellen.
+description: Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET geordnete Listen in Word-Dokumenten erstellen. Perfekt für die Automatisierung der Dokumenterstellung.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/ordered-list/
 ---
+## Einführung
 
-In diesem Beispiel erklären wir, wie Sie die Funktion „Sortierte Liste“ mit Aspose.Words für .NET verwenden. Mit geordneten Listen können Sie Elemente sequenziell mit Zahlen organisieren.
+Sie haben sich also entschieden, in Aspose.Words für .NET einzutauchen, um programmgesteuert fantastische Word-Dokumente zu erstellen. Fantastische Wahl! Heute werden wir aufschlüsseln, wie man eine geordnete Liste in einem Word-Dokument erstellt. Wir gehen Schritt für Schritt vor, sodass Sie diese Anleitung sowohl für Programmieranfänger als auch für erfahrene Profis sehr hilfreich finden werden. Lassen Sie uns anfangen!
 
-## Schritt 1: Einen Dokumentgenerator verwenden
+## Voraussetzungen
 
-Zuerst verwenden wir einen Dokumentgenerator, um ein neues Dokument zu erstellen.
+Bevor wir uns in den Code vertiefen, benötigen Sie einige Dinge:
+
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn nicht, können Sie es herunterladen[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
+3. Grundkenntnisse in C#: Sie sollten mit den Grundlagen von C# vertraut sein, um problemlos folgen zu können.
+
+## Namespaces importieren
+
+Um Aspose.Words in Ihrem Projekt zu verwenden, müssen Sie die erforderlichen Namespaces importieren. Dies ist so, als würden Sie Ihren Werkzeugkasten einrichten, bevor Sie mit der Arbeit beginnen.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Lassen Sie uns den Code in mundgerechte Schritte aufteilen und jeden Teil erklären. Bereit? Los geht‘s!
+
+## Schritt 1: Initialisieren Sie das Dokument
+
+Als Erstes müssen Sie ein neues Dokument erstellen. Stellen Sie sich das so vor, als würden Sie ein leeres Word-Dokument auf Ihrem Computer öffnen.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 2: Anwenden des geordneten Listenformats
+Hier initialisieren wir ein neues Dokument und ein DocumentBuilder-Objekt. Der DocumentBuilder ist wie Ihr Stift, mit dem Sie Inhalte in das Dokument schreiben können.
 
- Wir wenden das geordnete Listenformat mithilfe des Dokumentgenerators an.`ApplyBulletDefault`Methode. Wir können das Nummerierungsformat auch anpassen, indem wir zu den Listenebenen gehen und das gewünschte Format festlegen.
+## Schritt 2: Nummeriertes Listenformat anwenden
+
+Wenden wir nun ein standardmäßiges nummeriertes Listenformat an. Das ist so, als würden Sie Ihr Word-Dokument so einrichten, dass nummerierte Aufzählungszeichen verwendet werden.
 
 ```csharp
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
+builder.ListFormat.ApplyNumberDefault();
 ```
 
-## Schritt 3: Elemente zur Liste hinzufügen
+Diese Codezeile richtet die Nummerierung für Ihre Liste ein. Einfach, oder?
 
- Wir können Elemente zur Liste hinzufügen, indem wir den Dokumentgenerator verwenden`Writeln` Methode.
+## Schritt 3: Listenelemente hinzufügen
 
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Schritt 4: Liste einrücken
-
- Wir können die Liste einrücken, indem wir den Dokumentgenerator verwenden`ListIndent` Methode.
+Als nächstes fügen wir unserer Liste einige Artikel hinzu. Stellen Sie sich vor, Sie schreiben eine Einkaufsliste.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
-```
-
-## Schritt 5: Speichern des Dokuments
-
-Abschließend können wir das Dokument im gewünschten Format speichern.
-
-### Beispielquellcode für geordnete Liste mit Aspose.Words für .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+Mit diesen Zeilen fügst du die ersten beiden Elemente zu deiner Liste hinzu.
+
+## Schritt 4: Einrücken der Liste
+
+Was ist, wenn Sie einem Artikel Unterelemente hinzufügen möchten? Machen wir das!
+
+```csharp
 builder.ListFormat.ListIndent();
 
 builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Funktion „geordnete Liste“ mit Aspose.Words für .NET verwenden.
+ Der`ListIndent` Methode rückt die Liste ein und erstellt eine Unterliste. Sie erstellen jetzt eine hierarchische Liste, ähnlich einer verschachtelten Aufgabenliste.
 
+## Abschluss
 
-### Häufig gestellte Fragen
+Das programmgesteuerte Erstellen einer geordneten Liste in einem Word-Dokument kann zunächst entmutigend erscheinen, aber mit Aspose.Words für .NET ist es ein Kinderspiel. Indem Sie diese einfachen Schritte befolgen, können Sie Ihren Dokumenten problemlos Listen hinzufügen und diese verwalten. Egal, ob Sie Berichte erstellen, strukturierte Dokumente erstellen oder einfach nur Ihre Arbeitsabläufe automatisieren, Aspose.Words für .NET bietet alles. Worauf also warten? Beginnen Sie mit dem Programmieren und erleben Sie, wie die Magie sich entfaltet!
 
-#### F: Wie erstelle ich eine geordnete Liste in Markdown?
+## Häufig gestellte Fragen
 
-A: Um eine geordnete Liste in Markdown zu erstellen, beginnen Sie jedes Listenelement mit einer Nummer, gefolgt von einem Punkt (`1.`, `2.`, `3.`), gefolgt von einem Leerzeichen.
+### Kann ich den Nummerierungsstil der Liste anpassen?  
+ Ja, Sie können den Nummerierungsstil anpassen mit dem`ListFormat` Eigenschaften. Sie können verschiedene Nummerierungsstile wie römische Ziffern, Buchstaben usw. festlegen.
 
-#### F: Können wir geordnete Listen in Markdown verschachteln?
+### Wie füge ich weitere Einrückungsebenen hinzu?  
+ Du kannst den ... benutzen`ListIndent` Methode mehrmals, um tiefere Ebenen von Unterlisten zu erstellen. Jeder Aufruf von`ListIndent` fügt eine Einrückungsebene hinzu.
 
-A: Ja, es ist möglich, geordnete Listen in Markdown zu verschachteln, indem Sie vor jedem verschachtelten Listenelement vier versetzte Leerzeichen hinzufügen.
+### Kann ich Aufzählungszeichen und nummerierte Listen mischen?  
+ Auf jeden Fall! Sie können verschiedene Listenformate innerhalb desselben Dokuments anwenden, indem Sie`ListFormat` Eigentum.
 
-#### F: Wie kann ich die Nummerierung geordneter Listen anpassen?
+### Ist es möglich, die Nummerierung einer vorherigen Liste fortzusetzen?  
+Ja, Sie können die Nummerierung fortsetzen, indem Sie dasselbe Listenformat verwenden. Aspose.Words ermöglicht Ihnen die Steuerung der Listennummerierung über verschiedene Absätze hinweg.
 
-A: In Standard-Markdown wird die geordnete Listennummerierung automatisch generiert. Einige Markdown-Editoren ermöglichen jedoch die Anpassung mithilfe bestimmter Erweiterungen.
-
-#### F: Unterstützen geordnete Listen in Markdown Einrückungen?
-
-A: Ja, geordnete Listen in Markdown unterstützen Einrückungen. Sie können mit Leerzeichen oder Tabulatoren eine Linksverschiebung hinzufügen.
-
-#### F: Können zu Listenelementen Links oder Inline-Text hinzugefügt werden?
-
-A: Ja, Sie können mit der entsprechenden Markdown-Syntax Links oder Inline-Text zu Listenelementen hinzufügen.
+### Wie kann ich das Listenformat entfernen?  
+ Sie können das Listenformat entfernen, indem Sie`ListFormat.RemoveNumbers()`. Dadurch werden die Listenelemente wieder in normale Absätze umgewandelt.

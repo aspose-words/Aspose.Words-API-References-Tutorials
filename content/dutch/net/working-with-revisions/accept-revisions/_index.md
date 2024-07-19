@@ -15,7 +15,7 @@ In deze zelfstudie begeleiden we u bij het accepteren van revisies van een Word-
 In dit voorbeeld maken we een document en voegen we inhoud toe. We gebruiken verschillende paragrafen om wijzigingen en herzieningen te illustreren. Hier is hoe:
 
 ```csharp
-// Pad naar de documentenmap.
+//Pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -123,7 +123,7 @@ Assert.AreEqual(3, paragraphs.Count);
 Assert.That(para, Is.Empty);
 
 // Als u het bijhouden van revisies stopt, verschijnt deze tekst als normale tekst.
-// Revisies worden niet meegeteld als het document wordt gewijzigd.
+// Revisies worden niet meegeteld wanneer het document wordt gewijzigd.
 doc.StopTrackRevisions();
 
 // Bewaar het document.
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Oplossing 2:
 
- A: U kunt het bijhouden van revisies ook inschakelen met behulp van de`Document` constructeur die accepteert`trackRevisions` En`author` parameters.
+ A: U kunt het bijhouden van revisies ook inschakelen met behulp van de`Document` constructeur die accepteert`trackRevisions`En`author` parameters.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

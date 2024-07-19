@@ -69,18 +69,14 @@ Document doc = new Document(dataDir + "your-document.docx");
 Iterera igenom alla fält i dokumentet och ta bort dem:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 Denna loop itererar bakåt genom fältsamlingen för att undvika problem med att ändra samlingen under iteration.
 
 ## Steg 6: Spara det ändrade dokumentet
 
-Spara dokumentet efter att du tagit bort fälten:
+Spara dokumentet efter att du har tagit bort fälten:
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

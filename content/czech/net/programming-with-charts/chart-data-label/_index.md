@@ -2,48 +2,84 @@
 title: Přizpůsobit štítek dat grafu
 linktitle: Přizpůsobit štítek dat grafu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se přidávat a přizpůsobovat štítky dat v grafu pomocí Aspose.Words for .NET, abyste poskytli další informace o datových bodech.
+description: Naučte se, jak přizpůsobit štítky dat grafu pomocí Aspose.Words for .NET v podrobném průvodci. Ideální pro .NET vývojáře.
 type: docs
 weight: 10
 url: /cs/net/programming-with-charts/chart-data-label/
 ---
+## Úvod
 
-Tento výukový program vysvětluje, jak přidat a upravit štítky dat v grafu pomocí Aspose.Words for .NET. Datové štítky poskytují další informace o datových bodech v grafu.
+Chcete vylepšit své aplikace .NET dynamickými a přizpůsobenými možnostmi zpracování dokumentů? Aspose.Words for .NET může být právě vaší odpovědí! V této příručce se ponoříme hluboko do přizpůsobení štítků dat grafu pomocí Aspose.Words for .NET, výkonné knihovny pro vytváření, úpravy a převod dokumentů aplikace Word. Ať už jste zkušený vývojář nebo teprve začínáte, tento tutoriál vás provede každým krokem a zajistí, že pochopíte, jak tento nástroj efektivně využívat.
 
 ## Předpoklady
-Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 
-- Nainstalovaná knihovna Aspose.Words for .NET.
-- Základní znalost C# a Word Processing s dokumenty Word.
+Než začneme, ujistěte se, že máte následující:
 
-## Krok 1: Nastavte adresář dokumentů
- Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři, kam chcete dokument uložit.
+1. Visual Studio: Nainstalujte Visual Studio 2019 nebo novější.
+2. .NET Framework: Ujistěte se, že máte .NET Framework 4.0 nebo novější.
+3.  Aspose.Words for .NET: Stáhněte si a nainstalujte Aspose.Words for .NET z[odkaz ke stažení](https://releases.aspose.com/words/net/).
+4. Základní znalost C#: Znalost programování v C# je nezbytná.
+5.  Platná licence: Získejte a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo koupit jeden od[koupit odkaz](https://purchase.aspose.com/buy).
+
+## Importovat jmenné prostory
+
+Chcete-li začít, musíte do projektu C# importovat potřebné jmenné prostory. Tento krok je zásadní, protože zajišťuje, že máte přístup ke všem třídám a metodám poskytovaným Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Charts;
 ```
 
-## Krok 2: Vytvořte nový dokument a DocumentBuilder
- Vytvořte novou instanci souboru`Document` třída a a`DocumentBuilder`objekt pracovat s dokumentem.
+## Krok 1: Inicializujte Document a DocumentBuilder
+
+Abychom mohli vytvářet a manipulovat s dokumenty Wordu, musíme nejprve inicializovat instanci souboru`Document` třída a a`DocumentBuilder` objekt.
 
 ```csharp
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Vložte a nakonfigurujte graf
- Vložte graf do dokumentu pomocí`InsertChart` metoda`DocumentBuilder` objekt. Nastavte požadovaný typ a rozměry grafu.
+### Vysvětlení
+
+- Dokument dokumentu: Vytvoří novou instanci třídy Document.
+- Tvůrce DocumentBuilder: Nástroj DocumentBuilder pomáhá při vkládání obsahu do objektu Document.
+
+## Krok 2: Vložte graf
+
+ Dále do dokumentu vložíme sloupcový graf pomocí`DocumentBuilder` objekt.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Krok 4: Přizpůsobte štítky dat
-Získejte přístup ke sbírce štítků dat řady grafů a upravte různé vlastnosti, abyste přizpůsobili vzhled štítků dat.
+### Vysvětlení
+
+- Tvar tvaru: Představuje graf jako tvar v dokumentu.
+- builder.InsertChart(ChartType.Bar, 432, 252): Vloží sloupcový graf se zadanými rozměry.
+
+## Krok 3: Přístup k řadě grafů
+
+Chcete-li upravit štítky dat, musíme nejprve získat přístup k řadě v grafu.
 
 ```csharp
 ChartSeries series0 = shape.Chart.Series[0];
+```
+
+### Vysvětlení
+
+- ChartSeries series0: Načte první řadu grafu, kterou přizpůsobíme.
+
+## Krok 4: Přizpůsobte štítky dat
+
+Datové štítky lze přizpůsobit tak, aby zobrazovaly různé informace. Nakonfigurujeme štítky tak, aby zobrazovaly klíč legendy, název série a hodnotu a zároveň skryly název kategorie a procento.
+
+```csharp
 ChartDataLabelCollection labels = series0.DataLabels;
 labels.ShowLegendKey = true;
 labels.ShowLeaderLines = true;
@@ -54,51 +90,46 @@ labels.ShowValue = true;
 labels.Separator = "/";
 ```
 
+### Vysvětlení
+
+- Štítky ChartDataLabelCollection: Přistupuje k štítkům dat řady.
+- labels.ShowLegendKey: Zobrazí klíč legendy.
+- labels.ShowLeaderLines: Zobrazuje odkazové čáry pro datové štítky umístěné daleko mimo datové body.
+- labels.ShowCategoryName: Skryje název kategorie.
+- labels.ShowPercentage: Skryje procentuální hodnotu.
+- labels.ShowSeriesName: Zobrazuje název série.
+- labels.ShowValue: Zobrazuje hodnotu datových bodů.
+- labels.Separator: Nastavuje oddělovač pro štítky dat.
+
 ## Krok 5: Uložte dokument
- Uložte dokument do určeného adresáře pomocí`Save` metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu uložíme dokument jako "WorkingWithCharts.ChartDataLabel.docx".
+
+Nakonec dokument uložte do určeného adresáře.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
-### Příklad zdrojového kódu pro Chart Data Label pomocí Aspose.Words pro .NET 
+### Vysvětlení
 
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = shape.Chart.Series[0];
-	ChartDataLabelCollection labels = series0.DataLabels;
-	labels.ShowLegendKey = true;
-	// Ve výchozím nastavení, když k datovým bodům ve výsečovém grafu přidáte popisky dat, zobrazí se odkazové čáry pro popisky dat, které jsou
-	// umístěn daleko mimo konec datových bodů. Odkazové čáry vytvářejí vizuální spojení mezi datovým štítkem a jeho
-	// odpovídající datový bod.
-	labels.ShowLeaderLines = true;
-	labels.ShowCategoryName = false;
-	labels.ShowPercentage = false;
-	labels.ShowSeriesName = true;
-	labels.ShowValue = true;
-	labels.Separator = "/";
-	labels.ShowValue = true;
-	doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
-```
-
-A je to! Úspěšně jste přidali a přizpůsobili štítky dat v grafu pomocí Aspose.Words pro .NET.
+- doc.Save: Uloží dokument se zadaným názvem do poskytnutého adresáře.
 
 ## Závěr
-tomto tutoriálu jste se naučili přidávat a přizpůsobovat štítky dat v grafu pomocí Aspose.Words for .NET. Podle podrobného průvodce můžete vložit graf, získat přístup ke kolekci štítků dat a upravit vlastnosti, abyste přizpůsobili vzhled štítků dat. Aspose.Words for .NET poskytuje výkonné rozhraní API pro zpracování textu s dokumenty a grafy aplikace Word, které vám umožňuje vytvářet vizuálně přitažlivé a informativní grafy s přizpůsobenými štítky dat.
 
-### Nejčastější dotazy
+ Gratulujeme! Úspěšně jste přizpůsobili štítky dat grafu pomocí Aspose.Words pro .NET. Tato knihovna nabízí robustní řešení pro programovou manipulaci s dokumenty Word, což vývojářům usnadňuje vytváření sofistikovaných a dynamických aplikací pro zpracování dokumentů. Ponořte se do[dokumentace](https://reference.aspose.com/words/net/) prozkoumat další funkce a možnosti.
 
-#### Q1. Co jsou štítky dat v grafu?
-Popisky dat v grafu poskytují další informace o datových bodech znázorněných v grafu. Mohou zobrazovat hodnoty, kategorie, názvy řad, procenta nebo jiné relevantní podrobnosti v závislosti na typu a konfiguraci grafu.
+## FAQ
 
-#### Q2. Mohu přizpůsobit vzhled štítků s údaji?
-Ano, vzhled štítků dat v grafu můžete přizpůsobit. Aspose.Words for .NET poskytuje možnosti úpravy různých vlastností datových štítků, jako je zobrazení klíčů legend, odkazových čar, názvů kategorií, názvů řad, hodnot a dalších. Můžete také nastavit oddělovače a formátovat štítky tak, aby vyhovovaly vašim specifickým požadavkům.
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro zpracování dokumentů, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově.
 
-#### Q3. Mohu přidat štítky dat k libovolnému typu grafu?
-Ano, štítky dat můžete přidávat do různých typů grafů, včetně sloupcových grafů, koláčových grafů, spojnicových grafů a dalších. Proces přidávání a přizpůsobení štítků dat se může mírně lišit v závislosti na typu grafu a knihovně nebo nástroji, který používáte.
+### Jak nainstaluji Aspose.Words for .NET?
+ Můžete si jej stáhnout a nainstalovat z[odkaz ke stažení](https://releases.aspose.com/words/net/). Postupujte podle dodaných pokynů k instalaci.
+
+### Mohu vyzkoušet Aspose.Words pro .NET zdarma?
+ Ano, můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) nebo a[dočasná licence](https://purchase.aspose.com/temporary-license/)hodnotit produkt.
+
+### Je Aspose.Words for .NET kompatibilní s .NET Core?
+Ano, Aspose.Words for .NET je kompatibilní s .NET Core, .NET Standard a .NET Framework.
+
+### Kde mohu získat podporu pro Aspose.Words pro .NET?
+ Můžete navštívit[Fórum podpory](https://forum.aspose.com/c/words/8) za pomoc a pomoc od komunity Aspose a odborníků.

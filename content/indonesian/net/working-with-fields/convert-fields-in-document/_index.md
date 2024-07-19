@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Langkah 3: Muat dokumen
- Menggunakan`Document` kelas Aspose.Words untuk memuat dokumen Word yang berisi bidang tertaut yang ingin Anda konversi.
+ Menggunakan`Document`kelas Aspose.Words untuk memuat dokumen Word yang berisi bidang tertaut yang ingin Anda konversi.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

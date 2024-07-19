@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Inisialisasi Dokumen
 
- Mari kita mulai dengan membuat dokumen Word baru. Kami akan menggunakan`Document` Dan`DocumentBuilder` kelas dari Aspose.Words.
+ Mari kita mulai dengan membuat dokumen Word baru. Kami akan menggunakan`Document`Dan`DocumentBuilder` kelas dari Aspose.Words.
 
 ```csharp
 Document doc = new Document();
@@ -80,7 +80,7 @@ Untuk kejelasan, mari cetak teks paragraf saat ini ke konsol.
 Console.WriteLine("\nCursor is currently at paragraph: " + curParagraph.GetText());
 ```
 
-Baris kode sederhana ini akan menunjukkan kepada kita di mana posisi kursor dalam dokumen, memberi kita pemahaman yang jelas tentang cara mengendalikannya.
+Baris kode sederhana ini akan menunjukkan kepada kita di mana posisi kursor dalam dokumen, memberi kita pemahaman yang jelas tentang cara mengontrolnya.
 
 ## Langkah 3: Memindahkan Kursor
 

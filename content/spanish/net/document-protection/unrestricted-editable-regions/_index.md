@@ -2,120 +2,133 @@
 title: Regiones editables sin restricciones en un documento de Word
 linktitle: Regiones editables sin restricciones en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a crear áreas editables sin restricciones en un documento de Word con Aspose.Words para .NET.
+description: Aprenda a crear regiones editables sin restricciones en un documento de Word usando Aspose.Words para .NET con esta guía completa paso a paso.
 type: docs
 weight: 10
 url: /es/net/document-protection/unrestricted-editable-regions/
 ---
-En este tutorial, lo guiaremos a través de los pasos para usar la función de áreas editables sin restricciones de Aspose.Words para .NET. Esta característica le permite definir áreas en un documento de Word donde el contenido se puede editar sin restricciones, incluso si el resto del documento es de solo lectura. Siga los pasos a continuación:
+## Introducción
 
-## Paso 1: cargar el documento y configurar la protección
+Si alguna vez has querido proteger un documento de Word pero aún así permitir que ciertas partes sean editables, ¡estás en el lugar correcto! Esta guía lo guiará a través del proceso de configuración de regiones editables sin restricciones en un documento de Word usando Aspose.Words para .NET. Cubriremos todo, desde los requisitos previos hasta los pasos detallados, para garantizar que tenga una experiencia fluida. ¿Listo? ¡Vamos a sumergirnos!
 
-Comience cargando el documento existente:
+## Requisitos previos
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+Antes de comenzar, asegúrese de tener lo siguiente:
 
-Proteja el documento estableciendo un tipo de protección y una contraseña de solo lectura
+1.  Aspose.Words para .NET: si aún no lo has hecho, descárgalo[aquí](https://releases.aspose.com/words/net/).
+2.  Una licencia Aspose válida: puede obtener una licencia temporal[aquí](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio: cualquier versión reciente debería funcionar bien.
+4. Conocimientos básicos de C# y .NET: esto le ayudará a seguir el código.
 
-## Paso 2: crear un área editable
+Ahora que ya está todo listo, ¡pasemos a la parte divertida!
 
-Comience creando un área editable usando los objetos EditableRangeStart y EditableRangeEnd:
+## Importar espacios de nombres
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Se crea un objeto EditableRange para EditableRangeStart que acabamos de crear.
-EditableRange editableRange = edRangeStart.EditableRange;
-
-// Pon algo dentro del rango editable.
-builder.Writeln("Paragraph inside first editable range");
-
-// Un rango editable está bien formado si tiene un inicio y un final.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## Paso 3: agregue contenido fuera de las áreas editables
-
-Puedes agregar contenido fuera de las áreas editables, que permanecerán como de solo lectura:
+Para comenzar a usar Aspose.Words para .NET, deberá importar los espacios de nombres necesarios. Así es como puedes hacerlo:
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## Paso 4: guarde el documento
+## Paso 1: configurar su proyecto
 
-Finalmente, guarde el documento modificado:
+Primero lo primero, creemos un nuevo proyecto de C# en Visual Studio.
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. Abra Visual Studio: comience abriendo Visual Studio y creando un nuevo proyecto de aplicación de consola.
+2. Instale Aspose.Words: utilice el Administrador de paquetes NuGet para instalar Aspose.Words. Puede hacer esto ejecutando el siguiente comando en la Consola del Administrador de paquetes:
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-Asegúrese de especificar la ruta y el nombre de archivo correctos para guardar el documento con áreas editables.
+## Paso 2: cargar el documento
 
-### Código fuente de ejemplo para regiones editables sin restricciones usando Aspose.Words para .NET
+Ahora, carguemos el documento que desea proteger. Asegúrese de tener un documento de Word listo en su directorio.
 
-Aquí está el código fuente completo para áreas editables sin restricciones usando Aspose.Words para .NET:
+1. Establecer el directorio de documentos: defina la ruta a su directorio de documentos.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  Cargue el documento: utilice el`Document` clase para cargar su documento de Word.
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-// La ruta al directorio de documentos.
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Cargue un documento y conviértalo en de solo lectura.
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Paso 3: Proteger el documento
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+A continuación, configuraremos el documento como de solo lectura. Esto asegurará que no se puedan realizar cambios sin la contraseña.
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1.  Inicializar DocumentBuilder: crear una instancia de`DocumentBuilder` para realizar cambios en el documento.
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. Establecer nivel de protección: proteja el documento mediante una contraseña.
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. Agregar texto de solo lectura: inserte texto que será de solo lectura.
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-// Inicie un rango editable.
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Se crea un objeto EditableRange para EditableRangeStart que acabamos de crear.
-EditableRange editableRange = edRangeStart.EditableRange;
+## Paso 4: crear rangos editables
 
-// Pon algo dentro del rango editable.
-builder.Writeln("Paragraph inside first editable range");
+Aquí es donde ocurre la magia. Crearemos secciones en el documento que se podrán editar a pesar de la protección general de solo lectura.
 
-// Un rango editable está bien formado si tiene un inicio y un final.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. Iniciar rango editable: define el inicio del rango editable.
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2.  Crear objeto de rango editable: un`EditableRange` El objeto se creará automáticamente.
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. Insertar texto editable: agregue texto dentro del rango editable.
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## Paso 5: cerrar el rango editable
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+Un rango editable no está completo sin un final. Agreguemos eso a continuación.
 
-```
-Si sigue estos pasos, puede crear fácilmente áreas editables sin restricciones en su documento de Word con Aspose.Words para .NET.
+1. Fin del rango editable: define el final del rango editable.
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. Agregar texto de solo lectura fuera del rango: inserte texto fuera del rango editable para demostrar la protección.
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## Paso 6: guardar el documento
+
+Finalmente, guardemos el documento con la protección aplicada y las regiones editables.
+
+1.  Guarde el documento: utilice el`Save` método para guardar su documento modificado.
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## Conclusión
-En este tutorial, aprendimos cómo crear regiones editables sin restricciones en un documento de Word usando Aspose.Words para .NET. Si sigue los pasos proporcionados, puede definir áreas específicas dentro del documento donde los usuarios pueden editar libremente el contenido mientras mantienen el resto del documento como de solo lectura. Aspose.Words para .NET ofrece potentes funciones para la protección y personalización de documentos, brindándole control sobre las capacidades de edición de sus documentos de Word.
 
-### Preguntas frecuentes sobre regiones editables sin restricciones en documentos de Word
+¡Y ahí lo tienes! Ha creado con éxito regiones editables sin restricciones en un documento de Word utilizando Aspose.Words para .NET. Esta característica es increíblemente útil para entornos colaborativos donde ciertas partes de un documento deben permanecer sin cambios mientras que otras se pueden editar. 
 
-#### P: ¿Qué son las regiones editables sin restricciones en Aspose.Words para .NET?
+ Experimente con escenarios más complejos y diferentes niveles de protección para aprovechar Aspose.Words al máximo. Si tiene alguna pregunta o tiene problemas, no dude en consultar el[documentación](https://reference.aspose.com/words/net/) o comuníquese con[apoyo](https://forum.aspose.com/c/words/8).
 
-R: Las regiones editables sin restricciones en Aspose.Words para .NET son áreas dentro de un documento de Word donde el contenido se puede editar sin restricciones, incluso si el resto del documento está configurado como de solo lectura. Estas regiones proporcionan una manera de definir partes específicas del documento que los usuarios pueden modificar mientras mantienen la protección general del documento.
+## Preguntas frecuentes
 
-#### P: ¿Cómo puedo crear regiones editables sin restricciones usando Aspose.Words para .NET?
+### ¿Puedo tener varias regiones editables en un documento?
+Sí, puede crear varias regiones editables iniciando y finalizando rangos editables en diferentes partes del documento.
 
-R: Para crear regiones editables sin restricciones en un documento de Word usando Aspose.Words para .NET, puede seguir estos pasos:
-1.  Cargue el documento existente usando el`Document` clase.
-2.  Configure la protección del documento en solo lectura usando el`Protect` método de la`Document` objeto.
-3.  Utilizar el`DocumentBuilder` clase para crear un rango editable agregando un`EditableRangeStart` objeto y un`EditableRangeEnd` objeto.
-4.  Agregue contenido dentro del rango editable usando el`DocumentBuilder`.
-5.  Guarde el documento modificado utilizando el`Save` método de la`Document` objeto.
+### ¿Qué otros tipos de protección están disponibles en Aspose.Words?
+Aspose.Words admite varios tipos de protección como AllowOnlyComments, AllowOnlyFormFields y NoProtection.
 
-#### P: ¿Puedo tener varias regiones editables sin restricciones en un documento de Word?
+### ¿Es posible quitar la protección de un documento?
+ Sí, puedes eliminar la protección usando el`Unprotect` método y proporcionando la contraseña correcta.
 
-R: Sí, puedes tener varias regiones editables sin restricciones en un documento de Word. Para lograr esto, puede crear múltiples conjuntos de`EditableRangeStart` y`EditableRangeEnd` objetos usando el`DocumentBuilder` clase. Cada conjunto de objetos definirá una región editable separada donde los usuarios podrán modificar el contenido sin restricciones.
+### ¿Puedo especificar diferentes contraseñas para diferentes secciones?
+No, la protección a nivel de documento aplica una única contraseña para todo el documento.
 
-#### P: ¿Puedo anidar regiones editables unas dentro de otras?
-
- R: No, no puedes anidar regiones editables entre sí usando Aspose.Words para .NET. Cada región editable definida por un`EditableRangeStart` y`EditableRangeEnd` El par debe ser independiente y no superponerse ni anidarse dentro de otra región editable. No se admiten regiones editables anidadas.
-
-#### P: ¿Puedo eliminar la protección de solo lectura del documento dentro de una región editable?
-
-R: No, no puede eliminar la protección de solo lectura del documento dentro de una región editable. La protección de solo lectura se aplica a todo el documento y no se puede eliminar de forma selectiva dentro de regiones editables específicas. El propósito de las regiones editables es permitir la modificación del contenido manteniendo el documento general como de solo lectura.
+### ¿Cómo solicito una licencia para Aspose.Words?
+Puede aplicar una licencia cargándola desde un archivo o secuencia. Consulte la documentación para conocer los pasos detallados.

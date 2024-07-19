@@ -65,7 +65,7 @@ Kövesse ezeket a lépéseket a dokumentum egy adott mezőjének törléséhez a
 
 #### K: Hogyan törölhetek egy mezőt egy Word-dokumentumban az Aspose.Words for .NET használatával?
 
- V: Ha egy Word-dokumentumból az Aspose.Words for .NET segítségével szeretne eltávolítani egy mezőt, a dokumentumban lévő mezők között a`FieldStart` osztályt, és használja a`FieldStart.Remove`módszer a mező eltávolítására.
+ V: Ha egy Word-dokumentumból az Aspose.Words for .NET segítségével szeretne eltávolítani egy mezőt, a dokumentumban lévő mezők között a`FieldStart` osztályt, és használja a`FieldStart.Remove` módszer a mező eltávolítására.
 
 #### K: Lehetséges-e csak bizonyos mezőket törölni egy Word-dokumentumból az Aspose.Words for .NET segítségével?
 

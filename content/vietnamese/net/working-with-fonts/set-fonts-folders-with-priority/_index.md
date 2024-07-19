@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Đặt mức độ ưu tiên của thư mục phông chữ
- Sau đó, bạn có thể đặt mức độ ưu tiên của các thư mục phông chữ bằng cách sử dụng`FontSettings` lớp học và`SetFontsSources()`phương pháp. Bạn có thể chỉ định nhiều nguồn phông chữ bằng cách sử dụng các phiên bản của`SystemFontSource` Và`FolderFontSource`. Trong ví dụ này, chúng tôi đã xác định hai nguồn phông chữ: nguồn phông chữ hệ thống mặc định và thư mục phông chữ tùy chỉnh có mức độ ưu tiên là 1.
+ Sau đó, bạn có thể đặt mức độ ưu tiên của các thư mục phông chữ bằng cách sử dụng`FontSettings` lớp học và`SetFontsSources()`phương pháp. Bạn có thể chỉ định nhiều nguồn phông chữ bằng cách sử dụng các phiên bản của`SystemFontSource`Và`FolderFontSource`. Trong ví dụ này, chúng tôi đã xác định hai nguồn phông chữ: nguồn phông chữ hệ thống mặc định và thư mục phông chữ tùy chỉnh có mức độ ưu tiên là 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -75,6 +75,6 @@ Trả lời: Có, bạn có thể chỉ định nhiều thư mục phông chữ 
 
  Trả lời: Để kiểm tra các thư mục phông chữ được xác định mức độ ưu tiên trong Aspose.Words, bạn có thể sử dụng`GetFolders` phương pháp của`Fonts` class để lấy danh sách các thư mục phông chữ được định cấu hình bao gồm thứ tự ưu tiên của chúng.
 
-#### Câu hỏi: Việc đặt mức độ ưu tiên của thư mục phông chữ trong Aspose.Words có tác dụng gì?
+#### Câu hỏi: Việc thiết lập các thư mục phông chữ có mức độ ưu tiên trong Aspose.Words có tác dụng gì?
 
 Trả lời: Đặt mức độ ưu tiên của các thư mục phông chữ trong Aspose.Words cho phép bạn kiểm soát thứ tự tìm kiếm phông chữ trong tài liệu Word của mình. Điều này giúp bạn đảm bảo rằng phông chữ bạn muốn được sử dụng và tránh các sự cố thay thế phông chữ không mong muốn.

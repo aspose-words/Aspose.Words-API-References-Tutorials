@@ -2,115 +2,100 @@
 title: Autoriser uniquement la protection des champs de formulaire dans un document Word
 linktitle: Autoriser uniquement la protection des champs de formulaire dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment utiliser Aspose.Words for .NET pour protéger un document Word et autoriser uniquement la modification des champs de formulaire.
+description: Découvrez comment protéger les documents Word, en autorisant uniquement la modification des champs de formulaire à l'aide d'Aspose.Words pour .NET. Suivez notre guide pour vous assurer que vos documents sont sécurisés et facilement modifiables.
 type: docs
 weight: 10
 url: /fr/net/document-protection/allow-only-form-fields-protect/
 ---
-La protection des documents est une fonctionnalité essentielle lors du traitement de texte avec des fichiers au sein de votre application C#. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement protéger vos documents et autoriser uniquement la modification des champs de formulaire. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source C# pour autoriser uniquement la modification des champs de formulaire à l'aide de la fonctionnalité Autoriser uniquement la protection des champs de formulaire d'Aspose.Words pour .NET.
+## Introduction
 
-## Étape 1 : Définition du répertoire de documents
+Salut! Avez-vous déjà eu besoin de protéger des parties spécifiques d’un document Word tout en laissant d’autres parties modifiables ? Aspose.Words pour .NET rend cela très simple. Dans ce didacticiel, nous expliquons comment autoriser uniquement la protection des champs de formulaire dans un document Word. À la fin de ce guide, vous aurez une solide compréhension de la protection des documents à l'aide d'Aspose.Words pour .NET. Prêt? Allons-y !
 
-La première étape consiste à définir le répertoire de votre document. Vous devez spécifier le chemin où vous souhaitez enregistrer le document protégé. Par exemple :
+## Conditions préalables
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Avant de nous lancer dans la partie codage, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-Assurez-vous de remplacer « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin réel d'accès à votre répertoire de documents.
+1.  Aspose.Words for .NET Library : vous pouvez le télécharger à partir de[ici](https://releases.aspose.com/words/net/).
+2. Visual Studio : toute version récente fonctionnera très bien.
+3. Connaissance de base de C# : Comprendre les bases vous aidera à suivre le didacticiel.
 
-## Étape 2 : Insérer des sections et du texte
+## Importer des espaces de noms
 
-Ensuite, vous devez insérer des sections et du texte dans votre document. Utilisez la classe DocumentBuilder fournie par Aspose.Words pour créer le contenu de votre document. Voici un exemple simple :
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Text added to a document.");
-```
-
-Dans cet exemple, nous créons un nouveau document vierge, puis utilisons DocumentBuilder pour ajouter une ligne de texte.
-
-## Étape 3 : Activation de la protection des documents
-
- La protection des documents ne fonctionne que lorsque la protection des documents est activée. Vous pouvez activer la protection des documents à l'aide de l'outil`Protect` méthode de la classe Document. Voici comment:
+Tout d’abord, nous devons importer les espaces de noms nécessaires. Cela configure notre environnement pour utiliser Aspose.Words.
 
 ```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Dans cet exemple, nous activons la protection des documents en spécifiant le type de protection `
+## Étape 1 : Configurez votre projet
 
-AllowOnlyFormFields` et définition d’un mot de passe.
+Créer un nouveau projet dans Visual Studio  
+Ouvrez Visual Studio et créez un nouveau projet d'application console (.NET Core). Nommez-le de manière significative, comme « AsposeWordsProtection ».
 
-## Étape 4 : Autoriser uniquement les champs de formulaire
+## Étape 2 : Installer Aspose.Words pour .NET
 
-Maintenant que la protection des documents est activée, nous devons préciser que seule la modification des champs du formulaire est autorisée. Cela garantit que les utilisateurs ne peuvent modifier que les parties du document qui sont des champs de formulaire. Voici comment:
+Installer via le gestionnaire de packages NuGet  
+Cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions, sélectionnez « Gérer les packages NuGet » et recherchez`Aspose.Words`. Installez-le.
 
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
+## Étape 3 : initialiser le document
 
-Assurez-vous de remplacer « mot de passe » par le mot de passe que vous avez défini précédemment.
-
-## Étape 5 : Enregistrement du document protégé
-
- Enfin, vous pouvez enregistrer le document protégé à l'aide du`Save` méthode de la classe Document. Spécifiez le chemin complet du fichier et le nom du fichier souhaité. Par exemple :
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
-```
-
-Assurez-vous de remplacer "dataDir" par le chemin d'accès à votre répertoire de documents.
-
-### Exemple de code source pour la fonctionnalité Autoriser uniquement la protection des champs de formulaire à l'aide d'Aspose.Words pour .NET
+Créer un nouvel objet Document  
+Commençons par créer un nouveau document et un générateur de documents pour ajouter du texte.
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Insérez deux sections avec du texte.
+// Initialiser un nouveau document et DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
+```
 
-// Une protection de document ne fonctionne que lorsque la protection de document est activée et seule la modification dans les champs de formulaire est autorisée.
+ Ici, nous créons un nouveau`Document`et`DocumentBuilder` exemple. Le`DocumentBuilder` nous permet d'ajouter du texte à notre document.
+
+## Étape 4 : Protéger le document
+
+Appliquer une protection autorisant uniquement la modification des champs de formulaire  
+Maintenant, ajoutons la protection à notre document.
+
+```csharp
+// Protéger le document, en autorisant uniquement la modification des champs du formulaire
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
 
-// Enregistrez le document protégé.
+Cette ligne de code protège le document et permet uniquement de modifier les champs du formulaire. Le mot de passe « password » est utilisé pour renforcer la protection.
+
+## Étape 5 : Enregistrez le document
+
+Enregistrez le document protégé  
+Enfin, sauvegardons notre document dans le répertoire spécifié.
+
+```csharp
+// Enregistrez le document protégé
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
+Cela enregistre le document avec la protection appliquée.
+
 ## Conclusion
 
-Dans ce guide, nous avons expliqué comment utiliser la bibliothèque Aspose.Words pour .NET pour protéger un document et autoriser uniquement la modification des champs de formulaire. En suivant les étapes fournies, vous pouvez facilement implémenter cette fonctionnalité dans votre application C#. La protection des documents est essentielle pour assurer la sécurité et la confidentialité de vos documents.
+Et voila! Vous venez d'apprendre comment protéger un document Word afin que seuls les champs de formulaire puissent être modifiés à l'aide d'Aspose.Words pour .NET. Il s'agit d'une fonctionnalité pratique lorsque vous devez vous assurer que certaines parties de votre document restent inchangées tout en permettant de remplir des champs spécifiques.
 
-### FAQ pour autoriser uniquement la protection des champs de formulaire dans un document Word
+## FAQ
 
-#### Q : Qu'est-ce que la protection des documents dans Aspose.Words pour .NET ?
+###	 Comment puis-je supprimer la protection d'un document ?  
+ Pour retirer la protection, utilisez le`doc.Unprotect("password")` méthode, où « mot de passe » est le mot de passe utilisé pour protéger le document.
 
-: La protection des documents dans Aspose.Words for .NET est une fonctionnalité qui vous permet de sécuriser vos documents en restreignant certaines actions, telles que l'édition, le formatage ou la modification du contenu. Il aide à maintenir l’intégrité et la confidentialité de vos documents en empêchant les modifications non autorisées.
+###	 Puis-je appliquer différents types de protection à l’aide d’Aspose.Words pour .NET ?  
+ Oui, Aspose.Words prend en charge différents types de protection tels que`ReadOnly`, `NoProtection` , et`AllowOnlyRevisions`.
 
-#### Q : Comment puis-je protéger un document et autoriser uniquement la modification des champs de formulaire à l'aide d'Aspose.Words pour .NET ?
+###	 Est-il possible d'utiliser un mot de passe différent pour différentes sections ?  
+Non, la protection au niveau du document dans Aspose.Words s'applique à l'ensemble du document. Vous ne pouvez pas attribuer des mots de passe différents à différentes sections.
 
-R : Pour protéger un document et autoriser uniquement la modification des champs de formulaire à l'aide d'Aspose.Words for .NET, vous pouvez suivre ces étapes :
-1. Définissez le chemin du répertoire de votre document.
-2.  Insérez des sections et du texte dans votre document à l'aide du`DocumentBuilder` classe.
-3.  Activez la protection des documents à l'aide de l'outil`Protect` méthode du`Document` classe, en spécifiant le type de protection comme`AllowOnlyFormFields` et fournir un mot de passe.
-4.  Enregistrez le document protégé à l'aide du`Save` méthode du`Document` classe.
+###	 Que se passe-t-il si un mot de passe incorrect est utilisé ?  
+Si un mot de passe incorrect est utilisé, le document restera protégé et les modifications spécifiées ne seront pas appliquées.
 
-#### Q : Puis-je insérer des champs de formulaire dans un document protégé à l'aide d'Aspose.Words pour .NET ?
-
- : Oui, vous pouvez insérer des champs de formulaire dans un document protégé à l'aide d'Aspose.Words for .NET. La protection des documents avec le`AllowOnlyFormFields` type permet aux utilisateurs de modifier uniquement les champs du formulaire tout en protégeant le reste du contenu du document. Vous pouvez utiliser le`DocumentBuilder` classe pour insérer des champs de formulaire dans le document avant d’activer la protection.
-
-#### Q : Puis-je supprimer la protection d'un document protégé ?
-
- R : Oui, vous pouvez supprimer la protection d'un document protégé à l'aide d'Aspose.Words for .NET. Pour supprimer la protection, vous pouvez utiliser le`Unprotect` méthode du`Document` classe et fournissez le mot de passe correct. Cela supprimera la protection et permettra une modification sans restriction du document.
-
-#### Q : Est-il possible de protéger un document avec plusieurs types de protection ?
-
- R : Non, Aspose.Words for .NET ne permet d'appliquer qu'un seul type de protection à un document à la fois. Cependant, le`AllowOnlyFormFields` Le type de protection peut restreindre efficacement la modification aux champs de formulaire tout en autorisant d'autres types de protection, tels que`AllowOnlyComments` ou`AllowOnlyRevisions`à combiner avec la protection des champs de formulaire.
-
-#### Q : Puis-je définir différents mots de passe pour différents types de protection dans un document ?
-
-R : Non, Aspose.Words for .NET vous permet de définir un mot de passe unique pour la protection des documents, quel que soit le type de protection. Le même mot de passe sera utilisé pour activer et désactiver la protection des documents.
+###	 Puis-je vérifier par programme si un document est protégé ?  
+ Oui, vous pouvez utiliser le`doc.ProtectionType` propriété pour vérifier l’état de protection d’un document.

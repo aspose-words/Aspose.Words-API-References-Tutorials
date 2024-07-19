@@ -52,7 +52,7 @@ Ismerje meg, hogyan kezelheti az elválasztást és a szövegáramlást a Word d
 Ismerje meg, hogyan hozhat létre és kezelhet listákat Word dokumentumokban az Aspose.Words Python API használatával. Lépésről lépésre útmutató forráskóddal a lista formázásához, testreszabásához, egymásba ágyazásához és sok máshoz. 
 ### [Markdown formázás használata Word dokumentumokban](./document-markdown/)
 Ismerje meg, hogyan integrálhatja a Markdown formázást Word dokumentumokba az Aspose.Words for Python segítségével. Lépésről lépésre útmutató kódpéldákkal a dinamikus és tetszetős tartalom létrehozásához. 
-### [A dokumentum csomópontjainak megértése és navigálása](./document-nodes/)
+### [A dokumentumcsomópontok megértése és navigálása](./document-nodes/)
 Ismerje meg a Word dokumentumok kezelését az Aspose.Words for Python használatával. Ez a részletes útmutató a betöltésről, formázásról, táblázatokról, képekről és egyebekről szól. Növelje dokumentumfeldolgozási készségeit még ma!
 ### [OLE-objektumok és ActiveX-vezérlők beágyazása Word dokumentumokba](./document-ole-objects-active-x/)
  Ismerje meg, hogyan ágyazhat be OLE-objektumokat és ActiveX-vezérlőket Word dokumentumokba az Aspose.Words for Python használatával. Hozzon létre interaktív és dinamikus dokumentumokat zökkenőmentesen.

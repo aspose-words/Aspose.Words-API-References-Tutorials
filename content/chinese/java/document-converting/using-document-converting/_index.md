@@ -98,7 +98,7 @@ FontSettings.setFontsFolder("/path/to/fonts", true);
 Aspose.Words 提供了多种选项来定制文档转换过程。例如，您可以设置转换的页面范围或指定保存为 PDF 时的图像分辨率：
 
 ```java
-//设置转换的页面范围（转换第 1 至第 3 页）
+//设置转换的页面范围（转换第 1 至 3 页）
 PdfSaveOptions options = new PdfSaveOptions();
 options.setPageSet(new PageSet(1, 3));
 

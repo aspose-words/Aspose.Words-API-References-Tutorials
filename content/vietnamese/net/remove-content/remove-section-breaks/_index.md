@@ -35,7 +35,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 Để loại bỏ dấu ngắt phần, chúng ta sẽ lặp qua tất cả các phần bắt đầu từ phần trước phần cuối cùng và chuyển sang phần đầu tiên. Trong vòng lặp, chúng tôi sẽ thêm nội dung của từng phần vào đầu phần cuối cùng, sau đó xóa phần đã sao chép.
 
 ```csharp
-// Lặp lại tất cả các phần bắt đầu từ phần trước phần cuối cùng và chuyển sang phần đầu tiên.
+// Lặp lại tất cả các phần bắt đầu từ phần trước phần cuối cùng và chuyển đến phần đầu tiên.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
     // Sao chép nội dung của phần hiện tại vào đầu phần cuối cùng.
@@ -46,7 +46,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 ```
 
 ## Bước 4: Lưu tài liệu đã sửa đổi
- Cuối cùng, chúng ta sẽ lưu tài liệu đã sửa đổi bằng cách sử dụng`Save` phương pháp. Chỉ định đường dẫn và định dạng tệp đầu ra mong muốn (ví dụ: DOCX) cho tài liệu đã sửa đổi.
+Cuối cùng, chúng ta sẽ lưu tài liệu đã sửa đổi bằng cách sử dụng`Save` phương pháp. Chỉ định đường dẫn và định dạng tệp đầu ra mong muốn (ví dụ: DOCX) cho tài liệu đã sửa đổi.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
@@ -62,7 +62,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 // Tải tài liệu
 Document doc = new Document(dataDir + "your-document.docx");
 
-// Lặp lại tất cả các phần bắt đầu từ phần trước phần cuối cùng và chuyển sang phần đầu tiên.
+// Lặp lại tất cả các phần bắt đầu từ phần trước phần cuối cùng và chuyển đến phần đầu tiên.
 for (int i = doc.Sections.Count - 2; i >= 0; i--)
 {
 	// Sao chép nội dung của phần hiện tại vào đầu phần cuối cùng.

@@ -677,7 +677,7 @@ Untuk menambahkan Aspose.Words untuk Java ke proyek Anda, ikuti langkah-langkah 
 
 ### Bisakah saya membagi dokumen dalam format lain, seperti PDF atau DOCX?
 
-Tidak, panduan ini secara khusus mencakup pemisahan dokumen dalam format DOC menggunakan Aspose.Words untuk Java. Jika Anda perlu membagi dokumen dalam format lain, Anda mungkin perlu menjelajahi perpustakaan atau alat lain yang mendukung format tersebut.
+Tidak, panduan ini secara khusus mencakup pemisahan dokumen dalam format DOC menggunakan Aspose.Words untuk Java. Jika Anda perlu membagi dokumen dalam format lain, Anda mungkin perlu menjelajahi pustaka atau alat lain yang mendukung format tersebut.
 
 ### Apakah Aspose.Words untuk Java merupakan perpustakaan gratis?
 

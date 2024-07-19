@@ -2,196 +2,135 @@
 title: वर्ड दस्तावेज़ में बुकमार्क बनाएँ
 linktitle: वर्ड दस्तावेज़ में बुकमार्क बनाएँ
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में बुकमार्क बनाना और PDF में बुकमार्क पूर्वावलोकन स्तर निर्दिष्ट करना सीखें।
+description: इस विस्तृत, चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में बुकमार्क बनाना सीखें। दस्तावेज़ नेविगेशन और संगठन के लिए बिल्कुल सही।
 type: docs
 weight: 10
 url: /hi/net/programming-with-bookmarks/create-bookmark/
 ---
+## परिचय
 
-इस लेख में, हम ऊपर दिए गए C# स्रोत कोड का पता लगाएंगे ताकि यह समझा जा सके कि Aspose.Words for .NET लाइब्रेरी में बुकमार्क बनाएँ फ़ंक्शन का उपयोग कैसे करें। यह सुविधा आपको दस्तावेज़ में बुकमार्क बनाने और आउटपुट PDF फ़ाइल में बुकमार्क पूर्वावलोकन स्तर निर्दिष्ट करने की अनुमति देती है।
+वर्ड डॉक्यूमेंट में बुकमार्क बनाना एक गेम-चेंजर हो सकता है, खासकर जब आप बड़े दस्तावेज़ों में आसानी से नेविगेट करना चाहते हैं। आज, हम .NET के लिए Aspose.Words का उपयोग करके बुकमार्क बनाने की प्रक्रिया से गुजरेंगे। यह ट्यूटोरियल आपको चरण दर चरण ले जाएगा, यह सुनिश्चित करते हुए कि आप प्रक्रिया के प्रत्येक भाग को समझते हैं। तो, चलिए सीधे शुरू करते हैं!
 
 ## आवश्यक शर्तें
 
-- C# भाषा का मूलभूत ज्ञान.
-- Aspose.Words लाइब्रेरी के साथ .NET विकास वातावरण स्थापित।
+शुरू करने से पहले, आपके पास निम्नलिखित चीजें होनी चाहिए:
 
-## चरण 1: दस्तावेज़ और जनरेटर बनाना
+1.  Aspose.Words for .NET लाइब्रेरी: डाउनलोड करें और इंस्टॉल करें[यहाँ](https://releases.aspose.com/words/net/).
+2. विकास वातावरण: विजुअल स्टूडियो या कोई अन्य .NET विकास वातावरण।
+3. C# का बुनियादी ज्ञान: बुनियादी C# प्रोग्रामिंग अवधारणाओं की समझ।
 
- बुकमार्क बनाने से पहले, हमें एक दस्तावेज़ और दस्तावेज़ बिल्डर बनाने की आवश्यकता है`Document` और`DocumentBuilder` वस्तुएं:
+## नामस्थान आयात करें
+
+.NET के लिए Aspose.Words के साथ काम करने के लिए, आपको आवश्यक नामस्थान आयात करने होंगे:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## चरण 1: दस्तावेज़ और दस्तावेज़बिल्डर सेटअप करें
+
+दस्तावेज़ आरंभ करें
+
+सबसे पहले, हमें एक नया दस्तावेज़ बनाना होगा और उसे आरंभ करना होगा`DocumentBuilder`यह आपके दस्तावेज़ में सामग्री और बुकमार्क जोड़ने का प्रारंभिक बिंदु है।
+
+```csharp
+// दस्तावेज़ निर्देशिका का पथ.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## चरण 2: मुख्य बुकमार्क बनाना
+ स्पष्टीकरण:`Document` वस्तु आपका कैनवास है।`DocumentBuilder` यह आपके पेन की तरह है, जो आपको दस्तावेज़ में सामग्री लिखने और बुकमार्क बनाने की अनुमति देता है।
 
- हम उपयोग करते हैं`StartBookmark` मुख्य बुकमार्क शुरू करने की विधि और`EndBookmark` इसे समाप्त करने की विधि। बीच में, हम पाठ और अन्य बुकमार्क जोड़ सकते हैं:
+## चरण 2: मुख्य बुकमार्क बनाएं
+
+मुख्य बुकमार्क आरंभ और समाप्त करें
+
+बुकमार्क बनाने के लिए, आपको आरंभ और समाप्ति बिंदु निर्दिष्ट करने होंगे। यहाँ, हम "मेरा बुकमार्क" नाम से एक बुकमार्क बनाएंगे।
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-// यहां अधिक बुकमार्क या पाठ जोड़ें.
-
-builder. EndBookmark("My Bookmark");
 ```
 
-## चरण 3: नेस्टेड बुकमार्क बनाना
+ स्पष्टीकरण:`StartBookmark` विधि बुकमार्क की शुरुआत को चिह्नित करती है, और`Writeln` बुकमार्क के भीतर पाठ जोड़ता है.
 
- हम मुख्य बुकमार्क के अंदर नेस्टेड बुकमार्क भी बना सकते हैं। हम उसी का उपयोग करते हैं`StartBookmark` और`EndBookmark` नेस्टेड बुकमार्क बनाने और समाप्त करने के तरीके:
+## चरण 3: नेस्टेड बुकमार्क बनाएं
+
+मुख्य बुकमार्क के अंदर नेस्टेड बुकमार्क जोड़ें
+
+आप बुकमार्क को अन्य बुकमार्क के अंदर नेस्ट कर सकते हैं। यहाँ, हम "मेरे बुकमार्क" के अंदर "नेस्टेड बुकमार्क" जोड़ते हैं।
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## चरण 4: आउटपुट PDF फ़ाइल में बुकमार्क पूर्वावलोकन स्तर निर्दिष्ट करना
+ स्पष्टीकरण: बुकमार्क को नेस्ट करने से अधिक संरचित और पदानुक्रमित सामग्री संगठन की अनुमति मिलती है।`EndBookmark` विधि वर्तमान बुकमार्क को बंद कर देती है.
 
- हम उपयोग करते हैं`PdfSaveOptions` आउटपुट पीडीएफ फाइल में बुकमार्क पूर्वावलोकन स्तर निर्दिष्ट करने के लिए ऑब्जेक्ट। हम इसका उपयोग करते हैं`BookmarksOutlineLevels` संपत्ति
+## चरण 4: नेस्टेड बुकमार्क के बाहर टेक्स्ट जोड़ें
 
-  मुख्य बुकमार्क और नेस्टेड बुकमार्क को उनके संबंधित स्तरों के साथ जोड़ने के लिए:
+सामग्री जोड़ना जारी रखें
+
+नेस्टेड बुकमार्क के बाद, हम मुख्य बुकमार्क में और अधिक सामग्री जोड़ना जारी रख सकते हैं।
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+स्पष्टीकरण: यह सुनिश्चित करता है कि मुख्य बुकमार्क में नेस्टेड बुकमार्क और अतिरिक्त पाठ दोनों शामिल हों।
+
+## चरण 5: पीडीएफ सेव विकल्प कॉन्फ़िगर करें
+
+बुकमार्क के लिए PDF सेव विकल्प सेट करें
+
+दस्तावेज़ को पीडीएफ के रूप में सहेजते समय, हम बुकमार्क शामिल करने के लिए विकल्प कॉन्फ़िगर कर सकते हैं।
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+ स्पष्टीकरण:`PdfSaveOptions` क्लास आपको यह निर्दिष्ट करने की अनुमति देता है कि दस्तावेज़ को पीडीएफ के रूप में कैसे सहेजा जाना चाहिए।`BookmarksOutlineLevels` संपत्ति पीडीएफ में बुकमार्क्स के पदानुक्रम को परिभाषित करती है।
+
+## चरण 6: दस्तावेज़ सहेजें
+
+दस्तावेज़ को PDF के रूप में सहेजें
+
+अंत में, निर्दिष्ट विकल्पों के साथ दस्तावेज़ को सहेजें।
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### .NET के लिए Aspose.Words का उपयोग करके बुकमार्क बनाने के लिए उदाहरण स्रोत कोड
-
-.NET के लिए Aspose.Words का उपयोग करके बुकमार्क बनाने का प्रदर्शन करने के लिए यहां पूर्ण उदाहरण स्रोत कोड दिया गया है:
-
-```csharp
-
-	// दस्तावेज़ निर्देशिका का पथ.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+ स्पष्टीकरण:`Save` विधि दस्तावेज़ को निर्दिष्ट प्रारूप और स्थान में सहेजती है। पीडीएफ में अब हमारे द्वारा बनाए गए बुकमार्क शामिल होंगे।
 
 ## निष्कर्ष
 
-इस लेख में, हमने .NET के लिए Aspose.Words के बुकमार्क बनाएँ फ़ंक्शन का उपयोग करने के तरीके को समझने के लिए C# स्रोत कोड का पता लगाया। हमने दस्तावेज़ में बुकमार्क बनाने और आउटपुट PDF फ़ाइल में बुकमार्क पूर्वावलोकन स्तर निर्दिष्ट करने के लिए चरण-दर-चरण मार्गदर्शिका का पालन किया है।
+Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में बुकमार्क बनाना सरल है और दस्तावेज़ नेविगेशन और संगठन के लिए बेहद उपयोगी है। चाहे आप रिपोर्ट बना रहे हों, ईबुक बना रहे हों या बड़े दस्तावेज़ों का प्रबंधन कर रहे हों, बुकमार्क जीवन को आसान बनाते हैं। इस ट्यूटोरियल में बताए गए चरणों का पालन करें, और आपके पास कुछ ही समय में एक बुकमार्क किया हुआ PDF तैयार हो जाएगा।
 
-### पूछे जाने वाले प्रश्न
+## अक्सर पूछे जाने वाले प्रश्न
 
-#### प्रश्न: Aspose.Words for .NET में "बुकमार्क बनाएँ" फ़ंक्शन का उपयोग करने के लिए क्या पूर्वापेक्षाएँ हैं?
+### क्या मैं विभिन्न स्तरों पर एकाधिक बुकमार्क बना सकता हूँ?
 
-उत्तर: Aspose.Words for .NET में "बुकमार्क बनाएँ" फ़ंक्शन का उपयोग करने के लिए, आपको C# भाषा का बुनियादी ज्ञान होना चाहिए। आपको Aspose.Words लाइब्रेरी इंस्टॉल किए गए .NET डेवलपमेंट एनवायरनमेंट की भी आवश्यकता है।
+बिल्कुल! आप आवश्यकतानुसार जितने चाहें उतने बुकमार्क बना सकते हैं और दस्तावेज़ को PDF के रूप में सहेजते समय उनके पदानुक्रमिक स्तर को परिभाषित कर सकते हैं।
 
-#### प्रश्न: .NET के लिए Aspose.Words में दस्तावेज़ कैसे बनाएं?
+### मैं बुकमार्क का टेक्स्ट कैसे अपडेट करूं?
 
- A: .NET के लिए Aspose.Words में एक दस्तावेज़ बनाने के लिए, आप इसका उपयोग कर सकते हैं`Document` क्लास. यहाँ एक नमूना कोड है:
+ आप बुकमार्क तक नेविगेट करने के लिए निम्न का उपयोग कर सकते हैं:`DocumentBuilder.MoveToBookmark` और फिर पाठ को अद्यतन करें.
 
-```csharp
-Document doc = new Document();
-```
+### क्या बुकमार्क को हटाना संभव है?
 
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ में मास्टर बुकमार्क कैसे बनाएं?
+ हां, आप इसका उपयोग करके बुकमार्क हटा सकते हैं`Bookmarks.Remove` बुकमार्क का नाम निर्दिष्ट करके विधि।
 
- A: .NET के लिए Aspose.Words का उपयोग करके किसी दस्तावेज़ में मुख्य बुकमार्क बनाने के लिए, आप इसका उपयोग कर सकते हैं`StartBookmark` बुकमार्क शुरू करने के लिए विधि, अंदर पाठ या अन्य बुकमार्क जोड़ें, फिर उपयोग करें` EndBookmark` इसे समाप्त करने के लिए यहाँ एक नमूना कोड है:
+### क्या मैं पीडीएफ के अलावा अन्य प्रारूपों में बुकमार्क बना सकता हूं?
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+हां, Aspose.Words DOCX, HTML और EPUB सहित विभिन्न प्रारूपों में बुकमार्क का समर्थन करता है।
 
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके मुख्य बुकमार्क के अंदर नेस्टेड बुकमार्क कैसे बनाएं?
+### मैं यह कैसे सुनिश्चित कर सकता हूं कि बुकमार्क पीडीएफ में सही ढंग से दिखाई दें?
 
- उत्तर: .NET के लिए Aspose.Words का उपयोग करके मुख्य बुकमार्क के अंदर एक नेस्टेड बुकमार्क बनाने के लिए, आप उसी का उपयोग कर सकते हैं`StartBookmark` और`EndBookmark` नेस्टेड बुकमार्क को शुरू करने और समाप्त करने के तरीके। यहाँ एक नमूना कोड है:
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके आउटपुट PDF में बुकमार्क पूर्वावलोकन स्तर कैसे निर्दिष्ट करें?
-
- उत्तर: .NET के लिए Aspose.Words का उपयोग करके आउटपुट PDF में बुकमार्क पूर्वावलोकन स्तर निर्दिष्ट करने के लिए, आप इसका उपयोग कर सकते हैं`PdfSaveOptions` वर्ग और`BookmarksOutlineLevels` प्रॉपर्टी। आप मुख्य बुकमार्क और नेस्टेड बुकमार्क को उनके संबंधित स्तरों के साथ जोड़ सकते हैं। यहाँ एक नमूना कोड है:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके बुकमार्क बनाने के बाद दस्तावेज़ को कैसे सहेजा जाए?
-
- A: .NET के लिए Aspose.Words का उपयोग करके बुकमार्क बनाने के बाद दस्तावेज़ को सहेजने के लिए, आप इसका उपयोग कर सकते हैं`Save` की विधि`Document` गंतव्य फ़ाइल पथ निर्दिष्ट करने वाला ऑब्जेक्ट। यहाँ एक नमूना कोड है:
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके आउटपुट PDF में बुकमार्क पूर्वावलोकन स्तर कैसे निर्दिष्ट करें?
-
- उत्तर: .NET के लिए Aspose.Words का उपयोग करके आउटपुट PDF में बुकमार्क पूर्वावलोकन स्तर निर्दिष्ट करने के लिए, आप इसका उपयोग कर सकते हैं`PdfSaveOptions` वर्ग और`BookmarksOutlineLevels` प्रॉपर्टी। आप मुख्य बुकमार्क और नेस्टेड बुकमार्क को उनके संबंधित स्तरों के साथ जोड़ सकते हैं। यहाँ एक नमूना कोड है:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके मुख्य बुकमार्क के अंदर नेस्टेड बुकमार्क कैसे बनाएं?
-
- उत्तर: .NET के लिए Aspose.Words का उपयोग करके मुख्य बुकमार्क के अंदर नेस्टेड बुकमार्क बनाने के लिए, आप उसी का उपयोग कर सकते हैं`StartBookmark` और`EndBookmark` नेस्टेड बुकमार्क शुरू करने और खत्म करने के तरीके। कॉल करते समय पैरेंट बुकमार्क को पैरामीटर के रूप में निर्दिष्ट करना सुनिश्चित करें`StartBookmark` विधि। यहाँ एक नमूना कोड है:
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके बुकमार्क के अंदर टेक्स्ट कैसे जोड़ें?
-
- A: .NET के लिए Aspose.Words का उपयोग करके बुकमार्क के अंदर पाठ जोड़ने के लिए, आप इसका उपयोग कर सकते हैं`Write` की विधि`DocumentBuilder`जोड़ने के लिए पाठ निर्दिष्ट करने वाला ऑब्जेक्ट। यहाँ एक नमूना कोड है:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ में मास्टर बुकमार्क कैसे बनाएं?
-
- A: .NET के लिए Aspose.Words का उपयोग करके किसी दस्तावेज़ में मुख्य बुकमार्क बनाने के लिए, आप इसका उपयोग कर सकते हैं`StartBookmark` बुकमार्क शुरू करने की विधि और`EndBookmark` इसे समाप्त करने की विधि। यहाँ एक नमूना कोड है:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+ यह सुनिश्चित करें कि आप परिभाषित करें`BookmarksOutlineLevels` ठीक से`PdfSaveOptions`यह सुनिश्चित करता है कि बुकमार्क पीडीएफ की रूपरेखा में शामिल हैं।

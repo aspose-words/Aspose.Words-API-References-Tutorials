@@ -2,7 +2,7 @@
 title: Ambil Jenis Lebar Pilihan
 linktitle: Ambil Jenis Lebar Pilihan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengambil jenis dan nilai lebar sel yang diinginkan di tabel Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengambil jenis dan nilai lebar sel yang diinginkan dalam tabel Word dengan Aspose.Words untuk .NET.
 type: docs
 weight: 10
 url: /id/net/programming-with-tables/retrieve-preferred-width-type/

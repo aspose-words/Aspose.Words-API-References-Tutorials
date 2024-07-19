@@ -98,7 +98,7 @@ Sau khi thao tác các phần, đã đến lúc lưu tài liệu của chúng ta
 doc.Save("output.docx");
 ```
 
-Ở đây, chúng tôi lưu tài liệu dưới dạng "output.docx". Bạn có thể mở tệp này trong Microsoft Word để xem các thay đổi.
+Ở đây, chúng tôi lưu tài liệu dưới dạng "output.docx". Bạn có thể mở tệp này trong Microsoft Word để xem những thay đổi.
 
 ## Phần kết luận
 
@@ -116,7 +116,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ## 3. Các tính năng chính của Aspose.Words cho .NET là gì?
 
- Aspose.Words for .NET cung cấp nhiều tính năng bao gồm tạo, định dạng, chuyển đổi và thao tác tài liệu. Bạn có thể đọc thêm về khả năng của nó trong[Tài liệu API](https://reference.aspose.com/words/net/).
+Aspose.Words for .NET cung cấp nhiều tính năng bao gồm tạo, định dạng, chuyển đổi và thao tác tài liệu. Bạn có thể đọc thêm về khả năng của nó trong[Tài liệu API](https://reference.aspose.com/words/net/).
 
 ## 4. Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
 

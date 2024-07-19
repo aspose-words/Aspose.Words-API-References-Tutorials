@@ -14,10 +14,10 @@ Với những hướng dẫn này, bạn sẽ có thể nắm vững các tính 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Ký tài liệu Word](./sign-document/) | Tìm hiểu cách ký điện tử vào tài liệu Word bằng Aspose.Words cho .NET. |
-| [Ký tài liệu Word được mã hóa](./signing-encrypted-document/) | Tìm hiểu cách ký điện tử vào tài liệu từ được mã hóa bằng Aspose.Words cho .NET. |
-| [Tạo và ký dòng chữ ký mới](./creating-and-signing-new-signature-line/) | Tìm hiểu cách tạo và ký dòng chữ ký mới trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Ký dòng chữ ký hiện có trong tài liệu Word](./signing-existing-signature-line/) | Tìm hiểu cách ký dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Đặt Id nhà cung cấp chữ ký trong tài liệu Word](./set-signature-provider-id/) | Tìm hiểu cách đặt ID nhà cung cấp chữ ký trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Tạo dòng chữ ký mới và đặt Id nhà cung cấp](./create-new-signature-line-and-set-provider-id/) | Tìm hiểu cách tạo dòng chữ ký mới và đặt ID nhà cung cấp trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Truy Cập Và Xác Minh Chữ Ký Trong Tài Liệu Word](./access-and-verify-signature/) | Tìm hiểu cách truy cập và xác minh chữ ký điện tử trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Ký tài liệu Word](./sign-document/) | Tìm hiểu cách ký tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Bảo mật tài liệu của bạn một cách dễ dàng. |
+| [Ký tài liệu Word được mã hóa](./signing-encrypted-document/) | Tìm hiểu cách ký các tài liệu Word được mã hóa bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Hoàn hảo cho các nhà phát triển. |
+| [Tạo và ký dòng chữ ký mới](./creating-and-signing-new-signature-line/) | Tìm hiểu cách tạo và ký điện tử dòng chữ ký trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo cho việc tự động hóa tài liệu. |
+| [Ký dòng chữ ký hiện có trong tài liệu Word](./signing-existing-signature-line/) | Tìm hiểu cách ký dòng chữ ký hiện có trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển. |
+| [Đặt Id nhà cung cấp chữ ký trong tài liệu Word](./set-signature-provider-id/) | Đặt ID nhà cung cấp chữ ký một cách an toàn trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết gồm 2000 từ của chúng tôi để ký điện tử vào tài liệu của bạn. |
+| [Tạo dòng chữ ký mới và đặt Id nhà cung cấp](./create-new-signature-line-and-set-provider-id/) | Tìm hiểu cách tạo dòng chữ ký mới và đặt ID nhà cung cấp trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước một. |
+| [Truy Cập Và Xác Minh Chữ Ký Trong Tài Liệu Word](./access-and-verify-signature/) | Truy cập và xác minh chữ ký số trong tài liệu Word bằng Aspose.Words for .NET với hướng dẫn từng bước toàn diện này. Đảm bảo tính xác thực của tài liệu một cách dễ dàng. |

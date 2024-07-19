@@ -71,11 +71,11 @@ R : Avec Aspose.Words, vous pouvez facilement modifier l'espacement des lignes d
 
 #### Q : Est-il possible d’appliquer un espacement exact entre les lignes dans un document Word ?
 
-: Oui, Aspose.Words vous permet d'appliquer un espacement exact entre les lignes dans un document Word. Vous pouvez spécifier une valeur précise pour l'espacement des lignes à l'aide de l'API.
+R : Oui, Aspose.Words vous permet d'appliquer un espacement exact entre les lignes dans un document Word. Vous pouvez spécifier une valeur précise pour l'espacement des lignes à l'aide de l'API.
 
 #### Q : Comment puis-je ajuster l’espacement des lignes pour l’ensemble du document Word ?
 
-R : Avec Aspose.Words, vous pouvez facilement ajuster l’espacement des lignes pour l’ensemble du document Word. Utilisez les méthodes fournies par l'API pour spécifier l'espacement des lignes souhaité pour l'ensemble du document.
+: Avec Aspose.Words, vous pouvez facilement ajuster l’espacement des lignes pour l’ensemble du document Word. Utilisez les méthodes fournies par l'API pour spécifier l'espacement des lignes souhaité pour l'ensemble du document.
 
 #### Q : Aspose.Words prend-il en charge plusieurs interlignes ?
 

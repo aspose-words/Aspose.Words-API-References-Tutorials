@@ -60,7 +60,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { Password = "Aspose", LoadForma
 doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", loadOptions);
 ```
 
-必ず正しいパスワードを入力してください。`Password`変数。
+必ず正しいパスワードを入力してください`Password`変数。
 
 ### Aspose.Words for .NET を使用して暗号化された PDF を読み込むためのサンプル ソース コード
 

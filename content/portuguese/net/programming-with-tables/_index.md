@@ -32,8 +32,8 @@ Seguindo estes tutoriais, você poderá explorar totalmente os recursos de manip
 | [Mesclagem horizontal](./horizontal-merge/) | Aprenda como mesclar células horizontalmente em uma tabela do Word com Aspose.Words for .NET. |
 | [Converter em células mescladas horizontalmente](./convert-to-horizontally-merged-cells/) | Aprenda como converter células de tabela em células mescladas horizontalmente em um documento do Word com Aspose.Words for .NET. |
 | [Repetir linhas nas páginas subsequentes](./repeat-rows-on-subsequent-pages/) | Aprenda como repetir linhas da tabela nas páginas subsequentes em um documento do Word com Aspose.Words for .NET. |
-| [Ajuste automático à largura da página](./auto-fit-to-page-width/) | Aprenda como ajustar automaticamente uma tabela à largura da página em um documento do Word com Aspose.Words for .NET. |
-| [Configurações de largura preferidas](./preferred-width-settings/) | Aprenda como definir larguras preferenciais de células de tabela em um documento do Word com Aspose.Words for .NET. |
+| [Ajuste automático à janela](./auto-fit-to-page-width/) | Ajuste automaticamente tabelas à janela em documentos do Word usando Aspose.Words for .NET com este guia passo a passo. Perfeito para documentos mais limpos e profissionais. |
+| [Configurações de largura preferidas](./preferred-width-settings/) | Aprenda como criar tabelas com configurações de largura absoluta, relativa e automática no Aspose.Words for .NET com este guia passo a passo. |
 | [Recuperar tipo de largura preferencial](./retrieve-preferred-width-type/) | Aprenda como recuperar o tipo e o valor de largura preferencial de uma célula em uma tabela do Word com Aspose.Words for .NET. |
 | [Obter posição na mesa](./get-table-position/) | Aprenda como obter a posição de uma tabela em um documento do Word com Aspose.Words for .NET. |
 | [Obtenha a posição da mesa flutuante](./get-floating-table-position/) | Aprenda como obter a posição de tabelas flutuantes em um documento do Word com Aspose.Words for .NET. |

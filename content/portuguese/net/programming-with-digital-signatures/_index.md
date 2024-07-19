@@ -14,10 +14,10 @@ Com esses tutoriais, você poderá dominar os recursos de assinatura digital do 
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Assinar documento do Word](./sign-document/) | Aprenda como assinar digitalmente um documento do Word com Aspose.Words for .NET. |
-| [Assinando documento Word criptografado](./signing-encrypted-document/) | Aprenda como assinar digitalmente um documento do Word criptografado com Aspose.Words for .NET. |
-| [Criação e assinatura de nova linha de assinatura](./creating-and-signing-new-signature-line/) | Aprenda como criar e assinar uma nova linha de assinatura em um documento do Word com Aspose.Words for .NET. |
-| [Assinando linha de assinatura existente em documento do Word](./signing-existing-signature-line/) | Aprenda como assinar uma linha de assinatura existente em um documento do Word com Aspose.Words for .NET. |
-| [Definir o ID do provedor de assinatura no documento do Word](./set-signature-provider-id/) | Aprenda como definir o ID do provedor de assinatura em um documento do Word com Aspose.Words for .NET. |
-| [Crie uma nova linha de assinatura e defina o ID do provedor](./create-new-signature-line-and-set-provider-id/) | Aprenda como criar uma nova linha de assinatura e definir o ID do provedor em um documento do Word com Aspose.Words for .NET. |
-| [Acesse e verifique a assinatura em um documento do Word](./access-and-verify-signature/) | Aprenda como acessar e verificar assinaturas digitais em um documento do Word com Aspose.Words for .NET. |
+| [Assinar documento do Word](./sign-document/) | Aprenda como assinar um documento do Word usando Aspose.Words for .NET com este guia passo a passo. Proteja seus documentos com facilidade. |
+| [Assinando documento Word criptografado](./signing-encrypted-document/) | Aprenda como assinar documentos criptografados do Word usando Aspose.Words for .NET com este guia passo a passo detalhado. Perfeito para desenvolvedores. |
+| [Criação e assinatura de nova linha de assinatura](./creating-and-signing-new-signature-line/) | Aprenda como criar e assinar digitalmente uma linha de assinatura em um documento do Word usando Aspose.Words for .NET com este tutorial passo a passo. Perfeito para automação de documentos. |
+| [Assinando linha de assinatura existente em documento do Word](./signing-existing-signature-line/) | Aprenda como assinar uma linha de assinatura existente em um documento do Word usando Aspose.Words for .NET com nosso guia passo a passo detalhado. Perfeito para desenvolvedores. |
+| [Definir o ID do provedor de assinatura no documento do Word](./set-signature-provider-id/) | Defina com segurança um ID de provedor de assinatura em documentos do Word usando Aspose.Words for .NET. Siga nosso guia detalhado de 2.000 palavras para assinar digitalmente seus documentos. |
+| [Crie uma nova linha de assinatura e defina o ID do provedor](./create-new-signature-line-and-set-provider-id/) | Aprenda como criar uma nova linha de assinatura e definir o ID do provedor em documentos do Word usando Aspose.Words for .NET. Guia passo a passo. |
+| [Acesse e verifique a assinatura em um documento do Word](./access-and-verify-signature/) | Acesse e verifique assinaturas digitais em documentos do Word usando Aspose.Words for .NET com este guia passo a passo abrangente. Garanta a autenticidade do documento sem esforço. |

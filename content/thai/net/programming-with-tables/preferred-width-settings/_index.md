@@ -2,105 +2,131 @@
 title: การตั้งค่าความกว้างที่ต้องการ
 linktitle: การตั้งค่าความกว้างที่ต้องการ
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีตั้งค่าความกว้างของเซลล์ตารางที่ต้องการในเอกสาร Word ด้วย Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีสร้างตารางด้วยการตั้งค่าความกว้างสัมบูรณ์ แบบสัมพันธ์ และอัตโนมัติใน Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนนี้
 type: docs
 weight: 10
 url: /th/net/programming-with-tables/preferred-width-settings/
 ---
+## การแนะนำ
 
-ในบทช่วยสอนนี้ เราจะเรียนรู้วิธีตั้งค่าความกว้างที่ต้องการสำหรับเซลล์ตารางในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เราจะทำตามคำแนะนำทีละขั้นตอนเพื่อทำความเข้าใจโค้ดและใช้งานคุณลักษณะนี้ เมื่อสิ้นสุดบทช่วยสอนนี้ คุณจะสามารถระบุความกว้างที่ต้องการสำหรับเซลล์ตารางในเอกสาร Word ได้
+ตารางเป็นวิธีที่มีประสิทธิภาพในการจัดระเบียบและนำเสนอข้อมูลในเอกสาร Word ของคุณ เมื่อทำงานกับตารางใน Aspose.Words สำหรับ .NET คุณมีหลายตัวเลือกในการตั้งค่าความกว้างของเซลล์ตารางเพื่อให้แน่ใจว่าพอดีกับเค้าโครงเอกสารของคุณอย่างสมบูรณ์แบบ คู่มือนี้จะแนะนำคุณตลอดกระบวนการสร้างตารางที่มีการตั้งค่าความกว้างที่ต้องการโดยใช้ Aspose.Words สำหรับ .NET โดยเน้นที่ตัวเลือกขนาดสัมบูรณ์ แบบสัมพันธ์ และอัตโนมัติ 
 
-## ขั้นตอนที่ 1: การตั้งค่าโครงการ
-1. เรียกใช้ Visual Studio และสร้างโครงการ C# ใหม่
-2. เพิ่มการอ้างอิงไปยังไลบรารี Aspose.Words สำหรับ .NET
+## ข้อกำหนดเบื้องต้น
 
-## ขั้นตอนที่ 2: การสร้างเอกสารและการเริ่มต้นตัวสร้างเอกสาร
-เมื่อต้องการเริ่มการประมวลผลคำด้วยตัวสร้างเอกสารและเอกสาร ให้ทำตามขั้นตอนเหล่านี้:
+ก่อนที่จะเข้าสู่บทช่วยสอน ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+
+1.  Aspose.Words for .NET: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Aspose.Words for .NET ในสภาพแวดล้อมการพัฒนาของคุณ คุณสามารถดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/words/net/).
+
+2. สภาพแวดล้อมการพัฒนา .NET: ตั้งค่าสภาพแวดล้อมการพัฒนา .NET เช่น Visual Studio
+
+3. ความรู้พื้นฐานของ C#: ความคุ้นเคยกับการเขียนโปรแกรม C# จะช่วยให้คุณเข้าใจตัวอย่างโค้ดและตัวอย่างได้ดีขึ้น
+
+4.  เอกสารประกอบ Aspose.Words: อ้างถึง[เอกสาร Aspose.Words](https://reference.aspose.com/words/net/) สำหรับข้อมูล API โดยละเอียดและการอ่านเพิ่มเติม
+
+## นำเข้าเนมสเปซ
+
+ก่อนที่คุณจะเริ่มเขียนโค้ด คุณต้องนำเข้าเนมสเปซที่จำเป็นลงในโปรเจ็กต์ C# ของคุณ:
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสารของคุณ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// การสร้างเอกสาร
+เนมสเปซเหล่านี้ให้การเข้าถึงฟังก์ชันหลักของ Aspose.Words และออบเจ็กต์ Table ซึ่งช่วยให้คุณสามารถจัดการตารางเอกสารได้
+
+เรามาแจกแจงขั้นตอนการสร้างตารางที่มีการตั้งค่าความกว้างที่ต้องการต่างๆ กันเป็นขั้นตอนที่ชัดเจนและจัดการได้
+
+## ขั้นตอนที่ 1: เริ่มต้นเอกสารและ DocumentBuilder
+
+หัวข้อ: การสร้างเอกสารใหม่และ DocumentBuilder
+
+ คำอธิบาย: เริ่มต้นด้วยการสร้างเอกสาร Word ใหม่และก`DocumentBuilder` ตัวอย่าง. ที่`DocumentBuilder` class เป็นวิธีง่ายๆ ในการเพิ่มเนื้อหาลงในเอกสารของคุณ
+
+```csharp
+// กำหนดเส้นทางในการบันทึกเอกสาร
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// สร้างเอกสารใหม่
 Document doc = new Document();
 
-// เริ่มต้นตัวสร้างเอกสาร
+// สร้าง DocumentBuilder สำหรับเอกสารนี้
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-อย่าลืมแทนที่ "ไดเรกทอรีเอกสารของคุณ" ด้วยเส้นทางจริงไปยังไดเรกทอรีเอกสารของคุณ
+ ที่นี่ คุณระบุไดเร็กทอรีที่จะบันทึกเอกสารและเริ่มต้นไฟล์`Document`และ`DocumentBuilder` วัตถุ
 
-## ขั้นตอนที่ 3: สร้างตารางที่มีความกว้างที่ต้องการ
-ต่อไป เราจะสร้างตารางที่มีเซลล์ 3 เซลล์ซึ่งมีความกว้างที่ต้องการต่างกัน ใช้รหัสต่อไปนี้:
+## ขั้นตอนที่ 2: แทรกเซลล์ตารางแรกด้วยความกว้างสัมบูรณ์
+
+แทรกเซลล์แรกลงในตารางโดยมีความกว้างคงที่ 40 พอยต์ เพื่อให้แน่ใจว่าเซลล์นี้จะรักษาความกว้าง 40 พอยต์ไว้เสมอ ไม่ว่าตารางจะมีขนาดเท่าใดก็ตาม
 
 ```csharp
-// จุดเริ่มต้นของตาราง
-builder. StartTable();
 
-// แทรกเซลล์ที่มีขนาดสัมบูรณ์
-builder. InsertCell();
+// แทรกเซลล์ที่มีขนาดสมบูรณ์
+builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-builder.Writeln("Cell with a width of 40 points");
-
-// แทรกเซลล์ที่มีขนาดสัมพันธ์กัน (เป็นเปอร์เซ็นต์)
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-builder.Writeln("Cell with 20% width");
-
-// แทรกเซลล์ที่ปรับขนาดอัตโนมัติ
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-builder.Writeln("Auto-size cell. The size of this cell is calculated from the preferred width of the table. In this case, the cell will fill the rest of the available space.");
-
-// ท้ายตาราง
-builder. EndTable();
+builder.Writeln("Cell at 40 points width");
 ```
 
-ที่นี่เราใช้ตัวสร้างเอกสารเพื่อสร้างตารางที่มีสามเซลล์ เซลล์แรกมีความกว้างที่ต้องการ 40 พอยต์ เซลล์ที่สองมีความกว้างที่ต้องการ 20% ของความกว้างของตาราง และเซลล์ที่สามมีความกว้างที่ต้องการโดยอัตโนมัติที่ปรับ
+ในขั้นตอนนี้ คุณจะเริ่มสร้างตารางและแทรกเซลล์ที่มีความกว้างสัมบูรณ์ ที่`PreferredWidth.FromPoints(40)` วิธีการกำหนดความกว้างของเซลล์เป็น 40 จุดและ`Shading.BackgroundPatternColor` ใช้สีพื้นหลังสีเหลืองอ่อน
 
-  ขึ้นอยู่กับพื้นที่ว่าง
+## ขั้นตอนที่ 3: แทรกเซลล์ที่มีขนาดสัมพันธ์กัน
 
-## ขั้นตอนที่ 4: บันทึกเอกสารที่แก้ไข
-สุดท้าย เราจำเป็นต้องบันทึกเอกสารที่แก้ไขด้วยการตั้งค่าความกว้างที่ต้องการซึ่งกำหนดไว้สำหรับเซลล์ตาราง ใช้รหัสต่อไปนี้:
+แทรกเซลล์อื่นที่มีความกว้าง 20% ของความกว้างทั้งหมดของตาราง การกำหนดขนาดที่สัมพันธ์กันนี้ช่วยให้แน่ใจว่าเซลล์จะปรับตามสัดส่วนความกว้างของตาราง
 
 ```csharp
+// แทรกเซลล์ที่มีขนาดสัมพันธ์ (เปอร์เซ็นต์)
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
+builder.Writeln("Cell at 20% width");
+```
+
+ความกว้างของเซลล์นี้จะเท่ากับ 20% ของความกว้างทั้งหมดของตาราง ทำให้สามารถปรับให้เข้ากับขนาดหน้าจอหรือเค้าโครงเอกสารต่างๆ ได้
+
+### ขั้นตอนที่ 4: แทรกเซลล์ขนาดอัตโนมัติ
+
+สุดท้าย ให้แทรกเซลล์ที่จะปรับขนาดตัวเองโดยอัตโนมัติตามพื้นที่ว่างที่เหลืออยู่ในตาราง
+
+```csharp
+// แทรกเซลล์ขนาดอัตโนมัติ
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
+builder.Writeln("Cell automatically sized. The size of this cell is calculated from the table preferred width.");
+builder.Writeln("In this case the cell will fill up the rest of the available space.");
+```
+
+ ที่`PreferredWidth.Auto` การตั้งค่าทำให้เซลล์นี้สามารถขยายหรือย่อตามพื้นที่ที่เหลือหลังจากเซลล์อื่นๆ ถูกพิจารณาแล้ว เพื่อให้แน่ใจว่าเค้าโครงตารางจะดูสมดุลและเป็นมืออาชีพ
+
+## ขั้นตอนที่ 5: จบและบันทึกเอกสาร
+
+เมื่อคุณแทรกเซลล์ทั้งหมดแล้ว ให้กรอกข้อมูลในตารางและบันทึกเอกสารไปยังเส้นทางที่คุณระบุ
+
+```csharp
+// บันทึกเอกสาร
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-อย่าลืมระบุเส้นทางและชื่อไฟล์ที่ถูกต้องสำหรับเอกสารเอาต์พุต
-
-### ตัวอย่างซอร์สโค้ดสำหรับการตั้งค่าความกว้างที่ต้องการโดยใช้ Aspose.Words สำหรับ .NET 
-
-```csharp
-	// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// แทรกแถวของตารางที่ประกอบด้วยสามเซลล์ซึ่งมีความกว้างที่ต้องการต่างกัน
-	builder.StartTable();
-	// แทรกเซลล์ที่มีขนาดสมบูรณ์
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-	builder.Writeln("Cell at 40 points width");
-	// แทรกเซลล์ที่มีขนาดสัมพันธ์ (เปอร์เซ็นต์)
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-	builder.Writeln("Cell at 20% width");
-	// แทรกเซลล์ขนาดอัตโนมัติ
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-	builder.Writeln(
-		"Cell automatically sized. The size of this cell is calculated from the table preferred width.");
-	builder.Writeln("In this case the cell will fill up the rest of the available space.");
-	doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
-```
+ขั้นตอนนี้จะสรุปตารางและบันทึกเอกสารด้วยชื่อไฟล์ "WorkingWithTables.PreferredWidthSettings.docx" ในไดเร็กทอรีที่คุณกำหนด
 
 ## บทสรุป
-ในบทช่วยสอนนี้ เราได้เรียนรู้วิธีตั้งค่าความกว้างที่ต้องการสำหรับเซลล์ตารางในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ด้วยการทำตามคำแนะนำทีละขั้นตอนนี้และนำโค้ด C# ที่ให้มาไปใช้ คุณจะสามารถปรับแต่งความกว้างของเซลล์ตารางให้ตรงตามความต้องการเฉพาะของคุณในเอกสาร Word ได้
+
+การสร้างตารางด้วยการตั้งค่าความกว้างที่ต้องการใน Aspose.Words สำหรับ .NET จะทำได้ง่ายตรงไปตรงมาเมื่อคุณเข้าใจตัวเลือกขนาดต่างๆ ที่มีให้เลือก ไม่ว่าคุณจะต้องการความกว้างของเซลล์แบบคงที่ แบบสัมพันธ์ หรือแบบอัตโนมัติ Aspose.Words มอบความยืดหยุ่นในการจัดการสถานการณ์เค้าโครงตารางต่างๆ ได้อย่างมีประสิทธิภาพ ด้วยการทำตามขั้นตอนที่ระบุไว้ในคู่มือนี้ คุณสามารถมั่นใจได้ว่าตารางของคุณมีโครงสร้างที่ดีและสวยงามน่าดึงดูดใจในเอกสาร Word ของคุณ
+
+## คำถามที่พบบ่อย
+
+### ความแตกต่างระหว่างความกว้างของเซลล์สัมบูรณ์และสัมพัทธ์คืออะไร?
+ความกว้างของเซลล์สัมบูรณ์จะคงที่และไม่เปลี่ยนแปลง ในขณะที่ความกว้างสัมพัทธ์จะปรับตามความกว้างรวมของตาราง
+
+### ฉันสามารถใช้เปอร์เซ็นต์ติดลบสำหรับความกว้างสัมพัทธ์ได้หรือไม่
+ไม่ เปอร์เซ็นต์ติดลบไม่ถูกต้องสำหรับความกว้างของเซลล์ อนุญาตเฉพาะเปอร์เซ็นต์ที่เป็นบวกเท่านั้น
+
+### คุณลักษณะการปรับขนาดอัตโนมัติทำงานอย่างไร
+การปรับขนาดอัตโนมัติจะปรับความกว้างของเซลล์เพื่อเติมเต็มพื้นที่ที่เหลืออยู่ในตารางหลังจากที่เซลล์อื่นได้รับการปรับขนาดแล้ว
+
+### ฉันสามารถใช้สไตล์ที่แตกต่างกันกับเซลล์ที่มีการตั้งค่าความกว้างต่างกันได้หรือไม่
+ได้ คุณสามารถใช้สไตล์และการจัดรูปแบบต่างๆ กับเซลล์ได้ โดยไม่คำนึงถึงการตั้งค่าความกว้าง
+
+### จะเกิดอะไรขึ้นหากความกว้างรวมของตารางน้อยกว่าผลรวมของความกว้างของเซลล์ทั้งหมด
+ตารางจะปรับความกว้างของเซลล์ให้พอดีกับพื้นที่ว่างโดยอัตโนมัติ ซึ่งอาจทำให้บางเซลล์หดตัวได้

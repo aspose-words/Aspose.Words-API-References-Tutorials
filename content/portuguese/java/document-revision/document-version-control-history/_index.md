@@ -2,7 +2,7 @@
 title: Controle e histórico de versões de documentos
 linktitle: Controle e histórico de versões de documentos
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda o controle eficiente de versão de documentos usando Aspose.Words for Java. Gerencie alterações, colabore perfeitamente e acompanhe as revisões sem esforço.
+description: Aprenda o controle eficiente de versão de documentos usando Aspose.Words para Java. Gerencie alterações, colabore perfeitamente e acompanhe as revisões sem esforço.
 type: docs
 weight: 13
 url: /pt/java/document-revision/document-version-control-history/

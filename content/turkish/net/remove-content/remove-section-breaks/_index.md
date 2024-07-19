@@ -46,7 +46,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 ```
 
 ## Adım 4: Değiştirilen Belgeyi Kaydedin
- Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak kaydedeceğiz:`Save` yöntem. Değiştirilen belge için istenen çıktı dosyası yolunu ve biçimini (örneğin, DOCX) belirtin.
+Son olarak değiştirilen belgeyi aşağıdaki komutu kullanarak kaydedeceğiz:`Save` yöntem. Değiştirilen belge için istenen çıktı dosyası yolunu ve biçimini (örneğin, DOCX) belirtin.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

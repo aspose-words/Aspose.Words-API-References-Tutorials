@@ -41,7 +41,7 @@ using Aspose.Words;
 
 ## 第1步：設定項目目錄
 
-首先，我們需要指定文檔目錄的路徑。這是 PDF 所在的位置，也是儲存轉換後的 Word 文件的位置。
+首先，我們需要指定文檔目錄的路徑。這是 PDF 所在的位置以及轉換後的 Word 文件的儲存位置。
 
 ```csharp
 //文檔目錄的路徑。
@@ -66,7 +66,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf");
 doc.Save(dataDir + "BaseConversions.PdfToDocx.docx");
 ```
 
-透過致電`Save`我們的方法`Document`例如，我們指定輸出檔案的路徑和格式。在本例中，我們將其儲存為 Docx 檔案。
+透過致電`Save`我們的方法`Document`例如，我們指定輸出檔案的路徑和格式。在本例中，我們將其另存為 Docx 檔案。
 
 ## 第 4 步：運行轉換
 

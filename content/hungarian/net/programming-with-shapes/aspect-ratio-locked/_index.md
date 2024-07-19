@@ -17,14 +17,14 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
- Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder`tiltakozik a dokumentummal való munkavégzésre.
+ Hozzon létre egy új példányt a`Document` osztály és a`DocumentBuilder` tiltakozik a dokumentummal való munkavégzésre.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. lépés: Szúrjon be egy képalakot
- Használja a`InsertImage` módszere a`DocumentBuilder` objektum egy képforma beillesztéséhez a dokumentumba. Paraméterként adja meg a képfájl elérési útját.
+ Használja a`InsertImage` módszere a`DocumentBuilder`objektum egy képforma beillesztéséhez a dokumentumba. Paraméterként adja meg a képfájl elérési útját.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  Állítsa be a`AspectRatioLocked` az alakzat tulajdonsága ahhoz`true` vagy`false` a képarány zárolásához vagy feloldásához.
 
 ```csharp
-shape.AspectRatioLocked = false; //Oldja fel a képarányt
+shape.AspectRatioLocked = false; // Oldja fel a képarányt
 ```
 
 ## 5. lépés: Mentse el a dokumentumot

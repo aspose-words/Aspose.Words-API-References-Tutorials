@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Adım 3: Değiştirmek için hücreye gidin
- Bir hücrenin biçimlendirmesini değiştirmek için tablodaki belirli hücreye gitmemiz gerekir. biz kullanıyoruz`GetChild()` Ve`FirstRow.FirstCell` İlk dizinin ilk hücresine referans alma yöntemleri.
+ Bir hücrenin biçimlendirmesini değiştirmek için tablodaki belirli hücreye gitmemiz gerekir. biz kullanıyoruz`GetChild()`Ve`FirstRow.FirstCell` İlk dizinin ilk hücresine referans alma yöntemleri.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

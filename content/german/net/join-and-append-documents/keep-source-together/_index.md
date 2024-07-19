@@ -2,49 +2,57 @@
 title: Quelle zusammenhalten
 linktitle: Quelle zusammenhalten
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Dokumente verbinden und anhängen und dabei den Quellinhalt mit dem Zieldokument zusammenhalten.
+description: Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET zusammenführen und dabei die Formatierung beibehalten. Diese umfassende Anleitung deckt alles von der Einrichtung bis zur Ausführung ab.
 type: docs
 weight: 10
 url: /de/net/join-and-append-documents/keep-source-together/
 ---
+## Einführung
 
-Dieses Tutorial führt Sie durch die Verwendung der Funktion „Quelle zusammenhalten“ von Aspose.Words für .NET. Mit dieser Funktion können Sie mehrere Word-Dokumente zusammenfügen und anhängen, während der Inhalt des Quelldokuments zusammen mit dem Inhalt des Zieldokuments bleibt. 
+Im heutigen digitalen Zeitalter ist die programmgesteuerte Bearbeitung von Word-Dokumenten in vielen Branchen unverzichtbar. Aspose.Words für .NET ermöglicht Entwicklern die effiziente Automatisierung von Dokumentenbearbeitungsaufgaben. Diese umfassende Anleitung führt Sie durch den Prozess des Zusammenführens von Dokumenten unter Beibehaltung der Quellformatierung mit Aspose.Words für .NET.
 
 ## Voraussetzungen
 
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+Bevor Sie mit der Dokumentzusammenführung mit Aspose.Words für .NET beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-1. Aspose.Words für .NET installiert. Sie können es von der Aspose-Website herunterladen oder über NuGet installieren.
-2. Visual Studio oder eine andere C#-Entwicklungsumgebung.
+- Visual Studio: Integrierte Entwicklungsumgebung (IDE) für die .NET-Entwicklung.
+- Aspose.Words für .NET: In Ihrer Entwicklungsumgebung installiert und eingerichtet.
+- Vertrautheit mit C#: Grundlegende Kenntnisse der Programmiersprache C#.
 
-## Schritt 1: Initialisieren der Dokumentverzeichnisse
+## Namespaces importieren
 
- Zuerst müssen Sie den Pfad zu Ihrem Dokumentverzeichnis festlegen. Ändern Sie den Wert des`dataDir` Variable für den Pfad, in dem sich Ihre Dokumente befinden.
+Importieren Sie zunächst die erforderlichen Namespaces:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## Schritt 2: Laden Sie die Quell- und Zieldokumente
+## Schritt 1: Dokumente laden
 
-Als nächstes müssen Sie die Quell- und Zieldokumente mit dem Aspose.Words laden`Document` Klasse. Aktualisieren Sie die Dateinamen in der`Document` Konstruktor entsprechend Ihren Dokumentnamen.
+ Laden Sie zunächst die Quell- und Zieldokumente in Aspose.Words`Document` Objekte.
 
 ```csharp
+// Pfad zu Ihrem Dokumentverzeichnis
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+// Quell- und Zieldokumente laden
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Schritt 3: Festlegen, dass das Quelldokument nach dem Inhalt des Zieldokuments angezeigt wird
+## Schritt 2: Abschnittsanfang festlegen
 
- Um sicherzustellen, dass das Quelldokument unmittelbar nach dem Inhalt des Zieldokuments erscheint, müssen Sie die`SectionStart` Eigenschaft des ersten Abschnitts im Quelldokument, um`SectionStart.Continuous`.
+Konfigurieren Sie den Abschnittsanfang, um sicherzustellen, dass der Inhalt des Quelldokuments im Anschluss an das Zieldokument kontinuierlich fließt.
 
 ```csharp
+// Legen Sie fest, dass das Quelldokument direkt nach dem Inhalt des Zieldokuments angezeigt wird.
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Schritt 4: Festlegen der Absatzformatierung „Mit nächstem zusammenhalten“ für das Quelldokument
+## Schritt 3: Absätze zusammenhalten
 
- Um die Absätze im Quelldokument zusammenzuhalten, können Sie jeden Absatz im Dokument durchlaufen und die`KeepWithNext`Eigentum an`true`.
+Um die Formatierungsintegrität beizubehalten, markieren Sie jeden Absatz im Quelldokument, um beim nächsten Absatz zu bleiben.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## Schritt 5: Anhängen des Quelldokuments an das Zieldokument
+## Schritt 4: Dokumente anhängen
 
- Nun können Sie das Quelldokument an das Zieldokument anhängen, indem Sie`AppendDocument` Methode der`Document` Klasse. Die`ImportFormatMode.KeepSourceFormatting` Der Parameter stellt sicher, dass die Quellformatierung während des Anfügevorgangs erhalten bleibt.
+ Fügen Sie die Dokumente mit dem`AppendDocument` Methode, um sicherzustellen, dass die Formatierung des Quelldokuments erhalten bleibt.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Schritt 6: Speichern Sie das endgültige Dokument
+## Schritt 5: Zusammengeführtes Dokument speichern
 
- Speichern Sie das zusammengeführte Dokument abschließend mit der Funktion "Quelle zusammenhalten" über den`Save` Methode der`Document` Klasse.
+Speichern Sie das zusammengeführte Dokument abschließend am gewünschten Speicherort.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### Beispielquellcode für Keep Source Together mit Aspose.Words für .NET 
+## Abschluss
 
-Hier ist der vollständige Quellcode für die Funktion „Quelle zusammenhalten“ in C# unter Verwendung von Aspose.Words für .NET:
+Zusammenfassend lässt sich sagen, dass Aspose.Words für .NET das Zusammenführen von Word-Dokumenten vereinfacht und dabei die ursprüngliche Formatierung nahtlos beibehält. Diese Funktion ist für Anwendungen, die eine automatisierte Dokumentverarbeitung erfordern, von entscheidender Bedeutung.
 
+## Häufig gestellte Fragen
 
-```csharp
-	// Pfad zu Ihrem Dokumentverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Kann Aspose.Words für .NET Dokumente unterschiedlicher Formate zusammenführen?
+Ja, es kann Dokumente unabhängig von ihrem Format zusammenführen und dabei die Quellformatierung beibehalten.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Stellen Sie das Quelldokument so ein, dass es direkt nach dem Inhalt des Zieldokuments angezeigt wird.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### Unterstützt Aspose.Words für .NET das effiziente Zusammenführen großer Dokumente?
+Auf jeden Fall, es verarbeitet große Dokumente mit optimaler Leistung.
 
-Das ist es! Sie haben die Funktion „Quelle zusammenhalten“ erfolgreich mit Aspose.Words für .NET implementiert. Das endgültige Dokument enthält den zusammengeführten Inhalt, wobei die Absätze im Quelldokument zusammengehalten werden.
+### Gibt es eine Testversion für Aspose.Words für .NET?
+ Ja, Sie können eine kostenlose Testversion herunterladen[Hier](https://releases.aspose.com/).
+
+### Wie erhalte ich technischen Support für Aspose.Words für .NET?
+ Technischen Support erhalten Sie über die[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
+
+### Kann ich eine temporäre Lizenz für Aspose.Words für .NET erwerben?
+ Ja, Sie können eine temporäre Lizenz erwerben[Hier](https://purchase.aspose.com/temporary-license/).

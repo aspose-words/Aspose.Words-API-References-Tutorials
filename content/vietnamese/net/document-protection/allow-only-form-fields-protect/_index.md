@@ -2,115 +2,100 @@
 title: Chỉ cho phép bảo vệ các trường biểu mẫu trong tài liệu Word
 linktitle: Chỉ cho phép bảo vệ các trường biểu mẫu trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách sử dụng Aspose.Words cho .NET để bảo vệ trong tài liệu word và chỉ cho phép chỉnh sửa các trường biểu mẫu.
+description: Tìm hiểu cách bảo vệ tài liệu Word, chỉ cho phép chỉnh sửa các trường biểu mẫu bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn của chúng tôi để đảm bảo tài liệu của bạn được an toàn và có thể chỉnh sửa dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/document-protection/allow-only-form-fields-protect/
 ---
-Bảo vệ tài liệu là một tính năng thiết yếu khi Xử lý văn bản với các tệp trong ứng dụng C# của bạn. Với thư viện Aspose.Words dành cho .NET, bạn có thể dễ dàng bảo vệ tài liệu của mình và chỉ cho phép chỉnh sửa các trường biểu mẫu. Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn cách sử dụng mã nguồn C# để chỉ cho phép chỉnh sửa các trường biểu mẫu bằng tính năng Chỉ cho phép bảo vệ trường biểu mẫu của Aspose.Words cho .NET.
+## Giới thiệu
 
-## Bước 1: Thiết lập thư mục tài liệu
+Này! Bạn có bao giờ cần bảo vệ các phần cụ thể của tài liệu Word trong khi vẫn để các phần khác có thể chỉnh sửa được không? Aspose.Words for .NET khiến việc này trở nên cực kỳ dễ dàng. Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách chỉ cho phép bảo vệ trường biểu mẫu trong tài liệu Word. Đến cuối hướng dẫn này, bạn sẽ có hiểu biết vững chắc về bảo vệ tài liệu bằng Aspose.Words cho .NET. Sẵn sàng? Hãy nhảy vào!
 
-Bước đầu tiên là xác định thư mục tài liệu của bạn. Bạn phải chỉ định đường dẫn nơi bạn muốn lưu tài liệu được bảo vệ. Ví dụ :
+## Điều kiện tiên quyết
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Trước khi đi sâu vào phần mã hóa, hãy đảm bảo bạn có mọi thứ mình cần:
 
-Đảm bảo thay thế "THƯ MỤC TÀI LIỆU CỦA BẠN" bằng đường dẫn thực tế đến thư mục tài liệu của bạn.
+1.  Thư viện Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+2. Visual Studio: Mọi phiên bản gần đây đều hoạt động tốt.
+3. Kiến thức cơ bản về C#: Hiểu những điều cơ bản sẽ giúp bạn làm theo hướng dẫn.
 
-## Bước 2: Chèn phần và văn bản
+## Nhập không gian tên
 
-Tiếp theo, bạn cần chèn các phần và văn bản vào tài liệu của mình. Sử dụng lớp DocumentBuilder do Aspose.Words cung cấp để xây dựng nội dung tài liệu của bạn. Đây là một ví dụ đơn giản:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Text added to a document.");
-```
-
-Trong ví dụ này, chúng tôi tạo một tài liệu trống mới và sau đó sử dụng DocumentBuilder để thêm một dòng văn bản.
-
-## Bước 3: Kích hoạt bảo vệ tài liệu
-
- Tính năng bảo vệ tài liệu chỉ hoạt động khi tính năng bảo vệ tài liệu được bật. Bạn có thể kích hoạt tính năng bảo vệ tài liệu bằng cách sử dụng`Protect` phương thức của lớp Document. Đây là cách thực hiện:
+Trước tiên, chúng ta cần nhập các không gian tên cần thiết. Điều này thiết lập môi trường của chúng tôi để sử dụng Aspose.Words.
 
 ```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Trong ví dụ này, chúng tôi kích hoạt bảo vệ tài liệu bằng cách chỉ định loại bảo vệ `
+## Bước 1: Thiết lập dự án của bạn
 
-AllowOnlyFormFields` và đặt mật khẩu.
+Tạo một dự án mới trong Visual Studio  
+Mở Visual Studio và tạo dự án Console App (.NET Core) mới. Đặt tên gì đó có ý nghĩa, chẳng hạn như "AsposeWordsProtection".
 
-## Bước 4: Chỉ cho phép các trường biểu mẫu
+## Bước 2: Cài đặt Aspose.Words cho .NET
 
-Bây giờ tính năng bảo vệ tài liệu đã được bật, chúng tôi cần chỉ định rằng chỉ cho phép chỉnh sửa các trường biểu mẫu. Điều này đảm bảo rằng người dùng chỉ có thể chỉnh sửa các phần của tài liệu là các trường biểu mẫu. Đây là cách thực hiện:
+Cài đặt qua Trình quản lý gói NuGet  
+Nhấp chuột phải vào dự án của bạn trong Solution Explorer, chọn "Quản lý gói NuGet" và tìm kiếm`Aspose.Words`. Cài đặt nó.
 
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
+## Bước 3: Khởi tạo tài liệu
 
-Đảm bảo thay thế "mật khẩu" bằng mật khẩu bạn đã đặt trước đó.
-
-## Bước 5: Lưu tài liệu được bảo vệ
-
- Cuối cùng, bạn có thể lưu tài liệu được bảo vệ bằng cách sử dụng`Save` phương thức của lớp Document. Chỉ định đường dẫn tệp đầy đủ và tên tệp mong muốn. Ví dụ :
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
-```
-
-Đảm bảo thay thế "dataDir" bằng đường dẫn đến thư mục tài liệu của bạn.
-
-### Mã nguồn ví dụ cho tính năng Chỉ cho phép bảo vệ trường biểu mẫu bằng Aspose.Words cho .NET
+Tạo một đối tượng Tài liệu mới  
+Hãy bắt đầu bằng cách tạo một tài liệu mới và trình tạo tài liệu để thêm một số văn bản.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Chèn hai phần với một số văn bản.
+// Khởi tạo một Document và DocumentBuilder mới
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
+```
 
-// Tính năng bảo vệ tài liệu chỉ hoạt động khi tính năng bảo vệ tài liệu được bật và chỉ cho phép chỉnh sửa trong các trường biểu mẫu.
+ Ở đây chúng ta tạo một cái mới`Document`Và`DocumentBuilder` ví dụ. Các`DocumentBuilder` cho phép chúng ta thêm văn bản vào tài liệu của mình.
+
+## Bước 4: Bảo vệ tài liệu
+
+Áp dụng biện pháp bảo vệ chỉ cho phép chỉnh sửa trường biểu mẫu  
+Bây giờ, hãy thêm tính năng bảo vệ vào tài liệu của chúng ta.
+
+```csharp
+// Bảo vệ tài liệu, chỉ cho phép chỉnh sửa các trường biểu mẫu
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
 
-// Lưu tài liệu được bảo vệ.
+Dòng mã này bảo vệ tài liệu và chỉ cho phép chỉnh sửa các trường biểu mẫu. Mật khẩu "mật khẩu" được sử dụng để thực thi việc bảo vệ.
+
+## Bước 5: Lưu tài liệu
+
+Lưu tài liệu được bảo vệ  
+Cuối cùng, hãy lưu tài liệu của chúng ta vào thư mục đã chỉ định.
+
+```csharp
+// Lưu tài liệu được bảo vệ
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
+Điều này sẽ lưu tài liệu với sự bảo vệ được áp dụng.
+
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã khám phá cách sử dụng thư viện Aspose.Words cho .NET để bảo vệ tài liệu và chỉ cho phép chỉnh sửa các trường biểu mẫu. Bằng cách làm theo các bước được cung cấp, bạn có thể dễ dàng triển khai chức năng này trong ứng dụng C# của mình. Bảo vệ tài liệu là điều cần thiết để đảm bảo tính an toàn và bảo mật cho tài liệu của bạn.
+Và bạn có nó rồi đấy! Bạn vừa học cách bảo vệ tài liệu Word để chỉ có thể chỉnh sửa các trường biểu mẫu bằng Aspose.Words cho .NET. Đây là một tính năng hữu ích khi bạn cần đảm bảo rằng một số phần nhất định trong tài liệu của bạn không thay đổi trong khi cho phép điền vào các trường cụ thể.
 
-### Câu hỏi thường gặp về chỉ cho phép bảo vệ các trường biểu mẫu trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Bảo vệ tài liệu trong Aspose.Words dành cho .NET là gì?
+###	 Làm cách nào để xóa tính năng bảo vệ khỏi tài liệu?  
+ Để loại bỏ sự bảo vệ, hãy sử dụng`doc.Unprotect("password")` phương thức, trong đó "mật khẩu" là mật khẩu được sử dụng để bảo vệ tài liệu.
 
-Trả lời: Bảo vệ tài liệu trong Aspose.Words for .NET là một tính năng cho phép bạn bảo mật tài liệu của mình bằng cách hạn chế một số hành động nhất định, chẳng hạn như chỉnh sửa, định dạng hoặc sửa đổi nội dung. Nó giúp duy trì tính toàn vẹn và bảo mật của tài liệu của bạn bằng cách ngăn chặn những thay đổi trái phép.
+###	 Tôi có thể áp dụng các loại bảo vệ khác nhau bằng Aspose.Words cho .NET không?  
+ Có, Aspose.Words hỗ trợ nhiều loại bảo vệ khác nhau như`ReadOnly`, `NoProtection` , Và`AllowOnlyRevisions`.
 
-#### Câu hỏi: Làm cách nào tôi có thể bảo vệ tài liệu và chỉ cho phép chỉnh sửa các trường biểu mẫu bằng Aspose.Words cho .NET?
+###	 Có thể sử dụng mật khẩu khác cho các phần khác nhau không?  
+Không, tính năng bảo vệ cấp tài liệu trong Aspose.Words áp dụng cho toàn bộ tài liệu. Bạn không thể gán các mật khẩu khác nhau cho các phần khác nhau.
 
-Trả lời: Để bảo vệ tài liệu và chỉ cho phép chỉnh sửa các trường biểu mẫu bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
-1. Xác định đường dẫn thư mục cho tài liệu của bạn.
-2.  Chèn các phần và văn bản vào tài liệu của bạn bằng cách sử dụng`DocumentBuilder` lớp học.
-3.  Bật tính năng bảo vệ tài liệu bằng cách sử dụng`Protect` phương pháp của`Document` lớp, chỉ định loại bảo vệ là`AllowOnlyFormFields` và cung cấp mật khẩu.
-4.  Lưu tài liệu được bảo vệ bằng cách sử dụng`Save` phương pháp của`Document` lớp học.
+###	 Điều gì xảy ra nếu sử dụng sai mật khẩu?  
+Nếu sử dụng mật khẩu không chính xác, tài liệu sẽ vẫn được bảo vệ và những thay đổi đã chỉ định sẽ không được áp dụng.
 
-#### Câu hỏi: Tôi có thể chèn các trường biểu mẫu vào tài liệu được bảo vệ bằng Aspose.Words cho .NET không?
-
-Trả lời: Có, bạn có thể chèn các trường biểu mẫu vào tài liệu được bảo vệ bằng Aspose.Words for .NET. Việc bảo vệ tài liệu bằng`AllowOnlyFormFields` type cho phép người dùng chỉ chỉnh sửa các trường biểu mẫu trong khi bảo vệ phần còn lại của nội dung tài liệu. Bạn có thể dùng`DocumentBuilder` class để chèn các trường biểu mẫu vào tài liệu trước khi kích hoạt tính năng bảo vệ.
-
-#### Câu hỏi: Tôi có thể xóa tính năng bảo vệ tài liệu khỏi tài liệu được bảo vệ không?
-
- Trả lời: Có, bạn có thể xóa tính năng bảo vệ tài liệu khỏi tài liệu được bảo vệ bằng Aspose.Words for .NET. Để loại bỏ sự bảo vệ, bạn có thể sử dụng`Unprotect` phương pháp của`Document` lớp và cung cấp mật khẩu chính xác. Điều này sẽ loại bỏ sự bảo vệ và cho phép chỉnh sửa tài liệu không hạn chế.
-
-#### Câu hỏi: Có thể bảo vệ một tài liệu bằng nhiều loại bảo vệ không?
-
- Đáp: Không, Aspose.Words for .NET chỉ cho phép áp dụng một loại bảo vệ cho một tài liệu tại một thời điểm. Tuy nhiên,`AllowOnlyFormFields` loại bảo vệ có thể hạn chế hiệu quả việc chỉnh sửa các trường biểu mẫu trong khi cho phép các loại bảo vệ khác, chẳng hạn như`AllowOnlyComments` hoặc`AllowOnlyRevisions`được kết hợp với bảo vệ trường biểu mẫu.
-
-#### Câu hỏi: Tôi có thể đặt các mật khẩu khác nhau cho các loại bảo vệ khác nhau trong một tài liệu không?
-
-Trả lời: Không, Aspose.Words for .NET cho phép bạn đặt một mật khẩu duy nhất để bảo vệ tài liệu, bất kể loại bảo vệ. Mật khẩu tương tự sẽ được sử dụng để bật và tắt tính năng bảo vệ tài liệu.
+###	 Tôi có thể kiểm tra theo chương trình xem tài liệu có được bảo vệ không?  
+ Có, bạn có thể sử dụng`doc.ProtectionType` property để kiểm tra trạng thái bảo vệ của tài liệu.

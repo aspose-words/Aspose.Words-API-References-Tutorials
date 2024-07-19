@@ -9,7 +9,7 @@ url: /es/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
 ## Introducción
 
-¡Hola! ¿Alguna vez se encontró enterrado en un documento de Word, tratando de descubrir cómo navegar a un campo de combinación específico? Es como estar en un laberinto sin mapa, ¿verdad? Bueno, ¡no te preocupes más! Con Aspose.Words para .NET, puede pasar sin problemas a un campo de combinación en su documento. Ya sea que esté generando informes, creando cartas personalizadas o simplemente automatizando sus documentos de Word, esta guía lo guiará a través de todo el proceso, paso a paso. ¡Vamos a sumergirnos!
+¡Hola! ¿Alguna vez te encontraste enterrado en un documento de Word, tratando de descubrir cómo navegar a un campo de combinación específico? Es como estar en un laberinto sin mapa, ¿verdad? Bueno, ¡no te preocupes más! Con Aspose.Words para .NET, puede pasar sin problemas a un campo de combinación en su documento. Ya sea que esté generando informes, creando cartas personalizadas o simplemente automatizando sus documentos de Word, esta guía lo guiará a través de todo el proceso, paso a paso. ¡Vamos a sumergirnos!
 
 ## Requisitos previos
 

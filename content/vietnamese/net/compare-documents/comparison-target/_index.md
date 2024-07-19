@@ -2,7 +2,7 @@
 title: Mục tiêu so sánh trong tài liệu Word
 linktitle: Mục tiêu so sánh trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Dễ dàng so sánh các tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Tiết kiệm thời gian và nâng cao độ chính xác trong việc so sánh tài liệu.
+description: Dễ dàng so sánh các tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. Tiết kiệm thời gian và nâng cao độ chính xác trong việc so sánh tài liệu.
 type: docs
 weight: 10
 url: /vi/net/compare-documents/comparison-target/
@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Bước 3: Tải tài liệu của bạn
 
-Được rồi, đã đến lúc tải tài liệu bạn muốn so sánh. Bạn sẽ cần đường dẫn đến những tài liệu này. Giả sử bạn có hai tài liệu:`DocumentA.docx` Và`DocumentB.docx`.
+Được rồi, đã đến lúc tải tài liệu bạn muốn so sánh. Bạn sẽ cần đường dẫn đến những tài liệu này. Giả sử bạn có hai tài liệu:`DocumentA.docx`Và`DocumentB.docx`.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.

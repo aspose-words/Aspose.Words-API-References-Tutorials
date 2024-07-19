@@ -18,25 +18,25 @@ url: /zh-hant/net/join-and-append-documents/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [簡單追加文檔](./simple-append-document/) | 了解如何使用 Aspose.Words for .NET 連線和附加保留格式的 Word 文件。 |
+| [簡單追加文檔](./simple-append-document/) | 在這份全面的逐步指南中了解如何使用 Aspose.Words for .NET 將一個 Word 文件附加到另一個文件。 |
 | [附加文檔](./append-document/) | 了解如何使用 Aspose.Words for .NET 將一個文件的內容附加到另一個文件。 |
-| [將文件附加到空白](./append-document-to-blank/) | 了解如何將文件附加到 Aspose.Words for .NET 中的空白目標文件。 |
-| [新增導入格式選項](./append-with-import-format-options/) | 了解如何使用 Aspose.Words for .NET 附加具有匯入格式選項的文件。 |
-| [不同的頁面設定](./different-page-setup/) | 了解如何使用 Aspose.Words for .NET 附加具有不同頁面設定設定的文件。 |
-| [加入持續](./join-continuous/) | 了解如何使用 Aspose.Words for .NET 連續連接兩個文檔，同時保留格式。 |
-| [加入新頁面](./join-new-page/) | 了解如何使用 Aspose.Words for .NET 在新頁面上合併兩個文檔，同時保留格式。 |
-| [保持來源格式](./keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 將來源文檔附加到目標文檔，同時保留原始格式。 |
-| [將原始碼放在一起](./keep-source-together/) | 了解如何使用 Aspose.Words for .NET 加入和附加 Word 文檔，同時將來源內容與目標文檔保留在一起。 |
-| [清單保留來源格式](./list-keep-source-formatting/) | 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文件時保留清單格式。 |
-| [列出使用目標樣式](./list-use-destination-styles/) | 了解如何使用 Aspose.Words for .NET 合併和追加 Word 文檔，同時保留目標文檔的清單樣式。 |
+| [將文件附加到空白](./append-document-to-blank/) | 了解如何使用 Aspose.Words for .NET 將文件無縫附加到空白文件。包括逐步指南、程式碼片段和常見問題。 |
+| [新增導入格式選項](./append-with-import-format-options/) | 使用 Aspose.Words for .NET 輕鬆附加 Word 文檔，透過詳細的逐步指導維護格式。 |
+| [不同的頁面設定](./different-page-setup/) | 了解如何在使用 Aspose.Words for .NET 合併 Word 文件時設定不同的頁面配置。包括逐步指南。 |
+| [加入持續](./join-continuous/) | 了解如何使用 Aspose.Words for .NET 無縫連接兩個 Word 文件。請依照我們的逐步指南進行順利、有效率的文件合併。 |
+| [加入新頁面](./join-new-page/) | 了解如何使用 Aspose.Words for .NET 在 Word 中加入和追加文件。請按照我們的逐步指南進行高效率的文檔合併。 |
+| [保持來源格式](./keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保留格式。非常適合希望自動化文件組裝任務的開發人員。 |
+| [將原始碼放在一起](./keep-source-together/) | 了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保留格式。這份綜合指南涵蓋了從設定到執行的所有內容。 |
+| [清單保留來源格式](./list-keep-source-formatting/) | 了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時保留格式。本教學提供無縫文件合併的逐步指導。 |
+| [列出使用目標樣式](./list-use-destination-styles/) | 了解如何使用 Aspose.Words for .NET 合併 Word 文件而不遺失清單格式。保持文檔樣式完整的分步指南。 |
 | [重新開始頁碼編號](./restart-page-numbering/) | 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文件時重新開始頁碼編號。 |
-| [更新頁面佈局](./update-page-layout/) | 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文件時更新頁面佈局。 |
-| [使用目標樣式](./use-destination-styles/) | 了解如何使用 Aspose.Words for .NET 套用目標文件樣式時加入和追加 Word 文件。 |
-| [聰明的風格行為](./smart-style-behavior/) | 了解如何在使用 Aspose.Words for .NET 加入和附加 Word 文件時保持智慧樣式行為。 |
-| [使用生成器插入文檔](./insert-document-with-builder/) | 了解如何使用 Aspose.Words for .NET 在另一個文件的末尾插入一個文件。 |
-| [保留源編號](./keep-source-numbering/) | 了解如何在 Aspose.Words for .NET 中附加文檔，同時保留來源編號格式。 |
-| [忽略文字框](./ignore-text-boxes/) | 了解如何使用 Aspose.Words for .NET 附加文檔，同時忽略文字方塊格式。 |
-| [忽略頁首頁尾](./ignore-header-footer/) | 了解如何使用 Aspose.Words for .NET 附加文檔，同時忽略頁首和頁尾內容。 |
-| [連結頁眉頁腳](./link-headers-footers/) | 了解如何使用 Aspose.Words for .NET 連接和附加 Word 文件時連結頁首和頁尾。 |
-| [刪除來源頁首頁腳](./remove-source-headers-footers/) | 了解如何使用 Aspose.Words for .NET 加入和附加 Word 文件時刪除頁首和頁尾。 |
-| [取消連結頁眉頁腳](./unlink-headers-footers/) | 了解如何使用 Aspose.Words for .NET 合併和追加 Word 文件，同時取消頁首和頁尾的連結。 |
+| [更新頁面佈局](./update-page-layout/) | 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 更新 Word 文件中的頁面佈局。非常適合調整文件設計。 |
+| [使用目標樣式](./use-destination-styles/) | 了解如何透過 Aspose.Words for .NET 使用目標樣式來無縫附加文檔，同時保持格式一致。 |
+| [聰明的風格行為](./smart-style-behavior/) | 了解如何將 Word 文件與 Aspose.Words for .NET 無縫合併，保留樣式並確保專業的結果。 |
+| [使用生成器插入文檔](./insert-document-with-builder/) | 了解如何使用 Aspose.Words for .NET 合併兩個 Word 文件。使用 DocumentBuilder 插入文件並保留格式的逐步指南。 |
+| [保留源編號](./keep-source-numbering/) | 了解如何使用 Aspose.Words for .NET 匯入文檔，同時保留格式。帶有程式碼範例的分步指南。 |
+| [忽略文字框](./ignore-text-boxes/) | 將 Word 文件與 Aspose.Words for .NET 合併，確保保留文字方塊格式。請按照此逐步指南進行無縫文件處理。 |
+| [忽略頁首頁尾](./ignore-header-footer/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 合併 Word 文檔，同時忽略頁首和頁尾。 |
+| [連結頁眉頁腳](./link-headers-footers/) | 了解如何在 Aspose.Words for .NET 中的文件之間連結頁首和頁尾。輕鬆確保一致性和格式完整性。 |
+| [刪除來源頁首頁腳](./remove-source-headers-footers/) | 了解如何使用 Aspose.Words for .NET 刪除 Word 文件中的頁首和頁尾。透過我們的逐步指南簡化您的文件管理。 |
+| [取消連結頁眉頁腳](./unlink-headers-footers/) | 了解如何使用 Aspose.Words for .NET 取消連結 Word 文件中的頁首和頁尾。請按照我們詳細的逐步指南來掌握文件操作。 |

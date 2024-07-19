@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Adım 2: Geçerli Bölüme Erişin
 
-Geçerli bölümü kullanarak alıyoruz`builder.CurrentSection`. Bu bölüm, önceki bölümdeki üstbilgileri ve altbilgileri kopyalayacağımız hedef olacaktır.
+ Geçerli bölümü kullanarak alıyoruz`builder.CurrentSection`Bu bölüm, önceki bölümdeki üstbilgileri ve altbilgileri kopyalayacağımız hedef olacaktır.
 
 ### Adım 3: Önceki Bölümü Tanımlayın
 

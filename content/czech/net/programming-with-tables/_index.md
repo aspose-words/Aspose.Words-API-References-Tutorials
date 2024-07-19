@@ -32,8 +32,8 @@ Dodržováním těchto výukových programů budete moci plně využívat funkce
 | [Horizontální sloučení](./horizontal-merge/) | Naučte se, jak horizontálně sloučit buňky v tabulce aplikace Word pomocí Aspose.Words for .NET. |
 | [Převést na vodorovně sloučené buňky](./convert-to-horizontally-merged-cells/) | Naučte se, jak převést buňky tabulky na vodorovně sloučené buňky v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
 | [Opakujte řádky na následujících stránkách](./repeat-rows-on-subsequent-pages/) | Naučte se opakovat řádky tabulky na následujících stránkách v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Automaticky přizpůsobit šířce stránky](./auto-fit-to-page-width/) | Naučte se, jak automaticky přizpůsobit tabulku šířce stránky v dokumentu Word pomocí Aspose.Words for .NET. |
-| [Nastavení preferované šířky](./preferred-width-settings/) | Naučte se, jak nastavit preferované šířky buněk tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Automaticky Přizpůsobit Oknu](./auto-fit-to-page-width/) | Pomocí tohoto podrobného průvodce můžete snadno automaticky přizpůsobit tabulky oknu v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ideální pro čistší, profesionální dokumenty. |
+| [Nastavení preferované šířky](./preferred-width-settings/) | Naučte se vytvářet tabulky s absolutním, relativním a automatickým nastavením šířky v Aspose.Words for .NET pomocí tohoto podrobného průvodce. |
 | [Načíst preferovaný typ šířky](./retrieve-preferred-width-type/) | Naučte se, jak načíst typ a preferovanou hodnotu šířky buňky v tabulce aplikace Word pomocí Aspose.Words for .NET. |
 | [Získejte pozici stolu](./get-table-position/) | Naučte se, jak získat pozici tabulky v dokumentu Word pomocí Aspose.Words pro .NET. |
 | [Získejte pozici plovoucího stolu](./get-floating-table-position/) | Naučte se, jak získat pozici plovoucích tabulek v dokumentu aplikace Word pomocí Aspose.Words pro .NET. |

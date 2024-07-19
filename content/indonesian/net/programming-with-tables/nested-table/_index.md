@@ -82,7 +82,7 @@ Pastikan untuk menentukan jalur dan nama file yang benar untuk dokumen keluaran.
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Panggilan ini penting untuk membuat tabel bersarang di dalam tabel pertama.
-	// Tanpa panggilan ini, sel yang disisipkan di bawah akan ditambahkan ke tabel luar.
+	//Tanpa panggilan ini, sel yang disisipkan di bawah akan ditambahkan ke tabel luar.
 	builder.EndTable();
 	// Pindah ke sel pertama tabel luar.
 	builder.MoveTo(cell.FirstParagraph);

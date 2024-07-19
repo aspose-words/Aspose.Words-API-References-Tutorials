@@ -77,7 +77,7 @@ dstDoc.Save(dataDir + "AppendedDocument.docx");
 
 ## 結論
 
-現在你就擁有了！您已成功學習如何使用 Aspose.Words for .NET 將一個 Word 文件附加到另一個文件。本教學介紹了設定環境、載入文件、將一個文件附加到另一個文件並同時保留來源格式以及保存組合文件。 Aspose.Words 提供了廣泛的功能，因此請務必探索[API文件](https://reference.aspose.com/words/net/)釋放其全部潛力。
+現在你就得到它了！您已成功學習如何使用 Aspose.Words for .NET 將一個 Word 文件附加到另一個文件。本教學介紹了設定環境、載入文件、將一個文件附加到另一個文件並同時保留來源格式以及保存組合文件。 Aspose.Words 提供了廣泛的功能，因此請務必探索[API文件](https://reference.aspose.com/words/net/)釋放其全部潛力。
 
 ## 常見問題解答
 
@@ -87,7 +87,7 @@ Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員以�
 
 ### 2. 我可以免費使用Aspose.Words for .NET嗎？
 
-您可以使用 Aspose.Words for .NET 嘗試[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
+您可以嘗試使用 Aspose.Words for .NET[免費試用](https://releases.aspose.com/)。如需長期使用，您需要購買授權。
 
 ### 3. 如何確保附加文件時保留格式？
 

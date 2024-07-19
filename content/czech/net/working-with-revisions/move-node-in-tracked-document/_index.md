@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### Otázka: Jak mohu přesunout uzel ve sledovaném dokumentu bez generování revizí?
 
- Odpověď: Pokud chcete přesunout uzel ve sledovaném dokumentu bez generování revizí, můžete použít`Remove` a`InsertAfter` nebo`InsertBefore` metody`Node` objekt. Chcete-li například přesunout odstavec za jiným odstavcem, můžete použít následující kód:
+ Odpověď: Pokud chcete přesunout uzel ve sledovaném dokumentu bez generování revizí, můžete použít`Remove`a`InsertAfter` nebo`InsertBefore` metody`Node` objekt. Chcete-li například přesunout odstavec za jiným odstavcem, můžete použít následující kód:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

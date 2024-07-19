@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Passaggio 2: applica lo stile di testo barrato
 
-Abiliteremo lo stile del testo barrato impostando il file`StrikeThrough` proprietà del`Font` opporsi a`true`.
+ Abiliteremo lo stile del testo barrato impostando il file`StrikeThrough` proprietà del`Font` opporsi a`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

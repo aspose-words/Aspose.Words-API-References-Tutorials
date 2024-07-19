@@ -41,7 +41,7 @@ options.setSemitransparent(false);
 // Defina o texto e as opções da marca d'água
 doc.getWatermark().setText("Test", options);
 
-// Salve o documento com a marca d’água
+// Salve o documento com a marca d'água
 doc.save("DocumentWithWatermark.docx");
 ```
 
@@ -64,14 +64,14 @@ watermark.setHeight(100.0);
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.CENTER);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.CENTER);
 
-// Adicione a marca d’água ao documento
+// Adicione a marca d'água ao documento
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
-// Salve o documento com a marca d’água
+// Salve o documento com a marca d'água
 doc.save("DocumentWithImageWatermark.docx");
 ```
 
-## Personalizando marcas d’água
+## Personalizando marcas d'água
 
 Você pode personalizar marcas d'água ajustando sua aparência e posição. Para marcas d'água de texto, você pode alterar a fonte, o tamanho, a cor e o layout. Para marcas d'água de imagens, você pode modificar seu tamanho e posição conforme demonstrado nos exemplos anteriores.
 

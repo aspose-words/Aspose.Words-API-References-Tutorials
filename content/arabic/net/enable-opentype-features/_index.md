@@ -12,4 +12,4 @@ url: /ar/net/enable-opentype-features/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [فتح ميزات النوع](./open-type-features/) | تعرف على كيفية تمكين ميزات Open Type واستخدامها في Aspose.Words لـ .NET |
+| [فتح ميزات النوع](./open-type-features/) | تعرف على كيفية تمكين ميزات OpenType في مستندات Word باستخدام Aspose.Words لـ .NET من خلال هذا الدليل المفصل خطوة بخطوة. |

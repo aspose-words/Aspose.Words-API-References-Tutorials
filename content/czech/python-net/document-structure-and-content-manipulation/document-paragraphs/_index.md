@@ -171,7 +171,7 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## Závěr
 
-této komplexní příručce jsme prozkoumali možnosti Aspose.Words pro Python při formátování odstavců a textu v dokumentech Word. Pomocí této výkonné knihovny mohou vývojáři bezproblémově automatizovat formátování dokumentů a zajistit profesionální a uhlazený vzhled jejich obsahu.
+této komplexní příručce jsme prozkoumali možnosti Aspose.Words pro Python při formátování odstavců a textu v dokumentech Word. Pomocí této výkonné knihovny mohou vývojáři bezproblémově automatizovat formátování dokumentů a zajistit tak jejich obsahu profesionální a uhlazený vzhled.
 
 ---
 

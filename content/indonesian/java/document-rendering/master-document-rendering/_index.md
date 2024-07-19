@@ -12,7 +12,7 @@ Dalam tutorial langkah demi langkah yang komprehensif ini, kita akan mempelajari
 
 ## Pengantar Rendering Dokumen
 
-Rendering dokumen adalah proses mengubah dokumen elektronik menjadi representasi visual untuk dilihat, diedit, atau dicetak oleh pengguna. Ini melibatkan penerjemahan konten, tata letak, dan pemformatan dokumen ke dalam format yang sesuai, seperti PDF, XPS, atau gambar, sambil mempertahankan struktur dan tampilan asli dokumen. Dalam konteks pengembangan Java, Aspose.Words adalah pustaka canggih yang memungkinkan Anda bekerja dengan berbagai format dokumen dan merendernya dengan lancar untuk pengguna.
+Render dokumen adalah proses mengubah dokumen elektronik menjadi representasi visual untuk dilihat, diedit, atau dicetak oleh pengguna. Ini melibatkan penerjemahan konten, tata letak, dan pemformatan dokumen ke dalam format yang sesuai, seperti PDF, XPS, atau gambar, sambil mempertahankan struktur dan tampilan asli dokumen. Dalam konteks pengembangan Java, Aspose.Words adalah pustaka canggih yang memungkinkan Anda bekerja dengan berbagai format dokumen dan merendernya dengan lancar untuk pengguna.
 
 Render dokumen adalah bagian penting dari aplikasi modern yang menangani beragam dokumen. Baik Anda membuat editor dokumen berbasis web, sistem manajemen dokumen, atau alat pelaporan, menguasai rendering dokumen akan meningkatkan pengalaman pengguna dan menyederhanakan proses yang berpusat pada dokumen.
 
@@ -22,7 +22,7 @@ Sebelum kita mempelajari rendering dokumen, mari kita mulai dengan Aspose.Words 
 
 ### Instalasi dan Pengaturan
 
-Untuk menggunakan Aspose.Words untuk Java, Anda perlu menyertakan file JAR Aspose.Words di proyek Java Anda. Anda dapat mengunduh JAR dari Aspose Releases(https://releases.aspose.com/words/java/) dan menambahkannya ke classpath proyek Anda.
+Untuk menggunakan Aspose.Words untuk Java, Anda perlu menyertakan file JAR Aspose.Words dalam proyek Java Anda. Anda dapat mengunduh JAR dari Aspose Releases(https://releases.aspose.com/words/java/) dan menambahkannya ke classpath proyek Anda.
 
 ### Lisensi Aspose.Words untuk Java
 
@@ -160,7 +160,7 @@ doc.setFontSettings(fontSettings);
 Saat merender dokumen ke format gambar, Anda dapat mengontrol kualitas gambar untuk mengoptimalkan ukuran dan kejelasan file.
 
 ```java
-// Atur opsi gambar
+// Tetapkan opsi gambar
 ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.PNG);
 imageOptions.setResolution(300);
 imageOptions.setPrettyFormat(true);

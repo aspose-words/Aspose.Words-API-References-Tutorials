@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ステップ2: 差し込みフィールドを挿入する
 
-次に、マージフィールドを挿入しましょう。これは、データがマージされる場所にドキュメント内のマーカーを配置すると考えてください。
+次に、結合フィールドを挿入しましょう。これは、データが結合される場所にドキュメント内のマーカーを配置すると考えてください。
 
 ```csharp
 Field field = builder.InsertField("MERGEFIELD field");

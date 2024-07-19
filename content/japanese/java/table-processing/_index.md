@@ -20,13 +20,13 @@ Aspose.Words for Java テーブル処理チュートリアルでは、基本的�
 * 詳細なチュートリアルとドキュメント
 * 使いやすいAPI
 * 幅広いドキュメント形式をサポート
-* 高いパフォーマンスと拡張性
+* 高いパフォーマンスとスケーラビリティ
 
 
 ## テーブル処理チュートリアル
 
 ### [Word に表を追加する](./add-table-in-word/)
-Aspose.Words for Java を使用して Word に表を追加する方法を学びます。Word 文書で適切にフォーマットされた表を簡単に生成します。
+Aspose.Words for Java を使用して Word に表を追加する方法を学習します。Word 文書で適切にフォーマットされた表を簡単に生成します。
 ### [データテーブルからテーブルを生成する](./generate-table-from-datatable/)
 Aspose.Words for Java を使用して DataTable からテーブルを生成する方法を学びます。フォーマットされたテーブルを含むプロフェッショナルな Word 文書を簡単に作成します。 
 ### [ドキュメント内の表とレイアウトの管理](./managing-tables-layouts/)

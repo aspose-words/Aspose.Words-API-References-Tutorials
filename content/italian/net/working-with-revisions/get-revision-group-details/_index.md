@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### D: Come posso ottenere i dettagli di un gruppo di revisione in Aspose.Words per .NET?
 
-R: Passa attraverso le revisioni del documento utilizzando un loop e accedi alle proprietà di ciascuna revisione per ottenere i dettagli desiderati. Puoi usare il`RevisionType`, `Author`, `DateTime` E`ParentNode` proprietà per ottenere rispettivamente il tipo di revisione, l'autore, la data e il testo rivisto.
+R: Passa attraverso le revisioni del documento utilizzando un loop e accedi alle proprietà di ciascuna revisione per ottenere i dettagli desiderati. Puoi usare il`RevisionType`, `Author`, `DateTime`E`ParentNode` proprietà per ottenere rispettivamente il tipo di revisione, l'autore, la data e il testo rivisto.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

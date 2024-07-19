@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- In questo passaggio accediamo al primo paragrafo del documento utilizzando il file`FirstSection` E`Body` proprietà. Successivamente, accediamo al file`ParagraphFormat.Bidi` proprietà per ottenere la direzione del testo del paragrafo. Quindi visualizziamo questo valore nella console.
+ In questo passaggio accediamo al primo paragrafo del documento utilizzando il file`FirstSection`E`Body` proprietà. Successivamente, accediamo al file`ParagraphFormat.Bidi` proprietà per ottenere la direzione del testo del paragrafo. Quindi visualizziamo questo valore nella console.
 
 ## Passaggio 5: salva il documento
 

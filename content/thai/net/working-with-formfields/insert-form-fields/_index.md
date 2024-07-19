@@ -14,7 +14,7 @@ url: /th/net/working-with-formfields/insert-form-fields/
 
 ## ขั้นตอนที่ 1: การเริ่มต้นเอกสารและออบเจ็กต์ DocumentBuilder
 
- ขั้นแรกให้เริ่มต้น`Document` และ`DocumentBuilder` วัตถุ:
+ ขั้นแรกให้เริ่มต้น`Document`และ`DocumentBuilder` วัตถุ:
 
 ```csharp
 Document doc = new Document();

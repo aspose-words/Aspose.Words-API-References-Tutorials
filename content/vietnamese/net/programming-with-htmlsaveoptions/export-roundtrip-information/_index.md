@@ -33,7 +33,7 @@ Bây giờ chúng ta sẽ định cấu hình các tùy chọn lưu HTML để x
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Mã này tạo ra một thể hiện của`HtmlSaveOptions`và thiết lập`ExportRoundtripInformation` tùy chọn để`true` để bao gồm thông tin khứ hồi khi xuất.
+ Mã này tạo ra một thể hiện của`HtmlSaveOptions` và thiết lập`ExportRoundtripInformation` tùy chọn để`true` để bao gồm thông tin khứ hồi khi xuất.
 
 ## Bước 4: Chuyển đổi và lưu tài liệu sang HTML
 

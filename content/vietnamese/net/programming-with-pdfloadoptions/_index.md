@@ -11,7 +11,7 @@ Hướng dẫn Aspose.Words for .NET về Xử lý từ bằng PDFLoadOptions l�
 
 Trong các hướng dẫn này, bạn sẽ tìm hiểu cách tải tệp PDF chỉ định các tùy chọn như độ phân giải, chất lượng hình ảnh, phông chữ bị thiếu, bố cục phức tạp và nhiều tùy chọn khác. Bạn sẽ tìm hiểu cách xử lý các cảnh báo tải PDF và cách thao tác với tài liệu PDF bằng các tính năng mạnh mẽ của Aspose.Words dành cho .NET.
 
-Với những hướng dẫn này, bạn sẽ có thể tối ưu hóa quy trình tải tệp PDF vào ứng dụng của mình, đảm bảo khả năng tương thích tối đa với các loại tài liệu PDF khác nhau và cung cấp trải nghiệm người dùng liền mạch khi Xử lý văn bản với tệp PDF tại Aspose.Words Help for .NET .
+Với những hướng dẫn này, bạn sẽ có thể tối ưu hóa quy trình tải tệp PDF vào ứng dụng của mình, đảm bảo khả năng tương thích tối đa với các loại tài liệu PDF khác nhau và cung cấp trải nghiệm người dùng liền mạch khi Xử lý văn bản bằng tệp PDF tại Aspose.Words Help for .NET .
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |

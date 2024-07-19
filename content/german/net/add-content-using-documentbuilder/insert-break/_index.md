@@ -84,7 +84,7 @@ builder.Writeln("This is page 2.");
 
 ## Schritt 7: Einen weiteren Seitenumbruch einfügen
 
-Fügen wir einen weiteren Seitenumbruch ein, um zur dritten Seite zu wechseln.
+Fügen wir einen weiteren Seitenumbruch ein, um zur dritten Seite zu gelangen.
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);

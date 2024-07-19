@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // แทรกฟิลด์ IF ลงในเอกสาร
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//ประเมินเงื่อนไข IF
+// ประเมินเงื่อนไข IF
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // แสดงผลการประเมิน

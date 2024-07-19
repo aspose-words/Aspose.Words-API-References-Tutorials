@@ -51,8 +51,8 @@ builder.InsertHyperlink("Aspose", "https://www.aspose.com", 偽);
 
 #### Q: Aspose.Words でリンクの表示テキストをカスタマイズするにはどうすればよいですか?
 
-A: Aspose.Wordsでリンクの表示テキストをカスタマイズするには、`<a>`タグ。例えば、`<a href="https://www.aspose.com">Click here</a>` 「ここをクリック」というテキストがハイパーリンクとして表示されます。
+ A: Aspose.Wordsでリンクの表示テキストをカスタマイズするには、`<a>`タグ。例えば、`<a href="https://www.aspose.com">Click here</a>` 「ここをクリック」というテキストがハイパーリンクとして表示されます。
 
 #### Q: Aspose.Words でリンクのターゲットを指定できますか?
 
- A: はい、Aspose.Wordsでは、`target`の属性`<a>`タグ。例えば、`<a href="https://www.aspose.com" target="_blank">Open in new window</a>`リンクは新しいウィンドウまたはタブで開きます。
+A: はい、Aspose.Wordsでは、`target`の属性`<a>`タグ。例えば、`<a href="https://www.aspose.com" target="_blank">Open in new window</a>`リンクは新しいウィンドウまたはタブで開きます。

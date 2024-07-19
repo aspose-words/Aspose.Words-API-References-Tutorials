@@ -14,10 +14,10 @@ Dengan tutorial ini, Anda akan dapat menguasai fitur tanda tangan digital Aspose
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Tanda tangani Dokumen Word](./sign-document/) | Pelajari cara menandatangani dokumen Word secara digital dengan Aspose.Words untuk .NET. |
-| [Menandatangani Dokumen Word Terenkripsi](./signing-encrypted-document/) | Pelajari cara menandatangani dokumen kata terenkripsi secara digital dengan Aspose.Words untuk .NET. |
-| [Membuat Dan Menandatangani Baris Tanda Tangan Baru](./creating-and-signing-new-signature-line/) | Pelajari cara membuat dan menandatangani baris tanda tangan baru di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Menandatangani Baris Tanda Tangan yang Ada Di Dokumen Word](./signing-existing-signature-line/) | Pelajari cara menandatangani baris tanda tangan yang ada di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Tetapkan Id Penyedia Tanda Tangan Di Dokumen Word](./set-signature-provider-id/) | Pelajari cara mengatur ID penyedia tanda tangan di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Buat Baris Tanda Tangan Baru Dan Tetapkan Id Penyedia](./create-new-signature-line-and-set-provider-id/) | Pelajari cara membuat baris tanda tangan baru dan mengatur ID penyedia di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Akses Dan Verifikasi Tanda Tangan Di Dokumen Word](./access-and-verify-signature/) | Pelajari cara mengakses dan memverifikasi tanda tangan digital di dokumen Word dengan Aspose.Words untuk .NET. |
+| [Tanda tangani Dokumen Word](./sign-document/) | Pelajari cara menandatangani dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Amankan dokumen Anda dengan mudah. |
+| [Menandatangani Dokumen Word Terenkripsi](./signing-encrypted-document/) | Pelajari cara menandatangani dokumen Word terenkripsi menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Sempurna untuk pengembang. |
+| [Membuat Dan Menandatangani Baris Tanda Tangan Baru](./creating-and-signing-new-signature-line/) | Pelajari cara membuat dan menandatangani baris tanda tangan secara digital di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah ini. Sempurna untuk otomatisasi dokumen. |
+| [Menandatangani Baris Tanda Tangan yang Ada Di Dokumen Word](./signing-existing-signature-line/) | Pelajari cara menandatangani baris tanda tangan yang ada di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah terperinci kami. Sempurna untuk pengembang. |
+| [Tetapkan Id Penyedia Tanda Tangan Di Dokumen Word](./set-signature-provider-id/) | Tetapkan ID Penyedia Tanda Tangan dengan aman di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci kami sepanjang 2000 kata untuk menandatangani dokumen Anda secara digital. |
+| [Buat Baris Tanda Tangan Baru Dan Tetapkan Id Penyedia](./create-new-signature-line-and-set-provider-id/) | Pelajari cara membuat baris tanda tangan baru dan mengatur ID penyedia di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah. |
+| [Akses Dan Verifikasi Tanda Tangan Di Dokumen Word](./access-and-verify-signature/) | Akses dan verifikasi tanda tangan digital di dokumen Word menggunakan Aspose.Words for .NET dengan panduan langkah demi langkah yang komprehensif ini. Pastikan keaslian dokumen dengan mudah. |

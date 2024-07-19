@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. lépés: Szúrjon be egy OLE objektumot
- Használja a Dokumentumkészítőt`InsertOleObject` módszer egy OLE objektum beszúrására a dokumentumba. Adja meg az OLE objektum URL-címét, az objektum típusát, a megjelenítési beállításokat és az egyéb szükséges beállításokat.
+ Használja a Dokumentumkészítőt`InsertOleObject`módszer egy OLE objektum beszúrására a dokumentumba. Adja meg az OLE objektum URL-címét, az objektum típusát, a megjelenítési beállításokat és az egyéb szükséges beállításokat.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### K: Hogyan lehet OLE objektumot beszúrni a dokumentumba?
 
- V: Használja a`InsertOleObject` dokumentumkészítő módszere (`DocumentBuilder`) egy OLE objektum beszúrásához a dokumentumba. Adja meg az OLE objektum URL-címét, az objektum típusát, a megjelenítési beállításokat és az egyéb szükséges beállításokat. Íme egy példa:
+ V: Használja a`InsertOleObject` a dokumentumkészítő módszere (`DocumentBuilder`) egy OLE objektum beszúrásához a dokumentumba. Adja meg az OLE objektum URL-címét, az objektum típusát, a megjelenítési beállításokat és az egyéb szükséges beállításokat. Íme egy példa:
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
 
 #### K: Hogyan lehet menteni a dokumentumot?
 
- V: Használja a dokumentumot`Save` módszerrel mentheti a dokumentumot fájlba. Íme egy példa:
+ V: Használja a dokumentumot`Save`módszerrel mentheti a dokumentumot fájlba. Íme egy példa:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

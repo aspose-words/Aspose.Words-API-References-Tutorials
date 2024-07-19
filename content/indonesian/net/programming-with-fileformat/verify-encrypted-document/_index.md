@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Langkah 3: Periksa apakah dokumen tersebut dienkripsi
 
- Kami menggunakan`IsEncrypted` properti dari`FileFormatInfo`keberatan untuk memeriksa apakah dokumen tersebut dienkripsi. Properti ini kembali`true` jika dokumen dienkripsi, jika tidak maka akan dikembalikan`false`. Kami menampilkan hasilnya di konsol.
+ Kami menggunakan`IsEncrypted` properti dari`FileFormatInfo` keberatan untuk memeriksa apakah dokumen tersebut dienkripsi. Properti ini kembali`true` jika dokumen dienkripsi, jika tidak maka akan dikembalikan`false`. Kami menampilkan hasilnya di konsol.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### T: Bagaimana cara mendeteksi format file?
- Anda dapat menggunakan`DetectFileFormat` metode`FileFormatUtil`kelas untuk mendeteksi informasi format file. Dalam contoh berikut, kami berasumsi bahwa dokumen terenkripsi disebut "Encrypted.docx" dan terletak di direktori dokumen yang ditentukan:
+ Anda dapat menggunakan`DetectFileFormat` metode`FileFormatUtil` kelas untuk mendeteksi informasi format file. Dalam contoh berikut, kami berasumsi bahwa dokumen terenkripsi disebut "Encrypted.docx" dan terletak di direktori dokumen yang ditentukan:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### T: Bagaimana cara memeriksa apakah dokumen tersebut dienkripsi?
- Anda dapat menggunakan`IsEncrypted` properti dari`FileFormatInfo`keberatan untuk memeriksa apakah dokumen tersebut dienkripsi. Properti ini kembali`true` jika dokumen dienkripsi, jika tidak maka akan dikembalikan`false`. Hasilnya ditampilkan di konsol:
+ Anda dapat menggunakan`IsEncrypted` properti dari`FileFormatInfo` keberatan untuk memeriksa apakah dokumen tersebut dienkripsi. Properti ini kembali`true` jika dokumen dienkripsi, jika tidak maka akan dikembalikan`false`. Hasilnya ditampilkan di konsol:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

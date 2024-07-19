@@ -1,7 +1,7 @@
 ---
 title: Dokumentensicherheit mit Python – Eine Schritt-für-Schritt-Anleitung
 linktitle: Dokumentensicherheit mit Python
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Sichern Sie Ihre vertraulichen Dokumente mit Aspose.Words für Python! Verschlüsseln, schützen und kontrollieren Sie den Zugriff auf Ihre Word-Dateien programmgesteuert.
 type: docs
 weight: 10
@@ -99,7 +99,7 @@ if __name__ == "__main__":
 
 ### 6.3 Schützen bestimmter Dokumentabschnitte
 
-Für eine genauere Kontrolle können Sie bestimmte Abschnitte im Dokument schützen. Dies ist nützlich, wenn Sie bestimmte Änderungen zulassen möchten, andere Teile aber geschützt bleiben sollen.
+Für eine genauere Kontrolle können Sie bestimmte Abschnitte im Dokument schützen. Dies ist nützlich, wenn Sie bestimmte Änderungen zulassen möchten, andere Teile jedoch geschützt bleiben sollen.
 
 ```python
 # Sample Python code for protecting specific document sections
@@ -163,7 +163,7 @@ Neben Sicherheitsfunktionen bietet Aspose.Words zahlreiche Funktionen zur Textve
 
 Zusammenfassend lässt sich sagen, dass die Sicherung Ihrer Dokumente unerlässlich ist, um vertrauliche Informationen zu schützen und die Vertraulichkeit zu wahren. In dieser Schritt-für-Schritt-Anleitung haben Sie gelernt, wie Sie mit Aspose.Words für Python Dokumentensicherheit mit Python implementieren. Denken Sie daran
 
- um bewährte Methoden anzuwenden und beim Schutz Ihrer digitalen Assets proaktiv vorzugehen.
+ um bewährte Methoden anzuwenden und Ihre digitalen Assets proaktiv zu schützen.
 
 ## FAQs (Häufig gestellte Fragen)
 
@@ -193,7 +193,7 @@ Ja, Sie können mit Aspose.Words für Python ein Kennwort für ein Word-Dokument
 
 ### Ist es möglich, ein Word-Dokument mit Aspose.Words für Python zu verschlüsseln?
 
-Absolut! Mit Aspose.Words für Python können Sie ein Word-Dokument mithilfe starker Verschlüsselungsalgorithmen verschlüsseln. Dadurch wird sichergestellt, dass der Inhalt des Dokuments sicher bleibt und vor unbefugter Anzeige oder Manipulation geschützt ist.
+Absolut! Mit Aspose.Words für Python können Sie ein Word-Dokument mit starken Verschlüsselungsalgorithmen verschlüsseln. Dadurch wird sichergestellt, dass der Inhalt des Dokuments sicher bleibt und vor unbefugter Anzeige oder Manipulation geschützt ist.
 
 ### Kann ich mit Aspose.Words für Python bestimmte Abschnitte eines Word-Dokuments schützen?
 

@@ -93,10 +93,10 @@ További információkért és részletes API-referenciákért látogassa meg a[
 Igen, egy dokumentumban több szakasz is lehet, mindegyik saját elrendezési beállításokkal rendelkezik. Ez lehetővé teszi, hogy szükség szerint különféle elrendezéseket alkalmazzon.
 
 ### Az Aspose.Words kompatibilis a különböző Word formátumokkal?
-Igen, az Aspose.Words különféle Word-formátumokat támogat, beleértve a DOC-t, a DOCX-et, az RTF-et stb.
+Igen, az Aspose.Words különféle Word-formátumokat támogat, beleértve a DOC-t, a DOCX-et, az RTF-et és még sok mást.
 
 ### Hogyan adhatok hozzá képeket a fejlécekhez vagy láblécekhez?
- Használhatja a`Shape` osztályban képeket adhat hozzá a fejlécekhez vagy láblécekhez. Tekintse meg az API dokumentációját a részletes útmutatásért.
+ Használhatja a`Shape` osztályt, hogy képeket adjon hozzá a fejlécekhez vagy láblécekhez. Tekintse meg az API dokumentációját a részletes útmutatásért.
 
 ### Honnan tölthetem le az Aspose.Words for Python legújabb verzióját?
  Letöltheti az Aspose.Words for Python legújabb verzióját a[Az Aspose.Words kiadási oldala](https://releases.aspose.com/words/python/).

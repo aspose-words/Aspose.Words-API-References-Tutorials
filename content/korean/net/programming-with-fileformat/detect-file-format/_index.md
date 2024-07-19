@@ -14,7 +14,7 @@ url: /ko/net/programming-with-fileformat/detect-file-format/
 
 ## 1단계: 디렉터리 정의
 
- 시작하려면 파일 형식에 따라 파일을 저장할 디렉터리를 정의해야 합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요. "지원됨", "알 수 없음", "암호화됨" 및 "Pre97" 디렉터리가 아직 없으면 생성합니다.
+ 시작하려면 파일 형식에 따라 파일을 저장할 디렉터리를 정의해야 합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서 디렉토리의 실제 경로를 사용하세요. "지원됨", "알 수 없음", "암호화됨" 및 "Pre97" 디렉터리가 아직 없으면 생성합니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -23,7 +23,7 @@ string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-// 디렉터리가 아직 없으면 디렉터리를 만듭니다.
+// 디렉토리가 아직 존재하지 않는 경우 디렉토리를 생성하십시오.
 if (Directory.Exists(supportedDir) == false)
 Directory.CreateDirectory(supportedDir);
 if (Directory.Exists(unknownDir) == false)
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## 2단계: 파일 찾아보기
 
- 그런 다음 우리는`GetFiles` 의 방법`Directory` 지정된 디렉터리의 파일 목록을 가져오는 클래스입니다. 우리는 또한`Where`"Corrupted document.docx"라는 특정 파일을 제외하는 절입니다.
+ 그런 다음 우리는`GetFiles` 의 방법`Directory` 지정된 디렉터리의 파일 목록을 가져오는 클래스입니다. 우리는 또한`Where` "Corrupted document.docx"라는 특정 파일을 제외하는 절입니다.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ break;
 
 #### .NET용 Aspose.Words를 사용하여 문서 파일 형식을 감지하는 방법은 무엇입니까?
 
- .NET용 Aspose.Words를 사용하여 문서 파일 형식을 감지하려면 튜토리얼에 제공된 단계를 따르세요. 사용하여`DetectFileFormat` 의 방법`FileFormatUtil`클래스를 사용하면 문서 파일의 형식을 감지할 수 있습니다. 이를 통해 Microsoft Word 97-2003 문서, 템플릿, Office Open XML WordprocessingML 문서 또는 기타 지원되는 형식인지 확인할 수 있습니다. 튜토리얼에 제공된 코드는 이 기능을 구현하는 과정을 안내합니다.
+ .NET용 Aspose.Words를 사용하여 문서 파일 형식을 감지하려면 튜토리얼에 제공된 단계를 따르세요. 사용하여`DetectFileFormat` 의 방법`FileFormatUtil` 클래스를 사용하면 문서 파일의 형식을 감지할 수 있습니다. 이를 통해 Microsoft Word 97-2003 문서, 템플릿, Office Open XML WordprocessingML 문서 또는 기타 지원되는 형식인지 확인할 수 있습니다. 튜토리얼에 제공된 코드는 이 기능을 구현하는 과정을 안내합니다.
 
 #### .NET용 Aspose.Words는 어떤 문서 형식을 지원합니까?
 

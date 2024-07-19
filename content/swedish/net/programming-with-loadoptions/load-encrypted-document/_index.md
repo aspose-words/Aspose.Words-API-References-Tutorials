@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Ladda ett krypterat dokument med det angivna lösenordet
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Spara ett krypterat dokument med ett nytt lösenord
+//Spara ett krypterat dokument med ett nytt lösenord
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

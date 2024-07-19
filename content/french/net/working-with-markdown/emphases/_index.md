@@ -113,7 +113,7 @@ builder.Document.Save(dataDir + "WorkingWithMarkdown.Emphases.md");
 
 #### Q : Pouvons-nous combiner différents surlignages dans le même texte ?
 
- R : Oui, il est possible de combiner différents surlignages dans un même texte. Par exemple, vous pouvez mettre un mot en gras et en italique en utilisant à la fois`**` et`*` autour du monde.
+ R : Oui, il est possible de combiner différents surlignages dans un même texte. Par exemple, vous pouvez mettre un mot en gras et en italique en utilisant à la fois`**`et`*` autour du monde.
 
 #### Q : Quelles options de surbrillance sont disponibles dans Markdown ?
 

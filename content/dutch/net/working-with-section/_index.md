@@ -19,8 +19,8 @@ Door deze tutorials te volgen, kunt u eenvoudig secties in uw Word-documenten be
 | Titel | Beschrijving |
 | --- | --- |
 | [Sectie toevoegen](./add-section/) | In deze zelfstudie leert u hoe u een sectie aan een Word-document toevoegt met Aspose.Words voor .NET. Stap-voor-stap handleiding om uw document te structureren. |
-| [Sectie verwijderen](./delete-section/) | In deze zelfstudie leert u hoe u een specifieke sectie uit een Word-document verwijdert met Aspose.Words voor .NET. |
-| [Verwijder alle secties](./delete-all-sections/) | In deze zelfstudie leert u hoe u alle secties uit een Word-document verwijdert met Aspose.Words voor .NET. |
+| [Sectie verwijderen](./delete-section/) | Beheers documentmanipulatie met Aspose.Words voor .NET. Leer hoe u in een paar eenvoudige stappen secties uit Word-documenten verwijdert. |
+| [Verwijder alle secties](./delete-all-sections/) | Leer hoe u alle secties in een Word-document verwijdert met Aspose.Words voor .NET met deze eenvoudig te volgen, stapsgewijze handleiding. |
 | [Sectie Woordinhoud toevoegen](./append-section-content/) | In deze zelfstudie leert u hoe u woordinhoud kunt toevoegen aan specifieke secties van een Word-document met behulp van Aspose.Words voor .NET.  |
 | [Kloonsectie](./clone-section/) | In deze zelfstudie leert u hoe u een sectie in een Word-document kunt klonen met Aspose.Words voor .NET. Stap voor stap handleiding. |
 | [Kopieer sectie](./copy-section/) | In deze zelfstudie leert u hoe u een sectie van een Word-document naar een ander document kopieert met behulp van Aspose.Words voor .NET. |

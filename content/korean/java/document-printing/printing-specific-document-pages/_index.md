@@ -94,7 +94,7 @@ doc.print(printOptions);
 
 ### 페이지 방향, 용지 크기 등 추가 인쇄 옵션을 설정하려면 어떻게 해야 합니까?
 
- 페이지 방향, 용지 크기 등의 추가 인쇄 옵션을 구성하여 설정할 수 있습니다.`PrintOptions` 문서를 인쇄하기 전에 개체를 제거하십시오. 다음과 같은 방법을 사용하십시오.`setOrientation` 그리고`setPaperSize` 인쇄 설정을 사용자 정의합니다.
+ 페이지 방향, 용지 크기 등의 추가 인쇄 옵션을 구성하여 설정할 수 있습니다.`PrintOptions` 문서를 인쇄하기 전에 개체를 제거하십시오. 다음과 같은 방법을 사용하십시오.`setOrientation`그리고`setPaperSize` 인쇄 설정을 사용자 정의합니다.
 
 ### Aspose.Words for Java 평가판이 있습니까?
 

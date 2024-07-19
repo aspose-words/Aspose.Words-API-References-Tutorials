@@ -2,7 +2,7 @@
 title: Uložit PDF do formátu Word (Docx)
 linktitle: Uložit PDF do formátu Word (Docx)
 second_title: Aspose.Words API pro zpracování dokumentů
-description: V tomto podrobném podrobném průvodci se dozvíte, jak převést PDF na dokument Word (Docx) pomocí Aspose.Words for .NET. Ideální pro vývojáře.
+description: tomto podrobném podrobném průvodci se dozvíte, jak převést PDF na dokument Word (Docx) pomocí Aspose.Words for .NET. Ideální pro vývojáře.
 type: docs
 weight: 10
 url: /cs/net/basic-conversions/pdf-to-docx/
@@ -56,7 +56,7 @@ Nyní načteme dokument PDF do našeho projektu pomocí Aspose.Words.
 Document doc = new Document(dataDir + "Pdf Document.pdf");
 ```
 
- Zde vytvoříme instanci`Document`třídy a předejte mu cestu k našemu souboru PDF. Tato akce načte PDF do paměti připravené ke konverzi.
+ Zde vytvoříme instanci`Document` třídy a předejte mu cestu k našemu souboru PDF. Tato akce načte PDF do paměti připravené ke konverzi.
 
 ## Krok 3: Uložení PDF jako dokumentu aplikace Word
 

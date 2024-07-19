@@ -19,7 +19,7 @@ Processamento de palavras com Markdown fornece um recurso abrangente para aprend
 | [Código embutido](./inline-code/) | Aprenda como codificar em linha com o guia passo a passo do Aspose.Words for .NET. |
 | [Vinculação automática](./autolink/) | Aprenda como inserir link automático com Aspose.Words for .NET Guia passo a passo. |
 | [Link](./link/) | Aprenda como inserir links com Aspose.Words for .NET. Guia passo a passo. |
-| [Imagemm](./image/) | Aprenda como inserir e personalizar imagens com o guia passo a passo Aspose.Words for .NET. |
+| [Imagemm](./image/) | Aprenda como adicionar imagens aos seus documentos usando Aspose.Words for .NET com este guia passo a passo. Aprimore seus documentos com recursos visuais rapidamente. |
 | [Regra horizontal](./horizontal-rule/) | Aprenda como inserir uma regra horizontal com o guia passo a passo Aspose.Words for .NET. |
 | [Cabeçalho](./heading/) | Aprenda como usar o título com o guia passo a passo do Aspose.Words for .NET. |
 | [Título do texto](./setext-heading/) | Aprenda como usar títulos Setext para formatar seus documentos com o guia passo a passo Aspose.Words for .NET. |
@@ -27,8 +27,8 @@ Processamento de palavras com Markdown fornece um recurso abrangente para aprend
 | [Código Cercado](./fenced-code/) | Aprenda como usar o recurso de código protegido com o guia passo a passo do Aspose.Words for .NET. |
 | [Citar](./quote/) | Aprenda como usar citações com o guia passo a passo do Aspose.Words for .NET. |
 | [Lista com marcadores](./bulleted-list/) | Aprenda como criar uma lista com marcadores com o guia passo a passo do Aspose.Words for .NET. |
-| [Lista ordenada](./ordered-list/) | Aprenda como criar uma lista ordenada com o guia passo a passo Aspose.Words for .NET. |
-| [Mesa](./table/) | Aprenda como criar uma tabela com o guia passo a passo do Aspose.Words for .NET. |
+| [Lista ordenada](./ordered-list/) | Aprenda como criar listas ordenadas em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo. Perfeito para automatizar a criação de documentos. |
+| [Mesa](./table/) | Aprenda como criar e personalizar tabelas no Aspose.Words for .NET com este guia passo a passo. Perfeito para gerar documentos estruturados e visualmente atraentes. |
 | [Leia o documento Markdown](./read-markdown-document/) | Aprenda como ler o documento markdown com o guia passo a passo Aspose.Words for .NET. |
 | [Ênfases](./emphases/) | Aprenda como usar ênfases (negrito e itálico) com o guia passo a passo Aspose.Words for .NET. |
-| [Usar fonte de aviso](./use-warning-source/) | Aprenda como usar a fonte de aviso com o guia passo a passo Aspose.Words for .NET. |
+| [Usar fonte de aviso](./use-warning-source/) | Domine Aspose.Words for .NET com este guia passo a passo sobre como usar a classe WarningSource para lidar com avisos de Markdown. Perfeito para desenvolvedores C#. |

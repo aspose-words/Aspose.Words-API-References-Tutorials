@@ -21,7 +21,7 @@ Các hướng dẫn tập trung vào việc nâng cao hiệu quả quản lý t�
 
 ## Hợp lý hóa quy trình xử lý văn bản
 
-Bằng cách thành thạo việc tự động hóa văn bản bằng Aspose.Words cho Python, các nhà phát triển có thể hợp lý hóa quy trình xử lý văn bản một cách hiệu quả. Các hướng dẫn này cung cấp hướng dẫn từng bước, ví dụ thực tế và mẫu mã, cho phép các nhà phát triển tận dụng toàn bộ tiềm năng của tính năng tự động hóa từ Python để quản lý và xử lý tài liệu liền mạch. Hãy tham khảo những hướng dẫn này để đơn giản hóa các tác vụ quản lý tài liệu và nâng cao khả năng xử lý văn bản của bạn.
+Bằng cách thành thạo việc tự động hóa văn bản bằng Aspose.Words cho Python, các nhà phát triển có thể hợp lý hóa quy trình xử lý văn bản một cách hiệu quả. Các hướng dẫn này cung cấp hướng dẫn từng bước, ví dụ thực tế và mẫu mã, cho phép các nhà phát triển tận dụng toàn bộ tiềm năng của tính năng tự động hóa từ Python để xử lý và quản lý tài liệu liền mạch. Hãy tham khảo những hướng dẫn này để đơn giản hóa các tác vụ quản lý tài liệu và nâng cao khả năng xử lý văn bản của bạn.
 
 ## Hướng dẫn tự động hóa Python Word
 ### [Tự động hóa từ được thực hiện dễ dàng](./word-automation-made-easy/)

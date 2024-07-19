@@ -2,68 +2,127 @@
 title: تجاهل رأس التذييل
 linktitle: تجاهل رأس التذييل
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية دمج مستندات Word مع تجاهل الرؤوس والتذييلات باستخدام Aspose.Words for .NET مع هذا الدليل التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/join-and-append-documents/ignore-header-footer/
 ---
+## مقدمة
 
-يشرح هذا البرنامج التعليمي كيفية استخدام Aspose.Words for .NET لإلحاق مستند مع تجاهل محتوى الرأس والتذييل. يوضح كود المصدر المقدم كيفية إعداد خيارات تنسيق الاستيراد لاستبعاد الرأس والتذييل أثناء عملية الإلحاق.
+قد يكون دمج مستندات Word أمرًا صعبًا في بعض الأحيان، خاصة عندما تريد الاحتفاظ ببعض الأجزاء سليمة مع تجاهل الأجزاء الأخرى، مثل الرؤوس والتذييلات. لحسن الحظ، يوفر Aspose.Words for .NET طريقة أنيقة للتعامل مع هذا الأمر. في هذا البرنامج التعليمي، سأرشدك خلال العملية خطوة بخطوة، مع ضمان فهمك لكل جزء. سنبقيها خفيفة ومحادثة وجذابة، تمامًا مثل الدردشة مع صديق. مستعد؟ دعونا الغوص في!
 
-## الخطوة 1: إعداد المشروع
+## المتطلبات الأساسية
 
-تأكد من أن لديك المتطلبات الأساسية التالية:
+قبل أن نبدأ، دعونا نتأكد من أن لدينا كل ما نحتاجه:
 
--  تم تثبيت Aspose.Words لمكتبة .NET. يمكنك تنزيله من[Aspose.Releases]https://releases.aspose.com/words/net/ أو استخدم مدير الحزم NuGet لتثبيته.
-- مسار دليل المستند حيث توجد المستندات المصدر والوجهة.
+-  Aspose.Words for .NET: يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+- Visual Studio: أي إصدار حديث يجب أن يعمل.
+- الفهم الأساسي لـ C#: لا تقلق، سأرشدك خلال التعليمات البرمجية.
+- مستندان Word: يتم إلحاق أحدهما بالآخر.
 
-## الخطوة 2: افتح المستندات المصدر والوجهة
+## استيراد مساحات الأسماء
 
- افتح المستندات المصدر والوجهة باستخدام`Document` منشئ الطبقة. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى دليل المستندات الخاص بك.
+أول الأشياء أولاً، نحتاج إلى استيراد مساحات الأسماء الضرورية في مشروعنا C#. يعد هذا أمرًا بالغ الأهمية لأنه يسمح لنا باستخدام فئات وطرق Aspose.Words دون الرجوع باستمرار إلى مساحة الاسم الكاملة.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## الخطوة 1: قم بإعداد مشروعك
+
+### إنشاء مشروع جديد
+
+لنبدأ بإنشاء مشروع تطبيق Console جديد في Visual Studio.
+
+1. افتح فيجوال ستوديو.
+2. حدد "إنشاء مشروع جديد".
+3. اختر "تطبيق وحدة التحكم (.NET Core)".
+4. قم بتسمية مشروعك وانقر على "إنشاء".
+
+### قم بتثبيت Aspose.Words لـ .NET
+
+بعد ذلك، نحتاج إلى إضافة Aspose.Words for .NET إلى مشروعنا. يمكنك القيام بذلك عبر NuGet Package Manager:
+
+1. انقر بزر الماوس الأيمن على مشروعك في Solution Explorer.
+2. حدد "إدارة حزم NuGet".
+3. ابحث عن "Aspose.Words" وقم بتثبيته.
+
+## الخطوة 2: قم بتحميل المستندات الخاصة بك
+
+الآن بعد أن تم إعداد مشروعنا، فلنقم بتحميل مستندات Word التي نريد دمجها. من أجل هذا البرنامج التعليمي، سوف نسميهما "Document source.docx" و"Northwind trades.docx".
+
+إليك كيفية تحميلها باستخدام Aspose.Words:
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDocument = new Document(dataDir + "Document source.docx");
 Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## الخطوة 3: إعداد خيارات تنسيق الاستيراد
+يقوم مقتطف الكود هذا بتعيين المسار إلى دليل المستند الخاص بك ويقوم بتحميل المستندات في الذاكرة.
 
- إنشاء مثيل لـ`ImportFormatOptions` فئة وتعيين`IgnoreHeaderFooter`الملكية ل`false`. وهذا يضمن تضمين محتوى الرأس والتذييل أثناء عملية الإلحاق.
+## الخطوة 3: تكوين خيارات الاستيراد
+
+قبل دمج المستندات، نحتاج إلى إعداد خيارات الاستيراد لدينا. هذه الخطوة ضرورية لأنها تسمح لنا بتحديد أننا نريد تجاهل الرؤوس والتذييلات.
+
+إليك الكود لتكوين خيارات الاستيراد:
 
 ```csharp
-ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
+ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
-## الخطوة 4: إلحاق المستند المصدر بالمستند الوجهة
+ عن طريق الإعداد`IgnoreHeaderFooter` ل`true`، فإننا نطلب من Aspose.Words تجاهل الرؤوس والتذييلات أثناء عملية الدمج.
 
- استخدم ال`AppendDocument` طريقة المستند الوجهة لإلحاق المستند المصدر. يمر`ImportFormatMode.KeepSourceFormatting`كمعلمة ثانية وخيارات تنسيق الاستيراد كمعلمة ثالثة.
+## الخطوة 4: دمج المستندات
+
+بعد تحميل مستنداتنا وتكوين خيارات الاستيراد، حان الوقت لدمج المستندات.
+
+هيريس كيفية القيام بذلك:
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## الخطوة 5: احفظ مستند الوجهة
+يقوم سطر التعليمات البرمجية هذا بإلحاق المستند المصدر بالمستند الوجهة مع الاحتفاظ بتنسيق المصدر وتجاهل الرؤوس والتذييلات.
 
-وأخيرًا، احفظ مستند الوجهة المعدل باستخدام الملف`Save` طريقة`Document` هدف.
+## الخطوة 5: احفظ المستند المدمج
+
+وأخيرا، نحن بحاجة إلى حفظ الوثيقة المدمجة. 
+
+إليك الرمز لحفظ المستند المدمج:
 
 ```csharp
 dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 ```
 
-يؤدي هذا إلى إكمال تنفيذ إلحاق مستند مع تجاهل محتوى الرأس والتذييل باستخدام Aspose.Words for .NET.
+سيؤدي هذا إلى حفظ المستند المدمج في الدليل المحدد باسم الملف "JoinAndAppendDocuments.IgnoreHeaderFooter.docx".
 
-### مثال على التعليمات البرمجية المصدر لتجاهل تذييل الرأس باستخدام Aspose.Words لـ .NET 
+## خاتمة
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+وهناك لديك! لقد نجحت في دمج مستندي Word مع تجاهل الرؤوس والتذييلات الخاصة بهما باستخدام Aspose.Words for .NET. تعد هذه الطريقة مفيدة لمهام إدارة المستندات المختلفة حيث يكون الحفاظ على أقسام معينة من المستندات أمرًا بالغ الأهمية.
 
-	Document srcDocument = new Document(dataDir + "Document source.docx");
-	Document dstDocument = new Document(dataDir + "Northwind traders.docx");
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = false };
-	dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
-	dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
-```
+يمكن أن يؤدي العمل مع Aspose.Words لـ .NET إلى تبسيط سير عمل معالجة المستندات بشكل كبير. تذكر، إذا واجهتك مشكلة أو كنت بحاجة إلى مزيد من المعلومات، فيمكنك دائمًا الاطلاع على[توثيق](https://reference.aspose.com/words/net/).
+
+## الأسئلة الشائعة
+
+### هل يمكنني تجاهل أجزاء أخرى من المستند إلى جانب الرؤوس والتذييلات؟
+
+نعم، يوفر Aspose.Words خيارات متنوعة لتخصيص عملية الاستيراد، بما في ذلك تجاهل الأقسام والتنسيقات المختلفة.
+
+### هل من الممكن الاحتفاظ بالرؤوس والتذييلات بدلاً من تجاهلها؟
+
+ قطعاً. ببساطة قم بضبطها`IgnoreHeaderFooter` ل`false` في ال`ImportFormatOptions`.
+
+### هل أحتاج إلى ترخيص لاستخدام Aspose.Words لـ .NET؟
+
+ نعم، Aspose.Words for .NET هو منتج تجاري. يمكنك الحصول على[تجربة مجانية](https://releases.aspose.com/) أو شراء ترخيص[هنا](https://purchase.aspose.com/buy).
+
+### هل يمكنني دمج أكثر من مستندين بهذه الطريقة؟
+
+ نعم، يمكنك إلحاق مستندات متعددة في حلقة من خلال تكرار الأمر`AppendDocument` طريقة لكل وثيقة إضافية.
+
+### أين يمكنني العثور على المزيد من الأمثلة والوثائق الخاصة بـ Aspose.Words for .NET؟
+
+ يمكنك العثور على وثائق وأمثلة شاملة على الموقع[موقع أسبوز](https://reference.aspose.com/words/net/).

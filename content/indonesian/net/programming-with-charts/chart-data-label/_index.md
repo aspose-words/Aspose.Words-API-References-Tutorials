@@ -2,48 +2,84 @@
 title: Sesuaikan Label Data Bagan
 linktitle: Sesuaikan Label Data Bagan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menambahkan dan mengkustomisasi label data dalam bagan menggunakan Aspose.Words untuk .NET untuk memberikan informasi tambahan tentang titik data.
+description: Pelajari cara mengkustomisasi label data bagan menggunakan Aspose.Words untuk .NET dalam panduan langkah demi langkah. Sempurna untuk pengembang .NET.
 type: docs
 weight: 10
 url: /id/net/programming-with-charts/chart-data-label/
 ---
+## Perkenalan
 
-Tutorial ini menjelaskan cara menambahkan dan mengkustomisasi label data dalam bagan menggunakan Aspose.Words untuk .NET. Label data memberikan informasi tambahan tentang titik data dalam bagan.
+Apakah Anda ingin menyempurnakan aplikasi .NET Anda dengan kemampuan pemrosesan dokumen yang dinamis dan disesuaikan? Aspose.Words untuk .NET mungkin bisa menjadi jawaban Anda! Dalam panduan ini, kita akan mendalami penyesuaian label data bagan menggunakan Aspose.Words untuk .NET, pustaka canggih untuk membuat, memodifikasi, dan mengonversi dokumen Word. Baik Anda seorang pengembang berpengalaman atau baru memulai, tutorial ini akan memandu Anda melalui setiap langkah, memastikan Anda memahami cara menggunakan alat ini secara efektif.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
 
-- Aspose.Words untuk perpustakaan .NET diinstal.
-- Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
-## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+1. Visual Studio: Instal Visual Studio 2019 atau lebih baru.
+2. .NET Framework: Pastikan Anda memiliki .NET Framework 4.0 atau lebih baru.
+3.  Aspose.Words for .NET: Unduh dan instal Aspose.Words for .NET dari[tautan unduhan](https://releases.aspose.com/words/net/).
+4. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# sangat penting.
+5.  Lisensi yang Sah: Dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) atau beli satu dari[membeli tautan](https://purchase.aspose.com/buy).
+
+## Impor Namespace
+
+Untuk memulai, Anda perlu mengimpor namespace yang diperlukan ke proyek C# Anda. Langkah ini penting karena memastikan bahwa Anda memiliki akses ke semua kelas dan metode yang disediakan oleh Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Charts;
 ```
 
-## Langkah 2: Buat Dokumen Baru dan DocumentBuilder
- Buat instance baru dari`Document` kelas dan a`DocumentBuilder`keberatan untuk bekerja dengan dokumen tersebut.
+## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
+
+Untuk membuat dan memanipulasi dokumen Word, pertama-tama kita perlu menginisialisasi sebuah instance dari`Document` kelas dan a`DocumentBuilder` obyek.
 
 ```csharp
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 3: Sisipkan dan Konfigurasikan Bagan
- Sisipkan bagan ke dalam dokumen menggunakan`InsertChart` metode`DocumentBuilder` obyek. Tetapkan jenis dan dimensi bagan yang diinginkan.
+### Penjelasan
+
+- Dokumen dokumen: Membuat instance baru dari kelas Dokumen.
+- Pembuat DocumentBuilder: DocumentBuilder membantu memasukkan konten ke dalam objek Dokumen.
+
+## Langkah 2: Sisipkan Bagan
+
+ Selanjutnya, kita akan menyisipkan diagram batang ke dalam dokumen menggunakan`DocumentBuilder` obyek.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Langkah 4: Sesuaikan Label Data
-Akses kumpulan label data dari rangkaian bagan dan ubah berbagai properti untuk menyesuaikan tampilan label data.
+### Penjelasan
+
+- Bentuk bentuk: Mewakili bagan sebagai bentuk dalam dokumen.
+- builder.InsertChart(ChartType.Bar, 432, 252): Menyisipkan diagram batang dengan dimensi tertentu.
+
+## Langkah 3: Akses Seri Bagan
+
+Untuk menyesuaikan label data, pertama-tama kita perlu mengakses rangkaian di bagan.
 
 ```csharp
 ChartSeries series0 = shape.Chart.Series[0];
+```
+
+### Penjelasan
+
+- ChartSeries series0: Mengambil rangkaian grafik pertama, yang akan kita sesuaikan.
+
+## Langkah 4: Sesuaikan Label Data
+
+Label data dapat disesuaikan untuk menampilkan berbagai informasi. Kami akan mengonfigurasi label untuk menampilkan kunci legenda, nama seri, dan nilai, sekaligus menyembunyikan nama kategori dan persentase.
+
+```csharp
 ChartDataLabelCollection labels = series0.DataLabels;
 labels.ShowLegendKey = true;
 labels.ShowLeaderLines = true;
@@ -54,51 +90,46 @@ labels.ShowValue = true;
 labels.Separator = "/";
 ```
 
+### Penjelasan
+
+- Label ChartDataLabelCollection: Mengakses label data rangkaian.
+- labels.ShowLegendKey: Menampilkan kunci legenda.
+- labels.ShowLeaderLines: Menampilkan garis pemimpin untuk label data yang diposisikan jauh di luar titik data.
+- labels.ShowCategoryName: Menyembunyikan nama kategori.
+- labels.ShowPercentage: Menyembunyikan nilai persentase.
+- labels.ShowSeriesName: Menampilkan nama seri.
+- labels.ShowValue: Menampilkan nilai titik data.
+- labels.Separator: Mengatur pemisah untuk label data.
+
 ## Langkah 5: Simpan Dokumen
- Simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithCharts.ChartDataLabel.docx".
+
+Terakhir, simpan dokumen ke direktori yang ditentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
-### Contoh kode sumber untuk Label Data Bagan menggunakan Aspose.Words untuk .NET 
+### Penjelasan
 
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = shape.Chart.Series[0];
-	ChartDataLabelCollection labels = series0.DataLabels;
-	labels.ShowLegendKey = true;
-	// Secara default, saat Anda menambahkan label data ke titik data dalam diagram lingkaran, garis pemimpin ditampilkan untuk label data yang
-	// diposisikan jauh di luar akhir titik data. Garis pemimpin membuat hubungan visual antara label data dan label datanya
-	// titik data yang sesuai.
-	labels.ShowLeaderLines = true;
-	labels.ShowCategoryName = false;
-	labels.ShowPercentage = false;
-	labels.ShowSeriesName = true;
-	labels.ShowValue = true;
-	labels.Separator = "/";
-	labels.ShowValue = true;
-	doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
-```
-
-Itu dia! Anda telah berhasil menambahkan dan mengkustomisasi label data dalam bagan menggunakan Aspose.Words untuk .NET.
+- doc.Save: Menyimpan dokumen dengan nama tertentu di direktori yang disediakan.
 
 ## Kesimpulan
-Dalam tutorial ini, Anda telah mempelajari cara menambahkan dan mengkustomisasi label data dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah, Anda bisa menyisipkan bagan, mengakses kumpulan label data, dan mengubah properti untuk mengkustomisasi tampilan label data. Aspose.Words untuk .NET menyediakan API yang kuat untuk Pemrosesan Kata dengan dokumen dan bagan Word, memungkinkan Anda membuat bagan yang menarik secara visual dan informatif dengan label data yang disesuaikan.
 
-### FAQ
+ Selamat! Anda telah berhasil mengkustomisasi label data bagan menggunakan Aspose.Words untuk .NET. Pustaka ini menawarkan solusi tangguh untuk menangani dokumen Word secara terprogram, sehingga memudahkan pengembang untuk membuat aplikasi pemrosesan dokumen yang canggih dan dinamis. Menyelam ke dalam[dokumentasi](https://reference.aspose.com/words/net/) untuk menjelajahi lebih banyak fitur dan kemampuan.
 
-#### Q1. Apa yang dimaksud dengan label data dalam bagan?
-Label data dalam bagan memberikan informasi tambahan tentang titik data yang diwakili dalam bagan. Mereka dapat menampilkan nilai, kategori, nama rangkaian, persentase, atau detail relevan lainnya bergantung pada jenis bagan dan konfigurasi.
+## FAQ
 
-#### Q2. Bisakah saya menyesuaikan tampilan label data?
-Ya, Anda dapat menyesuaikan tampilan label data dalam bagan. Aspose.Words untuk .NET menyediakan opsi untuk mengubah berbagai properti label data, seperti menampilkan kunci legenda, garis pemimpin, nama kategori, nama seri, nilai, dan banyak lagi. Anda juga dapat mengatur pemisah dan memformat label untuk memenuhi kebutuhan spesifik Anda.
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram.
 
-#### Q3. Bisakah saya menambahkan label data ke tipe bagan apa pun?
-Ya, Anda dapat menambahkan label data ke berbagai jenis diagram, termasuk diagram batang, diagram lingkaran, diagram garis, dan lainnya. Proses penambahan dan penyesuaian label data mungkin sedikit berbeda tergantung pada tipe bagan dan pustaka atau alat yang Anda gunakan.
+### Bagaimana cara menginstal Aspose.Words untuk .NET?
+ Anda dapat mengunduh dan menginstalnya dari[tautan unduhan](https://releases.aspose.com/words/net/). Ikuti petunjuk instalasi yang disediakan.
+
+### Bisakah saya mencoba Aspose.Words untuk .NET secara gratis?
+ Ya, Anda bisa mendapatkan[uji coba gratis](https://releases.aspose.com/) atau a[izin sementara](https://purchase.aspose.com/temporary-license/)untuk mengevaluasi produk.
+
+### Apakah Aspose.Words untuk .NET kompatibel dengan .NET Core?
+Ya, Aspose.Words untuk .NET kompatibel dengan .NET Core, .NET Standard, dan .NET Framework.
+
+### Di mana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?
+ Anda dapat mengunjungi[forum dukungan](https://forum.aspose.com/c/words/8) atas bantuan dan bantuan dari komunitas Aspose dan para ahli.

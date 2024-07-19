@@ -11,7 +11,7 @@ Saat Memproses Kata dengan dokumen PDF dalam aplikasi C#, mungkin perlu melewatk
 
 ## Memahami perpustakaan Aspose.Words
 
-Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan yang kuat untuk membuat, mengedit, mengonversi, dan melindungi dokumen Word di berbagai platform termasuk .NET. Ia menawarkan banyak fitur untuk memanipulasi dokumen, seperti menyisipkan teks, mengubah format, menambahkan bagian, dan banyak lagi.
+Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan yang kuat untuk membuat, mengedit, mengonversi, dan melindungi dokumen Word di berbagai platform termasuk .NET. Ia menawarkan banyak fitur untuk memanipulasi dokumen, seperti menyisipkan teks, mengubah format, menambahkan bagian, dan banyak lagi.
 
 ## Mengonfigurasi opsi pemuatan
 
@@ -72,6 +72,6 @@ J: Melewatkan gambar PDF tidak akan mempengaruhi tata letak atau tampilan dokume
 
 J: Melewatkan gambar PDF paling cocok untuk skenario di mana gambar tidak penting untuk fungsi utama aplikasi Anda. Ini berfungsi dengan baik untuk aplikasi yang terutama berhubungan dengan konten tekstual atau tidak memerlukan manipulasi gambar.
 
-#### T: Dapatkah saya menerapkan fungsi ini ke bagian tertentu dari dokumen PDF?
+#### T: Bisakah saya menerapkan fungsi ini ke bagian tertentu dari dokumen PDF?
 
  A: Ya, Anda dapat menerapkannya`PdfLoadOptions` dengan`SkipPdfImages` mulai`true` ke bagian tertentu dari dokumen PDF dengan memuat bagian itu secara terpisah menggunakan Aspose.Words untuk .NET.

@@ -148,7 +148,7 @@ Kode ini menelusuri semua paragraf dalam dokumen, memeriksa apakah paragraf ters
 
 #### T: Bagaimana cara menyimpan dokumen yang diedit di Aspose.Words untuk .NET?
 
-J: Setelah menghapus hentian halaman, Anda perlu menyimpan dokumen yang dimodifikasi. Gunakan metode Save() untuk menyimpan dokumen yang diubah ke lokasi tertentu. Berikut ini contoh kodenya:
+J: Setelah menghapus hentian halaman, Anda perlu menyimpan dokumen yang dimodifikasi. Gunakan metode Save() untuk menyimpan dokumen yang dimodifikasi ke lokasi tertentu. Berikut ini contoh kodenya:
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

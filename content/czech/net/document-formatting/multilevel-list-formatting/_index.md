@@ -125,7 +125,7 @@ tady to máte! Úspěšně jste vytvořili víceúrovňový seznam v dokumentu a
  Ano, v číslování můžete pokračovat pomocí`ListFormat.List` vlastnost pro propojení s existujícím seznamem.
 
 ### Jak dynamicky změním úroveň odsazení?
- Úroveň odsazení můžete dynamicky měnit pomocí`ListIndent` a`ListOutdent` metody podle potřeby.
+ Úroveň odsazení můžete dynamicky měnit pomocí`ListIndent`a`ListOutdent` metody podle potřeby.
 
 ### Mohu vytvářet víceúrovňové seznamy v jiných formátech dokumentů, jako je PDF?
 Ano, Aspose.Words podporuje ukládání dokumentů v různých formátech včetně PDF při zachování formátování.

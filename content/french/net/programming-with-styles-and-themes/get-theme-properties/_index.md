@@ -62,7 +62,7 @@ La possibilité d'obtenir les propriétés du thème vous permet d'analyser et d
 
 Aspose.Words for .NET propose une API puissante pour manipuler les thèmes de vos documents, vous permettant d'ajuster et de personnaliser facilement l'apparence de vos documents.
 
-N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words for .NET pour améliorer votre flux de travail et répondre à vos besoins spécifiques en matière de gestion de styles et de thèmes.
+N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words pour .NET pour améliorer votre flux de travail et répondre à vos besoins spécifiques en matière de gestion de styles et de thèmes.
 
 ### FAQ
 
@@ -72,7 +72,7 @@ N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words for .NET
 
 #### Comment récupérer les polices primaires et secondaires du thème d'un document ?
 
- Vous pouvez accéder aux polices principales et secondaires du thème d'un document en utilisant le`MajorFonts` et`MinorFonts` propriétés du`Theme` objet, respectivement. Ces propriétés donnent accès aux noms de polices utilisés dans le thème du document pour différentes langues ou régions.
+ Vous pouvez accéder aux polices principales et secondaires du thème d'un document en utilisant le`MajorFonts`et`MinorFonts` propriétés du`Theme` objet, respectivement. Ces propriétés donnent accès aux noms de polices utilisés dans le thème du document pour différentes langues ou régions.
 
 #### Puis-je obtenir les couleurs d’accent utilisées dans le thème d’un document ?
 

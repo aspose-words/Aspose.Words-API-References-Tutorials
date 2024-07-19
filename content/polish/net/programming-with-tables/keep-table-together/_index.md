@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-tables/keep-table-together/
 ---
 
-tym samouczku nauczymy się, jak łączyć tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz w stanie zachować tabelę w stanie nienaruszonym bez dzielenia jej na wiele stron w dokumentach programu Word.
+W tym samouczku nauczymy się, jak łączyć tabelę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz w stanie zachować tabelę w stanie nienaruszonym bez dzielenia jej na wiele stron w dokumentach programu Word.
 
 ## Krok 1: Konfiguracja projektu
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
@@ -63,7 +63,7 @@ Pamiętaj, aby określić poprawną ścieżkę i nazwę pliku dokumentu wyjścio
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// Musimy włączyć opcję KeepWithNext dla każdego akapitu w tabeli, aby zapobiec przedostawaniu się go na stronę,
-	// z wyjątkiem ostatnich akapitów w ostatnim wierszu tabeli.
+	// wyjątkiem ostatnich akapitów w ostatnim wierszu tabeli.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

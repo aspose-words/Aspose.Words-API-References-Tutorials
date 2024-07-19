@@ -16,7 +16,7 @@ Aspose.Words for .NET 是一個功能強大的程式庫，用於在 C# 應用程
 
 ## 建立文件並添加內容
 
-第一步是建立一個新文件並在其中添加內容。使用 Document 類別建立一個新的文檔實例。然後使用 DocumentBuilder 類別向文件添加文字。這是一個例子：
+第一步是建立一個新文件並在其中添加內容。使用 Document 類別建立一個新的文檔實例。然後使用 DocumentBuilder 類別將文字新增到文件中。這是一個例子：
 
 ```csharp
 Document doc = new Document();

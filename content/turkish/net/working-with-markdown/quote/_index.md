@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## 3. Adım: İç içe düzeyler için stiller oluşturma
 
- kullanarak iç içe düzeyler için stiller oluşturabiliriz.`Styles.Add` yöntemi`Document` nesne. Bu örnekte, iç içe geçmiş bir teklif düzeyini temsil etmek için "Quote1" adında bir stil yaratıyoruz.
+ kullanarak iç içe düzeyler için stiller oluşturabiliriz.`Styles.Add` yöntemi`Document`nesne. Bu örnekte, iç içe geçmiş bir teklif düzeyini temsil etmek için "Quote1" adında bir stil yaratıyoruz.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

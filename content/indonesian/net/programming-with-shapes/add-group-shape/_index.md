@@ -17,14 +17,14 @@ Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Langkah 2: Buat Dokumen Baru dan GroupShape
- Buat instance baru dari`Document` kelas dan`GroupShape`keberatan untuk bekerja dengan dokumen tersebut.
+ Buat instance baru dari`Document` kelas dan`GroupShape` keberatan untuk bekerja dengan dokumen tersebut.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Langkah 3: Buat dan Tambahkan Bentuk ke GroupShape
- Buat bentuk individual seperti`accentBorderShape` Dan`actionButtonShape` menggunakan`Shape` kelas. Sesuaikan propertinya sesuai keinginan. Tambahkan bentuk-bentuk ini ke`groupShape` obyek.
+ Buat bentuk individual seperti`accentBorderShape`Dan`actionButtonShape` menggunakan`Shape` kelas. Sesuaikan propertinya sesuai keinginan. Tambahkan bentuk-bentuk ini ke`groupShape` obyek.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Langkah 4: Tetapkan Dimensi untuk GroupShape
- Atur lebar, tinggi, dan ukuran koordinat untuk`groupShape`.
+Atur lebar, tinggi, dan ukuran koordinat untuk`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## Langkah 6: Simpan Dokumen
- Simpan dokumen ke direktori yang ditentukan menggunakan`Save`metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithShapes.AddGroupShape.docx".
+ Simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithShapes.AddGroupShape.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

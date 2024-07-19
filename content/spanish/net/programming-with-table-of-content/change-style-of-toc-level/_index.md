@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Conclusión
 
-En esta guía, explicamos cómo usar Aspose.Words para .NET para cambiar el estilo de un nivel de la tabla de contenido de un documento de Word usando el código fuente C# proporcionado. Si sigue los pasos proporcionados, puede personalizar fácilmente el estilo de la tabla de contenido de sus documentos de Word en su aplicación C#. Aspose.Words ofrece una enorme flexibilidad y potencia para trabajar con los estilos y formatos de sus documentos, permitiéndole crear documentos de Word atractivos y profesionales.
+En esta guía, explicamos cómo usar Aspose.Words para .NET para cambiar el estilo de un nivel de la tabla de contenido de un documento de Word utilizando el código fuente C# proporcionado. Si sigue los pasos proporcionados, puede personalizar fácilmente el estilo de la tabla de contenido de sus documentos de Word en su aplicación C#. Aspose.Words ofrece una tremenda flexibilidad y potencia para trabajar con los estilos y el formato de sus documentos, permitiéndole crear documentos de Word atractivos y profesionales.
 
 ### Preguntas frecuentes para cambiar el estilo del índice en un documento de Word
 

@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でのドキュメント範囲の使用
 linktitle: ドキュメント範囲の使用
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java でのドキュメント範囲の操作をマスターします。この包括的なガイドで、テキストの削除、抽出、書式設定を学習します。
+description: Aspose.Words for Java でのドキュメント範囲の操作をマスターします。この包括的なガイドで、テキストの削除、抽出、および書式設定を学習します。
 type: docs
 weight: 18
 url: /ja/java/document-manipulation/using-document-ranges/

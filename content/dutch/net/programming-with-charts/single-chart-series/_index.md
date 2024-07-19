@@ -2,119 +2,123 @@
 title: Pas enkele grafiekreeksen in een grafiek aan
 linktitle: Pas enkele grafiekreeksen in een grafiek aan
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u afzonderlijke diagramreeksen in een diagram kunt aanpassen met Aspose.Words voor .NET.
+description: Leer hoe u afzonderlijke diagramreeksen in een Word-document kunt aanpassen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor een naadloze ervaring.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/single-chart-series/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u Aspose.Words voor .NET kunt gebruiken om afzonderlijke diagramreeksen in een diagram aan te passen. De meegeleverde broncode laat zien hoe u een diagram maakt, toegang krijgt tot specifieke reeksen en hun eigenschappen wijzigt.
+Hallo daar! Heb je ooit je Word-documenten willen opfleuren met een paar hippe grafieken? Nou, je bent op de juiste plek! Vandaag duiken we in de wereld van Aspose.Words voor .NET om afzonderlijke diagramreeksen in een diagram aan te passen. Of u nu een doorgewinterde professional bent of net begint, deze gids begeleidt u stap voor stap door het hele proces. Dus, doe je gordel om en laten we in kaart brengen!
 
-## Stap 1: Zet het project op
+## Vereisten
 
-Zorg ervoor dat u aan de volgende vereisten voldoet:
+Voordat we beginnen, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben. Hier is een korte checklist:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
-- Een documentmappad waar het uitvoerdocument wordt opgeslagen.
+1.  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Visual Studio: Elke recente versie zou voldoende moeten zijn.
+3. Een basiskennis van C#: Niets bijzonders, alleen de basis is voldoende.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Naamruimten importeren
 
- Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
+Allereerst moeten we de benodigde naamruimten importeren. Dit is hetzelfde als het voorbereiden van de grote show.
 
 ```csharp
-// Pad naar uw documentmap
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Stap 1: Stel uw document in
+
+Laten we beginnen met het opzetten van een nieuw Word-document. Dit is waar alle magie zal gebeuren.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Pad naar uw documentmap
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Gebruik vervolgens de`InsertChart` werkwijze van de`DocumentBuilder` om een lijndiagram in het document in te voegen.
+## Stap 2: Voeg een diagram in
+
+Vervolgens voegen we een lijndiagram in ons document in. Zie dit als het toevoegen van een canvas waarop we ons meesterwerk zullen schilderen.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Stap 3: Kaartreeksen openen en aanpassen
+## Stap 3: Toegang tot kaartseries
 
- Om afzonderlijke kaartseries te wijzigen, heeft u toegang nodig tot het`ChartSeries` objecten van de kaart.
+Laten we nu naar de kaartserie gaan. Dit is waar we beginnen met aanpassen.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
 ChartSeries series1 = chart.Series[1];
+```
 
+## Stap 4: Hernoem de grafiekreeks
+
+Laten we onze kaartenserie een aantal betekenisvolle namen geven. Dit is hetzelfde als het labelen van je penselen voordat je begint met schilderen.
+
+```csharp
 series0.Name = "Chart Series Name 1";
 series1.Name = "Chart Series Name 2";
+```
 
+## Stap 5: Maak de lijnen glad
+
+Wilt u dat die lijnen er glad en strak uitzien? Laten we dat doen met behulp van Catmull-Rom-splines.
+
+```csharp
 series0.Smooth = true;
 series1.Smooth = true;
+```
 
+## Stap 6: Omgaan met negatieve waarden
+
+Soms kunnen gegevens negatief zijn. Laten we ervoor zorgen dat ons diagram daar op een elegante manier mee omgaat.
+
+```csharp
 series0.InvertIfNegative = true;
+```
+
+## Stap 7: Markeringen aanpassen
+
+Markeringen zijn als kleine puntjes op onze lijnen. Laten we ze laten opvallen.
+
+```csharp
 series0.Marker.Symbol = MarkerSymbol.Circle;
 series0.Marker.Size = 15;
-
 series1.Marker.Symbol = MarkerSymbol.Star;
 series1.Marker.Size = 10;
 ```
 
-## Stap 4: Sla het document op
+## Stap 8: Bewaar uw document
 
- Sla het document ten slotte op in de opgegeven map met behulp van de`Save` werkwijze van de`Document` voorwerp.
+Laten we tot slot ons document opslaan. Hier bewonderen wij ons werk.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 ```
 
-Hiermee is de implementatie voltooid van het aanpassen van een enkele diagramserie met Aspose.Words voor .NET.
-
-### Voorbeeldbroncode voor Single Chart Series met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = chart.Series[0];
-	ChartSeries series1 = chart.Series[1];
-	series0.Name = "Chart Series Name 1";
-	series1.Name = "Chart Series Name 2";
-	// U kunt ook opgeven of de lijn die de punten op de kaart verbindt, moet worden afgevlakt met behulp van Catmull-Rom-splines.
-	series0.Smooth = true;
-	series1.Smooth = true;
-	// Specificeert of het bovenliggende element standaard zijn kleuren moet omkeren als de waarde negatief is.
-	series0.InvertIfNegative = true;
-	series0.Marker.Symbol = MarkerSymbol.Circle;
-	series0.Marker.Size = 15;
-	series1.Marker.Symbol = MarkerSymbol.Star;
-	series1.Marker.Size = 10;
-	doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
-```
-
 ## Conclusie
 
-In deze zelfstudie hebt u geleerd hoe u een enkele grafiekreeks in een grafiek kunt aanpassen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u een nieuw document maken, een lijndiagram invoegen, toegang krijgen tot specifieke diagramreeksen en hun eigenschappen wijzigen om de gewenste aanpassing te bereiken.
+En daar heb je het! U hebt met succes een enkele diagramserie in een Word-document aangepast met Aspose.Words voor .NET. Best cool, toch? Dit is slechts het topje van de ijsberg; er is zoveel meer dat je kunt doen met Aspose.Words. Blijf dus experimenteren en geweldige documenten maken!
 
-Aspose.Words voor .NET biedt krachtige functies voor het manipuleren van diagrammen in Word-documenten. Door individuele kaartseries te openen, kunt u specifieke wijzigingen aanbrengen om het uiterlijk en gedrag ervan aan te passen. Hiermee kunt u de naam van de reeks wijzigen, de diagramlijn vloeiender maken, markeringen voor gegevenspunten aanpassen, kleuren voor negatieve waarden omkeren en meer, om de visuele weergave van uw diagram te verbeteren.
+## Veelgestelde vragen
 
-Door een enkele diagramreeks aan te passen, beschikt u over de flexibiliteit om specifieke gegevens te benadrukken of bepaalde trends in uw diagram te benadrukken. Met Aspose.Words voor .NET kunt u eenvoudig de eigenschappen van diagramreeksen openen en wijzigen, zodat u visueel aantrekkelijke en informatieve diagrammen in uw Word-documenten kunt maken.
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee u Word-documenten programmatisch kunt maken, bewerken, converteren en manipuleren.
 
-### Veelgestelde vragen
+### Kan ik Aspose.Words gratis gebruiken?
+ Ja, je kunt beginnen met a[gratis proefperiode](https://releases.aspose.com/).
 
-#### Q1. Kan ik meerdere diagramseries in een diagram aanpassen?
- Ja, u kunt meerdere grafiekreeksen in een grafiek aanpassen met Aspose.Words voor .NET. Door toegang te krijgen tot de`ChartSeries`objecten in het diagram kunt u meerdere reeksen selecteren en wijzigen op basis van hun indexen of specifieke criteria. Gebruik een lus of individuele toewijzingen om de gewenste eigenschappen voor elke diagramserie te wijzigen. Op deze manier kunt u verschillende aanpassingen toepassen op meerdere series binnen hetzelfde diagram.
+### Hoe krijg ik ondersteuning voor Aspose.Words?
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap op hun[forum](https://forum.aspose.com/c/words/8).
 
-#### Vraag 2. Hoe kan ik de naam van een diagramserie wijzigen?
- Om de naam van een diagramreeks in een diagram te wijzigen met Aspose.Words voor .NET, moet u naar het`Name` eigendom van de`ChartSeries` object en stel het in op de gewenste naam. De serienaam wordt doorgaans weergegeven in de diagramlegenda of gegevenslabels, waardoor een beschrijvend label voor de serie wordt geboden. Door de serienaam te wijzigen, kunt u betekenisvolle namen opgeven die de gegevens weerspiegelen die door elke serie worden vertegenwoordigd.
+### Is het mogelijk om andere diagramtypen aan te passen?
+Absoluut! Aspose.Words ondersteunt verschillende diagramtypen, zoals staaf-, cirkel- en spreidingsdiagrammen.
 
-#### Q3. Wat is het afvlakken van diagramreeksen?
-Het vloeiend maken van diagramreeksen is een visuele verbeteringstechniek waarmee u een vloeiende lijn kunt maken die de punten op de kaart met elkaar verbindt. Het past een afvlakkingsalgoritme toe, zoals Catmull-Rom-splines, om tussen datapunten te interpoleren en een visueel aantrekkelijke curve te creëren. Als u het vloeiend maken van reeksen in een diagram wilt inschakelen met Aspose.Words voor .NET, gaat u naar de`Smooth` eigendom van de`ChartSeries` object en stel het in`true`. Vloeien kan handig zijn voor het weergeven van trends of patronen in gegevens met onregelmatige fluctuaties.
-
-#### Q4. Hoe kan ik markeringen voor gegevenspunten in een diagramreeks aanpassen?
- Om markeringen voor gegevenspunten in een diagramserie aan te passen met Aspose.Words voor .NET, moet u toegang krijgen tot de`Marker` eigendom van de`ChartSeries` object en wijzig de eigenschappen ervan, zoals`Symbol` En`Size`. Markeringen zijn visuele indicatoren die op de grafiek worden geplaatst om individuele gegevenspunten weer te geven. U kunt kiezen uit een verscheidenheid aan ingebouwde markeringssymbolen en de grootte ervan aanpassen om specifieke gegevenspunten binnen de reeks te markeren of te onderscheiden.
-
-#### Vraag 5. Kan ik kleuren voor negatieve waarden in een diagramserie omkeren?
- Ja, u kunt kleuren voor negatieve waarden in een diagramserie omkeren met Aspose.Words voor .NET. Door het instellen van de`InvertIfNegative` eigendom van de`ChartSeries` bezwaar tegen`true`, worden de kleuren voor gegevenspunten met negatieve waarden omgekeerd, waardoor ze visueel onderscheiden worden van positieve waarden. Deze functie kan handig zijn bij het vergelijken van positieve en negatieve waarden in een diagramserie, waardoor een duidelijk onderscheid tussen de twee wordt gemaakt.
+### Waar kan ik meer documentatie vinden?
+ Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer gedetailleerde handleidingen en voorbeelden.

@@ -87,7 +87,7 @@ Ja, mit Aspose.Words für Java können Sie das Dokumentlayout anpassen, einschli
 
 ### Ist Aspose.Words für Java zum Erstellen komplexer Dokumente geeignet?
 
-Auf jeden Fall! Aspose.Words für Java ist in der Lage, komplexe Dokumente problemlos zu verarbeiten und eignet sich daher für eine Vielzahl von Anwendungen.
+Auf jeden Fall! Aspose.Words für Java ist in der Lage, komplexe Dokumente problemlos zu verarbeiten und eignet sich daher für eine breite Palette von Anwendungen.
 
 ### Wie kann ich Probleme beim Dokumentdruck beheben?
 

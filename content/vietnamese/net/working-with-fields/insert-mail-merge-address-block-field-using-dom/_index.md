@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### Câu hỏi: Làm cách nào tôi có thể chỉ định dữ liệu nguồn cho trường địa chỉ gửi thư trong Aspose.Words cho .NET?
 
- Trả lời: Để chỉ định dữ liệu nguồn cho trường địa chỉ gửi thư trong Aspose.Words cho .NET, bạn có thể sử dụng`FieldAddressBlock.StartAddress` Và`FieldAddressBlock.EndAddress` của cải. Các thuộc tính này được sử dụng để xác định phạm vi địa chỉ trong nguồn dữ liệu ngoài, chẳng hạn như tệp CSV, cơ sở dữ liệu, v.v.
+ Trả lời: Để chỉ định dữ liệu nguồn cho trường địa chỉ gửi thư trong Aspose.Words cho .NET, bạn có thể sử dụng`FieldAddressBlock.StartAddress`Và`FieldAddressBlock.EndAddress` của cải. Các thuộc tính này được sử dụng để xác định phạm vi địa chỉ trong nguồn dữ liệu ngoài, chẳng hạn như tệp CSV, cơ sở dữ liệu, v.v.
 
 #### Câu hỏi: Tôi có thể đưa các thành phần tùy chọn vào trường địa chỉ gửi thư bằng Aspose.Words cho .NET không?
 

@@ -2,138 +2,153 @@
 title: Pokaż Ukryj zakładki w dokumencie programu Word
 linktitle: Pokaż Ukryj zakładki w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak pokazać lub ukryć określoną zakładkę w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak dynamicznie wyświetlać lub ukrywać zakładki w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Idealny dla programistów.
 type: docs
 weight: 10
 url: /pl/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## Wstęp
 
-W tym artykule omówimy powyższy kod źródłowy C#, aby zrozumieć, jak używać funkcji Pokaż ukryj zakładki w bibliotece Aspose.Words dla .NET. Ta funkcja umożliwia pokazanie lub ukrycie określonej zakładki w dokumencie programu Word.
+Czy kiedykolwiek zdarzyło Ci się, że musiałeś dynamicznie ukrywać lub pokazywać pewne części dokumentu programu Word? Cóż, masz szczęście! Dzięki Aspose.Words dla .NET możesz łatwo zarządzać widocznością treści zakładek w swoich dokumentach. Ten samouczek przeprowadzi Cię przez proces pokazywania i ukrywania zakładek w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Podzielimy kod krok po kroku, więc niezależnie od tego, czy jesteś doświadczonym programistą, czy nowicjuszem, korzystanie z tego przewodnika będzie łatwe.
 
 ## Warunki wstępne
 
-- Podstawowa znajomość języka C#.
-- Środowisko programistyczne .NET z zainstalowaną biblioteką Aspose.Words.
+Zanim zagłębimy się w kod, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-## Krok 1: Ładowanie dokumentu
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli nie, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: IDE takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie korzystna.
+4. Dokument programu Word: przykładowy dokument programu Word z zakładkami.
 
- Używamy`Document` klasa, aby załadować istniejący dokument z pliku:
+## Importuj przestrzenie nazw
+
+Przed rozpoczęciem pracy z kodem musisz zaimportować niezbędne przestrzenie nazw. Dodaj następujący wpis na początku pliku C#:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## Krok 1: Załaduj swój dokument
+
+Najpierw musisz załadować dokument Word zawierający zakładki. Oto jak możesz to zrobić:
+
+```csharp
+// Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## Krok 2: Pokaż lub ukryj konkretną zakładkę
+### Wyjaśnienie
 
- Używamy`ShowHideBookmarkedContent` funkcja umożliwiająca pokazanie lub ukrycie określonej zakładki w dokumencie. Ta funkcja przyjmuje jako parametry dokument, nazwę zakładki i wartość logiczną wskazującą, czy pokazać, czy ukryć zakładkę:
+- dataDir: Jest to ścieżka katalogu, w którym znajduje się dokument programu Word.
+-  Dokument dokumentu: inicjuje nową instancję pliku`Document` class z określonym plikiem.
+
+## Krok 2: Pokaż lub ukryj zawartość dodaną do zakładek
+
+Następnie zdefiniujemy metodę pokazywania lub ukrywania zawartości dodanej do zakładek. Oto pełna metoda:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{Zakładka MERGEFIELD}" = "true" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### Wyjaśnienie
+
+- Bookmark bm: Pobiera zakładkę z dokumentu.
+- Kreator DocumentBuilder: Pomaga w nawigacji i modyfikowaniu dokumentu.
+- Pole pola: Wstawia pole JEŻELI w celu sprawdzenia stanu zakładki.
+- Węzeł currentNode: Przechodzi przez węzły, aby znaleźć początek i koniec pola.
+
+## Krok 3: Wykonaj funkcję Pokaż/Ukryj
+
+ Teraz musisz zadzwonić do`ShowHideBookmarkedContent` metodę, przekazując dokument, nazwę zakładki i flagę widoczności:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## Krok 3: Zapisanie zmodyfikowanego dokumentu
+### Wyjaśnienie
 
- Używamy`Save` metoda zapisania zmodyfikowanego dokumentu do pliku:
+- doc: Twój obiekt dokumentu.
+- „Moja zakładka1”: nazwa zakładki, którą chcesz pokazać/ukryć.
+- false: Flaga widoczności (true dla pokazywania, false dla ukrywania).
+
+## Krok 4: Zapisz swój dokument
+
+Na koniec zapisz zmodyfikowany dokument:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### Przykładowy kod źródłowy opcji Pokaż ukryj zakładki przy użyciu Aspose.Words dla .NET
+### Wyjaśnienie
 
-Oto pełny przykładowy kod źródłowy demonstrujący pokazywanie lub ukrywanie określonej zakładki przy użyciu Aspose.Words dla .NET:
+- dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx": Ścieżka i nazwa nowego dokumentu, w którym zostaną zapisane zmiany.
 
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### Kod źródłowy ShowHideBookmarkedContent
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {IF "{Zakładka MERGEFIELD}" = "true" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## Wniosek
 
-W tym artykule zbadaliśmy kod źródłowy C#, aby zrozumieć, jak korzystać z funkcji Pokaż ukryj zakładki w Aspose.Words dla .NET. Postępowaliśmy zgodnie z przewodnikiem krok po kroku, jak pokazać lub ukryć określoną zakładkę w dokumencie.
+I masz to! Pomyślnie nauczyłeś się, jak pokazywać i ukrywać zakładki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Technika ta może być niezwykle przydatna do dynamicznego generowania dokumentów z zawartością warunkową.
 
-### Często zadawane pytania dotyczące pokazywania i ukrywania zakładek w dokumencie programu Word
+## Często zadawane pytania
 
-#### P: Czy mogę pokazać lub ukryć wiele zakładek w tym samym dokumencie?
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do przetwarzania dokumentów, która umożliwia programistom programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word.
 
-O: Tak, możesz pokazać lub ukryć wiele zakładek w tym samym dokumencie, powtarzając kroki 2 i 3 dla każdej zakładki, którą chcesz przetworzyć.
+### Jak zdobyć Aspose.Words dla .NET?
+ Możesz pobrać Aspose.Words dla .NET z[Tutaj](https://releases.aspose.com/words/net/). Dostępny jest również bezpłatny okres próbny.
 
-#### P: Czy dostarczony kod działa z innymi formatami dokumentów programu Word, takimi jak .doc lub .docm?
+### Czy mogę użyć tej metody do innych typów zakładek?
+Tak, tę metodę można dostosować do zarządzania widocznością dowolnych zakładek w dokumencie programu Word.
 
-Odp.: Tak, dostarczony kod działa z różnymi formatami dokumentów Word obsługiwanymi przez Aspose.Words, takimi jak .doc i .docm. Pamiętaj tylko, aby podczas ładowania i zapisywania dokumentu użyć prawidłowej nazwy pliku i ścieżki.
+### Co się stanie, jeśli mój dokument nie zawiera określonej zakładki?
+Jeśli zakładka nie istnieje, metoda zgłosi błąd. Zanim spróbujesz ją pokazać/ukryć, upewnij się, że zakładka istnieje.
 
-#### P: Jak mogę ponownie wyświetlić ukrytą zakładkę?
-
- Odp.: Aby ponownie wyświetlić ukrytą zakładkę, musisz jej użyć`ShowHideBookmarkedContent` funkcja przekazująca wartość`true` dla parametru logicznego wskazującego, czy pokazać, czy ukryć zakładkę.
-
-#### P: Czy mogę używać warunków, aby pokazywać lub ukrywać zakładki na podstawie wartości pól scalania w dokumencie?
-
- O: Tak, możesz użyć warunków i wartości pól scalających, aby określić, czy zakładka ma być pokazana, czy ukryta. Możesz dostosować kod pliku`ShowHideBookmarkedContent` funkcję uwzględniającą odpowiednie warunki i wartości.
-
-#### P: Jak mogę usunąć zakładkę w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
-
- Odp.: Aby usunąć zakładkę w dokumencie programu Word za pomocą programu Aspose.Words dla .NET, możesz użyć metody`RemoveBookmarks` metoda`Document` klasa. Oto przykładowy kod:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### Jak mogę uzyskać pomoc, jeśli napotkam problemy?
+ Możesz uzyskać wsparcie od społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).

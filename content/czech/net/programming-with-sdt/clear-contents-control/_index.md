@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Načtěte dokument a získejte StructuredDocumentTag
- Načtěte dokument aplikace Word pomocí`Document` konstruktor, předá cestu k dokumentu jako parametr. Poté načtěte požadované`StructuredDocumentTag` z dokumentu. V tomto příkladu předpokládáme, že SDT je prvním podřízeným uzlem v dokumentu.
+ Načtěte dokument aplikace Word pomocí`Document` konstruktor, předá cestu k dokumentu jako parametr. Poté načtěte požadované`StructuredDocumentTag` dokumentu. V tomto příkladu předpokládáme, že SDT je prvním podřízeným uzlem v dokumentu.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Krok 4: Uložte dokument
- Uložte upravený dokument pomocí`Save`metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu dokument uložíme jako „WorkingWithSdt.ClearContentsControl.doc“.
+ Uložte upravený dokument pomocí`Save` metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu dokument uložíme jako „WorkingWithSdt.ClearContentsControl.doc“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

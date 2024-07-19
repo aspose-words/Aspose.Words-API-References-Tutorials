@@ -8,7 +8,7 @@ weight: 10
 url: /vi/net/programming-with-shapes/layout-in-cell/
 ---
 
-Hướng dẫn này giải thích cách bố trí hình trong ô bảng trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách điều chỉnh các thuộc tính hình dạng và sử dụng các tùy chọn bố cục, bạn có thể kiểm soát vị trí và hình thức của hình dạng trong ô.
+Hướng dẫn này giải thích cách bố trí hình dạng trong ô bảng trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách điều chỉnh các thuộc tính hình dạng và sử dụng các tùy chọn bố cục, bạn có thể kiểm soát vị trí và hình thức của hình dạng trong ô.
 
 ## Điều kiện tiên quyết
 Để làm theo hướng dẫn này, bạn cần có những điều sau:
@@ -17,14 +17,14 @@ Hướng dẫn này giải thích cách bố trí hình trong ô bảng trong t�
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tạo Tài liệu mới và DocumentBuilder
- Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder`đối tượng làm việc với tài liệu.
+ Tạo một phiên bản mới của`Document` lớp học và một`DocumentBuilder` đối tượng làm việc với tài liệu.
 
 ```csharp
 Document doc = new Document();

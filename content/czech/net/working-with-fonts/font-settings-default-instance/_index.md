@@ -17,7 +17,7 @@ Než začneme, ujistěte se, že máte následující:
 - Základní znalost C#: Znalost programování v C# vám pomůže porozumět a plynule implementovat kroky.
 -  Aspose.Words for .NET Library: Stáhněte a nainstalujte Aspose.Words for .NET z[odkaz ke stažení](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Vhodné prostředí jako Visual Studio pro psaní a spouštění vašeho kódu.
--  Vzorový dokument: Vzorový dokument (např.`Rendering.docx`), chcete-li použít nastavení písma.
+- Vzorový dokument: Vzorový dokument (např.`Rendering.docx`), chcete-li použít nastavení písma.
 
 ## Importovat jmenné prostory
 
@@ -55,7 +55,7 @@ V tomto příkladu:
 
 ## Krok 3: Vložte dokument
 
- nakonfigurovanými zdroji písem je dalším krokem načtení dokumentu do souboru Aspose.Words`Document` objekt. To vám umožní manipulovat a případně uložit dokument.
+ S nakonfigurovanými zdroji písem je dalším krokem načtení dokumentu do souboru Aspose.Words`Document` objekt. To vám umožní manipulovat a případně uložit dokument.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Gratulujeme! Osvojili jste si základy správy nastavení písem pomocí Aspose.
 
 ### Q1: Mohu používat písma z více vlastních složek?
 
- Ano, můžete zadat více`FolderFontSource`instance v rámci`SetFontsSources` metoda pro zahrnutí písem z různých složek.
+ Ano, můžete zadat více`FolderFontSource` instance v rámci`SetFontsSources` metoda pro zahrnutí písem z různých složek.
 
 ### Q2: Jak získám bezplatnou zkušební verzi Aspose.Words pro .NET?
 

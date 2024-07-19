@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Tiếp theo, chúng ta cần di chuyển con trỏ đến một đoạn cụ thể trong tài liệu mà chúng ta muốn chèn trường hợp nhất.
 
 ```csharp
-// Di chuyển con trỏ tới đoạn văn.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Bước 6: Chèn trường hợp nhất

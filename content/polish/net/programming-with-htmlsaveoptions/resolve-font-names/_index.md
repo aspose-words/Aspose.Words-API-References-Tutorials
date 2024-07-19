@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Ten kod tworzy instancję`HtmlSaveOptions` ustawia`ResolveFontNames` opcja`true`aby rozwiązać brakujące nazwy czcionek podczas konwersji do formatu HTML. Również,`PrettyFormat` opcja jest ustawiona na`true` aby uzyskać ładnie sformatowany kod HTML.
+ Ten kod tworzy instancję`HtmlSaveOptions` i ustawia`ResolveFontNames` opcja`true`aby rozwiązać brakujące nazwy czcionek podczas konwersji do formatu HTML. Również,`PrettyFormat` opcja jest ustawiona na`true` aby uzyskać ładnie sformatowany kod HTML.
 
 ## Krok 4: Konwertowanie i zapisywanie dokumentu do formatu HTML
 

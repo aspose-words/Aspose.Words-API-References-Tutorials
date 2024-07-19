@@ -2,77 +2,102 @@
 title: Putuskan tautan Header Footer
 linktitle: Putuskan tautan Header Footer
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggabungkan dan menambahkan dokumen Word sambil memutuskan tautan header dan footer menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara memutuskan tautan header dan footer di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci untuk menguasai manipulasi dokumen.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/unlink-headers-footers/
 ---
+## Perkenalan
 
-Tutorial ini akan memandu Anda melalui proses penggunaan fitur Unlink Headers Footers Aspose.Words untuk .NET. Fitur ini memungkinkan Anda untuk menggabungkan dan menambahkan dokumen Word sambil memutuskan tautan header dan footer dari dokumen sumber.
+Dalam dunia pemrosesan dokumen, menjaga konsistensi header dan footer terkadang bisa menjadi sebuah tantangan. Baik Anda menggabungkan dokumen atau hanya ingin memiliki header dan footer berbeda untuk bagian berbeda, mengetahui cara memutuskan tautannya sangatlah penting. Hari ini, kita akan mendalami bagaimana Anda dapat mencapai hal ini menggunakan Aspose.Words untuk .NET. Kami akan menguraikannya langkah demi langkah sehingga Anda dapat mengikutinya dengan mudah. Siap menguasai manipulasi dokumen? Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum memulai, pastikan Anda memiliki hal berikut:
+Sebelum kita mendalami seluk beluknya, ada beberapa hal yang Anda perlukan:
 
-1. Aspose.Words untuk .NET diinstal. Anda dapat mendownloadnya dari situs Aspose atau menginstalnya melalui NuGet.
-2. Visual Studio atau lingkungan pengembangan C# lainnya.
+-  Aspose.Words untuk .NET Library: Anda dapat mengunduhnya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
+- .NET Framework: Pastikan Anda telah menginstal kerangka .NET yang kompatibel.
+- IDE: Visual Studio atau Lingkungan Pengembangan Terintegrasi yang kompatibel dengan .NET lainnya.
+- Pemahaman Dasar C#: Anda memerlukan pemahaman dasar tentang bahasa pemrograman C#.
 
-## Langkah 1: Inisialisasi Direktori Dokumen
+## Impor Namespace
 
- Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ubah nilai`dataDir` variabel ke jalur di mana dokumen Anda berada.
+Untuk memulai, pastikan untuk mengimpor namespace yang diperlukan dalam proyek Anda. Ini akan memungkinkan Anda mengakses perpustakaan Aspose.Words dan fitur-fiturnya.
 
 ```csharp
+using Aspose.Words;
+```
+
+Mari kita bagi prosesnya menjadi langkah-langkah yang dapat dikelola untuk membantu Anda memutuskan tautan header dan footer di dokumen Word Anda.
+
+## Langkah 1: Siapkan Proyek Anda
+
+Pertama, Anda harus menyiapkan lingkungan proyek Anda. Buka IDE Anda dan buat proyek .NET baru. Tambahkan referensi ke perpustakaan Aspose.Words yang Anda unduh sebelumnya.
+
+```csharp
+// Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Langkah 2: Muat Dokumen Sumber dan Tujuan
+## Langkah 2: Muat Dokumen Sumber
 
-Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
+Selanjutnya, Anda perlu memuat dokumen sumber yang ingin Anda modifikasi. Header dan footer dokumen ini akan dibatalkan tautannya.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
+```
+
+## Langkah 3: Muat Dokumen Tujuan
+
+Sekarang, muat dokumen tujuan tempat Anda akan menambahkan dokumen sumber setelah memutuskan tautan header dan footernya.
+
+```csharp
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Langkah 3: Putuskan tautan Header dan Footer di Dokumen Sumber
+## Langkah 4: Putuskan Tautan Header dan Footer
 
- Untuk memutuskan tautan header dan footer di dokumen sumber agar tidak melanjutkan header dan footer dokumen tujuan, Anda perlu mengatur`LinkToPrevious` properti dari`HeadersFooters` koleksi di bagian pertama dokumen sumber untuk`false`.
+ Langkah ini sangat penting. Untuk membatalkan tautan header dan footer dokumen sumber dari dokumen tujuan, Anda akan menggunakan`LinkToPrevious` metode. Metode ini memastikan bahwa header dan footer tidak terbawa ke dokumen terlampir.
 
 ```csharp
+// Putuskan tautan header dan footer di dokumen sumber untuk menghentikan hal ini
+//dari melanjutkan header dan footer dokumen tujuan.
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## Langkah 4: Tambahkan Dokumen Sumber ke Dokumen Tujuan
+## Langkah 5: Tambahkan Dokumen Sumber
 
- Sekarang, Anda dapat menambahkan dokumen sumber ke dokumen tujuan menggunakan`AppendDocument` metode`Document` kelas. Itu`ImportFormatMode.KeepSourceFormatting` parameter memastikan bahwa pemformatan sumber dipertahankan selama operasi penambahan.
+ Setelah membatalkan tautan header dan footer, Anda dapat menambahkan dokumen sumber ke dokumen tujuan. Menggunakan`AppendDocument` metode dan atur mode format impor ke`KeepSourceFormatting` untuk mempertahankan format asli dokumen sumber.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Langkah 5: Simpan Dokumen Akhir
+## Langkah 6: Simpan Dokumen Akhir
 
- Terakhir, simpan dokumen yang digabungkan dengan fitur Unlink Headers Footers yang diaktifkan menggunakan`Save` metode`Document` kelas.
+Terakhir, simpan dokumen yang baru dibuat. Dokumen ini akan memiliki konten dokumen sumber yang ditambahkan ke dokumen tujuan, dengan header dan footer tidak tertaut.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-### Contoh kode sumber untuk Unlink Headers Footers menggunakan Aspose.Words untuk .NET
+## Kesimpulan
 
-Berikut kode sumber lengkap untuk fitur "Batalkan Tautan Header Footer" di C# menggunakan Aspose.Words untuk .NET:
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda telah berhasil memutuskan tautan header dan footer di dokumen sumber dan menambahkannya ke dokumen tujuan menggunakan Aspose.Words untuk .NET. Teknik ini bisa sangat berguna ketika Anda bekerja dengan dokumen kompleks yang memerlukan header dan footer berbeda untuk bagian berbeda. Selamat membuat kode!
 
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Putuskan tautan header dan footer di dokumen sumber untuk menghentikan hal ini
-	// dari melanjutkan header dan footer dokumen tujuan.
-	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
-```
+### Apa itu Aspose.Words untuk .NET?  
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word dalam aplikasi .NET. Hal ini memungkinkan pengembang untuk membuat, memodifikasi, mengkonversi, dan mencetak dokumen secara terprogram.
 
-Itu dia! Anda telah berhasil mengimplementasikan fitur Unlink Headers Footers menggunakan Aspose.Words untuk .NET. Dokumen akhir akan berisi konten yang digabungkan dengan header dan footer dari dokumen sumber yang tidak ditautkan dari dokumen tujuan.
+### Bisakah saya membatalkan tautan header dan footer hanya untuk bagian tertentu?  
+ Ya, Anda dapat memutuskan tautan header dan footer untuk bagian tertentu dengan mengakses`HeadersFooters` properti bagian yang diinginkan dan menggunakan`LinkToPrevious` metode.
+
+### Apakah mungkin mempertahankan format asli dokumen sumber?  
+ Ya, saat menambahkan dokumen sumber, gunakan`ImportFormatMode.KeepSourceFormatting` pilihan untuk mempertahankan format asli.
+
+### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa .NET lain selain C#?  
+Sangat! Aspose.Words untuk .NET dapat digunakan dengan bahasa .NET apa pun, termasuk VB.NET dan F#.
+
+### Di mana saya dapat menemukan lebih banyak dokumentasi dan dukungan untuk Aspose.Words untuk .NET?  
+ Anda dapat menemukan dokumentasi lengkap di[Halaman dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/) , dan dukungan tersedia di[Asumsikan forum](https://forum.aspose.com/c/words/8).

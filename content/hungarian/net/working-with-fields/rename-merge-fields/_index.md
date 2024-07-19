@@ -88,7 +88,7 @@ Kövesse ezeket a lépéseket a dokumentum egyesítési mezőinek átnevezéséh
 
 #### K: Hogyan nevezhetem át az egyesített mezőket egy Word-dokumentumban az Aspose.Words for .NET használatával?
 
- V: A Word-dokumentum egyesített mezőinek átnevezéséhez az Aspose.Words for .NET használatával, a dokumentumban található mezők között lépkedhet a`FieldMergingArgs` osztályt, és használja a`FieldMergingArgs.FieldName` metódus a mező átnevezéséhez.
+ V: A Word-dokumentum egyesített mezőinek átnevezéséhez az Aspose.Words for .NET használatával, a dokumentumban lévő mezők között lépkedhet a`FieldMergingArgs` osztályt, és használja a`FieldMergingArgs.FieldName` metódus a mező átnevezéséhez.
 
 #### K: A Word-dokumentumban csak bizonyos egyesített mezőket lehet átnevezni az Aspose.Words for .NET segítségével?
 

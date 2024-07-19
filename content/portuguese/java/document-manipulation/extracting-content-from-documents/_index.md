@@ -232,7 +232,7 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ## Conclusão
 
-Parabéns! Você aprendeu como extrair conteúdo de documentos usando Aspose.Words for Java. Este guia abordou várias técnicas de extração, incluindo conteúdo entre nós de nível de bloco, marcadores, intervalos de comentários, parágrafos e muito mais. Agora você está equipado para lidar com a extração de conteúdo de documentos com eficiência em seus aplicativos Java.
+Parabéns! Você aprendeu como extrair conteúdo de documentos usando Aspose.Words for Java. Este guia abordou várias técnicas de extração, incluindo conteúdo entre nós de nível de bloco, marcadores, intervalos de comentários, parágrafos e muito mais. Agora você está equipado para lidar com a extração de conteúdo de documentos de maneira eficiente em seus aplicativos Java.
 
 ## Perguntas frequentes
 

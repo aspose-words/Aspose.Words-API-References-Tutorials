@@ -17,7 +17,7 @@ Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 - Základní znalost C# a XML.
 
 ## Krok 1: Nastavte adresář dokumentů
- Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři, kam chcete dokument uložit.
+ Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou k adresáři, kam chcete dokument uložit.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

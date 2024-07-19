@@ -102,7 +102,7 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 ### 在哪里可以找到更多文档？
 您可以找到有关[Aspose.Words for .NET 文档页面](https://reference.aspose.com/words/net/).
 
-### 我可以对多个文档自动执行这一过程吗？
+### 我可以对多个文档自动执行此过程吗？
 当然可以！您可以循环遍历文档集合并以编程方式将这些设置应用于每个文档。
 
 ### 如果我遇到问题或有疑问怎么办？

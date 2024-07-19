@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Passo 3: Configure as opções de salvamento do PDF
 
- Para incorporar todas as fontes no PDF resultante, precisamos configurar o`PdfSaveOptions` objeto com o`EmbedFullFonts` propriedade definida como`true`. Isso garante que todas as fontes usadas no documento sejam incluídas no arquivo PDF gerado.
+ Para incorporar todas as fontes no PDF resultante, precisamos configurar o`PdfSaveOptions` objeto com o`EmbedFullFonts` propriedade definida como`true`. Isso garante que todas as fontes utilizadas no documento sejam incluídas no arquivo PDF gerado.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };

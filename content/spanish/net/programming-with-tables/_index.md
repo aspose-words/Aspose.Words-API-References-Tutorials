@@ -32,8 +32,8 @@ Si sigue estos tutoriales, podrá aprovechar al máximo las funciones de manipul
 | [Fusión horizontal](./horizontal-merge/) | Aprenda cómo fusionar celdas horizontalmente en una tabla de Word con Aspose.Words para .NET. |
 | [Convertir a celdas fusionadas horizontalmente](./convert-to-horizontally-merged-cells/) | Aprenda a convertir celdas de una tabla en celdas fusionadas horizontalmente en un documento de Word con Aspose.Words para .NET. |
 | [Repetir filas en páginas siguientes](./repeat-rows-on-subsequent-pages/) | Aprenda a repetir filas de una tabla en páginas posteriores de un documento de Word con Aspose.Words para .NET. |
-| [Ajuste automático al ancho de página](./auto-fit-to-page-width/) | Aprenda cómo ajustar automáticamente una tabla al ancho de la página en un documento de Word con Aspose.Words para .NET. |
-| [Configuración de ancho preferida](./preferred-width-settings/) | Aprenda a establecer los anchos de celda de tabla preferidos en un documento de Word con Aspose.Words para .NET. |
+| [Ajuste automático a la ventana](./auto-fit-to-page-width/) | Ajuste automáticamente tablas a la ventana en documentos de Word usando Aspose.Words para .NET con esta guía paso a paso. Perfecto para documentos más limpios y profesionales. |
+| [Configuración de ancho preferida](./preferred-width-settings/) | Aprenda a crear tablas con configuraciones de ancho absoluto, relativo y automático en Aspose.Words para .NET con esta guía paso a paso. |
 | [Recuperar tipo de ancho preferido](./retrieve-preferred-width-type/) | Aprenda a recuperar el tipo y el valor de ancho preferido de una celda en una tabla de Word con Aspose.Words para .NET. |
 | [Obtener posición en la mesa](./get-table-position/) | Aprenda cómo obtener la posición de una tabla en un documento de Word con Aspose.Words para .NET. |
 | [Obtener posición de mesa flotante](./get-floating-table-position/) | Aprenda cómo obtener la posición de tablas flotantes en un documento de Word con Aspose.Words para .NET. |

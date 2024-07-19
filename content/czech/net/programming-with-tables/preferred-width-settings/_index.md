@@ -2,105 +2,131 @@
 title: Nastavení preferované šířky
 linktitle: Nastavení preferované šířky
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak nastavit preferované šířky buněk tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se vytvářet tabulky s absolutním, relativním a automatickým nastavením šířky v Aspose.Words for .NET pomocí tohoto podrobného průvodce.
 type: docs
 weight: 10
 url: /cs/net/programming-with-tables/preferred-width-settings/
 ---
+## Úvod
 
-V tomto tutoriálu se naučíme, jak nastavit preferované nastavení šířky pro buňky tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci určit různé preferované šířky pro buňky tabulky v dokumentech aplikace Word.
+Tabulky představují účinný způsob, jak organizovat a prezentovat informace v dokumentech aplikace Word. Při práci s tabulkami v Aspose.Words pro .NET máte několik možností pro nastavení šířky buněk tabulky, aby se zajistilo, že budou dokonale odpovídat rozvržení vašeho dokumentu. Tato příručka vás provede procesem vytváření tabulek s preferovaným nastavením šířky pomocí Aspose.Words pro .NET se zaměřením na absolutní, relativní a automatické možnosti velikosti. 
 
-## Krok 1: Nastavení projektu
-1. Spusťte Visual Studio a vytvořte nový projekt C#.
-2. Přidejte odkaz na knihovnu Aspose.Words for .NET.
+## Předpoklady
 
-## Krok 2: Vytvoření dokumentu a inicializace generátoru dokumentů
-Chcete-li spustit textový editor s dokumentem a generátorem dokumentů, postupujte takto:
+Než se pustíte do výukového programu, ujistěte se, že máte následující:
+
+1.  Aspose.Words for .NET: Ujistěte se, že máte ve svém vývojovém prostředí nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+
+2. Vývojové prostředí .NET: Mějte nastavené vývojové prostředí .NET, jako je Visual Studio.
+
+3. Základní znalost C#: Znalost programování v C# vám pomůže lépe porozumět úryvkům kódu a příkladům.
+
+4.  Dokumentace Aspose.Words: Viz[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) pro podrobné informace o API a další čtení.
+
+## Importovat jmenné prostory
+
+Než začnete kódovat, musíte do svého projektu C# importovat potřebné jmenné prostory:
 
 ```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// Vytvoření dokumentu
+Tyto jmenné prostory poskytují přístup k základním funkcím Aspose.Words a objektu Table, což vám umožňuje manipulovat s tabulkami dokumentů.
+
+Rozdělme si proces tvorby tabulky s různým preferovaným nastavením šířky do jasných, zvládnutelných kroků.
+
+## Krok 1: Inicializujte Document a DocumentBuilder
+
+Nadpis: Vytvoření nového dokumentu a DocumentBuilder
+
+ Vysvětlení: Začněte vytvořením nového dokumentu aplikace Word a a`DocumentBuilder` instance. The`DocumentBuilder` class poskytuje jednoduchý způsob, jak přidat obsah do vašeho dokumentu.
+
+```csharp
+// Definujte cestu k uložení dokumentu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Vytvořte nový dokument.
 Document doc = new Document();
 
-// Inicializujte generátor dokumentů
+// Vytvořte DocumentBuilder pro tento dokument.
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Nezapomeňte nahradit „VAŠE ADRESÁŘ DOKUMENTŮ“ skutečnou cestou k adresáři vašich dokumentů.
+ Zde určíte adresář, kam bude dokument uložen, a inicializujete jej`Document`a`DocumentBuilder` objektů.
 
-## Krok 3: Sestavení stolu s preferovanou šířkou
-Dále vytvoříme tabulku se třemi buňkami, které mají různé preferované šířky. Použijte následující kód:
+## Krok 2: Vložte první buňku tabulky s absolutní šířkou
+
+Vložte první buňku do tabulky s pevnou šířkou 40 bodů. To zajistí, že tato buňka si vždy zachová šířku 40 bodů bez ohledu na velikost tabulky.
 
 ```csharp
-// Začátek tabulky
-builder. StartTable();
 
-// Vložte buňku absolutní velikosti
-builder. InsertCell();
+// Vložte buňku absolutní velikosti.
+builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-builder.Writeln("Cell with a width of 40 points");
-
-// Vložit buňku relativní velikosti (v procentech)
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-builder.Writeln("Cell with 20% width");
-
-// Vložte buňku s automatickou velikostí
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-builder.Writeln("Auto-size cell. The size of this cell is calculated from the preferred width of the table. In this case, the cell will fill the rest of the available space.");
-
-// Konec stolu
-builder. EndTable();
+builder.Writeln("Cell at 40 points width");
 ```
 
-Zde použijeme tvůrce dokumentů k vytvoření tabulky se třemi buňkami. První buňka má preferovanou šířku 40 bodů, druhá buňka má preferovanou šířku 20 % šířky tabulky a třetí buňka má automatickou preferovanou šířku, která upravuje
+ tomto kroku začnete vytvářet tabulku a vložíte buňku s absolutní šířkou. The`PreferredWidth.FromPoints(40)` metoda nastaví šířku buňky na 40 bodů a`Shading.BackgroundPatternColor` použije světle žlutou barvu pozadí.
 
-  v závislosti na dostupném prostoru.
+## Krok 3: Vložte buňku relativní velikosti
 
-## Krok 4: Uložení upraveného dokumentu
-Nakonec musíme upravený dokument uložit s preferovaným nastavením šířky definovaným pro buňky tabulky. Použijte následující kód:
+Vložte další buňku o šířce 20 % celkové šířky tabulky. Tato relativní velikost zajišťuje, že se buňka přizpůsobí úměrně šířce tabulky.
 
 ```csharp
+// Vložte buňku relativní (procentuální) velikosti.
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
+builder.Writeln("Cell at 20% width");
+```
+
+Šířka této buňky bude 20 % celkové šířky tabulky, takže ji lze přizpůsobit různým velikostem obrazovky nebo rozvržení dokumentu.
+
+### Krok 4: Vložte buňku s automatickou velikostí
+
+Nakonec vložte buňku, která se automaticky přizpůsobí velikosti podle zbývajícího dostupného místa v tabulce.
+
+```csharp
+// Vložte buňku s automatickou velikostí.
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
+builder.Writeln("Cell automatically sized. The size of this cell is calculated from the table preferred width.");
+builder.Writeln("In this case the cell will fill up the rest of the available space.");
+```
+
+ The`PreferredWidth.Auto` nastavení umožňuje, aby se tato buňka roztahovala nebo smršťovala na základě prostoru, který zbyde po započtení ostatních buněk. To zajišťuje, že rozložení stolu vypadá vyváženě a profesionálně.
+
+## Krok 5: Dokončete a uložte dokument
+
+Jakmile vložíte všechny buňky, vyplňte tabulku a uložte dokument do zadané cesty.
+
+```csharp
+// Uložte dokument.
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
-
-### Ukázkový zdrojový kód pro nastavení preferované šířky pomocí Aspose.Words pro .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Vložte řádek tabulky složený ze tří buněk, které mají různé preferované šířky.
-	builder.StartTable();
-	// Vložte buňku absolutní velikosti.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-	builder.Writeln("Cell at 40 points width");
-	// Vložte buňku relativní (procentuální) velikosti.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-	builder.Writeln("Cell at 20% width");
-	// Vložte buňku s automatickou velikostí.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-	builder.Writeln(
-		"Cell automatically sized. The size of this cell is calculated from the table preferred width.");
-	builder.Writeln("In this case the cell will fill up the rest of the available space.");
-	doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
-```
+Tento krok dokončí tabulku a uloží dokument s názvem "WorkingWithTables.PreferredWidthSettings.docx" do vámi určeného adresáře.
 
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak nastavit preferovaná nastavení šířky pro buňky tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete přizpůsobit šířky buněk tabulky svým konkrétním potřebám v dokumentech aplikace Word.
+
+Vytváření tabulek s preferovaným nastavením šířky v Aspose.Words pro .NET je jednoduché, jakmile pochopíte různé dostupné možnosti velikosti. Ať už potřebujete pevnou, relativní nebo automatickou šířku buněk, Aspose.Words poskytuje flexibilitu pro efektivní zpracování různých scénářů rozvržení tabulek. Dodržováním kroků uvedených v této příručce můžete zajistit, aby vaše tabulky byly v dokumentech aplikace Word dobře strukturované a vizuálně přitažlivé.
+
+## FAQ
+
+### Jaký je rozdíl mezi absolutní a relativní šířkou buněk?
+Absolutní šířky buněk jsou pevné a nemění se, zatímco relativní šířky se upravují na základě celkové šířky tabulky.
+
+### Mohu pro relativní šířky použít záporná procenta?
+Ne, záporná procenta neplatí pro šířky buněk. Povolena jsou pouze kladná procenta.
+
+### Jak funguje funkce automatického přizpůsobení velikosti?
+Automatická změna velikosti upraví šířku buňky tak, aby zaplnila veškerý zbývající prostor v tabulce poté, co byla změněna velikost ostatních buněk.
+
+### Mohu použít různé styly na buňky s různým nastavením šířky?
+Ano, na buňky můžete použít různé styly a formátování bez ohledu na nastavení jejich šířky.
+
+### Co se stane, když je celková šířka tabulky menší než součet šířek všech buněk?
+Tabulka automaticky upraví šířky buněk tak, aby se vešly do dostupného prostoru, což může způsobit zmenšení některých buněk.

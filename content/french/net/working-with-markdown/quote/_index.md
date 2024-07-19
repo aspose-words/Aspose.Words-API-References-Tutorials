@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Étape 3 : Création de styles pour les niveaux imbriqués
 
- Nous pouvons créer des styles pour les niveaux imbriqués en utilisant le`Styles.Add` méthode du`Document` objet. Dans cet exemple, nous créons un style appelé « Quote1 » pour représenter un niveau de devis imbriqué.
+ Nous pouvons créer des styles pour les niveaux imbriqués en utilisant le`Styles.Add` méthode du`Document`objet. Dans cet exemple, nous créons un style appelé « Quote1 » pour représenter un niveau de devis imbriqué.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
@@ -75,4 +75,4 @@ R : Les citations Markdown ne prennent pas en charge les attributs spécifiques
 
 #### Q : Pouvez-vous intégrer des devis dans Markdown ?
 
-R : Oui, il est possible d'imbriquer les guillemets dans Markdown en ajoutant un niveau supplémentaire de crochets angulaires (`>`).
+: Oui, il est possible d'imbriquer les guillemets dans Markdown en ajoutant un niveau supplémentaire de crochets angulaires (`>`).

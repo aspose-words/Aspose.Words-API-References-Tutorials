@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // โหลดเอกสาร Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//กำหนดค่าตัวเลือกการสำรองข้อมูลด้วยคุณสมบัติ "ใช้แบบอักษรจากเครื่องเป้าหมาย"
+// กำหนดค่าตัวเลือกการสำรองข้อมูลด้วยคุณสมบัติ "ใช้แบบอักษรจากเครื่องเป้าหมาย"
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // แปลงเอกสารเป็น HTML คงที่

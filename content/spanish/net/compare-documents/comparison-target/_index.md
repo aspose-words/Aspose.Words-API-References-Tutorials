@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Paso 3: cargue sus documentos
 
-Muy bien, es hora de cargar los documentos que deseas comparar. Necesitará las rutas a estos documentos. Supongamos que tiene dos documentos:`DocumentA.docx` y`DocumentB.docx`.
+Muy bien, es hora de cargar los documentos que deseas comparar. Necesitará las rutas a estos documentos. Supongamos que tiene dos documentos:`DocumentA.docx`y`DocumentB.docx`.
 
 ```csharp
 // La ruta al directorio de documentos.

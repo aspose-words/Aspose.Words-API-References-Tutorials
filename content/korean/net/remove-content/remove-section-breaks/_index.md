@@ -46,7 +46,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 ```
 
 ## 4단계: 수정된 문서 저장
- 마지막으로 다음을 사용하여 수정된 문서를 저장하겠습니다.`Save` 방법. 수정된 문서에 대해 원하는 출력 파일 경로와 형식(예: DOCX)을 지정합니다.
+마지막으로 다음을 사용하여 수정된 문서를 저장하겠습니다.`Save` 방법. 수정된 문서에 대해 원하는 출력 파일 경로와 형식(예: DOCX)을 지정합니다.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

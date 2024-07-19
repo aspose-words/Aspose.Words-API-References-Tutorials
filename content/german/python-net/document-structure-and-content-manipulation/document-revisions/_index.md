@@ -1,7 +1,7 @@
 ---
 title: Nachverfolgen und Überprüfen von Dokumentrevisionen
 linktitle: Nachverfolgen und Überprüfen von Dokumentrevisionen
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie Dokumentrevisionen mit Aspose.Words für Python verfolgen und überprüfen. Schritt-für-Schritt-Anleitung mit Quellcode für effiziente Zusammenarbeit. Verbessern Sie noch heute Ihr Dokumentenmanagement!
 type: docs
 weight: 23
@@ -117,7 +117,7 @@ Aspose.Words für Python vereinfacht die Dokumentüberarbeitung und -verfolgung,
 
 ### Kann ich die Revisionsverfolgung für bestimmte Teile des Dokuments deaktivieren?
 
-Ja, Sie können die Revisionsverfolgung für bestimmte Abschnitte des Dokuments selektiv deaktivieren, indem Sie programmgesteuert die`TrackRevisions` Eigenschaft für diese Abschnitte.
+Ja, Sie können die Revisionsverfolgung für bestimmte Abschnitte des Dokuments selektiv deaktivieren, indem Sie die`TrackRevisions` Eigenschaft für diese Abschnitte.
 
 ### Ist es möglich, Änderungen mehrerer Mitwirkender zusammenzuführen?
 

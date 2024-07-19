@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Inicializálja a dokumentumot
 
- Kezdjük egy új Word dokumentum létrehozásával. Használjuk a`Document` és`DocumentBuilder` osztályok Aspose.Words.
+ Kezdjük egy új Word dokumentum létrehozásával. Használjuk a`Document`és`DocumentBuilder` osztályok Aspose.Words.
 
 ```csharp
 Document doc = new Document();

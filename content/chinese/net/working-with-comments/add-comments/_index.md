@@ -97,7 +97,7 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 
 #### 问：我可以删除 Aspose.Words for .NET 中的特定评论吗？
 
-答：是的，您可以使用 Aspose.Words for .NET 删除特定注释`Comment.Remove`方法。
+答：是的，您可以使用 Aspose.Words for .NET 中的以下方法删除特定注释：`Comment.Remove`方法。
 
 #### 问：如何修改 Aspose.Words for .NET 中现有注释的文本？
 

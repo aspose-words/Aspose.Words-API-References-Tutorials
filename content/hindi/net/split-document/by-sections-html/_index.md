@@ -15,14 +15,14 @@ url: /hi/net/split-document/by-sections-html/
 आरंभ करने के लिए, अपने दस्तावेज़ के लिए निर्देशिका निर्दिष्ट करें और दस्तावेज़ को दस्तावेज़ ऑब्जेक्ट में लोड करें। यहाँ बताया गया है कि कैसे:
 
 ```csharp
-// दस्तावेज़ निर्देशिका का पथ.
+//दस्तावेज़ निर्देशिका का पथ.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```
 
 ## चरण 2: दस्तावेज़ को HTML प्रारूप में अनुभागों में विभाजित करना
 
-अब हम दस्तावेज़ को HTML प्रारूप में अनुभागों में विभाजित करने के लिए सेव विकल्प सेट करेंगे। इसे करने का तरीका यहां बताया गया है:
+अब हम दस्तावेज़ को HTML प्रारूप में अनुभागों में विभाजित करने के लिए सेव विकल्प सेट करेंगे। इसे करने का तरीका इस प्रकार है:
 
 ```csharp
 HtmlSaveOptions options = new HtmlSaveOptions { DocumentSplitCriteria = DocumentSplitCriteria.SectionBreak };

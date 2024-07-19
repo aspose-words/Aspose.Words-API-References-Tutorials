@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Laden Sie das Dokument und klonen Sie den Abschnitt
- Als nächstes laden wir das Word-Dokument in eine Instanz des`Document` Klasse. Wir verwenden dann die`Clone` Methode zum Klonen des ersten Abschnitts des Dokuments.
+ Als nächstes laden wir das Word-Dokument in eine Instanz des`Document` Klasse. Wir verwenden dann die`Clone`Methode zum Klonen des ersten Abschnitts des Dokuments.
 
 ```csharp
 // Laden Sie das Dokument

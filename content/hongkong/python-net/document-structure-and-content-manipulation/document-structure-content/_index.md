@@ -143,7 +143,7 @@ footer_paragraph = footer.append_paragraph("Footer text")
 from aspose.words import Hyperlink
 
 # Add a hyperlink
-hyperlink = paragraph.append_hyperlink("https://www.example.com”，“點擊此處”）
+hyperlink = paragraph.append_hyperlink("https://www.example.com”，“點擊這裡”）
 
 # Add a bookmark
 bookmark = paragraph.range.bookmarks.add("section1")

@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-请务必将“您的文档目录”替换为您的文档目录的实际路径，并提供正确的文件名。
+请确保将“您的文档目录”替换为您的文档目录的实际路径，并提供正确的文件名。
 
 ## 步骤 3：划分表格
 接下来我们将从某一行开始拆分表格。使用以下代码：

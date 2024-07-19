@@ -2,196 +2,135 @@
 title: Word文書にブックマークを作成する
 linktitle: Word文書にブックマークを作成する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書にブックマークを作成し、PDF でブックマークのプレビュー レベルを指定する方法を学習します。
+description: この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書にブックマークを作成する方法を学習します。文書のナビゲーションと整理に最適です。
 type: docs
 weight: 10
 url: /ja/net/programming-with-bookmarks/create-bookmark/
 ---
+## 導入
 
-この記事では、上記の C# ソース コードを調べて、Aspose.Words for .NET ライブラリの Create Bookmark 関数の使用方法を理解します。この機能を使用すると、ドキュメントにブックマークを作成し、出力 PDF ファイルでブックマークのプレビュー レベルを指定できます。
+Word 文書にブックマークを作成すると、特に大きな文書を楽々とナビゲートしたい場合には、状況が一変する可能性があります。今日は、Aspose.Words for .NET を使用してブックマークを作成するプロセスについて説明します。このチュートリアルでは、プロセスの各部分を理解できるように、手順を追って説明します。それでは、早速始めましょう。
 
 ## 前提条件
 
-- C# 言語に関する基本的な知識。
-- Aspose.Words ライブラリがインストールされた .NET 開発環境。
+始める前に、次のものを用意する必要があります。
 
-## ステップ1: ドキュメントとジェネレーターの作成
+1.  Aspose.Words for .NETライブラリ: ダウンロードしてインストールしてください。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio またはその他の .NET 開発環境。
+3. C# の基礎知識: 基本的な C# プログラミング概念を理解していること。
 
-ブックマークを作成する前に、`Document`そして`DocumentBuilder`オブジェクト:
+## 名前空間のインポート
+
+Aspose.Words for .NET を使用するには、必要な名前空間をインポートする必要があります。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## ステップ1: ドキュメントとDocumentBuilderを設定する
+
+ドキュメントを初期化する
+
+まず、新しいドキュメントを作成し、`DocumentBuilder`これは、ドキュメントにコンテンツとブックマークを追加するための開始点です。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ2: メインブックマークの作成
+説明:`Document`オブジェクトはキャンバスです。`DocumentBuilder`ペンのようなもので、ドキュメントにコンテンツを書き込んだり、ブックマークを作成したりできます。
 
-私たちは`StartBookmark`メインブックマークを開始する方法と`EndBookmark`メソッドを使用して終了します。その間に、テキストやその他のブックマークを追加できます。
+## ステップ2: メインブックマークを作成する
+
+メインブックマークの開始と終了
+
+ブックマークを作成するには、開始点と終了点を指定する必要があります。ここでは、「My Bookmark」という名前のブックマークを作成します。
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-//ここにブックマークまたはテキストを追加します。
-
-builder. EndBookmark("My Bookmark");
 ```
+
+説明:`StartBookmark`メソッドはブックマークの始まりを示し、`Writeln`ブックマーク内にテキストを追加します。
 
 ## ステップ3: ネストされたブックマークを作成する
 
-メインのブックマークの中にネストされたブックマークを作成することもできます。`StartBookmark`そして`EndBookmark`ネストされたブックマークを作成および終了するメソッド:
+メインブックマーク内にネストされたブックマークを追加する
+
+ブックマークを他のブックマークの中にネストすることができます。ここでは、「マイブックマーク」内に「ネストされたブックマーク」を追加します。
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## ステップ4: 出力PDFファイルでブックマークのプレビューレベルを指定する
+説明: ブックマークをネストすると、より構造化された階層的なコンテンツ編成が可能になります。`EndBookmark`メソッドは現在のブックマークを閉じます。
 
-私たちは`PdfSaveOptions`オブジェクトを使用して、出力PDFファイルのブックマークプレビューレベルを指定します。`BookmarksOutlineLevels`財産
+## ステップ4: ネストされたブックマークの外側にテキストを追加する
 
-  メインのブックマークとネストされたブックマークをそれぞれのレベルとともに追加するには:
+コンテンツの追加を続ける
+
+ネストされたブックマークの後は、メインのブックマーク内にさらにコンテンツを追加し続けることができます。
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+説明: これにより、メインのブックマークにネストされたブックマークと追加のテキストの両方が含まれるようになります。
+
+## ステップ5: PDF保存オプションを設定する
+
+ブックマークのPDF保存オプションを設定する
+
+ドキュメントを PDF として保存するときに、ブックマークを含めるオプションを設定できます。
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+説明:`PdfSaveOptions`クラスを使用すると、ドキュメントをPDFとして保存する方法を指定できます。`BookmarksOutlineLevels`プロパティは、PDF 内のブックマークの階層を定義します。
+
+## ステップ6: ドキュメントを保存する
+
+文書をPDFとして保存する
+
+最後に、指定したオプションでドキュメントを保存します。
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### Aspose.Words for .NET を使用してブックマークを作成するためのサンプル ソース コード
-
-Aspose.Words for .NET を使用してブックマークを作成する方法を示す完全なサンプル ソース コードを以下に示します。
-
-```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+説明:`Save`メソッドは、指定された形式と場所でドキュメントを保存します。これで、PDF には作成したブックマークが含まれるようになります。
 
 ## 結論
 
-この記事では、C# ソース コードを調べて、Aspose.Words for .NET のブックマーク作成機能の使用方法を理解しました。ドキュメントにブックマークを作成し、出力 PDF ファイルでブックマークのプレビュー レベルを指定する手順ガイドに従いました。
+Aspose.Words for .NET を使用して Word 文書にブックマークを作成するのは簡単で、文書のナビゲーションと整理に非常に役立ちます。レポートの生成、電子書籍の作成、または大きな文書の管理など、ブックマークがあれば作業が簡単になります。このチュートリアルで説明されている手順に従えば、ブックマーク付きの PDF がすぐに作成されます。
 
-### よくある質問
+## よくある質問
 
-#### Q: Aspose.Words for .NET の「ブックマークの作成」機能を使用するための前提条件は何ですか?
+### 異なるレベルで複数のブックマークを作成できますか?
 
-A: Aspose.Words for .NET の「ブックマークの作成」機能を使用するには、C# 言語の基本的な知識が必要です。また、Aspose.Words ライブラリがインストールされた .NET 開発環境も必要です。
+もちろんです! ドキュメントを PDF として保存するときに、必要な数のブックマークを作成し、その階層レベルを定義できます。
 
-#### Q: Aspose.Words for .NET でドキュメントを作成するにはどうすればよいですか?
+### ブックマークのテキストを更新するにはどうすればよいですか?
 
- A: Aspose.Words for .NETでドキュメントを作成するには、`Document`クラス。サンプルコードは次のとおりです。
+ブックマークに移動するには、`DocumentBuilder.MoveToBookmark`その後、テキストを更新します。
 
-```csharp
-Document doc = new Document();
-```
+### ブックマークを削除することは可能ですか?
 
-#### Q: Aspose.Words for .NET を使用してドキュメントにマスター ブックマークを作成するにはどうすればよいですか?
+はい、ブックマークを削除するには、`Bookmarks.Remove`ブックマークの名前を指定してメソッドを実行します。
 
- A: Aspose.Words for .NETを使用してドキュメントにメインブックマークを作成するには、`StartBookmark`ブックマークを開始する方法、テキストや他のブックマークを内部に追加し、` EndBookmark`終了します。サンプルコードは次のとおりです。
+### PDF 以外の形式でブックマークを作成できますか?
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+はい、Aspose.Words は、DOCX、HTML、EPUB など、さまざまな形式のブックマークをサポートしています。
 
-#### Q: Aspose.Words for .NET を使用してメイン ブックマーク内にネストされたブックマークを作成するにはどうすればよいですか?
+### ブックマークが PDF に正しく表示されるようにするにはどうすればよいですか?
 
- A: Aspose.Words for .NETを使用してメインブックマーク内にネストされたブックマークを作成するには、同じ`StartBookmark`そして`EndBookmark`ネストされたブックマークを開始および終了するメソッド。サンプル コードは次のとおりです。
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### Q: Aspose.Words for .NET を使用して出力 PDF でブックマークのプレビュー レベルを指定する方法を教えてください。
-
- A: Aspose.Words for .NETを使用して出力PDFのブックマークプレビューレベルを指定するには、`PdfSaveOptions`クラスと`BookmarksOutlineLevels`プロパティ。それぞれのレベルでメイン ブックマークとネストされたブックマークを追加できます。サンプル コードは次のとおりです。
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### Q: Aspose.Words for .NET を使用してブックマークを作成した後、ドキュメントを保存するにはどうすればよいですか?
-
- A: Aspose.Words for .NETを使用してブックマークを作成した後にドキュメントを保存するには、`Save`方法の`Document`宛先ファイル パスを指定するオブジェクト。サンプル コードは次のとおりです。
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### Q: Aspose.Words for .NET を使用して出力 PDF でブックマークのプレビュー レベルを指定する方法を教えてください。
-
- A: Aspose.Words for .NETを使用して出力PDFのブックマークプレビューレベルを指定するには、`PdfSaveOptions`クラスと`BookmarksOutlineLevels`プロパティ。それぞれのレベルでメイン ブックマークとネストされたブックマークを追加できます。サンプル コードは次のとおりです。
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### Q: Aspose.Words for .NET を使用してメイン ブックマーク内にネストされたブックマークを作成するにはどうすればよいですか?
-
- A: Aspose.Words for .NETを使用してメインブックマーク内にネストされたブックマークを作成するには、同じ`StartBookmark`そして`EndBookmark`ネストされたブックマークを開始および終了するメソッド。呼び出すときは、必ず親ブックマークをパラメータとして指定してください。`StartBookmark`メソッド。サンプルコードは次のとおりです。
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### Q: Aspose.Words for .NET を使用してブックマーク内にテキストを追加するにはどうすればよいですか?
-
- A: Aspose.Words for .NETを使用してブックマーク内にテキストを追加するには、`Write`方法の`DocumentBuilder`追加するテキストを指定するオブジェクト。サンプルコードは次のとおりです。
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### Q: Aspose.Words for .NET を使用してドキュメントにマスター ブックマークを作成するにはどうすればよいですか?
-
- A: Aspose.Words for .NETを使用してドキュメントにメインブックマークを作成するには、`StartBookmark`ブックマークを開始する方法と`EndBookmark`終了する方法です。サンプルコードは次のとおりです。
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+必ず定義してください`BookmarksOutlineLevels`適切に`PdfSaveOptions`これにより、ブックマークが PDF のアウトラインに含まれるようになります。

@@ -2,102 +2,109 @@
 title: Onderteken Word-document
 linktitle: Onderteken Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een Word-document digitaal kunt ondertekenen met Aspose.Words voor .NET.
+description: Leer hoe u een Word-document ondertekent met Aspose.Words voor .NET met deze stapsgewijze handleiding. Beveilig uw documenten met gemak.
 type: docs
 weight: 10
 url: /nl/net/programming-with-digital-signatures/sign-document/
 ---
-In deze zelfstudie leiden we u door de stappen om de functie voor documentondertekening te gebruiken met Aspose.Words voor .NET. Met deze functie kunt u een Word-document digitaal ondertekenen met behulp van een certificaat. Volg onderstaande stappen:
+## Invoering
 
-## Stap 1: Het certificaat laden
+In de digitale wereld van vandaag is het beveiligen van uw documenten belangrijker dan ooit. Digitale handtekeningen bieden een manier om de authenticiteit en integriteit van uw documenten te garanderen. Als u een Word-document programmatisch wilt ondertekenen met Aspose.Words voor .NET, bent u hier aan het juiste adres. Deze gids leidt u stap voor stap door het hele proces, op een eenvoudige en boeiende manier.
 
-Begin met het laden van het handtekeningcertificaat met behulp van de klasse CertificateHolder:
+## Vereisten
+
+Voordat je in de code duikt, zijn er een paar dingen die je moet regelen:
+
+1.  Aspose.Words voor .NET: Zorg ervoor dat u de nieuwste versie van Aspose.Words voor .NET hebt geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+2. .NET-omgeving: Zorg ervoor dat u een .NET-ontwikkelomgeving hebt ingesteld (bijvoorbeeld Visual Studio).
+3. Digitaal certificaat: verkrijg een digitaal certificaat (bijvoorbeeld een .pfx-bestand) voor het ondertekenen van documenten.
+4. Te ondertekenen document: Zorg ervoor dat u een Word-document gereed heeft dat u wilt ondertekenen.
+
+## Naamruimten importeren
+
+Allereerst moet u de benodigde naamruimten importeren. Voeg de volgende gebruiksinstructies toe aan uw project:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.Security.Cryptography.X509Certificates;
+```
+
+Laten we het proces nu opsplitsen in beheersbare stappen.
+
+## Stap 1: Laad het digitale certificaat
+
+De eerste stap is het laden van het digitale certificaat uit het bestand. Dit certificaat wordt gebruikt om het document te ondertekenen.
+
+```csharp
+// Het pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Laad het digitale certificaat.
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Zorg ervoor dat u het juiste pad naar uw certificaat en het bijbehorende wachtwoord opgeeft.
+### Uitleg
 
-## Stap 2: Het document ondertekenen
+- `dataDir`: Dit is de map waar uw certificaat en documenten worden opgeslagen.
+- `CertificateHolder.Create` : Deze methode laadt het certificaat vanaf het opgegeven pad. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map, en`"morzal.pfx"` met de naam van uw certificaatbestand. De`"aw"` is het wachtwoord voor het certificaat.
 
-Gebruik de klasse DigitalSignatureUtil om het document te ondertekenen:
+## Stap 2: Laad het Word-document
 
-```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-	certHolder);
-```
-
-Zorg ervoor dat u de juiste paden voor het brondocument en het ondertekende document opgeeft.
-
-### Voorbeeldbroncode voor Sign Document met Aspose.Words voor .NET
-
-Hier is de volledige broncode om een document te ondertekenen met Aspose.Words voor .NET:
+Laad vervolgens het Word-document dat u wilt ondertekenen.
 
 ```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-		certHolder);
-
+// Laad het te ondertekenen document.
+Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-Door deze stappen te volgen, kunt u eenvoudig een Word-document ondertekenen met Aspose.Words voor .NET.
+### Uitleg
+
+- `Document` : Deze klasse vertegenwoordigt het Word-document. Vervangen`"Digitally signed.docx"`met de naam van uw document.
+
+## Stap 3: Onderteken het document
+
+ Gebruik nu de`DigitalSignatureUtil.Sign` methode om het document te ondertekenen.
+
+```csharp
+// Onderteken het document.
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx", certHolder);
+```
+
+### Uitleg
+
+- `DigitalSignatureUtil.Sign`: deze methode ondertekent het document met behulp van het geladen certificaat. De eerste parameter is het pad naar het originele document, de tweede is het pad naar het ondertekende document en de derde is de certificaathouder.
+
+## Stap 4: Bewaar het ondertekende document
+
+Sla ten slotte het ondertekende document op de opgegeven locatie op.
+
+```csharp
+// Bewaar het ondertekende document.
+doc.Save(dataDir + "Document.Signed.docx");
+```
+
+### Uitleg
+
+- `doc.Save` : met deze methode wordt het ondertekende document opgeslagen. Vervangen`"Document.Signed.docx"` met de gewenste naam van uw ondertekende document.
 
 ## Conclusie
 
- In deze zelfstudie hebben we de functie voor documentondertekening in Aspose.Words voor .NET onderzocht. Door een handtekeningcertificaat te laden en de`DigitalSignatureUtil.Sign` methode kunnen we een Word-document digitaal ondertekenen. Het ondertekenen van documenten biedt authenticatie en waarborgt de integriteit van de inhoud van het document, waardoor het een waardevolle functie is voor veilig en betrouwbaar documentbeheer.
+En daar heb je het! U hebt met succes een Word-document ondertekend met Aspose.Words voor .NET. Door deze eenvoudige stappen te volgen, kunt u ervoor zorgen dat uw documenten veilig worden ondertekend en geverifieerd. Vergeet niet dat digitale handtekeningen een krachtig hulpmiddel zijn bij het beschermen van de integriteit van uw documenten, dus maak er indien nodig gebruik van.
 
-### Veelgestelde vragen over het gebarenwoorddocument
+## Veelgestelde vragen
 
-#### Vraag: Wat is documentondertekening in Aspose.Words voor .NET?
+### Wat is een digitale handtekening?
+Een digitale handtekening is een elektronische vorm van een handtekening die kan worden gebruikt om de identiteit van de ondertekenaar te verifiëren en ervoor te zorgen dat het document niet is gewijzigd.
 
-A: Documentondertekening in Aspose.Words voor .NET verwijst naar het proces van het digitaal ondertekenen van een Word-document met behulp van een certificaat. Deze functie voegt een digitale handtekening toe aan het document, waardoor authenticiteit, integriteit en onweerlegbaarheid van de inhoud van het document wordt geboden.
+### Waarom heb ik een digitaal certificaat nodig?
+Voor het aanmaken van een digitale handtekening is een digitaal certificaat nodig. Het bevat een openbare sleutel en de identiteit van de certificaateigenaar, waardoor de handtekening kan worden geverifieerd.
 
-#### Vraag: Hoe kan ik het handtekeningcertificaat in Aspose.Words voor .NET laden?
+### Kan ik elk .pfx-bestand gebruiken voor ondertekening?
+Ja, zolang het .pfx-bestand een geldig digitaal certificaat bevat en u over het wachtwoord beschikt om er toegang toe te krijgen.
 
- A: Om het handtekeningcertificaat in Aspose.Words voor .NET te laden, kunt u de`CertificateHolder` klas. Maak een exemplaar van`CertificateHolder` door het pad naar het certificaatbestand en het bijbehorende wachtwoord op te geven. Hier is een voorbeeld:
+### Is Aspose.Words voor .NET gratis te gebruiken?
+ Aspose.Words voor .NET is een commerciële bibliotheek. U kunt een gratis proefversie downloaden[hier](https://releases.aspose.com/) , maar voor volledige functionaliteit moet u een licentie aanschaffen. Je kan het kopen[hier](https://purchase.aspose.com/buy).
 
-```csharp
-CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx", "password");
-```
-
-Zorg ervoor dat u het juiste pad naar uw certificaat en het bijbehorende wachtwoord opgeeft.
-
-#### Vraag: Hoe onderteken ik een Word-document met Aspose.Words voor .NET?
-
- A: Om een Word-document te ondertekenen met Aspose.Words voor .NET, kunt u de`DigitalSignatureUtil` klas. Bel de`Sign` methode, waarbij het pad naar het brondocument, het pad naar het ondertekende document (uitvoer) en de`CertificateHolder` voorwerp. Hier is een voorbeeld:
-
-```csharp
-DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/document.docx", certHolder);
-```
-
-Zorg ervoor dat u de juiste paden opgeeft voor het brondocument en het ondertekende document (uitvoer).
-
-#### Vraag: Wat is het doel van het ondertekenen van documenten?
-
-A: Het ondertekenen van documenten dient als een methode om de authenticiteit en integriteit van een document te garanderen. Door een document digitaal te ondertekenen, kunt u de herkomst ervan bewijzen, verifiëren dat de inhoud niet is gewijzigd en onweerlegbaarheid garanderen. Het ondertekenen van documenten wordt vaak gebruikt voor juridische, financiële en gevoelige documenten.
-
-#### Vraag: Kan ik elk certificaat gebruiken voor het ondertekenen van documenten in Aspose.Words voor .NET?
-
-A: Voor het ondertekenen van documenten in Aspose.Words voor .NET moet u een geldig X.509-certificaat gebruiken. Dit certificaat kan worden verkregen bij een vertrouwde certificeringsinstantie (CA) of een zelfondertekend certificaat kan worden gebruikt voor testdoeleinden.
-
-#### Vraag: Welk bestandsformaat ondersteunt Aspose.Words voor .NET voor het ondertekenen van documenten?
-
- A: Aspose.Words voor .NET ondersteunt documentondertekening voor Word-documenten in het DOCX-bestandsformaat. U kunt DOCX-bestanden ondertekenen met behulp van de`DigitalSignatureUtil` klasse en het bijbehorende certificaat.
-
-#### Vraag: Kan ik meerdere Word-documenten ondertekenen met hetzelfde certificaat?
-
-A: Ja, u kunt meerdere Word-documenten ondertekenen met hetzelfde certificaat. Nadat u het certificaat hebt geladen met behulp van de`CertificateHolder` class, kunt u deze opnieuw gebruiken om meerdere documenten te ondertekenen door de`DigitalSignatureUtil.Sign` methode met verschillende bron- en ondertekende documentpaden.
-
-#### Vraag: Wijzigt het ondertekenen van documenten het originele document?
-
-A: Het ondertekenen van documenten met Aspose.Words voor .NET wijzigt het originele document niet. In plaats daarvan wordt er een digitaal ondertekende kopie van het document gemaakt, waarbij het originele document intact blijft. De digitaal ondertekende kopie bevat de toegevoegde digitale handtekening, waardoor de integriteit van de inhoud van het document wordt gewaarborgd.
-
-#### Vraag: Kan ik de digitale handtekening van een ondertekend document verifiëren met Aspose.Words voor .NET?
-
- A: Ja, Aspose.Words voor .NET biedt functionaliteit om de digitale handtekening van een ondertekend document te verifiëren. U kunt gebruik maken van de`DigitalSignatureUtil.Verify` methode om de geldigheid en authenticiteit van de digitale handtekening te controleren.
+### Waar kan ik meer informatie vinden over Aspose.Words voor .NET?
+ U kunt uitgebreide documentatie vinden[hier](https://reference.aspose.com/words/net/) en ondersteuning[hier](https://forum.aspose.com/c/words/8).

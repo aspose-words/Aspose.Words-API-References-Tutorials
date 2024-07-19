@@ -33,7 +33,7 @@ Ahora configuraremos las opciones de guardado HTML para exportar la información
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Este código crea una instancia de`HtmlSaveOptions` establece el`ExportRoundtripInformation` opción de`true` para incluir información de ida y vuelta al exportar.
+ Este código crea una instancia de`HtmlSaveOptions` y establece el`ExportRoundtripInformation` opción de`true` para incluir información de ida y vuelta al exportar.
 
 ## Paso 4: convertir y guardar el documento a HTML
 
@@ -45,7 +45,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 Este código convierte el documento a HTML, incluida la información de ida y vuelta, y guarda el archivo HTML exportado en el directorio especificado.
 
-### Código fuente de ejemplo para exportar información de ida y vuelta utilizando Aspose.Words para .NET
+### Código fuente de ejemplo para exportar información de ida y vuelta usando Aspose.Words para .NET
 
 
 ```csharp

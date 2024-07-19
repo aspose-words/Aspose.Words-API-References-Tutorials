@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Itt a dokumentumkészítőt használjuk két fejlécsorral és több adatsorral rendelkező táblázat összeállítására. A`RowFormat.HeadingFormat`paraméterek a fejlécsorok megjelölésére szolgálnak, amelyeket a következő oldalakon meg kell ismételni.
+ Itt a dokumentumkészítőt használjuk két fejlécsorral és több adatsorral rendelkező táblázat összeállítására. A`RowFormat.HeadingFormat` paraméterek a fejlécsorok megjelölésére szolgálnak, amelyeket a következő oldalakon meg kell ismételni.
 
 ## 4. lépés: Mentse el a módosított dokumentumot
 Végül az USA

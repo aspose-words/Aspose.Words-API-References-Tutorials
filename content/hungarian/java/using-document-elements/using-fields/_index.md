@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Cserélje ki`"Your Document Directory"` és`"Your Output Directory"` a megfelelő utakkal.
+ Cserélje ki`"Your Document Directory"`és`"Your Output Directory"` a megfelelő utakkal.
 
 ## 4. A körlevél testreszabása
 

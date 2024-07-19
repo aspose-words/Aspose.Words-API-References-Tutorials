@@ -66,4 +66,4 @@ doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ```
 
 ## Conclusão
-Neste tutorial, aprendemos como definir a posição relativa horizontal ou vertical de uma tabela em um documento do Word usando Aspose.Words for .NET. Seguindo este guia passo a passo e implementando o código C# fornecido, você pode aplicar essa posição relativa às tabelas nos documentos do Word.
+Neste tutorial, aprendemos como definir a posição relativa horizontal ou vertical de uma tabela em um documento do Word usando Aspose.Words for .NET. Seguindo este guia passo a passo e implementando o código C# fornecido, você pode aplicar essa posição relativa às tabelas em seus documentos do Word.

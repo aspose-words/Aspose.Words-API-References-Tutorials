@@ -8,7 +8,7 @@ weight: 1640
 url: /pt/net/programming-with-markdownsaveoptions/
 ---
 
-Processamento de palavras com MarkdownSaveOptions é um recurso detalhado que orienta você no processamento de palavras com MarkdownSaveOptions usando a biblioteca Aspose.Words para .NET. Os tutoriais fornecem explicações passo a passo, código-fonte completo e exemplos práticos para entender e usar MarkdownSaveOptions para exportar documentos do Word para o formato Markdown. Você aprenderá como personalizar opções de exportação, como gerenciamento de imagens, alinhamento de conteúdo de tabela, conversão de estilos e muito mais. Este recurso é essencial para desenvolvedores que buscam integrar a funcionalidade de exportação Markdown em seus aplicativos usando Aspose.Words for .NET.
+Processamento de palavras com MarkdownSaveOptions é um recurso detalhado que orienta você no processamento de palavras com MarkdownSaveOptions usando a biblioteca Aspose.Words para .NET. Os tutoriais fornecem explicações passo a passo, código-fonte completo e exemplos práticos para entender e usar MarkdownSaveOptions para exportar documentos do Word para o formato Markdown. Você aprenderá como personalizar opções de exportação, como gerenciamento de imagens, alinhamento de conteúdo de tabela, conversão de estilos e muito mais. Este recurso é essencial para desenvolvedores que desejam integrar a funcionalidade de exportação Markdown em seus aplicativos usando Aspose.Words for .NET.
 
  ## Tutoriais
 | Título | Descrição |

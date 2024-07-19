@@ -336,7 +336,7 @@ watermark.setLeft(200);
 
 ### 1. Het ontwerp eenvoudig en consistent houden
 
-Zorg ervoor dat uw document niet rommelig wordt door overmatige opmaak en blijf bij een consistent ontwerp.
+Zorg ervoor dat uw document niet rommelig wordt door overmatige opmaak en blijf altijd bij een consistent ontwerp.
 
 ### 2. Witruimte effectief gebruiken
 
@@ -348,7 +348,7 @@ Bekijk en test altijd uw documenten op verschillende apparaten en platforms om e
 
 ## Conclusie
 
-Aspose.Words voor Java is een krachtige tool waarmee Java-ontwikkelaars hun documenten kunnen vormgeven en hun creativiteit de vrije loop kunnen laten. Of u nu professionele rapporten, visueel aantrekkelijke brieven of welk ander type document dan ook wilt maken, Aspose.Words voor Java heeft de oplossing voor u. Experimenteer met verschillende stijlen, lettertypen en opmaakopties om verbluffende documenten te maken die een blijvende indruk op uw publiek achterlaten.
+Aspose.Words voor Java is een krachtige tool waarmee Java-ontwikkelaars hun documenten kunnen vormgeven en hun creativiteit de vrije loop kunnen laten. Of u nu professionele rapporten, visueel aantrekkelijke brieven of een ander type document wilt maken, Aspose.Words voor Java heeft de oplossing voor u. Experimenteer met verschillende stijlen, lettertypen en opmaakopties om verbluffende documenten te maken die een blijvende indruk op uw publiek achterlaten.
 
 ---
 

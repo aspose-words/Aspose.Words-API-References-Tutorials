@@ -21,7 +21,7 @@ Um Aspose.Words in Ihrem Projekt zu verwenden, müssen Sie die erforderlichen Re
 Bevor Sie Felder konvertieren können, müssen Sie das Dokument laden, das die zu konvertierenden Felder enthält. Achten Sie darauf, den richtigen Pfad zum Verzeichnis anzugeben, das das Dokument enthält. So laden Sie das Dokument hoch:
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
+//Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Legen Sie das Dokument ein.
@@ -56,7 +56,7 @@ Achten Sie darauf, den richtigen Pfad und Dateinamen für die Sicherung anzugebe
 ### Quellcodebeispiel zum Konvertieren von Feldern in Absätze mit Aspose.Words für .NET
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
+//Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Legen Sie das Dokument ein.

@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListInde
 
 ```
 
-现在您已使用制表符生成了列表缩进的文档，您可以使用 Markdown 来格式化文章内容。请务必使用适当的格式标签来突出显示标题、副标题和包含的源代码。
+现在您已使用制表符生成了列表缩进的文档，接下来可以使用 Markdown 来格式化文章内容。请务必使用适当的格式化标签来突出显示标题、副标题和包含的源代码。
 
 ### 经常问的问题
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListInde
 Aspose.Words for .NET 的“每级使用一个制表符进行列表缩进”功能允许在每个级别应用制表符进行列表缩进。这为文档的外观提供了更大的灵活性和控制力。
 
 #### 问：如何在 Aspose.Words for .NET 中使用此功能？
-要将此功能与 Aspose.Words for .NET 一起使用，请按照以下步骤操作：
+要将此功能与 Aspose.Words for .NET 结合使用，请按照以下步骤操作：
 
 通过添加必要的引用和导入适当的命名空间来设置您的开发环境。
 

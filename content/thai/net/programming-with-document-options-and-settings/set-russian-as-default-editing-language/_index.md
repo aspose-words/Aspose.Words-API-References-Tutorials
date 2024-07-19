@@ -2,66 +2,115 @@
 title: ตั้งค่าภาษารัสเซียเป็นภาษาการแก้ไขเริ่มต้น
 linktitle: ตั้งค่าภาษารัสเซียเป็นภาษาการแก้ไขเริ่มต้น
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: คำแนะนำทีละขั้นตอนในการตั้งค่าภาษารัสเซียเป็นภาษาเริ่มต้นในการแก้ไขเอกสารด้วย Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีตั้งค่าภาษารัสเซียเป็นภาษาเริ่มต้นสำหรับการแก้ไขในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อดูคำแนะนำโดยละเอียด
 type: docs
 weight: 10
 url: /th/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/
 ---
+## การแนะนำ
 
-ในบทช่วยสอนนี้ เราจะแนะนำคุณเกี่ยวกับซอร์สโค้ด C# เพื่อตั้งค่าภาษารัสเซียเป็นภาษาแก้ไขเริ่มต้นด้วย Aspose.Words สำหรับ .NET คุณสมบัตินี้ช่วยให้คุณสามารถตั้งค่าภาษาเริ่มต้นเมื่อโหลดเอกสาร
+ในโลกที่มีหลายภาษาในปัจจุบัน มักจำเป็นต้องปรับแต่งเอกสารของคุณให้ตรงกับการตั้งค่าภาษาของผู้ฟังที่แตกต่างกัน การตั้งค่าภาษาสำหรับการแก้ไขเริ่มต้นในเอกสาร Word ถือเป็นการปรับแต่งอย่างหนึ่ง หากคุณใช้ Aspose.Words สำหรับ .NET บทช่วยสอนนี้จะแนะนำคุณตลอดการตั้งค่าภาษารัสเซียเป็นภาษาเริ่มต้นสำหรับการแก้ไขในเอกสาร Word ของคุณ 
 
-## ขั้นตอนที่ 1: การตั้งค่าโครงการ
+คำแนะนำทีละขั้นตอนนี้ช่วยให้คุณเข้าใจแต่ละส่วนของกระบวนการ ตั้งแต่การตั้งค่าสภาพแวดล้อมไปจนถึงการตรวจสอบการตั้งค่าภาษาในเอกสารของคุณ
 
-ในการเริ่มต้น ให้สร้างโปรเจ็กต์ C# ใหม่ใน IDE ที่คุณชื่นชอบ ตรวจสอบให้แน่ใจว่าไลบรารี Aspose.Words สำหรับ .NET ถูกอ้างอิงในโปรเจ็กต์ของคุณ
+## ข้อกำหนดเบื้องต้น
 
-## ขั้นตอนที่ 2: กำลังโหลดเอกสาร
+ก่อนที่จะเจาะลึกในส่วนของการเขียนโค้ด ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นต่อไปนี้:
 
-ในขั้นตอนนี้ เราจะโหลดเอกสาร Word ที่เราต้องการตั้งค่าภาษารัสเซียเป็นภาษาเริ่มต้นสำหรับการแก้ไข ใช้รหัสต่อไปนี้เพื่อโหลดเอกสาร:
+1.  Aspose.Words สำหรับ .NET: คุณต้องมีไลบรารี Aspose.Words สำหรับ .NET คุณสามารถดาวน์โหลดได้จาก[กำหนดเผยแพร่](https://releases.aspose.com/words/net/) หน้าหนังสือ.
+2. สภาพแวดล้อมการพัฒนา: แนะนำให้ใช้ IDE เช่น Visual Studio สำหรับการเขียนโค้ดและการรันแอปพลิเคชัน .NET
+3. ความรู้พื้นฐานเกี่ยวกับ C#: การทำความเข้าใจภาษาการเขียนโปรแกรม C# และกรอบงาน .NET เป็นสิ่งจำเป็นสำหรับการติดตามบทช่วยสอนนี้
+
+## นำเข้าเนมสเปซ
+
+ก่อนที่เราจะเจาะลึกเรื่องเฉพาะ ตรวจสอบให้แน่ใจว่าคุณได้นำเข้าเนมสเปซที่จำเป็นในโปรเจ็กต์ของคุณ เนมสเปซเหล่านี้ให้การเข้าถึงคลาสและวิธีการที่จำเป็นในการจัดการเอกสาร Word
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+## ขั้นตอนที่ 1: การตั้งค่า LoadOptions
+
+ ก่อนอื่นเราต้องกำหนดค่าไฟล์`LoadOptions` เพื่อตั้งค่าภาษาเริ่มต้นสำหรับการแก้ไขเป็นภาษารัสเซีย ขั้นตอนนี้เกี่ยวข้องกับการสร้างอินสแตนซ์ของ`LoadOptions` และตั้งค่าของมัน`LanguagePreferences.DefaultEditingLanguage` คุณสมบัติ.
+
+### สร้างอินสแตนซ์ LoadOptions
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
-loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
+```
 
-// พาธไปยังไดเร็กทอรีเอกสาร
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+### ตั้งค่าภาษาการแก้ไขเริ่มต้นเป็นภาษารัสเซีย
+
+```csharp
+loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
+```
+
+ ในขั้นตอนนี้ คุณจะสร้างอินสแตนซ์ของ`LoadOptions` และตั้งค่าของมัน`DefaultEditingLanguage`ทรัพย์สินเพื่อ`EditingLanguage.Russian`- ซึ่งจะเป็นการบอกให้ Aspose.Words ถือว่าภาษารัสเซียเป็นภาษาแก้ไขเริ่มต้นทุกครั้งที่โหลดเอกสารด้วยตัวเลือกเหล่านี้
+
+## ขั้นตอนที่ 2: โหลดเอกสาร
+
+ ต่อไปเราต้องโหลดเอกสาร Word โดยใช้ไฟล์`LoadOptions` กำหนดค่าไว้ในขั้นตอนก่อนหน้า ซึ่งเกี่ยวข้องกับการระบุเส้นทางไปยังเอกสารของคุณและส่งต่อ`LoadOptions` ตัวอย่างไปยัง`Document` ตัวสร้าง
+
+### ระบุเส้นทางเอกสาร
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+### โหลดเอกสารด้วย LoadOptions
+
+```csharp
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 ```
 
- แทนที่`"YOUR DOCUMENTS DIRECTORY"` ด้วยเส้นทางจริงของไดเร็กทอรีที่เอกสารของคุณตั้งอยู่
+ ในขั้นตอนนี้ คุณจะต้องระบุเส้นทางไดเร็กทอรีที่มีเอกสารของคุณอยู่ และโหลดเอกสารโดยใช้`Document` ตัวสร้าง ที่`LoadOptions` ตรวจสอบให้แน่ใจว่าภาษารัสเซียได้รับการตั้งค่าเป็นภาษาเริ่มต้นในการแก้ไข
 
-## ขั้นตอนที่ 3: การตรวจสอบภาษาเริ่มต้น
+## ขั้นตอนที่ 3: ตรวจสอบภาษาการแก้ไขเริ่มต้น
 
-หลังจากอัปโหลดเอกสาร เราจะตรวจสอบว่าภาษาเริ่มต้นได้รับการตั้งค่าอย่างถูกต้องเป็นภาษารัสเซียหรือไม่ ใช้รหัสต่อไปนี้เพื่อรับรหัสภาษาเริ่มต้น:
+ หลังจากโหลดเอกสารแล้ว สิ่งสำคัญคือต้องตรวจสอบว่าภาษาสำหรับการแก้ไขเริ่มต้นเป็นภาษารัสเซียหรือไม่ สิ่งนี้เกี่ยวข้องกับการตรวจสอบ`LocaleId` ของรูปแบบแบบอักษรเริ่มต้นของเอกสาร
+
+### รับ LocaleId ของแบบอักษรเริ่มต้น
 
 ```csharp
 int localeId = doc.Styles.DefaultFont.LocaleId;
-Console.WriteLine(
-	localeId == (int) EditingLanguage.Russian
-		? "The document either has no any language set in defaults or it was set to Russian originally."
-		: "The document default language was set to another than Russian language originally, so it is not overridden.");
 ```
 
-รหัสจะตรวจสอบว่ารหัสภาษาตรงกับภาษารัสเซียหรือไม่ ตามผลลัพธ์จะแสดงข้อความที่เกี่ยวข้อง
-
-### ตัวอย่างซอร์สโค้ดสำหรับตั้งค่าภาษารัสเซียเป็นภาษาการแก้ไขเริ่มต้นโดยใช้ Aspose.Words สำหรับ .NET
+### ตรวจสอบว่า LocaleId ตรงกับภาษารัสเซียหรือไม่
 
 ```csharp
-
-	LoadOptions loadOptions = new LoadOptions();
-	loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
-	
-	// เส้นทางไปยังไดเร็กทอรีเอกสาร
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
-
-	int localeId = doc.Styles.DefaultFont.LocaleId;
-	Console.WriteLine(
-		localeId == (int) EditingLanguage.Russian
-			? "The document either has no any language set in defaults or it was set to Russian originally."
-			: "The document default language was set to another than Russian language originally, so it is not overridden.");
-
+Console.WriteLine(
+    localeId == (int)EditingLanguage.Russian
+        ? "The document either has no any language set in defaults or it was set to Russian originally."
+        : "The document default language was set to another than Russian language originally, so it is not overridden.");
 ```
 
- อย่าลืมระบุเส้นทางเอกสารที่ถูกต้องใน`dataDir` ตัวแปร.
+ ในขั้นตอนนี้ คุณจะดึงข้อมูลไฟล์`LocaleId` ของรูปแบบตัวอักษรเริ่มต้นและเปรียบเทียบกับ`EditingLanguage.Russian` ตัวระบุ ข้อความเอาต์พุตจะระบุว่าภาษาเริ่มต้นถูกตั้งค่าเป็นภาษารัสเซียหรือไม่
 
-ตอนนี้คุณได้เรียนรู้วิธีตั้งค่าภาษารัสเซียเป็นภาษาเริ่มต้นสำหรับการแก้ไขสำหรับเอกสารโดยใช้ Aspose.Words สำหรับ .NET โดยปฏิบัติตามคำแนะนำขั้นตอน
+## บทสรุป
+
+ การตั้งค่าภาษารัสเซียเป็นภาษาแก้ไขเริ่มต้นในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET นั้นตรงไปตรงมาด้วยขั้นตอนที่ถูกต้อง โดยการกำหนดค่า`LoadOptions`เมื่อโหลดเอกสารและยืนยันการตั้งค่าภาษา คุณจะมั่นใจได้ว่าเอกสารของคุณตรงตามความต้องการด้านภาษาของผู้ฟัง 
+
+คู่มือนี้มีกระบวนการที่ชัดเจนและมีรายละเอียดเพื่อช่วยให้คุณบรรลุการปรับแต่งนี้ได้อย่างมีประสิทธิภาพ
+
+## คำถามที่พบบ่อย
+
+### Aspose.Words สำหรับ .NET คืออะไร
+
+Aspose.Words for .NET เป็นไลบรารีที่มีประสิทธิภาพสำหรับการทำงานกับเอกสาร Word โดยทางโปรแกรมภายในแอปพลิเคชัน .NET ช่วยให้สามารถสร้างเอกสาร จัดการ และแปลงเอกสารได้
+
+### ฉันจะดาวน์โหลด Aspose.Words สำหรับ .NET ได้อย่างไร
+
+ คุณสามารถดาวน์โหลด Aspose.Words สำหรับ .NET ได้จาก[กำหนดเผยแพร่](https://releases.aspose.com/words/net/) หน้าหนังสือ.
+
+###  คืออะไร`LoadOptions` used for?
+
+`LoadOptions` ใช้เพื่อระบุตัวเลือกต่างๆ สำหรับการโหลดเอกสาร เช่น การตั้งค่าภาษาเริ่มต้นในการแก้ไข
+
+### ฉันสามารถตั้งค่าภาษาอื่นเป็นภาษาเริ่มต้นสำหรับการแก้ไขได้หรือไม่
+
+ ใช่ คุณสามารถตั้งค่าภาษาใดๆ ที่ Aspose.Words รองรับได้โดยการกำหนดภาษาที่เหมาะสม`EditingLanguage` มูลค่าถึง`DefaultEditingLanguage`.
+
+### ฉันจะรับการสนับสนุนสำหรับ Aspose.Words สำหรับ .NET ได้อย่างไร
+
+ คุณสามารถรับการสนับสนุนจาก[กำหนดการสนับสนุน](https://forum.aspose.com/c/words/8) ฟอรัมที่คุณสามารถถามคำถามและรับความช่วยเหลือจากชุมชนและนักพัฒนา Aspose

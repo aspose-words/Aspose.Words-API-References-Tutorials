@@ -7,98 +7,118 @@ type: docs
 weight: 10
 url: /id/net/programming-with-charts/bounds-of-axis/
 ---
+## Perkenalan
 
-Tutorial ini menjelaskan cara mengatur batas sumbu dalam bagan menggunakan Aspose.Words untuk .NET. Dengan menyisipkan bagan, menambahkan data seri, dan mengonfigurasi penskalaan sumbu, Anda dapat menentukan nilai minimum dan maksimum untuk sumbu tersebut.
+Apakah Anda ingin membuat dokumen profesional dengan bagan di .NET? Anda berada di tempat yang tepat! Panduan ini akan memandu Anda melalui proses penggunaan Aspose.Words untuk .NET untuk mengatur batas sumbu dalam bagan. Kami akan menguraikan setiap langkah untuk memastikan Anda dapat mengikutinya dengan mudah, bahkan jika Anda baru mengenal perpustakaan. Jadi, mari selami dan mulai!
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
 
-- Aspose.Words untuk perpustakaan .NET diinstal.
-- Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
-## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+-  Aspose.Words untuk .NET: Anda bisa[unduh](https://releases.aspose.com/words/net/) versi terbaru atau gunakan a[uji coba gratis](https://releases.aspose.com/).
+- .NET Framework: Pastikan Anda telah menginstal .NET di sistem Anda.
+- IDE: Lingkungan pengembangan seperti Visual Studio.
+
+Setelah semuanya siap, kita dapat melanjutkan ke langkah berikutnya.
+
+## Impor Namespace
+
+Untuk memulai, Anda harus mengimpor namespace yang diperlukan. Ini akan memungkinkan Anda untuk mengakses perpustakaan Aspose.Words dan fitur pembuatan bagannya.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+Hal pertama yang pertama, Anda perlu mengatur direktori tempat dokumen Anda akan disimpan. Ini adalah langkah sederhana namun penting untuk mengatur file Anda.
+
+```csharp
+// Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Langkah 2: Buat Dokumen Baru dan DocumentBuilder
- Buat instance baru dari`Document` kelas dan a`DocumentBuilder`keberatan untuk bekerja dengan dokumen tersebut.
+## Langkah 2: Buat Dokumen Baru
+
+Selanjutnya, buat objek dokumen baru. Dokumen ini akan berfungsi sebagai wadah untuk bagan Anda.
 
 ```csharp
 Document doc = new Document();
+```
+
+## Langkah 3: Inisialisasi Pembuat Dokumen
+
+Kelas DocumentBuilder menyediakan cara cepat dan mudah untuk membuat dokumen. Inisialisasi dengan dokumen Anda.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 3: Sisipkan dan Konfigurasikan Bagan
- Sisipkan bagan ke dalam dokumen menggunakan`InsertChart` metode`DocumentBuilder` obyek. Tetapkan jenis dan dimensi bagan yang diinginkan.
+## Langkah 4: Sisipkan Bagan
+
+Sekarang, saatnya menyisipkan bagan ke dalam dokumen Anda. Dalam contoh ini, kita akan menggunakan bagan Kolom.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Langkah 4: Tambahkan Data Seri
-Hapus semua rangkaian yang ada di diagram dan tambahkan data rangkaian baru. Dalam contoh ini, kami menambahkan rangkaian dengan label "Item 1" ke "Item 5" dan nilai yang sesuai.
+## Langkah 5: Hapus Seri yang Ada
+
+Untuk memastikan bahwa Anda memulai dengan awal yang bersih, hapus semua rangkaian yang ada dari bagan.
 
 ```csharp
 chart.Series.Clear();
+```
+
+## Langkah 6: Tambahkan Data ke Bagan
+
+Di sini, kami menambahkan data ke grafik. Ini termasuk menentukan nama seri dan titik data.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Langkah 5: Tetapkan Batas Sumbu
- Konfigurasikan penskalaan sumbu Y dengan mengatur nilai minimum dan maksimum menggunakan`Scaling.Minimum` Dan`Scaling.Maximum` sifat-sifat sumbu.
+## Langkah 7: Tetapkan Batas Sumbu
+
+Menetapkan batas sumbu Y memastikan skala bagan Anda benar.
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
 chart.AxisY.Scaling.Maximum = new AxisBound(6);
 ```
 
-## Langkah 6: Simpan Dokumen
- Simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithCharts.BoundsOfAxis.docx".
+## Langkah 8: Simpan Dokumen
+
+Terakhir, simpan dokumen Anda ke direktori yang ditentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-### Contoh kode sumber untuk Bounds Of Axis menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Scaling.Minimum = new AxisBound(0);
-	chart.AxisY.Scaling.Maximum = new AxisBound(6);
-	doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
-```
-
-Itu dia! Anda telah berhasil menetapkan batas sumbu dalam bagan menggunakan Aspose.Words untuk .NET.
+Dan itu saja! Anda telah berhasil membuat dokumen dengan bagan menggunakan Aspose.Words untuk .NET. 
 
 ## Kesimpulan
-Dalam tutorial ini, Anda telah mempelajari cara mengatur batas sumbu dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah, Anda dapat menyisipkan dan mengonfigurasi bagan, menambahkan data seri, dan menentukan nilai minimum dan maksimum untuk penskalaan sumbu. Aspose.Words for .NET menyediakan API yang kuat dan fleksibel untuk Pemrosesan Kata dengan dokumen Word, memungkinkan Anda membuat bagan yang dinamis dan menarik secara visual dengan mudah.
 
+Menggunakan Aspose.Words untuk .NET, Anda dapat dengan mudah membuat dan memanipulasi bagan di dokumen Anda. Panduan langkah demi langkah ini menunjukkan kepada Anda cara mengatur batas sumbu dalam bagan, menjadikan presentasi data Anda lebih tepat dan profesional. Baik Anda membuat laporan, presentasi, atau dokumen lainnya, Aspose.Words menyediakan alat yang Anda perlukan.
 
-### FAQ
+## FAQ
 
-#### Q1. Apa itu Aspose.Words untuk .NET?
-Aspose.Words for .NET adalah perpustakaan yang memungkinkan pengembang bekerja dengan dokumen Word secara terprogram. Ini menyediakan berbagai fitur dan fungsi untuk membuat, memanipulasi, dan menyimpan dokumen Word.
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah pustaka yang memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram menggunakan kerangka .NET.
 
-#### Q2. Bagaimana cara menginstal Aspose.Words untuk .NET?
-Untuk menginstal Aspose.Words untuk .NET, Anda dapat menggunakan manajer paket NuGet di Visual Studio. Cukup cari "Aspose.Words" di manajer paket NuGet dan instal ke proyek Anda.
+### Bagaimana cara mengatur Aspose.Words untuk .NET?
+ Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/) dan ikuti petunjuk instalasi yang diberikan.
 
-#### Q3. Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
-Tidak, Aspose.Words untuk .NET dirancang khusus untuk aplikasi .NET. Ia bekerja dengan bahasa pemrograman seperti C# dan VB.NET.
+### Bisakah saya menggunakan Aspose.Words secara gratis?
+ Ya, Anda dapat menggunakan a[uji coba gratis](https://releases.aspose.com/) atau dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/).
 
-#### Q4. Apakah ada prasyarat lain untuk menggunakan Aspose.Words untuk .NET?
-Selain menginstal perpustakaan Aspose.Words untuk .NET, Anda harus memiliki pengetahuan dasar tentang pemrograman C# dan Pemrosesan Kata dengan dokumen Word. Keakraban dengan kerangka .NET juga akan membantu.
+### Di mana saya dapat menemukan dokumentasi Aspose.Words untuk .NET?
+ Dokumentasi terperinci tersedia[Di Sini](https://reference.aspose.com/words/net/).
+
+### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.Words?
+ Anda dapat mengunjungi[forum dukungan](https://forum.aspose.com/c/words/8) untuk bantuan.

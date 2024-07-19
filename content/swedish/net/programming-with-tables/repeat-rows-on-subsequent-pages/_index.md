@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-I den här handledningen kommer vi att lära oss hur man upprepar raderna i en tabell på efterföljande sidor i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna ange rader som ska upprepas på efterföljande sidor i din tabell i dina Word-dokument.
+den här handledningen kommer vi att lära oss hur man upprepar raderna i en tabell på efterföljande sidor i ett Word-dokument med Aspose.Words för .NET. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna ange rader som ska upprepas på efterföljande sidor i din tabell i dina Word-dokument.
 
 ## Steg 1: Projektinställning
 1. Starta Visual Studio och skapa ett nytt C#-projekt.
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Här använder vi dokumentbyggaren för att bygga en tabell med två rubrikrader och flera datarader. De`RowFormat.HeadingFormat`parametrar används för att markera rubrikrader som ska upprepas på efterföljande sidor.
+ Här använder vi dokumentbyggaren för att bygga en tabell med två rubrikrader och flera datarader. De`RowFormat.HeadingFormat` parametrar används för att markera rubrikrader som ska upprepas på efterföljande sidor.
 
 ## Steg 4: Spara det ändrade dokumentet
 Äntligen USA

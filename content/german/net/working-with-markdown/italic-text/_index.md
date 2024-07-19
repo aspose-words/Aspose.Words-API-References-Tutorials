@@ -46,11 +46,11 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Kursivtextfunktion
 
 #### F: Wie kann ich Text in Aspose.Words kursiv setzen?
 
-A: Um Text in Aspose.Words kursiv zu machen, können Sie den`Font.Italic` Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf`true` um bestimmten Text kursiv zu setzen. Sie können beispielsweise`run.Font.Italic=true` um den Text kursiv zu setzen, der in der`Run` Objekt.
+ A: Um Text in Aspose.Words kursiv zu machen, können Sie den`Font.Italic` Eigentum der`Run`Objekt. Sie können diese Eigenschaft auf`true` um bestimmten Text kursiv zu setzen. Sie können beispielsweise`run.Font.Italic=true` um den Text kursiv zu setzen, der in der`Run` Objekt.
 
 #### F: Ist es möglich, mehrere Textteile im selben Absatz kursiv zu setzen?
 
- A: Ja, Sie können mehrere Textteile in einem einzigen Absatz kursiv setzen, indem Sie mehrere`Run` Objekte. Sie können mehrere`Run` Objekte und legen Sie die`Font.Italic`Eigentum an`true` für jedes Objekt, um die gewünschten Textteile kursiv zu formatieren. Anschließend können Sie sie mit dem`Paragraph.AppendChild(run)` Methode.
+ A: Ja, Sie können mehrere Textteile in einem einzigen Absatz kursiv setzen, indem Sie mehrere`Run` Objekte. Sie können mehrere`Run` Objekte und legen Sie die`Font.Italic`Eigentum an`true`für jedes Objekt, um die gewünschten Textteile kursiv zu formatieren. Anschließend können Sie sie mit dem`Paragraph.AppendChild(run)` Methode.
 
 #### F: Kann ich Text, der sich in einer Tabelle oder Zelle in Aspose.Words befindet, kursiv schreiben?
 

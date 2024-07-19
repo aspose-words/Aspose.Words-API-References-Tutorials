@@ -2,77 +2,102 @@
 title: Üstbilgi Altbilgilerinin Bağlantısını Kaldır
 linktitle: Üstbilgi Altbilgilerinin Bağlantısını Kaldır
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak üstbilgi ve altbilgilerin bağlantısını keserken Word belgelerini nasıl birleştireceğinizi ve ekleyeceğinizi öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki üstbilgi ve altbilgilerin bağlantısını nasıl kaldıracağınızı öğrenin. Belge manipülasyonunda ustalaşmak için ayrıntılı, adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/unlink-headers-footers/
 ---
+## giriiş
 
-Bu eğitim, Aspose.Words for .NET'in Başlık Altbilgilerinin Bağlantısını Kaldır özelliğini kullanma sürecinde size rehberlik edecektir. Bu özellik, üstbilgilerin ve altbilgilerin kaynak belgeyle bağlantısını keserken Word belgelerini birleştirmenize ve eklemenize olanak tanır.
+Belge işleme dünyasında üstbilgileri ve altbilgileri tutarlı tutmak bazen zor olabilir. İster belgeleri birleştiriyor olun ister yalnızca farklı bölümler için farklı üstbilgiler ve altbilgiler arıyor olun, bunların bağlantısını nasıl kaldıracağınızı bilmek çok önemlidir. Bugün bunu Aspose.Words for .NET kullanarak nasıl başarabileceğinizi ele alacağız. Kolayca takip edebilmeniz için adım adım anlatacağız. Belge manipülasyonunda ustalaşmaya hazır mısınız? Başlayalım!
 
 ## Önkoşullar
 
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+İşin özüne dalmadan önce ihtiyacınız olacak birkaç şey var:
 
-1. Aspose.Words for .NET kuruldu. Aspose web sitesinden indirebilir veya NuGet aracılığıyla yükleyebilirsiniz.
-2. Visual Studio veya başka herhangi bir C# geliştirme ortamı.
+-  Aspose.Words for .NET Kütüphanesi: Buradan indirebilirsiniz.[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
+- .NET Framework: Uyumlu bir .NET framework'ün kurulu olduğundan emin olun.
+- IDE: Visual Studio veya herhangi bir .NET uyumlu Tümleşik Geliştirme Ortamı.
+- Temel C# Anlayışı: C# programlama dili hakkında temel bir anlayışa ihtiyacınız olacak.
 
-## Adım 1: Belge Dizinlerini Başlatın
+## Ad Alanlarını İçe Aktar
 
- Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir` belgelerinizin bulunduğu yola göre değişkendir.
+Başlamak için projenize gerekli ad alanlarını içe aktardığınızdan emin olun. Bu, Aspose.Words kütüphanesine ve özelliklerine erişmenizi sağlayacaktır.
 
 ```csharp
+using Aspose.Words;
+```
+
+Word belgelerinizdeki üstbilgi ve altbilgilerin bağlantısını kaldırmanıza yardımcı olmak için süreci yönetilebilir adımlara ayıralım.
+
+## 1. Adım: Projenizi Kurun
+
+Öncelikle proje ortamınızı ayarlamanız gerekir. IDE'nizi açın ve yeni bir .NET projesi oluşturun. Daha önce indirdiğiniz Aspose.Words kütüphanesine bir referans ekleyin.
+
+```csharp
+// Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Adım 2: Kaynak ve Hedef Belgelerini Yükleyin
+## Adım 2: Kaynak Belgeyi Yükleyin
 
-Daha sonra Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. Dosya adlarını güncelleyin`Document` belge adlarınıza göre yapıcı.
+Daha sonra değiştirmek istediğiniz kaynak belgeyi yüklemeniz gerekir. Bu belgenin üstbilgileri ve altbilgilerinin bağlantısı kaldırılacak.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
+```
+
+## 3. Adım: Hedef Belgesini Yükleyin
+
+Şimdi, hedef belgeyi, üstbilgi ve altbilgilerin bağlantısını kaldırdıktan sonra kaynak belgenin ekleneceği yere yükleyin.
+
+```csharp
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. Adım: Kaynak Belgedeki Üstbilgilerin ve Altbilgilerin Bağlantısını Kaldırma
+## 4. Adım: Üstbilgilerin ve Altbilgilerin Bağlantısını Kaldırma
 
- Kaynak belgedeki üstbilgi ve altbilgilerin, hedef belgenin üstbilgileri ve altbilgileriyle devam eden bağlantısını kaldırmak için,`LinkToPrevious` mülkiyeti`HeadersFooters` kaynak belgenin ilk bölümündeki toplama`false`.
+ Bu adım çok önemlidir. Kaynak belgenin üstbilgileri ve altbilgileri ile hedef belgenin bağlantısını kaldırmak için,`LinkToPrevious` yöntem. Bu yöntem, üstbilgilerin ve altbilgilerin eklenen belgeye taşınmamasını sağlar.
 
 ```csharp
+// Bunu durdurmak için kaynak belgedeki üstbilgi ve altbilgilerin bağlantısını kaldırın
+//hedef belgenin üstbilgilerine ve altbilgilerine devam etmekten.
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 
-## Adım 4: Kaynak Belgeyi Hedef Belgeye Ekleme
+## Adım 5: Kaynak Belgeyi Ekleyin
 
- Artık kaynak belgeyi hedef belgeye aşağıdaki komutu kullanarak ekleyebilirsiniz:`AppendDocument` yöntemi`Document` sınıf.`ImportFormatMode.KeepSourceFormatting` parametresi ekleme işlemi sırasında kaynak formatının korunmasını sağlar.
+ Üstbilgi ve altbilgilerin bağlantısını kaldırdıktan sonra kaynak belgeyi hedef belgeye ekleyebilirsiniz. Kullan`AppendDocument` yöntemini seçin ve içe aktarma formatı modunu şu şekilde ayarlayın:`KeepSourceFormatting` kaynak belgenin orijinal biçimlendirmesini korumak için.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Adım 5: Nihai Belgeyi Kaydedin
+## Adım 6: Son Belgeyi Kaydedin
 
- Son olarak, birleştirilmiş belgeyi, Üstbilgi Altbilgilerinin Bağlantısını Kaldır özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
+Son olarak yeni oluşturulan belgeyi kaydedin. Bu belgede, kaynak belgenin içeriği hedef belgeye eklenecek ve üstbilgiler ile altbilgilerin bağlantısı kaldırılacaktır.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 ```
 
-### Aspose.Words for .NET kullanarak Üstbilgi Altbilgilerinin Bağlantısını Kaldırma için örnek kaynak kodu
+## Çözüm
 
-Aspose.Words for .NET kullanarak C#'taki "Başlık Alt Bilgilerinin Bağlantısını Kaldır" özelliğinin tam kaynak kodunu burada bulabilirsiniz:
+İşte buyur! Bu adımları izleyerek, kaynak belgenizdeki üstbilgi ve altbilgilerin bağlantısını başarıyla kaldırdınız ve bunu Aspose.Words for .NET kullanarak hedef belgenize eklediniz. Bu teknik, farklı bölümler için farklı üstbilgiler ve altbilgiler gerektiren karmaşık belgelerle çalışırken özellikle yararlı olabilir. Mutlu kodlama!
 
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## SSS'ler
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Bunu durdurmak için kaynak belgedeki üstbilgi ve altbilgilerin bağlantısını kaldırın
-	// hedef belgenin üstbilgilerine ve altbilgilerine devam etmekten.
-	srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
-```
+### Aspose.Words for .NET nedir?  
+Aspose.Words for .NET, .NET uygulamalarında Word belgeleriyle çalışmak için güçlü bir kütüphanedir. Geliştiricilerin belgeleri programlı olarak oluşturmasına, değiştirmesine, dönüştürmesine ve yazdırmasına olanak tanır.
 
-Bu kadar! Aspose.Words for .NET'i kullanarak Üstbilgi Altbilgilerinin Bağlantısını Kaldır özelliğini başarıyla uyguladınız. Nihai belge, hedef belgeyle bağlantısı kaldırılmış kaynak belgedeki üstbilgi ve altbilgilerle birleştirilmiş içeriği içerecektir.
+### Yalnızca belirli bölümlere ait üstbilgi ve altbilgilerin bağlantısını kaldırabilir miyim?  
+ Evet, belirli bölümlere ilişkin üstbilgi ve altbilgilerin bağlantısını şuraya erişerek kaldırabilirsiniz:`HeadersFooters` İstenilen bölümün özelliği ve kullanımı`LinkToPrevious` yöntem.
+
+### Kaynak belgenin orijinal formatını korumak mümkün mü?  
+ Evet, kaynak belgeyi eklerken şunu kullanın:`ImportFormatMode.KeepSourceFormatting` Orijinal biçimlendirmeyi koruma seçeneği.
+
+### Aspose.Words for .NET'i C#'ın yanı sıra diğer .NET dilleriyle de kullanabilir miyim?  
+Kesinlikle! Aspose.Words for .NET, VB.NET ve F# da dahil olmak üzere herhangi bir .NET diliyle kullanılabilir.
+
+### Aspose.Words for .NET için daha fazla belge ve desteği nerede bulabilirim?  
+ Hakkında kapsamlı belgeler bulabilirsiniz.[Aspose.Words for .NET dokümantasyon sayfası](https://reference.aspose.com/words/net/) ve şu adreste destek mevcuttur:[Forumu aspose](https://forum.aspose.com/c/words/8).

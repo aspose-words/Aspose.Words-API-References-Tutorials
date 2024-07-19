@@ -15,7 +15,7 @@ url: /ko/net/working-with-revisions/accept-revisions/
 이 예에서는 문서를 만들고 콘텐츠를 추가합니다. 우리는 변경 사항과 개정 사항을 설명하기 위해 여러 단락을 사용합니다. 방법은 다음과 같습니다.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
+//문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### 해결 방법 2:
 
- A: 다음을 사용하여 개정 추적을 활성화할 수도 있습니다.`Document` 받아들이는 생성자`trackRevisions` 그리고`author` 매개변수.
+ A: 다음을 사용하여 개정 추적을 활성화할 수도 있습니다.`Document` 받아들이는 생성자`trackRevisions`그리고`author` 매개변수.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

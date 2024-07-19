@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## Etapa 3: obter o tipo de nó do documento
- Para obter o tipo de nó de um documento, usamos o`NodeType` propriedade.
+Para obter o tipo de nó de um documento, usamos o`NodeType` propriedade.
 
 ```csharp
 NodeType type = doc.NodeType;

@@ -7,39 +7,51 @@ type: docs
 weight: 10
 url: /pl/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
+## Wstęp
 
-tym samouczku wyjaśniono, jak używać Aspose.Words dla .NET do ustawiania jednostki odstępu między etykietami na osi wykresu. Dostarczony kod źródłowy pokazuje, jak utworzyć wykres, dodać dane serii i dostosować etykiety osi.
+Witamy w naszym obszernym przewodniku na temat korzystania z Aspose.Words dla .NET! Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten artykuł przeprowadzi Cię przez wszystko, co musisz wiedzieć o wykorzystaniu Aspose.Words do programowego manipulowania i generowania dokumentów Word w aplikacjach .NET.
 
-## Krok 1: Skonfiguruj projekt
+## Warunki wstępne
 
-Upewnij się, że masz następujące wymagania wstępne:
+Zanim zagłębisz się w Aspose.Words, upewnij się, że masz następującą konfigurację:
+- Program Visual Studio zainstalowany na Twoim komputerze
+- Podstawowa znajomość języka programowania C#
+-  Dostęp do biblioteki Aspose.Words for .NET (link do pobrania[Tutaj](https://releases.aspose.com/words/net/))
 
-- Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
-- Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
+## Importowanie przestrzeni nazw i pierwsze kroki
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres
+Zacznijmy od zaimportowania niezbędnych przestrzeni nazw i skonfigurowania naszego środowiska programistycznego.
 
- Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
+### Konfigurowanie projektu w programie Visual Studio
+Aby rozpocząć, uruchom program Visual Studio i utwórz nowy projekt C#.
 
+### Instalowanie Aspose.Words dla .NET
+ Możesz zainstalować Aspose.Words dla .NET za pośrednictwem Menedżera pakietów NuGet lub pobierając go bezpośrednio z[Strona Aspose](https://releases.aspose.com/words/net/).
+
+### Importowanie przestrzeni nazw Aspose.Words
+pliku kodu C# zaimportuj przestrzeń nazw Aspose.Words, aby uzyskać dostęp do jej klas i metod:
+```csharp
+using Aspose.Words;
+```
+
+W tej sekcji omówimy, jak tworzyć i dostosowywać wykresy za pomocą Aspose.Words dla .NET.
+
+## Krok 1: Dodawanie wykresu do dokumentu
+Aby wstawić wykres do dokumentu programu Word, wykonaj następujące kroki:
+
+### Krok 1.1: Zainicjuj DocumentBuilder i wstaw wykres
 ```csharp
 // Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
- Następnie użyj`InsertChart` metoda`DocumentBuilder` , aby wstawić wykres kolumnowy do dokumentu.
-
-```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Krok 3: Dodaj dane serii do wykresu
-
-Dodaj dane serii do wykresu. W tym przykładzie dodamy pięć elementów z odpowiadającymi im wartościami.
-
+### Krok 1.2: Konfigurowanie danych wykresu
+Następnie skonfiguruj dane wykresu, dodając serie i odpowiadające im punkty danych:
 ```csharp
 chart.Series.Clear();
 chart.Series.Add("Aspose Series 1",
@@ -47,63 +59,37 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Krok 4: Dostosuj etykiety osi
-
- Aby ustawić jednostkę odstępu między etykietami na osi X, przejdź do opcji`AxisX` właściwość wykresu i ustaw`TickLabelSpacing` właściwość do żądanej wartości. W tym przykładzie odstępy ustawiliśmy na 2.
+## Krok 2: Dostosowywanie właściwości osi
+Teraz dostosujmy właściwości osi, aby kontrolować wygląd naszego wykresu:
 
 ```csharp
 chart.AxisX.TickLabelSpacing = 2;
 ```
 
-## Krok 5: Zapisz dokument
-
- Na koniec zapisz dokument w określonym katalogu za pomocą pliku`Save` metoda`Document` obiekt.
-
+## Krok 3: Zapisywanie dokumentu
+Na koniec zapisz dokument z wstawionym wykresem:
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```
 
-To kończy implementację ustawiania jednostki odstępu między etykietami na osi za pomocą Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy jednostki odstępu między etykietami na osi przy użyciu Aspose.Words dla .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisX.TickLabelSpacing = 2;
-	doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
-```
-
 ## Wniosek
 
-tym samouczku nauczyłeś się, jak ustawić jednostkę odstępu między etykietami na osi wykresu za pomocą Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz utworzyć nowy dokument, wstawić wykres kolumnowy, dodać dane serii i dostosować etykiety osi, aby kontrolować odstępy między etykietami.
+Gratulacje! Nauczyłeś się, jak integrować wykresy i manipulować nimi za pomocą Aspose.Words dla .NET. Ta potężna biblioteka umożliwia programistom łatwe tworzenie dynamicznych i atrakcyjnych wizualnie dokumentów.
 
-Aspose.Words dla .NET zapewnia zaawansowane funkcje do manipulowania wykresami w dokumentach Word. Ustawiając jednostkę odstępu między etykietami na osi, możesz kontrolować gęstość wyświetlania etykiet i zwiększać czytelność wykresów. Pozwala to zoptymalizować prezentację danych i poprawić ogólne doświadczenie użytkownika.
 
-Dzięki Aspose.Words dla .NET masz możliwość dostosowania różnych aspektów wykresu, w tym etykiet osi. Można ustawić żądaną jednostkę interwału, aby mieć pewność, że etykiety są odpowiednio rozmieszczone i zapewniają wyraźną reprezentację punktów danych.
+## Często zadawane pytania
 
-### Często zadawane pytania
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to biblioteka do przetwarzania dokumentów, która umożliwia programistom tworzenie, modyfikowanie i konwertowanie dokumentów Word w aplikacjach .NET.
 
-#### Pytanie 1. Co to są etykiety osi na wykresie?
-Etykiety osi na wykresie odnoszą się do tekstowej reprezentacji wartości wzdłuż osi poziomej (oś X) lub pionowej (oś Y). Etykiety te pomagają zidentyfikować i zinterpretować punkty danych naniesione na wykres. Etykiety osi zapewniają kontekst i pozwalają użytkownikom zrozumieć skalę i zakres wartości na wykresie.
+### Gdzie mogę znaleźć dokumentację Aspose.Words dla .NET?
+ Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).
 
-#### Pytanie 2. Jak mogę dostosować odstępy między etykietami osi?
- Aby dostosować odstępy między etykietami osi na wykresie za pomocą Aspose.Words dla .NET, możesz uzyskać dostęp do`AxisX` Lub`AxisY` właściwość wykresu i zmodyfikuj`TickLabelSpacing` nieruchomość. Ustawiając`TickLabelSpacing` do określonej wartości, możesz kontrolować jednostkę odstępu pomiędzy etykietami na odpowiedniej osi, dostosowując odstępy zgodnie ze swoimi wymaganiami.
+### Czy mogę wypróbować Aspose.Words dla .NET przed zakupem?
+ Tak, możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
-#### Pytanie 3. Czy mogę ustawić różne odstępy dla etykiet osi X i Y?
-Tak, możesz ustawić różne odstępy dla etykiet osi X i Y za pomocą Aspose.Words dla .NET. Uzyskaj dostęp do odpowiedniej osi (`AxisX` dla osi X lub`AxisY` dla osi Y) wykresu i zmodyfikuj`TickLabelSpacing`właściwość indywidualnie dla każdej osi. Umożliwia to stosowanie różnych jednostek interwałów i odstępów dla etykiet na osi X i Y, zapewniając precyzyjną kontrolę nad wyglądem wykresu.
+### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
+ Aby uzyskać pomoc i dyskusje w społeczności, odwiedź stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
-#### Pytanie 4. Jakie znaczenie ma jednostka odstępu między etykietami na osi?
-Jednostka odstępu pomiędzy etykietami na osi określa odstęp pomiędzy kolejnymi etykietami wyświetlanymi na wykresie. Ustawiając jednostkę odstępu, możesz kontrolować gęstość etykiet i zapewnić ich odpowiednie odstępy, aby uniknąć przepełnienia i nakładania się. Dostosowanie jednostki interwału pozwala zaprezentować dane w bardziej czytelny i atrakcyjny wizualnie sposób.
-
-#### Pytanie 5. Czy mogę modyfikować inne właściwości etykiet osi?
-Tak, Aspose.Words dla .NET zapewnia szeroką gamę właściwości umożliwiających dostosowanie wyglądu i zachowania etykiet osi. Można modyfikować właściwości, takie jak czcionka, rozmiar, kolor, orientacja, wyrównanie i inne, aby uzyskać żądane formatowanie i styl etykiet osi. Biblioteka oferuje szeroką kontrolę nad elementami wykresów, umożliwiając tworzenie profesjonalnie wyglądających wykresów dostosowanych do konkretnych wymagań.
+### Gdzie mogę kupić licencję na Aspose.Words dla .NET?
+ Możesz kupić licencję[Tutaj](https://purchase.aspose.com/buy).

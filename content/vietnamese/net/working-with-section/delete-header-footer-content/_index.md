@@ -62,7 +62,7 @@ Trong hướng dẫn này, chúng ta đã biết cách xóa nội dung đầu tr
 
 #### Hỏi: Làm cách nào để đặt thư mục tài liệu trong Aspose.Words cho .NET?
 
- Đáp: Để đặt đường dẫn tới thư mục chứa tài liệu của bạn, bạn phải thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp. Đây là cách thực hiện:
+Đáp: Để đặt đường dẫn tới thư mục chứa tài liệu của bạn, bạn phải thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp. Đây là cách thực hiện:
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn

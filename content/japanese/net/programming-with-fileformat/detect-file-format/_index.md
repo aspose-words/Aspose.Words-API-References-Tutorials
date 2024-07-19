@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## ステップ2: ファイルを参照する
 
-次に、`GetFiles`方法の`Directory`クラスを使用して、指定されたディレクトリ内のファイルのリストを取得します。また、`Where`「Corrupted document.docx」という名前の特定のファイルを除外する句。
+次に、`GetFiles`方法の`Directory`クラスを使用して、指定されたディレクトリ内のファイルのリストを取得します。また、`Where` 「Corrupted document.docx」という名前の特定のファイルを除外する句。
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));

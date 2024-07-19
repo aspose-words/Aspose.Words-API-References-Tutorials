@@ -17,7 +17,7 @@ url: /ja/net/working-with-fields/insert-merge-field-using-dom/
 1. **Basic Knowledge of C#:** C# プログラミングに慣れている必要があります。
 2. **Visual Studio Installed:**マシンに Visual Studio またはその他の C# IDE がインストールされていることを確認してください。
 3. **Aspose.Words for .NET:** Aspose.Words for .NETの最新バージョンを以下のサイトからダウンロードしてインストールしてください。[リリース](https://releases.aspose.com/words/net/).
-4. **Valid License:**免許証をお持ちでない場合は、[一時ライセンス](https://purchase.aspose.com/temporary-license/)評価のため。
+4. **Valid License:**免許証を持っていない場合は、[一時ライセンス](https://purchase.aspose.com/temporary-license/)評価のため。
 
 ## ステップ1: プロジェクトの設定
 
@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 次に、差し込みフィールドを挿入するドキュメント内の特定の段落にカーソルを移動する必要があります。
 
 ```csharp
-//カーソルを段落に移動します。
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## ステップ6: 差し込みフィールドを挿入する

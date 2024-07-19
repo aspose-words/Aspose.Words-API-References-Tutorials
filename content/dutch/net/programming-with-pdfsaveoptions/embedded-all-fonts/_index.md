@@ -94,7 +94,7 @@ Behoud van opmaak: Ingebedde lettertypen behouden de opmaak en lay-out van het d
 Verbeterde leesbaarheid: Het insluiten van lettertypen zorgt voor een betere leesbaarheid van het document, omdat de opgegeven lettertypen worden gebruikt om de tekst weer te geven, zelfs als de originele lettertypen niet beschikbaar zijn.
 
 #### Vraag: Vergroot het insluiten van alle lettertypen de grootte van het PDF-bestand?
-A: Ja, het insluiten van alle lettertypen in een PDF-document kan de grootte van het gegenereerde PDF-bestand vergroten, omdat de lettertypegegevens in het bestand moeten worden opgenomen. Deze toename in grootte is echter voor de meeste documenten meestal verwaarloosbaar, en de voordelen van het insluiten van lettertypen wegen vaak op tegen deze kleine toename in grootte.
+A: Ja, het insluiten van alle lettertypen in een PDF-document kan de grootte van het gegenereerde PDF-bestand vergroten, omdat de lettertypegegevens in het bestand moeten worden opgenomen. Deze toename in omvang is voor de meeste documenten echter meestal verwaarloosbaar, en de voordelen van het insluiten van lettertypen wegen vaak op tegen deze kleine toename in omvang.
 
 #### Vraag: Kan ik specifieke lettertypen selecteren om in een PDF-document in te sluiten?
  A: Ja, met Aspose.Words voor .NET kunt u specifieke lettertypen selecteren om in een PDF-document in te sluiten met behulp van geavanceerde configuratieopties. U kunt bijvoorbeeld gebruik maken van de`SubsetFonts` eigendom van de`PdfSaveOptions` object om op te geven welke lettertypen moeten worden opgenomen, of gebruik extra opties om aangepaste lettertypeselectiefilters in te stellen.

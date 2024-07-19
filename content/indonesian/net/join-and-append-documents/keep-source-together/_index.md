@@ -2,49 +2,57 @@
 title: Pertahankan Sumber Bersama
 linktitle: Pertahankan Sumber Bersama
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan Aspose.Words untuk .NET untuk menggabungkan dan menambahkan dokumen Word sekaligus menjaga konten sumber tetap bersama dengan dokumen tujuan.
+description: Pelajari cara menggabungkan dokumen Word menggunakan Aspose.Words untuk .NET sambil mempertahankan pemformatan. Panduan komprehensif ini mencakup semuanya mulai dari penyiapan hingga eksekusi.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/keep-source-together/
 ---
+## Perkenalan
 
-Tutorial ini akan memandu Anda melalui proses penggunaan fitur Keep Source Together di Aspose.Words untuk .NET. Fitur ini memungkinkan Anda untuk menggabungkan dan menambahkan beberapa dokumen Word sekaligus menjaga konten dokumen sumber tetap bersama dengan konten dokumen tujuan. 
+Di era digital saat ini, memanipulasi dokumen Word secara terprogram sangat penting di berbagai industri. Aspose.Words untuk .NET memberdayakan pengembang untuk mengotomatiskan tugas penanganan dokumen secara efisien. Panduan komprehensif ini akan memandu Anda melalui proses penggabungan dokumen sambil mempertahankan format sumber menggunakan Aspose.Words untuk .NET.
 
 ## Prasyarat
 
-Sebelum memulai, pastikan Anda memiliki hal berikut:
+Sebelum mendalami penggabungan dokumen dengan Aspose.Words untuk .NET, pastikan Anda memiliki hal berikut:
 
-1. Aspose.Words untuk .NET diinstal. Anda dapat mendownloadnya dari situs Aspose atau menginstalnya melalui NuGet.
-2. Visual Studio atau lingkungan pengembangan C# lainnya.
+- Visual Studio: Lingkungan Pengembangan Terpadu (IDE) untuk pengembangan .NET.
+- Aspose.Words untuk .NET: Diinstal dan disiapkan di lingkungan pengembangan Anda.
+- Keakraban dengan C#: Pemahaman dasar bahasa pemrograman C#.
 
-## Langkah 1: Inisialisasi Direktori Dokumen
+## Impor Namespace
 
- Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ubah nilai`dataDir` variabel ke jalur di mana dokumen Anda berada.
+Untuk memulai, impor namespace yang diperlukan:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## Langkah 2: Muat Dokumen Sumber dan Tujuan
+## Langkah 1: Muat Dokumen
 
-Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
+ Pertama, muat dokumen sumber dan tujuan ke Aspose.Words`Document` objek.
 
 ```csharp
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+// Memuat dokumen sumber dan tujuan
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Langkah 3: Atur Dokumen Sumber agar Muncul Setelah Konten Dokumen Tujuan
+## Langkah 2: Atur Bagian Mulai
 
- Untuk memastikan bahwa dokumen sumber muncul tepat setelah konten dokumen tujuan, Anda perlu mengaturnya`SectionStart` properti bagian pertama dalam dokumen sumber ke`SectionStart.Continuous`.
+Konfigurasikan bagian awal untuk memastikan konten dokumen sumber mengalir terus menerus setelah dokumen tujuan.
 
 ```csharp
+// Atur dokumen sumber agar muncul tepat setelah konten dokumen tujuan
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Langkah 4: Atur Pemformatan Paragraf "Simpan dengan Berikutnya" untuk Dokumen Sumber
+## Langkah 3: Satukan Paragraf
 
- Untuk menyatukan paragraf-paragraf dalam dokumen sumber, Anda dapat mengulangi setiap paragraf dalam dokumen dan mengaturnya`KeepWithNext`properti ke`true`.
+Untuk menjaga integritas pemformatan, tandai setiap paragraf di dokumen sumber agar tetap berada di paragraf berikutnya.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## Langkah 5: Tambahkan Dokumen Sumber ke Dokumen Tujuan
+## Langkah 4: Tambahkan Dokumen
 
- Sekarang, Anda dapat menambahkan dokumen sumber ke dokumen tujuan menggunakan`AppendDocument` metode`Document` kelas. Itu`ImportFormatMode.KeepSourceFormatting` parameter memastikan bahwa pemformatan sumber dipertahankan selama operasi penambahan.
+ Gabungkan dokumen menggunakan`AppendDocument` metode, memastikan untuk mempertahankan format dokumen sumber.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Langkah 6: Simpan Dokumen Akhir
+## Langkah 5: Simpan Dokumen yang Digabung
 
- Terakhir, simpan dokumen gabungan dengan fitur "Simpan Sumber Bersama" yang diaktifkan menggunakan`Save` metode`Document` kelas.
+Terakhir, simpan dokumen gabungan ke lokasi yang diinginkan.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### Contoh kode sumber untuk Keep Source Together menggunakan Aspose.Words untuk .NET 
+## Kesimpulan
 
-Berikut kode sumber lengkap untuk fitur "Keep Source Together" di C# menggunakan Aspose.Words untuk .NET:
+Kesimpulannya, Aspose.Words untuk .NET menyederhanakan tugas menggabungkan dokumen Word sambil mempertahankan format asli dengan mulus. Kemampuan ini sangat penting untuk aplikasi yang memerlukan pemrosesan dokumen otomatis.
 
+## FAQ
 
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Bisakah Aspose.Words untuk .NET menggabungkan dokumen dengan format berbeda?
+Ya, itu bisa menggabungkan dokumen apa pun formatnya, mempertahankan format sumber.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Atur dokumen sumber agar muncul tepat setelah konten dokumen tujuan.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### Apakah Aspose.Words untuk .NET mendukung penggabungan dokumen besar secara efisien?
+Tentu saja, ini menangani dokumen besar dengan kinerja optimal.
 
-Itu dia! Anda telah berhasil mengimplementasikan fitur Keep Source Together menggunakan Aspose.Words untuk .NET. Dokumen akhir akan berisi konten yang digabungkan dengan paragraf dalam dokumen sumber yang disatukan.
+### Apakah ada versi uji coba yang tersedia untuk Aspose.Words untuk .NET?
+ Ya, Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/).
+
+### Bagaimana saya bisa mendapatkan dukungan teknis untuk Aspose.Words untuk .NET?
+ Dukungan teknis tersedia melalui[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8).
+
+### Bisakah saya membeli lisensi sementara untuk Aspose.Words untuk .NET?
+ Ya, Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).

@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 3: Memasukkan bidang waktu
 
- Kami menggunakan`InsertField()` metode untuk memasukkan bidang waktu ke dalam dokumen.
+ Kami menggunakan`InsertField()`metode untuk memasukkan bidang waktu ke dalam dokumen.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

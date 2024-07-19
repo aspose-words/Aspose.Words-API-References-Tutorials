@@ -62,7 +62,7 @@ Indem Sie diese Schritte befolgen, können Sie die Einbettung von Windows-Schrif
 
 ## Abschluss
 
-In diesem Tutorial haben wir gelernt, wie Sie die Größe einer PDF-Datei reduzieren können, indem Sie die Einbettung von Windows-Schriftarten mithilfe von Aspose.Words für .NET deaktivieren. Durch Deaktivieren der Schriftarteinbettung können Sie die Größe der generierten PDF-Datei reduzieren und so das Speichern, Teilen und Übertragen von Dateien erleichtern. Es ist jedoch wichtig zu beachten, dass das Deaktivieren der Windows-Schriftarteinbettung zu Änderungen des Erscheinungsbilds und der Formatierung im endgültigen PDF-Dokument führen kann. Berücksichtigen Sie diese Konsequenzen unbedingt, wenn Sie diese Funktion verwenden. Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um die Generierung Ihrer PDF-Dateien zu optimieren.
+In diesem Tutorial haben wir gelernt, wie Sie die Größe einer PDF-Datei reduzieren können, indem Sie die Einbettung von Windows-Schriftarten mithilfe von Aspose.Words für .NET deaktivieren. Durch Deaktivieren der Schriftarteinbettung können Sie die Größe der generierten PDF-Datei reduzieren und so das Speichern, Teilen und Übertragen von Dateien vereinfachen. Es ist jedoch wichtig zu beachten, dass das Deaktivieren der Windows-Schriftarteinbettung zu Änderungen des Erscheinungsbilds und der Formatierung im endgültigen PDF-Dokument führen kann. Berücksichtigen Sie diese Konsequenzen unbedingt, wenn Sie diese Funktion verwenden. Entdecken Sie gerne weitere Funktionen von Aspose.Words für .NET, um die Generierung Ihrer PDF-Dateien zu optimieren.
 
 ### Häufig gestellte Fragen
 

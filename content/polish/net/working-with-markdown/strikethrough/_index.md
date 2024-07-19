@@ -9,7 +9,7 @@ url: /pl/net/working-with-markdown/strikethrough/
 ---
 
 
-W tym przykładzie przeprowadzimy Cię przez proces stosowania stylu przekreślonego tekstu przy użyciu Aspose.Words dla .NET. Tekst przekreślony oznacza, że tekst został usunięty lub nie jest już ważny.
+tym przykładzie przeprowadzimy Cię przez proces stosowania stylu przekreślonego tekstu przy użyciu Aspose.Words dla .NET. Tekst przekreślony oznacza, że tekst został usunięty lub nie jest już ważny.
 
 ## Krok 1: Korzystanie z generatora dokumentów
 
@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Zastosuj przekreślony styl tekstu
 
-Włączymy styl przekreślonego tekstu, ustawiając opcję`StrikeThrough` własność`Font` oponować`true`.
+ Włączymy styl przekreślonego tekstu, ustawiając opcję`StrikeThrough` własność`Font` oponować`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

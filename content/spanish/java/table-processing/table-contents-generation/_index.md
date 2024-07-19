@@ -8,7 +8,7 @@ weight: 14
 url: /es/java/table-processing/table-contents-generation/
 ---
 
-¿Estás listo para embarcarte en un viaje para dominar la generación de tablas de contenido (TOC) usando Aspose.Words para Java? En esta guía completa, exploraremos el arte de crear TOC dinámicos y visualmente atractivos sin esfuerzo. Estará equipado con el conocimiento y las habilidades necesarios para implementar esta característica sin problemas en sus aplicaciones Java. Así que ¡vamos a sumergirnos de lleno!
+¿Estás listo para embarcarte en un viaje para dominar la generación de tablas de contenido (TOC) usando Aspose.Words para Java? En esta guía completa, exploraremos el arte de crear TOC dinámicos y visualmente atractivos sin esfuerzo. Estará equipado con el conocimiento y las habilidades necesarias para implementar esta característica sin problemas en sus aplicaciones Java. Así que ¡vamos a sumergirnos de lleno!
 
 ## Introducción
 
@@ -115,7 +115,7 @@ Sí, puedes generar múltiples TOC en un solo documento. Utilice diferentes cód
 
 ### ¿Aspose.Words para Java es adecuado tanto para documentos pequeños como grandes?
 
-¡Absolutamente! Aspose.Words para Java es versátil y puede manejar documentos de diferentes tamaños, desde pequeños informes hasta novelas extensas.
+¡Absolutamente! Aspose.Words para Java es versátil y puede manejar documentos de distintos tamaños, desde pequeños informes hasta novelas extensas.
 
 ### ¿Puedo personalizar la apariencia de mis entradas TOC?
 

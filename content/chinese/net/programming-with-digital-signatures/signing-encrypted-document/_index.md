@@ -2,109 +2,110 @@
 title: 签名加密的 Word 文档
 linktitle: 签名加密的 Word 文档
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 对加密的 Word 文档进行数字签名。
+description: 通过这份详细的分步指南了解如何使用 Aspose.Words for .NET 签署加密的 Word 文档。非常适合开发人员。
 type: docs
 weight: 10
 url: /zh/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
-在本教程中，我们将指导您完成使用 Aspose.Words for .NET 签名加密 Word 文档的功能的步骤。此功能允许您对使用解密密码加密的 Word 文档进行数字签名。请按照以下步骤操作：
+## 介绍
 
-## 步骤 1：设置签名选项
+有没有想过如何签署加密的 Word 文档？今天，我们将使用 Aspose.Words for .NET 演示此过程。系好安全带，准备好接受详细、引人入胜且有趣的教程！
 
-创建SignOptions类的实例，并设置解密密码：
+## 先决条件
+
+在深入研究代码之前，请确保您已准备好所需的一切：
+
+1.  Aspose.Words for .NET：从以下网址下载并安装[这里](https://releases.aspose.com/words/net/).
+2. Visual Studio：确保您已安装它。
+3. 有效证书：您需要一个 .pfx 证书文件。
+4. 基本 C# 知识：了解基础知识将使本教程更加顺畅。
+
+## 导入命名空间
+
+首先，让我们导入必要的命名空间。这些对于访问 Aspose.Words 功能至关重要。
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionpassword" };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.DigitalSignatures;
 ```
 
-确保为加密文档指定正确的解密密码。
+现在，让我们将这个过程分解为简单、易于管理的步骤。
 
-## 步骤2：加载证书
+## 步骤 1：设置项目
 
-首先使用 CertificationHolder 类加载签名证书：
+首先，设置您的 Visual Studio 项目。打开 Visual Studio 并创建一个新的 C# 控制台应用程序。将其命名为“SignEncryptedWordDoc”之类的描述性名称。
+
+## 第 2 步：将 Aspose.Words 添加到您的项目
+
+接下来，我们需要将 Aspose.Words 添加到您的项目中。有几种方法可以做到这一点，但使用 NuGet 是最简单的。 
+
+1. 从“工具”>“NuGet 包管理器”>“包管理器控制台”打开 NuGet 包管理器控制台。
+2. 运行以下命令：
+
+```powershell
+Install-Package Aspose.Words
+```
+
+## 步骤3：准备文档目录
+
+您需要一个目录来存储您的 Word 文档和证书。让我们创建一个。
+
+1. 在您的计算机上创建一个目录。为简单起见，我们将其命名为“DocumentDirectory”。
+2. 将您的 Word 文档（例如“Document.docx”）和 .pfx 证书（例如“morzal.pfx”）放在此目录中。
+
+## 步骤 4：编写代码
+
+现在，让我们深入研究代码。打开你的`Program.cs`文件并首先设置文档目录的路径并初始化`SignOptions`和解密密码。
+
+```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
+```
+
+## 步骤5：加载证书
+
+接下来，使用`CertificateHolder`类。这将需要您的 .pfx 文件的路径和证书的密码。
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-请确保指定证书和相关密码的正确路径。
+## 第 6 步：签署文件
 
-## 步骤 3：对加密文档进行签名
-
-使用 DigitalSignatureUtil 类对加密文档进行签名：
+最后，使用`DigitalSignatureUtil.Sign`方法来对加密的 Word 文档进行签名。此方法需要输入文件、输出文件、证书持有者和签名选项。
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-	certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Document.docx",
+    dataDir + "DigitallySignedDocument.docx",
+    certHolder,
+    signOptions);
 ```
 
-确保为加密文档、签名文档和证书指定正确的路径。
+## 步骤 7：运行代码
 
-### 使用 Aspose.Words for .NET 签署加密文档的示例源代码
-
-以下是使用 Aspose.Words for .NET 签署加密文档的完整源代码：
-
-```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-		certHolder, signOptions);
-	
-
-```
-通过遵循这些步骤，您可以轻松地使用 Aspose.Words for .NET 签署加密的 Word 文档。
+保存文件并运行项目。如果一切设置正确，您应该会在指定目录中看到已签名的文档。
 
 ## 结论
 
-在本教程中，我们探索了使用 Aspose.Words for .NET 签署加密 Word 文档的过程。通过提供解密密码和签名证书，我们可以向加密文档添加数字签名。签署加密文档可确保其真实性和完整性，从而提供额外的安全保障。Aspose.Words for .NET 使您能够签署加密文档并维护 Word 文件的安全性和可信度。
+一切就绪！您已成功使用 Aspose.Words for .NET 签署了加密的 Word 文档。借助这个强大的库，数字签名变得轻而易举，即使对于加密文件也是如此。祝您编码愉快！
 
-### 常见问题解答
+## 常见问题解答
 
-#### 问：Aspose.Words for .NET 中的文档签名是什么？
+### 我可以使用不同类型的证书吗？
+是的，Aspose.Words 支持各种证书类型，只要它们的格式正确。
 
-答：Aspose.Words for .NET 中的文档签名是指对 Word 文档进行数字签名以确保其真实性、完整性和不可否认性的过程。它涉及使用证书向文档添加数字签名。
+### 可以一次签署多份文件吗？
+当然可以！您可以循环遍历文档集合并以编程方式对每个文档进行签名。
 
-#### 问：什么是加密的 Word 文档？
+### 如果我忘记了解密密码怎么办？
+不幸的是，如果没有解密密码，您将无法签署该文档。
 
-答：加密的 Word 文档是使用密码加密的文档。加密是一种安全措施，它通过对文档内容进行打乱，使其在没有正确解密密码的情况下无法读取来保护文档内容。
+### 我可以在文件上添加可见的签名吗？
+是的，Aspose.Words 也允许您添加可见的数字签名。
 
-#### 问：如何使用 Aspose.Words for .NET 签署加密的 Word 文档？
-
-答：要使用 Aspose.Words for .NET 签署加密的 Word 文档，您需要提供解密密码以及签名证书。 请按照以下步骤操作：
-1. 在中设置解密密码`SignOptions`目的。
-2. 使用加载签名证书`CertificateHolder`班级。
-3. 使用`DigitalSignatureUtil.Sign`方法对加密文档进行签名，并提供必要的参数。
-
-#### 问：签署加密文件的目的是什么？
-
-答：使用 Aspose.Words for .NET 对加密文档进行签名，即使文档已加密，您也可以向文档添加数字签名。这提供了额外的安全层，并确保了加密内容的真实性和完整性。它允许收件人验证文档的来源并检测任何篡改。
-
-#### 问：我可以签署加密文档而不提供解密密码吗？
-
-答：不可以，要签署加密文件，您必须提供正确的解密密码。在应用数字签名之前，需要解密密码才能访问和修改文档的加密内容。
-
-#### 问：我可以使用任何证书签署加密的 Word 文档吗？
-
-答：要使用 Aspose.Words for .NET 签署加密的 Word 文档，您需要有效的 X.509 证书。可以从受信任的证书颁发机构 (CA) 获取证书，也可以使用自签名证书进行测试。
-
-#### 问：我可以使用同一个证书签署多个加密的 Word 文档吗？
-
-答：是的，您可以使用同一份证书对多个加密的 Word 文档进行签名。使用`CertificateHolder`类，您可以重复使用它来签署多个加密文档。
-
-#### 问：我可以验证已签名的加密文档的数字签名吗？
-
-答：是的，Aspose.Words for .NET 提供了验证已签名加密文档数字签名的功能。您可以使用`DigitalSignatureUtil.Verify`方法来检验数字签名的有效性和真实性。
-
-#### 问：Aspose.Words for .NET 支持哪种文件格式的加密文档签名？
-
-答：Aspose.Words for .NET 支持对 DOCX 文件格式的加密 Word 文档进行签名。您可以使用`DigitalSignatureUtil.Sign`方法以及必要的解密密码和证书。
-
-#### 问：签署加密文档会对加密产生什么影响？
-
-答：使用 Aspose.Words for .NET 签署加密文档不会影响文档的加密。加密保持不变，数字签名会添加到加密内容中。数字签名提供额外的安全性和验证，而不会损害应用于文档的加密。
+### 有没有办法验证签名？
+是的，您可以使用`DigitalSignatureUtil.Verify`方法来验证签名。

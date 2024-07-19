@@ -2,138 +2,153 @@
 title: Word Belgesinde Yer İşaretlerini Gizle'yi Göster
 linktitle: Word Belgesinde Yer İşaretlerini Gizle'yi Göster
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak word belgesinde belirli bir yer imini nasıl göstereceğinizi veya gizleyeceğinizi öğrenin.
+description: Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretlerini dinamik olarak nasıl göstereceğinizi veya gizleyeceğinizi öğrenin. Geliştiriciler için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## giriiş
 
-Bu makalede, Aspose.Words for .NET kütüphanesinde Show Hide Bookmarks fonksiyonunun nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, word belgesinde belirli bir yer imini göstermenize veya gizlemenize olanak tanır.
+Hiç Word belgenizin belirli bölümlerini dinamik olarak gizlemeye veya göstermeye ihtiyaç duyduğunuzu fark ettiniz mi? Şanslısın! Aspose.Words for .NET ile belgelerinizdeki yer imlerine eklenmiş içeriğin görünürlüğünü kolayca yönetebilirsiniz. Bu eğitim, Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretlerini gösterme ve gizleme sürecinde size yol gösterecektir. Kodu adım adım inceleyeceğiz, bu nedenle ister deneyimli bir geliştirici olun, ister yeni başlayan biri olun, bu kılavuzu takip etmenin kolay olduğunu göreceksiniz.
 
 ## Önkoşullar
 
-- C# dili hakkında temel bilgi.
-- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
+Koda dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-## 1. Adım: Belgeyi yükleme
+1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. Değilse indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio benzeri bir IDE.
+3. Temel C# Bilgisi: C# programlamaya aşina olmak faydalı olacaktır.
+4. Bir Word Belgesi: Yer işaretlerini içeren örnek bir Word belgesi.
 
- biz kullanıyoruz`Document` Mevcut belgeyi bir dosyadan yüklemek için sınıf:
+## Ad Alanlarını İçe Aktar
+
+Kodla başlamadan önce gerekli ad alanlarını içe aktarmanız gerekir. C# dosyanızın başına aşağıdakini ekleyin:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## 1. Adım: Belgenizi Yükleyin
+
+Öncelikle yer işaretlerini içeren Word belgesini yüklemeniz gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+
+```csharp
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## 2. Adım: Belirli bir yer işaretini gösterin veya gizleyin
+### Açıklama
 
- biz kullanıyoruz`ShowHideBookmarkedContent` Belgedeki belirli bir yer imini gösterme veya gizleme işlevi. Bu işlev, belgeyi, yer iminin adını ve yer iminin gösterilip gösterilmeyeceğini veya gizleneceğini belirten bir boole parametresini alır:
+- dataDir: Bu, Word belgenizin bulunduğu dizin yoludur.
+-  Belge belgesi: Bu, yeni bir örneğini başlatır.`Document` belirttiğiniz dosyayla sınıf.
+
+## 2. Adım: Yer İşaretli İçeriği Gösterme veya Gizleme
+
+Daha sonra, yer imlerine eklenen içeriği göstermek veya gizlemek için bir yöntem tanımlayacağız. İşte tam yöntem:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{MERGEFIELD yer imi}" = "true" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### Açıklama
+
+- Yer imi bm: Belgeden yer imini getirir.
+- DocumentBuilder oluşturucu: Belgede gezinmeye ve belgeyi değiştirmeye yardımcı olur.
+- Alan alanı: Yer iminin durumunu kontrol etmek için bir IF alanı ekler.
+- Node currentNode: Alanın başlangıcını ve bitişini bulmak için düğümler arasında geçiş yapar.
+
+## Adım 3: Göster/Gizle İşlevini Çalıştırın
+
+ Şimdi aramanız gerekiyor`ShowHideBookmarkedContent` belgeyi, yer imi adını ve görünürlük bayrağını iletme yöntemi:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## 3. Adım: Değiştirilen belgeyi kaydetme
+### Açıklama
 
- biz kullanıyoruz`Save` Değiştirilen belgeyi bir dosyaya kaydetme yöntemi:
+- doc: Belge nesneniz.
+- "MyBookmark1": Göstermek/gizlemek istediğiniz yer iminin adı.
+- false: Görünürlük bayrağı (göstermek için true, gizlemek için false).
+
+## 4. Adım: Belgenizi Kaydedin
+
+Son olarak değiştirilen belgeyi kaydedin:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### Aspose.Words for .NET kullanarak Show Hide Bookmarks için örnek kaynak kodu
+### Açıklama
 
-Aspose.Words for .NET kullanarak belirli bir yer iminin gösterilmesini veya gizlenmesini gösteren örnek kaynak kodunun tamamını burada bulabilirsiniz:
+- dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx": Değişikliklerin kaydedileceği yeni belgenin yolu ve adı.
 
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### ShowHideBookmarkedContent kaynak kodu
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {IF "{MERGEFIELD yer imi}" = "true" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'in Show Hide Bookmarks özelliğinin nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belgedeki belirli bir yer imini göstermek veya gizlemek için adım adım bir kılavuz izledik.
+İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki yer işaretlerini nasıl gösterip gizleyeceğinizi başarıyla öğrendiniz. Bu teknik, koşullu içeriğe sahip belgeleri dinamik olarak oluşturmak için inanılmaz derecede yararlı olabilir.
 
-### Word belgesinde yer imlerini gizlemeyi göstermeyle ilgili SSS
+## SSS'ler
 
-#### S: Aynı belgede birden fazla yer imini gösterebilir veya gizleyebilir miyim?
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır.
 
-C: Evet, işlemek istediğiniz her yer imi için 2. ve 3. adımları tekrarlayarak aynı belgede birden fazla yer imini gösterebilir veya gizleyebilirsiniz.
+### Aspose.Words for .NET'i nasıl edinebilirim?
+ Aspose.Words for .NET'i şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/net/). Ücretsiz deneme sürümü de mevcuttur.
 
-#### S: Sağlanan kod .doc veya .docm gibi diğer Word belge biçimleriyle çalışıyor mu?
+### Bu yöntemi diğer yer imi türleri için kullanabilir miyim?
+Evet, bu yöntem, Word belgenizdeki herhangi bir yer iminin görünürlüğünü yönetecek şekilde uyarlanabilir.
 
-C: Evet, verilen kod Aspose.Words tarafından desteklenen .doc ve .docm gibi çeşitli Word belge formatlarıyla çalışır. Belgeyi yüklerken ve kaydederken doğru dosya adını ve yolunu kullandığınızdan emin olun.
+### Belgem belirtilen yer işaretini içermiyorsa ne olur?
+Yer imi mevcut değilse, yöntem bir hata verecektir. Göstermeye/gizlemeye çalışmadan önce yer iminin mevcut olduğundan emin olun.
 
-#### S: Gizli bir yer imini tekrar nasıl gösterebilirim?
-
- C: Gizli bir yer imini tekrar göstermek için aynısını kullanmanız gerekir.`ShowHideBookmarkedContent` değeri ileten fonksiyon`true` yer iminin gösterilip gösterilmeyeceğini belirten boolean parametresi için.
-
-#### S: Belgedeki birleştirme alanı değerlerine göre yer işaretlerini göstermek veya gizlemek için koşulları kullanabilir miyim?
-
- C: Evet, bir yer işaretinin gösterilmesi mi yoksa gizlenmesi mi gerektiğini belirlemek için koşulları kullanabilir ve alan değerlerini birleştirebilirsiniz. kodunu özelleştirebilirsiniz.`ShowHideBookmarkedContent` uygun koşulları ve değerleri dikkate alacak şekilde çalışır.
-
-#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini nasıl silebilirim?
-
- C: Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretini kaldırmak için şu komutu kullanabilirsiniz:`RemoveBookmarks` yöntemi`Document` sınıf. İşte örnek bir kod:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### Sorunla karşılaşırsam nasıl destek alabilirim?
+ Aspose topluluğundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/words/8).

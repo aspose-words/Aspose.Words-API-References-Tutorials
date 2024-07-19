@@ -73,7 +73,7 @@ C'est tout ! Vous avez correctement spécifié le type de contrôle préféré l
 
 ### FAQ sur le type de contrôle préféré dans un document Word
 
-#### Q : Qu'est-ce que la fonctionnalité « Type de contrôle préféré » dans Aspose.Words pour .NET ?
+#### Q : Qu'est-ce que la fonctionnalité « Type de contrôle préféré » dans Aspose.Words pour .NET ?
 
 : La fonctionnalité « Type de contrôle préféré » vous permet de spécifier le type de contrôle préféré pour représenter les éléments HTML lors du chargement d'un document HTML. Cela aide à sélectionner le type de contrôle approprié pour une meilleure représentation et un meilleur traitement du contenu HTML.
 
@@ -91,4 +91,4 @@ R : Les StructuredDocumentTags (SDT) sont des éléments basés sur XML qui peu
 
 #### Q : Puis-je utiliser d’autres types de contrôle comme option préférée ?
 
- R : Oui, à part`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET prend en charge d'autres types de contrôle tels que`HtmlControlType.ContentControl` et`HtmlControlType.CustomXmlMarkup`.
+ R : Oui, à part`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET prend en charge d'autres types de contrôle tels que`HtmlControlType.ContentControl`et`HtmlControlType.CustomXmlMarkup`.

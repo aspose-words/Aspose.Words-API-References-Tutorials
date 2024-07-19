@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## Adım 7: Tabloyu tamamlayın ve belgeyi kaydedin
 İçinde
 
- sonunda tabloyu oluşturmayı bitiriyoruz.`EndRow()` Ve`EndTable()` yöntemini kullandıktan sonra değiştirilen belgeyi bir dosyaya kaydederiz.
+ sonunda tabloyu oluşturmayı bitiriyoruz.`EndRow()`Ve`EndTable()` yöntemini kullandıktan sonra değiştirilen belgeyi bir dosyaya kaydederiz.
 
 ```csharp
 builder. EndRow();

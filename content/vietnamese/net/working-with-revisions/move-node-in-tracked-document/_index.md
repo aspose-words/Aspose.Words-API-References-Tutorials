@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### Câu hỏi: Làm cách nào tôi có thể di chuyển một nút trong tài liệu được theo dõi mà không tạo ra các bản sửa đổi?
 
- Trả lời: Nếu bạn muốn di chuyển một nút trong tài liệu được theo dõi mà không tạo ra các bản sửa đổi, bạn có thể sử dụng`Remove` Và`InsertAfter` hoặc`InsertBefore` các phương pháp của`Node` sự vật. Ví dụ: để di chuyển một đoạn này sang đoạn khác, bạn có thể sử dụng đoạn mã sau:
+ Trả lời: Nếu bạn muốn di chuyển một nút trong tài liệu được theo dõi mà không tạo ra các bản sửa đổi, bạn có thể sử dụng`Remove`Và`InsertAfter` hoặc`InsertBefore` các phương pháp của`Node` sự vật. Ví dụ: để di chuyển một đoạn này sang đoạn khác, bạn có thể sử dụng đoạn mã sau:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

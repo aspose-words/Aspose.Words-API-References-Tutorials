@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 
 Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument anzugeben.
 
-### Beispielquellcode für Zeilenformat: Deaktivieren des Seitenumbruchs mit Aspose.Words für .NET 
+### Beispielquellcode für Zeilenformat „Umbruch über mehrere Seiten deaktivieren“ mit Aspose.Words für .NET 
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis

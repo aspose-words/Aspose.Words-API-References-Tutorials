@@ -66,7 +66,7 @@ foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
-tym przykładzie przesłaliśmy dokument, zaktualizowaliśmy wszystkie pola, a następnie przeglądaliśmy pola, aby wyświetlić wyniki. Możesz dostosować ten krok, korzystając z własnej logiki przetwarzania wyników w terenie.
+W tym przykładzie przesłaliśmy dokument, zaktualizowaliśmy wszystkie pola, a następnie przeglądaliśmy pola, aby wyświetlić wyniki. Możesz dostosować ten krok, korzystając z własnej logiki przetwarzania wyników w terenie.
 
 Na tym kończy się nasz przewodnik dotyczący korzystania z funkcji „Pokaż wyniki pola” w Aspose.Words dla .NET.
 

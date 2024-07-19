@@ -17,7 +17,7 @@ Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 - Temel C# Bilgisi: C# programlamaya aşinalık, adımları anlamanıza ve sorunsuz bir şekilde uygulamanıza yardımcı olacaktır.
 -  Aspose.Words for .NET Kütüphanesi: Aspose.Words for .NET'i şu adresten indirip yükleyin:[İndirme: {link](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Kodunuzu yazmak ve yürütmek için Visual Studio gibi uygun bir ortam.
--  Örnek Belge: Örnek bir belge (örn.`Rendering.docx`) yazı tipi ayarlarını uygulamak için.
+- Örnek Belge: Örnek bir belge (örn.`Rendering.docx`) yazı tipi ayarlarını uygulamak için.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -55,7 +55,7 @@ Bu örnekte:
 
 ## 3. Adım: Belgeyi Yükleyin
 
-Yazı tipi kaynaklarınız yapılandırıldıktan sonraki adım, belgenizi Aspose.Words'e yüklemektir.`Document` nesne. Bu, belgeyi değiştirmenize ve sonunda kaydetmenize olanak tanır.
+ Yazı tipi kaynaklarınız yapılandırıldıktan sonraki adım, belgenizi Aspose.Words'e yüklemektir.`Document` nesne. Bu, belgeyi değiştirmenize ve sonunda kaydetmenize olanak tanır.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak yazı tipi ayarlarını yönetmeni
 
 ### S1: Birden fazla özel klasördeki yazı tiplerini kullanabilir miyim?
 
- Evet, birden fazla belirtebilirsiniz`FolderFontSource`içindeki örnekler`SetFontsSources` farklı klasörlerdeki yazı tiplerini ekleme yöntemini kullanın.
+ Evet, birden fazla belirtebilirsiniz`FolderFontSource` içindeki örnekler`SetFontsSources` farklı klasörlerdeki yazı tiplerini ekleme yöntemini kullanın.
 
 ### S2: Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?
 

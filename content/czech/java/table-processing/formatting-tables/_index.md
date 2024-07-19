@@ -79,7 +79,7 @@ Ve formátování se děje kouzlo. Aspose.Words for Java poskytuje nepřeberné 
 
 ### Úprava šířky sloupců
 
-Můžete ovládat šířku sloupců, abyste zajistili, že tabulka bude vypadat vizuálně přitažlivě. Zde je návod, jak upravit šířku sloupců:
+Můžete ovládat šířku sloupců, abyste zajistili, že tabulka bude vypadat vizuálně přitažlivě. Takto můžete upravit šířku sloupců:
 
 ```java
 // Nastavte preferovanou šířku sloupce
@@ -88,7 +88,7 @@ cell1.getCellFormat().setPreferredWidth(100.0);
 
 ### Použití hranic
 
-Přidání ohraničení do tabulky může zlepšit její čitelnost. Styly ohraničení můžete také upravit:
+Přidání ohraničení do tabulky může zlepšit její čitelnost. Styly ohraničení můžete také přizpůsobit:
 
 ```java
 // Použijte ohraničení na buňku

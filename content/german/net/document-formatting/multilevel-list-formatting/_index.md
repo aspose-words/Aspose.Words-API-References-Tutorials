@@ -125,7 +125,7 @@ Und da haben Sie es! Sie haben erfolgreich eine mehrstufige Liste in einem Word-
  Ja, Sie können die Nummerierung fortsetzen, indem Sie die`ListFormat.List` Eigenschaft zum Verknüpfen mit einer vorhandenen Liste.
 
 ### Wie ändere ich die Einrückungsebene dynamisch?
- Sie können die Einrückungsebene dynamisch ändern, indem Sie`ListIndent` Und`ListOutdent` Methoden nach Bedarf.
+ Sie können die Einrückungsebene dynamisch ändern, indem Sie`ListIndent`Und`ListOutdent` Methoden nach Bedarf.
 
 ### Kann ich mehrstufige Listen in anderen Dokumentformaten wie PDF erstellen?
 Ja, Aspose.Words unterstützt das Speichern von Dokumenten in verschiedenen Formaten, einschließlich PDF, unter Beibehaltung der Formatierung.

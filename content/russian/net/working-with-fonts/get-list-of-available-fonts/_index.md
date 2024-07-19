@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Добавьте новый источник папки, который будет указывать Aspose.Words искать шрифты в следующей папке.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//Добавьте пользовательскую папку, содержащую наши шрифты, в список существующих источников шрифтов.
+// Добавьте пользовательскую папку, содержащую наши шрифты, в список существующих источников шрифтов.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 #### Вопрос: Как я могу использовать список доступных шрифтов в своих документах Word?
 
-О: Чтобы использовать список шрифтов, доступных в ваших документах Word, вы можете просмотреть список и выбрать подходящие шрифты, используя методы и свойства`FontSettings` класс в Aspose.Words.
+ О: Чтобы использовать список шрифтов, доступных в ваших документах Word, вы можете просмотреть список и выбрать подходящие шрифты, используя методы и свойства файла`FontSettings` класс в Aspose.Words.

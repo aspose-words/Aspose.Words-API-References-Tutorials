@@ -112,11 +112,11 @@ C: İç içe alanların kullanılması, Aspose.Words for .NET ile bir Word belge
 
 #### S: Aspose.Words for .NET ile bir Word belgesinde çok düzeyli iç içe geçmiş alanlara sahip olabilir miyim?
 
- C: Evet, Aspose.Words for .NET ile bir Word belgesinde çok düzeyli iç içe geçmiş alanlara sahip olmak mümkündür. kullanarak, iç içe geçmiş alanların karmaşık hiyerarşilerini oluşturabilirsiniz.`FieldStart.NextSibling` Mevcut üst alanlara alt alanlar ekleme yöntemi.
+C: Evet, Aspose.Words for .NET ile bir Word belgesinde çok düzeyli iç içe geçmiş alanlara sahip olmak mümkündür. kullanarak, iç içe geçmiş alanların karmaşık hiyerarşilerini oluşturabilirsiniz.`FieldStart.NextSibling` Mevcut üst alanlara alt alanlar ekleme yöntemi.
 
 #### S: Aspose.Words for .NET ile bir Word belgesindeki iç içe geçmiş alanların özelliklerini nasıl özelleştirebilirim?
 
- C: Aspose.Words for .NET ile bir Word belgesindeki iç içe geçmiş alanların özelliklerini özelleştirmek için ilgili`FieldStart`nesneleri seçin ve özelliklerini gerektiği gibi değiştirin. İstenilen sonucu elde etmek için iç içe alanların biçimlendirme seçeneklerini, değerlerini, hesaplamalarını vb. ayarlayabilirsiniz.
+ C: Aspose.Words for .NET ile bir Word belgesindeki iç içe geçmiş alanların özelliklerini özelleştirmek için ilgili`FieldStart` nesneleri seçin ve özelliklerini gerektiği gibi değiştirin. İstenilen sonucu elde etmek için iç içe alanların biçimlendirme seçeneklerini, değerlerini, hesaplamalarını vb. ayarlayabilirsiniz.
 
 #### S: İç içe alanların eklenmesi Aspose.Words for .NET'te Word belgesinin performansını etkiler mi?
 

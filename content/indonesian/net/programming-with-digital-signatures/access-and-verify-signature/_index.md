@@ -2,122 +2,150 @@
 title: Akses Dan Verifikasi Tanda Tangan Di Dokumen Word
 linktitle: Akses Dan Verifikasi Tanda Tangan Di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengakses dan memverifikasi tanda tangan digital di dokumen Word dengan Aspose.Words untuk .NET.
+description: Akses dan verifikasi tanda tangan digital di dokumen Word menggunakan Aspose.Words for .NET dengan panduan langkah demi langkah yang komprehensif ini. Pastikan keaslian dokumen dengan mudah.
 type: docs
 weight: 10
 url: /id/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
-Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk menggunakan fitur verifikasi akses dan tanda tangan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda mengakses tanda tangan digital di dokumen Word dan memverifikasi validitasnya. Ikuti langkah-langkah di bawah ini:
+## Perkenalan
 
-## Langkah 1: Memuat dokumen dan mengakses tanda tangan
+Hai, rekan-rekan penggemar teknologi! Pernahkah Anda berada dalam situasi di mana Anda perlu mengakses dan memverifikasi tanda tangan digital di dokumen Word tetapi tidak tahu harus mulai dari mana? Nah, Anda beruntung! Hari ini, kita menyelami dunia Aspose.Words for .NET yang menakjubkan, perpustakaan canggih yang memudahkan penanganan dokumen Word. Kami akan memandu Anda melalui proses ini selangkah demi selangkah, sehingga di akhir panduan ini, Anda akan ahli dalam memverifikasi tanda tangan digital di dokumen Word. Mari kita mulai!
 
-Mulailah dengan mengunggah dokumen yang berisi tanda tangan digital:
+## Prasyarat
+
+Sebelum kita mendalami seluk beluknya, ada beberapa hal yang perlu Anda siapkan:
+
+1. Visual Studio: Pastikan Anda telah menginstal Visual Studio di mesin Anda. Di sinilah Anda akan menulis dan menjalankan kode Anda.
+2.  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/) . Jangan lupa untuk mendapatkan uji coba gratis Anda[Di Sini](https://releases.aspose.com/) jika Anda belum melakukannya!
+3. Dokumen Word yang Ditandatangani Secara Digital: Miliki dokumen Word yang sudah ditandatangani secara digital. Ini adalah file yang akan Anda gunakan untuk memverifikasi tanda tangan.
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Namespace ini memungkinkan Anda menggunakan fitur Aspose.Words di proyek Anda.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.DigitalSignatures;
+```
+
+Baiklah, mari kita bagi menjadi langkah-langkah yang dapat dikelola. Setiap langkah akan memandu Anda melalui bagian proses tertentu. Siap? Ayo pergi!
+
+## Langkah 1: Siapkan Proyek Anda
+
+Sebelum Anda dapat memverifikasi tanda tangan digital, Anda perlu menyiapkan proyek Anda di Visual Studio. Begini caranya:
+
+### Buat Proyek Baru
+
+1. Buka Visual Studio.
+2. Klik Buat proyek baru.
+3. Pilih Aplikasi Konsol (.NET Core) atau Aplikasi Konsol (.NET Framework), bergantung pada preferensi Anda.
+4. Klik Berikutnya, beri nama proyek Anda, dan klik Buat.
+
+### Instal Aspose.Words untuk .NET
+
+1. Di Solution Explorer, klik kanan pada nama proyek Anda dan pilih Kelola Paket NuGet.
+2. Di Manajer Paket NuGet, cari Aspose.Words.
+3. Klik Instal untuk menambahkannya ke proyek Anda.
+
+## Langkah 2: Muat Dokumen Word yang Ditandatangani Secara Digital
+
+Sekarang proyek Anda sudah siap, mari muat dokumen Word yang ditandatangani secara digital.
+
+```csharp
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-## Langkah 2: Telusuri Tanda Tangan Digital
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda. Cuplikan kode ini menginisialisasi yang baru`Document` objek dan memuat dokumen Word yang Anda tandatangani.
 
-Gunakan loop untuk mengulang semua tanda tangan digital dalam dokumen:
+## Langkah 3: Akses Tanda Tangan Digital
+
+Setelah dokumen Anda dimuat, saatnya mengakses tanda tangan digital.
 
 ```csharp
 foreach (DigitalSignature signature in doc.DigitalSignatures)
 {
-	// Akses informasi tanda tangan
-	Console.WriteLine("* Signature Found *");
-	Console.WriteLine("Is valid: " + signature.IsValid);
-	// Properti ini hanya tersedia dalam dokumen MS Word.
-	Console.WriteLine("Reason for signing: " + signature.Comments); 
-	Console.WriteLine("Time of signing: " + signature.SignTime);
-	Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-	Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-	Console.WriteLine();
+    Console.WriteLine("* Signature Found *");
+    Console.WriteLine("Is valid: " + signature.IsValid);
+    Console.WriteLine("Reason for signing: " + signature.Comments); 
+    Console.WriteLine("Time of signing: " + signature.SignTime);
+    Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+    Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+    Console.WriteLine();
 }
 ```
 
-Pastikan untuk menyesuaikan pesan tampilan sesuai dengan kebutuhan Anda.
+Kode ini menelusuri setiap tanda tangan digital dalam dokumen dan mencetak berbagai detail tentang tanda tangan tersebut. Mari kita uraikan fungsi masing-masing bagian:
 
-### Contoh kode sumber untuk Akses dan Verifikasi Tanda Tangan menggunakan Aspose.Words untuk .NET
+1. Tanda Tangan Ditemukan: Menunjukkan bahwa tanda tangan telah ditemukan.
+2. Valid: Memeriksa apakah tanda tangan valid.
+3. Alasan penandatanganan: Menampilkan alasan penandatanganan, jika tersedia.
+4. Waktu penandatanganan: Menampilkan stempel waktu saat dokumen ditandatangani.
+5. Nama subjek: Mengambil nama subjek dari sertifikat.
+6. Nama penerbit: Mengambil nama penerbit dari sertifikat.
 
-Berikut source code lengkap untuk akses dan verifikasi tanda tangan menggunakan Aspose.Words for .NET:
+## Langkah 4: Jalankan Kode Anda
+
+Setelah semuanya siap, saatnya menjalankan kode Anda dan melihat hasilnya.
+
+
+1. Tekan F5 atau klik tombol Start di Visual Studio untuk menjalankan program Anda.
+2. Jika dokumen Anda ditandatangani secara digital, Anda akan melihat detail tanda tangan tercetak di konsol.
+
+## Langkah 5: Tangani Potensi Kesalahan
+
+Itu selalu merupakan ide bagus untuk menangani potensi kesalahan yang mungkin terjadi. Mari tambahkan beberapa penanganan kesalahan dasar pada kode kita.
 
 ```csharp
-	
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Digitally signed.docx");
+try
+{
+    // Jalur ke direktori dokumen.
+    string dataDir = "YOUR DOCUMENT DIRECTORY";
+    Document doc = new Document(dataDir + "Digitally signed.docx");
 
-	foreach (DigitalSignature signature in doc.DigitalSignatures)
-	{
-		Console.WriteLine("* Signature Found *");
-		Console.WriteLine("Is valid: " + signature.IsValid);
-		// Properti ini hanya tersedia dalam dokumen MS Word.
-		Console.WriteLine("Reason for signing: " + signature.Comments); 
-		Console.WriteLine("Time of signing: " + signature.SignTime);
-		Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-		Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-		Console.WriteLine();
-	}
-
+    foreach (DigitalSignature signature in doc.DigitalSignatures)
+    {
+        Console.WriteLine("* Signature Found *");
+        Console.WriteLine("Is valid: " + signature.IsValid);
+        Console.WriteLine("Reason for signing: " + signature.Comments); 
+        Console.WriteLine("Time of signing: " + signature.SignTime);
+        Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+        Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+        Console.WriteLine();
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine("An error occurred: " + ex.Message);
+}
 ```
 
-Dengan mengikuti langkah-langkah ini, Anda akan dapat dengan mudah mengakses dan memverifikasi tanda tangan digital di dokumen Word Anda dengan Aspose.Words untuk .NET.
+Ini akan menangkap setiap pengecualian yang mungkin terjadi dan mencetak pesan kesalahan.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelajahi fitur mengakses dan memverifikasi tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang disediakan, Anda dapat dengan mudah memuat dokumen, mengakses tanda tangan digitalnya, dan memverifikasi validitasnya. Kemampuan untuk mengakses dan memverifikasi tanda tangan digital memberikan cara untuk memastikan integritas dan keaslian dokumen Word Anda. Aspose.Words for .NET menawarkan API yang kuat untuk Pemrosesan Kata dengan tanda tangan digital, memungkinkan Anda mengotomatiskan proses verifikasi dan meningkatkan keamanan dokumen Anda.
+Dan itu dia! Anda telah berhasil mengakses dan memverifikasi tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET. Ini tidak sesulit kelihatannya, bukan? Dengan langkah-langkah ini, Anda dapat dengan percaya diri menangani tanda tangan digital di dokumen Word Anda, memastikan keaslian dan integritasnya. Selamat membuat kode!
 
-### FAQ
+## FAQ
 
-#### T: Apa yang dimaksud dengan tanda tangan digital dalam dokumen Word?
+### Bisakah saya menggunakan Aspose.Words untuk .NET untuk menambahkan tanda tangan digital ke dokumen Word?
 
-J: Tanda tangan digital dalam dokumen Word adalah tanda tangan elektronik yang menyediakan cara untuk mengautentikasi integritas dan asal dokumen. Dokumen tersebut dibuat menggunakan sertifikat digital dan algoritme kriptografi, sehingga penerima dapat memverifikasi bahwa dokumen tersebut tidak diubah dan berasal dari sumber tepercaya.
+Ya, Anda dapat menggunakan Aspose.Words untuk .NET untuk menambahkan tanda tangan digital ke dokumen Word. Perpustakaan menyediakan fitur lengkap untuk menambah dan memverifikasi tanda tangan digital.
 
-#### T: Bagaimana cara mengakses tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET?
+### Jenis tanda tangan digital apa yang dapat diverifikasi Aspose.Words for .NET?
 
-J: Untuk mengakses tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
-1.  Muat dokumen menggunakan`Document` kelas dan tentukan jalur ke file dokumen.
-2.  Gunakan loop untuk mengulangi`DigitalSignatures` pengumpulan dokumen. Setiap iterasi mewakili tanda tangan digital.
+Aspose.Words untuk .NET dapat memverifikasi tanda tangan digital dalam file DOCX yang menggunakan sertifikat X.509.
 
-#### T: Informasi apa yang dapat saya akses dari tanda tangan digital di dokumen Word?
+### Apakah Aspose.Words for .NET kompatibel dengan semua versi Microsoft Word?
 
-A: Dari tanda tangan digital di dokumen Word, Anda dapat mengakses berbagai informasi, seperti:
-- Validitas: Periksa apakah tanda tangan itu valid.
-- Komentar: Dapatkan alasan penandatanganan yang ditentukan oleh penandatangan.
-- Waktu Masuk: Dapatkan waktu saat dokumen ditandatangani.
-- Nama Subjek: Mengambil nama penandatangan atau subjek sertifikat.
-- Nama Penerbit: Dapatkan nama penerbit sertifikat.
+Aspose.Words untuk .NET mendukung semua versi dokumen Microsoft Word, termasuk DOC, DOCX, RTF, dan banyak lagi.
 
-#### T: Bisakah saya memverifikasi validitas tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET?
+### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
 
- J: Ya, Anda dapat memverifikasi validitas tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengakses`IsValid` properti dari`DigitalSignature` objek, Anda dapat menentukan apakah tanda tangan itu sah atau tidak.
+ Anda bisa mendapatkan lisensi sementara untuk Aspose.Words untuk .NET dari[Di Sini](https://purchase.aspose.com/temporary-license/). Ini memungkinkan Anda untuk mencoba fitur lengkap perpustakaan tanpa batasan apa pun.
 
-#### T: Bagaimana cara memverifikasi validitas tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET?
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
 
-J: Untuk memverifikasi validitas tanda tangan digital di dokumen Word menggunakan Aspose.Words for .NET, Anda dapat mengikuti langkah-langkah berikut:
-1.  Akses`DigitalSignatures` pengumpulan dokumen.
-2.  Ulangi masing-masing`DigitalSignature` objek dalam koleksi.
-3.  Menggunakan`IsValid` properti dari`DigitalSignature` keberatan untuk memeriksa apakah tanda tangannya sah.
-
-#### T: Bisakah saya mengambil komentar atau alasan penandatanganan dari tanda tangan digital di dokumen Word?
-
-J: Ya, Anda dapat mengambil komentar atau alasan penandatanganan dari tanda tangan digital di dokumen Word. Itu`Comments` properti dari`DigitalSignature` objek menyediakan akses ke komentar yang ditentukan oleh penandatangan selama proses penandatanganan.
-
-#### T: Jenis dokumen apa yang didukung fitur verifikasi tanda tangan di Aspose.Words untuk .NET?
-
-J: Fitur verifikasi tanda tangan di Aspose.Words for .NET mendukung verifikasi tanda tangan digital di dokumen Word dengan format file DOCX. Anda dapat menggunakan fitur ini untuk memverifikasi tanda tangan di file DOCX.
-
-#### T: Bagaimana cara mengakses detail sertifikat tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET?
-
- J: Untuk mengakses detail sertifikat tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat mengakses`CertificateHolder` properti dari`DigitalSignature` obyek. Dari`CertificateHolder` objek, Anda dapat mengambil berbagai detail sertifikat, seperti nama subjek dan nama penerbit.
-
-#### T: Bisakah saya mengkustomisasi tampilan atau pemrosesan tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET?
-
- J: Ya, Anda dapat menyesuaikan tampilan atau pemrosesan tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengakses properti dan metode`DigitalSignature` objek, Anda dapat mengekstrak informasi yang diinginkan, melakukan validasi tambahan, atau mengintegrasikan proses verifikasi tanda tangan ke dalam alur kerja aplikasi Anda.
-
-#### T: Apakah mungkin untuk memverifikasi beberapa tanda tangan digital dalam dokumen Word menggunakan Aspose.Words untuk .NET?
-
- J: Ya, verifikasi beberapa tanda tangan digital dalam dokumen Word dapat dilakukan menggunakan Aspose.Words untuk .NET. Dengan mengulangi melalui`DigitalSignatures` kumpulan dokumen, Anda dapat mengakses dan memverifikasi setiap tanda tangan digital satu per satu.
-
+ Anda dapat menemukan dokumentasi terperinci untuk Aspose.Words untuk .NET[Di Sini](https://reference.aspose.com/words/net/).

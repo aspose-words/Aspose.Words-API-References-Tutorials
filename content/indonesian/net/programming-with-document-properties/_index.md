@@ -16,11 +16,11 @@ Baik Anda seorang pemula atau pengembang berpengalaman, tutorial Aspose.Words un
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Dapatkan Variabel](./get-variables/) | Panduan langkah demi langkah untuk mengambil variabel dokumen dengan Aspose.Words untuk .NET. |
-| [Hitung Properti](./enumerate-properties/) | Panduan langkah demi langkah untuk menghitung properti dokumen dengan Aspose.Words untuk .NET. |
-| [Tambahkan Properti Dokumen Kustom](./add-custom-document-properties/) | Panduan langkah demi langkah untuk menambahkan properti khusus ke dokumen dengan Aspose.Words untuk .NET. |
-| [Hapus Properti Dokumen Kustom](./remove-custom-document-properties/) | Panduan langkah demi langkah untuk menghapus properti khusus dari dokumen dengan Aspose.Words untuk .NET. |
-| [Hapus Informasi Pribadi](./remove-personal-information/) | Panduan langkah demi langkah untuk menghapus informasi pribadi dari dokumen dengan Aspose.Words untuk .NET. |
-| [Mengonfigurasi Tautan Ke Konten](./configuring-link-to-content/) | Panduan langkah demi langkah untuk menyiapkan penautan ke konten dalam dokumen dengan Aspose.Words untuk .NET. |
-| [Konversi Antar Satuan Pengukuran](./convert-between-measurement-units/) | Panduan langkah demi langkah untuk mengonversi antar unit pengukuran dalam dokumen dengan Aspose.Words untuk .NET. |
-| [Gunakan Karakter Kontrol](./use-control-characters/) | Panduan langkah demi langkah untuk menggunakan karakter kontrol dengan Aspose.Words untuk .NET. |
+| [Dapatkan Variabel](./get-variables/) | Kuasai Aspose.Kata-kata untuk .NET. Pelajari cara memuat dan mengekstrak variabel dari dokumen Word dengan panduan langkah demi langkah ini. |
+| [Hitung Properti](./enumerate-properties/) | Pelajari cara menghitung properti dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk pengembang dari semua tingkat keahlian. |
+| [Tambahkan Properti Dokumen Kustom](./add-custom-document-properties/) | Pelajari cara menambahkan properti dokumen kustom di file Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk menyempurnakan dokumen Anda dengan metadata tambahan. |
+| [Hapus Properti Dokumen Kustom](./remove-custom-document-properties/) | Hapus properti dokumen khusus di file Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk solusi cepat dan mudah. Sempurna untuk pengembang. |
+| [Hapus Informasi Pribadi](./remove-personal-information/) | Pelajari cara menghapus informasi pribadi dari dokumen menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sederhanakan manajemen dokumen. |
+| [Mengonfigurasi Tautan Ke Konten](./configuring-link-to-content/) | Pelajari cara mengonfigurasi tautan ke konten dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah kami yang mendetail. |
+| [Konversi Antar Satuan Pengukuran](./convert-between-measurement-units/) | Pelajari cara mengonversi satuan pengukuran di Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengatur margin, header, dan footer dokumen dalam inci dan titik. |
+| [Gunakan Karakter Kontrol](./use-control-characters/) | Temukan cara mengotomatiskan tugas dokumen Word menggunakan Aspose.Words untuk .NET. Panduan ini mencakup penyiapan, penggantian teks, dan banyak lagi, sehingga membuat alur kerja Anda efisien. |

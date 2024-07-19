@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Passaggio 3: controlla se il documento è crittografato
 
- Noi usiamo il`IsEncrypted` proprietà del`FileFormatInfo`oggetto per verificare se il documento è crittografato. Questa proprietà ritorna`true` se il documento è crittografato, altrimenti ritorna`false`. Visualizziamo il risultato nella console.
+ Noi usiamo il`IsEncrypted` proprietà del`FileFormatInfo` oggetto per verificare se il documento è crittografato. Questa proprietà ritorna`true` se il documento è crittografato, altrimenti ritorna`false`. Visualizziamo il risultato nella console.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -54,7 +54,7 @@ Console.WriteLine(info.IsEncrypted);
 
 ### D: Quali sono i passaggi per verificare un documento Word crittografato?
 
-I passaggi per verificare un documento Word crittografato sono i seguenti:
+passaggi per verificare un documento Word crittografato sono i seguenti:
 
 Definire la directory dei documenti.
 
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### D: Come rilevare il formato del file?
- Puoi usare il`DetectFileFormat` metodo del`FileFormatUtil`classe per rilevare le informazioni sul formato del file. Nell'esempio seguente presupponiamo che il documento crittografato si chiami "Encrypted.docx" e si trovi nella directory dei documenti specificata:
+ Puoi usare il`DetectFileFormat` metodo del`FileFormatUtil` classe per rilevare le informazioni sul formato del file. Nell'esempio seguente presupponiamo che il documento crittografato si chiami "Encrypted.docx" e si trovi nella directory dei documenti specificata:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### D: Come verificare se il documento è crittografato?
- Puoi usare il`IsEncrypted` proprietà del`FileFormatInfo`oggetto per verificare se il documento è crittografato. Questa proprietà ritorna`true` se il documento è crittografato, altrimenti ritorna`false`. Il risultato viene visualizzato nella console:
+ Puoi usare il`IsEncrypted` proprietà del`FileFormatInfo` oggetto per verificare se il documento è crittografato. Questa proprietà ritorna`true` se il documento è crittografato, altrimenti ritorna`false`. Il risultato viene visualizzato nella console:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

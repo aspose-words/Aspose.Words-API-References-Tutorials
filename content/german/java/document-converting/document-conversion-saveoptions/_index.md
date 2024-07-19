@@ -91,6 +91,6 @@ Ja, Aspose.Words für Java bietet robuste Unterstützung für die Konvertierung 
 
 Bei der Arbeit mit Dokumentkonvertierungen ist es wichtig, Fehler ordnungsgemäß zu behandeln. Hinweise zur Fehlerbehandlung und Fehlerbehebung finden Sie in der Aspose.Words-Dokumentation.
 
-### Ist Aspose.Words für die Dokumentenverarbeitung im großen Maßstab geeignet?
+### Ist Aspose.Words für die Verarbeitung umfangreicher Dokumente geeignet?
 
 Aspose.Words eignet sich sowohl für die Verarbeitung kleiner als auch großer Dokumente. Es bietet hohe Leistung und Skalierbarkeit und ist damit eine ausgezeichnete Wahl für Projekte jeder Größe.

@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 A continuación, debemos mover el cursor a un párrafo específico del documento donde queremos insertar el campo de combinación.
 
 ```csharp
-// Mueve el cursor al párrafo.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Paso 6: inserte el campo de combinación

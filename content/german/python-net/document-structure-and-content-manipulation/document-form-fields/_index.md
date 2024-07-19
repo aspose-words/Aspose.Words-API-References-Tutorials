@@ -1,7 +1,7 @@
 ---
 title: Formularfelder und Datenerfassung in Word-Dokumenten beherrschen
 linktitle: Formularfelder und Datenerfassung in Word-Dokumenten beherrschen
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Meistern Sie die Kunst des Erstellens und Verwaltens von Formularfeldern in Word-Dokumenten mit Aspose.Words für Python. Lernen Sie, Daten effizient zu erfassen und die Benutzereinbindung zu verbessern.
 type: docs
 weight: 15
@@ -207,7 +207,7 @@ Dropdown-Listen vereinfachen die Auswahl von Optionen aus einem vordefinierten S
 
 ### Datumsauswahl
 
-Datumsauswahlen vereinfachen die Erfassung von Daten von Benutzern. Sie bieten eine benutzerfreundliche Oberfläche zur Auswahl von Daten und verringern so die Wahrscheinlichkeit von Eingabefehlern. Um ein Datumsauswahlformularfeld zu erstellen, verwenden Sie den folgenden Code:
+Datumsauswahlen vereinfachen die Erfassung von Daten von Benutzern. Sie bieten eine benutzerfreundliche Oberfläche zur Auswahl von Daten und verringern so die Wahrscheinlichkeit von Eingabefehlern. Verwenden Sie den folgenden Code, um ein Datumsauswahlformularfeld zu erstellen:
 
 ```python
 # Create a date picker form field

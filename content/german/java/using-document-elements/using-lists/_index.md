@@ -39,7 +39,7 @@ doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
 ```
 
 ### Listeneinstellungen konfigurieren: 
-\Aktivieren Sie die Liste so, dass sie in jedem Abschnitt neu gestartet wird.
+\Aktivieren Sie die Option „Liste neu starten“ in jedem Abschnitt.
 
 ```java
 List list = doc.getLists().get(0);
@@ -181,7 +181,7 @@ Indem Sie diese Schritte befolgen, können Sie Dokumente mit benutzerdefinierten
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Auf diese Weise können Sie die Listenformatierung stoppen.
+        // Auf diese Weise können Sie die Listenformatierung beenden.
         builder.getListFormat().setList(null);
         builder.getDocument().save(outPath + "WorkingWithList.SpecifyListLevel.docx");
     }

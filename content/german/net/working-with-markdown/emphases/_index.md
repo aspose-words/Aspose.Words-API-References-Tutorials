@@ -113,7 +113,7 @@ A: Um Text mit Markdown hervorzuheben, umgeben Sie den Text einfach mit den ents
 
 #### F: Können wir verschiedene Hervorhebungen im selben Text kombinieren?
 
- A: Ja, es ist möglich, verschiedene Hervorhebungen im selben Text zu kombinieren. Sie können beispielsweise ein Wort fett und kursiv markieren, indem Sie beide`**` Und`*` um das Wort herum.
+ A: Ja, es ist möglich, verschiedene Hervorhebungen im selben Text zu kombinieren. Sie können beispielsweise ein Wort fett und kursiv markieren, indem Sie beide`**`Und`*` um das Wort herum.
 
 #### F: Welche Hervorhebungsoptionen sind in Markdown verfügbar?
 

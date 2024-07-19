@@ -106,7 +106,7 @@ För att ställa in miljön måste du se till att du har Aspose.Words för .NET 
 
 #### Hur kan jag tillämpa olika stilar på olika textavsnitt?
 
- Du kan använda olika stilar på olika textavsnitt genom att ställa in`ParagraphFormat.StyleName` egendom av`DocumentBuilder`objekt. Innan du skriver texten kan du ställa in stilnamnet till önskad stil, och den efterföljande texten kommer att formateras därefter.
+Du kan använda olika stilar på olika textavsnitt genom att ställa in`ParagraphFormat.StyleName` egendom av`DocumentBuilder` objekt. Innan du skriver texten kan du ställa in stilnamnet till önskad stil, och den efterföljande texten kommer att formateras därefter.
 
 #### Kan jag spara dokumentet i olika format?
 

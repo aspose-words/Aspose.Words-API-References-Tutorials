@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Questo codice crea un'istanza di`HtmlSaveOptions` imposta il`ResolveFontNames` opzione a`true`per risolvere i nomi dei caratteri mancanti durante la conversione in HTML. Anche il`PrettyFormat` l'opzione è impostata su`true` per ottenere un codice HTML ben formattato.
+ Questo codice crea un'istanza di`HtmlSaveOptions` e imposta il`ResolveFontNames` opzione a`true`per risolvere i nomi dei caratteri mancanti durante la conversione in HTML. Anche il`PrettyFormat` l'opzione è impostata su`true` per ottenere un codice HTML ben formattato.
 
 ## Passaggio 4: convertire e salvare il documento in HTML
 

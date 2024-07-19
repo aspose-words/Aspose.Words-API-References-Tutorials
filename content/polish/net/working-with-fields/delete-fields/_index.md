@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 Iteruj po wszystkich polach w dokumencie i usuń je:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 Ta pętla wykonuje iterację wstecz po kolekcji pól, aby uniknąć problemów z modyfikowaniem kolekcji podczas iteracji.

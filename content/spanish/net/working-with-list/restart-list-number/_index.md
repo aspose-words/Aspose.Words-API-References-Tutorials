@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### P: ¿Es posible personalizar el prefijo y el sufijo de la numeración de la lista reiniciada en Aspose.Words?
 
- R: Sí, puede personalizar el prefijo y el sufijo de la numeración de la lista reiniciada en Aspose.Words. El`ListLevel` clase ofrece propiedades tales como`ListLevel.NumberPrefix` y`ListLevel.NumberSuffix`que le permiten especificar el prefijo y el sufijo para cada nivel de la lista. Puede utilizar estas propiedades para personalizar el prefijo y el sufijo según sea necesario.
+ R: Sí, puede personalizar el prefijo y el sufijo de la numeración de la lista reiniciada en Aspose.Words. El`ListLevel` clase ofrece propiedades tales como`ListLevel.NumberPrefix`y`ListLevel.NumberSuffix`que le permiten especificar el prefijo y el sufijo para cada nivel de la lista. Puede utilizar estas propiedades para personalizar el prefijo y el sufijo según sea necesario.
 
 #### P: ¿Cómo puedo especificar un valor de numeración específico a partir del cual se debe reiniciar la lista?
 

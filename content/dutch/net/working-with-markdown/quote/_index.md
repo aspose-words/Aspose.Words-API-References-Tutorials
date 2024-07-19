@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Stap 3: Stijlen maken voor geneste niveaus
 
- We kunnen stijlen voor geneste niveaus maken met behulp van de`Styles.Add` werkwijze van de`Document` voorwerp. In dit voorbeeld maken we een stijl met de naam 'Quote1' om een genest citaatniveau weer te geven.
+ We kunnen stijlen voor geneste niveaus maken met behulp van de`Styles.Add` werkwijze van de`Document`voorwerp. In dit voorbeeld maken we een stijl met de naam 'Quote1' om een genest citaatniveau weer te geven.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

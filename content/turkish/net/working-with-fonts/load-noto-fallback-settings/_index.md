@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Belgeyi yükleyin ve yazı tipi değiştirme ayarlarını yapılandırın
- Daha sonra belgeyi kullanarak yükleyeceğiz.`Document` kullanarak yazı tipi geçersiz kılma ayarlarını sınıflandırın ve yapılandırın.`FontSettings`sınıf. Noto yazı tipi geri dönüş ayarlarını kullanarak yükleyeceğiz.`LoadNotoFallbackSettings()` yöntem.
+ Daha sonra belgeyi kullanarak yükleyeceğiz.`Document` kullanarak yazı tipi geçersiz kılma ayarlarını sınıflandırın ve yapılandırın.`FontSettings` sınıf. Noto yazı tipi geri dönüş ayarlarını kullanarak yükleyeceğiz.`LoadNotoFallbackSettings()` yöntem.
 
 ```csharp
 // Belgeyi yükleyin ve yazı tipi değiştirme ayarlarını yapılandırın

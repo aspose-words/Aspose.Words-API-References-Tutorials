@@ -16,7 +16,7 @@ Si vous souhaitez exploiter tout le potentiel d'Aspose.Words for Java pour la co
 ## Conversion de documents vers différents formats
 L'une des fonctionnalités clés d'Aspose.Words pour Java est sa capacité à convertir des documents vers différents formats de manière transparente. Que vous ayez besoin de convertir un fichier DOCX en PDF ou vice versa, ce didacticiel vous guidera pas à pas tout au long du processus. Vous acquerrez une compréhension approfondie des options de conversion et des possibilités de personnalisation.
 
-## Exportation de documents avec Aspose.Words
+## Exporter des documents avec Aspose.Words
 L'exportation de documents est un aspect crucial du travail avec des documents dans différents contextes. Dans ce didacticiel, nous explorerons comment Aspose.Words for Java facilite l'exportation de documents. Que vous souhaitiez exporter des pages spécifiques, des sections ou même des éléments individuels d'un document, vous trouverez ici les conseils dont vous avez besoin.
 
 À la fin de ces didacticiels, vous disposerez des connaissances et des compétences nécessaires pour effectuer en toute confiance des tâches de conversion et d'exportation de documents à l'aide d'Aspose.Words pour Java. Préparez-vous à rationaliser le traitement de vos documents et à améliorer votre productivité grâce à cette puissante API.

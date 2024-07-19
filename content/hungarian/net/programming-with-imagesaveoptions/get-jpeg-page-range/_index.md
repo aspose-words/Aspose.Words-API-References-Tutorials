@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- Ebben a lépésben konfiguráljuk a képek biztonsági mentési beállításait. Létrehozunk egy újat`ImageSaveOptions` objektum, amely megadja a kívánt mentési formátumot, itt a "Jpeg" a JPEG formátum. A konvertálandó oldalak körét is beállítjuk a`PageSet`tárgy. Végül beállítjuk a kép fényerejét és kontrasztját a segítségével`ImageBrightness` és`ImageContrast` tulajdonságait, ill. A vízszintes felbontást is megváltoztatjuk a`HorizontalResolution` ingatlan.
+ Ebben a lépésben konfiguráljuk a képek biztonsági mentési beállításait. Létrehozunk egy újat`ImageSaveOptions` objektum, amely megadja a kívánt mentési formátumot, itt a "Jpeg" a JPEG formátum. A konvertálandó oldalak körét is beállítjuk a`PageSet`tárgy. Végül beállítjuk a kép fényerejét és kontrasztját a segítségével`ImageBrightness`és`ImageContrast` tulajdonságait, ill. A vízszintes felbontást is megváltoztatjuk a`HorizontalResolution` ingatlan.
 
 ## 4. lépés: Képek biztonsági mentése
 

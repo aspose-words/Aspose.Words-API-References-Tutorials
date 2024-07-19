@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Načtěte dokument aplikace Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Nakonfigurujte možnosti zálohování pomocí funkce „Použít písma z cílového počítače“.
+// Nakonfigurujte možnosti zálohování pomocí funkce „Použít písma z cílového počítače“.
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Převést dokument do pevného HTML
@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.htm
 
 ## Závěr
 
-V této příručce jsme vysvětlili, jak převést dokument aplikace Word do pevného HTML pomocí písem cílového počítače pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Převod do pevného HTML s fonty cílového stroje zaručuje věrné a konzistentní vykreslení dokumentu ve formátu HTML.
+této příručce jsme vysvětlili, jak převést dokument aplikace Word do pevného HTML pomocí písem cílového počítače pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Převod do pevného HTML s fonty cílového stroje zaručuje věrné a konzistentní vykreslení dokumentu ve formátu HTML.

@@ -172,7 +172,7 @@ Para remover a proteção por senha de um documento protegido por senha, você p
 
 ### Posso definir propriedades personalizadas ao salvar um documento no formato OOXML?
 
- Sim, você pode definir propriedades personalizadas para um documento antes de salvá-lo no formato OOXML. Use o`BuiltInDocumentProperties` e`CustomDocumentProperties` classes para definir várias propriedades, como autor, título, palavras-chave e propriedades personalizadas.
+ Sim, você pode definir propriedades personalizadas para um documento antes de salvá-lo no formato OOXML. Use o`BuiltInDocumentProperties`e`CustomDocumentProperties` classes para definir várias propriedades, como autor, título, palavras-chave e propriedades personalizadas.
 
 ### Qual é o nível de compactação padrão ao salvar um documento no formato OOXML?
 

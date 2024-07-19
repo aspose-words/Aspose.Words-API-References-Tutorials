@@ -16,11 +16,11 @@ Az Aspose.Words for .NET dokumentumvédelmi oktatóanyaga gyakorlati példákon 
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Jelszavas védelem Word dokumentumban](./password-protection/) | Ismerje meg, hogyan lehet jelszóval védeni Word dokumentumokat az Aspose.Words for .NET használatával. |
-| [Csak az űrlapmezők védelme engedélyezése a Word-dokumentumban](./allow-only-form-fields-protect/) | Ismerje meg, hogyan használhatja az Aspose.Words for .NET-et a Word-dokumentum védelmére, és csak az űrlapmezők szerkesztését engedélyezi. |
-| [Dokumentumvédelem eltávolítása a Word dokumentumban](./remove-document-protection/) | Ismerje meg, hogyan távolíthatja el a védelmet egy Word-dokumentumból az Aspose.Words for .NET segítségével. |
-| [Korlátlan szerkeszthető régiók a Word dokumentumban](./unrestricted-editable-regions/) | Ismerje meg, hogyan hozhat létre korlátlan szerkeszthető területeket egy Word-dokumentumban az Aspose.Words for .NET segítségével. |
-| [Korlátlan szakasz a Word dokumentumban](./unrestricted-section/) | Ismerje meg, hogyan határozhat meg korlátlan szakaszokat egy Word-dokumentumban az Aspose.Words for .NET segítségével. |
-| [Védelem típusának lekérése Word dokumentumban](./get-protection-type/) | Ismerje meg, hogyan használhatja az Aspose.Words for .NET védelmi típusát a Word dokumentumban a dokumentum védelmi típusának meghatározására. |
-| [Csak olvasási védelem a Word dokumentumban](./read-only-protection/) | Ismerje meg, hogyan védheti meg írásvédett Word-dokumentumait az Aspose.Words for .NET segítségével. |
-| [Távolítsa el a Csak olvasási korlátozást](./remove-read-only-restriction/) | Ismerje meg, hogyan távolíthatja el a csak olvasható korlátozást egy Word-dokumentumból az Aspose.Words for .NET segítségével. |
+| [Jelszavas védelem Word dokumentumban](./password-protection/) | Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan védheti meg Word-dokumentumait jelszavas védelemmel az Aspose.Words for .NET használatával. |
+| [Csak az űrlapmezők védelme engedélyezése a Word-dokumentumban](./allow-only-form-fields-protect/) | Ismerje meg, hogyan védheti meg a Word-dokumentumokat, és csak az űrlapmezőket teszi lehetővé az Aspose.Words for .NET használatával. Kövesse útmutatónkat, hogy dokumentumai biztonságosak és könnyen szerkeszthetők legyenek. |
+| [Dokumentumvédelem eltávolítása a Word dokumentumban](./remove-document-protection/) | Ismerje meg, hogyan távolíthatja el a Word-dokumentumok védelmét az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat a dokumentumok védelmének egyszerű feloldásához. |
+| [Korlátlan szerkeszthető régiók a Word dokumentumban](./unrestricted-editable-regions/) | Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan hozhat létre korlátlan szerkeszthető régiókat egy Word-dokumentumban az Aspose.Words for .NET használatával. |
+| [Korlátlan szakasz a Word dokumentumban](./unrestricted-section/) | Ezzel a lépésenkénti útmutatóval feloldhatja a Word-dokumentum bizonyos szakaszait az Aspose.Words for .NET használatával. Tökéletes az érzékeny tartalmak védelmére. |
+| [Védelem típusának lekérése Word dokumentumban](./get-protection-type/) | Ismerje meg, hogyan ellenőrizheti a Word-dokumentumok védelmi típusát az Aspose.Words for .NET használatával. Lépésről lépésre útmutató, kódpéldák és GYIK mellékelve. |
+| [Csak olvasási védelem a Word dokumentumban](./read-only-protection/) | Ismerje meg, hogyan védheti meg Word-dokumentumait az Aspose.Words for .NET használatával csak olvasható védelem alkalmazásával. Kövesse lépésenkénti útmutatónkat. |
+| [Távolítsa el a Csak olvasási korlátozást](./remove-read-only-restriction/) | Az Aspose.Words for .NET használatával egyszerűen távolíthatja el a csak olvasható korlátozásokat a Word-dokumentumokból a részletes, lépésenkénti útmutatónkkal. Tökéletes fejlesztőknek. |

@@ -57,7 +57,7 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ```
 
 ## 结论
-在本教程中，我们了解了如何使用 Aspose.Words for .NET 在 Word 文档中加载 Noto 字体替换设置。Noto 字体替换设置允许您管理字体替换以改善文档的显示和打印。您可以随意使用此功能根据您的需要自定义字体替换。
+在本教程中，我们了解了如何使用 Aspose.Words for .NET 在 Word 文档中加载 Noto 字体替换设置。Noto 字体替换设置允许您管理字体替换以改善文档的显示和打印。请随意使用此功能根据您的需要自定义字体替换。
 
 ### 常见问题解答
 
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 
 答：要使用 Aspose.Words 在 Word 文档中加载 Noto 字体替换设置，您必须先从官方来源下载 Noto 字体。然后，您可以使用 Aspose.Words API 将这些字体加载到文档中，并在需要时配置它们以进行替换。
 
-#### 问：在 Word 文档中使用 Noto 字体进行替换能保证文本可视化的一致性吗？
+#### 问：在 Word 文档中使用 Noto 字体进行替换能确保文本可视化的一致性吗？
 
 答：是的，使用 Noto 字体替换 Word 文档可确保文本可视化的一致性。Noto 字体旨在支持多种语言和字符，即使在没有所需字体的情况下也能保持一致的外观。
 

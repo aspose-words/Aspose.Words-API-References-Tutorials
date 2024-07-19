@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3. lépés: Nyissa meg a táblázatot, és állítsa be a címet és a leírást
- Most a dokumentumban lévő táblázatot a gombbal érheti el`GetChild()` módszer és a`Table` osztály. Ezután állítsa be a táblázat címét és leírását a gombbal`Title` és`Description` tulajdonságait.
+ Most a dokumentumban lévő táblázatot a gombbal érheti el`GetChild()` módszer és a`Table` osztály. Ezután állítsa be a táblázat címét és leírását a gombbal`Title`és`Description` tulajdonságait.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

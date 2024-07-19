@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Paso 3: eliminar el contenido de la sección
-Para borrar el contenido de la sección, usaremos la sección`ClearContent` método.
+ Para borrar el contenido de la sección, usaremos la sección`ClearContent` método.
 
 ```csharp
 section.ClearContent();
@@ -61,7 +61,7 @@ En este tutorial, vimos cómo eliminar contenido de una sección específica de 
 
 #### P: ¿Cómo configurar el directorio de documentos en Aspose.Words para .NET?
 
- R: Para establecer la ruta al directorio que contiene sus documentos, debe reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta apropiada. He aquí cómo hacerlo:
+R: Para establecer la ruta al directorio que contiene sus documentos, debe reemplazar`"YOUR DOCUMENT DIRECTORY"` en el código con la ruta apropiada. He aquí cómo hacerlo:
 
 ```csharp
 // Ruta a su directorio de documentos

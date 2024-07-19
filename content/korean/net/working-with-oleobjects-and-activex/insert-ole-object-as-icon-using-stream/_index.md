@@ -88,7 +88,7 @@ A. 새 문서 및 문서 생성기를 만들려면 다음 단계를 따르세요
 ```csharp
 Document doc = new Document();
 ```
- 사용`DocumentBuilder`이전에 생성된 문서와 연결된 문서 빌더를 생성하는 클래스:
+ 사용`DocumentBuilder` 이전에 생성된 문서와 연결된 문서 빌더를 생성하는 클래스:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,8 +118,8 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### Q. 스트림의 아이콘으로 OLE 개체를 내 프로젝트에 삽입하기 위한 코드를 어떻게 포함합니까?
 
 A. OLE 개체를 스트림의 아이콘으로 프로젝트에 삽입하기 위한 코드를 포함하려면 다음 단계를 따르세요.
--  적절한 참조를 추가하여 필요한 참조를 가져옵니다.`using` 진술.
--  다음을 사용하여 새 문서와 문서 작성기를 만듭니다.`Document` 그리고`DocumentBuilder` 클래스.
+- 적절한 참조를 추가하여 필요한 참조를 가져옵니다.`using` 진술.
+-  다음을 사용하여 새 문서와 문서 작성기를 만듭니다.`Document`그리고`DocumentBuilder` 클래스.
 - 스트림에서 OLE 개체를 아이콘으로 삽입하는 코드를 사용합니다.
 -  다음을 사용하여 문서를 저장합니다.`Save` 적절한 대상 경로를 사용하는 메소드입니다.
 

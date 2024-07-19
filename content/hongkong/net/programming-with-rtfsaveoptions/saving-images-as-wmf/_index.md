@@ -89,5 +89,5 @@ Aspose.Words for .NET 提供了許多用於文件操作和產生的高級功能�
 #### Q：Aspose.Words for .NET 的 RTF 保存選項是否提供其他功能？
 答：是的，Aspose.Words for .NET 提供了更多具有 RTF 保存選項的功能。您可以自訂 RTF 轉換的各個方面，例如字體管理、佈局、圖像、表格、超連結等。
 
-#### Q：如何使用 Aspose.Words for .NET 操作文件中的映像？
+#### Q：如何使用 Aspose.Words for .NET 處理文件中的映像？
 答：Aspose.Words for .NET 提供了用於操作文件中的影像的全套功能。您可以提取、插入、調整大小、裁剪、套用濾鏡和效果、調整品質、在不同影像格式之間進行轉換等等。有關圖像處理的更多詳細信息，請參閱 Aspose.Words 文件。

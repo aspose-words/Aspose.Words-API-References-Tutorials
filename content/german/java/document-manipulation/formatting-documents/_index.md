@@ -44,7 +44,7 @@ doc.save("SpaceBetweenAsianAndLatinText.docx");
 
 ## Arbeiten mit asiatischer Typografie
 
-Um die Einstellungen für asiatische Typografie zu steuern, berücksichtigen Sie den folgenden Codeausschnitt:
+Um die Einstellungen für asiatische Typografie zu steuern, beachten Sie den folgenden Codeausschnitt:
 
 ```java
 Document doc = new Document("AsianTypography.docx");
@@ -159,7 +159,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ## Abschluss
 
- In diesem Artikel haben wir verschiedene Aspekte der Formatierung von Dokumenten in Aspose.Words für Java untersucht. Mit diesen Erkenntnissen können Sie schön formatierte Dokumente für Ihre Java-Anwendungen erstellen. Denken Sie daran, sich auf die[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/) für ausführlichere Anleitungen.
+ In diesem Artikel haben wir verschiedene Aspekte der Formatierung von Dokumenten in Aspose.Words für Java untersucht. Mit diesen Erkenntnissen können Sie schön formatierte Dokumente für Ihre Java-Anwendungen erstellen. Denken Sie daran, sich auf die[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/) für eine ausführlichere Anleitung.
 
 ## Häufig gestellte Fragen
 

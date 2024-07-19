@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Agregar encabezados y pies de página a las tablas:
 
- Las tablas pueden beneficiarse de tener encabezados y pies de página que brinden contexto o información adicional. Puede agregar encabezados y pies de página a las tablas usando el`Table.title` y`Table.description` propiedades.
+ Las tablas pueden beneficiarse de tener encabezados y pies de página que brinden contexto o información adicional. Puede agregar encabezados y pies de página a las tablas usando el`Table.title`y`Table.description` propiedades.
 
 ```python
 # Set table title (header)

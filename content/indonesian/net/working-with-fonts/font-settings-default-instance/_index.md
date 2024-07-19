@@ -17,7 +17,7 @@ Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 - Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda memahami dan menerapkan langkah-langkahnya dengan lancar.
 -  Aspose.Words for .NET Library: Unduh dan instal Aspose.Words for .NET dari[tautan unduhan](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Lingkungan yang cocok seperti Visual Studio untuk menulis dan mengeksekusi kode Anda.
--  Contoh Dokumen: Contoh dokumen (misalnya,`Rendering.docx`) untuk menerapkan pengaturan font.
+- Contoh Dokumen: Contoh dokumen (misalnya,`Rendering.docx`) untuk menerapkan pengaturan font.
 
 ## Impor Namespace
 
@@ -55,7 +55,7 @@ Dalam contoh ini:
 
 ## Langkah 3: Muat Dokumen
 
-Dengan sumber font Anda dikonfigurasi, langkah selanjutnya adalah memuat dokumen Anda ke dalam Aspose.Words`Document` obyek. Hal ini memungkinkan Anda untuk memanipulasi dan akhirnya menyimpan dokumen.
+ Dengan sumber font Anda dikonfigurasi, langkah selanjutnya adalah memuat dokumen Anda ke dalam Aspose.Words`Document` obyek. Hal ini memungkinkan Anda untuk memanipulasi dan akhirnya menyimpan dokumen.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -77,9 +77,9 @@ Selamat! Anda telah menguasai dasar-dasar mengelola pengaturan font menggunakan 
 
 ## FAQ
 
-### Q1: Bisakah saya menggunakan font dari beberapa folder khusus?
+### Q1: Dapatkah saya menggunakan font dari beberapa folder khusus?
 
- Ya, Anda dapat menentukan beberapa`FolderFontSource`contoh di dalam`SetFontsSources` metode untuk memasukkan font dari folder yang berbeda.
+ Ya, Anda dapat menentukan beberapa`FolderFontSource` contoh di dalam`SetFontsSources` metode untuk memasukkan font dari folder yang berbeda.
 
 ### Q2: Bagaimana cara mendapatkan uji coba gratis Aspose.Words untuk .NET?
 

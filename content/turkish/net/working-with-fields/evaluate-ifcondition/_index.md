@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // IF alanını belgeye ekleyin.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//IF koşulunu değerlendirin.
+// IF koşulunu değerlendirin.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Değerlendirme sonucunu görüntüleyin.

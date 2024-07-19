@@ -2,7 +2,7 @@
 title: 在 Aspose.Words for Java 中複製和組合文檔
 linktitle: 克隆和合併文檔
 second_title: Aspose.Words Java 文件處理 API
-description: 了解如何在 Aspose.Words for Java 中複製和合併文件。帶有原始程式碼範例的分步指南。
+description: 了解如何在 Aspose.Words for Java 中複製和組合文件。帶有原始程式碼範例的分步指南。
 type: docs
 weight: 27
 url: /zh-hant/java/document-manipulation/cloning-and-combining-documents/

@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Thay thế`"Your Document Directory"` Và`"Your Output Directory"` bằng những con đường phù hợp.
+ Thay thế`"Your Document Directory"`Và`"Your Output Directory"` bằng những con đường phù hợp.
 
 ## 4. Tùy chỉnh trộn thư
 

@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Zde používáme podmínku ke kontrole, zda je pole typu float. Pokud ano, vytiskneme`RelativeHorizontalAlignment` a`RelativeVerticalAlignment` vlastnosti, abyste získali relativní horizontální a vertikální zarovnání tabulky. V opačném případě vytiskneme`Alignment` vlastnost pro získání zarovnání pole.
+ Zde používáme podmínku ke kontrole, zda je pole typu float. Pokud ano, vytiskneme`RelativeHorizontalAlignment`a`RelativeVerticalAlignment` vlastnosti, abyste získali relativní horizontální a vertikální zarovnání tabulky. V opačném případě vytiskneme`Alignment` vlastnost pro získání zarovnání pole.
 
 ### Ukázkový zdrojový kód pro Get Table Position pomocí Aspose.Words for .NET 
 

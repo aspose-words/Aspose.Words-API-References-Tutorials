@@ -2,24 +2,40 @@
 title: Définir les propriétés de l'axe XY dans un graphique
 linktitle: Définir les propriétés de l'axe XY dans un graphique
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment définir les propriétés de l'axe XY dans un graphique à l'aide d'Aspose.Words for .NET. Les options de personnalisation pour les axes X et Y sont démontrées.
+description: Découvrez comment définir les propriétés de l'axe XY dans un graphique à l'aide d'Aspose.Words for .NET avec ce guide étape par étape. Parfait pour les développeurs .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-charts/define-xyaxis-properties/
 ---
+## Introduction
 
-Ce didacticiel explique comment utiliser Aspose.Words for .NET pour définir les propriétés des axes X et Y dans un graphique. Le code source fourni montre comment créer un graphique, ajouter des données de série et personnaliser les propriétés des axes.
+Les graphiques sont un outil puissant pour visualiser les données. Lorsque vous devez créer des documents professionnels avec des graphiques dynamiques, Aspose.Words for .NET est une bibliothèque inestimable. Cet article vous guidera tout au long du processus de définition des propriétés de l'axe XY dans un graphique à l'aide d'Aspose.Words for .NET, en décomposant chaque étape pour garantir la clarté et la facilité de compréhension.
 
-## Étape 1 : Configurer le projet
+## Conditions préalables
 
-Assurez-vous que vous disposez des conditions préalables suivantes :
+Avant de vous lancer dans le codage, vous devez mettre en place quelques prérequis :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
-- Un chemin de répertoire de document où le document de sortie sera enregistré.
+1. Aspose.Words for .NET : assurez-vous de disposer de la bibliothèque Aspose.Words for .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : vous avez besoin d'un environnement de développement intégré (IDE) comme Visual Studio.
+3. .NET Framework : assurez-vous que votre environnement de développement est configuré pour le développement .NET.
+4. Connaissance de base de C# : ce guide suppose que vous possédez une compréhension de base de la programmation C#.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique
+## Importer des espaces de noms
 
- Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
+Pour commencer, vous devez importer les espaces de noms nécessaires dans votre projet. Cela garantit que vous avez accès à toutes les classes et méthodes requises pour créer et manipuler des documents et des graphiques.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Nous décomposerons le processus en étapes simples, chacune se concentrant sur une partie spécifique de la définition des propriétés de l'axe XY dans un graphique.
+
+## Étape 1 : initialiser le document et DocumentBuilder
+
+ Tout d'abord, vous devez initialiser un nouveau document et un`DocumentBuilder` objet. Le`DocumentBuilder` aide à insérer du contenu dans le document.
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
@@ -29,48 +45,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ensuite, insérez un graphique dans le document à l'aide du`InsertChart` méthode du`DocumentBuilder`. Dans cet exemple, nous allons insérer un graphique en aires.
+## Étape 2 : Insérer un graphique
+
+Ensuite, vous allez insérer un graphique dans le document. Dans cet exemple, nous utiliserons un graphique en aires. Vous pouvez personnaliser les dimensions du graphique selon vos besoins.
 
 ```csharp
+// Insérer un graphique
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Étape 3 : Ajouter des données de série au graphique
+## Étape 3 : Effacer la série par défaut et ajouter des données personnalisées
 
-Ajoutez des données de série au graphique. Dans cet exemple, nous ajouterons cinq points de données avec les dates et valeurs correspondantes.
+Par défaut, le graphique aura des séries prédéfinies. Nous allons les effacer et ajouter notre série de données personnalisées.
 
 ```csharp
 chart.Series.Clear();
 chart.Series.Add("Aspose Series 1",
-    new DateTime[]
-    {
-        new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-        new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-    },
-    new double[] { 640, 320, 280, 120, 150 });
+	new DateTime[]
+	{
+		new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
+		new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
+	},
+	new double[] { 640, 320, 280, 120, 150 });
 ```
 
-## Étape 4 : Personnaliser les propriétés des axes X et Y
+## Étape 4 : Définir les propriétés de l'axe X
 
- Pour personnaliser les propriétés des axes X et Y, accédez à l'onglet`ChartAxis` objets associés au graphique.
+Il est maintenant temps de définir les propriétés de l'axe X. Cela inclut la définition du type de catégorie, la personnalisation du croisement des axes et l’ajustement des graduations et des étiquettes.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
-ChartAxis yAxis = chart.AxisY;
-```
-
- Modifier les propriétés du`xAxis` et`yAxis`objets pour définir les options souhaitées pour les axes X et Y. Dans cet exemple, nous montrerons certaines propriétés courantes qui peuvent être personnalisées.
-
-```csharp
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3;
+xAxis.CrossesAt = 3; //Mesuré en unités d'affichage de l'axe Y (centaines).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 xAxis.TickLabelOffset = 200;
+```
 
+## Étape 5 : Définir les propriétés de l'axe Y
+
+De même, vous définirez les propriétés de l’axe Y. Cela inclut la définition de la position de l'étiquette de graduation, des unités majeures et mineures, de l'unité d'affichage et de la mise à l'échelle.
+
+```csharp
+ChartAxis yAxis = chart.AxisY;
 yAxis.TickLabelPosition = AxisTickLabelPosition.High;
 yAxis.MajorUnit = 100;
 yAxis.MinorUnit = 50;
@@ -79,78 +99,31 @@ yAxis.Scaling.Minimum = new AxisBound(100);
 yAxis.Scaling.Maximum = new AxisBound(700);
 ```
 
-## Étape 5 : Enregistrez le document
+## Étape 6 : Enregistrez le document
 
- Enfin, enregistrez le document dans le répertoire spécifié à l'aide du`Save` méthode du`Document` objet.
+Enfin, enregistrez le document dans le répertoire spécifié. Cela générera le document Word avec le graphique personnalisé.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-Ceci termine la mise en œuvre de la définition des propriétés de l’axe XY dans un graphique à l’aide d’Aspose.Words pour .NET.
-
-### Exemple de code source pour définir les propriétés XYAxis à l'aide d'Aspose.Words pour .NET 
-
-```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Insérer un graphique
-	Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new DateTime[]
-		{
-			new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-			new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-		},
-		new double[] { 640, 320, 280, 120, 150 });
-	ChartAxis xAxis = chart.AxisX;
-	ChartAxis yAxis = chart.AxisY;
-	// Changez l'axe X pour qu'il soit catégorie au lieu de date, afin que tous les points soient placés à intervalles égaux sur l'axe X.
-	xAxis.CategoryType = AxisCategoryType.Category;
-	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; //Mesuré en unités d'affichage de l'axe Y (centaines).
-	xAxis.ReverseOrder = true;
-	xAxis.MajorTickMark = AxisTickMark.Cross;
-	xAxis.MinorTickMark = AxisTickMark.Outside;
-	xAxis.TickLabelOffset = 200;
-	yAxis.TickLabelPosition = AxisTickLabelPosition.High;
-	yAxis.MajorUnit = 100;
-	yAxis.MinorUnit = 50;
-	yAxis.DisplayUnit.Unit = AxisBuiltInUnit.Hundreds;
-	yAxis.Scaling.Minimum = new AxisBound(100);
-	yAxis.Scaling.Maximum = new AxisBound(700);
-	doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
-```
-
 ## Conclusion
 
-Dans ce didacticiel, vous avez appris à définir les propriétés des axes X et Y dans un graphique à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape, vous pouvez créer un graphique, ajouter des données de série et personnaliser les propriétés des axes pour répondre à vos besoins spécifiques. Aspose.Words for .NET fournit une API complète pour le traitement de mots avec des graphiques dans des documents Word, vous permettant de manipuler divers aspects du graphique, y compris les axes.
+La création et la personnalisation de graphiques dans des documents Word à l'aide d'Aspose.Words pour .NET sont simples une fois que vous avez compris les étapes à suivre. Ce guide vous a accompagné tout au long du processus de définition des propriétés de l'axe XY dans un graphique, depuis l'initialisation du document jusqu'à l'enregistrement du produit final. Grâce à ces compétences, vous pouvez créer des graphiques détaillés d’aspect professionnel qui améliorent vos documents.
 
-En accédant au`ChartAxis` objets associés au graphique, vous pouvez modifier des propriétés telles que le type de catégorie, les croix des axes, les graduations, les positions des étiquettes, la mise à l'échelle, etc. Cette flexibilité vous permet d'adapter l'apparence et le comportement des axes du graphique pour présenter efficacement vos données.
+## FAQ
 
-En utilisant Aspose.Words pour .NET, vous pouvez intégrer de manière transparente des fonctionnalités de création et de personnalisation de graphiques dans vos applications .NET et automatiser la génération de documents d'aspect professionnel avec des visualisations riches.
+### Quels types de graphiques puis-je créer avec Aspose.Words pour .NET ?
+Vous pouvez créer différents types de graphiques, notamment à aires, à barres, à courbes, à secteurs, etc.
 
-### FAQ
+### Comment installer Aspose.Words pour .NET ?
+ Vous pouvez télécharger Aspose.Words pour .NET à partir de[ici](https://releases.aspose.com/words/net/) et suivez les instructions d'installation fournies.
 
-#### T1. Qu’est-ce qu’Aspose.Words pour .NET ?
-Aspose.Words for .NET est une puissante bibliothèque de traitement de documents qui permet aux développeurs de créer, manipuler et enregistrer des documents Word par programme dans des applications .NET. Il offre un large éventail de fonctionnalités pour le traitement de texte avec des éléments de document, notamment des graphiques.
+### Puis-je personnaliser l'apparence de mes graphiques ?
+Oui, Aspose.Words for .NET permet une personnalisation étendue des graphiques, notamment les couleurs, les polices et les propriétés des axes.
 
-#### Q2. Comment puis-je installer Aspose.Words pour .NET ?
-Vous pouvez installer Aspose.Words pour .NET en le téléchargeant à l'aide du gestionnaire de packages NuGet dans Visual Studio. Recherchez simplement « Aspose.Words » dans le gestionnaire de packages NuGet et installez-le dans votre projet.
+### Existe-t-il un essai gratuit disponible pour Aspose.Words pour .NET ?
+ Oui, vous pouvez bénéficier d'un essai gratuit[ici](https://releases.aspose.com/).
 
-#### Q3. Puis-je personnaliser d’autres aspects du graphique à l’aide d’Aspose.Words for .NET ?
-Oui, Aspose.Words for .NET offre des fonctionnalités étendues pour personnaliser divers aspects d'un graphique. En plus de définir les propriétés des axes, vous pouvez modifier le type de graphique, les séries de données, la légende, le titre, la zone de tracé, les étiquettes de données et de nombreux autres éléments du graphique. L'API offre un contrôle précis sur l'apparence et le comportement des graphiques.
-
-#### Q4. Puis-je créer différents types de graphiques à l’aide d’Aspose.Words pour .NET ?
- Oui, Aspose.Words for .NET prend en charge un large éventail de types de graphiques, notamment les aires, les barres, les lignes, les secteurs, les nuages de points, etc. Vous pouvez utiliser le`ChartType` énumération pour spécifier le type de graphique souhaité lors de l’insertion d’une forme de graphique dans un document Word.
-
-#### Q5. Puis-je enregistrer le graphique dans différents formats ?
-Oui, Aspose.Words for .NET vous permet d'enregistrer le document contenant le graphique dans différents formats, tels que DOCX, PDF, HTML, etc. Vous pouvez choisir le format approprié en fonction de vos besoins et utiliser le`Save` méthode du`Document` objet pour enregistrer le document.
-
-#### Q6. Puis-je appliquer ces techniques à plusieurs graphiques dans un document ?
- Oui, vous pouvez appliquer ces techniques à plusieurs graphiques dans un document en répétant les étapes nécessaires pour chaque graphique. Vous pouvez créer des`Chart` et`ChartAxis` objets pour chaque graphique et personnalisez leurs propriétés en conséquence. Aspose.Words for .NET offre une prise en charge complète du traitement de mots avec plusieurs graphiques dans un seul document.
+### Où puis-je trouver plus de tutoriels et de documentation ?
+ Vous pouvez trouver plus de tutoriels et une documentation détaillée sur le[Page de documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/).

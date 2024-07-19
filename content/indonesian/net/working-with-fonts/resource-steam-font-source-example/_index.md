@@ -2,7 +2,7 @@
 title: Contoh Sumber Font Sumber Daya Steam
 linktitle: Contoh Sumber Font Sumber Daya Steam
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan sumber font aliran sumber daya dengan Aspose.Words untuk .NET dalam panduan terperinci ini. Pastikan dokumen Anda ditampilkan dengan benar setiap saat.
+description: Pelajari cara menggunakan sumber font aliran sumber daya dengan Aspose.Words untuk .NET dalam panduan mendetail ini. Pastikan dokumen Anda ditampilkan dengan benar setiap saat.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/resource-steam-font-source-example/
@@ -99,7 +99,7 @@ Anda sekarang telah menguasai proses penggunaan aliran sumber daya sebagai sumbe
 
 ###  Q3: Dapatkah saya menangani jenis peringatan lainnya`IWarningCallback`?
 
- Ya, itu`IWarningCallback` antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
+ Ya, itu`IWarningCallback`antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
 
 ### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words?
 

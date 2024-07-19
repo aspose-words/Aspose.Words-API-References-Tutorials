@@ -90,7 +90,7 @@ Ja, Aspose.Words für .NET unterstützt jede .NET-Sprache, einschließlich VB.NE
 ### Gibt es eine kostenlose Testversion?
  Ja, Sie können eine kostenlose Testversion über das[Link zur kostenlosen Testversion](https://releases.aspose.com/).
 
-### Wie erhalte ich Support für Aspose.Words für .NET?
+### Wie kann ich Support für Aspose.Words für .NET erhalten?
  Unterstützung erhalten Sie vom[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
 
 ### Kann ich Aspose.Words für .NET in einem kommerziellen Projekt verwenden?

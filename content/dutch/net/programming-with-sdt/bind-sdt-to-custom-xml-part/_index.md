@@ -17,7 +17,7 @@ Om deze tutorial te volgen, heb je het volgende nodig:
 - Basiskennis van C# en XML.
 
 ## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+ Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

@@ -19,7 +19,7 @@ Az Aspose.Words for .NET titkosított PDF betöltése funkciója lehetővé tesz
 Az első lépés a titkosított PDF dokumentum betöltése az alkalmazásba. Íme, hogyan kell csinálni:
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
+// dokumentumok könyvtár elérési útja.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

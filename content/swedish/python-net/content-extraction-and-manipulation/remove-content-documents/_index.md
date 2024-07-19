@@ -2,7 +2,7 @@
 title: Ta bort och förfina innehåll i Word-dokument
 linktitle: Ta bort och förfina innehåll i Word-dokument
 second_title: Aspose.Words Python Document Management API
-description: Lär dig hur du effektivt tar bort och förfinar innehåll i Word-dokument med Aspose.Words för Python. Steg-för-steg-guide med exempel på källkod.
+description: Lär dig hur du effektivt tar bort och förfinar innehåll i Word-dokument med Aspose.Words för Python. Steg-för-steg guide med exempel på källkod.
 type: docs
 weight: 13
 url: /sv/python-net/content-extraction-and-manipulation/remove-content-documents/

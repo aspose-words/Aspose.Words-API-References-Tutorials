@@ -75,7 +75,7 @@ R : La fonctionnalité « Plages obtenir le texte dans un document Word » da
 
 #### Q : Comment charger un document Word à l'aide d'Aspose.Words pour .NET ?
 
-R : Pour charger un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser le`Document` classe et son constructeur. Vous devez fournir le chemin du fichier ou le flux du document en tant que paramètre. Voici un exemple :
+ R : Pour charger un document Word à l'aide d'Aspose.Words for .NET, vous pouvez utiliser le`Document` classe et son constructeur. Vous devez fournir le chemin du fichier ou le flux du document en tant que paramètre. Voici un exemple :
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

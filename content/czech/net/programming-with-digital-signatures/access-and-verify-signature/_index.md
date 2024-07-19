@@ -2,122 +2,150 @@
 title: Přístup a ověření podpisu v dokumentu aplikace Word
 linktitle: Přístup a ověření podpisu v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se přistupovat k digitálním podpisům a ověřovat je v dokumentu Word pomocí Aspose.Words for .NET.
+description: Získejte přístup a ověřujte digitální podpisy v dokumentech aplikace Word pomocí Aspose.Words for .NET s tímto komplexním průvodcem krok za krokem. Zajistěte pravost dokumentů bez námahy.
 type: docs
 weight: 10
 url: /cs/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
-V tomto tutoriálu vás provedeme kroky k použití funkce přístupu a ověření podpisu Aspose.Words for .NET. Tato funkce umožňuje přístup k digitálním podpisům v dokumentu aplikace Word a ověření jejich platnosti. Postupujte podle následujících kroků:
+## Úvod
 
-## Krok 1: Načtení dokumentu a přístup k podpisům
+Ahoj, kolegové tech nadšenci! Ocitli jste se někdy v situaci, kdy jste potřebovali získat přístup a ověřit digitální podpisy v dokumentu aplikace Word, ale nevěděli jste, kde začít? Tak to máš štěstí! Dnes se ponoříme do nádherného světa Aspose.Words for .NET, výkonné knihovny, se kterou je manipulace s dokumenty Word hračkou. Provedeme vás procesem krok za krokem, takže na konci této příručky budete profesionálem v ověřování digitálních podpisů v dokumentech aplikace Word. Začněme!
 
-Začněte nahráním dokumentu obsahujícího digitální podpisy:
+## Předpoklady
+
+Než se ponoříme do podrobných detailů, je třeba mít na paměti několik věcí:
+
+1. Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio. Zde napíšete a spustíte svůj kód.
+2.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/) . Nezapomeňte získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/) pokud jste to ještě neudělali!
+3. Digitálně podepsaný dokument Word: Mějte dokument Word, který je již digitálně podepsán. Toto je soubor, se kterým budete pracovat při ověřování podpisů.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Tyto jmenné prostory vám umožní používat funkce Aspose.Words ve vašem projektu.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.DigitalSignatures;
+```
+
+Dobře, pojďme si to rozdělit na zvládnutelné kroky. Každý krok vás provede určitou částí procesu. Připraveni? Pojďme!
+
+## Krok 1: Nastavte svůj projekt
+
+Než budete moci ověřit digitální podpis, musíte svůj projekt nastavit v sadě Visual Studio. Zde je postup:
+
+### Vytvořit nový projekt
+
+1. Otevřete Visual Studio.
+2. Klikněte na Vytvořit nový projekt.
+3. Vyberte Console App (.NET Core) nebo Console App (.NET Framework), v závislosti na vašich preferencích.
+4. Klepněte na tlačítko Další, zadejte název projektu a klepněte na tlačítko Vytvořit.
+
+### Nainstalujte Aspose.Words for .NET
+
+1. V Průzkumníku řešení klikněte pravým tlačítkem na název projektu a vyberte Spravovat balíčky NuGet.
+2. Ve Správci balíčků NuGet vyhledejte Aspose.Words.
+3. Klepnutím na tlačítko Instalovat jej přidáte do svého projektu.
+
+## Krok 2: Načtěte digitálně podepsaný dokument Word
+
+Nyní, když je váš projekt nastaven, načteme dokument Word, který je digitálně podepsaný.
+
+```csharp
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-## Krok 2: Procházení digitálních podpisů
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů. Tento fragment kódu inicializuje nový`Document` objekt a načte váš podepsaný dokument aplikace Word.
 
-Pomocí smyčky projděte všechny digitální podpisy v dokumentu:
+## Krok 3: Přístup k digitálním podpisům
+
+Po načtení dokumentu je čas získat přístup k digitálním podpisům.
 
 ```csharp
 foreach (DigitalSignature signature in doc.DigitalSignatures)
 {
-	// Přístup k informacím o podpisu
-	Console.WriteLine("* Signature Found *");
-	Console.WriteLine("Is valid: " + signature.IsValid);
-	// Tato vlastnost je dostupná pouze v dokumentech MS Word.
-	Console.WriteLine("Reason for signing: " + signature.Comments); 
-	Console.WriteLine("Time of signing: " + signature.SignTime);
-	Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-	Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-	Console.WriteLine();
+    Console.WriteLine("* Signature Found *");
+    Console.WriteLine("Is valid: " + signature.IsValid);
+    Console.WriteLine("Reason for signing: " + signature.Comments); 
+    Console.WriteLine("Time of signing: " + signature.SignTime);
+    Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+    Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+    Console.WriteLine();
 }
 ```
 
-Nezapomeňte upravit zobrazované zprávy podle svých potřeb.
+Tento kód prochází každý digitální podpis v dokumentu a vytiskne různé podrobnosti o podpisu. Pojďme si rozebrat, co každá část dělá:
 
-### Příklad zdrojového kódu pro Access And Verify Signature pomocí Aspose.Words for .NET
+1. Signature Found: Označuje, že byl nalezen podpis.
+2. Je platný: Zkontroluje, zda je podpis platný.
+3. Důvod podpisu: Zobrazuje důvod podpisu, je-li k dispozici.
+4. Čas podpisu: Zobrazuje časové razítko, kdy byl dokument podepsán.
+5. Název předmětu: Načte název předmětu z certifikátu.
+6. Jméno vydavatele: Načte jméno vydavatele z certifikátu.
 
-Zde je kompletní zdrojový kód pro přístup a ověření podpisu pomocí Aspose.Words pro .NET:
+## Krok 4: Spusťte svůj kód
+
+Když je vše nastaveno, je čas spustit kód a zobrazit výsledky.
+
+
+1. Stisknutím klávesy F5 nebo kliknutím na tlačítko Start v aplikaci Visual Studio spusťte program.
+2. Pokud je váš dokument digitálně podepsán, uvidíte podrobnosti podpisu vytištěné v konzole.
+
+## Krok 5: Řešení možných chyb
+
+Vždy je dobré ošetřit případné chyby, které se mohou vyskytnout. Pojďme do našeho kódu přidat nějaké základní zpracování chyb.
 
 ```csharp
-	
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Digitally signed.docx");
+try
+{
+    // Cesta k adresáři dokumentů.
+    string dataDir = "YOUR DOCUMENT DIRECTORY";
+    Document doc = new Document(dataDir + "Digitally signed.docx");
 
-	foreach (DigitalSignature signature in doc.DigitalSignatures)
-	{
-		Console.WriteLine("* Signature Found *");
-		Console.WriteLine("Is valid: " + signature.IsValid);
-		// Tato vlastnost je dostupná pouze v dokumentech MS Word.
-		Console.WriteLine("Reason for signing: " + signature.Comments); 
-		Console.WriteLine("Time of signing: " + signature.SignTime);
-		Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-		Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-		Console.WriteLine();
-	}
-
+    foreach (DigitalSignature signature in doc.DigitalSignatures)
+    {
+        Console.WriteLine("* Signature Found *");
+        Console.WriteLine("Is valid: " + signature.IsValid);
+        Console.WriteLine("Reason for signing: " + signature.Comments); 
+        Console.WriteLine("Time of signing: " + signature.SignTime);
+        Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+        Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+        Console.WriteLine();
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine("An error occurred: " + ex.Message);
+}
 ```
 
-Pomocí těchto kroků budete moci snadno přistupovat a ověřovat digitální podpisy ve vašem dokumentu Word pomocí Aspose.Words for .NET.
+Tím se zachytí všechny výjimky, které mohou nastat, a vytiskne se chybová zpráva.
 
 ## Závěr
 
-V tomto tutoriálu jsme prozkoumali funkci přístupu a ověřování digitálních podpisů v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle uvedených kroků můžete snadno načíst dokument, získat přístup k jeho digitálním podpisům a ověřit jejich platnost. Možnost přístupu k digitálním podpisům a jejich ověřování poskytuje způsob, jak zajistit integritu a autenticitu vašich dokumentů aplikace Word. Aspose.Words for .NET nabízí výkonné rozhraní API pro zpracování textu s digitálními podpisy, které vám umožní automatizovat proces ověřování a zvýšit zabezpečení vašich dokumentů.
+A tady to máte! Úspěšně jste získali přístup a ověřili jste digitální podpisy v dokumentu aplikace Word pomocí Aspose.Words for .NET. Není to tak skličující, jak se zdá, že? Pomocí těchto kroků můžete s jistotou pracovat s digitálními podpisy ve svých dokumentech Word a zajistit jejich pravost a integritu. Šťastné kódování!
 
-### FAQ
+## FAQ
 
-#### Otázka: Co jsou digitální podpisy v dokumentu aplikace Word?
+### Mohu použít Aspose.Words for .NET k přidávání digitálních podpisů do dokumentu aplikace Word?
 
-Odpověď: Digitální podpisy v dokumentu aplikace Word jsou elektronické podpisy, které poskytují způsob ověření integrity a původu dokumentu. Jsou vytvářeny pomocí digitálních certifikátů a kryptografických algoritmů, které umožňují příjemcům ověřit, že dokument nebyl změněn a že pochází z důvěryhodného zdroje.
+Ano, můžete použít Aspose.Words for .NET k přidávání digitálních podpisů do dokumentů aplikace Word. Knihovna poskytuje komplexní funkce pro přidávání a ověřování digitálních podpisů.
 
-#### Otázka: Jak mohu získat přístup k digitálním podpisům v dokumentu aplikace Word pomocí Aspose.Words for .NET?
+### Jaké typy digitálních podpisů může Aspose.Words for .NET ověřit?
 
-Odpověď: Chcete-li získat přístup k digitálním podpisům v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete postupovat takto:
-1.  Vložte dokument pomocí`Document` třídy a zadejte cestu k souboru dokumentu.
-2.  Použijte smyčku k iteraci`DigitalSignatures` sbírka listiny. Každá iterace představuje digitální podpis.
+Aspose.Words for .NET může ověřovat digitální podpisy v souborech DOCX, které používají certifikáty X.509.
 
-#### Otázka: K jakým informacím mohu získat přístup pomocí digitálního podpisu v dokumentu aplikace Word?
+### Je Aspose.Words for .NET kompatibilní se všemi verzemi aplikace Microsoft Word?
 
-Odpověď: Z digitálního podpisu v dokumentu aplikace Word můžete přistupovat k různým informacím, například:
-- Platnost: Zkontrolujte, zda je podpis platný.
-- Komentáře: Získejte důvod podpisu určený podepisovatelem.
-- Čas podpisu: Získejte čas, kdy byl dokument podepsán.
-- Název předmětu: Načte jméno podepisujícího nebo subjektu certifikátu.
-- Název vydavatele: Získejte jméno vydavatele certifikátu.
+Aspose.Words for .NET podporuje všechny verze dokumentů Microsoft Word, včetně DOC, DOCX, RTF a dalších.
 
-#### Otázka: Mohu ověřit platnost digitálního podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET?
+### Jak získám dočasnou licenci pro Aspose.Words for .NET?
 
- Odpověď: Ano, platnost digitálního podpisu v dokumentu aplikace Word můžete ověřit pomocí Aspose.Words for .NET. Přístupem k`IsValid` vlastnictvím`DigitalSignature` objektu, můžete určit, zda je podpis platný nebo ne.
+ Můžete získat dočasnou licenci pro Aspose.Words pro .NET od[tady](https://purchase.aspose.com/temporary-license/). To vám umožní vyzkoušet všechny funkce knihovny bez jakýchkoli omezení.
 
-#### Otázka: Jak mohu ověřit platnost digitálních podpisů v dokumentu aplikace Word pomocí Aspose.Words for .NET?
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
 
-Odpověď: Chcete-li ověřit platnost digitálních podpisů v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete postupovat takto:
-1.  Přístup k`DigitalSignatures` sbírka listiny.
-2.  Projděte každou z nich`DigitalSignature` předmět ve sbírce.
-3.  Použijte`IsValid` vlastnictvím`DigitalSignature` objekt pro kontrolu, zda je podpis platný.
-
-#### Otázka: Mohu načíst komentáře nebo důvod podepisování z digitálního podpisu v dokumentu aplikace Word?
-
-Odpověď: Ano, komentáře nebo důvod podepisování můžete získat z digitálního podpisu v dokumentu aplikace Word. The`Comments` vlastnictvím`DigitalSignature` objekt poskytuje přístup ke komentářům určeným signatářem během procesu podepisování.
-
-#### Otázka: Jaký typ dokumentů podporuje funkce ověřování podpisu v Aspose.Words pro .NET?
-
-Odpověď: Funkce ověřování podpisu v Aspose.Words for .NET podporuje ověřování digitálních podpisů v dokumentech aplikace Word ve formátu souboru DOCX. Tuto funkci můžete použít k ověření podpisů v souborech DOCX.
-
-#### Otázka: Jak mohu získat přístup k podrobnostem certifikátu digitálního podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET?
-
- Odpověď: Chcete-li získat přístup k podrobnostem certifikátu digitálního podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete získat přístup k`CertificateHolder` vlastnictvím`DigitalSignature` objekt. z`CertificateHolder` objektu, můžete načíst různé podrobnosti certifikátu, jako je jméno subjektu a jméno vydavatele.
-
-#### Otázka: Mohu upravit zobrazení nebo zpracování digitálních podpisů v dokumentu aplikace Word pomocí Aspose.Words for .NET?
-
- Odpověď: Ano, můžete upravit zobrazení nebo zpracování digitálních podpisů v dokumentu aplikace Word pomocí Aspose.Words for .NET. Přístupem k vlastnostem a metodám`DigitalSignature` objektu, můžete extrahovat požadované informace, provádět další ověření nebo integrovat proces ověřování podpisů do pracovního postupu vaší aplikace.
-
-#### Otázka: Je možné ověřit více digitálních podpisů v dokumentu aplikace Word pomocí Aspose.Words for .NET?
-
- Odpověď: Ano, je možné ověřit více digitálních podpisů v dokumentu aplikace Word pomocí Aspose.Words for .NET. Iterací přes`DigitalSignatures` shromažďování dokumentu, můžete přistupovat ke každému digitálnímu podpisu a ověřit jej samostatně.
-
+ Můžete najít podrobnou dokumentaci k Aspose.Words pro .NET[tady](https://reference.aspose.com/words/net/).

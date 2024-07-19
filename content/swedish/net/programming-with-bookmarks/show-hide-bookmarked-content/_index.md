@@ -2,156 +2,133 @@
 title: Visa Dölj bokmärkt innehåll i Word-dokument
 linktitle: Visa Dölj bokmärkt innehåll i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du dynamiskt visar eller döljer bokmärkt innehåll i Word-dokument med Aspose.Words för .NET med den här omfattande steg-för-steg-guiden.
+description: Lär dig hur du visar och döljer bokmärkt innehåll i Word-dokument med Aspose.Words för .NET med denna detaljerade steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
-
 ## Introduktion
 
-Hallå där! Har du någonsin velat kontrollera synligheten för specifikt innehåll i ett Word-dokument baserat på vissa villkor? Med Aspose.Words för .NET kan du dynamiskt visa eller dölja bokmärkt innehåll med bara några rader kod. I den här handledningen går jag igenom processen steg-för-steg, så att du förstår varje del av koden. I slutet kommer du att vara ett proffs på att manipulera bokmärken i Word-dokument. Låt oss börja!
+Är du redo att dyka in i dokumenthanteringens värld med Aspose.Words för .NET? Oavsett om du är en utvecklare som vill automatisera dokumentuppgifter eller bara någon som är nyfiken på att hantera Word-filer programmatiskt, är du på rätt plats. Idag ska vi utforska hur man visar och döljer bokmärkt innehåll i ett Word-dokument med Aspose.Words för .NET. Den här steg-för-steg-guiden gör dig till ett proffs på att kontrollera innehållssynlighet baserat på bokmärken. Låt oss börja!
 
 ## Förutsättningar
 
-Innan vi dyker in i handledningen, låt oss se till att du har allt du behöver:
+Innan vi hoppar in i det nitty-gritty, finns det några saker du behöver:
 
-1. Grundläggande kunskaper i C#: Du bör vara bekväm med C#-syntax och koncept.
-2.  Aspose.Words för .NET: Ladda ner det[här](https://releases.aspose.com/words/net/) . Om du inte är redo att köpa kan du börja med en[gratis provperiod](https://releases.aspose.com/).
-3. Visual Studio: Alla senaste versioner fungerar, men det rekommenderas att använda den senaste versionen.
-4. .NET Framework: Se till att det är installerat på din dator.
-
-Redo att komma igång? Bra! Låt oss börja med att importera de nödvändiga namnrymden.
+1. Visual Studio: Alla versioner som är kompatibla med .NET.
+2.  Aspose.Words för .NET: Ladda ner det[här](https://releases.aspose.com/words/net/).
+3. Grundläggande förståelse för C#: Om du kan skriva ett enkelt "Hello World"-program är du bra att gå.
+4. Ett Word-dokument med bokmärken: Vi kommer att använda ett exempeldokument med bokmärken för den här handledningen.
 
 ## Importera namnområden
 
-För att använda Aspose.Words för .NET måste vi importera de nödvändiga namnrymden. Detta steg säkerställer att vi har tillgång till alla klasser och metoder vi kommer att använda.
+Till att börja med, låt oss importera de nödvändiga namnrymden. Detta säkerställer att vi har alla verktyg vi behöver för vår uppgift.
 
 ```csharp
 using System;
 using Aspose.Words;
-using Aspose.Words.Fields;
+using Aspose.Words.Bookmark;
 ```
 
-Dessa namnutrymmen är avgörande för att arbeta med Word-dokument och manipulera deras innehåll.
+Med dessa namnutrymmen på plats är vi alla redo att börja vår resa.
 
-## Steg 1: Konfigurera dokumentet
+## Steg 1: Konfigurera ditt projekt
 
-Låt oss först skapa ett nytt Word-dokument och en dokumentbyggare. Dokumentbyggaren hjälper oss att enkelt lägga till och manipulera innehåll i dokumentet.
+Okej, låt oss kicka igång genom att ställa in vårt projekt i Visual Studio.
+
+### Skapa ett nytt projekt
+
+Öppna Visual Studio och skapa ett nytt Console App-projekt (.NET Core). Döp det till något catchy, som "BookmarkVisibilityManager".
+
+### Lägg till Aspose.Words för .NET
+
+Du måste lägga till Aspose.Words för .NET till ditt projekt. Du kan göra detta via NuGet Package Manager.
+
+1. Gå till Verktyg > NuGet Package Manager > Hantera NuGet Packages for Solution.
+2. Sök efter "Aspose.Words".
+3. Installera paketet.
+
+Bra! Nu när vårt projekt är satt upp, låt oss gå vidare till att ladda vårt dokument.
+
+## Steg 2: Ladda dokumentet
+
+Vi måste ladda Word-dokumentet som innehåller bokmärkena. För den här handledningen använder vi ett exempeldokument med namnet "Bookmarks.docx".
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-I det här steget initierar vi ett nytt dokument och en dokumentbyggare. Detta förbereder vår miljö för vidare verksamhet.
+ Detta kodavsnitt anger sökvägen till din dokumentkatalog och laddar dokumentet i`doc` objekt.
 
-## Steg 2: Lägga till bokmärkt innehåll
+## Steg 3: Visa/dölj bokmärkt innehåll
 
-Därefter lägger vi till lite innehåll i dokumentet och skapar ett bokmärke runt det. Det här bokmärket hjälper oss att identifiera och manipulera innehållet.
+Nu kommer den roliga delen – att visa eller dölja innehållet baserat på bokmärken. Vi skapar en metod som heter`ShowHideBookmarkedContent` att hantera detta.
 
-```csharp
-builder.Write("This is some text before the bookmark.");
-builder.StartBookmark("MyBookmark");
-builder.Write("This is the bookmarked content.");
-builder.EndBookmark("MyBookmark");
-builder.Write("This is some text after the bookmark.");
-```
-
- Här lägger vi till lite text före och efter det bokmärkta innehållet. De`StartBookmark` och`EndBookmark` metoder definierar gränserna för bokmärket.
-
-## Steg 3: Infoga ett villkorligt fält
-
-För att kontrollera synligheten för det bokmärkta innehållet använder vi ett villkorsfält. Detta fält kommer att kontrollera ett villkor och visa eller dölja innehållet i enlighet med detta.
+Här är metoden som växlar synligheten för bokmärkt innehåll:
 
 ```csharp
-builder.MoveToDocumentEnd();
-Field field = builder.InsertField("IF \"", null);
-builder.MoveTo(field.Start.NextSibling);
-builder.InsertField("MERGEFIELD MyBookmark", null);
-builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
-```
-
-I det här steget infogar vi ett IF-fält som kontrollerar värdet på bokmärket. Om värdet är "true", kommer det att visa "Visible"; annars kommer det att visa "Dold".
-
-## Steg 4: Ordna om noder
-
-Därefter måste vi ordna om noderna för att säkerställa att den villkorliga logiken tillämpas korrekt på det bokmärkta innehållet.
-
-```csharp
-Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
-Node currentNode = field.Start;
-bool flag = true;
-
-while (currentNode != null && flag)
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool isHidden)
 {
-    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-        flag = false;
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-    currentNode = nextNode;
-}
-
-Node endNode = bm.BookmarkEnd;
-flag = true;
-
-while (currentNode != null && flag)
-{
-    if (currentNode.NodeType == NodeType.FieldEnd)
-        flag = false;
-
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-    endNode = currentNode;
-    currentNode = nextNode;
+    Node currentNode = bm.BookmarkStart;
+    while (currentNode != null && currentNode.NodeType != NodeType.BookmarkEnd)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+        {
+            Run run = currentNode as Run;
+            run.Font.Hidden = isHidden;
+        }
+        currentNode = currentNode.NextSibling;
+    }
 }
 ```
 
-Här flyttar vi runt noder för att se till att villkoret korrekt omfattar det bokmärkta innehållet.
+### Uppdelning av metoden
 
-## Steg 5: Kör sammanfogning av brev
+-  Bokmärkshämtning:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` hämtar bokmärket.
+- Nodgenomgång: Vi korsar noderna inom bokmärket.
+-  Visibility Toggle: Om noden är en`Run` (en sammanhängande serie text), ställer vi in dess`Hidden` fast egendom.
 
-Slutligen kommer vi att köra en sammankoppling för att ställa in värdet på bokmärket och avgöra om innehållet ska visas eller döljas.
+## Steg 4: Tillämpa metoden
 
-```csharp
-doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
-```
-
-Detta steg ställer in bokmärkesvärdet på "true", vilket gör innehållet synligt baserat på vårt tillstånd.
-
-## Steg 6: Spara dokumentet
-
-Efter alla manipulationer är det sista steget att spara det ändrade dokumentet.
+Med vår metod på plats, låt oss använda den för att visa eller dölja innehåll baserat på ett bokmärke.
 
 ```csharp
-doc.Save("ShowHideBookmarkedContent.docx");
+ShowHideBookmarkedContent(doc, "MyBookmark1", true);
 ```
 
-Här sparar vi dokumentet med ett beskrivande filnamn för att indikera ändringarna.
+Denna kodrad kommer att dölja innehållet i bokmärket som heter "MyBookmark1".
+
+## Steg 5: Spara dokumentet
+
+Slutligen, låt oss spara vårt modifierade dokument.
+
+```csharp
+doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
+```
+
+Detta sparar dokumentet med de ändringar vi har gjort.
 
 ## Slutsats
 
- Och det är allt! Du har framgångsrikt lärt dig hur du visar eller döljer bokmärkt innehåll i ett Word-dokument med Aspose.Words för .NET. Denna handledning handlade om att skapa ett dokument, lägga till bokmärken, infoga villkorliga fält, arrangera om noder och köra en sammankoppling. Aspose.Words erbjuder en uppsjö av funktioner, så tveka inte att utforska[API dokumentation](https://reference.aspose.com/words/net/) för mer avancerade funktioner.
+Och där har du det! Du har precis lärt dig hur du visar och döljer bokmärkt innehåll i ett Word-dokument med Aspose.Words för .NET. Det här kraftfulla verktyget gör dokumentmanipulering till en lek, oavsett om du automatiserar rapporter, skapar mallar eller bara pysslar med Word-filer. Glad kodning!
 
-## Vanliga frågor
+## FAQ's
 
-### 1. Vad är Aspose.Words för .NET?
+### Kan jag växla mellan flera bokmärken samtidigt?
+ Ja, du kan ringa`ShowHideBookmarkedContent` metod för varje bokmärke du vill växla.
 
-Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa, ändra och konvertera Word-dokument programmatiskt. Det används ofta för dokumentautomatiseringsuppgifter.
+### Påverkar dokumentets struktur att dölja innehåll?
+Nej, att dölja innehåll påverkar bara dess synlighet. Innehållet finns kvar i dokumentet.
 
-### 2. Kan jag använda Aspose.Words för .NET gratis?
+### Kan jag använda den här metoden för andra typer av innehåll?
+Denna metod växlar specifikt textkörningar. För andra innehållstyper måste du ändra nodgenomgångslogiken.
 
- Du kan prova Aspose.Words för .NET med en[gratis provperiod](https://releases.aspose.com/). För långvarig användning måste du köpa en licens.
+### Är Aspose.Words för .NET gratis?
+ Aspose.Words erbjuder en gratis provperiod[här](https://releases.aspose.com/) , men en fullständig licens krävs för produktionsanvändning. Du kan köpa den[här](https://purchase.aspose.com/buy).
 
-### 3. Hur ändrar jag andra egenskaper för ett bokmärke?
-
- Aspose.Words låter dig manipulera olika egenskaper hos ett bokmärke, såsom dess text och plats. Referera till[API dokumentation](https://reference.aspose.com/words/net/) för detaljerade instruktioner.
-
-### 4. Hur får jag support för Aspose.Words för .NET?
-
-Du kan få stöd genom att besöka[Aspose supportforum](https://forum.aspose.com/c/words/8).
-
-### 5. Kan jag manipulera andra typer av innehåll med Aspose.Words för .NET?
-
-Ja, Aspose.Words för .NET stöder olika typer av innehållsmanipulation, inklusive text, bilder, tabeller och mer.
+### Hur kan jag få support om jag stöter på problem?
+ Du kan få stöd från Aspose-communityt[här](https://forum.aspose.com/c/words/8).

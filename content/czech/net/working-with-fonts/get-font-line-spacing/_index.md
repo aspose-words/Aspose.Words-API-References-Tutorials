@@ -2,7 +2,7 @@
 title: Získejte řádkování písma
 linktitle: Získejte řádkování písma
 second_title: Aspose.Words API pro zpracování dokumentů
-description: V tomto kurzu se dozvíte, jak získat řádkování písma v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: tomto kurzu se dozvíte, jak získat řádkování písma v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/get-font-line-spacing/

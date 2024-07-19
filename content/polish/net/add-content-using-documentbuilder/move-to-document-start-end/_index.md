@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tutaj tworzymy instancję`Document` I`DocumentBuilder` . Myśleć o`Document` jako pusty dokument programu Word i`DocumentBuilder` jak twój długopis.
+ Tutaj tworzymy instancję`Document`I`DocumentBuilder` . Myśleć o`Document` jako pusty dokument programu Word i`DocumentBuilder` jak twój długopis.
 
 ## Krok 2: Przejdź do początku dokumentu
 

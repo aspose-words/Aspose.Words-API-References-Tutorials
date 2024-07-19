@@ -85,7 +85,7 @@ Gratulacje! Właśnie nauczyłeś się, jak przejść do określonej komórki ta
  Tak, podając prawidłowy indeks tabeli w pliku`MoveToCell` możesz przejść do dowolnej komórki w dowolnej tabeli w dokumencie.
 
 ### Jak obsługiwać komórki obejmujące wiele wierszy lub kolumn?
- Możesz skorzystać z`RowSpan` I`ColSpan` właściwości`Cell` klasa do zarządzania scalonymi komórkami.
+ Możesz skorzystać z`RowSpan`I`ColSpan` właściwości`Cell` klasa do zarządzania scalonymi komórkami.
 
 ### Czy można sformatować tekst wewnątrz komórki?
  Absolutnie! Używać`DocumentBuilder` metody takie jak`Font.Size`, `Font.Bold`i inne, aby sformatować tekst.

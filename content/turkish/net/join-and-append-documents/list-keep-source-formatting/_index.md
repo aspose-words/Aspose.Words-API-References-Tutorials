@@ -2,76 +2,87 @@
 title: Liste Kaynak Formatını Koru
 linktitle: Liste Kaynak Formatını Koru
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerini birleştirirken ve eklerken liste formatını nasıl koruyacağınızı öğrenin.
+description: Aspose.Words for .NET kullanarak biçimlendirmeyi korurken Word belgelerini nasıl birleştireceğinizi öğrenin. Bu eğitimde kusursuz belge birleştirme için adım adım rehberlik sağlanmaktadır.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## giriiş
 
-Bu eğitim, Aspose.Words for .NET'in Kaynak Biçimlendirmesini Listele özelliğini kullanma sürecinde size rehberlik edecektir. Bu özellik, listelerin kaynak formatını korurken Word belgelerini birleştirmenize ve eklemenize olanak tanır.
+Bu eğitimde, kaynak formatını korurken belgeleri birleştirmek için Aspose.Words for .NET'in nasıl kullanılacağını keşfedeceğiz. Bu yetenek, belgelerin orijinal görünümünün korunmasının çok önemli olduğu senaryolar için gereklidir.
 
 ## Önkoşullar
 
-Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Devam etmeden önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
-1. Aspose.Words for .NET kuruldu. Aspose web sitesinden indirebilir veya NuGet aracılığıyla yükleyebilirsiniz.
-2. Visual Studio veya başka herhangi bir C# geliştirme ortamı.
+- Makinenizde Visual Studio yüklü.
+-  Aspose.Words for .NET kuruldu. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- C# programlama ve .NET ortamına ilişkin temel bilgi.
 
-## Adım 1: Belge Dizinlerini Başlatın
+## Ad Alanlarını İçe Aktar
 
- Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Değerini değiştirin`dataDir` belgelerinizin bulunduğu yola göre değişkendir.
+Öncelikle gerekli ad alanlarını C# projenize aktarın:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## Adım 2: Kaynak ve Hedef Belgelerini Yükleyin
+## 1. Adım: Projenizi Kurun
 
-Daha sonra Aspose.Words'ü kullanarak kaynak ve hedef belgeleri yüklemeniz gerekir.`Document` sınıf. Dosya adlarını güncelleyin`Document` belge adlarınıza göre yapıcı.
+Visual Studio'da yeni bir C# projesi oluşturarak başlayın. Projenizde Aspose.Words for .NET'e başvurulduğundan emin olun. Değilse NuGet Paket Yöneticisi aracılığıyla ekleyebilirsiniz.
+
+## Adım 2: Belge Değişkenlerini Başlatın
 
 ```csharp
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Kaynak ve hedef belgeleri yükleyin
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Adım 3: Kaynak Belgeyi Sürekli Akışa Ayarlayın
+## 3. Adım: Bölüm Ayarlarını Yapılandırın
 
- Kaynak belgedeki içeriğin hedef belgeye eklendiğinde sürekli olarak akmasını sağlamak için`SectionStart` kaynak belgedeki ilk bölümün özelliği`SectionStart.Continuous`.
+Birleştirilmiş belgede sürekli akışı sürdürmek için bölüm başlangıcını ayarlayın:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Adım 4: Kaynak Belgeyi Hedef Belgeye Ekleme
+## Adım 4: Belgeleri Birleştirin
 
- Artık kaynak belgeyi hedef belgeye aşağıdaki komutu kullanarak ekleyebilirsiniz:`AppendDocument` yöntemi`Document` sınıf.`ImportFormatMode.KeepSourceFormatting`parametresi, ekleme işlemi sırasında listelerin formatı da dahil olmak üzere kaynak formatının korunmasını sağlar.
+Kaynak belgenin içeriğini ekleyin (`srcDoc`) hedef belgeye (`dstDoc`) orijinal biçimlendirmeyi korurken:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Adım 5: Nihai Belgeyi Kaydedin
+## Adım 5: Birleştirilmiş Belgeyi Kaydedin
 
- Son olarak, birleştirilmiş belgeyi Kaynak Biçimlendirmesini Listele özelliği etkinleştirilmiş olarak kaydedin.`Save` yöntemi`Document` sınıf.
+Son olarak, birleştirilmiş belgeyi belirttiğiniz dizine kaydedin:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### Aspose.Words for .NET kullanılarak Liste Saklama Kaynak Formatlaması için örnek kaynak kodu 
+## Çözüm
 
-Aspose.Words for .NET kullanan C#'taki Kaynak Biçimlendirmeyi Listele özelliğinin tam kaynak kodu:
+Sonuç olarak, Aspose.Words for .NET ile belgeleri orijinal formatlarını koruyarak birleştirmek çok kolaydır. Bu eğitim, birleştirilmiş belgenizin kaynak belgenin düzenini ve stilini korumasını sağlayarak süreç boyunca size rehberlik etmiştir.
 
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## SSS'ler
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Belgenin içeriğini sürekli akacak şekilde ekleyin.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### Belgelerimin farklı stilleri varsa ne olur?
+Aspose.Words farklı stilleri zarif bir şekilde ele alır ve orijinal formatı mümkün olduğu kadar korur.
 
-Bu kadar! Aspose.Words for .NET'i kullanarak Listeyi Koru Kaynak Formatlama özelliğini başarıyla uyguladınız. Nihai belge, kaynak belgenin liste formatı korunarak birleştirilmiş içeriği içerecektir.
+### Farklı formatlardaki belgeleri birleştirebilir miyim?
+Evet, Aspose.Words, DOCX, DOC, RTF ve diğerleri dahil olmak üzere çeşitli formatlardaki belgelerin birleştirilmesini destekler.
+
+### Aspose.Words .NET Core ile uyumlu mu?
+Evet, Aspose.Words .NET Core'u tam olarak destekleyerek platformlar arası geliştirmeyi mümkün kılar.
+
+### Büyük belgeleri verimli bir şekilde nasıl işleyebilirim?
+Aspose.Words, büyük belgelerde bile performans için optimize edilmiş, belge işleme için etkili API'ler sağlar.
+
+### Daha fazla örnek ve belgeyi nerede bulabilirim?
+ Daha fazla örneği ve ayrıntılı belgeleri şu adreste inceleyebilirsiniz:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/).

@@ -33,7 +33,7 @@ Lassen Sie uns den Prozess nun in einfache, leicht verständliche Schritte unter
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
-Bevor wir uns in den Code stürzen, müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis angeben. Hier wird Ihr generiertes Word-Dokument gespeichert.
+Bevor wir uns in den Code stürzen, müssen Sie den Pfad zu Ihrem Dokumentverzeichnis angeben. Hier wird Ihr generiertes Word-Dokument gespeichert.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

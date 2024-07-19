@@ -75,7 +75,7 @@ In questo articolo, abbiamo esplorato come stampare documenti con l'impostazione
 
 ### Come posso modificare il formato carta del mio documento?
 
- Per modificare il formato carta del documento, utilizzare il file`setPageWidth` E`setPageHeight` metodi del`PageSetup` classe e specificare le dimensioni desiderate in punti.
+ Per modificare il formato carta del documento, utilizzare il file`setPageWidth`E`setPageHeight` metodi del`PageSetup` classe e specificare le dimensioni desiderate in punti.
 
 ### Posso stampare più copie di un documento?
 

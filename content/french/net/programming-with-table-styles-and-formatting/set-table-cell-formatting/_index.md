@@ -45,7 +45,7 @@ cellFormat. TopPadding = 30;
 cellFormat.BottomPadding = 30;
 ```
 
-## Étape 5 : Ajouter du contenu à la cellule
+## Étape 5 : ajouter du contenu à la cellule
  Ensuite, nous pouvons ajouter du contenu à la cellule à l'aide du générateur de documents`Writeln()` méthode.
 
 ```csharp

@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- In questo passaggio configuriamo le opzioni per il caricamento del documento TXT. Ne creiamo uno nuovo`TxtLoadOptions` oggetto e impostare il`LeadingSpacesOptions` E`TrailingSpacesOptions` proprietà a`TxtLeadingSpacesOptions.Trim` E`TxtTrailingSpacesOptions.Trim` rispettivamente. Questo dice ad Aspose.Words di rimuovere gli spazi iniziali e finali dalle righe durante il caricamento del documento.
+ In questo passaggio configuriamo le opzioni per il caricamento del documento TXT. Ne creiamo uno nuovo`TxtLoadOptions` oggetto e impostare il`LeadingSpacesOptions`E`TrailingSpacesOptions` proprietà a`TxtLeadingSpacesOptions.Trim`E`TxtTrailingSpacesOptions.Trim` rispettivamente. Questo dice ad Aspose.Words di rimuovere gli spazi iniziali e finali dalle righe durante il caricamento del documento.
 
 ## Passaggio 4: caricamento del documento
 

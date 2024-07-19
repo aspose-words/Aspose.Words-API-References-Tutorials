@@ -81,7 +81,7 @@ Clonar o documento é muito fácil com Aspose.Words:
 
 Com tudo pronto, é hora de executar seu código e ver os resultados:
 
-1.  Construa seu projeto: clique no`Build` menu e selecione`Build Solution`. Certifique-se de que não haja erros.
+1. Construa seu projeto: clique no`Build` menu e selecione`Build Solution`. Certifique-se de que não haja erros.
 2.  Execute seu projeto: Hit`F5` ou clique no`Start` botão para executar seu projeto. Se tudo estiver configurado corretamente, um novo documento clonado deverá aparecer em seu diretório de documentos.
 
 ## Etapa 6: verifique a saída

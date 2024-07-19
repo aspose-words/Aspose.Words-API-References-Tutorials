@@ -2,76 +2,87 @@
 title: Lista Zachowaj formatowanie źródła
 linktitle: Lista Zachowaj formatowanie źródła
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zachować formatowanie listy podczas łączenia i dołączania dokumentów programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak scalać dokumenty programu Word, zachowując formatowanie, używając Aspose.Words dla .NET. Ten samouczek zawiera wskazówki krok po kroku dotyczące bezproblemowego scalania dokumentów.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## Wstęp
 
-Ten samouczek poprowadzi Cię przez proces korzystania z funkcji List Keep Source Formatting w Aspose.Words dla .NET. Ta funkcja umożliwia łączenie i dołączanie dokumentów programu Word przy jednoczesnym zachowaniu formatowania źródłowego list.
+W tym samouczku odkryjemy, jak wykorzystać Aspose.Words dla .NET do łączenia dokumentów przy jednoczesnym zachowaniu formatowania źródłowego. Ta funkcja jest niezbędna w scenariuszach, w których kluczowe znaczenie ma zachowanie oryginalnego wyglądu dokumentów.
 
 ## Warunki wstępne
 
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
+Przed kontynuowaniem upewnij się, że spełnione są następujące wymagania wstępne:
 
-1. Zainstalowano Aspose.Words dla .NET. Możesz pobrać go ze strony Aspose lub zainstalować za pomocą NuGet.
-2. Visual Studio lub dowolne inne środowisko programistyczne C#.
+- Program Visual Studio zainstalowany na Twoim komputerze.
+-  Zainstalowano Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Podstawowa znajomość programowania w C# i środowisku .NET.
 
-## Krok 1: Zainicjuj katalogi dokumentów
+## Importuj przestrzenie nazw
 
- Najpierw musisz ustawić ścieżkę do katalogu dokumentów. Zmodyfikuj wartość`dataDir` zmienną na ścieżkę, w której znajdują się Twoje dokumenty.
+Najpierw zaimportuj niezbędne przestrzenie nazw do projektu C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## Krok 2: Załaduj dokumenty źródłowe i docelowe
+## Krok 1: Skonfiguruj swój projekt
 
-Następnie musisz załadować dokumenty źródłowe i docelowe za pomocą Aspose.Words`Document` klasa. Zaktualizuj nazwy plików w`Document` konstruktor zgodnie z nazwami dokumentów.
+Zacznij od utworzenia nowego projektu C# w programie Visual Studio. Upewnij się, że w Twoim projekcie znajduje się odwołanie do Aspose.Words for .NET. Jeśli nie, możesz go dodać za pomocą Menedżera pakietów NuGet.
+
+## Krok 2: Zainicjuj zmienne dokumentu
 
 ```csharp
+// Ścieżka do katalogu dokumentów
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Załaduj dokumenty źródłowe i docelowe
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Krok 3: Ustaw dokument źródłowy na ciągły przepływ
+## Krok 3: Skonfiguruj ustawienia sekcji
 
- Aby mieć pewność, że zawartość dokumentu źródłowego będzie stale przepływać po dołączeniu do dokumentu docelowego, należy ustawić opcję`SectionStart` właściwość pierwszej sekcji dokumentu źródłowego do`SectionStart.Continuous`.
+Aby zachować ciągłość przepływu scalonego dokumentu, dostosuj początek sekcji:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Krok 4: Dołącz dokument źródłowy do dokumentu docelowego
+## Krok 4: Połącz dokumenty
 
- Teraz możesz dołączyć dokument źródłowy do dokumentu docelowego za pomocą`AppendDocument` metoda`Document` klasa. The`ImportFormatMode.KeepSourceFormatting`Parametr zapewnia, że formatowanie źródła, w tym formatowanie list, zostanie zachowane podczas operacji dołączania.
+Dołącz treść dokumentu źródłowego (`srcDoc`) do dokumentu docelowego (`dstDoc`) zachowując oryginalne formatowanie:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Krok 5: Zapisz dokument końcowy
+## Krok 5: Zapisz scalony dokument
 
- Na koniec zapisz scalony dokument z włączoną funkcją List Keep Source Formatting za pomocą`Save` metoda`Document` klasa.
+Na koniec zapisz scalony dokument w określonym katalogu:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### Przykładowy kod źródłowy dla formatowania źródła List Keep przy użyciu Aspose.Words dla .NET 
+## Wniosek
 
-Oto pełny kod źródłowy funkcji List Keep Source Formatting w języku C# przy użyciu Aspose.Words dla .NET:
+Podsumowując, łączenie dokumentów przy zachowaniu ich oryginalnego formatowania jest proste dzięki Aspose.Words dla .NET. Ten samouczek poprowadził Cię przez cały proces, upewniając się, że scalony dokument zachowuje układ i styl dokumentu źródłowego.
 
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Często zadawane pytania
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Dołącz treść dokumentu, aby przebiegała w sposób ciągły.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### Co się stanie, jeśli moje dokumenty mają różne style?
+Aspose.Words z wdziękiem obsługuje różne style, zachowując oryginalne formatowanie tak wiernie, jak to możliwe.
 
-Otóż to! Pomyślnie zaimplementowałeś funkcję List Keep Source Formatting przy użyciu Aspose.Words dla .NET. Ostateczny dokument będzie zawierał scaloną treść z zachowanym formatowaniem listy dokumentu źródłowego.
+### Czy mogę łączyć dokumenty o różnych formatach?
+Tak, Aspose.Words obsługuje łączenie dokumentów w różnych formatach, w tym DOCX, DOC, RTF i innych.
+
+### Czy Aspose.Words jest kompatybilny z .NET Core?
+Tak, Aspose.Words w pełni obsługuje .NET Core, umożliwiając rozwój na wielu platformach.
+
+### Jak efektywnie obsługiwać duże dokumenty?
+Aspose.Words zapewnia wydajne interfejsy API do manipulacji dokumentami, zoptymalizowane pod kątem wydajności nawet w przypadku dużych dokumentów.
+
+### Gdzie mogę znaleźć więcej przykładów i dokumentacji?
+ Więcej przykładów i szczegółową dokumentację można znaleźć na stronie[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/).

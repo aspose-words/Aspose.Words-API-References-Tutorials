@@ -22,7 +22,7 @@ Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Pozwala to na wykorzystanie funkcjonalności biblioteki Aspose.Words w Twoim projekcie.
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Dzięki temu możesz używać funkcjonalności biblioteki Aspose.Words w swoim projekcie.
 
 ```csharp
 using Aspose.Words;

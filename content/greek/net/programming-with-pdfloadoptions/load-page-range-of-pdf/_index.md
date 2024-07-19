@@ -15,7 +15,7 @@ url: /el/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 Χρησιμοποιήστε τον ακόλουθο κώδικα για να φορτώσετε μια συγκεκριμένη περιοχή σελίδων από ένα έγγραφο PDF:
 
 ```csharp
-// Διαδρομή στον κατάλογο εγγράφων.
+//Διαδρομή στον κατάλογο εγγράφων.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Σε αυτό το παράδειγμα, φορτώνουμε την πρώτη σελίδα του εγγράφου PDF. Μπορείτε να αλλάξετε τις τιμές του`PageIndex` και`PageCount` στο επιθυμητό εύρος σελίδων.
+ Σε αυτό το παράδειγμα, φορτώνουμε την πρώτη σελίδα του εγγράφου PDF. Μπορείτε να αλλάξετε τις τιμές του`PageIndex`και`PageCount` στο επιθυμητό εύρος σελίδων.
 
 ## Βήμα 2: Αποθήκευση του εγγράφου
 

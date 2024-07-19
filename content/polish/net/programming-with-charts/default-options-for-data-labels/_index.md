@@ -2,119 +2,144 @@
 title: Ustaw domyślne opcje etykiet danych na wykresie
 linktitle: Ustaw domyślne opcje etykiet danych na wykresie
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić domyślne opcje etykiet danych na wykresie za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak ustawić domyślne opcje etykiet danych na wykresie za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby bez wysiłku tworzyć i dostosowywać wykresy.
 type: docs
 weight: 10
 url: /pl/net/programming-with-charts/default-options-for-data-labels/
 ---
+## Wstęp
 
-W tym samouczku wyjaśniono, jak używać Aspose.Words dla .NET do ustawiania domyślnych opcji etykiet danych na wykresie. Dostarczony kod demonstruje, jak utworzyć wykres, dodać serie danych i dostosować etykiety danych za pomocą Aspose.Words.
+No hej! Czy jesteś podekscytowany zanurzeniem się w świat automatyzacji dokumentów? Dzisiaj przyjrzymy się, jak używać Aspose.Words dla .NET do programowego tworzenia wspaniałych dokumentów. Aspose.Words to potężna biblioteka, która pozwala z łatwością manipulować dokumentami programu Word. W tym samouczku skupimy się na ustawianiu domyślnych opcji etykiet danych na wykresie. Niezależnie od tego, czy jesteś doświadczonym programistą, czy nowicjuszem, ten przewodnik przeprowadzi Cię przez każdy krok, dzięki czemu możesz błyskawicznie rozpocząć pracę.
 
-## Krok 1: Skonfiguruj projekt
+## Warunki wstępne
 
-Zanim zaczniemy, upewnij się, że spełniasz następujące wymagania:
+Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz, wraz z tym samouczkiem. Oto krótka lista kontrolna:
 
-- Zainstalowana biblioteka Aspose.Words dla .NET. Możesz go pobrać za pomocą menedżera pakietów NuGet, aby go zainstalować.
-- Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
+- Visual Studio lub inne IDE kompatybilne z .NET: tutaj będziesz pisać i uruchamiać swój kod.
+-  Aspose.Words dla .NET: Można[pobierz najnowszą wersję](https://releases.aspose.com/words/net/) i zainstaluj go w swoim projekcie.
+- Podstawowa znajomość programowania w języku C#: Chociaż ten przewodnik jest przyjazny dla początkujących, pomocna będzie niewielka znajomość języka C#.
+- Zainstalowano platformę .NET Framework: Upewnij się, że na komputerze skonfigurowano platformę .NET Framework.
+-  Tymczasowa licencja na Aspose.Words: Zdobądź ją[Tutaj](https://purchase.aspose.com/temporary-license/) aby odblokować pełną funkcjonalność.
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres
+Po ustaleniu tych wymagań wstępnych jesteśmy gotowi do działania!
 
- Najpierw utwórzmy nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
+## Importuj przestrzenie nazw
+
+Na początek skonfigurujmy nasz projekt i zaimportujmy niezbędne przestrzenie nazw. Te przestrzenie nazw są kluczowe dla dostępu do funkcjonalności Aspose.Words.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.ReportingServices;
+```
+
+## Krok 1: Utwórz nowy dokument
+
+
+ Podróż rozpoczyna się od utworzenia nowego dokumentu i zainicjowania pliku`DocumentBuilder` . The`DocumentBuilder` class udostępnia zestaw metod umożliwiających łatwe manipulowanie zawartością dokumentu.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Utwórz nowy dokument
 Document doc = new Document();
+
+// Zainicjuj program DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Następnie wstawiamy wykres do dokumentu za pomocą`InsertChart` metoda`DocumentBuilder`. W tym przykładzie wstawimy wykres kołowy.
+### Wyjaśnienie
+
+ Na tym etapie konfigurujemy dokument i kreator, którego będziemy używać do wstawiania i formatowania naszej treści. The`dataDir` zmienna zawiera ścieżkę, w której zapiszemy nasz dokument końcowy.
+
+## Krok 2: Wstaw wykres
+
+ Następnie dodamy wykres kołowy do naszego dokumentu. The`InsertChart` metoda`DocumentBuilder` klasa sprawia, że jest to bardzo łatwe.
 
 ```csharp
+// Wstaw wykres kołowy
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
+
+// Uzyskaj dostęp do obiektu wykresu
 Chart chart = shape.Chart;
 ```
 
-## Krok 3: Dodaj serię danych do wykresu
+### Wyjaśnienie
 
-Dodajmy teraz serię danych do wykresu. W tym przykładzie dodamy trzy kategorie i odpowiadające im wartości.
+Tutaj wstawiamy wykres kołowy do naszego dokumentu. The`InsertChart` Metoda wymaga parametrów typu, szerokości i wysokości wykresu. Po wstawieniu wykresu uzyskujemy dostęp do obiektu wykresu w celu dalszej manipulacji nim.
+
+## Krok 3: Dostosuj serię wykresów
+
+Teraz wyczyścimy wszystkie istniejące serie na wykresie i dodamy serię niestandardową. Ta seria będzie reprezentować nasze punkty danych.
 
 ```csharp
+// Wyczyść istniejącą serię wykresów
 chart.Series.Clear();
+
+// Dodaj nową serię do wykresu
 ChartSeries series = chart.Series.Add("Aspose Series 1",
     new string[] { "Category 1", "Category 2", "Category 3" },
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-## Krok 4: Dostosuj etykiety danych
+### Wyjaśnienie
 
- Aby dostosować etykiety danych na wykresie, musimy uzyskać dostęp do`ChartDataLabelCollection` obiekt kojarzony z serią.
+Na tym etapie upewniamy się, że nasz wykres jest pusty, usuwając wszelkie istniejące serie. Następnie dodajemy nową serię z niestandardowymi kategoriami i wartościami, które zostaną wyświetlone na naszym wykresie kołowym.
+
+## Krok 4: Ustaw domyślne opcje etykiet danych
+
+Etykiety danych mają kluczowe znaczenie, jeśli chcesz, aby wykres był informacyjny. Ustawimy opcje wyświetlania procentu, wartości i dostosowania separatora.
 
 ```csharp
+// Uzyskaj dostęp do kolekcji etykiet danych
 ChartDataLabelCollection labels = series.DataLabels;
-```
 
- Następnie możemy modyfikować różne właściwości pliku`labels`obiekt, aby ustawić żądane opcje etykiet danych. W tym przykładzie umożliwimy pokazywanie procentu i wartości, wyłączymy linie odniesienia i ustawimy niestandardowy separator.
-
-```csharp
+// Ustaw opcje etykiet danych
 labels.ShowPercentage = true;
 labels.ShowValue = true;
 labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
+### Wyjaśnienie
+
+ Tutaj mamy dostęp do`DataLabels`właściwość naszej serii umożliwiająca dostosowanie wyglądu i informacji wyświetlanych na każdej etykiecie danych. Zdecydowaliśmy się pokazać zarówno wartość procentową, jak i wartość, ukryć linie odniesienia i ustawić niestandardowy separator.
+
 ## Krok 5: Zapisz dokument
 
- Na koniec zapisujemy dokument w określonym katalogu za pomocą pliku`Save` metoda`Document` obiekt.
+Na koniec zapiszemy nasz dokument we wskazanym katalogu. Ten krok gwarantuje, że wszystkie nasze zmiany zostaną zapisane do pliku.
 
 ```csharp
+// Zapisz dokument
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-To kończy implementację ustawiania domyślnych opcji etykiet danych na wykresie przy użyciu Aspose.Words dla .NET.
+### Wyjaśnienie
 
-### Przykładowy kod źródłowy domyślnych opcji etykiet danych przy użyciu Aspose.Words dla .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	ChartSeries series = chart.Series.Add("Aspose Series 1",
-		new string[] { "Category 1", "Category 2", "Category 3" },
-		new double[] { 2.7, 3.2, 0.8 });
-	ChartDataLabelCollection labels = series.DataLabels;
-	labels.ShowPercentage = true;
-	labels.ShowValue = true;
-	labels.ShowLeaderLines = false;
-	labels.Separator = " - ";
-	doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
-```
+ W tym ostatnim kroku zapisujemy nasz dokument za pomocą pliku`Save` metoda. Dokument zostanie zapisany w katalogu wskazanym przez`dataDir`, o nazwie „WorkingWithCharts.DefaultOptionsForDataLabels.docx”.
 
 ## Wniosek
 
-W tym samouczku nauczyłeś się ustawiać domyślne opcje etykiet danych na wykresie za pomocą Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem, możesz utworzyć wykres, dodać serie danych i dostosować etykiety danych do swoich konkretnych wymagań. Aspose.Words dla .NET zapewnia potężny interfejs API do przetwarzania słów z wykresami w dokumentach programu Word, umożliwiając manipulowanie różnymi elementami wykresów i osiąganie pożądanego wyglądu i funkcjonalności.
+I masz to! Pomyślnie utworzyłeś dokument programu Word z dostosowanym wykresem kołowym przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka ułatwia automatyzację tworzenia i manipulowania dokumentami, oszczędzając czas i wysiłek. Niezależnie od tego, czy generujesz raporty, faktury, czy jakikolwiek inny typ dokumentu, Aspose.Words zapewni Ci wsparcie.
 
- Ustawiając właściwości pliku`ChartDataLabelCollection`obiekt powiązany z serią wykresów, możesz kontrolować wyświetlanie etykiet danych, w tym opcje takie jak pokazywanie wartości procentowych, wartości, linii odniesienia i niestandardowych separatorów. Ta elastyczność umożliwia efektywną prezentację danych i poprawę wizualnej reprezentacji wykresów.
+ Zapraszamy do eksploracji[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) aby uzyskać więcej funkcji i przykładów. Miłego kodowania!
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### Pytanie 1. Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to biblioteka, która umożliwia programistom programowe tworzenie, manipulowanie i zapisywanie dokumentów programu Word przy użyciu aplikacji .NET. Zapewnia szeroką gamę funkcji do przetwarzania tekstu z elementami dokumentu, w tym wykresami.
+### Czy mogę używać Aspose.Words za darmo?
+Możesz używać Aspose.Words za darmo z[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) lub poznaj jego funkcje za pomocą[bezpłatna wersja próbna](https://releases.aspose.com/).
 
-#### Pytanie 2. Jak mogę zainstalować Aspose.Words dla .NET?
-Możesz zainstalować Aspose.Words dla .NET, pobierając go za pomocą menedżera pakietów NuGet w programie Visual Studio. Po prostu wyszukaj „Aspose.Words” w menedżerze pakietów NuGet i zainstaluj go w swoim projekcie.
+### Jak uzyskać wsparcie dla Aspose.Words?
+ Wsparcie możesz uzyskać poprzez[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).
 
-#### Pytanie 3. Czy mogę dostosować inne aspekty wykresu za pomocą Aspose.Words dla .NET?
-Tak, Aspose.Words dla .NET umożliwia dostosowanie różnych aspektów wykresu, takich jak typ wykresu, etykiety osi, legenda, obszar wykresu i inne. Można uzyskać dostęp do różnych właściwości obiektu wykresu i je modyfikować, aby uzyskać pożądany wygląd i zachowanie.
+### Czy mogę dodać inne typy wykresów?
+ Tak, Aspose.Words obsługuje różne typy wykresów, takie jak wykresy słupkowe, liniowe i kolumnowe. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
 
-#### Pytanie 4. Czy mogę zapisać wykres w różnych formatach?
- Tak, Aspose.Words dla .NET obsługuje zapisywanie dokumentu zawierającego wykres w różnych formatach, w tym DOCX, PDF, HTML i innych. Możesz wybrać odpowiedni format w oparciu o swoje wymagania i użyć`Save` metoda`Document` obiekt, aby zapisać dokument.
+### Czy Aspose.Words jest kompatybilny z .NET Core?
+ Tak, Aspose.Words jest kompatybilny z .NET Core. Więcej informacji znajdziesz w[dokumentacja](https://reference.aspose.com/words/net/).
 
-#### Pytanie 5. Czy mogę zastosować te techniki do innych typów wykresów?
-Tak, techniki opisane w tym samouczku można zastosować do innych typów wykresów obsługiwanych przez Aspose.Words dla .NET. Kluczem jest dostęp do odpowiednich obiektów i właściwości specyficznych dla typu wykresu, z którym korzystasz z programu Words Processing.
+### Jak mogę kupić licencję na Aspose.Words?
+ Licencję można kupić w witrynie[Sklep Aspose](https://purchase.aspose.com/buy).
+

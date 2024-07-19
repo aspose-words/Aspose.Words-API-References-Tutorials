@@ -31,7 +31,7 @@ Nyní, když jsme nakonfigurovali možnosti načtení, můžeme načíst dokumen
 Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 ```
 
-V tomto příkladu načteme dokument "Kódováno v UTF-7.txt" umístěný v adresáři dokumentů pomocí zadaných možností načítání.
+tomto příkladu načteme dokument "Kódováno v UTF-7.txt" umístěný v adresáři dokumentů pomocí zadaných možností načítání.
 
 ### Ukázkový zdrojový kód pro LoadOptions s funkcí "Load With Encoding" pomocí Aspose.Words for .NET
 
@@ -48,7 +48,7 @@ Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 
 ## Závěr
 
-této příručce jsme vysvětlili, jak načíst textový dokument se zadaným kódováním pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Načítání textových dokumentů se správným kódováním zajišťuje správné a přesné čtení obsahu ve vaší aplikaci.
+V této příručce jsme vysvětlili, jak načíst textový dokument se zadaným kódováním pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Načítání textových dokumentů se správným kódováním zajišťuje správné a přesné čtení obsahu ve vaší aplikaci.
 
 
 ### FAQ

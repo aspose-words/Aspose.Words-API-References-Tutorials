@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 بعد ذلك، نحتاج إلى تحريك المؤشر إلى فقرة معينة في المستند حيث نريد إدراج حقل الدمج.
 
 ```csharp
-// نقل المؤشر إلى الفقرة.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## الخطوة 6: أدخل حقل الدمج

@@ -16,11 +16,11 @@ Aspose.Words for .NET 教程中的文字处理与文档属性提供了在项目�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [获取变量](./get-variables/) | 使用 Aspose.Words for .NET 检索文档变量的分步指南。 |
-| [枚举属性](./enumerate-properties/) | 使用 Aspose.Words for .NET 枚举文档属性的分步指南。 |
-| [添加自定义文档属性](./add-custom-document-properties/) | 使用 Aspose.Words for .NET 向文档添加自定义属性的分步指南。 |
-| [删除自定义文档属性](./remove-custom-document-properties/) | 使用 Aspose.Words for .NET 从文档中删除自定义属性的分步指南。 |
-| [删除个人信息](./remove-personal-information/) | 使用 Aspose.Words for .NET 从文档中删除个人信息的分步指南。 |
-| [配置内容链接](./configuring-link-to-content/) | 使用 Aspose.Words for .NET 设置文档内容链接的分步指南。 |
-| [测量单位之间的转换](./convert-between-measurement-units/) | 使用 Aspose.Words for .NET 在文档中转换测量单位的分步指南。 |
-| [使用控制字符](./use-control-characters/) | 使用 Aspose.Words for .NET 控制字符的分步指南。 |
+| [获取变量](./get-variables/) | 掌握 Aspose.Words for .NET。通过本分步指南学习如何从 Word 文档加载和提取变量。 |
+| [枚举属性](./enumerate-properties/) | 通过本分步指南学习如何使用 Aspose.Words for .NET 枚举 Word 文档中的属性。适合所有技能水平的开发人员。 |
+| [添加自定义文档属性](./add-custom-document-properties/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中添加自定义文档属性。按照我们的分步指南使用附加元数据增强您的文档。 |
+| [删除自定义文档属性](./remove-custom-document-properties/) | 使用 Aspose.Words for .NET 删除 Word 文件中的自定义文档属性。按照我们的分步指南，快速轻松地找到解决方案。非常适合开发人员。 |
+| [删除个人信息](./remove-personal-information/) | 通过本分步指南了解如何使用 Aspose.Words for .NET 从文档中删除个人信息。简化文档管理。 |
+| [配置内容链接](./configuring-link-to-content/) | 通过我们详细的分步教程学习如何使用 Aspose.Words for .NET 配置 Word 文档中内容的链接。 |
+| [测量单位之间的转换](./convert-between-measurement-units/) | 了解如何在 Aspose.Words for .NET 中转换测量单位。按照我们的分步指南以英寸和磅为单位设置文档边距、页眉和页脚。 |
+| [使用控制字符](./use-control-characters/) | 了解如何使用 Aspose.Words for .NET 自动执行 Word 文档任务。本指南涵盖设置、文本替换等内容，让您的工作流程更加高效。 |

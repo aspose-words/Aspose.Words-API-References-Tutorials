@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Steg 3: Gå till den första cellen i den första tabellen
- För att börja måste vi navigera till den första cellen i den första tabellen i dokumentet. Vi använder`GetChild()` och`FirstRow.FirstCell` metoder för att få referensen till den första cellen.
+ För att börja måste vi navigera till den första cellen i den första tabellen i dokumentet. Vi använder`GetChild()`och`FirstRow.FirstCell` metoder för att få referensen till den första cellen.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

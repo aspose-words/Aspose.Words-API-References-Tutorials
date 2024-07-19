@@ -16,11 +16,11 @@ Tutorial perlindungan dokumen Aspose.Words untuk .NET memandu Anda melalui conto
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Perlindungan Kata Sandi Dalam Dokumen Word](./password-protection/) | Pelajari cara proteksi kata sandi di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Izinkan Hanya Lindungi Bidang Formulir di Dokumen Word](./allow-only-form-fields-protect/) | Pelajari cara menggunakan Aspose.Words untuk .NET untuk melindungi dokumen Word dan hanya mengizinkan bidang formulir untuk diedit. |
-| [Hapus Perlindungan Dokumen Di Dokumen Word](./remove-document-protection/) | Pelajari cara menghapus perlindungan di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Wilayah yang Dapat Diedit Tidak Terbatas di Dokumen Word](./unrestricted-editable-regions/) | Pelajari cara membuat area yang dapat diedit tanpa batas di dokumen Word dengan Aspose.Words untuk .NET. |
-| [Bagian Tidak Terbatas Dalam Dokumen Word](./unrestricted-section/) | Pelajari cara menentukan bagian yang tidak dibatasi dalam dokumen Word dengan Aspose.Words untuk .NET. |
-| [Dapatkan Jenis Perlindungan Dalam Dokumen Word](./get-protection-type/) | Pelajari cara menggunakan fungsi Dapatkan Jenis Perlindungan di dokumen Word Aspose.Words untuk .NET untuk menentukan jenis perlindungan dokumen. |
-| [Perlindungan Hanya Baca Dalam Dokumen Word](./read-only-protection/) | Pelajari cara melindungi dokumen Word hanya-baca dengan Aspose.Words untuk .NET. |
-| [Hapus Pembatasan Hanya Baca](./remove-read-only-restriction/) | Pelajari cara menghapus pembatasan baca-saja dari dokumen Word dengan Aspose.Words untuk .NET. |
+| [Perlindungan Kata Sandi Dalam Dokumen Word](./password-protection/) | Pelajari cara mengamankan dokumen Word Anda dengan perlindungan kata sandi menggunakan Aspose.Words untuk .NET dalam panduan langkah demi langkah yang mendetail ini. |
+| [Izinkan Hanya Lindungi Bidang Formulir di Dokumen Word](./allow-only-form-fields-protect/) | Pelajari cara melindungi dokumen Word, hanya mengizinkan bidang formulir untuk diedit menggunakan Aspose.Words untuk .NET. Ikuti panduan kami untuk memastikan dokumen Anda aman dan mudah diedit. |
+| [Hapus Perlindungan Dokumen Di Dokumen Word](./remove-document-protection/) | Pelajari cara menghapus perlindungan dari dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk membuka proteksi dokumen Anda dengan mudah. |
+| [Wilayah yang Dapat Diedit Tidak Terbatas di Dokumen Word](./unrestricted-editable-regions/) | Pelajari cara membuat wilayah yang dapat diedit tanpa batas dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. |
+| [Bagian Tidak Terbatas Dalam Dokumen Word](./unrestricted-section/) | Buka kunci bagian tertentu di dokumen Word Anda menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk melindungi konten sensitif. |
+| [Dapatkan Jenis Perlindungan di Dokumen Word](./get-protection-type/) | Pelajari cara memeriksa jenis perlindungan dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah, contoh kode, dan FAQ disertakan. |
+| [Perlindungan Hanya Baca Dalam Dokumen Word](./read-only-protection/) | Pelajari cara melindungi dokumen Word Anda dengan menerapkan perlindungan baca-saja menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami. |
+| [Hapus Pembatasan Hanya Baca](./remove-read-only-restriction/) | Hapus batasan hanya baca dari dokumen Word dengan mudah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci. Sempurna untuk pengembang. |

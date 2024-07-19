@@ -15,7 +15,7 @@ url: /el/net/document-formatting/apply-borders-and-shading-to-paragraph/
 
 Πριν σηκώσουμε τα μανίκια και βουτήξουμε στην κωδικοποίηση, ας βεβαιωθούμε ότι έχουμε όλα όσα χρειαζόμαστε. Εδώ είναι η γρήγορη λίστα ελέγχου σας:
 
--  Aspose.Words για .NET: Πρέπει να έχετε εγκαταστήσει αυτήν τη βιβλιοθήκη. Μπορείτε να το κατεβάσετε από το[Aspose ιστότοπο](https://releases.aspose.com/words/net/).
+-  Aspose.Words για .NET: Πρέπει να έχετε εγκαταστήσει αυτήν τη βιβλιοθήκη. Μπορείτε να το κατεβάσετε από το[Aspose website](https://releases.aspose.com/words/net/).
 - Περιβάλλον ανάπτυξης: Visual Studio ή οποιοδήποτε άλλο IDE που υποστηρίζει .NET.
 - Βασικές γνώσεις C#: Αρκεί για να κατανοήσετε και να τροποποιήσετε τα αποσπάσματα κώδικα.
 - Μια έγκυρη άδεια: Είτε α[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/) ή αγορασμένο από[Aspose](https://purchase.aspose.com/buy).

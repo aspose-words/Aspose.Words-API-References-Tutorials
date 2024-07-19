@@ -58,7 +58,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir belgeyi oluştururken varsayı
 
  C: Aspose.Words'te varsayılan yazı tipi klasörlerini ayarlamak için`Fonts` sınıf ve`SetFontsFolders` özel yazı tipi klasörü konumlarını belirtme yöntemi.
 
-#### S: Varsayılan yazı tipi klasörlerini ayarlamak Aspose.Words ile işlenen tüm Word belgelerini etkiler mi?
+#### S: Varsayılan yazı tipi klasörlerinin ayarlanması Aspose.Words ile işlenen tüm Word belgelerini etkiler mi?
 
 C: Evet, varsayılan yazı tipi klasörlerinin ayarlanması Aspose.Words ile işlenen tüm Word belgelerini etkiler. Varsayılan yazı tipi klasörlerini ayarladıktan sonra Aspose.Words, tüm belgelerdeki yazı tiplerini aramak için bu konumları kullanacaktır.
 

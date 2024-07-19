@@ -46,11 +46,11 @@ Gefeliciteerd! U hebt nu geleerd hoe u de cursieve tekstfunctie kunt gebruiken m
 
 #### Vraag: Hoe kan ik tekst cursief maken in Aspose.Words?
 
-A: Om tekst in Aspose.Words cursief te maken, kunt u de`Font.Italic` eigendom van de`Run`voorwerp. U kunt deze eigenschap instellen op`true` om specifieke tekst cursief te maken. U kunt bijvoorbeeld gebruiken`run.Font.Italic=true` om de tekst in de tekst cursief te maken`Run` voorwerp.
+ A: Om tekst in Aspose.Words cursief te maken, kunt u de`Font.Italic` eigendom van de`Run`voorwerp. U kunt deze eigenschap instellen op`true` om specifieke tekst cursief te maken. U kunt bijvoorbeeld gebruiken`run.Font.Italic=true` om de tekst in de tekst cursief te maken`Run` voorwerp.
 
 #### Vraag: Is het mogelijk om meerdere stukken tekst in dezelfde alinea cursief te maken?
 
- A: Ja, u kunt meerdere stukken tekst in één alinea cursief maken met behulp van meerdere`Run` voorwerpen. Je kunt er meerdere maken`Run` objecten en stel de in`Font.Italic`eigendom aan`true` voor elk object om de gewenste delen van de tekst cursief te maken. Vervolgens kunt u ze aan de alinea toevoegen met behulp van de`Paragraph.AppendChild(run)` methode.
+ A: Ja, u kunt meerdere stukken tekst in één alinea cursief maken met behulp van meerdere`Run` voorwerpen. Je kunt er meerdere maken`Run` objecten en stel de in`Font.Italic`eigendom aan`true`voor elk object om de gewenste delen van de tekst cursief te maken. Vervolgens kunt u ze aan de alinea toevoegen met behulp van de`Paragraph.AppendChild(run)` methode.
 
 #### Vraag: Kan ik tekst in een tabel of cel in Aspose.Words cursief maken?
 

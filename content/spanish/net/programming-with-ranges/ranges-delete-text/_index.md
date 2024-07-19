@@ -75,7 +75,7 @@ R: Aspose.Words para .NET es una potente biblioteca para el procesamiento de tex
 
 #### P: ¿Cómo cargo un documento de Word usando Aspose.Words para .NET?
 
-R: Para cargar un documento de Word usando Aspose.Words para .NET, puede usar el`Document` clase y su constructor. Debe proporcionar la ruta del archivo o la secuencia del documento como parámetro. He aquí un ejemplo:
+ R: Para cargar un documento de Word usando Aspose.Words para .NET, puede usar el`Document` clase y su constructor. Debe proporcionar la ruta del archivo o la secuencia del documento como parámetro. He aquí un ejemplo:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
@@ -109,7 +109,7 @@ En este ejemplo, el documento modificado se guarda como "WorkingWithRangesDelete
 
 R: Sí, la funcionalidad "Eliminar texto en rangos en documentos de Word" en Aspose.Words para .NET elimina permanentemente el texto de los rangos especificados en el documento. El contenido del texto se elimina y el documento se actualiza en consecuencia.
 
-#### P: ¿Existe alguna limitación o consideración al utilizar la funcionalidad "Rangos para eliminar texto en un documento de Word" en Aspose.Words para .NET?
+#### P: ¿Existe alguna limitación o consideración al utilizar la funcionalidad "Eliminar texto en rangos en un documento de Word" en Aspose.Words para .NET?
 
 R: Cuando utilice la función "Eliminar texto en rangos en un documento de Word", es importante asegurarse de que está apuntando a los rangos correctos para la eliminación. Se debe tener cuidado para evitar eliminar accidentalmente contenido no deseado. Además, considere el impacto en el formato y la estructura del documento después de la eliminación, ya que otros elementos pueden cambiar o ajustarse en consecuencia.
 

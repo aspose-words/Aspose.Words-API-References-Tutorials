@@ -42,7 +42,7 @@ Az első lépés a Word dokumentum betöltése a programba. Ez olyan, mint a dok
 Document doc = new Document("C:\\path\\to\\your\\Paragraphs.docx");
 ```
 
- Ügyeljen arra, hogy cserélje ki`"C:\\path\\to\\your\\Paragraphs.docx"` a Word-dokumentum tényleges elérési útjával.
+ Mindenképpen cserélje ki`"C:\\path\\to\\your\\Paragraphs.docx"` a Word-dokumentum tényleges elérési útjával.
 
 ## 2. lépés: Inicializálja a DocumentBuilder programot
 

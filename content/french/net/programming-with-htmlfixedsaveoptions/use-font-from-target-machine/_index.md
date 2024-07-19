@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Charger le document Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Configurez les options de sauvegarde avec la fonctionnalité « Utiliser les polices de la machine cible »
+// Configurez les options de sauvegarde avec la fonctionnalité « Utiliser les polices de la machine cible »
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Convertir le document en HTML fixe

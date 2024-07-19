@@ -20,7 +20,7 @@ Aspose.Words for Java は、Java 開発者がドキュメント処理のさま�
 
 ### 前提条件
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 - Aspose.Words for Java ライブラリがダウンロードされ、プロジェクトに追加されました。
 
 ## ドキュメントリストの作成

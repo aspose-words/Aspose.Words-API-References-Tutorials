@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /es/net/programming-with-loadoptions/use-temp-folder/
 ---
-Cuando se procesa Word con documentos de Word en una aplicación C#, puede ser necesario usar una carpeta temporal para almacenar archivos temporales generados durante el procesamiento de documentos. Con la biblioteca Aspose.Words para .NET, puede especificar fácilmente una carpeta temporal utilizando las opciones de carga LoadOptions. En esta guía paso a paso, le mostraremos cómo usar Aspose.Words para el código fuente .NET C# para cargar un documento usando una carpeta temporal especificada usando las opciones de carga LoadOptions.
+Cuando se procesa Word con documentos de Word en una aplicación C#, puede ser necesario usar una carpeta temporal para almacenar archivos temporales generados durante el procesamiento de documentos. Con la biblioteca Aspose.Words para .NET, puede especificar fácilmente una carpeta temporal usando las opciones de carga LoadOptions. En esta guía paso a paso, le mostraremos cómo usar Aspose.Words para el código fuente .NET C# para cargar un documento usando una carpeta temporal especificada usando las opciones de carga LoadOptions.
 
 ## Comprender la biblioteca Aspose.Words
 

@@ -88,7 +88,7 @@ A. Um ein neues Dokument und einen Dokumentgenerator zu erstellen, können Sie d
 ```csharp
 Document doc = new Document();
 ```
- Verwenden Sie die`DocumentBuilder`Klasse zum Erstellen eines Dokument-Generators, der mit dem zuvor erstellten Dokument verknüpft ist:
+ Verwenden Sie die`DocumentBuilder` Klasse zum Erstellen eines Dokument-Generators, der mit dem zuvor erstellten Dokument verknüpft ist:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,8 +118,8 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### F: Wie bettet ich den Code zum Einfügen eines OLE-Objekts als Symbol aus einem Stream in mein Projekt ein?
 
 A. Um den Code zum Einfügen eines OLE-Objekts als Symbol aus einem Stream in Ihr Projekt einzubetten, führen Sie die folgenden Schritte aus:
--  Importieren Sie die notwendigen Referenzen durch Hinzufügen der entsprechenden`using` Aussagen.
--  Erstellen Sie ein neues Dokument und einen Dokumentgenerator mit dem`Document` Und`DocumentBuilder` Klassen.
+- Importieren Sie die notwendigen Referenzen durch Hinzufügen der entsprechenden`using` Aussagen.
+-  Erstellen Sie ein neues Dokument und einen Dokumentgenerator mit dem`Document`Und`DocumentBuilder` Klassen.
 - Verwenden Sie den Code zum Einfügen des OLE-Objekts als Symbol aus einem Stream.
 -  Speichern Sie das Dokument mit dem`Save` Methode mit dem entsprechenden Zielpfad.
 

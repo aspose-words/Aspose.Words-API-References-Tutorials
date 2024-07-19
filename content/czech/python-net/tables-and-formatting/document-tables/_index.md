@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Přidání záhlaví a zápatí do tabulek:
 
- Tabulky mohou těžit z toho, že mají záhlaví a zápatí, které poskytují kontext nebo další informace. Záhlaví a zápatí můžete do tabulek přidat pomocí`Table.title` a`Table.description` vlastnosti.
+ Tabulky mohou těžit z toho, že mají záhlaví a zápatí, které poskytují kontext nebo další informace. Záhlaví a zápatí můžete do tabulek přidat pomocí`Table.title`a`Table.description` vlastnosti.
 
 ```python
 # Set table title (header)

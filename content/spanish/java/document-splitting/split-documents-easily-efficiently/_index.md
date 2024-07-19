@@ -26,7 +26,7 @@ Antes de profundizar en la división de documentos, cubramos brevemente cómo co
 
 ## 3. Comprender la división de documentos
 
-La división de documentos se refiere al proceso de dividir un único documento grande en subdocumentos más pequeños según criterios específicos. Aspose.Words para Java ofrece varias formas de dividir documentos, como por páginas, párrafos, encabezados y secciones. Los desarrolladores pueden elegir el método más adecuado según sus requisitos.
+La división de documentos se refiere al proceso de dividir un único documento grande en subdocumentos más pequeños según criterios específicos. Aspose.Words para Java ofrece varias formas de dividir documentos, como por páginas, párrafos, encabezados y secciones. Los desarrolladores pueden elegir el método más adecuado según sus necesidades.
 
 ## 4. Dividir documentos por página
 
@@ -122,7 +122,7 @@ Puede implementar su lógica personalizada para dividir documentos según criter
 
 ## 9. Combinando documentos divididos
 
-Aspose.Words para Java también proporciona funcionalidad para combinar los documentos divididos en un solo documento. Esta función es útil cuando necesita fusionar secciones individuales en un documento unificado.
+Aspose.Words para Java también proporciona la funcionalidad para combinar los documentos divididos en un solo documento. Esta función es útil cuando necesita fusionar secciones individuales en un documento unificado.
 
 ## 10. Consideraciones de desempeño
 

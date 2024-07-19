@@ -2,52 +2,67 @@
 title: テーブル
 linktitle: テーブル
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してテーブルを作成する方法をステップバイステップ ガイドで学習します。
+description: このステップバイステップ ガイドでは、Aspose.Words for .NET でテーブルを作成し、カスタマイズする方法を学習します。構造化された視覚的に魅力的なドキュメントを生成するのに最適です。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/table/
 ---
+## 導入
 
+ドキュメント内の表の操作は一般的な要件です。レポート、請求書、その他の構造化データを生成する場合、表は不可欠です。このチュートリアルでは、Aspose.Words for .NET を使用して表を作成およびカスタマイズする手順を説明します。さっそく始めましょう。
 
-この例では、Aspose.Words for .NET を使用してテーブルを作成する方法について説明します。テーブルは、情報を行と列に整理するデータ構造です。
+## 前提条件
 
-## ステップ1: ドキュメントジェネレーターの使用
+始める前に、次の前提条件を満たしていることを確認してください。
 
-まず、ドキュメント ジェネレーターを使用してドキュメントにコンテンツを追加します。
+- Visual Studio: コードを記述してテストするには開発環境が必要です。Visual Studio は良い選択です。
+-  Aspose.Words for .NET: Aspose.Wordsライブラリがインストールされていることを確認してください。インストールされていない場合はダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- C# の基本的な理解: この手順を実行するには、C# プログラミングに関するある程度の知識が必要です。
+
+## 名前空間のインポート
+
+手順に入る前に、必要な名前空間をインポートしましょう。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## ステップ 1: Document と DocumentBuilder を初期化する
+
+まず最初に、新しいドキュメントを作成し、テーブルの構築に役立つ DocumentBuilder クラスを初期化する必要があります。
+
+```csharp
+// DocumentBuilder を初期化します。
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
+このステップは、ワークスペースを設定するようなものです。空白のドキュメントとペンを用意します。
 
-## ステップ2: セルとデータを追加する
+## ステップ2: テーブルの作成を開始する
 
-テーブルにセルとデータを追加するには、`InsertCell`方法と`Writeln`ドキュメントジェネレーターのメソッド。
-
-```csharp
-builder. InsertCell();
-builder.Writeln("a");
-builder. InsertCell();
-builder.Writeln("b");
-
-builder. InsertCell();
-builder.Writeln("c");
-builder. InsertCell();
-builder.Writeln("d");
-```
-
-### Aspose.Words for .NET でテーブルを作成するためのサンプル ソース コード
+ツールが揃ったので、テーブルの作成を始めましょう。まず、最初の行の最初のセルを挿入します。
 
 ```csharp
-//ドキュメント ビルダーを使用してドキュメントにコンテンツを追加します。
-DocumentBuilder builder = new DocumentBuilder();
-
 //最初の行を追加します。
 builder.InsertCell();
 builder.Writeln("a");
+
+// 2番目のセルを挿入します。
 builder.InsertCell();
 builder.Writeln("b");
 
+//最初の行を終了します。
+builder.EndRow();
+```
+
+この手順は、表の最初の行を紙に描き、最初の 2 つのセルに「a」と「b」を入力するようなものと考えてください。
+
+## ステップ3: 行を追加する
+
+テーブルにもう 1 行追加してみましょう。
+
+```csharp
 // 2行目を追加します。
 builder.InsertCell();
 builder.Writeln("c");
@@ -55,26 +70,25 @@ builder.InsertCell();
 builder.Writeln("d");
 ```
 
-おめでとうございます！これで、Aspose.Words for .NET を使用してテーブルを作成する方法を学習しました。
+ここでは、単に「c」と「d」が入力された 2 つのセルを含む別の行を追加して、テーブルを拡張しています。
 
-### よくある質問
+## 結論
 
-#### Q: Markdown でテーブルを作成するにはどうすればよいですか?
+Aspose.Words for .NET でテーブルを作成およびカスタマイズするのは、一度コツをつかめば簡単です。次の手順に従うことで、構造化された視覚的に魅力的なテーブルをドキュメントに生成できます。コーディングを楽しんでください!
 
-A: Markdownで表を作成するには、パイプ構文（`|`でセルを区切り、ダッシュ (`-`) を使用してテーブル ヘッダーを区切ります。
+## よくある質問
 
-#### Q: Markdown で表の外観をカスタマイズできますか?
+### 2 つ以上のセルを連続して追加できますか?
+はい、繰り返して必要な数のセルを連続して追加できます。`InsertCell()`そして`Writeln()`方法。
 
-A: 標準の Markdown では、表のカスタマイズ オプションは制限されています。ただし、一部の Markdown エディターでは、表に CSS スタイルを追加して外観をカスタマイズできます。
+### 表内のセルを結合するにはどうすればいいですか?
+セルを結合するには、`CellFormat.HorizontalMerge`そして`CellFormat.VerticalMerge`プロパティ。
 
-#### Q: Markdown で表内のセルを結合するにはどうすればよいですか?
+### 表のセルに画像を追加することは可能ですか?
+もちろんです！セルに画像を挿入するには、`DocumentBuilder.InsertImage`方法。
 
-A: Markdown で表内のセルを結合する方法は、使用する Markdown エディターによって異なります。一部の Markdown エディターでは、特定の構文を使用したセルの結合がサポートされています。
+### 個々のセルに異なるスタイルを設定できますか?
+はい、個々のセルに異なるスタイルを適用することができます。`Cells`行のコレクション。
 
-#### Q: Markdown のテーブルは CSS スタイルをサポートしていますか?
-
-A: 標準の Markdown では、テーブルは CSS スタイルを直接サポートしていません。ただし、一部の Markdown エディターでは、テーブルに CSS スタイルを追加して外観をカスタマイズできます。
-
-#### Q: Markdown の表のセル内にリンクやテキストをインライン形式で追加できますか?
-
-A: はい、適切な Markdown 構文を使用して、Markdown のテーブル セルにリンクまたはインライン テキストを追加できます。
+### 表から境界線を削除するにはどうすればよいですか?
+境界線スタイルを次のように設定することで境界線を削除できます。`LineStyle.None`各境界線の種類ごとに。

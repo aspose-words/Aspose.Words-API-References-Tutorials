@@ -105,7 +105,7 @@ End Sub
 
 ## 安全注意事项
 
-自动化 Word 文档需要注意安全性。Aspose.Words for Python 提供保护文档和宏的功能，确保您的自动化流程高效且安全。
+自动化 Word 文档需要注意安全性。Aspose.Words for Python 提供保护文档和宏的功能，确保您的自动化流程既高效又安全。
 
 ## 结论
 

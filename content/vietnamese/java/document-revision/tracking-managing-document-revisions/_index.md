@@ -10,7 +10,7 @@ url: /vi/java/document-revision/tracking-managing-document-revisions/
 
 ## Giới thiệu
 
-Trong thế giới kỹ thuật số ngày nay, việc quản lý tài liệu hiệu quả là rất quan trọng đối với các doanh nghiệp cũng như cá nhân. Việc đảm bảo rằng tài liệu của bạn được theo dõi và quản lý đúng cách có thể tiết kiệm thời gian, giảm sai sót và nâng cao khả năng cộng tác. Trong hướng dẫn toàn diện này, chúng ta sẽ khám phá cách theo dõi và quản lý các bản sửa đổi tài liệu bằng Aspose.Words cho Java. API Java mạnh mẽ này cung cấp nhiều tính năng giúp việc quản lý sửa đổi tài liệu trở nên dễ dàng. Cho dù bạn là nhà phát triển dày dạn hay mới bắt đầu, hướng dẫn từng bước này với các ví dụ về mã nguồn sẽ giúp bạn nắm vững nghệ thuật quản lý và theo dõi sửa đổi tài liệu.
+Trong thế giới kỹ thuật số ngày nay, việc quản lý tài liệu hiệu quả là rất quan trọng đối với các doanh nghiệp cũng như cá nhân. Việc đảm bảo rằng tài liệu của bạn được theo dõi và quản lý đúng cách có thể tiết kiệm thời gian, giảm sai sót và nâng cao khả năng cộng tác. Trong hướng dẫn toàn diện này, chúng ta sẽ khám phá cách theo dõi và quản lý các bản sửa đổi tài liệu bằng Aspose.Words cho Java. API Java mạnh mẽ này cung cấp nhiều tính năng giúp việc quản lý sửa đổi tài liệu trở nên dễ dàng. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này với các ví dụ về mã nguồn sẽ giúp bạn nắm vững nghệ thuật quản lý và theo dõi sửa đổi tài liệu.
 
 ## Bắt đầu với Aspose.Words cho Java
 
@@ -103,7 +103,7 @@ Trong ví dụ này, chúng tôi lưu một bản sao của tài liệu với ph
 
 ### Tôi có thể chấp nhận hoặc từ chối các bản sửa đổi theo chương trình không?
 
- Có, bạn có thể chấp nhận hoặc từ chối các bản sửa đổi bằng Aspose.Words for Java. Sử dụng`acceptAllRevisions` Và`rejectAllRevisions` phương pháp quản lý sửa đổi.
+ Có, bạn có thể chấp nhận hoặc từ chối các bản sửa đổi bằng Aspose.Words for Java. Sử dụng`acceptAllRevisions`Và`rejectAllRevisions` phương pháp quản lý sửa đổi.
 
 ### Có thể tạo nhiều phiên bản của một tài liệu không?
 

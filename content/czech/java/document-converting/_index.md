@@ -31,4 +31,4 @@ Naučte se, jak převést HTML na dokumenty Word v Javě pomocí Aspose.Words. P
 ### [Konverze dokumentů pomocí SaveOptions](./document-conversion-saveoptions/)
 Naučte se konverzi dokumentů pomocí Aspose.Words v Javě. Podrobný průvodce, příklady kódu a často kladené otázky pro bezproblémový převod Wordu do PDF.
 ### [Převod dokumentů na obrázky](./converting-documents-images/)
-Naučte se převádět dokumenty na obrázky pomocí Aspose.Words for Java. Podrobný průvodce pro vývojáře v Javě.
+Naučte se převádět dokumenty na obrázky pomocí Aspose.Words for Java. Podrobný průvodce pro vývojáře Java.

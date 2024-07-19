@@ -21,7 +21,7 @@ För att använda Aspose.Words i ditt projekt måste du lägga till nödvändiga
 Innan du kan konvertera fält måste du ladda dokumentet som innehåller fälten som ska konverteras. Var noga med att ange rätt sökväg till katalogen som innehåller dokumentet. Så här laddar du upp dokumentet:
 
 ```csharp
-// Sökväg till dokumentkatalogen.
+//Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Ladda dokumentet.
@@ -56,7 +56,7 @@ Var noga med att ange rätt sökväg och filnamn för säkerhetskopian.
 ### Källkodsexempel för Convert Fields In Paragraph med Aspose.Words för .NET
 
 ```csharp
-// Sökväg till dokumentkatalogen.
+//Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Ladda dokumentet.

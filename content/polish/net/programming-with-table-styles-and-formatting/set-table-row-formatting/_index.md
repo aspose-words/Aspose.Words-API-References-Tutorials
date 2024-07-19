@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## Krok 7: Zakończ tabelę i zapisz dokument
 W
 
- koniec, kończymy tworzenie tabeli za pomocą`EndRow()` I`EndTable()` metodę, następnie zapisujemy zmodyfikowany dokument do pliku.
+ koniec, kończymy tworzenie tabeli za pomocą`EndRow()`I`EndTable()` metodę, następnie zapisujemy zmodyfikowany dokument do pliku.
 
 ```csharp
 builder. EndRow();

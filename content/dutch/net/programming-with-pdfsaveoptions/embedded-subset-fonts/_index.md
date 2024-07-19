@@ -64,7 +64,7 @@ Dat is alles ! U hebt met succes subsets van lettertypen in een document ingeslo
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u subsets van lettertypen in een PDF-document kunt insluiten met behulp van Aspose.Words voor .NET. Door subsets van lettertypen in te sluiten, kunt u de grootte van het PDF-bestand verkleinen terwijl het uiterlijk van het document behouden blijft, doordat alleen de daadwerkelijk gebruikte tekens worden gebruikt. Dit zorgt voor betere compatibiliteit en prestaties bij het bekijken en afdrukken van de PDF. Voel je vrij om de functies van Aspose.Words voor .NET verder te verkennen om het genereren van je PDF-documenten met ingebedde lettertypesubsets te optimaliseren.
+In deze zelfstudie hebben we geleerd hoe u subsets van lettertypen in een PDF-document kunt insluiten met behulp van Aspose.Words voor .NET. Door subsets van lettertypen in te sluiten, kunt u de grootte van het PDF-bestand verkleinen, terwijl het uiterlijk van het document behouden blijft, doordat alleen de daadwerkelijk gebruikte tekens worden gebruikt. Dit zorgt voor betere compatibiliteit en prestaties bij het bekijken en afdrukken van de PDF. Voel je vrij om de functies van Aspose.Words voor .NET verder te verkennen om het genereren van je PDF-documenten met ingebedde lettertypesubsets te optimaliseren.
 
 ### Veel Gestelde Vragen
 

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Βήμα 2: Φορτώστε το έγγραφο και δημιουργήστε τμήμα XML
- Φορτώστε το έγγραφο του Word χρησιμοποιώντας το`Document` κατασκευαστή, περνώντας τη διαδρομή προς το έγγραφο ως παράμετρο. Δημιουργήστε ένα τμήμα XML που περιέχει τα δεδομένα που θέλετε να εμφανίσετε στην ετικέτα δομημένου εγγράφου.
+ Φορτώστε το έγγραφο του Word χρησιμοποιώντας το`Document`κατασκευαστή, περνώντας τη διαδρομή προς το έγγραφο ως παράμετρο. Δημιουργήστε ένα τμήμα XML που περιέχει τα δεδομένα που θέλετε να εμφανίσετε στην ετικέτα δομημένου εγγράφου.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Δημιουργήστε μια StructuredDocumentTag που θα εμφανίζει τα περιεχόμενα του CustomXmlPart στο έγγραφο.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Εάν ορίσουμε μια αντιστοίχιση για το StructuredDocumentTag,
-	// θα εμφανίσει μόνο ένα μέρος του CustomXmlPart στο οποίο οδηγεί το XPath.
+	//θα εμφανίσει μόνο ένα μέρος του CustomXmlPart στο οποίο οδηγεί το XPath.
 	// Αυτό το XPath θα δείχνει στο περιεχόμενο του δεύτερου στοιχείου "<text>" του πρώτου στοιχείου "<root>" του CustomXmlPart μας.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

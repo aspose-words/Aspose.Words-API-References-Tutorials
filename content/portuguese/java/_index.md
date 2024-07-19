@@ -17,7 +17,7 @@ Quer você seja um desenvolvedor iniciante ou experiente, os tutoriais Aspose.Wo
 Aqui estão alguns dos benefícios de usar os tutoriais de processamento de documentos Java Aspose.Words:
 
 ### Cobertura abrangente dos recursos do Aspose.Words: 
-Os tutoriais cobrem uma ampla gama de recursos do Aspose.Words, desde o processamento básico de tabelas até a fusão avançada de documentos e marcas d'água. Isso permite que você aprenda como usar o Aspose.Words para automatizar todas as suas tarefas de processamento de documentos.
+Os tutoriais cobrem uma ampla gama de recursos do Aspose.Words, desde o processamento básico de tabelas até a fusão avançada de documentos e marcas d’água. Isso permite que você aprenda como usar o Aspose.Words para automatizar todas as suas tarefas de processamento de documentos.
 ### Concentre-se na implementação prática: 
 Os tutoriais se concentram na implementação prática, para que você possa aprender como usar o Aspose.Words para resolver problemas reais de processamento de documentos. Isso ajuda você a se atualizar rapidamente e começar a usar o Aspose.Words para automatizar suas tarefas de processamento de documentos.
 ### Base sólida para soluções de processamento de documentos robustas e escaláveis:

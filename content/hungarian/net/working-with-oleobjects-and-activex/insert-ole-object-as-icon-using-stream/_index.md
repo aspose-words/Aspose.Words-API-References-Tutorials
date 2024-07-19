@@ -62,7 +62,7 @@ Ez egy teljes kódminta egy OLE objektum ikonként történő beszúrásához az
 
 ## Következtetés
 
-fenti, lépésenkénti útmutató elmagyarázza, hogyan lehet OLE-objektumot ikonként beszúrni egy Word-dokumentumba az Aspose.Words for .NET-hez tartozó folyamat segítségével. A leírt lépéseket követve integrálhatja ezt a funkciót a projektjébe. Mindenképpen importálja a szükséges hivatkozásokat, hozzon létre egy új dokumentumot és dokumentumgenerátort, illessze be az OLE objektumot ikonként a folyamból, majd mentse el a dokumentumot. Használja kiindulópontként a megadott mintakódot, és szabja testre igényeinek megfelelően.
+A fenti, lépésenkénti útmutató elmagyarázza, hogyan lehet OLE-objektumot ikonként beszúrni egy Word-dokumentumba az Aspose.Words for .NET-hez tartozó folyamat segítségével. A leírt lépéseket követve integrálhatja ezt a funkciót a projektjébe. Mindenképpen importálja a szükséges hivatkozásokat, hozzon létre egy új dokumentumot és dokumentumgenerátort, illessze be az OLE objektumot ikonként a folyamból, majd mentse el a dokumentumot. Használja kiindulópontként a megadott mintakódot, és szabja testre igényeinek megfelelően.
 
 ### GYIK
 
@@ -88,7 +88,7 @@ A. Új dokumentum és dokumentumgenerátor létrehozásához kövesse az alábbi
 ```csharp
 Document doc = new Document();
 ```
- Használja a`DocumentBuilder`osztály a korábban létrehozott dokumentumhoz társított dokumentumkészítő létrehozásához:
+ Használja a`DocumentBuilder` osztály a korábban létrehozott dokumentumhoz társított dokumentumkészítő létrehozásához:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,8 +118,8 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### K. Hogyan ágyazhatom be a kódot egy OLE objektumnak egy adatfolyamból ikonként való beillesztéséhez a projektembe?
 
 A. Ha be szeretné ágyazni a kódot egy OLE objektumnak egy adatfolyamból ikonként való beillesztéséhez a projektbe, kövesse az alábbi lépéseket:
--  Importálja a szükséges referenciákat a megfelelő hozzáadásával`using` nyilatkozatok.
--  Hozzon létre egy új dokumentumot és egy dokumentumkészítőt a`Document` és`DocumentBuilder` osztályok.
+- Importálja a szükséges referenciákat a megfelelő hozzáadásával`using` nyilatkozatok.
+-  Hozzon létre egy új dokumentumot és egy dokumentumkészítőt a`Document`és`DocumentBuilder` osztályok.
 - Használja a kódot az OLE objektum adatfolyamból való ikonként történő beszúrásához.
 -  Mentse el a dokumentumot a`Save` módszert a megfelelő célútvonallal.
 

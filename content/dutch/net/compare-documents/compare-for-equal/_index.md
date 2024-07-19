@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Stap 2: Laad uw documenten
 
- Vervolgens moet u de Word-documenten laden die u wilt vergelijken. Voor dit voorbeeld gaan we ervan uit dat u twee documenten met de naam heeft`Document.docx` En`Document2.docx` bevindt zich in uw documentenmap.
+ Vervolgens moet u de Word-documenten laden die u wilt vergelijken. Voor dit voorbeeld gaan we ervan uit dat u twee documenten met de naam heeft`Document.docx`En`Document2.docx` bevindt zich in uw documentenmap.
 
 ```csharp
 // Het pad naar de documentenmap.

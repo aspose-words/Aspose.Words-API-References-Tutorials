@@ -17,7 +17,7 @@ Om deze tutorial te volgen, heb je het volgende nodig:
 - Basiskennis van C# en woordenverwerking met Word-documenten.
 
 ## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+ Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Stap 3: Voeg items toe aan de keuzelijst met invoervak
- Voeg items toe aan de keuzelijst met invoervak met behulp van de`ListItems` eigendom van de`StructuredDocumentTag` Elk item wordt vertegenwoordigd door een`SdtListItem` object, waaraan een weergavetekst en een waarde moeten doorgegeven worden. In dit voorbeeld voegen we drie items toe aan de keuzelijst met invoervak.
+ Voeg items toe aan de keuzelijst met invoervak met behulp van de`ListItems` eigendom van de`StructuredDocumentTag` . Elk item wordt vertegenwoordigd door een`SdtListItem` object, waaraan een weergavetekst en een waarde moeten doorgegeven worden. In dit voorbeeld voegen we drie items toe aan de keuzelijst met invoervak.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

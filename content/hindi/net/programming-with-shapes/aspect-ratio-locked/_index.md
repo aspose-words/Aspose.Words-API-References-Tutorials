@@ -17,14 +17,14 @@ url: /hi/net/programming-with-shapes/aspect-ratio-locked/
 - C# और वर्ड दस्तावेजों के साथ वर्ड प्रोसेसिंग का बुनियादी ज्ञान।
 
 ## चरण 1: दस्तावेज़ निर्देशिका सेट करें
- अपने दस्तावेज़ निर्देशिका का पथ सेट करके प्रारंभ करें।`"YOUR DOCUMENT DIRECTORY"` उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
+ अपने दस्तावेज़ निर्देशिका का पथ सेट करके प्रारंभ करें।`"YOUR DOCUMENT DIRECTORY"`उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## चरण 2: नया दस्तावेज़ और दस्तावेज़बिल्डर बनाएँ
- एक नया उदाहरण बनाएँ`Document` कक्षा और एक`DocumentBuilder`दस्तावेज़ के साथ काम करने पर आपत्ति।
+ एक नया उदाहरण बनाएँ`Document` कक्षा और एक`DocumentBuilder` दस्तावेज़ के साथ काम करने पर आपत्ति।
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## चरण 3: एक छवि आकार डालें
- उपयोग`InsertImage` की विधि`DocumentBuilder` दस्तावेज़ में छवि आकार सम्मिलित करने के लिए ऑब्जेक्ट। पैरामीटर के रूप में छवि फ़ाइल का पथ प्रदान करें।
+ उपयोग`InsertImage` की विधि`DocumentBuilder`दस्तावेज़ में छवि आकार सम्मिलित करने के लिए ऑब्जेक्ट। पैरामीटर के रूप में छवि फ़ाइल का पथ प्रदान करें।
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  ठीक`AspectRatioLocked` आकृति का गुणधर्म`true` या`false` क्रमशः पहलू अनुपात को लॉक या अनलॉक करने के लिए।
 
 ```csharp
-shape.AspectRatioLocked = false; //पहलू अनुपात अनलॉक करें
+shape.AspectRatioLocked = false; // पहलू अनुपात अनलॉक करें
 ```
 
 ## चरण 5: दस्तावेज़ सहेजें
@@ -65,4 +65,4 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 	doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 ```
 
-बस! आपने Aspose.Words for .NET का उपयोग करके अपने Word दस्तावेज़ में किसी आकृति के पहलू अनुपात को सफलतापूर्वक लॉक या अनलॉक कर लिया है।
+बस! आपने Aspose.Words for .NET का उपयोग करके अपने Word दस्तावेज़ में किसी आकृति के पहलू अनुपात को सफलतापूर्वक लॉक या अनलॉक कर दिया है।

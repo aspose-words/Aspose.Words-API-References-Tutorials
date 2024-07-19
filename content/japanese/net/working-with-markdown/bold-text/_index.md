@@ -28,7 +28,7 @@ builder.Font.Bold = true;
 
 ## ステップ3: ドキュメントにコンテンツを追加する
 
-これで、ドキュメントビルダーメソッドを使用してドキュメントにコンテンツを追加できるようになりました。`Writeln`、テキスト行を追加します。
+ドキュメントビルダーメソッドを使用して、ドキュメントにコンテンツを追加できるようになりました。`Writeln`、テキスト行を追加します。
 
 ```csharp
 builder.Writeln("This text will be bold");
@@ -61,4 +61,4 @@ builder.Writeln("This text will be Bold");
 
 #### Q: Aspose.Words の表またはセル内のテキストを太字にできますか?
 
- A: はい、Aspose.Wordsではテーブルやセル内のテキストを太字にすることができます。適切な方法で目的のセルまたは段落に移動し、`Font.Bold`の財産`Run`または`Paragraph`物体。
+ A: はい、Aspose.Wordsでは表やセル内のテキストを太字にすることができます。適切な方法で目的のセルまたは段落に移動し、`Font.Bold`の財産`Run`または`Paragraph`物体。

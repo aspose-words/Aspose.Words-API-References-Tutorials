@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Mengganti`"original_document.docx"` Dan`"modified_document.docx"` dengan jalur ke dokumen Anda sendiri.
+ Mengganti`"original_document.docx"`Dan`"modified_document.docx"` dengan jalur ke dokumen Anda sendiri.
 
 ## Langkah 2: Bandingkan Dokumen
 

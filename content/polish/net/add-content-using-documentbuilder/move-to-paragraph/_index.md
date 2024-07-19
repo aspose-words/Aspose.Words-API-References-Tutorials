@@ -13,7 +13,7 @@ Cześć, entuzjasta technologii! Czy zdarzyło Ci się kiedyś, że musiałeś p
 
 ## Warunki wstępne
 
-Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby rozpocząć:
+Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
 
 1.  Aspose.Words dla .NET: Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
 2. Visual Studio: wystarczy dowolna najnowsza wersja.
@@ -88,7 +88,7 @@ Jeśli indeks jest poza zakresem, metoda zgłosi wyjątek. Zawsze upewnij się, 
  Absolutnie! Za pomocą przycisku możesz wstawiać tekst, obrazy, tabele i inne elementy`DocumentBuilder` klasa.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
- Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację?
  Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).

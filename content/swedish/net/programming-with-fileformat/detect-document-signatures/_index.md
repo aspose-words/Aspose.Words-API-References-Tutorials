@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Upptäck digitala signaturer
 
- Därefter använder vi`DetectFileFormat` metod för`FileFormatUtil` klass för att upptäcka filformatinformationen. I det här exemplet antar vi att dokumentet heter "Digitalt signerad.docx" och finns i den angivna dokumentkatalogen.
+ Därefter använder vi`DetectFileFormat` metod för`FileFormatUtil`klass för att upptäcka filformatinformationen. I det här exemplet antar vi att dokumentet heter "Digitalt signerad.docx" och finns i den angivna dokumentkatalogen.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ Denna handledning har gett dig en steg-för-steg-guide om hur du upptäcker digi
 
 #### Hur upptäcker man närvaron av en digital signatur på ett Word-dokument med Aspose.Words för .NET?
 
- För att upptäcka närvaron av en digital signatur på ett Word-dokument med Aspose.Words för .NET kan du följa stegen i handledningen. Använda`DetectFileFormat` metod för`FileFormatUtil` klass låter dig upptäcka filformatinformation. Då kan du kontrollera`HasDigitalSignature` egendom av`FileFormatInfo`objekt för att avgöra om dokumentet innehåller en digital signatur. Om en digital signatur upptäcks kan du visa ett meddelande som säger att signaturer kommer att gå förlorade om dokumentet öppnas/sparas med Aspose.Words.
+ För att upptäcka närvaron av en digital signatur på ett Word-dokument med Aspose.Words för .NET kan du följa stegen i handledningen. Använda`DetectFileFormat` metod för`FileFormatUtil` klass låter dig upptäcka filformatinformation. Då kan du kontrollera`HasDigitalSignature` egendom av`FileFormatInfo` objekt för att avgöra om dokumentet innehåller en digital signatur. Om en digital signatur upptäcks kan du visa ett meddelande som säger att signaturer kommer att gå förlorade om dokumentet öppnas/sparas med Aspose.Words.
 
 #### Hur anger man katalogen som innehåller dokumenten där man ska söka efter den digitala signaturen?
 

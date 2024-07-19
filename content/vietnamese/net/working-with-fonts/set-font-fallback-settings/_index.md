@@ -35,7 +35,7 @@ using System;
 Đầu tiên, xác định thư mục nơi tài liệu của bạn được lưu trữ. Điều này rất cần thiết cho việc định vị và xử lý tài liệu của bạn.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu
+// Đường dẫn tới thư mục tài liệu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 

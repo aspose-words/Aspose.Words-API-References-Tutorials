@@ -32,8 +32,8 @@ Aspose.Words for .NET の表を使用した Words 処理に関するチュート
 | [水平結合](./horizontal-merge/) | Aspose.Words for .NET を使用して Word 表内のセルを水平に結合する方法を学習します。 |
 | [水平結合セルに変換](./convert-to-horizontally-merged-cells/) | Aspose.Words for .NET を使用して、Word 文書内の表のセルを水平に結合されたセルに変換する方法を学習します。 |
 | [後続のページで行を繰り返す](./repeat-rows-on-subsequent-pages/) | Aspose.Words for .NET を使用して、Word 文書内の後続のページで表の行を繰り返す方法を学習します。 |
-| [ページ幅に自動調整](./auto-fit-to-page-width/) | Aspose.Words for .NET を使用して、Word 文書内の表をページ幅に自動的に合わせる方法を学習します。 |
-| [推奨幅設定](./preferred-width-settings/) | Aspose.Words for .NET を使用して Word 文書で推奨される表のセル幅を設定する方法を学習します。 |
+| [ウィンドウに自動フィット](./auto-fit-to-page-width/) | このステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word 文書のウィンドウにテーブルを簡単に自動調整できます。よりクリーンでプロフェッショナルな文書に最適です。 |
+| [推奨幅設定](./preferred-width-settings/) | このステップバイステップ ガイドでは、Aspose.Words for .NET で絶対幅、相対幅、自動幅の設定を使用してテーブルを作成する方法を学習します。 |
 | [優先幅タイプを取得](./retrieve-preferred-width-type/) | Aspose.Words for .NET を使用して、Word テーブル内のセルの種類と推奨幅の値を取得する方法を学習します。 |
 | [テーブルの位置を取得](./get-table-position/) | Aspose.Words for .NET を使用して Word 文書内の表の位置を取得する方法を学習します。 |
 | [フローティングテーブルの位置を取得する](./get-floating-table-position/) | Aspose.Words for .NET を使用して Word 文書内のフローティング テーブルの位置を取得する方法を学習します。 |

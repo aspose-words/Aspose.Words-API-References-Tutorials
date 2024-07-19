@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Aqui usamos o construtor de documentos para construir uma tabela com duas linhas de cabeçalho e várias linhas de dados. O`RowFormat.HeadingFormat`parâmetros são usados para marcar linhas de cabeçalho que devem ser repetidas nas páginas subsequentes.
+ Aqui usamos o construtor de documentos para construir uma tabela com duas linhas de cabeçalho e várias linhas de dados. O`RowFormat.HeadingFormat` parâmetros são usados para marcar linhas de cabeçalho que devem ser repetidas nas páginas subsequentes.
 
 ## Passo 4: Salvando o documento modificado
 Finalmente EUA

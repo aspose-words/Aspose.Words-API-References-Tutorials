@@ -2,91 +2,101 @@
 title: Tisztítsa meg a nem használt stílusokat és listákat
 linktitle: Tisztítsa meg a nem használt stílusokat és listákat
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre a nem használt stílusok és listák eltávolításához egy dokumentumban az Aspose.Words for .NET segítségével.
+description: Tisztítsa meg Word-dokumentumait az Aspose.Words for .NET segítségével a nem használt stílusok és listák eltávolításával. Kövesse ezt a lépésenkénti útmutatót a dokumentumok egyszerűsítéséhez.
 type: docs
 weight: 10
 url: /hu/net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban végigvezetjük a C# forráskódon, amellyel az Aspose.Words for .NET segítségével megtisztíthatja a nem használt stílusokat és listákat. Ez a funkció lehetővé teszi a dokumentumban nem használt stílusok és listák eltávolítását.
+Halihó! Érezte már valaha, hogy Word-dokumentumai egy kicsit zsúfoltak? Tudja, azok a használaton kívüli stílusok és listák, amelyek csak ott vannak, helyet foglalnak, és a kelleténél bonyolultabbnak tűnnek a dokumentumai? Nos, szerencséd van! Ma egy ügyes kis trükkben merülünk el az Aspose.Words for .NET használatával a nem használt stílusok és listák megtisztítására. Ez olyan, mintha egy kellemes, frissítő fürdőt adna a dokumentumának. Szóval, fogd a kávét, dőlj hátra, és kezdjük!
 
-## 1. lépés: A projekt beállítása
+## Előfeltételek
 
-A kezdéshez hozzon létre egy új C#-projektet kedvenc IDE-jében. Győződjön meg arról, hogy az Aspose.Words for .NET könyvtárra hivatkozik a projektben.
+Mielőtt belemerülnénk a finom részletekbe, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van. Íme egy gyors ellenőrző lista:
 
-## 2. lépés: A dokumentum betöltése
+- C# alapismeretek: Kényelmesnek kell lennie a C# programozásban.
+-  Aspose.Words for .NET: Győződjön meg arról, hogy ez a könyvtár telepítve van. Ha nem, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: Bármely C#-kompatibilis IDE, például a Visual Studio.
+- Mintadokumentum: Word-dokumentum néhány fel nem használt stílussal és listával.
 
-Ebben a lépésben betöltjük a Word dokumentumot, amely tartalmazza a nem használt stílusokat és listákat, amelyeket meg akarunk tisztítani. A dokumentum betöltéséhez használja a következő kódot:
+## Névterek importálása
+
+Először is tegyük rendbe a névtereinket. Az Aspose.Words használatához importálnia kell néhány alapvető névteret.
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Cleaning;
+```
+
+## 1. lépés: Töltse be a dokumentumot
+
+Az első lépés a tisztítani kívánt dokumentum betöltése. Meg kell adnia a dokumentumkönyvtár elérési útját. Itt található a Word fájl.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
 
- Cserélje ki`"YOUR DOCUMENTS DIRECTORY"` annak a könyvtárnak az elérési útjával, ahol a dokumentum található.
+## 2. lépés: Ellenőrizze az aktuális stílusokat és listákat
 
-## 3. lépés: Tisztítás előtt számolja meg a stílusokat és a listákat
-
-Tisztítás előtt megszámoljuk a dokumentumban szereplő stílusok és listák számát. A számlálók megjelenítéséhez használja a következő kódot:
+A tisztítás megkezdése előtt érdemes megnézni, hogy hány stílus és lista található jelenleg a dokumentumban. Ez ad majd egy kiindulási helyzetet, amellyel összehasonlíthatjuk a tisztítás után.
 
 ```csharp
-Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
-$"Number of lists before cleaning: {doc.Lists.Count}");
+Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists before Cleanup: {doc.Lists.Count}");
 ```
 
-Ezek az utasítások a tisztítás előtt a dokumentumban található stílusok és listák számát mutatják.
+## 3. lépés: Adja meg a tisztítási beállításokat
 
-## 4. lépés: Tisztítsa meg a nem használt stílusokat és listákat
-
-Most tisztítsuk meg a nem használt stílusokat és listákat a dokumentumból. Használja a következő kódot a tisztításhoz:
+Most itt az ideje meghatározni a tisztítási lehetőségeket. Ebben a példában eltávolítjuk a nem használt stílusokat, de megtartjuk a nem használt listákat. Ezeket a beállításokat igényei szerint módosíthatja.
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-doc. Cleanup(cleanupOptions);
 ```
 
- Ez a kód a megadott beállításokkal törli a fel nem használt stílusokat és listákat a dokumentumból. Ebben a példában engedélyeztük a`UnusedStyles` lehetőség a nem használt stílusok eltávolítására és letiltására`UnusedLists` lehetőség a listák megtartására akkor is, ha nem használják őket.
+## 4. lépés: Hajtsa végre a tisztítást
 
-## 5. lépés: Tisztítás után számolja meg a stílusokat és a listákat
-
-A tisztítás elvégzése után újra megszámoljuk a stílusokat és a listákat, hogy ellenőrizzük, nem lettek-e összecsukva. Az új számlálók megjelenítéséhez használja a következő kódot:
+beállított tisztítási beállításokkal most már megtisztíthatjuk a dokumentumot. Ez a lépés eltávolítja a nem használt stílusokat, és érintetlenül tartja a nem használt listákat.
 
 ```csharp
-Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-				  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
+doc.Cleanup(cleanupOptions);
 ```
 
-Ezek az utasítások a tisztítás után fennmaradó stílusok és listák számát mutatják.
+## 5. lépés: A tisztítás után ellenőrizze a stílusokat és a listákat
 
-### Példa forráskód a nem használt stílusok és listák tisztításához az Aspose.Words for .NET használatával
+A tisztítás hatásának megtekintéséhez nézzük újra a stílusok és listák számát. Ez megmutatja, hogy hány stílust távolítottunk el.
 
 ```csharp
-
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Unused styles.docx");
-
-	// A beépített stílusokkal kombinálva a dokumentum nyolc stílust tartalmaz.
-	// Az egyéni stílusok „használt”-ként vannak megjelölve, amíg a dokumentumban szöveg található
-	// ebben a stílusban formázott. Ez azt jelenti, hogy az általunk hozzáadott 4 stílus jelenleg nincs használatban.
-	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
-					  $"Count of lists before Cleanup: {doc.Lists.Count}");
-
-	//Megtisztítja a fel nem használt stílusokat és listákat a dokumentumból az adott CleanupOptions függvényében.
-	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-	doc.Cleanup(cleanupOptions);
-
-	Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-					  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
-    
+Console.WriteLine($"Count of styles after Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 ```
 
- Ügyeljen arra, hogy a megfelelő dokumentum elérési utat adja meg a`dataDir` változó.
+## 6. lépés: Mentse el a megtisztított dokumentumot
 
-Most megtanulta, hogyan törölheti ki a nem használt stílusokat és listákat egy dokumentumból az Aspose.Words for .NET segítségével. Az oktatóanyagban található lépésenkénti útmutatót követve könnyedén alkalmazhatja ezt a funkciót saját dokumentumaira.
+Végül mentsük el a megtisztított dokumentumunkat. Ez biztosítja, hogy az összes változtatást elmentse, és a dokumentum a lehető legtisztább legyen.
 
+```csharp
+doc.Save(dataDir + "CleanedDocument.docx");
+```
+
+## Következtetés
+
+És megvan! Sikeresen megtisztította a Word-dokumentumot a nem használt stílusok és listák eltávolításával az Aspose.Words for .NET segítségével. Ez olyan, mint a digitális íróasztal zsúfoltságának megszüntetése, így a dokumentumok kezelhetőbbé és hatékonyabbá válnak. Veresd meg magad a jól végzett munkáért!
+
+## GYIK
+
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi Word-dokumentumok programozott létrehozását, módosítását és konvertálását C# használatával.
+
+### Eltávolíthatom egyszerre a fel nem használt stílusokat és listákat?
+Igen, mindkettőt beállíthatja`UnusedLists`és`UnusedStyles` nak nek`true` ban,-ben`CleanupOptions` mindkettő eltávolításához.
+
+### Vissza lehet vonni a tisztítást?
+Nem, a tisztítás befejezése és a dokumentum mentése után a módosítások nem vonhatók vissza. Mindig készítsen biztonsági másolatot az eredeti dokumentumról.
+
+### Szükségem van licencre az Aspose.Words for .NET-hez?
+ Igen, az Aspose.Words for .NET szolgáltatáshoz licenc szükséges a teljes funkcionalitáshoz. Kaphatsz a[ideiglenes engedély](https://purchase.aspose.com/temporary-license) vagy[vásároljon egyet](https://purchase.aspose.com/buy).
+
+### Hol találhatok további információt és támogatást?
+ Részletes dokumentációt találhat[itt](https://reference.aspose.com/words/net/) és kap támogatást a[Aspose fórum](https://forum.aspose.com/c/words/8).

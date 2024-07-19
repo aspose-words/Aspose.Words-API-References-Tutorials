@@ -65,7 +65,7 @@ table.Style = tableStyle;
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatting.docx");
 ```
 
-おめでとうございます！これで、Aspose.Words for .NET を使用してテーブルの条件付き書式を定義できました。
+おめでとうございます! Aspose.Words for .NET を使用して、表の条件付き書式を定義しました。
 
 ### Aspose.Words for .NET を使用して条件付き書式を定義するためのサンプル ソース コード 
 

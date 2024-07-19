@@ -16,6 +16,6 @@ DocSaveOptions를 사용한 단어 처리에 대한 .NET용 Aspose.Words 튜토�
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [비밀번호로 문서 암호화](./encrypt-document-with-password/) | .NET용 Aspose.Words를 사용하여 비밀번호로 문서를 암호화하는 방법을 알아보세요.  |
-| [작은 메타파일을 압축하지 마세요](./do-not-compress-small-metafiles/) | 문서를 저장할 때 작은 메타파일 압축 안 함 기능을 활성화하기 위해 .NET용 Aspose.Words를 사용하는 방법을 알아보세요. |
-| [그림 글머리 기호를 저장하지 마세요](./do-not-save-picture-bullet/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 이미지 글머리 기호 저장을 비활성화하는 방법을 알아보세요. |
+| [비밀번호로 문서 암호화](./encrypt-document-with-password/) | 이 상세한 단계별 가이드에서 .NET용 Aspose.Words를 사용하여 비밀번호로 문서를 암호화하는 방법을 알아보세요. 민감한 정보를 손쉽게 보호하세요. |
+| [작은 메타파일을 압축하지 마세요](./do-not-compress-small-metafiles/) | .NET용 Aspose.Words를 사용하여 Word 문서의 작은 메타파일이 압축되지 않도록 하고 품질과 무결성을 유지하는 방법을 알아보세요. 단계별 가이드가 포함되어 있습니다. |
+| [그림 글머리 기호를 저장하지 마세요](./do-not-save-picture-bullet/) | 단계별 가이드를 통해 .NET용 Aspose.Words에서 그림 글머리 기호를 처리하는 방법을 알아보세요. 문서 관리를 단순화하고 전문적인 Word 문서를 쉽게 만들 수 있습니다. |

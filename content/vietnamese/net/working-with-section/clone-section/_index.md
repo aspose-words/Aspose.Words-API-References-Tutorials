@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Tải tài liệu và sao chép phần
- Tiếp theo, chúng ta sẽ tải tài liệu Word vào một phiên bản của`Document` lớp học. Sau đó chúng tôi sẽ sử dụng`Clone` phương pháp sao chép phần đầu tiên của tài liệu.
+ Tiếp theo, chúng ta sẽ tải tài liệu Word vào một phiên bản của`Document` lớp học. Sau đó chúng tôi sẽ sử dụng`Clone`phương pháp sao chép phần đầu tiên của tài liệu.
 
 ```csharp
 // Tải tài liệu

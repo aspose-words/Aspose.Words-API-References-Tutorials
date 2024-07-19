@@ -25,7 +25,7 @@ is_root: true
 - [使用列表](./net/working-with-list/)   
 - [使用 Markdown](./net/working-with-markdown/)   
 - [使用 Node](./net/working-with-node/)   
-- [处理修订](./net/working-with-revisions/)   
+- [处理修订版本](./net/working-with-revisions/)   
 - [使用文本框](./net/working-with-textboxes/)   
 - [分割文件](./net/split-document/)   
 - [使用 Documentbuilder 添加内容](./net/add-content-using-documentbuilder/)

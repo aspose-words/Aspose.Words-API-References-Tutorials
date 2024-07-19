@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### 문서 초기화
 
- 새 Word 문서를 만드는 것부터 시작해 보겠습니다. 우리는`Document` 그리고`DocumentBuilder` Aspose.Words의 클래스.
+ 새 Word 문서를 만드는 것부터 시작해 보겠습니다. 우리는`Document`그리고`DocumentBuilder` Aspose.Words의 클래스.
 
 ```csharp
 Document doc = new Document();

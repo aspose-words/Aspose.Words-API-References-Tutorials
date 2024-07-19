@@ -21,7 +21,7 @@ url: /ko/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 // 문서 디렉토리 경로
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// 문서작성
+// 문서 작성
 Document doc = new Document();
 
 // 문서 생성기 초기화
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- 여기서는 문서 작성기를 사용하여 두 개의 머리글 행과 여러 데이터 행이 있는 테이블을 만듭니다. 그만큼`RowFormat.HeadingFormat`매개변수는 후속 페이지에서 반복되어야 하는 헤더 행을 표시하는 데 사용됩니다.
+ 여기서는 문서 작성기를 사용하여 두 개의 머리글 행과 여러 데이터 행이 있는 테이블을 만듭니다. 그만큼`RowFormat.HeadingFormat` 매개변수는 후속 페이지에서 반복되어야 하는 헤더 행을 표시하는 데 사용됩니다.
 
 ## 4단계: 수정된 문서 저장
 드디어 미국

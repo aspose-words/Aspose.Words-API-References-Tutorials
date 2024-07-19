@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Stap 2: Ga naar de huidige sectie
 
-We halen de huidige sectie op met behulp van`builder.CurrentSection`. Deze sectie zal het doel zijn waar we de kop- en voetteksten uit de vorige sectie zullen kopiëren.
+ We halen de huidige sectie op met behulp van`builder.CurrentSection`Deze sectie zal het doel zijn waar we de kop- en voetteksten uit de vorige sectie zullen kopiëren.
 
 ### Stap 3: Definieer de vorige sectie
 

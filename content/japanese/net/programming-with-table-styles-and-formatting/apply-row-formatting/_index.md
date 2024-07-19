@@ -61,7 +61,7 @@ table. BottomPadding = 30;
 ## ステップ7: 行にコンテンツを追加する
 今ならできる
 
-ドキュメントコンストラクタのメソッドを使用して行にコンテンツを追加します。この例では、`Writeln()`行にテキストを追加する方法。
+ドキュメントコンストラクタのメソッドを使用して行にコンテンツを追加します。この例では、`Writeln()`行にテキストを追加するメソッド。
 
 ```csharp
 builder.Writeln("I'm a beautifully formatted line.");

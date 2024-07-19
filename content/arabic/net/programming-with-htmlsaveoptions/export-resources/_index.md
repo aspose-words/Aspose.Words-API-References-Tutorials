@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://example.com/resources"
 
  يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ويضبط الخيارات التالية:
 
-- `CssStyleSheetType` تم ضبطه على`CssStyleSheetType.External`لتصدير ورقة أنماط CSS إلى ملف خارجي.
+- `CssStyleSheetType` تم ضبطه على`CssStyleSheetType.External` لتصدير ورقة أنماط CSS إلى ملف خارجي.
 - `ExportFontResources` تم ضبطه على`true` لتصدير موارد الخطوط.
 - `ResourceFolder` يحدد الدليل الوجهة حيث سيتم حفظ الموارد.
-- `ResourceFolderAlias` يحدد الاسم المستعار لعنوان URL الذي سيتم استخدامه للوصول إلى الموارد.
+- `ResourceFolderAlias`يحدد الاسم المستعار لعنوان URL الذي سيتم استخدامه للوصول إلى الموارد.
 
 ## الخطوة 4: تحويل وحفظ المستند إلى HTML
 

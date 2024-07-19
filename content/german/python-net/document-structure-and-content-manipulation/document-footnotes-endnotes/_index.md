@@ -1,7 +1,7 @@
 ---
 title: Untersuchen von Fußnoten und Endnoten in Word-Dokumenten
 linktitle: Untersuchen von Fußnoten und Endnoten in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Entdecken Sie, wie Sie mit Aspose.Words für Python Fußnoten und Endnoten in Word-Dokumenten effektiv verwenden. Erfahren Sie, wie Sie diese Elemente programmgesteuert hinzufügen, anpassen und verwalten.
 type: docs
 weight: 14
@@ -58,7 +58,7 @@ document.save("modified_document.docx")
 Mit Aspose.Words können Sie das Erscheinungsbild und die Formatierung von Fußnoten und Endnoten anpassen:
 
 - Nummerierungsstil ändern
-- Schriftgröße und Farbe anpassen
+- Schriftgröße und -farbe anpassen
 - Platzierung und Ausrichtung ändern
 
 ## Programmgesteuertes Verwalten von Fußnoten und Endnoten
@@ -73,7 +73,7 @@ Sie können Fußnoten und Endnoten programmgesteuert verwalten, indem Sie:
 
 - Halten Sie Fußnoten kurz und relevant
 - Verwenden Sie Endnoten für ausführlichere Erklärungen
-- Behalten Sie eine einheitliche Formatierung bei
+- Achten Sie auf eine einheitliche Formatierung
 - Überprüfen Sie die Richtigkeit der Zitate
 
 ## Fehlerbehebung bei allgemeinen Problemen
@@ -98,7 +98,7 @@ Ja, Sie können das Erscheinungsbild von Fußnoten und Endnoten mit Aspose.Words
 
 ### Was ist der Unterschied zwischen Fußnoten und Endnoten?
 
-Fußnoten erscheinen unten auf der Seite, während Endnoten am Ende des Dokuments oder Abschnitts stehen. Sie dienen demselben Zweck, nämlich der Bereitstellung zusätzlicher Informationen oder Referenzen.
+Fußnoten erscheinen unten auf der Seite, während Endnoten am Ende des Dokuments oder Abschnitts stehen. Sie dienen demselben Zweck, nämlich zusätzliche Informationen oder Referenzen bereitzustellen.
 
 ### Wie verwalte ich die Reihenfolge von Fußnoten oder Endnoten?
 

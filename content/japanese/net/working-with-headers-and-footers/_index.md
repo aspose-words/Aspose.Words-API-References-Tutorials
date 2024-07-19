@@ -1,6 +1,6 @@
 ---
-title: ヘッダーとフッター付きのワードプロセッシング
-linktitle: ヘッダーとフッター付きのワードプロセッシング
+title: ヘッダーとフッター付きのワードプロセッサ
+linktitle: ヘッダーとフッター付きのワードプロセッサ
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET を使用して Word 文書のヘッダーとフッターを操作する方法を学習します。完全なチュートリアルと実用的な例。
 type: docs

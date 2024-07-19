@@ -12,4 +12,4 @@ Scopri come abilitare le funzionalità OpenType nei tuoi documenti Word con Aspo
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Funzionalità di tipo aperto](./open-type-features/) | Scopri come abilitare e utilizzare le funzionalità Open Type in Aspose.Words per .NET |
+| [Funzionalità di tipo aperto](./open-type-features/) | Scopri come abilitare le funzionalità OpenType nei documenti Word utilizzando Aspose.Words per .NET con questa guida dettagliata passo passo. |

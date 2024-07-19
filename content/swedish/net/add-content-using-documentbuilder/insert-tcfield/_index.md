@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Steg 2: Skapa ett nytt dokument
 
- Okej, låt oss börja med att skapa ett nytt Word-dokument. Vi kommer att använda`Document` och`DocumentBuilder` klasser från Aspose.Words för att få saker att rulla på.
+ Okej, låt oss börja med att skapa ett nytt Word-dokument. Vi kommer att använda`Document`och`DocumentBuilder` klasser från Aspose.Words för att få saker att rulla på.
 
 ```csharp
 // Sökvägen till dokumentkatalogen.
@@ -64,7 +64,7 @@ Nu kommer den roliga delen. Vi kommer att infoga ett TC-fält i vårt dokument. 
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Denna kodrad säger till Aspose.Words att infoga ett TC-fält med inmatningstexten "Entry Text". De`\\f t` del är en omkopplare som bestämmer hur posten visas i innehållsförteckningen.
+ Denna kodrad säger till Aspose.Words att infoga ett TC-fält med inmatningstexten "Entry Text". De`\\f t`del är en omkopplare som bestämmer hur posten visas i innehållsförteckningen.
 
 ## Steg 4: Spara dokumentet
 

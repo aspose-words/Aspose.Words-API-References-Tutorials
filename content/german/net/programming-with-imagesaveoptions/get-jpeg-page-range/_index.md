@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- In diesem Schritt konfigurieren wir Backup-Optionen für Images. Wir erstellen ein neues`ImageSaveOptions` Objekt, das das gewünschte Speicherformat angibt, hier "Jpeg" für das JPEG-Format. Wir legen auch den Bereich der zu konvertierenden Seiten fest, indem wir`PageSet`Objekt. Zum Schluss passen wir die Helligkeit und den Kontrast des Bildes mit dem`ImageBrightness` Und`ImageContrast` Eigenschaften. Wir ändern auch die horizontale Auflösung mit dem`HorizontalResolution` Eigentum.
+ In diesem Schritt konfigurieren wir Backup-Optionen für Images. Wir erstellen ein neues`ImageSaveOptions` Objekt, das das gewünschte Speicherformat angibt, hier "Jpeg" für das JPEG-Format. Wir legen auch den Bereich der zu konvertierenden Seiten fest, indem wir`PageSet`Objekt. Zum Schluss passen wir die Helligkeit und den Kontrast des Bildes mit dem`ImageBrightness`Und`ImageContrast` Eigenschaften. Wir ändern auch die horizontale Auflösung mit dem`HorizontalResolution` Eigentum.
 
 ## Schritt 4: Bilder sichern
 

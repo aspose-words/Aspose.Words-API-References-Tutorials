@@ -82,7 +82,7 @@ builder.InsertHtml(
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-और बस हो गया! आपने Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में HTML डाल दिया है। बहुत बढ़िया!
+और बस, अब यह हो गया! आपने Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में HTML डाल दिया है। बहुत बढ़िया!
 
 ## निष्कर्ष
 
@@ -107,4 +107,4 @@ HTML को Word दस्तावेज़ में सम्मिलित 
  आप एक से शुरू कर सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/) या प्राप्त करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) पूर्ण सुविधाओं के लिए.
 
 ### मैं और अधिक ट्यूटोरियल और उदाहरण कहां पा सकता हूं?  
-[प्रलेखन](https://reference.aspose.com/words/net/) और[समर्थन मंच](https://forum.aspose.com/c/words/8)अधिक विस्तृत मार्गदर्शन और सामुदायिक सहायता के लिए ये बेहतरीन स्थान हैं।
+[प्रलेखन](https://reference.aspose.com/words/net/)और[समर्थन मंच](https://forum.aspose.com/c/words/8)अधिक विस्तृत मार्गदर्शन और सामुदायिक सहायता के लिए ये बेहतरीन स्थान हैं।

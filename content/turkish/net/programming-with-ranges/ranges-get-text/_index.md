@@ -75,7 +75,7 @@ C: Aspose.Words for .NET, .NET uygulamalarında Word belgeleriyle Kelime İşlem
 
 #### S: Aspose.Words for .NET'i kullanarak bir Word belgesini nasıl yüklerim?
 
-C: Aspose.Words for .NET'i kullanarak bir Word belgesi yüklemek için`Document` sınıf ve onun yapıcısı. Parametre olarak belgenin dosya yolunu veya akışını sağlamanız gerekir. İşte bir örnek:
+ C: Aspose.Words for .NET'i kullanarak bir Word belgesi yüklemek için`Document` sınıf ve onun yapıcısı. Parametre olarak belgenin dosya yolunu veya akışını sağlamanız gerekir. İşte bir örnek:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

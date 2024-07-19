@@ -98,7 +98,7 @@ Bir paragraf; çalıştırmalar, şekiller, yorumlar ve diğer satır içi öğe
  Evet, şekiller, yorumlar ve daha fazlası gibi çeşitli düğüm türlerini kontrol ederek değiştirebilirsiniz.`NodeType`.
 
 ### 4. Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
- Ücretsiz denemeyle başlayabilir veya şu adresten geçici bir lisans alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
+Ücretsiz denemeyle başlayabilir veya şu adresten geçici bir lisans alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Daha fazla örnek ve belgeyi nerede bulabilirim?
  Ziyaret edin[Aspose.Words for .NET API belgeleri](https://reference.aspose.com/words/net/) daha fazla örnek ve ayrıntılı belgeler için.

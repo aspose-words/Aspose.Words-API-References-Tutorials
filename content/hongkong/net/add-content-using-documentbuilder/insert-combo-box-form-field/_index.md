@@ -101,7 +101,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx"
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將組合方塊表單欄位插入 Word 文件中。看，這並不難，不是嗎？透過這些簡單的步驟，您可以建立一定會給人留下深刻印象的互動式動態文件。所以，繼續嘗試吧。誰知道呢，您甚至可能會發現一些新的技巧。快樂編碼！
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將組合方塊表單欄位插入 Word 文件中。看，這並不難，不是嗎？透過這些簡單的步驟，您可以建立一定會給人留下深刻印象的互動式動態文件。所以，繼續嘗試吧。誰知道呢，您甚至可能會發現一些新的技巧。快樂編碼！
 
 ## 常見問題解答
 

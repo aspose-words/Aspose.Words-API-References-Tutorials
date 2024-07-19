@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Aggiungi una nuova sorgente di cartella che indicherà ad Aspose.Words di cercare i caratteri nella seguente cartella.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Aggiungi la cartella personalizzata che contiene i nostri caratteri all'elenco delle fonti di caratteri esistenti.
+// Aggiungi la cartella personalizzata che contiene i nostri caratteri all'elenco delle fonti di caratteri esistenti.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

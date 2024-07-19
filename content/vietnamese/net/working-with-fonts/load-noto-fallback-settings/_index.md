@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Tải tài liệu và định cấu hình cài đặt thay thế phông chữ
- Tiếp theo, chúng ta sẽ tải tài liệu bằng cách sử dụng`Document` lớp và định cấu hình cài đặt ghi đè phông chữ bằng cách sử dụng`FontSettings`lớp học. Chúng tôi sẽ tải cài đặt dự phòng phông chữ Noto bằng cách sử dụng`LoadNotoFallbackSettings()` phương pháp.
+ Tiếp theo, chúng ta sẽ tải tài liệu bằng cách sử dụng`Document` lớp và định cấu hình cài đặt ghi đè phông chữ bằng cách sử dụng`FontSettings` lớp học. Chúng tôi sẽ tải cài đặt dự phòng phông chữ Noto bằng cách sử dụng`LoadNotoFallbackSettings()` phương pháp.
 
 ```csharp
 // Tải tài liệu và định cấu hình cài đặt thay thế phông chữ

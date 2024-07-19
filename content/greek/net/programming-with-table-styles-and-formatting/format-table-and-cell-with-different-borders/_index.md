@@ -30,20 +30,20 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // Ορίστε περιθώρια για ολόκληρο το τραπέζι.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // Ορισμός πλήρωσης για αυτό το κελί.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // Καθορίστε μια διαφορετική γέμιση κελιών για το δεύτερο κελί.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // Διαγραφή μορφοποίησης κελιών από προηγούμενες λειτουργίες.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // Δημιουργήστε πιο παχιά περιγράμματα για το πρώτο κελί σε αυτήν τη σειρά. Θα είναι διαφορετικό
 // σε σχέση με τα όρια που ορίζονται για τον πίνακα.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 ### Δείγμα πηγαίου κώδικα για Μορφοποίηση πίνακα και κελί με διαφορετικά σύνορα χρησιμοποιώντας το Aspose.Words για .NET 
 
 ```csharp
-	// Διαδρομή στον κατάλογο εγγράφων σας
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Διαδρομή στον κατάλογο εγγράφων σας
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//Ορίστε τα όρια για ολόκληρο τον πίνακα.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// Ορίστε τη σκίαση κελιών για αυτό το κελί.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// Καθορίστε μια διαφορετική σκίαση κελιών για το δεύτερο κελί.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// Διαγράψτε τη μορφοποίηση κελιών από προηγούμενες λειτουργίες.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// Δημιουργήστε μεγαλύτερα περιγράμματα για το πρώτο κελί αυτής της σειράς. Αυτό θα είναι διαφορετικό
-	// σε σύγκριση με τα όρια που ορίζονται για τον πίνακα.
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//Ορίστε τα όρια για ολόκληρο τον πίνακα.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// Ορίστε τη σκίαση κελιών για αυτό το κελί.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// Καθορίστε μια διαφορετική σκίαση κελιών για το δεύτερο κελί.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// Διαγράψτε τη μορφοποίηση κελιών από προηγούμενες λειτουργίες.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// Δημιουργήστε μεγαλύτερα περιγράμματα για το πρώτο κελί αυτής της σειράς. Αυτό θα είναι διαφορετικό
+// σε σύγκριση με τα όρια που ορίζονται για τον πίνακα.
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## συμπέρασμα

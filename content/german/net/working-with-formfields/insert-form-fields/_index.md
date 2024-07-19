@@ -14,7 +14,7 @@ In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Wor
 
 ## Schritt 1: Initialisieren der Document- und DocumentBuilder-Objekte
 
- Initialisieren Sie zunächst den`Document` Und`DocumentBuilder` Objekte:
+ Initialisieren Sie zunächst den`Document`Und`DocumentBuilder` Objekte:
 
 ```csharp
 Document doc = new Document();
@@ -62,7 +62,7 @@ Sie können diesen Code gerne in Ihren eigenen Projekten verwenden und ihn entsp
 
 #### F: Ist es möglich, in einem Dokument ein Formularfeld vom Typ „Kontrollkästchen“ zu erstellen?
 
- A: Ja, es ist möglich, ein Kontrollkästchen-Formularfeld in einem Aspose.Words-Dokument zu erstellen. Sie können das`FormField` Klasse und legen Sie deren`Type`Eigentum an`FormFieldType.CheckBox` , um ein Kontrollkästchen zu erstellen. Anschließend können Sie die Eigenschaften des Kontrollkästchens nach Bedarf anpassen.
+ A: Ja, es ist möglich, ein Formularfeld vom Typ Kontrollkästchen in einem Aspose.Words-Dokument zu erstellen. Sie können das`FormField` Klasse und legen Sie deren`Type`Eigentum an`FormFieldType.CheckBox` , um ein Kontrollkästchen zu erstellen. Anschließend können Sie die Eigenschaften des Kontrollkästchens nach Bedarf anpassen.
 
 #### F: Wie kann ich einem Dokument ein Dropdown-Formularfeld hinzufügen?
 
@@ -74,4 +74,4 @@ A: Ja, Sie können einen Standardwert für ein Formularfeld in Aspose.Words fest
 
 #### F: Wie kann ich in Formularfeldern in Aspose.Words eingegebene Daten abrufen?
 
- A: Um Daten abzurufen, die in Formularfeldern in Aspose.Words eingegeben wurden, können Sie das`FormField.Result` Eigenschaft, die den vom Benutzer eingegebenen Wert enthält. Sie können auf diese Eigenschaft für jedes Formularfeld in Ihrem Dokument zugreifen.
+ A: Um Daten abzurufen, die in Formularfeldern in Aspose.Words eingegeben wurden, können Sie das`FormField.Result` Eigenschaft, die den vom Benutzer eingegebenen Wert enthält. Sie können für jedes Formularfeld in Ihrem Dokument auf diese Eigenschaft zugreifen.

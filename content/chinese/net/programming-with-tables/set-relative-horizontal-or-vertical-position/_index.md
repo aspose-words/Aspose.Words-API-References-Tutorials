@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-请务必将“您的文档目录”替换为您的文档目录的实际路径，并提供正确的文件名。
+请确保将“您的文档目录”替换为您的文档目录的实际路径，并提供正确的文件名。
 
 ## 步骤3：设置表格的相对位置
 接下来，我们将设置表格的相对水平或垂直位置。使用以下代码：

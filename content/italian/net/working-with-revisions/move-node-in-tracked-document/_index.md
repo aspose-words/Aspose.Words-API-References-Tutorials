@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### D: Come posso spostare un nodo in un documento tracciato senza generare revisioni?
 
- R: Se desideri spostare un nodo in un documento monitorato senza generare revisioni, puoi utilizzare il file`Remove` E`InsertAfter` O`InsertBefore` metodi del`Node` oggetto. Ad esempio, per spostare un paragrafo dopo un altro paragrafo, puoi utilizzare il seguente codice:
+ R: Se desideri spostare un nodo in un documento monitorato senza generare revisioni, puoi utilizzare il file`Remove`E`InsertAfter` O`InsertBefore` metodi del`Node` oggetto. Ad esempio, per spostare un paragrafo dopo un altro paragrafo, puoi utilizzare il seguente codice:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

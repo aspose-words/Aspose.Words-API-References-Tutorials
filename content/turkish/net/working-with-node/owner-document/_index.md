@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## 4. Adım: Üst düğümü ve sahip belgesini kontrol edin
- Artık paragraf düğümünü oluşturduğumuza göre, onun bir üst düğümü olup olmadığını ve sahip olduğu belgenin paragraf düğümüyle aynı olup olmadığını kontrol edebiliriz.`doc`.
+Artık paragraf düğümünü oluşturduğumuza göre, onun bir üst düğümü olup olmadığını ve sahip olduğu belgenin paragraf düğümüyle aynı olup olmadığını kontrol edebiliriz.`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ C: Çoğu durumda, bir düğümün belge sahibi, düğüm oluşturulduğunda bel
 
 #### S: Bir sahip belgesinin düğümlerine nasıl erişilir?
 
- C: Özel bir belgedeki düğümlere erişmek için Node.js ortamınızda kullanılan XML API'sinin sağladığı yöntemleri ve özellikleri kullanabilirsiniz. Örneğin, gibi yöntemleri kullanabilirsiniz.`getElementsByTagName` veya`querySelector` Belgedeki belirli düğümleri seçmek için.
+C: Özel bir belgedeki düğümlere erişmek için Node.js ortamınızda kullanılan XML API'sinin sağladığı yöntemleri ve özellikleri kullanabilirsiniz. Örneğin, gibi yöntemleri kullanabilirsiniz.`getElementsByTagName` veya`querySelector` Belgedeki belirli düğümleri seçmek için.

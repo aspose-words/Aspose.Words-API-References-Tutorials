@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
 
-En este tutorial, exploraremos el código fuente de C# proporcionado para preservar los caracteres de control heredados al guardar un documento usando Aspose.Words para .NET. Esta función le permite conservar caracteres de control especiales al convertir o guardar un documento.
+En este tutorial, exploraremos el código fuente de C# proporcionado para preservar los caracteres de control heredados al guardar un documento usando Aspose.Words para .NET. Esta característica le permite conservar caracteres de control especiales al convertir o guardar un documento.
 
 ## Paso 1: configurar el entorno
 

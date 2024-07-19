@@ -56,7 +56,7 @@ Most töltsük be a PDF dokumentumot projektünkbe az Aspose.Words használatáv
 Document doc = new Document(dataDir + "Pdf Document.pdf");
 ```
 
- Itt létrehozzuk a`Document`osztályt, és átadjuk neki a PDF fájlunk elérési útját. Ez a művelet betölti a PDF-fájlt a memóriába, készen áll a konvertálásra.
+ Itt létrehozzuk a`Document` osztályt, és átadjuk neki a PDF fájlunk elérési útját. Ez a művelet betölti a PDF-fájlt a memóriába, készen áll a konvertálásra.
 
 ## 3. lépés: A PDF mentése Word-dokumentumként
 

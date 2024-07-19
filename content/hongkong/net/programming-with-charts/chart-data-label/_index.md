@@ -2,48 +2,84 @@
 title: 自訂圖表資料標籤
 linktitle: 自訂圖表資料標籤
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在圖表中新增和自訂資料標籤，以提供有關資料點的附加資訊。
+description: 透過逐步指南了解如何使用 Aspose.Words for .NET 自訂圖表資料標籤。非常適合 .NET 開發人員。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-charts/chart-data-label/
 ---
+## 介紹
 
-本教學介紹如何使用 Aspose.Words for .NET 在圖表中新增和自訂資料標籤。數據標籤提供有關圖表中數據點的附加資訊。
+您是否希望透過動態和自訂的文件處理功能來美化您的 .NET 應用程式？ Aspose.Words for .NET 或許就是您的答案！在本指南中，我們將深入研究如何使用 Aspose.Words for .NET 自訂圖表資料標籤，這是用於建立、修改和轉換 Word 文件的強大函式庫。無論您是經驗豐富的開發人員還是剛起步，本教學都將引導您完成每個步驟，確保您了解如何有效地利用此工具。
 
 ## 先決條件
-要學習本教程，您需要具備以下條件：
 
-- 已安裝 Aspose.Words for .NET 程式庫。
-- C# 和 Word 文件文字處理的基礎知識。
+在我們開始之前，請確保您具備以下條件：
 
-## 第 1 步：設定文檔目錄
-首先設定文檔目錄的路徑。代替`"YOUR DOCUMENT DIRECTORY"`與要儲存文件的目錄的實際路徑。
+1. Visual Studio：安裝 Visual Studio 2019 或更新版本。
+2. .NET Framework：確保您擁有 .NET Framework 4.0 或更高版本。
+3.  Aspose.Words for .NET：從下列位置下載並安裝 Aspose.Words for .NET[下載連結](https://releases.aspose.com/words/net/).
+4. C# 基礎知識：熟悉 C# 程式設計至關重要。
+5. 有效許可證：取得[臨時執照](https://purchase.aspose.com/temporary-license/)或從以下網站購買一份[購買連結](https://purchase.aspose.com/buy).
+
+## 導入命名空間
+
+首先，您需要將必要的命名空間匯入到您的 C# 專案中。此步驟至關重要，因為它確保您可以存取 Aspose.Words 提供的所有類別和方法。
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Charts;
 ```
 
-## 第 2 步：建立新文件和 DocumentBuilder
-建立一個新實例`Document`類別和一個`DocumentBuilder`物件使用該文件。
+## 第 1 步：初始化 Document 和 DocumentBuilder
+
+要建立和操作Word文檔，我們首先需要初始化一個實例`Document`類別和一個`DocumentBuilder`目的。
 
 ```csharp
+//文檔目錄的路徑
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 第 3 步：插入並配置圖表
-使用以下命令將圖表插入到文件中`InsertChart`的方法`DocumentBuilder`目的。設定所需的圖表類型和尺寸。
+### 解釋
+
+- 文件 doc：建立 Document 類別的新實例。
+- DocumentBuilder 建構器：DocumentBuilder 有助於將內容插入 Document 物件中。
+
+## 第 2 步：插入圖表
+
+接下來，我們將使用以下命令將條形圖插入到文件中`DocumentBuilder`目的。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 第 4 步：自訂資料標籤
-存取圖表系列的資料標籤集合併修改各種屬性以自訂資料標籤的外觀。
+### 解釋
+
+- Shape shape：將圖表表示為文件中的形狀。
+- builder.InsertChart(ChartType.Bar, 432, 252)：插入具有指定維度的長條圖。
+
+## 第 3 步：造訪圖表系列
+
+要自訂資料標籤，我們首先需要存取圖表中的系列。
 
 ```csharp
 ChartSeries series0 = shape.Chart.Series[0];
+```
+
+### 解釋
+
+- ChartSeries series0：檢索我們將自訂的圖表的第一個系列。
+
+## 第 4 步：自訂資料標籤
+
+可以自訂資料標籤以顯示各種資訊。我們將配置標籤以顯示圖例鍵、系列名稱和值，同時隱藏類別名稱和百分比。
+
+```csharp
 ChartDataLabelCollection labels = series0.DataLabels;
 labels.ShowLegendKey = true;
 labels.ShowLeaderLines = true;
@@ -54,51 +90,46 @@ labels.ShowValue = true;
 labels.Separator = "/";
 ```
 
+### 解釋
+
+- ChartDataLabelCollection 標籤：存取系列的資料標籤。
+- labels.ShowLegendKey：顯示圖例鍵。
+- labels.ShowLeaderLines：顯示位於資料點之外的資料標籤的引導線。
+- labels.ShowCategoryName：隱藏類別名稱。
+- labels.ShowPercentage：隱藏百分比值。
+- labels.ShowSeriesName：顯示系列名稱。
+- labels.ShowValue：顯示資料點的值。
+- labels.Separator：設定資料標籤的分隔符號。
+
 ## 第 5 步：儲存文檔
-使用以下命令將文件儲存到指定目錄`Save`方法。提供所需的檔案名稱和適當的檔案副檔名。在此範例中，我們將文件另存為「WorkingWithCharts.ChartDataLabel.docx」。
+
+最後將文檔儲存到指定目錄。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
-### 使用 Aspose.Words for .NET 的圖表資料標籤的範例原始程式碼 
+### 解釋
 
-```csharp
-	//文檔目錄的路徑
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = shape.Chart.Series[0];
-	ChartDataLabelCollection labels = series0.DataLabels;
-	labels.ShowLegendKey = true;
-	//預設情況下，當您在圓餅圖中的資料點新增資料標籤時，會顯示下列資料標籤的引導線：
-	//位於遠離資料點末端的位置。引導線在資料標籤及其內容之間創建視覺連接
-	//對應的數據點。
-	labels.ShowLeaderLines = true;
-	labels.ShowCategoryName = false;
-	labels.ShowPercentage = false;
-	labels.ShowSeriesName = true;
-	labels.ShowValue = true;
-	labels.Separator = "/";
-	labels.ShowValue = true;
-	doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
-```
-
-就是這樣！您已使用 Aspose.Words for .NET 在圖表中成功新增和自訂資料標籤。
+- doc.Save：將文件以指定名稱儲存在提供的目錄中。
 
 ## 結論
-在本教學中，您學習如何使用 Aspose.Words for .NET 在圖表中新增和自訂資料標籤。透過遵循逐步指南，您可以插入圖表、存取資料標籤集合以及修改屬性以自訂資料標籤的外觀。 Aspose.Words for .NET 提供了強大的 API，用於 Word 文件和圖表的文字處理，使您能夠使用自訂資料標籤建立具有視覺吸引力和資訊豐富的圖表。
 
-### 常見問題解答
+恭喜！您已使用 Aspose.Words for .NET 成功自訂了圖表資料標籤。該程式庫提供了一個強大的解決方案，用於以程式設計方式處理 Word 文檔，使開發人員可以更輕鬆地建立複雜的動態文檔處理應用程式。潛入[文件](https://reference.aspose.com/words/net/)探索更多特性和功能。
 
-#### Q1.圖表中的數據標籤是什麼？
-圖表中的資料標籤提供有關圖表中表示的資料點的附加資訊。它們可以根據圖表類型和配置顯示值、類別、系列名稱、百分比或其他相關詳細資訊。
+## 常見問題解答
 
-#### Q2。我可以自訂資料標籤的外觀嗎？
-是的，您可以自訂圖表中資料標籤的外觀。 Aspose.Words for .NET 提供了修改資料標籤各種屬性的選項，例如顯示圖例鍵、引導線、類別名稱、系列名稱、值等。您也可以設定分隔符號並設定標籤格式以滿足您的特定要求。
+### 什麼是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一個功能強大的文件處理庫，可讓開發人員以程式設計方式建立、修改和轉換 Word 文件。
 
-#### Q3。我可以將資料標籤新增到任何圖表類型嗎？
-是的，您可以為各種類型的圖表新增資料標籤，包括長條圖、圓餅圖、折線圖等。新增和自訂資料標籤的過程可能會略有不同，具體取決於圖表類型以及您正在使用的程式庫或工具。
+### 如何安裝 Aspose.Words for .NET？
+您可以從以下位置下載並安裝它[下載連結](https://releases.aspose.com/words/net/)。請按照提供的安裝說明進行操作。
+
+### 可以免費試用 Aspose.Words for .NET 嗎？
+是的，您可以獲得[免費試用](https://releases.aspose.com/)或一個[臨時執照](https://purchase.aspose.com/temporary-license/)來評估產品。
+
+### Aspose.Words for .NET 與 .NET Core 相容嗎？
+是的，Aspose.Words for .NET 與 .NET Core、.NET Standard 和 .NET Framework 相容。
+
+### 在哪裡可以獲得 Aspose.Words for .NET 支援？
+您可以訪問[支援論壇](https://forum.aspose.com/c/words/8)尋求 Aspose 社區和專家的幫助和協助。

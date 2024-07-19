@@ -55,7 +55,7 @@ format.setHangingPunctuation(false);
 doc.save("AsianTypographyLineBreakGroup.docx");
 ```
 
-## Форматирование абзацев
+## Форматирование абзаца
 
 Aspose.Words для Java позволяет легко форматировать абзацы. Посмотрите этот пример:
 

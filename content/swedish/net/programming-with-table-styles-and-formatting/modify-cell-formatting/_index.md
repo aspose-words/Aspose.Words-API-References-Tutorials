@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Steg 3: Gå till cellen för att ändra
- För att ändra formateringen av en cell måste vi navigera till den specifika cellen i tabellen. Vi använder`GetChild()` och`FirstRow.FirstCell` metoder för att få referensen till den första cellen i den första arrayen.
+ För att ändra formateringen av en cell måste vi navigera till den specifika cellen i tabellen. Vi använder`GetChild()`och`FirstRow.FirstCell` metoder för att få referensen till den första cellen i den första arrayen.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

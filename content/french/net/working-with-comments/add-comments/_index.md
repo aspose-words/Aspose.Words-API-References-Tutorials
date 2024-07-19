@@ -85,11 +85,11 @@ Les commentaires sont utiles pour collaborer, fournir des informations suppléme
 
 #### Q : Comment puis-je ajouter un commentaire dans un document Aspose.Words for .NET ?
 
-R : Pour ajouter un commentaire dans un document Aspose.Words for .NET, vous devez suivre les étapes mentionnées dans le didacticiel.
+: Pour ajouter un commentaire dans un document Aspose.Words for .NET, vous devez suivre les étapes mentionnées dans le didacticiel.
 
 #### Q : Puis-je formater le texte des commentaires dans Aspose.Words pour .NET ?
 
-: Oui, vous pouvez formater le texte des commentaires dans Aspose.Words for .NET à l'aide des propriétés de formatage disponibles.
+R : Oui, vous pouvez formater le texte des commentaires dans Aspose.Words for .NET à l'aide des propriétés de formatage disponibles.
 
 #### Q : Comment récupérer tous les commentaires présents dans un document ?
 

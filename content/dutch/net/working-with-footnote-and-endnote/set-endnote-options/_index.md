@@ -12,7 +12,7 @@ In deze stapsgewijze zelfstudie laten we u zien hoe u Aspose.Words voor .NET kun
 
  Om aan de slag te gaan, moet u ervoor zorgen dat Aspose.Words voor .NET is geïnstalleerd en ingesteld in uw ontwikkelomgeving. Als u dit nog niet hebt gedaan, downloadt en installeert u de bibliotheek van[Aspose.Releases]https://releases.aspose.com/words/net/.
 
-## Stap 1: Initialiseren van het documentobject
+## Stap 1: Het documentobject initialiseren
 
  Initialiseer eerst de`Document` object door het pad naar uw brondocument op te geven:
 
@@ -85,7 +85,7 @@ U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw spec
 
 #### Vraag: Is het mogelijk om de nummering van eindnoten in een document aan te passen?
 
- A: Ja, het is mogelijk om de nummering van eindnoten in een document aan te passen. U kunt gebruik maken van de`RestartRule` En`NumberStyle` eigenschappen van de`EndnoteOptions` class om specifieke herstartregels en nummeringsstijlen te definiëren.
+ A: Ja, het is mogelijk om de nummering van eindnoten in een document aan te passen. U kunt gebruik maken van de`RestartRule`En`NumberStyle` eigenschappen van de`EndnoteOptions` class om specifieke herstartregels en nummeringsstijlen te definiëren.
 
 #### Vraag: Hoe kan ik eindnoten in een document plaatsen?
 

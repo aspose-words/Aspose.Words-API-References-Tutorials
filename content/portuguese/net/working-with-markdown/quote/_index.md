@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Etapa 3: Criando estilos para níveis aninhados
 
- Podemos criar estilos para níveis aninhados usando o`Styles.Add` método do`Document` objeto. Neste exemplo, estamos criando um estilo chamado "Quote1" para representar um nível de cotação aninhada.
+ Podemos criar estilos para níveis aninhados usando o`Styles.Add` método do`Document`objeto. Neste exemplo, estamos criando um estilo chamado "Quote1" para representar um nível de cotação aninhada.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

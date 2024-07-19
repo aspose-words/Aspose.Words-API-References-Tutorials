@@ -49,7 +49,7 @@ In deze stap stellen we de alineastijl in op "Kop 1", schrijven we wat tekst met
 
 In deze laatste stap kunt u het aangemaakte document naar wens opslaan.
 
-U kunt de broncode uitvoeren om een stijlscheidingsteken in een document in te voegen. Hiermee kunt u tekstgedeelten met verschillende stijlen maken en het uiterlijk van uw document aanpassen.
+kunt de broncode uitvoeren om een stijlscheidingsteken in een document in te voegen. Hiermee kunt u tekstgedeelten met verschillende stijlen maken en het uiterlijk van uw document aanpassen.
 
 ### Voorbeeldbroncode voor Insert Style Separator met Aspose.Words voor .NET 
 
@@ -106,7 +106,7 @@ Om de omgeving in te stellen, moet u ervoor zorgen dat Aspose.Words voor .NET in
 
 #### Hoe kan ik verschillende stijlen toepassen op verschillende tekstgedeelten?
 
- U kunt verschillende stijlen toepassen op verschillende tekstgedeelten door de`ParagraphFormat.StyleName` eigendom van de`DocumentBuilder`voorwerp. Voordat u de tekst schrijft, kunt u de stijlnaam instellen op de gewenste stijl, waarna de tekst die daarop volgt dienovereenkomstig wordt opgemaakt.
+ kunt verschillende stijlen toepassen op verschillende tekstgedeelten door de`ParagraphFormat.StyleName` eigendom van de`DocumentBuilder` voorwerp. Voordat u de tekst schrijft, kunt u de stijlnaam instellen op de gewenste stijl, waarna de tekst die daarop volgt dienovereenkomstig wordt opgemaakt.
 
 #### Kan ik het document in verschillende formaten opslaan?
 

@@ -55,7 +55,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### コンテンツを追加する
 
-カーソルの動作を確認するには、ドキュメントに段落を追加してみましょう。
+カーソルの動作を確認するために、ドキュメントに段落を追加してみましょう。
 
 ```csharp
 builder.Writeln("Hello, Aspose.Words!");

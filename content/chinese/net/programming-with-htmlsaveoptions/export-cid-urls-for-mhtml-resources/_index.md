@@ -37,7 +37,7 @@ ExportCidUrlsForMhtmlResources = true
 };
 ```
 
-此代码创建`HtmlSaveOptions`保存格式设置为 MHTML。它还允许导出 MHTML 资源的 CID URL，方法是设置`ExportCidUrlsForMhtmlResources`到`true`.
+此代码创建`HtmlSaveOptions`保存格式设置为 MHTML。它还允许通过设置导出 MHTML 资源的 CID URL`ExportCidUrlsForMhtmlResources`到`true`.
 
 ## 步骤 4：将文档转换并保存为 MHTML
 

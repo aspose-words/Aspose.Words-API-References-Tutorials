@@ -19,8 +19,8 @@ Bu eğitimleri takip ederek Aspose.Words for .NET'i kullanarak Word belgeleriniz
 | Başlık | Tanım |
 | --- | --- |
 | [Bölüm Ekle](./add-section/) | Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesine nasıl bölüm ekleyeceğinizi öğrenin. Belgenizi yapılandırmak için adım adım kılavuz. |
-| [Bölümü Sil](./delete-section/) | Bu eğitimde Aspose.Words for .NET ile bir Word belgesinden belirli bir bölümün nasıl kaldırılacağını öğrenin. |
-| [Tüm Bölümleri Sil](./delete-all-sections/) | Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki tüm bölümlerin nasıl kaldırılacağını öğrenin. |
+| [Bölümü Sil](./delete-section/) | Aspose.Words for .NET ile belge manipülasyonunda ustalaşın. Birkaç basit adımda Word belgelerinden bölümleri nasıl sileceğinizi öğrenin. |
+| [Tüm Bölümleri Sil](./delete-all-sections/) | Bu takip edilmesi kolay, adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesindeki tüm bölümleri nasıl sileceğinizi öğrenin. |
 | [Bölüm Word İçeriğini Ekle](./append-section-content/) | Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinin belirli bölümlerine nasıl sözcük içeriği ekleyeceğinizi öğrenin.  |
 | [Klon Bölümü](./clone-section/) | Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölümün nasıl kopyalanacağını öğrenin. Adım adım rehber. |
 | [Bölümü Kopyala](./copy-section/) | Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölümü başka bir belgeye nasıl kopyalayacağınızı öğrenin. |

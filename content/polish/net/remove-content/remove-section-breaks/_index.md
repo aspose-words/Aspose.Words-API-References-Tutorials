@@ -46,7 +46,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 ```
 
 ## Krok 4: Zapisz zmodyfikowany dokument
- Na koniec zapiszemy zmodyfikowany dokument za pomocą pliku`Save` metoda. Określ żądaną ścieżkę i format pliku wyjściowego (np. DOCX) dla zmodyfikowanego dokumentu.
+Na koniec zapiszemy zmodyfikowany dokument za pomocą pliku`Save` metoda. Określ żądaną ścieżkę i format pliku wyjściowego (np. DOCX) dla zmodyfikowanego dokumentu.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

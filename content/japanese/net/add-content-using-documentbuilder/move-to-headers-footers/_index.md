@@ -2,7 +2,7 @@
 title: Word 文書のヘッダー フッターに移動
 linktitle: Word 文書のヘッダー フッターに移動
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書のヘッダーとフッターに移動する方法をステップバイステップ ガイドで学習します。ドキュメント作成スキルを向上させます。
+description: Aspose.Words for .NET を使用して Word 文書のヘッダーとフッターに移動する方法をステップバイステップ ガイドで学習します。ドキュメント作成スキルを強化します。
 type: docs
 weight: 10
 url: /ja/net/add-content-using-documentbuilder/move-to-headers-footers/

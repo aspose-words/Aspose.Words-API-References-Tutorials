@@ -17,14 +17,14 @@ För att följa denna handledning måste du ha följande:
 - Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Steg 2: Skapa ett nytt dokument och DocumentBuilder
- Skapa en ny instans av`Document` klass och a`DocumentBuilder`objekt för att arbeta med dokumentet.
+ Skapa en ny instans av`Document` klass och a`DocumentBuilder` objekt för att arbeta med dokumentet.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Steg 3: Infoga en bildform
- Använd`InsertImage` metod för`DocumentBuilder` objekt för att infoga en bildform i dokumentet. Ange sökvägen till bildfilen som en parameter.
+ Använd`InsertImage` metod för`DocumentBuilder`objekt för att infoga en bildform i dokumentet. Ange sökvägen till bildfilen som en parameter.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  Ställ in`AspectRatioLocked` formens egenskap till`true` eller`false` för att låsa respektive låsa upp bildförhållandet.
 
 ```csharp
-shape.AspectRatioLocked = false; //Lås upp bildförhållandet
+shape.AspectRatioLocked = false; // Lås upp bildförhållandet
 ```
 
 ## Steg 5: Spara dokumentet

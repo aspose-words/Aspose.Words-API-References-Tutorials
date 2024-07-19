@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Krok 4: Wstaw komórkę i przejdź do formatu wiersza
-Teraz możemy wstawić komórkę do tabeli i uzyskać dostęp do formatu wiersza dla tej komórki za pomocą narzędzia do tworzenia dokumentów`InsertCell()` I`RowFormat` metody.
+Teraz możemy wstawić komórkę do tabeli i uzyskać dostęp do formatu wiersza dla tej komórki za pomocą narzędzia do tworzenia dokumentów`InsertCell()`I`RowFormat` metody.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Krok 5: Ustaw wysokość wiersza
- Aby ustawić wysokość wiersza, używamy`Height` I`HeightRule` właściwości formatu wiersza. W tym przykładzie ustawiliśmy wysokość wiersza na 100 punktów i użyliśmy metody`Exactly` reguła.
+ Aby ustawić wysokość wiersza, używamy`Height`I`HeightRule` właściwości formatu wiersza. W tym przykładzie ustawiliśmy wysokość wiersza na 100 punktów i użyliśmy metody`Exactly` reguła.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Krok 6: Zdefiniuj formatowanie tabeli
- Niektóre właściwości formatowania można ustawić w samej tabeli i zastosować do wszystkich wierszy tabeli. W tym przykładzie ustawiamy właściwości marginesów tabeli za pomocą`LeftPadding`, `RightPadding`, `TopPadding` I`BottomPadding` nieruchomości.
+ Niektóre właściwości formatowania można ustawić w samej tabeli i zastosować do wszystkich wierszy tabeli. W tym przykładzie ustawiamy właściwości marginesów tabeli za pomocą`LeftPadding`, `RightPadding`, `TopPadding`I`BottomPadding` nieruchomości.
 
 ```csharp
 table. LeftPadding = 30;

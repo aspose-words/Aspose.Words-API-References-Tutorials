@@ -11,7 +11,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ để thao tác và tạ
 
 Hướng dẫn "Xử lý từ bằng HtmlSaveOptions" tập trung vào việc sử dụng các tùy chọn lưu HTML trong Aspose.Words cho .NET. Hướng dẫn này hướng dẫn các nhà phát triển thông qua các tùy chọn khác nhau có sẵn để tùy chỉnh việc chuyển đổi tài liệu Word sang HTML. Các ví dụ mã chi tiết được cung cấp để chứng minh việc sử dụng các tùy chọn này và đạt được kết quả chuyển đổi mong muốn.
 
-Cho dù bạn muốn chuyển đổi tài liệu Word sang HTML để hiển thị trên web, nhúng nội dung HTML vào tài liệu Word hay tùy chỉnh hiển thị HTML, hướng dẫn này sẽ cung cấp cho bạn kiến thức và kỹ năng để làm điều đó. Nhờ những giải thích chi tiết và ví dụ thực tế, bạn sẽ có thể khai thác triệt để các chức năng chuyển đổi HTML của Aspose.Words cho .NET trong các dự án phát triển của mình.
+Cho dù bạn muốn chuyển đổi tài liệu Word sang HTML để hiển thị trên web, nhúng nội dung HTML vào tài liệu Word hay tùy chỉnh hiển thị HTML, hướng dẫn này sẽ cung cấp cho bạn kiến thức và kỹ năng để thực hiện điều đó. Nhờ những giải thích chi tiết và ví dụ thực tế, bạn sẽ có thể khai thác triệt để các chức năng chuyển đổi HTML của Aspose.Words cho .NET trong các dự án phát triển của mình.
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |

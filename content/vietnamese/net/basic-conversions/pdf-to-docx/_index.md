@@ -56,7 +56,7 @@ Bây giờ, hãy tải tài liệu PDF vào dự án của chúng ta bằng Aspo
 Document doc = new Document(dataDir + "Pdf Document.pdf");
 ```
 
- Ở đây, chúng ta tạo một thể hiện của`Document`class và chuyển đường dẫn của tệp PDF của chúng tôi tới nó. Hành động này tải tệp PDF vào bộ nhớ, sẵn sàng để chuyển đổi.
+ Ở đây, chúng ta tạo một thể hiện của`Document` class và chuyển đường dẫn của tệp PDF của chúng tôi tới nó. Hành động này tải tệp PDF vào bộ nhớ, sẵn sàng để chuyển đổi.
 
 ## Bước 3: Lưu tệp PDF dưới dạng tài liệu Word
 

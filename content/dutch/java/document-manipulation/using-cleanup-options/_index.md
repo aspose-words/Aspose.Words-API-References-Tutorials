@@ -150,7 +150,7 @@ Opruimopties in Aspose.Words voor Java zijn instellingen waarmee u verschillende
 
 ###  Wat is het doel van de`REMOVE_UNUSED_REGIONS` cleanup option?
 
- De`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` optie wordt gebruikt om gebieden in een document te verwijderen die geen overeenkomstige gegevens hebben tijdens het samenvoegproces. Het helpt uw document netjes te houden door ongebruikte tijdelijke aanduidingen te verwijderen.
+ De`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` De optie wordt gebruikt om regio's in een document te verwijderen die geen overeenkomstige gegevens bevatten tijdens het samenvoegproces. Het helpt uw document netjes te houden door ongebruikte tijdelijke aanduidingen te verwijderen.
 
 ### Kan ik lege tabelrijen uit een document verwijderen met Aspose.Words voor Java?
 

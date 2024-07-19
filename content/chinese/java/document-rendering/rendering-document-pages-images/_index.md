@@ -70,7 +70,7 @@ for (int pageIndex = 0; pageIndex < doc.getPageCount(); pageIndex++) {
 
 在本分步指南中，我们学习了如何使用 Aspose.Words for Java 将文档页面渲染为图像。这对于需要文档可视化表示的各种应用程序非常有用。
 
-请记住根据您的特定需求调整保存选项和文件路径。Aspose.Words for Java 在自定义渲染过程中提供了广泛的灵活性，使您能够实现所需的输出。
+请记住根据您的特定需求调整保存选项和文件路径。Aspose.Words for Java 在自定义渲染过程方面提供了广泛的灵活性，使您能够实现所需的输出。
 
 ## 常见问题解答
 

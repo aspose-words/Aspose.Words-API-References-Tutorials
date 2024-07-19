@@ -2,7 +2,7 @@
 title: Odebrat pole
 linktitle: Odebrat pole
 second_title: Aspose.Words API pro zpracování dokumentů
-description: této příručce se dozvíte, jak odstranit konkrétní pole v dokumentu pomocí Aspose.Words for .NET.
+description: V této příručce se dozvíte, jak odstranit konkrétní pole v dokumentu pomocí Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /cs/net/working-with-fields/remove-field/
@@ -65,7 +65,7 @@ Chcete-li odstranit konkrétní pole v dokumentu pomocí Aspose.Words for .NET, 
 
 #### Otázka: Jak mohu odstranit pole v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
- Odpověď: Chcete-li odstranit pole v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete procházet pole v dokumentu pomocí`FieldStart` třídy a použijte`FieldStart.Remove`způsob odstranění pole.
+ Odpověď: Chcete-li odstranit pole v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete procházet pole v dokumentu pomocí`FieldStart` třídy a použijte`FieldStart.Remove` způsob odstranění pole.
 
 #### Otázka: Je možné odstranit pouze určitá pole v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 

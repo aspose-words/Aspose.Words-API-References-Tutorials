@@ -66,7 +66,7 @@ Het converteren van documenten naar afbeeldingen in Java is eenvoudig gemaakt me
  Om de beeldresolutie in te stellen, gebruikt u de`setResolution` methode van`ImageSaveOptions` en geef de gewenste resolutie op in dots per inch (DPI).
 
 ### Kan ik specifieke pagina's van het document naar afbeeldingen converteren?
- Ja, u kunt een paginabereik opgeven met behulp van de`setPageCount` En`setPageIndex` methodes van`ImageSaveOptions` om specifieke pagina's naar afbeeldingen te converteren.
+ Ja, u kunt een paginabereik opgeven met behulp van de`setPageCount`En`setPageIndex` methodes van`ImageSaveOptions` om specifieke pagina's naar afbeeldingen te converteren.
 
 ### Is Aspose.Words voor Java geschikt voor batchdocumentconversie?
 Absoluut! U kunt Aspose.Words voor Java gebruiken om meerdere documenten efficiënt in batches naar afbeeldingen te converteren.

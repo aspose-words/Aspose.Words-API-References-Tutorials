@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/programming-with-txtloadoptions/handle-spaces-options/
 ---
 
-在本教程中，我们将探索使用 Aspose.Words for .NET 提供的“使用 TXT 加载选项管理空格”功能的 C# 源代码。此功能允许您在加载 TXT 文档时指定空格处理行为。
+在本教程中，我们将探索 Aspose.Words for .NET 提供的“使用 TXT 加载选项管理空格”功能的 C# 源代码。此功能允许您在加载 TXT 文档时指定空格处理行为。
 
 ## 步骤 1：设置环境
 

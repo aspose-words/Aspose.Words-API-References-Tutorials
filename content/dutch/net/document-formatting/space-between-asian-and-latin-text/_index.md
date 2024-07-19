@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Door in te stellen`AddSpaceBetweenFarEastAndAlpha` En`AddSpaceBetweenFarEastAndDigit` naar`true`, vertellen we Aspose.Words om de afstand tussen Aziatische tekens en Latijnse letters of cijfers automatisch aan te passen.
+ Door in te stellen`AddSpaceBetweenFarEastAndAlpha`En`AddSpaceBetweenFarEastAndDigit` naar`true`, vertellen we Aspose.Words om de afstand tussen Aziatische tekens en Latijnse letters of cijfers automatisch aan te passen.
 
 ## Stap 3: Tekst aan het document toevoegen
 

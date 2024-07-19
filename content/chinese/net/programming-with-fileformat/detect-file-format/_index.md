@@ -23,7 +23,7 @@ string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-//如果目录不存在，请创建目录。
+//如果目录不存在，则创建目录。
 if (Directory.Exists(supportedDir) == false)
 Directory.CreateDirectory(supportedDir);
 if (Directory.Exists(unknownDir) == false)
@@ -54,7 +54,7 @@ Console.Write(nameOnly);
 
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-//显示文档类型
+//显示文件类型
 switch (info.LoadFormat)
 {
 LoadFormat.Doc box:
@@ -110,7 +110,7 @@ break;
 	string encryptedDir = dataDir + "Encrypted";
 	string pre97Dir = dataDir + "Pre97";
 
-	//如果目录不存在，则创建目录。
+	//如果目录尚不存在，则创建目录。
 	if (Directory.Exists(supportedDir) == false)
 		Directory.CreateDirectory(supportedDir);
 	if (Directory.Exists(unknownDir) == false)
@@ -131,7 +131,7 @@ break;
 		
 		FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-		//显示文档类型
+		//显示文件类型
 		switch (info.LoadFormat)
 		{
 			case LoadFormat.Doc:

@@ -65,4 +65,4 @@ doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 نعم، يمكنك معالجة ملفات نصية متعددة دفعة واحدة باستخدام Aspose.Words APIs لتبسيط مهام تحويل المستندات الخاصة بك.
 
 ### أين يمكنني العثور على المزيد من الموارد والدعم لـ Aspose.Words؟
- قم بزيارة[وثائق Aspose.Words](https://reference.aspose.com/words/net/) و[منتدى الدعم](https://forum.aspose.com/c/words/8) لمزيد من المعلومات والمساعدة.
+ قم بزيارة[وثائق Aspose.Words](https://reference.aspose.com/words/net/)و[منتدى الدعم](https://forum.aspose.com/c/words/8) لمزيد من المعلومات والمساعدة.

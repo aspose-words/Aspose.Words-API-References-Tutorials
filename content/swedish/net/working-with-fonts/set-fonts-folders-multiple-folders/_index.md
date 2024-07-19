@@ -73,7 +73,7 @@ den här handledningen lärde vi oss hur du ställer in flera teckensnittsmappar
 
 #### F: Påverkar inställning av flera teckensnittsmappar alla dokument som bearbetas med Aspose.Words?
 
-S: Ja, inställning av flera teckensnittsmappar påverkar alla dokument som bearbetas med Aspose.Words. När du har definierat teckensnittsmapparna kommer Aspose.Words att använda dessa platser för att söka efter teckensnitt i alla dokument.
+S: Ja, inställning av flera teckensnittsmappar påverkar alla dokument som bearbetas med Aspose.Words. När du har definierat typsnittsmapparna kommer Aspose.Words att använda dessa platser för att söka efter typsnitt i alla dokument.
 
 #### F: Hur många teckensnittsmappar kan jag definiera i Aspose.Words?
 

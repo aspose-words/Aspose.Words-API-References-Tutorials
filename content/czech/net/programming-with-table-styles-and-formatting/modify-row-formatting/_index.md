@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Krok 3: Otevřete řádek, který chcete upravit
- Chcete-li změnit formátování řádku tabulky, musíme přejít na konkrétní řádek v tabulce. Používáme`GetChild()` a`FirstRow` metody pro získání odkazu na první řádek tabulky.
+ Chcete-li změnit formátování řádku tabulky, musíme přejít na konkrétní řádek v tabulce. Používáme`GetChild()`a`FirstRow` metody pro získání odkazu na první řádek tabulky.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

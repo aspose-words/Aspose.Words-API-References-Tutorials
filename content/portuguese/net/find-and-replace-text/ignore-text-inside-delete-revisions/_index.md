@@ -2,204 +2,86 @@
 title: Ignorar texto dentro de excluir revisões
 linktitle: Ignorar texto dentro de excluir revisões
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como usar o recurso "Ignorar texto dentro de exclusão de revisões" do Aspose.Words for .NET.
+description: Aprenda como lidar com revisões rastreadas em documentos do Word usando Aspose.Words for .NET. Domine a automação de documentos com este tutorial abrangente.
 type: docs
 weight: 10
 url: /pt/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
+## Introdução
 
-Neste artigo, exploraremos o código-fonte C# acima para entender como usar o recurso "Ignorar texto dentro de excluir revisões" na biblioteca Aspose.Words for .NET. Este recurso é útil quando queremos ignorar o texto dentro das revisões de exclusão durante o processamento de palavras com documentos.
+No domínio do desenvolvimento .NET, Aspose.Words se destaca como uma biblioteca robusta para trabalhar programaticamente com documentos do Microsoft Word. Quer você seja um desenvolvedor experiente ou apenas começando, dominar os recursos do Aspose.Words pode melhorar significativamente sua capacidade de manipular, criar e gerenciar documentos do Word com eficiência. Este tutorial se aprofunda em um de seus recursos poderosos: lidar com revisões rastreadas em documentos usando Aspose.Words for .NET.
 
-## Visão geral da biblioteca Aspose.Words for .NET
+## Pré-requisitos
 
-Antes de mergulhar nos detalhes do código, deixe-me apresentar brevemente a biblioteca Aspose.Words for .NET. É uma poderosa biblioteca que permite criar, modificar e converter documentos Word em aplicações .NET. Ele oferece muitos recursos avançados para processamento de texto com documentos, incluindo gerenciamento de revisões.
+Antes de mergulhar neste tutorial, certifique-se de ter os seguintes pré-requisitos em vigor:
+- Conhecimento básico da linguagem de programação C#.
+- Visual Studio instalado em seu sistema.
+-  Biblioteca Aspose.Words for .NET integrada ao seu projeto. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+- Acesso ao Aspose.Words para .NET[documentação](https://reference.aspose.com/words/net/) para referência.
 
-## Compreendendo o recurso "Ignorar texto dentro de exclusão de revisões"
+## Importar namespaces
 
-recurso "Ignorar texto dentro de revisões de exclusão" em Aspose.Words for .NET permite especificar se o texto dentro de revisões de exclusão deve ser ignorado durante certas operações, como localizar e substituir texto. Quando este recurso está habilitado, o texto excluído nas revisões não é considerado durante as operações.
+Comece importando os namespaces necessários para o seu projeto:
+```csharp
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+## Etapa 1: crie um novo documento e insira texto
 
-## Etapa 1: Criando um novo documento usando Aspose.Words for .NET
-
- Antes de começarmos a manipular o texto em um documento, precisamos criar um novo documento usando Aspose.Words for .NET. Isso pode ser feito instanciando um`Document` objeto:
-
+ Primeiro, inicialize uma nova instância de`Document` e um`DocumentBuilder` para começar a construir seu documento:
 ```csharp
 Document doc = new Document();
-```
-
-## Etapa 2: Inserir texto não revisado no documento
-
- Assim que tivermos um documento, podemos inserir texto não revisado usando um`DocumentBuilder` objeto. Por exemplo, para inserir o texto “Texto Excluído”, podemos usar o`Writeln` e`Write` métodos:
-
-```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. Writen("Deleted");
-builder. Write("Text");
 ```
 
-## Etapa 3: remover um parágrafo com revisões de rastreamento
+## Etapa 2: inserir texto e rastrear revisões
 
-Para ilustrar o uso do recurso "Ignorar texto dentro de exclusão de revisões", excluiremos um parágrafo do documento usando o rastreamento de revisão. Isso nos permitirá ver como esse recurso afeta as operações subsequentes.
-
+Você pode inserir texto no documento e rastrear revisões iniciando e parando o rastreamento de revisões:
 ```csharp
+builder.Writeln("Deleted");
+builder.Write("Text");
+
 doc.StartTrackRevisions("author", DateTime.Now);
 doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## Etapa 4: aplicar o recurso "Ignorar texto dentro de exclusão de revisões"
+## Etapa 3: Substitua o texto usando expressões regulares
 
- Agora que preparamos nosso documento excluindo um parágrafo, podemos ativar o recurso "Ignorar texto dentro de excluir revisões" usando um`FindReplaceOptions` objeto. Vamos definir o`IgnoreDeleted`propriedade para`true`:
-
+Para manipular texto, você pode usar expressões regulares para localizar e substituir padrões específicos:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
 
-## Etapa 5: usando expressões regulares para localizar e substituir
-
-Para realizar operações de busca e substituição no texto do documento, utilizaremos expressões regulares. No nosso exemplo, procuraremos todas as ocorrências da letra “e” e as substituiremos por um asterisco “* ". .LÍQUIDO`Regex` classe é utilizada para isso:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
-```
 
-## Etapa 6: Exibindo a saída do documento modificado
-
- Após aplicar a pesquisa e substituição, podemos exibir o conteúdo alterado do documento usando o`GetText` método:
-
-```csharp
 Console.WriteLine(doc.GetText());
-```
 
-## Etapa 7: Modificando as opções para incluir texto excluído
-
- Se quisermos incluir o texto excluído no resultado de saída, podemos alterar as opções para não ignorar o texto excluído. Para isso vamos definir o`IgnoreDeleted`propriedade para`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-## Etapa 8: saída do documento modificado com texto excluído
-
-Após alterar as opções, podemos realizar a busca e substituir novamente para obter o resultado com o texto excluído incluído:
-
-```csharp
+options.IgnoreDeleted = false;
 doc.Range.Replace(regex, "*", options);
+
 Console.WriteLine(doc.GetText());
-```
-
-### Exemplo de código-fonte para Ignore Text Inside Delete Revisions usando Aspose.Words for .NET
-
-Aqui está o exemplo de código-fonte completo para demonstrar o uso do recurso "Ignorar texto dentro de excluir revisões" com Aspose.Words for .NET:
-
-```csharp
-        
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Insira texto não revisado.
-	builder.Writeln("Deleted");
-	builder.Write("Text");
-
-	// Remova o primeiro parágrafo com revisões de rastreamento.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	doc.FirstSection.Body.FirstParagraph.Remove();
-	doc.StopTrackRevisions();
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreDeleted = false;
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-    
 ```
 
 ## Conclusão
 
-Neste artigo, exploramos o código-fonte C# para entender como usar o recurso "Ignorar texto dentro de excluir revisões" no Aspose.Words for .NET. Este recurso é útil para ignorar texto dentro de revisões de exclusão ao manipular documentos. Seguimos um guia passo a passo para criar um documento, inserir texto, excluir um parágrafo com rastreamento de revisão, aplicar o recurso “Ignorar texto dentro, excluir revisões” e realizar operações de localização e substituição.
+Dominar as revisões rastreadas em documentos do Word usando Aspose.Words for .NET capacita os desenvolvedores a automatizar tarefas de edição de documentos com eficiência. Ao aproveitar sua API abrangente e recursos robustos, você pode integrar perfeitamente o tratamento de revisões em seus aplicativos, aumentando a produtividade e os recursos de gerenciamento de documentos.
 
-### Perguntas frequentes
+## Perguntas frequentes
 
-#### P: O que é a função "Ignorar texto dentro de exclusão de revisões" no Aspose.Words for .NET?
+### O que são revisões rastreadas em documentos do Word?
+As revisões controladas em documentos do Word referem-se a alterações feitas em um documento que são visíveis para outras pessoas com marcação, geralmente usadas para edição e revisão colaborativa.
 
-R: A função "Ignorar texto dentro de revisões de exclusão" em Aspose.Words for .NET permite que você especifique se o texto dentro de revisões de exclusão deve ser ignorado durante certas operações, como localizar e substituir texto. Quando este recurso está habilitado, o texto excluído nas revisões não é considerado durante as operações.
+### Como posso integrar o Aspose.Words for .NET ao meu projeto do Visual Studio?
+Você pode integrar o Aspose.Words for .NET baixando a biblioteca do site do Aspose e referenciando-a em seu projeto do Visual Studio.
 
-#### P: O que é Aspose.Words para .NET?
+### Posso reverter revisões rastreadas programaticamente usando Aspose.Words for .NET?
+Sim, você pode gerenciar e reverter programaticamente revisões rastreadas usando Aspose.Words for .NET, permitindo controle preciso sobre fluxos de trabalho de edição de documentos.
 
-R: Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e converter documentos do Word em aplicativos .NET. Ele oferece muitos recursos avançados para processamento de texto com documentos, incluindo gerenciamento de revisões.
+### O Aspose.Words for .NET é adequado para lidar com documentos grandes com revisões rastreadas?
+Aspose.Words for .NET é otimizado para lidar com documentos grandes de forma eficiente, incluindo aqueles com extensas revisões controladas.
 
-#### P: Como criar um novo documento no Aspose.Words for .NET?
-
- R: Antes de começar a manipular o texto em um documento, você precisa criar um novo documento usando Aspose.Words for .NET. Isso pode ser feito instanciando um`Document` objeto. Aqui está um exemplo de código para criar um novo documento:
-
-```csharp
-Document doc = new Document();
-```
-
-#### P: Como inserir texto não editado em um documento usando Aspose.Words for .NET?
-
- R: Depois de ter um documento, você pode inserir texto não revisado usando um`DocumentBuilder` objeto. Por exemplo, para inserir o texto "Texto Excluído", você pode usar o`Writeln` e`Write` métodos:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writen("Deleted");
-builder.Write("Text");
-```
-
-#### P: Como excluo um parágrafo com rastreamento de revisão no Aspose.Words for .NET?
-
-R: Para ilustrar o uso da função "Ignorar texto dentro de exclusão de revisões", excluiremos um parágrafo do documento usando o rastreamento de revisão. Isso nos permitirá ver como esta função afeta as operações subsequentes.
-
-```csharp
-doc.StartTrackRevisions("author", DateTime.Now);
-doc.FirstSection.Body.FirstParagraph.Remove();
-doc.StopTrackRevisions();
-```
-
-#### P: Como ativar o recurso "Ignorar texto dentro de exclusão de revisões" no Aspose.Words for .NET?
-
- R: Agora que preparamos nosso documento excluindo um parágrafo, podemos ativar o recurso "Ignorar texto dentro de excluir revisões" usando um`FindReplaceOptions` objeto. Vamos definir o`IgnoreDeleted`propriedade para`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
-
-#### P: Como pesquisar e substituir usando expressões regulares no Aspose.Words for .NET?
-
-R: Para realizar operações de busca e substituição no texto do documento, usaremos expressões regulares. No nosso exemplo, procuraremos todas as ocorrências da letra “e” e as substituiremos por um asterisco “* ". Usaremos o .NET`Regex` aula para isso:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### P: Como visualizar o conteúdo alterado do documento no Aspose.Words for .NET?
-
-R: Depois de aplicar a pesquisa e substituição, podemos exibir o conteúdo alterado do documento usando o`GetText` método:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### P: Como incluir texto excluído no resultado de saída em Aspose.Words for .NET?
-
- R: Se quisermos incluir o texto excluído no resultado de saída, podemos alterar as opções para não ignorar o texto excluído. Para isso, definiremos o`IgnoreDeleted`propriedade para`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-#### P: Como mostrar o documento editado com texto excluído no Aspose.Words for .NET?
-
-R: Após alterar as opções, podemos fazer uma nova pesquisa e substituir para obter o resultado com o texto excluído incluído:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Onde posso encontrar mais recursos e suporte para Aspose.Words for .NET?
+Você pode explorar a documentação abrangente e obter suporte da comunidade Aspose.Words for .NET em[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).

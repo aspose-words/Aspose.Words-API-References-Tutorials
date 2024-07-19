@@ -139,7 +139,7 @@ Aprimorar seus documentos com formas e gráficos pode melhorar significativament
 
 ### Como posso redimensionar uma forma no meu documento?
 
- Para redimensionar uma forma, use o`setWidth` e`setHeight` métodos no objeto de forma. Por exemplo, para criar uma forma com 150 pixels de largura e 75 pixels de altura:
+ Para redimensionar uma forma, use o`setWidth`e`setHeight` métodos no objeto de forma. Por exemplo, para criar uma forma com 150 pixels de largura e 75 pixels de altura:
 
 ```java
 shape.setWidth(150);

@@ -9,7 +9,7 @@ url: /sv/net/working-with-markdown/strikethrough/
 ---
 
 
-I det här exemplet kommer vi att gå igenom hur du tillämpar den genomstrukna textstilen med Aspose.Words för .NET. Genomstruken text används för att indikera att texten är raderad eller inte längre giltig.
+det här exemplet kommer vi att gå igenom hur du tillämpar den genomstrukna textstilen med Aspose.Words för .NET. Genomstruken text används för att indikera att texten är raderad eller inte längre giltig.
 
 ## Steg 1: Använda en dokumentgenerator
 
@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Steg 2: Använd genomstruken textstil
 
-Vi kommer att aktivera den genomstrukna textstilen genom att ställa in`StrikeThrough` egendom av`Font` invända mot`true`.
+ Vi kommer att aktivera den genomstrukna textstilen genom att ställa in`StrikeThrough` egendom av`Font` invända mot`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

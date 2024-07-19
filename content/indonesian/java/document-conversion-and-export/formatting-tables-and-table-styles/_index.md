@@ -226,7 +226,7 @@ table.setStyle(tableStyle);
 
 ## Langkah 15: Atur Pemformatan TableCell
 
-Tetapkan pemformatan spesifik untuk sel individual:
+Tetapkan pemformatan khusus untuk masing-masing sel:
 
 ```java
 Document doc = new Document();

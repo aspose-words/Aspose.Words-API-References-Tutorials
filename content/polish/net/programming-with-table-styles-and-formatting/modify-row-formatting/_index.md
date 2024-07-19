@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Krok 3: Uzyskaj dostęp do linii, którą chcesz zmodyfikować
- Aby zmienić formatowanie wiersza tabeli, musimy przejść do konkretnego wiersza w tabeli. Używamy`GetChild()` I`FirstRow` metody uzyskania odniesienia do pierwszego wiersza tabeli.
+ Aby zmienić formatowanie wiersza tabeli, musimy przejść do konkretnego wiersza w tabeli. Używamy`GetChild()`I`FirstRow` metody uzyskania odniesienia do pierwszego wiersza tabeli.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

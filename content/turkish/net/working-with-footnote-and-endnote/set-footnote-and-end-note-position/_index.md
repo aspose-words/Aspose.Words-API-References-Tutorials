@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Adım 2: Dipnot ve Sonnot Konumunu Ayarlama
 
- Daha sonra şuraya erişin:`FootnoteOptions` Ve`EndnoteOptions`Dipnotların ve son notların konumunu ayarlamak için belgenin özellikleri. Bu örnekte dipnotların konumunu metnin altında, son notların konumunu ise bölümün sonunda olacak şekilde ayarladık:
+ Daha sonra şuraya erişin:`FootnoteOptions`Ve`EndnoteOptions`Dipnotların ve son notların konumunu ayarlamak için belgenin özellikleri. Bu örnekte dipnotların konumunu metnin altında, son notların konumunu ise bölümün sonunda olacak şekilde ayarladık:
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;

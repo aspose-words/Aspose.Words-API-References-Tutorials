@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Krok 3: Załaduj swoje dokumenty
 
-OK, czas załadować dokumenty, które chcesz porównać. Będziesz potrzebować ścieżek do tych dokumentów. Załóżmy, że masz dwa dokumenty:`DocumentA.docx` I`DocumentB.docx`.
+OK, czas załadować dokumenty, które chcesz porównać. Będziesz potrzebować ścieżek do tych dokumentów. Załóżmy, że masz dwa dokumenty:`DocumentA.docx`I`DocumentB.docx`.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.

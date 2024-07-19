@@ -14,7 +14,7 @@ En este tutorial paso a paso, lo guiaremos sobre cómo insertar campos de formul
 
 ## Paso 1: inicializar los objetos Document y DocumentBuilder
 
- Primero, inicialice el`Document` y`DocumentBuilder` objetos:
+ Primero, inicialice el`Document`y`DocumentBuilder` objetos:
 
 ```csharp
 Document doc = new Document();

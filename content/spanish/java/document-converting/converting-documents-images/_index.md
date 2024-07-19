@@ -66,7 +66,7 @@ Convertir documentos a imágenes en Java es fácil con Aspose.Words para Java. P
  Para configurar la resolución de la imagen, utilice el`setResolution` método de`ImageSaveOptions` y especifique la resolución deseada en puntos por pulgada (DPI).
 
 ### ¿Puedo convertir páginas específicas del documento en imágenes?
- Sí, puede especificar un rango de páginas usando el`setPageCount` y`setPageIndex` métodos de`ImageSaveOptions` para convertir páginas específicas en imágenes.
+ Sí, puede especificar un rango de páginas usando el`setPageCount`y`setPageIndex` métodos de`ImageSaveOptions` para convertir páginas específicas en imágenes.
 
 ### ¿Aspose.Words para Java es adecuado para la conversión de documentos por lotes?
 ¡Absolutamente! Puede utilizar Aspose.Words para Java para convertir por lotes varios documentos en imágenes de manera eficiente.

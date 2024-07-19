@@ -2,59 +2,86 @@
 title: Grafiğin Eksenine Tarih Saat Değerleri Ekleme
 linktitle: Grafiğin Eksenine Tarih Saat Değerleri Ekleme
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak bir grafiğin eksenine tarih saat değerlerini nasıl ekleyeceğinizi öğrenin.
+description: Bu kapsamlı adım adım kılavuzdan Aspose.Words for .NET kullanarak bir grafiğin eksenine tarih ve saat değerlerini nasıl ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/date-time-values-to-axis/
 ---
+## giriiş
 
-Bu eğitimde Aspose.Words for .NET kullanılarak bir grafiğin eksenine tarih saat değerlerinin nasıl ekleneceği açıklanmaktadır.
+Belgelerde grafikler oluşturmak, verileri görselleştirmenin güçlü bir yolu olabilir. Zaman serisi verileriyle uğraşırken, grafiğin eksenine tarih ve saat değerlerinin eklenmesi netlik açısından çok önemlidir. Bu eğitimde, Aspose.Words for .NET'i kullanarak bir grafiğin eksenine tarih ve saat değerleri ekleme sürecinde size yol göstereceğiz. Bu adım adım kılavuz, ortamınızı kurmanıza, kodu yazmanıza ve sürecin her bölümünü anlamanıza yardımcı olacaktır. Hadi dalalım!
 
 ## Önkoşullar
-Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 
-- Aspose.Words for .NET kütüphanesi kuruldu.
-- Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
+Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+1. Visual Studio veya herhangi bir .NET IDE: .NET kodunuzu yazmak ve çalıştırmak için bir geliştirme ortamına ihtiyacınız vardır.
+2.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+3. Temel C# bilgisi: Bu eğitimde C# programlama konusunda temel bilgiye sahip olduğunuz varsayılmaktadır.
+4.  Geçerli bir Aspose lisansı: Geçici bir lisansı şu adresten alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/).
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için projenize gerekli ad alanlarının aktarıldığından emin olun. Bu adım Aspose.Words sınıflarına ve yöntemlerine erişim için çok önemlidir.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+## 1. Adım: Belge Dizininizi Kurun
+
+Öncelikle belgenizin kaydedileceği dizini tanımlamanız gerekir. Bu, dosyalarınızı düzenlemek ve kodunuzun doğru şekilde çalışmasını sağlamak için önemlidir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Yeni Bir Belge ve DocumentBuilder Oluşturun
- Yeni bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder`belgeyle çalışmaya itiraz edin.
+
+ Daha sonra, yeni bir örneğini oluşturun.`Document` sınıf ve bir`DocumentBuilder` nesne. Bu nesneler belgenizi oluşturmanıza ve değiştirmenize yardımcı olacaktır.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Grafik Şekli Ekleme ve Yapılandırma
- kullanarak belgeye bir grafik şekli ekleyin.`InsertChart` yöntemi`DocumentBuilder` nesne. İstediğiniz grafik türünü ve boyutlarını ayarlayın.
+## 3. Adım: Belgeye Grafik Ekleme
+
+ Şimdi belgenize şunu kullanarak bir grafik ekleyin:`DocumentBuilder` nesne. Bu örnekte sütun grafiği kullanıyoruz ancak diğer türleri de seçebilirsiniz.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
+```
+
+## Adım 4: Mevcut Serileri Temizle
+
+Boş bir sayfayla başladığınızdan emin olmak için grafikteki mevcut serileri temizleyin. Bu adım özel veriler için gereklidir.
+
+```csharp
 chart.Series.Clear();
 ```
 
-## 4. Adım: Grafiğe Veri Ekleme
-Tarih saat değerleri de dahil olmak üzere grafik serisine veri ekleyin.
+## Adım 5: Seriye Tarih ve Saat Değerlerini Ekleme
+
+Tarih ve saat değerlerinizi grafik serisine ekleyin. Bu adım, tarihler ve karşılık gelen değerler için diziler oluşturmayı içerir.
 
 ```csharp
 chart.Series.Add("Aspose Series 1",
-	new[]
-	{
-		new DateTime(2017, 11, 06), new DateTime(2017, 11, 09), new DateTime(2017, 11, 15),
-		new DateTime(2017, 11, 21), new DateTime(2017, 11, 25), new DateTime(2017, 11, 29)
-	},
-	new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
+    new[]
+    {
+        new DateTime(2017, 11, 06), new DateTime(2017, 11, 09), new DateTime(2017, 11, 15),
+        new DateTime(2017, 11, 21), new DateTime(2017, 11, 25), new DateTime(2017, 11, 29)
+    },
+    new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
 ```
 
-## Adım 5: Ekseni Yapılandırın
-Tarih saat değerlerini görüntülemek için grafiğin X eksenini yapılandırın.
+## Adım 6: X Eksenini Yapılandırma
+
+ekseni için ölçeklendirmeyi ve onay işaretlerini ayarlayın. Bu, tarihlerinizin doğru ve uygun aralıklarla görüntülenmesini sağlar.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
@@ -66,54 +93,36 @@ xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 ```
 
-## Adım 6: Belgeyi Kaydedin
- Belgeyi kullanarak belirtilen dizine kaydedin.`Save` yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithCharts.DateTimeValuesToAxis.docx" olarak kaydediyoruz.
+## Adım 7: Belgeyi Kaydedin
+
+Son olarak belgenizi belirtilen dizine kaydedin. Bu adım süreci tamamlar ve belgeniz artık X ekseninde tarih ve saat değerlerini içeren bir grafik içermelidir.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 ```
 
-### Aspose.Words for .NET kullanılarak Eksene Tarih Saat Değerleri için örnek kaynak kodu 
-
-```csharp
-	// Belge dizininizin yolu
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new[]
-		{
-			new DateTime(2017, 11, 06), new DateTime(2017, 11, 09), new DateTime(2017, 11, 15),
-			new DateTime(2017, 11, 21), new DateTime(2017, 11, 25), new DateTime(2017, 11, 29)
-		},
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2, 5.3 });
-	ChartAxis xAxis = chart.AxisX;
-	xAxis.Scaling.Minimum = new AxisBound(new DateTime(2017, 11, 05).ToOADate());
-	xAxis.Scaling.Maximum = new AxisBound(new DateTime(2017, 12, 03).ToOADate());
-	// Ana birimleri bir haftaya, küçük birimleri ise bir güne ayarlayın.
-	xAxis.MajorUnit = 7;
-	xAxis.MinorUnit = 1;
-	xAxis.MajorTickMark = AxisTickMark.Cross;
-	xAxis.MinorTickMark = AxisTickMark.Outside;
-	doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
-```
-
-Bu örnek kod, yeni bir Word belgesi oluşturur, X eksenine tarih saat değerlerini içeren bir sütun grafiği ekler ve belgeyi belirtilen dizine kaydeder.
-
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET'i kullanarak bir grafiğin eksenine tarih saat değerlerini nasıl ekleyeceğinizi öğrendiniz. Adım adım kılavuzu takip ederek bir grafik oluşturabilir, seriye tarih saat değerleri ekleyebilir ve ekseni, tarih saat değerlerini doğru görüntüleyecek şekilde yapılandırabilirsiniz. Aspose.Words for .NET, Word belgelerindeki grafiklerle Kelime İşleme için güçlü bir dizi özellik sunarak, verileri tarih ve saat değerleriyle etkili bir şekilde temsil etmenize ve görselleştirmenize olanak tanır.
 
-### SSS
+Aspose.Words for .NET ile bir belgedeki grafiğin eksenine tarih ve saat değerleri eklemek basit bir işlemdir. Bu öğreticide özetlenen adımları izleyerek, zaman serisi verilerini etkili bir şekilde görselleştiren net ve bilgilendirici grafikler oluşturabilirsiniz. İster rapor, sunum veya ayrıntılı veri sunumu gerektiren herhangi bir belge hazırlıyor olun, Aspose.Words başarılı olmanız için ihtiyacınız olan araçları sağlar.
 
-#### S1. Aspose.Words for .NET kullanarak bir grafiğin eksenine tarih ve saat değerleri ekleyebilir miyim?
-Evet, Aspose.Words for .NET ile bir Word belgesindeki grafiğin ekseninde tarih ve saat değerleri ekleyebilir ve görüntüleyebilirsiniz. Aspose.Words, eksende tarih ve saat değerlerinin işlenmesi de dahil olmak üzere çeşitli grafik türleriyle çalışmak ve görünümlerini özelleştirmek için API'ler ve işlevler sağlar.
+## SSS'ler
 
-#### Q2. Grafik serisine tarih saat değerlerini nasıl eklerim?
- Grafik serisine tarih saat değerleri eklemek için`Add`Grafiğin serisinin yöntemi. İlgili seri değerleriyle birlikte kategori (X ekseni) verileri olarak bir tarih saat değerleri dizisi sağlayın. Bu, grafikte tarih saat değerlerine sahip veri noktalarını çizmenize olanak tanır.
+### Aspose.Words for .NET ile diğer grafik türlerini kullanabilir miyim?
 
-#### S3. Ekseni tarih saat değerlerini görüntüleyecek şekilde nasıl yapılandırabilirim?
- Uygun özellikleri ayarlayarak grafiğin eksenini tarih saat değerlerini görüntüleyecek şekilde yapılandırabilirsiniz. Örneğin eksen için minimum ve maksimum değerleri şunu kullanarak belirleyebilirsiniz:`Scaling.Minimum` Ve`Scaling.Maximum` sırasıyla özellikler. Ayrıca eksen için aralığı ve onay işaretlerini tanımlamak üzere ana ve küçük birimleri ayarlayabilirsiniz.
+Evet, Aspose.Words çizgi, çubuk, pasta ve daha fazlasını içeren çeşitli grafik türlerini destekler.
+
+### Grafiğimin görünümünü nasıl özelleştirebilirim?
+
+Grafiğin özelliklerine erişerek ve stilleri, renkleri ve daha fazlasını ayarlayarak görünümü özelleştirebilirsiniz.
+
+### Bir grafiğe birden fazla seri eklemek mümkün mü?
+
+ Kesinlikle! Grafiğinize birden fazla seriyi çağırarak ekleyebilirsiniz.`Series.Add` yöntemi farklı verilerle birden çok kez kullanın.
+
+### Grafik verilerini dinamik olarak güncellemem gerekirse ne olur?
+
+İhtiyaçlarınıza göre seri ve eksen özelliklerini programlı olarak değiştirerek grafik verilerini dinamik olarak güncelleyebilirsiniz.
+
+### Aspose.Words for .NET için daha ayrıntılı belgeleri nerede bulabilirim?
+
+ Daha ayrıntılı belgeler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

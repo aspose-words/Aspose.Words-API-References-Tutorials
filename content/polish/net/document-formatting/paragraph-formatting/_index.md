@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- Konfigurujemy`ParagraphFormat`nieruchomości. Rozłóżmy działanie każdej właściwości:
+Konfigurujemy`ParagraphFormat` nieruchomości. Rozłóżmy działanie każdej właściwości:
 - Wyrównanie: centruje akapit.
 - LeftIndent: Ustawia wcięcie z lewej strony na 50 punktów.
 - RightIndent: Ustawia prawe wcięcie na 50 punktów.

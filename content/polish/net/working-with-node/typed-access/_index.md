@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Szybki i wpisany dostęp do pierwszego wiersza tabeli.
+     //Szybki i wpisany dostęp do pierwszego wiersza tabeli.
      table.FirstRow?.Remove();
 
      // Szybki i wpisany dostęp do ostatniego wiersza tabeli.

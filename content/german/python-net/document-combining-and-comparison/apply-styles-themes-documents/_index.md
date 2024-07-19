@@ -1,7 +1,7 @@
 ---
 title: Anwenden von Stilen und Designs zum Transformieren von Dokumenten
 linktitle: Anwenden von Stilen und Designs zum Transformieren von Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Verbessern Sie die Dokumentästhetik mit Aspose.Words für Python. Wenden Sie mühelos Stile, Designs und Anpassungen an.
 type: docs
 weight: 14
@@ -163,7 +163,7 @@ Die Dokumentgestaltung kann in verschiedenen Szenarien angewendet werden, beispi
 
 ### Wie verbessern Designs das Erscheinungsbild von Dokumenten?
 
-Durch die Gruppierung von Stilen sorgen Designs für ein einheitliches Erscheinungsbild und eine einheitliche Haptik, was zu einer vereinheitlichten und professionellen Dokumentpräsentation führt.
+Designs sorgen durch die Gruppierung von Stilen für ein einheitliches Erscheinungsbild und eine einheitliche Haptik, was zu einer vereinheitlichten und professionellen Dokumentpräsentation führt.
 
 ### Ist es möglich, die Formatierung aus meinem Dokument zu löschen?
 

@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Passaggio 2: crea e personalizza il documento
- Crea un'istanza di`Document` classe e un associato`DocumentBuilder` per costruire il contenuto del documento. Usa il`Font.EmphasisMark` proprietà su cui impostare lo stile di enfasi del carattere`EmphasisMark.UnderSolidCircle` . Quindi utilizzare il`Write` E`Writeln` metodi del`DocumentBuilder` per aggiungere testo con l'enfasi del carattere specificato.
+ Crea un'istanza di`Document` classe e un associato`DocumentBuilder` per costruire il contenuto del documento. Usa il`Font.EmphasisMark` proprietà su cui impostare lo stile di enfasi del carattere`EmphasisMark.UnderSolidCircle` . Quindi utilizzare il`Write`E`Writeln` metodi del`DocumentBuilder` per aggiungere testo con l'enfasi del carattere specificato.
 
 ```csharp
 Document document = new Document();

@@ -7,11 +7,11 @@ type: docs
 weight: 1560
 url: /vi/net/programming-with-shapes/
 ---
-Hướng dẫn Aspose.Words for .NET về Xử lý văn bản có hình dạng cung cấp hướng dẫn toàn diện để thao tác và quản lý hình dạng trong tài liệu Word. Các hướng dẫn này giải thích từng bước cách tạo, sửa đổi và xóa hình dạng cũng như cách tùy chỉnh chúng về màu sắc, kích thước, vị trí và các thuộc tính khác. Hướng dẫn bao gồm các ví dụ mã rõ ràng và giải thích từng bước để dễ hiểu và thực hiện.
+Hướng dẫn Aspose.Words for .NET về Xử lý văn bản với hình dạng cung cấp hướng dẫn toàn diện để thao tác và quản lý hình dạng trong tài liệu Word. Các hướng dẫn này giải thích từng bước cách tạo, sửa đổi và xóa hình dạng cũng như cách tùy chỉnh chúng về màu sắc, kích thước, vị trí và các thuộc tính khác. Hướng dẫn bao gồm các ví dụ mã rõ ràng và giải thích từng bước để dễ hiểu và thực hiện.
 
 Thông qua các hướng dẫn này, bạn sẽ tìm hiểu cách thêm hình dạng vào tài liệu của mình, chẳng hạn như hình chữ nhật, hình tròn, đường thẳng và mũi tên, để cải thiện bố cục và trực quan hóa thông tin. Bạn cũng sẽ tìm hiểu cách thao tác các thuộc tính của hình dạng, chẳng hạn như xoay, trong suốt và tô màu, để phù hợp với nhu cầu cụ thể của bạn.
 
-Bằng cách sử dụng Aspose.Words cho .NET và làm theo các hướng dẫn này, bạn sẽ có thể thành thạo cách thao tác với các hình dạng trong tài liệu Word của mình, cho phép bạn tạo các tài liệu trông chuyên nghiệp và hấp dẫn trực quan. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, những hướng dẫn này sẽ hướng dẫn bạn qua quy trình và giúp bạn khai thác toàn bộ tiềm năng của thao tác hình dạng trong Aspose.Words for .NET.
+Bằng cách sử dụng Aspose.Words cho .NET và làm theo các hướng dẫn này, bạn sẽ có thể thành thạo cách thao tác với các hình dạng trong tài liệu Word của mình, cho phép bạn tạo các tài liệu trông chuyên nghiệp và hấp dẫn trực quan. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, những hướng dẫn này sẽ hướng dẫn bạn qua quy trình và giúp bạn khám phá toàn bộ tiềm năng của thao tác hình dạng trong Aspose.Words for .NET.
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |

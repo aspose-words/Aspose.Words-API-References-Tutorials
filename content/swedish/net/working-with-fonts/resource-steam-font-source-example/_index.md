@@ -75,7 +75,7 @@ internal class ResourceSteamFontSource : StreamFontSource
 
 ## Steg 5: Spara dokumentet
 
-Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna. Spara den i ett valfritt format; här sparar vi den som en PDF.
+Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna. Spara den i ett valfritt format; här sparar vi den som PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
@@ -99,7 +99,7 @@ Du har nu bemästrat processen att använda en resursström som en teckensnittsk
 
 ###  F3: Kan jag hantera andra typer av varningar med`IWarningCallback`?
 
- Ja den`IWarningCallback` gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
+ Ja den`IWarningCallback`gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
 
 ### F4: Var kan jag hitta support för Aspose.Words?
 

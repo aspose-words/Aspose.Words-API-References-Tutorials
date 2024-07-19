@@ -10,7 +10,7 @@ url: /id/python-net/content-extraction-and-manipulation/remove-content-documents
 
 ## Pengantar Menghapus dan Memperbaiki Konten di Dokumen Word
 
-Pernahkah Anda berada dalam situasi di mana Anda perlu menghapus atau menyempurnakan konten tertentu dari dokumen Word? Baik Anda pembuat konten, editor, atau sekadar berurusan dengan dokumen dalam tugas sehari-hari, mengetahui cara memanipulasi konten dalam dokumen Word secara efisien dapat menghemat waktu dan tenaga Anda yang berharga. Pada artikel ini, kita akan mempelajari cara menghapus dan menyempurnakan konten dalam dokumen Word menggunakan pustaka Aspose.Words untuk Python yang canggih. Kami akan membahas berbagai skenario dan memberikan panduan langkah demi langkah beserta contoh kode sumber.
+Pernahkah Anda berada dalam situasi di mana Anda perlu menghapus atau menyempurnakan konten tertentu dari dokumen Word? Baik Anda pembuat konten, editor, atau sekadar menangani dokumen dalam tugas sehari-hari, mengetahui cara memanipulasi konten dalam dokumen Word secara efisien dapat menghemat waktu dan tenaga Anda yang berharga. Pada artikel ini, kita akan mempelajari cara menghapus dan menyempurnakan konten dalam dokumen Word menggunakan pustaka Aspose.Words untuk Python yang canggih. Kami akan membahas berbagai skenario dan memberikan panduan langkah demi langkah beserta contoh kode sumber.
 
 ## Prasyarat
 

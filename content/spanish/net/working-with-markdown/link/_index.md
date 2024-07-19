@@ -51,8 +51,8 @@ builder.InsertHyperlink("Aspose", "https://www.aspose.com", falso);
 
 #### P: ¿Cómo puedo personalizar el texto que se muestra de un enlace en Aspose.Words?
 
-R: Para personalizar el texto que se muestra de un enlace en Aspose.Words, puede modificar el contenido entre los`<a>` etiquetas. Por ejemplo,`<a href="https://www.aspose.com">Click here</a>` mostrará el texto "Haga clic aquí" como hipervínculo.
+ R: Para personalizar el texto que se muestra de un enlace en Aspose.Words, puede modificar el contenido entre los`<a>` etiquetas. Por ejemplo,`<a href="https://www.aspose.com">Click here</a>` mostrará el texto "Haga clic aquí" como hipervínculo.
 
 #### P: ¿Puedo especificar un destino para un enlace en Aspose.Words?
 
- R: Sí, puede especificar un destino para un enlace en Aspose.Words usando el`target` atributo de la`<a>` etiqueta. Por ejemplo,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` abrirá el enlace en una nueva ventana o pestaña.
+R: Sí, puede especificar un destino para un enlace en Aspose.Words usando el`target` atributo de la`<a>` etiqueta. Por ejemplo,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` abrirá el enlace en una nueva ventana o pestaña.

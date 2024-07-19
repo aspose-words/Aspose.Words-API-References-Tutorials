@@ -17,14 +17,13 @@ Dengan mengikuti tutorial ini, Anda akan dapat memanipulasi bookmark di dokumen 
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Akses Bookmark Di Dokumen Word](./access-bookmarks/) | Pelajari cara mengakses bookmark di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Perbarui Data Bookmark Di Dokumen Word](./update-bookmark-data/) | Panduan langkah demi langkah untuk menjelaskan kode sumber C# pembaruan data bookmark Aspose.Words dalam fitur dokumen Word untuk .NET. |
-| [Tandai Kolom Tabel Di Dokumen Word](./bookmark-table-columns/) | Pelajari cara menandai kolom tabel di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Salin Teks yang Ditandai Dalam Dokumen Word](./copy-bookmarked-text/) | Pelajari cara menyalin teks bookmark di dokumen Word ke dokumen lain menggunakan Aspose.Words untuk .NET. |
-| [Tambahkan Teks yang Ditandai Dalam Dokumen Word](./append-bookmarked-text/) | Pelajari cara menambahkan teks dari penanda di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Buat Bookmark Di Dokumen Word](./create-bookmark/) | Pelajari cara membuat bookmark di dokumen Word dan menentukan tingkat pratinjau bookmark di PDF menggunakan Aspose.Words untuk .NET. |
-| [Tampilkan Sembunyikan Bookmark Di Dokumen Word](./show-hide-bookmarks/) | Pelajari cara menampilkan atau menyembunyikan bookmark tertentu di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Tampilkan Sembunyikan Konten yang Ditandai di Dokumen Word](./show-hide-bookmarked-content/) | Pelajari cara menampilkan atau menyembunyikan konten bookmark di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Menguraikan Penanda Baris Dalam Dokumen Word](./untangle-row-bookmarks/) | Pelajari cara menguraikan penanda baris bersarang di dokumen Word untuk menghapus baris tertentu tanpa memengaruhi penanda lainnya. |
-| [Menguraikan Kekusutan Dalam Dokumen Word](./untangle/) | Pelajari cara menguraikan penanda bertumpuk dokumen Word di baris tabel yang berdekatan menggunakan Aspose.Words untuk .NET. |
-| [Hapus Baris Berdasarkan Bookmark Di Dokumen Word](./delete-row-by-bookmark/) | Pelajari cara menghapus baris tabel berdasarkan bookmark tertentu di dokumen Word menggunakan Aspose.Words untuk .NET. |
+| [Akses Bookmark Di Dokumen Word](./access-bookmarks/) | Pelajari cara mengakses dan memanipulasi bookmark di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. |
+| [Perbarui Data Bookmark Di Dokumen Word](./update-bookmark-data/) | Perbarui konten dalam dokumen Word dengan mudah menggunakan bookmark & Aspose.Words .NET. Panduan ini membuka kemampuan untuk mengotomatisasi laporan, mempersonalisasi template & lainnya. |
+| [Tandai Kolom Tabel Di Dokumen Word](./bookmark-table-columns/) | Pelajari cara menandai kolom tabel di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang komprehensif ini. |
+| [Salin Teks yang Ditandai Dalam Dokumen Word](./copy-bookmarked-text/) | Salin teks yang diberi bookmark dengan mudah di antara dokumen Word menggunakan Aspose.Words untuk .NET. Pelajari caranya dengan panduan langkah demi langkah ini. |
+| [Tambahkan Teks yang Ditandai Dalam Dokumen Word](./append-bookmarked-text/) | Pelajari cara menambahkan teks yang ditandai di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk pengembang. |
+| [Buat Bookmark Di Dokumen Word](./create-bookmark/) | Pelajari cara membuat bookmark di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Sempurna untuk navigasi dan pengorganisasian dokumen. |
+| [Tampilkan Sembunyikan Konten yang Ditandai di Dokumen Word](./show-hide-bookmarked-content/) | Pelajari cara menampilkan dan menyembunyikan konten yang ditandai di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. |
+| [Menguraikan Penanda Baris Dalam Dokumen Word](./untangle-row-bookmarks/) | Uraikan penanda baris yang kusut di dokumen Word Anda dengan mudah menggunakan Aspose.Words untuk .NET. Panduan ini memandu Anda melalui proses pengelolaan bookmark yang lebih bersih dan aman. |
+| [Menguraikan Kekusutan Dalam Dokumen Word](./untangle/) | Kuasai penguraian bookmark di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah terperinci kami. Sempurna untuk pengembang .NET. |
+| [Hapus Baris Berdasarkan Bookmark Di Dokumen Word](./delete-row-by-bookmark/) | Pelajari cara menghapus baris berdasarkan bookmark di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk pengelolaan dokumen yang efisien. |

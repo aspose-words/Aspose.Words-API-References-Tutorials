@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Inserisci il campo IF nel documento.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Valutare la condizione IF.
+// Valutare la condizione IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Visualizza il risultato della valutazione.

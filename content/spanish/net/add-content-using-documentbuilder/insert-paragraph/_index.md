@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: formatee la fuente y el párrafo
 
-continuación, personalice la fuente y el formato del párrafo para el nuevo párrafo.
+A continuación, personalice la fuente y el formato del párrafo para el nuevo párrafo.
 ```csharp
 Font font = builder.Font;
 font.Size = 16;

@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 3. Adım: Belgeyi yükleyin
- Kullan`Document` Dönüştürmek istediğiniz bağlantılı alanları içeren Word belgesini yüklemek için Aspose.Words sınıfını kullanın.
+ Kullan`Document`Dönüştürmek istediğiniz bağlantılı alanları içeren Word belgesini yüklemek için Aspose.Words sınıfını kullanın.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

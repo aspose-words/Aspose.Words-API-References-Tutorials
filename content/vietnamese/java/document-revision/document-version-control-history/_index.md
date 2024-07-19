@@ -86,7 +86,7 @@ Có, Aspose.Words for Java cung cấp các tùy chọn tùy chỉnh mở rộng 
 
 ### Aspose.Words có phù hợp để quản lý tài liệu quy mô lớn không?
 
-Có, Aspose.Words for Java phù hợp cho cả nhiệm vụ quản lý tài liệu quy mô nhỏ và quy mô lớn, mang lại hiệu suất và độ tin cậy cao.
+Có, Aspose.Words for Java phù hợp cho cả tác vụ quản lý tài liệu quy mô nhỏ và quy mô lớn, mang lại hiệu suất và độ tin cậy cao.
 
 ### Tôi có thể tích hợp Aspose.Words với các thư viện Java khác không?
 

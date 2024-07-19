@@ -111,7 +111,7 @@ header = doc.first_section.headers_footers[HeaderFooterType.HEADER_PRIMARY]
 header.paragraph_format.style = custom_style
 ```
 
-## Hantera formatmallar för hela dokument
+## Hantera stilar för hela dokument
 
 Applicera en stil på hela dokumentet med lätthet.
 

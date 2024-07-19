@@ -32,8 +32,8 @@ En suivant ces tutoriels, vous pourrez exploiter pleinement les fonctionnalités
 | [Fusion horizontale](./horizontal-merge/) | Découvrez comment fusionner horizontalement des cellules dans un tableau Word avec Aspose.Words pour .NET. |
 | [Convertir en cellules fusionnées horizontalement](./convert-to-horizontally-merged-cells/) | Découvrez comment convertir des cellules de tableau en cellules fusionnées horizontalement dans un document Word avec Aspose.Words pour .NET. |
 | [Répéter les lignes sur les pages suivantes](./repeat-rows-on-subsequent-pages/) | Découvrez comment répéter les lignes d'un tableau sur les pages suivantes d'un document Word avec Aspose.Words pour .NET. |
-| [Ajustement automatique à la largeur de la page](./auto-fit-to-page-width/) | Découvrez comment ajuster automatiquement un tableau à la largeur de la page dans un document Word avec Aspose.Words pour .NET. |
-| [Paramètres de largeur préférés](./preferred-width-settings/) | Découvrez comment définir les largeurs de cellules de tableau préférées dans un document Word avec Aspose.Words pour .NET. |
+| [Ajustement automatique à la fenêtre](./auto-fit-to-page-width/) | Ajustez facilement automatiquement les tableaux à la fenêtre des documents Word à l'aide d'Aspose.Words for .NET grâce à ce guide étape par étape. Parfait pour des documents plus propres et professionnels. |
+| [Paramètres de largeur préférés](./preferred-width-settings/) | Apprenez à créer des tableaux avec des paramètres de largeur absolus, relatifs et automatiques dans Aspose.Words for .NET avec ce guide étape par étape. |
 | [Récupérer le type de largeur préféré](./retrieve-preferred-width-type/) | Découvrez comment récupérer le type et la valeur de largeur préférée d'une cellule dans un tableau Word avec Aspose.Words pour .NET. |
 | [Obtenir la position de la table](./get-table-position/) | Découvrez comment obtenir la position d'un tableau dans un document Word avec Aspose.Words pour .NET. |
 | [Obtenir la position de la table flottante](./get-floating-table-position/) | Découvrez comment obtenir la position des tableaux flottants dans un document Word avec Aspose.Words pour .NET. |

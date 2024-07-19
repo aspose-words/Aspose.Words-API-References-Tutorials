@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Schritt 2: Neues Dokument erstellen
 
- Okay, beginnen wir mit der Erstellung eines neuen Word-Dokuments. Wir verwenden das`Document` Und`DocumentBuilder` Klassen von Aspose.Words, um die Dinge ins Rollen zu bringen.
+ Okay, beginnen wir mit der Erstellung eines neuen Word-Dokuments. Wir verwenden das`Document`Und`DocumentBuilder` Klassen von Aspose.Words, um die Dinge ins Rollen zu bringen.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
@@ -64,7 +64,7 @@ Jetzt kommt der spaßige Teil. Wir werden ein TC-Feld in unser Dokument einfüge
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Diese Codezeile weist Aspose.Words an, ein TC-Feld mit dem Eintragstext "Eintragstext" einzufügen. Das`\\f t` Teil ist ein Schalter, der bestimmt, wie der Eintrag im Inhaltsverzeichnis angezeigt wird.
+ Diese Codezeile weist Aspose.Words an, ein TC-Feld mit dem Eintragstext "Eintragstext" einzufügen. Das`\\f t`Teil ist ein Schalter, der bestimmt, wie der Eintrag im Inhaltsverzeichnis angezeigt wird.
 
 ## Schritt 4: Speichern Sie das Dokument
 
@@ -99,6 +99,6 @@ Aspose.Words unterstützt hauptsächlich .NET-Sprachen wie C#, es sind jedoch Ve
 
  Weitere Beispiele und eine ausführliche Dokumentation finden Sie auf der[Aspose.Words-Dokumentationsseite](https://reference.aspose.com/words/net/).
 
-### 5. Wie erhalte ich Unterstützung, wenn Probleme auftreten?
+### 5. Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?
 
  Wenn Sie auf Probleme stoßen, erhalten Sie Unterstützung von der[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8).

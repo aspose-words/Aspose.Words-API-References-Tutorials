@@ -14,7 +14,7 @@ En este tutorial, le explicaremos cómo dividir un documento de Word en partes m
 Para comenzar, especifique el directorio de su documento y cárguelo en un objeto Documento. Así es cómo:
 
 ```csharp
-// Ruta al directorio de documentos.
+//Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

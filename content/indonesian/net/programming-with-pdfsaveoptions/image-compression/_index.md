@@ -110,7 +110,7 @@ Dalam tutorial ini, kami menjelaskan cara mengompresi gambar dalam dokumen PDF m
 #### T: Apa yang dimaksud dengan kompresi gambar dalam dokumen PDF?
 A: Mengompresi gambar dalam dokumen PDF adalah untuk memperkecil ukuran gambar yang disertakan dalam dokumen PDF untuk memperkecil ukuran file PDF secara keseluruhan. Hal ini mengurangi ruang penyimpanan yang dibutuhkan dan meningkatkan kinerja saat memuat dan melihat PDF.
 
-#### T: Bagaimana cara mengompres gambar dalam dokumen PDF dengan Aspose.Words untuk .NET?
+#### T: Bagaimana cara mengompresi gambar dalam dokumen PDF dengan Aspose.Words untuk .NET?
 J: Untuk mengompresi gambar dalam dokumen PDF dengan Aspose.Words for .NET, ikuti langkah-langkah berikut:
 
  Buat sebuah instance dari`Document` kelas yang menentukan jalur ke dokumen Word.

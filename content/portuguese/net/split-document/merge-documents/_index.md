@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- Nesta etapa, mesclamos`Document1.docx` e`Document2.docx` em um novo arquivo chamado`MergedDocument.docx`.
+ Nesta etapa, mesclamos`Document1.docx`e`Document2.docx` em um novo arquivo chamado`MergedDocument.docx`.
 
 ## Etapa 3: mesclando com opções de salvamento
 
@@ -74,7 +74,7 @@ Se você precisar mesclar documentos e salvar o resultado como PDF, o Aspose.Wor
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Aqui, nos fundimos`Document1.docx` e`Document2.docx` e salve o resultado como um arquivo PDF.
+ Aqui, nos fundimos`Document1.docx`e`Document2.docx` e salve o resultado como um arquivo PDF.
 
 ## Etapa 5: Criando uma instância de documento a partir de documentos mesclados
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores
 
 ### 3. Como lidar com diferentes formatações durante a mesclagem?
 
- Aspose.Words fornece vários modos de formato de mesclagem, como`KeepSourceFormatting` e`MergeFormatting` . Consulte o[Documentação da API](https://reference.aspose.com/words/net/) para obter instruções detalhadas.
+ Aspose.Words fornece vários modos de formato de mesclagem, como`KeepSourceFormatting`e`MergeFormatting` . Consulte o[Documentação da API](https://reference.aspose.com/words/net/) para obter instruções detalhadas.
 
 ### 4. Como obtenho suporte para Aspose.Words for .NET?
 

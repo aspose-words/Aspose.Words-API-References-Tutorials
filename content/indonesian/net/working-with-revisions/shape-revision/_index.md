@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### T: Bagaimana cara memeriksa revisi perpindahan bentuk dalam dokumen Aspose.Words untuk .NET?
 
- J: Untuk memeriksa revisi perpindahan bentuk dalam dokumen Aspose.Words untuk .NET, Anda dapat memuat dokumen yang sudah ada yang berisi revisi perpindahan bentuk. Kemudian Anda dapat mengakses setiap bentuk`IsMoveFromRevision` Dan`IsMoveToRevision` properti untuk menentukan apakah ia sedang dipindahkan dan jika demikian, dari mana dan ke mana:
+ J: Untuk memeriksa revisi perpindahan bentuk dalam dokumen Aspose.Words untuk .NET, Anda dapat memuat dokumen yang sudah ada yang berisi revisi perpindahan bentuk. Kemudian Anda dapat mengakses setiap bentuk`IsMoveFromRevision`Dan`IsMoveToRevision` properti untuk menentukan apakah ia sedang dipindahkan dan jika demikian, dari mana dan ke mana:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

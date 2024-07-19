@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- Ở bước này, chúng ta hợp nhất`Document1.docx` Và`Document2.docx` vào một tập tin mới gọi là`MergedDocument.docx`.
+ Ở bước này, chúng ta hợp nhất`Document1.docx`Và`Document2.docx` vào một tập tin mới gọi là`MergedDocument.docx`.
 
 ## Bước 3: Hợp nhất với tùy chọn lưu
 
@@ -74,7 +74,7 @@ Nếu bạn cần hợp nhất các tài liệu và lưu kết quả dưới d�
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Ở đây, chúng tôi hợp nhất`Document1.docx` Và`Document2.docx` và lưu kết quả dưới dạng tệp PDF.
+ Ở đây, chúng tôi hợp nhất`Document1.docx`Và`Document2.docx` và lưu kết quả dưới dạng tệp PDF.
 
 ## Bước 5: Tạo một phiên bản tài liệu từ các tài liệu đã hợp nhất
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### 3. Làm cách nào để xử lý các định dạng khác nhau trong quá trình hợp nhất?
 
- Aspose.Words cung cấp nhiều chế độ định dạng hợp nhất khác nhau như`KeepSourceFormatting` Và`MergeFormatting` . Tham khảo đến[Tài liệu API](https://reference.aspose.com/words/net/) để được hướng dẫn chi tiết.
+ Aspose.Words cung cấp nhiều chế độ định dạng hợp nhất khác nhau như`KeepSourceFormatting`Và`MergeFormatting` . Tham khảo đến[Tài liệu API](https://reference.aspose.com/words/net/) để được hướng dẫn chi tiết.
 
 ### 4. Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
 

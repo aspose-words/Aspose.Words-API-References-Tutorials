@@ -12,7 +12,7 @@ Aspose.Words untuk Java adalah perpustakaan yang kuat dan serbaguna yang memungk
 
 Kumpulan API perpustakaan yang komprehensif memberi pengembang kontrol menyeluruh atas konten dan pemformatan dokumen Word. Pengembang dapat menggunakan Aspose.Words untuk menambahkan teks, gambar, tabel, dan bagan ke dokumen, serta menerapkan berbagai gaya dan opsi pemformatan. Aspose.Words juga mendukung perlindungan dokumen, memungkinkan pengembang mengamankan informasi sensitif di dalam dokumen.
 
-Selain rangkaian fiturnya yang komprehensif, Aspose.Words untuk Java juga menawarkan banyak tutorial dan dokumentasi yang membantu pengembang memulai dengan perpustakaan dan mempelajari cara menggunakannya untuk melakukan tugas tertentu. Tutorial ini mencakup berbagai topik, mulai dari program dasar "Hello World" hingga manipulasi dan penggabungan dokumen tingkat lanjut.
+Selain rangkaian fiturnya yang komprehensif, Aspose.Words for Java juga menawarkan banyak tutorial dan dokumentasi yang membantu pengembang memulai dengan perpustakaan dan mempelajari cara menggunakannya untuk melakukan tugas tertentu. Tutorial ini mencakup berbagai topik, mulai dari program dasar "Hello World" hingga manipulasi dan penggabungan dokumen tingkat lanjut.
 
 Baik Anda seorang pemula atau pengembang Java berpengalaman, Aspose.Words for Java adalah alat yang berharga bagi siapa saja yang perlu melakukan tugas pemrosesan kata dan pemrosesan dokumen dalam aplikasi Java mereka. Dengan rangkaian fitur yang komprehensif, dokumentasi ekstensif, dan tutorial bermanfaat, Aspose.Words untuk Java memudahkan pembuatan dokumen yang efisien, profesional, dan menarik secara visual.
 

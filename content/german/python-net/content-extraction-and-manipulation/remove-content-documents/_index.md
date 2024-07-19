@@ -1,7 +1,7 @@
 ---
 title: Entfernen und Optimieren von Inhalten in Word-Dokumenten
 linktitle: Entfernen und Optimieren von Inhalten in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Inhalte in Word-Dokumenten effizient entfernen und verfeinern. Schritt-für-Schritt-Anleitung mit Quellcodebeispielen.
 type: docs
 weight: 13
@@ -74,7 +74,7 @@ for shape in doc.get_child_nodes(aw.NodeType.SHAPE, True):
         shape.remove()
 ```
 
-## Neuformatierungsstile
+## Formatierungsstile neu formatieren
 
 Zum Verfeinern von Inhalten kann auch die Neuformatierung von Stilen gehören. Angenommen, Sie möchten die Schriftart bestimmter Absätze ändern:
 

@@ -2,49 +2,57 @@
 title: Tartsa együtt a forrást
 linktitle: Tartsa együtt a forrást
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan használhatja az Aspose.Words for .NET-et Word-dokumentumok összekapcsolására és hozzáfűzésére, miközben a forrástartalom a céldokumentummal együtt marad.
+description: Ismerje meg, hogyan egyesíthet Word dokumentumokat az Aspose.Words for .NET használatával a formázás megőrzése mellett. Ez az átfogó útmutató a beállítástól a végrehajtásig mindenre kiterjed.
 type: docs
 weight: 10
 url: /hu/net/join-and-append-documents/keep-source-together/
 ---
+## Bevezetés
 
-Ez az oktatóanyag végigvezeti az Aspose.Words for .NET Forrás együtt tartása funkciójának használatán. Ez a funkció lehetővé teszi több Word-dokumentum összekapcsolását és hozzáfűzését, miközben a forrásdokumentum tartalma együtt marad a céldokumentum tartalmával. 
+A mai digitális korban a Word-dokumentumok programozott kezelése alapvető fontosságú a különböző iparágakban. Az Aspose.Words for .NET lehetővé teszi a fejlesztők számára a dokumentumkezelési feladatok hatékony automatizálását. Ez az átfogó útmutató végigvezeti a dokumentumok egyesítésének folyamatán, miközben megőrzi a forrásformázást az Aspose.Words for .NET használatával.
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
+Mielőtt belevágna az Aspose.Words for .NET-hez való dokumentum-egyesítésbe, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-1. Az Aspose.Words for .NET telepítve van. Letöltheti az Aspose webhelyéről, vagy telepítheti a NuGet segítségével.
-2. Visual Studio vagy bármely más C# fejlesztői környezet.
+- Visual Studio: Integrált fejlesztői környezet (IDE) .NET fejlesztéshez.
+- Aspose.Words for .NET: Telepítve és beállítva a fejlesztői környezetben.
+- C# ismerete: A C# programozási nyelv alapvető ismerete.
 
-## 1. lépés: Inicializálja a dokumentumkönyvtárakat
+## Névterek importálása
 
- Először is be kell állítania a dokumentumkönyvtár elérési útját. Módosítsa az értékét`dataDir` változó ahhoz az elérési úthoz, ahol a dokumentumok találhatók.
+A kezdéshez importálja a szükséges névtereket:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## 2. lépés: Töltse be a forrás- és céldokumentumot
+## 1. lépés: Töltse be a dokumentumokat
 
-Ezután be kell töltenie a forrás- és céldokumentumot az Aspose.Words használatával`Document` osztály. Frissítse a fájlneveket a`Document` konstruktor a dokumentumnevek szerint.
+ Először töltse be a forrás- és céldokumentumot az Aspose.Wordsba`Document` tárgyakat.
 
 ```csharp
+// A dokumentumkönyvtár elérési útja
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+// Forrás- és céldokumentumok betöltése
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## 3. lépés: Állítsa be, hogy a forrásdokumentum a céldokumentum tartalma után jelenjen meg
+## 2. lépés: Állítsa be a szakasz kezdetét
 
- Annak biztosításához, hogy a forrásdokumentum közvetlenül a céldokumentum tartalma után jelenjen meg, be kell állítania a`SectionStart` a forrásdokumentum első szakaszának tulajdonsága`SectionStart.Continuous`.
+Állítsa be a szakaszindítást, hogy biztosítsa a forrásdokumentum tartalom folyamatos áramlását a céldokumentum után.
 
 ```csharp
+// Állítsa be, hogy a forrásdokumentum közvetlenül a céldokumentum tartalma után jelenjen meg
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## 4. lépés: Állítsa be a "Keep with Next" bekezdésformázást a forrásdokumentumhoz
+## 3. lépés: Tartsa együtt a bekezdéseket
 
- A forrásdokumentum bekezdéseinek egyben tartásához ismételheti a dokumentum egyes bekezdéseit, és beállíthatja a`KeepWithNext`tulajdonát`true`.
+A formázási integritás megőrzése érdekében jelölje meg a forrásdokumentum minden bekezdését, hogy a következő bekezdés maradjon.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## 5. lépés: Csatolja a forrásdokumentumot a céldokumentumhoz
+## 4. lépés: Dokumentumok csatolása
 
- Most hozzáfűzheti a forrásdokumentumot a céldokumentumhoz a segítségével`AppendDocument` módszere a`Document` osztály. A`ImportFormatMode.KeepSourceFormatting` paraméter biztosítja, hogy a forrás formázása megmaradjon a hozzáfűzési művelet során.
+ Egyesítse a dokumentumokat a`AppendDocument` módszerrel, biztosítva a forrásdokumentum formázásának megőrzését.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## 6. lépés: Mentse el a záródokumentumot
+## 5. lépés: Mentse az egyesített dokumentumot
 
- Végül mentse el az egyesített dokumentumot a „Forrás együtt tartása” funkcióval a`Save` módszere a`Document` osztály.
+Végül mentse az egyesített dokumentumot a kívánt helyre.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### Példa forráskódra a Keep Source Together alkalmazáshoz az Aspose.Words for .NET használatával 
+## Következtetés
 
-Íme a teljes forráskód a "Keep Source Together" funkcióhoz C# nyelven az Aspose.Words for .NET használatával:
+Összefoglalva, az Aspose.Words for .NET leegyszerűsíti a Word dokumentumok egyesítését, miközben zökkenőmentesen megőrzi az eredeti formázást. Ez a képesség kulcsfontosságú az automatizált dokumentumfeldolgozást igénylő alkalmazások számára.
 
+## GYIK
 
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Az Aspose.Words for .NET egyesítheti a különböző formátumú dokumentumokat?
+Igen, formátumuktól függetlenül képes egyesíteni a dokumentumokat, megtartva a forrásformázást.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Állítsa be, hogy a forrásdokumentum közvetlenül a céldokumentum tartalma után jelenjen meg.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### Támogatja az Aspose.Words for .NET a nagy dokumentumok hatékony egyesítését?
+Természetesen a nagy dokumentumokat is optimális teljesítménnyel kezeli.
 
-Ez az! Sikeresen implementálta a Forrás együtt tartása funkciót az Aspose.Words for .NET használatával. A végleges dokumentum az összevont tartalmat fogja tartalmazni a forrásdokumentum bekezdéseivel együtt.
+### Elérhető az Aspose.Words for .NET próbaverziója?
+ Igen, letölthet egy ingyenes próbaverziót[itt](https://releases.aspose.com/).
+
+### Hogyan kaphatok műszaki támogatást az Aspose.Words for .NET-hez?
+ A technikai támogatás a következőn keresztül érhető el[Aspose.Words fórum](https://forum.aspose.com/c/words/8).
+
+### Vásárolhatok ideiglenes licencet az Aspose.Words for .NET-hez?
+ Igen, szerezhet ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).

@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### S: Aspose.Words for .NET'te posta adresi alanının kaynak verilerini nasıl belirleyebilirim?
 
- C: Aspose.Words for .NET'te posta adresi alanının kaynak verilerini belirtmek için`FieldAddressBlock.StartAddress` Ve`FieldAddressBlock.EndAddress` özellikler. Bu özellikler, CSV dosyası, veritabanı vb. gibi harici veri kaynağındaki adres aralıklarını tanımlamak için kullanılır.
+ C: Aspose.Words for .NET'te posta adresi alanının kaynak verilerini belirtmek için`FieldAddressBlock.StartAddress`Ve`FieldAddressBlock.EndAddress` özellikler. Bu özellikler, CSV dosyası, veritabanı vb. gibi harici veri kaynağındaki adres aralıklarını tanımlamak için kullanılır.
 
 #### S: Aspose.Words for .NET ile posta adresi alanına isteğe bağlı öğeler ekleyebilir miyim?
 

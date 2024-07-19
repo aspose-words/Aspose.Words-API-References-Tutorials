@@ -95,7 +95,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak Word belgelerindeki alan güncelle
 
 #### S: Aspose.Words for .NET'te otomatik alan güncellemeyi devre dışı bırakmak mümkün mü?
 
- C: Evet, Aspose.Words for .NET'te otomatik alan güncellemesini devre dışı bırakmak mümkündür. Şunu kullanabilirsiniz:`Document.FieldOptions.UpdateFields` özelliği ve bunu şu şekilde ayarlayın:`false` Alanların otomatik güncellenmesini önlemek için. Bu, alanların güncellenmesini gerektiği gibi manuel olarak kontrol etmenize olanak tanır.
+ C: Evet, Aspose.Words for .NET'te otomatik alan güncellemeyi devre dışı bırakmak mümkündür. Şunu kullanabilirsiniz:`Document.FieldOptions.UpdateFields` özelliği ve bunu şu şekilde ayarlayın:`false` Alanların otomatik güncellenmesini önlemek için. Bu, alanların güncellenmesini gerektiği gibi manuel olarak kontrol etmenize olanak tanır.
 
 #### S: Aspose.Words for .NET'te belge alanlarını manuel olarak nasıl güncelleyebilirim?
 

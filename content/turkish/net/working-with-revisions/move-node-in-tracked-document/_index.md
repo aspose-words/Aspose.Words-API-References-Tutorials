@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### S: İzlenen bir belgedeki bir düğümü revizyon oluşturmadan nasıl taşıyabilirim?
 
- C: İzlenen bir belgedeki bir düğümü revizyon oluşturmadan taşımak istiyorsanız,`Remove` Ve`InsertAfter` veya`InsertBefore` yöntemleri`Node` nesne. Örneğin, bir paragrafı başka bir paragraftan sonra taşımak için aşağıdaki kodu kullanabilirsiniz:
+ C: İzlenen bir belgedeki bir düğümü revizyon oluşturmadan taşımak istiyorsanız,`Remove`Ve`InsertAfter` veya`InsertBefore` yöntemleri`Node` nesne. Örneğin, bir paragrafı başka bir paragraftan sonra taşımak için aşağıdaki kodu kullanabilirsiniz:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

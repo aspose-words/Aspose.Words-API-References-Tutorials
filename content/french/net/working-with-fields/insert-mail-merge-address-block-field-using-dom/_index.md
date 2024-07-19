@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### Q : Comment puis-je spécifier les données source pour le champ d'adresse postale dans Aspose.Words for .NET ?
 
- R : Pour spécifier les données source du champ d'adresse postale dans Aspose.Words for .NET, vous pouvez utiliser le`FieldAddressBlock.StartAddress` et`FieldAddressBlock.EndAddress` propriétés. Ces propriétés sont utilisées pour définir les plages d'adresses dans la source de données externe, telle qu'un fichier CSV, une base de données, etc.
+ R : Pour spécifier les données source du champ d'adresse postale dans Aspose.Words for .NET, vous pouvez utiliser le`FieldAddressBlock.StartAddress`et`FieldAddressBlock.EndAddress` propriétés. Ces propriétés sont utilisées pour définir les plages d'adresses dans la source de données externe, telle qu'un fichier CSV, une base de données, etc.
 
 #### Q : Puis-je inclure des éléments facultatifs dans le champ d'adresse postale avec Aspose.Words pour .NET ?
 

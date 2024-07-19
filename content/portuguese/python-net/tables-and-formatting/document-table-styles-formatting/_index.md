@@ -8,7 +8,7 @@ weight: 12
 url: /pt/python-net/tables-and-formatting/document-table-styles-formatting/
 ---
 
-As tabelas de documentos desempenham um papel crucial na apresentação da informação de forma organizada e visualmente apelativa. Aspose.Words for Python fornece um poderoso conjunto de ferramentas que permite aos desenvolvedores trabalhar com tabelas de maneira eficiente e personalizar seus estilos e formatação. Neste artigo, exploraremos como manipular e aprimorar tabelas de documentos usando a API Aspose.Words para Python. Vamos mergulhar!
+As tabelas de documentos desempenham um papel crucial na apresentação da informação de forma organizada e visualmente apelativa. Aspose.Words for Python fornece um poderoso conjunto de ferramentas que permite aos desenvolvedores trabalhar com tabelas de maneira eficiente e personalizar seus estilos e formatação. Neste artigo, exploraremos como manipular e aprimorar tabelas de documentos usando a API Aspose.Words for Python. Vamos mergulhar!
 
 ## Primeiros passos com Aspose.Words para Python
 
@@ -39,7 +39,7 @@ Para criar e inserir tabelas em documentos usando Aspose.Words for Python, siga 
     table = builder.start_table()
     ```
 
-2.  Inserir dados: adicione dados à tabela usando o construtor`insert_cell` e`write` métodos.
+2.  Inserir dados: adicione dados à tabela usando o construtor`insert_cell`e`write` métodos.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Para criar e inserir tabelas em documentos usando Aspose.Words for Python, siga 
 
 ## Aplicando formatação básica de tabela
 
- A formatação básica da tabela pode ser obtida usando métodos fornecidos pelo`Table` e`Cell` Aulas. Veja como você pode melhorar a aparência da sua mesa:
+ A formatação básica da tabela pode ser obtida usando métodos fornecidos pelo`Table`e`Cell` Aulas. Veja como você pode melhorar a aparência da sua mesa:
 
 1. Definir larguras de coluna: ajuste a largura das colunas para garantir o alinhamento adequado e apelo visual.
 

@@ -2,120 +2,123 @@
 title: Agregar texto marcado a favoritos en un documento de Word
 linktitle: Agregar texto marcado a favoritos en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a agregar texto desde un marcador en un documento de Word usando Aspose.Words para .NET.
+description: Aprenda cómo agregar texto marcado como favorito en un documento de Word usando Aspose.Words para .NET con esta guía paso a paso. Perfecto para desarrolladores.
 type: docs
 weight: 10
 url: /es/net/programming-with-bookmarks/append-bookmarked-text/
 ---
+## Introducción
 
-En este artículo, exploraremos el código fuente de C# anterior para comprender cómo utilizar la función Agregar texto marcado como favorito en la biblioteca Aspose.Words para .NET. Esta función le permite agregar el texto contenido en un marcador específico de un documento de Word a otro documento.
+¡Hola! ¿Alguna vez intentó agregar texto de una sección marcada como favorita en un documento de Word y le resultó complicado? ¡Estás de suerte! Este tutorial lo guiará a través del proceso usando Aspose.Words para .NET. Lo dividiremos en pasos simples para que puedas seguirlos fácilmente. ¡Vamos a sumergirnos y agregar ese texto marcado como un profesional!
 
 ## Requisitos previos
 
-- Conocimientos básicos del lenguaje C#.
-- Entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
+Antes de comenzar, asegurémonos de que tiene todo lo que necesita:
 
-## Paso 1: obtener párrafos del marcador
+-  Aspose.Words para .NET: asegúrese de tenerlo instalado. Si no, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+- Entorno de desarrollo: cualquier entorno de desarrollo .NET como Visual Studio.
+- Conocimientos básicos de C#: será útil comprender los conceptos básicos de programación de C#.
+- Documento de Word con marcadores: un documento de Word con marcadores configurados, que usaremos para agregar texto.
 
- Antes de comenzar a agregar el texto del marcador, necesitamos obtener los párrafos que contienen el inicio y el final del marcador. Esto se puede hacer accediendo al`BookmarkStart` y`BookmarkEnd` propiedades del marcador:
+## Importar espacios de nombres
+
+Primero lo primero, importemos los espacios de nombres necesarios. Esto asegurará que tengamos todas las herramientas que necesitamos a nuestro alcance.
 
 ```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+using System;
+using Aspose.Words;
+using Aspose.Words.Importing;
 ```
 
-## Paso 2: verifique los párrafos principales
+Dividamos el ejemplo en pasos detallados.
 
-Comprobamos si los párrafos inicial y final tienen padres válidos, es decir, si realmente pertenecen a un párrafo. Si no, generamos una excepción:
+## Paso 1: cargar el documento e inicializar las variables
+
+Muy bien, comencemos cargando nuestro documento de Word e inicializando las variables que necesitaremos.
 
 ```csharp
+// Cargue los documentos de origen y destino.
+Document srcDoc = new Document("source.docx");
+Document dstDoc = new Document("destination.docx");
+
+// Inicialice el importador de documentos.
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+
+// Busque el marcador en el documento fuente.
+Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## Paso 2: identificar los párrafos inicial y final
+
+Ahora, ubiquemos los párrafos donde comienza y termina el marcador. Esto es crucial ya que necesitamos manejar el texto dentro de estos límites.
+
+```csharp
+// Este es el párrafo que contiene el comienzo del marcador.
+Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+
+// Este es el párrafo que contiene el final del marcador.
+Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
 if (startPara == null || endPara == null)
-throw new InvalidOperationException(
-"The parent of the beginning or the end of the bookmark is not a paragrap
-
-hey, this situation can't be handled yet.");
+    throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## Paso 3: Verifique los padres de los párrafos
+## Paso 3: validar los párrafos principales
 
-Comprobamos si los párrafos inicial y final tienen el mismo padre. De lo contrario, eso significa que los párrafos no están contenidos en la misma sección o documento y estamos lanzando una excepción:
+Necesitamos asegurarnos de que los párrafos inicial y final tengan el mismo padre. Este es un escenario simple para mantener las cosas sencillas.
 
 ```csharp
+// Limitémonos a un escenario razonablemente simple.
 if (startPara.ParentNode != endPara.ParentNode)
-throw new InvalidOperationException(
-"Beginning and ending paragraphs have different parents, this situation cannot be handled yet.");
+    throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## Paso 4: copiar párrafos
+## Paso 4: identificar el nodo a detener
 
-Recorremos los nodos (párrafos) desde el párrafo inicial hasta el párrafo final. Para cada nodo, creamos una copia y la importamos al contexto del documento de destino:
+A continuación, debemos determinar el nodo donde dejaremos de copiar texto. Este será el nodo inmediatamente después del párrafo final.
 
 ```csharp
+// Queremos copiar todos los párrafos desde el párrafo inicial hasta (incluido) el párrafo final,
+// por lo tanto, el nodo en el que nos detenemos es uno después del párrafo final.
 Node endNode = endPara.NextSibling;
+```
 
+## Paso 5: Agregar texto marcado al documento de destino
+
+Finalmente, recorreremos los nodos desde el párrafo inicial hasta el nodo después del párrafo final y los agregaremos al documento de destino.
+
+```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-Node newNode = importer.ImportNode(curNode, true);
+    // Esto crea una copia del nodo actual y lo importa (lo hace válido) en el contexto.
+    // del documento de destino. Importar significa ajustar los estilos y los identificadores de listas correctamente.
+    Node newNode = importer.ImportNode(curNode, true);
 
-dstNode.AppendChild(newNode);
+    // Agregue el nodo importado al documento de destino.
+    dstDoc.FirstSection.Body.AppendChild(newNode);
 }
-```
 
-### Código fuente de ejemplo para agregar texto marcado como favorito usando Aspose.Words para .NET
-
-Aquí está el código fuente de ejemplo completo para demostrar cómo agregar texto desde un marcador usando Aspose.Words para .NET:
-
-```csharp
-
-	// Este es el párrafo que contiene el comienzo del marcador.
-	Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-	// Este es el párrafo que contiene el final del marcador.
-	Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-	if (startPara == null || endPara == null)
-		throw new InvalidOperationException(
-			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-	// Limitémonos a un escenario razonablemente simple.
-	if (startPara.ParentNode != endPara.ParentNode)
-		throw new InvalidOperationException(
-			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-	// Queremos copiar todos los párrafos desde el párrafo inicial hasta (incluido) el párrafo final,
-	// por lo tanto, el nodo en el que nos detenemos es uno después del párrafo final.
-	Node endNode = endPara.NextSibling;
-
-	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-	{
-		//Esto crea una copia del nodo actual y lo importa (lo hace válido) en el contexto.
-		// del documento de destino. Importar significa ajustar los estilos y los identificadores de listas correctamente.
-		Node newNode = importer.ImportNode(curNode, true);
-
-		dstNode.AppendChild(newNode);
-	}
-
+// Guarde el documento de destino con el texto adjunto.
+dstDoc.Save("appended_document.docx");
 ```
 
 ## Conclusión
 
-En este artículo, exploramos el código fuente de C# para comprender cómo utilizar la función Agregar texto marcado como favorito de Aspose.Words para .NET. Hemos seguido una guía paso a paso para obtener párrafos de un marcador, verificar los padres y copiar párrafos a otro documento.
+¡Y ahí lo tienes! Ha agregado con éxito texto de una sección marcada en un documento de Word usando Aspose.Words para .NET. Esta poderosa herramienta hace que la manipulación de documentos sea muy sencilla y ahora tienes un as bajo la manga. ¡Feliz codificación!
 
-### Preguntas frecuentes sobre cómo agregar texto marcado como favorito en un documento de Word
+## Preguntas frecuentes
 
-#### P1: ¿Cuáles son los requisitos previos para utilizar la función "Agregar texto con marcadores" en Aspose.Words para .NET?
+### ¿Puedo agregar texto de varios marcadores de una sola vez?
+Sí, puedes repetir el proceso para cada marcador y agregar el texto correspondiente.
 
-R: Para utilizar la función "Agregar texto con marcadores" en Aspose.Words para .NET, debe tener conocimientos básicos del lenguaje C#. También necesita un entorno de desarrollo .NET con la biblioteca Aspose.Words instalada.
+### ¿Qué pasa si los párrafos inicial y final tienen padres diferentes?
+El ejemplo actual supone que tienen el mismo padre. Para diferentes padres se requiere un manejo más complejo.
 
-#### P2: ¿Cómo obtener los párrafos que contienen el principio y el final de un marcador en un documento de Word?
+### ¿Puedo conservar el formato original del texto adjunto?
+ ¡Absolutamente! El`ImportFormatMode.KeepSourceFormatting` garantiza que se conserve el formato original.
 
-R: Para obtener los párrafos que contienen el inicio y el final de un marcador en un documento de Word, puede acceder a la`BookmarkStart` y`BookmarkEnd` propiedades del marcador. Aquí hay un código de muestra:
+### ¿Es posible agregar texto a una posición específica en el documento de destino?
+Sí, puede agregar el texto a cualquier posición navegando hasta el nodo deseado en el documento de destino.
 
-```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-```
-
-#### P3: ¿Qué sucede si los párrafos inicial y final no tienen padres válidos?
-
-R: Si los párrafos inicial y final no tienen padres válidos, es decir, no son realmente párrafos, se generará una excepción. Esta situación no se puede gestionar en este momento.
+### ¿Qué sucede si necesito agregar texto de un marcador a una nueva sección?
+Puede crear una nueva sección en el documento de destino y agregar el texto allí.

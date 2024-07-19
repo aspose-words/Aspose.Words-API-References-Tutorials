@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## 3. lépés: Módosítsa a makró forráskódját
- Most módosítani fogjuk a VBA projekt első makrójának forráskódját. Helyettesíteni a`newSourceCode` változót a használni kívánt új forráskóddal.
+Most módosítani fogjuk a VBA projekt első makrójának forráskódját. Helyettesíteni a`newSourceCode` változót a használni kívánt új forráskóddal.
 
 ```csharp
 const string newSourceCode = "Test change source code";

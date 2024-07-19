@@ -15,7 +15,7 @@ Waren Sie schon einmal in einer Situation, in der Sie eine PDF-Datei in ein JPEG
 
 Bevor wir uns ins Detail stürzen, sollten wir sicherstellen, dass alles in Ordnung ist. Folgendes brauchen Sie:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie diese leistungsstarke Bibliothek installiert haben. Wenn nicht, können Sie sie herunterladen[Hier](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie diese leistungsstarke Bibliothek installiert haben. Wenn nicht, können Sie sie herunterladen[Hier](https://releases.aspose.com/words/net/).
 2. .NET Framework: Stellen Sie sicher, dass die .NET-Umgebung auf Ihrem Computer eingerichtet ist.
 3. Visual Studio: Jede Version ist geeignet, solange Sie mit der Navigation darin vertraut sind.
 4.  Eine PDF-Datei: Halten Sie Ihre PDF-Datei zur Konvertierung bereit. Für dieses Tutorial verwenden wir eine Datei namens`Pdf Document.pdf`.
@@ -42,7 +42,7 @@ Bevor Sie sich in den Code vertiefen, müssen Sie Ihr Projekt einrichten. So geh
 Install-Package Aspose.Words
 ```
 
-3. Verzeichnis erstellen: Richten Sie ein Verzeichnis zum Speichern Ihrer PDF- und der daraus resultierenden JPEG-Dateien ein.
+3. Verzeichnis erstellen: Richten Sie ein Verzeichnis zum Speichern Ihrer PDF- und der resultierenden JPEG-Dateien ein.
 
 ## Schritt 2: Laden Sie Ihr PDF-Dokument
 
@@ -82,7 +82,7 @@ Und da haben Sie es! Die Konvertierung einer PDF-Datei in eine JPEG-Datei mit As
 Auf jeden Fall! Sie können ein Verzeichnis von PDFs durchsuchen und jedes in ein JPEG konvertieren.
 
 ### Unterstützt Aspose.Words andere Bildformate?
-Ja, das ist möglich! Sie können Ihre PDFs als PNG, BMP und mehr speichern.
+Ja, das funktioniert! Sie können Ihre PDFs als PNG, BMP und mehr speichern.
 
 ### Ist Aspose.Words mit .NET Core kompatibel?
 Das ist es tatsächlich. Aspose.Words unterstützt sowohl .NET Framework als auch .NET Core.

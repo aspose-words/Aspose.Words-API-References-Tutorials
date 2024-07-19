@@ -17,7 +17,7 @@ Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Langkah 3: Tambahkan Item ke Kotak Kombo
- Tambahkan item ke kotak kombo dengan menggunakan`ListItems` properti dari`StructuredDocumentTag` Setiap item diwakili oleh sebuah`SdtListItem` objek, yang mengambil teks tampilan dan nilai. Dalam contoh ini, kita menambahkan tiga item ke kotak kombo.
+ Tambahkan item ke kotak kombo dengan menggunakan`ListItems` properti dari`StructuredDocumentTag` . Setiap item diwakili oleh sebuah`SdtListItem` objek, yang mengambil teks tampilan dan nilai. Dalam contoh ini, kita menambahkan tiga item ke kotak kombo.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

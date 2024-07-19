@@ -45,7 +45,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 // استخدم منشئ المستندات لإضافة محتوى إلى المستند.
 DocumentBuilder builder = new DocumentBuilder();
 
-// إدراج ارتباط تشعبي.
+//إدراج ارتباط تشعبي.
 builder.InsertHyperlink("https://www.aspose.com"، "https://www.aspose.com"، خطأ)؛
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

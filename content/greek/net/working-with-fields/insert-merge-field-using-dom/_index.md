@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Στη συνέχεια, πρέπει να μετακινήσουμε τον κέρσορα σε μια συγκεκριμένη παράγραφο του εγγράφου όπου θέλουμε να εισαγάγουμε το πεδίο συγχώνευσης.
 
 ```csharp
-// Μετακίνηση δρομέα στην παράγραφο.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Βήμα 6: Εισαγάγετε το πεδίο συγχώνευσης

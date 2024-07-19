@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Paso 2: agregar estilo al código con sangría
 
-Agregaremos un estilo personalizado para el código sangrado usando el`Styles.Add` método de la`Document` objeto. En este ejemplo, estamos creando un estilo llamado "IndentedCode" para código sangrado.
+ Agregaremos un estilo personalizado para el código sangrado usando el`Styles.Add` método de la`Document` objeto. En este ejemplo, estamos creando un estilo llamado "IndentedCode" para código sangrado.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

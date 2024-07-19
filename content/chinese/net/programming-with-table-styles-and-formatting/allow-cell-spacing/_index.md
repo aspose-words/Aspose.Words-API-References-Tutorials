@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 步骤 3：访问表
-为了允许单元格间距，我们需要访问文档中的表格。`Table`该类代表 Aspose.Words 中的表。
+为了允许单元格间距，我们需要访问文档内的表格。`Table`该类代表 Aspose.Words 中的表。
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -45,7 +45,7 @@ table.AllowCellSpacing = true;
 table. CellSpacing = 2;
 ```
 
-## 步骤 6：保存修改后的文档
+## 步骤6：保存修改后的文档
 最后，我们将修改后的文档保存到文件中。您可以为输出文档选择合适的名称和位置。
 
 ```csharp

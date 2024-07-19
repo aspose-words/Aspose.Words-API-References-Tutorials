@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3. lépés: Mérje meg a táblázat és a környező szöveg közötti távolságot
- A táblázat és a környező szöveg közötti távolság meghatározásához a dokumentumban lévő táblázathoz kell hozzáférnünk a segítségével`GetChild()` módszer és a`NodeType.Table` ingatlan. Ezután a tömbtulajdonságok segítségével megjeleníthetjük a különböző távolságokat`DistanceTop`, `DistanceBottom`, `DistanceRight` és`DistanceLeft`.
+ A táblázat és a környező szöveg közötti távolság meghatározásához a dokumentumban lévő táblázathoz kell hozzáférnünk a segítségével`GetChild()` módszer és a`NodeType.Table` ingatlan. Ezután a tömbtulajdonságok segítségével megjeleníthetjük a különböző távolságokat`DistanceTop`, `DistanceBottom`, `DistanceRight`és`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

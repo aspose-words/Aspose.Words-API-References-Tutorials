@@ -8,7 +8,7 @@ weight: 10
 url: /zh/net/working-with-node/typed-access/
 ---
 
-下面是一步一步的指南，解释下面的 C# 源代码，说明如何使用 Aspose.Words for .NET 的 Typed Access 功能。
+下面是逐步指南，解释下面的 C# 源代码，说明如何使用 Aspose.Words for .NET 的 Typed Access 功能。
 
 ## 步骤 1：导入必要的参考资料
 开始之前，请确保已将使用 Aspose.Words for .NET 所需的引用导入到项目中。这包括导入 Aspose.Words 库并将所需的命名空间添加到源文件中。

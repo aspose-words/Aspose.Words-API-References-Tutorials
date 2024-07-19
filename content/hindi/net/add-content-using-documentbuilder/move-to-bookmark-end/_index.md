@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. क्या मैं बुकमार्क के अंत के बजाय उसके आरंभ में जा सकता हूँ?
 
- बिलकुल! बस सेट करें`isBookmarkStart` पैरामीटर`true` और`isBookmarkEnd` को`false` में`MoveToBookmark` तरीका।
+ बिलकुल! बस सेट करें`isBookmarkStart` पैरामीटर`true`और`isBookmarkEnd` को`false` में`MoveToBookmark` तरीका।
 
 ### 2. यदि मेरा बुकमार्क नाम गलत है तो क्या होगा?
 

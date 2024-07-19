@@ -172,7 +172,7 @@ Chcete-li odstranit ochranu heslem z dokumentu chráněného heslem, můžete do
 
 ### Mohu nastavit uživatelské vlastnosti při ukládání dokumentu ve formátu OOXML?
 
- Ano, můžete nastavit uživatelské vlastnosti dokumentu před jeho uložením ve formátu OOXML. Použijte`BuiltInDocumentProperties` a`CustomDocumentProperties` třídy pro nastavení různých vlastností, jako je autor, název, klíčová slova a uživatelské vlastnosti.
+ Ano, můžete nastavit uživatelské vlastnosti dokumentu před jeho uložením ve formátu OOXML. Použijte`BuiltInDocumentProperties`a`CustomDocumentProperties` třídy pro nastavení různých vlastností, jako je autor, název, klíčová slova a uživatelské vlastnosti.
 
 ### Jaká je výchozí úroveň komprese při ukládání dokumentu ve formátu OOXML?
 

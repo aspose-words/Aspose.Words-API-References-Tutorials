@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Thay thế`"original_document.docx"` Và`"modified_document.docx"` với các đường dẫn đến tài liệu của riêng bạn.
+ Thay thế`"original_document.docx"`Và`"modified_document.docx"` với các đường dẫn đến tài liệu của riêng bạn.
 
 ## Bước 2: So sánh tài liệu
 

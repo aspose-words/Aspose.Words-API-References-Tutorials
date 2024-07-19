@@ -2,180 +2,144 @@
 title: Yeni İmza Satırı Oluşturun ve Sağlayıcı Kimliğini Ayarlayın
 linktitle: Yeni İmza Satırı Oluşturun ve Sağlayıcı Kimliğini Ayarlayın
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile Word belgesinde yeni bir imza satırı oluşturmayı ve sağlayıcı kimliğini nasıl ayarlayacağınızı öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerinde yeni bir imza satırı oluşturmayı ve sağlayıcı kimliğini nasıl ayarlayacağınızı öğrenin. Adım adım rehber.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
-Bu eğitimde, Aspose.Words for .NET ile Yeni İmza Satırı Oluşturma ve Sağlayıcı Kimliğini Ayarlama özelliğini kullanma adımlarında size yol göstereceğiz. Bu özellik, bir Word belgesine imza satırı eklemenizi, özel seçenekleri ayarlamanızı ve belgeyi imzalamanızı sağlar. Aşağıdaki adımları takip et:
+## giriiş
 
-## Adım 1: Belgeyi ve Oluşturucuyu Oluşturma
+Merhaba teknoloji tutkunları! Word belgelerinize program aracılığıyla nasıl imza satırı ekleyeceğinizi hiç merak ettiniz mi? Bugün Aspose.Words for .NET'i kullanarak tam da buna dalacağız. Bu kılavuz size her adımda yol gösterecek ve yeni bir imza satırı oluşturmanızı ve Word belgelerinizde sağlayıcı kimliğini ayarlamanızı çok kolaylaştıracaktır. İster belge işlemeyi otomatikleştiriyor olun, ister yalnızca iş akışınızı kolaylaştırmak istiyor olun, bu eğitim size yardımcı olacaktır.
 
-Document sınıfının bir örneğini ve bir DocumentBuilder nesnesini oluşturarak başlayın:
+## Önkoşullar
+
+Ellerimizi kirletmeden önce ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım:
+
+1.  Aspose.Words for .NET: Henüz yapmadıysanız indirin[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya başka herhangi bir C# geliştirme ortamı.
+3. .NET Framework: .NET Framework'ün kurulu olduğundan emin olun.
+4. PFX Sertifikası: Belgeleri imzalamak için bir PFX sertifikasına ihtiyacınız olacaktır. Güvenilir bir sertifika yetkilisinden bir tane alabilirsiniz.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle C# projenize gerekli ad alanlarını aktaralım:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Signing;
+using System;
+```
+
+Tamam, asıl meseleye geçelim. Yeni bir imza satırı oluşturmak ve sağlayıcı kimliğini ayarlamak için her adımın ayrıntılı bir dökümünü burada bulabilirsiniz.
+
+## 1. Adım: Yeni Bir Belge Oluşturun
+
+Başlamak için yeni bir Word belgesi oluşturmamız gerekiyor. Bu imza çizgimizin tuvali olacak.
+
+```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Adım 2: İmza Hattı Seçeneklerini Ayarlama
+ Bu kod parçasında yeni bir başlangıç başlatıyoruz`Document` ve bir`DocumentBuilder` .`DocumentBuilder` belgemize öğeler eklememize yardımcı olur.
 
-SignatureLineOptions sınıfının bir örneğini oluşturun ve istediğiniz seçenekleri ayarlayın:
+## Adım 2: İmza Satırı Seçeneklerini Tanımlayın
+
+Daha sonra imza satırımız için seçenekleri tanımlıyoruz. Buna imzalayanın adı, unvanı, e-posta adresi ve diğer ayrıntılar dahildir.
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions
 {
-Sign = "vderyushev",
-SignerTitle = "QA",
-Email = "vderyushev@aspose.com",
-ShowDate=true,
-Default Instructions = false,
-Instructions = "Please sign here.",
-AllowComments = true
+    Signer = "vderyushev",
+    SignerTitle = "QA",
+    Email = "vderyushev@aspose.com",
+    ShowDate = true,
+    DefaultInstructions = false,
+    Instructions = "Please sign here.",
+    AllowComments = true
 };
 ```
 
-## 3. Adım: İmza satırını ekleme
+Bu seçenekler imza satırını kişiselleştirerek onu net ve profesyonel hale getirir.
 
-İmza satırını belgeye eklemek için DocumentBuilder nesnesinin InsertSignatureLine() yöntemini kullanın:
+## Adım 3: İmza Satırını Ekleyin
+
+Seçeneklerimizi ayarladığımızda artık imza satırını belgeye ekleyebiliriz.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-```
-
-## 4. Adım: Sağlayıcı Kimliğini Ayarlayın
-
-ProviderId özelliğini kullanarak imza satırının sağlayıcı kimliğini ayarlayın:
-
-```csharp
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
-Kullanım durumunuz için doğru sağlayıcı kimliğini belirttiğinizden emin olun.
+ Burada,`InsertSignatureLine` yöntemi imza satırını ekler ve biz ona benzersiz bir sağlayıcı kimliği atarız.
 
-## Adım 5: Belgeyi Kaydedin
+## Adım 4: Belgeyi Kaydedin
 
-Değiştirilen belgeyi kaydedin:
+İmza satırını ekledikten sonra belgeyi kaydedelim.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
 ```
 
-Belgeyi kaydetmek için doğru yolu ve dosya adını belirttiğinizden emin olun.
+Bu, belgenizi yeni eklenen imza satırıyla kaydeder.
 
-## Adım 6: Belgeyi imzalama
+## 5. Adım: İmzalama Seçeneklerini Ayarlayın
 
-Belgeyi imzalamak için imza seçeneklerini ayarlamanız ve DigitalSignatureUtil sınıfını kullanmanız gerekir:
+Şimdi belgeyi imzalama seçeneklerini ayarlamamız gerekiyor. Buna imza satırı kimliği, sağlayıcı kimliği, yorumlar ve imzalama süresi dahildir.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-ProviderId = signatureLine.ProviderId,
-Comments = "Document was signed by vderyushev",
-SignTime = DateTime.Now
+    SignatureLineId = signatureLine.Id,
+    ProviderId = signatureLine.ProviderId,
+    Comments = "Document was signed by vderyushev",
+    SignTime = DateTime.Now
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-	dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions)
 ```
 
-Belge, sertifika ve imzalı belge için doğru yolları belirttiğinizden emin olun.
+Bu seçenekler belgenin doğru ayrıntılarla imzalanmasını sağlar.
 
-### Aspose.Words for .NET kullanarak Yeni İmza Satırı Oluşturma ve Sağlayıcı Kimliğini Ayarlama için örnek kaynak kodu
+## Adım 6: Sertifika Sahibi Oluşturun
 
-Aspose.Words for .NET ile yeni bir imza satırı oluşturmak ve sağlayıcı kimliğini ayarlamak için tam kaynak kodu:
+Belgeyi imzalamak için PFX sertifikası kullanacağız. Bunun için bir sertifika sahibi oluşturalım.
 
 ```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLineOptions signatureLineOptions = new SignatureLineOptions
-	{
-		Signer = "vderyushev",
-		SignerTitle = "QA",
-		Email = "vderyushev@aspose.com",
-		ShowDate = true,
-		DefaultInstructions = false,
-		Instructions = "Please sign here.",
-		AllowComments = true
-	};
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-	signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		ProviderId = signatureLine.ProviderId,
-		Comments = "Document was signed by vderyushev",
-		SignTime = DateTime.Now
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-		dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Bu adımları izleyerek Aspose.Words for .NET ile kolayca yeni bir imza satırı oluşturabilir ve sağlayıcı kimliğini Word belgenizde ayarlayabilirsiniz.
+ Değiştirdiğinizden emin olun`"morzal.pfx"` gerçek sertifika dosyanızla ve`"aw"` Sertifika şifrenizle.
+
+## Adım 7: Belgeyi İmzalayın
+
+Son olarak dijital imza yardımcı programını kullanarak belgeyi imzalıyoruz.
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
+    dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
+```
+
+Bu, belgeyi imzalar ve yeni bir dosya olarak kaydeder.
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde yeni bir imza satırı oluşturma ve sağlayıcı kimliğini ayarlama özelliğini araştırdık. Verilen adımları takip ederek, özel seçeneklerle kolayca bir imza satırı ekleyebilir ve bunu sağlayıcı kimliğini kullanarak belirli bir sağlayıcıyla ilişkilendirebilirsiniz. İmza satırları eklemek ve sağlayıcı bilgilerini özelleştirmek belgelerinizin orijinalliğini ve güvenilirliğini artırır. Aspose.Words for .NET, Word belgelerindeki imza satırları ve dijital sertifikalarla Kelime İşleme için güçlü bir API sunarak imzalama sürecini otomatikleştirmenize ve belgelerinizin geçerliliğini sağlamanıza olanak tanır.
+İşte buyur! Aspose.Words for .NET'i kullanarak başarılı bir şekilde yeni bir imza satırı oluşturdunuz ve sağlayıcı kimliğini bir Word belgesinde ayarladınız. Bu güçlü kitaplık, belge işleme görevlerini yönetmeyi ve otomatikleştirmeyi inanılmaz derecede kolaylaştırır. Bir deneyin ve iş akışınızı nasıl kolaylaştırabileceğini görün.
 
-### SSS'ler
+## SSS'ler
 
-#### S: İmza satırındaki sağlayıcı kimliği nedir?
+### İmza çizgisinin görünümünü özelleştirebilir miyim?
+Kesinlikle! Çeşitli seçenekleri ayarlayabilirsiniz.`SignatureLineOptions` İhtiyaçlarınıza uyacak şekilde.
 
-C: İmza satırındaki sağlayıcı kimliği, dijital imzanın sağlayıcısını temsil eden benzersiz bir tanımlayıcıdır. İmzadan sorumlu kaynağın veya kuruluşun belirlenmesine yardımcı olur.
+### PFX sertifikam yoksa ne olur?
+Güvenilir bir sertifika yetkilisinden bir sertifika almanız gerekir. Belgeleri dijital olarak imzalamak için gereklidir.
 
-#### S: Aspose.Words for .NET'i kullanarak bir Word belgesinde nasıl yeni bir imza satırı oluşturabilirim?
+### Bir belgeye birden fazla imza satırı ekleyebilir miyim?
+Evet, ekleme işlemini farklı seçeneklerle tekrarlayarak dilediğiniz kadar imza satırı ekleyebilirsiniz.
 
-C: Aspose.Words for .NET kullanarak bir Word belgesinde yeni bir imza satırı oluşturmak için şu adımları takip edebilirsiniz:
-1.  Bir örneğini oluşturun`Document` sınıf ve bir`DocumentBuilder` nesne.
-2.  Bir örneğini oluşturun`SignatureLineOptions` sınıfını seçin ve istediğiniz imza satırı seçeneklerini ayarlayın.
-3.  Kullan`InsertSignatureLine` yöntemi`DocumentBuilder` İmza satırını belgeye eklemek için nesne.
+### Aspose.Words for .NET, .NET Core ile uyumlu mu?
+Evet, Aspose.Words for .NET, .NET Core'u destekleyerek farklı geliştirme ortamları için çok yönlü olmasını sağlar.
 
-#### S: İmza satırının imzalayanın adı, unvanı ve talimatları gibi seçeneklerini özelleştirebilir miyim?
-
- C: Evet, imza satırının seçeneklerini özelleştirebilirsiniz.`SignatureLineOptions` sınıf, istenen seçenekleri ayarlamak için özellikler sağlar;`Signer`, `SignerTitle`, `Instructions`, `AllowComments`, vb. İmza satırını eklemeden önce bu özellikleri değiştirebilirsiniz.
-
-#### S: Bir imza satırı için sağlayıcı kimliğini ayarlamanın amacı nedir?
-
-C: İmza satırı için sağlayıcı kimliğinin ayarlanması, dijital imzadan sorumlu kaynağın veya kuruluşun belirlenmesine yardımcı olur. İmzanın kaynağı ve güvenilirliği hakkında ek bilgi sağlayarak imzayı belirli bir sağlayıcı veya kuruluşla ilişkilendirmenize olanak tanır.
-
-#### S: Aspose.Words for .NET'i kullanarak bir imza satırının sağlayıcı kimliğini nasıl ayarlayabilirim?
-
-C: Aspose.Words for .NET kullanarak bir imza satırının sağlayıcı kimliğini ayarlamak için şu adımları takip edebilirsiniz:
-1.  İmza satırını ekledikten sonra şuraya erişin:`ProviderId` mülkiyeti`SignatureLine` nesne.
-2.  Yı kur`ProviderId` özelliğini kullanarak istenen sağlayıcı kimliği değerine ayarlayın.`Guid` veri tipi.
-
-#### S: Yeni bir imza satırı oluşturduktan ve sağlayıcı kimliğini ayarladıktan sonra belgeyi imzalayabilir miyim?
-
- C: Evet, yeni bir imza satırı oluşturduktan ve sağlayıcı kimliğini ayarladıktan sonra belgeyi imzalayabilirsiniz. Belgeyi imzalamak için imza satırı kimliği, sağlayıcı kimliği, yorumlar ve imzalama zamanı dahil olmak üzere imza seçeneklerini ayarlamanız gerekir. Daha sonra şunu kullanın:`DigitalSignatureUtil.Sign` belgeyi dijital sertifika kullanarak imzalama yöntemi.
-
-#### S: Bir Word belgesindeki her imza satırı için belirli bir sağlayıcı kimliği belirtebilir miyim?
-
-C: Evet, bir Word belgesindeki her imza satırı için belirli bir sağlayıcı kimliği belirtebilirsiniz. Her imza satırını ekledikten sonra, söz konusu imza satırı için sağlayıcı kimliğini şu adrese erişerek ayarlayabilirsiniz:`ProviderId` ilgilinin mülkiyeti`SignatureLine` nesne.
-
-#### S: Yeni bir imza satırı oluşturduktan ve sağlayıcı kimliğini ayarladıktan sonra değiştirilen belgeyi nasıl kaydedebilirim?
-
- C: Yeni bir imza satırı oluşturduktan ve sağlayıcı kimliğini ayarladıktan sonra değiştirilen belgeyi kaydetmek için`Save` yöntemi`Document` nesne. Belgeyi kaydetmek için doğru yolu ve dosya adını belirtin.
-
-#### S: Aspose.Words for .NET imza satırları oluşturmak ve imzalamak için hangi dosya formatını destekliyor?
-
-C: Aspose.Words for .NET, DOCX dosya formatında imza satırları oluşturmayı ve imzalamayı destekler. Sağlanan yöntemleri ve sınıfları kullanarak DOCX dosyalarında imza satırları oluşturabilir ve imzalayabilirsiniz.
-
-#### S: İmzalandıktan sonra imza satırının sağlayıcı kimliğini veya diğer seçeneklerini değiştirebilir miyim?
-
-C: İmza satırı bir kez imzalandıktan sonra belgenin içeriğinin bir parçası haline gelir ve ayrı olarak değiştirilemez. Sağlayıcı kimliğinin veya diğer seçeneklerin değiştirilmesi gibi imza satırında yapılacak herhangi bir değişiklik, mevcut imzanın kaldırılmasını ve yeni bir imza satırı oluşturulmasını gerektirir.
+### Dijital imzalar ne kadar güvenli?
+Aspose.Words ile oluşturulan dijital imzalar, geçerli ve güvenilir bir sertifika kullanmanız koşuluyla son derece güvenlidir.

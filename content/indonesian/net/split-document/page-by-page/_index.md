@@ -15,7 +15,7 @@ Dalam tutorial ini, kami akan memandu Anda tentang cara membagi dokumen Word men
 Untuk memulai, tentukan direktori untuk dokumen Anda dan muat dokumen ke dalam objek Dokumen. Begini caranya:
 
 ```csharp
-// Jalur ke direktori dokumen.
+//Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

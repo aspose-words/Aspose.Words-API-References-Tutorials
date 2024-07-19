@@ -62,7 +62,7 @@ Trả lời: Nút gốc trong Node.js đề cập đến nút cao hơn tiếp th
 
 #### Câu hỏi: Làm cách nào để lấy nút cha của một nút cụ thể?
 
-Trả lời: Để lấy nút cha của một nút cụ thể, bạn có thể sử dụng`parentNode` thuộc tính của nút. Thuộc tính này trả về nút cha của nút hiện tại.
+ Trả lời: Để lấy nút cha của một nút cụ thể, bạn có thể sử dụng`parentNode` thuộc tính của nút. Thuộc tính này trả về nút cha của nút hiện tại.
 
 #### Câu hỏi: Làm cách nào để kiểm tra xem một nút có nút cha hay không?
 
@@ -70,7 +70,7 @@ Trả lời: Để lấy nút cha của một nút cụ thể, bạn có thể s
 
 #### Câu hỏi: Chúng ta có thể thay đổi nút cha của một nút không?
 
- Trả lời: Trong hầu hết các trường hợp, nút cha của nút được xác định bởi cấu trúc của tài liệu XML và không thể thay đổi trực tiếp. Tuy nhiên, bạn có thể di chuyển một nút này sang nút khác bằng các phương pháp cụ thể, chẳng hạn như`appendChild` hoặc`insertBefore`.
+Trả lời: Trong hầu hết các trường hợp, nút cha của nút được xác định bởi cấu trúc của tài liệu XML và không thể thay đổi trực tiếp. Tuy nhiên, bạn có thể di chuyển một nút này sang nút khác bằng các phương pháp cụ thể, chẳng hạn như`appendChild` hoặc`insertBefore`.
 
 #### Câu hỏi: Làm cách nào để duyệt thứ bậc của các nút cha?
 

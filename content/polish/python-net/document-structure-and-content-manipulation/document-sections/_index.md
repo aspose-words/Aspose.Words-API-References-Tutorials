@@ -68,7 +68,7 @@ footer.paragraphs.add_run("Footer Text")
 
 ## Zarządzanie podziałami stron
 
-Podziały stron zapewniają płynny przepływ treści między sekcjami. Możesz wstawiać podziały stron w określonych miejscach dokumentu:
+Podziały stron zapewniają płynny przepływ treści pomiędzy sekcjami. Możesz wstawiać podziały stron w określonych miejscach dokumentu:
 
 ```python
 # Insert page break

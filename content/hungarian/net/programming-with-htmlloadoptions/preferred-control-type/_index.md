@@ -91,4 +91,4 @@ V: A StructuredDocumentTags (SDT) XML-alapú elemek, amelyek segítségével ös
 
 #### K: Használhatok más vezérlőtípusokat preferált lehetőségként?
 
- V: Igen, azon kívül`HtmlControlType.StructuredDocumentTag` , Az Aspose.Words for .NET más vezérlőtípusokat is támogat, mint pl`HtmlControlType.ContentControl` és`HtmlControlType.CustomXmlMarkup`.
+ V: Igen, azon kívül`HtmlControlType.StructuredDocumentTag` , Az Aspose.Words for .NET más vezérlőtípusokat is támogat, mint pl`HtmlControlType.ContentControl`és`HtmlControlType.CustomXmlMarkup`.

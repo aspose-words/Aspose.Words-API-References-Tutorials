@@ -15,7 +15,7 @@ Pernahkah Anda berada dalam situasi di mana Anda perlu mengonversi file PDF ke g
 
 Sebelum kita masuk ke seluk beluknya, mari kita pastikan semua bebek kita berada dalam satu baris. Inilah yang Anda butuhkan:
 
-1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan canggih ini. Jika belum, Anda dapat mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
+1. Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan canggih ini. Jika belum, Anda dapat mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
 2. .NET Framework: Pastikan Anda telah menyiapkan lingkungan .NET di mesin Anda.
 3. Visual Studio: Versi apa pun bisa digunakan, selama Anda nyaman menavigasinya.
 4.  File PDF: Siapkan file PDF Anda untuk dikonversi. Untuk tutorial ini, kita akan menggunakan file bernama`Pdf Document.pdf`.

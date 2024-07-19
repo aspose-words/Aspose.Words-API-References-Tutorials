@@ -10,7 +10,7 @@ url: /nl/java/document-loading-and-saving/using-load-options/
 
 ## Inleiding tot het werken met laadopties in Aspose.Words voor Java
 
-In deze zelfstudie onderzoeken we hoe u met Laadopties in Aspose.Words voor Java kunt werken. Met Laadopties kunt u aanpassen hoe documenten worden geladen en verwerkt. We behandelen verschillende scenario's, waaronder het bijwerken van vuile velden, het laden van gecodeerde documenten, het converteren van vormen naar Office Math, het instellen van de MS Word-versie, het specificeren van een tijdelijke map, het afhandelen van waarschuwingen en het converteren van metabestanden naar PNG. Laten we er stap voor stap in duiken.
+In deze zelfstudie onderzoeken we hoe u met Laadopties in Aspose.Words voor Java kunt werken. Met Laadopties kunt u aanpassen hoe documenten worden geladen en verwerkt. We behandelen verschillende scenario's, waaronder het bijwerken van vervuilde velden, het laden van gecodeerde documenten, het converteren van vormen naar Office Math, het instellen van de MS Word-versie, het specificeren van een tijdelijke map, het afhandelen van waarschuwingen en het converteren van metabestanden naar PNG. Laten we er stap voor stap in duiken.
 
 ## Update vuile velden
 

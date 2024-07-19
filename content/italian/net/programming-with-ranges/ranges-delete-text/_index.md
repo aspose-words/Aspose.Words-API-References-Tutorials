@@ -75,7 +75,7 @@ R: Aspose.Words per .NET è una potente libreria per l'elaborazione di parole co
 
 #### D: Come carico un documento Word utilizzando Aspose.Words per .NET?
 
-R: Per caricare un documento Word utilizzando Aspose.Words per .NET, è possibile utilizzare il file`Document` classe e il suo costruttore. È necessario fornire il percorso del file o il flusso del documento come parametro. Ecco un esempio:
+ R: Per caricare un documento Word utilizzando Aspose.Words per .NET, è possibile utilizzare il file`Document` classe e il suo costruttore. È necessario fornire il percorso del file o il flusso del documento come parametro. Ecco un esempio:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

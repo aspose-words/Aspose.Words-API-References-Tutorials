@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions`en stelt de`ExportTextInputFormFieldAsText` optie om`true` om tekstinvoerformuliervelden als platte tekst te exporteren. Bovendien specificeert het de map waarin de uitgepakte afbeeldingen zullen worden opgeslagen.
+ Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions` en stelt de`ExportTextInputFormFieldAsText` optie om`true` om tekstinvoerformuliervelden als platte tekst te exporteren. Bovendien specificeert het de map waarin de uitgepakte afbeeldingen zullen worden opgeslagen.
 
 ## Stap 4: Het document converteren en opslaan naar HTML
 

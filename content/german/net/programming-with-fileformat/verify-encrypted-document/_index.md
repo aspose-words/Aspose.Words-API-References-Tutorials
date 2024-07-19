@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Schritt 3: Überprüfen Sie, ob das Dokument verschlüsselt ist
 
- Wir benutzen das`IsEncrypted` Eigentum der`FileFormatInfo`Objekt, um zu prüfen, ob das Dokument verschlüsselt ist. Diese Eigenschaft gibt`true` wenn das Dokument verschlüsselt ist, andernfalls wird zurückgegeben`false`. Das Ergebnis zeigen wir in der Konsole an.
+ Wir benutzen das`IsEncrypted` Eigentum der`FileFormatInfo` Objekt, um zu prüfen, ob das Dokument verschlüsselt ist. Diese Eigenschaft gibt`true` wenn das Dokument verschlüsselt ist, andernfalls wird zurückgegeben`false`. Das Ergebnis zeigen wir in der Konsole an.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### F: Wie erkennt man das Dateiformat?
- Du kannst den ... benutzen`DetectFileFormat` Methode der`FileFormatUtil`Klasse zum Erkennen von Dateiformatinformationen. Im folgenden Beispiel gehen wir davon aus, dass das verschlüsselte Dokument „Encrypted.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet:
+ Du kannst den ... benutzen`DetectFileFormat` Methode der`FileFormatUtil` Klasse zum Erkennen von Dateiformatinformationen. Im folgenden Beispiel gehen wir davon aus, dass das verschlüsselte Dokument „Encrypted.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### F: Wie kann ich überprüfen, ob das Dokument verschlüsselt ist?
- Du kannst den ... benutzen`IsEncrypted` Eigentum der`FileFormatInfo`Objekt, um zu prüfen, ob das Dokument verschlüsselt ist. Diese Eigenschaft gibt`true` wenn das Dokument verschlüsselt ist, andernfalls wird zurückgegeben`false`. Das Ergebnis wird in der Konsole angezeigt:
+ Du kannst den ... benutzen`IsEncrypted` Eigentum der`FileFormatInfo` Objekt, um zu prüfen, ob das Dokument verschlüsselt ist. Diese Eigenschaft gibt`true` wenn das Dokument verschlüsselt ist, andernfalls wird zurückgegeben`false`. Das Ergebnis wird in der Konsole angezeigt:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

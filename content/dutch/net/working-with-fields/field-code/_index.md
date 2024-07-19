@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Doe iets met de veldcode en het resultaat.
+     //Doe iets met de veldcode en het resultaat.
 }
 ```
 
@@ -73,7 +73,7 @@ Dit concludeert onze handleiding over het gebruik van de functie "Get Field Code
 
 #### Vraag: Hoe kan ik velden in een document bijwerken met Aspose.Words voor .NET?
 
- A: Om documentvelden bij te werken met Aspose.Words voor .NET, kunt u de`Document.UpdateFields`methode. Hiermee worden alle velden in het document bijgewerkt, zoals samenvoegvelden, datumvelden, enz.
+ A: Om documentvelden bij te werken met Aspose.Words voor .NET, kunt u de`Document.UpdateFields` methode. Hiermee worden alle velden in het document bijgewerkt, zoals samenvoegvelden, datumvelden, enz.
 
 #### Vraag: Hoe kan ik de waarde van een specifiek veld in Aspose.Words voor .NET ophalen?
 

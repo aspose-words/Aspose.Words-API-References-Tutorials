@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Langkah 3: Masukkan objek OLE
- Gunakan Pembuat Dokumen`InsertOleObject` metode untuk memasukkan objek OLE ke dalam dokumen. Tentukan URL objek OLE, tipe objek, opsi tampilan, dan pengaturan lain yang diperlukan.
+ Gunakan Pembuat Dokumen`InsertOleObject`metode untuk memasukkan objek OLE ke dalam dokumen. Tentukan URL objek OLE, tipe objek, opsi tampilan, dan pengaturan lain yang diperlukan.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", benar, benar, nol);
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### T: Bagaimana cara menyisipkan objek OLE ke dalam dokumen?
 
- J: Gunakan`InsertOleObject`metode pembuat dokumen (`DocumentBuilder`) untuk menyisipkan objek OLE ke dalam dokumen. Tentukan URL objek OLE, tipe objek, opsi tampilan, dan pengaturan lain yang diperlukan. Berikut ini contohnya:
+ J: Gunakan`InsertOleObject` metode pembuat dokumen (`DocumentBuilder`) untuk menyisipkan objek OLE ke dalam dokumen. Tentukan URL objek OLE, tipe objek, opsi tampilan, dan pengaturan lain yang diperlukan. Berikut ini contohnya:
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", benar, benar, nol);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", benar, benar, nol)
 
 #### Q: Bagaimana cara menyimpan dokumen?
 
- J: Gunakan dokumen tersebut`Save` metode untuk menyimpan dokumen ke file. Berikut ini contohnya:
+ J: Gunakan dokumen tersebut`Save`metode untuk menyimpan dokumen ke file. Berikut ini contohnya:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

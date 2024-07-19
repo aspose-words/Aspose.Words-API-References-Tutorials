@@ -21,7 +21,7 @@ De eerste stap is het configureren van de laadopties voor ons CHM-bestand. Gebru
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding. GetEncoding("windows-1251") };
 ```
 
-We maken een nieuw LoadOptions-object en stellen de eigenschap Encoding in op "windows-1251" -codering voor CHM-bestanden.
+We maken een nieuw LoadOptions-object en stellen de eigenschap Encoding in op "windows-1251"-codering voor CHM-bestanden.
 
 ## CHM-bestand laden
 
@@ -66,7 +66,7 @@ EEN: Absoluut! Aspose.Words biedt verschillende laadopties die kunnen worden aan
 
 #### Vraag: Is Aspose.Words beperkt tot het verwerken van alleen Word-documenten?
 
-A: Hoewel Aspose.Words in de eerste plaats is ontworpen voor Word-documenten, ondersteunt het ook andere bestandsindelingen, zoals PDF, HTML, EPUB en meer, waardoor het een veelzijdig hulpmiddel is voor documentverwerking.
+A: Hoewel Aspose.Words in de eerste plaats is ontworpen voor Word-documenten, ondersteunt het ook andere bestandsformaten, zoals PDF, HTML, EPUB en meer, waardoor het een veelzijdig hulpmiddel is voor documentverwerking.
 
 #### Vraag: Hoe kan het laden van CHM-bestanden mijn C#-applicatie ten goede komen?
 

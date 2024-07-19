@@ -14,7 +14,7 @@ Ebben a lépésenkénti oktatóanyagban bemutatjuk, hogyan illeszthet be űrlapm
 
 ## 1. lépés: A Document és a DocumentBuilder objektumok inicializálása
 
- Először inicializálja a`Document` és`DocumentBuilder` objektumok:
+ Először inicializálja a`Document`és`DocumentBuilder` objektumok:
 
 ```csharp
 Document doc = new Document();

@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- V tomto kroku přistupujeme k`Theme` objekt`Document`objekt získat téma dokumentu. Dále můžeme upravit vlastnosti motivu, jako jsou sekundární písma (`MinorFonts.Latin`) a barvy (`Colors.Hyperlink`).
+ tomto kroku přistupujeme k`Theme` objekt`Document` objekt získat téma dokumentu. Dále můžeme upravit vlastnosti motivu, jako jsou sekundární písma (`MinorFonts.Latin`) a barvy (`Colors.Hyperlink`).
 
 ## Krok 4: Uložte dokument
 

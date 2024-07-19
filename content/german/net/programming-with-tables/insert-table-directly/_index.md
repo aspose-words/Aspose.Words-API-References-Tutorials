@@ -53,7 +53,7 @@ Als nächstes erstellen wir das Tabellenobjekt. Hier definieren wir die Struktur
 
 ```csharp
 // Wir beginnen mit der Erstellung des Tabellenobjekts. Beachten Sie, dass wir das Dokumentobjekt übergeben müssen
-// zum Konstruktor jedes Knotens. Dies liegt daran, dass jeder Knoten, den wir erstellen, gehören muss
+// zum Konstruktor jedes Knotens. Dies liegt daran, dass jeder Knoten, den wir erstellen,
 // zu einem Dokument.
 Table table = new Table(doc);
 doc.FirstSection.Body.AppendChild(table);

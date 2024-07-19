@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### S: Aspose.Words for .NET'te bir revizyon grubunun ayrıntılarını nasıl edinebilirim?
 
-C: Bir döngü kullanarak belgenin revizyonlarını gözden geçirin ve istediğiniz ayrıntıları elde etmek için her revizyonun özelliklerine erişin. Şunu kullanabilirsiniz:`RevisionType`, `Author`, `DateTime` Ve`ParentNode` sırasıyla revizyon türünü, yazarı, tarihi ve revize edilen metni almak için özellikler.
+C: Bir döngü kullanarak belgenin revizyonlarını gözden geçirin ve istediğiniz ayrıntıları elde etmek için her revizyonun özelliklerine erişin. Şunu kullanabilirsiniz:`RevisionType`, `Author`, `DateTime`Ve`ParentNode` sırasıyla revizyon türünü, yazarı, tarihi ve revize edilen metni almak için özellikler.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

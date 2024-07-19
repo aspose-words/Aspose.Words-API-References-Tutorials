@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Шаг 2. Примените стиль зачеркнутого текста
 
-Мы включим стиль зачеркивания текста, установив`StrikeThrough` собственность`Font` Возражать`true`.
+ Мы включим стиль зачеркивания текста, установив`StrikeThrough` собственность`Font` Возражать`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

@@ -33,7 +33,7 @@ Nu gaan we de HTML-opslagopties configureren om de retourinformatie van het docu
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions`en stelt de`ExportRoundtripInformation` optie om`true` om retourinformatie op te nemen bij het exporteren.
+ Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions` en stelt de`ExportRoundtripInformation` optie om`true` om retourinformatie op te nemen bij het exporteren.
 
 ## Stap 4: Het document converteren en opslaan naar HTML
 

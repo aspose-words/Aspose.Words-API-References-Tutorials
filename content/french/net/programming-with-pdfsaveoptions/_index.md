@@ -7,7 +7,7 @@ type: docs
 weight: 1680
 url: /fr/net/programming-with-pdfsaveoptions/
 ---
-Les didacticiels Aspose.Words for .NET sur le traitement de mots avec PdfSaveOptions vous guident à travers les différentes fonctionnalités et techniques du traitement de mots avec les options d'enregistrement PDF. Ces didacticiels vous aident à comprendre comment personnaliser la conversion Word en PDF en modifiant les paramètres de mise en page, les polices, les images, les métadonnées et bien plus encore.
+Les didacticiels Aspose.Words pour .NET sur le traitement de mots avec PdfSaveOptions vous guident à travers les différentes fonctionnalités et techniques du traitement de mots avec les options d'enregistrement PDF. Ces didacticiels vous aident à comprendre comment personnaliser la conversion Word en PDF en modifiant les paramètres de mise en page, les polices, les images, les métadonnées et bien plus encore.
 
 Vous apprendrez à ajuster les options de qualité d'image, à choisir le niveau de compression des images, à définir les paramètres de sécurité PDF tels que le cryptage et les autorisations, et même à insérer des filigranes dans les fichiers PDF générés. Les didacticiels incluent également des exemples de code détaillés pour vous aider à mettre en pratique ces fonctionnalités dans vos projets.
 
@@ -24,7 +24,7 @@ Que vous souhaitiez convertir des documents Word en PDF pour les distribuer, les
 | [Réduisez la taille du PDF en désactivant les polices intégrées](./disable-embed-windows-fonts/) | Découvrez comment désactiver l'intégration des polices Windows lors de la conversion de documents au format PDF avec Aspose.Words pour .NET. |
 | [Optimisez la taille du PDF en ignorant les polices Arial et Times Roman intégrées](./skip-embedded-arial-and-times-roman-fonts/) | Guide étape par étape pour générer des PDF sans intégrer les polices Arial et Times Roman avec Aspose.Words pour .NET. |
 | [Réduisez la taille du fichier PDF en n’incorporant pas les polices principales](./avoid-embedding-core-fonts/) | Découvrez comment éviter l'intégration de polices de base lors de la conversion de documents Word en PDF avec Aspose.Words pour .NET. |
-| [Échapper à l'URI dans un document PDF](./escape-uri/) | Guide étape par étape pour échapper à Uri avec Aspose.Words for .NET. |
+| [Échapper à l'URI dans un document PDF](./escape-uri/) | Découvrez comment échapper aux URI dans les PDF à l’aide d’Aspose.Words pour .NET. Ce guide détaillé vous guide pas à pas tout au long du processus. |
 | [Exporter les signets de pied de page d’en-tête de document Word vers un document PDF](./export-header-footer-bookmarks/) | Guide étape par étape pour exporter les signets d’en-tête et de pied de page avec Aspose.Words pour .NET. |
 | [Réduisez la taille du PDF en adaptant les polices Wmf à la taille du métafichier](./scale-wmf-fonts-to-metafile-size/) | Guide étape par étape pour ajuster la taille de la police WMF lors de la conversion en PDF avec Aspose.Words pour .NET. |
 | [Améliorez le positionnement du texte PDF avec un positionnement de texte supplémentaire](./additional-text-positioning/) | Découvrez comment contrôler le placement du texte supplémentaire lors de la conversion de documents Word en PDF avec Aspose.Words pour .NET. |

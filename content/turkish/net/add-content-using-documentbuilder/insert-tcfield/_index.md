@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Adım 2: Yeni Bir Belge Oluşturun
 
- Tamam, yeni bir Word belgesi oluşturarak başlayalım. biz kullanacağız`Document` Ve`DocumentBuilder` İşleri yoluna koymak için Aspose.Words'ten dersler.
+ Tamam, yeni bir Word belgesi oluşturarak başlayalım. biz kullanacağız`Document`Ve`DocumentBuilder` İşleri yoluna koymak için Aspose.Words'ten dersler.
 
 ```csharp
 // Belgeler dizininin yolu.
@@ -64,7 +64,7 @@ Bu, belgemizi oluşturur ve bizi onu oluşturmaya başlamaya hazırlar.
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Bu kod satırı Aspose.Words'e "Giriş Metni" giriş metnini içeren bir TC alanı eklemesini söyler.`\\f t` bölüm, girişin İçindekiler Tablosunda nasıl görüntüleneceğini belirleyen bir anahtardır.
+ Bu kod satırı Aspose.Words'e "Giriş Metni" giriş metnini içeren bir TC alanı eklemesini söyler.`\\f t`bölüm, girişin İçindekiler Tablosunda nasıl görüntüleneceğini belirleyen bir anahtardır.
 
 ## Adım 4: Belgeyi Kaydedin
 

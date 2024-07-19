@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- Bu adımda belgenin ilk paragrafına şu komutu kullanarak erişiyoruz:`FirstSection` Ve`Body` özellikler. Daha sonra şuraya erişiyoruz:`ParagraphFormat.Bidi` Paragrafın metin yönünü alma özelliği. Daha sonra bu değeri konsolda gösteriyoruz.
+ Bu adımda belgenin ilk paragrafına şu komutu kullanarak erişiyoruz:`FirstSection`Ve`Body` özellikler. Daha sonra şuraya erişiyoruz:`ParagraphFormat.Bidi` Paragrafın metin yönünü alma özelliği. Daha sonra bu değeri konsolda gösteriyoruz.
 
 ## 5. Adım: Belgeyi kaydedin
 

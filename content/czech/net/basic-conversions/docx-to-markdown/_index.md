@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Manipulujte s obsahem dokumentu
 
- Použijte`DocumentBuilder` objekt pro manipulaci s obsahem podle potřeby. Například přidejte text nebo formátování.
+ Použijte`DocumentBuilder` objekt manipulovat s obsahem podle potřeby. Například přidejte text nebo formátování.
 
 ```csharp
 builder.Writeln("Insert your text or content manipulation code here!");

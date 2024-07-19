@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- In questo passaggio, ci uniamo`Document1.docx` E`Document2.docx` in un nuovo file chiamato`MergedDocument.docx`.
+ In questo passaggio, ci uniamo`Document1.docx`E`Document2.docx` in un nuovo file chiamato`MergedDocument.docx`.
 
 ## Passaggio 3: unione con le opzioni di salvataggio
 
@@ -74,7 +74,7 @@ Se hai bisogno di unire documenti e salvare il risultato come PDF, Aspose.Words 
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Qui ci uniamo`Document1.docx` E`Document2.docx` e salva il risultato come file PDF.
+ Qui ci uniamo`Document1.docx`E`Document2.docx` e salva il risultato come file PDF.
 
 ## Passaggio 5: creazione di un'istanza di documento da documenti uniti
 
@@ -103,7 +103,7 @@ Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di 
 
 ### 3. Come posso gestire la diversa formattazione durante l'unione?
 
- Aspose.Words fornisce varie modalità di formato di unione come`KeepSourceFormatting` E`MergeFormatting` . Fare riferimento al[Documentazione dell'API](https://reference.aspose.com/words/net/) per istruzioni dettagliate.
+ Aspose.Words fornisce varie modalità di formato di unione come`KeepSourceFormatting`E`MergeFormatting` . Fare riferimento al[Documentazione dell'API](https://reference.aspose.com/words/net/) per istruzioni dettagliate.
 
 ### 4. Come posso ottenere supporto per Aspose.Words per .NET?
 

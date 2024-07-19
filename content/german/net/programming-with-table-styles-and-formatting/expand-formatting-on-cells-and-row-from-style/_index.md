@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Schritt 3: Gehen Sie zur ersten Zelle der ersten Tabelle
- Zunächst müssen wir zur ersten Zelle der ersten Tabelle im Dokument navigieren. Wir verwenden die`GetChild()` Und`FirstRow.FirstCell` Methoden, um den Verweis auf die erste Zelle zu erhalten.
+ Zunächst müssen wir zur ersten Zelle der ersten Tabelle im Dokument navigieren. Wir verwenden die`GetChild()`Und`FirstRow.FirstCell` Methoden, um den Verweis auf die erste Zelle zu erhalten.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -41,7 +41,7 @@ Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
 Console.WriteLine("Shading cell before style expansion: " + cellShadingBefore);
 ```
 
-## Schritt 5: Tabellenstile erweitern zur direkten Formatierung
+## Schritt 5: Tabellenstile zur direkten Formatierung erweitern
  Nun erweitern wir die Tabellenstile um die direkte Formatierung über die`ExpandTableStylesToDirectFormatting()` Methode.
 
 ```csharp
@@ -80,4 +80,4 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie Sie mit Aspose.Words für .NET die Formatierung eines Tabellenstils auf Zellen und Zeilen erweitern. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie die Formatierung im Tabellenstil ganz einfach auf bestimmte Zellen und Zeilen in Ihren Word-Dokumenten anwenden. Aspose.Words bietet eine leistungsstarke und flexible API zum Bearbeiten und Formatieren von Tabellen in Ihren Dokumenten. Mit diesem Wissen können Sie das Layout und die Präsentation Ihrer Word-Dokumente weiter anpassen.
+In diesem Tutorial haben wir gelernt, wie Sie mit Aspose.Words für .NET die Formatierung von einem Tabellenstil auf Zellen und Zeilen erweitern. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie die Formatierung im Tabellenstil ganz einfach auf bestimmte Zellen und Zeilen in Ihren Word-Dokumenten anwenden. Aspose.Words bietet eine leistungsstarke und flexible API zum Bearbeiten und Formatieren von Tabellen in Ihren Dokumenten. Mit diesem Wissen können Sie das Layout und die Präsentation Ihrer Word-Dokumente weiter anpassen.

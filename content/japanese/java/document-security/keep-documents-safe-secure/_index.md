@@ -2,7 +2,7 @@
 title: 文書を安全に保管する方法
 linktitle: 文書を安全に保管する方法
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java でドキュメントを保護します。暗号化、保護、デジタル署名の追加を簡単に行うことができます。データを安全に保ちます。
+description: Aspose.Words for Java でドキュメントを保護します。暗号化、保護、デジタル署名の追加が簡単に行えます。データを安全に保ちます。
 type: docs
 weight: 10
 url: /ja/java/document-security/keep-documents-safe-secure/

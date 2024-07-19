@@ -2,7 +2,7 @@
 title: 将文档拆分为 HTML 页面
 linktitle: 将文档拆分为 HTML 页面
 second_title: Aspose.Words Java 文档处理 API
-description: 了解如何使用 Aspose.Words for Java 将 Word 文档拆分为 HTML 页面。我们的分步指南附带源代码，让此过程变得简单高效。立即开始转换您的文档！
+description: 了解如何使用 Aspose.Words for Java 将 Word 文档拆分为 HTML 页面。我们的分步指南附带源代码，使该过程变得简单高效。立即开始转换您的文档！
 type: docs
 weight: 11
 url: /zh/java/document-splitting/splitting-documents-into-html-pages/

@@ -2,48 +2,90 @@
 title: Ignore Text Boxes
 linktitle: Ignore Text Boxes
 second_title: Aspose.Words Document Processing API
-description: Learn how to append a document while ignore text box formatting using Aspose.Words for .NET.
+description: Merge Word documents with Aspose.Words for .NET, ensuring text box formatting is preserved. Follow this step-by-step guide for seamless document processing.
 type: docs
 weight: 10
 url: /net/join-and-append-documents/ignore-text-boxes/
 ---
+## Introduction
 
-This tutorial explains how to use Aspose.Words for .NET to append a document while preserving the formatting of text boxes. The provided source code demonstrates how to set up the import format options to include text boxes during the appending process.
+Welcome to this detailed tutorial on using Aspose.Words for .NET to merge Word documents while ignoring text boxes. If you're looking to streamline your document processing and ensure that the formatting of text boxes is maintained, you're in the right place. Let's dive into this step-by-step guide.
 
-## Step 1: Set up the project
+## Prerequisites
 
-Ensure that you have the following prerequisites:
+Before we begin, let's ensure you have everything you need:
 
-- Aspose.Words for .NET library installed. You can download it from [Aspose.Releases]https://releases.aspose.com/words/net/ or use NuGet package manager to install it.
-- A document directory path where the source and destination documents are located.
+1. Aspose.Words for .NET: Download it [here](https://releases.aspose.com/words/net/).
+2. .NET Development Environment: Visual Studio or any other preferred IDE.
+3. Basic Knowledge of C#: Understanding of basic programming concepts in C#.
 
-## Step 2: Open the source and destination documents
+## Import Namespaces
 
-Open the source and destination documents using the `Document` class constructor. Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to your document directory.
+To get started, you'll need to import the necessary namespaces in your project:
 
 ```csharp
-// Path to your document directory
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Importing;
+```
 
+## Step 1: Set Up Your Project
+
+First, ensure your project is set up correctly. Open your IDE, create a new project, and install the Aspose.Words for .NET library via NuGet Package Manager.
+
+### How to Install Aspose.Words
+
+1. Open NuGet Package Manager in your IDE.
+2. Search for "Aspose.Words".
+3. Click on "Install".
+
+## Step 2: Define Document Directory
+
+Next, specify the directory where your source and destination documents are located.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to your document directory.
+
+## Step 3: Load the Documents
+
+Now, load both the source and destination documents into your project.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Step 3: Set up import format options
+## Step 4: Configure Import Options
 
-Create an instance of the `ImportFormatOptions` class and set the `IgnoreTextBoxes` property to `false`. This ensures that the text boxes are included during the appending process while preserving their formatting.
+To ensure the text boxes formatting is maintained, set the `IgnoreTextBoxes` option to `false`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## Step 4: Append text box content
+## Step 5: Initialize Node Importer
 
-Create a `NodeImporter` object and use it to import text box nodes from the source document to the destination document. Iterate through each paragraph in the source document and import it to the destination document.
+Initialize the `NodeImporter` to import nodes from the source document to the destination document.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+```
+
+## Step 6: Import Paragraphs from Source Document
+
+Fetch all paragraphs from the source document's first section.
+
+```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
+```
+
+## Step 7: Append Imported Paragraphs to Destination Document
+
+Loop through each paragraph and append it to the destination document.
+
+```csharp
 foreach (Paragraph srcPara in srcParas)
 {
     Node importedNode = importer.ImportNode(srcPara, true);
@@ -51,33 +93,32 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Step 5: Save the destination document
+## Step 8: Save the Merged Document
 
-Finally, save the modified destination document using the `Save` method of the `Document` object.
+Finally, save the merged document with a new name to avoid overwriting the original files.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ```
 
-This completes the implementation of appending a document while preserving text box formatting using Aspose.Words for .NET.
+## Conclusion
 
-### Example source code for Ignore Text Boxes using Aspose.Words for .NET 
+You've successfully merged two Word documents using Aspose.Words for .NET while ensuring that text boxes are not ignored during the import. This process is invaluable for maintaining the formatting integrity of your documents. Whether you're dealing with reports, contracts, or any other type of document, Aspose.Words for .NET makes the process seamless.
 
-```csharp
-	// Path to your document directory 
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ's
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Keep the source text boxes formatting when importing.
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, true);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
-```
+### What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful library for creating, manipulating, and converting Word documents within .NET applications. [Learn more](https://reference.aspose.com/words/net/).
+
+### Can I try Aspose.Words for .NET before purchasing?
+Yes, you can download a free trial [here](https://releases.aspose.com/).
+
+### How can I get a temporary license for Aspose.Words for .NET?
+You can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
+
+### Where can I find more detailed documentation?
+You can find the comprehensive documentation [here](https://reference.aspose.com/words/net/).
+
+### How can I get support for Aspose.Words for .NET?
+For support, visit the Aspose forums [here](https://forum.aspose.com/c/words/8).
+

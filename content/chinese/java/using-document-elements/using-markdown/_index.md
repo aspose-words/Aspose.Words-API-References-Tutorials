@@ -91,7 +91,7 @@ builder.getFont().setBold(false);
 
 ## 表格
 
-使用 Aspose.Words for Java 可以直接将表格添加到您的 Markdown 文档中。
+使用 Aspose.Words for Java 可以直接将表格添加到您的 Markdown 文档。
 
 ```java
 builder.startTable();
@@ -167,7 +167,7 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 
 ## 结论
 
-在本教程中，我们介绍了在 Aspose.Words for Java 中使用 Markdown 的基础知识。您已经学习了如何设置环境、应用样式、添加表格以及保存 Markdown 文档。掌握这些知识后，您就可以开始使用 Aspose.Words for Java 高效地生成 Markdown 文档了。
+在本教程中，我们介绍了在 Aspose.Words for Java 中使用 Markdown 的基础知识。您已经学习了如何设置环境、应用样式、添加表格以及保存 Markdown 文档。掌握这些知识后，您就可以开始使用 Aspose.Words for Java 高效地生成 Markdown 文档。
 
 ### 常见问题解答
 
@@ -180,7 +180,7 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 ### Aspose.Words for Java 可以免费使用吗？ 
     Aspose.Words for Java 是商业产品，使用需要许可证。您可以从[这里](https://purchase.aspose.com/buy).
 
-### 有没有适用于 Aspose.Words for Java 的教程或文档？ 
+### 有没有适用于 Java 的 Aspose.Words 的教程或文档？ 
    是的，您可以在[Aspose.Words for Java API 文档](https://reference.aspose.com/words/java/).
 
 ### 在哪里可以获得 Aspose.Words for Java 的支持？ 

@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Steg 2: Lägg till stil för indragen kod
 
-Vi kommer att lägga till en anpassad stil för den indragna koden med hjälp av`Styles.Add` metod för`Document` objekt. I det här exemplet skapar vi en stil som heter "IndentedCode" för indragen kod.
+ Vi kommer att lägga till en anpassad stil för den indragna koden med hjälp av`Styles.Add` metod för`Document` objekt. I det här exemplet skapar vi en stil som heter "IndentedCode" för indragen kod.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

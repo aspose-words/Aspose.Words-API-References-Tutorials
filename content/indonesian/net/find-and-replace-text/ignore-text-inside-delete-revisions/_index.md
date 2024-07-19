@@ -2,204 +2,86 @@
 title: Abaikan Teks di Dalam Hapus Revisi
 linktitle: Abaikan Teks di Dalam Hapus Revisi
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan fitur "Abaikan Teks di Dalam Hapus Revisi" Aspose.Words untuk .NET.
+description: Pelajari cara menangani revisi terlacak dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kuasai otomatisasi dokumen dengan tutorial komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
+## Perkenalan
 
-Pada artikel ini, kita akan menjelajahi kode sumber C# di atas untuk memahami cara menggunakan fitur "Abaikan Teks di Dalam Hapus Revisi" di pustaka Aspose.Words untuk .NET. Fitur ini berguna ketika kita ingin mengabaikan teks di dalam revisi penghapusan saat Words Processing dengan dokumen.
+Dalam bidang pengembangan .NET, Aspose.Words menonjol sebagai perpustakaan yang kuat untuk bekerja dengan dokumen Microsoft Word secara terprogram. Baik Anda seorang pengembang berpengalaman atau baru memulai, menguasai kemampuan Aspose.Words dapat secara signifikan meningkatkan kemampuan Anda untuk memanipulasi, membuat, dan mengelola dokumen Word secara efisien. Tutorial ini mendalami salah satu fitur canggihnya: menangani revisi terlacak dalam dokumen menggunakan Aspose.Words untuk .NET.
 
-## Ikhtisar perpustakaan Aspose.Words untuk .NET
+## Prasyarat
 
-Sebelum mendalami detail kode, izinkan saya memperkenalkan secara singkat perpustakaan Aspose.Words untuk .NET. Ini adalah perpustakaan canggih yang memungkinkan pembuatan, modifikasi, dan konversi dokumen Word dalam aplikasi .NET. Ini menawarkan banyak fitur lanjutan untuk Pemrosesan Kata dengan dokumen, termasuk manajemen revisi.
+Sebelum mendalami tutorial ini, pastikan Anda memiliki prasyarat berikut:
+- Pengetahuan dasar bahasa pemrograman C#.
+- Visual Studio diinstal pada sistem Anda.
+-  Aspose.Words untuk perpustakaan .NET terintegrasi ke dalam proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Akses ke Aspose.Words untuk .NET[dokumentasi](https://reference.aspose.com/words/net/) sebagai referensi.
 
-## Memahami fitur "Abaikan Teks di Dalam Hapus Revisi".
+## Impor Namespace
 
-Fitur "Abaikan Teks di Dalam Hapus Revisi" di Aspose.Words untuk .NET memungkinkan Anda menentukan apakah teks di dalam revisi penghapusan harus diabaikan selama operasi tertentu, seperti menemukan dan mengganti teks. Jika fitur ini diaktifkan, teks yang dihapus di dalam revisi tidak dipertimbangkan selama pengoperasian.
+Mulailah dengan mengimpor namespace yang diperlukan ke dalam proyek Anda:
+```csharp
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+## Langkah 1: Buat Dokumen Baru dan Sisipkan Teks
 
-## Langkah 1: Membuat dokumen baru menggunakan Aspose.Words untuk .NET
-
- Sebelum kita mulai memanipulasi teks dalam dokumen, kita perlu membuat dokumen baru menggunakan Aspose.Words untuk .NET. Hal ini dapat dilakukan dengan membuat contoh a`Document` obyek:
-
+ Pertama, inisialisasi instance baru`Document` dan sebuah`DocumentBuilder` untuk mulai membuat dokumen Anda:
 ```csharp
 Document doc = new Document();
-```
-
-## Langkah 2: Memasukkan teks yang tidak direvisi ke dalam dokumen
-
- Setelah kita memiliki dokumen, kita dapat menyisipkan teks yang belum ditinjau menggunakan a`DocumentBuilder` obyek. Misalnya untuk menyisipkan teks "Teks yang Dihapus", kita dapat menggunakan`Writeln` Dan`Write` metode:
-
-```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. Writen("Deleted");
-builder. Write("Text");
 ```
 
-## Langkah 3: Menghapus paragraf dengan pelacakan revisi
+## Langkah 2: Sisipkan Teks dan Lacak Revisi
 
-Untuk mengilustrasikan penggunaan fitur "Abaikan Teks di Dalam Hapus Revisi", kami akan menghapus satu paragraf dari dokumen menggunakan pelacakan revisi. Ini akan memungkinkan kita melihat bagaimana fitur ini memengaruhi operasi selanjutnya.
-
+Anda dapat memasukkan teks ke dalam dokumen dan melacak revisi dengan memulai dan menghentikan pelacakan revisi:
 ```csharp
+builder.Writeln("Deleted");
+builder.Write("Text");
+
 doc.StartTrackRevisions("author", DateTime.Now);
 doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## Langkah 4: Menerapkan fitur "Abaikan Teks di Dalam Hapus Revisi".
+## Langkah 3: Ganti Teks Menggunakan Ekspresi Reguler
 
- Sekarang kita telah mempersiapkan dokumen kita dengan menghapus sebuah paragraf, kita dapat mengaktifkan fitur "Abaikan Teks di Dalam Hapus Revisi" menggunakan`FindReplaceOptions` obyek. Kami akan mengaturnya`IgnoreDeleted`properti ke`true`:
-
+Untuk memanipulasi teks, Anda dapat menggunakan ekspresi reguler untuk menemukan dan mengganti pola tertentu:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
 
-## Langkah 5: Menggunakan ekspresi reguler untuk menemukan dan mengganti
-
-Untuk melakukan operasi pencarian dan penggantian pada teks dokumen, kita akan menggunakan ekspresi reguler. Dalam contoh kita, kita akan mencari semua kemunculan huruf "e" dan menggantinya dengan tanda bintang "* ". .NET`Regex` kelas digunakan untuk ini:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
-```
 
-## Langkah 6: Menampilkan keluaran dokumen yang dimodifikasi
-
- Setelah menerapkan pencarian dan penggantian, kita dapat menampilkan konten dokumen yang diubah menggunakan`GetText` metode:
-
-```csharp
 Console.WriteLine(doc.GetText());
-```
 
-## Langkah 7: Memodifikasi opsi untuk memasukkan teks yang dihapus
-
- Jika kita ingin memasukkan teks yang dihapus ke dalam hasil keluaran, kita dapat mengubah opsi untuk tidak mengabaikan teks yang dihapus. Untuk ini kami akan mengaturnya`IgnoreDeleted`properti ke`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-## Langkah 8: Mengeluarkan dokumen yang dimodifikasi dengan teks yang dihapus
-
-Setelah mengubah pilihan, kita dapat melakukan pencarian dan penggantian lagi untuk mendapatkan hasil dengan teks yang dihapus termasuk:
-
-```csharp
+options.IgnoreDeleted = false;
 doc.Range.Replace(regex, "*", options);
+
 Console.WriteLine(doc.GetText());
-```
-
-### Contoh kode sumber untuk Abaikan Teks di Dalam Hapus Revisi menggunakan Aspose.Words untuk .NET
-
-Berikut ini contoh kode sumber lengkap untuk mendemonstrasikan penggunaan fitur "Abaikan Teks di Dalam Hapus Revisi" dengan Aspose.Words untuk .NET:
-
-```csharp
-        
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Sisipkan teks yang tidak direvisi.
-	builder.Writeln("Deleted");
-	builder.Write("Text");
-
-	// Hapus paragraf pertama dengan pelacakan revisi.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	doc.FirstSection.Body.FirstParagraph.Remove();
-	doc.StopTrackRevisions();
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreDeleted = false;
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-    
 ```
 
 ## Kesimpulan
 
-Dalam artikel ini, kami menjelajahi kode sumber C# untuk memahami cara menggunakan fitur "Abaikan Teks di Dalam Hapus Revisi" di Aspose.Words untuk .NET. Fitur ini berguna untuk mengabaikan teks di dalam revisi penghapusan saat memanipulasi dokumen. Kami mengikuti panduan langkah demi langkah untuk membuat dokumen, menyisipkan teks, menghapus paragraf dengan pelacakan revisi, menerapkan fitur "Abaikan Teks di Dalam Hapus Revisi", dan melakukan operasi pencarian dan penggantian.
+Menguasai revisi terlacak dalam dokumen Word menggunakan Aspose.Words untuk .NET memberdayakan pengembang untuk mengotomatiskan tugas pengeditan dokumen secara efisien. Dengan memanfaatkan API yang komprehensif dan fitur-fitur canggihnya, Anda dapat dengan mudah mengintegrasikan penanganan revisi ke dalam aplikasi Anda, sehingga meningkatkan produktivitas dan kemampuan manajemen dokumen.
 
-### FAQ
+## FAQ
 
-#### T: Apa yang dimaksud dengan fungsi "Abaikan Teks di Dalam Hapus Revisi" di Aspose.Words untuk .NET?
+### Apa saja revisi terlacak dalam dokumen Word?
+Revisi terlacak di dokumen Word mengacu pada perubahan yang dilakukan pada dokumen yang terlihat oleh orang lain dengan markup, sering kali digunakan untuk pengeditan dan peninjauan kolaboratif.
 
-J: Fungsi "Abaikan Teks di Dalam Hapus Revisi" di Aspose.Words untuk .NET memungkinkan Anda menentukan apakah teks di dalam revisi penghapusan harus diabaikan selama operasi tertentu, seperti menemukan dan mengganti teks. Jika fitur ini diaktifkan, teks yang dihapus di dalam revisi tidak dipertimbangkan selama pengoperasian.
+### Bagaimana cara mengintegrasikan Aspose.Words untuk .NET ke dalam proyek Visual Studio saya?
+Anda dapat mengintegrasikan Aspose.Words untuk .NET dengan mengunduh perpustakaan dari situs web Aspose dan mereferensikannya dalam proyek Visual Studio Anda.
 
-#### T: Apa itu Aspose.Words untuk .NET?
+### Bisakah saya mengembalikan revisi terlacak secara terprogram menggunakan Aspose.Words untuk .NET?
+Ya, Anda dapat mengelola dan mengembalikan revisi terlacak secara terprogram menggunakan Aspose.Words untuk .NET, memungkinkan kontrol yang tepat atas alur kerja pengeditan dokumen.
 
-J: Aspose.Words for .NET adalah perpustakaan yang kuat untuk membuat, mengedit, dan mengonversi dokumen Word menjadi aplikasi .NET. Ini menawarkan banyak fitur lanjutan untuk Pemrosesan Kata dengan dokumen, termasuk manajemen revisi.
+### Apakah Aspose.Words untuk .NET cocok untuk menangani dokumen besar dengan revisi terlacak?
+Aspose.Words untuk .NET dioptimalkan untuk menangani dokumen besar secara efisien, termasuk dokumen dengan revisi terlacak yang ekstensif.
 
-#### T: Bagaimana cara membuat dokumen baru di Aspose.Words untuk .NET?
-
- J: Sebelum Anda mulai memanipulasi teks dalam dokumen, Anda perlu membuat dokumen baru menggunakan Aspose.Words untuk .NET. Hal ini dapat dilakukan dengan membuat contoh a`Document` obyek. Berikut ini contoh kode untuk membuat dokumen baru:
-
-```csharp
-Document doc = new Document();
-```
-
-#### T: Bagaimana cara menyisipkan teks yang belum diedit ke dalam dokumen menggunakan Aspose.Words untuk .NET?
-
- J: Setelah Anda memiliki dokumen, Anda dapat menyisipkan teks yang belum ditinjau menggunakan a`DocumentBuilder` obyek. Misalnya, untuk menyisipkan teks "Teks yang Dihapus", Anda dapat menggunakan`Writeln` Dan`Write` metode:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writen("Deleted");
-builder.Write("Text");
-```
-
-#### T: Bagaimana cara menghapus paragraf dengan pelacakan revisi di Aspose.Words untuk .NET?
-
-J: Untuk mengilustrasikan penggunaan fungsi "Abaikan Teks di Dalam Hapus Revisi", kami akan menghapus satu paragraf dari dokumen menggunakan pelacakan revisi. Ini akan memungkinkan kita melihat bagaimana fungsi ini mempengaruhi operasi selanjutnya.
-
-```csharp
-doc.StartTrackRevisions("author", DateTime.Now);
-doc.FirstSection.Body.FirstParagraph.Remove();
-doc.StopTrackRevisions();
-```
-
-#### T: Bagaimana cara mengaktifkan fitur "Abaikan Teks di Dalam Hapus Revisi" di Aspose.Words untuk .NET?
-
- A: Sekarang kita telah mempersiapkan dokumen kita dengan menghapus sebuah paragraf, kita dapat mengaktifkan fitur "Abaikan Teks di Dalam Hapus Revisi" menggunakan`FindReplaceOptions` obyek. Kami akan mengaturnya`IgnoreDeleted`properti ke`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
-
-#### T: Bagaimana cara mencari dan mengganti menggunakan ekspresi reguler di Aspose.Words untuk .NET?
-
-A: Untuk melakukan operasi pencarian dan penggantian pada teks dokumen, kita akan menggunakan ekspresi reguler. Dalam contoh kita, kita akan mencari semua kemunculan huruf "e" dan menggantinya dengan tanda bintang "* ". Kami akan menggunakan .NET`Regex` kelas untuk ini:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### T: Bagaimana cara melihat konten dokumen yang diubah di Aspose.Words untuk .NET?
-
-A: Setelah menerapkan pencarian dan penggantian, kami dapat menampilkan konten dokumen yang diubah menggunakan`GetText` metode:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### T: Bagaimana cara memasukkan teks yang dihapus dalam hasil keluaran di Aspose.Words untuk .NET?
-
- A: Jika kita ingin memasukkan teks yang dihapus ke dalam hasil keluaran, kita dapat mengubah opsi untuk tidak mengabaikan teks yang dihapus. Untuk ini, kami akan mengaturnya`IgnoreDeleted`properti ke`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-#### T: Bagaimana cara menampilkan dokumen yang diedit dengan teks yang dihapus di Aspose.Words untuk .NET?
-
-A: Setelah mengubah opsi, kita dapat melakukan pencarian dan penggantian baru untuk mendapatkan hasil dengan teks yang dihapus termasuk:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk Aspose.Words untuk .NET?
+Anda dapat menjelajahi dokumentasi komprehensif dan mendapatkan dukungan dari komunitas Aspose.Words untuk .NET di[Aspose.Forum Kata-kata](https://forum.aspose.com/c/words/8).

@@ -26,7 +26,7 @@ Cree un nuevo proyecto Java en su entorno de desarrollo integrado (IDE) preferid
 
 ### 3. Agregar dependencia de Aspose.Words a su proyecto
 
-Para utilizar Aspose.Words para Java en su proyecto, debe agregar la biblioteca como una dependencia. En la mayoría de los casos, puedes hacer esto incluyendo el archivo JAR en la ruta de compilación de tu proyecto. Consulte la documentación de su IDE para obtener instrucciones específicas sobre cómo agregar bibliotecas externas.
+Para usar Aspose.Words para Java en su proyecto, debe agregar la biblioteca como una dependencia. En la mayoría de los casos, puedes hacer esto incluyendo el archivo JAR en la ruta de compilación de tu proyecto. Consulte la documentación de su IDE para obtener instrucciones específicas sobre cómo agregar bibliotecas externas.
 
 ## Crear un nuevo documento
 

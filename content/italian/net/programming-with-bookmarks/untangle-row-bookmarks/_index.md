@@ -2,134 +2,137 @@
 title: Districare i segnalibri di riga nel documento di Word
 linktitle: Districare i segnalibri di riga nel documento di Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come districare i segnalibri di righe nidificate nel documento Word per rimuovere righe specifiche senza influenzare altri segnalibri.
+description: Districa facilmente i segnalibri di righe aggrovigliati nei tuoi documenti Word utilizzando Aspose.Words per .NET. Questa guida ti guida attraverso il processo per una gestione dei segnalibri più pulita e sicura.
 type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
+## introduzione
 
-In questo articolo, esploreremo il codice sorgente C# sopra per capire come utilizzare la funzione Untangle Row Bookmarks nella libreria Aspose.Words per .NET. Questa funzione permette di mettere la fine dei segnalibri delle righe nella stessa riga dell'inizio dei segnalibri.
+Hai mai riscontrato una situazione in cui l'eliminazione di una riga in un documento Word tramite un segnalibro rovina altri segnalibri nelle righe adiacenti? Questo può essere incredibilmente frustrante, soprattutto quando si ha a che fare con tabelle complesse. Per fortuna, Aspose.Words per .NET offre una soluzione potente: districare i segnalibri di riga. 
+
+Questa guida ti guiderà attraverso il processo di districare i segnalibri di riga nei tuoi documenti Word utilizzando Aspose.Words per .NET. Suddivideremo il codice in passaggi di facile comprensione e spiegheremo lo scopo di ciascuna funzione, consentendoti di affrontare con sicurezza quei fastidiosi problemi relativi ai segnalibri.
 
 ## Prerequisiti
 
-- Conoscenza base del linguaggio C#.
-- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
+Prima di immergerti, avrai bisogno di alcune cose:
 
-## Passaggio 1: caricamento del documento
+1.  Aspose.Words per .NET: questa libreria commerciale fornisce funzionalità per lavorare con documenti Word a livello di codice. 2. Puoi scaricare una versione di prova gratuita da[Link per scaricare](https://releases.aspose.com/words/net/) o acquistare una licenza da[acquistare](https://purchase.aspose.com/buy).
+3. Ambiente di sviluppo AC#: Visual Studio o qualsiasi altro IDE C# funzionerà perfettamente.
+4. Un documento Word con segnalibri di riga: utilizzeremo un documento di esempio denominato "Segnalibri colonna tabella.docx" a scopo dimostrativo.
 
- Noi usiamo il`Document` classe per caricare il documento esistente da un file:
+## Importa spazi dei nomi
+
+Il primo passaggio prevede l'importazione degli spazi dei nomi necessari nel progetto C#. Questi spazi dei nomi forniscono l'accesso alle classi e alle funzionalità che utilizzeremo da Aspose.Words per .NET:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using System;
+```
+
+## Passaggio 1: caricare il documento Word
+
+ Iniziamo caricando il documento Word contenente i segnalibri delle righe aggrovigliate. IL`Document` la classe gestisce la manipolazione dei documenti in Aspose.Words. Ecco come caricare il documento:
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Sostituisci con la posizione del documento
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## Passaggio 2: svelare i segnalibri di linea
+ Ricordarsi di sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo del file "Colonna tabella bookmarks.docx".
 
- Noi usiamo il`Untangle` funzione per districare i segnalibri dalle righe. Questa funzione esegue l'attività personalizzata di inserire le estremità delle righe del segnalibro nella stessa riga in cui inizia il segnalibro:
+## Passaggio 2: districare i segnalibri delle righe
 
-```csharp
-Untangle(doc);
-```
-
-## Passaggio 3: elimina la riga dal segnalibro
-
- Noi usiamo il`DeleteRowByBookmark` funzione per eliminare una riga specifica tramite il suo segnalibro:
+ Qui è dove avviene la magia! IL`Untangle` la funzione si occupa di districare i segnalibri delle righe. Analizziamo le sue funzionalità:
 
 ```csharp
-DeleteRowByBookmark(doc, "ROW2");
+private void Untangle(Document doc)
+{
+   foreach (Bookmark bookmark in doc.Range.Bookmarks)
+   {
+	   // Ottieni la riga madre sia del segnalibro che della fine del segnalibro
+	   Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
+	   Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+	   // Controlla se le righe sono valide e adiacenti
+	   if (row1 != null && row2 != null && row1.NextSibling == row2)
+		   //Sposta la fine del segnalibro all'ultimo paragrafo dell'ultima cella della riga superiore
+		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+   }
+}
 ```
 
-## Passaggio 4: verifica l'integrità degli altri segnalibri
+Ecco una spiegazione passo passo di cosa fa il codice:
 
-Verifichiamo che gli altri segnalibri non siano stati danneggiati controllando se la fine del segnalibro è ancora presente:
+ Iteriamo attraverso tutti i segnalibri nel documento utilizzando a`foreach` ciclo continuo.
+Per ogni segnalibro, recuperiamo la riga madre sia dell'inizio del segnalibro (`bookmark.BookmarkStart`) e la fine del segnalibro (`bookmark.BookmarkEnd` ) usando il`GetAncestor` metodo.
+Controlliamo quindi se sono state trovate entrambe le righe (`row1 != null`E`row2 != null`) e se sono righe adiacenti (`row1.NextSibling == row2`). Ciò garantisce di modificare solo i segnalibri che si estendono su righe adiacenti.
+Se le condizioni sono soddisfatte, spostiamo il nodo finale del segnalibro alla fine dell'ultimo paragrafo nell'ultima cella della riga superiore (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) districandoli efficacemente.
+
+## Passaggio 3: Elimina riga tramite segnalibro
+
+ Ora che i segnalibri sono districati, possiamo eliminare in sicurezza le righe utilizzando i nomi dei segnalibri. IL`DeleteRowByBookmark` la funzione gestisce questo compito:
+
+```csharp
+private void DeleteRowByBookmark(Document doc, string bookmarkName)
+{
+   Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+   Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+   row?.Remove();
+}
+```
+
+Ecco una ripartizione di questa funzione:
+
+Prendiamo il nome del segnalibro (`bookmarkName`) come input.
+ Recuperiamo l'oggetto segnalibro corrispondente utilizzando`doc.Range.Bookmarks[bookmarkName]`.
+Quindi otteniamo che la riga madre del segnalibro inizi a utilizzare`GetAncestor` (simile a`Untangle` funzione).
+Infine, controlliamo se il segnalibro e la riga esistono (`bookmark != null` E
+
+## Passaggio 4: verificare la districazione
+
+ Mentre il`Untangle` La funzione dovrebbe garantire la sicurezza degli altri segnalibri, è sempre buona norma verificarla. Ecco come possiamo verificare se il processo di districazione non ha eliminato accidentalmente la fine di un altro segnalibro:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-throw new Exception("Wrong, the end of the bookmark was deleted.");
+   throw new Exception("Wrong, the end of the bookmark was deleted.");
+```
 
+Questo frammento di codice controlla se la fine del segnalibro denominato "ROW1" esiste ancora dopo aver eliminato la riga con il segnalibro "ROW2". Se è nullo, viene generata un'eccezione, che indica un problema con il processo di districazione. 
+
+## Passaggio 5: salva il documento
+
+ Infine, dopo aver districato i segnalibri ed eventualmente eliminato le righe, salva il documento modificato utilizzando il file`Save` metodo:
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Codice sorgente di esempio per Districare i segnalibri di riga utilizzando Aspose.Words per .NET
+Ciò salva il documento con i segnalibri districati e tutte le righe cancellate con un nuovo nome file "WorkingWithBookmarks.UntangleRowBookmarks.docx". 
 
-Ecco il codice sorgente di esempio completo per districare i segnalibri dalle righe utilizzando Aspose.Words per .NET:
-
-
-```csharp
-
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Table column bookmarks.docx");
-
-	//Ciò esegue l'attività personalizzata di inserire le estremità del segnalibro di riga nella stessa riga con gli inizi del segnalibro.
-	Untangle(doc);
-
-	// Ora possiamo eliminare facilmente le righe da un segnalibro senza danneggiare i segnalibri di altre righe.
-	DeleteRowByBookmark(doc, "ROW2");
-
-	// Questo serve solo per verificare che l'altro segnalibro non sia danneggiato.
-	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-		throw new Exception("Wrong, the end of the bookmark was deleted.");
-
-	doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
-
-```
-
-#### Districare il codice sorgente
-```csharp
-
-private void Untangle(Document doc)
-        {
-            foreach (Bookmark bookmark in doc.Range.Bookmarks)
-            {
-                // Ottieni la riga madre sia del segnalibro che del nodo finale del segnalibro.
-                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-                // Se entrambe le righe vengono trovate correttamente e l'inizio e la fine del segnalibro sono contenuti in righe adiacenti,
-                // sposta il nodo finale del segnalibro alla fine dell'ultimo paragrafo nell'ultima cella della riga superiore.
-                if (row1 != null && row2 != null && row1.NextSibling == row2)
-                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-            }
-        }
-
-```
-
-#### Codice sorgente EliminaRowByBookmark
-```csharp
-
- private void DeleteRowByBookmark(Document doc, string bookmarkName)
-        {
-            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
-
-            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
-            row?.Remove();
-        }
-
-```
 ## Conclusione
 
-In questo articolo, abbiamo esplorato il codice sorgente C# per capire come utilizzare la funzionalità Districa segnalibri di riga di Aspose.Words per .NET. Abbiamo seguito una guida passo passo per districare i segnalibri delle righe ed eliminare una riga specifica senza danneggiare altri segnalibri.
+ Seguendo questi passaggi e utilizzando il file`Untangle`funzione, puoi districare efficacemente i segnalibri di riga nei tuoi documenti Word con Aspose.Words per .NET. Ciò garantisce che l'eliminazione di righe tramite segnalibri non causi conseguenze indesiderate con altri segnalibri nelle righe adiacenti. Ricordati di sostituire i segnaposto come`"YOUR DOCUMENT DIRECTORY"` con i percorsi effettivi e i nomi dei file.
 
-### Domande frequenti per districare i segnalibri di riga nel documento Word
+## Domande frequenti
 
-#### D: Riordina i segnalibri di riga funziona solo con i segnalibri di riga nelle tabelle?
+### Aspose.Words per .NET è gratuito?
 
-R: Sì, la funzionalità Districa segnalibri di riga è progettata specificamente per districare i segnalibri di riga presenti nelle tabelle. Questa funzione può essere utilizzata per elaborare i segnalibri di riga negli array e garantire che le estremità dei segnalibri siano nella stessa riga in cui iniziano i segnalibri.
+ Aspose.Words per .NET è una libreria commerciale con una versione di prova gratuita disponibile. Puoi scaricarlo da[Link per scaricare](https://releases.aspose.com/words/net/).
 
-#### D: La funzione Riordina i segnalibri della riga modifica il contenuto del documento originale?
+### Posso districare manualmente i segnalibri di riga in Word?
 
-R: Sì, la funzione Riordina segnalibri di riga modifica il documento originale spostando la fine dei segnalibri di riga per posizionarli nella stessa riga dell'inizio dei segnalibri. Assicurati di salvare una copia di backup del documento prima di applicare questa funzione.
+Sebbene tecnicamente possibile, districare manualmente i segnalibri in Word può essere noioso e soggetto a errori. Aspose.Words per .NET automatizza questo processo, risparmiando tempo e fatica.
 
-#### D: Come posso identificare i segnalibri di riga nel mio documento Word?
+###  Cosa succede se il`Untangle` function encounters an error?
 
-R: I segnalibri di riga vengono generalmente utilizzati nelle tabelle per contrassegnare sezioni specifiche. È possibile identificare i segnalibri di riga sfogliando i segnalibri nel documento e controllando se i segnalibri si trovano nelle righe della tabella.
+Il codice include un gestore di eccezioni che genera un'eccezione se il processo di districazione elimina accidentalmente la fine di un altro segnalibro. È possibile personalizzare la gestione degli errori in base alle proprie esigenze specifiche.
 
-#### D: È possibile districare i segnalibri di riga in tabelle non adiacenti?
+### Posso utilizzare questo codice per districare i segnalibri su righe non adiacenti?
 
-R: La funzione Districa segnalibri di riga presentata in questo articolo è progettata per districare i segnalibri di riga in tabelle adiacenti. Per districare i segnalibri di riga in tabelle non adiacenti, potrebbero essere necessarie ulteriori modifiche al codice a seconda della struttura del documento.
+Attualmente, il codice si concentra sul districare i segnalibri che si estendono su righe adiacenti. La modifica del codice per gestire righe non adiacenti richiederebbe logica aggiuntiva per identificare e gestire tali scenari.
 
-#### D: Quali altre manipolazioni posso eseguire sui segnalibri di riga una volta sbrogliati?
+### Ci sono limitazioni all’utilizzo di questo approccio?
 
-R: Una volta sbrogliati i segnalibri di linea, puoi eseguire diverse manipolazioni secondo necessità. Ciò può includere la modifica, l'eliminazione o l'aggiunta di contenuto alle righe con segnalibro. Assicurati di maneggiare con cura i segnalibri di riga per evitare qualsiasi impatto indesiderato sul resto del documento.
+Questo approccio presuppone che i segnalibri siano ben definiti all'interno delle celle della tabella. Se i segnalibri vengono posizionati all'esterno delle celle o in posizioni impreviste, il processo di districazione potrebbe non funzionare come previsto.

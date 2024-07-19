@@ -13,7 +13,7 @@ url: /de/net/add-content-using-documentbuilder/
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Neues Word-Dokument erstellen](./create-new-document/) | Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET erstellen. Diese Schritt-für-Schritt-Anleitung führt Sie durch den Prozess und macht die Dokumentautomatisierung einfach. |
+| [Neues Word-Dokument erstellen](./create-new-document/) | Erfahren Sie, wie Sie Word-Dokumente mit Aspose.Words für .NET erstellen. Diese Schritt-für-Schritt-Anleitung führt Sie durch den Prozess und macht die Dokumentenautomatisierung einfach. |
 | [Dokument-Generator: Lesezeichen in Word-Dokument einfügen](./document-builder-insert-bookmark/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Lesezeichen in Word-Dokumente einfügen. Perfekt für die Dokumentenautomatisierung. |
 | [Tabelle im Word-Dokument erstellen](./build-table/) | Erfahren Sie in diesem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument erstellen. Perfekt für Anfänger und Profis gleichermaßen. |
 | [Horizontale Linie in Word-Dokument einfügen](./insert-horizontal-rule/) | Erfahren Sie in unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET eine horizontale Linie in Word-Dokumente einfügen. Perfekt für C#-Entwickler. |
@@ -23,7 +23,7 @@ url: /de/net/add-content-using-documentbuilder/
 | [Kontrollkästchen-Formularfeld in Word-Dokument einfügen](./insert-check-box-form-field/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Kontrollkästchen-Formularfelder in Word-Dokumente einfügen. Perfekt für Entwickler. |
 | [Kombinationsfeld-Formularfeld in Word-Dokument einfügen](./insert-combo-box-form-field/) | Erfahren Sie in unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET ein Kombinationsfeld-Formularfeld in ein Word-Dokument einfügen. |
 | [HTML in Word-Dokument einfügen](./insert-html/) | Erfahren Sie in unserem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET HTML nahtlos in Word-Dokumente einfügen. Perfekt für Entwickler. |
-| [Hyperlink in Word-Dokument einfügen](./insert-hyperlink/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET mühelos Hyperlinks in Word-Dokumente einfügen. Perfekt für C#-Entwickler. |
+| [Hyperlink in Word-Dokument einfügen](./insert-hyperlink/) | Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Hyperlinks in Word-Dokumente einfügen. Perfekt für die Automatisierung Ihrer Dokumenterstellungsaufgaben. |
 | [Inhaltsverzeichnis in Word-Dokument einfügen](./insert-table-of-contents/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis in Word einfügen. Folgen Sie unserer Schritt-für-Schritt-Anleitung für eine nahtlose Dokumentnavigation. |
 | [Inline-Bild in Word-Dokument einfügen](./insert-inline-image/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Inline-Bilder in Word-Dokumente einfügen. Schritt-für-Schritt-Anleitung mit Codebeispielen und FAQs. |
 | [Schwebendes Bild in Word-Dokument einfügen](./insert-floating-image/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET ein schwebendes Bild in ein Word-Dokument einfügen. Perfekt zum Verbessern Ihrer Dokumente. |

@@ -130,7 +130,7 @@ Aí está! Você acabou de aprender como ir para o final de um marcador em um do
 
 ### 1. Posso ir para o início de um marcador em vez de para o final?
 
- Absolutamente! Basta definir o`isBookmarkStart` parâmetro para`true` e`isBookmarkEnd` para`false` no`MoveToBookmark` método.
+ Absolutamente! Basta definir o`isBookmarkStart` parâmetro para`true`e`isBookmarkEnd` para`false` no`MoveToBookmark` método.
 
 ### 2. E se o nome do meu favorito estiver incorreto?
 

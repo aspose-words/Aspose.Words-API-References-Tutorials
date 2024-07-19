@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- प्रतिस्थापित करें`"Your Document Directory"` और`"Your Output Directory"` उचित पथों के साथ.
+ प्रतिस्थापित करें`"Your Document Directory"`और`"Your Output Directory"` उचित पथों के साथ.
 
 ## 4. मेल मर्ज को अनुकूलित करना
 

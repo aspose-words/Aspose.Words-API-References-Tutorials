@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	//プライマリ フッターは奇数ページに使用されるフッターです。
+	//プライマリ フッターは、奇数ページに使用されるフッターです。
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

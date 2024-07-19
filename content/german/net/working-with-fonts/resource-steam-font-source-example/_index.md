@@ -30,7 +30,7 @@ using System.IO;
 using System.Reflection;
 ```
 
-## Schritt 1: Definieren Sie das Dokumentverzeichnis
+## Schritt 1: Dokumentverzeichnis definieren
 
 Geben Sie zunächst das Verzeichnis an, in dem Ihr Dokument gespeichert ist. Dies ist wichtig, um das zu verarbeitende Dokument zu finden.
 
@@ -85,7 +85,7 @@ Durch Befolgen dieser Schritte haben Sie Ihre Anwendung so konfiguriert, dass si
 
 ## Abschluss
 
-Sie beherrschen jetzt den Prozess der Verwendung eines Ressourcenstreams als Schriftartquelle mit Aspose.Words für .NET. Mit dieser Technik können Sie Schriftarten effizienter verwalten und sicherstellen, dass Ihre Dokumente immer optimal aussehen. Experimentieren Sie weiter mit verschiedenen Einstellungen, um die Leistungsfähigkeit von Aspose.Words voll auszuschöpfen.
+Sie beherrschen jetzt den Prozess der Verwendung eines Ressourcenstreams als Schriftartquelle mit Aspose.Words für .NET. Mit dieser Technik können Sie Schriftarten effizienter verwalten und sicherstellen, dass Ihre Dokumente immer optimal aussehen. Experimentieren Sie weiter mit verschiedenen Einstellungen, um die Leistungsfähigkeit von Aspose.Words voll auszunutzen.
 
 ## FAQs
 
@@ -99,7 +99,7 @@ Sie beherrschen jetzt den Prozess der Verwendung eines Ressourcenstreams als Sch
 
 ###  F3: Kann ich andere Arten von Warnungen mit`IWarningCallback`?
 
- Ja das`IWarningCallback` Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
+ Ja das`IWarningCallback`Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
 
 ### F4: Wo finde ich Unterstützung für Aspose.Words?
 

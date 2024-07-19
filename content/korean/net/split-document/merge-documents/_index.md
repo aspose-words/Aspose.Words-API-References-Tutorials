@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- 이 단계에서는 병합합니다.`Document1.docx` 그리고`Document2.docx` 라는 새 파일에`MergedDocument.docx`.
+ 이 단계에서는 병합합니다.`Document1.docx`그리고`Document2.docx` 라는 새 파일에`MergedDocument.docx`.
 
 ## 3단계: 저장 옵션을 사용한 병합
 
@@ -74,7 +74,7 @@ Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.d
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- 여기서 우리는 병합합니다.`Document1.docx` 그리고`Document2.docx` 그리고 결과를 PDF 파일로 저장하세요.
+ 여기서 우리는 병합합니다.`Document1.docx`그리고`Document2.docx` 그리고 결과를 PDF 파일로 저장하세요.
 
 ## 5단계: 병합된 문서에서 문서 인스턴스 만들기
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
 
 ### 3. 병합 중에 다른 서식을 어떻게 처리합니까?
 
- Aspose.Words는 다음과 같은 다양한 병합 형식 모드를 제공합니다.`KeepSourceFormatting` 그리고`MergeFormatting` . 다음을 참조하세요.[API 문서](https://reference.aspose.com/words/net/) 자세한 지침을 보려면.
+ Aspose.Words는 다음과 같은 다양한 병합 형식 모드를 제공합니다.`KeepSourceFormatting`그리고`MergeFormatting` . 다음을 참조하세요.[API 문서](https://reference.aspose.com/words/net/) 자세한 지침을 보려면.
 
 ### 4. .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
 

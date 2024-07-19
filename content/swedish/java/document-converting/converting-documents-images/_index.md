@@ -66,7 +66,7 @@ Att konvertera dokument till bilder i Java är enkelt med Aspose.Words för Java
  För att ställa in bildupplösningen, använd`setResolution` metod av`ImageSaveOptions` och ange önskad upplösning i punkter per tum (DPI).
 
 ### Kan jag konvertera specifika sidor i dokumentet till bilder?
- Ja, du kan ange ett sidintervall med hjälp av`setPageCount` och`setPageIndex` metoder för`ImageSaveOptions` för att konvertera specifika sidor till bilder.
+ Ja, du kan ange ett sidintervall med hjälp av`setPageCount`och`setPageIndex` metoder för`ImageSaveOptions` för att konvertera specifika sidor till bilder.
 
 ### Är Aspose.Words för Java lämplig för batch-dokumentkonvertering?
 Absolut! Du kan använda Aspose.Words för Java för att batchkonvertera flera dokument till bilder effektivt.

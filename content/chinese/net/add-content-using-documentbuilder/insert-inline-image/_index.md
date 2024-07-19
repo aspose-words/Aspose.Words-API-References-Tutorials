@@ -9,7 +9,7 @@ url: /zh/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 ## 介绍
 
-在使用 .NET 应用程序进行文档处理领域，Aspose.Words 是用于以编程方式处理 Word 文档的强大解决方案。其主要功能之一是能够轻松插入内联图像，增强文档的视觉吸引力和功能。本教程深入探讨如何利用 Aspose.Words for .NET 将图像无缝嵌入 Word 文档中。
+在使用 .NET 应用程序进行文档处理领域，Aspose.Words 是用于以编程方式处理 Word 文档的强大解决方案。其主要功能之一是能够轻松插入内联图像，从而增强文档的视觉吸引力和功能。本教程深入探讨如何利用 Aspose.Words for .NET 将图像无缝嵌入 Word 文档中。
 
 ## 先决条件
 

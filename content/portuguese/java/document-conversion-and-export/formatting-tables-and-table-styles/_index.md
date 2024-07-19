@@ -224,7 +224,7 @@ tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatter
 table.setStyle(tableStyle);
 ```
 
-## Etapa 15: definir a formatação de TableCell
+## Etapa 15: definir a formatação do TableCell
 
 Defina uma formatação específica para células individuais:
 

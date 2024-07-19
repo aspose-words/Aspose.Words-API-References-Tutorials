@@ -14,10 +14,10 @@ Con questi tutorial sarai in grado di padroneggiare le funzionalità di firma di
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Firma il documento Word](./sign-document/) | Scopri come firmare digitalmente un documento Word con Aspose.Words per .NET. |
-| [Firma di documenti Word crittografati](./signing-encrypted-document/) | Scopri come firmare digitalmente un documento word crittografato con Aspose.Words per .NET. |
-| [Creazione e firma di una nuova riga di firma](./creating-and-signing-new-signature-line/) | Scopri come creare e firmare una nuova riga della firma in un documento Word con Aspose.Words per .NET. |
-| [Firma della riga della firma esistente nel documento di Word](./signing-existing-signature-line/) | Scopri come firmare una riga di firma esistente in un documento Word con Aspose.Words per .NET. |
-| [Imposta l'ID del provider di firma nel documento di Word](./set-signature-provider-id/) | Scopri come impostare l'ID del provider di firma in un documento Word con Aspose.Words per .NET. |
-| [Crea una nuova riga di firma e imposta l'ID del provider](./create-new-signature-line-and-set-provider-id/) | Scopri come creare una nuova riga della firma e impostare l'ID del provider in un documento Word con Aspose.Words per .NET. |
-| [Accedi e verifica la firma nel documento Word](./access-and-verify-signature/) | Scopri come accedere e verificare le firme digitali in un documento Word con Aspose.Words per .NET. |
+| [Firma il documento Word](./sign-document/) | Scopri come firmare un documento Word utilizzando Aspose.Words per .NET con questa guida passo passo. Proteggi i tuoi documenti con facilità. |
+| [Firma di documenti Word crittografati](./signing-encrypted-document/) | Scopri come firmare documenti Word crittografati utilizzando Aspose.Words per .NET con questa guida dettagliata passo passo. Perfetto per gli sviluppatori. |
+| [Creazione e firma di una nuova riga di firma](./creating-and-signing-new-signature-line/) | Scopri come creare e firmare digitalmente una riga di firma in un documento Word utilizzando Aspose.Words per .NET con questo tutorial passo passo. Perfetto per l'automazione dei documenti. |
+| [Firma della riga della firma esistente nel documento di Word](./signing-existing-signature-line/) | Scopri come firmare una riga di firma esistente in un documento Word utilizzando Aspose.Words per .NET con la nostra guida dettagliata passo passo. Perfetto per gli sviluppatori. |
+| [Imposta l'ID del provider di firma nel documento di Word](./set-signature-provider-id/) | Imposta in modo sicuro un ID provider di firma nei documenti Word utilizzando Aspose.Words per .NET. Segui la nostra guida dettagliata di 2000 parole per firmare digitalmente i tuoi documenti. |
+| [Crea una nuova riga di firma e imposta l'ID del provider](./create-new-signature-line-and-set-provider-id/) | Scopri come creare una nuova riga della firma e impostare l'ID del provider nei documenti Word utilizzando Aspose.Words per .NET. Guida passo passo. |
+| [Accedi e verifica la firma nel documento Word](./access-and-verify-signature/) | Accedi e verifica le firme digitali nei documenti Word utilizzando Aspose.Words per .NET con questa guida passo passo completa. Garantisci l'autenticità dei documenti senza sforzo. |

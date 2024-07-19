@@ -33,7 +33,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- Ebben a lépésben konfiguráljuk az OOXML mentési beállításait a`OptimizeFor` és`OoxmlSaveOptions` mód. A Word 2016-os verzióhoz optimalizáljuk a dokumentumok kompatibilitását`OptimizeFor`és állítsa be a megfelelést`Iso29500_2008_Strict` segítségével`Compliance`.
+ Ebben a lépésben konfiguráljuk az OOXML mentési beállításait a`OptimizeFor`és`OoxmlSaveOptions` mód. A Word 2016-os verzióhoz optimalizáljuk a dokumentumok kompatibilitását`OptimizeFor`és állítsa be a megfelelést`Iso29500_2008_Strict` segítségével`Compliance`.
 
 ## 4. lépés: A dokumentum mentése az Ooxml Iso 29500_2008_Strict megfelelőséggel
 

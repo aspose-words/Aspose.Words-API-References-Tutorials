@@ -39,7 +39,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 // 문서 디렉토리 경로
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// "PDF 이미지 건너뛰기" 기능으로 로딩 옵션 구성
+// "PDF 이미지 건너뛰기" 기능으로 로드 옵션 구성
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 
 // PDF 이미지를 건너뛰고 PDF 문서 로드

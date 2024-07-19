@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## Schritt 3: Dokumentknotentyp abrufen
- Um den Knotentyp eines Dokuments zu ermitteln, verwenden wir die`NodeType` Eigentum.
+Um den Knotentyp eines Dokuments zu ermitteln, verwenden wir die`NodeType` Eigentum.
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -54,7 +54,7 @@ A: Sie können Knotentypen verwenden, um verschiedene Knotentypen in einem XML-D
 
 #### F: Welche gängigen Knotentypen werden mit Knotentyp verwendet?
 
-A: Häufige mit Knotentyp verwendete Knotentypen sind Elemente (Typ 1), Attribute (Typ 2), Texte (Typ 3), CDATAs (Typ 4), Verarbeitungsanweisungen (Typ 7) usw.
+A: Häufige Knotentypen, die mit Knotentyp verwendet werden, sind Elemente (Typ 1), Attribute (Typ 2), Texte (Typ 3), CDATAs (Typ 4), Verarbeitungsanweisungen (Typ 7) usw.
 
 #### F: Wie überprüfe ich den Typ eines Knotens in Node.js?
 

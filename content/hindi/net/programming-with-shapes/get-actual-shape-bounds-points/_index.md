@@ -17,7 +17,7 @@ url: /hi/net/programming-with-shapes/get-actual-shape-bounds-points/
 - C# और वर्ड दस्तावेजों के साथ वर्ड प्रोसेसिंग का बुनियादी ज्ञान।
 
 ## चरण 1: नया दस्तावेज़ और दस्तावेज़बिल्डर बनाएँ
- एक नया उदाहरण बनाएँ`Document` कक्षा और एक`DocumentBuilder`दस्तावेज़ के साथ काम करने पर आपत्ति।
+ एक नया उदाहरण बनाएँ`Document` कक्षा और एक`DocumentBuilder` दस्तावेज़ के साथ काम करने पर आपत्ति।
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## चरण 2: एक छवि आकार डालें
- उपयोग`InsertImage` की विधि`DocumentBuilder` दस्तावेज़ में छवि आकार सम्मिलित करने के लिए ऑब्जेक्ट। पैरामीटर के रूप में छवि फ़ाइल का पथ प्रदान करें।
+ उपयोग`InsertImage` की विधि`DocumentBuilder`दस्तावेज़ में छवि आकार सम्मिलित करने के लिए ऑब्जेक्ट। पैरामीटर के रूप में छवि फ़ाइल का पथ प्रदान करें।
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

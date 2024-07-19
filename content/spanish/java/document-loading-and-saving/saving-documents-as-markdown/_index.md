@@ -45,7 +45,7 @@ doc.save("output.md", saveOptions);
 
 ## Paso 2: personalizar la alineación del contenido de la tabla
 
-Aspose.Words para Java le permite personalizar la alineación del contenido de la tabla al guardarla como Markdown. Puede alinear el contenido de la tabla a la izquierda, a la derecha, al centro o dejar que se determine automáticamente en función del primer párrafo de cada columna de la tabla.
+Aspose.Words para Java le permite personalizar la alineación del contenido de la tabla al guardarla como Markdown. Puede alinear el contenido de la tabla a la izquierda, derecha, centro o dejar que se determine automáticamente en función del primer párrafo de cada columna de la tabla.
 
 A continuación se explica cómo personalizar la alineación del contenido de la tabla:
 

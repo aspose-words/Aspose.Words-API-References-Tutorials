@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Positionering van tekstvakken
 
- Het beheersen van de positie van tekstvakken is cruciaal voor het bereiken van de gewenste lay-out. U kunt de positie instellen met behulp van de`left` En`top` eigenschappen. Bijvoorbeeld:
+ Het beheersen van de positie van tekstvakken is cruciaal voor het bereiken van de gewenste lay-out. U kunt de positie instellen met behulp van de`left`En`top` eigenschappen. Bijvoorbeeld:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ In deze handleiding hebben we het proces onderzocht van het verbeteren van visue
 
 ### Hoe wijzig ik het formaat van een tekstvak?
 
- Om het formaat van een tekstvak te wijzigen, kunt u de breedte- en hoogte-eigenschappen ervan aanpassen met behulp van de`width` En`height` attributen.
+ Om het formaat van een tekstvak te wijzigen, kunt u de breedte- en hoogte-eigenschappen ervan aanpassen met behulp van de`width`En`height` attributen.
 
 ### Kan ik een tekstvak roteren?
 

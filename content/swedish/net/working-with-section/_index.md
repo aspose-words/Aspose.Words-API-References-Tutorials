@@ -19,8 +19,8 @@ Genom att följa dessa tutorials kommer du att kunna hantera avsnitt i dina Word
 | Titel | Beskrivning |
 | --- | --- |
 | [Lägg till avsnitt](./add-section/) | I den här självstudien lär du dig hur du lägger till ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide för att strukturera ditt dokument. |
-| [Ta bort avsnitt](./delete-section/) | I den här självstudien lär du dig hur du tar bort ett specifikt avsnitt från ett Word-dokument med Aspose.Words för .NET. |
-| [Ta bort alla avsnitt](./delete-all-sections/) | I den här handledningen lär du dig hur du tar bort alla avsnitt från ett Word-dokument med Aspose.Words för .NET. |
+| [Ta bort avsnitt](./delete-section/) | Bemästra dokumentmanipulation med Aspose.Words för .NET. Lär dig hur du tar bort avsnitt från Word-dokument i några enkla steg. |
+| [Ta bort alla avsnitt](./delete-all-sections/) | Lär dig hur du tar bort alla avsnitt i ett Word-dokument med Aspose.Words för .NET med den här lätta att följa, steg-för-steg-guide. |
 | [Lägg till avsnittsordinnehåll](./append-section-content/) | I den här självstudien lär du dig hur du lägger till ordinnehåll i specifika delar av ett Word-dokument med Aspose.Words för .NET.  |
 | [Klonsektion](./clone-section/) | den här handledningen lär du dig hur du klona ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Steg för steg guide. |
 | [Kopiera avsnitt](./copy-section/) | I den här handledningen lär du dig hur du kopierar ett avsnitt från ett Word-dokument till ett annat dokument med Aspose.Words för .NET. |

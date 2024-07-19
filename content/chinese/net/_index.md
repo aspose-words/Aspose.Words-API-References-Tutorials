@@ -52,10 +52,10 @@ is_root: true
 | [使用 Officemath 进行文字处理](./programming-with-officemath/) | 在 Aspose.Words for .NET 中探索使用 Office Math 公式进行文字处理。用于在 Word 文档中创建、编辑和格式化数学公式的分步教程和示例代码。 |  
 | [用形状处理文字](./programming-with-shapes/) | 探索 Aspose.Words for .NET 中的形状编程。通过分步教程和 C# 中的示例代码了解如何操作和自定义 Word 文档中的形状。 |  
 | [带水印的文字处理](./programming-with-watermark/) | 了解如何在 Aspose.Words for .NET 中使用水印进行编程。通过分步教程和示例 C# 代码了解如何添加文本或图像水印、自定义其外观、将其放置在页面上等。 |  
-| [使用表格样式和格式进行文字处理](./programming-with-table-styles-and-formatting/) | 了解如何在 Aspose.Words for .NET 中编程表格样式和格式。通过分步教程和 C# 中的示例代码了解如何应用预定义样式、自定义单元格格式、边框等。 |  
+| [使用表格样式和格式进行文字处理](./programming-with-table-styles-and-formatting/) | 了解如何在 Aspose.Words for .NET 中对表格样式和格式进行编程。通过分步教程和 C# 中的示例代码了解如何应用预定义样式、自定义单元格格式、边框等。 |  
 | [使用表格进行文字处理](./programming-with-tables/) | 了解如何在 Aspose.Words for .NET 中对表格进行编程。通过分步教程和 C# 代码示例了解如何在 Word 文档中创建、操作和格式化表格。 |  
 | [使用 Htmlloadoptions 进行文字处理](./programming-with-htmlloadoptions/) | 了解如何使用 Aspose.Words for .NET 中的 HTML 加载选项进行编程。本教程将指导您了解加载 HTML 文档的不同功能。 |  
-| [使用 Loadoptions 进行文字处理](./programming-with-loadoptions/) | 学习使用 Aspose.Words for .NET 中的 LoadOptions 进行编程。详细的教程，带有用于加载和自定义加载 Word 文档的示例代码。 |  
+| [使用 Loadoptions 进行文字处理](./programming-with-loadoptions/) | 学习使用 Aspose.Words for .NET 中的 LoadOptions 进行编程。详细的教程，带有用于加载和自定义 Word 文档加载的示例代码。 |  
 | [使用 Pdfloadoptions 进行文字处理](./programming-with-pdfloadoptions/) | 学习使用 Aspose.Words for .NET 中的 PDF 加载选项进行文字处理。通过分步教程和示例代码学习如何加载和操作 PDF 格式的 Word 文档。 |  
 | [使用 Rtfloadoptions 进行文字处理](./programming-with-rtfloadoptions/) | 学习使用 Aspose.Words for .NET 中的 RTF 加载选项进行文字处理。学习如何使用分步教程和示例 C# 代码加载和操作 RTF 文档。 |  
 | [使用 Txtloadoptions 进行文字处理](./programming-with-txtloadoptions/) | 了解如何使用 Aspose.Words for .NET 中的文本文件加载选项进行编程。通过分步教程和 C# 中的示例代码了解如何指定编码、忽略未知字符、处理换行符等。 |  

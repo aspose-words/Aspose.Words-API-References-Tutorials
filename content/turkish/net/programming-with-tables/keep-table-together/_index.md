@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// Tablodaki her paragrafın sayfa boyunca dağılmasını önlemek için KeepWithNext'i etkinleştirmemiz gerekir.
-	// Tablonun son satırındaki son paragraflar hariç.
+	//Tablonun son satırındaki son paragraflar hariç.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

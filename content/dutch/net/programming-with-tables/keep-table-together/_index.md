@@ -63,7 +63,7 @@ Zorg ervoor dat u het juiste pad en de juiste bestandsnaam voor het uitvoerdocum
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// We moeten KeepWithNext inschakelen voor elke paragraaf in de tabel om te voorkomen dat deze over een pagina wordt verspreid.
-	// behalve de laatste alinea's in de laatste rij van de tabel.
+	//behalve de laatste alinea's in de laatste rij van de tabel.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

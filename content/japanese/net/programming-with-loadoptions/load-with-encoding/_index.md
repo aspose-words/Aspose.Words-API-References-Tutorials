@@ -31,7 +31,7 @@ LoadOptions loadOptions = new LoadOptions { Encoding = Encoding.UTF7 };
 Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 ```
 
-この例では、指定された読み込みオプションを使用して、ドキュメント ディレクトリにある「Encoded in UTF-7.txt」ドキュメントを読み込みます。
+この例では、指定されたロード オプションを使用して、ドキュメント ディレクトリにあるドキュメント「Encoded in UTF-7.txt」をロードします。
 
 ### Aspose.Words for .NET を使用した「エンコード付きロード」機能を備えた LoadOptions のサンプル ソース コード
 

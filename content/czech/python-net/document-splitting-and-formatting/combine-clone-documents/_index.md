@@ -11,7 +11,7 @@ V dnešním uspěchaném digitálním světě je zpracování dokumentů zásadn
 
 ## Instalace Aspose.Words
 
- Než se ponoříme do podrobností, musíte nastavit Aspose.Words pro Python. Můžete si jej stáhnout a nainstalovat pomocí následujícího odkazu:[Stáhněte si Aspose.Words pro Python](https://releases.aspose.com/words/python/). 
+Než se ponoříme do podrobností, musíte nastavit Aspose.Words pro Python. Můžete si jej stáhnout a nainstalovat pomocí následujícího odkazu:[Stáhněte si Aspose.Words pro Python](https://releases.aspose.com/words/python/). 
 
 ## Kombinování dokumentů
 
@@ -127,7 +127,7 @@ Ano, můžete provést mělký klon, abyste zkopírovali pouze strukturu dokumen
  Využijte`range.replace()` spolu s vhodnými možnostmi pro efektivní vyhledání a nahrazení textu.
 
 ### Podporuje Aspose.Words úpravu formátování?
-Rozhodně můžete upravit formátování pomocí metod jako`run.font.size` a`run.font.bold`.
+Rozhodně můžete upravit formátování pomocí metod jako`run.font.size`a`run.font.bold`.
 
 ### Kde mohu získat přístup k dokumentaci Aspose.Words?
  Komplexní dokumentaci naleznete na[Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).

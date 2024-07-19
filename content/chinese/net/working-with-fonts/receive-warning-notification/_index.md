@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 步骤 3：更新页面布局
-
-致电`UpdatePageLayout`方法。这将在内存中呈现文档并捕获呈现期间发生的任何警告。
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## 步骤 4：设置警告回调
+## 步骤 3：设置警告回调
 
 要捕获和处理警告，请创建一个实现`IWarningCallback`接口。此类将记录文档处理过程中发生的任何警告。
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        //我们只对被替换的字体感兴趣。
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## 步骤 5：将回调分配给文档
+## 步骤 4：将回调分配给文档
 
 将警告回调分配给文档。这可确保捕获并记录所有字体问题。
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## 步骤 5：更新页面布局
+
+致电`UpdatePageLayout`方法。这将在内存中呈现文档并捕获呈现期间发生的任何警告。
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## 步骤 6：保存文档
@@ -112,6 +107,6 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 访问[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8)寻求帮助。
 
-### Q5：是否可以获得Aspose.Words的临时许可证？
+### Q5：可以获得 Aspose.Words 的临时许可证吗？
 
 是的，你可以从[临时执照页面](https://purchase.aspose.com/temporary-license/).

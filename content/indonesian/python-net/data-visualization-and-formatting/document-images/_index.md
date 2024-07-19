@@ -157,7 +157,7 @@ Aspose.Words mendukung ekspor dokumen ke berbagai format, termasuk PDF, DOCX, HT
 
 ### Apakah Aspose.Words cocok untuk aplikasi web dan desktop?
 
-Sangat! Aspose.Words dapat diintegrasikan dengan mulus ke dalam aplikasi web dan desktop untuk menghasilkan dokumen dengan gambar media yang kaya.
+Sangat! Aspose.Words dapat diintegrasikan dengan mulus ke dalam aplikasi web dan desktop untuk menghasilkan dokumen dengan gambar multimedia.
 
 ### Bagaimana cara memastikan ukuran file dokumen saya tidak terlalu besar?
 

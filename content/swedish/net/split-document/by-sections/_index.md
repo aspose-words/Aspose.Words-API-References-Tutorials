@@ -15,7 +15,7 @@ I det här exemplet kommer vi att visa dig hur du delar upp ett Word-dokument i 
 Till att börja med måste vi ange katalogen för ditt dokument och ladda dokumentet i ett dokumentobjekt. Här är hur:
 
 ```csharp
-// Sökväg till dokumentkatalogen.
+//Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
@@ -84,7 +84,7 @@ Utforska gärna andra kraftfulla funktioner som erbjuds av Aspose.Words för .NE
 Ja, du kan anpassa uppdelningskriterierna efter dina specifika behov. Förutom avsnittsbrytningar kan du dela upp dokumentet baserat på andra element som rubriker, bokmärken eller specifikt innehåll med hjälp av de olika funktionerna och metoderna som tillhandahålls av Aspose.Words för .NET.
 
 #### F2: Är det möjligt att slå samman avsnitten tillbaka till ett enda dokument?
- Ja, du kan slå ihop de separata avsnitten tillbaka till ett enda dokument genom att importera och kombinera avsnitten från flera dokument med hjälp av`ImportNode` och`Sections.Add` metoder. Detta gör att du kan vända uppdelningsprocessen och rekonstruera originaldokumentet.
+ Ja, du kan slå ihop de separata avsnitten tillbaka till ett enda dokument genom att importera och kombinera avsnitten från flera dokument med hjälp av`ImportNode`och`Sections.Add` metoder. Detta gör att du kan vända uppdelningsprocessen och rekonstruera originaldokumentet.
 
 #### F3: Finns det några begränsningar för antalet sektioner som kan delas upp med funktionen "Efter sektioner"?
 Antalet sektioner som kan delas upp med funktionen "By Sections" beror på kapaciteten hos Aspose.Words för .NET och de tillgängliga systemresurserna. I allmänhet stöder den uppdelning av dokument med ett stort antal avsnitt, men extremt långa dokument eller ett mycket stort antal avsnitt kan kräva ytterligare systemresurser och handläggningstid.

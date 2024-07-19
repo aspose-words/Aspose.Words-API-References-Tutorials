@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Bằng cách thiết lập`AddSpaceBetweenFarEastAndAlpha` Và`AddSpaceBetweenFarEastAndDigit` ĐẾN`true`, chúng tôi yêu cầu Aspose.Words tự động điều chỉnh khoảng cách giữa các ký tự Châu Á và các chữ cái hoặc chữ số Latinh.
+ Bằng cách thiết lập`AddSpaceBetweenFarEastAndAlpha`Và`AddSpaceBetweenFarEastAndDigit` ĐẾN`true`, chúng tôi yêu cầu Aspose.Words tự động điều chỉnh khoảng cách giữa các ký tự Châu Á và các chữ cái hoặc chữ số Latinh.
 
 ## Bước 3: Thêm văn bản vào tài liệu
 

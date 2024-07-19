@@ -18,7 +18,7 @@ A comparação de documentos envolve a análise de dois documentos e a identific
 
 ## Comparação Básica de Documentos
 
- Vamos começar com o básico da comparação de documentos. Usaremos dois documentos,`docA` e`docB`e compare-os.
+ Vamos começar com o básico da comparação de documentos. Usaremos dois documentos,`docA`e`docB`e compare-os.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-Neste trecho de código, carregamos dois documentos,`docA` e`docB` e, em seguida, use o`compare` método para compará-los. Especificamos o autor como “usuário” e a comparação é realizada. Por fim, verificamos se há revisões, indicando diferenças entre os documentos.
+Neste trecho de código, carregamos dois documentos,`docA`e`docB` e, em seguida, use o`compare` método para compará-los. Especificamos o autor como “usuário” e a comparação é realizada. Por fim, verificamos se há revisões, indicando diferenças entre os documentos.
 
 ## Personalizando a comparação com opções
 

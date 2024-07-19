@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3단계: 수정할 라인에 액세스
- 테이블 행의 형식을 변경하려면 테이블의 특정 행으로 이동해야 합니다. 우리는`GetChild()` 그리고`FirstRow` 테이블의 첫 번째 행에 대한 참조를 가져오는 메서드입니다.
+ 테이블 행의 형식을 변경하려면 테이블의 특정 행으로 이동해야 합니다. 우리는`GetChild()`그리고`FirstRow` 테이블의 첫 번째 행에 대한 참조를 가져오는 메서드입니다.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

@@ -17,7 +17,7 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## 3. lépés: Tételek hozzáadása a kombinált mezőhöz
- Adjon hozzá elemeket a kombinált mezőhöz a gombbal`ListItems` tulajdona a`StructuredDocumentTag` Minden elemet egy`SdtListItem` objektum, amely egy megjelenített szöveget és egy értéket vesz fel. Ebben a példában három elemet adunk a kombinált mezőhöz.
+ Adjon hozzá elemeket a kombinált mezőhöz a gombbal`ListItems` tulajdona a`StructuredDocumentTag` . Minden elemet egy`SdtListItem` objektum, amely egy megjelenített szöveget és egy értéket vesz fel. Ebben a példában három elemet adunk a kombinált mezőhöz.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

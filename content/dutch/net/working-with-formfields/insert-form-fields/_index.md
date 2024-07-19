@@ -14,7 +14,7 @@ In deze stapsgewijze zelfstudie begeleiden we u bij het invoegen van formulierve
 
 ## Stap 1: Initialiseren van de Document- en DocumentBuilder-objecten
 
- Initialiseer eerst de`Document` En`DocumentBuilder` voorwerpen:
+ Initialiseer eerst de`Document`En`DocumentBuilder` voorwerpen:
 
 ```csharp
 Document doc = new Document();

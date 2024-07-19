@@ -64,4 +64,4 @@ gratuluji! Nyní jste vytvořili tabulku s vlastním ohraničením pomocí Aspos
 ```
 
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak vytvořit tabulku s ohraničením pomocí Aspose.Words pro .NET. Podle tohoto podrobného průvodce můžete snadno přizpůsobit ohraničení tabulky v dokumentech aplikace Word. Aspose.Words nabízí výkonné a flexibilní API pro manipulaci a formátování tabulek ve vašich dokumentech. S těmito znalostmi můžete zlepšit vizuální prezentaci vašich dokumentů aplikace Word a vyhovět specifickým potřebám.
+V tomto tutoriálu jsme se naučili, jak vytvořit tabulku s ohraničením pomocí Aspose.Words pro .NET. Podle tohoto podrobného průvodce můžete snadno přizpůsobit ohraničení tabulky v dokumentech aplikace Word. Aspose.Words nabízí výkonné a flexibilní API pro manipulaci a formátování tabulek ve vašich dokumentech. S těmito znalostmi můžete zlepšit vizuální prezentaci vašich dokumentů Word a splnit specifické potřeby.

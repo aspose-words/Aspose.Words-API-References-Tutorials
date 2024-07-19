@@ -58,13 +58,13 @@ W tym przewodniku wyjaśniliśmy, jak przesłać dokument, aktualizując brudne 
 
 #### P: Czym są brudne pola w dokumencie programu Word?
 
-Odp.: Brudne pola w dokumencie programu Word odnoszą się do pól, które uległy zmianie, ale nie zostały zaktualizowane w celu odzwierciedlenia najnowszych wartości. Aktualizując te pola, masz pewność, że dokument zawsze będzie zawierał dokładne i aktualne informacje.
+Odp.: Brudne pola w dokumencie programu Word odnoszą się do pól, które uległy zmianie, ale nie zostały zaktualizowane w celu odzwierciedlenia najnowszych wartości. Aktualizując te pola, masz pewność, że dokument zawsze zawiera dokładne i aktualne informacje.
 
 #### P: Czy mogę dostosować opcje ładowania w Aspose.Words dla .NET?
 
 Odp.: Absolutnie! Aspose.Words zapewnia szereg opcji ładowania, które można dostosować do własnych wymagań, co czyni go elastycznym i wydajnym narzędziem do przetwarzania dokumentów.
 
-#### P: W jaki sposób aktualizacja brudnych pól przynosi korzyść mojej aplikacji?
+#### P: W jaki sposób aktualizacja brudnych pól przynosi korzyści mojej aplikacji?
 
 Odp.: Aktualizacja nieczytelnych pól gwarantuje, że aplikacja C# będzie wyświetlać najnowsze dane w dokumentach programu Word, poprawiając ogólne wrażenia użytkownika i dokładność informacji.
 

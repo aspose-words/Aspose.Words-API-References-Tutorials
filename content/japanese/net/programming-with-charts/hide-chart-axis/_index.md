@@ -2,24 +2,39 @@
 title: Word 文書でグラフの軸を非表示にする
 linktitle: Word 文書でグラフの軸を非表示にする
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメント内のグラフ軸を非表示にする方法を学びます。軸を非表示にすると、グラフの表示がよりすっきりして焦点が絞られます。
+description: 詳細なステップバイステップのチュートリアルで、Aspose.Words for .NET を使用して Word 文書内のグラフ軸を非表示にする方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/programming-with-charts/hide-chart-axis/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメント内のグラフ軸を非表示にする方法について説明します。提供されているソース コードでは、グラフを作成し、系列データを追加し、グラフ軸を非表示にする方法が示されています。
+動的で視覚的に魅力的な Word 文書を作成するには、多くの場合、チャートやグラフを組み込む必要があります。そのようなシナリオの 1 つとして、よりすっきりとしたプレゼンテーションのためにチャートの軸を非表示にすることが考えられます。Aspose.Words for .NET は、そのようなタスクのための包括的で使いやすい API を提供します。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書でチャートの軸を非表示にする手順を説明します。
 
-## ステップ1: プロジェクトを設定する
+## 前提条件
 
-次の前提条件を満たしていることを確認してください。
+チュートリアルに進む前に、次の前提条件を満たしていることを確認してください。
 
-- Aspose.Words for .NET ライブラリがインストールされています。NuGet パッケージ マネージャーを使用してダウンロードし、インストールできます。
-- 出力ドキュメントが保存されるドキュメント ディレクトリ パス。
+-  Aspose.Words for .NET: ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio など、.NET 開発をサポートする任意の IDE。
+- .NET Framework: マシンに .NET Framework がインストールされていることを確認します。
+- C# の基礎知識: C# プログラミング言語に精通していると有利です。
 
-## ステップ2: 新しいドキュメントを作成し、グラフを挿入する
+## 名前空間のインポート
 
-新しいを作成します`Document`オブジェクトと`DocumentBuilder`ドキュメントを作成します。
+Aspose.Words for .NET の使用を開始するには、プロジェクトに必要な名前空間をインポートする必要があります。手順は次のとおりです。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+プロセスをシンプルでわかりやすいステップに分解してみましょう。
+
+## ステップ 1: ドキュメントと DocumentBuilder を初期化する
+
+最初のステップでは、新しい Word 文書を作成し、DocumentBuilder オブジェクトを初期化します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
@@ -29,88 +44,78 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-次に、`InsertChart`方法の`DocumentBuilder`この例では、縦棒グラフを挿入します。
+このステップでは、ドキュメントを保存するパスを定義します。次に、新しい`Document`オブジェクトと`DocumentBuilder`ドキュメントの構築を開始するためのオブジェクト。
+
+## ステップ2: グラフを挿入する
+
+次に、`DocumentBuilder`物体。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## ステップ3: グラフに系列データを追加する
+ここでは、指定されたディメンションの縦棒グラフを挿入します。`InsertChart`メソッドは`Shape`チャートを含むオブジェクト。
 
-グラフに系列データを追加します。この例では、5 つの項目とそれに対応する値を追加します。
+## ステップ3: 既存のシリーズをクリアする
+
+グラフに新しいデータを追加する前に、既存のシリーズをすべてクリアする必要があります。
 
 ```csharp
 chart.Series.Clear();
+```
+
+この手順により、グラフ内のデフォルト データがすべて削除され、次に追加する新しいデータのための場所が確保されます。
+
+## ステップ4: シリーズデータを追加する
+
+ここで、独自のデータ シリーズをグラフに追加してみましょう。
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## ステップ4: グラフの軸を非表示にする
+この手順では、対応するカテゴリと値を持つ「Aspose Series 1」というタイトルのシリーズを追加します。
 
-グラフ軸を非表示にするには、`AxisY`チャートのプロパティを設定し、`Hidden`財産に`true`.
+## ステップ5: Y軸を非表示にする
+
+グラフのY軸を非表示にするには、`Hidden` Y軸のプロパティ`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-この例では、グラフの Y 軸を非表示にします。
+このコード行は Y 軸を非表示にし、グラフ内で見えなくします。
 
-## ステップ5: ドキュメントを保存する
+## ステップ6: ドキュメントを保存する
 
-最後に、指定されたディレクトリにドキュメントを保存します。`Save`方法の`Document`物体。
+最後に、ドキュメントを指定されたディレクトリに保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-これで、Aspose.Words for .NET を使用してチャートの軸を非表示にする実装が完了します。
-
-### Aspose.Words for .NET を使用してチャート軸を非表示にするサンプル ソース コード 
-
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Hidden = true;
-	doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
-```
+このコマンドは、グラフを含む Word 文書を指定されたパスに保存します。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のグラフ軸を非表示にする方法を学習しました。ステップバイステップのガイドに従い、提供されているソース コードを使用することで、グラフを作成し、系列データを追加し、グラフ軸を非表示にして、目的の視覚効果を実現できます。
+おめでとうございます。Aspose.Words for .NET を使用して Word 文書内のグラフ軸を非表示にする方法を学習しました。この強力なライブラリを使用すると、Word 文書をプログラムで簡単に操作できます。これらの手順に従うことで、最小限の労力でカスタマイズされたプロフェッショナルな外観の文書を作成できます。
 
- Aspose.Words for .NETは、Word文書内のグラフを処理するための包括的なAPIを提供し、軸のプロパティを含むグラフのさまざまな側面を操作できます。`AxisY`グラフのプロパティを使用すると、Y 軸を非表示にしてグラフの視覚化から削除できます。
+## よくある質問
 
-グラフ軸を非表示にすると、軸線やラベルに邪魔されずにグラフ データに集中したい場合に便利です。これにより、グラフの外観がよりすっきりとシンプルになります。
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、.NET アプリケーション内で Word 文書を作成、編集、変換、操作するための強力な API です。
 
-Aspose.Words for .NET を使用すると、.NET アプリケーションにグラフ作成機能を簡単に組み込み、カスタマイズされたグラフや非表示のグラフ軸を含むプロフェッショナルな外観のドキュメントを生成できます。
+### グラフ内の X 軸と Y 軸の両方を非表示にすることはできますか?
+はい、両方の軸を非表示にするには、`Hidden`両者の財産`AxisX`そして`AxisY`に`true`.
 
-### よくある質問
+### Aspose.Words for .NET の無料試用版はありますか?
+はい、無料トライアルをご利用いただけます[ここ](https://releases.aspose.com/).
 
-#### Q1. Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、開発者が .NET アプリケーションでプログラム的に Word 文書を作成、操作、保存できるようにする強力なドキュメント処理ライブラリです。グラフやグラフ軸などのドキュメント要素を使用して Words を処理するための幅広い機能を提供します。
+### さらに詳しいドキュメントはどこで見つかりますか?
+詳細なドキュメントはAspose.Words for .NETでご覧いただけます。[ここ](https://reference.aspose.com/words/net/).
 
-#### Q2. Aspose.Words for .NET をインストールするにはどうすればよいですか?
-Aspose.Words for .NET は、Visual Studio の NuGet パッケージ マネージャーを使用してダウンロードすることでインストールできます。NuGet パッケージ マネージャーで「Aspose.Words」を検索し、プロジェクトにインストールするだけです。
-
-#### Q3. グラフの X 軸と Y 軸の両方を非表示にすることはできますか?
-はい、Aspose.Words for .NETを使用すると、グラフのX軸とY軸の両方を非表示にすることができます。X軸を非表示にするには、`AxisX`チャートのプロパティを設定し、`Hidden`財産に`true`同様に、Y軸を非表示にするには、`AxisY`プロパティを設定し、`Hidden`財産に`true`これにより、チャートの視覚化から両方の軸を削除できます。
-
-#### Q4. 軸を非表示にした後、再度表示することはできますか？
-はい、Aspose.Words for .NETを使用してグラフの軸を非表示にした後、再度表示することができます。非表示の軸を表示するには、`Hidden`対応する`AxisX`または`AxisY`反対する`false`これにより、グラフに軸が再び表示されるようになります。
-
-#### Q5. グラフ軸の他のプロパティをカスタマイズできますか?
-はい、Aspose.Words for .NETでは、軸のタイトル、ラベル、線の色など、グラフ軸のさまざまなプロパティをカスタマイズできます。`AxisX`そして`AxisY`チャートのプロパティでは、次のようなプロパティを変更できます。`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`、その他多数。これにより、グラフ軸の外観と動作を細かく制御できます。
-
-#### Q6. 軸を非表示にしたグラフを別のファイル形式で保存できますか?
-はい、Aspose.Words for .NETでは、非表示の軸を持つグラフを含むドキュメントをDOCX、PDF、HTMLなどのさまざまなファイル形式で保存できます。要件に基づいて必要な出力形式を選択し、`Save`方法の`Document`オブジェクトを使用してドキュメントを保存します。保存されたドキュメントでは非表示の軸が保持されます。
+### Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
+ Asposeコミュニティからサポートを受けることができます[ここ](https://forum.aspose.com/c/words/8).

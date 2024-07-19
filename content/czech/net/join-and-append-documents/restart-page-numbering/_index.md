@@ -7,73 +7,106 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/restart-page-numbering/
 ---
+## Úvod
 
-Tento výukový program vás provede procesem používání funkce číslování stránek po restartu Aspose.Words for .NET. Tato funkce umožňuje připojovat a připojovat dokumenty aplikace Word při restartování číslování stránek ve zdrojovém dokumentu.
+Už jste někdy měli potíže s vytvořením vyleštěného dokumentu s odlišnými sekcemi, z nichž každá začíná stránkou číslo 1? Představte si zprávu, kde kapitoly začínají znovu, nebo zdlouhavý návrh s oddělenými oddíly pro shrnutí a podrobné přílohy. Aspose.Words for .NET, výkonná knihovna pro zpracování dokumentů, vám umožňuje dosáhnout toho s jemností. Tento komplexní průvodce odhalí tajemství restartování číslování stránek a vybaví vás tak, abyste mohli bez námahy vytvářet profesionálně vypadající dokumenty.
 
 ## Předpoklady
 
-Než začnete, ujistěte se, že máte následující:
+Než se vydáte na tuto cestu, ujistěte se, že máte následující:
 
-1. Aspose.Words for .NET nainstalován. Můžete si jej stáhnout z webu Aspose nebo nainstalovat přes NuGet.
-2. Visual Studio nebo jiné vývojové prostředí C#.
+1.  Aspose.Words for .NET: Stáhněte si knihovnu z oficiálních stránek[Odkaz ke stažení](https://releases.aspose.com/words/net/) . Můžete prozkoumat bezplatnou zkušební verzi[Odkaz na bezplatnou zkušební verzi](https://releases.aspose.com/) nebo zakoupit licenci[Koupit odkaz](https://purchase.aspose.com/buy) na základě vašich potřeb.
+2. Vývojové prostředí AC#: Visual Studio nebo jakékoli prostředí, které podporuje vývoj .NET, bude fungovat perfektně.
+3. Ukázkový dokument: Najděte dokument aplikace Word, se kterým byste chtěli experimentovat.
 
-## Krok 1: Inicializujte adresáře dokumentů
+## Import základních jmenných prostorů
 
- Nejprve musíte nastavit cestu k adresáři dokumentů. Upravte hodnotu`dataDir` proměnnou k cestě, kde jsou umístěny vaše dokumenty.
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Krok 2: Načtěte zdrojové a cílové dokumenty
-
-Dále musíte načíst zdrojové a cílové dokumenty pomocí Aspose.Words`Document` třída. Aktualizujte názvy souborů v`Document` konstruktor podle názvů vašich dokumentů.
+Pro interakci s objekty a funkcemi Aspose.Words musíme importovat potřebné jmenné prostory. Jak na to:
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Northwind traders.docx");
+using Aspose.Words;
+using Aspose.Words.Settings;
 ```
 
-## Krok 3: Nastavte zdrojový dokument na Restartovat číslování stránek
+ Tento fragment kódu importuje soubor`Aspose.Words` jmenný prostor, který poskytuje přístup k základním třídám manipulace s dokumenty. Kromě toho dovážíme`Aspose.Words.Settings` jmenný prostor, který nabízí možnosti přizpůsobení chování dokumentu.
 
- Chcete-li znovu spustit číslování stránek ve zdrojovém dokumentu, musíte nastavit`SectionStart` vlastnost první sekce ve zdrojovém dokumentu na`SectionStart.NewPage` a nastavte`RestartPageNumbering`majetek do`true`.
+
+Nyní se pojďme ponořit do praktických kroků spojených s restartováním číslování stránek v dokumentech:
+
+## Krok 1: Načtěte zdrojové a cílové dokumenty:
+
+ Definujte řetězcovou proměnnou`dataDir` pro uložení cesty k vašemu adresáři dokumentů. Nahraďte „VÁŠ ADRESÁŘ DOKUMENTŮ“ skutečným umístěním.
+
+ Vytvořte dva`Document` objekty pomocí`Aspose.Words.Document`konstruktér. První (`srcDoc`) bude obsahovat zdrojový dokument obsahující obsah, který má být připojen. Druhý (`dstDoc`) představuje cílový dokument, do kterého integrujeme zdrojový obsah s restartovaným číslováním stránek.
+
+```csharp
+string dataDir = @"C:\MyDocuments\"; // Nahraďte svým skutečným adresářem
+Document srcDoc = new Document(dataDir + "source.docx");
+Document dstDoc = new Document(dataDir + "destination.docx");
+```
+
+## Krok 2: Nastavení konce sekce:
+
+ Přístup k`FirstSection` vlastnost zdrojového dokumentu (`srcDoc`) pro manipulaci s počáteční částí. Tato sekce bude mít znovu číslování stránek.
+
+ Využijte`PageSetup` vlastnost sekce pro konfiguraci jejího chování rozvržení.
+
+ Nastav`SectionStart` majetek`PageSetup` na`SectionStart.NewPage`. Tím se zajistí vytvoření nové stránky před připojením zdrojového obsahu k cílovému dokumentu.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
+```
+
+## Krok 3: Povolení restartování číslování stránek:
+
+ V rámci stejného`PageSetup` objekt první části zdrojového dokumentu, nastavte`RestartPageNumbering`majetek do`true`. Tento zásadní krok dává Aspose.Words pokyn, aby znovu zahájil číslování stránek pro připojený obsah.
+
+```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 ```
 
-## Krok 4: Připojte zdrojový dokument k cílovému dokumentu
+## Krok 4: Připojení zdrojového dokumentu:
 
- Nyní můžete připojit zdrojový dokument k cílovému dokumentu pomocí`AppendDocument` metoda`Document` třída. The`ImportFormatMode.KeepSourceFormatting` Parametr zajišťuje zachování formátování zdroje během operace připojení.
+Nyní, když je zdrojový dokument připraven s požadovanou konfigurací konce stránky a číslování, je čas jej integrovat do cílového dokumentu.
+
+ Zaměstnávejte`AppendDocument` způsob cílového dokumentu (`dstDoc`), abyste mohli bez problémů přidat zdrojový obsah.
+
+Předejte zdrojový dokument (`srcDoc` ) a an`ImportFormatMode.KeepSourceFormatting` argument k této metodě. Tento argument zachová po připojení původní formátování zdrojového dokumentu.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Krok 5: Uložte konečný dokument
+## Krok 5: Uložení konečného dokumentu:
 
- Nakonec uložte sloučený dokument s povolenou funkcí Restartovat číslování stránek pomocí`Save` metoda`Document` třída.
-
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
-```
-
-### Příklad zdrojového kódu pro číslování stránek Restart pomocí Aspose.Words pro .NET
-
-Zde je úplný zdrojový kód pro funkci "Restart Page Numbering" v C# pomocí Aspose.Words for .NET:
- 
+ Nakonec využijte`Save` způsob cílového dokumentu (`dstDoc`) pro uložení kombinovaného dokumentu s restartovaným číslováním stránek. Zadejte vhodný název souboru a umístění pro uložený dokument.
 
 ```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.RestartPageNumbering.docx");
+dstDoc.Save(dataDir + "final_document.docx");
 ```
 
-A je to! Úspěšně jste implementovali funkci Restartovat číslování stránek pomocí Aspose.Words for .NET. Konečný dokument bude obsahovat sloučený obsah s číslováním stránek restartovaným ve zdrojovém dokumentu.
+## Závěr
+
+Na závěr, zvládnutí zalomení stránek a číslování v Aspose.Words pro .NET vám umožňuje vytvářet leštěné a dobře strukturované dokumenty. Implementací technik popsaných v této příručce můžete hladce integrovat obsah s restartovaným číslováním stránek a zajistit tak profesionální a čtenářsky přívětivou prezentaci. Pamatujte, že Aspose.Words nabízí množství dalších funkcí pro manipulaci s dokumenty.
+
+## FAQ
+
+### Mohu znovu začít číslování stránek uprostřed sekce?
+
+ Bohužel Aspose.Words for .NET nepodporuje přímo restartování číslování stránek v rámci jedné sekce. Podobného efektu však můžete dosáhnout vytvořením nového úseku v požadovaném bodě a nastavení`RestartPageNumbering` na`true` pro daný úsek.
+
+### Jak mohu upravit číslo úvodní stránky po restartu?
+
+ I když poskytnutý kód zahájí číslování od 1, můžete si jej přizpůsobit. Využijte`PageNumber` vlastnictvím`HeaderFooter` objekt v nové sekci. Nastavení této vlastnosti umožňuje definovat počáteční číslo stránky.
+
+### Co se stane s existujícími čísly stránek ve zdrojovém dokumentu?
+
+Stávající čísla stránek ve zdrojovém dokumentu zůstanou nedotčena. Pouze připojený obsah v cílovém dokumentu bude mít nové číslování.
+
+### Mohu použít různé formáty číslování (např. římské číslice)?
+
+ Absolutně! Aspose.Words nabízí rozsáhlou kontrolu nad formáty číslování stránek. Prozkoumat`NumberStyle` vlastnictvím`HeaderFooter` objekt si můžete vybrat z různých stylů číslování, jako jsou římské číslice, písmena nebo vlastní formáty.
+
+### Kde najdu další zdroje nebo pomoc?
+
+ Aspose poskytuje komplexní dokumentační portál[Odkaz na dokumentaci](https://reference.aspose.com/words/net/) který se ponoří hlouběji do funkcí číslování stránek a dalších funkcí Aspose.Words. Navíc jejich aktivní fórum[Odkaz na podporu](https://forum.aspose.com/c/words/8) je skvělá platforma pro spojení s komunitou vývojářů a hledání pomoci s konkrétními problémy.

@@ -17,7 +17,7 @@ Antes de mergulhar no tutorial, certifique-se de ter o seguinte:
 - Conhecimento básico de C#: Compreender a programação C# tornará mais fácil seguir e implementar as etapas.
 -  Biblioteca Aspose.Words for .NET: Baixe e instale a biblioteca do[Link para Download](https://releases.aspose.com/words/net/).
 - Ambiente de desenvolvimento: configure um ambiente de desenvolvimento como o Visual Studio para escrever e executar seu código.
--  Documento de amostra: Um documento de amostra (por exemplo,`Rendering.docx`) para trabalhar durante este tutorial.
+- Documento de amostra: Um documento de amostra (por exemplo,`Rendering.docx`) para trabalhar durante este tutorial.
 
 ## Importar namespaces
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Etapa 5: Crie a classe do manipulador de avisos
 
- Para lidar com avisos de forma eficaz, crie uma classe personalizada que implemente o`IWarningCallback` interface. Esta classe irá capturar e registrar quaisquer avisos de substituição de fonte.
+Para lidar com avisos de forma eficaz, crie uma classe personalizada que implemente o`IWarningCallback` interface. Esta classe irá capturar e registrar quaisquer avisos de substituição de fonte.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Agora você dominou o processo de manipulação de substituição de fontes sem 
 
 ### P1: Como posso usar fontes de vários diretórios personalizados?
 
- Você pode adicionar vários`FolderFontSource` instâncias para o`fontSources`liste e atualize as fontes de fonte de acordo.
+ Você pode adicionar vários`FolderFontSource` instâncias para o`fontSources` liste e atualize as fontes de fonte de acordo.
 
 ### Q2: Onde posso baixar uma avaliação gratuita do Aspose.Words for .NET?
 

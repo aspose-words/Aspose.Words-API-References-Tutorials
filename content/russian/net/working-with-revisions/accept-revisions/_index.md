@@ -15,7 +15,7 @@ url: /ru/net/working-with-revisions/accept-revisions/
 В этом примере мы создаем документ и добавляем контент. Мы используем несколько абзацев для иллюстрации изменений и исправлений. Вот как:
 
 ```csharp
-// Путь к каталогу документов.
+//Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Решение 2:
 
- О: Вы также можете включить отслеживание изменений с помощью`Document` конструктор, который принимает`trackRevisions` и`author` параметры.
+ О: Вы также можете включить отслеживание изменений с помощью`Document` конструктор, который принимает`trackRevisions`и`author` параметры.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

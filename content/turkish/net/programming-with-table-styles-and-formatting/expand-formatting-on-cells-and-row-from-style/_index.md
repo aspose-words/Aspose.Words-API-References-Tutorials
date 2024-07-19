@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Adım 3: İlk tablonun ilk hücresine gidin
- Başlamak için belgedeki ilk tablonun ilk hücresine gitmemiz gerekiyor. biz kullanıyoruz`GetChild()` Ve`FirstRow.FirstCell` İlk hücreye referans alma yöntemleri.
+ Başlamak için belgedeki ilk tablonun ilk hücresine gitmemiz gerekiyor. biz kullanıyoruz`GetChild()`Ve`FirstRow.FirstCell` İlk hücreye referans alma yöntemleri.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

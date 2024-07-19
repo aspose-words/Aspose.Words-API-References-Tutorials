@@ -15,7 +15,7 @@ W tym przykładzie pokażemy, jak podzielić dokument programu Word na osobne se
 Aby rozpocząć, określ katalog dla swojego dokumentu i załaduj dokument do obiektu Document. Oto jak:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
+//Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```
@@ -54,7 +54,7 @@ Teraz możesz generować osobne dokumenty HTML dla każdej sekcji dokumentu pocz
 
 W tym samouczku nauczyliśmy się, jak podzielić dokument programu Word na osobne sekcje w formacie HTML, korzystając z funkcji Według sekcji HTML w Aspose.Words dla .NET. Postępując zgodnie z dostarczonym kodem źródłowym, możesz wygenerować indywidualne dokumenty HTML dla każdej sekcji oryginalnego dokumentu.
 
-Podział dokumentu na sekcje może być przydatny do różnych celów, takich jak tworzenie stron internetowych, wyodrębnianie określonej treści lub organizowanie informacji. Aspose.Words dla .NET zapewnia potężne API, które pozwala na manipulowanie i dostosowywanie dokumentów Worda zgodnie z Twoimi wymaganiami.
+Podział dokumentu na sekcje może być przydatny do różnych celów, takich jak tworzenie stron internetowych, wyodrębnianie określonej treści lub organizowanie informacji. Aspose.Words dla .NET zapewnia potężny interfejs API, który pozwala manipulować i dostosowywać dokumenty programu Word zgodnie z własnymi wymaganiami.
 
 Zachęcamy do zapoznania się z dodatkowymi funkcjami oferowanymi przez Aspose.Words dla .NET, aby jeszcze bardziej ulepszyć możliwości przetwarzania dokumentów i usprawnić przepływ pracy.
 

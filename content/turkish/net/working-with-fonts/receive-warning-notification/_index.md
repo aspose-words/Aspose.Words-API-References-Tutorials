@@ -1,6 +1,6 @@
 ---
-title: Uyarı Bildirimi Alın
-linktitle: Uyarı Bildirimi Alın
+title: Uyarı Bildirimi Al
+linktitle: Uyarı Bildirimi Al
 second_title: Aspose.Words Belge İşleme API'si
 description: Ayrıntılı kılavuzumuzla Aspose.Words for .NET'te yazı tipi değiştirme bildirimlerini nasıl alacağınızı öğrenin. Belgelerinizin her zaman doğru şekilde oluşturulduğundan emin olun.
 type: docs
@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. Adım: Sayfa Düzenini Güncelleyin
-
- Ara`UpdatePageLayout` yöntem. Bu, belgeyi bellekte işler ve işleme sırasında meydana gelen tüm uyarıları yakalar.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Adım 4: Uyarı Geri Aramasını Ayarlayın
+## 3. Adım: Uyarı Geri Aramasını Ayarlayın
 
  Uyarıları yakalamak ve işlemek için aşağıdakileri uygulayan bir sınıf oluşturun:`IWarningCallback` arayüz. Bu sınıf, belge işleme sırasında meydana gelen uyarıları günlüğe kaydeder.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Biz yalnızca değiştirilen yazı tipleriyle ilgileniyoruz.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Adım 5: Geri Aramayı Belgeye Atayın
+## Adım 4: Geri Aramayı Belgeye Atayın
 
 Uyarı geri aramasını belgeye atayın. Bu, tüm yazı tipi sorunlarının yakalanıp günlüğe kaydedilmesini sağlar.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## 5. Adım: Sayfa Düzenini Güncelleyin
+
+ Ara`UpdatePageLayout` yöntem. Bu, belgeyi bellekte işler ve işleme sırasında meydana gelen tüm uyarıları yakalar.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Adım 6: Belgeyi Kaydedin
@@ -106,7 +101,7 @@ Hayır, değiştirme için yalnızca bir varsayılan yazı tipi belirleyebilirsi
 
 ###  S3: Diğer uyarı türlerini şununla işleyebilir miyim?`IWarningCallback`?
 
- Evet`IWarningCallback` arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
+ Evet`IWarningCallback`arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
 
 ### S4: Aspose.Words desteğini nerede bulabilirim?
 

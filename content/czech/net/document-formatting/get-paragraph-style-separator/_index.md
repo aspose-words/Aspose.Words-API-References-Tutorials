@@ -17,7 +17,7 @@ Zkoušeli jste někdy procházet labyrintem dokumentu aplikace Word, aby vás za
 Než se pustíme do kódu, ujistěte se, že máte všechny nástroje, které potřebujete:
 
 - Visual Studio: Ujistěte se, že jej máte nainstalovaný. Pokud ne, stáhněte si jej a nainstalujte z webu společnosti Microsoft.
--  Aspose.Words for .NET: Pokud ji ještě nemáte, stáhněte si nejnovější verzi[tady](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Pokud ji ještě nemáte, stáhněte si nejnovější verzi[tady](https://releases.aspose.com/words/net/).
 - Ukázkový dokument Word: Měl by obsahovat oddělovače stylu odstavců, se kterými budeme pracovat. Můžete vytvořit jeden nebo použít existující dokument.
 
 ## Importovat jmenné prostory

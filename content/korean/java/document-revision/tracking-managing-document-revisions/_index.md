@@ -103,7 +103,7 @@ doc.save("MyDocument_v2.docx");
 
 ### 프로그래밍 방식으로 수정본을 수락하거나 거부할 수 있나요?
 
- 예, Aspose.Words for Java를 사용하여 개정판을 수락하거나 거부할 수 있습니다. 활용`acceptAllRevisions` 그리고`rejectAllRevisions` 개정판을 관리하는 방법.
+ 예, Aspose.Words for Java를 사용하여 개정판을 수락하거나 거부할 수 있습니다. 활용`acceptAllRevisions`그리고`rejectAllRevisions` 개정판을 관리하는 방법.
 
 ### 하나의 문서를 여러 버전으로 만들 수 있나요?
 

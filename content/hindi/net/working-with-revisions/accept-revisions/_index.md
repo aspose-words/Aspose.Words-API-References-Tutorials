@@ -15,7 +15,7 @@ url: /hi/net/working-with-revisions/accept-revisions/
 इस उदाहरण में, हम एक दस्तावेज़ बना रहे हैं और उसमें सामग्री जोड़ रहे हैं। हम परिवर्तनों और संशोधनों को दर्शाने के लिए कई पैराग्राफ़ का उपयोग करते हैं। यहाँ बताया गया है कि कैसे:
 
 ```csharp
-// दस्तावेज़ निर्देशिका का पथ.
+//दस्तावेज़ निर्देशिका का पथ.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### समाधान 2:
 
- उत्तर: आप इसका उपयोग करके संशोधन ट्रैकिंग भी सक्षम कर सकते हैं`Document` कन्स्ट्रक्टर जो स्वीकार करता है`trackRevisions` और`author` पैरामीटर.
+ उत्तर: आप इसका उपयोग करके संशोधन ट्रैकिंग भी सक्षम कर सकते हैं`Document` कन्स्ट्रक्टर जो स्वीकार करता है`trackRevisions`और`author` पैरामीटर.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

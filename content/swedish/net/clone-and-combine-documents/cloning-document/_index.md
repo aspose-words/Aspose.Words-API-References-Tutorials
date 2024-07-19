@@ -81,7 +81,7 @@ Att klona dokumentet är enkelt med Aspose.Words:
 
 Med allt på plats är det dags att köra din kod och se resultatet:
 
-1.  Bygg ditt projekt: Klicka på`Build` menyn och välj`Build Solution`. Se till att det inte finns några fel.
+1. Bygg ditt projekt: Klicka på`Build` menyn och välj`Build Solution`. Se till att det inte finns några fel.
 2.  Kör ditt projekt: Hit`F5` eller klicka på`Start` knappen för att köra ditt projekt. Om allt är korrekt inställt bör ett nytt klonat dokument dyka upp i din dokumentkatalog.
 
 ## Steg 6: Verifiera utdata

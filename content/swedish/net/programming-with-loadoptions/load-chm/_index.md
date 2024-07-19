@@ -31,7 +31,7 @@ Nu när vi har konfigurerat laddningsalternativen kan vi ladda CHM-filen med kla
 Document doc = new Document(dataDir + "HTML help.chm", loadOptions);
 ```
 
-I det här exemplet laddar vi CHM-filen "HTML help.chm" som finns i dokumentkatalogen med de angivna laddningsalternativen.
+det här exemplet laddar vi CHM-filen "HTML help.chm" som finns i dokumentkatalogen med de angivna laddningsalternativen.
 
 ### Exempel på källkod för LoadOptions med "Load Chm"-funktionalitet med Aspose.Words för .NET
 

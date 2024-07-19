@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- Bu örnekte, bir metin belgesi yüklüyoruz ve öndeki ve sondaki boşlukları kırpıyoruz.`TxtLeadingSpacesOptions.TRIM` Ve`TxtTrailingSpacesOptions.TRIM`.
+ Bu örnekte, bir metin belgesi yüklüyoruz ve öndeki ve sondaki boşlukları kırpıyoruz.`TxtLeadingSpacesOptions.TRIM`Ve`TxtTrailingSpacesOptions.TRIM`.
 
 ## 3. Adım: Metin Yönünü Kontrol Etme
 
@@ -179,7 +179,7 @@ Aspose.Words for Java'yı kullanmaya başlamak için şu adımları izleyin:
 
 ### Yüklenen metin belgelerindeki boşlukları nasıl yönetirim?
 
- Yüklenen metin belgelerinde baştaki ve sondaki boşlukların nasıl işleneceğini kullanarak kontrol edebilirsiniz.`TxtLoadOptions` . Gibi seçenekler`TxtLeadingSpacesOptions` Ve`TxtTrailingSpacesOptions`alanları gerektiği gibi kırpmanıza veya korumanıza olanak tanır. Örnek için bu kılavuzdaki "Taşıma Alanları Seçenekleri" bölümüne bakın.
+ Yüklenen metin belgelerinde baştaki ve sondaki boşlukların nasıl işleneceğini kullanarak kontrol edebilirsiniz.`TxtLoadOptions` . Gibi seçenekler`TxtLeadingSpacesOptions`Ve`TxtTrailingSpacesOptions`alanları gerektiği gibi kırpmanıza veya korumanıza olanak tanır. Örnek için bu kılavuzdaki "Taşıma Alanları Seçenekleri" bölümüne bakın.
 
 ### Aspose.Words for Java'da metin yönünün önemi nedir?
 

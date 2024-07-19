@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Khởi tạo tài liệu
 
- Hãy bắt đầu bằng cách tạo một tài liệu Word mới. Chúng tôi sẽ sử dụng`Document` Và`DocumentBuilder` các lớp từ Aspose.Words.
+ Hãy bắt đầu bằng cách tạo một tài liệu Word mới. Chúng tôi sẽ sử dụng`Document`Và`DocumentBuilder` các lớp từ Aspose.Words.
 
 ```csharp
 Document doc = new Document();

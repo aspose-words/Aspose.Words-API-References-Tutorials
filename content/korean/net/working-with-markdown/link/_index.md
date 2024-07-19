@@ -51,8 +51,8 @@ builder.InsertHyperlink("Aspose", "https://www.aspose.com", 거짓);
 
 #### Q: Aspose.Words에서 링크의 표시 텍스트를 어떻게 사용자 정의할 수 있나요?
 
-A: Aspose.Words에서 링크의 표시 텍스트를 사용자 정의하려면`<a>` 태그. 예를 들어,`<a href="https://www.aspose.com">Click here</a>` "여기를 클릭하세요"라는 텍스트가 하이퍼링크로 표시됩니다.
+ A: Aspose.Words에서 링크의 표시 텍스트를 사용자 정의하려면`<a>` 태그. 예를 들어,`<a href="https://www.aspose.com">Click here</a>` "여기를 클릭하세요"라는 텍스트가 하이퍼링크로 표시됩니다.
 
 #### Q: Aspose.Words에서 링크 대상을 지정할 수 있나요?
 
- A: 예, Aspose.Words에서 링크 대상을 지정할 수 있습니다.`target` 의 속성`<a>` 꼬리표. 예를 들어,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` 새 창이나 탭에서 링크가 열립니다.
+A: 예, Aspose.Words에서 링크 대상을 지정할 수 있습니다.`target` 의 속성`<a>` 꼬리표. 예를 들어,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` 새 창이나 탭에서 링크가 열립니다.

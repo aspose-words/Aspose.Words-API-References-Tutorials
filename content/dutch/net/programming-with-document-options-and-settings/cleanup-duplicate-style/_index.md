@@ -2,80 +2,119 @@
 title: Dubbele stijl opruimen
 linktitle: Dubbele stijl opruimen
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding om dubbele stijlen in een document op te ruimen met Aspose.Words voor .NET. Volledige broncode inbegrepen.
+description: Leer hoe u dubbele stijlen in uw Word-documenten opruimt met Aspose.Words voor .NET met onze uitgebreide stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-document-options-and-settings/cleanup-duplicate-style/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u stap voor stap door de C#-broncode om dubbele stijlen op te ruimen met Aspose.Words voor .NET. Deze functie helpt bij het verwijderen van dubbele stijlen uit een document.
+Hallo daar, codeerliefhebbers! Bent u ooit verstrikt geraakt in een web van dubbele stijlen terwijl u aan een Word-document werkte? We zijn er allemaal geweest, en het is geen mooi gezicht. Maar maak je geen zorgen, Aspose.Words voor .NET is hier om de dag te redden! In deze zelfstudie duiken we in de kern van het opruimen van dubbele stijlen in uw Word-documenten met Aspose.Words voor .NET. Of u nu een doorgewinterde ontwikkelaar bent of net begint, deze handleiding begeleidt u bij elke stap met duidelijke, eenvoudig te volgen instructies. Laten we dus onze mouwen opstropen en aan de slag gaan!
 
-## Stap 1: Projectconfiguratie
+## Vereisten
 
-Maak om te beginnen een nieuw C#-project in uw favoriete IDE. Zorg ervoor dat er in uw project naar de Aspose.Words voor .NET-bibliotheek wordt verwezen.
+Voordat we aan de slag gaan, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-## Stap 2: Het document laden
+1. Basiskennis van C#: U hoeft geen C#-wizard te zijn, maar een basiskennis van de taal zal nuttig zijn.
+2. Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Zo niet, dan kunt u deze downloaden[hier](https://releases.aspose.com/words/net/).
+3. Ontwikkelomgeving: Een goede ontwikkelomgeving zoals Visual Studio zal uw leven een stuk eenvoudiger maken.
+4. Voorbeelddocument: zorg dat u een voorbeeld van een Word-document (.docx) hebt dat dubbele stijlen bevat, klaar om te testen.
 
-In deze stap laden we het Word-document dat we willen opruimen. Gebruik de volgende code om het document te laden:
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten importeren. Deze stap zorgt ervoor dat je toegang hebt tot alle klassen en methoden die je nodig hebt.
 
 ```csharp
-// Pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Stap 1: Laad uw document
+
+Om te beginnen moet u uw Word-document in uw project laden. Dit is waar uw voorbeelddocument in het spel komt.
+
+1. Geef de documentmap op: definieer het pad naar de map waar uw document is opgeslagen.
+2.  Laad het document: Gebruik de`Document` klasse om uw document te laden.
+
+```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Vervangen`"YOUR DOCUMENTS DIRECTORY"` met het daadwerkelijke pad van de map waar uw document zich bevindt.
+## Stap 2: Tel de stijlen vóór het opruimen
 
-## Stap 3: Tel stijlen voordat u gaat schoonmaken
+Laten we, voordat we gaan opruimen, kijken hoeveel stijlen er momenteel in het document voorkomen. Dit geeft ons een basislijn waarmee we na de opruiming kunnen vergelijken.
 
-Voordat we verder gaan met het opschonen, tellen we het aantal stijlen dat in het document aanwezig is. Gebruik de volgende code om het aantal stijlen weer te geven:
+1.  Toegang tot de stijlencollectie: gebruik de`Styles` eigendom van de`Document` klas.
+2. Druk de stijltelling af: Gebruik`Console.WriteLine` om het aantal stijlen weer te geven.
 
 ```csharp
+// Aantal stijlen vóór Opschonen.
 Console.WriteLine(doc.Styles.Count);
 ```
 
-Deze verklaring geeft het aantal stijlen weer dat in het document aanwezig is.
+## Stap 3: Opruimopties instellen
 
-## Stap 4: Ruim dubbele stijlen op
+Nu is het tijd om de opruimopties te configureren. Dit is waar we Aspose.Words vertellen zich te concentreren op het opruimen van dubbele stijlen.
 
-Laten we nu dubbele stijlen uit het document opruimen. Gebruik de volgende code om het opschonen uit te voeren:
+1.  Maak CleanupOptions: Instantieer het`CleanupOptions` klas.
+2.  Schakel DuplicateStyle Cleanup in: Stel de`DuplicateStyle`eigendom aan`true`.
 
 ```csharp
+// Verwijdert dubbele stijlen uit het document.
 CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
-doc. Cleanup(options);
 ```
 
- Deze code ruimt dubbele stijlen uit het document op met behulp van de opgegeven opties. In dit voorbeeld hebben we de`DuplicateStyle` optie om dubbele stijlen op te ruimen.
+## Stap 4: Voer de opruiming uit
 
-## Stap 5: Tel de stijlen na het schoonmaken
+Nu de opruimopties zijn ingesteld, is het tijd om die vervelende dubbele stijlen op te ruimen.
 
-Na het schoonmaken tellen we het aantal stijlen opnieuw om te controleren of het is afgenomen. Gebruik de volgende code om het aantal nieuwe stijlen weer te geven:
+ Roep de opruimmethode aan: gebruik de`Cleanup` werkwijze van de`Document` klasse, waarbij de opruimopties worden doorgegeven.
 
 ```csharp
+doc.Cleanup(options);
+```
+
+## Stap 5: Tel de stijlen na het opruimen
+
+Laten we het resultaat van onze opruimactie bekijken door de stijlen opnieuw te tellen. Dit laat ons zien hoeveel stijlen zijn verwijderd.
+
+ Druk de nieuwe stijltelling af: Gebruik`Console.WriteLine` om het bijgewerkte aantal stijlen weer te geven.
+
+```csharp
+// Het aantal stijlen na het opruimen is verlaagd.
 Console.WriteLine(doc.Styles.Count);
+```
+
+## Stap 6: Sla het bijgewerkte document op
+
+Sla ten slotte het opgeschoonde document op in de door u opgegeven map.
+
+ Sla het document op: gebruik de`Save` werkwijze van de`Document` klas.
+
+```csharp
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");
 ```
 
-Deze verklaring geeft het aantal resterende stijlen weer na het reinigen.
+## Conclusie
 
-### Voorbeeldbroncode voor het opschonen van dubbele stijl met Aspose.Words voor .NET
+En daar heb je het! U hebt met succes dubbele stijlen uit uw Word-document opgeschoond met Aspose.Words voor .NET. Door deze stappen te volgen, kunt u uw documenten overzichtelijk en overzichtelijk houden, waardoor ze gemakkelijker te beheren zijn en minder gevoelig zijn voor stijlproblemen. Vergeet niet dat de sleutel tot het beheersen van welke tool dan ook oefening is, dus blijf experimenteren met Aspose.Words en ontdek alle krachtige functies die het te bieden heeft.
 
-```csharp
+## Veelgestelde vragen
 
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Document.docx");
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, bewerken, converteren en manipuleren met behulp van .NET-talen.
 
-	// Aantal stijlen vóór Opschonen.
-	Console.WriteLine(doc.Styles.Count);
+### Waarom is het belangrijk om dubbele stijlen in een Word-document op te ruimen?
+Door dubbele stijlen op te ruimen, behoudt u een consistente en professionele uitstraling in uw documenten, wordt de bestandsgrootte kleiner en wordt het document eenvoudiger te beheren.
 
-	// Verwijdert dubbele stijlen uit het document.
-	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
-	doc.Cleanup(options);
+### Kan ik Aspose.Words voor .NET gebruiken met andere .NET-talen dan C#?
+Ja, Aspose.Words voor .NET kan worden gebruikt met elke .NET-taal, inclusief VB.NET en F#.
 
-	//Het aantal stijlen na het opruimen is verlaagd.
-	Console.WriteLine(doc.Styles.Count);
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
+ U kunt gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/).
 
-	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");
-
-```
+### Is er een gratis proefversie beschikbaar voor Aspose.Words voor .NET?
+ Ja, u kunt een gratis proefversie downloaden[hier](https://releases.aspose.com/).

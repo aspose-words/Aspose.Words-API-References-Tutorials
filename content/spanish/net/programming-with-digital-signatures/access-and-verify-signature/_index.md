@@ -2,122 +2,150 @@
 title: Acceder y verificar la firma en un documento de Word
 linktitle: Acceder y verificar la firma en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo acceder y verificar firmas digitales en un documento de Word con Aspose.Words para .NET.
+description: Acceda y verifique firmas digitales en documentos de Word utilizando Aspose.Words para .NET con esta guía completa paso a paso. Garantice la autenticidad de los documentos sin esfuerzo.
 type: docs
 weight: 10
 url: /es/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
-En este tutorial, lo guiaremos a través de los pasos para utilizar la función de verificación de firma y acceso de Aspose.Words para .NET. Esta función le permite acceder a firmas digitales en un documento de Word y verificar su validez. Siga los pasos a continuación:
+## Introducción
 
-## Paso 1: cargar el documento y acceder a las firmas
+¡Hola, compañeros entusiastas de la tecnología! ¿Alguna vez se encontró en una situación en la que necesitaba acceder y verificar firmas digitales en un documento de Word pero no tenía idea de por dónde empezar? ¡Pues estás de suerte! Hoy nos sumergimos en el maravilloso mundo de Aspose.Words para .NET, una poderosa biblioteca que facilita el manejo de documentos de Word. Lo guiaremos a través del proceso paso a paso, de modo que al final de esta guía, será un profesional en la verificación de firmas digitales en documentos de Word. ¡Empecemos!
 
-Comience subiendo el documento que contiene las firmas digitales:
+## Requisitos previos
+
+Antes de profundizar en los detalles esenciales, hay algunas cosas que deberá tener en cuenta:
+
+1. Visual Studio: asegúrese de tener Visual Studio instalado en su máquina. Aquí es donde escribirás y ejecutarás tu código.
+2.  Aspose.Words para .NET: necesitará tener instalado Aspose.Words para .NET. Puedes descargarlo[aquí](https://releases.aspose.com/words/net/) . No olvides obtener tu prueba gratuita[aquí](https://releases.aspose.com/) si aún no lo has hecho!
+3. Un documento de Word firmado digitalmente: tenga un documento de Word que ya esté firmado digitalmente. Este es el archivo con el que trabajará para verificar las firmas.
+
+## Importar espacios de nombres
+
+Primero lo primero, importemos los espacios de nombres necesarios. Estos espacios de nombres le permitirán utilizar las funciones de Aspose.Words en su proyecto.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.DigitalSignatures;
+```
+
+Muy bien, dividamos esto en pasos manejables. Cada paso lo guiará a través de una parte específica del proceso. ¿Listo? ¡Vamos!
+
+## Paso 1: configura tu proyecto
+
+Antes de poder verificar una firma digital, debe configurar su proyecto en Visual Studio. Así es cómo:
+
+### Crear un nuevo proyecto
+
+1. Abra Visual Studio.
+2. Haga clic en Crear un nuevo proyecto.
+3. Seleccione Aplicación de consola (.NET Core) o Aplicación de consola (.NET Framework), según sus preferencias.
+4. Haga clic en Siguiente, asigne un nombre a su proyecto y haga clic en Crear.
+
+### Instalar Aspose.Words para .NET
+
+1. En el Explorador de soluciones, haga clic derecho en el nombre de su proyecto y seleccione Administrar paquetes NuGet.
+2. En el Administrador de paquetes NuGet, busque Aspose.Words.
+3. Haga clic en Instalar para agregarlo a su proyecto.
+
+## Paso 2: cargue el documento de Word firmado digitalmente
+
+Ahora que su proyecto está configurado, carguemos el documento de Word firmado digitalmente.
+
+```csharp
+// La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-## Paso 2: buscar firmas digitales
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos. Este fragmento de código inicializa un nuevo`Document` objeto y carga su documento de Word firmado.
 
-Utilice un bucle para recorrer todas las firmas digitales del documento:
+## Paso 3: acceda a las firmas digitales
+
+Con su documento cargado, es hora de acceder a las firmas digitales.
 
 ```csharp
 foreach (DigitalSignature signature in doc.DigitalSignatures)
 {
-	// Acceder a la información de la firma
-	Console.WriteLine("* Signature Found *");
-	Console.WriteLine("Is valid: " + signature.IsValid);
-	// Esta propiedad sólo está disponible en documentos de MS Word.
-	Console.WriteLine("Reason for signing: " + signature.Comments); 
-	Console.WriteLine("Time of signing: " + signature.SignTime);
-	Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-	Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-	Console.WriteLine();
+    Console.WriteLine("* Signature Found *");
+    Console.WriteLine("Is valid: " + signature.IsValid);
+    Console.WriteLine("Reason for signing: " + signature.Comments); 
+    Console.WriteLine("Time of signing: " + signature.SignTime);
+    Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+    Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+    Console.WriteLine();
 }
 ```
 
-Asegúrese de personalizar los mensajes en pantalla según sus necesidades.
+Este código recorre cada firma digital del documento e imprime varios detalles sobre la firma. Analicemos lo que hace cada parte:
 
-### Código fuente de ejemplo para acceder y verificar firma usando Aspose.Words para .NET
+1. Firma encontrada: Indica que se ha encontrado una firma.
+2. Es válida: Comprueba si la firma es válida.
+3. Motivo de la firma: muestra el motivo de la firma, si está disponible.
+4. Hora de firma: Muestra la marca de tiempo de cuando se firmó el documento.
+5. Nombre del sujeto: recupera el nombre del sujeto del certificado.
+6. Nombre del emisor: recupera el nombre del emisor del certificado.
 
-Aquí está el código fuente completo para el acceso y la verificación de firma usando Aspose.Words para .NET:
+## Paso 4: ejecuta tu código
+
+Con todo configurado, es hora de ejecutar su código y ver los resultados.
+
+
+1. Presione F5 o haga clic en el botón Inicio en Visual Studio para ejecutar su programa.
+2. Si su documento está firmado digitalmente, verá los detalles de la firma impresos en la consola.
+
+## Paso 5: Manejar posibles errores
+
+Siempre es una buena idea controlar cualquier error potencial que pueda ocurrir. Agreguemos algo de manejo de errores básico a nuestro código.
 
 ```csharp
-	
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Digitally signed.docx");
+try
+{
+    // La ruta al directorio de documentos.
+    string dataDir = "YOUR DOCUMENT DIRECTORY";
+    Document doc = new Document(dataDir + "Digitally signed.docx");
 
-	foreach (DigitalSignature signature in doc.DigitalSignatures)
-	{
-		Console.WriteLine("* Signature Found *");
-		Console.WriteLine("Is valid: " + signature.IsValid);
-		// Esta propiedad sólo está disponible en documentos de MS Word.
-		Console.WriteLine("Reason for signing: " + signature.Comments); 
-		Console.WriteLine("Time of signing: " + signature.SignTime);
-		Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-		Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-		Console.WriteLine();
-	}
-
+    foreach (DigitalSignature signature in doc.DigitalSignatures)
+    {
+        Console.WriteLine("* Signature Found *");
+        Console.WriteLine("Is valid: " + signature.IsValid);
+        Console.WriteLine("Reason for signing: " + signature.Comments); 
+        Console.WriteLine("Time of signing: " + signature.SignTime);
+        Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+        Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+        Console.WriteLine();
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine("An error occurred: " + ex.Message);
+}
 ```
 
-Si sigue estos pasos, podrá acceder y verificar fácilmente las firmas digitales en su documento de Word con Aspose.Words para .NET.
+Esto detectará cualquier excepción que pueda ocurrir e imprimirá un mensaje de error.
 
 ## Conclusión
 
-En este tutorial, exploramos la función de acceder y verificar firmas digitales en un documento de Word usando Aspose.Words para .NET. Siguiendo los pasos proporcionados, puede cargar fácilmente un documento, acceder a sus firmas digitales y verificar su validez. La capacidad de acceder y verificar firmas digitales proporciona una forma de garantizar la integridad y autenticidad de sus documentos de Word. Aspose.Words para .NET ofrece una potente API para procesamiento de textos con firmas digitales, lo que le permite automatizar el proceso de verificación y mejorar la seguridad de sus documentos.
+¡Y ahí lo tienes! Ha accedido y verificado con éxito las firmas digitales en un documento de Word utilizando Aspose.Words para .NET. No es tan intimidante como parece, ¿verdad? Con estos pasos, podrá manejar con confianza las firmas digitales en sus documentos de Word, garantizando su autenticidad e integridad. ¡Feliz codificación!
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 
-#### P: ¿Qué son las firmas digitales en un documento de Word?
+### ¿Puedo usar Aspose.Words para .NET para agregar firmas digitales a un documento de Word?
 
-R: Las firmas digitales en un documento de Word son firmas electrónicas que brindan una forma de autenticar la integridad y el origen del documento. Se crean mediante certificados digitales y algoritmos criptográficos, lo que permite a los destinatarios verificar que el documento no ha sido alterado y que proviene de una fuente confiable.
+Sí, puede utilizar Aspose.Words para .NET para agregar firmas digitales a documentos de Word. La biblioteca proporciona funciones integrales para agregar y verificar firmas digitales.
 
-#### P: ¿Cómo puedo acceder a firmas digitales en un documento de Word usando Aspose.Words para .NET?
+### ¿Qué tipos de firmas digitales puede verificar Aspose.Words para .NET?
 
-R: Para acceder a firmas digitales en un documento de Word usando Aspose.Words para .NET, puede seguir estos pasos:
-1.  Cargue el documento usando el`Document` clase y especifique la ruta al archivo del documento.
-2.  Utilice un bucle para recorrer el`DigitalSignatures` recogida del documento. Cada iteración representa una firma digital.
+Aspose.Words para .NET puede verificar firmas digitales en archivos DOCX que utilizan certificados X.509.
 
-#### P: ¿A qué información puedo acceder desde una firma digital en un documento de Word?
+### ¿Aspose.Words para .NET es compatible con todas las versiones de Microsoft Word?
 
-R: Desde una firma digital en un documento de Word, se puede acceder a diversa información, como por ejemplo:
-- Validez: Compruebe si la firma es válida.
-- Comentarios: Obtenga el motivo de la firma especificado por el firmante.
-- Hora de firma: Obtenga la hora en que se firmó el documento.
-- Nombre del sujeto: recupere el nombre del firmante o del sujeto del certificado.
-- Nombre del emisor: obtenga el nombre del emisor del certificado.
+Aspose.Words para .NET admite todas las versiones de documentos de Microsoft Word, incluidos DOC, DOCX, RTF y más.
 
-#### P: ¿Puedo verificar la validez de una firma digital en un documento de Word usando Aspose.Words para .NET?
+### ¿Cómo obtengo una licencia temporal de Aspose.Words para .NET?
 
- R: Sí, puede verificar la validez de una firma digital en un documento de Word utilizando Aspose.Words para .NET. Al acceder al`IsValid` propiedad de la`DigitalSignature` objeto, puede determinar si la firma es válida o no.
+ Puede obtener una licencia temporal de Aspose.Words para .NET en[aquí](https://purchase.aspose.com/temporary-license/). Esto le permite probar todas las funciones de la biblioteca sin ninguna limitación.
 
-#### P: ¿Cómo puedo verificar la validez de las firmas digitales en un documento de Word usando Aspose.Words para .NET?
+### ¿Dónde puedo encontrar más documentación sobre Aspose.Words para .NET?
 
-R: Para verificar la validez de las firmas digitales en un documento de Word usando Aspose.Words para .NET, puede seguir estos pasos:
-1.  Acceder al`DigitalSignatures` recogida del documento.
-2.  Iterar a través de cada`DigitalSignature` objeto de la colección.
-3.  Utilizar el`IsValid` propiedad de la`DigitalSignature` objeto de comprobar si la firma es válida.
-
-#### P: ¿Puedo recuperar los comentarios del firmante o el motivo de la firma a partir de una firma digital en un documento de Word?
-
-R: Sí, puede recuperar los comentarios del firmante o el motivo de la firma desde una firma digital en un documento de Word. El`Comments` propiedad de la`DigitalSignature` El objeto proporciona acceso a los comentarios especificados por el firmante durante el proceso de firma.
-
-#### P: ¿Qué tipo de documentos admite la función de verificación de firma en Aspose.Words para .NET?
-
-R: La función de verificación de firma en Aspose.Words para .NET admite la verificación de firmas digitales en documentos de Word con el formato de archivo DOCX. Puede utilizar esta función para verificar firmas en archivos DOCX.
-
-#### P: ¿Cómo puedo acceder a los detalles del certificado de una firma digital en un documento de Word usando Aspose.Words para .NET?
-
- R: Para acceder a los detalles del certificado de una firma digital en un documento de Word usando Aspose.Words para .NET, puede acceder al`CertificateHolder` propiedad de la`DigitalSignature` objeto. Desde el`CertificateHolder` objeto, puede recuperar varios detalles del certificado, como el nombre del sujeto y el nombre del emisor.
-
-#### P: ¿Puedo personalizar la visualización o el procesamiento de firmas digitales en un documento de Word usando Aspose.Words para .NET?
-
- R: Sí, puede personalizar la visualización o el procesamiento de firmas digitales en un documento de Word utilizando Aspose.Words para .NET. Accediendo a las propiedades y métodos del`DigitalSignature` objeto, puede extraer la información deseada, realizar validaciones adicionales o integrar el proceso de verificación de firma en el flujo de trabajo de su aplicación.
-
-#### P: ¿Es posible verificar varias firmas digitales en un documento de Word usando Aspose.Words para .NET?
-
- R: Sí, es posible verificar varias firmas digitales en un documento de Word utilizando Aspose.Words para .NET. Al iterar a través del`DigitalSignatures` recogida del documento, podrá acceder y verificar cada firma digital de forma individual.
-
+ Puede encontrar documentación detallada para Aspose.Words para .NET[aquí](https://reference.aspose.com/words/net/).

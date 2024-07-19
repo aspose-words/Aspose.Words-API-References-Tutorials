@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Mengganti`"Your Document Directory"` Dan`"Your Output Directory"` dengan jalur yang sesuai.
+ Mengganti`"Your Document Directory"`Dan`"Your Output Directory"` dengan jalur yang sesuai.
 
 ## 4. Menyesuaikan Penggabungan Surat
 

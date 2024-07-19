@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Passaggio 3: vai alla cella da modificare
- Per modificare la formattazione di una cella, dobbiamo accedere alla cella specifica nella tabella. Noi usiamo il`GetChild()` E`FirstRow.FirstCell` metodi per ottenere il riferimento alla prima cella del primo array.
+ Per modificare la formattazione di una cella, dobbiamo accedere alla cella specifica nella tabella. Noi usiamo il`GetChild()`E`FirstRow.FirstCell` metodi per ottenere il riferimento alla prima cella del primo array.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

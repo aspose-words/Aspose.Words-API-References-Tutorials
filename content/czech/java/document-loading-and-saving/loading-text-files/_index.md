@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- V tomto příkladu načteme textový dokument a ořízneme úvodní a koncové mezery pomocí`TxtLeadingSpacesOptions.TRIM` a`TxtTrailingSpacesOptions.TRIM`.
+ V tomto příkladu načteme textový dokument a ořízneme úvodní a koncové mezery pomocí`TxtLeadingSpacesOptions.TRIM`a`TxtTrailingSpacesOptions.TRIM`.
 
 ## Krok 3: Ovládání směru textu
 
@@ -179,7 +179,7 @@ Chcete-li začít s Aspose.Words pro Java, postupujte takto:
 
 ### Jak zacházím s mezerami v načtených textových dokumentech?
 
- Pomocí můžete ovládat, jak se zachází s úvodními a koncovými mezerami v načtených textových dokumentech`TxtLoadOptions` . Možnosti jako`TxtLeadingSpacesOptions` a`TxtTrailingSpacesOptions`umožňují oříznout nebo zachovat místa podle potřeby. Příklad naleznete v části „Možnosti manipulace s prostory“ v této příručce.
+ Pomocí můžete ovládat, jak se zachází s úvodními a koncovými mezerami v načtených textových dokumentech`TxtLoadOptions` . Možnosti jako`TxtLeadingSpacesOptions`a`TxtTrailingSpacesOptions`umožňují oříznout nebo zachovat místa podle potřeby. Příklad naleznete v části „Možnosti manipulace s prostory“ v této příručce.
 
 ### Jaký je význam směrování textu v Aspose.Words pro Javu?
 

@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Bước 2: Áp dụng kiểu văn bản gạch ngang
 
-Chúng tôi sẽ kích hoạt kiểu văn bản gạch ngang bằng cách đặt`StrikeThrough` tài sản của`Font` chủ đề`true`.
+ Chúng tôi sẽ kích hoạt kiểu văn bản gạch ngang bằng cách đặt`StrikeThrough` tài sản của`Font` chủ đề`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

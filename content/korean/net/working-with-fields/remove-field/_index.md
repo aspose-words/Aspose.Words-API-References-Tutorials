@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 
 #### Q: .NET용 Aspose.Words를 사용하여 Word 문서에서 필드를 어떻게 삭제할 수 있나요?
 
- A: .NET용 Aspose.Words를 사용하여 Word 문서에서 필드를 제거하려면 다음을 사용하여 문서의 필드를 반복할 수 있습니다.`FieldStart` 클래스를 사용하고`FieldStart.Remove`필드를 제거하는 방법입니다.
+ A: .NET용 Aspose.Words를 사용하여 Word 문서에서 필드를 제거하려면 다음을 사용하여 문서의 필드를 반복할 수 있습니다.`FieldStart` 클래스를 사용하고`FieldStart.Remove` 필드를 제거하는 방법입니다.
 
 #### Q: Aspose.Words for .NET을 사용하여 Word 문서에서 특정 필드만 삭제할 수 있습니까?
 

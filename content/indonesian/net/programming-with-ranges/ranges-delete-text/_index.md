@@ -75,7 +75,7 @@ J: Aspose.Words for .NET adalah perpustakaan yang kuat untuk Pemrosesan Kata den
 
 #### T: Bagaimana cara memuat dokumen Word menggunakan Aspose.Words untuk .NET?
 
-J: Untuk memuat dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document` kelas dan konstruktornya. Anda perlu menyediakan jalur file atau aliran dokumen sebagai parameter. Berikut ini contohnya:
+ J: Untuk memuat dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document` kelas dan konstruktornya. Anda perlu menyediakan jalur file atau aliran dokumen sebagai parameter. Berikut ini contohnya:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

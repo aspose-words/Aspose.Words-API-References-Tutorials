@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3단계: 수정할 셀로 이동
- 셀의 서식을 변경하려면 테이블의 특정 셀로 이동해야 합니다. 우리는`GetChild()` 그리고`FirstRow.FirstCell` 첫 번째 배열의 첫 번째 셀에 대한 참조를 가져오는 메서드입니다.
+ 셀의 서식을 변경하려면 테이블의 특정 셀로 이동해야 합니다. 우리는`GetChild()`그리고`FirstRow.FirstCell` 첫 번째 배열의 첫 번째 셀에 대한 참조를 가져오는 메서드입니다.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

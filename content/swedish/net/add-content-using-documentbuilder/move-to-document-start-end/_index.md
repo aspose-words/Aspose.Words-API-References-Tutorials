@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Här skapar vi en instans av`Document` och`DocumentBuilder` . Tänk på`Document` som ditt tomma Word-dokument och`DocumentBuilder` som din penna.
+ Här skapar vi en instans av`Document`och`DocumentBuilder` . Tänk på`Document` som ditt tomma Word-dokument och`DocumentBuilder` som din penna.
 
 ## Steg 2: Flytta till dokumentstarten
 

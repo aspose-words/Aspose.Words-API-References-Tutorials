@@ -2,156 +2,133 @@
 title: Word 문서에서 북마크된 콘텐츠 숨기기 표시
 linktitle: Word 문서에서 북마크된 콘텐츠 숨기기 표시
 second_title: Aspose.Words 문서 처리 API
-description: 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 북마크된 콘텐츠를 동적으로 표시하거나 숨기는 방법을 알아보세요.
+description: 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 북마크된 콘텐츠를 표시하고 숨기는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
-
 ## 소개
 
-안녕하세요! 특정 조건에 따라 Word 문서 내 특정 콘텐츠의 표시 여부를 제어하고 싶었던 적이 있습니까? .NET용 Aspose.Words를 사용하면 단 몇 줄의 코드만으로 북마크된 콘텐츠를 동적으로 표시하거나 숨길 수 있습니다. 이 튜토리얼에서는 프로세스를 단계별로 안내하여 코드의 각 부분을 이해할 수 있도록 하겠습니다. 결국, 당신은 Word 문서에서 책갈피를 조작하는 전문가가 될 것입니다. 시작하자!
+.NET용 Aspose.Words를 사용하여 문서 조작의 세계로 뛰어들 준비가 되셨습니까? 문서 작업을 자동화하려는 개발자이거나 프로그래밍 방식으로 Word 파일을 처리하는 데 궁금한 사람이라면 올바른 위치에 있습니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서에서 북마크된 콘텐츠를 표시하고 숨기는 방법을 살펴보겠습니다. 이 단계별 가이드를 통해 북마크를 기반으로 콘텐츠 가시성을 제어하는 전문가가 될 수 있습니다. 시작하자!
 
 ## 전제조건
 
-튜토리얼을 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
+핵심적인 내용으로 넘어가기 전에 필요한 몇 가지 사항이 있습니다.
 
-1. C# 기본 지식: C# 구문과 개념에 익숙해야 합니다.
-2.  .NET용 Aspose.Words: 다운로드[여기](https://releases.aspose.com/words/net/) . 구매할 준비가 되지 않았다면 다음 단계로 시작해 보세요.[무료 시험판](https://releases.aspose.com/).
-3. Visual Studio: 모든 최신 버전이 작동하지만 최신 버전을 사용하는 것이 좋습니다.
-4. .NET Framework: 컴퓨터에 설치되어 있는지 확인하세요.
-
-시작할 준비가 되셨나요? 엄청난! 필요한 네임스페이스를 가져오는 것부터 시작해 보겠습니다.
+1. Visual Studio: .NET과 호환되는 모든 버전.
+2.  .NET용 Aspose.Words: 다운로드[여기](https://releases.aspose.com/words/net/).
+3. C#의 기본 이해: 간단한 "Hello World" 프로그램을 작성할 수 있다면 좋습니다.
+4. 책갈피가 있는 Word 문서: 이 튜토리얼에서는 책갈피가 있는 샘플 문서를 사용합니다.
 
 ## 네임스페이스 가져오기
 
-.NET용 Aspose.Words를 사용하려면 필수 네임스페이스를 가져와야 합니다. 이 단계에서는 우리가 사용할 모든 클래스와 메서드에 액세스할 수 있는지 확인합니다.
+먼저 필요한 네임스페이스를 가져오겠습니다. 이를 통해 작업에 필요한 모든 도구를 확보할 수 있습니다.
 
 ```csharp
 using System;
 using Aspose.Words;
-using Aspose.Words.Fields;
+using Aspose.Words.Bookmark;
 ```
 
-이러한 네임스페이스는 Word 문서로 작업하고 해당 내용을 조작하는 데 중요합니다.
+이러한 네임스페이스가 준비되면 우리 모두 여행을 시작할 준비가 된 것입니다.
 
-## 1단계: 문서 설정
+## 1단계: 프로젝트 설정
 
-먼저 새 Word 문서와 문서 작성기를 만들어 보겠습니다. 문서 빌더를 사용하면 문서 내의 콘텐츠를 쉽게 추가하고 조작할 수 있습니다.
+자, Visual Studio에서 프로젝트를 설정하여 시작하겠습니다.
+
+### 새 프로젝트 만들기
+
+Visual Studio를 열고 새 콘솔 앱(.NET Core) 프로젝트를 만듭니다. "BookmarkVisibilityManager"와 같이 눈에 띄는 이름을 지정하십시오.
+
+### .NET용 Aspose.Words 추가
+
+프로젝트에 .NET용 Aspose.Words를 추가해야 합니다. NuGet 패키지 관리자를 통해 이 작업을 수행할 수 있습니다.
+
+1. 도구 > NuGet 패키지 관리자 > 솔루션용 NuGet 패키지 관리로 이동합니다.
+2. "Aspose.Words"를 검색하세요.
+3. 패키지를 설치합니다.
+
+엄청난! 이제 프로젝트가 설정되었으므로 문서를 로드해 보겠습니다.
+
+## 2단계: 문서 로드
+
+북마크가 포함된 Word 문서를 로드해야 합니다. 이 튜토리얼에서는 "Bookmarks.docx"라는 샘플 문서를 사용합니다.
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+// 문서 디렉터리의 경로입니다.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-이 단계에서는 새 문서와 문서 작성기를 초기화합니다. 이는 추가 작업을 위한 환경을 설정합니다.
+ 이 코드 조각은 문서 디렉터리의 경로를 설정하고 문서를`doc` 물체.
 
-## 2단계: 북마크된 콘텐츠 추가
+## 3단계: 북마크된 콘텐츠 표시/숨기기
 
-다음으로 문서에 일부 내용을 추가하고 그 주위에 책갈피를 만듭니다. 이 북마크는 콘텐츠를 식별하고 조작하는 데 도움이 됩니다.
+이제 재미있는 부분이 나옵니다. 북마크를 기반으로 콘텐츠를 표시하거나 숨기는 것입니다. 우리는`ShowHideBookmarkedContent` 이것을 처리하기 위해.
 
-```csharp
-builder.Write("This is some text before the bookmark.");
-builder.StartBookmark("MyBookmark");
-builder.Write("This is the bookmarked content.");
-builder.EndBookmark("MyBookmark");
-builder.Write("This is some text after the bookmark.");
-```
-
- 여기서는 북마크된 콘텐츠 앞뒤에 텍스트를 추가합니다. 그만큼`StartBookmark` 그리고`EndBookmark` 메소드는 북마크의 경계를 정의합니다.
-
-## 3단계: 조건부 필드 삽입
-
-북마크된 콘텐츠의 가시성을 제어하기 위해 조건부 필드를 사용하겠습니다. 이 필드는 조건을 확인하고 그에 따라 내용을 표시하거나 숨깁니다.
+북마크된 콘텐츠의 표시 여부를 전환하는 방법은 다음과 같습니다.
 
 ```csharp
-builder.MoveToDocumentEnd();
-Field field = builder.InsertField("IF \"", null);
-builder.MoveTo(field.Start.NextSibling);
-builder.InsertField("MERGEFIELD MyBookmark", null);
-builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
-```
-
-이 단계에서는 북마크 값을 확인하는 IF 필드를 삽입합니다. 값이 "true"이면 "Visible"이 표시됩니다. 그렇지 않으면 "숨김"이 표시됩니다.
-
-## 4단계: 노드 재배열
-
-다음으로 조건부 논리가 북마크된 콘텐츠에 올바르게 적용되도록 노드를 다시 정렬해야 합니다.
-
-```csharp
-Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
-Node currentNode = field.Start;
-bool flag = true;
-
-while (currentNode != null && flag)
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool isHidden)
 {
-    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-        flag = false;
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-    currentNode = nextNode;
-}
-
-Node endNode = bm.BookmarkEnd;
-flag = true;
-
-while (currentNode != null && flag)
-{
-    if (currentNode.NodeType == NodeType.FieldEnd)
-        flag = false;
-
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-    endNode = currentNode;
-    currentNode = nextNode;
+    Node currentNode = bm.BookmarkStart;
+    while (currentNode != null && currentNode.NodeType != NodeType.BookmarkEnd)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+        {
+            Run run = currentNode as Run;
+            run.Font.Hidden = isHidden;
+        }
+        currentNode = currentNode.NextSibling;
+    }
 }
 ```
 
-여기서는 조건이 북마크된 콘텐츠를 올바르게 포함하는지 확인하기 위해 노드를 이동합니다.
+### 방법의 분석
 
-## 5단계: 메일 병합 실행
+-  북마크 검색:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` 북마크를 가져옵니다.
+- 노드 순회: 북마크 내의 노드를 순회합니다.
+-  가시성 토글: 노드가`Run` (연속적인 텍스트 실행)`Hidden` 재산.
 
-마지막으로 메일 병합을 실행하여 북마크 값을 설정하고 콘텐츠를 표시할지 숨길지 결정합니다.
+## 4단계: 방법 적용
 
-```csharp
-doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
-```
-
-이 단계에서는 북마크 값을 "true"로 설정하여 조건에 따라 콘텐츠를 표시합니다.
-
-## 6단계: 문서 저장
-
-모든 조작이 끝나면 마지막 단계는 수정된 문서를 저장하는 것입니다.
+우리의 방법을 적용하여 북마크를 기반으로 콘텐츠를 표시하거나 숨기도록 하겠습니다.
 
 ```csharp
-doc.Save("ShowHideBookmarkedContent.docx");
+ShowHideBookmarkedContent(doc, "MyBookmark1", true);
 ```
 
-여기에서는 변경 사항을 나타내기 위해 설명적인 파일 이름으로 문서를 저장합니다.
+이 코드 줄은 "MyBookmark1"이라는 책갈피 내의 콘텐츠를 숨깁니다.
+
+## 5단계: 문서 저장
+
+마지막으로 수정된 문서를 저장해 보겠습니다.
+
+```csharp
+doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
+```
+
+그러면 변경한 내용이 포함된 문서가 저장됩니다.
 
 ## 결론
 
- 그리고 그게 다야! Aspose.Words for .NET을 사용하여 Word 문서에서 북마크된 콘텐츠를 표시하거나 숨기는 방법을 성공적으로 배웠습니다. 이 튜토리얼에서는 문서 작성, 북마크 추가, 조건 필드 삽입, 노드 재배치 및 메일 병합 실행을 다루었습니다. Aspose.Words는 다양한 기능을 제공하므로 주저하지 말고[API 문서](https://reference.aspose.com/words/net/) 더 발전된 기능을 위해.
+그리고 거기에 있습니다! Aspose.Words for .NET을 사용하여 Word 문서에서 북마크된 콘텐츠를 표시하고 숨기는 방법을 배웠습니다. 이 강력한 도구를 사용하면 보고서를 자동화하거나, 템플릿을 만들거나, Word 파일을 만지작거리는 등 문서를 쉽게 조작할 수 있습니다. 즐거운 코딩하세요!
 
-## 자주 묻는 질문
+## FAQ
 
-### 1. .NET용 Aspose.Words란 무엇입니까?
+### 여러 북마크를 한 번에 전환할 수 있나요?
+ 예, 전화로 문의하실 수 있습니다.`ShowHideBookmarkedContent` 전환하려는 각 북마크에 대한 메서드입니다.
 
-Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 수정 및 변환할 수 있는 강력한 라이브러리입니다. 문서 자동화 작업에 널리 사용됩니다.
+### 콘텐츠를 숨기면 문서 구조에 영향을 미치나요?
+아니요. 콘텐츠를 숨기면 공개 여부에만 영향을 미칩니다. 내용은 문서에 남아 있습니다.
 
-### 2. Aspose.Words for .NET을 무료로 사용할 수 있나요?
+### 다른 유형의 콘텐츠에 이 방법을 사용할 수 있나요?
+이 방법은 특히 텍스트 실행을 전환합니다. 다른 콘텐츠 유형의 경우 노드 순회 논리를 수정해야 합니다.
 
- 다음을 사용하여 .NET용 Aspose.Words를 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구입해야 합니다.
+### .NET용 Aspose.Words는 무료인가요?
+ Aspose.Words는 무료 평가판을 제공합니다[여기](https://releases.aspose.com/) , 그러나 프로덕션 용도로 사용하려면 정식 라이센스가 필요합니다. 구매하시면 됩니다[여기](https://purchase.aspose.com/buy).
 
-### 3. 북마크의 다른 속성을 수정하려면 어떻게 해야 합니까?
-
- Aspose.Words를 사용하면 텍스트 및 위치와 같은 책갈피의 다양한 속성을 조작할 수 있습니다. 다음을 참조하세요.[API 문서](https://reference.aspose.com/words/net/) 자세한 지침을 보려면.
-
-### 4. .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
-
-방문하시면 지원을 받으실 수 있습니다.[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).
-
-### 5. Aspose.Words for .NET으로 다른 유형의 콘텐츠를 조작할 수 있나요?
-
-예, Aspose.Words for .NET은 텍스트, 이미지, 표 등을 포함한 다양한 유형의 콘텐츠 조작을 지원합니다.
+### 문제가 발생하면 어떻게 지원을 받을 수 있나요?
+ Aspose 커뮤니티에서 지원을 받을 수 있습니다[여기](https://forum.aspose.com/c/words/8).

@@ -56,7 +56,7 @@ Sekarang, mari muat dokumen PDF ke dalam proyek kita menggunakan Aspose.Words.
 Document doc = new Document(dataDir + "Pdf Document.pdf");
 ```
 
- Di sini, kita membuat sebuah instance dari`Document`kelas dan meneruskan jalur file PDF kita ke sana. Tindakan ini memuat PDF ke dalam memori, siap untuk dikonversi.
+ Di sini, kita membuat sebuah instance dari`Document` kelas dan meneruskan jalur file PDF kita ke sana. Tindakan ini memuat PDF ke dalam memori, siap untuk dikonversi.
 
 ## Langkah 3: Menyimpan PDF sebagai Dokumen Word
 

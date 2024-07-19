@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Číslování stránek
 
- Čísla stránek můžete zahrnout do záhlaví a zápatí pomocí polí jako`PAGE` a`NUMPAGES`. Tato pole se automaticky aktualizují, když přidáváte nebo odebíráte stránky.
+ Čísla stránek můžete zahrnout do záhlaví a zápatí pomocí polí jako`PAGE`a`NUMPAGES`. Tato pole se automaticky aktualizují, když přidáváte nebo odebíráte stránky.
 
 ## 9. Informace o autorských právech v zápatí
 

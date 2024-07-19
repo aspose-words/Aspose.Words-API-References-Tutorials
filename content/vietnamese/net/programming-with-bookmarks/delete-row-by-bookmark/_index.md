@@ -2,67 +2,91 @@
 title: Xóa hàng theo dấu trang trong tài liệu Word
 linktitle: Xóa hàng theo dấu trang trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách xóa một hàng trong bảng dựa trên một dấu trang cụ thể trong tài liệu word bằng Aspose.Words for .NET.
+description: Tìm hiểu cách xóa một hàng bằng dấu trang trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để quản lý tài liệu hiệu quả.
 type: docs
 weight: 10
 url: /vi/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
+## Giới thiệu
 
-Trong bài viết này, chúng ta sẽ khám phá mã nguồn C# ở trên để hiểu cách sử dụng hàm Xóa hàng theo dấu trang trong thư viện Aspose.Words cho .NET. Tính năng này cho phép bạn xóa một hàng trong bảng dựa trên một dấu trang cụ thể trong tài liệu word.
+Việc xóa một hàng theo dấu trang trong tài liệu Word nghe có vẻ phức tạp, nhưng với Aspose.Words dành cho .NET, điều đó thật dễ dàng. Hướng dẫn này sẽ hướng dẫn bạn mọi thứ bạn cần biết để hoàn thành nhiệm vụ này một cách hiệu quả. Sẵn sàng để đi sâu vào? Bắt đầu nào!
 
 ## Điều kiện tiên quyết
 
-- Kiến thức cơ bản về ngôn ngữ C#.
-- Môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+Trước khi chúng tôi chuyển sang mã, hãy đảm bảo bạn có những điều sau:
 
-## Bước 1: Lấy dấu trang
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Bạn có thể tải nó xuống từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Visual Studio hoặc bất kỳ IDE nào khác hỗ trợ phát triển .NET.
+- Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ giúp bạn làm theo hướng dẫn.
 
- Chúng tôi sử dụng`Bookmarks` thuộc tính của phạm vi tài liệu để lấy dấu trang cụ thể mà chúng tôi muốn sử dụng để xóa hàng trong bảng:
+## Nhập không gian tên
+
+Để bắt đầu, bạn cần nhập các không gian tên cần thiết. Các không gian tên này cung cấp các lớp và phương thức cần thiết để làm việc với tài liệu Word trong Aspose.Words.
 
 ```csharp
-Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Bước 2: Xóa hàng của bảng
+Hãy chia nhỏ quy trình thành các bước có thể quản lý được. Mỗi bước sẽ được giải thích chi tiết để đảm bảo bạn hiểu cách xóa một hàng bằng dấu trang trong tài liệu Word của mình.
 
- Chúng tôi sử dụng`GetAncestor` phương pháp để có được`Row` gõ phần tử cha của dấu trang. Tiếp theo, chúng tôi sử dụng`Remove` phương pháp để loại bỏ hàng bảng:
+## Bước 1: Tải tài liệu
+
+Trước tiên, bạn cần tải tài liệu Word có chứa dấu trang. Tài liệu này sẽ là tài liệu mà bạn muốn xóa một hàng.
+
+```csharp
+Document doc = new Document("your-document.docx");
+```
+
+## Bước 2: Tìm dấu trang
+
+Tiếp theo, xác định vị trí dấu trang trong tài liệu. Dấu trang sẽ giúp bạn xác định hàng cụ thể mà bạn muốn xóa.
+
+```csharp
+Bookmark bookmark = doc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## Bước 3: Xác định hàng
+
+ Khi đã có dấu trang, bạn cần xác định hàng chứa dấu trang. Điều này liên quan đến việc điều hướng đến tổ tiên của dấu trang, thuộc loại`Row`.
 
 ```csharp
 Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+```
+
+## Bước 4: Xóa hàng
+
+Bây giờ bạn đã xác định được hàng, bạn có thể tiến hành xóa nó khỏi tài liệu. Đảm bảo xử lý mọi giá trị null tiềm năng để tránh trường hợp ngoại lệ.
+
+```csharp
 row?.Remove();
 ```
 
-### Mã nguồn mẫu cho Xóa hàng theo dấu trang bằng Aspose.Words cho .NET
+## Bước 5: Lưu tài liệu
 
-Đây là mã nguồn mẫu đầy đủ để minh họa việc xóa một hàng trong bảng dựa trên một dấu trang cụ thể bằng Aspose.Words cho .NET:
+Sau khi xóa hàng, hãy lưu tài liệu để phản ánh các thay đổi. Điều này sẽ hoàn tất quá trình xóa một hàng bằng dấu trang.
 
 ```csharp
-
-	Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
-
-	Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
-	row?.Remove();
-        
+doc.Save("output-document.docx");
 ```
 
 ## Phần kết luận
 
-Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu cách sử dụng chức năng Xóa hàng theo dấu trang của Aspose.Words cho .NET. Chúng tôi đã làm theo hướng dẫn từng bước để xóa một hàng trong bảng dựa trên một dấu trang cụ thể trong tài liệu.
+Và bạn có nó rồi đấy! Xóa một hàng bằng dấu trang trong tài liệu Word bằng Aspose.Words for .NET thật đơn giản khi bạn chia nó thành các bước đơn giản. Phương pháp này đảm bảo bạn có thể nhắm mục tiêu và xóa chính xác các hàng dựa trên dấu trang, giúp công việc quản lý tài liệu của bạn hiệu quả hơn.
 
-### Câu hỏi thường gặp về xóa hàng theo dấu trang trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Tôi có thể xóa nhiều hàng bằng cùng một dấu trang không?
+### Tôi có thể xóa nhiều hàng bằng dấu trang không?
+Có, bạn có thể xóa nhiều hàng bằng cách lặp lại nhiều dấu trang và áp dụng cùng một phương pháp.
 
-Đáp: Có, bạn có thể xóa nhiều hàng bằng cùng một dấu trang. Tuy nhiên, bạn cần xử lý logic trong mã của mình để xác định số hàng cần xóa và thực hiện các điều chỉnh cần thiết đối với đoạn mã được cung cấp.
+### Điều gì xảy ra nếu không tìm thấy dấu trang?
+ Nếu không tìm thấy dấu trang,`row` biến sẽ là null và`Remove` phương thức sẽ không được gọi, ngăn ngừa bất kỳ lỗi nào.
 
-#### Hỏi: Điều gì xảy ra nếu dấu trang không tồn tại trong tài liệu?
+### Tôi có thể hoàn tác việc xóa sau khi lưu tài liệu không?
+Sau khi tài liệu được lưu, các thay đổi sẽ là vĩnh viễn. Đảm bảo giữ một bản sao lưu nếu bạn cần hoàn tác các thay đổi.
 
-Đáp: Nếu dấu trang được chỉ định không tồn tại trong tài liệu, đoạn mã sẽ trả về giá trị rỗng cho đối tượng dấu trang. Do đó, bạn cần xử lý tình huống này trong mã của mình bằng cách thêm các bước kiểm tra thích hợp trước khi cố gắng xóa hàng của bảng.
+### Có thể xóa một hàng dựa trên các tiêu chí khác không?
+Có, Aspose.Words for .NET cung cấp nhiều phương pháp khác nhau để điều hướng và thao tác các thành phần tài liệu dựa trên các tiêu chí khác nhau.
 
-#### Câu hỏi: Thư viện Aspose.Words có được sử dụng miễn phí không?
-
- Trả lời: Thư viện Aspose.Words là thư viện thương mại và bạn có thể cần có giấy phép hợp lệ để sử dụng nó trong các dự án của mình. Bạn có thể ghé thăm[Aspose.Words cho tài liệu tham khảo API .NET](https://reference.aspose.com/words/net/) để tìm hiểu thêm về các tùy chọn cấp phép và giá cả của họ.
-
-#### Hỏi: Tôi có thể xóa các hàng khỏi bảng trong một phần cụ thể của tài liệu Word không?
-
-Đáp: Có, bạn có thể xóa các hàng khỏi bảng trong một phần cụ thể của tài liệu Word. Bạn có thể sửa đổi đoạn mã được cung cấp để nhắm mục tiêu một phần cụ thể bằng cách sử dụng phạm vi hoặc dấu trang thích hợp trong phần đó.
+### Phương pháp này có áp dụng được cho tất cả các loại tài liệu Word không?
+Phương pháp này hoạt động đối với các tài liệu tương thích với Aspose.Words for .NET. Đảm bảo định dạng tài liệu của bạn được hỗ trợ.

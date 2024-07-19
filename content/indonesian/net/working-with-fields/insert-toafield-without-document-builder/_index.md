@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### T: Bagaimana cara menyesuaikan tampilan bidang TOA yang disisipkan dalam dokumen Word dengan Aspose.Words untuk .NET?
 
-J: Anda dapat menyesuaikan tampilan bidang TOA yang disisipkan dengan menggunakan properti`FieldTOA` objek untuk menentukan opsi pemformatan.
+ J: Anda dapat menyesuaikan tampilan bidang TOA yang disisipkan dengan menggunakan properti`FieldTOA` objek untuk menentukan opsi pemformatan.
 
 #### T: Dapatkah saya menambahkan beberapa bidang TOA dalam satu dokumen Word menggunakan Aspose.Words untuk .NET?
 

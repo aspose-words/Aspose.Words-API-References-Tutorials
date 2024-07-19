@@ -26,7 +26,7 @@ DocumentBuilder builder = new DocumentBuilder();
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 ```
 
-Aquí utilizamos la condición "1=1" como ejemplo, pero puede personalizar la condición según sea necesario.
+Aquí usamos la condición "1=1" como ejemplo, pero puede personalizar la condición según sea necesario.
 
 ## Paso 3: evaluar la condición IF
 
@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // Inserte el campo SI en el documento.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//Evalúe la condición SI.
+// Evalúe la condición SI.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // Mostrar el resultado de la evaluación.
@@ -79,7 +79,7 @@ R: Para actualizar una condición IF en un documento de Word con Aspose.Words, p
 
 #### P: ¿Qué tipo de condiciones se pueden evaluar en una condición IF con Aspose.Words?
 
-R: Con Aspose.Words puedes evaluar una variedad de condiciones en una condición IF, incluidas comparaciones numéricas (por ejemplo, si un número es mayor que otro), comparaciones de texto (por ejemplo, si una cadena es igual a otra) y mucho más. También puede combinar varias condiciones utilizando operadores lógicos como AND y OR.
+R: Con Aspose.Words puedes evaluar una variedad de condiciones en una condición IF, incluyendo comparaciones numéricas (por ejemplo, si un número es mayor que otro), comparaciones de texto (por ejemplo, si una cadena es igual a otra) y mucho más. También puede combinar varias condiciones utilizando operadores lógicos como AND y OR.
 
 #### P: ¿Es posible utilizar condiciones IF anidadas en un documento de Word con Aspose.Words?
 

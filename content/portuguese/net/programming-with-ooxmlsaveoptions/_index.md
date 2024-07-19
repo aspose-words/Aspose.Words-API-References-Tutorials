@@ -11,7 +11,7 @@ Os tutoriais do Aspose.Words for .NET sobre processamento de palavras com OOXMLS
 
  Os tutoriais também fornecem exemplos práticos de código que ilustram o uso dos vários recursos do OOXMLSaveOptions. Você aprenderá como especificar opções de salvamento ao criar ou editar um documento do Word, usando métodos como`CompatibilityOptions`, `ImageCompression` , e`ExportFontResources`. Os tutoriais ajudarão você a entender como essas opções afetam o formato de saída e a escolher as configurações apropriadas para seus projetos.
 
-Se você deseja criar documentos compatíveis com versões mais antigas do Word, reduzir o tamanho do arquivo compactando imagens ou incorporar fontes específicas, os tutoriais do Aspose.Words for .NET sobre processamento de palavras com OOXMLSaveOptions orientarão você em tudo isso. etapas necessárias. Você poderá aproveitar ao máximo os recursos de salvamento do OOXML e criar documentos Word profissionais e otimizados.
+Se você deseja criar documentos compatíveis com versões mais antigas do Word, reduzir o tamanho do arquivo compactando imagens ou incorporar fontes específicas, os tutoriais do Aspose.Words for .NET sobre processamento de palavras com OOXMLSaveOptions orientarão você em tudo isso. passos necessários. Você poderá aproveitar ao máximo os recursos de salvamento do OOXML e criar documentos Word profissionais e otimizados.
 
  ## Tutoriais
 | Título | Descrição |

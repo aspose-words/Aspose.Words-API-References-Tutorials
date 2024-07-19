@@ -55,7 +55,7 @@ saveOptions.ListIndentation.Character = '\t';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-この最後のステップでは、指定された保存オプションでドキュメントを保存します。`Save()`出力ファイルの完全なパスと保存オプションを渡すドキュメントのメソッド。
+この最後のステップでは、指定した保存オプションで文書を保存します。`Save()`出力ファイルの完全なパスと保存オプションを渡すドキュメントのメソッド。
 
 
 これで、ソース コードを実行して、タブ文字を使用してリストをインデントしたドキュメントを生成できます。出力ファイルは、指定されたディレクトリに「WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt」という名前で保存されます。
@@ -110,7 +110,7 @@ Aspose.Words for .NET でこの機能を使用するには、次の手順に従�
 はい、リストのインデントレベルごとのタブ文字数をカスタマイズするには、`ListIndentation.Count`の財産`TxtSaveOptions`クラス。インデントのレベルごとに必要なタブ文字の数を指定できます。
 
 #### Q: Aspose.Words for .NET でリストのインデントに使用できる他の文字は何ですか?
- Aspose.Words for .NETでは、タブ文字以外にも、リストのインデントに他の文字を使用することもできます。`ListIndentation.Character`プロパティをスペースなどの任意の文字に変更します（`' '`リストをインデントするための ) を使用します。
+ Aspose.Words for .NETでは、タブ文字以外にも、リストのインデントに他の文字を使用することもできます。`ListIndentation.Character`プロパティを任意の文字（スペースなど）に変更します（`' '`リストをインデントするための ) を使用します。
 
 #### Q: Aspose.Words for .NET には、リストを管理するための他の機能はありますか?
 はい、Aspose.Words for .NET には、Word 文書内のリストを管理するための多くの機能が用意されています。番号付きリストや箇条書きリストを作成したり、インデント レベルを設定したり、リストのスタイルをカスタマイズしたり、リスト項目を追加したりすることができます。

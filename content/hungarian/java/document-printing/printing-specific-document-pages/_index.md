@@ -55,7 +55,7 @@ public class PrintSpecificPages {
 
 ## Adja meg a nyomtatandó oldalakat
 
- Most pedig határozzuk meg, mely oldalakat kívánjuk nyomtatni. Használhatja a`PageRange` osztályt, hogy meghatározza a szükséges oldalak körét. Például a 3–5. oldal nyomtatásához:
+ Most pedig határozzuk meg, mely oldalakat kívánjuk nyomtatni. Használhatja a`PageRange` osztályban, hogy meghatározza a szükséges oldalak körét. Például a 3–5. oldal nyomtatásához:
 
 ```java
 PageRange pageRange = new PageRange(3, 5);
@@ -94,7 +94,7 @@ Igen, az Aspose.Words for Java a dokumentumformátumok széles skáláját támo
 
 ### Hogyan állíthatok be további nyomtatási beállításokat, például az oldal tájolását és a papírméretet?
 
- Beállíthat további nyomtatási beállításokat, például az oldal tájolását és a papírméretet, ha konfigurálja a`PrintOptions` tárgyat a dokumentum kinyomtatása előtt. Használjon olyan módszereket, mint pl`setOrientation` és`setPaperSize` a nyomtatási beállítások testreszabásához.
+ Beállíthat további nyomtatási beállításokat, például az oldal tájolását és a papírméretet, ha konfigurálja a`PrintOptions` tárgyat a dokumentum kinyomtatása előtt. Használjon olyan módszereket, mint pl`setOrientation`és`setPaperSize` a nyomtatási beállítások testreszabásához.
 
 ### Elérhető az Aspose.Words for Java próbaverziója?
 

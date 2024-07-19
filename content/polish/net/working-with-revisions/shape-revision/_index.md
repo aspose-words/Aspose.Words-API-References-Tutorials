@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### P: Jak mogę sprawdzić przemieszczenia kształtów w dokumencie Aspose.Words dla .NET?
 
- Odp.: Aby sprawdzić zmiany przemieszczeń kształtu w dokumencie Aspose.Words for .NET, możesz załadować istniejący dokument zawierający wersje przesunięć kształtu. Następnie możesz uzyskać dostęp do każdego kształtu`IsMoveFromRevision` I`IsMoveToRevision` właściwości, aby określić, czy jest przenoszony, a jeśli tak, skąd i dokąd:
+ Odp.: Aby sprawdzić zmiany przemieszczeń kształtu w dokumencie Aspose.Words for .NET, możesz załadować istniejący dokument zawierający wersje przesunięć kształtu. Następnie możesz uzyskać dostęp do każdego kształtu`IsMoveFromRevision`I`IsMoveToRevision` właściwości, aby określić, czy jest przenoszony, a jeśli tak, skąd i dokąd:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Vložení pole času
 
- Používáme`InsertField()` metoda pro vložení časového pole do dokumentu.
+ Používáme`InsertField()`metoda pro vložení časového pole do dokumentu.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

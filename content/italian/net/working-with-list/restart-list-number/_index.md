@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### D: È possibile personalizzare il prefisso e il suffisso della numerazione dell'elenco riavviato in Aspose.Words?
 
- R: Sì, puoi personalizzare il prefisso e il suffisso della numerazione dell'elenco riavviato in Aspose.Words. IL`ListLevel` class offre proprietà come`ListLevel.NumberPrefix` E`ListLevel.NumberSuffix`che consentono di specificare il prefisso e il suffisso per ciascun livello nell'elenco. È possibile utilizzare queste proprietà per personalizzare il prefisso e il suffisso secondo necessità.
+ R: Sì, puoi personalizzare il prefisso e il suffisso della numerazione dell'elenco riavviato in Aspose.Words. IL`ListLevel` class offre proprietà come`ListLevel.NumberPrefix`E`ListLevel.NumberSuffix`che consentono di specificare il prefisso e il suffisso per ciascun livello nell'elenco. È possibile utilizzare queste proprietà per personalizzare il prefisso e il suffisso secondo necessità.
 
 #### D: Come posso specificare un valore di numerazione specifico da cui riavviare l'elenco?
 

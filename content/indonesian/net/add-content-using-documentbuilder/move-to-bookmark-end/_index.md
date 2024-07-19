@@ -103,7 +103,7 @@ builder.MoveToBookmark("MyBookmark1", false, true);
 ## Langkah 5: Sisipkan Teks di Ujung Bookmark
 
 
-Setelah Anda berada di akhir penanda, Anda dapat menyisipkan teks atau konten lainnya. Mari tambahkan satu baris teks sederhana:
+Setelah Anda berada di akhir bookmark, Anda dapat menyisipkan teks atau konten lainnya. Mari tambahkan satu baris teks sederhana:
 
 ```csharp
 builder.Writeln("This is a bookmark.");
@@ -130,7 +130,7 @@ Itu dia! Anda baru saja mempelajari cara berpindah ke akhir bookmark di dokumen 
 
 ### 1. Bisakah saya berpindah ke awal bookmark dan bukan ke akhir?
 
- Sangat! Atur saja`isBookmarkStart` parameter ke`true` Dan`isBookmarkEnd` ke`false` dalam`MoveToBookmark` metode.
+ Sangat! Atur saja`isBookmarkStart` parameter ke`true`Dan`isBookmarkEnd` ke`false` dalam`MoveToBookmark` metode.
 
 ### 2. Bagaimana jika nama bookmark saya salah?
 

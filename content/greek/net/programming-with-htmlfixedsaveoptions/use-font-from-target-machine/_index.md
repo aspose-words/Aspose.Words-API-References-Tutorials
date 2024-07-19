@@ -36,7 +36,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFo
 
 ## Διορθώθηκε η μετατροπή εγγράφων HTML
 
-Τώρα που έχουμε διαμορφώσει τις επιλογές αποθήκευσης, μπορούμε να προχωρήσουμε στη μετατροπή του εγγράφου σε σταθερό HTML. Χρησιμοποιήστε τη μέθοδο Save της κλάσης Document για να αποθηκεύσετε το έγγραφο που έχει μετατραπεί σε σταθερή μορφή HTML, καθορίζοντας τις επιλογές αποθήκευσης. Εδώ είναι ένα παράδειγμα:
+Τώρα που έχουμε διαμορφώσει τις επιλογές αποθήκευσης, μπορούμε να προχωρήσουμε στη μετατροπή του εγγράφου σε σταθερό HTML. Χρησιμοποιήστε τη μέθοδο Save της κλάσης Document για να αποθηκεύσετε το έγγραφο που έχει μετατραπεί σε σταθερή μορφή HTML, καθορίζοντας επιλογές αποθήκευσης. Εδώ είναι ένα παράδειγμα:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Φορτώστε το έγγραφο του Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Διαμορφώστε τις επιλογές δημιουργίας αντιγράφων ασφαλείας με τη λειτουργία "Χρήση γραμματοσειρών από μηχανή προορισμού".
+// Διαμορφώστε τις επιλογές δημιουργίας αντιγράφων ασφαλείας με τη λειτουργία "Χρήση γραμματοσειρών από μηχανή προορισμού".
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Μετατροπή εγγράφου σε σταθερό HTML

@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Zastępować`"Your Document Directory"` I`"Your Output Directory"` z odpowiednimi ścieżkami.
+ Zastępować`"Your Document Directory"`I`"Your Output Directory"` z odpowiednimi ścieżkami.
 
 ## 4. Dostosowywanie korespondencji seryjnej
 
@@ -305,7 +305,7 @@ Kod źródłowy klasy HandleMergeField
                 mBuilder = new DocumentBuilder(e.getDocument());
             if ("CompanyName".equals(e.getFieldName()))
             {
-                // Wybierz kolor w zależności od tego, czy numer wiersza jest parzysty czy nieparzysty.
+                // Wybierz kolor w zależności od tego, czy numer wiersza jest parzysty, czy nieparzysty.
                 Color rowColor = isOdd(mRowIdx) 
                     ? new Color((213), (227), (235)) 
                     : new Color((242), (242), (242));

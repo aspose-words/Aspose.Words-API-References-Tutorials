@@ -2,7 +2,7 @@
 title: Infoga dokument vid brevkoppling
 linktitle: Infoga dokument vid brevkoppling
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du infogar dokument vid sammanslagningsfält med Aspose.Words för .NET i denna omfattande, steg-för-steg handledning.
+description: Lär dig hur du infogar dokument vid sammanslagningsfält med Aspose.Words för .NET i denna omfattande, steg-för-steg-handledning.
 type: docs
 weight: 10
 url: /sv/net/clone-and-combine-documents/insert-document-at-mail-merge/

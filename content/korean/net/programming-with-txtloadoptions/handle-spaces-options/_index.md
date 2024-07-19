@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- 이 단계에서는 TXT 문서를 로드하기 위한 옵션을 구성합니다. 우리는 새로운 것을 만듭니다`TxtLoadOptions` 객체를 설정하고`LeadingSpacesOptions` 그리고`TrailingSpacesOptions` 속성`TxtLeadingSpacesOptions.Trim` 그리고`TxtTrailingSpacesOptions.Trim` 각기. 이는 Aspose.Words가 문서를 로드할 때 줄의 선행 및 후행 공백을 제거하도록 지시합니다.
+ 이 단계에서는 TXT 문서를 로드하기 위한 옵션을 구성합니다. 우리는 새로운 것을 만듭니다`TxtLoadOptions` 객체를 설정하고`LeadingSpacesOptions`그리고`TrailingSpacesOptions` 속성`TxtLeadingSpacesOptions.Trim`그리고`TxtTrailingSpacesOptions.Trim` 각기. 이는 Aspose.Words가 문서를 로드할 때 줄의 선행 및 후행 공백을 제거하도록 지시합니다.
 
 ## 4단계: 문서 로드
 

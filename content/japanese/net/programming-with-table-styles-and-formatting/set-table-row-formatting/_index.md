@@ -34,7 +34,7 @@ builder. InsertCell();
 ```
 
 ## ステップ4: 線の書式を定義する
-これで、行の書式設定を`RowFormat`の目的`DocumentBuilder`オブジェクト。対応するプロパティを使用して、行の高さと余白 (パディング) を設定できます。
+これで、行の書式設定を次のように設定できます。`RowFormat`の目的`DocumentBuilder`オブジェクト。対応するプロパティを使用して、行の高さと余白 (パディング) を設定できます。
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;

@@ -15,7 +15,7 @@ Willkommen in der Welt der Dokumentenautomatisierung mit Aspose.Words für .NET!
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-1.  Aspose.Words für .NET: Sie können[Laden Sie die neueste Version hier](https://releases.aspose.com/words/net/) Wenn Sie eine Lizenz erwerben müssen, können Sie dies tun[Hier](https://purchase.aspose.com/buy) Alternativ können Sie ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder probieren Sie es mit einem[Kostenlose Testphase](https://releases.aspose.com/).
+1.  Aspose.Words für .NET: Sie können[Laden Sie die neueste Version hier](https://releases.aspose.com/words/net/) Wenn Sie eine Lizenz erwerben müssen, können Sie dies tun[Hier](https://purchase.aspose.com/buy) Alternativ können Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder probieren Sie es mit einem[Kostenlose Testphase](https://releases.aspose.com/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere C#-IDE.
 3. Grundkenntnisse in C#: Wenn Sie mit der C#-Programmierung vertraut sind, wird dieses Tutorial zum Kinderspiel.
 
@@ -34,7 +34,7 @@ Lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Jeder Schritt
 
 ## Schritt 1: Einrichten Ihres Verzeichnisses
 
-Bevor Sie mit dem Einfügen von Dokumenten beginnen können, müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis definieren. Hier werden Ihre Dokumente gespeichert.
+Bevor Sie mit dem Einfügen von Dokumenten beginnen können, müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis festlegen. Dort werden Ihre Dokumente gespeichert.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

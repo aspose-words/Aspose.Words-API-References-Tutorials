@@ -15,7 +15,7 @@ In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET einen be
 Um einen bestimmten Seitenbereich aus einem PDF-Dokument zu laden, verwenden Sie folgenden Code:
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
+//Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- In diesem Beispiel laden wir die erste Seite des PDF-Dokuments. Sie können die Werte von`PageIndex` Und`PageCount` auf den gewünschten Seitenbereich.
+ In diesem Beispiel laden wir die erste Seite des PDF-Dokuments. Sie können die Werte von`PageIndex`Und`PageCount` auf den gewünschten Seitenbereich.
 
 ## Schritt 2: Speichern des Dokuments
 

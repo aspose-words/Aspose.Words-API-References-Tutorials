@@ -98,7 +98,7 @@ doc.save("Your Directory Path" + "ModifiedOfficeMath.docx");
 
 ### Πώς μπορώ να μάθω περισσότερα για το Aspose.Words για Java;
 
- Για πλήρη τεκμηρίωση και λήψεις, επισκεφτείτε[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).
+ Για πλήρη τεκμηρίωση και λήψεις, επισκεφθείτε[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/).
 
 ### Πού μπορώ να κατεβάσω το Aspose.Words για Java;
 

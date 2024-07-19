@@ -2,204 +2,86 @@
 title: Ignorovat text uvnitř Odstranit revize
 linktitle: Ignorovat text uvnitř Odstranit revize
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se používat funkci "Ignorovat text uvnitř Delete Revisions" Aspose.Words for .NET.
+description: Naučte se, jak zacházet se sledovanými revizemi v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ovládněte automatizaci dokumentů s tímto komplexním výukovým programem.
 type: docs
 weight: 10
 url: /cs/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
+## Úvod
 
-tomto článku prozkoumáme zdrojový kód C# výše, abychom pochopili, jak používat funkci "Ignorovat text uvnitř Delete Revisions" v knihovně Aspose.Words for .NET. Tato funkce je užitečná, když chceme ignorovat text uvnitř odstraněných revizí při zpracování textu s dokumenty.
+V oblasti vývoje .NET vyniká Aspose.Words jako robustní knihovna pro programovou práci s dokumenty Microsoft Word. Ať už jste zkušený vývojář nebo teprve začínáte, zvládnutí schopností Aspose.Words může výrazně zlepšit vaši schopnost efektivně manipulovat, vytvářet a spravovat dokumenty Word. Tento výukový program se ponoří do jedné z jeho výkonných funkcí: zpracování sledovaných revizí v dokumentech pomocí Aspose.Words for .NET.
 
-## Přehled knihovny Aspose.Words for .NET
+## Předpoklady
 
-Než se ponořím do podrobností kódu, dovolte mi krátce představit knihovnu Aspose.Words for .NET. Je to výkonná knihovna, která umožňuje vytvářet, upravovat a převádět dokumenty Wordu v aplikacích .NET. Nabízí mnoho pokročilých funkcí pro textové zpracování dokumentů, včetně správy revizí.
+Než se ponoříte do tohoto tutoriálu, ujistěte se, že máte splněny následující předpoklady:
+- Základní znalost programovacího jazyka C#.
+- Visual Studio nainstalované ve vašem systému.
+-  Knihovna Aspose.Words for .NET integrovaná do vašeho projektu. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Přístup k Aspose.Words pro .NET[dokumentace](https://reference.aspose.com/words/net/) pro referenci.
 
-## Pochopení funkce "Ignorovat text uvnitř odstranění revizí".
+## Importovat jmenné prostory
 
-Funkce "Ignorovat text uvnitř Delete Revisions" v Aspose.Words for .NET umožňuje určit, zda má být text uvnitř odstraněných revizí ignorován během určitých operací, jako je hledání a nahrazování textu. Když je tato funkce povolena, smazaný text uvnitř revizí se během operací nebere v úvahu.
+Začněte importováním potřebných jmenných prostorů do vašeho projektu:
+```csharp
+using System;
+using System.Text.RegularExpressions;
+using Aspose.Words;
+using Aspose.Words.Replacing;
+```
+## Krok 1: Vytvořte nový dokument a vložte text
 
-## Krok 1: Vytvoření nového dokumentu pomocí Aspose.Words for .NET
-
- Než začneme s textem v dokumentu manipulovat, musíme vytvořit nový dokument pomocí Aspose.Words for .NET. To lze provést vytvořením instance a`Document` objekt:
-
+ Nejprve inicializujte novou instanci`Document` a a`DocumentBuilder` pro zahájení vytváření dokumentu:
 ```csharp
 Document doc = new Document();
-```
-
-## Krok 2: Vložení neupraveného textu do dokumentu
-
- Jakmile máme dokument, můžeme vložit nezkontrolovaný text pomocí a`DocumentBuilder` objekt. Například pro vložení textu "Smazaný text" můžeme použít`Writeln` a`Write` metody:
-
-```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder. Writen("Deleted");
-builder. Write("Text");
 ```
 
-## Krok 3: Odebrání odstavce se sledováním revizí
+## Krok 2: Vložení textu a sledování revizí
 
-Pro ilustraci použití funkce "Ignorovat text uvnitř odstranění revizí" odstraníme odstavec z dokumentu pomocí sledování revizí. To nám umožní vidět, jak tato funkce ovlivňuje následné operace.
-
+Do dokumentu můžete vložit text a sledovat revize spuštěním a zastavením sledování revizí:
 ```csharp
+builder.Writeln("Deleted");
+builder.Write("Text");
+
 doc.StartTrackRevisions("author", DateTime.Now);
 doc.FirstSection.Body.FirstParagraph.Remove();
 doc.StopTrackRevisions();
 ```
 
-## Krok 4: Použití funkce "Ignorovat text uvnitř odstranění revizí".
+## Krok 3: Nahraďte text pomocí regulárních výrazů
 
- Nyní, když jsme připravili náš dokument odstraněním odstavce, můžeme povolit funkci "Ignorovat text uvnitř odstranění revizí" pomocí`FindReplaceOptions` objekt. Nastavíme`IgnoreDeleted`majetek do`true`:
-
+Chcete-li manipulovat s textem, můžete pomocí regulárních výrazů najít a nahradit konkrétní vzory:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
 
-## Krok 5: Použití regulárních výrazů pro hledání a nahrazování
-
-K provádění operací vyhledávání a nahrazování v textu dokumentu použijeme regulární výrazy. V našem příkladu vyhledáme všechny výskyty písmene "e" a nahradíme je hvězdičkou "* ". .SÍŤ`Regex` třída se k tomu používá:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
-```
 
-## Krok 6: Zobrazení výstupu upraveného dokumentu
-
- Po použití hledání a nahrazování můžeme zobrazit změněný obsah dokumentu pomocí`GetText` metoda:
-
-```csharp
 Console.WriteLine(doc.GetText());
-```
 
-## Krok 7: Úprava možností tak, aby zahrnovaly smazaný text
-
- Pokud chceme do výsledku zahrnout smazaný text, můžeme změnit možnosti tak, aby se smazaný text neignoroval. K tomu nastavíme`IgnoreDeleted`majetek do`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-## Krok 8: Výstup upraveného dokumentu s odstraněným textem
-
-Po změně možností můžeme provést vyhledávání a nahradit znovu, abychom získali výsledek včetně smazaného textu:
-
-```csharp
+options.IgnoreDeleted = false;
 doc.Range.Replace(regex, "*", options);
+
 Console.WriteLine(doc.GetText());
-```
-
-### Příklad zdrojového kódu pro Ignore Text Inside Delete Revisions pomocí Aspose.Words for .NET
-
-Zde je úplný ukázkový zdrojový kód, který demonstruje použití funkce "Ignorovat text uvnitř Delete Revisions" s Aspose.Words pro .NET:
-
-```csharp
-        
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Vložit neupravený text.
-	builder.Writeln("Deleted");
-	builder.Write("Text");
-
-	// Odstraňte první odstavec s revizemi sledování.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	doc.FirstSection.Body.FirstParagraph.Remove();
-	doc.StopTrackRevisions();
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreDeleted = false;
-	doc.Range.Replace(regex, "*", options);
-
-	Console.WriteLine(doc.GetText());
-    
 ```
 
 ## Závěr
 
-tomto článku jsme prozkoumali zdrojový kód C#, abychom pochopili, jak používat funkci "Ignorovat text uvnitř Delete Revisions" v Aspose.Words pro .NET. Tato funkce je užitečná pro ignorování textu uvnitř odstraněných revizí při manipulaci s dokumenty. Postupovali jsme podle podrobného průvodce vytvořením dokumentu, vložením textu, odstraněním odstavce se sledováním revizí, použitím funkce "Ignorovat text uvnitř odstranění revizí" a provedením operací hledání a nahrazování.
+Zvládnutí sledovaných revizí v dokumentech aplikace Word pomocí Aspose.Words for .NET umožňuje vývojářům efektivně automatizovat úlohy úprav dokumentů. Využitím jeho komplexního rozhraní API a robustních funkcí můžete bezproblémově integrovat zpracování revizí do vašich aplikací, čímž zvýšíte produktivitu a možnosti správy dokumentů.
 
-### FAQ
+## FAQ
 
-#### Otázka: Co je funkce "Ignorovat text uvnitř Delete Revisions" v Aspose.Words for .NET?
+### Co jsou sledované revize v dokumentech aplikace Word?
+Sledované revize v dokumentech aplikace Word odkazují na změny provedené v dokumentu, které jsou viditelné pro ostatní pomocí značek, které se často používají pro společné úpravy a revize.
 
-A: Funkce "Ignorovat text uvnitř Delete Revisions" v Aspose.Words for .NET umožňuje určit, zda má být text uvnitř odstraněných revizí ignorován během určitých operací, jako je hledání a nahrazování textu. Když je tato funkce povolena, smazaný text uvnitř revizí se během operací nebere v úvahu.
+### Jak mohu integrovat Aspose.Words for .NET do mého projektu Visual Studio?
+Aspose.Words for .NET můžete integrovat stažením knihovny z webu Aspose a odkazem na ni v projektu sady Visual Studio.
 
-#### Otázka: Co je Aspose.Words for .NET?
+### Mohu vrátit zpět sledované revize programově pomocí Aspose.Words for .NET?
+Ano, můžete programově spravovat a vracet sledované revize pomocí Aspose.Words for .NET, což umožňuje přesnou kontrolu nad pracovními postupy úprav dokumentů.
 
-A: Aspose.Words for .NET je výkonná knihovna pro vytváření, úpravy a převod dokumentů Wordu do aplikací .NET. Nabízí mnoho pokročilých funkcí pro textové zpracování dokumentů, včetně správy revizí.
+### Je Aspose.Words for .NET vhodný pro zpracování velkých dokumentů se sledovanými revizemi?
+Aspose.Words for .NET je optimalizován pro efektivní manipulaci s velkými dokumenty, včetně těch s rozsáhlými sledovanými revizemi.
 
-#### Otázka: Jak vytvořit nový dokument v Aspose.Words pro .NET?
-
- A: Než začnete manipulovat s textem v dokumentu, musíte vytvořit nový dokument pomocí Aspose.Words for .NET. To lze provést vytvořením instance a`Document` objekt. Zde je ukázkový kód pro vytvoření nového dokumentu:
-
-```csharp
-Document doc = new Document();
-```
-
-#### Otázka: Jak vložit neupravený text do dokumentu pomocí Aspose.Words for .NET?
-
- Odpověď: Jakmile máte dokument, můžete vložit nezkontrolovaný text pomocí a`DocumentBuilder` objekt. Například pro vložení textu "Smazaný text" můžete použít`Writeln` a`Write` metody:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writen("Deleted");
-builder.Write("Text");
-```
-
-#### Otázka: Jak odstraním odstavec se sledováním revizí v Aspose.Words pro .NET?
-
-Odpověď: Abychom ilustrovali použití funkce "Ignorovat text uvnitř odstranění revizí", odstraníme odstavec z dokumentu pomocí sledování revizí. To nám umožní vidět, jak tato funkce ovlivňuje následné operace.
-
-```csharp
-doc.StartTrackRevisions("author", DateTime.Now);
-doc.FirstSection.Body.FirstParagraph.Remove();
-doc.StopTrackRevisions();
-```
-
-#### Otázka: Jak povolit funkci "Ignorovat text uvnitř Delete Revisions" v Aspose.Words for .NET?
-
- Odpověď: Nyní, když jsme připravili náš dokument odstraněním odstavce, můžeme povolit funkci "Ignorovat text uvnitř odstranění revizí" pomocí`FindReplaceOptions` objekt. Nastavíme`IgnoreDeleted`majetek do`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
-```
-
-#### Otázka: Jak vyhledávat a nahrazovat pomocí regulárních výrazů v Aspose.Words pro .NET?
-
-Odpověď: K provádění operací vyhledávání a nahrazování v textu dokumentu použijeme regulární výrazy. V našem příkladu vyhledáme všechny výskyty písmene "e" a nahradíme je hvězdičkou "* ". Budeme používat .NET`Regex` třída pro toto:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### Otázka: Jak zobrazit změněný obsah dokumentu v Aspose.Words pro .NET?
-
-Odpověď: Po použití vyhledávání a nahrazování můžeme zobrazit změněný obsah dokumentu pomocí`GetText` metoda:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### Otázka: Jak zahrnout smazaný text do výstupního výsledku v Aspose.Words pro .NET?
-
- Odpověď: Pokud chceme do výsledku zahrnout smazaný text, můžeme změnit možnosti tak, aby se smazaný text neignoroval. Za tímto účelem nastavíme`IgnoreDeleted`majetek do`false`:
-
-```csharp
-options. IgnoreDeleted = false;
-```
-
-#### Otázka: Jak zobrazit upravený dokument s odstraněným textem v Aspose.Words pro .NET?
-
-Odpověď: Po změně možností můžeme provést nové vyhledávání a nahradit, abychom získali výsledek včetně smazaného textu:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Kde najdu další zdroje a podporu pro Aspose.Words pro .NET?
+Můžete prozkoumat komplexní dokumentaci a získat podporu od komunity Aspose.Words for .NET na adrese[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).

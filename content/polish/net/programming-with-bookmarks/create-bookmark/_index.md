@@ -2,196 +2,135 @@
 title: Utwórz zakładkę w dokumencie programu Word
 linktitle: Utwórz zakładkę w dokumencie programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak tworzyć zakładki w dokumencie programu Word i określać poziomy podglądu zakładek w pliku PDF przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak tworzyć zakładki w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku. Idealny do nawigacji i organizacji dokumentów.
 type: docs
 weight: 10
 url: /pl/net/programming-with-bookmarks/create-bookmark/
 ---
+## Wstęp
 
-W tym artykule zbadamy powyższy kod źródłowy C#, aby zrozumieć, jak korzystać z funkcji Utwórz zakładkę w bibliotece Aspose.Words dla .NET. Ta funkcja umożliwia tworzenie zakładek w dokumencie i określanie poziomów podglądu zakładek w wyjściowym pliku PDF.
+Tworzenie zakładek w dokumencie programu Word może zmienić reguły gry, zwłaszcza jeśli chcesz bez wysiłku poruszać się po dużych dokumentach. Dzisiaj omówimy proces tworzenia zakładek przy użyciu Aspose.Words dla .NET. Ten samouczek przeprowadzi Cię krok po kroku, upewniając się, że rozumiesz każdą część procesu. Zatem zanurzmy się od razu!
 
 ## Warunki wstępne
 
-- Podstawowa znajomość języka C#.
-- Środowisko programistyczne .NET z zainstalowaną biblioteką Aspose.Words.
+Zanim zaczniemy, musisz mieć następujące elementy:
 
-## Krok 1: Tworzenie dokumentu i generatora
+1.  Aspose.Words dla biblioteki .NET: Pobierz i zainstaluj z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub dowolne inne środowisko programistyczne .NET.
+3. Podstawowa znajomość języka C#: Zrozumienie podstawowych koncepcji programowania w języku C#.
 
- Przed utworzeniem zakładek musimy utworzyć dokument i kreator dokumentów za pomocą`Document` I`DocumentBuilder` obiekty:
+## Importuj przestrzenie nazw
+
+Aby pracować z Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Krok 1: Skonfiguruj dokument i narzędzie DocumentBuider
+
+Zainicjuj dokument
+
+Najpierw musimy utworzyć nowy dokument i zainicjować plik`DocumentBuilder`. Jest to punkt wyjścia do dodawania treści i zakładek do dokumentu.
+
+```csharp
+// Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Tworzenie głównej zakładki
+ Wyjaśnienie: The`Document` obiekt jest Twoim płótnem. The`DocumentBuilder` jest jak pióro, które umożliwia pisanie treści i tworzenie zakładek w dokumencie.
 
- Używamy`StartBookmark` metoda uruchamiania głównej zakładki i`EndBookmark` sposób, aby to zakończyć. W międzyczasie możemy dodać tekst i inne zakładki:
+## Krok 2: Utwórz główną zakładkę
+
+Rozpocznij i zakończ główną zakładkę
+
+Aby utworzyć zakładkę, musisz określić punkt początkowy i końcowy. Tutaj utworzymy zakładkę o nazwie „Moja zakładka”.
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-// Dodaj tutaj więcej zakładek lub tekstu.
-
-builder. EndBookmark("My Bookmark");
 ```
 
-## Krok 3: Tworzenie zagnieżdżonych zakładek
+ Wyjaśnienie: The`StartBookmark` metoda oznacza początek zakładki, oraz`Writeln` dodaje tekst w zakładce.
 
- Możemy także tworzyć zagnieżdżone zakładki wewnątrz głównej zakładki. Używamy tego samego`StartBookmark` I`EndBookmark` metody tworzenia i kończenia zagnieżdżonych zakładek:
+## Krok 3: Utwórz zagnieżdżoną zakładkę
+
+Dodaj zagnieżdżoną zakładkę wewnątrz głównej zakładki
+
+Zakładki można zagnieżdżać w innych zakładkach. Tutaj dodajemy „Zagnieżdżoną zakładkę” w „Mojej zakładce”.
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## Krok 4: Określanie poziomów podglądu zakładek w wyjściowym pliku PDF
+ Objaśnienie: Zagnieżdżanie zakładek umożliwia bardziej uporządkowaną i hierarchiczną organizację treści. The`EndBookmark` metoda zamyka bieżącą zakładkę.
 
- Używamy`PdfSaveOptions` obiekt, aby określić poziomy podglądu zakładek w wyjściowym pliku PDF. Używamy`BookmarksOutlineLevels` nieruchomość
+## Krok 4: Dodaj tekst poza zagnieżdżoną zakładką
 
-  aby dodać zakładki główne i zagnieżdżone wraz z odpowiadającymi im poziomami:
+Kontynuuj dodawanie treści
+
+Po zagnieżdżeniu zakładki możemy kontynuować dodawanie kolejnych treści w ramach zakładki głównej.
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+Objaśnienie: Dzięki temu główna zakładka będzie obejmować zarówno zagnieżdżoną zakładkę, jak i dodatkowy tekst.
+
+## Krok 5: Skonfiguruj opcje zapisywania plików PDF
+
+Skonfiguruj opcje zapisywania plików PDF dla zakładek
+
+Podczas zapisywania dokumentu w formacie PDF możemy skonfigurować opcje uwzględniające zakładki.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+ Wyjaśnienie: The`PdfSaveOptions` class pozwala określić, w jaki sposób dokument ma zostać zapisany w formacie PDF. The`BookmarksOutlineLevels` Właściwość określa hierarchię zakładek w pliku PDF.
+
+## Krok 6: Zapisz dokument
+
+Zapisz dokument w formacie PDF
+
+Na koniec zapisz dokument z określonymi opcjami.
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### Przykładowy kod źródłowy narzędzia Utwórz zakładkę przy użyciu Aspose.Words dla platformy .NET
-
-Oto pełny przykładowy kod źródłowy demonstrujący tworzenie zakładek przy użyciu Aspose.Words dla .NET:
-
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+ Wyjaśnienie: The`Save` Metoda zapisuje dokument w określonym formacie i lokalizacji. Plik PDF będzie teraz zawierał utworzone przez nas zakładki.
 
 ## Wniosek
 
-W tym artykule zbadaliśmy kod źródłowy C#, aby zrozumieć, jak korzystać z funkcji Utwórz zakładkę w Aspose.Words dla .NET. Postępowaliśmy zgodnie z przewodnikiem krok po kroku dotyczącym tworzenia zakładek w dokumencie i określania poziomów podglądu zakładek w wyjściowym pliku PDF.
+Tworzenie zakładek w dokumencie programu Word za pomocą Aspose.Words dla .NET jest proste i niezwykle przydatne do nawigacji i organizacji dokumentów. Niezależnie od tego, czy generujesz raporty, tworzysz e-booki, czy zarządzasz dużymi dokumentami, zakładki ułatwiają życie. Wykonaj czynności opisane w tym samouczku, a plik PDF z zakładkami będzie gotowy w mgnieniu oka.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jakie są wymagania wstępne, aby móc korzystać z funkcji „Utwórz zakładki” w Aspose.Words dla .NET?
+### Czy mogę utworzyć wiele zakładek na różnych poziomach?
 
-Odp.: Aby skorzystać z funkcji „Utwórz zakładki” w Aspose.Words dla .NET, musisz posiadać podstawową wiedzę o języku C#. Potrzebujesz także środowiska programistycznego .NET z zainstalowaną biblioteką Aspose.Words.
+Absolutnie! Podczas zapisywania dokumentu w formacie PDF możesz utworzyć dowolną liczbę zakładek i zdefiniować ich poziomy hierarchiczne.
 
-#### P: Jak utworzyć dokument w Aspose.Words dla .NET?
+### Jak zaktualizować tekst zakładki?
 
- Odp.: Aby utworzyć dokument w Aspose.Words dla .NET, możesz użyć`Document` klasa. Oto przykładowy kod:
+ Możesz przejść do zakładki za pomocą`DocumentBuilder.MoveToBookmark` a następnie zaktualizuj tekst.
 
-```csharp
-Document doc = new Document();
-```
+### Czy można usunąć zakładkę?
 
-#### P: Jak utworzyć główną zakładkę w dokumencie przy użyciu Aspose.Words dla .NET?
+ Tak, możesz usunąć zakładkę za pomocą`Bookmarks.Remove` metodę, podając nazwę zakładki.
 
- Odp.: Aby utworzyć główną zakładkę w dokumencie przy użyciu Aspose.Words dla .NET, możesz użyć`StartBookmark` aby rozpocząć tworzenie zakładki, dodać do niej tekst lub inne zakładki, a następnie użyć metody` EndBookmark` aby to zakończyć. Oto przykładowy kod:
+### Czy mogę tworzyć zakładki w innych formatach niż PDF?
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+Tak, Aspose.Words obsługuje zakładki w różnych formatach, w tym DOCX, HTML i EPUB.
 
-#### P: Jak utworzyć zagnieżdżoną zakładkę wewnątrz głównej zakładki przy użyciu Aspose.Words dla .NET?
+### Jak mogę zapewnić prawidłowe wyświetlanie zakładek w pliku PDF?
 
- Odp.: Aby utworzyć zagnieżdżoną zakładkę wewnątrz głównej zakładki przy użyciu Aspose.Words dla .NET, możesz użyć tego samego`StartBookmark` I`EndBookmark` metody rozpoczynania i kończenia zagnieżdżonej zakładki. Oto przykładowy kod:
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### P: Jak określić poziomy podglądu zakładek w wyjściowym pliku PDF przy użyciu Aspose.Words dla .NET?
-
- O: Aby określić poziomy podglądu zakładek w wyjściowym pliku PDF za pomocą Aspose.Words dla .NET, możesz użyć`PdfSaveOptions` klasa i`BookmarksOutlineLevels` nieruchomość. Możesz dodawać zakładki główne i zagnieżdżone wraz z odpowiadającymi im poziomami. Oto przykładowy kod:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### P: Jak zapisać dokument po utworzeniu zakładek przy użyciu Aspose.Words dla .NET?
-
- Odp.: Aby zapisać dokument po utworzeniu zakładek przy użyciu Aspose.Words dla .NET, możesz użyć`Save` metoda`Document` obiekt określający ścieżkę pliku docelowego. Oto przykładowy kod:
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### P: Jak określić poziomy podglądu zakładek w wyjściowym pliku PDF przy użyciu Aspose.Words dla .NET?
-
- O: Aby określić poziomy podglądu zakładek w wyjściowym pliku PDF za pomocą Aspose.Words dla .NET, możesz użyć`PdfSaveOptions` klasa i`BookmarksOutlineLevels` nieruchomość. Możesz dodawać zakładki główne i zagnieżdżone wraz z odpowiadającymi im poziomami. Oto przykładowy kod:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### P: Jak utworzyć zagnieżdżone zakładki wewnątrz głównej zakładki przy użyciu Aspose.Words dla .NET?
-
- Odp.: Aby utworzyć zagnieżdżone zakładki wewnątrz głównej zakładki przy użyciu Aspose.Words dla .NET, możesz użyć tego samego`StartBookmark` I`EndBookmark` metody rozpoczynania i kończenia zagnieżdżonych zakładek. Podczas wywoływania metody pamiętaj o określeniu zakładki nadrzędnej jako parametru`StartBookmark` metoda. Oto przykładowy kod:
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### P: Jak dodać tekst do zakładki przy użyciu Aspose.Words dla .NET?
-
- Odp.: Aby dodać tekst do zakładki przy użyciu Aspose.Words dla .NET, możesz użyć metody`Write` metoda`DocumentBuilder`obiekt określający tekst do dodania. Oto przykładowy kod:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### P: Jak utworzyć główną zakładkę w dokumencie przy użyciu Aspose.Words dla .NET?
-
- Odp.: Aby utworzyć główną zakładkę w dokumencie przy użyciu Aspose.Words dla .NET, możesz użyć`StartBookmark` metoda uruchamiania zakładki i`EndBookmark` sposób, aby to zakończyć. Oto przykładowy kod:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+ Pamiętaj o zdefiniowaniu`BookmarksOutlineLevels` prawidłowo w`PdfSaveOptions`. Dzięki temu zakładki zostaną uwzględnione w konspekcie pliku PDF.

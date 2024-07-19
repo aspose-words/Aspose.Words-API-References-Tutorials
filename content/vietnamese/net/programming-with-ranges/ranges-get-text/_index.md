@@ -75,7 +75,7 @@ Trả lời: Aspose.Words for .NET là một thư viện mạnh mẽ để Xử 
 
 #### Câu hỏi: Làm cách nào để tải tài liệu Word bằng Aspose.Words cho .NET?
 
-Trả lời: Để tải tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`Document` lớp và hàm tạo của nó. Bạn cần cung cấp đường dẫn tệp hoặc luồng tài liệu làm tham số. Đây là một ví dụ:
+ Trả lời: Để tải tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`Document` lớp và hàm tạo của nó. Bạn cần cung cấp đường dẫn tệp hoặc luồng tài liệu làm tham số. Đây là một ví dụ:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
@@ -105,7 +105,7 @@ Trả lời: Khi trích xuất văn bản từ các phạm vi bằng Aspose.Word
 
 #### Câu hỏi: Tôi có thể chỉ trích xuất một phần văn bản cụ thể trong một phạm vi bằng Aspose.Words cho .NET không?
 
-Đáp: Có, bạn chỉ có thể trích xuất một phần văn bản cụ thể trong một phạm vi bằng Aspose.Words for .NET. Khi bạn đã truy cập phạm vi mong muốn, bạn có thể thao tác văn bản được truy xuất bằng kỹ thuật thao tác chuỗi tiêu chuẩn để trích xuất một phần cụ thể hoặc áp dụng tính năng lọc tùy chỉnh theo yêu cầu của bạn.
+Đáp: Có, bạn chỉ có thể trích xuất một phần văn bản cụ thể trong một phạm vi bằng Aspose.Words for .NET. Khi bạn đã truy cập phạm vi mong muốn, bạn có thể thao tác văn bản được truy xuất bằng các kỹ thuật thao tác chuỗi tiêu chuẩn để trích xuất một phần cụ thể hoặc áp dụng tính năng lọc tùy chỉnh theo yêu cầu của bạn.
 
 #### Câu hỏi: Tôi có thể trích xuất văn bản từ tài liệu Word được bảo vệ bằng mật khẩu hoặc mã hóa bằng Aspose.Words cho .NET không?
 

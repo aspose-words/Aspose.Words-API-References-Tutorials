@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Załaduj dokument i utwórz część XML
- Załaduj dokument Word za pomocą`Document` konstruktor, przekazując ścieżkę do dokumentu jako parametr. Utwórz część XML zawierającą dane, które chcesz wyświetlić w znaczniku dokumentu strukturalnego.
+ Załaduj dokument Word za pomocą`Document`konstruktor, przekazując ścieżkę do dokumentu jako parametr. Utwórz część XML zawierającą dane, które chcesz wyświetlić w znaczniku dokumentu strukturalnego.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Utwórz StructuredDocumentTag, który wyświetli zawartość naszego CustomXmlPart w dokumencie.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Jeśli ustawimy mapowanie dla naszego StructuredDocumentTag,
-	// wyświetli tylko część CustomXmlPart, na którą wskazuje XPath.
+	//wyświetli tylko część CustomXmlPart, na którą wskazuje XPath.
 	// Ta ścieżka XPath będzie wskazywała zawartość drugiego elementu „<text>” pierwszego elementu „<root>” naszego CustomXmlPart.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

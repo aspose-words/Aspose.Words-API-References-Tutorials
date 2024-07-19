@@ -16,11 +16,11 @@ Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh ng
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Nhận biến](./get-variables/) | Hướng dẫn từng bước để truy xuất các biến tài liệu bằng Aspose.Words cho .NET. |
-| [Liệt kê các thuộc tính](./enumerate-properties/) | Hướng dẫn từng bước cách liệt kê các thuộc tính tài liệu bằng Aspose.Words cho .NET. |
-| [Thêm thuộc tính tài liệu tùy chỉnh](./add-custom-document-properties/) | Hướng dẫn từng bước để thêm thuộc tính tùy chỉnh vào tài liệu bằng Aspose.Words cho .NET. |
-| [Xóa thuộc tính tài liệu tùy chỉnh](./remove-custom-document-properties/) | Hướng dẫn từng bước để xóa thuộc tính tùy chỉnh khỏi tài liệu bằng Aspose.Words cho .NET. |
-| [Xóa thông tin cá nhân](./remove-personal-information/) | Hướng dẫn từng bước để xóa thông tin cá nhân khỏi tài liệu bằng Aspose.Words for .NET. |
-| [Định cấu hình liên kết đến nội dung](./configuring-link-to-content/) | Hướng dẫn từng bước để thiết lập liên kết đến nội dung trong tài liệu bằng Aspose.Words for .NET. |
-| [Chuyển đổi giữa các đơn vị đo lường](./convert-between-measurement-units/) | Hướng dẫn từng bước để chuyển đổi giữa các đơn vị đo lường trong tài liệu bằng Aspose.Words for .NET. |
-| [Sử dụng ký tự điều khiển](./use-control-characters/) | Hướng dẫn từng bước cách sử dụng các ký tự điều khiển với Aspose.Words cho .NET. |
+| [Nhận biến](./get-variables/) | Bậc thầy Aspose.Words cho .NET. Tìm hiểu cách tải và trích xuất các biến từ tài liệu Word bằng hướng dẫn từng bước này. |
+| [Liệt kê các thuộc tính](./enumerate-properties/) | Tìm hiểu cách liệt kê các thuộc tính trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo cho các nhà phát triển ở mọi cấp độ kỹ năng. |
+| [Thêm thuộc tính tài liệu tùy chỉnh](./add-custom-document-properties/) | Tìm hiểu cách thêm thuộc tính tài liệu tùy chỉnh trong tệp Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để cải thiện tài liệu của bạn bằng siêu dữ liệu bổ sung. |
+| [Xóa thuộc tính tài liệu tùy chỉnh](./remove-custom-document-properties/) | Xóa thuộc tính tài liệu tùy chỉnh trong tệp Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để có giải pháp nhanh chóng và dễ dàng. Hoàn hảo cho các nhà phát triển. |
+| [Xóa thông tin cá nhân](./remove-personal-information/) | Tìm hiểu cách xóa thông tin cá nhân khỏi tài liệu bằng Aspose.Words for .NET với hướng dẫn từng bước này. Đơn giản hóa việc quản lý tài liệu. |
+| [Định cấu hình liên kết đến nội dung](./configuring-link-to-content/) | Tìm hiểu cách định cấu hình liên kết đến nội dung trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước của chúng tôi. |
+| [Chuyển đổi giữa các đơn vị đo lường](./convert-between-measurement-units/) | Tìm hiểu cách chuyển đổi đơn vị đo lường trong Aspose.Words cho .NET. Làm theo hướng dẫn từng bước của chúng tôi để đặt lề, đầu trang và chân trang của tài liệu theo inch và điểm. |
+| [Sử dụng ký tự điều khiển](./use-control-characters/) | Khám phá cách tự động hóa các tác vụ tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm cách thiết lập, thay thế văn bản, v.v., giúp quy trình làm việc của bạn trở nên hiệu quả. |

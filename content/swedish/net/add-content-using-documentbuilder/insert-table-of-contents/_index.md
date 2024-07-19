@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 ## Introduktion
-I den här handledningen lär du dig hur du effektivt lägger till en innehållsförteckning (TOC) till dina Word-dokument med Aspose.Words för .NET. Den här funktionen är viktig för att organisera och navigera i långa dokument, förbättra läsbarheten och ge en snabb överblick över dokumentavsnitt.
+den här handledningen lär du dig hur du effektivt lägger till en innehållsförteckning (TOC) till dina Word-dokument med Aspose.Words för .NET. Den här funktionen är viktig för att organisera och navigera i långa dokument, förbättra läsbarheten och ge en snabb överblick över dokumentavsnitt.
 
 ## Förutsättningar
 
@@ -36,7 +36,7 @@ Låt oss dela upp processen i tydliga steg:
  Initiera först en ny Aspose.Words`Document` föremål och ett`DocumentBuilder` att arbeta med:
 
 ```csharp
-// Initiera Document and DocumentBuilder
+// Initiera Document och DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -127,4 +127,4 @@ Aspose.Words stöder generering av flera innehållsförteckningar med olika inst
 Ja, Aspose.Words säkerställer kompatibilitet med olika versioner av Microsoft Word-format.
 
 ### Var kan jag hitta mer hjälp och support för Aspose.Words?
-För mer hjälp, besök[Aspose.Words Forum](https://forum.aspose.com/c/words/8) eller kolla in[officiell dokumentation](https://reference.aspose.com/words/net/).
+ För mer hjälp, besök[Aspose.Words Forum](https://forum.aspose.com/c/words/8) eller kolla in[officiell dokumentation](https://reference.aspose.com/words/net/).

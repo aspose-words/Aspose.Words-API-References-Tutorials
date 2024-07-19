@@ -336,7 +336,7 @@ watermark.setLeft(200);
 
 ### 1. Menjaga Desain Tetap Sederhana dan Konsisten
 
-Hindari mengacaukan dokumen Anda dengan format yang berlebihan dan pertahankan desain yang konsisten secara keseluruhan.
+Hindari mengacaukan dokumen Anda dengan format yang berlebihan dan pertahankan desain yang konsisten secara menyeluruh.
 
 ### 2. Memanfaatkan Ruang Putih Secara Efektif
 

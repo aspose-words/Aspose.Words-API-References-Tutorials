@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Questo codice crea un'istanza di`HtmlSaveOptions` imposta il`ExportTextInputFormFieldAsText` opzione a`true` per esportare i campi del modulo di input di testo come testo normale. Inoltre, specifica la cartella in cui verranno salvate le immagini estratte.
+ Questo codice crea un'istanza di`HtmlSaveOptions` e imposta il`ExportTextInputFormFieldAsText` opzione a`true` per esportare i campi del modulo di input di testo come testo normale. Inoltre, specifica la cartella in cui verranno salvate le immagini estratte.
 
 ## Passaggio 4: convertire e salvare il documento in HTML
 

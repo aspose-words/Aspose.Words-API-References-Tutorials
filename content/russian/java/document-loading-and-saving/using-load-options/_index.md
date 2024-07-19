@@ -141,7 +141,7 @@ public void convertShapeToOfficeMath() throws Exception {
 @Test
 public void setMsWordVersion() throws Exception {
 	// Создайте новый объект LoadOptions, который по умолчанию будет загружать документы в соответствии со спецификацией MS Word 2019.
-	// и измените загрузочную версию на Microsoft Word 2010.
+	// и измените версию загрузки на Microsoft Word 2010.
 	LoadOptions loadOptions = new LoadOptions();
 	{
 		loadOptions.setMswVersion(MsWordVersion.WORD_2010);

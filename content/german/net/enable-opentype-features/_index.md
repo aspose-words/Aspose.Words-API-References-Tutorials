@@ -12,4 +12,4 @@ Erfahren Sie, wie Sie mit Aspose.Words für .NET OpenType-Funktionen in Ihren Wo
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Offene Typfunktionen](./open-type-features/) | Erfahren Sie, wie Sie Open Type-Funktionen in Aspose.Words für .NET aktivieren und verwenden |
+| [Offene Typfunktionen](./open-type-features/) | Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET OpenType-Funktionen in Word-Dokumenten aktivieren. |

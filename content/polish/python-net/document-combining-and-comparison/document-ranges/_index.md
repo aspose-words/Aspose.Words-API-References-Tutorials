@@ -14,7 +14,7 @@ Edytowanie dokumentów często wymaga ogromnej dokładności, szczególnie w prz
 
 ## Warunki wstępne
 
-Zanim przejdziemy do praktycznego wdrożenia, upewnij się, że spełnione są następujące warunki wstępne:
+Zanim przejdziemy do praktycznego wdrożenia, upewnij się, że spełnione są następujące wymagania wstępne:
 
 - Podstawowa znajomość programowania w języku Python.
 - Zainstalowano Pythona w swoim systemie.

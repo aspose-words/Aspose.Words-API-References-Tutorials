@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // โหลดเอกสารที่เข้ารหัสด้วยรหัสผ่านที่ระบุ
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// บันทึกเอกสารที่เข้ารหัสด้วยรหัสผ่านใหม่
+//บันทึกเอกสารที่เข้ารหัสด้วยรหัสผ่านใหม่
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

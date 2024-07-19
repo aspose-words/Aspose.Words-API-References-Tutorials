@@ -91,4 +91,4 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 #### س: هل يمكنني استخدام أنواع التحكم الأخرى كخيار مفضل؟
 
- ج: نعم، فيما عدا ذلك`HtmlControlType.StructuredDocumentTag` يدعم Aspose.Words for .NET أنواع التحكم الأخرى مثل`HtmlControlType.ContentControl` و`HtmlControlType.CustomXmlMarkup`.
+ ج: نعم، فيما عدا ذلك`HtmlControlType.StructuredDocumentTag` يدعم Aspose.Words for .NET أنواع التحكم الأخرى مثل`HtmlControlType.ContentControl`و`HtmlControlType.CustomXmlMarkup`.

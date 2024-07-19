@@ -2,43 +2,70 @@
 title: Getalnotatie voor as in een diagram
 linktitle: Getalnotatie voor as in een diagram
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de getalnotatie voor een as in een diagram instelt met Aspose.Words voor .NET.
+description: Leer hoe u diagramasnummers kunt opmaken met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter moeiteloos de leesbaarheid en professionaliteit van uw document.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/number-format-for-axis/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u Aspose.Words voor .NET kunt gebruiken om de getalnotatie voor een as in een diagram in te stellen. De meegeleverde broncode laat zien hoe u een diagram maakt, reeksgegevens toevoegt en de aslabels opmaakt.
+Hallo daar! Heeft u ooit met diagrammen in uw documenten gewerkt en wenste u dat u de cijfers op uw as kon opmaken om ze er professioneler uit te laten zien? Nou, je hebt geluk! In deze zelfstudie gaan we dieper in op hoe u precies dat kunt bereiken met Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u Word-documenten op een heel eenvoudige manier verwerken. En vandaag concentreren we ons erop de grafiekassen een make-over te geven met aangepaste getalnotaties.
 
-## Stap 1: Zet het project op
+## Vereisten
 
-Zorg ervoor dat u aan de volgende vereisten voldoet:
+Voordat we beginnen, zorgen we ervoor dat u alles heeft wat u nodig heeft. Hier is een korte checklist:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
-- Een documentmappad waar het uitvoerdocument wordt opgeslagen.
+-  Aspose.Words voor .NET: Zorg ervoor dat je het geïnstalleerd hebt. Zo niet, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
+- .NET Framework: Zorg ervoor dat u een compatibel .NET-framework hebt geïnstalleerd.
+- Ontwikkelomgeving: Een IDE zoals Visual Studio zal perfect werken.
+- Basiskennis van C#: dit zal u helpen de coderingsvoorbeelden te volgen.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Naamruimten importeren
 
- Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
+Allereerst moet u de benodigde naamruimten in uw project importeren. Dit is hetzelfde als het leggen van de fundering voordat je een huis bouwt. Voeg het volgende toe met behulp van richtlijnen bovenaan uw codebestand:
 
 ```csharp
-// Pad naar uw documentmap
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Reporting;
+```
+
+Laten we het proces nu opsplitsen in eenvoudige, gemakkelijk te volgen stappen.
+
+## Stap 1: Het document instellen
+
+Kop: Initialiseer uw document
+
+Eerst moet u een nieuw document en een documentbuilder maken. Beschouw deze stap als het klaarmaken van je canvas en penseel voordat je aan je meesterwerk begint.
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Gebruik vervolgens de`InsertChart` werkwijze van de`DocumentBuilder` om een kolomdiagram in het document in te voegen.
+ Hier,`dataDir` is het pad naar uw documentmap waar u het uiteindelijke bestand opslaat.`Document`En`DocumentBuilder` zijn klassen van Aspose.Words waarmee u Word-documenten kunt maken en manipuleren.
+
+## Stap 2: Een diagram invoegen
+
+Kop: Voeg een diagram toe aan uw document
+
+Laten we vervolgens een diagram aan uw document toevoegen. Dit is waar de magie begint. We voegen een kolomdiagram in dat als ons blanco canvas zal fungeren.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Stap 3: Voeg seriegegevens toe aan het diagram
+ De`InsertChart` methode voegt een diagram van een opgegeven type (in dit geval kolom) en afmetingen in het document in.
 
-Voeg seriegegevens toe aan het diagram. In dit voorbeeld voegen we vijf items toe met de bijbehorende waarden.
+## Stap 3: De kaartreeks aanpassen
+
+Kop: Vul uw diagram in met gegevens
+
+Nu moeten we wat gegevens aan onze grafiek toevoegen. Deze stap lijkt op het vullen van uw diagram met betekenisvolle informatie.
 
 ```csharp
 chart.Series.Clear();
@@ -47,71 +74,49 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
-## Stap 4: Formatteer de aslabels
+ Hier voegen we een nieuwe serie toe genaamd "Aspose Series 1" met vijf datapunten. De`Series.Clear` methode zorgt ervoor dat alle reeds bestaande gegevens worden verwijderd voordat onze nieuwe reeks wordt toegevoegd.
 
- Om de getalnotatie voor de Y-aslabels in te stellen, gaat u naar de`AxisY` eigenschap van het diagram en stel de`NumberFormat.FormatCode` eigenschap naar het gewenste formaat. In dit voorbeeld stellen we de notatie in op "#,##0" om getallen met scheidingstekens voor duizendtallen weer te geven.
+## Stap 4: De asnummers opmaken
+
+Rubriek: Verfraai uw asnummers
+
+Laten we ten slotte de getallen op de Y-as opmaken om ze beter leesbaar te maken. Dit is hetzelfde als de laatste hand leggen aan uw kunstwerk.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-## Stap 5: Sla het document op
+ De`FormatCode` Met deze eigenschap kunt u een aangepast formaat instellen voor de getallen op de as. In dit voorbeeld`#,##0`zorgt ervoor dat grote getallen worden weergegeven met komma's voor duizenden.
 
- Sla het document ten slotte op in de opgegeven map met behulp van de`Save` werkwijze van de`Document` voorwerp.
+## Stap 5: Het document opslaan
+
+Titel: Bewaar je meesterwerk
+
+Nu alles is ingesteld, is het tijd om uw document op te slaan. Deze stap is de grote onthulling van je werk.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-Hiermee is de implementatie voltooid van het instellen van het getalformaat voor de as met behulp van Aspose.Words voor .NET.
-
-### Voorbeeldbroncode voor Number Format For Axis met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
-	chart.AxisY.NumberFormat.FormatCode = "#,##0";
-	doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
-```
+ Hier de`Save` methode slaat het document op naar het opgegeven pad met de bestandsnaam`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Conclusie
 
-In deze zelfstudie hebt u geleerd hoe u de getalnotatie voor een as in een diagram kunt instellen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u een nieuw document maken, een kolomdiagram invoegen, reeksgegevens toevoegen en de aslabels opmaken om getallen in een specifiek formaat weer te geven.
+En daar heb je het! U hebt de getallen op de Y-as van uw diagram met succes opgemaakt met Aspose.Words voor .NET. Dit zorgt er niet alleen voor dat uw grafieken er professioneler uitzien, maar verbetert ook de leesbaarheid. Aspose.Words biedt een overvloed aan functies waarmee u programmatisch verbluffende Word-documenten kunt maken. Dus waarom zou u niet verder verkennen en zien wat u nog meer kunt doen?
 
-Aspose.Words voor .NET biedt krachtige functies om de weergave van diagrammen in Word-documenten aan te passen. Door de getalnotatie voor de aslabels in te stellen, kunt u bepalen hoe getallen worden weergegeven, inclusief opties zoals decimalen, scheidingstekens voor duizendtallen, valutasymbolen en meer. Hierdoor kunt u numerieke gegevens op een duidelijke en betekenisvolle manier presenteren.
+## Veelgestelde vragen
 
-Met Aspose.Words voor .NET heeft u de flexibiliteit om verschillende aspecten van het diagram op te maken, inclusief de aslabels. Door het getalformaat voor de as in te stellen, kunt u de consistentie garanderen en de leesbaarheid van het diagram verbeteren, waardoor het voor gebruikers gemakkelijker wordt om de weergegeven waarden te interpreteren.
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, manipuleren en converteren.
 
-### Veelgestelde vragen
+### Kan ik naast de asnummers ook andere aspecten van het diagram opmaken?
+Absoluut! Met Aspose.Words voor .NET kunt u titels en labels opmaken en zelfs het uiterlijk van het diagram aanpassen.
 
-#### Q1. Wat is de getalnotatie voor een as in een diagram?
-De getalnotatie voor een as in een diagram verwijst naar de opmaak die wordt toegepast op de numerieke waarden die op de as worden weergegeven. Hiermee kunt u bepalen hoe getallen worden gepresenteerd, inclusief opties zoals decimalen, scheidingstekens voor duizendtallen, valutasymbolen, procenttekens en meer. Door de getalnotatie in te stellen, kunt u de weergave van numerieke gegevens in het diagram aanpassen aan uw specifieke vereisten.
+### Is er een gratis proefversie beschikbaar voor Aspose.Words voor .NET?
+ Ja, je kunt een[gratis proefperiode hier](https://releases.aspose.com/).
 
-#### Vraag 2. Hoe kan ik het getalformaat voor de aslabels instellen?
- Om de getalnotatie voor de aslabels in een diagram in te stellen met behulp van Aspose.Words voor .NET, kunt u toegang krijgen tot de`AxisY` eigenschap van het diagram en stel de`NumberFormat.FormatCode`eigenschap naar de gewenste formaatcode. De opmaakcode volgt de syntaxis van standaard numerieke opmaakpatronen en bepaalt hoe de getallen worden weergegeven. U kunt bijvoorbeeld "#,##0.00" gebruiken om getallen met twee decimalen en scheidingstekens voor duizendtallen weer te geven.
+### Kan ik Aspose.Words voor .NET gebruiken met andere .NET-talen dan C#?
+Ja, Aspose.Words voor .NET is compatibel met elke .NET-taal, inclusief VB.NET en F#.
 
-#### Q3. Kan ik verschillende getalnotaties instellen voor de X-as- en Y-aslabels?
-Ja, u kunt verschillende getalnotaties instellen voor de X-as- en Y-aslabels met Aspose.Words voor .NET. Toegang tot de betreffende as (`AxisX` voor X-as of`AxisY` voor Y-as) van het diagram en wijzig de`NumberFormat.FormatCode` eigenschap afzonderlijk voor elke as. Hierdoor kunt u op elke as verschillende nummerformaten toepassen op de labels, afhankelijk van uw specifieke vereisten.
-
-#### Q4. Wat zijn enkele veelgebruikte getalnotatiecodes die ik kan gebruiken?
-Aspose.Words voor .NET ondersteunt een breed scala aan getalnotatiecodes die u kunt gebruiken om de aslabels in een diagram op te maken. Enkele veel voorkomende formaatcodes zijn:
-
-- `0` of`#` - Geeft het getal weer zonder decimalen.
-- `0.00` of`#.00` - Geeft het getal weer met twee decimalen.
-- `#,##0` Geeft het getal weer met scheidingstekens voor duizendtallen.
-- `"€"0.00` - Geeft het getal weer met het euro-valutasymbool en twee decimalen.
-- `"%"0` - Geeft het getal weer als een percentage.
-
- Meer informatie over het nummer vindt u[formaatcodes](https://reference.aspose.com/words/net/aspose.words.drawing.charts/chartnumberformat/formatcode/) in API-referentie van Aspose.Words voor .NET.
-
-#### Vraag 5. Kan ik andere eigenschappen van de aslabels aanpassen?
-Ja, Aspose.Words voor .NET biedt een breed scala aan eigenschappen om het uiterlijk en het gedrag van aslabels aan te passen. Naast de getalnotatie kunt u eigenschappen wijzigen, zoals lettertype, grootte, kleur, richting, uitlijning en meer. Hierdoor kunt u de aslabels volledig aanpassen aan uw gewenste stijl- en presentatievereisten.
+### Waar kan ik meer gedetailleerde documentatie vinden?
+ Gedetailleerde documentatie is beschikbaar op de[Aspose.Words voor .NET-documentatiepagina](https://reference.aspose.com/words/net/).

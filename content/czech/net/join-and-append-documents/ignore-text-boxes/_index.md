@@ -2,48 +2,90 @@
 title: Ignorovat textová pole
 linktitle: Ignorovat textová pole
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak připojit dokument a přitom ignorovat formátování textového pole pomocí Aspose.Words for .NET.
+description: Sloučit dokumenty aplikace Word s Aspose.Words pro .NET, zajistit zachování formátování textového pole. Postupujte podle tohoto podrobného průvodce pro bezproblémové zpracování dokumentů.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/ignore-text-boxes/
 ---
+## Úvod
 
-Tento tutoriál vysvětluje, jak používat Aspose.Words pro .NET k připojení dokumentu při zachování formátování textových polí. Poskytnutý zdrojový kód ukazuje, jak nastavit možnosti formátu importu tak, aby zahrnoval textová pole během procesu přidávání.
+Vítejte v tomto podrobném tutoriálu o používání Aspose.Words pro .NET ke slučování dokumentů aplikace Word při ignorování textových polí. Pokud chcete zefektivnit zpracování dokumentů a zajistit zachování formátování textových polí, jste na správném místě. Pojďme se ponořit do tohoto podrobného průvodce.
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Ujistěte se, že máte následující předpoklady:
+Než začneme, ujistěte se, že máte vše, co potřebujete:
 
--  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose.Releases]https://releases.aspose.com/words/net/ nebo k instalaci použijte správce balíčků NuGet.
-- Cesta k adresáři dokumentů, kde jsou umístěny zdrojové a cílové dokumenty.
+1.  Aspose.Words pro .NET: Stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí .NET: Visual Studio nebo jakékoli jiné preferované IDE.
+3. Základní znalost C#: Pochopení základních programovacích konceptů v C#.
 
-## Krok 2: Otevřete zdrojové a cílové dokumenty
+## Importovat jmenné prostory
 
- Otevřete zdrojové a cílové dokumenty pomocí`Document` konstruktor třídy. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů.
+Chcete-li začít, budete muset do projektu importovat potřebné jmenné prostory:
 
 ```csharp
-// Cesta k vašemu adresáři dokumentů
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Importing;
+```
 
+## Krok 1: Nastavte svůj projekt
+
+Nejprve se ujistěte, že je váš projekt správně nastaven. Otevřete své IDE, vytvořte nový projekt a nainstalujte knihovnu Aspose.Words for .NET prostřednictvím NuGet Package Manager.
+
+### Jak nainstalovat Aspose.Words
+
+1. Otevřete NuGet Package Manager ve svém IDE.
+2. Vyhledejte "Aspose.Words".
+3. Klikněte na "Instalovat".
+
+## Krok 2: Definujte adresář dokumentů
+
+Dále zadejte adresář, kde jsou umístěny vaše zdrojové a cílové dokumenty.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů.
+
+## Krok 3: Vložte dokumenty
+
+Nyní do projektu načtěte zdrojové i cílové dokumenty.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Nastavte možnosti formátu importu
+## Krok 4: Nakonfigurujte možnosti importu
 
- Vytvořte instanci souboru`ImportFormatOptions` třídu a nastavte`IgnoreTextBoxes`majetek do`false`. Tím je zajištěno, že textová pole budou zahrnuta během procesu přidávání při zachování jejich formátování.
+ Chcete-li zajistit zachování formátování textových polí, nastavte`IgnoreTextBoxes` možnost`false`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## Krok 4: Přidejte obsah textového pole
+## Krok 5: Inicializujte Node Importer
 
- Vytvořit`NodeImporter`objekt a použijte jej k importu uzlů textových polí ze zdrojového dokumentu do cílového dokumentu. Iterujte každý odstavec ve zdrojovém dokumentu a importujte jej do cílového dokumentu.
+ Inicializujte`NodeImporter` pro import uzlů ze zdrojového dokumentu do cílového dokumentu.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+```
+
+## Krok 6: Import odstavců ze zdrojového dokumentu
+
+Načtěte všechny odstavce z první části zdrojového dokumentu.
+
+```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
+```
+
+## Krok 7: Připojte importované odstavce k cílovému dokumentu
+
+Projděte každý odstavec a připojte jej k cílovému dokumentu.
+
+```csharp
 foreach (Paragraph srcPara in srcParas)
 {
     Node importedNode = importer.ImportNode(srcPara, true);
@@ -51,33 +93,31 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Krok 5: Uložte cílový dokument
+## Krok 8: Uložte sloučený dokument
 
-Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+Nakonec uložte sloučený dokument pod novým názvem, abyste předešli přepsání původních souborů.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 ```
 
-Tím je dokončena implementace připojení dokumentu při zachování formátování textového pole pomocí Aspose.Words for .NET.
+## Závěr
 
-### Příklad zdrojového kódu pro Ignorovat textová pole pomocí Aspose.Words pro .NET 
+Úspěšně jste sloučili dva dokumenty aplikace Word pomocí Aspose.Words for .NET a zároveň jste zajistili, že textová pole nebudou během importu ignorována. Tento proces je neocenitelný pro zachování integrity formátování vašich dokumentů. Ať už se zabýváte zprávami, smlouvami nebo jakýmkoli jiným typem dokumentu, Aspose.Words for .NET zajistí bezproblémový proces.
 
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Při importu ponechte formátování zdrojových textových polí.
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, true);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
-```
+### Co je Aspose.Words for .NET?
+ Aspose.Words for .NET je výkonná knihovna pro vytváření, manipulaci a konverzi dokumentů aplikace Word v aplikacích .NET.[Zjistěte více](https://reference.aspose.com/words/net/).
+
+### Mohu Aspose.Words for .NET vyzkoušet před nákupem?
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+
+### Jak mohu získat dočasnou licenci pro Aspose.Words pro .NET?
+ Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+
+### Kde najdu podrobnější dokumentaci?
+ Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).
+
+### Jak mohu získat podporu pro Aspose.Words pro .NET?
+ Pro podporu navštivte fóra Aspose[tady](https://forum.aspose.com/c/words/8).

@@ -15,10 +15,10 @@ url: /ko/net/document-formatting/apply-borders-and-shading-to-paragraph/
 
 소매를 걷어붙이고 코딩을 시작하기 전에 필요한 모든 것이 있는지 확인합시다. 빠른 체크리스트는 다음과 같습니다.
 
--  .NET용 Aspose.Words: 이 라이브러리를 설치해야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: 이 라이브러리를 설치해야 합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio 또는 .NET을 지원하는 기타 IDE.
 - C#에 대한 기본 지식: 코드 조각을 이해하고 조정하는 데 충분합니다.
-- 유효한 라이센스:[임시면허](https://purchase.aspose.com/temporary-license/) 또는 에서 구입한 것[Aspose](https://purchase.aspose.com/buy).
+- 유효한 라이센스:[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는 에서 구입한 것[Aspose](https://purchase.aspose.com/buy).
 
 ## 네임스페이스 가져오기
 
@@ -112,7 +112,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ### 각 테두리에 서로 다른 선 스타일을 사용할 수 있나요?  
  전적으로! .NET용 Aspose.Words를 사용하면 각 테두리를 개별적으로 사용자 정의할 수 있습니다. 그냥 설정하세요`LineStyle` 가이드에 표시된 대로 각 테두리 유형에 대해
 
-### 다른 어떤 음영 텍스처를 사용할 수 있나요?  
+### 어떤 다른 음영 텍스처를 사용할 수 있나요?  
  단색, 가로 줄무늬, 세로 줄무늬 등 사용할 수 있는 여러 텍스처가 있습니다. 을 체크 해봐[Aspose 문서](https://reference.aspose.com/words/net/) 전체 목록을 보려면.
 
 ### 테두리 색상을 어떻게 변경할 수 있나요?  

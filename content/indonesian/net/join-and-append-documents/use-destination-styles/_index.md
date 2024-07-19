@@ -2,67 +2,90 @@
 title: Gunakan Gaya Tujuan
 linktitle: Gunakan Gaya Tujuan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggabungkan dan menambahkan dokumen Word sambil menerapkan gaya dokumen tujuan menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menggunakan gaya tujuan dengan Aspose.Words untuk .NET untuk menambahkan dokumen dengan lancar sambil mempertahankan pemformatan yang konsisten.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/use-destination-styles/
 ---
+## Perkenalan
 
-Tutorial ini akan memandu Anda melalui proses penggunaan fitur Gunakan Gaya Tujuan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda untuk menggabungkan dan menambahkan dokumen Word sambil menerapkan gaya dokumen tujuan.
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk memanipulasi dokumen Word secara terprogram. Baik Anda menggabungkan dokumen atau mengelola pemformatan yang rumit, Aspose.Words menawarkan serangkaian fitur canggih untuk mempermudah tugas Anda. Hari ini, kita akan mendalami cara menggunakan gaya tujuan saat menambahkan dokumen. Panduan ini akan memandu Anda melalui segala hal mulai dari prasyarat hingga petunjuk langkah demi langkah.
 
 ## Prasyarat
 
-Sebelum memulai, pastikan Anda memiliki hal berikut:
+Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
 
-1. Aspose.Words untuk .NET diinstal. Anda dapat mendownloadnya dari situs Aspose atau menginstalnya melalui NuGet.
-2. Visual Studio atau lingkungan pengembangan C# lainnya.
+-  Aspose.Words untuk .NET: Jika Anda belum memilikinya, unduh dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan C# lainnya.
+- Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C# akan sangat membantu.
 
-## Langkah 1: Inisialisasi Direktori Dokumen
+## Impor Namespace
 
- Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ubah nilai`dataDir` variabel ke jalur di mana dokumen Anda berada.
+Sebelum mendalami kode, Anda perlu mengimpor namespace yang diperlukan. Ini penting untuk mengakses kelas dan metode yang disediakan oleh Aspose.Words.
+
+```csharp
+using Aspose.Words;
+```
+
+Mari kita uraikan proses penggunaan gaya tujuan saat menambahkan dokumen ke dalam langkah-langkah yang jelas dan mudah dikelola.
+
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+ Pertama, tentukan jalur ke direktori dokumen Anda. Di sinilah dokumen sumber dan tujuan Anda berada. Anda harus menggantinya`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke dokumen Anda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Langkah 2: Muat Dokumen Sumber dan Tujuan
+## Langkah 2: Muat Dokumen Sumber
 
-Selanjutnya, Anda perlu memuat dokumen sumber dan tujuan menggunakan Aspose.Words`Document` kelas. Perbarui nama file di`Document` konstruktor sesuai dengan nama dokumen Anda.
+Selanjutnya, muat dokumen sumber yang ingin Anda tambahkan ke dokumen tujuan. Aspose.Words menyediakan cara mudah untuk melakukan ini menggunakan`Document` kelas.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
+```
+
+## Langkah 3: Muat Dokumen Tujuan
+
+Demikian pula, muat dokumen tujuan tempat Anda ingin menambahkan dokumen sumber. Ini akan menjadi dokumen yang gayanya ingin Anda gunakan.
+
+```csharp
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Langkah 3: Tambahkan Dokumen Sumber dengan Gaya Tujuan
+## Langkah 4: Tambahkan Dokumen Sumber Menggunakan Gaya Tujuan
 
- Untuk menambahkan dokumen sumber ke dokumen tujuan sambil menerapkan gaya dokumen tujuan, Anda dapat menggunakan`AppendDocument` metode`Document` kelas dengan`ImportFormatMode.UseDestinationStyles` parameter.
+ Sekarang sampai pada bagian penting: menambahkan dokumen sumber ke dokumen tujuan sambil menggunakan gaya dokumen tujuan. Itu`AppendDocument` metode`Document` kelas memungkinkan Anda melakukan ini. Itu`ImportFormatMode.UseDestinationStyles` parameter memastikan bahwa gaya dokumen tujuan digunakan.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
 ```
 
-## Langkah 4: Simpan Dokumen Akhir
+## Langkah 5: Simpan Dokumen yang Dihasilkan
 
- Terakhir, simpan dokumen yang digabungkan dengan fitur Gunakan Gaya Tujuan yang diaktifkan menggunakan`Save` metode`Document` kelas.
+Terakhir, simpan dokumen yang dihasilkan. Dokumen baru ini akan berisi konten dokumen sumber yang ditambahkan ke dokumen tujuan, dengan gaya tujuan yang diterapkan.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
 ```
 
-### Contoh kode sumber untuk Menggunakan Gaya Tujuan menggunakan Aspose.Words untuk .NET
+## Kesimpulan
 
-Berikut kode sumber lengkap untuk fitur "Gunakan Gaya Tujuan" di C# menggunakan Aspose.Words untuk .NET:
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat menambahkan satu dokumen ke dokumen lain dengan lancar saat menggunakan gaya dokumen tujuan. Teknik ini sangat berguna ketika Anda perlu mempertahankan tampilan dan nuansa yang konsisten di banyak dokumen.
 
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Tambahkan dokumen sumber menggunakan gaya dokumen tujuan.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UseDestinationStyles.docx");
-```
+### Bisakah saya menggunakan gaya berbeda untuk bagian berbeda?
+Ya, Anda dapat menerapkan gaya berbeda ke bagian berbeda dengan mengelola gaya secara terprogram menggunakan Aspose.Words.
 
-Itu dia! Anda telah berhasil mengimplementasikan fitur Gunakan Gaya Tujuan menggunakan Aspose.Words untuk .NET. Dokumen akhir akan berisi konten gabungan dengan gaya dokumen tujuan yang diterapkan.
+### Apakah ada batasan jumlah dokumen yang dapat saya lampirkan?
+Tidak ada batasan yang tegas; itu tergantung pada memori sistem Anda dan kemampuan pemrosesan.
+
+### Bagaimana cara menangani dokumen berukuran besar secara efisien?
+Untuk dokumen berukuran besar, pertimbangkan untuk menggunakan pemrosesan aliran untuk menanganinya secara efisien.
+
+### Bisakah saya menambahkan dokumen dengan format berbeda?
+Aspose.Words memungkinkan Anda menambahkan dokumen dengan format berbeda, tetapi dokumen akhir harus disimpan dalam satu format.
+
+### Bagaimana saya bisa mendapatkan uji coba gratis Aspose.Words untuk .NET?
+ Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/).

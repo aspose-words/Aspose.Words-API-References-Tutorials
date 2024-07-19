@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// هذا الاستدعاء مهم لإنشاء جدول متداخل داخل الجدول الأول.
-	// بدون هذا الاستدعاء، سيتم إلحاق الخلايا المدرجة أدناه بالجدول الخارجي.
+	//بدون هذا الاستدعاء، سيتم إلحاق الخلايا المدرجة أدناه بالجدول الخارجي.
 	builder.EndTable();
 	// الانتقال إلى الخلية الأولى من الجدول الخارجي.
 	builder.MoveTo(cell.FirstParagraph);

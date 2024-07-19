@@ -7,7 +7,7 @@ type: docs
 weight: 23
 url: /zh/java/licensing-and-configuration/
 ---
-在 Java 文档处理领域，Aspose.Words 是一款强大的工具包。无论您是经验丰富的开发人员，还是刚刚开始 Java 编程之旅，了解 Aspose.Words 许可和配置的细微差别都至关重要。本文将为您提供有关许可和配置 Aspose.Words for Java 的全面指南，确保您无缝地发挥其全部潜力。
+在 Java 文档处理领域，Aspose.Words 是一款强大的工具包。无论您是经验丰富的开发人员还是刚刚开始 Java 编程之旅，了解 Aspose.Words 许可和配置的细微差别都至关重要。本文将为您提供有关许可和配置 Aspose.Words for Java 的全面指南，确保您无缝地发挥其全部潜力。
 
 ## 为 Java 授权 Aspose.Words
 

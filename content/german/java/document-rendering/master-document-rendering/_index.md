@@ -217,7 +217,7 @@ Die Beherrschung der Dokumentdarstellung ist für die Erstellung robuster Anwend
 
 ### Was ist der Unterschied zwischen Dokument-Rendering und Dokumentverarbeitung?
 
-Bei der Dokumentwiedergabe geht es darum, elektronische Dokumente in eine visuelle Darstellung umzuwandeln, damit Benutzer sie anzeigen, bearbeiten oder drucken können, während die Dokumentverarbeitung Aufgaben wie Serienbrieferstellung, Konvertierung und Schutz beinhaltet.
+Bei der Dokumentwiedergabe geht es darum, elektronische Dokumente in eine visuelle Darstellung umzuwandeln, damit Benutzer sie ansehen, bearbeiten oder drucken können, während die Dokumentverarbeitung Aufgaben wie Serienbrieferstellung, Konvertierung und Schutz beinhaltet.
 
 ### Ist Aspose.Words mit allen Java-Versionen kompatibel?
 

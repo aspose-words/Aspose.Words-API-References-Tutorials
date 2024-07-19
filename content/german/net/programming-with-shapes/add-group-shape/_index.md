@@ -17,14 +17,14 @@ Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 - Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Einrichten des Dokumentverzeichnisses
- Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Schritt 2: Neues Dokument und GroupShape erstellen
- Erstellen Sie eine neue Instanz des`Document` Klasse und`GroupShape`Objekt, um mit dem Dokument zu arbeiten.
+ Erstellen Sie eine neue Instanz des`Document` Klasse und`GroupShape` Objekt, um mit dem Dokument zu arbeiten.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Schritt 3: Erstellen und Hinzufügen von Formen zur Gruppenform
- Erstellen Sie individuelle Formen wie`accentBorderShape` Und`actionButtonShape` Verwendung der`Shape` Klasse. Passen Sie ihre Eigenschaften nach Wunsch an. Fügen Sie diese Formen an die`groupShape` Objekt.
+ Erstellen Sie individuelle Formen wie`accentBorderShape`Und`actionButtonShape` Verwendung der`Shape` Klasse. Passen Sie ihre Eigenschaften nach Wunsch an. Fügen Sie diese Formen an die`groupShape` Objekt.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Schritt 4: Dimensionen für die Gruppenform festlegen
- Legen Sie die Breite, Höhe und Koordinatengröße für das`groupShape`.
+Legen Sie die Breite, Höhe und Koordinatengröße für das`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## Schritt 6: Speichern Sie das Dokument
- Speichern Sie das Dokument im angegebenen Verzeichnis mit dem`Save`Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithShapes.AddGroupShape.docx“.
+ Speichern Sie das Dokument im angegebenen Verzeichnis mit dem`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithShapes.AddGroupShape.docx“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

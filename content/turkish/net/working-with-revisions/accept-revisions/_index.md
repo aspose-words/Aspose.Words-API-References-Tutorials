@@ -15,7 +15,7 @@ Bu eğitimde, Aspose.Words for .NET'in Revizyonları Kabul Et özelliğini kulla
 Bu örnekte bir belge oluşturuyoruz ve içerik ekliyoruz. Değişiklikleri ve revizyonları göstermek için birkaç paragraf kullanıyoruz. İşte nasıl:
 
 ```csharp
-// Belgeler dizininin yolu.
+//Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Çözüm 2:
 
- C: Ayrıca revizyon takibini aşağıdaki komutu kullanarak da etkinleştirebilirsiniz:`Document` kabul eden yapıcı`trackRevisions` Ve`author` parametreler.
+ C: Ayrıca revizyon takibini aşağıdaki komutu kullanarak da etkinleştirebilirsiniz:`Document` kabul eden yapıcı`trackRevisions`Ve`author` parametreler.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

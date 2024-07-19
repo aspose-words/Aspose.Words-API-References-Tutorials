@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### P: Jak mogę określić dane źródłowe dla pola adresu pocztowego w Aspose.Words dla .NET?
 
- O: Aby określić dane źródłowe dla pola adresu pocztowego w Aspose.Words dla .NET, możesz użyć`FieldAddressBlock.StartAddress` I`FieldAddressBlock.EndAddress` nieruchomości. Właściwości te służą do definiowania zakresów adresów w zewnętrznym źródle danych takim jak plik CSV, baza danych itp.
+ O: Aby określić dane źródłowe dla pola adresu pocztowego w Aspose.Words dla .NET, możesz użyć`FieldAddressBlock.StartAddress`I`FieldAddressBlock.EndAddress` nieruchomości. Właściwości te służą do definiowania zakresów adresów w zewnętrznym źródle danych takim jak plik CSV, baza danych itp.
 
 #### P: Czy mogę dołączyć opcjonalne elementy w polu adresu pocztowego w Aspose.Words dla .NET?
 

@@ -30,20 +30,20 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // 전체 테이블에 테두리를 설정합니다.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // 이 셀에 패딩을 설정합니다.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // 두 번째 셀에 대해 다른 셀 패딩을 지정합니다.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // 이전 작업의 셀 서식을 지웁니다.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // 이 행의 첫 번째 셀에 대해 더 두꺼운 테두리를 만듭니다. 다를 것이다
 // 테이블에 정의된 테두리를 기준으로 합니다.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 ### .NET용 Aspose.Words를 사용하여 테두리가 다른 테이블 및 셀 서식 지정을 위한 샘플 소스 코드 
 
 ```csharp
-	// 문서 디렉터리 경로
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// 문서 디렉터리 경로
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//표 전체의 테두리를 설정합니다.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// 이 셀에 대한 셀 음영을 설정합니다.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// 두 번째 셀에 대해 다른 셀 음영을 지정합니다.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// 이전 작업에서 셀 서식을 지웁니다.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// 이 행의 첫 번째 셀에 대해 더 큰 테두리를 만듭니다. 이건 다를거야
-	// 테이블에 설정된 테두리와 비교됩니다.
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//표 전체의 테두리를 설정합니다.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// 이 셀에 대한 셀 음영을 설정합니다.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// 두 번째 셀에 대해 다른 셀 음영을 지정합니다.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// 이전 작업에서 셀 서식을 지웁니다.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// 이 행의 첫 번째 셀에 대해 더 큰 테두리를 만듭니다. 이건 다를거야
+// 테이블에 설정된 테두리와 비교됩니다.
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## 결론

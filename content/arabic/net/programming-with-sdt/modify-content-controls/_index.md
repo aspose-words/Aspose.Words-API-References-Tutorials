@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## الخطوة 2: قم بتحميل المستند وتكرار عناصر التحكم في المحتوى
- قم بتحميل مستند Word باستخدام`Document`منشئ، وتمرير المسار إلى الوثيقة كمعلمة. قم بالتكرار على جميع علامات المستند المنظمة في المستند باستخدام ملف`foreach` حلقة.
+ قم بتحميل مستند Word باستخدام`Document` منشئ، وتمرير المسار إلى الوثيقة كمعلمة. قم بالتكرار على جميع علامات المستند المنظمة في المستند باستخدام ملف`foreach` حلقة.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## الخطوة 6: احفظ المستند المعدل
- احفظ المستند المعدل في الدليل المحدد باستخدام الملف`Save` طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.ModifyContentControls.docx".
+ احفظ المستند المعدل في الدليل المحدد باستخدام الملف`Save`طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.ModifyContentControls.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### Otázka: Jak mohu zadat zdrojová data pro pole poštovní adresy v Aspose.Words for .NET?
 
- Odpověď: Chcete-li zadat zdrojová data pro pole poštovní adresy v Aspose.Words pro .NET, můžete použít`FieldAddressBlock.StartAddress` a`FieldAddressBlock.EndAddress` vlastnosti. Tyto vlastnosti se používají k definování rozsahů adres v externím zdroji dat, jako je soubor CSV, databáze atd.
+ Odpověď: Chcete-li zadat zdrojová data pro pole poštovní adresy v Aspose.Words pro .NET, můžete použít`FieldAddressBlock.StartAddress`a`FieldAddressBlock.EndAddress` vlastnosti. Tyto vlastnosti se používají k definování rozsahů adres v externím zdroji dat, jako je soubor CSV, databáze atd.
 
 #### Otázka: Mohu zahrnout volitelné prvky do pole poštovní adresy s Aspose.Words pro .NET?
 

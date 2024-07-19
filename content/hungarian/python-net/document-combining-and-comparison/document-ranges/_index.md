@@ -84,7 +84,7 @@ for run in doc.get_child_nodes(NodeType.RUN, True):
 
 ## Tartalom kinyerése
 
-Néha konkrét tartalmat kell kinyernünk. A tartalomtartományok közötti navigálás lehetővé teszi, hogy pontosan azt gyűjtsük ki, amire szükségünk van:
+Néha konkrét tartalmat kell kinyernünk. A tartalomtartományok közötti navigáció lehetővé teszi számunkra, hogy pontosan azt gyűjtsük ki, amire szükségünk van:
 
 ```python
 range = doc.range

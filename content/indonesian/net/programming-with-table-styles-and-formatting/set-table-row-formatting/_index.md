@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## Langkah 7: Selesaikan tabel dan simpan dokumen
 Di dalam
 
- selesai, kita selesaikan pembuatan tabel menggunakan`EndRow()` Dan`EndTable()` metode, lalu kami menyimpan dokumen yang dimodifikasi ke file.
+ selesai, kita selesaikan pembuatan tabel menggunakan`EndRow()`Dan`EndTable()` metode, lalu kami menyimpan dokumen yang dimodifikasi ke file.
 
 ```csharp
 builder. EndRow();

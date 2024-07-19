@@ -66,7 +66,7 @@ builder.insertImage("path/to/image.jpg");
 
 ### 5.3 Tablolarla Çalışmak
 
-Aspose.Words, Word belgesinde tablolar oluşturmanıza ve değiştirmenize olanak sağlar.
+Aspose.Words, Word belgesinde tablolar oluşturmanıza ve değiştirmenize olanak tanır.
 
 ```java
 // Belgeye tablo ekleme

@@ -2,180 +2,144 @@
 title: إنشاء سطر توقيع جديد وتعيين معرف الموفر
 linktitle: إنشاء سطر توقيع جديد وتعيين معرف الموفر
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستندات Word باستخدام Aspose.Words for .NET. دليل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
-في هذا البرنامج التعليمي، سنرشدك خلال خطوات استخدام ميزة إنشاء سطر توقيع جديد وتعيين معرف الموفر مع Aspose.Words for .NET. تتيح لك هذه الميزة إدراج سطر توقيع في مستند Word وتعيين خيارات مخصصة وتوقيع المستند. اتبع الخطوات التالية:
+## مقدمة
 
-## الخطوة 1: إنشاء المستند والمولد
+مرحبًا يا عشاق التكنولوجيا! هل تساءلت يومًا عن كيفية إضافة سطر توقيع في مستندات Word الخاصة بك برمجيًا؟ حسنًا، سنتعمق اليوم في هذا الأمر باستخدام Aspose.Words for .NET. سيرشدك هذا الدليل خلال كل خطوة، مما يجعل من السهل إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستندات Word الخاصة بك. سواء كنت تقوم بأتمتة معالجة المستندات أو تتطلع فقط إلى تبسيط سير عملك، فإن هذا البرنامج التعليمي يوفر لك كل ما تحتاجه.
 
-ابدأ بإنشاء مثيل لفئة Document وكائن DocumentBuilder:
+## المتطلبات الأساسية
+
+قبل أن نتسخ أيدينا، دعونا نتأكد من أن لدينا كل ما نحتاجه:
+
+1.  Aspose.Words for .NET: إذا لم تكن قد قمت بذلك بالفعل، فقم بتنزيله[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: Visual Studio أو أي بيئة تطوير أخرى لـ C#.
+3. .NET Framework: تأكد من تثبيت .NET Framework.
+4. شهادة PFX: لتوقيع المستندات، ستحتاج إلى شهادة PFX. يمكنك الحصول على واحدة من مرجع مصدق موثوق به.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، لنستورد مساحات الأسماء الضرورية في مشروع C# الخاص بك:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Signing;
+using System;
+```
+
+حسنًا ، دعنا ننتقل إلى التفاصيل الجوهرية. فيما يلي تفاصيل تفصيلية لكل خطوة لإنشاء سطر توقيع جديد وتعيين معرف الموفر.
+
+## الخطوة 1: إنشاء مستند جديد
+
+للبدء، نحن بحاجة إلى إنشاء مستند Word جديد. ستكون هذه هي اللوحة القماشية لخط توقيعنا.
+
+```csharp
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 2: ضبط خيارات خط التوقيع
+ في هذا المقتطف، نقوم بتهيئة ملف جديد`Document` و أ`DocumentBuilder` . ال`DocumentBuilder` يساعدنا على إضافة عناصر إلى وثيقتنا.
 
-قم بإنشاء مثيل لفئة SignatureLineOptions وقم بتعيين الخيارات المطلوبة:
+## الخطوة 2: تحديد خيارات خط التوقيع
+
+بعد ذلك، نحدد الخيارات لخط التوقيع الخاص بنا. يتضمن ذلك اسم المُوقع والمسمى الوظيفي والبريد الإلكتروني والتفاصيل الأخرى.
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions
 {
-Sign = "vderyushev",
-SignerTitle = "QA",
-Email = "vderyushev@aspose.com",
-ShowDate=true,
-Default Instructions = false,
-Instructions = "Please sign here.",
-AllowComments = true
+    Signer = "vderyushev",
+    SignerTitle = "QA",
+    Email = "vderyushev@aspose.com",
+    ShowDate = true,
+    DefaultInstructions = false,
+    Instructions = "Please sign here.",
+    AllowComments = true
 };
 ```
 
-## الخطوة 3: إدخال سطر التوقيع
+تعمل هذه الخيارات على تخصيص سطر التوقيع، مما يجعله واضحًا واحترافيًا.
 
-استخدم طريقة InsertSignatureLine() للكائن DocumentBuilder لإدراج سطر التوقيع في المستند:
+## الخطوة 3: أدخل سطر التوقيع
+
+بعد ضبط الخيارات، يمكننا الآن إدراج سطر التوقيع في المستند.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-```
-
-## الخطوة 4: تعيين معرف الموفر
-
-قم بتعيين معرف الموفر لسطر التوقيع باستخدام خاصية ProviderId:
-
-```csharp
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
-تأكد من تحديد معرف الموفر الصحيح لحالة الاستخدام الخاصة بك.
+ هنا،`InsertSignatureLine` تضيف الطريقة سطر التوقيع، ونقوم بتعيين معرف موفر فريد له.
 
-## الخطوة 5: احفظ المستند
+## الخطوة 4: احفظ المستند
 
-احفظ المستند المعدل:
+بعد إدراج سطر التوقيع، دعونا نحفظ المستند.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف لحفظ المستند.
+يؤدي هذا إلى حفظ المستند الخاص بك بسطر التوقيع المضاف حديثًا.
 
-## الخطوة 6: توقيع الوثيقة
+## الخطوة 5: إعداد خيارات التوقيع
 
-لتوقيع المستند، تحتاج إلى ضبط خيارات التوقيع واستخدام فئة DigitalSignatureUtil:
+الآن، نحن بحاجة إلى إعداد الخيارات لتوقيع الوثيقة. يتضمن ذلك معرف سطر التوقيع ومعرف الموفر والتعليقات ووقت التوقيع.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-ProviderId = signatureLine.ProviderId,
-Comments = "Document was signed by vderyushev",
-SignTime = DateTime.Now
+    SignatureLineId = signatureLine.Id,
+    ProviderId = signatureLine.ProviderId,
+    Comments = "Document was signed by vderyushev",
+    SignTime = DateTime.Now
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-	dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions)
 ```
 
-تأكد من تحديد المسارات الصحيحة للمستند والشهادة والمستند الموقع.
+تضمن هذه الخيارات توقيع المستند بالتفاصيل الصحيحة.
 
-### مثال على التعليمات البرمجية المصدر لإنشاء سطر توقيع جديد وتعيين معرف الموفر باستخدام Aspose.Words لـ .NET
+## الخطوة 6: إنشاء حامل الشهادة
 
-فيما يلي الكود المصدري الكامل لإنشاء سطر توقيع جديد وتعيين معرف الموفر باستخدام Aspose.Words لـ .NET:
+لتوقيع المستند، سنستخدم شهادة PFX. لنقم بإنشاء حامل شهادة لذلك.
 
 ```csharp
-
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLineOptions signatureLineOptions = new SignatureLineOptions
-	{
-		Signer = "vderyushev",
-		SignerTitle = "QA",
-		Email = "vderyushev@aspose.com",
-		ShowDate = true,
-		DefaultInstructions = false,
-		Instructions = "Please sign here.",
-		AllowComments = true
-	};
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-	signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		ProviderId = signatureLine.ProviderId,
-		Comments = "Document was signed by vderyushev",
-		SignTime = DateTime.Now
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-		dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-باتباع هذه الخطوات، يمكنك بسهولة إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+ تأكد من استبدال`"morzal.pfx"` مع ملف الشهادة الفعلي الخاص بك و`"aw"` مع كلمة مرور الشهادة الخاصة بك.
+
+## الخطوة 7: قم بالتوقيع على الوثيقة
+
+وأخيرًا، نقوم بتوقيع المستند باستخدام أداة التوقيع الرقمي.
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
+    dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
+```
+
+يؤدي هذا إلى توقيع المستند وحفظه كملف جديد.
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، اكتشفنا ميزة إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات المتوفرة، يمكنك بسهولة إدراج سطر توقيع بخيارات مخصصة وربطه بموفر معين باستخدام معرف الموفر. تعمل إضافة أسطر التوقيع وتخصيص معلومات الموفر على تحسين صحة مستنداتك ومصداقيتها. يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لمعالجة الكلمات مع خطوط التوقيع والشهادات الرقمية في مستندات Word، مما يتيح لك أتمتة عملية التوقيع والتأكد من صحة مستنداتك.
+وهناك لديك! لقد نجحت في إنشاء سطر توقيع جديد وتعيين معرف الموفر في مستند Word باستخدام Aspose.Words for .NET. تعمل هذه المكتبة القوية على تسهيل إدارة مهام معالجة المستندات وأتمتتها بشكل لا يصدق. جربه وشاهد كيف يمكنه تبسيط سير عملك.
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: ما هو معرف المزود الموجود في سطر التوقيع؟
+### هل يمكنني تخصيص مظهر سطر التوقيع؟
+قطعاً! يمكنك تعديل الخيارات المختلفة في`SignatureLineOptions` لتناسب احتياجاتك.
 
-ج: معرف الموفر الموجود في سطر التوقيع هو معرف فريد يمثل موفر التوقيع الرقمي. فهو يساعد على تحديد المصدر أو المنظمة المسؤولة عن التوقيع.
+### ماذا لو لم يكن لدي شهادة PFX؟
+ستحتاج إلى الحصول على واحدة من مرجع مصدق موثوق به. إنه ضروري لتوقيع المستندات رقميًا.
 
-#### س: كيف يمكنني إنشاء سطر توقيع جديد في مستند Word باستخدام Aspose.Words لـ .NET؟
+### هل يمكنني إضافة أسطر توقيع متعددة إلى مستند؟
+نعم، يمكنك إضافة أي عدد تريده من أسطر التوقيع عن طريق تكرار عملية الإدراج مع خيارات مختلفة.
 
-ج: لإنشاء سطر توقيع جديد في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك اتباع الخطوات التالية:
-1.  إنشاء مثيل لـ`Document` فئة و أ`DocumentBuilder` هدف.
-2.  إنشاء مثيل لـ`SignatureLineOptions` فئة وضبط خيارات سطر التوقيع المطلوب.
-3.  استخدم ال`InsertSignatureLine` طريقة`DocumentBuilder` كائن لإدراج سطر التوقيع في المستند.
+### هل Aspose.Words for .NET متوافق مع .NET Core؟
+نعم، يدعم Aspose.Words for .NET .NET Core، مما يجعله متعدد الاستخدامات لبيئات التطوير المختلفة.
 
-#### س: هل يمكنني تخصيص خيارات سطر التوقيع، مثل اسم الموقع والمسمى الوظيفي والتعليمات؟
-
- ج: نعم، يمكنك تخصيص خيارات سطر التوقيع. ال`SignatureLineOptions` توفر الفئة خصائص لتعيين الخيارات المطلوبة، مثل`Signer`, `SignerTitle`, `Instructions`, `AllowComments`وما إلى ذلك. يمكنك تعديل هذه الخصائص قبل إدراج سطر التوقيع.
-
-#### س: ما هو الغرض من تحديد معرف المزود لخط التوقيع؟
-
-ج: يساعد تعيين معرف الموفر لخط التوقيع في تحديد المصدر أو المؤسسة المسؤولة عن التوقيع الرقمي. فهو يسمح لك بربط التوقيع بمزود أو كيان محدد، مما يوفر معلومات إضافية حول أصل التوقيع ومصداقيته.
-
-#### س: كيف يمكنني تعيين معرف الموفر لخط التوقيع باستخدام Aspose.Words for .NET؟
-
-ج: لتعيين معرف الموفر لسطر التوقيع باستخدام Aspose.Words لـ .NET، يمكنك اتباع الخطوات التالية:
-1.  بعد إدخال سطر التوقيع، قم بالوصول إلى`ProviderId` ملكية`SignatureLine` هدف.
-2.  تعيين`ProviderId` الخاصية إلى قيمة معرف الموفر المطلوب باستخدام`Guid` نوع البيانات.
-
-#### س: هل يمكنني التوقيع على المستند بعد إنشاء سطر توقيع جديد وتعيين معرف المزود؟
-
- ج: نعم، بعد إنشاء سطر توقيع جديد وتعيين معرف المزود، يمكنك توقيع المستند. لتوقيع المستند، يتعين عليك تعيين خيارات التوقيع، بما في ذلك معرف سطر التوقيع، ومعرف الموفر، والتعليقات، ووقت التوقيع. ثم استخدم`DigitalSignatureUtil.Sign` طريقة توقيع المستند باستخدام شهادة رقمية.
-
-#### س: هل يمكنني تحديد معرف موفر محدد لكل سطر توقيع في مستند Word؟
-
-ج: نعم، يمكنك تحديد معرف موفر محدد لكل سطر توقيع في مستند Word. بعد إدراج كل سطر توقيع، يمكنك تعيين معرف الموفر لخط التوقيع المحدد هذا عن طريق الوصول إلى`ProviderId` ممتلكات المعنيين`SignatureLine` هدف.
-
-#### س: كيف يمكنني حفظ المستند المعدل بعد إنشاء سطر توقيع جديد وتعيين معرف المزود؟
-
- ج: لحفظ المستند المعدل بعد إنشاء سطر توقيع جديد وتعيين معرف الموفر، يمكنك استخدام`Save` طريقة`Document` هدف. حدد المسار الصحيح واسم الملف لحفظ المستند.
-
-#### س: ما هو تنسيق الملف الذي يدعمه Aspose.Words for .NET لإنشاء خطوط التوقيع وتوقيعها؟
-
-ج: يدعم Aspose.Words for .NET إنشاء أسطر التوقيع وتوقيعها بتنسيق ملف DOCX. يمكنك إنشاء خطوط التوقيع وتوقيعها في ملفات DOCX باستخدام الطرق والفئات المتوفرة.
-
-#### س: هل يمكنني تعديل معرف الموفر أو الخيارات الأخرى لسطر التوقيع بعد التوقيع عليه؟
-
-ج: بمجرد توقيع سطر التوقيع، يصبح جزءًا من محتوى المستند ولا يمكن تعديله بشكل منفصل. قد تتطلب أي تعديلات على سطر التوقيع، مثل تغيير معرف الموفر أو خيارات أخرى، إزالة التوقيع الحالي وإنشاء سطر توقيع جديد.
+### ما مدى أمان التوقيعات الرقمية؟
+التوقيعات الرقمية التي تم إنشاؤها باستخدام Aspose.Words آمنة للغاية، بشرط استخدام شهادة صالحة وموثوقة.

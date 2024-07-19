@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でドキュメントを HTML ページに分割する
 linktitle: ドキュメントを HTML ページに分割する
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用してドキュメントを HTML ページに分割する方法を学びます。シームレスなドキュメント変換を行うには、ステップ バイ ステップ ガイドに従ってください。
+description: Aspose.Words for Java を使用してドキュメントを HTML ページに分割する方法を学びます。シームレスなドキュメント変換を行うには、ステップバイステップのガイドに従ってください。
 type: docs
 weight: 25
 url: /ja/java/document-manipulation/splitting-documents-into-html-pages/
@@ -16,7 +16,7 @@ url: /ja/java/document-manipulation/splitting-documents-into-html-pages/
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## ステップ1: 必要なパッケージをインポートする

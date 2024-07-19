@@ -2,91 +2,101 @@
 title: Rensa oanvända stilar och listor
 linktitle: Rensa oanvända stilar och listor
 second_title: Aspose.Words Document Processing API
-description: Steg-för-steg-guide för att rensa bort oanvända stilar och listor i ett dokument med Aspose.Words för .NET.
+description: Rensa upp dina Word-dokument med Aspose.Words för .NET genom att ta bort oanvända stilar och listor. Följ denna steg-för-steg-guide för att effektivisera dina dokument utan ansträngning.
 type: docs
 weight: 10
 url: /sv/net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
+## Introduktion
 
-I den här handledningen går vi igenom C#-källkoden för att rensa bort oanvända stilar och listor med Aspose.Words för .NET. Den här funktionen låter dig ta bort stilar och listor som inte används i ett dokument.
+Hallå där! Har du någonsin känt att dina Word-dokument blir lite röriga? Du vet, de där oanvända stilarna och listorna som bara sitter där, tar upp plats och får ditt dokument att se mer komplext ut än det behöver vara? Tja, du har tur! Idag dyker vi in i ett snyggt litet trick med Aspose.Words för .NET för att rensa bort dessa oanvända stilar och listor. Det är som att ge ditt dokument ett skönt, uppfriskande bad. Så ta ditt kaffe, luta dig tillbaka och låt oss börja!
 
-## Steg 1: Projektinställning
+## Förutsättningar
 
-För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
+Innan vi dyker in i detaljerna, låt oss se till att du har allt du behöver. Här är en snabb checklista:
 
-## Steg 2: Ladda dokumentet
+- Grundläggande kunskaper i C#: Du bör vara bekväm med C#-programmering.
+-  Aspose.Words för .NET: Se till att du har det här biblioteket installerat. Om inte kan du ladda ner den[här](https://releases.aspose.com/words/net/).
+- Utvecklingsmiljö: Alla C#-kompatibla IDE som Visual Studio.
+- Exempeldokument: Ett Word-dokument med några oanvända stilar och listor att rensa upp.
 
-I det här steget kommer vi att ladda Word-dokumentet som innehåller de oanvända stilarna och listorna som vi vill rensa upp. Använd följande kod för att ladda dokumentet:
+## Importera namnområden
+
+Först till kvarn, låt oss få ordning på våra namnutrymmen. Du måste importera några viktiga namnområden för att arbeta med Aspose.Words.
 
 ```csharp
-// Sökväg till dokumentkatalogen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Cleaning;
+```
+
+## Steg 1: Ladda ditt dokument
+
+Det första steget är att ladda dokumentet du vill rensa. Du måste ange sökvägen till din dokumentkatalog. Det är här din Word-fil finns.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
 
- Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till katalogen där ditt dokument finns.
+## Steg 2: Kontrollera aktuella stilar och listor
 
-## Steg 3: Räkna stilar och listor innan rengöring
-
-Innan rengöring kommer vi att räkna antalet stilar och listor som finns i dokumentet. Använd följande kod för att visa räknarna:
+Innan vi börjar städa upp är det en bra idé att se hur många stilar och listor som för närvarande finns i ditt dokument. Detta kommer att ge oss en baslinje att jämföra med efter saneringen.
 
 ```csharp
-Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
-$"Number of lists before cleaning: {doc.Lists.Count}");
+Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists before Cleanup: {doc.Lists.Count}");
 ```
 
-Dessa instruktioner visar antalet stilar och listor som finns i dokumentet före rengöring.
+## Steg 3: Definiera rensningsalternativ
 
-## Steg 4: Rensa bort oanvända stilar och listor
-
-Låt oss nu rensa bort oanvända stilar och listor från dokumentet. Använd följande kod för att utföra rensningen:
+Nu är det dags att definiera rensningsalternativen. I det här exemplet kommer vi att ta bort oanvända stilar men behålla de oanvända listorna. Du kan justera dessa alternativ baserat på dina behov.
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-doc. Cleanup(cleanupOptions);
 ```
 
- Denna kod rensar bort oanvända stilar och listor från dokumentet med de angivna alternativen. I det här exemplet aktiverade vi`UnusedStyles` alternativet för att ta bort oanvända stilar och inaktivera`UnusedLists` möjlighet att behålla listorna även om de inte används.
+## Steg 4: Utför rensningen
 
-## Steg 5: Räkna stilar och listor efter rengöring
-
-Efter att ha gjort rensningen kommer vi att räkna stilarna och listorna igen för att kontrollera om de har komprimerats. Använd följande kod för att visa de nya räknarna:
+Med våra saneringsalternativ inställda kan vi nu rensa upp dokumentet. Detta steg kommer att ta bort de oanvända stilarna och behålla de oanvända listorna intakta.
 
 ```csharp
-Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-				  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
+doc.Cleanup(cleanupOptions);
 ```
 
-Dessa instruktioner visar antalet stilar och listor som återstår efter rengöring.
+## Steg 5: Kontrollera stilar och listor efter rengöring
 
-### Exempel på källkod för rengöring av oanvända stilar och listor med Aspose.Words för .NET
+För att se effekten av vår rensning, låt oss kontrollera antalet stilar och listor igen. Detta kommer att visa hur många stilar som togs bort.
 
 ```csharp
-
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Unused styles.docx");
-
-	// I kombination med de inbyggda stilarna har dokumentet nu åtta stilar.
-	// En anpassad stil markeras som "använd" medan det finns någon text i dokumentet
-	// formaterad i den stilen. Det betyder att de 4 stilarna vi har lagt till för närvarande är oanvända.
-	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
-					  $"Count of lists before Cleanup: {doc.Lists.Count}");
-
-	//Rensar oanvända stilar och listor från dokumentet beroende på givna CleanupOptions.
-	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-	doc.Cleanup(cleanupOptions);
-
-	Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-					  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
-    
+Console.WriteLine($"Count of styles after Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 ```
 
- Var noga med att ange rätt dokumentsökväg i`dataDir` variabel.
+## Steg 6: Spara det rengjorda dokumentet
 
-Du har nu lärt dig hur du rensar bort oanvända stilar och listor från ett dokument med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide som finns i den här handledningen kan du enkelt tillämpa den här funktionen på dina egna dokument.
+Låt oss slutligen spara vårt rensade dokument. Detta säkerställer att alla ändringar sparas och att ditt dokument är så snyggt som möjligt.
 
+```csharp
+doc.Save(dataDir + "CleanedDocument.docx");
+```
+
+## Slutsats
+
+Och där har du det! Du har lyckats rengöra ditt Word-dokument genom att ta bort oanvända stilar och listor med Aspose.Words för .NET. Det är som att rensa bort ditt digitala skrivbord, vilket gör dina dokument mer hanterbara och effektiva. Ge dig själv en klapp på axeln för ett väl utfört jobb!
+
+## FAQ's
+
+### Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt bibliotek som låter dig skapa, ändra och konvertera Word-dokument programmatiskt med C#.
+
+### Kan jag ta bort både oanvända stilar och listor samtidigt?
+Ja, du kan ställa in båda`UnusedLists`och`UnusedStyles` till`true` i`CleanupOptions` att ta bort båda.
+
+### Är det möjligt att ångra rensningen?
+Nej, när rensningen är klar och dokumentet har sparats kan du inte ångra ändringarna. Håll alltid en säkerhetskopia av ditt originaldokument.
+
+### Behöver jag en licens för Aspose.Words för .NET?
+ Ja, Aspose.Words för .NET kräver en licens för full funktionalitet. Du kan få en[tillfällig licens](https://purchase.aspose.com/temporary-license) eller[köp en](https://purchase.aspose.com/buy).
+
+### Var kan jag hitta mer information och support?
+ Du kan hitta detaljerad dokumentation[här](https://reference.aspose.com/words/net/) och få stöd från[Aspose forum](https://forum.aspose.com/c/words/8).

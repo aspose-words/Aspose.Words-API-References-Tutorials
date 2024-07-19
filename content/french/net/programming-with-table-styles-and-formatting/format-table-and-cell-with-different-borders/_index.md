@@ -30,20 +30,20 @@ Pour commencer à créer le tableau, nous utilisons le`StartTable()` méthode du
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // Définissez des bordures pour l’ensemble du tableau.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // Définissez le remplissage pour cette cellule.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // Spécifiez un remplissage de cellule différent pour la deuxième cellule.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // Effacer le formatage des cellules des opérations précédentes.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // Créez des bordures plus épaisses pour la première cellule de cette ligne. Ce sera différent
 // par rapport aux bordures définies pour le tableau.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ Félicitation ! Vous avez maintenant formaté un tableau et une cellule avec des
 ### Exemple de code source pour formater un tableau et une cellule avec différentes bordures à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Chemin d'accès à votre répertoire de documents
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//Définissez les bordures de l'ensemble du tableau.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// Définissez l'ombrage de la cellule pour cette cellule.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// Spécifiez un ombrage de cellule différent pour la deuxième cellule.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// Effacez le formatage des cellules des opérations précédentes.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// Créez des bordures plus grandes pour la première cellule de cette ligne. Ce sera différent
-	// par rapport aux bordures fixées pour la table.
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//Définissez les bordures de l'ensemble du tableau.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// Définissez l'ombrage de la cellule pour cette cellule.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// Spécifiez un ombrage de cellule différent pour la deuxième cellule.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// Effacez le formatage des cellules des opérations précédentes.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// Créez des bordures plus grandes pour la première cellule de cette ligne. Ce sera différent
+// par rapport aux bordures fixées pour la table.
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## Conclusion

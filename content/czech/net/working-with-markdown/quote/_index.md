@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Krok 3: Vytvoření stylů pro vnořené úrovně
 
- Můžeme vytvořit styly pro vnořené úrovně pomocí`Styles.Add` metoda`Document` objekt. V tomto příkladu vytváříme styl nazvaný "Citace1", který představuje úroveň vnořené nabídky.
+ Můžeme vytvořit styly pro vnořené úrovně pomocí`Styles.Add` metoda`Document`objekt. V tomto příkladu vytváříme styl nazvaný "Citace1", který představuje úroveň vnořené nabídky.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

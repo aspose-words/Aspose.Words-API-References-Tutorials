@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Ügyeljen arra, hogy cserélje ki`YOUR DOCUMENT DIRECTORY` a tényleges elérési úttal, ahová a dokumentumot menti.
+ Mindenképpen cserélje ki`YOUR DOCUMENT DIRECTORY` a tényleges elérési úttal, ahová a dokumentumot menti.
 
 ## 3. lépés: Inicializálja a DocumentBuilder alkalmazást
 
@@ -130,7 +130,7 @@ Tessék, itt van! Most tanulta meg, hogyan lehet egy Word-dokumentumban a könyv
 
 ### 1. Mozoghatok a könyvjelző elejére a vége helyett?
 
- Teljesen! Csak állítsd be a`isBookmarkStart` paraméterhez`true` és`isBookmarkEnd` nak nek`false` ban,-ben`MoveToBookmark` módszer.
+ Teljesen! Csak állítsd be a`isBookmarkStart` paraméterhez`true`és`isBookmarkEnd` nak nek`false` ban,-ben`MoveToBookmark` módszer.
 
 ### 2. Mi a teendő, ha a könyvjelző neve helytelen?
 

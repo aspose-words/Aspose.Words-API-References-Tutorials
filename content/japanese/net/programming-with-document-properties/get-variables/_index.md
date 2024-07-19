@@ -2,83 +2,117 @@
 title: 変数を取得する
 linktitle: 変数を取得する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメント変数を取得するためのステップバイステップ ガイド。
+description: Aspose.Words for .NET をマスターしましょう。このステップバイステップのガイドで、Word 文書から変数を読み込んで抽出する方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/programming-with-document-properties/get-variables/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントから変数を取得するための C# ソース コードについて説明します。この機能を使用すると、ドキュメントで定義された変数にアクセスできます。
+こんにちは、プログラマーの皆さん! Aspose.Words for .NET の世界に飛び込む準備はできていますか? シートベルトを締めてください。.NET アプリケーションで Word ドキュメントを簡単に処理できるようになる旅に出発します。このガイドでは、必要なすべてのことを、わかりやすい説明と会話調で段階的に説明します。コーヒーを 1 杯飲み、くつろいで、始めましょう!
 
-## ステップ1: プロジェクトのセットアップ
+## 前提条件
 
-まず、お気に入りの IDE で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET ライブラリが参照されていることを確認します。
+詳細に入る前に、必要なものがすべて揃っていることを確認しましょう。
 
-## ステップ2: ドキュメントの読み込み
+1. C# と .NET の基礎知識: C# と .NET フレームワークの基礎を理解している必要があります。
+2.  Aspose.Words for .NETライブラリ: Aspose.Words for .NETライブラリを以下からダウンロードしてください。[ここ](https://releases.aspose.com/words/net/).
+3. Visual Studio: マシンに Visual Studio がインストールされていることを確認してください。
 
-この手順では、変数を取得する Word 文書を読み込みます。次のコードを使用して文書を読み込みます。
+## 名前空間のインポート
 
-```csharp
-//ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-```
-
-交換する`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが配置されているディレクトリの実際のパスを入力します。
-
-## ステップ3: 変数の取得
-
-次に、ドキュメントで定義された変数を取得します。次のコードを使用します。
+まず最初に、必要な名前空間をインポートしましょう。これは、大きなパフォーマンスの前に舞台を設定するようなものです。
 
 ```csharp
-string variables = "";
-foreach(KeyValuePair<string, string> entry in doc.Variables)
-{
-     string name = entry.Key;
-     string value = entry.Value;
-     if (variables == "")
-     {
-         variables = "Name: " + name + ", " + "Value: " + value;
-     }
-     else
-     {
-         variables = variables + "\nName: " + name + ", " + "Value: " + value;
-     }
-}
-
-Console.WriteLine("\nThe document contains the following variables:\n" + variables);
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
 ```
 
-このコードは、ドキュメント変数内の各キーと値のペアを反復処理し、各変数の名前と値を取得します。その後、変数が連結され、各変数の情報が表示されます。
+## ステップ1: プロジェクトの設定
 
-### Aspose.Words for .NET を使用して変数を取得するためのサンプル ソース コード
+### 新しいプロジェクトの作成
 
-```csharp
+まず、Visual Studio で新しいプロジェクトを作成しましょう。
 
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Document.docx");
-	
-	string variables = "";
-	foreach (KeyValuePair<string, string> entry in doc.Variables)
-	{
-		string name = entry.Key;
-		string value = entry.Value;
-		if (variables == "")
-		{
-			variables = "Name: " + name + "," + "Value: {1}" + value;
-		}
-		else
-		{
-			variables = variables + "Name: " + name + "," + "Value: {1}" + value;
-		}
-	}
-	
+1. Visual Studio を開き、「新しいプロジェクトの作成」を選択します。
+2. 「コンソール アプリ (.NET Core)」を選択し、「次へ」をクリックします。
+3. プロジェクトに名前を付けて、「作成」をクリックします。
 
-	Console.WriteLine("\nDocument have following variables " + variables);
+### Aspose.Words のインストール
 
-```
+それでは、Aspose.Words ライブラリをプロジェクトに導入しましょう。
 
-正しいドキュメントパスを必ず指定してください。`dataDir`変数。
+1. Visual Studio で NuGet パッケージ マネージャーを開きます。
+2. 「Aspose.Words」を検索してインストールします。
 
-Aspose.Words for .NET を使用してドキュメントから変数を取得する方法を学習しました。このチュートリアルで提供されるステップバイステップのガイドに従うことで、自分のドキュメントから変数に簡単にアクセスして表示できます。
+## ステップ2: Word文書の読み込み
+
+ Word文書をアプリケーションに読み込みましょう。簡単な`Document`これに反対します。
+
+1. ドキュメント ディレクトリへのパスを保持する新しい文字列変数を作成します。
+    ```csharp
+    string dataDir = "YOUR DOCUMENT DIRECTORY";
+    ```
+
+2. 作成する`Document`オブジェクトを作成してドキュメントを読み込みます。
+    ```csharp
+    Document doc = new Document(dataDir + "Document.docx");
+    ```
+
+このステップは、本を開くようなものです。プログラムにドキュメントの場所を指示し、それを開いて作業を開始できるようにします。
+
+## ステップ3: ドキュメント変数の抽出
+
+それでは、ドキュメントから変数を抽出しましょう。
+
+1. 変数を保持するための文字列変数を作成します。
+    ```csharp
+    string variables = "";
+    ```
+
+2. ドキュメント変数をループし、それらを文字列変数に連結します。
+    ```csharp
+    foreach (KeyValuePair<string, string> entry in doc.Variables)
+    {
+        string name = entry.Key;
+        string value = entry.Value;
+        if (variables == "")
+        {
+            variables = "Name: " + name + ", " + "Value: {1}" + value;
+        }
+        else
+        {
+            variables = variables + " Name: " + name + ", " + "Value: {1}" + value;
+        }
+    }
+    ```
+
+3. 変数を出力します:
+    ```csharp
+    Console.WriteLine("\nDocument has the following variables: " + variables);
+    ```
+
+
+このステップは、本をめくって重要なメモをすべて書き留めるようなものだと考えてください。ドキュメントを調べて、キーと値のペアを抽出し、後で表示するために文字列に保存します。
+
+## 結論
+
+これで完了です。Aspose.Words for .NET を使用して Word 文書を読み込み、その変数を抽出できました。これらの手順に従うことで、.NET アプリケーションで Word 文書を簡単に操作できます。ライブラリの機能を試して探索し続け、他に何ができるかを確認してください。
+
+## よくある質問
+
+### Aspose.Words for .NET を他のプログラミング言語で使用できますか?
+はい、Aspose.Words は複数の言語をサポートしていますが、このチュートリアルでは C# に焦点を当てています。
+
+### Aspose.Words の一時ライセンスを取得するにはどうすればよいですか?
+臨時免許証は以下から取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
+
+### Aspose.Words で他のドキュメント形式を操作する方法はありますか?
+もちろんです! Aspose.Words は、DOC、DOCX、ODT、RTF など、さまざまな形式をサポートしています。
+
+### Aspose.Words を Web アプリケーションに使用できますか?
+はい、Aspose.Words を Web アプリケーション、デスクトップ アプリケーションなどに統合できます。
+
+### その他の例やドキュメントはどこで見つかりますか?
+チェックしてください[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)より多くの例と詳細なガイドについては、こちらをご覧ください。

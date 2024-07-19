@@ -55,13 +55,13 @@ Document doc = new Document();
 Shape shape = new Shape(doc, ShapeType.TextBox);
 TextBox textBox = shape.TextBox;
 
-// كسر الارتباط إلى الأمام.
+// كسر الرابط إلى الأمام.
 textBox.BreakForwardLink();
 
 // قطع الارتباط الأمامي عن طريق تعيين قيمة فارغة.
 textBox. Next = null;
 
-// قم بفصل الرابط الذي يؤدي إلى مربع النص هذا.
+// قم بفصل الارتباط الذي يؤدي إلى مربع النص هذا.
 textBox.Previous?.BreakForwardLink();
 ```
 

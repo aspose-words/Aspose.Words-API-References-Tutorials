@@ -127,4 +127,4 @@ Aspose.Words admite la generación de múltiples tablas de contenido con diferen
 Sí, Aspose.Words garantiza la compatibilidad con varias versiones de los formatos de Microsoft Word.
 
 ### ¿Dónde puedo encontrar más ayuda y soporte para Aspose.Words?
-Para obtener más ayuda, visite el[Foro Aspose.Words](https://forum.aspose.com/c/words/8) o echa un vistazo a[documentación oficial](https://reference.aspose.com/words/net/).
+ Para obtener más ayuda, visite el[Foro Aspose.Words](https://forum.aspose.com/c/words/8) o echa un vistazo a[documentación oficial](https://reference.aspose.com/words/net/).

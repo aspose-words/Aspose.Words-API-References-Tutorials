@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### F: Wie kann ich einen Knoten in einem verfolgten Dokument verschieben, ohne Revisionen zu generieren?
 
- A: Wenn Sie einen Knoten in einem verfolgten Dokument verschieben möchten, ohne Revisionen zu generieren, können Sie den`Remove` Und`InsertAfter` oder`InsertBefore` Methoden der`Node` Objekt. Um beispielsweise einen Absatz hinter einen anderen Absatz zu verschieben, können Sie den folgenden Code verwenden:
+ A: Wenn Sie einen Knoten in einem verfolgten Dokument verschieben möchten, ohne Revisionen zu generieren, können Sie den`Remove`Und`InsertAfter` oder`InsertBefore` Methoden der`Node` Objekt. Um beispielsweise einen Absatz hinter einen anderen Absatz zu verschieben, können Sie den folgenden Code verwenden:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

@@ -2,134 +2,137 @@
 title: Word 文書の行のブックマークを解読する
 linktitle: Word 文書の行のブックマークを解読する
 second_title: Aspose.Words ドキュメント処理 API
-description: Word 文書内のネストされた行のブックマークを解き、他のブックマークに影響を与えずに特定の行を削除する方法を学習します。
+description: Aspose.Words for .NET を使用すると、Word 文書内の絡まった行ブックマークを簡単に解くことができます。このガイドでは、よりクリーンで安全なブックマーク管理のプロセスを順を追って説明します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
+## 導入
 
-この記事では、上記の C# ソース コードを調べて、Aspose.Words for .NET ライブラリの Untangle Row Bookmarks 関数の使用方法を理解します。この関数を使用すると、行のブックマークの終了をブックマークの開始と同じ行に配置できます。
+Word 文書内の行をブックマークで削除すると、隣接する行のブックマークが台無しになってしまうという状況に遭遇したことはありませんか? これは、特に複雑な表を扱う場合には、非常にイライラさせられるものです。ありがたいことに、Aspose.Words for .NET は、行のブックマークを解くという強力なソリューションを提供します。 
+
+このガイドでは、Aspose.Words for .NET を使用して Word 文書内の行ブックマークを整理するプロセスについて説明します。コードをわかりやすい手順に分解し、各関数の目的を説明します。これにより、面倒なブックマークの問題に自信を持って対処できるようになります。
 
 ## 前提条件
 
-- C# 言語に関する基本的な知識。
-- Aspose.Words ライブラリがインストールされた .NET 開発環境。
+始める前に、いくつか必要なものがあります:
 
-## ステップ1: ドキュメントの読み込み
+1.  Aspose.Words for .NET: この商用ライブラリは、Word文書をプログラムで操作するための機能を提供します。2. 無料試用版は以下からダウンロードできます。[ダウンロードリンク](https://releases.aspose.com/words/net/)またはライセンスを購入する[買う](https://purchase.aspose.com/buy).
+3. C# 開発環境: Visual Studio またはその他の C# IDE は完全に動作します。
+4. 行ブックマーク付きの Word 文書: デモンストレーションのために、「Table column bookmarks.docx」というサンプル文書を使用します。
 
-私たちは`Document`ファイルから既存のドキュメントを読み込むクラス:
+## 名前空間のインポート
+
+最初のステップでは、必要な名前空間を C# プロジェクトにインポートします。これらの名前空間は、Aspose.Words for .NET から使用するクラスと機能へのアクセスを提供します。
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using System;
+```
+
+## ステップ1: Word文書を読み込む
+
+まず、絡み合った行のブックマークを含むWord文書を読み込みます。`Document`クラスは Aspose.Words でドキュメント操作を処理します。ドキュメントを読み込む方法は次のとおりです。
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; //ドキュメントの場所に置き換えます
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## ステップ2: 線のブックマークを解く
+交換を忘れないでください`"YOUR DOCUMENT DIRECTORY"`「Table column bookmarks.docx」ファイルへの実際のパスを入力します。
 
-私たちは`Untangle`行からブックマークを解きほぐす関数。この関数は、行のブックマークの終了をブックマークの開始と同じ行に配置するというカスタム タスクを実行します。
+## ステップ2: 行のブックマークを解く
+
+ここで魔法が起こるのです！`Untangle`関数は行のブックマークを解く処理を行います。その機能を詳しく見てみましょう。
 
 ```csharp
-Untangle(doc);
+private void Untangle(Document doc)
+{
+   foreach (Bookmark bookmark in doc.Range.Bookmarks)
+   {
+	   //ブックマークとブックマーク終了の両方の親行を取得します
+	   Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
+	   Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+	   //行が有効で隣接しているかどうかを確認する
+	   if (row1 != null && row2 != null && row1.NextSibling == row2)
+		   //ブックマークの終了を最上行の最後のセルの最後の段落に移動する
+		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+   }
+}
 ```
+
+コードが何をするのかを段階的に説明します。
+
+ドキュメント内のすべてのブックマークを反復処理するには、`foreach`ループ。
+各ブックマークについて、ブックマークの開始行（`bookmark.BookmarkStart`) とブックマークの終了 (`bookmark.BookmarkEnd` ）を使用して`GetAncestor`方法。
+次に、両方の行が見つかるかどうかを確認します（`row1 != null`そして`row2 != null`) であり、隣接する行である場合 (`row1.NextSibling == row2`)。これにより、隣接する行にまたがるブックマークのみが変更されます。
+条件が満たされた場合、ブックマーク終了ノードを最上行の最後のセルの最後の段落の末尾に移動します（`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) 効果的にそれらを解きほぐします。
 
 ## ステップ3: ブックマークで行を削除する
 
-私たちは`DeleteRowByBookmark`ブックマークによって特定の行を削除する関数:
+ブックマークが解かれたので、ブックマーク名を使って安全に行を削除できます。`DeleteRowByBookmark`関数はこのタスクを処理します:
 
 ```csharp
-DeleteRowByBookmark(doc, "ROW2");
+private void DeleteRowByBookmark(Document doc, string bookmarkName)
+{
+   Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+   Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+   row?.Remove();
+}
 ```
 
-## ステップ4: 他のブックマークの整合性を確認する
+この機能の詳細は次のとおりです。
 
-ブックマークの末尾がまだ存在するかどうかをチェックして、他のブックマークが破損していないことを確認します。
+ブックマーク名（`bookmarkName`) を入力します。
+対応するブックマークオブジェクトを取得するには、`doc.Range.Bookmarks[bookmarkName]`.
+次にブックマーク開始の親行を取得します。`GetAncestor` （`Untangle`関数）。
+最後に、ブックマークと行が存在するかどうかを確認します（`bookmark != null`そして
+
+## ステップ4: もつれが解けたことを確認する
+
+一方、`Untangle`関数は他のブックマークの安全性を確保する必要があるため、常に検証することをお勧めします。 解凍プロセスによって誤って別のブックマークの末尾が削除されていないかどうかを確認する方法は次のとおりです。
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-throw new Exception("Wrong, the end of the bookmark was deleted.");
+   throw new Exception("Wrong, the end of the bookmark was deleted.");
+```
 
+このコード スニペットは、「ROW2」ブックマークの行を削除した後、「ROW1」という名前のブックマークの末尾がまだ存在するかどうかを確認します。null の場合、例外がスローされ、アンタングル プロセスに問題があることが示されます。 
+
+## ステップ5: ドキュメントを保存する
+
+最後に、ブックマークを解いて行を削除した後、`Save`方法：
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Aspose.Words for .NET を使用して行ブックマークを解読するためのサンプル ソース コード
+これにより、もつれが解かれたブックマークと削除された行を含むドキュメントが、新しいファイル名「WorkingWithBookmarks.UntangleRowBookmarks.docx」で保存されます。 
 
-Aspose.Words for .NET を使用して行からブックマークを分離する完全なサンプル ソース コードは次のとおりです。
-
-
-```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Table column bookmarks.docx");
-
-	//これは、行のブックマークの終了をブックマークの開始と同じ行に配置するカスタム タスクを実行します。
-	Untangle(doc);
-
-	//これで、他の行のブックマークを損傷することなく、ブックマークによって行を簡単に削除できるようになりました。
-	DeleteRowByBookmark(doc, "ROW2");
-
-	//これは、他のブックマークが破損していないことを確認するためのものです。
-	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-		throw new Exception("Wrong, the end of the bookmark was deleted.");
-
-	doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
-
-```
-
-#### ソースコードを解読する
-```csharp
-
-private void Untangle(Document doc)
-        {
-            foreach (Bookmark bookmark in doc.Range.Bookmarks)
-            {
-                //ブックマークとブックマーク終了ノードの両方の親行を取得します。
-                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-                //両方の行が正常であり、ブックマークの開始と終了が隣接する行に含まれている場合、
-                //ブックマークの終了ノードを、一番上の行の最後のセルの最後の段落の末尾に移動します。
-                if (row1 != null && row2 != null && row1.NextSibling == row2)
-                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-            }
-        }
-
-```
-
-#### DeleteRowByBookmark ソースコード
-```csharp
-
- private void DeleteRowByBookmark(Document doc, string bookmarkName)
-        {
-            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
-
-            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
-            row?.Remove();
-        }
-
-```
 ## 結論
 
-この記事では、C# ソース コードを調べて、Aspose.Words for .NET の Untangle Row Bookmarks 機能の使用方法を理解しました。ステップ バイ ステップ ガイドに従って、行ブックマークを解き、他のブックマークに損傷を与えることなく特定の行を削除しました。
+これらの手順に従い、`Untangle`関数を使用すると、Aspose.Words for .NETを使用してWord文書内の行のブックマークを効果的に整理できます。これにより、ブックマークで行を削除しても、隣接する行の他のブックマークに予期しない影響が生じないことが保証されます。プレースホルダーを次のように置き換えることを忘れないでください。`"YOUR DOCUMENT DIRECTORY"`実際のパスとファイル名を入力します。
 
-### Word 文書の行のブックマークを解読するための FAQ
+## よくある質問
 
-#### Q: 行ブックマークのアンスクランブルは、テーブル内の行ブックマークでのみ機能しますか?
+### Aspose.Words for .NET は無料ですか?
 
-A: はい、行ブックマークの解読機能は、テーブル内の行ブックマークを解読するために特別に設計されています。この機能を使用すると、配列内の行ブックマークを処理し、ブックマークの終了がブックマークの開始と同じ行にあることを確認できます。
+ Aspose.Words for .NETは商用ライブラリで、無料トライアルもご利用いただけます。こちらからダウンロードできます。[ダウンロードリンク](https://releases.aspose.com/words/net/).
 
-#### Q: 行ブックマークの解読機能は元の文書の内容を変更しますか?
+### Word で行のブックマークを手動で解除できますか?
 
-A: はい、行ブックマークの解読機能は、行ブックマークの末尾をブックマークの先頭と同じ行に移動して元の文書を変更します。この機能を適用する前に、必ず文書のバックアップ コピーを保存してください。
+技術的には可能ですが、Word でブックマークを手動で解除するのは面倒で、エラーが発生しやすくなります。Aspose.Words for .NET はこのプロセスを自動化し、時間と労力を節約します。
 
-#### Q: Word 文書内の行ブックマークを識別するにはどうすればよいですか?
+### もし、`Untangle` function encounters an error?
 
-A: 行ブックマークは通常、表内の特定のセクションをマークするために使用されます。文書内のブックマークを参照し、ブックマークが表の行にあるかどうかを確認することで、行ブックマークを識別できます。
+コードには、アンタングル処理によって誤って別のブックマークの末尾が削除された場合に例外をスローする例外ハンドラーが含まれています。このエラー処理は、特定のニーズに合わせてカスタマイズできます。
 
-#### Q: 隣接していないテーブルの行ブックマークを解くことは可能ですか?
+### このコードを使用して、隣接していない行にまたがるブックマークを解くことはできますか?
 
-A: この記事で紹介されている行ブックマークの解読機能は、隣接する表の行ブックマークを解くように設計されています。隣接していない表の行ブックマークを解くには、ドキュメントの構造に応じてコードをさらに調整する必要がある場合があります。
+現在、コードは隣接する行にまたがるブックマークを解くことに重点を置いています。隣接しない行を処理するようにコードを変更するには、それらのシナリオを識別して処理するための追加のロジックが必要になります。
 
-#### Q: 行のブックマークを解いた後、他にどのような操作を実行できますか?
+### このアプローチの使用には何か制限がありますか?
 
-A: 行のブックマークが解除されると、必要に応じてさまざまな操作を実行できます。これには、ブックマークされた行の編集、削除、またはコンテンツの追加が含まれます。文書の残りの部分に不要な影響を与えないように、行のブックマークは慎重に扱ってください。
+このアプローチでは、ブックマークが表のセル内で適切に定義されていることを前提としています。ブックマークがセルの外側または予期しない場所に配置されている場合、解除プロセスが意図したとおりに機能しない可能性があります。

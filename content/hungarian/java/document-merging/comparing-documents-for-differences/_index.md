@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Cserélje ki`"original_document.docx"` és`"modified_document.docx"` a saját dokumentumaihoz vezető útvonalakkal.
+ Cserélje ki`"original_document.docx"`és`"modified_document.docx"` a saját dokumentumaihoz vezető útvonalakkal.
 
 ## 2. lépés: Hasonlítsa össze a dokumentumokat
 

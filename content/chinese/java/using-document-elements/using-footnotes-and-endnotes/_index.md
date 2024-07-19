@@ -107,7 +107,7 @@ public void setEndnoteOptions() throws Exception {
 
 ## 7. 结论
 
-在本教程中，我们探索了如何在 Aspose.Words for Java 中使用脚注和尾注。这些功能对于创建具有适当引文和参考的结构良好的文档非常有用。
+在本教程中，我们探索了如何在 Aspose.Words for Java 中使用脚注和尾注。这些功能对于创建具有适当引用和参考的结构良好的文档非常有用。
 
 现在您已经了解了如何使用脚注和尾注，您可以增强文档格式并使内容更加专业。
 
@@ -125,4 +125,4 @@ public void setEndnoteOptions() throws Exception {
 ### 4. 脚注和尾注在文档格式中重要吗？
 是的，脚注和尾注对于在文档中提供参考和附加信息至关重要。
 
-欢迎探索 Aspose.Words for Java 的更多功能并增强您的文档创建能力。祝您编码愉快！
+随意探索 Aspose.Words for Java 的更多功能并增强您的文档创建能力。祝您编码愉快！

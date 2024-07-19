@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Passaggio 2: crea un nuovo documento
 
- Va bene, iniziamo creando un nuovo documento Word. Utilizzeremo il`Document` E`DocumentBuilder` classi da Aspose.Words per far funzionare le cose.
+ Va bene, iniziamo creando un nuovo documento Word. Utilizzeremo il`Document`E`DocumentBuilder` classi da Aspose.Words per far funzionare le cose.
 
 ```csharp
 // Il percorso della directory dei documenti.
@@ -64,7 +64,7 @@ Adesso arriva la parte divertente. Inseriremo un campo TC nel nostro documento. 
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Questa riga di codice indica ad Aspose.Words di inserire un campo TC con il testo della voce "Testo voce". IL`\\f t` la parte è un interruttore che determina come viene visualizzata la voce nel sommario.
+ Questa riga di codice indica ad Aspose.Words di inserire un campo TC con il testo della voce "Testo voce". IL`\\f t`la parte è un interruttore che determina come viene visualizzata la voce nel sommario.
 
 ## Passaggio 4: salva il documento
 

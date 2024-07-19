@@ -2,58 +2,98 @@
 title: Nyelvtani és helyesírási hibák megjelenítése
 linktitle: Nyelvtani és helyesírási hibák megjelenítése
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre a nyelvtani és helyesírási hibák megjelenítésének lehetővé tételéhez egy dokumentumban az Aspose.Words for .NET segítségével.
+description: Ezzel az átfogó oktatóanyaggal megtudhatja, hogyan jeleníthet meg nyelvtani és helyesírási hibákat Word-dokumentumokban az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/programming-with-document-options-and-settings/show-grammatical-and-spelling-errors/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban végigvezetjük a C# forráskódon, hogy lehetővé tegye a nyelvtani és helyesírási hibák megjelenítését az Aspose.Words for .NET segítségével. Ez a funkció lehetővé teszi a nyelvtani és helyesírási hibák megtekintését a dokumentumban.
+Előfordult már azon, hogy fáradhatatlanul átfésüli a dokumentumokat, hogy minden apró nyelvtani és helyesírási hibát elkapjon? Ez olyan, mintha egy véget nem érő játékot játszanál a „Hol van Waldo”, nem igaz? Nos, ne aggódj tovább! Az Aspose.Words for .NET segítségével automatizálhatja a folyamatot, és rengeteg időt és fáradságot takaríthat meg. Nézzük meg, hogyan engedélyezheti a nyelvtani és helyesírási hibák megjelenítését Word-dokumentumaiban ezzel a remek eszközzel.
 
-## 1. lépés: A projekt beállítása
+## Előfeltételek
 
-A kezdéshez hozzon létre egy új C#-projektet kedvenc IDE-jében. Győződjön meg arról, hogy az Aspose.Words for .NET könyvtárra hivatkozik a projektben.
+Mielőtt elkezdené, győződjön meg arról, hogy minden szükséges eszközzel rendelkezik:
 
-## 2. lépés: A dokumentum betöltése
+1.  Aspose.Words for .NET: Töltse le és telepítse a könyvtárat innen[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztési környezet: Visual Studio vagy bármely más IDE, amely támogatja a .NET-et.
+3. Alapvető C# ismerete: Ismernie kell az alapvető C# programozási fogalmakat.
 
-Ebben a lépésben betöltjük azt a Word dokumentumot, amelyhez a nyelvtani és helyesírási hibákat szeretnénk megjeleníteni. A dokumentum betöltéséhez használja a következő kódot:
+## Névterek importálása
+
+A kezdéshez importálnia kell a szükséges névtereket. Ez biztosítja, hogy kódja hozzáférjen az Aspose.Words könyvtár összes funkciójához.
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+```
+
+Lépésről lépésre bontsuk le a nyelvtani és helyesírási hibák megjelenítési folyamatát a Word-dokumentumokban. Minden lépéshez tartozik egy cím és egy részletes magyarázat.
+
+## 1. lépés: Állítsa be projektjét
+
+ Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a projekt megfelelően van beállítva. Nyissa meg az IDE-jét, és hozzon létre egy új .NET-projektet. Adjon hozzá hivatkozást az Aspose.Words könyvtárhoz. Ha még nem töltötted le, letöltheted innen[itt](https://releases.aspose.com/words/net/).
+
+## 2. lépés: Határozza meg a dokumentumkönyvtárat
+
+Először is meg kell határoznia a dokumentumkönyvtár elérési útját. Itt találhatók a Word-dokumentumok.
+
+```csharp
+// A dokumentumok könyvtárának elérési útja.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a Word-dokumentumok tárolási útvonalával. Ez segít az Aspose.Wordsnek megtalálni a dokumentumot, amelyen dolgozni szeretne.
+
+## 3. lépés: Töltse be a dokumentumot
+
+Ezután be kell töltenie a feldolgozni kívánt dokumentumot. Az Aspose.Words ezt hihetetlenül egyszerűvé teszi.
+
+```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Cserélje ki`"YOUR DOCUMENTS DIRECTORY"` annak a könyvtárnak az elérési útjával, ahol a dokumentum található.
+ Itt,`Document.docx` annak a fájlnak a neve, amelyben ellenőrizni szeretné a nyelvtani és helyesírási hibákat. Győződjön meg arról, hogy ez a fájl létezik a megadott könyvtárban.
 
-## 3. lépés: Engedélyezze a hibakijelzést
+## 4. lépés: Nyelvtani és helyesírási hibák megjelenítésének engedélyezése
 
-Most engedélyezzük a nyelvtani és helyesírási hibák megjelenítését a dokumentumban. A hibakijelzés engedélyezéséhez használja a következő kódot:
+Most jön a szórakoztató rész! Csak néhány sornyi kóddal engedélyezheti a nyelvtani és helyesírási hibák megjelenítését.
 
 ```csharp
-doc. ShowGrammaticalErrors = true;
-doc. ShowSpellingErrors = true;
+doc.ShowGrammaticalErrors = true;
+doc.ShowSpellingErrors = true;
+```
 
+Ezek a tulajdonságok arra utasítják az Aspose.Words-t, hogy kiemelje a dokumentumban található nyelvtani és helyesírási hibákat, akárcsak a Word.
+
+## 5. lépés: Mentse el a módosított dokumentumot
+
+Végül el kell mentenie a dokumentumot a hibajelzések engedélyezése után. Ezzel létrehoz egy új fájlt az elvégzett módosításokkal.
+
+```csharp
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpellingErrors.docx");
 ```
 
-Ez a kód lehetővé teszi a nyelvtani hibák megjelenítését (`ShowGrammaticalErrors`) és helyesírási hibák (`ShowSpellingErrors`) a dokumentumban.
+Ezzel új néven menti a módosított dokumentumot, biztosítva, hogy ne írja felül az eredeti fájlt. Most már megnyithatja ezt az új fájlt, hogy megtekinthesse az összes nyelvtani és helyesírási hibát.
 
-### Példa forráskód a Nyelvtani és helyesírási hibák megjelenítéséhez az Aspose.Words for .NET használatával
+## Következtetés
 
-```csharp
+És megvan! Néhány egyszerű lépésben megtanulta, hogyan automatizálhatja a nyelvtani és helyesírási hibák Word-dokumentumban való megjelenítésének folyamatát az Aspose.Words for .NET segítségével. Ezzel nem csak időt takarít meg, hanem azt is, hogy dokumentumai hibamentesek és professzionálisak legyenek.
 
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Document.docx");
+ Egyébként, ha még nem próbálta ki az Aspose.Words for .NET-et, letölthet egy ingyenes próbaverziót[itt](https://releases.aspose.com/) . Ha licencet kell vásárolnia, megteheti[itt](https://purchase.aspose.com/buy) És ha valaha támogatásra van szüksége, ne habozzon felkeresni őket[fórum](https://forum.aspose.com/c/words/8).
 
-	doc.ShowGrammaticalErrors = true;
-	doc.ShowSpellingErrors = true;
+## GYIK
 
-	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpellingErrors.docx");
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, módosítását és konvertálását.
 
-```
+### Használhatom az Aspose.Words for .NET-et meglévő projektjeimben?
+Teljesen! Az Aspose.Words zökkenőmentesen integrálódik .NET-projektjeivel.
 
- Ügyeljen arra, hogy a megfelelő dokumentum elérési utat adja meg a`dataDir` változó.
+### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
+ A könyvtár letölthető a[weboldal](https://releases.aspose.com/words/net/) és adja hozzá a projekthez referenciaként.
 
-Most megtanulta, hogyan engedélyezheti a nyelvtani és helyesírási hibák megjelenítését egy dokumentumban az Aspose.Words for .NET segítségével. Az oktatóanyagban található lépésenkénti útmutató követésével könnyedén engedélyezheti ezt a funkciót saját dokumentumaiban.
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
+ Igen, ingyenes próbaverziót kaphat a webhelyen[itt](https://releases.aspose.com/).
+
+### Hol találom az Aspose.Words for .NET dokumentációját?
+ A dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).

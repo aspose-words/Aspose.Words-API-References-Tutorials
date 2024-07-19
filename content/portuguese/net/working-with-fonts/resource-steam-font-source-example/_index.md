@@ -99,7 +99,7 @@ Agora você dominou o processo de uso de um fluxo de recursos como fonte de font
 
 ###  Q3: Posso lidar com outros tipos de avisos com`IWarningCallback`?
 
- Sim o`IWarningCallback` interface pode lidar com vários tipos de avisos, não apenas com substituição de fontes.
+ Sim o`IWarningCallback`interface pode lidar com vários tipos de avisos, não apenas com substituição de fontes.
 
 ### Q4: Onde posso encontrar suporte para Aspose.Words?
 

@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2단계: 들여쓰기된 코드에 스타일 추가
 
-다음을 사용하여 들여쓰기된 코드에 대한 사용자 정의 스타일을 추가하겠습니다.`Styles.Add` 의 방법`Document` 물체. 이 예에서는 들여쓰기된 코드에 대해 "IndentedCode"라는 스타일을 만듭니다.
+ 다음을 사용하여 들여쓰기된 코드에 대한 사용자 정의 스타일을 추가하겠습니다.`Styles.Add` 의 방법`Document` 물체. 이 예에서는 들여쓰기된 코드에 대해 "IndentedCode"라는 스타일을 만듭니다.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

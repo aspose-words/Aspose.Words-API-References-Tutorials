@@ -32,7 +32,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 ```
 
 ## Étape 3 : Supprimer les sauts de section
-Pour supprimer les sauts de section, nous allons parcourir toutes les sections en commençant par la section qui précède la dernière et en passant à la première section. Dans la boucle, nous ajouterons le contenu de chaque section au début de la dernière section, puis supprimerons la section copiée.
+Pour supprimer les sauts de section, nous parcourrons toutes les sections en commençant par la section qui précède la dernière et en passant à la première section. Dans la boucle, nous ajouterons le contenu de chaque section au début de la dernière section, puis supprimerons la section copiée.
 
 ```csharp
 // Parcourez toutes les sections en commençant par la section qui précède la dernière et en passant à la première section.
@@ -46,7 +46,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 ```
 
 ## Étape 4 : Enregistrez le document modifié
- Enfin, nous enregistrerons le document modifié en utilisant le`Save` méthode. Spécifiez le chemin et le format du fichier de sortie souhaité (par exemple, DOCX) pour le document modifié.
+Enfin, nous enregistrerons le document modifié en utilisant le`Save` méthode. Spécifiez le chemin et le format du fichier de sortie souhaité (par exemple, DOCX) pour le document modifié.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

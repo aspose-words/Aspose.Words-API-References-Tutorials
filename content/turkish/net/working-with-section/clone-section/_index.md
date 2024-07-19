@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Adım 2: Belgeyi yükleyin ve bölümü kopyalayın
- Daha sonra, Word belgesini bir örneğine yükleyeceğiz.`Document` sınıf. Daha sonra kullanacağız`Clone` belgenin ilk bölümünü kopyalama yöntemi.
+ Daha sonra, Word belgesini bir örneğine yükleyeceğiz.`Document` sınıf. Daha sonra kullanacağız`Clone`belgenin ilk bölümünü kopyalama yöntemi.
 
 ```csharp
 // Belgeyi yükleyin

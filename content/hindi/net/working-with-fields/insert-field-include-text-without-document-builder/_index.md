@@ -1,6 +1,6 @@
 ---
-title: दस्तावेज़ बिल्डर के बिना टेक्स्ट शामिल करने के लिए फ़ील्ड डालें
-linktitle: डॉक्यूमेंट बिल्डर के बिना FieldIncludeText डालें
+title: डॉक्यूमेंट बिल्डर के बिना टेक्स्ट शामिल करने के लिए फ़ील्ड डालें
+linktitle: डॉक्यूमेंट बिल्डर के बिना फ़ील्डइंक्लूडटेक्स्ट डालें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
 description: .NET के लिए Aspose.Words के साथ अपने Word दस्तावेज़ों में FieldIncludeText फ़ील्ड सम्मिलित करना सीखें।
 type: docs

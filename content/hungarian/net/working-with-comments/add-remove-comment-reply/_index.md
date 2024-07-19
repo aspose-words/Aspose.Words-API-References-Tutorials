@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Comments.docx");
 ```
 
-## 2. lépés: Nyissa meg a megjegyzéseket és a válaszok kezelését
+## 2. lépés: Nyissa meg a Megjegyzések és a válaszok kezelését
 Ezután nyissa meg a megjegyzést a dokumentumból a GetChild metódussal a NodeType.Comment paraméterrel:
 
 ```csharp
@@ -35,7 +35,7 @@ Válasz eltávolításához a megjegyzésből használja a RemoveReply metódust
 comment.RemoveReply(comment.Replies[0]);
 ```
 
-Ha új választ szeretne hozzáadni a megjegyzéshez, használja az AddReply metódust, és adja meg a szerző nevét, a szerző kezdőbetűit, a dátumot és az időt, valamint a válasz szövegét:
+Ha új választ szeretne adni a megjegyzéshez, használja az AddReply metódust, és adja meg a szerző nevét, a szerző kezdőbetűit, a dátumot és az időt, valamint a válasz szövegét:
 
 ```csharp
 comment.AddReply("John Doe", "JD", new DateTime(2017, 9, 25, 12, 15, 0), "New reply");

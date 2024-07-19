@@ -73,7 +73,7 @@ R : Bien qu'Aspose.Words soit principalement conçu pour .NET, il prend égaleme
 
 #### Q : Puis-je modifier les options de chargement en fonction de mes besoins ?
 
-R : Absolument ! Aspose.Words propose diverses options de chargement que vous pouvez personnaliser en fonction de vos besoins spécifiques, garantissant une intégration transparente de la bibliothèque dans votre application.
+: Absolument ! Aspose.Words propose diverses options de chargement que vous pouvez personnaliser en fonction de vos besoins spécifiques, garantissant une intégration transparente de la bibliothèque dans votre application.
 
 #### Q : Aspose.Words prend-il en charge d'autres formats de document ?
 

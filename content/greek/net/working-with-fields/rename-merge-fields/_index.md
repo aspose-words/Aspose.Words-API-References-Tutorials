@@ -48,7 +48,7 @@ foreach(Field f in doc.Range.Fields)
 
 ## Βήμα 4: Αποθήκευση του εγγράφου
 
- Τέλος, ονομάζουμε το`Save()` μέθοδο αποθήκευσης του τροποποιημένου εγγράφου.
+ Τέλος, ονομάζουμε το`Save()` μέθοδος αποθήκευσης του τροποποιημένου εγγράφου.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");

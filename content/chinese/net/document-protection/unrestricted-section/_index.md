@@ -2,125 +2,143 @@
 title: Word 文档中不受限制的部分
 linktitle: Word 文档中不受限制的部分
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中定义不受限制的部分。
+description: 按照本分步指南使用 Aspose.Words for .NET 解锁 Word 文档中的特定部分。非常适合保护敏感内容。
 type: docs
 weight: 10
 url: /zh/net/document-protection/unrestricted-section/
 ---
-在本教程中，我们将指导您完成使用 Aspose.Words for .NET 的不受限制部分功能的步骤。此功能允许您定义 Word 文档中不受保护的特定部分，即使文档的其余部分受到保护。请按照以下步骤操作：
+## 介绍
 
-## 步骤 1：创建文档和章节
+大家好！准备好进入 Aspose.Words for .NET 的世界了吗？今天，我们将解决一个非常实用的问题：如何解锁 Word 文档中的特定部分，同时保护其他部分。如果您曾经需要保护文档的某些部分，但保留其他部分以供编辑，那么本教程适合您。让我们开始吧！
 
-首先创建 Document 类和 DocumentBuilder 对象的实例：
+## 先决条件
+
+在我们讨论细节之前，请确保您已准备好所需的一切：
+
+-  Aspose.Words for .NET：如果你还没有，你可以[点击下载](https://releases.aspose.com/words/net/).
+- Visual Studio：或任何其他与 .NET 兼容的 IDE。
+- 对 C# 的基本了解：对 C# 有一点熟悉将帮助您轻松完成本教程。
+-  Aspose 许可证：获取[免费试用](https://releases.aspose.com/)或者得到[临时执照](https://purchase.aspose.com/temporary-license/)如果您需要它进行测试。
+
+## 导入命名空间
+
+在开始编码之前，请确保已在 C# 项目中导入必要的命名空间：
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## 步骤 2：向文档添加内容
-使用 DocumentBuilder 对象向文档添加内容并插入分节符：
+现在，让我们一步一步地分解！
+
+## 步骤 1：设置你的项目
+
+### 初始化您的文档目录
+
+首先，你需要设置文档目录的路径。这是保存 Word 文件的地方。
 
 ```csharp
-builder.Writeln("Section 1. Unprotected.");
-builder. InsertBreak(BreakType. SectionBreakContinuous);
-builder.Writeln("Section 2. Protected.");
-```
-
-## 步骤 3：保护文档和章节
-
-仅当启用文档保护且仅允许在表单字段中编辑时，部分保护才有效。您可以使用 Document 对象的 Protect() 方法来保护文档：
-
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
-
-确保指定正确的保护类型并设置所需的密码。
-
-## 步骤 4：禁用特定部分的保护
-
-默认情况下，所有部分都受到保护，但您可以使用 Section 对象的 ProtectedForForms 属性有选择地禁用特定部分的保护：
-
-```csharp
-doc.Sections[0].ProtectedForForms = false;
-```
-
-在此示例中，第一部分的保护被禁用。
-
-## 步骤 5：保存文档
-
-最后保存修改后的文档：
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-```
-
-确保指定正确的路径和文件名以保存包含不受限制部分的文档。
-
-### 使用 Aspose.Words for .NET 的“不受限制部分”的示例源代码
-
-以下是使用 Aspose.Words for .NET 的不受限制部分的完整源代码：
-
-
-```csharp
-
-//文档目录的路径。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-//插入两个包含一些文本的部分。
+```
+
+代替`"YOUR DOCUMENT DIRECTORY"`替换为您想要保存文档的实际路径。这很重要，因为它可以确保您的文件存储在正确的位置。
+
+### 创建新文档
+
+接下来，我们将使用 Aspose.Words 创建一个新文档。该文档将成为我们施展魔法的画布。
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+这`Document`类初始化一个新文档，并且`DocumentBuilder`帮助我们轻松地向文档添加内容。
+
+## 第 2 步：插入部分
+
+### 添加不受保护的部分
+
+让我们首先添加第一部分，该部分将保持不受保护。
+
+```csharp
 builder.Writeln("Section 1. Unprotected.");
+```
+
+这行代码将文本“第 1 节。不受保护。”添加到文档中。很简单，对吧？
+
+### 添加受保护部分
+
+现在，让我们添加第二个部分并插入分节符以将其与第一个部分分开。
+
+```csharp
 builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
-
-//仅当文档保护开启时，部分保护才有效，并且只允许在表单字段中进行编辑。
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-
-//默认情况下，所有部分都受到保护，但我们可以有选择地关闭保护。
-doc.Sections[0].ProtectedForForms = false;
-doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-
-doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
-
 ```
 
-通过遵循这些步骤，您将能够使用 Aspose.Words for .NET 轻松地在 Word 文档中定义不受限制的部分。
+这`InsertBreak`方法插入连续的分节符，允许我们对每个节进行不同的设置。
+
+## 步骤 3：保护文档
+
+### 启用文档保护
+
+为了保护文档，我们将使用`Protect`方法。此方法确保只有表单字段可编辑，除非另有规定。
+
+```csharp
+doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
+
+在这里，文档受密码保护，只有表单字段可以编辑。记得替换`"password"`输入您想要的密码。
+
+### 取消保护特定部分
+
+默认情况下，所有部分都受到保护。我们需要选择性地关闭第一部分的保护。
+
+```csharp
+doc.Sections[0].ProtectedForForms = false;
+```
+
+此行确保第一部分保持不受保护，同时文档的其余部分受到保护。
+
+## 步骤 4：保存并加载文档
+
+### 保存文档
+
+现在，是时候保存已应用保护设置的文档了。
+
+```csharp
+doc.Save(dataDir + "DocumentProtection.UnrestrictedSection.docx");
+```
+
+这会将文档保存在指定目录中，名称为`DocumentProtection.UnrestrictedSection.docx`.
+
+### 加载文档
+
+最后，我们加载文档来验证一切设置是否正确。
+
+```csharp
+doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
+```
+
+此步骤可确保文档正确保存并可重新加载而不会丢失保护设置。
 
 ## 结论
 
-在本教程中，我们探索了 Aspose.Words for .NET 的不受限制部分功能，该功能允许 Word 文档中的特定部分保持不受保护，而文档的其余部分受到保护。按照提供的步骤，您可以轻松定义文档中的部分，用户可以自由编辑内容，同时保持对其他部分的保护。Aspose.Words for .NET 提供了强大的文档保护和自定义功能，让您可以控制 Word 文档中的编辑权限。
+就这样！按照这些步骤，您已成功使用 Aspose.Words for .NET 创建了一个包含受保护和不受保护部分的 Word 文档。当您需要锁定文档的某些部分而保留其他部分可编辑时，此方法非常有用。
 
-### Word 文档中不受限制部分的常见问题解答
+## 常见问题解答
 
-#### 问：Aspose.Words for .NET 中不受限制的部分是什么？
+### 我可以保护多个部分吗？
+是的，您可以根据需要有选择地保护和取消保护多个部分。
 
-答：Aspose.Words for .NET 中的不受限制部分是 Word 文档中不受保护的特定部分，即使文档的其余部分受到保护。这些部分允许用户修改其中的内容，同时保持对文档其余部分的保护。
+### 保存文档后可以更改保护类型吗？
+是的，您可以重新打开文档并根据需要修改保护设置。
 
-#### 问：如何使用 Aspose.Words for .NET 创建不受限制的部分？
+### Aspose.Words 中还有哪些其他保护类型？
+ Aspose.Words 支持多种保护类型，包括`ReadOnly`, `Comments`， 和`TrackedChanges`.
 
-答：要使用 Aspose.Words for .NET 在 Word 文档中创建不受限制的部分，您可以按照以下步骤操作：
-1. 创建一个实例`Document`类和一个`DocumentBuilder`目的。
-2. 使用`DocumentBuilder`向文档添加内容并插入分节符。
-3. 使用保护文档`Protect`方法`Document`对象，指定所需的保护类型和密码。
-4. 通过设置禁用特定部分的保护`ProtectedForForms`相应财产`Section`反对`false`.
-5. 保存修改后的文档。
+### 我可以不使用密码来保护文档吗？
+是的，您无需指定密码即可保护文档。
 
-#### 问：一个 Word 文档中可以有多个不受限制的部分吗？
-
-答：是的，Word 文档中可以有多个不受限制的部分。通过选择性地禁用特定部分的保护，使用`ProtectedForForms`的财产`Section`对象，您可以定义多个部分，用户可以自由修改内容，同时保护其他部分。
-
-#### Q4. 我可以取消对最初受保护部分的保护吗？
-是的，您可以通过设置`ProtectedForForms`相应财产`Section`反对`false`。这允许用户不受任何限制地编辑该特定部分内的内容。
-
-#### 问：Word 文档可以应用哪些保护类型？
-
-答：Aspose.Words for .NET 提供了多种可应用于 Word 文档的保护类型，包括：
-- NoProtection：不应用任何保护。
-- AllowOnlyRevisions：用户只能对文档进行修改。
-- AllowOnlyComments：用户只能向文档添加评论。
-- AllowOnlyFormFields：用户只能编辑文档中的表单字段。
-- ReadOnly：该文档是只读的，不允许编辑。
-
-
+### 我如何检查某个部分是否受到保护？
+您可以检查`ProtectedForForms`属性来确定某个部分是否受到保护。

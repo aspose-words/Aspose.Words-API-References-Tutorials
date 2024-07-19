@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_strict/
 ---
 
-In deze zelfstudie verkennen we de meegeleverde C#-broncode om ervoor te zorgen dat Ooxml Iso 29500_2008_Strict voldoet bij het opslaan van een document met Aspose.Words voor .NET. Deze functie zorgt ervoor dat het gegenereerde document voldoet aan de ISO 29500_2008_Strict-specificaties.
+In deze zelfstudie verkennen we de meegeleverde C#-broncode om ervoor te zorgen dat Ooxml Iso 29500_2008_Strict wordt nageleefd bij het opslaan van een document met Aspose.Words voor .NET. Deze functie zorgt ervoor dat het gegenereerde document voldoet aan de ISO 29500_2008_Strict-specificaties.
 
 ## Stap 1: De omgeving instellen
 
@@ -33,7 +33,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- In deze stap configureren we de OOXML-opslagopties met behulp van de`OptimizeFor` En`OoxmlSaveOptions` methoden. We optimaliseren de documentcompatibiliteit voor de Word 2016-versie met behulp van`OptimizeFor`en naleving instellen`Iso29500_2008_Strict` gebruik makend van`Compliance`.
+ In deze stap configureren we de OOXML-opslagopties met behulp van de`OptimizeFor`En`OoxmlSaveOptions` methoden. We optimaliseren de documentcompatibiliteit voor de Word 2016-versie met behulp van`OptimizeFor`en naleving instellen`Iso29500_2008_Strict` gebruik makend van`Compliance`.
 
 ## Stap 4: Het document opslaan met Ooxml Iso 29500_2008_Strict compliance
 

@@ -106,6 +106,6 @@ A: Om het formaat van WMF-lettertypen naar metabestandsgrootte in een PDF-docume
 #### Vraag: Wat zijn de voordelen van het wijzigen van de grootte van WMF-lettertypen naar metabestandsgrootte in een PDF-document?
 A: De voordelen van het wijzigen van de grootte van WMF-lettertypen naar metabestandsgrootte in een PDF-document zijn:
 
-Verkleining van de PDF-bestandsgrootte: Door de grootte van WMF-lettertypen aan te passen aan de metabestandsgrootte kan de grootte van het gegenereerde PDF-document worden verkleind door de lettergrootte aan te passen aan de behoeften van de metabestanden.
+Verkleining van de PDF-bestandsgrootte: Door de grootte van WMF-lettertypen aan te passen aan de metabestandsgrootte kan de grootte van het gegenereerde PDF-document worden verkleind door de lettergrootte aan te passen aan de metabestandsbehoeften.
 
 Verbeterde prestaties: Door de grootte van WMF-lettertypen aan te passen aan de afmetingen van het metabestand, kan de weergave van het PDF-document sneller en efficiënter zijn.

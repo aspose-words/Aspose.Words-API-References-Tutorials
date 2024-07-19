@@ -72,6 +72,6 @@ A: Ja, Aspose.Words ermöglicht Ihnen, beim Laden des Dokuments eine andere Vers
 
 A: Durch das Festlegen der MS Word-Version wird sichergestellt, dass das Dokument entsprechend der beabsichtigten Formatierung und den Funktionen dieser bestimmten Version verarbeitet wird, wodurch eine konsistente Ausgabe gewährleistet wird.
 
-#### F: Ist die Verarbeitung von Aspose.Words auf die Verarbeitung von DOCX-Dokumenten beschränkt?
+#### F: Ist die Verarbeitung von Aspose.Words auf DOCX-Dokumente beschränkt?
 
 A: Nein, Aspose.Words unterstützt verschiedene Dokumentformate, darunter DOC, RTF, HTML, PDF und mehr, und ist damit ein vielseitiges Tool für die Handhabung verschiedener Dokumenttypen.

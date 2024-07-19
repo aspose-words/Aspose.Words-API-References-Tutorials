@@ -98,7 +98,7 @@ Un párrafo puede contener nodos como ejecuciones, formas, comentarios y otros e
  Sí, puedes manipular varios tipos de nodos, como formas, comentarios y más, comprobando su`NodeType`.
 
 ### 4. ¿Necesito una licencia para utilizar Aspose.Words para .NET?
- Puede comenzar con una prueba gratuita u obtener una licencia temporal de[aquí](https://purchase.aspose.com/temporary-license/).
+Puede comenzar con una prueba gratuita u obtener una licencia temporal de[aquí](https://purchase.aspose.com/temporary-license/).
 
 ### 5. ¿Dónde puedo encontrar más ejemplos y documentación?
  Visita el[Aspose.Words para la documentación de la API .NET](https://reference.aspose.com/words/net/) para más ejemplos y documentación detallada.

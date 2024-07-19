@@ -2,156 +2,133 @@
 title: Mit Lesezeichen versehenen Inhalt im Word-Dokument ein- und ausblenden
 linktitle: Mit Lesezeichen versehenen Inhalt im Word-Dokument ein- und ausblenden
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET mit Lesezeichen versehene Inhalte in Word-Dokumenten dynamisch anzeigen oder ausblenden.
+description: Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET mit Lesezeichen versehene Inhalte in Word-Dokumenten ein- und ausblenden.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
-
 ## Einführung
 
-Hallo! Wollten Sie schon immer die Sichtbarkeit bestimmter Inhalte in einem Word-Dokument basierend auf bestimmten Bedingungen steuern? Mit Aspose.Words für .NET können Sie mit Lesezeichen versehene Inhalte mit nur wenigen Codezeilen dynamisch ein- oder ausblenden. In diesem Tutorial führe ich Sie Schritt für Schritt durch den Vorgang und stelle sicher, dass Sie jeden Teil des Codes verstehen. Am Ende sind Sie ein Profi im Bearbeiten von Lesezeichen in Word-Dokumenten. Lassen Sie uns anfangen!
+Sind Sie bereit, in die Welt der Dokumentbearbeitung mit Aspose.Words für .NET einzutauchen? Egal, ob Sie Entwickler sind und Dokumentaufgaben automatisieren möchten oder einfach nur neugierig sind, wie Word-Dateien programmgesteuert bearbeitet werden können, hier sind Sie richtig. Heute werden wir untersuchen, wie Sie mit Aspose.Words für .NET mit Lesezeichen versehene Inhalte in einem Word-Dokument ein- und ausblenden können. Mit dieser Schritt-für-Schritt-Anleitung werden Sie zum Profi bei der Steuerung der Inhaltssichtbarkeit anhand von Lesezeichen. Lassen Sie uns anfangen!
 
 ## Voraussetzungen
 
-Bevor wir mit dem Tutorial beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+Bevor wir ins Detail gehen, gibt es ein paar Dinge, die Sie brauchen:
 
-1. Grundkenntnisse in C#: Sie sollten mit der Syntax und den Konzepten von C# vertraut sein.
-2.  Aspose.Words für .NET: Laden Sie es herunter[Hier](https://releases.aspose.com/words/net/) Wenn Sie noch nicht zum Kauf bereit sind, können Sie mit einem[Kostenlose Testphase](https://releases.aspose.com/).
-3. Visual Studio: Jede aktuelle Version funktioniert, es wird jedoch empfohlen, die neueste Version zu verwenden.
-4. .NET Framework: Stellen Sie sicher, dass es auf Ihrem Computer installiert ist.
-
-Bereit, loszulegen? Großartig! Beginnen wir mit dem Importieren der erforderlichen Namespaces.
+1. Visual Studio: Jede mit .NET kompatible Version.
+2.  Aspose.Words für .NET: Laden Sie es herunter[Hier](https://releases.aspose.com/words/net/).
+3. Grundlegende Kenntnisse in C#: Wenn Sie ein einfaches „Hallo Welt“-Programm schreiben können, sind Sie startklar.
+4. Ein Word-Dokument mit Lesezeichen: Für dieses Tutorial verwenden wir ein Beispieldokument mit Lesezeichen.
 
 ## Namespaces importieren
 
-Um Aspose.Words für .NET zu verwenden, müssen wir die erforderlichen Namespaces importieren. Dieser Schritt stellt sicher, dass wir Zugriff auf alle Klassen und Methoden haben, die wir verwenden werden.
+Als Erstes importieren wir die erforderlichen Namespaces. So stellen wir sicher, dass wir über alle Tools verfügen, die wir für unsere Aufgabe benötigen.
 
 ```csharp
 using System;
 using Aspose.Words;
-using Aspose.Words.Fields;
+using Aspose.Words.Bookmark;
 ```
 
-Diese Namespaces sind für die Arbeit mit Word-Dokumenten und die Bearbeitung ihres Inhalts von entscheidender Bedeutung.
+Mit diesen eingerichteten Namespaces können wir unsere Reise beginnen.
 
-## Schritt 1: Einrichten des Dokuments
+## Schritt 1: Einrichten Ihres Projekts
 
-Erstellen wir zunächst ein neues Word-Dokument und einen Dokumentgenerator. Mit dem Dokumentgenerator können wir problemlos Inhalte im Dokument hinzufügen und bearbeiten.
+Okay, legen wir los, indem wir unser Projekt in Visual Studio einrichten.
+
+### Neues Projekt erstellen
+
+Öffnen Sie Visual Studio und erstellen Sie ein neues Konsolen-App-Projekt (.NET Core). Geben Sie ihm einen einprägsamen Namen, etwa „BookmarkVisibilityManager“.
+
+### Aspose.Words für .NET hinzufügen
+
+Sie müssen Aspose.Words für .NET zu Ihrem Projekt hinzufügen. Sie können dies über den NuGet Package Manager tun.
+
+1. Gehen Sie zu Tools > NuGet-Paket-Manager > NuGet-Pakete für Lösung verwalten.
+2. Suchen Sie nach „Aspose.Words“.
+3. Installieren Sie das Paket.
+
+Großartig! Nachdem unser Projekt nun eingerichtet ist, können wir mit dem Laden unseres Dokuments fortfahren.
+
+## Schritt 2: Laden des Dokuments
+
+Wir müssen das Word-Dokument laden, das die Lesezeichen enthält. Für dieses Tutorial verwenden wir ein Beispieldokument mit dem Namen „Bookmarks.docx“.
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+// Der Pfad zum Dokumentverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-In diesem Schritt initialisieren wir ein neues Dokument und einen Dokumentgenerator. Damit richten wir unsere Umgebung für weitere Vorgänge ein.
+ Dieser Codeausschnitt setzt den Pfad zu Ihrem Dokumentverzeichnis und lädt das Dokument in das`doc` Objekt.
 
-## Schritt 2: Mit Lesezeichen versehenen Inhalt hinzufügen
+## Schritt 3: Mit Lesezeichen versehenen Inhalt ein-/ausblenden
 
-Als Nächstes fügen wir dem Dokument Inhalt hinzu und erstellen ein Lesezeichen darum. Mit diesem Lesezeichen können wir den Inhalt leichter identifizieren und bearbeiten.
+Jetzt kommt der spaßige Teil – das Anzeigen oder Ausblenden des Inhalts basierend auf Lesezeichen. Wir erstellen eine Methode namens`ShowHideBookmarkedContent` um damit umzugehen.
 
-```csharp
-builder.Write("This is some text before the bookmark.");
-builder.StartBookmark("MyBookmark");
-builder.Write("This is the bookmarked content.");
-builder.EndBookmark("MyBookmark");
-builder.Write("This is some text after the bookmark.");
-```
-
- Hier fügen wir vor und nach dem mit Lesezeichen versehenen Inhalt etwas Text hinzu.`StartBookmark` Und`EndBookmark` Methoden definieren die Grenzen des Lesezeichens.
-
-## Schritt 3: Einfügen eines bedingten Felds
-
-Um die Sichtbarkeit des mit Lesezeichen versehenen Inhalts zu steuern, verwenden wir ein bedingtes Feld. Dieses Feld überprüft eine Bedingung und zeigt den Inhalt entsprechend an oder verbirgt ihn.
+So schalten Sie die Sichtbarkeit mit Lesezeichen versehener Inhalte um:
 
 ```csharp
-builder.MoveToDocumentEnd();
-Field field = builder.InsertField("IF \"", null);
-builder.MoveTo(field.Start.NextSibling);
-builder.InsertField("MERGEFIELD MyBookmark", null);
-builder.Write("\" = \"true\" \"Visible\" \"Hidden\"");
-```
-
-In diesem Schritt fügen wir ein WENN-Feld ein, das den Wert des Lesezeichens überprüft. Wenn der Wert „true“ ist, wird „Sichtbar“ angezeigt, andernfalls „Versteckt“.
-
-## Schritt 4: Knoten neu anordnen
-
-Als Nächstes müssen wir die Knoten neu anordnen, um sicherzustellen, dass die bedingte Logik korrekt auf den mit Lesezeichen versehenen Inhalt angewendet wird.
-
-```csharp
-Bookmark bm = doc.Range.Bookmarks["MyBookmark"];
-Node currentNode = field.Start;
-bool flag = true;
-
-while (currentNode != null && flag)
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool isHidden)
 {
-    if (currentNode.NodeType == NodeType.Run && currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-        flag = false;
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
 
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-    currentNode = nextNode;
-}
-
-Node endNode = bm.BookmarkEnd;
-flag = true;
-
-while (currentNode != null && flag)
-{
-    if (currentNode.NodeType == NodeType.FieldEnd)
-        flag = false;
-
-    Node nextNode = currentNode.NextSibling;
-    bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-    endNode = currentNode;
-    currentNode = nextNode;
+    Node currentNode = bm.BookmarkStart;
+    while (currentNode != null && currentNode.NodeType != NodeType.BookmarkEnd)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+        {
+            Run run = currentNode as Run;
+            run.Font.Hidden = isHidden;
+        }
+        currentNode = currentNode.NextSibling;
+    }
 }
 ```
 
-Hier verschieben wir Knoten, um sicherzustellen, dass die Bedingung den mit Lesezeichen versehenen Inhalt richtig umfasst.
+### Aufschlüsselung der Methode
 
-## Schritt 5: Serienbrief ausführen
+-  Lesezeichen abrufen:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` holt das Lesezeichen.
+- Knotendurchquerung: Wir durchlaufen die Knoten innerhalb des Lesezeichens.
+-  Sichtbarkeit umschalten: Wenn der Knoten ein`Run` (ein zusammenhängender Textabschnitt) setzen wir`Hidden` Eigentum.
 
-Abschließend führen wir einen Serienbrief aus, um den Wert des Lesezeichens festzulegen und zu bestimmen, ob der Inhalt angezeigt oder ausgeblendet werden soll.
+## Schritt 4: Anwenden der Methode
 
-```csharp
-doc.MailMerge.Execute(new[] { "MyBookmark" }, new object[] { "true" });
-```
-
-Dieser Schritt setzt den Lesezeichenwert auf „true“, wodurch der Inhalt basierend auf unserer Bedingung sichtbar wird.
-
-## Schritt 6: Speichern des Dokuments
-
-Nach allen Manipulationen besteht der letzte Schritt darin, das geänderte Dokument zu speichern.
+Nachdem wir unsere Methode eingerichtet haben, wenden wir sie an, um Inhalte basierend auf einem Lesezeichen anzuzeigen oder auszublenden.
 
 ```csharp
-doc.Save("ShowHideBookmarkedContent.docx");
+ShowHideBookmarkedContent(doc, "MyBookmark1", true);
 ```
 
-Dabei speichern wir das Dokument unter einem aussagekräftigen Dateinamen, um die Änderungen kenntlich zu machen.
+Diese Codezeile verbirgt den Inhalt des Lesezeichens mit dem Namen „MyBookmark1“.
+
+## Schritt 5: Speichern des Dokuments
+
+Zum Schluss speichern wir unser geändertes Dokument.
+
+```csharp
+doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
+```
+
+Dadurch wird das Dokument mit den von uns vorgenommenen Änderungen gespeichert.
 
 ## Abschluss
 
- Und das ist es! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET mit Lesezeichen versehene Inhalte in einem Word-Dokument ein- oder ausblenden. In diesem Tutorial wurde das Erstellen eines Dokuments, das Hinzufügen von Lesezeichen, das Einfügen bedingter Felder, das Neuanordnen von Knoten und das Ausführen eines Seriendrucks behandelt. Aspose.Words bietet eine Fülle von Funktionen. Zögern Sie also nicht, die[API-Dokumentation](https://reference.aspose.com/words/net/) für erweiterte Funktionen.
+Und da haben Sie es! Sie haben gerade gelernt, wie Sie mit Aspose.Words für .NET mit Lesezeichen versehene Inhalte in einem Word-Dokument ein- und ausblenden. Dieses leistungsstarke Tool macht die Dokumentbearbeitung zum Kinderspiel, egal ob Sie Berichte automatisieren, Vorlagen erstellen oder einfach nur an Word-Dateien herumbasteln. Viel Spaß beim Programmieren!
 
-## FAQs
+## Häufig gestellte Fragen
 
-### 1. Was ist Aspose.Words für .NET?
+### Kann ich mehrere Lesezeichen gleichzeitig umschalten?
+ Ja, Sie können anrufen unter`ShowHideBookmarkedContent` Methode für jedes Lesezeichen, das Sie umschalten möchten.
 
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente programmgesteuert erstellen, ändern und konvertieren können. Sie wird häufig für Aufgaben zur Dokumentautomatisierung verwendet.
+### Hat das Ausblenden von Inhalten Auswirkungen auf die Struktur des Dokuments?
+Nein, das Ausblenden von Inhalten wirkt sich nur auf deren Sichtbarkeit aus. Der Inhalt bleibt im Dokument erhalten.
 
-### 2. Kann ich Aspose.Words für .NET kostenlos nutzen?
+### Kann ich diese Methode für andere Arten von Inhalten verwenden?
+Mit dieser Methode können Sie gezielt Textläufe umschalten. Für andere Inhaltstypen müssen Sie die Knotendurchlauflogik ändern.
 
- Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/). Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
+### Ist Aspose.Words für .NET kostenlos?
+ Aspose.Words bietet eine kostenlose Testversion an[Hier](https://releases.aspose.com/) , aber für den produktiven Einsatz ist eine Volllizenz erforderlich. Sie können diese erwerben[Hier](https://purchase.aspose.com/buy).
 
-### 3. Wie ändere ich andere Eigenschaften eines Lesezeichens?
-
- Mit Aspose.Words können Sie verschiedene Eigenschaften eines Lesezeichens bearbeiten, z. B. dessen Text und Position. Weitere Informationen finden Sie im[API-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Anweisungen.
-
-### 4. Wie erhalte ich Unterstützung für Aspose.Words für .NET?
-
-Sie erhalten Unterstützung unter[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
-
-### 5. Kann ich mit Aspose.Words für .NET andere Arten von Inhalten bearbeiten?
-
-Ja, Aspose.Words für .NET unterstützt verschiedene Arten der Inhaltsmanipulation, einschließlich Text, Bilder, Tabellen und mehr.
+### Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?
+ Sie können Unterstützung von der Aspose-Community erhalten[Hier](https://forum.aspose.com/c/words/8).

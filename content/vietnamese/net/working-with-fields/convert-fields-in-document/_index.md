@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 3: Tải tài liệu
- Sử dụng`Document` lớp Aspose.Words để tải tài liệu Word chứa các trường được liên kết mà bạn muốn chuyển đổi.
+ Sử dụng`Document`lớp Aspose.Words để tải tài liệu Word chứa các trường được liên kết mà bạn muốn chuyển đổi.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

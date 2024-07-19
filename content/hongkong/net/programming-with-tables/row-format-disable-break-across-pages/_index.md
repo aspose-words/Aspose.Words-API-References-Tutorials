@@ -2,7 +2,7 @@
 title: 行格式停用跨頁中斷
 linktitle: 行格式停用跨頁中斷
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 停用 Word 文件中跨多個頁面的表格換行符。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中停用跨多個頁面的表格換行符。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-tables/row-format-disable-break-across-pages/

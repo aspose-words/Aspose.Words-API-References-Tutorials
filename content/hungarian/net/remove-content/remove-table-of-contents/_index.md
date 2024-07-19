@@ -1,6 +1,6 @@
 ---
-title: Távolítsa el a tartalomjegyzéket a Word dokumentumból
-linktitle: Távolítsa el a tartalomjegyzéket a Word dokumentumból
+title: Távolítsa el a tartalomjegyzéket a Word-dokumentumból
+linktitle: Távolítsa el a tartalomjegyzéket a Word-dokumentumból
 second_title: Aspose.Words Document Processing API
 description: Ezzel a könnyen követhető oktatóanyaggal megtudhatja, hogyan távolíthat el tartalomjegyzéket (TOC) a Word dokumentumokból az Aspose.Words for .NET használatával.
 type: docs

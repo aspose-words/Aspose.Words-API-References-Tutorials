@@ -2,180 +2,144 @@
 title: Utwórz nową linię podpisu i ustaw identyfikator dostawcy
 linktitle: Utwórz nową linię podpisu i ustaw identyfikator dostawcy
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak utworzyć nową linię podpisu i ustawić identyfikator dostawcy w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak utworzyć nową linię podpisu i ustawić identyfikator dostawcy w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Przewodnik krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
 ---
-tym samouczku przeprowadzimy Cię przez kolejne etapy korzystania z funkcji Utwórz nową linię podpisu i Ustaw identyfikator dostawcy w Aspose.Words dla .NET. Ta funkcja umożliwia wstawienie linii podpisu do dokumentu programu Word, ustawienie opcji niestandardowych i podpisanie dokumentu. Wykonaj poniższe kroki:
+## Wstęp
 
-## Krok 1: Tworzenie dokumentu i generatora
+Hej, miłośnicy technologii! Czy zastanawiałeś się kiedyś, jak programowo dodać linię podpisu do dokumentów programu Word? Cóż, dzisiaj zajmiemy się właśnie tym, używając Aspose.Words dla .NET. Ten przewodnik przeprowadzi Cię przez każdy krok, dzięki czemu utworzenie nowej linii podpisu i ustawienie identyfikatora dostawcy w dokumentach programu Word będzie niezwykle proste. Niezależnie od tego, czy automatyzujesz przetwarzanie dokumentów, czy po prostu chcesz usprawnić przepływ pracy, ten samouczek pomoże Ci.
 
-Zacznij od utworzenia instancji klasy Document i obiektu DocumentBuilder:
+## Warunki wstępne
+
+Zanim ubrudzimy sobie ręce, upewnijmy się, że mamy wszystko, czego potrzebujemy:
+
+1.  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz go[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub dowolne inne środowisko programistyczne C#.
+3. .NET Framework: Upewnij się, że masz zainstalowaną platformę .NET Framework.
+4. Certyfikat PFX: Do podpisywania dokumentów potrzebny będzie certyfikat PFX. Można go uzyskać od zaufanego urzędu certyfikacji.
+
+## Importuj przestrzenie nazw
+
+Na początek zaimportujmy niezbędne przestrzenie nazw do Twojego projektu C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Signing;
+using System;
+```
+
+No dobrze, przejdźmy do konkretów. Oto szczegółowy opis każdego kroku tworzenia nowej linii podpisu i ustawiania identyfikatora dostawcy.
+
+## Krok 1: Utwórz nowy dokument
+
+Na początek musimy utworzyć nowy dokument Word. To będzie płótno dla naszej linii podpisu.
+
+```csharp
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Ustawianie opcji linii podpisu
+ W tym fragmencie inicjujemy nowy plik`Document` i a`DocumentBuilder` . The`DocumentBuilder` pomaga nam dodawać elementy do naszego dokumentu.
 
-Utwórz instancję klasy SignatureLineOptions i ustaw żądane opcje:
+## Krok 2: Zdefiniuj opcje linii podpisu
+
+Następnie definiujemy opcje naszej linii podpisu. Obejmuje to imię i nazwisko osoby podpisującej, stanowisko, adres e-mail i inne szczegóły.
 
 ```csharp
 SignatureLineOptions signatureLineOptions = new SignatureLineOptions
 {
-Sign = "vderyushev",
-SignerTitle = "QA",
-Email = "vderyushev@aspose.com",
-ShowDate=true,
-Default Instructions = false,
-Instructions = "Please sign here.",
-AllowComments = true
+    Signer = "vderyushev",
+    SignerTitle = "QA",
+    Email = "vderyushev@aspose.com",
+    ShowDate = true,
+    DefaultInstructions = false,
+    Instructions = "Please sign here.",
+    AllowComments = true
 };
 ```
 
-## Krok 3: Wstawianie linii podpisu
+Opcje te personalizują linię podpisu, czyniąc ją przejrzystą i profesjonalną.
 
-Użyj metody InsertSignatureLine() obiektu DocumentBuilder, aby wstawić linię podpisu do dokumentu:
+## Krok 3: Wstaw linię podpisu
+
+Po ustawieniu opcji możemy teraz wstawić linię podpisu do dokumentu.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-```
-
-## Krok 4: Ustaw identyfikator dostawcy
-
-Ustaw identyfikator dostawcy dla linii podpisu, korzystając z właściwości ProviderId:
-
-```csharp
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
-Pamiętaj, aby podać poprawny identyfikator dostawcy dla swojego przypadku użycia.
+ Tutaj`InsertSignatureLine` metoda dodaje linię podpisu i przypisujemy do niej unikalny identyfikator dostawcy.
 
-## Krok 5: Zapisz dokument
+## Krok 4: Zapisz dokument
 
-Zapisz zmodyfikowany dokument:
+Po wstawieniu linii podpisu zapiszmy dokument.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
 ```
 
-Pamiętaj, aby podać poprawną ścieżkę i nazwę pliku, aby zapisać dokument.
+Spowoduje to zapisanie dokumentu z nowo dodaną linią podpisu.
 
-## Krok 6: Podpisanie dokumentu
+## Krok 5: Skonfiguruj opcje podpisywania
 
-Aby podpisać dokument należy ustawić opcje podpisu i skorzystać z klasy DigitalSignatureUtil:
+Teraz musimy skonfigurować opcje podpisywania dokumentu. Obejmuje to identyfikator linii podpisu, identyfikator dostawcy, komentarze i czas podpisania.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-ProviderId = signatureLine.ProviderId,
-Comments = "Document was signed by vderyushev",
-SignTime = DateTime.Now
+    SignatureLineId = signatureLine.Id,
+    ProviderId = signatureLine.ProviderId,
+    Comments = "Document was signed by vderyushev",
+    SignTime = DateTime.Now
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-	dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions)
 ```
 
-Pamiętaj, aby podać prawidłowe ścieżki dokumentu, certyfikatu i podpisanego dokumentu.
+Opcje te zapewniają, że dokument zostanie podpisany przy użyciu prawidłowych szczegółów.
 
-### Przykładowy kod źródłowy dla opcji Utwórz nową linię podpisu i ustaw identyfikator dostawcy za pomocą Aspose.Words dla .NET
+## Krok 6: Utwórz posiadacza certyfikatu
 
-Oto kompletny kod źródłowy umożliwiający utworzenie nowej linii podpisu i ustawienie identyfikatora dostawcy za pomocą Aspose.Words dla .NET:
+Do podpisania dokumentu użyjemy certyfikatu PFX. Stwórzmy dla niego posiadacza certyfikatu.
 
 ```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLineOptions signatureLineOptions = new SignatureLineOptions
-	{
-		Signer = "vderyushev",
-		SignerTitle = "QA",
-		Email = "vderyushev@aspose.com",
-		ShowDate = true,
-		DefaultInstructions = false,
-		Instructions = "Please sign here.",
-		AllowComments = true
-	};
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).SignatureLine;
-	signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLineProviderId.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		ProviderId = signatureLine.ProviderId,
-		Comments = "Document was signed by vderyushev",
-		SignTime = DateTime.Now
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
-		dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Wykonując poniższe kroki, możesz łatwo utworzyć nową linię podpisu i ustawić identyfikator dostawcy w dokumencie Word za pomocą Aspose.Words dla .NET.
+ Pamiętaj o wymianie`"morzal.pfx"` z rzeczywistym plikiem certyfikatu i`"aw"` za pomocą hasła do certyfikatu.
+
+## Krok 7: Podpisz dokument
+
+Na koniec podpisujemy dokument za pomocą narzędzia do podpisu cyfrowego.
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx", 
+    dataDir + "SignDocuments.CreateNewSignatureLineAndSetProviderId.docx", certHolder, signOptions);
+```
+
+Spowoduje to podpisanie dokumentu i zapisanie go jako nowego pliku.
 
 ## Wniosek
 
-tym samouczku zbadaliśmy funkcję tworzenia nowej linii podpisu i ustawiania identyfikatora dostawcy w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z podanymi krokami, możesz łatwo wstawić linię podpisu z niestandardowymi opcjami i powiązać ją z konkretnym dostawcą za pomocą identyfikatora dostawcy. Dodawanie linii podpisu i dostosowywanie informacji o dostawcy zwiększa autentyczność i wiarygodność Twoich dokumentów. Aspose.Words dla .NET zapewnia potężny interfejs API do przetwarzania słów z liniami podpisu i certyfikatami cyfrowymi w dokumentach Word, umożliwiając automatyzację procesu podpisywania i zapewniając ważność dokumentów.
+I masz to! Pomyślnie utworzyłeś nową linię podpisu i ustawiłeś identyfikator dostawcy w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka niezwykle ułatwia zarządzanie zadaniami przetwarzania dokumentów i ich automatyzację. Wypróbuj i przekonaj się, jak może usprawnić Twój przepływ pracy.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Co to jest identyfikator dostawcy w linii podpisu?
+### Czy mogę dostosować wygląd linii podpisu?
+Absolutnie! Możesz dostosować różne opcje w pliku`SignatureLineOptions` do Twoich potrzeb.
 
-Odpowiedź: Identyfikator dostawcy w wierszu podpisu to unikalny identyfikator reprezentujący dostawcę podpisu cyfrowego. Pomaga zidentyfikować źródło lub organizację odpowiedzialną za podpis.
+### Co się stanie, jeśli nie mam certyfikatu PFX?
+Musisz go uzyskać od zaufanego urzędu certyfikacji. Jest to niezbędne do cyfrowego podpisywania dokumentów.
 
-#### P: Jak mogę utworzyć nową linię podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
+### Czy mogę dodać wiele linii podpisu do dokumentu?
+Tak, możesz dodać dowolną liczbę wierszy podpisu, powtarzając proces wstawiania z różnymi opcjami.
 
-Odp.: Aby utworzyć nową linię podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET, możesz wykonać następujące kroki:
-1.  Utwórz instancję`Document` klasa i A`DocumentBuilder` obiekt.
-2.  Utwórz instancję`SignatureLineOptions` class i ustaw żądane opcje linii podpisu.
-3.  Użyj`InsertSignatureLine` metoda`DocumentBuilder` obiekt, aby wstawić linię podpisu do dokumentu.
+### Czy Aspose.Words dla .NET jest kompatybilny z .NET Core?
+Tak, Aspose.Words dla .NET obsługuje .NET Core, dzięki czemu jest wszechstronny w różnych środowiskach programistycznych.
 
-#### P: Czy mogę dostosować opcje linii podpisu, takie jak imię i nazwisko osoby podpisującej, stanowisko i instrukcje?
-
- Odp.: Tak, możesz dostosować opcje linii podpisu. The`SignatureLineOptions` class udostępnia właściwości umożliwiające ustawienie żądanych opcji, takich jak`Signer`, `SignerTitle`, `Instructions`, `AllowComments`itp. Możesz modyfikować te właściwości przed wstawieniem linii podpisu.
-
-#### P: Jaki jest cel ustawienia identyfikatora dostawcy dla linii podpisu?
-
-O: Ustawienie identyfikatora dostawcy dla linii podpisu pomaga zidentyfikować źródło lub organizację odpowiedzialną za podpis cyfrowy. Umożliwia powiązanie podpisu z konkretnym dostawcą lub podmiotem, dostarczając dodatkowych informacji o pochodzeniu i wiarygodności podpisu.
-
-#### P: Jak mogę ustawić identyfikator dostawcy dla linii podpisu za pomocą Aspose.Words dla .NET?
-
-Odp.: Aby ustawić identyfikator dostawcy dla linii podpisu za pomocą Aspose.Words dla .NET, możesz wykonać następujące kroki:
-1.  Po wstawieniu linii podpisu uzyskaj dostęp do`ProviderId` własność`SignatureLine` obiekt.
-2.  Ustaw`ProviderId` właściwość na żądaną wartość identyfikatora dostawcy przy użyciu metody`Guid` typ danych.
-
-#### P: Czy mogę podpisać dokument po utworzeniu nowej linii podpisu i ustawieniu identyfikatora dostawcy?
-
- Odp.: Tak, po utworzeniu nowej linii podpisu i ustawieniu ID dostawcy możesz podpisać dokument. Aby podpisać dokument, musisz ustawić opcje podpisu, w tym identyfikator linii podpisu, identyfikator dostawcy, komentarze i godzinę podpisania. Następnie skorzystaj z`DigitalSignatureUtil.Sign` metoda podpisania dokumentu za pomocą certyfikatu cyfrowego.
-
-#### P: Czy mogę określić konkretny identyfikator dostawcy dla każdej linii podpisu w dokumencie programu Word?
-
-Odpowiedź: Tak, możesz określić konkretny identyfikator dostawcy dla każdej linii podpisu w dokumencie programu Word. Po wstawieniu każdej linii podpisu możesz ustawić identyfikator dostawcy dla tej konkretnej linii podpisu, uzyskując dostęp do`ProviderId` własność danego`SignatureLine` obiekt.
-
-#### P: Jak mogę zapisać zmodyfikowany dokument po utworzeniu nowej linii podpisu i ustawieniu identyfikatora dostawcy?
-
- O: Aby zapisać zmodyfikowany dokument po utworzeniu nowej linii podpisu i ustawieniu identyfikatora dostawcy, możesz skorzystać z opcji`Save` metoda`Document` obiekt. Podaj poprawną ścieżkę i nazwę pliku, aby zapisać dokument.
-
-#### P: Jaki format pliku obsługuje Aspose.Words dla .NET do tworzenia i podpisywania linii podpisu?
-
-Odp.: Aspose.Words dla .NET obsługuje tworzenie i podpisywanie linii podpisu w formacie pliku DOCX. Możesz tworzyć i podpisywać linie podpisu w plikach DOCX, korzystając z dostarczonych metod i klas.
-
-#### P: Czy mogę zmodyfikować identyfikator dostawcy lub inne opcje linii podpisu po jego podpisaniu?
-
-Odpowiedź: Po podpisaniu linia podpisu staje się częścią treści dokumentu i nie można jej oddzielnie modyfikować. Wszelkie modyfikacje linii podpisu, takie jak zmiana identyfikatora dostawcy lub innych opcji, wymagałyby usunięcia istniejącego podpisu i utworzenia nowej linii podpisu.
+### Jak bezpieczne są podpisy cyfrowe?
+Podpisy cyfrowe utworzone za pomocą Aspose.Words są bardzo bezpieczne, pod warunkiem, że użyjesz ważnego i zaufanego certyfikatu.

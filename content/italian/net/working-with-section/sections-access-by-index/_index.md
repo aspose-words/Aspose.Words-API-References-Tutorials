@@ -41,8 +41,8 @@ Section section = doc.Sections[0];
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm
 section.PageSetup.RightMargin = 90; // 3,17 cm
-section.PageSetup.TopMargin = 72; // 2,54 cm
-section.PageSetup.BottomMargin = 72; // 2,54 cm
+section.PageSetup.TopMargin = 72; // 2,54 centimetri
+section.PageSetup.BottomMargin = 72; // 2,54 centimetri
 section.PageSetup.HeaderDistance = 35.4; // 1,25 cm
 section.PageSetup.FooterDistance = 35.4; // 1,25 cm
 section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm
@@ -74,7 +74,7 @@ In questo tutorial, abbiamo visto come accedere alle sezioni di un documento Wor
 
 #### D: Come impostare la directory dei documenti in Aspose.Words per .NET?
 
- R: Per impostare il percorso della directory contenente i tuoi documenti, devi sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato. Ecco come farlo:
+R: Per impostare il percorso della directory contenente i tuoi documenti, devi sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato. Ecco come farlo:
 
 ```csharp
 // Percorso della directory dei documenti
@@ -100,8 +100,8 @@ Section section = doc.Sections[0];
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3,17 cm
 section.PageSetup.RightMargin = 90; // 3,17 cm
-section.PageSetup.TopMargin = 72; // 2,54 cm
-section.PageSetup.BottomMargin = 72; // 2,54 cm
+section.PageSetup.TopMargin = 72; // 2,54 centimetri
+section.PageSetup.BottomMargin = 72; // 2,54 centimetri
 section.PageSetup.HeaderDistance = 35.4; // 1,25 cm
 section.PageSetup.FooterDistance = 35.4; // 1,25 cm
 section.PageSetup.TextColumns.Spacing = 35.4; // 1,25 cm

@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Word belgesini yükleyin
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//"Hedef makinedeki yazı tiplerini kullan" özelliğiyle yedekleme seçeneklerini yapılandırın
+// "Hedef makinedeki yazı tiplerini kullan" özelliğiyle yedekleme seçeneklerini yapılandırın
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Belgeyi sabit HTML'ye dönüştür

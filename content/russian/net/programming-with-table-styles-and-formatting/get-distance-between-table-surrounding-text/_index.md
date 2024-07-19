@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Шаг 3. Получите расстояние между таблицей и окружающим текстом.
- Чтобы получить расстояние между таблицей и окружающим текстом, нам нужно получить доступ к таблице в документе, используя метод`GetChild()` метод и`NodeType.Table` свойство. Затем мы можем отобразить различные расстояния, используя свойства массива.`DistanceTop`, `DistanceBottom`, `DistanceRight` и`DistanceLeft`.
+ Чтобы получить расстояние между таблицей и окружающим текстом, нам нужно получить доступ к таблице в документе, используя метод`GetChild()` метод и`NodeType.Table` свойство. Затем мы можем отобразить различные расстояния, используя свойства массива.`DistanceTop`, `DistanceBottom`, `DistanceRight`и`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

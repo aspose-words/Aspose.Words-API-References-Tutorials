@@ -33,7 +33,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions`ويحدد`ExportRoundtripInformation` خيار ل`true` لتضمين معلومات رحلة الذهاب والإياب عند التصدير.
+ يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ويحدد`ExportRoundtripInformation` خيار ل`true` لتضمين معلومات رحلة الذهاب والإياب عند التصدير.
 
 ## الخطوة 4: تحويل وحفظ المستند إلى HTML
 

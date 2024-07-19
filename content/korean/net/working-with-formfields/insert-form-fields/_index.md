@@ -14,7 +14,7 @@ url: /ko/net/working-with-formfields/insert-form-fields/
 
 ## 1단계: Document 및 DocumentBuilder 개체 초기화
 
- 먼저, 초기화`Document` 그리고`DocumentBuilder` 사물:
+ 먼저, 초기화`Document`그리고`DocumentBuilder` 사물:
 
 ```csharp
 Document doc = new Document();

@@ -9,7 +9,7 @@ url: /tr/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
 ## giriiş
 
-Bir Word belgesinde belirli bir tablo hücresine geçmek göz korkutucu bir görev gibi görünebilir, ancak Aspose.Words for .NET ile bu çok kolay! İster raporları otomatikleştiriyor olun, ister dinamik belgeler oluşturuyor olun, ister yalnızca tablo verilerini programlı olarak değiştirmeniz gerekiyor olsun, bu güçlü kitaplık ihtiyacınızı karşılar. Aspose.Words for .NET'i kullanarak bir tablo hücresine nasıl taşınabileceğinizi ve ona nasıl içerik ekleyebileceğinizi inceleyelim.
+Bir Word belgesinde belirli bir tablo hücresine geçmek göz korkutucu bir görev gibi görünebilir, ancak Aspose.Words for .NET ile bu çok kolay! İster raporları otomatikleştiriyor olun, ister dinamik belgeler oluşturuyor olun, ister yalnızca tablo verilerini programlı olarak işlemek istiyor olun, bu güçlü kitaplık ihtiyacınızı karşılar. Aspose.Words for .NET'i kullanarak bir tablo hücresine nasıl taşınabileceğinizi ve ona nasıl içerik ekleyebileceğinizi inceleyelim.
 
 ## Önkoşullar
 
@@ -85,7 +85,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesinde belirli bir ta
  Evet, doğru tablo dizinini belirterek`MoveToCell` yöntemiyle belgedeki herhangi bir tablodaki herhangi bir hücreye gidebilirsiniz.
 
 ### Birden çok satıra veya sütuna yayılan hücreleri nasıl yönetirim?
- Şunu kullanabilirsiniz:`RowSpan` Ve`ColSpan` özellikleri`Cell` birleştirilmiş hücreleri yönetmek için sınıf.
+ Şunu kullanabilirsiniz:`RowSpan`Ve`ColSpan` özellikleri`Cell` birleştirilmiş hücreleri yönetmek için sınıf.
 
 ### Hücre içindeki metni biçimlendirmek mümkün mü?
  Kesinlikle! Kullanmak`DocumentBuilder` gibi yöntemler`Font.Size`, `Font.Bold`, ve diğerleri metninizi biçimlendirmek için.

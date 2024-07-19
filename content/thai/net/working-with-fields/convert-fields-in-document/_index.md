@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 3: ใส่เอกสาร
- ใช้`Document` คลาสของ Aspose.Words เพื่อโหลดเอกสาร Word ที่มีฟิลด์ที่เชื่อมโยงที่คุณต้องการแปลง
+ ใช้`Document`คลาสของ Aspose.Words เพื่อโหลดเอกสาร Word ที่มีฟิลด์ที่เชื่อมโยงที่คุณต้องการแปลง
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

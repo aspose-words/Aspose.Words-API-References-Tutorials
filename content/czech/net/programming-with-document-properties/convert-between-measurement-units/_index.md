@@ -2,33 +2,61 @@
 title: Převod mezi měrnými jednotkami
 linktitle: Převod mezi měrnými jednotkami
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce převodem mezi měrnými jednotkami v dokumentu pomocí Aspose.Words pro .NET.
+description: Naučte se převádět měrné jednotky v Aspose.Words pro .NET. Postupujte podle našeho podrobného průvodce a nastavte okraje, záhlaví a zápatí dokumentu v palcích a bodech.
 type: docs
 weight: 10
 url: /cs/net/programming-with-document-properties/convert-between-measurement-units/
 ---
+## Úvod
 
-tomto tutoriálu vás provedeme zdrojovým kódem C# pro převod mezi měrnými jednotkami pomocí Aspose.Words for .NET. Tato funkce umožňuje zadat okraje, vzdálenosti záhlaví a zápatí atd. v různých měrných jednotkách.
+Nazdárek! Jste vývojář pracující s dokumenty Word pomocí Aspose.Words for .NET? Pokud ano, může se stát, že budete často potřebovat nastavit okraje, záhlaví nebo zápatí v různých měrných jednotkách. Převod mezi jednotkami, jako jsou palce a body, může být složitý, pokud nejste obeznámeni s funkcemi knihovny. V tomto komplexním tutoriálu vás provedeme procesem převodu mezi měrnými jednotkami pomocí Aspose.Words for .NET. Pojďme se ponořit a zjednodušit tyto převody!
 
-## Krok 1: Nastavení projektu
+## Předpoklady
 
-Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistěte se, že váš projekt odkazuje na knihovnu Aspose.Words for .NET.
+Než začneme, ujistěte se, že máte následující:
 
-## Krok 2: Vytvoření dokumentu a konstruktoru
+1.  Aspose.Words for .NET Library: Pokud jste tak ještě neučinili, stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
+3. Základní znalost C#: Pochopení základů C# vám pomůže snadno pokračovat.
+4.  Aspose License: Volitelné, ale doporučené pro plnou funkčnost. Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
 
-V tomto kroku vytvoříme nový dokument a inicializujeme konstruktor. Použijte následující kód:
+## Importovat jmenné prostory
+
+Nejprve musíte importovat potřebné jmenné prostory. To je zásadní pro přístup ke třídám a metodám poskytovaným Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Layout;
+```
+
+Pojďme si rozebrat proces převodu měrných jednotek v Aspose.Words pro .NET. Chcete-li nastavit a přizpůsobit okraje a vzdálenosti dokumentu, postupujte podle těchto podrobných kroků.
+
+## Krok 1: Vytvořte nový dokument
+
+Nejprve musíte vytvořit nový dokument pomocí Aspose.Words.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Nakonfigurujte měrné jednotky
+ Tím se inicializuje nový dokument aplikace Word a a`DocumentBuilder` pro usnadnění tvorby a formátování obsahu.
 
-Nyní převedeme hodnoty pro okraje, vzdálenosti záhlaví a zápatí atd. v různých měrných jednotkách. Pomocí následujícího kódu zadejte hodnoty v konkrétních měrných jednotkách:
+## Krok 2: Přístup k nastavení stránky
+
+ Chcete-li nastavit okraje, záhlaví a zápatí, musíte mít přístup k`PageSetup` objekt.
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
+```
+
+To vám umožní přístup k různým vlastnostem nastavení stránky, jako jsou okraje, vzdálenost záhlaví a vzdálenost zápatí.
+
+## Krok 3: Převeďte palce na body
+
+ Aspose.Words ve výchozím nastavení používá jako měrnou jednotku body. Chcete-li nastavit okraje v palcích, budete muset palce převést na body pomocí`ConvertUtil.InchToPoint` metoda.
+
+```csharp
 pageSetup.TopMargin = ConvertUtil.InchToPoint(1.0);
 pageSetup.BottomMargin = ConvertUtil.InchToPoint(1.0);
 pageSetup.LeftMargin = ConvertUtil.InchToPoint(1.5);
@@ -37,23 +65,38 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
- Tento kód používá`ConvertUtil` třídy Aspose.Words pro převod zadaných hodnot na palce (`InchToPoint` ). Můžete také použít jiné metody převodu dostupné v`ConvertUtil` třídy pro převod hodnot na jiné měrné jednotky.
+Zde je rozpis toho, co každý řádek dělá:
+- Nastaví horní a dolní okraj na 1 palec (převedeno na body).
+- Nastaví levý a pravý okraj na 1,5 palce (převedeno na body).
+- Nastaví vzdálenosti záhlaví a zápatí na 0,2 palce (převedeno na body).
 
-### Příklad zdrojového kódu pro Convert Between Measurement Units pomocí Aspose.Words for .NET
+## Krok 4: Uložte dokument
+
+Nakonec dokument uložte, abyste zajistili použití všech změn.
 
 ```csharp
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	PageSetup pageSetup = builder.PageSetup;
-	pageSetup.TopMargin = ConvertUtil.InchToPoint(1.0);
-	pageSetup.BottomMargin = ConvertUtil.InchToPoint(1.0);
-	pageSetup.LeftMargin = ConvertUtil.InchToPoint(1.5);
-	pageSetup.RightMargin = ConvertUtil.InchToPoint(1.5);
-	pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
-	pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
-  
+doc.Save("ConvertedDocument.docx");
 ```
 
-Nyní jste se naučili, jak převádět mezi měrnými jednotkami při zadávání okrajů, vzdáleností záhlaví a zápatí atd. v dokumentu pomocí Aspose.Words for .NET. Podle podrobného průvodce poskytnutého v tomto tutoriálu můžete snadno zadat hodnoty v požadovaných měrných jednotkách ve svých vlastních dokumentech.
+Tím se dokument uloží se zadanými okraji a vzdálenostmi v bodech.
+
+## Závěr
+
+A tady to máte! Úspěšně jste převedli a nastavili okraje a vzdálenosti v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle těchto kroků můžete snadno zvládnout různé převody jednotek, takže proces přizpůsobení dokumentu bude hračkou. Pokračujte v experimentování s různými nastaveními a prozkoumejte rozsáhlé funkce, které Aspose.Words nabízí. Šťastné kódování!
+
+## FAQ
+
+### Mohu pomocí Aspose.Words převést jiné jednotky, jako jsou centimetry, na body?
+ Ano, Aspose.Words poskytuje metody jako`ConvertUtil.CmToPoint` pro převod centimetrů na body.
+
+### Je pro použití Aspose.Words pro .NET nutná licence?
+I když můžete Aspose.Words používat bez licence, některé pokročilé funkce mohou být omezeny. Získání licence zajišťuje plnou funkčnost.
+
+### Jak nainstaluji Aspose.Words for .NET?
+ Můžete si jej stáhnout z[webová stránka](https://releases.aspose.com/words/net/) a postupujte podle pokynů k instalaci.
+
+### Mohu nastavit různé jednotky pro různé části dokumentu?
+ Ano, můžete upravit okraje a další nastavení pro různé sekce pomocí`Section` třída.
+
+### Jaké další funkce Aspose.Words nabízí?
+ Aspose.Words podporuje širokou škálu funkcí včetně převodu dokumentů, hromadné korespondence a rozsáhlých možností formátování. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.

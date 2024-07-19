@@ -107,4 +107,4 @@ Sim, uma vez inserido o HTML, você pode manipular ainda mais o documento usando
  Você pode começar com um[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para recursos completos.
 
 ### Onde posso encontrar mais tutoriais e exemplos?  
- O[documentação](https://reference.aspose.com/words/net/) e[fóruns de suporte](https://forum.aspose.com/c/words/8)são ótimos lugares para começar, para obter guias mais detalhados e suporte da comunidade.
+ O[documentação](https://reference.aspose.com/words/net/)e[fóruns de suporte](https://forum.aspose.com/c/words/8)são ótimos lugares para começar, para obter guias mais detalhados e suporte da comunidade.

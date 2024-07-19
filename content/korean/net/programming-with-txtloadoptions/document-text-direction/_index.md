@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- 이 단계에서는 다음을 사용하여 문서의 첫 번째 단락에 액세스합니다.`FirstSection` 그리고`Body` 속성. 다음으로 우리는`ParagraphFormat.Bidi` 단락의 텍스트 방향을 가져오는 속성입니다. 그런 다음 이 값을 콘솔에 표시합니다.
+ 이 단계에서는 다음을 사용하여 문서의 첫 번째 단락에 액세스합니다.`FirstSection`그리고`Body` 속성. 다음으로 우리는`ParagraphFormat.Bidi` 단락의 텍스트 방향을 가져오는 속성입니다. 그런 다음 이 값을 콘솔에 표시합니다.
 
 ## 5단계: 문서 저장
 

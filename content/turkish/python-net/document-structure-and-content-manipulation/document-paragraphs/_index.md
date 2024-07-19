@@ -87,7 +87,7 @@ builder.writeln("Item A")
 builder.writeln("Item B")
 ```
 
-## Köprü Ekleme
+## Köprüler Ekleme
 
 Köprüler belgelerin etkileşimini artırır. Word belgenize nasıl köprü ekleyebileceğiniz aşağıda açıklanmıştır:
 

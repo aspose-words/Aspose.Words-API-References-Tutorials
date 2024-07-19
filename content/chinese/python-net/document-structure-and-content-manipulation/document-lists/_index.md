@@ -8,7 +8,7 @@ weight: 18
 url: /zh/python-net/document-structure-and-content-manipulation/document-lists/
 ---
 
-列表是许多文档的基本组成部分，它提供了一种结构化且有组织的方式来呈现信息。使用 Aspose.Words for Python，您可以无缝地在 Word 文档中创建和管理列表。在本教程中，我们将指导您完成使用 Aspose.Words Python API 处理列表的过程。
+列表是许多文档的基本组成部分，提供了一种结构化且有组织的信息呈现方式。使用 Aspose.Words for Python，您可以无缝地在 Word 文档中创建和管理列表。在本教程中，我们将指导您完成使用 Aspose.Words Python API 处理列表的过程。
 
 ## Word 文档中的列表简介
 

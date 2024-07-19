@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Langkah 3: Akses baris untuk memodifikasi
- Untuk mengubah format baris tabel, kita perlu menavigasi ke baris tertentu dalam tabel. Kami menggunakan`GetChild()` Dan`FirstRow` metode untuk mendapatkan referensi ke baris pertama tabel.
+ Untuk mengubah format baris tabel, kita perlu menavigasi ke baris tertentu dalam tabel. Kami menggunakan`GetChild()`Dan`FirstRow` metode untuk mendapatkan referensi ke baris pertama tabel.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

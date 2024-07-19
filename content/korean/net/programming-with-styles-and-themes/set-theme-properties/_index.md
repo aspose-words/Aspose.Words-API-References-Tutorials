@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- 이 단계에서는`Theme` 의 대상`Document`문서 테마를 가져오는 개체입니다. 다음으로 보조 글꼴(`MinorFonts.Latin`) 및 색상(`Colors.Hyperlink`).
+이 단계에서는`Theme` 의 대상`Document` 문서 테마를 가져오는 개체입니다. 다음으로 보조 글꼴(`MinorFonts.Latin`) 및 색상(`Colors.Hyperlink`).
 
 ## 4단계: 문서 저장
 

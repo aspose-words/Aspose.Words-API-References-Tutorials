@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Vložte objekt OLE
- Použijte Tvůrce dokumentů`InsertOleObject` metoda pro vložení objektu OLE do dokumentu. Zadejte adresu URL objektu OLE, typ objektu, možnosti zobrazení a další nezbytná nastavení.
+ Použijte Tvůrce dokumentů`InsertOleObject`metoda pro vložení objektu OLE do dokumentu. Zadejte adresu URL objektu OLE, typ objektu, možnosti zobrazení a další nezbytná nastavení.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlsoubor", true, true, null);
@@ -57,7 +57,7 @@ Toto je kompletní ukázka kódu pro vložení objektu OLE pomocí Aspose.Words 
 
 Závěrem lze říci, že vkládání objektů OLE do dokumentu aplikace Word je výkonná funkce, kterou nabízí Aspose.Words for .NET. Pomocí této knihovny můžete snadno vkládat objekty OLE, jako jsou soubory HTML, tabulky Excel, prezentace PowerPoint atd., do dokumentů aplikace Word.
 
-V tomto článku jsme prošli podrobným průvodcem, který vysvětluje zdrojový kód v C#, který ukazuje, jak vložit objekt OLE do dokumentu aplikace Word. Probrali jsme potřebné reference, vytvoření nového dokumentu a generátoru dokumentů a kroky pro vložení objektu OLE a uložení dokumentu.
+tomto článku jsme prošli podrobným průvodcem, který vysvětluje zdrojový kód v C#, který ukazuje, jak vložit objekt OLE do dokumentu aplikace Word. Probrali jsme potřebné reference, vytvoření nového dokumentu a generátoru dokumentů a kroky pro vložení objektu OLE a uložení dokumentu.
 
 ### Časté dotazy pro vkládání objektu OLE do dokumentu aplikace Word
 
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### Otázka: Jak vytvořit nový dokument a generátor dokumentů?
 
- Odpověď: Nový dokument můžete vytvořit pomocí`Document` třídu a tvůrce dokumentů pomocí`DocumentBuilder` třídy, jak je uvedeno níže:
+ Odpověď: Můžete vytvořit nový dokument pomocí`Document` třídu a tvůrce dokumentů pomocí`DocumentBuilder` třídy, jak je uvedeno níže:
 
 ```csharp
 Document doc = new Document();
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Otázka: Jak vložit objekt OLE do dokumentu?
 
- A: Použijte`InsertOleObject`metoda tvůrce dokumentů (`DocumentBuilder`) pro vložení objektu OLE do dokumentu. Zadejte adresu URL objektu OLE, typ objektu, možnosti zobrazení a další nezbytná nastavení. Zde je příklad:
+ A: Použijte`InsertOleObject` metoda tvůrce dokumentů (`DocumentBuilder`) pro vložení objektu OLE do dokumentu. Zadejte adresu URL objektu OLE, typ objektu, možnosti zobrazení a další nezbytná nastavení. Zde je příklad:
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlsoubor", true, true, null);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlsoubor", true, true, null
 
 #### Otázka: Jak uložit dokument?
 
- A: Použijte dokument`Save` způsob uložení dokumentu do souboru. Zde je příklad:
+ A: Použijte dokument`Save`způsob uložení dokumentu do souboru. Zde je příklad:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

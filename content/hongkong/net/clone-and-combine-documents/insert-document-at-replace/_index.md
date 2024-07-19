@@ -17,7 +17,7 @@ url: /zh-hant/net/clone-and-combine-documents/insert-document-at-replace/
 
 -  Visual Studio：確保您的電腦上安裝了 Visual Studio。如果您還沒有，您可以從以下位置下載[這裡](https://visualstudio.microsoft.com/).
 - Aspose.Words for .NET：您需要 Aspose.Words 函式庫。您可以從[阿斯普斯網站](https://releases.aspose.com/words/net/).
-- 基本 C# 知識：對 C# 和 .NET 的基本了解將幫助您遵循本教學。
+- 基本 C# 知識：對 C# 和 .NET 的基本了解將幫助您學習本教學。
 
 好吧，拋開這些，讓我們開始寫一些程式碼吧！
 
@@ -147,7 +147,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## 結論
 
-現在你就擁有了！使用 Aspose.Words for .NET 將一個文件插入另一個文件的綜合指南。透過執行這些步驟，您可以輕鬆地自動執行文件組裝和操作任務。無論您是要建立文件管理系統還是只是需要簡化文件處理工作流程，Aspose.Words 都是您值得信賴的助手。
+現在你就得到它了！使用 Aspose.Words for .NET 將一個文件插入另一個文件的綜合指南。透過執行這些步驟，您可以輕鬆地自動執行文件組裝和操作任務。無論您是要建立文件管理系統還是只是需要簡化文件處理工作流程，Aspose.Words 都是您值得信賴的助手。
 
 ## 常見問題解答
 

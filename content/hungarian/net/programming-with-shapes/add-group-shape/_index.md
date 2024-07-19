@@ -17,14 +17,14 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Hozzon létre egy új dokumentumot és csoportalakzatot
- Hozzon létre egy új példányt a`Document` osztály és`GroupShape`tiltakozik a dokumentummal való munkavégzésre.
+ Hozzon létre egy új példányt a`Document` osztály és`GroupShape` tiltakozik a dokumentummal való munkavégzésre.
 
 ```csharp
 Document doc = new Document();
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## 3. lépés: Hozzon létre és adjon hozzá alakzatokat a GroupShape-hez
- Hozzon létre egyedi formákat, mint pl`accentBorderShape` és`actionButtonShape` használni a`Shape` osztály. Tetszés szerint testreszabhatja tulajdonságaikat. Adja hozzá ezeket az alakzatokat a`groupShape` tárgy.
+ Hozzon létre egyedi formákat, mint pl`accentBorderShape`és`actionButtonShape` használni a`Shape` osztály. Tetszés szerint testreszabhatja tulajdonságaikat. Adja hozzá ezeket az alakzatokat a`groupShape` tárgy.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## 4. lépés: Állítsa be a GroupShape méreteit
- Állítsa be a szélességet, magasságot és koordinátaméretet`groupShape`.
+Állítsa be a szélességet, magasságot és koordinátaméretet`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -66,7 +66,7 @@ builder.InsertNode(groupShape);
 ```
 
 ## 6. lépés: Mentse el a dokumentumot
- Mentse a dokumentumot a megadott könyvtárba a`Save`módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithShapes.AddGroupShape.docx" néven mentjük.
+ Mentse a dokumentumot a megadott könyvtárba a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithShapes.AddGroupShape.docx" néven mentjük.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");

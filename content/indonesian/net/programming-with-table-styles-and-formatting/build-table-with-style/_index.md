@@ -30,7 +30,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 ```
 
 ## Langkah 4: Tentukan gaya tabel
@@ -51,35 +51,35 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
  Untuk menyesuaikan ukuran array secara otomatis berdasarkan isinya, kami menggunakan`AutoFit()` metode dengan`AutoFitBehavior.AutoFitToContents` perilaku.
 
 ```csharp
-table. AutoFit(AutoFitBehavior.AutoFitToContents);
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Langkah 7: Tambahkan konten ke sel
- Sekarang kita dapat menambahkan konten ke sel menggunakan`Writeln()` Dan`InsertCell()` metode pembuat dokumen. Dalam contoh ini, kita menambahkan header untuk "Item" dan "Quantity (
+ Sekarang kita dapat menambahkan konten ke sel menggunakan`Writeln()`Dan`InsertCell()` metode pembuat dokumen. Dalam contoh ini, kita menambahkan header untuk "Item" dan "Quantity (
 
 kg)" dan data terkait.
 
 ```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
-builder. InsertCell();
-builder. Writen("Quantity (kg)");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Apples");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("20");
-builder. EndRow();
-builder. InsertCell();
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Bananas");
-builder. InsertCell();
-builder. Writen("40");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("40");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Carrots");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("50");
-builder. EndRow();
+builder.EndRow();
 ```
 
 ## Langkah 8: Simpan dokumen yang dimodifikasi
@@ -94,41 +94,41 @@ Selamat! Anda sekarang telah membuat tabel bergaya khusus menggunakan Aspose.Wor
 ### Contoh kode sumber untuk Membangun Tabel Dengan Gaya menggunakan Aspose.Words untuk .NET 
 
 ```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	// Kita harus menyisipkan setidaknya satu baris terlebih dahulu sebelum mengatur format tabel apa pun.
-	builder.InsertCell();
-	// Atur gaya tabel yang digunakan berdasarkan pengidentifikasi gaya unik.
-	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	// Terapkan fitur mana yang harus diformat berdasarkan gaya.
-	table.StyleOptions =
-		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-	table.AutoFit(AutoFitBehavior.AutoFitToContents);
-	builder.Writeln("Item");
-	builder.CellFormat.RightPadding = 40;
-	builder.InsertCell();
-	builder.Writeln("Quantity (kg)");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Apples");
-	builder.InsertCell();
-	builder.Writeln("20");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Bananas");
-	builder.InsertCell();
-	builder.Writeln("40");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Carrots");
-	builder.InsertCell();
-	builder.Writeln("50");
-	builder.EndRow();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+// Kita harus menyisipkan setidaknya satu baris terlebih dahulu sebelum mengatur format tabel apa pun.
+builder.InsertCell();
+// Atur gaya tabel yang digunakan berdasarkan pengidentifikasi gaya unik.
+table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
+// Terapkan fitur mana yang harus diformat berdasarkan gaya.
+table.StyleOptions =
+	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
+builder.Writeln("Item");
+builder.CellFormat.RightPadding = 40;
+builder.InsertCell();
+builder.Writeln("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Apples");
+builder.InsertCell();
+builder.Writeln("20");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Bananas");
+builder.InsertCell();
+builder.Writeln("40");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Carrots");
+builder.InsertCell();
+builder.Writeln("50");
+builder.EndRow();
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## Kesimpulan

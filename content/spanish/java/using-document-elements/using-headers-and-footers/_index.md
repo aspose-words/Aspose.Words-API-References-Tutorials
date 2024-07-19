@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Numeración de páginas
 
- Puede incluir números de página en sus encabezados y pies de página utilizando campos como`PAGE` y`NUMPAGES`. Estos campos se actualizan automáticamente a medida que agrega o elimina páginas.
+ Puede incluir números de página en sus encabezados y pies de página utilizando campos como`PAGE`y`NUMPAGES`. Estos campos se actualizan automáticamente a medida que agrega o elimina páginas.
 
 ## 9. Información de derechos de autor en pies de página
 

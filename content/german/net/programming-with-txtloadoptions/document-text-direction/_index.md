@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- In diesem Schritt greifen wir auf den ersten Absatz des Dokuments zu, indem wir`FirstSection` Und`Body` Eigenschaften. Als nächstes greifen wir auf die`ParagraphFormat.Bidi` Eigenschaft, um die Textrichtung des Absatzes zu erhalten. Wir zeigen diesen Wert dann in der Konsole an.
+ In diesem Schritt greifen wir auf den ersten Absatz des Dokuments zu, indem wir`FirstSection`Und`Body` Eigenschaften. Als nächstes greifen wir auf die`ParagraphFormat.Bidi` Eigenschaft, um die Textrichtung des Absatzes zu erhalten. Wir zeigen diesen Wert dann in der Konsole an.
 
 ## Schritt 5: Speichern Sie das Dokument
 

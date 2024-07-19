@@ -2,49 +2,57 @@
 title: Mantenga la fuente unida
 linktitle: Mantenga la fuente unida
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a usar Aspose.Words para .NET para unir y agregar documentos de Word mientras mantiene el contenido de origen junto con el documento de destino.
+description: Aprenda a fusionar documentos de Word utilizando Aspose.Words para .NET conservando el formato. Esta guía completa cubre todo, desde la configuración hasta la ejecución.
 type: docs
 weight: 10
 url: /es/net/join-and-append-documents/keep-source-together/
 ---
+## Introducción
 
-Este tutorial lo guiará a través del proceso de uso de la función Mantener el código fuente junto de Aspose.Words para .NET. Esta función le permite unir y adjuntar varios documentos de Word mientras mantiene el contenido del documento de origen junto con el contenido del documento de destino. 
+En la era digital actual, manipular documentos de Word mediante programación es esencial en diversas industrias. Aspose.Words para .NET permite a los desarrolladores automatizar las tareas de manejo de documentos de manera eficiente. Esta guía completa lo guiará a través del proceso de fusionar documentos mientras conserva el formato fuente usando Aspose.Words para .NET.
 
 ## Requisitos previos
 
-Antes de comenzar, asegúrese de tener lo siguiente:
+Antes de profundizar en la fusión de documentos con Aspose.Words para .NET, asegúrese de tener lo siguiente:
 
-1. Aspose.Words para .NET instalado. Puede descargarlo del sitio web de Aspose o instalarlo a través de NuGet.
-2. Visual Studio o cualquier otro entorno de desarrollo C#.
+- Visual Studio: Entorno de desarrollo integrado (IDE) para desarrollo .NET.
+- Aspose.Words para .NET: instalado y configurado en su entorno de desarrollo.
+- Familiaridad con C#: comprensión básica del lenguaje de programación C#.
 
-## Paso 1: inicializar los directorios de documentos
+## Importar espacios de nombres
 
- Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir` variable a la ruta donde se encuentran sus documentos.
+Para comenzar, importe los espacios de nombres necesarios:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## Paso 2: cargue los documentos de origen y de destino
+## Paso 1: cargar documentos
 
- continuación, debe cargar los documentos de origen y de destino utilizando Aspose.Words.`Document` clase. Actualice los nombres de los archivos en el`Document` constructor de acuerdo con los nombres de sus documentos.
+ En primer lugar, cargue los documentos de origen y destino en Aspose.Words`Document` objetos.
 
 ```csharp
+// Ruta a su directorio de documentos
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+// Cargar documentos de origen y destino
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Paso 3: configurar el documento de origen para que aparezca después del contenido del documento de destino
+## Paso 2: establecer el inicio de la sección
 
- Para garantizar que el documento de origen aparezca inmediatamente después del contenido del documento de destino, debe configurar el`SectionStart` propiedad de la primera sección del documento fuente para`SectionStart.Continuous`.
+Configure el inicio de la sección para garantizar que el contenido del documento de origen fluya continuamente después del documento de destino.
 
 ```csharp
+// Configure el documento de origen para que aparezca inmediatamente después del contenido del documento de destino.
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Paso 4: Establezca el formato de párrafo "Mantener con el siguiente" para el documento fuente
+## Paso 3: mantenga los párrafos juntos
 
- Para mantener juntos los párrafos del documento fuente, puede recorrer cada párrafo del documento y establecer el`KeepWithNext`propiedad a`true`.
+Para mantener la integridad del formato, marque cada párrafo en el documento fuente para permanecer en el siguiente párrafo.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## Paso 5: agregue el documento de origen al documento de destino
+## Paso 4: adjuntar documentos
 
- Ahora, puede adjuntar el documento de origen al documento de destino utilizando el`AppendDocument` método de la`Document` clase. El`ImportFormatMode.KeepSourceFormatting` El parámetro garantiza que el formato de origen se conserve durante la operación de adición.
+ Fusionar los documentos usando el`AppendDocument` método, asegurando conservar el formato del documento fuente.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Paso 6: guarde el documento final
+## Paso 5: guardar el documento combinado
 
- Finalmente, guarde el documento combinado con la función "Mantener la fuente junta" habilitada usando el`Save` método de la`Document` clase.
+Finalmente, guarde el documento combinado en la ubicación deseada.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### Código fuente de ejemplo para Keep Source Together usando Aspose.Words para .NET 
+## Conclusión
 
-Aquí está el código fuente completo de la función "Mantener el código fuente unido" en C# usando Aspose.Words para .NET:
+En conclusión, Aspose.Words para .NET simplifica la tarea de fusionar documentos de Word conservando el formato original sin problemas. Esta capacidad es crucial para aplicaciones que requieren procesamiento automatizado de documentos.
 
+## Preguntas frecuentes
 
-```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### ¿Puede Aspose.Words para .NET fusionar documentos de diferentes formatos?
+Sí, puede fusionar documentos independientemente de su formato, manteniendo el formato original.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Configure el documento de origen para que aparezca inmediatamente después del contenido del documento de destino.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### ¿Aspose.Words para .NET admite la combinación de documentos grandes de manera eficiente?
+Por supuesto, maneja documentos grandes con un rendimiento óptimo.
 
-¡Eso es todo! Ha implementado con éxito la función Mantener el código fuente junto utilizando Aspose.Words para .NET. El documento final contendrá el contenido fusionado y los párrafos del documento fuente se mantendrán juntos.
+### ¿Existe una versión de prueba disponible para Aspose.Words para .NET?
+ Sí, puedes descargar una prueba gratuita.[aquí](https://releases.aspose.com/).
+
+### ¿Cómo puedo obtener soporte técnico para Aspose.Words para .NET?
+ El soporte técnico está disponible a través del[Foro Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### ¿Puedo comprar una licencia temporal de Aspose.Words para .NET?
+ Sí, puedes adquirir una licencia temporal.[aquí](https://purchase.aspose.com/temporary-license/).

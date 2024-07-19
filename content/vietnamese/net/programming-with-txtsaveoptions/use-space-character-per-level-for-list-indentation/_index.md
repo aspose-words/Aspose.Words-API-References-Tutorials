@@ -44,7 +44,7 @@ saveOptions.ListIndentation.Character = ' ';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseSpaceCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
-Trong ví dụ này, chúng tôi tạo một phiên bản của TxtSaveOptions và đặt thuộc tính ListIndentation.Count thành 3 để cho biết rằng có ba mức thụt lề trong danh sách. Chúng tôi cũng đặt thuộc tính ListIndentation.Character thành ký tự khoảng trắng (' ') mà chúng tôi muốn sử dụng để thụt lề.
+Trong ví dụ này, chúng tôi tạo một phiên bản của TxtSaveOptions và đặt thuộc tính ListIndentation.Count thành 3 để cho biết rằng có ba cấp độ thụt lề trong danh sách. Chúng tôi cũng đặt thuộc tính ListIndentation.Character thành ký tự khoảng trắng (' ') mà chúng tôi muốn sử dụng để thụt lề.
 
 ### Mã nguồn mẫu cho tính năng "Sử dụng một ký tự khoảng trắng cho mỗi cấp độ để thụt lề danh sách" với Aspose.Words for .NET
 

@@ -30,7 +30,7 @@ using Aspose.Words.Fonts;
 using System;
 ```
 
-## Schritt 1: Definieren Sie das Dokumentverzeichnis
+## Schritt 1: Dokumentverzeichnis definieren
 
 Definieren Sie zunächst das Verzeichnis, in dem Ihr Dokument gespeichert ist. Dies ist wichtig, damit Sie Ihr Dokument finden und verarbeiten können.
 
@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Schritt 3: Schriftarteinstellungen konfigurieren
 
- Erstelle eine neue`FontSettings` Objekt und laden Sie die Font-Fallback-Einstellungen aus einer XML-Datei. Diese XML-Datei enthält die Regeln für den Font-Fallback.
+ Erstelle eine neue`FontSettings` Objekt und laden Sie die Schriftart-Fallback-Einstellungen aus einer XML-Datei. Diese XML-Datei enthält die Regeln für den Schriftart-Fallback.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

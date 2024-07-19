@@ -2,196 +2,94 @@
 title: Bỏ qua văn bản bên trong Chèn bản sửa đổi
 linktitle: Bỏ qua văn bản bên trong Chèn bản sửa đổi
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách sử dụng tính năng "Bỏ qua văn bản bên trong Chèn bản sửa đổi" của Aspose.Words dành cho .NET để thao tác chèn bản sửa đổi trong tài liệu Word.
+description: Tìm hiểu cách quản lý các bản sửa đổi tài liệu một cách hiệu quả với Aspose.Words cho .NET. Khám phá các kỹ thuật bỏ qua văn bản bên trong chèn các bản sửa đổi để chỉnh sửa hợp lý.
 type: docs
 weight: 10
 url: /vi/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
+## Giới thiệu
 
-Trong bài viết này, chúng ta sẽ khám phá mã nguồn C# ở trên để hiểu cách sử dụng chức năng Bỏ qua văn bản bên trong Chèn bản sửa đổi trong thư viện Aspose.Words cho .NET. Tính năng này hữu ích khi chúng ta muốn bỏ qua văn bản bên trong chèn các bản sửa đổi trong khi thao tác với tài liệu.
+Trong hướng dẫn toàn diện này, chúng tôi sẽ đi sâu vào việc sử dụng Aspose.Words cho .NET để quản lý các bản sửa đổi tài liệu một cách hiệu quả. Cho dù bạn là nhà phát triển hay người đam mê công nghệ, việc hiểu cách bỏ qua văn bản bên trong các bản sửa đổi chèn có thể hợp lý hóa quy trình xử lý tài liệu của bạn. Hướng dẫn này sẽ trang bị cho bạn những kỹ năng cần thiết để tận dụng các tính năng mạnh mẽ của Aspose.Words nhằm quản lý các bản sửa đổi tài liệu một cách liền mạch.
 
 ## Điều kiện tiên quyết
 
-- Kiến thức cơ bản về ngôn ngữ C#.
-- Môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
+- Visual Studio được cài đặt trên máy của bạn.
+- Thư viện Aspose.Words for .NET được tích hợp vào dự án của bạn.
+- Kiến thức cơ bản về ngôn ngữ lập trình C# và .NET framework.
 
-## Bước 1: Tạo một tài liệu mới
+## Nhập không gian tên
 
- Trước khi bắt đầu thao tác văn bản bên trong các bản sửa đổi chèn, chúng ta cần tạo một tài liệu mới bằng Aspose.Words cho .NET. Điều này có thể được thực hiện bằng cách khởi tạo một`Document` sự vật:
-
+Để bắt đầu, hãy bao gồm các vùng tên cần thiết trong dự án C# của bạn:
 ```csharp
-Document doc = new Document();
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using System;
+using System.Text.RegularExpressions;
 ```
 
-## Bước 2: Chèn văn bản có theo dõi sửa đổi
+## Bước 1: Tạo tài liệu mới và bắt đầu theo dõi các bản sửa đổi
 
- Sau khi có tài liệu, chúng ta có thể chèn văn bản có theo dõi sửa đổi bằng cách sử dụng`DocumentBuilder`sự vật. Ví dụ: để chèn văn bản "Đã chèn" với tính năng theo dõi sửa đổi, chúng ta có thể sử dụng`StartTrackRevisions`, `Writeln` Và`StopTrackRevisions` phương pháp:
-
+Đầu tiên, khởi tạo một tài liệu mới và bắt đầu theo dõi các sửa đổi:
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// Bắt đầu theo dõi các sửa đổi
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted");
+builder.Writeln("Inserted"); //Chèn văn bản có theo dõi các sửa đổi
 doc.StopTrackRevisions();
 ```
 
-## Bước 3: Chèn văn bản chưa được xem xét
+## Bước 2: Chèn văn bản chưa sửa đổi
 
- Ngoài văn bản có theo dõi sửa đổi, chúng ta cũng có thể chèn văn bản chưa được sửa đổi bằng cách sử dụng`DocumentBuilder` sự vật. Ví dụ: để chèn văn bản "Văn bản" mà không cần sửa đổi, chúng ta có thể sử dụng`Write` phương pháp:
-
+Tiếp theo, chèn văn bản vào tài liệu mà không theo dõi các sửa đổi:
 ```csharp
 builder.Write("Text");
 ```
 
-## Bước 4: Sử dụng chức năng Bỏ qua văn bản bên trong Chèn bản sửa đổi
+## Bước 3: Bỏ qua văn bản đã chèn bằng FindReplaceOptions
 
- Để bỏ qua văn bản bên trong, hãy chèn các bản sửa đổi vào các thao tác tiếp theo, chúng ta có thể sử dụng`FindReplaceOptions` đối tượng và thiết lập`IgnoreInserted`tài sản để`true`:
-
+Bây giờ, hãy định cấu hình FindReplaceOptions để bỏ qua các bản sửa đổi được chèn:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-```
 
-## Bước 5: Sử dụng biểu thức chính quy để tìm kiếm và thay thế
-
-Để thực hiện các thao tác tìm kiếm và thay thế trên văn bản tài liệu, chúng ta sẽ sử dụng biểu thức chính quy. Trong ví dụ của chúng tôi, chúng tôi sẽ tìm kiếm tất cả các lần xuất hiện của chữ "e" và thay thế chúng bằng dấu hoa thị "* ". Chúng tôi sẽ sử dụng .NET`Regex` lớp học cho việc này:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Bước 6: Xem đầu ra tài liệu đã sửa đổi
+## Bước 4: Xuất văn bản tài liệu
 
- Sau khi áp dụng tìm kiếm và thay thế, chúng ta có thể hiển thị nội dung đã thay đổi của tài liệu bằng cách sử dụng`GetText` phương pháp:
-
+Hiển thị văn bản tài liệu sau khi bỏ qua các sửa đổi được chèn:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## Bước 7: Thay đổi tùy chọn để bao gồm các bản sửa đổi
+## Bước 5: Hoàn nguyên Bỏ qua tùy chọn văn bản đã chèn
 
-Nếu chúng ta muốn đưa văn bản bên trong các bản sửa đổi chèn vào kết quả đầu ra, chúng ta có thể thay đổi các tùy chọn để không bỏ qua các bản sửa đổi chèn. Đối với điều này, chúng tôi sẽ thiết lập`IgnoreInserted`tài sản để`false`:
-
+Để hoàn nguyên việc bỏ qua văn bản đã chèn, hãy sửa đổi FindReplaceOptions:
 ```csharp
 options.IgnoreInserted = false;
-```
-
-## Bước 8: Xem tài liệu đã sửa đổi có chèn bản sửa đổi
-
-Sau khi thay đổi các tùy chọn, chúng ta có thể thực hiện tìm kiếm và thay thế lại để có kết quả bằng văn bản bên trong các bản sửa đổi chèn đi kèm:
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-
-### Mã nguồn ví dụ cho Bỏ qua văn bản bên trong Chèn bản sửa đổi bằng Aspose.Words cho .NET
-
-Đây là mã nguồn mẫu đầy đủ để minh họa cách sử dụng chức năng Bỏ qua văn bản bên trong Chèn bản sửa đổi với Aspose.Words cho .NET:
-
-
-```csharp
-       
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Chèn văn bản với các sửa đổi theo dõi.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	builder.Writeln("Inserted");
-	doc.StopTrackRevisions();
-
-	// Chèn văn bản chưa được sửa đổi.
-	builder.Write("Text");
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreInserted = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-   
 ```
 
 ## Phần kết luận
 
-Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu cách sử dụng chức năng Bỏ qua văn bản bên trong Chèn bản sửa đổi trong Aspose.Words cho .NET. Chúng tôi đã làm theo hướng dẫn từng bước để tạo tài liệu, chèn văn bản có theo dõi các bản sửa đổi và văn bản chưa được sửa đổi, sử dụng chức năng Bỏ qua văn bản bên trong Chèn bản sửa đổi, thực hiện các thao tác tìm kiếm và thay thế bằng biểu thức thông thường và hiển thị tài liệu đã sửa đổi.
+Nắm vững kỹ thuật bỏ qua văn bản bên trong chèn các bản sửa đổi bằng Aspose.Words for .NET sẽ nâng cao khả năng chỉnh sửa tài liệu của bạn. Bằng cách làm theo các bước này, bạn có thể quản lý các bản sửa đổi trong tài liệu của mình một cách hiệu quả, đảm bảo sự rõ ràng và chính xác trong các tác vụ xử lý văn bản của bạn.
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Tính năng "Bỏ qua văn bản bên trong Chèn bản sửa đổi" trong Aspose.Words dành cho .NET là gì?
+### Làm cách nào tôi có thể bắt đầu theo dõi các bản sửa đổi trong tài liệu Word bằng Aspose.Words cho .NET?
+ Để bắt đầu theo dõi các sửa đổi, hãy sử dụng`doc.StartTrackRevisions(author, date)` phương pháp.
 
-Trả lời: Tính năng "Bỏ qua văn bản bên trong chèn bản sửa đổi" trong Aspose.Words for .NET cho phép bạn chỉ định xem có nên bỏ qua văn bản bên trong các bản sửa đổi chèn trong một số thao tác nhất định hay không, chẳng hạn như tìm và thay thế văn bản. Khi tính năng này được bật, văn bản bên trong các bản sửa đổi chèn sẽ không được xem xét trong quá trình hoạt động.
+### Lợi ích của việc bỏ qua văn bản được chèn trong các bản sửa đổi tài liệu là gì?
+Bỏ qua văn bản được chèn giúp duy trì sự tập trung vào nội dung cốt lõi trong khi quản lý các thay đổi tài liệu một cách hiệu quả.
 
-#### Câu hỏi: Làm cách nào tôi có thể tạo tài liệu mới bằng Aspose.Words cho .NET?
+### Tôi có thể hoàn nguyên văn bản đã chèn bị bỏ qua về bản gốc trong Aspose.Words cho .NET không?
+Có, bạn có thể hoàn nguyên văn bản đã chèn bị bỏ qua bằng cách sử dụng cài đặt FindReplaceOptions thích hợp.
 
- Đáp: Để tạo một tài liệu mới bằng Aspose.Words cho .NET, bạn có thể khởi tạo một`Document` sự vật. Đây là một ví dụ về mã C# để tạo một tài liệu mới:
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
+ Tham quan[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết hướng dẫn chi tiết và tài liệu tham khảo API.
 
-```csharp
-Document doc = new Document();
-```
-
-#### Câu hỏi: Làm cách nào tôi có thể chèn văn bản có theo dõi sửa đổi trong Aspose.Words cho .NET?
-
-Đáp: Sau khi có tài liệu, bạn có thể chèn văn bản có theo dõi sửa đổi bằng cách sử dụng`DocumentBuilder` sự vật. Ví dụ: để chèn văn bản "Đã chèn" với tính năng theo dõi sửa đổi, bạn có thể sử dụng`StartTrackRevisions`, `Writeln` , Và`StopTrackRevisions` phương pháp:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted");
-doc.StopTrackRevisions();
-```
-
-#### Câu hỏi: Làm cách nào tôi có thể chèn văn bản chưa được sửa đổi trong Aspose.Words cho .NET?
-
- Đáp: Ngoài văn bản có theo dõi sửa đổi, bạn cũng có thể chèn văn bản chưa được sửa đổi bằng cách sử dụng`DocumentBuilder` sự vật. Ví dụ: để chèn văn bản "Văn bản" mà không cần sửa đổi, bạn có thể sử dụng`Write` phương pháp:
-
-```csharp
-builder.Write("Text");
-```
-
-#### Câu hỏi: Làm cách nào tôi có thể bỏ qua văn bản bên trong các bản sửa đổi chèn trong Aspose.Words cho .NET?
-
- Đáp: Để bỏ qua văn bản bên trong, hãy chèn các bản sửa đổi trong các thao tác tiếp theo, bạn có thể sử dụng`FindReplaceOptions` đối tượng và thiết lập`IgnoreInserted`tài sản để`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-```
-
-#### Câu hỏi: Làm cách nào tôi có thể thực hiện tìm kiếm và thay thế bằng cách sử dụng biểu thức thông thường trong Aspose.Words cho .NET?
-
- Trả lời: Để thực hiện các thao tác tìm kiếm và thay thế trên văn bản của tài liệu bằng cách sử dụng các biểu thức thông thường, bạn có thể sử dụng .NET`Regex` lớp học. Ví dụ: để tìm kiếm tất cả các lần xuất hiện của chữ "e" và thay thế chúng bằng dấu hoa thị "* ", bạn có thể tạo một`Regex` đối tượng và sử dụng nó với`Replace` phương pháp:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### Câu hỏi: Làm cách nào tôi có thể xem kết quả đầu ra đã sửa đổi của tài liệu trong Aspose.Words cho .NET?
-
- Đáp: Sau khi áp dụng các thao tác tìm kiếm và thay thế, bạn có thể xem nội dung đã thay đổi của tài liệu bằng cách sử dụng`GetText` phương pháp:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### Câu hỏi: Làm cách nào tôi có thể đưa các bản sửa đổi chèn vào kết quả đầu ra trong Aspose.Words cho .NET?
-
- Trả lời: Để đưa văn bản bên trong các bản sửa đổi chèn vào kết quả đầu ra, bạn có thể thay đổi các tùy chọn để không bỏ qua các bản sửa đổi chèn. Đối với điều này, bạn có thể thiết lập`IgnoreInserted` tài sản của`FindReplaceOptions` chủ đề`false`:
-
-```csharp
-options.IgnoreInserted = false;
-```
-
-#### Câu hỏi: Làm cách nào tôi có thể hiển thị tài liệu đã sửa đổi với các bản sửa đổi chèn trong Aspose.Words cho .NET?
-
-Trả lời: Sau khi thay đổi các tùy chọn để bao gồm các bản sửa đổi chèn, bạn có thể thực hiện tìm kiếm và thay thế lại để nhận được kết quả bằng văn bản bên trong các bản sửa đổi chèn được bao gồm:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Có diễn đàn cộng đồng nào để thảo luận về Aspose.Words cho các truy vấn liên quan đến .NET không?
+ Có, bạn có thể ghé thăm[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) để được cộng đồng hỗ trợ và thảo luận.

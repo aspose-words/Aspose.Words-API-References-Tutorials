@@ -67,7 +67,7 @@ Console.WriteLine(text);
 
 #### 问：Aspose.Words for .NET 中的“在 Word 文档中获取文本范围”功能有什么用途？
 
-答：Aspose.Words for .NET 中的“从 Word 文档中获取文本范围”功能允许您提取 Word 文档中特定范围内的文本。它提供了访问和检索所需范围内的文本内容的功能，例如部分、段落或其他自定义范围。
+答：Aspose.Words for .NET 中的“从 Word 文档中获取文本范围”功能允许您提取 Word 文档特定范围内的文本。它提供了访问和检索所需范围内的文本内容的功能，例如部分、段落或其他自定义范围。
 
 #### 问：Aspose.Words for .NET是什么？
 

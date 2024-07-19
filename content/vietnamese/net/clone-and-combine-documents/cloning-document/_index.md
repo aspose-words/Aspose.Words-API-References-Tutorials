@@ -81,7 +81,7 @@ Sao chép tài liệu thật dễ dàng với Aspose.Words:
 
 Với mọi thứ đã sẵn sàng, đã đến lúc chạy mã của bạn và xem kết quả:
 
-1.  Xây dựng dự án của bạn: Nhấp vào`Build` thực đơn và chọn`Build Solution`. Hãy chắc chắn rằng không có lỗi.
+1. Xây dựng dự án của bạn: Nhấp vào`Build` thực đơn và chọn`Build Solution`. Hãy chắc chắn rằng không có lỗi.
 2.  Chạy dự án của bạn: Nhấn`F5` hoặc nhấp vào`Start` nút để chạy dự án của bạn. Nếu mọi thứ được thiết lập chính xác, một tài liệu nhân bản mới sẽ xuất hiện trong thư mục tài liệu của bạn.
 
 ## Bước 6: Xác minh đầu ra

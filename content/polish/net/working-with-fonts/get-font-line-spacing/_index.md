@@ -2,7 +2,7 @@
 title: Uzyskaj odstępy między wierszami czcionki
 linktitle: Uzyskaj odstępy między wierszami czcionki
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: W tym samouczku dowiesz się, jak uzyskać odstępy między wierszami czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: tym samouczku dowiesz się, jak uzyskać odstępy między wierszami czcionki w dokumencie programu Word za pomocą Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/get-font-line-spacing/

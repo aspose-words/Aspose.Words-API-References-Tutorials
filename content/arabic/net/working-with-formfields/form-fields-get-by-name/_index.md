@@ -2,7 +2,7 @@
 title: الحصول على حقول النموذج بالاسم
 linktitle: الحصول على حقول النموذج بالاسم
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية استرداد حقول النموذج وتعديلها حسب الاسم في مستندات Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية استرداد حقول النموذج وتعديلها حسب الاسم في مستندات Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/working-with-formfields/form-fields-get-by-name/

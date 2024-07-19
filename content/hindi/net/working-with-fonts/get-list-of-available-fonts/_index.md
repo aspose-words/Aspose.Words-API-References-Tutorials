@@ -15,7 +15,7 @@ url: /hi/net/working-with-fonts/get-list-of-available-fonts/
 - आपके प्रोजेक्ट में .NET के लिए Aspose.Words लाइब्रेरी स्थापित है
 
 ## चरण 1: दस्तावेज़ निर्देशिका निर्धारित करें
- सबसे पहले, आपको अपने वर्ड डॉक्यूमेंट के स्थान के लिए डायरेक्टरी पथ सेट करना होगा।`"YOUR DOCUMENT DIRECTORY"` कोड में उचित पथ के साथ.
+ सबसे पहले, आपको अपने वर्ड डॉक्यूमेंट के स्थान पर डायरेक्टरी पथ सेट करना होगा।`"YOUR DOCUMENT DIRECTORY"` कोड में उचित पथ के साथ.
 
 ```csharp
 // आपके दस्तावेज़ निर्देशिका का पथ
@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // एक नया फ़ोल्डर स्रोत जोड़ें जो Aspose.Words को फ़ॉन्ट्स के लिए निम्नलिखित फ़ोल्डर को खोजने का निर्देश देगा।
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//हमारे फ़ॉन्ट वाले कस्टम फ़ोल्डर को मौजूदा फ़ॉन्ट स्रोतों की सूची में जोड़ें।
+// हमारे फ़ॉन्ट वाले कस्टम फ़ोल्डर को मौजूदा फ़ॉन्ट स्रोतों की सूची में जोड़ें।
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 #### प्रश्न: मैं अपने वर्ड दस्तावेज़ों में उपलब्ध फ़ॉन्ट्स की सूची का उपयोग कैसे कर सकता हूँ?
 
-उत्तर: अपने वर्ड दस्तावेज़ों में उपलब्ध फ़ॉन्ट्स की सूची का उपयोग करने के लिए, आप सूची ब्राउज़ कर सकते हैं और फ़ॉन्ट्स के तरीकों और गुणों का उपयोग करके उपयुक्त फ़ॉन्ट्स का चयन कर सकते हैं।`FontSettings` Aspose.Words में वर्ग.
+ उत्तर: अपने वर्ड दस्तावेज़ों में उपलब्ध फ़ॉन्ट्स की सूची का उपयोग करने के लिए, आप सूची ब्राउज़ कर सकते हैं और फ़ॉन्ट्स के तरीकों और गुणों का उपयोग करके उपयुक्त फ़ॉन्ट्स का चयन कर सकते हैं।`FontSettings` Aspose.Words में वर्ग.

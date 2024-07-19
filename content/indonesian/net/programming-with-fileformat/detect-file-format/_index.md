@@ -14,7 +14,7 @@ Sebelum memulai, pastikan Anda telah menginstal dan mengonfigurasi pustaka Aspos
 
 ## Langkah 1: Tentukan direktori
 
- Untuk memulai, Anda perlu menentukan direktori tempat Anda ingin menyimpan file sesuai dengan formatnya. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda. Kami membuat direktori "Didukung", "Tidak Diketahui", "Terenkripsi" dan "Pre97" jika belum ada.
+ Untuk memulai, Anda perlu menentukan direktori tempat Anda ingin menyimpan file sesuai dengan formatnya. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori dokumen Anda. Kami membuat direktori "Didukung", "Tidak Diketahui", "Terenkripsi" dan "Pre97" jika belum ada.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## Langkah 2: Telusuri File
 
- Kemudian kita menggunakan`GetFiles` metode`Directory` kelas untuk mendapatkan daftar file di direktori yang ditentukan. Kami juga menggunakan a`Where`klausa untuk mengecualikan file tertentu bernama "Dokumen.docx rusak".
+ Kemudian kita menggunakan`GetFiles` metode`Directory` kelas untuk mendapatkan daftar file di direktori yang ditentukan. Kami juga menggunakan a`Where` klausa untuk mengecualikan file tertentu bernama "Dokumen.docx rusak".
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ Itu saja ! Anda telah berhasil mendeteksi format file dokumen yang berbeda mengg
 
 #### Bagaimana cara mendeteksi format file dokumen menggunakan Aspose.Words untuk .NET?
 
- Untuk mendeteksi format file dokumen menggunakan Aspose.Words for .NET, Anda dapat mengikuti langkah-langkah yang disediakan dalam tutorial. Menggunakan`DetectFileFormat` metode`FileFormatUtil`kelas akan memungkinkan Anda mendeteksi format file dokumen. Ini akan memungkinkan Anda menentukan apakah itu dokumen Microsoft Word 97-2003, templat, dokumen Office Open XML WordprocessingML, atau format lain yang didukung. Kode yang diberikan dalam tutorial akan memandu Anda dalam mengimplementasikan fitur ini.
+ Untuk mendeteksi format file dokumen menggunakan Aspose.Words for .NET, Anda dapat mengikuti langkah-langkah yang disediakan dalam tutorial. Menggunakan`DetectFileFormat` metode`FileFormatUtil` kelas akan memungkinkan Anda mendeteksi format file dokumen. Ini akan memungkinkan Anda menentukan apakah itu dokumen Microsoft Word 97-2003, templat, dokumen Office Open XML WordprocessingML, atau format lain yang didukung. Kode yang diberikan dalam tutorial akan memandu Anda dalam mengimplementasikan fitur ini.
 
 #### Format dokumen apa yang didukung Aspose.Words untuk .NET?
 

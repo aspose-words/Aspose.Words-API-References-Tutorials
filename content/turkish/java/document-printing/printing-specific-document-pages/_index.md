@@ -94,7 +94,7 @@ Evet, Aspose.Words for Java, DOCX, DOC, PDF, RTF ve daha fazlasını içeren ço
 
 ### Sayfa yönü ve kağıt boyutu gibi ek yazdırma seçeneklerini nasıl ayarlayabilirim?
 
- Sayfa yönü ve kağıt boyutu gibi ek yazdırma seçeneklerini yapılandırarak ayarlayabilirsiniz.`PrintOptions` Belgeyi yazdırmadan önce nesneyi Gibi yöntemleri kullanın`setOrientation` Ve`setPaperSize` Yazdırma ayarlarını özelleştirmek için.
+ Sayfa yönü ve kağıt boyutu gibi ek yazdırma seçeneklerini yapılandırarak ayarlayabilirsiniz.`PrintOptions` Belgeyi yazdırmadan önce nesneyi Gibi yöntemleri kullanın`setOrientation`Ve`setPaperSize` Yazdırma ayarlarını özelleştirmek için.
 
 ### Aspose.Words for Java'nın deneme sürümü mevcut mu?
 

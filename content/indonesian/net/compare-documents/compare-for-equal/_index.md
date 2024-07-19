@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Langkah 2: Muat Dokumen Anda
 
- Selanjutnya, Anda harus memuat dokumen Word yang ingin Anda bandingkan. Untuk contoh ini, kami berasumsi Anda memiliki dua dokumen yang diberi nama`Document.docx` Dan`Document2.docx` terletak di direktori dokumen Anda.
+ Selanjutnya, Anda perlu memuat dokumen Word yang ingin Anda bandingkan. Untuk contoh ini, kami berasumsi Anda memiliki dua dokumen yang diberi nama`Document.docx`Dan`Document2.docx` terletak di direktori dokumen Anda.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -73,7 +73,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## Kesimpulan
 
-Membandingkan dokumen Word untuk kesetaraan menggunakan Aspose.Words untuk .NET adalah proses mudah yang dapat menghemat banyak waktu dan tenaga Anda. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat dengan cepat mengidentifikasi perbedaan antar dokumen dan memastikan integritasnya. Baik Anda mengelola dokumen hukum, dokumentasi teknis, atau jenis file Word lainnya, Aspose.Words untuk .NET menyediakan alat yang Anda perlukan untuk perbandingan dokumen yang efisien dan akurat.
+Membandingkan dokumen Word untuk kesetaraan menggunakan Aspose.Words untuk .NET adalah proses mudah yang dapat menghemat banyak waktu dan tenaga. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat dengan cepat mengidentifikasi perbedaan antar dokumen dan memastikan integritasnya. Baik Anda mengelola dokumen hukum, dokumentasi teknis, atau jenis file Word lainnya, Aspose.Words untuk .NET menyediakan alat yang Anda perlukan untuk perbandingan dokumen yang efisien dan akurat.
 
 ## FAQ
 

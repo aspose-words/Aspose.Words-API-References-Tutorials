@@ -26,7 +26,7 @@ doc.save("Your Directory Path" + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## Aufteilung von Dokumenten nach Abschnitten
 
-Eine weitere Möglichkeit zum Aufteilen von Dokumenten besteht in der Unterteilung in Abschnitte. Abschnitte stellen in der Regel unterschiedliche Teile eines Dokuments dar, und die Unterteilung in Abschnitte kann zum Erstellen kleinerer, überschaubarerer Dokumente nützlich sein.
+Eine weitere Möglichkeit zum Aufteilen von Dokumenten besteht in der Unterteilung nach Abschnitten. Abschnitte stellen in der Regel unterschiedliche Teile eines Dokuments dar, und die Unterteilung nach Abschnitten kann zum Erstellen kleinerer, überschaubarerer Dokumente nützlich sein.
 
 ```java
 // Java-Code zum Aufteilen eines Dokuments in Abschnitte mit Aspose.Words für Java

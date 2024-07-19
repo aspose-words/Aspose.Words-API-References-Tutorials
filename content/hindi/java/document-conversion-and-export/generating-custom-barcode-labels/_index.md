@@ -2,7 +2,7 @@
 title: Java के लिए Aspose.Words में कस्टम बारकोड लेबल बनाना
 linktitle: कस्टम बारकोड लेबल बनाना
 second_title: Aspose.Words जावा दस्तावेज़ प्रसंस्करण एपीआई
-description: Aspose.Words for Java में कस्टम बारकोड लेबल जेनरेट करें। इस चरण-दर-चरण मार्गदर्शिका में Aspose.Words for Java का उपयोग करके वैयक्तिकृत बारकोड समाधान बनाना सीखें।
+description: Aspose.Words for Java में कस्टम बारकोड लेबल जेनरेट करें। इस चरण-दर-चरण मार्गदर्शिका में Aspose.Words for Java का उपयोग करके वैयक्तिकृत बारकोड समाधान बनाने का तरीका जानें।
 type: docs
 weight: 10
 url: /hi/java/document-conversion-and-export/generating-custom-barcode-labels/
@@ -47,7 +47,7 @@ url: /hi/java/document-conversion-and-export/generating-custom-barcode-labels/
 /// <सारांश>
 /// Word से Aspose.BarCode में बारकोड छवि का रंग परिवर्तित करता है।
 /// </सारांश>
-/// <पैरामीटर नाम="इनपुट रंग"></पैरामीटर>
+/// <पैरामीटर नाम="इनपुटरंग"></पैरामीटर>
 /// <रिटर्न></रिटर्न>
 private static Color convertColor(String inputColor) throws Exception {
 	// इनपुट "0x000000" से "0xFFFFFF" तक होना चाहिए

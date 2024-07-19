@@ -1,6 +1,6 @@
 ---
-title: Změnit styl obsahu v dokumentu aplikace Word
-linktitle: Změnit styl obsahu v dokumentu aplikace Word
+title: Změňte styl obsahu v dokumentu aplikace Word
+linktitle: Změňte styl obsahu v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak snadno změnit styl úrovně obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs
@@ -75,7 +75,7 @@ A: Aspose.Words for .NET je výkonná knihovna navržená pro zpracování textu
 
 #### Otázka: Jak vytvořím nový dokument aplikace Word pomocí Aspose.Words for .NET?
 
- A: Chcete-li vytvořit nový dokument aplikace Word pomocí Aspose.Words for .NET, můžete použít`Document` třída a její konstruktér. Inicializací nové instance souboru`Document` třídy, můžete vytvořit prázdný dokument. Zde je příklad:
+ A: Chcete-li vytvořit nový dokument aplikace Word pomocí Aspose.Words for .NET, můžete použít`Document` třída a její konstruktér. Inicializací nové instance`Document` třídy, můžete vytvořit prázdný dokument. Zde je příklad:
 
 ```csharp
 Document doc = new Document();

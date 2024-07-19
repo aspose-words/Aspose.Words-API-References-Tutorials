@@ -14,4 +14,4 @@ Procesamiento de palabras con MarkdownSaveOptions es un recurso detallado que lo
 | Título | Descripción |
 | --- | --- |
 | [Exportar a Markdown con alineación del contenido de la tabla](./export-into-markdown-with-table-content-alignment/) | Aprenda a exportar contenido de tabla con diferentes alineaciones a archivos Markdown usando Aspose.Words para .NET. |
-| [Establecer carpeta de imágenes](./set-images-folder/) | Aprenda cómo configurar la carpeta de imágenes al exportar a Markdown con Aspose.Words para .NET. Personalice la ubicación de las imágenes para una mejor organización e integración.|
+| [Establecer carpeta de imágenes](./set-images-folder/) | Aprenda a configurar la carpeta de imágenes al exportar a Markdown con Aspose.Words para .NET. Personalice la ubicación de las imágenes para una mejor organización e integración.|

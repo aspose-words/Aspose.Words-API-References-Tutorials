@@ -31,7 +31,7 @@ Nyní, když jsme nakonfigurovali možnosti načítání, můžeme načíst soub
 Document doc = new Document(dataDir + "HTML help.chm", loadOptions);
 ```
 
-V tomto příkladu načteme CHM soubor "HTML help.chm" umístěný v adresáři dokumentů pomocí zadaných možností načítání.
+tomto příkladu načteme CHM soubor "HTML help.chm" umístěný v adresáři dokumentů pomocí zadaných možností načítání.
 
 ### Příklad zdrojového kódu pro LoadOptions s funkcí "Load Chm" pomocí Aspose.Words for .NET
 

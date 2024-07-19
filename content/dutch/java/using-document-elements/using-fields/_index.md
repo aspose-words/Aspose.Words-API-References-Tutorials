@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Vervangen`"Your Document Directory"` En`"Your Output Directory"` met de juiste paden.
+ Vervangen`"Your Document Directory"`En`"Your Output Directory"` met de juiste paden.
 
 ## 4. Afdruk samenvoegen aanpassen
 

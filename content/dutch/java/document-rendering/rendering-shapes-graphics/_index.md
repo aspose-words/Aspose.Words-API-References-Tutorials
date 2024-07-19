@@ -139,7 +139,7 @@ Het verbeteren van uw documenten met vormen en afbeeldingen kan de visuele aantr
 
 ### Hoe kan ik het formaat van een vorm in mijn document wijzigen?
 
- Om het formaat van een vorm te wijzigen, gebruikt u de`setWidth` En`setHeight` methoden op het vormobject. Om bijvoorbeeld een vorm van 150 pixels breed en 75 pixels hoog te maken:
+ Om het formaat van een vorm te wijzigen, gebruikt u de`setWidth`En`setHeight` methoden op het vormobject. Om bijvoorbeeld een vorm van 150 pixels breed en 75 pixels hoog te maken:
 
 ```java
 shape.setWidth(150);

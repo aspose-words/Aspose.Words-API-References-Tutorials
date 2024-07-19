@@ -2,74 +2,86 @@
 title: Beschermingstype ophalen in Word-document
 linktitle: Beschermingstype ophalen in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de functie Beschermingstype ophalen in Word-document van Aspose.Words voor .NET gebruikt om het beschermingstype van een document te bepalen.
+description: Leer hoe u het beveiligingstype van Word-documenten kunt controleren met Aspose.Words voor .NET. Inclusief stapsgewijze handleiding, codevoorbeelden en veelgestelde vragen.
 type: docs
 weight: 10
 url: /nl/net/document-protection/get-protection-type/
 ---
-Welkom bij deze stapsgewijze handleiding waarin de C#-broncode wordt uitgelegd voor de functie Get Protection Type van Aspose.Words voor .NET. In dit artikel laten we u zien hoe u deze krachtige functie kunt gebruiken om het beveiligingstype van een document te bepalen. Documentbescherming is essentieel om de vertrouwelijkheid en integriteit van uw bestanden te waarborgen. We begeleiden u door de stappen die nodig zijn om Aspose.Words voor .NET te integreren en de functie Get Protection Type te gebruiken.
+## Invoering
 
-## Stap 1: Het document laden
+Hallo daar! Heeft u zich ooit afgevraagd hoe u het beveiligingstype van uw Word-documenten programmatisch kunt controleren? Of u nu gevoelige gegevens beveiligt of gewoon nieuwsgierig bent naar de status van het document, het kan superhandig zijn om te weten hoe u het beveiligingstype kunt verkrijgen. Vandaag doorlopen we het proces met behulp van Aspose.Words voor .NET, een krachtige bibliotheek die het werken met Word-documenten een fluitje van een cent maakt. Doe je gordel om en laten we erin duiken!
 
-De eerste stap bij het gebruik van de functie Beschermingstype ophalen is het uploaden van het document waaraan u wilt werken. U kunt dit doen met behulp van de Document-klasse van Aspose.Words voor .NET. Hier is een voorbeeldcode om een document uit een bestand te laden:
+## Vereisten
+
+Voordat we ingaan op het codeergedeelte, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+
+1.  Aspose.Words voor .NET Library: Download en installeer het bestand .NET Library, als u dat nog niet heeft gedaan[Aspose.Words voor .NET-bibliotheek](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: een IDE zoals Visual Studio.
+3. Basiskennis van C#: Bekendheid met programmeren in C# helpt u mee te volgen.
+
+## Naamruimten importeren
+
+Voordat u begint met coderen, moet u de benodigde naamruimten importeren. Dit zorgt ervoor dat u toegang heeft tot alle klassen en methoden die door Aspose.Words worden aangeboden.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
+using System;
+using Aspose.Words;
 ```
 
-Zorg ervoor dat u het juiste pad naar uw documentbestand opgeeft.
+## Stapsgewijze handleiding
 
-## Stap 2: Het beschermingstype ophalen
+Laten we het proces opsplitsen in eenvoudige, gemakkelijk te volgen stappen. Elke stap leidt u door een specifiek deel van de taak, zodat u alles duidelijk begrijpt.
 
-Nadat het document is geüpload, kunt u de eigenschap ProtectionType van het Document-object gebruiken om het type beveiliging op te halen dat op het document is toegepast. Hier ziet u hoe u het kunt doen:
+## Stap 1: Stel uw project in
+
+Stel eerst uw C#-project in Visual Studio in. Hier is hoe:
+
+1. Een nieuw project maken: Open Visual Studio, ga naar Bestand > Nieuw > Project en selecteer een console-app (.NET Core of .NET Framework).
+2. Aspose.Words installeren: Klik met de rechtermuisknop op uw project in de Solution Explorer, selecteer "NuGet-pakketten beheren", zoek naar "Aspose.Words" en installeer het.
+
+## Stap 2: Laad uw document
+
+ Nu uw project is ingesteld, gaan we het Word-document laden dat u wilt controleren. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw document.
+
+```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Document.docx");
+```
+
+## Stap 3: Verkrijg het beschermingstype
+
+Dit is waar de magie gebeurt! We halen het beveiligingstype van het document op met Aspose.Words.
 
 ```csharp
 ProtectionType protectionType = doc.ProtectionType;
 ```
 
-### Voorbeeldbroncode voor het ophalen van beveiligingstype met Aspose.Words voor .NET
+## Stap 4: Geef het beschermingstype weer
 
-Hier is de volledige broncode voor de functie Get Protection Type met behulp van Aspose.Words voor .NET:
+Laten we tot slot het beveiligingstype in de console weergeven. Dit helpt u de huidige beveiligingsstatus van uw document te begrijpen.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
-ProtectionType protectionType = doc.ProtectionType;
+Console.WriteLine("The protection type of the document is: " + protectionType);
 ```
 
 ## Conclusie
 
-In dit artikel hebben we uitgelegd hoe u de functie Get Protection Type van Aspose.Words voor .NET kunt gebruiken om het beveiligingstype van een document te bepalen. Door de beschreven stappen te volgen, kunt u deze functionaliteit eenvoudig in uw eigen C#-projecten integreren en beveiligde documenten efficiënt manipuleren. Aspose.Words voor .NET biedt grote flexibiliteit
+En daar heb je het! U hebt met succes het beveiligingstype van een Word-document opgehaald met Aspose.Words voor .NET. Dit kan ongelooflijk handig zijn om ervoor te zorgen dat uw documenten goed beveiligd zijn of gewoon voor auditdoeleinden. Vergeet niet dat Aspose.Words een heleboel andere functies biedt waarmee u gemakkelijk Word-documenten kunt manipuleren. Probeer het eens en veel codeerplezier!
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is de eigenschap ProtectionType in Aspose.Words voor .NET?
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee u Word-documenten programmatisch kunt maken, bewerken, converteren en manipuleren.
 
- EEN: De`ProtectionType` eigenschap in Aspose.Words voor .NET is een functie waarmee u kunt bepalen welk type beveiliging op een Word-document wordt toegepast. Het biedt informatie over het niveau van documentbeveiliging, bijvoorbeeld of het document is beveiligd tegen opmerkingen, revisies, formulieren of andere soorten beperkingen.
+### Kan ik Aspose.Words gratis gebruiken?
+ Je kunt beginnen met een[gratis proefperiode](https://releases.aspose.com/) , maar voor volledige functionaliteit moet u een licentie aanschaffen. Bekijk de[aankoop opties](https://purchase.aspose.com/buy).
 
-#### Vraag: Hoe kan ik het beveiligingstype van een document ophalen met Aspose.Words voor .NET?
+### Welke beveiligingstypes kan Aspose.Words detecteren?
+Aspose.Words kan verschillende beveiligingstypen detecteren, zoals NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments en AllowOnlyFormFields.
 
-A: Om het beveiligingstype van een document op te halen met Aspose.Words voor .NET, kunt u deze stappen volgen:
-1.  Laad het document met behulp van de`Document` klas.
-2.  Toegang krijgen tot`ProtectionType` eigendom van de`Document`object om het beveiligingstype op te halen.
+### Hoe kan ik ondersteuning krijgen als ik problemen tegenkom?
+ Voor eventuele problemen kunt u terecht bij de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8)voor hulp.
 
-#### Vraag: Kan ik bepalen of een document is beveiligd voor formulieren of formuliervelden met behulp van de eigenschap ProtectionType?
-
- A: Ja, u kunt bepalen of een document is beveiligd voor formulieren of formuliervelden met behulp van de`ProtectionType` eigenschap in Aspose.Words voor .NET. Als het beveiligingstype is ingesteld op`AllowOnlyFormFields`geeft dit aan dat het document beveiligd is en dat alleen formuliervelden kunnen worden bewerkt.
-
-#### Vraag: Welke andere beveiligingstypen kan de eigenschap ProtectionType retourneren?
-
- EEN: De`ProtectionType` eigenschap in Aspose.Words voor .NET kan verschillende beveiligingstypen retourneren, waaronder:
-- `NoProtection`: Het document is niet beveiligd.
-- `AllowOnlyRevisions`: Het document is beveiligd en er kunnen alleen revisies worden aangebracht.
-- `AllowOnlyComments`: het document is beveiligd en er kunnen alleen opmerkingen worden toegevoegd.
-- `AllowOnlyFormFields`: het document is beveiligd en alleen formuliervelden kunnen worden bewerkt.
-- `ReadOnly`: het document is beveiligd en ingesteld als alleen-lezen.
-
-#### Vraag: Kan ik het beveiligingstype van een document wijzigen met de eigenschap ProtectionType?
-
- Antwoord: Nee, de`ProtectionType`eigenschap in Aspose.Words voor .NET is een alleen-lezen eigenschap. Hiermee kunt u het huidige beveiligingstype van een document ophalen, maar het biedt geen directe manier om het beveiligingstype te wijzigen. Om het beveiligingstype te wijzigen, moet u andere methoden en eigenschappen gebruiken die beschikbaar zijn in de`Document` klasse, zoals`Protect` of`Unprotect`.
-
-#### Vraag: Is het mogelijk om een document met meerdere beveiligingstypes tegelijk te beveiligen?
-
-A: Nee, met Aspose.Words voor .NET kan slechts één beveiligingstype tegelijk op een document worden toegepast. U kunt echter verschillende beveiligingstypen combineren door de beveiliging in te schakelen, één type in te stellen, de beveiliging uit te schakelen en deze vervolgens weer in te schakelen met een ander type.
-
+### Is Aspose.Words compatibel met .NET Core?
+Ja, Aspose.Words is compatibel met zowel .NET Framework als .NET Core.

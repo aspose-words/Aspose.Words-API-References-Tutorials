@@ -2,70 +2,104 @@
 title: Připojte se k průběžnému
 linktitle: Připojte se k průběžnému
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se spojit dva dokumenty spojitě při zachování formátování pomocí Aspose.Words for .NET.
+description: Naučte se, jak hladce spojit dva dokumenty aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro hladké a efektivní slučování dokumentů.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/join-continuous/
 ---
+## Úvod
 
-Tento tutoriál vysvětluje, jak spojit dva dokumenty nepřetržitě pomocí Aspose.Words pro .NET. Poskytnutý zdrojový kód ukazuje, jak připojit dokument na konec jiného dokumentu při zachování původního formátování.
+Hledáte bezproblémové sloučení dvou dokumentů aplikace Word do jednoho bez přerušení? Aspose.Words for .NET nabízí fantastický způsob, jak toho dosáhnout pomocí funkce Continuous Section Break. Tento výukový program vás provede krok za krokem celým procesem a zajistí, že budete moci snadno připojit dokumenty bez jakýchkoli potíží. Pojďme se ponořit!
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Ujistěte se, že máte následující předpoklady:
+Než začneme, ujistěte se, že máte vše, co potřebujete:
 
--  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose.Releases]https://releases.aspose.com/words/net/ nebo k instalaci použijte správce balíčků NuGet.
-- Cesta k adresáři dokumentů, kde jsou umístěny zdrojové a cílové dokumenty.
+-  Aspose.Words pro .NET: Pokud jste tak ještě neučinili, stáhněte si a nainstalujte[Aspose.Words for .NET](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Můžete použít Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
+- Ukázkové dokumenty: Připravte si dva dokumenty aplikace Word, které chcete sloučit.
 
-## Krok 2: Otevřete zdrojové a cílové dokumenty
+## Importovat jmenné prostory
 
- Otevřete zdrojové a cílové dokumenty pomocí`Document` konstruktor třídy. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů.
+Chcete-li používat Aspose.Words pro .NET, musíte do projektu importovat potřebné jmenné prostory. Postup je následující:
+
+```csharp
+using Aspose.Words;
+```
+
+Nyní si pro přehlednost rozdělíme příklad do několika kroků.
+
+## Krok 1: Nastavte adresář dokumentů
+
+Nejprve musíme nastavit adresář, kde jsou uloženy vaše dokumenty. To našemu kódu umožní najít soubory, které chceme sloučit.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kde jsou vaše dokumenty uloženy.
+
+## Krok 2: Načtěte zdrojové a cílové dokumenty
+
+Dále načteme zdrojové a cílové dokumenty do našeho programu. Toto jsou dva dokumenty, které chcete sloučit.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Nastavte souvislý začátek sekce
+Ujistěte se, že názvy souborů a cesty odpovídají skutečným souborům, které chcete použít.
 
-Chcete-li, aby se zdrojový dokument objevil hned za obsahem cílového dokumentu, nastavte`SectionStart` vlastnost první sekce ve zdrojovém dokumentu na`SectionStart.Continuous`.
+## Krok 3: Nastavte začátek sekce jako kontinuální
+
+ Aby se obsah zdrojového dokumentu objevil hned za cílovým dokumentem, musíme nastavit`SectionStart` vlastnost první sekce ve zdrojovém dokumentu na`Continuous`.
 
 ```csharp
+// Zajistěte, aby se dokument objevil přímo za obsahem cílového dokumentu.
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
+Tím je zajištěno, že mezi dokumenty při jejich sloučení nebudou žádné přestávky.
+
 ## Krok 4: Připojte zdrojový dokument
 
- Připojte zdrojový dokument k cílovému dokumentu pomocí`AppendDocument` metoda`Document` třída. Nastavte režim formátu importu na`ImportFormatMode.KeepSourceFormatting` pro zachování původních stylů ze zdrojového dokumentu.
+Nyní připojíme zdrojový dokument k cílovému dokumentu. Tento krok zajistí, že obsah ze zdrojového dokumentu bude přidán na konec cílového dokumentu.
 
 ```csharp
+// Připojte zdrojový dokument pomocí původních stylů nalezených ve zdrojovém dokumentu.
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Krok 5: Uložte upravený dokument
+ Použitím`ImportFormatMode.KeepSourceFormatting` zajišťuje, že formátování ze zdrojového dokumentu bude zachováno ve finálním sloučeném dokumentu.
 
-Nakonec uložte upravený cílový dokument pomocí`Save` metoda`Document` objekt.
+## Krok 5: Uložte sloučený dokument
+
+Nakonec sloučený dokument uložíme do zadaného adresáře. Tím je proces spojování dokumentů dokončen.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```
 
-Tím je dokončena implementace spojení dvou dokumentů nepřetržitě pomocí Aspose.Words pro .NET.
+Ujistěte se, že cesta a název souboru odpovídají vašim potřebám.
 
-### Příklad zdrojového kódu pro Join Continuous pomocí Aspose.Words pro .NET 
+## Závěr
 
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+A tady to máte! Pomocí několika řádků kódu jste úspěšně sloučili dva dokumenty Wordu do jednoho souvislého dokumentu pomocí Aspose.Words for .NET. Tento proces je nejen jednoduchý, ale také vysoce účinný a zajišťuje, že si vaše dokumenty zachovají své původní formátování.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Zajistěte, aby se dokument objevil přímo za obsahem cílového dokumentu.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// Připojte zdrojový dokument pomocí původních stylů nalezených ve zdrojovém dokumentu.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
-```
+## FAQ
+
+### Mohu sloučit více než dva dokumenty?
+Ano, proces můžete zopakovat pro sloučení více dokumentů načtením dalších dokumentů a jejich postupným připojením.
+
+### Bude zachováno původní formátování?
+ Ano, pomocí`ImportFormatMode.KeepSourceFormatting` zajišťuje zachování formátování ze zdrojového dokumentu.
+
+### Je Aspose.Words for .NET kompatibilní s .NET Core?
+Ano, Aspose.Words for .NET je kompatibilní s .NET Framework i .NET Core.
+
+### Mohu sloučit dokumenty s různými nastaveními stránky?
+Ano, ale možná budete muset upravit vlastnosti nastavení stránky, abyste zajistili bezproblémové sloučení.
+
+### Kde mohu získat podporu, pokud narazím na problémy?
+ Podporu můžete získat na fóru komunity Aspose[tady](https://forum.aspose.com/c/words/8).

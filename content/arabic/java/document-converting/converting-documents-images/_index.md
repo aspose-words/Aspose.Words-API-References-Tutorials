@@ -66,7 +66,7 @@ public class DocumentToImageConverter {
  لتعيين دقة الصورة، استخدم`setResolution` طريقة`ImageSaveOptions` وحدد الدقة المطلوبة بالنقاط في البوصة (DPI).
 
 ### هل يمكنني تحويل صفحات معينة من المستند إلى صور؟
- نعم، يمكنك تحديد نطاق الصفحات باستخدام`setPageCount` و`setPageIndex` طرق`ImageSaveOptions` لتحويل صفحات معينة إلى صور.
+ نعم، يمكنك تحديد نطاق الصفحات باستخدام`setPageCount`و`setPageIndex` طرق`ImageSaveOptions` لتحويل صفحات معينة إلى صور.
 
 ### هل Aspose.Words for Java مناسب لتحويل المستندات المجمعة؟
 قطعاً! يمكنك استخدام Aspose.Words for Java لتحويل مستندات متعددة إلى صور بكفاءة.

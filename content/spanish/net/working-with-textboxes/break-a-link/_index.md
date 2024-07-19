@@ -67,7 +67,7 @@ textBox.Previous?.BreakForwardLink();
 
 ## Conclusión
 
-¡Enhorabuena! Ahora ha aprendido cómo romper enlaces de redireccionamiento en un documento de Word usando la biblioteca Aspose.Words para .NET. Siguiendo los pasos de esta guía, pudo configurar el documento, crear una forma de cuadro de texto y romper los enlaces de redireccionamiento utilizando diferentes métodos.
+¡Enhorabuena! Ahora ha aprendido cómo romper enlaces de redireccionamiento en un documento de Word utilizando la biblioteca Aspose.Words para .NET. Siguiendo los pasos de esta guía, pudo configurar el documento, crear una forma de cuadro de texto y romper los enlaces de redireccionamiento utilizando diferentes métodos.
 
 ### Preguntas frecuentes sobre cómo romper el enlace hacia adelante en un documento de Word
 

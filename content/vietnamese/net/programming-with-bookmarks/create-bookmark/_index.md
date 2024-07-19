@@ -2,196 +2,135 @@
 title: Tạo Bookmark Trong Tài Liệu Word
 linktitle: Tạo Bookmark Trong Tài Liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tạo dấu trang trong tài liệu word và chỉ định mức xem trước dấu trang trong tệp PDF bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách tạo dấu trang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Hoàn hảo cho việc điều hướng và tổ chức tài liệu.
 type: docs
 weight: 10
 url: /vi/net/programming-with-bookmarks/create-bookmark/
 ---
+## Giới thiệu
 
-Trong bài viết này, chúng ta sẽ khám phá mã nguồn C# ở trên để hiểu cách sử dụng hàm Tạo dấu trang trong thư viện Aspose.Words cho .NET. Tính năng này cho phép bạn tạo dấu trang trong tài liệu và chỉ định mức xem trước dấu trang trong tệp PDF đầu ra.
+Tạo dấu trang trong tài liệu Word có thể thay đổi cuộc chơi, đặc biệt khi bạn muốn điều hướng qua các tài liệu lớn một cách dễ dàng. Hôm nay, chúng ta sẽ hướng dẫn quy trình tạo dấu trang bằng Aspose.Words cho .NET. Hướng dẫn này sẽ hướng dẫn bạn từng bước, đảm bảo bạn hiểu từng phần của quy trình. Vì vậy, hãy đi sâu vào ngay!
 
 ## Điều kiện tiên quyết
 
-- Kiến thức cơ bản về ngôn ngữ C#.
-- Môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+Trước khi chúng tôi bắt đầu, bạn cần có những điều sau:
 
-## Bước 1: Tạo tài liệu và trình tạo
+1.  Thư viện Aspose.Words for .NET: Tải xuống và cài đặt từ[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển .NET nào khác.
+3. Kiến thức cơ bản về C#: Hiểu các khái niệm lập trình C# cơ bản.
 
- Trước khi tạo dấu trang, chúng ta cần tạo một tài liệu và trình tạo tài liệu bằng cách sử dụng`Document` Và`DocumentBuilder` các đối tượng:
+## Nhập không gian tên
+
+Để làm việc với Aspose.Words cho .NET, bạn cần nhập các không gian tên cần thiết:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Bước 1: Thiết lập Document và DocumentBuilder
+
+Khởi tạo tài liệu
+
+Đầu tiên chúng ta cần tạo một tài liệu mới và khởi tạo`DocumentBuilder`. Đây là điểm bắt đầu để thêm nội dung và dấu trang vào tài liệu của bạn.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Bước 2: Tạo bookmark chính
+ Giải thích: Các`Document` đối tượng là canvas của bạn. Các`DocumentBuilder` giống như chiếc bút của bạn, nó cho phép bạn viết nội dung và tạo dấu trang trong tài liệu.
 
- Chúng tôi sử dụng`StartBookmark` phương pháp để bắt đầu một dấu trang chính và`EndBookmark` phương pháp để kết thúc nó. Ở giữa, chúng ta có thể thêm văn bản và các dấu trang khác:
+## Bước 2: Tạo dấu trang chính
+
+Bắt đầu và kết thúc dấu trang chính
+
+Để tạo dấu trang, bạn cần chỉ định điểm bắt đầu và điểm kết thúc. Ở đây, chúng ta sẽ tạo một bookmark có tên "My Bookmark".
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-// Thêm nhiều dấu trang hoặc văn bản ở đây.
-
-builder. EndBookmark("My Bookmark");
 ```
+
+ Giải thích: Các`StartBookmark` phương thức đánh dấu sự bắt đầu của dấu trang và`Writeln` thêm văn bản vào dấu trang.
 
 ## Bước 3: Tạo dấu trang lồng nhau
 
- Chúng ta cũng có thể tạo các dấu trang lồng nhau bên trong dấu trang chính. Chúng tôi sử dụng tương tự`StartBookmark` Và`EndBookmark` phương pháp tạo và kết thúc dấu trang lồng nhau:
+Thêm dấu trang lồng nhau bên trong dấu trang chính
+
+Bạn có thể lồng các dấu trang vào trong các dấu trang khác. Ở đây, chúng tôi thêm "Dấu trang lồng nhau" trong "Dấu trang của tôi".
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## Bước 4: Chỉ định mức xem trước dấu trang trong tệp PDF đầu ra
+ Giải thích: Dấu trang lồng nhau cho phép tổ chức nội dung có cấu trúc và phân cấp hơn. Các`EndBookmark` phương pháp đóng dấu trang hiện tại.
 
- Chúng tôi sử dụng`PdfSaveOptions` đối tượng để chỉ định mức xem trước dấu trang trong tệp PDF đầu ra. Chúng tôi sử dụng`BookmarksOutlineLevels` tài sản
+## Bước 4: Thêm văn bản bên ngoài dấu trang lồng nhau
 
-  để thêm dấu trang chính và dấu trang lồng nhau với cấp độ tương ứng:
+Tiếp tục thêm nội dung
+
+Sau dấu trang lồng nhau, chúng ta có thể tiếp tục thêm nhiều nội dung hơn trong dấu trang chính.
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+Giải thích: Điều này đảm bảo rằng dấu trang chính bao gồm cả dấu trang lồng nhau và văn bản bổ sung.
+
+## Bước 5: Định cấu hình tùy chọn lưu PDF
+
+Thiết lập tùy chọn lưu PDF cho dấu trang
+
+Khi lưu tài liệu dưới dạng PDF, chúng ta có thể định cấu hình các tùy chọn để bao gồm dấu trang.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+ Giải thích: Các`PdfSaveOptions` lớp cho phép bạn chỉ định cách lưu tài liệu dưới dạng PDF. Các`BookmarksOutlineLevels` thuộc tính xác định thứ bậc của dấu trang trong PDF.
+
+## Bước 6: Lưu tài liệu
+
+Lưu tài liệu dưới dạng PDF
+
+Cuối cùng, lưu tài liệu với các tùy chọn đã chỉ định.
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### Mã nguồn mẫu cho Tạo dấu trang bằng Aspose.Words cho .NET
-
-Đây là mã nguồn ví dụ đầy đủ để minh họa việc tạo dấu trang bằng Aspose.Words cho .NET:
-
-```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+ Giải thích: Các`Save` phương pháp lưu tài liệu ở định dạng và vị trí đã chỉ định. Tệp PDF bây giờ sẽ bao gồm các dấu trang mà chúng tôi đã tạo.
 
 ## Phần kết luận
 
-Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu cách sử dụng chức năng Tạo dấu trang của Aspose.Words cho .NET. Chúng tôi đã làm theo hướng dẫn từng bước để tạo dấu trang trong tài liệu và chỉ định mức xem trước dấu trang trong tệp PDF đầu ra.
+Tạo dấu trang trong tài liệu Word bằng Aspose.Words cho .NET rất đơn giản và vô cùng hữu ích cho việc sắp xếp và điều hướng tài liệu. Cho dù bạn đang tạo báo cáo, tạo sách điện tử hay quản lý tài liệu lớn, dấu trang đều giúp cuộc sống dễ dàng hơn. Hãy làm theo các bước được nêu trong hướng dẫn này và bạn sẽ có sẵn bản PDF được đánh dấu trang ngay lập tức.
 
-### Câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Điều kiện tiên quyết để sử dụng chức năng "Tạo dấu trang" trong Aspose.Words cho .NET là gì?
+### Tôi có thể tạo nhiều dấu trang ở các cấp độ khác nhau không?
 
-Đáp: Để sử dụng chức năng "Tạo dấu trang" trong Aspose.Words cho .NET, bạn phải có kiến thức cơ bản về ngôn ngữ C#. Bạn cũng cần có môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+Tuyệt đối! Bạn có thể tạo bao nhiêu dấu trang nếu cần và xác định cấp độ phân cấp của chúng khi lưu tài liệu dưới dạng PDF.
 
-#### Hỏi: Làm cách nào để tạo tài liệu trong Aspose.Words cho .NET?
+### Làm cách nào để cập nhật văn bản của dấu trang?
 
- Trả lời: Để tạo tài liệu trong Aspose.Words cho .NET, bạn có thể sử dụng`Document` lớp học. Đây là một mã mẫu:
+ Bạn có thể điều hướng đến dấu trang bằng cách sử dụng`DocumentBuilder.MoveToBookmark` và sau đó cập nhật văn bản.
 
-```csharp
-Document doc = new Document();
-```
+### Có thể xóa một dấu trang?
 
-#### Câu hỏi: Làm cách nào để tạo dấu trang chính trong tài liệu bằng Aspose.Words cho .NET?
+ Có, bạn có thể xóa dấu trang bằng cách sử dụng`Bookmarks.Remove` phương pháp bằng cách chỉ định tên của dấu trang.
 
- Trả lời: Để tạo dấu trang chính trong tài liệu bằng Aspose.Words cho .NET, bạn có thể sử dụng`StartBookmark` phương pháp để bắt đầu đánh dấu trang, thêm văn bản hoặc các dấu trang khác vào bên trong, sau đó sử dụng` EndBookmark` để kết thúc nó. Đây là một mã mẫu:
+### Tôi có thể tạo dấu trang ở các định dạng khác ngoài PDF không?
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+Có, Aspose.Words hỗ trợ dấu trang ở nhiều định dạng khác nhau, bao gồm DOCX, HTML và EPUB.
 
-#### Câu hỏi: Làm cách nào để tạo dấu trang lồng nhau bên trong dấu trang chính bằng Aspose.Words cho .NET?
+### Làm cách nào để đảm bảo dấu trang xuất hiện chính xác trong tệp PDF?
 
- Trả lời: Để tạo dấu trang lồng nhau bên trong dấu trang chính bằng Aspose.Words cho .NET, bạn có thể sử dụng tương tự`StartBookmark` Và`EndBookmark` phương pháp bắt đầu và kết thúc dấu trang lồng nhau. Đây là một mã mẫu:
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### Câu hỏi: Làm cách nào để chỉ định mức xem trước dấu trang trong tệp PDF đầu ra bằng Aspose.Words cho .NET?
-
- Trả lời: Để chỉ định mức xem trước dấu trang trong tệp PDF đầu ra bằng Aspose.Words cho .NET, bạn có thể sử dụng`PdfSaveOptions` lớp học và`BookmarksOutlineLevels` tài sản. Bạn có thể thêm dấu trang chính và dấu trang lồng nhau với cấp độ tương ứng. Đây là một mã mẫu:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### Hỏi: Làm cách nào để lưu tài liệu sau khi tạo dấu trang bằng Aspose.Words cho .NET?
-
- Trả lời: Để lưu tài liệu sau khi tạo dấu trang bằng Aspose.Words cho .NET, bạn có thể sử dụng`Save` phương pháp của`Document` đối tượng chỉ định đường dẫn tệp đích. Đây là một mã mẫu:
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### Câu hỏi: Làm cách nào để chỉ định mức xem trước dấu trang trong tệp PDF đầu ra bằng Aspose.Words cho .NET?
-
- Trả lời: Để chỉ định mức xem trước dấu trang trong tệp PDF đầu ra bằng Aspose.Words cho .NET, bạn có thể sử dụng`PdfSaveOptions` lớp học và`BookmarksOutlineLevels` tài sản. Bạn có thể thêm dấu trang chính và dấu trang lồng nhau với cấp độ tương ứng. Đây là một mã mẫu:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### Câu hỏi: Làm cách nào để tạo dấu trang lồng nhau bên trong dấu trang chính bằng Aspose.Words cho .NET?
-
- Trả lời: Để tạo các dấu trang lồng nhau bên trong dấu trang chính bằng Aspose.Words cho .NET, bạn có thể sử dụng tương tự`StartBookmark` Và`EndBookmark` phương pháp bắt đầu và kết thúc các dấu trang lồng nhau. Đảm bảo chỉ định dấu trang gốc làm tham số khi gọi`StartBookmark` phương pháp. Đây là một mã mẫu:
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### Hỏi: Làm cách nào để thêm văn bản vào dấu trang bằng Aspose.Words cho .NET?
-
- Trả lời: Để thêm văn bản bên trong dấu trang bằng Aspose.Words cho .NET, bạn có thể sử dụng`Write` phương pháp của`DocumentBuilder`đối tượng chỉ định văn bản cần thêm. Đây là một mã mẫu:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### Câu hỏi: Làm cách nào để tạo dấu trang chính trong tài liệu bằng Aspose.Words cho .NET?
-
- Trả lời: Để tạo dấu trang chính trong tài liệu bằng Aspose.Words cho .NET, bạn có thể sử dụng`StartBookmark` phương pháp để bắt đầu đánh dấu và`EndBookmark` phương pháp để kết thúc nó. Đây là một mã mẫu:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+ Hãy đảm bảo xác định`BookmarksOutlineLevels` đúng cách trong`PdfSaveOptions`. Điều này đảm bảo các dấu trang được đưa vào dàn ý của tệp PDF.

@@ -2,7 +2,7 @@
 title: फॉर्म फ़ील्ड नाम से प्राप्त करें
 linktitle: फॉर्म फ़ील्ड नाम से प्राप्त करें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में नाम से फ़ॉर्म फ़ील्ड को पुनर्प्राप्त और संशोधित करना सीखें।
+description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में नाम द्वारा फ़ॉर्म फ़ील्ड को पुनः प्राप्त और संशोधित करना सीखें।
 type: docs
 weight: 10
 url: /hi/net/working-with-formfields/form-fields-get-by-name/
@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## चरण 2: फ़ॉर्म फ़ील्ड पुनर्प्राप्त करना
 
- इसके बाद, एक्सेस करें`FormFields` की संपत्ति`Range` सभी फ़ॉर्म फ़ील्ड को पुनः प्राप्त करने के लिए दस्तावेज़ में ऑब्जेक्ट:
+ इसके बाद, एक्सेस करें`FormFields` की संपत्ति`Range` दस्तावेज़ में सभी फ़ॉर्म फ़ील्ड पुनर्प्राप्त करने के लिए ऑब्जेक्ट:
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;

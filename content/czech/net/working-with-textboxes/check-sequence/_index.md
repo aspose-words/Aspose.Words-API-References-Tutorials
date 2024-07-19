@@ -56,7 +56,7 @@ if (textBox. Next == null && textBox. Previous != null)
 
 Pokud textové pole nemá žádný další tvar (`Next`), ale má předchozí tvar (`Previous`), to znamená, že je to konec sekvence. Zobrazí se zpráva "Konec sekvence".
 
-### Ukázkový zdrojový kód pro ověření sekvence pomocí Aspose.Words pro .NET
+### Ukázkový zdrojový kód k ověření sekvence pomocí Aspose.Words pro .NET
 
 ```csharp
 Document doc = new Document();

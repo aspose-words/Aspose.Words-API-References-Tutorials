@@ -19,7 +19,7 @@ url: /ru/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 Первым шагом является загрузка зашифрованного PDF-документа в ваше приложение. Вот как это сделать:
 
 ```csharp
-// Путь к каталогу документов.
+//Путь к каталогу документов.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

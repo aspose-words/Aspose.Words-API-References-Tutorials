@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- Pada langkah ini, kami mengonfigurasi opsi untuk memuat dokumen TXT. Kami membuat yang baru`TxtLoadOptions` objek dan atur`LeadingSpacesOptions` Dan`TrailingSpacesOptions` properti ke`TxtLeadingSpacesOptions.Trim` Dan`TxtTrailingSpacesOptions.Trim` masing-masing. Ini memberitahu Aspose.Words untuk menghapus spasi di awal dan akhir dari baris saat memuat dokumen.
+ Pada langkah ini, kami mengonfigurasi opsi untuk memuat dokumen TXT. Kami membuat yang baru`TxtLoadOptions` objek dan atur`LeadingSpacesOptions`Dan`TrailingSpacesOptions` properti ke`TxtLeadingSpacesOptions.Trim`Dan`TxtTrailingSpacesOptions.Trim` masing-masing. Ini memberitahu Aspose.Words untuk menghapus spasi di awal dan akhir dari baris saat memuat dokumen.
 
 ## Langkah 4: Memuat dokumen
 

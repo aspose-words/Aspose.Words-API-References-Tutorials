@@ -15,7 +15,7 @@ Antes de mergulhar no código, é importante entender a biblioteca Aspose.Words 
 
 ## Configurando opções de carregamento
 
-primeiro passo é configurar as opções de carregamento do nosso documento de texto. Use a classe LoadOptions para especificar parâmetros de carregamento. No nosso caso, precisamos definir a propriedade Encoding para a codificação desejada, por exemplo, Encoding.UTF7 para codificação UTF-7. Veja como fazer isso:
+O primeiro passo é configurar as opções de carregamento do nosso documento de texto. Use a classe LoadOptions para especificar parâmetros de carregamento. No nosso caso, precisamos definir a propriedade Encoding para a codificação desejada, por exemplo, Encoding.UTF7 para codificação UTF-7. Veja como fazer isso:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { Encoding = Encoding.UTF7 };

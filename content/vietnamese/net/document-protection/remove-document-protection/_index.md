@@ -2,103 +2,117 @@
 title: Loại bỏ bảo vệ tài liệu trong tài liệu Word
 linktitle: Loại bỏ bảo vệ tài liệu trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách loại bỏ tính năng bảo vệ trong tài liệu Word bằng Aspose.Words dành cho .NET.
+description: Tìm hiểu cách loại bỏ tính năng bảo vệ khỏi tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để dễ dàng bỏ bảo vệ tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/document-protection/remove-document-protection/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước sử dụng tính năng tài liệu không được bảo vệ của Aspose.Words cho .NET. Tính năng này cho phép bạn loại bỏ bảo vệ trong tài liệu Word để có thể truy cập được để chỉnh sửa thêm. Làm theo các bước dưới đây:
 
-## Bước 1: Tạo tài liệu và thêm nội dung
+## Giới thiệu
 
-Bắt đầu bằng cách tạo một thể hiện của lớp Document và đối tượng DocumentBuilder:
+Này! Bạn đã bao giờ thấy mình bị khóa tài liệu Word của mình do cài đặt bảo vệ chưa? Nó giống như cố gắng mở một cánh cửa bằng sai chìa khóa—thật khó chịu, phải không? Nhưng đừng sợ! Với Aspose.Words for .NET, bạn có thể dễ dàng loại bỏ tính năng bảo vệ khỏi tài liệu Word của mình. Hướng dẫn này sẽ hướng dẫn bạn từng bước trong quy trình, đảm bảo bạn có thể lấy lại toàn quyền kiểm soát tài liệu của mình ngay lập tức. Hãy đi sâu vào!
+
+## Điều kiện tiên quyết
+
+Trước khi bắt đầu viết mã, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
+
+1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Môi trường phát triển .NET như Visual Studio.
+3. Kiến thức cơ bản về C#: Hiểu những kiến thức cơ bản về C# sẽ giúp bạn theo dõi.
+
+## Nhập không gian tên
+
+Trước khi viết bất kỳ mã nào, hãy đảm bảo rằng bạn đã nhập các không gian tên cần thiết:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.Protection;
 ```
 
-## Bước 2: Thêm nội dung vào tài liệu
+Những không gian tên này sẽ cung cấp cho chúng ta tất cả các công cụ cần thiết để thao tác với tài liệu Word.
 
-Sử dụng đối tượng DocumentBuilder để thêm nội dung vào tài liệu:
+## Bước 1: Tải tài liệu
 
-```csharp
-builder.Writeln("Text added to a document.");
-```
-
-## Bước 3: Bỏ bảo vệ tài liệu
-
-Để bỏ bảo vệ tài liệu, bạn có thể sử dụng phương thức Unprotect() của đối tượng Document. Bạn có thể chọn loại bỏ bảo vệ mà không cần mật khẩu hoặc bằng mật khẩu chính xác. Loại bỏ bảo vệ không cần mật khẩu:
+Được rồi, hãy bắt đầu. Bước đầu tiên là tải tài liệu bạn muốn bỏ bảo vệ. Đây là nơi chúng tôi cho chương trình biết chúng tôi đang xử lý tài liệu nào.
 
 ```csharp
-doc.Unprotect();
-doc.Protect(ProtectionType.ReadOnly, "newPassword");
-doc.Unprotect("newPassword");
-```
-
-Đảm bảo thay thế "newPassword" bằng mật khẩu tài liệu chính xác.
-
-## Bước 4: Lưu tài liệu mà không cần bảo vệ
-
-Cuối cùng, lưu tài liệu không được bảo vệ bằng phương thức Save() của đối tượng Document:
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
-```
-
-Đảm bảo chỉ định đúng đường dẫn và tên tệp để lưu tài liệu không được bảo vệ.
-
-### Mã nguồn mẫu cho Xóa bảo vệ tài liệu bằng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh để bỏ bảo vệ tài liệu bằng Aspose.Words cho .NET:
-
-```csharp
-
 // Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Writeln("Text added to a document.");
-
-// Tài liệu có thể được gỡ bỏ bảo vệ mà không cần mật khẩu hoặc bằng mật khẩu chính xác.
-doc.Unprotect();
-doc.Protect(ProtectionType.ReadOnly, "newPassword");
-doc.Unprotect("newPassword");
-
-doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
-
+Document doc = new Document(dataDir + "ProtectedDocument.docx");
 ```
 
-Bằng cách làm theo các bước này, bạn có thể dễ dàng loại bỏ tính năng bảo vệ khỏi tài liệu Word bằng Aspose.Words cho .NET.
+ Ở đây, chúng tôi chỉ định đường dẫn đến thư mục chứa tài liệu của chúng tôi. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+
+## Bước 2: Xóa bảo vệ không cần mật khẩu
+
+Đôi khi, tài liệu được bảo vệ mà không cần mật khẩu. Trong những trường hợp như vậy, chúng ta có thể chỉ cần loại bỏ tính năng bảo vệ bằng một dòng mã.
+
+```csharp
+// Loại bỏ bảo vệ không cần mật khẩu
+doc.Unprotect();
+```
+
+Đó là nó! Tài liệu của bạn bây giờ không được bảo vệ. Nhưng nếu có mật khẩu thì sao?
+
+## Bước 3: Xóa bảo vệ bằng mật khẩu
+
+Nếu tài liệu của bạn được bảo vệ bằng mật khẩu, bạn cần cung cấp mật khẩu đó để xóa bảo vệ. Đây là cách bạn làm điều đó:
+
+```csharp
+// Loại bỏ bảo vệ bằng mật khẩu chính xác
+doc.Unprotect("currentPassword");
+```
+
+ Thay thế`"currentPassword"` với mật khẩu thực tế được sử dụng để bảo vệ tài liệu. Sau khi bạn cung cấp mật khẩu chính xác, tính năng bảo vệ sẽ được dỡ bỏ.
+
+## Bước 4: Thêm và xóa bảo vệ
+
+Giả sử bạn muốn xóa biện pháp bảo vệ hiện tại rồi thêm một biện pháp bảo vệ mới. Điều này có thể hữu ích cho việc đặt lại bảo vệ tài liệu. Đây là cách bạn có thể làm điều đó:
+
+```csharp
+// Thêm bảo vệ mới
+doc.Protect(ProtectionType.ReadOnly, "newPassword");
+
+// Loại bỏ lớp bảo vệ mới
+doc.Unprotect("newPassword");
+```
+
+ Trong đoạn mã trên, trước tiên chúng tôi thêm một biện pháp bảo vệ mới bằng mật khẩu`"newPassword"`, rồi xóa ngay lập tức bằng cùng một mật khẩu.
+
+## Bước 5: Lưu tài liệu
+
+Cuối cùng, sau khi thực hiện tất cả các thay đổi cần thiết, đừng quên lưu tài liệu của bạn. Đây là mã để lưu tài liệu:
+
+```csharp
+// Lưu tài liệu
+doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
+```
+
+Thao tác này sẽ lưu tài liệu không được bảo vệ của bạn vào thư mục được chỉ định.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã khám phá cách loại bỏ bảo vệ tài liệu trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được cung cấp, bạn có thể dễ dàng bỏ bảo vệ tài liệu và làm cho tài liệu đó có thể truy cập được để chỉnh sửa thêm. Aspose.Words for .NET cung cấp một API mạnh mẽ cho phép bạn thao tác cài đặt bảo vệ tài liệu và tùy chỉnh mức độ bảo mật cho tài liệu Word của bạn. Việc loại bỏ bảo vệ tài liệu giúp bạn linh hoạt sửa đổi nội dung và định dạng tài liệu khi cần.
+Và bạn có nó rồi đấy! Việc xóa tính năng bảo vệ khỏi tài liệu Word bằng Aspose.Words cho .NET thật dễ dàng. Cho dù đó có phải là tài liệu được bảo vệ bằng mật khẩu hay không, Aspose.Words đều cung cấp cho bạn sự linh hoạt để quản lý việc bảo vệ tài liệu một cách dễ dàng. Giờ đây, bạn có thể mở khóa tài liệu của mình và kiểm soát hoàn toàn chỉ bằng một vài dòng mã.
 
-### Câu hỏi thường gặp về loại bỏ bảo vệ tài liệu trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Bảo vệ tài liệu trong Aspose.Words dành cho .NET là gì?
+### Điều gì xảy ra nếu tôi cung cấp sai mật khẩu?
 
-Trả lời: Bảo vệ tài liệu trong Aspose.Words for .NET đề cập đến tính năng cho phép bạn áp dụng các biện pháp bảo mật cho tài liệu Word để hạn chế chỉnh sửa, định dạng và sửa đổi nội dung. Nó giúp đảm bảo tính toàn vẹn và bảo mật của tài liệu.
+Nếu bạn cung cấp mật khẩu không chính xác, Aspose.Words sẽ đưa ra một ngoại lệ. Hãy chắc chắn rằng bạn sử dụng đúng mật khẩu để loại bỏ bảo vệ.
 
-#### Câu hỏi: Làm cách nào tôi có thể xóa tính năng bảo vệ tài liệu bằng Aspose.Words cho .NET?
+### Tôi có thể loại bỏ bảo vệ khỏi nhiều tài liệu cùng một lúc không?
 
-Trả lời: Để xóa tính năng bảo vệ tài liệu bằng Aspose.Words cho .NET, bạn có thể làm theo các bước sau:
-1.  Tạo một thể hiện của`Document` lớp học và một`DocumentBuilder` sự vật.
-2.  Sử dụng`DocumentBuilder` để thêm nội dung vào tài liệu.
-3.  Gọi`Unprotect` phương pháp của`Document` phản đối việc loại bỏ mọi biện pháp bảo vệ hiện có khỏi tài liệu. Điều này có thể được thực hiện mà không cần mật khẩu hoặc bằng cách cung cấp mật khẩu chính xác.
-4.  Lưu tài liệu không được bảo vệ bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
+Có, bạn có thể duyệt qua danh sách tài liệu và áp dụng cùng một logic không bảo vệ cho từng tài liệu.
 
-#### Hỏi: Tôi có thể loại bỏ tính năng bảo vệ khỏi tài liệu Word mà không cần mật khẩu không?
+### Aspose.Words cho .NET có miễn phí không?
 
- Trả lời: Có, bạn có thể xóa tính năng bảo vệ khỏi tài liệu Word mà không cần mật khẩu bằng Aspose.Words for .NET. Bằng cách gọi`Unprotect` phương pháp của`Document`đối tượng mà không cần cung cấp mật khẩu, bạn có thể xóa tính năng bảo vệ khỏi tài liệu nếu trước đó nó được bảo vệ mà không cần mật khẩu.
+ Aspose.Words for .NET là một thư viện trả phí nhưng bạn có thể dùng thử miễn phí. Kiểm tra[dùng thử miễn phí](https://releases.aspose.com/)!
 
-#### Hỏi: Làm cách nào tôi có thể loại bỏ tính năng bảo vệ khỏi tài liệu Word bằng mật khẩu?
+### Tôi có thể áp dụng những loại bảo vệ nào khác cho tài liệu Word?
 
- Trả lời: Để loại bỏ tính năng bảo vệ khỏi tài liệu Word được bảo vệ bằng mật khẩu, bạn cần cung cấp mật khẩu chính xác khi gọi tới`Unprotect` phương pháp của`Document` sự vật. Điều này đảm bảo rằng chỉ những người dùng có mật khẩu chính xác mới có thể gỡ bỏ bảo vệ và truy cập tài liệu để chỉnh sửa.
+Aspose.Words cho phép bạn áp dụng các loại bảo vệ khác nhau, chẳng hạn như ReadOnly, AllowOnlyRevisions, AllowOnlyComments và AllowOnlyFormFields.
 
-#### Hỏi: Tôi có thể loại bỏ các loại bảo vệ cụ thể khỏi tài liệu Word không?
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
 
- Trả lời: Có, khi sử dụng Aspose.Words cho .NET, bạn có thể loại bỏ có chọn lọc các loại bảo vệ cụ thể khỏi tài liệu Word. Bằng cách gọi`Unprotect` phương pháp của`Document` đối tượng, bạn có thể loại bỏ loại bảo vệ mong muốn, chẳng hạn như bảo vệ chỉ đọc hoặc bảo vệ biểu mẫu, trong khi vẫn giữ nguyên các loại bảo vệ khác.
+ Bạn có thể tìm thấy tài liệu chi tiết về[Trang tài liệu Aspose.Words cho .NET](https://reference.aspose.com/words/net/).

@@ -72,7 +72,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 #### 问：文档处理完成后，临时文件会怎样？
 
-A: Aspose.Words 自动管理文档处理过程中产生的临时文件。文档处理完成后，Aspose.Words 将从指定的临时文件夹中清除临时文件。
+A: Aspose.Words 自动管理文档处理过程中产生的临时文件。文档处理完成后，Aspose.Words 将从指定的临时文件夹中清理临时文件。
 
 #### 问：我可以使用同一个临时文件夹进行多个文档处理操作吗？
 

@@ -16,6 +16,6 @@ Postępując zgodnie z tymi samouczkami, poznasz najlepsze praktyki zapisywania 
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Zaszyfruj dokument hasłem](./encrypt-document-with-password/) | Dowiedz się, jak szyfrować dokumenty hasłem przy użyciu Aspose.Words dla .NET.  |
-| [Nie kompresuj małych metaplików](./do-not-compress-small-metafiles/) | Dowiedz się, jak używać Aspose.Words dla .NET, aby włączyć funkcję Nie kompresuj małych metaplików podczas zapisywania dokumentów. |
-| [Nie zapisuj punktora obrazkowego](./do-not-save-picture-bullet/) | Dowiedz się, jak wyłączyć zapisywanie punktorów graficznych w dokumentach programu Word przy użyciu Aspose.Words dla .NET. |
+| [Zaszyfruj dokument hasłem](./encrypt-document-with-password/) | Dowiedz się, jak zaszyfrować dokument hasłem przy użyciu Aspose.Words dla .NET w tym szczegółowym przewodniku krok po kroku. Zabezpiecz swoje wrażliwe informacje bez wysiłku. |
+| [Nie kompresuj małych metaplików](./do-not-compress-small-metafiles/) | Dowiedz się, jak używać Aspose.Words dla .NET, aby mieć pewność, że małe metapliki w dokumentach programu Word nie zostaną skompresowane, zachowując ich jakość i integralność. W zestawie instrukcja krok po kroku. |
+| [Nie zapisuj punktora obrazkowego](./do-not-save-picture-bullet/) | dowiedz się, jak obsługiwać punktory obrazkowe w Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Uprość zarządzanie dokumentami i bez wysiłku twórz profesjonalne dokumenty Word. |

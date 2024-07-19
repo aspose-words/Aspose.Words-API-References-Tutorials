@@ -17,7 +17,7 @@ Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
 
 ## Langkah 1: Buat Dokumen Baru dan DocumentBuilder
- Buat instance baru dari`Document` kelas dan a`DocumentBuilder`keberatan untuk bekerja dengan dokumen tersebut.
+ Buat instance baru dari`Document` kelas dan a`DocumentBuilder` keberatan untuk bekerja dengan dokumen tersebut.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Langkah 2: Sisipkan Bentuk Gambar
- Menggunakan`InsertImage` metode`DocumentBuilder` objek untuk menyisipkan bentuk gambar ke dalam dokumen. Berikan jalur ke file gambar sebagai parameter.
+ Menggunakan`InsertImage` metode`DocumentBuilder`objek untuk menyisipkan bentuk gambar ke dalam dokumen. Berikan jalur ke file gambar sebagai parameter.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

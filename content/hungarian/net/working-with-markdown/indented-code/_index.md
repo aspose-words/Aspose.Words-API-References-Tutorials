@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2. lépés: Adjon hozzá stílust a behúzott kódhoz
 
-Egyéni stílust adunk hozzá a behúzott kódhoz a segítségével`Styles.Add` módszere a`Document` tárgy. Ebben a példában létrehozunk egy "IndentedCode" nevű stílust a behúzott kódhoz.
+ Egyéni stílust adunk hozzá a behúzott kódhoz a segítségével`Styles.Add` módszere a`Document` tárgy. Ebben a példában létrehozunk egy "IndentedCode" nevű stílust a behúzott kódhoz.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

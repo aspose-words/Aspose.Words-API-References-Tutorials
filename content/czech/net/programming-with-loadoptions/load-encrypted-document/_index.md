@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Načtěte zašifrovaný dokument se zadaným heslem
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Uložte zašifrovaný dokument s novým heslem
+//Uložte zašifrovaný dokument s novým heslem
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Załaduj dokument programu Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Skonfiguruj opcje tworzenia kopii zapasowych za pomocą funkcji „Użyj czcionek z komputera docelowego”.
+// Skonfiguruj opcje tworzenia kopii zapasowych za pomocą funkcji „Użyj czcionek z komputera docelowego”.
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Konwertuj dokument na stały kod HTML
@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.htm
 
 ## Wniosek
 
-W tym przewodniku wyjaśniliśmy, jak przekonwertować dokument Word na stały kod HTML przy użyciu czcionek komputera docelowego za pomocą biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Konwersja do stałego HTML z czcionkami maszyny docelowej gwarantuje wierne i spójne renderowanie dokumentu w formacie HTML.
+tym przewodniku wyjaśniliśmy, jak przekonwertować dokument Word na stały kod HTML przy użyciu czcionek komputera docelowego za pomocą biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Konwersja do stałego HTML z czcionkami maszyny docelowej gwarantuje wierne i spójne renderowanie dokumentu w formacie HTML.

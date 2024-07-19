@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Tambahkan folder baru sumber yang akan menginstruksikan Aspose.Words untuk mencari font di folder berikut.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//Tambahkan folder khusus yang berisi font kami ke daftar sumber font yang ada.
+// Tambahkan folder khusus yang berisi font kami ke daftar sumber font yang ada.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ A: Ya, Anda dapat memfilter daftar font yang tersedia di Aspose.Words menggunaka
 
 #### T: Bagaimana cara menggunakan daftar font yang tersedia di dokumen Word saya?
 
-J: Untuk menggunakan daftar font yang tersedia di dokumen Word Anda, Anda dapat menelusuri daftar dan memilih font yang sesuai menggunakan metode dan properti dari`FontSettings` kelas di Aspose.Words.
+ J: Untuk menggunakan daftar font yang tersedia di dokumen Word Anda, Anda dapat menelusuri daftar dan memilih font yang sesuai menggunakan metode dan properti dari`FontSettings` kelas di Aspose.Words.

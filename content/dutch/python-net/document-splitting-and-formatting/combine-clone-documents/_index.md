@@ -11,7 +11,7 @@ In de snelle digitale wereld van vandaag is documentverwerking een cruciaal aspe
 
 ## Aspose.Words installeren
 
- Voordat we ingaan op de details, moet je Aspose.Words voor Python instellen. Je kunt het downloaden en installeren via de volgende link:[Download Aspose.Words voor Python](https://releases.aspose.com/words/python/). 
+Voordat we ingaan op de details, moet je Aspose.Words voor Python instellen. Je kunt het downloaden en installeren via de volgende link:[Download Aspose.Words voor Python](https://releases.aspose.com/words/python/). 
 
 ## Documenten combineren
 
@@ -127,7 +127,7 @@ Ja, u kunt een oppervlakkige kloon uitvoeren om alleen de structuur van een docu
  Maak gebruik van de`range.replace()` methode samen met de juiste opties om tekst efficiënt te vinden en te vervangen.
 
 ### Ondersteunt Aspose.Words het wijzigen van de opmaak?
-Absoluut, je kunt de opmaak wijzigen met behulp van methoden zoals`run.font.size` En`run.font.bold`.
+Absoluut, je kunt de opmaak wijzigen met behulp van methoden zoals`run.font.size`En`run.font.bold`.
 
 ### Waar kan ik toegang krijgen tot de Aspose.Words-documentatie?
  Uitgebreide documentatie vindt u op[Aspose.Words voor Python API-referentie](https://reference.aspose.com/words/python-net/).

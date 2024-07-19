@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Denna kod skapar en instans av`HtmlSaveOptions`och ställer in`ExportTextInputFormFieldAsText` möjlighet att`true` för att exportera textinmatningsformulärfält som vanlig text. Dessutom anger den mappen där de extraherade bilderna kommer att sparas.
+ Denna kod skapar en instans av`HtmlSaveOptions` och ställer in`ExportTextInputFormFieldAsText` möjlighet att`true` för att exportera textinmatningsformulärfält som vanlig text. Dessutom anger den mappen där de extraherade bilderna kommer att sparas.
 
 ## Steg 4: Konvertera och spara dokumentet till HTML
 

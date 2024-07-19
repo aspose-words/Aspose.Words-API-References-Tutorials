@@ -2,128 +2,113 @@
 title: Rozpoznawanie i podstawienia w ramach wzorców zastępczych
 linktitle: Rozpoznawanie i podstawienia w ramach wzorców zastępczych
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak używać wzorców zastępowania z rozpoznaniami i podstawieniami w Aspose.Words dla .NET do manipulowania dokumentami programu Word.
+description: Dowiedz się, jak rozpoznawać i zastępować tekst we wzorcach zamiany przy użyciu Aspose.Words dla .NET. Przewodnik krok po kroku ze szczegółowymi przykładami.
 type: docs
 weight: 10
 url: /pl/net/find-and-replace-text/recognize-and-substitutions-within-replacement-patterns/
 ---
+## Wstęp
 
-W tym artykule przeanalizujemy powyższy kod źródłowy C#, aby zrozumieć, jak używać funkcji Rozpoznaj i podstawiaj w ramach wzorców zastępczych w bibliotece Aspose.Words dla .NET. Ta funkcja pomaga rozpoznać złożone wzorce wyszukiwania i dokonać podstawień w oparciu o grupy przechwycone podczas manipulacji dokumentem.
+Witamy w ekscytującej podróży do świata manipulacji tekstem przy użyciu Aspose.Words dla .NET! Dzisiaj przyjrzymy się, jak rozpoznawać i zastępować tekst w ramach wzorców zastępowania, co jest kluczową umiejętnością automatyzacji i usprawniania zadań związanych z przetwarzaniem dokumentów. Zanurzmy się!
 
 ## Warunki wstępne
 
-- Podstawowa znajomość języka C#.
-- Środowisko programistyczne .NET z zainstalowaną biblioteką Aspose.Words.
+Zanim zabrudzimy sobie ręce kodem, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-## Krok 1: Tworzenie nowego dokumentu
+-  Aspose.Words dla .NET: Możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: wystarczy dowolne IDE, takie jak Visual Studio.
+- Podstawowa znajomość języka C#: Jeśli znasz język C#, możesz zaczynać!
 
-Zanim zaczniemy używać dopasowań i podstawień we wzorcach zamiany, musimy utworzyć nowy dokument za pomocą Aspose.Words dla .NET. Można to zrobić poprzez utworzenie instancji a`Document` obiekt:
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu. Oto jak możesz to zrobić:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using System.Text.RegularExpressions;
+```
+
+Podzielmy teraz przykład na łatwe do wykonania kroki. Każdy krok poprowadzi Cię przez proces rozpoznawania i zastępowania tekstu w ramach wzorców zamiany przy użyciu Aspose.Words dla .NET.
+
+## Krok 1: Zainicjuj dokument
+
+Najpierw musisz utworzyć nowy dokument. Dokument ten posłuży jako płótno do zamiany tekstu.
 
 ```csharp
 Document doc = new Document();
-```
-
-## Krok 2: Wstaw tekst do dokumentu
-
- Kiedy już mamy dokument, możemy wstawić tekst za pomocą a`DocumentBuilder` obiekt. W naszym przykładzie używamy`Write` metodę wstawienia wyrażenia „Jason daje Paulowi trochę pieniędzy”. :
-
-```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Write("Jason gives money to Paul.");
 ```
 
-## Krok 3: Rozpoznania i podstawienia we wzorcach zastępowania
+ The`Document` obiekt jest rdzeniem Aspose.Words. Reprezentuje cały dokument programu Word.
 
- Teraz skorzystamy z`Range.Replace` funkcja umożliwiająca wyszukiwanie tekstu i zastępowanie go za pomocą wyrażenia regularnego w celu rozpoznania określonych wzorców. W naszym przykładzie używamy wyrażenia regularnego`([A-z]+) gives money to ([A-z]+)` rozpoznawać zdania, w których ktoś daje pieniądze komuś innemu. Używamy wzoru zastępczego`$2 takes money from $1` przeprowadzić podstawienie poprzez odwrócenie ról. Sposób użycia`$1` I`$2` odnosi się do grup ujętych w wyrażeniu regularnym:
+## Krok 2: Dodaj tekst do dokumentu
+
+Następnie dodajmy trochę tekstu do dokumentu. Ten tekst będzie celem naszych działań zastępczych.
 
 ```csharp
-Regex regex = new Regex(@"([A-z]+) gives money to ([A-z]+)");
+builder.Write("Jason give money to Paul.");
+```
 
+ The`DocumentBuilder` class to potężne narzędzie do dodawania tekstu i innych elementów do dokumentu.
+
+## Krok 3: Zdefiniuj wzór wyrażenia regularnego
+
+Aby rozpoznać tekst, który chcesz zastąpić, musisz zdefiniować wzór wyrażenia regularnego. Ten wzór będzie pasował do konkretnego tekstu w Twoim dokumencie.
+
+```csharp
+Regex regex = new Regex(@"([A-z]+) give money to ([A-z]+)");
+```
+
+ W tym wyrażeniu regularnym`([A-z]+)` dopasowuje dowolne słowo składające się z liter, dzięki czemu jest elastyczne w przypadku różnych nazw.
+
+## Krok 4: Ustaw opcje wymiany
+
+Aspose.Words pozwala na używanie podstawień w swoich zamiennikach. Należy ustawić te opcje przed wykonaniem wymiany.
+
+```csharp
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
-
-doc.Range.Replace(regex, @"$2 takes money from $1", options);
 ```
 
-### Przykładowy kod źródłowy funkcji rozpoznawania i podstawień w ramach wzorców zamiany przy użyciu Aspose.Words dla .NET
+ The`FindReplaceOptions` class udostępnia różne opcje dostosowywania operacji wyszukiwania i zamiany.
 
-Oto pełny przykładowy kod źródłowy ilustrujący użycie dopasowań i podstawień we wzorcach zamiany za pomocą Aspose.Words dla .NET:
+## Krok 5: Wykonaj wymianę
+
+Teraz wykonajmy operację zamiany. To tutaj dzieje się magia!
 
 ```csharp
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.Write("Jason give money to Paul.");
-
-	Regex regex = new Regex(@"([A-z]+) give money to ([A-z]+)");
-
-	FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
-
-	doc.Range.Replace(regex, @"$2 take money from $1", options);
-
+doc.Range.Replace(regex, @"$2 take money from $1", options);
 ```
+
+ Tutaj,`$2`I`$1` są wzorcami substytucji.`$2` odnosi się do drugiej schwytanej grupy (Pawła) i`$1` odnosi się do pierwszej schwytanej grupy (Jazon). Rezultatem będzie „Paweł zabierz pieniądze od Jasona”.
+
+## Krok 6: Zapisz dokument
+
+Na koniec nie zapomnij zapisać dokumentu, aby zobaczyć zmiany.
+
+```csharp
+doc.Save("Output.docx");
+```
+
+Możesz zapisać dokument w różnych formatach, takich jak DOCX, PDF, HTML itp. Aspose.Words zapewnia solidną obsługę wielu formatów.
 
 ## Wniosek
 
-W tym artykule zbadaliśmy kod źródłowy C#, aby zrozumieć, jak korzystać z funkcji Rozpoznawanie i podstawienia w ramach wzorców zastępczych w Aspose.Words dla .NET. Postępowaliśmy zgodnie z przewodnikiem krok po kroku, aby utworzyć dokument, wstawić tekst, przeprowadzić wyszukiwanie i zamianę przy użyciu wyrażeń regularnych i wzorców podstawienia w oparciu o przechwycone grupy oraz manipulować dokumentem.
+Gratulacje! Pomyślnie nauczyłeś się rozpoznawać i zastępować tekst we wzorcach zamiany przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja może zaoszczędzić dużo czasu i wysiłku podczas zadań związanych z przetwarzaniem dokumentów. Niezależnie od tego, czy automatyzujesz raporty, generujesz dokumenty, czy po prostu zarządzasz tekstem, Aspose.Words pomoże Ci.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jaka jest funkcja „Rozpoznawanie i podstawienia we wzorcach zastępczych” w Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do pracy z dokumentami Word w aplikacjach .NET. Umożliwia programowe tworzenie, modyfikowanie i konwertowanie dokumentów.
 
-O: Funkcja „Rozpoznawanie i podstawienia we wzorcach zastępczych” w Aspose.Words dla .NET umożliwia rozpoznawanie złożonych wzorców wyszukiwania przy użyciu wyrażeń regularnych i wykonywanie podstawień w oparciu o przechwycone grupy podczas manipulacji dokumentem. Umożliwia dynamiczną transformację dopasowanego tekstu poprzez odniesienie do przechwyconych grup we wzorcu zastępowania.
+### Jak mogę zainstalować Aspose.Words dla .NET?
+ Możesz zainstalować Aspose.Words dla .NET z[link do pobrania](https://releases.aspose.com/words/net/). Postępuj zgodnie z dostarczonymi instrukcjami instalacji.
 
-#### P: Jak mogę utworzyć nowy dokument za pomocą Aspose.Words dla .NET?
+### Czy mogę używać wyrażeń regularnych w Aspose.Words dla .NET?
+Tak, Aspose.Words obsługuje wyrażenia regularne dla operacji znajdowania i zamieniania, umożliwiając złożone manipulacje tekstem.
 
- Odp.: Aby utworzyć nowy dokument za pomocą Aspose.Words dla .NET, możesz utworzyć instancję pliku`Document` obiekt. Oto przykład kodu C# umożliwiającego utworzenie nowego dokumentu:
+### Jakie są wzorce podstawień w wyrażeniach regularnych?
+ Wzory substytucji, np`$1`I`$2`, odnoszą się do przechwyconych grup w dopasowaniu wyrażeń regularnych. Służą do zmiany układu lub ponownego wykorzystania części dopasowanego tekstu w ciągu zastępczym.
 
-```csharp
-Document doc = new Document();
-```
-
-#### P: Jak mogę wstawić tekst do dokumentu przy użyciu Aspose.Words dla .NET?
-
- Odp.: Gdy już masz dokument, możesz wstawić tekst za pomocą a`DocumentBuilder` obiekt. Na przykład, aby wstawić wyrażenie „Jazon daje pieniądze Pawłowi”, możesz użyć wyrażenia`Write` metoda:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Write("Jason gives money to Paul.");
-```
-
-#### P: Jak mogę wyszukiwać i zamieniać tekst przy użyciu wyrażeń regularnych w Aspose.Words dla .NET?
-
- O: Aby przeprowadzić wyszukiwanie i zamianę tekstu przy użyciu wyrażeń regularnych w Aspose.Words dla .NET, możesz użyć`Range.Replace` funkcję wraz ze wzorcem wyrażenia regularnego. Możesz stworzyć`Regex` obiekt z żądanym wzorem i przekaż go do`Replace` metoda:
-
-```csharp
-Regex regex = new Regex(@"([A-z]+) gives money to ([A-z]+)");
-doc.Range.Replace(regex, @"$2 takes money from $1", options);
-```
-
-#### P: Jak mogę użyć przechwyconych grup we wzorcu zamiany podczas wyszukiwania tekstu i zamiany w Aspose.Words dla .NET?
-
- O: Aby użyć przechwyconych grup we wzorcu zamiany podczas wyszukiwania tekstu i zamiany w Aspose.Words dla .NET, możesz włączyć opcję`UseSubstitutions` własność`FindReplaceOptions` obiekt. Dzięki temu możesz odwoływać się do przechwyconych grup za pomocą`$1`, `$2`itp. we wzorze zastępczym:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
-doc.Range.Replace(regex, @"$2 takes money from $1", options);
-```
-
-#### P: Co pokazuje przykładowy kod źródłowy funkcji „Rozpoznawanie i podstawienia we wzorcach zamiany” w Aspose.Words dla .NET?
-
-Odp.: Przykładowy kod źródłowy demonstruje użycie funkcji „Rozpoznawanie i podstawienia we wzorcach zastępczych” w Aspose.Words dla .NET. Pokazuje, jak utworzyć dokument, wstawić tekst, przeprowadzić wyszukiwanie tekstu i zamieniać go przy użyciu wyrażeń regularnych, a także używać przechwyconych grup we wzorcu zastępowania w celu dynamicznego przekształcania dopasowanego tekstu.
-
-#### P: Gdzie mogę znaleźć więcej informacji i przykładów użycia wyrażeń regularnych w Aspose.Words dla .NET?
-
-O: Aby uzyskać więcej informacji i przykładów użycia wyrażeń regularnych w Aspose.Words dla .NET, możesz zapoznać się z[Aspose.Words dla referencji .NET API](https://reference.aspose.com/words/net/). Dokumentacja zawiera szczegółowe wyjaśnienia i przykłady kodu dla różnych scenariuszy obejmujących wyrażenia regularne i manipulację tekstem w Aspose.Words dla .NET.
-
-#### P: Czy podczas wyszukiwania i zamiany tekstu mogę manipulować innymi aspektami dokumentu w oparciu o przechwycone grupy?
-
-O: Tak, podczas wyszukiwania i zastępowania tekstu możesz manipulować innymi aspektami dokumentu w oparciu o przechwycone grupy. Oprócz wykonywania podstawień tekstu, możesz modyfikować formatowanie, style, strukturę dokumentu i inne elementy w oparciu o przechwycone grupy, korzystając z różnych interfejsów API udostępnianych przez Aspose.Words dla .NET.
-
-#### P: Czy istnieją jakieś ograniczenia lub uwagi dotyczące używania wyrażeń regularnych i przechwyconych grup w Aspose.Words dla .NET?
-
-O: Chociaż wyrażenia regularne i przechwycone grupy oferują potężne możliwości wyszukiwania i zamiany tekstu w Aspose.Words dla .NET, ważne jest, aby wziąć pod uwagę implikacje związane ze złożonością i wydajnością. Bardzo złożone wyrażenia regularne i duża liczba przechwyconych grup mogą mieć wpływ na wydajność. Zaleca się testowanie i optymalizację wyrażeń regularnych pod kątem konkretnych przypadków użycia, aby zapewnić efektywną manipulację dokumentami.
-
-#### P: Czy mogę używać funkcji „Rozpoznawanie i podstawienia we wzorcach zastępczych” w przypadku języków innych niż angielski?
-
-O: Tak, funkcja „Rozpoznawanie i podstawienia we wzorcach zastępczych” w Aspose.Words dla .NET może być używana w językach innych niż angielski. Wyrażenia regularne są niezależne od języka i można je dostosować do określonych wzorców w dowolnym języku. Możesz dostosować wzorzec wyrażenia regularnego, aby odpowiadał żądanemu językowi i konkretnym wzorcom tekstowym, które chcesz rozpoznać i zastąpić.
+### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
+ Możesz uzyskać wsparcie na forach społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).

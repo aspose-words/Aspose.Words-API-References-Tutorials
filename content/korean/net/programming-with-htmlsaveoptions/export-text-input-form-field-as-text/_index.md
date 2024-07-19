@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- 이 코드는`HtmlSaveOptions`그리고`ExportTextInputFormFieldAsText` 옵션`true` 텍스트 입력 양식 필드를 일반 텍스트로 내보냅니다. 또한 추출된 이미지가 저장될 폴더를 지정합니다.
+ 이 코드는`HtmlSaveOptions` 그리고`ExportTextInputFormFieldAsText` 옵션`true` 텍스트 입력 양식 필드를 일반 텍스트로 내보냅니다. 또한 추출된 이미지가 저장될 폴더를 지정합니다.
 
 ## 4단계: 문서를 HTML로 변환 및 저장
 

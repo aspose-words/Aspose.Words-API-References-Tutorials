@@ -16,7 +16,7 @@ För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att 
 
 ## Steg 2: Infoga en SVG-bild i dokumentet
 
-det här steget kommer vi att infoga en SVG-bild i dokumentet som ska konverteras. Använd följande kod för att infoga en SVG-bild med en HTML-tagg:
+I det här steget kommer vi att infoga en SVG-bild i dokumentet som ska konverteras. Använd följande kod för att infoga en SVG-bild med en HTML-tagg:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Denna kod skapar en instans av`Document` och`DocumentBuilder` att bygga dokumentet. Den infogar en`<svg>` tagg som innehåller en`<polygon>` element med attribut för att definiera formen och stilen för SVG-bilden.
+ Denna kod skapar en instans av`Document`och`DocumentBuilder` att bygga dokumentet. Den infogar en`<svg>` tagg som innehåller en`<polygon>` element med attribut för att definiera formen och stilen för SVG-bilden.
 
 ## Steg 3: Ställ in HTML-sparalternativ
 

@@ -2,108 +2,117 @@
 title: Tetapkan Id Penyedia Tanda Tangan Di Dokumen Word
 linktitle: Tetapkan Id Penyedia Tanda Tangan Di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengatur ID penyedia tanda tangan di dokumen Word dengan Aspose.Words untuk .NET.
+description: Tetapkan ID Penyedia Tanda Tangan dengan aman di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci kami sepanjang 2000 kata untuk menandatangani dokumen Anda secara digital.
 type: docs
 weight: 10
 url: /id/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
-Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk menggunakan fitur Tetapkan ID Penyedia Tanda Tangan dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menentukan ID penyedia tanda tangan untuk baris tanda tangan di dokumen Word. Ikuti langkah-langkah di bawah ini:
+## Perkenalan
 
-## Langkah 1: Memuat dokumen dan mengakses baris tanda tangan
+Hai! Jadi, Anda punya dokumen Word luar biasa yang memerlukan tanda tangan digital, bukan? Namun bukan sembarang tanda tangan—Anda perlu menyetel ID Penyedia Tanda Tangan tertentu. Baik Anda menangani dokumen hukum, kontrak, atau dokumen apa pun, menambahkan tanda tangan digital yang aman sangatlah penting. Dalam tutorial ini, saya akan memandu Anda melalui seluruh proses pengaturan ID Penyedia Tanda Tangan di dokumen Word menggunakan Aspose.Words untuk .NET. Siap? Ayo selami!
 
-Mulailah dengan mengunggah dokumen yang berisi baris tanda tangan:
+## Prasyarat
+
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
+
+1. Aspose.Words untuk .NET Library: Jika Anda belum melakukannya,[Unduh di sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau IDE apa pun yang kompatibel dengan C#.
+3. Dokumen Word: Dokumen dengan baris tanda tangan (`Signature line.docx`).
+4.  Sertifikat Digital: A`.pfx` file sertifikat (misalnya,`morzal.pfx`).
+5. Pengetahuan Dasar C#: Dasar-dasarnya saja—jangan khawatir, kami siap membantu!
+
+Sekarang, mari beraksi!
+
+## Impor Namespace
+
+Hal pertama yang pertama, pastikan Anda menyertakan namespace yang diperlukan dalam proyek Anda. Ini penting untuk mengakses perpustakaan Aspose.Words dan kelas terkait.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.DigitalSignatures;
+```
+
+Baiklah, mari kita bagi menjadi langkah-langkah sederhana dan mudah dicerna.
+
+## Langkah 1: Muat Dokumen Word Anda
+
+Langkah pertama adalah memuat dokumen Word Anda yang berisi baris tanda tangan. Dokumen ini akan dimodifikasi untuk menyertakan tanda tangan digital dengan ID Penyedia Tanda Tangan yang ditentukan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
+```
 
+ Di sini, kami menentukan direktori tempat dokumen Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke dokumen Anda.
+
+## Langkah 2: Akses Jalur Tanda Tangan
+
+Selanjutnya, kita perlu mengakses baris tanda tangan di dalam dokumen. Garis tanda tangan disematkan sebagai objek bentuk di dokumen Word.
+
+```csharp
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## Langkah 2: Mengatur Opsi Tanda Tangan
+ Baris kode ini mendapatkan bentuk pertama di badan bagian pertama dokumen dan mengubahnya menjadi a`SignatureLine` obyek.
 
-Buat instance kelas SignOptions dan atur opsi penandatanganan, termasuk ID penyedia:
+## Langkah 3: Siapkan Opsi Masuk
+
+Sekarang, kita membuat opsi tanda, yang mencakup ID Penyedia dan ID Baris Tanda Tangan dari baris tanda tangan yang diakses.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-ProviderId = signatureLine.ProviderId,
- SignatureLineId = signatureLine.Id
+    ProviderId = signatureLine.ProviderId,
+    SignatureLineId = signatureLine.Id
 };
 ```
 
-## Langkah 3: Menandatangani dokumen
+Opsi ini akan digunakan saat menandatangani dokumen untuk memastikan ID Penyedia Tanda Tangan yang benar telah ditetapkan.
 
-Untuk menandatangani dokumen, Anda harus menggunakan kelas DigitalSignatureUtil dan menentukan sertifikat penandatanganan:
+## Langkah 4: Muat Sertifikat
+
+ Untuk menandatangani dokumen secara digital, Anda memerlukan sertifikat. Inilah cara Anda memuat`.pfx` mengajukan:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-	dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
-Pastikan untuk menentukan jalur yang benar untuk dokumen, sertifikat, dan dokumen yang ditandatangani.
+ Mengganti`"aw"` dengan kata sandi untuk file sertifikat Anda jika ada.
 
-### Contoh kode sumber untuk Menetapkan Id Penyedia Tanda Tangan menggunakan Aspose.Words untuk .NET
+## Langkah 5: Tandatangani Dokumen
 
-Berikut source code lengkap untuk mengatur ID penyedia tanda tangan dengan Aspose.Words for .NET:
+ Terakhir, saatnya menandatangani dokumen menggunakan`DigitalSignatureUtil.Sign` metode.
 
 ```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Signature line.docx");
-
-	SignatureLine signatureLine =
-		((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
-
-	SignOptions signOptions = new SignOptions
-	{
-		ProviderId = signatureLine.ProviderId, SignatureLineId = signatureLine.Id
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-		dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
-
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
+    dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
-Selesaikan ID Penyedia Tanda Tangan di dokumen Word Anda dengan Aspose.Words untuk .NET.
-
+ Ini menandatangani dokumen Anda dan menyimpannya sebagai file baru,`Digitally signed.docx`.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita mempelajari cara mengatur ID penyedia tanda tangan untuk baris tanda tangan di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang disediakan, Anda dapat dengan mudah memuat dokumen, mengakses baris tanda tangan, mengatur ID penyedia, dan menandatangani dokumen. Kemampuan untuk mengatur ID penyedia tanda tangan membantu membangun identitas dan kepercayaan penandatangan, sehingga meningkatkan keamanan dan integritas dokumen Word Anda. Aspose.Words for .NET menyediakan API yang kuat untuk Pemrosesan Kata dengan tanda tangan digital, memungkinkan Anda menyesuaikan dan mengelola proses tanda tangan dengan mudah.
+Dan itu dia! Anda telah berhasil menetapkan ID Penyedia Tanda Tangan di dokumen Word menggunakan Aspose.Words untuk .NET. Proses ini tidak hanya mengamankan dokumen Anda tetapi juga memastikan dokumen tersebut mematuhi standar tanda tangan digital. Sekarang, lanjutkan dan coba dengan dokumen Anda. Ada pertanyaan? Lihat FAQ di bawah atau klik[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8).
 
-### FAQ untuk mengatur id penyedia tanda tangan di dokumen Word
+## FAQ
 
-#### T: Apa yang dimaksud dengan ID penyedia tanda tangan di dokumen Word?
+### Apa itu ID Penyedia Tanda Tangan?
 
-J: ID penyedia tanda tangan di dokumen Word adalah pengidentifikasi unik yang menentukan penyedia tanda tangan digital. Ini membantu mengidentifikasi entitas atau organisasi yang bertanggung jawab untuk membuat dan mengelola tanda tangan digital.
+ID Penyedia Tanda Tangan secara unik mengidentifikasi penyedia tanda tangan digital, memastikan keaslian dan keamanan.
 
-#### T: Bagaimana cara mengatur ID penyedia tanda tangan untuk baris tanda tangan di dokumen Word menggunakan Aspose.Words untuk .NET?
+### Bisakah saya menggunakan file .pfx untuk penandatanganan?
 
-J: Untuk mengatur ID penyedia tanda tangan untuk baris tanda tangan di dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
-1.  Muat dokumen menggunakan`Document` kelas dan tentukan jalur ke file dokumen.
-2.  Akses baris tanda tangan menggunakan metode atau properti yang sesuai. Misalnya, Anda bisa menggunakan`GetChild` metode untuk mengambil bentuk garis tanda tangan.
-3. Ambil ID penyedia dari baris tanda tangan.
-4.  Buat sebuah instance dari`SignOptions` kelas dan atur`ProviderId` properti ke ID penyedia yang diambil.
-5.  Menggunakan`DigitalSignatureUtil.Sign` metode untuk menandatangani dokumen, memberikan parameter yang diperlukan termasuk`SignOptions` obyek.
+Bisa, asalkan sertifikat digitalnya valid. Pastikan Anda memiliki kata sandi yang benar jika dilindungi.
 
-#### T: Bagaimana cara mengakses baris tanda tangan di dokumen Word menggunakan Aspose.Words untuk .NET?
+### Bagaimana cara mendapatkan file .pfx?
 
- J: Untuk mengakses baris tanda tangan di dokumen Word menggunakan Aspose.Words untuk .NET, Anda bisa menggunakan metode atau properti yang sesuai untuk mengambil bentuk garis tanda tangan dari struktur dokumen. Misalnya, Anda dapat menggunakan`GetChild` metode dengan parameter yang sesuai untuk mendapatkan bentuk garis tanda tangan yang diinginkan.
+Anda dapat memperoleh file .pfx dari Certificate Authority (CA) atau membuatnya menggunakan alat seperti OpenSSL.
 
-#### T: Bisakah saya mengatur ID penyedia tanda tangan untuk beberapa baris tanda tangan di dokumen Word?
+### Bisakah saya menandatangani banyak dokumen sekaligus?
 
- J: Ya, Anda dapat mengatur ID penyedia tanda tangan untuk beberapa baris tanda tangan di dokumen Word. Anda dapat mengulangi kumpulan baris tanda tangan dalam dokumen dan mengatur ID penyedia untuk setiap baris tanda tangan satu per satu menggunakan`SignOptions.ProviderId` Properti.
+Ya, Anda dapat mengulang beberapa dokumen dan menerapkan proses penandatanganan yang sama untuk masing-masing dokumen.
 
-#### Q: Apa tujuan dari ID penyedia tanda tangan di dokumen Word?
+### Bagaimana jika saya tidak memiliki baris tanda tangan di dokumen saya?
 
-J: ID penyedia tanda tangan di dokumen Word bertujuan untuk mengidentifikasi entitas atau organisasi yang bertanggung jawab membuat dan mengelola tanda tangan digital. Ini membantu membangun keaslian dan kepercayaan tanda tangan digital dengan mengaitkannya dengan penyedia tertentu.
-
-#### T: Jenis sertifikat digital apa yang dapat digunakan untuk mengatur ID penyedia tanda tangan di dokumen Word?
-
-J: Anda dapat menggunakan sertifikat digital X.509 dengan informasi penyedia yang sesuai untuk mengatur ID penyedia tanda tangan di dokumen Word. Sertifikat digital harus diterbitkan oleh otoritas sertifikat (CA) tepercaya dan berisi metadata yang diperlukan untuk mengidentifikasi penyedia.
+Anda harus memasukkan baris tanda tangan terlebih dahulu. Aspose.Words menyediakan metode untuk menambahkan baris tanda tangan secara terprogram.

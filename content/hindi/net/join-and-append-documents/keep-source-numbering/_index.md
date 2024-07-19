@@ -2,24 +2,38 @@
 title: स्रोत क्रमांकन रखें
 linktitle: स्रोत क्रमांकन रखें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words में स्रोत क्रमांकन स्वरूपण को संरक्षित करते हुए दस्तावेज़ को जोड़ना सीखें।
+description: .NET के लिए Aspose.Words का उपयोग करके फ़ॉर्मेटिंग को संरक्षित करते हुए दस्तावेज़ों को आयात करना सीखें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका।
 type: docs
 weight: 10
 url: /hi/net/join-and-append-documents/keep-source-numbering/
 ---
+## परिचय
 
-यह ट्यूटोरियल बताता है कि .NET के लिए Aspose.Words का उपयोग करके क्रमांकित पैराग्राफों के मूल क्रमांकन स्वरूपण को संरक्षित करते हुए स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ में कैसे जोड़ा जाए।
+ .NET के लिए Aspose.Words के साथ काम करते समय, स्वरूपण को संरक्षित करते हुए दस्तावेज़ों को एक स्रोत से दूसरे में आयात करना कुशलतापूर्वक संभाला जा सकता है`NodeImporter` यह ट्यूटोरियल आपको चरण-दर-चरण प्रक्रिया के माध्यम से मार्गदर्शन करेगा।
 
-## चरण 1: प्रोजेक्ट सेट अप करें
+## आवश्यक शर्तें
 
-सुनिश्चित करें कि आपके पास निम्नलिखित पूर्वापेक्षाएँ हैं:
+शुरू करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
+- आपके मशीन पर Visual Studio स्थापित है.
+-  Aspose.Words for .NET इंस्टॉल है। यदि नहीं, तो इसे यहाँ से डाउनलोड करें[यहाँ](https://releases.aspose.com/words/net/).
+- C# और .NET प्रोग्रामिंग का बुनियादी ज्ञान।
 
--  Aspose.Words for .NET लाइब्रेरी स्थापित है। आप इसे यहाँ से डाउनलोड कर सकते हैं[Aspose.Releases]https://releases.aspose.com/words/net/ या इसे स्थापित करने के लिए NuGet पैकेज मैनेजर का उपयोग करें।
-- एक दस्तावेज़ निर्देशिका पथ जहाँ स्रोत और गंतव्य दस्तावेज़ सहेजे जाएंगे.
+## नामस्थान आयात करें
 
-## चरण 2: गंतव्य और स्रोत दस्तावेज़ बनाएँ
+सबसे पहले, अपने प्रोजेक्ट में आवश्यक नामस्थान शामिल करें:
 
- के उदाहरण बनाएं`Document` गंतव्य और स्रोत दस्तावेज़ों के लिए.
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+## चरण 1: अपना प्रोजेक्ट सेट करें
+
+Visual Studio में एक नया C# प्रोजेक्ट बनाकर आरंभ करें और NuGet पैकेज मैनेजर के माध्यम से Aspose.Words स्थापित करें।
+
+## चरण 2: दस्तावेज़ आरंभ करें
+स्रोत के उदाहरण बनाएं (`srcDoc`) और गंतव्य (`dstDoc`) दस्तावेज़.
 
 ```csharp
 // आपके दस्तावेज़ निर्देशिका का पथ
@@ -29,18 +43,17 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## चरण 3: आयात करते समय स्रोत क्रमांकन रखें
-
- स्रोत दस्तावेज़ से क्रमांकित पैराग्राफ़ों के क्रमांकन स्वरूपण को संरक्षित करने के लिए, इसका एक उदाहरण बनाएँ`ImportFormatOptions` और सेट करें`KeepSourceNumbering` को`true` । का उपयोग करो`NodeImporter` स्रोत दस्तावेज़ से गंतव्य दस्तावेज़ में नोड्स आयात करने के लिए, निर्दिष्ट करना`ImportFormatMode.KeepSourceFormatting` और यह`importFormatOptions`.
+## चरण 3: आयात विकल्प कॉन्फ़िगर करें
+क्रमांकित पैराग्राफ़ सहित स्रोत स्वरूपण बनाए रखने के लिए आयात विकल्प सेट करें।
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
+	importFormatOptions);
 ```
 
-## चरण 4: पैराग्राफ़ आयात करें और जोड़ें
-
- स्रोत दस्तावेज़ में पैराग्राफ़ों के माध्यम से पुनरावृत्ति करें और प्रत्येक पैराग्राफ़ को गंतव्य दस्तावेज़ में आयात करें`importer`आयातित नोड्स को गंतव्य दस्तावेज़ के मुख्य भाग में जोड़ें.
+## चरण 4: पैराग्राफ़ आयात करें
+स्रोत दस्तावेज़ में पैराग्राफ़ों को पुनरावृत्त करें और उन्हें गंतव्य दस्तावेज़ में आयात करें।
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -51,33 +64,30 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## चरण 5: संशोधित दस्तावेज़ को सहेजें
-
- संशोधित दस्तावेज़ को सहेजें`Save` की विधि`Document` वस्तु।
+## चरण 5: दस्तावेज़ सहेजें
+मर्ज किए गए दस्तावेज़ को अपने इच्छित स्थान पर सहेजें.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-यह .NET के लिए Aspose.Words का उपयोग करते हुए मूल क्रमांकन स्वरूपण को बनाए रखते हुए एक स्रोत दस्तावेज़ को गंतव्य दस्तावेज़ में जोड़ने के कार्यान्वयन को पूरा करता है।
+## निष्कर्ष
 
-### .NET के लिए Aspose.Words का उपयोग करके स्रोत क्रमांकन बनाए रखने के लिए उदाहरण स्रोत कोड 
+ निष्कर्ष में, स्वरूपण को संरक्षित करते हुए दस्तावेज़ों को आयात करने के लिए .NET के लिए Aspose.Words का उपयोग करना सरल है`NodeImporter` यह विधि सुनिश्चित करती है कि आपके दस्तावेज़ अपनी मूल उपस्थिति और संरचना को निर्बाध रूप से बनाए रखें।
 
-```csharp
-	// आपके दस्तावेज़ निर्देशिका का पथ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## अक्सर पूछे जाने वाले प्रश्न
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//क्रमांकित पैराग्राफ़ आयात करते समय स्रोत सूची स्वरूपण बनाए रखें.
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, false);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
-```
+### क्या मैं विभिन्न स्वरूपण शैलियों वाले दस्तावेज़ आयात कर सकता हूँ?
+ हां`NodeImporter` क्लास विभिन्न स्वरूपण शैलियों के साथ दस्तावेज़ों को आयात करने का समर्थन करता है।
+
+### यदि मेरे दस्तावेज़ों में जटिल तालिकाएँ और चित्र हों तो क्या होगा?
+.NET के लिए Aspose.Words आयात संचालन के दौरान तालिकाओं और छवियों जैसी जटिल संरचनाओं को संभालता है।
+
+### क्या Aspose.Words .NET के सभी संस्करणों के साथ संगत है?
+Aspose.Words निर्बाध एकीकरण के लिए .NET Framework और .NET Core संस्करणों का समर्थन करता है।
+
+### मैं दस्तावेज़ आयात के दौरान त्रुटियों को कैसे संभाल सकता हूँ?
+आयात प्रक्रिया के दौरान होने वाले अपवादों को संभालने के लिए try-catch ब्लॉक का उपयोग करें।
+
+### मैं .NET के लिए Aspose.Words पर अधिक विस्तृत दस्तावेज़ कहां पा सकता हूं?
+ दौरा करना[प्रलेखन](https://reference.aspose.com/words/net/) व्यापक गाइड और एपीआई संदर्भ के लिए.

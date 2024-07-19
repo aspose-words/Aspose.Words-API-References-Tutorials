@@ -85,7 +85,7 @@ Bu kodu kendi projelerinizde kullanmaktan ve özel gereksinimlerinize göre değ
 
 #### S: Bir belgedeki son notların numaralandırmasını özelleştirmek mümkün müdür?
 
- C: Evet, bir belgedeki son notların numaralandırmasını özelleştirmek mümkündür. Şunu kullanabilirsiniz:`RestartRule` Ve`NumberStyle` özellikleri`EndnoteOptions` Belirli yeniden başlatma kurallarını ve numaralandırma stillerini tanımlamak için sınıf.
+ C: Evet, bir belgedeki son notların numaralandırmasını özelleştirmek mümkündür. Şunu kullanabilirsiniz:`RestartRule`Ve`NumberStyle` özellikleri`EndnoteOptions` Belirli yeniden başlatma kurallarını ve numaralandırma stillerini tanımlamak için sınıf.
 
 #### S: Son notları bir belgede nasıl konumlandırabilirim?
 

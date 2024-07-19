@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### K: Testreszabható az újraindított listaszámozás elő- és utótagja az Aspose.Words-ben?
 
- V: Igen, testreszabhatja az újraindított listaszámozás elő- és utótagját az Aspose.Words-ben. A`ListLevel` osztály olyan tulajdonságokat kínál, mint pl`ListLevel.NumberPrefix` és`ListLevel.NumberSuffix`amelyek lehetővé teszik az elő- és utótag megadását a lista minden szintjéhez. Ezekkel a tulajdonságokkal szükség szerint testreszabhatja az elő- és utótagot.
+ V: Igen, testreszabhatja az újraindított listaszámozás elő- és utótagját az Aspose.Words-ben. A`ListLevel` osztály olyan tulajdonságokat kínál, mint pl`ListLevel.NumberPrefix`és`ListLevel.NumberSuffix`amelyek lehetővé teszik az elő- és utótag megadását a lista minden szintjéhez. Ezekkel a tulajdonságokkal szükség szerint testreszabhatja az elő- és utótagot.
 
 #### K: Hogyan adhatok meg egy adott számozási értéket, amelytől a listát újra kell indítani?
 

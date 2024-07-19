@@ -88,7 +88,7 @@ A. Chcete-li vytvořit nový dokument a generátor dokumentů, postupujte takto:
 ```csharp
 Document doc = new Document();
 ```
- Použijte`DocumentBuilder`třídy k vytvoření tvůrce dokumentů přidruženého k dříve vytvořenému dokumentu:
+ Použijte`DocumentBuilder` třídy k vytvoření tvůrce dokumentů přidruženého k dříve vytvořenému dokumentu:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,8 +118,8 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### Dotaz: Jak mohu vložit kód pro vložení objektu OLE jako ikonu z proudu do mého projektu?
 
 A. Chcete-li do projektu vložit kód pro vložení objektu OLE jako ikonu ze streamu, postupujte takto:
--  Importujte potřebné reference přidáním příslušných`using` prohlášení.
--  Vytvořte nový dokument a tvůrce dokumentů pomocí`Document` a`DocumentBuilder` třídy.
+- Importujte potřebné reference přidáním příslušných`using` prohlášení.
+-  Vytvořte nový dokument a tvůrce dokumentů pomocí`Document`a`DocumentBuilder` třídy.
 - Použijte kód pro vložení objektu OLE jako ikonu ze streamu.
 -  Uložte dokument pomocí`Save` metoda s příslušnou cílovou cestou.
 

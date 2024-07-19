@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Następnie musimy przesunąć kursor do konkretnego akapitu w dokumencie, w którym chcemy wstawić pole scalania.
 
 ```csharp
-// Przesuń kursor do akapitu.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Krok 6: Wstaw pole scalania

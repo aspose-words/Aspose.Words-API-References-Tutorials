@@ -75,7 +75,7 @@ In diesem Artikel haben wir untersucht, wie man mit Aspose.Words für Java Dokum
 
 ### Wie kann ich die Papiergröße meines Dokuments ändern?
 
- Um die Papiergröße Ihres Dokuments zu ändern, verwenden Sie die`setPageWidth` Und`setPageHeight` Methoden der`PageSetup` Klasse und geben Sie die gewünschten Abmessungen in Punkten an.
+ Um die Papiergröße Ihres Dokuments zu ändern, verwenden Sie die`setPageWidth`Und`setPageHeight` Methoden der`PageSetup` Klasse und geben Sie die gewünschten Abmessungen in Punkten an.
 
 ### Kann ich mehrere Kopien eines Dokuments ausdrucken?
 

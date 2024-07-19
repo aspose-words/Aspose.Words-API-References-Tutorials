@@ -243,7 +243,7 @@ A: Aspose.Words für Java ist eine Java-Bibliothek, mit der Entwickler Microsoft
 
 ### F: Wie kann ich meinem Dokument ein Inhaltsverzeichnis hinzufügen?
 
-A: Um ein Inhaltsverzeichnis hinzuzufügen, verwenden Sie die`DocumentBuilder` um ein Inhaltsverzeichnisfeld in Ihr Dokument einzufügen. Achten Sie darauf, die Felder im Dokument zu aktualisieren, nachdem Sie Inhalt hinzugefügt haben, um das Inhaltsverzeichnis zu füllen. Hier ist ein Beispiel:
+A: Um ein Inhaltsverzeichnis hinzuzufügen, verwenden Sie die`DocumentBuilder` um ein Inhaltsverzeichnisfeld in Ihr Dokument einzufügen. Stellen Sie sicher, dass Sie die Felder im Dokument aktualisieren, nachdem Sie Inhalt hinzugefügt haben, um das Inhaltsverzeichnis zu füllen. Hier ist ein Beispiel:
 
 ```java
 Document doc = new Document();

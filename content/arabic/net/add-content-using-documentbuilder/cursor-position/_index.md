@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### تهيئة المستند
 
- لنبدأ بإنشاء مستند Word جديد. سوف نستخدم`Document` و`DocumentBuilder` فئات من Aspose.Words.
+ لنبدأ بإنشاء مستند Word جديد. سوف نستخدم`Document`و`DocumentBuilder` فئات من Aspose.Words.
 
 ```csharp
 Document doc = new Document();

@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3. lépés: Lépjen a módosítani kívánt cellára
- Egy cella formázásának megváltoztatásához a táblázat adott cellájához kell navigálnunk. Használjuk a`GetChild()` és`FirstRow.FirstCell` módszerek az első tömb első cellájára való hivatkozás lekéréséhez.
+ Egy cella formázásának megváltoztatásához a táblázat adott cellájához kell navigálnunk. Használjuk a`GetChild()`és`FirstRow.FirstCell` módszerek az első tömb első cellájára való hivatkozás lekéréséhez.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

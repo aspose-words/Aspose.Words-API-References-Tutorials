@@ -27,7 +27,7 @@ Belgelerinizin biçimini ve yönünü nasıl belirleyeceğinizi öğrenin. İste
 Document doc = new Document();
 doc.save("output.docx", SaveFormat.DOCX);
 
-// Sayfa yönünü Yatay olarak ayarla
+// Sayfa yönlendirmesini Yatay olarak ayarla
 Document docLandscape = new Document();
 PageSetup pageSetup = docLandscape.getFirstSection().getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);

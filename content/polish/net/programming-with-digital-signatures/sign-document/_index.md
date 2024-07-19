@@ -2,102 +2,109 @@
 title: Podpisz dokument programu Word
 linktitle: Podpisz dokument programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak cyfrowo podpisać dokument programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak podpisać dokument programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Z łatwością zabezpiecz swoje dokumenty.
 type: docs
 weight: 10
 url: /pl/net/programming-with-digital-signatures/sign-document/
 ---
-W tym samouczku przeprowadzimy Cię przez kolejne etapy korzystania z funkcji podpisywania dokumentów w Aspose.Words dla .NET. Ta funkcja umożliwia cyfrowe podpisanie dokumentu programu Word przy użyciu certyfikatu. Wykonaj poniższe kroki:
+## Wstęp
 
-## Krok 1: Ładowanie certyfikatu
+W dzisiejszym cyfrowym świecie zabezpieczenie dokumentów jest ważniejsze niż kiedykolwiek. Podpisy cyfrowe umożliwiają zapewnienie autentyczności i integralności dokumentów. Jeśli chcesz programowo podpisać dokument Word przy użyciu Aspose.Words dla .NET, jesteś we właściwym miejscu. Ten przewodnik przeprowadzi Cię przez cały proces, krok po kroku, w prosty i wciągający sposób.
 
-Zacznij od załadowania certyfikatu podpisującego przy użyciu klasy CertyfikatHolder:
+## Warunki wstępne
+
+Zanim zagłębisz się w kod, musisz przygotować kilka rzeczy:
+
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną najnowszą wersję Aspose.Words dla .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko .NET: Upewnij się, że masz skonfigurowane środowisko programistyczne .NET (np. Visual Studio).
+3. Certyfikat cyfrowy: Uzyskaj certyfikat cyfrowy (np. plik .pfx) do podpisywania dokumentów.
+4. Dokument do podpisania: Przygotuj dokument programu Word, który chcesz podpisać.
+
+## Importuj przestrzenie nazw
+
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw. Dodaj następujące dyrektywy using do swojego projektu:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.Security.Cryptography.X509Certificates;
+```
+
+Podzielmy teraz proces na łatwe do wykonania etapy.
+
+## Krok 1: Załaduj certyfikat cyfrowy
+
+Pierwszym krokiem jest załadowanie certyfikatu cyfrowego z pliku. Certyfikat ten posłuży do podpisania dokumentu.
+
+```csharp
+// Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Załaduj certyfikat cyfrowy.
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Pamiętaj, aby podać poprawną ścieżkę do certyfikatu i powiązanego hasła.
+### Wyjaśnienie
 
-## Krok 2: Podpisanie dokumentu
+- `dataDir`: Jest to katalog, w którym przechowywane są Twoje certyfikaty i dokumenty.
+- `CertificateHolder.Create` : Ta metoda ładuje certyfikat z określonej ścieżki. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu i`"morzal.pfx"` z nazwą pliku certyfikatu. The`"aw"` to hasło do certyfikatu.
 
-Do podpisania dokumentu użyj klasy DigitalSignatureUtil:
+## Krok 2: Załaduj dokument Word
 
-```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-	certHolder);
-```
-
-Pamiętaj, aby określić prawidłowe ścieżki dokumentu źródłowego i podpisanego dokumentu.
-
-### Przykładowy kod źródłowy podpisania dokumentu przy użyciu Aspose.Words dla .NET
-
-Oto kompletny kod źródłowy do podpisania dokumentu za pomocą Aspose.Words dla .NET:
+Następnie załaduj dokument Word, który chcesz podpisać.
 
 ```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-		certHolder);
-
+// Załaduj dokument, który chcesz podpisać.
+Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-Wykonując poniższe kroki, możesz łatwo podpisać dokument Word za pomocą Aspose.Words dla .NET.
+### Wyjaśnienie
+
+- `Document` : Ta klasa reprezentuje dokument programu Word. Zastępować`"Digitally signed.docx"` nazwą swojego dokumentu.
+
+## Krok 3: Podpisz dokument
+
+ Teraz skorzystaj z`DigitalSignatureUtil.Sign` sposób podpisania dokumentu.
+
+```csharp
+// Podpisz dokument.
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx", certHolder);
+```
+
+### Wyjaśnienie
+
+- `DigitalSignatureUtil.Sign`: Ta metoda podpisuje dokument przy użyciu załadowanego certyfikatu. Pierwszy parametr to ścieżka do oryginalnego dokumentu, drugi to ścieżka do podpisanego dokumentu, a trzeci to posiadacz certyfikatu.
+
+## Krok 4: Zapisz podpisany dokument
+
+Na koniec zapisz podpisany dokument we wskazanej lokalizacji.
+
+```csharp
+// Zapisz podpisany dokument.
+doc.Save(dataDir + "Document.Signed.docx");
+```
+
+### Wyjaśnienie
+
+- `doc.Save` : Ta metoda zapisuje podpisany dokument. Zastępować`"Document.Signed.docx"` z żądaną nazwą podpisanego dokumentu.
 
 ## Wniosek
 
- W tym samouczku zbadaliśmy funkcję podpisywania dokumentów w Aspose.Words dla .NET. Ładując certyfikat podpisywania i używając pliku`DigitalSignatureUtil.Sign` metodą możemy podpisać cyfrowo dokument Word. Podpisywanie dokumentów zapewnia uwierzytelnianie i zapewnia integralność zawartości dokumentu, co czyni go cenną funkcją bezpiecznego i godnego zaufania zarządzania dokumentami.
+I masz to! Pomyślnie podpisałeś dokument Word przy użyciu Aspose.Words dla .NET. Wykonując te proste kroki, możesz mieć pewność, że Twoje dokumenty są bezpiecznie podpisane i uwierzytelnione. Pamiętaj, że podpisy cyfrowe to potężne narzędzie chroniące integralność dokumentów, więc korzystaj z nich, gdy zajdzie taka potrzeba.
 
-### Często zadawane pytania dotyczące dokumentu ze słowem migowym
+## Często zadawane pytania
 
-#### P: Co to jest podpisywanie dokumentów w Aspose.Words dla .NET?
+### Co to jest podpis cyfrowy?
+Podpis cyfrowy to elektroniczna forma podpisu, która może zostać wykorzystana do uwierzytelnienia tożsamości osoby podpisującej i zapewnienia, że dokument nie został zmieniony.
 
-Odp.: Podpisywanie dokumentów w Aspose.Words dla .NET odnosi się do procesu cyfrowego podpisywania dokumentu Word przy użyciu certyfikatu. Ta funkcja dodaje podpis cyfrowy do dokumentu, zapewniając autentyczność, integralność i niezaprzeczalność zawartości dokumentu.
+### Dlaczego potrzebuję certyfikatu cyfrowego?
+Do utworzenia podpisu cyfrowego potrzebny jest certyfikat cyfrowy. Zawiera klucz publiczny oraz tożsamość właściciela certyfikatu, umożliwiając weryfikację podpisu.
 
-#### P: Jak mogę załadować certyfikat podpisywania w Aspose.Words dla .NET?
+### Czy do podpisania mogę użyć dowolnego pliku .pfx?
+Tak, o ile plik .pfx zawiera ważny certyfikat cyfrowy i posiadasz hasło umożliwiające dostęp do niego.
 
- Odp.: Aby załadować certyfikat podpisywania w Aspose.Words dla .NET, możesz użyć`CertificateHolder` klasa. Utwórz instancję`CertificateHolder` podając ścieżkę do pliku certyfikatu i powiązane hasło. Oto przykład:
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
+ Aspose.Words dla .NET jest biblioteką komercyjną. Możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/) , ale aby uzyskać pełną funkcjonalność, będziesz musiał kupić licencję. Możesz to kupić[Tutaj](https://purchase.aspose.com/buy).
 
-```csharp
-CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx", "password");
-```
-
-Upewnij się, że podałeś poprawną ścieżkę do certyfikatu i powiązanego hasła.
-
-#### P: Jak podpisać dokument Word przy użyciu Aspose.Words dla .NET?
-
- Odp.: Aby podpisać dokument Word przy użyciu Aspose.Words dla .NET, możesz użyć`DigitalSignatureUtil` klasa. Zadzwoń do`Sign` metodę, podając ścieżkę do dokumentu źródłowego, ścieżkę do podpisanego dokumentu (wyjście) oraz`CertificateHolder` obiekt. Oto przykład:
-
-```csharp
-DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/document.docx", certHolder);
-```
-
-Upewnij się, że podałeś poprawne ścieżki do dokumentu źródłowego i podpisanego dokumentu (wyjścia).
-
-#### P: Jaki jest cel podpisywania dokumentów?
-
-Odp.: Podpisywanie dokumentów służy jako metoda zapewnienia autentyczności i integralności dokumentu. Podpisując cyfrowo dokument, możesz udowodnić jego pochodzenie, sprawdzić, czy jego zawartość nie została zmieniona i zapewnić niezaprzeczalność. Podpisywanie dokumentów jest powszechnie stosowane w przypadku dokumentów prawnych, finansowych i wrażliwych.
-
-#### P: Czy mogę używać dowolnego certyfikatu do podpisywania dokumentów w Aspose.Words dla .NET?
-
-Odp.: Do podpisywania dokumentów w Aspose.Words dla .NET musisz użyć ważnego certyfikatu X.509. Certyfikat ten można uzyskać od zaufanego urzędu certyfikacji (CA) lub do celów testowych można użyć certyfikatu z podpisem własnym.
-
-#### P: Jaki format pliku obsługuje Aspose.Words dla .NET do podpisywania dokumentów?
-
- Odp.: Aspose.Words dla .NET obsługuje podpisywanie dokumentów programu Word w formacie pliku DOCX. Możesz podpisywać pliki DOCX za pomocą`DigitalSignatureUtil` klasę i odpowiedni certyfikat.
-
-#### P: Czy mogę podpisać wiele dokumentów programu Word przy użyciu tego samego certyfikatu?
-
-Odp.: Tak, możesz podpisywać wiele dokumentów programu Word przy użyciu tego samego certyfikatu. Po załadowaniu certyfikatu za pomocą pliku`CertificateHolder` class, możesz użyć jej ponownie do podpisania wielu dokumentów, wywołując metodę`DigitalSignatureUtil.Sign` metoda z różnymi ścieżkami źródłowymi i podpisanymi dokumentami.
-
-#### P: Czy podpisanie dokumentu modyfikuje oryginalny dokument?
-
-Odp.: Podpisanie dokumentu za pomocą Aspose.Words dla .NET nie modyfikuje oryginalnego dokumentu. Zamiast tego tworzy podpisaną cyfrowo kopię dokumentu, pozostawiając oryginalny dokument nienaruszony. Kopia podpisana cyfrowo zawiera dodany podpis cyfrowy, zapewniający integralność treści dokumentu.
-
-#### P: Czy mogę zweryfikować podpis cyfrowy podpisanego dokumentu za pomocą Aspose.Words dla .NET?
-
- Odp.: Tak, Aspose.Words dla .NET zapewnia funkcję weryfikacji podpisu cyfrowego podpisywanego dokumentu. Możesz skorzystać z`DigitalSignatureUtil.Verify` metoda sprawdzania ważności i autentyczności podpisu cyfrowego.
+### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla .NET?
+ Można znaleźć obszerną dokumentację[Tutaj](https://reference.aspose.com/words/net/) i wsparcie[Tutaj](https://forum.aspose.com/c/words/8).

@@ -163,7 +163,7 @@ Aspose.Words oferece recursos avançados para tratamento de revisões, como reso
 
 Aspose.Words permite aplicar várias opções de formatação a texto e parágrafos, como estilos de fonte, cores, alinhamento, espaçamento entre linhas e recuo.
 
-### 5.2 Adicionando cabeçalhos, rodapés e marcas d'água
+### 5.2 Adicionando cabeçalhos, rodapés e marcas d’água
 
 Cabeçalhos, rodapés e marcas d'água são elementos essenciais em documentos profissionais. Aspose.Words permite adicionar e personalizar esses elementos facilmente.
 

@@ -98,7 +98,7 @@ Un paragraphe peut contenir des nœuds tels que des tracés, des formes, des com
  Oui, vous pouvez manipuler différents types de nœuds tels que des formes, des commentaires, etc. en vérifiant leur`NodeType`.
 
 ### 4. Ai-je besoin d’une licence pour utiliser Aspose.Words pour .NET ?
- Vous pouvez commencer par un essai gratuit ou obtenir une licence temporaire auprès de[ici](https://purchase.aspose.com/temporary-license/).
+Vous pouvez commencer par un essai gratuit ou obtenir une licence temporaire auprès de[ici](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Où puis-je trouver plus d’exemples et de documentation ?
  Visiter le[Aspose.Words pour la documentation de l'API .NET](https://reference.aspose.com/words/net/) pour plus d’exemples et une documentation détaillée.

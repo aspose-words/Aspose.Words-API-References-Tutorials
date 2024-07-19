@@ -66,11 +66,11 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Inline-Code-Funkti
 
 #### F: Wie kann ich den Inline-Code in Aspose.Words verwenden?
 
- A: Um Inline-Code in Aspose.Words zu verwenden, können Sie den zu formatierenden Text mit entsprechenden Tags umgeben. Sie können beispielsweise das`<code>` oder`<kbd>` Tag, um den Text zu umgeben, der als Inline-Code formatiert werden soll.
+A: Um Inline-Code in Aspose.Words zu verwenden, können Sie den zu formatierenden Text mit entsprechenden Tags umgeben. Sie können beispielsweise das`<code>` oder`<kbd>` Tag, um den Text zu umgeben, der als Inline-Code formatiert werden soll.
 
 #### F: Ist es möglich, in Aspose.Words die Schriftart oder Farbe des Inline-Codes anzugeben?
 
- A: Ja, Sie können die Schriftart oder Farbe des Inline-Codes in Aspose.Words festlegen. Sie können den`Font.Name` Und`Font.Color` Eigenschaften der`Run` Objekt, um die Schriftart und Farbe des Inline-Codes festzulegen. Sie können beispielsweise`run.Font.Name = "Courier New"` um die Schriftart für Inline-Code festzulegen und`run.Font.Color = Color.Blue` um die Farbe festzulegen.
+ A: Ja, Sie können die Schriftart oder Farbe des Inline-Codes in Aspose.Words festlegen. Sie können den`Font.Name`Und`Font.Color` Eigenschaften der`Run` Objekt, um die Schriftart und Farbe des Inline-Codes festzulegen. Sie können beispielsweise`run.Font.Name = "Courier New"` um die Schriftart für Inline-Code festzulegen und`run.Font.Color = Color.Blue` , um die Farbe festzulegen.
 
 #### F: Kann ich den Inline-Code in einem Absatz verwenden, der andere Textelemente enthält?
 

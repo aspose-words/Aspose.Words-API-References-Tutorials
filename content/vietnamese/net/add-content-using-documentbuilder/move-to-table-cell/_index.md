@@ -85,7 +85,7 @@ Chúc mừng! Bạn vừa học cách di chuyển đến một ô bảng cụ th
  Có, bằng cách chỉ định chỉ mục bảng chính xác trong`MoveToCell` phương pháp này, bạn có thể điều hướng đến bất kỳ ô nào trong bất kỳ bảng nào trong tài liệu.
 
 ### Làm cách nào để xử lý các ô trải rộng trên nhiều hàng hoặc cột?
- Bạn có thể dùng`RowSpan` Và`ColSpan` thuộc tính của`Cell` lớp để quản lý các ô đã hợp nhất.
+ Bạn có thể dùng`RowSpan`Và`ColSpan` thuộc tính của`Cell` lớp để quản lý các ô đã hợp nhất.
 
 ### Có thể định dạng văn bản bên trong ô?
  Tuyệt đối! Sử dụng`DocumentBuilder` phương pháp như`Font.Size`, `Font.Bold`và những thứ khác để định dạng văn bản của bạn.

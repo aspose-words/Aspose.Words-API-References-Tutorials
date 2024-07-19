@@ -62,7 +62,7 @@ Dit is een compleet codevoorbeeld voor het invoegen van een OLE-object als picto
 
 ## Conclusie
 
-In de stapsgewijze handleiding hierboven wordt uitgelegd hoe u een OLE-object als pictogram in een Word-document kunt invoegen met behulp van een stroom met Aspose.Words voor .NET. Door de beschreven stappen te volgen, kunt u deze functionaliteit in uw project integreren. Zorg ervoor dat u de benodigde referenties importeert, een nieuwe document- en documentgenerator maakt, het OLE-object invoegt als een pictogram uit de stream en vervolgens het document opslaat. Gebruik de meegeleverde voorbeeldcode als uitgangspunt en pas deze aan uw behoeften aan.
+In de stapsgewijze handleiding hierboven wordt uitgelegd hoe u een OLE-object als pictogram in een Word-document kunt invoegen met behulp van een stroom met Aspose.Words voor .NET. Door de beschreven stappen te volgen, kunt u deze functionaliteit in uw project integreren. Zorg ervoor dat u de benodigde referenties importeert, een nieuwe document- en documentgenerator maakt, het OLE-object invoegt als een pictogram uit de stream en het document vervolgens opslaat. Gebruik de meegeleverde voorbeeldcode als uitgangspunt en pas deze aan uw behoeften aan.
 
 ### Veelgestelde vragen
 
@@ -88,7 +88,7 @@ A. Om een nieuw document en documentgenerator aan te maken, kunt u deze stappen 
 ```csharp
 Document doc = new Document();
 ```
- Gebruik de`DocumentBuilder`class om een documentbouwer te maken die is gekoppeld aan het eerder gemaakte document:
+ Gebruik de`DocumentBuilder` class om een documentbouwer te maken die is gekoppeld aan het eerder gemaakte document:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -118,8 +118,8 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 #### V. Hoe sluit ik de code in voor het invoegen van een OLE-object als een pictogram uit een stream in mijn project?
 
 A. Volg deze stappen om de code voor het invoegen van een OLE-object als een pictogram uit een stream in uw project in te sluiten:
--  Importeer de benodigde referenties door de juiste toe te voegen`using` verklaringen.
--  Maak een nieuw document en een documentbuilder met behulp van de`Document` En`DocumentBuilder` klassen.
+- Importeer de benodigde referenties door de juiste toe te voegen`using` verklaringen.
+-  Maak een nieuw document en een documentbuilder met behulp van de`Document`En`DocumentBuilder` klassen.
 - Gebruik de code voor het invoegen van het OLE-object als een pictogram uit een stream.
 -  Sla het document op met behulp van de`Save` methode met het juiste bestemmingspad.
 

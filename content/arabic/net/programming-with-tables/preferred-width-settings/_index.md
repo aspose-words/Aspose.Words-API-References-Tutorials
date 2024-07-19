@@ -2,105 +2,131 @@
 title: إعدادات العرض المفضلة
 linktitle: إعدادات العرض المفضلة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية تعيين عرض خلايا الجدول المفضل في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إنشاء الجداول بإعدادات العرض المطلقة والنسبية والتلقائية في Aspose.Words لـ .NET باستخدام هذا الدليل التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-tables/preferred-width-settings/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سوف نتعلم كيفية تعيين إعدادات العرض المفضلة لخلايا الجدول في مستند Word باستخدام Aspose.Words for .NET. سنتبع دليلًا خطوة بخطوة لفهم الكود وتنفيذ هذه الميزة. بحلول نهاية هذا البرنامج التعليمي، ستكون قادرًا على تحديد عروض مفضلة مختلفة لخلايا الجدول في مستندات Word الخاصة بك.
+تعد الجداول وسيلة فعالة لتنظيم المعلومات وتقديمها في مستندات Word. عند العمل مع الجداول في Aspose.Words for .NET، لديك العديد من الخيارات لتعيين عرض خلايا الجدول للتأكد من أنها تناسب تخطيط المستند بشكل مثالي. سيرشدك هذا الدليل خلال عملية إنشاء الجداول بإعدادات العرض المفضلة باستخدام Aspose.Words for .NET، مع التركيز على خيارات الحجم المطلقة والنسبية والتلقائية. 
 
-## الخطوة 1: إعداد المشروع
-1. قم بتشغيل Visual Studio وقم بإنشاء مشروع C# جديد.
-2. قم بإضافة مرجع إلى مكتبة Aspose.Words for .NET.
+## المتطلبات الأساسية
 
-## الخطوة 2: إنشاء المستند وتهيئة منشئ المستندات
-لبدء معالجة الكلمات باستخدام منشئ المستندات والمستندات، اتبع الخطوات التالية:
+قبل الغوص في البرنامج التعليمي، تأكد من أن لديك ما يلي:
+
+1.  Aspose.Words for .NET: تأكد من تثبيت Aspose.Words for .NET في بيئة التطوير الخاصة بك. يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
+
+2. بيئة تطوير .NET: قم بإعداد بيئة تطوير .NET، مثل Visual Studio.
+
+3. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# سيساعدك على فهم مقتطفات التعليمات البرمجية والأمثلة بشكل أفضل.
+
+4.  Aspose.Words Documents: ارجع إلى[Aspose.توثيق الكلمات](https://reference.aspose.com/words/net/) للحصول على معلومات API التفصيلية ومزيد من القراءة.
+
+## استيراد مساحات الأسماء
+
+قبل البدء في البرمجة، تحتاج إلى استيراد مساحات الأسماء الضرورية إلى مشروع C# الخاص بك:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// إنشاء الوثيقة
+توفر مساحات الأسماء هذه إمكانية الوصول إلى الوظائف الأساسية لـ Aspose.Words وكائن Table، مما يسمح لك بمعالجة جداول المستندات.
+
+دعنا نقسم عملية إنشاء جدول بإعدادات عرض مفضلة مختلفة إلى خطوات واضحة يمكن التحكم فيها.
+
+## الخطوة 1: تهيئة المستند وDocumentBuilder
+
+العنوان: إنشاء مستند جديد وDocumentBuilder
+
+ شرح: ابدأ بإنشاء مستند Word جديد و`DocumentBuilder` مثال. ال`DocumentBuilder` يوفر class طريقة بسيطة لإضافة محتوى إلى مستندك.
+
+```csharp
+// حدد المسار لحفظ المستند.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// إنشاء مستند جديد.
 Document doc = new Document();
 
-// تهيئة منشئ المستندات
+// قم بإنشاء DocumentBuilder لهذا المستند.
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-تأكد من استبدال "دليل مستنداتك" بالمسار الفعلي لدليل مستنداتك.
+ هنا، يمكنك تحديد الدليل الذي سيتم حفظ المستند فيه وتهيئة الملف`Document`و`DocumentBuilder` أشياء.
 
-## الخطوة 3: بناء الجدول بالعروض المفضلة
-بعد ذلك، سنقوم بإنشاء جدول يحتوي على ثلاث خلايا ذات عروض مفضلة مختلفة. استخدم الكود التالي:
+## الخطوة 2: أدخل خلية الجدول الأولى ذات العرض المطلق
+
+أدخل الخلية الأولى في الجدول بعرض ثابت قدره 40 نقطة. سيضمن هذا أن تحافظ هذه الخلية دائمًا على عرض 40 نقطة بغض النظر عن حجم الجدول.
 
 ```csharp
-// بداية الجدول
-builder. StartTable();
 
-// أدخل خلية بالحجم المطلق
-builder. InsertCell();
+// أدخل خلية ذات حجم مطلق.
+builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-builder.Writeln("Cell with a width of 40 points");
-
-// إدراج خلية ذات حجم نسبي (بالنسبة المئوية)
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-builder.Writeln("Cell with 20% width");
-
-// أدخل خلية ذات حجم تلقائي
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-builder.Writeln("Auto-size cell. The size of this cell is calculated from the preferred width of the table. In this case, the cell will fill the rest of the available space.");
-
-// نهاية الجدول
-builder. EndTable();
+builder.Writeln("Cell at 40 points width");
 ```
 
-نستخدم هنا أداة إنشاء المستندات لإنشاء جدول بثلاث خلايا. الخلية الأولى لها العرض المفضل 40 نقطة، والخلية الثانية لها العرض المفضل 20% من عرض الجدول، والخلية الثالثة لها العرض المفضل التلقائي الذي يضبط
+في هذه الخطوة، تبدأ في إنشاء الجدول وإدراج خلية ذات عرض مطلق. ال`PreferredWidth.FromPoints(40)` تقوم الطريقة بتعيين عرض الخلية إلى 40 نقطة، و`Shading.BackgroundPatternColor` يطبق لون خلفية أصفر فاتح.
 
-  اعتمادا على المساحة المتاحة.
+## الخطوة 3: أدخل خلية ذات حجم نسبي
 
-## الخطوة 4: حفظ المستند المعدل
-أخيرًا، نحتاج إلى حفظ المستند المعدل بإعدادات العرض المفضلة المحددة لخلايا الجدول. استخدم الكود التالي:
+قم بإدراج خلية أخرى بعرض يمثل 20% من إجمالي عرض الجدول. يضمن هذا الحجم النسبي ضبط الخلية بشكل متناسب مع عرض الجدول.
 
 ```csharp
+// قم بإدراج خلية ذات حجم نسبي (نسبة مئوية).
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
+builder.Writeln("Cell at 20% width");
+```
+
+سيكون عرض هذه الخلية 20% من إجمالي عرض الجدول، مما يجعلها قابلة للتكيف مع أحجام الشاشات المختلفة أو تخطيطات المستندات.
+
+### الخطوة 4: أدخل خلية ذات حجم تلقائي
+
+وأخيرًا، قم بإدراج خلية تقوم تلقائيًا بتغيير حجمها بناءً على المساحة المتوفرة المتبقية في الجدول.
+
+```csharp
+// أدخل خلية ذات حجم تلقائي.
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
+builder.Writeln("Cell automatically sized. The size of this cell is calculated from the table preferred width.");
+builder.Writeln("In this case the cell will fill up the rest of the available space.");
+```
+
+ ال`PreferredWidth.Auto` يسمح الإعداد لهذه الخلية بالتوسع أو الانكماش بناءً على المساحة المتبقية بعد حساب الخلايا الأخرى. وهذا يضمن أن يبدو تخطيط الجدول متوازنًا واحترافيًا.
+
+## الخطوة 5: إنهاء وحفظ المستند
+
+بمجرد قيامك بإدراج جميع الخلايا، أكمل الجدول واحفظ المستند في المسار المحدد.
+
+```csharp
+// احفظ المستند.
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-تأكد من تحديد المسار الصحيح واسم الملف للمستند الناتج.
-
-### نموذج التعليمات البرمجية المصدر لإعدادات العرض المفضلة باستخدام Aspose.Words لـ .NET 
-
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// قم بإدراج صف جدول يتكون من ثلاث خلايا ذات عروض مفضلة مختلفة.
-	builder.StartTable();
-	// أدخل خلية ذات حجم مطلق.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-	builder.Writeln("Cell at 40 points width");
-	// قم بإدراج خلية ذات حجم نسبي (نسبة مئوية).
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-	builder.Writeln("Cell at 20% width");
-	// أدخل خلية ذات حجم تلقائي.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-	builder.Writeln(
-		"Cell automatically sized. The size of this cell is calculated from the table preferred width.");
-	builder.Writeln("In this case the cell will fill up the rest of the available space.");
-	doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
-```
+تعمل هذه الخطوة على إنهاء الجدول وحفظ المستند باسم الملف "WorkingWithTables.PreferredWidthSettings.docx" في الدليل المخصص لك.
 
 ## خاتمة
-في هذا البرنامج التعليمي، تعلمنا كيفية تعيين إعدادات العرض المفضلة لخلايا الجدول في مستند Word باستخدام Aspose.Words for .NET. باتباع هذا الدليل التفصيلي وتنفيذ كود C# المقدم، يمكنك تخصيص عرض خلايا الجدول الخاص بك وفقًا لاحتياجاتك المحددة في مستندات Word الخاصة بك.
+
+يعد إنشاء الجداول بإعدادات العرض المفضلة في Aspose.Words لـ .NET أمرًا سهلاً بمجرد فهم خيارات الحجم المختلفة المتاحة. سواء كنت بحاجة إلى عروض خلايا ثابتة أو نسبية أو تلقائية، يوفر Aspose.Words المرونة اللازمة للتعامل مع سيناريوهات تخطيط الجدول المختلفة بكفاءة. باتباع الخطوات الموضحة في هذا الدليل، يمكنك التأكد من أن جداولك منظمة بشكل جيد وجذابة بصريًا في مستندات Word الخاصة بك.
+
+## الأسئلة الشائعة
+
+### ما هو الفرق بين عرض الخلايا المطلقة والنسبية؟
+عروض الخلايا المطلقة ثابتة ولا تتغير، بينما يتم ضبط العروض النسبية بناءً على العرض الإجمالي للجدول.
+
+### هل يمكنني استخدام النسب المئوية السلبية للعروض النسبية؟
+لا، النسب المئوية السالبة غير صالحة لعرض الخلايا. يُسمح فقط بالنسب المئوية الإيجابية.
+
+### كيف تعمل ميزة التحجيم التلقائي؟
+يقوم التحجيم التلقائي بضبط عرض الخلية لملء أي مساحة متبقية في الجدول بعد تغيير حجم الخلايا الأخرى.
+
+### هل يمكنني تطبيق أنماط مختلفة على الخلايا ذات إعدادات العرض المختلفة؟
+نعم، يمكنك تطبيق أنماط وتنسيقات مختلفة على الخلايا بغض النظر عن إعدادات العرض الخاصة بها.
+
+### ماذا يحدث إذا كان إجمالي عرض الجدول أقل من مجموع عروض الخلايا كافة؟
+سيقوم الجدول تلقائيًا بضبط عرض الخلايا لتلائم المساحة المتوفرة، مما قد يتسبب في تقليص بعض الخلايا.

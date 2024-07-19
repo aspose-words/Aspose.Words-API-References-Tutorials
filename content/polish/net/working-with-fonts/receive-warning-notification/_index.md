@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Krok 3: Zaktualizuj układ strony
-
- Zadzwoń do`UpdatePageLayout` metoda. Spowoduje to renderowanie dokumentu w pamięci i przechwytywanie wszelkich ostrzeżeń pojawiających się podczas renderowania.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Krok 4: Skonfiguruj ostrzegawcze wywołanie zwrotne
+## Krok 3: Skonfiguruj ostrzegawcze wywołanie zwrotne
 
  Aby przechwytywać i obsługiwać ostrzeżenia, utwórz klasę implementującą`IWarningCallback` interfejs. Ta klasa będzie rejestrować wszelkie ostrzeżenia, które wystąpią podczas przetwarzania dokumentu.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Nas interesuje tylko podmiana czcionek.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Krok 5: Przypisz wywołanie zwrotne do dokumentu
+## Krok 4: Przypisz wywołanie zwrotne do dokumentu
 
 Przypisz wywołanie zwrotne ostrzeżenia do dokumentu. Dzięki temu wszelkie problemy z czcionkami zostaną przechwycone i zarejestrowane.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Krok 5: Zaktualizuj układ strony
+
+ Zadzwoń do`UpdatePageLayout` metoda. Spowoduje to renderowanie dokumentu w pamięci i przechwytywanie wszelkich ostrzeżeń pojawiających się podczas renderowania.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Krok 6: Zapisz dokument
@@ -106,7 +101,7 @@ Nie, możesz określić tylko jedną domyślną czcionkę do zamiany. Można jed
 
 ###  P3: Czy mogę obsługiwać inne typy ostrzeżeń za pomocą`IWarningCallback`?
 
- Tak`IWarningCallback` interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
+ Tak`IWarningCallback`interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
 
 ### P4: Gdzie mogę znaleźć wsparcie dla Aspose.Words?
 

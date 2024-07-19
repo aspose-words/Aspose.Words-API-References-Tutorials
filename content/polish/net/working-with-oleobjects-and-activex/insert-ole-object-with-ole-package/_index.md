@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Wstaw obiekt OLE z pakietem OLE
- Skorzystaj z generatora dokumentów`InsertOleObject` metoda wstawiania obiektu OLE z pakietem OLE do dokumentu. Określ strumień danych, typ obiektu, opcje wyświetlania i inne niezbędne ustawienia.
+ Skorzystaj z generatora dokumentów`InsertOleObject`metoda wstawiania obiektu OLE z pakietem OLE do dokumentu. Określ strumień danych, typ obiektu, opcje wyświetlania i inne niezbędne ustawienia.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### P: Jak wstawić obiekt OLE z pakietem OLE do dokumentu?
 
- O: Skorzystaj z`InsertOleObject`metoda konstruktora dokumentów (`DocumentBuilder`), aby wstawić do dokumentu obiekt OLE z pakietem OLE. Określ strumień danych, typ obiektu, opcje wyświetlania i inne niezbędne ustawienia. Oto przykład :
+ O: Skorzystaj z`InsertOleObject` metoda konstruktora dokumentów (`DocumentBuilder`), aby wstawić do dokumentu obiekt OLE z pakietem OLE. Określ strumień danych, typ obiektu, opcje wyświetlania i inne niezbędne ustawienia. Oto przykład :
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### P: Jak zapisać dokument?
 
- O: Skorzystaj z dokumentu`Save` metoda zapisania dokumentu do pliku. Oto przykład :
+ O: Skorzystaj z dokumentu`Save`metoda zapisania dokumentu do pliku. Oto przykład :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

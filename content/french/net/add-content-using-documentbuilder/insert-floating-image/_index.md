@@ -60,7 +60,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
  Le`Document` l'objet représente le document Word et le`DocumentBuilder` aide à y ajouter du contenu.
 
-## Étape 3 : définir le chemin de l'image
+## Étape 3 : Définir le chemin de l'image
 
 Ensuite, spécifiez le chemin d'accès à votre fichier image. Assurez-vous que votre image est accessible depuis le répertoire de votre projet.
 

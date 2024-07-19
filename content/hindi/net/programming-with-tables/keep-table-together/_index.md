@@ -2,7 +2,7 @@
 title: टेबल को एक साथ रखें
 linktitle: टेबल को एक साथ रखें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: Aspose.Words for .NET के साथ Word दस्तावेज़ में तालिका को एक साथ रखना सीखें।
+description: .NET के लिए Aspose.Words के साथ Word दस्तावेज़ में तालिका को एक साथ रखना सीखें।
 type: docs
 weight: 10
 url: /hi/net/programming-with-tables/keep-table-together/
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// हमें तालिका में प्रत्येक पैराग्राफ के लिए KeepWithNext को सक्षम करने की आवश्यकता है ताकि इसे पृष्ठ पर विभाजित होने से बचाया जा सके,
-	// तालिका की अंतिम पंक्ति के अंतिम पैराग्राफ को छोड़कर।
+	//तालिका की अंतिम पंक्ति के अंतिम पैराग्राफ को छोड़कर।
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

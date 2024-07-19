@@ -45,7 +45,7 @@ builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 // 문서 빌더를 사용하여 문서에 콘텐츠를 추가합니다.
 DocumentBuilder builder = new DocumentBuilder();
 
-// 하이퍼링크를 삽입합니다.
+//하이퍼링크를 삽입합니다.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", 거짓);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

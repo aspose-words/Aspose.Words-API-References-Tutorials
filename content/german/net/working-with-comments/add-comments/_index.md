@@ -24,7 +24,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Schritt 2: Dem Dokument Inhalt hinzufügen
-Als nächstes fügen Sie dem Dokument mithilfe des DocumentBuilder-Objekts den gewünschten Inhalt hinzu. In diesem Beispiel fügen wir Text hinzu:
+Als nächstes fügen Sie dem Dokument mit dem DocumentBuilder-Objekt den gewünschten Inhalt hinzu. In diesem Beispiel fügen wir Text hinzu:
 
 ```csharp
 builder.Write("Some text is added.");
@@ -85,7 +85,7 @@ Kommentare sind nützlich für die Zusammenarbeit, um zusätzliche Informationen
 
 #### F: Wie kann ich einem Aspose.Words-Dokument für .NET einen Kommentar hinzufügen?
 
-A: Um einem Aspose.Words-Dokument für .NET einen Kommentar hinzuzufügen, müssen Sie die im Tutorial genannten Schritte befolgen.
+A: Um einen Kommentar in ein Aspose.Words-Dokument für .NET einzufügen, müssen Sie die im Tutorial genannten Schritte befolgen.
 
 #### F: Kann ich Kommentartext in Aspose.Words für .NET formatieren?
 

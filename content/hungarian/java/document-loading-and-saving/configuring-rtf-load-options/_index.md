@@ -35,7 +35,7 @@ Most, hogy konfiguráltuk a betöltési beállításainkat, betölthetünk egy R
 Document doc = new Document("Your Directory Path" + "UTF-8 characters.rtf", loadOptions);
 ```
 
- Ügyeljen arra, hogy cserélje ki`"Your Directory Path"` a dokumentumkönyvtár megfelelő elérési útjával.
+ Mindenképpen cserélje ki`"Your Directory Path"` a dokumentumkönyvtár megfelelő elérési útjával.
 
 ## 3. lépés: A dokumentum mentése
 

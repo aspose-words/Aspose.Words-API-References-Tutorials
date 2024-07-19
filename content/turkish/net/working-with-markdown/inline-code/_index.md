@@ -66,11 +66,11 @@ Tebrikler! Artık Aspose.Words for .NET ile satır içi kod işlevini nasıl kul
 
 #### S: Aspose.Words'te satır içi kodu nasıl kullanabilirim?
 
- C: Aspose.Words'te satır içi kod kullanmak için satır içi kod olarak formatlanacak metni çevreleyecek uygun etiketleri kullanabilirsiniz. Örneğin, şunları kullanabilirsiniz:`<code>` veya`<kbd>` Satır içi kod olarak biçimlendirilecek metni çevreleyen etiket.
+C: Aspose.Words'te satır içi kod kullanmak için satır içi kod olarak formatlanacak metni çevreleyecek uygun etiketleri kullanabilirsiniz. Örneğin, şunları kullanabilirsiniz:`<code>` veya`<kbd>` Satır içi kod olarak biçimlendirilecek metni çevreleyen etiket.
 
 #### S: Aspose.Words'te satır içi kod yazı tipini veya rengini belirtmek mümkün mü?
 
- C: Evet, Aspose.Words'te satır içi kodun yazı tipini veya rengini belirleyebilirsiniz. Şunu kullanabilirsiniz:`Font.Name` Ve`Font.Color` özellikleri`Run` Satır içi kodun yazı tipini ve rengini ayarlamak için nesne. Örneğin şunları kullanabilirsiniz:`run.Font.Name = "Courier New"` satır içi kod için yazı tipini belirtmek ve`run.Font.Color = Color.Blue`Rengi belirtmek için.
+ C: Evet, Aspose.Words'te satır içi kodun yazı tipini veya rengini belirleyebilirsiniz. Şunu kullanabilirsiniz:`Font.Name`Ve`Font.Color` özellikleri`Run` Satır içi kodun yazı tipini ve rengini ayarlamak için nesne. Örneğin şunları kullanabilirsiniz:`run.Font.Name = "Courier New"` satır içi kod için yazı tipini belirtmek ve`run.Font.Color = Color.Blue` Rengi belirtmek için.
 
 #### S: Satır içi kodu başka metin öğeleri içeren bir paragrafta kullanabilir miyim?
 

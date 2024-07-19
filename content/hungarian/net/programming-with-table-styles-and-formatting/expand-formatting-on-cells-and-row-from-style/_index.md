@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## 3. lépés: Lépjen az első táblázat első cellájába
- A kezdéshez a dokumentum első táblázatának első cellájába kell navigálnunk. Használjuk a`GetChild()` és`FirstRow.FirstCell` módszerek az első cellára való hivatkozás lekéréséhez.
+ A kezdéshez a dokumentum első táblázatának első cellájába kell navigálnunk. Használjuk a`GetChild()`és`FirstRow.FirstCell` módszerek az első cellára való hivatkozás lekéréséhez.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

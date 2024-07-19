@@ -88,7 +88,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
 ```
 
-- `bookmarkName`: Tên của bookmark bạn muốn điều hướng tới.
+- `bookmarkName`: Tên của bookmark bạn muốn điều hướng đến.
 - `isBookmarkStart` : Nếu đặt thành`true`, di chuyển đến đầu dấu trang.
 - `isBookmarkEnd` : Nếu đặt thành`true`, di chuyển đến cuối dấu trang.
 
@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. Tôi có thể di chuyển đến đầu dấu trang thay vì cuối không?
 
- Tuyệt đối! Chỉ cần thiết lập`isBookmarkStart` tham số để`true` Và`isBookmarkEnd` ĐẾN`false` bên trong`MoveToBookmark` phương pháp.
+ Tuyệt đối! Chỉ cần thiết lập`isBookmarkStart` tham số để`true`Và`isBookmarkEnd` ĐẾN`false` bên trong`MoveToBookmark` phương pháp.
 
 ### 2. Nếu tên dấu trang của tôi sai thì sao?
 

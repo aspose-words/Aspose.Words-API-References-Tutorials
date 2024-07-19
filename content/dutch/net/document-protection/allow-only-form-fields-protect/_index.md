@@ -2,115 +2,100 @@
 title: Sta alleen formuliervelden toe in Word-document
 linktitle: Sta alleen formuliervelden toe in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u Aspose.Words voor .NET kunt gebruiken om Word-documenten te beschermen en alleen toe te staan dat formuliervelden worden bewerkt.
+description: Leer hoe u Word-documenten kunt beveiligen, zodat alleen formuliervelden kunnen worden bewerkt met Aspose.Words voor .NET. Volg onze gids om ervoor te zorgen dat uw documenten veilig en gemakkelijk te bewerken zijn.
 type: docs
 weight: 10
 url: /nl/net/document-protection/allow-only-form-fields-protect/
 ---
-Documentbeveiliging is een essentiële functie bij het verwerken van woorden met bestanden in uw C#-toepassing. Met de Aspose.Words-bibliotheek voor .NET kunt u uw documenten eenvoudig beveiligen en alleen formuliervelden laten bewerken. In deze stapsgewijze handleiding laten we u zien hoe u de C#-broncode kunt gebruiken om alleen toe te staan dat formuliervelden worden bewerkt met behulp van de functie Alleen formuliervelden beschermen toestaan van Aspose.Words voor .NET.
+## Invoering
 
-## Stap 1: De documentmap instellen
+Hallo daar! Heeft u ooit specifieke delen van een Word-document moeten beschermen terwijl andere delen bewerkbaar moesten blijven? Aspose.Words voor .NET maakt dit supergemakkelijk. In deze zelfstudie gaan we dieper in op de manier waarop u in een Word-document alleen bescherming van formuliervelden kunt toestaan. Aan het einde van deze handleiding beschikt u over een gedegen kennis van documentbeveiliging met Aspose.Words voor .NET. Klaar? Laten we erin springen!
 
-De eerste stap is het definiëren van de directory van uw document. U moet het pad opgeven waar u het beveiligde document wilt opslaan. Bijvoorbeeld :
+## Vereisten
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Voordat we ingaan op het codeergedeelte, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-Zorg ervoor dat u "UW DOCUMENTENMAP" vervangt door het daadwerkelijke pad naar uw documentenmap.
+1.  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Visual Studio: Elke recente versie werkt prima.
+3. Basiskennis van C#: Als u de basisbeginselen begrijpt, kunt u de tutorial volgen.
 
-## Stap 2: Secties en tekst invoegen
+## Naamruimten importeren
 
-Vervolgens moet u secties en tekst in uw document invoegen. Gebruik de klasse DocumentBuilder van Aspose.Words om de inhoud van uw document op te bouwen. Hier is een eenvoudig voorbeeld:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Text added to a document.");
-```
-
-In dit voorbeeld maken we een nieuw, leeg document en gebruiken we DocumentBuilder om een regel tekst toe te voegen.
-
-## Stap 3: Documentbeveiliging inschakelen
-
- Documentbeveiliging werkt alleen als documentbeveiliging is ingeschakeld. U kunt documentbeveiliging inschakelen met behulp van de`Protect` methode van de klasse Document. Hier is hoe:
+Allereerst moeten we de benodigde naamruimten importeren. Hiermee wordt onze omgeving ingesteld op het gebruik van Aspose.Words.
 
 ```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-In dit voorbeeld schakelen we documentbeveiliging in door het beveiligingstype `
+## Stap 1: Stel uw project in
 
-AllowOnlyFormFields` en het instellen van een wachtwoord.
+Maak een nieuw project in Visual Studio  
+Open Visual Studio en maak een nieuw Console App-project (.NET Core). Noem het iets betekenisvols, zoals "AsposeWordsProtection".
 
-## Stap 4: Alleen formuliervelden toestaan
+## Stap 2: Installeer Aspose.Words voor .NET
 
-Nu de documentbeveiliging is ingeschakeld, moeten we opgeven dat alleen het bewerken van formuliervelden is toegestaan. Dit zorgt ervoor dat gebruikers alleen delen van het document kunnen bewerken die formuliervelden zijn. Hier is hoe:
+Installeer via NuGet Package Manager  
+Klik met de rechtermuisknop op uw project in de Solution Explorer, selecteer "NuGet-pakketten beheren" en zoek naar`Aspose.Words`. Installeer het.
 
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
+## Stap 3: Initialiseer het document
 
-Zorg ervoor dat u "wachtwoord" vervangt door het wachtwoord dat u eerder hebt ingesteld.
-
-## Stap 5: Het beveiligde document opslaan
-
- Ten slotte kunt u het beveiligde document opslaan met behulp van de`Save` methode van de klasse Document. Geef het volledige bestandspad en de gewenste bestandsnaam op. Bijvoorbeeld :
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
-```
-
-Zorg ervoor dat u "dataDir" vervangt door het pad naar uw documentmap.
-
-### Voorbeeldbroncode voor de functie Alleen formuliervelden beveiligen met Aspose.Words voor .NET
+Maak een nieuw Document-object  
+Laten we beginnen met het maken van een nieuw document en een documentbouwer om wat tekst toe te voegen.
 
 ```csharp
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Voeg twee secties in met wat tekst.
+// Initialiseer een nieuw document en DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
+```
 
-// Een documentbeveiliging werkt alleen als de documentbeveiliging is ingeschakeld en alleen bewerken in formuliervelden is toegestaan.
+ Hier maken we een nieuwe`Document`En`DocumentBuilder` voorbeeld. De`DocumentBuilder` stelt ons in staat tekst aan ons document toe te voegen.
+
+## Stap 4: Bescherm het document
+
+Pas beveiliging toe waardoor alleen formuliervelden kunnen worden bewerkt  
+Laten we nu de bescherming aan ons document toevoegen.
+
+```csharp
+// Beveilig het document, zodat alleen formuliervelden kunnen worden bewerkt
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
 
-// Sla het beveiligde document op.
+Deze coderegel beschermt het document en staat alleen toe dat formuliervelden worden bewerkt. Het wachtwoord "wachtwoord" wordt gebruikt om de beveiliging af te dwingen.
+
+## Stap 5: Sla het document op
+
+Sla het beveiligde document op  
+Laten we ten slotte ons document opslaan in de opgegeven map.
+
+```csharp
+// Sla het beveiligde document op
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
+Hierdoor wordt het document opgeslagen met de toegepaste beveiliging.
+
 ## Conclusie
 
-In deze handleiding hebben we onderzocht hoe u de Aspose.Words-bibliotheek voor .NET kunt gebruiken om een document te beveiligen en alleen toe te staan dat formuliervelden worden bewerkt. Door de aangegeven stappen te volgen, kunt u deze functionaliteit eenvoudig in uw C#-applicatie implementeren. Documentbescherming is essentieel om de veiligheid en vertrouwelijkheid van uw documenten te garanderen.
+En daar heb je het! U hebt zojuist geleerd hoe u een Word-document kunt beveiligen, zodat alleen formuliervelden kunnen worden bewerkt met Aspose.Words voor .NET. Dit is een handige functie als u ervoor wilt zorgen dat bepaalde delen van uw document ongewijzigd blijven terwijl specifieke velden kunnen worden ingevuld.
 
-### Veelgestelde vragen over het toestaan dat alleen formuliervelden worden beschermd in een Word-document
+## Veelgestelde vragen
 
-#### Vraag: Wat is documentbeveiliging in Aspose.Words voor .NET?
+###	 Hoe kan ik de beveiliging van een document verwijderen?  
+ Om de bescherming te verwijderen, gebruikt u de`doc.Unprotect("password")` methode, waarbij "wachtwoord" het wachtwoord is dat wordt gebruikt om het document te beveiligen.
 
-A: Documentbeveiliging in Aspose.Words voor .NET is een functie waarmee u uw documenten kunt beveiligen door bepaalde acties te beperken, zoals bewerken, opmaken of wijzigen van de inhoud. Het helpt de integriteit en vertrouwelijkheid van uw documenten te behouden door ongeoorloofde wijzigingen te voorkomen.
+###	 Kan ik verschillende soorten beveiliging toepassen met Aspose.Words voor .NET?  
+ Ja, Aspose.Words ondersteunt verschillende soorten bescherming, zoals`ReadOnly`, `NoProtection` , En`AllowOnlyRevisions`.
 
-#### Vraag: Hoe kan ik een document beveiligen en toestaan dat alleen formuliervelden worden bewerkt met Aspose.Words voor .NET?
+###	 Is het mogelijk om voor verschillende secties een ander wachtwoord te gebruiken?  
+Nee, de beveiliging op documentniveau in Aspose.Words is van toepassing op het gehele document. U kunt geen verschillende wachtwoorden toewijzen aan verschillende secties.
 
-A: Om een document te beveiligen en toe te staan dat alleen formuliervelden worden bewerkt met Aspose.Words voor .NET, kunt u deze stappen volgen:
-1. Definieer het mappad voor uw document.
-2.  Voeg secties en tekst in uw document in met behulp van de`DocumentBuilder` klas.
-3.  Schakel documentbeveiliging in met behulp van de`Protect` werkwijze van de`Document` class, waarbij het beveiligingstype wordt gespecificeerd als`AllowOnlyFormFields` en het verstrekken van een wachtwoord.
-4.  Sla het beveiligde document op met behulp van de`Save` werkwijze van de`Document` klas.
+###	 Wat gebeurt er als het onjuiste wachtwoord wordt gebruikt?  
+Als er een onjuist wachtwoord wordt gebruikt, blijft het document beveiligd en worden de opgegeven wijzigingen niet toegepast.
 
-#### Vraag: Kan ik formuliervelden in een beveiligd document invoegen met Aspose.Words voor .NET?
-
-A: Ja, u kunt formuliervelden in een beveiligd document invoegen met Aspose.Words voor .NET. De documentbeveiliging met de`AllowOnlyFormFields` type stelt gebruikers in staat alleen de formuliervelden te bewerken terwijl de rest van de inhoud van het document wordt beschermd. U kunt gebruik maken van de`DocumentBuilder` class om formuliervelden in het document in te voegen voordat de beveiliging wordt ingeschakeld.
-
-#### Vraag: Kan ik de documentbeveiliging van een beveiligd document verwijderen?
-
- A: Ja, u kunt de documentbeveiliging van een beveiligd document verwijderen met Aspose.Words voor .NET. Om de bescherming te verwijderen, kunt u de`Unprotect` werkwijze van de`Document` klasse en geef het juiste wachtwoord op. Hierdoor wordt de beveiliging opgeheven en kunt u het document onbeperkt bewerken.
-
-#### Vraag: Is het mogelijk om een document met meerdere beveiligingstypes te beschermen?
-
- A: Nee, met Aspose.Words voor .NET kan slechts één beveiligingstype tegelijk op een document worden toegepast. echter, de`AllowOnlyFormFields` beveiligingstype kan het bewerken van formuliervelden effectief beperken, terwijl andere beveiligingstypen zijn toegestaan, zoals`AllowOnlyComments` of`AllowOnlyRevisions`te combineren met formulierveldbeveiliging.
-
-#### Vraag: Kan ik verschillende wachtwoorden instellen voor verschillende beveiligingstypen in een document?
-
-A: Nee, met Aspose.Words voor .NET kunt u één wachtwoord instellen voor documentbeveiliging, ongeacht het beveiligingstype. Hetzelfde wachtwoord wordt gebruikt om documentbeveiliging in en uit te schakelen.
+###	 Kan ik programmatisch controleren of een document beveiligd is?  
+ Ja, u kunt gebruik maken van de`doc.ProtectionType` eigenschap om de beveiligingsstatus van een document te controleren.

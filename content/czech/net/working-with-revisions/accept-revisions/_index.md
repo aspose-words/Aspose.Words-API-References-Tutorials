@@ -15,7 +15,7 @@ V tomto tutoriálu vás provedeme přijímáním revizí dokumentu aplikace Word
 V tomto příkladu vytváříme dokument a přidáváme obsah. Pro ilustraci změn a revizí používáme několik odstavců. Zde je postup:
 
 ```csharp
-// Cesta k adresáři dokumentů.
+//Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Řešení 2:
 
- Odpověď: Můžete také povolit sledování revizí pomocí`Document` konstruktor, který přijímá`trackRevisions` a`author` parametry.
+ Odpověď: Můžete také povolit sledování revizí pomocí`Document` konstruktor, který přijímá`trackRevisions`a`author` parametry.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

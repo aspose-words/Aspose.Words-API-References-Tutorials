@@ -2,105 +2,131 @@
 title: Preferred Width Settings
 linktitle: Preferred Width Settings
 second_title: Aspose.Words Document Processing API
-description: Learn how to set preferred table cell widths in a Word document with Aspose.Words for .NET.
+description: Learn how to create tables with absolute, relative, and automatic width settings in Aspose.Words for .NET with this step-by-step guide.
 type: docs
 weight: 10
 url: /net/programming-with-tables/preferred-width-settings/
 ---
+## Introduction
 
-In this tutorial, we will learn how to set preferred width settings for table cells in a Word document using Aspose.Words for .NET. We will follow a step by step guide to understand the code and implement this feature. By the end of this tutorial, you will be able to specify different preferred widths for your table cells in your Word documents.
+Tables are a powerful way to organize and present information in your Word documents. When working with tables in Aspose.Words for .NET, you have several options for setting the width of table cells to ensure they fit your document's layout perfectly. This guide will walk you through the process of creating tables with preferred width settings using Aspose.Words for .NET, focusing on absolute, relative, and automatic sizing options. 
 
-## Step 1: Project Setup
-1. Launch Visual Studio and create a new C# project.
-2. Add a reference to the Aspose.Words for .NET library.
+## Prerequisites
 
-## Step 2: Creating the document and initializing the document generator
-To start Words Processing with the document and document generator, follow these steps:
+Before diving into the tutorial, ensure you have the following:
+
+1. Aspose.Words for .NET: Ensure you have Aspose.Words for .NET installed in your development environment. You can download it [here](https://releases.aspose.com/words/net/).
+
+2. .NET Development Environment: Have a .NET development environment set up, such as Visual Studio.
+
+3. Basic Knowledge of C#: Familiarity with C# programming will help you understand the code snippets and examples better.
+
+4. Aspose.Words Documentation: Refer to the [Aspose.Words Documentation](https://reference.aspose.com/words/net/) for detailed API information and further reading.
+
+## Import Namespaces
+
+Before you start coding, you need to import the necessary namespaces into your C# project:
 
 ```csharp
-// Path to your documents directory
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// Document creation
+These namespaces provide access to the core functionalities of Aspose.Words and the Table object, allowing you to manipulate document tables.
+
+Let's break down the process of creating a table with different preferred width settings into clear, manageable steps.
+
+## Step 1: Initialize the Document and DocumentBuilder
+
+Heading: Creating a New Document and DocumentBuilder
+
+Explanation: Start by creating a new Word document and a `DocumentBuilder` instance. The `DocumentBuilder` class provides a simple way to add content to your document.
+
+```csharp
+// Define the path to save the document.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Create a new Document.
 Document doc = new Document();
 
-// Initialize the document generator
+// Create a DocumentBuilder for this Document.
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Be sure to replace "YOUR DOCUMENTS DIRECTORY" with the actual path to your documents directory.
+Here, you specify the directory where the document will be saved and initialize the `Document` and `DocumentBuilder` objects.
 
-## Step 3: Building the table with preferred widths
-Next, we'll build a table with three cells that have different preferred widths. Use the following code:
+## Step 2: Insert the First Table Cell with Absolute Width
+
+Insert the first cell into the table with a fixed width of 40 points. This will ensure that this cell always maintains a width of 40 points regardless of the table size.
 
 ```csharp
-// Beginning of the table
-builder. StartTable();
 
-// Insert a cell of absolute size
-builder. InsertCell();
+// Insert an absolute sized cell.
+builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
 builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-builder.Writeln("Cell with a width of 40 points");
-
-// Insert a cell of relative size (in percentage)
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-builder.Writeln("Cell with 20% width");
-
-// Insert an auto-sized cell
-builder. InsertCell();
-builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-builder.Writeln("Auto-size cell. The size of this cell is calculated from the preferred width of the table. In this case, the cell will fill the rest of the available space.");
-
-// End of table
-builder. EndTable();
+builder.Writeln("Cell at 40 points width");
 ```
 
-Here we use the document builder to build a table with three cells. The first cell has a preferred width of 40 points, the second cell has a preferred width of 20% of the table width, and the third cell has an automatic preferred width that adjusts
+In this step, you begin creating the table and insert a cell with an absolute width. The `PreferredWidth.FromPoints(40)` method sets the cell's width to 40 points, and `Shading.BackgroundPatternColor` applies a light yellow background color.
 
-  depending on the space available.
+## Step 3: Insert a Relative Sized Cell
 
-## Step 4: Saving the modified document
-Finally, we need to save the modified document with the preferred width settings defined for the table cells. Use the following code:
+Insert another cell with a width that is 20% of the table's total width. This relative sizing ensures the cell adjusts proportionally to the table's width.
 
 ```csharp
+// Insert a relative (percent) sized cell.
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
+builder.Writeln("Cell at 20% width");
+```
+
+This cell's width will be 20% of the table's total width, making it adaptable to different screen sizes or document layouts.
+
+### Step 4: Insert an Auto Sized Cell
+
+Finally, insert a cell that automatically sizes itself based on the remaining available space in the table.
+
+```csharp
+// Insert an auto sized cell.
+builder.InsertCell();
+builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
+builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
+builder.Writeln("Cell automatically sized. The size of this cell is calculated from the table preferred width.");
+builder.Writeln("In this case the cell will fill up the rest of the available space.");
+```
+
+The `PreferredWidth.Auto` setting allows this cell to expand or contract based on the space left after the other cells are accounted for. This ensures the table layout looks balanced and professional.
+
+## Step 5: Finalize and Save the Document
+
+Once you have inserted all your cells, complete the table and save the document to your specified path.
+
+```csharp
+// Save the document.
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-Be sure to specify the correct path and filename for the output document.
-
-### Sample source code for Preferred Width Settings using Aspose.Words for .NET 
-
-```csharp
-	// Path to your document directory 
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Insert a table row made up of three cells which have different preferred widths.
-	builder.StartTable();
-	// Insert an absolute sized cell.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
-	builder.Writeln("Cell at 40 points width");
-	// Insert a relative (percent) sized cell.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(20);
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightBlue;
-	builder.Writeln("Cell at 20% width");
-	// Insert a auto sized cell.
-	builder.InsertCell();
-	builder.CellFormat.PreferredWidth = PreferredWidth.Auto;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.LightGreen;
-	builder.Writeln(
-		"Cell automatically sized. The size of this cell is calculated from the table preferred width.");
-	builder.Writeln("In this case the cell will fill up the rest of the available space.");
-	doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
-```
+This step finalizes the table and saves the document with the filename "WorkingWithTables.PreferredWidthSettings.docx" in your designated directory.
 
 ## Conclusion
-In this tutorial, we learned how to set preferred width settings for table cells in a Word document using Aspose.Words for .NET. By following this step-by-step guide and implementing the provided C# code, you can customize your table cell widths to your specific needs in your Word documents.
+
+Creating tables with preferred width settings in Aspose.Words for .NET is straightforward once you understand the different sizing options available. Whether you need fixed, relative, or automatic cell widths, Aspose.Words provides the flexibility to handle various table layout scenarios efficiently. By following the steps outlined in this guide, you can ensure your tables are well-structured and visually appealing in your Word documents.
+
+## FAQ's
+
+### What is the difference between absolute and relative cell widths?
+Absolute cell widths are fixed and do not change, while relative widths adjust based on the table's total width.
+
+### Can I use negative percentages for relative widths?
+No, negative percentages are not valid for cell widths. Only positive percentages are allowed.
+
+### How does the auto sizing feature work?
+Auto sizing adjusts the cell's width to fill any remaining space in the table after other cells have been sized.
+
+### Can I apply different styles to cells with different width settings?
+Yes, you can apply various styles and formatting to cells regardless of their width settings.
+
+### What happens if the table's total width is less than the sum of all cell widths?
+The table will automatically adjust the widths of cells to fit within the available space, which may cause some cells to shrink.

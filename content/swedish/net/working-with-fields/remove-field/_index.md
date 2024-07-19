@@ -2,7 +2,7 @@
 title: Ta bort fält
 linktitle: Ta bort fält
 second_title: Aspose.Words Document Processing API
-description: den här guiden kommer du att lära dig hur du tar bort ett specifikt fält i ett dokument med Aspose.Words för .NET.
+description: I den här guiden kommer du att lära dig hur du tar bort ett specifikt fält i ett dokument med Aspose.Words för .NET.
 type: docs
 weight: 10
 url: /sv/net/working-with-fields/remove-field/
@@ -65,7 +65,7 @@ Följ dessa steg för att ta bort ett specifikt fält i ditt dokument med Aspose
 
 #### F: Hur kan jag ta bort ett fält i ett Word-dokument med Aspose.Words för .NET?
 
- S: För att ta bort ett fält i ett Word-dokument med Aspose.Words för .NET kan du gå igenom fälten i dokumentet med hjälp av`FieldStart` klass och använd`FieldStart.Remove`metod för att ta bort fältet.
+ S: För att ta bort ett fält i ett Word-dokument med Aspose.Words för .NET kan du gå igenom fälten i dokumentet med hjälp av`FieldStart` klass och använd`FieldStart.Remove` metod för att ta bort fältet.
 
 #### F: Är det möjligt att bara ta bort vissa fält i ett Word-dokument med Aspose.Words för .NET?
 

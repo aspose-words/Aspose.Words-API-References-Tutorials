@@ -40,7 +40,7 @@ table. AllowAutoFit = true;
 // Abrufen der ersten Zelle der ersten Zeile
 Cell firstCell = table.FirstRow.FirstCell;
 
-// Rufen Sie den bevorzugten Breitentyp und seinen Wert ab
+// Abrufen des bevorzugten Breitentyps und seines Wertes
 PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```

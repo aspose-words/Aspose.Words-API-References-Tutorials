@@ -63,7 +63,7 @@ J: Tutorial ini mencakup manipulasi bidang di Aspose Words untuk .NET, dengan fo
 
 #### T: Mengapa menggunakan kolom "Tidak Ada" di Aspose Words?
 
-J: Bidang "Tidak Ada" di Aspose Words berguna saat Anda ingin menyisipkan placeholder atau penanda ke dalam dokumen, namun tanpa efek atau penghitungan tertentu. Ini dapat digunakan untuk menandai tempat dalam dokumen di mana Anda ingin memasukkan data nanti atau untuk menambahkan catatan khusus tanpa mengganggu konten lainnya.
+J: Bidang "Tidak Ada" di Aspose Words berguna saat Anda ingin menyisipkan placeholder atau penanda ke dalam dokumen, namun tanpa efek atau penghitungan tertentu. Ini dapat digunakan untuk menandai tempat di dokumen di mana Anda ingin memasukkan data nanti atau untuk menambahkan catatan khusus tanpa mengganggu konten lainnya.
 
 #### T: Bisakah saya menyesuaikan kolom "Tidak Ada" dengan parameter tambahan?
 

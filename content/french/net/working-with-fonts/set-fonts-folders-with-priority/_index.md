@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Étape 2 : Définir les dossiers de polices en priorité
- Ensuite, vous pouvez définir les dossiers de polices en priorité à l'aide du`FontSettings` la classe et le`SetFontsSources()`méthode. Vous pouvez spécifier plusieurs sources de polices à l'aide d'instances de`SystemFontSource` et`FolderFontSource`. Dans cet exemple, nous avons défini deux sources de polices : la source de polices système par défaut et un dossier de polices personnalisé avec une priorité de 1.
+ Ensuite, vous pouvez définir les dossiers de polices en priorité à l'aide du`FontSettings` la classe et le`SetFontsSources()`méthode. Vous pouvez spécifier plusieurs sources de polices à l'aide d'instances de`SystemFontSource`et`FolderFontSource`. Dans cet exemple, nous avons défini deux sources de polices : la source de polices système par défaut et un dossier de polices personnalisé avec une priorité de 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

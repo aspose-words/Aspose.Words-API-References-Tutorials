@@ -9,7 +9,7 @@ url: /de/net/working-with-section/append-section-content/
 ---
 ## Einführung
 
-Hallo! Haben Sie sich schon einmal gefragt, wie Sie Word-Dokumente programmgesteuert mit .NET bearbeiten können? Wenn Sie nach einer robusten Bibliothek suchen, mit der Sie Aufgaben mit Word-Dokumenten bewältigen können, ist Aspose.Words für .NET Ihre beste Wahl. Heute werde ich Sie durch den Prozess des Anhängens von Abschnitten in einem Word-Dokument mit Aspose.Words für .NET führen. Egal, ob Sie ein Neuling oder ein erfahrener Entwickler sind, dieses Tutorial wird Ihnen helfen, die Grundlagen und einige fortgeschrittene Konzepte zu meistern. Also, tauchen wir ein!
+Hallo! Haben Sie sich schon einmal gefragt, wie Sie Word-Dokumente programmgesteuert mit .NET bearbeiten können? Wenn Sie nach einer robusten Bibliothek suchen, mit der Sie Aufgaben mit Word-Dokumenten bewältigen können, ist Aspose.Words für .NET Ihre beste Wahl. Heute werde ich Sie durch den Prozess des Anhängens von Abschnitten innerhalb eines Word-Dokuments mit Aspose.Words für .NET führen. Egal, ob Sie ein Neuling oder ein erfahrener Entwickler sind, dieses Tutorial wird Ihnen helfen, die Grundlagen und einige fortgeschrittene Konzepte zu meistern. Also, tauchen wir ein!
 
 ## Voraussetzungen
 
@@ -112,11 +112,11 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### 2. Kann ich Aspose.Words für .NET kostenlos nutzen?
 
- Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/). Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
+ Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/)Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
 
 ## 3. Was sind die Hauptfunktionen von Aspose.Words für .NET?
 
- Aspose.Words für .NET bietet eine breite Palette an Funktionen, darunter Dokumenterstellung, Formatierung, Konvertierung und Bearbeitung. Weitere Informationen zu seinen Funktionen finden Sie im[API-Dokumentation](https://reference.aspose.com/words/net/).
+Aspose.Words für .NET bietet eine breite Palette an Funktionen, darunter Dokumenterstellung, Formatierung, Konvertierung und Bearbeitung. Weitere Informationen zu seinen Funktionen finden Sie im[API-Dokumentation](https://reference.aspose.com/words/net/).
 
 ## 4. Wie erhalte ich Unterstützung für Aspose.Words für .NET?
 

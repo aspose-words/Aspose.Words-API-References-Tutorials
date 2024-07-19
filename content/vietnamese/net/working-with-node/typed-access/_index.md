@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Truy cập nhanh và gõ vào hàng đầu tiên của bảng.
+     //Truy cập nhanh và gõ vào hàng đầu tiên của bảng.
      table.FirstRow?.Remove();
 
      // Truy cập nhanh và gõ vào hàng cuối cùng của bảng.

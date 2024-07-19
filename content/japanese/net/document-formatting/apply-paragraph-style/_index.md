@@ -55,7 +55,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ステップ3: 段落スタイルの適用
 
-ここで魔法が起こります! ドキュメントに段落スタイルを適用します。
+ここで魔法が起こります。文書に段落スタイルを適用します。
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;

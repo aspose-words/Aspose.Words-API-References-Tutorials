@@ -2,70 +2,105 @@
 title: Nối với các tùy chọn định dạng nhập
 linktitle: Nối với các tùy chọn định dạng nhập
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách nối thêm tài liệu với các tùy chọn định dạng nhập bằng Aspose.Words cho .NET.
+description: Dễ dàng nối thêm tài liệu Word bằng Aspose.Words cho .NET, duy trì định dạng với hướng dẫn chi tiết từng bước.
 type: docs
 weight: 10
 url: /vi/net/join-and-append-documents/append-with-import-format-options/
 ---
+## Giới thiệu
 
-Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để nối nội dung của tài liệu này vào tài liệu khác với các tùy chọn định dạng nhập. Mã nguồn được cung cấp trình bày cách mở tài liệu nguồn và đích, chỉ định các tùy chọn định dạng nhập và nối tài liệu nguồn vào tài liệu đích.
+Này! Bạn đã bao giờ thấy mình cần hợp nhất nhiều tài liệu Word thành một nhưng lại gặp khó khăn với các vấn đề định dạng khó chịu đó chưa? Đừng sợ! Hôm nay, chúng ta sẽ đi sâu vào cách bạn có thể nối tài liệu Word này với tài liệu Word khác bằng Aspose.Words for .NET trong khi vẫn giữ định dạng của bạn gọn gàng và ngăn nắp. Hãy thắt dây an toàn vì khi kết thúc hướng dẫn này, bạn sẽ trở thành chuyên gia hợp nhất tài liệu!
 
-## Bước 1: Thiết lập dự án
+## Điều kiện tiên quyết
 
-Đảm bảo rằng bạn có các điều kiện tiên quyết sau:
+Trước khi chuyển sang phần thú vị, hãy đảm bảo bạn có mọi thứ mình cần. Dưới đây là danh sách kiểm tra nhanh:
 
--  Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải nó xuống từ[Aspose.Releases]https://releases.aspose.com/words/net/ hoặc sử dụng trình quản lý gói NuGet để cài đặt nó.
-- Đường dẫn thư mục tài liệu nơi chứa tài liệu nguồn và đích.
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện này. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Bất kỳ môi trường tương thích .NET nào như Visual Studio.
+3. Kiến thức cơ bản về C#: Bạn không cần phải là một chuyên gia, nhưng làm quen một chút với C# sẽ giúp ích rất nhiều.
 
-## Bước 2: Mở tài liệu nguồn và đích
+## Nhập không gian tên
 
- Mở tài liệu nguồn và đích bằng cách sử dụng`Document` hàm tạo lớp. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+Trước tiên, hãy nhập các không gian tên cần thiết. Điều này tạo tiền đề cho cuộc phiêu lưu mã hóa của chúng tôi.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Hãy chia nhỏ quy trình thành các bước dễ hiểu.
+
+## Bước 1: Thiết lập thư mục tài liệu của bạn
+
+Mọi hành trình đều bắt đầu bằng bước đầu tiên và ở đây, bước này sẽ chỉ định thư mục tài liệu của bạn. Hãy coi việc này giống như việc cài đặt GPS của bạn trước chuyến đi.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ. Đây là nơi chúng tôi sẽ lấy tài liệu nguồn và đích của mình.
+
+## Bước 2: Tải tài liệu nguồn và đích
+
+Tiếp theo, chúng ta cần tải tài liệu của mình. Nó giống như nhặt được hai mảnh ghép.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Bước 3: Chỉ định tùy chọn định dạng nhập
+Ở đây, chúng tôi đang tải tài liệu nguồn và đích vào bộ nhớ. Đảm bảo tên tệp của bạn khớp với tên trong thư mục của bạn.
 
- Tạo một thể hiện của`ImportFormatOptions` class để chỉ định các tùy chọn định dạng nhập. Trong ví dụ này, chúng tôi sử dụng`KeepSourceNumbering` thuộc tính để đảm bảo rằng việc đánh số từ tài liệu nguồn được sử dụng nếu có xung đột với tài liệu đích.
+## Bước 3: Xác định tùy chọn định dạng nhập
+
+Bây giờ, đây là nơi phép màu xảy ra. Chúng tôi sẽ xác định cách xử lý định dạng trong thao tác chắp thêm.
 
 ```csharp
+// Chỉ định rằng nếu việc đánh số xung đột trong tài liệu nguồn và đích,
+// sau đó đánh số từ tài liệu nguồn sẽ được sử dụng.
 ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## Bước 4: Nối tài liệu nguồn vào tài liệu đích
+Đoạn mã này đảm bảo rằng nếu có xung đột về cách đánh số giữa các tài liệu của bạn thì cách đánh số của tài liệu nguồn sẽ chiếm ưu thế. Tiện dụng phải không?
 
- Sử dụng`AppendDocument` phương pháp của tài liệu đích để nối thêm tài liệu nguồn. Vượt qua`ImportFormatMode.UseDestinationStyles` làm tham số thứ hai để sử dụng kiểu và định dạng của tài liệu đích.
+## Bước 4: Nối tài liệu
+
+Đã đến lúc mang tất cả lại với nhau! Chúng tôi sẽ nối tài liệu nguồn vào tài liệu đích bằng cách sử dụng các tùy chọn định dạng nhập đã xác định.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## Bước 5: Lưu tài liệu đích
+ Ở đây, chúng tôi đang thêm`srcDoc` ĐẾN`dstDoc` sử dụng phong cách đích. Các`options` tham số đảm bảo các quy tắc định dạng của chúng tôi được áp dụng.
 
-Cuối cùng, lưu tài liệu đích đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
+## Bước 5: Lưu tài liệu đã hợp nhất
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendWithImportFormatOptions.docx");
-```
-
-Điều này hoàn tất việc triển khai thêm tài liệu với các tùy chọn định dạng nhập bằng Aspose.Words cho .NET.
-
-### Mã nguồn ví dụ cho Nối với các tùy chọn định dạng nhập bằng cách sử dụng Aspose.Words cho .NET 
+Cuối cùng nhưng không kém phần quan trọng, hãy lưu tài liệu mới được hợp nhất của chúng ta. Nó giống như đặt một quả anh đào lên trên chiếc bánh kem của bạn.
 
 ```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document srcDoc = new Document(dataDir + "Document source with list.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Chỉ định rằng nếu việc đánh số xung đột trong tài liệu nguồn và đích,
-	// sau đó đánh số từ tài liệu nguồn sẽ được sử dụng.
-	ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
-
+dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
+
+Bùm! Bạn đã hợp nhất thành công hai tài liệu Word mà vẫn giữ nguyên định dạng. 
+
+## Phần kết luận
+
+Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng nối thêm tài liệu bằng Aspose.Words cho .NET mà không làm mất định dạng. Cho dù bạn là nhà phát triển đang tìm cách hợp lý hóa việc quản lý tài liệu hay chỉ là người yêu thích các tài liệu có tổ chức thì hướng dẫn này sẽ giúp bạn. Chúc mừng mã hóa!
+
+## Câu hỏi thường gặp
+
+### Tôi có thể giữ nguyên số tài liệu đích thay vì số tài liệu nguồn không?
+ Có, bạn có thể sửa đổi`ImportFormatOptions` để đạt được điều này.
+
+### Nếu tôi không có Aspose.Words cho .NET thì sao?
+ Bạn có thể tải xuống bản dùng thử miễn phí từ[đây](https://releases.aspose.com/).
+
+### Tôi có thể sử dụng phương pháp này cho các loại tài liệu khác như PDF không?
+Aspose.Words dành riêng cho tài liệu Word. Đối với tệp PDF, bạn có thể cần Aspose.PDF.
+
+### Làm cách nào để xử lý hình ảnh trong tài liệu?
+Hình ảnh thường được xử lý liền mạch nhưng hãy đảm bảo tài liệu nguồn và đích của bạn được định dạng chính xác.
+
+###ment trước khi lưu?
+Bạn có thể kết xuất tài liệu thành luồng hoặc sử dụng trình xem trong ứng dụng của mình để xem trước tài liệu đó.

@@ -50,7 +50,7 @@ sdtRichText.ChildNodes.Add(para);
 ```
 
 ## 步骤 5：将内容控件附加到文档
-使用将富文本框内容控件附加到文档正文`AppendChild`文档第一部分主体的方法。
+使用将富文本框内容控件附加到文档正文中`AppendChild`文档第一部分主体的方法。
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);

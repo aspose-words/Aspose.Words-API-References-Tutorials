@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Krok 2: Vytvořte nový dokument
 
- Dobře, začněme vytvořením nového dokumentu aplikace Word. Použijeme`Document` a`DocumentBuilder` třídy z Aspose.Words, aby se věci daly do pohybu.
+ Dobře, začněme vytvořením nového dokumentu aplikace Word. Použijeme`Document`a`DocumentBuilder` třídy z Aspose.Words, aby se věci daly do pohybu.
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-To nastaví náš dokument a připraví nás na jeho vytváření.
+To nastaví náš dokument a připraví nás na jeho tvorbu.
 
 ## Krok 3: Vložte pole TC
 
@@ -64,7 +64,7 @@ Nyní přichází ta zábavná část. Do našeho dokumentu vložíme pole TC. P
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Tento řádek kódu říká Aspose.Words, aby vložil pole TC se vstupním textem "Entry Text". The`\\f t` část je přepínač, který určuje, jak se záznam zobrazí v obsahu.
+ Tento řádek kódu říká Aspose.Words, aby vložil pole TC se vstupním textem "Entry Text". The`\\f t`část je přepínač, který určuje, jak se záznam zobrazí v obsahu.
 
 ## Krok 4: Uložte dokument
 

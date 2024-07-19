@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Krok 2: Vstupte do aktuální sekce
 
-Načteme aktuální sekci pomocí`builder.CurrentSection`. Tato sekce bude cílem, kam zkopírujeme záhlaví a zápatí z předchozí sekce.
+ Načteme aktuální sekci pomocí`builder.CurrentSection`Tato sekce bude cílem, kam zkopírujeme záhlaví a zápatí z předchozí sekce.
 
 ### Krok 3: Definujte předchozí sekci
 

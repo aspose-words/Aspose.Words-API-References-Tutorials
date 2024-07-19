@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Yazı tipi klasörlerini öncelikli olarak ayarlayın
- Daha sonra yazı tipi klasörlerini öncelikli olarak ayarlayabilirsiniz.`FontSettings` sınıf ve`SetFontsSources()`yöntem. Örneklerini kullanarak birden fazla yazı tipi kaynağı belirtebilirsiniz.`SystemFontSource` Ve`FolderFontSource`. Bu örnekte iki yazı tipi kaynağı tanımladık: varsayılan sistem yazı tipi kaynağı ve önceliği 1 olan özel yazı tipi klasörü.
+ Daha sonra yazı tipi klasörlerini öncelikli olarak ayarlayabilirsiniz.`FontSettings` sınıf ve`SetFontsSources()`yöntem. Örneklerini kullanarak birden fazla yazı tipi kaynağı belirtebilirsiniz.`SystemFontSource`Ve`FolderFontSource`. Bu örnekte iki yazı tipi kaynağı tanımladık: varsayılan sistem yazı tipi kaynağı ve önceliği 1 olan özel yazı tipi klasörü.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

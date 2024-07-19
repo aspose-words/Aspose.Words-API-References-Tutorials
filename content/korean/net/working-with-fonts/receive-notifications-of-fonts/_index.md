@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 ###  Q3: 다른 유형의 경고를 처리할 수 있나요?`IWarningCallback`?
 
- 예,`IWarningCallback` 인터페이스는 글꼴 대체뿐만 아니라 다양한 유형의 경고를 처리할 수 있습니다.
+ 예,`IWarningCallback`인터페이스는 글꼴 대체뿐만 아니라 다양한 유형의 경고를 처리할 수 있습니다.
 
 ### Q4: Aspose.Words에 대한 지원은 어디서 찾을 수 있나요?
 

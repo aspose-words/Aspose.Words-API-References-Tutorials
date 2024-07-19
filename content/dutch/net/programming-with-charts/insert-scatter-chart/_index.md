@@ -2,43 +2,57 @@
 title: Voeg een spreidingsdiagram in een Word-document in
 linktitle: Voeg een spreidingsdiagram in een Word-document in
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een spreidingsdiagram in een document invoegt met Aspose.Words voor .NET. Voeg seriegegevens toe met X- en Y-coördinaten.
+description: Leer hoe u een spreidingsdiagram invoegt in Word met Aspose.Words voor .NET. Eenvoudige stappen voor het integreren van visuele gegevensrepresentaties in uw documenten.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/insert-scatter-chart/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u Aspose.Words voor .NET gebruikt om een spreidingsdiagram in een document in te voegen. De meegeleverde broncode laat zien hoe u een diagram maakt, seriegegevens toevoegt en het document opslaat.
+In deze zelfstudie leert u hoe u Aspose.Words voor .NET kunt gebruiken om een spreidingsdiagram in uw Word-document in te voegen. Spreidingsdiagrammen zijn krachtige visuele hulpmiddelen die gegevenspunten effectief kunnen weergeven op basis van twee variabelen, waardoor uw documenten aantrekkelijker en informatiever worden.
 
-## Stap 1: Zet het project op
+## Vereisten
 
-Zorg ervoor dat u aan de volgende vereisten voldoet:
+Voordat we ingaan op het maken van spreidingsdiagrammen met Aspose.Words voor .NET, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
-- Een documentmappad waar het uitvoerdocument wordt opgeslagen.
+1.  Installatie van Aspose.Words voor .NET: Download en installeer Aspose.Words voor .NET van[hier](https://releases.aspose.com/words/net/).
+   
+2. Basiskennis van C#: Bekendheid met de programmeertaal C# en het .NET-framework zal nuttig zijn.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Naamruimten importeren
 
- Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
+Om aan de slag te gaan, moet u de benodigde naamruimten in uw C#-project importeren:
 
 ```csharp
-// Pad naar uw documentmap
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+```
 
+Laten we nu het proces van het invoegen van een spreidingsdiagram in uw Word-document met behulp van Aspose.Words voor .NET opsplitsen:
+
+## Stap 1: Initialiseer het document en DocumentBuilder
+
+ Initialiseer eerst een nieuw exemplaar van het`Document` klasse en`DocumentBuilder` klasse om te beginnen met het maken van uw document.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Gebruik vervolgens de`InsertChart` werkwijze van de`DocumentBuilder` om een spreidingsdiagram in het document in te voegen.
+## Stap 2: Voeg het spreidingsdiagram in
+
+ Gebruik de`InsertChart` werkwijze van de`DocumentBuilder` class om een spreidingsdiagram in het document in te voegen.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Stap 3: Voeg seriegegevens toe aan het diagram
+## Stap 3: Voeg gegevensreeksen toe aan het diagram
 
-Voeg seriegegevens toe aan het diagram. In dit voorbeeld voegen we twee sets X- en Y-coördinaten toe.
+Voeg nu gegevensreeksen toe aan uw spreidingsdiagram. Dit voorbeeld demonstreert het toevoegen van een reeks met specifieke gegevenspunten.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
@@ -46,49 +60,29 @@ chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[]
 
 ## Stap 4: Sla het document op
 
- Sla het document ten slotte op in de opgegeven map met behulp van de`Save` werkwijze van de`Document` voorwerp.
+ Sla ten slotte het gewijzigde document op de gewenste locatie op met behulp van de`Save` werkwijze van de`Document` klas.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 ```
 
-Hiermee is de implementatie van het invoegen van een spreidingsdiagram met Aspose.Words voor .NET voltooid.
-
-### Voorbeeldbroncode voor het invoegen van een spreidingsdiagram met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
-	doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
-```
-
 ## Conclusie
 
-In deze zelfstudie hebt u geleerd hoe u een spreidingsdiagram in een Word-document kunt invoegen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u een nieuw document maken, een spreidingsdiagram invoegen, reeksgegevens met X- en Y-coördinaten toevoegen en het document met het diagram opslaan.
+Gefeliciteerd! U hebt met succes geleerd hoe u een spreidingsdiagram in uw Word-document kunt invoegen met Aspose.Words voor .NET. Spreidingsdiagrammen zijn uitstekende hulpmiddelen voor het visualiseren van gegevensrelaties, en met Aspose.Words kunt u ze moeiteloos in uw documenten integreren om de duidelijkheid en het begrip te vergroten.
 
-Aspose.Words voor .NET biedt een uitgebreide API voor woordenverwerking met grafieken in Word-documenten. Spreidingsdiagrammen zijn handig voor het visualiseren en analyseren van gegevens met twee numerieke variabelen. Met Aspose.Words voor .NET kunt u eenvoudig spreidingsdiagrammen maken die de relatie tussen X- en Y-waarden weergeven en patronen of trends in de gegevens identificeren.
+## Veelgestelde vragen
 
-Door Aspose.Words voor .NET te gebruiken, kunt u het proces van het genereren van documenten met spreidingsdiagrammen automatiseren, waardoor u tijd en moeite bespaart bij het handmatig maken van documenten. De bibliotheek biedt een breed scala aan diagramtypen, waaronder spreidingsdiagrammen, en biedt verschillende aanpassingsopties om het uiterlijk van het diagram aan uw behoeften aan te passen.
+### Kan ik het uiterlijk van het spreidingsdiagram aanpassen met Aspose.Words?
+Ja, Aspose.Words maakt uitgebreide aanpassing van diagrameigenschappen mogelijk, zoals kleuren, assen en labels.
 
-### Veelgestelde vragen
+### Is Aspose.Words compatibel met verschillende versies van Microsoft Word?
+Aspose.Words ondersteunt verschillende versies van Microsoft Word, waardoor compatibiliteit tussen platforms wordt gegarandeerd.
 
-#### Q1. Wat is een spreidingsdiagram?
-Een spreidingsdiagram is een type diagram dat de relatie tussen twee numerieke variabelen weergeeft. Het bestaat uit een reeks punten die zijn uitgezet op een coördinatenraster, waarbij één variabele op de X-as wordt weergegeven en de andere variabele op de Y-as. Spreidingsdiagrammen worden gebruikt om patronen, correlaties of trends tussen twee sets gegevenspunten te identificeren.
+### Biedt Aspose.Words ondersteuning voor andere typen diagrammen?
+Ja, Aspose.Words ondersteunt een breed scala aan diagramtypen, waaronder staafdiagrammen, lijndiagrammen en cirkeldiagrammen.
 
-#### Vraag 2. Kan ik meerdere reeksen aan het spreidingsdiagram toevoegen?
-Ja, u kunt meerdere reeksen aan het spreidingsdiagram toevoegen met Aspose.Words voor .NET. Elke reeks vertegenwoordigt een reeks gegevenspunten met hun respectievelijke X- en Y-coördinaten. Door meerdere reeksen toe te voegen, kunt u verschillende gegevenssets binnen hetzelfde spreidingsdiagram vergelijken en analyseren, waardoor u een uitgebreid overzicht van uw gegevens krijgt.
+### Kan ik gegevens in het spreidingsdiagram programmatisch dynamisch bijwerken?
+Absoluut, u kunt diagramgegevens dynamisch bijwerken met behulp van Aspose.Words API-aanroepen.
 
-#### Q3. Kan ik het uiterlijk van het spreidingsdiagram aanpassen?
-Ja, met Aspose.Words voor .NET kunt u verschillende aspecten van het uiterlijk van het spreidingsdiagram aanpassen. U kunt eigenschappen wijzigen, zoals de kleur van de reeks, de vorm van de markering, de aslabels en de opmaak van het diagramgebied. De bibliotheek biedt een uitgebreide set API's om de visuele elementen van het diagram te beheren en een aangepast uiterlijk te creëren dat aan uw behoeften voldoet.
-
-#### Q4. Kan ik het document met het ingevoegde spreidingsdiagram in verschillende formaten opslaan?
-Ja, met Aspose.Words voor .NET kunt u het document met het ingevoegde spreidingsdiagram opslaan in verschillende formaten, zoals DOCX, PDF, HTML en meer. U kunt het gewenste uitvoerformaat kiezen op basis van uw vereisten en de`Save` werkwijze van de`Document` object om het document op te slaan. Het ingevoegde spreidingsdiagram blijft behouden in het opgeslagen document.
-
-#### Vraag 5. Kan ik de gegevens en het uiterlijk van het spreidingsdiagram wijzigen nadat ik het heb ingevoegd?
-Ja, nadat u het spreidingsdiagram in het document hebt ingevoegd, kunt u de gegevens en het uiterlijk ervan wijzigen met behulp van de API's van Aspose.Words voor .NET. U kunt de reeksgegevens bijwerken met nieuwe X- en Y-coördinaten, de vormen en kleuren van de markering wijzigen, aseigenschappen aanpassen en opmaakopties toepassen om dynamische en interactieve grafieken in uw Word-documenten te maken.
+### Waar kan ik verdere hulp of ondersteuning krijgen voor Aspose.Words?
+ Voor verdere hulp kunt u terecht op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).

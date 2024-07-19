@@ -150,7 +150,7 @@ System.out.println("The document has " + count + " shapes with SmartArt.");
 
 ### स्मार्टआर्ट चित्र अपडेट करना
 
-किसी दस्तावेज़ में स्मार्टआर्ट रेखाचित्रों को अद्यतन करने के लिए, निम्नलिखित कोड का उपयोग करें:
+किसी दस्तावेज़ में स्मार्टआर्ट चित्रों को अद्यतन करने के लिए, निम्नलिखित कोड का उपयोग करें:
 
 ```java
 Document doc = new Document("Your Directory Path" + "SmartArt.docx");

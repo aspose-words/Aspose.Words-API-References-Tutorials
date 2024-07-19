@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /th/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-บทความนี้ให้คำแนะนำทีละขั้นตอนเกี่ยวกับวิธีการใช้ฟีเจอร์ชนิดการควบคุมที่ต้องการกับ Aspose.Words สำหรับ .NET เราจะอธิบายโค้ดแต่ละส่วนโดยละเอียด ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถเข้าใจวิธีระบุประเภทการควบคุมที่ต้องการเมื่อโหลดเอกสาร HTML
+บทความนี้ให้คำแนะนำทีละขั้นตอนเกี่ยวกับวิธีการใช้ฟีเจอร์ชนิดการควบคุมที่ต้องการกับ Aspose.Words สำหรับ .NET เราจะอธิบายโค้ดแต่ละส่วนอย่างละเอียด ในตอนท้ายของบทช่วยสอนนี้ คุณจะสามารถเข้าใจวิธีระบุประเภทการควบคุมที่ต้องการเมื่อโหลดเอกสาร HTML
 
 ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งและกำหนดค่าไลบรารี Aspose.Words สำหรับ .NET ในโปรเจ็กต์ของคุณแล้ว คุณสามารถดูไลบรารีและคำแนะนำในการติดตั้งได้จากเว็บไซต์ Aspose
 
@@ -91,4 +91,4 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 #### ถาม: ฉันสามารถใช้การควบคุมประเภทอื่นเป็นตัวเลือกที่ต้องการได้หรือไม่
 
- ตอบ: ใช่ นอกเหนือจาก`HtmlControlType.StructuredDocumentTag` , Aspose.Words สำหรับ .NET รองรับการควบคุมประเภทอื่นๆ เช่น`HtmlControlType.ContentControl` และ`HtmlControlType.CustomXmlMarkup`.
+ ตอบ: ใช่ นอกเหนือจาก`HtmlControlType.StructuredDocumentTag` , Aspose.Words สำหรับ .NET รองรับการควบคุมประเภทอื่นๆ เช่น`HtmlControlType.ContentControl`และ`HtmlControlType.CustomXmlMarkup`.

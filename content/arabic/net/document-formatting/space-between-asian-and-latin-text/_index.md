@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- عن طريق الإعداد`AddSpaceBetweenFarEastAndAlpha` و`AddSpaceBetweenFarEastAndDigit` ل`true`، نطلب من Aspose.Words أن يقوم تلقائيًا بضبط التباعد بين الأحرف الآسيوية والأحرف أو الأرقام اللاتينية.
+ عن طريق الإعداد`AddSpaceBetweenFarEastAndAlpha`و`AddSpaceBetweenFarEastAndDigit` ل`true`، نطلب من Aspose.Words أن يقوم تلقائيًا بضبط التباعد بين الأحرف الآسيوية والأحرف أو الأرقام اللاتينية.
 
 ## الخطوة 3: إضافة نص إلى المستند
 

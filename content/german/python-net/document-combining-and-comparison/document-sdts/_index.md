@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Structured Document Tags (SDTs) für strukturierte Daten
 linktitle: Verwenden von Structured Document Tags (SDTs) für strukturierte Daten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Nutzen Sie die Leistungsfähigkeit von Structured Document Tags (SDTs) zum Organisieren von Inhalten. Erfahren Sie, wie Sie Aspose.Words für Python zum Implementieren von SDTs verwenden.
 type: docs
 weight: 13

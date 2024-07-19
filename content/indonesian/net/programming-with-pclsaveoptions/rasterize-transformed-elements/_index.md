@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
 
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk membuat, memanipulasi, dan mengonversi dokumen Word dalam aplikasi C#. Di antara fitur yang ditawarkan oleh Aspose.Words adalah kemampuan untuk merasterisasi elemen yang diubah saat mengonversi dokumen ke format berbeda. Dalam panduan ini, kami akan menunjukkan cara menggunakan kode sumber C# Aspose.Words untuk .NET untuk menonaktifkan rasterisasi elemen yang diubah saat mengonversi dokumen ke format PCL.
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk membuat, memanipulasi, dan mengonversi dokumen Word dalam aplikasi C#. Di antara fitur yang ditawarkan oleh Aspose.Words adalah kemampuan untuk merasterisasi elemen yang diubah saat mengonversi dokumen ke format berbeda. Dalam panduan ini, kami akan menunjukkan kepada Anda cara menggunakan kode sumber C# Aspose.Words untuk .NET untuk menonaktifkan rasterisasi elemen yang diubah saat mengonversi dokumen ke format PCL.
 
 ## Memahami perpustakaan Aspose.Words
 

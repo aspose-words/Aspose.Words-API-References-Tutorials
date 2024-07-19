@@ -2,120 +2,123 @@
 title: Přidat text se záložkou v dokumentu aplikace Word
 linktitle: Přidat text se záložkou v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Přečtěte si, jak přidat text ze záložky do dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: V tomto podrobném průvodci se dozvíte, jak přidat text se záložkou do dokumentu aplikace Word pomocí Aspose.Words for .NET. Ideální pro vývojáře.
 type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/append-bookmarked-text/
 ---
+## Úvod
 
-V tomto článku prozkoumáme výše uvedený zdrojový kód C#, abychom porozuměli tomu, jak používat funkci Append Bookmarked Text v knihovně Aspose.Words for .NET. Tato funkce umožňuje přidat text obsažený v konkrétní záložce dokumentu aplikace Word do jiného dokumentu.
+Nazdárek! Zkoušeli jste někdy přidat text z části označené záložkou v dokumentu aplikace Word a přišlo vám to složité? Máte štěstí! Tento tutoriál vás provede procesem pomocí Aspose.Words pro .NET. Rozdělíme to do jednoduchých kroků, abyste je mohli snadno sledovat. Ponořme se do toho a připojme tento text se záložkou jako profesionál!
 
 ## Předpoklady
 
-- Základní znalost jazyka C#.
-- Vývojové prostředí .NET s nainstalovanou knihovnou Aspose.Words.
+Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-## Krok 1: Získání odstavců ze záložky
+-  Aspose.Words for .NET: Ujistěte se, že jej máte nainstalovaný. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Jakékoli vývojové prostředí .NET, jako je Visual Studio.
+- Základní znalost C#: Pomůže vám pochopení základních pojmů programování v C#.
+- Dokument aplikace Word se záložkami: Dokument aplikace Word s nastavenými záložkami, které použijeme k připojení textu.
 
- Než začneme přidávat text záložky, musíme získat odstavce, které obsahují začátek a konec záložky. To lze provést přístupem k`BookmarkStart` a`BookmarkEnd` vlastnosti záložky:
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Díky tomu budeme mít všechny nástroje, které potřebujeme, na dosah ruky.
 
 ```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+using System;
+using Aspose.Words;
+using Aspose.Words.Importing;
 ```
 
-## Krok 2: Zkontrolujte nadřazené odstavce
+Rozdělme si příklad na podrobné kroky.
 
-Kontrolujeme, zda mají počáteční a koncové odstavce platné rodiče, tedy zda do odstavce skutečně patří. Pokud ne, vygenerujeme výjimku:
+## Krok 1: Načtěte dokument a inicializujte proměnné
+
+Dobře, začněme načtením našeho dokumentu Word a inicializací proměnných, které budeme potřebovat.
 
 ```csharp
+// Načtěte zdrojové a cílové dokumenty.
+Document srcDoc = new Document("source.docx");
+Document dstDoc = new Document("destination.docx");
+
+// Inicializujte importér dokumentů.
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+
+// Najděte záložku ve zdrojovém dokumentu.
+Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## Krok 2: Identifikujte počáteční a koncový odstavec
+
+Nyní najdeme odstavce, kde začíná a končí záložka. To je zásadní, protože musíme s textem zacházet v těchto mezích.
+
+```csharp
+// Toto je odstavec, který obsahuje začátek záložky.
+Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+
+// Toto je odstavec, který obsahuje konec záložky.
+Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
 if (startPara == null || endPara == null)
-throw new InvalidOperationException(
-"The parent of the beginning or the end of the bookmark is not a paragrap
-
-hey, this situation can't be handled yet.");
+    throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## Krok 3: Zkontrolujte rodiče odstavců
+## Krok 3: Ověřte rodiče odstavce
 
-Zkontrolujeme, zda začátek a konec odstavce mají stejného rodiče. Pokud ne, znamená to, že odstavce nejsou obsaženy ve stejné sekci nebo dokumentu a vyvoláme výjimku:
+Musíme zajistit, aby počáteční a koncové odstavce měly stejného rodiče. Toto je jednoduchý scénář, aby věci zůstaly přímočaré.
 
 ```csharp
+// Omezte se na přiměřeně jednoduchý scénář.
 if (startPara.ParentNode != endPara.ParentNode)
-throw new InvalidOperationException(
-"Beginning and ending paragraphs have different parents, this situation cannot be handled yet.");
+    throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## Krok 4: Zkopírujte odstavce
+## Krok 4: Identifikujte uzel, který chcete zastavit
 
-Iterujeme uzly (odstavce) od počátečního odstavce ke koncovému odstavci. Pro každý uzel vytvoříme kopii a importujeme ji do kontextu cílového dokumentu:
+Dále musíme určit uzel, kde přestaneme kopírovat text. Toto bude uzel bezprostředně za koncovým odstavcem.
 
 ```csharp
+// Chceme zkopírovat všechny odstavce od počátečního odstavce až po (včetně) koncového odstavce,
+// proto uzel, u kterého zastavíme, je jeden za koncovým odstavcem.
 Node endNode = endPara.NextSibling;
+```
 
+## Krok 5: Přidejte text označený záložkou k cílovému dokumentu
+
+Nakonec projdeme uzly od počátečního odstavce k uzlu za koncovým odstavcem a připojíme je k cílovému dokumentu.
+
+```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-Node newNode = importer.ImportNode(curNode, true);
+    // Tím se vytvoří kopie aktuálního uzlu a importuje se (učiní se platným) v kontextu
+    // cílového dokumentu. Import znamená správnou úpravu stylů a identifikátorů seznamu.
+    Node newNode = importer.ImportNode(curNode, true);
 
-dstNode.AppendChild(newNode);
+    // Připojte importovaný uzel k cílovému dokumentu.
+    dstDoc.FirstSection.Body.AppendChild(newNode);
 }
-```
 
-### Příklad zdrojového kódu pro Append Bookmarked Text pomocí Aspose.Words for .NET
-
-Zde je úplný ukázkový zdrojový kód, který demonstruje přidávání textu ze záložky pomocí Aspose.Words pro .NET:
-
-```csharp
-
-	// Toto je odstavec, který obsahuje začátek záložky.
-	Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-	// Toto je odstavec, který obsahuje konec záložky.
-	Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-	if (startPara == null || endPara == null)
-		throw new InvalidOperationException(
-			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-	// Omezte se na přiměřeně jednoduchý scénář.
-	if (startPara.ParentNode != endPara.ParentNode)
-		throw new InvalidOperationException(
-			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-	// Chceme zkopírovat všechny odstavce od počátečního odstavce až po (včetně) koncového odstavce,
-	// proto uzel, u kterého zastavíme, je jeden za koncovým odstavcem.
-	Node endNode = endPara.NextSibling;
-
-	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-	{
-		//Tím se vytvoří kopie aktuálního uzlu a importuje se (učiní se platným) v kontextu
-		// cílového dokumentu. Import znamená správnou úpravu stylů a identifikátorů seznamu.
-		Node newNode = importer.ImportNode(curNode, true);
-
-		dstNode.AppendChild(newNode);
-	}
-
+// Uložte cílový dokument s připojeným textem.
+dstDoc.Save("appended_document.docx");
 ```
 
 ## Závěr
 
-V tomto článku jsme prozkoumali zdrojový kód C#, abychom pochopili, jak používat funkci Append Bookmarked Text Aspose.Words for .NET. Postupovali jsme krok za krokem, jak získat odstavce ze záložky, ověřit rodiče a zkopírovat odstavce do jiného dokumentu.
+A tady to máte! Úspěšně jste přidali text ze sekce se záložkou v dokumentu aplikace Word pomocí Aspose.Words for .NET. Díky tomuto mocnému nástroji je manipulace s dokumenty hračkou a nyní máte v rukávu ještě jeden trik. Šťastné kódování!
 
-### Nejčastější dotazy pro přidání textu se záložkou do dokumentu aplikace Word
+## FAQ
 
-#### Q1: Jaké jsou předpoklady pro použití funkce "Přidat text se záložkami" v Aspose.Words pro .NET?
+### Mohu přidat text z více záložek najednou?
+Ano, postup můžete opakovat pro každou záložku a podle toho přidat text.
 
-A: Chcete-li použít funkci "Přidat text se záložkami" v Aspose.Words pro .NET, musíte mít základní znalosti jazyka C#. Potřebujete také vývojové prostředí .NET s nainstalovanou knihovnou Aspose.Words.
+### Co když mají počáteční a koncové odstavce různé rodiče?
+Aktuální příklad předpokládá, že mají stejného rodiče. U různých rodičů je nutná složitější manipulace.
 
-#### Q2: Jak získat odstavce, které obsahují začátek a konec záložky v dokumentu aplikace Word?
+### Mohu zachovat původní formátování připojeného textu?
+ Absolutně! The`ImportFormatMode.KeepSourceFormatting` zajišťuje zachování původního formátování.
 
-Odpověď: Chcete-li získat odstavce, které obsahují začátek a konec záložky v dokumentu aplikace Word, můžete získat přístup k`BookmarkStart` a`BookmarkEnd` vlastnosti záložky. Zde je ukázkový kód:
+### Je možné připojit text na konkrétní pozici v cílovém dokumentu?
+Ano, text můžete připojit na libovolné místo tak, že přejdete na požadovaný uzel v cílovém dokumentu.
 
-```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-```
-
-#### Otázka 3: Co se stane, když počáteční a koncové odstavce nemají platné rodiče?
-
-A: Pokud počáteční a koncové odstavce nemají platné rodiče, tj. ve skutečnosti to nejsou odstavce, bude vyvolána výjimka. Tuto situaci nelze v tuto chvíli zvládnout.
+### Co když potřebuji přidat text ze záložky do nové sekce?
+V cílovém dokumentu můžete vytvořit novou sekci a přidat tam text.

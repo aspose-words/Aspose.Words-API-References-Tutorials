@@ -51,7 +51,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.SetMsWordVersion.docx");
 
 ## Conclusie
 
-In deze handleiding hebben we uitgelegd hoe u een document kunt uploaden waarin een specifieke versie van MS Word wordt gespecificeerd met behulp van de Aspose.Words-bibliotheek voor .NET. Door de gegeven stappen te volgen en de meegeleverde code C#-bron te gebruiken, kunt u deze functionaliteit eenvoudig toepassen in uw C#-applicatie. Door een document met een gespecificeerde versie van MS Word te laden, kunt u een goede compatibiliteit en verwerking van het document in uw applicatie garanderen.
+In deze handleiding hebben we uitgelegd hoe u een document kunt uploaden waarin een specifieke versie van MS Word wordt gespecificeerd met behulp van de Aspose.Words-bibliotheek voor .NET. Door de gegeven stappen te volgen en de meegeleverde code C#-bron te gebruiken, kunt u deze functionaliteit eenvoudig toepassen in uw C#-applicatie. Door een document met een gespecificeerde versie van MS Word te laden, kunt u een goede compatibiliteit en verwerking van het document in uw toepassing garanderen.
 
 
 ### Veelgestelde vragen

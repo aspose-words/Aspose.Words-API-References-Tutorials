@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Posizionamento delle caselle di testo
 
- Controllare la posizione delle caselle di testo è fondamentale per ottenere il layout desiderato. È possibile impostare la posizione utilizzando`left` E`top` proprietà. Ad esempio:
+ Controllare la posizione delle caselle di testo è fondamentale per ottenere il layout desiderato. È possibile impostare la posizione utilizzando`left`E`top` proprietà. Ad esempio:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ In questa guida, abbiamo esplorato il processo di miglioramento del contenuto vi
 
 ### Come posso ridimensionare una casella di testo?
 
- Per ridimensionare una casella di testo, puoi regolarne le proprietà di larghezza e altezza utilizzando il comando`width` E`height` attributi.
+ Per ridimensionare una casella di testo, puoi regolarne le proprietà di larghezza e altezza utilizzando il comando`width`E`height` attributi.
 
 ### Posso ruotare una casella di testo?
 
@@ -106,7 +106,7 @@ In questa guida, abbiamo esplorato il processo di miglioramento del contenuto vi
 
 ### Come faccio ad aggiungere bordi a una casella di testo?
 
- Puoi aggiungere bordi a una casella di testo utilizzando il comando`textbox.border` proprietà e personalizzandone l'aspetto.
+ Puoi aggiungere bordi a una casella di testo utilizzando il comando`textbox.border` proprietà e personalizzarne l'aspetto.
 
 ### Posso incorporare collegamenti ipertestuali all'interno di una casella di testo?
 

@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Nahradit`"original_document.docx"` a`"modified_document.docx"` s cestami k vašim vlastním dokumentům.
+ Nahradit`"original_document.docx"`a`"modified_document.docx"` s cestami k vašim vlastním dokumentům.
 
 ## Krok 2: Porovnejte dokumenty
 

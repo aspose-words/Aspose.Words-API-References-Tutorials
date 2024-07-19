@@ -19,7 +19,7 @@ Words Processing with Markdown zapewnia kompleksowe źródło wiedzy, jak pracow
 | [Kod wbudowany](./inline-code/) | Dowiedz się, jak wstawić kod za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Automatyczne połączenie](./autolink/) | Dowiedz się, jak wstawić autolink za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Połączyć](./link/) | Dowiedz się, jak wstawiać linki za pomocą Aspose.Words dla .NET. Przewodnik krok po kroku. |
-| [Obraz](./image/) | Dowiedz się, jak wstawić i dostosować obraz za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
+| [Obraz](./image/) | Dowiedz się, jak dodawać obrazy do dokumentów za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Błyskawicznie wzbogacaj swoje dokumenty o elementy wizualne. |
 | [Linia pozioma](./horizontal-rule/) | Dowiedz się, jak wstawić linię poziomą za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Nagłówek](./heading/) | Dowiedz się, jak używać nagłówków w Aspose.Words for .NET Przewodnik krok po kroku. |
 | [Nagłówek setekstu](./setext-heading/) | Dowiedz się, jak używać nagłówków Setext do formatowania dokumentów za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
@@ -27,8 +27,8 @@ Words Processing with Markdown zapewnia kompleksowe źródło wiedzy, jak pracow
 | [Kodeks Ogrodzony](./fenced-code/) | Dowiedz się, jak korzystać z funkcji kodu chronionego w Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Cytat](./quote/) | Dowiedz się, jak korzystać z cytatów w Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Lista punktowana](./bulleted-list/) | Dowiedz się, jak utworzyć listę punktowaną za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
-| [Uporządkowana lista](./ordered-list/) | Dowiedz się, jak utworzyć uporządkowaną listę za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
-| [Tabela](./table/) | Dowiedz się, jak utworzyć tabelę za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
+| [Uporządkowana lista](./ordered-list/) | Dowiedz się, jak tworzyć uporządkowane listy w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Idealny do automatyzacji tworzenia dokumentów. |
+| [Tabela](./table/) | Dowiedz się, jak tworzyć i dostosowywać tabele w Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny do generowania uporządkowanych i atrakcyjnych wizualnie dokumentów. |
 | [Przeczytaj dokument Markdown](./read-markdown-document/) | Dowiedz się, jak czytać dokument przeceny za pomocą Aspose.Words dla .NET Przewodnik krok po kroku. |
 | [Podkreśla](./emphases/) | Dowiedz się, jak używać wyróżnień (pogrubienie i kursywa) w Aspose.Words dla .NET Przewodnik krok po kroku. |
-| [Użyj źródła ostrzeżenia](./use-warning-source/) | Dowiedz się, jak korzystać ze źródła ostrzeżeń w Aspose.Words dla .NET. Przewodnik krok po kroku. |
+| [Użyj źródła ostrzeżenia](./use-warning-source/) | Opanuj Aspose.Words dla .NET dzięki temu przewodnikowi krok po kroku dotyczącemu używania klasy WarningSource do obsługi ostrzeżeń Markdown. Idealny dla programistów C#. |

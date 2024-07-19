@@ -11,7 +11,7 @@ url: /el/python-net/document-splitting-and-formatting/combine-clone-documents/
 
 ## Εγκατάσταση του Aspose.Words
 
- Πριν βουτήξουμε στις λεπτομέρειες, πρέπει να ρυθμίσετε το Aspose.Words για Python. Μπορείτε να το κατεβάσετε και να το εγκαταστήσετε χρησιμοποιώντας τον παρακάτω σύνδεσμο:[Κατεβάστε το Aspose.Words για Python](https://releases.aspose.com/words/python/). 
+Πριν βουτήξουμε στις λεπτομέρειες, πρέπει να ρυθμίσετε το Aspose.Words για Python. Μπορείτε να το κατεβάσετε και να το εγκαταστήσετε χρησιμοποιώντας τον παρακάτω σύνδεσμο:[Κατεβάστε το Aspose.Words για Python](https://releases.aspose.com/words/python/). 
 
 ## Συνδυασμός Εγγράφων
 
@@ -127,7 +127,7 @@ doc.save("formatted_document.docx")
  Χρησιμοποιήστε το`range.replace()` μέθοδος μαζί με τις κατάλληλες επιλογές για την αποτελεσματική εύρεση και αντικατάσταση κειμένου.
 
 ### Υποστηρίζει το Aspose.Words την τροποποίηση μορφοποίησης;
-Οπωσδήποτε, μπορείτε να τροποποιήσετε τη μορφοποίηση χρησιμοποιώντας μεθόδους όπως`run.font.size` και`run.font.bold`.
+Οπωσδήποτε, μπορείτε να τροποποιήσετε τη μορφοποίηση χρησιμοποιώντας μεθόδους όπως`run.font.size`και`run.font.bold`.
 
 ### Πού μπορώ να έχω πρόσβαση στην τεκμηρίωση του Aspose.Words;
  Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση στο[Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).

@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Vložte OLE objekt jako ikonu
- Použijte Tvůrce dokumentů`InsertOleObjectAsIcon`metoda pro vložení objektu OLE jako ikony do dokumentu. Zadejte cestu k souboru OLE, příznak zobrazení, cestu k ikoně a název vloženého objektu.
+ Použijte Tvůrce dokumentů`InsertOleObjectAsIcon` metoda pro vložení objektu OLE jako ikony do dokumentu. Zadejte cestu k souboru OLE, příznak zobrazení, cestu k ikoně a název vloženého objektu.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### Otázka: Jak vytvořit nový dokument a generátor dokumentů v Aspose.Words pro .NET?
 
- Odpověď: Nový dokument můžete vytvořit pomocí`Document` třídu a tvůrce dokumentů pomocí`DocumentBuilder` třída. Zde je příklad:
+ Odpověď: Můžete vytvořit nový dokument pomocí`Document` třídu a tvůrce dokumentů pomocí`DocumentBuilder`třída. Zde je příklad:
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### Q. Jak uložit dokument s objektem OLE vloženým jako ikona?
 
- A: Použijte dokument`Save` způsob uložení dokumentu do souboru. Zde je příklad:
+ A: Použijte dokument`Save`způsob uložení dokumentu do souboru. Zde je příklad:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

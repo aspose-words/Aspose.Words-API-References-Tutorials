@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Mã này tạo ra một thể hiện của`HtmlSaveOptions`và thiết lập`ExportTextInputFormFieldAsText` tùy chọn để`true` để xuất các trường biểu mẫu nhập văn bản dưới dạng văn bản thuần túy. Hơn nữa, nó chỉ định thư mục nơi hình ảnh được trích xuất sẽ được lưu.
+ Mã này tạo ra một thể hiện của`HtmlSaveOptions` và thiết lập`ExportTextInputFormFieldAsText` tùy chọn để`true` để xuất các trường biểu mẫu nhập văn bản dưới dạng văn bản thuần túy. Hơn nữa, nó chỉ định thư mục nơi hình ảnh được trích xuất sẽ được lưu.
 
 ## Bước 4: Chuyển đổi và lưu tài liệu sang HTML
 

@@ -21,7 +21,7 @@ Aspose.Words'ü projenizde kullanmak için gerekli referansları eklemeniz gerek
 Alanları dönüştürebilmeniz için önce dönüştürülecek alanları içeren belgeyi yüklemeniz gerekir. Belgeyi içeren dizinin doğru yolunu belirttiğinizden emin olun. Belgeyi şu şekilde yükleyebilirsiniz:
 
 ```csharp
-// Belgeler dizininin yolu.
+//Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Belgeyi yükleyin.
@@ -56,7 +56,7 @@ Yedekleme için doğru yolu ve dosya adını belirttiğinizden emin olun.
 ### Aspose.Words for .NET kullanarak Paragraftaki Alanları Dönüştürme için kaynak kodu örneği
 
 ```csharp
-// Belgeler dizininin yolu.
+//Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Belgeyi yükleyin.

@@ -2,101 +2,100 @@
 title: PDF 문서의 이스케이프 URI
 linktitle: PDF 문서의 이스케이프 URI
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 PDF 문서에서 URI를 이스케이프하는 방법에 대한 단계별 가이드입니다.
+description: .NET용 Aspose.Words를 사용하여 PDF에서 URI를 이스케이프하는 방법을 알아보세요. 이 자세한 가이드는 프로세스를 단계별로 안내합니다.
 type: docs
 weight: 10
 url: /ko/net/programming-with-pdfsaveoptions/escape-uri/
 ---
+## 소개
 
-이 문서에서는 .NET용 Aspose.Words를 사용하여 PDF 문서에서 URI를 이스케이프하는 방법에 대한 단계별 가이드를 제공합니다. 코드의 각 부분을 자세히 설명하겠습니다. 이 튜토리얼이 끝나면 문서에 이스케이프된 Uri가 포함된 하이퍼링크를 삽입하는 방법을 이해할 수 있을 것입니다.
+안녕하세요! .NET용 Aspose.Words를 사용하여 Word 문서를 PDF로 저장할 때 URI를 처리하는 방법이 궁금하신가요? 당신은 바로 이곳에 있습니다! 오늘은 PDF 문서의 URI 이스케이프에 대해 자세히 알아보고 문서가 변환될 때 URI가 올바르게 작동하는지 확인하겠습니다. 각 개념을 확실히 파악하면서 단계별로 이 여정을 함께 시작해 보세요.
 
-시작하기 전에 프로젝트에 Aspose.Words for .NET 라이브러리를 설치하고 구성했는지 확인하세요. Aspose 웹사이트에서 라이브러리와 설치 지침을 찾을 수 있습니다.
+## 전제조건
 
-## 1단계: 문서 디렉터리 정의
+시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
- 시작하려면 문서가 있는 디렉터리의 경로를 정의해야 합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+1.  .NET용 Aspose.Words: 최신 버전인지 확인하세요. 당신은 그것을 다운로드 할 수 있습니다[여기](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio 또는 기타 .NET 개발 환경.
+3. C#에 대한 기본 지식: 이 자습서에서는 사용자가 C# 프로그래밍에 대한 기본 지식을 가지고 있다고 가정합니다.
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져와야 합니다. 이는 Aspose.Words 기능에 액세스하는 데 중요합니다.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+좋습니다. 프로세스를 소화 가능한 단계로 나누어 보겠습니다. 따라하시면 곧 URI 탈출 전문가가 되실 것입니다!
+
+## 1단계: 문서 디렉토리 설정
+
+코드를 살펴보기 전에 문서 디렉터리 경로를 설정하세요. 여기에 파일이 저장됩니다.
+
+```csharp
+// 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 2단계: 문서 및 DocumentBuilder 만들기
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"`PDF 문서를 저장하려는 실제 경로를 사용하세요.
 
- 다음으로 새 항목을 만들어야 합니다.`Document` 객체와`DocumentBuilder` 문서를 빌드하는 개체입니다.
+## 2단계: 새 문서 만들기
+
+다음으로 Aspose.Words를 사용하여 새 문서를 만듭니다. 이 문서는 하이퍼링크 삽입을 위한 캔버스 역할을 합니다.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3단계: 이스케이프된 Uri를 사용하여 하이퍼링크 삽입
+ 여기,`Document` 새 Word 문서입니다.`DocumentBuilder` 문서 생성 과정을 단순화하는 도우미 클래스입니다.
 
- 사용`InsertHyperlink` 의 방법`DocumentBuilder` 문서에 하이퍼링크를 삽입하는 개체입니다. Uri는 다음을 사용하여 이스케이프해야 합니다.`Uri.EscapeUriString` 형식 오류를 방지하는 기능입니다.
+## 3단계: 하이퍼링크 삽입
+
+이제 문서에 하이퍼링크를 삽입해 보겠습니다. 이 하이퍼링크는 URI 이스케이프 프로세스의 초점이 됩니다.
 
 ```csharp
-builder.InsertHyperlink("Testlink",
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), 거짓);
-builder. Writen();
-builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"),
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), 거짓);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
 ```
+
+ 이 줄에서는`"Testlink"` 하이퍼링크의 표시 텍스트입니다.`"https://www.google.com/search?q= aspose"` URL입니다. 그만큼`false` 매개변수는 링크가 하이퍼링크로 형식화되어서는 안 된다는 것을 나타냅니다(즉, 밑줄이나 파란색으로 표시되지 않습니다).
 
 ## 4단계: 문서를 PDF로 저장
 
- 마지막으로 다음을 사용하여 문서를 PDF로 저장할 수 있습니다.`Save` 의 방법`Document` 물체. 출력 파일 이름을 지정합니다.
+마지막으로 문서를 PDF로 저장합니다. Aspose.Words가 PDF 출력에서 URI를 이스케이프 처리하는 곳입니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-그게 다야 ! Aspose.Words for .NET을 사용하여 문서에 이스케이프된 Uri가 포함된 하이퍼링크를 성공적으로 삽입했습니다.
-
-### .NET용 Aspose.Words를 사용하여 이스케이프하는 Uri의 샘플 소스 코드
-
-
-```csharp
-
-	// 문서 디렉터리의 경로입니다.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHyperlink("Testlink", 
-		"https://www.google.com/search?q=%2Fthe%20test", 거짓);
-	builder.Writeln();
-	builder.InsertHyperlink("https:// www.google.com/search?q=%2Fthe%20test",
-		"https://www.google.com/search?q=%2Fthe%20test", 거짓);
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");    
-  
-```
+ 이 줄은 파일 이름을 사용하여 지정된 디렉터리에 문서를 저장합니다.`WorkingWithPdfSaveOptions.EscapeUri.pdf`.
 
 ## 결론
 
-이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 PDF 문서에서 URI를 이스케이프하는 방법을 다루었습니다. URI를 이스케이프하면 형식 오류를 방지하고 하이퍼링크가 PDF 문서에서 올바르게 해석되고 표시되는지 확인할 수 있습니다. 이스케이프된 URI가 포함된 하이퍼링크를 PDF 문서에 삽입하려면 설명된 단계를 따르세요. 꼭 탈출하세요.
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서를 PDF로 저장할 때 URI를 이스케이프하는 방법을 배웠습니다. 이 프로세스를 통해 결과 PDF에서 하이퍼링크가 작동하고 올바른 형식으로 유지됩니다. 
 
-### 자주 묻는 질문
+작지만 중요한 기술을 익히면 문서의 품질과 기능을 크게 향상시킬 수 있다는 점을 기억하십시오. 즐거운 코딩하세요!
 
-#### Q: PDF 문서의 이스케이프 URI는 무엇이며 왜 중요한가요?
-A: PDF 문서의 이스케이프 URI는 형식 오류를 방지하기 위해 URL의 특수 문자를 이스케이프 시퀀스로 변환하는 방법을 나타냅니다. URL의 특수 문자로 인해 URL 구조가 혼란스러워지고 해석이 잘못되거나 잘못된 렌더링이 발생할 수 있으므로 이는 중요합니다. 특수 문자를 이스케이프함으로써 URL이 PDF 문서에서 올바르게 해석되고 표시되도록 보장합니다.
+## FAQ
 
-#### Q: .NET용 Aspose.Words를 사용하여 PDF 문서의 URI를 이스케이프하려면 어떻게 해야 합니까?
-A: .NET용 Aspose.Words를 사용하여 PDF 문서에서 URI를 이스케이프하려면 다음 단계를 따르세요.
+### .NET용 Aspose.Words란 무엇입니까?
 
- 교체하여 문서가 있는 디렉토리 경로를 설정하십시오.`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로로.
+Aspose.Words for .NET은 개발자가 .NET 애플리케이션에서 Word 문서를 생성, 조작 및 변환할 수 있는 강력한 라이브러리입니다.
 
- 새 인스턴스를 생성합니다.`Document` 수업과`DocumentBuilder` 문서를 빌드하는 개체입니다.
+### PDF에서 URI 이스케이프가 중요한 이유는 무엇입니까?
 
- 사용`InsertHyperlink` 의 방법`DocumentBuilder` 문서에 하이퍼링크를 삽입하는 개체입니다. 다음을 사용하여 URI를 이스케이프해야 합니다.`Uri.EscapeUriString` 형식 오류를 방지하는 기능입니다.
+URI 이스케이프는 URL의 특수 문자가 올바르게 해석되어 링크가 끊어지는 것을 방지하고 의도한 대로 작동하도록 보장합니다.
 
- 사용`Save` 의 방법`Document` 출력 파일의 이름을 지정하여 문서를 PDF 형식으로 저장하는 개체입니다.
+### .NET용 Aspose.Words에서 다른 유형의 링크를 사용할 수 있나요?
 
-#### Q: PDF 문서에서 URI를 이스케이프하면 어떤 이점이 있나요?
-A: PDF 문서에서 URI 이스케이프를 수행하면 다음과 같은 이점이 있습니다.
+전적으로! Aspose.Words는 내부 문서 링크, 북마크, 외부 URL을 포함한 다양한 유형의 링크를 지원합니다.
 
-형식 오류 방지: URI 이스케이프는 URL의 특수 문자로 인해 발생하는 형식 오류를 방지하여 URL이 PDF 문서에서 올바르게 해석되고 표시되도록 합니다.
+### .NET용 Aspose.Words의 무료 평가판을 어떻게 받을 수 있나요?
 
-PDF 리더와의 호환성: 이스케이프된 URI는 일반적으로 PDF 리더에서 잘 지원되므로 더 나은 호환성과 일관된 사용자 경험을 보장합니다.
+ 무료 평가판을 받을 수 있습니다.[여기](https://releases.aspose.com/).
 
-#### Q: URI에서 어떤 특수 문자를 이스케이프해야 합니까?
- A: URI에서 이스케이프해야 하는 특수 문자는 공백, <, >, ", #, %, {, },|, \, ^, ~, [, ], `, ;, /, ?, :, @, =, &, $, +, ,, [, ], and !.
+### .NET용 Aspose.Words에 대한 자세한 문서는 어디서 찾을 수 있나요?
+
+ 자세한 문서를 찾을 수 있습니다[여기](https://reference.aspose.com/words/net/).

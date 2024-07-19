@@ -118,7 +118,7 @@ Document document = new Document(txtFilePath, loadOptions);
 
 Aspose.Words for Java 提供免费试用，但若要延长使用时间并获得完整功能，您可能需要购买许可证。请访问其网站了解定价详情。
 
-#### Aspose.Words for Java 支持哪些其他文档格式？
+#### Aspose.Words for Java 还支持哪些其他文档格式？
 
 Aspose.Words for Java 支持多种文档格式，包括 DOCX、PDF、ODT 等。查看其文档以获取完整列表。
 

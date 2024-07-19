@@ -15,7 +15,7 @@ En este ejemplo, le mostraremos cómo dividir un documento de Word en secciones 
 Para comenzar, necesitamos especificar el directorio de su documento y cargar el documento en un objeto Documento. Así es cómo:
 
 ```csharp
-// Ruta al directorio de documentos.
+//Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
@@ -84,7 +84,7 @@ No dude en explorar otras potentes funciones que ofrece Aspose.Words para .NET p
 Sí, puede personalizar los criterios de división según sus necesidades específicas. Además de los saltos de sección, puede dividir el documento en función de otros elementos, como encabezados, marcadores o contenido específico, utilizando las diversas funciones y métodos proporcionados por Aspose.Words para .NET.
 
 #### P2: ¿Es posible volver a fusionar las secciones en un solo documento?
- Sí, puede fusionar las secciones separadas nuevamente en un solo documento importando y combinando las secciones de varios documentos usando el`ImportNode` y`Sections.Add` métodos. Esto le permite revertir el proceso de división y reconstruir el documento original.
+ Sí, puede fusionar las secciones separadas nuevamente en un solo documento importando y combinando las secciones de varios documentos usando el`ImportNode`y`Sections.Add` métodos. Esto le permite revertir el proceso de división y reconstruir el documento original.
 
 #### P3: ¿Existe alguna limitación en la cantidad de secciones que se pueden dividir usando la función "Por secciones"?
 La cantidad de secciones que se pueden dividir usando la función "Por secciones" depende de las capacidades de Aspose.Words para .NET y de los recursos disponibles del sistema. En general, admite la división de documentos con una gran cantidad de secciones, pero los documentos extremadamente largos o una cantidad muy alta de secciones pueden requerir recursos del sistema y tiempo de procesamiento adicionales.

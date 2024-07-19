@@ -17,7 +17,7 @@ url: /ko/java/document-converting/converting-documents-images/
 코딩 부분을 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
 - Java 개발 환경: 시스템에 JDK(Java Development Kit)가 설치되어 있어야 합니다.
-- Aspose.Words for Java: 다음에서 Aspose.Words for Java 라이브러리를 다운로드하고 설정하세요.[Aspose 웹사이트](https://releases.aspose.com/words/java/).
+- Aspose.Words for Java: 다음에서 Aspose.Words for Java 라이브러리를 다운로드하고 설정하세요.[Aspose 웹 사이트](https://releases.aspose.com/words/java/).
 
 ## Java 프로젝트 설정
 
@@ -66,7 +66,7 @@ Aspose.Words for Java를 사용하면 문서를 Java의 이미지로 쉽게 변�
  이미지 해상도를 설정하려면`setResolution` 의 방법`ImageSaveOptions` 원하는 해상도를 DPI(인치당 도트 수) 단위로 지정합니다.
 
 ### 문서의 특정 페이지를 이미지로 변환할 수 있나요?
- 예, 다음을 사용하여 페이지 범위를 지정할 수 있습니다.`setPageCount` 그리고`setPageIndex` 방법`ImageSaveOptions` 특정 페이지를 이미지로 변환합니다.
+ 예, 다음을 사용하여 페이지 범위를 지정할 수 있습니다.`setPageCount`그리고`setPageIndex` 방법`ImageSaveOptions` 특정 페이지를 이미지로 변환합니다.
 
 ### Aspose.Words for Java는 일괄 문서 변환에 적합합니까?
 전적으로! Aspose.Words for Java를 사용하여 여러 문서를 이미지로 효율적으로 일괄 변환할 수 있습니다.

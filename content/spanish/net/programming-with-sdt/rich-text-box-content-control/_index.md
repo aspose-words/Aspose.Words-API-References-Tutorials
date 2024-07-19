@@ -17,7 +17,7 @@ Para seguir este tutorial, necesita tener lo siguiente:
 - Conocimientos básicos de C# y procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,7 +43,7 @@ para.Runs.Add(run);
 ```
 
 ## Paso 4: agregue el contenido de texto enriquecido al control de contenido
-Agregue el párrafo con el contenido de texto enriquecido al`ChildNodes` colección del control de contenido del cuadro de texto enriquecido.
+ Agregue el párrafo con el contenido de texto enriquecido al`ChildNodes` colección del control de contenido del cuadro de texto enriquecido.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);

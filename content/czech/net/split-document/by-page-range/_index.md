@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Name_of_large_document.docx");
 
 Nezapomeňte nahradit „VAŠE_DOKUMENTY_DIRECTORY“ skutečnou cestou k adresáři vašich dokumentů a „Name_of_large_document.docx“ názvem vašeho velkého souboru aplikace Word.
 
-## Krok 2: Extrahování části dokumentu
+## Krok 2: Rozbalení části dokumentu
  Nyní, když jsme načetli dokument, můžeme extrahovat konkrétní část pomocí`ExtractPages` funkce s požadovaným rozsahem stránek. Jak na to:
 
 ```csharp

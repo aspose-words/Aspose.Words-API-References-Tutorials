@@ -31,14 +31,14 @@ Document doc = new Document();
 Paragraph para = new Paragraph(doc);
 ```
 
-## Krok 4: Vstupte do sekce dokumentu
+## Krok 4: Otevřete sekci dokumentů
  Chcete-li přidat odstavec do dokumentu, musíme přistupovat k poslední části dokumentu pomocí`LastSection` vlastnictví.
 
 ```csharp
 Section section = doc.LastSection;
 ```
 
-## Krok 5: Přidejte do dokumentu uzel odstavce
+## Krok 5: Přidejte uzel odstavce do dokumentu
  Nyní, když máme sekci dokumentu, můžeme přidat uzel odstavce do sekce pomocí`AppendChild` metoda na sekci`Body` vlastnictví.
 
 ```csharp
@@ -78,11 +78,11 @@ Odpověď: Uzel odstavce v dokumentu XML se používá k reprezentaci odstavce t
 
 #### Otázka: Jak přidat uzel odstavce do existujícího dokumentu XML?
 
- A: Chcete-li přidat uzel odstavce do existujícího dokumentu XML, můžete použít`appendChild`metoda pro přidání uzel odstavce jako potomka jiného prvku v dokumentu XML. Můžete jej například přidat jako potomka kořenového prvku dokumentu.
+ A: Chcete-li přidat uzel odstavce do existujícího dokumentu XML, můžete použít`appendChild` metoda pro přidání uzel odstavce jako potomka jiného prvku v dokumentu XML. Můžete jej například přidat jako potomka kořenového prvku dokumentu.
 
 #### Otázka: Jak definovat obsah uzlu odstavce?
 
- A: Chcete-li nastavit obsah uzlu odstavce, můžete použít`createTextNode` k vytvoření textového uzlu obsahujícího požadovaný obsah, poté použijte metodu`appendChild` metoda přidat tento textový uzel jako potomka uzlu odstavce.
+ A: Chcete-li nastavit obsah uzlu odstavce, můžete použít`createTextNode` k vytvoření textového uzlu obsahujícího požadovaný obsah, poté použijte metodu`appendChild`metoda přidat tento textový uzel jako potomka uzlu odstavce.
 
 #### Otázka: Jak naformátuji text v uzlu odstavce?
 

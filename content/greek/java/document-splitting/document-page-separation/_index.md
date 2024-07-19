@@ -14,7 +14,7 @@ url: /el/java/document-splitting/document-page-separation/
 
 Πριν βουτήξουμε στον κώδικα, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
-- Εγκαταστάθηκε το Java Development Kit (JDK).
+- Εγκατεστημένο Java Development Kit (JDK).
 -  Βιβλιοθήκη Aspose.Words for Java (Μπορείτε να την κατεβάσετε από[εδώ](https://releases.aspose.com/words/java/))
 - Ολοκληρωμένο περιβάλλον ανάπτυξης (IDE) της επιλογής σας (Eclipse, IntelliJ IDEA, κ.λπ.)
 
@@ -80,7 +80,7 @@ for (int i = 0; i < pages.size(); i++) {
 
 Ναι, το Aspose.Words υποστηρίζει διάφορες μορφές εγγράφων, συμπεριλαμβανομένων των DOC, RTF, HTML και άλλων.
 
-### Είναι το Aspose.Words για Java δωρεάν στη χρήση;
+### Είναι δωρεάν η χρήση του Aspose.Words για Java;
 
 Το Aspose.Words for Java είναι μια εμπορική βιβλιοθήκη, αλλά προσφέρει μια δωρεάν δοκιμαστική έκδοση. Μπορείτε να ελέγξετε τον ιστότοπό τους για λεπτομέρειες τιμολόγησης και πληροφορίες αδειοδότησης.
 

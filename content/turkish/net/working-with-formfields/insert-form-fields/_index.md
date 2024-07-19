@@ -14,7 +14,7 @@ Bu adım adım eğitimde, Aspose.Words for .NET kullanarak form alanlarını, ö
 
 ## Adım 1: Document ve DocumentBuilder Nesnelerini Başlatma
 
- İlk olarak, başlat`Document` Ve`DocumentBuilder` nesneler:
+ İlk olarak, başlat`Document`Ve`DocumentBuilder` nesneler:
 
 ```csharp
 Document doc = new Document();

@@ -125,7 +125,7 @@ masz to! Pomyślnie utworzyłeś listę wielopoziomową w dokumencie programu Wo
  Tak, możesz kontynuować numerację za pomocą przycisku`ListFormat.List` właściwość, aby połączyć się z istniejącą listą.
 
 ### Jak dynamicznie zmieniać poziom wcięcia?
- Możesz dynamicznie zmieniać poziom wcięcia za pomocą`ListIndent` I`ListOutdent` metody według potrzeb.
+ Możesz dynamicznie zmieniać poziom wcięcia za pomocą`ListIndent`I`ListOutdent` metody według potrzeb.
 
 ### Czy mogę tworzyć listy wielopoziomowe w innych formatach dokumentów, takich jak PDF?
 Tak, Aspose.Words obsługuje zapisywanie dokumentów w różnych formatach, w tym PDF, zachowując formatowanie.

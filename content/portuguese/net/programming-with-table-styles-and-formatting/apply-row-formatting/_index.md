@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Etapa 4: insira a célula e vá para o formato de linha
-Agora podemos inserir uma célula na tabela e acessar o formato de linha dessa célula usando o construtor de documentos`InsertCell()` e`RowFormat` métodos.
+Agora podemos inserir uma célula na tabela e acessar o formato de linha dessa célula usando o construtor de documentos`InsertCell()`e`RowFormat` métodos.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Etapa 5: definir a altura da linha
- Para definir a altura da linha, usamos o`Height` e`HeightRule` propriedades do formato de linha. Neste exemplo, definimos uma altura de linha de 100 pontos e usamos o`Exactly` regra.
+ Para definir a altura da linha, usamos o`Height`e`HeightRule` propriedades do formato de linha. Neste exemplo, definimos uma altura de linha de 100 pontos e usamos o`Exactly` regra.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Passo 6: Definir a formatação da tabela
- Algumas propriedades de formatação podem ser definidas na própria tabela e aplicadas a todas as linhas da tabela. Neste exemplo, definimos as propriedades da margem da tabela usando o método`LeftPadding`, `RightPadding`, `TopPadding` e`BottomPadding` propriedades.
+ Algumas propriedades de formatação podem ser definidas na própria tabela e aplicadas a todas as linhas da tabela. Neste exemplo, definimos as propriedades da margem da tabela usando o método`LeftPadding`, `RightPadding`, `TopPadding`e`BottomPadding` propriedades.
 
 ```csharp
 table. LeftPadding = 30;

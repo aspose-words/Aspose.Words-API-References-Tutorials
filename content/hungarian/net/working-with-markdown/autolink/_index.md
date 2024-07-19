@@ -45,7 +45,7 @@ Végül elmenthetjük a dokumentumot a kívánt formátumban.
 // Használjon dokumentumkészítőt, hogy tartalmat adjon a dokumentumhoz.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Hiperhivatkozás beszúrása.
+//Hiperhivatkozás beszúrása.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

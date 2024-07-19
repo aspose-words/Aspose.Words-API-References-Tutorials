@@ -1,6 +1,6 @@
 ---
-title: Infoga inline bild i Word-dokument
-linktitle: Infoga inline bild i Word-dokument
+title: Infoga inbyggd bild i Word-dokument
+linktitle: Infoga inbyggd bild i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du infogar inline-bilder i Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide med kodexempel och vanliga frågor och svar.
 type: docs

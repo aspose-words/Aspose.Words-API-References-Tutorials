@@ -22,7 +22,7 @@ Biraz kodlamayla ellerimizi kirletmeden önce ihtiyacımız olan her şeye sahip
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET kütüphanesini kullanmadan önce projenize gerekli ad alanlarını eklemeniz gerekir. Bu, kodunuza "Hey, bazı özel araçlar kullanmam gerekiyor, hadi onları getirelim" demeye benzer.
+Aspose.Words for .NET kütüphanesini kullanmadan önce projenize gerekli ad alanlarını eklemeniz gerekir. Bu, kodunuza "Hey, bazı özel araçlar kullanmam gerekiyor, hadi onları getirelim" demeye benziyor.
 
 ```csharp
 using Aspose.Words;
@@ -81,7 +81,7 @@ Aspose.Words ile belgeyi klonlamak çok kolay:
 
 Her şey yerli yerinde olduğundan, kodunuzu çalıştırıp sonuçları görmenin zamanı geldi:
 
-1.  Projenizi Oluşturun:`Build` menüyü seçin ve`Build Solution`. Hiçbir hata olmadığından emin olun.
+1. Projenizi Oluşturun:`Build` menüyü seçin ve`Build Solution`. Hiçbir hata olmadığından emin olun.
 2.  Projenizi Çalıştırın: Hit`F5` veya tıklayın`Start` Projenizi çalıştırmak için düğmesine basın. Her şey doğru ayarlanmışsa, belge dizininizde yeni bir kopyalanmış belge görünmelidir.
 
 ## Adım 6: Çıktıyı Doğrulayın
@@ -107,7 +107,7 @@ Kesinlikle! Aspose.Words for .NET çok çeşitli belge formatlarını destekler;
 
 ### Klonlanan belgede değişiklik yapabilir miyim?
 
-Elbette! Bir belgeyi kopyaladıktan sonra onu tıpkı diğer Word belgeleri gibi değiştirebilirsiniz. İhtiyacınız olan her şeyi metin, resim ekleyin, biçimlendirmeyi değiştirin.
+Elbette! Bir belgeyi kopyaladıktan sonra onu diğer Word belgeleri gibi işleyebilirsiniz. İhtiyacınız olan her şeyi metin, resim ekleyin, biçimlendirmeyi değiştirin.
 
 ### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
 

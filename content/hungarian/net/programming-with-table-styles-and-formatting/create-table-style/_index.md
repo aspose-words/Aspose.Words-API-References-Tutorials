@@ -53,7 +53,7 @@ tableStyle.TopPadding = 12;
 tableStyle.BottomPadding = 12;
 ```
 
-## 5. lépés: Alkalmazza a táblázat stílusát az asztalra
+## 5. lépés: Alkalmazza a táblázat stílusát a táblázatra
  Végül alkalmazzuk a táblázatra az általunk létrehozott táblázatstílust a`Style` az asztal tulajdonsága.
 
 ```csharp

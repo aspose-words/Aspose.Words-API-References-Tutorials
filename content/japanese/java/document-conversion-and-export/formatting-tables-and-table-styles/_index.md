@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でのテーブルとテーブル スタイルの書式設定
 linktitle: 表の書式設定と表スタイル
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java でテーブルをフォーマットし、テーブル スタイルを適用する方法を学びます。効果的なテーブル フォーマットのためのソース コードを含むステップ バイ ステップ ガイドを調べます。Aspose.Words を使用してドキュメント レイアウトを強化します。
+description: Aspose.Words for Java でテーブルをフォーマットし、テーブル スタイルを適用する方法を学びます。効果的なテーブル フォーマットのためのソース コード付きのステップ バイ ステップ ガイドを調べます。Aspose.Words を使用してドキュメント レイアウトを強化します。
 type: docs
 weight: 17
 url: /ja/java/document-conversion-and-export/formatting-tables-and-table-styles/
@@ -155,7 +155,7 @@ table.setTitle("Test title");
 table.setDescription("Test description");
 ```
 
-## ステップ10: セル間隔を許可する
+## ステップ10: セルの間隔を許可する
 
 セル間隔を許可し、テーブルのその値を設定します。
 

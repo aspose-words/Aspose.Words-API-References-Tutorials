@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## ขั้นตอนที่ 3: เข้าถึงตารางและตั้งชื่อและคำอธิบาย
- ตอนนี้คุณสามารถเข้าถึงตารางในเอกสารโดยใช้`GetChild()` วิธีการและ`Table` ระดับ. จากนั้นตั้งชื่อตารางและคำอธิบายโดยใช้`Title` และ`Description` คุณสมบัติ.
+ ตอนนี้คุณสามารถเข้าถึงตารางในเอกสารโดยใช้`GetChild()` วิธีการและ`Table` ระดับ. จากนั้นตั้งชื่อตารางและคำอธิบายโดยใช้`Title`และ`Description` คุณสมบัติ.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

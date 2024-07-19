@@ -2,13 +2,13 @@
 title: Kopiuj sekcję
 linktitle: Kopiuj sekcję
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: W tym samouczku dowiesz się, jak skopiować sekcję z dokumentu programu Word do innego dokumentu za pomocą Aspose.Words dla .NET.
+description: tym samouczku dowiesz się, jak skopiować sekcję z dokumentu programu Word do innego dokumentu za pomocą Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-section/copy-section/
 ---
 
-tym samouczku wyjaśnimy, jak skopiować sekcję z dokumentu programu Word do innego dokumentu za pomocą biblioteki Aspose.Words dla .NET. Kopiowanie sekcji umożliwia przeniesienie określonej sekcji z dokumentu źródłowego do dokumentu docelowego. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+W tym samouczku wyjaśnimy, jak skopiować sekcję z dokumentu programu Word do innego dokumentu za pomocą biblioteki Aspose.Words dla .NET. Kopiowanie sekcji umożliwia przeniesienie określonej sekcji z dokumentu źródłowego do dokumentu docelowego. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## Krok 3: Skopiuj sekcję do dokumentu docelowego
- Aby skopiować sekcję z dokumentu źródłowego do dokumentu docelowego, użyjemy metody`ImportNode`metodę importowania sekcji źródłowej i dodawania jej do dokumentu docelowego.
+ Aby skopiować sekcję z dokumentu źródłowego do dokumentu docelowego, użyjemy metody`ImportNode` metodę importowania sekcji źródłowej i dodawania jej do dokumentu docelowego.
 
 ```csharp
 // Pobierz sekcję źródłową
@@ -86,7 +86,7 @@ Odp.: Zanim zaczniesz, upewnij się, że masz następujące elementy:
 
 #### P: Jak ustawić katalog dokumentów w Aspose.Words dla .NET?
 
- O: Aby ustawić ścieżkę do katalogu zawierającego Twoje dokumenty, musisz ją zastąpić`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką. Oto jak to zrobić:
+O: Aby ustawić ścieżkę do katalogu zawierającego Twoje dokumenty, musisz ją zastąpić`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką. Oto jak to zrobić:
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### P: Jak załadować dokumenty źródłowe i docelowe w Aspose.Words dla .NET?
 
-O: Aby załadować dokument źródłowy do instancji`Document` klasa tzw`srcDoc` i utwórz pustą instancję`Document` klasa tzw`dstDoc` dla dokumentu docelowego możesz użyć następującego kodu:
+ O: Aby załadować dokument źródłowy do instancji`Document` klasa tzw`srcDoc` i utwórz pustą instancję`Document` klasa tzw`dstDoc` dla dokumentu docelowego możesz użyć następującego kodu:
 
 ```csharp
 // Załaduj dokument źródłowy

@@ -33,7 +33,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- यह कोड एक उदाहरण बनाता है`HtmlSaveOptions`और सेट करता है`ExportRoundtripInformation` विकल्प`true` निर्यात करते समय राउंडट्रिप जानकारी शामिल करने के लिए.
+ यह कोड एक उदाहरण बनाता है`HtmlSaveOptions` और सेट करता है`ExportRoundtripInformation` विकल्प`true` निर्यात करते समय राउंडट्रिप जानकारी शामिल करने के लिए.
 
 ## चरण 4: दस्तावेज़ को HTML में परिवर्तित करना और सहेजना
 

@@ -15,7 +15,7 @@ V tomto příkladu vám ukážeme, jak rozdělit dokument aplikace Word do samos
 Chcete-li začít, musíme zadat adresář vašeho dokumentu a načíst dokument do objektu Document. Zde je postup:
 
 ```csharp
-// Cesta k adresáři dokumentů.
+//Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
@@ -84,7 +84,7 @@ Neváhejte a prozkoumejte další výkonné funkce, které nabízí Aspose.Words
 Ano, kritéria rozdělení si můžete přizpůsobit podle svých konkrétních potřeb. Kromě zalomení oddílů můžete dokument rozdělit na základě dalších prvků, jako jsou nadpisy, záložky nebo konkrétní obsah, pomocí různých funkcí a metod poskytovaných Aspose.Words pro .NET.
 
 #### Q2: Je možné sloučit oddíly zpět do jednoho dokumentu?
- Ano, samostatné oddíly můžete sloučit zpět do jednoho dokumentu importováním a zkombinováním oddílů z více dokumentů pomocí`ImportNode` a`Sections.Add` metody. To vám umožní obrátit proces dělení a rekonstruovat původní dokument.
+ Ano, samostatné oddíly můžete sloučit zpět do jednoho dokumentu importováním a zkombinováním oddílů z více dokumentů pomocí`ImportNode`a`Sections.Add` metody. To vám umožní obrátit proces dělení a rekonstruovat původní dokument.
 
 #### Otázka 3: Existují nějaká omezení počtu sekcí, které lze rozdělit pomocí funkce „Podle sekcí“?
 Počet sekcí, které lze rozdělit pomocí funkce "Podle sekcí", závisí na možnostech Aspose.Words pro .NET a dostupných systémových prostředcích. Obecně podporuje rozdělování dokumentů s velkým počtem oddílů, ale extrémně dlouhé dokumenty nebo velmi vysoký počet oddílů mohou vyžadovat dodatečné systémové zdroje a dobu zpracování.

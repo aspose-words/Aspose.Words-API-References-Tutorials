@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Bước 3: Kiểm tra xem tài liệu đã được mã hóa chưa
 
- Chúng tôi sử dụng`IsEncrypted` tài sản của`FileFormatInfo`đối tượng để kiểm tra xem tài liệu có được mã hóa hay không. Thuộc tính này trả về`true` nếu tài liệu được mã hóa, nếu không nó sẽ trả về`false`. Chúng tôi hiển thị kết quả trong bảng điều khiển.
+ Chúng tôi sử dụng`IsEncrypted` tài sản của`FileFormatInfo` đối tượng để kiểm tra xem tài liệu có được mã hóa hay không. Thuộc tính này trả về`true` nếu tài liệu được mã hóa, nếu không nó sẽ trả về`false`. Chúng tôi hiển thị kết quả trong bảng điều khiển.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### Q: Làm thế nào để phát hiện định dạng tập tin?
- Bạn có thể dùng`DetectFileFormat` phương pháp của`FileFormatUtil`class để phát hiện thông tin định dạng tập tin. Trong ví dụ sau, chúng tôi giả sử rằng tài liệu được mã hóa có tên là "Encrypted.docx" và nằm trong thư mục tài liệu được chỉ định:
+ Bạn có thể dùng`DetectFileFormat` phương pháp của`FileFormatUtil` class để phát hiện thông tin định dạng tập tin. Trong ví dụ sau, chúng tôi giả sử rằng tài liệu được mã hóa có tên là "Encrypted.docx" và nằm trong thư mục tài liệu được chỉ định:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### Hỏi: Làm cách nào để kiểm tra xem tài liệu có được mã hóa hay không?
- Bạn có thể dùng`IsEncrypted` tài sản của`FileFormatInfo`đối tượng để kiểm tra xem tài liệu có được mã hóa hay không. Thuộc tính này trả về`true` nếu tài liệu được mã hóa, nếu không nó sẽ trả về`false`. Kết quả được hiển thị trong bảng điều khiển:
+ Bạn có thể dùng`IsEncrypted` tài sản của`FileFormatInfo` đối tượng để kiểm tra xem tài liệu có được mã hóa hay không. Thuộc tính này trả về`true` nếu tài liệu được mã hóa, nếu không nó sẽ trả về`false`. Kết quả được hiển thị trong bảng điều khiển:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

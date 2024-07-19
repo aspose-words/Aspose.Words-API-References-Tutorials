@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Byta ut`"original_document.docx"` och`"modified_document.docx"` med vägarna till dina egna dokument.
+ Byta ut`"original_document.docx"`och`"modified_document.docx"` med vägarna till dina egna dokument.
 
 ## Steg 2: Jämför dokument
 

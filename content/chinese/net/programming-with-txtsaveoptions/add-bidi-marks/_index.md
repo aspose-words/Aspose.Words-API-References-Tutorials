@@ -12,7 +12,7 @@ Aspose.Words for .NET 是一个功能强大的库，可用于在 C# 应用程序
 
 ## 了解 Aspose.Words 库
 
-在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。Aspose.Words 是一个流行的库，它使 Word 文档的文字处理变得简单而高效。它提供了广泛的功能来创建、编辑和操作 Word 文档，包括添加双向标记。
+在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。Aspose.Words 是一个流行的库，它使 Word 文档的文字处理变得简单而高效。它提供了用于创建、编辑和操作 Word 文档的各种功能，包括添加双向标记。
 
 ## 创建文档并添加内容
 

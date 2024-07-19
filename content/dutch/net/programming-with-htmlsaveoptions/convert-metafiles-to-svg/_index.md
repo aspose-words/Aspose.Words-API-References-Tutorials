@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Met deze code wordt een exemplaar gemaakt van`Document` En`DocumentBuilder` om het document op te bouwen. Het voegt een`<svg>` label met daarin een`<polygon>` element met attributen om de vorm en stijl van de SVG-afbeelding te definiëren.
+ Met deze code wordt een exemplaar gemaakt van`Document`En`DocumentBuilder` om het document op te bouwen. Het voegt een`<svg>` label met daarin een`<polygon>` element met attributen om de vorm en stijl van de SVG-afbeelding te definiëren.
 
 ## Stap 3: Stel HTML-opslagopties in
 

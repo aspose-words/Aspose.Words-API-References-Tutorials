@@ -19,7 +19,7 @@ Fitur Muat PDF Terenkripsi dari Aspose.Words untuk .NET memungkinkan Anda memuat
 Langkah pertama adalah memuat dokumen PDF terenkripsi ke dalam aplikasi Anda. Berikut cara melakukannya:
 
 ```csharp
-// Jalur ke direktori dokumen.
+//Jalur ke direktori dokumen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

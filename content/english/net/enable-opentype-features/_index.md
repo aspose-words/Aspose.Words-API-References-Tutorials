@@ -12,4 +12,4 @@ Learn how to enable OpenType features in your Word documents with Aspose.Words f
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Open Type Features](./open-type-features/) | Learn how to enable and use Open Type features in Aspose.Words for .NET |
+| [Open Type Features](./open-type-features/) | Learn how to enable OpenType features in Word documents using Aspose.Words for .NET with this detailed, step-by-step guide. |

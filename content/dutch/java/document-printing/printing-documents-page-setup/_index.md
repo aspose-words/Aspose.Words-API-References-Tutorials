@@ -75,7 +75,7 @@ In dit artikel hebben we onderzocht hoe u documenten kunt afdrukken met aangepas
 
 ### Hoe kan ik het papierformaat van mijn document wijzigen?
 
- Om het papierformaat van uw document te wijzigen, gebruikt u de`setPageWidth` En`setPageHeight` methoden van de`PageSetup` klasse en specificeer de gewenste afmetingen in punten.
+ Om het papierformaat van uw document te wijzigen, gebruikt u de`setPageWidth`En`setPageHeight` methoden van de`PageSetup` klasse en specificeer de gewenste afmetingen in punten.
 
 ### Kan ik meerdere exemplaren van een document afdrukken?
 

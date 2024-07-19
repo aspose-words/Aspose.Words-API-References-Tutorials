@@ -78,7 +78,7 @@ R: Antes de poder clonar un proyecto VBA a partir de un documento de Word, debe 
 
 #### P: ¿Cómo guardar el documento de destino con un proyecto VBA clonado?
 
-R: Para guardar el documento de destino con el proyecto VBA clonado, puede utilizar el`Save` método de la`Document` clase especificando la ruta de destino deseada y el nombre de archivo.
+R: Para guardar el documento de destino con el proyecto VBA clonado, puede utilizar el`Save` método de la`Document` clase especificando la ruta de destino deseada y el nombre del archivo.
 
 #### P: ¿Puedo usar Aspose.Words para .NET para manipular otros aspectos de los documentos de Word?
 

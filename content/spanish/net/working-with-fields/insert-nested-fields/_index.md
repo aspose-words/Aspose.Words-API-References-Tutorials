@@ -94,7 +94,7 @@ field. Update();
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-En este ejemplo, creamos un nuevo documento, insertamos saltos de página, movimos el cursor al pie de página y luego insertamos un campo anidado en el pie de página.
+En este ejemplo, creamos un documento nuevo, insertamos saltos de página, movimos el cursor al pie de página y luego insertamos un campo anidado en el pie de página.
 
 ### Preguntas frecuentes
 
@@ -112,11 +112,11 @@ R: El uso de campos anidados ofrece varias ventajas en un documento de Word con 
 
 #### P: ¿Puedo tener campos anidados de varios niveles en un documento de Word con Aspose.Words para .NET?
 
- R: Sí, es posible tener campos anidados de varios niveles en un documento de Word con Aspose.Words para .NET. Puede crear jerarquías complejas de campos anidados utilizando el`FieldStart.NextSibling` Método para agregar campos secundarios a campos principales existentes.
+R: Sí, es posible tener campos anidados de varios niveles en un documento de Word con Aspose.Words para .NET. Puede crear jerarquías complejas de campos anidados utilizando el`FieldStart.NextSibling` Método para agregar campos secundarios a campos principales existentes.
 
 #### P: ¿Cómo puedo personalizar las propiedades de los campos anidados en un documento de Word con Aspose.Words para .NET?
 
- R: Para personalizar las propiedades de los campos anidados en un documento de Word con Aspose.Words para .NET, puede acceder al correspondiente`FieldStart`objetos y modificar sus propiedades según sea necesario. Puede configurar opciones de formato, valores, cálculos, etc., de campos anidados para lograr el resultado deseado.
+ R: Para personalizar las propiedades de los campos anidados en un documento de Word con Aspose.Words para .NET, puede acceder al correspondiente`FieldStart` objetos y modificar sus propiedades según sea necesario. Puede configurar opciones de formato, valores, cálculos, etc., de campos anidados para lograr el resultado deseado.
 
 #### P: ¿La inserción de campos anidados afecta el rendimiento de los documentos de Word con Aspose.Words para .NET?
 

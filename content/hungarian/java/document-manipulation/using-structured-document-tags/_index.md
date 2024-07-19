@@ -233,7 +233,7 @@ A strukturált dokumentumcímkék (SDT) a dokumentumokon belüli tartalom rendsz
 
 Igen, stílusokat alkalmazhat a tartalomvezérlőkre, hogy testreszabhassa megjelenésüket a dokumentumban.
 
-### Lehetséges az SDT-t egyéni XML-adatokhoz kötni?
+### Lehetséges az SDT-t egyedi XML-adatokhoz kötni?
 
 Igen, az SDT-t egyéni XML-adatokhoz kötheti, lehetővé téve a dinamikus tartalomgenerálást és adatleképezést.
 

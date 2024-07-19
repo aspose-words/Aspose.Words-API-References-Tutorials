@@ -2,24 +2,40 @@
 title: Tentukan Properti Sumbu XY Dalam Bagan
 linktitle: Tentukan Properti Sumbu XY Dalam Bagan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menentukan properti sumbu XY dalam bagan menggunakan Aspose.Words untuk .NET. Opsi penyesuaian untuk sumbu X dan Y diperlihatkan.
+description: Pelajari cara menentukan properti sumbu XY dalam bagan menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk pengembang .NET.
 type: docs
 weight: 10
 url: /id/net/programming-with-charts/define-xyaxis-properties/
 ---
+## Perkenalan
 
-Tutorial ini menjelaskan cara menggunakan Aspose.Words untuk .NET untuk menentukan properti sumbu X dan Y dalam bagan. Kode sumber yang disediakan menunjukkan cara membuat bagan, menambahkan data seri, dan menyesuaikan properti sumbu.
+Bagan adalah alat yang ampuh untuk memvisualisasikan data. Saat Anda perlu membuat dokumen profesional dengan bagan dinamis, Aspose.Words for .NET adalah perpustakaan yang sangat berharga. Artikel ini akan memandu Anda melalui proses menentukan properti sumbu XY dalam bagan menggunakan Aspose.Words untuk .NET, menguraikan setiap langkah untuk memastikan kejelasan dan kemudahan pemahaman.
 
-## Langkah 1: Siapkan proyek
+## Prasyarat
 
-Pastikan Anda memiliki prasyarat berikut:
+Sebelum mendalami pengkodean, ada beberapa prasyarat yang perlu Anda miliki:
 
-- Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
-- Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
+1. Aspose.Words for .NET: Pastikan Anda memiliki perpustakaan Aspose.Words for .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Anda memerlukan lingkungan pengembangan terintegrasi (IDE) seperti Visual Studio.
+3. .NET Framework: Pastikan lingkungan pengembangan Anda diatur untuk pengembangan .NET.
+4. Pengetahuan Dasar C#: Panduan ini mengasumsikan Anda memiliki pemahaman dasar tentang pemrograman C#.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Impor Namespace
 
- Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
+Untuk memulainya, Anda perlu mengimpor namespace yang diperlukan dalam proyek Anda. Hal ini memastikan Anda memiliki akses ke semua kelas dan metode yang diperlukan untuk membuat dan memanipulasi dokumen dan bagan.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Kami akan membagi prosesnya menjadi beberapa langkah sederhana, masing-masing berfokus pada bagian tertentu dalam menentukan properti sumbu XY dalam bagan.
+
+## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
+
+ Pertama, Anda perlu menginisialisasi dokumen baru dan a`DocumentBuilder` obyek. Itu`DocumentBuilder` membantu dalam memasukkan konten ke dalam dokumen.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -29,48 +45,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Selanjutnya, masukkan bagan ke dalam dokumen menggunakan`InsertChart` metode`DocumentBuilder`. Dalam contoh ini, kita akan menyisipkan diagram area.
+## Langkah 2: Sisipkan Bagan
+
+Selanjutnya, Anda akan memasukkan bagan ke dalam dokumen. Dalam contoh ini, kita akan menggunakan bagan Area. Anda dapat menyesuaikan dimensi bagan sesuai kebutuhan.
 
 ```csharp
+// Sisipkan bagan
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Langkah 3: Tambahkan data seri ke bagan
+## Langkah 3: Hapus Seri Default dan Tambahkan Data Khusus
 
-Tambahkan data seri ke bagan. Dalam contoh ini, kita akan menambahkan lima titik data dengan tanggal dan nilai yang sesuai.
+Secara default, bagan akan memiliki beberapa rangkaian yang telah ditentukan sebelumnya. Kami akan menghapusnya dan menambahkan seri data khusus kami.
 
 ```csharp
 chart.Series.Clear();
 chart.Series.Add("Aspose Series 1",
-    new DateTime[]
-    {
-        new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-        new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-    },
-    new double[] { 640, 320, 280, 120, 150 });
+	new DateTime[]
+	{
+		new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
+		new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
+	},
+	new double[] { 640, 320, 280, 120, 150 });
 ```
 
-## Langkah 4: Sesuaikan properti sumbu X dan Y
+## Langkah 4: Tentukan Properti Sumbu X
 
- Untuk menyesuaikan properti sumbu X dan Y, akses`ChartAxis` objek yang terkait dengan grafik.
+Sekarang saatnya mendefinisikan properti sumbu X. Ini termasuk mengatur jenis kategori, menyesuaikan perpotongan sumbu, dan menyesuaikan tanda centang dan label.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
-ChartAxis yAxis = chart.AxisY;
-```
-
- Ubah properti dari`xAxis` Dan`yAxis`objek untuk mengatur opsi yang diinginkan untuk sumbu X dan Y. Dalam contoh ini, kami akan menunjukkan beberapa properti umum yang dapat disesuaikan.
-
-```csharp
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3;
+xAxis.CrossesAt = 3; //Diukur dalam satuan tampilan sumbu Y (ratusan).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 xAxis.TickLabelOffset = 200;
+```
 
+## Langkah 5: Tentukan Properti Sumbu Y
+
+Demikian pula, Anda akan mengatur properti untuk sumbu Y. Ini termasuk pengaturan posisi label centang, unit mayor dan minor, unit tampilan, dan penskalaan.
+
+```csharp
+ChartAxis yAxis = chart.AxisY;
 yAxis.TickLabelPosition = AxisTickLabelPosition.High;
 yAxis.MajorUnit = 100;
 yAxis.MinorUnit = 50;
@@ -79,78 +99,31 @@ yAxis.Scaling.Minimum = new AxisBound(100);
 yAxis.Scaling.Maximum = new AxisBound(700);
 ```
 
-## Langkah 5: Simpan dokumen
+## Langkah 6: Simpan Dokumen
 
- Terakhir, simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode`Document` obyek.
+Terakhir, simpan dokumen ke direktori yang Anda tentukan. Ini akan menghasilkan dokumen Word dengan bagan yang disesuaikan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-Ini menyelesaikan implementasi penentuan properti sumbu XY dalam bagan menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk Menentukan Properti XYAxis menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Sisipkan bagan
-	Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new DateTime[]
-		{
-			new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-			new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-		},
-		new double[] { 640, 320, 280, 120, 150 });
-	ChartAxis xAxis = chart.AxisX;
-	ChartAxis yAxis = chart.AxisY;
-	// Ubah sumbu X menjadi kategori dan bukan tanggal, sehingga semua titik akan ditempatkan dengan interval yang sama pada sumbu X.
-	xAxis.CategoryType = AxisCategoryType.Category;
-	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; //Diukur dalam satuan tampilan sumbu Y (ratusan).
-	xAxis.ReverseOrder = true;
-	xAxis.MajorTickMark = AxisTickMark.Cross;
-	xAxis.MinorTickMark = AxisTickMark.Outside;
-	xAxis.TickLabelOffset = 200;
-	yAxis.TickLabelPosition = AxisTickLabelPosition.High;
-	yAxis.MajorUnit = 100;
-	yAxis.MinorUnit = 50;
-	yAxis.DisplayUnit.Unit = AxisBuiltInUnit.Hundreds;
-	yAxis.Scaling.Minimum = new AxisBound(100);
-	yAxis.Scaling.Maximum = new AxisBound(700);
-	doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
-```
-
 ## Kesimpulan
 
-Dalam tutorial ini, Anda telah mempelajari cara menentukan properti untuk sumbu X dan Y dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah, Anda dapat membuat bagan, menambahkan data seri, dan menyesuaikan properti sumbu untuk memenuhi kebutuhan spesifik Anda. Aspose.Words untuk .NET menyediakan API komprehensif untuk Pemrosesan Kata dengan bagan di dokumen Word, memungkinkan Anda memanipulasi berbagai aspek bagan, termasuk sumbu.
+Membuat dan menyesuaikan bagan di dokumen Word menggunakan Aspose.Words untuk .NET sangatlah mudah setelah Anda memahami langkah-langkah yang terlibat. Panduan ini telah memandu Anda melalui proses menentukan properti sumbu XY dalam bagan, mulai dari menginisialisasi dokumen hingga menyimpan produk akhir. Dengan keterampilan ini, Anda dapat membuat bagan mendetail dan terlihat profesional yang menyempurnakan dokumen Anda.
 
-Dengan mengakses`ChartAxis` objek yang terkait dengan bagan, Anda dapat mengubah properti seperti jenis kategori, persilangan sumbu, tanda centang, posisi label, penskalaan, dan banyak lagi. Fleksibilitas ini memungkinkan Anda menyesuaikan tampilan dan perilaku sumbu diagram untuk menyajikan data Anda secara efektif.
+## FAQ
 
-Dengan menggunakan Aspose.Words untuk .NET, Anda dapat dengan mudah mengintegrasikan pembuatan bagan dan kemampuan penyesuaian ke dalam aplikasi .NET Anda dan mengotomatiskan pembuatan dokumen yang terlihat profesional dengan visualisasi yang kaya.
+### Jenis bagan apa yang dapat saya buat dengan Aspose.Words untuk .NET?
+Anda dapat membuat berbagai jenis bagan, termasuk Area, Batang, Garis, Pai, dan lainnya.
 
-### FAQ
+### Bagaimana cara menginstal Aspose.Words untuk .NET?
+ Anda dapat mengunduh Aspose.Words untuk .NET dari[Di Sini](https://releases.aspose.com/words/net/) dan ikuti petunjuk instalasi yang diberikan.
 
-#### Q1. Apa itu Aspose.Words untuk .NET?
-Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang membuat, memanipulasi, dan menyimpan dokumen Word secara terprogram dalam aplikasi .NET. Ini menyediakan berbagai fitur untuk Pemrosesan Kata dengan elemen dokumen, termasuk bagan.
+### Bisakah saya menyesuaikan tampilan grafik saya?
+Ya, Aspose.Words untuk .NET memungkinkan penyesuaian bagan yang ekstensif, termasuk warna, font, dan properti sumbu.
 
-#### Q2. Bagaimana cara menginstal Aspose.Words untuk .NET?
-Anda dapat menginstal Aspose.Words untuk .NET dengan mengunduhnya menggunakan manajer paket NuGet di Visual Studio. Cukup cari "Aspose.Words" di manajer paket NuGet dan instal ke proyek Anda.
+### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?
+ Ya, Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/).
 
-#### Q3. Bisakah saya mengkustomisasi aspek lain dari bagan menggunakan Aspose.Words untuk .NET?
-Ya, Aspose.Words untuk .NET menyediakan kemampuan luas untuk menyesuaikan berbagai aspek bagan. Selain menentukan properti sumbu, Anda dapat mengubah tipe bagan, seri data, legenda, judul, area plot, label data, dan banyak elemen bagan lainnya. API ini menawarkan kontrol menyeluruh atas tampilan dan perilaku bagan.
-
-#### Q4. Bisakah saya membuat berbagai jenis bagan menggunakan Aspose.Words untuk .NET?
- Ya, Aspose.Words untuk .NET mendukung berbagai jenis bagan, termasuk area, batang, garis, pai, sebar, dan banyak lagi. Anda dapat menggunakan`ChartType` enumerasi untuk menentukan tipe bagan yang diinginkan saat menyisipkan bentuk bagan ke dalam dokumen Word.
-
-#### Q5. Bisakah saya menyimpan grafik dalam format berbeda?
-Ya, Aspose.Words untuk .NET memungkinkan Anda menyimpan dokumen yang berisi bagan dalam berbagai format, seperti DOCX, PDF, HTML, dan lainnya. Anda dapat memilih format yang sesuai berdasarkan kebutuhan Anda dan menggunakan`Save` metode`Document` objek untuk menyimpan dokumen.
-
-#### Q6. Bisakah saya menerapkan teknik ini ke beberapa bagan dalam satu dokumen?
- Ya, Anda dapat menerapkan teknik ini ke beberapa bagan dalam satu dokumen dengan mengulangi langkah-langkah yang diperlukan untuk setiap bagan. Anda dapat membuat yang terpisah`Chart` Dan`ChartAxis` objek untuk setiap bagan dan sesuaikan propertinya. Aspose.Words for .NET memberikan dukungan penuh untuk Pemrosesan Kata dengan banyak bagan dalam satu dokumen.
+### Di mana saya dapat menemukan tutorial dan dokumentasi lainnya?
+ Anda dapat menemukan lebih banyak tutorial dan dokumentasi terperinci di[Halaman dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/).

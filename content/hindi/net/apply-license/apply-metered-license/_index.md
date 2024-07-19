@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- प्रतिस्थापित करें`"your_public_key"` और`"your_private_key"`Aspose से प्राप्त वास्तविक कुंजियों के साथ। यह चरण अनिवार्य रूप से Aspose को बताता है कि आप मीटर्ड लाइसेंस का उपयोग करना चाहते हैं।
+ प्रतिस्थापित करें`"your_public_key"`और`"your_private_key"`Aspose से प्राप्त वास्तविक कुंजियों के साथ। यह चरण अनिवार्य रूप से Aspose को बताता है कि आप मीटर्ड लाइसेंस का उपयोग करना चाहते हैं।
 
 ## चरण 3: अपना दस्तावेज़ लोड करें
 

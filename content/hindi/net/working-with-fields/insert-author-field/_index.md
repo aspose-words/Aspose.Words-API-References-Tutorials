@@ -2,7 +2,7 @@
 title: लेखक फ़ील्ड डालें
 linktitle: लेखक फ़ील्ड डालें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: जानें कि Aspose.Words for .NET के साथ अपने Word दस्तावेज़ों में AUTHOR फ़ील्ड कैसे डालें। अपने दस्तावेज़ों को निजीकृत करने के लिए लेखक का नाम निर्दिष्ट करें।
+description: Aspose.Words for .NET के साथ अपने Word दस्तावेज़ों में AUTHOR फ़ील्ड सम्मिलित करना सीखें। अपने दस्तावेज़ों को वैयक्तिकृत करने के लिए लेखक का नाम निर्दिष्ट करें।
 type: docs
 weight: 10
 url: /hi/net/working-with-fields/insert-author-field/

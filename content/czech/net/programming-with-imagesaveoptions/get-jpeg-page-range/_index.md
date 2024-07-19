@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- V tomto kroku nakonfigurujeme možnosti zálohování pro obrazy. Vytváříme nový`ImageSaveOptions` objekt určující požadovaný formát uložení, zde "Jpeg" pro formát JPEG. Také jsme nastavili rozsah stránek pro převod pomocí`PageSet`objekt. Nakonec upravíme jas a kontrast obrázku pomocí`ImageBrightness` a`ImageContrast` vlastnosti, resp. Horizontální rozlišení také měníme pomocí`HorizontalResolution` vlastnictví.
+ V tomto kroku nakonfigurujeme možnosti zálohování pro obrazy. Vytváříme nový`ImageSaveOptions` objekt určující požadovaný formát uložení, zde "Jpeg" pro formát JPEG. Také jsme nastavili rozsah stránek pro převod pomocí`PageSet`objekt. Nakonec upravíme jas a kontrast obrázku pomocí`ImageBrightness`a`ImageContrast` vlastnosti, resp. Horizontální rozlišení také měníme pomocí`HorizontalResolution` vlastnictví.
 
 ## Krok 4: Zálohování obrázků
 

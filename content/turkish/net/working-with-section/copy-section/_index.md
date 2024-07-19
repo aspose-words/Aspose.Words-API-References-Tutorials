@@ -37,7 +37,7 @@ Document dstDoc = new Document();
 ```
 
 ## 3. Adım: Bölümü hedef belgeye kopyalayın
- Bölümü kaynak belgeden hedef belgeye kopyalamak için şunu kullanacağız:`ImportNode`Kaynak bölümü içe aktarma ve hedef belgeye ekleme yöntemini kullanın.
+ Bölümü kaynak belgeden hedef belgeye kopyalamak için şunu kullanacağız:`ImportNode` Kaynak bölümü içe aktarma ve hedef belgeye ekleme yöntemini kullanın.
 
 ```csharp
 // Kaynak bölümünü edinin
@@ -80,13 +80,13 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölüm�
 
 C: Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
 - C# programlama dili hakkında çalışma bilgisi
-- Aspose.Words for .NET kütüphanesinin projenizde kurulu olması
+- Aspose.Words for .NET kütüphanesinin projenizde yüklü olması
 - Kopyalamak istediğiniz bölümü içeren kaynak belge
 - Bölümü kopyalamak istediğiniz boş bir hedef belge
 
 #### S: Aspose.Words for .NET'te belge dizini nasıl ayarlanır?
 
- C: Belgelerinizi içeren dizinin yolunu ayarlamak için değiştirmeniz gerekir`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
+C: Belgelerinizi içeren dizinin yolunu ayarlamak için değiştirmeniz gerekir`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 // Belgeler dizininizin yolu
@@ -95,7 +95,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 #### S: Aspose.Words for .NET'te kaynak ve hedef belgeler nasıl yüklenir?
 
-C: Kaynak belgeyi bir örneğine yüklemek için`Document` sınıf çağrıldı`srcDoc` ve boş bir örneğini oluşturun`Document` sınıf çağrıldı`dstDoc` hedef belge için aşağıdaki kodu kullanabilirsiniz:
+ C: Kaynak belgeyi bir örneğine yüklemek için`Document` sınıf çağrıldı`srcDoc` ve boş bir örneğini oluşturun`Document` sınıf çağrıldı`dstDoc` hedef belge için aşağıdaki kodu kullanabilirsiniz:
 
 ```csharp
 // Kaynak belgeyi yükleyin

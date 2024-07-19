@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. ฉันสามารถย้ายไปที่จุดเริ่มต้นของบุ๊กมาร์กแทนจุดสิ้นสุดได้หรือไม่
 
- อย่างแน่นอน! เพียงแค่ตั้งค่า`isBookmarkStart` พารามิเตอร์ถึง`true` และ`isBookmarkEnd` ถึง`false` ใน`MoveToBookmark` วิธี.
+ อย่างแน่นอน! เพียงแค่ตั้งค่า`isBookmarkStart` พารามิเตอร์ถึง`true`และ`isBookmarkEnd` ถึง`false` ใน`MoveToBookmark` วิธี.
 
 ### 2. จะเกิดอะไรขึ้นหากชื่อบุ๊กมาร์กของฉันไม่ถูกต้อง?
 

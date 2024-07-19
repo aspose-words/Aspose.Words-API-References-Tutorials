@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Steg 4: Infoga cell och gå till radformat
-Nu kan vi infoga en cell i tabellen och komma åt radformatet för den cellen med hjälp av dokumentbyggarens`InsertCell()` och`RowFormat` metoder.
+Nu kan vi infoga en cell i tabellen och komma åt radformatet för den cellen med hjälp av dokumentbyggarens`InsertCell()`och`RowFormat` metoder.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Steg 5: Ställ in radhöjd
- För att ställa in radhöjden använder vi`Height` och`HeightRule` egenskaper för radformatet. I det här exemplet sätter vi en radhöjd på 100 poäng och använder`Exactly` regel.
+ För att ställa in radhöjden använder vi`Height`och`HeightRule` egenskaperna för radformatet. I det här exemplet sätter vi en radhöjd på 100 poäng och använder`Exactly` regel.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Steg 6: Definiera tabellformatering
- Vissa formateringsegenskaper kan ställas in på själva tabellen och tillämpas på alla tabellrader. I det här exemplet ställer vi in tabellmarginalegenskaperna med hjälp av`LeftPadding`, `RightPadding`, `TopPadding` och`BottomPadding` egenskaper.
+ Vissa formateringsegenskaper kan ställas in på själva tabellen och tillämpas på alla tabellrader. I det här exemplet ställer vi in tabellmarginalegenskaperna med hjälp av`LeftPadding`, `RightPadding`, `TopPadding`och`BottomPadding` egenskaper.
 
 ```csharp
 table. LeftPadding = 30;

@@ -17,7 +17,7 @@ url: /ar/net/programming-with-shapes/get-actual-shape-bounds-points/
 - المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: إنشاء مستند جديد وDocumentBuilder
- إنشاء مثيل جديد لـ`Document` فئة و أ`DocumentBuilder`كائن للعمل مع الوثيقة.
+ إنشاء مثيل جديد لـ`Document` فئة و أ`DocumentBuilder` كائن للعمل مع الوثيقة.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 2: إدراج شكل الصورة
- استخدم ال`InsertImage` طريقة`DocumentBuilder` كائن لإدراج شكل صورة في المستند. توفير المسار إلى ملف الصورة كمعلمة.
+ استخدم ال`InsertImage` طريقة`DocumentBuilder`كائن لإدراج شكل صورة في المستند. توفير المسار إلى ملف الصورة كمعلمة.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

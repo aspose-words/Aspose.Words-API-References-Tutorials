@@ -33,7 +33,7 @@ Most konfiguráljuk a HTML mentési beállításokat a dokumentum körútinform�
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Ez a kód létrehozza a`HtmlSaveOptions`és beállítja a`ExportRoundtripInformation` opciót`true` hogy exportáláskor tartalmazza az oda-vissza útra vonatkozó információkat.
+ Ez a kód létrehozza a`HtmlSaveOptions` és beállítja a`ExportRoundtripInformation` opciót`true` hogy exportáláskor tartalmazza az oda-vissza útra vonatkozó információkat.
 
 ## 4. lépés: A dokumentum konvertálása és mentése HTML formátumba
 

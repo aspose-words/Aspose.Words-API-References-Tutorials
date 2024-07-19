@@ -85,7 +85,7 @@ Na tym etapie zastosowaliśmy ukośną teksturę krzyżową z jasnym koralem jak
 
 ## Krok 5: Dodaj tekst do akapitu
 
-Czym jest akapit bez tekstu? Dodajmy przykładowe zdanie, aby zobaczyć nasze formatowanie w akcji.
+Czym jest akapit bez tekstu? Dodajmy przykładowe zdanie, aby zobaczyć, jak nasze formatowanie działa.
 
 ```csharp
 builder.Write("I'm a formatted paragraph with double border and nice shading.");

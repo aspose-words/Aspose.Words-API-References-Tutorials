@@ -1,7 +1,7 @@
 ---
 title: Datenvisualisierung und -formatierung
 linktitle: Datenvisualisierung und -formatierung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Entdecken Sie Aspose.Words-Tutorials zur Datenvisualisierung und -formatierung in Python und .NET. Lernen Sie, Daten effektiv zu präsentieren, beeindruckende Berichte zu erstellen und Dokumente programmgesteuert zu formatieren.
 type: docs
 weight: 15

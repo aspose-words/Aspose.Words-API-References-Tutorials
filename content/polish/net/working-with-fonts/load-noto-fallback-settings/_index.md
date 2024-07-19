@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Załaduj dokument i skonfiguruj ustawienia zastępowania czcionek
- Następnie załadujemy dokument za pomocą metody`Document` class i skonfiguruj ustawienia zastępowania czcionek za pomocą`FontSettings`klasa. Załadujemy ustawienia zastępczej czcionki Noto za pomocą pliku`LoadNotoFallbackSettings()` metoda.
+ Następnie załadujemy dokument za pomocą metody`Document` class i skonfiguruj ustawienia zastępowania czcionek za pomocą`FontSettings` klasa. Załadujemy ustawienia zastępczej czcionki Noto za pomocą pliku`LoadNotoFallbackSettings()` metoda.
 
 ```csharp
 // Załaduj dokument i skonfiguruj ustawienia zastępowania czcionek
@@ -71,7 +71,7 @@ O: Tak, używanie czcionek Noto do zastępowania w dokumentach programu Word zap
 
 #### P: Czy czcionki Noto są darmowe?
 
-Odp.: Tak, czcionki Noto są bezpłatne i mają otwarte oprogramowanie. Można je pobrać i wykorzystać w swoich projektach bezpłatnie. Dzięki temu jest to świetna opcja poprawiająca wyświetlanie czcionek w dokumentach programu Word bez konieczności inwestowania w czcionki komercyjne.
+O: Tak, czcionki Noto są bezpłatne i mają otwarte oprogramowanie. Można je pobrać i wykorzystać w swoich projektach bezpłatnie. Dzięki temu jest to świetna opcja poprawiająca wyświetlanie czcionek w dokumentach programu Word bez konieczności inwestowania w czcionki komercyjne.
 
 #### P: Czy używanie czcionek Noto zwiększa dostępność moich dokumentów programu Word?
 

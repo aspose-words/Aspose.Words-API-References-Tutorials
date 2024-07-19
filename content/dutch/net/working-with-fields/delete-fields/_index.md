@@ -10,7 +10,7 @@ url: /nl/net/working-with-fields/delete-fields/
 
 ## Invoering
 
-Op het gebied van documentverwerking en automatisering onderscheidt Aspose.Words voor .NET zich als een krachtige toolset voor ontwikkelaars die Word-documenten programmatisch willen manipuleren, creëren en beheren. Deze tutorial is bedoeld om u te begeleiden bij het gebruik van Aspose.Words voor .NET om velden in Word-documenten te verwijderen. Of u nu een doorgewinterde ontwikkelaar bent of net begint met .NET-ontwikkeling, deze handleiding beschrijft de stappen die nodig zijn om velden effectief uit uw documenten te verwijderen, aan de hand van duidelijke, beknopte voorbeelden en uitleg.
+Op het gebied van documentverwerking en automatisering onderscheidt Aspose.Words voor .NET zich als een krachtige toolset voor ontwikkelaars die Word-documenten programmatisch willen manipuleren, creëren en beheren. Deze tutorial is bedoeld om u te begeleiden bij het gebruik van Aspose.Words voor .NET om velden in Word-documenten te verwijderen. Of u nu een doorgewinterde ontwikkelaar bent of net begint met .NET-ontwikkeling, in deze handleiding worden de stappen beschreven die nodig zijn om velden effectief uit uw documenten te verwijderen, aan de hand van duidelijke, beknopte voorbeelden en uitleg.
 
 ## Vereisten
 
@@ -69,11 +69,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 Doorloop alle velden in het document en verwijder ze:
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 Deze lus herhaalt zich achterwaarts door de verzameling velden om problemen met het wijzigen van de verzameling tijdens het itereren te voorkomen.

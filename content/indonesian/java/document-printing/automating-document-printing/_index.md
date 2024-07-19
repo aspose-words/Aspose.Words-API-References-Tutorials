@@ -79,7 +79,7 @@ Mengotomatiskan pencetakan dokumen menggunakan Aspose.Words untuk Java dapat men
 
 ### Bisakah saya mengotomatiskan tugas terkait dokumen lainnya dengan Aspose.Words untuk Java?
 
-Ya, Aspose.Words untuk Java menyediakan berbagai kemampuan otomatisasi dokumen. Anda dapat melakukan tugas-tugas seperti konversi dokumen, ekstraksi teks, dan banyak lagi. Jelajahi dokumentasi Aspose.Words untuk detail yang komprehensif.
+Ya, Aspose.Words untuk Java menyediakan berbagai kemampuan otomatisasi dokumen. Anda dapat melakukan tugas-tugas seperti konversi dokumen, ekstraksi teks, dan banyak lagi. Jelajahi dokumentasi Aspose.Words untuk detail komprehensif.
 
 ### Apakah Aspose.Words untuk Java kompatibel dengan format dokumen yang berbeda?
 

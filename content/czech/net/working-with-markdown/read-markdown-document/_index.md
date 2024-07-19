@@ -57,7 +57,7 @@ gratuluji! Nyní jste se naučili číst dokument Markdown pomocí Aspose.Words 
 
 #### Otázka: Jak číst dokument Markdown pomocí .NET?
 
-A: Chcete-li číst dokument Markdown pomocí .NET, můžete použít knihovnu kompatibilní s Markdown, jako je např`Markdig` nebo`CommonMark.NET`. Tyto knihovny poskytují funkce pro analýzu a extrahování obsahu z dokumentu Markdown.
+ A: Chcete-li číst dokument Markdown pomocí .NET, můžete použít knihovnu kompatibilní s Markdown, jako je např`Markdig` nebo`CommonMark.NET`. Tyto knihovny poskytují funkce pro analýzu a extrahování obsahu z dokumentu Markdown.
 
 #### Otázka: Jak převést dokument Markdown do HTML pomocí .NET?
 
@@ -69,7 +69,7 @@ Odpověď: Ano, některé knihovny Markdown v knihovnách .NET nabízejí možno
 
 #### Otázka: Jaké jsou doporučené knihovny .NET pro manipulaci s dokumenty Markdown?
 
- A: Doporučené knihovny .NET pro manipulaci s dokumenty Markdown jsou`Markdig` a`CommonMark.NET`. Nabízejí velkou flexibilitu a plnou podporu funkcí Markdown.
+A: Doporučené knihovny .NET pro manipulaci s dokumenty Markdown jsou`Markdig`a`CommonMark.NET`. Nabízejí velkou flexibilitu a plnou podporu funkcí Markdown.
 
 #### Otázka: Jak se vypořádám s chybami při čtení dokumentu Markdown?
 

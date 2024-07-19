@@ -16,7 +16,7 @@ Aspose.Words for Java は、開発者が Word 文書をプログラムで操作�
 
 コードに進む前に、次の前提条件を満たしていることを確認してください。
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 - Java プログラミングに関する基本的な理解。
 

@@ -2,17 +2,37 @@
 title: Hình ảnh
 linktitle: Hình ảnh
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chèn và tùy chỉnh hình ảnh bằng Aspose.Words for .NET Hướng dẫn từng bước.
+description: Tìm hiểu cách thêm hình ảnh vào tài liệu của bạn bằng Aspose.Words for .NET với hướng dẫn từng bước này. Nâng cao tài liệu của bạn bằng hình ảnh ngay lập tức.
 type: docs
 weight: 10
 url: /vi/net/working-with-markdown/image/
 ---
+## Giới thiệu
 
-Trong ví dụ này, chúng tôi sẽ giải thích cách sử dụng tính năng hình ảnh với Aspose.Words cho .NET. Hình ảnh cho phép bạn chèn hình minh họa và đồ họa vào tài liệu.
+Bạn đã sẵn sàng đi sâu vào thế giới của Aspose.Words cho .NET chưa? Hôm nay, chúng ta sẽ khám phá cách thêm hình ảnh vào tài liệu của bạn. Cho dù bạn đang làm báo cáo, tài liệu quảng cáo hay chỉ đang soạn thảo một tài liệu đơn giản, việc thêm hình ảnh có thể tạo ra sự khác biệt rất lớn. Vậy hãy bắt đầu!
 
-## Bước 1: Sử dụng trình tạo tài liệu
+## Điều kiện tiên quyết
 
-Đầu tiên, chúng tôi sẽ sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu của mình.
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
+
+1.  Aspose.Words for .NET: Bạn có thể tải xuống từ[trang web giả định](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Bất kỳ môi trường phát triển .NET nào như Visual Studio.
+3. Kiến thức cơ bản về C#: Nếu bạn đã quen thuộc với C#, bạn đã sẵn sàng!
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết. Điều này rất cần thiết để truy cập các lớp và phương thức Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Bây giờ, hãy chia quy trình thành các bước đơn giản. Mỗi bước sẽ có tiêu đề và giải thích chi tiết để đảm bảo bạn thực hiện suôn sẻ.
+
+## Bước 1: Khởi tạo DocumentBuilder
+
+ Để bắt đầu, bạn cần tạo một`DocumentBuilder` sự vật. Đối tượng này sẽ giúp bạn thêm nội dung vào tài liệu của mình.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
@@ -20,57 +40,39 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Bước 2: Chèn hình ảnh
 
- Chúng ta có thể chèn một hình ảnh bằng cách sử dụng`Shape` lớp và chỉ định loại hình ảnh, tại đây`ShapeType.Image` . Chúng tôi cũng đặt kiểu bao bọc của hình ảnh thành`WrapType.Inline`.
+Tiếp theo, bạn sẽ chèn một hình ảnh vào tài liệu của mình. Đây là cách bạn làm điều đó:
 
 ```csharp
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape. WrapType = WrapType. Inline;
+Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
-## Bước 3: Tùy chỉnh hình ảnh
+ Thay thế`"path_to_your_image.jpg"` với đường dẫn thực tế của tệp hình ảnh của bạn. Các`InsertImage` phương pháp sẽ thêm hình ảnh vào tài liệu của bạn.
 
- Chúng tôi tùy chỉnh hình ảnh bằng cách chỉ định đường dẫn đầy đủ của nó, ví dụ`"/attachment/1456/pic001.png"`và thêm tiêu đề cho hình ảnh.
+## Bước 3: Đặt thuộc tính hình ảnh
+
+Bạn có thể đặt các thuộc tính khác nhau cho hình ảnh. Ví dụ: hãy đặt tiêu đề của hình ảnh:
 
 ```csharp
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "Title";
+shape.ImageData.Title = "Your Image Title";
 ```
 
-### Mã nguồn ví dụ cho hình ảnh với Aspose.Words for .NET
+## Phần kết luận
 
-```csharp
-// Sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu.
-DocumentBuilder builder = new DocumentBuilder();
+Việc thêm hình ảnh vào tài liệu của bạn có thể nâng cao đáng kể sự hấp dẫn và hiệu quả trực quan của chúng. Với Aspose.Words for .NET, quá trình này trở nên đơn giản và hiệu quả. Bằng cách làm theo các bước được nêu ở trên, bạn có thể dễ dàng tích hợp hình ảnh vào tài liệu của mình và nâng kỹ năng tạo tài liệu của mình lên một tầm cao mới.
 
-// Chèn hình ảnh.
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape.WrapType = WrapType.Inline;
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "title";
-builder.InsertNode(shape);
-```
+## Câu hỏi thường gặp
 
-Xin chúc mừng! Bây giờ bạn đã học cách sử dụng tính năng hình ảnh với Aspose.Words cho .NET.
+### Tôi có thể thêm nhiều hình ảnh vào một tài liệu không?  
+ Có, bạn có thể thêm bao nhiêu hình ảnh tùy thích bằng cách lặp lại thao tác`InsertImage` phương pháp cho mỗi hình ảnh.
 
+### Những định dạng hình ảnh nào được Aspose.Words hỗ trợ cho .NET?  
+Aspose.Words hỗ trợ nhiều định dạng hình ảnh khác nhau bao gồm JPEG, PNG, BMP, GIF, v.v.
 
-### Câu hỏi thường gặp
+### Tôi có thể thay đổi kích thước hình ảnh trong tài liệu không?  
+ Tuyệt đối! Bạn có thể đặt thuộc tính chiều cao và chiều rộng của`Shape` đối tượng để thay đổi kích thước hình ảnh.
 
-#### Câu hỏi: Làm cách nào tôi có thể chèn hình ảnh từ tệp cục bộ vào Aspose.Words?
+### Có thể thêm hình ảnh từ một URL không?  
+ Có, bạn có thể thêm hình ảnh từ một URL bằng cách cung cấp URL trong`InsertImage` phương pháp.
 
- Trả lời: Để chèn hình ảnh từ tệp cục bộ vào Aspose.Words, bạn có thể sử dụng`Shape` lớp học và`InsertImage` phương pháp.
-
-#### Câu hỏi: Tôi có thể chèn hình ảnh từ URL trong Aspose.Words không?
-
- Trả lời: Có, bạn có thể chèn hình ảnh từ URL trong Aspose.Words. Bạn có thể sử dụng tương tự`InsertImage`phương thức và chỉ định URL hình ảnh thay vì đường dẫn tệp cục bộ.
-
-#### Hỏi: Làm cách nào tôi có thể thay đổi kích thước hình ảnh trong Aspose.Words?
-
- Trả lời: Để thay đổi kích thước hình ảnh trong Aspose.Words, bạn có thể sử dụng`Width` Và`Height` thuộc tính của`Shape` sự vật.
-
-#### Câu hỏi: Tôi có thể áp dụng bộ lọc cho hình ảnh trong Aspose.Words không?
-
- Trả lời: Có, bạn có thể áp dụng bộ lọc cho hình ảnh trong Aspose.Words. Ví dụ: bạn có thể áp dụng bộ lọc làm mờ cho hình ảnh bằng cách sử dụng`ApplyGaussianBlur` phương pháp của`Shape` sự vật.
-
-#### Hỏi: Làm cách nào tôi có thể thay thế hình ảnh này bằng hình ảnh khác trong Aspose.Words?
-
- Trả lời: Để thay thế hình ảnh này bằng hình ảnh khác trong Aspose.Words, bạn có thể sử dụng`Replace` phương pháp của`Shape` lớp học. Phương thức này lấy tham số là`Shape` đối tượng của hình ảnh được thay thế và`Shape` đối tượng của hình ảnh mới.
+### Làm cách nào để tôi có được bản dùng thử miễn phí Aspose.Words cho .NET?  
+ Bạn có thể dùng thử miễn phí từ[trang web giả định](https://releases.aspose.com/).

@@ -15,7 +15,7 @@ In questo tutorial, ti guideremo attraverso l'accettazione delle revisioni di un
 In questo esempio, stiamo creando un documento e aggiungendo contenuto. Utilizziamo diversi paragrafi per illustrare modifiche e revisioni. Ecco come:
 
 ```csharp
-// Percorso della directory dei documenti.
+//Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Soluzione 2:
 
- R: Puoi anche abilitare il monitoraggio delle revisioni utilizzando il file`Document` costruttore che accetta`trackRevisions` E`author` parametri.
+ R: Puoi anche abilitare il monitoraggio delle revisioni utilizzando il file`Document` costruttore che accetta`trackRevisions`E`author` parametri.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

@@ -14,7 +14,7 @@ Základní konverze vás provede základními převody dokumentů pomocí knihov
 | Titul | Popis |
 | --- | --- |
 | [Převést dokument na dokument Docx](./doc-to-docx/) | Přečtěte si, jak převést DOC na DOCX pomocí Aspose.Words for .NET. Podrobný průvodce s příklady kódu. Ideální pro vývojáře.  |
-| [Převést Docx na Rtf](./docx-to-rtf/) | Naučte se, jak převést DOCX do RTF pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Ideální pro vývojáře, kteří hledají efektivní řešení.  |  
+| [Převést Docx na Rtf](./docx-to-rtf/) | Naučte se, jak převést DOCX do RTF pomocí Aspose.Words for .NET s naším podrobným průvodcem. Snadná konverze pro bezproblémové zpracování dokumentů. |  
 | [Převést soubor Word do PDF](./docx-to-pdf/) | Naučte se, jak snadno převádět soubory Wordu do PDF pomocí Aspose.Words for .NET s naším průvodcem. Ideální pro vývojáře, kteří hledají rychlou a spolehlivou konverzi dokumentů. | 
 | [Převést Docx na Byte](./docx-to-byte/) | Naučte se, jak převést Docx na bajtové pole v .NET pomocí Aspose.Words pro efektivní zpracování dokumentů. Včetně průvodce krok za krokem. |  
 | [Převést Docx na Epub](./docx-to-epub/) | Převeďte DOCX na EPUB snadno pomocí Aspose.Words pro .NET. Postupujte podle našeho návodu pro bezproblémovou integraci do vašich aplikací .NET. |

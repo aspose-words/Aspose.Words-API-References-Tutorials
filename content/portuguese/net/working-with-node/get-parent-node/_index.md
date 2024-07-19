@@ -62,7 +62,7 @@ R: O nó pai em Node.js refere-se ao próximo nó superior na hierarquia de um d
 
 #### P: Como obter o nó pai de um nó específico?
 
-R: Para obter o nó pai de um nó específico, você pode usar o`parentNode` propriedade do nó. Esta propriedade retorna o nó pai do nó atual.
+ R: Para obter o nó pai de um nó específico, você pode usar o`parentNode` propriedade do nó. Esta propriedade retorna o nó pai do nó atual.
 
 #### P: Como verificar se um nó possui um nó pai?
 
@@ -70,7 +70,7 @@ R: Para obter o nó pai de um nó específico, você pode usar o`parentNode` pro
 
 #### P: Podemos alterar o nó pai de um nó?
 
- R: Na maioria dos casos, o nó pai de um nó é determinado pela estrutura do documento XML e não pode ser alterado diretamente. No entanto, você pode mover um nó para outro usando métodos específicos, como`appendChild` ou`insertBefore`.
+R: Na maioria dos casos, o nó pai de um nó é determinado pela estrutura do documento XML e não pode ser alterado diretamente. No entanto, você pode mover um nó para outro usando métodos específicos, como`appendChild` ou`insertBefore`.
 
 #### P: Como navegar na hierarquia dos nós pais?
 

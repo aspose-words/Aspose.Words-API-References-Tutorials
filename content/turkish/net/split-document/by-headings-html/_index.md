@@ -14,7 +14,7 @@ Bu eğitimde, Aspose.Words for .NET'in HTML Başlığına Göre özelliğini kul
 Başlamak için belgenizin dizinini belirtin ve belgeyi bir Belge nesnesine yükleyin. İşte nasıl:
 
 ```csharp
-// Belgeler dizininin yolu.
+//Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

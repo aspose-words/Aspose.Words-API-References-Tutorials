@@ -15,7 +15,7 @@ url: /ru/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 Используйте следующий код для загрузки определенного диапазона страниц из документа PDF:
 
 ```csharp
-// Путь к каталогу документов.
+//Путь к каталогу документов.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- В этом примере мы загружаем первую страницу PDF-документа. Вы можете изменить значения`PageIndex` и`PageCount` в нужный диапазон страниц.
+ В этом примере мы загружаем первую страницу PDF-документа. Вы можете изменить значения`PageIndex`и`PageCount` в нужный диапазон страниц.
 
 ## Шаг 2: Сохранение документа
 

@@ -2,70 +2,96 @@
 title: Dołącz do nowej strony
 linktitle: Dołącz do nowej strony
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak połączyć dwa dokumenty na nowej stronie, zachowując formatowanie, używając Aspose.Words dla .NET.
+description: Dowiedz się, jak łączyć i dołączać dokumenty w programie Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, jak efektywnie łączyć dokumenty.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/join-new-page/
 ---
+## Wstęp
 
-tym samouczku wyjaśniono, jak połączyć dwa dokumenty na nowej stronie za pomocą Aspose.Words dla .NET. Dostarczony kod źródłowy pokazuje, jak dołączyć dokument na końcu innego dokumentu, rozpoczynając dołączany dokument na nowej stronie.
+Podczas pracy z dużymi dokumentami lub łączenia wielu dokumentów w jeden zachowanie formatowania i zapewnienie przejrzystości ma kluczowe znaczenie. Aspose.Words dla .NET zapewnia potężne narzędzia do programowego manipulowania dokumentami programu Word, umożliwiając programistom efektywne wykonywanie złożonych zadań.
 
-## Krok 1: Skonfiguruj projekt
+## Warunki wstępne
 
-Upewnij się, że masz następujące wymagania wstępne:
+Przed rozpoczęciem tego samouczka upewnij się, że posiadasz następujące elementy:
+- Program Visual Studio zainstalowany na Twoim komputerze.
+-  Aspose.Words dla biblioteki .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Podstawowa znajomość programowania w C# i środowisku .NET.
 
--  Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać z[Aspose.Releases]https://releases.aspose.com/words/net/ lub użyj menedżera pakietów NuGet, aby go zainstalować.
-- Ścieżka katalogu dokumentów, w którym znajdują się dokumenty źródłowe i docelowe.
+## Importuj przestrzenie nazw
 
-## Krok 2: Otwórz dokumenty źródłowe i docelowe
+Najpierw zaimportuj niezbędne przestrzenie nazw do swojego projektu C#:
 
- Otwórz dokumenty źródłowe i docelowe za pomocą narzędzia`Document` konstruktor klasy. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+```csharp
+using Aspose.Words;
+using System;
+```
+
+Wykonaj poniższe kroki, aby połączyć i dołączyć dokumenty, upewniając się, że dołączona treść zaczyna się na nowej stronie:
+
+## Krok 1: Skonfiguruj swój projekt
+
+Zacznij od utworzenia nowej aplikacji konsolowej C# w programie Visual Studio. Zainstaluj pakiet Aspose.Words NuGet w swoim projekcie.
+
+## Krok 2: Załaduj dokumenty źródłowe i docelowe
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Załaduj dokumenty źródłowe i docelowe
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Skonfiguruj nowy początek sekcji strony
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do plików dokumentów.
 
- Aby rozpocząć dołączany dokument na nowej stronie, ustaw opcję`SectionStart` właściwość pierwszej sekcji dokumentu źródłowego do`SectionStart.NewPage`.
+## Krok 3: Ustaw początek sekcji na nową stronę
+
+Ustaw początek pierwszej sekcji w dokumencie źródłowym tak, aby rozpoczynał się na nowej stronie:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## Krok 4: Dołącz dokument źródłowy
+Dzięki temu dołączona treść zacznie się na nowej stronie dokumentu docelowego.
 
- Dołącz dokument źródłowy do dokumentu docelowego za pomocą`AppendDocument` metoda`Document` klasa. Ustaw tryb formatu importu na`ImportFormatMode.KeepSourceFormatting` aby zachować oryginalne style z dokumentu źródłowego.
+## Krok 4: Dołącz dokument źródłowy do dokumentu docelowego
+
+Dołącz dokument źródłowy do dokumentu docelowego, zachowując oryginalne formatowanie:
 
 ```csharp
+// Dołącz dokument źródłowy, używając oryginalnych stylów znalezionych w dokumencie źródłowym.
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
 ## Krok 5: Zapisz zmodyfikowany dokument
 
-Na koniec zapisz zmodyfikowany dokument docelowy za pomocą pliku`Save` metoda`Document` obiekt.
+Zapisz zmodyfikowany dokument docelowy w nowym pliku:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```
 
-To kończy implementację łączenia dwóch dokumentów na nowej stronie za pomocą Aspose.Words dla .NET.
+Spowoduje to zapisanie połączonego dokumentu z dołączoną treścią, zaczynając od nowej strony.
 
-### Przykładowy kod źródłowy dla Dołącz do nowej strony przy użyciu Aspose.Words dla .NET 
+## Wniosek
 
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+W tym samouczku nauczyliśmy się, jak łączyć i dołączać dokumenty do pliku Word za pomocą Aspose.Words dla .NET. Wykonując poniższe kroki, możesz efektywnie scalić wiele dokumentów, upewniając się, że dołączona treść zaczyna się na nowej stronie, zachowując oryginalne formatowanie.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Ustaw dołączony dokument tak, aby zaczynał się od nowej strony.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	// Dołącz dokument źródłowy, używając oryginalnych stylów znalezionych w dokumencie źródłowym.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
-```
+## Często zadawane pytania
+
+### Czy mogę dołączyć więcej niż dwa dokumenty za pomocą Aspose.Words dla .NET?
+Tak, możesz dołączać wiele dokumentów sekwencyjnie, powtarzając operację dołączania dla każdego dokumentu.
+
+### Jak mogę poradzić sobie z konfliktami formatowania dokumentów podczas dołączania?
+Aspose.Words zapewnia różne tryby importu do obsługi konfliktów formatowania, takich jak zachowywanie formatowania źródłowego lub używanie formatowania docelowego.
+
+### Czy Aspose.Words obsługuje dołączanie dokumentów w różnych językach i kodowaniach?
+Tak, Aspose.Words obsługuje dołączanie dokumentów niezależnie od języka i kodowania, zapewniając bezproblemową integrację.
+
+### Czy można dołączać dokumenty zawierające makra lub pola formularzy?
+Aspose.Words obsługuje dołączanie dokumentów z makrami i polami formularzy, zachowując ich funkcjonalność w scalonym dokumencie.
+
+### Czy mogę zautomatyzować zadania dołączania dokumentów w procesie wsadowym za pomocą Aspose.Words?
+Aspose.Words dla .NET umożliwia automatyzację zadań dołączania dokumentów w procesach wsadowych, zwiększając produktywność w zarządzaniu dokumentami.

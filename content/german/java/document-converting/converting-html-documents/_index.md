@@ -84,7 +84,7 @@ Die Konvertierung von HTML in Dokumente mit Aspose.Words für Java ist ein unkom
 
 Ja, Aspose.Words für Java unterstützt die Konvertierung von HTML-Inhalten zusammen mit CSS-Stilen in Word-Dokumente unter Beibehaltung der Formatierung.
 
-### Ist Aspose.Words für die Dokumentenverarbeitung im großen Maßstab geeignet?
+### Ist Aspose.Words für die Verarbeitung umfangreicher Dokumente geeignet?
 
 Auf jeden Fall! Aspose.Words ist für die effiziente Bewältigung umfangreicher Dokumentverarbeitungsaufgaben konzipiert und stellt somit eine zuverlässige Wahl für Anwendungen auf Unternehmensebene dar.
 

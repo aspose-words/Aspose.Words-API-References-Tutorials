@@ -81,7 +81,7 @@ Mengkloning dokumen sangatlah mudah dengan Aspose. Kata-kata:
 
 Setelah semuanya siap, saatnya menjalankan kode Anda dan melihat hasilnya:
 
-1.  Bangun Proyek Anda: Klik pada`Build` menu dan pilih`Build Solution`. Pastikan tidak ada kesalahan.
+1. Bangun Proyek Anda: Klik pada`Build` menu dan pilih`Build Solution`. Pastikan tidak ada kesalahan.
 2.  Jalankan Proyek Anda: Tekan`F5` atau klik`Start` tombol untuk menjalankan proyek Anda. Jika semuanya sudah diatur dengan benar, dokumen kloning baru akan muncul di direktori dokumen Anda.
 
 ## Langkah 6: Verifikasi Outputnya

@@ -18,7 +18,7 @@ Antes de profundizar en los detalles de la generación de etiquetas de códigos 
 
 1. Entorno de desarrollo de Java: asegúrese de tener Java y un entorno de desarrollo integrado (IDE) instalado en su sistema.
 
-2.  Aspose.Words para Java: descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
+2.  Aspose.Words para Java: Descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
 3. Conocimientos básicos de Java: la familiaridad con la programación Java será útil ya que escribiremos código Java para crear etiquetas de códigos de barras personalizadas.
 
@@ -28,7 +28,7 @@ Ahora, comencemos a crear etiquetas de códigos de barras personalizadas usando 
 
 ## Configuración de la altura del código de barras
 
-Para comenzar, necesitamos establecer la altura de nuestro código de barras en twips (1/1440 pulgadas). Luego convertiremos este valor a milímetros (mm). Aquí está el código para lograr esto:
+Para comenzar, debemos establecer la altura de nuestro código de barras en twips (1/1440 pulgadas). Luego convertiremos este valor a milímetros (mm). Aquí está el código para lograr esto:
 
 ```java
 	// El valor de entrada está en 1/1440 pulgadas (twips)

@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Ladda dokumentet och klona avsnittet
- Därefter laddar vi Word-dokumentet i en instans av`Document` klass. Vi kommer då att använda`Clone` metod för att klona den första delen av dokumentet.
+ Därefter laddar vi Word-dokumentet i en instans av`Document` klass. Vi kommer då att använda`Clone`metod för att klona den första delen av dokumentet.
 
 ```csharp
 // Ladda dokumentet
@@ -49,7 +49,7 @@ Section cloneSection = doc.Sections[0].Clone();
 ```
 
 ## Slutsats
-den här handledningen såg vi hur man klona en del av ett Word-dokument med Aspose.Words för .NET. Sektionskloning låter dig skapa identiska kopior av befintliga avsnitt i ett dokument. Känn dig fri att anpassa och använda denna klonfunktion i dina projekt för att effektivt manipulera och redigera delar av dina dokument.
+I den här handledningen såg vi hur man klona en del av ett Word-dokument med Aspose.Words för .NET. Sektionskloning låter dig skapa identiska kopior av befintliga avsnitt i ett dokument. Känn dig fri att anpassa och använda denna klonfunktion i dina projekt för att effektivt manipulera och redigera delar av dina dokument.
 
 ### FAQ's
 

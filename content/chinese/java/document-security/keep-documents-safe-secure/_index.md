@@ -152,7 +152,7 @@ doc.save("path/to/watermarked/document.docx");
 
 ## 10. 编辑敏感信息
 
-共享文档时，您可能希望永久删除敏感信息，以确保其不会落入坏人之手。 Aspose.Words for Java 允许您编辑敏感内容：
+共享文档时，您可能希望永久删除敏感信息，以确保其不会落入坏人之手。 Aspose.Words for Java 允许您删除敏感内容：
 
 ```java
 //搜索并编辑敏感信息
@@ -186,7 +186,7 @@ doc.save("path/to/converted/document.html", SaveFormat.HTML);
 
 ## 12. 文档安全最佳实践
 
-为了确保文档的强大安全性，请遵循以下最佳做法：
+为了确保文档的安全性，请遵循以下最佳做法：
 
 - 定期更新您的安全措施以防范潜在威胁。
 - 使用强密码和加密算法。
@@ -199,7 +199,7 @@ doc.save("path/to/converted/document.html", SaveFormat.HTML);
 
 ## 14. 结论
 
-在本分步指南中，我们探讨了文档安全的重要性以及 Aspose.Words for Java 如何帮助保护您的文档免受未经授权的访问。通过利用该库的功能（例如密码保护、加密、数字签名、水印和修订），您可以确保您的文档保持安全。
+在本分步指南中，我们探讨了文档安全的重要性以及 Aspose.Words for Java 如何帮助保护您的文档免遭未经授权的访问。通过利用该库的功能（例如密码保护、加密、数字签名、水印和修订），您可以确保您的文档保持安全。
 
 ## 常见问题解答
 
@@ -209,7 +209,7 @@ doc.save("path/to/converted/document.html", SaveFormat.HTML);
 ### Aspose.Words 除了 Word 之外还支持其他文档格式吗？
    是的，Aspose.Words 支持多种格式，包括 PDF、HTML、EPUB 等。
 
-### 是否可以在文档中添加多个数字签名？
+### 是否可以在一份文档中添加多个数字签名？
    是的，Aspose.Words 允许您向文档添加多个数字签名。
 
 ### Aspose.Words 支持文档密码恢复吗？

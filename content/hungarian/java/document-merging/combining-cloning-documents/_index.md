@@ -18,7 +18,7 @@ Mielőtt belemerülnénk a kódolási részbe, győződjön meg arról, hogy a k
 
 - Java Development Kit (JDK) telepítve a rendszerére
 - Aspose.Words for Java könyvtár
-- Integrált fejlesztői környezet (IDE) a Java számára, például az Eclipse vagy az IntelliJ IDEA
+- Integrált fejlesztői környezet (IDE) Java-hoz, például az Eclipse vagy az IntelliJ IDEA
 
 Most, hogy készen vannak az eszközeink, kezdjük el.
 

@@ -2,137 +2,93 @@
 title: Listar estilos de destino de uso
 linktitle: Listar estilos de destino de uso
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a unir y anexar documentos de Word mientras conserva los estilos de lista del documento de destino utilizando Aspose.Words para .NET.
+description: Aprenda cómo combinar documentos de Word usando Aspose.Words para .NET sin perder el formato de la lista. Guía paso a paso para mantener intactos los estilos de sus documentos.
 type: docs
 weight: 10
 url: /es/net/join-and-append-documents/list-use-destination-styles/
 ---
+## Introducción
 
-Este tutorial lo guiará a través del proceso de uso de la función Listar estilos de destino de uso de Aspose.Words para .NET. Esta función le permite unir y agregar documentos de Word mientras usa los estilos de lista del documento de destino.
+¿Alguna vez has intentado fusionar documentos de Word y te has enredado con el formato? A veces es como intentar mezclar aceite y agua, ¿verdad? Bueno, hoy nos sumergiremos en un ingenioso truco usando Aspose.Words para .NET que le evitará este dolor de cabeza. Aprenderemos cómo importar listas de un documento a otro sin estropear la numeración y los estilos. ¿Listo para hacer tu vida un poco más fácil? ¡Empecemos!
 
 ## Requisitos previos
 
-Antes de comenzar, asegúrese de tener lo siguiente:
+Antes de lanzarnos a la magia, asegurémonos de que tienes todo lo que necesitas:
 
-1. Aspose.Words para .NET instalado. Puede descargarlo del sitio web de Aspose o instalarlo a través de NuGet.
-2. Visual Studio o cualquier otro entorno de desarrollo C#.
+1.  Aspose.Words para .NET: si aún no lo has hecho, descárgalo[aquí](https://releases.aspose.com/words/net/).
+2. Visual Studio: cualquier versión reciente servirá.
+3. Un conocimiento básico de C#: no es necesario ser un mago, pero algo de familiaridad le ayudará.
 
-## Paso 1: inicializar los directorios de documentos
+ Asegúrate de tener Aspose.Words instalado y configurado en tu proyecto. Si no está seguro de cómo hacer esto, el[documentación](https://reference.aspose.com/words/net/) es un gran lugar para comenzar.
 
- Primero, debe establecer la ruta a su directorio de documentos. Modificar el valor de la`dataDir` variable a la ruta donde se encuentran sus documentos.
+## Importar espacios de nombres
+
+Primero lo primero, importemos los espacios de nombres necesarios en su archivo C#:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+¿Tienes esos? Impresionante. Ahora, analicemos esto paso a paso.
+
+## Paso 1: configure las rutas de sus documentos
+
+Cada proyecto comienza con la organización de sus archivos. Apuntemos nuestro código al directorio donde están almacenados sus documentos.
+
+```csharp
+// La ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Paso 2: cargue los documentos de origen y de destino
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde se almacenan sus documentos. Fácil, ¿verdad?
 
- continuación, debe cargar los documentos de origen y de destino utilizando Aspose.Words.`Document` clase. Actualice los nombres de los archivos en el`Document` constructor de acuerdo con los nombres de sus documentos.
+## Paso 2: cargue sus documentos de origen y destino
+
+A continuación, debemos cargar los documentos de origen y de destino. Piense en ello como abrir dos archivos de Word en su computadora.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Paso 3: configurar el documento de origen para que continúe después del documento de destino
+ Aquí,`srcDoc` es su documento fuente (el que tiene las listas que desea copiar), y`dstDoc` es su documento de destino (aquel donde desea pegar esas listas).
 
- Para garantizar que el contenido del documento de origen continúe después del final del documento de destino, debe configurar el`SectionStart` propiedad de la primera sección del documento fuente para`SectionStart.Continuous`.
+## Paso 3: configurar las opciones de importación
 
-```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-```
-
-## Paso 4: Manejar el formato de la lista
-
-Para manejar el formato de la lista, recorrerá cada párrafo del documento fuente y comprobará si es un elemento de la lista. Si es así, comparará el ID de la lista con las listas existentes en el documento de destino. Si existe una lista con el mismo ID, creará una copia de la lista en el documento fuente y actualizará el formato de lista del párrafo para usar la lista copiada.
+Necesitamos especificar algunas opciones para asegurarnos de que las listas se importen correctamente. Este paso garantiza que, si hay algún conflicto de numeración, se conserve la numeración del documento fuente.
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## Paso 5: agregue el documento de origen al documento de destino
+## Paso 4: agregue el documento de origen al documento de destino
 
- Ahora, puede adjuntar el documento de origen al documento de destino utilizando el`AppendDocument` método de la`Document` clase. El`ImportFormatMode.UseDestinationStyles` El parámetro garantiza que los estilos de lista del documento de destino se utilicen durante la operación de adición.
+Ahora, hagamos la fusión. Aquí es donde ocurre la magia. Adjuntamos el documento de origen al documento de destino mientras utilizamos las opciones de importación especificadas.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## Paso 6: guarde el documento final
+Ha fusionado exitosamente dos documentos, manteniendo las listas intactas.
 
-Finalmente, guarde el documento combinado con la función Listar estilos de destino de uso habilitada usando el`Save` método de la`Document` clase.
+## Conclusión
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+¡Ahí tienes! Fusionar documentos sin perder la cabeza por problemas de formato es muy sencillo con Aspose.Words para .NET. Ya sea que esté trabajando en un proyecto grande o simplemente necesite ordenar algunos archivos, este método mantendrá sus listas en buen estado. Así que la próxima vez que te enfrentes a un dilema al fusionar documentos, recuerda esta guía y afrontala como un profesional.
 
-### Código fuente de ejemplo para estilos de destino de uso de lista usando Aspose.Words para .NET 
+## Preguntas frecuentes
 
-Aquí está el código fuente completo de la función "Listar estilos de destino de uso" en C# usando Aspose.Words para .NET:
+### ¿Qué es Aspose.Words para .NET?
+Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos de Word mediante programación. Le permite crear, modificar y convertir documentos en varios formatos.
 
+### ¿Cómo instalo Aspose.Words para .NET?
+ Puedes descargarlo desde el[sitio web](https://releases.aspose.com/words/net/) y siga las instrucciones de instalación en el[documentación](https://reference.aspose.com/words/net/).
 
-```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### ¿Puedo utilizar Aspose.Words gratis?
+ Aspose.Words ofrece una[prueba gratis](https://releases.aspose.com/) con funciones limitadas. Para obtener acceso completo, deberá adquirir una licencia[aquí](https://purchase.aspose.com/buy).
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Configure el documento de origen para que continúe inmediatamente después del final del documento de destino.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// Mantenga un registro de las listas que se crean.
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			// Compruebe si el documento de destino ya contiene una lista con este ID. Si es así, entonces esto puede
-			// hacer que las dos listas se ejecuten juntas. En su lugar, cree una copia de la lista en el documento fuente.
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				// Ya existe una lista recién copiada para este ID. Recupere la lista almacenada.
-				// y utilícelo en el párrafo actual.
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					// Agregue una copia de esta lista al documento y guárdela para consultarla en el futuro.
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				// Establezca la lista de este párrafo en la lista copiada.
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	// Adjunte el documento de origen al final del documento de destino.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### ¿Qué son las opciones de formato de importación?
+ ImportFormatOptions le permite especificar cómo se maneja el formato al importar contenido de un documento a otro. Por ejemplo,`KeepSourceNumbering` garantiza que se conserve la numeración de la lista del documento fuente.
 
-¡Eso es todo! Ha implementado con éxito la función Listar estilos de destino utilizando Aspose.Words para .NET. El documento final contendrá el contenido combinado con los estilos de lista del documento de destino.
+### ¿Dónde puedo obtener soporte para Aspose.Words?
+ Puede obtener apoyo del[Foro Aspose.Words](https://forum.aspose.com/c/words/8), donde puede hacer preguntas y obtener ayuda de la comunidad y de los desarrolladores de Aspose.

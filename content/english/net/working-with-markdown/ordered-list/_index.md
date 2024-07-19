@@ -2,96 +2,96 @@
 title: Ordered List
 linktitle: Ordered List
 second_title: Aspose.Words Document Processing API
-description: Learn how to create ordered list with Aspose.Words for .NET Step-by-step guide.
+description: Learn how to create ordered lists in Word documents using Aspose.Words for .NET with our step-by-step guide. Perfect for automating document creation.
 type: docs
 weight: 10
 url: /net/working-with-markdown/ordered-list/
 ---
+## Introduction
 
-In this example, we will explain how to use the ordered list functionality with Aspose.Words for .NET. Ordered List allow you to organize items sequentially with numbers.
+So, you've decided to dive into Aspose.Words for .NET to create amazing Word documents programmatically. Fantastic choice! Today, we're going to break down how to create an ordered list in a Word document. We'll take it step by step, so whether you're a coding newbie or a seasoned pro, you'll find this guide super helpful. Let's get started!
 
-## Step 1: Using a document generator
+## Prerequisites
 
-First, we'll use a document generator to create a new document.
+Before we dive into the code, there are a few things you'll need:
+
+1. Aspose.Words for .NET: Make sure you have Aspose.Words for .NET installed. If you don't, you can download it [here](https://releases.aspose.com/words/net/).
+2. Development Environment: Visual Studio or any other .NET compatible IDE.
+3. Basic Knowledge of C#: You should be comfortable with C# basics to follow along easily.
+
+## Import Namespaces
+
+To use Aspose.Words in your project, you need to import the necessary namespaces. This is like setting up your toolbox before you start working.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Let's break down the code into bite-sized steps and explain each part. Ready? Here we go!
+
+## Step 1: Initialize the Document
+
+First things first, you need to create a new document. Think of this as opening a blank Word document on your computer.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Step 2: Applying the ordered list format
+Here, we're initializing a new document and a DocumentBuilder object. The DocumentBuilder is like your pen, allowing you to write content into the document.
 
-We will apply the ordered list format using the document builder's `ApplyBulletDefault` method. We can also customize the numbering format by going to the list levels and setting the format we want.
+## Step 2: Apply Numbered List Format
+
+Now, let's apply a default numbered list format. This is like setting your Word document to use numbered bullets.
 
 ```csharp
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
+builder.ListFormat.ApplyNumberDefault();
 ```
 
-## Step 3: Adding items to the list
+This line of code sets up the numbering for your list. Easy, right?
 
-We can add items to the list using the document generator's `Writeln` method.
+## Step 3: Add List Items
 
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Step 4: Indent the list
-
-We can indent the list using the document generator's `ListIndent` method.
+Next, let's add some items to our list. Imagine you're jotting down a grocery list.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
-```
-
-## Step 5: Saving the document
-
-Finally, we can save the document in the desired format.
-
-### Example source code for ordered list with Aspose.Words for .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+With these lines, you're adding the first two items to your list.
+
+## Step 4: Indent the List
+
+What if you want to add sub-items under an item? Let's do that!
+
+```csharp
 builder.ListFormat.ListIndent();
 
 builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Congratulation ! You have now learned how to use the ordered list feature with Aspose.Words for .NET.
+The `ListIndent` method indents the list, creating a sub-list. You're now creating a hierarchical list, much like a nested to-do list.
 
+## Conclusion
 
-### FAQ's
+Creating an ordered list in a Word document programmatically can seem daunting at first, but with Aspose.Words for .NET, it's a breeze. By following these simple steps, you can easily add and manage lists in your documents. Whether you're generating reports, creating structured documents, or just automating your workflows, Aspose.Words for .NET has got you covered. So, why wait? Start coding and see the magic unfold!
 
-#### Q: How to create an ordered list in Markdown?
+## FAQ's
 
-A: To create an ordered list in Markdown, start each list item with a number followed by a period (`1.`, `2.`, `3.`), followed by a space.
+### Can I customize the numbering style of the list?  
+Yes, you can customize the numbering style using the `ListFormat` properties. You can set different numbering styles like Roman numerals, letters, etc.
 
-#### Q: Can we nest ordered lists in Markdown?
+### How do I add more levels of indentation?  
+You can use the `ListIndent` method multiple times to create deeper levels of sub-lists. Each call to `ListIndent` adds one level of indentation.
 
-A: Yes, it is possible to nest ordered lists in Markdown by adding four offset spaces in front of each nested list item.
+### Can I mix bullet points and numbered lists?  
+Absolutely! You can apply different list formats within the same document using the `ListFormat` property.
 
-#### Q: How to customize numbering of ordered lists?
+### Is it possible to continue numbering from a previous list?  
+Yes, you can continue numbering by using the same list format. Aspose.Words allows you to control list numbering across different paragraphs.
 
-A: In standard Markdown, ordered list numbering is generated automatically. However, some Markdown editors allow you to customize it using specific extensions.
-
-#### Q: Do ordered lists in Markdown support indentation?
-
-A: Yes, ordered lists in Markdown support indentation. You can add a left shift using spaces or tabs.
-
-#### Q: Can links or inline text be added to list items?
-
-A: Yes, you can add links or inline text to list items using the appropriate Markdown syntax.
+### How can I remove the list format?  
+You can remove the list format by calling `ListFormat.RemoveNumbers()`. This will turn the list items back into regular paragraphs.

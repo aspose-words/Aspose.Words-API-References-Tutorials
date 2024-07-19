@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 接下來，我們需要將遊標移到文件中要插入合併欄位的特定段落。
 
 ```csharp
-//將遊標移至段落。
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## 第 6 步：插入合併字段

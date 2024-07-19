@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-请务必将“您的文档目录”替换为您的文档目录的实际路径，并提供正确的文件名。
+请确保将“您的文档目录”替换为您的文档目录的实际路径，并提供正确的文件名。
 
 ## 步骤 3：禁用表格行分隔符
 接下来，我们将禁用表中的所有行的换行。使用以下代码：

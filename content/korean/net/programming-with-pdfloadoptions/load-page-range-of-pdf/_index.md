@@ -15,7 +15,7 @@ url: /ko/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 PDF 문서에서 특정 페이지 범위를 로드하려면 다음 코드를 사용하십시오.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
+//문서 디렉터리의 경로입니다.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- 이 예에서는 PDF 문서의 첫 번째 페이지를 로드합니다. 값을 변경할 수 있습니다.`PageIndex` 그리고`PageCount` 원하는 페이지 범위로 이동합니다.
+ 이 예에서는 PDF 문서의 첫 번째 페이지를 로드합니다. 값을 변경할 수 있습니다.`PageIndex`그리고`PageCount` 원하는 페이지 범위로 이동합니다.
 
 ## 2단계: 문서 저장
 

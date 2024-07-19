@@ -110,7 +110,7 @@ Teljesen! A Markdown szintaxis használatával képeket szúrhat be a dokumentum
 
 Igen, az Aspose.Words módszereket biztosít az oldalelrendezés és a margók igényeinek megfelelő beállítására.
 
-### Menthetem a dokumentumomat különböző formátumokban?
+### Elmenthetem a dokumentumomat különböző formátumokban?
 
 Igen, az Aspose.Words támogatja a dokumentumok mentését különféle formátumokban, például DOCX, PDF, HTML stb.
 

@@ -14,7 +14,7 @@ Stellen Sie vor dem Start sicher, dass Sie die Aspose.Words für .NET-Bibliothek
 
 ## Schritt 1: Verzeichnisse definieren
 
- Zu Beginn müssen Sie die Verzeichnisse definieren, in denen Sie die Dateien entsprechend ihrem Format speichern möchten. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis. Wir erstellen die Verzeichnisse „Supported“, „Unknown“, „Encrypted“ und „Pre97“, falls sie noch nicht vorhanden sind.
+ Zu Beginn müssen Sie die Verzeichnisse definieren, in denen Sie die Dateien entsprechend ihrem Format speichern möchten. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"`mit dem tatsächlichen Pfad zu Ihrem Dokumentenverzeichnis. Wir erstellen die Verzeichnisse „Supported“, „Unknown“, „Encrypted“ und „Pre97“, falls sie noch nicht vorhanden sind.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -36,7 +36,7 @@ Directory.CreateDirectory(pre97Dir);
 
 ## Schritt 2: Dateien durchsuchen
 
- Dann verwenden wir die`GetFiles` Methode der`Directory` Klasse, um die Liste der Dateien im angegebenen Verzeichnis zu erhalten. Wir verwenden auch eine`Where`Klausel, um eine bestimmte Datei mit dem Namen „Beschädigtes Dokument.docx“ auszuschließen.
+ Dann verwenden wir die`GetFiles` Methode der`Directory` Klasse, um die Liste der Dateien im angegebenen Verzeichnis zu erhalten. Wir verwenden auch eine`Where` Klausel, um eine bestimmte Datei mit dem Namen „Beschädigtes Dokument.docx“ auszuschließen.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -211,7 +211,7 @@ Das ist alles! Sie haben das Format verschiedener Dokumentdateien mit Aspose.Wor
 
 #### Wie erkennt man das Format einer Dokumentdatei mit Aspose.Words für .NET?
 
- Um das Format einer Dokumentdatei mit Aspose.Words für .NET zu erkennen, können Sie die im Tutorial beschriebenen Schritte befolgen. Mit dem`DetectFileFormat` Methode der`FileFormatUtil`Mit der Klasse können Sie das Format der Dokumentdatei erkennen. So können Sie feststellen, ob es sich um ein Microsoft Word 97-2003-Dokument, eine Vorlage, ein Office Open XML WordprocessingML-Dokument oder um ein anderes unterstütztes Format handelt. Der im Lernprogramm bereitgestellte Code führt Sie durch die Implementierung dieser Funktion.
+ Um das Format einer Dokumentdatei mit Aspose.Words für .NET zu erkennen, können Sie die im Tutorial beschriebenen Schritte befolgen. Mit dem`DetectFileFormat` Methode der`FileFormatUtil` Mit der Klasse können Sie das Format der Dokumentdatei erkennen. So können Sie feststellen, ob es sich um ein Microsoft Word 97-2003-Dokument, eine Vorlage, ein Office Open XML WordprocessingML-Dokument oder um ein anderes unterstütztes Format handelt. Der im Lernprogramm bereitgestellte Code führt Sie durch die Implementierung dieser Funktion.
 
 #### Welche Dokumentformate unterstützt Aspose.Words für .NET?
 

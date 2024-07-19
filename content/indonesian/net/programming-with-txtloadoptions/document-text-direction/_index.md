@@ -40,7 +40,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
- Pada langkah ini, kita mengakses paragraf pertama dokumen menggunakan`FirstSection` Dan`Body` properti. Selanjutnya, kita mengakses`ParagraphFormat.Bidi` properti untuk mendapatkan arah teks paragraf. Kami kemudian menampilkan nilai ini di konsol.
+ Pada langkah ini, kita mengakses paragraf pertama dokumen menggunakan`FirstSection`Dan`Body` properti. Selanjutnya, kita mengakses`ParagraphFormat.Bidi` properti untuk mendapatkan arah teks paragraf. Kami kemudian menampilkan nilai ini di konsol.
 
 ## Langkah 5: Simpan dokumen
 

@@ -2,75 +2,111 @@
 title: Otevřené funkce typu
 linktitle: Otevřené funkce typu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Přečtěte si, jak povolit a používat funkce Open Type v Aspose.Words for .NET
+description: Naučte se, jak aktivovat funkce OpenType v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/enable-opentype-features/open-type-features/
 ---
+## Úvod
 
-tomto komplexním tutoriálu se dozvíte, jak povolit a využívat funkce Open Type v Aspose.Words pro .NET. Provedeme vás celým procesem a poskytneme vám potřebné úryvky kódu C#. Na konci této příručky budete schopni pracovat s funkcemi Open Type v dokumentech aplikace Word.
+Jste připraveni ponořit se do světa funkcí OpenType pomocí Aspose.Words pro .NET? Připoutejte se, protože se chystáme vyrazit na poutavou cestu, která nejen vylepší vaše dokumenty Wordu, ale také z vás udělá experta na Aspose.Words. Začněme!
 
 ## Předpoklady
-Než začneme, ujistěte se, že máte následující předpoklady:
-- Knihovna Aspose.Words for .NET nainstalovaná ve vašem systému.
 
-## Krok 1: Vložte dokument
-Chcete-li začít, načtěte dokument pomocí třídy Document:
+Než začneme, ujistěte se, že máte následující:
+
+1.  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+2. .NET Framework: Ujistěte se, že máte nainstalovanou kompatibilní verzi rozhraní .NET Framework.
+3. Visual Studio: Integrované vývojové prostředí (IDE) pro kódování.
+4. Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
+
+## Importovat jmenné prostory
+
+Nejprve budete muset importovat potřebné jmenné prostory pro přístup k funkcím poskytovaným Aspose.Words pro .NET. Můžete to udělat takto:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Shaping.HarfBuzz;
+```
+
+Nyní si příklad rozdělíme do několika kroků ve formátu podrobného průvodce.
+
+## Krok 1: Nastavte svůj projekt
+
+### Vytvoření nového projektu
+
+Otevřete Visual Studio a vytvořte nový projekt C#. Pojmenujte to nějak smysluplně jako „OpenTypeFeaturesDemo“. Toto bude naše hřiště pro experimentování s funkcemi OpenType.
+
+### Přidání odkazu Aspose.Words
+
+Chcete-li používat Aspose.Words, musíte jej přidat do svého projektu. Můžete to udělat pomocí Správce balíčků NuGet:
+
+1. Klepněte pravým tlačítkem myši na svůj projekt v Průzkumníku řešení.
+2. Vyberte „Spravovat balíčky NuGet“.
+3. Vyhledejte "Aspose.Words" a nainstalujte jej.
+
+## Krok 2: Vložte svůj dokument
+
+### Určení adresáře dokumentů
+
+Vytvořte řetězcovou proměnnou, která bude obsahovat cestu k adresáři vašeho dokumentu. Zde je uložen váš dokument aplikace Word.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou, kde se váš dokument nachází.
+
+### Načítání dokumentu
+
+Nyní načtěte dokument pomocí Aspose.Words:
+
+```csharp
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 ```
 
-## Krok 2: Povolte funkce otevřeného typu
-Chcete-li povolit funkce Open Type, nastavte vlastnost TextShaperFactory třídy LayoutOptions na instanci požadované továrny na tvarování textu. V tomto příkladu používáme HarfBuzzTextShaperFactory:
+Tento řádek kódu otevře zadaný dokument, abychom s ním mohli manipulovat.
+
+## Krok 3: Povolte funkce OpenType
+
+ HarfBuzz je open-source nástroj pro tvarování textu, který bezproblémově spolupracuje s Aspose.Words. Abychom povolili funkce OpenType, musíme nastavit`TextShaperFactory` vlastnictvím`LayoutOptions` objekt.
 
 ```csharp
-doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
+doc.LayoutOptions.TextShaperFactory = HarfBuzzTextShaperFactory.Instance;
 ```
 
-## Krok 3: Uložte dokument
-Po povolení funkcí Open Type uložte dokument v požadovaném výstupním formátu, jako je PDF:
+Tento fragment kódu zajišťuje, že váš dokument používá HarfBuzz pro tvarování textu, což umožňuje pokročilé funkce OpenType.
+
+## Krok 4: Uložte dokument
+
+Nakonec svůj upravený dokument uložte jako PDF, abyste viděli výsledky své práce.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-### Příklad zdrojového kódu pro funkce Open Type pomocí Aspose.Words pro .NET
-Zde je úplný zdrojový kód pro použití funkcí Open Type v Aspose.Words pro .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "OpenType text shaping.docx");
-
-doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
-
-doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
-```
+Tento řádek kódu uloží dokument ve formátu PDF se začleněním funkcí OpenType povolených HarfBuzz.
 
 ## Závěr
-Gratulujeme! Úspěšně jste se naučili, jak aktivovat a využívat funkce Open Type v Aspose.Words pro .NET. Podle podrobného průvodce a pomocí poskytnutého zdrojového kódu můžete nyní pracovat s funkcemi Open Type v dokumentech aplikace Word.
 
-Funkce Open Type nabízejí vylepšené možnosti typografie a tvarování textu, což vám umožní vytvářet vizuálně přitažlivé a profesionálně vypadající dokumenty. Experimentujte s různými továrnami na tvarování textu a prozkoumejte možnosti funkcí Open Type ve svých projektech.
+A tady to máte! Úspěšně jste povolili funkce OpenType ve svém dokumentu Word pomocí Aspose.Words for .NET. Pomocí těchto kroků můžete odemknout pokročilé typografické možnosti a zajistit, aby vaše dokumenty vypadaly profesionálně a vyleštěně.
 
-### FAQ
+Ale nezastavujte se tady! Prozkoumejte další funkce Aspose.Words a zjistěte, jak můžete dále vylepšit své dokumenty. Pamatujte, že cvičení dělá mistra, takže pokračujte v experimentování a učení.
 
-#### Otázka: Jak povolím funkce OpenType v Aspose.Words pro .NET?
+## FAQ
 
-A: Chcete-li povolit funkce OpenType v Aspose.Words pro .NET, musíte postupovat podle kroků uvedených v tutoriálu.
+### Jaké jsou funkce OpenType?
+Funkce OpenType zahrnují pokročilé typografické funkce, jako jsou ligatury, vyrovnání párů a stylistické sady, které zlepšují vzhled textu v dokumentech.
 
-#### Otázka: Jaké funkce OpenType jsou podporovány v Aspose.Words pro .NET?
+### Proč používat HarfBuzz s Aspose.Words?
+HarfBuzz je open-source modul pro tvarování textu, který poskytuje robustní podporu pro funkce OpenType a zvyšuje typografickou kvalitu vašich dokumentů.
 
-Odpověď: Aspose.Words for .NET podporuje několik funkcí OpenType, jako jsou ligatury, variace glyfů, kontextové substituce a další.
+### Mohu s Aspose.Words použít jiné nástroje pro tvarování textu?
+Ano, Aspose.Words podporuje různé motory pro tvarování textu. HarfBuzz je však vysoce doporučen kvůli jeho komplexní podpoře funkcí OpenType.
 
-#### Otázka: Jak mohu zkontrolovat, zda je funkce OpenType podporována v konkrétním písmu?
+### Je Aspose.Words kompatibilní se všemi verzemi .NET?
+ Aspose.Words podporuje různé verze .NET, včetně .NET Framework, .NET Core a .NET Standard. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) pro podrobné informace o kompatibilitě.
 
-Odpověď: Můžete zkontrolovat, zda je funkce OpenType podporována v konkrétním písmu pomocí`Font.OpenTypeFeatures` metoda v Aspose.Words pro .NET.
-
-#### Otázka: Jaké další funkce formátování textu Aspose.Words for .NET podporuje?
-
-A: Kromě funkcí OpenType podporuje Aspose.Words pro .NET také další funkce formátování textu, jako je formátování odstavců, vytváření tabulek, přidávání obrázků atd.
-
-#### Otázka: Mohu používat funkce OpenType ve všech verzích Aspose.Words pro .NET?
-
-A: Funkce OpenType jsou podporovány v novějších verzích Aspose.Words pro .NET. Ujistěte se, že používáte kompatibilní verzi, abyste mohli využívat tyto funkce.
+### Jak mohu vyzkoušet Aspose.Words před nákupem?
+ Můžete si stáhnout bezplatnou zkušební verzi z[Aspose webové stránky](https://releases.aspose.com/) a požádat o dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).

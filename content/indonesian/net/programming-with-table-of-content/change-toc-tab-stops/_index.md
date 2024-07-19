@@ -40,7 +40,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-Dalam contoh ini, kami menggunakan loop untuk mengulang setiap paragraf dalam dokumen. Kami kemudian memeriksa apakah paragraf diformat menggunakan gaya Hasil Daftar Isi (TOC). Jika demikian, kita mengakses tab pertama yang digunakan dalam paragraf ini dan memodifikasinya dengan menghapus tab lama dan menambahkan tab baru dengan posisi yang dimodifikasi.
+Dalam contoh ini, kami menggunakan loop untuk mengulang setiap paragraf dalam dokumen. Kami kemudian memeriksa apakah paragraf diformat menggunakan gaya Hasil Daftar Isi (TOC). Jika demikian, kami mengakses tab pertama yang digunakan dalam paragraf ini dan memodifikasinya dengan menghapus tab lama dan menambahkan tab baru dengan posisi yang dimodifikasi.
 
 ## Simpan dokumen yang dimodifikasi
 
@@ -118,7 +118,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-Dalam kode ini, perulangan mengulangi setiap paragraf dalam dokumen. Jika sebuah paragraf memiliki gaya TOC, paragraf tersebut mengakses perhentian tab pertama yang digunakan dalam paragraf tersebut, menghapusnya, dan menambahkan perhentian tab baru dengan posisi yang diubah.
+Dalam kode ini, perulangan mengulangi setiap paragraf dalam dokumen. Jika sebuah paragraf memiliki gaya TOC, paragraf tersebut mengakses perhentian tab pertama yang digunakan dalam paragraf tersebut, menghapusnya, dan menambahkan perhentian tab baru dengan posisi yang dimodifikasi.
 
 #### T: Bisakah saya mengubah tab untuk beberapa level di daftar isi menggunakan Aspose.Words untuk .NET?
 

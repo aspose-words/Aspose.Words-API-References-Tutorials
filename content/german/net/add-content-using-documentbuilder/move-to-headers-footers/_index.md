@@ -110,7 +110,7 @@ Aspose.Words für .NET ist eine Bibliothek, die es Entwicklern ermöglicht, Word
  Ja, Sie können Bilder zu Kopf- und Fußzeilen hinzufügen, indem Sie`DocumentBuilder.InsertImage` Methode.
 
 ### Ist es möglich, für jeden Abschnitt unterschiedliche Kopf- und Fußzeilen zu haben?
- Absolut! Sie können für jeden Abschnitt einzigartige Kopf- und Fußzeilen haben, indem Sie unterschiedliche`HeaderFooterType` für jeden Abschnitt.
+ Absolut! Sie können für jeden Abschnitt einzigartige Kopf- und Fußzeilen haben, indem Sie verschiedene`HeaderFooterType` für jeden Abschnitt.
 
 ### Wie erstelle ich komplexere Layouts in Kopf- und Fußzeilen?
 Sie können Tabellen, Bilder und verschiedene Formatierungsoptionen von Aspose.Words verwenden, um komplexe Layouts zu erstellen.

@@ -2,137 +2,93 @@
 title: قائمة استخدام أنماط الوجهة
 linktitle: قائمة استخدام أنماط الوجهة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية ضم مستندات Word وإلحاقها مع الحفاظ على أنماط قائمة المستند الوجهة باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية دمج مستندات Word باستخدام Aspose.Words لـ .NET دون فقدان تنسيق القائمة. دليل خطوة بخطوة للحفاظ على أنماط المستندات الخاصة بك سليمة.
 type: docs
 weight: 10
 url: /ar/net/join-and-append-documents/list-use-destination-styles/
 ---
+## مقدمة
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة "قائمة استخدام أنماط الوجهة" في Aspose.Words for .NET. تسمح لك هذه الميزة بالانضمام إلى مستندات Word وإلحاقها أثناء استخدام أنماط القائمة الخاصة بالمستند الوجهة.
+هل سبق لك أن حاولت دمج مستندات Word وتشابكت مع التنسيق؟ إنه مثل محاولة خلط الزيت والماء في بعض الأحيان، أليس كذلك؟ حسنًا، سنتعمق اليوم في خدعة رائعة باستخدام Aspose.Words for .NET والتي ستنقذك من هذا الصداع. سنتعلم كيفية استيراد القوائم من مستند إلى آخر دون العبث بالترقيم والأنماط. على استعداد لجعل حياتك أسهل قليلا؟ هيا بنا نبدأ!
 
 ## المتطلبات الأساسية
 
-قبل أن تبدأ، تأكد من أن لديك ما يلي:
+قبل أن ننتقل إلى السحر، دعونا نتأكد من حصولك على كل ما تحتاجه:
 
-1. تم تثبيت Aspose.Words لـ .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير أخرى لـ C#.
+1.  Aspose.Words for .NET: إذا لم تكن قد قمت بذلك بالفعل، فقم بتنزيله[هنا](https://releases.aspose.com/words/net/).
+2. Visual Studio: أي إصدار حديث سيفي بالغرض.
+3. الفهم الأساسي لـ C#: لست بحاجة إلى أن تكون معالجًا، ولكن بعض المعرفة ستساعدك.
 
-## الخطوة 1: تهيئة أدلة المستندات
+ تأكد من تثبيت Aspose.Words وإعداده في مشروعك. إذا لم تكن متأكدًا من كيفية القيام بذلك، فإن[توثيق](https://reference.aspose.com/words/net/) مكان عظيم للبدء.
 
- أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، لنستورد مساحات الأسماء الضرورية في ملف C# الخاص بك:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+حصلت على تلك؟ مذهل. الآن، دعونا نحلل هذا الأمر خطوة بخطوة.
+
+## الخطوة 1: قم بإعداد مسارات المستندات الخاصة بك
+
+يبدأ كل مشروع بتنظيم ملفاتك. دعنا نوجه الكود الخاص بنا إلى الدليل الذي تم تخزين مستنداتك فيه.
+
+```csharp
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي حيث يتم تخزين المستندات الخاصة بك. الحق سهلة؟
 
-بعد ذلك، تحتاج إلى تحميل المستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في`Document` مُنشئ وفقًا لأسماء المستندات الخاصة بك.
+## الخطوة 2: قم بتحميل مستندات المصدر والوجهة الخاصة بك
+
+بعد ذلك، نحتاج إلى تحميل كل من المستندات المصدر والوجهة. فكر في الأمر على أنه فتح ملفين Word على جهاز الكمبيوتر الخاص بك.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## الخطوة 3: قم بتعيين المستند المصدر للمتابعة بعد المستند الوجهة
+ هنا،`srcDoc` هو مستندك المصدر (المستند الذي يحتوي على القوائم التي تريد نسخها)، و`dstDoc` هو المستند الوجهة (المستند الذي تريد لصق تلك القوائم فيه).
 
- للتأكد من أن المحتوى من المستند المصدر يستمر بعد نهاية المستند الوجهة، تحتاج إلى تعيين`SectionStart` خاصية القسم الأول في الوثيقة المصدر ل`SectionStart.Continuous`.
+## الخطوة 3: تكوين خيارات الاستيراد
 
-```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-```
-
-## الخطوة 4: التعامل مع تنسيق القائمة
-
-للتعامل مع تنسيق القائمة، سوف تقوم بالتكرار خلال كل فقرة في المستند المصدر والتحقق مما إذا كان عنصر قائمة. إذا كان الأمر كذلك، فسوف تقوم بمقارنة معرف القائمة بالقوائم الموجودة في المستند الوجهة. في حالة وجود قائمة بنفس المعرف، فسوف تقوم بإنشاء نسخة من القائمة في المستند المصدر وتحديث تنسيق قائمة الفقرة لاستخدام القائمة المنسوخة.
+نحتاج إلى تحديد بعض الخيارات للتأكد من استيراد القوائم بشكل صحيح. تضمن هذه الخطوة أنه في حالة وجود أي تعارض في الترقيم، فسيتم الاحتفاظ بالترقيم من المستند المصدر.
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## الخطوة 5: إلحاق المستند المصدر بالمستند الوجهة
+## الخطوة 4: إلحاق المستند المصدر بالمستند الوجهة
 
- الآن، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام الملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.UseDestinationStyles` تضمن المعلمة استخدام أنماط قائمة المستند الوجهة أثناء عملية الإلحاق.
+الآن، دعونا نفعل الدمج. هذا هو المكان الذي يحدث السحر. نقوم بإلحاق المستند المصدر بالمستند الوجهة أثناء استخدام خيارات الاستيراد المحددة.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## الخطوة 6: احفظ الوثيقة النهائية
+لقد نجحت في دمج وثيقتين، مع الحفاظ على القوائم سليمة.
 
-أخيرًا، احفظ المستند المدمج مع تمكين ميزة "قائمة استخدام أنماط الوجهة" باستخدام`Save` طريقة`Document` فصل.
+## خاتمة
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+ها أنت ذا! يعد دمج المستندات دون أن تفقد عقلك بشأن مشكلات التنسيق أمرًا سهلاً مع Aspose.Words for .NET. سواء كنت تعمل على مشروع كبير أو تحتاج فقط إلى ترتيب بعض الملفات، فإن هذه الطريقة ستجعل قوائمك تبدو واضحة. لذا، في المرة القادمة التي تواجه فيها معضلة في دمج المستندات، تذكر هذا الدليل وتعامل معه كالمحترفين!
 
-### مثال على التعليمات البرمجية المصدر لقائمة استخدام أنماط الوجهة باستخدام Aspose.Words لـ .NET 
+## الأسئلة الشائعة
 
-إليك الكود المصدري الكامل لميزة "قائمة استخدام أنماط الوجهة" في لغة C# باستخدام Aspose.Words for .NET:
+### ما هو Aspose.Words لـ .NET؟
+تعد Aspose.Words for .NET مكتبة قوية للعمل مع مستندات Word برمجيًا. يسمح لك بإنشاء وتعديل وتحويل المستندات بتنسيقات مختلفة.
 
+### كيف أقوم بتثبيت Aspose.Words لـ .NET؟
+ يمكنك تنزيله من[موقع إلكتروني](https://releases.aspose.com/words/net/) واتبع تعليمات التثبيت في[توثيق](https://reference.aspose.com/words/net/).
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### هل يمكنني استخدام Aspose.Words مجانًا؟
+ يقدم Aspose.Words أ[تجربة مجانية](https://releases.aspose.com/) مع ميزات محدودة. للوصول الكامل، سوف تحتاج إلى شراء ترخيص[هنا](https://purchase.aspose.com/buy).
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// قم بتعيين المستند المصدر للمتابعة مباشرة بعد نهاية المستند الوجهة.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// تتبع القوائم التي تم إنشاؤها.
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			// تحقق مما إذا كان المستند الوجهة يحتوي على قائمة بهذا المعرف بالفعل. إذا كان الأمر كذلك، فهذا قد يكون
-			// يتسبب في تشغيل القائمتين معًا. قم بإنشاء نسخة من القائمة في المستند المصدر بدلاً من ذلك.
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				// هناك قائمة منسوخة حديثًا موجودة بالفعل لهذا المعرف، قم باسترداد القائمة المخزنة،
-				// واستخدامها في الفقرة الحالية.
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					// أضف نسخة من هذه القائمة إلى المستند وقم بتخزينها للرجوع إليها لاحقًا.
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				// اضبط قائمة هذه الفقرة على القائمة المنسوخة.
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	// إلحاق المستند المصدر بنهاية المستند الوجهة.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### ما هي خيارات الاستيراد؟
+ تتيح لك ImportFormatOptions تحديد كيفية التعامل مع التنسيق عند استيراد محتوى من مستند إلى آخر. على سبيل المثال،`KeepSourceNumbering` يضمن الحفاظ على ترقيم القائمة من المستند المصدر.
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة "قائمة استخدام أنماط الوجهة" باستخدام Aspose.Words لـ .NET. سيحتوي المستند النهائي على المحتوى المدمج مع أنماط القائمة من المستند الوجهة.
+### أين يمكنني الحصول على الدعم لـ Aspose.Words؟
+ يمكنك الحصول على الدعم من[منتدى Aspose.Words](https://forum.aspose.com/c/words/8)حيث يمكنك طرح الأسئلة والحصول على المساعدة من المجتمع ومطوري Aspose.

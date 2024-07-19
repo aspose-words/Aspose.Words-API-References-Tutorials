@@ -2,24 +2,38 @@
 title: Giữ đánh số nguồn
 linktitle: Giữ đánh số nguồn
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách nối thêm tài liệu trong khi vẫn giữ nguyên định dạng đánh số nguồn trong Aspose.Words cho .NET.
+description: Tìm hiểu cách nhập tài liệu trong khi vẫn giữ nguyên định dạng bằng Aspose.Words cho .NET. Hướng dẫn từng bước với các ví dụ về mã.
 type: docs
 weight: 10
 url: /vi/net/join-and-append-documents/keep-source-numbering/
 ---
+## Giới thiệu
 
-Hướng dẫn này giải thích cách nối tài liệu nguồn vào tài liệu đích trong khi vẫn giữ nguyên định dạng đánh số ban đầu của các đoạn được đánh số bằng Aspose.Words cho .NET.
+ Khi làm việc với Aspose.Words cho .NET, việc nhập tài liệu từ nguồn này sang nguồn khác trong khi vẫn giữ nguyên định dạng có thể được xử lý một cách hiệu quả bằng cách sử dụng`NodeImporter` lớp học. Hướng dẫn này sẽ hướng dẫn bạn từng bước thực hiện quy trình.
 
-## Bước 1: Thiết lập dự án
+## Điều kiện tiên quyết
 
-Đảm bảo bạn có các điều kiện tiên quyết sau:
+Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
+- Visual Studio được cài đặt trên máy của bạn.
+-  Đã cài đặt Aspose.Words cho .NET. Nếu không, hãy tải xuống từ[đây](https://releases.aspose.com/words/net/).
+- Kiến thức cơ bản về lập trình C# và .NET.
 
--  Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải nó xuống từ[Aspose.Releases]https://releases.aspose.com/words/net/ hoặc sử dụng trình quản lý gói NuGet để cài đặt nó.
-- Đường dẫn thư mục tài liệu nơi tài liệu nguồn và đích sẽ được lưu.
+## Nhập không gian tên
 
-## Bước 2: Tạo tài liệu đích và nguồn
+Đầu tiên, bao gồm các không gian tên cần thiết trong dự án của bạn:
 
- Tạo các trường hợp của`Document` cho các tài liệu đích và nguồn.
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+## Bước 1: Thiết lập dự án của bạn
+
+Bắt đầu bằng cách tạo một dự án C# mới trong Visual Studio và cài đặt Aspose.Words thông qua Trình quản lý gói NuGet.
+
+## Bước 2: Khởi tạo tài liệu
+Tạo các phiên bản của nguồn (`srcDoc`) và đích đến (`dstDoc`) các tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
@@ -29,18 +43,17 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Bước 3: Giữ nguyên đánh số nguồn khi nhập
-
- Để duy trì định dạng đánh số của các đoạn văn được đánh số từ tài liệu nguồn, hãy tạo một phiên bản của`ImportFormatOptions` và thiết lập`KeepSourceNumbering` ĐẾN`true` . Sử dụng một`NodeImporter` để nhập các nút từ tài liệu nguồn vào tài liệu đích, chỉ định`ImportFormatMode.KeepSourceFormatting` và`importFormatOptions`.
+## Bước 3: Định cấu hình tùy chọn nhập
+Thiết lập các tùy chọn nhập để duy trì định dạng nguồn, bao gồm các đoạn được đánh số.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
+	importFormatOptions);
 ```
 
-## Bước 4: Nhập và nối đoạn văn
-
- Lặp lại các đoạn trong tài liệu nguồn và nhập từng đoạn vào tài liệu đích bằng cách sử dụng`importer`. Nối các nút đã nhập vào phần nội dung của tài liệu đích.
+## Bước 4: Nhập đoạn văn
+Lặp lại các đoạn văn trong tài liệu nguồn và nhập chúng vào tài liệu đích.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -51,33 +64,30 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## Bước 5: Lưu tài liệu đã sửa đổi
-
- Lưu tài liệu đã sửa đổi bằng cách sử dụng`Save` phương pháp của`Document` sự vật.
+## Bước 5: Lưu tài liệu
+Lưu tài liệu đã hợp nhất vào vị trí mong muốn của bạn.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-Điều này hoàn tất việc triển khai việc thêm tài liệu nguồn vào tài liệu đích trong khi vẫn giữ định dạng đánh số ban đầu bằng Aspose.Words cho .NET.
+## Phần kết luận
 
-### Mã nguồn mẫu cho Giữ đánh số nguồn bằng Aspose.Words cho .NET 
+ Tóm lại, việc sử dụng Aspose.Words for .NET để nhập tài liệu trong khi vẫn giữ nguyên định dạng thật đơn giản với`NodeImporter` lớp học. Phương pháp này đảm bảo rằng tài liệu của bạn duy trì hình thức và cấu trúc ban đầu một cách liền mạch.
 
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## Câu hỏi thường gặp
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//Giữ định dạng danh sách nguồn khi nhập các đoạn văn được đánh số.
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, false);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
-```
+### Tôi có thể nhập tài liệu với các kiểu định dạng khác nhau không?
+ Vâng`NodeImporter` lớp hỗ trợ nhập tài liệu với nhiều kiểu định dạng khác nhau.
+
+### Điều gì sẽ xảy ra nếu tài liệu của tôi chứa các bảng và hình ảnh phức tạp?
+Aspose.Words for .NET xử lý các cấu trúc phức tạp như bảng và hình ảnh trong quá trình nhập.
+
+### Aspose.Words có tương thích với tất cả các phiên bản .NET không?
+Aspose.Words hỗ trợ các phiên bản .NET Framework và .NET Core để tích hợp liền mạch.
+
+### Làm cách nào để xử lý lỗi trong quá trình nhập tài liệu?
+Sử dụng các khối thử bắt để xử lý các trường hợp ngoại lệ có thể xảy ra trong quá trình nhập.
+
+### Tôi có thể tìm tài liệu chi tiết hơn về Aspose.Words cho .NET ở đâu?
+ Tham quan[tài liệu](https://reference.aspose.com/words/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.

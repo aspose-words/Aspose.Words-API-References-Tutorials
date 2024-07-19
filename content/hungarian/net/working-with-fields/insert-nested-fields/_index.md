@@ -112,11 +112,11 @@ V: A beágyazott mezők használata számos előnnyel jár az Aspose.Words for .
 
 #### K: Lehetnek-e többszintű beágyazott mezők egy Word-dokumentumban az Aspose.Words for .NET segítségével?
 
- V: Igen, lehetségesek többszintű beágyazott mezők egy Word-dokumentumban az Aspose.Words for .NET segítségével. A beágyazott mezők komplex hierarchiáját hozhatja létre a`FieldStart.NextSibling` metódus gyermekmezők hozzáadásához a meglévő szülőmezőkhöz.
+V: Igen, lehetségesek többszintű beágyazott mezők egy Word-dokumentumban az Aspose.Words for .NET segítségével. A beágyazott mezők komplex hierarchiáját hozhatja létre a`FieldStart.NextSibling` metódus gyermekmezők hozzáadásához a meglévő szülőmezőkhöz.
 
 #### K: Hogyan szabhatom testre a beágyazott mezők tulajdonságait egy Word-dokumentumban az Aspose.Words for .NET segítségével?
 
- V: A Word-dokumentumban lévő beágyazott mezők tulajdonságainak testreszabásához az Aspose.Words for .NET segítségével elérheti a megfelelő`FieldStart`objektumokat, és szükség szerint módosítsa tulajdonságaikat. A kívánt eredmény elérése érdekében beállíthatja a beágyazott mezők formázási beállításait, értékeit, számításait stb.
+ V: A Word-dokumentumban lévő beágyazott mezők tulajdonságainak testreszabásához az Aspose.Words for .NET segítségével elérheti a megfelelő`FieldStart` objektumokat, és szükség szerint módosítsa tulajdonságaikat. A kívánt eredmény elérése érdekében beállíthatja a beágyazott mezők formázási beállításait, értékeit, számításait stb.
 
 #### K: Beágyazott mezők beszúrása befolyásolja a Word-dokumentum teljesítményét az Aspose.Words for .NET használatával?
 

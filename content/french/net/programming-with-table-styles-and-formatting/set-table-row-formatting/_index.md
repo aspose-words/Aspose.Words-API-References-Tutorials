@@ -52,7 +52,7 @@ table. TopPadding = 30;
 table. BottomPadding = 30;
 ```
 
-## Étape 6 : Ajouter du contenu à la ligne
+## Étape 6 : ajouter du contenu à la ligne
  Enfin, nous pouvons ajouter du contenu à la ligne en utilisant le générateur de documents`Writeln()` méthode.
 
 ```csharp
@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## Étape 7 : Terminez le tableau et enregistrez le document
 Dans
 
- fin, nous finissons de créer la table en utilisant le`EndRow()` et`EndTable()` méthode, puis nous enregistrons le document modifié dans un fichier.
+ fin, nous finissons de créer la table en utilisant le`EndRow()`et`EndTable()` méthode, puis nous enregistrons le document modifié dans un fichier.
 
 ```csharp
 builder. EndRow();

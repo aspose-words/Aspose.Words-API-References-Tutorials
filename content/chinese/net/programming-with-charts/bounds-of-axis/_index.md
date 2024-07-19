@@ -7,98 +7,118 @@ type: docs
 weight: 10
 url: /zh/net/programming-with-charts/bounds-of-axis/
 ---
+## 介绍
 
-本教程介绍如何使用 Aspose.Words for .NET 设置图表中轴的边界。通过插入图表、添加系列数据和配置轴缩放，您可以定义轴的最小值和最大值。
+您是否希望使用 .NET 创建带有图表的专业文档？您来对地方了！本指南将引导您完成使用 Aspose.Words for .NET 设置图表中轴的边界的过程。我们将分解每个步骤，以确保您可以轻松地跟进，即使您是库的新手。那么，让我们开始吧！
 
 ## 先决条件
-要遵循本教程，您需要满足以下条件：
 
-- 已安装 Aspose.Words for .NET 库。
-- 具备 C# 和 Word 文档文字处理的基本知识。
+在开始之前，请确保您已准备好以下内容：
 
-## 步骤 1：设置文档目录
-首先设置文档目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`替换为您想要保存文档的目录的实际路径。
+-  Aspose.Words for .NET：您可以[下载](https://releases.aspose.com/words/net/)最新版本或使用[免费试用](https://releases.aspose.com/).
+- .NET Framework：确保您的系统上安装了.NET。
+- IDE：像 Visual Studio 这样的开发环境。
+
+一旦一切准备就绪，我们就可以继续下一步。
+
+## 导入命名空间
+
+首先，您需要导入必要的命名空间。这将允许您访问 Aspose.Words 库及其图表功能。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+## 步骤 1：设置文档目录
+
+首先，您需要设置文档的保存目录。这是一个简单的步骤，但对于组织文件至关重要。
+
+```csharp
+//文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 2：创建新文档和 DocumentBuilder
-创建一个新的实例`Document`类和一个`DocumentBuilder`对象来处理该文档。
+## 步骤 2：创建新文档
+
+接下来，创建一个新的文档对象。此文档将作为图表的容器。
 
 ```csharp
 Document doc = new Document();
+```
+
+## 步骤 3：初始化文档生成器
+
+DocumentBuilder 类提供了一种快速简便的方法来创建文档。使用您的文档对其进行初始化。
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 步骤 3：插入并配置图表
-使用`InsertChart`方法`DocumentBuilder`对象。设置所需的图表类型和尺寸。
+## 步骤 4：插入图表
+
+现在，是时候将图表插入到文档中了。在此示例中，我们将使用柱形图。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 步骤 4：添加系列数据
-清除图表中所有现有系列并添加新系列数据。在此示例中，我们添加一个系列，其标签为“项目 1”至“项目 5”，并包含相应的值。
+## 步骤 5：清除现有系列
+
+为了确保您从头开始，请清除图表中所有现有系列。
 
 ```csharp
 chart.Series.Clear();
+```
+
+## 步骤 6：向图表添加数据
+
+在这里，我们向图表添加数据。这包括指定系列名称和数据点。
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## 步骤 5：设置轴的边界
-通过使用设置最小值和最大值来配置 Y 轴的缩放比例`Scaling.Minimum`和`Scaling.Maximum`轴的属性。
+## 步骤 7：设置轴边界
+
+设置 Y 轴的边界可确保您的图表正确缩放。
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
 chart.AxisY.Scaling.Maximum = new AxisBound(6);
 ```
 
-## 步骤 6：保存文档
-使用将文档保存到指定目录`Save`方法。提供所需的文件名和适当的文件扩展名。在此示例中，我们将文档保存为“WorkingWithCharts.BoundsOfAxis.docx”。
+## 步骤 8：保存文档
+
+最后，将您的文档保存到指定目录。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-### 使用 Aspose.Words for .NET 的 Bounds Of Axis 示例源代码 
-
-```csharp
-	//文档目录的路径
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Scaling.Minimum = new AxisBound(0);
-	chart.AxisY.Scaling.Maximum = new AxisBound(6);
-	doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
-```
-
-就是这样！您已成功使用 Aspose.Words for .NET 设置图表中轴的边界。
+就这样！您已成功使用 Aspose.Words for .NET 创建了带有图表的文档。 
 
 ## 结论
-在本教程中，您学习了如何使用 Aspose.Words for .NET 设置图表中轴的边界。按照分步指南，您可以插入和配置图表、添加系列数据以及定义轴缩放的最小值和最大值。Aspose.Words for .NET 为 Word 文档的文字处理提供了强大而灵活的 API，使您可以轻松创建动态且具有视觉吸引力的图表。
 
+使用 Aspose.Words for .NET，您可以轻松创建和操作文档中的图表。本分步指南向您展示了如何设置图表中轴的边界，使您的数据呈现更加精确和专业。无论您是生成报告、演示文稿还是任何其他文档，Aspose.Words 都能提供您所需的工具。
 
-### 常见问题解答
+## 常见问题解答
 
-#### Q1.Aspose.Words for .NET是什么？
-Aspose.Words for .NET 是一个允许开发人员以编程方式处理 Word 文档的库。它提供了用于创建、操作和保存 Word 文档的各种特性和功能。
+### 什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个库，允许您使用 .NET 框架以编程方式创建、修改和转换 Word 文档。
 
-#### Q2. 如何安装 Aspose.Words for .NET？
-要安装 Aspose.Words for .NET，您可以使用 Visual Studio 中的 NuGet 包管理器。只需在 NuGet 包管理器中搜索“Aspose.Words”并将其安装到您的项目中即可。
+### 如何设置 Aspose.Words for .NET？
+您可以从以下位置下载[这里](https://releases.aspose.com/words/net/)并按照提供的安装说明进行操作。
 
-#### Q3. 我可以将 Aspose.Words for .NET 与其他编程语言一起使用吗？
-不是，Aspose.Words for .NET 是专门为 .NET 应用程序设计的。它适用于 C# 和 VB.NET 等编程语言。
+### 我可以免费使用 Aspose.Words 吗？
+是的，你可以使用[免费试用](https://releases.aspose.com/)或者得到[临时执照](https://purchase.aspose.com/temporary-license/).
 
-#### Q4. 使用 Aspose.Words for .NET 还有其他先决条件吗？
-除了安装 Aspose.Words for .NET 库之外，您还应该具备 C# 编程和 Word 文档文字处理的基本知识。熟悉 .NET 框架也会有所帮助。
+### 在哪里可以找到 Aspose.Words for .NET 的文档？
+有详细文档可供查阅[这里](https://reference.aspose.com/words/net/).
+
+### 如何获得 Aspose.Words 的支持？
+您可以访问[支持论坛](https://forum.aspose.com/c/words/8)寻求帮助。

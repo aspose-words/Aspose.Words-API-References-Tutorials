@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- I det här exemplet laddar vi ett textdokument och trimmar inledande och efterföljande mellanslag med hjälp av`TxtLeadingSpacesOptions.TRIM` och`TxtTrailingSpacesOptions.TRIM`.
+ I det här exemplet laddar vi ett textdokument och trimmar inledande och efterföljande mellanslag med hjälp av`TxtLeadingSpacesOptions.TRIM`och`TxtTrailingSpacesOptions.TRIM`.
 
 ## Steg 3: Styra textriktning
 
@@ -179,7 +179,7 @@ För att komma igång med Aspose.Words för Java, följ dessa steg:
 
 ### Hur hanterar jag mellanslag i laddade textdokument?
 
- Du kan styra hur inledande och efterföljande mellanslag hanteras i laddade textdokument med`TxtLoadOptions` . Alternativ som`TxtLeadingSpacesOptions` och`TxtTrailingSpacesOptions`låter dig trimma eller bevara utrymmen efter behov. Se avsnittet "Alternativ för hanteringsutrymmen" i den här guiden för ett exempel.
+ Du kan styra hur inledande och efterföljande mellanslag hanteras i laddade textdokument med`TxtLoadOptions` . Alternativ som`TxtLeadingSpacesOptions`och`TxtTrailingSpacesOptions`låter dig trimma eller bevara utrymmen efter behov. Se avsnittet "Alternativ för hanteringsutrymmen" i den här guiden för ett exempel.
 
 ### Vad är betydelsen av textriktning i Aspose.Words för Java?
 

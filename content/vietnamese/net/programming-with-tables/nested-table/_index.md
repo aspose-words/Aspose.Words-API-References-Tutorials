@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Lệnh gọi này rất quan trọng để tạo một bảng lồng nhau trong bảng đầu tiên.
-	// Nếu không có lệnh gọi này, các ô được chèn bên dưới sẽ được thêm vào bảng bên ngoài.
+	//Nếu không có lệnh gọi này, các ô được chèn bên dưới sẽ được thêm vào bảng bên ngoài.
 	builder.EndTable();
 	// Di chuyển đến ô đầu tiên của bảng bên ngoài.
 	builder.MoveTo(cell.FirstParagraph);

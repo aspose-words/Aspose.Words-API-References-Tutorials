@@ -172,7 +172,7 @@ Trong hướng dẫn toàn diện này, chúng tôi đã khám phá cách lưu t
 
 ### Tôi có thể đặt thuộc tính tùy chỉnh khi lưu tài liệu ở định dạng OOXML không?
 
- Có, bạn có thể đặt thuộc tính tùy chỉnh cho tài liệu trước khi lưu nó ở định dạng OOXML. Sử dụng`BuiltInDocumentProperties` Và`CustomDocumentProperties` các lớp để đặt các thuộc tính khác nhau như tác giả, tiêu đề, từ khóa và thuộc tính tùy chỉnh.
+ Có, bạn có thể đặt thuộc tính tùy chỉnh cho tài liệu trước khi lưu nó ở định dạng OOXML. Sử dụng`BuiltInDocumentProperties`Và`CustomDocumentProperties` các lớp để đặt các thuộc tính khác nhau như tác giả, tiêu đề, từ khóa và thuộc tính tùy chỉnh.
 
 ### Mức nén mặc định khi lưu tài liệu ở định dạng OOXML là bao nhiêu?
 

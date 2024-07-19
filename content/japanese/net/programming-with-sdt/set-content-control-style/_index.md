@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.Structu
 ```
 
 ## ステップ 3: スタイルを取得してコンテンツ コントロールに適用する
-ドキュメントのスタイルコレクションから目的のスタイルを取得します。この例では、次のようにして「Quote」スタイルを取得します。`StyleIdentifier.Quote`次に、取得したスタイルを`Style`構造化ドキュメントタグのプロパティ。
+ドキュメントのスタイルコレクションから目的のスタイルを取得します。この例では、次のコードを使用して「Quote」スタイルを取得します。`StyleIdentifier.Quote`次に、取得したスタイルを`Style`構造化ドキュメントタグのプロパティ。
 
 ```csharp
 Style style = doc.Styles[StyleIdentifier.Quote];

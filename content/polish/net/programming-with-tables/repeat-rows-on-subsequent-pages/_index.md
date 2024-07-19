@@ -8,13 +8,13 @@ weight: 10
 url: /pl/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-W tym samouczku nauczymy się, jak powtarzać wiersze tabeli na kolejnych stronach dokumentu Worda za pomocą Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł określić wiersze, które mają się powtarzać na kolejnych stronach tabeli w dokumentach programu Word.
+tym samouczku nauczymy się, jak powtarzać wiersze tabeli na kolejnych stronach dokumentu Worda za pomocą Aspose.Words dla .NET. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł określić wiersze, które mają się powtarzać na kolejnych stronach tabeli w dokumentach programu Word.
 
 ## Krok 1: Konfiguracja projektu
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
 2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
 
-## Krok 2: Tworzenie dokumentu i inicjowanie generatora dokumentów
+## Krok 2: Tworzenie dokumentu i inicjalizacja generatora dokumentów
 Aby rozpocząć przetwarzanie tekstu za pomocą dokumentu i generatora dokumentów, wykonaj następujące kroki:
 
 ```csharp
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Tutaj używamy narzędzia do tworzenia dokumentów, aby zbudować tabelę z dwoma wierszami nagłówków i wieloma wierszami danych. The`RowFormat.HeadingFormat`Parametry służą do oznaczania wierszy nagłówka, które należy powtórzyć na kolejnych stronach.
+ Tutaj używamy narzędzia do tworzenia dokumentów, aby zbudować tabelę z dwoma wierszami nagłówków i wieloma wierszami danych. The`RowFormat.HeadingFormat` Parametry służą do oznaczania wierszy nagłówka, które należy powtórzyć na kolejnych stronach.
 
 ## Krok 4: Zapisanie zmodyfikowanego dokumentu
 Wreszcie USA

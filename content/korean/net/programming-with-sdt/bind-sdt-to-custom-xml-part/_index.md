@@ -17,7 +17,7 @@ url: /ko/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 - C# 및 XML에 대한 기본 지식.
 
 ## 1단계: 문서 디렉터리 설정
- 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
+ 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

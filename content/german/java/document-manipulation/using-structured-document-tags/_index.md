@@ -32,7 +32,7 @@ builder.insertNode(sdtCheckBox);
 doc.save("WorkingWithSDT.docx");
 ```
 
-## Überprüfen des aktuellen Status eines Kontrollkästchen-SDT
+## Überprüfen des aktuellen Status eines Checkbox-SDT
 
 Nachdem Sie Ihrem Dokument ein Kontrollkästchen-SDT hinzugefügt haben, möchten Sie möglicherweise dessen aktuellen Status programmgesteuert überprüfen. Dies kann nützlich sein, wenn Sie Benutzereingaben validieren oder bestimmte Aktionen basierend auf dem Kontrollkästchenstatus ausführen müssen.
 

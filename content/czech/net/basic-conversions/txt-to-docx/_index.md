@@ -48,7 +48,7 @@ doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 
 ## Závěr
 
-V tomto tutoriálu jsme se zabývali tím, jak převést textový soubor na dokument aplikace Word pomocí Aspose.Words for .NET. Dodržením těchto jednoduchých kroků můžete zautomatizovat proces převodu textového obsahu do strukturovanějšího a upravitelného formátu a zlepšit tak pracovní postupy zpracování dokumentů.
+tomto tutoriálu jsme se zabývali tím, jak převést textový soubor na dokument aplikace Word pomocí Aspose.Words for .NET. Dodržením těchto jednoduchých kroků můžete zautomatizovat proces převodu textového obsahu do strukturovanějšího a upravitelného formátu a zlepšit tak pracovní postupy zpracování dokumentů.
 
 ## FAQ
 
@@ -65,4 +65,4 @@ Ano, Aspose.Words podporuje různé .NET frameworky a zajišťuje kompatibilitu 
 Ano, můžete dávkově zpracovat více textových souborů pomocí rozhraní API Aspose.Words, abyste zefektivnili své úkoly převodu dokumentů.
 
 ### Kde najdu další zdroje a podporu pro Aspose.Words?
- Navštivte[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) a[Fórum podpory](https://forum.aspose.com/c/words/8) pro další informace a pomoc.
+ Navštivte[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/)a[Fórum podpory](https://forum.aspose.com/c/words/8) pro další informace a pomoc.

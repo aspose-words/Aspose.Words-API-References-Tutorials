@@ -54,7 +54,7 @@ Di sini, kita menyisipkan bidang gabungan bernama "bidang" dan menambahkan beber
 
 ## Langkah 3: Pindahkan Kursor ke Akhir Dokumen
 
-Sekarang, mari gerakkan kursor ke akhir dokumen. Ini seperti meletakkan pena Anda di akhir catatan Anda, siap untuk menambahkan lebih banyak informasi.
+Sekarang, mari pindahkan kursor ke akhir dokumen. Ini seperti meletakkan pena Anda di akhir catatan Anda, siap untuk menambahkan lebih banyak informasi.
 
 ```csharp
 builder.MoveToDocumentEnd();

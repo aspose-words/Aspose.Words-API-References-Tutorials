@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Menambahkan Header dan Footer ke Tabel:
 
- Tabel dapat memanfaatkan header dan footer yang memberikan konteks atau informasi tambahan. Anda dapat menambahkan header dan footer ke tabel menggunakan`Table.title` Dan`Table.description` properti.
+ Tabel dapat memanfaatkan header dan footer yang memberikan konteks atau informasi tambahan. Anda dapat menambahkan header dan footer ke tabel menggunakan`Table.title`Dan`Table.description` properti.
 
 ```python
 # Set table title (header)

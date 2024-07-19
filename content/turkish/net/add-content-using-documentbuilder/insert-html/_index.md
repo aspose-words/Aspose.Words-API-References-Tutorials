@@ -107,4 +107,4 @@ Evet, HTML eklendikten sonra Aspose.Words for .NET tarafından sağlanan çeşit
  Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) veya bir tane edinin[geçici lisans](https://purchase.aspose.com/temporary-license/) tüm özellikler için.
 
 ### Daha fazla öğreticiyi ve örneği nerede bulabilirim?  
-[dokümantasyon](https://reference.aspose.com/words/net/) Ve[destek forumları](https://forum.aspose.com/c/words/8)daha ayrıntılı rehberler ve topluluk desteği için harika başlangıç yerleridir.
+[dokümantasyon](https://reference.aspose.com/words/net/)Ve[destek forumları](https://forum.aspose.com/c/words/8)daha ayrıntılı rehberler ve topluluk desteği için harika başlangıç yerleridir.

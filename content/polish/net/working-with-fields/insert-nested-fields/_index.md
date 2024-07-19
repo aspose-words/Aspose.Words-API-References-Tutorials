@@ -94,7 +94,7 @@ field. Update();
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-tym przykładzie utworzyliśmy nowy dokument, wstawiliśmy podziały stron, przesunęliśmy kursor do stopki, a następnie wstawiliśmy zagnieżdżone pole w stopce.
+W tym przykładzie utworzyliśmy nowy dokument, wstawiliśmy podziały stron, przesunęliśmy kursor do stopki, a następnie wstawiliśmy zagnieżdżone pole w stopce.
 
 ### Często zadawane pytania
 
@@ -112,11 +112,11 @@ Odp.: Korzystanie z zagnieżdżonych pól oferuje kilka korzyści w dokumencie W
 
 #### P: Czy mogę mieć wielopoziomowe zagnieżdżone pola w dokumencie programu Word za pomocą Aspose.Words dla .NET?
 
- Odp.: Tak, możliwe jest posiadanie wielopoziomowych zagnieżdżonych pól w dokumencie Word za pomocą Aspose.Words dla .NET. Można tworzyć złożone hierarchie zagnieżdżonych pól, korzystając z opcji`FieldStart.NextSibling` metoda dodawania pól podrzędnych do istniejących pól nadrzędnych.
+Odp.: Tak, możliwe jest posiadanie wielopoziomowych zagnieżdżonych pól w dokumencie Word za pomocą Aspose.Words dla .NET. Można tworzyć złożone hierarchie zagnieżdżonych pól, korzystając z opcji`FieldStart.NextSibling` metoda dodawania pól podrzędnych do istniejących pól nadrzędnych.
 
 #### P: Jak mogę dostosować właściwości zagnieżdżonych pól w dokumencie programu Word za pomocą Aspose.Words dla .NET?
 
- O: Aby dostosować właściwości zagnieżdżonych pól w dokumencie Word za pomocą Aspose.Words dla .NET, możesz uzyskać dostęp do odpowiedniego`FieldStart`obiektów i modyfikować ich właściwości według potrzeb. Możesz ustawić opcje formatowania, wartości, obliczenia itp. zagnieżdżonych pól, aby osiągnąć pożądany wynik.
+ O: Aby dostosować właściwości zagnieżdżonych pól w dokumencie Word za pomocą Aspose.Words dla .NET, możesz uzyskać dostęp do odpowiedniego`FieldStart` obiektów i modyfikować ich właściwości według potrzeb. Możesz ustawić opcje formatowania, wartości, obliczenia itp. zagnieżdżonych pól, aby osiągnąć pożądany wynik.
 
 #### P: Czy wstawianie zagnieżdżonych pól wpływa na wydajność dokumentu Word w Aspose.Words dla .NET?
 

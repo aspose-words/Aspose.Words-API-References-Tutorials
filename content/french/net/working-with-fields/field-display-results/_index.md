@@ -80,9 +80,9 @@ R : Un champ d'affichage de résultat dans Aspose.Words est un type de champ qui
 
 R : Pour mettre à jour un champ d'affichage de résultat dans un document Word avec Aspose.Words, vous pouvez utiliser la méthode UpdateFields. Cette méthode parcourt le document et met à jour tous les champs, y compris les champs d'affichage des résultats, en recalculant les valeurs en fonction des données actuelles.
 
-#### : Puis-je formater le résultat affiché par un champ d'affichage de résultat ?
+#### Q : Puis-je formater le résultat affiché par un champ d'affichage de résultat ?
 
-R : Oui, vous pouvez formater le résultat affiché par un champ d'affichage de résultat en utilisant la syntaxe appropriée pour spécifier le format. Par exemple, vous pouvez formater des nombres avec un nombre spécifique de décimales ou utiliser des formats de date personnalisés.
+: Oui, vous pouvez formater le résultat affiché par un champ d'affichage de résultat en utilisant la syntaxe appropriée pour spécifier le format. Par exemple, vous pouvez formater des nombres avec un nombre spécifique de décimales ou utiliser des formats de date personnalisés.
 
 #### Q : Comment puis-je supprimer un champ d'affichage de résultat d'un document Word avec Aspose.Words ?
 

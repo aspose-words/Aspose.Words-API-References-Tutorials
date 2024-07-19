@@ -12,7 +12,7 @@ url: /fr/net/working-with-fonts/receive-warning-notification/
 
 ## Conditions préalables
 
-Avant de plonger, assurez-vous d’avoir les éléments suivants :
+Avant de plonger, assurez-vous d'avoir les éléments suivants :
 
 - Connaissance de base de C# : La familiarité avec C# vous aidera à comprendre et à mettre en œuvre les étapes.
 -  Aspose.Words for .NET Library : téléchargez-le et installez-le à partir du[lien de téléchargement](https://releases.aspose.com/words/net/).
@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Étape 3 : Mettre à jour la mise en page
-
- Appeler le`UpdatePageLayout` méthode. Cela restitue le document en mémoire et capture tous les avertissements qui se produisent lors du rendu.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Étape 4 : configurer le rappel d'avertissement
+## Étape 3 : configurer le rappel d'avertissement
 
  Pour capturer et gérer les avertissements, créez une classe qui implémente le`IWarningCallback` interface. Cette classe enregistrera tous les avertissements qui se produisent pendant le traitement du document.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Nous ne nous intéressons qu'aux polices de caractères remplacées.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Étape 5 : attribuer le rappel au document
+## Étape 4 : attribuer le rappel au document
 
 Attribuez le rappel d’avertissement au document. Cela garantit que tous les problèmes de polices sont capturés et enregistrés.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Étape 5 : Mettre à jour la mise en page
+
+ Appeler le`UpdatePageLayout` méthode. Cela restitue le document en mémoire et capture tous les avertissements qui se produisent lors du rendu.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Étape 6 : Enregistrez le document
@@ -88,11 +83,11 @@ Enfin, enregistrez le document. Même si le document a été rendu précédemmen
 doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 ```
 
-En suivant ces étapes, vous avez configuré votre application pour gérer correctement les substitutions de polices et recevoir des notifications chaque fois qu'une substitution se produit.
+En suivant ces étapes, vous avez configuré votre application pour gérer les substitutions de polices avec élégance et recevoir des notifications chaque fois qu'une substitution se produit.
 
 ## Conclusion
 
-Vous maîtrisez désormais le processus de réception de notifications pour les substitutions de polices à l'aide d'Aspose.Words for .NET. Cette compétence vous aidera à garantir que vos documents soient toujours à leur meilleur, même lorsque les polices nécessaires ne sont pas disponibles. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d'Aspose.Words.
+Vous maîtrisez désormais le processus de réception de notifications pour les substitutions de polices à l'aide d'Aspose.Words for .NET. Cette compétence vous aidera à garantir que vos documents soient toujours à leur meilleur, même lorsque les polices nécessaires ne sont pas disponibles. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d’Aspose.Words.
 
 ## FAQ
 
@@ -106,7 +101,7 @@ Non, vous ne pouvez spécifier qu'une seule police par défaut pour la substitut
 
 ###  Q3 : Puis-je gérer d'autres types d'avertissements avec`IWarningCallback`?
 
- Oui le`IWarningCallback` L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
+ Oui le`IWarningCallback`L'interface peut gérer différents types d'avertissements, pas seulement la substitution de polices.
 
 ### Q4 : Où puis-je trouver de l'aide pour Aspose.Words ?
 

@@ -15,7 +15,7 @@ Aspose.Words for .NET은 .NET 애플리케이션에서 Word 문서 작업을 할
 
 코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 
-1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다음에서 라이브러리를 다운로드하세요.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다음에서 라이브러리를 다운로드하세요.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
 2. 유효한 계량 라이센스 키: 계량 라이센스를 활성화하려면 키가 필요합니다. 이러한 내용은 다음에서 얻을 수 있습니다.[Aspose 구매 페이지](https://purchase.aspose.com/buy).
 3. 개발 환경: .NET 개발 환경이 설정되어 있는지 확인하세요. Visual Studio가 널리 사용되지만 .NET을 지원하는 모든 IDE를 사용할 수 있습니다.
 
@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- 바꾸다`"your_public_key"` 그리고`"your_private_key"`Aspose에서 받은 실제 키를 사용하세요. 이 단계는 기본적으로 Aspose에게 계량 라이선스를 사용하고 싶다고 알려줍니다.
+ 바꾸다`"your_public_key"`그리고`"your_private_key"`Aspose에서 받은 실제 키를 사용하세요. 이 단계는 기본적으로 Aspose에게 계량 라이선스를 사용하고 싶다고 알려줍니다.
 
 ## 3단계: 문서 로드
 

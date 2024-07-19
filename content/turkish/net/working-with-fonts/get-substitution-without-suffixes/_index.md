@@ -17,7 +17,7 @@ Eğiticiye dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 - Temel C# Bilgisi: C# programlamayı anlamak, adımları takip etmeyi ve uygulamayı kolaylaştıracaktır.
 -  Aspose.Words for .NET Library: Kütüphaneyi şuradan indirip yükleyin:[İndirme: {link](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi bir geliştirme ortamı kurun.
--  Örnek Belge: Örnek bir belge (örn.`Rendering.docx`) bu eğitim sırasında üzerinde çalışılacak.
+- Örnek Belge: Örnek bir belge (örn.`Rendering.docx`) bu eğitim sırasında üzerinde çalışılacak.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Adım 5: Uyarı İşleyicisi Sınıfını Oluşturun
 
- Uyarıları etkili bir şekilde işlemek için, aşağıdakileri uygulayan özel bir sınıf oluşturun:`IWarningCallback` arayüz. Bu sınıf, yazı tipi değiştirme uyarılarını yakalayacak ve günlüğe kaydedecektir.
+Uyarıları etkili bir şekilde işlemek için, aşağıdakileri uygulayan özel bir sınıf oluşturun:`IWarningCallback` arayüz. Bu sınıf, yazı tipi değiştirme uyarılarını yakalayacak ve günlüğe kaydedecektir.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Artık Aspose.Words for .NET'i kullanarak son ekler olmadan yazı tipi değişti
 
 ### S1: Birden çok özel dizindeki yazı tiplerini nasıl kullanabilirim?
 
- Birden fazla ekleyebilirsiniz`FolderFontSource` örnekler`fontSources`yazı tipi kaynaklarını buna göre listeleyin ve güncelleyin.
+ Birden fazla ekleyebilirsiniz`FolderFontSource` örnekler`fontSources` yazı tipi kaynaklarını buna göre listeleyin ve güncelleyin.
 
 ### S2: Aspose.Words for .NET'in ücretsiz deneme sürümünü nereden indirebilirim?
 

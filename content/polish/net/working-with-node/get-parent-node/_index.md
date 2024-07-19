@@ -62,7 +62,7 @@ O: Węzeł nadrzędny w Node.js odnosi się do kolejnego wyższego węzła w hie
 
 #### P: Jak uzyskać węzeł nadrzędny określonego węzła?
 
-O: Aby uzyskać węzeł nadrzędny określonego węzła, możesz użyć metody`parentNode` właściwość węzła. Ta właściwość zwraca węzeł nadrzędny bieżącego węzła.
+ O: Aby uzyskać węzeł nadrzędny określonego węzła, możesz użyć metody`parentNode` właściwość węzła. Ta właściwość zwraca węzeł nadrzędny bieżącego węzła.
 
 #### P: Jak sprawdzić, czy węzeł ma węzeł nadrzędny?
 
@@ -70,7 +70,7 @@ O: Aby uzyskać węzeł nadrzędny określonego węzła, możesz użyć metody`p
 
 #### P: Czy możemy zmienić węzeł nadrzędny węzła?
 
- Odpowiedź: W większości przypadków węzeł nadrzędny węzła jest określony przez strukturę dokumentu XML i nie można go bezpośrednio zmienić. Można jednak przenieść węzeł do innego węzła, korzystając z określonych metod, takich jak`appendChild` Lub`insertBefore`.
+Odpowiedź: W większości przypadków węzeł nadrzędny węzła jest określony przez strukturę dokumentu XML i nie można go bezpośrednio zmienić. Można jednak przenieść węzeł do innego węzła, korzystając z określonych metod, takich jak`appendChild` Lub`insertBefore`.
 
 #### P: Jak przeglądać hierarchię węzłów nadrzędnych?
 

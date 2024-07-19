@@ -11,7 +11,7 @@ I dagens snabba digitala värld är dokumentbehandling en avgörande aspekt av m
 
 ## Installera Aspose.Words
 
- Innan vi dyker in i detaljerna måste du ställa in Aspose.Words för Python. Du kan ladda ner och installera den via följande länk:[Ladda ner Aspose.Words för Python](https://releases.aspose.com/words/python/). 
+Innan vi dyker in i detaljerna måste du ställa in Aspose.Words för Python. Du kan ladda ner och installera den via följande länk:[Ladda ner Aspose.Words för Python](https://releases.aspose.com/words/python/). 
 
 ## Kombinera dokument
 
@@ -127,7 +127,7 @@ Ja, du kan utföra en ytlig klon för att bara kopiera strukturen i ett dokument
  Använd`range.replace()` metod tillsammans med lämpliga alternativ för att hitta och ersätta text effektivt.
 
 ### Stöder Aspose.Words modifiering av formatering?
-Absolut, du kan ändra formateringen med metoder som`run.font.size` och`run.font.bold`.
+Absolut, du kan ändra formateringen med metoder som`run.font.size`och`run.font.bold`.
 
 ### Var kan jag komma åt Aspose.Words-dokumentationen?
  Du hittar omfattande dokumentation på[Aspose.Words för Python API Referens](https://reference.aspose.com/words/python-net/).

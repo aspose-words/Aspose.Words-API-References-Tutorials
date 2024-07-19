@@ -85,7 +85,7 @@ Congratulazioni! Hai appena imparato come passare a una cella di tabella specifi
  Sì, specificando l'indice corretto della tabella nel file`MoveToCell` metodo, puoi passare a qualsiasi cella in qualsiasi tabella all'interno del documento.
 
 ### Come gestisco le celle che si estendono su più righe o colonne?
- Puoi usare il`RowSpan` E`ColSpan` proprietà del`Cell` classe per gestire le celle unite.
+ Puoi usare il`RowSpan`E`ColSpan` proprietà del`Cell` classe per gestire le celle unite.
 
 ### È possibile formattare il testo all'interno della cella?
  Assolutamente! Utilizzo`DocumentBuilder` metodi come`Font.Size`, `Font.Bold`e altri per formattare il testo.

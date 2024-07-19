@@ -30,28 +30,28 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // تعيين حدود للجدول بأكمله.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // تعيين الحشو لهذه الخلية.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // حدد حشوة خلية مختلفة للخلية الثانية.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // مسح تنسيق الخلية من العمليات السابقة.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // قم بإنشاء حدود أكثر سمكًا للخلية الأولى في هذا الصف. سيكون مختلفا
-// بالنسبة للحدود المحددة للجدول.
+// نسبة إلى الحدود المحددة للجدول.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
 builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 ### نموذج التعليمات البرمجية المصدر لتنسيق الجدول والخلية بحدود مختلفة باستخدام Aspose.Words لـ .NET 
 
 ```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//تعيين الحدود للجدول بأكمله.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// قم بتعيين تظليل الخلية لهذه الخلية.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// حدد تظليلًا مختلفًا للخلية الثانية.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// امسح تنسيق الخلية من العمليات السابقة.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// قم بإنشاء حدود أكبر للخلية الأولى من هذا الصف. هذا سيكون مختلفا
-	// مقارنة بالحدود المحددة للجدول.
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//تعيين الحدود للجدول بأكمله.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// قم بتعيين تظليل الخلية لهذه الخلية.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// حدد تظليلًا مختلفًا للخلية الثانية.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// امسح تنسيق الخلية من العمليات السابقة.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// قم بإنشاء حدود أكبر للخلية الأولى من هذا الصف. هذا سيكون مختلفا
+// مقارنة بالحدود المحددة للجدول.
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## خاتمة

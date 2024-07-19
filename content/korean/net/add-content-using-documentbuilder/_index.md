@@ -23,7 +23,7 @@ DocumentBuilder를 사용하여 콘텐츠 추가는 .NET용 Aspose.Words 라이�
 | [Word 문서에 확인란 양식 필드 삽입](./insert-check-box-form-field/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 확인란 양식 필드를 삽입하는 방법을 알아보세요. 개발자에게 적합합니다. |
 | [Word 문서에 콤보 상자 양식 필드 삽입](./insert-combo-box-form-field/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 콤보 상자 양식 필드를 삽입하는 방법을 알아보세요. |
 | [Word 문서에 HTML 삽입](./insert-html/) | 자세한 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 HTML 문서에 HTML을 원활하게 삽입하는 방법을 알아보세요. 개발자에게 적합합니다. |
-| [Word 문서에 하이퍼링크 삽입](./insert-hyperlink/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 하이퍼링크를 쉽게 삽입하는 방법을 알아보세요. C# 개발자에게 적합합니다. |
+| [Word 문서에 하이퍼링크 삽입](./insert-hyperlink/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 하이퍼링크를 삽입하는 방법을 알아보세요. 문서 작성 작업을 자동화하는 데 적합합니다. |
 | [Word 문서에 목차 삽입](./insert-table-of-contents/) | .NET용 Aspose.Words를 사용하여 Word에 목차를 삽입하는 방법을 알아보세요. 원활한 문서 탐색을 위해 단계별 가이드를 따르세요. |
 | [Word 문서에 인라인 이미지 삽입](./insert-inline-image/) | .NET용 Aspose.Words를 사용하여 Word 문서에 인라인 이미지를 삽입하는 방법을 알아보세요. 코드 예제와 FAQ가 포함된 단계별 가이드입니다. |
 | [Word 문서에 부동 이미지 삽입](./insert-floating-image/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 부동 이미지를 삽입하는 방법을 알아보세요. 문서를 향상시키는 데 적합합니다. |

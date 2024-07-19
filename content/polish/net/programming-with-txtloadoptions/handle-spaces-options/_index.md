@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- W tym kroku konfigurujemy opcje ładowania dokumentu TXT. Tworzymy nowe`TxtLoadOptions` obiekt i ustaw`LeadingSpacesOptions` I`TrailingSpacesOptions` właściwości do`TxtLeadingSpacesOptions.Trim` I`TxtTrailingSpacesOptions.Trim` odpowiednio. To mówi Aspose.Words, aby podczas ładowania dokumentu usuwał spacje początkowe i końcowe z linii.
+ W tym kroku konfigurujemy opcje ładowania dokumentu TXT. Tworzymy nowe`TxtLoadOptions` obiekt i ustaw`LeadingSpacesOptions`I`TrailingSpacesOptions` właściwości do`TxtLeadingSpacesOptions.Trim`I`TxtTrailingSpacesOptions.Trim` odpowiednio. To mówi Aspose.Words, aby podczas ładowania dokumentu usuwał spacje początkowe i końcowe z linii.
 
 ## Krok 4: Załaduj dokument
 

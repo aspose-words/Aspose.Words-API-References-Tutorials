@@ -33,7 +33,7 @@ StructuredDocumentTag sdtCheckBox =
 ```
 
 ## Langkah 3: Centang atau Hapus Centang Kotak Berdasarkan Statusnya Saat Ini
- Periksa apakah tag dokumen terstruktur yang diambil bertipe`SdtType.Checkbox` . Jika ya, atur`Checked` properti kontrol konten ke`true` untuk mencentang kotak. Jika tidak, Anda dapat membiarkannya tidak dicentang.
+ Periksa apakah tag dokumen terstruktur yang diambil bertipe`SdtType.Checkbox` . Jika ya, atur`Checked` properti kontrol konten untuk`true` untuk mencentang kotak. Jika tidak, Anda dapat membiarkannya tidak dicentang.
 
 ```csharp
 if (sdtCheckBox.SdtType == SdtType.Checkbox)
@@ -41,7 +41,7 @@ if (sdtCheckBox.SdtType == SdtType.Checkbox)
 ```
 
 ## Langkah 4: Simpan Dokumen
- Simpan dokumen yang dimodifikasi ke direktori yang ditentukan menggunakan`Save`metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.CurrentStateOfCheckBox.docx".
+ Simpan dokumen yang dimodifikasi ke direktori yang ditentukan menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.CurrentStateOfCheckBox.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");

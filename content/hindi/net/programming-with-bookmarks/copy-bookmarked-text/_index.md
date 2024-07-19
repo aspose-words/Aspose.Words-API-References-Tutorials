@@ -2,175 +2,123 @@
 title: बुकमार्क किए गए टेक्स्ट को वर्ड डॉक्यूमेंट में कॉपी करें
 linktitle: बुकमार्क किए गए टेक्स्ट को वर्ड डॉक्यूमेंट में कॉपी करें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words का उपयोग करके वर्ड दस्तावेज़ में बुकमार्क टेक्स्ट को किसी अन्य दस्तावेज़ में कॉपी करना सीखें।
+description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों के बीच बुकमार्क किए गए टेक्स्ट को आसानी से कॉपी करें। इस चरण-दर-चरण मार्गदर्शिका से जानें कि कैसे।
 type: docs
 weight: 10
 url: /hi/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
+## परिचय
 
-इस लेख में, हम ऊपर दिए गए C# स्रोत कोड का पता लगाएंगे ताकि यह समझ सकें कि Aspose.Words for .NET लाइब्रेरी में बुकमार्क किए गए टेक्स्ट को कॉपी करने का तरीका कैसे इस्तेमाल किया जाए। यह सुविधा आपको किसी स्रोत दस्तावेज़ से किसी अन्य दस्तावेज़ में किसी विशिष्ट बुकमार्क की सामग्री की प्रतिलिपि बनाने की अनुमति देती है।
+क्या आपको कभी एक Word दस्तावेज़ से दूसरे में विशिष्ट अनुभागों को कॉपी करने की आवश्यकता महसूस हुई है? खैर, आप भाग्यशाली हैं! इस ट्यूटोरियल में, हम आपको Aspose.Words for .NET का उपयोग करके एक Word दस्तावेज़ से दूसरे में बुकमार्क किए गए टेक्स्ट को कॉपी करने का तरीका बताएंगे। चाहे आप एक गतिशील रिपोर्ट बना रहे हों या दस्तावेज़ निर्माण को स्वचालित कर रहे हों, यह मार्गदर्शिका आपके लिए प्रक्रिया को सरल बनाएगी।
 
 ## आवश्यक शर्तें
 
-- C# भाषा का मूलभूत ज्ञान.
-- Aspose.Words लाइब्रेरी के साथ .NET विकास वातावरण स्थापित।
+इससे पहले कि हम आगे बढ़ें, सुनिश्चित करें कि आपके पास निम्नलिखित चीजें हैं:
 
-## चरण 1: स्रोत दस्तावेज़ लोड करना
+-  Aspose.Words for .NET लाइब्रेरी: आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/net/).
+- विकास वातावरण: विजुअल स्टूडियो या कोई अन्य .NET विकास वातावरण।
+- C# का मूलभूत ज्ञान: C# प्रोग्रामिंग और .NET फ्रेमवर्क से परिचित होना।
 
- बुकमार्क टेक्स्ट की प्रतिलिपि बनाने से पहले, हमें स्रोत दस्तावेज़ को एक में लोड करना होगा`Document` फ़ाइल पथ का उपयोग कर ऑब्जेक्ट:
+## नामस्थान आयात करें
+
+आरंभ करने के लिए, सुनिश्चित करें कि आपके प्रोजेक्ट में आवश्यक नामस्थान आयातित हैं:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Import;
+using Aspose.Words.Bookmark;
+```
+
+## चरण 1: स्रोत दस्तावेज़ लोड करें
+
+सबसे पहले, आपको उस स्रोत दस्तावेज़ को लोड करना होगा जिसमें वह बुकमार्क किया गया पाठ है जिसे आप कॉपी करना चाहते हैं।
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## चरण 2: स्रोत बुकमार्क प्राप्त करना
+ यहाँ,`dataDir` आपके दस्तावेज़ निर्देशिका का पथ है, और`Bookmarks.docx` स्रोत दस्तावेज़ है.
 
- हम उपयोग करते हैं`Bookmarks` स्रोत दस्तावेज़ श्रेणी की संपत्ति का उपयोग करके वह विशिष्ट बुकमार्क प्राप्त करें जिसे हम कॉपी करना चाहते हैं:
+## चरण 2: बुकमार्क की पहचान करें
+
+इसके बाद, उस बुकमार्क की पहचान करें जिसे आप स्रोत दस्तावेज़ से कॉपी करना चाहते हैं।
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
-## चरण 3: गंतव्य दस्तावेज़ बनाना
+ प्रतिस्थापित करें`"MyBookmark1"` अपने बुकमार्क के वास्तविक नाम के साथ.
 
-हम एक नया दस्तावेज़ बनाते हैं जो बुकमार्क सामग्री की प्रतिलिपि बनाने के लिए गंतव्य दस्तावेज़ के रूप में काम करेगा:
+## चरण 3: गंतव्य दस्तावेज़ बनाएँ
+
+अब, एक नया दस्तावेज़ बनाएं जहां बुकमार्क किया गया पाठ कॉपी किया जाएगा।
 
 ```csharp
 Document dstDoc = new Document();
-```
-
-## चरण 4: कॉपी स्थान निर्दिष्ट करना
-
-हम वह स्थान निर्दिष्ट करते हैं जहाँ हम कॉपी किया गया टेक्स्ट जोड़ना चाहते हैं। हमारे उदाहरण में, हम गंतव्य दस्तावेज़ के अंतिम भाग के मुख्य भाग के अंत में टेक्स्ट जोड़ते हैं:
-
-```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## चरण 5: बुकमार्क टेक्स्ट आयात करें और कॉपी करें
+## चरण 4: बुकमार्क की गई सामग्री आयात करें
 
- हम एक का उपयोग करते हैं`NodeImporter`स्रोत दस्तावेज़ से गंतव्य दस्तावेज़ में बुकमार्क पाठ को आयात और कॉपी करने के लिए ऑब्जेक्ट:
+ यह सुनिश्चित करने के लिए कि शैलियाँ और स्वरूपण संरक्षित हैं, उपयोग करें`NodeImporter` स्रोत दस्तावेज़ से गंतव्य दस्तावेज़ में बुकमार्क की गई सामग्री आयात करने के लिए।
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+AppendBookmarkedText(importer, srcBookmark, dstNode);
+```
 
-AppendBookmarkedText(import, srcBookmark, dstNode);
+## चरण 5: AppendBookmarkedText विधि को परिभाषित करें
 
+यहाँ पर जादू होता है। बुकमार्क किए गए टेक्स्ट की प्रतिलिपि बनाने के लिए एक विधि परिभाषित करें:
+
+```csharp
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+{
+    Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+    Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
+    if (startPara == null || endPara == null)
+        throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+    if (startPara.ParentNode != endPara.ParentNode)
+        throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+    Node endNode = endPara.NextSibling;
+
+    for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+    {
+        Node newNode = importer.ImportNode(curNode, true);
+        dstNode.AppendChild(newNode);
+    }
+}
+```
+
+## चरण 6: गंतव्य दस्तावेज़ सहेजें
+
+अंत में, कॉपी की गई सामग्री को सत्यापित करने के लिए गंतव्य दस्तावेज़ को सहेजें।
+
+```csharp
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-### .NET के लिए Aspose.Words का उपयोग करके बुकमार्क किए गए टेक्स्ट की प्रतिलिपि बनाने के लिए उदाहरण स्रोत कोड
-
-.NET के लिए Aspose.Words का उपयोग करके बुकमार्क से पाठ की प्रतिलिपि बनाने के लिए यहां पूर्ण उदाहरण स्रोत कोड दिया गया है:
-
-```csharp
-
-	// दस्तावेज़ निर्देशिका का पथ.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document srcDoc = new Document(dataDir + "Bookmarks.docx");
-
-	// यह वह बुकमार्क है जिसकी सामग्री हम कॉपी करना चाहते हैं।
-	Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
-
-	// हम इस दस्तावेज़ में कुछ और जोड़ेंगे।
-	Document dstDoc = new Document();
-
-	// मान लीजिए कि हमें अंतिम भाग के अंत में जोड़ दिया जाएगा।
-	CompositeNode dstNode = dstDoc.LastSection.Body;
-
-	// यदि आप बिना किसी संदर्भ के कई बार आयात करते हैं, तो इसके परिणामस्वरूप कई शैलियाँ निर्मित होंगी।
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
-
-	AppendBookmarkedText(importer, srcBookmark, dstNode);
-	
-	dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
-
-```
-
-#### AppendBookmarkedText स्रोत कोड
-
-```csharp
-
-private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
-        {
-            // यह वह पैराग्राफ है जिसमें बुकमार्क की शुरुआत होती है।
-            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-            // यह वह पैराग्राफ है जिसमें बुकमार्क का अंत होता है।
-            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-            if (startPara == null || endPara == null)
-                throw new InvalidOperationException(
-                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-            // अपने आप को एक सरल परिदृश्य तक सीमित रखें।
-            if (startPara.ParentNode != endPara.ParentNode)
-                throw new InvalidOperationException(
-                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-            // हम आरंभिक पैराग्राफ से लेकर अंतिम पैराग्राफ तक (और उसमें सम्मिलित) सभी पैराग्राफों को कॉपी करना चाहते हैं,
-            // इसलिए जिस नोड पर हम रुकते हैं वह अंतिम पैराग्राफ के बाद एक है।
-            Node endNode = endPara.NextSibling;
-
-            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-            {
-                //यह वर्तमान नोड की एक प्रतिलिपि बनाता है और उसे संदर्भ में आयात करता है (इसे वैध बनाता है)
-                // गंतव्य दस्तावेज़ का। आयात करने का अर्थ है शैलियों और सूची पहचानकर्ताओं को सही ढंग से समायोजित करना।
-                Node newNode = importer.ImportNode(curNode, true);
-
-                dstNode.AppendChild(newNode);
-            }
-        }
-
-```
 ## निष्कर्ष
 
-इस लेख में, हमने C# स्रोत कोड का पता लगाया ताकि यह समझा जा सके कि .NET के लिए Aspose.Words से बुकमार्क किए गए टेक्स्ट को कॉपी करने के फ़ंक्शन का उपयोग कैसे किया जाए। हमने एक स्रोत दस्तावेज़ से दूसरे दस्तावेज़ में बुकमार्क की सामग्री की प्रतिलिपि बनाने के लिए चरण-दर-चरण मार्गदर्शिका का पालन किया।
+और बस! आपने Aspose.Words for .NET का उपयोग करके बुकमार्क किए गए टेक्स्ट को एक Word दस्तावेज़ से दूसरे में सफलतापूर्वक कॉपी कर लिया है। यह विधि दस्तावेज़ हेरफेर कार्यों को स्वचालित करने के लिए शक्तिशाली है, जिससे आपका वर्कफ़्लो अधिक कुशल और सुव्यवस्थित हो जाता है।
 
-### वर्ड दस्तावेज़ में बुकमार्क किए गए पाठ की प्रतिलिपि बनाने के लिए अक्सर पूछे जाने वाले प्रश्न
+## अक्सर पूछे जाने वाले प्रश्न
 
-#### प्रश्न: .NET के लिए Aspose.Words में "बुकमार्क के साथ टेक्स्ट कॉपी करें" सुविधा का उपयोग करने के लिए क्या आवश्यकताएं हैं?
+### क्या मैं एक साथ कई बुकमार्क कॉपी कर सकता हूँ?
+हां, आप एकाधिक बुकमार्क्स को पुनरावृत्त कर सकते हैं और प्रत्येक को कॉपी करने के लिए समान विधि का उपयोग कर सकते हैं।
 
-उत्तर: Aspose.Words for .NET में "बुकमार्क के साथ टेक्स्ट कॉपी करें" सुविधा का उपयोग करने के लिए, आपको C# भाषा का बुनियादी ज्ञान होना चाहिए। आपको Aspose.Words लाइब्रेरी इंस्टॉल किए गए .NET डेवलपमेंट एनवायरनमेंट की भी आवश्यकता है।
+### यदि बुकमार्क न मिले तो क्या होगा?
+`Range.Bookmarks` संपत्ति वापस मिलेगी`null`, इसलिए अपवादों से बचने के लिए सुनिश्चित करें कि आप इस मामले को संभालें।
 
-#### प्रश्न: मैं .NET के लिए Aspose.Words में स्रोत दस्तावेज़ कैसे लोड करूं?
+### क्या मैं मूल बुकमार्क का स्वरूपण संरक्षित रख सकता हूँ?
+ बिलकुल!`ImportFormatMode.KeepSourceFormatting` यह सुनिश्चित करता है कि मूल स्वरूपण सुरक्षित रहे.
 
- A: .NET के लिए Aspose.Words में एक स्रोत दस्तावेज़ लोड करने के लिए, आप इसका उपयोग कर सकते हैं`Document` दस्तावेज़ का फ़ाइल पथ निर्दिष्ट करके क्लास बनाएँ। यहाँ एक नमूना कोड है:
+### क्या बुकमार्क किये गये पाठ के आकार की कोई सीमा है?
+इसकी कोई विशिष्ट सीमा नहीं है, लेकिन अत्यंत बड़े दस्तावेज़ों के साथ प्रदर्शन भिन्न हो सकता है।
 
-```csharp
-Document srcDoc = new Document("path/to/your/document.docx");
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके स्रोत दस्तावेज़ में किसी विशिष्ट बुकमार्क की सामग्री कैसे प्राप्त करें?
-
- A: .NET के लिए Aspose.Words का उपयोग करके स्रोत दस्तावेज़ में किसी विशिष्ट बुकमार्क की सामग्री प्राप्त करने के लिए, आप इसका उपयोग कर सकते हैं`Bookmarks` स्रोत दस्तावेज़ श्रेणी की संपत्ति और विशिष्ट बुकमार्क को पुनः प्राप्त करने के लिए बुकमार्क नाम का उपयोग करें। यहाँ एक नमूना कोड है:
-
-```csharp
-Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके गंतव्य दस्तावेज़ में बुकमार्क टेक्स्ट कॉपी का स्थान कैसे निर्दिष्ट करें?
-
- उत्तर: यह निर्दिष्ट करने के लिए कि आप Aspose.Words for .NET का उपयोग करके गंतव्य दस्तावेज़ में कॉपी किए गए बुकमार्क टेक्स्ट को कहाँ जोड़ना चाहते हैं, आप गंतव्य दस्तावेज़ के अंतिम अनुभाग के मुख्य भाग पर नेविगेट कर सकते हैं। आप इसका उपयोग कर सकते हैं`LastSection` अंतिम अनुभाग और तक पहुँचने के लिए संपत्ति`Body` उस अनुभाग के मुख्य भाग तक पहुँचने के लिए प्रॉपर्टी का उपयोग करें। यहाँ एक नमूना कोड है:
-
-```csharp
-CompositeNode dstNode = dstDoc.LastSection.Body;
-```
-
-#### प्रश्न: Aspose.Words for .NET का उपयोग करके स्रोत दस्तावेज़ से गंतव्य दस्तावेज़ में बुकमार्क टेक्स्ट को कैसे आयात और कॉपी करें?
-
- A: Aspose.Words for .NET का उपयोग करके स्रोत दस्तावेज़ से गंतव्य दस्तावेज़ में बुकमार्क पाठ को आयात और कॉपी करने के लिए, आप इसका उपयोग कर सकते हैं`NodeImporter` क्लास में स्रोत दस्तावेज़, गंतव्य दस्तावेज़ और रखने के लिए फ़ॉर्मेटिंग मोड निर्दिष्ट करें। फिर आप इसका उपयोग कर सकते हैं`AppendBookmarkedText` गंतव्य दस्तावेज़ में बुकमार्क टेक्स्ट जोड़ने की विधि। यहाँ एक नमूना कोड है:
-
-```csharp
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
-AppendBookmarkedText(import, srcBookmark, dstNode);
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके बुकमार्क टेक्स्ट की प्रतिलिपि बनाने के बाद गंतव्य दस्तावेज़ को कैसे सहेजा जाए?
-
-उत्तर: Aspose.Words for .NET का उपयोग करके बुकमार्क से पाठ की प्रतिलिपि बनाने के बाद गंतव्य दस्तावेज़ को सहेजने के लिए, आप इसका उपयोग कर सकते हैं`Save` की विधि`Document` गंतव्य फ़ाइल पथ निर्दिष्ट करने वाला ऑब्जेक्ट। यहाँ एक नमूना कोड है:
-
-```csharp
-dstDoc.Save("path/to/your/destination-document.docx");
-```
+### क्या मैं विभिन्न वर्ड दस्तावेज़ प्रारूपों के बीच पाठ की प्रतिलिपि बना सकता हूँ?
+हां, Aspose.Words विभिन्न Word प्रारूपों का समर्थन करता है, और यह विधि इन प्रारूपों में काम करती है।

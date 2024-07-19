@@ -8,7 +8,7 @@ weight: 11
 url: /de/java/using-document-elements/using-fields/
 ---
 
-In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie Felder in Aspose.Words für Java verwenden, um Dokumente ganz einfach zu bearbeiten. Aspose.Words für Java ist eine leistungsstarke API, mit der Sie programmgesteuert mit Word-Dokumenten arbeiten können und dabei die volle Kontrolle über deren Inhalt und Formatierung haben.
+In diesem Schritt-für-Schritt-Tutorial zeigen wir Ihnen, wie Sie Felder in Aspose.Words für Java verwenden, um Dokumente mühelos zu bearbeiten. Aspose.Words für Java ist eine leistungsstarke API, mit der Sie programmgesteuert mit Word-Dokumenten arbeiten können und dabei die volle Kontrolle über deren Inhalt und Formatierung haben.
 
 ## 1. Einleitung
 
@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Ersetzen`"Your Document Directory"` Und`"Your Output Directory"` mit den entsprechenden Pfaden.
+ Ersetzen`"Your Document Directory"`Und`"Your Output Directory"` mit den entsprechenden Pfaden.
 
 ## 4. Serienbrieffunktion anpassen
 

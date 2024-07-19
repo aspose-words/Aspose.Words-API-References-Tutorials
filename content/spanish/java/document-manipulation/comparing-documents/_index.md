@@ -18,7 +18,7 @@ La comparación de documentos implica analizar dos documentos e identificar dife
 
 ## Comparación de documentos básicos
 
- Comencemos con los conceptos básicos de la comparación de documentos. Usaremos dos documentos,`docA` y`docB`y compararlos.
+ Comencemos con los conceptos básicos de la comparación de documentos. Usaremos dos documentos,`docA`y`docB`y compararlos.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-En este fragmento de código, cargamos dos documentos,`docA` y`docB` y luego use el`compare` método para compararlos. Especificamos el autor como "usuario" y se realiza la comparación. Finalmente, comprobamos si existen revisiones, indicando diferencias entre los documentos.
+En este fragmento de código, cargamos dos documentos,`docA`y`docB` y luego use el`compare` método para compararlos. Especificamos el autor como "usuario" y se realiza la comparación. Finalmente, comprobamos si existen revisiones, indicando diferencias entre los documentos.
 
 ## Personalización de la comparación con opciones
 
@@ -103,7 +103,7 @@ Comparar documentos en Aspose.Words para Java es una capacidad poderosa que se p
 
 ### ¿Puedo comparar documentos con formato complejo usando Aspose.Words para Java?
 
-Sí, Aspose.Words para Java ofrece opciones para comparar documentos con formatos complejos. Puede personalizar la comparación para adaptarla a sus necesidades.
+Sí, Aspose.Words para Java ofrece opciones para comparar documentos con formato complejo. Puede personalizar la comparación para adaptarla a sus necesidades.
 
 ### ¿Aspose.Words para Java es adecuado para sistemas de gestión de documentos?
 

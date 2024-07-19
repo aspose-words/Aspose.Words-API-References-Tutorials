@@ -109,7 +109,7 @@ document.save("output.docx", aspose.words.SaveFormat.DOCX)
 - 对于复杂的扩展使用异步加载。
 - 在不同的设备和浏览器上测试扩展。
 
-## 解决常见问题
+## 常见问题故障排除
 
 遇到 Web 扩展问题？查看 Aspose.Words 文档和社区论坛以获取常见问题的解决方案。
 

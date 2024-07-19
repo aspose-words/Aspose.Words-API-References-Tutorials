@@ -74,7 +74,7 @@ Dalam tutorial ini, kita melihat cara mengakses bagian dokumen Word berdasarkan 
 
 #### T: Bagaimana cara mengatur direktori dokumen di Aspose.Words untuk .NET?
 
- A: Untuk menyetel jalur ke direktori yang berisi dokumen Anda, Anda harus mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai. Berikut cara melakukannya:
+A: Untuk menyetel jalur ke direktori yang berisi dokumen Anda, Anda harus mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai. Berikut cara melakukannya:
 
 ```csharp
 // Jalur ke direktori dokumen Anda

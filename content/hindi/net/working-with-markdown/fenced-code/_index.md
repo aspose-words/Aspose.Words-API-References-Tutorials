@@ -45,7 +45,7 @@ builder.ParagraphFormat.Style = fencedCodeWithInfo;
 builder.Writeln("This is a fenced code with info string");
 ```
 
-### .NET के लिए Aspose.Words का उपयोग करके Fenced Code के लिए उदाहरण स्रोत कोड
+### .NET के लिए Aspose.Words का उपयोग करके फेंस्ड कोड के लिए उदाहरण स्रोत कोड
 
 ```csharp
 // दस्तावेज़ में सामग्री जोड़ने के लिए दस्तावेज़ बिल्डर का उपयोग करें.

@@ -61,7 +61,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Itt a dokumentumkészítőt használjuk a táblázat elkészítéséhez lépésről lépésre. Hívással kezdjük`StartTable()` a táblázat inicializálásához, majd használja`InsertCell()` sejtek beillesztésére és`Write()` tartalom hozzáadásához az egyes cellákhoz. Mi is használjuk`EndRow()` egy sor befejezéséhez és egy új sor indításához. Végül felhívjuk`EndTable()` jelezni, hogy a táblázat elkészítése befejeződött.
+ Itt a dokumentumkészítőt használjuk a táblázat elkészítéséhez lépésről lépésre. Hívással kezdjük`StartTable()` a táblázat inicializálásához, majd használja`InsertCell()` sejtek beillesztésére és`Write()` hogy tartalmat adjon az egyes cellákhoz. Mi is használjuk`EndRow()` egy sor befejezéséhez és egy új sor indításához. Végül felhívjuk`EndTable()` jelezni, hogy a táblázat elkészítése befejeződött.
 
 ## 4. lépés: Mentse el a dokumentumot
 Végül meg kell mentenünk

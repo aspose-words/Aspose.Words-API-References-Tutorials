@@ -2,115 +2,100 @@
 title: Consenti solo la protezione dei campi del modulo nel documento Word
 linktitle: Consenti solo la protezione dei campi del modulo nel documento Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come utilizzare Aspose.Words per .NET per proteggere i documenti Word e consentire solo la modifica dei campi del modulo.
+description: Scopri come proteggere i documenti di Word, consentendo la modifica solo dei campi del modulo utilizzando Aspose.Words per .NET. Segui la nostra guida per assicurarti che i tuoi documenti siano sicuri e facilmente modificabili.
 type: docs
 weight: 10
 url: /it/net/document-protection/allow-only-form-fields-protect/
 ---
-La protezione dei documenti è una funzionalità essenziale durante l'elaborazione di testi con file all'interno dell'applicazione C#. Con la libreria Aspose.Words per .NET, puoi facilmente proteggere i tuoi documenti e consentire solo la modifica dei campi del modulo. In questa guida passo passo, ti spiegheremo come utilizzare il codice sorgente C# per consentire solo la modifica dei campi modulo utilizzando la funzionalità Consenti solo protezione campi modulo di Aspose.Words per .NET.
+## introduzione
 
-## Passaggio 1: impostazione della directory dei documenti
+Ehilà! Hai mai avuto bisogno di proteggere parti specifiche di un documento Word lasciando le altre parti modificabili? Aspose.Words per .NET rende tutto questo estremamente semplice. In questo tutorial, approfondiremo come consentire solo la protezione dei campi modulo in un documento Word. Alla fine di questa guida avrai una conoscenza approfondita della protezione dei documenti utilizzando Aspose.Words per .NET. Pronto? Facciamo un salto!
 
-Il primo passo è definire la directory del documento. È necessario specificare il percorso in cui si desidera salvare il documento protetto. Per esempio :
+## Prerequisiti
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Prima di immergerci nella parte di codifica, assicuriamoci di avere tutto ciò di cui hai bisogno:
 
-Assicurati di sostituire "LA TUA DIRECTORY DOCUMENTI" con il percorso effettivo della directory dei documenti.
+1.  Aspose.Words per .NET Library: puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+2. Visual Studio: qualsiasi versione recente funzionerà perfettamente.
+3. Conoscenza di base di C#: comprendere le nozioni di base ti aiuterà a seguire il tutorial.
 
-## Passaggio 2: inserimento di sezioni e testo
+## Importa spazi dei nomi
 
-Successivamente, devi inserire sezioni e testo nel tuo documento. Utilizza la classe DocumentBuilder fornita da Aspose.Words per creare il contenuto del tuo documento. Qui c'è un semplice esempio:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Text added to a document.");
-```
-
-In questo esempio creiamo un nuovo documento vuoto e quindi utilizziamo DocumentBuilder per aggiungere una riga di testo.
-
-## Passaggio 3: abilitazione della protezione dei documenti
-
- La protezione dei documenti funziona solo quando la protezione dei documenti è abilitata. È possibile abilitare la protezione dei documenti utilizzando il file`Protect` metodo della classe Document. Ecco come:
+Per prima cosa, dobbiamo importare gli spazi dei nomi necessari. Questo imposta il nostro ambiente per utilizzare Aspose.Words.
 
 ```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-In questo esempio, abilitiamo la protezione del documento specificando il tipo di protezione `
+## Passaggio 1: imposta il tuo progetto
 
-AllowOnlyFormFields` e impostando una password.
+Crea un nuovo progetto in Visual Studio  
+Aprire Visual Studio e creare un nuovo progetto di app console (.NET Core). Chiamalo con qualcosa di significativo, come "AsposeWordsProtection".
 
-## Passaggio 4: consentire solo i campi del modulo
+## Passaggio 2: installare Aspose.Words per .NET
 
-Ora che la protezione dei documenti è abilitata, dobbiamo specificare che è consentita solo la modifica dei campi del modulo. Ciò garantisce che gli utenti possano modificare solo le parti del documento che sono campi modulo. Ecco come:
+Installare tramite Gestione pacchetti NuGet  
+Fai clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, seleziona "Gestisci pacchetti NuGet" e cerca`Aspose.Words`. Installalo.
 
-```csharp
-doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
-```
+## Passaggio 3: inizializzare il documento
 
-Assicurati di sostituire "password" con la password impostata in precedenza.
-
-## Passaggio 5: salvataggio del documento protetto
-
- Infine, puoi salvare il documento protetto utilizzando il file`Save` metodo della classe Document. Specificare il percorso completo del file e il nome del file desiderato. Per esempio :
-
-```csharp
-doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
-```
-
-Assicurati di sostituire "dataDir" con il percorso della directory dei documenti.
-
-### Codice sorgente di esempio per la funzionalità Consenti solo protezione campi modulo utilizzando Aspose.Words per .NET
+Crea un nuovo oggetto Documento  
+Iniziamo creando un nuovo documento e un generatore di documenti per aggiungere del testo.
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-// Inserisci due sezioni con del testo.
+// Inizializza un nuovo documento e DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
+```
 
-// La protezione del documento funziona solo quando la protezione del documento è attivata ed è consentita solo la modifica nei campi del modulo.
+ Qui ne creiamo uno nuovo`Document`E`DocumentBuilder` esempio. IL`DocumentBuilder` ci permette di aggiungere testo al nostro documento.
+
+## Passaggio 4: proteggere il documento
+
+Applica la protezione consentendo solo la modifica dei campi del modulo  
+Ora aggiungiamo la protezione al nostro documento.
+
+```csharp
+// Proteggi il documento, consentendo la modifica solo dei campi del modulo
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
+```
 
-// Salva il documento protetto.
+Questa riga di codice protegge il documento e consente solo la modifica dei campi del modulo. La password "password" viene utilizzata per rafforzare la protezione.
+
+## Passaggio 5: salva il documento
+
+Salva il documento protetto  
+Infine, salviamo il nostro documento nella directory specificata.
+
+```csharp
+// Salva il documento protetto
 doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ```
 
+Ciò salva il documento con la protezione applicata.
+
 ## Conclusione
 
-In questa guida, abbiamo esplorato come utilizzare la libreria Aspose.Words per .NET per proteggere un documento e consentire solo la modifica dei campi del modulo. Seguendo i passaggi forniti, puoi implementare facilmente questa funzionalità nella tua applicazione C#. La protezione dei documenti è essenziale per garantire la sicurezza e la riservatezza dei tuoi documenti.
+il gioco è fatto! Hai appena imparato come proteggere un documento Word in modo che solo i campi del modulo possano essere modificati utilizzando Aspose.Words per .NET. Questa è una funzionalità utile quando è necessario garantire che alcune parti del documento rimangano invariate consentendo al tempo stesso la compilazione di campi specifici.
 
-### Domande frequenti per consentire solo la protezione dei campi modulo nel documento Word
+## Domande frequenti
 
-#### D: Cos'è la protezione dei documenti in Aspose.Words per .NET?
+###	 Come posso rimuovere la protezione da un documento?  
+ Per rimuovere la protezione, utilizzare il`doc.Unprotect("password")` metodo, dove "password" è la password utilizzata per proteggere il documento.
 
-R: La protezione dei documenti in Aspose.Words per .NET è una funzionalità che ti consente di proteggere i tuoi documenti limitando determinate azioni, come la modifica, la formattazione o la modifica del contenuto. Aiuta a mantenere l'integrità e la riservatezza dei tuoi documenti impedendo modifiche non autorizzate.
+###	 Posso applicare diversi tipi di protezione utilizzando Aspose.Words per .NET?  
+ Sì, Aspose.Words supporta vari tipi di protezione come`ReadOnly`, `NoProtection` , E`AllowOnlyRevisions`.
 
-#### D: Come posso proteggere un documento e consentire la modifica solo dei campi del modulo utilizzando Aspose.Words per .NET?
+###	 È possibile utilizzare una password diversa per sezioni diverse?  
+No, la protezione a livello di documento in Aspose.Words si applica all'intero documento. Non è possibile assegnare password diverse a sezioni diverse.
 
-R: Per proteggere un documento e consentire la modifica solo dei campi del modulo utilizzando Aspose.Words per .NET, è possibile seguire questi passaggi:
-1. Definisci il percorso della directory per il tuo documento.
-2.  Inserisci sezioni e testo nel tuo documento utilizzando il file`DocumentBuilder` classe.
-3.  Abilita la protezione dei documenti utilizzando il file`Protect` metodo del`Document` class, specificando il tipo di protezione come`AllowOnlyFormFields` e fornendo una password.
-4.  Salvare il documento protetto utilizzando il file`Save` metodo del`Document` classe.
+###	 Cosa succede se viene utilizzata la password errata?  
+Se viene utilizzata una password errata, il documento rimarrà protetto e le modifiche specificate non verranno applicate.
 
-#### D: Posso inserire campi modulo in un documento protetto utilizzando Aspose.Words per .NET?
-
-R: Sì, puoi inserire campi modulo in un documento protetto utilizzando Aspose.Words per .NET. La protezione dei documenti con il`AllowOnlyFormFields` type consente agli utenti di modificare solo i campi del modulo proteggendo il resto del contenuto del documento. Puoi usare il`DocumentBuilder` classe per inserire campi modulo nel documento prima di abilitare la protezione.
-
-#### D: Posso rimuovere la protezione dei documenti da un documento protetto?
-
- R: Sì, puoi rimuovere la protezione del documento da un documento protetto utilizzando Aspose.Words per .NET. Per rimuovere la protezione è possibile utilizzare il file`Unprotect` metodo del`Document` classe e fornire la password corretta. Ciò rimuoverà la protezione e consentirà la modifica senza restrizioni del documento.
-
-#### D: È possibile proteggere un documento con più tipi di protezione?
-
- R: No, Aspose.Words per .NET consente di applicare un solo tipo di protezione alla volta a un documento. comunque, il`AllowOnlyFormFields` il tipo di protezione può limitare efficacemente la modifica ai campi del modulo consentendo altri tipi di protezione, ad esempio`AllowOnlyComments` O`AllowOnlyRevisions`da abbinare alla protezione del campo modulo.
-
-#### D: Posso impostare password diverse per diversi tipi di protezione in un documento?
-
-R: No, Aspose.Words per .NET ti consente di impostare un'unica password per la protezione del documento, indipendentemente dal tipo di protezione. La stessa password verrà utilizzata per abilitare e disabilitare la protezione dei documenti.
+###	 Posso verificare a livello di codice se un documento è protetto?  
+ Sì, puoi usare il`doc.ProtectionType` proprietà per verificare lo stato di protezione di un documento.

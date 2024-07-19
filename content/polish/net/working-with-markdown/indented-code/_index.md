@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Dodaj styl dla wciętego kodu
 
-Dodamy niestandardowy styl dla wciętego kodu za pomocą`Styles.Add` metoda`Document` obiekt. W tym przykładzie tworzymy styl o nazwie „IndentedCode” dla kodu z wcięciem.
+ Dodamy niestandardowy styl dla wciętego kodu za pomocą`Styles.Add` metoda`Document` obiekt. W tym przykładzie tworzymy styl o nazwie „IndentedCode” dla kodu z wcięciem.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

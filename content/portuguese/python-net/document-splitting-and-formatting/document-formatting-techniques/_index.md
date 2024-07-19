@@ -7,7 +7,7 @@ type: docs
 weight: 14
 url: /pt/python-net/document-splitting-and-formatting/document-formatting-techniques/
 ---
-A formatação de documentos desempenha um papel fundamental na apresentação de conteúdo com impacto visual. No campo da programação, Aspose.Words for Python se destaca como uma ferramenta poderosa para dominar técnicas de formatação de documentos. Esteja você criando relatórios, gerando faturas ou criando brochuras, o Aspose.Words permite que você manipule documentos de forma programática. Este artigo irá guiá-lo através de várias técnicas de formatação de documentos usando Aspose.Words for Python, garantindo que seu conteúdo se destaque em termos de estilo e apresentação.
+A formatação de documentos desempenha um papel fundamental na apresentação de conteúdo com impacto visual. No campo da programação, Aspose.Words for Python se destaca como uma ferramenta poderosa para dominar técnicas de formatação de documentos. Esteja você criando relatórios, gerando faturas ou projetando brochuras, o Aspose.Words permite que você manipule documentos de forma programática. Este artigo irá guiá-lo através de várias técnicas de formatação de documentos usando Aspose.Words for Python, garantindo que seu conteúdo se destaque em termos de estilo e apresentação.
 
 ## Introdução ao Aspose.Words para Python
 

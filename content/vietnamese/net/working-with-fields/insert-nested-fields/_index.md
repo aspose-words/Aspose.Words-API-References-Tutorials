@@ -112,11 +112,11 @@ Trả lời: Để chèn các trường lồng nhau trong tài liệu Word bằn
 
 #### Câu hỏi: Tôi có thể có các trường lồng nhau nhiều cấp độ trong tài liệu Word bằng Aspose.Words cho .NET không?
 
- Trả lời: Có, có thể có các trường lồng nhau nhiều cấp độ trong tài liệu Word với Aspose.Words cho .NET. Bạn có thể tạo hệ thống phân cấp phức tạp của các trường lồng nhau bằng cách sử dụng`FieldStart.NextSibling` phương pháp thêm các trường con vào các trường cha hiện có.
+Trả lời: Có, có thể có các trường lồng nhau nhiều cấp độ trong tài liệu Word với Aspose.Words cho .NET. Bạn có thể tạo hệ thống phân cấp phức tạp của các trường lồng nhau bằng cách sử dụng`FieldStart.NextSibling` phương pháp thêm các trường con vào các trường cha hiện có.
 
 #### Câu hỏi: Làm cách nào tôi có thể tùy chỉnh các thuộc tính của các trường lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET?
 
- Trả lời: Để tùy chỉnh các thuộc tính của các trường lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể truy cập vào phần tương ứng`FieldStart`các đối tượng và sửa đổi các thuộc tính của chúng khi cần thiết. Bạn có thể đặt các tùy chọn định dạng, giá trị, phép tính, v.v. của các trường lồng nhau để đạt được kết quả mong muốn.
+ Trả lời: Để tùy chỉnh các thuộc tính của các trường lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể truy cập vào phần tương ứng`FieldStart` các đối tượng và sửa đổi các thuộc tính của chúng khi cần thiết. Bạn có thể đặt các tùy chọn định dạng, giá trị, phép tính, v.v. của các trường lồng nhau để đạt được kết quả mong muốn.
 
 #### Câu hỏi: Việc chèn các trường lồng nhau có ảnh hưởng đến hiệu suất tài liệu Word với Aspose.Words dành cho .NET không?
 

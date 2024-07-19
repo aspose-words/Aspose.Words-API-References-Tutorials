@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Schriftartenordner mit Priorität festlegen
- Anschließend können Sie die Schriftartenordner mit Priorität festlegen, indem Sie`FontSettings` Klasse und die`SetFontsSources()`Methode. Sie können mehrere Schriftartquellen angeben, indem Sie Instanzen von`SystemFontSource` Und`FolderFontSource`. In diesem Beispiel haben wir zwei Schriftartquellen definiert: die Standardsystemschriftartquelle und einen benutzerdefinierten Schriftartordner mit der Priorität 1.
+ Anschließend können Sie die Schriftartenordner mit Priorität festlegen mit dem`FontSettings` Klasse und die`SetFontsSources()`Methode. Sie können mehrere Schriftartquellen angeben, indem Sie Instanzen von`SystemFontSource`Und`FolderFontSource`. In diesem Beispiel haben wir zwei Schriftartquellen definiert: die Standardsystemschriftartquelle und einen benutzerdefinierten Schriftartordner mit der Priorität 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

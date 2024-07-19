@@ -2,64 +2,107 @@
 title: เพิ่มภาษาญี่ปุ่นเป็นภาษาสำหรับการแก้ไข
 linktitle: เพิ่มภาษาญี่ปุ่นเป็นภาษาสำหรับการแก้ไข
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: คำแนะนำทีละขั้นตอนในการเพิ่มภาษาญี่ปุ่นเป็นภาษาแก้ไขด้วย Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีเพิ่มภาษาญี่ปุ่นเป็นภาษาสำหรับแก้ไขในเอกสารของคุณโดยใช้ Aspose.Words สำหรับ .NET พร้อมด้วยคำแนะนำโดยละเอียดทีละขั้นตอนนี้
 type: docs
 weight: 10
 url: /th/net/programming-with-document-options-and-settings/add-japanese-as-editing-languages/
 ---
+## การแนะนำ
 
-ในบทช่วยสอนนี้ เราจะนำคุณทีละขั้นตอนเพื่อทำความเข้าใจและใช้งานฟังก์ชันการเพิ่มภาษาญี่ปุ่นเป็นภาษาแก้ไขด้วย Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณสามารถตั้งค่าภาษาเมื่อโหลดเอกสารและเพิ่มภาษาญี่ปุ่นเป็นภาษาสำหรับแก้ไข
+คุณเคยพยายามเปิดเอกสารและพบว่าตัวเองหลงอยู่ในข้อความที่อ่านไม่ออกเพราะการตั้งค่าภาษาไม่ถูกต้องหรือไม่? เหมือนพยายามอ่านแผนที่เป็นภาษาต่างประเทศเลย! หากคุณกำลังทำงานกับเอกสารในภาษาต่างๆ โดยเฉพาะภาษาญี่ปุ่น Aspose.Words for .NET คือเครื่องมือที่เหมาะกับคุณ บทความนี้จะแนะนำคุณทีละขั้นตอนเกี่ยวกับวิธีเพิ่มภาษาญี่ปุ่นเป็นภาษาสำหรับแก้ไขในเอกสารของคุณโดยใช้ Aspose.Words สำหรับ .NET มาดำดิ่งและให้แน่ใจว่าคุณจะไม่หลงทางในการแปลอีกต่อไป!
 
-## ขั้นตอนที่ 1: การตั้งค่าโครงการ
+## ข้อกำหนดเบื้องต้น
 
-ในการเริ่มต้น ให้สร้างโปรเจ็กต์ C# ใหม่ใน IDE ที่คุณชื่นชอบ ตรวจสอบให้แน่ใจว่าไลบรารี Aspose.Words สำหรับ .NET ถูกอ้างอิงในโปรเจ็กต์ของคุณ
+ก่อนที่เราจะเริ่ม มีบางสิ่งที่คุณต้องเตรียม:
 
-## ขั้นตอนที่ 2: กำลังโหลดเอกสาร
+1. Visual Studio: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Visual Studio แล้ว มันคือสภาพแวดล้อมการพัฒนาแบบรวม (IDE) ที่เราจะใช้
+2.  Aspose.Words สำหรับ .NET: คุณต้องติดตั้ง Aspose.Words สำหรับ .NET หากคุณยังไม่มีคุณสามารถดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/words/net/).
+3.  เอกสารตัวอย่าง: เตรียมเอกสารตัวอย่างที่คุณต้องการแก้ไขให้พร้อม มันควรจะเข้า`.docx` รูปแบบ.
+4. ความรู้พื้นฐาน C#: ความเข้าใจพื้นฐานเกี่ยวกับการเขียนโปรแกรม C# จะช่วยให้คุณทำตามตัวอย่างได้
 
-ในขั้นตอนนี้ เราจะโหลดเอกสาร Word ที่ไม่มีภาษาสำหรับการแก้ไขเริ่มต้นและเราต้องการเพิ่มภาษาญี่ปุ่น ใช้รหัสต่อไปนี้เพื่อโหลดเอกสาร:
+## นำเข้าเนมสเปซ
+
+ก่อนที่คุณจะเริ่มเขียนโค้ดได้ คุณต้องนำเข้าเนมสเปซที่จำเป็นก่อน เนมสเปซเหล่านี้ให้การเข้าถึงไลบรารี Aspose.Words และคลาสที่จำเป็นอื่นๆ
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+เมื่อนำเข้าเนมสเปซเหล่านี้แล้ว คุณก็พร้อมที่จะเริ่มเขียนโค้ดแล้ว!
+
+## ขั้นตอนที่ 1: ตั้งค่า LoadOptions ของคุณ
+
+ ก่อนอื่นคุณต้องตั้งค่าของคุณ`LoadOptions`- นี่คือที่ที่คุณจะระบุการตั้งค่าภาษาสำหรับเอกสารของคุณ
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
+```
 
-// ตั้งค่ากำหนดภาษาที่จะใช้เมื่อโหลดเอกสาร
+ ที่`LoadOptions` คลาสช่วยให้คุณปรับแต่งวิธีการโหลดเอกสารได้ ที่นี่เราเพิ่งเริ่มต้นกับมัน
+
+## ขั้นตอนที่ 2: เพิ่มภาษาญี่ปุ่นเป็นภาษาสำหรับการแก้ไข
+
+ ตอนนี้คุณได้ตั้งค่าของคุณแล้ว`LoadOptions`ถึงเวลาเพิ่มภาษาญี่ปุ่นเป็นภาษาตัดต่อแล้ว คิดว่านี่คือการตั้งค่า GPS ของคุณเป็นภาษาที่ถูกต้องเพื่อให้คุณสามารถนำทางได้อย่างราบรื่น
+
+```csharp
 loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
+```
 
+บรรทัดโค้ดนี้บอกให้ Aspose.Words ตั้งค่าภาษาญี่ปุ่นเป็นภาษาสำหรับแก้ไขเอกสาร
+
+## ขั้นตอนที่ 3: ระบุไดเร็กทอรีเอกสาร
+
+ถัดไป คุณต้องระบุเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ นี่คือที่เก็บเอกสารตัวอย่างของคุณ
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีเอกสารของคุณ
+
+## ขั้นตอนที่ 4: โหลดเอกสาร
+
+เมื่อตั้งค่าทุกอย่างเรียบร้อยแล้ว ก็ถึงเวลาโหลดเอกสารของคุณ นี่คือจุดที่ความมหัศจรรย์เกิดขึ้น!
+
+```csharp
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 ```
 
-## ขั้นตอนที่ 3: การตรวจสอบภาษาเริ่มต้น
+ ที่นี่ คุณกำลังโหลดเอกสารตามที่ระบุ`LoadOptions`.
 
-หลังจากโหลดเอกสาร เราจะตรวจสอบว่าภาษาเริ่มต้นสำหรับการแก้ไขได้รับการตั้งค่าเป็นภาษาญี่ปุ่นอย่างถูกต้องหรือไม่ ใช้รหัสต่อไปนี้เพื่อรับรหัสภาษาฟาร์อีสเทอร์น:
+## ขั้นตอนที่ 5: ตรวจสอบการตั้งค่าภาษา
+
+ หลังจากโหลดเอกสารแล้ว สิ่งสำคัญคือต้องตรวจสอบว่าใช้การตั้งค่าภาษาอย่างถูกต้องหรือไม่ คุณสามารถทำได้โดยการตรวจสอบ`LocaleIdFarEast` คุณสมบัติ.
 
 ```csharp
 int localeIdFarEast = doc.Styles.DefaultFont.LocaleIdFarEast;
 Console.WriteLine(
-	localeIdFarEast == (int) EditingLanguage.Japanese
-		? "The document either has no any FarEast language set in defaults or it was set to Japanese originally."
-		: "The document default FarEast language was set to another than Japanese language originally, so it is not overridden.");
+    localeIdFarEast == (int)EditingLanguage.Japanese
+        ? "The document either has no any FarEast language set in defaults or it was set to Japanese originally."
+        : "The document default FarEast language was set to another than Japanese language originally, so it is not overridden.");
 ```
 
-รหัสจะตรวจสอบว่ารหัสภาษาฟาร์อีสเทิร์นตรงกับรหัสภาษาญี่ปุ่นหรือไม่ ตามผลลัพธ์จะแสดงข้อความที่เกี่ยวข้อง
+รหัสนี้จะตรวจสอบว่าภาษา FarEast เริ่มต้นถูกตั้งค่าเป็นภาษาญี่ปุ่นและพิมพ์ข้อความที่เหมาะสม
 
-### ตัวอย่างซอร์สโค้ดสำหรับการเพิ่มภาษาญี่ปุ่นเป็นภาษาการแก้ไขโดยใช้ Aspose.Words สำหรับ .NET
+## บทสรุป
 
-```csharp
+และคุณก็ได้แล้ว! คุณได้เพิ่มภาษาญี่ปุ่นเป็นภาษาสำหรับแก้ไขเอกสารของคุณโดยใช้ Aspose.Words for .NET สำเร็จแล้ว เหมือนกับการเพิ่มภาษาใหม่ลงในแผนที่ของคุณ ทำให้ง่ายต่อการนำทางและทำความเข้าใจ ไม่ว่าคุณจะจัดการกับเอกสารหลายภาษาหรือเพียงต้องการให้แน่ใจว่าข้อความของคุณมีรูปแบบที่ถูกต้อง Aspose.Words ก็พร้อมช่วยคุณ ตอนนี้ออกไปสำรวจโลกแห่งระบบอัตโนมัติของเอกสารอย่างมั่นใจ!
 
-	LoadOptions loadOptions = new LoadOptions();
-	
-	// ตั้งค่ากำหนดภาษาที่จะใช้เมื่อมีการโหลดเอกสาร
-	loadOptions.LanguagePreferences.AddEditingLanguage(EditingLanguage.Japanese);
-	
-	// เส้นทางไปยังไดเร็กทอรีเอกสาร
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
+## คำถามที่พบบ่อย
 
-	int localeIdFarEast = doc.Styles.DefaultFont.LocaleIdFarEast;
-	Console.WriteLine(
-		localeIdFarEast == (int) EditingLanguage.Japanese
-			? "The document either has no any FarEast language set in defaults or it was set to Japanese originally."
-			: "The document default FarEast language was set to another than Japanese language originally, so it is not overridden.");
+### ฉันสามารถเพิ่มหลายภาษาเป็นภาษาสำหรับการแก้ไขได้หรือไม่
+ ใช่ คุณสามารถเพิ่มได้หลายภาษาโดยใช้`AddEditingLanguage` วิธีการของแต่ละภาษา
 
-```
+### ฉันต้องมีใบอนุญาตเพื่อใช้ Aspose.Words สำหรับ .NET หรือไม่
+ ใช่ คุณต้องมีใบอนุญาตสำหรับการใช้งานเชิงพาณิชย์ คุณสามารถซื้อได้[ที่นี่](https://purchase.aspose.com/buy) หรือได้รับใบอนุญาตชั่วคราว[ที่นี่](https://purchase.aspose.com/temporary-license/).
 
+### Aspose.Words สำหรับ .NET มีคุณสมบัติอื่นใดอีกบ้าง
+ Aspose.Words สำหรับ .NET นำเสนอคุณสมบัติที่หลากหลาย รวมถึงการสร้างเอกสาร การแปลง การจัดการ และอื่นๆ ตรวจสอบ[เอกสารประกอบ](https://reference.aspose.com/words/net/) สำหรับรายละเอียดเพิ่มเติม
+
+### ฉันสามารถลองใช้ Aspose.Words สำหรับ .NET ก่อนซื้อได้หรือไม่
+ อย่างแน่นอน! คุณสามารถดาวน์โหลดรุ่นทดลองใช้ฟรี[ที่นี่](https://releases.aspose.com/).
+
+### ฉันจะรับการสนับสนุนสำหรับ Aspose.Words สำหรับ .NET ได้ที่ไหน
+ คุณสามารถรับการสนับสนุนจากชุมชน Aspose[ที่นี่](https://forum.aspose.com/c/words/8).

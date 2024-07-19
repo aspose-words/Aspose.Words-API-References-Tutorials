@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-htmlsaveoptions/export-cid-urls-for-mhtml-resources/
 ---
 
-den här handledningen går vi igenom C#-källkoden för att exportera CID-URL:er för MHTML-resurser med Aspose.Words för .NET. Denna funktion låter dig exportera CID-URL:er för MHTML-resurser när du sparar ett dokument i MHTML-format.
+I den här handledningen går vi igenom C#-källkoden för att exportera CID-URL:er för MHTML-resurser med Aspose.Words för .NET. Denna funktion låter dig exportera CID-URL:er för MHTML-resurser när du sparar ett dokument i MHTML-format.
 
 ## Steg 1: Projektinställning
 

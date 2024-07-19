@@ -10,7 +10,7 @@ url: /vi/java/document-security/managing-document-permissions/
 
 ## Giới thiệu
 
-Trong thế giới kỹ thuật số ngày nay, quản lý tài liệu là một khía cạnh quan trọng trong quy trình làm việc của mọi tổ chức. Đảm bảo rằng đúng người có quyền truy cập vào đúng tài liệu là điều cần thiết để duy trì tính bảo mật và hiệu quả. Aspose.Words for Java là một API Java mạnh mẽ cho phép bạn thao tác và quản lý tài liệu Word một cách dễ dàng. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng Aspose.Words cho Java để quản lý quyền tài liệu một cách hiệu quả. Cho dù bạn là nhà phát triển đang tìm cách nâng cao kỹ năng của mình hay một chuyên gia kinh doanh đang tìm cách hợp lý hóa quy trình quản lý tài liệu của mình thì hướng dẫn này đều có thể đáp ứng nhu cầu của bạn.
+Trong thế giới kỹ thuật số ngày nay, quản lý tài liệu là một khía cạnh quan trọng trong quy trình làm việc của mọi tổ chức. Đảm bảo rằng đúng người có quyền truy cập vào đúng tài liệu là điều cần thiết để duy trì tính bảo mật và hiệu quả. Aspose.Words for Java là một API Java mạnh mẽ cho phép bạn thao tác và quản lý tài liệu Word một cách dễ dàng. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng Aspose.Words cho Java để quản lý quyền tài liệu một cách hiệu quả. Cho dù bạn là nhà phát triển đang tìm cách nâng cao kỹ năng của mình hay một chuyên gia kinh doanh đang tìm cách hợp lý hóa quy trình quản lý tài liệu của mình thì hướng dẫn này đều đáp ứng được nhu cầu của bạn.
 
 ## Bắt đầu với Aspose.Words cho Java
 

@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Stap 2: Pas doorgestreepte tekststijl toe
 
-We zullen de doorgehaalde tekststijl inschakelen door de`StrikeThrough` eigendom van de`Font` bezwaar tegen`true`.
+ We zullen de doorgehaalde tekststijl inschakelen door de`StrikeThrough` eigendom van de`Font` bezwaar tegen`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;

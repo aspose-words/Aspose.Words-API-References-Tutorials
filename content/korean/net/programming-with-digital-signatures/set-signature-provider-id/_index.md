@@ -2,108 +2,117 @@
 title: Word 문서에서 서명 공급자 ID 설정
 linktitle: Word 문서에서 서명 공급자 ID 설정
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에서 서명 공급자 ID를 설정하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에서 서명 공급자 ID를 안전하게 설정하세요. 문서에 디지털 서명을 하려면 자세한 2000 단어 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
-이 튜토리얼에서는 .NET용 Aspose.Words와 함께 서명 공급자 ID 설정 기능을 사용하는 단계를 안내합니다. 이 기능을 사용하면 Word 문서의 서명란에 대한 서명 공급자 ID를 지정할 수 있습니다. 아래 단계를 따르십시오.
+## 소개
 
-## 1단계: 문서 로드 및 서명란에 액세스
+안녕하세요! 이제 디지털 서명이 필요한 놀라운 Word 문서가 생겼습니다. 그렇죠? 그러나 단순한 서명이 아니라 특정 서명 제공자 ID를 설정해야 합니다. 법률 문서, 계약서 또는 기타 서류 작업을 처리할 때 안전한 디지털 서명을 추가하는 것이 중요합니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서에서 서명 공급자 ID를 설정하는 전체 과정을 안내하겠습니다. 준비가 된? 뛰어들어보자!
 
-서명란이 포함된 문서를 업로드하여 시작하세요.
+## 전제조건
+
+시작하기 전에 다음 사항이 있는지 확인하세요.
+
+1. .NET 라이브러리용 Aspose.Words: 아직 작성하지 않으셨다면,[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio 또는 C# 호환 IDE.
+3. Word 문서: 서명란(`Signature line.docx`).
+4.  디지털 인증서: A`.pfx` 인증서 파일(예:`morzal.pfx`).
+5. C#에 대한 기본 지식: 기본 사항만 알려드립니다. 걱정하지 마세요. 저희가 도와드리겠습니다!
+
+이제 액션에 뛰어들어 봅시다!
+
+## 네임스페이스 가져오기
+
+먼저, 프로젝트에 필요한 네임스페이스를 포함했는지 확인하세요. 이는 Aspose.Words 라이브러리 및 관련 클래스에 액세스하는 데 필수적입니다.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.DigitalSignatures;
+```
+
+좋습니다. 간단하고 이해하기 쉬운 단계로 나누어 보겠습니다.
+
+## 1단계: Word 문서 로드
+
+첫 번째 단계는 서명란이 포함된 Word 문서를 로드하는 것입니다. 이 문서는 지정된 서명 공급자 ID와 함께 디지털 서명을 포함하도록 수정됩니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
+```
 
+ 여기서는 문서가 있는 디렉터리를 지정합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서의 실제 경로와 함께.
+
+## 2단계: 서명란에 액세스
+
+다음으로 문서 내의 서명란에 액세스해야 합니다. 서명란은 Word 문서에 도형 개체로 포함됩니다.
+
+```csharp
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## 2단계: 서명 옵션 설정
+ 이 코드 줄은 문서의 첫 번째 섹션 본문에서 첫 번째 모양을 가져와서`SignatureLine` 물체.
 
-SignOptions 클래스의 인스턴스를 만들고 공급자 ID를 포함한 서명 옵션을 설정합니다.
+## 3단계: 서명 옵션 설정
+
+이제 액세스한 서명란의 공급자 ID와 서명란 ID를 포함하는 서명 옵션을 만듭니다.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-ProviderId = signatureLine.ProviderId,
- SignatureLineId = signatureLine.Id
+    ProviderId = signatureLine.ProviderId,
+    SignatureLineId = signatureLine.Id
 };
 ```
 
-## 3단계: 문서에 서명하기
+이러한 옵션은 문서에 서명할 때 올바른 서명 공급자 ID가 설정되었는지 확인하는 데 사용됩니다.
 
-문서에 서명하려면 DigitalSignatureUtil 클래스를 사용하고 서명 인증서를 지정해야 합니다.
+## 4단계: 인증서 로드
+
+ 문서에 디지털 서명을 하려면 인증서가 필요합니다. 로드하는 방법은 다음과 같습니다.`.pfx` 파일:
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-	dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
-문서, 인증서 및 서명된 문서에 대한 올바른 경로를 지정하십시오.
+ 바꾸다`"aw"` 인증서 파일이 있는 경우 해당 파일의 비밀번호를 사용하세요.
 
-### .NET용 Aspose.Words를 사용하여 서명 공급자 ID 설정에 대한 예제 소스 코드
+## 5단계: 문서에 서명
 
-다음은 .NET용 Aspose.Words를 사용하여 서명 공급자 ID를 설정하는 전체 소스 코드입니다.
+ 마지막으로, 다음을 사용하여 문서에 서명할 시간입니다.`DigitalSignatureUtil.Sign` 방법.
 
 ```csharp
-
-	// 문서 디렉터리의 경로입니다.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Signature line.docx");
-
-	SignatureLine signatureLine =
-		((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
-
-	SignOptions signOptions = new SignOptions
-	{
-		ProviderId = signatureLine.ProviderId, SignatureLineId = signatureLine.Id
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-		dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
-
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
+    dataDir + "SignDocuments.SetSignatureProviderId.docx", certHolder, signOptions);
 ```
 
-.NET용 Aspose.Words를 사용하여 Word 문서에서 서명 공급자 ID를 완성하세요.
-
+ 그러면 문서에 서명하고 새 파일로 저장됩니다.`Digitally signed.docx`.
 
 ## 결론
 
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 서명란에 서명 공급자 ID를 설정하는 방법을 배웠습니다. 제공된 단계를 따르면 쉽게 문서를 로드하고, 서명란에 액세스하고, 공급자 ID를 설정하고, 문서에 서명할 수 있습니다. 서명 공급자 ID를 설정하는 기능은 서명자의 신원과 신뢰성을 확립하여 Word 문서의 보안과 무결성을 향상시키는 데 도움이 됩니다. Aspose.Words for .NET은 디지털 서명이 포함된 강력한 단어 처리용 API를 제공하므로 서명 프로세스를 쉽게 사용자 정의하고 관리할 수 있습니다.
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에서 서명 공급자 ID를 성공적으로 설정했습니다. 이 프로세스는 문서를 보호할 뿐만 아니라 문서가 디지털 서명 표준을 준수하는지 확인합니다. 이제 문서에 직접 사용해 보세요. 질문이 있으신가요? 아래 FAQ를 확인하거나[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).
 
-### Word 문서의 서명 공급자 ID 설정에 대한 FAQ
+## FAQ
 
-#### Q: Word 문서의 서명 공급자 ID란 무엇입니까?
+### 서명 제공자 ID란 무엇입니까?
 
-A: Word 문서의 서명 공급자 ID는 디지털 서명 공급자를 지정하는 고유 식별자입니다. 이는 디지털 서명 생성 및 관리를 담당하는 엔터티 또는 조직을 식별하는 데 도움이 됩니다.
+서명 제공자 ID는 디지털 서명 제공자를 고유하게 식별하여 신뢰성과 보안을 보장합니다.
 
-#### Q: Aspose.Words for .NET을 사용하여 Word 문서의 서명란에 대한 서명 공급자 ID를 어떻게 설정할 수 있습니까?
+### 서명에 .pfx 파일을 사용할 수 있나요?
 
-A: .NET용 Aspose.Words를 사용하여 Word 문서의 서명란에 대한 서명 공급자 ID를 설정하려면 다음 단계를 따르세요.
-1.  다음을 사용하여 문서를 로드합니다.`Document` 클래스를 선택하고 문서 파일의 경로를 지정합니다.
-2.  적절한 방법이나 속성을 사용하여 서명란에 액세스합니다. 예를 들어 다음을 사용할 수 있습니다.`GetChild` 서명란 모양을 검색하는 방법입니다.
-3. 서명란에서 공급자 ID를 검색합니다.
-4.  인스턴스를 생성합니다.`SignOptions` 클래스를 설정하고`ProviderId` 속성을 검색된 공급자 ID에 추가합니다.
-5.  사용`DigitalSignatureUtil.Sign` 문서에 서명하는 방법을 포함하여 필요한 매개변수를 제공합니다.`SignOptions` 물체.
+예, 유효한 디지털 인증서라면 가능합니다. 보호되어 있는 경우 올바른 비밀번호를 가지고 있는지 확인하세요.
 
-#### Q: Aspose.Words for .NET을 사용하여 Word 문서의 서명란에 어떻게 액세스합니까?
+### .pfx 파일을 얻으려면 어떻게 해야 합니까?
 
- A: .NET용 Aspose.Words를 사용하여 Word 문서의 서명란에 액세스하려면 적절한 메서드나 속성을 사용하여 문서 구조에서 서명란 모양을 검색할 수 있습니다. 예를 들어 다음을 사용할 수 있습니다.`GetChild` 원하는 서명란 모양을 얻으려면 적절한 매개변수를 사용하는 방법을 사용하세요.
+CA(인증 기관)에서 .pfx 파일을 얻거나 OpenSSL과 같은 도구를 사용하여 파일을 생성할 수 있습니다.
 
-#### 질문: Word 문서의 여러 서명 줄에 서명 공급자 ID를 설정할 수 있습니까?
+### 한 번에 여러 문서에 서명할 수 있나요?
 
- A: 예, Word 문서의 여러 서명 줄에 서명 공급자 ID를 설정할 수 있습니다. 문서의 서명란 컬렉션을 반복하고 다음을 사용하여 각 서명란에 대한 공급자 ID를 개별적으로 설정할 수 있습니다.`SignOptions.ProviderId` 재산.
+예, 여러 문서를 반복하여 각 문서에 동일한 서명 프로세스를 적용할 수 있습니다.
 
-#### Q: Word 문서에서 서명 공급자 ID의 용도는 무엇입니까?
+### 문서에 서명란이 없으면 어떻게 하나요?
 
-A: Word 문서의 서명 공급자 ID는 디지털 서명 생성 및 관리를 담당하는 엔터티 또는 조직을 식별하는 데 사용됩니다. 디지털 서명을 특정 공급자와 연결하여 디지털 서명의 진위성과 신뢰성을 확립하는 데 도움이 됩니다.
-
-#### Q: Word 문서에서 서명 공급자 ID를 설정하는 데 어떤 유형의 디지털 인증서를 사용할 수 있습니까?
-
-A: 적절한 공급자 정보와 함께 X.509 디지털 인증서를 사용하여 Word 문서에 서명 공급자 ID를 설정할 수 있습니다. 디지털 인증서는 신뢰할 수 있는 인증 기관(CA)에서 발급해야 하며 공급자를 식별하는 데 필요한 메타데이터를 포함해야 합니다.
+먼저 서명란을 삽입해야 합니다. Aspose.Words는 프로그래밍 방식으로 서명란을 추가하는 방법을 제공합니다.

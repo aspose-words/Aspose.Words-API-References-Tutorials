@@ -19,7 +19,7 @@ url: /el/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 Σε αυτό το βήμα, θα φορτώσουμε το έγγραφο του Word που θέλουμε να μετατρέψουμε σε HTML. Χρησιμοποιήστε τον ακόλουθο κώδικα για να φορτώσετε το έγγραφο:
 
 ```csharp
-// Διαδρομή στον κατάλογο εγγράφων.
+//Διαδρομή στον κατάλογο εγγράφων.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
@@ -38,7 +38,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
- Αυτός ο κώδικας δημιουργεί μια παρουσία του`HtmlSaveOptions` και σετ`CssStyleSheetType` προς την`CssStyleSheetType.External`για να δημιουργήσετε ένα εξωτερικό φύλλο στυλ CSS και`CssClassNamePrefix` προς την`"pfx_"` στο πρόθεμα`"pfx_"` σε ονόματα κλάσης CSS.
+ Αυτός ο κώδικας δημιουργεί μια παρουσία του`HtmlSaveOptions` και σετ`CssStyleSheetType` προς την`CssStyleSheetType.External` για να δημιουργήσετε ένα εξωτερικό φύλλο στυλ CSS και`CssClassNamePrefix` προς την`"pfx_"` στο πρόθεμα`"pfx_"` σε ονόματα κλάσης CSS.
 
 ## Βήμα 4: Μετατροπή και αποθήκευση του εγγράφου σε HTML
 

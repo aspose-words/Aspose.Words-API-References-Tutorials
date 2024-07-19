@@ -43,7 +43,7 @@ using Aspose.Words;
 
 Aspose.Wordsへの参照を追加してください。まだダウンロードしていない場合は、ここからダウンロードしてください。[ここ](https://releases.aspose.com/words/net/)NuGet パッケージ マネージャーを使用してプロジェクトに追加できます。
 
-## ステップ 2: Document と DocumentBuilder を初期化する
+## ステップ2: DocumentとDocumentBuilderを初期化する
 
 ### 新しいドキュメントを作成する
 

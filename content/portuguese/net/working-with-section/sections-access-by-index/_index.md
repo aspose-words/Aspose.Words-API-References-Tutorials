@@ -74,7 +74,7 @@ Neste tutorial, vimos como acessar seções de um documento Word por índice e a
 
 #### P: Como definir o diretório do documento no Aspose.Words for .NET?
 
- R: Para definir o caminho para o diretório que contém seus documentos, você deve substituir`"YOUR DOCUMENT DIRECTORY"` no código com o caminho apropriado. Veja como fazer isso:
+R: Para definir o caminho para o diretório que contém seus documentos, você deve substituir`"YOUR DOCUMENT DIRECTORY"` no código com o caminho apropriado. Veja como fazer isso:
 
 ```csharp
 // Caminho para o seu diretório de documentos

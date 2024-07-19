@@ -45,7 +45,7 @@ Wreszcie możemy zapisać dokument w żądanym formacie.
 // Użyj narzędzia do tworzenia dokumentów, aby dodać treść do dokumentu.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Wstaw łącze.
+//Wstaw łącze.
 builder.InsertHyperlink("https://www.aspose.com”, „https://www.aspose.com”, fałsz);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

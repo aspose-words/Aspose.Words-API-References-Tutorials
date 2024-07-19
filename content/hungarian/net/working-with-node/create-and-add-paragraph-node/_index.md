@@ -78,11 +78,11 @@ V: Egy XML-dokumentum bekezdéscsomópontja a szöveg egy bekezdésének megjele
 
 #### K: Hogyan lehet bekezdéscsomópontot hozzáadni egy meglévő XML-dokumentumhoz?
 
- V: Bekezdéscsomópont hozzáadásához egy meglévő XML-dokumentumhoz használja a`appendChild`metódussal hozzáadhatja a bekezdés csomópontját egy másik elem gyermekeként az XML dokumentumban. Például hozzáadhatja a dokumentum gyökérelemének gyermekeként.
+ V: Bekezdéscsomópont hozzáadásához egy meglévő XML-dokumentumhoz használja a`appendChild` metódussal hozzáadhatja a bekezdés csomópontját egy másik elem gyermekeként az XML dokumentumban. Például hozzáadhatja a dokumentum gyökérelemének gyermekeként.
 
 #### K: Hogyan határozható meg egy bekezdés csomópont tartalma?
 
- V: Egy bekezdéscsomópont tartalmának beállításához használhatja a`createTextNode` módszert a kívánt tartalmat tartalmazó szöveges csomópont létrehozásához, majd használja a`appendChild` módszer a szövegcsomópont hozzáadásához a bekezdés csomópontjának gyermekeként.
+ V: Egy bekezdéscsomópont tartalmának beállításához használhatja a`createTextNode` módszert a kívánt tartalmat tartalmazó szöveges csomópont létrehozásához, majd használja a`appendChild`módszer a szövegcsomópont hozzáadásához a bekezdés csomópontjának gyermekeként.
 
 #### K: Hogyan formázhatok szöveget egy bekezdés csomópontjában?
 

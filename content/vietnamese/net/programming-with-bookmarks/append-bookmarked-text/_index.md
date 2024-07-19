@@ -2,120 +2,123 @@
 title: Nối văn bản đã đánh dấu vào tài liệu Word
 linktitle: Nối văn bản đã đánh dấu vào tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách thêm văn bản từ dấu trang trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách thêm văn bản được đánh dấu vào tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo cho các nhà phát triển.
 type: docs
 weight: 10
 url: /vi/net/programming-with-bookmarks/append-bookmarked-text/
 ---
+## Giới thiệu
 
-Trong bài viết này, chúng ta sẽ khám phá mã nguồn C# ở trên để hiểu cách sử dụng chức năng Nối văn bản được đánh dấu trong thư viện Aspose.Words cho .NET. Tính năng này cho phép bạn thêm văn bản có trong một dấu trang cụ thể của tài liệu Word vào tài liệu khác.
+Này! Bạn đã bao giờ thử nối thêm văn bản từ một phần được đánh dấu trong tài liệu Word và thấy việc này phức tạp chưa? Bạn may mắn! Hướng dẫn này sẽ hướng dẫn bạn qua quy trình sử dụng Aspose.Words cho .NET. Chúng tôi sẽ chia nó thành các bước đơn giản để bạn có thể dễ dàng làm theo. Hãy cùng bắt tay vào và thêm văn bản được đánh dấu đó vào như một người chuyên nghiệp!
 
 ## Điều kiện tiên quyết
 
-- Kiến thức cơ bản về ngôn ngữ C#.
-- Môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có mọi thứ bạn cần:
 
-## Bước 1: Lấy đoạn văn từ dấu trang
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt nó. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Bất kỳ môi trường phát triển .NET nào như Visual Studio.
+- Kiến thức cơ bản về C#: Hiểu các khái niệm lập trình C# cơ bản sẽ giúp ích.
+- Tài liệu Word có dấu trang: Một tài liệu Word có dấu trang được thiết lập mà chúng tôi sẽ sử dụng để nối văn bản từ đó.
 
- Trước khi bắt đầu thêm văn bản đánh dấu, chúng ta cần lấy các đoạn văn chứa phần đầu và phần cuối của dấu trang. Điều này có thể được thực hiện bằng cách truy cập vào`BookmarkStart` Và`BookmarkEnd` Thuộc tính của dấu trang:
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết. Điều này sẽ đảm bảo chúng ta có tất cả các công cụ cần thiết trong tầm tay.
 
 ```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+using System;
+using Aspose.Words;
+using Aspose.Words.Importing;
 ```
 
-## Bước 2: Kiểm tra đoạn văn gốc
+Hãy chia nhỏ ví dụ thành các bước chi tiết.
 
-Chúng tôi kiểm tra xem đoạn văn bắt đầu và kết thúc có cha mẹ hợp lệ hay không, nghĩa là chúng có thực sự thuộc về một đoạn văn hay không. Nếu không, chúng tôi sẽ tạo ra một ngoại lệ:
+## Bước 1: Tải tài liệu và khởi tạo các biến
+
+Được rồi, hãy bắt đầu bằng cách tải tài liệu Word của chúng ta và khởi tạo các biến mà chúng ta cần.
 
 ```csharp
+// Tải tài liệu nguồn và đích.
+Document srcDoc = new Document("source.docx");
+Document dstDoc = new Document("destination.docx");
+
+// Khởi tạo trình nhập tài liệu.
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+
+// Tìm dấu trang trong tài liệu nguồn.
+Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## Bước 2: Xác định đoạn bắt đầu và kết thúc
+
+Bây giờ, hãy xác định vị trí các đoạn văn nơi dấu trang bắt đầu và kết thúc. Điều này rất quan trọng vì chúng ta cần xử lý văn bản trong các giới hạn này.
+
+```csharp
+// Đây là đoạn chứa phần đầu của dấu trang.
+Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+
+// Đây là đoạn chứa phần cuối của dấu trang.
+Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
 if (startPara == null || endPara == null)
-throw new InvalidOperationException(
-"The parent of the beginning or the end of the bookmark is not a paragrap
-
-hey, this situation can't be handled yet.");
+    throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## Bước 3: Kiểm tra phần cha của đoạn văn
+## Bước 3: Xác thực đoạn văn gốc
 
-Chúng tôi kiểm tra xem đoạn đầu và đoạn cuối có cùng phần gốc hay không. Nếu không, điều đó có nghĩa là các đoạn văn không nằm trong cùng một phần hoặc tài liệu và chúng tôi sẽ đưa ra một ngoại lệ:
+Chúng ta cần đảm bảo đoạn đầu và đoạn cuối có cùng phần gốc. Đây là một kịch bản đơn giản để giữ cho mọi thứ đơn giản.
 
 ```csharp
+// Hãy giới hạn bản thân trong một kịch bản khá đơn giản.
 if (startPara.ParentNode != endPara.ParentNode)
-throw new InvalidOperationException(
-"Beginning and ending paragraphs have different parents, this situation cannot be handled yet.");
+    throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## Bước 4: Sao chép đoạn văn
+## Bước 4: Xác định nút dừng
 
-Chúng ta lặp qua các nút (đoạn) từ đoạn đầu đến đoạn cuối. Đối với mỗi nút, chúng tôi tạo một bản sao và nhập nó vào ngữ cảnh của tài liệu đích:
+Tiếp theo, chúng ta cần xác định nút nơi chúng ta sẽ dừng sao chép văn bản. Đây sẽ là nút ngay sau đoạn kết thúc.
 
 ```csharp
+// Chúng tôi muốn sao chép tất cả các đoạn từ đoạn đầu đến (và bao gồm) đoạn cuối,
+// do đó nút mà chúng ta dừng lại là nút sau đoạn kết thúc.
 Node endNode = endPara.NextSibling;
+```
 
+## Bước 5: Nối văn bản đã đánh dấu vào tài liệu đích
+
+Cuối cùng, hãy lặp qua các nút từ đoạn bắt đầu đến nút sau đoạn kết thúc và nối chúng vào tài liệu đích.
+
+```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-Node newNode = importer.ImportNode(curNode, true);
+    // Điều này tạo ra một bản sao của nút hiện tại và nhập nó (làm cho nó hợp lệ) trong ngữ cảnh
+    // của tài liệu đích. Nhập có nghĩa là điều chỉnh kiểu và liệt kê số nhận dạng một cách chính xác.
+    Node newNode = importer.ImportNode(curNode, true);
 
-dstNode.AppendChild(newNode);
+    // Nối nút đã nhập vào tài liệu đích.
+    dstDoc.FirstSection.Body.AppendChild(newNode);
 }
-```
 
-### Mã nguồn mẫu cho Nối văn bản được đánh dấu bằng Aspose.Words cho .NET
-
-Đây là mã nguồn ví dụ đầy đủ để minh họa việc thêm văn bản từ dấu trang bằng Aspose.Words cho .NET:
-
-```csharp
-
-	// Đây là đoạn chứa phần đầu của dấu trang.
-	Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-	// Đây là đoạn chứa phần cuối của dấu trang.
-	Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-	if (startPara == null || endPara == null)
-		throw new InvalidOperationException(
-			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-	// Hãy giới hạn bản thân trong một kịch bản khá đơn giản.
-	if (startPara.ParentNode != endPara.ParentNode)
-		throw new InvalidOperationException(
-			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-	// Chúng tôi muốn sao chép tất cả các đoạn từ đoạn đầu đến (và bao gồm) đoạn cuối,
-	// do đó nút mà chúng ta dừng lại là nút sau đoạn kết thúc.
-	Node endNode = endPara.NextSibling;
-
-	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-	{
-		//Điều này tạo ra một bản sao của nút hiện tại và nhập nó (làm cho nó hợp lệ) trong ngữ cảnh
-		// của tài liệu đích. Nhập có nghĩa là điều chỉnh kiểu và liệt kê số nhận dạng một cách chính xác.
-		Node newNode = importer.ImportNode(curNode, true);
-
-		dstNode.AppendChild(newNode);
-	}
-
+// Lưu tài liệu đích với văn bản được nối thêm.
+dstDoc.Save("appended_document.docx");
 ```
 
 ## Phần kết luận
 
-Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu cách sử dụng chức năng Nối văn bản được đánh dấu của Aspose.Words cho .NET. Chúng tôi đã làm theo hướng dẫn từng bước để lấy các đoạn văn từ dấu trang, xác minh cha mẹ và sao chép các đoạn văn sang tài liệu khác.
+Và bạn có nó rồi đấy! Bạn đã nối thành công văn bản từ phần được đánh dấu trong tài liệu Word bằng Aspose.Words for .NET. Công cụ mạnh mẽ này giúp việc thao tác tài liệu trở nên dễ dàng và giờ đây bạn đã có thêm một thủ thuật nữa. Chúc mừng mã hóa!
 
-### Câu hỏi thường gặp về nối văn bản đã đánh dấu vào tài liệu word
+## Câu hỏi thường gặp
 
-#### Câu hỏi 1: Điều kiện tiên quyết để sử dụng tính năng "Thêm văn bản có dấu trang" trong Aspose.Words cho .NET là gì?
+### Tôi có thể thêm văn bản từ nhiều dấu trang cùng một lúc không?
+Có, bạn có thể lặp lại quy trình cho từng dấu trang và nối thêm văn bản tương ứng.
 
-Trả lời: Để sử dụng chức năng "Thêm văn bản có dấu trang" trong Aspose.Words cho .NET, bạn cần có kiến thức cơ bản về ngôn ngữ C#. Bạn cũng cần có môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+### Điều gì sẽ xảy ra nếu đoạn đầu và đoạn cuối có phần gốc khác nhau?
+Ví dụ hiện tại giả định rằng chúng có cùng cha mẹ. Đối với các bậc cha mẹ khác nhau, cần phải xử lý phức tạp hơn.
 
-#### Câu hỏi 2: Làm cách nào để lấy các đoạn văn có phần đầu và phần cuối của dấu trang trong tài liệu Word?
+### Tôi có thể giữ nguyên định dạng ban đầu của văn bản được thêm vào không?
+ Tuyệt đối! Các`ImportFormatMode.KeepSourceFormatting` đảm bảo định dạng ban đầu được giữ nguyên.
 
-Đáp: Để lấy các đoạn chứa phần đầu và phần cuối của dấu trang trong tài liệu Word, bạn có thể truy cập vào`BookmarkStart` Và`BookmarkEnd` thuộc tính của dấu trang. Đây là một mã mẫu:
+### Có thể nối văn bản vào một vị trí cụ thể trong tài liệu đích không?
+Có, bạn có thể nối văn bản vào bất kỳ vị trí nào bằng cách điều hướng đến nút mong muốn trong tài liệu đích.
 
-```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-```
-
-#### Câu hỏi 3: Điều gì xảy ra nếu đoạn đầu và đoạn cuối không có phần cha hợp lệ?
-
-Trả lời: Nếu đoạn đầu và đoạn cuối không có phần cha hợp lệ, tức là chúng không thực sự là đoạn văn, thì một ngoại lệ sẽ được đưa ra. Tình trạng này không thể được quản lý vào lúc này.
+### Điều gì sẽ xảy ra nếu tôi cần thêm văn bản từ dấu trang vào phần mới?
+Bạn có thể tạo một phần mới trong tài liệu đích và nối văn bản vào đó.

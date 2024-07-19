@@ -15,7 +15,7 @@ url: /ko/net/split-document/by-sections-html/
 시작하려면 문서의 디렉터리를 지정하고 문서를 Document 객체에 로드하세요. 방법은 다음과 같습니다.
 
 ```csharp
-// 문서 디렉터리의 경로입니다.
+//문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

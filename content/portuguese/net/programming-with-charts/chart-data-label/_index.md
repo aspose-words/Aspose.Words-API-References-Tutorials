@@ -2,48 +2,84 @@
 title: Personalizar rótulo de dados do gráfico
 linktitle: Personalizar rótulo de dados do gráfico
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como adicionar e personalizar rótulos de dados em um gráfico usando Aspose.Words for .NET para fornecer informações adicionais sobre pontos de dados.
+description: Aprenda como personalizar rótulos de dados de gráficos usando Aspose.Words for .NET em um guia passo a passo. Perfeito para desenvolvedores .NET.
 type: docs
 weight: 10
 url: /pt/net/programming-with-charts/chart-data-label/
 ---
+## Introdução
 
-Este tutorial explica como adicionar e personalizar rótulos de dados em um gráfico usando Aspose.Words for .NET. Os rótulos de dados fornecem informações adicionais sobre os pontos de dados em um gráfico.
+Você deseja aprimorar seus aplicativos .NET com recursos de processamento de documentos dinâmicos e personalizados? Aspose.Words for .NET pode ser apenas a sua resposta! Neste guia, nos aprofundaremos na personalização de rótulos de dados de gráficos usando Aspose.Words for .NET, uma biblioteca poderosa para criar, modificar e converter documentos do Word. Quer você seja um desenvolvedor experiente ou esteja apenas começando, este tutorial irá orientá-lo em cada etapa, garantindo que você entenda como utilizar essa ferramenta de maneira eficaz.
 
 ## Pré-requisitos
-Para seguir este tutorial, você precisa ter o seguinte:
 
-- Biblioteca Aspose.Words para .NET instalada.
-- Conhecimento básico de C# e processamento de palavras com documentos Word.
+Antes de começarmos, certifique-se de ter o seguinte:
 
-## Etapa 1: configurar o diretório de documentos
- Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório onde você deseja salvar o documento.
+1. Visual Studio: instale o Visual Studio 2019 ou posterior.
+2. .NET Framework: certifique-se de ter o .NET Framework 4.0 ou posterior.
+3.  Aspose.Words for .NET: Baixe e instale Aspose.Words for .NET do[Link para Download](https://releases.aspose.com/words/net/).
+4. Conhecimento básico de C#: Familiaridade com programação C# é essencial.
+5.  Uma licença válida: obtenha uma[licença temporária](https://purchase.aspose.com/temporary-license/) ou compre um no[comprar link](https://purchase.aspose.com/buy).
+
+## Importar namespaces
+
+Para começar, você precisa importar os namespaces necessários para o seu projeto C#. Esta etapa é crucial porque garante que você tenha acesso a todas as classes e métodos fornecidos pelo Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Charts;
 ```
 
-## Etapa 2: Crie um novo documento e DocumentBuilder
- Crie uma nova instância do`Document` aula e um`DocumentBuilder`objeto para trabalhar com o documento.
+## Etapa 1: inicializar o documento e o DocumentBuilder
+
+Para criar e manipular documentos do Word, primeiro precisamos inicializar uma instância do`Document` aula e um`DocumentBuilder` objeto.
 
 ```csharp
+// Caminho para o diretório do seu documento
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Etapa 3: inserir e configurar um gráfico
- Insira um gráfico no documento usando o`InsertChart` método do`DocumentBuilder` objeto. Defina o tipo e as dimensões do gráfico desejado.
+### Explicação
+
+- Documento doc: Cria uma nova instância da classe Document.
+- Construtor DocumentBuilder: O DocumentBuilder ajuda na inserção de conteúdo no objeto Document.
+
+## Etapa 2: inserir um gráfico
+
+ A seguir, inseriremos um gráfico de barras no documento usando o`DocumentBuilder` objeto.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Etapa 4: personalizar rótulos de dados
-Acesse a coleção de rótulos de dados da série de gráficos e modifique várias propriedades para personalizar a aparência dos rótulos de dados.
+### Explicação
+
+- Forma da forma: representa o gráfico como uma forma no documento.
+- builder.InsertChart(ChartType.Bar, 432, 252): Insere um gráfico de barras com dimensões especificadas.
+
+## Etapa 3: acesse a série de gráficos
+
+Para personalizar os rótulos dos dados, primeiro precisamos acessar as séries do gráfico.
 
 ```csharp
 ChartSeries series0 = shape.Chart.Series[0];
+```
+
+### Explicação
+
+- ChartSeries series0: recupera a primeira série do gráfico, que iremos personalizar.
+
+## Etapa 4: personalizar rótulos de dados
+
+Os rótulos de dados podem ser personalizados para exibir diversas informações. Configuraremos os rótulos para mostrar a chave da legenda, o nome da série e o valor, enquanto ocultaremos o nome da categoria e a porcentagem.
+
+```csharp
 ChartDataLabelCollection labels = series0.DataLabels;
 labels.ShowLegendKey = true;
 labels.ShowLeaderLines = true;
@@ -54,51 +90,46 @@ labels.ShowValue = true;
 labels.Separator = "/";
 ```
 
+### Explicação
+
+- Rótulos ChartDataLabelCollection: acessa os rótulos de dados da série.
+- rótulos.ShowLegendKey: Exibe a chave da legenda.
+- rótulos.ShowLeaderLines: mostra linhas líderes para rótulos de dados posicionados fora dos pontos de dados.
+- rótulos.ShowCategoryName: oculta o nome da categoria.
+- rótulos.ShowPercentage: oculta o valor percentual.
+- rótulos.ShowSeriesName: Exibe o nome da série.
+- rótulos.ShowValue: Exibe o valor dos pontos de dados.
+- rótulos.Separador: Define o separador para os rótulos de dados.
+
 ## Etapa 5: salve o documento
- Salve o documento no diretório especificado usando o`Save` método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithCharts.ChartDataLabel.docx".
+
+Finalmente, salve o documento no diretório especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 ```
 
-### Exemplo de código-fonte para rótulo de dados do gráfico usando Aspose.Words for .NET 
+### Explicação
 
-```csharp
-	// Caminho para o diretório do seu documento
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
-	Chart chart = shape.Chart;
-	ChartSeries series0 = shape.Chart.Series[0];
-	ChartDataLabelCollection labels = series0.DataLabels;
-	labels.ShowLegendKey = true;
-	// Por padrão, quando você adiciona rótulos de dados aos pontos de dados em um gráfico de pizza, linhas de chamada são exibidas para rótulos de dados que são
-	// posicionado bem fora do final dos pontos de dados. As linhas líderes criam uma conexão visual entre um rótulo de dados e seu
-	// ponto de dados correspondente.
-	labels.ShowLeaderLines = true;
-	labels.ShowCategoryName = false;
-	labels.ShowPercentage = false;
-	labels.ShowSeriesName = true;
-	labels.ShowValue = true;
-	labels.Separator = "/";
-	labels.ShowValue = true;
-	doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
-```
-
-É isso! Você adicionou e personalizou rótulos de dados em um gráfico com sucesso usando Aspose.Words for .NET.
+- doc.Save: salva o documento com o nome especificado no diretório fornecido.
 
 ## Conclusão
-Neste tutorial, você aprendeu como adicionar e personalizar rótulos de dados em um gráfico usando Aspose.Words for .NET. Seguindo o guia passo a passo, você pode inserir um gráfico, acessar a coleção de rótulos de dados e modificar as propriedades para personalizar a aparência dos rótulos de dados. Aspose.Words for .NET fornece uma API poderosa para processamento de palavras com documentos e gráficos do Word, permitindo criar gráficos visualmente atraentes e informativos com rótulos de dados personalizados.
 
-### Perguntas frequentes
+ Parabéns! Você personalizou com sucesso rótulos de dados de gráfico usando Aspose.Words for .NET. Esta biblioteca oferece uma solução robusta para lidar com documentos Word de forma programática, tornando mais fácil para os desenvolvedores criar aplicativos sofisticados e dinâmicos de processamento de documentos. Mergulhe no[documentação](https://reference.aspose.com/words/net/) para explorar mais recursos e capacidades.
 
-#### Q1. O que são rótulos de dados em um gráfico?
-Os rótulos de dados em um gráfico fornecem informações adicionais sobre os pontos de dados representados no gráfico. Eles podem exibir valores, categorias, nomes de séries, porcentagens ou outros detalhes relevantes dependendo do tipo e configuração do gráfico.
+## Perguntas frequentes
 
-#### Q2. Posso personalizar a aparência dos rótulos de dados?
-Sim, você pode personalizar a aparência dos rótulos de dados em um gráfico. Aspose.Words for .NET oferece opções para modificar várias propriedades de rótulos de dados, como mostrar chaves de legenda, linhas de chamada, nomes de categorias, nomes de séries, valores e muito mais. Você também pode definir separadores e formatar as etiquetas para atender às suas necessidades específicas.
+### O que é Aspose.Words para .NET?
+Aspose.Words for .NET é uma poderosa biblioteca de processamento de documentos que permite aos desenvolvedores criar, modificar e converter documentos do Word programaticamente.
 
-#### Q3. Posso adicionar rótulos de dados a qualquer tipo de gráfico?
-Sim, você pode adicionar rótulos de dados a vários tipos de gráficos, incluindo gráficos de barras, gráficos de pizza, gráficos de linhas e muito mais. O processo de adição e personalização de rótulos de dados pode variar um pouco dependendo do tipo de gráfico e da biblioteca ou ferramenta que você está usando.
+### Como instalo o Aspose.Words para .NET?
+ Você pode baixá-lo e instalá-lo no[Link para Download](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas.
+
+### Posso experimentar o Aspose.Words for .NET gratuitamente?
+ Sim, você pode obter um[teste grátis](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/)para avaliar o produto.
+
+### O Aspose.Words for .NET é compatível com o .NET Core?
+Sim, Aspose.Words for .NET é compatível com .NET Core, .NET Standard e .NET Framework.
+
+### Onde posso obter suporte para Aspose.Words for .NET?
+ Você pode visitar o[Fórum de suporte](https://forum.aspose.com/c/words/8) para obter ajuda e assistência da comunidade e especialistas Aspose.

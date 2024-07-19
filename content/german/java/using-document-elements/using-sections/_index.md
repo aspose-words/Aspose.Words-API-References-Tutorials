@@ -2,7 +2,7 @@
 title: Verwenden von Abschnitten in Aspose.Words für Java
 linktitle: Verwenden von Abschnitten
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
-description: Entdecken Sie Aspose.Words für Java; eine umfassende Anleitung zur Verwendung von Abschnitten. Hinzufügen, Löschen, Anhängen, Klonen von Abschnitten mit Codebeispielen.
+description: Entdecken Sie Aspose.Words für Java; eine umfassende Anleitung zur Verwendung von Abschnitten. Fügen Sie Abschnitte mit Codebeispielen hinzu, löschen Sie sie, hängen Sie sie an und klonen Sie sie.
 type: docs
 weight: 23
 url: /de/java/using-document-elements/using-sections/

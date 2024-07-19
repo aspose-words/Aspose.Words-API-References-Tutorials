@@ -16,7 +16,7 @@ url: /ja/java/document-loading-and-saving/saving-documents-as-text-files/
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 -  Aspose.Words for Javaライブラリがプロジェクトに統合されます。ダウンロードはこちらから[ここ](https://releases.aspose.com/words/java/).
 - Java プログラミングの基礎知識。
 

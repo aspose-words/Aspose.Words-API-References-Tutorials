@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Ställ in teckensnittsmappar med prioritet
- Sedan kan du ställa in teckensnittsmapparna med prioritet med hjälp av`FontSettings` klass och`SetFontsSources()`metod. Du kan ange flera teckensnittskällor med hjälp av instanser av`SystemFontSource` och`FolderFontSource`. I det här exemplet har vi definierat två teckensnittskällor: standardsystemets teckensnittskälla och en anpassad teckensnittsmapp med prioritet 1.
+ Sedan kan du ställa in teckensnittsmapparna med prioritet med hjälp av`FontSettings` klass och`SetFontsSources()`metod. Du kan ange flera teckensnittskällor med hjälp av instanser av`SystemFontSource`och`FolderFontSource`. I det här exemplet har vi definierat två teckensnittskällor: standardsystemets teckensnittskälla och en anpassad teckensnittsmapp med prioritet 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

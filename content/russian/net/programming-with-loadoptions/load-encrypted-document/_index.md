@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Загрузите зашифрованный документ с указанным паролем
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Сохраните зашифрованный документ с новым паролем
+//Сохраните зашифрованный документ с новым паролем
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

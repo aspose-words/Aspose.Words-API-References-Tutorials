@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Laden Sie ein verschlüsseltes Dokument mit dem angegebenen Passwort
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Speichern Sie ein verschlüsseltes Dokument mit einem neuen Passwort
+//Speichern Sie ein verschlüsseltes Dokument mit einem neuen Passwort
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
@@ -55,7 +55,7 @@ In dieser Anleitung haben wir erklärt, wie Sie verschlüsselte Dokumente mit de
 
 #### F: Was sind verschlüsselte Word-Dokumente?
 
-A: Verschlüsselte Word-Dokumente sind Dateien, die mit einem Kennwort geschützt wurden, um unbefugten Zugriff zu verhindern. Diese Kennwörter sind erforderlich, um den Inhalt des Dokuments zu öffnen, anzuzeigen oder zu ändern.
+A: Verschlüsselte Word-Dokumente sind Dateien, die mit einem Passwort geschützt sind, um unbefugten Zugriff zu verhindern. Diese Passwörter sind erforderlich, um den Inhalt des Dokuments zu öffnen, anzuzeigen oder zu ändern.
 
 #### F: Wie verarbeitet Aspose.Words verschlüsselte Dokumente in einer C#-Anwendung?
 
@@ -67,7 +67,7 @@ A: Auf jeden Fall! Aspose.Words ermöglicht es Ihnen, verschlüsselte Dokumente 
 
 #### F: Welche Verschlüsselungsalgorithmen unterstützt Aspose.Words?
 
-A: Aspose.Words unterstützt verschiedene Verschlüsselungsalgorithmen, darunter Advanced Encryption Standard (AES), der einen starken Datenschutz gewährleistet.
+A: Aspose.Words unterstützt verschiedene Verschlüsselungsalgorithmen, einschließlich Advanced Encryption Standard (AES), der einen starken Datenschutz gewährleistet.
 
 #### F: Ist Aspose.Words mit anderen Dokumentformaten außer Word kompatibel?
 

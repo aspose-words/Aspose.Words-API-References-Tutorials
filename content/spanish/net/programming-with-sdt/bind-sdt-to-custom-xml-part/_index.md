@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 ---
 
-Este tutorial demuestra cómo vincular una etiqueta de documento estructurado (SDT) a una parte XML personalizada usando Aspose.Words para .NET. Los SDT le permiten agregar controles de contenido estructurado a un documento de Word y CustomXmlParts proporciona una manera de almacenar datos XML personalizados asociados con el documento.
+Este tutorial demuestra cómo vincular una etiqueta de documento estructurado (SDT) a un elemento XML personalizado utilizando Aspose.Words para .NET. Los SDT le permiten agregar controles de contenido estructurado a un documento de Word y CustomXmlParts proporciona una manera de almacenar datos XML personalizados asociados con el documento.
 
 ## Requisitos previos
 Para seguir este tutorial, necesita tener lo siguiente:
@@ -17,7 +17,7 @@ Para seguir este tutorial, necesita tener lo siguiente:
 - Conocimientos básicos de C# y XML.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

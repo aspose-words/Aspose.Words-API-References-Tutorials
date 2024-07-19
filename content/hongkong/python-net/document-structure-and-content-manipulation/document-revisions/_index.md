@@ -33,7 +33,7 @@ print(doc.get_text())
 
 ## 啟用追蹤更改
 
-要啟用文件的追蹤更改，您需要設定`TrackRevisions`財產給`True`：
+要啟用文件的追蹤更改，您需要設定`TrackRevisions`財產給`True`:
 
 ```python
 doc.track_revisions = True

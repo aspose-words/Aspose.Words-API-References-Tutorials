@@ -232,13 +232,13 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie haben gelernt, wie Sie mit Aspose.Words für Java Inhalte aus Dokumenten extrahieren. In diesem Handbuch wurden verschiedene Extraktionstechniken behandelt, darunter Inhalte zwischen Knoten auf Blockebene, Lesezeichen, Kommentarbereiche, Absätze und mehr. Sie sind jetzt in der Lage, die Extraktion von Dokumentinhalten in Ihren Java-Anwendungen effizient durchzuführen.
+Herzlichen Glückwunsch! Sie haben gelernt, wie Sie mit Aspose.Words für Java Inhalte aus Dokumenten extrahieren. In diesem Handbuch wurden verschiedene Extraktionstechniken behandelt, darunter Inhalte zwischen Blockknoten, Lesezeichen, Kommentarbereichen, Absätzen und mehr. Sie sind jetzt in der Lage, die Extraktion von Dokumentinhalten in Ihren Java-Anwendungen effizient durchzuführen.
 
 ## Häufig gestellte Fragen
 
 ### Wie extrahiere ich Inhalte aus bestimmten Dokumentabschnitten?
 
-Um Inhalte aus bestimmten Dokumentabschnitten zu extrahieren, können Sie die Start- und Endpunkte der Abschnitte identifizieren und die entsprechenden Aspose.Words für Java-Methoden verwenden, um Inhalte zwischen ihnen zu extrahieren.
+Um Inhalt aus bestimmten Dokumentabschnitten zu extrahieren, können Sie die Start- und Endpunkte der Abschnitte identifizieren und die entsprechenden Aspose.Words für Java-Methoden verwenden, um Inhalt zwischen ihnen zu extrahieren.
 
 ### Kann ich Inhalte aus passwortgeschützten Dokumenten extrahieren?
 

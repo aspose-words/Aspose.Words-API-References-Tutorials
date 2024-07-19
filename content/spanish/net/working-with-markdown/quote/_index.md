@@ -29,7 +29,7 @@ builder.Writeln("Blockquote");
 
 ## Paso 3: crear estilos para niveles anidados
 
- Podemos crear estilos para niveles anidados usando el`Styles.Add` método de la`Document` objeto. En este ejemplo, estamos creando un estilo llamado "Cotización1" para representar un nivel de cotización anidado.
+ Podemos crear estilos para niveles anidados usando el`Styles.Add` método de la`Document`objeto. En este ejemplo, estamos creando un estilo llamado "Cotización1" para representar un nivel de cotización anidado.
 
 ```csharp
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");

@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3단계: OLE 개체를 아이콘으로 삽입
- 문서 작성기 사용`InsertOleObjectAsIcon`OLE 개체를 아이콘으로 문서에 삽입하는 방법입니다. OLE 파일 경로, 표시 플래그, 아이콘 경로 및 포함된 개체 이름을 지정합니다.
+ 문서 작성기 사용`InsertOleObjectAsIcon` OLE 개체를 아이콘으로 문서에 삽입하는 방법입니다. OLE 파일 경로, 표시 플래그, 아이콘 경로 및 포함된 개체 이름을 지정합니다.
 
 ```csharp
 builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### Q. Aspose.Words for .NET에서 새 문서 및 문서 생성기를 만드는 방법은 무엇입니까?
 
- A: 다음을 사용하여 새 문서를 만들 수 있습니다.`Document` 클래스와 문서 작성기를 사용하는`DocumentBuilder` 수업. 예는 다음과 같습니다.
+ A: 다음을 사용하여 새 문서를 만들 수 있습니다.`Document` 클래스와 문서 작성기를 사용하는`DocumentBuilder`수업. 예는 다음과 같습니다.
 
 ```csharp
 Document doc = new Document();
@@ -89,7 +89,7 @@ builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "L
 
 #### Q. OLE 개체가 아이콘으로 삽입된 문서를 어떻게 저장하나요?
 
- A: 문서를 사용하세요`Save` 문서를 파일로 저장하는 방법입니다. 예는 다음과 같습니다.
+ A: 문서를 사용하세요`Save`문서를 파일로 저장하는 방법입니다. 예는 다음과 같습니다.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");

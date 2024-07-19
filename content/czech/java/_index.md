@@ -44,7 +44,7 @@ Rozdělte dokumenty snadno pomocí Aspose.Words pro Java! Efektivně rozdělte v
 ### [Revize dokumentu](./document-revision/)
 Zjednodušte revize dokumentů pomocí Aspose.Words pro Java! Sledujte změny, spravujte správu verzí a automatizujte úlohy revizí bez námahy. 
 ### [Načítání a ukládání dokumentu](./document-loading-and-saving/)
-Objevte, jak bez námahy načítat a ukládat dokumenty pomocí Aspose.Words for Java s našimi komplexními výukovými programy. Zvyšte své dovednosti v práci s dokumenty Java ještě dnes!
+Objevte, jak bez námahy načítat a ukládat dokumenty pomocí Aspose.Words for Java s našimi komplexními výukovými programy. Zlepšete své dovednosti v práci s dokumenty Java ještě dnes!
 ### [Manipulace s dokumenty](./document-manipulation/)
 Naučte se, jak efektivně manipulovat s dokumenty pomocí Aspose.Words for Java, pomocí našich obsáhlých výukových programů. Zvyšte své dovednosti v oblasti zpracování dokumentů Java ještě dnes!
 ### [Konverze a export dokumentů](./document-conversion-and-export/)

@@ -10,7 +10,7 @@ url: /pt/java/document-manipulation/using-structured-document-tags/
 
 ## Introdução ao uso de tags de documentos estruturados (SDT) em Aspose.Words para Java
 
-Tags de documentos estruturados (SDT) são um recurso poderoso do Aspose.Words for Java que permite criar e manipular conteúdo estruturado em seus documentos. Neste guia abrangente, orientaremos você nos vários aspectos do uso de SDTs no Aspose.Words for Java. Quer você seja um desenvolvedor iniciante ou experiente, encontrará informações valiosas e exemplos práticos neste artigo.
+Tags de documentos estruturados (SDT) são um recurso poderoso em Aspose.Words for Java que permite criar e manipular conteúdo estruturado em seus documentos. Neste guia abrangente, orientaremos você nos vários aspectos do uso de SDTs no Aspose.Words for Java. Quer você seja um desenvolvedor iniciante ou experiente, encontrará informações valiosas e exemplos práticos neste artigo.
 
 ## Começando
 

@@ -261,7 +261,7 @@ Aspose.Words for Python 與 Python 2.7 和 Python 3.x 版本相容。使用者�
 
 是的，Aspose.Words for Python 支援加密 Word 文件的轉換。它可以在轉換過程中處理受密碼保護的文件。
 
-### Aspose.Words 支援轉換為影像格式嗎？
+### Aspose.Words 是否支援轉換為影像格式？
 
 是的，Aspose.Words 支援將 Word 文件轉換為各種圖片格式，例如 JPEG、PNG、BMP 和 GIF。當使用者需要將文件內容作為圖像共用時，此功能非常有用。
 

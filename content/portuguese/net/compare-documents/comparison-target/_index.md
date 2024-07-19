@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Etapa 3: carregue seus documentos
 
-Tudo bem, é hora de carregar os documentos que deseja comparar. Você precisará dos caminhos para esses documentos. Vamos supor que você tenha dois documentos:`DocumentA.docx` e`DocumentB.docx`.
+Tudo bem, é hora de carregar os documentos que deseja comparar. Você precisará dos caminhos para esses documentos. Vamos supor que você tenha dois documentos:`DocumentA.docx`e`DocumentB.docx`.
 
 ```csharp
 // O caminho para o diretório de documentos.

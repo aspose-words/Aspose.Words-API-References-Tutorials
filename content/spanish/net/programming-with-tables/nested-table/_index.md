@@ -31,7 +31,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
 ## Paso 3: construir la tabla anidada
-A continuación, crearemos la tabla anidada insertando celdas en la tabla exterior y creando una nueva tabla dentro de la primera celda. Utilice el siguiente código:
+continuación, crearemos la tabla anidada insertando celdas en la tabla exterior y creando una nueva tabla dentro de la primera celda. Utilice el siguiente código:
 
 ```csharp
 // Inserte la primera celda de la tabla exterior.
@@ -58,7 +58,7 @@ builder.Writeln("Cell 2 of the inner table");
 builder. EndTable();
 ```
 
-Aquí usamos el generador de documentos para insertar celdas y contenido en la tabla exterior. Luego movemos el cursor del generador de documentos a la primera celda de la tabla exterior y construimos una nueva tabla dentro insertando celdas y contenido.
+Aquí usamos el generador de documentos para insertar celdas y contenido en la tabla exterior. Luego movemos el cursor del generador de documentos a la primera celda de la tabla exterior y construimos una nueva tabla en el interior insertando celdas y contenido.
 
 ## Paso 4: guardar el documento modificado
 Finalmente, necesitamos guardar el documento modificado con la tabla anidada. Utilice el siguiente código:
@@ -82,7 +82,7 @@ Asegúrese de especificar la ruta y el nombre del archivo correctos para el docu
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Esta llamada es importante para crear una tabla anidada dentro de la primera tabla.
-	// Sin esta llamada, las celdas insertadas a continuación se agregarán a la tabla exterior.
+	//Sin esta llamada, las celdas insertadas a continuación se agregarán a la tabla exterior.
 	builder.EndTable();
 	// Vaya a la primera celda de la tabla exterior.
 	builder.MoveTo(cell.FirstParagraph);

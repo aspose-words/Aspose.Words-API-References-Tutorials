@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions`en stelt de`ResolveFontNames` optie om`true`om ontbrekende lettertypenamen op te lossen bij het converteren naar HTML. Ook de`PrettyFormat` optie is ingesteld`true` om mooi opgemaakte HTML-code te krijgen.
+ Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions` en stelt de`ResolveFontNames` optie om`true`om ontbrekende lettertypenamen op te lossen bij het converteren naar HTML. Ook de`PrettyFormat` optie is ingesteld`true` om mooi opgemaakte HTML-code te krijgen.
 
 ## Stap 4: Het document converteren en opslaan naar HTML
 

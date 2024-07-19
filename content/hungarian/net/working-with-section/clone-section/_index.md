@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: Töltse be a dokumentumot, és klónozza a részt
- Ezután betöltjük a Word-dokumentumot a`Document` osztály. Ezután használjuk a`Clone` módszert a dokumentum első részének klónozására.
+ Ezután betöltjük a Word-dokumentumot a`Document` osztály. Ezután használjuk a`Clone`módszert a dokumentum első részének klónozására.
 
 ```csharp
 // Töltse be a dokumentumot

@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Aqui, estamos criando uma instância de`Document` e`DocumentBuilder` . Imagine`Document` como seu documento Word em branco e`DocumentBuilder` como sua caneta.
+ Aqui, estamos criando uma instância de`Document`e`DocumentBuilder` . Imagine`Document` como seu documento Word em branco e`DocumentBuilder` como sua caneta.
 
 ## Etapa 2: vá para o início do documento
 

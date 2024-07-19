@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## 2단계: 새 문서 만들기
 
- 자, 새 Word 문서를 만드는 것부터 시작해 보겠습니다. 우리는`Document` 그리고`DocumentBuilder` Aspose.Words의 클래스를 사용하여 작업을 진행하세요.
+ 자, 새 Word 문서를 만드는 것부터 시작해 보겠습니다. 우리는`Document`그리고`DocumentBuilder` Aspose.Words의 클래스를 사용하여 작업을 진행하세요.
 
 ```csharp
 // 문서 디렉터리의 경로입니다.
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- 이 코드 줄은 Aspose.Words에게 "Entry Text"라는 입력 텍스트가 있는 TC 필드를 삽입하도록 지시합니다. 그만큼`\\f t` part는 목차에 항목이 표시되는 방식을 결정하는 스위치입니다.
+ 이 코드 줄은 Aspose.Words에게 "Entry Text"라는 입력 텍스트가 있는 TC 필드를 삽입하도록 지시합니다. 그만큼`\\f t`part는 목차에 항목이 표시되는 방식을 결정하는 스위치입니다.
 
 ## 4단계: 문서 저장
 

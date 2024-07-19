@@ -33,7 +33,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- Trong bước này, chúng tôi định cấu hình các tùy chọn lưu OOXML bằng cách sử dụng`OptimizeFor` Và`OoxmlSaveOptions` phương pháp. Chúng tôi tối ưu hóa khả năng tương thích tài liệu cho phiên bản Word 2016 bằng cách sử dụng`OptimizeFor`và đặt sự tuân thủ thành`Iso29500_2008_Strict` sử dụng`Compliance`.
+ Trong bước này, chúng tôi định cấu hình các tùy chọn lưu OOXML bằng cách sử dụng`OptimizeFor`Và`OoxmlSaveOptions` phương pháp. Chúng tôi tối ưu hóa khả năng tương thích tài liệu cho phiên bản Word 2016 bằng cách sử dụng`OptimizeFor`và đặt sự tuân thủ thành`Iso29500_2008_Strict` sử dụng`Compliance`.
 
 ## Bước 4: Lưu tài liệu với Ooxml Iso 29500_2008_Strict tuân thủ
 

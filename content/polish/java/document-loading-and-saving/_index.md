@@ -67,7 +67,7 @@ Dowiedz się, jak zapisywać dokumenty w formacie OOXML za pomocą Aspose.Words 
 ### [Zapisywanie dokumentów w formacie PCL w Aspose.Words dla Java](./saving-documents-as-pcl-format/)
 Dowiedz się, jak zapisywać dokumenty w formacie PCL przy użyciu Aspose.Words dla Java. Przewodnik krok po kroku i przykłady kodu umożliwiające efektywną konwersję dokumentów.
 ### [Zapisywanie dokumentów w formacie PDF w Aspose.Words dla Java](./saving-documents-as-pdf/)
-Dowiedz się, jak zapisywać dokumenty programu Word w formacie PDF przy użyciu Aspose.Words dla Java. Dostosuj czcionki, właściwości i jakość obrazu. Obszerny przewodnik po konwersji plików PDF.
+Dowiedz się, jak zapisywać dokumenty programu Word w formacie PDF przy użyciu Aspose.Words dla Java. Dostosuj czcionki, właściwości i jakość obrazu. Kompleksowy przewodnik po konwersji plików PDF.
 ### [Zapisywanie dokumentów w formacie RTF w Aspose.Words dla Java](./saving-documents-as-rtf-format/)
 Dowiedz się, jak zapisywać dokumenty w formacie RTF przy użyciu Aspose.Words dla Java. Przewodnik krok po kroku z kodem źródłowym umożliwiającym efektywną konwersję dokumentów.
 ### [Zapisywanie dokumentów jako plików tekstowych w Aspose.Words dla Java](./saving-documents-as-text-files/)

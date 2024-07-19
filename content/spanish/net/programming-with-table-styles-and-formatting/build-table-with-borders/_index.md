@@ -40,7 +40,7 @@ table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 ```
 
 ## Paso 5: guarde el documento modificado
-Finalmente, guardamos el documento modificado en un archivo. Puede elegir un nombre y una ubicación apropiados para el documento de salida.
+Finalmente, guardamos el documento modificado en un archivo. Puede elegir un nombre y una ubicación adecuados para el documento de salida.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithBorders.docx");

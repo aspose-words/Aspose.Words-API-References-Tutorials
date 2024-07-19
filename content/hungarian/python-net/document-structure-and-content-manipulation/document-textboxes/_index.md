@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Szövegdobozok elhelyezése
 
- A szövegdobozok helyzetének szabályozása kulcsfontosságú a kívánt elrendezés eléréséhez. A pozíciót a gombbal állíthatja be`left` és`top` tulajdonságait. Például:
+ A szövegdobozok helyzetének szabályozása kulcsfontosságú a kívánt elrendezés eléréséhez. A pozíciót a gombbal állíthatja be`left`és`top` tulajdonságait. Például:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ Ebben az útmutatóban megvizsgáltuk a vizuális tartalom szövegdobozokkal tö
 
 ### Hogyan lehet átméretezni egy szövegdobozt?
 
- A szövegdoboz átméretezéséhez módosíthatja a szélességi és magassági tulajdonságait a gombbal`width` és`height` attribútumokat.
+ Szövegdoboz átméretezéséhez módosíthatja a szélességi és magassági tulajdonságait a gombbal`width`és`height` attribútumokat.
 
 ### Elforgathatom a szövegdobozt?
 
@@ -106,7 +106,7 @@ Ebben az útmutatóban megvizsgáltuk a vizuális tartalom szövegdobozokkal tö
 
 ### Hogyan adhatok szegélyeket egy szövegdobozhoz?
 
- Szegélyeket adhat hozzá a szövegdobozokhoz a`textbox.border` tulajdonság és megjelenésének testreszabása.
+ Szegélyeket adhat hozzá a szövegdobozokhoz a`textbox.border` ingatlan és megjelenésének testreszabása.
 
 ### Beágyazhatok hiperhivatkozásokat egy szövegdobozba?
 

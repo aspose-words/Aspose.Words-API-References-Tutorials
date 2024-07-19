@@ -57,7 +57,7 @@ foreach(Field field in doc.Range.Fields)
      string fieldCode = field.GetFieldCode();
      string fieldResult = field.Result;
 
-     // Faites quelque chose avec le code et le résultat du champ.
+     //Faites quelque chose avec le code et le résultat du champ.
 }
 ```
 
@@ -73,7 +73,7 @@ Ceci conclut notre guide sur l'utilisation de la fonctionnalité « Obtenir le c
 
 #### Q : Comment puis-je mettre à jour les champs d'un document à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour mettre à jour les champs du document à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Document.UpdateFields`méthode. Cela mettra à jour tous les champs présents dans le document, tels que les champs de fusion, les champs de date, etc.
+ R : Pour mettre à jour les champs du document à l'aide d'Aspose.Words for .NET, vous pouvez utiliser l'outil`Document.UpdateFields` méthode. Cela mettra à jour tous les champs présents dans le document, tels que les champs de fusion, les champs de date, etc.
 
 #### Q : Comment puis-je récupérer la valeur d'un champ spécifique dans Aspose.Words pour .NET ?
 

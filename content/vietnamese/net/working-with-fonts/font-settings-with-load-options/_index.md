@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Bước 2: Định cấu hình tùy chọn tải với cài đặt phông chữ
- Tiếp theo, chúng ta sẽ tạo một thể hiện của`LoadOptions` và chỉ định cài đặt phông chữ bằng cách tạo một phiên bản mới của`FontSettings` và gán nó cho`loadOptions.FontSettings`.
+ Tiếp theo, chúng ta sẽ tạo một thể hiện của`LoadOptions`và chỉ định cài đặt phông chữ bằng cách tạo một phiên bản mới của`FontSettings` và gán nó cho`loadOptions.FontSettings`.
 
 ```csharp
 // Định cấu hình tùy chọn tải với cài đặt phông chữ
@@ -57,7 +57,7 @@ Trong hướng dẫn này, chúng ta đã biết cách sử dụng các tùy ch�
 
 #### Câu hỏi: Làm cách nào tôi có thể chỉ định phông chữ mặc định khi tải tài liệu vào Aspose.Words?
 
-Trả lời: Để chỉ định phông chữ mặc định khi tải tài liệu trong Aspose.Words, bạn có thể sử dụng`LoadOptions` lớp và thiết lập`DefaultFontName` thuộc tính thành tên của phông chữ mong muốn.
+ Trả lời: Để chỉ định phông chữ mặc định khi tải tài liệu trong Aspose.Words, bạn có thể sử dụng`LoadOptions` lớp và thiết lập`DefaultFontName` thuộc tính thành tên của phông chữ mong muốn.
 
 #### Câu hỏi: Tôi có thể chỉ định những cài đặt phông chữ nào khác bằng các tùy chọn tải trong Aspose.Words?
 
@@ -69,4 +69,4 @@ Trả lời: Nếu phông chữ mặc định được chỉ định không có 
 
 #### Hỏi: Tôi có thể chỉ định các cài đặt phông chữ khác nhau cho từng tài liệu được tải lên không?
 
- Đáp: Có, bạn có thể chỉ định các cài đặt phông chữ khác nhau cho từng tài liệu được tải bằng cách sử dụng các phiên bản riêng biệt của`LoadOptions`class và thiết lập cài đặt phông chữ mong muốn cho từng phiên bản. Điều này cho phép bạn tùy chỉnh giao diện phông chữ cho từng tài liệu một cách độc lập.
+ Đáp: Có, bạn có thể chỉ định các cài đặt phông chữ khác nhau cho từng tài liệu được tải bằng cách sử dụng các phiên bản riêng biệt của`LoadOptions` class và thiết lập cài đặt phông chữ mong muốn cho từng phiên bản. Điều này cho phép bạn tùy chỉnh giao diện phông chữ cho từng tài liệu một cách độc lập.

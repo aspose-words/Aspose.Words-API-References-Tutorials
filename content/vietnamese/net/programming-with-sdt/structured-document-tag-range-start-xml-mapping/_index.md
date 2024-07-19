@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tải tài liệu và tạo phần XML
- Tải tài liệu Word bằng cách sử dụng`Document` hàm tạo, chuyển đường dẫn đến tài liệu dưới dạng tham số. Tạo một phần XML chứa dữ liệu bạn muốn hiển thị trong thẻ tài liệu có cấu trúc.
+ Tải tài liệu Word bằng cách sử dụng`Document`hàm tạo, chuyển đường dẫn đến tài liệu dưới dạng tham số. Tạo một phần XML chứa dữ liệu bạn muốn hiển thị trong thẻ tài liệu có cấu trúc.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Tạo StructuredDocumentTag sẽ hiển thị nội dung của CustomXmlPart của chúng tôi trong tài liệu.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Nếu chúng tôi đặt ánh xạ cho Thẻ tài liệu có cấu trúc của mình,
-	// nó sẽ chỉ hiển thị một phần của CustomXmlPart mà XPath trỏ đến.
+	//nó sẽ chỉ hiển thị một phần của CustomXmlPart mà XPath trỏ tới.
 	// XPath này sẽ trỏ đến phần tử "<text>" nội dung thứ hai của phần tử "<root>" đầu tiên của CustomXmlPart của chúng ta.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

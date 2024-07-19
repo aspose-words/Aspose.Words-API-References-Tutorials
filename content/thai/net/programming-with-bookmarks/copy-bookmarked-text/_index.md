@@ -2,175 +2,123 @@
 title: คัดลอกข้อความที่คั่นหน้าในเอกสาร Word
 linktitle: คัดลอกข้อความที่คั่นหน้าในเอกสาร Word
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีคัดลอกข้อความบุ๊กมาร์กในเอกสาร Word ไปยังเอกสารอื่นโดยใช้ Aspose.Words สำหรับ .NET
+description: คัดลอกข้อความที่คั่นหน้าระหว่างเอกสาร Word ได้อย่างง่ายดายโดยใช้ Aspose.Words สำหรับ .NET เรียนรู้วิธีการด้วยคำแนะนำทีละขั้นตอนนี้
 type: docs
 weight: 10
 url: /th/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
+## การแนะนำ
 
-ในบทความนี้ เราจะสำรวจซอร์สโค้ด C# ด้านบนเพื่อทำความเข้าใจวิธีใช้ฟังก์ชันคัดลอกข้อความที่คั่นหน้าในไลบรารี Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณสามารถคัดลอกเนื้อหาของบุ๊กมาร์กเฉพาะจากเอกสารต้นทางไปยังเอกสารอื่นได้
+เคยพบว่าตัวเองจำเป็นต้องคัดลอกส่วนเฉพาะจากเอกสาร Word หนึ่งไปยังอีกเอกสารหนึ่งหรือไม่? คุณโชคดี! ในบทช่วยสอนนี้ เราจะอธิบายวิธีคัดลอกข้อความที่บุ๊กมาร์กจากเอกสาร Word หนึ่งไปยังอีกเอกสารหนึ่งโดยใช้ Aspose.Words สำหรับ .NET ไม่ว่าคุณจะสร้างรายงานแบบไดนามิกหรือสร้างเอกสารอัตโนมัติ คู่มือนี้จะทำให้กระบวนการง่ายขึ้นสำหรับคุณ
 
 ## ข้อกำหนดเบื้องต้น
 
-- ความรู้พื้นฐานของภาษา C#
-- สภาพแวดล้อมการพัฒนา .NET ที่ติดตั้งไลบรารี Aspose.Words
+ก่อนที่เราจะดำน้ำ ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
-## ขั้นตอนที่ 1: กำลังโหลดเอกสารต้นฉบับ
+-  Aspose.Words สำหรับ .NET Library: คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/net/).
+- สภาพแวดล้อมการพัฒนา: Visual Studio หรือสภาพแวดล้อมการพัฒนา .NET อื่น ๆ
+- ความรู้พื้นฐานเกี่ยวกับ C#: ความคุ้นเคยกับการเขียนโปรแกรม C# และกรอบงาน .NET
 
- ก่อนที่จะคัดลอกข้อความบุ๊กมาร์ก เราต้องโหลดเอกสารต้นฉบับลงในไฟล์`Document` วัตถุที่ใช้เส้นทางไฟล์:
+## นำเข้าเนมสเปซ
+
+ในการเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้นำเข้าเนมสเปซที่จำเป็นในโปรเจ็กต์ของคุณ:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Import;
+using Aspose.Words.Bookmark;
+```
+
+## ขั้นตอนที่ 1: โหลดเอกสารต้นฉบับ
+
+ก่อนอื่น คุณต้องโหลดเอกสารต้นฉบับที่มีข้อความบุ๊กมาร์กที่คุณต้องการคัดลอก
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## ขั้นตอนที่ 2: รับบุ๊กมาร์กแหล่งที่มา
+ ที่นี่,`dataDir` คือเส้นทางไปยังไดเร็กทอรีเอกสารของคุณและ`Bookmarks.docx` เป็นเอกสารต้นทาง
 
- เราใช้`Bookmarks` คุณสมบัติของช่วงเอกสารต้นทางเพื่อรับบุ๊กมาร์กเฉพาะที่เราต้องการคัดลอก:
+## ขั้นตอนที่ 2: ระบุบุ๊กมาร์ก
+
+จากนั้น ระบุบุ๊กมาร์กที่คุณต้องการคัดลอกจากเอกสารต้นฉบับ
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
-## ขั้นตอนที่ 3: การสร้างเอกสารปลายทาง
+ แทนที่`"MyBookmark1"` พร้อมชื่อจริงของบุ๊กมาร์กของคุณ
 
-เราสร้างเอกสารใหม่ที่จะทำหน้าที่เป็นเอกสารปลายทางเพื่อคัดลอกเนื้อหาบุ๊กมาร์ก:
+## ขั้นตอนที่ 3: สร้างเอกสารปลายทาง
+
+ตอนนี้ให้สร้างเอกสารใหม่ที่จะคัดลอกข้อความที่บุ๊กมาร์กไว้
 
 ```csharp
 Document dstDoc = new Document();
-```
-
-## ขั้นตอนที่ 4: การระบุตำแหน่งการทำสำเนา
-
-เราระบุตำแหน่งที่เราต้องการเพิ่มข้อความที่คัดลอก ในตัวอย่างของเรา เราเพิ่มข้อความที่ส่วนท้ายของส่วนสุดท้ายของเอกสารปลายทาง:
-
-```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## ขั้นตอนที่ 5: นำเข้าและคัดลอกข้อความบุ๊กมาร์ก
+## ขั้นตอนที่ 4: นำเข้าเนื้อหาที่คั่นหน้า
 
- เราใช้ก`NodeImporter`วัตถุที่จะนำเข้าและคัดลอกข้อความบุ๊กมาร์กจากเอกสารต้นทางไปยังเอกสารปลายทาง:
+ เพื่อให้แน่ใจว่าสไตล์และการจัดรูปแบบจะยังคงอยู่ ให้ใช้`NodeImporter` เพื่อนำเข้าเนื้อหาที่คั่นหน้าจากเอกสารต้นทางไปยังเอกสารปลายทาง
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+AppendBookmarkedText(importer, srcBookmark, dstNode);
+```
 
-AppendBookmarkedText(import, srcBookmark, dstNode);
+## ขั้นตอนที่ 5: กำหนดวิธีการ AppendBookmarkedText
 
+นี่คือจุดที่ความมหัศจรรย์เกิดขึ้น กำหนดวิธีการจัดการกับการคัดลอกข้อความที่คั่นหน้า:
+
+```csharp
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+{
+    Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+    Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
+    if (startPara == null || endPara == null)
+        throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+    if (startPara.ParentNode != endPara.ParentNode)
+        throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+    Node endNode = endPara.NextSibling;
+
+    for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+    {
+        Node newNode = importer.ImportNode(curNode, true);
+        dstNode.AppendChild(newNode);
+    }
+}
+```
+
+## ขั้นตอนที่ 6: บันทึกเอกสารปลายทาง
+
+สุดท้าย ให้บันทึกเอกสารปลายทางเพื่อตรวจสอบเนื้อหาที่คัดลอก
+
+```csharp
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-### ตัวอย่างซอร์สโค้ดสำหรับการคัดลอกข้อความที่คั่นหน้าโดยใช้ Aspose.Words สำหรับ .NET
-
-นี่คือตัวอย่างซอร์สโค้ดแบบเต็มเพื่อสาธิตการคัดลอกข้อความจากบุ๊กมาร์กโดยใช้ Aspose.Words สำหรับ .NET:
-
-```csharp
-
-	// เส้นทางไปยังไดเร็กทอรีเอกสาร
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document srcDoc = new Document(dataDir + "Bookmarks.docx");
-
-	// นี่คือบุ๊กมาร์กที่มีเนื้อหาที่เราต้องการคัดลอก
-	Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
-
-	// เราจะเพิ่มเอกสารนี้
-	Document dstDoc = new Document();
-
-	// สมมติว่าเราจะนำไปต่อท้ายเนื้อหาของส่วนสุดท้าย
-	CompositeNode dstNode = dstDoc.LastSection.Body;
-
-	// หากคุณนำเข้าหลายครั้งโดยไม่มีบริบทเดียว จะส่งผลให้มีการสร้างสไตล์มากมาย
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
-
-	AppendBookmarkedText(importer, srcBookmark, dstNode);
-	
-	dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
-
-```
-
-#### ผนวกซอร์สโค้ดข้อความที่คั่นหน้า
-
-```csharp
-
-private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
-        {
-            // นี่คือย่อหน้าที่มีจุดเริ่มต้นของบุ๊กมาร์ก
-            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-            // นี่คือย่อหน้าที่มีส่วนท้ายของบุ๊กมาร์ก
-            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-            if (startPara == null || endPara == null)
-                throw new InvalidOperationException(
-                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-            // จำกัดตัวเราเองให้อยู่ในสถานการณ์ที่เรียบง่ายพอสมควร
-            if (startPara.ParentNode != endPara.ParentNode)
-                throw new InvalidOperationException(
-                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-            // เราต้องการคัดลอกย่อหน้าทั้งหมดตั้งแต่ย่อหน้าเริ่มต้นจนถึง (และรวมถึง) ย่อหน้าสุดท้าย
-            // ดังนั้นโหนดที่เราหยุดจะอยู่หลังย่อหน้าสุดท้าย
-            Node endNode = endPara.NextSibling;
-
-            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-            {
-                //สิ่งนี้จะสร้างสำเนาของโหนดปัจจุบันและนำเข้า (ทำให้ถูกต้อง) ในบริบท
-                // ของเอกสารปลายทาง การนำเข้าหมายถึงการปรับสไตล์และตัวระบุรายการอย่างถูกต้อง
-                Node newNode = importer.ImportNode(curNode, true);
-
-                dstNode.AppendChild(newNode);
-            }
-        }
-
-```
 ## บทสรุป
 
-ในบทความนี้ เราได้สำรวจซอร์สโค้ด C# เพื่อทำความเข้าใจวิธีใช้ฟังก์ชันคัดลอกข้อความที่คั่นหน้าจาก Aspose.Words สำหรับ .NET เราทำตามคำแนะนำทีละขั้นตอนเพื่อคัดลอกเนื้อหาของบุ๊กมาร์กจากเอกสารต้นทางไปยังเอกสารอื่น
+แค่นั้นแหละ! คุณได้คัดลอกข้อความบุ๊กมาร์กจากเอกสาร Word หนึ่งไปยังอีกเอกสารหนึ่งได้สำเร็จโดยใช้ Aspose.Words สำหรับ .NET วิธีการนี้มีประสิทธิภาพในการทำงานจัดการเอกสารโดยอัตโนมัติ ทำให้ขั้นตอนการทำงานของคุณมีประสิทธิภาพและคล่องตัวยิ่งขึ้น
 
-### คำถามที่พบบ่อยสำหรับการคัดลอกข้อความที่คั่นหน้าในเอกสาร Word
+## คำถามที่พบบ่อย
 
-#### ถาม: ข้อกำหนดในการใช้ฟีเจอร์ "คัดลอกข้อความพร้อมบุ๊กมาร์ก" ใน Aspose.Words สำหรับ .NET มีอะไรบ้าง
+### ฉันสามารถคัดลอกบุ๊กมาร์กหลายรายการพร้อมกันได้หรือไม่
+ได้ คุณสามารถวนซ้ำผ่านบุ๊กมาร์กหลายรายการ และใช้วิธีการเดียวกันในการคัดลอกแต่ละบุ๊กมาร์ก
 
-ตอบ: หากต้องการใช้ฟีเจอร์ "คัดลอกข้อความพร้อมบุ๊กมาร์ก" ใน Aspose.Words สำหรับ .NET คุณต้องมีความรู้พื้นฐานเกี่ยวกับภาษา C# คุณต้องมีสภาพแวดล้อมการพัฒนา .NET ที่ติดตั้งไลบรารี Aspose.Words ด้วย
+### จะเกิดอะไรขึ้นหากไม่พบบุ๊กมาร์ก?
+ ที่`Range.Bookmarks` ทรัพย์สินจะกลับมา`null`ดังนั้นให้แน่ใจว่าคุณจัดการกรณีนี้เพื่อหลีกเลี่ยงข้อยกเว้น
 
-#### ถาม: ฉันจะโหลดเอกสารต้นฉบับลงใน Aspose.Words สำหรับ .NET ได้อย่างไร
+### ฉันสามารถคงรูปแบบของบุ๊กมาร์กเดิมไว้ได้หรือไม่
+ อย่างแน่นอน! โดยใช้`ImportFormatMode.KeepSourceFormatting` ตรวจสอบให้แน่ใจว่าการจัดรูปแบบดั้งเดิมยังคงอยู่
 
- ตอบ: หากต้องการโหลดเอกสารต้นฉบับใน Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`Document` คลาสโดยระบุเส้นทางไฟล์ของเอกสาร นี่คือโค้ดตัวอย่าง:
+### มีการจำกัดขนาดของข้อความที่บุ๊กมาร์กหรือไม่?
+ไม่มีขีดจำกัดเฉพาะ แต่ประสิทธิภาพอาจแตกต่างกันไปตามเอกสารที่มีขนาดใหญ่มาก
 
-```csharp
-Document srcDoc = new Document("path/to/your/document.docx");
-```
-
-#### ถาม: จะรับเนื้อหาของบุ๊กมาร์กเฉพาะในเอกสารต้นฉบับโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
-
- ตอบ: หากต้องการรับเนื้อหาของบุ๊กมาร์กเฉพาะในเอกสารต้นทางโดยใช้ Aspose.Words สำหรับ .NET คุณสามารถเข้าถึง`Bookmarks` คุณสมบัติของช่วงเอกสารต้นทางและใช้ชื่อบุ๊กมาร์กเพื่อเรียกข้อมูลบุ๊กมาร์กเฉพาะ นี่คือโค้ดตัวอย่าง:
-
-```csharp
-Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
-```
-
-#### ถาม: จะระบุตำแหน่งของสำเนาข้อความบุ๊กมาร์กในเอกสารปลายทางโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
-
- ตอบ: หากต้องการระบุตำแหน่งที่คุณต้องการเพิ่มข้อความบุ๊กมาร์กที่คัดลอกไว้ในเอกสารปลายทางโดยใช้ Aspose.Words สำหรับ .NET คุณสามารถนำทางไปยังเนื้อหาของส่วนสุดท้ายของเอกสารปลายทางได้ คุณสามารถใช้`LastSection` คุณสมบัติในการเข้าถึงส่วนสุดท้ายและ`Body` คุณสมบัติในการเข้าถึงเนื้อหาของส่วนนั้น นี่คือโค้ดตัวอย่าง:
-
-```csharp
-CompositeNode dstNode = dstDoc.LastSection.Body;
-```
-
-#### ถาม: จะนำเข้าและคัดลอกข้อความบุ๊กมาร์กจากเอกสารต้นทางไปยังเอกสารปลายทางโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร
-
- ตอบ: หากต้องการนำเข้าและคัดลอกข้อความบุ๊กมาร์กจากเอกสารต้นทางไปยังเอกสารปลายทางโดยใช้ Aspose.Words สำหรับ .NET คุณสามารถใช้`NodeImporter` คลาสที่ระบุเอกสารต้นทาง เอกสารปลายทาง และโหมดการจัดรูปแบบที่จะเก็บไว้ จากนั้นคุณสามารถใช้`AppendBookmarkedText` วิธีการเพิ่มข้อความบุ๊กมาร์กในเอกสารปลายทาง นี่คือโค้ดตัวอย่าง:
-
-```csharp
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
-AppendBookmarkedText(import, srcBookmark, dstNode);
-```
-
-#### ถาม: จะบันทึกเอกสารปลายทางได้อย่างไรหลังจากคัดลอกข้อความบุ๊กมาร์กโดยใช้ Aspose.Words สำหรับ .NET
-
-ตอบ: หากต้องการบันทึกเอกสารปลายทางหลังจากคัดลอกข้อความจากบุ๊กมาร์กโดยใช้ Aspose.Words สำหรับ .NET คุณสามารถใช้`Save` วิธีการของ`Document` วัตถุที่ระบุเส้นทางไฟล์ปลายทาง นี่คือโค้ดตัวอย่าง:
-
-```csharp
-dstDoc.Save("path/to/your/destination-document.docx");
-```
+### ฉันสามารถคัดลอกข้อความระหว่างรูปแบบเอกสาร Word ที่แตกต่างกันได้หรือไม่
+ใช่ Aspose.Words รองรับรูปแบบ Word ที่หลากหลาย และวิธีการนี้สามารถใช้ได้กับรูปแบบเหล่านี้

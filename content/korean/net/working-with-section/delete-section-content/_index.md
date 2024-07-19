@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## 3단계: 섹션 콘텐츠 삭제
-섹션의 내용을 지우려면 섹션의`ClearContent` 방법.
+ 섹션의 내용을 지우려면 섹션의`ClearContent` 방법.
 
 ```csharp
 section.ClearContent();
@@ -61,7 +61,7 @@ section.ClearContent();
 
 #### Q: .NET용 Aspose.Words에서 문서 디렉터리를 설정하는 방법은 무엇입니까?
 
- A: 문서가 포함된 디렉터리의 경로를 설정하려면`"YOUR DOCUMENT DIRECTORY"` 코드에서 적절한 경로를 사용하세요. 수행 방법은 다음과 같습니다.
+A: 문서가 포함된 디렉터리의 경로를 설정하려면`"YOUR DOCUMENT DIRECTORY"` 코드에서 적절한 경로를 사용하세요. 수행 방법은 다음과 같습니다.
 
 ```csharp
 // 문서 디렉토리 경로

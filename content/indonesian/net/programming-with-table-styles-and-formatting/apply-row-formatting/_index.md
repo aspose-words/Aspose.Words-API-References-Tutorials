@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Langkah 4: Sisipkan sel dan buka format baris
-Sekarang kita dapat menyisipkan sel ke dalam tabel dan mengakses format baris untuk sel tersebut menggunakan pembuat dokumen`InsertCell()` Dan`RowFormat` metode.
+Sekarang kita dapat menyisipkan sel ke dalam tabel dan mengakses format baris untuk sel tersebut menggunakan pembuat dokumen`InsertCell()`Dan`RowFormat` metode.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Langkah 5: Atur Tinggi Baris
- Untuk mengatur tinggi baris, kami menggunakan`Height` Dan`HeightRule` properti format baris. Dalam contoh ini, kita menetapkan tinggi baris 100 poin dan menggunakan`Exactly` aturan.
+ Untuk mengatur tinggi baris, kami menggunakan`Height`Dan`HeightRule` properti format baris. Dalam contoh ini, kita menetapkan tinggi baris 100 poin dan menggunakan`Exactly` aturan.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Langkah 6: Tentukan format tabel
- Beberapa properti pemformatan dapat diatur pada tabel itu sendiri dan diterapkan ke semua baris tabel. Dalam contoh ini, kami mengatur properti margin tabel menggunakan`LeftPadding`, `RightPadding`, `TopPadding` Dan`BottomPadding` properti.
+ Beberapa properti pemformatan dapat diatur pada tabel itu sendiri dan diterapkan ke semua baris tabel. Dalam contoh ini, kami mengatur properti margin tabel menggunakan`LeftPadding`, `RightPadding`, `TopPadding`Dan`BottomPadding` properti.
 
 ```csharp
 table. LeftPadding = 30;

@@ -14,12 +14,12 @@ Výukové programy vysvětlují, jak přizpůsobit možnosti načítání dokume
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Optimalizace pro Ms Word](./optimize-for-ms-word/) | Podrobný průvodce optimalizací dokumentu pro MS Word pomocí Aspose.Words pro .NET. |
-| [Zobrazit gramatické a pravopisné chyby](./show-grammatical-and-spelling-errors/) | Podrobný průvodce povolit zobrazení gramatických a pravopisných chyb v dokumentu pomocí Aspose.Words for .NET. |
-| [Vyčištění nepoužívaných stylů a seznamů](./cleanup-unused-styles-and-lists/) | Podrobný průvodce čištěním nepoužívaných stylů a seznamů v dokumentu pomocí Aspose.Words for .NET. |
-| [Vyčištění duplicitního stylu](./cleanup-duplicate-style/) | Průvodce krok za krokem k vyčištění duplicitních stylů v dokumentu pomocí Aspose.Words for .NET. Plný zdrojový kód v ceně. |
-| [Zobrazit možnosti](./view-options/) | Podrobný průvodce konfigurací možností zobrazení dokumentu pomocí Aspose.Words pro .NET. |
-| [Nastavení stránky dokumentu](./document-page-setup/) | Podrobný průvodce nastavením rozvržení dokumentu pomocí Aspose.Words pro .NET. |
-| [Přidat japonštinu jako jazyky pro úpravy](./add-japanese-as-editing-languages/) | Podrobný průvodce přidáním japonštiny jako jazyka pro úpravy pomocí Aspose.Words pro .NET. |
-| [Nastavit ruštinu jako výchozí jazyk úprav](./set-russian-as-default-editing-language/) | Podrobný průvodce nastavením ruštiny jako výchozího jazyka pro úpravy dokumentu pomocí Aspose.Words pro .NET. |
-| [Nastavte Vzhled stránky a Formátování oddílů](./set-page-setup-and-section-formatting/) | Podrobný průvodce nastavením rozvržení dokumentu a formátování oddílů pomocí Aspose.Words pro .NET. |
+| [Optimalizace pro Ms Word](./optimize-for-ms-word/) | Pomocí tohoto podrobného průvodce můžete snadno optimalizovat documegrammaticalnts Wordu pro různé verze MS Word pomocí Aspose.Words for .NET. |
+| [Zobrazit gramatické a pravopisné chyby](./show-grammatical-and-spelling-errors/) | Naučte se, jak zobrazit gramatické a pravopisné chyby v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto komplexního kurzu. |
+| [Vyčištění nepoužívaných stylů a seznamů](./cleanup-unused-styles-and-lists/) | Vyčistěte své dokumenty aplikace Word pomocí Aspose.Words for .NET odstraněním nepoužívaných stylů a seznamů. Postupujte podle tohoto podrobného průvodce a zjednodušte své dokumenty bez námahy. |
+| [Vyčištění duplicitního stylu](./cleanup-duplicate-style/) | Naučte se, jak vyčistit duplicitní styly v dokumentech aplikace Word pomocí Aspose.Words for .NET s naším komplexním průvodcem krok za krokem. |
+| [Zobrazit možnosti](./view-options/) | Přečtěte si, jak zobrazit možnosti v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tato příručka popisuje nastavení typů zobrazení, úpravu úrovní přiblížení a uložení dokumentu. |
+| [Nastavení stránky dokumentu](./document-page-setup/) | Nastavení stránky hlavního dokumentu pomocí Aspose.Words pro .NET v jednoduchých krocích. Naučte se načíst, nastavit rozvržení, definovat znaky na řádek, řádky na stránku a uložit dokument. |
+| [Přidat japonštinu jako jazyky úprav](./add-japanese-as-editing-languages/) | Naučte se, jak přidat japonštinu jako jazyk pro úpravy do vašich dokumentů pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. |
+| [Nastavit ruštinu jako výchozí jazyk úprav](./set-russian-as-default-editing-language/) | Naučte se, jak nastavit ruštinu jako výchozí jazyk pro úpravy v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro podrobné pokyny. |
+| [Nastavte Vzhled stránky a Formátování oddílů](./set-page-setup-and-section-formatting/) | Naučte se, jak nastavit nastavení stránky a formátování oddílů v dokumentech Word pomocí Aspose.Words for .NET s naším podrobným průvodcem. Vylepšete prezentaci svého dokumentu bez námahy. |

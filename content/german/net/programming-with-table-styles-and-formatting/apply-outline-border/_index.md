@@ -96,4 +96,4 @@ Herzlichen Glückwunsch! Sie haben jetzt mit Aspose.Words für .NET einen Umriss
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET einen Umrissrahmen auf eine Tabelle anwendet. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie diese Funktionalität problemlos in Ihre C#-Projekte integrieren. Die Bearbeitung der Tabellenformatierung ist ein wesentlicher Aspekt der Dokumentverarbeitung, und Aspose.Words bietet hierfür eine leistungsstarke und flexible API. Mit diesem Wissen können Sie die visuelle Darstellung Ihrer Word-Dokumente verbessern und bestimmte Anforderungen erfüllen.
+In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET einen Umrissrahmen auf eine Tabelle anwendet. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie diese Funktionalität problemlos in Ihre C#-Projekte integrieren. Die Manipulation der Tabellenformatierung ist ein wesentlicher Aspekt der Dokumentverarbeitung, und Aspose.Words bietet hierfür eine leistungsstarke und flexible API. Mit diesem Wissen können Sie die visuelle Darstellung Ihrer Word-Dokumente verbessern und bestimmte Anforderungen erfüllen.

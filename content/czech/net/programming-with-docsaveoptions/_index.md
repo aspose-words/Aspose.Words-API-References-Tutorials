@@ -16,6 +16,6 @@ Podle těchto výukových programů se naučíte osvědčené postupy pro uklád
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Šifrovat dokument heslem](./encrypt-document-with-password/) | Naučte se šifrovat dokumenty pomocí hesla pomocí Aspose.Words for .NET.  |
-| [Nekomprimujte malé metasoubory](./do-not-compress-small-metafiles/) | Naučte se používat Aspose.Words for .NET k povolení funkce Nekomprimovat malé metasoubory při ukládání dokumentů. |
-| [Neukládat obrázkovou odrážku](./do-not-save-picture-bullet/) | Přečtěte si, jak zakázat ukládání odrážek obrázků v dokumentech aplikace Word pomocí Aspose.Words for .NET. |
+| [Šifrovat dokument heslem](./encrypt-document-with-password/) | V tomto podrobném podrobném průvodci se dozvíte, jak zašifrovat dokument pomocí hesla pomocí Aspose.Words for .NET. Zabezpečte své citlivé informace bez námahy. |
+| [Nekomprimujte malé metasoubory](./do-not-compress-small-metafiles/) | Naučte se používat Aspose.Words for .NET, abyste zajistili, že malé metasoubory v dokumentech aplikace Word nebudou komprimovány, čímž se zachová jejich kvalita a integrita. Včetně průvodce krok za krokem. |
+| [Neukládat obrázkovou odrážku](./do-not-save-picture-bullet/) | vydělejte si, jak zacházet s obrázkovými odrážkami v Aspose.Words pro .NET pomocí našeho podrobného průvodce. Zjednodušte správu dokumentů a bez námahy vytvářejte profesionální dokumenty Word. |

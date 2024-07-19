@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Krok 3: Odstraňte obsah sekce
- vymazání obsahu sekce použijeme sekci`ClearContent` metoda.
+ K vymazání obsahu sekce použijeme sekci`ClearContent` metoda.
 
 ```csharp
 section.ClearContent();
@@ -61,7 +61,7 @@ V tomto tutoriálu jsme viděli, jak odstranit obsah z konkrétní části dokum
 
 #### Otázka: Jak nastavit adresář dokumentů v Aspose.Words pro .NET?
 
- A: Chcete-li nastavit cestu k adresáři obsahujícímu vaše dokumenty, musíte nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou. Jak na to:
+A: Chcete-li nastavit cestu k adresáři obsahujícímu vaše dokumenty, musíte nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou. Jak na to:
 
 ```csharp
 // Cesta k adresáři vašich dokumentů

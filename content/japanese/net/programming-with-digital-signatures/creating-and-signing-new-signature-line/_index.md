@@ -2,139 +2,116 @@
 title: 新しい署名欄の作成と署名
 linktitle: 新しい署名欄の作成と署名
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書に新しい署名欄を作成し、署名する方法を学習します。
+description: このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に署名欄を作成し、デジタル署名する方法を学習します。文書の自動化に最適です。
 type: docs
 weight: 10
 url: /ja/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
-このチュートリアルでは、Aspose.Words for .NET で新しい署名欄を作成して署名する機能を使用する手順を説明します。この機能を使用すると、Word 文書に署名欄を挿入し、カスタム オプションを設定して文書に署名することができます。以下の手順に従ってください。
+## 導入
 
-## ステップ1: ドキュメントとジェネレーターの作成
+こんにちは! Word 文書に署名欄を追加してデジタル署名する必要があります。難しそうに聞こえますか? まったくそんなことはありません! Aspose.Words for .NET を使用すると、わずか数行のコードでこれをシームレスに実現できます。このチュートリアルでは、環境の設定から新しい署名で文書を保存するまでのプロセス全体を順を追って説明します。準備はできましたか? さあ始めましょう!
 
-まず、Document クラスのインスタンスと DocumentBuilder オブジェクトを作成します。
+## 前提条件
+
+コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
+1.  Aspose.Words for .NET - 次のようなことができます[ここからダウンロード](https://releases.aspose.com/words/net/).
+2. .NET 開発環境 - Visual Studio を強くお勧めします。
+3. 署名する文書 - 簡単な Word 文書を作成するか、既存の文書を使用します。
+4. 証明書ファイル - これはデジタル署名に必要です。`.pfx`ファイル。
+5. 署名行の画像 - オプションで、署名用の画像ファイル。
+
+## 名前空間のインポート
+
+まず、必要な名前空間をインポートする必要があります。この手順は、Aspose.Words 機能を使用するための環境を設定するため、非常に重要です。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Signing;
+```
+
+## ステップ1: ドキュメントディレクトリの設定
+
+すべてのプロジェクトは良いスタートが必要です。ドキュメント ディレクトリへのパスを設定しましょう。ドキュメントはここに保存され、取得されます。
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## ステップ2: 新しいドキュメントを作成する
+
+次に、Aspose.Words を使用して新しい Word 文書を作成します。これが署名行を追加するキャンバスになります。
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ2: 署名欄の挿入
+## ステップ3: 署名欄の挿入
 
-DocumentBuilder オブジェクトの InsertSignatureLine() メソッドを使用して、ドキュメントに新しい署名行を挿入します。
+ここで魔法が起こります。`DocumentBuilder`クラス。
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## ステップ3: ドキュメントを保存する
+## ステップ4: 署名欄付きの文書を保存する
 
-変更したドキュメントを保存します。
+署名欄が配置されたら、文書を保存する必要があります。これは、署名に進む前の中間ステップです。
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-ドキュメントを保存するには、正しいパスとファイル名を必ず指定してください。
+## ステップ5: 署名オプションの設定
 
-## ステップ4: 文書に署名する
-
-ドキュメントに署名するには、署名オプションを設定し、DigitalSignatureUtil クラスを使用する必要があります。
+次に、ドキュメントに署名するためのオプションを設定しましょう。これには、署名行 ID と使用する画像の指定が含まれます。
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-	SignatureLineId = signatureLine.Id,
-	SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes(dataDir + "Enhanced Windows MetaFile.emf")
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-	dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
 ```
 
-ドキュメント、署名行の画像、署名済みドキュメントの正しいパスを必ず指定してください。
+## ステップ6: 証明書の読み込み
 
-### Aspose.Words for .NET を使用して新しい署名欄を作成し、署名するためのサンプル ソース コード
-
-Aspose.Words for .NET を使用して新しい署名行を作成し、署名するための完全なソース コードは次のとおりです。
+デジタル署名には証明書が必要です。ここでは、ドキュメントの署名に使用する証明書ファイルを読み込みます。
 
 ```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-		dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-これらの手順に従うと、Aspose.Words for .NET を使用して Word 文書に新しい署名欄を簡単に作成し、署名できるようになります。
+## ステップ7: 文書に署名する
+
+これが最後のステップです。`DigitalSignatureUtil`クラスを使用してドキュメントに署名します。署名されたドキュメントは新しい名前で保存されます。
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
+    dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
+```
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に新しい署名欄を作成し、署名する方法を学びました。提供されている手順に従うことで、文書に署名欄を簡単に挿入し、オプションをカスタマイズし、デジタル証明書を使用して文書に署名することができます。文書に署名欄とデジタル署名を追加すると、文書の信頼性と整合性が高まり、より安全で信頼できるものになります。Aspose.Words for .NET は、Word 文書の署名とデジタル証明書を使用した強力な Words Processing API を提供し、署名プロセスを自動化して文書の有効性を確保できます。
+これで完了です。これらの手順により、新しい Word 文書を作成し、署名欄を追加し、Aspose.Words for .NET を使用してデジタル署名することができました。これは、文書の自動化を簡単にする強力なツールです。契約書、合意書、その他の正式な文書を扱う場合でも、この方法により、安全に署名および認証されます。
 
-### よくある質問
+## よくある質問
 
-#### Q: Word 文書の署名欄とは何ですか?
+### 署名欄に他の画像形式を使用できますか?
+はい、PNG、JPG、BMP などのさまざまな画像形式を使用できます。
 
-A: Word 文書の署名欄は、署名を配置する場所を示すプレースホルダーです。通常は、名前、肩書き、日付が含まれ、手書き署名またはデジタル署名用のスペースが提供されます。
+### 使用する必要がありますか？`.pfx` file for the certificate?
+はい、`.pfx`ファイルは、証明書や秘密鍵などの暗号化情報を保存するための一般的な形式です。
 
-#### Q: Aspose.Words for .NET を使用して Word 文書に署名欄を作成するにはどうすればよいですか?
+### 1 つの文書に複数の署名行を追加できますか?
+もちろんです! 署名ごとに挿入手順を繰り返すことで、複数の署名行を挿入できます。
 
-A: Aspose.Words for .NET を使用して Word 文書に署名欄を作成するには、次の手順に従います。
-1. インスタンスを作成する`Document`クラスと`DocumentBuilder`物体。
-2. 使用`InsertSignatureLine`方法の`DocumentBuilder`ドキュメントに新しい署名行を挿入するオブジェクト。
-3. 変更したドキュメントを保存します。
+### デジタル証明書を持っていない場合はどうなりますか?
+信頼できる証明機関からデジタル証明書を取得するか、OpenSSL などのツールを使用してデジタル証明書を生成する必要があります。
 
-#### Q: 名前、肩書き、日付などの署名行のオプションをカスタマイズできますか?
-
- A: はい、署名欄のオプションをカスタマイズできます。`SignatureLineOptions`クラスは、次のようなオプションを設定するためのプロパティを提供します。`Signer`, `SignerTitle`, `ShowDate`など。署名行を挿入する前にこれらのプロパティを変更できます。
-
-#### Q: 署名欄を作成した後、文書に署名するにはどうすればよいですか?
-
- A: 署名欄を作成した後に文書に署名するには、署名オプションを設定し、`DigitalSignatureUtil`クラス。手順は次のとおりです。
-1. をセットする`SignatureLineId`の財産`SignOptions`署名行の ID にオブジェクトを追加します。
-2. をセットする`SignatureLineImage`の財産`SignOptions`使用したい署名の画像に異議を唱えます。
-3. 署名証明書をロードするには、`CertificateHolder`クラス。
-4. 使用`DigitalSignatureUtil.Sign`必要なパラメータを指定してドキュメントに署名する方法。
-
-#### Q: 文書に署名するためにデジタル署名画像を使用できますか?
-
- A: はい、デジタル署名画像を使用して文書に署名することができます。これを行うには、画像ファイルを`SignOptions`オブジェクトを使用して`SignatureLineImage`プロパティ。画像は、JPEG、PNG、EMF など、サポートされている任意の画像形式にすることができます。
-
-#### Q: Word 文書に新しい署名欄を作成して署名する目的は何ですか?
-
-A: Aspose.Words for .NET を使用して Word 文書に新しい署名欄を作成し、署名すると、署名用のプレースホルダーを追加し、デジタル証明書を使用して文書に署名できます。このプロセスにより、文書の信頼性と整合性が確保され、承認または同意の証拠が提供されます。
-
-#### Q: Aspose.Words for .NET を使用して Word 文書に複数の署名行を作成して署名できますか?
-
-A: はい、Aspose.Words for .NET を使用して、Word 文書に複数の署名行を作成し、署名することができます。署名行ごとに固有の ID とオプションを設定できます。この手順を繰り返して、文書に追加の署名行を作成し、署名することができます。
-
-#### Q: 署名後に署名欄を変更したり、追加情報を追加したりすることはできますか?
-
-A: 署名欄に署名すると、その署名欄は文書のコンテンツの一部となり、個別に変更することはできません。ただし、署名欄の後に情報やコンテンツを追加することは可能です。
-
-#### Q: 署名行を含む文書のデジタル署名を検証できますか?
-
- A: はい、Aspose.Words for .NETには署名欄を含む文書のデジタル署名を検証する機能があります。`DigitalSignatureUtil.Verify`デジタル署名の有効性と信頼性を確認する方法。
-
-#### Q: Aspose.Words for .NET は署名欄の作成と署名にどのようなファイル形式をサポートしていますか?
-
-A: Aspose.Words for .NET は、DOCX ファイル形式での署名行の作成と署名をサポートしています。提供されているメソッドとクラスを使用して、DOCX ファイルに署名行を作成し、署名することができます。
+### 文書内のデジタル署名を検証するにはどうすればよいですか?
+署名された文書を Word で開き、署名の詳細に移動して、署名の信頼性と整合性を確認できます。

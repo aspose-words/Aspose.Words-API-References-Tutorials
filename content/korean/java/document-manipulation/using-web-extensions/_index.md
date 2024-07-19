@@ -59,7 +59,7 @@ taskPane.getWebExtension().getBindings().add(new WebExtensionBinding("UnnamedBin
 doc.save("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## 작업 창 정보 검색
+## 작업창 정보 검색
 
 문서의 작업창에 대한 정보를 검색하려면 작업창을 반복하고 해당 참조에 액세스하면 됩니다.
 

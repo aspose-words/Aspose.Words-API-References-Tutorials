@@ -2,24 +2,38 @@
 title: เก็บหมายเลขแหล่งที่มา
 linktitle: เก็บหมายเลขแหล่งที่มา
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีผนวกเอกสารในขณะที่ยังคงรักษาการจัดรูปแบบการกำหนดหมายเลขแหล่งที่มาใน Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีนำเข้าเอกสารในขณะที่รักษาการจัดรูปแบบโดยใช้ Aspose.Words สำหรับ .NET คำแนะนำทีละขั้นตอนพร้อมตัวอย่างโค้ด
 type: docs
 weight: 10
 url: /th/net/join-and-append-documents/keep-source-numbering/
 ---
+## การแนะนำ
 
-บทช่วยสอนนี้จะอธิบายวิธีการผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทาง ในขณะที่ยังคงรักษาการจัดรูปแบบการกำหนดหมายเลขดั้งเดิมของย่อหน้าที่มีหมายเลขโดยใช้ Aspose.Words สำหรับ .NET
+ เมื่อทำงานกับ Aspose.Words สำหรับ .NET การนำเข้าเอกสารจากแหล่งหนึ่งไปยังอีกแหล่งหนึ่งโดยที่ยังคงการจัดรูปแบบไว้สามารถจัดการได้อย่างมีประสิทธิภาพโดยใช้`NodeImporter` ระดับ. บทช่วยสอนนี้จะแนะนำคุณตลอดกระบวนการทีละขั้นตอน
 
-## ขั้นตอนที่ 1: ตั้งค่าโครงการ
+## ข้อกำหนดเบื้องต้น
 
-ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นดังต่อไปนี้:
+ก่อนเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+- ติดตั้ง Visual Studio บนเครื่องของคุณแล้ว
+-  ติดตั้ง Aspose.Words สำหรับ .NET แล้ว ถ้าไม่เช่นนั้นให้ดาวน์โหลดจาก[ที่นี่](https://releases.aspose.com/words/net/).
+- ความรู้พื้นฐานเกี่ยวกับการเขียนโปรแกรม C# และ .NET
 
--  ติดตั้ง Aspose.Words สำหรับไลบรารี .NET แล้ว คุณสามารถดาวน์โหลดได้จาก[Aspose.Releases]https://releases.aspose.com/words/net/ หรือใช้ตัวจัดการแพ็คเกจ NuGet เพื่อติดตั้ง
-- เส้นทางไดเร็กทอรีเอกสารที่จะบันทึกเอกสารต้นทางและปลายทาง
+## นำเข้าเนมสเปซ
 
-## ขั้นตอนที่ 2: สร้างเอกสารปลายทางและต้นฉบับ
+ขั้นแรก ให้รวมเนมสเปซที่จำเป็นในโครงการของคุณ:
 
- สร้างอินสแตนซ์ของ`Document` สำหรับเอกสารปลายทางและต้นทาง
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
+```
+
+## ขั้นตอนที่ 1: ตั้งค่าโครงการของคุณ
+
+เริ่มต้นด้วยการสร้างโปรเจ็กต์ C# ใหม่ใน Visual Studio และติดตั้ง Aspose.Words ผ่าน NuGet Package Manager
+
+## ขั้นตอนที่ 2: เริ่มต้นเอกสาร
+สร้างอินสแตนซ์ของแหล่งที่มา (`srcDoc`) และปลายทาง (`dstDoc`) เอกสาร
 
 ```csharp
 // เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
@@ -29,18 +43,17 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## ขั้นตอนที่ 3: เก็บหมายเลขแหล่งที่มาไว้เมื่อนำเข้า
-
- หากต้องการรักษาการจัดรูปแบบลำดับเลขของย่อหน้าที่มีลำดับเลขจากเอกสารต้นฉบับ ให้สร้างอินสแตนซ์ของ`ImportFormatOptions` และตั้งค่า`KeepSourceNumbering` ถึง`true` - ใช้`NodeImporter` เพื่อนำเข้าโหนดจากเอกสารต้นทางไปยังเอกสารปลายทาง โดยระบุ`ImportFormatMode.KeepSourceFormatting` และ`importFormatOptions`.
+## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกการนำเข้า
+ตั้งค่าตัวเลือกการนำเข้าเพื่อรักษาการจัดรูปแบบต้นฉบับ รวมถึงย่อหน้าที่มีหมายเลขกำกับ
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
+	importFormatOptions);
 ```
 
-## ขั้นตอนที่ 4: นำเข้าและต่อท้ายย่อหน้า
-
- วนซ้ำย่อหน้าในเอกสารต้นฉบับและนำเข้าแต่ละย่อหน้าไปยังเอกสารปลายทางโดยใช้`importer`- ผนวกโหนดที่นำเข้าเข้ากับเนื้อหาของเอกสารปลายทาง
+## ขั้นตอนที่ 4: นำเข้าย่อหน้า
+วนซ้ำแต่ละย่อหน้าในเอกสารต้นฉบับและนำเข้าไปยังเอกสารปลายทาง
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
@@ -51,33 +64,30 @@ foreach (Paragraph srcPara in srcParas)
 }
 ```
 
-## ขั้นตอนที่ 5: บันทึกเอกสารที่แก้ไข
-
- บันทึกเอกสารที่แก้ไขโดยใช้`Save` วิธีการของ`Document` วัตถุ.
+## ขั้นตอนที่ 5: บันทึกเอกสาร
+บันทึกเอกสารที่ผสานไปยังตำแหน่งที่คุณต้องการ
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ```
 
-ซึ่งจะทำให้การดำเนินการผนวกเอกสารต้นทางเข้ากับเอกสารปลายทางเสร็จสมบูรณ์ ในขณะเดียวกันก็รักษาการจัดรูปแบบการกำหนดหมายเลขดั้งเดิมโดยใช้ Aspose.Words สำหรับ .NET
+## บทสรุป
 
-### ตัวอย่างซอร์สโค้ดสำหรับ Keep Source Numbering โดยใช้ Aspose.Words สำหรับ .NET 
+ โดยสรุป การใช้ Aspose.Words สำหรับ .NET เพื่อนำเข้าเอกสารในขณะที่ยังคงการจัดรูปแบบไว้นั้นตรงไปตรงมากับ`NodeImporter` ระดับ. วิธีการนี้ช่วยให้แน่ใจว่าเอกสารของคุณคงรูปลักษณ์และโครงสร้างดั้งเดิมไว้ได้อย่างราบรื่น
 
-```csharp
-	// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## คำถามที่พบบ่อย
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//เก็บการจัดรูปแบบรายการต้นฉบับเมื่อนำเข้าย่อหน้าที่มีหมายเลขกำกับ
-	ImportFormatOptions importFormatOptions = new ImportFormatOptions { KeepSourceNumbering = true };
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting,
-		importFormatOptions);
-	ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
-	foreach (Paragraph srcPara in srcParas)
-	{
-		Node importedNode = importer.ImportNode(srcPara, false);
-		dstDoc.FirstSection.Body.AppendChild(importedNode);
-	}
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
-```
+### ฉันสามารถนำเข้าเอกสารที่มีรูปแบบการจัดรูปแบบที่แตกต่างกันได้หรือไม่
+ ใช่`NodeImporter` คลาสรองรับการนำเข้าเอกสารที่มีสไตล์การจัดรูปแบบที่หลากหลาย
+
+### จะเกิดอะไรขึ้นหากเอกสารของฉันมีตารางและรูปภาพที่ซับซ้อน
+Aspose.Words สำหรับ .NET จัดการโครงสร้างที่ซับซ้อน เช่น ตารางและรูปภาพระหว่างการดำเนินการนำเข้า
+
+### Aspose.Words เข้ากันได้กับ .NET ทุกเวอร์ชันหรือไม่
+Aspose.Words รองรับเวอร์ชัน .NET Framework และ .NET Core เพื่อการบูรณาการที่ราบรื่น
+
+### ฉันจะจัดการกับข้อผิดพลาดระหว่างการนำเข้าเอกสารได้อย่างไร
+ใช้บล็อก try-catch เพื่อจัดการกับข้อยกเว้นที่อาจเกิดขึ้นระหว่างกระบวนการนำเข้า
+
+### ฉันจะหาเอกสารรายละเอียดเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ .NET ได้ที่ไหน
+ เยี่ยมชม[เอกสารประกอบ](https://reference.aspose.com/words/net/) สำหรับคำแนะนำที่ครอบคลุมและการอ้างอิง API

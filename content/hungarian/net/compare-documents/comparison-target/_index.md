@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## 3. lépés: Töltse be a dokumentumokat
 
-Rendben, ideje betölteni az összehasonlítani kívánt dokumentumokat. Szüksége lesz ezekhez a dokumentumokhoz vezető útvonalakra. Tegyük fel, hogy két dokumentummal rendelkezik:`DocumentA.docx` és`DocumentB.docx`.
+Rendben, ideje betölteni az összehasonlítani kívánt dokumentumokat. Szüksége lesz ezekhez a dokumentumokhoz vezető útvonalakra. Tegyük fel, hogy két dokumentummal rendelkezik:`DocumentA.docx`és`DocumentB.docx`.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.

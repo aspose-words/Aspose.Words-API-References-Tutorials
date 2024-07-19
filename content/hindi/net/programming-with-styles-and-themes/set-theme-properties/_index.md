@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- इस चरण में, हम पहुँचते हैं`Theme` वस्तु का`Document`दस्तावेज़ थीम प्राप्त करने के लिए ऑब्जेक्ट। इसके बाद, हम थीम गुणों को संशोधित कर सकते हैं जैसे कि द्वितीयक फ़ॉन्ट (`MinorFonts.Latin`) और रंग (`Colors.Hyperlink`).
+इस चरण में, हम पहुँचते हैं`Theme` वस्तु का`Document` दस्तावेज़ थीम प्राप्त करने के लिए ऑब्जेक्ट। इसके बाद, हम थीम गुणों को संशोधित कर सकते हैं जैसे कि द्वितीयक फ़ॉन्ट (`MinorFonts.Latin`) और रंग (`Colors.Hyperlink`).
 
 ## चरण 4: दस्तावेज़ सहेजें
 

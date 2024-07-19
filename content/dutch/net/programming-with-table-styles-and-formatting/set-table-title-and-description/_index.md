@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Stap 3: Open de tabel en stel de titel en beschrijving in
- Nu hebt u toegang tot de tabel in het document met behulp van de`GetChild()` methode en de`Table` klas. Stel vervolgens de tabeltitel en -beschrijving in met behulp van de`Title` En`Description` eigenschappen.
+ Nu hebt u toegang tot de tabel in het document met behulp van de`GetChild()` methode en de`Table` klas. Stel vervolgens de tabeltitel en -beschrijving in met behulp van de`Title`En`Description` eigenschappen.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

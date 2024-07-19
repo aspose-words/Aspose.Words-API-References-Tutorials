@@ -25,12 +25,12 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Étape 3 : Démarrez un nouveau tableau et insérez une cellule
+## Étape 3 : créez un nouveau tableau et insérez une cellule
  Pour commencer à construire la table, nous utilisons le`StartTable()` méthode du générateur de documents, puis nous insérons une cellule dans le tableau à l'aide de la`InsertCell()` méthode.
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 ```
 
 ## Étape 4 : Définir le style du tableau
@@ -51,35 +51,35 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
  Pour ajuster automatiquement la taille du tableau en fonction de son contenu, nous utilisons le`AutoFit()` méthode avec le`AutoFitBehavior.AutoFitToContents` comportement.
 
 ```csharp
-table. AutoFit(AutoFitBehavior.AutoFitToContents);
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Étape 7 : Ajouter du contenu aux cellules
- Nous pouvons maintenant ajouter du contenu aux cellules en utilisant le`Writeln()` et`InsertCell()` méthodes du générateur de documents. Dans cet exemple, nous ajoutons les en-têtes pour "Article" et "Quantité (
+ Nous pouvons maintenant ajouter du contenu aux cellules en utilisant le`Writeln()`et`InsertCell()` méthodes du générateur de documents. Dans cet exemple, nous ajoutons les en-têtes pour "Article" et "Quantité (
 
 kg)" et les données correspondantes.
 
 ```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
-builder. InsertCell();
-builder. Writen("Quantity (kg)");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Apples");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("20");
-builder. EndRow();
-builder. InsertCell();
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Bananas");
-builder. InsertCell();
-builder. Writen("40");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("40");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Carrots");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("50");
-builder. EndRow();
+builder.EndRow();
 ```
 
 ## Étape 8 : Enregistrez le document modifié
@@ -94,41 +94,41 @@ Félicitation ! Vous avez maintenant créé un tableau de style personnalisé à
 ### Exemple de code source pour créer une table avec style à l'aide d'Aspose.Words pour .NET 
 
 ```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Chemin d'accès à votre répertoire de documents
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	// Nous devons d'abord insérer au moins une ligne avant de définir un formatage de tableau.
-	builder.InsertCell();
-	// Définissez le style de tableau utilisé en fonction de l'identifiant de style unique.
-	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	// Appliquez les fonctionnalités qui doivent être formatées par le style.
-	table.StyleOptions =
-		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-	table.AutoFit(AutoFitBehavior.AutoFitToContents);
-	builder.Writeln("Item");
-	builder.CellFormat.RightPadding = 40;
-	builder.InsertCell();
-	builder.Writeln("Quantity (kg)");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Apples");
-	builder.InsertCell();
-	builder.Writeln("20");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Bananas");
-	builder.InsertCell();
-	builder.Writeln("40");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Carrots");
-	builder.InsertCell();
-	builder.Writeln("50");
-	builder.EndRow();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+// Nous devons d'abord insérer au moins une ligne avant de définir un formatage de tableau.
+builder.InsertCell();
+// Définissez le style de tableau utilisé en fonction de l'identifiant de style unique.
+table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
+// Appliquez les fonctionnalités qui doivent être formatées par le style.
+table.StyleOptions =
+	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
+builder.Writeln("Item");
+builder.CellFormat.RightPadding = 40;
+builder.InsertCell();
+builder.Writeln("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Apples");
+builder.InsertCell();
+builder.Writeln("20");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Bananas");
+builder.InsertCell();
+builder.Writeln("40");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Carrots");
+builder.InsertCell();
+builder.Writeln("50");
+builder.EndRow();
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## Conclusion

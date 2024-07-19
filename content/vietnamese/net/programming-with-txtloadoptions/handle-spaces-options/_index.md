@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- Trong bước này, chúng tôi định cấu hình các tùy chọn để tải tài liệu TXT. Chúng tôi tạo ra một cái mới`TxtLoadOptions` đối tượng và thiết lập`LeadingSpacesOptions` Và`TrailingSpacesOptions` thuộc tính để`TxtLeadingSpacesOptions.Trim` Và`TxtTrailingSpacesOptions.Trim` tương ứng. Điều này yêu cầu Aspose.Words xóa khoảng trắng ở đầu và cuối dòng khi tải tài liệu.
+ Trong bước này, chúng tôi định cấu hình các tùy chọn để tải tài liệu TXT. Chúng tôi tạo ra một cái mới`TxtLoadOptions` đối tượng và thiết lập`LeadingSpacesOptions`Và`TrailingSpacesOptions` thuộc tính để`TxtLeadingSpacesOptions.Trim`Và`TxtTrailingSpacesOptions.Trim` tương ứng. Điều này yêu cầu Aspose.Words xóa khoảng trắng ở đầu và cuối dòng khi tải tài liệu.
 
 ## Bước 4: Tải tài liệu
 

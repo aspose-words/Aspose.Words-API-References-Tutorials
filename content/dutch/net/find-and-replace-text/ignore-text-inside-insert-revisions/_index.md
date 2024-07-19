@@ -2,196 +2,94 @@
 title: Negeer tekst in invoegrevisies
 linktitle: Negeer tekst in invoegrevisies
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de functie "Tekst in invoegrevisies negeren" van Aspose.Words voor .NET kunt gebruiken om invoegrevisies in Word-documenten te manipuleren.
+description: Leer hoe u documentrevisies effectief kunt beheren met Aspose.Words voor .NET. Ontdek technieken om tekst in invoegrevisies te negeren voor gestroomlijnde bewerking.
 type: docs
 weight: 10
 url: /nl/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
+## Invoering
 
-In dit artikel zullen we de bovenstaande C#-broncode verkennen om te begrijpen hoe u de functie Negeer tekst binnen invoegrevisies kunt gebruiken in de Aspose.Words voor .NET-bibliotheek. Deze functie is handig als we tekst in invoegrevisies willen negeren tijdens het manipuleren van documenten.
+In deze uitgebreide handleiding gaan we dieper in op het gebruik van Aspose.Words voor .NET om documentrevisies effectief te beheren. Of u nu een ontwikkelaar of een tech-liefhebber bent, als u begrijpt hoe u tekst in invoegrevisies kunt negeren, kunt u uw documentverwerkingsworkflows stroomlijnen. Deze tutorial zal u voorzien van de nodige vaardigheden om de krachtige functies van Aspose.Words te gebruiken voor het naadloos beheren van documentrevisies.
 
 ## Vereisten
 
-- Basiskennis van de C#-taal.
-- .NET-ontwikkelomgeving met Aspose.Words-bibliotheek geïnstalleerd.
+Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+- Visual Studio is op uw computer geïnstalleerd.
+- Aspose.Words voor .NET-bibliotheek geïntegreerd in uw project.
+- Basiskennis van de programmeertaal C# en het .NET-framework.
 
-## Stap 1: Een nieuw document maken
+## Naamruimten importeren
 
- Voordat we beginnen met het manipuleren van tekst in invoegrevisies, moeten we een nieuw document maken met Aspose.Words voor .NET. Dit kan gedaan worden door het instantiëren van een`Document` voorwerp:
-
+Neem om te beginnen de benodigde naamruimten op in uw C#-project:
 ```csharp
-Document doc = new Document();
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using System;
+using System.Text.RegularExpressions;
 ```
 
-## Stap 2: Voeg tekst in met revisietracking
+## Stap 1: Maak een nieuw document en begin met het bijhouden van revisies
 
- Zodra we een document hebben, kunnen we tekst invoegen met revisietracering met behulp van een`DocumentBuilder`voorwerp. Om bijvoorbeeld de tekst "Ingevoegd" in te voegen met revisietracking, kunnen we de`StartTrackRevisions`, `Writeln` En`StopTrackRevisions` methoden:
-
+Initialiseer eerst een nieuw document en begin met het bijhouden van revisies:
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// Begin met het bijhouden van revisies
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted");
+builder.Writeln("Inserted"); //Voeg tekst in met trackingrevisies
 doc.StopTrackRevisions();
 ```
 
-## Stap 3: Voeg niet-beoordeelde tekst in
+## Stap 2: Voeg niet-herziene tekst in
 
- Naast tekst met revisietracking kunnen we ook niet-gereviseerde tekst invoegen met behulp van de`DocumentBuilder` voorwerp. Om bijvoorbeeld de tekst "Tekst" zonder revisie in te voegen, kunnen we de`Write` methode:
-
+Voeg vervolgens tekst in het document in zonder revisies bij te houden:
 ```csharp
 builder.Write("Text");
 ```
 
-## Stap 4: Gebruik de functie Tekst negeren in revisies invoegen
+## Stap 3: Negeer ingevoegde tekst met FindReplaceOptions
 
- Om tekst in invoegrevisies bij volgende bewerkingen te negeren, kunnen we a`FindReplaceOptions` bezwaar maken en instellen`IgnoreInserted`eigendom aan`true`:
-
+Configureer nu FindReplaceOptions om ingevoegde revisies te negeren:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-```
 
-## Stap 5: Reguliere expressies gebruiken voor zoeken en vervangen
-
-Om zoekbewerkingen en vervangingen op de documenttekst uit te voeren, zullen we reguliere expressies gebruiken. In ons voorbeeld zoeken we naar alle exemplaren van de letter "e" en vervangen we deze door een asterisk "* ". We zullen .NET's gebruiken`Regex` klasse hiervoor:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Stap 6: De gewijzigde documentuitvoer bekijken
+## Stap 4: Documenttekst uitvoeren
 
- Na het toepassen van zoeken en vervangen kunnen we de gewijzigde inhoud van het document weergeven met behulp van de`GetText` methode:
-
+Geef de documenttekst weer na het negeren van ingevoegde revisies:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## Stap 7: Opties wijzigen om invoegrevisies op te nemen
+## Stap 5: Terugkeren Negeer ingevoegde tekstoptie
 
-Als we de tekst in de invoegrevisies in het uitvoerresultaat willen opnemen, kunnen we de opties wijzigen zodat de invoegrevisies niet worden genegeerd. Hiervoor stellen we de`IgnoreInserted`eigendom aan`false`:
-
+Om het negeren van ingevoegde tekst ongedaan te maken, wijzigt u de FindReplaceOptions:
 ```csharp
 options.IgnoreInserted = false;
-```
-
-## Stap 8: Het gewijzigde document bekijken met invoegrevisies
-
-Nadat we de opties hebben gewijzigd, kunnen we het zoeken en vervangen opnieuw uitvoeren om het resultaat te krijgen met de tekst in de ingevoegde revisies:
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-
-### Voorbeeldbroncode voor het negeren van tekst in invoegrevisies met Aspose.Words voor .NET
-
-Hier is de volledige voorbeeldbroncode om het gebruik van de functie Ignore Text Inside Insert Revisions met Aspose.Words voor .NET te demonstreren:
-
-
-```csharp
-       
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Voeg tekst in met trackingrevisies.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	builder.Writeln("Inserted");
-	doc.StopTrackRevisions();
-
-	// Voeg niet-herziene tekst in.
-	builder.Write("Text");
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreInserted = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-   
 ```
 
 ## Conclusie
 
-In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de functie Negeer tekst binnen invoegrevisies kunt gebruiken in Aspose.Words voor .NET. We volgden een stapsgewijze handleiding voor het maken van een document, het invoegen van tekst met het bijhouden van revisies en niet-gereviseerde tekst, het gebruiken van de functie Tekst negeren in revisies invoegen, het uitvoeren van zoek- en vervangingsbewerkingen met reguliere expressies, en het weergeven van het gewijzigde document.
+Het beheersen van de techniek van het negeren van tekst in invoegrevisies met Aspose.Words voor .NET verbetert uw documentbewerkingsmogelijkheden. Door deze stappen te volgen, kunt u revisies in uw documenten effectief beheren, waardoor u verzekerd bent van duidelijkheid en precisie bij uw tekstverwerkingstaken.
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is de functie 'Tekst in invoegrevisies negeren' in Aspose.Words voor .NET?
+### Hoe kan ik revisies in een Word-document bijhouden met Aspose.Words voor .NET?
+ Gebruik om revisies bij te houden`doc.StartTrackRevisions(author, date)` methode.
 
-A: Met de functie "Tekst in invoegrevisies negeren" in Aspose.Words voor .NET kunt u opgeven of de tekst in invoegrevisies moet worden genegeerd tijdens bepaalde bewerkingen, zoals het zoeken en vervangen van tekst. Wanneer deze functie is ingeschakeld, wordt er tijdens bewerkingen geen rekening gehouden met de tekst in de invoegrevisies.
+### Wat is het voordeel van het negeren van ingevoegde tekst in documentrevisies?
+Door ingevoegde tekst te negeren, blijft de focus op de kerninhoud behouden en worden documentwijzigingen efficiënt beheerd.
 
-#### Vraag: Hoe kan ik een nieuw document maken met Aspose.Words voor .NET?
+### Kan ik genegeerde ingevoegde tekst terugzetten naar het origineel in Aspose.Words voor .NET?
+Ja, u kunt genegeerde ingevoegde tekst ongedaan maken met de juiste FindReplaceOptions-instellingen.
 
- A: Om een nieuw document te maken met Aspose.Words voor .NET, kunt u een`Document` voorwerp. Hier is een voorbeeld van C#-code om een nieuw document te maken:
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
+ Bezoek de[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde handleidingen en API-referenties.
 
-```csharp
-Document doc = new Document();
-```
-
-#### Vraag: Hoe kan ik tekst invoegen met revisietracking in Aspose.Words voor .NET?
-
-A: Zodra u een document heeft, kunt u tekst invoegen met revisietracering met behulp van a`DocumentBuilder` voorwerp. Als u bijvoorbeeld de tekst "Ingevoegd" wilt invoegen met revisietracking, kunt u de`StartTrackRevisions`, `Writeln` , En`StopTrackRevisions` methoden:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted");
-doc.StopTrackRevisions();
-```
-
-#### Vraag: Hoe kan ik ongewijzigde tekst invoegen in Aspose.Words voor .NET?
-
- A: Naast tekst met revisietracering kunt u ook niet-gereviseerde tekst invoegen met behulp van de`DocumentBuilder` voorwerp. Als u bijvoorbeeld de tekst "Tekst" zonder revisie wilt invoegen, kunt u de`Write` methode:
-
-```csharp
-builder.Write("Text");
-```
-
-#### Vraag: Hoe kan ik tekst negeren in invoegrevisies in Aspose.Words voor .NET?
-
- A: Om tekst in invoegrevisies te negeren tijdens volgende bewerkingen, kunt u een`FindReplaceOptions` bezwaar maken en instellen`IgnoreInserted`eigendom aan`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-```
-
-#### Vraag: Hoe kan ik zoeken en vervangen met reguliere expressies in Aspose.Words voor .NET?
-
- A: Om zoek- en vervangbewerkingen uit te voeren op de tekst van het document met behulp van reguliere expressies, kunt u .NET gebruiken`Regex` klas. Als u bijvoorbeeld wilt zoeken naar alle exemplaren van de letter 'e' en deze wilt vervangen door een asterisk '* ", kunt u een`Regex` object en gebruik het met de`Replace` methode:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### Vraag: Hoe kan ik de gewijzigde uitvoer van het document bekijken in Aspose.Words voor .NET?
-
- A: Nadat u zoek- en vervangbewerkingen hebt toegepast, kunt u de gewijzigde inhoud van het document bekijken met behulp van de`GetText` methode:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### Vraag: Hoe kan ik de invoegrevisies opnemen in het uitvoerresultaat in Aspose.Words voor .NET?
-
- A: Om de tekst binnen de invoegrevisies op te nemen in het uitvoerresultaat, kunt u de opties zo wijzigen dat de invoegrevisies niet worden genegeerd. Hiervoor kunt u de`IgnoreInserted` eigendom van de`FindReplaceOptions` bezwaar tegen`false`:
-
-```csharp
-options.IgnoreInserted = false;
-```
-
-#### Vraag: Hoe kan ik het gewijzigde document met de invoegrevisies weergeven in Aspose.Words voor .NET?
-
-A: Nadat u de opties hebt gewijzigd om invoegrevisies op te nemen, kunt u het zoeken en vervangen opnieuw uitvoeren om het resultaat te krijgen, inclusief de tekst in de invoegrevisies:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Is er een communityforum voor het bespreken van Aspose.Words voor .NET-gerelateerde vragen?
+ Ja, u kunt een bezoek brengen aan de[Aspose.Words-forum](https://forum.aspose.com/c/words/8) voor gemeenschapsondersteuning en discussies.

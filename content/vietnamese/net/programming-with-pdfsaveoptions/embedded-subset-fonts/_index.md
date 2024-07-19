@@ -44,7 +44,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
 ```
 
-Đó là tất cả ! Bạn đã nhúng thành công các tập hợp con phông chữ vào tài liệu và tạo một tệp PDF chỉ chứa các ký tự được sử dụng trong tài liệu bằng Aspose.Words cho .NET.
+Đó là tất cả ! Bạn đã nhúng thành công các tập hợp con phông chữ vào tài liệu và tạo một tệp PDF chỉ chứa các ký tự được sử dụng trong tài liệu bằng Aspose.Words dành cho .NET.
 
 ### Mã nguồn mẫu để nhúng các tập hợp con phông chữ với Aspose.Words cho .NET
 
@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOption
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã tìm hiểu cách nhúng các tập hợp phông chữ con vào tài liệu PDF bằng Aspose.Words cho .NET. Nhúng các tập hợp con phông chữ giúp giảm kích thước tệp PDF trong khi vẫn giữ được hình thức của tài liệu bằng cách chỉ sử dụng các ký tự thực sự được sử dụng. Điều này đảm bảo khả năng tương thích và hiệu suất tốt hơn khi xem và in PDF. Vui lòng khám phá thêm các tính năng của Aspose.Words for .NET để tối ưu hóa việc tạo tài liệu PDF của bạn với các tập hợp phông chữ được nhúng.
+Trong hướng dẫn này, chúng ta đã tìm hiểu cách nhúng các tập hợp phông chữ con vào tài liệu PDF bằng Aspose.Words cho .NET. Việc nhúng các tập hợp con phông chữ giúp giảm kích thước tệp PDF trong khi vẫn giữ được hình thức của tài liệu bằng cách chỉ sử dụng các ký tự thực sự được sử dụng. Điều này đảm bảo khả năng tương thích và hiệu suất tốt hơn khi xem và in PDF. Vui lòng khám phá thêm các tính năng của Aspose.Words for .NET để tối ưu hóa việc tạo tài liệu PDF của bạn với các tập hợp phông chữ được nhúng.
 
 ### Các câu hỏi thường gặp
 

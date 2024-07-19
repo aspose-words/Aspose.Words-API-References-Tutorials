@@ -2,12 +2,12 @@
 title: Uzyskaj listę dostępnych czcionek
 linktitle: Uzyskaj listę dostępnych czcionek
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: tym samouczku dowiesz się, jak uzyskać listę czcionek dostępnych w Aspose.Words dla .NET.
+description: W tym samouczku dowiesz się, jak uzyskać listę czcionek dostępnych w Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/get-list-of-available-fonts/
 ---
-W tym samouczku wyjaśnimy, jak uzyskać listę czcionek dostępnych w Aspose.Words dla .NET. Lista dostępnych czcionek informuje, jakich czcionek można używać w dokumentach. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+tym samouczku wyjaśnimy, jak uzyskać listę czcionek dostępnych w Aspose.Words dla .NET. Lista dostępnych czcionek informuje, jakich czcionek można używać w dokumentach. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
 
 ## Warunki wstępne
 Zanim zaczniesz, upewnij się, że masz następujące elementy:
@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Dodaj nowe źródło folderu, które poinstruuje Aspose.Words, aby przeszukał następujący folder w poszukiwaniu czcionek.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//Dodaj niestandardowy folder zawierający nasze czcionki do listy istniejących źródeł czcionek.
+// Dodaj niestandardowy folder zawierający nasze czcionki do listy istniejących źródeł czcionek.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -77,7 +77,7 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 ```
 
 ## Wniosek
-W tym samouczku widzieliśmy, jak uzyskać listę czcionek dostępnych w Aspose.Words dla .NET. Dzięki temu wiesz, jakich czcionek możesz używać w swoich dokumentach. Możesz skorzystać z tej funkcji, aby wybrać odpowiednie czcionki do swoich potrzeb.
+tym samouczku widzieliśmy, jak uzyskać listę czcionek dostępnych w Aspose.Words dla .NET. Dzięki temu wiesz, jakich czcionek możesz używać w swoich dokumentach. Możesz skorzystać z tej funkcji, aby wybrać odpowiednie czcionki do swoich potrzeb.
 
 ### Często zadawane pytania
 
@@ -91,4 +91,4 @@ O: Tak, możesz filtrować listę czcionek dostępnych w Aspose.Words przy użyc
 
 #### P: Jak mogę skorzystać z listy dostępnych czcionek w dokumentach programu Word?
 
-O: Aby skorzystać z listy czcionek dostępnych w dokumentach programu Word, możesz przeglądać listę i wybierać odpowiednie czcionki, korzystając z metod i właściwości`FontSettings` klasa w Aspose.Words.
+ O: Aby skorzystać z listy czcionek dostępnych w dokumentach programu Word, możesz przeglądać listę i wybierać odpowiednie czcionki, korzystając z metod i właściwości`FontSettings` klasa w Aspose.Words.

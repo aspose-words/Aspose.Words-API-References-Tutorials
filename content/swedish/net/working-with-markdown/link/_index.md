@@ -51,8 +51,8 @@ Grattis! Du har nu lärt dig hur du använder länkfunktionen med Aspose.Words f
 
 #### F: Hur kan jag anpassa visningstexten för en länk i Aspose.Words?
 
-S: För att anpassa visningstexten för en länk i Aspose.Words kan du ändra innehållet mellan`<a>` taggar. Till exempel,`<a href="https://www.aspose.com">Click here</a>` kommer att visa texten "Klicka här" som en hyperlänk.
+ S: För att anpassa visningstexten för en länk i Aspose.Words kan du ändra innehållet mellan`<a>` taggar. Till exempel,`<a href="https://www.aspose.com">Click here</a>` kommer att visa texten "Klicka här" som en hyperlänk.
 
 #### F: Kan jag ange ett mål för en länk i Aspose.Words?
 
- S: Ja, du kan ange ett mål för en länk i Aspose.Words med hjälp av`target` attribut av`<a>` märka. Till exempel,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` kommer att öppna länken i ett nytt fönster eller flik.
+S: Ja, du kan ange ett mål för en länk i Aspose.Words med hjälp av`target` attribut av`<a>` märka. Till exempel,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` kommer att öppna länken i ett nytt fönster eller flik.

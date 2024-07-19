@@ -2,109 +2,110 @@
 title: Gecodeerd Word-document ondertekenen
 linktitle: Gecodeerd Word-document ondertekenen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een gecodeerd Word-document digitaal kunt ondertekenen met Aspose.Words voor .NET.
+description: Leer hoe u gecodeerde Word-documenten kunt ondertekenen met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. Ideaal voor ontwikkelaars.
 type: docs
 weight: 10
 url: /nl/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
-In deze zelfstudie begeleiden we u bij de stappen voor het gebruik van de functie voor het ondertekenen van een gecodeerd Word-document met Aspose.Words voor .NET. Met deze functie kunt u een Word-document digitaal ondertekenen dat is gecodeerd met een decoderingswachtwoord. Volg onderstaande stappen:
+## Invoering
 
-## Stap 1: Handtekeningopties instellen
+Heeft u zich ooit afgevraagd hoe u een gecodeerd Word-document ondertekent? Vandaag doorlopen we dit proces met Aspose.Words voor .NET. Zet je schrap en bereid je voor op een gedetailleerde, boeiende en leuke tutorial!
 
-Maak een exemplaar van de klasse SignOptions en stel het decoderingswachtwoord in:
+## Vereisten
+
+Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+
+1.  Aspose.Words voor .NET: downloaden en installeren vanaf[hier](https://releases.aspose.com/words/net/).
+2. Visual Studio: Zorg ervoor dat u het hebt geïnstalleerd.
+3. Een geldig certificaat: u heeft een .pfx-certificaatbestand nodig.
+4. Basiskennis van C#: Als u de basisbeginselen begrijpt, wordt deze tutorial soepeler.
+
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten importeren. Deze zijn cruciaal voor toegang tot de functionaliteiten van Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionpassword" };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.DigitalSignatures;
 ```
 
-Zorg ervoor dat u het juiste decoderingswachtwoord voor uw gecodeerde document opgeeft.
+Laten we het proces nu opsplitsen in eenvoudige, beheersbare stappen.
 
-## Stap 2: Het certificaat laden
+## Stap 1: Uw project opzetten
 
-Begin met het laden van het handtekeningcertificaat met behulp van de klasse CertificateHolder:
+Stel eerst uw Visual Studio-project in. Open Visual Studio en maak een nieuwe C#-consoletoepassing. Noem het iets beschrijvends, zoals "SignEncryptedWordDoc".
+
+## Stap 2: Aspose.Words aan uw project toevoegen
+
+Vervolgens moeten we Aspose.Words aan uw project toevoegen. Er zijn een paar manieren om dit te doen, maar het gebruik van NuGet is de eenvoudigste. 
+
+1. Open de NuGet Package Manager-console via Extra > NuGet Package Manager > Package Manager-console.
+2. Voer de volgende opdracht uit:
+
+```powershell
+Install-Package Aspose.Words
+```
+
+## Stap 3: De documentenmap voorbereiden
+
+U hebt een map nodig waarin u uw Word-documenten en certificaten kunt opslaan. Laten we er een maken.
+
+1. Maak een map op uw computer. Laten we het voor de eenvoud "DocumentDirectory" noemen.
+2. Plaats uw Word-document (bijvoorbeeld "Document.docx") en uw .pfx-certificaat (bijvoorbeeld "morzal.pfx") in deze map.
+
+## Stap 4: Het schrijven van de code
+
+ Laten we nu in de code duiken. Open je`Program.cs` bestand en begin met het instellen van het pad naar uw documentmap en het initialiseren van het`SignOptions` met het decoderingswachtwoord.
+
+```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
+```
+
+## Stap 5: Het certificaat laden
+
+ Laad vervolgens uw certificaat met behulp van de`CertificateHolder`klas. Hiervoor zijn het pad naar uw .pfx-bestand en het wachtwoord van het certificaat vereist.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Zorg ervoor dat u het juiste pad naar uw certificaat en het bijbehorende wachtwoord opgeeft.
+## Stap 6: Het document ondertekenen
 
-## Stap 3: Het gecodeerde document ondertekenen
-
-Gebruik de klasse DigitalSignatureUtil om het gecodeerde document te ondertekenen:
+ Gebruik ten slotte de`DigitalSignatureUtil.Sign` methode om uw gecodeerde Word-document te ondertekenen. Voor deze methode zijn het invoerbestand, het uitvoerbestand, de certificaathouder en de tekenopties vereist.
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-	certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Document.docx",
+    dataDir + "DigitallySignedDocument.docx",
+    certHolder,
+    signOptions);
 ```
 
-Zorg ervoor dat u de juiste paden opgeeft voor het gecodeerde document, het ondertekende document en het certificaat.
+## Stap 7: De code uitvoeren
 
-### Voorbeeldbroncode voor het ondertekenen van gecodeerde documenten met Aspose.Words voor .NET
-
-Hier is de volledige broncode om een gecodeerd document te ondertekenen met Aspose.Words voor .NET:
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-		certHolder, signOptions);
-	
-
-```
-Door deze stappen te volgen, kunt u eenvoudig een gecodeerd Word-document ondertekenen met Aspose.Words voor .NET.
+Sla uw bestand op en voer het project uit. Als alles correct is ingesteld, zou u uw ondertekende document in de opgegeven map moeten zien.
 
 ## Conclusie
 
-In deze zelfstudie hebben we het proces van het ondertekenen van een gecodeerd Word-document onderzocht met Aspose.Words voor .NET. Door het decoderingswachtwoord en het ondertekeningscertificaat op te geven, kunnen we een digitale handtekening aan een gecodeerd document toevoegen. Het ondertekenen van gecodeerde documenten waarborgt de authenticiteit en integriteit ervan en biedt een extra beveiligingslaag. Met Aspose.Words voor .NET kunt u gecodeerde documenten ondertekenen en de veiligheid en betrouwbaarheid van uw Word-bestanden behouden.
+En daar heb je het! U hebt met succes een gecodeerd Word-document ondertekend met Aspose.Words voor .NET. Met deze krachtige bibliotheek wordt digitaal ondertekenen een fluitje van een cent, zelfs voor gecodeerde bestanden. Veel codeerplezier!
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is documentondertekening in Aspose.Words voor .NET?
+### Kan ik een ander type certificaat gebruiken?
+Ja, Aspose.Words ondersteunt verschillende certificaattypen, zolang deze het juiste formaat hebben.
 
-A: Documentondertekening in Aspose.Words voor .NET verwijst naar het proces van het digitaal ondertekenen van een Word-document om de authenticiteit, integriteit en onweerlegbaarheid ervan te garanderen. Het gaat om het toevoegen van een digitale handtekening aan het document met behulp van een certificaat.
+### Is het mogelijk om meerdere documenten tegelijk te ondertekenen?
+Absoluut! U kunt een verzameling documenten doorlopen en elk document programmatisch ondertekenen.
 
-#### Vraag: Wat is een gecodeerd Word-document?
+### Wat moet ik doen als ik het decoderingswachtwoord vergeet?
+Helaas kunt u zonder het decoderingswachtwoord het document niet ondertekenen.
 
-A: Een gecodeerd Word-document is een document dat is gecodeerd met een wachtwoord. Versleuteling is een beveiligingsmaatregel die de inhoud van het document beschermt door het te versleutelen en onleesbaar te maken zonder het juiste decoderingswachtwoord.
+### Kan ik een zichtbare handtekening aan het document toevoegen?
+Ja, met Aspose.Words kunt u ook zichtbare digitale handtekeningen toevoegen.
 
-#### Vraag: Hoe kan ik een gecodeerd Word-document ondertekenen met Aspose.Words voor .NET?
-
-A: Om een gecodeerd Word-document te ondertekenen met Aspose.Words voor .NET, moet u het decoderingswachtwoord samen met het ondertekeningscertificaat opgeven. Volg deze stappen:
-1.  Stel het decoderingswachtwoord in in het`SignOptions` voorwerp.
-2.  Laad het ondertekeningscertificaat met behulp van de`CertificateHolder` klas.
-3.  Gebruik de`DigitalSignatureUtil.Sign` methode om het gecodeerde document te ondertekenen, waarbij de noodzakelijke parameters worden opgegeven.
-
-#### Vraag: Wat is het doel van het ondertekenen van een gecodeerd document?
-
-A: Door een gecodeerd document te ondertekenen met Aspose.Words voor .NET kunt u een digitale handtekening aan het document toevoegen, zelfs als het gecodeerd is. Dit biedt een extra beveiligingslaag en garandeert de authenticiteit en integriteit van de gecodeerde inhoud. Hiermee kunnen ontvangers de herkomst van het document verifiëren en eventuele manipulatie detecteren.
-
-#### Vraag: Kan ik een gecodeerd document ondertekenen zonder het decoderingswachtwoord op te geven?
-
-A: Nee, om een gecodeerd document te ondertekenen, moet u het juiste decoderingswachtwoord opgeven. Het decoderingswachtwoord is vereist om toegang te krijgen tot de gecodeerde inhoud van het document en deze te wijzigen voordat de digitale handtekening wordt toegepast.
-
-#### Vraag: Kan ik een gecodeerd Word-document ondertekenen met elk certificaat?
-
-A: Om een gecodeerd Word-document te ondertekenen met Aspose.Words voor .NET, hebt u een geldig X.509-certificaat nodig. Het certificaat kan worden verkregen bij een vertrouwde certificeringsinstantie (CA) of een zelfondertekend certificaat kan worden gebruikt voor testdoeleinden.
-
-#### Vraag: Kan ik meerdere gecodeerde Word-documenten ondertekenen met hetzelfde certificaat?
-
- A: Ja, u kunt meerdere gecodeerde Word-documenten ondertekenen met hetzelfde certificaat. Nadat u het certificaat hebt geladen met behulp van de`CertificateHolder` class, kunt u deze opnieuw gebruiken om meerdere gecodeerde documenten te ondertekenen.
-
-#### Vraag: Kan ik de digitale handtekening van een ondertekend, gecodeerd document verifiëren?
-
- A: Ja, Aspose.Words voor .NET biedt functionaliteit om de digitale handtekening van een ondertekend gecodeerd document te verifiëren. U kunt gebruik maken van de`DigitalSignatureUtil.Verify` methode om de geldigheid en authenticiteit van de digitale handtekening te controleren.
-
-#### Vraag: Welk bestandsformaat ondersteunt Aspose.Words voor .NET voor het ondertekenen van gecodeerde documenten?
-
- A: Aspose.Words voor .NET ondersteunt het ondertekenen van gecodeerde Word-documenten in het DOCX-bestandsformaat. U kunt gecodeerde DOCX-bestanden ondertekenen met behulp van de`DigitalSignatureUtil.Sign` methode samen met het benodigde decoderingswachtwoord en certificaat.
-
-#### Vraag: Welke invloed heeft het ondertekenen van een gecodeerd document op de codering?
-
-A: Het ondertekenen van een gecodeerd document met Aspose.Words voor .NET heeft geen invloed op de codering van het document. De codering blijft intact en de digitale handtekening wordt aan de gecodeerde inhoud toegevoegd. De digitale handtekening biedt extra beveiliging en verificatie zonder de op het document toegepaste codering in gevaar te brengen.
+### Is er een manier om de handtekening te verifiëren?
+ Ja, u kunt gebruik maken van de`DigitalSignatureUtil.Verify` methode om handtekeningen te verifiëren.

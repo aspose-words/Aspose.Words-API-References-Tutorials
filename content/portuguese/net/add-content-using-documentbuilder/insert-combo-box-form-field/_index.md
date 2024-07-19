@@ -17,7 +17,7 @@ Antes de entrarmos nos detalhes essenciais, vamos ter certeza de que você tem t
 
 1.  Aspose.Words for .NET: Em primeiro lugar, você precisa da biblioteca Aspose.Words for .NET. Se você ainda não baixou, você pode baixá-lo no[Página de downloads do Aspose](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: certifique-se de ter um ambiente de desenvolvimento configurado com Visual Studio ou qualquer outro IDE que suporte .NET.
-3. Compreensão básica de C#: Embora este tutorial seja adequado para iniciantes, ter uma compreensão básica de C# tornará as coisas mais fáceis.
+3. Compreensão básica de C#: embora este tutorial seja adequado para iniciantes, ter uma compreensão básica de C# tornará as coisas mais fáceis.
 4.  Licença temporária (opcional): se quiser explorar todos os recursos sem limitações, você pode querer obter uma[licença temporária](https://purchase.aspose.com/temporary-license/).
 
 Com esses pré-requisitos atendidos, você está pronto para embarcar nesta emocionante jornada!

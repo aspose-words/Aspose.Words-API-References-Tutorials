@@ -32,8 +32,8 @@ Genom att följa dessa tutorials kommer du att fullt ut kunna utnyttja tabellman
 | [Horisontell sammanfogning](./horizontal-merge/) | Lär dig hur du sammanfogar celler horisontellt i en Word-tabell med Aspose.Words för .NET. |
 | [Konvertera till horisontellt sammanslagna celler](./convert-to-horizontally-merged-cells/) | Lär dig hur du konverterar tabellceller till horisontellt sammanslagna celler i ett Word-dokument med Aspose.Words för .NET. |
 | [Upprepa rader på efterföljande sidor](./repeat-rows-on-subsequent-pages/) | Lär dig hur du upprepar tabellrader på efterföljande sidor i ett Word-dokument med Aspose.Words för .NET. |
-| [Autopassa till sidbredd](./auto-fit-to-page-width/) | Lär dig hur du automatiskt anpassar en tabell till sidbredd i ett Word-dokument med Aspose.Words för .NET. |
-| [Önskad breddinställningar](./preferred-width-settings/) | Lär dig hur du ställer in föredragna tabellcellbredder i ett Word-dokument med Aspose.Words för .NET. |
+| [Autopassa till fönster](./auto-fit-to-page-width/) | Anpassa enkelt tabeller automatiskt till fönstret i Word-dokument med Aspose.Words för .NET med denna steg-för-steg-guide. Perfekt för renare, professionella dokument. |
+| [Önskad breddinställningar](./preferred-width-settings/) | Lär dig hur du skapar tabeller med absoluta, relativa och automatiska breddinställningar i Aspose.Words för .NET med denna steg-för-steg-guide. |
 | [Hämta önskad breddtyp](./retrieve-preferred-width-type/) | Lär dig hur du hämtar typen och önskat breddvärde för en cell i en Word-tabell med Aspose.Words för .NET. |
 | [Få bordsposition](./get-table-position/) | Lär dig hur du får positionen för en tabell i ett Word-dokument med Aspose.Words för .NET. |
 | [Få flytande bordsposition](./get-floating-table-position/) | Lär dig hur du får positionen för flytande tabeller i ett Word-dokument med Aspose.Words för .NET. |

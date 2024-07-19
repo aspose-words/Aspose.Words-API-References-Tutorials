@@ -107,7 +107,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 
 #### Q：「Word 文件中的範圍刪除文字」功能是否會永久刪除文件中的文字？
 
-答：是的，Aspose.Words for .NET 中的「範圍刪除 Word 文件中的文字」功能會永久刪除文件中指定範圍的文字。文字內容已刪除，文件也相應更新。
+答：是的，Aspose.Words for .NET 中的「範圍刪除 Word 文件中的文字」功能會永久刪除文件中指定範圍中的文字。文字內容已刪除，文件也相應更新。
 
 #### Q：在 Aspose.Words for .NET 中使用「範圍刪除 Word 文件中的文字」功能時是否有任何限製或註意事項？
 

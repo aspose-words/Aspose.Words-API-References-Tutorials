@@ -83,7 +83,7 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 
 ## 結論
 
-現在你就擁有了！只需幾行程式碼，您就掌握了使用 Aspose.Words for .NET 控制 Word 文件中的亞洲版式換行符的技巧。這個強大的工具可讓您進行精確的調整，確保您的文件看起來專業且精美。無論您正在準備報告、簡報或任何包含亞洲文字的文檔，這些步驟都將幫助您保持完美的格式。 
+現在你就得到它了！只需幾行程式碼，您就掌握了使用 Aspose.Words for .NET 控制 Word 文件中的亞洲版式換行符的技巧。這個強大的工具可讓您進行精確的調整，確保您的文件看起來專業且精美。無論您正在準備報告、簡報或任何包含亞洲文字的文檔，這些步驟都將幫助您保持完美的格式。 
 
 ## 常見問題解答
 
@@ -96,7 +96,7 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 ### 我可以將這些設定應用於多個段落嗎？
 是的，您可以循環瀏覽文件中的所有段落並根據需要套用這些設定。
 
-### 我需要使用 Visual Studio 嗎？
+### 我需要使用 Visual Studio 來實現此目的嗎？
 雖然建議使用 Visual Studio，但您可以使用任何支援 C# 和 .NET 的開發環境。
 
 ### 在哪裡可以找到更多有關 Aspose.Words for .NET 的資源？

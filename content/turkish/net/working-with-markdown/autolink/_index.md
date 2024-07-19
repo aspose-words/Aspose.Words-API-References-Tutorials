@@ -45,7 +45,7 @@ Son olarak belgeyi istediğimiz formatta kaydedebiliriz.
 // Belgeye içerik eklemek için belge oluşturucuyu kullanın.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Köprü ekle.
+//Köprü ekle.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

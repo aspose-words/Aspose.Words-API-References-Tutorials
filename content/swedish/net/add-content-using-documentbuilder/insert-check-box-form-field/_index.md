@@ -50,11 +50,11 @@ Nu när vi har vår kataloguppsättning är det dags att skapa ett nytt dokument
 Document doc = new Document();
 ```
 
- Den här raden initierar en ny instans av`Document` klass, vilket ger oss ett tomt dokument att arbeta med.
+ Denna rad initierar en ny instans av`Document` klass, vilket ger oss ett tomt dokument att arbeta med.
 
 ## Steg 3: Initiera Document Builder
 
- De`DocumentBuilder` klass är ditt favoritverktyg för att lägga till innehåll i dokumentet. Se det som din borste och palett.
+ De`DocumentBuilder` klass är ditt favoritverktyg för att lägga till innehåll i dokumentet. Se det som din pensel och palett.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -73,7 +73,7 @@ builder.InsertCheckBox("CheckBox", true, true, 0);
 Låt oss bryta ner det här:
 - `"CheckBox"`: Detta är namnet på kryssrutans formulärfält.
 - `true`: Detta anger att kryssrutan är markerad som standard.
-- `true`: Denna parameter ställer in om kryssrutan ska markeras som en boolean.
+- `true`: Den här parametern ställer in om kryssrutan ska markeras som en boolean.
 - `0` : Denna parameter anger storleken på kryssrutan.`0` betyder standardstorlek.
 
 ## Steg 5: Spara dokumentet

@@ -21,7 +21,7 @@ url: /ja/python-net/document-structure-and-content-manipulation/document-fonts/
 
 ### フォントファミリー
 
-フォント ファミリは、テキストの全体的な外観を定義します。一般的なフォント ファミリには、Arial、Times New Roman、Calibri などがあります。ドキュメントの目的とトーンに合ったフォントを選択してください。
+フォント ファミリは、テキストの全体的な外観を定義します。一般的なフォント ファミリには、Arial、Times New Roman、Calibri などがあります。ドキュメントの目的とトーンに合ったフォントを選択します。
 
 ### フォントサイズ
 

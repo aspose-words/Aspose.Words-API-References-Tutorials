@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- Bu adımda imajlar için yedekleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`ImageSaveOptions` İstenilen kaydetme biçimini belirten nesne, burada JPEG biçimi için "Jpeg" bulunur. Ayrıca, dönüştürülecek sayfa aralığını da kullanarak ayarlıyoruz.`PageSet`nesne. Son olarak görüntünün parlaklığını ve kontrastını kullanarak ayarlıyoruz.`ImageBrightness` Ve`ImageContrast` sırasıyla özellikler. Ayrıca yatay çözünürlüğü de değiştiriyoruz.`HorizontalResolution` mülk.
+ Bu adımda imajlar için yedekleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`ImageSaveOptions` İstenilen kaydetme biçimini belirten nesne, burada JPEG biçimi için "Jpeg" bulunur. Ayrıca, dönüştürülecek sayfa aralığını da kullanarak ayarlıyoruz.`PageSet`nesne. Son olarak görüntünün parlaklığını ve kontrastını kullanarak ayarlıyoruz.`ImageBrightness`Ve`ImageContrast` sırasıyla özellikler. Ayrıca yatay çözünürlüğü de değiştiriyoruz.`HorizontalResolution` mülk.
 
 ## 4. Adım: Görüntüleri yedekleme
 

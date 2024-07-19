@@ -2,75 +2,111 @@
 title: Tính năng loại mở
 linktitle: Tính năng loại mở
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách bật và sử dụng các tính năng Loại mở trong Aspose.Words cho .NET
+description: Tìm hiểu cách bật tính năng OpenType trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này.
 type: docs
 weight: 10
 url: /vi/net/enable-opentype-features/open-type-features/
 ---
+## Giới thiệu
 
-Trong hướng dẫn toàn diện này, bạn sẽ tìm hiểu cách bật và sử dụng các tính năng Open Type trong Aspose.Words for .NET. Chúng tôi sẽ hướng dẫn bạn thực hiện quy trình và cung cấp cho bạn các đoạn mã C# cần thiết. Đến cuối hướng dẫn này, bạn sẽ có thể làm việc với các tính năng Loại mở trong tài liệu Word của mình.
+Bạn đã sẵn sàng đi sâu vào thế giới các tính năng OpenType bằng Aspose.Words cho .NET chưa? Hãy sẵn sàng vì chúng ta sắp bắt đầu một hành trình hấp dẫn không chỉ nâng cao tài liệu Word của bạn mà còn giúp bạn trở thành chuyên gia Aspose.Words. Bắt đầu nào!
 
 ## Điều kiện tiên quyết
-Trước khi chúng tôi bắt đầu, hãy đảm bảo rằng bạn có các điều kiện tiên quyết sau:
-- Thư viện Aspose.Words for .NET được cài đặt trên hệ thống của bạn.
 
-## Bước 1: Tải tài liệu
-Để bắt đầu, hãy tải tài liệu bằng lớp Document:
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
+
+1.  Aspose.Words for .NET: Bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+2. .NET Framework: Đảm bảo bạn đã cài đặt phiên bản .NET Framework tương thích.
+3. Visual Studio: Môi trường phát triển tích hợp (IDE) để mã hóa.
+4. Kiến thức cơ bản về C#: Hướng dẫn này giả sử bạn có hiểu biết cơ bản về lập trình C#.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các không gian tên cần thiết để truy cập các chức năng do Aspose.Words cung cấp cho .NET. Đây là cách bạn có thể làm điều đó:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Shaping.HarfBuzz;
+```
+
+Bây giờ, hãy chia ví dụ thành nhiều bước theo định dạng hướng dẫn từng bước.
+
+## Bước 1: Thiết lập dự án của bạn
+
+### Tạo một dự án mới
+
+Mở Visual Studio và tạo một dự án C# mới. Đặt tên nó có ý nghĩa như "OpenTypeFeaturesDemo". Đây sẽ là sân chơi để chúng tôi thử nghiệm các tính năng của OpenType.
+
+### Thêm tài liệu tham khảo Aspose.Words
+
+Để sử dụng Aspose.Words, bạn cần thêm nó vào dự án của mình. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet:
+
+1. Nhấp chuột phải vào dự án của bạn trong Solution Explorer.
+2. Chọn "Quản lý gói NuGet".
+3. Tìm kiếm "Aspose.Words" và cài đặt nó.
+
+## Bước 2: Tải tài liệu của bạn
+
+### Chỉ định thư mục tài liệu
+
+Tạo một biến chuỗi để giữ đường dẫn đến thư mục tài liệu của bạn. Đây là nơi tài liệu Word của bạn được lưu trữ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế nơi tài liệu của bạn được đặt.
+
+### Đang tải tài liệu
+
+Bây giờ, hãy tải tài liệu của bạn bằng Aspose.Words:
+
+```csharp
 Document doc = new Document(dataDir + "OpenType text shaping.docx");
 ```
 
-## Bước 2: Kích hoạt tính năng loại mở
-Để bật các tính năng của Loại mở, hãy đặt thuộc tính TextShaperFactory của lớp LayoutOptions thành một phiên bản của nhà máy tạo hình văn bản mong muốn. Trong ví dụ này, chúng tôi sử dụng HarfBuzzTextShaperFactory:
+Dòng mã này mở tài liệu được chỉ định để chúng ta có thể thao tác với nó.
+
+## Bước 3: Kích hoạt tính năng OpenType
+
+ HarfBuzz là một công cụ định hình văn bản nguồn mở hoạt động trơn tru với Aspose.Words. Để kích hoạt tính năng OpenType, chúng ta cần thiết lập`TextShaperFactory` tài sản của`LayoutOptions` sự vật.
 
 ```csharp
-doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
+doc.LayoutOptions.TextShaperFactory = HarfBuzzTextShaperFactory.Instance;
 ```
 
-## Bước 3: Lưu tài liệu
-Sau khi bật tính năng Loại mở, hãy lưu tài liệu ở định dạng đầu ra mong muốn, chẳng hạn như PDF:
+Đoạn mã này đảm bảo rằng tài liệu của bạn sử dụng HarfBuzz để định hình văn bản, kích hoạt các tính năng OpenType nâng cao.
+
+## Bước 4: Lưu tài liệu của bạn
+
+Cuối cùng, hãy lưu tài liệu đã sửa đổi của bạn dưới dạng PDF để xem kết quả công việc của bạn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 ```
 
-### Mã nguồn ví dụ cho các tính năng loại mở bằng Aspose.Words cho .NET
-Đây là mã nguồn hoàn chỉnh để sử dụng các tính năng Open Type trong Aspose.Words for .NET:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "OpenType text shaping.docx");
-
-doc.LayoutOptions.TextShaperFactory = Aspose.Words.Shaping.HarfBuzz.HarfBuzzTextShaperFactory.Instance;
-
-doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
-```
+Dòng mã này lưu tài liệu ở định dạng PDF, kết hợp các tính năng OpenType được HarfBuzz kích hoạt.
 
 ## Phần kết luận
-Chúc mừng! Bạn đã học thành công cách bật và sử dụng các tính năng Open Type trong Aspose.Words for .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, giờ đây bạn có thể làm việc với các tính năng Loại mở trong tài liệu Word của mình.
 
-Các tính năng của Open Type cung cấp khả năng tạo kiểu chữ và định hình văn bản nâng cao, cho phép bạn tạo các tài liệu trông hấp dẫn và chuyên nghiệp về mặt trực quan. Thử nghiệm với các nhà máy tạo hình văn bản khác nhau và khám phá khả năng của các tính năng Kiểu mở trong dự án của bạn.
+Và bạn có nó rồi đấy! Bạn đã kích hoạt thành công các tính năng OpenType trong tài liệu Word của mình bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể mở khóa các khả năng đánh máy nâng cao, đảm bảo tài liệu của bạn trông chuyên nghiệp và bóng bẩy.
 
-### Câu hỏi thường gặp
+Nhưng đừng dừng lại ở đây! Khám phá thêm các tính năng của Aspose.Words và xem cách bạn có thể nâng cao hơn nữa tài liệu của mình. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy tiếp tục thử nghiệm và học hỏi.
 
-#### Câu hỏi: Làm cách nào để bật tính năng OpenType trong Aspose.Words cho .NET?
+## Câu hỏi thường gặp
 
-Trả lời: Để bật các tính năng OpenType trong Aspose.Words cho .NET, bạn cần làm theo các bước được đề cập trong hướng dẫn.
+### Tính năng OpenType là gì?
+Các tính năng của OpenType bao gồm các khả năng đánh máy nâng cao như chữ ghép, kerning và bộ phong cách giúp cải thiện hình thức của văn bản trong tài liệu.
 
-#### Câu hỏi: Những tính năng OpenType nào được hỗ trợ trong Aspose.Words cho .NET?
+### Tại sao nên sử dụng HarfBuzz với Aspose.Words?
+HarfBuzz là một công cụ định hình văn bản nguồn mở cung cấp sự hỗ trợ mạnh mẽ cho các tính năng OpenType, nâng cao chất lượng kiểu chữ cho tài liệu của bạn.
 
-Đáp: Aspose.Words for .NET hỗ trợ một số tính năng OpenType, chẳng hạn như chữ ghép, biến thể hình tượng, thay thế theo ngữ cảnh, v.v.
+### Tôi có thể sử dụng các công cụ định hình văn bản khác với Aspose.Words không?
+Có, Aspose.Words hỗ trợ các công cụ định hình văn bản khác nhau. Tuy nhiên, HarfBuzz rất được khuyến khích do hỗ trợ tính năng OpenType toàn diện.
 
-#### Câu hỏi: Làm cách nào để kiểm tra xem tính năng OpenType có được hỗ trợ ở một phông chữ cụ thể không?
+### Aspose.Words có tương thích với tất cả các phiên bản .NET không?
+ Aspose.Words hỗ trợ nhiều phiên bản .NET khác nhau, bao gồm .NET Framework, .NET Core và .NET Standard. Kiểm tra[tài liệu](https://reference.aspose.com/words/net/) để biết thông tin chi tiết về khả năng tương thích.
 
-Đáp: Bạn có thể kiểm tra xem tính năng OpenType có được hỗ trợ ở một phông chữ cụ thể hay không bằng cách sử dụng`Font.OpenTypeFeatures` phương thức trong Aspose.Words cho .NET.
-
-#### Câu hỏi: Aspose.Words for .NET hỗ trợ những tính năng định dạng văn bản nào khác?
-
-Trả lời: Ngoài các tính năng OpenType, Aspose.Words for .NET còn hỗ trợ các tính năng định dạng văn bản khác như định dạng đoạn văn, tạo bảng, thêm hình ảnh, v.v.
-
-#### Câu hỏi: Tôi có thể sử dụng các tính năng OpenType trong tất cả các phiên bản Aspose.Words cho .NET không?
-
-Trả lời: Các tính năng OpenType được hỗ trợ trong các phiên bản mới hơn của Aspose.Words cho .NET. Đảm bảo bạn đang sử dụng phiên bản tương thích để hưởng lợi từ các tính năng này.
+### Làm cách nào tôi có thể dùng thử Aspose.Words trước khi mua?
+ Bạn có thể tải xuống bản dùng thử miễn phí từ[trang web giả định](https://releases.aspose.com/) và yêu cầu giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).

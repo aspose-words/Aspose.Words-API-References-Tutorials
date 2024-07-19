@@ -62,7 +62,7 @@ for para in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
     para.paragraph_format.style_name = "TOC Entries"
 ```
 
-## Köprü Ekleme
+## Köprüler Ekleme
 
 İçindekiler tablosunu etkileşimli hale getirmek için okuyucuların doğrudan belgedeki ilgili bölümlere atlamalarına olanak tanıyan köprüler ekleyin.
 

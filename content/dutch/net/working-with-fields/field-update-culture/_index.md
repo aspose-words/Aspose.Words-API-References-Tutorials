@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 3: Het tijdveld invoegen
 
- Wij gebruiken de`InsertField()` methode om een tijdveld in het document in te voegen.
+ Wij gebruiken de`InsertField()`methode om een tijdveld in het document in te voegen.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

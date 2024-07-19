@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Pada langkah ini, kami menerapkan format default nomor daftar menggunakan`ApplyNumberDefault()` metode pemformat daftar. Selanjutnya, kami menambahkan tiga item ke daftar kami menggunakan pembuat dokumen`Writeln()` Dan`Write()` metode. Kami menggunakan`ListIndent()` metode untuk menambah lekukan di setiap level.
+Pada langkah ini, kami menerapkan format default nomor daftar menggunakan`ApplyNumberDefault()` metode pemformat daftar. Selanjutnya, kami menambahkan tiga item ke daftar kami menggunakan pembuat dokumen`Writeln()`Dan`Write()` metode. Kami menggunakan`ListIndent()` metode untuk menambah lekukan di setiap level.
 
 ## Langkah 4: Konfigurasikan opsi perekaman
 
@@ -100,7 +100,7 @@ Siapkan lingkungan pengembangan Anda dengan menambahkan referensi yang diperluka
 
  Buat yang baru`Document` objek dan yang terkait`DocumentBuilder` obyek.
 
- Menggunakan`DocumentBuilder` untuk membuat daftar dengan beberapa tingkat lekukan menggunakan metode`ApplyNumberDefault()` untuk menerapkan format nomor daftar default,`Writeln()` Dan`Write()` untuk menambahkan item ke daftar, dan`ListIndent()`untuk menambah lekukan di setiap level.
+ Menggunakan`DocumentBuilder` untuk membuat daftar dengan beberapa tingkat lekukan menggunakan metode`ApplyNumberDefault()` untuk menerapkan format nomor daftar default,`Writeln()`Dan`Write()` untuk menambahkan item ke daftar, dan`ListIndent()`untuk menambah lekukan di setiap level.
 
  Konfigurasikan opsi penyimpanan dengan membuat`TxtSaveOptions` objek dan mengatur propertinya`ListIndentation.Count` dengan jumlah karakter tab per level dan`ListIndentation.Character` ke`'\t'` untuk menggunakan karakter tab.
 

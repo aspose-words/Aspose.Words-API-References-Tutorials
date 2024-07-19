@@ -121,7 +121,7 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### 问：如何在 Aspose.Words 中指定列表级别？
 
-答：要在 Aspose.Words 中指定列表级别，您需要创建一个实例`List`类并为其指定一个编号列表。然后您可以使用`Paragraph.ListFormat.ListLevelNumber`属性来指定每个列表项的级别。您可以将此列表与文档的某个部分关联起来，以便列表项具有所需的级别。
+答：要在 Aspose.Words 中指定列表级别，您需要创建一个实例`List`类并为其添加编号列表。然后您可以使用`Paragraph.ListFormat.ListLevelNumber`属性来指定每个列表项的级别。您可以将此列表与文档的某个部分关联起来，以便列表项具有所需的级别。
 
 #### 问：是否可以更改 Aspose.Words 中列表项的编号格式？
 

@@ -14,7 +14,7 @@ W tym samouczku przeprowadzimy Cię przez proces dzielenia dokumentu programu Wo
 Aby rozpocząć, określ katalog dla swojego dokumentu i załaduj dokument do obiektu Document. Oto jak:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
+//Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

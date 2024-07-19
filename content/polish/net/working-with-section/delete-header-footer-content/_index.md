@@ -62,7 +62,7 @@ tym samouczku widzieliśmy, jak usunąć zawartość nagłówka i stopki z dokum
 
 #### P: Jak ustawić katalog dokumentów w Aspose.Words dla .NET?
 
- O: Aby ustawić ścieżkę do katalogu zawierającego Twoje dokumenty, musisz ją zastąpić`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką. Oto jak to zrobić:
+O: Aby ustawić ścieżkę do katalogu zawierającego Twoje dokumenty, musisz ją zastąpić`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką. Oto jak to zrobić:
 
 ```csharp
 // Ścieżka do katalogu dokumentów

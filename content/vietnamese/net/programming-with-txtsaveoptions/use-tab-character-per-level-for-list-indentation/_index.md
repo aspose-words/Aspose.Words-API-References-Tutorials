@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-Trong bước này, chúng ta áp dụng định dạng mặc định của số danh sách bằng cách sử dụng`ApplyNumberDefault()` phương pháp định dạng danh sách. Tiếp theo, chúng tôi thêm ba mục vào danh sách của mình bằng cách sử dụng trình tạo tài liệu`Writeln()` Và`Write()` phương pháp. Chúng tôi sử dụng`ListIndent()` phương pháp để tăng thụt lề ở mỗi cấp độ.
+Trong bước này, chúng ta áp dụng định dạng mặc định của số danh sách bằng cách sử dụng`ApplyNumberDefault()` phương pháp định dạng danh sách. Tiếp theo, chúng tôi thêm ba mục vào danh sách của mình bằng cách sử dụng trình tạo tài liệu`Writeln()`Và`Write()` phương pháp. Chúng tôi sử dụng`ListIndent()` phương pháp để tăng thụt lề ở mỗi cấp độ.
 
 ## Bước 4: Định cấu hình tùy chọn ghi
 
@@ -100,7 +100,7 @@ Thiết lập môi trường phát triển của bạn bằng cách thêm các t
 
  Tạo một cái mới`Document` đối tượng và một liên kết`DocumentBuilder` sự vật.
 
- Sử dụng`DocumentBuilder` để tạo một danh sách có nhiều cấp độ thụt lề bằng các phương thức`ApplyNumberDefault()` để áp dụng định dạng số danh sách mặc định,`Writeln()` Và`Write()` để thêm các mục vào danh sách và`ListIndent()`để tăng thụt lề ở mỗi cấp độ.
+ Sử dụng`DocumentBuilder` để tạo một danh sách có nhiều cấp độ thụt lề bằng các phương thức`ApplyNumberDefault()` để áp dụng định dạng số danh sách mặc định,`Writeln()`Và`Write()` để thêm các mục vào danh sách và`ListIndent()`để tăng thụt lề ở mỗi cấp độ.
 
  Định cấu hình các tùy chọn lưu bằng cách tạo một`TxtSaveOptions` đối tượng và thiết lập thuộc tính`ListIndentation.Count` đến số lượng ký tự tab cho mỗi cấp độ và`ListIndentation.Character` ĐẾN`'\t'` để sử dụng các ký tự tab.
 

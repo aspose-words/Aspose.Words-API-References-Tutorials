@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Étape 3 : Insérer le champ horaire
 
- Nous utilisons le`InsertField()` méthode pour insérer un champ temporel dans le document.
+ Nous utilisons le`InsertField()`méthode pour insérer un champ temporel dans le document.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

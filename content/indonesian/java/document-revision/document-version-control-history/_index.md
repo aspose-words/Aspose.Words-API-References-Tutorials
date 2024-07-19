@@ -10,7 +10,7 @@ url: /id/java/document-revision/document-version-control-history/
 
 ## Perkenalan
 
-Kontrol versi dokumen yang efektif memastikan bahwa semua pemangku kepentingan bekerja dengan informasi terbaru dan paling akurat. Aspose.Words for Java adalah perpustakaan serbaguna yang memberdayakan pengembang untuk membuat, mengedit, dan mengelola dokumen dengan mudah. Mari selami proses langkah demi langkah penerapan kontrol versi dan riwayat dokumen.
+Kontrol versi dokumen yang efektif memastikan bahwa semua pemangku kepentingan bekerja dengan informasi terbaru dan paling akurat. Aspose.Words untuk Java adalah perpustakaan serbaguna yang memberdayakan pengembang untuk membuat, mengedit, dan mengelola dokumen dengan mudah. Mari selami proses langkah demi langkah penerapan kontrol versi dan riwayat dokumen.
 
 ## Prasyarat
 

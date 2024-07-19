@@ -17,14 +17,14 @@ Para seguir este tutorial, você precisa ter o seguinte:
 - Conhecimento básico de C# e processamento de palavras com documentos Word.
 
 ## Etapa 1: configurar o diretório de documentos
- Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório onde você deseja salvar o documento.
+ Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real para o diretório onde você deseja salvar o documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Etapa 2: Crie um novo documento e DocumentBuilder
- Crie uma nova instância do`Document` aula e um`DocumentBuilder`objeto para trabalhar com o documento.
+ Crie uma nova instância do`Document` aula e um`DocumentBuilder` objeto para trabalhar com o documento.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Etapa 3: inserir um formato de imagem
- Use o`InsertImage` método do`DocumentBuilder` objeto para inserir uma forma de imagem no documento. Forneça o caminho para o arquivo de imagem como parâmetro.
+ Use o`InsertImage` método do`DocumentBuilder`objeto para inserir uma forma de imagem no documento. Forneça o caminho para o arquivo de imagem como parâmetro.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  Colocou o`AspectRatioLocked` propriedade da forma para`true` ou`false` para bloquear ou desbloquear a proporção, respectivamente.
 
 ```csharp
-shape.AspectRatioLocked = false; //Desbloqueie a proporção
+shape.AspectRatioLocked = false; // Desbloqueie a proporção
 ```
 
 ## Etapa 5: salve o documento

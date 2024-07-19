@@ -94,7 +94,7 @@ Ja, Aspose.Words voor Java ondersteunt een breed scala aan documentformaten, waa
 
 ### Hoe kan ik extra afdrukopties instellen, zoals paginarichting en papierformaat?
 
- U kunt extra afdrukopties instellen, zoals paginarichting en papierformaat, door het te configureren`PrintOptions` object voordat u het document afdrukt. Gebruik methoden zoals`setOrientation` En`setPaperSize` om de afdrukinstellingen aan te passen.
+ U kunt extra afdrukopties instellen, zoals paginarichting en papierformaat, door het te configureren`PrintOptions` object voordat u het document afdrukt. Gebruik methoden zoals`setOrientation`En`setPaperSize` om de afdrukinstellingen aan te passen.
 
 ### Is er een proefversie van Aspose.Words voor Java beschikbaar?
 

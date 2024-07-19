@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.htm
 
 ## 結論
 
-在本指南中，我們解釋瞭如何使用目標電腦的字體以及適用於 .NET 的 Aspose.Words 程式庫將 Word 文件轉換為固定 HTML。透過遵循提供的步驟並使用提供的 C# 原始程式碼，您可以輕鬆地在 C# 應用程式中應用此功能。使用目標電腦的字體轉換為固定 HTML 可以確保以 HTML 格式忠實且一致地呈現文件。
+在本指南中，我們解釋瞭如何使用目標電腦的字體以及適用於 .NET 的 Aspose.Words 程式庫將 Word 文件轉換為固定 HTML。透過遵循提供的步驟並使用提供的 C# 原始程式碼，您可以輕鬆地在 C# 應用程式中應用此功能。使用目標機器的字體轉換為固定 HTML 可確保以 HTML 格式忠實且一致地呈現文件。

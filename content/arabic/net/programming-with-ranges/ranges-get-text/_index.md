@@ -75,7 +75,7 @@ Console.WriteLine(text);
 
 #### س: كيف يمكنني تحميل مستند Word باستخدام Aspose.Words لـ .NET؟
 
-ج: لتحميل مستند Word باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Document` الطبقة ومنشئها. تحتاج إلى توفير مسار الملف أو دفق المستند كمعلمة. هنا مثال:
+ ج: لتحميل مستند Word باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Document` الطبقة ومنشئها. تحتاج إلى توفير مسار الملف أو دفق المستند كمعلمة. هنا مثال:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");

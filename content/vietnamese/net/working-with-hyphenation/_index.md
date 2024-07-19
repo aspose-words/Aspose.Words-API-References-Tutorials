@@ -14,4 +14,4 @@ Xử lý từ có dấu gạch nối là một tài nguyên toàn diện hướn
 | --- | --- |
 | [Gạch nối từ của ngôn ngữ](./hyphenate-words-of-languages/) | Tìm hiểu cách gạch nối các từ ở các ngôn ngữ khác nhau trong tài liệu Word bằng Aspose.Words cho .NET. |
 | [Tải từ điển gạch nối cho ngôn ngữ](./load-hyphenation-dictionary-for-language/) |Tìm hiểu cách tải từ điển gạch nối cho một ngôn ngữ cụ thể trong Aspose.Words cho .NET. |
-| [Gọi lại dấu gạch nối](./hyphenation-callback/) | Tìm hiểu cách sử dụng lệnh gọi lại dấu gạch nối trong Aspose.Words cho .NET để xử lý dấu gạch nối từ. |
+| [Gọi lại dấu gạch nối](./hyphenation-callback/) | Tìm hiểu cách sử dụng lệnh gọi lại dấu gạch nối trong Aspose.Words dành cho .NET để xử lý dấu gạch nối từ. |

@@ -19,7 +19,7 @@ Tính năng Tải PDF được mã hóa của Aspose.Words cho .NET cho phép b�
 Bước đầu tiên là tải tài liệu PDF được mã hóa vào ứng dụng của bạn. Đây là cách thực hiện:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
+//Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

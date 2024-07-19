@@ -2,7 +2,7 @@
 title: Zapisywanie dokumentów w formacie PDF w Aspose.Words dla Java
 linktitle: Zapisywanie dokumentów w formacie PDF
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak zapisywać dokumenty programu Word w formacie PDF przy użyciu Aspose.Words dla Java. Dostosuj czcionki, właściwości i jakość obrazu. Obszerny przewodnik po konwersji plików PDF.
+description: Dowiedz się, jak zapisywać dokumenty programu Word w formacie PDF przy użyciu Aspose.Words dla Java. Dostosuj czcionki, właściwości i jakość obrazu. Kompleksowy przewodnik po konwersji plików PDF.
 type: docs
 weight: 22
 url: /pl/java/document-loading-and-saving/saving-documents-as-pdf/

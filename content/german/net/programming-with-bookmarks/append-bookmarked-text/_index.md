@@ -2,120 +2,123 @@
 title: Mit Lesezeichen versehenen Text im Word-Dokument anhängen
 linktitle: Mit Lesezeichen versehenen Text im Word-Dokument anhängen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Text aus einem Lesezeichen in ein Word-Dokument einfügen.
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET mit Lesezeichen versehenen Text in ein Word-Dokument einfügen. Perfekt für Entwickler.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/append-bookmarked-text/
 ---
+## Einführung
 
-In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion „Lesezeichentext anhängen“ in der Aspose.Words-Bibliothek für .NET verwendet wird. Mit dieser Funktion können Sie den in einem bestimmten Lesezeichen eines Word-Dokuments enthaltenen Text zu einem anderen Dokument hinzufügen.
+Hallo! Haben Sie schon einmal versucht, Text aus einem mit Lesezeichen versehenen Abschnitt in einem Word-Dokument anzuhängen, und fanden es schwierig? Sie haben Glück! Dieses Tutorial führt Sie mit Aspose.Words für .NET durch den Vorgang. Wir unterteilen es in einfache Schritte, damit Sie es leicht nachvollziehen können. Lassen Sie uns loslegen und den mit Lesezeichen versehenen Text wie ein Profi anhängen!
 
 ## Voraussetzungen
 
-- Grundkenntnisse der Sprache C#.
-- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
+Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-## Schritt 1: Absätze aus Lesezeichen abrufen
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie es installiert haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Jede .NET-Entwicklungsumgebung wie Visual Studio.
+- Grundkenntnisse in C#: Das Verständnis der grundlegenden C#-Programmierkonzepte ist hilfreich.
+- Word-Dokument mit Lesezeichen: Ein Word-Dokument mit eingerichteten Lesezeichen, aus denen wir Text anhängen.
 
- Bevor wir mit dem Hinzufügen des Lesezeichentextes beginnen, müssen wir die Absätze abrufen, die den Anfang und das Ende des Lesezeichens enthalten. Dies können Sie tun, indem Sie auf`BookmarkStart` Und`BookmarkEnd` Eigenschaften des Lesezeichens:
+## Namespaces importieren
+
+Als Erstes importieren wir die erforderlichen Namespaces. So stellen wir sicher, dass wir alle benötigten Tools zur Hand haben.
 
 ```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+using System;
+using Aspose.Words;
+using Aspose.Words.Importing;
 ```
 
-## Schritt 2: Übergeordnete Absätze prüfen
+Lassen Sie uns das Beispiel in detaillierte Schritte aufteilen.
 
-Wir prüfen, ob Anfangs- und Endabsatz gültige übergeordnete Elemente haben, also wirklich zu einem Absatz gehören. Wenn nicht, erzeugen wir eine Exception:
+## Schritt 1: Laden Sie das Dokument und initialisieren Sie die Variablen
+
+Okay, beginnen wir mit dem Laden unseres Word-Dokuments und dem Initialisieren der benötigten Variablen.
 
 ```csharp
+// Laden Sie die Quell- und Zieldokumente.
+Document srcDoc = new Document("source.docx");
+Document dstDoc = new Document("destination.docx");
+
+// Initialisieren Sie den Dokumentimporter.
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+
+// Suchen Sie das Lesezeichen im Quelldokument.
+Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## Schritt 2: Identifizieren Sie die Anfangs- und Endabsätze
+
+Suchen wir nun die Absätze, in denen das Lesezeichen beginnt und endet. Dies ist wichtig, da wir den Text innerhalb dieser Grenzen verarbeiten müssen.
+
+```csharp
+// Dies ist der Absatz, der den Anfang des Lesezeichens enthält.
+Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+
+// Dies ist der Absatz, der das Ende des Lesezeichens enthält.
+Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
 if (startPara == null || endPara == null)
-throw new InvalidOperationException(
-"The parent of the beginning or the end of the bookmark is not a paragrap
-
-hey, this situation can't be handled yet.");
+    throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## Schritt 3: Übergeordnete Absätze prüfen
+## Schritt 3: Überprüfen Sie die übergeordneten Absätze
 
-Wir prüfen, ob Anfangs- und Endabsatz denselben übergeordneten Absatz haben. Wenn nicht, bedeutet das, dass die Absätze nicht im selben Abschnitt oder Dokument enthalten sind, und wir werfen eine Ausnahme:
+Wir müssen sicherstellen, dass Anfangs- und Endabsatz denselben übergeordneten Absatz haben. Dies ist ein einfaches Szenario, um die Dinge unkompliziert zu halten.
 
 ```csharp
+// Beschränken wir uns auf ein einigermaßen einfaches Szenario.
 if (startPara.ParentNode != endPara.ParentNode)
-throw new InvalidOperationException(
-"Beginning and ending paragraphs have different parents, this situation cannot be handled yet.");
+    throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## Schritt 4: Absätze kopieren
+## Schritt 4: Identifizieren des zu stoppenden Knotens
 
-Wir durchlaufen die Knoten (Absätze) vom Anfangsabsatz bis zum Endabsatz. Für jeden Knoten erstellen wir eine Kopie und importieren diese in den Kontext des Zieldokuments:
+Als Nächstes müssen wir den Knoten bestimmen, an dem wir mit dem Kopieren des Textes aufhören. Dies ist der Knoten unmittelbar nach dem letzten Absatz.
 
 ```csharp
+// Wir wollen alle Absätze vom Anfangsabsatz bis einschließlich zum Endabsatz kopieren,
+// Daher ist der Knoten, bei dem wir aufhören, einer nach dem Endabsatz.
 Node endNode = endPara.NextSibling;
+```
 
+## Schritt 5: Mit Lesezeichen versehenen Text an Zieldokument anhängen
+
+Lassen Sie uns abschließend die Knoten vom Startabsatz bis zum Knoten nach dem Endabsatz durchlaufen und sie an das Zieldokument anhängen.
+
+```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-Node newNode = importer.ImportNode(curNode, true);
+    // Dadurch wird eine Kopie des aktuellen Knotens erstellt und in den Kontext importiert (gültig gemacht).
+    // des Zieldokuments. Beim Importieren werden Stile und Listenkennungen richtig angepasst.
+    Node newNode = importer.ImportNode(curNode, true);
 
-dstNode.AppendChild(newNode);
+    // Hängen Sie den importierten Knoten an das Zieldokument an.
+    dstDoc.FirstSection.Body.AppendChild(newNode);
 }
-```
 
-### Beispielquellcode zum Anhängen von mit Lesezeichen versehenem Text mit Aspose.Words für .NET
-
-Hier ist der vollständige Beispielquellcode, der das Hinzufügen von Text aus einem Lesezeichen mit Aspose.Words für .NET demonstriert:
-
-```csharp
-
-	// Dies ist der Absatz, der den Anfang des Lesezeichens enthält.
-	Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-	// Dies ist der Absatz, der das Ende des Lesezeichens enthält.
-	Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-	if (startPara == null || endPara == null)
-		throw new InvalidOperationException(
-			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-	// Beschränken wir uns auf ein einigermaßen einfaches Szenario.
-	if (startPara.ParentNode != endPara.ParentNode)
-		throw new InvalidOperationException(
-			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-	// Wir wollen alle Absätze vom Anfangsabsatz bis einschließlich zum Endabsatz kopieren,
-	// Daher ist der Knoten, bei dem wir aufhören, einer nach dem Endabsatz.
-	Node endNode = endPara.NextSibling;
-
-	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-	{
-		//Dadurch wird eine Kopie des aktuellen Knotens erstellt und in den Kontext importiert (gültig gemacht).
-		// des Zieldokuments. Beim Importieren werden Stile und Listenkennungen richtig angepasst.
-		Node newNode = importer.ImportNode(curNode, true);
-
-		dstNode.AppendChild(newNode);
-	}
-
+// Speichern Sie das Zieldokument mit dem angehängten Text.
+dstDoc.Save("appended_document.docx");
 ```
 
 ## Abschluss
 
-In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Lesezeichentext anhängen“ von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um Absätze aus einem Lesezeichen abzurufen, übergeordnete Elemente zu überprüfen und Absätze in ein anderes Dokument zu kopieren.
+Und da haben Sie es! Sie haben erfolgreich Text aus einem mit Lesezeichen versehenen Abschnitt in einem Word-Dokument mithilfe von Aspose.Words für .NET angehängt. Dieses leistungsstarke Tool macht die Dokumentbearbeitung zum Kinderspiel, und jetzt haben Sie noch einen weiteren Trick im Ärmel. Viel Spaß beim Programmieren!
 
-### FAQs zum Anhängen von mit Lesezeichen versehenem Text in Word-Dokument
+## Häufig gestellte Fragen
 
-#### F1: Was sind die Voraussetzungen für die Verwendung der Funktion „Text mit Lesezeichen hinzufügen“ in Aspose.Words für .NET?
+### Kann ich Text aus mehreren Lesezeichen auf einmal anhängen?
+Ja, Sie können den Vorgang für jedes Lesezeichen wiederholen und den Text entsprechend anhängen.
 
-A: Um die Funktion „Text mit Lesezeichen hinzufügen“ in Aspose.Words für .NET zu verwenden, benötigen Sie Grundkenntnisse der Sprache C#. Sie benötigen außerdem eine .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
+### Was passiert, wenn Anfangs- und Endabsatz unterschiedliche übergeordnete Elemente haben?
+Im vorliegenden Beispiel wird davon ausgegangen, dass sie denselben übergeordneten Knoten haben. Bei unterschiedlichen übergeordneten Knoten ist eine komplexere Handhabung erforderlich.
 
-#### F2: Wie erhalte ich die Absätze, die den Anfang und das Ende eines Lesezeichens in einem Word-Dokument enthalten?
+### Kann ich die ursprüngliche Formatierung des angehängten Textes beibehalten?
+ Absolut! Die`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die ursprüngliche Formatierung erhalten bleibt.
 
-A: Um die Absätze zu erhalten, die den Anfang und das Ende eines Lesezeichens in einem Word-Dokument enthalten, können Sie auf die`BookmarkStart` Und`BookmarkEnd` Eigenschaften des Lesezeichens. Hier ist ein Beispielcode:
+### Ist es möglich, Text an einer bestimmten Stelle im Zieldokument anzuhängen?
+Ja, Sie können den Text an jeder beliebigen Stelle anfügen, indem Sie zum gewünschten Knoten im Zieldokument navigieren.
 
-```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-```
-
-#### F3: Was passiert, wenn die Anfangs- und Endabsätze keine gültigen übergeordneten Absätze haben?
-
-A: Wenn die Anfangs- und Endabsätze keine gültigen übergeordneten Absätze haben, also keine echten Absätze sind, wird eine Ausnahme ausgelöst. Diese Situation kann derzeit nicht verwaltet werden.
+### Was ist, wenn ich Text aus einem Lesezeichen an einen neuen Abschnitt anhängen muss?
+Sie können im Zieldokument einen neuen Abschnitt erstellen und den Text dort anhängen.

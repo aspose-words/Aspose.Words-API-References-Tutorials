@@ -18,7 +18,7 @@ Documentvergelijking omvat het analyseren van twee documenten en het identificer
 
 ## Basisdocumentvergelijking
 
- Laten we beginnen met de basisprincipes van documentvergelijking. We gebruiken twee documenten,`docA` En`docB`en vergelijk ze.
+ Laten we beginnen met de basisprincipes van documentvergelijking. We gebruiken twee documenten,`docA`En`docB`en vergelijk ze.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-In dit codefragment laden we twee documenten,`docA` En`docB` en gebruik vervolgens de`compare` methode om ze te vergelijken. We specificeren de auteur als 'gebruiker' en de vergelijking wordt uitgevoerd. Ten slotte controleren we of er herzieningen zijn, waarbij verschillen tussen de documenten worden aangegeven.
+In dit codefragment laden we twee documenten,`docA`En`docB` en gebruik vervolgens de`compare` methode om ze te vergelijken. We specificeren de auteur als 'gebruiker' en de vergelijking wordt uitgevoerd. Ten slotte controleren we of er herzieningen zijn, waarbij verschillen tussen de documenten worden aangegeven.
 
 ## Vergelijking met opties aanpassen
 

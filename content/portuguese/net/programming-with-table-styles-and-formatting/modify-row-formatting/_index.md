@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Passo 3: Acesse a linha para modificar
- Para alterar a formatação de uma linha da tabela, precisamos navegar até a linha específica da tabela. Nós usamos o`GetChild()` e`FirstRow` métodos para obter a referência à primeira linha da tabela.
+ Para alterar a formatação de uma linha da tabela, precisamos navegar até a linha específica da tabela. Nós usamos o`GetChild()`e`FirstRow` métodos para obter a referência à primeira linha da tabela.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

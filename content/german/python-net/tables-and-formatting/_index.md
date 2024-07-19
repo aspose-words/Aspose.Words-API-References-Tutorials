@@ -1,7 +1,7 @@
 ---
 title: Tabellen und Formatierung
 linktitle: Tabellen und Formatierung
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Tauchen Sie ein in die Aspose.Words-Tutorials zu Tabellen und Formatierung in Python- und .NET-Anwendungen. Erfahren Sie, wie Sie Tabellen für visuell ansprechende Dokumente erstellen, anpassen und gestalten.
 type: docs
 weight: 16

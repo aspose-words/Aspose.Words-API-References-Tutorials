@@ -15,7 +15,7 @@ url: /el/net/working-with-revisions/accept-revisions/
 Σε αυτό το παράδειγμα, δημιουργούμε ένα έγγραφο και προσθέτουμε περιεχόμενο. Χρησιμοποιούμε πολλές παραγράφους για να απεικονίσουμε αλλαγές και αναθεωρήσεις. Δείτε πώς:
 
 ```csharp
-// Διαδρομή στον κατάλογο εγγράφων.
+//Διαδρομή στον κατάλογο εγγράφων.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Λύση 2:
 
- Α: Μπορείτε επίσης να ενεργοποιήσετε την παρακολούθηση αναθεωρήσεων χρησιμοποιώντας το`Document` κατασκευαστής που δέχεται`trackRevisions` και`author` Παράμετροι.
+ Α: Μπορείτε επίσης να ενεργοποιήσετε την παρακολούθηση αναθεωρήσεων χρησιμοποιώντας το`Document` κατασκευαστής που δέχεται`trackRevisions`και`author` Παράμετροι.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

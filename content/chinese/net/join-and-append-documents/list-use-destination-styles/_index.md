@@ -2,137 +2,93 @@
 title: 列出使用目标样式
 linktitle: 列出使用目标样式
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 连接和附加 Word 文档，同时保留目标文档的列表样式。
+description: 了解如何使用 Aspose.Words for .NET 合并 Word 文档而不丢失列表格式。分步指南可帮助您保持文档样式完好无损。
 type: docs
 weight: 10
 url: /zh/net/join-and-append-documents/list-use-destination-styles/
 ---
+## 介绍
 
-本教程将指导您完成使用 Aspose.Words for .NET 的“使用目标样式列表”功能的过程。此功能允许您在使用目标文档的列表样式的同时加入和附加 Word 文档。
+您是否曾尝试合并 Word 文档，但却被格式问题所困扰？有时就像试图混合油和水，对吗？好吧，今天我们将深入研究使用 Aspose.Words for .NET 的巧妙技巧，它将帮助您摆脱这种麻烦。我们将学习如何将列表从一个文档导入另一个文档，而不会弄乱编号和样式。准备好让您的生活更轻松了吗？让我们开始吧！
 
 ## 先决条件
 
-开始之前，请确保您已准备好以下物品：
+在我们进入魔法世界之前，让我们先确保你已经拥有了所需的一切：
 
-1. 已安装 Aspose.Words for .NET。您可以从 Aspose 网站下载它或通过 NuGet 安装它。
-2. Visual Studio 或任何其他 C# 开发环境。
+1.  Aspose.Words for .NET：如果您还没有下载，请下载[这里](https://releases.aspose.com/words/net/).
+2. Visual Studio：任何最新版本都可以。
+3. 对 C# 的基本了解：您不需要成为一名巫师，但有一定的熟悉度会有所帮助。
 
-## 步骤 1：初始化文档目录
+确保已在项目中安装并设置了 Aspose.Words。如果您不确定如何操作，[文档](https://reference.aspose.com/words/net/)是一个很好的起点。
 
-首先，您需要设置文档目录的路径。修改`dataDir`变量为您的文档所在的路径。
+## 导入命名空间
+
+首先，让我们在 C# 文件中导入必要的命名空间：
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+明白了吗？太棒了。现在让我们一步步来分析一下。
+
+## 步骤 1：设置文档路径
+
+每个项目都从组织文件开始。让我们将代码指向存储文档的目录。
+
+```csharp
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 步骤 2：加载源文档和目标文档
+代替`"YOUR DOCUMENT DIRECTORY"`替换为文档存储的实际路径。很简单，对吧？
 
-接下来，您需要使用 Aspose.Words 加载源文档和目标文档`Document`类。更新`Document`根据您的文档名称构造函数。
+## 第 2 步：加载源文档和目标文档
+
+接下来，我们需要加载源文档和目标文档。可以将其想象为在计算机上打开两个 Word 文件。
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## 步骤 3：将源文档设置为在目标文档之后继续
+这里，`srcDoc`是您的源文档（包含您要复制的列表的文档），并且`dstDoc`是您的目标文档（您想要粘贴这些列表的文档）。
 
-为了确保源文档的内容在目标文档结束后继续，您需要设置`SectionStart`源文档第一节的属性`SectionStart.Continuous`.
+## 步骤 3：配置导入选项
 
-```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-```
-
-## 步骤 4：处理列表格式
-
-要处理列表格式，您将遍历源文档中的每个段落并检查它是否是列表项。如果是，您将比较列表 ID 与目标文档中的现有列表。如果存在具有相同 ID 的列表，您将在源文档中创建该列表的副本并更新段落的列表格式以使用复制的列表。
+我们需要指定一些选项以确保列表正确导入。此步骤可确保如果发生任何编号冲突，则保留源文档中的编号。
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## 步骤 5：将源文档附加到目标文档
+## 步骤 4：将源文档附加到目标文档
 
-现在，您可以使用`AppendDocument`方法`Document`类。`ImportFormatMode.UseDestinationStyles`参数确保在附加操作期间使用目标文档的列表样式。
+现在，让我们进行合并。这就是奇迹发生的地方。我们使用指定的导入选项将源文档附加到目标文档。
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## 步骤 6：保存最终文档
+您已成功合并两个文档，且列表保持完整。
 
-最后，使用`Save`方法`Document`班级。
+## 结论
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+就是这样！使用 Aspose.Words for .NET，合并文档变得轻而易举，无需担心格式问题。无论您是在处理大型项目还是只需要整理一些文件，此方法都能让您的列表保持清晰。因此，下次您遇到文档合并难题时，请记住本指南并像专业人士一样解决它！
 
-### 使用 Aspose.Words for .NET 的 List Use Destination Styles 的示例源代码 
+## 常见问题解答
 
-以下是使用 Aspose.Words for .NET 的 C# 中的“列出使用目标样式”功能的完整源代码：
+### 什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个功能强大的库，可用于以编程方式处理 Word 文档。它允许您创建、修改和转换各种格式的文档。
 
+### 如何安装 Aspose.Words for .NET？
+您可以从[网站](https://releases.aspose.com/words/net/)并按照安装说明进行操作[文档](https://reference.aspose.com/words/net/).
 
-```csharp
-	//文档目录的路径
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### 我可以免费使用 Aspose.Words 吗？
+ Aspose.Words 提供[免费试用](https://releases.aspose.com/)功能有限。如需完全访问，您需要购买许可证[这里](https://purchase.aspose.com/buy).
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	//将源文档设置为在目标文档结束后直接继续。
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	//跟踪已创建的列表。
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			//检查目标文档是否已包含具有此 ID 的列表。如果包含，则可能
-			//导致两个列表一起运行。而是在源文档中创建列表的副本。
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				//该 ID 的新复制列表已存在，请检索存储的列表，
-				//并将其用于当前段落。
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					//将此列表的副本添加到文档中并存储以供日后参考。
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				//将此段落的列表设置为复制的列表。
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	//将源文档附加到目标文档的末尾。
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### 什么是 ImportFormatOptions？
+ ImportFormatOptions 允许您指定在将内容从一个文档导入另一个文档时如何处理格式。例如，`KeepSourceNumbering`确保保留源文档的列表编号。
 
-就是这样！您已成功使用 Aspose.Words for .NET 实现了列表使用目标样式功能。最终文档将包含合并的内容和来自目标文档的列表样式。
+### 我可以在哪里获得 Aspose.Words 的支持？
+您可以从[Aspose.Words 论坛](https://forum.aspose.com/c/words/8)，您可以在这里提出问题并获得社区和 Aspose 开发人员的帮助。

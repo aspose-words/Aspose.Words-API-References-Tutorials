@@ -216,7 +216,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
 
 恭喜！您已经学会了如何有效地使用 Aspose.Words for Java 中的列表。列表对于组织和呈现文档中的内容至关重要。无论您需要在每个部分重新启动列表还是指定列表级别，Aspose.Words for Java 都提供了创建专业文档所需的工具。
 
-现在，您可以放心使用这些功能来增强文档生成和格式化任务。如果您有任何疑问或需要进一步的帮助，请随时联系[Aspose 社区论坛](https://forum.aspose.com/)为了支持。
+现在，您可以放心使用这些功能来增强文档生成和格式化任务。如果您有任何疑问或需要进一步帮助，请随时联系[Aspose 社区论坛](https://forum.aspose.com/)为了支持。
 
 ## 常见问题解答
 

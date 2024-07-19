@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Burada, iki başlık satırı ve birden fazla veri satırı içeren bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz.`RowFormat.HeadingFormat`parametreler sonraki sayfalarda tekrarlanması gereken başlık satırlarını işaretlemek için kullanılır.
+ Burada, iki başlık satırı ve birden fazla veri satırı içeren bir tablo oluşturmak için belge oluşturucuyu kullanıyoruz.`RowFormat.HeadingFormat` parametreler sonraki sayfalarda tekrarlanması gereken başlık satırlarını işaretlemek için kullanılır.
 
 ## Adım 4: Değiştirilen belgeyi kaydetme
 Nihayet ABD

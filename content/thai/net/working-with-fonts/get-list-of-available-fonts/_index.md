@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // เพิ่มแหล่งที่มาของโฟลเดอร์ใหม่ซึ่งจะสั่งให้ Aspose.Words ค้นหาแบบอักษรในโฟลเดอร์ต่อไปนี้
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//เพิ่มโฟลเดอร์ที่กำหนดเองซึ่งมีแบบอักษรของเราลงในรายการแหล่งแบบอักษรที่มีอยู่
+// เพิ่มโฟลเดอร์ที่กำหนดเองซึ่งมีแบบอักษรของเราลงในรายการแหล่งแบบอักษรที่มีอยู่
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 
 #### ถาม: ฉันจะใช้รายการแบบอักษรที่มีอยู่ในเอกสาร Word ได้อย่างไร
 
-ตอบ: หากต้องการใช้รายการแบบอักษรที่มีอยู่ในเอกสาร Word ของคุณ คุณสามารถเรียกดูรายการและเลือกแบบอักษรที่เหมาะสมโดยใช้วิธีการและคุณสมบัติของ`FontSettings` คลาสใน Aspose.Words
+ ตอบ: หากต้องการใช้รายการแบบอักษรที่มีอยู่ในเอกสาร Word ของคุณ คุณสามารถเรียกดูรายการและเลือกแบบอักษรที่เหมาะสมโดยใช้วิธีการและคุณสมบัติของ`FontSettings` คลาสใน Aspose.Words

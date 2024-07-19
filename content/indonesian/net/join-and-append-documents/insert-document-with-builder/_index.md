@@ -2,79 +2,123 @@
 title: Sisipkan Dokumen Dengan Pembuat
 linktitle: Sisipkan Dokumen Dengan Pembuat
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan dokumen di akhir dokumen lain menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menggabungkan dua dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah untuk menyisipkan dokumen dengan DocumentBuilder dan mempertahankan pemformatan.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/insert-document-with-builder/
 ---
+## Perkenalan
 
- Tutorial ini menjelaskan cara menggunakan Aspose.Words untuk .NET untuk menyisipkan dokumen ke dokumen lain menggunakan`DocumentBuilder` kelas. Kode sumber yang disediakan menunjukkan cara menyisipkan dokumen di akhir dokumen lain sambil mempertahankan format sumber.
+Jadi, Anda memiliki dua dokumen Word, dan Anda ingin menggabungkannya menjadi satu. Anda mungkin berpikir, "Apakah ada cara mudah untuk melakukan ini secara terprogram?" Sangat! Hari ini, saya akan memandu Anda melalui proses memasukkan satu dokumen ke dokumen lain menggunakan perpustakaan Aspose.Words untuk .NET. Metode ini sangat berguna, terutama ketika Anda berurusan dengan dokumen berukuran besar atau perlu mengotomatiskan prosesnya. Mari selami!
 
-## Langkah 1: Siapkan proyek
+## Prasyarat
 
-Pastikan Anda memiliki prasyarat berikut:
+Sebelum kita mulai, pastikan Anda memiliki semua yang Anda perlukan:
 
--  Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mengunduhnya dari[Aspose.Releases]https://releases.aspose.com/words/net/ atau gunakan manajer paket NuGet untuk menginstalnya.
-- Jalur direktori dokumen tempat dokumen sumber dan tujuan berada.
+1.  Aspose.Words untuk .NET: Jika Anda belum melakukannya, Anda dapat mendownloadnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Pastikan Anda telah menginstal Visual Studio atau IDE lain yang sesuai.
+3. Pengetahuan Dasar tentang C#: Sedikit keakraban dengan C# akan sangat bermanfaat.
 
-## Langkah 2: Buka dokumen sumber dan tujuan
+## Impor Namespace
 
- Buka dokumen sumber dan tujuan menggunakan`Document` konstruktor kelas. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan untuk mengakses fungsi perpustakaan Aspose.Words. Inilah cara Anda melakukannya:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Sekarang kita sudah memiliki prasyaratnya, mari kita uraikan prosesnya langkah demi langkah.
+
+## Langkah 1: Menyiapkan Direktori Dokumen Anda
+
+Sebelum kita mulai membuat kode, Anda perlu menyetel jalur ke direktori dokumen Anda. Di sinilah dokumen sumber dan tujuan Anda disimpan.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya di mana dokumen Anda berada. Ini akan membantu program menemukan file Anda dengan mudah.
+
+## Langkah 2: Memuat Dokumen Sumber dan Tujuan
+
+Selanjutnya, kita perlu memuat dokumen yang ingin kita kerjakan. Dalam contoh ini, kita memiliki dokumen sumber dan dokumen tujuan.
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Langkah 3: Inisialisasi DocumentBuilder
+ Di sini, kami menggunakan`Document` kelas dari perpustakaan Aspose.Words untuk memuat dokumen kita. Pastikan nama file cocok dengan yang ada di direktori Anda.
 
- Buat instance baru dari`DocumentBuilder` kelas dan meneruskan dokumen tujuan sebagai parameter.
+## Langkah 3: Membuat Objek DocumentBuilder
+
+ Itu`DocumentBuilder` class adalah alat yang ampuh di perpustakaan Aspose.Words. Ini memungkinkan kita untuk menavigasi dan memanipulasi dokumen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
-## Langkah 4: Posisikan DocumentBuilder
+ Pada langkah ini, kami telah membuat a`DocumentBuilder` objek untuk dokumen tujuan kita. Ini akan membantu kami memasukkan konten ke dalam dokumen.
 
-Memindahkan`DocumentBuilder` ke akhir dokumen menggunakan`MoveToDocumentEnd` metode. Sisipkan hentian halaman untuk memisahkan konten yang ada dari dokumen yang disisipkan.
+## Langkah 4: Pindah ke Akhir Dokumen
+
+Kita perlu memindahkan kursor pembuat ke akhir dokumen tujuan sebelum memasukkan dokumen sumber.
 
 ```csharp
 builder.MoveToDocumentEnd();
+```
+
+Hal ini memastikan bahwa dokumen sumber disisipkan di akhir dokumen tujuan.
+
+## Langkah 5: Memasukkan Page Break
+
+Agar semuanya tetap rapi, mari tambahkan hentian halaman sebelum menyisipkan dokumen sumber. Ini akan memulai konten dokumen sumber di halaman baru.
+
+```csharp
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## Langkah 5: Masukkan dokumen sumber
+Hentian halaman memastikan bahwa konten dokumen sumber dimulai pada halaman baru, membuat dokumen gabungan terlihat profesional.
 
- Menggunakan`InsertDocument` metode`DocumentBuilder` kelas untuk memasukkan dokumen sumber ke dalam dokumen tujuan. Atur mode format impor ke`ImportFormatMode.KeepSourceFormatting` untuk mempertahankan format sumber.
+## Langkah 6: Memasukkan Dokumen Sumber
+
+Sekarang sampai pada bagian yang menarik—memasukkan dokumen sumber ke dalam dokumen tujuan.
 
 ```csharp
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Langkah 6: Simpan dokumen yang dimodifikasi
+ Menggunakan`InsertDocument` metodenya, kita dapat memasukkan seluruh dokumen sumber ke dalam dokumen tujuan. Itu`ImportFormatMode.KeepSourceFormatting` memastikan bahwa format dokumen sumber dipertahankan.
 
-Terakhir, simpan dokumen tujuan yang telah dimodifikasi menggunakan`Save` metode`Document` obyek.
+## Langkah 7: Menyimpan Dokumen yang Digabung
+
+Terakhir, mari simpan dokumen yang digabungkan. Ini akan menggabungkan dokumen sumber dan tujuan menjadi satu file.
 
 ```csharp
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 ```
 
-Ini menyelesaikan implementasi penyisipan dokumen ke dokumen lain menggunakan Aspose.Words untuk .NET.
+Dengan menyimpan dokumen tersebut, kita menyelesaikan proses penggabungan kedua dokumen tersebut. Dokumen baru Anda sekarang sudah siap dan disimpan di direktori yang ditentukan.
 
-### Contoh kode sumber untuk Sisipkan Dokumen Dengan Pembuat menggunakan Aspose.Words untuk .NET 
+## Kesimpulan
 
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Dan itu dia! Anda telah berhasil menyisipkan satu dokumen ke dokumen lain menggunakan Aspose.Words untuk .NET. Metode ini tidak hanya efisien tetapi juga menjaga format kedua dokumen, memastikan penggabungan yang mulus. Baik Anda sedang mengerjakan proyek satu kali atau perlu mengotomatiskan pemrosesan dokumen, Aspose.Words untuk .NET siap membantu Anda.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	DocumentBuilder builder = new DocumentBuilder(dstDoc);
-	builder.MoveToDocumentEnd();
-	builder.InsertBreak(BreakType.PageBreak);
-	builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
-```
+## FAQ
+
+### Apa itu Aspose.Words untuk .NET?  
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, mengedit, mengonversi, dan memanipulasi dokumen Word secara terprogram.
+
+### Bisakah saya menyimpan format dokumen sumber?  
+ Ya, dengan menggunakan`ImportFormatMode.KeepSourceFormatting`, pemformatan dokumen sumber dipertahankan saat disisipkan ke dalam dokumen tujuan.
+
+### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?  
+ Ya, Aspose.Words untuk .NET memerlukan lisensi untuk fungsionalitas penuh. Anda bisa mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/) untuk evaluasi.
+
+### Bisakah saya mengotomatiskan proses ini?  
+Sangat! Metode yang dijelaskan dapat dimasukkan ke dalam aplikasi yang lebih besar untuk mengotomatiskan tugas pemrosesan dokumen.
+
+### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan?  
+Untuk informasi lebih lanjut, Anda dapat memeriksa[dokumentasi](https://reference.aspose.com/words/net/) , atau kunjungi[forum dukungan](https://forum.aspose.com/c/words/8) untuk bantuan.

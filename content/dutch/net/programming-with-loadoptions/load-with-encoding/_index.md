@@ -69,6 +69,6 @@ EEN: Zeker! Aspose.Words ondersteunt verschillende coderingen, en u kunt degene 
 
 A: Door de juiste codering op te geven, zorgt u ervoor dat uw C#-toepassing tekstdocumenten nauwkeurig kan interpreteren en verwerken, waardoor problemen met tekencodering worden voorkomen en de gegevensintegriteit wordt gewaarborgd.
 
-#### Vraag: Ondersteunt Aspose.Words naast tekstbestanden ook andere soorten documenten?
+#### Vraag: Ondersteunt Aspose.Words naast tekstbestanden ook andere typen documenten?
 
 A: Ja, Aspose.Words ondersteunt een breed scala aan documentformaten, waaronder Word-documenten (DOC, DOCX), PDF, HTML, EPUB en meer, waardoor het een veelzijdige oplossing is voor documentverwerking.

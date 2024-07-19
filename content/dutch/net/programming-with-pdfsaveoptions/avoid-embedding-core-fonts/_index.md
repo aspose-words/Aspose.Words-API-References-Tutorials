@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
 
-In deze zelfstudie leiden we u door de stappen voor het verkleinen van de PDF-bestandsgrootte door geen kernlettertypen in te sluiten met Aspose.Words voor .NET. Met deze functie kunt u bepalen of basislettertypen zoals Arial, Times New Roman, etc. in de PDF moeten worden ingesloten bij het converteren van een Word-document. Volg onderstaande stappen:
+In deze zelfstudie leiden we u door de stappen voor het verkleinen van de PDF-bestandsgrootte door geen kernlettertypen in te sluiten met Aspose.Words voor .NET. Met deze functie kunt u bepalen of basislettertypen zoals Arial, Times New Roman, enz. in de PDF moeten worden ingesloten bij het converteren van een Word-document. Volg onderstaande stappen:
 
 ## Stap 1: Het document laden
 
@@ -86,7 +86,7 @@ A: De voordelen van het niet insluiten van basislettertypen in een PDF-bestand z
 
 Verkleining van de PDF-bestandsgrootte: Door het insluiten van algemeen beschikbare lettertypen zoals Arial, Times New Roman, enz. te vermijden, kan de PDF-bestandsgrootte worden verkleind, waardoor het gemakkelijker wordt om bestanden op te slaan, te delen en over te dragen.
 
-Betere compatibiliteit: Door basislettertypen te gebruiken die algemeen beschikbaar zijn op PDF-leessystemen, zorgt u voor een betere compatibiliteit en documentuiterlijk op verschillende apparaten en platforms.
+Betere compatibiliteit: Door basislettertypen te gebruiken die algemeen beschikbaar zijn op PDF-lezersystemen, zorgt u voor een betere compatibiliteit en documentuiterlijk op verschillende apparaten en platforms.
 
 #### Vraag: Wat zijn de gevolgen als er geen basislettertypen in een PDF-bestand worden ingesloten?
 A: De gevolgen van het niet insluiten van basislettertypen in een PDF-bestand zijn als volgt:

@@ -30,7 +30,7 @@ Para utilizar Aspose.Words para Java, debe agregar la biblioteca a su proyecto. 
 
 1.  Descargue la biblioteca Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
-2. Agregue el archivo JAR a la ruta de clase de su proyecto.
+2. Agregue el archivo JAR a la ruta de clases de su proyecto.
 
 ## Cargando un documento
 
@@ -75,7 +75,7 @@ En este artículo, exploramos cómo imprimir documentos con una configuración d
 
 ### ¿Cómo puedo cambiar el tamaño del papel de mi documento?
 
- Para cambiar el tamaño del papel de su documento, utilice el`setPageWidth` y`setPageHeight` métodos de la`PageSetup` clase y especifique las dimensiones deseadas en puntos.
+ Para cambiar el tamaño del papel de su documento, utilice el`setPageWidth`y`setPageHeight` métodos de la`PageSetup` clase y especifique las dimensiones deseadas en puntos.
 
 ### ¿Puedo imprimir varias copias de un documento?
 

@@ -90,7 +90,7 @@ Nachdem Sie nun gelernt haben, wie Sie HTML-, RTF- und TXT-Dokumente mit Aspose.
 
 ### 1. Lazy Loading
 
-Lazy Loading ist eine Strategie, bei der zunächst nur die wesentlichen Teile eines Dokuments geladen werden und zusätzlicher Inhalt erst nach Bedarf. Insbesondere bei großen Dokumenten kann dieser Ansatz die Ladegeschwindigkeit deutlich verbessern.
+Lazy Loading ist eine Strategie, bei der zunächst nur die wesentlichen Teile eines Dokuments geladen werden und zusätzlicher Inhalt erst nach Bedarf. Dieser Ansatz kann die Ladegeschwindigkeit insbesondere bei großen Dokumenten deutlich verbessern.
 
 ### 2. Zwischenspeicherung
 
@@ -116,7 +116,7 @@ In diesem Artikel haben wir die Bedeutung der Optimierung des Dokumentladens unt
 
 #### Kann ich Aspose.Words für Java kostenlos nutzen?
 
-Aspose.Words für Java bietet eine kostenlose Testversion an, für die erweiterte Nutzung und volle Funktionalität müssen Sie jedoch möglicherweise eine Lizenz erwerben. Preisdetails finden Sie auf der Website.
+Aspose.Words für Java bietet eine kostenlose Testversion an, für die erweiterte Nutzung und den vollen Funktionsumfang müssen Sie jedoch möglicherweise eine Lizenz erwerben. Preisdetails finden Sie auf der Website.
 
 #### Welche anderen Dokumentformate unterstützt Aspose.Words für Java?
 

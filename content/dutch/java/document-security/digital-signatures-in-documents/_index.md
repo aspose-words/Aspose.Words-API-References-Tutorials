@@ -54,7 +54,7 @@ Volg deze stappen om een digitale handtekening in een document te verifiëren:
 // Laad het ondertekende document
 com.aspose.words.Document signedDoc = new com.aspose.words.Document("signed_document.docx");
 
-// Controleer of het document digitaal ondertekend is
+// Controleer of het document digitaal is ondertekend
 if (signedDoc.getDigitalSignatures().getCount() > 0) {
     // Controleer de digitale handtekening
     boolean isValid = signedDoc.getDigitalSignatures().get(0).isValid();
@@ -81,7 +81,7 @@ Een digitale handtekening is een cryptografische techniek die de authenticiteit 
 
 ### Kan ik een zelfondertekend certificaat gebruiken voor digitale handtekeningen?
 
-Ja, u kunt een zelfondertekend certificaat gebruiken, maar dit biedt mogelijk niet hetzelfde vertrouwensniveau als een certificaat van een vertrouwde certificeringsinstantie (CA).
+Ja, u kunt een zelfondertekend certificaat gebruiken, maar het biedt mogelijk niet hetzelfde vertrouwensniveau als een certificaat van een vertrouwde certificeringsinstantie (CA).
 
 ### Is Aspose.Words voor Java compatibel met andere documentformaten?
 

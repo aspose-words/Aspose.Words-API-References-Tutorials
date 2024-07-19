@@ -85,7 +85,7 @@ foreach (Section section in doc)
 doc.Save(dataDir + "WorkingWithSection.ModifyPageSetupInAllSections.doc");
 ```
 
-このコード行は、変更内容を示す明確なファイル名を付けて、指定されたディレクトリにドキュメントを保存します。
+このコード行は、変更内容を示す明確なファイル名で、指定されたディレクトリにドキュメントを保存します。
 
 ## 結論
 

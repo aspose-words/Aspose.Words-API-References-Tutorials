@@ -74,7 +74,7 @@ doc.save("ParagraphFormatting.docx");
 
 ## 多段階リストの書式設定
 
-複数レベルのリストを作成することは、ドキュメントの書式設定でよく必要なことです。Aspose.Words for Java を使用すると、このタスクが簡単になります。
+複数レベルのリストを作成することは、ドキュメントの書式設定でよく必要になります。Aspose.Words for Java を使用すると、このタスクが簡単になります。
 
 ```java
 Document doc = new Document();
@@ -159,7 +159,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ## 結論
 
-この記事では、Aspose.Words for Java でのドキュメントの書式設定のさまざまな側面について説明しました。これらの情報を活用することで、Java アプリケーション用に美しく書式設定されたドキュメントを作成できます。[Aspose.Words for Java ドキュメント](https://reference.aspose.com/words/java/)より詳しいガイダンスについては、こちらをご覧ください。
+この記事では、Aspose.Words for Java でのドキュメントの書式設定のさまざまな側面について説明しました。これらの情報を活用して、Java アプリケーション用に美しく書式設定されたドキュメントを作成できます。[Aspose.Words for Java ドキュメント](https://reference.aspose.com/words/java/)より詳しいガイダンスについては、こちらをご覧ください。
 
 ## よくある質問
 
@@ -179,6 +179,6 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 はい、Aspose.Words for Java は、ドキュメント内の複数レベルのリストの作成と書式設定に優れたサポートを提供します。
 
-### アジア言語のテキストの段落間隔を最適化するにはどうすればよいでしょうか?
+### アジア言語のテキストの段落間隔を最適化するにはどうすればよいですか?
 
 Aspose.Words for Java の関連設定を調整することで、アジア言語のテキストの段落間隔を微調整できます。

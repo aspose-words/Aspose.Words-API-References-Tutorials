@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
- tomto kroku použijeme výchozí formát čísel seznamu pomocí`ApplyNumberDefault()` metoda formátovače seznamu. Dále do našeho seznamu přidáme tři položky pomocí nástroje pro tvorbu dokumentů`Writeln()` a`Write()` metody. Používáme`ListIndent()` metoda pro zvýšení odsazení na každé úrovni.
+ tomto kroku použijeme výchozí formát čísel seznamu pomocí`ApplyNumberDefault()` metoda formátovače seznamu. Dále do našeho seznamu přidáme tři položky pomocí nástroje pro tvorbu dokumentů`Writeln()`a`Write()` metody. Používáme`ListIndent()` metoda pro zvýšení odsazení na každé úrovni.
 
 ## Krok 4: Nakonfigurujte možnosti nahrávání
 
@@ -55,7 +55,7 @@ saveOptions.ListIndentation.Character = '\t';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- V tomto posledním kroku uložíme dokument se zadanými možnostmi uložení. Používáme`Save()` metoda dokumentu předá celou cestu k výstupnímu souboru a možnosti uložení.
+ V tomto posledním kroku dokument uložíme se zadanými možnostmi uložení. Používáme`Save()` metoda dokumentu předá celou cestu k výstupnímu souboru a možnosti uložení.
 
 
 Nyní můžete spustit zdrojový kód a vygenerovat dokument s odsazením seznamu pomocí znaků tabulátoru. Výstupní soubor bude uložen do zadaného adresáře s názvem "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
@@ -100,7 +100,7 @@ Nastavte své vývojové prostředí přidáním nezbytných odkazů a importem 
 
  Vytvoř nový`Document` objekt a přidružený`DocumentBuilder` objekt.
 
- Použijte`DocumentBuilder` k vytvoření seznamu s více úrovněmi odsazení pomocí metod`ApplyNumberDefault()` použít výchozí formát čísel seznamu,`Writeln()` a`Write()` pro přidání položek do seznamu a`ListIndent()`pro zvýšení odsazení na každé úrovni.
+ Použijte`DocumentBuilder` k vytvoření seznamu s více úrovněmi odsazení pomocí metod`ApplyNumberDefault()` použít výchozí formát čísel seznamu,`Writeln()`a`Write()` pro přidání položek do seznamu a`ListIndent()`pro zvýšení odsazení na každé úrovni.
 
  Nakonfigurujte možnosti uložení vytvořením a`TxtSaveOptions` objektu a nastavení vlastností`ListIndentation.Count` na počet znaků tabulátoru na úroveň a`ListIndentation.Character` na`'\t'` používat znaky tabulátoru.
 

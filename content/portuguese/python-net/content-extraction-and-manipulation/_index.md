@@ -17,7 +17,7 @@ No mundo atual, orientado por dados, extrair e manipular conteúdo de documentos
 
 ## O que você aprenderá
 
-Ao longo desses tutoriais, você mergulhará nos principais conceitos e técnicas de extração e manipulação de conteúdo usando Aspose.Words. Os tutoriais cobrem uma ampla variedade de tópicos, incluindo:
+Ao longo destes tutoriais, você mergulhará nos principais conceitos e técnicas de extração e manipulação de conteúdo usando Aspose.Words. Os tutoriais cobrem uma ampla variedade de tópicos, incluindo:
 
 - Extração de Texto: Aprenda como extrair texto de várias partes de um documento.
 - Formatação e estilo: entenda como manipular a formatação e os estilos no conteúdo extraído.

@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Paso 3: comprueba si el documento está cifrado
 
- Usamos el`IsEncrypted` propiedad de la`FileFormatInfo`objeto para comprobar si el documento está cifrado. Esta propiedad regresa`true` si el documento está cifrado, en caso contrario devuelve`false`. Mostramos el resultado en la consola.
+ Usamos el`IsEncrypted` propiedad de la`FileFormatInfo` objeto para comprobar si el documento está cifrado. Esta propiedad regresa`true` si el documento está cifrado, en caso contrario devuelve`false`. Mostramos el resultado en la consola.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### P: ¿Cómo detectar el formato de archivo?
- Puedes usar el`DetectFileFormat` método de la`FileFormatUtil`clase para detectar información de formato de archivo. En el siguiente ejemplo, asumimos que el documento cifrado se llama "Encrypted.docx" y se encuentra en el directorio de documentos especificado:
+ Puedes usar el`DetectFileFormat` método de la`FileFormatUtil` clase para detectar información de formato de archivo. En el siguiente ejemplo, asumimos que el documento cifrado se llama "Encrypted.docx" y se encuentra en el directorio de documentos especificado:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### P: ¿Cómo comprobar si el documento está cifrado?
- Puedes usar el`IsEncrypted` propiedad de la`FileFormatInfo`objeto para comprobar si el documento está cifrado. Esta propiedad regresa`true` si el documento está cifrado, en caso contrario devuelve`false`. El resultado se muestra en la consola:
+ Puedes usar el`IsEncrypted` propiedad de la`FileFormatInfo` objeto para comprobar si el documento está cifrado. Esta propiedad regresa`true` si el documento está cifrado, en caso contrario devuelve`false`. El resultado se muestra en la consola:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

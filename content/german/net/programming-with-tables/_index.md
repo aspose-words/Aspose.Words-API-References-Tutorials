@@ -32,8 +32,8 @@ Wenn Sie diese Tutorials befolgen, können Sie die Tabellenbearbeitungsfunktione
 | [Horizontale Zusammenführung](./horizontal-merge/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Zellen in einer Word-Tabelle horizontal zusammenführen. |
 | [In horizontal verbundene Zellen konvertieren](./convert-to-horizontally-merged-cells/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellenzellen in horizontal verbundene Zellen in einem Word-Dokument konvertieren. |
 | [Zeilen auf nachfolgenden Seiten wiederholen](./repeat-rows-on-subsequent-pages/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabellenzeilen auf nachfolgenden Seiten in einem Word-Dokument wiederholen. |
-| [Automatisch an Seitenbreite anpassen](./auto-fit-to-page-width/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Tabelle in einem Word-Dokument automatisch an die Seitenbreite anpassen. |
-| [Bevorzugte Breiteneinstellungen](./preferred-width-settings/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET bevorzugte Tabellenzellenbreiten in einem Word-Dokument festlegen. |
+| [Automatisch an Fenster anpassen](./auto-fit-to-page-width/) | Mit dieser Schritt-für-Schritt-Anleitung können Sie Tabellen mithilfe von Aspose.Words für .NET ganz einfach automatisch an das Fenster in Word-Dokumenten anpassen. Perfekt für sauberere, professionelle Dokumente. |
+| [Bevorzugte Breiteneinstellungen](./preferred-width-settings/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie in Aspose.Words für .NET Tabellen mit absoluten, relativen und automatischen Breiteneinstellungen erstellen. |
 | [Bevorzugten Breitentyp abrufen](./retrieve-preferred-width-type/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET den Typ und den bevorzugten Breitenwert einer Zelle in einer Word-Tabelle abrufen. |
 | [Tabellenposition abrufen](./get-table-position/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Position einer Tabelle in einem Word-Dokument abrufen. |
 | [Schwebende Tabellenposition abrufen](./get-floating-table-position/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET die Position schwebender Tabellen in einem Word-Dokument abrufen. |

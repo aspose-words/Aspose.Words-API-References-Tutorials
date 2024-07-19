@@ -7,38 +7,70 @@ type: docs
 weight: 10
 url: /vi/net/programming-with-charts/insert-area-chart/
 ---
+## Giới thiệu
 
-Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để chèn biểu đồ vùng vào tài liệu. Mã nguồn được cung cấp trình bày cách tạo biểu đồ, thêm dữ liệu chuỗi và lưu tài liệu.
+Chào mừng bạn đến với hướng dẫn từng bước này về cách chèn biểu đồ vùng vào tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay chỉ mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn mọi thứ bạn cần biết để tạo biểu đồ vùng đầy thông tin và ấn tượng trong tài liệu Word của bạn. Chúng tôi sẽ đề cập đến các điều kiện tiên quyết, chỉ cho bạn cách nhập các không gian tên cần thiết và hướng dẫn bạn qua từng bước của quy trình bằng các hướng dẫn rõ ràng, dễ thực hiện.
 
-## Bước 1: Thiết lập dự án
+## Điều kiện tiên quyết
 
-Đảm bảo rằng bạn có các điều kiện tiên quyết sau:
+Trước khi chúng ta đi sâu vào, hãy đảm bảo bạn có mọi thứ bạn cần để bắt đầu:
 
-- Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
-- Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Bạn có thể tải nó xuống[đây](https://releases.aspose.com/words/net/).
+2. .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework trên máy của mình.
+3. IDE: Môi trường phát triển tích hợp (IDE) như Visual Studio để viết và thực thi mã của bạn.
+4. Kiến thức cơ bản về C#: Hiểu biết cơ bản về lập trình C# sẽ rất hữu ích.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
+Sau khi đã có những điều kiện tiên quyết này, bạn đã sẵn sàng bắt đầu tạo các biểu đồ vùng đẹp mắt trong tài liệu Word của mình.
 
- Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết. Các không gian tên này cung cấp các lớp và phương thức cần thiết để làm việc với tài liệu Word và biểu đồ trong Aspose.Words for .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using System;
+```
+
+Bây giờ chúng ta đã nhập các không gian tên thiết yếu, hãy chuyển sang tạo tài liệu và chèn biểu đồ vùng từng bước.
+
+## Bước 1: Tạo tài liệu Word mới
+
+Hãy bắt đầu bằng cách tạo một tài liệu Word mới. Đây sẽ là cơ sở nơi chúng ta sẽ chèn biểu đồ vùng của mình.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tiếp theo, sử dụng`InsertChart` phương pháp của`DocumentBuilder` để chèn biểu đồ vùng vào tài liệu.
+ Ở bước này, chúng ta khởi tạo một`Document` đối tượng đại diện cho tài liệu Word của chúng tôi.
+
+## Bước 2: Sử dụng DocumentBuilder để chèn biểu đồ
+
+ Tiếp theo, chúng ta sẽ sử dụng`DocumentBuilder` class để chèn biểu đồ vùng vào tài liệu của chúng tôi.
 
 ```csharp
+DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
+```
+
+ Ở đây, chúng tôi tạo ra một`DocumentBuilder` đối tượng và sử dụng nó để chèn biểu đồ vùng có kích thước cụ thể (432x252) vào tài liệu của chúng tôi.
+
+## Bước 3: Truy cập đối tượng biểu đồ
+
+ Sau khi chèn biểu đồ, chúng ta cần truy cập vào`Chart` đối tượng để tùy chỉnh biểu đồ khu vực của chúng tôi.
+
+```csharp
 Chart chart = shape.Chart;
 ```
 
-## Bước 3: Thêm dữ liệu chuỗi vào biểu đồ
+ Dòng mã này truy xuất`Chart` đối tượng từ hình dạng chúng ta vừa chèn.
 
-Thêm dữ liệu chuỗi vào biểu đồ. Trong ví dụ này, chúng tôi sẽ thêm năm điểm dữ liệu có ngày và giá trị tương ứng.
+## Bước 4: Thêm dữ liệu chuỗi vào biểu đồ
+
+Bây giờ là lúc thêm một số dữ liệu vào biểu đồ của chúng ta. Chúng tôi sẽ thêm một chuỗi có ngày tháng và giá trị tương ứng.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new []
@@ -52,62 +84,35 @@ chart.Series.Add("Aspose Series 1", new []
 new double[] { 32, 32, 28, 12, 15 });
 ```
 
-## Bước 4: Lưu tài liệu
+Trong bước này, chúng tôi thêm một chuỗi có tên "Aspose Series 1" với một tập hợp ngày và giá trị tương ứng.
 
- Cuối cùng, lưu tài liệu vào thư mục đã chỉ định bằng cách sử dụng lệnh`Save` phương pháp của`Document` sự vật.
+## Bước 5: Lưu tài liệu
+
+Cuối cùng, chúng ta sẽ lưu tài liệu của mình với biểu đồ vùng được chèn.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertAreaChart.docx");
 ```
 
-Điều này hoàn tất việc triển khai chèn biểu đồ vùng bằng Aspose.Words cho .NET.
+Dòng mã này lưu tài liệu vào thư mục được chỉ định với tên tệp đã cho.
 
-### Mã nguồn ví dụ cho Chèn biểu đồ vùng bằng Aspose.Words cho .NET 
+## Phần kết luận
 
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Chúc mừng! Bạn đã chèn thành công biểu đồ vùng vào tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đã hướng dẫn bạn qua từng bước, từ thiết lập môi trường cho đến lưu tài liệu cuối cùng. Với Aspose.Words cho .NET, bạn có thể tạo nhiều loại biểu đồ và các thành phần phức tạp khác trong tài liệu Word của mình, làm cho báo cáo và bản trình bày của bạn trở nên năng động và giàu thông tin hơn.
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Add("Aspose Series 1", new []
-		{
-			new DateTime(2002, 05, 01),
-			new DateTime(2002, 06, 01),
-			new DateTime(2002, 07, 01),
-			new DateTime(2002, 08, 01),
-			new DateTime(2002, 09, 01)
-		}, 
-		new double[] { 32, 32, 28, 12, 15 });
-	doc.Save(dataDir + "WorkingWithCharts.InsertAreaChart.docx");
-```
+## Câu hỏi thường gặp
 
-### Phần kết luận
+### Tôi có thể sử dụng Aspose.Words cho .NET với các ngôn ngữ .NET khác không?
+Có, Aspose.Words for .NET hỗ trợ các ngôn ngữ .NET khác như VB.NET.
 
-Trong hướng dẫn này, bạn đã học cách chèn biểu đồ vùng vào tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước và sử dụng mã nguồn được cung cấp, bạn có thể tạo tài liệu mới, chèn biểu đồ vùng, thêm dữ liệu chuỗi và lưu tài liệu cùng với biểu đồ.
+### Có thể tùy chỉnh sự xuất hiện của biểu đồ?
+Tuyệt đối! Aspose.Words for .NET cung cấp các tùy chọn mở rộng để tùy chỉnh giao diện biểu đồ của bạn.
 
-Aspose.Words for .NET cung cấp API mạnh mẽ để Xử lý Từ với các biểu đồ trong tài liệu Word. Chỉ với một vài dòng mã, bạn có thể tạo biểu đồ vùng trông chuyên nghiệp và tùy chỉnh chúng theo yêu cầu của mình. Biểu đồ vùng thường được sử dụng để hiển thị mức độ và xu hướng của dữ liệu theo thời gian hoặc danh mục.
+### Tôi có thể thêm nhiều biểu đồ vào một tài liệu Word không?
+Có, bạn có thể chèn bao nhiêu biểu đồ tùy ý vào một tài liệu Word.
 
-Bằng cách sử dụng Aspose.Words cho .NET, bạn có thể tự động hóa quá trình tạo tài liệu bằng biểu đồ vùng, tiết kiệm thời gian và công sức khi tạo tài liệu thủ công. Thư viện cung cấp nhiều loại biểu đồ và tùy chọn tùy chỉnh, cho phép bạn tạo các biểu đồ mang tính thông tin và hấp dẫn trực quan trong tài liệu Word của mình.
+### Aspose.Words for .NET có hỗ trợ các loại biểu đồ khác không?
+Có, Aspose.Words for .NET hỗ trợ nhiều loại biểu đồ khác nhau bao gồm thanh, đường, hình tròn, v.v.
 
-### Câu hỏi thường gặp
-
-#### Q1. Aspose.Words cho .NET là gì?
-Aspose.Words for .NET là một thư viện xử lý tài liệu mạnh mẽ cho phép các nhà phát triển tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình trong các ứng dụng .NET. Nó cung cấp một bộ API toàn diện để Xử lý văn bản với các thành phần tài liệu, bao gồm biểu đồ, đoạn văn, bảng, v.v.
-
-#### Q2. Làm cách nào để cài đặt Aspose.Words cho .NET?
-Để cài đặt Aspose.Words cho .NET, bạn có thể sử dụng trình quản lý gói NuGet trong Visual Studio để cài đặt thư viện trực tiếp vào dự án của mình. Chỉ cần tìm kiếm "Aspose.Words" trong trình quản lý gói NuGet và cài đặt gói.
-
-#### Q3. Tôi có thể tùy chỉnh hình thức của biểu đồ vùng không?
-Có, bằng cách sử dụng Aspose.Words cho .NET, bạn có thể tùy chỉnh các khía cạnh khác nhau về hình thức của biểu đồ vùng. Bạn có thể sửa đổi các thuộc tính như tiêu đề biểu đồ, màu chuỗi, nhãn trục và định dạng vùng biểu đồ. Thư viện cung cấp một bộ API phong phú để kiểm soát các thành phần trực quan của biểu đồ và tạo giao diện tùy chỉnh phù hợp với nhu cầu của bạn.
-
-#### Q4. Tôi có thể thêm nhiều chuỗi vào biểu đồ vùng không?
-Có, bạn có thể thêm nhiều chuỗi vào biểu đồ vùng bằng Aspose.Words for .NET. Mỗi chuỗi đại diện cho một tập hợp các điểm dữ liệu được vẽ trên biểu đồ. Bạn có thể thêm chuỗi với các tập dữ liệu khác nhau và tùy chỉnh từng chuỗi riêng lẻ, bao gồm tên, điểm dữ liệu và hình thức của chuỗi.
-
-#### Q5. Tôi có thể lưu tài liệu có biểu đồ vùng được chèn ở các định dạng khác nhau không?
- Có, Aspose.Words for .NET cho phép bạn lưu tài liệu có biểu đồ vùng được chèn ở nhiều định dạng khác nhau, chẳng hạn như DOCX, PDF, HTML, v.v. Bạn có thể chọn định dạng đầu ra mong muốn dựa trên yêu cầu của mình và sử dụng`Save` phương pháp của`Document` đối tượng để lưu tài liệu. Biểu đồ vùng được chèn sẽ được giữ nguyên trong tài liệu đã lưu.
-
-#### Q6. Tôi có thể sửa đổi dữ liệu và hình thức của biểu đồ vùng sau khi chèn nó không?
-Có, sau khi chèn biểu đồ vùng vào tài liệu, bạn có thể sửa đổi dữ liệu và hình thức của biểu đồ bằng cách sử dụng API do Aspose.Words cung cấp cho .NET. Bạn có thể cập nhật dữ liệu chuỗi, thay đổi loại biểu đồ, tùy chỉnh thuộc tính trục và áp dụng các tùy chọn định dạng để tạo biểu đồ động và tương tác trong tài liệu Word của mình.
+### Tôi có thể lấy giấy phép tạm thời cho Aspose.Words cho .NET ở đâu?
+ Bạn có thể xin giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/).

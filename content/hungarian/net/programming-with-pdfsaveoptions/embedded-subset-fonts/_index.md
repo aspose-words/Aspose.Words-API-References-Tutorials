@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
 
-Ez a cikk lépésről lépésre ismerteti a betűkészlet részhalmaz beágyazási funkciójának használatát az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megértheti, hogyan ágyazhat be betűtípusok részhalmazait egy dokumentumba, és hogyan hozhat létre PDF-fájlt, amely csak a dokumentumban használt karakterjeleket tartalmazza.
+Ez a cikk lépésről lépésre ismerteti a betűkészlet részhalmaz beágyazási funkciójának használatát az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megértheti, hogyan ágyazhat be betűtípus-alkészleteket egy dokumentumba, és hogyan hozhat létre PDF-fájlt, amely csak a dokumentumban használt karakterjeleket tartalmazza.
 
 Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
 
@@ -68,7 +68,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan ágyazhatunk be betűtípus-alkész
 
 ### Gyakran Ismételt Kérdések
 
-#### K: Mit jelent a betűkészlet-alkészletek beágyazása egy PDF-dokumentumba?
+#### K: Mit jelent a betűtípus-alkészletek beágyazása egy PDF-dokumentumba?
 V: Betűkészlet-alkészletek beágyazása egy PDF-dokumentumba az a folyamat, amely során csak a dokumentumban használt karakterjeleket veszik figyelembe, nem pedig az összes betűtípust. Ez csökkenti a PDF-fájl méretét, mivel csak a dokumentumban ténylegesen használt karakterek megjelenítéséhez szükséges betűtípus-adatokat tartalmazza.
 
 #### K: Mi a különbség a teljes betűtípusok és a betűkészletek részhalmazainak beágyazása között?
@@ -92,4 +92,4 @@ Csökkentett PDF-fájlméret: Ha csak a dokumentumban használt karakterjeleket 
 
 A dokumentum megjelenésének megőrzése: A PDF fájlban található betűkészlet-alkészletek lehetővé teszik a dokumentum megjelenésének reprodukálását csak a ténylegesen használt karakterek felhasználásával.
 
-Kompatibilitás a Licenc korlátozásaival: A betűtípusok részhalmazainak beágyazása előnyben részesíthető olyan esetekben, amikor a teljes betűtípusokat nem lehet törvényesen beágyazni a licenckorlátozások miatt.
+Kompatibilitás a Licenc korlátozásaival: A betűtípusok részhalmazainak beágyazása előnyben részesíthető olyan esetekben, amikor a teljes betűtípusokat nem lehet legálisan beágyazni a licenckorlátozások miatt.

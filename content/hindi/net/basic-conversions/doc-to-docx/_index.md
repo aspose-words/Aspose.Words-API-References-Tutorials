@@ -1,6 +1,6 @@
 ---
-title: Docx को Docx में बदलें
-linktitle: Docx को Docx में बदलें
+title: Docx में परिवर्तित करें
+linktitle: Docx में परिवर्तित करें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
 description: .NET के लिए Aspose.Words का उपयोग करके DOC को DOCX में बदलने का तरीका जानें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका। डेवलपर्स के लिए बिल्कुल सही।
 type: docs

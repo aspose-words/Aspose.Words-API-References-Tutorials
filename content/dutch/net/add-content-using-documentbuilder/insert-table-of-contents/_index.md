@@ -127,4 +127,4 @@ Aspose.Words ondersteunt het genereren van meerdere inhoudsopgaven met verschill
 Ja, Aspose.Words garandeert compatibiliteit met verschillende versies van Microsoft Word-formaten.
 
 ### Waar kan ik meer hulp en ondersteuning vinden voor Aspose.Words?
-Voor meer hulp kunt u terecht op de[Aspose.Words-forum](https://forum.aspose.com/c/words/8) of bekijk de[officiële documentatie](https://reference.aspose.com/words/net/).
+ Voor meer hulp kunt u terecht op de[Aspose.Words-forum](https://forum.aspose.com/c/words/8) of bekijk de[officiële documentatie](https://reference.aspose.com/words/net/).

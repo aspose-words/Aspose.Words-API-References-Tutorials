@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Di sini kita menggunakan pembuat dokumen untuk membuat tabel dengan dua baris header dan beberapa baris data. Itu`RowFormat.HeadingFormat`parameter digunakan untuk menandai baris header yang harus diulang pada halaman berikutnya.
+ Di sini kita menggunakan pembuat dokumen untuk membuat tabel dengan dua baris header dan beberapa baris data. Itu`RowFormat.HeadingFormat` parameter digunakan untuk menandai baris header yang harus diulang pada halaman berikutnya.
 
 ## Langkah 4: Menyimpan dokumen yang dimodifikasi
 Akhirnya AS

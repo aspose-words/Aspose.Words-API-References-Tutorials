@@ -45,7 +45,7 @@ Cuối cùng, chúng ta có thể lưu tài liệu ở định dạng mong muố
 // Sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Chèn siêu liên kết.
+//Chèn siêu liên kết.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", sai);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

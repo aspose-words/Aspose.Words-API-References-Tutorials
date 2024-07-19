@@ -18,7 +18,7 @@ Belge karşılaştırması, iki belgenin analiz edilmesini ve yasal, düzenleyic
 
 ## Temel Belge Karşılaştırması
 
- Belge karşılaştırmanın temelleriyle başlayalım. İki belge kullanacağız,`docA` Ve`docB`ve bunları karşılaştırın.
+ Belge karşılaştırmanın temelleriyle başlayalım. İki belge kullanacağız,`docA`Ve`docB`ve bunları karşılaştırın.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-Bu kod parçacığında iki belge yüklüyoruz,`docA` Ve`docB` ve ardından şunu kullanın:`compare` bunları karşılaştırma yöntemi. Yazarı "kullanıcı" olarak belirtiyoruz ve karşılaştırma yapılıyor. Son olarak dokümanlar arasındaki farklılıkları gösteren revizyonların olup olmadığını kontrol ediyoruz.
+Bu kod parçacığında iki belge yüklüyoruz,`docA`Ve`docB` ve ardından şunu kullanın:`compare` bunları karşılaştırma yöntemi. Yazarı "kullanıcı" olarak belirtiyoruz ve karşılaştırma yapılıyor. Son olarak dokümanlar arasındaki farklılıkları gösteren revizyonların olup olmadığını kontrol ediyoruz.
 
 ## Karşılaştırmayı Seçeneklerle Özelleştirme
 

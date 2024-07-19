@@ -34,6 +34,6 @@ Aprenda como comparar versões de documentos usando Aspose.Words for Java. Guia 
 ### [Aceitando e rejeitando alterações em documentos](./accepting-rejecting-document-changes/)
 Aprenda como gerenciar alterações em documentos sem esforço com Aspose.Words for Java. Aceite e rejeite revisões perfeitamente.
 ### [Controle e histórico de versões de documentos](./document-version-control-history/)
-Aprenda o controle eficiente de versão de documentos usando Aspose.Words for Java. Gerencie alterações, colabore perfeitamente e acompanhe as revisões sem esforço.
+Aprenda o controle eficiente de versão de documentos usando Aspose.Words para Java. Gerencie alterações, colabore perfeitamente e acompanhe as revisões sem esforço.
 ### [Colaboração e revisão de documentos](./document-collaboration-review/)
 Desbloqueie a colaboração e revisão eficiente de documentos com Aspose.Words para Java. Aprenda como rastrear alterações, compartilhar documentos e agilizar o fluxo de trabalho.

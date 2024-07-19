@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Inicializujte dokument
 
- Začněme vytvořením nového dokumentu aplikace Word. Použijeme`Document` a`DocumentBuilder` třídy z Aspose.Words.
+ Začněme vytvořením nového dokumentu aplikace Word. Použijeme`Document`a`DocumentBuilder` třídy z Aspose.Words.
 
 ```csharp
 Document doc = new Document();

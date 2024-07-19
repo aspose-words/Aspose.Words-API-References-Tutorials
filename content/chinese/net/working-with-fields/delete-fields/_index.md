@@ -2,7 +2,7 @@
 title: 删除字段
 linktitle: 删除字段
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 以编程方式从 Word 文档中删除字段。带有代码示例的清晰、分步指南。
+description: 了解如何使用 Aspose.Words for .NET 以编程方式从 Word 文档中删除字段。带有代码示例的清晰分步指南。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/delete-fields/
@@ -29,7 +29,7 @@ url: /zh/net/working-with-fields/delete-fields/
 
 ## 导入命名空间
 
-在开始实现之前，请确保在 C# 代码文件中包含必要的命名空间：
+在开始实施之前，请确保在 C# 代码文件中包含必要的命名空间：
 
 ```csharp
 using Aspose.Words;
@@ -69,16 +69,12 @@ Document doc = new Document(dataDir + "your-document.docx");
 遍历文档中的所有字段并将其删除：
 
 ```csharp
-for (int i = doc.Range.Fields.Count - 1; i >= 0; i--)
-{
-    Field field = doc.Range.Fields[i];
-    field.Remove();
-}
+doc.Range.Fields.ToList().ForEach(f => f.Remove());
 ```
 
 此循环向后迭代字段集合，以避免在迭代时修改集合的问题。
 
-## 步骤 6：保存修改后的文档
+## 步骤6：保存修改后的文档
 
 删除字段后保存文档：
 

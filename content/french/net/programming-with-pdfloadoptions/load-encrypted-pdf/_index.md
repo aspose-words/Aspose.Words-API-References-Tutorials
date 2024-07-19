@@ -19,7 +19,7 @@ La fonctionnalité Charger un PDF crypté d'Aspose.Words for .NET vous permet de
 La première étape consiste à charger le document PDF crypté dans votre application. Voici comment procéder :
 
 ```csharp
-// Chemin d'accès au répertoire des documents.
+//Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

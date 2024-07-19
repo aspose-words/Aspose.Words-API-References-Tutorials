@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### P: Como posso mover um nó em um documento controlado sem gerar revisões?
 
- R: Se quiser mover um nó em um documento rastreado sem gerar revisões, você pode usar o`Remove` e`InsertAfter` ou`InsertBefore` métodos do`Node` objeto. Por exemplo, para mover um parágrafo após outro parágrafo, você pode usar o seguinte código:
+ R: Se quiser mover um nó em um documento rastreado sem gerar revisões, você pode usar o`Remove`e`InsertAfter` ou`InsertBefore` métodos do`Node` objeto. Por exemplo, para mover um parágrafo após outro parágrafo, você pode usar o seguinte código:
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

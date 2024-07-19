@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Steg 2: Konfigurera laddningsalternativ med teckensnittsinställningar
- Därefter skapar vi en instans av`LoadOptions` och ange teckensnittsinställningar genom att skapa en ny instans av`FontSettings` och tilldela den till`loadOptions.FontSettings`.
+ Därefter skapar vi en instans av`LoadOptions`och ange teckensnittsinställningar genom att skapa en ny instans av`FontSettings` och tilldela den till`loadOptions.FontSettings`.
 
 ```csharp
 // Konfigurera laddningsalternativ med teckensnittsinställningar
@@ -57,7 +57,7 @@ I den här handledningen såg vi hur man använder laddningsalternativ med tecke
 
 #### F: Hur kan jag ange ett standardteckensnitt när jag laddar ett dokument i Aspose.Words?
 
-S: För att ange ett standardteckensnitt när du laddar ett dokument i Aspose.Words kan du använda`LoadOptions` klass och ställ in`DefaultFontName` egenskap till namnet på det önskade teckensnittet.
+ S: För att ange ett standardteckensnitt när du laddar ett dokument i Aspose.Words kan du använda`LoadOptions` klass och ställ in`DefaultFontName` egenskap till namnet på det önskade teckensnittet.
 
 #### F: Vilka andra teckensnittsinställningar kan jag ange med laddningsalternativ i Aspose.Words?
 
@@ -69,4 +69,4 @@ S: Om det angivna standardteckensnittet inte är tillgängligt när dokumentet l
 
 #### F: Kan jag ange olika teckensnittsinställningar för varje uppladdat dokument?
 
- S: Ja, du kan ange olika teckensnittsinställningar för varje laddat dokument genom att använda separata instanser av`LoadOptions`klass och ställ in önskade teckensnittsinställningar för varje instans. Detta gör att du kan anpassa teckensnittets utseende för varje dokument oberoende.
+ S: Ja, du kan ange olika teckensnittsinställningar för varje laddat dokument genom att använda separata instanser av`LoadOptions` klass och ställ in önskade teckensnittsinställningar för varje instans. Detta gör att du kan anpassa teckensnittets utseende för varje dokument oberoende av varandra.

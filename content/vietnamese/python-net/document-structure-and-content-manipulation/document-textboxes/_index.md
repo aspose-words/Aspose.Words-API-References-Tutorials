@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Hộp văn bản định vị
 
- Kiểm soát vị trí của hộp văn bản là rất quan trọng để đạt được bố cục mong muốn. Bạn có thể thiết lập vị trí bằng cách sử dụng`left` Và`top` của cải. Ví dụ:
+ Kiểm soát vị trí của hộp văn bản là rất quan trọng để đạt được bố cục mong muốn. Bạn có thể thiết lập vị trí bằng cách sử dụng`left`Và`top` của cải. Ví dụ:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ Trong hướng dẫn này, chúng tôi đã khám phá quy trình nâng cao nộ
 
 ### Làm cách nào để thay đổi kích thước hộp văn bản?
 
- Để thay đổi kích thước hộp văn bản, bạn có thể điều chỉnh các thuộc tính chiều rộng và chiều cao của nó bằng cách sử dụng`width` Và`height` thuộc tính.
+ Để thay đổi kích thước hộp văn bản, bạn có thể điều chỉnh các thuộc tính chiều rộng và chiều cao của nó bằng cách sử dụng`width`Và`height` thuộc tính.
 
 ### Tôi có thể xoay hộp văn bản không?
 

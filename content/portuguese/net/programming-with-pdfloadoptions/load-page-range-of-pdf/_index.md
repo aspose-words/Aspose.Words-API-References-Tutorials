@@ -15,7 +15,7 @@ Neste tutorial, orientaremos você sobre como carregar um intervalo de páginas 
 Use o código a seguir para carregar um intervalo de páginas específico de um documento PDF:
 
 ```csharp
-// Caminho para o diretório de documentos.
+//Caminho para o diretório de documentos.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Neste exemplo, estamos carregando a primeira página do documento PDF. Você pode alterar os valores de`PageIndex` e`PageCount` para o intervalo de páginas desejado.
+ Neste exemplo, estamos carregando a primeira página do documento PDF. Você pode alterar os valores de`PageIndex`e`PageCount` para o intervalo de páginas desejado.
 
 ## Passo 2: Salvando o documento
 

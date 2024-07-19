@@ -2,76 +2,87 @@
 title: قائمة الاحتفاظ بتنسيق المصدر
 linktitle: قائمة الاحتفاظ بتنسيق المصدر
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية الحفاظ على تنسيق القائمة أثناء الانضمام إلى مستندات Word وإلحاقها باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية دمج مستندات Word مع الحفاظ على التنسيق باستخدام Aspose.Words لـ .NET. يوفر هذا البرنامج التعليمي إرشادات خطوة بخطوة لدمج المستندات بسلاسة.
 type: docs
 weight: 10
 url: /ar/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## مقدمة
 
-سيرشدك هذا البرنامج التعليمي خلال عملية استخدام ميزة List Keep Source Formatting في Aspose.Words for .NET. تسمح لك هذه الميزة بالانضمام إلى مستندات Word وإلحاقها مع الحفاظ على التنسيق المصدر للقوائم.
+في هذا البرنامج التعليمي، سنستكشف كيفية استخدام Aspose.Words لـ .NET لدمج المستندات مع الحفاظ على تنسيق المصدر. تعد هذه الإمكانية ضرورية للسيناريوهات التي يكون فيها الحفاظ على المظهر الأصلي للمستندات أمرًا بالغ الأهمية.
 
 ## المتطلبات الأساسية
 
-قبل أن تبدأ، تأكد من أن لديك ما يلي:
+قبل المتابعة، تأكد من توفر المتطلبات الأساسية التالية:
 
-1. تم تثبيت Aspose.Words لـ .NET. يمكنك تنزيله من موقع Aspose أو تثبيته عبر NuGet.
-2. Visual Studio أو أي بيئة تطوير أخرى لـ C#.
+- تم تثبيت Visual Studio على جهازك.
+-  تم تثبيت Aspose.Words لـ .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+- الإلمام الأساسي ببرمجة C# وبيئة .NET.
 
-## الخطوة 1: تهيئة أدلة المستندات
+## استيراد مساحات الأسماء
 
- أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. تعديل قيمة`dataDir` متغير إلى المسار حيث توجد المستندات الخاصة بك.
+أولاً، قم باستيراد مساحات الأسماء الضرورية إلى مشروع C# الخاص بك:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## الخطوة 2: قم بتحميل مستندات المصدر والوجهة
+## الخطوة 1: قم بإعداد مشروعك
 
-بعد ذلك، تحتاج إلى تحميل المستندات المصدر والوجهة باستخدام Aspose.Words`Document` فصل. قم بتحديث أسماء الملفات في`Document` مُنشئ وفقًا لأسماء المستندات الخاصة بك.
+ابدأ بإنشاء مشروع C# جديد في Visual Studio. تأكد من الإشارة إلى Aspose.Words for .NET في مشروعك. إذا لم يكن الأمر كذلك، فيمكنك إضافته عبر NuGet Package Manager.
+
+## الخطوة 2: تهيئة متغيرات المستند
 
 ```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// تحميل مستندات المصدر والوجهة
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## الخطوة 3: قم بتعيين المستند المصدر للتدفق المستمر
+## الخطوة 3: تكوين إعدادات القسم
 
- للتأكد من أن المحتوى من المستند المصدر يتدفق بشكل مستمر عند إلحاقه بالمستند الوجهة، تحتاج إلى تعيين`SectionStart` خاصية القسم الأول في الوثيقة المصدر ل`SectionStart.Continuous`.
+للحفاظ على التدفق المستمر في المستند المدمج، اضبط بداية القسم:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## الخطوة 4: إلحاق المستند المصدر بالمستند الوجهة
+## الخطوة 4: دمج المستندات
 
- الآن، يمكنك إلحاق المستند المصدر بالمستند الوجهة باستخدام الملف`AppendDocument` طريقة`Document` فصل. ال`ImportFormatMode.KeepSourceFormatting`تضمن المعلمة الحفاظ على تنسيق المصدر، بما في ذلك تنسيق القوائم، أثناء عملية الإلحاق.
+إلحاق محتوى المستند المصدر (`srcDoc`) إلى المستند الوجهة (`dstDoc`) مع الاحتفاظ بالتنسيق الأصلي:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## الخطوة 5: احفظ الوثيقة النهائية
+## الخطوة 5: احفظ المستند المدمج
 
- أخيرًا، احفظ المستند المدمج مع تمكين ميزة تنسيق الاحتفاظ بالقائمة باستخدام الملف`Save` طريقة`Document` فصل.
+وأخيرًا، احفظ المستند المدمج في الدليل المحدد:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لتنسيق قائمة الاحتفاظ بالمصدر باستخدام Aspose.Words لـ .NET 
+## خاتمة
 
-إليك الكود المصدري الكامل لميزة List Keep Source Formatting في C# باستخدام Aspose.Words for .NET:
+في الختام، يعد دمج المستندات مع الحفاظ على تنسيقها الأصلي أمرًا سهلاً مع Aspose.Words for .NET. لقد أرشدك هذا البرنامج التعليمي خلال العملية، مما يضمن أن المستند المدمج يحافظ على تخطيط المستند المصدر ونمطه.
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## الأسئلة الشائعة
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// قم بإلحاق محتوى المستند بحيث يتدفق بشكل مستمر.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### ماذا لو كانت مستنداتي ذات أنماط مختلفة؟
+يتعامل Aspose.Words مع الأنماط المختلفة بأمان، مع الحفاظ على التنسيق الأصلي قدر الإمكان.
 
-هذا كل شيء! لقد نجحت في تنفيذ ميزة تنسيق قائمة الاحتفاظ بالمصدر باستخدام Aspose.Words لـ .NET. سيحتوي المستند النهائي على المحتوى المدمج مع الاحتفاظ بتنسيق قائمة المستند المصدر.
+### هل يمكنني دمج المستندات ذات التنسيقات المختلفة؟
+نعم، يدعم Aspose.Words دمج المستندات بتنسيقات مختلفة، بما في ذلك DOCX وDOC وRTF وغيرها.
+
+### هل Aspose.Words متوافق مع .NET Core؟
+نعم، Aspose.Words يدعم بشكل كامل .NET Core، مما يتيح التطوير عبر الأنظمة الأساسية.
+
+### كيف يمكنني التعامل مع المستندات الكبيرة بكفاءة؟
+يوفر Aspose.Words واجهات برمجة تطبيقات فعالة لمعالجة المستندات، مُحسّنة للأداء حتى مع المستندات الكبيرة.
+
+### أين يمكنني العثور على المزيد من الأمثلة والوثائق؟
+ يمكنك استكشاف المزيد من الأمثلة والوثائق التفصيلية على[Aspose.توثيق الكلمات](https://reference.aspose.com/words/net/).

@@ -30,7 +30,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 ```
 
 ## Stap 4: Definieer de stijl van de tabel
@@ -51,35 +51,35 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
  Om de grootte van de array automatisch aan te passen op basis van de inhoud, gebruiken we de`AutoFit()` methode met de`AutoFitBehavior.AutoFitToContents` gedrag.
 
 ```csharp
-table. AutoFit(AutoFitBehavior.AutoFitToContents);
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## Stap 7: Voeg inhoud toe aan cellen
- Nu kunnen we inhoud aan cellen toevoegen met behulp van de`Writeln()` En`InsertCell()` methoden van de documentbouwer. In dit voorbeeld voegen we de kopteksten toe voor 'Artikel' en 'Aantal (
+ Nu kunnen we inhoud aan cellen toevoegen met behulp van de`Writeln()`En`InsertCell()` methoden van de documentbouwer. In dit voorbeeld voegen we de kopteksten toe voor 'Artikel' en 'Aantal (
 
 kg)" en de bijbehorende gegevens.
 
 ```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
-builder. InsertCell();
-builder. Writen("Quantity (kg)");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Apples");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("20");
-builder. EndRow();
-builder. InsertCell();
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Bananas");
-builder. InsertCell();
-builder. Writen("40");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("40");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Carrots");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("50");
-builder. EndRow();
+builder.EndRow();
 ```
 
 ## Stap 8: Sla het gewijzigde document op
@@ -94,41 +94,41 @@ Gefeliciteerd! U hebt nu een op maat gemaakte tabel gebouwd met Aspose.Words voo
 ### Voorbeeldbroncode voor Build Table With Style met Aspose.Words voor .NET 
 
 ```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	// We moeten eerst minimaal één rij invoegen voordat we de tabelopmaak instellen.
-	builder.InsertCell();
-	// Stel de gebruikte tabelstijl in op basis van de unieke stijl-ID.
-	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	// Pas toe welke functies moeten worden opgemaakt door de stijl.
-	table.StyleOptions =
-		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-	table.AutoFit(AutoFitBehavior.AutoFitToContents);
-	builder.Writeln("Item");
-	builder.CellFormat.RightPadding = 40;
-	builder.InsertCell();
-	builder.Writeln("Quantity (kg)");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Apples");
-	builder.InsertCell();
-	builder.Writeln("20");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Bananas");
-	builder.InsertCell();
-	builder.Writeln("40");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Carrots");
-	builder.InsertCell();
-	builder.Writeln("50");
-	builder.EndRow();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+// We moeten eerst minimaal één rij invoegen voordat we de tabelopmaak instellen.
+builder.InsertCell();
+// Stel de gebruikte tabelstijl in op basis van de unieke stijl-ID.
+table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
+// Pas toe welke functies moeten worden opgemaakt door de stijl.
+table.StyleOptions =
+	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
+builder.Writeln("Item");
+builder.CellFormat.RightPadding = 40;
+builder.InsertCell();
+builder.Writeln("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Apples");
+builder.InsertCell();
+builder.Writeln("20");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Bananas");
+builder.InsertCell();
+builder.Writeln("40");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Carrots");
+builder.InsertCell();
+builder.Writeln("50");
+builder.EndRow();
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## Conclusie

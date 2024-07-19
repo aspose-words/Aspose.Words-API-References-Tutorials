@@ -2,74 +2,86 @@
 title: Word Belgesinde Koruma Türünü Alın
 linktitle: Word Belgesinde Koruma Türünü Alın
 second_title: Aspose.Words Belge İşleme API'si
-description: Bir belgenin koruma türünü belirlemek için Aspose.Words for .NET'in word belgesinde Koruma Türünü Al işlevini nasıl kullanacağınızı öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerinin koruma türünü nasıl kontrol edeceğinizi öğrenin. Adım adım kılavuz, kod örnekleri ve SSS'ler dahildir.
 type: docs
 weight: 10
 url: /tr/net/document-protection/get-protection-type/
 ---
-Aspose.Words for .NET'in Koruma Türünü Al özelliğinin C# kaynak kodunu açıklayan bu adım adım kılavuza hoş geldiniz. Bu makalede, bir belgenin koruma türünü belirlemek için bu güçlü özelliğin nasıl kullanılacağını size göstereceğiz. Dosyalarınızın gizliliğini ve bütünlüğünü sağlamak için belge koruması çok önemlidir. Aspose.Words for .NET'i entegre etmek ve Koruma Türünü Al özelliğini kullanmak için gereken adımlarda size yol göstereceğiz.
+## giriiş
 
-## Adım 1: Belgeyi Yükleme
+Selam! Word belgelerinizin koruma türünü programlı olarak nasıl kontrol edeceğinizi hiç merak ettiniz mi? İster hassas verileri güvence altına alıyor ister yalnızca belgenin durumunu merak ediyor olun, koruma türünün nasıl alınacağını bilmek son derece kullanışlı olabilir. Bugün, Word belgeleriyle çalışmayı kolaylaştıran güçlü bir kütüphane olan Aspose.Words for .NET'i kullanarak süreci inceleyeceğiz. Kemerlerinizi bağlayın ve dalmaya başlayalım!
 
-Koruma Türünü Al özelliğini kullanmanın ilk adımı, üzerinde çalışmak istediğiniz belgeyi yüklemektir. Bunu Aspose.Words for .NET tarafından sağlanan Document sınıfını kullanarak yapabilirsiniz. Bir dosyadan belge yüklemek için örnek kod aşağıda verilmiştir:
+## Önkoşullar
+
+Kodlama kısmına geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1.  Aspose.Words for .NET Library: Henüz yapmadıysanız, indirip yükleyin.[Aspose.Words for .NET kütüphanesi](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio benzeri bir IDE.
+3. Temel C# Bilgisi: C# programlamaya aşinalık, takip etmenize yardımcı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Kodlamaya başlamadan önce gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words tarafından sağlanan tüm sınıflara ve yöntemlere erişebilmenizi sağlar.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
+using System;
+using Aspose.Words;
 ```
 
-Belge dosyanızın doğru yolunu belirttiğinizden emin olun.
+## Adım adım rehber
 
-## Adım 2: Koruma Türünü Alma
+Süreci basit, takip edilmesi kolay adımlara ayıralım. Her adım, görevin belirli bir bölümünde size rehberlik edecek ve her şeyi net bir şekilde anlamanızı sağlayacaktır.
 
-Belge yüklendikten sonra belgeye uygulanan koruma türünü almak için Document nesnesinin ProtectionType özelliğini kullanabilirsiniz. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+## 1. Adım: Projenizi Kurun
+
+İlk olarak C# projenizi Visual Studio'da ayarlayın. İşte nasıl:
+
+1. Yeni Bir Proje Oluşturun: Visual Studio'yu açın, Dosya > Yeni > Proje'ye gidin ve bir Konsol Uygulaması (.NET Core veya .NET Framework) seçin.
+2. Aspose.Words'ü yükleyin: Solution Explorer'da projenize sağ tıklayın, "NuGet Paketlerini Yönet" seçeneğini seçin, "Aspose.Words" ifadesini arayın ve yükleyin.
+
+## 2. Adım: Belgenizi Yükleyin
+
+ Artık projeniz ayarlandığına göre kontrol etmek istediğiniz Word belgesini yükleyelim. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolu ile.
+
+```csharp
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Document.docx");
+```
+
+## 3. Adım: Koruma Türünü Alın
+
+Sihir yapılan yer burasıdır! Aspose.Words'ü kullanarak belgenin koruma türünü alacağız.
 
 ```csharp
 ProtectionType protectionType = doc.ProtectionType;
 ```
 
-### Aspose.Words for .NET kullanarak Koruma Türünü Al için Örnek Kaynak Kodu
+## Adım 4: Koruma Türünü Görüntüleyin
 
-Aspose.Words for .NET'i kullanan Koruma Türünü Al işlevinin tam kaynak kodu:
+Son olarak koruma tipini konsolda görüntüleyelim. Bu, belgenizin mevcut koruma durumunu anlamanıza yardımcı olur.
 
 ```csharp
-Document doc = new Document(MyDir + "Document.docx");
-ProtectionType protectionType = doc.ProtectionType;
+Console.WriteLine("The protection type of the document is: " + protectionType);
 ```
 
 ## Çözüm
 
-Bu yazımızda bir belgenin koruma tipini belirlemek için Aspose.Words for .NET'in Koruma Tipini Al fonksiyonunun nasıl kullanılacağını anlattık. Açıklanan adımları takip ederek bu işlevselliği kendi C# projelerinize kolayca entegre edebilecek ve korunan belgeleri verimli bir şekilde yönetebileceksiniz. Aspose.Words for .NET mükemmel esneklik sunuyor
+İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinin koruma türünü başarıyla aldınız. Bu, belgelerinizin uygun şekilde korunmasını sağlamak veya yalnızca denetim amacıyla inanılmaz derecede yararlı olabilir. Aspose.Words'ün, Word belgelerini kolaylıkla değiştirmenize yardımcı olacak tonlarca başka özellik sunduğunu unutmayın. Bir deneyin ve mutlu kodlamalar yapın!
 
-### SSS'ler
+## SSS'ler
 
-#### S: Aspose.Words for .NET'teki ProtectionType özelliği nedir?
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmanıza, düzenlemenize, dönüştürmenize ve değiştirmenize olanak tanıyan güçlü bir kitaplıktır.
 
- C:`ProtectionType` Aspose.Words for .NET'teki özellik, bir Word belgesine uygulanan koruma türünü belirlemenizi sağlayan bir özelliktir. Belgenin yorumlara, revizyonlara, formlara veya diğer türdeki kısıtlamalara karşı korunup korunmadığı gibi belge koruma düzeyi hakkında bilgi sağlar.
+### Aspose.Words'ü ücretsiz kullanabilir miyim?
+ Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) ancak tam işlevsellik için bir lisans satın almanız gerekir. Kontrol et[satın alma seçenekleri](https://purchase.aspose.com/buy).
 
-#### S: Aspose.Words for .NET kullanarak bir belgenin koruma tipini nasıl alabilirim?
+### Aspose.Words hangi koruma türlerini tespit edebilir?
+Aspose.Words, NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments ve AllowOnlyFormFields gibi çeşitli koruma türlerini tespit edebilir.
 
-C: Aspose.Words for .NET kullanarak bir belgenin koruma tipini almak için şu adımları takip edebilirsiniz:
-1.  Belgeyi kullanarak yükleyin`Document` sınıf.
-2.  Erişmek`ProtectionType` mülkiyeti`Document`koruma türünü almak için nesne.
+### Sorunla karşılaşırsam nasıl destek alabilirim?
+ Her türlü sorun için adresini ziyaret edebilirsiniz.[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8)yardım için.
 
-#### S: ProtectionType özelliğini kullanarak bir belgenin formlar için mi yoksa form alanları için mi korunduğunu belirleyebilir miyim?
-
- C: Evet, bir belgenin formlar için mi, yoksa form alanları için mi korunduğunu aşağıdaki komutu kullanarak belirleyebilirsiniz:`ProtectionType` Aspose.Words for .NET'teki özellik. Koruma türü olarak ayarlanmışsa`AllowOnlyFormFields`belgenin korunduğunu ve yalnızca form alanlarının düzenlenebileceğini belirtir.
-
-#### S: ProtectionType özelliği başka hangi koruma türlerini döndürebilir?
-
- C:`ProtectionType` Aspose.Words for .NET'teki özellik, aşağıdakiler de dahil olmak üzere çeşitli koruma türlerini döndürebilir:
-- `NoProtection`: Belge korunmuyor.
-- `AllowOnlyRevisions`: Doküman koruma altındadır ve sadece revizyon yapılabilir.
-- `AllowOnlyComments`: Belge korumalıdır ve yalnızca yorum eklenebilir.
-- `AllowOnlyFormFields`: Belge korumalıdır ve yalnızca form alanları düzenlenebilir.
-- `ReadOnly`: Belge korumalıdır ve salt okunur olarak ayarlanmıştır.
-
-#### S: ProtectionType özelliğini kullanarak bir belgenin koruma türünü değiştirebilir miyim?
-
- C: Hayır,`ProtectionType`Aspose.Words for .NET'teki özellik salt okunur bir özelliktir. Bir belgenin geçerli koruma türünü almanıza olanak tanır ancak koruma türünü değiştirmek için doğrudan bir yol sağlamaz. Koruma türünü değiştirmek için, mevcut diğer yöntemleri ve özellikleri kullanmanız gerekir.`Document` sınıf gibi`Protect` veya`Unprotect`.
-
-#### S: Bir belgeyi aynı anda birden fazla koruma türüyle korumak mümkün mü?
-
-C: Hayır, Aspose.Words for .NET bir belgeye aynı anda yalnızca tek bir koruma türünün uygulanmasına izin verir. Ancak, korumayı etkinleştirerek, bir türü ayarlayarak, korumayı devre dışı bırakarak ve ardından başka bir türle tekrar etkinleştirerek farklı koruma türlerini birleştirebilirsiniz.
-
+### Aspose.Words .NET Core ile uyumlu mu?
+Evet, Aspose.Words hem .NET Framework hem de .NET Core ile uyumludur.

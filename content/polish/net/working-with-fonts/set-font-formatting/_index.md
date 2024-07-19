@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Utwórz i sformatuj dokument
- Utwórz instancję`Document` klasa i`DocumentBuilder`klasa do zbudowania dokumentu. Użyj`Font` własność`DocumentBuilder` aby uzyskać dostęp do właściwości formatowania czcionki.
+ Utwórz instancję`Document` klasa i`DocumentBuilder` klasa do zbudowania dokumentu. Użyj`Font` własność`DocumentBuilder` aby uzyskać dostęp do właściwości formatowania czcionki.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## Krok 3: Zapisz dokument
- Użyj`Save` metoda zapisania dokumentu z zastosowanym formatowaniem czcionki. Zastępować`"WorkingWithFonts.SetFontFormatting.docx"` z żądaną nazwą pliku.
+ Użyj`Save`metoda zapisania dokumentu z zastosowanym formatowaniem czcionki. Zastępować`"WorkingWithFonts.SetFontFormatting.docx"` z żądaną nazwą pliku.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

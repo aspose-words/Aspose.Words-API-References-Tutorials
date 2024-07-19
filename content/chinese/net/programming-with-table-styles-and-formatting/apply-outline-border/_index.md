@@ -38,7 +38,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table. Alignment = Table Alignment. Center;
 ```
 
-## 步骤 5：删除现有表格边框
+## 步骤 5：擦除现有表格边框
 要开始使用新的轮廓边框，我们首先需要从表格中删除所有现有边框。这可以使用`ClearBorders()`方法。
 
 ```csharp

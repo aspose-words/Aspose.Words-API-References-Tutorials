@@ -35,7 +35,7 @@ Section section = doc.Sections[0];
 ```
 
 ## Etapa 3: excluir o conteúdo da seção
-Para limpar o conteúdo da seção, usaremos a seção`ClearContent` método.
+ Para limpar o conteúdo da seção, usaremos a seção`ClearContent` método.
 
 ```csharp
 section.ClearContent();
@@ -55,13 +55,13 @@ section.ClearContent();
 ```
 
 ## Conclusão
-Neste tutorial, vimos como excluir conteúdo de uma seção específica de um documento Word usando Aspose.Words for .NET. A remoção de conteúdo de uma seção permite redefinir ou remover conteúdo específico dessa seção. Sinta-se à vontade para personalizar e usar esse recurso de acordo com suas necessidades específicas.
+Neste tutorial, vimos como excluir conteúdo de uma seção específica de um documento do Word usando Aspose.Words for .NET. A remoção de conteúdo de uma seção permite redefinir ou remover conteúdo específico dessa seção. Sinta-se à vontade para personalizar e usar esse recurso de acordo com suas necessidades específicas.
 
 ### Perguntas frequentes
 
 #### P: Como definir o diretório do documento no Aspose.Words for .NET?
 
- R: Para definir o caminho para o diretório que contém seus documentos, você deve substituir`"YOUR DOCUMENT DIRECTORY"` no código com o caminho apropriado. Veja como fazer isso:
+R: Para definir o caminho para o diretório que contém seus documentos, você deve substituir`"YOUR DOCUMENT DIRECTORY"` no código com o caminho apropriado. Veja como fazer isso:
 
 ```csharp
 // Caminho para o seu diretório de documentos

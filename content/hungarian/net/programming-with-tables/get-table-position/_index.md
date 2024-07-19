@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Itt egy feltételt használunk annak ellenőrzésére, hogy a tömb float típusú-e. Ha igen, kinyomtatjuk a`RelativeHorizontalAlignment` és`RelativeVerticalAlignment` tulajdonságokkal, hogy megkapja a táblázat relatív vízszintes és függőleges igazítását. Ellenkező esetben kinyomtatjuk a`Alignment` tulajdonság a tömb igazításának lekéréséhez.
+ Itt egy feltételt használunk annak ellenőrzésére, hogy a tömb float típusú-e. Ha igen, kinyomtatjuk a`RelativeHorizontalAlignment`és`RelativeVerticalAlignment` tulajdonságokkal, hogy megkapja a táblázat relatív vízszintes és függőleges igazítását. Ellenkező esetben kinyomtatjuk a`Alignment` tulajdonság a tömb igazításának lekéréséhez.
 
 ### Minta forráskód a Táblázatpozíció lekéréséhez az Aspose.Words for .NET használatával 
 

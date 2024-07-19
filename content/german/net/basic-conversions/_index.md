@@ -14,7 +14,7 @@ Basic Conversions führt Sie durch grundlegende Dokumentkonvertierungen mithilfe
 | Titel | Beschreibung |
 | --- | --- |
 | [Doc in Docx konvertieren](./doc-to-docx/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET DOC in DOCX konvertieren. Schritt-für-Schritt-Anleitung mit Codebeispielen. Perfekt für Entwickler.  |
-| [Docx in Rtf konvertieren](./docx-to-rtf/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie DOCX mit Aspose.Words für .NET in RTF konvertieren. Ideal für Entwickler, die eine effiziente Lösung suchen.  |  
+| [Docx in Rtf konvertieren](./docx-to-rtf/) | Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie DOCX mit Aspose.Words für .NET in RTF konvertieren. Einfache Konvertierung für nahtlose Dokumentenverarbeitung. |  
 | [Word-Datei in PDF konvertieren](./docx-to-pdf/) | Erfahren Sie in unserem Handbuch, wie Sie Word-Dateien mit Aspose.Words für .NET ganz einfach in PDF konvertieren. Perfekt für Entwickler, die eine schnelle und zuverlässige Dokumentkonvertierung suchen. | 
 | [Konvertieren Sie Docx in Byte](./docx-to-byte/) | Erfahren Sie, wie Sie Docx mit Aspose.Words in .NET in ein Byte-Array konvertieren, um eine effiziente Dokumentverarbeitung zu gewährleisten. Schritt-für-Schritt-Anleitung enthalten. |  
 | [Docx in Epub konvertieren](./docx-to-epub/) | Konvertieren Sie DOCX problemlos in EPUB mit Aspose.Words für .NET. Folgen Sie unserem Tutorial für die nahtlose Integration in Ihre .NET-Anwendungen. |

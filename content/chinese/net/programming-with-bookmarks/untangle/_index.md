@@ -2,90 +2,121 @@
 title: 在 Word 文档中解开
 linktitle: 在 Word 文档中解开
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 解开 Word 文档中相邻表格行中的嵌套书签。
+description: 借助我们详细的分步指南，掌握如何使用 Aspose.Words for .NET 解开 Word 文档中的书签。非常适合 .NET 开发人员。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/untangle/
 ---
+## 介绍
 
-在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的 Untangle 函数。此函数可解开相邻表行中的嵌套书签。
+以编程方式浏览 Word 文档有点像在迷宫中寻找出路。您可能会遇到书签、标题、表格和其他需要操作的元素。今天，我们将深入研究一项常见但复杂的任务：使用 Aspose.Words for .NET 解开 Word 文档中的书签。本教程将逐步指导您完成该过程，确保您了解旅程的每个部分。
 
 ## 先决条件
 
-- C# 语言的基本知识。
-- 安装了 Aspose.Words 库的.NET 开发环境。
+在深入研究代码之前，让我们确保您拥有所需的一切：
 
-## 步骤 1：浏览文档书签
+1.  Aspose.Words for .NET：您需要 Aspose.Words for .NET 库。如果您没有，您可以[点击下载](https://releases.aspose.com/words/net/).
+2. 开发环境：.NET 开发环境，例如 Visual Studio。
+3. C# 基础知识：了解 C# 的基础知识将帮助您理解代码片段和解释。
 
-我们使用 foreach 循环遍历文档中存在的所有书签：
+## 导入命名空间
+
+首先，请确保导入必要的命名空间。这将允许您访问使用 Aspose.Words 操作 Word 文档所需的类和方法。
 
 ```csharp
-foreach(Bookmark bookmark in doc.Range.Bookmarks)
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## 步骤 1：加载文档
+
+第一步是加载要处理的 Word 文档。此文档将包含您需要解开的书签。
+
+步骤 1 标题：加载文档
+
+```csharp
+Document doc = new Document("path/to/your/document.docx");
+```
+
+在这一行中，我们只是从指定路径加载文档。确保路径指向您的实际 Word 文档。
+
+## 第 2 步：遍历书签
+
+接下来，我们需要遍历文档中的所有书签。这使我们能够访问每个书签及其属性。
+
+第 2 步标题：遍历书签
+
+```csharp
+foreach (Bookmark bookmark in doc.Range.Bookmarks)
 {
-     //处理书签的代码在这里
+    //处理每个书签
 }
 ```
 
-## 第 2 步：从书签中获取父行
+在这里，我们使用`foreach`循环遍历文档范围内的每个书签。此循环将使我们能够单独处理每个书签。
 
-我们使用`GetAncestor`检索书签起始和结束节点的父行的方法：
+## 步骤 3：确定书签开始和结束行
+
+对于每个书签，我们需要找到包含书签开始和结束的行。这对于确定书签是否跨越相邻行至关重要。
+
+步骤 3 标题：识别行
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-## 步骤 3：解开嵌套书签
+在此步骤中，我们使用`GetAncestor`方法查找书签起始节点和书签结束节点的父行。这有助于我们精确定位所涉及的行。
 
-如果找到了两个父行，并且书签在相邻行中开始和结束，我们将书签的结束节点移动到顶行最后一个单元格的最后一段的末尾：
+## 步骤 4：检查相邻行
+
+在移动书签末端之前，我们需要确保书签的开始和结束位于相邻的行。此条件对于正确解开书签至关重要。
+
+步骤 4 标题：检查行相邻性
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
-     row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+{
+    //行相邻，继续移动书签末端
+}
 ```
 
-### 使用 Aspose.Words for .NET 的 Untangle 示例源代码
+在这里，我们添加一个条件来检查是否找到了这两行以及它们是否相邻。`NextSibling`属性帮助我们验证相邻性。
 
-以下是使用 Aspose.Words for .NET 解开嵌套书签的完整源代码示例：
+## 步骤 5：移动书签末尾
+
+最后，如果条件满足，我们将书签结束节点移动到顶行最后一个单元格中最后一段的末尾。此步骤有效地解开了书签。
+
+步骤 5 标题：移动书签结尾
 
 ```csharp
-
-	foreach (Bookmark bookmark in doc.Range.Bookmarks)
-	{
-		//获取书签和书签结束节点的父行。
-		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-		//如果两行均正确，且书签的开始和结束位于相邻行中，
-		//将书签结束节点移动到顶行最后一个单元格中最后一段的末尾。
-		if (row1 != null && row2 != null && row1.NextSibling == row2)
-			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-	}
-
+row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
+
+在此步骤中，我们使用`AppendChild`方法移动书签结束节点。通过将其附加到顶行最后一个单元格的最后一段，我们确保书签正确解开。
 
 ## 结论
 
-在本文中，我们探索了 C# 源代码，以了解如何使用 Aspose.Words for .NET 的 Untangle 函数。我们按照分步指南来解开相邻表格行中的嵌套书签。
+使用 Aspose.Words for .NET 解开 Word 文档中的书签似乎很困难，但通过将其分解为可管理的步骤，该过程变得更加清晰。我们已经完成了加载文档、遍历书签、识别相关行、检查相邻性以及最后移动书签结束节点的过程。通过本指南，您应该能够更有效地处理 Word 文档中的书签。
 
-### 常见问题解答
+## 常见问题解答
 
-#### 问：Untangle 功能仅适用于相邻表格行中的嵌套书签吗？
+### 我可以使用 Aspose.Words for .NET 来操作书签以外的其他元素吗？
 
-答：是的，解开功能专门用于解开相邻表格行中的嵌套书签。如果书签不在相邻行中，则此功能不适用。
+是的，Aspose.Words for .NET 是一个强大的库，允许您操作各种文档元素，包括段落、表格、图像等。
 
-#### 问：如何识别 Word 文档中的嵌套书签？
+### 如果书签跨越两行以上怎么办？
 
-答：您可以通过循环遍历文档中的书签并检查起始书签和结束书签是否位于相邻的表格行中来识别嵌套书签。您可以使用本文提供的源代码作为实现此功能的起点。
+本教程介绍跨越两个相邻行的书签。对于更复杂的情况，需要额外的逻辑来处理跨越多行或多部分的书签。
 
-#### 问：解扰功能会修改原始文档的内容吗？
+### 是否有 Aspose.Words for .NET 的试用版？
 
-答：是的，Untangle 功能会通过将书签的结束节点移动到顶行最后一个单元格的最后一段末尾来修改原始文档。在应用此功能之前，请确保保存文档的备份副本。
+是的你可以[下载免费试用版](https://releases.aspose.com/)从 Aspose 网站探索该库的功能。
 
-#### 问：如何解开其他类型文档元素（例如章节或段落）中的嵌套书签？
+### 如果我遇到问题，如何获得支持？
 
-答：本文介绍的 Untangle 函数专门用于解开相邻表格行中的嵌套书签。如果您想要解开其他文档元素中的嵌套书签，则需要相应地调整代码并使用适当的方法来访问所需的元素。
+您可以访问[Aspose 支持论坛](https://forum.aspose.com/c/words/8)以获得有关您遇到的任何问题或疑问的帮助。
 
-#### 问：还有其他方法可以使用 Aspose.Words for .NET 解开 Word 文档中的嵌套书签吗？
+### 我需要许可证才能使用 Aspose.Words for .NET 吗？
 
-答：本文介绍的方法是解开相邻表格行中嵌套书签的常用方法。但是，根据项目的具体需求，可能还有其他方法或技巧。您可以查看[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)进一步探索可用的功能。
+是的，Aspose.Words for .NET 需要许可证才能使用全部功能。您可以购买许可证[这里](https://purchase.aspose.com/buy)或请求[临时执照](https://purchase.aspose.com/temporary-license)用于评估目的。

@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Steg 3: Infoga ett OLE-objekt
- Använd dokumentbyggarens`InsertOleObject` metod för att infoga ett OLE-objekt i dokumentet. Ange OLE-objektets URL, objekttyp, visningsalternativ och andra nödvändiga inställningar.
+ Använd dokumentbyggarens`InsertOleObject`metod för att infoga ett OLE-objekt i dokumentet. Ange OLE-objektets URL, objekttyp, visningsalternativ och andra nödvändiga inställningar.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -57,7 +57,7 @@ Detta är ett komplett kodexempel för att infoga ett OLE-objekt med Aspose.Word
 
 Sammanfattningsvis är att infoga OLE-objekt i ett Word-dokument en kraftfull funktion som erbjuds av Aspose.Words för .NET. Med det här biblioteket kan du enkelt bädda in OLE-objekt som HTML-filer, Excel-kalkylblad, PowerPoint-presentationer etc. i dina Word-dokument.
 
-I den här artikeln har vi gått igenom en steg-för-steg-guide för att förklara källkoden i C# som illustrerar hur man infogar ett OLE-objekt i ett Word-dokument. Vi täckte de nödvändiga referenserna, skapade ett nytt dokument och en dokumentgenerator, och stegen för att infoga ett OLE-objekt och spara dokumentet.
+den här artikeln har vi gått igenom en steg-för-steg-guide för att förklara källkoden i C# som illustrerar hur man infogar ett OLE-objekt i ett Word-dokument. Vi täckte de nödvändiga referenserna, skapade ett nytt dokument och en dokumentgenerator, och stegen för att infoga ett OLE-objekt och spara dokumentet.
 
 ### Vanliga frågor för att infoga ett OLE-objekt i ett Word-dokument
 
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### F: Hur infogar man ett OLE-objekt i dokumentet?
 
- A: Använd`InsertOleObject`metod för dokumentbyggaren (`DocumentBuilder`) för att infoga ett OLE-objekt i dokumentet. Ange OLE-objektets URL, objekttyp, visningsalternativ och andra nödvändiga inställningar. Här är ett exempel :
+ A: Använd`InsertOleObject` metod för dokumentbyggaren (`DocumentBuilder`) för att infoga ett OLE-objekt i dokumentet. Ange OLE-objektets URL, objekttyp, visningsalternativ och andra nödvändiga inställningar. Här är ett exempel :
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com", "htmlfile", true, true, null);
 
 #### F: Hur sparar jag dokumentet?
 
- S: Använd dokumentet`Save` metod för att spara dokumentet till en fil. Här är ett exempel :
+ S: Använd dokumentet`Save`metod för att spara dokumentet till en fil. Här är ett exempel :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

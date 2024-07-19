@@ -9,7 +9,7 @@ url: /de/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 
 
-Wenn Sie jemals Probleme mit nicht korrekt wiedergegebenen Schriftarten in Ihren Dokumenten hatten, sind Sie nicht allein. Das Verwalten von Schriftarteinstellungen und das Erhalten von Benachrichtigungen über Schriftartersetzungen kann Ihnen viel Kopfzerbrechen ersparen. In diesem umfassenden Handbuch erfahren Sie, wie Sie mit Aspose.Words für .NET mit Schriftartbenachrichtigungen umgehen und sicherstellen, dass Ihre Dokumente immer optimal aussehen.
+Wenn Sie jemals Probleme mit Schriftarten hatten, die in Ihren Dokumenten nicht richtig dargestellt wurden, sind Sie nicht allein. Das Verwalten von Schriftarteinstellungen und das Erhalten von Benachrichtigungen über Schriftartersetzungen kann Ihnen viel Kopfzerbrechen ersparen. In diesem umfassenden Handbuch erfahren Sie, wie Sie mit Aspose.Words für .NET mit Schriftartbenachrichtigungen umgehen und sicherstellen, dass Ihre Dokumente immer optimal aussehen.
 
 ## Voraussetzungen
 
@@ -30,7 +30,7 @@ using Aspose.Words.Fonts;
 using Aspose.Words.WarningInfo;
 ```
 
-## Schritt 1: Definieren Sie das Dokumentverzeichnis
+## Schritt 1: Dokumentverzeichnis definieren
 
 Geben Sie zunächst das Verzeichnis an, in dem Ihr Dokument gespeichert ist. Dies ist wichtig, um das zu verarbeitende Dokument zu finden.
 
@@ -113,7 +113,7 @@ Nein, Sie können nur eine Standardschriftart als Ersatz angeben. Sie können je
 
 ###  F3: Kann ich andere Arten von Warnungen mit`IWarningCallback`?
 
- Ja das`IWarningCallback` Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
+ Ja das`IWarningCallback`Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
 
 ### F4: Wo finde ich Unterstützung für Aspose.Words?
 

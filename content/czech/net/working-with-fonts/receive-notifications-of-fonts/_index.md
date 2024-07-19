@@ -18,7 +18,7 @@ Než se pustíme do podrobností, ujistěte se, že máte následující:
 - Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
 -  Aspose.Words for .NET Library: Stáhněte a nainstalujte ji z[oficiální odkaz ke stažení](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Nastavení jako Visual Studio pro psaní a spouštění vašeho kódu.
--  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven otestovat nastavení písma.
+-  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven k testování nastavení písma.
 
 ## Importovat jmenné prostory
 
@@ -113,7 +113,7 @@ Ne, můžete zadat pouze jedno výchozí písmo pro nahrazení. Můžete však n
 
 ###  Q3: Mohu zpracovat jiné typy varování pomocí`IWarningCallback`?
 
- Ano,`IWarningCallback` rozhraní zvládne různé typy varování, nejen náhradu písem.
+ Ano,`IWarningCallback`rozhraní zvládne různé typy varování, nejen náhradu písem.
 
 ### Q4: Kde najdu podporu pro Aspose.Words?
 

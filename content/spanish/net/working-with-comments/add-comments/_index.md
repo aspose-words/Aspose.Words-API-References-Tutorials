@@ -37,7 +37,7 @@ Para agregar un comentario, cree una instancia de la clase Comentario, pasando e
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-A continuación, agregue el comentario al párrafo actual:
+continuación, agregue el comentario al párrafo actual:
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
@@ -89,7 +89,7 @@ R: Para agregar un comentario en un documento de Aspose.Words para .NET, debe se
 
 #### P: ¿Puedo formatear el texto del comentario en Aspose.Words para .NET?
 
-R: Sí, puede formatear el texto del comentario en Aspose.Words para .NET utilizando las propiedades de formato disponibles.
+R: Sí, puede formatear el texto del comentario en Aspose.Words para .NET usando las propiedades de formato disponibles.
 
 #### P: ¿Cómo puedo recuperar todos los comentarios presentes en un documento?
 

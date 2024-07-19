@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Этот вызов важен для создания вложенной таблицы внутри первой таблицы.
-	// Без этого вызова ячейки, вставленные ниже, будут добавлены во внешнюю таблицу.
+	//Без этого вызова ячейки, вставленные ниже, будут добавлены во внешнюю таблицу.
 	builder.EndTable();
 	// Перейдите к первой ячейке внешней таблицы.
 	builder.MoveTo(cell.FirstParagraph);

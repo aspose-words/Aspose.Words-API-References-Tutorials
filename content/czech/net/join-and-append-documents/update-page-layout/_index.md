@@ -2,89 +2,125 @@
 title: Aktualizujte rozvržení stránky
 linktitle: Aktualizujte rozvržení stránky
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Přečtěte si, jak aktualizovat rozvržení stránky při spojování a připojování dokumentů Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak aktualizovat rozvržení stránek v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto komplexního průvodce krok za krokem. Ideální pro ladění návrhů dokumentů.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/update-page-layout/
 ---
+## Úvod
 
-Tento výukový program vás provede procesem používání funkce Update Page Layout Aspose.Words for .NET. Tato funkce zajišťuje správnou aktualizaci rozvržení stránky při spojování a připojování dokumentů aplikace Word.
+Nazdárek! Pokud jste někdy pracovali s dokumenty Wordu programově, víte, jak důležité je efektivně spravovat rozvržení stránek. Ať už generujete sestavy, vytváříte šablony nebo jednoduše upravujete návrhy dokumentů, klíčové je udržovat rozvržení stránek čerstvé a přesné. Dnes se ponoříme do toho, jak aktualizovat rozvržení stránek v dokumentech aplikace Word pomocí Aspose.Words for .NET. Projdeme si procesem krok za krokem, takže budete schopni s jistotou zacházet s rozvržením vašich dokumentů a zajistit, aby vše vypadalo tak, jak má.
 
 ## Předpoklady
 
-Než začnete, ujistěte se, že máte následující:
+Než začneme, ujistěte se, že máte připraveno následující:
 
-1. Aspose.Words for .NET nainstalován. Můžete si jej stáhnout z webu Aspose nebo nainstalovat přes NuGet.
-2. Visual Studio nebo jiné vývojové prostředí C#.
+1.  Aspose.Words for .NET: Tato knihovna je nezbytná pro programovou manipulaci s dokumenty Wordu. Pokud jste to ještě neudělali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+   
+2. Visual Studio: K zápisu a spuštění kódu .NET budete potřebovat IDE. Visual Studio je oblíbenou volbou.
 
-## Krok 1: Inicializujte adresáře dokumentů
+3. Základní znalost C#: Základní znalost C# vám pomůže plynuleji pokračovat.
 
- Nejprve musíte nastavit cestu k adresáři dokumentů. Upravte hodnotu`dataDir` proměnnou k cestě, kde jsou umístěny vaše dokumenty.
+4.  Aspose License: I když je k dispozici bezplatná zkušební verze[tady](https://releases.aspose.com/) , možná budete potřebovat plnou licenci pro komerční použití. Můžete získat jeden[tady](https://purchase.aspose.com/buy) nebo požádat o a[dočasná licence](https://purchase.aspose.com/temporary-license/).
+
+5. Adresář dokumentů: Ujistěte se, že máte nastavený adresář, kam se budou ukládat a načítat vaše dokumenty.
+
+Máte vše připraveno? Skvělý! Pojďme se ponořit do zábavných věcí.
+
+## Importovat jmenné prostory
+
+Chcete-li začít s Aspose.Words for .NET, budete muset do svého projektu C# importovat potřebné jmenné prostory. Můžete to udělat takto:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Layout;
+```
+
+Tyto jmenné prostory vám umožní přístup ke třídám a metodám, které budete potřebovat pro práci s dokumenty Wordu a manipulaci s jejich rozvržením.
+
+Nyní, když máme pokryty naše předpoklady, pojďme skočit do skutečného procesu. Rozdělíme to na řadu jednoduchých kroků:
+
+## Krok 1: Vložte svůj dokument
+
+Nejprve musíte načíst dokument aplikace Word, se kterým chcete pracovat. To zahrnuje zadání cesty k vašemu dokumentu a vytvoření a`Document` objekt.
+
+```csharp
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Vložte dokument
+Document doc = new Document(dataDir + "input.docx");
 ```
 
-## Krok 2: Načtěte zdrojové a cílové dokumenty
+ Tady, vyměňte`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kde jste`input.docx` soubor je uložen.
 
-Dále musíte načíst zdrojové a cílové dokumenty pomocí Aspose.Words`Document` třída. Aktualizujte názvy souborů v`Document` konstruktor podle názvů vašich dokumentů.
+## Krok 2: Uložte dokument s počátečním rozložením
+
+Před provedením jakýchkoli změn je dobrým zvykem uložit dokument do PDF nebo jiného formátu a uložit do mezipaměti jeho původní rozvržení.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Northwind traders.docx");
+// Uložte dokument do PDF
+doc.Save(dataDir + "Document.UpdatePageLayout.1.pdf");
 ```
 
-## Krok 3: Aktualizujte rozvržení stránky pro cílový dokument
+Uložením tímto způsobem zajistíte, že počáteční rozvržení bude uloženo do mezipaměti a může být použito jako reference pro následné aktualizace.
 
- Chcete-li zajistit, aby se rozvržení stránky před připojením zdrojového dokumentu správně aktualizovalo, můžete zavolat`UpdatePageLayout` na cílovém dokumentu.
+## Krok 3: Upravte dokument
+
+Nyní, když jsme uložili počáteční rozvržení do mezipaměti, pojďme upravit dokument. Tento krok ukazuje, jak změnit velikost písma, orientaci stránky a okraje dokumentu.
 
 ```csharp
-dstDoc.UpdatePageLayout();
+// Upravte dokument
+doc.Styles["Normal"].Font.Size = 6;
+doc.Sections[0].PageSetup.Orientation = Aspose.Words.Orientation.Landscape;
+doc.Sections[0].PageSetup.Margins = Margins.Mirrored;
 ```
 
-## Krok 4: Připojte zdrojový dokument k cílovému dokumentu
+V tomto příkladu:
+- Velikost písma stylu "Normální" změníme na 6 bodů.
+- Orientaci stránky nastavíme na šířku.
+- Okraje stránky upravíme na Zrcadlené.
 
- Nyní můžete připojit zdrojový dokument k cílovému dokumentu pomocí`AppendDocument` metoda`Document` třída. The`ImportFormatMode.KeepSourceFormatting` Parametr zajišťuje zachování formátování zdroje během operace připojení.
+## Krok 4: Aktualizujte rozvržení stránky
+
+Po provedení změn je třeba ručně aktualizovat rozvržení stránky, aby odráželo změny. Tím zajistíte, že rozložení uložené v mezipaměti bude znovu vytvořeno s vašimi novými nastaveními.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
+// Aktualizujte rozvržení stránky
+doc.UpdatePageLayout();
 ```
 
-## Krok 5: Znovu aktualizujte rozvržení stránky
+Tento krok je zásadní, protože bez něj by se vaše změny nemusely přesně projevit v konečném výstupu.
 
- Po připojení zdrojového dokumentu musíte zavolat`UpdatePageLayout`metodu znovu na cílovém dokumentu, abyste zajistili, že všechny změny provedené po operaci připojení se projeví ve vykresleném výstupu.
+## Krok 5: Uložte upravený dokument
+
+Nakonec dokument znovu uložte do nového PDF, abyste viděli aktualizované rozvržení.
 
 ```csharp
-dstDoc.UpdatePageLayout();
+// Uložte dokument s aktualizovaným rozložením
+doc.Save(dataDir + "Document.UpdatePageLayout.2.pdf");
 ```
 
-## Krok 6: Uložte konečný dokument
+Tato závěrečná operace uložení zachytí provedené změny a použije aktualizované rozvržení na nový PDF.
 
- Nakonec uložte sloučený dokument s povolenou funkcí Aktualizovat rozvržení stránky pomocí`Save` metoda`Document` třída.
+## Závěr
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
-```
+Aktualizace rozvržení stránek v dokumentech aplikace Word pomocí Aspose.Words for .NET je účinný způsob, jak zajistit, aby vaše dokumenty vypadaly přesně tak, jak chcete. Podle těchto kroků můžete načíst dokument, použít úpravy, aktualizovat rozvržení a uložit změny bez problémů. Ať už upravujete písma, měníte orientaci nebo upravujete okraje, tento proces pomáhá zachovat vizuální integritu vašich dokumentů.
 
-### Příklad zdrojového kódu pro aktualizaci rozvržení stránky pomocí Aspose.Words pro .NET
 
-Zde je úplný zdrojový kód pro funkci "Aktualizovat rozvržení stránky" v C# pomocí Aspose.Words pro .NET:
+## FAQ
 
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### čemu slouží Aspose.Words for .NET?  
+Aspose.Words for .NET je knihovna používaná k vytváření, úpravě a převodu dokumentů aplikace Word programově.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Pokud je cílový dokument vykreslen jako PDF, obrázek atd.
-	// nebo UpdatePageLayout se volá před zdrojovým dokumentem. Je připojeno,
-	// pak se žádné změny provedené poté neprojeví ve vykresleném výstupu
-	dstDoc.UpdatePageLayout();
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	// Aby se změny aktualizovaly na vykreslený výstup, je nutné znovu zavolat UpdatePageLayout.
-	// Pokud nebude znovu volána, připojený dokument se neobjeví ve výstupu dalšího vykreslování.
-	dstDoc.UpdatePageLayout();
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.UpdatePageLayout.docx");
-```
+### Potřebuji licenci k používání Aspose.Words pro .NET?  
+ Ano, pro komerční použití potřebujete licenci. Můžete získat licenci[tady](https://purchase.aspose.com/buy) nebo požádat o a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 
-je to! Úspěšně jste implementovali funkci Update Page Layout pomocí Aspose.Words for .NET. Konečný dokument bude obsahovat sloučený obsah se správně aktualizovaným rozložením stránky.
+### Jak mohu začít s Aspose.Words pro .NET?  
+ Můžete začít stažením knihovny z[Aspose webové stránky](https://releases.aspose.com/words/net/)a poté importujte potřebné jmenné prostory do svého projektu C#.
+
+### Mohu používat Aspose.Words pro .NET zdarma?  
+ Aspose nabízí bezplatnou zkušební verzi knihovny, kterou můžete získat[tady](https://releases.aspose.com/).
+
+### Kde mohu získat podporu pro Aspose.Words pro .NET?  
+ Podporu můžete získat prostřednictvím[Aspose fórum podpory](https://forum.aspose.com/c/words/8).

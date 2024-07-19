@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 
-tym samouczku pokazano, jak utworzyć tabelę z powtarzającą się sekcją odwzorowaną na niestandardową część Xml w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Sekcja powtarzania umożliwia dynamiczne dodawanie wierszy na podstawie danych XML przechowywanych w niestandardowej części Xml.
+W tym samouczku pokazano, jak utworzyć tabelę z powtarzającą się sekcją odwzorowaną na niestandardową część Xml w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Sekcja powtarzania umożliwia dynamiczne dodawanie wierszy na podstawie danych XML przechowywanych w niestandardowej części Xml.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
@@ -17,7 +17,7 @@ Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 - Podstawowa znajomość języka C# i przetwarzania tekstów w dokumentach Word.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
- Rozpocznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+ Rozpocznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Krok 4: Utwórz tabelę i strukturę tabeli
- Rozpocznij tworzenie tabeli za pomocą`StartTable` metoda`DocumentBuilder` . Dodaj komórki tabeli i zawartość za pomocą`InsertCell` I`Write` metody.
+ Rozpocznij tworzenie tabeli za pomocą`StartTable` metoda`DocumentBuilder` . Dodaj komórki tabeli i zawartość za pomocą`InsertCell`I`Write` metody.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Stwórz`Row`aby reprezentować każdy element sekcji powtarzanej i dołączać go do elementu sekcji powtarzanej.
+ Stwórz`Row` aby reprezentować każdy element sekcji powtarzanej i dołączać go do elementu sekcji powtarzanej.
 
 ```csharp
 Row row = new Row(doc);

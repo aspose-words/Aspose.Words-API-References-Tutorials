@@ -2,7 +2,7 @@
 title: Vorm invoegen
 linktitle: Vorm invoegen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u vormen invoegt in een Word-document met Aspose.Words voor .NET.
+description: Leer hoe u vormen in een Word-document invoegt met Aspose.Words voor .NET.
 type: docs
 weight: 10
 url: /nl/net/programming-with-shapes/insert-shape/
@@ -17,14 +17,14 @@ Om deze tutorial te volgen, heb je het volgende nodig:
 - Basiskennis van C# en woordenverwerking met Word-documenten.
 
 ## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+ Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Stap 2: Maak een nieuw document en DocumentBuilder
- Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder`bezwaar maken tegen het werken met het document.
+ Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder` bezwaar maken tegen het werken met het document.
 
 ```csharp
 Document doc = new Document();

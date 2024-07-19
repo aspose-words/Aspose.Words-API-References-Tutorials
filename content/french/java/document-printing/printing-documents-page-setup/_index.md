@@ -75,7 +75,7 @@ Dans cet article, nous avons expliqué comment imprimer des documents avec une m
 
 ### Comment puis-je modifier le format du papier de mon document ?
 
- Pour modifier le format du papier de votre document, utilisez le`setPageWidth` et`setPageHeight` méthodes du`PageSetup` classe et précisez les dimensions souhaitées en points.
+ Pour modifier le format du papier de votre document, utilisez le`setPageWidth`et`setPageHeight` méthodes du`PageSetup` classe et précisez les dimensions souhaitées en points.
 
 ### Puis-je imprimer plusieurs copies d'un document ?
 

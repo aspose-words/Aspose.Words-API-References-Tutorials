@@ -31,7 +31,7 @@ Nu när vi har konfigurerat laddningsalternativen kan vi ladda dokumentet med kl
 Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 ```
 
-I det här exemplet laddar vi dokumentet "Encoded in UTF-7.txt" som finns i dokumentkatalogen med de angivna laddningsalternativen.
+det här exemplet laddar vi dokumentet "Encoded in UTF-7.txt" som finns i dokumentkatalogen med de angivna laddningsalternativen.
 
 ### Exempel på källkod för LoadOptions med "Load With Encoding" funktionalitet med Aspose.Words för .NET
 
@@ -48,7 +48,7 @@ Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 
 ## Slutsats
 
-den här guiden förklarade vi hur man laddar ett textdokument med en specificerad kodning med hjälp av Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Att ladda textdokument med rätt kodning säkerställer korrekt och korrekt läsning av innehållet i din applikation.
+I den här guiden förklarade vi hur man laddar ett textdokument med en specificerad kodning med hjälp av Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Att ladda textdokument med rätt kodning säkerställer korrekt och korrekt läsning av innehållet i din applikation.
 
 
 ### FAQ's

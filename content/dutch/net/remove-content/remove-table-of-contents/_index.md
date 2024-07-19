@@ -63,7 +63,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 ```
 
 Dit is wat er gebeurt:
-- `doc.Range.Fields`: Hiermee krijgt u toegang tot alle velden in het document.
+- `doc.Range.Fields`: Hiermee heeft u toegang tot alle velden in het document.
 - `.Where(f => f.Type == FieldType.FieldTOC)`: Hiermee worden de velden gefilterd om alleen de inhoudsopgaven te vinden.
 - `.ToList().ForEach(f => f.Remove())`: Dit converteert de gefilterde velden naar een lijst en verwijdert ze allemaal.
 

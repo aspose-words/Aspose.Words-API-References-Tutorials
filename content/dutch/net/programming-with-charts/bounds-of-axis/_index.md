@@ -7,98 +7,118 @@ type: docs
 weight: 10
 url: /nl/net/programming-with-charts/bounds-of-axis/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u de grenzen van een as in een diagram instelt met Aspose.Words voor .NET. Door een diagram in te voegen, reeksgegevens toe te voegen en de asschaal te configureren, kunt u de minimum- en maximumwaarden voor de as definiëren.
+Wilt u professionele documenten met grafieken maken in .NET? Je bent op de juiste plek! Deze handleiding begeleidt u bij het gebruik van Aspose.Words voor .NET om de grenzen van de as in een diagram in te stellen. We zullen elke stap opsplitsen, zodat u deze gemakkelijk kunt volgen, zelfs als u nieuw bent bij de bibliotheek. Dus laten we erin duiken en aan de slag gaan!
 
 ## Vereisten
-Om deze tutorial te volgen, heb je het volgende nodig:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd.
-- Basiskennis van C# en woordenverwerking met Word-documenten.
+Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 
-## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar u het document wilt opslaan.
+-  Aspose.Words voor .NET: dat kan[downloaden](https://releases.aspose.com/words/net/) de nieuwste versie of gebruik een[gratis proefperiode](https://releases.aspose.com/).
+- .NET Framework: Zorg ervoor dat .NET op uw systeem is geïnstalleerd.
+- IDE: Een ontwikkelomgeving zoals Visual Studio.
+
+Zodra u alles gereed heeft, kunnen we doorgaan met de volgende stappen.
+
+## Naamruimten importeren
+
+Om te beginnen moet u de benodigde naamruimten importeren. Hiermee krijgt u toegang tot de Aspose.Words-bibliotheek en de bijbehorende grafiekfuncties.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+## Stap 1: Stel uw documentenmap in
+
+Allereerst moet u de map instellen waarin uw document zal worden opgeslagen. Dit is een eenvoudige stap, maar cruciaal voor het organiseren van uw bestanden.
+
+```csharp
+// Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Stap 2: Maak een nieuw document en DocumentBuilder
- Maak een nieuw exemplaar van de`Document` klasse en een`DocumentBuilder`bezwaar maken tegen het werken met het document.
+## Stap 2: Maak een nieuw document
+
+Maak vervolgens een nieuw documentobject. Dit document zal dienen als de container voor uw diagram.
 
 ```csharp
 Document doc = new Document();
+```
+
+## Stap 3: Initialiseer de Document Builder
+
+De klasse DocumentBuilder biedt een snelle en gemakkelijke manier om documenten samen te stellen. Initialiseer het met uw document.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Een diagram invoegen en configureren
- Voeg een diagram in het document in met behulp van de`InsertChart` werkwijze van de`DocumentBuilder` voorwerp. Stel het gewenste diagramtype en de afmetingen in.
+## Stap 4: Voeg een diagram in
+
+Nu is het tijd om een diagram in uw document in te voegen. In dit voorbeeld gebruiken we een kolomdiagram.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Stap 4: Seriegegevens toevoegen
-Wis eventuele bestaande reeksen in het diagram en voeg nieuwe reeksgegevens toe. In dit voorbeeld voegen we een serie toe met de labels 'Artikel 1' tot 'Artikel 5' en bijbehorende waarden.
+## Stap 5: Wis bestaande series
+
+Om ervoor te zorgen dat u met een schone lei begint, verwijdert u alle bestaande series uit het diagram.
 
 ```csharp
 chart.Series.Clear();
+```
+
+## Stap 6: Voeg gegevens toe aan het diagram
+
+Hier voegen we gegevens toe aan het diagram. Dit omvat het opgeven van de serienaam en de gegevenspunten.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Stap 5: Stel de grenzen van de as in
- Configureer de schaling van de Y-as door de minimum- en maximumwaarden in te stellen met behulp van de`Scaling.Minimum` En`Scaling.Maximum` eigenschappen van de as.
+## Stap 7: Stel asgrenzen in
+
+Als u de grenzen voor de Y-as instelt, zorgt u ervoor dat uw diagram correct wordt geschaald.
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
 chart.AxisY.Scaling.Maximum = new AxisBound(6);
 ```
 
-## Stap 6: Sla het document op
- Sla het document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithCharts.BoundsOfAxis.docx".
+## Stap 8: Bewaar het document
+
+Sla ten slotte uw document op in de opgegeven map.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-### Voorbeeldbroncode voor Bounds Of Axis met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Scaling.Minimum = new AxisBound(0);
-	chart.AxisY.Scaling.Maximum = new AxisBound(6);
-	doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
-```
-
-Dat is het! U hebt met succes de grenzen van een as in een diagram ingesteld met Aspose.Words voor .NET.
+En dat is het! U hebt met succes een document met een diagram gemaakt met Aspose.Words voor .NET. 
 
 ## Conclusie
-In deze zelfstudie hebt u geleerd hoe u de grenzen van een as in een diagram kunt instellen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen, kunt u een diagram invoegen en configureren, seriegegevens toevoegen en de minimum- en maximumwaarden voor de asschaling definiëren. Aspose.Words voor .NET biedt een krachtige en flexibele API voor woordenverwerking met Word-documenten, waarmee u eenvoudig dynamische en visueel aantrekkelijke grafieken kunt maken.
 
+Met Aspose.Words voor .NET kunt u eenvoudig diagrammen in uw documenten maken en manipuleren. Deze stapsgewijze handleiding heeft u laten zien hoe u de grenzen van de as in een diagram kunt instellen, waardoor uw gegevenspresentatie nauwkeuriger en professioneler wordt. Of u nu rapporten, presentaties of een ander document genereert, Aspose.Words biedt de tools die u nodig heeft.
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Q1. Wat is Aspose.Words voor .NET?
-Aspose.Words voor .NET is een bibliotheek waarmee ontwikkelaars programmatisch met Word-documenten kunnen werken. Het biedt een breed scala aan functies en functionaliteiten voor het maken, manipuleren en opslaan van Word-documenten.
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een bibliotheek waarmee u Word-documenten programmatisch kunt maken, wijzigen en converteren met behulp van het .NET-framework.
 
-#### Vraag 2. Hoe kan ik Aspose.Words voor .NET installeren?
-Om Aspose.Words voor .NET te installeren, kunt u NuGet-pakketbeheer in Visual Studio gebruiken. Zoek eenvoudigweg naar "Aspose.Words" in de NuGet-pakketbeheerder en installeer het in uw project.
+### Hoe stel ik Aspose.Words in voor .NET?
+ Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/) en volg de meegeleverde installatie-instructies.
 
-#### Q3. Kan ik Aspose.Words voor .NET gebruiken met andere programmeertalen?
-Nee, Aspose.Words voor .NET is specifiek ontworpen voor .NET-toepassingen. Het werkt met programmeertalen zoals C# en VB.NET.
+### Kan ik Aspose.Words gratis gebruiken?
+ Ja, u kunt gebruik maken van een[gratis proefperiode](https://releases.aspose.com/) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
 
-#### Q4. Zijn er nog andere vereisten voor het gebruik van Aspose.Words voor .NET?
-Naast het installeren van de Aspose.Words voor .NET-bibliotheek, moet u een basiskennis hebben van programmeren in C# en woordenverwerking met Word-documenten. Bekendheid met het .NET-framework zal ook nuttig zijn.
+### Waar kan ik documentatie vinden voor Aspose.Words voor .NET?
+ Gedetailleerde documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).
+
+### Hoe kan ik ondersteuning krijgen voor Aspose.Words?
+ U kunt een bezoek brengen aan de[Helpforum](https://forum.aspose.com/c/words/8) Voor assistentie.

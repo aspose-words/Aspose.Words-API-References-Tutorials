@@ -2,80 +2,119 @@
 title: Oczyść zduplikowany styl
 linktitle: Oczyść zduplikowany styl
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący czyszczenia zduplikowanych stylów w dokumencie przy użyciu Aspose.Words dla .NET. Zawiera pełny kod źródłowy.
+description: Dowiedz się, jak oczyścić zduplikowane style w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego obszernego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-document-options-and-settings/cleanup-duplicate-style/
 ---
+## Wstęp
 
-W tym samouczku przeprowadzimy Cię krok po kroku przez kod źródłowy C#, aby oczyścić zduplikowane style za pomocą Aspose.Words dla .NET. Ta funkcja pomaga usunąć zduplikowane style z dokumentu.
+Hej, entuzjaści kodowania! Czy kiedykolwiek podczas pracy nad dokumentem programu Word zaplątałeś się w sieć zduplikowanych stylów? Wszyscy tam byliśmy i nie jest to przyjemny widok. Ale nie martw się, Aspose.Words dla .NET jest tutaj, aby uratować sytuację! W tym samouczku zagłębimy się w szczegóły czyszczenia zduplikowanych stylów w dokumentach programu Word za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik przeprowadzi Cię przez każdy krok za pomocą jasnych i łatwych do wykonania instrukcji. Zatem zakasujmy rękawy i zaczynajmy!
 
-## Krok 1: Konfiguracja projektu
+## Warunki wstępne
 
-Aby rozpocząć, utwórz nowy projekt C# w swoim ulubionym środowisku IDE. Upewnij się, że w Twoim projekcie znajduje się odwołanie do biblioteki Aspose.Words for .NET.
+Zanim przejdziemy do akcji, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-## Krok 2: Załaduj dokument
+1. Podstawowa znajomość języka C#: Nie musisz być kreatorem języka C#, ale podstawowa znajomość języka będzie pomocna.
+2. Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli nie, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+3. Środowisko programistyczne: Dobre środowisko programistyczne, takie jak Visual Studio, znacznie ułatwi Ci życie.
+4. Przykładowy dokument: Przygotuj do testowania przykładowy dokument programu Word (.docx) zawierający zduplikowane style.
 
-W tym kroku załadujemy dokument programu Word, który chcemy wyczyścić. Aby załadować dokument, użyj poniższego kodu:
+## Importuj przestrzenie nazw
+
+Na początek zaimportujmy niezbędne przestrzenie nazw. Ten krok zapewnia dostęp do wszystkich klas i metod, których będziesz potrzebować.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Krok 1: Załaduj swój dokument
+
+Aby rozpocząć, musisz załadować dokument Word do swojego projektu. W tym miejscu wchodzi w grę Twój przykładowy dokument.
+
+1. Określ katalog dokumentów: Zdefiniuj ścieżkę do katalogu, w którym przechowywany jest dokument.
+2.  Załaduj dokument: Użyj`Document` class, aby załadować dokument.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Zastępować`"YOUR DOCUMENTS DIRECTORY"` z rzeczywistą ścieżką katalogu, w którym znajduje się dokument.
+## Krok 2: Policz style przed czyszczeniem
 
-## Krok 3: Policz style przed czyszczeniem
+Zanim posprzątamy, zobaczmy, ile stylów znajduje się obecnie w dokumencie. Daje nam to punkt odniesienia do porównania po oczyszczeniu.
 
-Przed przystąpieniem do czyszczenia policzymy liczbę stylów znajdujących się w dokumencie. Użyj poniższego kodu, aby wyświetlić liczbę stylów:
+1.  Uzyskaj dostęp do kolekcji stylów: Użyj`Styles` własność`Document` klasa.
+2. Wydrukuj licznik stylów: Użyj`Console.WriteLine` , aby wyświetlić liczbę stylów.
 
 ```csharp
+// Liczba stylów przed czyszczeniem.
 Console.WriteLine(doc.Styles.Count);
 ```
 
-Ta instrukcja wyświetla liczbę stylów obecnych w dokumencie.
+## Krok 3: Skonfiguruj opcje czyszczenia
 
-## Krok 4: Oczyść zduplikowane style
+Teraz czas skonfigurować opcje czyszczenia. W tym miejscu mówimy Aspose.Words, aby skupił się na usuwaniu zduplikowanych stylów.
 
-Teraz usuńmy z dokumentu zduplikowane style. Użyj poniższego kodu, aby przeprowadzić czyszczenie:
+1.  Utwórz opcje czyszczenia: Utwórz instancję`CleanupOptions` klasa.
+2.  Włącz czyszczenie DuplicateStyle: Ustaw`DuplicateStyle`własność do`true`.
 
 ```csharp
+// Usuwa z dokumentu zduplikowane style.
 CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
-doc. Cleanup(options);
 ```
 
- Ten kod czyści zduplikowane style z dokumentu przy użyciu określonych opcji. W tym przykładzie włączyliśmy`DuplicateStyle` opcja czyszczenia zduplikowanych stylów.
+## Krok 4: Wykonaj czyszczenie
 
-## Krok 5: Policz style po czyszczeniu
+Po ustawieniu opcji czyszczenia nadszedł czas, aby oczyścić te irytujące zduplikowane style.
 
-Po czyszczeniu ponownie policzymy liczbę stylów, aby sprawdzić, czy się zmniejszyła. Użyj poniższego kodu, aby wyświetlić liczbę nowych stylów:
+ Wywołaj metodę czyszczenia: Użyj metody`Cleanup` metoda`Document` class, przekazując opcje czyszczenia.
 
 ```csharp
+doc.Cleanup(options);
+```
+
+## Krok 5: Policz style po oczyszczeniu
+
+Zobaczmy wynik naszej operacji czyszczenia, ponownie licząc style. To pokaże nam, ile stylów zostało usuniętych.
+
+ Wydrukuj licznik nowego stylu: Użyj`Console.WriteLine` , aby wyświetlić zaktualizowaną liczbę stylów.
+
+```csharp
+// Zmniejszono liczbę stylów po czyszczeniu.
 Console.WriteLine(doc.Styles.Count);
+```
+
+## Krok 6: Zapisz zaktualizowany dokument
+
+Na koniec zapisz oczyszczony dokument w określonym katalogu.
+
+ Zapisz dokument: Użyj`Save` metoda`Document` klasa.
+
+```csharp
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");
 ```
 
-To zestawienie wyświetla liczbę stylów pozostałych po czyszczeniu.
+## Wniosek
 
-### Przykładowy kod źródłowy dla stylu Cleanup Duplicate przy użyciu Aspose.Words dla .NET
+I masz to! Pomyślnie wyczyściłeś zduplikowane style z dokumentu programu Word przy użyciu Aspose.Words dla .NET. Wykonując poniższe kroki, możesz zachować porządek i porządek w swoich dokumentach, dzięki czemu łatwiej nimi zarządzać i będziesz mniej podatny na problemy ze stylizacją. Pamiętaj, że kluczem do opanowania dowolnego narzędzia jest praktyka, więc eksperymentuj z Aspose.Words i odkryj wszystkie jego potężne funkcje.
 
-```csharp
+## Często zadawane pytania
 
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Document.docx");
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka, która pozwala programistom tworzyć, edytować, konwertować i programowo manipulować dokumentami programu Word przy użyciu języków .NET.
 
-	// Liczba stylów przed czyszczeniem.
-	Console.WriteLine(doc.Styles.Count);
+### Dlaczego ważne jest czyszczenie zduplikowanych stylów w dokumencie programu Word?
+Usuwanie zduplikowanych stylów pomaga zachować spójny i profesjonalny wygląd dokumentów, zmniejsza rozmiar pliku i ułatwia zarządzanie dokumentem.
 
-	// Usuwa z dokumentu zduplikowane style.
-	CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
-	doc.Cleanup(options);
+### Czy mogę używać Aspose.Words dla .NET z innymi językami .NET oprócz C#?
+Tak, Aspose.Words dla .NET może być używany z dowolnym językiem .NET, w tym VB.NET i F#.
 
-	//Zmniejszono liczbę stylów po czyszczeniu.
-	Console.WriteLine(doc.Styles.Count);
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+ Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).
 
-	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.docx");
-
-```
+### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+ Tak, możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).

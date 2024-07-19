@@ -2,134 +2,137 @@
 title: Oldja ki a sor könyvjelzőit a Word dokumentumban
 linktitle: Oldja ki a sor könyvjelzőit a Word dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan bonthatja ki a beágyazott soros könyvjelzőket a Word dokumentumban, és távolíthat el bizonyos sorokat anélkül, hogy ez más könyvjelzőket érintene.
+description: Az Aspose.Words for .NET segítségével könnyedén feloldhatja a kusza soros könyvjelzőket Word-dokumentumaiban. Ez az útmutató végigvezeti Önt a tisztább és biztonságosabb könyvjelzőkezelés folyamatán.
 type: docs
 weight: 10
 url: /hu/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
+## Bevezetés
 
-Ebben a cikkben megvizsgáljuk a fenti C# forráskódot, hogy megértsük, hogyan használható az Untangle Row Bookmarks funkció az Aspose.Words for .NET könyvtárban. Ez a funkció lehetővé teszi, hogy a sorok könyvjelzőinek végeit egy sorba helyezze a könyvjelzők kezdetével.
+Találkozott már olyan helyzettel, amikor egy Word-dokumentum egy sorának könyvjelzővel történő törlése összezavarja a szomszédos sorok többi könyvjelzőjét? Ez hihetetlenül frusztráló lehet, különösen, ha összetett táblázatokkal foglalkozunk. Szerencsére az Aspose.Words for .NET hatékony megoldást kínál: feloldja a soros könyvjelzőket. 
+
+Ez az útmutató végigvezeti Önt a sor könyvjelzők feloldásán a Word-dokumentumokban az Aspose.Words for .NET használatával. A kódot könnyen érthető lépésekre bontjuk, és elmagyarázzuk az egyes funkciók célját, így Ön magabiztosan kezelheti a könyvjelzőkkel kapcsolatos kellemetlen problémákat.
 
 ## Előfeltételek
 
-- C# nyelv alapismerete.
-- .NET fejlesztői környezet telepített Aspose.Words könyvtárral.
+Mielőtt merülne, szüksége lesz néhány dologra:
 
-## 1. lépés: A dokumentum betöltése
+1.  Aspose.Words for .NET: Ez a kereskedelmi könyvtár olyan funkciókat biztosít, amelyek segítségével programozottan dolgozhat Word dokumentumokkal. 2. Ingyenes próbaverziót tölthet le a webhelyről[letöltési link](https://releases.aspose.com/words/net/) vagy vásároljon licencet innen[megvesz](https://purchase.aspose.com/buy).
+3. AC# fejlesztői környezet: A Visual Studio vagy bármely más C# IDE tökéletesen működik.
+4. Word-dokumentum soros könyvjelzőkkel: A „Táblázat oszlopos könyvjelzői.docx” elnevezésű mintadokumentumot használjuk demonstrációs célokra.
 
- Használjuk a`Document` osztály a meglévő dokumentum fájlból való betöltéséhez:
+## Névterek importálása
+
+Az első lépés a szükséges névterek importálása a C# projektbe. Ezek a névterek hozzáférést biztosítanak az Aspose.Words for .NET általunk használt osztályokhoz és funkciókhoz:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using System;
+```
+
+## 1. lépés: Töltse be a Word-dokumentumot
+
+ Kezdjük az összegabalyodott sor könyvjelzőit tartalmazó Word dokumentum betöltésével. A`Document` osztály kezeli az Aspose.Words dokumentumkezelést. Így töltheti be a dokumentumot:
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Cserélje ki a dokumentum helyével
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## 2. lépés: Oldja fel a sor könyvjelzőit
+ Ne felejtse el cserélni`"YOUR DOCUMENT DIRECTORY"` a "Táblázat oszlopos könyvjelzői.docx" fájl tényleges elérési útjával.
 
- Használjuk a`Untangle` funkció a könyvjelzők sorokból való kibontásához. Ez a funkció azt az egyéni feladatot hajtja végre, hogy a könyvjelző sorok végét ugyanabba a sorba helyezi, ahol a könyvjelző kezdődik:
+## 2. lépés: Oldja ki a sor könyvjelzőit
 
-```csharp
-Untangle(doc);
-```
-
-## 3. lépés: Törölje soronként a könyvjelzőt
-
- Használjuk a`DeleteRowByBookmark` függvény egy adott sor törléséhez a könyvjelzője alapján:
+ Itt történik a varázslat! A`Untangle` funkció gondoskodik a sor könyvjelzőinek kioldásáról. Bontsuk le a funkcióit:
 
 ```csharp
-DeleteRowByBookmark(doc, "ROW2");
+private void Untangle(Document doc)
+{
+   foreach (Bookmark bookmark in doc.Range.Bookmarks)
+   {
+	   // Szerezze meg a könyvjelző és a könyvjelzővég szülősorát
+	   Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
+	   Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+	   // Ellenőrizze, hogy a sorok érvényesek és szomszédosak-e
+	   if (row1 != null && row2 != null && row1.NextSibling == row2)
+		   //Mozgassa a könyvjelző végét a felső sor utolsó cellájának utolsó bekezdésébe
+		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+   }
+}
 ```
 
-## 4. lépés: Ellenőrizze a többi könyvjelző sértetlenségét
+Íme lépésről lépésre a kód működésének magyarázata:
 
-Ellenőrizzük, hogy a többi könyvjelző nem sérült-e, és ellenőrizzük, hogy a könyvjelző vége még mindig jelen van-e:
+ A dokumentumban található összes könyvjelzőn keresztül iterálunk az a`foreach` hurok.
+Minden könyvjelzőnél lekérjük mindkét könyvjelző kezdősorának szülősorát (`bookmark.BookmarkStart`) és a könyvjelző vége (`bookmark.BookmarkEnd` ) használni a`GetAncestor` módszer.
+Ezután ellenőrizzük, hogy mindkét sor megtalálható-e (`row1 != null`és`row2 != null`) és ha szomszédos sorok (`row1.NextSibling == row2`). Ez biztosítja, hogy csak a szomszédos sorokon átívelő könyvjelzőket módosítsuk.
+Ha a feltételek teljesülnek, a könyvjelző végcsomópontját áthelyezzük a felső sor utolsó cellájának utolsó bekezdésének végére (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) hatékonyan kibogozni őket.
+
+## 3. lépés: Sor törlése könyvjelzővel
+
+ Most, hogy a könyvjelzőket kibontották, biztonságosan törölhetjük a sorokat a könyvjelzők nevével. A`DeleteRowByBookmark` függvény kezeli ezt a feladatot:
+
+```csharp
+private void DeleteRowByBookmark(Document doc, string bookmarkName)
+{
+   Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+   Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+   row?.Remove();
+}
+```
+
+Íme ennek a függvénynek a bontása:
+
+Felvesszük a könyvjelző nevét (`bookmarkName`) bemenetként.
+ A megfelelő könyvjelző objektumot a segítségével lekérjük`doc.Range.Bookmarks[bookmarkName]`.
+Ezután a könyvjelző szülősorát kezdjük el használni`GetAncestor` (hasonlóan a`Untangle` funkció).
+Végül ellenőrizzük, hogy létezik-e a könyvjelző és a sor (`bookmark != null` és
+
+## 4. lépés: Ellenőrizze a kibontást
+
+ Amíg a`Untangle` funkciónak biztosítania kell a többi könyvjelző biztonságát, ezt mindig jó gyakorlat ellenőrizni. Így ellenőrizhetjük, hogy a kibontási folyamat nem törölte-e véletlenül egy másik könyvjelző végét:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-throw new Exception("Wrong, the end of the bookmark was deleted.");
+   throw new Exception("Wrong, the end of the bookmark was deleted.");
+```
 
+Ez a kódrészlet ellenőrzi, hogy a "ROW1" nevű könyvjelző vége továbbra is létezik-e a "ROW2" könyvjelzővel ellátott sor törlése után. Ha ez nulla, a rendszer kivételt dob, jelezve, hogy probléma van a kibontási folyamattal. 
+
+## 5. lépés: Mentse el a dokumentumot
+
+ Végül a könyvjelzők kibontása és a sorok esetleges törlése után mentse el a módosított dokumentumot a`Save` módszer:
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Példa forráskód a soros könyvjelzők kibontásához az Aspose.Words for .NET használatával
+Ezzel a dokumentumot a kibontott könyvjelzőkkel és a törölt sorokkal együtt új „WorkingWithBookmarks.UntangleRowBookmarks.docx” fájlnéven menti. 
 
-Íme a teljes minta forráskód, amellyel az Aspose.Words for .NET segítségével kibonthatja a könyvjelzőket a sorokból:
-
-
-```csharp
-
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Table column bookmarks.docx");
-
-	//Ez azt az egyéni feladatot hajtja végre, hogy a sor könyvjelző végeit ugyanabba a sorba helyezi, ahol a könyvjelző kezdődik.
-	Untangle(doc);
-
-	// Mostantól egyszerűen törölhetünk sorokat egy könyvjelzővel anélkül, hogy a többi sor könyvjelzőjét károsítanánk.
-	DeleteRowByBookmark(doc, "ROW2");
-
-	// Ez csak annak ellenőrzésére szolgál, hogy a másik könyvjelző nem sérült-e.
-	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-		throw new Exception("Wrong, the end of the bookmark was deleted.");
-
-	doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
-
-```
-
-#### A forráskód kibontása
-```csharp
-
-private void Untangle(Document doc)
-        {
-            foreach (Bookmark bookmark in doc.Range.Bookmarks)
-            {
-                // A könyvjelző és a könyvjelző végcsomópont szülősorának lekérése.
-                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-                // Ha mindkét sor rendben van, és a könyvjelző eleje és vége a szomszédos sorokban található,
-                // mozgassa a könyvjelző végcsomópontját a felső sor utolsó cellájának utolsó bekezdésének végére.
-                if (row1 != null && row2 != null && row1.NextSibling == row2)
-                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-            }
-        }
-
-```
-
-#### DeleteRowByBookmark forráskód
-```csharp
-
- private void DeleteRowByBookmark(Document doc, string bookmarkName)
-        {
-            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
-
-            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
-            row?.Remove();
-        }
-
-```
 ## Következtetés
 
-Ebben a cikkben megvizsgáltuk a C# forráskódot, hogy megértsük, hogyan használhatjuk az Aspose.Words .NET-hez tartozó Sorkönyvjelzők feloldása funkcióját. Követtünk egy lépésről lépésre szóló útmutatót a sor könyvjelzőinek feloldásához és egy adott sor törléséhez a többi könyvjelző károsodása nélkül.
+ Ezen lépések követésével és a`Untangle`Az Aspose.Words for .NET segítségével hatékonyan kibonthatja a soros könyvjelzőket a Word-dokumentumokban. Ez biztosítja, hogy a sorok könyvjelzők általi törlése ne okozzon nem kívánt következményeket a szomszédos sorokban lévő többi könyvjelzővel kapcsolatban. Ne felejtse el lecserélni a helyőrzőket, mint például`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési utakkal és fájlnevekkel.
 
-### GYIK a sorkönyvjelzők Word dokumentumban történő kibontásához
+## GYIK
 
-#### K: Az Unscramble Row Bookmarks csak a táblázatokban lévő sorkönyvjelzőkkel működik?
+### Az Aspose.Words for .NET ingyenes?
 
-V: Igen, a Sorkönyvjelzők feloldása funkció kifejezetten a táblázatokban található sorkönyvjelzők kibontására szolgál. Ez a funkció használható soros könyvjelzők feldolgozására tömbökben, és biztosíthatja, hogy a könyvjelző vége ugyanabban a sorban legyen, mint a könyvjelzők kezdete.
+ Az Aspose.Words for .NET egy ingyenes próbaverzióval rendelkező kereskedelmi könyvtár. Letöltheti innen[letöltési link](https://releases.aspose.com/words/net/).
 
-#### K: Módosítja az Unscramble Line Bookmarks funkció az eredeti dokumentum tartalmát?
+### Kibonthatom kézzel a sorkönyvjelzőket a Wordben?
 
-V: Igen, a sorkönyvjelzők feloldása funkció módosítja az eredeti dokumentumot a könyvjelzők sorvégeinek mozgatásával, hogy azok ugyanabba a sorba kerüljenek, mint a könyvjelzők eleje. A funkció alkalmazása előtt mindenképpen mentsen biztonsági másolatot a dokumentumról.
+Bár technikailag lehetséges, a könyvjelzők kézi kibontása a Wordben fárasztó és hibás lehet. Az Aspose.Words for .NET automatizálja ezt a folyamatot, így időt és erőfeszítést takarít meg.
 
-#### K: Hogyan azonosíthatom be a soros könyvjelzőket a Word-dokumentumban?
+###  Mi történik, ha a`Untangle` function encounters an error?
 
-V: A sorkönyvjelzőket általában táblázatokban használják meghatározott szakaszok megjelölésére. A sor könyvjelzőit úgy azonosíthatja, hogy a dokumentumban lévő könyvjelzők között böngészik, és ellenőrzi, hogy a könyvjelzők a táblázat soraiban vannak-e.
+A kód tartalmaz egy kivételkezelőt, amely kivételt dob, ha a kibontási folyamat véletlenül törli egy másik könyvjelző végét. Ezt a hibakezelést személyre szabhatja saját igényeinek megfelelően.
 
-#### K: Lehetséges-e kibontani a sorkönyvjelzőket a nem szomszédos táblázatokban?
+### Használhatom ezt a kódot a nem szomszédos sorok könyvjelzőinek kibontására?
 
-V: Az ebben a cikkben bemutatott Sorkönyvjelzők feloldása funkció a szomszédos táblázatok sorkönyvjelzőinek kibontására szolgál. A nem szomszédos táblázatokban lévő sorkönyvjelzők szétválasztásához a dokumentum szerkezetétől függően további módosításokra lehet szükség a kódban.
+Jelenleg a kód a szomszédos sorokon átívelő könyvjelzők feloldására összpontosít. A kód módosítása a nem szomszédos sorok kezeléséhez további logikát igényel ezen forgatókönyvek azonosításához és kezeléséhez.
 
-#### K: Milyen egyéb manipulációkat hajthatok végre a soros könyvjelzőkkel, miután azokat feloldották?
+### Vannak korlátai ennek a megközelítésnek?
 
-V: A sorkönyvjelzők feloldása után szükség szerint különböző manipulációkat hajthat végre. Ez magában foglalhatja a könyvjelzővel ellátott sorok szerkesztését, törlését vagy tartalom hozzáadását. Ügyeljen arra, hogy óvatosan kezelje a soros könyvjelzőket, hogy elkerülje a dokumentum többi részére gyakorolt nem kívánt hatást.
+Ez a megközelítés feltételezi, hogy a könyvjelzők jól meghatározottak a táblázatcellákon belül. Ha a könyvjelzőket a cellákon kívülre vagy váratlan helyekre helyezi, előfordulhat, hogy a kibontási folyamat nem fog megfelelően működni.

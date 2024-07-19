@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. Можно ли перейти к началу закладки, а не к концу?
 
- Абсолютно! Просто установите`isBookmarkStart` параметр для`true` и`isBookmarkEnd` к`false` в`MoveToBookmark` метод.
+ Абсолютно! Просто установите`isBookmarkStart` параметр для`true`и`isBookmarkEnd` к`false` в`MoveToBookmark` метод.
 
 ### 2. Что делать, если имя моей закладки неверное?
 

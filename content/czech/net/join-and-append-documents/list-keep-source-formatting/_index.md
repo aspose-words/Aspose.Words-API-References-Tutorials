@@ -2,76 +2,87 @@
 title: List Keep Source Formátování
 linktitle: List Keep Source Formátování
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak zachovat formátování seznamu při spojování a připojování dokumentů Word pomocí Aspose.Words for .NET.
+description: Naučte se sloučit dokumenty aplikace Word při zachování formátování pomocí Aspose.Words for .NET. Tento výukový program poskytuje podrobné pokyny pro bezproblémové slučování dokumentů.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/list-keep-source-formatting/
 ---
+## Úvod
 
-Tento tutoriál vás provede procesem používání funkce List Keep Source Formatting aplikace Aspose.Words for .NET. Tato funkce umožňuje spojovat a připojovat dokumenty aplikace Word při zachování zdrojového formátování seznamů.
+V tomto tutoriálu prozkoumáme, jak využít Aspose.Words pro .NET ke sloučení dokumentů při zachování zdrojového formátování. Tato schopnost je nezbytná pro scénáře, kde je zásadní zachování původního vzhledu dokumentů.
 
 ## Předpoklady
 
-Než začnete, ujistěte se, že máte následující:
+Než budete pokračovat, ujistěte se, že máte následující předpoklady:
 
-1. Aspose.Words for .NET nainstalován. Můžete si jej stáhnout z webu Aspose nebo nainstalovat přes NuGet.
-2. Visual Studio nebo jiné vývojové prostředí C#.
+- Visual Studio nainstalované na vašem počítači.
+-  Aspose.Words for .NET nainstalován. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Základní znalost programování v C# a prostředí .NET.
 
-## Krok 1: Inicializujte adresáře dokumentů
+## Importovat jmenné prostory
 
- Nejprve musíte nastavit cestu k adresáři dokumentů. Upravte hodnotu`dataDir` proměnnou k cestě, kde jsou umístěny vaše dokumenty.
+Nejprve importujte potřebné jmenné prostory do svého projektu C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
 ```
 
-## Krok 2: Načtěte zdrojové a cílové dokumenty
+## Krok 1: Nastavte svůj projekt
 
-Dále musíte načíst zdrojové a cílové dokumenty pomocí Aspose.Words`Document` třída. Aktualizujte názvy souborů v`Document` konstruktor podle názvů vašich dokumentů.
+Začněte vytvořením nového projektu C# v sadě Visual Studio. Ujistěte se, že je ve vašem projektu odkazováno na Aspose.Words for .NET. Pokud ne, můžete jej přidat prostřednictvím NuGet Package Manager.
+
+## Krok 2: Inicializujte proměnné dokumentu
 
 ```csharp
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Načtěte zdrojové a cílové dokumenty
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Krok 3: Nastavte zdrojový dokument na nepřetržitý tok
+## Krok 3: Nakonfigurujte nastavení sekce
 
- Abyste zajistili, že obsah ze zdrojového dokumentu bude po připojení k cílovému dokumentu plynule proudit, musíte nastavit`SectionStart` vlastnost první sekce ve zdrojovém dokumentu na`SectionStart.Continuous`.
+Chcete-li zachovat nepřetržitý tok ve sloučeném dokumentu, upravte začátek oddílu:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Krok 4: Připojte zdrojový dokument k cílovému dokumentu
+## Krok 4: Sloučení dokumentů
 
- Nyní můžete připojit zdrojový dokument k cílovému dokumentu pomocí`AppendDocument` metoda`Document` třída. The`ImportFormatMode.KeepSourceFormatting`Parametr zajišťuje, že během operace připojení bude zachováno zdrojové formátování, včetně formátování seznamů.
+Připojte obsah zdrojového dokumentu (`srcDoc`) do cílového dokumentu (`dstDoc`) při zachování původního formátování:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Krok 5: Uložte konečný dokument
+## Krok 5: Uložte sloučený dokument
 
- Nakonec uložte sloučený dokument s povolenou funkcí List Keep Source Formatting pomocí`Save` metoda`Document` třída.
+Nakonec uložte sloučený dokument do určeného adresáře:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-### Příklad zdrojového kódu pro formátování List Keep pomocí Aspose.Words pro .NET 
+## Závěr
 
-Zde je úplný zdrojový kód pro funkci List Keep Source Formatting v C# pomocí Aspose.Words pro .NET:
+Závěrem lze říci, že slučování dokumentů při zachování jejich původního formátování je s Aspose.Words pro .NET jednoduché. Tento výukový program vás provede celým procesem a zajistí, že si sloučený dokument zachová rozložení a styl zdrojového dokumentu.
 
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## FAQ
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Připojte obsah dokumentu tak, aby plynule plynul.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
-```
+### Co když moje dokumenty mají různé styly?
+Aspose.Words zvládá různé styly elegantně a zachovává původní formátování co nejpřesněji.
 
-A je to! Úspěšně jste implementovali funkci List Keep Source Formatting pomocí Aspose.Words for .NET. Konečný dokument bude obsahovat sloučený obsah se zachováním formátování seznamu zdrojového dokumentu.
+### Mohu sloučit dokumenty různých formátů?
+Ano, Aspose.Words podporuje slučování dokumentů různých formátů, včetně DOCX, DOC, RTF a dalších.
+
+### Je Aspose.Words kompatibilní s .NET Core?
+Ano, Aspose.Words plně podporuje .NET Core, což umožňuje vývoj napříč platformami.
+
+### Jak mohu efektivně zpracovávat velké dokumenty?
+Aspose.Words poskytuje efektivní API pro manipulaci s dokumenty, optimalizované pro výkon i u velkých dokumentů.
+
+### Kde najdu další příklady a dokumentaci?
+ Další příklady a podrobnou dokumentaci můžete prozkoumat na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/).

@@ -25,7 +25,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-请务必将“您的文档目录”替换为您的文档目录的实际路径，并提供正确的文件名。
+请确保将“您的文档目录”替换为您的文档目录的实际路径，并提供正确的文件名。
 
 ## 步骤 3：检索首选宽度类型和值
 接下来，我们将检索特定表格单元格的首选宽度类型及其值。使用以下代码：

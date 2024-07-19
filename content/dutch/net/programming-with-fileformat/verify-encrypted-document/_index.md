@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Stap 3: Controleer of het document gecodeerd is
 
- Wij gebruiken de`IsEncrypted` eigendom van de`FileFormatInfo`object om te controleren of het document gecodeerd is. Deze eigenschap keert terug`true` als het document gecodeerd is, keert het terug`false`. We geven het resultaat weer in de console.
+ Wij gebruiken de`IsEncrypted` eigendom van de`FileFormatInfo` object om te controleren of het document gecodeerd is. Deze eigenschap keert terug`true` als het document gecodeerd is, keert het terug`false`. We geven het resultaat weer in de console.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### Vraag: Hoe kan ik het bestandsformaat detecteren?
- U kunt gebruik maken van de`DetectFileFormat` werkwijze van de`FileFormatUtil`klasse om informatie over het bestandsformaat te detecteren. In het volgende voorbeeld gaan we ervan uit dat het gecodeerde document "Encrypted.docx" heet en zich in de opgegeven documentenmap bevindt:
+ U kunt gebruik maken van de`DetectFileFormat` werkwijze van de`FileFormatUtil` klasse om informatie over het bestandsformaat te detecteren. In het volgende voorbeeld gaan we ervan uit dat het gecodeerde document "Encrypted.docx" heet en zich in de opgegeven documentenmap bevindt:
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### Vraag: Hoe controleer ik of het document gecodeerd is?
- U kunt gebruik maken van de`IsEncrypted` eigendom van de`FileFormatInfo`object om te controleren of het document gecodeerd is. Deze eigenschap keert terug`true` als het document gecodeerd is, keert het terug`false`. Het resultaat wordt weergegeven in de console:
+ U kunt gebruik maken van de`IsEncrypted` eigendom van de`FileFormatInfo` object om te controleren of het document gecodeerd is. Deze eigenschap keert terug`true` als het document gecodeerd is, keert het terug`false`. Het resultaat wordt weergegeven in de console:
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

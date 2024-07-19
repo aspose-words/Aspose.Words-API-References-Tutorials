@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
- Kami sedang mengonfigurasi`ParagraphFormat`properti. Mari kita uraikan fungsi masing-masing properti:
+Kami sedang mengonfigurasi`ParagraphFormat` properti. Mari kita uraikan fungsi masing-masing properti:
 - Penyelarasan: Memusatkan paragraf.
 - LeftIndent: Mengatur indentasi kiri menjadi 50 poin.
 - RightIndent: Mengatur indentasi kanan menjadi 50 poin.

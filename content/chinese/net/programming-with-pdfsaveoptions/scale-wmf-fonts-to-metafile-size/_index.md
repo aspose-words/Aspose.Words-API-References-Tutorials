@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
-## 步骤 3：配置图元文件渲染选项
+## 步骤 3：配置图元文件呈现选项
 
 要启用或禁用 WMF 字体缩放到图元文件大小，我们需要配置`MetafileRenderingOptions`对象。在此示例中，我们通过设置`ScaleWmfFontsToMetafileSize`财产`false`.
 

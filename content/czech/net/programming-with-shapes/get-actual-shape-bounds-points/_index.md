@@ -17,7 +17,7 @@ Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 - Základní znalost C# a Word Processing s dokumenty Word.
 
 ## Krok 1: Vytvořte nový dokument a DocumentBuilder
- Vytvořte novou instanci souboru`Document` třída a a`DocumentBuilder`objekt pracovat s dokumentem.
+ Vytvořte novou instanci souboru`Document` třída a a`DocumentBuilder` objekt pracovat s dokumentem.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 2: Vložte obrazový tvar
- Použijte`InsertImage` metoda`DocumentBuilder` objekt pro vložení tvaru obrázku do dokumentu. Jako parametr zadejte cestu k souboru obrázku.
+ Použijte`InsertImage` metoda`DocumentBuilder`objekt pro vložení tvaru obrázku do dokumentu. Jako parametr zadejte cestu k souboru obrázku.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

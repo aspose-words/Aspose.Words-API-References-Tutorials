@@ -2,90 +2,121 @@
 title: Ontwarren in Word-document
 linktitle: Ontwarren in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u geneste bladwijzers in Word-documenten in aangrenzende tabelrijen kunt ontwarren met behulp van Aspose.Words voor .NET.
+description: Beheers het ontwarren van bladwijzers in Word-documenten met Aspose.Words voor .NET met onze gedetailleerde stapsgewijze handleiding. Perfect voor .NET-ontwikkelaars.
 type: docs
 weight: 10
 url: /nl/net/programming-with-bookmarks/untangle/
 ---
+## Invoering
 
-In dit artikel zullen we de bovenstaande C#-broncode verkennen om te begrijpen hoe u de Untangle-functie in de Aspose.Words voor .NET-bibliotheek kunt gebruiken. Deze functie ontrafelt geneste bladwijzers die zich in aangrenzende tabelrijen bevinden.
+Programmatisch door een Word-document navigeren kan een beetje lijken op het vinden van je weg door een doolhof. Mogelijk komt u bladwijzers, koppen, tabellen en andere elementen tegen die moeten worden gemanipuleerd. Vandaag duiken we in een veel voorkomende maar ingewikkelde taak: het ontwarren van bladwijzers in een Word-document met behulp van Aspose.Words voor .NET. Deze tutorial begeleidt u stap voor stap door het proces, zodat u elk onderdeel van de reis begrijpt.
 
 ## Vereisten
 
-- Basiskennis van de C#-taal.
-- .NET-ontwikkelomgeving met Aspose.Words-bibliotheek geïnstalleerd.
+Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-## Stap 1: Blader door documentbladwijzers
+1.  Aspose.Words voor .NET: Je hebt de Aspose.Words voor .NET-bibliotheek nodig. Als je het niet hebt, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een .NET-ontwikkelomgeving zoals Visual Studio.
+3. Basiskennis van C#: Als u de basisprincipes van C# begrijpt, kunt u de codefragmenten en uitleg volgen.
 
-We gebruiken een foreach-lus om alle bladwijzers in het document te doorlopen:
+## Naamruimten importeren
+
+Zorg er om te beginnen voor dat u de benodigde naamruimten importeert. Hierdoor krijgt u toegang tot de klassen en methoden die nodig zijn voor het manipuleren van Word-documenten met Aspose.Words.
 
 ```csharp
-foreach(Bookmark bookmark in doc.Range.Bookmarks)
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## Stap 1: Laad uw document
+
+De eerste stap is het laden van het Word-document waarmee u wilt werken. Dit document bevat de bladwijzers die u moet ontwarren.
+
+Stap 1 Kop: Het document laden
+
+```csharp
+Document doc = new Document("path/to/your/document.docx");
+```
+
+In deze regel laden we eenvoudigweg het document vanaf een opgegeven pad. Zorg ervoor dat het pad naar uw daadwerkelijke Word-document verwijst.
+
+## Stap 2: Herhaal bladwijzers
+
+Vervolgens moeten we alle bladwijzers in het document doorlopen. Hierdoor hebben we toegang tot elke bladwijzer en zijn eigenschappen.
+
+Stap 2 Kop: Bladeren door bladwijzers
+
+```csharp
+foreach (Bookmark bookmark in doc.Range.Bookmarks)
 {
-     // Code voor het omgaan met bladwijzers hier
+    // Elke bladwijzer verwerken
 }
 ```
 
-## Stap 2: Haal bovenliggende rijen op uit bladwijzers
+ Hier gebruiken we een`foreach` lus om door elke bladwijzer in het bereik van het document te bladeren. Met deze lus kunnen we elke bladwijzer afzonderlijk verwerken.
 
- Wij gebruiken de`GetAncestor` methoden om de bovenliggende rijen van de begin- en eindknooppunten van de bladwijzer op te halen:
+## Stap 3: Identificeer de begin- en eindrijen van bladwijzers
+
+Voor elke bladwijzer moeten we de rijen vinden die het begin en het einde van de bladwijzer bevatten. Dit is van cruciaal belang om te bepalen of de bladwijzer zich over aangrenzende rijen uitstrekt.
+
+Stap 3 Kop: rijen identificeren
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-## Stap 3: Ontwar geneste bladwijzers
+ In deze stap gebruiken we de`GetAncestor` methode om de bovenliggende rij van zowel het begin- als het eindknooppunt van de bladwijzer te vinden. Dit helpt ons de exacte betrokken rijen te identificeren.
 
-Als beide bovenliggende regels worden gevonden en de bladwijzer begint en eindigt in aangrenzende regels, verplaatsen we het eindknooppunt van de bladwijzer naar het einde van de laatste alinea van de laatste cel in de bovenste rij:
+## Stap 4: Controleer op aangrenzende rijen
+
+Voordat we het uiteinde van de bladwijzer verplaatsen, moeten we ervoor zorgen dat het begin en einde van de bladwijzer zich in aangrenzende rijen bevinden. Deze voorwaarde is essentieel om de bladwijzer correct te ontwarren.
+
+Stap 4 Kop: Rij-aangrenzend controleren
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
-     row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+{
+    // Rijen grenzen aan elkaar, ga verder met het verplaatsen van het bladwijzeruiteinde
+}
 ```
 
-### Voorbeeldbroncode voor Untangle met Aspose.Words voor .NET
+ Hier voegen we een voorwaarde toe om te controleren of beide rijen worden gevonden en of ze aangrenzend zijn. De`NextSibling` eigenschap helpt ons de nabijheid te verifiëren.
 
-Hier is het volledige broncodevoorbeeld voor het ontwarren van geneste bladwijzers met Aspose.Words voor .NET:
+## Stap 5: Verplaats het bladwijzereinde
+
+Als ten slotte aan de voorwaarden is voldaan, verplaatsen we het eindknooppunt van de bladwijzer naar het einde van de laatste alinea in de laatste cel van de bovenste rij. Met deze stap wordt de bladwijzer effectief ontwart.
+
+Stap 5 Kop: het bladwijzereinde verplaatsen
 
 ```csharp
-
-	foreach (Bookmark bookmark in doc.Range.Bookmarks)
-	{
-		// Haal de bovenliggende rij op van zowel de bladwijzer als het bladwijzereindknooppunt.
-		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-		// Als beide rijen in orde zijn en het begin en einde van de bladwijzer zich in aangrenzende rijen bevinden,
-		// verplaats het eindknooppunt van de bladwijzer naar het einde van de laatste alinea in de laatste cel van de bovenste rij.
-		if (row1 != null && row2 != null && row1.NextSibling == row2)
-			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-	}
-
+row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
+
+ In deze stap gebruiken we de`AppendChild` methode om het eindknooppunt van de bladwijzer te verplaatsen. Door het toe te voegen aan de laatste alinea van de laatste cel van de bovenste rij, zorgen we ervoor dat de bladwijzer correct wordt ontward.
 
 ## Conclusie
 
-In dit artikel hebben we de C#-broncode onderzocht om te begrijpen hoe u de Untangle-functie van Aspose.Words voor .NET kunt gebruiken. We hebben een stapsgewijze handleiding gevolgd om geneste bladwijzers in aangrenzende tabelrijen te ontwarren.
+Het ontwarren van bladwijzers in een Word-document met Aspose.Words voor .NET kan lastig lijken, maar door het op te delen in beheersbare stappen wordt het proces veel duidelijker. We hebben het laden van een document doorlopen, de bladwijzers doorlopen, relevante rijen geïdentificeerd, gecontroleerd op aangrenzende bestanden en uiteindelijk het eindknooppunt van de bladwijzer verplaatst. Met deze handleiding zou u effectiever met bladwijzers in uw Word-documenten moeten kunnen omgaan.
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Werkt de functie Ontwarren alleen met geneste bladwijzers in aangrenzende tabelrijen?
+### Kan ik Aspose.Words voor .NET gebruiken om naast bladwijzers ook andere elementen te manipuleren?
 
-A: Ja, de functie Ontwarren is speciaal ontworpen om geneste bladwijzers in aangrenzende tabelrijen te ontwarren. Als de bladwijzers niet op aangrenzende regels staan, is deze functie niet van toepassing.
+Ja, Aspose.Words voor .NET is een krachtige bibliotheek waarmee u een breed scala aan documentelementen kunt manipuleren, waaronder alinea's, tabellen, afbeeldingen en meer.
 
-#### Vraag: Hoe kan ik geneste bladwijzers in mijn Word-document identificeren?
+### Wat moet ik doen als de bladwijzer meer dan twee rijen beslaat?
 
-A: U kunt geneste bladwijzers identificeren door de bladwijzers in het document te doorlopen en te controleren of de beginbladwijzer en de eindbladwijzer zich in aangrenzende tabelrijen bevinden. U kunt de broncode in dit artikel als uitgangspunt gebruiken om deze functionaliteit te implementeren.
+In deze zelfstudie wordt ingegaan op bladwijzers die zich over twee aangrenzende rijen uitstrekken. Voor complexere gevallen zou extra logica nodig zijn om bladwijzers te verwerken die meerdere rijen of secties beslaan.
 
-#### Vraag: Wijzigt de functie Unscramble de inhoud van het originele document?
+### Is er een proefversie van Aspose.Words voor .NET beschikbaar?
 
-A: Ja, de functie Ontwarren wijzigt het originele document door het eindknooppunt van de bladwijzer naar het einde van de laatste alinea van de laatste cel in de bovenste rij te verplaatsen. Zorg ervoor dat u een reservekopie van het document opslaat voordat u deze functie toepast.
+ Ja, dat kan[download een gratis proefversie](https://releases.aspose.com/) van de Aspose-website om de functies van de bibliotheek te verkennen.
 
-#### Vraag: Hoe kan ik geneste bladwijzers in andere typen documentelementen, zoals secties of alinea's, ontwarren?
+### Hoe kan ik ondersteuning krijgen als ik problemen tegenkom?
 
-A: De functie Ontwarren die in dit artikel wordt gepresenteerd, is specifiek ontworpen om geneste bladwijzers in aangrenzende tabelrijen te ontwarren. Als u geneste bladwijzers in andere documentelementen wilt ontwarren, moet u de code dienovereenkomstig aanpassen en geschikte methoden gebruiken om toegang te krijgen tot de gewenste elementen.
+ U kunt een bezoek brengen aan de[Aspose-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp bij eventuele problemen of vragen die u heeft.
 
-#### Vraag: Zijn er andere methoden om geneste bladwijzers in een Word-document te ontwarren met Aspose.Words voor .NET?
+### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
 
- A: De methode die in dit artikel wordt gepresenteerd, is een veelgebruikte methode voor het ontwarren van geneste bladwijzers in aangrenzende tabelrijen. Er kunnen echter andere benaderingen of technieken zijn, afhankelijk van de specifieke behoeften van uw project. Je kunt de[Aspose.Words voor .NET API-referenties](https://reference.aspose.com/words/net/) om de beschikbare functies verder te verkennen.
+ Ja, Aspose.Words voor .NET vereist een licentie voor volledige functionaliteit. U kunt een licentie kopen[hier](https://purchase.aspose.com/buy) of vraag een[tijdelijke licentie](https://purchase.aspose.com/temporary-license) voor evaluatiedoeleinden.

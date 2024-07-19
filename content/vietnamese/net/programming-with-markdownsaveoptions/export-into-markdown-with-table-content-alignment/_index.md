@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /vi/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-Dưới đây là hướng dẫn từng bước để giải thích mã nguồn C# sau đây giúp xuất nội dung sang tệp Markdown có căn chỉnh nội dung bảng bằng thư viện Aspose.Words cho .NET. Đảm bảo bạn đã đưa thư viện Aspose.Words vào dự án của mình trước khi sử dụng mã này.
+Dưới đây là hướng dẫn từng bước để giải thích mã nguồn C# sau giúp xuất nội dung sang tệp Markdown có căn chỉnh nội dung bảng bằng thư viện Aspose.Words cho .NET. Đảm bảo bạn đã đưa thư viện Aspose.Words vào dự án của mình trước khi sử dụng mã này.
 
 ## Bước 1: Đặt đường dẫn thư mục tài liệu
 

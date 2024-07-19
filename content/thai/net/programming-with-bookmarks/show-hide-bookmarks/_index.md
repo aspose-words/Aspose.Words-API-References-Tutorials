@@ -2,138 +2,153 @@
 title: แสดงซ่อนบุ๊กมาร์กในเอกสาร Word
 linktitle: แสดงซ่อนบุ๊กมาร์กในเอกสาร Word
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีแสดงหรือซ่อนบุ๊กมาร์กเฉพาะในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีแสดงหรือซ่อนบุ๊กมาร์กในเอกสาร Word แบบไดนามิกโดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนของเรา เหมาะสำหรับนักพัฒนา
 type: docs
 weight: 10
 url: /th/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## การแนะนำ
 
-ในบทความนี้ เราจะสำรวจซอร์สโค้ด C# ด้านบนเพื่อทำความเข้าใจวิธีใช้ฟังก์ชันแสดงซ่อนบุ๊กมาร์กในไลบรารี Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณสามารถแสดงหรือซ่อนบุ๊กมาร์กเฉพาะในเอกสาร Word
+เคยพบว่าตัวเองจำเป็นต้องซ่อนหรือแสดงบางส่วนของเอกสาร Word แบบไดนามิกหรือไม่? คุณโชคดี! ด้วย Aspose.Words สำหรับ .NET คุณสามารถจัดการการเปิดเผยเนื้อหาที่คั่นหน้าในเอกสารของคุณได้อย่างง่ายดาย บทช่วยสอนนี้จะแนะนำคุณตลอดขั้นตอนการแสดงและซ่อนบุ๊กมาร์กในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET เราจะแจกแจงโค้ดทีละขั้นตอน ดังนั้นไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือมือใหม่ คุณจะพบว่าคู่มือนี้ง่ายต่อการปฏิบัติตาม
 
 ## ข้อกำหนดเบื้องต้น
 
-- ความรู้พื้นฐานของภาษา C#
-- สภาพแวดล้อมการพัฒนา .NET ที่ติดตั้งไลบรารี Aspose.Words
+ก่อนที่เราจะเจาะลึกโค้ด เรามาตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
 
-## ขั้นตอนที่ 1: กำลังโหลดเอกสาร
+1.  Aspose.Words for .NET: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งไลบรารี Aspose.Words for .NET แล้ว ถ้าไม่คุณสามารถดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/words/net/).
+2. สภาพแวดล้อมการพัฒนา: IDE เช่น Visual Studio
+3. ความรู้พื้นฐานของ C#: ความคุ้นเคยกับการเขียนโปรแกรม C# จะเป็นประโยชน์
+4. เอกสาร Word: เอกสาร Word ตัวอย่างพร้อมที่คั่นหน้า
 
- เราใช้`Document` คลาสเพื่อโหลดเอกสารที่มีอยู่จากไฟล์:
+## นำเข้าเนมสเปซ
+
+ก่อนที่จะเริ่มต้นด้วยโค้ด คุณต้องนำเข้าเนมสเปซที่จำเป็นก่อน เพิ่มสิ่งต่อไปนี้ที่จุดเริ่มต้นของไฟล์ C# ของคุณ:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## ขั้นตอนที่ 1: โหลดเอกสารของคุณ
+
+ก่อนอื่นคุณต้องโหลดเอกสาร Word ที่มีบุ๊กมาร์ก ต่อไปนี้คือวิธีที่คุณสามารถทำได้:
+
+```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## ขั้นตอนที่ 2: แสดงหรือซ่อนบุ๊กมาร์กเฉพาะ
+### คำอธิบาย
 
- เราใช้`ShowHideBookmarkedContent` ฟังก์ชั่นแสดงหรือซ่อนบุ๊กมาร์กเฉพาะในเอกสาร ฟังก์ชันนี้จะใช้เป็นพารามิเตอร์ของเอกสาร ชื่อของบุ๊กมาร์ก และบูลีนเพื่อระบุว่าจะแสดงหรือซ่อนบุ๊กมาร์ก:
+- dataDir: นี่คือเส้นทางไดเร็กทอรีที่มีเอกสาร Word ของคุณอยู่
+-  เอกสารเอกสาร: นี่เป็นการเริ่มต้นอินสแตนซ์ใหม่ของ`Document` คลาสด้วยไฟล์ที่คุณระบุ
+
+## ขั้นตอนที่ 2: แสดงหรือซ่อนเนื้อหาที่คั่นหน้า
+
+ต่อไปเราจะกำหนดวิธีการแสดงหรือซ่อนเนื้อหาที่บุ๊กมาร์กไว้ นี่คือวิธีการที่สมบูรณ์:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{MERGEFIELD bookmark}" = "true" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### คำอธิบาย
+
+- บุ๊กมาร์ก bm: ดึงบุ๊กมาร์กจากเอกสาร
+- ตัวสร้าง DocumentBuilder: ช่วยในการนำทางและแก้ไขเอกสาร
+- ช่องฟิลด์: แทรกช่อง IF เพื่อตรวจสอบสภาพของที่คั่นหน้า
+- โหนด currentNode: สำรวจผ่านโหนดเพื่อค้นหาจุดเริ่มต้นและจุดสิ้นสุดของฟิลด์
+
+## ขั้นตอนที่ 3: ดำเนินการฟังก์ชันแสดง/ซ่อน
+
+ ตอนนี้คุณต้องโทรไปที่`ShowHideBookmarkedContent` วิธีการส่งเอกสาร ชื่อบุ๊กมาร์ก และแฟล็กการมองเห็น:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## ขั้นตอนที่ 3: บันทึกเอกสารที่แก้ไข
+### คำอธิบาย
 
- เราใช้`Save` วิธีการบันทึกเอกสารที่แก้ไขลงในไฟล์:
+- doc: วัตถุเอกสารของคุณ
+- "MyBookmark1": ชื่อของบุ๊กมาร์กที่คุณต้องการแสดง/ซ่อน
+- เท็จ: ธงการมองเห็น (จริงสำหรับการแสดง เท็จสำหรับการซ่อน)
+
+## ขั้นตอนที่ 4: บันทึกเอกสารของคุณ
+
+สุดท้าย ให้บันทึกเอกสารที่แก้ไข:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### ตัวอย่างซอร์สโค้ดสำหรับแสดงซ่อนบุ๊กมาร์กโดยใช้ Aspose.Words สำหรับ .NET
+### คำอธิบาย
 
-นี่คือตัวอย่างซอร์สโค้ดแบบเต็มเพื่อสาธิตการแสดงหรือซ่อนบุ๊กมาร์กเฉพาะโดยใช้ Aspose.Words สำหรับ .NET:
+- dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx": เส้นทางและชื่อของเอกสารใหม่ที่จะบันทึกการเปลี่ยนแปลง
 
-```csharp
-
-	// เส้นทางไปยังไดเร็กทอรีเอกสาร
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### ซอร์สโค้ด ShowHideBookmarkedContent
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {IF "{MERGEFIELD bookmark}" = "true" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## บทสรุป
 
-ในบทความนี้ เราได้สำรวจซอร์สโค้ด C# เพื่อทำความเข้าใจวิธีใช้ฟีเจอร์แสดงซ่อนบุ๊กมาร์กของ Aspose.Words สำหรับ .NET เราทำตามคำแนะนำทีละขั้นตอนเพื่อแสดงหรือซ่อนบุ๊กมาร์กเฉพาะในเอกสาร
+และคุณก็ได้แล้ว! คุณได้เรียนรู้วิธีการแสดงและซ่อนบุ๊กมาร์กในเอกสาร Word โดยใช้ Aspose.Words for .NET เรียบร้อยแล้ว เทคนิคนี้มีประโยชน์อย่างเหลือเชื่อสำหรับการสร้างเอกสารแบบไดนามิกที่มีเนื้อหาแบบมีเงื่อนไข
 
-### คำถามที่พบบ่อยสำหรับการแสดงซ่อนบุ๊กมาร์กในเอกสาร word
+## คำถามที่พบบ่อย
 
-#### ถาม: ฉันสามารถแสดงหรือซ่อนบุ๊กมาร์กหลายรายการในเอกสารเดียวกันได้หรือไม่
+### Aspose.Words สำหรับ .NET คืออะไร
+Aspose.Words สำหรับ .NET เป็นไลบรารีการประมวลผลเอกสารที่มีประสิทธิภาพซึ่งช่วยให้นักพัฒนาสามารถสร้าง แก้ไข และแปลงเอกสาร Word โดยทางโปรแกรมได้
 
-ตอบ: ได้ คุณสามารถแสดงหรือซ่อนบุ๊กมาร์กหลายรายการในเอกสารเดียวกันได้โดยทำซ้ำขั้นตอนที่ 2 และ 3 สำหรับแต่ละบุ๊กมาร์กที่คุณต้องการดำเนินการ
+### ฉันจะรับ Aspose.Words สำหรับ .NET ได้อย่างไร
+ คุณสามารถดาวน์โหลด Aspose.Words สำหรับ .NET ได้จาก[ที่นี่](https://releases.aspose.com/words/net/)- มีการทดลองใช้ฟรีด้วย
 
-#### ถาม: โค้ดที่ให้มาทำงานร่วมกับรูปแบบเอกสาร Word อื่นๆ เช่น .doc หรือ .docm ได้หรือไม่
+### ฉันสามารถใช้วิธีนี้กับบุ๊กมาร์กประเภทอื่นได้หรือไม่
+ได้ คุณสามารถปรับใช้วิธีนี้เพื่อจัดการการมองเห็นบุ๊กมาร์กในเอกสาร Word ของคุณได้
 
-ตอบ: ใช่ โค้ดที่ให้มาใช้งานได้กับเอกสาร Word รูปแบบต่างๆ ที่ Aspose.Words รองรับ เช่น .doc และ .docm เพียงให้แน่ใจว่าใช้ชื่อไฟล์และเส้นทางที่ถูกต้องเมื่อโหลดและบันทึกเอกสาร
+### จะเกิดอะไรขึ้นหากเอกสารของฉันไม่มีบุ๊กมาร์กที่ระบุ
+หากไม่มีบุ๊กมาร์ก วิธีการนี้จะทำให้เกิดข้อผิดพลาด ตรวจสอบให้แน่ใจว่ามีบุ๊กมาร์กก่อนที่จะพยายามแสดง/ซ่อน
 
-#### ถาม: ฉันจะแสดงบุ๊กมาร์กที่ซ่อนอยู่อีกครั้งได้อย่างไร
-
- ตอบ: หากต้องการแสดงบุ๊กมาร์กที่ซ่อนอยู่อีกครั้ง คุณต้องใช้อันเดิม`ShowHideBookmarkedContent` ฟังก์ชันส่งผ่านค่า`true` สำหรับพารามิเตอร์บูลีนที่ระบุว่าจะแสดงหรือซ่อนบุ๊กมาร์ก
-
-#### ถาม: ฉันสามารถใช้เงื่อนไขเพื่อแสดงหรือซ่อนบุ๊กมาร์กตามค่าฟิลด์ผสานในเอกสารได้หรือไม่
-
- ตอบ: ได้ คุณสามารถใช้เงื่อนไขและผสานค่าฟิลด์เพื่อกำหนดว่าควรแสดงหรือซ่อนบุ๊กมาร์กหรือไม่ คุณสามารถปรับแต่งโค้ดของ`ShowHideBookmarkedContent` ทำหน้าที่คำนึงถึงเงื่อนไขและค่าที่เหมาะสม
-
-#### ถาม: ฉันจะลบบุ๊กมาร์กในเอกสาร Word โดยใช้ Aspose.Words for .NET ได้อย่างไร
-
- ตอบ: หากต้องการลบบุ๊กมาร์กในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET คุณสามารถใช้ไฟล์`RemoveBookmarks` วิธีการของ`Document` ระดับ. นี่คือโค้ดตัวอย่าง:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### ฉันจะรับการสนับสนุนได้อย่างไรหากฉันประสบปัญหา
+ คุณสามารถรับการสนับสนุนจากชุมชน Aspose[ที่นี่](https://forum.aspose.com/c/words/8).

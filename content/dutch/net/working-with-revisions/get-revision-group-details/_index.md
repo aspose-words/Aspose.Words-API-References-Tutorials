@@ -75,7 +75,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Vraag: Hoe krijg ik de details van een revisiegroep in Aspose.Words voor .NET?
 
-A: Doorloop de revisies van het document met behulp van een lus en open de eigenschappen van elke revisie om de gewenste details te verkrijgen. U kunt gebruik maken van de`RevisionType`, `Author`, `DateTime` En`ParentNode` eigenschappen om respectievelijk het revisietype, de auteur, de datum en de herziene tekst te verkrijgen.
+A: Doorloop de revisies van het document met behulp van een lus en open de eigenschappen van elke revisie om de gewenste details te verkrijgen. U kunt gebruik maken van de`RevisionType`, `Author`, `DateTime`En`ParentNode` eigenschappen om respectievelijk het revisietype, de auteur, de datum en de herziene tekst te verkrijgen.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

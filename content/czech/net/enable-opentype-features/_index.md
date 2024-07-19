@@ -12,4 +12,4 @@ Zjistěte, jak povolit funkce OpenType v dokumentech aplikace Word pomocí Aspos
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Otevřené funkce typu](./open-type-features/) | Přečtěte si, jak povolit a používat funkce Open Type v Aspose.Words for .NET |
+| [Otevřené funkce typu](./open-type-features/) | Naučte se, jak aktivovat funkce OpenType v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem. |

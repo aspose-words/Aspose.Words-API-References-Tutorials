@@ -51,8 +51,8 @@ Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Linkfunktion mit A
 
 #### F: Wie kann ich den Anzeigetext eines Links in Aspose.Words anpassen?
 
-A: Um den Anzeigetext eines Links in Aspose.Words anzupassen, können Sie den Inhalt zwischen den`<a>` Tags. Zum Beispiel`<a href="https://www.aspose.com">Click here</a>` wird der Text „Klicken Sie hier“ als Hyperlink angezeigt.
+ A: Um den Anzeigetext eines Links in Aspose.Words anzupassen, können Sie den Inhalt zwischen den`<a>` Tags. Zum Beispiel`<a href="https://www.aspose.com">Click here</a>` wird der Text „Klicken Sie hier“ als Hyperlink angezeigt.
 
 #### F: Kann ich in Aspose.Words ein Ziel für einen Link angeben?
 
- A: Ja, Sie können ein Ziel für einen Link in Aspose.Words angeben, indem Sie`target` Attribut des`<a>` Tag. Beispiel:`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` öffnet den Link in einem neuen Fenster oder Tab.
+A: Ja, Sie können ein Ziel für einen Link in Aspose.Words angeben, indem Sie`target` Attribut des`<a>` Tag. Beispiel:`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` öffnet den Link in einem neuen Fenster oder Tab.

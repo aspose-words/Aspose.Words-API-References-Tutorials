@@ -78,7 +78,7 @@ Aspose.Words for .NET は、Word 文書を作成、編集、操作するため�
 #### Q: Aspose.Words for .NET を使用して Word 文書に Bidi マークを追加するにはどうすればよいですか?
 次の手順に従って、Word 文書に Bidi マークを追加できます。
 
-新しいドキュメントを作成するには、`Document`クラス。
+新しい文書を作成するには、`Document`クラス。
 
 使用`DocumentBuilder`ドキュメントにコンテンツを追加するクラス。
 

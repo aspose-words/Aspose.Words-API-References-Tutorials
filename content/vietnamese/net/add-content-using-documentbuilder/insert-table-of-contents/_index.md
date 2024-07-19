@@ -127,4 +127,4 @@ Aspose.Words hỗ trợ tạo nhiều Mục lục với các cài đặt khác n
 Có, Aspose.Words đảm bảo khả năng tương thích với nhiều phiên bản định dạng Microsoft Word khác nhau.
 
 ### Tôi có thể tìm thêm trợ giúp và hỗ trợ cho Aspose.Words ở đâu?
-Để được hỗ trợ thêm, hãy truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) hoặc kiểm tra[tài liệu chính thức](https://reference.aspose.com/words/net/).
+ Để được hỗ trợ thêm, hãy truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) hoặc kiểm tra[tài liệu chính thức](https://reference.aspose.com/words/net/).

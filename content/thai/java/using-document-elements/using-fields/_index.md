@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- แทนที่`"Your Document Directory"` และ`"Your Output Directory"` ด้วยแนวทางที่เหมาะสม
+ แทนที่`"Your Document Directory"`และ`"Your Output Directory"` ด้วยแนวทางที่เหมาะสม
 
 ## 4. การปรับแต่งจดหมายเวียน
 

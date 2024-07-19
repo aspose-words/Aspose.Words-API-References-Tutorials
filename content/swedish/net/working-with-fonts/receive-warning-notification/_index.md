@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Steg 3: Uppdatera sidlayout
-
- Ring`UpdatePageLayout` metod. Detta återger dokumentet i minnet och fångar alla varningar som inträffar under återgivningen.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## Steg 4: Ställ in varningsåteruppringningen
+## Steg 3: Ställ in varningsåteruppringningen
 
  För att fånga och hantera varningar, skapa en klass som implementerar`IWarningCallback` gränssnitt. Den här klassen loggar alla varningar som inträffar under dokumentbehandlingen.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // Vi är bara intresserade av att typsnitt ersätts.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## Steg 5: Tilldela återuppringning till dokumentet
+## Steg 4: Tilldela återuppringningen till dokumentet
 
 Tilldela varningsåteruppringningen till dokumentet. Detta säkerställer att eventuella teckensnittsproblem fångas och loggas.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## Steg 5: Uppdatera sidlayout
+
+ Ring`UpdatePageLayout` metod. Detta återger dokumentet i minnet och fångar alla varningar som inträffar under återgivningen.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## Steg 6: Spara dokumentet
@@ -106,7 +101,7 @@ Nej, du kan bara ange ett standardteckensnitt för ersättning. Du kan dock konf
 
 ###  F3: Kan jag hantera andra typer av varningar med`IWarningCallback`?
 
- Ja den`IWarningCallback` gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
+ Ja den`IWarningCallback`gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
 
 ### F4: Var kan jag hitta support för Aspose.Words?
 

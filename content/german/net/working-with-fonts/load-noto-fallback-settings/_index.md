@@ -2,7 +2,7 @@
 title: Noto-Fallback-Einstellungen laden
 linktitle: Noto-Fallback-Einstellungen laden
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie in diesem Tutorial, wie Sie Noto-Override-Parameter mit Aspose.Words für .NET in ein Word-Dokument laden.
+description: In diesem Tutorial erfahren Sie, wie Sie Noto-Override-Parameter mit Aspose.Words für .NET in ein Word-Dokument laden.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/load-noto-fallback-settings/
@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Laden Sie das Dokument und konfigurieren Sie die Einstellungen für die Schriftartersetzung
- Als nächstes laden wir das Dokument mit dem`Document` Klasse und konfigurieren Sie die Einstellungen für die Schriftartüberschreibung mit dem`FontSettings`Klasse. Wir laden die Noto-Font-Fallback-Einstellungen mit der`LoadNotoFallbackSettings()` Methode.
+ Als nächstes laden wir das Dokument mit dem`Document` Klasse und konfigurieren Sie die Einstellungen für die Schriftartüberschreibung mit dem`FontSettings` Klasse. Wir laden die Noto-Font-Fallback-Einstellungen mit der`LoadNotoFallbackSettings()` Methode.
 
 ```csharp
 // Laden Sie das Dokument und konfigurieren Sie die Einstellungen für die Schriftartersetzung

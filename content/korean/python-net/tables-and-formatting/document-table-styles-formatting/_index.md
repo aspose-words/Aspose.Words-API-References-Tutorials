@@ -14,7 +14,7 @@ url: /ko/python-net/tables-and-formatting/document-table-styles-formatting/
 
 문서 표 스타일 및 서식의 세부 사항을 살펴보기 전에 필요한 도구가 설정되어 있는지 확인하십시오.
 
-1. Python용 Aspose.Words 설치: pip를 사용하여 Aspose.Words 라이브러리를 설치하는 것으로 시작합니다. 이 작업은 다음 명령을 사용하여 수행할 수 있습니다.
+1. Python용 Aspose.Words 설치: pip를 사용하여 Aspose.Words 라이브러리를 설치하는 것으로 시작합니다. 이는 다음 명령을 사용하여 수행할 수 있습니다.
    
     ```bash
     pip install aspose-words
@@ -39,7 +39,7 @@ Python용 Aspose.Words를 사용하여 테이블을 만들고 문서에 삽입�
     table = builder.start_table()
     ```
 
-2.  데이터 삽입: 빌더를 사용하여 테이블에 데이터를 추가합니다.`insert_cell` 그리고`write` 행동 양식.
+2.  데이터 삽입: 빌더를 사용하여 테이블에 데이터를 추가합니다.`insert_cell`그리고`write` 행동 양식.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Python용 Aspose.Words를 사용하여 테이블을 만들고 문서에 삽입�
 
 ## 기본 테이블 서식 적용
 
- 기본 테이블 형식화는 다음에서 제공하는 방법을 사용하여 수행할 수 있습니다.`Table` 그리고`Cell` 클래스. 테이블의 모양을 향상시킬 수 있는 방법은 다음과 같습니다.
+ 기본 테이블 형식화는 다음에서 제공하는 방법을 사용하여 수행할 수 있습니다.`Table`그리고`Cell` 클래스. 테이블의 모양을 향상시킬 수 있는 방법은 다음과 같습니다.
 
 1. 열 너비 설정: 적절한 정렬과 시각적 매력을 보장하기 위해 열 너비를 조정합니다.
 

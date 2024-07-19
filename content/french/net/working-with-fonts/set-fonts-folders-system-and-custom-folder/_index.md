@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Ajoutez une nouvelle source de dossier qui demandera à Aspose.Words de rechercher les polices dans le dossier suivant.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Ajoutez le dossier personnalisé contenant nos polices à la liste des sources de polices existantes.
+// Ajoutez le dossier personnalisé contenant nos polices à la liste des sources de polices existantes.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

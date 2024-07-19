@@ -64,4 +64,4 @@ doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 
 ## 結論
 
-在本指南中，我們解釋瞭如何透過使用適用於 .NET 的 Aspose.Words 函式庫的 OdtSaveOptions 儲存選項指定測量單位，將 Word 文件轉換為 ODT。透過遵循提供的步驟並使用提供的 C# 原始程式碼，您可以輕鬆地在 C# 應用程式中應用此功能。轉換為 ODT 時指定測量單位可讓您根據具體需求控制結果文件的格式和尺寸。
+在本指南中，我們解釋瞭如何透過使用適用於 .NET 的 Aspose.Words 函式庫的 OdtSaveOptions 儲存選項指定測量單位，將 Word 文件轉換為 ODT。透過遵循提供的步驟並使用提供的 C# 原始程式碼，您可以輕鬆地在 C# 應用程式中應用此功能。轉換為 ODT 時指定測量單位可讓您根據特定需求控制產生文件的格式和尺寸。

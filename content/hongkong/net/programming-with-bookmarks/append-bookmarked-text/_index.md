@@ -2,120 +2,123 @@
 title: 在 Word 文件中附加添加書籤的文本
 linktitle: 在 Word 文件中附加添加書籤的文本
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 從 Word 文件中的書籤新增文字。
+description: 透過此逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中附加書籤文字。非常適合開發人員。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-bookmarks/append-bookmarked-text/
 ---
+## 介紹
 
-在本文中，我們將探索上述 C# 原始程式碼，以了解如何在 Aspose.Words for .NET 程式庫中使用追加書籤文字功能。此功能可讓您將 Word 文件的特定書籤中包含的文字新增至另一個文件。
+嘿！您是否曾經嘗試過從 Word 文件中添加書籤的部分添加文本，但發現這很棘手？你很幸運！本教學將引導您完成使用 Aspose.Words for .NET 的過程。我們會將其分解為簡單的步驟，以便您可以輕鬆地進行操作。讓我們深入了解並像專業人士一樣附加書籤文字！
 
 ## 先決條件
 
-- C# 語言的基礎知識。
-- 安裝了 Aspose.Words 函式庫的 .NET 開發環境。
+在開始之前，讓我們確保您擁有所需的一切：
 
-## 步驟1：從書籤中獲取段落
+-  Aspose.Words for .NET：確保您已安裝它。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
+- 開發環境：任何 .NET 開發環境，例如 Visual Studio。
+- C# 基礎知識：了解基本 C# 程式設計概念將會有所幫助。
+- 帶有書籤的 Word 文件：設定了書籤的 Word 文檔，我們將用它來附加文字。
 
-在開始加入書籤文字之前，我們需要取得包含書籤開頭和結尾的段落。這可以透過訪問來完成`BookmarkStart`和`BookmarkEnd`書籤的屬性：
+## 導入命名空間
+
+首先，讓我們導入必要的名稱空間。這將確保我們觸手可及所需的所有工具。
 
 ```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
+using System;
+using Aspose.Words;
+using Aspose.Words.Importing;
 ```
 
-## 第 2 步：檢查父段落
+讓我們將範例分解為詳細步驟。
 
-我們檢查開頭和結尾段落是否有有效的父段落，即它們是否確實屬於一個段落。如果沒有，我們會產生一個異常：
+## 第 1 步：載入文件並初始化變數
+
+好吧，讓我們先載入 Word 文件並初始化我們需要的變數。
 
 ```csharp
+//載入來源文檔和目標文檔。
+Document srcDoc = new Document("source.docx");
+Document dstDoc = new Document("destination.docx");
+
+//初始化文檔導入器。
+NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+
+//在來源文檔中找到書籤。
+Bookmark srcBookmark = srcDoc.Range.Bookmarks["YourBookmarkName"];
+```
+
+## 第 2 步：確定開始和結束段落
+
+現在，讓我們找到書籤開始和結束的段落。這很重要，因為我們需要處理這些範圍內的文字。
+
+```csharp
+//這是包含書籤開頭的段落。
+Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+
+//這是包含書籤結尾的段落。
+Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
 if (startPara == null || endPara == null)
-throw new InvalidOperationException(
-"The parent of the beginning or the end of the bookmark is not a paragrap
-
-hey, this situation can't be handled yet.");
+    throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
 ```
 
-## 第 3 步：檢查段落的父級
+## 第 3 步：驗證段落父級
 
-我們檢查開始和結束段落是否具有相同的父級。如果不是，則表示這些段落不包含在同一部分或文件中，並且我們將引發異常：
+我們需要確保開始和結束段落具有相同的父級。這是一個簡單的場景，讓事情變得簡單。
 
 ```csharp
+//將我們限制在一個相當簡單的場景。
 if (startPara.ParentNode != endPara.ParentNode)
-throw new InvalidOperationException(
-"Beginning and ending paragraphs have different parents, this situation cannot be handled yet.");
+    throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
 ```
 
-## 第四步：複製段落
+## 步驟 4：確定要停止的節點
 
-我們迭代從開始段落到結束段落的節點（段落）。對於每個節點，我們建立一個副本並將其匯入到目標文件的上下文中：
+接下來，我們需要確定停止複製文字的節點。這將是緊接結束段落之後的節點。
 
 ```csharp
+//我們想要複製從開始段落到（並包括）結束段落的所有段落，
+//因此，我們停止的節點是結束段落之後的節點。
 Node endNode = endPara.NextSibling;
+```
 
+## 步驟 5：將新增書籤的文字附加到目標文檔
+
+最後，讓我們循環遍歷從起始段落到結束段落之後的節點，並將它們附加到目標文件。
+
+```csharp
 for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
 {
-Node newNode = importer.ImportNode(curNode, true);
+    //這將創建當前節點的副本並將其導入到上下文中（使其有效）
+    //目標文檔的。導入意味著調整樣式並正確列出標識符。
+    Node newNode = importer.ImportNode(curNode, true);
 
-dstNode.AppendChild(newNode);
+    //將導入的節點附加到目標文件。
+    dstDoc.FirstSection.Body.AppendChild(newNode);
 }
-```
 
-### 使用 Aspose.Words for .NET 附加書籤文字的範例原始碼
-
-以下是示範使用 Aspose.Words for .NET 從書籤新增文字的完整範例原始碼：
-
-```csharp
-
-	//這是包含書籤開頭的段落。
-	Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-	//這是包含書籤結尾的段落。
-	Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-	if (startPara == null || endPara == null)
-		throw new InvalidOperationException(
-			"Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-	//將我們限制在一個相當簡單的場景。
-	if (startPara.ParentNode != endPara.ParentNode)
-		throw new InvalidOperationException(
-			"Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-	//我們想要複製從開始段落到（並包括）結束段落的所有段落，
-	//因此，我們停止的節點是結束段落之後的節點。
-	Node endNode = endPara.NextSibling;
-
-	for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-	{
-		//這將創建當前節點的副本並將其導入到上下文中（使其有效）
-		//目標文檔的。導入意味著調整樣式並正確列出標識符。
-		Node newNode = importer.ImportNode(curNode, true);
-
-		dstNode.AppendChild(newNode);
-	}
-
+//儲存帶有附加文字的目標文件。
+dstDoc.Save("appended_document.docx");
 ```
 
 ## 結論
 
-在本文中，我們探索了 C# 原始程式碼，以了解如何使用 Aspose.Words for .NET 的追加書籤文字功能。我們按照逐步指南從書籤中獲取段落、驗證父項以及將段落複製到另一個文件。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功從 Word 文件中的書籤部分附加文字。這個強大的工具使文件操作變得輕而易舉，現在您還有一個錦囊妙計。快樂編碼！
 
-### 在 Word 文件中附加書籤文字的常見問題解答
+## 常見問題解答
 
-#### Q1：使用 Aspose.Words for .NET 中的「新增帶有書籤的文字」功能有哪些先決條件？
+### 我可以一次性添加多個書籤中的文字嗎？
+是的，您可以對每個書籤重複此過程並相應地附加文字。
 
-答：要使用Aspose.Words for .NET中的「新增附有書籤的文字」功能，您需要具備C#語言的基礎知識。您還需要一個安裝了 Aspose.Words 函式庫的 .NET 開發環境。
+### 如果開始段落和結束段落有不同的父親段落怎麼辦？
+目前的範例假設它們具有相同的父級。對於不同的家長來說，需要更複雜的處理。
 
-#### Q2：如何取得Word文件中包含書籤開頭和結尾的段落？
+### 我可以保留附加文字的原始格式嗎？
+絕對地！這`ImportFormatMode.KeepSourceFormatting`確保保留原始格式。
 
-答：要取得Word文件中包含書籤開頭和結尾的段落，您可以訪問`BookmarkStart`和`BookmarkEnd`書籤的屬性。這是範例程式碼：
+### 是否可以將文字附加到目標文件中的特定位置？
+是的，您可以透過導覽至目標文件中的所需節點將文字附加到任何位置。
 
-```csharp
-Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-```
-
-#### Q3：如果開始段落和結束段落沒有有效的父親段落會怎樣？
-
-答：如果開始和結束段落沒有有效的父段落，即它們不是真正的段落，則會拋出異常。這種情況目前無法處理。
+### 如果我需要將書籤中的文字附加到新部分怎麼辦？
+您可以在目標文件中建立一個新部分並在其中附加文字。

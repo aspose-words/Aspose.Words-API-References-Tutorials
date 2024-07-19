@@ -2,17 +2,37 @@
 title: Bild
 linktitle: Bild
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie in der Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Bilder einfügen und anpassen.
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Bilder zu Ihren Dokumenten hinzufügen. Verbessern Sie Ihre Dokumente im Handumdrehen mit visuellen Elementen.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/image/
 ---
+## Einführung
 
-In diesem Beispiel erklären wir, wie Sie die Bildfunktion mit Aspose.Words für .NET verwenden. Mit Bildern können Sie Illustrationen und Grafiken in ein Dokument einfügen.
+Sind Sie bereit, in die Welt von Aspose.Words für .NET einzutauchen? Heute werden wir untersuchen, wie Sie Ihren Dokumenten Bilder hinzufügen. Egal, ob Sie an einem Bericht oder einer Broschüre arbeiten oder einfach nur ein einfaches Dokument aufpeppen, das Hinzufügen von Bildern kann einen großen Unterschied machen. Also, legen wir los!
 
-## Schritt 1: Einen Dokumentgenerator verwenden
+## Voraussetzungen
 
-Zuerst verwenden wir einen Dokumentgenerator, um unserem Dokument Inhalt hinzuzufügen.
+Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+
+1.  Aspose.Words für .NET: Sie können es herunterladen von der[Aspose-Website](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Jede .NET-Entwicklungsumgebung wie Visual Studio.
+3. Grundkenntnisse in C#: Wenn Sie mit C# vertraut sind, können Sie gut loslegen!
+
+## Namespaces importieren
+
+Als Erstes importieren wir die erforderlichen Namespaces. Dies ist für den Zugriff auf Aspose.Words-Klassen und -Methoden wichtig.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Lassen Sie uns den Vorgang nun in einfache Schritte unterteilen. Jeder Schritt hat eine Überschrift und eine ausführliche Erklärung, damit Sie ihn problemlos nachvollziehen können.
+
+## Schritt 1: DocumentBuilder initialisieren
+
+ Zunächst müssen Sie eine`DocumentBuilder` Objekt. Mit diesem Objekt können Sie Ihrem Dokument Inhalt hinzufügen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
@@ -20,57 +40,39 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Schritt 2: Bild einfügen
 
- Wir können ein Bild einfügen mit dem`Shape` Klasse und Angabe des Bildtyps, hier`ShapeType.Image` . Wir setzen auch den Wrap-Typ des Bildes auf`WrapType.Inline`.
+Als Nächstes fügen Sie ein Bild in Ihr Dokument ein. So geht's:
 
 ```csharp
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape. WrapType = WrapType. Inline;
+Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
-## Schritt 3: Bildanpassung
+ Ersetzen`"path_to_your_image.jpg"` mit dem tatsächlichen Pfad Ihrer Bilddatei. Die`InsertImage` Methode fügt das Bild zu Ihrem Dokument hinzu.
 
- Wir passen das Bild an, indem wir seinen vollständigen Pfad angeben, zum Beispiel`"/attachment/1456/pic001.png"`, und fügen Sie dem Bild einen Titel hinzu.
+## Schritt 3: Bildeigenschaften festlegen
+
+Sie können verschiedene Eigenschaften für das Bild festlegen. Lassen Sie uns beispielsweise den Titel des Bildes festlegen:
 
 ```csharp
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "Title";
+shape.ImageData.Title = "Your Image Title";
 ```
 
-### Beispiel-Quellcode für Bilder mit Aspose.Words für .NET
+## Abschluss
 
-```csharp
-// Verwenden Sie einen Dokument-Generator, um dem Dokument Inhalt hinzuzufügen.
-DocumentBuilder builder = new DocumentBuilder();
+Das Hinzufügen von Bildern zu Ihren Dokumenten kann deren visuelle Attraktivität und Wirksamkeit erheblich steigern. Mit Aspose.Words für .NET wird dieser Prozess unkompliziert und effizient. Indem Sie die oben beschriebenen Schritte befolgen, können Sie Bilder problemlos in Ihre Dokumente integrieren und Ihre Fähigkeiten bei der Dokumenterstellung auf die nächste Ebene bringen.
 
-// Bild einfügen.
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape.WrapType = WrapType.Inline;
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "title";
-builder.InsertNode(shape);
-```
+## Häufig gestellte Fragen
 
-Herzlichen Glückwunsch! Sie haben jetzt gelernt, wie Sie die Bilderfunktion mit Aspose.Words für .NET verwenden.
+### Kann ich einem einzelnen Dokument mehrere Bilder hinzufügen?  
+ Ja, Sie können beliebig viele Bilder hinzufügen, indem Sie den`InsertImage` Methode für jedes Bild.
 
+### Welche Bildformate werden von Aspose.Words für .NET unterstützt?  
+Aspose.Words unterstützt verschiedene Bildformate, darunter JPEG, PNG, BMP, GIF und mehr.
 
-### Häufig gestellte Fragen
+### Kann ich die Größe der Bilder im Dokument ändern?  
+ Absolut! Sie können die Höhe und Breite der`Shape` Objekt, um die Größe der Bilder zu ändern.
 
-#### F: Wie kann ich ein Bild aus einer lokalen Datei in Aspose.Words einfügen?
+### Ist es möglich, Bilder von einer URL hinzuzufügen?  
+ Ja, Sie können Bilder von einer URL hinzufügen, indem Sie die URL im`InsertImage` Methode.
 
- A: Um ein Bild aus einer lokalen Datei in Aspose.Words einzufügen, können Sie den`Shape` Klasse und die`InsertImage` Methode.
-
-#### F: Kann ich in Aspose.Words ein Bild von einer URL einfügen?
-
- A: Ja, Sie können ein Bild von einer URL in Aspose.Words einfügen. Sie können dasselbe verwenden`InsertImage`Methode und geben Sie die Bild-URL anstelle des lokalen Dateipfads an.
-
-#### F: Wie kann ich die Größe eines Bildes in Aspose.Words ändern?
-
- A: Um die Größe eines Bildes in Aspose.Words zu ändern, können Sie den`Width` Und`Height` Eigenschaften der`Shape` Objekt.
-
-#### F: Kann ich in Aspose.Words Filter auf Bilder anwenden?
-
- A: Ja, Sie können Filter auf Bilder in Aspose.Words anwenden. Sie können beispielsweise einen Weichzeichnerfilter auf ein Bild anwenden, indem Sie`ApplyGaussianBlur` Methode der`Shape` Objekt.
-
-#### F: Wie kann ich in Aspose.Words ein Bild durch ein anderes ersetzen?
-
- A: Um ein Bild durch ein anderes in Aspose.Words zu ersetzen, können Sie den`Replace` Methode der`Shape` Klasse. Diese Methode verwendet als Parameter die`Shape` Objekt des zu ersetzenden Bildes und die`Shape` Objekt des neuen Bildes.
+### Wie erhalte ich eine kostenlose Testversion von Aspose.Words für .NET?  
+ Sie erhalten eine kostenlose Testversion von[Aspose-Website](https://releases.aspose.com/).

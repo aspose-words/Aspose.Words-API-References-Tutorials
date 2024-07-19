@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## Etapa 4: verifique o nó pai e o documento do proprietário
- Agora que criamos o nó do parágrafo, podemos verificar se ele possui um nó pai e se o documento proprietário é o mesmo que`doc`.
+Agora que criamos o nó do parágrafo, podemos verificar se ele possui um nó pai e se o documento proprietário é o mesmo que`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ R: Na maioria dos casos, o proprietário do documento de um nó é determinado q
 
 #### P: Como acessar os nós de um documento proprietário?
 
- R: Para acessar nós em um documento proprietário, você pode usar os métodos e propriedades fornecidos pela API XML usada em seu ambiente Node.js. Por exemplo, você pode usar métodos como`getElementsByTagName` ou`querySelector` para selecionar nós específicos no documento.
+R: Para acessar nós em um documento proprietário, você pode usar os métodos e propriedades fornecidos pela API XML usada em seu ambiente Node.js. Por exemplo, você pode usar métodos como`getElementsByTagName` ou`querySelector` para selecionar nós específicos no documento.

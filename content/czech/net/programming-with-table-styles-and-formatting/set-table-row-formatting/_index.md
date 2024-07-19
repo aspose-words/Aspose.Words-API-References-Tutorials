@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## Krok 7: Dokončete tabulku a uložte dokument
 v
 
- konec, dokončíme vytváření tabulky pomocí`EndRow()` a`EndTable()` metodou, pak upravený dokument uložíme do souboru.
+ konec, dokončíme vytváření tabulky pomocí`EndRow()`a`EndTable()` metodou, pak upravený dokument uložíme do souboru.
 
 ```csharp
 builder. EndRow();

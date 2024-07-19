@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Hier gebruiken we de documentbouwer om een tabel te bouwen met twee koprijen en meerdere gegevensrijen. De`RowFormat.HeadingFormat`parameters worden gebruikt om koprijen te markeren die op volgende pagina's moeten worden herhaald.
+ Hier gebruiken we de documentbouwer om een tabel te bouwen met twee koprijen en meerdere gegevensrijen. De`RowFormat.HeadingFormat` parameters worden gebruikt om koprijen te markeren die op volgende pagina's moeten worden herhaald.
 
 ## Stap 4: Het gewijzigde document opslaan
 Eindelijk VS

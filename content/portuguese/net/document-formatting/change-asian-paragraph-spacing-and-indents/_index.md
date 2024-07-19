@@ -105,5 +105,5 @@ Sim, essas configurações podem ser aplicadas a qualquer texto, mas são partic
 ### Posso automatizar esse processo para vários documentos?
 Absolutamente! Você pode percorrer uma coleção de documentos e aplicar essas configurações programaticamente a cada um deles.
 
-### E se eu encontrar problemas ou tiver dúvidas?
-Se você tiver algum problema ou tiver mais dúvidas, o[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8) é um ótimo lugar para procurar ajuda.
+### se eu encontrar problemas ou tiver dúvidas?
+ Se você tiver algum problema ou tiver mais dúvidas, o[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8) é um ótimo lugar para procurar ajuda.

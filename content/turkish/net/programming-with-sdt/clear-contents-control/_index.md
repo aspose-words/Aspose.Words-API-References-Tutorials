@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Belgeyi Yükleyin ve StructuredDocumentTag'i Alın
- Word belgesini kullanarak yükleyin`Document` yapıcı, belgenin yolunu parametre olarak iletir. Daha sonra istediğinizi geri alın`StructuredDocumentTag` belgeden. Bu örnekte SDT'nin belgedeki ilk alt düğüm olduğunu varsayıyoruz.
+ Word belgesini kullanarak yükleyin`Document` yapıcı, belgenin yolunu parametre olarak iletir. Daha sonra istediğinizi geri alın`StructuredDocumentTag`belgeden. Bu örnekte SDT'nin belgedeki ilk alt düğüm olduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## Adım 4: Belgeyi Kaydedin
- Değiştirilen belgeyi kullanarak kaydedin.`Save`yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.ClearContentsControl.doc" olarak kaydediyoruz.
+ Değiştirilen belgeyi kullanarak kaydedin.`Save` yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.ClearContentsControl.doc" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

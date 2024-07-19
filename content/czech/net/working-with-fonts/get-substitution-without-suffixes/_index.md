@@ -17,7 +17,7 @@ Než se pustíte do výukového programu, ujistěte se, že máte následující
 - Základní znalost C#: Pochopení programování v C# vám usnadní sledování a implementaci kroků.
 -  Aspose.Words for .NET Library: Stáhněte a nainstalujte knihovnu z[odkaz ke stažení](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Nastavte vývojové prostředí, jako je Visual Studio, abyste mohli psát a spouštět svůj kód.
--  Vzorový dokument: Vzorový dokument (např.`Rendering.docx`), se kterými budete pracovat během tohoto tutoriálu.
+- Vzorový dokument: Vzorový dokument (např.`Rendering.docx`), se kterými budete pracovat během tohoto tutoriálu.
 
 ## Importovat jmenné prostory
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Krok 5: Vytvořte třídu Warning Handler
 
- Chcete-li efektivně zpracovávat varování, vytvořte vlastní třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zachytí a zaprotokoluje všechna varování o záměně písem.
+Chcete-li efektivně zpracovávat varování, vytvořte vlastní třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zachytí a zaprotokoluje všechna varování o záměně písem.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -104,7 +104,7 @@ Nyní jste zvládli proces nahrazování písem bez přípon pomocí Aspose.Word
 
 ### Q1: Jak mohu používat písma z více vlastních adresářů?
 
- Můžete přidat více`FolderFontSource` instance k`fontSources`seznam a odpovídajícím způsobem aktualizujte zdroje písem.
+ Můžete přidat více`FolderFontSource` instance k`fontSources` seznam a odpovídajícím způsobem aktualizujte zdroje písem.
 
 ### Q2: Kde si mohu stáhnout bezplatnou zkušební verzi Aspose.Words pro .NET?
 

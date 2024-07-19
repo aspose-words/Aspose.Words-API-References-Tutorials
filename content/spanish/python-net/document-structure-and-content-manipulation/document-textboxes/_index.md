@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Posicionamiento de cuadros de texto
 
- Controlar la posición de los cuadros de texto es crucial para lograr el diseño deseado. Puede establecer la posición utilizando el`left` y`top` propiedades. Por ejemplo:
+ Controlar la posición de los cuadros de texto es crucial para lograr el diseño deseado. Puede establecer la posición utilizando el`left`y`top` propiedades. Por ejemplo:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ En esta guía, hemos explorado el proceso de mejorar el contenido visual con cua
 
 ### ¿Cómo cambio el tamaño de un cuadro de texto?
 
- Para cambiar el tamaño de un cuadro de texto, puede ajustar sus propiedades de ancho y alto usando el`width` y`height` atributos.
+ Para cambiar el tamaño de un cuadro de texto, puede ajustar sus propiedades de ancho y alto usando el`width`y`height` atributos.
 
 ### ¿Puedo rotar un cuadro de texto?
 

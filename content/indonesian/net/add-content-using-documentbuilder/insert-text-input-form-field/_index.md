@@ -67,7 +67,7 @@ builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);
 -  Jenis:`TextFormFieldType.Regular` Ini menetapkan bahwa bidang formulir adalah input teks biasa.
 - Teks Default: "" - Ini adalah teks default yang ditampilkan di kolom formulir (dalam hal ini kosong).
 - Nilai: "Halo" - Nilai awal kolom formulir.
-- Panjang Maksimum: 0 - Ini tidak menetapkan batasan panjang masukan.
+- Panjang Maksimum: 0 - Ini tidak menetapkan batasan panjang input.
 
 ## Langkah 5: Simpan Dokumen
 

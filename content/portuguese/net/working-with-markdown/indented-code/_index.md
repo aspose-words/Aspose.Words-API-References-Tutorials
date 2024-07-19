@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Etapa 2: adicionar estilo ao código recuado
 
-Adicionaremos um estilo personalizado para o código recuado usando o`Styles.Add` método do`Document` objeto. Neste exemplo, estamos criando um estilo chamado “IndentedCode” para código recuado.
+ Adicionaremos um estilo personalizado para o código recuado usando o`Styles.Add` método do`Document` objeto. Neste exemplo, estamos criando um estilo chamado “IndentedCode” para código recuado.
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");

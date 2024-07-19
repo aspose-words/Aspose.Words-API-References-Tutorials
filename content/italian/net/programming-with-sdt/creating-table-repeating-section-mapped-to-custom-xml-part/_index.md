@@ -17,7 +17,7 @@ Per seguire questo tutorial, è necessario disporre di quanto segue:
 - Conoscenza base di C# ed elaborazione testi con documenti Word.
 
 ## Passaggio 1: impostare la directory dei documenti
- Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui desideri salvare il documento.
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo della directory in cui desideri salvare il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Passaggio 4: crea una tabella e una struttura di tabella
- Inizia a creare una tabella utilizzando il file`StartTable` metodo del`DocumentBuilder` . Aggiungi celle e contenuto della tabella utilizzando il file`InsertCell` E`Write` metodi.
+ Inizia a creare una tabella utilizzando il file`StartTable` metodo del`DocumentBuilder` . Aggiungi celle e contenuto della tabella utilizzando il file`InsertCell`E`Write` metodi.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Creare un`Row`per rappresentare ciascun elemento nella sezione ripetuta e aggiungerlo all'elemento della sezione ripetuta.
+ Creare un`Row` per rappresentare ciascun elemento nella sezione ripetuta e aggiungerlo all'elemento della sezione ripetuta.
 
 ```csharp
 Row row = new Row(doc);

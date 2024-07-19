@@ -14,7 +14,7 @@ url: /ja/java/table-processing/generate-table-from-datatable/
 
 始める前に、次の前提条件を満たしていることを確認してください。
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 - Aspose.Words for Java ライブラリがダウンロードされ、プロジェクトで参照されます。
 
 ## ステップ2: データテーブルを準備する

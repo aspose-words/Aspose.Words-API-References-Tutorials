@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Étape 2 : Créer un nouveau document
 
- Très bien, commençons par créer un nouveau document Word. Nous utiliserons le`Document` et`DocumentBuilder` cours d'Aspose.Words pour faire avancer les choses.
+ Très bien, commençons par créer un nouveau document Word. Nous utiliserons le`Document`et`DocumentBuilder` cours d'Aspose.Words pour faire avancer les choses.
 
 ```csharp
 // Le chemin d'accès au répertoire des documents.
@@ -64,7 +64,7 @@ Maintenant, voici la partie amusante. Nous allons insérer un champ TC dans notr
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Cette ligne de code indique à Aspose.Words d'insérer un champ TC avec le texte d'entrée "Entry Text". Le`\\f t` est un commutateur qui détermine la manière dont l'entrée est affichée dans la table des matières.
+ Cette ligne de code indique à Aspose.Words d'insérer un champ TC avec le texte d'entrée "Entry Text". Le`\\f t`est un commutateur qui détermine la manière dont l'entrée est affichée dans la table des matières.
 
 ## Étape 4 : Enregistrez le document
 

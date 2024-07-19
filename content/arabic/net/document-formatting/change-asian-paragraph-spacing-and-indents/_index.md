@@ -106,4 +106,4 @@ doc.Save(dataDir + "DocumentFormatting.ChangeAsianParagraphSpacingAndIndents.doc
 قطعاً! يمكنك التنقل عبر مجموعة من المستندات وتطبيق هذه الإعدادات برمجيًا على كل منها.
 
 ### ماذا لو واجهت مشاكل أو لديك أسئلة؟
-إذا واجهت أي مشاكل أو كانت لديك أسئلة أخرى، فإن[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) مكان عظيم لطلب المساعدة.
+ إذا واجهت أي مشاكل أو كانت لديك أسئلة أخرى، فإن[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) مكان عظيم لطلب المساعدة.

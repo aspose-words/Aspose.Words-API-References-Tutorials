@@ -40,7 +40,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-En este ejemplo, utilizamos un bucle para recorrer cada párrafo del documento. Luego verificamos si el párrafo tiene formato usando los estilos de resultados de la tabla de contenido (TOC). Si es así accedemos a la primera pestaña utilizada en este párrafo y la modificamos quitando la pestaña antigua y añadiendo una nueva pestaña con una posición modificada.
+En este ejemplo, utilizamos un bucle para recorrer cada párrafo del documento. Luego verificamos si el párrafo tiene el formato utilizando los estilos de resultados de la tabla de contenido (TOC). Si es así accedemos a la primera pestaña utilizada en este párrafo y la modificamos quitando la pestaña antigua y añadiendo una nueva pestaña con una posición modificada.
 
 ## Guardar documento modificado
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 
 ## Conclusión
 
-En esta guía, hemos cubierto cómo usar Aspose.Words para .NET para cambiar las pestañas en la tabla de contenido de un documento de Word usando el código fuente C# proporcionado. Si sigue los pasos proporcionados, puede personalizar fácilmente las pestañas de la tabla de contenido en sus documentos de Word en su aplicación C#. Aspose.Words ofrece una tremenda flexibilidad y potencia para trabajar con los estilos y formatos de sus documentos, permitiéndole crear documentos de Word atractivos y profesionales.
+En esta guía, hemos cubierto cómo usar Aspose.Words para .NET para cambiar las pestañas en la tabla de contenido de un documento de Word usando el código fuente C# proporcionado. Siguiendo los pasos proporcionados, puede personalizar fácilmente las pestañas de la tabla de contenido en sus documentos de Word en su aplicación C#. Aspose.Words ofrece una tremenda flexibilidad y potencia para trabajar con los estilos y el formato de sus documentos, permitiéndole crear documentos de Word atractivos y profesionales.
 
 ### Preguntas frecuentes para cambiar las tabulaciones del índice en un documento de Word
 

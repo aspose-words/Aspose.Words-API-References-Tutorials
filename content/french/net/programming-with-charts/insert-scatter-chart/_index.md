@@ -2,43 +2,57 @@
 title: Insérer un graphique à nuages de points dans un document Word
 linktitle: Insérer un graphique à nuages de points dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment insérer un nuage de points dans un document à l'aide d'Aspose.Words pour .NET. Ajoutez des données de série avec les coordonnées X et Y.
+description: Découvrez comment insérer un nuage de points dans Word avec Aspose.Words pour .NET. Étapes simples pour intégrer des représentations visuelles de données dans vos documents.
 type: docs
 weight: 10
 url: /fr/net/programming-with-charts/insert-scatter-chart/
 ---
+## Introduction
 
-Ce didacticiel explique comment utiliser Aspose.Words for .NET pour insérer un nuage de points dans un document. Le code source fourni montre comment créer un graphique, ajouter des données de série et enregistrer le document.
+Dans ce didacticiel, vous apprendrez à utiliser Aspose.Words for .NET pour insérer un nuage de points dans votre document Word. Les diagrammes à nuages de points sont des outils visuels puissants qui peuvent afficher efficacement des points de données basés sur deux variables, rendant ainsi vos documents plus attrayants et informatifs.
 
-## Étape 1 : Configurer le projet
+## Conditions préalables
 
-Assurez-vous que vous disposez des conditions préalables suivantes :
+Avant de nous lancer dans la création de graphiques à nuages de points avec Aspose.Words pour .NET, assurez-vous de disposer des conditions préalables suivantes :
 
-- Bibliothèque Aspose.Words pour .NET installée. Vous pouvez le télécharger en utilisant le gestionnaire de packages NuGet pour l'installer.
-- Un chemin de répertoire de document où le document de sortie sera enregistré.
+1.  Installation d'Aspose.Words pour .NET : Téléchargez et installez Aspose.Words pour .NET à partir de[ici](https://releases.aspose.com/words/net/).
+   
+2. Connaissance de base de C# : Une connaissance du langage de programmation C# et du framework .NET sera bénéfique.
 
-## Étape 2 : Créez un nouveau document et insérez un graphique
+## Importer des espaces de noms
 
- Créer un nouveau`Document` objet et un`DocumentBuilder` pour construire le document.
+Pour commencer, vous devez importer les espaces de noms nécessaires dans votre projet C# :
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+```
 
+Maintenant, décomposons le processus d'insertion d'un nuage de points dans votre document Word à l'aide d'Aspose.Words pour .NET :
+
+## Étape 1 : initialiser le document et DocumentBuilder
+
+ Tout d’abord, initialisez une nouvelle instance du`Document` classe et`DocumentBuilder` classe pour commencer à créer votre document.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ensuite, utilisez le`InsertChart` méthode du`DocumentBuilder` pour insérer un nuage de points dans le document.
+## Étape 2 : Insérez le graphique à nuages de points
+
+ Utilisez le`InsertChart` méthode du`DocumentBuilder` classe pour insérer un nuage de points dans le document.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Étape 3 : Ajouter des données de série au graphique
+## Étape 3 : ajouter une série de données au graphique
 
-Ajoutez des données de série au graphique. Dans cet exemple, nous ajouterons deux ensembles de coordonnées X et Y.
+Maintenant, ajoutez des séries de données à votre graphique à nuages de points. Cet exemple montre l'ajout d'une série avec des points de données spécifiques.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
@@ -46,49 +60,29 @@ chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[]
 
 ## Étape 4 : Enregistrez le document
 
- Enfin, enregistrez le document dans le répertoire spécifié à l'aide du`Save` méthode du`Document` objet.
+ Enfin, enregistrez le document modifié à l'emplacement souhaité à l'aide du`Save` méthode du`Document` classe.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 ```
 
-Ceci termine la mise en œuvre de l’insertion d’un diagramme à nuages de points à l’aide d’Aspose.Words pour .NET.
-
-### Exemple de code source pour insérer un graphique à nuages de points à l'aide d'Aspose.Words pour .NET 
-
-```csharp
-	// Chemin d'accès à votre répertoire de documents
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
-	doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
-```
-
 ## Conclusion
 
-Dans ce didacticiel, vous avez appris à insérer un nuage de points dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape et en utilisant le code source fourni, vous pouvez créer un nouveau document, insérer un nuage de points, ajouter des données de série avec les coordonnées X et Y et enregistrer le document avec le graphique.
+Toutes nos félicitations! Vous avez appris avec succès comment insérer un nuage de points dans votre document Word à l'aide d'Aspose.Words pour .NET. Les diagrammes à nuages de points sont d'excellents outils pour visualiser les relations entre les données, et avec Aspose.Words, vous pouvez les intégrer sans effort dans vos documents pour améliorer la clarté et la compréhension.
 
-Aspose.Words for .NET fournit une API complète pour le traitement de mots avec des graphiques dans les documents Word. Les diagrammes à nuages de points sont utiles pour visualiser et analyser des données avec deux variables numériques. Avec Aspose.Words pour .NET, vous pouvez facilement créer des nuages de points qui représentent la relation entre les valeurs X et Y et identifier des modèles ou des tendances dans les données.
+## FAQ
 
-En utilisant Aspose.Words pour .NET, vous pouvez automatiser le processus de génération de documents avec des nuages de points, économisant ainsi du temps et des efforts dans la création manuelle de documents. La bibliothèque propose une large gamme de types de graphiques, notamment des nuages de points, et propose diverses options de personnalisation pour adapter l'apparence du graphique en fonction de vos besoins.
+### Puis-je personnaliser l’apparence du nuage de points à l’aide d’Aspose.Words ?
+Oui, Aspose.Words permet une personnalisation approfondie des propriétés du graphique telles que les couleurs, les axes et les étiquettes.
 
-### FAQ
+### Aspose.Words est-il compatible avec différentes versions de Microsoft Word ?
+Aspose.Words prend en charge différentes versions de Microsoft Word, garantissant la compatibilité entre les plates-formes.
 
-#### T1. Qu'est-ce qu'un nuage de points ?
-Un nuage de points est un type de graphique qui affiche la relation entre deux variables numériques. Il se compose d'une série de points tracés sur une grille de coordonnées, avec une variable représentée sur l'axe X et l'autre variable représentée sur l'axe Y. Les diagrammes à nuages de points sont utilisés pour identifier des modèles, des corrélations ou des tendances entre deux ensembles de points de données.
+### Aspose.Words prend-il en charge d'autres types de graphiques ?
+Oui, Aspose.Words prend en charge un large éventail de types de graphiques, notamment les graphiques à barres, les graphiques linéaires et les diagrammes circulaires.
 
-#### Q2. Puis-je ajouter plusieurs séries au nuage de points ?
-Oui, vous pouvez ajouter plusieurs séries au nuage de points à l'aide d'Aspose.Words for .NET. Chaque série représente un ensemble de points de données avec leurs coordonnées X et Y respectives. En ajoutant plusieurs séries, vous pouvez comparer et analyser différents ensembles de données au sein du même nuage de points, offrant ainsi une vue complète de vos données.
+### Puis-je mettre à jour dynamiquement les données dans le nuage de points par programmation ?
+Absolument, vous pouvez mettre à jour les données du graphique de manière dynamique à l'aide des appels d'API Aspose.Words.
 
-#### Q3. Puis-je personnaliser l’apparence du nuage de points ?
-Oui, en utilisant Aspose.Words pour .NET, vous pouvez personnaliser divers aspects de l'apparence du nuage de points. Vous pouvez modifier des propriétés telles que la couleur de la série, la forme du marqueur, les étiquettes des axes et le formatage de la zone du graphique. La bibliothèque fournit un riche ensemble d'API pour contrôler les éléments visuels du graphique et créer une apparence personnalisée adaptée à vos besoins.
-
-#### Q4. Puis-je enregistrer le document avec le nuage de points inséré dans différents formats ?
-Oui, Aspose.Words for .NET vous permet d'enregistrer le document avec le nuage de points inséré dans différents formats, tels que DOCX, PDF, HTML, etc. Vous pouvez choisir le format de sortie souhaité en fonction de vos besoins et utiliser le`Save` méthode du`Document` objet pour enregistrer le document. Le diagramme de nuages de points inséré sera conservé dans le document enregistré.
-
-#### Q5. Puis-je modifier les données et l’apparence du nuage de points après l’avoir inséré ?
-Oui, après avoir inséré le nuage de points dans le document, vous pouvez modifier ses données et son apparence à l'aide des API fournies par Aspose.Words for .NET. Vous pouvez mettre à jour les données de la série avec de nouvelles coordonnées X et Y, modifier les formes et les couleurs des marqueurs, personnaliser les propriétés des axes et appliquer des options de formatage pour créer des graphiques dynamiques et interactifs dans vos documents Word.
+### Où puis-je obtenir une assistance ou une assistance supplémentaire pour Aspose.Words ?
+ Pour obtenir de l'aide supplémentaire, visitez le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8).

@@ -32,8 +32,8 @@ Bu eğitimleri takip ederek Aspose.Words for .NET'in tablo işleme özelliklerin
 | [Yatay Birleştirme](./horizontal-merge/) | Aspose.Words for .NET ile Word tablosundaki hücreleri yatay olarak nasıl birleştireceğinizi öğrenin. |
 | [Yatay Olarak Birleştirilmiş Hücrelere Dönüştür](./convert-to-horizontally-merged-cells/) | Aspose.Words for .NET ile bir Word belgesinde tablo hücrelerini yatay olarak birleştirilmiş hücrelere nasıl dönüştüreceğinizi öğrenin. |
 | [Sonraki Sayfalarda Satırları Tekrarla](./repeat-rows-on-subsequent-pages/) | Aspose.Words for .NET ile bir Word belgesinin sonraki sayfalarında tablo satırlarını nasıl tekrarlayacağınızı öğrenin. |
-| [Sayfa Genişliğine Otomatik Sığdır](./auto-fit-to-page-width/) | Aspose.Words for .NET ile bir Word belgesinde bir tabloyu sayfa genişliğine nasıl otomatik olarak sığdıracağınızı öğrenin. |
-| [Tercih Edilen Genişlik Ayarları](./preferred-width-settings/) | Aspose.Words for .NET ile bir Word belgesinde tercih edilen tablo hücresi genişliklerini nasıl ayarlayacağınızı öğrenin. |
+| [Pencereye Otomatik Sığdır](./auto-fit-to-page-width/) | Bu adım adım kılavuzla Aspose.Words for .NET'i kullanarak tabloları Word belgelerindeki pencereye kolayca otomatik olarak sığdırın. Daha temiz, profesyonel belgeler için mükemmeldir. |
+| [Tercih Edilen Genişlik Ayarları](./preferred-width-settings/) | Bu adım adım kılavuzla Aspose.Words for .NET'te mutlak, göreceli ve otomatik genişlik ayarlarına sahip tablolar oluşturmayı öğrenin. |
 | [Tercih Edilen Genişlik Tipini Al](./retrieve-preferred-width-type/) | Aspose.Words for .NET ile Word tablosundaki bir hücrenin tipini ve tercih edilen genişlik değerini nasıl alacağınızı öğrenin. |
 | [Tablo Konumunu Al](./get-table-position/) | Aspose.Words for .NET ile bir Word belgesinde bir tablonun konumunu nasıl alacağınızı öğrenin. |
 | [Yüzen Masa Konumunu Alın](./get-floating-table-position/) | Aspose.Words for .NET ile bir Word belgesinde kayan tabloların konumunu nasıl alacağınızı öğrenin. |

@@ -2,113 +2,102 @@
 title: 창에 자동 맞춤
 linktitle: 창에 자동 맞춤
 second_title: Aspose.Words 문서 처리 API
-description: 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 페이지 너비에 테이블을 자동으로 맞추는 방법을 알아보세요. 문서 작업 흐름을 자동화하는 데 적합합니다.
+description: 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 창에 테이블을 쉽게 자동 맞춤할 수 있습니다. 깔끔하고 전문적인 문서에 적합합니다.
 type: docs
 weight: 10
 url: /ko/net/programming-with-tables/auto-fit-to-page-width/
 ---
-
 ## 소개
 
-안녕하세요! Aspose.Words for .NET을 사용하여 문서 처리 작업을 자동화하려고 하시나요? 보고서를 생성하든, 템플릿을 생성하든, 기존 문서를 조작하든 Aspose.Words는 그 모든 것 이상을 달성하는 데 도움이 될 수 있는 강력한 도구입니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서의 페이지 너비에 테이블을 자동으로 맞추는 방법을 살펴보겠습니다. 환경 설정부터 코드 기능 구현까지 모든 단계를 안내해 드립니다. 이 가이드를 마치면 테이블 서식을 프로그래밍 방식으로 처리하는 방법을 확실하게 이해하게 될 것입니다.
+Word 문서의 표가 페이지에 완벽하게 맞지 않아 답답함을 느낀 적이 있습니까? 여백을 조정하고 열 크기를 조정했지만 여전히 어색해 보입니다. .NET용 Aspose.Words를 사용하는 경우 이 문제에 대한 세련된 솔루션이 있습니다. 바로 창에 테이블을 자동으로 맞추는 것입니다. 이 멋진 기능은 표 너비를 조정하여 페이지 너비에 완벽하게 맞춰 문서를 세련되고 전문적으로 보이게 만듭니다. 이 가이드에서는 Aspose.Words for .NET을 사용하여 테이블이 항상 딱 맞는지 확인하는 단계를 안내합니다.
 
 ## 전제조건
 
-시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
+코드를 살펴보기 전에 모든 것이 준비되어 있는지 확인하세요.
 
-1. C#에 대한 기본 지식: C# 구문 및 개념에 대한 지식이 필수적입니다.
-2.  .NET용 Aspose.Words: 다운로드[여기](https://releases.aspose.com/words/net/) . 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/).
-3. Visual Studio: 모든 최신 버전이 작동하지만 최신 버전을 권장합니다.
-4. .NET Framework: 시스템에 설치되어 있는지 확인하세요.
+1. Visual Studio: .NET 코드를 작성하고 실행하려면 Visual Studio와 같은 IDE가 필요합니다.
+2.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 당신은 그것을 다운로드 할 수 있습니다[여기](https://releases.aspose.com/words/net/).
+3. C#에 대한 기본 지식: C# 프로그래밍 언어에 익숙하면 코드 조각을 더 쉽게 이해하는 데 도움이 됩니다.
 
-모든 것을 얻었나요? 엄청난! 재미있는 부분으로 넘어 갑시다.
+이러한 전제 조건을 정렬한 후 흥미로운 부분인 코딩을 시작하겠습니다!
 
 ## 네임스페이스 가져오기
 
-시작하려면 필요한 네임스페이스를 가져와야 합니다. 이는 이 튜토리얼 전체에서 사용할 클래스와 메소드에 대한 액세스를 제공하므로 매우 중요합니다.
+.NET용 Aspose.Words 작업을 시작하려면 필요한 네임스페이스를 가져와야 합니다. 이는 사용할 클래스와 메소드를 찾을 수 있는 위치를 프로그램에 알려줍니다.
+
+Aspose.Words 네임스페이스를 가져오는 방법은 다음과 같습니다.
 
 ```csharp
-using System;
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-이러한 네임스페이스는 Aspose.Words에서 문서 및 테이블 형식 작업에 필수적입니다.
+ 그만큼`Aspose.Words` 네임스페이스에는 Word 문서를 조작하기 위한 핵심 클래스가 포함되어 있지만`Aspose.Words.Tables` 특히 테이블을 처리하기 위한 것입니다.
 
-## 1단계: 문서 디렉토리 설정
+## 1단계: 문서 설정
 
-먼저 문서가 저장될 디렉터리를 지정해 보겠습니다. 이는 Aspose.Words가 조작하려는 파일을 찾고 저장하는 데 도움이 됩니다.
+ 먼저 자동 맞춤을 원하는 표가 포함된 Word 문서를 로드해야 합니다. 이를 위해 다음을 사용합니다.`Document` Aspose.Words에서 제공하는 클래스입니다.
 
 ```csharp
+// 문서 디렉터리의 경로를 정의하세요.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// 지정된 경로에서 문서를 로드합니다.
+Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 폴더의 실제 경로와 함께.
+ 이 단계에서는 문서가 저장되는 경로를 정의하고 이를`Document` 물체. 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서가 있는 실제 경로를 사용합니다.
 
-## 2단계: 새 문서 만들기
+## 2단계: 테이블에 액세스
 
- 다음으로 새 Word 문서를 만들고`DocumentBuilder` 문서 콘텐츠를 구축하는 데 도움이 됩니다.
+문서를 로드한 후 다음 단계는 수정하려는 테이블에 액세스하는 것입니다. 다음과 같이 문서의 첫 번째 테이블을 검색할 수 있습니다.
 
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+// 문서에서 첫 번째 테이블 가져오기
+Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
- 여기서는`Document` 객체와`DocumentBuilder` 콘텐츠를 삽입하고 형식을 지정하는 데 사용할 개체입니다.
+이 코드 조각은 문서에서 발견된 첫 번째 테이블을 가져옵니다. 문서에 여러 테이블이 포함되어 있고 특정 테이블이 필요한 경우 이에 따라 인덱스를 조정해야 할 수도 있습니다.
 
-## 3단계: 표 삽입
+## 3단계: 테이블 자동 맞춤
 
-이제 문서에 표를 삽입해 보겠습니다. 페이지 너비의 절반을 차지하는 테이블을 만드는 것부터 시작하겠습니다.
+이제 테이블이 있으므로 자동 맞춤 기능을 적용할 수 있습니다. 그러면 자동으로 페이지 너비에 맞게 표가 조정됩니다.
 
 ```csharp
-Table table = builder.StartTable();
-builder.InsertCell();
+// 테이블을 창 너비에 자동 맞춤
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
-builder.Writeln("Cell #1");
-builder.InsertCell();
-builder.Writeln("Cell #2");
-builder.InsertCell();
-builder.Writeln("Cell #3");
 ```
 
- 이 단계에서는 테이블을 시작하고, 셀을 삽입하고, 각 셀에 텍스트를 추가합니다. 그만큼`AutoFit` 메소드는 페이지 너비에 맞게 테이블 너비를 설정하는 데 사용됩니다.
+ 그만큼`AutoFit` 방법`AutoFitBehavior.AutoFitToWindow` 표 너비가 페이지의 전체 너비에 맞게 조정되었는지 확인합니다.
 
-## 4단계: 문서 저장
+## 4단계: 수정된 문서 저장
 
-마지막으로 문서를 저장해야 합니다. 그러면 변경 사항이 새 Word 파일에 기록됩니다.
+테이블이 자동으로 맞춰지면 마지막 단계는 변경 사항을 새 문서에 저장하는 것입니다.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithTables.AutoFitToPageWidth.docx");
+// 수정된 문서를 새 파일에 저장
+doc.Save(dataDir + "WorkingWithTables.AutoFitTableToWindow.docx");
 ```
 
-이 코드 줄은 문서를 지정된 파일 이름으로 지정된 디렉터리에 저장합니다.
-
-## 5단계: 코드 실행
-
-코드를 작성한 후 Visual Studio에서 실행하세요. 문서는 페이지 너비에 자동으로 맞춰진 테이블과 함께 지정된 디렉토리에 저장됩니다.
+그러면 자동 맞춤 테이블이 포함된 수정된 문서가 새 파일에 저장됩니다. 이제 Word에서 이 문서를 열 수 있으며 표는 페이지 너비에 완벽하게 맞습니다.
 
 ## 결론
 
- 그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에서 페이지 너비에 테이블을 자동으로 맞추는 방법을 성공적으로 배웠습니다. 이 튜토리얼에서는 환경 설정, 테이블 생성 및 서식 지정, 문서 저장에 대해 다뤘습니다. Aspose.Words는 다양한 기능을 제공하므로 꼭 살펴보세요.[API 문서](https://reference.aspose.com/words/net/) 그 능력을 최대한 활용하는 것입니다.
+그리고 이제 Aspose.Words for .NET을 사용하여 창에 테이블을 자동으로 맞추는 것은 매우 쉽습니다! 이러한 간단한 단계를 따르면 테이블이 항상 전문적으로 보이고 문서에 완벽하게 들어맞는 것을 확인할 수 있습니다. 광범위한 표를 다루거나 문서를 정리하려는 경우 이 기능은 판도를 바꿀 것입니다. 한 번 시도해 보시고 깔끔하고 잘 정렬된 표로 문서를 빛나게 해보세요!
 
-## 자주 묻는 질문
+## FAQ
 
-### 1. .NET용 Aspose.Words란 무엇입니까?
+### 문서의 여러 표를 자동으로 맞출 수 있나요?  
+예, 문서의 모든 테이블을 반복하여 각 테이블에 자동 맞춤 방법을 적용할 수 있습니다.
 
-Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 조작 및 변환할 수 있는 강력한 라이브러리입니다. 문서 관련 작업을 자동화하는 데 적합합니다.
+### 자동 맞춤이 표 내용에 영향을 미치나요?  
+아니요, 자동 맞춤은 표의 너비를 조정하지만 셀 내부의 내용은 변경하지 않습니다.
 
-### 2. Aspose.Words for .NET을 무료로 사용할 수 있나요?
+### 내 테이블에 유지하고 싶은 특정 열 너비가 있으면 어떻게 되나요?  
+자동 맞춤은 특정 열 너비를 재정의합니다. 특정 너비를 유지해야 하는 경우 자동 맞춤을 적용하기 전에 열을 수동으로 조정해야 할 수도 있습니다.
 
- 다음을 사용하여 .NET용 Aspose.Words를 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구입해야 합니다.
+### 다른 문서 형식의 표에 자동 맞춤을 사용할 수 있나요?  
+Aspose.Words는 주로 Word 문서(.docx)를 지원합니다. 다른 형식의 경우 먼저 .docx로 변환해야 할 수도 있습니다.
 
-### 3. 테이블 형식을 다르게 지정하려면 어떻게 해야 합니까?
-
-Aspose.Words에서 제공하는 다양한 방법을 사용하여 테이블 형식을 사용자 정의할 수 있습니다. 을 체크 해봐[API 문서](https://reference.aspose.com/words/net/) 자세한 지침을 보려면.
-
-### 4. .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
-
-방문하시면 지원을 받으실 수 있습니다.[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).
-
-### 5. 이미지, 차트 등 다른 요소도 조작할 수 있나요?
-
- 예, Aspose.Words를 사용하면 이미지, 차트, SmartArt와 같은 다양한 요소를 조작할 수 있습니다. 탐색[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+### Aspose.Words 평가판을 어떻게 구할 수 있나요?  
+ 무료 평가판을 다운로드할 수 있습니다[여기](https://releases.aspose.com/).

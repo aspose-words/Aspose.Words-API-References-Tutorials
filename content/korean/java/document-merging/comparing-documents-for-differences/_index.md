@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- 바꾸다`"original_document.docx"` 그리고`"modified_document.docx"` 자신의 문서에 대한 경로가 있습니다.
+ 바꾸다`"original_document.docx"`그리고`"modified_document.docx"` 자신의 문서에 대한 경로가 있습니다.
 
 ## 2단계: 문서 비교
 

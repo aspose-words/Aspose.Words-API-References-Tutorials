@@ -2,7 +2,7 @@
 title: 加入和附加文檔
 linktitle: 加入和附加文檔
 second_title: Aspose.Words Java 文件處理 API
-description: 了解如何使用 Aspose.Words for Java 加入和附加文件。包含程式碼範例的逐步指南，可實現高效率的文件操作。
+description: 了解如何使用 Aspose.Words for Java 加入和附加文件。具有程式碼範例的逐步指南，可實現高效的文檔操作。
 type: docs
 weight: 11
 url: /zh-hant/java/document-merging/joining-appending-documents/
@@ -53,7 +53,7 @@ Document doc2 = new Document("document2.docx");
 
 ## 第 4 步：加入文檔
 
-現在我們已經加載了文檔，讓我們看看如何將它們連接在一起。在這個例子中，我們將加入`doc2`到最後`doc1`：
+現在我們已經加載了文檔，讓我們看看如何將它們連接在一起。在這個例子中，我們將加入`doc2`到最後`doc1`:
 
 ```java
 //加入文件

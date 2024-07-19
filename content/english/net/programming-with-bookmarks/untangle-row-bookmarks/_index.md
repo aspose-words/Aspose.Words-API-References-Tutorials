@@ -2,134 +2,137 @@
 title: Untangle Row Bookmarks In Word Document
 linktitle: Untangle Row Bookmarks In Word Document
 second_title: Aspose.Words Document Processing API
-description: Learn how to untangle nested row bookmarks in word document to remove specific rows without affecting other bookmarks.
+description: Untangle tangled row bookmarks in your Word documents with ease using Aspose.Words for .NET. This guide walks you through the process for cleaner and safer bookmark management.
 type: docs
 weight: 10
 url: /net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
+## Introduction
 
-In this article, we will explore the C# source code above to understand how to use the Untangle Row Bookmarks function in the Aspose.Words for .NET library. This function makes it possible to put the ends of bookmarks of lines in the same line as the beginnings of bookmarks.
+Have you ever encountered a situation where deleting a row in a Word document by a bookmark messes up other bookmarks in adjacent rows? This can be incredibly frustrating, especially when dealing with complex tables. Thankfully, Aspose.Words for .NET offers a powerful solution: untangling row bookmarks. 
+
+This guide will walk you through the process of untangling row bookmarks in your Word documents using Aspose.Words for .NET. We'll break down the code into easy-to-understand steps and explain each function's purpose, empowering you to tackle those pesky bookmark issues with confidence.
 
 ## Prerequisites
 
-- Basic knowledge of the C# language.
-- .NET development environment with Aspose.Words library installed.
+Before diving in, you'll need a few things:
 
-## Step 1: Loading the document
+1. Aspose.Words for .NET: This commercial library provides functionalities for working with Word documents programmatically. 2. You can download a free trial from [download link](https://releases.aspose.com/words/net/) or purchase a license from [buy](https://purchase.aspose.com/buy).
+3. A C# development environment: Visual Studio or any other C# IDE will work perfectly.
+4. A Word document with row bookmarks: We'll use a sample document named "Table column bookmarks.docx" for demonstration purposes.
 
-We use the `Document` class to load the existing document from a file:
+## Import Namespaces
+
+The first step involves importing the necessary namespaces into your C# project. These namespaces provide access to the classes and functionalities we'll be using from Aspose.Words for .NET:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using System;
+```
+
+## Step 1: Load the Word Document
+
+We begin by loading the Word document containing the tangled row bookmarks. The `Document` class handles document manipulation in Aspose.Words. Here's how to load the document:
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Replace with your document location
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## Step 2: Unravel Line Bookmarks
+Remember to replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to your "Table column bookmarks.docx" file.
 
-We use the `Untangle` function to untangle bookmarks from rows. This function performs the custom task of putting the bookmark ends of lines in the same line as the bookmark starts:
+## Step 2: Untangle Row Bookmarks
 
-```csharp
-Untangle(doc);
-```
-
-## Step 3: Delete line by bookmark
-
-We use the `DeleteRowByBookmark` function to delete a specific row by its bookmark:
+This is where the magic happens! The `Untangle` function takes care of untangling the row bookmarks. Let's break down its functionality:
 
 ```csharp
-DeleteRowByBookmark(doc, "ROW2");
+private void Untangle(Document doc)
+{
+   foreach (Bookmark bookmark in doc.Range.Bookmarks)
+   {
+	   // Get the parent row of both bookmark and bookmark end
+	   Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
+	   Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+	   // Check if rows are valid and adjacent
+	   if (row1 != null && row2 != null && row1.NextSibling == row2)
+		   // Move bookmark end to the last paragraph of the top row's last cell
+		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+   }
+}
 ```
 
-## Step 4: Check integrity of other bookmarks
+Here's a step-by-step explanation of what the code does:
 
-We verify that the other bookmarks have not been damaged by checking if the end of the bookmark is still present:
+We iterate through all bookmarks in the document using a `foreach` loop.
+For each bookmark, we retrieve the parent row of both the bookmark start (`bookmark.BookmarkStart`) and the bookmark end (`bookmark.BookmarkEnd`) using the `GetAncestor` method.
+We then check if both rows are found (`row1 != null` and `row2 != null`) and if they are adjacent rows (`row1.NextSibling == row2`). This ensures we only modify bookmarks that span across adjacent rows.
+If the conditions are met, we move the bookmark end node to the end of the last paragraph in the last cell of the top row (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) effectively untangling them.
+
+## Step 3: Delete Row by Bookmark
+
+Now that the bookmarks are untangled, we can safely delete rows using their bookmark names. The `DeleteRowByBookmark` function handles this task:
+
+```csharp
+private void DeleteRowByBookmark(Document doc, string bookmarkName)
+{
+   Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+   Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+   row?.Remove();
+}
+```
+
+Here's a breakdown of this function:
+
+We take the bookmark name (`bookmarkName`) as input.
+We retrieve the corresponding bookmark object using `doc.Range.Bookmarks[bookmarkName]`.
+We then get the parent row of the bookmark start using `GetAncestor` (similar to the `Untangle` function).
+Finally, we check if the bookmark and row exist (`bookmark != null` and
+
+## Step 4: Verify Untangling
+
+While the `Untangle` function should ensure the safety of other bookmarks, it's always good practice to verify. Here's how we can check if the untangling process didn't accidentally delete the end of another bookmark:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-throw new Exception("Wrong, the end of the bookmark was deleted.");
+   throw new Exception("Wrong, the end of the bookmark was deleted.");
+```
 
+This code snippet checks if the end of the bookmark named "ROW1" still exists after deleting the row with the "ROW2" bookmark. If it's null, an exception is thrown, indicating an issue with the untangling process. 
+
+## Step 5: Save the Document
+
+Finally, after untangling the bookmarks and potentially deleting rows, save the modified document using the `Save` method:
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### Example source code for Untangle Row Bookmarks using Aspose.Words for .NET
+This saves the document with the untangled bookmarks and any deleted rows under a new filename "WorkingWithBookmarks.UntangleRowBookmarks.docx". 
 
-Here is the full sample source code to untangle bookmarks from lines using Aspose.Words for .NET:
-
-
-```csharp
-
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Table column bookmarks.docx");
-
-	// This performs the custom task of putting the row bookmark ends into the same row with the bookmark starts.
-	Untangle(doc);
-
-	// Now we can easily delete rows by a bookmark without damaging any other row's bookmarks.
-	DeleteRowByBookmark(doc, "ROW2");
-
-	// This is just to check that the other bookmark was not damaged.
-	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-		throw new Exception("Wrong, the end of the bookmark was deleted.");
-
-	doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
-
-```
-
-#### Untangle source code
-```csharp
-
-private void Untangle(Document doc)
-        {
-            foreach (Bookmark bookmark in doc.Range.Bookmarks)
-            {
-                // Get the parent row of both the bookmark and bookmark end node.
-                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-                // If both rows are found okay, and the bookmark start and end are contained in adjacent rows,
-                // move the bookmark end node to the end of the last paragraph in the top row's last cell.
-                if (row1 != null && row2 != null && row1.NextSibling == row2)
-                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-            }
-        }
-
-```
-
-#### DeleteRowByBookmark source code
-```csharp
-
- private void DeleteRowByBookmark(Document doc, string bookmarkName)
-        {
-            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
-
-            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
-            row?.Remove();
-        }
-
-```
 ## Conclusion
 
-In this article, we explored the C# source code to understand how to use the Untangle Row Bookmarks feature of Aspose.Words for .NET. We followed a step-by-step guide to untangle row bookmarks and delete a specific row without damage other bookmarks.
+By following these steps and utilizing the `Untangle` function, you can effectively untangle row bookmarks in your Word documents with Aspose.Words for .NET. This ensures that deleting rows by bookmarks doesn't cause unintended consequences with other bookmarks in adjacent rows. Remember to replace placeholders like `"YOUR DOCUMENT DIRECTORY"` with your actual paths and file names.
 
-### FAQ's for untangle row bookmarks in word document
+## FAQ's
 
-#### Q: Does Unscramble Row Bookmarks only work with row bookmarks in tables?
+### Is Aspose.Words for .NET free?
 
-A: Yes, the Untangle Row Bookmarks feature is specifically designed to untangle row bookmarks that are in tables. This function can be used to process line bookmarks in arrays and ensure that bookmark ends are in the same line as bookmark starts.
+Aspose.Words for .NET is a commercial library with a free trial available. You can download it from [download link](https://releases.aspose.com/words/net/).
 
-#### Q: Does the Unscramble Line Bookmarks function modify the content of the original document?
+### Can I untangle row bookmarks manually in Word?
 
-A: Yes, the Unscramble line bookmarks function modifies the original document by moving the ends of line bookmarks to place them in the same line as the beginnings of bookmarks. Make sure to save a backup copy of the document before applying this feature.
+While technically possible, manually untangling bookmarks in Word can be tedious and error-prone. Aspose.Words for .NET automates this process, saving you time and effort.
 
-#### Q: How can I identify line bookmarks in my Word document?
+### What happens if the `Untangle` function encounters an error?
 
-A: Row bookmarks are typically used in tables to mark specific sections. You can identify row bookmarks by browsing through bookmarks in the document and checking to see if the bookmarks are in table rows.
+The code includes an exception handler that throws an exception if the untangling process accidentally deletes the end of another bookmark. You can customize this error handling to fit your specific needs.
 
-#### Q: Is it possible to untangle row bookmarks in non-adjacent tables?
+### Can I use this code to untangle bookmarks across non-adjacent rows?
 
-A: The Untangle Row Bookmarks function as presented in this article is designed to untangle row bookmarks in adjacent tables. To disentangle row bookmarks in non-adjacent tables, additional adjustments to the code may be required depending on the structure of the document.
+Currently, the code focuses on untangling bookmarks that span across adjacent rows. Modifying the code to handle non-adjacent rows would require additional logic to identify and handle those scenarios.
 
-#### Q: What other manipulations can I perform on row bookmarks once they have been unraveled?
+### Are there any limitations to using this approach?
 
-A: Once the line bookmarks are unraveled, you can perform different manipulations as needed. This may include editing, deleting, or adding content to bookmarked lines. Be sure to handle line bookmarks with care to avoid any unwanted impact on the rest of the document.
+This approach assumes that bookmarks are well-defined within table cells. If bookmarks are placed outside of cells or in unexpected locations, the untangling process might not work as intended.

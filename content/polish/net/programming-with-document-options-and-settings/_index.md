@@ -14,12 +14,12 @@ W samouczkach wyjaśniono, jak dostosować opcje ładowania dokumentów. Dowiesz
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Optymalizuj dla pani Word](./optimize-for-ms-word/) | Przewodnik krok po kroku dotyczący optymalizacji dokumentu dla MS Word za pomocą Aspose.Words dla .NET. |
-| [Pokaż błędy gramatyczne i ortograficzne](./show-grammatical-and-spelling-errors/) | Przewodnik krok po kroku umożliwiający wyświetlanie błędów gramatycznych i ortograficznych w dokumencie za pomocą Aspose.Words dla .NET. |
-| [Oczyść nieużywane style i listy](./cleanup-unused-styles-and-lists/) | Przewodnik krok po kroku dotyczący czyszczenia nieużywanych stylów i list w dokumencie za pomocą Aspose.Words dla .NET. |
-| [Oczyść zduplikowany styl](./cleanup-duplicate-style/) | Przewodnik krok po kroku dotyczący czyszczenia zduplikowanych stylów w dokumencie przy użyciu Aspose.Words dla .NET. Zawiera pełny kod źródłowy. |
-| [Wyświetl opcje](./view-options/) | Przewodnik krok po kroku dotyczący konfigurowania opcji wyświetlania dokumentu za pomocą Aspose.Words dla .NET. |
-| [Konfiguracja strony dokumentu](./document-page-setup/) | Przewodnik krok po kroku dotyczący konfigurowania układu dokumentu za pomocą Aspose.Words dla .NET. |
-| [Dodaj japoński jako języki edycji](./add-japanese-as-editing-languages/) | Przewodnik krok po kroku, jak dodać język japoński jako język edycji za pomocą Aspose.Words dla .NET. |
-| [Ustaw rosyjski jako domyślny język edycji](./set-russian-as-default-editing-language/) | Przewodnik krok po kroku, jak ustawić rosyjski jako domyślny język edycji dokumentu za pomocą Aspose.Words dla .NET. |
-| [Ustaw ustawienia strony i formatowanie sekcji](./set-page-setup-and-section-formatting/) | Przewodnik krok po kroku dotyczący konfigurowania układu dokumentu i formatowania sekcji za pomocą Aspose.Words dla .NET. |
+| [Optymalizuj dla pani Word](./optimize-for-ms-word/) | Z łatwością zoptymalizuj dokumenty gramatyczne programu Word dla różnych wersji MS Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. |
+| [Pokaż błędy gramatyczne i ortograficzne](./show-grammatical-and-spelling-errors/) | Dowiedz się, jak wyświetlać błędy gramatyczne i ortograficzne w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego wszechstronnego samouczka. |
+| [Oczyść nieużywane style i listy](./cleanup-unused-styles-and-lists/) | Wyczyść swoje dokumenty Word za pomocą Aspose.Words dla .NET, usuwając nieużywane style i listy. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby bez wysiłku uprościć tworzenie dokumentów. |
+| [Oczyść zduplikowany styl](./cleanup-duplicate-style/) | Dowiedz się, jak oczyścić zduplikowane style w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego obszernego przewodnika krok po kroku. |
+| [Wyświetl opcje](./view-options/) | Dowiedz się, jak przeglądać opcje w dokumentach programu Word przy użyciu Aspose.Words dla .NET. W tym przewodniku opisano ustawianie typów widoków, dostosowywanie poziomów powiększenia i zapisywanie dokumentu. |
+| [Konfiguracja strony dokumentu](./document-page-setup/) | Konfiguracja strony dokumentu głównego za pomocą Aspose.Words dla .NET w prostych krokach. Dowiedz się, jak ładować, ustawiać układ, definiować znaki w wierszu, wiersze na stronie i zapisywać dokument. |
+| [Dodaj japoński jako języki edycji](./add-japanese-as-editing-languages/) | Dowiedz się, jak dodać japoński jako język edycji w swoich dokumentach za pomocą Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku. |
+| [Ustaw rosyjski jako domyślny język edycji](./set-russian-as-default-editing-language/) | Dowiedz się, jak ustawić rosyjski jako domyślny język edycji w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Aby uzyskać szczegółowe instrukcje, postępuj zgodnie z naszym przewodnikiem krok po kroku. |
+| [Ustaw ustawienia strony i formatowanie sekcji](./set-page-setup-and-section-formatting/) | Dowiedz się, jak ustawić ustawienia strony i formatowanie sekcji w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Ulepsz prezentację swojego dokumentu bez wysiłku. |

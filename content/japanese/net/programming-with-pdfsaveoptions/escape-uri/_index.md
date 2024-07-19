@@ -2,101 +2,100 @@
 title: PDF ドキュメント内の URI をエスケープする
 linktitle: PDF ドキュメント内の URI をエスケープする
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して PDF ドキュメント内の URI をエスケープする方法のステップバイステップ ガイド。
+description: Aspose.Words for .NET を使用して PDF 内の URI をエスケープする方法を学びます。この詳細なガイドでは、プロセスをステップごとに説明します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-pdfsaveoptions/escape-uri/
 ---
+## 導入
 
-この記事では、Aspose.Words for .NET を使用して PDF ドキュメントの URI をエスケープする方法について、ステップ バイ ステップで説明します。コードの各部分を詳しく説明します。このチュートリアルの最後には、エスケープされた URI を含むハイパーリンクをドキュメントに挿入する方法を理解できるようになります。
+こんにちは! Aspose.Words for .NET を使用して Word 文書を PDF として保存するときに URI をどのように処理すればよいか疑問に思ったことはありませんか? 適切な場所に来ています! 今日は、PDF 文書の URI をエスケープして、文書を変換したときに URI が正しく機能するようにする方法について詳しく説明します。一緒にこの旅に出発し、ステップ バイ ステップで各概念を理解していきましょう。
 
-開始する前に、プロジェクトに Aspose.Words for .NET ライブラリがインストールされ、構成されていることを確認してください。ライブラリとインストール手順は、Aspose Web サイトで参照できます。
+## 前提条件
 
-## ステップ1: ドキュメントディレクトリを定義する
+始める前に、必要なものがすべて揃っていることを確認しましょう。
 
-まず、ドキュメントが保存されているディレクトリへのパスを定義する必要があります。`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
+1.  Aspose.Words for .NET: 最新バージョンであることを確認してください。ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio またはその他の .NET 開発環境。
+3. C# の基本知識: このチュートリアルでは、C# プログラミングの基本を理解していることを前提としています。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートする必要があります。これは、Aspose.Words の機能にアクセスするために重要です。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+では、プロセスをわかりやすいステップに分解してみましょう。手順に沿って進めていけば、すぐに URI エスケープのプロになれます。
+
+## ステップ1: ドキュメントディレクトリを設定する
+
+コードに進む前に、ドキュメント ディレクトリへのパスを設定します。ここにファイルが保存されます。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ2: ドキュメントとDocumentBuilderを作成する
+交換する`"YOUR DOCUMENT DIRECTORY"`PDF ドキュメントを保存する実際のパスを入力します。
 
-次に、新しい`Document`オブジェクトと`DocumentBuilder`ドキュメントを構築するためのオブジェクト。
+## ステップ2: 新しいドキュメントを作成する
+
+次に、Aspose.Words を使用して新しいドキュメントを作成します。このドキュメントは、ハイパーリンクを挿入するためのキャンバスとして機能します。
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ3: エスケープされたURIでハイパーリンクを挿入する
+ここ、`Document`これは新しいWord文書であり、`DocumentBuilder`ドキュメント作成プロセスを簡素化するヘルパー クラスです。
 
-使用`InsertHyperlink`方法の`DocumentBuilder`オブジェクトを使用して文書にハイパーリンクを挿入します。URIは`Uri.EscapeUriString`フォーマットエラーを回避する機能。
+## ステップ3: ハイパーリンクを挿入する
+
+次に、ドキュメントにハイパーリンクを挿入します。このハイパーリンクが URI エスケープ プロセスの焦点になります。
 
 ```csharp
-builder.InsertHyperlink("Testlink",
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), false);
-builder. Writen();
-builder.InsertHyperlink(Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test")、
-     Uri.EscapeUriString("https://www.google.com/search?q=%2Fthe%20test"), false);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
 ```
+
+この行では、`"Testlink"`ハイパーリンクの表示テキストであり、`"https://www.google.com/search?q= aspose"`はURLです。`false`パラメータは、リンクがハイパーリンクとしてフォーマットされないことを示します (つまり、下線が引かれ、青色になりません)。
 
 ## ステップ4: ドキュメントをPDFとして保存する
 
-最後に、ドキュメントをPDFとして保存するには、`Save`方法の`Document`オブジェクト。出力ファイル名を指定します。
+最後に、ドキュメントを PDF として保存します。ここで、Aspose.Words は PDF 出力内の URI のエスケープを処理します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
-以上です。Aspose.Words for .NET を使用して、エスケープされた URI を含むハイパーリンクをドキュメントに正常に挿入できました。
-
-### Aspose.Words for .NET を使用した URI エスケープのサンプル ソース コード
-
-
-```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.InsertHyperlink("Testlink", 
-		"https://www.google.com/search?q=%2Fthe%20test", 偽);
-	builder.Writeln();
-	builder.InsertHyperlink("https:// www.google.com/search?q=%2Fthe%20test",
-		"https://www.google.com/search?q=%2Fthe%20test", 偽);
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");    
-  
-```
+この行は、指定されたディレクトリにファイル名でドキュメントを保存します。`WorkingWithPdfSaveOptions.EscapeUri.pdf`.
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して PDF ドキュメント内の URI をエスケープする方法について説明しました。URI をエスケープすることで、書式設定エラーを回避し、ハイパーリンクが PDF ドキュメント内で正しく解釈され表示されるようになります。エスケープされた URI を含むハイパーリンクを PDF ドキュメントに挿入するには、説明されている手順に従ってください。必ずエスケープしてください。
+これで完了です。Aspose.Words for .NET を使用して Word 文書を PDF として保存するときに URI をエスケープする方法を学習しました。このプロセスにより、結果として得られる PDF でハイパーリンクが機能し、適切にフォーマットされたままになります。 
 
-### よくある質問
+これらの小さいながらも重要なテクニックを習得すると、ドキュメントの品質と機能が大幅に向上することを覚えておいてください。コーディングを楽しんでください!
 
-#### Q: PDF ドキュメントのエスケープ URI とは何ですか? また、なぜ重要ですか?
-A: PDF ドキュメントの URI のエスケープとは、URL 内の特殊文字をエスケープ シーケンスに変換して、フォーマット エラーを回避する方法を指します。URL 内の特殊文字は URL の構造を破壊し、誤解や誤ったレンダリングにつながる可能性があるため、これは重要です。特殊文字をエスケープすることで、URL が正しく解釈され、PDF ドキュメントに表示されることが保証されます。
+## よくある質問
 
-#### Q: Aspose.Words for .NET を使用して PDF ドキュメント内の URI をエスケープするにはどうすればよいですか?
-A: Aspose.Words for .NET を使用して PDF ドキュメント内の URI をエスケープするには、次の手順に従います。
+### Aspose.Words for .NET とは何ですか?
 
-ドキュメントが保存されているディレクトリパスを次のように設定します。`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリの実際のパスを入力します。
+Aspose.Words for .NET は、開発者が .NET アプリケーションで Word 文書を作成、操作、変換できるようにする強力なライブラリです。
 
-新しいインスタンスを作成する`Document`クラスと`DocumentBuilder`ドキュメントを構築するためのオブジェクト。
+### PDF で URI エスケープが重要なのはなぜですか?
 
-使用`InsertHyperlink`方法の`DocumentBuilder`オブジェクトを使用して文書にハイパーリンクを挿入します。URIをエスケープすることを忘れないでください。`Uri.EscapeUriString`フォーマットエラーを回避する機能。
+URI エスケープにより、URL 内の特殊文字が正しく解釈され、リンク切れを防ぎ、意図したとおりに動作するようになります。
 
-使用`Save`方法の`Document`出力ファイルの名前を指定してドキュメントを PDF 形式で保存するオブジェクト。
+### Aspose.Words for .NET で他の種類のリンクを使用できますか?
 
-#### Q: PDF ドキュメントで URI をエスケープする利点は何ですか?
-A: PDF ドキュメントで URI エスケープを行う利点は次のとおりです。
+もちろんです! Aspose.Words は、内部ドキュメント リンク、ブックマーク、外部 URL など、さまざまな種類のリンクをサポートしています。
 
-フォーマット エラーの防止: URI エスケープは、URL 内の特殊文字によって発生するフォーマット エラーを防止し、URL が正しく解釈されて PDF ドキュメントに表示されるようにします。
+### Aspose.Words for .NET の無料試用版を入手するにはどうすればいいですか?
 
-PDF リーダーとの互換性: エスケープされた URI は一般に PDF リーダーで適切にサポートされているため、互換性が向上し、一貫したユーザー エクスペリエンスが保証されます。
+無料トライアルをご利用ください[ここ](https://releases.aspose.com/).
 
-#### Q: URI でエスケープする必要がある特殊文字は何ですか?
- A: URI でエスケープする必要がある特殊文字は、スペース、<、>、"、#、%、{、} です。|, \, ^, ~, [, ], `, ;, /, ?, :, @, =, &, $, +, ,, [, ], and !.
+### Aspose.Words for .NET の詳細なドキュメントはどこで入手できますか?
+
+詳細なドキュメントは以下をご覧ください[ここ](https://reference.aspose.com/words/net/).

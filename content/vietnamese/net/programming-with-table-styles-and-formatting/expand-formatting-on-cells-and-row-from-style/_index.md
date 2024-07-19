@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Bước 3: Về ô đầu tiên của bảng đầu tiên
- Để bắt đầu, chúng ta cần điều hướng đến ô đầu tiên của bảng đầu tiên trong tài liệu. Chúng tôi sử dụng`GetChild()` Và`FirstRow.FirstCell` phương pháp để có được tham chiếu đến ô đầu tiên.
+ Để bắt đầu, chúng ta cần điều hướng đến ô đầu tiên của bảng đầu tiên trong tài liệu. Chúng tôi sử dụng`GetChild()`Và`FirstRow.FirstCell` phương pháp để có được tham chiếu đến ô đầu tiên.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

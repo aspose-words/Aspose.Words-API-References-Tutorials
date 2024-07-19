@@ -2,120 +2,133 @@
 title: Onbeperkte bewerkbare regio's in Word-document
 linktitle: Onbeperkte bewerkbare regio's in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u onbeperkte bewerkbare gebieden in een Word-document kunt maken met Aspose.Words voor .NET.
+description: Leer hoe u onbeperkt bewerkbare gebieden in een Word-document kunt maken met Aspose.Words voor .NET met deze uitgebreide stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/document-protection/unrestricted-editable-regions/
 ---
-In deze zelfstudie begeleiden we u bij de stappen om de functie voor onbeperkte bewerkbare gebieden van Aspose.Words voor .NET te gebruiken. Met deze functie kunt u gebieden in een Word-document definiëren waar de inhoud zonder beperkingen kan worden bewerkt, zelfs als de rest van het document alleen-lezen is. Volg onderstaande stappen:
+## Invoering
 
-## Stap 1: Het document laden en de beveiliging instellen
+Als u ooit een Word-document wilt beschermen maar toch wilt toestaan dat bepaalde delen bewerkbaar zijn, dan bent u hier aan het juiste adres! Deze handleiding leidt u door het proces van het instellen van onbeperkte bewerkbare regio's in een Word-document met behulp van Aspose.Words voor .NET. We behandelen alles, van de vereisten tot de gedetailleerde stappen, zodat u een soepele ervaring krijgt. Klaar? Laten we erin duiken!
 
-Begin met het laden van het bestaande document:
+## Vereisten
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
-```
+Voordat we beginnen, zorg ervoor dat je het volgende hebt:
 
-Beveilig het document door het alleen-lezen beveiligingstype en wachtwoord in te stellen
+1.  Aspose.Words voor .NET: Download het als je dat nog niet hebt gedaan[hier](https://releases.aspose.com/words/net/).
+2.  Een geldige Aspose-licentie: u kunt een tijdelijke licentie krijgen[hier](https://purchase.aspose.com/temporary-license/).
+3. Visual Studio: Elke recente versie zou goed moeten werken.
+4. Basiskennis van C# en .NET: dit zal u helpen de code te volgen.
 
-## Stap 2: Een bewerkbaar gebied maken
+Nu je helemaal klaar bent, gaan we aan de slag met het leuke gedeelte!
 
-Begin met het maken van een bewerkbaar gebied met behulp van de objecten EditableRangeStart en EditableRangeEnd:
+## Naamruimten importeren
 
-```csharp
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Er wordt een EditableRange-object gemaakt voor de EditableRangeStart die we zojuist hebben gemaakt.
-EditableRange editableRange = edRangeStart.EditableRange;
-
-// Plaats iets binnen het bewerkbare bereik.
-builder.Writeln("Paragraph inside first editable range");
-
-// Een bewerkbaar bereik is goed gevormd als het een begin en een einde heeft.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
-
-```
-
-## Stap 3: Voeg inhoud toe buiten de bewerkbare gebieden
-
-U kunt inhoud toevoegen buiten de bewerkbare gebieden, die alleen-lezen blijft:
+Om Aspose.Words voor .NET te gaan gebruiken, moet u de benodigde naamruimten importeren. Hier ziet u hoe u het kunt doen:
 
 ```csharp
-builder.Writeln("This paragraph is outside of all editable areas and cannot be edited.");
+using Aspose.Words;
+using Aspose.Words.Editing;
 ```
 
-## Stap 4: Sla het document op
+## Stap 1: Uw project opzetten
 
-Sla ten slotte het gewijzigde document op:
+Laten we eerst een nieuw C#-project maken in Visual Studio.
 
-```csharp
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
-```
+1. Open Visual Studio: Begin met het openen van Visual Studio en het maken van een nieuw Console App-project.
+2. Installeer Aspose.Words: Gebruik NuGet Package Manager om Aspose.Words te installeren. U kunt dit doen door de volgende opdracht uit te voeren in de Package Manager Console:
+   ```sh
+   Install-Package Aspose.Words
+   ```
 
-Zorg ervoor dat u het juiste pad en de juiste bestandsnaam opgeeft om het document met bewerkbare gebieden op te slaan.
+## Stap 2: Het document laden
 
-### Voorbeeldbroncode voor onbeperkte bewerkbare regio's met Aspose.Words voor .NET
+Laten we nu het document laden dat u wilt beveiligen. Zorg ervoor dat u een Word-document in uw directory gereed heeft.
 
-Hier is de volledige broncode voor onbeperkt bewerkbare gebieden met Aspose.Words voor .NET:
+1. Stel de documentmap in: Definieer het pad naar uw documentmap.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  Laad het document: Gebruik de`Document` klasse om uw Word-document te laden.
+   ```csharp
+   Document doc = new Document(dataDir + "Document.docx");
+   ```
 
-```csharp
-// Het pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-// Upload een document en maak het alleen-lezen.
-Document doc = new Document(MyDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Stap 3: Het document beschermen
 
-doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+Vervolgens stellen we het document in op alleen-lezen. Dit zorgt ervoor dat er zonder het wachtwoord geen wijzigingen kunnen worden aangebracht.
 
-builder.Writeln("Hello world! Since we have set the document's protection level to read-only, " + "we cannot edit this paragraph without the password.");
+1.  Initialiseer DocumentBuilder: maak een exemplaar van`DocumentBuilder` om wijzigingen in het document aan te brengen.
+   ```csharp
+   DocumentBuilder builder = new DocumentBuilder(doc);
+   ```
+2. Beveiligingsniveau instellen: Beveilig het document met een wachtwoord.
+   ```csharp
+   doc.Protect(ProtectionType.ReadOnly, "MyPassword");
+   ```
+3. Alleen-lezen tekst toevoegen: Voeg tekst in die alleen-lezen is.
+   ```csharp
+   builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
+   ```
 
-// Start een bewerkbaar bereik.
-EditableRangeStart edRangeStart = builder.StartEditableRange();
-// Er wordt een EditableRange-object gemaakt voor de EditableRangeStart die we zojuist hebben gemaakt.
-EditableRange editableRange = edRangeStart.EditableRange;
+## Stap 4: Bewerkbare bereiken maken
 
-// Plaats iets binnen het bewerkbare bereik.
-builder.Writeln("Paragraph inside first editable range");
+Hier gebeurt de magie. We maken secties in het document die ondanks de algemene alleen-lezen-beveiliging kunnen worden bewerkt.
 
-// Een bewerkbaar bereik is goed gevormd als het een begin en een einde heeft.
-EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+1. Begin bewerkbaar bereik: Definieer het begin van het bewerkbare bereik.
+   ```csharp
+   EditableRangeStart edRangeStart = builder.StartEditableRange();
+   ```
+2.  Maak een bewerkbaar bereikobject: An`EditableRange` object wordt automatisch gemaakt.
+   ```csharp
+   EditableRange editableRange = edRangeStart.EditableRange;
+   ```
+3. Bewerkbare tekst invoegen: Voeg tekst toe binnen het bewerkbare bereik.
+   ```csharp
+   builder.Writeln("Paragraph inside first editable range");
+   ```
 
-builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+## Stap 5: Het bewerkbare bereik sluiten
 
-doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+Een bewerkbaar bereik is niet compleet zonder einde. Laten we dat hierna toevoegen.
 
-```
-Door deze stappen te volgen, kunt u eenvoudig onbeperkte bewerkbare gebieden in uw Word-document maken met Aspose.Words voor .NET.
+1. Einde van bewerkbaar bereik: Definieer het einde van het bewerkbare bereik.
+   ```csharp
+   EditableRangeEnd edRangeEnd = builder.EndEditableRange();
+   ```
+2. Alleen-lezen tekst buiten het bereik toevoegen: Voeg tekst in buiten het bewerkbare bereik om de beveiliging aan te tonen.
+   ```csharp
+   builder.Writeln("This paragraph is outside any editable ranges, and cannot be edited.");
+   ```
+
+## Stap 6: Het document opslaan
+
+Laten we ten slotte het document opslaan met de toegepaste beveiliging en bewerkbare gebieden.
+
+1.  Sla het document op: gebruik de`Save` methode om uw gewijzigde document op te slaan.
+   ```csharp
+   doc.Save(dataDir + "DocumentProtection.UnrestrictedEditableRegions.docx");
+   ```
 
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u onbeperkt bewerkbare gebieden in een Word-document kunt maken met Aspose.Words voor .NET. Door de gegeven stappen te volgen, kunt u specifieke gebieden binnen het document definiëren waar gebruikers de inhoud vrijelijk kunnen bewerken terwijl de rest van het document alleen-lezen blijft. Aspose.Words voor .NET biedt krachtige functies voor documentbeveiliging en aanpassing, waardoor u controle krijgt over de bewerkingsmogelijkheden van uw Word-documenten.
 
-### Veelgestelde vragen over onbeperkt bewerkbare gebieden in een Word-document
+En daar heb je het! U hebt met succes onbeperkte bewerkbare regio's in een Word-document gemaakt met Aspose.Words voor .NET. Deze functie is ongelooflijk handig voor samenwerkingsomgevingen waar bepaalde delen van een document ongewijzigd moeten blijven terwijl andere kunnen worden bewerkt. 
 
-#### Vraag: Wat zijn onbeperkte bewerkbare regio's in Aspose.Words voor .NET?
+ Experimenteer met complexere scenario's en verschillende beschermingsniveaus om het meeste uit Aspose.Words te halen. Als u vragen heeft of tegen problemen aanloopt, aarzel dan niet om de[documentatie](https://reference.aspose.com/words/net/) of contact opnemen[steun](https://forum.aspose.com/c/words/8).
 
-A: Onbeperkt bewerkbare gebieden in Aspose.Words voor .NET zijn gebieden binnen een Word-document waar de inhoud zonder enige beperking kan worden bewerkt, zelfs als de rest van het document is ingesteld als alleen-lezen. Deze gebieden bieden een manier om specifieke delen van het document te definiëren die gebruikers kunnen wijzigen, terwijl de algehele documentbeveiliging behouden blijft.
+## Veelgestelde vragen
 
-#### Vraag: Hoe kan ik onbeperkt bewerkbare regio's maken met Aspose.Words voor .NET?
+### Kan ik meerdere bewerkbare gebieden in één document hebben?
+Ja, u kunt meerdere bewerkbare gebieden maken door bewerkbare bereiken op verschillende delen van het document te starten en te beëindigen.
 
-A: Om onbeperkt bewerkbare gebieden in een Word-document te maken met Aspose.Words voor .NET, kunt u deze stappen volgen:
-1.  Laad het bestaande document met behulp van de`Document` klas.
-2.  Stel de documentbeveiliging in op alleen-lezen met behulp van de`Protect` werkwijze van de`Document` voorwerp.
-3.  Gebruik de`DocumentBuilder` class om een bewerkbaar bereik te maken door een`EditableRangeStart` voorwerp en een`EditableRangeEnd` voorwerp.
-4.  Voeg inhoud toe binnen het bewerkbare bereik met behulp van de`DocumentBuilder`.
-5.  Sla het gewijzigde document op met behulp van de`Save` werkwijze van de`Document` voorwerp.
+### Welke andere beveiligingstypen zijn beschikbaar in Aspose.Words?
+Aspose.Words ondersteunt verschillende beveiligingstypen, zoals AllowOnlyComments, AllowOnlyFormFields en NoProtection.
 
-#### Vraag: Kan ik meerdere onbeperkte bewerkbare gebieden in een Word-document hebben?
+### Is het mogelijk om de beveiliging van een document te verwijderen?
+ Ja, u kunt de beveiliging verwijderen met behulp van de`Unprotect` methode en het juiste wachtwoord opgeven.
 
-A: Ja, u kunt meerdere onbeperkte bewerkbare gebieden in een Word-document hebben. Om dit te bereiken, kunt u meerdere sets maken`EditableRangeStart` En`EditableRangeEnd` objecten met behulp van de`DocumentBuilder` klas. Elke set objecten definieert een afzonderlijk bewerkbaar gebied waar gebruikers de inhoud zonder enige beperking kunnen wijzigen.
+### Kan ik verschillende wachtwoorden opgeven voor verschillende secties?
+Nee, de beveiliging op documentniveau past één wachtwoord toe voor het hele document.
 
-#### Vraag: Kan ik bewerkbare regio's in elkaar nesten?
-
- A: Nee, u kunt bewerkbare regio's niet in elkaar nesten met Aspose.Words voor .NET. Elk bewerkbaar gebied gedefinieerd door een`EditableRangeStart` En`EditableRangeEnd` Het paar moet onafhankelijk zijn en niet overlappen of genest zijn in een ander bewerkbaar gebied. Geneste bewerkbare regio's worden niet ondersteund.
-
-#### Vraag: Kan ik de alleen-lezen-beveiliging van het document binnen een bewerkbaar gebied verwijderen?
-
-A: Nee, u kunt de alleen-lezen-beveiliging niet verwijderen van het document binnen een bewerkbaar gebied. De alleen-lezen-beveiliging wordt toegepast op het gehele document en kan niet selectief worden verwijderd binnen specifieke bewerkbare gebieden. Het doel van de bewerkbare gebieden is om inhoudswijzigingen mogelijk te maken terwijl het gehele document alleen-lezen blijft.
+### Hoe vraag ik een licentie aan voor Aspose.Words?
+U kunt een licentie aanvragen door deze vanuit een bestand of stream te laden. Raadpleeg de documentatie voor gedetailleerde stappen.

@@ -98,7 +98,7 @@ Paragraf dapat berisi node seperti run, bentuk, komentar, dan elemen sebaris lai
  Ya, Anda dapat memanipulasi berbagai tipe node seperti bentuk, komentar, dan lainnya dengan mencentangnya`NodeType`.
 
 ### 4. Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
- Anda dapat memulai dengan uji coba gratis atau mendapatkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
+Anda dapat memulai dengan uji coba gratis atau mendapatkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Di mana saya dapat menemukan contoh dan dokumentasi lainnya?
  Mengunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/) untuk lebih banyak contoh dan dokumentasi terperinci.

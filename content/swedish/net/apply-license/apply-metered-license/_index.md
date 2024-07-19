@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Byta ut`"your_public_key"` och`"your_private_key"`med de faktiska nycklarna du fick från Aspose. Detta steg säger i huvudsak till Aspose att du vill använda en mätlicens.
+ Byta ut`"your_public_key"`och`"your_private_key"`med de faktiska nycklarna du fick från Aspose. Detta steg säger i huvudsak till Aspose att du vill använda en mätlicens.
 
 ## Steg 3: Ladda ditt dokument
 

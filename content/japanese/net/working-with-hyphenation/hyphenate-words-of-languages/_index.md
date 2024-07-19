@@ -8,7 +8,7 @@ weight: 10
 url: /ja/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 
-このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のさまざまな言語の単語をハイフンで区切る方法について説明します。提供されている C# ソース コードについて説明し、独自のプロジェクトに実装する方法を示します。
+このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内のさまざまな言語の単語をハイフネーションする方法について説明します。提供されている C# ソース コードについて説明し、独自のプロジェクトに実装する方法を示します。
 
 開始するには、開発環境に Aspose.Words for .NET がインストールされ、構成されていることを確認してください。まだインストールしていない場合は、公式サイトからライブラリをダウンロードしてインストールしてください。
 
@@ -51,7 +51,7 @@ builder.InsertHyphenation();
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-これで、Aspose.Words for .NET を使用して、Word 文書内のさまざまな言語の単語をハイフンでつないで処理することができました。
+これで、Aspose.Words for .NET を使用して、Word 文書内のさまざまな言語の単語をハイフンで区切って処理することができました。
 
 ### Aspose.Words for .NET を使用した単語のハイフネーションのサンプル ソース コード
 

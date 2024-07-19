@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Rychlý a zadaný přístup k prvnímu řádku tabulky.
+     //Rychlý a zadaný přístup k prvnímu řádku tabulky.
      table.FirstRow?.Remove();
 
      // Rychlý a zadaný přístup k poslednímu řádku tabulky.

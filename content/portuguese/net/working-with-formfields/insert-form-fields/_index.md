@@ -14,7 +14,7 @@ Neste tutorial passo a passo, iremos orientá-lo sobre como inserir campos de fo
 
 ## Etapa 1: inicializando os objetos Document e DocumentBuilder
 
- Primeiro, inicialize o`Document` e`DocumentBuilder` objetos:
+ Primeiro, inicialize o`Document`e`DocumentBuilder` objetos:
 
 ```csharp
 Document doc = new Document();

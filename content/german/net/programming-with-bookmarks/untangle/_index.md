@@ -2,90 +2,121 @@
 title: Entwirren im Word-Dokument
 linktitle: Entwirren im Word-Dokument
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET verschachtelte Lesezeichen in benachbarten Tabellenzeilen in Word-Dokumenten entwirren.
+description: Meistern Sie das Entwirren von Lesezeichen in Word-Dokumenten mit Aspose.Words für .NET mit unserer detaillierten Schritt-für-Schritt-Anleitung. Perfekt für .NET-Entwickler.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/untangle/
 ---
+## Einführung
 
-In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion Untangle in der Aspose.Words-Bibliothek für .NET verwendet wird. Diese Funktion entwirrt verschachtelte Lesezeichen, die sich in benachbarten Tabellenzeilen befinden.
+Das programmgesteuerte Navigieren durch ein Word-Dokument kann ein bisschen wie das Suchen nach einem Weg durch ein Labyrinth sein. Möglicherweise stoßen Sie auf Lesezeichen, Überschriften, Tabellen und andere Elemente, die bearbeitet werden müssen. Heute tauchen wir in eine häufige, aber komplizierte Aufgabe ein: das Entwirren von Lesezeichen in einem Word-Dokument mithilfe von Aspose.Words für .NET. Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess und stellt sicher, dass Sie jeden Teil der Reise verstehen.
 
 ## Voraussetzungen
 
-- Grundkenntnisse der Sprache C#.
-- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
+Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-## Schritt 1: Dokument-Lesezeichen durchsuchen
+1.  Aspose.Words für .NET: Sie benötigen die Bibliothek Aspose.Words für .NET. Wenn Sie diese nicht haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Eine .NET-Entwicklungsumgebung wie Visual Studio.
+3. Grundkenntnisse in C#: Das Verständnis der Grundlagen von C# hilft Ihnen, den Codeausschnitten und Erklärungen zu folgen.
 
-Wir verwenden eine foreach-Schleife, um alle im Dokument vorhandenen Lesezeichen zu durchlaufen:
+## Namespaces importieren
+
+Stellen Sie zunächst sicher, dass Sie die erforderlichen Namespaces importieren. Dadurch können Sie auf die Klassen und Methoden zugreifen, die zum Bearbeiten von Word-Dokumenten mit Aspose.Words erforderlich sind.
 
 ```csharp
-foreach(Bookmark bookmark in doc.Range.Bookmarks)
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## Schritt 1: Laden Sie Ihr Dokument
+
+Der erste Schritt besteht darin, das Word-Dokument zu laden, mit dem Sie arbeiten möchten. Dieses Dokument enthält die Lesezeichen, die Sie entwirren müssen.
+
+Schritt 1 Überschrift: Das Dokument laden
+
+```csharp
+Document doc = new Document("path/to/your/document.docx");
+```
+
+In dieser Zeile laden wir das Dokument einfach von einem angegebenen Pfad. Stellen Sie sicher, dass der Pfad auf Ihr eigentliches Word-Dokument verweist.
+
+## Schritt 2: Durch Lesezeichen iterieren
+
+Als nächstes müssen wir alle Lesezeichen im Dokument durchlaufen. Dadurch können wir auf jedes Lesezeichen und seine Eigenschaften zugreifen.
+
+Schritt 2 Überschrift: Durch Lesezeichen iterieren
+
+```csharp
+foreach (Bookmark bookmark in doc.Range.Bookmarks)
 {
-     // Code zur Handhabung von Lesezeichen hier
+    // Jedes Lesezeichen verarbeiten
 }
 ```
 
-## Schritt 2: Übergeordnete Zeilen aus Lesezeichen abrufen
+ Hier verwenden wir ein`foreach` Schleife, um jedes Lesezeichen im Dokumentbereich zu durchlaufen. Diese Schleife ermöglicht es uns, jedes Lesezeichen einzeln zu behandeln.
 
- Wir benutzen das`GetAncestor` Methoden zum Abrufen der übergeordneten Zeilen der Start- und Endknoten des Lesezeichens:
+## Schritt 3: Anfangs- und Endzeilen der Lesezeichen identifizieren
+
+Für jedes Lesezeichen müssen wir die Zeilen finden, die den Anfang und das Ende des Lesezeichens enthalten. Dies ist entscheidend, um festzustellen, ob sich das Lesezeichen über benachbarte Zeilen erstreckt.
+
+Schritt 3 Überschrift: Zeilen identifizieren
 
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ```
 
-## Schritt 3: Verschachtelte Lesezeichen entwirren
+ In diesem Schritt verwenden wir die`GetAncestor` Methode, um die übergeordnete Zeile der Lesezeichen-Start- und Lesezeichen-Endknoten zu finden. Dies hilft uns, die genauen beteiligten Zeilen zu ermitteln.
 
-Wenn beide übergeordneten Zeilen gefunden werden und das Lesezeichen in benachbarten Zeilen beginnt und endet, verschieben wir den Endknoten des Lesezeichens an das Ende des letzten Absatzes der letzten Zelle in der obersten Zeile:
+## Schritt 4: Auf benachbarte Zeilen prüfen
+
+Bevor wir das Lesezeichenende verschieben, müssen wir sicherstellen, dass sich Anfang und Ende des Lesezeichens in benachbarten Zeilen befinden. Diese Voraussetzung ist wichtig, um das Lesezeichen richtig zu entwirren.
+
+Schritt 4 Überschrift: Zeilenangrenzung prüfen
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
-     row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+{
+    // Zeilen sind benachbart, fahren Sie mit dem Verschieben des Lesezeichenendes fort
+}
 ```
 
-### Beispiel-Quellcode für Untangle mit Aspose.Words für .NET
+ Hier fügen wir eine Bedingung hinzu, um zu prüfen, ob beide Zeilen gefunden werden und ob sie nebeneinander liegen.`NextSibling` -Eigenschaft hilft uns, die Nachbarschaft zu überprüfen.
 
-Hier ist das vollständige Quellcodebeispiel zum Entwirren verschachtelter Lesezeichen mit Aspose.Words für .NET:
+## Schritt 5: Verschieben Sie das Lesezeichenende
+
+Wenn die Bedingungen erfüllt sind, verschieben wir schließlich den Lesezeichen-Endknoten an das Ende des letzten Absatzes in der letzten Zelle der obersten Zeile. Dieser Schritt entwirrt das Lesezeichen effektiv.
+
+Schritt 5 Überschrift: Verschieben des Lesezeichenendes
 
 ```csharp
-
-	foreach (Bookmark bookmark in doc.Range.Bookmarks)
-	{
-		// Holen Sie sich die übergeordnete Zeile des Lesezeichens und des Lesezeichen-Endknotens.
-		Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-		Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-		// Wenn beide Zeilen in Ordnung sind und der Anfang und das Ende des Lesezeichens in benachbarten Zeilen liegen,
-		// Verschieben Sie den Lesezeichen-Endknoten an das Ende des letzten Absatzes in der letzten Zelle der obersten Zeile.
-		if (row1 != null && row2 != null && row1.NextSibling == row2)
-			row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-	}
-
+row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
+
+ In diesem Schritt verwenden wir die`AppendChild` Methode zum Verschieben des Lesezeichen-Endknotens. Indem wir ihn an den letzten Absatz der letzten Zelle der obersten Zeile anhängen, stellen wir sicher, dass das Lesezeichen richtig entwirrt wird.
 
 ## Abschluss
 
-In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Untangle-Funktion von Aspose.Words für .NET verwendet wird. Wir haben eine Schritt-für-Schritt-Anleitung befolgt, um verschachtelte Lesezeichen in benachbarten Tabellenzeilen zu entwirren.
+Das Entwirren von Lesezeichen in einem Word-Dokument mit Aspose.Words für .NET kann entmutigend erscheinen, aber durch die Aufteilung in überschaubare Schritte wird der Prozess viel klarer. Wir haben das Laden eines Dokuments, das Durchlaufen von Lesezeichen, das Identifizieren relevanter Zeilen, das Überprüfen auf Aneinanderreihung und schließlich das Verschieben des Lesezeichen-Endknotens durchlaufen. Mit dieser Anleitung sollten Sie Lesezeichen in Ihren Word-Dokumenten effektiver handhaben können.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Funktioniert die Entwirrungsfunktion nur mit verschachtelten Lesezeichen in benachbarten Tabellenzeilen?
+### Kann ich Aspose.Words für .NET verwenden, um außer Lesezeichen auch andere Elemente zu bearbeiten?
 
-A: Ja, die Funktion „Entwirren“ ist speziell dafür gedacht, verschachtelte Lesezeichen zu entwirren, die sich in benachbarten Tabellenzeilen befinden. Wenn sich die Lesezeichen nicht in benachbarten Zeilen befinden, ist diese Funktion nicht anwendbar.
+Ja, Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie eine breite Palette von Dokumentelementen bearbeiten können, darunter Absätze, Tabellen, Bilder und mehr.
 
-#### F: Wie kann ich verschachtelte Lesezeichen in meinem Word-Dokument identifizieren?
+### Was passiert, wenn das Lesezeichen mehr als zwei Zeilen umfasst?
 
-A: Sie können verschachtelte Lesezeichen identifizieren, indem Sie die Lesezeichen im Dokument durchlaufen und prüfen, ob sich das Start- und das Endlesezeichen in benachbarten Tabellenzeilen befinden. Sie können den in diesem Artikel bereitgestellten Quellcode als Ausgangspunkt verwenden, um diese Funktion zu implementieren.
+In diesem Tutorial geht es um Lesezeichen, die sich über zwei nebeneinanderliegende Zeilen erstrecken. In komplexeren Fällen wäre zusätzliche Logik erforderlich, um Lesezeichen zu verarbeiten, die sich über mehrere Zeilen oder Abschnitte erstrecken.
 
-#### F: Ändert die Entschlüsselungsfunktion den Inhalt des Originaldokuments?
+### Gibt es eine Testversion von Aspose.Words für .NET?
 
-A: Ja, die Funktion „Entwirren“ ändert das Originaldokument, indem sie den Endknoten des Lesezeichens an das Ende des letzten Absatzes der letzten Zelle in der obersten Zeile verschiebt. Stellen Sie sicher, dass Sie eine Sicherungskopie des Dokuments speichern, bevor Sie diese Funktion anwenden.
+ Ja, du kannst[Kostenlose Testversion herunterladen](https://releases.aspose.com/) von der Aspose-Website, um die Funktionen der Bibliothek zu erkunden.
 
-#### F: Wie kann ich verschachtelte Lesezeichen in anderen Arten von Dokumentelementen, beispielsweise Abschnitten oder Absätzen, entwirren?
+### Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?
 
-A: Die in diesem Artikel vorgestellte Untangle-Funktion ist speziell dafür gedacht, verschachtelte Lesezeichen in benachbarten Tabellenzeilen zu entwirren. Wenn Sie verschachtelte Lesezeichen in anderen Dokumentelementen entwirren möchten, müssen Sie den Code entsprechend anpassen und geeignete Methoden verwenden, um auf die gewünschten Elemente zuzugreifen.
+ Besuchen Sie die[Aspose-Supportforum](https://forum.aspose.com/c/words/8) für Hilfe bei allen Problemen oder Fragen, die Sie haben.
 
-#### F: Gibt es andere Methoden, um verschachtelte Lesezeichen in einem Word-Dokument mit Aspose.Words für .NET zu entwirren?
+### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
 
- A: Die in diesem Artikel vorgestellte Methode ist eine gängige Methode zum Entwirren verschachtelter Lesezeichen in benachbarten Tabellenzeilen. Abhängig von den spezifischen Anforderungen Ihres Projekts kann es jedoch auch andere Ansätze oder Techniken geben. Sie können sich die[Aspose.Words für .NET API-Referenzen](https://reference.aspose.com/words/net/) um die verfügbaren Funktionen weiter zu erkunden.
+ Ja, Aspose.Words für .NET erfordert eine Lizenz für die volle Funktionalität. Sie können eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy) oder fordern Sie ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license) zu Auswertungszwecken.

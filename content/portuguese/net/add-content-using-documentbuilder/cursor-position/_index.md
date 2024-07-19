@@ -46,7 +46,7 @@ using Aspose.Words.Tables;
 
 ### Inicialize o documento
 
- Vamos começar criando um novo documento do Word. Usaremos o`Document` e`DocumentBuilder` aulas de Aspose.Words.
+ Vamos começar criando um novo documento do Word. Usaremos o`Document`e`DocumentBuilder` aulas de Aspose.Words.
 
 ```csharp
 Document doc = new Document();
@@ -114,7 +114,7 @@ E aí está! Uma maneira simples, mas poderosa de manipular a posição do curso
 
 ## Conclusão
 
-isso é um embrulho! Exploramos como gerenciar as posições do cursor em documentos do Word com Aspose.Words for .NET. Desde a configuração do seu projeto até a manipulação do cursor e adição de texto, agora você tem uma base sólida para construir. Continue experimentando e veja quais outros recursos interessantes você pode descobrir nesta biblioteca robusta. Boa codificação!
+isso é um embrulho! Exploramos como gerenciar as posições do cursor em documentos do Word com Aspose.Words for .NET. Desde a configuração do seu projeto até a manipulação do cursor e a adição de texto, agora você tem uma base sólida para construir. Continue experimentando e veja quais outros recursos interessantes você pode descobrir nesta biblioteca robusta. Boa codificação!
 
 ## Perguntas frequentes
 

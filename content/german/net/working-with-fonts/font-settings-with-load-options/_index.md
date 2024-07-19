@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Schritt 2: Ladeoptionen mit Schriftarteinstellungen konfigurieren
- Als nächstes erstellen wir eine Instanz von`LoadOptions` und legen Sie die Schrifteinstellungen fest, indem Sie eine neue Instanz von`FontSettings` und ordnet es zu`loadOptions.FontSettings`.
+ Als nächstes erstellen wir eine Instanz von`LoadOptions`und legen Sie die Schrifteinstellungen fest, indem Sie eine neue Instanz von`FontSettings` und ordnet es zu`loadOptions.FontSettings`.
 
 ```csharp
 // Ladeoptionen mit Schriftarteinstellungen konfigurieren
@@ -57,7 +57,7 @@ In diesem Tutorial haben wir gesehen, wie man Ladeoptionen mit Schrifteinstellun
 
 #### F: Wie kann ich beim Laden eines Dokuments in Aspose.Words eine Standardschriftart angeben?
 
-A: Um eine Standardschriftart beim Laden eines Dokuments in Aspose.Words festzulegen, können Sie die`LoadOptions` Klasse und legen Sie die`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
+ A: Um eine Standardschriftart beim Laden eines Dokuments in Aspose.Words festzulegen, können Sie die`LoadOptions` Klasse und legen Sie die`DefaultFontName` -Eigenschaft auf den Namen der gewünschten Schriftart.
 
 #### F: Welche anderen Schrifteinstellungen kann ich mit Ladeoptionen in Aspose.Words angeben?
 
@@ -69,4 +69,4 @@ A: Wenn die angegebene Standardschriftart beim Laden des Dokuments in Aspose.Wor
 
 #### F: Kann ich für jedes hochgeladene Dokument unterschiedliche Schrifteinstellungen festlegen?
 
- A: Ja, Sie können für jedes geladene Dokument unterschiedliche Schrifteinstellungen festlegen, indem Sie separate Instanzen des`LoadOptions`Klasse und legen Sie für jede Instanz die gewünschten Schrifteinstellungen fest. Auf diese Weise können Sie die Schriftdarstellung für jedes Dokument unabhängig anpassen.
+ A: Ja, Sie können für jedes geladene Dokument unterschiedliche Schrifteinstellungen festlegen, indem Sie separate Instanzen des`LoadOptions` Klasse und legen Sie für jede Instanz die gewünschten Schrifteinstellungen fest. Auf diese Weise können Sie die Schriftdarstellung für jedes Dokument unabhängig anpassen.

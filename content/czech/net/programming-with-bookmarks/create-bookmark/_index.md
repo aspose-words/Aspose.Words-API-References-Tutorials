@@ -2,196 +2,135 @@
 title: Vytvořit záložku v dokumentu aplikace Word
 linktitle: Vytvořit záložku v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se vytvářet záložky v dokumentu aplikace Word a určit úrovně náhledu záložek v PDF pomocí Aspose.Words for .NET.
+description: Naučte se vytvářet záložky v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem. Ideální pro navigaci a organizaci dokumentů.
 type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/create-bookmark/
 ---
+## Úvod
 
-V tomto článku prozkoumáme zdrojový kód C# výše, abychom pochopili, jak používat funkci Create Bookmark v knihovně Aspose.Words for .NET. Tato funkce umožňuje vytvářet záložky v dokumentu a určit úrovně náhledu záložek ve výstupním souboru PDF.
+Vytváření záložek v dokumentu aplikace Word může změnit hru, zvláště když chcete bez námahy procházet velkými dokumenty. Dnes si projdeme proces vytváření záložek pomocí Aspose.Words for .NET. Tento tutoriál vás provede krok za krokem a zajistí, že porozumíte každé části procesu. Takže, pojďme se rovnou ponořit!
 
 ## Předpoklady
 
-- Základní znalost jazyka C#.
-- Vývojové prostředí .NET s nainstalovanou knihovnou Aspose.Words.
+Než začneme, musíte mít následující:
 
-## Krok 1: Vytvoření dokumentu a generátoru
+1.  Aspose.Words for .NET Library: Stáhněte a nainstalujte z[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
+3. Základní znalost C#: Pochopení základních pojmů programování v C#.
 
- Před vytvořením záložek musíme vytvořit dokument a tvůrce dokumentů pomocí`Document` a`DocumentBuilder` objekty:
+## Importovat jmenné prostory
+
+Chcete-li pracovat s Aspose.Words pro .NET, musíte importovat potřebné jmenné prostory:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Krok 1: Nastavte Document a DocumentBuilder
+
+Inicializujte dokument
+
+Nejprve musíme vytvořit nový dokument a inicializovat jej`DocumentBuilder`. Toto je výchozí bod pro přidávání obsahu a záložek do vašeho dokumentu.
+
+```csharp
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Vytvoření hlavní záložky
+ Vysvětlení: The`Document` objekt je vaše plátno. The`DocumentBuilder` je jako vaše pero, které vám umožňuje psát obsah a vytvářet záložky v dokumentu.
 
- Používáme`StartBookmark` způsob spuštění hlavní záložky a`EndBookmark` způsob, jak to ukončit. Mezitím můžeme přidat text a další záložky:
+## Krok 2: Vytvořte hlavní záložku
+
+Spuštění a ukončení hlavní záložky
+
+Chcete-li vytvořit záložku, musíte určit počáteční a koncový bod. Zde vytvoříme záložku s názvem „Moje záložka“.
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-// Zde přidejte další záložky nebo text.
-
-builder. EndBookmark("My Bookmark");
 ```
 
-## Krok 3: Vytvoření vnořených záložek
+ Vysvětlení: The`StartBookmark` metoda označuje začátek záložky a`Writeln` přidá text do záložky.
 
- Můžeme také vytvořit vnořené záložky uvnitř hlavní záložky. Používáme to samé`StartBookmark` a`EndBookmark` metody pro vytvoření a ukončení vnořených záložek:
+## Krok 3: Vytvořte vnořenou záložku
+
+Přidat vnořenou záložku do hlavní záložky
+
+Záložky můžete vkládat do jiných záložek. Zde přidáme „Vnořená záložka“ do „Moje záložka“.
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## Krok 4: Určení úrovní náhledu záložek ve výstupním souboru PDF
+ Vysvětlení: Vnořování záložek umožňuje strukturovanější a hierarchické uspořádání obsahu. The`EndBookmark` metoda zavře aktuální záložku.
 
- Používáme`PdfSaveOptions` objekt k určení úrovní náhledu záložek ve výstupním souboru PDF. Používáme`BookmarksOutlineLevels` vlastnictví
+## Krok 4: Přidejte text mimo vnořenou záložku
 
-  pro přidání hlavních záložek a vnořených záložek s jejich příslušnými úrovněmi:
+Pokračujte v přidávání obsahu
+
+Po vnořené záložce můžeme pokračovat v přidávání dalšího obsahu v rámci hlavní záložky.
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+Vysvětlení: Tím zajistíte, že hlavní záložka bude zahrnovat vnořenou záložku i další text.
+
+## Krok 5: Nakonfigurujte možnosti uložení PDF
+
+Nastavte možnosti ukládání PDF pro záložky
+
+Při ukládání dokumentu jako PDF můžeme nakonfigurovat možnosti tak, aby zahrnovaly záložky.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+ Vysvětlení: The`PdfSaveOptions` třída umožňuje určit, jak se má dokument uložit jako PDF. The`BookmarksOutlineLevels` vlastnost definuje hierarchii záložek v PDF.
+
+## Krok 6: Uložte dokument
+
+Uložte dokument jako PDF
+
+Nakonec uložte dokument se zadanými možnostmi.
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### Příklad zdrojového kódu pro Create Bookmark using Aspose.Words for .NET
-
-Zde je úplný ukázkový zdrojový kód, který demonstruje vytváření záložek pomocí Aspose.Words pro .NET:
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+ Vysvětlení: The`Save` metoda uloží dokument v určeném formátu a umístění. PDF bude nyní obsahovat záložky, které jsme vytvořili.
 
 ## Závěr
 
-V tomto článku jsme prozkoumali zdrojový kód C#, abychom pochopili, jak používat funkci Create Bookmark Aspose.Words for .NET. Postupovali jsme podle podrobného průvodce vytvářením záložek v dokumentu a určením úrovní náhledu záložek ve výstupním souboru PDF.
+Vytváření záložek v dokumentu aplikace Word pomocí Aspose.Words for .NET je přímočaré a nesmírně užitečné pro navigaci a organizaci dokumentů. Ať už generujete zprávy, vytváříte elektronické knihy nebo spravujete velké dokumenty, záložky vám usnadní život. Postupujte podle kroků uvedených v tomto tutoriálu a během chvilky budete mít soubor PDF se záložkou.
 
-### Nejčastější dotazy
+## FAQ
 
-#### Otázka: Jaké jsou předpoklady pro použití funkce "Vytvořit záložky" v Aspose.Words pro .NET?
+### Mohu vytvořit více záložek na různých úrovních?
 
-A: Chcete-li použít funkci "Vytvořit záložky" v Aspose.Words pro .NET, musíte mít základní znalosti jazyka C#. Potřebujete také vývojové prostředí .NET s nainstalovanou knihovnou Aspose.Words.
+Absolutně! Při ukládání dokumentu jako PDF můžete vytvořit libovolný počet záložek a definovat jejich hierarchické úrovně.
 
-#### Otázka: Jak vytvořit dokument v Aspose.Words pro .NET?
+### Jak aktualizuji text záložky?
 
- A: Chcete-li vytvořit dokument v Aspose.Words pro .NET, můžete použít`Document` třída. Zde je ukázkový kód:
+ K záložce můžete přejít pomocí`DocumentBuilder.MoveToBookmark` a poté text aktualizujte.
 
-```csharp
-Document doc = new Document();
-```
+### Je možné smazat záložku?
 
-#### Otázka: Jak vytvořit hlavní záložku v dokumentu pomocí Aspose.Words for .NET?
+ Ano, záložku můžete odstranit pomocí`Bookmarks.Remove` zadáním názvu záložky.
 
- A: Chcete-li vytvořit hlavní záložku v dokumentu pomocí Aspose.Words pro .NET, můžete použít`StartBookmark` metodu pro spuštění záložky, přidání textu nebo jiných záložek dovnitř a poté použijte` EndBookmark` abych to ukončil. Zde je ukázkový kód:
+### Mohu vytvářet záložky v jiných formátech než PDF?
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+Ano, Aspose.Words podporuje záložky v různých formátech, včetně DOCX, HTML a EPUB.
 
-#### Otázka: Jak vytvořit vnořenou záložku uvnitř hlavní záložky pomocí Aspose.Words for .NET?
+### Jak mohu zajistit, aby se záložky v PDF zobrazovaly správně?
 
- A: Chcete-li vytvořit vnořenou záložku uvnitř hlavní záložky pomocí Aspose.Words pro .NET, můžete použít stejný`StartBookmark` a`EndBookmark` metody pro spuštění a ukončení vnořené záložky. Zde je ukázkový kód:
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### Otázka: Jak určit úrovně náhledu záložek ve výstupním PDF pomocí Aspose.Words for .NET?
-
- Odpověď: Chcete-li určit úrovně náhledu záložek ve výstupním PDF pomocí Aspose.Words pro .NET, můžete použít`PdfSaveOptions` třída a`BookmarksOutlineLevels` vlastnictví. Můžete přidat hlavní záložky a vnořené záložky s jejich příslušnými úrovněmi. Zde je ukázkový kód:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### Otázka: Jak uložit dokument po vytvoření záložek pomocí Aspose.Words for .NET?
-
- Odpověď: Chcete-li uložit dokument po vytvoření záložek pomocí Aspose.Words pro .NET, můžete použít`Save` metoda`Document` objekt určující cestu k cílovému souboru. Zde je ukázkový kód:
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### Otázka: Jak určit úrovně náhledu záložek ve výstupním PDF pomocí Aspose.Words for .NET?
-
- Odpověď: Chcete-li určit úrovně náhledu záložek ve výstupním PDF pomocí Aspose.Words pro .NET, můžete použít`PdfSaveOptions` třída a`BookmarksOutlineLevels` vlastnictví. Můžete přidat hlavní záložky a vnořené záložky s jejich příslušnými úrovněmi. Zde je ukázkový kód:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### Otázka: Jak vytvořit vnořené záložky uvnitř hlavní záložky pomocí Aspose.Words for .NET?
-
- A: Chcete-li vytvořit vnořené záložky uvnitř hlavní záložky pomocí Aspose.Words pro .NET, můžete použít stejné`StartBookmark` a`EndBookmark` metody pro spuštění a ukončení vnořených záložek. Nezapomeňte zadat nadřazenou záložku jako parametr při volání`StartBookmark` metoda. Zde je ukázkový kód:
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### Otázka: Jak přidat text do záložky pomocí Aspose.Words for .NET?
-
- A: Chcete-li přidat text do záložky pomocí Aspose.Words pro .NET, můžete použít`Write` metoda`DocumentBuilder`objekt určující text, který se má přidat. Zde je ukázkový kód:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### Otázka: Jak vytvořit hlavní záložku v dokumentu pomocí Aspose.Words for .NET?
-
- A: Chcete-li vytvořit hlavní záložku v dokumentu pomocí Aspose.Words pro .NET, můžete použít`StartBookmark` způsob spuštění záložky a`EndBookmark` způsob, jak to ukončit. Zde je ukázkový kód:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+ Ujistěte se, že definujete`BookmarksOutlineLevels` správně v`PdfSaveOptions`. Tím zajistíte, že záložky budou zahrnuty do obrysu PDF.

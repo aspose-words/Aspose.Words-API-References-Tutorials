@@ -171,7 +171,7 @@ public class DocumentMerger {
 
 - Gérez toujours les exceptions lors de la fusion de documents pour éviter les erreurs inattendues.
 
-- Vérifiez régulièrement les mises à jour et utilisez la dernière version d'Aspose.Words for Java pour bénéficier de corrections de bugs et de nouvelles fonctionnalités.
+- Vérifiez régulièrement les mises à jour et utilisez la dernière version d'Aspose.Words for Java pour bénéficier de corrections de bogues et de nouvelles fonctionnalités.
 
 - Testez la fusion de documents avec différents types et tailles de documents pour garantir des performances optimales.
 

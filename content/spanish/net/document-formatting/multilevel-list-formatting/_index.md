@@ -125,7 +125,7 @@ Esto guarda su documento bellamente formateado con listas multinivel.
  Sí, puedes continuar numerando usando el`ListFormat.List` propiedad para vincular a una lista existente.
 
 ### ¿Cómo cambio el nivel de sangría dinámicamente?
- Puede cambiar dinámicamente el nivel de sangría utilizando`ListIndent` y`ListOutdent` métodos según sea necesario.
+ Puede cambiar dinámicamente el nivel de sangría utilizando`ListIndent`y`ListOutdent` métodos según sea necesario.
 
 ### ¿Puedo crear listas multinivel en otros formatos de documentos como PDF?
 Sí, Aspose.Words admite guardar documentos en varios formatos, incluido PDF, manteniendo el formato.

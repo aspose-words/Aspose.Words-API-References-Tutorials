@@ -2,122 +2,150 @@
 title: الوصول والتحقق من التوقيع في مستند Word
 linktitle: الوصول والتحقق من التوقيع في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية الوصول إلى التوقيعات الرقمية والتحقق منها في مستند Word باستخدام Aspose.Words for .NET.
+description: قم بالوصول إلى التوقيعات الرقمية والتحقق منها في مستندات Word باستخدام Aspose.Words for .NET باستخدام هذا الدليل الشامل خطوة بخطوة. ضمان صحة الوثيقة دون عناء.
 type: docs
 weight: 10
 url: /ar/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
-في هذا البرنامج التعليمي، سنرشدك خلال خطوات استخدام ميزة الوصول والتحقق من التوقيع في Aspose.Words for .NET. تتيح لك هذه الميزة الوصول إلى التوقيعات الرقمية في مستند Word والتحقق من صحتها. اتبع الخطوات التالية:
+## مقدمة
 
-## الخطوة 1: تحميل المستند والوصول إلى التوقيعات
+مرحبًا بكم، أيها الزملاء المتحمسون للتكنولوجيا! هل وجدت نفسك في موقف تحتاج فيه إلى الوصول إلى التوقيعات الرقمية والتحقق منها في مستند Word ولكن ليس لديك أي فكرة من أين تبدأ؟ حسنًا، أنت محظوظ! اليوم، نحن نتعمق في عالم Aspose.Words for .NET الرائع، وهي مكتبة قوية تجعل التعامل مع مستندات Word أمرًا سهلاً. سنرشدك خلال العملية خطوة بخطوة، لذا بحلول نهاية هذا الدليل، ستكون محترفًا في التحقق من التوقيعات الرقمية في مستندات Word. هيا بنا نبدأ!
 
-ابدأ بتحميل المستند الذي يحتوي على التوقيعات الرقمية:
+## المتطلبات الأساسية
+
+قبل أن نتعمق في التفاصيل الجوهرية، هناك بعض الأشياء التي ستحتاج إلى توفرها:
+
+1. Visual Studio: تأكد من تثبيت Visual Studio على جهازك. هذا هو المكان الذي ستكتب فيه التعليمات البرمجية الخاصة بك وتقوم بتشغيلها.
+2.  Aspose.Words لـ .NET: ستحتاج إلى تثبيت Aspose.Words لـ .NET. يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/) . لا تنسى أن تحصل على النسخة التجريبية المجانية الخاصة بك[هنا](https://releases.aspose.com/) إذا لم تكن قد فعلت ذلك بالفعل!
+3. مستند Word موقع رقميًا: احصل على مستند Word موقع رقميًا بالفعل. هذا هو الملف الذي ستعمل معه للتحقق من التوقيعات.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، فلنستورد مساحات الأسماء الضرورية. ستسمح لك مساحات الأسماء هذه باستخدام ميزات Aspose.Words في مشروعك.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.DigitalSignatures;
+```
+
+حسنًا، دعنا نقسم هذا إلى خطوات يمكن التحكم فيها. سترشدك كل خطوة خلال جزء معين من العملية. مستعد؟ دعنا نذهب!
+
+## الخطوة 1: قم بإعداد مشروعك
+
+قبل أن تتمكن من التحقق من التوقيع الرقمي، تحتاج إلى إعداد مشروعك في Visual Studio. إليك الطريقة:
+
+### إنشاء مشروع جديد
+
+1. افتح فيجوال ستوديو.
+2. انقر على إنشاء مشروع جديد.
+3. حدد تطبيق وحدة التحكم (.NET Core) أو تطبيق وحدة التحكم (.NET Framework)، حسب تفضيلاتك.
+4. انقر فوق "التالي"، وقم بتسمية مشروعك، ثم انقر فوق "إنشاء".
+
+### قم بتثبيت Aspose.Words لـ .NET
+
+1. في Solution Explorer، انقر بزر الماوس الأيمن على اسم مشروعك وحدد Manage NuGet Packages.
+2. في NuGet Package Manager، ابحث عن Aspose.Words.
+3. انقر فوق تثبيت لإضافته إلى مشروعك.
+
+## الخطوة 2: قم بتحميل مستند Word الموقع رقميًا
+
+الآن بعد أن تم إعداد مشروعك، فلنقم بتحميل مستند Word الموقع رقميًا.
+
+```csharp
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-## الخطوة 2: تصفح التوقيعات الرقمية
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى دليل المستندات الخاص بك. يقوم مقتطف الكود هذا بتهيئة ملف جديد`Document` الكائن ويقوم بتحميل مستند Word الموقع.
 
-استخدم حلقة للتنقل عبر كافة التوقيعات الرقمية في المستند:
+## الخطوة 3: الوصول إلى التوقيعات الرقمية
+
+بعد تحميل المستند، حان الوقت للوصول إلى التوقيعات الرقمية.
 
 ```csharp
 foreach (DigitalSignature signature in doc.DigitalSignatures)
 {
-	// الوصول إلى معلومات التوقيع
-	Console.WriteLine("* Signature Found *");
-	Console.WriteLine("Is valid: " + signature.IsValid);
-	// هذه الخاصية متاحة في مستندات MS Word فقط.
-	Console.WriteLine("Reason for signing: " + signature.Comments); 
-	Console.WriteLine("Time of signing: " + signature.SignTime);
-	Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-	Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-	Console.WriteLine();
+    Console.WriteLine("* Signature Found *");
+    Console.WriteLine("Is valid: " + signature.IsValid);
+    Console.WriteLine("Reason for signing: " + signature.Comments); 
+    Console.WriteLine("Time of signing: " + signature.SignTime);
+    Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+    Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+    Console.WriteLine();
 }
 ```
 
-تأكد من تخصيص رسائل العرض وفقًا لاحتياجاتك.
+يتكرر هذا الرمز خلال كل توقيع رقمي في المستند ويطبع تفاصيل مختلفة حول التوقيع. دعونا نحلل ما يفعله كل جزء:
 
-### مثال على التعليمات البرمجية المصدر للوصول والتحقق من التوقيع باستخدام Aspose.Words لـ .NET
+1. تم العثور على التوقيع: يشير إلى أنه تم العثور على التوقيع.
+2. صالح: يتحقق مما إذا كان التوقيع صالحًا.
+3. سبب التوقيع: يعرض سبب التوقيع، إن وجد.
+4. وقت التوقيع: يعرض الطابع الزمني لوقت توقيع المستند.
+5. اسم الموضوع: يسترد اسم الموضوع من الشهادة.
+6. اسم المُصدر: استرداد اسم المُصدر من الشهادة.
 
-فيما يلي الكود المصدري الكامل للوصول والتحقق من التوقيع باستخدام Aspose.Words for .NET:
+## الخطوة 4: قم بتشغيل التعليمات البرمجية الخاصة بك
+
+بعد إعداد كل شيء، حان الوقت لتشغيل التعليمات البرمجية الخاصة بك ورؤية النتائج.
+
+
+1. اضغط على F5 أو انقر فوق الزر "ابدأ" في Visual Studio لتشغيل البرنامج.
+2. إذا تم توقيع المستند رقميًا، فسترى تفاصيل التوقيع مطبوعة في وحدة التحكم.
+
+## الخطوة 5: التعامل مع الأخطاء المحتملة
+
+من الجيد دائمًا التعامل مع أي أخطاء محتملة قد تحدث. دعونا نضيف بعض معالجة الأخطاء الأساسية إلى التعليمات البرمجية لدينا.
 
 ```csharp
-	
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Digitally signed.docx");
+try
+{
+    // المسار إلى دليل المستندات.
+    string dataDir = "YOUR DOCUMENT DIRECTORY";
+    Document doc = new Document(dataDir + "Digitally signed.docx");
 
-	foreach (DigitalSignature signature in doc.DigitalSignatures)
-	{
-		Console.WriteLine("* Signature Found *");
-		Console.WriteLine("Is valid: " + signature.IsValid);
-		// هذه الخاصية متاحة في مستندات MS Word فقط.
-		Console.WriteLine("Reason for signing: " + signature.Comments); 
-		Console.WriteLine("Time of signing: " + signature.SignTime);
-		Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-		Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-		Console.WriteLine();
-	}
-
+    foreach (DigitalSignature signature in doc.DigitalSignatures)
+    {
+        Console.WriteLine("* Signature Found *");
+        Console.WriteLine("Is valid: " + signature.IsValid);
+        Console.WriteLine("Reason for signing: " + signature.Comments); 
+        Console.WriteLine("Time of signing: " + signature.SignTime);
+        Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+        Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+        Console.WriteLine();
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine("An error occurred: " + ex.Message);
+}
 ```
 
-باتباع هذه الخطوات، ستتمكن بسهولة من الوصول إلى التوقيعات الرقمية والتحقق منها في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+سيؤدي هذا إلى اكتشاف أي استثناءات قد تحدث وطباعة رسالة خطأ.
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، اكتشفنا ميزة الوصول إلى التوقيعات الرقمية والتحقق منها في مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات المقدمة، يمكنك بسهولة تحميل مستند والوصول إلى التوقيعات الرقمية الخاصة به والتحقق من صحتها. توفر القدرة على الوصول إلى التوقيعات الرقمية والتحقق منها طريقة لضمان سلامة وأصالة مستندات Word الخاصة بك. يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لمعالجة الكلمات باستخدام التوقيعات الرقمية، مما يسمح لك بأتمتة عملية التحقق وتعزيز أمان مستنداتك.
+وهناك لديك! لقد نجحت في الوصول إلى التوقيعات الرقمية والتحقق منها في مستند Word باستخدام Aspose.Words for .NET. انها ليست شاقة كما يبدو، أليس كذلك؟ من خلال هذه الخطوات، يمكنك التعامل بثقة مع التوقيعات الرقمية في مستندات Word الخاصة بك، مما يضمن صحتها وسلامتها. ترميز سعيد!
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: ما هي التوقيعات الرقمية في مستند Word؟
+### هل يمكنني استخدام Aspose.Words لـ .NET لإضافة التوقيعات الرقمية إلى مستند Word؟
 
-ج: التوقيعات الرقمية في مستند Word هي توقيعات إلكترونية توفر طريقة للتحقق من سلامة المستند وأصله. ويتم إنشاؤها باستخدام الشهادات الرقمية وخوارزميات التشفير، مما يسمح للمستلمين بالتحقق من أن المستند لم يتم تغييره وأنه يأتي من مصدر موثوق به.
+نعم، يمكنك استخدام Aspose.Words for .NET لإضافة التوقيعات الرقمية إلى مستندات Word. توفر المكتبة ميزات شاملة لإضافة التوقيعات الرقمية والتحقق منها.
 
-#### س: كيف يمكنني الوصول إلى التوقيعات الرقمية في مستند Word باستخدام Aspose.Words for .NET؟
+### ما أنواع التوقيعات الرقمية التي يمكن لـ Aspose.Words for .NET التحقق منها؟
 
-ج: للوصول إلى التوقيعات الرقمية في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك اتباع الخطوات التالية:
-1.  قم بتحميل المستند باستخدام`Document` class وحدد المسار إلى ملف المستند.
-2.  استخدم حلقة للتكرار من خلال`DigitalSignatures` جمع الوثيقة. يمثل كل تكرار توقيعًا رقميًا.
+يمكن لـ Aspose.Words لـ .NET التحقق من التوقيعات الرقمية في ملفات DOCX التي تستخدم شهادات X.509.
 
-#### س: ما هي المعلومات التي يمكنني الوصول إليها من التوقيع الرقمي في مستند Word؟
+### هل يتوافق Aspose.Words for .NET مع كافة إصدارات Microsoft Word؟
 
-ج: من التوقيع الرقمي في مستند Word، يمكنك الوصول إلى معلومات متنوعة، مثل:
-- الصلاحية: التحقق من صحة التوقيع.
-- التعليقات: احصل على سبب التوقيع الذي حدده الموقع.
-- وقت التوقيع: احصل على الوقت الذي تم فيه توقيع المستند.
-- اسم الموضوع: استرداد اسم الموقع أو موضوع الشهادة.
-- اسم المُصدر: احصل على اسم مُصدر الشهادة.
+يدعم Aspose.Words for .NET جميع إصدارات مستندات Microsoft Word، بما في ذلك DOC وDOCX وRTF والمزيد.
 
-#### س: هل يمكنني التحقق من صحة التوقيع الرقمي في مستند Word باستخدام Aspose.Words for .NET؟
+### كيف يمكنني الحصول على ترخيص مؤقت لـ Aspose.Words لـ .NET؟
 
- ج: نعم، يمكنك التحقق من صحة التوقيع الرقمي في مستند Word باستخدام Aspose.Words for .NET. من خلال الوصول إلى`IsValid` ملكية`DigitalSignature` الكائن، يمكنك تحديد ما إذا كان التوقيع صالحًا أم لا.
+ يمكنك الحصول على ترخيص مؤقت لـ Aspose.Words لـ .NET من[هنا](https://purchase.aspose.com/temporary-license/). يتيح لك هذا تجربة الميزات الكاملة للمكتبة دون أي قيود.
 
-#### س: كيف يمكنني التحقق من صحة التوقيعات الرقمية في مستند Word باستخدام Aspose.Words for .NET؟
+### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words لـ .NET؟
 
-ج: للتحقق من صحة التوقيعات الرقمية في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك اتباع الخطوات التالية:
-1.  الوصول إلى`DigitalSignatures` جمع الوثيقة.
-2.  كرر من خلال كل`DigitalSignature` كائن في المجموعة.
-3.  استخدم ال`IsValid` ملكية`DigitalSignature` كائن للتحقق مما إذا كان التوقيع صالحًا.
-
-#### س: هل يمكنني استرداد تعليقات الموقّع أو سبب التوقيع من توقيع رقمي في مستند Word؟
-
-ج: نعم، يمكنك استرداد تعليقات الموقع أو سبب التوقيع من التوقيع الرقمي في مستند Word. ال`Comments` ملكية`DigitalSignature` يوفر الكائن إمكانية الوصول إلى التعليقات المحددة بواسطة الموقع أثناء عملية التوقيع.
-
-#### س: ما نوع المستندات التي تدعمها ميزة التحقق من التوقيع في Aspose.Words for .NET؟
-
-ج: تدعم ميزة التحقق من التوقيع في Aspose.Words for .NET التحقق من التوقيعات الرقمية في مستندات Word بتنسيق ملف DOCX. يمكنك استخدام هذه الميزة للتحقق من التوقيعات في ملفات DOCX.
-
-#### س: كيف يمكنني الوصول إلى تفاصيل الشهادة الخاصة بالتوقيع الرقمي في مستند Word باستخدام Aspose.Words for .NET؟
-
- ج: للوصول إلى تفاصيل الشهادة الخاصة بالتوقيع الرقمي في مستند Word باستخدام Aspose.Words for .NET، يمكنك الوصول إلى`CertificateHolder` ملكية`DigitalSignature` هدف. من`CertificateHolder` الكائن، يمكنك استرداد تفاصيل مختلفة للشهادة، مثل اسم الموضوع واسم المُصدر.
-
-#### س: هل يمكنني تخصيص عرض أو معالجة التوقيعات الرقمية في مستند Word باستخدام Aspose.Words for .NET؟
-
- ج: نعم، يمكنك تخصيص عرض أو معالجة التوقيعات الرقمية في مستند Word باستخدام Aspose.Words for .NET. من خلال الوصول إلى خصائص وطرق`DigitalSignature` الكائن، يمكنك استخراج المعلومات المطلوبة، أو إجراء عمليات تحقق إضافية، أو دمج عملية التحقق من التوقيع في سير عمل التطبيق الخاص بك.
-
-#### س: هل من الممكن التحقق من التوقيعات الرقمية المتعددة في مستند Word باستخدام Aspose.Words لـ .NET؟
-
- ج: نعم، من الممكن التحقق من التوقيعات الرقمية المتعددة في مستند Word باستخدام Aspose.Words for .NET. من خلال التكرار من خلال`DigitalSignatures` عند جمع المستند، يمكنك الوصول إلى كل توقيع رقمي والتحقق منه على حدة.
-
+ يمكنك العثور على وثائق مفصلة عن Aspose.Words لـ .NET[هنا](https://reference.aspose.com/words/net/).

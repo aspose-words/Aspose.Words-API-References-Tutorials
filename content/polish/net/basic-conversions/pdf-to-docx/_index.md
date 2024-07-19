@@ -56,7 +56,7 @@ Teraz załadujmy dokument PDF do naszego projektu za pomocą Aspose.Words.
 Document doc = new Document(dataDir + "Pdf Document.pdf");
 ```
 
- Tutaj tworzymy instancję`Document`class i podaj do niej ścieżkę naszego pliku PDF. Ta czynność ładuje plik PDF do pamięci, gotowy do konwersji.
+ Tutaj tworzymy instancję`Document` class i podaj do niej ścieżkę naszego pliku PDF. Ta czynność ładuje plik PDF do pamięci, gotowy do konwersji.
 
 ## Krok 3: Zapisywanie pliku PDF jako dokumentu programu Word
 

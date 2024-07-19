@@ -214,7 +214,7 @@ Bu adımları izleyerek, belgelerinizdeki listelerin biçimlendirmesini kontrol 
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for Java'da listelerle etkili bir şekilde nasıl çalışılacağını öğrendiniz. Listeler, belgelerinizdeki içeriği düzenlemek ve sunmak için çok önemlidir. Her bölümde listeleri yeniden başlatmanız veya liste seviyelerini belirtmeniz gerekip gerekmediğini Aspose.Words for Java, profesyonel görünümlü belgeler oluşturmak için ihtiyacınız olan araçları sağlar.
+Tebrikler! Aspose.Words for Java'da listelerle etkili bir şekilde nasıl çalışılacağını öğrendiniz. Listeler, belgelerinizdeki içeriği düzenlemek ve sunmak için çok önemlidir. Her bölümde listeleri yeniden başlatmanız veya liste seviyelerini belirtmeniz gerekip gerekmediğini Aspose.Words for Java, profesyonel görünümlü belgeler oluşturmak için ihtiyaç duyduğunuz araçları sağlar.
 
 Artık belge oluşturma ve biçimlendirme görevlerinizi geliştirmek için bu özellikleri güvenle kullanabilirsiniz. Herhangi bir sorunuz varsa veya daha fazla yardıma ihtiyacınız varsa, bizimle iletişime geçmekten çekinmeyin.[Topluluk forumu aspose](https://forum.aspose.com/) destek için.
 

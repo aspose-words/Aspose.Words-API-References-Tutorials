@@ -24,7 +24,7 @@ Ať už chcete převést dokumenty aplikace Word do formátu PDF pro online dist
 | [Zmenšete velikost PDF deaktivací vložených písem](./disable-embed-windows-fonts/) | Přečtěte si, jak zakázat vkládání písem Windows při převodu dokumentů do PDF pomocí Aspose.Words for .NET. |
 | [Optimalizujte velikost PDF pomocí přeskočení vložených písem Arial & Times Roman](./skip-embedded-arial-and-times-roman-fonts/) | Podrobný průvodce generováním PDF bez vkládání písem Arial a Times Roman pomocí Aspose.Words pro .NET. |
 | [Zmenšete velikost souboru PDF nevkládáním základních písem](./avoid-embedding-core-fonts/) | Naučte se, jak se vyhnout základnímu vkládání písem při převodu dokumentů Wordu do PDF pomocí Aspose.Words for .NET. |
-| [Escape URI v dokumentu PDF](./escape-uri/) | Podrobný průvodce útěkem Uri pomocí Aspose.Words pro .NET. |
+| [Escape URI v dokumentu PDF](./escape-uri/) | Naučte se, jak uniknout z URI v souborech PDF pomocí Aspose.Words for .NET. Tento podrobný průvodce vás provede procesem krok za krokem. |
 | [Exportujte záložky Záhlaví dokumentu Word do dokumentu PDF](./export-header-footer-bookmarks/) | Krok za krokem průvodce exportem záložek záhlaví a zápatí pomocí Aspose.Words pro .NET. |
 | [Zmenšete velikost PDF pomocí změny velikosti písem WMF na velikost metasouboru](./scale-wmf-fonts-to-metafile-size/) | Podrobný průvodce úpravou velikosti písma WMF při převodu do PDF pomocí Aspose.Words pro .NET. |
 | [Vylepšete umístění textu PDF pomocí dodatečného umístění textu](./additional-text-positioning/) | Naučte se ovládat umístění dalšího textu při převodu dokumentů Wordu do PDF pomocí Aspose.Words for .NET. |
@@ -34,6 +34,6 @@ Ať už chcete převést dokumenty aplikace Word do formátu PDF pro online dist
 | [Export uživatelských vlastností v dokumentu PDF](./custom-properties-export/) | Naučte se exportovat uživatelské vlastnosti při převodu dokumentů do PDF pomocí Aspose.Words for .NET. |
 | [Export struktury dokumentu Word do dokumentu PDF](./export-document-structure/) | Krok za krokem průvodce exportem struktury dokumentu pomocí Aspose.Words pro .NET. |
 | [Komprese obrázků v dokumentu PDF](./image-compression/) | Krok za krokem průvodce kompresí obrázků pomocí Aspose.Words pro .NET. |
-| [Aktualizovat naposledy vytištěnou vlastnost v dokumentu PDF](./update-last-printed-property/) | Podrobný průvodce aktualizací vlastnosti "Last Printed" při převodu do PDF pomocí Aspose.Words for .NET. |
+| [Aktualizujte naposledy vytištěnou vlastnost v dokumentu PDF](./update-last-printed-property/) | Podrobný průvodce aktualizací vlastnosti "Last Printed" při převodu do PDF pomocí Aspose.Words for .NET. |
 | [Renderujte 3D DML 3D efekty v dokumentu PDF](./dml-3deffects-rendering/) | Naučte se, jak povolit vykreslování 3D DML efektů při převodu do PDF pomocí Aspose.Words for .NET. |
 | [Interpolace obrázků v dokumentu PDF](./interpolate-images/) | Podrobný průvodce povolit interpolaci obrázků pomocí Aspose.Words pro .NET. |

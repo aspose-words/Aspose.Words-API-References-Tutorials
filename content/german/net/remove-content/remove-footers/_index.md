@@ -19,7 +19,7 @@ Es kann vorkommen, dass Sie Fußzeilen aus einem Word-Dokument entfernen möchte
 
 ## Schritt 1: Festlegen des Dokumentverzeichnispfads
 
-Stellen Sie vor dem Start sicher, dass Sie Ihr Dokumentverzeichnis in der Variable „dataDir“ festgelegt haben. Auf diese Weise können Sie den genauen Speicherort angeben, an dem sich Ihre DOCX-Datei befindet.
+Stellen Sie vor dem Start sicher, dass Sie Ihr Dokumentverzeichnis in der Variable „dataDir“ festgelegt haben. Auf diese Weise können Sie den genauen Speicherort Ihrer DOCX-Datei angeben.
 
 ```csharp
 string dataDir = "PATH_TO_YOUR_DOCUMENT_DIRECTORY";

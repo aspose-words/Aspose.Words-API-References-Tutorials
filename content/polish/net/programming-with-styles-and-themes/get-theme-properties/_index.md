@@ -72,7 +72,7 @@ Zachęcamy do odkrywania większej liczby funkcji Aspose.Words dla .NET, aby usp
 
 #### Jak mogę pobrać podstawowe i dodatkowe czcionki motywu dokumentu?
 
- Dostęp do głównych i dodatkowych czcionek motywu dokumentu można uzyskać, korzystając z opcji`MajorFonts` I`MinorFonts` właściwości`Theme` obiekt, odpowiednio. Te właściwości zapewniają dostęp do nazw czcionek używanych w motywie dokumentu dla różnych języków i regionów.
+ Dostęp do głównych i dodatkowych czcionek motywu dokumentu można uzyskać, korzystając z opcji`MajorFonts`I`MinorFonts` właściwości`Theme` obiekt, odpowiednio. Te właściwości zapewniają dostęp do nazw czcionek używanych w motywie dokumentu dla różnych języków i regionów.
 
 #### Czy mogę uzyskać kolory akcentujące użyte w motywie dokumentu?
 

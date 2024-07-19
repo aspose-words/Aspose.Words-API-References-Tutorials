@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: configurar las opciones de carga con la configuración de fuentes
- A continuación, crearemos una instancia de`LoadOptions` y especificar la configuración de fuente creando una nueva instancia de`FontSettings` y asignándolo a`loadOptions.FontSettings`.
+ A continuación, crearemos una instancia de`LoadOptions` especificar la configuración de fuente creando una nueva instancia de`FontSettings` y asignándolo a`loadOptions.FontSettings`.
 
 ```csharp
 // Configurar opciones de carga con ajustes de fuente
@@ -57,7 +57,7 @@ En este tutorial, vimos cómo usar opciones de carga con configuración de fuent
 
 #### P: ¿Cómo puedo especificar una fuente predeterminada al cargar un documento en Aspose.Words?
 
-R: Para especificar una fuente predeterminada al cargar un documento en Aspose.Words, puede usar el`LoadOptions` clase y establecer el`DefaultFontName` propiedad al nombre de la fuente deseada.
+ R: Para especificar una fuente predeterminada al cargar un documento en Aspose.Words, puede usar el`LoadOptions` clase y establecer el`DefaultFontName` propiedad al nombre de la fuente deseada.
 
 #### P: ¿Qué otras configuraciones de fuente puedo especificar con las opciones de carga en Aspose.Words?
 
@@ -69,4 +69,4 @@ R: Si la fuente predeterminada especificada no está disponible cuando el docume
 
 #### P: ¿Puedo especificar diferentes configuraciones de fuente para cada documento cargado?
 
- R: Sí, puede especificar diferentes configuraciones de fuente para cada documento cargado utilizando instancias separadas del`LoadOptions`class y estableciendo la configuración de fuente deseada para cada instancia. Esto le permite personalizar la apariencia de la fuente para cada documento de forma independiente.
+ R: Sí, puede especificar diferentes configuraciones de fuente para cada documento cargado utilizando instancias separadas del`LoadOptions` class y estableciendo la configuración de fuente deseada para cada instancia. Esto le permite personalizar la apariencia de la fuente para cada documento de forma independiente.

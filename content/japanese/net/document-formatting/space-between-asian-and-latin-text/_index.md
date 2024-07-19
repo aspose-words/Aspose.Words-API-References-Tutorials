@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Layout;
 ```
 
-これらのコード行は、これから使用する Aspose.Words の機能を導入するため、不可欠です。
+これらのコード行は、これから使用する Aspose.Words の機能を導入するため不可欠です。
 
 ## ステップ1: ドキュメントの設定
 

@@ -135,7 +135,7 @@ Aspose.Words for Python 提供了一系列樣式選項，使您的表單在視�
     row.row_format.height_rule = aspose.words.HeightRule.AUTO
     ```
 
-2. 調整列寬：自動調整列寬以適合內容。
+2. 調整列寬：自動調整列寬以適應內容。
 
     ```python
     table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_CONTENTS)

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Töltse be a dokumentumot és hozzon létre XML részt
- Töltse be a Word dokumentumot a`Document` konstruktor, paraméterként átadva a dokumentum elérési útját. Hozzon létre egy XML-részt, amely tartalmazza a strukturált dokumentumcímkén belül megjeleníteni kívánt adatokat.
+ Töltse be a Word dokumentumot a`Document`konstruktor, paraméterként átadva a dokumentum elérési útját. Hozzon létre egy XML-részt, amely tartalmazza a strukturált dokumentumcímkén belül megjeleníteni kívánt adatokat.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -34,7 +34,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(xmlPartId, xmlPartContent);
 ```
 
 ## 3. lépés: Állítsa be az XML-leképezést a strukturált dokumentumcímkéhez
-strukturált dokumentumcímke-tartomány lekérése a dokumentumtól kezdve. Ezután állítsa be a strukturált dokumentumcímke XML-leképezését úgy, hogy az XPath-kifejezés használatával jelenítse meg az egyéni XML-rész egy meghatározott részét.
+A strukturált dokumentumcímke-tartomány lekérése a dokumentumtól kezdve. Ezután állítsa be a strukturált dokumentumcímke XML-leképezését úgy, hogy az XPath-kifejezés használatával jelenítse meg az egyéni XML-rész egy meghatározott részét.
 
 ```csharp
 StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Hozzon létre egy StructuredDocumentTag-et, amely megjeleníti a CustomXmlPart rész tartalmát a dokumentumban.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Ha beállítunk egy leképezést a StructuredDocumentTag-hez,
-	// csak a CustomXmlPart azon részét jeleníti meg, amelyre az XPath mutat.
+	//csak a CustomXmlPart azon részét jeleníti meg, amelyre az XPath mutat.
 	// Ez az XPath a CustomXmlPart első "<root>" elemének második "<text>" elemére mutat.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

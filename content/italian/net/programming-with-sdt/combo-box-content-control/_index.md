@@ -17,7 +17,7 @@ Per seguire questo tutorial, è necessario disporre di quanto segue:
 - Conoscenza base di C# ed elaborazione testi con documenti Word.
 
 ## Passaggio 1: impostare la directory dei documenti
- Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui desideri salvare il documento.
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo della directory in cui desideri salvare il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Passaggio 3: aggiungi elementi alla casella combinata
- Aggiungi elementi alla casella combinata utilizzando il comando`ListItems` proprietà del`StructuredDocumentTag` Ogni elemento è rappresentato da un`SdtListItem` oggetto, che accetta un testo visualizzato e un valore. In questo esempio aggiungiamo tre elementi alla casella combinata.
+ Aggiungi elementi alla casella combinata utilizzando il comando`ListItems` proprietà del`StructuredDocumentTag` . Ogni elemento è rappresentato da un`SdtListItem` oggetto, che accetta un testo visualizzato e un valore. In questo esempio aggiungiamo tre elementi alla casella combinata.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

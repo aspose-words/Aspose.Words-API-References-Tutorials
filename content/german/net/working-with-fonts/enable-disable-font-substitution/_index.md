@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /de/net/working-with-fonts/enable-disable-font-substitution/
 ---
-In diesem Tutorial zeigen wir Ihnen, wie Sie die Schriftartenersetzung in einem Word-Dokument aktivieren oder deaktivieren, wenn Sie es mit der Aspose.Words-Bibliothek für .NET rendern. Durch das Aktivieren oder Deaktivieren der Schriftartenersetzung können Sie steuern, ob fehlende Schriftarten automatisch durch eine Standardschriftart ersetzt werden. Wir führen Sie Schritt für Schritt durch, damit Sie den Code verstehen und in Ihrem .NET-Projekt implementieren können.
+In diesem Tutorial zeigen wir Ihnen, wie Sie die Schriftartenersetzung in einem Word-Dokument aktivieren oder deaktivieren, wenn Sie es mit der Aspose.Words-Bibliothek für .NET rendern. Durch Aktivieren oder Deaktivieren der Schriftartenersetzung können Sie steuern, ob fehlende Schriftarten automatisch durch eine Standardschriftart ersetzt werden. Wir führen Sie Schritt für Schritt durch, damit Sie den Code verstehen und in Ihrem .NET-Projekt implementieren können.
 
 ## Voraussetzungen
 Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente verfügen:

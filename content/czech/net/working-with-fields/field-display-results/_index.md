@@ -66,7 +66,7 @@ foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
-tomto příkladu jsme nahráli dokument, aktualizovali všechna pole a poté jsme cyklicky procházeli poli, abychom zobrazili jejich výsledky. Tento krok můžete přizpůsobit pomocí své vlastní logiky pro zpracování výsledků pole.
+V tomto příkladu jsme nahráli dokument, aktualizovali všechna pole a poté jsme cyklicky procházeli poli, abychom zobrazili jejich výsledky. Tento krok můžete přizpůsobit pomocí své vlastní logiky pro zpracování výsledků pole.
 
 Tímto končí náš průvodce používáním funkce "Zobrazit výsledky pole" s Aspose.Words pro .NET.
 

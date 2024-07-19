@@ -116,7 +116,7 @@ table.getRows().get(0).getCells().get(0).getParagraphs().get(0).getRuns().get(0)
 बिल्कुल! Aspose.Words for Java विभिन्न दस्तावेज़ स्वरूपों का समर्थन करता है, जो इसे दस्तावेज़ प्रबंधन के लिए एक बहुमुखी विकल्प बनाता है।
 
 ### मैं अधिक दस्तावेज और संसाधन कहां पा सकता हूं?
- गहन दस्तावेज़ीकरण और अतिरिक्त संसाधनों के लिए, Java दस्तावेज़ीकरण के लिए Aspose.Words पर जाएँ[यहाँ](https://reference.aspose.com/words/java/).
+ गहन दस्तावेज़ीकरण और अतिरिक्त संसाधनों के लिए, Aspose.Words for Java दस्तावेज़ीकरण पर जाएँ[यहाँ](https://reference.aspose.com/words/java/).
 
 ## निष्कर्ष
 

@@ -172,7 +172,7 @@ Um den Kennwortschutz eines kennwortgeschützten Dokuments aufzuheben, können S
 
 ### Kann ich beim Speichern eines Dokuments im OOXML-Format benutzerdefinierte Eigenschaften festlegen?
 
- Ja, Sie können benutzerdefinierte Eigenschaften für ein Dokument festlegen, bevor Sie es im OOXML-Format speichern. Verwenden Sie die`BuiltInDocumentProperties` Und`CustomDocumentProperties` Klassen zum Festlegen verschiedener Eigenschaften wie Autor, Titel, Schlüsselwörter und benutzerdefinierte Eigenschaften.
+ Ja, Sie können benutzerdefinierte Eigenschaften für ein Dokument festlegen, bevor Sie es im OOXML-Format speichern. Verwenden Sie die`BuiltInDocumentProperties`Und`CustomDocumentProperties` Klassen zum Festlegen verschiedener Eigenschaften wie Autor, Titel, Schlüsselwörter und benutzerdefinierte Eigenschaften.
 
 ### Was ist die Standardkomprimierungsstufe beim Speichern eines Dokuments im OOXML-Format?
 

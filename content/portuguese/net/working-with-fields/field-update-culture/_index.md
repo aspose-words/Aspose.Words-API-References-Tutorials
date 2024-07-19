@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passo 3: Inserindo o campo de hora
 
- Nós usamos o`InsertField()` método para inserir um campo de hora no documento.
+ Nós usamos o`InsertField()`método para inserir um campo de hora no documento.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);

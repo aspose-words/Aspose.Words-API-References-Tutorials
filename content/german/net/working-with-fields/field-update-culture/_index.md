@@ -29,7 +29,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 3: Einfügen des Zeitfeldes
 
- Wir benutzen das`InsertField()` Methode, um ein Zeitfeld in das Dokument einzufügen.
+ Wir benutzen das`InsertField()`Methode, um ein Zeitfeld in das Dokument einzufügen.
 
 ```csharp
 builder. InsertField(FieldType.FieldTime, true);
@@ -97,4 +97,4 @@ A: Ja, es ist möglich, eine bestimmte Kultur für ein einzelnes Feld statt für
 
 #### F: Wie kann ich die aktuell definierte Feldaktualisierungskultur in einem Word-Dokument überprüfen?
 
-A: Um die aktuell definierte Feldaktualisierungskultur in einem Word-Dokument zu überprüfen, können Sie die Eigenschaft Document.UpdateFieldsCultureInfo verwenden. Diese Eigenschaft gibt das CultureInfo-Objekt zurück, das die aktuell zum Festlegen von Feldaktualisierungen verwendete Kultur darstellt.
+A: Um die aktuell definierte Feldaktualisierungskultur in einem Word-Dokument zu überprüfen, können Sie die Eigenschaft Document.UpdateFieldsCultureInfo verwenden. Diese Eigenschaft gibt das CultureInfo-Objekt zurück, das die Kultur darstellt, die aktuell zum Festlegen von Feldaktualisierungen verwendet wird.

@@ -106,4 +106,4 @@ Igen, ezek a beállítások bármilyen szövegre alkalmazhatók, de az egyedi t�
 Teljesen! Végiglapozhat egy dokumentumgyűjteményt, és ezeket a beállításokat programozottan alkalmazhatja mindegyikre.
 
 ### Mi a teendő, ha problémákba ütközöm, vagy kérdéseim vannak?
-Ha bármilyen problémába ütközik, vagy további kérdései vannak, a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) remek hely a segítség kérésére.
+ Ha bármilyen problémába ütközik, vagy további kérdései vannak, a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) remek hely a segítség kérésére.

@@ -106,8 +106,8 @@ Para configurar el entorno, debe asegurarse de tener Aspose.Words para .NET inst
 
 #### ¿Cómo puedo aplicar diferentes estilos a diferentes secciones de texto?
 
- Puede aplicar diferentes estilos a diferentes secciones de texto configurando el`ParagraphFormat.StyleName` propiedad de la`DocumentBuilder`objeto. Antes de escribir el texto, puede configurar el nombre del estilo en el estilo deseado y el texto siguiente tendrá el formato correspondiente.
+Puede aplicar diferentes estilos a diferentes secciones de texto configurando el`ParagraphFormat.StyleName` propiedad de la`DocumentBuilder` objeto. Antes de escribir el texto, puede configurar el nombre del estilo en el estilo deseado y el texto siguiente tendrá el formato correspondiente.
 
 #### ¿Puedo guardar el documento en diferentes formatos?
 
- Sí, puede guardar el documento en varios formatos admitidos por Aspose.Words para .NET. El`Save` método de la`Document` object le permite especificar el formato del archivo de salida, como DOCX, PDF, HTML y más. Elija el formato apropiado según sus requisitos.
+ Sí, puede guardar el documento en varios formatos admitidos por Aspose.Words para .NET. El`Save` método de la`Document` El objeto le permite especificar el formato del archivo de salida, como DOCX, PDF, HTML y más. Elija el formato apropiado según sus requisitos.

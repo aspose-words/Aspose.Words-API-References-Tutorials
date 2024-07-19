@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.Save(dataDir + "WorkingWithImageSaveOptions.MultipageTiff.tiff");
 ```
 
-In diesem Schritt speichern wir das gesamte Dokument im TIFF-Format mit dem`Save` Methode und Angabe des Pfads zur Ausgabedatei mit der Erweiterung`.tiff`.
+In diesem Schritt speichern wir das komplette Dokument im TIFF-Format mit dem`Save` Methode und Angabe des Pfads zur Ausgabedatei mit der Erweiterung`.tiff`.
 
 ## Schritt 4: Konfigurieren Sie Sicherungsoptionen für den Seitenbereich
 
@@ -44,7 +44,7 @@ Resolution = 160
 };
 ```
 
- In diesem Schritt konfigurieren wir Backup-Optionen für den spezifischen Seitenbereich. Wir erstellen eine neue`ImageSaveOptions` Objekt, das das gewünschte Speicherformat angibt, hier "Tiff" für das TIFF-Format. Wir verwenden`PageSet` um den Seitenbereich anzugeben, den wir extrahieren möchten, hier von Seite 0 bis Seite 1 (einschließlich). Wir setzen auch die TIFF-Komprimierung auf`Ccitt4` und die Auflösung auf 160 dpi.
+ In diesem Schritt konfigurieren wir Backup-Optionen für den jeweiligen Seitenbereich. Wir erstellen eine neue`ImageSaveOptions` Objekt, das das gewünschte Speicherformat angibt, hier "Tiff" für das TIFF-Format. Wir verwenden`PageSet` um den Seitenbereich anzugeben, den wir extrahieren möchten, hier von Seite 0 bis Seite 1 (einschließlich). Wir setzen auch die TIFF-Komprimierung auf`Ccitt4` und die Auflösung auf 160 dpi.
 
 ## Schritt 5: Seitenbereich im TIFF-Format speichern
 

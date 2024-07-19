@@ -25,7 +25,7 @@ Det första steget på din resa mot att bli ett proffs för dokumentmanipulering
 
 ### Skapa och ändra dokument
 
-När du har installerat Aspose.Words är det dags att börja skapa och ändra dokument. Lär dig hur du genererar nya dokument, lägger till innehåll, formaterar text och manipulerar dokumentstruktur utan ansträngning.
+När du har installerat Aspose.Words är det dags att börja skapa och ändra dokument. Lär dig hur du genererar nya dokument, lägger till innehåll, formaterar text och manipulerar dokumentstrukturen utan ansträngning.
 
 ### Konvertera dokument
 
@@ -83,7 +83,7 @@ Lär dig hur du delar upp dokument i HTML-sidor med Aspose.Words för Java. Föl
 ### [Lägga till innehåll med DocumentBuilder i Aspose.Words för Java](./adding-content-using-documentbuilder/)
 Master Document Creation med Aspose.Words för Java. En steg-för-steg-guide för att lägga till text, tabeller, bilder och mer. Skapa fantastiska Word-dokument utan ansträngning.
 ### [Klona och kombinera dokument i Aspose.Words för Java](./cloning-and-combining-documents/)
-Lär dig att klona och kombinera dokument i Aspose.Words för Java. Steg-för-steg-guide med exempel på källkod.
+Lär dig att klona och kombinera dokument i Aspose.Words för Java. Steg-för-steg guide med exempel på källkod.
 ### [Jämföra dokument i Aspose.Words för Java](./comparing-documents/)
 Lär dig hur du jämför dokument i Aspose.Words för Java, ett kraftfullt Java-bibliotek för effektiv dokumentanalys. 
 ### [Formatera dokument i Aspose.Words för Java](./formatting-documents/)

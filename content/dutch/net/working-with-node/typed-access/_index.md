@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/working-with-node/typed-access/
 ---
 
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, waarin wordt geïllustreerd hoe u de Typed Access-functie kunt gebruiken met Aspose.Words voor .NET.
+Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, waarin wordt geïllustreerd hoe u de functie Typed Access kunt gebruiken met Aspose.Words voor .NET.
 
 ## Stap 1: Importeer de benodigde referenties
 Zorg ervoor dat u, voordat u begint, de benodigde referenties hebt geïmporteerd om Aspose.Words voor .NET in uw project te gebruiken. Dit omvat het importeren van de Aspose.Words-bibliotheek en het toevoegen van de vereiste naamruimten aan uw bronbestand.
@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Snelle en getypte toegang tot de eerste rij van de tabel.
+     //Snelle en getypte toegang tot de eerste rij van de tabel.
      table.FirstRow?.Remove();
 
      // Snelle en getypte toegang tot de laatste rij van de tabel.

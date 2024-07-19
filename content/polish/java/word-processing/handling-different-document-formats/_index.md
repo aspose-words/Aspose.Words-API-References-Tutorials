@@ -136,4 +136,4 @@ Absolutnie! Aspose.Words dla Java zaspokaja szeroki zakres potrzeb związanych z
 
 ### Gdzie mogę znaleźć obszerną dokumentację Aspose.Words dla Java?
 
- Możesz zapoznać się ze szczegółową dokumentacją i odniesieniami do API Aspose.Words dla Java pod adresem[Aspose.Words — odniesienia do API języka Java](https://reference.aspose.com/words/java/).
+ Możesz zapoznać się ze szczegółową dokumentacją i odniesieniami do API Aspose.Words for Java pod adresem[Aspose.Words — odniesienia do API języka Java](https://reference.aspose.com/words/java/).

@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## ขั้นตอนที่ 3: แก้ไขซอร์สโค้ดมาโคร
- ตอนนี้เรากำลังจะแก้ไขซอร์สโค้ดของมาโครแรกของโครงการ VBA แทนที่`newSourceCode` ตัวแปรด้วยซอร์สโค้ดใหม่ที่คุณต้องการใช้
+ตอนนี้เรากำลังจะแก้ไขซอร์สโค้ดของมาโครแรกของโครงการ VBA แทนที่`newSourceCode` ตัวแปรด้วยซอร์สโค้ดใหม่ที่คุณต้องการใช้
 
 ```csharp
 const string newSourceCode = "Test change source code";

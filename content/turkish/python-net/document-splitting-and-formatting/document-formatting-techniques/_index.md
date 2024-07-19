@@ -149,7 +149,7 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## Çözüm
 
-Aspose.Words for Python ile belge biçimlendirme tekniklerinde uzmanlaşmak, programlı olarak görsel olarak çekici ve iyi yapılandırılmış belgeler oluşturmanıza olanak sağlar. Yazı tipi stillerinden tablolara, başlıklardan köprülere kadar kitaplık, içeriğinizin görsel etkisini artıracak kapsamlı bir araç seti sunar.
+Aspose.Words for Python ile belge biçimlendirme tekniklerinde uzmanlaşmak, programlı olarak görsel olarak çekici ve iyi yapılandırılmış belgeler oluşturmanıza olanak tanır. Yazı tipi stillerinden tablolara, başlıklardan köprülere kadar kitaplık, içeriğinizin görsel etkisini artıracak kapsamlı bir araç seti sunar.
 
 ## SSS
 

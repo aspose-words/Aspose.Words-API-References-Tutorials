@@ -18,7 +18,7 @@ Porównanie dokumentów obejmuje analizę dwóch dokumentów i identyfikację r�
 
 ## Podstawowe porównanie dokumentów
 
- Zacznijmy od podstaw porównywania dokumentów. Będziemy korzystać z dwóch dokumentów,`docA` I`docB`i porównaj je.
+ Zacznijmy od podstaw porównywania dokumentów. Będziemy korzystać z dwóch dokumentów,`docA`I`docB`i porównaj je.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
- tym fragmencie kodu ładujemy dwa dokumenty,`docA` I`docB` , a następnie użyj`compare` sposób na ich porównanie. Podajemy autora jako „użytkownika” i przeprowadzamy porównanie. Na koniec sprawdzamy, czy są poprawki, wskazując różnice pomiędzy dokumentami.
+ tym fragmencie kodu ładujemy dwa dokumenty,`docA`I`docB` , a następnie użyj`compare` sposób na ich porównanie. Podajemy autora jako „użytkownika” i przeprowadzamy porównanie. Na koniec sprawdzamy, czy są poprawki, wskazując różnice pomiędzy dokumentami.
 
 ## Dostosowywanie porównania za pomocą opcji
 

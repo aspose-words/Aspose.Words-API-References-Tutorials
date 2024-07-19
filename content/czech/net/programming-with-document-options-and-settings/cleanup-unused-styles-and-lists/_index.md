@@ -2,91 +2,101 @@
 title: Vyčištění nepoužívaných stylů a seznamů
 linktitle: Vyčištění nepoužívaných stylů a seznamů
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce čištěním nepoužívaných stylů a seznamů v dokumentu pomocí Aspose.Words for .NET.
+description: Vyčistěte své dokumenty aplikace Word pomocí Aspose.Words for .NET odstraněním nepoužívaných stylů a seznamů. Postupujte podle tohoto podrobného průvodce a zjednodušte své dokumenty bez námahy.
 type: docs
 weight: 10
 url: /cs/net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
+## Úvod
 
-V tomto tutoriálu vás provedeme zdrojovým kódem C# k vyčištění nepoužívaných stylů a seznamů pomocí Aspose.Words pro .NET. Tato funkce umožňuje odstranit styly a seznamy, které nejsou v dokumentu použity.
+Nazdárek! Měli jste někdy pocit, že jsou vaše dokumenty ve Wordu trochu přeplněné? Znáte ty nepoužívané styly a seznamy, které tam jen sedí, zabírají místo a váš dokument vypadá složitější, než by měl být? Tak to máš štěstí! Dnes se ponoříme do úhledného malého triku pomocí Aspose.Words pro .NET k vyčištění těch nepoužívaných stylů a seznamů. Je to jako dát svému dokumentu příjemnou osvěžující koupel. Takže si dejte kávu, posaďte se a můžeme začít!
 
-## Krok 1: Nastavení projektu
+## Předpoklady
 
-Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistěte se, že váš projekt odkazuje na knihovnu Aspose.Words for .NET.
+Než se ponoříme do podrobných detailů, ujistěte se, že máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
 
-## Krok 2: Načtení dokumentu
+- Základní znalost C#: Měli byste být spokojeni s programováním v C#.
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto knihovnu. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Jakékoli IDE kompatibilní s C#, jako je Visual Studio.
+- Ukázkový dokument: Dokument aplikace Word s některými nepoužívanými styly a seznamy k vyčištění.
 
-V tomto kroku načteme dokument aplikace Word obsahující nepoužívané styly a seznamy, které chceme vyčistit. K načtení dokumentu použijte následující kód:
+## Importovat jmenné prostory
+
+Nejprve si udělejme pořádek ve jmenných prostorech. Pro práci s Aspose.Words budete muset importovat několik základních jmenných prostorů.
 
 ```csharp
-// Cesta k adresáři dokumentů.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Cleaning;
+```
+
+## Krok 1: Vložte svůj dokument
+
+Prvním krokem je načtení dokumentu, který chcete vyčistit. Budete muset zadat cestu k adresáři dokumentů. Zde se nachází váš soubor aplikace Word.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
 
- Nahradit`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou k adresáři, kde je umístěn váš dokument.
+## Krok 2: Zkontrolujte aktuální styly a seznamy
 
-## Krok 3: Před čištěním spočítejte styly a seznamy
-
-Před čištěním spočítáme počet stylů a seznamů přítomných v dokumentu. K zobrazení počítadel použijte následující kód:
+Než začneme s úklidem, je dobré se podívat, kolik stylů a seznamů je aktuálně v dokumentu. To nám poskytne základní linii, se kterou můžeme po vyčištění porovnat.
 
 ```csharp
-Console.WriteLine($"Number of styles before cleaning: {doc.Styles.Count}\n" +
-$"Number of lists before cleaning: {doc.Lists.Count}");
+Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists before Cleanup: {doc.Lists.Count}");
 ```
 
-Tyto pokyny ukazují počet stylů a seznamů přítomných v dokumentu před čištěním.
+## Krok 3: Definujte možnosti čištění
 
-## Krok 4: Vyčistěte nepoužívané styly a seznamy
-
-Nyní z dokumentu vyčistíme nepoužívané styly a seznamy. K provedení čištění použijte následující kód:
+Nyní je čas definovat možnosti čištění. V tomto příkladu odstraníme nepoužívané styly, ale ponecháme nepoužité seznamy. Tyto možnosti můžete upravit podle svých potřeb.
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-doc. Cleanup(cleanupOptions);
 ```
 
- Tento kód vyčistí nepoužívané styly a seznamy z dokumentu pomocí zadaných možností. V tomto příkladu jsme povolili`UnusedStyles` možnost odstranit nepoužívané styly a deaktivovat`UnusedLists` možnost zachovat seznamy, i když nejsou používány.
+## Krok 4: Proveďte vyčištění
 
-## Krok 5: Po vyčištění spočítejte styly a seznamy
-
-Po provedení vyčištění znovu spočítáme styly a seznamy, abychom zkontrolovali, zda nebyly sbaleny. K zobrazení nových čítačů použijte následující kód:
+našimi nastavenými možnostmi čištění nyní můžeme vyčistit dokument. Tento krok odstraní nepoužívané styly a zachová nepoužívané seznamy nedotčené.
 
 ```csharp
-Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-				  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
+doc.Cleanup(cleanupOptions);
 ```
 
-Tyto pokyny ukazují počty stylů a seznamů zbývajících po čištění.
+## Krok 5: Po vyčištění zkontrolujte styly a seznamy
 
-### Příklad zdrojového kódu pro Cleanup Unused Styles And Lists pomocí Aspose.Words for .NET
+Abychom viděli dopad našeho čištění, podívejme se znovu na počet stylů a seznamů. Zobrazí se, kolik stylů bylo odstraněno.
 
 ```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Unused styles.docx");
-
-	// V kombinaci s vestavěnými styly má nyní dokument osm stylů.
-	// Vlastní styl je označen jako „použitý“, pokud je v dokumentu jakýkoli text
-	// naformátované v tomto stylu. To znamená, že 4 styly, které jsme přidali, jsou momentálně nepoužívané.
-	Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}\n" +
-					  $"Count of lists before Cleanup: {doc.Lists.Count}");
-
-	//Vyčistí nepoužívané styly a seznamy z dokumentu v závislosti na daných možnostech CleanupOptions.
-	CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
-	doc.Cleanup(cleanupOptions);
-
-	Console.WriteLine($"Count of styles after Cleanup was decreased: {doc.Styles.Count}\n" +
-					  $"Count of lists after Cleanup is the same: {doc.Lists.Count}");
-
-	doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupUnusedStylesAndLists.docx");
-    
+Console.WriteLine($"Count of styles after Cleanup: {doc.Styles.Count}");
+Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 ```
 
- Ujistěte se, že jste zadali správnou cestu dokumentu v`dataDir` variabilní.
+## Krok 6: Uložte vyčištěný dokument
 
-Nyní jste se naučili, jak vyčistit nepoužívané styly a seznamy z dokumentu pomocí Aspose.Words for .NET. Podle podrobného průvodce uvedeného v tomto kurzu můžete tuto funkci snadno použít na své vlastní dokumenty.
+Nakonec uložme náš vyčištěný dokument. Tím zajistíte, že se všechny změny uloží a váš dokument bude co nejuklizenější.
 
+```csharp
+doc.Save(dataDir + "CleanedDocument.docx");
+```
+
+## Závěr
+
+A tady to máte! Úspěšně jste vyčistili svůj dokument aplikace Word odstraněním nepoužívaných stylů a seznamů pomocí Aspose.Words for .NET. Je to jako uklidit svůj digitální stůl, aby se vaše dokumenty lépe spravovaly a byly efektivnější. Poplácejte se po zádech za dobře odvedenou práci!
+
+## FAQ
+
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vytvářet, upravovat a převádět dokumenty aplikace Word programově pomocí C#.
+
+### Mohu odstranit nepoužívané styly i seznamy současně?
+Ano, můžete nastavit obojí`UnusedLists`a`UnusedStyles` na`true` v`CleanupOptions` k odstranění obojího.
+
+### Je možné čištění vrátit zpět?
+Ne, jakmile je čištění dokončeno a dokument je uložen, nelze změny vrátit zpět. Vždy mějte zálohu původního dokumentu.
+
+### Potřebuji licenci pro Aspose.Words pro .NET?
+ Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license) nebo[koupit jeden](https://purchase.aspose.com/buy).
+
+### Kde najdu další informace a podporu?
+ Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/) a získat podporu od[Aspose fórum](https://forum.aspose.com/c/words/8).

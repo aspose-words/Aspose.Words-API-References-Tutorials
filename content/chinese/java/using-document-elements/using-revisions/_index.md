@@ -77,9 +77,9 @@ doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
 
 ## 10. 结论
 
-在本教程中，我们介绍了在 Aspose.Words for Java 中使用修订的基础知识。您已经了解了如何创建文档、添加内容、启动和停止修订跟踪以及保存文档。
+在本教程中，我们介绍了在 Aspose.Words for Java 中使用修订的基础知识。您已经学习了如何创建文档、添加内容、启动和停止修订跟踪以及保存文档。
 
-现在，您拥有使用 Aspose.Words for Java 有效管理 Java 应用程序中的修订所需的工具。
+现在，您拥有使用 Aspose.Words for Java 有效管理 Java 应用程序中修订所需的工具。
 
 ## 完整源代码
 ```java

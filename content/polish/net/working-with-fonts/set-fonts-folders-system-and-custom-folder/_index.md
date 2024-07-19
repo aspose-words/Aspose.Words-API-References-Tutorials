@@ -66,7 +66,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Dodaj nowe źródło folderu, które poinstruuje Aspose.Words, aby przeszukał następujący folder w poszukiwaniu czcionek.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Dodaj niestandardowy folder zawierający nasze czcionki do listy istniejących źródeł czcionek.
+// Dodaj niestandardowy folder zawierający nasze czcionki do listy istniejących źródeł czcionek.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- Ebben a lépésben konfiguráljuk a TXT dokumentum betöltésének beállításait. Létrehozunk egy újat`TxtLoadOptions` objektumot és állítsa be a`LeadingSpacesOptions` és`TrailingSpacesOptions` tulajdonságait`TxtLeadingSpacesOptions.Trim` és`TxtTrailingSpacesOptions.Trim` illetőleg. Ez arra utasítja az Aspose.Words-t, hogy a dokumentum betöltésekor távolítsa el a sorok kezdő és záró szóközeit.
+ Ebben a lépésben konfiguráljuk a TXT dokumentum betöltésének beállításait. Létrehozunk egy újat`TxtLoadOptions` objektumot és állítsa be a`LeadingSpacesOptions`és`TrailingSpacesOptions` tulajdonságait`TxtLeadingSpacesOptions.Trim`és`TxtTrailingSpacesOptions.Trim` illetőleg. Ez arra utasítja az Aspose.Words-t, hogy a dokumentum betöltésekor távolítsa el a sorok kezdő és záró szóközeit.
 
 ## 4. lépés: A dokumentum betöltése
 

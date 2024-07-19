@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
- Ở bước này chúng ta truy cập vào`Theme` đối tượng của`Document`object để lấy chủ đề tài liệu. Tiếp theo, chúng ta có thể sửa đổi các thuộc tính chủ đề như phông chữ phụ (`MinorFonts.Latin`) và màu sắc (`Colors.Hyperlink`).
+Ở bước này chúng ta truy cập vào`Theme` đối tượng của`Document` object để lấy chủ đề tài liệu. Tiếp theo, chúng ta có thể sửa đổi các thuộc tính chủ đề như phông chữ phụ (`MinorFonts.Latin`) và màu sắc (`Colors.Hyperlink`).
 
 ## Bước 4: Lưu tài liệu
 

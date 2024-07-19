@@ -2,122 +2,150 @@
 title: Word Belgesindeki İmzaya Erişin ve İmzayı Doğrulayın
 linktitle: Word Belgesindeki İmzaya Erişin ve İmzayı Doğrulayın
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesindeki dijital imzalara nasıl erişeceğinizi ve bunları nasıl doğrulayacağınızı öğrenin.
+description: Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerindeki dijital imzalara erişin ve bunları doğrulayın. Belgenin orijinalliğini zahmetsizce sağlayın.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
-Bu eğitimde Aspose.Words for .NET'in erişim ve imza doğrulama özelliğini kullanma adımlarında size rehberlik edeceğiz. Bu özellik, bir Word belgesindeki dijital imzalara erişmenize ve bunların geçerliliğini doğrulamanıza olanak tanır. Aşağıdaki adımları takip et:
+## giriiş
 
-## 1. Adım: Belgeyi yükleme ve imzalara erişme
+Merhaba teknoloji tutkunları! Hiç kendinizi bir Word belgesindeki dijital imzalara erişmeniz ve bunları doğrulamanız gerektiği ancak nereden başlayacağınız konusunda hiçbir fikrinizin olmadığı bir durumda buldunuz mu? Şanslısın! Bugün, Word belgelerinin kullanımını çocuk oyuncağı haline getiren güçlü bir kütüphane olan Aspose.Words for .NET'in harika dünyasına dalıyoruz. Süreç boyunca size adım adım yol göstereceğiz, böylece bu kılavuzun sonunda Word belgelerindeki dijital imzaları doğrulama konusunda uzman olacaksınız. Başlayalım!
 
-Dijital imza içeren belgeyi yükleyerek başlayın:
+## Önkoşullar
+
+Nitel ayrıntılara dalmadan önce, hazır olmanız gereken birkaç şey var:
+
+1. Visual Studio: Makinenizde Visual Studio'nun kurulu olduğundan emin olun. Kodunuzu yazacağınız ve çalıştıracağınız yer burasıdır.
+2.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. İndirebilirsin[Burada](https://releases.aspose.com/words/net/) . Ücretsiz denemenizi almayı unutmayın[Burada](https://releases.aspose.com/) eğer henüz yapmadıysanız!
+3. Dijital Olarak İmzalanmış Bir Word Belgesi: Halihazırda dijital olarak imzalanmış bir Word belgeniz olsun. Bu, imzaları doğrulamak için üzerinde çalışacağınız dosyadır.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktaralım. Bu ad alanları projenizde Aspose.Words özelliklerini kullanmanıza olanak tanır.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.DigitalSignatures;
+```
+
+Pekala, hadi bunu yönetilebilir adımlara ayıralım. Her adım, sürecin belirli bir bölümünde size rehberlik edecektir. Hazır? Hadi gidelim!
+
+## 1. Adım: Projenizi Kurun
+
+Dijital imzayı doğrulamadan önce projenizi Visual Studio'da ayarlamanız gerekir. İşte nasıl:
+
+### Yeni Bir Proje Oluştur
+
+1. Visual Studio'yu açın.
+2. Yeni bir proje oluştur'a tıklayın.
+3. Tercihinize bağlı olarak Konsol Uygulaması (.NET Core) veya Konsol Uygulaması (.NET Framework) öğesini seçin.
+4. İleri'ye tıklayın, projenize bir ad verin ve Oluştur'a tıklayın.
+
+### Aspose.Words for .NET'i yükleyin
+
+1. Çözüm Gezgini'nde proje adınıza sağ tıklayın ve NuGet Paketlerini Yönet'i seçin.
+2. NuGet Paket Yöneticisi'nde Aspose.Words'ü arayın.
+3. Projenize eklemek için Yükle'ye tıklayın.
+
+## Adım 2: Dijital Olarak İmzalanmış Word Belgesini Yükleyin
+
+Artık projeniz ayarlandığına göre dijital olarak imzalanmış Word belgesini yükleyelim.
+
+```csharp
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-## 2. Adım: Dijital İmzalara Göz Atın
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile. Bu kod parçacığı yeni bir başlatıcıyı başlatır`Document` nesneyi oluşturur ve imzalı Word belgenizi yükler.
 
-Belgedeki tüm dijital imzalar arasında geçiş yapmak için bir döngü kullanın:
+## 3. Adım: Dijital İmzalara Erişin
+
+Belgeniz yüklendiğinde dijital imzalara erişme zamanı geldi.
 
 ```csharp
 foreach (DigitalSignature signature in doc.DigitalSignatures)
 {
-	// İmza bilgilerine erişme
-	Console.WriteLine("* Signature Found *");
-	Console.WriteLine("Is valid: " + signature.IsValid);
-	// Bu özellik yalnızca MS Word belgelerinde mevcuttur.
-	Console.WriteLine("Reason for signing: " + signature.Comments); 
-	Console.WriteLine("Time of signing: " + signature.SignTime);
-	Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-	Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-	Console.WriteLine();
+    Console.WriteLine("* Signature Found *");
+    Console.WriteLine("Is valid: " + signature.IsValid);
+    Console.WriteLine("Reason for signing: " + signature.Comments); 
+    Console.WriteLine("Time of signing: " + signature.SignTime);
+    Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+    Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+    Console.WriteLine();
 }
 ```
 
-Ekran mesajlarını ihtiyaçlarınıza göre özelleştirdiğinizden emin olun.
+Bu kod, belgedeki her dijital imzanın üzerinden geçer ve imzayla ilgili çeşitli ayrıntıların çıktısını alır. Her bir parçanın ne yaptığını açıklayalım:
 
-### Aspose.Words for .NET kullanarak İmzaya Erişim ve Doğrulama için örnek kaynak kodu
+1. İmza Bulundu: İmzanın bulunduğunu belirtir.
+2. Geçerlidir: İmzanın geçerli olup olmadığını kontrol eder.
+3. İmzalama nedeni: Varsa imzalama nedenini görüntüler.
+4. İmzalama zamanı: Belgenin imzalandığı zamanın zaman damgasını gösterir.
+5. Konu adı: Sertifikadan konu adını alır.
+6. Veren adı: Sertifikadan verenin adını alır.
 
-Aspose.Words for .NET kullanarak erişim ve imza doğrulamanın tam kaynak kodunu burada bulabilirsiniz:
+## 4. Adım: Kodunuzu Çalıştırın
+
+Her şey ayarlandıktan sonra kodunuzu çalıştırmanın ve sonuçları görmenin zamanı geldi.
+
+
+1. Programınızı çalıştırmak için F5 tuşuna basın veya Visual Studio'da Başlat düğmesine tıklayın.
+2. Belgeniz dijital olarak imzalanmışsa imza ayrıntılarının konsolda yazdırıldığını görürsünüz.
+
+## Adım 5: Olası Hataları Ele Alın
+
+Ortaya çıkabilecek olası hataları ele almak her zaman iyi bir fikirdir. Kodumuza bazı temel hata işlemeleri ekleyelim.
 
 ```csharp
-	
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Digitally signed.docx");
+try
+{
+    // Belgeler dizininin yolu.
+    string dataDir = "YOUR DOCUMENT DIRECTORY";
+    Document doc = new Document(dataDir + "Digitally signed.docx");
 
-	foreach (DigitalSignature signature in doc.DigitalSignatures)
-	{
-		Console.WriteLine("* Signature Found *");
-		Console.WriteLine("Is valid: " + signature.IsValid);
-		// Bu özellik yalnızca MS Word belgelerinde mevcuttur.
-		Console.WriteLine("Reason for signing: " + signature.Comments); 
-		Console.WriteLine("Time of signing: " + signature.SignTime);
-		Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
-		Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
-		Console.WriteLine();
-	}
-
+    foreach (DigitalSignature signature in doc.DigitalSignatures)
+    {
+        Console.WriteLine("* Signature Found *");
+        Console.WriteLine("Is valid: " + signature.IsValid);
+        Console.WriteLine("Reason for signing: " + signature.Comments); 
+        Console.WriteLine("Time of signing: " + signature.SignTime);
+        Console.WriteLine("Subject name: " + signature.CertificateHolder.Certificate.SubjectName.Name);
+        Console.WriteLine("Issuer name: " + signature.CertificateHolder.Certificate.IssuerName.Name);
+        Console.WriteLine();
+    }
+}
+catch (Exception ex)
+{
+    Console.WriteLine("An error occurred: " + ex.Message);
+}
 ```
 
-Bu adımları takip ederek Aspose.Words for .NET ile Word belgenizdeki dijital imzalara kolayca ulaşabilecek ve bunları doğrulayabileceksiniz.
+Bu, oluşabilecek tüm istisnaları yakalayacak ve bir hata mesajı yazdıracaktır.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki dijital imzalara erişme ve bunları doğrulama özelliğini araştırdık. Verilen adımları izleyerek bir belgeyi kolayca yükleyebilir, dijital imzalarına erişebilir ve geçerliliğini doğrulayabilirsiniz. Dijital imzalara erişme ve bunları doğrulama yeteneği, Word belgelerinizin bütünlüğünü ve orijinalliğini sağlamanın bir yolunu sağlar. Aspose.Words for .NET, dijital imzalarla Kelime İşleme için güçlü bir API sunarak doğrulama sürecini otomatikleştirmenize ve belgelerinizin güvenliğini artırmanıza olanak tanır.
+İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki dijital imzalara başarıyla erişip bunları doğruladınız. Göründüğü kadar korkutucu değil, değil mi? Bu adımlarla, Word belgelerinizdeki dijital imzaları güvenle işleyebilir, orijinalliklerini ve bütünlüklerini sağlayabilirsiniz. Mutlu kodlama!
 
-### SSS'ler
+## SSS'ler
 
-#### S: Word belgesindeki dijital imzalar nelerdir?
+### Aspose.Words for .NET'i bir Word belgesine dijital imza eklemek için kullanabilir miyim?
 
-C: Word belgesindeki dijital imzalar, belgenin bütünlüğünü ve kaynağını doğrulamanın bir yolunu sağlayan elektronik imzalardır. Alıcıların belgenin değiştirilmediğini ve güvenilir bir kaynaktan geldiğini doğrulamasını sağlayan dijital sertifikalar ve şifreleme algoritmaları kullanılarak oluşturulurlar.
+Evet, Aspose.Words for .NET'i Word belgelerine dijital imza eklemek için kullanabilirsiniz. Kitaplık, dijital imzaların hem eklenmesi hem de doğrulanması için kapsamlı özellikler sağlar.
 
-#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki dijital imzalara nasıl erişebilirim?
+### Aspose.Words for .NET ne tür dijital imzaları doğrulayabilir?
 
-C: Aspose.Words for .NET kullanarak bir Word belgesindeki dijital imzalara erişmek için şu adımları takip edebilirsiniz:
-1.  Belgeyi kullanarak yükleyin`Document` sınıfını seçin ve belge dosyasının yolunu belirtin.
-2.  Yinelemek için bir döngü kullanın`DigitalSignatures` belgenin toplanması. Her yineleme bir dijital imzayı temsil eder.
+Aspose.Words for .NET, X.509 sertifikalarını kullanan DOCX dosyalarındaki dijital imzaları doğrulayabilir.
 
-#### S: Word belgesindeki dijital imzadan hangi bilgilere erişebilirim?
+### Aspose.Words for .NET Microsoft Word'ün tüm sürümleriyle uyumlu mu?
 
-C: Bir Word belgesindeki dijital imzadan aşağıdakiler gibi çeşitli bilgilere erişebilirsiniz:
-- Geçerlilik: İmzanın geçerli olup olmadığını kontrol edin.
-- Yorumlar: İmzalayan tarafından belirtilen imzalama nedenini öğrenin.
-- İmza Zamanı: Belgenin imzalandığı zamanı öğrenin.
-- Konu Adı: İmzalayanın veya sertifika konusunun adını alın.
-- Veren Adı: Sertifikayı verenin adını alın.
+Aspose.Words for .NET, DOC, DOCX, RTF ve daha fazlası dahil olmak üzere Microsoft Word belgelerinin tüm sürümlerini destekler.
 
-#### S: Aspose.Words for .NET'i kullanarak bir Word belgesindeki dijital imzanın geçerliliğini doğrulayabilir miyim?
+### Aspose.Words for .NET için nasıl geçici lisans alabilirim?
 
- C: Evet, Aspose.Words for .NET'i kullanarak bir Word belgesindeki dijital imzanın geçerliliğini doğrulayabilirsiniz. Erişerek`IsValid` mülkiyeti`DigitalSignature` nesne, imzanın geçerli olup olmadığını belirleyebilirsiniz.
+ Aspose.Words for .NET için geçici lisansı şu adresten alabilirsiniz:[Burada](https://purchase.aspose.com/temporary-license/). Bu, kütüphanenin tüm özelliklerini herhangi bir sınırlama olmaksızın denemenize olanak tanır.
 
-#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki dijital imzaların geçerliliğini nasıl doğrulayabilirim?
+### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
 
-C: Aspose.Words for .NET kullanarak bir Word belgesindeki dijital imzaların geçerliliğini doğrulamak için şu adımları takip edebilirsiniz:
-1.  Erişmek`DigitalSignatures` belgenin toplanması.
-2.  Her birini yineleyin`DigitalSignature` koleksiyondaki nesne.
-3.  Kullan`IsValid` mülkiyeti`DigitalSignature` İmzanın geçerli olup olmadığını kontrol etmek için itiraz edin.
-
-#### S: İmzalayanın yorumlarını veya imzalama nedenini bir Word belgesindeki dijital imzadan alabilir miyim?
-
-C: Evet, imzalayanın yorumlarını veya imzalama nedenini bir Word belgesindeki dijital imzadan alabilirsiniz.`Comments` mülkiyeti`DigitalSignature` nesnesi, imzalama işlemi sırasında imzalayan tarafından belirtilen açıklamalara erişim sağlar.
-
-#### S: Aspose.Words for .NET'te imza doğrulama özelliği ne tür belgeleri destekliyor?
-
-C: Aspose.Words for .NET'teki imza doğrulama özelliği, Word belgelerindeki dijital imzaların DOCX dosya formatıyla doğrulanmasını destekler. DOCX dosyalarındaki imzaları doğrulamak için bu özelliği kullanabilirsiniz.
-
-#### S: Aspose.Words for .NET kullanarak bir Word belgesindeki dijital imzanın sertifika ayrıntılarına nasıl erişebilirim?
-
- C: Aspose.Words for .NET kullanarak bir Word belgesindeki dijital imzanın sertifika ayrıntılarına erişmek için şu adrese erişebilirsiniz:`CertificateHolder` mülkiyeti`DigitalSignature` nesne. itibaren`CertificateHolder` nesnesini kullanarak, konu adı ve verenin adı gibi sertifikanın çeşitli ayrıntılarını alabilirsiniz.
-
-#### S: Aspose.Words for .NET'i kullanarak bir Word belgesindeki dijital imzaların görüntülenmesini veya işlenmesini özelleştirebilir miyim?
-
- C: Evet, Aspose.Words for .NET'i kullanarak bir Word belgesindeki dijital imzaların görüntülenmesini veya işlenmesini özelleştirebilirsiniz. Özelliklerine ve yöntemlerine erişerek`DigitalSignature` nesnesini kullanarak istediğiniz bilgiyi çıkarabilir, ek doğrulamalar gerçekleştirebilir veya imza doğrulama sürecini uygulamanızın iş akışına entegre edebilirsiniz.
-
-#### S: Aspose.Words for .NET kullanarak bir Word belgesinde birden fazla dijital imzayı doğrulamak mümkün müdür?
-
- C: Evet, Aspose.Words for .NET kullanarak bir Word belgesindeki birden fazla dijital imzayı doğrulamak mümkündür. Yineleyerek`DigitalSignatures` belgenin toplanmasıyla her dijital imzaya ayrı ayrı erişebilir ve bunları doğrulayabilirsiniz.
-
+ Aspose.Words for .NET'in ayrıntılı belgelerini burada bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

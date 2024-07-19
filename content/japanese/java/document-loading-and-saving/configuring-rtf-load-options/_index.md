@@ -2,7 +2,7 @@
 title: Aspose.Words for Java での RTF 読み込みオプションの構成
 linktitle: RTF ロード オプションの設定
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java で RTF 読み込みオプションを構成します。RTF ドキュメント内の UTF-8 テキストを認識する方法を学びます。コード例を使用したステップバイステップ ガイド。
+description: Aspose.Words for Java で RTF 読み込みオプションを構成します。RTF ドキュメント内の UTF-8 テキストを認識する方法を学習します。コード例を使用したステップバイステップ ガイド。
 type: docs
 weight: 12
 url: /ja/java/document-loading-and-saving/configuring-rtf-load-options/

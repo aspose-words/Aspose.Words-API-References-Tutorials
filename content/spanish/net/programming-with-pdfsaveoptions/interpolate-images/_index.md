@@ -67,7 +67,7 @@ En este tutorial, explicamos cómo habilitar la interpolación de imágenes al c
 ### Preguntas frecuentes
 
 #### P: ¿Qué es la interpolación de fotogramas en un documento PDF?
-R: La interpolación de imágenes en un documento PDF se refiere a la técnica de renderizado que mejora la calidad visual de las imágenes al convertir un documento a formato PDF. La interpolación de imágenes da como resultado imágenes más fluidas y detalladas en el documento PDF generado.
+R: La interpolación de imágenes en un documento PDF se refiere a la técnica de renderizado que mejora la calidad visual de las imágenes al convertir un documento al formato PDF. La interpolación de imágenes da como resultado imágenes más fluidas y detalladas en el documento PDF generado.
 
 #### P: ¿Cómo puedo habilitar la interpolación de imágenes al convertir a PDF con Aspose.Words para .NET?
 R: Para habilitar la interpolación de imágenes al convertir a PDF con Aspose.Words para .NET, siga estos pasos:

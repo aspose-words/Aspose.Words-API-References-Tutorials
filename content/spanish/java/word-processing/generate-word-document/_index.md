@@ -22,7 +22,7 @@ Antes de comenzar, asegúrese de tener instalado el kit de desarrollo Java (JDK)
 
 ## 3. Instalación de Aspose.Words para Java
 
-Para utilizar Aspose.Words para Java en su proyecto, debe descargar la biblioteca desde Aspose.Releases (https://releases.aspose.com/words/java/). Después de descargar el paquete, incluya el archivo JAR Aspose.Words en la ruta de clases de su proyecto Java.
+Para utilizar Aspose.Words para Java en su proyecto, debe descargar la biblioteca desde Aspose.Releases (https://releases.aspose.com/words/java/). Después de descargar el paquete, incluya el archivo JAR Aspose.Words en la ruta de clase de su proyecto Java.
 
 ## 4. Crear un nuevo documento de Word
 

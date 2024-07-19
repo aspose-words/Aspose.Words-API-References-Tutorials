@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Dokument hochladen
 
-Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Rendering.docx“ heißt und sich im angegebenen Dokumentverzeichnis befindet.
+Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Rendering.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -68,7 +68,7 @@ In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Schrift
 
 ### Häufig gestellte Fragen
 
-#### F: Was bedeutet das Einbetten von Schriftart-Teilmengen in ein PDF-Dokument?
+#### F: Was bedeutet das Einbetten von Schriftarten-Teilmengen in ein PDF-Dokument?
 A: Beim Einbetten von Schriftuntergruppen in ein PDF-Dokument werden nur die im Dokument verwendeten Glyphen und nicht alle vollständigen Schriftarten einbezogen. Dadurch wird die Größe der PDF-Datei reduziert, da nur die Schriftdaten einbezogen werden, die zur Anzeige der tatsächlich im Dokument verwendeten Zeichen erforderlich sind.
 
 #### F: Was ist der Unterschied zwischen dem Einbetten vollständiger Schriftarten und dem Einbetten von Schriftartenteilmengen?
@@ -86,7 +86,7 @@ A: Um Schriftarten-Teilmengen mit Aspose.Words für .NET in ein PDF-Dokument ein
  Speichern Sie das Dokument im PDF-Format mit den eingebetteten Schriftuntergruppen mithilfe des`Save` Methode der`Document` Objekt, das den Namen der Ausgabedatei und die zuvor konfigurierten Speicheroptionen angibt.
 
 #### F: Welche Vorteile bietet das Einbetten von Schriftarten-Untergruppen in ein PDF-Dokument?
-A: Das Einbetten von Schriftart-Untergruppen in ein PDF-Dokument bietet folgende Vorteile:
+A: Das Einbetten von Schriftarten-Untergruppen in ein PDF-Dokument bietet folgende Vorteile:
 
 Reduzierte PDF-Dateigröße: Durch die Einbeziehung nur der im Dokument verwendeten Glyphen wird die PDF-Dateigröße im Vergleich zum Einbetten vollständiger Schriftarten reduziert.
 

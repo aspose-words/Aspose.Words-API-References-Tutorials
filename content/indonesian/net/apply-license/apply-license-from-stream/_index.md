@@ -9,7 +9,7 @@ url: /id/net/apply-license/apply-license-from-stream/
 ---
 ## Perkenalan
 
-Hai, rekan pembuat kode! Jika Anda mendalami dunia Aspose.Words untuk .NET, salah satu hal pertama yang perlu Anda lakukan adalah menerapkan lisensi untuk membuka potensi penuh perpustakaan. Dalam panduan ini, kami akan memandu Anda tentang cara mengajukan lisensi dari suatu aliran. Percayalah, ini lebih mudah daripada kedengarannya, dan di akhir tutorial ini, aplikasi Anda akan aktif dan berjalan dengan lancar. Siap untuk memulai? Ayo langsung masuk!
+Hai, rekan pembuat kode! Jika Anda terjun ke dunia Aspose.Words untuk .NET, salah satu hal pertama yang perlu Anda lakukan adalah menerapkan lisensi untuk membuka potensi penuh perpustakaan. Dalam panduan ini, kami akan memandu Anda tentang cara mengajukan lisensi dari suatu aliran. Percayalah, ini lebih mudah daripada kedengarannya, dan di akhir tutorial ini, aplikasi Anda akan aktif dan berjalan dengan lancar. Siap untuk memulai? Ayo langsung masuk!
 
 ## Prasyarat
 

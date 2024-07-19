@@ -2,7 +2,7 @@
 title: 管理文件權限
 linktitle: 管理文件權限
 second_title: Aspose.Words Java 文件處理 API
-description: 了解如何使用 Aspose.Words for Java 有效管理文件權限。這個綜合指南提供了逐步說明和原始程式碼範例。
+description: 了解如何使用 Aspose.Words for Java 有效管理文件權限。本綜合指南提供了逐步說明和原始程式碼範例。
 type: docs
 weight: 11
 url: /zh-hant/java/document-security/managing-document-permissions/

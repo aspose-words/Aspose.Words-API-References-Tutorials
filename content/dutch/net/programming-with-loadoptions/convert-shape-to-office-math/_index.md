@@ -15,7 +15,7 @@ Voordat u in de code duikt, is het belangrijk dat u de Aspose.Words-bibliotheek 
 
 ## Laadopties configureren
 
-De eerste stap is het configureren van de laadopties voor ons document. Gebruik de klasse LoadOptions om laadparameters op te geven. In ons geval willen we de vormen converteren naar wiskundige Office-formules, dus moeten we de eigenschap ConvertShapeToOfficeMath instellen op true. Hier leest u hoe u het moet doen:
+De eerste stap is het configureren van de laadopties voor ons document. Gebruik de klasse LoadOptions om laadparameters op te geven. In ons geval willen we de vormen converteren naar wiskundige formules in Office, dus moeten we de eigenschap ConvertShapeToOfficeMath instellen op true. Hier leest u hoe u het moet doen:
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };

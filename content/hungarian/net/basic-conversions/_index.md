@@ -14,7 +14,7 @@ Basic Conversions végigvezeti az alapvető dokumentum-konverziókon az Aspose.W
 | Cím | Leírás |
 | --- | --- |
 | [Konvertálja a dokumentumot Docx-be](./doc-to-docx/) | Ismerje meg, hogyan konvertálhat DOC-t DOCX-vé az Aspose.Words for .NET használatával. Útmutató lépésről lépésre kódpéldákkal. Tökéletes fejlesztőknek.  |
-| [A Docx konvertálása Rtf-re](./docx-to-rtf/) | Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan konvertálhat DOCX-et RTF-re az Aspose.Words for .NET használatával. Ideális azoknak a fejlesztőknek, akik hatékony megoldást keresnek.  |  
+| [A Docx konvertálása Rtf-re](./docx-to-rtf/) | Részletes útmutatónkból megtudhatja, hogyan konvertálhat DOCX-et RTF-re az Aspose.Words for .NET használatával. Könnyű konvertálás a zökkenőmentes dokumentumfeldolgozás érdekében. |  
 | [Word fájl konvertálása PDF-be](./docx-to-pdf/) | Útmutatónk segítségével megtudhatja, hogyan konvertálhat egyszerűen Word-fájlokat PDF-be az Aspose.Words for .NET használatával. Tökéletes azoknak a fejlesztőknek, akik gyors és megbízható dokumentumkonverziót keresnek. | 
 | [Docx konvertálása bájttá](./docx-to-byte/) | Ismerje meg, hogyan alakíthatja át a Docx-ot bájttömbbé .NET-ben az Aspose.Words használatával a hatékony dokumentumfeldolgozás érdekében. Lépésről lépésre útmutató mellékelve. |  
 | [A Docx konvertálása Epub formátumba](./docx-to-epub/) | Könnyedén konvertálhat DOCX-et EPUB-ba az Aspose.Words for .NET segítségével. Kövesse oktatóanyagunkat a .NET-alkalmazásokba való zökkenőmentes integráció érdekében. |

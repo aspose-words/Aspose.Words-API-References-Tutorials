@@ -2,92 +2,104 @@
 title: Crear y personalizar gráficos usando formas
 linktitle: Crear y personalizar gráficos usando formas
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a crear y personalizar un gráfico usando una forma en un documento de Word usando Aspose.Words para .NET.
+description: Aprenda a crear y personalizar gráficos en documentos de Word usando Aspose.Words para .NET con esta guía paso a paso. Perfecto para visualización de datos.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/create-chart-using-shape/
 ---
+## Introducción
 
-Este tutorial explica cómo crear un gráfico usando una forma en un documento de Word usando Aspose.Words para .NET.
+Crear y personalizar gráficos en sus documentos es una habilidad crucial en el mundo actual basado en datos. Los gráficos pueden ayudar a visualizar datos, haciendo que la información compleja sea más digerible. Aspose.Words para .NET es una poderosa biblioteca que le permite crear y manipular documentos de Word mediante programación. En este tutorial, lo guiaremos a través del proceso de creación y personalización de un gráfico de líneas usando Aspose.Words para .NET. Al final de esta guía, podrá crear gráficos de aspecto profesional con facilidad.
 
 ## Requisitos previos
-Para seguir este tutorial, necesita tener lo siguiente:
 
-- Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y procesamiento de textos con documentos Word.
+Antes de profundizar en el código, asegúrese de tener lo siguiente:
 
-## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
+-  Aspose.Words para la biblioteca .NET: puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
+- Visual Studio: cualquier versión que admita .NET.
+- Conocimientos básicos de C#: comprender los conceptos básicos de C# le ayudará a seguir el tutorial.
+
+## Importar espacios de nombres
+
+Para comenzar, necesita importar los espacios de nombres necesarios. Este paso es esencial ya que le permite utilizar las clases y métodos proporcionados por Aspose.Words para .NET.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
 ```
 
-## Paso 2: cree un nuevo documento y DocumentBuilder
- Crear una nueva instancia del`Document` clase y un`DocumentBuilder`objeto de trabajar con el documento.
+## Paso 1: crear un nuevo documento
+
+Primero, necesitas crear un nuevo documento de Word. Este documento servirá como lienzo para su gráfico.
 
 ```csharp
+// Ruta a su directorio de documentos
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 3: insertar y configurar una forma de gráfico
- Inserte una forma de gráfico en el documento usando el`InsertChart` método de la`DocumentBuilder` objeto. Establezca el tipo de gráfico y las dimensiones que desee.
+## Paso 2: insertar un gráfico
+
+ A continuación, insertará un gráfico de líneas en el documento. El`DocumentBuilder.InsertChart` El método se utiliza para este propósito.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Paso 4: personaliza el gráfico
-Personalice el gráfico modificando varias propiedades, como el título y la leyenda del gráfico.
+## Paso 3: personaliza el título del gráfico
+
+Personalizar el título del gráfico puede ayudar a proporcionar contexto para los datos que se muestran. Puede mostrar el título y configurar su texto usando el siguiente código:
 
 ```csharp
 chart.Title.Show = true;
 chart.Title.Text = "Line Chart Title";
 chart.Title.Overlay = false;
+// Tenga en cuenta que si se especifica un valor nulo o vacío como texto del título, se mostrará el título generado automáticamente.
+```
+
+## Paso 4: ajustar la posición de la leyenda
+
+La leyenda ayuda a identificar diferentes series de datos en su gráfico. Puede personalizar su posición y configuración de superposición de esta manera:
+
+```csharp
 chart.Legend.Position = LegendPosition.Left;
 chart.Legend.Overlay = true;
 ```
 
 ## Paso 5: guarde el documento
- Guarde el documento en el directorio especificado utilizando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithCharts.CreateChartUsingShape.docx".
+
+Finalmente, debe guardar el documento. Este paso garantiza que todos los cambios se escriban en el archivo.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 ```
 
-### Código fuente de ejemplo para crear un gráfico usando formas usando Aspose.Words para .NET 
-
-```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Show = true;
-	chart.Title.Text = "Line Chart Title";
-	chart.Title.Overlay = false;
-	// Tenga en cuenta que si se especifica un valor nulo o vacío como texto del título, se mostrará el título generado automáticamente.
-	chart.Legend.Position = LegendPosition.Left;
-	chart.Legend.Overlay = true;
-	doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
-```
-
-¡Eso es todo! Ha creado con éxito un gráfico utilizando una forma en un documento de Word utilizando Aspose.Words para .NET.
-
 ## Conclusión
-En este tutorial, aprendió cómo crear un gráfico usando una forma en un documento de Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso, puede insertar y configurar una forma de gráfico, personalizar su apariencia y guardar el documento. Aspose.Words para .NET proporciona un conjunto completo de funciones para el procesamiento de textos con documentos y gráficos de Word, lo que le permite crear gráficos de aspecto profesional y visualmente atractivos directamente en sus aplicaciones .NET.
 
-### Preguntas frecuentes
+En este tutorial, cubrimos cómo crear y personalizar un gráfico de líneas en un documento de Word usando Aspose.Words para .NET. Si sigue la guía paso a paso, ahora puede crear gráficos visualmente atractivos que comuniquen sus datos de manera efectiva. Aspose.Words para .NET ofrece una amplia gama de opciones de personalización, lo que le permite adaptar gráficos a sus necesidades específicas.
 
-#### P1. ¿Puedo crear gráficos en un documento de Word usando Aspose.Words para .NET?
-Sí, con Aspose.Words para .NET, puede crear gráficos en un documento de Word mediante programación. Aspose.Words proporciona API y funcionalidades para insertar varios tipos de gráficos, personalizar su apariencia y manipular datos de gráficos.
+## Preguntas frecuentes
 
-#### P2. ¿Qué tipos de gráficos son compatibles con Aspose.Words para .NET?
-Aspose.Words para .NET admite una amplia gama de tipos de gráficos, incluidos gráficos de líneas, gráficos de barras, gráficos circulares, gráficos de áreas, gráficos de dispersión y más. Puede elegir el tipo de gráfico apropiado según sus datos y requisitos de visualización.
+### ¿Puedo usar Aspose.Words para .NET para crear otros tipos de gráficos?
 
-#### P3. ¿Puedo personalizar la apariencia del gráfico creado?
-Sí, puede personalizar la apariencia del gráfico creado utilizando Aspose.Words para .NET. Puede modificar propiedades como el título del gráfico, la posición de la leyenda, las etiquetas de datos, las etiquetas de los ejes, los colores y otros elementos visuales para satisfacer sus necesidades específicas de diseño y formato.
+ Sí, Aspose.Words para .NET admite varios tipos de gráficos, incluidos gráficos de barras, gráficos circulares y más. Puedes explorar la documentación.[aquí](https://reference.aspose.com/words/net/) para más detalles.
+
+### ¿Cómo puedo probar Aspose.Words para .NET antes de comprarlo?
+
+ Puede descargar una versión de prueba gratuita desde[aquí](https://releases.aspose.com/). Esto le permite probar la biblioteca y sus funciones antes de realizar una compra.
+
+### ¿Hay alguna manera de obtener soporte si tengo problemas?
+
+ Absolutamente. Puede acceder al soporte a través de los foros de la comunidad Aspose[aquí](https://forum.aspose.com/c/words/8)La comunidad y el personal de Aspose son muy receptivos.
+
+### ¿Cómo compro una licencia de Aspose.Words para .NET?
+
+ Puede comprar una licencia directamente desde el sitio web de Aspose[aquí](https://purchase.aspose.com/buy). Existen varias opciones de licencia para adaptarse a diferentes necesidades.
+
+### ¿Qué pasa si necesito una licencia temporal para un proyecto a corto plazo?
+
+ Aspose ofrece licencias temporales, que puedes solicitar[aquí](https://purchase.aspose.com/temporary-license/).

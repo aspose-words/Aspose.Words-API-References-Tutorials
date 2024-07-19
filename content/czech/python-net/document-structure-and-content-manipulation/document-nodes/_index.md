@@ -183,7 +183,7 @@ doc.encrypt(aw.EncryptionType.STANDARD, "password")
 
 ## Závěr
 
-V tomto kurzu jste se naučili základy používání Aspose.Words pro Python k programové manipulaci a vylepšování dokumentů Wordu. Od načítání a ukládání dokumentů po navigaci ve stromu dokumentů, práci s odstavci, formátování, tabulky a další – nyní máte pevný základ pro manipulaci s dokumenty.
+V tomto kurzu jste se naučili základy používání Aspose.Words pro Python k programové manipulaci a vylepšování dokumentů Wordu. Od načítání a ukládání dokumentů po navigaci ve stromu dokumentů, práci s odstavci, formátování, tabulky a další, nyní máte pevný základ pro manipulaci s dokumenty.
 
 ## Nejčastější dotazy
 

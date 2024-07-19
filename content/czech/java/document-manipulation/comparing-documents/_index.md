@@ -16,9 +16,9 @@ Porovnání dokumentů zahrnuje analýzu dvou dokumentů a identifikaci rozdíl�
 
  Než se vrhneme na porovnání dokumentů, ujistěte se, že máte nainstalovaný Aspose.Words for Java. Knihovnu si můžete stáhnout z[Aspose.Words pro vydání Java](https://releases.aspose.com/words/java/) strana. Po stažení jej zahrňte do svého projektu Java.
 
-## Základní srovnání dokumentů
+## Porovnání základních dokumentů
 
- Začněme základy porovnávání dokumentů. Použijeme dva dokumenty,`docA` a`docB`a porovnejte je.
+ Začněme základy porovnávání dokumentů. Použijeme dva dokumenty,`docA`a`docB`a porovnejte je.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
- tomto fragmentu kódu načteme dva dokumenty,`docA` a`docB` a poté použijte`compare` způsob, jak je porovnat. Zadáme autora jako „uživatele“ a provede se porovnání. Nakonec zkontrolujeme, zda existují revize, které ukazují rozdíly mezi dokumenty.
+ tomto fragmentu kódu načteme dva dokumenty,`docA`a`docB` a poté použijte`compare` způsob, jak je porovnat. Zadáme autora jako „uživatele“ a provede se porovnání. Nakonec zkontrolujeme, zda existují revize, které ukazují rozdíly mezi dokumenty.
 
 ## Přizpůsobení srovnání s možnostmi
 

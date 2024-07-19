@@ -219,7 +219,7 @@ print(predicted_label)
 
 ### Dokumentummunkafolyamatok automatizálása
 
-Fedezze fel, hogyan használják a szervezetek a dokumentumintelligenciát az ismétlődő feladatok, például a számlafeldolgozás, a szerződések létrehozása és a jelentéskészítés automatizálására.
+Fedezze fel, hogyan használják a szervezetek a dokumentumintelligenciát az ismétlődő feladatok automatizálására, például a számlafeldolgozásra, a szerződések létrehozására és a jelentéskészítésre.
 
 ```python
 # Implementing document automation using Aspose.Words for Python

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-pdfsaveoptions/conversion-to-pdf-17/
 ---
 
-tym samouczku przeprowadzimy Cię przez kolejne etapy konwersji dokumentu Word do formatu PDF 1.7 za pomocą Aspose.Words dla .NET. Konwersja do formatu PDF 1.7 umożliwia generowanie plików PDF zgodnych ze standardem PDF 1.7. Wykonaj poniższe kroki:
+W tym samouczku przeprowadzimy Cię przez kolejne etapy konwersji dokumentu Word do formatu PDF 1.7 za pomocą Aspose.Words dla .NET. Konwersja do formatu PDF 1.7 umożliwia generowanie plików PDF zgodnych ze standardem PDF 1.7. Wykonaj poniższe kroki:
 
 ## Krok 1: Ładowanie dokumentu
 

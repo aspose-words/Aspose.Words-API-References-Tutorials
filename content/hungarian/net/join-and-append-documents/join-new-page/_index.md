@@ -2,70 +2,96 @@
 title: Csatlakozz az új oldalhoz
 linktitle: Csatlakozz az új oldalhoz
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan kapcsolhat össze két dokumentumot egy új oldalon, miközben megőrzi a formázást az Aspose.Words for .NET használatával.
+description: Ismerje meg, hogyan kapcsolhat össze és fűzhet hozzá dokumentumokat a Wordben az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat a hatékony dokumentumegyesítés érdekében.
 type: docs
 weight: 10
 url: /hu/net/join-and-append-documents/join-new-page/
 ---
+## Bevezetés
 
-Ez az oktatóanyag elmagyarázza, hogyan kapcsolhat össze két dokumentumot egy új oldalon az Aspose.Words for .NET használatával. A megadott forráskód bemutatja, hogyan lehet egy dokumentumot hozzáfűzni egy másik dokumentum végéhez, miközben a hozzáfűzött dokumentumot új oldalon kezdi.
+Ha nagy dokumentumokkal dolgozik, vagy több dokumentumot egyesít egybe, a formázás megőrzése és az áttekinthetőség biztosítása kulcsfontosságú. Az Aspose.Words for .NET hatékony eszközöket kínál a Word-dokumentumok programozott kezeléséhez, lehetővé téve a fejlesztők számára az összetett feladatok hatékony végrehajtását.
 
-## 1. lépés: Állítsa be a projektet
+## Előfeltételek
 
-Győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
+Mielőtt elkezdené ezt az oktatóanyagot, győződjön meg arról, hogy rendelkezik az alábbiakkal:
+- A Visual Studio telepítve van a gépedre.
+-  Aspose.Words a .NET könyvtárhoz. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- C# programozási és .NET környezeti alapismeretek.
 
--  Aspose.Words for .NET könyvtár telepítve. Letöltheti innen[Aspose.Releases]https://releases.aspose.com/words/net/ vagy használja a NuGet csomagkezelőt a telepítéséhez.
-- Egy dokumentumkönyvtár elérési útja, ahol a forrás- és céldokumentum található.
+## Névterek importálása
 
-## 2. lépés: Nyissa meg a forrás- és céldokumentumot
+Először importálja a szükséges névtereket a C# projektbe:
 
- Nyissa meg a forrás- és céldokumentumot a segítségével`Document` osztályú konstruktőr. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+```csharp
+using Aspose.Words;
+using System;
+```
+
+Kövesse az alábbi lépéseket a dokumentumok összekapcsolásához és hozzáfűzéséhez, miközben gondoskodik arról, hogy a hozzáfűzött tartalom új oldalon kezdődjön:
+
+## 1. lépés: Állítsa be projektjét
+
+Kezdje egy új C# konzolalkalmazás létrehozásával a Visual Studióban. Telepítse az Aspose.Words NuGet csomagot a projektbe.
+
+## 2. lépés: Töltse be a forrás és a cél dokumentumokat
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Forrás- és céldokumentumok betöltése
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 3. lépés: Új oldalszakasz beállítása
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumfájlok tényleges elérési útjával.
 
- A csatolt dokumentum új oldalon való indításához állítsa be a`SectionStart` a forrásdokumentum első szakaszának tulajdonsága`SectionStart.NewPage`.
+## 3. lépés: Állítsa a szakasz elejét az Új oldal értékre
+
+Állítsa be a forrásdokumentum első szakaszának szakasz elejét úgy, hogy egy új oldalon kezdődjön:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## 4. lépés: Csatolja a forrásdokumentumot
+Ez biztosítja, hogy a hozzáfűzött tartalom egy új oldalon kezdődik a céldokumentumban.
 
- Csatlakoztassa a forrásdokumentumot a céldokumentumhoz a gombbal`AppendDocument` módszere a`Document` osztály. Állítsa be az importálási formátum módot`ImportFormatMode.KeepSourceFormatting` hogy megőrizze az eredeti stílusokat a forrásdokumentumból.
+## 4. lépés: Forrásdokumentum csatolása a céldokumentumhoz
+
+A forrásdokumentum hozzáfűzése a céldokumentumhoz az eredeti formázás megőrzése mellett:
 
 ```csharp
+// A forrásdokumentum hozzáfűzése a forrásdokumentumban található eredeti stílusok használatával.
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
 ## 5. lépés: Mentse el a módosított dokumentumot
 
-Végül mentse el a módosított céldokumentumot a`Save` módszere a`Document` tárgy.
+Mentse el a módosított céldokumentumot egy új fájlba:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```
 
-Ezzel befejeződik a két dokumentum egy új oldalon történő egyesítése az Aspose.Words for .NET használatával.
+Ezzel elmenti a kombinált dokumentumot a hozzáfűzött tartalommal egy új oldalon kezdődően.
 
-### Példa forráskódra a Csatlakozás új oldalhoz az Aspose.Words for .NET használatával 
+## Következtetés
 
-```csharp
-	// A dokumentumkönyvtár elérési útja
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Ebben az oktatóanyagban megtanultuk, hogyan lehet dokumentumokat egyesíteni és hozzáfűzni egy Word-fájlhoz az Aspose.Words for .NET használatával. Ha követi ezeket a lépéseket, hatékonyan egyesíthet több dokumentumot, miközben biztosítja, hogy a hozzáfűzött tartalom egy új oldalon kezdődik, megőrizve az eredeti formázást.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	// Állítsa be a csatolt dokumentumot úgy, hogy egy új oldalon induljon.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
-	// A forrásdokumentum hozzáfűzése a forrásdokumentumban található eredeti stílusok használatával.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
-```
+## GYIK
+
+### Hozzáfűzhetek kettőnél több dokumentumot az Aspose.Words for .NET használatával?
+Igen, egymás után több dokumentumot is hozzáfűzhet, ha minden dokumentumhoz megismétli a hozzáfűzési műveletet.
+
+### Hogyan kezelhetem a dokumentum formázási ütközését a hozzáfűzés során?
+Az Aspose.Words különféle importálási módokat biztosít a formázási ütközések kezelésére, például a forrásformázás megtartására vagy a célformázás használatára.
+
+### Támogatja az Aspose.Words különböző nyelvű vagy kódolású dokumentumok hozzáfűzését?
+Igen, az Aspose.Words nyelvtől és kódolástól függetlenül kezeli a dokumentumok hozzáfűzését, biztosítva a zökkenőmentes integrációt.
+
+### Lehet-e makrókat vagy űrlapmezőket tartalmazó dokumentumokat hozzáfűzni?
+Az Aspose.Words támogatja a dokumentumok hozzáfűzését makróval és űrlapmezőkkel, fenntartva azok funkcióját az egyesített dokumentumban.
+
+### Automatizálhatom a dokumentum-hozzáfűzési feladatokat kötegelt folyamatban az Aspose.Words használatával?
+Az Aspose.Words for .NET lehetővé teszi a dokumentum-hozzáfűzési feladatok automatizálását kötegelt folyamatokban, növelve ezzel a dokumentumkezelés hatékonyságát.

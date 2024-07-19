@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // أدخل الحقل IF في المستند.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//تقييم حالة IF.
+// تقييم حالة IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // عرض نتيجة التقييم.
@@ -62,7 +62,7 @@ Console.WriteLine(actualResult);
 
 #### س: ما هو شرط IF في Aspose.Words؟
 
-ج: شرط IF في Aspose.Words هو ميزة تتيح لك تقييم الشرط المنطقي وعرض محتويات مختلفة اعتمادًا على نتيجة الشرط. على سبيل المثال، يمكنك استخدام شرط IF لعرض نص مختلف في مستند بناءً على شروط معينة محددة مسبقًا.
+ج: شرط IF في Aspose.Words هو ميزة تسمح لك بتقييم شرط منطقي وعرض محتويات مختلفة اعتمادًا على نتيجة الشرط. على سبيل المثال، يمكنك استخدام شرط IF لعرض نص مختلف في مستند بناءً على شروط معينة محددة مسبقًا.
 
 #### س: كيفية إدراج شرط IF في مستند Word باستخدام Aspose.Words؟
 

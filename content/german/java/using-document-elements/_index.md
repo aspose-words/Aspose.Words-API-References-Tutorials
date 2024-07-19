@@ -54,7 +54,7 @@ Erfahren Sie in diesem umfassenden Tutorial, wie Sie die Silbentrennung in Aspos
 ### [Verwenden von Listen in Aspose.Words für Java](./using-lists/)
 Lernen Sie mit diesem Schritt-für-Schritt-Tutorial, Listen in Aspose.Words für Java zu verwenden. Organisieren und formatieren Sie Ihre Dokumente effektiv.
 ### [Verwenden von Markdown in Aspose.Words für Java](./using-markdown/)
-Lernen Sie mit diesem Schritt-für-Schritt-Tutorial, Markdown in Aspose.Words für Java zu verwenden. Erstellen, gestalten und speichern Sie mühelos Markdown-Dokumente.
+Lernen Sie mit diesem Schritt-für-Schritt-Tutorial, Markdown in Aspose.Words für Java zu verwenden. Erstellen, formatieren und speichern Sie mühelos Markdown-Dokumente.
 ### [Verwenden von Knoten in Aspose.Words für Java](./using-nodes/)
 Lernen Sie mit diesem Schritt-für-Schritt-Tutorial, Knoten in Aspose.Words für Java zu manipulieren. Schalten Sie die Leistung der Dokumentverarbeitung frei.
 ### [Verwenden von OLE-Objekten und ActiveX-Steuerelementen in Aspose.Words für Java](./using-ole-objects-and-activex/)

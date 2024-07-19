@@ -19,7 +19,7 @@ Words Processing with Markdown provides a comprehensive resource for learning ho
 | [Inline Code](./inline-code/) | Learn how to inline code with Aspose.Words for .NET Step-by-step guide. |
 | [Autolink](./autolink/) | Learn how to insert autolink with Aspose.Words for .NET Step-by-step guide. |
 | [Link](./link/) | Learn how to insert links with Aspose.Words for .NET. Step-by-step guide. |
-| [Image](./image/) | Learn how to insert and customize image with Aspose.Words for .NET Step-by-step guide. |
+| [Image](./image/) | Learn how to add images to your documents using Aspose.Words for .NET with this step-by-step guide. Enhance your docs with visuals in no time. |
 | [Horizontal Rule](./horizontal-rule/) | Learn how to insert a horizontal rule with Aspose.Words for .NET Step-by-step guide. |
 | [Heading](./heading/) | Learn how to use heading with Aspose.Words for .NET Step-by-step guide. |
 | [Setext Heading](./setext-heading/) | Learn how to use Setext headings to format your documents with Aspose.Words for .NET Step-by-step guide. |
@@ -27,8 +27,8 @@ Words Processing with Markdown provides a comprehensive resource for learning ho
 | [Fenced Code](./fenced-code/) | Learn how to use the fenced code feature with Aspose.Words for .NET Step-by-step guide. |
 | [Quote](./quote/) | Learn how to use quote with Aspose.Words for .NET Step-by-step guide. |
 | [Bulleted List](./bulleted-list/) | Learn how to create a bulleted list with Aspose.Words for .NET Step-by-step guide. |
-| [Ordered List](./ordered-list/) | Learn how to create ordered list with Aspose.Words for .NET Step-by-step guide. |
-| [Table](./table/) | Learn how to create a table with Aspose.Words for .NET Step-by-step guide. |
+| [Ordered List](./ordered-list/) | Learn how to create ordered lists in Word documents using Aspose.Words for .NET with our step-by-step guide. Perfect for automating document creation. |
+| [Table](./table/) | Learn how to create and customize tables in Aspose.Words for .NET with this step-by-step guide. Perfect for generating structured and visually appealing documents. |
 | [Read Markdown Document](./read-markdown-document/) | Learn how to read markdown document with Aspose.Words for .NET Step-by-step guide. |
 | [Emphases](./emphases/) | Learn how to use emphases (bold and italics) with Aspose.Words for .NET Step-by-step guide. |
-| [Use Warning Source](./use-warning-source/) | Learn how to use warning source with Aspose.Words for .NET Step-by-step guide. |
+| [Use Warning Source](./use-warning-source/) | Master Aspose.Words for .NET with this step-by-step guide on using the WarningSource class for handling Markdown warnings. Perfect for C# developers. |

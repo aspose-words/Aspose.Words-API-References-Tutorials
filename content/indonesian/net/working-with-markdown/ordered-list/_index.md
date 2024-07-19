@@ -2,96 +2,96 @@
 title: Daftar pesanan
 linktitle: Daftar pesanan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat daftar berurutan dengan Aspose.Words untuk .NET Panduan langkah demi langkah.
+description: Pelajari cara membuat daftar berurutan di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk mengotomatiskan pembuatan dokumen.
 type: docs
 weight: 10
 url: /id/net/working-with-markdown/ordered-list/
 ---
+## Perkenalan
 
-Dalam contoh ini, kami akan menjelaskan cara menggunakan fungsionalitas daftar terurut dengan Aspose.Words untuk .NET. Daftar Terurut memungkinkan Anda mengatur item secara berurutan dengan angka.
+Jadi, Anda memutuskan untuk mendalami Aspose.Words untuk .NET guna membuat dokumen Word yang menakjubkan secara terprogram. Pilihan yang fantastis! Hari ini, kami akan menguraikan cara membuat daftar terurut dalam dokumen Word. Kami akan melakukannya langkah demi langkah, jadi apakah Anda seorang pemula coding atau profesional berpengalaman, Anda akan merasakan panduan ini sangat berguna. Mari kita mulai!
 
-## Langkah 1: Menggunakan pembuat dokumen
+## Prasyarat
 
-Pertama, kita akan menggunakan pembuat dokumen untuk membuat dokumen baru.
+Sebelum kita mendalami kodenya, ada beberapa hal yang Anda perlukan:
+
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Jika tidak, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan .NET.
+3. Pengetahuan Dasar C#: Anda harus terbiasa dengan dasar-dasar C# agar mudah diikuti.
+
+## Impor Namespace
+
+Untuk menggunakan Aspose.Words dalam proyek Anda, Anda perlu mengimpor namespace yang diperlukan. Ini seperti menyiapkan kotak peralatan Anda sebelum mulai bekerja.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Mari kita pecahkan kodenya menjadi beberapa langkah kecil dan jelaskan setiap bagiannya. Siap? Ini dia!
+
+## Langkah 1: Inisialisasi Dokumen
+
+Hal pertama yang pertama, Anda perlu membuat dokumen baru. Anggap saja ini seperti membuka dokumen Word kosong di komputer Anda.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Menerapkan format daftar terurut
+Di sini, kami menginisialisasi dokumen baru dan objek DocumentBuilder. DocumentBuilder seperti pena Anda, memungkinkan Anda menulis konten ke dalam dokumen.
 
- Kami akan menerapkan format daftar terurut menggunakan pembuat dokumen`ApplyBulletDefault`metode. Kita juga dapat menyesuaikan format penomoran dengan masuk ke level daftar dan mengatur format yang kita inginkan.
+## Langkah 2: Terapkan Format Daftar Bernomor
+
+Sekarang, mari terapkan format daftar bernomor default. Ini seperti mengatur dokumen Word Anda untuk menggunakan poin bernomor.
 
 ```csharp
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
+builder.ListFormat.ApplyNumberDefault();
 ```
 
-## Langkah 3: Menambahkan item ke daftar
+Baris kode ini mengatur penomoran daftar Anda. Mudah, bukan?
 
- Kita dapat menambahkan item ke daftar menggunakan pembuat dokumen`Writeln` metode.
+## Langkah 3: Tambahkan Item Daftar
 
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Langkah 4: Buat indentasi daftar
-
- Kita dapat membuat indentasi daftar menggunakan pembuat dokumen`ListIndent` metode.
+Selanjutnya, mari tambahkan beberapa item ke daftar kita. Bayangkan Anda sedang mencatat daftar belanjaan.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
-```
-
-## Langkah 5: Menyimpan dokumen
-
-Terakhir, kita bisa menyimpan dokumen dalam format yang diinginkan.
-
-### Contoh kode sumber untuk daftar terurut dengan Aspose.Words untuk .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = $"{(char) 0}.";
-builder.ListFormat.List.ListLevels[1].NumberFormat = $"{(char) 1}.";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
+```
 
+Dengan baris ini, Anda menambahkan dua item pertama ke daftar Anda.
+
+## Langkah 4: Indentasi Daftar
+
+Bagaimana jika Anda ingin menambahkan sub-item di bawah suatu item? Ayo lakukan itu!
+
+```csharp
 builder.ListFormat.ListIndent();
 
 builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
-Selamat! Anda sekarang telah mempelajari cara menggunakan fitur daftar terurut dengan Aspose.Words untuk .NET.
+ Itu`ListIndent` metode membuat indentasi daftar, membuat sub-daftar. Anda sekarang membuat daftar hierarki, seperti daftar tugas yang disarangkan.
 
+## Kesimpulan
 
-### FAQ
+Membuat daftar berurutan dalam dokumen Word secara terprogram mungkin tampak menakutkan pada awalnya, namun dengan Aspose.Words untuk .NET, semuanya menjadi sangat mudah. Dengan mengikuti langkah-langkah sederhana ini, Anda dapat dengan mudah menambahkan dan mengelola daftar di dokumen Anda. Baik Anda membuat laporan, membuat dokumen terstruktur, atau sekadar mengotomatiskan alur kerja Anda, Aspose.Words untuk .NET siap membantu Anda. Jadi, mengapa menunggu? Mulailah membuat kode dan lihat keajaibannya terungkap!
 
-#### T: Bagaimana cara membuat daftar terurut di Markdown?
+## FAQ
 
-A: Untuk membuat daftar terurut dalam Markdown, awali setiap item daftar dengan nomor diikuti dengan titik (`1.`, `2.`, `3.`), diikuti dengan spasi.
+### Bisakah saya menyesuaikan gaya penomoran daftar?  
+ Ya, Anda dapat menyesuaikan gaya penomoran menggunakan`ListFormat` properti. Anda dapat mengatur gaya penomoran yang berbeda seperti angka Romawi, huruf, dll.
 
-#### T: Bisakah kita menyusun daftar yang diurutkan di Markdown?
+### Bagaimana cara menambahkan lebih banyak tingkat lekukan?  
+ Anda dapat menggunakan`ListIndent` metode beberapa kali untuk membuat tingkat sub-daftar yang lebih dalam. Setiap panggilan ke`ListIndent` menambahkan satu tingkat lekukan.
 
-J: Ya, dimungkinkan untuk menyusun daftar yang diurutkan dalam Markdown dengan menambahkan empat spasi offset di depan setiap item daftar yang disarangkan.
+### Bisakah saya menggabungkan poin-poin dan daftar bernomor?  
+ Sangat! Anda dapat menerapkan format daftar berbeda dalam dokumen yang sama menggunakan`ListFormat` Properti.
 
-#### T: Bagaimana cara menyesuaikan penomoran daftar yang dipesan?
+### Apakah mungkin untuk melanjutkan penomoran dari daftar sebelumnya?  
+Ya, Anda dapat melanjutkan penomoran dengan menggunakan format daftar yang sama. Aspose.Words memungkinkan Anda mengontrol penomoran daftar di berbagai paragraf.
 
-J: Dalam Markdown standar, penomoran daftar terurut dihasilkan secara otomatis. Namun, beberapa editor Markdown mengizinkan Anda menyesuaikannya menggunakan ekstensi tertentu.
-
-#### T: Apakah daftar yang diurutkan dalam Markdown mendukung indentasi?
-
-A: Ya, daftar yang diurutkan dalam lekukan dukungan penurunan harga. Anda dapat menambahkan shift ke kiri menggunakan spasi atau tab.
-
-#### T: Dapatkah tautan atau teks sebaris ditambahkan ke item daftar?
-
-J: Ya, Anda dapat menambahkan link atau teks sebaris ke item daftar menggunakan sintaks penurunan harga yang sesuai.
+### Bagaimana cara menghapus format daftar?  
+ Anda dapat menghapus format daftar dengan menelepon`ListFormat.RemoveNumbers()`. Ini akan mengubah item daftar kembali menjadi paragraf biasa.

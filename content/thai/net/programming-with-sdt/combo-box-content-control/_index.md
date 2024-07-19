@@ -17,7 +17,7 @@ url: /th/net/programming-with-sdt/combo-box-content-control/
 - ความรู้พื้นฐานเกี่ยวกับ C# และการประมวลผลคำด้วยเอกสาร Word
 
 ## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสาร
- เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสาร
+ เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"`ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสาร
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## ขั้นตอนที่ 3: เพิ่มรายการลงใน Combo Box
- เพิ่มรายการลงในกล่องคำสั่งผสมโดยใช้การ`ListItems` ทรัพย์สินของ`StructuredDocumentTag` แต่ละรายการจะแสดงด้วย`SdtListItem` วัตถุซึ่งรับข้อความที่แสดงและค่า ในตัวอย่างนี้ เราเพิ่มสามรายการลงในกล่องคำสั่งผสม
+ เพิ่มรายการลงในกล่องคำสั่งผสมโดยใช้การ`ListItems` ทรัพย์สินของ`StructuredDocumentTag` - แต่ละรายการจะแสดงด้วย`SdtListItem` วัตถุซึ่งรับข้อความที่แสดงและค่า ในตัวอย่างนี้ เราเพิ่มสามรายการลงในกล่องคำสั่งผสม
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

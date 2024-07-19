@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Steg 2: Ladda dina dokument
 
- Därefter måste du ladda de Word-dokument du vill jämföra. I det här exemplet antar vi att du har två namngivna dokument`Document.docx` och`Document2.docx` finns i din dokumentkatalog.
+ Därefter måste du ladda de Word-dokument du vill jämföra. I det här exemplet antar vi att du har två namngivna dokument`Document.docx`och`Document2.docx` finns i din dokumentkatalog.
 
 ```csharp
 // Sökvägen till dokumentkatalogen.

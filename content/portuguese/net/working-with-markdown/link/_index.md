@@ -51,8 +51,8 @@ Parabéns! Agora você aprendeu como usar o recurso de links com Aspose.Words fo
 
 #### P: Como posso personalizar o texto de exibição de um link no Aspose.Words?
 
-R: Para personalizar o texto de exibição de um link no Aspose.Words, você pode modificar o conteúdo entre o`<a>` Tag. Por exemplo,`<a href="https://www.aspose.com">Click here</a>` exibirá o texto "Clique aqui" como um hiperlink.
+ R: Para personalizar o texto de exibição de um link no Aspose.Words, você pode modificar o conteúdo entre o`<a>` Tag. Por exemplo,`<a href="https://www.aspose.com">Click here</a>` exibirá o texto "Clique aqui" como um hiperlink.
 
 #### P: Posso especificar um destino para um link no Aspose.Words?
 
- R: Sim, você pode especificar um destino para um link no Aspose.Words usando o`target` atributo do`<a>` marcação. Por exemplo,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` abrirá o link em uma nova janela ou guia.
+R: Sim, você pode especificar um destino para um link no Aspose.Words usando o`target` atributo do`<a>` marcação. Por exemplo,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` abrirá o link em uma nova janela ou guia.

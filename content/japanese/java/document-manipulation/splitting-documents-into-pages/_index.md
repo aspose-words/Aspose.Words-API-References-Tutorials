@@ -18,7 +18,7 @@ Aspose.Words for Java は、Word 文書をプログラムで操作できる Java
 
 コードに進む前に、次の前提条件が満たされていることを確認してください。
 
-- Java 開発キット (JDK) がシステムにインストールされています。
+- Java Development Kit (JDK) がシステムにインストールされています。
 - Aspose.Words for Javaライブラリはダウンロードできます[ここ](https://releases.aspose.com/words/java/).
 
 ## 3. 環境の設定
@@ -183,7 +183,7 @@ public int getPageEnd(Node node) throws Exception {
 		: collector.getEndPageIndex(node);
 }
 /// <要約>
-//指定されたノードが何ページにわたっているかを返します。ノードが 1 ページ内に含まれている場合は 1 を返します。
+//指定されたノードが何ページにまたがるかを返します。ノードが 1 ページ内に含まれる場合は 1 を返します。
 /// </要約>
 /// <パラメータ名="ノード">
 /// ノード。

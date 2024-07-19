@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 3: แทรกวัตถุ OLE ด้วยแพ็คเกจ OLE
- ใช้ตัวสร้างเอกสาร`InsertOleObject` วิธีการแทรกวัตถุ OLE ด้วยแพ็คเกจ OLE ลงในเอกสาร ระบุสตรีมข้อมูล ประเภทออบเจ็กต์ ตัวเลือกการแสดงผล และการตั้งค่าที่จำเป็นอื่นๆ
+ ใช้ตัวสร้างเอกสาร`InsertOleObject`วิธีการแทรกวัตถุ OLE ด้วยแพ็คเกจ OLE ลงในเอกสาร ระบุสตรีมข้อมูล ประเภทออบเจ็กต์ ตัวเลือกการแสดงผล และการตั้งค่าที่จำเป็นอื่นๆ
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### ถาม: จะแทรกวัตถุ OLE พร้อมแพ็คเกจ OLE ลงในเอกสารได้อย่างไร
 
- ตอบ: ใช้`InsertOleObject`วิธีการสร้างเอกสาร (`DocumentBuilder`) เพื่อแทรกวัตถุ OLE ที่มีแพ็คเกจ OLE ลงในเอกสาร ระบุสตรีมข้อมูล ประเภทออบเจ็กต์ ตัวเลือกการแสดงผล และการตั้งค่าที่จำเป็นอื่นๆ นี่คือตัวอย่าง:
+ ตอบ: ใช้`InsertOleObject` วิธีการสร้างเอกสาร (`DocumentBuilder`) เพื่อแทรกวัตถุ OLE ที่มีแพ็คเกจ OLE ลงในเอกสาร ระบุสตรีมข้อมูล ประเภทออบเจ็กต์ ตัวเลือกการแสดงผล และการตั้งค่าที่จำเป็นอื่นๆ นี่คือตัวอย่าง:
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### ถาม: จะบันทึกเอกสารได้อย่างไร?
 
- ตอบ: ใช้เอกสาร`Save` วิธีการบันทึกเอกสารเป็นไฟล์ นี่คือตัวอย่าง:
+ ตอบ: ใช้เอกสาร`Save`วิธีการบันทึกเอกสารเป็นไฟล์ นี่คือตัวอย่าง:
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

@@ -2,138 +2,153 @@
 title: Visa Göm bokmärken i Word-dokument
 linktitle: Visa Göm bokmärken i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du visar eller döljer ett specifikt bokmärke i Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du dynamiskt visar eller döljer bokmärken i ett Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Perfekt för utvecklare.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## Introduktion
 
-I den här artikeln kommer vi att utforska C#-källkoden ovan för att förstå hur man använder funktionen Show Hide Bookmarks i Aspose.Words for .NET-biblioteket. Denna funktion låter dig visa eller dölja ett specifikt bokmärke i Word-dokument.
+Har du någonsin sett att du behöver dölja eller visa vissa delar av ditt Word-dokument dynamiskt? Nåväl, du har tur! Med Aspose.Words för .NET kan du enkelt hantera synligheten av bokmärkt innehåll i dina dokument. Denna handledning kommer att leda dig genom processen att visa och dölja bokmärken i ett Word-dokument med Aspose.Words för .NET. Vi kommer att dela upp koden steg för steg, så oavsett om du är en erfaren utvecklare eller nybörjare, kommer du att tycka att den här guiden är lätt att följa.
 
 ## Förutsättningar
 
-- Grundläggande kunskaper i C#-språket.
-- .NET-utvecklingsmiljö med Aspose.Words-biblioteket installerat.
+Innan vi dyker in i koden, låt oss se till att du har allt du behöver:
 
-## Steg 1: Ladda dokumentet
+1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket installerat. Om inte kan du ladda ner den[här](https://releases.aspose.com/words/net/).
+2. Utvecklingsmiljö: En IDE som Visual Studio.
+3. Grundläggande kunskaper i C#: Förtrogenhet med C#-programmering kommer att vara fördelaktigt.
+4. Ett Word-dokument: Ett exempel på Word-dokument med bokmärken.
 
- Vi använder`Document` klass för att ladda det befintliga dokumentet från en fil:
+## Importera namnområden
+
+Innan du börjar med koden måste du importera de nödvändiga namnrymden. Lägg till följande i början av din C#-fil:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## Steg 1: Ladda ditt dokument
+
+Först och främst måste du ladda Word-dokumentet som innehåller bokmärkena. Så här kan du göra det:
+
+```csharp
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## Steg 2: Visa eller dölj ett specifikt bokmärke
+### Förklaring
 
- Vi använder`ShowHideBookmarkedContent` funktion för att visa eller dölja ett specifikt bokmärke i dokumentet. Den här funktionen tar som parametrar dokumentet, namnet på bokmärket och en boolean för att indikera om bokmärket ska visas eller döljas:
+- dataDir: Detta är katalogsökvägen där ditt Word-dokument finns.
+-  Dokumentdokument: Detta initierar en ny instans av`Document` klass med din angivna fil.
+
+## Steg 2: Visa eller dölj bokmärkt innehåll
+
+Därefter kommer vi att definiera en metod för att visa eller dölja det bokmärkta innehållet. Här är hela metoden:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{MERGEFIELD bookmark}" = "sant" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### Förklaring
+
+- Bokmärke bm: Hämtar bokmärket från dokumentet.
+- DocumentBuilder Builder: Hjälper till att navigera och ändra dokumentet.
+- Fältfält: Infogar ett OM-fält för att kontrollera bokmärkets skick.
+- Nod currentNode: Går igenom noderna för att hitta fältets början och slut.
+
+## Steg 3: Kör funktionen Visa/Göm
+
+ Nu måste du ringa`ShowHideBookmarkedContent` metod, skicka dokumentet, bokmärkets namn och synlighetsflaggan:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## Steg 3: Spara det ändrade dokumentet
+### Förklaring
 
- Vi använder`Save` metod för att spara det ändrade dokumentet till en fil:
+- doc: Ditt dokumentobjekt.
+- "MyBookmark1": Namnet på bokmärket du vill visa/dölja.
+- false: Synlighetsflaggan (sant för att visa, falskt för att dölja).
+
+## Steg 4: Spara ditt dokument
+
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### Exempel på källkod för Show Hide Bookmarks med Aspose.Words för .NET
+### Förklaring
 
-Här är det fullständiga exemplet på källkoden för att visa eller dölja ett specifikt bokmärke med Aspose.Words för .NET:
+- dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx": Sökvägen och namnet på det nya dokumentet där ändringarna kommer att sparas.
 
-```csharp
-
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### ShowHideBookmarkedContent källkod
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {IF "{MERGEFIELD bookmark}" = "sant" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## Slutsats
 
-I den här artikeln utforskade vi C#-källkoden för att förstå hur man använder funktionen Visa göm bokmärken i Aspose.Words för .NET. Vi följde en steg-för-steg-guide för att visa eller dölja ett specifikt bokmärke i ett dokument.
+Och där har du det! Du har framgångsrikt lärt dig hur du visar och döljer bokmärken i ett Word-dokument med Aspose.Words för .NET. Denna teknik kan vara otroligt användbar för att dynamiskt generera dokument med villkorligt innehåll.
 
-### Vanliga frågor för att visa gömma bokmärken i word-dokument
+## FAQ's
 
-#### F: Kan jag visa eller dölja flera bokmärken i samma dokument?
+### Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt dokumentbehandlingsbibliotek som låter utvecklare skapa, modifiera och konvertera Word-dokument programmatiskt.
 
-S: Ja, du kan visa eller dölja flera bokmärken i samma dokument genom att upprepa steg 2 och 3 för varje bokmärke du vill bearbeta.
+### Hur får jag Aspose.Words för .NET?
+ Du kan ladda ner Aspose.Words för .NET från[här](https://releases.aspose.com/words/net/). En gratis provperiod är också tillgänglig.
 
-#### F: Fungerar den medföljande koden med andra Word-dokumentformat, som .doc eller .docm?
+### Kan jag använda den här metoden för andra typer av bokmärken?
+Ja, den här metoden kan anpassas för att hantera synligheten för alla bokmärken i ditt Word-dokument.
 
-S: Ja, den medföljande koden fungerar med olika Word-dokumentformat som stöds av Aspose.Words, såsom .doc och .docm. Se bara till att använda rätt filnamn och sökväg när du laddar och sparar dokumentet.
+### Vad händer om mitt dokument inte innehåller det angivna bokmärket?
+Om bokmärket inte finns kommer metoden att ge ett fel. Se till att bokmärket finns innan du försöker visa/dölja det.
 
-#### F: Hur kan jag visa ett dolt bokmärke igen?
-
- S: För att visa ett dolt bokmärke igen måste du använda detsamma`ShowHideBookmarkedContent` funktion som skickar värdet`true` för den booleska parametern som anger om bokmärket ska visas eller döljas.
-
-#### F: Kan jag använda villkor för att visa eller dölja bokmärken baserat på sammanslagningsfältsvärden i dokumentet?
-
- S: Ja, du kan använda villkor och slå samman fältvärden för att avgöra om ett bokmärke ska visas eller döljas. Du kan anpassa koden för`ShowHideBookmarkedContent` funktion för att ta hänsyn till lämpliga villkor och värden.
-
-#### F: Hur kan jag ta bort ett bokmärke i ett Word-dokument med Aspose.Words för .NET?
-
- S: För att ta bort ett bokmärke i ett Word-dokument med Aspose.Words för .NET, kan du använda`RemoveBookmarks` metod för`Document` klass. Här är en exempelkod:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### Hur kan jag få support om jag stöter på problem?
+ Du kan få stöd från Aspose-communityt[här](https://forum.aspose.com/c/words/8).

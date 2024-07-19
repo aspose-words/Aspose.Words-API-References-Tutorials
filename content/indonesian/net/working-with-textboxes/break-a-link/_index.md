@@ -2,7 +2,7 @@
 title: Putuskan Tautan Maju Dalam Dokumen Word
 linktitle: Putuskan Tautan Maju Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara memutus tautan maju dalam dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara memutus tautan dalam dokumen Word dengan Aspose.Words untuk .NET.
 type: docs
 weight: 10
 url: /id/net/working-with-textboxes/break-a-link/
@@ -67,11 +67,11 @@ textBox.Previous?.BreakForwardLink();
 
 ## Kesimpulan
 
-Selamat! Anda sekarang telah mempelajari cara memutus tautan pengalihan di dokumen Word menggunakan pustaka Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah dalam panduan ini, Anda dapat menyiapkan dokumen, membuat bentuk TextBox, dan memutus tautan pengalihan menggunakan metode yang berbeda.
+Selamat! Anda sekarang telah mempelajari cara memutus tautan pengalihan di dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah dalam panduan ini, Anda dapat menyiapkan dokumen, membuat bentuk TextBox, dan memutus tautan pengalihan menggunakan metode yang berbeda.
 
 ### FAQ untuk tautan maju dalam dokumen Word
 
-#### T: Pustaka apa yang digunakan untuk memutus tautan pengalihan di dokumen Word menggunakan Aspose.Words untuk .NET?
+#### T: Pustaka apa yang digunakan untuk memutus tautan pengalihan dalam dokumen Word menggunakan Aspose.Words untuk .NET?
 
 A: Untuk memutus link pengalihan pada dokumen Word menggunakan Aspose.Words for .NET, pustaka yang digunakan adalah Aspose.Words for .NET.
 
@@ -85,7 +85,7 @@ J: Alternatifnya, Anda dapat memutus tautan pengalihan dengan menyetel`Next` mil
 
 #### Q: Bagaimana cara memutus link yang mengarah ke TextBox?
 
- J: Dalam beberapa kasus, Anda perlu memutus tautan yang mengarah ke Kotak Teks. Anda dapat mencapai hal ini dengan menelepon`BreakForwardLink()` metode pada`Previous` formulir, yang memutus tautan ke TextBox.
+ J: Dalam beberapa kasus, Anda perlu memutus tautan yang mengarah ke TextBox. Anda dapat mencapai hal ini dengan menelepon`BreakForwardLink()` metode pada`Previous` formulir, yang memutus tautan ke TextBox.
 
 #### T: Bisakah kita memutus tautan pengalihan pada elemen selain Kotak Teks?
 

@@ -99,7 +99,7 @@ Opanowałeś teraz proces używania strumienia zasobów jako źródła czcionek 
 
 ###  P3: Czy mogę obsługiwać inne typy ostrzeżeń za pomocą`IWarningCallback`?
 
- Tak`IWarningCallback` interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
+ Tak`IWarningCallback`interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
 
 ### P4: Gdzie mogę znaleźć wsparcie dla Aspose.Words?
 

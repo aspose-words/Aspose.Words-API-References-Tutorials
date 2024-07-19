@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: Establecer carpetas de fuentes con prioridad
- Luego puede configurar las carpetas de fuentes con prioridad usando el`FontSettings` clase y el`SetFontsSources()`método. Puede especificar varias fuentes de fuentes utilizando instancias de`SystemFontSource` y`FolderFontSource`. En este ejemplo, hemos definido dos fuentes de fuentes: la fuente de fuentes predeterminada del sistema y una carpeta de fuentes personalizada con una prioridad de 1.
+ Luego puede configurar las carpetas de fuentes con prioridad usando el`FontSettings` clase y el`SetFontsSources()`método. Puede especificar varias fuentes de fuentes utilizando instancias de`SystemFontSource`y`FolderFontSource`. En este ejemplo, hemos definido dos fuentes de fuentes: la fuente de fuentes predeterminada del sistema y una carpeta de fuentes personalizada con una prioridad de 1.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]

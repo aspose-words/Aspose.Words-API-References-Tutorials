@@ -40,7 +40,7 @@ sdt.Style = style;
 ```
 
 ## Krok 4: Uložte dokument
- Uložte upravený dokument do zadaného adresáře pomocí`Save` metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu dokument uložíme jako "WorkingWithSdt.SetContentControlStyle.docx".
+ Uložte upravený dokument do zadaného adresáře pomocí`Save`metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu dokument uložíme jako "WorkingWithSdt.SetContentControlStyle.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 	doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ```
 
-je to! Úspěšně jste nastavili styl ovládacího prvku obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+A je to! Úspěšně jste nastavili styl ovládacího prvku obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET.

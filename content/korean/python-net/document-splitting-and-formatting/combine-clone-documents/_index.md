@@ -11,7 +11,7 @@ url: /ko/python-net/document-splitting-and-formatting/combine-clone-documents/
 
 ## Aspose.Words 설치
 
- 세부 사항을 살펴보기 전에 Python용 Aspose.Words를 설정해야 합니다. 다음 링크를 사용하여 다운로드하고 설치할 수 있습니다.[Python용 Aspose.Words 다운로드](https://releases.aspose.com/words/python/). 
+세부 사항을 살펴보기 전에 Python용 Aspose.Words를 설정해야 합니다. 다음 링크를 사용하여 다운로드하고 설치할 수 있습니다.[Python용 Aspose.Words 다운로드](https://releases.aspose.com/words/python/). 
 
 ## 문서 결합
 
@@ -127,7 +127,7 @@ Aspose.Words for Python은 문서 작업 흐름을 쉽게 조작하고 향상시
  활용`range.replace()` 방법을 적절한 옵션과 함께 사용하여 텍스트를 효율적으로 찾고 바꿀 수 있습니다.
 
 ### Aspose.Words는 서식 수정을 지원합니까?
-물론 다음과 같은 방법을 사용하여 형식을 수정할 수 있습니다.`run.font.size` 그리고`run.font.bold`.
+물론 다음과 같은 방법을 사용하여 형식을 수정할 수 있습니다.`run.font.size`그리고`run.font.bold`.
 
 ### Aspose.Words 문서에 어디서 액세스할 수 있나요?
  다음에서 포괄적인 문서를 찾을 수 있습니다.[Aspose.Words for Python API 참조](https://reference.aspose.com/words/python-net/).

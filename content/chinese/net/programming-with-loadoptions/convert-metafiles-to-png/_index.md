@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 
 在此示例中，我们使用指定的加载选项加载位于文档目录中的文档“WMF with image.docx”。
 
-## 使用 Aspose.Words for .NET 的 LoadOptions 和 Convert Metafiles To Png 功能的示例源代码
+## 使用 Aspose.Words for .NET 的将图元文件转换为 Png 功能的 LoadOptions 示例源代码
 
 ```csharp
 //文档目录的路径
@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 
 ## 结论
 
-在本指南中，我们解释了如何使用 .NET 的 Aspose.Words 库将元文件转换为 PNG 图像来加载文档。通过遵循提供的步骤并使用提供的 C# 源代码，您可以轻松地在 C# 应用程序中应用此功能。将元文件转换为 PNG 可确保更好的兼容性和文档的准确呈现。
+在本指南中，我们解释了如何使用适用于 .NET 的 Aspose.Words 库将元文件转换为 PNG 图像来加载文档。通过遵循提供的步骤并使用提供的 C# 源代码，您可以轻松地在 C# 应用程序中应用此功能。将元文件转换为 PNG 可确保更好的兼容性和文档的准确呈现。
 
 
 ### 常见问题解答

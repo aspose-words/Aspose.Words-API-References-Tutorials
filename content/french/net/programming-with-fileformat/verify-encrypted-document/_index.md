@@ -30,7 +30,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Étape 3 : Vérifiez si le document est crypté
 
- Nous utilisons le`IsEncrypted` propriété du`FileFormatInfo`objet pour vérifier si le document est crypté. Cette propriété renvoie`true` si le document est crypté, sinon il renvoie`false`. Nous affichons le résultat dans la console.
+ Nous utilisons le`IsEncrypted` propriété du`FileFormatInfo` objet pour vérifier si le document est crypté. Cette propriété renvoie`true` si le document est crypté, sinon il renvoie`false`. Nous affichons le résultat dans la console.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -38,7 +38,7 @@ Console.WriteLine(info.IsEncrypted);
 
 C'est tout ! Vous avez vérifié avec succès si un document est crypté à l'aide d'Aspose.Words pour .NET.
 
-### Exemple de code source pour vérifier les documents chiffrés avec Aspose.Words for .NET
+### Exemple de code source pour vérifier des documents chiffrés avec Aspose.Words for .NET
 
 ```csharp
 
@@ -70,14 +70,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ### Q : Comment détecter le format de fichier ?
- Vous pouvez utiliser le`DetectFileFormat` méthode du`FileFormatUtil`classe pour détecter les informations sur le format de fichier. Dans l'exemple suivant, nous supposons que le document chiffré s'appelle « Encrypted.docx » et se trouve dans le répertoire de documents spécifié :
+ Vous pouvez utiliser le`DetectFileFormat` méthode du`FileFormatUtil` classe pour détecter les informations sur le format de fichier. Dans l'exemple suivant, nous supposons que le document chiffré s'appelle « Encrypted.docx » et se trouve dans le répertoire de documents spécifié :
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
 ```
 
 ### Q : Comment vérifier si le document est crypté ?
- Vous pouvez utiliser le`IsEncrypted` propriété du`FileFormatInfo`objet pour vérifier si le document est crypté. Cette propriété renvoie`true` si le document est crypté, sinon il renvoie`false`. Le résultat s'affiche dans la console :
+ Vous pouvez utiliser le`IsEncrypted` propriété du`FileFormatInfo` objet pour vérifier si le document est crypté. Cette propriété renvoie`true` si le document est crypté, sinon il renvoie`false`. Le résultat s'affiche dans la console :
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);

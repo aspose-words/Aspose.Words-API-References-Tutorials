@@ -35,7 +35,7 @@ public class DocumentToImageConversion {
 
 ## 2. lépés: Töltse be a dokumentumot
 
-Ebben a lépésben betöltjük azt a Word-dokumentumot, amelyet képpé szeretnénk konvertálni. Ügyeljen arra, hogy cserélje ki`"sample.docx"` a dokumentum elérési útjával.
+Ebben a lépésben betöltjük azt a Word-dokumentumot, amelyet képpé szeretnénk konvertálni. Mindenképpen cserélje ki`"sample.docx"` a dokumentum elérési útjával.
 
 ```java
 // Töltse be a Word dokumentumot

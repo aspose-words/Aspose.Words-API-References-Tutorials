@@ -55,7 +55,7 @@ doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", sa
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
-// ओपन ऑफिस लंबाई, चौड़ाई और अन्य मापनीय स्वरूपण निर्दिष्ट करते समय सेंटीमीटर का उपयोग करता है
+// ओपन ऑफिस लंबाई, चौड़ाई और अन्य मापने योग्य स्वरूपण निर्दिष्ट करते समय सेंटीमीटर का उपयोग करता है
 // और दस्तावेजों में सामग्री गुणों का उपयोग करता है जबकि एमएस ऑफिस इंच का उपयोग करता है।
 OdtSaveOptions saveOptions = new OdtSaveOptions(); { saveOptions.setMeasureUnit(OdtSaveMeasureUnit.INCHES); }
 doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);

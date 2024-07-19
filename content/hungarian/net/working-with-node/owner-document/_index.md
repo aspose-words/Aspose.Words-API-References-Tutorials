@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## 4. lépés: Ellenőrizze a szülőcsomópontot és a tulajdonos dokumentumát
- Most, hogy létrehoztuk a bekezdés csomópontját, ellenőrizhetjük, hogy van-e szülőcsomópontja, és hogy a tulajdonos dokumentum megegyezik-e`doc`.
+Most, hogy létrehoztuk a bekezdés csomópontját, ellenőrizhetjük, hogy van-e szülőcsomópontja, és hogy a tulajdonos dokumentum megegyezik-e`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ V: A legtöbb esetben a csomópont dokumentumtulajdonosa a csomópont létrehoz�
 
 #### K: Hogyan lehet elérni a tulajdonos dokumentumának csomópontjait?
 
- V: A védett dokumentum csomópontjainak eléréséhez használhatja a Node.js környezetben használt XML API által biztosított módszereket és tulajdonságokat. Használhat például olyan módszereket, mint`getElementsByTagName` vagy`querySelector` adott csomópontok kiválasztásához a dokumentumban.
+V: A védett dokumentum csomópontjainak eléréséhez használhatja a Node.js környezetben használt XML API által biztosított módszereket és tulajdonságokat. Használhat például olyan módszereket, mint`getElementsByTagName` vagy`querySelector` adott csomópontok kiválasztásához a dokumentumban.

@@ -9,7 +9,7 @@ url: /de/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## Einführung
 
-Hallo liebe Entwicklerkollegen! Haben Sie sich schon einmal mitten in einem Word-Dokumentprojekt wiedergefunden und gedacht: „Mann, ich muss hier wirklich eine horizontale Linie einfügen, um das Ganze aufzulockern“? Nun, wissen Sie was? Sie haben Glück! Im heutigen Tutorial tauchen wir ein in das Einfügen einer horizontalen Linie in ein Word-Dokument mit Aspose.Words für .NET. Dies ist nicht nur irgendein gewöhnliches Tutorial – es ist vollgepackt mit detaillierten Schritten, interessanten Erklärungen und einer Prise Spaß. Also schnallen Sie sich an und machen Sie sich bereit, ein Profi im Umgang mit Aspose.Words für .NET zu werden!
+Hallo, liebe Entwickler! Haben Sie sich schon einmal mitten in einem Word-Dokumentprojekt wiedergefunden und gedacht: „Mann, ich muss hier wirklich eine horizontale Linie einfügen, um das Ganze aufzulockern“? Nun, wissen Sie was? Sie haben Glück! Im heutigen Tutorial tauchen wir ein in das Einfügen einer horizontalen Linie in ein Word-Dokument mit Aspose.Words für .NET. Dies ist nicht nur irgendein gewöhnliches Tutorial – es ist vollgepackt mit detaillierten Schritten, interessanten Erklärungen und einer Prise Spaß. Also schnallen Sie sich an und machen Sie sich bereit, ein Profi im Umgang mit Aspose.Words für .NET zu werden!
 
 ## Voraussetzungen
 
@@ -41,7 +41,7 @@ Lassen Sie uns den Vorgang nun in leicht verständliche Schritte unterteilen. Am
 
 ### Fügen Sie Aspose.Words zu Ihrem Projekt hinzu
 
- Stellen Sie sicher, dass Sie einen Verweis auf Aspose.Words hinzufügen. Wenn Sie es noch nicht heruntergeladen haben, holen Sie es sich hier[Hier](https://releases.aspose.com/words/net/). Sie können es mit dem NuGet-Paket-Manager zu Ihrem Projekt hinzufügen.
+ Stellen Sie sicher, dass Sie einen Verweis auf Aspose.Words hinzufügen. Wenn Sie es noch nicht heruntergeladen haben, laden Sie es herunter von[Hier](https://releases.aspose.com/words/net/). Sie können es mit dem NuGet-Paket-Manager zu Ihrem Projekt hinzufügen.
 
 ## Schritt 2: Dokument und DocumentBuilder initialisieren
 

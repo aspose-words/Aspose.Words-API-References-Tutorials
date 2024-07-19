@@ -27,7 +27,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Wstaw obiekt OLE
- Skorzystaj z Konstruktora Dokumentów`InsertOleObject` metoda wstawiania obiektu OLE do dokumentu. Określ adres URL obiektu OLE, typ obiektu, opcje wyświetlania i inne niezbędne ustawienia.
+ Skorzystaj z Konstruktora Dokumentów`InsertOleObject`metoda wstawiania obiektu OLE do dokumentu. Określ adres URL obiektu OLE, typ obiektu, opcje wyświetlania i inne niezbędne ustawienia.
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com”, „plik html”, prawda, prawda, null);
@@ -57,7 +57,7 @@ To jest kompletny przykładowy kod do wstawiania obiektu OLE za pomocą Aspose.W
 
 Podsumowując, wstawianie obiektów OLE do dokumentu programu Word to potężna funkcja oferowana przez Aspose.Words dla .NET. Korzystając z tej biblioteki, możesz łatwo osadzać obiekty OLE, takie jak pliki HTML, arkusze kalkulacyjne Excel, prezentacje PowerPoint itp., w dokumentach Word.
 
-W tym artykule przeszliśmy przez przewodnik krok po kroku wyjaśniający kod źródłowy w języku C#, który ilustruje, jak wstawić obiekt OLE do dokumentu Word. Omówiliśmy niezbędne odniesienia, tworzenie nowego dokumentu i generator dokumentów oraz kroki wstawiania obiektu OLE i zapisywania dokumentu.
+tym artykule przeszliśmy przez przewodnik krok po kroku wyjaśniający kod źródłowy w języku C#, który ilustruje, jak wstawić obiekt OLE do dokumentu Word. Omówiliśmy niezbędne odniesienia, tworzenie nowego dokumentu i generator dokumentów oraz kroki wstawiania obiektu OLE i zapisywania dokumentu.
 
 ### Często zadawane pytania dotyczące wstawiania obiektu OLE do dokumentu programu Word
 
@@ -81,7 +81,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### P: Jak wstawić obiekt OLE do dokumentu?
 
- O: Skorzystaj z`InsertOleObject`metoda konstruktora dokumentów (`DocumentBuilder`), aby wstawić obiekt OLE do dokumentu. Określ adres URL obiektu OLE, typ obiektu, opcje wyświetlania i inne niezbędne ustawienia. Oto przykład :
+ O: Skorzystaj z`InsertOleObject` metoda konstruktora dokumentów (`DocumentBuilder`), aby wstawić obiekt OLE do dokumentu. Określ adres URL obiektu OLE, typ obiektu, opcje wyświetlania i inne niezbędne ustawienia. Oto przykład :
 
 ```csharp
 builder. InsertOleObject("http://www.aspose.com”, „plik html”, prawda, prawda, null);
@@ -89,7 +89,7 @@ builder. InsertOleObject("http://www.aspose.com”, „plik html”, prawda, pra
 
 #### P: Jak zapisać dokument?
 
- O: Skorzystaj z dokumentu`Save` metoda zapisania dokumentu do pliku. Oto przykład :
+ O: Skorzystaj z dokumentu`Save`metoda zapisania dokumentu do pliku. Oto przykład :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");

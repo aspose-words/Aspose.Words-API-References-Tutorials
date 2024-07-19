@@ -28,7 +28,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Stap 3: Voeg een OLE-object in met een OLE-pakket
- Gebruik de Documentgenerator`InsertOleObject` methode om een OLE-object met een OLE-pakket in het document in te voegen. Geef de gegevensstroom, het objecttype, de weergaveopties en andere noodzakelijke instellingen op.
+ Gebruik de Documentgenerator`InsertOleObject`methode om een OLE-object met een OLE-pakket in het document in te voegen. Geef de gegevensstroom, het objecttype, de weergaveopties en andere noodzakelijke instellingen op.
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
@@ -97,7 +97,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 #### Vraag: Hoe kan ik een OLE-object met een OLE-pakket in het document invoegen?
 
- EEN: Gebruik de`InsertOleObject`methode van de documentbouwer (`DocumentBuilder`) om een OLE-object met een OLE-pakket in het document in te voegen. Geef de gegevensstroom, het objecttype, de weergaveopties en andere noodzakelijke instellingen op. Hier is een voorbeeld :
+ EEN: Gebruik de`InsertOleObject` methode van de documentbouwer (`DocumentBuilder`) om een OLE-object met een OLE-pakket in het document in te voegen. Geef de gegevensstroom, het objecttype, de weergaveopties en andere noodzakelijke instellingen op. Hier is een voorbeeld :
 
 ```csharp
 byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
@@ -112,7 +112,7 @@ using (Stream stream = new MemoryStream(bs))
 
 #### Vraag: Hoe kan ik het document opslaan?
 
- A: Gebruik het document`Save` methode om het document in een bestand op te slaan. Hier is een voorbeeld :
+ A: Gebruik het document`Save`methode om het document in een bestand op te slaan. Hier is een voorbeeld :
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

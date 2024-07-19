@@ -16,7 +16,7 @@ Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh ng
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Chấp nhận sửa đổi](./accept-revisions/) | Tìm hiểu cách chấp nhận bản sửa đổi đối với tài liệu Word bằng Aspose.Words cho .NET. |
+| [Chấp nhận sửa đổi](./accept-revisions/) | Tìm hiểu cách chấp nhận các bản sửa đổi đối với tài liệu Word bằng Aspose.Words cho .NET. |
 | [Nhận sửa đổi các loại từ](./get-revision-types/) | Nhận các loại từ sửa đổi trong tài liệu Word với Aspose.Words cho .NET. |
 | [Nhận nhóm sửa đổi](./get-revision-groups/) | Nhận thông tin chi tiết về nhóm sửa đổi trong tài liệu Word bằng Aspose.Words for .NET. |
 | [Xóa nhận xét trong tệp PDF](./remove-comments-in-pdf/) | Xóa nhận xét trong tệp PDF bằng Aspose.Words cho .NET. |

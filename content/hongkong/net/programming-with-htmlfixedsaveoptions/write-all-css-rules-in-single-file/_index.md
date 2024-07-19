@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/
 ---
 
-在 C# 應用程式中將 Word 文件轉換為固定 HTML 時，您可能希望將所有 CSS 規則合併到一個文件中，以實現更好的組織和可移植性。使用適用於 .NET 的 Aspose.Words 程式庫，您可以使用 HtmlFixedSaveOptions 儲存選項輕鬆指定此功能。在本逐步指南中，我們將引導您了解如何使用 Aspose.Words for .NET C# 原始程式碼，透過使用儲存選項 HtmlFixedSaveOptions 將所有 CSS 規則寫入單一檔案中，將 Word 文件轉換為固定 HTML。
+在 C# 應用程式中將 Word 文件轉換為固定 HTML 時，您可能希望將所有 CSS 規則合併到單一文件中，以實現更好的組織和可移植性。使用適用於 .NET 的 Aspose.Words 程式庫，您可以使用 HtmlFixedSaveOptions 儲存選項輕鬆指定此功能。在本逐步指南中，我們將引導您了解如何使用 Aspose.Words for .NET C# 原始程式碼，透過使用儲存選項 HtmlFixedSaveOptions 將所有 CSS 規則寫入單一檔案中，將 Word 文件轉換為固定 HTML。
 
 ## 了解 Aspose.Words 函式庫
 
@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 
 ## 結論
 
-在本指南中，我們介紹如何使用 HtmlFixedSaveOptions 和適用於 .NET 的 Aspose.Words 庫將所有 CSS 規則寫入單一文件，從而將 Word 文件轉換為固定 HTML。透過遵循提供的步驟並使用提供的 C# 原始程式碼，您可以輕鬆地在 C# 應用程式中應用此功能。將所有 CSS 規則寫入單一文件中可以更輕鬆地組織和管理文件轉換期間產生的 HTML 程式碼。
+在本指南中，我們介紹如何使用 HtmlFixedSaveOptions 和適用於 .NET 的 Aspose.Words 庫將所有 CSS 規則寫入單個文件，從而將 Word 文件轉換為固定 HTML。透過遵循提供的步驟並使用提供的 C# 原始程式碼，您可以輕鬆地在 C# 應用程式中應用此功能。將所有 CSS 規則寫入單一文件中可以更輕鬆地組織和管理文件轉換期間產生的 HTML 程式碼。

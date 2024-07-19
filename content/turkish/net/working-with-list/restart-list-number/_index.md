@@ -118,7 +118,7 @@ builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
 
 #### S: Aspose.Words'te yeniden başlatılan liste numaralandırmasının önekini ve sonekini özelleştirmek mümkün mü?
 
- C: Evet, Aspose.Words'te yeniden başlatılan liste numaralandırmasının önekini ve sonekini özelleştirebilirsiniz.`ListLevel` sınıf gibi özellikler sunar`ListLevel.NumberPrefix` Ve`ListLevel.NumberSuffix`bu, listedeki her düzey için önek ve son eki belirtmenize olanak tanır. Ön eki ve son eki gerektiği gibi özelleştirmek için bu özellikleri kullanabilirsiniz.
+ C: Evet, Aspose.Words'te yeniden başlatılan liste numaralandırmasının önekini ve sonekini özelleştirebilirsiniz.`ListLevel` sınıf gibi özellikler sunar`ListLevel.NumberPrefix`Ve`ListLevel.NumberSuffix`bu, listedeki her düzey için önek ve son eki belirtmenize olanak tanır. Ön eki ve son eki gerektiği gibi özelleştirmek için bu özellikleri kullanabilirsiniz.
 
 #### S: Listenin yeniden başlatılması gereken belirli bir numaralandırma değerini nasıl belirleyebilirim?
 

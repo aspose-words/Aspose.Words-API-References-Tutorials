@@ -96,4 +96,4 @@ doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 
 #### प्रश्न: क्या मैं .NET के लिए Aspose.Words में हल की गई टिप्पणी का पाठ संपादित कर सकता हूँ?
 
- उत्तर: हां, आप Aspose.Words for .NET में हल की गई टिप्पणी के पाठ को एक्सेस करके संपादित कर सकते हैं।`Comment.Text` संबंधित संपत्ति`Comment` वस्तु का चयन करना तथा आवश्यकतानुसार पाठ को संशोधित करना।
+ उत्तर: हां, आप Aspose.Words for .NET में हल की गई टिप्पणी के पाठ को संपादित कर सकते हैं।`Comment.Text` संबंधित संपत्ति`Comment` वस्तु का चयन करना तथा आवश्यकतानुसार पाठ को संशोधित करना।

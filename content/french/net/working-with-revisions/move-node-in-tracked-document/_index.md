@@ -127,7 +127,7 @@ doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 #### Q : Comment puis-je déplacer un nœud dans un document suivi sans générer de révisions ?
 
- R : Si vous souhaitez déplacer un nœud dans un document suivi sans générer de révisions, vous pouvez utiliser l'option`Remove` et`InsertAfter` ou`InsertBefore` méthodes du`Node` objet. Par exemple, pour déplacer un paragraphe après un autre paragraphe, vous pouvez utiliser le code suivant :
+ R : Si vous souhaitez déplacer un nœud dans un document suivi sans générer de révisions, vous pouvez utiliser l'option`Remove`et`InsertAfter` ou`InsertBefore` méthodes du`Node` objet. Par exemple, pour déplacer un paragraphe après un autre paragraphe, vous pouvez utiliser le code suivant :
 
 ```csharp
 Node nodeToMove = document.FirstSection.Body.Paragraphs[0];

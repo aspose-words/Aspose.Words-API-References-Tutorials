@@ -41,7 +41,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", sa
 
  In deze laatste stap slaan we het document op met behulp van de`Save` methode en geef het pad door naar het uitvoerbestand met de`.docx` extensie, samen met de opgegeven opslagopties.
 
-Nu kunt u de broncode uitvoeren om oudere stuurtekens te behouden bij het opslaan van een document. Het resulterende bestand wordt opgeslagen in de opgegeven map met de naam "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
+Nu kunt u broncode uitvoeren om oudere stuurtekens te behouden bij het opslaan van een document. Het resulterende bestand wordt opgeslagen in de opgegeven map met de naam "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
 
 ### Voorbeeldbroncode voor Keep Legacy Control Chars met Aspose.Words voor .NET 
 ```csharp

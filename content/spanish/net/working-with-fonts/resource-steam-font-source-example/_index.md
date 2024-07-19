@@ -99,7 +99,7 @@ Ahora domina el proceso de utilizar un flujo de recursos como fuente de fuente c
 
 ###  P3: ¿Puedo manejar otros tipos de advertencias con`IWarningCallback`?
 
- Sí el`IWarningCallback` La interfaz puede manejar varios tipos de advertencias, no solo la sustitución de fuentes.
+ Sí el`IWarningCallback`La interfaz puede manejar varios tipos de advertencias, no solo la sustitución de fuentes.
 
 ### P4: ¿Dónde puedo encontrar soporte para Aspose.Words?
 

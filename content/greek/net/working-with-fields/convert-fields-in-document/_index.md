@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Βήμα 3: Φορτώστε το έγγραφο
- Χρησιμοποιήστε το`Document` κλάση του Aspose.Words για να φορτώσετε το έγγραφο του Word που περιέχει τα συνδεδεμένα πεδία που θέλετε να μετατρέψετε.
+ Χρησιμοποιήστε το`Document`κλάση του Aspose.Words για να φορτώσετε το έγγραφο του Word που περιέχει τα συνδεδεμένα πεδία που θέλετε να μετατρέψετε.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

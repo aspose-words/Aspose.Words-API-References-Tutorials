@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Mã này tạo ra một thể hiện của`HtmlSaveOptions`và thiết lập`ResolveFontNames` tùy chọn để`true`để giải quyết các tên phông chữ bị thiếu khi chuyển đổi sang HTML. Ngoài ra,`PrettyFormat` tùy chọn được đặt thành`true` để có được mã HTML được định dạng độc đáo.
+ Mã này tạo ra một thể hiện của`HtmlSaveOptions` và thiết lập`ResolveFontNames` tùy chọn để`true`để giải quyết các tên phông chữ bị thiếu khi chuyển đổi sang HTML. Ngoài ra,`PrettyFormat` tùy chọn được đặt thành`true` để có được mã HTML được định dạng độc đáo.
 
 ## Bước 4: Chuyển đổi và lưu tài liệu sang HTML
 

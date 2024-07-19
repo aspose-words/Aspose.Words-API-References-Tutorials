@@ -16,7 +16,7 @@ Voordat we in de code duiken, moet je ervoor zorgen dat je aan de volgende verei
 
 - Java Development Kit (JDK) geïnstalleerd
 -  Aspose.Words voor Java-bibliotheek (u kunt het downloaden van[hier](https://releases.aspose.com/words/java/))
-- Geïntegreerde ontwikkelomgeving (IDE) naar keuze (Eclipse, IntelliJ IDEA, etc.)
+- Geïntegreerde ontwikkelomgeving (IDE) naar keuze (Eclipse, IntelliJ IDEA, enz.)
 
 ## Uw Java-project opzetten
 

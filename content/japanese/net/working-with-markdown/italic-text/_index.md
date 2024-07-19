@@ -46,11 +46,11 @@ builder.Writeln("This text will be Italic");
 
 #### Q: Aspose.Words でテキストを斜体にするにはどうすればいいですか?
 
-A: Aspose.Wordsでテキストを斜体にするには、`Font.Italic`の財産`Run`オブジェクト。このプロパティは次のように設定できます。`true`特定のテキストを斜体にするには、例えば`run.Font.Italic=true`に含まれるテキストを斜体にする`Run`物体。
+ A: Aspose.Wordsでテキストを斜体にするには、`Font.Italic`の財産`Run`オブジェクト。このプロパティは次のように設定できます。`true`特定のテキストを斜体にするには、例えば`run.Font.Italic=true`に含まれるテキストを斜体にする`Run`物体。
 
 #### Q: 同じ段落内の複数のテキストを斜体にすることはできますか?
 
- A: はい、複数のテキストを1つの段落に斜体にすることができます。`Run`オブジェクトを複数作成できます`Run`オブジェクトを設定し、`Font.Italic`財産に`true`各オブジェクトでテキストの必要な部分を斜体にします。その後、段落に斜体を追加できます。`Paragraph.AppendChild(run)`方法。
+ A: はい、複数のテキストを1つの段落に斜体で表示することができます。`Run`オブジェクトを複数作成できます`Run`オブジェクトを設定し、`Font.Italic`財産に`true`各オブジェクトでテキストの必要な部分を斜体にします。その後、段落に斜体を追加できます。`Paragraph.AppendChild(run)`方法。
 
 #### Q: Aspose.Words の表またはセル内のテキストを斜体にできますか?
 

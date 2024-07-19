@@ -1,7 +1,7 @@
 ---
 title: Erweiterte Suchen- und Ersetzen-Techniken in Word-Dokumenten
 linktitle: Erweiterte Suchen- und Ersetzen-Techniken in Word-Dokumenten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Lernen Sie erweiterte Such- und Ersetzungstechniken in Word-Dokumenten mit Aspose.Words für Python. Ersetzen Sie Text, verwenden Sie reguläre Ausdrücke, Formatierungen und mehr.
 type: docs
 weight: 12
@@ -88,7 +88,7 @@ doc.range.replace("old_text", "", False, False, format_callback)
 
 ## Schritt 7: Änderungen übernehmen
 
-Nachdem Sie die Such- und Ersetzungsvorgänge ausgeführt haben, speichern Sie das Dokument mit den Änderungen:
+Nachdem Sie die Such- und Ersetzungsvorgänge durchgeführt haben, speichern Sie das Dokument mit den Änderungen:
 
 ```python
 doc.save("path/to/save/document.docx")

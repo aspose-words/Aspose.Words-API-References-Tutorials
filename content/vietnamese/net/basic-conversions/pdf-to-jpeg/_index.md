@@ -15,7 +15,7 @@ Bạn đã bao giờ rơi vào tình huống cần chuyển đổi tệp PDF th�
 
 Trước khi bắt tay vào công việc chính, hãy đảm bảo rằng chúng ta có tất cả các con vịt trong một hàng. Đây là những gì bạn cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện mạnh mẽ này. Nếu không, bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện mạnh mẽ này. Nếu không, bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
 2. .NET Framework: Đảm bảo bạn đã thiết lập môi trường .NET trên máy của mình.
 3. Visual Studio: Bất kỳ phiên bản nào cũng được, miễn là bạn cảm thấy thoải mái khi điều hướng qua nó.
 4.  Tệp PDF: Chuẩn bị sẵn tệp PDF của bạn để chuyển đổi. Đối với hướng dẫn này, chúng tôi sẽ sử dụng một tệp có tên`Pdf Document.pdf`.

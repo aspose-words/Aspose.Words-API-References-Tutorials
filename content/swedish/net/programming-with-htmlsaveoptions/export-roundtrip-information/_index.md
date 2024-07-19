@@ -33,7 +33,7 @@ Nu kommer vi att konfigurera HTML-sparalternativen för att exportera dokumentet
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Denna kod skapar en instans av`HtmlSaveOptions`och ställer in`ExportRoundtripInformation` möjlighet att`true` att inkludera information tur och retur vid export.
+ Denna kod skapar en instans av`HtmlSaveOptions` och ställer in`ExportRoundtripInformation` möjlighet att`true` att inkludera information tur och retur vid export.
 
 ## Steg 4: Konvertera och spara dokumentet till HTML
 

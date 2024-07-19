@@ -2,168 +2,95 @@
 title: 忽略字段內的文本
 linktitle: 忽略字段內的文本
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 的「忽略欄位內的文字」功能。
+description: 了解如何使用 Aspose.Words for .NET 操作 Word 文件中欄位內的文字。本教程提供了帶有實際範例的逐步指導。
 type: docs
 weight: 10
 url: /zh-hant/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-在本文中，我們將探索上面的 C# 原始程式碼，以了解如何使用 Aspose.Words for .NET 程式庫中的 Ignore Text Inside Fields 功能。當我們在操作文件時想要忽略欄位內的文字時，此功能非常有用。
+## 介紹
+
+在本教學中，我們將深入研究使用 Aspose.Words for .NET 操作 Word 文件中欄位內的文字。 Aspose.Words 提供了強大的文件處理功能，使開發人員能夠有效率地自動執行任務。在這裡，我們將重點放在忽略字段內的文本，這是文檔自動化場景中的常見要求。
 
 ## 先決條件
 
-- C# 語言的基礎知識。
-- 安裝了 Aspose.Words 函式庫的 .NET 開發環境。
+在開始之前，請確保您已進行以下設定：
+- Visual Studio 安裝在您的電腦上。
+- Aspose.Words for .NET 函式庫整合到您的專案中。
+- 基本熟悉 C# 程式設計和.NET 環境。
 
-## 第 1 步：建立新文檔
+## 導入命名空間
 
-在開始操作欄位內的文字之前，我們需要使用 Aspose.Words for .NET 建立一個新文件。這可以透過實例化一個來完成`Document`目的：
-
+首先，在您的 C# 專案中包含必要的命名空間：
 ```csharp
-Document doc = new Document();
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.FindReplace;
+using System;
+using System.Text.RegularExpressions;
 ```
 
-## 第 2 步：插入一個包含文字的字段
+## 第 1 步：建立新文件和生成器
 
-一旦我們有了一個文檔，我們就可以使用 a 在其中插入一個包含文字的字段`DocumentBuilder`目的。例如，要插入帶有文字“字段中的文字”的“INCLUDETEXT”字段，我們可以使用`InsertField`方法：
-
+首先，初始化一個新的Word文件和`DocumentBuilder`促進文檔建構的對象：
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## 第 2 步：插入帶有文字的字段
+
+使用`InsertField`的方法`DocumentBuilder`新增包含文字的欄位：
+```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## 步驟 3：使用「忽略欄位內的文字」功能
+## 第 3 步：忽略字段內的文本
 
-要在後續操作中忽略字段內的文本，我們可以使用`FindReplaceOptions`對象並設定`IgnoreFields`財產給`true`：
-
+若要操作文字而忽略欄位中的內容，請使用`FindReplaceOptions`與`IgnoreFields`屬性設定為`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
-## 步驟 4：使用正規表示式進行搜尋和替換
+## 第 4 步：執行文字替換
 
-為了對文件文字執行搜尋和取代操作，我們將使用正規表示式。在我們的範例中，我們將搜尋所有出現的字母“e”並將其替換為星號“*「。我們將使用 .NET`Regex`為此類：
-
+使用正規表示式進行文字替換。在這裡，我們將出現的字母“e”替換為星號“*'在整個文件範圍內：
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## 步驟5：查看修改後的文檔輸出
+## 步驟5：輸出修改後的文檔文本
 
-套用搜尋和取代後，我們可以使用以下命令顯示文件的變更內容`GetText`方法：
-
+檢索並列印修改後的文字以驗證所做的替換：
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## 第 6 步：更改選項以包含字段
+## 第 6 步：在欄位中包含文本
 
-我們在輸出結果中包含欄位內的文本，我們可以更改選項以不忽略欄位。為此我們將設置`IgnoreFields`財產給`false`：
-
+若要處理欄位內的文本，請重置`IgnoreFields`財產給`false`並再次執行替換操作：
 ```csharp
 options.IgnoreFields = false;
-```
-
-## 步驟 7：顯示修改後的文件及其字段
-
-更改選項後，我們可以再次執行搜尋並替換以獲得包含欄位中文字的結果：
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-### 使用 Aspose.Words for .NET 忽略欄位內文字的範例原始碼
-
-以下是完整的範例原始程式碼，示範如何使用 Aspose.Words for .NET 忽略欄位內的文字功能：
-
-```csharp
-    
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	//插入帶有文字的欄位。
-	builder.InsertField("INCLUDETEXT", "Text in field");
-	
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-	
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreFields = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-  
 ```
 
 ## 結論
 
-在本文中，我們探索了 C# 原始程式碼，以了解如何在 Aspose.Words for .NET 中使用「忽略欄位內的文字」功能。我們按照逐步指南建立一個文檔，插入一個內部有文字的字段，使用「忽略字段內的文字」功能，使用正規表示式執行搜尋和取代操作，並顯示修改後的文檔。
+在本教學中，我們探討如何使用 Aspose.Words for .NET 操作 Word 文件中欄位內的文字。對於以程式設計方式處理文件時欄位內容需要特殊處理的場景來說，此功能至關重要。
 
-### 常見問題解答
+## 常見問題解答
 
-#### Q：Aspose.Words for .NET 中的「忽略欄位內的文字」功能是什麼？
+### 如何處理 Word 文件中的巢狀欄位？
+可以使用 Aspose.Words 的 API 遞歸地瀏覽文件內容來管理巢狀欄位。
 
-答：Aspose.Words for .NET 中的「忽略欄位內的文字」功能可讓您指定在某些操作（例如尋找和取代文字）期間是否應忽略欄位內的文字。啟用此功能後，操作期間不會考慮欄位內的文字。
+### 我可以應用條件邏輯來選擇性地替換文字嗎？
+是的，Aspose.Words 允許您使用 FindReplaceOptions 實作條件邏輯，以根據特定條件控製文字替換。
 
-#### Q：如何使用 Aspose.Words for .NET 建立新文件？
+### Aspose.Words 與 .NET Core 應用程式相容嗎？
+是的，Aspose.Words 支援 .NET Core，確保跨平台相容性，滿足您的文件自動化需求。
 
-答：要使用 Aspose.Words for .NET 建立新文檔，您可以實例化一個`Document`目的。以下是建立新文件的 C# 程式碼範例：
+### 在哪裡可以找到更多 Aspose.Words 範例和資源？
+訪問[Aspose.Words 文檔](https://reference.aspose.com/words/net/)取得綜合指南、API 參考和程式碼範例。
 
-```csharp
-Document doc = new Document();
-```
-
-#### Q：如何使用 Aspose.Words for .NET 在文件中插入帶有文字的欄位？
-
-答：一旦有了文檔，您就可以使用`DocumentBuilder`目的。例如，要插入包含文字“字段中的文字”的“INCLUDETEXT”字段，您可以使用`InsertField`方法：
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.InsertField("INCLUDETEXT", "Text in field");
-```
-
-#### Q：如何忽略 Aspose.Words for .NET 中欄位內的文字？
-
-答：要在後續操作中忽略欄位內的文本，您可以使用`FindReplaceOptions`對象並設定`IgnoreFields`財產給`true`：
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-```
-
-#### Q：如何在 Aspose.Words for .NET 中使用正規表示式執行搜尋和取代？
-
-答：要使用正規表示式對文件文字執行搜尋和取代操作，可以使用.NET`Regex`班級。例如，要搜尋所有出現的字母“e”並將其替換為星號“* “，您可以創建一個`Regex`對象並將其與`Replace`方法：
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### Q：如何在 Aspose.Words for .NET 中檢視文件的修改輸出？
-
- A：套用搜尋和取代操作後，您可以使用以下命令查看文件的變更內容：`GetText`方法：
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### Q：如何在 Aspose.Words for .NET 的輸出結果中包含欄位？
-
-答：要在輸出結果中包含欄位內的文本，您可以變更選項以不忽略欄位。為此，您可以設定`IgnoreFields`的財產`FindReplaceOptions`反對`false`：
-
-```csharp
-options.IgnoreFields = false;
-```
-
-#### Q：如何在 Aspose.Words for .NET 中顯示修改後的文件及其欄位？
-
-答：將選項變更為包含欄位後，您可以再次執行搜尋並替換以獲得包含欄位內文字的結果：
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### 如何獲得 Aspose.Words 的技術支援？
+如需技術協助，請訪問[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8)您可以在其中發佈疑問並與社區互動。

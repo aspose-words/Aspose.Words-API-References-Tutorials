@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Ensuite, nous devons déplacer le curseur vers un paragraphe spécifique du document où nous souhaitons insérer le champ de fusion.
 
 ```csharp
-// Déplacez le curseur sur le paragraphe.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Étape 6 : Insérer le champ de fusion

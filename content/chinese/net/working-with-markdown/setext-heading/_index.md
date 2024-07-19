@@ -56,7 +56,7 @@ builder.Writeln("Title Setext level 1");
 builder.Document.Save(dataDir + "Test.md");
 ```
 
-### 使用 Aspose.Words for .NET 的 Setext 标题示例源代码
+### 使用 Aspose.Words for .NET 的 Setext 标题的示例源代码
 
 ```csharp
 //文档目录的路径。

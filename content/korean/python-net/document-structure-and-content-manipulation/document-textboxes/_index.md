@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## 텍스트 상자 위치 지정
 
- 원하는 레이아웃을 얻으려면 텍스트 상자의 위치를 제어하는 것이 중요합니다. 를 사용하여 위치를 설정할 수 있습니다.`left` 그리고`top` 속성. 예를 들어:
+ 원하는 레이아웃을 얻으려면 텍스트 상자의 위치를 제어하는 것이 중요합니다. 를 사용하여 위치를 설정할 수 있습니다.`left`그리고`top` 속성. 예를 들어:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ doc.save("output.docx")
 
 ### 텍스트 상자의 크기를 어떻게 조정하나요?
 
- 텍스트 상자의 크기를 조정하려면`width` 그리고`height` 속성.
+ 텍스트 상자의 크기를 조정하려면`width`그리고`height` 속성.
 
 ### 텍스트 상자를 회전할 수 있나요?
 

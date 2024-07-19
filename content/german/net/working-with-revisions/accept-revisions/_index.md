@@ -15,7 +15,7 @@ In diesem Tutorial zeigen wir Ihnen Schritt für Schritt, wie Sie Revisionen an 
 In diesem Beispiel erstellen wir ein Dokument und fügen Inhalt hinzu. Wir verwenden mehrere Absätze, um Änderungen und Überarbeitungen zu veranschaulichen. So geht's:
 
 ```csharp
-// Pfad zum Dokumentenverzeichnis.
+//Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Lösung 2:
 
- A: Sie können die Revisionsverfolgung auch aktivieren, indem Sie`Document` Konstruktor, der akzeptiert`trackRevisions` Und`author` Parameter.
+ A: Sie können die Revisionsverfolgung auch aktivieren, indem Sie`Document` Konstruktor, der akzeptiert`trackRevisions`Und`author` Parameter.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

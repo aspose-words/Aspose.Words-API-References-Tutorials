@@ -127,4 +127,4 @@ Aspose.Words prend en charge la génération de plusieurs tables des matières a
 Oui, Aspose.Words garantit la compatibilité avec les différentes versions des formats Microsoft Word.
 
 ### Où puis-je trouver plus d’aide et de support pour Aspose.Words ?
-Pour plus d'aide, visitez le[Forum Aspose.Words](https://forum.aspose.com/c/words/8) ou consultez le[documentation officielle](https://reference.aspose.com/words/net/).
+ Pour plus d'aide, visitez le[Forum Aspose.Words](https://forum.aspose.com/c/words/8) ou consultez le[documentation officielle](https://reference.aspose.com/words/net/).

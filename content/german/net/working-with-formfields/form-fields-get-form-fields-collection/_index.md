@@ -38,7 +38,7 @@ Sie können die Sammlung der Formularfelder durchlaufen und für jedes Formularf
 ```csharp
 foreach (FormField formField in formFields)
 {
-    // Zugriff auf jedes Formularfeld und Bearbeitung
+    // Zugriff auf jedes Formularfeld und dessen Bearbeitung
     // ...
 }
 ```

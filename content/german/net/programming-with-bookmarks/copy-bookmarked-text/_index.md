@@ -2,175 +2,123 @@
 title: Mit Lesezeichen versehenen Text im Word-Dokument kopieren
 linktitle: Mit Lesezeichen versehenen Text im Word-Dokument kopieren
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Lesezeichentext in einem Word-Dokument in ein anderes Dokument kopieren.
+description: Kopieren Sie mit Aspose.Words für .NET mühelos mit Lesezeichen versehenen Text zwischen Word-Dokumenten. Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie das geht.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
+## Einführung
 
-In diesem Artikel werden wir den obigen C#-Quellcode untersuchen, um zu verstehen, wie die Funktion „Lesezeichen kopieren“ in der Aspose.Words-Bibliothek für .NET verwendet wird. Mit dieser Funktion können Sie den Inhalt eines bestimmten Lesezeichens aus einem Quelldokument in ein anderes Dokument kopieren.
+Mussten Sie schon einmal bestimmte Abschnitte von einem Word-Dokument in ein anderes kopieren? Dann haben Sie Glück! In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET mit Lesezeichen versehenen Text von einem Word-Dokument in ein anderes kopieren. Egal, ob Sie einen dynamischen Bericht erstellen oder die Dokumentgenerierung automatisieren, diese Anleitung vereinfacht den Vorgang für Sie.
 
 ## Voraussetzungen
 
-- Grundkenntnisse der Sprache C#.
-- .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
+Bevor wir loslegen, stellen Sie sicher, dass Sie Folgendes haben:
 
-## Schritt 1: Quelldokument laden
+-  Aspose.Words für .NET-Bibliothek: Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Visual Studio oder eine andere .NET-Entwicklungsumgebung.
+- Grundkenntnisse in C#: Vertrautheit mit der C#-Programmierung und dem .NET-Framework.
 
- Bevor wir den Lesezeichentext kopieren, müssen wir das Quelldokument in ein`Document` Objekt unter Verwendung des Dateipfads:
+## Namespaces importieren
+
+Stellen Sie zunächst sicher, dass Sie die erforderlichen Namespaces in Ihr Projekt importiert haben:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Import;
+using Aspose.Words.Bookmark;
+```
+
+## Schritt 1: Laden Sie das Quelldokument
+
+Als Erstes müssen Sie das Quelldokument laden, das den mit Lesezeichen versehenen Text enthält, den Sie kopieren möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## Schritt 2: Quell-Lesezeichen erhalten
+ Hier,`dataDir` ist der Pfad zu Ihrem Dokumentverzeichnis und`Bookmarks.docx` ist das Quelldokument.
 
- Wir benutzen das`Bookmarks` -Eigenschaft des Quelldokumentbereichs, um das spezifische Lesezeichen zu erhalten, das wir kopieren möchten:
+## Schritt 2: Identifizieren Sie das Lesezeichen
+
+Identifizieren Sie als Nächstes das Lesezeichen, das Sie aus dem Quelldokument kopieren möchten.
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
+ Ersetzen`"MyBookmark1"` durch den tatsächlichen Namen Ihres Lesezeichens.
+
 ## Schritt 3: Zieldokument erstellen
 
-Wir erstellen ein neues Dokument, das als Zieldokument zum Kopieren des Lesezeicheninhalts dient:
+Erstellen Sie nun ein neues Dokument, in das der mit Lesezeichen versehene Text kopiert wird.
 
 ```csharp
 Document dstDoc = new Document();
-```
-
-## Schritt 4: Festlegen des Kopierorts
-
-Wir geben die Stelle an, an der wir den kopierten Text einfügen möchten. In unserem Beispiel fügen wir den Text am Ende des Bodys des letzten Abschnitts des Zieldokuments ein:
-
-```csharp
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## Schritt 5: Lesezeichentext importieren und kopieren
+## Schritt 4: Mit Lesezeichen versehenen Inhalt importieren
 
- Wir benutzen ein`NodeImporter`Objekt zum Importieren und Kopieren von Lesezeichentext aus einem Quelldokument in das Zieldokument:
+ Um sicherzustellen, dass die Stile und Formatierungen erhalten bleiben, verwenden Sie`NodeImporter` um den mit Lesezeichen versehenen Inhalt aus dem Quelldokument in das Zieldokument zu importieren.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
+AppendBookmarkedText(importer, srcBookmark, dstNode);
+```
 
-AppendBookmarkedText(import, srcBookmark, dstNode);
+## Schritt 5: Definieren der AppendBookmarkedText-Methode
 
+Und hier geschieht die Magie. Definieren Sie eine Methode zum Kopieren des mit Lesezeichen versehenen Textes:
+
+```csharp
+private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
+{
+    Paragraph startPara = (Paragraph)srcBookmark.BookmarkStart.ParentNode;
+    Paragraph endPara = (Paragraph)srcBookmark.BookmarkEnd.ParentNode;
+
+    if (startPara == null || endPara == null)
+        throw new InvalidOperationException("Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
+
+    if (startPara.ParentNode != endPara.ParentNode)
+        throw new InvalidOperationException("Start and end paragraphs have different parents, cannot handle this scenario yet.");
+
+    Node endNode = endPara.NextSibling;
+
+    for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
+    {
+        Node newNode = importer.ImportNode(curNode, true);
+        dstNode.AppendChild(newNode);
+    }
+}
+```
+
+## Schritt 6: Zieldokument speichern
+
+Speichern Sie abschließend das Zieldokument, um den kopierten Inhalt zu überprüfen.
+
+```csharp
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-### Beispielquellcode zum Kopieren von mit Lesezeichen versehenem Text mit Aspose.Words für .NET
-
-Hier ist der vollständige Beispielquellcode zur Demonstration des Kopierens von Text aus einem Lesezeichen mit Aspose.Words für .NET:
-
-```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document srcDoc = new Document(dataDir + "Bookmarks.docx");
-
-	// Dies ist das Lesezeichen, dessen Inhalt wir kopieren möchten.
-	Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
-
-	// Wir werden dieses Dokument ergänzen.
-	Document dstDoc = new Document();
-
-	// Nehmen wir an, wir werden an das Ende des Hauptteils des letzten Abschnitts angehängt.
-	CompositeNode dstNode = dstDoc.LastSection.Body;
-
-	// Wenn Sie mehrere Importe ohne einen einheitlichen Kontext durchführen, werden viele Stile erstellt.
-	NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
-
-	AppendBookmarkedText(importer, srcBookmark, dstNode);
-	
-	dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
-
-```
-
-#### AppendBookmarkedText-Quellcode
-
-```csharp
-
-private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
-        {
-            // Dies ist der Absatz, der den Anfang des Lesezeichens enthält.
-            Paragraph startPara = (Paragraph) srcBookmark.BookmarkStart.ParentNode;
-
-            // Dies ist der Absatz, der das Ende des Lesezeichens enthält.
-            Paragraph endPara = (Paragraph) srcBookmark.BookmarkEnd.ParentNode;
-
-            if (startPara == null || endPara == null)
-                throw new InvalidOperationException(
-                    "Parent of the bookmark start or end is not a paragraph, cannot handle this scenario yet.");
-
-            // Beschränken wir uns auf ein einigermaßen einfaches Szenario.
-            if (startPara.ParentNode != endPara.ParentNode)
-                throw new InvalidOperationException(
-                    "Start and end paragraphs have different parents, cannot handle this scenario yet.");
-
-            // Wir wollen alle Absätze vom Anfangsabsatz bis einschließlich zum Endabsatz kopieren,
-            // Daher ist der Knoten, bei dem wir aufhören, einer nach dem Endabsatz.
-            Node endNode = endPara.NextSibling;
-
-            for (Node curNode = startPara; curNode != endNode; curNode = curNode.NextSibling)
-            {
-                //Dadurch wird eine Kopie des aktuellen Knotens erstellt und in den Kontext importiert (gültig gemacht).
-                // des Zieldokuments. Beim Importieren werden Stile und Listenkennungen richtig angepasst.
-                Node newNode = importer.ImportNode(curNode, true);
-
-                dstNode.AppendChild(newNode);
-            }
-        }
-
-```
 ## Abschluss
 
-In diesem Artikel haben wir den C#-Quellcode untersucht, um zu verstehen, wie die Funktion „Lesezeichentext kopieren“ aus Aspose.Words für .NET verwendet wird. Wir sind einer Schritt-für-Schritt-Anleitung gefolgt, um den Inhalt eines Lesezeichens aus einem Quelldokument in ein anderes Dokument zu kopieren.
+Und das war’s! Sie haben mit Aspose.Words für .NET erfolgreich mit Lesezeichen versehenen Text von einem Word-Dokument in ein anderes kopiert. Diese Methode ist leistungsstark für die Automatisierung von Dokumentbearbeitungsaufgaben und macht Ihren Arbeitsablauf effizienter und schlanker.
 
-### FAQs zum Kopieren von mit Lesezeichen versehenem Text in Word-Dokument
+## Häufig gestellte Fragen
 
-#### F: Was sind die Voraussetzungen, um die Funktion „Text mit Lesezeichen kopieren“ in Aspose.Words für .NET zu verwenden?
+### Kann ich mehrere Lesezeichen gleichzeitig kopieren?
+Ja, Sie können mehrere Lesezeichen durchsuchen und jedes mit der gleichen Methode kopieren.
 
-A: Um die Funktion „Text mit Lesezeichen kopieren“ in Aspose.Words für .NET zu verwenden, benötigen Sie Grundkenntnisse der Sprache C#. Sie benötigen außerdem eine .NET-Entwicklungsumgebung mit installierter Aspose.Words-Bibliothek.
+### Was passiert, wenn das Lesezeichen nicht gefunden wird?
+ Der`Range.Bookmarks` Eigentum wird zurückgegeben`null`, stellen Sie also sicher, dass Sie diesen Fall behandeln, um Ausnahmen zu vermeiden.
 
-#### F: Wie lade ich ein Quelldokument in Aspose.Words für .NET?
+### Kann ich die Formatierung des ursprünglichen Lesezeichens beibehalten?
+ Auf jeden Fall! Mit`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die ursprüngliche Formatierung erhalten bleibt.
 
- A: Um ein Quelldokument in Aspose.Words für .NET zu laden, können Sie den`Document` Klasse, indem Sie den Dateipfad des Dokuments angeben. Hier ist ein Beispielcode:
+### Gibt es eine Begrenzung für die Größe des mit Lesezeichen versehenen Textes?
+Es gibt keine konkrete Begrenzung, aber die Leistung kann bei extrem großen Dokumenten variieren.
 
-```csharp
-Document srcDoc = new Document("path/to/your/document.docx");
-```
-
-#### F: Wie erhalte ich mit Aspose.Words für .NET den Inhalt eines bestimmten Lesezeichens in einem Quelldokument?
-
- A: Um den Inhalt eines bestimmten Lesezeichens in einem Quelldokument mit Aspose.Words für .NET abzurufen, können Sie auf die`Bookmarks` Eigenschaft des Quelldokumentbereichs und verwenden Sie den Lesezeichennamen, um das spezifische Lesezeichen abzurufen. Hier ist ein Beispielcode:
-
-```csharp
-Bookmark srcBookmark = srcDoc.Range.Bookmarks["BookmarkName"];
-```
-
-#### F: Wie gebe ich mit Aspose.Words für .NET den Speicherort der Lesezeichentextkopie in einem Zieldokument an?
-
- A: Um anzugeben, wo Sie kopierten Lesezeichentext in einem Zieldokument mit Aspose.Words für .NET einfügen möchten, können Sie zum Textkörper des letzten Abschnitts des Zieldokuments navigieren. Sie können das`LastSection` Eigenschaft, um auf den letzten Abschnitt zuzugreifen und die`Body` -Eigenschaft, um auf den Hauptteil dieses Abschnitts zuzugreifen. Hier ist ein Beispielcode:
-
-```csharp
-CompositeNode dstNode = dstDoc.LastSection.Body;
-```
-
-#### F: Wie importiere und kopiere ich mit Aspose.Words für .NET Lesezeichentext vom Quelldokument ins Zieldokument?
-
- A: Um Lesezeichentext aus einem Quelldokument in ein Zieldokument mit Aspose.Words für .NET zu importieren und zu kopieren, können Sie den`NodeImporter` Klasse, die das Quelldokument, das Zieldokument und den beizubehaltenden Formatierungsmodus angibt. Dann können Sie die`AppendBookmarkedText` Methode zum Hinzufügen des Lesezeichentexts im Zieldokument. Hier ist ein Beispielcode:
-
-```csharp
-NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
-AppendBookmarkedText(import, srcBookmark, dstNode);
-```
-
-#### F: Wie speichere ich ein Zieldokument, nachdem ich Lesezeichentext mit Aspose.Words für .NET kopiert habe?
-
-A: Um ein Zieldokument zu speichern, nachdem Sie Text aus einem Lesezeichen mit Aspose.Words für .NET kopiert haben, können Sie den`Save` Methode der`Document` Objekt, das den Zieldateipfad angibt. Hier ist ein Beispielcode:
-
-```csharp
-dstDoc.Save("path/to/your/destination-document.docx");
-```
+### Kann ich Text zwischen verschiedenen Word-Dokumentformaten kopieren?
+Ja, Aspose.Words unterstützt verschiedene Word-Formate und die Methode funktioniert formatübergreifend.

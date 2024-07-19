@@ -15,7 +15,7 @@ Trong ví dụ này, chúng tôi sẽ chỉ cho bạn cách chia tài liệu Wor
 Để bắt đầu, hãy chỉ định thư mục cho tài liệu của bạn và tải tài liệu vào đối tượng Tài liệu. Đây là cách thực hiện:
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu.
+//Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

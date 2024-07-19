@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/programming-with-loadoptions/load-chm/
 ---
-W przypadku plików Words Processing with HTML Help (CHM) w aplikacji C# ważna jest możliwość ich prawidłowego załadowania. Dzięki bibliotece Aspose.Words dla .NET możesz łatwo ładować pliki CHM do dokumentu Word, korzystając z odpowiednich opcji ładowania. W tym przewodniku krok po kroku pokażemy, jak używać kodu źródłowego Aspose.Words for .NET C# do ładowania pliku CHM przy użyciu opcji ładowania LoadOptions.
+przypadku plików Words Processing with HTML Help (CHM) w aplikacji C# ważna jest możliwość ich prawidłowego załadowania. Dzięki bibliotece Aspose.Words dla .NET możesz łatwo ładować pliki CHM do dokumentu Word, korzystając z odpowiednich opcji ładowania. W tym przewodniku krok po kroku pokażemy, jak używać kodu źródłowego Aspose.Words for .NET C# do ładowania pliku CHM przy użyciu opcji ładowania LoadOptions.
 
 ## Zrozumienie biblioteki Aspose.Words
 
@@ -31,7 +31,7 @@ Teraz, gdy skonfigurowaliśmy opcje ładowania, możemy załadować plik CHM prz
 Document doc = new Document(dataDir + "HTML help.chm", loadOptions);
 ```
 
-W tym przykładzie ładujemy plik CHM „HTML help.chm” znajdujący się w katalogu dokumentów, korzystając z określonych opcji ładowania.
+tym przykładzie ładujemy plik CHM „HTML help.chm” znajdujący się w katalogu dokumentów, korzystając z określonych opcji ładowania.
 
 ### Przykładowy kod źródłowy dla LoadOptions z funkcjonalnością „Load Chm” przy użyciu Aspose.Words dla .NET
 
@@ -68,6 +68,6 @@ Odp.: Absolutnie! Aspose.Words oferuje różne opcje ładowania, które można d
 
 Odp.: Chociaż Aspose.Words jest przeznaczony głównie dla dokumentów Word, obsługuje także inne formaty plików, takie jak PDF, HTML, EPUB i inne, co czyni go wszechstronnym narzędziem do przetwarzania dokumentów.
 
-#### P: W jaki sposób ładowanie plików CHM może przynieść korzyść mojej aplikacji C#?
+#### P: W jaki sposób ładowanie plików CHM może przynieść korzyści mojej aplikacji C#?
 
 O: Prawidłowe ładowanie plików CHM do aplikacji C# gwarantuje, że pomoc i dokumentacja udostępniana użytkownikom są dokładne, co zwiększa ogólne doświadczenie użytkownika i poprawia użyteczność oprogramowania.

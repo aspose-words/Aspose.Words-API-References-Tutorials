@@ -30,7 +30,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 ```
 
 ## चरण 4: तालिका की शैली निर्धारित करें
@@ -51,35 +51,35 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
  सारणी के आकार को उसकी सामग्री के आधार पर स्वचालित रूप से समायोजित करने के लिए, हम इसका उपयोग करते हैं`AutoFit()` विधि के साथ`AutoFitBehavior.AutoFitToContents` व्यवहार।
 
 ```csharp
-table. AutoFit(AutoFitBehavior.AutoFitToContents);
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## चरण 7: कक्षों में सामग्री जोड़ें
- अब हम इसका उपयोग करके कोशिकाओं में सामग्री जोड़ सकते हैं`Writeln()` और`InsertCell()` दस्तावेज़ बिल्डर के तरीके। इस उदाहरण में, हम "आइटम" और "मात्रा (
+ अब हम इसका उपयोग करके कोशिकाओं में सामग्री जोड़ सकते हैं`Writeln()`और`InsertCell()` दस्तावेज़ बिल्डर के तरीके। इस उदाहरण में, हम "आइटम" और "मात्रा (
 
 किलोग्राम)" और संबंधित डेटा।
 
 ```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
-builder. InsertCell();
-builder. Writen("Quantity (kg)");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Apples");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("20");
-builder. EndRow();
-builder. InsertCell();
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Bananas");
-builder. InsertCell();
-builder. Writen("40");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("40");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Carrots");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("50");
-builder. EndRow();
+builder.EndRow();
 ```
 
 ## चरण 8: संशोधित दस्तावेज़ को सहेजें
@@ -94,42 +94,42 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 ### .NET के लिए Aspose.Words का उपयोग करके स्टाइल के साथ तालिका बनाने के लिए नमूना स्रोत कोड 
 
 ```csharp
-	// आपके दस्तावेज़ निर्देशिका का पथ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// आपके दस्तावेज़ निर्देशिका का पथ
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	// किसी भी तालिका स्वरूपण को सेट करने से पहले हमें कम से कम एक पंक्ति अवश्य सम्मिलित करनी चाहिए।
-	builder.InsertCell();
-	// अद्वितीय शैली पहचानकर्ता के आधार पर प्रयुक्त तालिका शैली सेट करें।
-	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	// कौन सी सुविधाओं को शैली के अनुसार प्रारूपित किया जाना चाहिए, इसे लागू करें.
-	table.StyleOptions =
-		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-	table.AutoFit(AutoFitBehavior.AutoFitToContents);
-	builder.Writeln("Item");
-	builder.CellFormat.RightPadding = 40;
-	builder.InsertCell();
-	builder.Writeln("Quantity (kg)");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Apples");
-	builder.InsertCell();
-	builder.Writeln("20");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Bananas");
-	builder.InsertCell();
-	builder.Writeln("40");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Carrots");
-	builder.InsertCell();
-	builder.Writeln("50");
-	builder.EndRow();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+// किसी भी तालिका स्वरूपण को सेट करने से पहले हमें कम से कम एक पंक्ति अवश्य सम्मिलित करनी चाहिए।
+builder.InsertCell();
+// अद्वितीय शैली पहचानकर्ता के आधार पर प्रयुक्त तालिका शैली सेट करें।
+table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
+// कौन सी सुविधाओं को शैली के अनुसार प्रारूपित किया जाना चाहिए, इसे लागू करें.
+table.StyleOptions =
+	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
+builder.Writeln("Item");
+builder.CellFormat.RightPadding = 40;
+builder.InsertCell();
+builder.Writeln("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Apples");
+builder.InsertCell();
+builder.Writeln("20");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Bananas");
+builder.InsertCell();
+builder.Writeln("40");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Carrots");
+builder.InsertCell();
+builder.Writeln("50");
+builder.EndRow();
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## निष्कर्ष
-इस ट्यूटोरियल में, हमने सीखा कि .NET के लिए Aspose.Words का उपयोग करके स्टाइल वाली टेबल कैसे बनाई जाती है। इस चरण-दर-चरण गाइड का पालन करके, आप अपने Word दस्तावेज़ों में अपनी टेबल की शैली को आसानी से अनुकूलित कर सकते हैं। Aspose.Words आपके दस्तावेज़ों में टेबल में हेरफेर करने और उन्हें फ़ॉर्मेट करने के लिए एक शक्तिशाली और लचीला API प्रदान करता है। इस ज्ञान के साथ, आप अपने Word दस्तावेज़ों की दृश्य प्रस्तुति को बेहतर बना सकते हैं और विशिष्ट आवश्यकताओं को पूरा कर सकते हैं।
+इस ट्यूटोरियल में, हमने सीखा कि .NET के लिए Aspose.Words का उपयोग करके स्टाइल वाली टेबल कैसे बनाई जाती है। इस चरण-दर-चरण गाइड का पालन करके, आप अपने Word दस्तावेज़ों में अपनी टेबल की शैली को आसानी से अनुकूलित कर सकते हैं। Aspose.Words आपके दस्तावेज़ों में टेबल को मैनिपुलेट करने और फ़ॉर्मेट करने के लिए एक शक्तिशाली और लचीला API प्रदान करता है। इस ज्ञान के साथ, आप अपने Word दस्तावेज़ों की दृश्य प्रस्तुति को बेहतर बना सकते हैं और विशिष्ट आवश्यकताओं को पूरा कर सकते हैं।

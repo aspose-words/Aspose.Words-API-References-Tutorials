@@ -1,7 +1,7 @@
 ---
 title: Erweiterte Automatisierung mit VBA-Makros in Word-Dokumenten freischalten
 linktitle: Erweiterte Automatisierung mit VBA-Makros in Word-Dokumenten freischalten
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Schalten Sie erweiterte Automatisierung in Word-Dokumenten mithilfe der Aspose.Words Python-API und VBA-Makros frei. Lernen Sie Schritt für Schritt mit Quellcode und FAQs. Steigern Sie jetzt Ihre Produktivität. Zugriff unter [Link].
 type: docs
 weight: 26

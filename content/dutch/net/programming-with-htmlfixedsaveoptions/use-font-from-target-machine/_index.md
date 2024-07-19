@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Laad het Word-document
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//Configureer back-upopties met de functie "Gebruik lettertypen van doelcomputer".
+// Configureer back-upopties met de functie "Gebruik lettertypen van doelcomputer".
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // Converteer document naar vaste HTML

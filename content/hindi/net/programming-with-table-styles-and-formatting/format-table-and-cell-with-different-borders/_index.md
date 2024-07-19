@@ -30,20 +30,20 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // संपूर्ण तालिका के लिए सीमाएं निर्धारित करें.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // इस सेल के लिए पैडिंग सेट करें.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // दूसरे सेल के लिए भिन्न सेल पैडिंग निर्दिष्ट करें.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // पिछले ऑपरेशन से सेल फ़ॉर्मेटिंग साफ़ करें.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // इस पंक्ति में पहले सेल के लिए मोटी बॉर्डर बनाएं। यह अलग होगा
 // तालिका के लिए परिभाषित सीमाओं के सापेक्ष.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 ### .NET के लिए Aspose.Words का उपयोग करके टेबल और सेल को अलग-अलग बॉर्डर के साथ प्रारूपित करने के लिए नमूना स्रोत कोड 
 
 ```csharp
-	// आपके दस्तावेज़ निर्देशिका का पथ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// आपके दस्तावेज़ निर्देशिका का पथ
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//संपूर्ण तालिका के लिए सीमाएं निर्धारित करें.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// इस सेल के लिए सेल शेडिंग सेट करें.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// दूसरे सेल के लिए भिन्न सेल शेडिंग निर्दिष्ट करें.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// पिछले ऑपरेशन से सेल फ़ॉर्मेटिंग साफ़ करें.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// इस पंक्ति के पहले सेल के लिए बड़ी बॉर्डर बनाएं। यह अलग होगा
-	// तालिका के लिए निर्धारित सीमाओं की तुलना में।
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//संपूर्ण तालिका के लिए सीमाएं निर्धारित करें.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// इस सेल के लिए सेल शेडिंग सेट करें.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// दूसरे सेल के लिए भिन्न सेल शेडिंग निर्दिष्ट करें.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// पिछले ऑपरेशन से सेल फ़ॉर्मेटिंग साफ़ करें.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// इस पंक्ति के पहले सेल के लिए बड़ी बॉर्डर बनाएं। यह अलग होगा
+// तालिका के लिए निर्धारित सीमाओं की तुलना में।
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## निष्कर्ष

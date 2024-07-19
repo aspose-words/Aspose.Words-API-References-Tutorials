@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-在這裡，我們定義用於保存文件的目錄路徑，並初始化一個新文件以及文件產生器。
+在這裡，我們定義用於保存文件的目錄路徑，並初始化一個新文件以及文件建構器。
 
 ## 第 2 步：新增部分
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithSection.ModifyPageSetupInAllSections.doc");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功修改了 Word 文件中所有部分的頁面設定。本教學引導您建立文件、新增部分以及統一調整其頁面設定。 Aspose.Words 提供了豐富的功能，因此請隨意探索[API文件](https://reference.aspose.com/words/net/)以獲得更高級的功能。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功修改了 Word 文件中所有部分的頁面設定。本教學引導您建立文件、新增部分以及統一調整其頁面設定。 Aspose.Words 提供了豐富的功能，因此請隨意探索[API文件](https://reference.aspose.com/words/net/)以獲得更高級的功能。
 
 ## 常見問題解答
 

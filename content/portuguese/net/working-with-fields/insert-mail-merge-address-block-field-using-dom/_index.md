@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### P: Como posso especificar os dados de origem para o campo de endereço de correspondência no Aspose.Words for .NET?
 
- R: Para especificar os dados de origem para o campo de endereço de correspondência no Aspose.Words for .NET, você pode usar o`FieldAddressBlock.StartAddress` e`FieldAddressBlock.EndAddress` propriedades. Essas propriedades são usadas para definir os intervalos de endereços na fonte de dados externa, como um arquivo CSV, banco de dados, etc.
+ R: Para especificar os dados de origem para o campo de endereço de correspondência no Aspose.Words for .NET, você pode usar o`FieldAddressBlock.StartAddress`e`FieldAddressBlock.EndAddress` propriedades. Essas propriedades são usadas para definir os intervalos de endereços na fonte de dados externa, como um arquivo CSV, banco de dados, etc.
 
 #### P: Posso incluir elementos opcionais no campo de endereço de correspondência com Aspose.Words for .NET?
 

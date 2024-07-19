@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## الخطوة 3: تعديل كود مصدر الماكرو
- سنقوم الآن بتعديل الكود المصدري للماكرو الأول لمشروع VBA. استبدل`newSourceCode` متغير مع كود المصدر الجديد الذي تريد استخدامه.
+سنقوم الآن بتعديل الكود المصدري للماكرو الأول لمشروع VBA. استبدل`newSourceCode` متغير مع كود المصدر الجديد الذي تريد استخدامه.
 
 ```csharp
 const string newSourceCode = "Test change source code";

@@ -2,102 +2,109 @@
 title: 簽署Word文檔
 linktitle: 簽署Word文檔
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 對 Word 文件進行數位簽章。
+description: 透過此逐步指南，了解如何使用 Aspose.Words for .NET 對 Word 文件進行簽署。輕鬆保護您的文件。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-digital-signatures/sign-document/
 ---
-在本教學中，我們將引導您完成使用 Aspose.Words for .NET 的文件簽章功能的步驟。此功能可讓您使用憑證對 Word 文件進行數位簽章。請依照以下步驟操作：
+## 介紹
 
-## 第1步：載入證書
+在當今的數位世界中，保護文件的安全比以往任何時候都更加重要。數位簽章提供了一種確保文件真實性和完整性的方法。如果您希望使用 Aspose.Words for .NET 以程式設計方式簽署 Word 文檔，那麼您來對地方了。本指南將以簡單且引人入勝的方式逐步引導您完成整個過程。
 
-首先使用 CertificateHolder 類別載入簽章憑證：
+## 先決條件
+
+在深入研究程式碼之前，您需要做好以下幾件事：
+
+1.  Aspose.Words for .NET：請確定您已安裝了最新版本的 Aspose.Words for .NET。你可以下載它[這裡](https://releases.aspose.com/words/net/).
+2. .NET 環境：確保您已設定 .NET 開發環境（例如 Visual Studio）。
+3. 數位憑證：取得用於簽署文件的數位憑證（例如.pfx 檔案）。
+4. 待簽名文件：準備好您要簽署的 Word 文件。
+
+## 導入命名空間
+
+首先，您需要匯入必要的名稱空間。將以下 using 指令新增至您的專案：
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.Security.Cryptography.X509Certificates;
+```
+
+現在，讓我們將該流程分解為可管理的步驟。
+
+## 第1步：載入數位證書
+
+第一步是從文件載入數位憑證。該證書將用於簽署文件。
+
+```csharp
+//文檔目錄的路徑。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+//加載數位證書。
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-請務必指定證書和關聯密碼的正確路徑。
+### 解釋
 
-## 第 2 步：簽署文件
+- `dataDir`：這是儲存您的憑證和文件的目錄。
+- `CertificateHolder.Create` ：該方法從指定路徑載入憑證。代替`"YOUR DOCUMENT DIRECTORY"`與您的目錄的實際路徑，以及`"morzal.pfx"`與您的證書文件的名稱。這`"aw"`是證書的密碼。
 
-使用 DigitalSignatureUtil 類別對文件進行簽署：
+## 步驟2：載入Word文檔
 
-```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-	certHolder);
-```
-
-請務必指定來源文件和簽署文件的正確路徑。
-
-### 使用 Aspose.Words for .NET 簽署文件的範例原始碼
-
-以下是使用 Aspose.Words for .NET 簽署文件的完整原始碼：
+接下來，載入要簽署的 Word 文件。
 
 ```csharp
-
-	//文檔目錄的路徑。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-		certHolder);
-
+//載入要簽署的文檔。
+Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-透過執行以下步驟，您可以輕鬆使用 Aspose.Words for .NET 簽署 Word 文件。
+### 解釋
+
+- `Document` ：這個類別代表Word文檔。代替`"Digitally signed.docx"`與您的文件的名稱。
+
+## 第 3 步：簽署文件
+
+現在，使用`DigitalSignatureUtil.Sign`簽署文件的方法。
+
+```csharp
+//簽署文件。
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx", certHolder);
+```
+
+### 解釋
+
+- `DigitalSignatureUtil.Sign`：此方法使用已載入的憑證對文件進行簽署。第一個參數是原始文件的路徑，第二個參數是簽署文件的路徑，第三個參數是憑證持有者。
+
+## 第四步：儲存簽名文檔
+
+最後將簽章後的文件儲存到指定位置。
+
+```csharp
+//儲存簽署的文件。
+doc.Save(dataDir + "Document.Signed.docx");
+```
+
+### 解釋
+
+- `doc.Save` ：此方法保存簽名後的文件。代替`"Document.Signed.docx"`與您簽署的文件的所需名稱。
 
 ## 結論
 
-在本教學中，我們探索了 Aspose.Words for .NET 中的文件簽章功能。透過載入簽名憑證並使用`DigitalSignatureUtil.Sign`方法，我們可以對Word文件進行數位簽章。文件簽名提供身份驗證並確保文件內容的完整性，使其成為安全且值得信賴的文件管理的重要功能。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功簽署了 Word 文件。透過執行這些簡單的步驟，您可以確保您的文件得到安全簽署和驗證。請記住，數位簽章是保護文件完整性的強大工具，因此在必要時請使用它們。
 
-### 符號文件常見問題解答
+## 常見問題解答
 
-#### Q：Aspose.Words for .NET 中的文件簽章是什麼？
+### 什麼是數位簽章？
+數位簽名是一種電子形式的簽名，可用於驗證簽名者的身份並確保文件未被更改。
 
-答：Aspose.Words for .NET 中的文件簽章是指使用憑證對 Word 文件進行數位簽章的過程。此功能會為文件添加數位簽名，提供文件內容的真實性、完整性和不可否認性。
+### 為什麼我需要數位憑證？
+建立數位簽章需要數位憑證。它包含公鑰和憑證擁有者的身份，提供驗證簽名的方法。
 
-#### Q：如何在 Aspose.Words for .NET 中載入簽章憑證？
+### 我可以使用任何 .pfx 檔案進行簽署嗎？
+是的，只要 .pfx 檔案包含有效的數位憑證並且您有存取它的密碼。
 
-答：要在 Aspose.Words for .NET 中載入簽名證書，您可以使用`CertificateHolder`班級。建立一個實例`CertificateHolder`透過提供證書檔案的路徑和關聯的密碼。這是一個例子：
+### Aspose.Words for .NET 可以免費使用嗎？
+ Aspose.Words for .NET 是一個商業函式庫。您可以下載免費試用版[這裡](https://releases.aspose.com/)，但您需要購買完整功能的許可證。你可以買[這裡](https://purchase.aspose.com/buy).
 
-```csharp
-CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx", "password");
-```
-
-確保提供證書的正確路徑和關聯的密碼。
-
-#### Q：如何使用 Aspose.Words for .NET 簽署 Word 文件？
-
-答：要使用 Aspose.Words for .NET 簽署 Word 文檔，您可以使用`DigitalSignatureUtil`班級。致電`Sign`方法，提供來源文件的路徑、簽章文件（輸出）的路徑以及`CertificateHolder`目的。這是一個例子：
-
-```csharp
-DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/document.docx", certHolder);
-```
-
-確保為來源文件和簽章文件（輸出）提供正確的路徑。
-
-#### Q：文件簽署的目的為何？
-
-答：文件簽名是確保文件真實性和完整性的一種方法。透過對文件進行數位簽名，您可以提供其來源證明、驗證其內容未被更改並建立不可否認性。文件簽名通常用於法律、財務和敏感文件。
-
-#### Q：我可以使用任何憑證在 Aspose.Words for .NET 中進行文件簽章嗎？
-
-答：對於 Aspose.Words for .NET 中的文件簽名，您需要使用有效的 X.509 憑證。此憑證可以從受信任的憑證授權單位 (CA) 取得，也可以使用自簽名憑證進行測試。
-
-#### Q：Aspose.Words for .NET 支援什麼文件格式進行文件簽章？
-
-答：Aspose.Words for .NET 支援 DOCX 檔案格式的 Word 文件簽章。您可以使用以下方式簽署 DOCX 文件`DigitalSignatureUtil`班級和相應的證書。
-
-#### Q：我可以使用同一個憑證簽署多個 Word 文件嗎？
-
-答：是的，您可以使用同一個憑證簽署多個 Word 文件。使用以下命令載入證書後`CertificateHolder`類，您可以透過呼叫重複使用它來簽署多個文檔`DigitalSignatureUtil.Sign`具有不同來源和簽章文件路徑的方法。
-
-#### 問：文件簽署是否會修改原始文件？
-
-答：使用 Aspose.Words for .NET 進行文件簽章不會修改原始文件。相反，它會建立文件的數位簽章副本，使原始文件保持完整。數位簽名副本包含新增的數位簽名，確保文件內容的完整性。
-
-#### Q：我可以使用 Aspose.Words for .NET 驗證已簽署文件的數位簽章嗎？
-
-答：是的，Aspose.Words for .NET 提供了驗證已簽署文件的數位簽章的功能。您可以使用`DigitalSignatureUtil.Verify`驗證數位簽章的有效性和真實性的方法。
+### 在哪裡可以找到有關 Aspose.Words for .NET 的更多資訊？
+您可以找到全面的文檔[這裡](https://reference.aspose.com/words/net/)和支持[這裡](https://forum.aspose.com/c/words/8).

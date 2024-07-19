@@ -76,6 +76,6 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBin
 
 当您想要调整二值化阈值以获得质量和清晰度更高的 TIFF 图像时，此功能非常有用。通过使用保存选项指定二值化阈值，您可以获得根据您的需求量身定制的结果。
 
-Aspose.Words for .NET 提供了多种用于文档操作和生成的高级功能。TIFF 二值化阈值控制是它为您提供的众多强大工具之一。
+Aspose.Words for .NET 提供了多种用于文档操作和生成的高级功能。显示 TIFF 二值化阈值控制是它为您提供的众多强大工具之一。
 
 请随意将此功能合并到您的 Aspose.Words for .NET 项目中，以实现具有精确二值化阈值控制的高质量 TIFF 图像。

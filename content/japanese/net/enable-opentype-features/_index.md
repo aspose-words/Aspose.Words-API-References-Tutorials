@@ -7,9 +7,9 @@ type: docs
 weight: 40
 url: /ja/net/enable-opentype-features/
 ---
-Aspose.Words for .NET を使用して Word 文書で OpenType 機能を有効にする方法を学びます。この詳細なチュートリアルでは、合字、スタイルの代替、コンテキストの置換などの OpenType 機能の使用方法を段階的に説明します。これらの機能を有効にして、Word 文書のタイポグラフィと外観を改善する方法を学びます。
+Aspose.Words for .NET を使用して、Word 文書で OpenType 機能を有効にする方法を学びます。この詳細なチュートリアルでは、合字、スタイルの代替、コンテキストの置換などの OpenType 機能の使用方法を段階的に説明します。これらの機能を有効にして、Word 文書のタイポグラフィと外観を改善する方法を学びます。
 
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [オープンタイプの機能](./open-type-features/) | Aspose.Words for .NET で Open Type 機能を有効にして使用する方法を学びます |
+| [オープンタイプの機能](./open-type-features/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書で OpenType 機能を有効にする方法を学習します。 |

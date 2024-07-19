@@ -2,109 +2,110 @@
 title: Şifreli Word Belgesini İmzalama
 linktitle: Şifreli Word Belgesini İmzalama
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile şifrelenmiş bir word belgesini dijital olarak nasıl imzalayacağınızı öğrenin.
+description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak şifrelenmiş Word belgelerini nasıl imzalayacağınızı öğrenin. Geliştiriciler için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
-Bu eğitimde, Aspose.Words for .NET ile şifrelenmiş bir word belgesini imzalama özelliğini kullanma adımlarında size rehberlik edeceğiz. Bu özellik, şifre çözme parolası kullanılarak şifrelenmiş bir Word belgesini dijital olarak imzalamanıza olanak tanır. Aşağıdaki adımları takip et:
+## giriiş
 
-## 1. Adım: İmza Seçeneklerini Ayarlama
+Hiç şifrelenmiş bir Word belgesinin nasıl imzalanacağını merak ettiniz mi? Bugün Aspose.Words for .NET'i kullanarak bu süreci inceleyeceğiz. Kemerlerinizi bağlayın ve ayrıntılı, ilgi çekici ve eğlenceli bir eğitime hazır olun!
 
-SignOptions sınıfının bir örneğini oluşturun ve şifre çözme parolasını ayarlayın:
+## Önkoşullar
+
+Koda dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1.  Aspose.Words for .NET: Buradan indirin ve yükleyin[Burada](https://releases.aspose.com/words/net/).
+2. Visual Studio: Yüklediğinizden emin olun.
+3. Geçerli Bir Sertifika: Bir .pfx sertifika dosyasına ihtiyacınız olacak.
+4. Temel C# Bilgisi: Temelleri anlamak bu öğreticiyi daha sorunsuz hale getirecektir.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktaralım. Bunlar Aspose.Words işlevlerine erişim için çok önemlidir.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionpassword" };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+using Aspose.Words.DigitalSignatures;
 ```
 
-Şifrelenmiş belgeniz için doğru şifre çözme şifresini belirttiğinizden emin olun.
+Şimdi süreci basit, yönetilebilir adımlara ayıralım.
 
-## 2. Adım: Sertifikayı yükleme
+## 1. Adım: Projenizi Kurma
 
-SertifikaHolder sınıfını kullanarak imzalama sertifikasını yükleyerek başlayın:
+Öncelikle Visual Studio projenizi kurun. Visual Studio'yu açın ve yeni bir C# Konsol Uygulaması oluşturun. "SignEncryptedWordDoc" gibi açıklayıcı bir ad verin.
+
+## Adım 2: Aspose.Words'ü Projenize Ekleme
+
+Daha sonra projenize Aspose.Words'u eklememiz gerekiyor. Bunu yapmanın birkaç yolu vardır ancak NuGet'i kullanmak en basitidir. 
+
+1. NuGet Paket Yöneticisi Konsolunu Araçlar > NuGet Paket Yöneticisi > Paket Yöneticisi Konsolu'ndan açın.
+2. Aşağıdaki komutu çalıştırın:
+
+```powershell
+Install-Package Aspose.Words
+```
+
+## Adım 3: Belge Dizinini Hazırlama
+
+Word belgelerinizi ve sertifikalarınızı saklamak için bir dizine ihtiyacınız olacak. Bir tane oluşturalım.
+
+1. Bilgisayarınızda bir dizin oluşturun. Basit olması açısından buna "DocumentDirectory" adını verelim.
+2. Word belgenizi (örneğin, "Document.docx") ve .pfx sertifikanızı (örneğin, "morzal.pfx") bu dizine yerleştirin.
+
+## Adım 4: Kodu Yazma
+
+ Şimdi kodun ayrıntılarına girelim. Aç`Program.cs` dosyanızı açın ve belge dizininizin yolunu ayarlayarak ve başlangıç durumuna getirerek başlayın.`SignOptions` şifre çözme şifresi ile.
+
+```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
+SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
+```
+
+## Adım 5: Sertifikayı Yükleme
+
+ Daha sonra sertifikanızı şunu kullanarak yükleyin:`CertificateHolder`sınıf. Bu, .pfx dosyanızın yolunu ve sertifikanın şifresini gerektirir.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Sertifikanızın ve ilişkili şifrenizin doğru yolunu belirttiğinizden emin olun.
+## Adım 6: Belgeyi İmzalama
 
-## 3. Adım: Şifrelenmiş belgeyi imzalama
-
-Şifrelenmiş belgeyi imzalamak için DigitalSignatureUtil sınıfını kullanın:
+ Son olarak şunu kullanın:`DigitalSignatureUtil.Sign` şifrelenmiş Word belgenizi imzalama yöntemi. Bu yöntem, giriş dosyası, çıkış dosyası, sertifika sahibi ve imza seçeneklerini gerektirir.
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-	certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Document.docx",
+    dataDir + "DigitallySignedDocument.docx",
+    certHolder,
+    signOptions);
 ```
 
-Şifrelenmiş belge, imzalı belge ve sertifika için doğru yolları belirttiğinizden emin olun.
+## Adım 7: Kodu Çalıştırma
 
-### Aspose.Words for .NET kullanarak Şifrelenmiş Belgeleri İmzalamak için örnek kaynak kodu
-
-Aspose.Words for .NET ile şifrelenmiş bir belgeyi imzalamak için gereken kaynak kodun tamamı burada:
-
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.EncryptedDocument.docx",
-		certHolder, signOptions);
-	
-
-```
-Bu adımları izleyerek şifrelenmiş bir Word belgesini Aspose.Words for .NET ile kolayca imzalayabilirsiniz.
+Dosyanızı kaydedin ve projeyi çalıştırın. Her şey doğru ayarlanmışsa imzalı belgenizi belirtilen dizinde görmelisiniz.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak şifrelenmiş bir Word belgesini imzalama sürecini inceledik. Şifre çözme şifresini ve imzalama sertifikasını sağlayarak şifrelenmiş bir belgeye dijital imza ekleyebiliriz. Şifrelenmiş belgelerin imzalanması, bunların orijinalliğini ve bütünlüğünü garanti altına alarak ekstra bir güvenlik katmanı sağlar. Aspose.Words for .NET, şifrelenmiş belgeleri imzalamanıza ve Word dosyalarınızın güvenliğini ve güvenilirliğini korumanıza olanak tanır.
+İşte buyur! Aspose.Words for .NET'i kullanarak şifrelenmiş bir Word belgesini başarıyla imzaladınız. Bu güçlü kitaplık sayesinde dijital imzalama, şifrelenmiş dosyalar için bile çocuk oyuncağı haline gelir. Mutlu kodlama!
 
-### SSS'ler
+## SSS'ler
 
-#### S: Aspose.Words for .NET'te belge imzalama nedir?
+### Farklı türde bir sertifika kullanabilir miyim?
+Evet, Aspose.Words, doğru formatta oldukları sürece çeşitli sertifika türlerini destekler.
 
-C: Aspose.Words for .NET'te belge imzalama, bir Word belgesinin orijinalliğini, bütünlüğünü ve inkar edilemezliğini sağlamak için dijital olarak imzalanması sürecini ifade eder. Sertifika kullanarak belgeye dijital imza eklemeyi içerir.
+### Aynı anda birden fazla belgeyi imzalamak mümkün mü?
+Kesinlikle! Bir belge koleksiyonunda dolaşabilir ve her birini programlı olarak imzalayabilirsiniz.
 
-#### S: Şifrelenmiş Word belgesi nedir?
+### Şifre çözme şifresini unutursam ne olur?
+Maalesef şifre çözme şifresi olmadan belgeyi imzalayamazsınız.
 
-C: Şifrelenmiş bir Word belgesi, bir parola kullanılarak şifrelenmiş bir belgedir. Şifreleme, belgenin içeriğini şifreleyerek ve doğru şifre çözme parolası olmadan okunmaz hale getirerek koruyan bir güvenlik önlemidir.
+### Belgeye görünür bir imza ekleyebilir miyim?
+Evet, Aspose.Words görünür dijital imzalar eklemenize de olanak tanır.
 
-#### S: Aspose.Words for .NET'i kullanarak şifrelenmiş bir Word belgesini nasıl imzalayabilirim?
-
-C: Aspose.Words for .NET kullanarak şifrelenmiş bir Word belgesini imzalamak için imzalama sertifikasıyla birlikte şifre çözme şifresini de sağlamanız gerekir. Bu adımları takip et:
-1.  Şifre çözme şifresini ayarlayın`SignOptions` nesne.
-2.  İmza sertifikasını şunu kullanarak yükleyin:`CertificateHolder` sınıf.
-3.  Kullan`DigitalSignatureUtil.Sign` Gerekli parametreleri sağlayarak şifrelenmiş belgeyi imzalama yöntemi.
-
-#### S: Şifrelenmiş bir belgeyi imzalamanın amacı nedir?
-
-C: Aspose.Words for .NET ile şifrelenmiş bir belgeyi imzalamak, şifrelenmiş olsa bile belgeye dijital imza eklemenizi sağlar. Bu, ek bir güvenlik katmanı sağlar ve şifrelenmiş içeriğin orijinalliğini ve bütünlüğünü sağlar. Alıcıların belgenin kaynağını doğrulamasına ve herhangi bir tahrifatı tespit etmesine olanak tanır.
-
-#### S: Şifrelenmiş bir belgeyi şifre çözme şifresini girmeden imzalayabilir miyim?
-
-C: Hayır, şifrelenmiş bir belgeyi imzalamak için doğru şifre çözme şifresini girmeniz gerekir. Şifre çözme şifresi, dijital imzayı uygulamadan önce belgenin şifrelenmiş içeriğine erişmek ve bunları değiştirmek için gereklidir.
-
-#### S: Herhangi bir sertifikayı kullanarak şifrelenmiş bir Word belgesini imzalayabilir miyim?
-
-C: Aspose.Words for .NET kullanarak şifrelenmiş bir Word belgesini imzalamak için geçerli bir X.509 sertifikasına ihtiyacınız vardır. Sertifika, güvenilir bir sertifika yetkilisinden (CA) alınabilir veya kendinden imzalı bir sertifika, test amacıyla kullanılabilir.
-
-#### S: Aynı sertifikayı kullanarak birden fazla şifrelenmiş Word belgesini imzalayabilir miyim?
-
- C: Evet, aynı sertifikayı kullanarak birden fazla şifrelenmiş Word belgesini imzalayabilirsiniz. Sertifikayı kullanarak yükledikten sonra`CertificateHolder` birden fazla şifrelenmiş belgeyi imzalamak için onu yeniden kullanabilirsiniz.
-
-#### S: İmzalanmış şifrelenmiş bir belgenin dijital imzasını doğrulayabilir miyim?
-
- C: Evet, Aspose.Words for .NET, imzalanmış şifrelenmiş bir belgenin dijital imzasını doğrulamak için işlevsellik sağlar. Şunu kullanabilirsiniz:`DigitalSignatureUtil.Verify` Dijital imzanın geçerliliğini ve orijinalliğini kontrol etme yöntemi.
-
-#### S: Aspose.Words for .NET şifreli belgelerin imzalanması için hangi dosya formatını destekliyor?
-
- C: Aspose.Words for .NET, DOCX dosya formatında şifrelenmiş Word belgelerinin imzalanmasını destekler. Şifrelenmiş DOCX dosyalarını kullanarak imzalayabilirsiniz.`DigitalSignatureUtil.Sign` gerekli şifre çözme şifresi ve sertifikasıyla birlikte yöntem.
-
-#### S: Şifrelenmiş bir belgeyi imzalamak şifrelemeyi nasıl etkiler?
-
-C: Şifrelenmiş bir belgenin Aspose.Words for .NET ile imzalanması belgenin şifrelenmesini etkilemez. Şifreleme bozulmadan kalır ve dijital imza, şifrelenmiş içeriğe eklenir. Dijital imza, belgeye uygulanan şifrelemeden ödün vermeden ek güvenlik ve doğrulama sağlar.
+### İmzayı doğrulamanın bir yolu var mı?
+ Evet, kullanabilirsiniz`DigitalSignatureUtil.Verify` İmzaları doğrulama yöntemi.

@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 
 ## Závěr
 
-V této příručce jsme vysvětlili, jak načíst dokument s převodem metasouborů na obrázky PNG pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Převod metasouborů do formátu PNG zajišťuje lepší kompatibilitu a přesné vykreslování dokumentů.
+této příručce jsme vysvětlili, jak načíst dokument s převodem metasouborů na obrázky PNG pomocí knihovny Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Převod metasouborů do formátu PNG zajišťuje lepší kompatibilitu a přesné vykreslování dokumentů.
 
 
 ### FAQ

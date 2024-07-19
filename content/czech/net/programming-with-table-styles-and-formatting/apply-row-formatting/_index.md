@@ -33,7 +33,7 @@ Table table = builder. StartTable();
 ```
 
 ## Krok 4: Vložte buňku a přejděte na formát řádku
-Nyní můžeme vložit buňku do tabulky a získat přístup k formátu řádku pro tuto buňku pomocí nástroje pro tvorbu dokumentů`InsertCell()` a`RowFormat` metody.
+Nyní můžeme vložit buňku do tabulky a získat přístup k formátu řádku pro tuto buňku pomocí nástroje pro tvorbu dokumentů`InsertCell()`a`RowFormat` metody.
 
 ```csharp
 builder. InsertCell();
@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Krok 5: Nastavte výšku řádku
- Pro nastavení výšky řádku použijeme`Height` a`HeightRule` vlastnosti formátu řádků. V tomto příkladu nastavíme výšku řádku 100 bodů a použijeme`Exactly` pravidlo.
+ Pro nastavení výšky řádku použijeme`Height`a`HeightRule` vlastnosti formátu řádků. V tomto příkladu nastavíme výšku řádku 100 bodů a použijeme`Exactly` pravidlo.
 
 ```csharp
 rowFormat. Height = 100;
@@ -49,7 +49,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 ```
 
 ## Krok 6: Definujte formátování tabulky
- Některé vlastnosti formátování lze nastavit na samotné tabulce a použijí se na všechny řádky tabulky. V tomto příkladu nastavíme vlastnosti okraje tabulky pomocí`LeftPadding`, `RightPadding`, `TopPadding` a`BottomPadding` vlastnosti.
+ Některé vlastnosti formátování lze nastavit na samotné tabulce a použijí se na všechny řádky tabulky. V tomto příkladu nastavíme vlastnosti okraje tabulky pomocí`LeftPadding`, `RightPadding`, `TopPadding`a`BottomPadding` vlastnosti.
 
 ```csharp
 table. LeftPadding = 30;

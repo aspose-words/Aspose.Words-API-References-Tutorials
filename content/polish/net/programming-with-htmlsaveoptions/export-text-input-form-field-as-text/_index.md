@@ -45,7 +45,7 @@ ImagesFolder = imagesDir
 };
 ```
 
- Ten kod tworzy instancję`HtmlSaveOptions` ustawia`ExportTextInputFormFieldAsText` opcja`true` aby wyeksportować pola formularza wprowadzania tekstu jako zwykły tekst. Ponadto określa folder, w którym zostaną zapisane wyodrębnione obrazy.
+ Ten kod tworzy instancję`HtmlSaveOptions` i ustawia`ExportTextInputFormFieldAsText` opcja`true` aby wyeksportować pola formularza wprowadzania tekstu jako zwykły tekst. Ponadto określa folder, w którym zostaną zapisane wyodrębnione obrazy.
 
 ## Krok 4: Konwertowanie i zapisywanie dokumentu do formatu HTML
 

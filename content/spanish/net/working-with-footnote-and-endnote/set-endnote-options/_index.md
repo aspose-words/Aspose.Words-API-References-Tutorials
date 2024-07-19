@@ -85,7 +85,7 @@ No dude en utilizar este código en sus propios proyectos y modificarlo según s
 
 #### P: ¿Es posible personalizar la numeración de las notas finales en un documento?
 
- R: Sí, es posible personalizar la numeración de las notas finales de un documento. Puedes usar el`RestartRule` y`NumberStyle` propiedades de la`EndnoteOptions` clase para definir reglas de reinicio específicas y estilos de numeración.
+ R: Sí, es posible personalizar la numeración de las notas finales de un documento. Puedes usar el`RestartRule`y`NumberStyle` propiedades de la`EndnoteOptions` clase para definir reglas de reinicio específicas y estilos de numeración.
 
 #### P: ¿Cómo puedo colocar notas al final en un documento?
 

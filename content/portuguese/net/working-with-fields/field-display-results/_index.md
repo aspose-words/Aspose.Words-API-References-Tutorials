@@ -20,7 +20,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## Passo 2: Carregando o documento
 
-A primeira etapa é carregar o documento no qual deseja exibir os resultados do campo.
+primeira etapa é carregar o documento no qual deseja exibir os resultados do campo.
 
 ```csharp
 Document document = new Document(dataDir + "Miscellaneous fields.docx");

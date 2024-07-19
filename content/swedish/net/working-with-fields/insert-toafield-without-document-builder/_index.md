@@ -78,7 +78,7 @@ doc.FirstSection.Body.AppendChild(para);
 fieldToa.Update();
 ```
 
-### Källkodsexempel för infogning av TOA-fält utan Document Builder med Aspose.Words för .NET
+### Källkodsexempel för TOA-fältinfogning utan Document Builder med Aspose.Words för .NET
 
 ```csharp
 Document doc = new Document();
@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### F: Hur anpassar man utseendet på TOA-fältet som infogas i Word-dokumentet med Aspose.Words för .NET?
 
-S: Du kan anpassa utseendet på det infogade TOA-fältet genom att använda egenskaperna för`FieldTOA` objekt för att ange formateringsalternativ.
+ S: Du kan anpassa utseendet på det infogade TOA-fältet genom att använda egenskaperna för`FieldTOA` objekt för att ange formateringsalternativ.
 
 #### F: Kan jag lägga till flera TOA-fält i ett enda Word-dokument med Aspose.Words för .NET?
 

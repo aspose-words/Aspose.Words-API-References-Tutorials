@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 
 ## 結論
 
-このガイドでは、提供されている C# ソース コードを使用して、Aspose.Words for .NET で Word 文書の特定の範囲のテキストを削除する方法について説明しました。提供されている手順に従うと、C# アプリケーションで Word 文書内の定義された範囲のテキストを簡単に削除できます。Aspose.Words は、テキスト範囲での Words 処理に非常に柔軟で強力な機能を提供し、Word 文書を正確かつ目的に沿って作成および編集できます。
+このガイドでは、提供されている C# ソース コードを使用して、Aspose.Words for .NET で Word 文書の特定の範囲のテキストを削除する方法について説明しました。提供されている手順に従うことで、C# アプリケーションで Word 文書内の定義された範囲のテキストを簡単に削除できます。Aspose.Words は、テキスト範囲での Words 処理に非常に柔軟で強力な機能を提供し、Word 文書を正確かつ目的に沿って作成および編集できます。
 
 ### Word 文書内のテキストの範囲削除に関する FAQ
 
@@ -75,7 +75,7 @@ A: Aspose.Words for .NET は、.NET アプリケーションで Word 文書を�
 
 #### Q: Aspose.Words for .NET を使用して Word 文書を読み込むにはどうすればいいですか?
 
-A: Aspose.Words for .NETを使用してWord文書を読み込むには、`Document`クラスとそのコンストラクター。ドキュメントのファイル パスまたはストリームをパラメーターとして提供する必要があります。次に例を示します。
+ A: Aspose.Words for .NETを使用してWord文書を読み込むには、`Document`クラスとそのコンストラクター。ドキュメントのファイル パスまたはストリームをパラメーターとして指定する必要があります。次に例を示します。
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
@@ -83,7 +83,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 #### Q: Aspose.Words for .NET を使用して Word 文書の特定の範囲のテキストを削除するにはどうすればよいですか?
 
- A: ドキュメントが読み込まれたら、目的の範囲にアクセスして`Delete`メソッド。たとえば、ドキュメントの最初のセクションからすべてのテキストを削除するには、次のコードを使用します。
+ A: ドキュメントが読み込まれたら、目的の範囲にアクセスして`Delete`メソッドを使用します。たとえば、ドキュメントの最初のセクションからすべてのテキストを削除するには、次のコードを使用します。
 
 ```csharp
 doc.Sections[0].Range.Delete();

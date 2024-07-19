@@ -13,7 +13,7 @@ Hallo! Mussten Sie schon einmal ein Word-Dokument in ein PDF konvertieren? Das i
 
 ## Voraussetzungen
 
-Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie für den Einstieg brauchen:
+Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie für den Einstieg benötigen:
 
 1.  Aspose.Words für .NET-Bibliothek: Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/).
 2. .NET Framework: Stellen Sie sicher, dass das .NET Framework auf Ihrem Computer installiert ist.
@@ -84,7 +84,7 @@ doc.Save(dataDir + "ConvertedDocument.pdf");
 
 ## Abschluss
 
-Und da haben Sie es! So einfach ist es, ein Word-Dokument mit Aspose.Words für .NET in PDF zu konvertieren. Mit nur wenigen Codezeilen können Sie Ihre Word-Dateien in universell zugängliche PDFs umwandeln. Egal, ob Sie Dokument-Workflows automatisieren oder nur eine schnelle Konvertierung benötigen, Aspose.Words für .NET ist für Sie da. 
+Und da haben Sie es! So einfach ist es, ein Word-Dokument mit Aspose.Words für .NET in PDF zu konvertieren. Mit nur wenigen Codezeilen können Sie Ihre Word-Dateien in universell zugängliche PDFs umwandeln. Egal, ob Sie Dokument-Workflows automatisieren oder nur eine schnelle Konvertierung benötigen, Aspose.Words für .NET bietet alles. 
 
 Entdecken Sie weitere Funktionen von Aspose.Words, um Ihre Dokumentverarbeitungsfunktionen zu verbessern. Viel Spaß beim Programmieren!
 

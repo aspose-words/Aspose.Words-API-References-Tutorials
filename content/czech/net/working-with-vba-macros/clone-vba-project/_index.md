@@ -80,6 +80,6 @@ Odpověď: Než budete moci klonovat projekt VBA z dokumentu aplikace Word, mus�
 
 A: Chcete-li uložit cílový dokument s klonovaným projektem VBA, můžete použít`Save` metoda`Document` třídy zadáním požadované cílové cesty a názvu souboru.
 
-#### Otázka: Mohu použít Aspose.Words for .NET k manipulaci s jinými aspekty dokumentů aplikace Word?
+#### Otázka: Mohu použít Aspose.Words pro .NET k manipulaci s jinými aspekty dokumentů aplikace Word?
 
 Odpověď: Ano, Aspose.Words for .NET je výkonná knihovna, která vám umožňuje manipulovat s různými aspekty dokumentů aplikace Word. Můžete vytvářet, upravovat, převádět a extrahovat data z dokumentů aplikace Word, včetně obsahu, formátování, obrázků, tabulek, grafů a dalších.

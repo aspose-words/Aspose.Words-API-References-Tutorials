@@ -107,4 +107,4 @@ Có, sau khi HTML được chèn vào, bạn có thể thao tác thêm với tà
  Bạn có thể bắt đầu với một[dùng thử miễn phí](https://releases.aspose.com/) hoặc có được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để có đầy đủ tính năng.
 
 ### Tôi có thể tìm thêm hướng dẫn và ví dụ ở đâu?  
- Các[tài liệu](https://reference.aspose.com/words/net/) Và[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8)là nơi tuyệt vời để bắt đầu tìm hiểu thêm hướng dẫn chi tiết và hỗ trợ cộng đồng.
+ Các[tài liệu](https://reference.aspose.com/words/net/)Và[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8)là nơi tuyệt vời để bắt đầu tìm hiểu thêm hướng dẫn chi tiết và hỗ trợ cộng đồng.

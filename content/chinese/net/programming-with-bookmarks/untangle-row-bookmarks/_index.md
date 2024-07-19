@@ -2,134 +2,137 @@
 title: 解开 Word 文档中的行书签
 linktitle: 解开 Word 文档中的行书签
 second_title: Aspose.Words 文档处理 API
-description: 了解如何解开 Word 文档中嵌套的行书签以删除特定行而不影响其他书签。
+description: 使用 Aspose.Words for .NET 轻松理清 Word 文档中错综复杂的行书签。本指南将引导您完成更清洁、更安全的书签管理过程。
 type: docs
 weight: 10
 url: /zh/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
+## 介绍
 
-在本文中，我们将探索上面的 C# 源代码，以了解如何使用 Aspose.Words for .NET 库中的 Untangle Row Bookmarks 函数。该函数可以将行书签的末尾与书签的开头放在同一行。
+您是否遇到过这样的情况：删除 Word 文档中书签所在的行会弄乱相邻行中的其他书签？这可能非常令人沮丧，尤其是在处理复杂的表格时。幸运的是，Aspose.Words for .NET 提供了一个强大的解决方案：解开行书签。 
+
+本指南将引导您使用 Aspose.Words for .NET 解开 Word 文档中的行书签。我们将代码分解为易于理解的步骤并解释每个函数的用途，使您能够自信地解决那些棘手的书签问题。
 
 ## 先决条件
 
-- C# 语言的基本知识。
-- 安装了 Aspose.Words 库的.NET 开发环境。
+在深入研究之前，您需要准备一些东西：
 
-## 步骤 1：加载文档
+1.  Aspose.Words for .NET：这个商业库提供了以编程方式处理 Word 文档的功能。2. 您可以从以下位置下载免费试用版[下载链接](https://releases.aspose.com/words/net/)或从购买许可证[买](https://purchase.aspose.com/buy).
+3. C# 开发环境：Visual Studio 或任何其他 C# IDE 均可完美运行。
+4. 带有行书签的 Word 文档：我们将使用名为“表格列书签.docx”的示例文档进行演示。
 
-我们使用`Document`类从文件加载现有文档：
+## 导入命名空间
+
+第一步涉及将必要的命名空间导入到您的 C# 项目中。这些命名空间提供对我们将从 Aspose.Words for .NET 中使用的类和功能的访问：
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using System;
+```
+
+## 步骤 1：加载 Word 文档
+
+我们首先加载包含缠结行书签的 Word 文档。`Document`类处理 Aspose.Words 中的文档操作。加载文档的方法如下：
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY"; //替换为您的文档位置
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
-## 第 2 步：解开线书签
+记得更换`"YOUR DOCUMENT DIRECTORY"`使用“Table column bookmarks.docx”文件的实际路径。
 
-我们使用`Untangle`函数将书签从行中解开。此函数执行自定义任务，将书签行的结尾与书签的开始放在同一行中：
+## 第 2 步：解开书签行
 
-```csharp
-Untangle(doc);
-```
-
-## 步骤 3：通过书签删除行
-
-我们使用`DeleteRowByBookmark`通过书签删除特定行的函数：
+这就是奇迹发生的地方！`Untangle`函数负责解开行书签。让我们分解一下它的功能：
 
 ```csharp
-DeleteRowByBookmark(doc, "ROW2");
+private void Untangle(Document doc)
+{
+   foreach (Bookmark bookmark in doc.Range.Bookmarks)
+   {
+	   //获取书签和书签结尾的父行
+	   Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
+	   Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
+
+	   //检查行是否有效且相邻
+	   if (row1 != null && row2 != null && row1.NextSibling == row2)
+		   //将书签结尾移动到顶行最后一个单元格的最后一段
+		   row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
+   }
+}
 ```
 
-## 步骤 4：检查其他书签的完整性
+以下是代码功能的逐步解释：
 
-我们通过检查书签末尾是否仍然存在来验证其他书签是否未被损坏：
+我们使用`foreach`环形。
+对于每个书签，我们检索书签起始行的父行（`bookmark.BookmarkStart`）和书签结束（`bookmark.BookmarkEnd` ） 使用`GetAncestor`方法。
+然后我们检查是否找到了两行（`row1 != null`和`row2 != null`）并且如果它们是相邻行（`row1.NextSibling == row2`）。这确保我们只修改跨越相邻行的书签。
+如果满足条件，我们将书签结束节点移动到顶行最后一个单元格中最后一段的末尾 (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) 有效地解开它们。
+
+## 步骤 3：按书签删除行
+
+现在书签已经解开了，我们可以使用书签名称安全地删除行。`DeleteRowByBookmark`函数处理这个任务：
+
+```csharp
+private void DeleteRowByBookmark(Document doc, string bookmarkName)
+{
+   Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
+
+   Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
+   row?.Remove();
+}
+```
+
+以下是此功能的详细说明：
+
+我们取书签名称（`bookmarkName`）作为输入。
+我们使用以下方法检索相应的书签对象`doc.Range.Bookmarks[bookmarkName]`.
+然后我们获取书签的父行开始使用`GetAncestor`（类似于`Untangle`功能）。
+最后，我们检查书签和行是否存在（`bookmark != null`和
+
+## 步骤 4：确认解开
+
+虽然`Untangle`函数应该确保其他书签的安全，验证它始终是一种很好的做法。下面是我们如何检查解开过程是否意外删除了另一个书签的末尾：
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-throw new Exception("Wrong, the end of the bookmark was deleted.");
+   throw new Exception("Wrong, the end of the bookmark was deleted.");
+```
 
+此代码片段检查在删除带有“ROW2”书签的行后，名为“ROW1”的书签的末尾是否仍然存在。如果它为空，则抛出异常，表示解开过程存在问题。 
+
+## 步骤 5：保存文档
+
+最后，在解开书签并可能删除行之后，使用`Save`方法：
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
 ```
 
-### 使用 Aspose.Words for .NET 解开行书签的示例源代码
+这会将包含解开的书签和所有已删除的行的文档保存在新文件名“WorkingWithBookmarks.UntangleRowBookmarks.docx”下。 
 
-以下是使用 Aspose.Words for .NET 从行中解开书签的完整示例源代码：
-
-
-```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Table column bookmarks.docx");
-
-	//这将执行将行书签结束与书签开始放入同一行的自定义任务。
-	Untangle(doc);
-
-	//现在我们可以轻松地通过书签删除行而不会损坏任何其他行的书签。
-	DeleteRowByBookmark(doc, "ROW2");
-
-	//这只是为了检查其他书签没有损坏。
-	if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
-		throw new Exception("Wrong, the end of the bookmark was deleted.");
-
-	doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
-
-```
-
-#### 解开源代码
-```csharp
-
-private void Untangle(Document doc)
-        {
-            foreach (Bookmark bookmark in doc.Range.Bookmarks)
-            {
-                //获取书签和书签结束节点的父行。
-                Row row1 = (Row) bookmark.BookmarkStart.GetAncestor(typeof(Row));
-                Row row2 = (Row) bookmark.BookmarkEnd.GetAncestor(typeof(Row));
-
-                //如果两行均正确，且书签的开始和结束位于相邻行中，
-                //将书签结束节点移动到顶行最后一个单元格中最后一段的末尾。
-                if (row1 != null && row2 != null && row1.NextSibling == row2)
-                    row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
-            }
-        }
-
-```
-
-#### DeleteRowByBookmark 源代码
-```csharp
-
- private void DeleteRowByBookmark(Document doc, string bookmarkName)
-        {
-            Bookmark bookmark = doc.Range.Bookmarks[bookmarkName];
-
-            Row row = (Row) bookmark?.BookmarkStart.GetAncestor(typeof(Row));
-            row?.Remove();
-        }
-
-```
 ## 结论
 
-在本文中，我们探索了 C# 源代码，以了解如何使用 Aspose.Words for .NET 的“解开行书签”功能。我们按照分步指南解开行书签并删除特定行，而不会损坏其他书签。
+通过遵循以下步骤并利用`Untangle`功能，您可以使用 Aspose.Words for .NET 有效地解开 Word 文档中的行书签。这可确保按书签删除行不会对相邻行中的其他书签造成意外后果。请记住将占位符替换为`"YOUR DOCUMENT DIRECTORY"`替换为您的实际路径和文件名。
 
-### Word 文档中解开行书签的常见问题解答
+## 常见问题解答
 
-#### 问：Unscramble Row Bookmarks 只适用于表格中的行书签吗？
+### Aspose.Words for .NET 免费吗？
 
-答：是的，解开行书签功能专门用于解开表格中的行书签。此功能可用于处理数组中的行书签，并确保书签结尾与书签开头位于同一行。
+ Aspose.Words for .NET 是一个商业库，可免费试用。您可以从以下位置下载[下载链接](https://releases.aspose.com/words/net/).
 
-#### 问：解乱行书签功能会修改原文档的内容吗？
+### 我可以在 Word 中手动解开行书签吗？
 
-答：是的，“解除行书签”功能会修改原始文档，方法是移动行书签的末尾，使其与书签的开头位于同一行。请确保在应用此功能之前保存文档的备份副本。
+虽然技术上可行，但手动解开 Word 中的书签可能很繁琐且容易出错。Aspose.Words for .NET 可自动执行此过程，为您节省时间和精力。
 
-#### 问：如何识别 Word 文档中的行书签？
+### 如果`Untangle` function encounters an error?
 
-答：行书签通常用于表格中标记特定部分。您可以通过浏览文档中的书签并检查书签是否位于表格行中来识别行书签。
+代码包含一个异常处理程序，如果解开过程意外删除了另一个书签的末尾，则会引发异常。您可以自定义此错误处理以满足您的特定需求。
 
-#### 问：是否可以解开非相邻表中的行书签？
+### 我可以使用此代码来解开不相邻行之间的书签吗？
 
-答：本文介绍的“解开行书签”功能旨在解开相邻表格中的行书签。要解开非相邻表格中的行书签，可能需要根据文档的结构对代码进行额外调整。
+目前，代码主要专注于解开跨相邻行的书签。修改代码以处理非相邻行将需要额外的逻辑来识别和处理这些情况。
 
-#### 问：解开行书签后，我还能对其进行哪些操作？
+### 使用此方法有什么限制吗？
 
-答：一旦解开行书签，您就可以根据需要执行不同的操作。这可能包括编辑、删除或向已加书签的行添加内容。请务必小心处理行书签，以免对文档的其余部分造成任何不必要的影响。
+此方法假设书签在表格单元格内定义明确。如果书签放置在单元格之外或意外位置，则解开过程可能无法按预期进行。

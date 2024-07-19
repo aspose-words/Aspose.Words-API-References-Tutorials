@@ -7,98 +7,118 @@ type: docs
 weight: 10
 url: /de/net/programming-with-charts/bounds-of-axis/
 ---
+## Einführung
 
-In diesem Tutorial wird erklärt, wie Sie mit Aspose.Words für .NET die Grenzen einer Achse in einem Diagramm festlegen. Indem Sie ein Diagramm einfügen, Seriendaten hinzufügen und die Achsenskalierung konfigurieren, können Sie die Mindest- und Höchstwerte für die Achse definieren.
+Möchten Sie professionelle Dokumente mit Diagrammen in .NET erstellen? Dann sind Sie hier richtig! Diese Anleitung führt Sie durch den Prozess der Verwendung von Aspose.Words für .NET zum Festlegen der Achsengrenzen in einem Diagramm. Wir werden jeden Schritt aufschlüsseln, damit Sie ihn problemlos nachvollziehen können, auch wenn Sie neu in der Bibliothek sind. Also, tauchen wir ein und legen los!
 
 ## Voraussetzungen
-Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 
-- Aspose.Words für .NET-Bibliothek installiert.
-- Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-## Schritt 1: Einrichten des Dokumentverzeichnisses
- Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
+-  Aspose.Words für .NET: Sie können[herunterladen](https://releases.aspose.com/words/net/) die neuste Version oder verwenden Sie eine[Kostenlose Testphase](https://releases.aspose.com/).
+- .NET Framework: Stellen Sie sicher, dass .NET auf Ihrem System installiert ist.
+- IDE: Eine Entwicklungsumgebung wie Visual Studio.
+
+Sobald Sie alles bereit haben, können wir mit den nächsten Schritten fortfahren.
+
+## Namespaces importieren
+
+Zu Beginn müssen Sie die erforderlichen Namespaces importieren. Diese ermöglichen Ihnen den Zugriff auf die Aspose.Words-Bibliothek und ihre Diagrammfunktionen.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
+
+Als Erstes müssen Sie das Verzeichnis einrichten, in dem Ihr Dokument gespeichert wird. Dies ist ein einfacher Schritt, aber entscheidend für die Organisation Ihrer Dateien.
+
+```csharp
+// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Schritt 2: Neues Dokument und DocumentBuilder erstellen
- Erstellen Sie eine neue Instanz des`Document` Klasse und eine`DocumentBuilder`Objekt, um mit dem Dokument zu arbeiten.
+## Schritt 2: Neues Dokument erstellen
+
+Erstellen Sie als Nächstes ein neues Dokumentobjekt. Dieses Dokument dient als Container für Ihr Diagramm.
 
 ```csharp
 Document doc = new Document();
+```
+
+## Schritt 3: Initialisieren Sie den Document Builder
+
+Mit der Klasse DocumentBuilder können Sie schnell und einfach Dokumente erstellen. Initialisieren Sie sie mit Ihrem Dokument.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 3: Einfügen und Konfigurieren eines Diagramms
- Fügen Sie ein Diagramm in das Dokument ein, indem Sie das`InsertChart` Methode der`DocumentBuilder` Objekt. Legen Sie den gewünschten Diagrammtyp und die gewünschten Abmessungen fest.
+## Schritt 4: Einfügen eines Diagramms
+
+Jetzt ist es an der Zeit, ein Diagramm in Ihr Dokument einzufügen. In diesem Beispiel verwenden wir ein Säulendiagramm.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Schritt 4: Seriendaten hinzufügen
-Löschen Sie alle vorhandenen Reihen im Diagramm und fügen Sie neue Reihendaten hinzu. In diesem Beispiel fügen wir eine Reihe mit den Beschriftungen „Element 1“ bis „Element 5“ und den entsprechenden Werten hinzu.
+## Schritt 5: Vorhandene Serien löschen
+
+Um sicherzustellen, dass Sie mit einer leeren Tafel beginnen, löschen Sie alle vorhandenen Reihen aus dem Diagramm.
 
 ```csharp
 chart.Series.Clear();
+```
+
+## Schritt 6: Daten zum Diagramm hinzufügen
+
+Hier fügen wir dem Diagramm Daten hinzu. Dazu gehört die Angabe des Seriennamens und der Datenpunkte.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Schritt 5: Grenzen der Achse festlegen
- Konfigurieren Sie die Skalierung der Y-Achse, indem Sie die minimalen und maximalen Werte mit den`Scaling.Minimum` Und`Scaling.Maximum` Eigenschaften der Achse.
+## Schritt 7: Achsengrenzen festlegen
+
+Durch das Festlegen der Grenzen für die Y-Achse wird sichergestellt, dass Ihr Diagramm richtig skaliert ist.
 
 ```csharp
 chart.AxisY.Scaling.Minimum = new AxisBound(0);
 chart.AxisY.Scaling.Maximum = new AxisBound(6);
 ```
 
-## Schritt 6: Speichern Sie das Dokument
- Speichern Sie das Dokument im angegebenen Verzeichnis mit dem`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithCharts.BoundsOfAxis.docx“.
+## Schritt 8: Speichern Sie das Dokument
+
+Speichern Sie abschließend Ihr Dokument im angegebenen Verzeichnis.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-### Beispielquellcode für Bounds Of Axis mit Aspose.Words für .NET 
-
-```csharp
-	// Pfad zu Ihrem Dokumentverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Scaling.Minimum = new AxisBound(0);
-	chart.AxisY.Scaling.Maximum = new AxisBound(6);
-	doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
-```
-
-Das ist es! Sie haben die Grenzen einer Achse in einem Diagramm erfolgreich mit Aspose.Words für .NET festgelegt.
+Und das war’s! Sie haben erfolgreich ein Dokument mit einem Diagramm mit Aspose.Words für .NET erstellt. 
 
 ## Abschluss
-In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET die Grenzen einer Achse in einem Diagramm festlegen. Indem Sie der Schritt-für-Schritt-Anleitung folgen, können Sie ein Diagramm einfügen und konfigurieren, Reihendaten hinzufügen und die Mindest- und Höchstwerte für die Achsenskalierung definieren. Aspose.Words für .NET bietet eine leistungsstarke und flexible API für die Textverarbeitung mit Word-Dokumenten, mit der Sie mühelos dynamische und optisch ansprechende Diagramme erstellen können.
 
+Mit Aspose.Words für .NET können Sie ganz einfach Diagramme in Ihren Dokumenten erstellen und bearbeiten. Diese Schritt-für-Schritt-Anleitung hat Ihnen gezeigt, wie Sie die Grenzen der Achsen in einem Diagramm festlegen, wodurch Ihre Datenpräsentation präziser und professioneller wird. Egal, ob Sie Berichte, Präsentationen oder andere Dokumente erstellen, Aspose.Words bietet die Tools, die Sie benötigen.
 
-### FAQs
+## FAQs
 
-#### F1. Was ist Aspose.Words für .NET?
-Aspose.Words für .NET ist eine Bibliothek, die es Entwicklern ermöglicht, programmgesteuert mit Word-Dokumenten zu arbeiten. Sie bietet eine breite Palette an Features und Funktionen zum Erstellen, Bearbeiten und Speichern von Word-Dokumenten.
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine Bibliothek, mit der Sie Word-Dokumente programmgesteuert mithilfe des .NET-Frameworks erstellen, ändern und konvertieren können.
 
-#### F2. Wie kann ich Aspose.Words für .NET installieren?
-Um Aspose.Words für .NET zu installieren, können Sie den NuGet-Paketmanager in Visual Studio verwenden. Suchen Sie einfach im NuGet-Paketmanager nach „Aspose.Words“ und installieren Sie es in Ihrem Projekt.
+### Wie richte ich Aspose.Words für .NET ein?
+ Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/) und befolgen Sie die bereitgestellten Installationsanweisungen.
 
-#### F3. Kann ich Aspose.Words für .NET mit anderen Programmiersprachen verwenden?
-Nein, Aspose.Words für .NET ist speziell für .NET-Anwendungen konzipiert. Es funktioniert mit Programmiersprachen wie C# und VB.NET.
+### Kann ich Aspose.Words kostenlos nutzen?
+ Ja, Sie können ein[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
 
-#### F4. Gibt es weitere Voraussetzungen für die Verwendung von Aspose.Words für .NET?
-Neben der Installation der Aspose.Words für .NET-Bibliothek sollten Sie über Grundkenntnisse in C#-Programmierung und Textverarbeitung mit Word-Dokumenten verfügen. Kenntnisse des .NET-Frameworks sind ebenfalls hilfreich.
+### Wo finde ich Dokumentation für Aspose.Words für .NET?
+ Detaillierte Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).
+
+### Wie kann ich Support für Aspose.Words erhalten?
+ Besuchen Sie die[Hilfeforum](https://forum.aspose.com/c/words/8) zur Hilfe.

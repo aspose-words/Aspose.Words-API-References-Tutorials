@@ -30,7 +30,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 ```
 
 ## 4단계: 표 스타일 정의
@@ -51,35 +51,35 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
  내용에 따라 배열의 크기를 자동으로 조정하기 위해 다음을 사용합니다.`AutoFit()` 방법`AutoFitBehavior.AutoFitToContents` 행동.
 
 ```csharp
-table. AutoFit(AutoFitBehavior.AutoFitToContents);
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
 ## 7단계: 셀에 콘텐츠 추가
- 이제 다음을 사용하여 셀에 내용을 추가할 수 있습니다.`Writeln()` 그리고`InsertCell()` 문서 작성기의 메소드. 이 예에서는 "Item" 및 "Quantity(
+ 이제 다음을 사용하여 셀에 내용을 추가할 수 있습니다.`Writeln()`그리고`InsertCell()` 문서 작성기의 메소드. 이 예에서는 "Item" 및 "Quantity(
 
 kg)" 및 해당 데이터.
 
 ```csharp
 builder.Writeln("Item");
 builder.CellFormat.RightPadding = 40;
-builder. InsertCell();
-builder. Writen("Quantity (kg)");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Apples");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("20");
-builder. EndRow();
-builder. InsertCell();
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Bananas");
-builder. InsertCell();
-builder. Writen("40");
-builder. EndRow();
-builder. InsertCell();
+builder.InsertCell();
+builder.Writen("40");
+builder.EndRow();
+builder.InsertCell();
 builder.Writeln("Carrots");
-builder. InsertCell();
+builder.InsertCell();
 builder.Writeln("50");
-builder. EndRow();
+builder.EndRow();
 ```
 
 ## 8단계: 수정된 문서 저장
@@ -94,41 +94,41 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 ### .NET용 Aspose.Words를 사용하여 스타일로 테이블 만들기의 샘플 소스 코드 
 
 ```csharp
-	// 문서 디렉터리 경로
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// 문서 디렉터리 경로
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	// 테이블 형식을 설정하기 전에 먼저 최소한 하나의 행을 삽입해야 합니다.
-	builder.InsertCell();
-	// 고유 스타일 식별자를 기반으로 사용되는 테이블 스타일을 설정합니다.
-	table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-	// 스타일에 따라 형식을 지정해야 하는 기능을 적용합니다.
-	table.StyleOptions =
-		TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
-	table.AutoFit(AutoFitBehavior.AutoFitToContents);
-	builder.Writeln("Item");
-	builder.CellFormat.RightPadding = 40;
-	builder.InsertCell();
-	builder.Writeln("Quantity (kg)");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Apples");
-	builder.InsertCell();
-	builder.Writeln("20");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Bananas");
-	builder.InsertCell();
-	builder.Writeln("40");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.Writeln("Carrots");
-	builder.InsertCell();
-	builder.Writeln("50");
-	builder.EndRow();
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+// 테이블 형식을 설정하기 전에 먼저 최소한 하나의 행을 삽입해야 합니다.
+builder.InsertCell();
+// 고유 스타일 식별자를 기반으로 사용되는 테이블 스타일을 설정합니다.
+table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
+// 스타일에 따라 형식을 지정해야 하는 기능을 적용합니다.
+table.StyleOptions =
+	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
+table.AutoFit(AutoFitBehavior.AutoFitToContents);
+builder.Writeln("Item");
+builder.CellFormat.RightPadding = 40;
+builder.InsertCell();
+builder.Writeln("Quantity (kg)");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Apples");
+builder.InsertCell();
+builder.Writeln("20");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Bananas");
+builder.InsertCell();
+builder.Writeln("40");
+builder.EndRow();
+builder.InsertCell();
+builder.Writeln("Carrots");
+builder.InsertCell();
+builder.Writeln("50");
+builder.EndRow();
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
 ## 결론

@@ -54,7 +54,7 @@ Für eine bessere Organisation ist es oft notwendig, Tabellen Überschriften hin
 Row headerRow = table.getRows().get(0);
 headerRow.getRowFormat().setHeadingFormat(true);
 
-// Kopfzellen füllen
+// Kopfzeilenzellen füllen
 for (int i = 0; i < table.getColumns().getCount(); i++) {
     Cell cell = headerRow.getCells().get(i);
     cell.getFirstParagraph().appendChild(new Run(doc, "Header " + (i + 1)));

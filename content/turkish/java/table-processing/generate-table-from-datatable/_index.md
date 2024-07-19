@@ -72,7 +72,7 @@ Bu adımları izleyerek DataTable'dan başarıyla bir tablo oluşturabilir ve bu
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for Java kullanarak DataTable'dan nasıl tablo oluşturulacağını başarıyla öğrendiniz. Bu adım adım kılavuzda DataTable hazırlama, Word belgesinde tablo oluşturma ve biçimlendirme ve son çıktıyı kaydetme süreci gösterilmiştir. Aspose.Words for Java, tablo işleme için güçlü ve esnek bir API sunarak tablo halindeki verileri yönetmenizi ve bunları kelime işlem projelerinize dahil etmenizi kolaylaştırır.
+Tebrikler! Aspose.Words for Java kullanarak DataTable'dan nasıl tablo oluşturulacağını başarıyla öğrendiniz. Bu adım adım kılavuzda DataTable hazırlama, Word belgesinde tablo oluşturma ve biçimlendirme ve son çıktıyı kaydetme süreci gösterilmiştir. Aspose.Words for Java, tablo işleme için güçlü ve esnek bir API sunarak tablo halindeki verileri yönetmenizi ve kelime işlem projelerinize dahil etmenizi kolaylaştırır.
 
 Aspose.Words'ün yeteneklerinden yararlanarak karmaşık tablo yapılarını yönetebilir, özel formatlama uygulayabilir ve tabloları belgelerinize sorunsuz bir şekilde entegre edebilirsiniz. İster rapor, ister fatura, ister tablo şeklinde gösterim gerektiren herhangi bir belge oluşturuyor olun, Aspose.Words profesyonel sonuçlara kolaylıkla ulaşmanızı sağlar.
 

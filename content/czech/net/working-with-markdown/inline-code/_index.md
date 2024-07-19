@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-markdown/inline-code/
 ---
 
-V tomto příkladu vás provedeme tím, jak používat funkci vloženého kódu s Aspose.Words pro .NET. Vložený kód se používá k vizuální reprezentaci částí kódu uvnitř odstavce.
+tomto příkladu vás provedeme tím, jak používat funkci vloženého kódu s Aspose.Words pro .NET. Vložený kód se používá k vizuální reprezentaci částí kódu uvnitř odstavce.
 
 ## Krok 1: Použití generátoru dokumentů
 
@@ -66,11 +66,11 @@ gratuluji! Nyní jste se naučili, jak používat funkce vloženého kódu s Asp
 
 #### Otázka: Jak mohu použít vložený kód v Aspose.Words?
 
- A: Chcete-li použít vložený kód v Aspose.Words, můžete použít vhodné značky k obklopení textu, který má být formátován jako vložený kód. Můžete například použít`<code>` nebo`<kbd>` tag na obklopující text, který má být formátován jako vložený kód.
+A: Chcete-li použít vložený kód v Aspose.Words, můžete použít vhodné značky k obklopení textu, který má být formátován jako vložený kód. Můžete například použít`<code>` nebo`<kbd>` tag na obklopující text, který má být formátován jako vložený kód.
 
 #### Otázka: Je možné v Aspose.Words určit písmo nebo barvu vloženého kódu?
 
- Odpověď: Ano, můžete určit písmo nebo barvu vloženého kódu v Aspose.Words. Můžete použít`Font.Name` a`Font.Color` vlastnosti`Run` objekt pro nastavení písma a barvy vloženého kódu. Můžete například použít`run.Font.Name = "Courier New"` k určení písma pro vložený kód a`run.Font.Color = Color.Blue` určení barvy.
+ Odpověď: Ano, můžete určit písmo nebo barvu vloženého kódu v Aspose.Words. Můžete použít`Font.Name`a`Font.Color` vlastnosti`Run` objekt pro nastavení písma a barvy vloženého kódu. Můžete například použít`run.Font.Name = "Courier New"` k určení písma pro vložený kód a`run.Font.Color = Color.Blue` k určení barvy.
 
 #### Otázka: Mohu použít vložený kód v odstavci obsahujícím jiné textové prvky?
 

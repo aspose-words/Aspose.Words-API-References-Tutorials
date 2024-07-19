@@ -19,7 +19,7 @@ recurso Carregar PDF criptografado do Aspose.Words for .NET permite carregar arq
 A primeira etapa é carregar o documento PDF criptografado em seu aplicativo. Veja como fazer isso:
 
 ```csharp
-// Caminho para o diretório de documentos.
+//Caminho para o diretório de documentos.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

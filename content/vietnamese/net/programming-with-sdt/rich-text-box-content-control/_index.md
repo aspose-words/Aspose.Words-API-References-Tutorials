@@ -17,7 +17,7 @@ Hướng dẫn này trình bày cách tạo điều khiển nội dung hộp vă
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,7 +43,7 @@ para.Runs.Add(run);
 ```
 
 ## Bước 4: Thêm nội dung văn bản đa dạng thức vào Kiểm soát nội dung
-Thêm đoạn văn có nội dung văn bản đa dạng thức vào`ChildNodes` bộ sưu tập kiểm soát nội dung hộp văn bản có định dạng.
+ Thêm đoạn văn có nội dung văn bản đa dạng thức vào`ChildNodes` bộ sưu tập kiểm soát nội dung hộp văn bản có định dạng.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);

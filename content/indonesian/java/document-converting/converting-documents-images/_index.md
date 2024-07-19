@@ -66,7 +66,7 @@ Mengonversi dokumen menjadi gambar di Java menjadi mudah dengan Aspose.Words for
  Untuk mengatur resolusi gambar, gunakan`setResolution` metode dari`ImageSaveOptions` dan tentukan resolusi yang diinginkan dalam titik per inci (DPI).
 
 ### Bisakah saya mengonversi halaman tertentu dalam dokumen menjadi gambar?
- Ya, Anda dapat menentukan rentang halaman menggunakan`setPageCount` Dan`setPageIndex` metode`ImageSaveOptions` untuk mengonversi halaman tertentu menjadi gambar.
+ Ya, Anda dapat menentukan rentang halaman menggunakan`setPageCount`Dan`setPageIndex` metode`ImageSaveOptions` untuk mengonversi halaman tertentu menjadi gambar.
 
 ### Apakah Aspose.Words untuk Java cocok untuk konversi dokumen batch?
 Sangat! Anda dapat menggunakan Aspose.Words untuk Java untuk mengonversi banyak dokumen menjadi gambar secara batch secara efisien.

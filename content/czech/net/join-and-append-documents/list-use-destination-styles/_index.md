@@ -2,137 +2,93 @@
 title: Seznam použít styly cíle
 linktitle: Seznam použít styly cíle
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se připojovat a připojovat dokumenty aplikace Word při zachování stylů seznamu cílového dokumentu pomocí Aspose.Words for .NET.
+description: Naučte se sloučit dokumenty aplikace Word pomocí Aspose.Words for .NET bez ztráty formátování seznamu. Podrobný průvodce pro zachování stylů dokumentů beze změny.
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/list-use-destination-styles/
 ---
+## Úvod
 
-Tento výukový program vás provede procesem používání funkce Styly použití seznamu v Aspose.Words for .NET. Tato funkce umožňuje spojovat a připojovat dokumenty aplikace Word při použití stylů seznamu cílového dokumentu.
+Zkoušeli jste někdy sloučit dokumenty Wordu a zamotali jste se s formátováním? Je to jako zkusit občas smíchat olej a vodu, že? No, dnes se ponoříme do úhledného triku pomocí Aspose.Words pro .NET, který vás ušetří této bolesti hlavy. Naučíme se, jak importovat seznamy z jednoho dokumentu do druhého, aniž bychom si pokazili číslování a styly. Jste připraveni si trochu usnadnit život? Začněme!
 
 ## Předpoklady
 
-Než začnete, ujistěte se, že máte následující:
+Než se pustíme do kouzla, ujistěte se, že máte vše, co potřebujete:
 
-1. Aspose.Words for .NET nainstalován. Můžete si jej stáhnout z webu Aspose nebo nainstalovat přes NuGet.
-2. Visual Studio nebo jiné vývojové prostředí C#.
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+2. Visual Studio: Bude stačit jakákoli nejnovější verze.
+3. Základní porozumění C#: Nemusíte být čaroděj, ale trocha znalosti vám pomůže.
 
-## Krok 1: Inicializujte adresáře dokumentů
+ Ujistěte se, že máte Aspose.Words nainstalované a nastavené ve svém projektu. Pokud si nejste jisti, jak to udělat,[dokumentace](https://reference.aspose.com/words/net/) je skvělé místo, kde začít.
 
- Nejprve musíte nastavit cestu k adresáři dokumentů. Upravte hodnotu`dataDir` proměnnou k cestě, kde jsou umístěny vaše dokumenty.
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory do vašeho souboru C#:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Máš to? Skvělý. Pojďme si to nyní rozebrat krok za krokem.
+
+## Krok 1: Nastavte cesty k dokumentu
+
+Každý projekt začíná uspořádáním vašich souborů. Ukažme náš kód na adresář, kde jsou uloženy vaše dokumenty.
+
+```csharp
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kde jsou vaše dokumenty uloženy. Snadné, že?
+
 ## Krok 2: Načtěte zdrojové a cílové dokumenty
 
-Dále musíte načíst zdrojové a cílové dokumenty pomocí Aspose.Words`Document` třída. Aktualizujte názvy souborů v`Document` konstruktor podle názvů vašich dokumentů.
+Dále musíme načíst zdrojové i cílové dokumenty. Představte si to jako otevření dvou souborů aplikace Word v počítači.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Krok 3: Nastavte zdrojový dokument na Pokračovat po cílovém dokumentu
+ Tady,`srcDoc` je váš zdrojový dokument (ten se seznamy, které chcete zkopírovat), a`dstDoc` je váš cílový dokument (ten, kam chcete tyto seznamy vložit).
 
- Abyste zajistili, že obsah ze zdrojového dokumentu bude pokračovat i po konci cílového dokumentu, musíte nastavit`SectionStart` vlastnost první sekce ve zdrojovém dokumentu na`SectionStart.Continuous`.
+## Krok 3: Nakonfigurujte možnosti importu
 
-```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-```
-
-## Krok 4: Zvládněte formátování seznamu
-
-Chcete-li zvládnout formátování seznamu, projdete každý odstavec ve zdrojovém dokumentu a zkontrolujete, zda se jedná o položku seznamu. Pokud ano, porovnáte ID seznamu s existujícími seznamy v cílovém dokumentu. Pokud existuje seznam se stejným ID, vytvoříte kopii seznamu ve zdrojovém dokumentu a aktualizujete formát seznamu odstavce tak, aby používal zkopírovaný seznam.
+Musíme zadat některé možnosti, abychom se ujistili, že jsou seznamy importovány správně. Tento krok zajistí, že v případě konfliktu číslování se zachová číslování ze zdrojového dokumentu.
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## Krok 5: Připojte zdrojový dokument k cílovému dokumentu
+## Krok 4: Připojte zdrojový dokument k cílovému dokumentu
 
- Nyní můžete připojit zdrojový dokument k cílovému dokumentu pomocí`AppendDocument` metoda`Document` třída. The`ImportFormatMode.UseDestinationStyles` Parametr zajišťuje, že během operace připojení budou použity styly seznamu cílového dokumentu.
+Nyní provedeme sloučení. Tady se děje kouzlo. Zdrojový dokument připojíme k cílovému dokumentu při použití zadaných možností importu.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## Krok 6: Uložte konečný dokument
+Úspěšně jste sloučili dva dokumenty a seznamy zůstaly nedotčené.
 
-Nakonec uložte sloučený dokument s povolenou funkcí Seznam použití cílových stylů pomocí`Save` metoda`Document` třída.
+## Závěr
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+Tady to máš! Slučování dokumentů bez ztráty mysli na problémy s formátováním je s Aspose.Words pro .NET hračkou. Ať už pracujete na velkém projektu nebo jen potřebujete uklidit nějaké soubory, tato metoda udrží vaše seznamy ostré. Takže až budete příště čelit dilematu se slučováním dokumentů, zapamatujte si tuto příručku a pusťte se do toho jako profík!
 
-### Příklad zdrojového kódu pro List Use Destination Styles pomocí Aspose.Words for .NET 
+## FAQ
 
-Zde je úplný zdrojový kód pro funkci "Seznam použití cílových stylů" v C# pomocí Aspose.Words pro .NET:
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty Wordu. Umožňuje vytvářet, upravovat a převádět dokumenty v různých formátech.
 
+### Jak nainstaluji Aspose.Words for .NET?
+ Můžete si jej stáhnout z[webová stránka](https://releases.aspose.com/words/net/) a postupujte podle pokynů k instalaci v[dokumentace](https://reference.aspose.com/words/net/).
 
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Mohu používat Aspose.Words zdarma?
+ Aspose.Words nabízí a[zkušební verze zdarma](https://releases.aspose.com/) s omezenými funkcemi. Pro plný přístup si budete muset zakoupit licenci[tady](https://purchase.aspose.com/buy).
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Nastavte zdrojový dokument tak, aby pokračoval přímo po konci cílového dokumentu.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// Sledujte vytvořené seznamy.
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			// Zkontrolujte, zda cílový dokument již obsahuje seznam s tímto ID. Pokud ano, pak může
-			// způsobit, že dva seznamy běží společně. Místo toho vytvořte kopii seznamu ve zdrojovém dokumentu.
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				// Pro toto ID již existuje nově zkopírovaný seznam, načtěte uložený seznam,
-				// a použijte jej na aktuální odstavec.
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					// Přidejte kopii tohoto seznamu do dokumentu a uložte jej pro pozdější použití.
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				// Nastavte seznam tohoto odstavce na zkopírovaný seznam.
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	// Připojte zdrojový dokument na konec cílového dokumentu.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### Co jsou možnosti ImportFormat?
+ ImportFormatOptions umožňují určit, jak se bude zpracovávat formátování při importu obsahu z jednoho dokumentu do druhého. Například,`KeepSourceNumbering` zajišťuje zachování číslování seznamů ze zdrojového dokumentu.
 
-je to! Úspěšně jste implementovali funkci List Use Destination Styles pomocí Aspose.Words for .NET. Konečný dokument bude obsahovat sloučený obsah se styly seznamu z cílového dokumentu.
+### Kde mohu získat podporu pro Aspose.Words?
+ Můžete získat podporu od[Fórum Aspose.Words](https://forum.aspose.com/c/words/8), kde můžete klást otázky a získat pomoc od komunity a vývojářů Aspose.

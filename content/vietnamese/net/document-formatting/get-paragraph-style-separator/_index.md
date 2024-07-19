@@ -17,7 +17,7 @@ Bạn đã bao giờ thử điều hướng qua mê cung của một tài liệu
 Trước khi bắt đầu viết mã, hãy đảm bảo bạn có tất cả các công cụ cần thiết:
 
 - Visual Studio: Đảm bảo bạn đã cài đặt nó. Nếu không, hãy tải xuống và cài đặt nó từ trang web của Microsoft.
--  Aspose.Words for .NET: Nếu bạn chưa có, hãy lấy phiên bản mới nhất[đây](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Nếu bạn chưa có, hãy lấy phiên bản mới nhất[đây](https://releases.aspose.com/words/net/).
 - Tài liệu Word mẫu: Tài liệu này phải chứa các dấu phân cách kiểu đoạn văn để chúng ta làm việc. Bạn có thể tạo một hoặc sử dụng một tài liệu hiện có.
 
 ## Nhập không gian tên
@@ -30,7 +30,7 @@ using Aspose.Words.Tables;
 using System;
 ```
 
-Được rồi, hãy chia nhỏ điều này từng bước một. Chúng ta sẽ bắt đầu lại từ đầu và dần dần tìm ra những dấu phân cách kiểu đoạn văn khó chịu đó.
+Được rồi, hãy chia nhỏ điều này từng bước một. Chúng ta sẽ bắt đầu lại từ đầu và dần dần tìm ra các dấu phân cách kiểu đoạn văn khó chịu đó.
 
 ## Bước 1: Thiết lập dự án của bạn
 

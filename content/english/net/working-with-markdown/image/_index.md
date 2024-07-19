@@ -2,75 +2,77 @@
 title: Image
 linktitle: Image
 second_title: Aspose.Words Document Processing API
-description: Learn how to insert and customize image with Aspose.Words for .NET Step-by-step guide.
+description: Learn how to add images to your documents using Aspose.Words for .NET with this step-by-step guide. Enhance your docs with visuals in no time.
 type: docs
 weight: 10
 url: /net/working-with-markdown/image/
 ---
+## Introduction
 
-In this example, we will explain how to use the image feature with Aspose.Words for .NET. Pictures allow you to insert illustrations and graphics into a document.
+Are you ready to dive into the world of Aspose.Words for .NET? Today, we’re going to explore how to add images to your documents. Whether you’re working on a report, a brochure, or just spicing up a simple doc, adding images can make a huge difference. So, let’s get started!
 
-## Step 1: Using a document generator
+## Prerequisites
 
-First, we'll use a document generator to add content to our document.
+Before we jump into the code, let’s make sure you have everything you need:
+
+1. Aspose.Words for .NET: You can download it from the [Aspose website](https://releases.aspose.com/words/net/).
+2. Development Environment: Any .NET development environment like Visual Studio.
+3. Basic Knowledge of C#: If you’re familiar with C#, you’re good to go!
+
+## Import Namespaces
+
+First things first, let’s import the necessary namespaces. This is essential for accessing Aspose.Words classes and methods.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Now, let’s break down the process into simple steps. Each step will have a heading and a detailed explanation to make sure you’re following along smoothly.
+
+## Step 1: Initialize DocumentBuilder
+
+To start with, you need to create a `DocumentBuilder` object. This object will help you add content to your document.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Step 2: Inserting an image
+## Step 2: Insert Image
 
-We can insert an image using the `Shape` class and specifying the type of image, here `ShapeType.Image`. We also set the wrap type of the image to `WrapType.Inline`.
-
-```csharp
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape. WrapType = WrapType. Inline;
-```
-
-## Step 3: Image Customization
-
-We customize the image by specifying its full path, for example `"/attachment/1456/pic001.png"`, and adding a title to the image.
+Next, you’ll insert an image into your document. Here’s how you do it:
 
 ```csharp
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "Title";
+Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
-### Example source code for images with Aspose.Words for .NET
+Replace `"path_to_your_image.jpg"` with the actual path of your image file. The `InsertImage` method will add the image to your document.
+
+## Step 3: Set Image Properties
+
+You can set various properties for the image. For example, let’s set the title of the image:
 
 ```csharp
-// Use a document builder to add content to the document.
-DocumentBuilder builder = new DocumentBuilder();
-
-// Insert image.
-Shape shape = new Shape(builder.Document, ShapeType.Image);
-shape.WrapType = WrapType.Inline;
-shape.ImageData.SourceFullName = "/attachment/1456/pic001.png";
-shape.ImageData.Title = "title";
-builder.InsertNode(shape);
+shape.ImageData.Title = "Your Image Title";
 ```
 
-Congratulation ! You have now learned how to use the images feature with Aspose.Words for .NET.
+## Conclusion
 
+Adding images to your documents can greatly enhance their visual appeal and effectiveness. With Aspose.Words for .NET, this process becomes straightforward and efficient. By following the steps outlined above, you can easily integrate images into your documents and take your document creation skills to the next level.
 
-### FAQ's
+## FAQ's
 
-#### Q: How can I insert an image from a local file into Aspose.Words?
+### Can I add multiple images to a single document?  
+Yes, you can add as many images as you like by repeating the `InsertImage` method for each image.
 
-A: To insert an image from a local file into Aspose.Words, you can use the `Shape` class and the `InsertImage` method.
+### What image formats are supported by Aspose.Words for .NET?  
+Aspose.Words supports various image formats including JPEG, PNG, BMP, GIF, and more.
 
-#### Q: Can I insert an image from a URL in Aspose.Words?
+### Can I resize the images within the document?  
+Absolutely! You can set the height and width properties of the `Shape` object to resize the images.
 
-A: Yes, you can insert an image from a URL in Aspose.Words. You can use the same `InsertImage` method and specify the image URL instead of the local file path.
+### Is it possible to add images from a URL?  
+Yes, you can add images from a URL by providing the URL in the `InsertImage` method.
 
-#### Q: How can I resize an image in Aspose.Words?
-
-A: To resize an image in Aspose.Words, you can use the `Width` and `Height` properties of the `Shape` object.
-
-#### Q: Can I apply filters to images in Aspose.Words?
-
-A: Yes, you can apply filters to images in Aspose.Words. For example, you can apply a blur filter to an image using the `ApplyGaussianBlur` method of the `Shape` object.
-
-#### Q: How can I replace one image with another in Aspose.Words?
-
-A: To replace one image with another in Aspose.Words, you can use the `Replace` method of the `Shape` class. This method takes as parameter the `Shape` object of the image to be replaced and the `Shape` object of the new image.
+### How do I get a free trial of Aspose.Words for .NET?  
+You can get a free trial from the [Aspose website](https://releases.aspose.com/).

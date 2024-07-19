@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### F: Wie kann ich in einem Aspose.Words-Dokument für .NET nach Verschiebungsrevisionen von Formen suchen?
 
- A: Um in einem Aspose.Words für .NET-Dokument nach Formverschiebungsrevisionen zu suchen, können Sie ein vorhandenes Dokument laden, das Formverschiebungsrevisionen enthält. Dann können Sie auf die Formverschiebungsrevisionen der einzelnen Formen zugreifen.`IsMoveFromRevision` Und`IsMoveToRevision` Eigenschaften, um zu bestimmen, ob es verschoben wird und wenn ja, von wo und wohin:
+ A: Um in einem Aspose.Words für .NET-Dokument nach Formverschiebungsrevisionen zu suchen, können Sie ein vorhandenes Dokument laden, das Formverschiebungsrevisionen enthält. Dann können Sie auf die Formverschiebungsrevisionen der einzelnen Formen zugreifen.`IsMoveFromRevision`Und`IsMoveToRevision` Eigenschaften, um zu bestimmen, ob es verschoben wird und wenn ja, von wo und wohin:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

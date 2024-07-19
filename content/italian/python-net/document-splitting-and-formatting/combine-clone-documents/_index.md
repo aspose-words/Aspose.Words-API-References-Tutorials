@@ -11,7 +11,7 @@ Nel frenetico mondo digitale di oggi, l'elaborazione dei documenti è un aspetto
 
 ## Installazione di Aspose.Words
 
- Prima di immergerci nei dettagli, devi configurare Aspose.Words per Python. Puoi scaricarlo e installarlo utilizzando il seguente collegamento:[Scarica Aspose.Words per Python](https://releases.aspose.com/words/python/). 
+Prima di immergerci nei dettagli, devi configurare Aspose.Words per Python. Puoi scaricarlo e installarlo utilizzando il seguente collegamento:[Scarica Aspose.Words per Python](https://releases.aspose.com/words/python/). 
 
 ## Combinazione di documenti
 
@@ -127,7 +127,7 @@ Sì, puoi eseguire un clone superficiale per copiare solo la struttura di un doc
  Utilizza il`range.replace()` metodo insieme alle opzioni appropriate per trovare e sostituire il testo in modo efficiente.
 
 ### Aspose.Words supporta la modifica della formattazione?
-Assolutamente, puoi modificare la formattazione usando metodi come`run.font.size` E`run.font.bold`.
+Assolutamente, puoi modificare la formattazione usando metodi come`run.font.size`E`run.font.bold`.
 
 ### Dove posso accedere alla documentazione di Aspose.Words?
  Puoi trovare la documentazione completa su[Aspose.Words per riferimento API Python](https://reference.aspose.com/words/python-net/).

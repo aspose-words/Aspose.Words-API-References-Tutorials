@@ -15,7 +15,7 @@ Dalam tutorial ini, kami akan memandu Anda dalam menerima revisi pada dokumen Wo
 Dalam contoh ini, kita membuat dokumen dan menambahkan konten. Kami menggunakan beberapa paragraf untuk menggambarkan perubahan dan revisi. Begini caranya:
 
 ```csharp
-// Jalur ke direktori dokumen.
+//Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### Solusi 2:
 
- J: Anda juga dapat mengaktifkan pelacakan revisi menggunakan`Document` konstruktor yang menerima`trackRevisions` Dan`author` parameter.
+ J: Anda juga dapat mengaktifkan pelacakan revisi menggunakan`Document` konstruktor yang menerima`trackRevisions`Dan`author` parameter.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

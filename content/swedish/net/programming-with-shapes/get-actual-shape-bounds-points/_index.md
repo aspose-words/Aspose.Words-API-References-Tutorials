@@ -17,7 +17,7 @@ För att följa denna handledning måste du ha följande:
 - Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Skapa ett nytt dokument och DocumentBuilder
- Skapa en ny instans av`Document` klass och a`DocumentBuilder`objekt för att arbeta med dokumentet.
+ Skapa en ny instans av`Document` klass och a`DocumentBuilder` objekt för att arbeta med dokumentet.
 
 ```csharp
 Document doc = new Document();
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Steg 2: Infoga en bildform
- Använd`InsertImage` metod för`DocumentBuilder` objekt för att infoga en bildform i dokumentet. Ange sökvägen till bildfilen som en parameter.
+ Använd`InsertImage` metod för`DocumentBuilder`objekt för att infoga en bildform i dokumentet. Ange sökvägen till bildfilen som en parameter.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

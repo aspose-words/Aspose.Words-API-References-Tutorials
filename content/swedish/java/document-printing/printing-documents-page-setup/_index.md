@@ -75,7 +75,7 @@ I den här artikeln har vi utforskat hur man skriver ut dokument med anpassad si
 
 ### Hur kan jag ändra pappersstorleken på mitt dokument?
 
- För att ändra pappersstorleken på ditt dokument, använd`setPageWidth` och`setPageHeight` metoder för`PageSetup` klass och ange önskade dimensioner i poäng.
+ För att ändra pappersstorleken på ditt dokument, använd`setPageWidth`och`setPageHeight` metoder för`PageSetup` klass och ange önskade dimensioner i poäng.
 
 ### Kan jag skriva ut flera kopior av ett dokument?
 

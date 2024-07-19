@@ -31,7 +31,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## Steg 3: Ta bort avsnittsbrytningar
+## Steg 3: Ta bort avsnittsavbrott
 För att ta bort avsnittsbrytningar kommer vi att gå igenom alla avsnitt med början från avsnittet som föregår det sista och flyttar till det första avsnittet. Inom slingan kommer vi att lägga till innehållet i varje avsnitt till början av det sista avsnittet och sedan ta bort det kopierade avsnittet.
 
 ```csharp
@@ -46,7 +46,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 ```
 
 ## Steg 4: Spara det ändrade dokumentet
- Slutligen kommer vi att spara det ändrade dokumentet med hjälp av`Save` metod. Ange önskad sökväg och format för utdatafilen (t.ex. DOCX) för det ändrade dokumentet.
+Slutligen kommer vi att spara det ändrade dokumentet med hjälp av`Save` metod. Ange önskad sökväg och format för utdatafilen (t.ex. DOCX) för det ändrade dokumentet.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

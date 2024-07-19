@@ -2,168 +2,95 @@
 title: Alanların İçindeki Metni Yoksay
 linktitle: Alanların İçindeki Metni Yoksay
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'in "Alanların İçindeki Metni Yoksay" özelliğini nasıl kullanacağınızı öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki alanların içindeki metinleri nasıl değiştireceğinizi öğrenin. Bu eğitimde pratik örneklerle adım adım rehberlik sağlanmaktadır.
 type: docs
 weight: 10
 url: /tr/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-Bu makalede, Aspose.Words for .NET kütüphanesinde Alanların İçindeki Metni Yoksay fonksiyonunun nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, belgeleri düzenlerken alanların içindeki metni göz ardı etmek istediğimizde kullanışlıdır.
+## giriiş
+
+Bu eğitimde Aspose.Words for .NET'i kullanarak Word belgeleri içindeki alanların içindeki metinleri değiştirmeyi inceleyeceğiz. Aspose.Words, belge işleme için güçlü özellikler sağlayarak geliştiricilerin görevleri verimli bir şekilde otomatikleştirmesine olanak tanır. Burada, belge otomasyon senaryolarında yaygın bir gereksinim olan alanların içindeki metinlerin göz ardı edilmesine odaklanacağız.
 
 ## Önkoşullar
 
-- C# dili hakkında temel bilgi.
-- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
+Başlamadan önce aşağıdaki kurulumlara sahip olduğunuzdan emin olun:
+- Makinenizde Visual Studio yüklü.
+- Aspose.Words for .NET kütüphanesi projenize entegre edilmiştir.
+- C# programlama ve .NET ortamına ilişkin temel bilgi.
 
-## Adım 1: Yeni Bir Belge Oluşturma
+## Ad Alanlarını İçe Aktar
 
- Alanların içindeki metinleri değiştirmeye başlamadan önce Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmamız gerekiyor. Bu, bir örneği başlatarak yapılabilir.`Document` nesne:
-
+Başlamak için C# projenize gerekli ad alanlarını ekleyin:
 ```csharp
-Document doc = new Document();
+using Aspose.Words;
+using Aspose.Words.Builder;
+using Aspose.Words.FindReplace;
+using System;
+using System.Text.RegularExpressions;
 ```
 
-## Adım 2: İçinde metin bulunan bir alan ekleme
+## 1. Adım: Yeni Bir Belge ve Oluşturucu Oluşturun
 
- Bir belgeye sahip olduğumuzda, içine metin içeren bir alan ekleyebiliriz.`DocumentBuilder` nesne. Örneğin, "Alandaki metin" metnini içeren bir "INCLUDETEXT" alanı eklemek için şunu kullanabiliriz:`InsertField` yöntem:
-
+ Öncelikle yeni bir Word belgesi başlatın ve`DocumentBuilder`belge yapımını kolaylaştıracak nesne:
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+## 2. Adım: Metin İçeren Bir Alan Ekleme
+
+ Kullan`InsertField` yöntemi`DocumentBuilder` metin içeren bir alan eklemek için:
+```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
-## 3. Adım: Alanların İçindeki Metni Yoksay işlevini kullanma
+## 3. Adım: Alanların İçindeki Metni Yoksay
 
- Sonraki işlemlerde alanların içindeki metni yok saymak için bir komut kullanabiliriz.`FindReplaceOptions` nesneyi ayarlayın ve`IgnoreFields`mülkiyet`true`:
-
+ Alanların içindeki içeriği göz ardı ederek metni değiştirmek için şunu kullanın:`FindReplaceOptions` ile`IgnoreFields` özellik şu şekilde ayarlandı:`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
 
-## 4. Adım: Arama ve değiştirme için normal ifadeleri kullanma
+## 4. Adım: Metin Değiştirmeyi Gerçekleştirin
 
-Belge metni üzerinde arama ve değiştirme işlemlerini gerçekleştirmek için normal ifadeleri kullanacağız. Örneğimizde "e" harfinin geçtiği tüm yerleri arayacağız ve bunları yıldız işaretiyle değiştireceğiz "* ". .NET'i kullanacağız`Regex` bunun için sınıf:
-
+Metin değişimi için normal ifadeleri kullanın. Burada 'e' harfinin geçtiği yerleri yıldız işaretiyle değiştiriyoruz.*' belgenin aralığı boyunca:
 ```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Adım 5: Değiştirilen Belge Çıktısını Görüntüleme
+## Adım 5: Değiştirilmiş Belge Metninin Çıktısını Alın
 
- Arama ve değiştirmeyi uyguladıktan sonra, belgenin değişen içeriğini aşağıdaki komutu kullanarak görüntüleyebiliriz:`GetText` yöntem:
-
+Yapılan değişiklikleri doğrulamak için değiştirilen metni alın ve yazdırın:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## 6. Adım: Alanları dahil etmek için seçenekleri değiştirme
+## Adım 6: Alanların İçindeki Metni Ekle
 
- çıktı sonucunda alanların içindeki metni dahil ederiz, alanları göz ardı etmeyecek şekilde seçenekleri değiştirebiliriz. Bunun için ayarlayacağız`IgnoreFields`mülkiyet`false`:
-
+ Alanların içindeki metni işlemek için`IgnoreFields`mülkiyet`false` ve değiştirme işlemini tekrar gerçekleştirin:
 ```csharp
 options.IgnoreFields = false;
-```
-
-## Adım 7: Değiştirilen belgenin alanlarla birlikte görüntülenmesi
-
-Seçenekleri değiştirdikten sonra, aramayı gerçekleştirebilir ve sonucu, dahil edilen alanların içindeki metinle elde etmek için yeniden değiştirebiliriz:
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-### Aspose.Words for .NET kullanarak Alanların İçindeki Metni Yoksay için örnek kaynak kodu
-
-Aspose.Words for .NET ile Alanların İçindeki Metni Yoksay işlevinin kullanımını gösteren tam örnek kaynak kodunu burada bulabilirsiniz:
-
-```csharp
-    
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// İçinde metin bulunan alanı ekleyin.
-	builder.InsertField("INCLUDETEXT", "Text in field");
-	
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-	
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreFields = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-  
 ```
 
 ## Çözüm
 
-Bu makalede, Aspose.Words for .NET'te Alanların İçindeki Metni Yoksay fonksiyonunun nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belge oluşturmak, içinde metin bulunan bir alan eklemek, Alanların İçindeki Metni Yoksay işlevini kullanmak, normal ifadelerle arama ve değiştirme işlemlerini gerçekleştirmek ve değiştirilen belgeyi görüntülemek için adım adım bir kılavuz izledik.
+Bu eğitimde Aspose.Words for .NET kullanarak Word belgelerindeki alanların içindeki metinlerin nasıl değiştirileceğini araştırdık. Bu yetenek, belgeleri programlı olarak işlerken alan içeriğinin özel işlem gerektirdiği senaryolar için gereklidir.
 
-### SSS'ler
+## SSS'ler
 
-#### S: Aspose.Words for .NET'teki "Alanların İçindeki Metni Yoksay" özelliği nedir?
+### Word belgelerindeki iç içe geçmiş alanları nasıl yönetirim?
+İç içe alanlar, Aspose.Words'ün API'sini kullanarak belgenin içeriğinde yinelemeli olarak gezinilerek yönetilebilir.
 
-C: Aspose.Words for .NET'teki "Alanların İçindeki Metni Yoksay" özelliği, metin bulma ve değiştirme gibi belirli işlemler sırasında alanların içindeki metnin göz ardı edilip edilmeyeceğini belirlemenize olanak tanır. Bu özellik etkinleştirildiğinde, işlemler sırasında alanların içindeki metin dikkate alınmaz.
+### Metni seçici olarak değiştirmek için koşullu mantık uygulayabilir miyim?
+Evet, Aspose.Words, belirli kriterlere göre metin değiştirmeyi kontrol etmek için FindReplaceOptions'ı kullanarak koşullu mantık uygulamanıza olanak tanır.
 
-#### S: Aspose.Words for .NET'i kullanarak nasıl yeni bir belge oluşturabilirim?
+### Aspose.Words .NET Core uygulamalarıyla uyumlu mu?
+Evet, Aspose.Words .NET Core'u destekleyerek belge otomasyon ihtiyaçlarınız için platformlar arası uyumluluk sağlar.
 
- C: Aspose.Words for .NET'i kullanarak yeni bir belge oluşturmak için,`Document` nesne. Yeni bir belge oluşturmak için C# koduna bir örnek:
+### Aspose.Words için daha fazla örneği ve kaynağı nerede bulabilirim?
+ Ziyaret etmek[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) kapsamlı kılavuzlar, API referansları ve kod örnekleri için.
 
-```csharp
-Document doc = new Document();
-```
-
-#### S: Aspose.Words for .NET kullanarak bir belgenin içine metin içeren bir alanı nasıl ekleyebilirim?
-
- C: Bir belgeye sahip olduğunuzda, içinde metin bulunan bir alanı kullanarak bir alan ekleyebilirsiniz.`DocumentBuilder` nesne. Örneğin, "Alandaki metin" metnini içeren bir "INCLUDETEXT" alanı eklemek için,`InsertField` yöntem:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.InsertField("INCLUDETEXT", "Text in field");
-```
-
-#### S: Aspose.Words for .NET'te alanların içindeki metni nasıl yok sayabilirim?
-
- C: Sonraki işlemler sırasında alanların içindeki metni yok saymak için`FindReplaceOptions` nesneyi ayarlayın ve`IgnoreFields`mülkiyet`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
-```
-
-#### S: Aspose.Words for .NET'te normal ifadeleri kullanarak nasıl arama ve değiştirme gerçekleştirebilirim?
-
- C: Düzenli ifadeler kullanarak belge metninde arama ve değiştirme işlemleri gerçekleştirmek için .NET'i kullanabilirsiniz.`Regex` sınıf. Örneğin, "e" harfinin geçtiği tüm yerleri aramak ve bunları yıldız işaretiyle değiştirmek için "* ", oluşturabilirsiniz`Regex` nesneyi kullanın ve şunu kullanın:`Replace` yöntem:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### S: Belgenin değiştirilmiş çıktısını Aspose.Words for .NET'te nasıl görüntüleyebilirim?
-
- C: Arama ve değiştirme işlemlerini uyguladıktan sonra belgenin değişen içeriğini`GetText` yöntem:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### S: Aspose.Words for .NET'te çıktı sonucuna alanları nasıl ekleyebilirim?
-
- C: Çıktı sonucundaki alanların içindeki metni dahil etmek için, alanları göz ardı etmeyecek şekilde seçenekleri değiştirebilirsiniz. Bunun için ayarlayabilirsiniz`IgnoreFields` mülkiyeti`FindReplaceOptions` itiraz etmek`false`:
-
-```csharp
-options.IgnoreFields = false;
-```
-
-#### S: Değiştirilen belgeyi Aspose.Words for .NET'teki alanlarla nasıl görüntüleyebilirim?
-
-C: Alanları dahil etme seçeneklerini değiştirdikten sonra, aramayı gerçekleştirebilir ve sonucu, dahil edilen alanların içindeki metinle elde etmek için yeniden değiştirebilirsiniz:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Aspose.Words için nasıl teknik destek alabilirim?
+ Teknik yardım için şu adresi ziyaret edin:[Aspose.Words Destek Forumu](https://forum.aspose.com/c/words/8) Sorularınızı gönderebileceğiniz ve toplulukla etkileşimde bulunabileceğiniz yer.

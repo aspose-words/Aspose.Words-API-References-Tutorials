@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Paso 2: crea y formatea el documento
- Crear una instancia del`Document` clase y el`DocumentBuilder`clase para construir el documento. Utilizar el`Font` propiedad de la`DocumentBuilder` para acceder a las propiedades de formato de fuente.
+ Crear una instancia del`Document` clase y el`DocumentBuilder` clase para construir el documento. Utilizar el`Font` propiedad de la`DocumentBuilder` para acceder a las propiedades de formato de fuente.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## Paso 3: guarde el documento
- Utilizar el`Save` método para guardar el documento con el formato de fuente aplicado. Reemplazar`"WorkingWithFonts.SetFontFormatting.docx"` con el nombre de archivo deseado.
+ Utilizar el`Save`método para guardar el documento con el formato de fuente aplicado. Reemplazar`"WorkingWithFonts.SetFontFormatting.docx"` con el nombre de archivo deseado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

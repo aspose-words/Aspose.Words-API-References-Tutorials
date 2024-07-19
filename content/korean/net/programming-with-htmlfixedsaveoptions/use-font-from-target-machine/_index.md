@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Word 문서 로드
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
 
-//"대상 컴퓨터의 글꼴 사용" 기능으로 백업 옵션 구성
+// "대상 컴퓨터의 글꼴 사용" 기능으로 백업 옵션 구성
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
 
 // 문서를 고정 HTML로 변환

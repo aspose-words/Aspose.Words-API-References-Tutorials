@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/working-with-fonts/font-settings-default-instance/
 ---
 
-Welkom bij deze uitgebreide tutorial over het beheren van lettertype-instellingen met Aspose.Words voor .NET. Als u ooit problemen heeft ondervonden met het omgaan met lettertypen in uw documenten, begeleidt deze handleiding u door alles wat u moet weten om lettertypen effectief aan te passen en te beheren. Laten we erin duiken!
+Welkom bij deze uitgebreide tutorial over het beheren van lettertype-instellingen met Aspose.Words voor .NET. Als u ooit problemen heeft ondervonden bij het omgaan met lettertypen in uw documenten, begeleidt deze handleiding u door alles wat u moet weten om lettertypen effectief aan te passen en te beheren. Laten we erin duiken!
 
 ## Vereisten
 
@@ -17,7 +17,7 @@ Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 - Basiskennis van C#: Bekendheid met programmeren in C# zal u helpen de stappen soepel te begrijpen en te implementeren.
 -  Aspose.Words voor .NET-bibliotheek: Download en installeer Aspose.Words voor .NET vanaf de[download link](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Een geschikte omgeving zoals Visual Studio om uw code te schrijven en uit te voeren.
--  Voorbeelddocument: een voorbeelddocument (bijv.`Rendering.docx`) om de lettertype-instellingen toe te passen.
+- Voorbeelddocument: een voorbeelddocument (bijv.`Rendering.docx`) om de lettertype-instellingen toe te passen.
 
 ## Naamruimten importeren
 
@@ -55,7 +55,7 @@ In dit voorbeeld:
 
 ## Stap 3: Laad het document
 
-Als uw lettertypebronnen zijn geconfigureerd, is de volgende stap het laden van uw document in een Aspose.Words`Document` voorwerp. Hierdoor kunt u het document manipuleren en uiteindelijk opslaan.
+ Als uw lettertypebronnen zijn geconfigureerd, is de volgende stap het laden van uw document in een Aspose.Words`Document` voorwerp. Hierdoor kunt u het document manipuleren en uiteindelijk opslaan.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Gefeliciteerd! U beheerst de basisprincipes van het beheren van lettertype-inste
 
 ### V1: Kan ik lettertypen uit meerdere aangepaste mappen gebruiken?
 
- Ja, u kunt er meerdere opgeven`FolderFontSource`exemplaren binnen de`SetFontsSources` methode om lettertypen uit verschillende mappen op te nemen.
+ Ja, u kunt er meerdere opgeven`FolderFontSource` exemplaren binnen de`SetFontsSources` methode om lettertypen uit verschillende mappen op te nemen.
 
 ### V2: Hoe krijg ik een gratis proefversie van Aspose.Words voor .NET?
 

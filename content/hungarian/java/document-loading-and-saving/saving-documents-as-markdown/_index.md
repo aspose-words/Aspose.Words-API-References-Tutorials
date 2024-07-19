@@ -87,7 +87,7 @@ saveOptions.setImagesFolder("images_folder/");
 doc.save("document_with_images.md", saveOptions);
 ```
 
- Ügyeljen arra, hogy cserélje ki`"document_with_images.docx"` a képeket tartalmazó Word-dokumentum elérési útjával és`"images_folder/"` a mappa tényleges elérési útjával, ahol a képeket tárolják.
+ Mindenképpen cserélje ki`"document_with_images.docx"` a képeket tartalmazó Word-dokumentum elérési útjával és`"images_folder/"` a mappa tényleges elérési útjával, ahol a képeket tárolják.
 
 ## Teljes forráskód dokumentumok mentéséhez Markdown-ként az Aspose.Words for Java-ban
 

@@ -66,7 +66,7 @@ R : Absolument ! Aspose.Words propose diverses options de chargement qui peuvent
 
 #### Q : Aspose.Words est-il limité à la gestion uniquement des documents Word ?
 
-: Bien qu'Aspose.Words soit principalement conçu pour les documents Word, il prend également en charge d'autres formats de fichiers, tels que PDF, HTML, EPUB, etc., ce qui en fait un outil polyvalent pour le traitement de documents.
+R : Bien qu'Aspose.Words soit principalement conçu pour les documents Word, il prend également en charge d'autres formats de fichiers, tels que PDF, HTML, EPUB, etc., ce qui en fait un outil polyvalent pour le traitement de documents.
 
 #### Q : Comment le chargement de fichiers CHM peut-il bénéficier à mon application C# ?
 

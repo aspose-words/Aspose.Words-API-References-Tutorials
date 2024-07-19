@@ -142,10 +142,10 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 
 答：是的，您可以使用 Aspose.Words for .NET 來變更目錄的製表符對齊方式和前導字元。透過存取製表位並調整其對齊方式和引線屬性，您可以控制頁碼和目錄中相應標題的對齊方式和視覺外觀。
 
-#### Q：Aspose.Words for .NET 是否支援更改 Word 文件中的其他樣式和格式？
+#### Q：Aspose.Words for .NET 支援更改 Word 文件中的其他樣式和格式嗎？
 
 答：是的，Aspose.Words for .NET 為更改 Word 文件中的各種樣式和格式提供了廣泛的支援。它允許您修改不同元素的樣式，例如段落、標題、表格、清單等。您可以根據您的要求變更字體、顏色、對齊方式、縮排、間距和其他格式設定。
 
 #### Q：我可以使用 Aspose.Words for .NET 修改現有 Word 文件目錄中的選項卡嗎？
 
-答：是的，您可以使用 Aspose.Words for .NET 修改現有 Word 文件目錄中的標籤。透過載入文件、迭代段落並對製表位進行必要的更改，您可以更新目錄中的選項卡。最後，儲存文件以套用修改。
+答：是的，您可以使用 Aspose.Words for .NET 修改現有 Word 文件目錄中的標籤。透過載入文件、遍歷段落並對製表位進行必要的更改，您可以更新目錄中的選項卡。最後，儲存文件以套用修改。

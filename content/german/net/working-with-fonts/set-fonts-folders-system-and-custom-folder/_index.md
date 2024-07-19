@@ -2,7 +2,7 @@
 title: Legen Sie die Schriftartenordner System und benutzerdefinierte Ordner fest
 linktitle: Legen Sie die Schriftartenordner System und benutzerdefinierte Ordner fest
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Einrichten von System- und benutzerdefinierten Schriftartordnern beim Rendern eines Dokuments mit Aspose.Words für .NET.
+description: Schritt-für-Schritt-Anleitung zum Einrichten von System- und benutzerdefinierten Schriftordnern beim Rendern eines Dokuments mit Aspose.Words für .NET.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
@@ -62,11 +62,11 @@ Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 // Rufen Sie das Array der umgebungsabhängigen Schriftartquellen ab, nach denen standardmäßig gesucht wird.
 // Auf einem Windows-Rechner enthält dies beispielsweise eine „Windows\Fonts\“-Quelle.
-// Wir fügen dieses Array zu einer neuen Liste hinzu, um das Hinzufügen oder Entfernen von Schriftarteinträgen wesentlich zu vereinfachen.
+// Wir fügen dieses Array einer neuen Liste hinzu, um das Hinzufügen oder Entfernen von Schriftarteinträgen wesentlich zu vereinfachen.
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Fügen Sie eine neue Ordnerquelle hinzu, die Aspose.Words anweist, im folgenden Ordner nach Schriftarten zu suchen.
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-//Fügen Sie den benutzerdefinierten Ordner, der unsere Schriftarten enthält, zur Liste der vorhandenen Schriftartquellen hinzu.
+// Fügen Sie den benutzerdefinierten Ordner, der unsere Schriftarten enthält, zur Liste der vorhandenen Schriftartenquellen hinzu.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);

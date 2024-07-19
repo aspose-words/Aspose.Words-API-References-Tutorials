@@ -2,120 +2,108 @@
 title: توقيع سطر التوقيع الموجود في مستند Word
 linktitle: توقيع سطر التوقيع الموجود في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية توقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET من خلال دليلنا التفصيلي خطوة بخطوة. مثالية للمطورين.
 type: docs
 weight: 10
 url: /ar/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
-في هذا البرنامج التعليمي، سنرشدك خلال خطوات استخدام ميزة التوقيع لسطر التوقيع الموجود مع Aspose.Words for .NET. تتيح لك هذه الميزة التوقيع رقميًا على سطر التوقيع الموجود بالفعل في مستند Word. اتبع الخطوات التالية:
+## مقدمة
 
-## الخطوة 1: تحميل المستند والوصول إلى سطر التوقيع
+مرحبًا يا من هناك! هل سبق لك أن احتجت إلى التوقيع على مستند رقمي ولكنك وجدت الأمر صعبًا بعض الشيء؟ أنت محظوظ لأننا اليوم نتعمق في كيفية توقيع سطر توقيع موجود بسهولة في مستند Word باستخدام Aspose.Words for .NET. سيرشدك هذا البرنامج التعليمي خلال العملية خطوة بخطوة، مما يضمن إتقان هذه المهمة في أي وقت من الأوقات.
 
-ابدأ بتحميل المستند الذي يحتوي على سطر التوقيع الحالي:
+## المتطلبات الأساسية
+
+قبل أن نتعمق في التفاصيل الجوهرية، دعونا نتأكد من أن لدينا كل ما نحتاجه:
+
+1.  Aspose.Words for .NET: تأكد من تثبيت مكتبة Aspose.Words for .NET. إذا لم تقم بذلك بعد، يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة مع C#.
+3. المستند والشهادة: مستند Word يحتوي على سطر توقيع وشهادة رقمية (ملف PFX).
+4. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# سيكون مفيدًا.
+
+## استيراد مساحات الأسماء
+
+قبل أن تتمكن من استخدام الفئات والأساليب من Aspose.Words، تحتاج إلى استيراد مساحات الأسماء الضرورية. فيما يلي مقتطف من الواردات المطلوبة:
+
+```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.DigitalSignatures;
+```
+
+## الخطوة 1: قم بتحميل المستند الخاص بك
+
+أول الأشياء أولاً، تحتاج إلى تحميل مستند Word الذي يحتوي على سطر التوقيع. هذه الخطوة حاسمة لأنها تضع الأساس للعملية برمتها.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
-
-SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## الخطوة 2: تحديد خيارات التوقيع
+## الخطوة 2: الوصول إلى خط التوقيع
 
-قم بإنشاء مثيل لفئة SignOptions وقم بتعيين خيارات التوقيع، بما في ذلك معرف سطر التوقيع وصورة سطر التوقيع:
+الآن وبعد أن قمنا بتحميل المستند، فإن الخطوة التالية هي تحديد موقع سطر التوقيع داخل المستند والوصول إليه.
+
+```csharp
+SignatureLine signatureLine = ((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
+```
+
+## الخطوة 3: إعداد خيارات التسجيل
+
+يعد إعداد خيارات الإشارة أمرًا ضروريًا. يتضمن ذلك تحديد معرف سطر التوقيع وتوفير الصورة التي سيتم استخدامها كتوقيع.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes("YOUR IMAGE DIRECTORY" + "signature_image.emf")
 };
 ```
 
-تأكد من تحديد المسار الصحيح لصورة سطر التوقيع.
+## الخطوة 4: إنشاء حامل الشهادة
 
-## الخطوة 3: تحميل الشهادة
-
-ابدأ بتحميل شهادة التوقيع باستخدام فئة CertifiedHolder:
+لتوقيع المستند رقميًا، تحتاج إلى شهادة رقمية. إليك كيفية إنشاء حامل شهادة من ملف PFX الخاص بك.
 
 ```csharp
-CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "your_password");
 ```
 
-تأكد من تحديد المسار الصحيح لشهادتك وكلمة المرور المرتبطة بها.
+## الخطوة 5: قم بالتوقيع على الوثيقة
 
-## الخطوة 4: التوقيع على سطر التوقيع الحالي
-
-استخدم فئة DigitalSignatureUtil لتوقيع سطر التوقيع الحالي:
+الآن نقوم بدمج كافة المكونات لتوقيع الوثيقة. هذا هو المكان الذي يحدث السحر!
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-	dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Digitally signed.docx",
+    dataDir + "Signature line.docx",
+    certHolder,
+    signOptions
+);
 ```
-
-تأكد من تحديد المسارات الصحيحة للمستند المصدر والمستند الموقع والشهادة.
-
-### مثال على التعليمات البرمجية المصدر لتوقيع سطر التوقيع الحالي باستخدام Aspose.Words لـ .NET
-
-فيما يلي الكود المصدري الكامل لتوقيع سطر التوقيع الحالي باستخدام Aspose.Words for .NET:
-
-
-```csharp
-
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Signature line.docx");
-	
-	SignatureLine signatureLine =
-		((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-		dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
-	
-
-```
-
-باتباع هذه الخطوات، يمكنك بسهولة التوقيع على سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET.
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، تعلمنا كيفية التوقيع على سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET. باتباع الخطوات المتوفرة، يمكنك بسهولة تحميل المستند والوصول إلى سطر التوقيع الحالي وتعيين خيارات التوقيع وتوقيع المستند. توفر القدرة على التوقيع على سطر توقيع موجود طريقة مناسبة لإضافة التوقيعات الرقمية إلى مناطق محددة مسبقًا في مستندات Word، مما يضمن سلامة المستند ومصادقته. يوفر Aspose.Words for .NET واجهة برمجة تطبيقات قوية لمعالجة الكلمات باستخدام التوقيعات الرقمية، مما يسمح لك بتخصيص عملية التوقيع وتحسين أمان مستندات Word الخاصة بك.
+وهناك لديك! لقد نجحت في التوقيع على سطر توقيع موجود في مستند Word باستخدام Aspose.Words لـ .NET. ليست صعبة للغاية، أليس كذلك؟ من خلال هذه الخطوات، يمكنك الآن توقيع المستندات رقميًا، مما يضيف طبقة إضافية من الأصالة والاحترافية. لذلك في المرة القادمة عندما يرسل لك شخص ما مستندًا للتوقيع عليه، ستعرف بالضبط ما يجب عليك فعله!
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: ما هو سطر التوقيع الموجود في مستند Word؟
+### ما هو Aspose.Words لـ .NET؟
 
-ج: إن سطر التوقيع الموجود في مستند Word هو منطقة محددة مسبقًا حيث يمكن وضع التوقيع. يتم تمثيله عادةً بشكل أو كائن في المستند ويعمل كمساحة مخصصة للموقع لإضافة توقيعه الرقمي.
+Aspose.Words for .NET هي مكتبة قوية للعمل مع مستندات Word في تطبيقات .NET. يسمح لك بإنشاء وتعديل وتحويل مستندات Word برمجياً.
 
-#### س: كيف يمكنني التوقيع على سطر توقيع موجود في مستند Word باستخدام Aspose.Words for .NET؟
+### أين يمكنني الحصول على نسخة تجريبية مجانية من Aspose.Words لـ .NET؟
 
-ج: لتوقيع سطر توقيع موجود في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك اتباع الخطوات التالية:
-1.  قم بتحميل المستند باستخدام`Document` class وحدد المسار إلى ملف المستند.
-2.  قم بالوصول إلى سطر التوقيع الحالي باستخدام الطريقة أو الخاصية المناسبة. على سبيل المثال، يمكنك استخدام`GetChild` طريقة لاسترداد شكل خط التوقيع.
-3.  إنشاء مثيل لـ`SignOptions` فئة وتعيين`SignatureLineId` الخاصية لمعرف سطر التوقيع الموجود.
-4.  تعيين`SignatureLineImage` ملكية`SignOptions` فئة إلى الصورة التي تمثل التوقيع الرقمي.
-5.  قم بتحميل شهادة التوقيع باستخدام`CertificateHolder` فئة وتقديم الشهادة وكلمة المرور اللازمة.
-6.  استخدم ال`DigitalSignatureUtil.Sign` طريقة التوقيع على الوثيقة، وتوفير المعلمات اللازمة بما في ذلك`SignOptions` هدف.
+ يمكنك تنزيل نسخة تجريبية مجانية[هنا](https://releases.aspose.com/).
 
-#### س: كيف يمكنني الوصول إلى سطر التوقيع الموجود في مستند Word باستخدام Aspose.Words for .NET؟
+### هل يمكنني استخدام أي تنسيق صورة للتوقيع؟
 
- ج: للوصول إلى سطر التوقيع الموجود في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك استخدام الطريقة أو الخاصية المناسبة لاسترداد شكل سطر التوقيع من بنية المستند. على سبيل المثال، يمكنك استخدام`GetChild` الطريقة مع المعلمات المناسبة للحصول على شكل خط التوقيع المطلوب.
+يدعم Aspose.Words العديد من تنسيقات الصور، ولكن استخدام ملف تعريف محسّن (EMF) يوفر جودة أفضل للتوقيعات.
 
-#### س: هل يمكنني تخصيص مظهر التوقيع الرقمي في سطر توقيع موجود؟
+### كيف يمكنني الحصول على الشهادة الرقمية؟
 
-ج: نعم، يمكنك تخصيص مظهر التوقيع الرقمي في سطر التوقيع الموجود من خلال توفير ملف صورة يمثل التوقيع. يمكن أن تكون الصورة شعارًا أو توقيعًا مكتوبًا بخط اليد أو أي تمثيل رسومي آخر للتوقيع. يمكنك ضبط`SignatureLineImage` ملكية`SignOptions` فئة إلى بايت من ملف الصورة.
+يمكنك شراء الشهادات الرقمية من مختلف مقدمي الخدمات عبر الإنترنت. تأكد من أن الشهادة بتنسيق PFX وأن لديك كلمة المرور.
 
-#### س: هل يمكنني التوقيع على عدة أسطر توقيع موجودة في مستند Word؟
- ج: نعم، يمكنك توقيع عدة أسطر توقيع موجودة في مستند Word. يتعين عليك اتباع الخطوات الخاصة بكل سطر توقيع على حدة، وتحديد السطر المناسب`SignatureLineId` و`SignatureLineImage` القيم في`SignOptions` كائن لكل سطر التوقيع.
+### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words لـ .NET؟
 
-#### س: ما هو التنسيق الذي يجب أن يكون عليه ملف الصورة للتوقيع الرقمي في سطر التوقيع الموجود؟
-
- ج: يمكن أن يكون ملف الصورة للتوقيع الرقمي في سطر التوقيع الحالي بتنسيقات مختلفة، مثل PNG، أو JPEG، أو BMP، أو GIF. يمكنك تحديد مسار الملف أو قراءة بايتات ملف الصورة وتعيينها إلى ملف`SignatureLineImage` ملكية`SignOptions` فصل.
+ يمكنك العثور على وثائق واسعة النطاق[هنا](https://reference.aspose.com/words/net/).

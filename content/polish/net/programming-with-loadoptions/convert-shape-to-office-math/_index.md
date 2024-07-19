@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveF
 
 ## Wniosek
 
-W tym przewodniku wyjaśniliśmy, jak załadować dokument z konwersją kształtów na formuły matematyczne pakietu Office przy użyciu biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Konwertowanie kształtów na formuły matematyczne pakietu Office zapewnia lepszą zgodność i prezentację dokumentów zawierających elementy matematyczne.
+tym przewodniku wyjaśniliśmy, jak załadować dokument z konwersją kształtów na formuły matematyczne pakietu Office przy użyciu biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Konwertowanie kształtów na formuły matematyczne pakietu Office zapewnia lepszą zgodność i prezentację dokumentów zawierających elementy matematyczne.
 
 
 ### Często zadawane pytania

@@ -19,7 +19,7 @@ Words Processing with Markdown は、Aspose.Words for .NET ライブラリを使
 | [インラインコード](./inline-code/) | Aspose.Words for .NET を使用してコードをインライン化する方法を学ぶステップバイステップ ガイド。 |
 | [オートリンク](./autolink/) | Aspose.Words for .NET を使用して自動リンクを挿入する方法をステップバイステップ ガイドで学習します。 |
 | [リンク](./link/) | Aspose.Words for .NET を使用してリンクを挿入する方法を学びます。ステップバイステップ ガイド。 |
-| [画像](./image/) | Aspose.Words for .NET を使用して画像を挿入およびカスタマイズする方法をステップバイステップ ガイドで学習します。 |
+| [画像](./image/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用してドキュメントに画像を追加する方法を説明します。すぐにビジュアルを使用してドキュメントを強化します。 |
 | [水平線](./horizontal-rule/) | Aspose.Words for .NET を使用して水平線を挿入する方法をステップバイステップ ガイドで学習します。 |
 | [見出し](./heading/) | Aspose.Words for .NET で見出しを使用する方法をステップバイステップ ガイドで学習します。 |
 | [セテキスト見出し](./setext-heading/) | Aspose.Words for .NET のステップバイステップ ガイドで、Setext 見出しを使用してドキュメントをフォーマットする方法を学びます。 |
@@ -27,8 +27,8 @@ Words Processing with Markdown は、Aspose.Words for .NET ライブラリを使
 | [フェンスコード](./fenced-code/) | Aspose.Words for .NET でフェンス コード機能を使用する方法をステップ バイ ステップ ガイドで学習します。 |
 | [引用](./quote/) | Aspose.Words for .NET で quote を使用する方法をステップバイステップ ガイドで学習します。 |
 | [箇条書きリスト](./bulleted-list/) | Aspose.Words for .NET を使用して箇条書きリストを作成する方法をステップバイステップ ガイドで学習します。 |
-| [順序付きリスト](./ordered-list/) | Aspose.Words for .NET を使用して順序付きリストを作成する方法をステップバイステップ ガイドで学習します。 |
-| [テーブル](./table/) | Aspose.Words for .NET を使用してテーブルを作成する方法をステップバイステップ ガイドで学習します。 |
+| [順序付きリスト](./ordered-list/) | Aspose.Words for .NET を使用して Word 文書に順序付きリストを作成する方法を、ステップバイステップ ガイドで学習します。文書作成の自動化に最適です。 |
+| [テーブル](./table/) | このステップバイステップ ガイドでは、Aspose.Words for .NET でテーブルを作成し、カスタマイズする方法を学習します。構造化された視覚的に魅力的なドキュメントを生成するのに最適です。 |
 | [Markdownドキュメントを読む](./read-markdown-document/) | Aspose.Words for .NET を使用してマークダウン ドキュメントを読み取る方法をステップ バイ ステップ ガイドで学習します。 |
 | [強調点](./emphases/) | Aspose.Words for .NET で強調 (太字と斜体) を使用する方法をステップ バイ ステップ ガイドで学習します。 |
-| [警告ソースを使用する](./use-warning-source/) | Aspose.Words for .NET で警告ソースを使用する方法をステップバイステップ ガイドで学習します。 |
+| [警告ソースを使用する](./use-warning-source/) | Markdown 警告を処理するための WarningSource クラスの使用に関するこのステップバイステップ ガイドで、Aspose.Words for .NET をマスターしてください。C# 開発者に最適です。 |

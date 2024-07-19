@@ -7,80 +7,103 @@ type: docs
 weight: 10
 url: /fr/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 ---
+## Introduction
 
-Dans ce didacticiel, nous vous guiderons à travers le code source C# pour convertir des métafichiers au format EMF ou WMF avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de convertir des images au format métafichier vers des formats plus compatibles tels que EMF ou WMF lors de la conversion d'un document en HTML.
+Bienvenue dans une autre plongée approfondie dans le monde d'Aspose.Words pour .NET. Aujourd'hui, nous abordons une astuce intéressante : convertir les images SVG aux formats EMF ou WMF dans vos documents Word. Cela peut paraître un peu technique, mais ne vous inquiétez pas. À la fin de ce didacticiel, vous serez un pro dans ce domaine. Que vous soyez un développeur chevronné ou que vous débutiez tout juste avec Aspose.Words for .NET, ce guide vous guidera à travers tout ce que vous devez savoir, étape par étape.
 
-## Étape 1 : Configuration du projet
+## Conditions préalables
 
-Pour commencer, créez un nouveau projet C# dans votre IDE préféré. Assurez-vous que la bibliothèque Aspose.Words for .NET est référencée dans votre projet.
+Avant de plonger dans le code, assurons-nous que tout est configuré. Voici ce dont vous avez besoin :
 
-## Étape 2 : Insérer une image dans le document
+1. Aspose.Words pour la bibliothèque .NET : assurez-vous de disposer de la dernière version. Si vous ne l'avez pas, vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+2. .NET Framework : assurez-vous que .NET Framework est installé sur votre ordinateur.
+3. Environnement de développement : un IDE comme Visual Studio vous facilitera la vie.
+4. Connaissance de base de C# : vous n'avez pas besoin d'être un expert, mais une compréhension de base sera utile.
 
-Dans cette étape, nous allons insérer une image dans le document à convertir. Utilisez le code suivant pour insérer une image provenant d'une source de données à l'aide d'une balise HTML :
+Vous avez tout ? Super! Commençons.
+
+## Importer des espaces de noms
+
+Tout d’abord, nous devons importer les espaces de noms nécessaires. Ceci est crucial car cela indique à notre programme où trouver les classes et les méthodes que nous utiliserons.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Ces espaces de noms couvrent tout, des fonctions système de base à la fonctionnalité spécifique Aspose.Words dont nous avons besoin pour ce didacticiel.
+
+## Étape 1 : Configurez votre répertoire de documents
+
+Commençons par définir le chemin d'accès à votre répertoire de documents. C'est ici que votre document Word sera enregistré après la conversion des métafichiers.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.Write("Here is an image as is: ");
-builder.InsertHtml(
-	@"<img src=""data:image/png;base64,
-		iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP
-		C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
-		AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
-		REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
-		ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
-		vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
 ```
 
- Ce code crée une instance de`Document` et`DocumentBuilder` pour construire le document. Il insère un`<img>` balisez dans le document avec une image codée en base64.
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où vous souhaitez enregistrer votre document.
 
-## Étape 3 : Définir les options d'enregistrement HTML
+## Étape 2 : Créer la chaîne HTML avec SVG
 
-Nous allons maintenant définir les options d'enregistrement HTML, y compris le format de métafichier à utiliser pour les images. Utilisez le code suivant :
+Ensuite, nous avons besoin d'une chaîne HTML contenant l'image SVG que nous voulons convertir. Voici un exemple simple :
 
 ```csharp
-HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
+string html = 
+    @"<html>
+        <svg xmlns='http://www.w3.org/2000/svg' width='500' height='40' viewBox='0 0 500 40'>
+            <text x='0' y='35' font-family='Verdana' font-size='35'>Hello world!</text>
+        </svg>
+    </html>";
 ```
 
- Ce code crée une instance de`HtmlSaveOptions` et des ensembles`MetafileFormat` à`HtmlMetafileFormat.EmfOrWmf` pour spécifier que les métafichiers doivent être convertis au format EMF ou WMF lors de la conversion en HTML.
+Cet extrait HTML comprend un SVG de base qui dit "Bonjour tout le monde !".
 
-## Étape 4 : Conversion et enregistrement du document au format HTML
+## Étape 3 : charger du HTML avec l'option ConvertSvgToEmf
 
-Enfin nous convertirons le document en HTML en utilisant les options de sauvegarde HTML définies précédemment. Utilisez le code suivant :
+ Maintenant, nous utilisons le`HtmlLoadOptions` pour spécifier comment nous voulons gérer les images SVG dans le HTML. Paramètre`ConvertSvgToEmf` à`true` garantit que les images SVG sont converties au format EMF.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
+HtmlLoadOptions loadOptions = new HtmlLoadOptions { ConvertSvgToEmf = true };
+Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
 ```
 
-Ce code convertit le document en HTML et l'enregistre dans un fichier avec les métafichiers convertis au format EMF ou WMF en fonction des options d'enregistrement définies.
+ Cet extrait de code crée un nouveau`Document` objet en y chargeant la chaîne HTML avec les options de chargement spécifiées.
 
-### Exemple de code source pour convertir des métafichiers en Emf ou Wmf à l'aide d'Aspose.Words pour .NET
+## Étape 4 : définissez HtmlSaveOptions pour le format de métafichier
+
+ Pour enregistrer le document avec le format de métafichier correct, nous utilisons`HtmlSaveOptions` . Ici, nous définissons`MetafileFormat` à`HtmlMetafileFormat.Png` , mais vous pouvez changer cela en`Emf` ou`Wmf` en fonction de vos besoins.
 
 ```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.Write("Here is an image as is: ");
-	builder.InsertHtml(
-		@"<img src=""data:image/png;base64,
-			iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGP
-			C/xhBQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YGARc5KB0XV+IA
-			AAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAF1J
-			REFUGNO9zL0NglAAxPEfdLTs4BZM4DIO4C7OwQg2JoQ9LE1exdlYvBBeZ7jq
-			ch9//q1uH4TLzw4d6+ErXMMcXuHWxId3KOETnnXXV6MJpcq2MLaI97CER3N0
-			vr4MkhoXe0rZigAAAABJRU5ErkJggg=="" alt=""Red dot"" />");
-
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.EmfOrWmf };
-
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToEmfOrWmf.html", saveOptions);
-
+HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Png };
 ```
 
- Assurez-vous de spécifier le chemin correct vers le répertoire des documents dans le`dataDir` variable.
+## Étape 5 : Enregistrez le document
 
-Vous avez maintenant appris à convertir des métafichiers aux formats EMF ou WMF lors de la conversion d'un document au format HTML à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape fourni dans ce didacticiel, vous pouvez facilement gérer les métafichiers dans vos documents HTML convertis.
+Enfin, nous enregistrons le document en utilisant les options de sauvegarde spécifiées.
+
+```csharp
+doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToPng.html", saveOptions);
+```
+
+Cela enregistre le document dans le répertoire spécifié avec le format de métafichier converti comme défini.
+
+## Conclusion
+
+Et voila! En suivant ces étapes, vous avez réussi à convertir les images SVG aux formats EMF ou WMF dans vos documents Word à l'aide d'Aspose.Words pour .NET. Cette méthode est pratique pour garantir la compatibilité et maintenir l’intégrité visuelle de vos documents sur différentes plateformes. Bon codage !
+
+## FAQ
+
+### Puis-je convertir d’autres formats d’image en utilisant cette méthode ?
+Oui, vous pouvez convertir différents formats d'image en ajustant les options de chargement et d'enregistrement en conséquence.
+
+### Est-il nécessaire d’utiliser une version spécifique du .NET Framework ?
+Aspose.Words for .NET prend en charge plusieurs versions de .NET Framework, mais c'est toujours une bonne idée d'utiliser la dernière version pour une compatibilité et des fonctionnalités optimales.
+
+### Quel est l'avantage de convertir SVG en EMF ou WMF ?
+La conversion de SVG en EMF ou WMF garantit que les graphiques vectoriels sont préservés et rendus correctement dans des environnements qui pourraient ne pas prendre entièrement en charge SVG.
+
+### Puis-je automatiser ce processus pour plusieurs documents ?
+Absolument! Vous pouvez parcourir plusieurs fichiers HTML en appliquant le même processus pour automatiser la conversion pour le traitement par lots.
+
+### Où puis-je trouver plus de ressources et d’assistance pour Aspose.Words for .NET ?
+ Vous pouvez trouver une documentation complète[ici](https://reference.aspose.com/words/net/) et bénéficiez du soutien de la communauté Aspose[ici](https://forum.aspose.com/c/words/8).

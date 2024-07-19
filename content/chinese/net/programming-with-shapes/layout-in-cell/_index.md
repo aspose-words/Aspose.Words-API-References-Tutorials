@@ -2,7 +2,7 @@
 title: 单元格布局
 linktitle: 单元格布局
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文档的表格单元格内布局形状。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中的表格单元格内布局形状。
 type: docs
 weight: 10
 url: /zh/net/programming-with-shapes/layout-in-cell/

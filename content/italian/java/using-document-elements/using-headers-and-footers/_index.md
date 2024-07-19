@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Numerazione delle pagine
 
- Puoi includere i numeri di pagina nelle intestazioni e nei piè di pagina utilizzando campi come`PAGE` E`NUMPAGES`. Questi campi si aggiornano automaticamente quando aggiungi o rimuovi pagine.
+ Puoi includere i numeri di pagina nelle intestazioni e nei piè di pagina utilizzando campi come`PAGE`E`NUMPAGES`. Questi campi si aggiornano automaticamente quando aggiungi o rimuovi pagine.
 
 ## 9. Informazioni sul copyright nei piè di pagina
 

@@ -125,4 +125,4 @@ Ya, Anda dapat menyesuaikan format catatan kaki dan catatan akhir menggunakan As
 ### 4. Apakah catatan kaki dan catatan akhir penting dalam format dokumen?
 Ya, catatan kaki dan catatan akhir sangat penting untuk memberikan referensi dan informasi tambahan dalam dokumen.
 
-Jangan ragu untuk menjelajahi lebih banyak fitur Aspose.Words untuk Java dan tingkatkan kemampuan pembuatan dokumen Anda. Selamat membuat kode!
+Jangan ragu untuk menjelajahi lebih banyak fitur Aspose.Words untuk Java dan meningkatkan kemampuan pembuatan dokumen Anda. Selamat membuat kode!

@@ -2,24 +2,40 @@
 title: Xác định thuộc tính trục XY trong biểu đồ
 linktitle: Xác định thuộc tính trục XY trong biểu đồ
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách xác định thuộc tính trục XY trong biểu đồ bằng Aspose.Words for .NET. Các tùy chọn tùy chỉnh cho trục X và Y được thể hiện.
+description: Tìm hiểu cách xác định thuộc tính trục XY trong biểu đồ bằng Aspose.Words for .NET với hướng dẫn từng bước này. Hoàn hảo cho các nhà phát triển .NET.
 type: docs
 weight: 10
 url: /vi/net/programming-with-charts/define-xyaxis-properties/
 ---
+## Giới thiệu
 
-Hướng dẫn này giải thích cách sử dụng Aspose.Words cho .NET để xác định các thuộc tính cho trục X và Y trong biểu đồ. Mã nguồn được cung cấp trình bày cách tạo biểu đồ, thêm dữ liệu chuỗi và tùy chỉnh các thuộc tính trục.
+Biểu đồ là một công cụ mạnh mẽ để trực quan hóa dữ liệu. Khi bạn cần tạo các tài liệu chuyên nghiệp bằng biểu đồ động, Aspose.Words for .NET là một thư viện vô giá. Bài viết này sẽ hướng dẫn bạn quy trình xác định các thuộc tính trục XY trong biểu đồ bằng Aspose.Words for .NET, chia nhỏ từng bước để đảm bảo sự rõ ràng và dễ hiểu.
 
-## Bước 1: Thiết lập dự án
+## Điều kiện tiên quyết
 
-Đảm bảo rằng bạn có các điều kiện tiên quyết sau:
+Trước khi đi sâu vào mã hóa, bạn cần phải có một số điều kiện tiên quyết:
 
-- Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải xuống bằng cách sử dụng trình quản lý gói NuGet để cài đặt nó.
-- Đường dẫn thư mục tài liệu nơi tài liệu đầu ra sẽ được lưu.
+1. Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Bạn cần một môi trường phát triển tích hợp (IDE) như Visual Studio.
+3. .NET Framework: Đảm bảo môi trường phát triển của bạn được thiết lập để phát triển .NET.
+4. Kiến thức cơ bản về C#: Hướng dẫn này giả sử bạn có hiểu biết cơ bản về lập trình C#.
 
-## Bước 2: Tạo một tài liệu mới và chèn biểu đồ
+## Nhập không gian tên
 
- Tạo một cái mới`Document` đối tượng và một`DocumentBuilder` để xây dựng tài liệu.
+Để bắt đầu, bạn cần nhập các không gian tên cần thiết vào dự án của mình. Điều này đảm bảo bạn có quyền truy cập vào tất cả các lớp và phương thức cần thiết để tạo và thao tác các tài liệu và biểu đồ.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Chúng tôi sẽ chia quy trình thành các bước đơn giản, mỗi bước tập trung vào một phần cụ thể trong việc xác định thuộc tính trục XY trong biểu đồ.
+
+## Bước 1: Khởi tạo Document và DocumentBuilder
+
+ Đầu tiên, bạn cần khởi tạo một tài liệu mới và một`DocumentBuilder` sự vật. Các`DocumentBuilder` giúp chèn nội dung vào tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
@@ -29,48 +45,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tiếp theo, chèn biểu đồ vào tài liệu bằng cách sử dụng`InsertChart` phương pháp của`DocumentBuilder`. Trong ví dụ này, chúng tôi sẽ chèn biểu đồ vùng.
+## Bước 2: Chèn biểu đồ
+
+Tiếp theo, bạn sẽ chèn biểu đồ vào tài liệu. Trong ví dụ này, chúng tôi sẽ sử dụng biểu đồ Vùng. Bạn có thể tùy chỉnh kích thước của biểu đồ nếu cần.
 
 ```csharp
+// Chèn biểu đồ
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Bước 3: Thêm dữ liệu chuỗi vào biểu đồ
+## Bước 3: Xóa chuỗi mặc định và thêm dữ liệu tùy chỉnh
 
-Thêm dữ liệu chuỗi vào biểu đồ. Trong ví dụ này, chúng tôi sẽ thêm năm điểm dữ liệu có ngày và giá trị tương ứng.
+Theo mặc định, biểu đồ sẽ có một số chuỗi được xác định trước. Chúng tôi sẽ xóa những thứ này và thêm chuỗi dữ liệu tùy chỉnh của chúng tôi.
 
 ```csharp
 chart.Series.Clear();
 chart.Series.Add("Aspose Series 1",
-    new DateTime[]
-    {
-        new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-        new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-    },
-    new double[] { 640, 320, 280, 120, 150 });
+	new DateTime[]
+	{
+		new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
+		new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
+	},
+	new double[] { 640, 320, 280, 120, 150 });
 ```
 
-## Bước 4: Tùy chỉnh thuộc tính trục X và Y
+## Bước 4: Xác định thuộc tính trục X
 
- Để tùy chỉnh các thuộc tính của trục X và Y, hãy truy cập vào`ChartAxis` các đối tượng liên quan đến biểu đồ.
+Bây giờ là lúc xác định các thuộc tính cho trục X. Điều này bao gồm việc đặt loại danh mục, tùy chỉnh giao điểm trục cũng như điều chỉnh các dấu và nhãn đánh dấu.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
-ChartAxis yAxis = chart.AxisY;
-```
-
- Sửa đổi các thuộc tính của`xAxis` Và`yAxis`đối tượng để đặt các tùy chọn mong muốn cho trục X và Y. Trong ví dụ này, chúng tôi sẽ trình bày một số thuộc tính phổ biến có thể được tùy chỉnh.
-
-```csharp
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3;
+xAxis.CrossesAt = 3; //Được đo bằng đơn vị hiển thị của trục Y (hàng trăm).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 xAxis.TickLabelOffset = 200;
+```
 
+## Bước 5: Xác định thuộc tính trục Y
+
+Tương tự, bạn sẽ thiết lập các thuộc tính cho trục Y. Điều này bao gồm việc đặt vị trí nhãn đánh dấu, đơn vị chính và đơn vị phụ, đơn vị hiển thị và tỷ lệ.
+
+```csharp
+ChartAxis yAxis = chart.AxisY;
 yAxis.TickLabelPosition = AxisTickLabelPosition.High;
 yAxis.MajorUnit = 100;
 yAxis.MinorUnit = 50;
@@ -79,78 +99,31 @@ yAxis.Scaling.Minimum = new AxisBound(100);
 yAxis.Scaling.Maximum = new AxisBound(700);
 ```
 
-## Bước 5: Lưu tài liệu
+## Bước 6: Lưu tài liệu
 
- Cuối cùng, lưu tài liệu vào thư mục đã chỉ định bằng cách sử dụng lệnh`Save` phương pháp của`Document` sự vật.
+Cuối cùng, lưu tài liệu vào thư mục được chỉ định của bạn. Điều này sẽ tạo ra tài liệu Word với biểu đồ tùy chỉnh.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-Điều này hoàn tất việc triển khai xác định các thuộc tính trục XY trong biểu đồ bằng Aspose.Words for .NET.
-
-### Mã nguồn mẫu cho Xác định thuộc tính XYAxis bằng Aspose.Words cho .NET 
-
-```csharp
-	// Đường dẫn đến thư mục tài liệu của bạn
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Chèn biểu đồ
-	Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new DateTime[]
-		{
-			new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-			new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-		},
-		new double[] { 640, 320, 280, 120, 150 });
-	ChartAxis xAxis = chart.AxisX;
-	ChartAxis yAxis = chart.AxisY;
-	// Thay đổi trục X thành danh mục thay vì ngày, do đó tất cả các điểm sẽ được đặt với khoảng cách bằng nhau trên trục X.
-	xAxis.CategoryType = AxisCategoryType.Category;
-	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; //Được đo bằng đơn vị hiển thị của trục Y (hàng trăm).
-	xAxis.ReverseOrder = true;
-	xAxis.MajorTickMark = AxisTickMark.Cross;
-	xAxis.MinorTickMark = AxisTickMark.Outside;
-	xAxis.TickLabelOffset = 200;
-	yAxis.TickLabelPosition = AxisTickLabelPosition.High;
-	yAxis.MajorUnit = 100;
-	yAxis.MinorUnit = 50;
-	yAxis.DisplayUnit.Unit = AxisBuiltInUnit.Hundreds;
-	yAxis.Scaling.Minimum = new AxisBound(100);
-	yAxis.Scaling.Maximum = new AxisBound(700);
-	doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
-```
-
 ## Phần kết luận
 
-Trong hướng dẫn này, bạn đã học cách xác định các thuộc tính cho trục X và Y trong biểu đồ bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước, bạn có thể tạo biểu đồ, thêm dữ liệu chuỗi và tùy chỉnh các thuộc tính trục để đáp ứng các yêu cầu cụ thể của mình. Aspose.Words for .NET cung cấp API toàn diện cho Xử lý văn bản với các biểu đồ trong tài liệu Word, cho phép bạn thao tác các khía cạnh khác nhau của biểu đồ, bao gồm cả các trục.
+Tạo và tùy chỉnh biểu đồ trong tài liệu Word bằng Aspose.Words cho .NET thật đơn giản khi bạn hiểu các bước liên quan. Hướng dẫn này đã hướng dẫn bạn quy trình xác định thuộc tính trục XY trong biểu đồ, từ khởi tạo tài liệu đến lưu sản phẩm cuối cùng. Với những kỹ năng này, bạn có thể tạo các biểu đồ chi tiết, chuyên nghiệp để cải thiện tài liệu của mình.
 
-Bằng cách truy cập vào`ChartAxis` đối tượng được liên kết với biểu đồ, bạn có thể sửa đổi các thuộc tính như loại danh mục, đường chéo trục, dấu kiểm, vị trí nhãn, tỷ lệ, v.v. Tính linh hoạt này cho phép bạn điều chỉnh giao diện và hoạt động của các trục của biểu đồ để trình bày dữ liệu của bạn một cách hiệu quả.
+## Câu hỏi thường gặp
 
-Bằng cách sử dụng Aspose.Words cho .NET, bạn có thể tích hợp liền mạch khả năng tạo và tùy chỉnh biểu đồ vào các ứng dụng .NET của mình và tự động hóa việc tạo tài liệu có giao diện chuyên nghiệp với hình ảnh trực quan phong phú.
+### Tôi có thể tạo những loại biểu đồ nào bằng Aspose.Words cho .NET?
+Bạn có thể tạo nhiều loại biểu đồ khác nhau, bao gồm Khu vực, Thanh, Đường, Hình tròn, v.v.
 
-### Câu hỏi thường gặp
+### Làm cách nào để cài đặt Aspose.Words cho .NET?
+ Bạn có thể tải xuống Aspose.Words cho .NET từ[đây](https://releases.aspose.com/words/net/) và làm theo hướng dẫn cài đặt được cung cấp.
 
-#### Q1. Aspose.Words cho .NET là gì?
-Aspose.Words for .NET là một thư viện xử lý tài liệu mạnh mẽ cho phép các nhà phát triển tạo, thao tác và lưu tài liệu Word theo chương trình trong các ứng dụng .NET. Nó cung cấp nhiều tính năng cho Xử lý văn bản với các thành phần tài liệu, bao gồm cả biểu đồ.
+### Tôi có thể tùy chỉnh giao diện biểu đồ của mình không?
+Có, Aspose.Words for .NET cho phép tùy chỉnh rộng rãi các biểu đồ, bao gồm màu sắc, phông chữ và thuộc tính trục.
 
-#### Q2. Làm cách nào tôi có thể cài đặt Aspose.Words cho .NET?
-Bạn có thể cài đặt Aspose.Words cho .NET bằng cách tải xuống bằng cách sử dụng trình quản lý gói NuGet trong Visual Studio. Chỉ cần tìm kiếm "Aspose.Words" trong trình quản lý gói NuGet và cài đặt nó vào dự án của bạn.
+### Có bản dùng thử miễn phí dành cho Aspose.Words cho .NET không?
+ Có, bạn có thể dùng thử miễn phí[đây](https://releases.aspose.com/).
 
-#### Q3. Tôi có thể tùy chỉnh các khía cạnh khác của biểu đồ bằng Aspose.Words cho .NET không?
-Có, Aspose.Words for .NET cung cấp các khả năng mở rộng để tùy chỉnh các khía cạnh khác nhau của biểu đồ. Ngoài việc xác định thuộc tính trục, bạn có thể sửa đổi loại biểu đồ, chuỗi dữ liệu, chú giải, tiêu đề, vùng biểu đồ, nhãn dữ liệu và nhiều thành phần khác của biểu đồ. API cung cấp khả năng kiểm soát chi tiết đối với giao diện và hành vi của biểu đồ.
-
-#### Q4. Tôi có thể tạo các loại biểu đồ khác nhau bằng Aspose.Words cho .NET không?
- Có, Aspose.Words for .NET hỗ trợ nhiều loại biểu đồ, bao gồm vùng, thanh, đường, hình tròn, phân tán, v.v. Bạn có thể dùng`ChartType` liệt kê để chỉ định loại biểu đồ mong muốn khi chèn hình dạng biểu đồ vào tài liệu Word.
-
-#### Q5. Tôi có thể lưu biểu đồ ở các định dạng khác nhau không?
-Có, Aspose.Words for .NET cho phép bạn lưu tài liệu chứa biểu đồ ở nhiều định dạng khác nhau, chẳng hạn như DOCX, PDF, HTML, v.v. Bạn có thể chọn định dạng phù hợp dựa trên yêu cầu của mình và sử dụng`Save` phương pháp của`Document` đối tượng để lưu tài liệu.
-
-#### Q6. Tôi có thể áp dụng những kỹ thuật này cho nhiều biểu đồ trong một tài liệu không?
- Có, bạn có thể áp dụng các kỹ thuật này cho nhiều biểu đồ trong tài liệu bằng cách lặp lại các bước cần thiết cho từng biểu đồ. Bạn có thể tạo riêng`Chart` Và`ChartAxis` đối tượng cho từng biểu đồ và tùy chỉnh thuộc tính của chúng cho phù hợp. Aspose.Words for .NET cung cấp hỗ trợ đầy đủ cho Xử lý từ với nhiều biểu đồ trong một tài liệu.
+### Tôi có thể tìm thêm hướng dẫn và tài liệu ở đâu?
+ Bạn có thể tìm thêm hướng dẫn và tài liệu chi tiết về[Trang tài liệu Aspose.Words cho .NET](https://reference.aspose.com/words/net/).

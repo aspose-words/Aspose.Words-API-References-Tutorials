@@ -16,7 +16,7 @@ url: /ja/java/word-processing/handling-different-document-formats/
 
 ### 開発環境の設定
 
-コードを読む前に、Java Development Kit (JDK)がシステムにインストールされていることを確認してください。ダウンロードはこちらからできます。[ここ](https://www.oracle.com/java/technologies/javase-downloads.html).
+コードを読む前に、Java Development Kit (JDK)がシステムにインストールされていることを確認してください。ここからダウンロードできます。[ここ](https://www.oracle.com/java/technologies/javase-downloads.html).
 
 ### Aspose.Words for Java のインストール
 

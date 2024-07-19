@@ -12,4 +12,4 @@ Ismerje meg, hogyan engedélyezheti az OpenType-szolgáltatásokat a Word-dokume
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Nyissa meg a Type Features](./open-type-features/) | Ismerje meg, hogyan engedélyezheti és használhatja az Aspose.Words for .NET Open Type szolgáltatásait |
+| [Nyissa meg a Type Features](./open-type-features/) | Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan engedélyezheti az OpenType-szolgáltatásokat a Word dokumentumokban az Aspose.Words for .NET használatával. |

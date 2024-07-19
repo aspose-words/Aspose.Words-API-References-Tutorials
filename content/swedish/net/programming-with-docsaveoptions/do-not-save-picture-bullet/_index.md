@@ -2,80 +2,96 @@
 title: Spara inte Picture Bullet
 linktitle: Spara inte Picture Bullet
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du inaktiverar att spara bildpunkter i Word-dokument med Aspose.Words för .NET.
+description: Lär dig hur du hanterar bildkulor i Aspose.Words för .NET med vår steg-för-steg-guide. Förenkla dokumenthanteringen och skapa professionella Word-dokument utan ansträngning.
 type: docs
 weight: 10
 url: /sv/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
+## Introduktion
 
-Bildpunkter är en vanlig funktion i Word-dokument för att lägga till anpassade punkter. I vissa fall kan det dock vara nödvändigt att inaktivera registrering av bildpunkter när du manipulerar dokument med Aspose.Words Library för .NET. I denna steg-för-steg-guide kommer vi att förklara hur man använder Aspose.Words C#-källkod för .NET för att inaktivera lagring av bildpunkter med hjälp av DocSaveOptions-sparalternativ.
+Hej där, andra utvecklare! Har du någonsin arbetat med Word-dokument och funnit dig själv trasslad i krångligheterna med att spara bildkulor? Det är en av de där små detaljerna som kan göra stor skillnad i det slutliga utseendet på ditt dokument. Tja, idag är jag här för att guida dig genom processen att hantera bildkulor i Aspose.Words för .NET, särskilt med fokus på funktionen "Spara inte bildkula". Redo att dyka i? Nu går vi!
 
-## Förstå Aspose.Words-biblioteket
+## Förutsättningar
 
-Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett kraftfullt bibliotek för att skapa, redigera, konvertera och skydda Word-dokument på olika plattformar inklusive .NET. Den erbjuder många funktioner för att manipulera dokument, som att infoga text, ändra formatering, lägga till avsnitt och mycket mer.
+Innan vi börjar mixtra med koden finns det några saker du måste ha på plats:
 
-## Steg 1: Ställa in dokumentkatalogen
+1.  Aspose.Words för .NET: Se till att du har detta kraftfulla bibliotek installerat. Om du inte har det ännu kan du ladda ner det[här](https://releases.aspose.com/words/net/).
+2. Utvecklingsmiljö: En fungerande .NET-utvecklingsmiljö, som Visual Studio.
+3. Grundläggande kunskaper i C#: Viss förtrogenhet med C#-programmering kommer att vara till hjälp.
+4. Exempeldokument: Ett Word-dokument med bildpunkter för teständamål.
 
-Det första steget är att definiera katalogen där dina dokument finns. Du måste ange den fullständiga katalogsökvägen. Till exempel :
+## Importera namnområden
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen till din dokumentkatalog.
-
-## Steg 2: Ladda dokumentet med bildpunkter
-
-Därefter måste du ladda dokumentet med bildpunkter. Använd klassen Document för att ladda dokumentet från en fil. Till exempel :
+För att komma igång måste du importera de nödvändiga namnrymden. Detta är ganska enkelt men avgörande för att få tillgång till Aspose.Words-funktionerna.
 
 ```csharp
-Document doc = new Document(dataDir + "Image bullet points.docx");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-I det här exemplet laddar vi dokumentet från filen "Image bullet points.docx"
+Låt oss dela upp processen i hanterbara steg. På så sätt kan du enkelt följa med och förstå varje del av koden.
 
-  finns i dokumentkatalogen.
+## Steg 1: Konfigurera din dokumentkatalog
 
-## Steg 3: Konfigurera inspelningsalternativ
-
-Låt oss nu konfigurera sparalternativen för vårt dokument. Använd klassen DocSaveOptions för att ange sparinställningar. Till exempel :
-
-```csharp
-DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
-```
-
-det här exemplet skapar vi ett nytt DocSaveOptions-objekt och ställer in egenskapen SavePictureBullet till false för att inaktivera lagring av bildpunkter.
-
-## Steg 4: Aktivera funktionen "Spara inte bildpunkten".
-
-För att aktivera funktionen "Spara inte Picture Bullet" har vi redan konfigurerat sparalternativen med SavePictureBullet inställt på false. Detta säkerställer att bildpunkter inte sparas i slutdokumentet.
-
-## Steg 5: Spara dokumentet
-
-Slutligen kan du spara dokumentet med hjälp av Spara-metoden för klassen Document. Ange den fullständiga sökvägen till filen och önskat filnamn. Till exempel :
-
-```csharp
-doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
-```
-
-Se till att ersätta "dataDir" med katalogsökvägen till dina dokument.
-
-## Exempel på källkod för DocSaveOptions-sparalternativ med "Spara inte Picture Bullet"-funktionalitet med Aspose.Words för .NET
+Först och främst måste du ange sökvägen till din dokumentkatalog. Det är här dina Word-dokument lagras och där du sparar de ändrade filerna.
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen på ditt system där dina dokument finns.
+
+## Steg 2: Ladda dokumentet med bildpunkter
+
+Därefter ska du ladda Word-dokumentet som innehåller bildpunkter. Detta dokument kommer att ändras för att ta bort bildpunkterna när det sparas.
+
+```csharp
 // Ladda dokumentet med bildpunkter
 Document doc = new Document(dataDir + "Image bullet points.docx");
+```
 
+ Se till att filen`"Image bullet points.docx"` finns i den angivna katalogen.
+
+## Steg 3: Konfigurera sparalternativ
+
+Låt oss nu konfigurera sparalternativen för att ange att bildpunkter inte ska sparas. Det är här magin händer!
+
+```csharp
 // Konfigurera sparalternativ med funktionen "Spara inte Picture Bullet".
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
+```
 
+ Genom att sätta`SavePictureBullet` till`false`, instruerar du Aspose.Words att inte spara bildpunkter i utdatadokumentet.
+
+## Steg 4: Spara dokumentet
+
+Spara slutligen dokumentet med de angivna alternativen. Detta kommer att generera en ny fil där bildpunkterna inte ingår.
+
+```csharp
 // Spara dokumentet med de angivna alternativen
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
+ Den nya filen,`"WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx"`, kommer att sparas i din dokumentkatalog.
+
 ## Slutsats
 
-den här guiden behandlade vi hur du inaktiverar lagring av bildpunkter i ett dokument med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Att inaktivera lagring av bildpunkter kan vara användbart i vissa situationer för att bevara dokumentstruktur och formatering utan att spara bildpunkter.
+Och där har du det! Med bara några rader kod har du framgångsrikt konfigurerat Aspose.Words för .NET för att utelämna bildpunkter när du sparar ett dokument. Detta kan vara otroligt användbart när du behöver ett rent, konsekvent utseende utan distraktion av bildkulor.
+
+## FAQ's
+
+### Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt bibliotek för att skapa, redigera och konvertera Word-dokument i .NET-applikationer.
+
+### Kan jag använda den här funktionen för andra typer av kulor?
+Nej, den här specifika funktionen är för bildkulor. Men Aspose.Words erbjuder omfattande alternativ för att hantera andra kultyper.
+
+### Var kan jag få support för Aspose.Words?
+ Du kan få stöd från[Aspose.Words Forum](https://forum.aspose.com/c/words/8).
+
+### Finns det en gratis provperiod för Aspose.Words för .NET?
+ Ja, du kan få en gratis provperiod[här](https://releases.aspose.com/).
+
+### Hur köper jag en licens för Aspose.Words för .NET?
+ Du kan köpa en licens från[Aspose Store](https://purchase.aspose.com/buy).

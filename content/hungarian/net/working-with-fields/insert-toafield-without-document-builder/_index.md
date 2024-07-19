@@ -29,7 +29,7 @@ Paragraph para = new Paragraph(doc);
 
 ## 3. lépés: A TA mező beszúrása
 
-FieldTA osztályt használjuk egy TA mező beillesztésére a bekezdésbe.
+A FieldTA osztályt használjuk egy TA mező beillesztésére a bekezdésbe.
 
 ```csharp
 FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTAEntry, false);
@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### K: Hogyan lehet testreszabni a Word dokumentumba beillesztett TOA mező megjelenését az Aspose.Words for .NET segítségével?
 
-V: Testreszabhatja a beszúrt TOA mező megjelenését a tulajdonságok használatával`FieldTOA` objektumot a formázási beállítások megadásához.
+ V: Testreszabhatja a beszúrt TOA mező megjelenését a tulajdonságok használatával`FieldTOA` objektumot a formázási beállítások megadásához.
 
 #### K: Hozzáadhatok több TOA mezőt egyetlen Word dokumentumhoz az Aspose.Words for .NET használatával?
 

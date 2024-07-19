@@ -32,8 +32,8 @@ Aspose.Words for .NET 教程中的表格文字处理将指导您了解在 Word �
 | [水平合并](./horizontal-merge/) | 了解如何使用 Aspose.Words for .NET 在 Word 表中水平合并单元格。 |
 | [转换为水平合并单元格](./convert-to-horizontally-merged-cells/) | 了解如何使用 Aspose.Words for .NET 将 Word 文档中的表格单元格转换为水平合并单元格。 |
 | [在后续页面上重复行](./repeat-rows-on-subsequent-pages/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档的后续页面上重复表格行。 |
-| [自动适合页面宽度](./auto-fit-to-page-width/) | 了解如何使用 Aspose.Words for .NET 自动使 Word 文档中的表格适合页面宽度。 |
-| [首选宽度设置](./preferred-width-settings/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置首选表格单元格宽度。 |
+| [自动适合窗口](./auto-fit-to-page-width/) | 按照本分步指南使用 Aspose.Words for .NET 轻松自动调整表格以适应 Word 文档中的窗口。非常适合更简洁、专业的文档。 |
+| [首选宽度设置](./preferred-width-settings/) | 通过本分步指南了解如何在 Aspose.Words for .NET 中创建具有绝对、相对和自动宽度设置的表格。 |
 | [检索首选宽度类型](./retrieve-preferred-width-type/) | 了解如何使用 Aspose.Words for .NET 检索 Word 表中单元格的类型和首选宽度值。 |
 | [获取表格位置](./get-table-position/) | 了解如何使用 Aspose.Words for .NET 获取 Word 文档中表格的位置。 |
 | [获取浮动表格位置](./get-floating-table-position/) | 了解如何使用 Aspose.Words for .NET 获取 Word 文档中浮动表格的位置。 |

@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Ici, nous utilisons le générateur de documents pour créer un tableau avec deux lignes d'en-tête et plusieurs lignes de données. Le`RowFormat.HeadingFormat`les paramètres sont utilisés pour marquer les lignes d’en-tête qui doivent être répétées sur les pages suivantes.
+ Ici, nous utilisons le générateur de documents pour créer un tableau avec deux lignes d'en-tête et plusieurs lignes de données. Le`RowFormat.HeadingFormat` les paramètres sont utilisés pour marquer les lignes d’en-tête qui doivent être répétées sur les pages suivantes.
 
 ## Étape 4 : Sauvegarde du document modifié
 Enfin les États-Unis

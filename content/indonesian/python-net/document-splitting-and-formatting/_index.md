@@ -10,7 +10,7 @@ url: /id/python-net/document-splitting-and-formatting/
 
 ## Pengantar Pemisahan dan Pemformatan Dokumen dengan Tutorial Aspose.Words
 
-Selamat datang di dunia tutorial Aspose.Words yang didedikasikan untuk pemisahan dan pemformatan dokumen! Seri tutorial ini dirancang untuk memberdayakan pengembang yang menggunakan Python dan .NET dengan pengetahuan dan keterampilan yang diperlukan untuk membagi dan memformat dokumen secara efisien. Baik Anda menangani file besar, mengekstrak bagian tertentu, atau memastikan pemformatan konsisten, tutorial ini akan memberi Anda alat untuk menyempurnakan tugas pemrosesan dokumen Anda.
+Selamat datang di dunia tutorial Aspose.Words yang didedikasikan untuk pemisahan dan pemformatan dokumen! Seri tutorial ini dirancang untuk memberdayakan pengembang yang menggunakan Python dan .NET dengan pengetahuan dan keterampilan yang dibutuhkan untuk membagi dan memformat dokumen secara efisien. Baik Anda menangani file besar, mengekstrak bagian tertentu, atau memastikan pemformatan konsisten, tutorial ini akan memberi Anda alat untuk menyempurnakan tugas pemrosesan dokumen Anda.
 
 ## Mengapa Pemisahan dan Pemformatan Dokumen Penting
 
@@ -35,7 +35,7 @@ Sepanjang tutorial ini, Anda akan mendapatkan wawasan praktis, akses ke contoh k
 ### [Strategi Pemisahan dan Pemformatan Dokumen yang Efisien](./split-format-documents/)
 Pelajari cara membagi dan memformat dokumen secara efisien menggunakan Aspose.Words untuk Python. Tutorial ini memberikan panduan langkah demi langkah dan contoh kode sumber.
 ### [Membagi Dokumen dengan Pembuat Konten untuk Presisi](./divide-documents-content-builder/)
-Bagilah dan taklukkan dokumen Anda dengan presisi menggunakan Aspose.Words untuk Python. Pelajari cara memanfaatkan Pembuat Konten untuk ekstraksi dan pengorganisasian konten secara efisien.
+Bagilah dan taklukkan dokumen Anda dengan presisi menggunakan Aspose.Words untuk Python. Pelajari cara memanfaatkan Pembuat Konten untuk ekstraksi dan pengorganisasian konten yang efisien.
 ### [Menggabungkan dan Mengkloning Dokumen untuk Alur Kerja yang Kompleks](./combine-clone-documents/)
 Pelajari cara menggabungkan dan mengkloning dokumen secara efisien menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber untuk manipulasi dokumen. Tingkatkan alur kerja dokumen Anda hari ini!
 ### [Membandingkan Versi Dokumen untuk Pengendalian Revisi yang Efektif](./compare-document-versions/)

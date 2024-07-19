@@ -58,7 +58,7 @@ for shape in doc.get_child_nodes(doc.is_shape, True):
 
 ## 管理格式
 
-提取过程中保留格式：
+提取期间保留格式：
 
 ```python
 for run in doc.get_child_nodes(doc.is_run, True):

@@ -101,7 +101,7 @@ Assert.AreEqual(2, shapes.Count);
 // 첫 번째 모양을 제거합니다.
 shapes[0].Remove();
 
-// 변경 사항을 추적하는 동안 해당 모양을 제거했기 때문에 해당 모양은 삭제 개정으로 간주됩니다.
+// 변경 사항을 추적하는 동안 해당 모양을 제거했기 때문에 해당 모양은 삭제 개정으로 계산됩니다.
 Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
 Assert.True(shapes[0].IsDeleteRevision);
 
@@ -171,7 +171,7 @@ Assert.True(shapes[1].IsInsertRevision);
 
 #### Q: Aspose.Words for .NET 문서에서 모양의 변위 개정을 어떻게 확인할 수 있나요?
 
- A: Aspose.Words for .NET 문서에서 모양 변위 개정을 확인하려면 모양 변위 개정이 포함된 기존 문서를 로드할 수 있습니다. 그런 다음 각 도형의`IsMoveFromRevision` 그리고`IsMoveToRevision` 이동 중인지, 그렇다면 어디서, 어디로 이동하는지 확인하는 속성:
+ A: Aspose.Words for .NET 문서에서 모양 변위 개정을 확인하려면 모양 변위 개정이 포함된 기존 문서를 로드할 수 있습니다. 그런 다음 각 도형의`IsMoveFromRevision`그리고`IsMoveToRevision` 이동 중인지, 그렇다면 어디서, 어디로 이동하는지 확인하는 속성:
 
 ```csharp
 doc = new Document(MyDir + "Revision shape.docx");

@@ -77,7 +77,7 @@ A: Um Aspose.Words für .NET so zu konfigurieren, dass keine Kernschriftarten in
 
  Laden Sie das Word-Dokument, das Sie in PDF konvertieren möchten, mit dem`Document` Klasse und dem angegebenen Dokumentpfad.
 
- Erstellen Sie eine Instanz des`PdfSaveOptions` Klasse und legen Sie die`UseCoreFonts`Eigentum an`true`. Dadurch wird die Einbettung von Basisschriftarten in die generierte PDF-Datei vermieden.
+ Erstellen Sie eine Instanz des`PdfSaveOptions` Klasse und legen Sie die`UseCoreFonts`Eigentum an`true`. Dadurch wird das Einbetten von Basisschriftarten in die generierte PDF-Datei vermieden.
 
  Verwenden Sie die`Save` Methode der`Document` Objekt, um das Dokument im PDF-Format zu speichern und dabei die zuvor konfigurierten Konvertierungsoptionen anzugeben.
 

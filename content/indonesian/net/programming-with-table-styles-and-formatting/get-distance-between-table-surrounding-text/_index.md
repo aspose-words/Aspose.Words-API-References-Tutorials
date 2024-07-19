@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Langkah 3: Dapatkan jarak antara tabel dan teks di sekitarnya
- Untuk mendapatkan jarak antara tabel dan teks di sekitarnya, kita perlu mengakses tabel di dokumen menggunakan`GetChild()` metode dan`NodeType.Table` Properti. Kami kemudian dapat menampilkan jarak yang berbeda menggunakan properti array`DistanceTop`, `DistanceBottom`, `DistanceRight` Dan`DistanceLeft`.
+ Untuk mendapatkan jarak antara tabel dan teks di sekitarnya, kita perlu mengakses tabel di dokumen menggunakan`GetChild()` metode dan`NodeType.Table` Properti. Kami kemudian dapat menampilkan jarak yang berbeda menggunakan properti array`DistanceTop`, `DistanceBottom`, `DistanceRight`Dan`DistanceLeft`.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

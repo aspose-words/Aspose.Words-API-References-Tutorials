@@ -14,10 +14,10 @@ Bu eğitimlerle Aspose.Words for .NET'in dijital imza özelliklerine hakim olabi
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Word Belgesini İmzala](./sign-document/) | Aspose.Words for .NET ile bir Word belgesini dijital olarak nasıl imzalayacağınızı öğrenin. |
-| [Şifreli Word Belgesini İmzalama](./signing-encrypted-document/) | Aspose.Words for .NET ile şifrelenmiş bir word belgesini dijital olarak nasıl imzalayacağınızı öğrenin. |
-| [Yeni İmza Satırı Oluşturma ve İmzalama](./creating-and-signing-new-signature-line/) | Aspose.Words for .NET ile Word belgesinde yeni bir imza satırının nasıl oluşturulacağını ve imzalanacağını öğrenin. |
-| [Word Belgesinde Mevcut İmza Satırının İmzalanması](./signing-existing-signature-line/) | Aspose.Words for .NET ile bir Word belgesinde mevcut bir imza satırını nasıl imzalayacağınızı öğrenin. |
-| [Word Belgesinde İmza Sağlayıcı Kimliğini Ayarlama](./set-signature-provider-id/) | Aspose.Words for .NET ile bir Word belgesinde imza sağlayıcı kimliğini nasıl ayarlayacağınızı öğrenin. |
-| [Yeni İmza Satırı Oluşturun ve Sağlayıcı Kimliğini Ayarlayın](./create-new-signature-line-and-set-provider-id/) | Aspose.Words for .NET ile Word belgesinde yeni bir imza satırı oluşturmayı ve sağlayıcı kimliğini nasıl ayarlayacağınızı öğrenin. |
-| [Word Belgesindeki İmzaya Erişin ve İmzayı Doğrulayın](./access-and-verify-signature/) | Aspose.Words for .NET ile bir Word belgesindeki dijital imzalara nasıl erişeceğinizi ve bunları nasıl doğrulayacağınızı öğrenin. |
+| [Word Belgesini İmzala](./sign-document/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesini nasıl imzalayacağınızı öğrenin. Belgelerinizi kolaylıkla güvence altına alın. |
+| [Şifreli Word Belgesini İmzalama](./signing-encrypted-document/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak şifrelenmiş Word belgelerini nasıl imzalayacağınızı öğrenin. Geliştiriciler için mükemmel. |
+| [Yeni İmza Satırı Oluşturma ve İmzalama](./creating-and-signing-new-signature-line/) | Bu adım adım eğitimle Aspose.Words for .NET kullanarak bir Word belgesinde nasıl imza satırı oluşturulacağını ve dijital olarak imzalanacağını öğrenin. Belge otomasyonu için mükemmeldir. |
+| [Word Belgesinde Mevcut İmza Satırının İmzalanması](./signing-existing-signature-line/) | Ayrıntılı adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesinde mevcut bir imza satırını nasıl imzalayacağınızı öğrenin. Geliştiriciler için mükemmel. |
+| [Word Belgesinde İmza Sağlayıcı Kimliğini Ayarlama](./set-signature-provider-id/) | Aspose.Words for .NET'i kullanarak Word belgelerinde güvenli bir şekilde İmza Sağlayıcı Kimliği ayarlayın. Belgelerinizi dijital olarak imzalamak için 2000 kelimelik ayrıntılı kılavuzumuzu izleyin. |
+| [Yeni İmza Satırı Oluşturun ve Sağlayıcı Kimliğini Ayarlayın](./create-new-signature-line-and-set-provider-id/) | Aspose.Words for .NET kullanarak Word belgelerinde yeni bir imza satırı oluşturmayı ve sağlayıcı kimliğini nasıl ayarlayacağınızı öğrenin. Adım adım rehber. |
+| [Word Belgesindeki İmzaya Erişin ve İmzayı Doğrulayın](./access-and-verify-signature/) | Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerindeki dijital imzalara erişin ve bunları doğrulayın. Belgenin orijinalliğini zahmetsizce sağlayın. |

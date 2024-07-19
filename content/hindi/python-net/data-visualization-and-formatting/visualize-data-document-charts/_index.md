@@ -118,4 +118,4 @@ doc.save("dynamic_chart_document.pdf", aw.SaveFormat.PDF)
 आप अपने दस्तावेज़ को विभिन्न प्रारूपों में सहेज सकते हैं, जिनमें DOCX और PDF आदि शामिल हैं।
 
 ### मैं Aspose.Words संसाधनों तक कहां पहुंच सकता हूं?
- Aspose.Words संसाधनों और दस्तावेज़ों तक पहुंचें:[यहाँ](https://reference.aspose.com/words/python-net/)
+ Aspose.Words संसाधनों और दस्तावेज़ों तक यहां पहुंचें:[यहाँ](https://reference.aspose.com/words/python-net/)

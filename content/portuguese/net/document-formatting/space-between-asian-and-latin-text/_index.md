@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Layout;
 ```
 
-Essas linhas de código são essenciais porque trazem as funcionalidades do Aspose.Words que usaremos.
+Essas linhas de código são essenciais porque trazem as funcionalidades do Aspose.Words que utilizaremos.
 
 ## Etapa 1: configurando seu documento
 
@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Definindo`AddSpaceBetweenFarEastAndAlpha` e`AddSpaceBetweenFarEastAndDigit` para`true`, dizemos ao Aspose.Words para ajustar automaticamente o espaçamento entre caracteres asiáticos e letras ou dígitos latinos.
+ Definindo`AddSpaceBetweenFarEastAndAlpha`e`AddSpaceBetweenFarEastAndDigit` para`true`, dizemos ao Aspose.Words para ajustar automaticamente o espaçamento entre caracteres asiáticos e letras ou dígitos latinos.
 
 ## Etapa 3: adicionar texto ao documento
 

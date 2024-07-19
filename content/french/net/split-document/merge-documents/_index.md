@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- Dans cette étape, nous fusionnons`Document1.docx` et`Document2.docx` dans un nouveau fichier appelé`MergedDocument.docx`.
+ Dans cette étape, nous fusionnons`Document1.docx`et`Document2.docx` dans un nouveau fichier appelé`MergedDocument.docx`.
 
 ## Étape 3 : Fusion avec les options d'enregistrement
 
@@ -74,7 +74,7 @@ Si vous devez fusionner des documents et enregistrer le résultat au format PDF,
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Ici, nous fusionnons`Document1.docx` et`Document2.docx` et enregistrez le résultat sous forme de fichier PDF.
+ Ici, nous fusionnons`Document1.docx`et`Document2.docx` et enregistrez le résultat sous forme de fichier PDF.
 
 ## Étape 5 : Création d'une instance de document à partir de documents fusionnés
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeu
 
 ### 3. Comment gérer les différents formats lors de la fusion ?
 
- Aspose.Words propose différents modes de format de fusion comme`KeepSourceFormatting` et`MergeFormatting` . Se référer au[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
+ Aspose.Words propose différents modes de format de fusion comme`KeepSourceFormatting`et`MergeFormatting` . Se référer au[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
 
 ### 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
 

@@ -66,7 +66,7 @@ Aspose.Words for .NET 的“在窗口标题栏中显示文档标题”功能允�
 #### 问：如何在 Aspose.Words for .NET 中使用此功能？
 要将此功能与 Aspose.Words for .NET 一起使用，请按照以下步骤操作：
 
-使用加载文档`Document`方法并指定要转换为 PDF 的文件的路径。
+使用`Document`方法并指定要转换为 PDF 的文件的路径。
 
 通过创建实例来配置 PDF 保存选项`PdfSaveOptions`类和设置`DisplayDocTitle`财产`true`这使得在转换为 PDF 时可以在窗口标题栏中显示文档标题。
 

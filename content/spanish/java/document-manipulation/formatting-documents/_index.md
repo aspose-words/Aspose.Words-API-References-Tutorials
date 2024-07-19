@@ -10,7 +10,7 @@ url: /es/java/document-manipulation/formatting-documents/
 
 ## Introducción al formato de documentos en Aspose.Words para Java
 
-En el mundo del procesamiento de documentos Java, Aspose.Words para Java se destaca como una herramienta robusta y versátil. Ya sea que esté trabajando en la generación de informes, elaborando facturas o creando documentos complejos, Aspose.Words para Java lo tiene cubierto. En esta guía completa, profundizaremos en el arte de formatear documentos utilizando esta potente API de Java. Emprendamos este viaje paso a paso.
+En el mundo del procesamiento de documentos Java, Aspose.Words para Java se destaca como una herramienta robusta y versátil. Ya sea que esté trabajando en la generación de informes, elaborando facturas o creando documentos complejos, Aspose.Words para Java lo tiene cubierto. En esta guía completa, profundizaremos en el arte de formatear documentos utilizando esta poderosa API de Java. Emprendamos este viaje paso a paso.
 
 ## Configurando su entorno
 

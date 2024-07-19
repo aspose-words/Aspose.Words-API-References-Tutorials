@@ -85,7 +85,7 @@ Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasiny
 
 #### T: Apakah mungkin untuk menyesuaikan penomoran catatan akhir dalam dokumen?
 
- J: Ya, dimungkinkan untuk menyesuaikan penomoran catatan akhir dalam dokumen. Anda dapat menggunakan`RestartRule` Dan`NumberStyle` properti dari`EndnoteOptions` kelas untuk menentukan aturan restart tertentu dan gaya penomoran.
+ J: Ya, dimungkinkan untuk menyesuaikan penomoran catatan akhir dalam dokumen. Anda dapat menggunakan`RestartRule`Dan`NumberStyle` properti dari`EndnoteOptions` kelas untuk menentukan aturan restart tertentu dan gaya penomoran.
 
 #### T: Bagaimana cara memposisikan catatan akhir dalam dokumen?
 

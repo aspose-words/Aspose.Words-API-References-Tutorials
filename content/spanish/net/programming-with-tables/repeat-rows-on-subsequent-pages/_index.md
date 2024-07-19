@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Aquí utilizamos el generador de documentos para crear una tabla con dos filas de encabezado y varias filas de datos. El`RowFormat.HeadingFormat`Los parámetros se utilizan para marcar las filas del encabezado que deben repetirse en las páginas siguientes.
+ Aquí utilizamos el generador de documentos para crear una tabla con dos filas de encabezado y varias filas de datos. El`RowFormat.HeadingFormat` Los parámetros se utilizan para marcar las filas del encabezado que deben repetirse en las páginas siguientes.
 
 ## Paso 4: guardar el documento modificado
 Finalmente Estados Unidos
@@ -117,4 +117,4 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
 ## Conclusión
-En este tutorial, aprendimos cómo repetir las filas de una tabla en páginas posteriores de un documento de Word usando Aspose.Words para .NET. Siguiendo esta guía paso a paso e implementando el código C# proporcionado, puede especificar qué líneas repetir según sus necesidades específicas en sus documentos de Word.
+En este tutorial, aprendimos cómo repetir las filas de una tabla en páginas posteriores de un documento de Word usando Aspose.Words para .NET. Si sigue esta guía paso a paso e implementa el código C# proporcionado, puede especificar qué líneas repetir según sus necesidades específicas en sus documentos de Word.

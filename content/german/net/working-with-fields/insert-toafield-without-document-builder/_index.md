@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### F: Wie kann ich das Erscheinungsbild des in das Word-Dokument eingefügten TOA-Felds mit Aspose.Words für .NET anpassen?
 
-A: Sie können das Erscheinungsbild des eingefügten TOA-Feldes anpassen, indem Sie die Eigenschaften des`FieldTOA` Objekt, um Formatierungsoptionen anzugeben.
+ A: Sie können das Erscheinungsbild des eingefügten TOA-Feldes anpassen, indem Sie die Eigenschaften des`FieldTOA` Objekt, um Formatierungsoptionen anzugeben.
 
 #### F: Kann ich mit Aspose.Words für .NET mehrere TOA-Felder in ein einzelnes Word-Dokument einfügen?
 

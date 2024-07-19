@@ -2,95 +2,115 @@
 title: Hapus Pembatasan Hanya Baca
 linktitle: Hapus Pembatasan Hanya Baca
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menghapus pembatasan baca-saja dari dokumen Word dengan Aspose.Words untuk .NET.
+description: Hapus batasan hanya baca dari dokumen Word dengan mudah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci. Sempurna untuk pengembang.
 type: docs
 weight: 10
 url: /id/net/document-protection/remove-read-only-restriction/
 ---
-Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk menggunakan fitur penghapusan pembatasan hanya-baca Aspose.Words untuk .NET. Fitur ini memungkinkan Anda untuk menghapus batasan read-only dari dokumen Word agar dapat diedit. Ikuti langkah-langkah di bawah ini:
+## Perkenalan
 
-## Langkah 1: Membuat Dokumen dan Mengatur Perlindungan
+Menghapus batasan read-only dari dokumen Word bisa menjadi tugas yang cukup sulit jika Anda tidak mengetahui alat dan metode yang tepat. Untungnya, Aspose.Words untuk .NET menyediakan cara yang mulus untuk mencapai hal ini. Dalam tutorial ini, kami akan memandu Anda melalui proses menghapus pembatasan baca-saja dari dokumen Word menggunakan Aspose.Words untuk .NET.
 
-Mulailah dengan membuat instance kelas Dokumen:
+## Prasyarat
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-doc.WriteProtection.SetPassword("MyPassword");
-```
+Sebelum kita mendalami panduan langkah demi langkah, pastikan Anda memiliki prasyarat berikut:
 
-Tetapkan kata sandi untuk dokumen menggunakan properti SetPassword() dari objek WriteProtection:
+-  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Jika Anda belum menginstalnya, Anda dapat mendownloadnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Lingkungan pengembangan .NET seperti Visual Studio.
+- Pengetahuan Dasar C#: Memahami konsep dasar pemrograman C# akan sangat membantu.
 
-Pastikan untuk mengganti "Kata Sandi Saya" dengan kata sandi sebenarnya yang Anda gunakan untuk melindungi dokumen.
+## Impor Namespace
 
-## Langkah 2: Hapus batasan hanya-baca
-
-Untuk menghapus pembatasan baca-saja, setel properti ReadOnlyRecommended ke false:
+Sebelum kita mulai dengan kode sebenarnya, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek Anda:
 
 ```csharp
-doc.WriteProtection.ReadOnlyRecommended = false;
+using Aspose.Words;
+using Aspose.Words.Protection;
 ```
 
-## Langkah 3: Terapkan Perlindungan Tidak Terbatas
+## Langkah 1: Siapkan Proyek Anda
 
-Terakhir, terapkan perlindungan tak terbatas menggunakan metode Protect() pada objek Dokumen:
+Hal pertama yang pertama, siapkan proyek Anda di lingkungan pengembangan Anda. Buka Visual Studio, buat proyek C# baru, dan tambahkan referensi ke pustaka Aspose.Words for .NET.
 
-```csharp
-doc.Protect(ProtectionType.NoProtection);
-doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
-```
+## Langkah 2: Inisialisasi Dokumen
 
-Pastikan untuk menentukan jalur dan nama file yang benar untuk menyimpan dokumen tanpa batasan hanya-baca.
-
-### Contoh kode sumber untuk Menghapus Pembatasan Hanya Baca menggunakan Aspose.Words untuk .NET
-
-Berikut kode sumber lengkap untuk menghilangkan batasan read-only menggunakan Aspose.Words untuk .NET:
+Sekarang proyek Anda sudah siap, langkah selanjutnya adalah menginisialisasi dokumen Word yang ingin Anda modifikasi.
 
 ```csharp
 // Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+Document doc = new Document(dataDir + "YourDocument.docx");
+```
 
-// Masukkan kata sandi yang panjangnya maksimal 15 karakter.
+ Pada langkah ini, ganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Anda disimpan.`"YourDocument.docx"` adalah nama dokumen yang ingin Anda modifikasi.
+
+## Langkah 3: Tetapkan Kata Sandi (Opsional)
+
+Menetapkan kata sandi bersifat opsional, namun dapat menambah lapisan keamanan ekstra pada dokumen Anda sebelum Anda mengubahnya.
+
+```csharp
+//Masukkan kata sandi yang panjangnya maksimal 15 karakter.
 doc.WriteProtection.SetPassword("MyPassword");
+```
 
-//Hapus opsi baca-saja.
+Anda dapat mengatur kata sandi pilihan Anda hingga 15 karakter.
+
+## Langkah 4: Hapus Rekomendasi Read-Only
+
+Sekarang, mari kita hapus rekomendasi read-only dari dokumen.
+
+```csharp
+// Hapus opsi baca-saja.
 doc.WriteProtection.ReadOnlyRecommended = false;
+```
 
+Baris kode ini menghapus rekomendasi baca-saja dari dokumen Anda, sehingga dapat diedit.
+
+## Langkah 5: Tidak Terapkan Perlindungan
+
+Untuk memastikan bahwa tidak ada batasan lain pada dokumen Anda, terapkan pengaturan tanpa perlindungan.
+
+```csharp
 // Terapkan perlindungan tulis tanpa perlindungan apa pun.
 doc.Protect(ProtectionType.NoProtection);
+```
+
+Langkah ini penting karena memastikan tidak ada proteksi penulisan yang diterapkan pada dokumen Anda.
+
+## Langkah 6: Simpan Dokumen
+
+Terakhir, simpan dokumen yang dimodifikasi ke lokasi yang Anda inginkan.
+
+```csharp
 doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 ```
 
-Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menghapus pembatasan baca-saja dari dokumen Word dengan Aspose.Words untuk .NET.
-
+ Pada langkah ini, dokumen yang diubah disimpan dengan nama`"DocumentProtection.RemoveReadOnlyRestriction.docx"`.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita mempelajari cara menghapus pembatasan read-only dari dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang disediakan, Anda dapat dengan mudah menghapus batasan dan membuat dokumen dapat diedit kembali. Aspose.Words untuk .NET menawarkan serangkaian fitur komprehensif untuk mengelola perlindungan dan pembatasan dokumen, memberi Anda fleksibilitas dan kontrol atas keamanan dan kemampuan pengeditan dokumen Word Anda.
+Dan itu saja! Anda telah berhasil menghapus pembatasan baca-saja dari dokumen Word menggunakan Aspose.Words untuk .NET. Proses ini mudah dan memastikan dokumen Anda dapat diedit dengan bebas tanpa batasan yang tidak perlu. 
 
-### FAQ
+Baik Anda mengerjakan proyek kecil atau menangani banyak dokumen, mengetahui cara mengelola perlindungan dokumen dapat menghemat banyak waktu dan kerumitan. Jadi, silakan mencobanya di proyek Anda. Selamat membuat kode!
 
-#### T: Apa yang dimaksud dengan pembatasan baca-saja di Aspose.Words untuk .NET?
+## FAQ
 
-J: Pembatasan baca-saja di Aspose.Words untuk .NET mengacu pada fitur yang memungkinkan Anda mengatur dokumen Word sebagai hanya-baca, mencegah pengguna membuat modifikasi apa pun pada konten atau pemformatan. Pembatasan ini membantu melindungi integritas dokumen dan memastikan bahwa dokumen tersebut tidak dimodifikasi secara tidak sengaja atau jahat.
+### Bisakah saya menghapus pembatasan hanya-baca tanpa menetapkan kata sandi?
 
-#### T: Bagaimana cara menghapus pembatasan baca-saja menggunakan Aspose.Words untuk .NET?
+Ya, menetapkan kata sandi adalah opsional. Anda dapat langsung menghapus rekomendasi baca-saja dan tidak menerapkan perlindungan apa pun.
 
-J: Untuk menghapus pembatasan baca-saja dari dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
-1.  Buat sebuah instance dari`Document` kelas dan atur kata sandi untuk dokumen menggunakan`SetPassword` metode`WriteProtection` obyek.
-2.  Mengatur`ReadOnlyRecommended` properti dari`WriteProtection` objek untuk`false` untuk menghapus rekomendasi baca-saja.
-3.  Terapkan perlindungan tak terbatas pada dokumen menggunakan`Protect` metode`Document` keberatan dengan`NoProtection` jenis perlindungan.
-4.  Simpan dokumen tanpa batasan read-only menggunakan`Save` metode`Document` obyek.
+### Apa yang terjadi jika dokumen tersebut sudah memiliki jenis perlindungan yang berbeda?
 
-#### T: Dapatkah saya menghapus pembatasan baca-saja dari dokumen Word tanpa kata sandi?
+ Itu`doc.Protect(ProtectionType.NoProtection)` metode memastikan bahwa semua jenis perlindungan dihapus dari dokumen.
 
-J: Tidak, Anda tidak dapat menghapus pembatasan baca-saja dari dokumen Word tanpa memberikan kata sandi yang benar. Pembatasan read-only diatur untuk tujuan keamanan, dan menghapusnya tanpa kata sandi akan merusak tujuan melindungi integritas dokumen.
+### Apakah ada cara untuk mengetahui apakah suatu dokumen bersifat read-only sebelum menghapus batasannya?
 
-#### T: Dapatkah saya menghapus pembatasan baca-saja dari dokumen Word dengan kata sandi yang salah?
+ Ya, Anda dapat memeriksanya`ReadOnlyRecommended` properti untuk melihat apakah dokumen tersebut direkomendasikan hanya-baca sebelum melakukan perubahan apa pun.
 
-J: Tidak, Anda tidak dapat menghapus pembatasan baca-saja dari dokumen Word dengan kata sandi yang salah. Kata sandi yang benar harus diberikan untuk menghapus pembatasan hanya-baca dan membuat dokumen dapat diedit kembali. Hal ini memastikan bahwa hanya pengguna yang berwenang dengan kata sandi yang benar yang dapat mengubah dokumen.
+### Bisakah saya menggunakan metode ini untuk menghapus batasan pada beberapa dokumen sekaligus?
 
-#### T: Apakah mungkin untuk menghapus jenis perlindungan dokumen lainnya menggunakan Aspose.Words untuk .NET?
+Ya, Anda dapat mengulang beberapa dokumen dan menerapkan metode yang sama ke masing-masing dokumen untuk menghilangkan batasan hanya-baca.
 
-J: Ya, Aspose.Words untuk .NET menyediakan berbagai metode untuk menghapus jenis perlindungan dokumen lainnya, seperti perlindungan kata sandi, perlindungan formulir, atau pembatasan pengeditan dokumen. Bergantung pada jenis perlindungan yang diterapkan pada dokumen, Anda dapat menggunakan metode dan properti terkait yang disediakan oleh Aspose.Words untuk menghapus perlindungan khusus dan membuat dokumen dapat diedit.
+### Bagaimana jika dokumen dilindungi kata sandi dan saya tidak tahu kata sandinya?
+
+Sayangnya, Anda perlu mengetahui kata sandinya untuk menghapus batasan apa pun. Tanpa kata sandi, Anda tidak akan dapat mengubah pengaturan perlindungan.

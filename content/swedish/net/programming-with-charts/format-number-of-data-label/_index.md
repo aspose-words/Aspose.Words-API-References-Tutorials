@@ -2,34 +2,58 @@
 title: Format Antal Data Etikett I Ett Diagram
 linktitle: Format Antal Data Etikett I Ett Diagram
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du formaterar antalet dataetiketter i ett diagram med Aspose.Words för .NET. Anpassa enkelt talformat för dataetiketter.
+description: Lär dig hur du formaterar dataetiketter i diagram med Aspose.Words för .NET med denna steg-för-steg-guide. Förbättra dina Word-dokument utan ansträngning.
 type: docs
 weight: 10
 url: /sv/net/programming-with-charts/format-number-of-data-label/
 ---
+## Introduktion
 
-Denna handledning förklarar hur man använder Aspose.Words för .NET för att formatera antalet dataetiketter i ett diagram. Den medföljande källkoden visar hur man skapar ett diagram, lägger till seriedata och anpassar nummerformatet för dataetiketter.
+Att skapa engagerande och informativa dokument innebär ofta att man inkluderar diagram med välformaterade dataetiketter. Om du är en .NET-utvecklare som vill förbättra dina Word-dokument med sofistikerade diagram, är Aspose.Words för .NET ett fantastiskt bibliotek som hjälper dig att uppnå det. Den här handledningen leder dig genom processen att formatera nummeretiketter i ett diagram med Aspose.Words för .NET, steg för steg.
 
-## Steg 1: Konfigurera projektet
+## Förutsättningar
 
-Se till att du har följande förutsättningar:
+Innan du dyker in i koden finns det några förutsättningar du måste ha på plats:
 
-- Aspose.Words för .NET-biblioteket installerat. Du kan ladda ner den genom att använda NuGet-pakethanteraren för att installera den.
-- En sökväg till dokumentkatalogen där utdatadokumentet kommer att sparas.
+-  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket installerat. Om du inte har installerat det än kan du göra det[ladda ner den här](https://releases.aspose.com/words/net/).
+- Utvecklingsmiljö: Du bör ha en .NET-utvecklingsmiljö inrättad. Visual Studio rekommenderas starkt.
+- Grundläggande kunskaper om C#: Bekantskap med C#-programmering är väsentligt eftersom denna handledning involverar att skriva och förstå C#-kod.
+-  Tillfällig licens: För att använda Aspose.Words utan några begränsningar kan du få en[tillfällig licens](https://purchase.aspose.com/temporary-license/).
 
-## Steg 2: Skapa ett nytt dokument och infoga ett diagram
+Låt oss nu dyka in i den steg-för-steg-process att formatera nummeretiketter i ett diagram.
 
- Skapa en ny`Document` föremål och ett`DocumentBuilder` att bygga dokumentet.
+## Importera namnområden
+
+Först och främst måste vi importera de nödvändiga namnområdena för att fungera med Aspose.Words för .NET. Lägg till följande rader överst i din C#-fil:
 
 ```csharp
-// Sökväg till din dokumentkatalog
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Steg 1: Konfigurera din dokumentkatalog
+
+Innan du kan börja manipulera ditt Word-dokument måste du ange katalogen där ditt dokument ska sparas. Detta är viktigt för att spara operationen senare.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+
+## Steg 2: Initiera Document and DocumentBuilder
+
+ Nästa steg är att initiera en ny`Document` och a`DocumentBuilder` . De`DocumentBuilder` är en hjälpklass som låter oss konstruera dokumentinnehållet.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Infoga sedan ett diagram i dokumentet med hjälp av`InsertChart` metod för`DocumentBuilder`. I det här exemplet infogar vi ett linjediagram.
+## Steg 3: Infoga ett diagram i dokumentet
+
+ Låt oss nu infoga ett diagram i dokumentet med hjälp av`DocumentBuilder`. I den här handledningen kommer vi att använda ett linjediagram som exempel.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,94 +61,74 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## Steg 3: Lägg till seriedata i diagrammet
+Här infogar vi ett linjediagram med en specifik bredd och höjd och ställer in diagrammets titel.
 
-Lägg till seriedata i diagrammet. I det här exemplet lägger vi till tre kategorier och deras motsvarande värden.
+## Steg 4: Rensa standardserier och lägg till ny serie
+
+Som standard kommer diagrammet att ha några förgenererade serier. Vi måste rensa dessa och lägga till våra egna serier med specifika datapunkter.
 
 ```csharp
+// Ta bort standardgenererade serier.
 chart.Series.Clear();
+
+// Lägg till nya serier med anpassade datapunkter.
 ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-    new string[] { "Category 1", "Category 2", "Category 3" }, 
-    new double[] { 2.5, 1.5, 3.5 });
-series1.HasDataLabels = true;
+	new string[] { "Category 1", "Category 2", "Category 3" }, 
+	new double[] { 2.5, 1.5, 3.5 });
 ```
 
-## Steg 4: Anpassa nummerformatet för dataetiketter
+## Steg 5: Aktivera dataetiketter
 
- För att formatera antalet dataetiketter, gå till`DataLabels` samling associerad med serien.
+För att visa dataetiketterna på diagrammet måste vi aktivera dem för vår serie.
 
 ```csharp
+series1.HasDataLabels = true;
 series1.DataLabels.ShowValue = true;
-series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-I det här exemplet ställer vi in olika nummerformat för varje dataetikett. Den första dataetiketten är formaterad som en valuta, den andra som ett datum och den tredje som en procentsats.
+## Steg 6: Formatera dataetiketter
 
-## Steg 5: Spara dokumentet
+Kärnan i denna handledning är att formatera dataetiketterna. Vi kan tillämpa olika nummerformat på varje dataetikett individuellt.
 
- Slutligen sparar du dokumentet i den angivna katalogen med hjälp av`Save` metod för`Document` objekt.
+```csharp
+series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Valutaformat
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Datumformat
+series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Procentformat
+```
+
+ Dessutom kan du länka en dataetiketts format till en källcell. När den är länkad,`NumberFormat` kommer att återställas till allmänt och ärvas från källcellen.
+
+```csharp
+series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
+```
+
+## Steg 7: Spara dokumentet
+
+Slutligen, spara dokumentet i den angivna katalogen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-Detta slutför implementeringen av formateringen av antalet dataetiketter i ett diagram med Aspose.Words för .NET.
-
-### Exempel på källkod för Format Number Of Data Label med Aspose.Words för .NET 
-
-```csharp
-	// Sökväg till din dokumentkatalog
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Text = "Data Labels With Different Number Format";
-	// Ta bort standardgenererade serier.
-	chart.Series.Clear();
-	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-		new string[] { "Category 1", "Category 2", "Category 3" }, 
-		new double[] { 2.5, 1.5, 3.5 });
-	series1.HasDataLabels = true;
-	series1.DataLabels.ShowValue = true;
-	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// Eller så kan du ställa in formatkod så att den länkas till en källcell,
-	// det här fallet kommer NumberFormat att återställas till allmänt och ärvas från en källcell.
-	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
-	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
-```
+Detta sparar ditt dokument med det angivna namnet och säkerställer att ditt diagram med formaterade dataetiketter bevaras.
 
 ## Slutsats
 
-I den här handledningen har du lärt dig hur du formaterar antalet dataetiketter i ett diagram med Aspose.Words för .NET. Genom att följa den steg-för-steg-guide och använda den medföljande källkoden kan du skapa ett diagram, lägga till seriedata och anpassa nummerformatet för dataetiketter enligt dina krav.
+Att formatera dataetiketter i ett diagram med Aspose.Words för .NET kan avsevärt förbättra läsbarheten och professionaliteten hos dina Word-dokument. Genom att följa denna steg-för-steg-guide bör du nu kunna skapa ett diagram, lägga till dataserier och formatera dataetiketterna för att möta dina behov. Aspose.Words för .NET är ett kraftfullt verktyg som möjliggör omfattande anpassning och automatisering av Word-dokument, vilket gör det till en ovärderlig tillgång för .NET-utvecklare.
 
- Aspose.Words för .NET tillhandahåller ett omfattande API för ordbehandling med diagram i Word-dokument, så att du kan manipulera olika aspekter av diagrammet, inklusive dataetiketter. Genom att komma åt`DataLabels` samling associerad med en serie kan du anpassa nummerformatet för individuella dataetiketter.
+## FAQ's
 
-API:et låter dig styra visningen av värden, ställa in olika talformat för varje dataetikett och länka talformatet till en källcell. Denna flexibilitet gör att du kan presentera numeriska data i diagram med önskad formatering, såsom valutasymboler, datumformat och procentvärden.
+### Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt bibliotek för att skapa, manipulera och konvertera Word-dokument programmatiskt med C#.
 
-Genom att använda Aspose.Words för .NET kan du införliva kraftfulla kartfunktioner i dina .NET-applikationer och generera professionella dokument med fullt formaterade diagram och dataetiketter.
+### Kan jag formatera andra typer av diagram med Aspose.Words för .NET?
+Ja, Aspose.Words för .NET stöder en mängd olika diagramtyper, inklusive stapel, kolumn, cirkel och mer.
 
-### Vanliga frågor
+### Hur får jag en tillfällig licens för Aspose.Words för .NET?
+ Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
-#### Q1. Vad är Aspose.Words för .NET?
-Aspose.Words för .NET är ett funktionsrikt dokumentbehandlingsbibliotek som gör det möjligt för utvecklare att skapa, manipulera och spara Word-dokument programmatiskt i .NET-applikationer. Den tillhandahåller ett brett utbud av funktioner för ordbehandling med dokumentelement, inklusive diagram och dataetiketter.
+### Är det möjligt att länka dataetiketter till källceller i Excel?
+Ja, du kan länka dataetiketter till källceller, vilket gör att talformatet kan ärvas från källcellen.
 
-#### Q2. Hur kan jag installera Aspose.Words för .NET?
-Du kan installera Aspose.Words för .NET genom att ladda ner det genom att använda NuGet-pakethanteraren i Visual Studio. Sök helt enkelt efter "Aspose.Words" i NuGet-pakethanteraren och installera det i ditt projekt.
-
-#### Q3. Kan jag formatera andra aspekter av diagrammet med Aspose.Words för .NET?
-Ja, Aspose.Words för .NET tillhandahåller omfattande möjligheter för att formatera olika aspekter av ett diagram. Förutom dataetiketter kan du anpassa diagramtyp, seriedata, axelegenskaper, förklaring, titel, plotområde och många andra element i diagrammet. API:et erbjuder finkornig kontroll över diagrammets utseende och formatering.
-
-#### Q4. Kan jag använda olika nummerformat på olika dataetiketter i samma serie?
-Ja, Aspose.Words för .NET låter dig tillämpa olika nummerformat på enskilda dataetiketter inom samma serie. Genom att komma åt`DataLabels` samling associerad med en serie kan du ställa in`FormatCode` egenskapen för varje dataetikett för att ange önskat nummerformat. Detta gör att du kan presentera numeriska värden i olika format inom samma diagram.
-
-#### F5. Kan jag använda anpassade nummerformat för dataetiketter?
- Ja, Aspose.Words för .NET stöder anpassade nummerformat för dataetiketter. Du kan ange önskat talformat genom att ställa in`FormatCode` egenskapen för en dataetikett till en anpassad formatkod. Detta ger dig flexibiliteten att använda ett brett utbud av talformat, som valutasymboler, datumformat, procentvärden och mer.
-
-#### F6. Kan jag spara diagrammet med formaterade dataetiketter i olika format?
-Ja, Aspose.Words för .NET låter dig spara dokumentet som innehåller diagrammet med formaterade dataetiketter i olika format, såsom DOCX, PDF, HTML och mer. Du kan välja lämpligt format baserat på dina krav och använda`Save` metod för`Document` objekt för att spara dokumentet. De formaterade dataetiketterna kommer att bevaras i det sparade dokumentet.
+### Var kan jag hitta mer detaljerad dokumentation för Aspose.Words för .NET?
+ Du kan hitta omfattande dokumentation[här](https://reference.aspose.com/words/net/).

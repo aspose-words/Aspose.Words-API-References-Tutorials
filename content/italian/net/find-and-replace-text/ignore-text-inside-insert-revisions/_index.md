@@ -2,196 +2,94 @@
 title: Ignora il testo all'interno delle revisioni di inserimento
 linktitle: Ignora il testo all'interno delle revisioni di inserimento
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come utilizzare la funzionalità "Ignora testo all'interno delle revisioni di inserimento" di Aspose.Words per .NET per manipolare le revisioni di inserimento nei documenti di Word.
+description: Scopri come gestire le revisioni dei documenti in modo efficace con Aspose.Words per .NET. Scopri le tecniche per ignorare il testo all'interno delle revisioni di inserimento per una modifica semplificata.
 type: docs
 weight: 10
 url: /it/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
+## introduzione
 
-In questo articolo, esploreremo il codice sorgente C# riportato sopra per comprendere come utilizzare la funzione Ignora testo all'interno di inserimento revisioni nella libreria Aspose.Words per .NET. Questa funzionalità è utile quando vogliamo ignorare il testo all'interno delle revisioni inserite durante la manipolazione dei documenti.
+In questa guida completa, approfondiremo l'utilizzo di Aspose.Words per .NET per gestire le revisioni dei documenti in modo efficace. Che tu sia uno sviluppatore o un appassionato di tecnologia, capire come ignorare il testo all'interno delle revisioni degli inserti può semplificare i flussi di lavoro di elaborazione dei documenti. Questo tutorial ti fornirà le competenze necessarie per sfruttare le potenti funzionalità di Aspose.Words per gestire le revisioni dei documenti senza problemi.
 
 ## Prerequisiti
 
-- Conoscenza base del linguaggio C#.
-- Ambiente di sviluppo .NET con libreria Aspose.Words installata.
+Prima di immergerti nel tutorial, assicurati di disporre dei seguenti prerequisiti:
+- Visual Studio installato sul tuo computer.
+- Libreria Aspose.Words per .NET integrata nel tuo progetto.
+- Conoscenza base del linguaggio di programmazione C# e del framework .NET.
 
-## Passaggio 1: creazione di un nuovo documento
+## Importa spazi dei nomi
 
- Prima di iniziare a manipolare il testo all'interno delle revisioni di inserimento, dobbiamo creare un nuovo documento utilizzando Aspose.Words per .NET. Questo può essere fatto istanziando a`Document` oggetto:
-
+Per iniziare, includi gli spazi dei nomi necessari nel tuo progetto C#:
 ```csharp
-Document doc = new Document();
+using Aspose.Words;
+using Aspose.Words.Replacing;
+using System;
+using System.Text.RegularExpressions;
 ```
 
-## Passaggio 2: inserisci il testo con il monitoraggio delle revisioni
+## Passaggio 1: crea un nuovo documento e inizia a monitorare le revisioni
 
- Una volta che abbiamo un documento, possiamo inserire testo con tracciamento delle revisioni utilizzando a`DocumentBuilder`oggetto. Ad esempio, per inserire il testo "Inserito" con tracciamento delle revisioni, possiamo utilizzare il file`StartTrackRevisions`, `Writeln` E`StopTrackRevisions` metodi:
-
+Innanzitutto, inizializza un nuovo documento e inizia a monitorare le revisioni:
 ```csharp
+Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// Inizia a monitorare le revisioni
 doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted");
+builder.Writeln("Inserted"); //Inserisci testo con revisioni di tracciamento
 doc.StopTrackRevisions();
 ```
 
-## Passaggio 3: inserisci il testo non revisionato
+## Passaggio 2: inserisci testo non rivisto
 
- Oltre al testo con tracciamento delle revisioni, possiamo anche inserire testo non rivisto utilizzando il file`DocumentBuilder` oggetto. Ad esempio, per inserire il testo "Testo" senza revisione, possiamo utilizzare il file`Write` metodo:
-
+Successivamente, inserisci il testo nel documento senza tenere traccia delle revisioni:
 ```csharp
 builder.Write("Text");
 ```
 
-## Passaggio 4: utilizzo della funzione Ignora testo all'interno di Inserisci revisioni
+## Passaggio 3: ignora il testo inserito utilizzando FindReplaceOptions
 
- Per ignorare il testo all'interno delle revisioni di inserimento nelle operazioni successive, possiamo usare a`FindReplaceOptions` oggetto e impostare il`IgnoreInserted`proprietà a`true`:
-
+Ora configura FindReplaceOptions per ignorare le revisioni inserite:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-```
 
-## Passaggio 5: utilizzo delle espressioni regolari per la ricerca e la sostituzione
-
-Per eseguire operazioni di ricerca e sostituzione sul testo del documento, utilizzeremo le espressioni regolari. Nel nostro esempio cercheremo tutte le occorrenze della lettera "e" e le sostituiremo con un asterisco "* ". Utilizzeremo .NET`Regex` classe per questo:
-
-```csharp
 Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## Passaggio 6: visualizzazione dell'output del documento modificato
+## Passaggio 4: output del testo del documento
 
- Dopo aver applicato la ricerca e sostituzione, possiamo visualizzare il contenuto modificato del documento utilizzando il file`GetText` metodo:
-
+Visualizza il testo del documento dopo aver ignorato le revisioni inserite:
 ```csharp
 Console.WriteLine(doc.GetText());
 ```
 
-## Passaggio 7: modifica delle opzioni per includere le revisioni di inserimento
+## Passaggio 5: Ripristina ignora l'opzione di testo inserito
 
-Se vogliamo includere il testo all'interno delle revisioni di inserimento nel risultato di output, possiamo modificare le opzioni per non ignorare le revisioni di inserimento. Per questo imposteremo il`IgnoreInserted`proprietà a`false`:
-
+Per ripristinare l'ignoranza del testo inserito, modificare FindReplaceOptions:
 ```csharp
 options.IgnoreInserted = false;
-```
-
-## Passaggio 8: visualizzazione del documento modificato con inserimento revisioni
-
-Dopo aver modificato le opzioni, possiamo eseguire nuovamente la ricerca e sostituzione per ottenere il risultato con il testo all'interno dell'inserto revisioni incluso:
-
-```csharp
 doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
-
-
-### Codice sorgente di esempio per Ignora testo all'interno di revisioni di inserimento utilizzando Aspose.Words per .NET
-
-Ecco il codice sorgente di esempio completo per dimostrare l'uso della funzione Ignora testo all'interno di inserimento revisioni con Aspose.Words per .NET:
-
-
-```csharp
-       
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	// Inserisci testo con revisioni di tracciamento.
-	doc.StartTrackRevisions("author", DateTime.Now);
-	builder.Writeln("Inserted");
-	doc.StopTrackRevisions();
-
-	// Inserisci testo non rivisto.
-	builder.Write("Text");
-
-	FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-
-	Regex regex = new Regex("e");
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-
-	options.IgnoreInserted = false;
-	doc.Range.Replace(regex, "*", options);
-	
-	Console.WriteLine(doc.GetText());
-   
 ```
 
 ## Conclusione
 
-In questo articolo, abbiamo esplorato il codice sorgente C# per comprendere come utilizzare la funzione Ignora testo all'interno di inserimento revisioni in Aspose.Words per .NET. Abbiamo seguito una guida passo passo per creare un documento, inserire testo con revisioni di tracciamento e testo non rivisto, utilizzando la funzione Ignora testo all'interno di Inserisci revisioni, eseguendo operazioni di ricerca e sostituzione con espressioni regolari e visualizzando il documento modificato.
+Padroneggiare la tecnica di ignorare il testo all'interno delle revisioni di inserimento con Aspose.Words per .NET migliora le capacità di modifica dei documenti. Seguendo questi passaggi, puoi gestire in modo efficace le revisioni dei tuoi documenti, garantendo chiarezza e precisione nelle attività di elaborazione del testo.
 
-### Domande frequenti
+## Domande frequenti
 
-#### D: Qual è la funzionalità "Ignora testo all'interno delle revisioni di inserimento" in Aspose.Words per .NET?
+### Come posso iniziare a tenere traccia delle revisioni in un documento Word utilizzando Aspose.Words per .NET?
+ Per iniziare a tenere traccia delle revisioni, utilizzare`doc.StartTrackRevisions(author, date)` metodo.
 
-R: La funzione "Ignora testo all'interno delle revisioni di inserimento" in Aspose.Words per .NET consente di specificare se il testo all'interno delle revisioni di inserimento deve essere ignorato durante determinate operazioni, come la ricerca e la sostituzione del testo. Quando questa funzionalità è abilitata, il testo all'interno delle revisioni di inserimento non viene considerato durante le operazioni.
+### Qual è il vantaggio di ignorare il testo inserito nelle revisioni del documento?
+Ignorare il testo inserito aiuta a mantenere l'attenzione sul contenuto principale gestendo al tempo stesso le modifiche al documento in modo efficiente.
 
-#### D: Come posso creare un nuovo documento utilizzando Aspose.Words per .NET?
+### Posso ripristinare il testo inserito ignorato all'originale in Aspose.Words per .NET?
+Sì, puoi ripristinare il testo inserito ignorato utilizzando le impostazioni FindReplaceOptions appropriate.
 
- R: Per creare un nuovo documento utilizzando Aspose.Words per .NET, puoi creare un'istanza di a`Document` oggetto. Ecco un esempio di codice C# per creare un nuovo documento:
+### Dove posso trovare ulteriore documentazione su Aspose.Words per .NET?
+ Visitare il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per guide dettagliate e riferimenti API.
 
-```csharp
-Document doc = new Document();
-```
-
-#### D: Come posso inserire testo con tracciamento delle revisioni in Aspose.Words per .NET?
-
-R: Una volta che hai un documento, puoi inserire testo con tracciamento delle revisioni utilizzando a`DocumentBuilder` oggetto. Ad esempio, per inserire il testo "Inserito" con tracciamento delle revisioni, è possibile utilizzare il file`StartTrackRevisions`, `Writeln` , E`StopTrackRevisions` metodi:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-doc.StartTrackRevisions("author", DateTime.Now);
-builder.Writeln("Inserted");
-doc.StopTrackRevisions();
-```
-
-#### D: Come posso inserire testo non revisionato in Aspose.Words per .NET?
-
- R: Oltre al testo con tracciamento delle revisioni, puoi anche inserire testo non rivisto utilizzando il file`DocumentBuilder` oggetto. Ad esempio, per inserire il testo "Testo" senza revisione, è possibile utilizzare il file`Write` metodo:
-
-```csharp
-builder.Write("Text");
-```
-
-#### D: Come posso ignorare il testo all'interno delle revisioni di inserimento in Aspose.Words per .NET?
-
- R: Per ignorare il testo all'interno delle revisioni di inserimento durante le operazioni successive, puoi utilizzare a`FindReplaceOptions` oggetto e impostare il`IgnoreInserted`proprietà a`true`:
-
-```csharp
-FindReplaceOptions options = new FindReplaceOptions { IgnoreInserted = true };
-```
-
-#### D: Come posso eseguire la ricerca e la sostituzione utilizzando le espressioni regolari in Aspose.Words per .NET?
-
- R: Per eseguire operazioni di ricerca e sostituzione sul testo del documento utilizzando le espressioni regolari, è possibile utilizzare .NET`Regex` classe. Ad esempio, per cercare tutte le occorrenze della lettera "e" e sostituirle con un asterisco "* ", puoi creare un file`Regex` oggetto e usarlo con il`Replace` metodo:
-
-```csharp
-Regex regex = new Regex("e");
-doc.Range.Replace(regex, "*", options);
-```
-
-#### D: Come posso visualizzare l'output modificato del documento in Aspose.Words per .NET?
-
- R: Dopo aver applicato le operazioni di ricerca e sostituzione, è possibile visualizzare il contenuto modificato del documento utilizzando il file`GetText` metodo:
-
-```csharp
-Console.WriteLine(doc.GetText());
-```
-
-#### D: Come posso includere le revisioni di inserimento nel risultato di output in Aspose.Words per .NET?
-
- R: Per includere il testo all'interno delle revisioni di inserimento nel risultato di output, puoi modificare le opzioni per non ignorare le revisioni di inserimento. Per questo è possibile impostare il file`IgnoreInserted` proprietà del`FindReplaceOptions` opporsi a`false`:
-
-```csharp
-options.IgnoreInserted = false;
-```
-
-#### D: Come posso visualizzare il documento modificato con le revisioni di inserimento in Aspose.Words per .NET?
-
-R: Dopo aver modificato le opzioni per includere le revisioni dell'inserto, puoi eseguire nuovamente la ricerca e sostituzione per ottenere il risultato con il testo all'interno delle revisioni dell'inserto incluse:
-
-```csharp
-doc.Range.Replace(regex, "*", options);
-Console.WriteLine(doc.GetText());
-```
+### Esiste un forum della community per discutere delle query relative ad Aspose.Words per .NET?
+ Sì, puoi visitare il[Forum Aspose.Words](https://forum.aspose.com/c/words/8) per il supporto e le discussioni della comunità.

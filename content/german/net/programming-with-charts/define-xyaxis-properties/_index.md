@@ -2,24 +2,40 @@
 title: Definieren von XY-Achseneigenschaften in einem Diagramm
 linktitle: Definieren von XY-Achseneigenschaften in einem Diagramm
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET XY-Achseneigenschaften in einem Diagramm definieren. Anpassungsoptionen für die X- und Y-Achsen werden demonstriert.
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET XY-Achseneigenschaften in einem Diagramm definieren. Perfekt für .NET-Entwickler.
 type: docs
 weight: 10
 url: /de/net/programming-with-charts/define-xyaxis-properties/
 ---
+## Einführung
 
-In diesem Tutorial wird erklärt, wie Sie mit Aspose.Words für .NET Eigenschaften für die X- und Y-Achsen in einem Diagramm definieren. Der bereitgestellte Quellcode zeigt, wie Sie ein Diagramm erstellen, Seriendaten hinzufügen und die Achseneigenschaften anpassen.
+Diagramme sind ein leistungsstarkes Tool zur Visualisierung von Daten. Wenn Sie professionelle Dokumente mit dynamischen Diagrammen erstellen müssen, ist Aspose.Words für .NET eine unschätzbar wertvolle Bibliothek. Dieser Artikel führt Sie durch den Prozess der Definition von XY-Achseneigenschaften in einem Diagramm mit Aspose.Words für .NET und schlüsselt jeden Schritt auf, um Klarheit und Verständlichkeit zu gewährleisten.
 
-## Schritt 1: Einrichten des Projekts
+## Voraussetzungen
 
-Stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+Bevor Sie mit der Codierung beginnen, müssen einige Voraussetzungen erfüllt sein:
 
-- Aspose.Words für die .NET-Bibliothek installiert. Sie können sie mit dem NuGet-Paketmanager herunterladen und installieren.
-- Ein Dokumentverzeichnispfad, in dem das Ausgabedokument gespeichert wird.
+1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Sie benötigen eine integrierte Entwicklungsumgebung (IDE) wie Visual Studio.
+3. .NET Framework: Stellen Sie sicher, dass Ihre Entwicklungsumgebung für die .NET-Entwicklung eingerichtet ist.
+4. Grundkenntnisse in C#: Diese Anleitung setzt voraus, dass Sie über grundlegende Kenntnisse der C#-Programmierung verfügen.
 
-## Schritt 2: Neues Dokument erstellen und Diagramm einfügen
+## Namespaces importieren
 
- Erstelle eine neue`Document` Objekt und ein`DocumentBuilder` um das Dokument zu erstellen.
+Zunächst müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren. Dadurch wird sichergestellt, dass Sie Zugriff auf alle Klassen und Methoden haben, die zum Erstellen und Bearbeiten von Dokumenten und Diagrammen erforderlich sind.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Wir unterteilen den Prozess in einfache Schritte, von denen sich jeder auf einen bestimmten Teil der Definition der XY-Achseneigenschaften in einem Diagramm konzentriert.
+
+## Schritt 1: Initialisieren Sie das Dokument und den DocumentBuilder
+
+ Zuerst müssen Sie ein neues Dokument initialisieren und ein`DocumentBuilder` Objekt. Das`DocumentBuilder` hilft beim Einfügen von Inhalten in das Dokument.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -29,48 +45,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Fügen Sie als nächstes ein Diagramm in das Dokument ein, indem Sie`InsertChart` Methode der`DocumentBuilder`. In diesem Beispiel fügen wir ein Flächendiagramm ein.
+## Schritt 2: Einfügen eines Diagramms
+
+Als Nächstes fügen Sie ein Diagramm in das Dokument ein. In diesem Beispiel verwenden wir ein Flächendiagramm. Sie können die Abmessungen des Diagramms nach Bedarf anpassen.
 
 ```csharp
+// Diagramm einfügen
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Schritt 3: Seriendaten zum Diagramm hinzufügen
+## Schritt 3: Standardserien löschen und benutzerdefinierte Daten hinzufügen
 
-Fügen Sie dem Diagramm Reihendaten hinzu. In diesem Beispiel fügen wir fünf Datenpunkte mit entsprechenden Daten und Werten hinzu.
+Standardmäßig enthält das Diagramm einige vordefinierte Reihen. Wir löschen diese und fügen unsere benutzerdefinierten Datenreihen hinzu.
 
 ```csharp
 chart.Series.Clear();
 chart.Series.Add("Aspose Series 1",
-    new DateTime[]
-    {
-        new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-        new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-    },
-    new double[] { 640, 320, 280, 120, 150 });
+	new DateTime[]
+	{
+		new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
+		new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
+	},
+	new double[] { 640, 320, 280, 120, 150 });
 ```
 
-## Schritt 4: X- und Y-Achseneigenschaften anpassen
+## Schritt 4: Definieren Sie die Eigenschaften der X-Achse
 
- Um die Eigenschaften der X- und Y-Achse anzupassen, rufen Sie die`ChartAxis` Objekte, die mit dem Diagramm verknüpft sind.
+Nun ist es an der Zeit, die Eigenschaften für die X-Achse zu definieren. Dazu gehört das Festlegen des Kategorietyps, das Anpassen der Achsenkreuzung sowie das Anpassen von Teilstrichen und Beschriftungen.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
-ChartAxis yAxis = chart.AxisY;
-```
-
- Ändern Sie die Eigenschaften des`xAxis` Und`yAxis`Objekte, um die gewünschten Optionen für die X- und Y-Achsen einzustellen. In diesem Beispiel demonstrieren wir einige allgemeine Eigenschaften, die angepasst werden können.
-
-```csharp
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3;
+xAxis.CrossesAt = 3; //Gemessen in Anzeigeeinheiten der Y-Achse (Hunderter).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
 xAxis.TickLabelOffset = 200;
+```
 
+## Schritt 5: Definieren Sie die Eigenschaften der Y-Achse
+
+Auf ähnliche Weise legen Sie die Eigenschaften für die Y-Achse fest. Dazu gehört das Festlegen der Position der Teilstrichbeschriftung, der Haupt- und Nebeneinheiten, der Anzeigeeinheit und der Skalierung.
+
+```csharp
+ChartAxis yAxis = chart.AxisY;
 yAxis.TickLabelPosition = AxisTickLabelPosition.High;
 yAxis.MajorUnit = 100;
 yAxis.MinorUnit = 50;
@@ -79,78 +99,31 @@ yAxis.Scaling.Minimum = new AxisBound(100);
 yAxis.Scaling.Maximum = new AxisBound(700);
 ```
 
-## Schritt 5: Speichern Sie das Dokument
+## Schritt 6: Speichern Sie das Dokument
 
- Speichern Sie das Dokument abschließend im angegebenen Verzeichnis mit dem`Save` Methode der`Document` Objekt.
+Speichern Sie das Dokument abschließend im angegebenen Verzeichnis. Dadurch wird das Word-Dokument mit dem angepassten Diagramm erstellt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 ```
 
-Damit ist die Implementierung der Definition von XY-Achseneigenschaften in einem Diagramm mit Aspose.Words für .NET abgeschlossen.
-
-### Beispielquellcode zum Definieren von XYAxis-Eigenschaften mit Aspose.Words für .NET 
-
-```csharp
-	// Pfad zu Ihrem Dokumentverzeichnis
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	// Diagramm einfügen
-	Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new DateTime[]
-		{
-			new DateTime(2002, 01, 01), new DateTime(2002, 06, 01), new DateTime(2002, 07, 01),
-			new DateTime(2002, 08, 01), new DateTime(2002, 09, 01)
-		},
-		new double[] { 640, 320, 280, 120, 150 });
-	ChartAxis xAxis = chart.AxisX;
-	ChartAxis yAxis = chart.AxisY;
-	// Ändern Sie die X-Achse so, dass sie die Kategorie statt des Datums anzeigt, sodass alle Punkte in gleichen Abständen auf der X-Achse platziert werden.
-	xAxis.CategoryType = AxisCategoryType.Category;
-	xAxis.Crosses = AxisCrosses.Custom;
-	xAxis.CrossesAt = 3; //Gemessen in Anzeigeeinheiten der Y-Achse (Hunderter).
-	xAxis.ReverseOrder = true;
-	xAxis.MajorTickMark = AxisTickMark.Cross;
-	xAxis.MinorTickMark = AxisTickMark.Outside;
-	xAxis.TickLabelOffset = 200;
-	yAxis.TickLabelPosition = AxisTickLabelPosition.High;
-	yAxis.MajorUnit = 100;
-	yAxis.MinorUnit = 50;
-	yAxis.DisplayUnit.Unit = AxisBuiltInUnit.Hundreds;
-	yAxis.Scaling.Minimum = new AxisBound(100);
-	yAxis.Scaling.Maximum = new AxisBound(700);
-	doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
-```
-
 ## Abschluss
 
-In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET Eigenschaften für die X- und Y-Achsen in einem Diagramm definieren. Indem Sie der Schritt-für-Schritt-Anleitung folgen, können Sie ein Diagramm erstellen, Reihendaten hinzufügen und die Achseneigenschaften an Ihre spezifischen Anforderungen anpassen. Aspose.Words für .NET bietet eine umfassende API für die Textverarbeitung mit Diagrammen in Word-Dokumenten, sodass Sie verschiedene Aspekte des Diagramms, einschließlich der Achsen, bearbeiten können.
+Das Erstellen und Anpassen von Diagrammen in Word-Dokumenten mit Aspose.Words für .NET ist unkompliziert, wenn Sie die erforderlichen Schritte verstanden haben. Diese Anleitung hat Sie durch den Prozess der Definition von XY-Achseneigenschaften in einem Diagramm geführt, vom Initialisieren des Dokuments bis zum Speichern des Endprodukts. Mit diesen Fähigkeiten können Sie detaillierte, professionell aussehende Diagramme erstellen, die Ihre Dokumente aufwerten.
 
-Durch den Zugriff auf die`ChartAxis` Objekte, die mit dem Diagramm verknüpft sind, können Sie Eigenschaften wie Kategorietyp, Achsenkreuze, Teilstriche, Beschriftungspositionen, Skalierung und mehr ändern. Dank dieser Flexibilität können Sie das Erscheinungsbild und Verhalten der Diagrammachsen anpassen, um Ihre Daten effektiv darzustellen.
+## Häufig gestellte Fragen
 
-Durch die Verwendung von Aspose.Words für .NET können Sie Funktionen zur Diagrammerstellung und -anpassung nahtlos in Ihre .NET-Anwendungen integrieren und die Erstellung professionell aussehender Dokumente mit umfangreichen Visualisierungen automatisieren.
+### Welche Arten von Diagrammen kann ich mit Aspose.Words für .NET erstellen?
+Sie können verschiedene Diagrammtypen erstellen, darunter Flächen-, Balken-, Linien-, Kreisdiagramme und mehr.
 
-### FAQs
+### Wie installiere ich Aspose.Words für .NET?
+ Sie können Aspose.Words für .NET herunterladen von[Hier](https://releases.aspose.com/words/net/) und befolgen Sie die bereitgestellten Installationsanweisungen.
 
-#### F1. Was ist Aspose.Words für .NET?
-Aspose.Words für .NET ist eine leistungsstarke Dokumentverarbeitungsbibliothek, mit der Entwickler Word-Dokumente programmgesteuert in .NET-Anwendungen erstellen, bearbeiten und speichern können. Es bietet eine breite Palette von Funktionen für die Textverarbeitung mit Dokumentelementen, einschließlich Diagrammen.
+### Kann ich das Erscheinungsbild meiner Diagramme anpassen?
+Ja, Aspose.Words für .NET ermöglicht eine umfassende Anpassung von Diagrammen, einschließlich Farben, Schriftarten und Achseneigenschaften.
 
-#### F2. Wie kann ich Aspose.Words für .NET installieren?
-Sie können Aspose.Words für .NET installieren, indem Sie es mithilfe des NuGet-Paketmanagers in Visual Studio herunterladen. Suchen Sie einfach im NuGet-Paketmanager nach „Aspose.Words“ und installieren Sie es in Ihrem Projekt.
+### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?
+ Ja, Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/).
 
-#### F3. Kann ich mit Aspose.Words für .NET andere Aspekte des Diagramms anpassen?
-Ja, Aspose.Words für .NET bietet umfangreiche Möglichkeiten zum Anpassen verschiedener Aspekte eines Diagramms. Neben der Definition der Achseneigenschaften können Sie Diagrammtyp, Datenreihen, Legende, Titel, Plotbereich, Datenbeschriftungen und viele andere Elemente des Diagramms ändern. Die API bietet eine detaillierte Kontrolle über das Erscheinungsbild und Verhalten des Diagramms.
-
-#### F4. Kann ich mit Aspose.Words für .NET verschiedene Diagrammtypen erstellen?
- Ja, Aspose.Words für .NET unterstützt eine Vielzahl von Diagrammtypen, darunter Flächen-, Balken-, Linien-, Kreis-, Streudiagramme und mehr. Sie können das`ChartType` Aufzählung zum Angeben des gewünschten Diagrammtyps beim Einfügen einer Diagrammform in ein Word-Dokument.
-
-#### F5. Kann ich das Diagramm in verschiedenen Formaten speichern?
-Ja, Aspose.Words für .NET ermöglicht es Ihnen, das Dokument mit dem Diagramm in verschiedenen Formaten zu speichern, z. B. DOCX, PDF, HTML und mehr. Sie können das geeignete Format entsprechend Ihren Anforderungen auswählen und das`Save` Methode der`Document` Objekt, um das Dokument zu speichern.
-
-#### F6. Kann ich diese Techniken auf mehrere Diagramme in einem Dokument anwenden?
- Ja, Sie können diese Techniken auf mehrere Diagramme in einem Dokument anwenden, indem Sie die erforderlichen Schritte für jedes Diagramm wiederholen. Sie können separate`Chart` Und`ChartAxis` Objekte für jedes Diagramm und passen Sie deren Eigenschaften entsprechend an. Aspose.Words für .NET bietet vollständige Unterstützung für die Textverarbeitung mit mehreren Diagrammen in einem einzigen Dokument.
+### Wo finde ich weitere Tutorials und Dokumentationen?
+ Weitere Tutorials und ausführliche Dokumentation finden Sie auf der[Aspose.Words für .NET-Dokumentationsseite](https://reference.aspose.com/words/net/).

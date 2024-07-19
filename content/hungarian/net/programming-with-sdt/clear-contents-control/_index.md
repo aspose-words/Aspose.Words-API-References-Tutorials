@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Töltse be a dokumentumot, és szerezze be a StructuredDocumentTag-et
- Töltse be a Word dokumentumot a`Document` konstruktor, paraméterként átadva a dokumentum elérési útját. Ezután szerezze be a kívántat`StructuredDocumentTag` a dokumentumból. Ebben a példában feltételezzük, hogy az SDT a dokumentum első gyermekcsomópontja.
+ Töltse be a Word dokumentumot a`Document` konstruktor, paraméterként átadva a dokumentum elérési útját. Ezután szerezze be a kívántat`StructuredDocumentTag` dokumentumból. Ebben a példában feltételezzük, hogy az SDT a dokumentum első gyermekcsomópontja.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## 4. lépés: Mentse el a dokumentumot
- Mentse el a módosított dokumentumot a`Save`módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithSdt.ClearContentsControl.doc" néven mentjük.
+ Mentse el a módosított dokumentumot a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithSdt.ClearContentsControl.doc" néven mentjük.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

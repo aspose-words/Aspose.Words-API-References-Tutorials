@@ -40,7 +40,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: acceda a la sección actual
 
-A continuación, acceda a la sección actual del documento donde desea copiar los encabezados y pies de página.
+continuación, acceda a la sección actual del documento donde desea copiar los encabezados y pies de página.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Paso 2: acceda a la sección actual
 
-Recuperamos la sección actual usando`builder.CurrentSection`. Esta sección será el destino donde copiaremos los encabezados y pies de página de la sección anterior.
+ Recuperamos la sección actual usando`builder.CurrentSection`Esta sección será el destino donde copiaremos los encabezados y pies de página de la sección anterior.
 
 ### Paso 3: definir la sección anterior
 

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_strict/
 ---
 
-W tym samouczku przyjrzymy się kodowi źródłowemu C# dostarczonemu w celu zapewnienia zgodności z Ooxml Iso 29500_2008_Strict podczas zapisywania dokumentu przy użyciu Aspose.Words dla .NET. Ta funkcja zapewnia, że wygenerowany dokument jest zgodny ze specyfikacjami ISO 29500_2008_Strict.
+W tym samouczku przyjrzymy się kodowi źródłowemu C# dostarczonemu w celu zapewnienia zgodności z Ooxml Iso 29500_2008_Strict podczas zapisywania dokumentu przy użyciu Aspose.Words dla .NET. Ta funkcja gwarantuje, że wygenerowany dokument będzie zgodny ze specyfikacjami ISO 29500_2008_Strict.
 
 ## Krok 1: Konfigurowanie środowiska
 
@@ -33,7 +33,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- W tym kroku konfigurujemy opcje zapisywania OOXML za pomocą pliku`OptimizeFor` I`OoxmlSaveOptions` metody. Optymalizujemy kompatybilność dokumentów dla wersji Word 2016 za pomocą`OptimizeFor` ustaw zgodność na`Iso29500_2008_Strict` za pomocą`Compliance`.
+ W tym kroku konfigurujemy opcje zapisywania OOXML za pomocą pliku`OptimizeFor`I`OoxmlSaveOptions` metody. Optymalizujemy kompatybilność dokumentów dla wersji Word 2016 za pomocą`OptimizeFor` ustaw zgodność na`Iso29500_2008_Strict` za pomocą`Compliance`.
 
 ## Krok 4: Zapisywanie dokumentu z zachowaniem zgodności Ooxml Iso 29500_2008_Strict
 

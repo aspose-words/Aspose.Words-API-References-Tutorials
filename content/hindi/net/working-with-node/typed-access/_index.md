@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // तालिका की पहली पंक्ति तक त्वरित एवं टाइप की गई पहुंच।
+     //तालिका की पहली पंक्ति तक त्वरित एवं टाइप की गई पहुंच।
      table.FirstRow?.Remove();
 
      // तालिका की अंतिम पंक्ति तक त्वरित एवं टाइप की गई पहुंच।
@@ -69,7 +69,7 @@ TableCollection tables = body.Tables;
 
 foreach (Table table in tables)
 {
-	// तालिका की प्रथम पंक्ति तक त्वरित टाइप पहुंच।
+	// तालिका की पहली पंक्ति तक त्वरित टाइप पहुंच।
 	table.FirstRow?.Remove();
 
 	// तालिका की अंतिम पंक्ति तक त्वरित टाइप पहुंच।

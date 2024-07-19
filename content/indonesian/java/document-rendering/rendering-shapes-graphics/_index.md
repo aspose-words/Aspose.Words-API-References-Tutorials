@@ -139,7 +139,7 @@ Menyempurnakan dokumen Anda dengan bentuk dan grafik dapat meningkatkan daya tar
 
 ### Bagaimana cara mengubah ukuran bentuk di dokumen saya?
 
- Untuk mengubah ukuran bentuk, gunakan`setWidth` Dan`setHeight` metode pada objek bentuk. Misalnya, untuk membuat bentuk dengan lebar 150 piksel dan tinggi 75 piksel:
+ Untuk mengubah ukuran bentuk, gunakan`setWidth`Dan`setHeight` metode pada objek bentuk. Misalnya, untuk membuat bentuk dengan lebar 150 piksel dan tinggi 75 piksel:
 
 ```java
 shape.setWidth(150);

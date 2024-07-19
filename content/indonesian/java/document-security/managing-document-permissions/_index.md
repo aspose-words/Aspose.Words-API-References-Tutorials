@@ -26,7 +26,7 @@ Sekarang setelah Aspose.Words untuk Java aktif dan berjalan, mari kita jelajahi 
 
 ## Memahami Izin Dokumen
 
-Sebelum Anda dapat mengelola izin dokumen, penting untuk memahami berbagai aspek keamanan dokumen. Aspose.Words untuk Java menyediakan serangkaian fitur untuk mengontrol siapa yang dapat mengakses dan memodifikasi dokumen Anda. Mari kita uraikan konsep-konsep utamanya:
+Sebelum Anda dapat mengelola izin dokumen, penting untuk memahami berbagai aspek keamanan dokumen. Aspose.Words untuk Java menyediakan serangkaian fitur untuk mengontrol siapa yang dapat mengakses dan mengubah dokumen Anda. Mari kita uraikan konsep-konsep utamanya:
 
 - Perlindungan Dokumen: Aspose.Words untuk Java memungkinkan Anda melindungi dokumen dengan kata sandi. Hanya pengguna dengan kata sandi yang benar yang dapat membuka dan mengedit dokumen.
 

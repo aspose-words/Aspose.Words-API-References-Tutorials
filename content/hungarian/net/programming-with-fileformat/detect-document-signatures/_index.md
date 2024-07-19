@@ -8,7 +8,7 @@ weight: 10
 url: /hu/net/programming-with-fileformat/detect-document-signatures/
 ---
 
-Ez a cikk lépésről lépésre ismerteti a Digital Signature on Word-dokumentum észlelési szolgáltatásának használatát az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan lehet felismerni a digitális aláírásokat egy dokumentumban.
+Ez a cikk lépésről lépésre bemutatja a Digital Signature on Word dokumentumészlelési funkciójának használatát az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan lehet felismerni a digitális aláírásokat egy dokumentumban.
 
 Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
 
@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: A digitális aláírások észlelése
 
- Ezután használjuk a`DetectFileFormat` módszere a`FileFormatUtil` osztályt a fájlformátum információinak észleléséhez. Ebben a példában feltételezzük, hogy a dokumentum neve "Digitálisan aláírt.docx", és a megadott dokumentumkönyvtárban található.
+ Ezután használjuk a`DetectFileFormat` módszere a`FileFormatUtil`osztályt a fájlformátum információinak észleléséhez. Ebben a példában feltételezzük, hogy a dokumentum neve "Digitálisan aláírt.docx", és a megadott dokumentumkönyvtárban található.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,9 +68,9 @@ Ez az oktatóanyag lépésről lépésre bemutatja, hogyan észlelheti a digitá
 
 #### Hogyan lehet felismerni a digitális aláírás jelenlétét egy Word dokumentumon az Aspose.Words for .NET használatával?
 
- Ha az Aspose.Words for .NET használatával észleli a digitális aláírás jelenlétét egy Word-dokumentumban, kövesse az oktatóanyagban található lépéseket. Használni a`DetectFileFormat` módszere a`FileFormatUtil` osztály lehetővé teszi a fájlformátum információinak észlelését. Ezután ellenőrizheti a`HasDigitalSignature` tulajdona a`FileFormatInfo`objektum annak meghatározására, hogy a dokumentum tartalmaz-e digitális aláírást. Ha a rendszer digitális aláírást észlel, megjeleníthet egy üzenetet, amely szerint az aláírások elvesznek, ha a dokumentumot az Aspose.Words segítségével megnyitják/mentik.
+ Ha az Aspose.Words for .NET használatával észleli a digitális aláírás jelenlétét egy Word-dokumentumban, kövesse az oktatóanyagban található lépéseket. Használni a`DetectFileFormat` módszere a`FileFormatUtil` osztály lehetővé teszi a fájlformátum információinak észlelését. Ezután ellenőrizheti a`HasDigitalSignature` tulajdona a`FileFormatInfo` objektum annak meghatározására, hogy a dokumentum tartalmaz-e digitális aláírást. Ha a rendszer digitális aláírást észlel, megjeleníthet egy üzenetet, amely szerint az aláírások elvesznek, ha a dokumentumot az Aspose.Words segítségével megnyitják/mentik.
 
-#### Hogyan lehet megadni azt a könyvtárat, amely a digitális aláírást keresendő dokumentumokat tartalmazza?
+#### Hogyan lehet megadni a könyvtárat, amely azokat a dokumentumokat tartalmazza, amelyekben a digitális aláírást kell keresni?
 
  A digitális aláírást keresni kívánt dokumentumokat tartalmazó könyvtár megadásához módosítania kell a`dataDir` változó a kódban. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
 

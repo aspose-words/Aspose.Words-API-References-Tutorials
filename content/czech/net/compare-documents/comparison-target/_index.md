@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Krok 3: Vložte své dokumenty
 
-Dobře, je čas načíst dokumenty, které chcete porovnat. Budete potřebovat cesty k těmto dokumentům. Předpokládejme, že máte dva dokumenty:`DocumentA.docx` a`DocumentB.docx`.
+Dobře, je čas načíst dokumenty, které chcete porovnat. Budete potřebovat cesty k těmto dokumentům. Předpokládejme, že máte dva dokumenty:`DocumentA.docx`a`DocumentB.docx`.
 
 ```csharp
 // Cesta k adresáři dokumentů.

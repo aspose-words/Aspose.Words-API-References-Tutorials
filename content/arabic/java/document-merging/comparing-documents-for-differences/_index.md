@@ -36,11 +36,11 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- يستبدل`"original_document.docx"` و`"modified_document.docx"` مع المسارات إلى المستندات الخاصة بك.
+ يستبدل`"original_document.docx"`و`"modified_document.docx"` مع المسارات إلى المستندات الخاصة بك.
 
 ## الخطوة 2: مقارنة المستندات
 
-الآن بعد أن قمت بتحميل المستندات، حان الوقت لمقارنتها. يوفر Aspose.Words طريقة مناسبة لمقارنة المستندات. وإليك كيف يمكنك القيام بذلك:
+الآن بعد أن قمت بتحميل المستندات، حان الوقت لمقارنتها. يوفر Aspose.Words طريقة ملائمة لمقارنة المستندات. وإليك كيف يمكنك القيام بذلك:
 
 ```java
 // قارن بين الوثيقتين
@@ -85,4 +85,4 @@ comparer.save("comparison_result.docx");
 
 ### هل هناك نسخة تجريبية من Aspose.Words متاحة للاختبار؟
 
-نعم، يمكنك طلب نسخة تجريبية مجانية من Aspose.Words for Java من الموقع الإلكتروني. يتيح لك ذلك استكشاف ميزاته وإمكانياته قبل إجراء عملية الشراء.
+نعم، يمكنك طلب نسخة تجريبية مجانية من Aspose.Words for Java من موقع الويب. يتيح لك ذلك استكشاف ميزاته وإمكانياته قبل إجراء عملية الشراء.

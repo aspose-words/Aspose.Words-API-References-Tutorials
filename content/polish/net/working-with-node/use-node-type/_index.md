@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## Krok 3: Uzyskaj typ węzła dokumentu
- Aby uzyskać typ węzła dokumentu, używamy metody`NodeType` nieruchomość.
+Aby uzyskać typ węzła dokumentu, używamy metody`NodeType` nieruchomość.
 
 ```csharp
 NodeType type = doc.NodeType;

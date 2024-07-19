@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Dodawanie nagłówków i stopek do tabel:
 
- Tabele mogą zyskać na nagłówkach i stopkach, które dostarczają kontekstu lub dodatkowych informacji. Możesz dodawać nagłówki i stopki do tabel za pomocą`Table.title` I`Table.description` nieruchomości.
+ Tabele mogą zyskać na nagłówkach i stopkach, które dostarczają kontekstu lub dodatkowych informacji. Możesz dodawać nagłówki i stopki do tabel za pomocą`Table.title`I`Table.description` nieruchomości.
 
 ```python
 # Set table title (header)

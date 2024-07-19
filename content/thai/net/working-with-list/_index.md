@@ -13,6 +13,6 @@ url: /th/net/working-with-list/
  ## บทช่วยสอน
 | ชื่อ | คำอธิบาย |
 | --- | --- |
-| [เริ่มรายการใหม่ในแต่ละส่วน](./restart-list-at-each-section/)  | เรียนรู้วิธีรีเซ็ตรายการลำดับเลขไปยังแต่ละส่วนในเอกสาร Word ด้วย Aspose.Words สำหรับ .NET |
+| [เริ่มรายการใหม่ในแต่ละส่วน](./restart-list-at-each-section/)  | เรียนรู้วิธีรีเซ็ตรายการลำดับเลขไปยังแต่ละส่วนในเอกสาร Word ด้วย Aspose.Words for .NET |
 | [ระบุระดับรายการ](./specify-list-level/) | เรียนรู้วิธีระบุระดับรายการในเอกสาร Word ด้วย Aspose.Words for .NET |
 | [รีสตาร์ทหมายเลขรายการ](./restart-list-number/) | เรียนรู้วิธีรีเซ็ตหมายเลขของรายการในเอกสาร Word ด้วย Aspose.Words for .NET |

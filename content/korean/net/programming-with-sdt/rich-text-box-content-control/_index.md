@@ -17,7 +17,7 @@ url: /ko/net/programming-with-sdt/rich-text-box-content-control/
 - C# 및 Word 문서를 사용한 단어 처리에 대한 기본 지식.
 
 ## 1단계: 문서 디렉터리 설정
- 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
+ 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,7 +43,7 @@ para.Runs.Add(run);
 ```
 
 ## 4단계: 콘텐츠 컨트롤에 서식 있는 텍스트 콘텐츠 추가
-서식 있는 텍스트 콘텐츠가 포함된 단락을`ChildNodes` 서식 있는 텍스트 상자 콘텐츠 컨트롤의 컬렉션입니다.
+ 서식 있는 텍스트 콘텐츠가 포함된 단락을`ChildNodes` 서식 있는 텍스트 상자 콘텐츠 컨트롤의 컬렉션입니다.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);

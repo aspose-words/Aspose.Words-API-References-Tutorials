@@ -2,139 +2,116 @@
 title: Creazione e firma di una nuova riga di firma
 linktitle: Creazione e firma di una nuova riga di firma
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come creare e firmare una nuova riga della firma in un documento Word con Aspose.Words per .NET.
+description: Scopri come creare e firmare digitalmente una riga di firma in un documento Word utilizzando Aspose.Words per .NET con questo tutorial passo passo. Perfetto per l'automazione dei documenti.
 type: docs
 weight: 10
 url: /it/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
-In questo tutorial, ti guideremo attraverso i passaggi per utilizzare la funzionalità di creazione e firma di una nuova riga di firma con Aspose.Words per .NET. Questa funzionalità ti consente di inserire una riga per la firma in un documento Word, impostare opzioni personalizzate e firmare il documento. Seguire i passaggi seguenti:
+## introduzione
 
-## Passaggio 1: creazione del documento e del generatore
+Ehilà! Quindi, hai un documento Word e devi aggiungere una riga per la firma e quindi firmarlo digitalmente. Sembra complicato? Affatto! Grazie ad Aspose.Words per .NET, puoi raggiungere questo obiettivo senza problemi con solo poche righe di codice. In questo tutorial ti guideremo attraverso l'intero processo, dalla configurazione del tuo ambiente al salvataggio del tuo documento con una nuova firma brillante. Pronto? Immergiamoci!
 
-Inizia creando un'istanza della classe Document e un oggetto DocumentBuilder:
+## Prerequisiti
+
+Prima di addentrarci nel codice, assicuriamoci di avere tutto ciò di cui hai bisogno:
+1.  Aspose.Words per .NET - Puoi[scaricalo qui](https://releases.aspose.com/words/net/).
+2. Si consiglia vivamente un ambiente di sviluppo .NET: Visual Studio.
+3. Un documento da firmare: crea un semplice documento Word o utilizzane uno esistente.
+4.  Un file di certificato: è necessario per le firme digitali. Puoi usare a`.pfx` file.
+5. Immagini per la riga della firma: facoltativamente, un file immagine per la firma.
+
+## Importa spazi dei nomi
+
+Per prima cosa dobbiamo importare gli spazi dei nomi necessari. Questo passaggio è cruciale in quanto configura l'ambiente per l'utilizzo delle funzionalità Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+using Aspose.Words.Signing;
+```
+
+## Passaggio 1: impostazione della directory dei documenti
+
+Ogni progetto ha bisogno di un buon inizio. Impostiamo il percorso della directory dei documenti. Qui è dove i tuoi documenti verranno salvati e recuperati.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Passaggio 2: creazione di un nuovo documento
+
+Ora creiamo un nuovo documento Word utilizzando Aspose.Words. Questa sarà la nostra tela in cui aggiungeremo la riga della firma.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 2: inserimento della riga della firma
+## Passaggio 3: inserimento della riga della firma
 
-Utilizza il metodo InsertSignatureLine() dell'oggetto DocumentBuilder per inserire una nuova riga della firma nel documento:
+ Qui è dove avviene la magia. Inseriamo una riga di firma nel nostro documento utilizzando il file`DocumentBuilder` classe.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## Passaggio 3: salva il documento
+## Passaggio 4: salvataggio del documento con la riga della firma
 
-Salva il documento modificato:
+Una volta posizionata la riga della firma, dobbiamo salvare il documento. Questo è un passaggio intermedio prima di procedere alla firma.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-Assicurati di specificare il percorso e il nome file corretti per salvare il documento.
+## Passaggio 5: impostazione delle opzioni di firma
 
-## Passaggio 4: firma del documento
-
-Per firmare il documento è necessario impostare le opzioni di firma e utilizzare la classe DigitalSignatureUtil:
+Ora impostiamo le opzioni per firmare il documento. Ciò include la specifica dell'ID della riga della firma e dell'immagine da utilizzare.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-	SignatureLineId = signatureLine.Id,
-	SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes(dataDir + "Enhanced Windows MetaFile.emf")
 };
-
-CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-
-DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-	dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
 ```
 
-Assicurati di specificare i percorsi corretti per il documento, l'immagine della riga della firma e il documento firmato.
+## Passaggio 6: caricamento del certificato
 
-### Codice sorgente di esempio per la creazione e la firma di una nuova riga di firma utilizzando Aspose.Words per .NET
-
-Ecco il codice sorgente completo per creare e firmare una nuova riga di firma con Aspose.Words per .NET:
+Le firme digitali richiedono un certificato. Qui carichiamo il file del certificato che verrà utilizzato per firmare il documento.
 
 ```csharp
-
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
-	
-	doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(MyDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
-		dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
-
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-Seguendo questi passaggi, sarai in grado di creare e firmare facilmente una nuova riga di firma nel tuo documento Word con Aspose.Words per .NET.
+## Passaggio 7: firma del documento
+
+ Questo è il passo finale. Noi usiamo il`DigitalSignatureUtil`classe per firmare il documento. Il documento firmato viene salvato con un nuovo nome.
+
+```csharp
+DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
+    dataDir + "SignDocuments.NewSignatureLine.docx", certHolder, signOptions);
+```
 
 ## Conclusione
 
-In questo tutorial, abbiamo imparato come creare e firmare una nuova riga della firma in un documento Word utilizzando Aspose.Words per .NET. Seguendo i passaggi forniti, puoi facilmente inserire una riga per la firma nel documento, personalizzarne le opzioni e firmare il documento utilizzando un certificato digitale. L'aggiunta di linee di firma e firme digitali ai tuoi documenti ne migliora l'autenticità e l'integrità, rendendoli più sicuri e affidabili. Aspose.Words per .NET fornisce una potente API per l'elaborazione di parole con firme e certificati digitali nei documenti Word, consentendoti di automatizzare il processo di firma e garantire la validità dei tuoi documenti.
+E il gioco è fatto! Con questi passaggi, hai creato con successo un nuovo documento Word, aggiunto una riga della firma e firmato digitalmente utilizzando Aspose.Words per .NET. È uno strumento potente che rende l'automazione dei documenti un gioco da ragazzi. Che tu abbia a che fare con contratti, accordi o qualsiasi documento formale, questo metodo garantisce che siano firmati e autenticati in modo sicuro.
 
-### Domande frequenti
+## Domande frequenti
 
-#### D: Cos'è una riga della firma in un documento di Word?
+### Posso utilizzare altri formati di immagine per la riga della firma?
+Sì, puoi utilizzare vari formati di immagine come PNG, JPG, BMP, ecc.
 
-R: Una riga della firma in un documento Word è un segnaposto che indica dove deve essere posizionata la firma. In genere include il nome, il titolo e la data e fornisce spazio per una firma scritta a mano o digitale.
+###  È necessario utilizzare a`.pfx` file for the certificate?
+ Sì un`.pfx` file è un formato comune per l'archiviazione di informazioni crittografiche inclusi certificati e chiavi private.
 
-#### D: Come posso creare una riga della firma in un documento Word utilizzando Aspose.Words per .NET?
+### Posso aggiungere più righe di firma in un singolo documento?
+Assolutamente! È possibile inserire più righe di firma ripetendo il passaggio di inserimento per ciascuna firma.
 
-R: Per creare una riga della firma in un documento Word utilizzando Aspose.Words per .NET, puoi seguire questi passaggi:
-1.  Crea un'istanza di`Document` classe e a`DocumentBuilder` oggetto.
-2.  Usa il`InsertSignatureLine` metodo del`DocumentBuilder` oggetto per inserire una nuova riga della firma nel documento.
-3. Salva il documento modificato.
+### Cosa succede se non ho un certificato digitale?
+Dovrai ottenere un certificato digitale da un'autorità di certificazione attendibile o generarne uno utilizzando strumenti come OpenSSL.
 
-#### D: Posso personalizzare le opzioni della riga della firma, come nome, titolo e data?
-
- R: Sì, puoi personalizzare le opzioni della riga della firma. IL`SignatureLineOptions` La classe fornisce proprietà per impostare le opzioni desiderate, come ad esempio`Signer`, `SignerTitle`, `ShowDate`, ecc. È possibile modificare queste proprietà prima di inserire la riga della firma.
-
-#### D: Come posso firmare il documento dopo aver creato una riga per la firma?
-
- R: Per firmare il documento dopo aver creato una riga per la firma, è necessario impostare le opzioni della firma e utilizzare il file`DigitalSignatureUtil` classe. Ecco i passaggi:
-1.  Impostare il`SignatureLineId` proprietà nel`SignOptions` opporsi all'ID della riga della firma.
-2.  Impostare il`SignatureLineImage` proprietà nel`SignOptions` opporsi all'immagine della firma che si desidera utilizzare.
-3.  Caricare il certificato di firma utilizzando il file`CertificateHolder` classe.
-4.  Usa il`DigitalSignatureUtil.Sign` metodo per firmare il documento, fornendo i parametri necessari.
-
-#### D: Posso utilizzare un'immagine della firma digitale per firmare il documento?
-
- R: Sì, puoi utilizzare un'immagine della firma digitale per firmare il documento. Per fare ciò, è necessario fornire il file immagine nel formato`SignOptions` oggetto utilizzando il`SignatureLineImage`proprietà. L'immagine può essere in qualsiasi formato immagine supportato, come JPEG, PNG o EMF.
-
-#### D: Qual è lo scopo di creare e firmare una nuova riga di firma in un documento di Word?
-
-R: La creazione e la firma di una nuova riga della firma in un documento Word utilizzando Aspose.Words per .NET consente di aggiungere un segnaposto per una firma e quindi firmare il documento utilizzando un certificato digitale. Questo processo garantisce l'autenticità e l'integrità del documento, fornendo prova dell'approvazione o dell'accordo.
-
-#### D: Posso creare e firmare più righe di firma in un documento Word utilizzando Aspose.Words per .NET?
-
-R: Sì, puoi creare e firmare più righe di firma in un documento Word utilizzando Aspose.Words per .NET. Ogni riga della firma può avere il proprio ID e opzioni univoci. È possibile ripetere i passaggi per creare e firmare ulteriori righe di firma nel documento.
-
-#### D: Posso modificare la riga della firma o aggiungere ulteriori informazioni dopo averla firmata?
-
-R: Una volta firmata, la riga della firma diventa parte del contenuto del documento e non può essere modificata separatamente. Tuttavia, puoi aggiungere ulteriori informazioni o contenuti dopo la riga della firma firmata.
-
-#### D: Posso verificare la firma digitale di un documento che contiene una riga per la firma?
-
- R: Sì, Aspose.Words per .NET fornisce funzionalità per verificare la firma digitale di un documento che contiene una riga di firma. Puoi usare il`DigitalSignatureUtil.Verify` metodo per verificare la validità e l'autenticità della firma digitale.
-
-#### D: Quale formato di file supporta Aspose.Words per .NET per creare e firmare righe di firma?
-
-R: Aspose.Words per .NET supporta la creazione e la firma di righe di firma nel formato file DOCX. È possibile creare e firmare righe di firma nei file DOCX utilizzando i metodi e le classi forniti.
+### Come verifico la firma digitale nel documento?
+Puoi aprire il documento firmato in Word e andare ai dettagli della firma per verificare l'autenticità e l'integrità della firma.

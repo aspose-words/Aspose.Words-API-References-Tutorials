@@ -70,7 +70,7 @@ public void handleSpacesOptions() throws Exception {
 }
 ```
 
- W tym przykładzie ładujemy dokument tekstowy i przycinamy spacje początkowe i końcowe za pomocą`TxtLeadingSpacesOptions.TRIM` I`TxtTrailingSpacesOptions.TRIM`.
+ W tym przykładzie ładujemy dokument tekstowy i przycinamy spacje początkowe i końcowe za pomocą`TxtLeadingSpacesOptions.TRIM`I`TxtTrailingSpacesOptions.TRIM`.
 
 ## Krok 3: Kontrolowanie kierunku tekstu
 
@@ -179,7 +179,7 @@ Aby rozpocząć korzystanie z Aspose.Words dla Java, wykonaj następujące kroki
 
 ### Jak postępować ze spacjami w załadowanych dokumentach tekstowych?
 
- Możesz kontrolować sposób obsługi spacji początkowych i końcowych w załadowanych dokumentach tekstowych za pomocą`TxtLoadOptions` . Opcje takie jak`TxtLeadingSpacesOptions` I`TxtTrailingSpacesOptions`umożliwiają przycięcie lub zachowanie odstępów w razie potrzeby. Przykład można znaleźć w sekcji „Obsługa opcji przestrzeni” w tym przewodniku.
+ Możesz kontrolować sposób obsługi spacji początkowych i końcowych w załadowanych dokumentach tekstowych za pomocą`TxtLoadOptions` . Opcje takie jak`TxtLeadingSpacesOptions`I`TxtTrailingSpacesOptions`umożliwiają przycięcie lub zachowanie odstępów w razie potrzeby. Przykład można znaleźć w sekcji „Obsługa opcji przestrzeni” w tym przewodniku.
 
 ### Jakie znaczenie ma kierunek tekstu w Aspose.Words dla Java?
 

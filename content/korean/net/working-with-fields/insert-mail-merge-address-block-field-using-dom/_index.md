@@ -102,7 +102,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsing
 
 #### Q: Aspose.Words for .NET의 우편 주소 필드에 대한 소스 데이터를 어떻게 지정할 수 있습니까?
 
- A: Aspose.Words for .NET의 우편 주소 필드에 대한 소스 데이터를 지정하려면 다음을 사용할 수 있습니다.`FieldAddressBlock.StartAddress` 그리고`FieldAddressBlock.EndAddress` 속성. 이러한 속성은 CSV 파일, 데이터베이스 등과 같은 외부 데이터 소스의 주소 범위를 정의하는 데 사용됩니다.
+ A: Aspose.Words for .NET의 우편 주소 필드에 대한 소스 데이터를 지정하려면 다음을 사용할 수 있습니다.`FieldAddressBlock.StartAddress`그리고`FieldAddressBlock.EndAddress` 속성. 이러한 속성은 CSV 파일, 데이터베이스 등과 같은 외부 데이터 소스의 주소 범위를 정의하는 데 사용됩니다.
 
 #### Q: Aspose.Words for .NET을 사용하여 우편 주소 필드에 선택적 요소를 포함할 수 있습니까?
 

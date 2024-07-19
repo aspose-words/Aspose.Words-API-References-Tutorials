@@ -26,7 +26,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 3단계: 문서 넣기
- 사용`Document` 변환하려는 연결된 필드가 포함된 Word 문서를 로드하려면 Aspose.Words 클래스를 사용하세요.
+ 사용`Document`변환하려는 연결된 필드가 포함된 Word 문서를 로드하려면 Aspose.Words 클래스를 사용하세요.
 
 ```csharp
 Document doc = new Document(MyDir + "Linked fields.docx");

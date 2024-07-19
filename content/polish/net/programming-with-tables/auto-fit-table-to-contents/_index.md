@@ -63,4 +63,4 @@ Upewnij się, że podałeś poprawną ścieżkę i nazwę pliku dokumentu wyjśc
 ```
 
 ## Wniosek
-tym samouczku nauczyliśmy się, jak automatycznie dopasować tabelę do jej zawartości w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i wdrażając dostarczony kod C#, możesz programowo manipulować tabelami w dokumentach programu Word. Umożliwia to dynamiczne dostosowywanie szerokości tabeli w zależności od jej zawartości, zapewniając bardziej profesjonalny i atrakcyjny wizualnie dokument.
+W tym samouczku nauczyliśmy się, jak automatycznie dopasować tabelę do jej zawartości w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i wdrażając dostarczony kod C#, możesz programowo manipulować tabelami w dokumentach programu Word. Umożliwia to dynamiczne dostosowywanie szerokości tabeli w zależności od jej zawartości, zapewniając bardziej profesjonalny i atrakcyjny wizualnie dokument.

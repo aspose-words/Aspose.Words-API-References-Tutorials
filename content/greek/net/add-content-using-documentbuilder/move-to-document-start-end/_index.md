@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Εδώ, δημιουργούμε ένα παράδειγμα του`Document` και`DocumentBuilder` . Σκέφτομαι`Document` ως κενό έγγραφο του Word και`DocumentBuilder` ως στυλό σου.
+ Εδώ, δημιουργούμε ένα παράδειγμα του`Document`και`DocumentBuilder` . Σκέφτομαι`Document` ως κενό έγγραφο του Word και`DocumentBuilder` ως στυλό σου.
 
 ## Βήμα 2: Μεταβείτε στην Έναρξη εγγράφου
 

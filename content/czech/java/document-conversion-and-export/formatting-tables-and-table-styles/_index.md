@@ -114,7 +114,7 @@ firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
 firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
 ```
 
-## Formát tabulky a buňky s různými okraji
+## Formát tabulky a buňky s různými hranicemi
 
 Naučte se, jak nastavit různá ohraničení pro jednotlivé buňky v tabulce:
 

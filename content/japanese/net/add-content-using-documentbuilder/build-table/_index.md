@@ -9,7 +9,7 @@ url: /ja/net/add-content-using-documentbuilder/build-table/
 ---
 ## 導入
 
-こんにちは! Word 文書にプログラムで表を作成したいとお考えですか? まさに、あなたは正しい場所に来ました! 今日は、Aspose.Words for .NET の魔法の世界に飛び込みます。この強力なライブラリを使用すると、Word 文書をプロのように操作できます。あなたが魔法使いで、Aspose.Words があなたの杖であり、手首を軽く動かすだけで (または、コード 1 行で) 文書を作成、編集、書式設定できると想像してください。このチュートリアルでは、Word 文書に表を作成することに焦点を当てます。では、コーディングの帽子をかぶって、始めましょう!
+こんにちは! Word 文書にプログラムで表を作成したいとお考えですか? まさに、この場はうってつけです! 今日は、Aspose.Words for .NET の魔法の世界に飛び込んでみましょう。この強力なライブラリを使用すると、Word 文書をプロのように操作できます。自分が魔法使いで、Aspose.Words があなたの杖となり、手首を軽く動かすだけで (または、コード 1 行で) 文書を作成、編集、書式設定できると想像してください。このチュートリアルでは、Word 文書に表を作成することに焦点を当てます。では、コーディングの帽子をかぶって、始めましょう!
 
 ## 前提条件
 
@@ -122,7 +122,7 @@ doc.Save("YourDirectoryPath/AddContentUsingDocumentBuilder.BuildTable.docx");
 ## よくある質問
 
 ### Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、Word 文書をプログラムで操作するための強力なライブラリです。Microsoft Word を必要とせずに、文書を作成、編集、操作できます。
+Aspose.Words for .NET は、Word 文書をプログラムで操作するための強力なライブラリです。Microsoft Word を必要とせずに文書を作成、編集、操作できます。
 
 ### Aspose.Words for .NET をインストールするにはどうすればよいですか?
 あなたはできる[Aspose.Words for .NET をここからダウンロード](https://releases.aspose.com/words/net/)提供されているインストール手順に従って、開発環境でセットアップしてください。

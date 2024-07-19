@@ -65,9 +65,9 @@ Suivez ces étapes pour supprimer un champ spécifique de votre document à l'ai
 
 #### Q : Comment puis-je supprimer un champ dans un document Word à l'aide d'Aspose.Words pour .NET ?
 
- R : Pour supprimer un champ dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez parcourir les champs du document à l'aide de l'option`FieldStart` classe et utiliser le`FieldStart.Remove`méthode pour supprimer le champ.
+ R : Pour supprimer un champ dans un document Word à l'aide d'Aspose.Words for .NET, vous pouvez parcourir les champs du document à l'aide de l'option`FieldStart` classe et utiliser le`FieldStart.Remove` méthode pour supprimer le champ.
 
-#### Q : Est-il possible de supprimer uniquement certains champs d'un document Word avec Aspose.Words pour .NET ?
+#### : Est-il possible de supprimer uniquement certains champs d'un document Word avec Aspose.Words pour .NET ?
 
  R : Oui, il est possible de supprimer uniquement certains champs d'un document Word avec Aspose.Words pour .NET. Vous pouvez filtrer les champs à supprimer en utilisant des critères spécifiques, tels que le nom du champ ou d'autres propriétés pertinentes. Ensuite, vous pouvez supprimer les champs correspondants à l'aide du`FieldStart.Remove` méthode.
 

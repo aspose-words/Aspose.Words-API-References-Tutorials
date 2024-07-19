@@ -8,7 +8,7 @@ weight: 10
 url: /ar/net/working-with-fonts/receive-warning-notification/
 ---
 
-هل سئمت من التعامل مع مشكلات الخطوط غير المتوقعة في مستنداتك؟ باستخدام Aspose.Words for .NET، يمكنك الحصول على إشعارات بأي مشكلات محتملة أثناء معالجة المستندات، مما يسهل الحفاظ على جودة المستند. سيرشدك هذا الدليل الشامل خلال إعداد إشعارات التحذير في Aspose.Words، مما يضمن عدم تفويت أي تحذير مهم مرة أخرى.
+هل سئمت من التعامل مع مشكلات الخطوط غير المتوقعة في مستنداتك؟ باستخدام Aspose.Words for .NET، يمكنك الحصول على إشعارات بأي مشكلات محتملة أثناء معالجة المستندات، مما يسهل الحفاظ على جودة المستندات. سيرشدك هذا الدليل الشامل خلال إعداد إشعارات التحذير في Aspose.Words، مما يضمن عدم تفويت أي تحذير مهم مرة أخرى.
 
 ## المتطلبات الأساسية
 
@@ -45,15 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تحديث تخطيط الصفحة
-
- اتصل ب`UpdatePageLayout` طريقة. يؤدي هذا إلى عرض المستند في الذاكرة والتقاط أي تحذيرات تحدث أثناء العرض.
-
-```csharp
-doc.UpdatePageLayout();
-```
-
-## الخطوة 4: إعداد رد الاتصال التحذيري
+## الخطوة 3: إعداد رد الاتصال التحذيري
 
  لالتقاط التحذيرات والتعامل معها، قم بإنشاء فئة تنفذ`IWarningCallback` واجهه المستخدم. ستقوم هذه الفئة بتسجيل أي تحذيرات تحدث أثناء معالجة المستندات.
 
@@ -62,22 +54,25 @@ public class HandleDocumentWarnings : IWarningCallback
 {
     public void Warning(WarningInfo info)
     {
-        // نحن مهتمون فقط باستبدال الخطوط.
-        if (info.WarningType == WarningType.FontSubstitution)
-        {
             Console.WriteLine("Font substitution: " + info.Description);
-        }
     }
 }
 ```
 
-## الخطوة 5: تعيين رد الاتصال للمستند
+## الخطوة 4: تعيين رد الاتصال للمستند
 
 قم بتعيين رد الاتصال التحذيري للمستند. وهذا يضمن التقاط أي مشكلات تتعلق بالخط وتسجيلها.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
 doc.WarningCallback = callback;
+```
+## الخطوة 5: تحديث تخطيط الصفحة
+
+ اتصل ب`UpdatePageLayout` طريقة. يؤدي هذا إلى عرض المستند في الذاكرة والتقاط أي تحذيرات تحدث أثناء العرض.
+
+```csharp
+doc.UpdatePageLayout();
 ```
 
 ## الخطوة 6: احفظ المستند
@@ -106,7 +101,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ###  س3: هل يمكنني التعامل مع أنواع أخرى من التحذيرات باستخدام`IWarningCallback`?
 
- نعم`IWarningCallback` يمكن للواجهة التعامل مع أنواع مختلفة من التحذيرات، وليس فقط استبدال الخطوط.
+ نعم`IWarningCallback`يمكن للواجهة التعامل مع أنواع مختلفة من التحذيرات، وليس فقط استبدال الخطوط.
 
 ### س4: أين يمكنني العثور على الدعم لـ Aspose.Words؟
 

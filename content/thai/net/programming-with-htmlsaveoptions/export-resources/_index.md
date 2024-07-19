@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://example.com/resources"
 
  รหัสนี้สร้างอินสแตนซ์ของ`HtmlSaveOptions` และตั้งค่าตัวเลือกต่อไปนี้:
 
-- `CssStyleSheetType` ถูกตั้งค่าเป็น`CssStyleSheetType.External`เพื่อส่งออกสไตล์ชีต CSS ไปยังไฟล์ภายนอก
+- `CssStyleSheetType` ถูกตั้งค่าเป็น`CssStyleSheetType.External` เพื่อส่งออกสไตล์ชีต CSS ไปยังไฟล์ภายนอก
 - `ExportFontResources` ถูกตั้งค่าเป็น`true` เพื่อส่งออกทรัพยากรแบบอักษร
 - `ResourceFolder` ระบุไดเร็กทอรีปลายทางที่จะบันทึกทรัพยากร
-- `ResourceFolderAlias` ระบุนามแฝง URL ที่จะใช้ในการเข้าถึงทรัพยากร
+- `ResourceFolderAlias`ระบุนามแฝง URL ที่จะใช้ในการเข้าถึงทรัพยากร
 
 ## ขั้นตอนที่ 4: การแปลงและบันทึกเอกสารเป็น HTML
 

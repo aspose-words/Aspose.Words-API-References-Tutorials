@@ -7,7 +7,7 @@ type: docs
 weight: 1530
 url: /id/net/programming-with-webextension/
 ---
-Tutorial Aspose.Words untuk .NET tentang Pemrosesan Kata dengan WebExtensions memandu Anda melalui fitur lanjutan Pemrosesan Kata dengan Ekstensi Web di dokumen Word Anda. Tutorial ini merinci cara menggunakan API Aspose.Words untuk membuat, mengedit, dan menghapus ekstensi web, serta berinteraksi dengan kode JavaScript yang tertanam dalam dokumen Word.
+Tutorial Aspose.Words untuk .NET tentang Pemrosesan Kata dengan WebExtensions memandu Anda melalui fitur lanjutan Pemrosesan Kata dengan Ekstensi Web di dokumen Word Anda. Tutorial merinci cara menggunakan API Aspose.Words untuk membuat, mengedit, dan menghapus ekstensi web, serta berinteraksi dengan kode JavaScript yang tertanam dalam dokumen Word.
 
 Tutorial ini memberikan petunjuk langkah demi langkah untuk memahami dan menggunakan fungsionalitas WebExtensions dengan Aspose.Words untuk .NET. Anda akan mempelajari cara mengakses objek ekstensi web, menangani peristiwa, mengevaluasi kode JavaScript, menambahkan fungsionalitas khusus, dan banyak lagi. Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini akan membantu Anda menguasai teknik pemrograman dengan WebExtensions.
 

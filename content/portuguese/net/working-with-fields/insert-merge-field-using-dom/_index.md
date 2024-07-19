@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 A seguir, precisamos mover o cursor para um parágrafo específico do documento onde queremos inserir o campo de mesclagem.
 
 ```csharp
-// Mova o cursor para o parágrafo.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## Etapa 6: insira o campo de mesclagem

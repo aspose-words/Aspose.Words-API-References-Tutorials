@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## الخطوة 2: قم بتحميل المستند واحصل على StructuredDocumentTag
- قم بتحميل مستند Word باستخدام`Document` منشئ، وتمرير المسار إلى الوثيقة كمعلمة. ومن ثم استرجاع المطلوب`StructuredDocumentTag` من الوثيقة. في هذا المثال، نفترض أن SDT هي العقدة الفرعية الأولى في المستند.
+ قم بتحميل مستند Word باستخدام`Document` منشئ، وتمرير المسار إلى الوثيقة كمعلمة. ومن ثم استرجاع المطلوب`StructuredDocumentTag`من الوثيقة. في هذا المثال، نفترض أن SDT هي العقدة الفرعية الأولى في المستند.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -39,7 +39,7 @@ sdt.Clear();
 ```
 
 ## الخطوة 4: احفظ المستند
- احفظ المستند المعدل باستخدام`Save`طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.ClearContentsControl.doc".
+ احفظ المستند المعدل باستخدام`Save` طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.ClearContentsControl.doc".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");

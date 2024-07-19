@@ -81,7 +81,7 @@ doc.save("Your Directory Path" + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rt
 
 ### RTF ドキュメントを別のエンコードで保存できますか?
 
-はい、RTF文書のエンコーディングは次のように指定できます。`saveOptions.setEncoding(Charset.forName("UTF-8"))`たとえば、UTF-8 エンコードで保存します。
+はい、RTF文書のエンコードは次のように指定できます。`saveOptions.setEncoding(Charset.forName("UTF-8"))`たとえば、UTF-8 エンコードで保存します。
 
 ### 画像なしで RTF ドキュメントを保存することは可能ですか?
 

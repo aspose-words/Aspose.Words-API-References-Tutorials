@@ -98,7 +98,7 @@ J: Ya, Aspose.Words kompatibel dengan berbagai versi Microsoft Word termasuk Wor
 
 #### T: Apakah Aspose.Words mendukung struktur bidang yang kompleks?
 
-J: Tentu saja! Aspose.Words menawarkan dukungan ekstensif untuk struktur bidang yang kompleks, termasuk bidang bertumpuk, perhitungan, dan ekspresi kondisional. Anda dapat menggunakan API canggih ini untuk bekerja dengan semua jenis struktur bidang.
+J: Tentu saja! Aspose.Words menawarkan dukungan ekstensif untuk struktur bidang yang kompleks, termasuk bidang bertumpuk, penghitungan, dan ekspresi kondisional. Anda dapat menggunakan API canggih ini untuk bekerja dengan semua jenis struktur bidang.
 
 #### T: Apakah Aspose.Words mendukung operasi pembaruan lapangan?
 

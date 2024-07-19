@@ -80,7 +80,7 @@ Trả lời: Để định cấu hình Aspose.Words cho .NET không nhúng phôn
 
  Sử dụng`Save` phương pháp của`Document` đối tượng lưu tài liệu ở định dạng PDF chỉ định các tùy chọn lưu được định cấu hình trước đó.
 
-#### Câu hỏi: Lợi ích của việc tắt tính năng nhúng phông chữ Arial và Times Roman trong tài liệu PDF là gì?
+#### Câu hỏi: Lợi ích của việc tắt tính năng nhúng phông chữ Arial và Times Roman vào tài liệu PDF là gì?
 Đáp: Lợi ích của việc tắt tính năng nhúng phông chữ Arial và Times Roman vào tài liệu PDF là:
 
 Giảm kích thước tệp PDF: Bằng cách tránh nhúng các phông chữ phổ biến như Arial và Times Roman, kích thước tệp PDF có thể được giảm, giúp lưu trữ, chia sẻ và truyền tệp dễ dàng hơn.

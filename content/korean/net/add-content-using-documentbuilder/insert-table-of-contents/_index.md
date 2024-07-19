@@ -127,4 +127,4 @@ Aspose.Words는 단일 문서 내에서 다양한 설정으로 여러 목차 생
 예, Aspose.Words는 다양한 버전의 Microsoft Word 형식과의 호환성을 보장합니다.
 
 ### Aspose.Words에 대한 추가 도움말과 지원은 어디서 찾을 수 있나요?
-추가 지원을 받으려면 다음을 방문하세요.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8) 또는 다음을 확인해 보세요.[공식 문서](https://reference.aspose.com/words/net/).
+ 추가 지원을 받으려면 다음을 방문하세요.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8) 또는 다음을 확인해 보세요.[공식 문서](https://reference.aspose.com/words/net/).

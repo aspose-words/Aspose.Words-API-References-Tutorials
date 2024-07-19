@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 	builder.InsertCell();
 	builder.Writeln("Outer Table Cell 2");
 	// Ez a hívás fontos egy beágyazott tábla létrehozásához az első táblán belül.
-	// E hívás nélkül az alább beszúrt cellák hozzá lesznek fűzve a külső táblázathoz.
+	// hívás nélkül az alább beszúrt cellák hozzá lesznek fűzve a külső táblázathoz.
 	builder.EndTable();
 	// Lépjen a külső táblázat első cellájába.
 	builder.MoveTo(cell.FirstParagraph);

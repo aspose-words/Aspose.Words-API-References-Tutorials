@@ -75,7 +75,7 @@ J: Aspose.Words for .NET adalah perpustakaan yang kuat untuk Pemrosesan Kata den
 
 #### T: Bagaimana cara memuat dokumen Word menggunakan Aspose.Words untuk .NET?
 
-J: Untuk memuat dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document` kelas dan konstruktornya. Anda perlu menyediakan jalur file atau aliran dokumen sebagai parameter. Berikut ini contohnya:
+ J: Untuk memuat dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat menggunakan`Document` kelas dan konstruktornya. Anda perlu menyediakan jalur file atau aliran dokumen sebagai parameter. Berikut ini contohnya:
 
 ```csharp
 Document doc = new Document(dataDir + "Document.docx");
@@ -107,10 +107,10 @@ J: Saat mengekstraksi teks dari rentang menggunakan Aspose.Words untuk .NET, for
 
 J: Ya, Anda hanya dapat mengekstrak bagian teks tertentu dalam rentang menggunakan Aspose.Words untuk .NET. Setelah Anda mengakses rentang yang diinginkan, Anda dapat memanipulasi teks yang diambil menggunakan teknik manipulasi string standar untuk mengekstrak bagian tertentu atau menerapkan pemfilteran khusus sesuai kebutuhan Anda.
 
-#### T: Bisakah saya mengekstrak teks dari dokumen Word yang dilindungi kata sandi atau terenkripsi menggunakan Aspose.Words untuk .NET?
+#### T: Dapatkah saya mengekstrak teks dari dokumen Word yang dilindungi kata sandi atau terenkripsi menggunakan Aspose.Words untuk .NET?
 
  J: Ya, Aspose.Words untuk .NET mendukung ekstraksi teks dari dokumen Word yang dilindungi kata sandi atau terenkripsi. Namun, Anda perlu memberikan kata sandi atau kunci dekripsi yang benar saat memuat dokumen menggunakan`Document` konstruktor kelas. Hal ini memastikan bahwa dokumen didekripsi dengan benar sebelum mengakses konten teksnya.
 
-#### T: Bisakah saya mengekstrak teks yang diformat atau diberi gaya (seperti teks kaya atau HTML) dari dokumen Word menggunakan Aspose.Words untuk .NET?
+#### T: Dapatkah saya mengekstrak teks yang diformat atau diberi gaya (seperti teks kaya atau HTML) dari dokumen Word menggunakan Aspose.Words untuk .NET?
 
 J: Ya, Aspose.Words untuk .NET memungkinkan Anda mengekstrak teks yang diformat atau ditata dari dokumen Word. Teks yang diekstraksi mempertahankan format aslinya, yang mencakup gaya font, ukuran, warna, dan atribut pemformatan lainnya. Anda dapat memproses teks yang diekstraksi ini lebih lanjut atau mengonversinya ke format lain, seperti HTML, sesuai kebutuhan.

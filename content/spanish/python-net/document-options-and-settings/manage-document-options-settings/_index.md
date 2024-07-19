@@ -53,7 +53,7 @@ page_setup.top_margin = aw.ConvertUtil.inch_to_point(1.5)
 page_setup.bottom_margin = aw.ConvertUtil.inch_to_point(1.5)
 ```
 
-## Control de fuentes y formato:
+## Control de fuente y formato:
 
 Aplique un formato consistente al texto de su documento usando Aspose.Words:
 

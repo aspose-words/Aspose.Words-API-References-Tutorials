@@ -40,7 +40,7 @@ doc = aw.Document("path/to/your/document.docx")
 
 ## ステップ3: 簡単なテキストの置換
 
-特定の単語または語句に対して基本的な検索と置換の操作を実行します。
+特定の単語または語句に対して基本的な検索と置換操作を実行します。
 
 ```python
 search_text = "old_text"

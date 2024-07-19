@@ -113,7 +113,7 @@ Hayır, değiştirme için yalnızca bir varsayılan yazı tipi belirleyebilirsi
 
 ###  S3: Diğer uyarı türlerini şununla işleyebilir miyim?`IWarningCallback`?
 
- Evet`IWarningCallback` arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
+ Evet`IWarningCallback`arayüz yalnızca yazı tipi değişikliğini değil, çeşitli uyarı türlerini de işleyebilir.
 
 ### S4: Aspose.Words desteğini nerede bulabilirim?
 

@@ -71,7 +71,7 @@ builder.Writeln("Hello World!");
 
 ## Steg 4: Spara dokumentet
 
-Äntligen måste vi rädda vårt mästerverk. Det här steget är som att rama in vår färdiga målning och hänga den på väggen.
+Till sist måste vi rädda vårt mästerverk. Det här steget är som att rama in vår färdiga målning och hänga den på väggen.
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");

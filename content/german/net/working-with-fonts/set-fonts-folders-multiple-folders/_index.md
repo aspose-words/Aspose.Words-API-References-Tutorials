@@ -71,7 +71,7 @@ In diesem Tutorial haben wir gelernt, wie Sie beim Rendern eines Dokuments mit A
 
  A: Um mehrere Schriftartenordner in Aspose.Words einzurichten, können Sie den`SetFontsFolders` Methode der`Fonts` Klasse, die eine Liste mit Speicherorten für benutzerdefinierte Schriftartordner bereitstellt.
 
-#### F: Wirkt sich das Einrichten mehrerer Schriftartenordner auf alle mit Aspose.Words verarbeiteten Dokumente aus?
+#### F: Wirkt sich das Festlegen mehrerer Schriftartordner auf alle mit Aspose.Words verarbeiteten Dokumente aus?
 
 A: Ja, das Festlegen mehrerer Schriftartenordner wirkt sich auf alle mit Aspose.Words verarbeiteten Dokumente aus. Sobald Sie die Schriftartenordner definiert haben, verwendet Aspose.Words diese Speicherorte, um in allen Dokumenten nach Schriftarten zu suchen.
 

@@ -21,7 +21,7 @@ Az Aspose.Words projektben való használatához hozzá kell adnia a szükséges
 A mezők konvertálása előtt be kell töltenie a konvertálandó mezőket tartalmazó dokumentumot. Ügyeljen arra, hogy a dokumentumot tartalmazó könyvtár helyes elérési útját adja meg. Így töltheti fel a dokumentumot:
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
+// dokumentumok könyvtár elérési útja.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Töltse be a dokumentumot.
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ### Példa forráskódra a bekezdésben lévő mezők konvertálásához az Aspose.Words használatával .NET-hez
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
+// dokumentumok könyvtár elérési útja.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Töltse be a dokumentumot.

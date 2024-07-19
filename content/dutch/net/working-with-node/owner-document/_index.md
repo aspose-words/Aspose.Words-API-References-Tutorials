@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## Stap 4: Controleer het bovenliggende knooppunt en het eigenaardocument
- Nu we het alineaknooppunt hebben gemaakt, kunnen we controleren of het een bovenliggend knooppunt heeft en of het document dat de eigenaar is hetzelfde is als`doc`.
+Nu we het alineaknooppunt hebben gemaakt, kunnen we controleren of het een bovenliggend knooppunt heeft en of het document dat de eigenaar is hetzelfde is als`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ A: In de meeste gevallen wordt de documenteigenaar van een knooppunt bepaald wan
 
 #### Vraag: Hoe krijg ik toegang tot de knooppunten van een eigenaarsdocument?
 
- A: Om toegang te krijgen tot knooppunten in een eigen document, kunt u de methoden en eigenschappen gebruiken die worden geboden door de XML API die in uw Node.js-omgeving wordt gebruikt. U kunt bijvoorbeeld methoden gebruiken zoals`getElementsByTagName` of`querySelector` om specifieke knooppunten in het document te selecteren.
+A: Om toegang te krijgen tot knooppunten in een eigen document, kunt u de methoden en eigenschappen gebruiken die worden geboden door de XML API die in uw Node.js-omgeving wordt gebruikt. U kunt bijvoorbeeld methoden gebruiken zoals`getElementsByTagName` of`querySelector` om specifieke knooppunten in het document te selecteren.

@@ -18,7 +18,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. lépés: Állítsa be a font mappák prioritását
- Ezután beállíthatja a font mappákat prioritásként a segítségével`FontSettings` osztály és a`SetFontsSources()`módszer. Több betűtípust is megadhat a példányok használatával`SystemFontSource` és`FolderFontSource`. Ebben a példában két betűtípus-forrást definiáltunk: az alapértelmezett rendszer-betűtípus-forrást és egy egyéni betűtípus-mappát 1-es prioritással.
+ Ezután beállíthatja a font mappákat prioritásként a segítségével`FontSettings` osztály és a`SetFontsSources()`módszer. Több betűtípust is megadhat a példányok használatával`SystemFontSource`és`FolderFontSource`. Ebben a példában két betűtípus-forrást definiáltunk: az alapértelmezett rendszer-betűtípus-forrást és egy egyéni betűtípus-mappát 1-es prioritással.
 
 ```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
@@ -61,7 +61,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan állíthat be prioritást a betűt�
 
 #### K: Hogyan állíthatok be prioritást a font mappáknak az Aspose.Wordsben?
 
- V: Az Aspose.Words betűtípusmappák prioritásának beállításához használhatja a`SetFontsFoldersWithPriority` módszere a`Fonts` osztályba a font mappák helyeinek és azok fontossági sorrendjének megadásával.
+ V: Az Aspose.Words betűtípusmappák prioritásának beállításához használhatja a`SetFontsFoldersWithPriority` módszere a`Fonts` osztályba a betűtípusmappák helyeinek és azok fontossági sorrendjének megadásával.
 
 #### K: Mi történik, ha egy betűtípus több különböző prioritású mappában van?
 

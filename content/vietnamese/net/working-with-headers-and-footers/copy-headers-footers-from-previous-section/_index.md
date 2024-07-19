@@ -89,7 +89,7 @@ doc.Save("OutputDocument.docx");
 
 ### Bước 2: Truy cập phần hiện tại
 
-Chúng tôi truy xuất phần hiện tại bằng cách sử dụng`builder.CurrentSection`. Phần này sẽ là mục tiêu mà chúng ta sẽ sao chép đầu trang và chân trang từ phần trước.
+ Chúng tôi truy xuất phần hiện tại bằng cách sử dụng`builder.CurrentSection`Phần này sẽ là mục tiêu mà chúng ta sẽ sao chép đầu trang và chân trang từ phần trước.
 
 ### Bước 3: Xác định phần trước
 

@@ -85,7 +85,7 @@ Neváhejte použít tento kód ve svých vlastních projektech a upravit jej pod
 
 #### Otázka: Je možné přizpůsobit číslování vysvětlivek v dokumentu?
 
- Odpověď: Ano, je možné upravit číslování vysvětlivek v dokumentu. Můžete použít`RestartRule` a`NumberStyle` vlastnosti`EndnoteOptions` třídy k definování specifických pravidel restartu a stylů číslování.
+ Odpověď: Ano, je možné upravit číslování vysvětlivek v dokumentu. Můžete použít`RestartRule`a`NumberStyle` vlastnosti`EndnoteOptions` třídy k definování specifických pravidel restartu a stylů číslování.
 
 #### Otázka: Jak mohu umístit vysvětlivky v dokumentu?
 

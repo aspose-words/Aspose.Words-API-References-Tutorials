@@ -51,8 +51,8 @@ Congratulazioni! Ora hai imparato come utilizzare la funzionalità dei collegame
 
 #### D: Come posso personalizzare il testo visualizzato di un collegamento in Aspose.Words?
 
-R: Per personalizzare il testo visualizzato di un collegamento in Aspose.Words, è possibile modificare il contenuto tra i`<a>` tag. Per esempio,`<a href="https://www.aspose.com">Click here</a>` visualizzerà il testo "Fai clic qui" come collegamento ipertestuale.
+ R: Per personalizzare il testo visualizzato di un collegamento in Aspose.Words, è possibile modificare il contenuto tra i`<a>` tag. Per esempio,`<a href="https://www.aspose.com">Click here</a>` visualizzerà il testo "Fai clic qui" come collegamento ipertestuale.
 
 #### D: Posso specificare una destinazione per un collegamento in Aspose.Words?
 
- R: Sì, puoi specificare una destinazione per un collegamento in Aspose.Words utilizzando il file`target` attributo del`<a>` etichetta. Per esempio,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` aprirà il collegamento in una nuova finestra o scheda.
+R: Sì, puoi specificare una destinazione per un collegamento in Aspose.Words utilizzando il file`target` attributo del`<a>` etichetta. Per esempio,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` aprirà il collegamento in una nuova finestra o scheda.

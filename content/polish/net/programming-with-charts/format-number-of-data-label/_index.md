@@ -2,34 +2,58 @@
 title: Formatuj liczbę etykiet danych na wykresie
 linktitle: Formatuj liczbę etykiet danych na wykresie
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak sformatować liczbę etykiet danych na wykresie za pomocą Aspose.Words dla .NET. Z łatwością dostosowuj formaty liczb w etykietach danych.
+description: Dowiedz się, jak formatować etykiety danych na wykresach za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Ulepszaj swoje dokumenty Word bez wysiłku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-charts/format-number-of-data-label/
 ---
+## Wstęp
 
-tym samouczku wyjaśniono, jak używać Aspose.Words dla .NET do formatowania liczby etykiet danych na wykresie. Dostarczony kod źródłowy pokazuje, jak utworzyć wykres, dodać dane serii i dostosować format liczbowy etykiet danych.
+Tworzenie angażujących i informacyjnych dokumentów często wiąże się z dołączeniem wykresów z dobrze sformatowanymi etykietami danych. Jeśli jesteś programistą .NET i chcesz wzbogacić swoje dokumenty Word o zaawansowane wykresy, Aspose.Words dla .NET to fantastyczna biblioteka, która pomoże Ci to osiągnąć. Ten samouczek przeprowadzi Cię krok po kroku przez proces formatowania etykiet liczbowych na wykresie przy użyciu Aspose.Words dla .NET.
 
-## Krok 1: Skonfiguruj projekt
+## Warunki wstępne
 
-Upewnij się, że masz następujące wymagania wstępne:
+Zanim zagłębisz się w kod, musisz spełnić kilka warunków wstępnych:
 
-- Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać, używając menedżera pakietów NuGet do zainstalowania.
-- Ścieżka katalogu dokumentu, w którym zostanie zapisany dokument wyjściowy.
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze go nie zainstalowałeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Należy mieć skonfigurowane środowisko programistyczne .NET. Zdecydowanie zaleca się korzystanie z programu Visual Studio.
+- Podstawowa znajomość języka C#: Znajomość programowania w języku C# jest niezbędna, ponieważ ten samouczek obejmuje pisanie i zrozumienie kodu C#.
+-  Licencja tymczasowa: Aby korzystać z Aspose.Words bez żadnych ograniczeń, możesz uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
 
-## Krok 2: Utwórz nowy dokument i wstaw wykres
+Przyjrzyjmy się teraz krok po kroku procesowi formatowania etykiet liczbowych na wykresie.
 
- Stwórz nowy`Document` obiekt i a`DocumentBuilder` do zbudowania dokumentu.
+## Importuj przestrzenie nazw
+
+Po pierwsze, musimy zaimportować niezbędne przestrzenie nazw do pracy z Aspose.Words dla .NET. Dodaj następujące wiersze na górze pliku C#:
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Krok 1: Skonfiguruj katalog dokumentów
+
+Zanim zaczniesz manipulować dokumentem programu Word, musisz określić katalog, w którym dokument zostanie zapisany. Jest to niezbędne do późniejszego zapisu.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+
+## Krok 2: Zainicjuj dokument i narzędzie DocumentBuilder
+
+ Następnym krokiem jest zainicjowanie nowego`Document` i a`DocumentBuilder` . The`DocumentBuilder` jest klasą pomocniczą, która pozwala nam konstruować treść dokumentu.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Następnie wstaw wykres do dokumentu za pomocą`InsertChart` metoda`DocumentBuilder`. W tym przykładzie wstawimy wykres liniowy.
+## Krok 3: Wstaw wykres do dokumentu
+
+ Teraz wstawmy wykres do dokumentu za pomocą`DocumentBuilder`. W tym samouczku jako przykład wykorzystamy wykres liniowy.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,94 +61,74 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## Krok 3: Dodaj dane serii do wykresu
+Tutaj wstawiamy wykres liniowy o określonej szerokości i wysokości oraz ustalamy tytuł wykresu.
 
-Dodaj dane serii do wykresu. W tym przykładzie dodamy trzy kategorie i odpowiadające im wartości.
+## Krok 4: Wyczyść serię domyślną i dodaj nową serię
+
+Domyślnie wykres będzie zawierał wstępnie wygenerowane serie. Musimy je wyczyścić i dodać własną serię z określonymi punktami danych.
 
 ```csharp
+// Usuń domyślnie wygenerowaną serię.
 chart.Series.Clear();
+
+// Dodaj nową serię z niestandardowymi punktami danych.
 ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-    new string[] { "Category 1", "Category 2", "Category 3" }, 
-    new double[] { 2.5, 1.5, 3.5 });
-series1.HasDataLabels = true;
+	new string[] { "Category 1", "Category 2", "Category 3" }, 
+	new double[] { 2.5, 1.5, 3.5 });
 ```
 
-## Krok 4: Dostosuj format liczbowy etykiet danych
+## Krok 5: Włącz etykiety danych
 
- Aby sformatować liczbę etykiet danych, przejdź do`DataLabels` Kolekcja związana z serią.
+Aby wyświetlić etykiety danych na wykresie, musimy włączyć je dla naszej serii.
 
 ```csharp
+series1.HasDataLabels = true;
 series1.DataLabels.ShowValue = true;
-series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-W tym przykładzie dla każdej etykiety danych ustawiamy różne formaty liczb. Pierwsza etykieta danych jest sformatowana jako waluta, druga jako data, a trzecia jako wartość procentowa.
+## Krok 6: Sformatuj etykiety danych
 
-## Krok 5: Zapisz dokument
+Podstawą tego samouczka jest formatowanie etykiet danych. Możemy zastosować różne formaty liczb indywidualnie do każdej etykiety danych.
 
- Na koniec zapisz dokument w określonym katalogu za pomocą pliku`Save` metoda`Document` obiekt.
+```csharp
+series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Format waluty
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Format daty
+series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Format procentowy
+```
+
+ Ponadto można połączyć format etykiety danych z komórką źródłową. Po połączeniu,`NumberFormat` zostanie zresetowany do stanu ogólnego i odziedziczony z komórki źródłowej.
+
+```csharp
+series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
+```
+
+## Krok 7: Zapisz dokument
+
+Na koniec zapisz dokument w określonym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-To kończy implementację formatowania liczby etykiet danych na wykresie przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy formatu etykiety liczby danych przy użyciu Aspose.Words dla .NET 
-
-```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Text = "Data Labels With Different Number Format";
-	// Usuń domyślnie wygenerowaną serię.
-	chart.Series.Clear();
-	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-		new string[] { "Category 1", "Category 2", "Category 3" }, 
-		new double[] { 2.5, 1.5, 3.5 });
-	series1.HasDataLabels = true;
-	series1.DataLabels.ShowValue = true;
-	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// Możesz też ustawić kod formatu, który ma być powiązany z komórką źródłową,
-	// tym przypadku NumberFormat zostanie zresetowany do ogólnego i odziedziczony z komórki źródłowej.
-	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
-	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
-```
+Spowoduje to zapisanie dokumentu pod określoną nazwą i zachowanie wykresu ze sformatowanymi etykietami danych.
 
 ## Wniosek
 
-W tym samouczku nauczyłeś się formatować liczbę etykiet danych na wykresie za pomocą Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem i korzystając z dostarczonego kodu źródłowego, możesz utworzyć wykres, dodać dane serii i dostosować format liczbowy etykiet danych zgodnie ze swoimi wymaganiami.
+Formatowanie etykiet danych na wykresie za pomocą Aspose.Words dla .NET może znacznie zwiększyć czytelność i profesjonalizm dokumentów programu Word. Postępując zgodnie z tym przewodnikiem krok po kroku, powinieneś być teraz w stanie utworzyć wykres, dodać serie danych i sformatować etykiety danych zgodnie ze swoimi potrzebami. Aspose.Words dla .NET to potężne narzędzie, które pozwala na szerokie dostosowywanie i automatyzację dokumentów Word, co czyni go nieocenionym nabytkiem dla programistów .NET.
 
- Aspose.Words dla .NET zapewnia kompleksowe API do przetwarzania słów z wykresami w dokumentach Word, umożliwiając manipulowanie różnymi aspektami wykresów, w tym etykietami danych. Uzyskując dostęp do`DataLabels` kolekcji powiązanej z serią, możesz dostosować format liczbowy poszczególnych etykiet danych.
+## Często zadawane pytania
 
-Interfejs API pozwala kontrolować wyświetlanie wartości, ustawiać różne formaty liczb dla każdej etykiety danych i łączyć format liczb z komórką źródłową. Ta elastyczność umożliwia prezentowanie danych liczbowych na wykresach w żądanym formacie, takim jak symbole walut, formaty dat i wartości procentowe.
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do programowego tworzenia, manipulowania i konwertowania dokumentów programu Word przy użyciu języka C#.
 
-Używając Aspose.Words dla .NET, możesz włączyć zaawansowane możliwości tworzenia wykresów do swoich aplikacji .NET i generować profesjonalnie wyglądające dokumenty z w pełni sformatowanymi wykresami i etykietami danych.
+### Czy mogę formatować inne typy wykresów za pomocą Aspose.Words dla .NET?
+Tak, Aspose.Words dla .NET obsługuje różne typy wykresów, w tym słupkowe, kolumnowe, kołowe i inne.
 
-### Często zadawane pytania
+### Jak uzyskać tymczasową licencję na Aspose.Words dla .NET?
+ Możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-#### Pytanie 1. Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to bogata w funkcje biblioteka do przetwarzania dokumentów, która umożliwia programistom programowe tworzenie, manipulowanie i zapisywanie dokumentów programu Word w aplikacjach .NET. Zapewnia szeroką gamę funkcji do przetwarzania tekstu z elementami dokumentu, w tym wykresami i etykietami danych.
+### Czy można połączyć etykiety danych z komórkami źródłowymi w programie Excel?
+Tak, możesz połączyć etykiety danych z komórkami źródłowymi, umożliwiając dziedziczenie formatu liczb z komórki źródłowej.
 
-#### Pytanie 2. Jak mogę zainstalować Aspose.Words dla .NET?
-Możesz zainstalować Aspose.Words dla .NET, pobierając go za pomocą menedżera pakietów NuGet w programie Visual Studio. Po prostu wyszukaj „Aspose.Words” w menedżerze pakietów NuGet i zainstaluj go w swoim projekcie.
-
-#### Pytanie 3. Czy mogę sformatować inne aspekty wykresu za pomocą Aspose.Words dla .NET?
-Tak, Aspose.Words dla .NET zapewnia szerokie możliwości formatowania różnych aspektów wykresu. Oprócz etykiet danych możesz dostosować typ wykresu, dane serii, właściwości osi, legendę, tytuł, obszar wykresu i wiele innych elementów wykresu. Interfejs API zapewnia szczegółową kontrolę nad wyglądem i formatowaniem wykresów.
-
-#### Pytanie 4. Czy mogę zastosować różne formaty liczb do różnych etykiet danych w tej samej serii?
-Tak, Aspose.Words dla .NET umożliwia zastosowanie różnych formatów liczb do poszczególnych etykiet danych w tej samej serii. Uzyskując dostęp do`DataLabels` kolekcję powiązaną z serią, możesz ustawić`FormatCode` właściwość każdej etykiety danych, aby określić żądany format liczb. Dzięki temu możesz prezentować wartości liczbowe w różnych formatach na tym samym wykresie.
-
-#### Pytanie 5. Czy mogę używać niestandardowych formatów liczb w etykietach danych?
- Tak, Aspose.Words dla .NET obsługuje niestandardowe formaty liczb dla etykiet danych. Możesz określić żądany format liczb, ustawiając`FormatCode` właściwość etykiety danych na kod formatu niestandardowego. Zapewnia to elastyczność stosowania szerokiego zakresu formatów liczb, takich jak symbole walut, formaty dat, wartości procentowe i inne.
-
-#### Pytanie 6. Czy mogę zapisać wykres ze sformatowanymi etykietami danych w różnych formatach?
-Tak, Aspose.Words dla .NET umożliwia zapisanie dokumentu zawierającego wykres ze sformatowanymi etykietami danych w różnych formatach, takich jak DOCX, PDF, HTML i innych. Możesz wybrać odpowiedni format w oparciu o swoje wymagania i użyć`Save` metoda`Document` obiekt, aby zapisać dokument. Sformatowane etykiety danych zostaną zachowane w zapisanym dokumencie.
+### Gdzie mogę znaleźć bardziej szczegółową dokumentację Aspose.Words dla .NET?
+ Można znaleźć obszerną dokumentację[Tutaj](https://reference.aspose.com/words/net/).

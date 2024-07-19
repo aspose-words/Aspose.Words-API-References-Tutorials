@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2단계: 문서 로드 및 XML 부분 만들기
- 다음을 사용하여 Word 문서를 로드합니다.`Document` 생성자, 문서 경로를 매개변수로 전달합니다. 구조화된 문서 태그 내에 표시할 데이터가 포함된 XML 부분을 만듭니다.
+ 다음을 사용하여 Word 문서를 로드합니다.`Document`생성자, 문서 경로를 매개변수로 전달합니다. 구조화된 문서 태그 내에 표시할 데이터가 포함된 XML 부분을 만듭니다.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// 문서에 CustomXmlPart의 내용을 표시하는 StructuredDocumentTag를 만듭니다.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// StructuredDocumentTag에 대한 매핑을 설정하면
-	// XPath가 가리키는 CustomXmlPart의 일부만 표시됩니다.
+	//XPath가 가리키는 CustomXmlPart의 일부만 표시됩니다.
 	// 이 XPath는 CustomXmlPart의 첫 번째 "<root>" 요소 중 두 번째 "<text>" 요소의 내용을 가리킵니다.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

@@ -2,196 +2,135 @@
 title: إنشاء إشارة مرجعية في مستند Word
 linktitle: إنشاء إشارة مرجعية في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إنشاء إشارات مرجعية في مستند Word وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إنشاء إشارات مرجعية في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل المفصل خطوة بخطوة. مثالية لتصفح المستندات وتنظيمها.
 type: docs
 weight: 10
 url: /ar/net/programming-with-bookmarks/create-bookmark/
 ---
+## مقدمة
 
-في هذه المقالة، سنستكشف التعليمات البرمجية المصدر لـ C# أعلاه لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج.
+يمكن أن يؤدي إنشاء إشارات مرجعية في مستند Word إلى تغيير قواعد اللعبة، خاصة عندما تريد التنقل عبر المستندات الكبيرة دون عناء. سنتناول اليوم عملية إنشاء الإشارات المرجعية باستخدام Aspose.Words for .NET. سيأخذك هذا البرنامج التعليمي خطوة بخطوة، مما يضمن فهمك لكل جزء من العملية. لذلك، دعونا نتعمق!
 
 ## المتطلبات الأساسية
 
-- المعرفة الأساسية بلغة C#.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+قبل أن نبدأ، يجب أن يكون لديك ما يلي:
 
-## الخطوة 1: إنشاء المستند والمولد
+1.  Aspose.Words لمكتبة .NET: التنزيل والتثبيت من[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: Visual Studio أو أي بيئة تطوير .NET أخرى.
+3. المعرفة الأساسية بـ C#: فهم مفاهيم برمجة C# الأساسية.
 
- قبل إنشاء الإشارات المرجعية، نحتاج إلى إنشاء مستند ومنشئ المستندات باستخدام الملف`Document` و`DocumentBuilder` أشياء:
+## استيراد مساحات الأسماء
+
+للعمل مع Aspose.Words لـ .NET، تحتاج إلى استيراد مساحات الأسماء الضرورية:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## الخطوة 1: إعداد المستند وDocumentBuilder
+
+تهيئة المستند
+
+أولاً، نحتاج إلى إنشاء مستند جديد وتهيئة الملف`DocumentBuilder`. هذه هي نقطة البداية لإضافة محتوى وإشارات مرجعية إلى مستندك.
+
+```csharp
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
+ توضيح :`Document` الكائن هو القماش الخاص بك. ال`DocumentBuilder` يشبه القلم الخاص بك، والذي يسمح لك بكتابة المحتوى وإنشاء الإشارات المرجعية في المستند.
+
 ## الخطوة 2: إنشاء الإشارة المرجعية الرئيسية
 
- نحن نستخدم ال`StartBookmark` طريقة لبدء الإشارة المرجعية الرئيسية و`EndBookmark` طريقة لإنهاء ذلك. وفي المنتصف، يمكننا إضافة نص وإشارات مرجعية أخرى:
+بدء وإنهاء الإشارة المرجعية الرئيسية
+
+لإنشاء إشارة مرجعية، تحتاج إلى تحديد نقطتي البداية والنهاية. هنا، سنقوم بإنشاء إشارة مرجعية باسم "My Bookmark".
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-// أضف المزيد من الإشارات المرجعية أو النص هنا.
-
-builder. EndBookmark("My Bookmark");
 ```
 
-## الخطوة 3: إنشاء الإشارات المرجعية المتداخلة
+ توضيح :`StartBookmark` يمثل الأسلوب بداية الإشارة المرجعية، و`Writeln` يضيف النص داخل الإشارة المرجعية.
 
- يمكننا أيضًا إنشاء إشارات مرجعية متداخلة داخل إشارة مرجعية رئيسية. نحن نستخدم نفس الشيء`StartBookmark` و`EndBookmark` طرق إنشاء الإشارات المرجعية المتداخلة وإنهائها:
+## الخطوة 3: إنشاء إشارة مرجعية متداخلة
+
+أضف إشارة مرجعية متداخلة داخل الإشارة المرجعية الرئيسية
+
+يمكنك دمج الإشارات المرجعية داخل الإشارات المرجعية الأخرى. هنا، نضيف "Nested Bookmark" ضمن "My Bookmark".
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## الخطوة 4: تحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج
+ Explanation: تداخل الإشارات المرجعية يسمح بتنظيم محتوى أكثر تنظيما وهرميا. ال`EndBookmark` الطريقة تغلق الإشارة المرجعية الحالية.
 
- نحن نستخدم ال`PdfSaveOptions` كائن لتحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج. نحن نستخدم ال`BookmarksOutlineLevels` ملكية
+## الخطوة 4: إضافة نص خارج الإشارة المرجعية المتداخلة
 
-  لإضافة إشارات مرجعية رئيسية وإشارات مرجعية متداخلة مع مستوياتها الخاصة:
+استمر في إضافة المحتوى
+
+بعد الإشارة المرجعية المتداخلة، يمكننا الاستمرار في إضافة المزيد من المحتوى داخل الإشارة المرجعية الرئيسية.
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+Explanation: هذا يضمن أن الإشارة المرجعية الرئيسية تشمل كلا من الإشارة المرجعية المتداخلة والنص الإضافي.
+
+## الخطوة 5: تكوين خيارات حفظ PDF
+
+قم بإعداد خيارات حفظ PDF للإشارات المرجعية
+
+عند حفظ المستند بصيغة PDF، يمكننا تكوين خيارات لتضمين الإشارات المرجعية.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+ توضيح :`PdfSaveOptions` تتيح لك الفئة تحديد كيفية حفظ المستند كملف PDF. ال`BookmarksOutlineLevels` تحدد الخاصية التسلسل الهرمي للإشارات المرجعية في ملف PDF.
+
+## الخطوة 6: احفظ المستند
+
+احفظ المستند بصيغة PDF
+
+وأخيرا، احفظ المستند بالخيارات المحددة.
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### مثال على التعليمات البرمجية المصدر لإنشاء إشارة مرجعية باستخدام Aspose.Words لـ .NET
-
-فيما يلي المثال الكامل للتعليمة البرمجية المصدر لتوضيح كيفية إنشاء الإشارات المرجعية باستخدام Aspose.Words لـ .NET:
-
-```csharp
-
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+ توضيح :`Save` الطريقة تحفظ المستند بالتنسيق والموقع المحددين. سيتضمن ملف PDF الآن الإشارات المرجعية التي أنشأناها.
 
 ## خاتمة
 
-في هذه المقالة، قمنا باستكشاف التعليمات البرمجية المصدر لـ C# لفهم كيفية استخدام وظيفة إنشاء إشارة مرجعية في Aspose.Words لـ .NET. لقد اتبعنا دليلًا خطوة بخطوة لإنشاء إشارات مرجعية في مستند وتحديد مستويات معاينة الإشارات المرجعية في ملف PDF الناتج.
+يعد إنشاء الإشارات المرجعية في مستند Word باستخدام Aspose.Words لـ .NET أمرًا مباشرًا ومفيدًا للغاية للتنقل بين المستندات وتنظيمها. سواء كنت تقوم بإنشاء تقارير، أو إنشاء كتب إلكترونية، أو إدارة مستندات كبيرة، فإن الإشارات المرجعية تجعل الحياة أسهل. اتبع الخطوات الموضحة في هذا البرنامج التعليمي، وسيكون لديك ملف PDF مزود بإشارة مرجعية وجاهز في أي وقت من الأوقات.
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س: ما هي المتطلبات الأساسية لاستخدام وظيفة "إنشاء إشارات مرجعية" في Aspose.Words لـ .NET؟
+### هل يمكنني إنشاء إشارات مرجعية متعددة على مستويات مختلفة؟
 
-ج: لاستخدام وظيفة "إنشاء إشارات مرجعية" في Aspose.Words لـ .NET، يجب أن تكون لديك المعرفة الأساسية بلغة C#. تحتاج أيضًا إلى بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+قطعاً! يمكنك إنشاء العديد من الإشارات المرجعية حسب الحاجة وتحديد مستوياتها الهرمية عند حفظ المستند كملف PDF.
 
-#### س: كيفية إنشاء مستند في Aspose.Words لـ .NET؟
+### كيف أقوم بتحديث نص الإشارة المرجعية؟
 
- ج: لإنشاء مستند في Aspose.Words لـ .NET، يمكنك استخدام`Document` فصل. هنا نموذج التعليمات البرمجية:
+ يمكنك الانتقال إلى الإشارة المرجعية باستخدام`DocumentBuilder.MoveToBookmark` ثم قم بتحديث النص.
 
-```csharp
-Document doc = new Document();
-```
+### هل من الممكن حذف إشارة مرجعية؟
 
-#### س: كيف يمكن إنشاء إشارة مرجعية رئيسية في مستند باستخدام Aspose.Words لـ .NET؟
+ نعم، يمكنك حذف إشارة مرجعية باستخدام`Bookmarks.Remove` الطريقة عن طريق تحديد اسم الإشارة المرجعية.
 
- ج: لإنشاء إشارة مرجعية رئيسية في مستند باستخدام Aspose.Words لـ .NET، يمكنك استخدام`StartBookmark` لبدء الإشارة المرجعية، قم بإضافة نص أو إشارات مرجعية أخرى بالداخل، ثم استخدم` EndBookmark` لإنهاء ذلك. هنا نموذج التعليمات البرمجية:
+### هل يمكنني إنشاء إشارات مرجعية بتنسيقات أخرى إلى جانب PDF؟
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+نعم، يدعم Aspose.Words الإشارات المرجعية بتنسيقات مختلفة، بما في ذلك DOCX وHTML وEPUB.
 
-#### س: كيف يمكن إنشاء إشارة مرجعية متداخلة داخل إشارة مرجعية رئيسية باستخدام Aspose.Words for .NET؟
+### كيف يمكنني التأكد من ظهور الإشارات المرجعية بشكل صحيح في ملف PDF؟
 
- ج: لإنشاء إشارة مرجعية متداخلة داخل إشارة مرجعية رئيسية باستخدام Aspose.Words لـ .NET، يمكنك استخدام نفس الإشارة`StartBookmark` و`EndBookmark` طرق لبدء وإنهاء الإشارة المرجعية المتداخلة. هنا نموذج التعليمات البرمجية:
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### س: كيفية تحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج باستخدام Aspose.Words for .NET؟
-
- ج: لتحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج باستخدام Aspose.Words لـ .NET، يمكنك استخدام`PdfSaveOptions` الطبقة و`BookmarksOutlineLevels` ملكية. يمكنك إضافة إشارات مرجعية رئيسية وإشارات مرجعية متداخلة بمستوياتها الخاصة. هنا نموذج التعليمات البرمجية:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### س: كيف يمكن حفظ مستند بعد إنشاء الإشارات المرجعية باستخدام Aspose.Words لـ .NET؟
-
- ج: لحفظ مستند بعد إنشاء الإشارات المرجعية باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Save` طريقة`Document` كائن يحدد مسار الملف الوجهة. هنا نموذج التعليمات البرمجية:
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### س: كيفية تحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج باستخدام Aspose.Words for .NET؟
-
- ج: لتحديد مستويات معاينة الإشارة المرجعية في ملف PDF الناتج باستخدام Aspose.Words لـ .NET، يمكنك استخدام`PdfSaveOptions` الطبقة و`BookmarksOutlineLevels` ملكية. يمكنك إضافة إشارات مرجعية رئيسية وإشارات مرجعية متداخلة بمستوياتها الخاصة. هنا نموذج التعليمات البرمجية:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### س: كيف يمكن إنشاء إشارات مرجعية متداخلة داخل إشارة مرجعية رئيسية باستخدام Aspose.Words for .NET؟
-
- ج: لإنشاء إشارات مرجعية متداخلة داخل إشارة مرجعية رئيسية باستخدام Aspose.Words لـ .NET، يمكنك استخدام نفس الشيء`StartBookmark` و`EndBookmark` طرق لبدء وإنهاء الإشارات المرجعية المتداخلة. تأكد من تحديد الإشارة المرجعية الأصلية كمعلمة عند الاتصال بـ`StartBookmark` طريقة. هنا نموذج التعليمات البرمجية:
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### س: كيفية إضافة نص داخل إشارة مرجعية باستخدام Aspose.Words لـ .NET؟
-
- ج: لإضافة نص داخل إشارة مرجعية باستخدام Aspose.Words لـ .NET، يمكنك استخدام`Write` طريقة`DocumentBuilder`كائن يحدد النص المراد إضافته. هنا نموذج التعليمات البرمجية:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### س: كيف يمكن إنشاء إشارة مرجعية رئيسية في مستند باستخدام Aspose.Words لـ .NET؟
-
- ج: لإنشاء إشارة مرجعية رئيسية في مستند باستخدام Aspose.Words لـ .NET، يمكنك استخدام`StartBookmark` طريقة لبدء الإشارة المرجعية و`EndBookmark` طريقة لإنهاء ذلك. هنا نموذج التعليمات البرمجية:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+ تأكد من تعريف`BookmarksOutlineLevels` بشكل صحيح في`PdfSaveOptions`. يضمن ذلك تضمين الإشارات المرجعية في المخطط التفصيلي لملف PDF.

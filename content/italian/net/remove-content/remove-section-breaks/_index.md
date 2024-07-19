@@ -46,7 +46,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 ```
 
 ## Passaggio 4: salva il documento modificato
- Infine, salveremo il documento modificato utilizzando il file`Save` metodo. Specificare il percorso e il formato del file di output desiderati (ad esempio, DOCX) per il documento modificato.
+Infine, salveremo il documento modificato utilizzando il file`Save` metodo. Specificare il percorso e il formato del file di output desiderati (ad esempio, DOCX) per il documento modificato.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

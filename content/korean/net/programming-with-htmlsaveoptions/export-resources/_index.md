@@ -41,10 +41,10 @@ ResourceFolderAlias = "http://example.com/resources"
 
  이 코드는`HtmlSaveOptions` 다음 옵션을 설정합니다.
 
-- `CssStyleSheetType` 로 설정되어 있습니다`CssStyleSheetType.External`CSS 스타일 시트를 외부 파일로 내보냅니다.
+- `CssStyleSheetType` 로 설정되어 있습니다`CssStyleSheetType.External` CSS 스타일 시트를 외부 파일로 내보냅니다.
 - `ExportFontResources` 로 설정되어 있습니다`true` 글꼴 리소스를 내보냅니다.
 - `ResourceFolder` 리소스가 저장될 대상 디렉터리를 지정합니다.
-- `ResourceFolderAlias` 리소스에 액세스하는 데 사용되는 URL 별칭을 지정합니다.
+- `ResourceFolderAlias`리소스에 액세스하는 데 사용되는 URL 별칭을 지정합니다.
 
 ## 4단계: 문서를 HTML로 변환 및 저장
 

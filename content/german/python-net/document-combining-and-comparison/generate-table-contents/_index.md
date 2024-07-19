@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines umfassenden Inhaltsverzeichnisses für Word-Dokumente
 linktitle: Erstellen eines umfassenden Inhaltsverzeichnisses für Word-Dokumente
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erstellen Sie mit Aspose.Words für Python ein leserfreundliches Inhaltsverzeichnis. Erfahren Sie, wie Sie die Struktur Ihres Dokuments nahtlos generieren, anpassen und aktualisieren.
 type: docs
 weight: 15
@@ -140,7 +140,7 @@ Auf jeden Fall! Passen Sie den Stil „Inhaltsverzeichniseinträge“ an, indem 
 
 ### Ist es möglich, für bestehende Dokumente ein Inhaltsverzeichnis zu generieren?
 
-Ja, Sie können ein Inhaltsverzeichnis für vorhandene Dokumente generieren. Laden Sie das Dokument einfach mit Aspose.Words, folgen Sie den in diesem Tutorial beschriebenen Schritten und aktualisieren Sie das Inhaltsverzeichnis nach Bedarf.
+Ja, Sie können ein Inhaltsverzeichnis für vorhandene Dokumente generieren. Laden Sie das Dokument einfach mit Aspose.Words, befolgen Sie die in diesem Tutorial beschriebenen Schritte und aktualisieren Sie das Inhaltsverzeichnis nach Bedarf.
 
 ### Wie entferne ich das Inhaltsverzeichnis aus meinem Dokument?
 

@@ -2,24 +2,39 @@
 title: Verberg de grafiekas in een Word-document
 linktitle: Verberg de grafiekas in een Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de diagramas in een document kunt verbergen met Aspose.Words voor .NET. Verberg de as voor een schonere en meer gerichte kaartweergave.
+description: Leer hoe u de diagramas in een Word-document kunt verbergen met Aspose.Words voor .NET met onze gedetailleerde, stapsgewijze zelfstudie.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/hide-chart-axis/
 ---
+## Invoering
 
-In deze zelfstudie wordt uitgelegd hoe u Aspose.Words voor .NET gebruikt om de diagramas in een document te verbergen. De meegeleverde broncode laat zien hoe u een diagram maakt, reeksgegevens toevoegt en de diagramas verbergt.
+Bij het maken van dynamische en visueel aantrekkelijke Word-documenten zijn vaak diagrammen en grafieken nodig. In een dergelijk scenario kan het nodig zijn de grafiekas te verbergen voor een overzichtelijkere presentatie. Aspose.Words voor .NET biedt een uitgebreide en eenvoudig te gebruiken API voor dergelijke taken. In deze zelfstudie wordt u door de stappen geleid om een grafiekas in een Word-document te verbergen met behulp van Aspose.Words voor .NET.
 
-## Stap 1: Zet het project op
+## Vereisten
 
-Zorg ervoor dat u aan de volgende vereisten voldoet:
+Voordat we ingaan op de tutorial, zorg ervoor dat je aan de volgende vereisten voldoet:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd. U kunt het downloaden door NuGet-pakketbeheer te gebruiken om het te installeren.
-- Een documentmappad waar het uitvoerdocument wordt opgeslagen.
+-  Aspose.Words voor .NET: Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Elke IDE die .NET-ontwikkeling ondersteunt, zoals Visual Studio.
+- .NET Framework: Zorg ervoor dat .NET Framework op uw computer is geïnstalleerd.
+- Basiskennis van C#: Bekendheid met de programmeertaal C# is een voordeel.
 
-## Stap 2: Maak een nieuw document en voeg een diagram in
+## Naamruimten importeren
 
- Maak een nieuwe`Document` voorwerp en een`DocumentBuilder` om het document op te bouwen.
+Om met Aspose.Words voor .NET te gaan werken, moet u de vereiste naamruimten in uw project importeren. Hier ziet u hoe u het kunt doen:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Laten we het proces opsplitsen in eenvoudige, gemakkelijk te volgen stappen.
+
+## Stap 1: Initialiseer het document en DocumentBuilder
+
+De eerste stap omvat het maken van een nieuw Word-document en het initialiseren van het DocumentBuilder-object.
 
 ```csharp
 // Pad naar uw documentmap
@@ -29,88 +44,78 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Voeg vervolgens een diagram in het document in met behulp van de`InsertChart` werkwijze van de`DocumentBuilder`. In dit voorbeeld voegen we een kolomdiagram in.
+ In deze stap definiëren we het pad waar het document zal worden opgeslagen. Wij maken dan een nieuwe aan`Document` voorwerp en een`DocumentBuilder` bezwaar maken om te beginnen met het bouwen van ons document.
+
+## Stap 2: Voeg een diagram in
+
+ Vervolgens voegen we een diagram in het document in met behulp van de`DocumentBuilder` voorwerp.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Stap 3: Voeg seriegegevens toe aan het diagram
+ Hier voegen we een kolomdiagram in met opgegeven afmetingen. De`InsertChart` methode retourneert a`Shape` object dat de grafiek bevat.
 
-Voeg seriegegevens toe aan het diagram. In dit voorbeeld voegen we vijf items en de bijbehorende waarden toe.
+## Stap 3: Wis bestaande series
+
+Voordat we nieuwe gegevens aan het diagram toevoegen, moeten we eventuele bestaande reeksen wissen.
 
 ```csharp
 chart.Series.Clear();
+```
+
+Deze stap zorgt ervoor dat alle standaardgegevens in het diagram worden verwijderd, zodat plaats wordt gemaakt voor de nieuwe gegevens die we hierna zullen toevoegen.
+
+## Stap 4: Seriegegevens toevoegen
+
+Laten we nu onze eigen gegevensreeksen aan het diagram toevoegen.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Stap 4: Verberg de grafiekas
+In deze stap voegen we een serie toe met de titel "Aspose Series 1" met bijbehorende categorieën en waarden.
 
- Als u de diagramas wilt verbergen, gaat u naar het bestand`AxisY` eigenschap van het diagram en stel de`Hidden`eigendom aan`true`.
+## Stap 5: Verberg de Y-as
+
+ Om de Y-as van het diagram te verbergen, stellen we eenvoudigweg de`Hidden` eigenschap van de Y-as`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-In dit voorbeeld verbergen we de Y-as van het diagram.
+Deze coderegel verbergt de Y-as, waardoor deze onzichtbaar wordt in het diagram.
 
-## Stap 5: Sla het document op
+## Stap 6: Sla het document op
 
- Sla het document ten slotte op in de opgegeven map met behulp van de`Save` werkwijze van de`Document` voorwerp.
+Sla het document ten slotte op in de opgegeven map.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-Hiermee is de implementatie van het verbergen van de grafiekas met Aspose.Words voor .NET voltooid.
-
-### Voorbeeldbroncode voor het verbergen van de grafiekas met Aspose.Words voor .NET 
-
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Hidden = true;
-	doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
-```
+Met deze opdracht wordt het Word-document met het diagram opgeslagen in het opgegeven pad.
 
 ## Conclusie
 
-In deze zelfstudie hebt u geleerd hoe u de grafiekas in een Word-document kunt verbergen met Aspose.Words voor .NET. Door de stapsgewijze handleiding te volgen en de meegeleverde broncode te gebruiken, kunt u een diagram maken, seriegegevens toevoegen en de diagramas verbergen om het gewenste visuele effect te bereiken.
+Gefeliciteerd! U hebt met succes geleerd hoe u een grafiekas in een Word-document kunt verbergen met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het eenvoudig om Word-documenten programmatisch te manipuleren. Door deze stappen te volgen, kunt u met minimale inspanning aangepaste en professioneel ogende documenten maken.
 
- Aspose.Words voor .NET biedt een uitgebreide API voor woordenverwerking met diagrammen in Word-documenten, waardoor u verschillende aspecten van het diagram kunt manipuleren, inclusief aseigenschappen. Door toegang te krijgen tot de`AxisY` eigenschap van het diagram, kunt u de Y-as verbergen om deze uit de diagramvisualisatie te verwijderen.
+## Veelgestelde vragen
 
-Het verbergen van de diagramas kan handig zijn als u zich wilt concentreren op de diagramgegevens zonder afgeleid te worden door de aslijnen en labels. Het geeft de kaart een schoner en minimalistischer uiterlijk.
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige API voor het maken, bewerken, converteren en manipuleren van Word-documenten binnen .NET-toepassingen.
 
-Door Aspose.Words voor .NET te gebruiken, kunt u eenvoudig grafiekmogelijkheden in uw .NET-toepassingen integreren en professioneel ogende documenten genereren met aangepaste grafieken en verborgen grafiekassen.
+### Kan ik zowel de X- als de Y-as in een diagram verbergen?
+ Ja, je kunt beide assen verbergen door de`Hidden` eigendom van beiden`AxisX`En`AxisY` naar`true`.
 
-### Veelgestelde vragen
+### Is er een gratis proefversie beschikbaar voor Aspose.Words voor .NET?
+ Ja, u kunt een gratis proefperiode krijgen[hier](https://releases.aspose.com/).
 
-#### Q1. Wat is Aspose.Words voor .NET?
-Aspose.Words voor .NET is een krachtige bibliotheek voor documentverwerking waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, manipuleren en opslaan in .NET-toepassingen. Het biedt een breed scala aan functies voor tekstverwerking met documentelementen, waaronder diagrammen en diagramassen.
+### Waar kan ik meer documentatie vinden?
+ U kunt gedetailleerde documentatie vinden op Aspose.Words voor .NET[hier](https://reference.aspose.com/words/net/).
 
-#### Vraag 2. Hoe kan ik Aspose.Words voor .NET installeren?
-kunt Aspose.Words voor .NET installeren door het te downloaden met behulp van NuGet-pakketbeheer in Visual Studio. Zoek eenvoudigweg naar "Aspose.Words" in de NuGet-pakketbeheerder en installeer het in uw project.
-
-#### Q3. Kan ik zowel de X-as als de Y-as van een diagram verbergen?
- Ja, u kunt zowel de X-as als de Y-as van een diagram verbergen met Aspose.Words voor .NET. Om de X-as te verbergen, kunt u toegang krijgen tot de`AxisX` eigenschap van het diagram en stel de`Hidden`eigendom aan`true` . Op dezelfde manier kunt u, om de Y-as te verbergen, toegang krijgen tot het`AxisY` eigendom en stel de`Hidden`eigendom aan`true`. Hierdoor kunt u beide assen uit de diagramvisualisatie verwijderen.
-
-#### Q4. Kan ik de as opnieuw weergeven nadat ik deze heb verborgen?
-Ja, u kunt de grafiekas opnieuw weergeven nadat u deze hebt verborgen met Aspose.Words voor .NET. Om een verborgen as weer te geven, stelt u eenvoudigweg de`Hidden` eigendom van de corresponderende`AxisX` of`AxisY` bezwaar tegen`false`. Hierdoor wordt de as weer zichtbaar in het diagram.
-
-#### Vraag 5. Kan ik andere eigenschappen van de diagramas aanpassen?
- Ja, met Aspose.Words voor .NET kunt u verschillende eigenschappen van de grafiekas aanpassen, zoals de astitel, labels, lijnkleur en meer. Door toegang te krijgen tot de`AxisX` En`AxisY` eigenschappen van het diagram, kunt u eigenschappen wijzigen, zoals`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, en vele anderen. Dit geeft u een nauwkeurige controle over het uiterlijk en het gedrag van de diagramas.
-
-#### Vraag 6. Kan ik het diagram met de verborgen as in verschillende bestandsformaten opslaan?
- Ja, met Aspose.Words voor .NET kunt u het document met het diagram met een verborgen as opslaan in verschillende bestandsindelingen, zoals DOCX, PDF, HTML en meer. U kunt het gewenste uitvoerformaat kiezen op basis van uw vereisten en de`Save` werkwijze van de`Document` object om het document op te slaan. De verborgen as blijft behouden in het opgeslagen document.
+### Hoe kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap[hier](https://forum.aspose.com/c/words/8).

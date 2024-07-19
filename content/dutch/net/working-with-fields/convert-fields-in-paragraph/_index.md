@@ -21,7 +21,7 @@ Om Aspose.Words in uw project te gebruiken, moet u de nodige referenties toevoeg
 Voordat u velden kunt converteren, moet u het document laden dat de te converteren velden bevat. Zorg ervoor dat u het juiste pad opgeeft naar de map die het document bevat. Zo uploadt u het document:
 
 ```csharp
-// Pad naar de documentenmap.
+//Pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Laad het document.
@@ -56,7 +56,7 @@ Zorg ervoor dat u het juiste pad en de juiste bestandsnaam voor de back-up opgee
 ### Broncodevoorbeeld voor het converteren van velden in alinea met Aspose.Words voor .NET
 
 ```csharp
-// Pad naar de documentenmap.
+//Pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Laad het document.

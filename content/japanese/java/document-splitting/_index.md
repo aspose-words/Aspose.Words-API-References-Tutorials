@@ -30,7 +30,7 @@ Aspose.Words for Java を使用してドキュメントを効率的に分割す�
 ### [ドキュメントを HTML ページに分割する](./splitting-documents-into-html-pages/)
 Aspose.Words for Java を使用して Word 文書を HTML ページに分割する方法を学びます。ソース コード付きのステップ バイ ステップ ガイドにより、プロセスが簡単かつ効率的になります。今すぐ文書の変換を始めましょう。
 ### [ドキュメントページの分割](./document-page-separation/)
-Aspose.Words for Java を使用してドキュメント ページ分離を実行する方法を学びます。この包括的なガイドでは、効率的なドキュメント処理のための手順とソース コードが段階的に提供されます。
+Aspose.Words for Java を使用してドキュメント ページ分離を実行する方法を学びます。この包括的なガイドでは、効率的なドキュメント処理のための手順とソース コードが段階的に説明されています。
 ### [ページごとにドキュメントコンテンツを抽出する](./extracting-document-content-pages/)
 Aspose.Words for Java を使用してページごとにドキュメントの内容を抽出する方法を学びます。ソース コード付きのこのステップ バイ ステップ ガイドを読めば、すぐにエキスパートになれます。
 ### [文書の分割と抽出のテクニック](./document-splitting-extraction-techniques/)

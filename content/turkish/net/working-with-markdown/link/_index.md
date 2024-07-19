@@ -51,8 +51,8 @@ Tebrikler! Artık Aspose.Words for .NET ile bağlantılar özelliğini nasıl ku
 
 #### S: Aspose.Words'te bir bağlantının görüntü metnini nasıl özelleştirebilirim?
 
-C: Aspose.Words'te bir bağlantının görüntü metnini özelleştirmek için,`<a>` Etiketler. Örneğin,`<a href="https://www.aspose.com">Click here</a>` "Buraya tıklayın" metnini köprü olarak görüntüleyecektir.
+ C: Aspose.Words'te bir bağlantının görüntü metnini özelleştirmek için,`<a>` Etiketler. Örneğin,`<a href="https://www.aspose.com">Click here</a>` "Buraya tıklayın" metnini köprü olarak görüntüleyecektir.
 
 #### S: Aspose.Words'te bir bağlantı için hedef belirleyebilir miyim?
 
- C: Evet, Aspose.Words'te bir bağlantı için bir hedef belirleyebilirsiniz.`target` niteliği`<a>` etiket. Örneğin,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` bağlantıyı yeni bir pencerede veya sekmede açacaktır.
+C: Evet, Aspose.Words'te bir bağlantı için bir hedef belirleyebilirsiniz.`target` niteliği`<a>` etiket. Örneğin,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` bağlantıyı yeni bir pencerede veya sekmede açacaktır.

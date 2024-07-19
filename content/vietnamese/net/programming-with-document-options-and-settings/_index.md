@@ -14,12 +14,12 @@ Các hướng dẫn giải thích cách tùy chỉnh các tùy chọn tải tài
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Tối ưu hóa cho Ms Word](./optimize-for-ms-word/) | Hướng dẫn từng bước để tối ưu hóa tài liệu cho MS Word bằng Aspose.Words for .NET. |
-| [Hiển thị lỗi ngữ pháp và chính tả](./show-grammatical-and-spelling-errors/) | Hướng dẫn từng bước để bật hiển thị lỗi ngữ pháp và chính tả trong tài liệu bằng Aspose.Words for .NET. |
-| [Dọn dẹp các kiểu và danh sách không sử dụng](./cleanup-unused-styles-and-lists/) | Hướng dẫn từng bước để dọn dẹp các kiểu và danh sách không sử dụng trong tài liệu bằng Aspose.Words cho .NET. |
-| [Dọn dẹp phong cách trùng lặp](./cleanup-duplicate-style/) | Hướng dẫn từng bước để xóa các kiểu trùng lặp trong tài liệu bằng Aspose.Words cho .NET. Bao gồm mã nguồn đầy đủ. |
-| [Xem tùy chọn](./view-options/) | Hướng dẫn từng bước để định cấu hình các tùy chọn hiển thị tài liệu với Aspose.Words cho .NET. |
-| [Thiết lập trang tài liệu](./document-page-setup/) | Hướng dẫn từng bước để thiết lập bố cục tài liệu với Aspose.Words cho .NET. |
-| [Thêm tiếng Nhật làm ngôn ngữ soạn thảo](./add-japanese-as-editing-languages/) | Hướng dẫn từng bước để thêm tiếng Nhật làm ngôn ngữ soạn thảo với Aspose.Words cho .NET. |
-| [Đặt tiếng Nga làm ngôn ngữ chỉnh sửa mặc định](./set-russian-as-default-editing-language/) | Hướng dẫn từng bước để đặt tiếng Nga làm ngôn ngữ chỉnh sửa mặc định của tài liệu với Aspose.Words cho .NET. |
-| [Đặt thiết lập trang và định dạng phần](./set-page-setup-and-section-formatting/) | Hướng dẫn từng bước để thiết lập bố cục và định dạng phần của tài liệu bằng Aspose.Words for .NET. |
+| [Tối ưu hóa cho Ms Word](./optimize-for-ms-word/) | Dễ dàng tối ưu hóa tài liệu ngữ pháp Word cho các phiên bản MS Word khác nhau bằng cách sử dụng Aspose.Words for .NET với hướng dẫn từng bước này. |
+| [Hiển thị lỗi ngữ pháp và chính tả](./show-grammatical-and-spelling-errors/) | Tìm hiểu cách hiển thị lỗi ngữ pháp và chính tả trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn toàn diện này. |
+| [Dọn dẹp các kiểu và danh sách không sử dụng](./cleanup-unused-styles-and-lists/) | Dọn dẹp tài liệu Word của bạn bằng Aspose.Words for .NET bằng cách xóa các kiểu và danh sách không sử dụng. Hãy làm theo hướng dẫn từng bước này để sắp xếp tài liệu của bạn một cách dễ dàng. |
+| [Dọn dẹp phong cách trùng lặp](./cleanup-duplicate-style/) | Tìm hiểu cách xóa các kiểu trùng lặp trong tài liệu Word của bạn bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện của chúng tôi. |
+| [Xem tùy chọn](./view-options/) | Tìm hiểu cách xem các tùy chọn trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm cài đặt loại chế độ xem, điều chỉnh mức thu phóng và lưu tài liệu của bạn. |
+| [Thiết lập trang tài liệu](./document-page-setup/) | Thiết lập trang tài liệu chính với Aspose.Words cho .NET theo các bước đơn giản. Tìm hiểu cách tải, đặt bố cục, xác định ký tự trên mỗi dòng, dòng trên trang và lưu tài liệu của bạn. |
+| [Thêm tiếng Nhật làm ngôn ngữ soạn thảo](./add-japanese-as-editing-languages/) | Tìm hiểu cách thêm tiếng Nhật làm ngôn ngữ chỉnh sửa trong tài liệu của bạn bằng Aspose.Words for .NET với hướng dẫn chi tiết từng bước này. |
+| [Đặt tiếng Nga làm ngôn ngữ chỉnh sửa mặc định](./set-russian-as-default-editing-language/) | Tìm hiểu cách đặt tiếng Nga làm ngôn ngữ chỉnh sửa mặc định trong tài liệu Word bằng Aspose.Words cho .NET. Thực hiện theo hướng dẫn từng bước của chúng tôi để được hướng dẫn chi tiết. |
+| [Đặt thiết lập trang và định dạng phần](./set-page-setup-and-section-formatting/) | Tìm hiểu cách thiết lập thiết lập trang và định dạng phần trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Nâng cao khả năng trình bày tài liệu của bạn một cách dễ dàng. |

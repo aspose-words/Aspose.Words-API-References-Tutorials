@@ -114,7 +114,7 @@ version_info.value = "Version 1.0 - Initial Release"
 
 ## Conclusion
 
-La gestion efficace des propriétés et des métadonnées des documents est vitale pour l'organisation et la récupération des documents. Aspose.Words for Python rationalise ce processus, permettant aux développeurs de manipuler et de contrôler sans effort les attributs des documents par programme.
+La gestion efficace des propriétés et des métadonnées des documents est vitale pour l'organisation et la récupération des documents. Aspose.Words for Python rationalise ce processus, permettant aux développeurs de manipuler et de contrôler sans effort les attributs des documents par programmation.
 
 ## FAQ
 

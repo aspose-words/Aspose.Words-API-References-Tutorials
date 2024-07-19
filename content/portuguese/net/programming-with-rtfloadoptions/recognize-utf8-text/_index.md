@@ -31,7 +31,7 @@ RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);
 ```
 
- Nesta etapa, carregamos o documento RTF usando o`Document` método e passando o caminho para o arquivo RTF a ser carregado, junto com as opções de carregamento especificadas.
+ Nesta etapa, carregamos o documento RTF usando o`Document` método e passando o caminho para o arquivo RTF a ser carregado, juntamente com as opções de carregamento especificadas.
 
 ## Etapa 4: salve o documento
 

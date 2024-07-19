@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pt/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
-Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e manipular documentos do Word em um aplicativo C#. Entre os recursos oferecidos pelo Aspose.Words está a capacidade de alterar o estilo de um nível específico do índice analítico de um documento. Neste guia, mostraremos como usar o código-fonte C# do Aspose.Words for .NET para alterar o estilo de um nível do índice analítico de um documento do Word.
+Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e manipular documentos do Word em um aplicativo C#. Entre os recursos oferecidos pelo Aspose.Words está a capacidade de alterar o estilo de um nível específico do índice analítico de um documento. Neste guia, mostraremos como usar o código-fonte C# do Aspose.Words for .NET para alterar o estilo de um nível do índice de um documento do Word.
 
 ## Compreendendo a biblioteca Aspose.Words
 

@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Aquí usamos una condición para verificar si la matriz es de tipo flotante. Si es así, imprimimos el`RelativeHorizontalAlignment` y`RelativeVerticalAlignment` propiedades para obtener la alineación horizontal y vertical relativa de la tabla. De lo contrario, imprimimos el`Alignment` propiedad para obtener la alineación de la matriz.
+ Aquí usamos una condición para verificar si la matriz es de tipo flotante. Si es así, imprimimos el`RelativeHorizontalAlignment`y`RelativeVerticalAlignment` propiedades para obtener la alineación horizontal y vertical relativa de la tabla. De lo contrario, imprimimos el`Alignment` propiedad para obtener la alineación de la matriz.
 
 ### Código fuente de muestra para Obtener posición de tabla usando Aspose.Words para .NET 
 

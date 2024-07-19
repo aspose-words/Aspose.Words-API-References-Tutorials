@@ -73,7 +73,7 @@ foreach (Revision revision in doc.Revisions)
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u toegang krijgt tot de herziene versie van een Word-document met Aspose.Words voor .NET. Door het document te laden, naar de herziene versie te navigeren en door de herzieningen te bladeren, konden we specifieke informatie verkrijgen voor paragrafen die lijstitems zijn. Aspose.Words voor .NET biedt krachtige functies voor het manipuleren van Word-documenten, inclusief toegang tot recensies. U kunt deze kennis nu gebruiken om toegang te krijgen tot de herziene versie van uw eigen Word-documenten met Aspose.Words voor .NET.
+In deze zelfstudie hebben we geleerd hoe u toegang krijgt tot de herziene versie van een Word-document met Aspose.Words voor .NET. Door het document te laden, naar de herziene versie te navigeren en door de herzieningen te bladeren, konden we specifieke informatie verkrijgen voor paragrafen die lijstitems zijn. Aspose.Words voor .NET biedt krachtige functies voor het manipuleren van Word-documenten, inclusief toegang tot recensies. U kunt deze kennis nu gebruiken om toegang te krijgen tot de herziene versie van uw eigen Word-documenten met behulp van Aspose.Words voor .NET.
 
 ### Veelgestelde vragen
 

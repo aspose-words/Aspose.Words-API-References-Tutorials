@@ -65,7 +65,7 @@ doc.save(outPath + "WorkingWithComments.AddComments.docx");
 
 
 ## 7. Kesimpulan
-Dalam tutorial ini, kita mempelajari cara menggunakan komentar di Aspose.Words untuk Java. Kini Anda dapat membuat dokumen dinamis dengan penjelasan dan anotasi, sehingga meningkatkan kolaborasi dan kejelasan dokumen.
+Dalam tutorial ini, kita mempelajari cara menggunakan komentar di Aspose.Words untuk Java. Anda kini dapat membuat dokumen dinamis dengan penjelasan dan anotasi, sehingga meningkatkan kolaborasi dan kejelasan dokumen.
 
 ## FAQ
 

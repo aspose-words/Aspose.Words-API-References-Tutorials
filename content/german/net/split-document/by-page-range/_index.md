@@ -12,7 +12,7 @@ url: /de/net/split-document/by-page-range/
 In diesem Tutorial führen wir Sie Schritt für Schritt durch das Verständnis und die Verwendung der Funktion „Nach Seitenbereich“ von Aspose.Words für .NET. Mit dieser Funktion können Sie einen bestimmten Teil eines großen Word-Dokuments mithilfe eines bestimmten Seitenbereichs extrahieren. Wir stellen Ihnen den vollständigen Quellcode und Markdown-Ausgabeformate zur Verfügung, damit Sie ihn später leichter verstehen und verwenden können.
 
 ## Anforderungen
-Bevor Sie beginnen, stellen Sie sicher, dass Folgendes vorhanden ist:
+Bevor Sie beginnen, stellen Sie sicher, dass Sie Folgendes eingerichtet haben:
 
 1. Aspose.Words für .NET auf Ihrem Entwicklungscomputer installiert.
 2. Eine große Word-Datei, aus der Sie einen bestimmten Teil extrahieren möchten.

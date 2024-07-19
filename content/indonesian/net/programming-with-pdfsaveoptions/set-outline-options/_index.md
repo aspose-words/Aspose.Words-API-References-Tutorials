@@ -72,7 +72,7 @@ Dalam tutorial ini, kami menjelaskan cara mengatur opsi kerangka dalam dokumen P
 ### Pertanyaan yang Sering Diajukan
 
 #### T: Apa yang dimaksud dengan opsi kerangka dalam dokumen PDF?
-J: Opsi kerangka dalam dokumen PDF mengacu pada struktur hierarki konten dokumen. Ini memungkinkan Anda membuat daftar isi interaktif dan memfasilitasi navigasi dalam dokumen. Opsi kerangka menentukan tingkat judul dan subjudul untuk disertakan dalam kerangka dan tingkat detail untuk ditampilkan dalam kerangka yang dihasilkan.
+J: Opsi garis besar dalam dokumen PDF mengacu pada struktur hierarki konten dokumen. Ini memungkinkan Anda membuat daftar isi interaktif dan memfasilitasi navigasi dalam dokumen. Opsi kerangka menentukan tingkat judul dan subjudul untuk disertakan dalam kerangka dan tingkat detail untuk ditampilkan dalam kerangka yang dihasilkan.
 
 #### T: Bagaimana cara mengatur opsi kerangka dalam dokumen PDF menggunakan Aspose.Words untuk .NET?
 J: Untuk mengatur opsi kerangka dalam dokumen PDF menggunakan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:

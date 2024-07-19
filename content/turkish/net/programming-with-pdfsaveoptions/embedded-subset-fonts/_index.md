@@ -92,4 +92,4 @@ Küçültülmüş PDF dosya boyutu: Yalnızca belgede kullanılan gliflerin ekle
 
 Belgenin görünümünün korunması: PDF dosyasında bulunan yazı tipi alt kümeleri, yalnızca gerçekte kullanılan karakterleri kullanarak belgenin görünümünü yeniden oluşturmayı mümkün kılar.
 
-Lisans kısıtlamalarına uygunluk: Lisans kısıtlamaları nedeniyle tam yazı tiplerinin yasal olarak gömülemediği durumlarda yazı tiplerinin alt kümelerinin gömülmesi tercih edilebilir.
+Lisans kısıtlamalarına uygunluk: Lisans kısıtlamaları nedeniyle yasal olarak tam yazı tiplerinin eklenemediği durumlarda yazı tiplerinin alt kümelerinin gömülmesi tercih edilebilir.

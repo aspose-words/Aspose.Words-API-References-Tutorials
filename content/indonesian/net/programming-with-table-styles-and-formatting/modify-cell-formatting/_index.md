@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 ```
 
 ## Langkah 3: Buka sel untuk memodifikasi
- Untuk mengubah format sel, kita perlu menavigasi ke sel tertentu dalam tabel. Kami menggunakan`GetChild()` Dan`FirstRow.FirstCell` metode untuk mendapatkan referensi ke sel pertama dari array pertama.
+ Untuk mengubah format sel, kita perlu menavigasi ke sel tertentu dalam tabel. Kami menggunakan`GetChild()`Dan`FirstRow.FirstCell` metode untuk mendapatkan referensi ke sel pertama dari array pertama.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);

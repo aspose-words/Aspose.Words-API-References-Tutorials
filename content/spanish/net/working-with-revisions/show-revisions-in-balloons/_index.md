@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### P: ¿Cómo mostrar revisiones en globos con Aspose.Words para .NET?
 
- R: Utilice el`ShowInBalloons` propiedad de la`RevisionOptions` objeto para configurar la visualización de revisiones en globos. Puede establecer esta propiedad en`ShowInBalloons.FormatAndDelete` para mostrar revisiones en globos con revisiones de eliminación y formato.
+ R: Utilice el`ShowInBalloons` propiedad de la`RevisionOptions` Objeto para configurar la visualización de revisiones en globos. Puede establecer esta propiedad en`ShowInBalloons.FormatAndDelete` para mostrar revisiones en globos con revisiones de eliminación y formato.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

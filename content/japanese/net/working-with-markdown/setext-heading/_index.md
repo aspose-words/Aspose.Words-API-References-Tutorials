@@ -110,7 +110,7 @@ A: Setext Markdown の見出しには見出し階層の点で制限があり、�
 
 #### Q: Setext Markdown ヘッダーの外観をカスタマイズできますか?
 
-A: 標準の Markdown では、Setext Markdown ヘッダーの外観をカスタマイズすることはできません。Setext Markdown ヘッダーの外観は、使用されるアンダースコア文字に基づいて事前に定義されています。
+A: 標準の Markdown では、Setext Markdown ヘッダーの外観をカスタマイズすることはできません。使用されているアンダースコア文字に基づいて、外観が事前に定義されています。
 
 #### Q: Setext Markdown ヘッダーはすべての Markdown エディターでサポートされていますか?
 

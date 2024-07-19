@@ -26,7 +26,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## बैकअप विकल्प कॉन्फ़िगर करना
 
-अगला चरण निश्चित HTML में कनवर्ट करने के लिए सेव ऑप्शन को कॉन्फ़िगर करना है। HtmlFixedSaveOptions क्लास का उपयोग करें और सभी CSS नियमों को एक ही फ़ाइल में लिखने के लिए SaveFontFaceCssSeparately प्रॉपर्टी को false पर सेट करें। इसे करने का तरीका यहां बताया गया है:
+अगला चरण फिक्स्ड HTML में कनवर्ट करने के लिए सेव ऑप्शन को कॉन्फ़िगर करना है। HtmlFixedSaveOptions क्लास का उपयोग करें और सभी CSS नियमों को एक ही फ़ाइल में लिखने के लिए SaveFontFaceCssSeparately प्रॉपर्टी को false पर सेट करें। इसे करने का तरीका यहां बताया गया है:
 
 ```csharp
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };

@@ -113,7 +113,7 @@ R: Para destacar texto usando Markdown, simplesmente coloque o texto entre os s�
 
 #### P: Podemos combinar diferentes destaques no mesmo texto?
 
- R: Sim, é possível combinar diferentes destaques no mesmo texto. Por exemplo, você pode colocar uma palavra em negrito e itálico usando ambos`**` e`*` ao redor do mundo.
+ R: Sim, é possível combinar diferentes destaques no mesmo texto. Por exemplo, você pode colocar uma palavra em negrito e itálico usando ambos`**`e`*` ao redor do mundo.
 
 #### P: Quais opções de destaque estão disponíveis no Markdown?
 

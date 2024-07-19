@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### S: Aspose.Words for .NET ile Word belgesine eklenen TOA alanının görünümü nasıl özelleştirilir?
 
-C: Eklenen TOA alanının görünümünü, TOA alanının özelliklerini kullanarak özelleştirebilirsiniz.`FieldTOA` Biçimlendirme seçeneklerini belirtmek için nesne.
+ C: Eklenen TOA alanının görünümünü, TOA alanının özelliklerini kullanarak özelleştirebilirsiniz.`FieldTOA` Biçimlendirme seçeneklerini belirtmek için nesne.
 
 #### S: Aspose.Words for .NET'i kullanarak tek bir Word belgesine birden fazla TOA alanı ekleyebilir miyim?
 

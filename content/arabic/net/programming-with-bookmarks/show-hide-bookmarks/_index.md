@@ -2,138 +2,153 @@
 title: إظهار إخفاء الإشارات المرجعية في مستند Word
 linktitle: إظهار إخفاء الإشارات المرجعية في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إظهار أو إخفاء إشارة مرجعية معينة في مستند Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إظهار الإشارات المرجعية أو إخفائها ديناميكيًا في مستند Word باستخدام Aspose.Words لـ .NET من خلال دليلنا خطوة بخطوة. مثالية للمطورين.
 type: docs
 weight: 10
 url: /ar/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## مقدمة
 
-في هذه المقالة، سوف نستكشف كود مصدر C# أعلاه لفهم كيفية استخدام وظيفة إظهار إخفاء الإشارات المرجعية في مكتبة Aspose.Words for .NET. تتيح لك هذه الميزة إظهار أو إخفاء إشارة مرجعية محددة في مستند Word.
+هل وجدت نفسك بحاجة إلى إخفاء أو إظهار أجزاء معينة من مستند Word الخاص بك ديناميكيًا؟ حسنًا، أنت محظوظ! باستخدام Aspose.Words for .NET، يمكنك بسهولة إدارة رؤية المحتوى الذي تم وضع إشارة مرجعية عليه في مستنداتك. سيرشدك هذا البرنامج التعليمي خلال عملية إظهار الإشارات المرجعية وإخفائها في مستند Word باستخدام Aspose.Words for .NET. سنقوم بتحليل الكود خطوة بخطوة، لذا سواء كنت مطورًا متمرسًا أو مبتدئًا، ستجد هذا الدليل سهل المتابعة.
 
 ## المتطلبات الأساسية
 
-- المعرفة الأساسية بلغة C#.
-- بيئة تطوير .NET مع تثبيت مكتبة Aspose.Words.
+قبل أن نتعمق في الكود، دعنا نتأكد من أن لديك كل ما تحتاجه:
 
-## الخطوة 1: تحميل الوثيقة
+1.  Aspose.Words for .NET: تأكد من تثبيت مكتبة Aspose.Words for .NET. إذا لم يكن الأمر كذلك، يمكنك تنزيله[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: بيئة تطوير متكاملة (IDE) مثل Visual Studio.
+3. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# سيكون مفيدًا.
+4. مستند Word: نموذج مستند Word يحتوي على إشارات مرجعية.
 
- نحن نستخدم ال`Document` فئة لتحميل المستند الموجود من ملف:
+## استيراد مساحات الأسماء
+
+قبل البدء بالكود، تحتاج إلى استيراد مساحات الأسماء الضرورية. أضف ما يلي في بداية ملف C# الخاص بك:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## الخطوة 1: قم بتحميل المستند الخاص بك
+
+أول الأشياء أولاً، تحتاج إلى تحميل مستند Word الذي يحتوي على الإشارات المرجعية. وإليك كيف يمكنك القيام بذلك:
+
+```csharp
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## الخطوة 2: إظهار أو إخفاء إشارة مرجعية محددة
+### توضيح
 
- نحن نستخدم ال`ShowHideBookmarkedContent` وظيفة لإظهار أو إخفاء إشارة مرجعية معينة في المستند. تأخذ هذه الوظيفة المستند واسم الإشارة المرجعية وقيمة منطقية كمعلمات للإشارة إلى ما إذا كان سيتم إظهار الإشارة المرجعية أو إخفائها:
+- dataDir: هذا هو مسار الدليل الذي يوجد به مستند Word الخاص بك.
+-  مستند المستند: يؤدي هذا إلى تهيئة مثيل جديد لـ`Document` فئة مع الملف المحدد الخاص بك.
+
+## الخطوة 2: إظهار أو إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه
+
+بعد ذلك، سنحدد طريقة لإظهار أو إخفاء المحتوى الذي تم وضع إشارة مرجعية عليه. وإليكم الطريقة كاملة:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {إذا "{إشارة مرجعية MERGEFIELD}" = "صحيح" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### توضيح
+
+- الإشارة المرجعية bm: لجلب الإشارة المرجعية من المستند.
+- منشئ DocumentBuilder: يساعد في التنقل وتعديل المستند.
+- حقل الحقل: يقوم بإدراج حقل IF للتحقق من حالة الإشارة المرجعية.
+- العقدة الحالية: تتنقل عبر العقد للعثور على بداية الحقل ونهايته.
+
+## الخطوة 3: تنفيذ وظيفة العرض/الإخفاء
+
+ الآن عليك الاتصال بالرقم`ShowHideBookmarkedContent` الطريقة، تمرير المستند، اسم الإشارة المرجعية، وعلامة الرؤية:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## الخطوة 3: حفظ المستند المعدل
+### توضيح
 
- نحن نستخدم ال`Save` طريقة حفظ المستند المعدل في ملف:
+- مستند: كائن المستند الخاص بك.
+- "MyBookmark1": اسم الإشارة المرجعية التي تريد إظهارها/إخفاءها.
+- خطأ: علامة الرؤية (صواب للإظهار، خطأ للإخفاء).
+
+## الخطوة 4: احفظ المستند الخاص بك
+
+وأخيرا، احفظ الوثيقة المعدلة:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### مثال على التعليمات البرمجية المصدر لإظهار إخفاء الإشارات المرجعية باستخدام Aspose.Words لـ .NET
+### توضيح
 
-فيما يلي المثال الكامل للتعليمة البرمجية المصدر لتوضيح إظهار أو إخفاء إشارة مرجعية معينة باستخدام Aspose.Words for .NET:
+- dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx": مسار واسم المستند الجديد حيث سيتم حفظ التغييرات.
 
-```csharp
-
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### ShowHideBookmarkedContent كود المصدر
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {إذا "{إشارة مرجعية MERGEFIELD}" = "صحيح" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## خاتمة
 
-في هذه المقالة، قمنا باستكشاف التعليمات البرمجية المصدر لـ C# لفهم كيفية استخدام ميزة إظهار إخفاء الإشارات المرجعية في Aspose.Words for .NET. لقد اتبعنا دليلاً خطوة بخطوة لإظهار أو إخفاء إشارة مرجعية معينة في المستند.
+وهناك لديك! لقد تعلمت بنجاح كيفية إظهار الإشارات المرجعية وإخفائها في مستند Word باستخدام Aspose.Words لـ .NET. يمكن أن تكون هذه التقنية مفيدة بشكل لا يصدق لإنشاء المستندات ذات المحتوى الشرطي ديناميكيًا.
 
-### الأسئلة الشائعة لإظهار إخفاء الإشارات المرجعية في مستند Word
+## الأسئلة الشائعة
 
-#### س: هل يمكنني إظهار أو إخفاء إشارات مرجعية متعددة في نفس المستند؟
+### ما هو Aspose.Words لـ .NET؟
+Aspose.Words for .NET هي مكتبة قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتعديلها وتحويلها برمجيًا.
 
-ج: نعم، يمكنك إظهار أو إخفاء إشارات مرجعية متعددة في نفس المستند عن طريق تكرار الخطوتين 2 و3 لكل إشارة مرجعية تريد معالجتها.
+### كيف يمكنني الحصول على Aspose.Words لـ .NET؟
+ يمكنك تنزيل Aspose.Words لـ .NET من[هنا](https://releases.aspose.com/words/net/). نسخة تجريبية مجانية متاحة أيضا.
 
-#### س: هل تعمل التعليمات البرمجية المتوفرة مع تنسيقات مستندات Word الأخرى، مثل ‎.doc أو ‎.docm؟
+### هل يمكنني استخدام هذه الطريقة لأنواع أخرى من الإشارات المرجعية؟
+نعم، يمكن تكييف هذه الطريقة لإدارة رؤية أي إشارات مرجعية في مستند Word الخاص بك.
 
-ج: نعم، يعمل الكود المقدم مع تنسيقات مستندات Word المختلفة التي يدعمها Aspose.Words، مثل .doc و.docm. فقط تأكد من استخدام اسم الملف والمسار الصحيحين عند تحميل المستند وحفظه.
+### ماذا لو لم يحتوي المستند الخاص بي على الإشارة المرجعية المحددة؟
+إذا كانت الإشارة المرجعية غير موجودة، فستقوم الطريقة بإلقاء خطأ. تأكد من وجود الإشارة المرجعية قبل محاولة إظهارها/إخفائها.
 
-#### س: كيف يمكنني إظهار إشارة مرجعية مخفية مرة أخرى؟
-
- ج: لإظهار إشارة مرجعية مخفية مرة أخرى، عليك استخدام نفس الإشارة`ShowHideBookmarkedContent` وظيفة تمرير القيمة`true` للمعلمة المنطقية التي تشير إلى إظهار الإشارة المرجعية أو إخفائها.
-
-#### س: هل يمكنني استخدام الشروط لإظهار الإشارات المرجعية أو إخفائها بناءً على قيم حقول الدمج في المستند؟
-
- ج: نعم، يمكنك استخدام الشروط ودمج قيم الحقول لتحديد ما إذا كان يجب إظهار الإشارة المرجعية أو إخفائها. يمكنك تخصيص رمز`ShowHideBookmarkedContent` وظيفة لمراعاة الظروف والقيم المناسبة.
-
-#### س: كيف يمكنني حذف إشارة مرجعية في مستند Word باستخدام Aspose.Words لـ .NET؟
-
- ج: لإزالة إشارة مرجعية في مستند Word باستخدام Aspose.Words لـ .NET، يمكنك استخدام`RemoveBookmarks` طريقة`Document` فصل. هنا نموذج التعليمات البرمجية:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### كيف يمكنني الحصول على الدعم إذا واجهت مشاكل؟
+ يمكنك الحصول على الدعم من مجتمع Aspose[هنا](https://forum.aspose.com/c/words/8).

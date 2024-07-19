@@ -2,34 +2,58 @@
 title: Format Number Of Data Label In A Chart
 linktitle: Format Number Of Data Label In A Chart
 second_title: Aspose.Words Document Processing API
-description: Learn how to format the number of data labels in a chart using Aspose.Words for .NET. Customize number formats for data labels easily.
+description: Learn how to format data labels in charts using Aspose.Words for .NET with this step-by-step guide. Enhance your Word documents effortlessly.
 type: docs
 weight: 10
 url: /net/programming-with-charts/format-number-of-data-label/
 ---
+## Introduction
 
-This tutorial explains how to use Aspose.Words for .NET to format the number of data labels in a chart. The provided source code demonstrates how to create a chart, add series data, and customize the number format of data labels.
+Creating engaging and informative documents often involves including charts with well-formatted data labels. If you’re a .NET developer looking to enhance your Word documents with sophisticated charts, Aspose.Words for .NET is a fantastic library to help you achieve that. This tutorial will walk you through the process of formatting number labels in a chart using Aspose.Words for .NET, step by step.
 
-## Step 1: Set up the project
+## Prerequisites
 
-Ensure that you have the following prerequisites:
+Before diving into the code, there are a few prerequisites you need to have in place:
 
-- Aspose.Words for .NET library installed. You can download it by using NuGet package manager to install it.
-- A document directory path where the output document will be saved.
+- Aspose.Words for .NET: Ensure you have the Aspose.Words for .NET library installed. If you haven't installed it yet, you can [download it here](https://releases.aspose.com/words/net/).
+- Development Environment: You should have a .NET development environment set up. Visual Studio is highly recommended.
+- Basic Knowledge of C#: Familiarity with C# programming is essential as this tutorial involves writing and understanding C# code.
+- Temporary License: To use Aspose.Words without any limitations, you can get a [temporary license](https://purchase.aspose.com/temporary-license/).
 
-## Step 2: Create a new document and insert a chart
+Now, let’s dive into the step-by-step process of formatting number labels in a chart.
 
-Create a new `Document` object and a `DocumentBuilder` to build the document.
+## Import Namespaces
+
+First things first, we need to import the necessary namespaces to work with Aspose.Words for .NET. Add the following lines at the top of your C# file:
 
 ```csharp
-// Path to your document directory
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Step 1: Set Up Your Document Directory
+
+Before you can start manipulating your Word document, you need to specify the directory where your document will be saved. This is essential for the save operation later on.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to your document directory.
+
+## Step 2: Initialize the Document and DocumentBuilder
+
+The next step is to initialize a new `Document` and a `DocumentBuilder`. The `DocumentBuilder` is a helper class that allows us to construct the document content.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Next, insert a chart into the document using the `InsertChart` method of the `DocumentBuilder`. In this example, we'll insert a line chart.
+## Step 3: Insert a Chart into the Document
+
+Now, let's insert a chart into the document using the `DocumentBuilder`. In this tutorial, we'll use a Line chart as an example.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,94 +61,75 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## Step 3: Add series data to the chart
+Here, we insert a Line chart with a specific width and height, and set the chart title.
 
-Add series data to the chart. In this example, we'll add three categories and their corresponding values.
+## Step 4: Clear Default Series and Add New Series
+
+By default, the chart will have some pre-generated series. We need to clear these and add our own series with specific data points.
 
 ```csharp
+// Delete default generated series.
 chart.Series.Clear();
+
+// Add new series with custom data points.
 ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-    new string[] { "Category 1", "Category 2", "Category 3" }, 
-    new double[] { 2.5, 1.5, 3.5 });
-series1.HasDataLabels = true;
+	new string[] { "Category 1", "Category 2", "Category 3" }, 
+	new double[] { 2.5, 1.5, 3.5 });
 ```
 
-## Step 4: Customize the number format of data labels
+## Step 5: Enable Data Labels
 
-To format the number of data labels, access the `DataLabels` collection associated with the series.
+To display the data labels on the chart, we need to enable them for our series.
 
 ```csharp
+series1.HasDataLabels = true;
 series1.DataLabels.ShowValue = true;
-series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-In this example, we set different number formats for each data label. The first data label is formatted as a currency, the second as a date, and the third as a percentage.
+## Step 6: Format Data Labels
 
-## Step 5: Save the document
+The core of this tutorial is formatting the data labels. We can apply different number formats to each data label individually.
 
-Finally, save the document to the specified directory using the `Save` method of the `Document` object.
+```csharp
+series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Currency format
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Date format
+series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Percentage format
+```
+
+Additionally, you can link a data label's format to a source cell. When linked, the `NumberFormat` will be reset to general and inherited from the source cell.
+
+```csharp
+series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
+```
+
+## Step 7: Save the Document
+
+Finally, save the document to the specified directory.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-This completes the implementation of formatting the number of data labels in a chart using Aspose.Words for .NET.
-
-### Example source code for Format Number Of Data Label using Aspose.Words for .NET 
-
-```csharp
-	// Path to your document directory 
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Text = "Data Labels With Different Number Format";
-	// Delete default generated series.
-	chart.Series.Clear();
-	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-		new string[] { "Category 1", "Category 2", "Category 3" }, 
-		new double[] { 2.5, 1.5, 3.5 });
-	series1.HasDataLabels = true;
-	series1.DataLabels.ShowValue = true;
-	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// Or you can set format code to be linked to a source cell,
-	// in this case NumberFormat will be reset to general and inherited from a source cell.
-	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
-	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
-```
+This saves your document with the specified name and ensures your chart with formatted data labels is preserved.
 
 ## Conclusion
 
-In this tutorial, you have learned how to format the number of data labels in a chart using Aspose.Words for .NET. By following the step-by-step guide and using the provided source code, you can create a chart, add series data, and customize the number format of data labels according to your requirements.
+Formatting data labels in a chart using Aspose.Words for .NET can greatly enhance the readability and professionalism of your Word documents. By following this step-by-step guide, you should now be able to create a chart, add data series, and format the data labels to meet your needs. Aspose.Words for .NET is a powerful tool that allows for extensive customization and automation of Word documents, making it an invaluable asset for .NET developers.
 
-Aspose.Words for .NET provides a comprehensive API for Words Processing with charts in Word documents, allowing you to manipulate various aspects of the chart, including data labels. By accessing the `DataLabels` collection associated with a series, you can customize the number format of individual data labels.
+## FAQ's
 
-The API allows you to control the display of values, set different number formats for each data label, and link the number format to a source cell. This flexibility enables you to present numeric data in charts with the desired formatting, such as currency symbols, date formats, and percentage values.
+### What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful library for creating, manipulating, and converting Word documents programmatically using C#.
 
-By using Aspose.Words for .NET, you can incorporate powerful charting capabilities into your .NET applications and generate professional-looking documents with fully formatted charts and data labels.
+### Can I format other types of charts with Aspose.Words for .NET?
+Yes, Aspose.Words for .NET supports a variety of chart types, including bar, column, pie, and more.
 
-### FAQs
+### How do I get a temporary license for Aspose.Words for .NET?
+You can obtain a temporary license [here](https://purchase.aspose.com/temporary-license/).
 
-#### Q1. What is Aspose.Words for .NET?
-Aspose.Words for .NET is a feature-rich document processing library that enables developers to create, manipulate, and save Word documents programmatically in .NET applications. It provides a wide range of features for Words Processing with document elements, including charts and data labels.
+### Is it possible to link data labels to source cells in Excel?
+Yes, you can link data labels to source cells, allowing the number format to be inherited from the source cell.
 
-#### Q2. How can I install Aspose.Words for .NET?
-You can install Aspose.Words for .NET by downloading it by using the NuGet package manager in Visual Studio. Simply search for "Aspose.Words" in the NuGet package manager and install it into your project.
+### Where can I find more detailed documentation for Aspose.Words for .NET?
+You can find comprehensive documentation [here](https://reference.aspose.com/words/net/).
 
-#### Q3. Can I format other aspects of the chart using Aspose.Words for .NET?
-Yes, Aspose.Words for .NET provides extensive capabilities for formatting various aspects of a chart. In addition to data labels, you can customize chart type, series data, axis properties, legend, title, plot area, and many other elements of the chart. The API offers fine-grained control over chart appearance and formatting.
-
-#### Q4. Can I apply different number formats to different data labels in the same series?
-Yes, Aspose.Words for .NET allows you to apply different number formats to individual data labels within the same series. By accessing the `DataLabels` collection associated with a series, you can set the `FormatCode` property of each data label to specify the desired number format. This allows you to present numeric values in different formats within the same chart.
-
-#### Q5. Can I use custom number formats for data labels?
-Yes, Aspose.Words for .NET supports custom number formats for data labels. You can specify the desired number format by setting the `FormatCode` property of a data label to a custom format code. This gives you the flexibility to apply a wide range of number formats, such as currency symbols, date formats, percentage values, and more.
-
-#### Q6. Can I save the chart with formatted data labels in different formats?
-Yes, Aspose.Words for .NET allows you to save the document containing the chart with formatted data labels in various formats, such as DOCX, PDF, HTML, and more. You can choose the appropriate format based on your requirements and use the `Save` method of the `Document` object to save the document. The formatted data labels will be preserved in the saved document.

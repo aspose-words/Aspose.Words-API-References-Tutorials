@@ -45,7 +45,7 @@ Ten slotte kunnen we het document in het gewenste formaat opslaan.
 // Gebruik een documentbuilder om inhoud aan het document toe te voegen.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Voeg hyperlink in.
+//Voeg hyperlink in.
 builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
 builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
 ```

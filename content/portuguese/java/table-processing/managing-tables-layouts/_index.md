@@ -120,4 +120,4 @@ Absolutamente! Aspose.Words for Java oferece suporte a vários formatos de docum
 
 ## Conclusão
 
-Neste guia abrangente, exploramos os meandros do gerenciamento de tabelas e layouts em documentos usando Aspose.Words for Java. Desde a criação básica de tabelas até a manipulação avançada de layout, agora você tem o conhecimento e exemplos de código-fonte para aprimorar seus recursos de processamento de documentos. Lembre-se de que um layout de documento eficaz é essencial para a criação de documentos com aparência profissional, e o Aspose.Words fornece as ferramentas para conseguir exatamente isso.
+Neste guia abrangente, exploramos os meandros do gerenciamento de tabelas e layouts em documentos usando Aspose.Words para Java. Desde a criação básica de tabelas até a manipulação avançada de layout, agora você tem o conhecimento e exemplos de código-fonte para aprimorar seus recursos de processamento de documentos. Lembre-se de que um layout de documento eficaz é essencial para a criação de documentos com aparência profissional, e o Aspose.Words fornece as ferramentas para conseguir exatamente isso.

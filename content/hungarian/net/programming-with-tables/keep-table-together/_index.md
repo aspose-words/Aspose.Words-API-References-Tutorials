@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 	Document doc = new Document(dataDir + "Table spanning two pages.docx");
 	Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 	// Engedélyeznünk kell a KeepWithNext funkciót a táblázat minden bekezdéséhez, hogy ne törjön át egy oldalon,
-	// kivéve a táblázat utolsó sorának utolsó bekezdéseit.
+	//kivéve a táblázat utolsó sorának utolsó bekezdéseit.
 	foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 	{
 		cell.EnsureMinimum();

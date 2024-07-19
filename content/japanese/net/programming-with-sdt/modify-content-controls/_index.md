@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ステップ 2: ドキュメントを読み込み、コンテンツ コントロールを反復処理する
-Word文書を読み込むには、`Document`コンストラクタにドキュメントへのパスをパラメータとして渡します。`foreach`ループ。
+Word文書を読み込むには、`Document`コンストラクタにドキュメントへのパスをパラメータとして渡します。ドキュメント内のすべての構造化ドキュメントタグを反復処理するには、`foreach`ループ。
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

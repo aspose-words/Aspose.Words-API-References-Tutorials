@@ -71,7 +71,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 #### 问：是否可以在 Word 文档中应用行间精确间距？
 
-答：是的，Aspose.Words 允许您在 Word 文档中应用行间距的精确值。您可以使用 API 为行间距指定精确值。
+答：是的，Aspose.Words 允许您在 Word 文档中应用行间精确间距。您可以使用 API 为行距指定精确值。
 
 #### 问：如何调整整个 Word 文档的行距？
 

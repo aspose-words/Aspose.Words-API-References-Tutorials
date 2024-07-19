@@ -2,80 +2,96 @@
 title: Ne mentse el a képet
 linktitle: Ne mentse el a képet
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan tilthatja le a képsorok mentését Word dokumentumokban az Aspose.Words for .NET használatával.
+description: Részletes útmutatónkból megtudhatja, hogyan kezelheti a képjeleket az Aspose.Words for .NET-ben. Egyszerűsítse a dokumentumkezelést és hozzon létre professzionális Word dokumentumokat könnyedén.
 type: docs
 weight: 10
 url: /hu/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
+## Bevezetés
 
-képjelek a Word-dokumentumok általánosan használt funkciói egyéni felsorolásjelek hozzáadásához. Bizonyos esetekben azonban szükség lehet a képsorok regisztrációjának letiltására, amikor a dokumentumokat az Aspose.Words Library for .NET segítségével kezeli. Ebben a részletes útmutatóban elmagyarázzuk, hogyan használhatja az Aspose.Words C# forráskódot a .NET-hez a DocSaveOptions mentési beállításainak használatával történő képsoros mentés letiltásához.
+Sziasztok, fejlesztő kollégák! Dolgozott már Word-dokumentumokkal, és azon kapta magát, hogy belegabalyodott a képjelek mentésének bonyolultságába? Ez egyike azon apró részleteknek, amelyek nagy változást hozhatnak a dokumentum végső megjelenésében. Nos, ma azért vagyok itt, hogy végigvezessem Önt az Aspose.Words for .NET-ben található képjelek kezelési folyamatán, különös tekintettel a "Ne mentse a képjelet" funkcióra. Készen állsz a merülésre? Gyerünk!
 
-## Az Aspose.Words könyvtár megértése
+## Előfeltételek
 
-Mielőtt belemerülne a kódba, fontos megérteni a .NET Aspose.Words könyvtárát. Az Aspose.Words egy hatékony könyvtár Word dokumentumok létrehozásához, szerkesztéséhez, konvertálásához és védelméhez különböző platformokon, beleértve a .NET-et is. Számos funkciót kínál a dokumentumok kezeléséhez, például szöveg beszúrásához, formázás megváltoztatásához, szakaszok hozzáadásához és még sok máshoz.
+Mielőtt elkezdenénk trükközni a kódon, néhány dolgot meg kell határoznia:
 
-## 1. lépés: A dokumentumkönyvtár beállítása
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van ez a hatékony könyvtár. Ha még nem szerezted meg, akkor letöltheted[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: Működő .NET fejlesztői környezet, például a Visual Studio.
+3. Alapvető C# ismeretek: Hasznos lehet némi C# programozási ismerete.
+4. Mintadokumentum: Word-dokumentum tesztcélú képsorokkal.
 
-Az első lépés a könyvtár meghatározása, ahol a dokumentumok találhatók. Meg kell adnia a teljes könyvtár elérési utat. Például :
+## Névterek importálása
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-Feltétlenül cserélje ki a „DOKUMENTUMKÖNYVTÁR” elemet a dokumentumkönyvtár tényleges elérési útjára.
-
-## 2. lépés: Töltse be a dokumentumot képjelekkel
-
-Ezután be kell töltenie a dokumentumot képjelekkel. Használja a Dokumentum osztályt a dokumentum fájlból való betöltéséhez. Például :
+dolgok elindításához importálnia kell a szükséges névtereket. Ez meglehetősen egyszerű, de elengedhetetlen az Aspose.Words funkciók eléréséhez.
 
 ```csharp
-Document doc = new Document(dataDir + "Image bullet points.docx");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Ebben a példában a dokumentumot az "Image bullet points.docx" fájlból töltjük be.
+Bontsuk fel a folyamatot kezelhető lépésekre. Ily módon könnyedén követheti és megértheti a kód minden részét.
 
-  a dokumentumok könyvtárában található.
+## 1. lépés: Állítsa be a dokumentumkönyvtárat
 
-## 3. lépés: A rögzítési beállítások konfigurálása
-
-Most konfiguráljuk a dokumentumunk mentési beállításait. A mentési beállítások megadásához használja a DocSaveOptions osztályt. Például :
-
-```csharp
-DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
-```
-
-Ebben a példában létrehozunk egy új DocSaveOptions objektumot, és a SavePictureBullet tulajdonságot false értékre állítjuk a képsorok mentésének letiltásához.
-
-## 4. lépés: Engedélyezze a „Ne mentse a képjelet” funkciót
-
-A "Ne mentse a képjelet" funkció engedélyezéséhez már konfiguráltuk a mentési beállításokat úgy, hogy a SavePictureBullet false értékre van állítva. Ez biztosítja, hogy a képsorok ne kerüljenek mentésre a végleges dokumentumban.
-
-## 5. lépés: Mentse el a dokumentumot
-
-Végül elmentheti a dokumentumot a Dokumentum osztály Mentés metódusával. Adja meg a fájl teljes elérési útját és a kívánt fájlnevet. Például :
-
-```csharp
-doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
-```
-
-Ügyeljen arra, hogy a "dataDir" kifejezést lecserélje a dokumentumok könyvtárának elérési útjára.
-
-## Példa forráskódra a DocSaveOptions mentési opciókhoz a "Ne mentse a képjelet" funkcióval az Aspose.Words for .NET használatával
+Először is meg kell adnia a dokumentumkönyvtár elérési útját. Ez az a hely, ahol a Word-dokumentumok tárolódnak, és itt mentheti a módosított fájlokat.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Cserélje ki`"YOUR DOCUMENTS DIRECTORY"` a rendszer tényleges elérési útjával, ahol a dokumentumok találhatók.
+
+## 2. lépés: Töltse be a dokumentumot képjelekkel
+
+Ezután töltse be a Word-dokumentumot, amely képjeleket tartalmaz. Ez a dokumentum úgy módosul, hogy mentéskor eltávolítsa a képjeleket.
+
+```csharp
 // Töltse be a dokumentumot képjelekkel
 Document doc = new Document(dataDir + "Image bullet points.docx");
+```
 
+ Győződjön meg arról, hogy a fájl`"Image bullet points.docx"` létezik a megadott könyvtárban.
+
+## 3. lépés: Konfigurálja a mentési beállításokat
+
+Most állítsuk be a mentési beállításokat úgy, hogy megadjuk, hogy a képjelek ne kerüljenek mentésre. Itt történik a varázslat!
+
+```csharp
 // Konfigurálja a mentési beállításokat a „Ne mentse a képsort” funkcióval
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
+```
 
+ A beállítással`SavePictureBullet` nak nek`false`, akkor utasítja az Aspose.Words-t, hogy ne mentse a képsorokat a kimeneti dokumentumban.
+
+## 4. lépés: Mentse el a dokumentumot
+
+Végül mentse el a dokumentumot a megadott opciókkal. Ezzel egy új fájlt generál, amelyben nem szerepelnek a képjelek.
+
+```csharp
 // Mentse el a dokumentumot a megadott opciókkal
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
+ Az új fájl,`"WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx"`, el lesz mentve a dokumentumok könyvtárába.
+
 ## Következtetés
 
-Ebben az útmutatóban bemutattuk, hogyan lehet letiltani a képsorok mentését egy dokumentumban a .NET Aspose.Words könyvtárával. A megadott lépések követésével és a mellékelt C# forráskód használatával könnyedén alkalmazhatja ezt a funkciót a C# alkalmazásban. A képsoros mentés letiltása bizonyos helyzetekben hasznos lehet a dokumentum szerkezetének és formázásának megőrzéséhez a képsorok mentése nélkül.
+És megvan! Néhány sornyi kóddal sikeresen beállította az Aspose.Words for .NET-et úgy, hogy a dokumentum mentésekor kihagyja a képsorokat. Ez hihetetlenül hasznos lehet, ha tiszta, konzisztens megjelenésre van szüksége a képi golyók elterelése nélkül.
+
+## GYIK
+
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár Word dokumentumok létrehozásához, szerkesztéséhez és konvertálásához .NET alkalmazásokon belül.
+
+### Használhatom ezt a funkciót más típusú golyókhoz?
+Nem, ez a speciális funkció a képjelekre vonatkozik. Az Aspose.Words azonban kiterjedt lehetőségeket kínál más golyótípusok kezelésére.
+
+### Hol kaphatok támogatást az Aspose.Words számára?
+ Támogatást kaphat a[Aspose.Words Forum](https://forum.aspose.com/c/words/8).
+
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
+ Igen, ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/).
+
+### Hogyan vásárolhatok licencet az Aspose.Words for .NET-hez?
+ Engedélyt vásárolhat a[Aspose Store](https://purchase.aspose.com/buy).

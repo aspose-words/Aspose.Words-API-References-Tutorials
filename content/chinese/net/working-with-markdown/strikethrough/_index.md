@@ -47,7 +47,7 @@ builder.Font.StrikeThrough = true;
 builder.Writeln("This text will be StrikeThrough");
 ```
 
-恭喜！现在您已经了解了如何使用 Aspose.Words for .NET 应用删除线文本样式。
+恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 应用删除线文本样式。
 
 ### 常见问题解答
 

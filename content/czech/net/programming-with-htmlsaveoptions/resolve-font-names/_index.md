@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- Tento kód vytvoří instanci`HtmlSaveOptions` nastaví`ResolveFontNames` možnost`true` vyřešení chybějících názvů písem při převodu do HTML. Také`PrettyFormat` možnost je nastavena na`true` získat pěkně naformátovaný HTML kód.
+ Tento kód vytvoří instanci`HtmlSaveOptions` a nastaví`ResolveFontNames` možnost`true` vyřešení chybějících názvů písem při převodu do HTML. Také`PrettyFormat` možnost je nastavena na`true` získat pěkně naformátovaný HTML kód.
 
 ## Krok 4: Převod a uložení dokumentu do HTML
 

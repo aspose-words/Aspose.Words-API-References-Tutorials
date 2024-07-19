@@ -116,7 +116,7 @@ if template.range.bookmarks.get(bookmark_name):
 
 ## Técnicas avançadas de marcadores
 
-À medida que você se familiariza com os marcadores, pode explorar técnicas avançadas, como marcadores aninhados, marcadores que abrangem várias seções e muito mais. Essas técnicas permitem criar estruturas de documentos sofisticadas e aprimorar as interações do usuário.
+À medida que você se familiariza com os marcadores, você pode explorar técnicas avançadas, como marcadores aninhados, marcadores que abrangem várias seções e muito mais. Essas técnicas permitem criar estruturas de documentos sofisticadas e aprimorar as interações do usuário.
 
 ## Conclusão
 
@@ -149,6 +149,6 @@ Sim, os marcadores podem ser usados em vários formatos de documento, incluindo 
 
 Absolutamente! Você pode extrair texto e outros conteúdos dos marcadores, o que é particularmente útil para gerar resumos ou realizar análises adicionais.
 
-### Onde posso acessar a documentação da API Aspose.Words for Python?
+### Onde posso acessar a documentação da API Aspose.Words para Python?
 
  Você pode encontrar a documentação da API Aspose.Words for Python em[aqui](https://reference.aspose.com/words/python-net/).

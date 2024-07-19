@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### Câu hỏi: Làm cách nào để tùy chỉnh giao diện của trường TOA được chèn vào tài liệu Word bằng Aspose.Words for .NET?
 
-Đáp: Bạn có thể tùy chỉnh hình thức của trường TOA được chèn bằng cách sử dụng các thuộc tính của`FieldTOA` đối tượng để chỉ định các tùy chọn định dạng.
+ Đáp: Bạn có thể tùy chỉnh hình thức của trường TOA được chèn bằng cách sử dụng các thuộc tính của`FieldTOA` đối tượng để chỉ định các tùy chọn định dạng.
 
 #### Câu hỏi: Tôi có thể thêm nhiều trường TOA vào một tài liệu Word bằng Aspose.Words cho .NET không?
 

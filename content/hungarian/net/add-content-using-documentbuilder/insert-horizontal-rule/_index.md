@@ -113,7 +113,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### Hogyan kezdhetem el az Aspose.Words for .NET használatát?
 
- Kezdheti a könyvtár letöltésével a[weboldal](https://releases.aspose.com/words/net/) és hozzá kell adni a .NET projekthez.
+ Kezdheti a könyvtár letöltésével a[weboldal](https://releases.aspose.com/words/net/) és hozzáadjuk a .NET projekthez.
 
 ### Használhatom ingyenesen az Aspose.Words-t?
 

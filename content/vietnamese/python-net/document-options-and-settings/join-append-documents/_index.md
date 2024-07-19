@@ -90,7 +90,7 @@ Bảng và hình là thành phần chung của tài liệu. Aspose.Words đảm 
 
 ## Phần kết luận
 
-Aspose.Words for Python trao quyền cho các nhà phát triển hợp nhất và nối các tài liệu một cách dễ dàng. Cho dù bạn đang làm việc trên các báo cáo, sách hay bất kỳ dự án sử dụng nhiều tài liệu nào khác, các tính năng mạnh mẽ của thư viện sẽ đảm bảo rằng quy trình này vừa hiệu quả vừa đáng tin cậy.
+Aspose.Words for Python trao quyền cho các nhà phát triển hợp nhất và nối các tài liệu một cách dễ dàng. Cho dù bạn đang làm việc trên báo cáo, sách hay bất kỳ dự án sử dụng nhiều tài liệu nào khác, các tính năng mạnh mẽ của thư viện sẽ đảm bảo rằng quy trình này vừa hiệu quả vừa đáng tin cậy.
 
 ## Câu hỏi thường gặp
 

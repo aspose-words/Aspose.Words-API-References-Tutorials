@@ -91,4 +91,4 @@ Odpověď: StructuredDocumentTags (SDT) jsou prvky založené na XML, které lze
 
 #### Otázka: Mohu jako preferovanou možnost použít jiné typy ovládacích prvků?
 
- A: Ano, kromě`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET podporuje další typy ovládání, jako např`HtmlControlType.ContentControl` a`HtmlControlType.CustomXmlMarkup`.
+ A: Ano, kromě`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET podporuje další typy ovládání, jako např`HtmlControlType.ContentControl`a`HtmlControlType.CustomXmlMarkup`.

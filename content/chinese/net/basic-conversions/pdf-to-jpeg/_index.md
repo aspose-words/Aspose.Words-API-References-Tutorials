@@ -9,13 +9,13 @@ url: /zh/net/basic-conversions/pdf-to-jpeg/
 ---
 ## 介绍
 
-您是否曾经遇到过需要将 PDF 文件转换为 JPEG 图像的情况？也许是为了更轻松地共享、嵌入演示文稿或只是为了快速预览？好吧，您很幸运！在本教程中，我们将深入研究 Aspose.Words for .NET 的世界，向您展示如何将 PDF 保存为 JPEG。相信我，这比您想象的要容易。所以，喝杯咖啡，坐下来，让我们将这些 PDF 转换为令人惊叹的 JPEG！
+您是否曾经遇到过需要将 PDF 文件转换为 JPEG 图像的情况？也许是为了更轻松地共享、嵌入演示文稿或只是为了快速预览？好吧，您很幸运！在本教程中，我们将深入研究 Aspose.Words for .NET 的世界，向您展示如何将 PDF 保存为 JPEG。相信我，这比您想象的要容易。所以，拿一杯咖啡，坐下来，让我们将这些 PDF 转换为令人惊叹的 JPEG！
 
 ## 先决条件
 
 在我们开始讨论细节之前，让我们先确保一切准备就绪。以下是您需要的内容：
 
-1.  Aspose.Words for .NET：确保你已安装此强大的库。如果没有，你可以下载它[这里](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：确保你已安装此强大的库。如果没有，你可以下载它[这里](https://releases.aspose.com/words/net/).
 2. .NET Framework：确保您的机器上已设置.NET 环境。
 3. Visual Studio：任何版本都可以，只要您可以轻松地使用它。
 4.  PDF 文件：准备好要转换的 PDF 文件。在本教程中，我们将使用名为`Pdf Document.pdf`.
@@ -29,7 +29,7 @@ using System;
 using Aspose.Words;
 ```
 
-好吧，让我们开始有趣的部分！我们将把这个过程分解成易于遵循的步骤。
+好吧，让我们进入有趣的部分！我们将把这个过程分解成易于遵循的步骤。
 
 ## 步骤 1：设置你的项目
 

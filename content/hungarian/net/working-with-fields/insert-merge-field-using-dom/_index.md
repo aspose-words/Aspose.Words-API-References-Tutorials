@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Ezután a kurzort a dokumentum egy adott bekezdésére kell mozgatnunk, ahová az egyesítési mezőt be akarjuk szúrni.
 
 ```csharp
-// Mozgassa a kurzort a bekezdésre.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## 6. lépés: Illessze be az Egyesítés mezőt

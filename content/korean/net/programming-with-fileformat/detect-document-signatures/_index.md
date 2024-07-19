@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2단계: 디지털 서명 감지
 
- 다음으로 우리는`DetectFileFormat` 의 방법`FileFormatUtil` 파일 형식 정보를 감지하는 클래스입니다. 이 예에서는 문서가 "Digitally signed.docx"이고 지정된 문서 디렉터리에 있다고 가정합니다.
+ 다음으로 우리는`DetectFileFormat` 의 방법`FileFormatUtil`파일 형식 정보를 감지하는 클래스입니다. 이 예에서는 문서가 "Digitally signed.docx"이고 지정된 문서 디렉터리에 있다고 가정합니다.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ if (info.HasDigitalSignature)
 
 #### .NET용 Aspose.Words를 사용하여 Word 문서에서 디지털 서명의 존재를 어떻게 감지합니까?
 
- .NET용 Aspose.Words를 사용하여 Word 문서에서 디지털 서명의 존재를 감지하려면 튜토리얼에 제공된 단계를 따르세요. 사용하여`DetectFileFormat` 의 방법`FileFormatUtil` 클래스를 사용하면 파일 형식 정보를 감지할 수 있습니다. 그러면 다음을 확인할 수 있습니다.`HasDigitalSignature` 의 재산`FileFormatInfo`문서에 디지털 서명이 포함되어 있는지 확인하는 개체입니다. 디지털 서명이 감지되면 Aspose.Words로 문서를 열거나 저장하면 서명이 손실된다는 메시지를 표시할 수 있습니다.
+ .NET용 Aspose.Words를 사용하여 Word 문서에서 디지털 서명의 존재를 감지하려면 튜토리얼에 제공된 단계를 따르세요. 사용하여`DetectFileFormat` 의 방법`FileFormatUtil` 클래스를 사용하면 파일 형식 정보를 감지할 수 있습니다. 그러면 다음을 확인할 수 있습니다.`HasDigitalSignature` 의 재산`FileFormatInfo` 문서에 디지털 서명이 포함되어 있는지 확인하는 개체입니다. 디지털 서명이 감지되면 Aspose.Words로 문서를 열거나 저장하면 서명이 손실된다는 메시지를 표시할 수 있습니다.
 
 #### 디지털 서명을 검색할 문서가 포함된 디렉터리를 지정하는 방법은 무엇입니까?
 

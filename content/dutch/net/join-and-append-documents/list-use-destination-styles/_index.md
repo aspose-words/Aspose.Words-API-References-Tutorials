@@ -2,137 +2,93 @@
 title: Lijst Gebruik bestemmingsstijlen
 linktitle: Lijst Gebruik bestemmingsstijlen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u Word-documenten kunt samenvoegen en toevoegen terwijl u de lijststijlen van het doeldocument behoudt met behulp van Aspose.Words voor .NET.
+description: Leer hoe u Word-documenten samenvoegt met Aspose.Words voor .NET zonder de lijstopmaak te verliezen. Stapsgewijze handleiding om uw documentstijlen intact te houden.
 type: docs
 weight: 10
 url: /nl/net/join-and-append-documents/list-use-destination-styles/
 ---
+## Invoering
 
-Deze tutorial begeleidt u bij het gebruik van de functie List Use Destination Styles van Aspose.Words voor .NET. Met deze functie kunt u Word-documenten samenvoegen en toevoegen terwijl u de lijststijlen van het doeldocument gebruikt.
+Heeft u ooit geprobeerd Word-documenten samen te voegen en raakte u verstrikt in de opmaak? Het is net alsof je soms olie en water probeert te mengen, toch? Welnu, vandaag duiken we in een leuke truc met Aspose.Words voor .NET die je van deze hoofdpijn zal behoeden. We zullen leren hoe u lijsten van het ene document naar het andere kunt importeren zonder de nummering en stijlen te verpesten. Klaar om uw leven een beetje gemakkelijker te maken? Laten we beginnen!
 
 ## Vereisten
 
-Zorg ervoor dat u over het volgende beschikt voordat u begint:
+Voordat we in de magie duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-1. Aspose.Words voor .NET geïnstalleerd. Je kunt het downloaden van de Aspose-website of installeren via NuGet.
-2. Visual Studio of een andere C#-ontwikkelomgeving.
+1.  Aspose.Words voor .NET: Download het als je dat nog niet hebt gedaan[hier](https://releases.aspose.com/words/net/).
+2. Visual Studio: elke recente versie is voldoende.
+3. Een basiskennis van C#: u hoeft geen tovenaar te zijn, maar enige bekendheid kan helpen.
 
-## Stap 1: Initialiseer de documentmappen
+ Zorg ervoor dat Aspose.Words is geïnstalleerd en ingesteld in uw project. Als u niet zeker weet hoe u dit moet doen, kunt u de[documentatie](https://reference.aspose.com/words/net/) is een geweldige plek om te beginnen.
 
- Eerst moet u het pad naar uw documentmap instellen. Wijzig de waarde van de`dataDir` variabele naar het pad waar uw documenten zich bevinden.
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten in uw C#-bestand importeren:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Heb je die? Geweldig. Laten we dit nu stap voor stap opsplitsen.
+
+## Stap 1: Stel uw documentpaden in
+
+Elk project begint met het organiseren van uw bestanden. Laten we onze code verwijzen naar de map waar uw documenten zijn opgeslagen.
+
+```csharp
+// Het pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Stap 2: Laad de bron- en doeldocumenten
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar uw documenten zijn opgeslagen. Makkelijk, toch?
 
-Vervolgens moet u de bron- en doeldocumenten laden met behulp van Aspose.Words`Document` klas. Werk de bestandsnamen bij in het`Document` constructor volgens uw documentnamen.
+## Stap 2: Laad uw bron- en doeldocumenten
+
+Vervolgens moeten we zowel de bron- als de bestemmingsdocumenten laden. Zie het als het openen van twee Word-bestanden op uw computer.
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Stap 3: Stel het brondocument in op Doorgaan na het doeldocument
+ Hier,`srcDoc` is uw brondocument (het document met de lijsten die u wilt kopiëren), en`dstDoc` is uw bestemmingsdocument (het document waarin u deze lijsten wilt plakken).
 
- Om ervoor te zorgen dat de inhoud van het brondocument doorgaat na het einde van het doeldocument, moet u de`SectionStart` eigenschap van de eerste sectie in het brondocument`SectionStart.Continuous`.
+## Stap 3: Configureer importopties
 
-```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-```
-
-## Stap 4: Lijstopmaak afhandelen
-
-Om de lijstopmaak af te handelen, herhaalt u elke alinea in het brondocument en controleert u of het een lijstitem is. Als dit het geval is, vergelijkt u de lijst-ID met de bestaande lijsten in het bestemmingsdocument. Als er een lijst met dezelfde ID bestaat, maakt u een kopie van de lijst in het brondocument en werkt u de lijstindeling van de alinea bij om de gekopieerde lijst te gebruiken.
+We moeten enkele opties opgeven om ervoor te zorgen dat de lijsten correct worden geïmporteerd. Deze stap zorgt ervoor dat als er een nummeringsconflict is, de nummering uit het brondocument behouden blijft.
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## Stap 5: Voeg het brondocument toe aan het doeldocument
+## Stap 4: Voeg het brondocument toe aan het doeldocument
 
- Nu kunt u het brondocument aan het doeldocument toevoegen met behulp van de`AppendDocument` werkwijze van de`Document` klas. De`ImportFormatMode.UseDestinationStyles` parameter zorgt ervoor dat de lijststijlen van het doeldocument worden gebruikt tijdens de toevoegbewerking.
+Laten we nu het samenvoegen doen. Dit is waar de magie gebeurt. We voegen het brondocument toe aan het doeldocument terwijl we de opgegeven importopties gebruiken.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## Stap 6: Bewaar het definitieve document
+U hebt met succes twee documenten samengevoegd, waarbij de lijsten intact zijn gebleven.
 
-Sla ten slotte het samengevoegde document op met de functie Lijstgebruik bestemmingsstijlen ingeschakeld met behulp van de`Save` werkwijze van de`Document` klas.
+## Conclusie
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+Daar heb je het! Documenten samenvoegen zonder je verstand te verliezen over opmaakproblemen is een fluitje van een cent met Aspose.Words voor .NET. Of u nu aan een groot project werkt of gewoon wat bestanden moet opruimen, deze methode zorgt ervoor dat uw lijsten er scherp uitzien. Dus de volgende keer dat u met een dilemma bij het samenvoegen van documenten wordt geconfronteerd, onthoud dan deze handleiding en ga ermee aan de slag als een professional!
 
-### Voorbeeldbroncode voor Lijst Gebruik bestemmingsstijlen met Aspose.Words voor .NET 
+## Veelgestelde vragen
 
-Hier is de volledige broncode voor de functie "List Use Destination Styles" in C# met behulp van Aspose.Words voor .NET:
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten. Hiermee kunt u documenten in verschillende formaten maken, wijzigen en converteren.
 
+### Hoe installeer ik Aspose.Words voor .NET?
+ Je kunt het downloaden van de[website](https://releases.aspose.com/words/net/) en volg de installatie-instructies in de[documentatie](https://reference.aspose.com/words/net/).
 
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Kan ik Aspose.Words gratis gebruiken?
+ Aspose.Words biedt een[gratis proefperiode](https://releases.aspose.com/) met beperkte functies. Voor volledige toegang moet u een licentie aanschaffen[hier](https://purchase.aspose.com/buy).
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Stel het brondocument zo in dat het direct na het einde van het bestemmingsdocument verdergaat.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// Houd de lijsten bij die worden aangemaakt.
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			// Controleer of het bestemmingsdocument al een lijst met dit ID bevat. Als dat zo is, dan mag dit
-			// ervoor zorgen dat de twee lijsten samen worden uitgevoerd. Maak in plaats daarvan een kopie van de lijst in het brondocument.
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				// Er bestaat al een nieuw gekopieerde lijst voor deze ID, haal de opgeslagen lijst op,
-				// en gebruik het voor de huidige paragraaf.
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					// Voeg een kopie van deze lijst toe aan het document en bewaar deze voor later gebruik.
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				// Stel de lijst van deze paragraaf in op de gekopieerde lijst.
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	// Voeg het brondocument toe aan het einde van het doeldocument.
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### Wat zijn ImportFormatOptions?
+ Met ImportFormatOptions kunt u opgeven hoe de opmaak wordt afgehandeld bij het importeren van inhoud van het ene document naar het andere. Bijvoorbeeld,`KeepSourceNumbering` zorgt ervoor dat de lijstnummering uit het brondocument behouden blijft.
 
-Dat is het! U hebt de functie Lijstgebruikbestemmingsstijlen met succes geïmplementeerd met Aspose.Words voor .NET. Het uiteindelijke document bevat de samengevoegde inhoud met de lijststijlen uit het doeldocument.
+### Waar kan ik ondersteuning krijgen voor Aspose.Words?
+ U kunt ondersteuning krijgen van de[Aspose.Words-forum](https://forum.aspose.com/c/words/8), waar u vragen kunt stellen en hulp kunt krijgen van de community en Aspose-ontwikkelaars.

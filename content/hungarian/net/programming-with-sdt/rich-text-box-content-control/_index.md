@@ -17,7 +17,7 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,7 +43,7 @@ para.Runs.Add(run);
 ```
 
 ## 4. lépés: Adja hozzá a Rich Text tartalmat a Tartalomvezérlőhöz
-Adja hozzá a formázott szöveget tartalmazó bekezdést a`ChildNodes` a rich text box tartalomvezérlőjének gyűjteménye.
+ Adja hozzá a formázott szöveget tartalmazó bekezdést a`ChildNodes` a rich text box tartalomvezérlőjének gyűjteménye.
 
 ```csharp
 sdtRichText.ChildNodes.Add(para);

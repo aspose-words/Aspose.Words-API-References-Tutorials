@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Passaggio 2: rilevamento delle firme digitali
 
- Successivamente, utilizziamo il`DetectFileFormat` metodo del`FileFormatUtil` classe per rilevare le informazioni sul formato del file. In questo esempio presupponiamo che il documento si chiami "Firmato digitalmente.docx" e si trovi nella directory dei documenti specificata.
+ Successivamente, utilizziamo il`DetectFileFormat` metodo del`FileFormatUtil`classe per rilevare le informazioni sul formato del file. In questo esempio presupponiamo che il documento si chiami "Firmato digitalmente.docx" e si trovi nella directory dei documenti specificata.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ Questo tutorial ti ha fornito una guida passo passo su come rilevare la firma di
 
 #### Come rilevare la presenza di una firma digitale su un documento Word utilizzando Aspose.Words per .NET?
 
- Per rilevare la presenza di una firma digitale su un documento Word utilizzando Aspose.Words per .NET, puoi seguire i passaggi forniti nel tutorial. Usando il`DetectFileFormat` metodo del`FileFormatUtil` class ti consentirà di rilevare le informazioni sul formato del file. Quindi puoi controllare il file`HasDigitalSignature` proprietà del`FileFormatInfo`oggetto per determinare se il documento contiene una firma digitale. Se viene rilevata una firma digitale, è possibile visualizzare un messaggio che informa che le firme andranno perse se il documento viene aperto/salvato con Aspose.Words.
+ Per rilevare la presenza di una firma digitale su un documento Word utilizzando Aspose.Words per .NET, puoi seguire i passaggi forniti nel tutorial. Usando il`DetectFileFormat` metodo del`FileFormatUtil` class ti consentirà di rilevare le informazioni sul formato del file. Quindi puoi controllare il file`HasDigitalSignature` proprietà del`FileFormatInfo` oggetto per determinare se il documento contiene una firma digitale. Se viene rilevata una firma digitale, è possibile visualizzare un messaggio che informa che le firme andranno perse se il documento viene aperto/salvato con Aspose.Words.
 
 #### Come specificare la directory contenente i documenti in cui ricercare la firma digitale?
 

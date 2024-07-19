@@ -46,7 +46,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 ```
 
 ## Stap 4: Sla het gewijzigde document op
- Ten slotte slaan we het gewijzigde document op met behulp van de`Save` methode. Geef het gewenste uitvoerbestandspad en de gewenste indeling op (bijvoorbeeld DOCX) voor het gewijzigde document.
+Ten slotte slaan we het gewijzigde document op met behulp van de`Save` methode. Geef het gewenste uitvoerbestandspad en de gewenste indeling op (bijvoorbeeld DOCX) voor het gewijzigde document.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

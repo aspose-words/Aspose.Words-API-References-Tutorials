@@ -15,7 +15,7 @@ Dalam tutorial ini, kami akan memandu Anda tentang cara memuat rentang halaman t
 Gunakan kode berikut untuk memuat rentang halaman tertentu dari dokumen PDF:
 
 ```csharp
-// Jalur ke direktori dokumen.
+//Jalur ke direktori dokumen.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Dalam contoh ini, kami memuat halaman pertama dokumen PDF. Anda dapat mengubah nilai`PageIndex` Dan`PageCount` ke rentang halaman yang diinginkan.
+ Dalam contoh ini, kami memuat halaman pertama dokumen PDF. Anda dapat mengubah nilai`PageIndex`Dan`PageCount` ke rentang halaman yang diinginkan.
 
 ## Langkah 2: Menyimpan dokumen
 

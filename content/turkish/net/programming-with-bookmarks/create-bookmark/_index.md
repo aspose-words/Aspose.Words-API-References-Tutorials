@@ -2,196 +2,135 @@
 title: Word Belgesinde Yer İşareti Oluştur
 linktitle: Word Belgesinde Yer İşareti Oluştur
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak word belgesinde nasıl yer imleri oluşturulacağını ve PDF'de yer imi önizleme düzeylerini nasıl belirleyeceğinizi öğrenin.
+description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde nasıl yer imleri oluşturulacağını öğrenin. Belgelerde gezinme ve organizasyon için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-bookmarks/create-bookmark/
 ---
+## giriiş
 
-Bu makalede, Aspose.Words for .NET kütüphanesinde Create Bookmark fonksiyonunun nasıl kullanılacağını anlamak için yukarıdaki C# kaynak kodunu inceleyeceğiz. Bu özellik, bir belgede yer imleri oluşturmanıza ve çıktı PDF dosyasında yer imi önizleme düzeylerini belirlemenize olanak tanır.
+Bir Word belgesinde yer imleri oluşturmak, özellikle büyük belgeler arasında zahmetsizce gezinmek istediğinizde oyunun kurallarını değiştirebilir. Bugün Aspose.Words for .NET'i kullanarak yer imleri oluşturma sürecini inceleyeceğiz. Bu eğitim sizi adım adım yönlendirerek sürecin her bölümünü anlamanızı sağlayacaktır. Öyleyse hemen dalalım!
 
 ## Önkoşullar
 
-- C# dili hakkında temel bilgi.
-- Aspose.Words kütüphanesinin kurulu olduğu .NET geliştirme ortamı.
+Başlamadan önce aşağıdakilere sahip olmanız gerekir:
 
-## Adım 1: Belgeyi ve Oluşturucuyu Oluşturma
+1.  Aspose.Words for .NET Kütüphanesi: Şu adresten indirin ve yükleyin:[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya başka herhangi bir .NET geliştirme ortamı.
+3. Temel C# Bilgisi: Temel C# programlama kavramlarının anlaşılması.
 
- Yer imleri oluşturmadan önce, bir belge ve belge oluşturucuyu kullanarak oluşturmamız gerekir.`Document` Ve`DocumentBuilder` nesneler:
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words for .NET ile çalışmak için gerekli ad alanlarını içe aktarmanız gerekir:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Adım 1: Document ve DocumentBuilder'ı Kurun
+
+Belgeyi Başlat
+
+Öncelikle yeni bir belge oluşturmamız ve başlatmamız gerekiyor.`DocumentBuilder`. Bu, belgenize içerik ve yer imleri eklemenin başlangıç noktasıdır.
+
+```csharp
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Adım 2: Ana yer imini oluşturma
+ Açıklama:`Document` nesne sizin tuvalinizdir.`DocumentBuilder` belgede içerik yazmanıza ve yer imleri oluşturmanıza olanak tanıyan kaleminiz gibidir.
 
- biz kullanıyoruz`StartBookmark` bir ana yer imini başlatma yöntemi ve`EndBookmark` sonlandırmanın yöntemi. Araya metin ve diğer yer imlerini ekleyebiliriz:
+## Adım 2: Ana Yer İşaretini Oluşturun
+
+Ana Yer İmini Başlatma ve Bitirme
+
+Yer imi oluşturmak için başlangıç ve bitiş noktalarını belirtmeniz gerekir. Burada "Yer İşaretim" adında bir yer imi oluşturacağız.
 
 ```csharp
-builder. StartBookmark("My Bookmark");
+builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
-
-// Buraya daha fazla yer işareti veya metin ekleyin.
-
-builder. EndBookmark("My Bookmark");
 ```
 
-## 3. Adım: İç İçe Yer İmleri Oluşturma
+ Açıklama:`StartBookmark` yöntem yer iminin başlangıcını işaretler ve`Writeln` yer iminin içine metin ekler.
 
- Ana yer iminin içinde iç içe yer imleri de oluşturabiliriz. Biz de aynısını kullanıyoruz`StartBookmark` Ve`EndBookmark` iç içe yer imleri oluşturma ve sonlandırma yöntemleri:
+## 3. Adım: İç İçe Yerleştirilmiş Bir Yer İşareti Oluşturun
+
+Ana Yer İşaretinin İçine Yuvalanmış Yer İşareti Ekle
+
+Yer imlerini diğer yer imlerinin içine yerleştirebilirsiniz. Burada "Yer İşaretim" içerisine "İç İçe Yer İmi"ni ekliyoruz.
 
 ```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
+builder.StartBookmark("Nested Bookmark");
+builder.Writeln("Text inside a NestedBookmark.");
+builder.EndBookmark("Nested Bookmark");
 ```
 
-## 4. Adım: Çıktı PDF dosyasında yer imi önizleme düzeylerini belirtme
+ Açıklama: Yer imlerinin iç içe yerleştirilmesi, daha yapılandırılmış ve hiyerarşik içerik organizasyonuna olanak tanır.`EndBookmark` yöntem geçerli yer imini kapatır.
 
- biz kullanıyoruz`PdfSaveOptions` Çıktı PDF dosyasındaki yer imi önizleme düzeylerini belirtmek için nesne. biz kullanıyoruz`BookmarksOutlineLevels` mülk
+## Adım 4: İç İçe Yerleştirilmiş Yer İminin Dışına Metin Ekleme
 
-  ana yer imlerini ve iç içe yer imlerini ilgili düzeyleriyle eklemek için:
+İçerik Eklemeye Devam Edin
+
+İç içe yer iminden sonra ana yer imine daha fazla içerik eklemeye devam edebiliriz.
+
+```csharp
+builder.Writeln("Text after Nested Bookmark.");
+builder.EndBookmark("My Bookmark");
+```
+
+Açıklama: Bu, ana yer iminin hem iç içe yer imini hem de ek metni kapsamasını sağlar.
+
+## Adım 5: PDF Kaydetme Seçeneklerini Yapılandırın
+
+Yer İmleri için PDF Kaydetme Seçeneklerini Ayarlama
+
+Belgeyi PDF olarak kaydederken seçenekleri yer imlerini içerecek şekilde yapılandırabiliriz.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
 options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
+options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
+```
+
+ Açıklama:`PdfSaveOptions` class belgenin PDF olarak nasıl kaydedileceğini belirtmenize olanak tanır.`BookmarksOutlineLevels` özelliği, PDF'deki yer imlerinin hiyerarşisini tanımlar.
+
+## Adım 6: Belgeyi Kaydedin
+
+Belgeyi PDF olarak kaydet
+
+Son olarak belgeyi belirtilen seçeneklerle kaydedin.
+
+```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
-### Aspose.Words for .NET kullanarak Yer İşareti Oluşturma için örnek kaynak kodu
-
-Aspose.Words for .NET kullanarak yer imleri oluşturmayı gösteren tam örnek kaynak kodu burada bulabilirsiniz:
-
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartBookmark("My Bookmark");
-	builder.Writeln("Text inside a bookmark.");
-
-	builder.StartBookmark("Nested Bookmark");
-	builder.Writeln("Text inside a NestedBookmark.");
-	builder.EndBookmark("Nested Bookmark");
-
-	builder.Writeln("Text after Nested Bookmark.");
-	builder.EndBookmark("My Bookmark");
-
-	PdfSaveOptions options = new PdfSaveOptions();
-	options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-	options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
-
-	doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
-  
-```
+ Açıklama:`Save` yöntemi belgeyi belirtilen formatta ve konumda kaydeder. PDF artık oluşturduğumuz yer işaretlerini içerecektir.
 
 ## Çözüm
 
-Bu makalede Aspose.Words for .NET'in Create Bookmark fonksiyonunun nasıl kullanılacağını anlamak için C# kaynak kodunu inceledik. Bir belgede yer imleri oluşturmak ve çıktı PDF dosyasında yer imi önizleme düzeylerini belirlemek için adım adım bir kılavuz izledik.
+Aspose.Words for .NET'i kullanarak bir Word belgesinde yer imleri oluşturmak oldukça basittir ve belgede gezinme ve düzenleme açısından son derece faydalıdır. İster rapor oluşturuyor olun, ister e-Kitap oluşturuyor olun, ister büyük belgeleri yönetiyor olun, yer imleri hayatı kolaylaştırır. Bu eğitimde özetlenen adımları takip ettiğinizde yer imlerine eklenmiş bir PDF'ye kısa sürede hazır olursunuz.
 
-### SSS
+## SSS'ler
 
-#### S: Aspose.Words for .NET'te "Yer imleri oluştur" fonksiyonunu kullanmanın önkoşulları nelerdir?
+### Farklı düzeylerde birden fazla yer imi oluşturabilir miyim?
 
-C: Aspose.Words for .NET'te "Yer imleri oluştur" işlevini kullanmak için C# dili hakkında temel bilgiye sahip olmanız gerekir. Ayrıca Aspose.Words kütüphanesinin kurulu olduğu bir .NET geliştirme ortamına da ihtiyacınız var.
+Kesinlikle! Belgeyi PDF olarak kaydederken gerektiği kadar yer imi oluşturabilir ve hiyerarşik düzeylerini tanımlayabilirsiniz.
 
-#### S: Aspose.Words for .NET'te nasıl belge oluşturulur?
+### Bir yer iminin metnini nasıl güncellerim?
 
- C: Aspose.Words for .NET'te bir belge oluşturmak için`Document` sınıf. İşte örnek bir kod:
+ Kullanarak yer imine gidebilirsiniz.`DocumentBuilder.MoveToBookmark` ve ardından metni güncelleyin.
 
-```csharp
-Document doc = new Document();
-```
+### Bir yer imini silmek mümkün mü?
 
-#### S: Aspose.Words for .NET kullanarak bir belgede ana yer imi nasıl oluşturulur?
+ Evet, bir yer imini şunu kullanarak silebilirsiniz:`Bookmarks.Remove` Yer iminin adını belirterek yöntemi kullanın.
 
- C: Aspose.Words for .NET kullanarak bir belgede ana yer imi oluşturmak için`StartBookmark` yer imini başlatma, içine metin veya başka yer imleri ekleme ve ardından` EndBookmark` bitirmek için. İşte örnek bir kod:
+### PDF'nin yanı sıra başka formatlarda da yer imleri oluşturabilir miyim?
 
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+Evet, Aspose.Words, DOCX, HTML ve EPUB dahil olmak üzere çeşitli formatlardaki yer işaretlerini destekler.
 
-#### S: Aspose.Words for .NET kullanarak ana yer iminin içinde yuvalanmış bir yer imi nasıl oluşturulur?
+### Yer imlerinin PDF'de doğru şekilde görünmesini nasıl sağlayabilirim?
 
- C: Aspose.Words for .NET'i kullanarak ana yer iminin içinde yuvalanmış bir yer imi oluşturmak için aynı yöntemi kullanabilirsiniz.`StartBookmark` Ve`EndBookmark` iç içe yer imini başlatma ve bitirme yöntemleri. İşte örnek bir kod:
-
-```csharp
-builder.StartBookmark("Embedded bookmark");
-builder.Writeln("Text inside nested bookmark.");
-builder.EndBookmark("Embedded bookmark");
-```
-
-#### S: Aspose.Words for .NET kullanılarak çıktı PDF'sinde yer imi önizleme düzeyleri nasıl belirlenir?
-
- C: Aspose.Words for .NET'i kullanarak çıktı PDF'sinde yer imi önizleme seviyelerini belirlemek için`PdfSaveOptions` sınıf ve`BookmarksOutlineLevels` mülk. Ana yer imlerini ve iç içe yer imlerini ilgili düzeyleriyle ekleyebilirsiniz. İşte örnek bir kod:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-```
-
-#### S: Aspose.Words for .NET kullanarak yer imleri oluşturduktan sonra bir belge nasıl kaydedilir?
-
- C: Aspose.Words for .NET'i kullanarak yer imleri oluşturduktan sonra bir belgeyi kaydetmek için`Save` yöntemi`Document` Hedef dosya yolunu belirten nesne. İşte örnek bir kod:
-
-```csharp
-doc.Save("path/to/your/output-document.docx");
-```
-
-#### S: Aspose.Words for .NET kullanılarak çıktı PDF'sinde yer imi önizleme düzeyleri nasıl belirlenir?
-
- C: Aspose.Words for .NET'i kullanarak çıktı PDF'sinde yer imi önizleme seviyelerini belirlemek için`PdfSaveOptions` sınıf ve`BookmarksOutlineLevels` mülk. Ana yer imlerini ve iç içe yer imlerini ilgili düzeyleriyle ekleyebilirsiniz. İşte örnek bir kod:
-
-```csharp
-PdfSaveOptions options = new PdfSaveOptions();
-options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
-options.OutlineOptions.BookmarksOutlineLevels.Add("Embedded bookmark", 2);
-doc.Save("path/to/your/output-pdf-file.pdf", options);
-```
-
-#### S: Aspose.Words for .NET kullanarak ana yer iminin içinde iç içe yer imleri nasıl oluşturulur?
-
- C: Aspose.Words for .NET'i kullanarak ana yer iminin içinde iç içe yer imleri oluşturmak için aynı yöntemi kullanabilirsiniz.`StartBookmark` Ve`EndBookmark` iç içe yer imlerini başlatma ve bitirme yöntemleri. Çağrırken ana yer imini parametre olarak belirttiğinizden emin olun.`StartBookmark` yöntem. İşte örnek bir kod:
-
-```csharp
-builder.StartBookmark("Main bookmark");
-builder.Writeln("Text inside main bookmark.");
-
-builder.StartBookmark("Nested bookmark 1");
-builder.Writeln("Text inside first nested bookmark.");
-builder.EndBookmark("Nested bookmark 1");
-
-builder.StartBookmark("Nested bookmark 2");
-builder.Writeln("Text inside second nested bookmark.");
-builder.EndBookmark("Nested bookmark 2");
-
-builder.EndBookmark("Main bookmark");
-```
-
-#### S: Aspose.Words for .NET kullanarak bir yer iminin içine nasıl metin eklenir?
-
- C: Aspose.Words for .NET'i kullanarak bir yer iminin içine metin eklemek için`Write` yöntemi`DocumentBuilder`Eklenecek metni belirten nesne. İşte örnek bir kod:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Write("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
-
-#### S: Aspose.Words for .NET kullanarak bir belgede ana yer imi nasıl oluşturulur?
-
- C: Aspose.Words for .NET kullanarak bir belgede ana yer imi oluşturmak için`StartBookmark` yer imini başlatma yöntemi ve`EndBookmark` sonlandırmanın yöntemi. İşte örnek bir kod:
-
-```csharp
-builder.StartBookmark("My Bookmark");
-builder.Writeln("Text inside bookmark.");
-builder.EndBookmark("My Bookmark");
-```
+ tanımladığınızdan emin olun.`BookmarksOutlineLevels` düzgün bir şekilde`PdfSaveOptions`. Bu, yer imlerinin PDF'nin ana hatlarına dahil edilmesini sağlar.

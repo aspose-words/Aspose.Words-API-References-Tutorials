@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- Σε αυτό το βήμα, διαμορφώνουμε τις επιλογές για τη φόρτωση του εγγράφου TXT. Δημιουργούμε ένα νέο`TxtLoadOptions` αντικείμενο και ορίστε το`LeadingSpacesOptions` και`TrailingSpacesOptions` ιδιότητες να`TxtLeadingSpacesOptions.Trim` και`TxtTrailingSpacesOptions.Trim` αντίστοιχα. Αυτό λέει στο Aspose.Words να αφαιρέσει τα κύρια και τα τελικά κενά από τις γραμμές κατά τη φόρτωση του εγγράφου.
+ Σε αυτό το βήμα, διαμορφώνουμε τις επιλογές για τη φόρτωση του εγγράφου TXT. Δημιουργούμε ένα νέο`TxtLoadOptions` αντικείμενο και ορίστε το`LeadingSpacesOptions`και`TrailingSpacesOptions` ιδιότητες να`TxtLeadingSpacesOptions.Trim`και`TxtTrailingSpacesOptions.Trim` αντίστοιχα. Αυτό λέει στο Aspose.Words να αφαιρέσει τα κύρια και τα τελικά κενά από τις γραμμές κατά τη φόρτωση του εγγράφου.
 
 ## Βήμα 4: Φόρτωση του εγγράφου
 

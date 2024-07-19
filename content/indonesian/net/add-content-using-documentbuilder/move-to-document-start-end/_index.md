@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Di sini, kami membuat sebuah contoh`Document` Dan`DocumentBuilder` . Pikirkan tentang`Document` sebagai dokumen Word kosong Anda dan`DocumentBuilder` sebagai penamu.
+ Di sini, kami membuat sebuah contoh`Document`Dan`DocumentBuilder` . Pikirkan tentang`Document` sebagai dokumen Word kosong Anda dan`DocumentBuilder` sebagai penamu.
 
 ## Langkah 2: Pindah ke Awal Dokumen
 
@@ -72,7 +72,7 @@ Dan itu dia! Berpindah ke awal dan akhir dokumen di Aspose.Words untuk .NET sang
 ## FAQ
 
 ### Apa itu Aspose.Words untuk .NET?  
-Aspose.Words untuk .NET adalah perpustakaan yang kuat untuk membuat, mengedit, dan memanipulasi dokumen Word secara terprogram dalam C#.
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk membuat, mengedit, dan memanipulasi dokumen Word secara terprogram dalam C#.
 
 ### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa .NET lainnya?  
 Sangat! Meskipun panduan ini menggunakan C#, Anda dapat menggunakan Aspose.Words untuk .NET dengan bahasa .NET apa pun seperti VB.NET.

@@ -7,11 +7,11 @@ type: docs
 weight: 10
 url: /hu/java/document-merging/using-document-merging/
 ---
-Az Aspose.Words for Java robusztus megoldást kínál azoknak a fejlesztőknek, akiknek több Word-dokumentumot kell programozottan egyesíteniük. A dokumentumok egyesítése gyakori követelmény a különböző alkalmazásokban, mint például a jelentéskészítés, a levélösszevonás és a dokumentum-összeállítás. Ebben a lépésről lépésre bemutatjuk, hogyan lehet dokumentumokat egyesíteni az Aspose.Words for Java programmal.
+Az Aspose.Words for Java robusztus megoldást kínál azoknak a fejlesztőknek, akiknek több Word-dokumentumot kell programozottan egyesíteniük. A dokumentumok egyesítése gyakori követelmény a különféle alkalmazásokban, mint például a jelentéskészítés, a levélösszevonás és a dokumentum-összeállítás. Ebben a lépésről lépésre bemutatjuk, hogyan lehet dokumentumokat egyesíteni az Aspose.Words for Java programmal.
 
 ## 1. Bevezetés a dokumentum-egyesítésbe
 
-A dokumentum-egyesítés két vagy több különálló Word-dokumentum egyetlen, összefüggő dokumentummá egyesítése. Ez a dokumentumautomatizálás kulcsfontosságú funkciója, amely lehetővé teszi a különböző forrásokból származó szövegek, képek, táblázatok és egyéb tartalmak zökkenőmentes integrációját. Az Aspose.Words for Java leegyszerűsíti az egyesítési folyamatot, lehetővé téve a fejlesztők számára, hogy ezt a feladatot programozottan, manuális beavatkozás nélkül hajtsák végre.
+A dokumentum-egyesítés két vagy több különálló Word-dokumentum egyetlen, összefüggő dokumentummá történő egyesítése. Ez a dokumentumautomatizálás kulcsfontosságú funkciója, amely lehetővé teszi a különböző forrásokból származó szövegek, képek, táblázatok és egyéb tartalmak zökkenőmentes integrációját. Az Aspose.Words for Java leegyszerűsíti az egyesítési folyamatot, lehetővé téve a fejlesztők számára, hogy ezt a feladatot programozottan, manuális beavatkozás nélkül hajtsák végre.
 
 ## 2. Az Aspose.Words for Java használatának megkezdése
 
@@ -191,7 +191,7 @@ Az Aspose.Words for Java segítségével a Java fejlesztők könnyedén egyesít
 
    Az Aspose.Words for Java nagyméretű dokumentumok hatékony kezelésére készült. Optimalizált algoritmusokat alkalmaz a dokumentumok egyesítéséhez, így még kiterjedt tartalom esetén is nagy teljesítményt biztosít.
 
-### Egyesíthetem a jelszóval védett dokumentumokat az Aspose.Words for Java használatával?
+### Egyesíthetek jelszóval védett dokumentumokat az Aspose.Words for Java használatával?
 
    Igen, az Aspose.Words for Java támogatja a jelszóval védett dokumentumok egyesítését. Győződjön meg arról, hogy a megfelelő jelszavakat adja meg a dokumentumok eléréséhez és egyesítéséhez.
 

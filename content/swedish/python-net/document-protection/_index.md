@@ -11,7 +11,7 @@ Dokumentskydd är väsentligt för att skydda känslig information och säkerst�
 
 ## Säkra dina dokument med Python
 
-I dessa handledningar kommer utvecklare att utforska hur man använder Aspose.Words för Python för att skydda dokument med lösenordskryptering, begränsa redigering och hantera användarbehörigheter. Aspose.Words erbjuder flexibla alternativ för att anpassa dokumentskyddsinställningarna, vilket säkerställer att konfidentiell data förblir säker och tillgänglig endast för auktoriserade användare.
+I dessa handledningar kommer utvecklare att utforska hur man använder Aspose.Words för Python för att skydda dokument med lösenordskryptering, begränsa redigering och hantera användarbehörigheter. Aspose.Words erbjuder flexibla alternativ för att anpassa dokumentskyddsinställningarna, vilket säkerställer att konfidentiell data förblir säker och tillgänglig endast för behöriga användare.
 
 ## Stärk dokumentsäkerheten
 

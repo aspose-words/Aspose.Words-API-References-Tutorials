@@ -30,7 +30,7 @@ Akár kezdő, akár tapasztalt Java-fejlesztő, az Aspose.Words for Java érték
 
 Tanuljon meg Word dokumentumokat generálni Java nyelven az Aspose.Words segítségével! Egyszerű szöveg, kép és táblázat beillesztése. Automatizálja a jelentéseket és a konverziókat. A dokumentumfeldolgozás egyszerűsítése.
 ### [Különböző dokumentumformátumok kezelése](./handling-different-document-formats/)
-Fedezze fel az Aspose.Words for Java erejét a különféle dokumentumformátumok kezelésében. Tanuljon meg szövegszerkesztést, konverziót és egyebeket gyakorlati példákon keresztül.
+Használja ki az Aspose.Words for Java erejét a különféle dokumentumformátumok kezelésében. Tanuljon meg szövegszerkesztést, konverziót és egyebeket gyakorlati példákon keresztül.
 ### [Dokumentumbetöltés optimalizálása HTML, RTF és TXT opciókkal](./optimizing-document-loading-options/)
 Optimalizálja a dokumentumbetöltést az Aspose.Words for Java segítségével. Növelje a HTML, RTF és TXT fájlok sebességét és hatékonyságát. Növelje a felhasználói élményt még ma!
 ### [Hatékony dokumentummentés DOC, HTML és képbeállításokkal](./efficient-document-saving-options/)

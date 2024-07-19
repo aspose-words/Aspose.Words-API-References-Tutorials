@@ -8,7 +8,7 @@ weight: 10
 url: /fr/java/document-styling/word-document-styling/
 ---
 
-Si vous cherchez à améliorer l'apparence visuelle de vos documents et à créer des sorties élégantes et professionnelles à l'aide d'Aspose.Words pour Java, vous êtes au bon endroit. Dans ce guide étape par étape, nous explorerons le processus de style et de traitement des documents à l'aide d'Aspose.Words pour Java. Que vous soyez un développeur Java chevronné ou tout juste débutant, ce guide vous sera utile pour transformer vos documents en œuvres d'art bien formatées et esthétiques.
+Si vous cherchez à améliorer l'apparence visuelle de vos documents et à créer des sorties élégantes et professionnelles à l'aide d'Aspose.Words pour Java, vous êtes au bon endroit. Dans ce guide étape par étape, nous explorerons le processus de style et de traitement de documents à l'aide d'Aspose.Words pour Java. Que vous soyez un développeur Java chevronné ou tout juste débutant, ce guide vous sera utile pour transformer vos documents en œuvres d'art bien formatées et esthétiques.
 
 ## Introduction
 
@@ -219,7 +219,7 @@ style.getFont().setSize(18);
 
 ### 2. Création et application de styles personnalisés
 
-Vous pouvez créer des styles personnalisés et les appliquer à des paragraphes ou à des séquences de texte.
+Vous pouvez créer des styles personnalisés et les appliquer à des paragraphes ou à des passages de texte.
 
 ```java
 Style customStyle = doc.getStyles().add(StyleType.PARAGRAPH, "CustomStyle");

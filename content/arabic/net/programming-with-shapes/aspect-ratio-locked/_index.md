@@ -17,14 +17,14 @@ url: /ar/net/programming-with-shapes/aspect-ratio-locked/
 - المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
 
 ## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
+ ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## الخطوة 2: إنشاء مستند جديد وDocumentBuilder
- إنشاء مثيل جديد لـ`Document` فئة و أ`DocumentBuilder`كائن للعمل مع الوثيقة.
+ إنشاء مثيل جديد لـ`Document` فئة و أ`DocumentBuilder` كائن للعمل مع الوثيقة.
 
 ```csharp
 Document doc = new Document();
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 3: إدراج شكل صورة
- استخدم ال`InsertImage` طريقة`DocumentBuilder` كائن لإدراج شكل صورة في المستند. توفير المسار إلى ملف الصورة كمعلمة.
+ استخدم ال`InsertImage` طريقة`DocumentBuilder`كائن لإدراج شكل صورة في المستند. توفير المسار إلى ملف الصورة كمعلمة.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");
@@ -42,7 +42,7 @@ Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png")
  تعيين`AspectRatioLocked` خاصية الشكل ل`true` أو`false` لقفل أو إلغاء قفل نسبة العرض إلى الارتفاع، على التوالي.
 
 ```csharp
-shape.AspectRatioLocked = false; //فتح نسبة العرض إلى الارتفاع
+shape.AspectRatioLocked = false; // فتح نسبة العرض إلى الارتفاع
 ```
 
 ## الخطوة 5: احفظ المستند

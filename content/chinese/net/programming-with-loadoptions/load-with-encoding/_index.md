@@ -61,7 +61,7 @@ Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 
 答：Aspose.Words for .NET 中的 LoadOptions 允许开发人员在加载文本文档时指定所需的编码，确保正确读取和处理内容。
 
-#### 问：加载文本文档时，我可以使用除 UTF-7 之外的其他编码吗？
+#### 问：加载文本文档时，我可以使用 UTF-7 以外的其他编码吗？
 
 答：当然可以！Aspose.Words 支持多种编码，您可以选择适合您特定文档要求的编码。
 

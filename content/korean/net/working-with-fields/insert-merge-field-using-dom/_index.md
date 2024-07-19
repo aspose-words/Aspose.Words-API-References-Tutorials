@@ -17,7 +17,7 @@ url: /ko/net/working-with-fields/insert-merge-field-using-dom/
 1. **Basic Knowledge of C#:** C# 프로그래밍에 익숙해야 합니다.
 2. **Visual Studio Installed:** 컴퓨터에 Visual Studio 또는 기타 C# IDE가 설치되어 있는지 확인하세요.
 3. **Aspose.Words for .NET:** 다음에서 최신 버전의 Aspose.Words for .NET을 다운로드하여 설치하세요.[릴리스](https://releases.aspose.com/words/net/).
-4. **Valid License:** 자격증이 없어도 자격증을 취득할 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+4. **Valid License:** 자격증이 없어도 자격증을 취득할 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ## 1단계: 프로젝트 설정
 
@@ -63,8 +63,8 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 다음으로, 병합 필드를 삽입하려는 문서의 특정 단락으로 커서를 이동해야 합니다.
 
 ```csharp
-// 커서를 단락으로 이동합니다.
-builder.MoveToParagraph(2, 0);
+Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
+builder.MoveTo(para);
 ```
 
 ## 6단계: 병합 필드 삽입

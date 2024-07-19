@@ -33,7 +33,7 @@ VbaProject project = doc.VbaProject;
 ```
 
 ## Langkah 3: Ubah kode sumber makro
- Kami sekarang akan memodifikasi kode sumber makro pertama proyek VBA. Ganti`newSourceCode` variabel dengan kode sumber baru yang ingin Anda gunakan.
+Kami sekarang akan memodifikasi kode sumber makro pertama proyek VBA. Ganti`newSourceCode` variabel dengan kode sumber baru yang ingin Anda gunakan.
 
 ```csharp
 const string newSourceCode = "Test change source code";
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita melihat cara mengedit makro VBA di dokumen Word menggunakan Aspose.Words untuk .NET. Mengedit makro VBA memungkinkan Anda memperbarui kode VBA yang ada di dokumen Anda untuk melakukan perubahan atau peningkatan. Jangan ragu untuk menggunakan fitur ini untuk lebih menyesuaikan dan mengotomatiskan dokumen Word Anda.
+Dalam tutorial ini, kita melihat cara mengedit makro VBA di dokumen Word menggunakan Aspose.Words untuk .NET. Mengedit makro VBA memungkinkan Anda memperbarui kode VBA yang ada di dokumen Anda untuk melakukan perubahan atau peningkatan. Jangan ragu untuk menggunakan fitur ini untuk lebih menyesuaikan dan mengotomatisasi dokumen Word Anda.
 
 ### FAQ
 

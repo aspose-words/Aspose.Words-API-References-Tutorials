@@ -23,7 +23,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## चरण 2: दस्तावेज़ बनाएँ और उसे अनुकूलित करें
- इसका एक उदाहरण बनाएं`Document` वर्ग और एक संबद्ध`DocumentBuilder` दस्तावेज़ सामग्री बनाने के लिए।`Font.EmphasisMark` फ़ॉन्ट जोर शैली को सेट करने के लिए संपत्ति`EmphasisMark.UnderSolidCircle` . फिर का उपयोग करें`Write` और`Writeln` के तरीके`DocumentBuilder` निर्दिष्ट फ़ॉन्ट जोर के साथ पाठ जोड़ने के लिए.
+ इसका एक उदाहरण बनाएं`Document` वर्ग और एक संबद्ध`DocumentBuilder` दस्तावेज़ सामग्री बनाने के लिए।`Font.EmphasisMark` फ़ॉन्ट जोर शैली को सेट करने के लिए संपत्ति`EmphasisMark.UnderSolidCircle` . फिर का उपयोग करें`Write`और`Writeln` के तरीके`DocumentBuilder` निर्दिष्ट फ़ॉन्ट जोर के साथ पाठ जोड़ने के लिए.
 
 ```csharp
 Document document = new Document();

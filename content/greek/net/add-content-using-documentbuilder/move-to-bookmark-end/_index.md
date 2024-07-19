@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. Μπορώ να μετακινηθώ στην αρχή ενός σελιδοδείκτη αντί στο τέλος;
 
- Απολύτως! Απλώς ρυθμίστε το`isBookmarkStart` παράμετρος σε`true` και`isBookmarkEnd` προς την`false` στο`MoveToBookmark` μέθοδος.
+ Απολύτως! Απλώς ρυθμίστε το`isBookmarkStart` παράμετρος σε`true`και`isBookmarkEnd` προς την`false` στο`MoveToBookmark` μέθοδος.
 
 ### 2. Τι γίνεται αν το όνομα του σελιδοδείκτη μου είναι λανθασμένο;
 
@@ -142,8 +142,8 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 4. Πώς μπορώ να πάρω μια προσωρινή άδεια για το Aspose.Words;
 
- Μπορείτε να πάρετε μια προσωρινή άδεια από το[Aspose ιστότοπο](https://purchase.aspose.com/temporary-license/).
+ Μπορείτε να πάρετε μια προσωρινή άδεια από το[Aspose website](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Είναι το Aspose.Words για .NET δωρεάν;
 
-Το Aspose.Words για .NET είναι ένα εμπορικό προϊόν, αλλά μπορείτε να λάβετε μια δωρεάν δοκιμή από το[Aspose ιστότοπο](https://releases.aspose.com/).
+Το Aspose.Words για .NET είναι ένα εμπορικό προϊόν, αλλά μπορείτε να λάβετε μια δωρεάν δοκιμή από το[Aspose website](https://releases.aspose.com/).

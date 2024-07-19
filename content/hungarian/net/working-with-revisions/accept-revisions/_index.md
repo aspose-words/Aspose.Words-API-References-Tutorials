@@ -15,7 +15,7 @@ Ebben az oktatóanyagban végigvezetjük a Word-dokumentumok módosításainak e
 Ebben a példában egy dokumentumot hozunk létre, és tartalmat adunk hozzá. Számos bekezdést használunk a változtatások és átdolgozások szemléltetésére. Itt van, hogyan:
 
 ```csharp
-// A dokumentumok könyvtár elérési útja.
+// dokumentumok könyvtár elérési útja.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -147,7 +147,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 
 #### 2. megoldás:
 
- V: A revíziókövetést a következővel is engedélyezheti`Document` kivitelező, amely elfogadja`trackRevisions` és`author` paramétereket.
+ V: A revíziókövetést a következővel is engedélyezheti`Document` kivitelező, amely elfogadja`trackRevisions`és`author` paramétereket.
 
 ```csharp
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });

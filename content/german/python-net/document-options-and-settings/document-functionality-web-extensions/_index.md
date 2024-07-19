@@ -1,7 +1,7 @@
 ---
 title: Erweitern der Dokumentfunktionalität mit Weberweiterungen
 linktitle: Erweitern der Dokumentfunktionalität mit Weberweiterungen
-second_title: Aspose.Words Python-Dokumentenverwaltungs-API
+second_title: Aspose.Words Python-API zur Dokumentenverwaltung
 description: Erfahren Sie, wie Sie die Dokumentfunktionalität mit Weberweiterungen mithilfe von Aspose.Words für Python erweitern. Schritt-für-Schritt-Anleitung mit Quellcode für nahtlose Integration.
 type: docs
 weight: 13
@@ -10,7 +10,7 @@ url: /de/python-net/document-options-and-settings/document-functionality-web-ext
 
 ## Einführung
 
-Web-Erweiterungen sind zu einem integralen Bestandteil moderner Dokumentenmanagementsysteme geworden. Sie ermöglichen Entwicklern, die Dokumentfunktionalität durch die nahtlose Integration webbasierter Komponenten zu verbessern. Aspose.Words, eine leistungsstarke Dokumentbearbeitungs-API für Python, bietet eine umfassende Lösung für die Integration von Web-Erweiterungen in Ihre Dokumente.
+Web-Erweiterungen sind zu einem integralen Bestandteil moderner Dokumentenmanagementsysteme geworden. Sie ermöglichen Entwicklern, die Dokumentfunktionalität durch die nahtlose Integration webbasierter Komponenten zu verbessern. Aspose.Words, eine leistungsstarke Dokumentbearbeitungs-API für Python, bietet eine umfassende Lösung zum Integrieren von Web-Erweiterungen in Ihre Dokumente.
 
 ## Voraussetzungen
 
@@ -69,7 +69,7 @@ font.color = aspose.words.Color.from_argb(255, 0, 0, 0)
 
 Um eine Web-Erweiterung in das Dokument einzufügen, gehen Sie folgendermaßen vor:
 
-1. Erstellen Sie die Weberweiterung mit HTML, CSS und JavaScript.
+1. Erstellen Sie die Web-Erweiterung mit HTML, CSS und JavaScript.
 2. Konvertieren Sie die Web-Erweiterung in eine Base64-codierte Zeichenfolge.
 
 ```python

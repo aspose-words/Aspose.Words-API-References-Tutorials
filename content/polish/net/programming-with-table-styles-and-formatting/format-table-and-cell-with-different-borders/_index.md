@@ -30,20 +30,20 @@ Aby rozpocząć tworzenie tabeli, używamy`StartTable()` metodą konstruktora do
 
 ```csharp
 Table table = builder. StartTable();
-builder. InsertCell();
+builder.InsertCell();
 // Ustaw obramowanie dla całego stołu.
 table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 // Ustaw dopełnienie tej komórki.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
-builder. InsertCell();
+builder.InsertCell();
 // Określ inne wypełnienie komórki dla drugiej komórki.
 builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
 builder.Writeln("Cell #2");
-builder. EndRow();
+builder.EndRow();
 // Wyczyść formatowanie komórek z poprzednich operacji.
 builder.CellFormat.ClearFormatting();
-builder. InsertCell();
+builder.InsertCell();
 // Utwórz grubsze obramowanie dla pierwszej komórki w tym wierszu. Będzie inaczej
 // względem granic zdefiniowanych dla tabeli.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
@@ -51,7 +51,7 @@ builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
 builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.ClearFormatting();
 builder.Writeln("Cell #4");
 ```
@@ -70,37 +70,37 @@ Gratulacje! Sformatowałeś teraz tabelę i komórkę z różnymi obramowaniami 
 ### Przykładowy kod źródłowy formatu tabeli i komórki z różnymi obramowaniami przy użyciu Aspose.Words dla .NET 
 
 ```csharp
-	// Ścieżka do katalogu dokumentów
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+// Ścieżka do katalogu dokumentów
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	//Ustaw obramowanie całej tabeli.
-	table.SetBorders(LineStyle.Single, 2.0, Color.Black);
-	// Ustaw cieniowanie komórki dla tej komórki.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
-	builder.Writeln("Cell #1");
-	builder.InsertCell();
-	// Określ inne cieniowanie komórki dla drugiej komórki.
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
-	builder.Writeln("Cell #2");
-	builder.EndRow();
-	// Usuń formatowanie komórki z poprzednich operacji.
-	builder.CellFormat.ClearFormatting();
-	builder.InsertCell();
-	// Utwórz większe obramowanie dla pierwszej komórki tego wiersza. To będzie inne
-	// w porównaniu z granicami ustawionymi dla tabeli.
-	builder.CellFormat.Borders.Left.LineWidth = 4.0;
-	builder.CellFormat.Borders.Right.LineWidth = 4.0;
-	builder.CellFormat.Borders.Top.LineWidth = 4.0;
-	builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
-	builder.Writeln("Cell #3");
-	builder.InsertCell();
-	builder.CellFormat.ClearFormatting();
-	builder.Writeln("Cell #4");
-	doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
+Table table = builder.StartTable();
+builder.InsertCell();
+//Ustaw obramowanie całej tabeli.
+table.SetBorders(LineStyle.Single, 2.0, Color.Black);
+// Ustaw cieniowanie komórki dla tej komórki.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
+builder.Writeln("Cell #1");
+builder.InsertCell();
+// Określ inne cieniowanie komórki dla drugiej komórki.
+builder.CellFormat.Shading.BackgroundPatternColor = Color.Green;
+builder.Writeln("Cell #2");
+builder.EndRow();
+// Usuń formatowanie komórki z poprzednich operacji.
+builder.CellFormat.ClearFormatting();
+builder.InsertCell();
+// Utwórz większe obramowanie dla pierwszej komórki tego wiersza. To będzie inne
+// w porównaniu z granicami ustawionymi dla tabeli.
+builder.CellFormat.Borders.Left.LineWidth = 4.0;
+builder.CellFormat.Borders.Right.LineWidth = 4.0;
+builder.CellFormat.Borders.Top.LineWidth = 4.0;
+builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
+builder.Writeln("Cell #3");
+builder.InsertCell();
+builder.CellFormat.ClearFormatting();
+builder.Writeln("Cell #4");
+doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
 ## Wniosek

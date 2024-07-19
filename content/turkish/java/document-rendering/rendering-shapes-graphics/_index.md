@@ -71,7 +71,7 @@ shape.setShadowEnabled(true);
 
 ## Konumlandırma ve Boyutlandırma
 
-Şekillerin hassas konumlandırılması ve boyutlandırılması belgenin düzeni açısından çok önemlidir. Aspose.Words for Java şu özellikleri ayarlamak için yöntemler sağlar:
+Şekillerin hassas konumlandırılması ve boyutlandırılması belgenin düzeni açısından çok önemlidir. Aspose.Words for Java şu özellikleri ayarlamak için yöntemler sunar:
 
 ```java
 shape.setLeft(100);
@@ -139,7 +139,7 @@ Belgelerinizi şekil ve grafiklerle geliştirmek, belgelerinizin görsel çekici
 
 ### Belgemdeki bir şekli nasıl yeniden boyutlandırabilirim?
 
- Bir şekli yeniden boyutlandırmak için`setWidth` Ve`setHeight` şekil nesnesi üzerindeki yöntemler. Örneğin, 150 piksel genişliğinde ve 75 piksel yüksekliğinde bir şekil oluşturmak için:
+ Bir şekli yeniden boyutlandırmak için`setWidth`Ve`setHeight` şekil nesnesi üzerindeki yöntemler. Örneğin, 150 piksel genişliğinde ve 75 piksel yüksekliğinde bir şekil oluşturmak için:
 
 ```java
 shape.setWidth(150);

@@ -46,7 +46,7 @@ TableCollection tables = body.Tables;
 ```csharp
 foreach(Table table in tables)
 {
-     // Akses cepat dan mengetik ke baris pertama tabel.
+     //Akses cepat dan mengetik ke baris pertama tabel.
      table.FirstRow?.Remove();
 
      // Akses cepat dan mengetik ke baris terakhir tabel.

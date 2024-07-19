@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## 2. Adım: Belgeyi oluşturun ve biçimlendirin
- Bir örneğini oluşturun`Document` sınıf ve`DocumentBuilder`belgeyi oluşturmak için sınıf. Kullan`Font` mülkiyeti`DocumentBuilder` yazı tipi biçimlendirme özelliklerine erişmek için.
+ Bir örneğini oluşturun`Document` sınıf ve`DocumentBuilder` belgeyi oluşturmak için sınıf. Kullan`Font` mülkiyeti`DocumentBuilder` yazı tipi biçimlendirme özelliklerine erişmek için.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## 3. Adım: Belgeyi kaydedin
- Kullan`Save` Belgeyi uygulanan yazı tipi formatıyla kaydetme yöntemi. Yer değiştirmek`"WorkingWithFonts.SetFontFormatting.docx"` İstenilen dosya adı ile.
+ Kullan`Save`Belgeyi uygulanan yazı tipi formatıyla kaydetme yöntemi. Yer değiştirmek`"WorkingWithFonts.SetFontFormatting.docx"` İstenilen dosya adı ile.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");
@@ -77,7 +77,7 @@ C: Aspose.Words kullanarak bir Word belgesindeki bir yazı tipine kalın stili u
 
 #### S: Aspose.Words ile bir Word belgesindeki metnin belirli bir kısmına italik stil uygulamak mümkün müdür?
 
-C: Evet, Aspose.Words ile italik stili Word belgesindeki metnin belirli bir kısmına uygulayabilirsiniz. İstediğiniz metin aralığını seçmek ve stilini "italik" olarak ayarlamak için API'yi kullanabilirsiniz.
+C: Evet, Aspose.Words ile italik stili Word belgesindeki metnin belirli bir bölümüne uygulayabilirsiniz. İstediğiniz metin aralığını seçmek ve stilini "italik" olarak ayarlamak için API'yi kullanabilirsiniz.
 
 #### S: Aspose.Words'ü kullanarak bir Word belgesindeki yazı tipi rengini nasıl değiştirebilirim?
 

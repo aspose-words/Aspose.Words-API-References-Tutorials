@@ -112,7 +112,7 @@ doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //was Is.Leeg
 // Als u het bijhouden van revisies stopt, verschijnt deze tekst als normale tekst.
-// Revisies worden niet meegeteld als het document wordt gewijzigd.
+// Revisies worden niet meegeteld wanneer het document wordt gewijzigd.
 doc.stopTrackRevisions();
 // Bewaar het document.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");

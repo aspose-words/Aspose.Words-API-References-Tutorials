@@ -2,186 +2,126 @@
 title: वर्ड दस्तावेज़ में तालिका कॉलम बुकमार्क करें
 linktitle: वर्ड दस्तावेज़ में तालिका कॉलम बुकमार्क करें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में तालिका कॉलम को बुकमार्क करना सीखें।
+description: इस व्यापक, चरण-दर-चरण ट्यूटोरियल के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में तालिका कॉलम को बुकमार्क करना सीखें।
 type: docs
 weight: 10
 url: /hi/net/programming-with-bookmarks/bookmark-table-columns/
 ---
+## परिचय
 
-इस लेख में, हम ऊपर दिए गए C# स्रोत कोड का पता लगाएंगे ताकि यह समझा जा सके कि Aspose.Words for .NET लाइब्रेरी में बुकमार्क टेबल कॉलम फ़ंक्शन का उपयोग कैसे करें। यह सुविधा आपको Word दस्तावेज़ में किसी तालिका के किसी विशिष्ट कॉलम को बुकमार्क करने और उस कॉलम की सामग्री तक पहुँचने की अनुमति देती है।
+यदि आप अपने दस्तावेज़ स्वचालन कौशल को बढ़ाना चाहते हैं, तो आपके लिए यह एक बेहतरीन अवसर है। यह ट्यूटोरियल आपको .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में तालिका कॉलम को बुकमार्क करने की प्रक्रिया के बारे में बताएगा। क्या आप इसमें शामिल होने के लिए तैयार हैं? चलिए शुरू करते हैं!
 
 ## आवश्यक शर्तें
 
-- C# भाषा का मूलभूत ज्ञान.
-- Aspose.Words लाइब्रेरी के साथ .NET विकास वातावरण स्थापित।
+इससे पहले कि हम कोड में प्रवेश करें, कुछ चीजें हैं जिन्हें आपको ध्यान में रखना होगा:
 
-## चरण 1: तालिका बनाना
+1.  Aspose.Words for .NET: सुनिश्चित करें कि आपके पास Aspose.Words for .NET इंस्टॉल है। आप इसे डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/net/).
+2. विकास परिवेश: Visual Studio जैसा विकास परिवेश स्थापित करें.
+3. C# का बुनियादी ज्ञान: C# प्रोग्रामिंग से परिचित होना उपयोगी होगा।
 
- किसी तालिका स्तंभ पर बुकमार्क बनाने से पहले, हमें पहले एक का उपयोग करके तालिका बनानी होगी`DocumentBuilder`ऑब्जेक्ट. हमारे उदाहरण में, हम दो पंक्तियों और दो स्तंभों वाली एक तालिका बनाते हैं:
+## नामस्थान आयात करें
+
+आरंभ करने के लिए, आपको अपने C# प्रोजेक्ट में आवश्यक नेमस्पेस आयात करने होंगे:
 
 ```csharp
-builder. StartTable();
-
-builder. InsertCell();
-
-builder. StartBookmark("MyBookmark");
-
-builder.Write("This is cell 1 of row 1");
-
-builder. InsertCell();
-builder.Write("This is cell 2 of row 1");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.Writeln("This is cell 1 of row 2");
-
-builder. InsertCell();
-builder.Writeln("This is cell 2 of row 2");
-
-builder. EndRow();
-builder. EndTable();
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## चरण 2: कॉलम बुकमार्क बनाना
+अब, आइये इस प्रक्रिया को विस्तृत चरणों में विभाजित करें।
 
- हम उपयोग करते हैं`StartBookmark` तालिका के किसी विशिष्ट कॉलम पर बुकमार्क बनाने की विधि। हमारे उदाहरण में, हम बुकमार्क के लिए "MyBookmark" नाम का उपयोग करते हैं:
+## चरण 1: दस्तावेज़ और दस्तावेज़बिल्डर को आरंभ करें
+
+ सबसे पहले, हमें एक नया वर्ड दस्तावेज़ बनाना होगा और उसे आरंभ करना होगा`DocumentBuilder` इसके साथ काम करना.
 
 ```csharp
-builder. StartBookmark("MyBookmark");
+Document doc = new Document();
+DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## चरण 3: कॉलम सामग्री तक पहुंचें
+## चरण 2: तालिका शुरू करें और पहला सेल डालें
 
- हम दस्तावेज़ में सभी बुकमार्क देखते हैं और उनके नाम प्रदर्शित करते हैं। यदि बुकमार्क एक कॉलम है, तो हम कॉलम इंडेक्स और कॉलम नाम का उपयोग करके उस कॉलम की सामग्री तक पहुँचते हैं।`GetText` तरीका:
+तालिका बनाना शुरू करें और पहला सेल वहां डालें जहां हम बुकमार्क शुरू करेंगे।
 
 ```csharp
-foreach (Bookmark
+builder.StartTable();
+builder.InsertCell();
+```
 
-  bookmark in doc.Range.Bookmarks)
+## चरण 3: बुकमार्क प्रारंभ करें
+
+इसके बाद, हम पहले सेल में "MyBookmark" नामक बुकमार्क शुरू करते हैं।
+
+```csharp
+builder.StartBookmark("MyBookmark");
+builder.Write("This is row 1 cell 1");
+```
+
+## चरण 4: अतिरिक्त कक्ष सम्मिलित करें और पंक्ति समाप्त करें
+
+पहली पंक्ति में एक और सेल जोड़ें और पहली पंक्ति को पूरा करें।
+
+```csharp
+builder.InsertCell();
+builder.Write("This is row 1 cell 2");
+builder.EndRow();
+```
+
+## चरण 5: दूसरी पंक्ति के लिए कक्ष सम्मिलित करें
+
+दूसरी पंक्ति के लिए कक्ष जोड़कर आगे बढ़ें।
+
+```csharp
+builder.InsertCell();
+builder.Writeln("This is row 2 cell 1");
+builder.InsertCell();
+builder.Writeln("This is row 2 cell 2");
+builder.EndRow();
+builder.EndTable();
+```
+
+## चरण 6: बुकमार्क समाप्त करें
+
+तालिका समाप्त करने के बाद बुकमार्क समाप्त करें।
+
+```csharp
+builder.EndBookmark("MyBookmark");
+```
+
+## चरण 7: बुकमार्क्स के माध्यम से पुनरावृति करें और जानकारी प्रदर्शित करें
+
+अंत में, दस्तावेज़ में बुकमार्क्स को पुनरावृत्त करें और प्रत्येक के बारे में जानकारी प्रदर्शित करें।
+
+```csharp
+foreach (Bookmark bookmark in doc.Range.Bookmarks)
 {
-Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn?" (Column)": "");
-
-if (bookmark.IsColumn)
-{
-if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
+    Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn ? " (Column)" : "");
+    if (bookmark.IsColumn)
+    {
+        if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
+            Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
+    }
 }
-}
-```
-
-### .NET के लिए Aspose.Words का उपयोग करके बुकमार्क तालिका कॉलम के लिए उदाहरण स्रोत कोड
-
-.NET के लिए Aspose.Words का उपयोग करके तालिका कॉलम पर बुकमार्क बनाने का प्रदर्शन करने के लिए यहां पूर्ण नमूना स्रोत कोड दिया गया है:
-
-```csharp
-
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.StartTable();
-	
-	builder.InsertCell();
-
-	builder.StartBookmark("MyBookmark");
-
-	builder.Write("This is row 1 cell 1");
-
-	builder.InsertCell();
-	builder.Write("This is row 1 cell 2");
-
-	builder.EndRow();
-
-	builder.InsertCell();
-	builder.Writeln("This is row 2 cell 1");
-
-	builder.InsertCell();
-	builder.Writeln("This is row 2 cell 2");
-
-	builder.EndRow();
-	builder.EndTable();
-	
-	builder.EndBookmark("MyBookmark");
-	
-
-	
-	foreach (Bookmark bookmark in doc.Range.Bookmarks)
-	{
-		Console.WriteLine("Bookmark: {0}{1}", bookmark.Name, bookmark.IsColumn ? " (Column)" : "");
-
-		if (bookmark.IsColumn)
-		{
-			if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-				Console.WriteLine(row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar));
-		}
-	}
-	
-        
 ```
 
 ## निष्कर्ष
 
-इस लेख में, हमने .NET के लिए Aspose.Words के बुकमार्क टेबल कॉलम फ़ंक्शन का उपयोग करने के तरीके को समझने के लिए C# स्रोत कोड का पता लगाया। हमने Word दस्तावेज़ में किसी तालिका के किसी विशिष्ट कॉलम को बुकमार्क करने और उस कॉलम की सामग्री पर जाने के लिए चरण-दर-चरण मार्गदर्शिका का पालन किया।
+और अब यह हो गया! आपने .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में तालिका कॉलम को सफलतापूर्वक बुकमार्क कर लिया है। यह प्रक्रिया न केवल आपके दस्तावेज़ को व्यवस्थित करने में मदद करती है, बल्कि विशिष्ट अनुभागों को नेविगेट करना और उनमें हेरफेर करना भी आसान बनाती है। बुकमार्किंग एक शक्तिशाली सुविधा है जो आपके दस्तावेज़ प्रबंधन क्षमताओं को महत्वपूर्ण रूप से बढ़ा सकती है।
 
-### वर्ड दस्तावेज़ में बुकमार्क तालिका कॉलम के लिए अक्सर पूछे जाने वाले प्रश्न
+## अक्सर पूछे जाने वाले प्रश्न
 
-#### प्रश्न: Aspose.Words for .NET में "तालिका स्तंभों के लिए बुकमार्क" सुविधा का उपयोग करने के लिए क्या पूर्वापेक्षाएँ हैं?
+### .NET के लिए Aspose.Words क्या है?
+Aspose.Words for .NET, Word दस्तावेज़ों के साथ प्रोग्रामेटिक रूप से काम करने के लिए एक शक्तिशाली लाइब्रेरी है। यह आपको Microsoft Word इंस्टॉल किए बिना दस्तावेज़ बनाने, संशोधित करने और परिवर्तित करने की अनुमति देता है।
 
-उत्तर: Aspose.Words for .NET में "बुकमार्क्स फॉर टेबल कॉलम्स" सुविधा का उपयोग करने के लिए, आपको C# भाषा का बुनियादी ज्ञान होना चाहिए। आपको Aspose.Words लाइब्रेरी इंस्टॉल किए गए .NET डेवलपमेंट एनवायरनमेंट की भी आवश्यकता है।
+### मैं .NET के लिए Aspose.Words कैसे स्थापित करूं?
+ आप .NET के लिए Aspose.Words को यहां से डाउनलोड कर सकते हैं[वेबसाइट](https://releases.aspose.com/words/net/)दिए गए इंस्टॉलेशन निर्देशों का पालन करें।
 
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में कॉलम वाली तालिका कैसे बनाएं?
+### क्या मैं अन्य प्रोग्रामिंग भाषाओं के साथ .NET के लिए Aspose.Words का उपयोग कर सकता हूँ?
+हां, .NET के लिए Aspose.Words का उपयोग किसी भी .NET समर्थित भाषा के साथ किया जा सकता है, जिसमें C#, VB.NET और F# शामिल हैं।
 
- उत्तर: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में स्तंभों के साथ एक तालिका बनाने के लिए, आप एक का उपयोग कर सकते हैं`DocumentBuilder` टेबल में सेल और कंटेंट डालने के लिए ऑब्जेक्ट। यहाँ एक नमूना कोड है:
+### मैं .NET के लिए Aspose.Words का समर्थन कैसे प्राप्त कर सकता हूं?
+ आप Aspose समुदाय और विशेषज्ञों से सहायता प्राप्त कर सकते हैं[सहयता मंच](https://forum.aspose.com/c/words/8).
 
-```csharp
-builder. StartTable();
-
-builder. InsertCell();
-builder.Write("Contents of cell 1 of column 1");
-
-builder. InsertCell();
-builder.Write("Contents of cell 2 of column 2");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.Write("Contents of cell 1 of column 2");
-
-builder. InsertCell();
-builder.Write("Contents of cell 2 of column 2");
-
-builder. EndRow();
-
-builder. EndTable();
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके तालिका कॉलम को बुकमार्क कैसे करें?
-
- A: .NET के लिए Aspose.Words का उपयोग करके तालिका कॉलम पर बुकमार्क बनाने के लिए, आप इसका उपयोग कर सकते हैं`StartBookmark` की विधि`DocumentBuilder` किसी विशिष्ट तालिका कॉलम पर बुकमार्क प्रारंभ करने के लिए ऑब्जेक्ट। यहाँ एक नमूना कोड है:
-
-```csharp
-builder.StartBookmark("MyBookmark");
-```
-
-#### प्रश्न: .NET के लिए Aspose.Words का उपयोग करके बुकमार्क से तालिका कॉलम सामग्री तक कैसे पहुँचें?
-
-उत्तर: Aspose.Words for .NET का उपयोग करके किसी बुकमार्क से टेबल कॉलम की सामग्री तक पहुँचने के लिए, आप दस्तावेज़ में सभी बुकमार्क के माध्यम से लूप कर सकते हैं, जाँच कर सकते हैं कि बुकमार्क एक कॉलम है या नहीं, और उस कॉलम की सामग्री तक पहुँचने के लिए कॉलम के इंडेक्स का उपयोग कर सकते हैं। यहाँ एक नमूना कोड है:
-
-```csharp
-foreach(Bookmark bookmark in doc.Range.Bookmarks)
-{
-     if (bookmark.IsColumn)
-     {
-         if (bookmark.BookmarkStart.GetAncestor(NodeType.Row) is Row row && bookmark.FirstColumn < row.Cells.Count)
-         {
-             string content = row.Cells[bookmark.FirstColumn].GetText().TrimEnd(ControlChar.CellChar);
-             // कॉलम की सामग्री के साथ कुछ करो...
-         }
-     }
-}
-```
-
-#### प्रश्न: क्या कॉलम बुकमार्क वाली तालिका में कॉलम बनाने की संख्या की कोई सीमा है?
-
-उत्तर: Aspose.Words for .NET का उपयोग करके कॉलम बुकमार्क वाली तालिका में आप कितने कॉलम बना सकते हैं, इसकी कोई विशेष सीमा नहीं है। सीमा मुख्य रूप से आपके सिस्टम पर उपलब्ध संसाधनों और आपके द्वारा उपयोग किए जा रहे Word फ़ाइल प्रारूप की विशिष्टताओं पर निर्भर करती है। हालाँकि, अत्यधिक बड़ी संख्या में कॉलम न बनाने की सलाह दी जाती है, क्योंकि इससे अंतिम दस्तावेज़ का प्रदर्शन और पठनीयता प्रभावित हो सकती है।
+### क्या .NET के लिए Aspose.Words का कोई परीक्षण संस्करण उपलब्ध है?
+ हां, आप यहां से निःशुल्क परीक्षण प्राप्त कर सकते हैं[यहाँ](https://releases.aspose.com/).

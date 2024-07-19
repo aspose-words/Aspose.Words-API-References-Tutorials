@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Βήμα 2: Δημιουργήστε και μορφοποιήστε το έγγραφο
- Δημιουργήστε ένα παράδειγμα του`Document` τάξη και το`DocumentBuilder`τάξη για τη δημιουργία του εγγράφου. Χρησιμοποιήστε το`Font` ιδιοκτησία του`DocumentBuilder` για πρόσβαση στις ιδιότητες μορφοποίησης γραμματοσειράς.
+ Δημιουργήστε ένα παράδειγμα του`Document` τάξη και το`DocumentBuilder` τάξη για τη δημιουργία του εγγράφου. Χρησιμοποιήστε το`Font` ιδιοκτησία του`DocumentBuilder` για πρόσβαση στις ιδιότητες μορφοποίησης γραμματοσειράς.
 
 ```csharp
 Document doc = new Document();
@@ -39,7 +39,7 @@ builder.Writeln("I'm a very nicely formatted string.");
 ```
 
 ## Βήμα 3: Αποθηκεύστε το έγγραφο
- Χρησιμοποιήστε το`Save` μέθοδο αποθήκευσης του εγγράφου με εφαρμοσμένη μορφοποίηση γραμματοσειράς. Αντικαθιστώ`"WorkingWithFonts.SetFontFormatting.docx"` με το επιθυμητό όνομα αρχείου.
+ Χρησιμοποιήστε το`Save`μέθοδο αποθήκευσης του εγγράφου με εφαρμοσμένη μορφοποίηση γραμματοσειράς. Αντικαθιστώ`"WorkingWithFonts.SetFontFormatting.docx"` με το επιθυμητό όνομα αρχείου.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFormatting.docx");

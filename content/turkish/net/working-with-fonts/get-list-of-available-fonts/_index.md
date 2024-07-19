@@ -63,7 +63,7 @@ FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 // Aspose.Words'e yazı tiplerini aşağıdaki klasörde araması talimatını verecek yeni bir klasör kaynağı ekleyin.
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-//Yazı tiplerimizi içeren özel klasörü mevcut yazı tipi kaynakları listesine ekleyin.
+// Yazı tiplerimizi içeren özel klasörü mevcut yazı tipi kaynakları listesine ekleyin.
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
@@ -91,4 +91,4 @@ C: Evet, Aspose.Words'te bulunan yazı tiplerinin listesini belirli kriterleri k
 
 #### S: Word belgelerimde mevcut yazı tipleri listesini nasıl kullanabilirim?
 
-C: Word belgelerinizde bulunan yazı tipleri listesini kullanmak için listeye göz atabilir ve Word'ün yöntemlerini ve özelliklerini kullanarak uygun yazı tiplerini seçebilirsiniz.`FontSettings` Aspose.Words'deki sınıf.
+ C: Word belgelerinizde bulunan yazı tipleri listesini kullanmak için listeye göz atabilir ve Word'ün yöntemlerini ve özelliklerini kullanarak uygun yazı tiplerini seçebilirsiniz.`FontSettings` Aspose.Words'deki sınıf.

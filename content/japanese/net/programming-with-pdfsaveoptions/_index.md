@@ -20,11 +20,11 @@ Word 文書を PDF に変換してオンライン配布、アーカイブ、ま�
 | [PDF レンダリングの警告](./pdf-render-warnings/) | Aspose.Words for .NET を使用して PDF レンダリングの警告に対処するためのステップバイステップ ガイド。 |
 | [証明書ホルダーを使用してPDFにデジタル署名を追加する](./digitally-signed-pdf-using-certificate-holder/) | Aspose.Words for .NET で証明書ホルダーを使用して PDF にデジタル署名する方法を学習します。 |
 | [PDF文書にフォントを埋め込む](./embedded-all-fonts/) | Aspose.Words for .NET を使用して PDF にすべてのフォントを埋め込むためのステップ バイ ステップ ガイド。 |
-| [PDF ドキュメントにサブセットフォントを埋め込む](./embedded-subset-fonts/) | Aspose.Words for .NET を使用して PDF にフォント サブセットを埋め込む手順ガイド。 |
+| [PDF ドキュメントにサブセット フォントを埋め込む](./embedded-subset-fonts/) | Aspose.Words for .NET を使用して PDF にフォント サブセットを埋め込む手順ガイド。 |
 | [埋め込みフォントを無効にしてPDFのサイズを縮小する](./disable-embed-windows-fonts/) | Aspose.Words for .NET を使用してドキュメントを PDF に変換するときに Windows フォントの埋め込みを無効にする方法を学習します。 |
 | [埋め込まれた Arial および Times Roman フォントをスキップして PDF サイズを最適化](./skip-embedded-arial-and-times-roman-fonts/) | Aspose.Words for .NET を使用して、Arial および Times Roman フォントを埋め込まずに PDF を生成する手順ガイド。 |
 | [コアフォントを埋め込まないことでPDFファイルのサイズを縮小する](./avoid-embedding-core-fonts/) | Aspose.Words for .NET を使用して Word 文書を PDF に変換するときに、基本的なフォントの埋め込みを回避する方法を学習します。 |
-| [PDF ドキュメント内の URI をエスケープする](./escape-uri/) | Aspose.Words for .NET を使用して URI をエスケープするためのステップバイステップ ガイド。 |
+| [PDF ドキュメント内の URI をエスケープする](./escape-uri/) | Aspose.Words for .NET を使用して PDF 内の URI をエスケープする方法を学びます。この詳細なガイドでは、プロセスをステップごとに説明します。 |
 | [Word 文書のヘッダー フッター ブックマークを PDF 文書にエクスポートする](./export-header-footer-bookmarks/) | Aspose.Words for .NET を使用してヘッダーとフッターのブックマークをエクスポートするためのステップ バイ ステップ ガイド。 |
 | [WMF フォントをメタファイル サイズにスケールして PDF サイズを縮小する](./scale-wmf-fonts-to-metafile-size/) | Aspose.Words for .NET を使用して PDF に変換するときに WMF フォント サイズを調整するためのステップ バイ ステップ ガイド。 |
 | [追加のテキスト配置でPDFテキストの配置を改善](./additional-text-positioning/) | Aspose.Words for .NET を使用して Word 文書を PDF に変換するときに、追加テキストの配置を制御する方法を学習します。 |

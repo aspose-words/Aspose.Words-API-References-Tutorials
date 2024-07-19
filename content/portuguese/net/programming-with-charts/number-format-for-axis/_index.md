@@ -2,43 +2,70 @@
 title: Formato numérico para eixo em um gráfico
 linktitle: Formato numérico para eixo em um gráfico
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como definir o formato numérico de um eixo em um gráfico usando Aspose.Words for .NET.
+description: Aprenda como formatar os números dos eixos do gráfico usando Aspose.Words for .NET com este guia passo a passo. Melhore a legibilidade e o profissionalismo do seu documento sem esforço.
 type: docs
 weight: 10
 url: /pt/net/programming-with-charts/number-format-for-axis/
 ---
+## Introdução
 
-Este tutorial explica como usar Aspose.Words for .NET para definir o formato numérico de um eixo em um gráfico. O código-fonte fornecido demonstra como criar um gráfico, adicionar dados de série e formatar os rótulos dos eixos.
+Ei! Você já trabalhou com gráficos em seus documentos e desejou poder formatar os números em seu eixo para torná-los mais profissionais? Bem, você está com sorte! Neste tutorial, vamos nos aprofundar em como você pode conseguir exatamente isso usando Aspose.Words for .NET. Esta poderosa biblioteca permite que você lide com documentos do Word de uma forma muito fácil. E hoje, estamos nos concentrando em dar uma reformulação nesses eixos do gráfico com formatos numéricos personalizados.
 
-## Etapa 1: configurar o projeto
+## Pré-requisitos
 
-Certifique-se de ter os seguintes pré-requisitos:
+Antes de começarmos, vamos ter certeza de que você tem tudo o que precisa. Aqui está uma lista de verificação rápida:
 
-- Biblioteca Aspose.Words para .NET instalada. Você pode baixá-lo usando o gerenciador de pacotes NuGet para instalá-lo.
-- Um caminho do diretório do documento onde o documento de saída será salvo.
+-  Aspose.Words for .NET: Certifique-se de tê-lo instalado. Se não, você pode[baixe aqui](https://releases.aspose.com/words/net/).
+- .NET Framework: certifique-se de ter um .NET framework compatível instalado.
+- Ambiente de Desenvolvimento: Um IDE como o Visual Studio funcionará perfeitamente.
+- Conhecimento básico de C#: Isso o ajudará a acompanhar os exemplos de codificação.
 
-## Passo 2: Crie um novo documento e insira um gráfico
+## Importar namespaces
 
- Crie um novo`Document` objeto e um`DocumentBuilder` para construir o documento.
+Em primeiro lugar, você precisa importar os namespaces necessários para o seu projeto. É como lançar os alicerces antes de construir uma casa. Adicione o seguinte usando diretivas na parte superior do seu arquivo de código:
 
 ```csharp
-// Caminho para o diretório do seu documento
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Reporting;
+```
+
+Agora, vamos dividir o processo em etapas simples e fáceis de seguir.
+
+## Passo 1: Configurando o Documento
+
+Título: Inicialize seu documento
+
+Primeiro, você precisa criar um novo documento e um construtor de documentos. Pense nesta etapa como preparar a tela e o pincel antes de iniciar sua obra-prima.
+
+```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- A seguir, use o`InsertChart` método do`DocumentBuilder` para inserir um gráfico de colunas no documento.
+ Aqui,`dataDir` é o caminho para o diretório do documento onde você salvará o arquivo final.`Document`e`DocumentBuilder` são classes do Aspose.Words que ajudam você a criar e manipular documentos do Word.
+
+## Passo 2: Inserindo um Gráfico
+
+Título: Adicione um gráfico ao seu documento
+
+A seguir, vamos adicionar um gráfico ao seu documento. É aqui que a magia começa. Inseriremos um gráfico de colunas que funcionará como nossa tela em branco.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Etapa 3: adicionar dados de série ao gráfico
+ O`InsertChart` O método insere um gráfico do tipo especificado (coluna, neste caso) e dimensões no documento.
 
-Adicione dados de série ao gráfico. Neste exemplo, adicionaremos cinco itens com seus valores correspondentes.
+## Etapa 3: Personalizando a série de gráficos
+
+Título: Preencha seu gráfico com dados
+
+Agora, precisamos adicionar alguns dados ao nosso gráfico. Esta etapa é semelhante a preencher seu gráfico com informações significativas.
 
 ```csharp
 chart.Series.Clear();
@@ -47,71 +74,49 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
-## Etapa 4: formate os rótulos dos eixos
+ Aqui, estamos adicionando uma nova série chamada “Aspose Series 1” com cinco pontos de dados. O`Series.Clear` O método garante que todos os dados pré-existentes sejam removidos antes de adicionar nossa nova série.
 
- Para definir o formato numérico para os rótulos do eixo Y, acesse o`AxisY` propriedade do gráfico e defina o`NumberFormat.FormatCode` propriedade para o formato desejado. Neste exemplo, definimos o formato como "#,##0" para exibir números com separadores de milhares.
+## Etapa 4: formatando os números dos eixos
+
+Título: Embeleze os números do seu eixo
+
+Finalmente, vamos formatar os números no eixo Y para torná-los mais legíveis. É como dar os retoques finais em sua arte.
 
 ```csharp
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
-## Etapa 5: salve o documento
+ O`FormatCode` propriedade permite que você defina um formato personalizado para os números no eixo. Neste exemplo,`#,##0`garante que números grandes sejam exibidos com vírgulas para milhares.
 
- Finalmente, salve o documento no diretório especificado usando o`Save` método do`Document` objeto.
+## Etapa 5: salvando o documento
+
+Título: Salve sua obra-prima
+
+Agora que tudo está configurado, é hora de salvar seu documento. Esta etapa é a grande revelação do seu trabalho.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-Isso conclui a implementação da configuração do formato numérico do eixo usando Aspose.Words for .NET.
-
-### Exemplo de código-fonte para Number Format For Axis usando Aspose.Words for .NET 
-
-```csharp
-	// Caminho para o diretório do seu documento
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
-	chart.AxisY.NumberFormat.FormatCode = "#,##0";
-	doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
-```
+ Aqui o`Save` método salva o documento no caminho especificado com o nome do arquivo`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Conclusão
 
-Neste tutorial, você aprendeu como definir o formato numérico de um eixo em um gráfico usando Aspose.Words for .NET. Seguindo o guia passo a passo e utilizando o código-fonte fornecido, você pode criar um novo documento, inserir um gráfico de colunas, adicionar dados de série e formatar os rótulos dos eixos para exibir números em um formato específico.
+E aí está! Você formatou com sucesso os números no eixo Y do seu gráfico usando Aspose.Words for .NET. Isso não apenas faz com que seus gráficos pareçam mais profissionais, mas também melhora a legibilidade. Aspose.Words oferece uma infinidade de recursos que podem ajudá-lo a criar documentos impressionantes do Word programaticamente. Então, por que não explorar mais e ver o que mais você pode fazer?
 
-Aspose.Words for .NET fornece recursos poderosos para personalizar a aparência de gráficos em documentos do Word. Ao definir o formato numérico dos rótulos dos eixos, você pode controlar como os números são exibidos, incluindo opções como casas decimais, separadores de milhares, símbolos de moeda e muito mais. Isso permite apresentar dados numéricos de forma clara e significativa.
+## Perguntas frequentes
 
-Com Aspose.Words for .NET, você tem flexibilidade para formatar vários aspectos do gráfico, incluindo os rótulos dos eixos. Ao definir o formato numérico do eixo, você pode garantir consistência e melhorar a legibilidade do gráfico, facilitando a interpretação dos valores representados pelos usuários.
+### O que é Aspose.Words para .NET?
+Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores criar, manipular e converter documentos do Word programaticamente.
 
-### Perguntas frequentes
+### Posso formatar outros aspectos do gráfico além dos números dos eixos?
+Absolutamente! Aspose.Words for .NET permite formatar títulos, rótulos e até personalizar a aparência do gráfico.
 
-#### Q1. Qual é o formato numérico de um eixo em um gráfico?
-O formato numérico de um eixo em um gráfico refere-se à formatação aplicada aos valores numéricos exibidos no eixo. Ele permite controlar como os números são apresentados, incluindo opções como casas decimais, separadores de milhares, símbolos de moeda, sinais de porcentagem e muito mais. Ao definir o formato numérico, você pode personalizar a aparência dos dados numéricos no gráfico para atender às suas necessidades específicas.
+### Existe um teste gratuito disponível para Aspose.Words for .NET?
+ Sim, você pode obter um[teste gratuito aqui](https://releases.aspose.com/).
 
-#### Q2. Como posso definir o formato numérico dos rótulos dos eixos?
- Para definir o formato numérico para os rótulos dos eixos em um gráfico usando Aspose.Words for .NET, você pode acessar o`AxisY` propriedade do gráfico e defina o`NumberFormat.FormatCode`propriedade para o código de formato desejado. O código de formato segue a sintaxe dos padrões de formatação numérica padrão e determina como os números são exibidos. Por exemplo, você pode usar "#,##0,00" para exibir números com duas casas decimais e separadores de milhar.
+### Posso usar Aspose.Words for .NET com outras linguagens .NET além de C#?
+Sim, Aspose.Words for .NET é compatível com qualquer linguagem .NET, incluindo VB.NET e F#.
 
-#### Q3. Posso definir formatos numéricos diferentes para os rótulos dos eixos X e Y?
-Sim, você pode definir diferentes formatos numéricos para os rótulos do eixo X e do eixo Y usando Aspose.Words for .NET. Acesse o respectivo eixo (`AxisX` para eixo X ou`AxisY` para o eixo Y) do gráfico e modifique o`NumberFormat.FormatCode` propriedade individualmente para cada eixo. Isso permite que você aplique diferentes formatos de números aos rótulos de cada eixo com base em seus requisitos específicos.
-
-#### Q4. Quais são alguns códigos de formato numérico comuns que posso usar?
-Aspose.Words for .NET oferece suporte a uma ampla variedade de códigos de formato numérico que você pode usar para formatar os rótulos dos eixos em um gráfico. Alguns códigos de formato comuns incluem:
-
-- `0` ou`#` - Exibe o número sem casas decimais.
-- `0.00` ou`#.00` - Exibe o número com duas casas decimais.
-- `#,##0` Exibe o número com separadores de milhares.
-- `"€"0.00` - Exibe o número com o símbolo da moeda Euro e duas casas decimais.
-- `"%"0` - Exibe o número como uma porcentagem.
-
- Você pode encontrar mais informações sobre o número[códigos de formato](https://reference.aspose.com/words/net/aspose.words.drawing.charts/chartnumberformat/formatcode/) na Referência da API do Aspose.Words para .NET.
-
-#### Q5. Posso personalizar outras propriedades dos rótulos dos eixos?
-Sim, Aspose.Words for .NET fornece uma ampla gama de propriedades para personalizar a aparência e o comportamento dos rótulos dos eixos. Além do formato numérico, você pode modificar propriedades como fonte, tamanho, cor, orientação, alinhamento e muito mais. Isso permite que você personalize totalmente os rótulos dos eixos para corresponder ao estilo e aos requisitos de apresentação desejados.
+### Onde posso encontrar documentação mais detalhada?
+ A documentação detalhada está disponível no site[Página de documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/).

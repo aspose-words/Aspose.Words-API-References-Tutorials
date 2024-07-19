@@ -17,7 +17,7 @@ url: /zh-hant/net/document-formatting/get-paragraph-style-separator/
 在我們開始編寫程式碼之前，讓我們確保您已經擁有所需的所有工具：
 
 - Visual Studio：確保已安裝它。如果沒有，請從 Microsoft 網站下載並安裝。
--  Aspose.Words for .NET：如果您還沒有，請取得最新版本[這裡](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET：如果您還沒有，請取得最新版本[這裡](https://releases.aspose.com/words/net/).
 - 範例 Word 文件：這應該包含供我們使用的段落樣式分隔符號。您可以建立一個文件或使用現有文件。
 
 ## 導入命名空間
@@ -82,7 +82,7 @@ using System;
 
 ## 結論
 
-現在你就擁有了！您剛剛掌握了使用 Aspose.Words for .NET 在 Word 文件中尋找段落樣式分隔符號的技巧。這不是火箭科學，但它確實感覺像魔法，不是嗎？透過將任務分解為簡單的步驟，您已經解鎖了一個以程式設計方式管理 Word 文件的強大工具。
+現在你就得到它了！您剛剛掌握了使用 Aspose.Words for .NET 在 Word 文件中尋找段落樣式分隔符號的技巧。這不是火箭科學，但它確實感覺像魔法，不是嗎？透過將任務分解為簡單的步驟，您已經解鎖了一個以程式設計方式管理 Word 文件的強大工具。
 
 ## 常見問題解答
 

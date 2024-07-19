@@ -72,7 +72,7 @@ Aspose.Words for .NET, belge temalarınızı değiştirmek için güçlü bir AP
 
 #### Bir belge temasının birincil ve ikincil yazı tiplerini nasıl alabilirim?
 
- Bir belgenin temasının birincil ve ikincil yazı tiplerine,`MajorFonts` Ve`MinorFonts` özellikleri`Theme` sırasıyla nesne. Bu özellikler, farklı diller veya bölgeler için belgenin temasında kullanılan yazı tipi adlarına erişim sağlar.
+ Bir belgenin temasının birincil ve ikincil yazı tiplerine,`MajorFonts`Ve`MinorFonts` özellikleri`Theme` sırasıyla nesne. Bu özellikler, farklı diller veya bölgeler için belgenin temasında kullanılan yazı tipi adlarına erişim sağlar.
 
 #### Bir belgenin temasında kullanılan vurgu renklerini alabilir miyim?
 

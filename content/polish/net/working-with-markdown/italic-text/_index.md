@@ -46,11 +46,11 @@ Gratulacje! Nauczyłeś się teraz, jak używać funkcji kursywy w Aspose.Words 
 
 #### P: Jak mogę zastosować kursywę w Aspose.Words?
 
-Odp.: Aby zastosować kursywę w Aspose.Words, możesz użyć metody`Font.Italic` własność`Run`obiekt. Możesz ustawić tę właściwość na`true` pochylić określony tekst. Możesz na przykład użyć`run.Font.Italic=true` pochylić tekst zawarty w`Run` obiekt.
+ Odp.: Aby zastosować kursywę w Aspose.Words, możesz użyć metody`Font.Italic` własność`Run`obiekt. Możesz ustawić tę właściwość na`true` pochylić określony tekst. Możesz na przykład użyć`run.Font.Italic=true` pochylić tekst zawarty w`Run` obiekt.
 
 #### P: Czy można zastosować kursywę kilka fragmentów tekstu w tym samym akapicie?
 
- Odp.: Tak, możesz zastosować kursywę do wielu fragmentów tekstu w jednym akapicie, używając opcji multiple`Run` obiekty. Możesz utworzyć wiele`Run` obiektów i ustaw`Font.Italic`własność do`true` dla każdego obiektu, aby zastosować kursywę do żądanych części tekstu. Następnie możesz dodać je do akapitu za pomocą`Paragraph.AppendChild(run)` metoda.
+ Odp.: Tak, możesz zastosować kursywę do wielu fragmentów tekstu w jednym akapicie, używając opcji multiple`Run` obiekty. Możesz utworzyć wiele`Run` obiektów i ustaw`Font.Italic`własność do`true`dla każdego obiektu, aby zastosować kursywę do żądanych części tekstu. Następnie możesz dodać je do akapitu za pomocą`Paragraph.AppendChild(run)` metoda.
 
 #### P: Czy mogę zastosować kursywę do tekstu znajdującego się w tabeli lub komórce w Aspose.Words?
 

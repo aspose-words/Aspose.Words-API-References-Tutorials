@@ -18,7 +18,7 @@ Antes de comenzar, asegúrese de tener implementados los siguientes requisitos p
 
 - Entorno de desarrollo de Java: asegúrese de tener Java instalado en su sistema.
 
--  Aspose.Words para Java: descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
+-  Aspose.Words para Java: Descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
 ## Configurando el proyecto
 

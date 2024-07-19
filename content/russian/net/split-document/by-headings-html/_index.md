@@ -14,7 +14,7 @@ url: /ru/net/split-document/by-headings-html/
 Для начала укажите каталог для вашего документа и загрузите документ в объект Document. Вот как:
 
 ```csharp
-// Путь к каталогу документов.
+//Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

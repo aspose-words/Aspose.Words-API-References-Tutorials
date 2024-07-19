@@ -2,49 +2,57 @@
 title: Håll källan tillsammans
 linktitle: Håll källan tillsammans
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du använder Aspose.Words för .NET för att ansluta och lägga till Word-dokument samtidigt som källinnehållet behålls tillsammans med måldokumentet.
+description: Lär dig hur du slår samman Word-dokument med Aspose.Words för .NET samtidigt som du behåller formateringen. Den här omfattande guiden täcker allt från installation till utförande.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/keep-source-together/
 ---
+## Introduktion
 
-Denna handledning guidar dig genom processen att använda Keep Source Together-funktionen i Aspose.Words för .NET. Med den här funktionen kan du ansluta och lägga till flera Word-dokument samtidigt som källdokumentets innehåll behålls tillsammans med måldokumentets innehåll. 
+I dagens digitala tidsålder är det viktigt att manipulera Word-dokument programmatiskt i olika branscher. Aspose.Words för .NET ger utvecklare möjlighet att automatisera dokumenthanteringsuppgifter effektivt. Denna omfattande guide kommer att leda dig genom processen att sammanfoga dokument samtidigt som källformateringen bevaras med Aspose.Words för .NET.
 
 ## Förutsättningar
 
-Innan du börjar, se till att du har följande:
+Innan du går in i dokumentsammanslagning med Aspose.Words för .NET, se till att du har följande:
 
-1. Aspose.Words för .NET installerat. Du kan ladda ner den från Asposes webbplats eller installera den via NuGet.
-2. Visual Studio eller någon annan C#-utvecklingsmiljö.
+- Visual Studio: Integrated Development Environment (IDE) för .NET-utveckling.
+- Aspose.Words för .NET: Installerat och konfigurerat i din utvecklingsmiljö.
+- Kännedom om C#: Grundläggande förståelse för programmeringsspråket C#.
 
-## Steg 1: Initiera dokumentkatalogerna
+## Importera namnområden
 
- Först måste du ställa in sökvägen till din dokumentkatalog. Ändra värdet på`dataDir` variabel till sökvägen där dina dokument finns.
+För att börja, importera de nödvändiga namnrymden:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.DocumentBuilder;
 ```
 
-## Steg 2: Ladda käll- och måldokumenten
+## Steg 1: Ladda dokument
 
-Därefter måste du ladda käll- och måldokumenten med hjälp av Aspose.Words`Document` klass. Uppdatera filnamnen i`Document` konstruktör enligt dina dokumentnamn.
+ Först laddar du käll- och måldokumenten i Aspose.Words`Document` föremål.
 
 ```csharp
+// Sökväg till din dokumentkatalog
+string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+
+// Ladda käll- och måldokument
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## Steg 3: Ställ in att källdokumentet ska visas efter destinationsdokumentets innehåll
+## Steg 2: Ställ in sektionsstart
 
- För att säkerställa att källdokumentet visas omedelbart efter måldokumentets innehåll, måste du ställa in`SectionStart` egenskapen för det första avsnittet i källdokumentet till`SectionStart.Continuous`.
+Konfigurera avsnittsstarten för att säkerställa att källdokumentets innehåll flödar kontinuerligt efter måldokumentet.
 
 ```csharp
+// Ställ in att källdokumentet ska visas direkt efter måldokumentets innehåll
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Steg 4: Ställ in "Behåll med nästa" styckeformatering för källdokument
+## Steg 3: Håll ihop stycken
 
- För att hålla ihop styckena i källdokumentet kan du iterera genom varje stycke i dokumentet och ställa in`KeepWithNext`egendom till`true`.
+För att behålla formateringsintegriteten markerar du varje stycke i källdokumentet för att stanna kvar vid nästa stycke.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -53,41 +61,39 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-## Steg 5: Bifoga källdokumentet till destinationsdokumentet
+## Steg 4: Bifoga dokument
 
- Nu kan du lägga till källdokumentet till måldokumentet med hjälp av`AppendDocument` metod för`Document` klass. De`ImportFormatMode.KeepSourceFormatting` parametern säkerställer att källformateringen bevaras under tilläggsåtgärden.
+ Slå samman dokumenten med hjälp av`AppendDocument` metod, vilket säkerställer att källdokumentets formatering behålls.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Steg 6: Spara det slutliga dokumentet
+## Steg 5: Spara sammanslagna dokument
 
- Slutligen, spara det sammanslagna dokumentet med funktionen "Behåll källa tillsammans" aktiverad med hjälp av`Save` metod för`Document` klass.
+Spara slutligen det sammanslagna dokumentet på önskad plats.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-### Exempel på källkod för Keep Source Together med Aspose.Words för .NET 
+## Slutsats
 
-Här är den fullständiga källkoden för funktionen "Keep Source Together" i C# med Aspose.Words för .NET:
+Sammanfattningsvis förenklar Aspose.Words för .NET uppgiften att slå samman Word-dokument samtidigt som den ursprungliga formateringen bevaras sömlöst. Denna förmåga är avgörande för applikationer som kräver automatiserad dokumentbehandling.
 
+## FAQ's
 
-```csharp
-	// Sökväg till din dokumentkatalog
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### Kan Aspose.Words för .NET slå samman dokument i olika format?
+Ja, det kan slå samman dokument oavsett format och behålla källformateringen.
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// Ställ in att källdokumentet ska visas direkt efter måldokumentets innehåll.
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		para.ParagraphFormat.KeepWithNext = true;
-	}
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
-```
+### Stöder Aspose.Words för .NET sammanslagning av stora dokument effektivt?
+Absolut, den hanterar stora dokument med optimal prestanda.
 
-Det är allt! Du har framgångsrikt implementerat Keep Source Together-funktionen med Aspose.Words för .NET. Det slutliga dokumentet kommer att innehålla det sammanslagna innehållet med styckena i källdokumentet sammanhållna.
+### Finns det en testversion tillgänglig för Aspose.Words för .NET?
+ Ja, du kan ladda ner en gratis testversion[här](https://releases.aspose.com/).
+
+### Hur kan jag få teknisk support för Aspose.Words för .NET?
+ Teknisk support är tillgänglig via[Aspose.Words forum](https://forum.aspose.com/c/words/8).
+
+### Kan jag köpa en tillfällig licens för Aspose.Words för .NET?
+ Ja, du kan skaffa en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).

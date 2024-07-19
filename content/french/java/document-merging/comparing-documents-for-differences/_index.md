@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Remplacer`"original_document.docx"` et`"modified_document.docx"` avec les chemins d'accès à vos propres documents.
+ Remplacer`"original_document.docx"`et`"modified_document.docx"` avec les chemins d'accès à vos propres documents.
 
 ## Étape 2 : Comparez les documents
 
@@ -73,7 +73,7 @@ Comparer des documents pour rechercher des différences à l'aide d'Aspose.Words
 
 ### Puis-je comparer des documents avec différents formats, tels que DOCX et PDF ?
 
-Aspose.Words fonctionne principalement avec les documents Word au format DOCX. Pour comparer des documents dans différents formats, vous devrez peut-être d'abord les convertir au format DOCX.
+Aspose.Words fonctionne principalement avec des documents Word au format DOCX. Pour comparer des documents dans différents formats, vous devrez peut-être d'abord les convertir au format DOCX.
 
 ### Existe-t-il des limites à la taille du document lors de l'utilisation d'Aspose.Words ?
 

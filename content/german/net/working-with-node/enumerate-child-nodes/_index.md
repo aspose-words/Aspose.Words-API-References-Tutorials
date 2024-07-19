@@ -8,7 +8,7 @@ weight: 10
 url: /de/net/working-with-node/enumerate-child-nodes/
 ---
 
-Mit den richtigen Tools kann das programmgesteuerte Arbeiten mit Dokumenten ein Kinderspiel sein. Aspose.Words für .NET ist eine solche leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente problemlos bearbeiten können. Heute gehen wir den Prozess der Aufzählung untergeordneter Knoten in einem Word-Dokument mit Aspose.Words für .NET durch. Diese Schritt-für-Schritt-Anleitung deckt alles von Voraussetzungen bis hin zu praktischen Beispielen ab und stellt sicher, dass Sie ein solides Verständnis des Prozesses haben.
+Mit den richtigen Tools kann das programmgesteuerte Arbeiten mit Dokumenten ein Kinderspiel sein. Aspose.Words für .NET ist eine solche leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente problemlos bearbeiten können. Heute gehen wir den Prozess der Aufzählung untergeordneter Knoten in einem Word-Dokument mit Aspose.Words für .NET durch. Diese Schritt-für-Schritt-Anleitung deckt alles von Voraussetzungen bis hin zu praktischen Beispielen ab und stellt sicher, dass Sie den Prozess gründlich verstehen.
 
 ## Voraussetzungen
 
@@ -43,7 +43,7 @@ Document doc = new Document("path/to/your/document.docx");
 
 ## Schritt 2: Zugriff auf den ersten Absatz
 
-Als nächstes müssen wir auf einen bestimmten Absatz im Dokument zugreifen. Der Einfachheit halber nehmen wir den ersten Absatz.
+Als Nächstes müssen wir auf einen bestimmten Absatz im Dokument zugreifen. Der Einfachheit halber nehmen wir den ersten Absatz.
 
 ```csharp
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
@@ -98,7 +98,7 @@ Ein Absatz kann Knoten wie Läufe, Formen, Kommentare und andere Inline-Elemente
  Ja, Sie können verschiedene Knotentypen wie Formen, Kommentare und mehr bearbeiten, indem Sie deren`NodeType`.
 
 ### 4. Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
- Sie können mit einer kostenlosen Testversion beginnen oder eine temporäre Lizenz erwerben von[Hier](https://purchase.aspose.com/temporary-license/).
+Sie können mit einer kostenlosen Testversion beginnen oder eine temporäre Lizenz erwerben von[Hier](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Wo finde ich weitere Beispiele und Dokumentation?
  Besuche den[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/) für weitere Beispiele und ausführliche Dokumentation.

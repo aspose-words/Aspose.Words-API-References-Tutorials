@@ -32,8 +32,8 @@ Door deze tutorials te volgen, kunt u de functies voor tabelmanipulatie van Aspo
 | [Horizontaal samenvoegen](./horizontal-merge/) | Leer hoe u cellen in een Word-tabel horizontaal samenvoegt met Aspose.Words voor .NET. |
 | [Converteren naar horizontaal samengevoegde cellen](./convert-to-horizontally-merged-cells/) | Leer hoe u tabelcellen converteert naar horizontaal samengevoegde cellen in een Word-document met Aspose.Words voor .NET. |
 | [Herhaal rijen op volgende pagina's](./repeat-rows-on-subsequent-pages/) | Leer hoe u tabelrijen op volgende pagina's in een Word-document kunt herhalen met Aspose.Words voor .NET. |
-| [Automatisch aanpassen aan paginabreedte](./auto-fit-to-page-width/) | Leer hoe u een tabel automatisch aanpast aan de paginabreedte in een Word-document met Aspose.Words voor .NET. |
-| [Voorkeursbreedte-instellingen](./preferred-width-settings/) | Leer hoe u de gewenste tabelcelbreedtes in een Word-document instelt met Aspose.Words voor .NET. |
+| [Automatisch aanpassen aan venster](./auto-fit-to-page-width/) | Pas tabellen eenvoudig automatisch aan het venster in Word-documenten aan met behulp van Aspose.Words voor .NET met deze stapsgewijze handleiding. Perfect voor schonere, professionele documenten. |
+| [Voorkeursbreedte-instellingen](./preferred-width-settings/) | Leer met deze stapsgewijze handleiding hoe u tabellen kunt maken met absolute, relatieve en automatische breedte-instellingen in Aspose.Words voor .NET. |
 | [Haal het gewenste breedtetype op](./retrieve-preferred-width-type/) | Leer hoe u het type en de gewenste breedtewaarde van een cel in een Word-tabel kunt ophalen met Aspose.Words voor .NET. |
 | [Verkrijg tafelpositie](./get-table-position/) | Leer hoe u de positie van een tabel in een Word-document kunt achterhalen met Aspose.Words voor .NET. |
 | [Verkrijg zwevende tafelpositie](./get-floating-table-position/) | Leer hoe u de positie van zwevende tabellen in een Word-document kunt achterhalen met Aspose.Words voor .NET. |

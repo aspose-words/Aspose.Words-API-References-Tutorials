@@ -7,7 +7,7 @@ type: docs
 weight: 1680
 url: /es/net/programming-with-pdfsaveoptions/
 ---
-Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con PdfSaveOptions lo guiarán a través de las diversas características y técnicas para el procesamiento de textos con opciones de guardado de PDF. Estos tutoriales lo ayudarán a comprender cómo personalizar la conversión de Word a PDF cambiando la configuración de diseño, fuentes, imágenes, metadatos y más.
+Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con PdfSaveOptions lo guiarán a través de las diversas funciones y técnicas para el procesamiento de textos con opciones de guardado de PDF. Estos tutoriales lo ayudarán a comprender cómo personalizar la conversión de Word a PDF cambiando la configuración de diseño, fuentes, imágenes, metadatos y más.
 
 Aprenderá cómo ajustar las opciones de calidad de imagen, elegir el nivel de compresión de las imágenes, establecer configuraciones de seguridad de PDF, como cifrado y permisos, e incluso insertar marcas de agua en los archivos PDF generados. Los tutoriales también incluyen ejemplos de código detallados para ayudarle a practicar estas funciones en sus proyectos.
 
@@ -24,7 +24,7 @@ Ya sea que desee convertir documentos de Word a PDF para distribuirlos, archivar
 | [Reduzca el tamaño del PDF deshabilitando las fuentes incrustadas](./disable-embed-windows-fonts/) | Aprenda cómo deshabilitar la incrustación de fuentes de Windows al convertir documentos a PDF con Aspose.Words para .NET. |
 | [Optimice el tamaño del PDF con omitir fuentes Arial y Times Roman incrustadas](./skip-embedded-arial-and-times-roman-fonts/) | Guía paso a paso para generar PDF sin incrustar fuentes Arial y Times Roman con Aspose.Words para .NET. |
 | [Reduzca el tamaño del archivo PDF al no incrustar fuentes principales](./avoid-embedding-core-fonts/) | Aprenda cómo evitar la incrustación de fuentes básicas al convertir documentos de Word a PDF con Aspose.Words para .NET. |
-| [URI de escape en documento PDF](./escape-uri/) | Guía paso a paso para escapar de Uri con Aspose.Words para .NET. |
+| [URI de escape en documento PDF](./escape-uri/) | Aprenda cómo escapar de URI en archivos PDF usando Aspose.Words para .NET. Esta guía detallada lo guiará a través del proceso paso a paso. |
 | [Exportar marcadores de encabezado y pie de página de un documento de Word a un documento PDF](./export-header-footer-bookmarks/) | Guía paso a paso para exportar marcadores de encabezado y pie de página con Aspose.Words para .NET. |
 | [Reduzca el tamaño del PDF escalando fuentes Wmf al tamaño de metarchivo](./scale-wmf-fonts-to-metafile-size/) | Guía paso a paso para ajustar el tamaño de fuente WMF al convertir a PDF con Aspose.Words para .NET. |
 | [Mejorar el posicionamiento del texto PDF con posicionamiento de texto adicional](./additional-text-positioning/) | Aprenda a controlar la ubicación de texto adicional al convertir documentos de Word a PDF con Aspose.Words para .NET. |

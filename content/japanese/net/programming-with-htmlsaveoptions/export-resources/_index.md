@@ -27,7 +27,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## ステップ3: HTMLバックアップオプションの設定
 
-次に、ドキュメント リソースをエクスポートするための HTML 保存オプションを設定します。次のコードを使用します。
+ここで、ドキュメント リソースをエクスポートするための HTML 保存オプションを設定します。次のコードを使用します。
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
@@ -41,7 +41,7 @@ ResourceFolderAlias = "http://example.com/resources"
 
 このコードはインスタンスを作成します`HtmlSaveOptions`次のオプションを設定します。
 
-- `CssStyleSheetType`に設定されています`CssStyleSheetType.External`CSS スタイルシートを外部ファイルにエクスポートします。
+- `CssStyleSheetType`に設定されています`CssStyleSheetType.External` CSS スタイルシートを外部ファイルにエクスポートします。
 - `ExportFontResources`に設定されています`true`フォントリソースをエクスポートします。
 - `ResourceFolder`リソースを保存する宛先ディレクトリを指定します。
 - `ResourceFolderAlias`リソースにアクセスするために使用する URL エイリアスを指定します。

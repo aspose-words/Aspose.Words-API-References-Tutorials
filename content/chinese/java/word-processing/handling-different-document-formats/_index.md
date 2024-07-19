@@ -64,7 +64,7 @@ doc.save("modified.docx");
 
 ## 文档格式之间的转换
 
-Aspose.Words for Java 允许在不同文档格式之间进行无缝转换。以下是将 Word 文档转换为 PDF 的方法：
+Aspose.Words for Java 允许不同文档格式之间无缝转换。以下是将 Word 文档转换为 PDF 的方法：
 
 ```java
 //加载 Word 文档

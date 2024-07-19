@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- यहाँ, हम इसका एक उदाहरण बना रहे हैं`Document` और`DocumentBuilder` । के बारे में सोचें`Document` अपने खाली वर्ड दस्तावेज़ के रूप में और`DocumentBuilder` अपनी कलम के रूप में.
+ यहाँ, हम इसका एक उदाहरण बना रहे हैं`Document`और`DocumentBuilder` । के बारे में सोचें`Document` अपने खाली वर्ड दस्तावेज़ के रूप में और`DocumentBuilder` अपनी कलम के रूप में.
 
 ## चरण 2: दस्तावेज़ प्रारंभ पर जाएँ
 

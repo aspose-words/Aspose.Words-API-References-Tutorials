@@ -17,7 +17,7 @@ Hướng dẫn này trình bày cách tạo bảng có phần lặp lại đư�
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Bước 4: Tạo bảng và cấu trúc bảng
- Bắt đầu tạo bảng bằng cách sử dụng`StartTable` phương pháp của`DocumentBuilder` . Thêm ô và nội dung bảng bằng cách sử dụng`InsertCell` Và`Write` phương pháp.
+ Bắt đầu tạo bảng bằng cách sử dụng`StartTable` phương pháp của`DocumentBuilder` . Thêm ô và nội dung bảng bằng cách sử dụng`InsertCell`Và`Write` phương pháp.
 
 ```csharp
 Table table = builder.StartTable();
@@ -73,7 +73,7 @@ StructuredDocumentTag repeatingSectionItemSdt =
 repeatingSectionSdt.AppendChild(repeatingSectionItemSdt);
 ```
 
- Tạo một`Row`để thể hiện từng mục trong phần lặp lại và nối nó vào mục phần lặp lại.
+ Tạo một`Row` để thể hiện từng mục trong phần lặp lại và nối nó vào mục phần lặp lại.
 
 ```csharp
 Row row = new Row(doc);

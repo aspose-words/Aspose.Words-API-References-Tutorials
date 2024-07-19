@@ -37,7 +37,7 @@ ResolveFontNames=true
 };
 ```
 
- 이 코드는`HtmlSaveOptions`그리고`ResolveFontNames` 옵션`true`HTML로 변환할 때 누락된 글꼴 이름을 해결합니다. 또한,`PrettyFormat` 옵션이 다음으로 설정되어 있습니다.`true` 형식이 좋은 HTML 코드를 얻으려면
+ 이 코드는`HtmlSaveOptions` 그리고`ResolveFontNames` 옵션`true`HTML로 변환할 때 누락된 글꼴 이름을 해결합니다. 또한,`PrettyFormat` 옵션이 다음으로 설정되어 있습니다.`true` 형식이 좋은 HTML 코드를 얻으려면
 
 ## 4단계: 문서를 HTML로 변환 및 저장
 

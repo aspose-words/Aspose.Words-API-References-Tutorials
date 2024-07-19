@@ -2,80 +2,96 @@
 title: Ne pas enregistrer la puce d'image
 linktitle: Ne pas enregistrer la puce d'image
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment désactiver l’enregistrement des puces d’image dans les documents Word à l’aide d’Aspose.Words pour .NET.
+description: Apprenez à gérer les puces d’image dans Aspose.Words for .NET avec notre guide étape par étape. Simplifiez la gestion des documents et créez des documents Word professionnels sans effort.
 type: docs
 weight: 10
 url: /fr/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
+## Introduction
 
-Les puces illustrées sont une fonctionnalité couramment utilisée dans les documents Word pour ajouter des puces personnalisées. Cependant, dans certains cas, il peut être nécessaire de désactiver l'enregistrement des puces d'image lors de la manipulation de documents à l'aide de la bibliothèque Aspose.Words pour .NET. Dans ce guide étape par étape, nous expliquerons comment utiliser le code source Aspose.Words C# pour .NET pour désactiver l'enregistrement des puces d'image à l'aide des options d'enregistrement DocSaveOptions.
+Salut, amis développeurs ! Avez-vous déjà travaillé avec des documents Word et vous êtes-vous retrouvé mêlé aux subtilités de l'enregistrement des puces d'images ? C'est l'un de ces petits détails qui peuvent faire une grande différence dans l'aspect final de votre document. Eh bien, aujourd'hui, je suis ici pour vous guider tout au long du processus de gestion des puces d'image dans Aspose.Words pour .NET, en me concentrant particulièrement sur la fonctionnalité « Ne pas enregistrer la puce d'image ». Prêt à plonger ? Allons-y!
 
-## Comprendre la bibliothèque Aspose.Words
+## Conditions préalables
 
-Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque puissante pour créer, éditer, convertir et protéger des documents Word sur différentes plates-formes, dont .NET. Il offre de nombreuses fonctionnalités pour manipuler des documents, telles que l'insertion de texte, la modification du formatage, l'ajout de sections et bien plus encore.
+Avant de commencer à bricoler le code, vous devez mettre en place quelques éléments :
 
-## Étape 1 : Définition du répertoire des documents
+1.  Aspose.Words pour .NET : assurez-vous que cette puissante bibliothèque est installée. Si vous ne l'avez pas encore, vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : un environnement de développement .NET fonctionnel, tel que Visual Studio.
+3. Connaissance de base de C# : Une certaine familiarité avec la programmation C# sera utile.
+4. Exemple de document : un document Word avec des puces d'image à des fins de test.
 
-La première étape consiste à définir le répertoire où se trouvent vos documents. Vous devez spécifier le chemin complet du répertoire. Par exemple :
+## Importer des espaces de noms
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-Assurez-vous de remplacer « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin réel d'accès à votre répertoire de documents.
-
-## Étape 2 : Chargement du document avec des puces d'image
-
-Ensuite, vous devez charger le document avec des puces d'image. Utilisez la classe Document pour charger le document à partir d'un fichier. Par exemple :
+Pour démarrer, vous devez importer les espaces de noms nécessaires. C'est assez simple mais crucial pour accéder aux fonctionnalités d'Aspose.Words.
 
 ```csharp
-Document doc = new Document(dataDir + "Image bullet points.docx");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Dans cet exemple, nous chargeons le document à partir du fichier "Image bullet points.docx".
+Décomposons le processus en étapes gérables. De cette façon, vous pouvez suivre facilement et comprendre chaque partie du code.
 
-  situé dans le répertoire des documents.
+## Étape 1 : Configurez votre répertoire de documents
 
-## Étape 3 : Configurer les options d'enregistrement
-
-Configurons maintenant les options d'enregistrement de notre document. Utilisez la classe DocSaveOptions pour spécifier les paramètres de sauvegarde. Par exemple :
-
-```csharp
-DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
-```
-
-Dans cet exemple, nous créons un nouvel objet DocSaveOptions et définissons la propriété SavePictureBullet sur false pour désactiver l'enregistrement des puces d'image.
-
-## Étape 4 : Activer la fonctionnalité « Ne pas enregistrer la puce d'image »
-
-Pour activer la fonctionnalité "Ne pas enregistrer Picture Bullet", nous avons déjà configuré les options d'enregistrement avec SavePictureBullet défini sur false. Cela garantit que les puces d'image ne sont pas enregistrées dans le document final.
-
-## Étape 5 : Enregistrez le document
-
-Enfin, vous pouvez enregistrer le document à l'aide de la méthode Save de la classe Document. Spécifiez le chemin complet du fichier et le nom de fichier souhaité. Par exemple :
-
-```csharp
-doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
-```
-
-Assurez-vous de remplacer "dataDir" par le chemin du répertoire de vos documents.
-
-## Exemple de code source pour les options d'enregistrement DocSaveOptions avec la fonctionnalité "Ne pas enregistrer la puce d'image" à l'aide d'Aspose.Words pour .NET
+Tout d’abord, vous devez spécifier le chemin d’accès à votre répertoire de documents. C'est ici que sont stockés vos documents Word et que vous enregistrerez les fichiers modifiés.
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Remplacer`"YOUR DOCUMENTS DIRECTORY"` avec le chemin réel sur votre système où se trouvent vos documents.
+
+## Étape 2 : charger le document avec les puces d'image
+
+Ensuite, vous chargerez le document Word contenant des puces d’image. Ce document sera modifié pour supprimer les puces d'image lors de l'enregistrement.
+
+```csharp
 // Charger le document avec des puces d'image
 Document doc = new Document(dataDir + "Image bullet points.docx");
+```
 
+ Assurez-vous que le fichier`"Image bullet points.docx"` existe dans le répertoire spécifié.
+
+## Étape 3 : Configurer les options d'enregistrement
+
+Maintenant, configurons les options d'enregistrement pour spécifier que les puces d'image ne doivent pas être enregistrées. C'est ici que la magie opère !
+
+```csharp
 // Configurez les options d'enregistrement avec la fonctionnalité "Ne pas enregistrer l'image Bullet"
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
+```
 
+ En définissant`SavePictureBullet` à`false`, vous demandez à Aspose.Words de ne pas enregistrer les puces d'image dans le document de sortie.
+
+## Étape 4 : Enregistrez le document
+
+Enfin, enregistrez le document avec les options spécifiées. Cela générera un nouveau fichier dans lequel les puces d’image ne seront pas incluses.
+
+```csharp
 // Enregistrez le document avec les options spécifiées
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
+ Le nouveau fichier,`"WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx"`, sera enregistré dans votre répertoire de documents.
+
 ## Conclusion
 
-Dans ce guide, nous avons expliqué comment désactiver l'enregistrement des puces d'image dans un document à l'aide de la bibliothèque Aspose.Words pour .NET. En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement appliquer cette fonctionnalité dans votre application C#. La désactivation de l'enregistrement des puces d'image peut être utile dans certaines situations pour préserver la structure et le formatage du document sans enregistrer les puces d'image.
+Et voila! Avec seulement quelques lignes de code, vous avez configuré avec succès Aspose.Words pour .NET pour omettre les puces d’image lors de l’enregistrement d’un document. Cela peut être incroyablement utile lorsque vous avez besoin d’un aspect net et cohérent sans être distrait par les puces d’image.
+
+## FAQ
+
+### Qu’est-ce qu’Aspose.Words pour .NET ?
+Aspose.Words for .NET est une bibliothèque puissante permettant de créer, de modifier et de convertir des documents Word dans des applications .NET.
+
+### Puis-je utiliser cette fonctionnalité pour d’autres types de puces ?
+Non, cette fonctionnalité spécifique concerne les puces illustrées. Cependant, Aspose.Words offre de nombreuses options pour gérer d'autres types de puces.
+
+### Où puis-je obtenir de l’aide pour Aspose.Words ?
+ Vous pouvez bénéficier du soutien du[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### Existe-t-il un essai gratuit pour Aspose.Words pour .NET ?
+ Oui, vous pouvez bénéficier d'un essai gratuit[ici](https://releases.aspose.com/).
+
+### Comment acheter une licence pour Aspose.Words pour .NET ?
+ Vous pouvez acheter une licence auprès du[Boutique Aspose](https://purchase.aspose.com/buy).

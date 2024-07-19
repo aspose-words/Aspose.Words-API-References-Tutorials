@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Thêm đầu trang và chân trang vào bảng:
 
- Các bảng có thể được hưởng lợi từ việc có đầu trang và chân trang cung cấp ngữ cảnh hoặc thông tin bổ sung. Bạn có thể thêm đầu trang và chân trang vào bảng bằng cách sử dụng`Table.title` Và`Table.description` của cải.
+ Các bảng có thể được hưởng lợi từ việc có đầu trang và chân trang cung cấp ngữ cảnh hoặc thông tin bổ sung. Bạn có thể thêm đầu trang và chân trang vào bảng bằng cách sử dụng`Table.title`Và`Table.description` của cải.
 
 ```python
 # Set table title (header)

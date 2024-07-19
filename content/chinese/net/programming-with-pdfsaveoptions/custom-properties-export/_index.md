@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 
 使用添加所需的自定义属性`CustomDocumentProperties`集合。例如，使用`Add`方法添加一个值为“Aspose”的“Company”属性。
 
-创建一个实例`PdfSaveOptions`类并指定如何使用`CustomPropertiesExport`属性。`PdfCustomPropertiesExport.Standard`值根据默认设置导出自定义属性。
+创建一个实例`PdfSaveOptions`类并指定如何使用导出自定义属性`CustomPropertiesExport`属性。`PdfCustomPropertiesExport.Standard`值根据默认设置导出自定义属性。
 
 使用`Save`方法`Document`类将文档转换为 PDF，并指定转换选项。
 

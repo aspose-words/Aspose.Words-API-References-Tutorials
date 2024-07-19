@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Kode ini membuat sebuah instance dari`Document` Dan`DocumentBuilder` untuk membuat dokumen tersebut. Ini menyisipkan a`<svg>` tag yang berisi a`<polygon>` elemen dengan atribut untuk menentukan bentuk dan gaya gambar SVG.
+ Kode ini membuat sebuah instance dari`Document`Dan`DocumentBuilder` untuk membuat dokumen tersebut. Ini menyisipkan a`<svg>` tag yang berisi a`<polygon>` elemen dengan atribut untuk menentukan bentuk dan gaya gambar SVG.
 
 ## Langkah 3: Tetapkan opsi penyimpanan HTML
 

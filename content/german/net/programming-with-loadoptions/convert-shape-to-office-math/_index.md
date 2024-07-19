@@ -31,7 +31,7 @@ Nachdem wir nun die Ladeoptionen konfiguriert haben, können wir das Dokument mi
 Document doc = new Document(dataDir + "Office math.docx", loadOptions);
 ```
 
-In diesem Beispiel laden wir das Dokument „Office math.docx“ aus dem Verzeichnis „Dokumente“ mit den angegebenen Ladeoptionen.
+In diesem Beispiel laden wir das im Dokumentenverzeichnis liegende Dokument „Office math.docx“ mit den angegebenen Ladeoptionen.
 
 ## Registrierung des Dokuments
 

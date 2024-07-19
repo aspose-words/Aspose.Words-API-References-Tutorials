@@ -19,8 +19,8 @@ En suivant ces didacticiels, vous pourrez gérer facilement les sections de vos 
 | Titre | Description |
 | --- | --- |
 | [Ajouter une section](./add-section/) | Dans ce didacticiel, découvrez comment ajouter une section à un document Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape pour structurer votre document. |
-| [Supprimer la section](./delete-section/) | Dans ce didacticiel, découvrez comment supprimer une section spécifique d'un document Word avec Aspose.Words pour .NET. |
-| [Supprimer toutes les sections](./delete-all-sections/) | Dans ce didacticiel, découvrez comment supprimer toutes les sections d'un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Supprimer la section](./delete-section/) | Maîtrisez la manipulation de documents avec Aspose.Words pour .NET. Apprenez à supprimer des sections de documents Word en quelques étapes simples. |
+| [Supprimer toutes les sections](./delete-all-sections/) | Découvrez comment supprimer toutes les sections d'un document Word à l'aide d'Aspose.Words for .NET avec ce guide étape par étape facile à suivre. |
 | [Ajouter le contenu Word de la section](./append-section-content/) | Dans ce didacticiel, découvrez comment ajouter du contenu Word à des sections spécifiques d'un document Word à l'aide d'Aspose.Words pour .NET.  |
 | [Section Cloner](./clone-section/) | Dans ce didacticiel, découvrez comment cloner une section dans un document Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape. |
 | [Copier la section](./copy-section/) | Dans ce didacticiel, découvrez comment copier une section d'un document Word vers un autre document à l'aide d'Aspose.Words for .NET. |

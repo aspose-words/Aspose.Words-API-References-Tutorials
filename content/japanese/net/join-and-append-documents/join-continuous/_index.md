@@ -2,70 +2,104 @@
 title: 連続参加
 linktitle: 連続参加
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、書式設定を保持しながら 2 つのドキュメントを連続的に結合する方法を学習します。
+description: Aspose.Words for .NET を使用して 2 つの Word 文書をシームレスに結合する方法を学びます。スムーズで効率的な文書の結合については、ステップ バイ ステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/join-continuous/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して 2 つのドキュメントを連続的に結合する方法を説明します。提供されているソース コードは、元の書式を維持しながら、ドキュメントを別のドキュメントの末尾に追加する方法を示しています。
+2 つの Word 文書を途切れることなく 1 つに結合したいとお考えですか? Aspose.Words for .NET では、連続セクション区切り機能を使用してこれを実現する素晴らしい方法を提供しています。このチュートリアルでは、プロセスをステップごとに説明し、手間をかけずに簡単に文書を結合できるようにします。さっそく始めましょう!
 
-## ステップ1: プロジェクトを設定する
+## 前提条件
 
-次の前提条件を満たしていることを確認してください。
+始める前に、必要なものがすべて揃っていることを確認しましょう。
 
--  Aspose.Words for .NETライブラリがインストールされています。ダウンロードはこちらから[Aspose.Releases]https://releases.aspose.com/words/net/ にアクセスするか、NuGet パッケージ マネージャーを使用してインストールします。
-- ソース ドキュメントと宛先ドキュメントが配置されているドキュメント ディレクトリ パス。
+-  .NET 用 Aspose.Words: まだダウンロードしていない場合は、ダウンロードしてインストールしてください。[Aspose.Words for .NET](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio またはその他の .NET 開発環境を使用できます。
+- サンプル ドキュメント: 結合する 2 つの Word ドキュメントを用意します。
 
-## ステップ2: ソースドキュメントと宛先ドキュメントを開く
+## 名前空間のインポート
 
-ソース文書と宛先文書を`Document`クラスコンストラクタ。置換`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
+Aspose.Words for .NET を使用するには、プロジェクトに必要な名前空間をインポートする必要があります。手順は次のとおりです。
+
+```csharp
+using Aspose.Words;
+```
+
+ここで、わかりやすくするために、例を複数のステップに分解してみましょう。
+
+## ステップ1: ドキュメントディレクトリを設定する
+
+まず、ドキュメントが保存されているディレクトリを設定する必要があります。これにより、コードは結合するファイルを見つけることができるようになります。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメントが保存されている実際のパスを入力します。
+
+## ステップ2: ソースドキュメントと宛先ドキュメントを読み込む
+
+次に、ソース ドキュメントと宛先ドキュメントをプログラムに読み込みます。これらは結合する 2 つのドキュメントです。
+
+```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## ステップ3: 連続セクションの開始を設定する
+ファイル名とパスが実際に使用するファイルと一致していることを確認します。
 
-ソース文書を宛先文書の直後に表示させるには、`SectionStart`ソース文書の最初のセクションのプロパティを`SectionStart.Continuous`.
+## ステップ3: セクションの開始を連続として設定する
+
+ソース文書の内容をターゲット文書の直後に表示させるには、`SectionStart`ソース文書の最初のセクションのプロパティを`Continuous`.
 
 ```csharp
+//ドキュメントを、宛先ドキュメントのコンテンツの直後に表示します。
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
+これにより、ドキュメントを結合したときにドキュメント間に中断が生じなくなります。
+
 ## ステップ4: ソースドキュメントを追加する
 
-ソース文書を宛先文書に追加するには、`AppendDocument`方法の`Document`クラス。インポート形式モードを`ImportFormatMode.KeepSourceFormatting`ソース ドキュメントの元のスタイルを保持します。
+ここで、ソース ドキュメントを宛先ドキュメントに追加します。この手順により、ソース ドキュメントのコンテンツが宛先ドキュメントの末尾に追加されることが保証されます。
 
 ```csharp
+//ソース ドキュメントにある元のスタイルを使用して、ソース ドキュメントを追加します。
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## ステップ5: 変更したドキュメントを保存する
+使用`ImportFormatMode.KeepSourceFormatting`ソース ドキュメントの書式設定が最終的な結合ドキュメントに保持されることを保証します。
 
-最後に、変更した宛先ドキュメントを`Save`方法の`Document`物体。
+## ステップ5: 結合した文書を保存する
+
+最後に、結合したドキュメントを指定したディレクトリに保存します。これでドキュメントの結合プロセスは完了です。
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 ```
 
-これで、Aspose.Words for .NET を使用して 2 つのドキュメントを連続的に結合する実装が完了します。
+パスとファイル名がニーズに合っていることを確認してください。
 
-### Aspose.Words for .NET を使用した Join Continuous のサンプル ソース コード 
+## 結論
 
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+これで完了です。わずか数行のコードで、Aspose.Words for .NET を使用して 2 つの Word 文書を 1 つの連続した文書に結合することができました。このプロセスは簡単なだけでなく、非常に効率的で、文書の元の書式設定が維持されます。
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Northwind traders.docx");
-	//ドキュメントを、宛先ドキュメントの内容の直後に表示します。
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	//ソース ドキュメントにある元のスタイルを使用して、ソース ドキュメントを追加します。
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
-```
+## よくある質問
+
+### 2 つ以上のドキュメントを結合できますか?
+はい、追加のドキュメントをロードして順番に追加することで、複数のドキュメントを結合するプロセスを繰り返すことができます。
+
+### 元の書式は保持されますか?
+はい、使用しています`ImportFormatMode.KeepSourceFormatting`ソース ドキュメントの書式設定が保持されることを保証します。
+
+### Aspose.Words for .NET は .NET Core と互換性がありますか?
+はい、Aspose.Words for .NET は .NET Framework と .NET Core の両方と互換性があります。
+
+### ページ設定が異なるドキュメントを結合できますか?
+はい、ただし、シームレスなマージを確実に行うには、ページ設定プロパティを調整する必要があるかもしれません。
+
+### 問題が発生した場合、どこでサポートを受けることができますか?
+ Asposeコミュニティフォーラムからサポートを受けることができます[ここ](https://forum.aspose.com/c/words/8).

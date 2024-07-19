@@ -46,7 +46,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 ```
 
 ## 4. lépés: Mentse el a módosított dokumentumot
- Végül a módosított dokumentumot a`Save` módszer. Adja meg a kívánt kimeneti fájl elérési útját és formátumát (pl. DOCX) a módosított dokumentumhoz.
+Végül a módosított dokumentumot a`Save` módszer. Adja meg a kívánt kimeneti fájl elérési útját és formátumát (pl. DOCX) a módosított dokumentumhoz.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

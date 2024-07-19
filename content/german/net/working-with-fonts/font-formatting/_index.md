@@ -92,7 +92,7 @@ A: Ja, mit Aspose.Words können Sie die Schriftgröße eines bestimmten Textes i
 
 #### F: Kann ich verschiedenen Absätzen in einem Word-Dokument unterschiedliche Schriftstile zuweisen?
 
-A: Absolut! Mit Aspose.Words können Sie verschiedenen Absätzen in einem Word-Dokument unterschiedliche Schriftstile zuweisen. Sie können die von der API bereitgestellten Methoden verwenden, um jeden Absatz nach Bedarf individuell zu formatieren.
+A: Auf jeden Fall! Mit Aspose.Words können Sie verschiedenen Absätzen in einem Word-Dokument unterschiedliche Schriftstile zuweisen. Sie können die von der API bereitgestellten Methoden verwenden, um jeden Absatz nach Bedarf individuell zu formatieren.
 
 #### F: Wie kann ich fetten Text in einem Word-Dokument hervorheben?
 

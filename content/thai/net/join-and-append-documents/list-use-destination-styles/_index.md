@@ -2,137 +2,93 @@
 title: รายการใช้สไตล์ปลายทาง
 linktitle: รายการใช้สไตล์ปลายทาง
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีเข้าร่วมและผนวกเอกสาร Word ในขณะที่รักษารูปแบบรายการของเอกสารปลายทางโดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีผสานเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET โดยไม่สูญเสียการจัดรูปแบบรายการ คำแนะนำทีละขั้นตอนเพื่อรักษารูปแบบเอกสารของคุณให้คงเดิม
 type: docs
 weight: 10
 url: /th/net/join-and-append-documents/list-use-destination-styles/
 ---
+## การแนะนำ
 
-บทช่วยสอนนี้จะแนะนำคุณตลอดกระบวนการใช้ฟีเจอร์รายการใช้สไตล์ปลายทางของ Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณสามารถเข้าร่วมและต่อท้ายเอกสาร Word ในขณะที่ใช้สไตล์รายการของเอกสารปลายทาง
+คุณเคยลองรวมเอกสาร Word แล้วสับสนกับการจัดรูปแบบหรือไม่? เหมือนพยายามผสมน้ำมันกับน้ำเป็นบางครั้งใช่ไหม? วันนี้เราจะมาเจาะลึกเคล็ดลับดีๆ ในการใช้ Aspose.Words สำหรับ .NET ที่จะช่วยให้คุณไม่ต้องปวดหัวเรื่องนี้ เราจะเรียนรู้วิธีนำเข้ารายการจากเอกสารหนึ่งไปยังอีกเอกสารหนึ่งโดยไม่ทำให้การกำหนดหมายเลขและสไตล์เสียหาย พร้อมที่จะทำให้ชีวิตของคุณง่ายขึ้นอีกหน่อยแล้วหรือยัง? มาเริ่มกันเลย!
 
 ## ข้อกำหนดเบื้องต้น
 
-ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
+ก่อนที่เราจะกระโดดเข้าสู่โลกแห่งเวทย์มนตร์ มาตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
 
-1. ติดตั้ง Aspose.Words สำหรับ .NET แล้ว คุณสามารถดาวน์โหลดได้จากเว็บไซต์ Aspose หรือติดตั้งผ่าน NuGet
-2. Visual Studio หรือสภาพแวดล้อมการพัฒนา C# อื่น ๆ
+1.  Aspose.Words สำหรับ .NET: หากคุณยังไม่ได้ดาวน์โหลด ให้ดาวน์โหลด[ที่นี่](https://releases.aspose.com/words/net/).
+2. Visual Studio: เวอร์ชันล่าสุดจะใช้ได้
+3. ความเข้าใจพื้นฐานเกี่ยวกับ C#: คุณไม่จำเป็นต้องเป็นวิซาร์ด แต่ความคุ้นเคยจะช่วยได้
 
-## ขั้นตอนที่ 1: เริ่มต้นไดเร็กทอรีเอกสาร
+ ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Aspose.Words และตั้งค่าในโครงการของคุณแล้ว หากคุณไม่แน่ใจเกี่ยวกับวิธีการทำเช่นนี้[เอกสารประกอบ](https://reference.aspose.com/words/net/) เป็นสถานที่ที่ดีในการเริ่มต้น
 
- ขั้นแรก คุณต้องกำหนดเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แก้ไขค่าของ`dataDir` ตัวแปรไปยังเส้นทางที่เอกสารของคุณอยู่
+## นำเข้าเนมสเปซ
+
+ก่อนอื่น เรามานำเข้าเนมสเปซที่จำเป็นในไฟล์ C# ของคุณกันก่อน:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+เข้าใจแล้วใช่ไหม? สุดยอด. ตอนนี้เรามาแยกย่อยสิ่งนี้ทีละขั้นตอน
+
+## ขั้นตอนที่ 1: ตั้งค่าเส้นทางเอกสารของคุณ
+
+ทุกโครงการเริ่มต้นด้วยการจัดระเบียบไฟล์ของคุณ ชี้โค้ดของเราไปที่ไดเร็กทอรีที่เก็บเอกสารของคุณ
+
+```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ขั้นตอนที่ 2: โหลดเอกสารต้นทางและปลายทาง
+ แทนที่`"YOUR DOCUMENT DIRECTORY"` พร้อมเส้นทางจริงในการจัดเก็บเอกสารของคุณ ง่ายใช่มั้ย?
 
-ถัดไป คุณต้องโหลดเอกสารต้นทางและปลายทางโดยใช้ Aspose.Words`Document` ระดับ. อัพเดตชื่อไฟล์ใน`Document` ตัวสร้างตามชื่อเอกสารของคุณ
+## ขั้นตอนที่ 2: โหลดเอกสารต้นทางและปลายทางของคุณ
+
+ต่อไปเราต้องโหลดเอกสารทั้งต้นทางและปลายทาง คิดว่าเป็นการเปิดไฟล์ Word สองไฟล์บนคอมพิวเตอร์ของคุณ
 
 ```csharp
-Document srcDoc = new Document(dataDir + "Document source.docx");
+Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
-## ขั้นตอนที่ 3: ตั้งค่าเอกสารต้นฉบับให้ดำเนินการต่อหลังจากเอกสารปลายทาง
+ ที่นี่,`srcDoc` คือเอกสารต้นทางของคุณ (รายการที่มีรายการที่คุณต้องการคัดลอก) และ`dstDoc` คือเอกสารปลายทางของคุณ (เอกสารที่คุณต้องการวางรายการเหล่านั้น)
 
- เพื่อให้แน่ใจว่าเนื้อหาจากเอกสารต้นฉบับดำเนินต่อไปหลังจากสิ้นสุดเอกสารปลายทาง คุณต้องตั้งค่า`SectionStart` คุณสมบัติของส่วนแรกในเอกสารต้นฉบับถึง`SectionStart.Continuous`.
+## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกการนำเข้า
 
-```csharp
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-```
-
-## ขั้นตอนที่ 4: จัดการการจัดรูปแบบรายการ
-
-ในการจัดการการจัดรูปแบบรายการ คุณจะต้องวนซ้ำแต่ละย่อหน้าในเอกสารต้นฉบับและตรวจสอบว่าเป็นรายการหรือไม่ หากเป็นเช่นนั้น คุณจะต้องเปรียบเทียบรหัสรายการกับรายการที่มีอยู่ในเอกสารปลายทาง หากมีรายการที่มี ID เดียวกัน คุณจะสร้างสำเนาของรายการในเอกสารต้นฉบับและอัปเดตรูปแบบรายการของย่อหน้าเพื่อใช้รายการที่คัดลอก
+เราจำเป็นต้องระบุตัวเลือกบางอย่างเพื่อให้แน่ใจว่ารายการนำเข้าอย่างถูกต้อง ขั้นตอนนี้ช่วยให้แน่ใจว่าหากมีข้อขัดแย้งในการกำหนดหมายเลข การกำหนดหมายเลขจากเอกสารต้นฉบับจะยังคงอยู่
 
 ```csharp
-Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-{
-    if (para.IsListItem)
-    {
-        int listId = para.ListFormat.List.ListId;
-        if (dstDoc.Lists.GetListByListId(listId) != null)
-        {
-            Aspose.Words.Lists.List currentList;
-            if (newLists.ContainsKey(listId))
-            {
-                currentList = newLists[listId];
-            }
-            else
-            {
-                currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-                newLists.Add(listId, currentList);
-            }
-            para.ListFormat.List = currentList;
-        }
-    }
-}
+ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
 ```
 
-## ขั้นตอนที่ 5: ผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทาง
+## ขั้นตอนที่ 4: ผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทาง
 
- ตอนนี้คุณสามารถผนวกเอกสารต้นฉบับเข้ากับเอกสารปลายทางได้โดยใช้`AppendDocument` วิธีการของ`Document` ระดับ. ที่`ImportFormatMode.UseDestinationStyles` พารามิเตอร์ช่วยให้มั่นใจว่ารูปแบบรายการของเอกสารปลายทางถูกใช้ในระหว่างการดำเนินการผนวก
+เอาล่ะ เรามาทำการผสานกัน นี่คือจุดที่ความมหัศจรรย์เกิดขึ้น เราผนวกเอกสารต้นทางเข้ากับเอกสารปลายทางในขณะที่ใช้ตัวเลือกการนำเข้าที่ระบุ
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
+dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-## ขั้นตอนที่ 6: บันทึกเอกสารขั้นสุดท้าย
+คุณได้รวมเอกสารสองฉบับเข้าด้วยกันเรียบร้อยแล้ว โดยยังคงรักษารายการไว้ครบถ้วน
 
-สุดท้าย ให้บันทึกเอกสารที่ผสานโดยเปิดใช้งานคุณลักษณะ List Use Destination Styles โดยใช้`Save` วิธีการของ`Document` ระดับ.
+## บทสรุป
 
-```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+ได้แล้ว! การรวมเอกสารโดยไม่เสียสมาธิกับปัญหาการจัดรูปแบบเป็นเรื่องง่ายด้วย Aspose.Words for .NET ไม่ว่าคุณจะทำงานในโครงการขนาดใหญ่หรือเพียงแค่ต้องจัดระเบียบไฟล์บางไฟล์ วิธีนี้จะช่วยให้รายการของคุณมีความชัดเจน ดังนั้นครั้งต่อไปที่คุณกำลังเผชิญกับภาวะที่กลืนไม่เข้าคายไม่ออกในการรวมเอกสาร โปรดจำคู่มือนี้และจัดการมันอย่างมืออาชีพ!
 
-### ตัวอย่างซอร์สโค้ดสำหรับรายการใช้สไตล์ปลายทางโดยใช้ Aspose.Words สำหรับ .NET 
+## คำถามที่พบบ่อย
 
-นี่คือซอร์สโค้ดแบบเต็มสำหรับฟีเจอร์ "List Use Destination Styles" ใน C# โดยใช้ Aspose.Words สำหรับ .NET:
+### Aspose.Words สำหรับ .NET คืออะไร
+Aspose.Words for .NET เป็นไลบรารีที่มีประสิทธิภาพสำหรับการทำงานกับเอกสาร Word โดยทางโปรแกรม ช่วยให้คุณสร้าง แก้ไข และแปลงเอกสารในรูปแบบต่างๆ
 
+### ฉันจะติดตั้ง Aspose.Words สำหรับ .NET ได้อย่างไร
+ คุณสามารถดาวน์โหลดได้จาก[เว็บไซต์](https://releases.aspose.com/words/net/) และปฏิบัติตามคำแนะนำในการติดตั้งใน[เอกสารประกอบ](https://reference.aspose.com/words/net/).
 
-```csharp
-	// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+### ฉันสามารถใช้ Aspose.Words ได้ฟรีหรือไม่
+ Aspose.Words เสนอ[ทดลองฟรี](https://releases.aspose.com/) ด้วยคุณสมบัติที่จำกัด หากต้องการเข้าถึงแบบเต็ม คุณจะต้องซื้อใบอนุญาต[ที่นี่](https://purchase.aspose.com/buy).
 
-	Document srcDoc = new Document(dataDir + "Document source.docx");
-	Document dstDoc = new Document(dataDir + "Document destination with list.docx");
-	// ตั้งค่าเอกสารต้นทางให้ดำเนินการต่อโดยตรงหลังจากสิ้นสุดเอกสารปลายทาง
-	srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
-	// ติดตามรายการที่สร้างขึ้น
-	Dictionary<int, Aspose.Words.Lists.List> newLists = new Dictionary<int, Aspose.Words.Lists.List>();
-	foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
-	{
-		if (para.IsListItem)
-		{
-			int listId = para.ListFormat.List.ListId;
-			// ตรวจสอบว่าเอกสารปลายทางมีรายการที่มี ID นี้อยู่แล้วหรือไม่ ถ้าเป็นเช่นนั้นก็อาจนี้
-			// ทำให้ทั้งสองรายการทำงานพร้อมกัน สร้างสำเนาของรายการในเอกสารต้นฉบับแทน
-			if (dstDoc.Lists.GetListByListId(listId) != null)
-			{
-				Aspose.Words.Lists.List currentList;
-				// มีรายการคัดลอกใหม่สำหรับ ID นี้แล้ว ดึงรายการที่เก็บไว้
-				// และใช้ในย่อหน้าปัจจุบัน
-				if (newLists.ContainsKey(listId))
-				{
-					currentList = newLists[listId];
-				}
-				else
-				{
-					// เพิ่มสำเนาของรายการนี้ลงในเอกสารและเก็บไว้เพื่อใช้อ้างอิงในภายหลัง
-					currentList = srcDoc.Lists.AddCopy(para.ListFormat.List);
-					newLists.Add(listId, currentList);
-				}
-				// ตั้งค่ารายการของย่อหน้านี้ให้เป็นรายการที่คัดลอก
-				para.ListFormat.List = currentList;
-			}
-		}
-	}
-	// ผนวกเอกสารต้นฉบับต่อท้ายเอกสารปลายทาง
-	dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles);
-	dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListUseDestinationStyles.docx");
-```
+### ImportFormatOptions คืออะไร?
+ ImportFormatOptions ช่วยให้คุณสามารถระบุวิธีจัดการการจัดรูปแบบเมื่อนำเข้าเนื้อหาจากเอกสารหนึ่งไปยังอีกเอกสารหนึ่ง ตัวอย่างเช่น,`KeepSourceNumbering` ช่วยให้มั่นใจได้ว่าหมายเลขรายการจากเอกสารต้นฉบับจะยังคงอยู่
 
-แค่นั้นแหละ! คุณได้นำคุณลักษณะ List Use Destination Styles ไปใช้โดยใช้ Aspose.Words for .NET เรียบร้อยแล้ว เอกสารขั้นสุดท้ายจะมีเนื้อหาที่ผสานเข้ากับสไตล์รายการจากเอกสารปลายทาง
+### ฉันจะรับการสนับสนุนสำหรับ Aspose.Words ได้ที่ไหน
+ คุณสามารถรับการสนับสนุนจาก[ฟอรั่ม Aspose.Words](https://forum.aspose.com/c/words/8)ซึ่งคุณสามารถถามคำถามและรับความช่วยเหลือจากชุมชนและนักพัฒนา Aspose

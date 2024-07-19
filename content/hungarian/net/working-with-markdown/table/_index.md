@@ -2,52 +2,67 @@
 title: asztal
 linktitle: asztal
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan hozhat létre táblázatot az Aspose.Words for .NET segítségével Lépésről lépésre.
+description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan hozhat létre és testreszabhat táblázatokat az Aspose.Words for .NET-ben. Tökéletes strukturált és tetszetős dokumentumok létrehozásához.
 type: docs
 weight: 10
 url: /hu/net/working-with-markdown/table/
 ---
+## Bevezetés
 
+dokumentumokban lévő táblázatokkal való munka általános követelmény. Legyen szó jelentésről, számláról vagy bármilyen strukturált adatról, a táblázatok nélkülözhetetlenek. Ebben az oktatóanyagban végigvezetem a táblázatok létrehozásán és testreszabásán az Aspose.Words for .NET használatával. Merüljünk el!
 
-Ebben a példában végigvezetjük, hogyan hozhat létre táblázatot az Aspose.Words for .NET használatával. A táblázat egy adatstruktúra, amely az információkat sorokba és oszlopokba rendezi.
+## Előfeltételek
 
-## 1. lépés: Dokumentumgenerátor használata
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 
-Először egy dokumentumgenerátort fogunk használni, hogy tartalmat adjunk a dokumentumunkhoz.
+- Visual Studio: A kód írásához és teszteléséhez fejlesztői környezetre van szüksége. A Visual Studio jó választás.
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nincs meg, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
+- A C# alapvető ismerete: A C# programozásban való némi jártasság szükséges a követéshez.
+
+## Névterek importálása
+
+Mielőtt belevágnánk a lépésekbe, importáljuk a szükséges névtereket:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuilder-t
+
+Először is létre kell hoznunk egy új dokumentumot, és inicializálnunk kell a DocumentBuilder osztályt, ami segít a táblázatunk elkészítésében.
+
+```csharp
+// Inicializálja a DocumentBuilder programot.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
+Ez a lépés olyan, mint a munkaterület beállítása. Készen van az üres dokumentuma és a toll.
 
-## 2. lépés: Adjon hozzá cellákat és adatokat
+## 2. lépés: Kezdje el az asztal elkészítését
 
- Cellákat és adatokat adunk hozzá a táblázatunkhoz a`InsertCell` módszer és a`Writeln` a dokumentumgenerátor módszere.
-
-```csharp
-builder. InsertCell();
-builder.Writeln("a");
-builder. InsertCell();
-builder.Writeln("b");
-
-builder. InsertCell();
-builder.Writeln("c");
-builder. InsertCell();
-builder.Writeln("d");
-```
-
-### Példa forráskódra tábla létrehozásához az Aspose.Words for .NET használatával
+Most, hogy megvannak az eszközeink, kezdjük el az asztal építését. Kezdjük az első sor első cellájának beszúrásával.
 
 ```csharp
-// Használjon dokumentumkészítőt, hogy tartalmat adjon a dokumentumhoz.
-DocumentBuilder builder = new DocumentBuilder();
-
 // Adja hozzá az első sort.
 builder.InsertCell();
 builder.Writeln("a");
+
+// Helyezze be a második cellát.
 builder.InsertCell();
 builder.Writeln("b");
 
+// Zárja be az első sort.
+builder.EndRow();
+```
+
+Ezt a lépést úgy képzelje el, hogy megrajzolja a táblázat első sorát egy papírra, és az első két cellát kitölti "a" és "b" betűkkel.
+
+## 3. lépés: További sorok hozzáadása
+
+Adjunk hozzá még egy sort a táblázatunkhoz.
+
+```csharp
 // Adja hozzá a második sort.
 builder.InsertCell();
 builder.Writeln("c");
@@ -55,26 +70,25 @@ builder.InsertCell();
 builder.Writeln("d");
 ```
 
-Gratulálok ! Most megtanulta, hogyan hozhat létre táblázatot az Aspose.Words for .NET segítségével.
+Itt egyszerűen kibővítjük a táblázatot egy másik sor hozzáadásával, két cellával, amelyek tele vannak "c" és "d" betűkkel.
 
-### GYIK
+## Következtetés
 
-#### K: Hogyan hozhatok létre táblázatot a Markdownban?
+A táblák létrehozása és testreszabása az Aspose.Words for .NET-ben egyszerű, ha rájött a dologra. Ha követi ezeket a lépéseket, strukturált és tetszetős táblázatokat hozhat létre dokumentumaiban. Boldog kódolást!
 
-V: Táblázat létrehozásához a Markdown alkalmazásban használja a csövek szintaxisát (`|`cellák és kötőjelek elválasztásához (`-`) a táblázat fejléceinek elválasztásához.
+## GYIK
 
-#### K: Testreszabhatjuk egy táblázat megjelenését a Markdownban?
+### Hozzáadhatok kettőnél több cellát egymás után?
+ Igen, annyi cellát vehet fel egymás után, amennyire szüksége van a következő megismétlésével`InsertCell()`és`Writeln()` mód.
 
-V: A szabványos Markdownban a táblázat testreszabási lehetőségei korlátozottak. Néhány Markdown szerkesztő azonban lehetővé teszi, hogy CSS-stílusokat adjon hozzá a táblázatokhoz a megjelenésük testreszabása érdekében.
+### Hogyan egyesíthetem a cellákat egy táblázatban?
+ A cellákat a segítségével egyesítheti`CellFormat.HorizontalMerge`és`CellFormat.VerticalMerge` tulajdonságait.
 
-#### K: Hogyan lehet cellákat egyesíteni egy táblázatban a Markdown alkalmazásban?
+### Lehetséges képeket hozzáadni a táblázat celláihoz?
+ Teljesen! A cellákba képeket szúrhat be a`DocumentBuilder.InsertImage` módszer.
 
-V: A cellák egyesítése egy táblázatban a Markdown alkalmazásban a használt Markdown szerkesztőtől függ. Egyes Markdown szerkesztők támogatják a cellák egyesítését egy adott szintaxis használatával.
+### Stílusozhatok-e másképp az egyes cellákat?
+ Igen, különböző stílusokat alkalmazhat az egyes cellákra, ha a következőn keresztül éri el őket`Cells` sor gyűjteménye.
 
-#### K: A Markdown táblázatai támogatják a CSS stílust?
-
-V: A szabványos Markdownban a táblák nem nyújtanak közvetlen támogatást a CSS-stílusokhoz. Néhány Markdown szerkesztő azonban lehetővé teszi, hogy CSS-stílusokat adjon hozzá a táblázatokhoz a megjelenésük testreszabása érdekében.
-
-#### K: Hozzáadhatunk hivatkozásokat vagy szöveget sorközi formátumban egy táblázat celláihoz a Markdown alkalmazásban?
-
-V: Igen, hivatkozásokat vagy szövegközi szöveget adhat hozzá a Markdown táblázatcelláihoz a megfelelő Markdown szintaxis használatával.
+### Hogyan távolíthatom el a szegélyeket a táblázatból?
+ A szegélyeket a szegélystílus beállításával eltávolíthatja`LineStyle.None` minden szegélytípushoz.

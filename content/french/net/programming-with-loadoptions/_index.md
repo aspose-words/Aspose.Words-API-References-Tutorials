@@ -17,7 +17,7 @@ Dans ces didacticiels, vous apprendrez à utiliser LoadOptions pour charger des 
 | [Mettre à jour les champs modifiés dans un document Word](./update-dirty-fields/) | Découvrez comment charger un document Word en mettant à jour les champs modifiés avec Aspose.Words pour .NET. |
 | [Charger un document crypté dans Word](./load-encrypted-document/) | Découvrez comment charger et enregistrer des documents Word chiffrés avec Aspose.Words pour .NET. |
 | [Convertir une forme en mathématiques de bureau](./convert-shape-to-office-math/) | Découvrez comment convertir des formes en formules mathématiques Office lors du téléchargement de documents avec Aspose.Words pour .NET. |
-| [Définir la version de MS Word](./set-ms-word-version/) | Découvrez comment charger un document avec une version spécifiée de MS Word à l'aide d'Aspose.Words pour .NET. |
+| [Définir la version de Ms Word](./set-ms-word-version/) | Découvrez comment charger un document avec une version spécifiée de MS Word à l'aide d'Aspose.Words pour .NET. |
 | [Utiliser le dossier temporaire dans un document Word](./use-temp-folder/) | Découvrez comment utiliser un dossier temporaire lors du téléchargement de documents avec Aspose.Words for .NET. |
 | [Rappel d'avertissement dans un document Word](./warning-callback/) | Découvrez comment gérer les avertissements lors du chargement d'un document Word à l'aide de la fonctionnalité de rappel avec Aspose.Words pour .NET. |
 | [Charger avec encodage dans un document Word](./load-with-encoding/) | Découvrez comment charger un document avec un encodage spécifié dans un document Word à l'aide d'Aspose.Words pour .NET. |

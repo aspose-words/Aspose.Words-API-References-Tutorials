@@ -49,7 +49,7 @@ List<DocumentChange> changes = comparer.getChanges();
 
 ## Stosowanie zmian
 
-Po zidentyfikowaniu zmian możesz zastosować je wybiórczo lub wszystkie naraz w jednym z dokumentów.
+Po zidentyfikowaniu zmian możesz zastosować je wybiórczo lub wszystkie na raz w jednym z dokumentów.
 
 ```java
 // Zastosuj zmiany w oryginalnym dokumencie

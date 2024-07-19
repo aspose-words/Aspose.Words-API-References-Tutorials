@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. Adım: Dijital imzaları tespit edin
 
- Daha sonra şunu kullanırız:`DetectFileFormat` yöntemi`FileFormatUtil` Dosya formatı bilgilerini tespit etmek için sınıf. Bu örnekte belgenin "Dijital olarak imzalanmış.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
+ Daha sonra şunu kullanırız:`DetectFileFormat` yöntemi`FileFormatUtil`Dosya formatı bilgilerini tespit etmek için sınıf. Bu örnekte belgenin "Dijital olarak imzalanmış.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
@@ -68,7 +68,7 @@ Bu eğitimde size Aspose.Words for .NET'in dijital imza algılama özelliğini k
 
 #### Aspose.Words for .NET kullanılarak bir Word belgesinde dijital imzanın varlığı nasıl tespit edilir?
 
- Aspose.Words for .NET kullanarak bir Word belgesinde dijital imzanın varlığını tespit etmek için eğitimde verilen adımları takip edebilirsiniz. Kullanmak`DetectFileFormat` yöntemi`FileFormatUtil` class dosya formatı bilgilerini tespit etmenize izin verecektir. Daha sonra kontrol edebilirsiniz`HasDigitalSignature` mülkiyeti`FileFormatInfo`belgenin dijital imza içerip içermediğini belirlemek için nesne. Dijital imza tespit edilirse belgenin Aspose.Words ile açılması/kaydedilmesi durumunda imzaların kaybolacağını belirten bir mesaj görüntüleyebilirsiniz.
+ Aspose.Words for .NET kullanarak bir Word belgesinde dijital imzanın varlığını tespit etmek için eğitimde verilen adımları takip edebilirsiniz. Kullanmak`DetectFileFormat` yöntemi`FileFormatUtil` class dosya formatı bilgilerini tespit etmenize izin verecektir. Daha sonra kontrol edebilirsiniz`HasDigitalSignature` mülkiyeti`FileFormatInfo` belgenin dijital imza içerip içermediğini belirlemek için nesne. Dijital imza tespit edilirse belgenin Aspose.Words ile açılması/kaydedilmesi durumunda imzaların kaybolacağını belirten bir mesaj görüntüleyebilirsiniz.
 
 #### Dijital imzanın aranacağı belgelerin bulunduğu dizin nasıl belirlenir?
 

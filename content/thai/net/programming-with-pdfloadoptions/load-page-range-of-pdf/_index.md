@@ -15,7 +15,7 @@ url: /th/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ใช้รหัสต่อไปนี้เพื่อโหลดช่วงหน้าเฉพาะจากเอกสาร PDF:
 
 ```csharp
-// พาธไปยังไดเร็กทอรีเอกสาร
+//พาธไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 };
@@ -23,7 +23,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { PageIndex = 0, PageCount = 1 }
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- ในตัวอย่างนี้ เรากำลังโหลดหน้าแรกของเอกสาร PDF คุณสามารถเปลี่ยนค่าของ`PageIndex` และ`PageCount` ไปจนถึงช่วงหน้าที่ต้องการ
+ ในตัวอย่างนี้ เรากำลังโหลดหน้าแรกของเอกสาร PDF คุณสามารถเปลี่ยนค่าของ`PageIndex`และ`PageCount` ไปจนถึงช่วงหน้าที่ต้องการ
 
 ## ขั้นตอนที่ 2: บันทึกเอกสาร
 

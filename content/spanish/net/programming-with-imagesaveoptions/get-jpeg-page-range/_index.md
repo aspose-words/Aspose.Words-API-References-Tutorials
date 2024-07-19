@@ -35,7 +35,7 @@ options. ImageContrast = 0.7f;
 options. HorizontalResolution = 72f;
 ```
 
- En este paso, configuramos las opciones de copia de seguridad de las imágenes. Creamos un nuevo`ImageSaveOptions` objeto que especifica el formato de guardado deseado, aquí "Jpeg" para el formato JPEG. También configuramos el rango de páginas para convertir usando el`PageSet`objeto. Finalmente, ajustamos el brillo y contraste de la imagen usando el`ImageBrightness` y`ImageContrast` propiedades, respectivamente. También cambiamos la resolución horizontal usando el`HorizontalResolution` propiedad.
+ En este paso, configuramos las opciones de copia de seguridad de las imágenes. Creamos un nuevo`ImageSaveOptions` objeto que especifica el formato de guardado deseado, aquí "Jpeg" para el formato JPEG. También configuramos el rango de páginas para convertir usando el`PageSet`objeto. Finalmente, ajustamos el brillo y contraste de la imagen usando el`ImageBrightness`y`ImageContrast` propiedades, respectivamente. También cambiamos la resolución horizontal usando el`HorizontalResolution` propiedad.
 
 ## Paso 4: hacer una copia de seguridad de las imágenes
 

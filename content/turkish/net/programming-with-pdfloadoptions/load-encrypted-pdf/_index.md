@@ -19,7 +19,7 @@ Aspose.Words for .NET'in Şifreli PDF Yükle özelliği, şifre korumalı PDF do
 İlk adım, şifrelenmiş PDF belgesini uygulamanıza yüklemektir. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
-// Belgeler dizininin yolu.
+//Belgeler dizininin yolu.
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 Document doc = new Document(dataDir + "Document.pdf");
 ```

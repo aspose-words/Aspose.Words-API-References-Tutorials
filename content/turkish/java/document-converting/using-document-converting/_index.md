@@ -12,7 +12,7 @@ Dijital çağda işletmeler ve bireyler çok miktarda bilgi ve veriyle uğraşma
 
 ## Aspose.Words for Java nedir?
 
-Aspose.Words for Java, Java geliştiricilerinin Word belgelerini programlı olarak oluşturmasına, işlemesine ve dönüştürmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır. İster rapor oluşturmanız, belgeleri birleştirmeniz, kelime işlem görevlerini gerçekleştirmeniz veya belgeleri farklı formatlara dönüştürmeniz gerekiyorsa Aspose.Words, gereksinimlerinizi karşılamak için kapsamlı bir API seti sunar.
+Aspose.Words for Java, Java geliştiricilerinin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır. İster rapor oluşturmanız, belgeleri birleştirmeniz, kelime işlem görevlerini gerçekleştirmeniz veya belgeleri farklı formatlara dönüştürmeniz gerekiyorsa Aspose.Words, gereksinimlerinizi karşılamak için kapsamlı bir API seti sunar.
 
 ## Belge Dönüştürme için Neden Aspose.Words'ü Seçmelisiniz?
 
@@ -133,7 +133,7 @@ Evet, Aspose.Words for Java, toplu belge dönüştürme işlemlerini kolaylıkla
 
 ### S2: Aspose.Words bulut tabanlı belge dönüştürmeye uygun mu?
 
-Kesinlikle! Aspose.Words for Java, bulut tabanlı ortamlarla uyumludur ve bulut uygulamalarında belge dönüştürme yeteneklerini uygulamanıza olanak tanır.
+Kesinlikle! Aspose.Words for Java, bulut tabanlı ortamlarla uyumludur ve bulut uygulamalarında belge dönüştürme özelliklerini uygulamanıza olanak tanır.
 
 ### S3: Aspose.Words, Word dosya formatı hakkında derinlemesine bilgi gerektiriyor mu?
 

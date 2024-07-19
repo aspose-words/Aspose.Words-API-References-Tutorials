@@ -39,7 +39,7 @@ Untuk membuat dan menyisipkan tabel ke dalam dokumen menggunakan Aspose.Words un
     table = builder.start_table()
     ```
 
-2.  Sisipkan Data: Tambahkan data ke tabel dengan menggunakan pembuatnya`insert_cell` Dan`write` metode.
+2.  Sisipkan Data: Tambahkan data ke tabel dengan menggunakan pembuatnya`insert_cell`Dan`write` metode.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Untuk membuat dan menyisipkan tabel ke dalam dokumen menggunakan Aspose.Words un
 
 ## Menerapkan Pemformatan Tabel Dasar
 
- Pemformatan tabel dasar dapat dicapai dengan menggunakan metode yang disediakan oleh`Table` Dan`Cell` kelas. Inilah cara Anda dapat mempercantik tampilan meja Anda:
+ Pemformatan tabel dasar dapat dicapai dengan menggunakan metode yang disediakan oleh`Table`Dan`Cell` kelas. Inilah cara Anda dapat mempercantik tampilan meja Anda:
 
 1. Atur Lebar Kolom: Sesuaikan lebar kolom untuk memastikan keselarasan dan daya tarik visual yang tepat.
 
@@ -86,7 +86,7 @@ Untuk membuat dan menyisipkan tabel ke dalam dokumen menggunakan Aspose.Words un
 
 ## Menata Tabel dengan Aspose.Words
 
-Aspose.Words untuk Python menyediakan berbagai opsi gaya untuk membuat tabel Anda menarik secara visual:
+Aspose.Words for Python menyediakan serangkaian opsi gaya untuk membuat tabel Anda menarik secara visual:
 
 1. Gaya Tabel: Terapkan gaya tabel yang telah ditentukan sebelumnya untuk mendapatkan tampilan profesional.
 
@@ -196,7 +196,7 @@ Gabungkan header dan footer ke dalam tabel Anda untuk konteks yang lebih baik:
 
 Pastikan tata letak tabel Anda disesuaikan secara otomatis berdasarkan konten:
 
-1. Pas Otomatis ke Jendela: Memungkinkan tabel pas dengan lebar halaman.
+1. Paskan Otomatis ke Jendela: Memungkinkan tabel agar sesuai dengan lebar halaman.
 
     ```python
     table.allow_auto_fit = True

@@ -39,7 +39,7 @@ Pour créer et insérer des tableaux dans des documents à l'aide d'Aspose.Words
     table = builder.start_table()
     ```
 
-2.  Insérer des données : ajoutez des données à la table à l'aide du générateur`insert_cell` et`write` méthodes.
+2.  Insérer des données : ajoutez des données à la table à l'aide du générateur`insert_cell`et`write` méthodes.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Pour créer et insérer des tableaux dans des documents à l'aide d'Aspose.Words
 
 ## Application du formatage de table de base
 
- Le formatage de base des tableaux peut être réalisé à l'aide des méthodes fournies par le`Table` et`Cell` Des classes. Voici comment vous pouvez améliorer l’apparence de votre table :
+ Le formatage de base des tableaux peut être réalisé à l'aide des méthodes fournies par le`Table`et`Cell` Des classes. Voici comment vous pouvez améliorer l’apparence de votre table :
 
 1. Définir la largeur des colonnes : ajustez la largeur des colonnes pour garantir un alignement et un attrait visuel corrects.
 

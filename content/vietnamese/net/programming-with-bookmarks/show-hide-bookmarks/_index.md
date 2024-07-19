@@ -2,138 +2,153 @@
 title: Hiển thị Ẩn dấu trang trong tài liệu Word
 linktitle: Hiển thị Ẩn dấu trang trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách hiển thị hoặc ẩn dấu trang cụ thể trong tài liệu word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách tự động hiển thị hoặc ẩn dấu trang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Hoàn hảo cho các nhà phát triển.
 type: docs
 weight: 10
 url: /vi/net/programming-with-bookmarks/show-hide-bookmarks/
 ---
+## Giới thiệu
 
-Trong bài viết này, chúng ta sẽ khám phá mã nguồn C# ở trên để hiểu cách sử dụng chức năng Hiển thị Ẩn Dấu trang trong thư viện Aspose.Words cho .NET. Tính năng này cho phép bạn hiển thị hoặc ẩn một dấu trang cụ thể trong tài liệu word.
+Bạn có bao giờ thấy mình cần ẩn hoặc hiển thị một số phần nhất định trong tài liệu Word của mình một cách linh hoạt không? Vâng, bạn thật may mắn! Với Aspose.Words for .NET, bạn có thể dễ dàng quản lý khả năng hiển thị nội dung được đánh dấu trong tài liệu của mình. Hướng dẫn này sẽ hướng dẫn bạn quy trình hiển thị và ẩn dấu trang trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ chia nhỏ mã theo từng bước, vì vậy, cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay người mới, bạn sẽ thấy hướng dẫn này dễ làm theo.
 
 ## Điều kiện tiên quyết
 
-- Kiến thức cơ bản về ngôn ngữ C#.
-- Môi trường phát triển .NET có cài đặt thư viện Aspose.Words.
+Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ mình cần:
 
-## Bước 1: Tải tài liệu
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Nếu không, bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Một IDE như Visual Studio.
+3. Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ có lợi.
+4. Tài liệu Word: Tài liệu Word mẫu có dấu trang.
 
- Chúng tôi sử dụng`Document` lớp để tải tài liệu hiện có từ một tệp:
+## Nhập không gian tên
+
+Trước khi bắt đầu với mã, bạn cần nhập các không gian tên cần thiết. Thêm phần sau vào đầu tệp C# của bạn:
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Fields;
+using Aspose.Words.Tables;
+```
+
+## Bước 1: Tải tài liệu của bạn
+
+Trước tiên, bạn cần tải tài liệu Word có chứa dấu trang. Đây là cách bạn có thể làm điều đó:
+
+```csharp
+// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-## Bước 2: Hiển thị hoặc ẩn dấu trang cụ thể
+### Giải trình
 
- Chúng tôi sử dụng`ShowHideBookmarkedContent` chức năng hiển thị hoặc ẩn một dấu trang cụ thể trong tài liệu. Hàm này lấy các tham số của tài liệu, tên của dấu trang và boolean để cho biết nên hiển thị hay ẩn dấu trang:
+- dataDir: Đây là đường dẫn thư mục chứa tài liệu Word của bạn.
+-  Tài liệu doc: Thao tác này khởi tạo một phiên bản mới của`Document` class bằng tệp được chỉ định của bạn.
+
+## Bước 2: Hiển thị hoặc ẩn nội dung được đánh dấu
+
+Tiếp theo, chúng tôi sẽ xác định phương pháp hiển thị hoặc ẩn nội dung được đánh dấu. Đây là phương pháp hoàn chỉnh:
+
+```csharp
+public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
+{
+    Bookmark bm = doc.Range.Bookmarks[bookmarkName];
+
+    DocumentBuilder builder = new DocumentBuilder(doc);
+    builder.MoveToDocumentEnd();
+
+    // {IF "{Dấu trang MERGEFIELD}" = "true" "" ""}
+    Field field = builder.InsertField("IF \"", null);
+    builder.MoveTo(field.Start.NextSibling);
+    builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
+    builder.Write("\" = \"true\" ");
+    builder.Write("\"");
+    builder.Write("\"");
+    builder.Write(" \"\"");
+
+    Node currentNode = field.Start;
+    bool flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.Run)
+            if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
+                flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
+        currentNode = nextNode;
+    }
+
+    Node endNode = bm.BookmarkEnd;
+    flag = true;
+    while (currentNode != null && flag)
+    {
+        if (currentNode.NodeType == NodeType.FieldEnd)
+            flag = false;
+
+        Node nextNode = currentNode.NextSibling;
+
+        bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
+        endNode = currentNode;
+        currentNode = nextNode;
+    }
+
+    doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
+}
+```
+
+### Giải trình
+
+- Bookmark bm: Lấy dấu trang từ tài liệu.
+- Trình tạo DocumentBuilder: Giúp điều hướng và sửa đổi tài liệu.
+- Trường trường: Chèn trường IF để kiểm tra tình trạng của dấu trang.
+- Node currentNode: Duyệt qua các nút để tìm điểm bắt đầu và kết thúc của trường.
+
+## Bước 3: Thực hiện chức năng Hiển thị/Ẩn
+
+ Bây giờ, bạn cần gọi`ShowHideBookmarkedContent` phương thức, chuyển tài liệu, tên dấu trang và cờ hiển thị:
 
 ```csharp
 ShowHideBookmarkedContent(doc, "MyBookmark1", false);
 ```
 
-## Bước 3: Lưu tài liệu đã sửa đổi
+### Giải trình
 
- Chúng tôi sử dụng`Save` phương pháp lưu tài liệu đã sửa đổi vào một tệp:
+- doc: Đối tượng tài liệu của bạn.
+- "MyBookmark1": Tên của bookmark bạn muốn hiển thị/ẩn.
+- false: Cờ hiển thị (true để hiển thị, sai để ẩn).
+
+## Bước 4: Lưu tài liệu của bạn
+
+Cuối cùng, lưu tài liệu đã sửa đổi:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-### Mã nguồn ví dụ cho Hiển thị Ẩn Dấu trang bằng Aspose.Words cho .NET
+### Giải trình
 
-Đây là mã nguồn ví dụ đầy đủ để minh họa việc hiển thị hoặc ẩn một dấu trang cụ thể bằng Aspose.Words cho .NET:
+- dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx": Đường dẫn và tên của tài liệu mới nơi các thay đổi sẽ được lưu.
 
-```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks.docx");
-
-	ShowHideBookmarkedContent(doc, "MyBookmark1", false);
-	
-	doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
-
-```
-
-#### ShowHideBookmarkedMã nguồn nội dung
-
-```csharp
-
-public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool showHide)
-        {
-            Bookmark bm = doc.Range.Bookmarks[bookmarkName];
-
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            builder.MoveToDocumentEnd();
-
-            // {IF "{Dấu trang MERGEFIELD}" = "true" "" ""}
-            Field field = builder.InsertField("IF \"", null);
-            builder.MoveTo(field.Start.NextSibling);
-            builder.InsertField("MERGEFIELD " + bookmarkName + "", null);
-            builder.Write("\" = \"true\" ");
-            builder.Write("\"");
-            builder.Write("\"");
-            builder.Write(" \"\"");
-
-            Node currentNode = field.Start;
-            bool flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.Run)
-                    if (currentNode.ToString(SaveFormat.Text).Trim() == "\"")
-                        flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkStart.ParentNode.InsertBefore(currentNode, bm.BookmarkStart);
-                currentNode = nextNode;
-            }
-
-            Node endNode = bm.BookmarkEnd;
-            flag = true;
-            while (currentNode != null && flag)
-            {
-                if (currentNode.NodeType == NodeType.FieldEnd)
-                    flag = false;
-
-                Node nextNode = currentNode.NextSibling;
-
-                bm.BookmarkEnd.ParentNode.InsertAfter(currentNode, endNode);
-                endNode = currentNode;
-                currentNode = nextNode;
-            }
-
-            doc.MailMerge.Execute(new[] { bookmarkName }, new object[] { showHide });
-        }
-		
-```
 ## Phần kết luận
 
-Trong bài viết này, chúng ta đã khám phá mã nguồn C# để hiểu cách sử dụng tính năng Hiển thị Ẩn Dấu trang của Aspose.Words cho .NET. Chúng tôi đã làm theo hướng dẫn từng bước để hiển thị hoặc ẩn dấu trang cụ thể trong tài liệu.
+Và bạn có nó rồi đấy! Bạn đã học thành công cách hiển thị và ẩn dấu trang trong tài liệu Word bằng Aspose.Words cho .NET. Kỹ thuật này có thể cực kỳ hữu ích để tạo động các tài liệu có nội dung có điều kiện.
 
-### Câu hỏi thường gặp về ẩn dấu trang trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Hỏi: Tôi có thể hiển thị hoặc ẩn nhiều dấu trang trong cùng một tài liệu không?
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện xử lý tài liệu mạnh mẽ cho phép các nhà phát triển tạo, sửa đổi và chuyển đổi tài liệu Word theo chương trình.
 
-Đáp: Có, bạn có thể hiển thị hoặc ẩn nhiều dấu trang trong cùng một tài liệu bằng cách lặp lại bước 2 và 3 cho mỗi dấu trang bạn muốn xử lý.
+### Làm cách nào để có được Aspose.Words cho .NET?
+ Bạn có thể tải xuống Aspose.Words cho .NET từ[đây](https://releases.aspose.com/words/net/). Bản dùng thử miễn phí cũng có sẵn.
 
-#### Hỏi: Mã được cung cấp có hoạt động với các định dạng tài liệu Word khác, chẳng hạn như .doc hoặc .docm không?
+### Tôi có thể sử dụng phương pháp này cho các loại dấu trang khác không?
+Có, phương pháp này có thể được điều chỉnh để quản lý khả năng hiển thị của mọi dấu trang trong tài liệu Word của bạn.
 
-Đáp: Có, mã được cung cấp hoạt động với nhiều định dạng tài liệu Word khác nhau được Aspose.Words hỗ trợ, chẳng hạn như .doc và .docm. Chỉ cần đảm bảo sử dụng đúng tên tệp và đường dẫn khi tải và lưu tài liệu.
+### Điều gì sẽ xảy ra nếu tài liệu của tôi không chứa dấu trang được chỉ định?
+Nếu dấu trang không tồn tại, phương thức sẽ báo lỗi. Đảm bảo dấu trang tồn tại trước khi thử hiển thị/ẩn nó.
 
-#### Hỏi: Làm cách nào tôi có thể hiển thị lại dấu trang bị ẩn?
-
- Đáp: Để hiển thị lại dấu trang bị ẩn, bạn cần sử dụng cùng một`ShowHideBookmarkedContent` hàm truyền giá trị`true` đối với tham số boolean cho biết hiển thị hay ẩn dấu trang.
-
-#### Câu hỏi: Tôi có thể sử dụng các điều kiện để hiển thị hoặc ẩn dấu trang dựa trên giá trị trường hợp nhất trong tài liệu không?
-
- Đáp: Có, bạn có thể sử dụng các điều kiện và hợp nhất các giá trị trường để xác định xem dấu trang sẽ được hiển thị hay ẩn. Bạn có thể tùy chỉnh mã của`ShowHideBookmarkedContent` có tính đến các điều kiện và giá trị thích hợp.
-
-#### Hỏi: Làm cách nào tôi có thể xóa dấu trang trong tài liệu Word bằng Aspose.Words cho .NET?
-
- Trả lời: Để xóa dấu trang trong tài liệu Word bằng Aspose.Words cho .NET, bạn có thể sử dụng`RemoveBookmarks` phương pháp của`Document` lớp học. Đây là một mã mẫu:
-
-```csharp
-doc.RemoveBookmarks("BookmarkName");
-```
+### Làm cách nào tôi có thể nhận được hỗ trợ nếu gặp sự cố?
+ Bạn có thể nhận được hỗ trợ từ cộng đồng Aspose[đây](https://forum.aspose.com/c/words/8).

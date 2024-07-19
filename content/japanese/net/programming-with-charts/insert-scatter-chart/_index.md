@@ -2,43 +2,57 @@
 title: Word 文書に散布図を挿入する
 linktitle: Word 文書に散布図を挿入する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメントに散布図を挿入する方法を学びます。X 座標と Y 座標を使用して系列データを追加します。
+description: Aspose.Words for .NET を使用して Word に散布図を挿入する方法を学びます。視覚的なデータ表現をドキュメントに統合するための簡単な手順です。
 type: docs
 weight: 10
 url: /ja/net/programming-with-charts/insert-scatter-chart/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントに散布図を挿入する方法について説明します。提供されているソース コードでは、グラフを作成し、系列データを追加し、ドキュメントを保存する方法が示されています。
+このチュートリアルでは、Aspose.Words for .NET を利用して散布図を Word 文書に挿入する方法を学習します。散布図は、2 つの変数に基づいてデータ ポイントを効果的に表示できる強力な視覚ツールであり、文書をより魅力的で有益なものにします。
 
-## ステップ1: プロジェクトを設定する
+## 前提条件
 
-次の前提条件を満たしていることを確認してください。
+Aspose.Words for .NET を使用して散布図を作成する前に、次の前提条件を満たしていることを確認してください。
 
-- Aspose.Words for .NET ライブラリがインストールされています。NuGet パッケージ マネージャーを使用してダウンロードし、インストールできます。
-- 出力ドキュメントが保存されるドキュメント ディレクトリ パス。
+1.  Aspose.Words for .NETのインストール: Aspose.Words for .NETを以下からダウンロードしてインストールします。[ここ](https://releases.aspose.com/words/net/).
+   
+2. C# の基礎知識: C# プログラミング言語と .NET フレームワークに精通していると有利です。
 
-## ステップ2: 新しいドキュメントを作成し、グラフを挿入する
+## 名前空間のインポート
 
-新しいを作成します`Document`オブジェクトと`DocumentBuilder`ドキュメントを作成します。
+まず、C# プロジェクトに必要な名前空間をインポートする必要があります。
 
 ```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Saving;
+```
 
+ここで、Aspose.Words for .NET を使用して Word 文書に散布図を挿入するプロセスを詳しく説明します。
+
+## ステップ 1: ドキュメントと DocumentBuilder を初期化する
+
+まず、新しいインスタンスを初期化します。`Document`クラスと`DocumentBuilder`クラスを使用してドキュメントの構築を開始します。
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-次に、`InsertChart`方法の`DocumentBuilder`ドキュメントに散布図を挿入します。
+## ステップ2: 散布図を挿入する
+
+使用`InsertChart`方法の`DocumentBuilder`ドキュメントに散布図を挿入するクラス。
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## ステップ3: グラフに系列データを追加する
+## ステップ3: グラフにデータ系列を追加する
 
-グラフに系列データを追加します。この例では、X 座標と Y 座標の 2 セットを追加します。
+次に、散布図にデータ系列を追加します。この例では、特定のデータ ポイントを含む系列を追加する方法を示します。
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
@@ -46,49 +60,29 @@ chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[]
 
 ## ステップ4: ドキュメントを保存する
 
-最後に、指定されたディレクトリにドキュメントを保存します。`Save`方法の`Document`物体。
+最後に、変更したドキュメントを目的の場所に保存します。`Save`方法の`Document`クラス。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 ```
 
-これで、Aspose.Words for .NET を使用して散布図を挿入する実装が完了しました。
-
-### Aspose.Words for .NET を使用して散布図を挿入するためのサンプル ソース コード 
-
-```csharp
-	//ドキュメントディレクトリへのパス
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[] { 2.7, 3.2, 0.8 });
-	doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
-```
-
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して散布図を Word 文書に挿入する方法を学習しました。ステップ バイ ステップ ガイドに従い、提供されているソース コードを使用することで、新しい文書を作成し、散布図を挿入し、X 座標と Y 座標を含む系列データを追加し、グラフを含む文書を保存できます。
+おめでとうございます! Aspose.Words for .NET を使用して散布図を Word 文書に挿入する方法を学習しました。散布図はデータの関係を視覚化する優れたツールであり、Aspose.Words を使用すると、散布図を文書に簡単に統合して、明瞭性と理解性を高めることができます。
 
-Aspose.Words for .NET は、Word 文書内のグラフを使用した Words Processing 用の包括的な API を提供します。散布図は、2 つの数値変数を使用してデータを視覚化および分析する場合に便利です。Aspose.Words for .NET を使用すると、X 値と Y 値の関係を表す散布図を簡単に作成し、データのパターンや傾向を識別できます。
+## よくある質問
 
-Aspose.Words for .NET を使用すると、散布図を含むドキュメントの生成プロセスを自動化し、手動でのドキュメント作成にかかる時間と労力を節約できます。ライブラリには、散布図を含むさまざまなグラフの種類が用意されており、ニーズに応じてグラフの外観を調整するためのさまざまなカスタマイズ オプションが用意されています。
+### Aspose.Words を使用して散布図の外観をカスタマイズできますか?
+はい、Aspose.Words では、色、軸、ラベルなどのグラフのプロパティを広範囲にカスタマイズできます。
 
-### よくある質問
+### Aspose.Words はさまざまなバージョンの Microsoft Word と互換性がありますか?
+Aspose.Words はさまざまなバージョンの Microsoft Word をサポートし、プラットフォーム間の互換性を保証します。
 
-#### Q1. 散布図とは何ですか？
-散布図は、2 つの数値変数の関係を表示するグラフの一種です。座標グリッド上にプロットされた一連のポイントで構成され、1 つの変数は X 軸に、もう 1 つの変数は Y 軸に示されます。散布図は、2 セットのデータ ポイント間のパターン、相関関係、または傾向を識別するために使用されます。
+### Aspose.Words は他の種類のグラフもサポートしていますか?
+はい、Aspose.Words は、棒グラフ、折れ線グラフ、円グラフなど、さまざまな種類のグラフをサポートしています。
 
-#### Q2. 散布図に複数の系列を追加できますか?
-はい、Aspose.Words for .NET を使用して、散布図に複数のシリーズを追加できます。各シリーズは、それぞれの X 座標と Y 座標を持つデータ ポイントのセットを表します。複数のシリーズを追加することで、同じ散布図内でさまざまなデータセットを比較および分析し、データを包括的に表示できます。
+### 散布図のデータをプログラムで動的に更新できますか?
+はい、Aspose.Words API 呼び出しを使用してグラフ データを動的に更新できます。
 
-#### Q3. 散布図の外観をカスタマイズできますか?
-はい、Aspose.Words for .NET を使用すると、散布図の外観のさまざまな側面をカスタマイズできます。系列の色、マーカーの形状、軸ラベル、グラフ領域の書式設定などのプロパティを変更できます。ライブラリには、グラフの視覚要素を制御し、ニーズに合わせてカスタマイズされた外観を作成するための豊富な API セットが用意されています。
-
-#### Q4. 散布図を挿入したドキュメントを別の形式で保存できますか?
-はい、Aspose.Words for .NETでは、散布図を挿入したドキュメントをDOCX、PDF、HTMLなどのさまざまな形式で保存できます。要件に応じて必要な出力形式を選択し、`Save`方法の`Document`オブジェクトをクリックしてドキュメントを保存します。挿入された散布図は保存されたドキュメントに保存されます。
-
-#### Q5. 散布図を挿入した後で、データや外観を変更できますか?
-はい、ドキュメントに散布図を挿入した後、Aspose.Words for .NET が提供する API を使用してデータと外観を変更できます。新しい X 座標と Y 座標で系列データを更新したり、マーカーの形状と色を変更したり、軸のプロパティをカスタマイズしたり、書式設定オプションを適用したりして、Word ドキュメントに動的でインタラクティブなグラフを作成できます。
+### Aspose.Words に関するさらなる支援やサポートはどこで受けられますか?
+さらに詳しいサポートについては、[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8).

@@ -15,7 +15,7 @@ W tym przykładzie pokażemy, jak podzielić dokument programu Word na osobne se
 Na początek musimy określić katalog Twojego dokumentu i załadować dokument do obiektu Document. Oto jak:
 
 ```csharp
-// Ścieżka do katalogu dokumentów.
+//Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
@@ -74,7 +74,7 @@ Teraz możesz łatwo pracować z określonymi sekcjami.
 
 W tym samouczku omówiliśmy funkcję Podziel dokument według sekcji w Aspose.Words dla .NET. Dowiedzieliśmy się, jak podzielić dokument programu Word na osobne sekcje, tworząc osobne dokumenty dla każdej sekcji. Ładując dokument, przeglądając każdą sekcję i zapisując je jako osobne dokumenty, mogliśmy efektywnie pracować z określonymi sekcjami.
 
-Korzystanie z funkcji Podziel dokument według sekcji może być korzystne, gdy trzeba manipulować lub analizować określone części dokumentu, takie jak rozdziały, sekcje lub inne podziały. Aspose.Words dla .NET zapewnia niezawodne i proste rozwiązanie do obsługi separacji sekcji, umożliwiające wydajne przetwarzanie dokumentów.
+Korzystanie z funkcji Podziel dokument według sekcji może być przydatne, gdy trzeba manipulować lub analizować określone części dokumentu, takie jak rozdziały, sekcje lub inne podziały. Aspose.Words dla .NET zapewnia niezawodne i proste rozwiązanie do obsługi separacji sekcji, umożliwiające wydajne przetwarzanie dokumentów.
 
 Zachęcamy do zapoznania się z innymi zaawansowanymi funkcjami oferowanymi przez Aspose.Words dla .NET, aby zwiększyć możliwości przetwarzania dokumentów i usprawnić przepływ pracy.
 
@@ -84,7 +84,7 @@ Zachęcamy do zapoznania się z innymi zaawansowanymi funkcjami oferowanymi prze
 Tak, możesz dostosować kryteria podziału zgodnie ze swoimi konkretnymi potrzebami. Oprócz podziałów sekcji możesz dzielić dokument na podstawie innych elementów, takich jak nagłówki, zakładki lub określona treść, korzystając z różnych funkcji i metod udostępnianych przez Aspose.Words dla .NET.
 
 #### P2: Czy możliwe jest ponowne połączenie sekcji w jeden dokument?
- Tak, możesz scalić oddzielne sekcje z powrotem w jeden dokument, importując i łącząc sekcje z wielu dokumentów za pomocą`ImportNode` I`Sections.Add` metody. Dzięki temu można odwrócić proces podziału i zrekonstruować oryginalny dokument.
+ Tak, możesz scalić oddzielne sekcje z powrotem w jeden dokument, importując i łącząc sekcje z wielu dokumentów za pomocą`ImportNode`I`Sections.Add` metody. Dzięki temu można odwrócić proces podziału i zrekonstruować oryginalny dokument.
 
 #### P3: Czy istnieją jakieś ograniczenia dotyczące liczby sekcji, które można podzielić za pomocą funkcji „Według sekcji”?
 Liczba sekcji, które można podzielić za pomocą funkcji „Według sekcji” zależy od możliwości Aspose.Words dla .NET i dostępnych zasobów systemowych. Ogólnie rzecz biorąc, obsługuje dzielenie dokumentów z dużą liczbą sekcji, ale wyjątkowo długie dokumenty lub bardzo duża liczba sekcji mogą wymagać dodatkowych zasobów systemowych i czasu przetwarzania.

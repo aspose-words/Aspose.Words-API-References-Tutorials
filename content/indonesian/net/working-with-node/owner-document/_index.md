@@ -34,7 +34,7 @@ Paragraph para = new Paragraph(doc);
 ```
 
 ## Langkah 4: Periksa node induk dan dokumen pemilik
- Sekarang kita telah membuat simpul paragraf, kita dapat memeriksa apakah simpul tersebut mempunyai simpul induk dan apakah dokumen pemiliknya sama dengan`doc`.
+Sekarang kita telah membuat simpul paragraf, kita dapat memeriksa apakah simpul tersebut mempunyai simpul induk dan apakah dokumen pemiliknya sama dengan`doc`.
 
 ```csharp
 Console.WriteLine("The paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,4 +107,4 @@ J: Dalam kebanyakan kasus, pemilik dokumen dari sebuah node ditentukan saat node
 
 #### T: Bagaimana cara mengakses node dokumen pemilik?
 
- J: Untuk mengakses node dalam dokumen kepemilikan, Anda dapat menggunakan metode dan properti yang disediakan oleh API XML yang digunakan di lingkungan Node.js Anda. Misalnya, Anda dapat menggunakan metode seperti`getElementsByTagName` atau`querySelector` untuk memilih node tertentu dalam dokumen.
+J: Untuk mengakses node dalam dokumen kepemilikan, Anda dapat menggunakan metode dan properti yang disediakan oleh API XML yang digunakan di lingkungan Node.js Anda. Misalnya, Anda dapat menggunakan metode seperti`getElementsByTagName` atau`querySelector` untuk memilih node tertentu dalam dokumen.

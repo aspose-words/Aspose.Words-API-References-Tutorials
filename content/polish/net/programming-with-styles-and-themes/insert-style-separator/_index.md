@@ -106,7 +106,7 @@ Aby skonfigurować środowisko, musisz upewnić się, że masz zainstalowane i s
 
 #### Jak zastosować różne style do różnych sekcji tekstu?
 
- Możesz zastosować różne style do różnych sekcji tekstu, ustawiając opcję`ParagraphFormat.StyleName` własność`DocumentBuilder`obiekt. Przed napisaniem tekstu możesz ustawić nazwę stylu na żądany styl, a następujący po nim tekst zostanie odpowiednio sformatowany.
+Możesz zastosować różne style do różnych sekcji tekstu, ustawiając opcję`ParagraphFormat.StyleName` własność`DocumentBuilder` obiekt. Przed napisaniem tekstu możesz ustawić nazwę stylu na żądany styl, a następujący po nim tekst zostanie odpowiednio sformatowany.
 
 #### Czy mogę zapisać dokument w różnych formatach?
 

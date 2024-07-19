@@ -17,7 +17,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 - Grundkenntnisse in C#: Die Vertrautheit mit der C#-Programmierung hilft Ihnen, die Schritte zu verstehen und reibungslos umzusetzen.
 -  Aspose.Words für .NET-Bibliothek: Laden Sie Aspose.Words für .NET herunter und installieren Sie es von der[Download-Link](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Eine geeignete Umgebung wie Visual Studio zum Schreiben und Ausführen Ihres Codes.
--  Beispieldokument: Ein Beispieldokument (z. B.`Rendering.docx`), um die Schriftarteinstellungen anzuwenden.
+- Beispieldokument: Ein Beispieldokument (z. B.`Rendering.docx`), um die Schriftarteinstellungen anzuwenden.
 
 ## Namespaces importieren
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Fonts;
 ```
 
-## Schritt 1: Definieren Sie das Dokumentverzeichnis
+## Schritt 1: Dokumentverzeichnis definieren
 
 Zuerst müssen Sie das Verzeichnis angeben, in dem Ihr Dokument gespeichert ist. Dies erleichtert das Auffinden des Dokuments, mit dem Sie arbeiten möchten.
 
@@ -55,7 +55,7 @@ In diesem Beispiel:
 
 ## Schritt 3: Laden Sie das Dokument
 
-Nachdem Sie Ihre Schriftquellen konfiguriert haben, besteht der nächste Schritt darin, Ihr Dokument in eine Aspose.Words-Datei zu laden.`Document` Objekt. Dadurch können Sie das Dokument bearbeiten und ggf. speichern.
+ Nachdem Sie Ihre Schriftquellen konfiguriert haben, besteht der nächste Schritt darin, Ihr Dokument in eine Aspose.Words-Datei zu laden.`Document` Objekt. Dadurch können Sie das Dokument bearbeiten und ggf. speichern.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -79,7 +79,7 @@ Herzlichen Glückwunsch! Sie beherrschen die Grundlagen der Verwaltung von Schri
 
 ### F1: Kann ich Schriftarten aus mehreren benutzerdefinierten Ordnern verwenden?
 
- Ja, Sie können mehrere angeben`FolderFontSource`Instanzen innerhalb der`SetFontsSources` Methode zum Einbinden von Schriftarten aus verschiedenen Ordnern.
+ Ja, Sie können mehrere angeben`FolderFontSource` Instanzen innerhalb der`SetFontsSources` Methode zum Einbinden von Schriftarten aus verschiedenen Ordnern.
 
 ### F2: Wie erhalte ich eine kostenlose Testversion von Aspose.Words für .NET?
 

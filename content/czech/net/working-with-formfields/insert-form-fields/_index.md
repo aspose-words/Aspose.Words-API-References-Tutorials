@@ -14,7 +14,7 @@ V tomto podrobném tutoriálu vás provedeme tím, jak vložit pole formuláře,
 
 ## Krok 1: Inicializace objektů Document a DocumentBuilder
 
- Nejprve inicializujte`Document` a`DocumentBuilder` objekty:
+ Nejprve inicializujte`Document`a`DocumentBuilder` objekty:
 
 ```csharp
 Document doc = new Document();

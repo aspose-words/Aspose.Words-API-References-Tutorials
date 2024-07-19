@@ -16,7 +16,7 @@ url: /zh/java/using-document-elements/using-hyphenation/
 
 ## 2. 设置你的环境
 
-在我们深入研究在 Aspose.Words for Java 中使用连字符之前，您需要设置开发环境。确保您具有以下内容：
+在我们深入研究在 Aspose.Words for Java 中使用连字符之前，您需要设置开发环境。请确保您具有以下内容：
 
 - 已安装 Java 开发工具包 (JDK)
 - Aspose.Words for Java 库

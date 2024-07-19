@@ -2,34 +2,58 @@
 title: Formát Počet Datových štítků V Grafu
 linktitle: Formát Počet Datových štítků V Grafu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se formátovat počet štítků dat v grafu pomocí Aspose.Words for .NET. Snadno přizpůsobte formáty čísel pro datové štítky.
+description: Pomocí tohoto podrobného průvodce se dozvíte, jak formátovat štítky dat v grafech pomocí Aspose.Words for .NET. Vylepšete své dokumenty Word bez námahy.
 type: docs
 weight: 10
 url: /cs/net/programming-with-charts/format-number-of-data-label/
 ---
+## Úvod
 
-Tento kurz vysvětluje, jak používat Aspose.Words pro .NET k formátování počtu štítků dat v grafu. Poskytnutý zdrojový kód ukazuje, jak vytvořit graf, přidat data řady a přizpůsobit formát čísel štítků dat.
+Vytváření poutavých a informativních dokumentů často zahrnuje zahrnutí grafů s dobře formátovanými datovými štítky. Pokud jste vývojář .NET a chcete vylepšit své dokumenty aplikace Word pomocí sofistikovaných grafů, Aspose.Words for .NET je fantastická knihovna, která vám toho pomůže dosáhnout. Tento tutoriál vás krok za krokem provede procesem formátování číselných štítků v grafu pomocí Aspose.Words for .NET.
 
-## Krok 1: Nastavte projekt
+## Předpoklady
 
-Ujistěte se, že máte následující předpoklady:
+Než se ponoříte do kódu, musíte mít splněno několik předpokladů:
 
-- Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout pomocí správce balíčků NuGet k instalaci.
-- Cesta k adresáři dokumentu, kam bude výstupní dokument uložen.
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Měli byste mít nastavené vývojové prostředí .NET. Visual Studio je vysoce doporučeno.
+- Základní znalost C#: Znalost programování v C# je nezbytná, protože tento tutoriál zahrnuje psaní a porozumění kódu C#.
+-  Dočasná licence: Chcete-li používat Aspose.Words bez jakýchkoli omezení, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 
-## Krok 2: Vytvořte nový dokument a vložte graf
+Nyní se pojďme ponořit do procesu formátování číselných štítků v grafu krok za krokem.
 
- Vytvoř nový`Document` objekt a a`DocumentBuilder` k vytvoření dokumentu.
+## Importovat jmenné prostory
+
+Nejprve musíme importovat potřebné jmenné prostory pro práci s Aspose.Words pro .NET. Přidejte následující řádky na začátek souboru C#:
 
 ```csharp
-// Cesta k vašemu adresáři dokumentů
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
 
+## Krok 1: Nastavte adresář dokumentů
+
+Než budete moci začít manipulovat s dokumentem aplikace Word, musíte určit adresář, do kterého bude dokument uložen. To je nezbytné pro pozdější operaci ukládání.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů.
+
+## Krok 2: Inicializujte Document a DocumentBuilder
+
+ Dalším krokem je inicializace nového`Document` a a`DocumentBuilder` . The`DocumentBuilder` je pomocná třída, která nám umožňuje sestavit obsah dokumentu.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Dále vložte graf do dokumentu pomocí`InsertChart` metoda`DocumentBuilder`. V tomto příkladu vložíme spojnicový graf.
+## Krok 3: Vložte graf do dokumentu
+
+ Nyní vložíme graf do dokumentu pomocí`DocumentBuilder`. V tomto tutoriálu použijeme jako příklad spojnicový graf.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -37,94 +61,74 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-## Krok 3: Přidejte do grafu data řady
+Zde vložíme spojnicový graf s konkrétní šířkou a výškou a nastavíme název grafu.
 
-Přidejte do grafu data řady. V tomto příkladu přidáme tři kategorie a jejich odpovídající hodnoty.
+## Krok 4: Vymažte výchozí sérii a přidejte novou sérii
+
+Ve výchozím nastavení bude mít graf nějaké předem vygenerované řady. Musíme je vymazat a přidat vlastní řadu s konkrétními datovými body.
 
 ```csharp
+// Smazat výchozí vygenerované série.
 chart.Series.Clear();
+
+// Přidejte novou řadu s vlastními datovými body.
 ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-    new string[] { "Category 1", "Category 2", "Category 3" }, 
-    new double[] { 2.5, 1.5, 3.5 });
-series1.HasDataLabels = true;
+	new string[] { "Category 1", "Category 2", "Category 3" }, 
+	new double[] { 2.5, 1.5, 3.5 });
 ```
 
-## Krok 4: Přizpůsobte formát čísel štítků dat
+## Krok 5: Povolte štítky dat
 
- Chcete-li formátovat počet datových štítků, přejděte na`DataLabels` kolekce spojená se seriálem.
+Chcete-li zobrazit štítky dat v grafu, musíme je povolit pro naši řadu.
 
 ```csharp
+series1.HasDataLabels = true;
 series1.DataLabels.ShowValue = true;
-series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
 ```
 
-V tomto příkladu jsme pro každý datový štítek nastavili různé formáty čísel. První datový štítek je formátován jako měna, druhý jako datum a třetí jako procento.
+## Krok 6: Formátování datových štítků
 
-## Krok 5: Uložte dokument
+Jádrem tohoto kurzu je formátování datových štítků. Na každý datový štítek můžeme použít různé formáty čísel jednotlivě.
 
- Nakonec uložte dokument do určeného adresáře pomocí`Save` metoda`Document` objekt.
+```csharp
+series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Formát měny
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Datový formát
+series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Formát procent
+```
+
+ Navíc můžete propojit formát datového štítku se zdrojovou buňkou. Po propojení se`NumberFormat` bude resetováno na obecné a zděděno ze zdrojové buňky.
+
+```csharp
+series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
+```
+
+## Krok 7: Uložte dokument
+
+Nakonec dokument uložte do určeného adresáře.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-Tím je dokončena implementace formátování počtu štítků dat v grafu pomocí Aspose.Words for .NET.
-
-### Příklad zdrojového kódu pro štítek Format Number Of Data pomocí Aspose.Words for .NET 
-
-```csharp
-	// Cesta k vašemu adresáři dokumentů
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Title.Text = "Data Labels With Different Number Format";
-	// Smazat výchozí vygenerované série.
-	chart.Series.Clear();
-	ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
-		new string[] { "Category 1", "Category 2", "Category 3" }, 
-		new double[] { 2.5, 1.5, 3.5 });
-	series1.HasDataLabels = true;
-	series1.DataLabels.ShowValue = true;
-	series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00";
-	series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy";
-	series1.DataLabels[2].NumberFormat.FormatCode = "0.00%";
-	// Nebo můžete nastavit kód formátu tak, aby byl propojen se zdrojovou buňkou,
-	// tomto případě bude NumberFormat resetován na obecný a zděděn ze zdrojové buňky.
-	series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
-	doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
-```
+Tím se dokument uloží se zadaným názvem a zajistí se zachování grafu s formátovanými datovými štítky.
 
 ## Závěr
 
-V tomto tutoriálu jste se naučili, jak formátovat počet datových štítků v grafu pomocí Aspose.Words for .NET. Podle podrobného průvodce a pomocí poskytnutého zdrojového kódu můžete vytvořit graf, přidat data sérií a upravit číselný formát štítků dat podle vašich požadavků.
+Formátování štítků dat v grafu pomocí Aspose.Words for .NET může výrazně zlepšit čitelnost a profesionalitu vašich dokumentů aplikace Word. Podle tohoto podrobného průvodce byste nyní měli být schopni vytvořit graf, přidat datové řady a formátovat štítky dat tak, aby vyhovovaly vašim potřebám. Aspose.Words for .NET je výkonný nástroj, který umožňuje rozsáhlé přizpůsobení a automatizaci dokumentů aplikace Word, což z něj činí neocenitelný přínos pro vývojáře .NET.
 
- Aspose.Words for .NET poskytuje komplexní rozhraní API pro zpracování textu s grafy v dokumentech aplikace Word, což vám umožňuje manipulovat s různými aspekty grafu, včetně štítků dat. Přístupem k`DataLabels` kolekce spojené s řadou, můžete přizpůsobit formát čísel jednotlivých štítků dat.
+## FAQ
 
-Rozhraní API umožňuje ovládat zobrazení hodnot, nastavit různé formáty čísel pro každý štítek dat a propojit formát čísla se zdrojovou buňkou. Tato flexibilita vám umožňuje prezentovat číselná data v grafech s požadovaným formátováním, jako jsou symboly měn, formáty data a procentuální hodnoty.
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro vytváření, manipulaci a konverzi dokumentů Wordu programově pomocí C#.
 
-Pomocí Aspose.Words for .NET můžete do svých aplikací .NET začlenit výkonné funkce pro vytváření grafů a vytvářet profesionálně vypadající dokumenty s plně formátovanými grafy a datovými štítky.
+### Mohu pomocí Aspose.Words for .NET formátovat jiné typy grafů?
+Ano, Aspose.Words for .NET podporuje různé typy grafů, včetně pruhových, sloupcových, výsečových a dalších.
 
-### Nejčastější dotazy
+### Jak získám dočasnou licenci pro Aspose.Words for .NET?
+ Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
 
-#### Q1. Co je Aspose.Words for .NET?
-Aspose.Words for .NET je knihovna pro zpracování dokumentů s bohatými funkcemi, která umožňuje vývojářům vytvářet, manipulovat a ukládat dokumenty Word programově v aplikacích .NET. Poskytuje širokou škálu funkcí pro textové zpracování s prvky dokumentu, včetně grafů a datových štítků.
+### Je možné propojit datové štítky se zdrojovými buňkami v Excelu?
+Ano, můžete propojit datové štítky se zdrojovými buňkami, což umožňuje zdědění číselného formátu ze zdrojové buňky.
 
-#### Q2. Jak mohu nainstalovat Aspose.Words pro .NET?
-Aspose.Words for .NET můžete nainstalovat stažením pomocí správce balíčků NuGet v sadě Visual Studio. Jednoduše vyhledejte „Aspose.Words“ ve správci balíčků NuGet a nainstalujte jej do svého projektu.
-
-#### Q3. Mohu formátovat další aspekty grafu pomocí Aspose.Words for .NET?
-Ano, Aspose.Words for .NET poskytuje rozsáhlé možnosti pro formátování různých aspektů grafu. Kromě popisků dat můžete přizpůsobit typ grafu, data řady, vlastnosti os, legendu, nadpis, oblast vykreslování a mnoho dalších prvků grafu. Rozhraní API nabízí jemnou kontrolu nad vzhledem a formátováním grafu.
-
-#### Q4. Mohu použít různé formáty čísel na různé štítky dat ve stejné řadě?
-Ano, Aspose.Words for .NET umožňuje použít různé formáty čísel na jednotlivé štítky dat v rámci stejné řady. Přístupem k`DataLabels` kolekce přidružená k sérii, můžete nastavit`FormatCode` vlastnost každého datového štítku k určení požadovaného formátu čísla. To vám umožní prezentovat číselné hodnoty v různých formátech v rámci stejného grafu.
-
-#### Q5. Mohu pro datové štítky použít vlastní číselné formáty?
- Ano, Aspose.Words for .NET podporuje vlastní číselné formáty pro štítky dat. Požadovaný formát čísla můžete určit nastavením`FormatCode` vlastnost datového štítku na kód vlastního formátu. To vám dává flexibilitu při použití široké škály formátů čísel, jako jsou symboly měn, formáty data, procentuální hodnoty a další.
-
-#### Q6. Mohu uložit graf s formátovanými datovými štítky v různých formátech?
-Ano, Aspose.Words for .NET umožňuje uložit dokument obsahující graf s formátovanými datovými štítky v různých formátech, jako jsou DOCX, PDF, HTML a další. Můžete si vybrat vhodný formát na základě vašich požadavků a použít jej`Save` metoda`Document` objekt pro uložení dokumentu. Formátované datové štítky zůstanou v uloženém dokumentu zachovány.
+### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?
+ Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).

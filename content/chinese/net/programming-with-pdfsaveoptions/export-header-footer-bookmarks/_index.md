@@ -28,7 +28,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## 步骤 3：配置保存为 PDF 选项
+## 步骤 3：配置另存为 PDF 选项
 
 要导出页眉和页脚书签，我们需要配置`PdfSaveOptions`对象。在此示例中，我们将默认书签大纲级别设置为 1，将页眉和页脚书签导出模式设置为“First”。
 

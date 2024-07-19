@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## 3단계: 문서 로드
 
-이제 비교하려는 문서를 로드할 시간입니다. 이러한 문서에 대한 경로가 필요합니다. 두 개의 문서가 있다고 가정해 보겠습니다.`DocumentA.docx` 그리고`DocumentB.docx`.
+이제 비교하려는 문서를 로드할 시간입니다. 이러한 문서에 대한 경로가 필요합니다. 두 개의 문서가 있다고 가정해 보겠습니다.`DocumentA.docx`그리고`DocumentB.docx`.
 
 ```csharp
 // 문서 디렉터리의 경로입니다.

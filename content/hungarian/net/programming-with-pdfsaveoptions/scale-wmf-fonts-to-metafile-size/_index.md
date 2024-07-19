@@ -2,13 +2,13 @@
 title: Csökkentse a PDF méretét a Wmf betűtípusok átméretezésével metafájl méretre
 linktitle: Csökkentse a PDF méretét a Wmf betűtípusok átméretezésével metafájl méretre
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre a PDF méretének csökkentéséhez wmf-betűtípusok átméretezésével metafájl méretre, ha az Aspose.Words for .NET segítségével PDF-be konvertál.
+description: Útmutató lépésről lépésre a PDF méretének csökkentéséhez wmf betűtípusok átméretezésével metafájl méretre, ha az Aspose.Words for .NET segítségével PDF formátumba konvertál.
 type: docs
 weight: 10
 url: /hu/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
 
-Ez a cikk lépésről lépésre ismerteti, hogyan csökkentheti a pdf méretét wmf betűtípusok metafájlméretre skálázásával az Aspose.Words for .NET segítségével. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megtudhatja, hogyan engedélyezheti vagy tilthatja le a WMF betűtípus-méretezést PDF-formátumba konvertálásakor.
+Ez a cikk lépésről lépésre ismerteti, hogyan csökkentheti a pdf méretét wmf betűtípusok metafájlméretre skálázásával az Aspose.Words for .NET segítségével. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megtudhatja, hogyan engedélyezheti vagy tilthatja le a WMF-betűméretezést PDF-formátumba konvertáláskor.
 
 Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
 

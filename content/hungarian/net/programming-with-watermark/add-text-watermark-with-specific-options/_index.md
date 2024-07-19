@@ -20,7 +20,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: A dokumentum betöltése
 
-Egy meglévő dokumentumot töltünk be a dokumentum elérési útjával.
+Egy meglévő dokumentumot töltünk be a dokumentum elérési útját használva.
 
 ```csharp
 Document doc = new Document(MyDir + "Document.docx");

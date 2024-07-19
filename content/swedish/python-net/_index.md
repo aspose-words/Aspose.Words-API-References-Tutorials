@@ -17,7 +17,7 @@ Utforska kraften i Python Document API med Aspose.Words tutorials. Utvecklare ko
 
 Aspose.Words tutorials för Python vägleder utvecklare i att automatisera arbetsflöden för dokumentbearbetning. Lär dig att skapa dynamiska dokument från mallar, utföra kopplingsoperationer och hantera avancerade dokumentmanipulationer. Öka produktiviteten och effektiviteten i dokumentbearbetningsuppgifter.
 
-## Lyft Word-dokumentbehandling med Python
+## Höj Word-dokumentbehandling med Python
 
 Bemästra orddokumentbehandling med Aspose.Words för Python. Handledningar erbjuder praktiska exempel och steg-för-steg-instruktioner för att skapa professionella dokument. Omfamna Aspose.Words tutorials för att utnyttja den fulla potentialen hos Python Document API för sömlös dokumenthantering och bearbetning.
 

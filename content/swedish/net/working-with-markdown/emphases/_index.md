@@ -113,7 +113,7 @@ S: För att markera text med Markdown, omge bara texten med lämpliga symboler. 
 
 #### F: Kan vi kombinera olika höjdpunkter i samma text?
 
- S: Ja, det är möjligt att kombinera olika höjdpunkter i samma text. Du kan till exempel göra ett ord i fetstil och kursiv stil genom att använda båda`**` och`*` runt ordet.
+ S: Ja, det är möjligt att kombinera olika höjdpunkter i samma text. Du kan till exempel göra ett ord i fetstil och kursiv stil genom att använda båda`**`och`*` runt ordet.
 
 #### F: Vilka framhävningsalternativ finns i Markdown?
 

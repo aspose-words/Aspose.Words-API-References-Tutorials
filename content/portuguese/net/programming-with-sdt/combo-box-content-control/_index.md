@@ -17,7 +17,7 @@ Para seguir este tutorial, você precisa ter o seguinte:
 - Conhecimento básico de C# e processamento de palavras com documentos Word.
 
 ## Etapa 1: configurar o diretório de documentos
- Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório onde você deseja salvar o documento.
+ Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real para o diretório onde você deseja salvar o documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Etapa 3: adicionar itens à caixa de combinação
- Adicione itens à caixa de combinação usando o`ListItems` propriedade do`StructuredDocumentTag` Cada item é representado por um`SdtListItem` objeto, que recebe um texto de exibição e um valor. Neste exemplo, adicionamos três itens à caixa de combinação.
+ Adicione itens à caixa de combinação usando o`ListItems` propriedade do`StructuredDocumentTag` . Cada item é representado por um`SdtListItem` objeto, que recebe um texto de exibição e um valor. Neste exemplo, adicionamos três itens à caixa de combinação.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Qui usiamo una condizione per verificare se l'array è di tipo float. Se è così, stampiamo il file`RelativeHorizontalAlignment` E`RelativeVerticalAlignment` proprietà per ottenere il relativo allineamento orizzontale e verticale della tabella. Altrimenti stampiamo il file`Alignment` proprietà per ottenere l'allineamento dell'array.
+ Qui usiamo una condizione per verificare se l'array è di tipo float. Se è così, stampiamo il file`RelativeHorizontalAlignment`E`RelativeVerticalAlignment` proprietà per ottenere il relativo allineamento orizzontale e verticale della tabella. Altrimenti stampiamo il file`Alignment` proprietà per ottenere l'allineamento dell'array.
 
 ### Codice sorgente di esempio per Ottieni posizione tabella utilizzando Aspose.Words per .NET 
 

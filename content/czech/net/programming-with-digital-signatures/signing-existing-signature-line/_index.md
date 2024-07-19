@@ -2,120 +2,108 @@
 title: Podepisování existujícího řádku podpisu v dokumentu aplikace Word
 linktitle: Podepisování existujícího řádku podpisu v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se, jak podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Ideální pro vývojáře.
 type: docs
 weight: 10
 url: /cs/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
-V tomto tutoriálu vás provedeme kroky k použití funkce podpisu existujícího řádku podpisu s Aspose.Words pro .NET. Tato funkce umožňuje digitálně podepsat řádek podpisu, který se již nachází v dokumentu aplikace Word. Postupujte podle následujících kroků:
+## Úvod
 
-## Krok 1: Načtení dokumentu a přístup k řádku podpisu
+Nazdárek! Stalo se vám někdy, že jste potřebovali podepsat digitální dokument, ale bylo vám to trochu nepříjemné? Máte štěstí, protože dnes se ponoříme do toho, jak můžete bez námahy podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento tutoriál vás provede procesem krok za krokem a zajistí, že tento úkol zvládnete během okamžiku.
 
-Začněte nahráním dokumentu obsahujícího existující řádek podpisu:
+## Předpoklady
+
+Než se ponoříme do naprostých detailů, ujistěte se, že máme vše, co potřebujeme:
+
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s C#.
+3. Dokument a certifikát: Dokument aplikace Word s řádkem podpisu a digitálním certifikátem (soubor PFX).
+4. Základní znalost C#: Výhodou bude znalost programování v C#.
+
+## Importovat jmenné prostory
+
+Než budete moci používat třídy a metody z Aspose.Words, musíte importovat potřebné jmenné prostory. Zde je úryvek požadovaných importů:
+
+```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.DigitalSignatures;
+```
+
+## Krok 1: Vložte svůj dokument
+
+Nejprve musíte načíst dokument aplikace Word, který obsahuje řádek podpisu. Tento krok je zásadní, protože vytváří základ pro celý proces.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Signature line.docx");
-
-SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
-## Krok 2: Nastavení možností podpisu
+## Krok 2: Vstupte na Signature Line
 
-Vytvořte instanci třídy SignOptions a nastavte možnosti podpisu, včetně ID řádku podpisu a obrázku řádku podpisu:
+Nyní, když máme náš dokument načtený, dalším krokem je najít a otevřít řádek podpisu v dokumentu.
+
+```csharp
+SignatureLine signatureLine = ((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
+```
+
+## Krok 3: Nastavte možnosti přihlášení
+
+Nastavení možností označení je zásadní. To zahrnuje zadání ID řádku podpisu a poskytnutí obrázku, který bude použit jako podpis.
 
 ```csharp
 SignOptions signOptions = new SignOptions
 {
-SignatureLineId = signatureLine.Id,
-SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
+    SignatureLineId = signatureLine.Id,
+    SignatureLineImage = File.ReadAllBytes("YOUR IMAGE DIRECTORY" + "signature_image.emf")
 };
 ```
 
-Ujistěte se, že jste zadali správnou cestu k obrazu podpisového řádku.
+## Krok 4: Vytvořte držitele certifikátu
 
-## Krok 3: Načtení certifikátu
-
-Začněte načtením podpisového certifikátu pomocí třídy CertificateHolder:
+Chcete-li dokument digitálně podepsat, potřebujete digitální certifikát. Zde je návod, jak vytvořit držitele certifikátu ze souboru PFX.
 
 ```csharp
-CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
+CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "your_password");
 ```
 
-Ujistěte se, že jste zadali správnou cestu k certifikátu a související heslo.
+## Krok 5: Podepište dokument
 
-## Krok 4: Podepsání stávajícího podpisového řádku
-
-Pomocí třídy DigitalSignatureUtil podepište existující řádek podpisu:
+Nyní zkombinujeme všechny komponenty, abychom dokument podepsali. Tady se děje kouzlo!
 
 ```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-	dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
+DigitalSignatureUtil.Sign(
+    dataDir + "Digitally signed.docx",
+    dataDir + "Signature line.docx",
+    certHolder,
+    signOptions
+);
 ```
-
-Nezapomeňte zadat správné cesty pro zdrojový dokument, podepsaný dokument a certifikát.
-
-### Příklad zdrojového kódu pro podepisování existujícího podpisového řádku pomocí Aspose.Words pro .NET
-
-Zde je úplný zdrojový kód pro podepsání existujícího řádku podpisu pomocí Aspose.Words pro .NET:
-
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Signature line.docx");
-	
-	SignatureLine signatureLine =
-		((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
-
-	SignOptions signOptions = new SignOptions
-	{
-		SignatureLineId = signatureLine.Id,
-		SignatureLineImage = File.ReadAllBytes(ImagesDir + "Enhanced Windows MetaFile.emf")
-	};
-
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
-		dataDir + "SignDocuments.SigningExistingSignatureLine.docx", certHolder, signOptions);
-	
-
-```
-
-Pomocí následujících kroků můžete snadno podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
 ## Závěr
 
-tomto tutoriálu jsme se naučili, jak podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle uvedených kroků můžete snadno načíst dokument, získat přístup k existujícímu řádku podpisu, nastavit možnosti podepisování a podepsat dokument. Možnost podepsat existující řádek podpisu poskytuje pohodlný způsob, jak přidat digitální podpisy do předdefinovaných oblastí ve vašich dokumentech aplikace Word, čímž je zajištěna integrita dokumentu a ověřování. Aspose.Words for .NET nabízí výkonné rozhraní API pro zpracování textu s digitálními podpisy, které vám umožní přizpůsobit proces podepisování a zvýšit zabezpečení vašich dokumentů aplikace Word.
+A tady to máte! Úspěšně jste podepsali existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Není příliš tvrdý, že? Pomocí těchto kroků nyní můžete digitálně podepisovat dokumenty a přidat tak další vrstvu autenticity a profesionality. Takže až vám příště někdo pošle dokument k podpisu, budete přesně vědět, co máte dělat!
 
-### FAQ
+## FAQ
 
-#### Otázka: Co je existující řádek podpisu v dokumentu aplikace Word?
+### Co je Aspose.Words for .NET?
 
-Odpověď: Existující řádek podpisu v dokumentu aplikace Word je předdefinovaná oblast, kam lze umístit podpis. Obvykle je reprezentován tvarem nebo objektem v dokumentu a slouží jako vyhrazený prostor pro podepisující osobu, aby mohl přidat svůj digitální podpis.
+Aspose.Words for .NET je výkonná knihovna pro práci s dokumenty Wordu v aplikacích .NET. Umožňuje vytvářet, upravovat a převádět dokumenty aplikace Word programově.
 
-#### Otázka: Jak mohu podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET?
+### Kde mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
 
-Odpověď: Chcete-li podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete postupovat takto:
-1.  Vložte dokument pomocí`Document` třídy a zadejte cestu k souboru dokumentu.
-2.  Zpřístupněte existující řádek podpisu pomocí vhodné metody nebo vlastnosti. Můžete například použít`GetChild` metoda k načtení tvaru čáry podpisu.
-3.  Vytvořte instanci souboru`SignOptions` třídu a nastavte`SignatureLineId` vlastnost na ID stávajícího řádku podpisu.
-4.  Nastav`SignatureLineImage` vlastnictvím`SignOptions` třídy k obrázku představujícímu digitální podpis.
-5.  Načtěte podpisový certifikát pomocí`CertificateHolder` třídy a poskytněte potřebný certifikát a heslo.
-6.  Použijte`DigitalSignatureUtil.Sign` způsob podepsání dokumentu s uvedením nezbytných parametrů včetně`SignOptions` objekt.
+ Můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
 
-#### Otázka: Jak získám přístup k existujícímu řádku podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET?
+### Mohu pro podpis použít jakýkoli formát obrázku?
 
- Odpověď: Chcete-li získat přístup k existujícímu řádku podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET, můžete použít příslušnou metodu nebo vlastnost k načtení tvaru řádku podpisu ze struktury dokumentu. Můžete například použít`GetChild` metoda s příslušnými parametry pro získání požadovaného tvaru čáry podpisu.
+Aspose.Words podporuje různé formáty obrázků, ale použití vylepšeného metasouboru (EMF) poskytuje lepší kvalitu podpisů.
 
-#### Otázka: Mohu upravit vzhled digitálního podpisu v existujícím řádku podpisu?
+### Jak mohu získat digitální certifikát?
 
-Odpověď: Ano, vzhled digitálního podpisu v existujícím řádku podpisu můžete upravit poskytnutím souboru obrázku představujícího podpis. Obrázek může být logo, vlastnoruční podpis nebo jakékoli jiné grafické znázornění podpisu. Můžete nastavit`SignatureLineImage` vlastnictvím`SignOptions` třídy na bajty souboru obrázku.
+Digitální certifikáty můžete zakoupit online od různých poskytovatelů. Ujistěte se, že certifikát je ve formátu PFX a máte heslo.
 
-#### Otázka: Mohu podepsat více existujících podpisových řádků v dokumentu aplikace Word?
- Odpověď: Ano, v dokumentu aplikace Word můžete podepsat více existujících podpisových řádků. Musíte postupovat podle kroků pro každý řádek podpisu jednotlivě a nastavit příslušné`SignatureLineId` a`SignatureLineImage` hodnoty v`SignOptions` objekt pro každý řádek podpisu.
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
 
-#### Otázka: Jaký formát by měl mít soubor obrázku pro digitální podpis v existujícím řádku podpisu?
-
- Odpověď: Soubor obrázku pro digitální podpis v existujícím řádku podpisu může být v různých formátech, jako je PNG, JPEG, BMP nebo GIF. Můžete zadat cestu k souboru nebo přečíst bajty souboru obrázku a přiřadit jej k`SignatureLineImage` vlastnictvím`SignOptions` třída.
+ Můžete najít rozsáhlou dokumentaci[tady](https://reference.aspose.com/words/net/).

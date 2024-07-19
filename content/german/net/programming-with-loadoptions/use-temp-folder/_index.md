@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Konfigurieren Sie Ladeoptionen mit der Funktion „Temporären Ordner verwenden“
 LoadOptions loadOptions = new LoadOptions { TempFolder = ArtifactsDir };
 
-// Laden Sie das Dokument mithilfe eines angegebenen temporären Ordners
+// Laden Sie das Dokument aus einem angegebenen temporären Ordner
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 

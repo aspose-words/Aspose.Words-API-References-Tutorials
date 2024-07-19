@@ -130,7 +130,7 @@ Voilà! Vous venez d'apprendre comment accéder à la fin d'un signet dans un do
 
 ### 1. Puis-je passer au début d’un signet plutôt qu’à la fin ?
 
- Absolument! Il suffit de définir le`isBookmarkStart` paramètre à`true` et`isBookmarkEnd` à`false` dans le`MoveToBookmark` méthode.
+ Absolument! Il suffit de définir le`isBookmarkStart` paramètre à`true`et`isBookmarkEnd` à`false` dans le`MoveToBookmark` méthode.
 
 ### 2. Que faire si le nom de mon favori est incorrect ?
 

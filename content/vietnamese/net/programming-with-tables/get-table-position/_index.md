@@ -45,7 +45,7 @@ Console.WriteLine(table.Alignment);
 }
 ```
 
- Ở đây chúng ta sử dụng một điều kiện để kiểm tra xem mảng có phải là kiểu float hay không. Nếu vậy, chúng tôi in`RelativeHorizontalAlignment` Và`RelativeVerticalAlignment` Properties để có được sự liên kết theo chiều ngang và chiều dọc tương đối của bảng. Nếu không, chúng tôi in`Alignment` thuộc tính để có được sự liên kết mảng.
+ Ở đây chúng ta sử dụng một điều kiện để kiểm tra xem mảng có phải là kiểu float hay không. Nếu vậy, chúng tôi in`RelativeHorizontalAlignment`Và`RelativeVerticalAlignment` Properties để có được sự liên kết theo chiều ngang và chiều dọc tương đối của bảng. Nếu không, chúng tôi in`Alignment` thuộc tính để có được sự liên kết mảng.
 
 ### Mã nguồn mẫu cho Nhận vị trí bảng bằng Aspose.Words cho .NET 
 

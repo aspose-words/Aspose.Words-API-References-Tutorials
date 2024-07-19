@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. هل يمكنني الانتقال إلى بداية الإشارة المرجعية بدلاً من النهاية؟
 
- قطعاً! فقط قم بتعيين`isBookmarkStart` المعلمة ل`true` و`isBookmarkEnd` ل`false` في ال`MoveToBookmark` طريقة.
+ قطعاً! فقط قم بتعيين`isBookmarkStart` المعلمة ل`true`و`isBookmarkEnd` ل`false` في ال`MoveToBookmark` طريقة.
 
 ### 2. ماذا لو كان اسم الإشارة المرجعية الخاص بي غير صحيح؟
 

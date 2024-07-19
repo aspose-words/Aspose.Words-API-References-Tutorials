@@ -8,7 +8,7 @@ weight: 16
 url: /ko/java/using-document-elements/using-headers-and-footers/
 ---
 
-이 종합 가이드에서는 Aspose.Words for Java에서 머리글과 바닥글을 사용하는 과정을 안내합니다. 머리글과 바닥글은 문서 서식의 필수 요소이며 Aspose.Words는 필요에 따라 이를 만들고 사용자 정의할 수 있는 강력한 도구를 제공합니다.
+이 종합 가이드에서는 Aspose.Words for Java에서 머리글과 바닥글을 사용하는 과정을 안내합니다. 머리글과 바닥글은 문서 서식의 필수 요소이며 Aspose.Words는 필요에 따라 이를 생성하고 사용자 정의할 수 있는 강력한 도구를 제공합니다.
 
 이제 각 단계를 자세히 살펴보겠습니다.
 
@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. 페이지 번호 매기기
 
- 다음과 같은 필드를 사용하여 머리글과 바닥글에 페이지 번호를 포함할 수 있습니다.`PAGE` 그리고`NUMPAGES`. 페이지를 추가하거나 제거하면 이러한 필드가 자동으로 업데이트됩니다.
+ 다음과 같은 필드를 사용하여 머리글과 바닥글에 페이지 번호를 포함할 수 있습니다.`PAGE`그리고`NUMPAGES`. 페이지를 추가하거나 제거하면 이러한 필드가 자동으로 업데이트됩니다.
 
 ## 9. 바닥글의 저작권 정보
 

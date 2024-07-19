@@ -17,7 +17,7 @@ url: /ko/net/programming-with-sdt/combo-box-content-control/
 - C# 및 Word 문서를 사용한 단어 처리에 대한 기본 지식.
 
 ## 1단계: 문서 디렉터리 설정
- 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
+ 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## 3단계: 콤보 상자에 항목 추가
- 다음을 사용하여 콤보 상자에 항목을 추가합니다.`ListItems` 의 재산`StructuredDocumentTag` 각 항목은`SdtListItem` 표시 텍스트와 값을 취하는 객체입니다. 이 예에서는 콤보 상자에 세 가지 항목을 추가합니다.
+ 다음을 사용하여 콤보 상자에 항목을 추가합니다.`ListItems` 의 재산`StructuredDocumentTag` . 각 항목은`SdtListItem` 표시 텍스트와 값을 취하는 객체입니다. 이 예에서는 콤보 상자에 세 가지 항목을 추가합니다.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

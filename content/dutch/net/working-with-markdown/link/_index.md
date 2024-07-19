@@ -51,8 +51,8 @@ Gefeliciteerd! U hebt nu geleerd hoe u de koppelingsfunctie kunt gebruiken met A
 
 #### Vraag: Hoe kan ik de weergavetekst van een link in Aspose.Words aanpassen?
 
-A: Om de weergavetekst van een link in Aspose.Words aan te passen, kunt u de inhoud tussen de`<a>` labels. Bijvoorbeeld,`<a href="https://www.aspose.com">Click here</a>` toont de tekst "Klik hier" als hyperlink.
+ A: Om de weergavetekst van een link in Aspose.Words aan te passen, kunt u de inhoud tussen de`<a>` labels. Bijvoorbeeld,`<a href="https://www.aspose.com">Click here</a>` toont de tekst "Klik hier" als hyperlink.
 
 #### Vraag: Kan ik een doel opgeven voor een link in Aspose.Words?
 
- A: Ja, u kunt een doel voor een link in Aspose.Words opgeven met behulp van de`target` attribuut van de`<a>` label. Bijvoorbeeld,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` opent de link in een nieuw venster of tabblad.
+A: Ja, u kunt een doel voor een link in Aspose.Words opgeven met behulp van de`target` attribuut van de`<a>` label. Bijvoorbeeld,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` opent de link in een nieuw venster of tabblad.

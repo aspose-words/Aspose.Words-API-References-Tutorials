@@ -2,102 +2,109 @@
 title: Word 문서에 서명
 linktitle: Word 문서에 서명
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에 디지털 서명하는 방법을 알아보세요.
+description: 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 서명하는 방법을 알아보세요. 문서를 쉽게 보호하세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-digital-signatures/sign-document/
 ---
-이 튜토리얼에서는 Aspose.Words for .NET에서 문서 서명 기능을 사용하는 단계를 안내합니다. 이 기능을 사용하면 인증서를 사용하여 Word 문서에 디지털 서명을 할 수 있습니다. 아래 단계를 따르십시오.
+## 소개
 
-## 1단계: 인증서 로드
+오늘날의 디지털 세계에서는 문서 보안이 그 어느 때보다 중요합니다. 디지털 서명은 문서의 신뢰성과 무결성을 보장하는 방법을 제공합니다. .NET용 Aspose.Words를 사용하여 프로그래밍 방식으로 Word 문서에 서명하려는 경우 올바른 위치에 있습니다. 이 가이드는 간단하고 매력적인 방식으로 전체 프로세스를 단계별로 안내합니다.
 
-CertificateHolder 클래스를 사용하여 서명 인증서를 로드하는 것부터 시작하세요.
+## 전제조건
+
+코드를 살펴보기 전에 준비해야 할 몇 가지 사항이 있습니다.
+
+1.  .NET용 Aspose.Words: 최신 버전의 .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 당신은 그것을 다운로드 할 수 있습니다[여기](https://releases.aspose.com/words/net/).
+2. .NET 환경: .NET 개발 환경(예: Visual Studio)이 설정되어 있는지 확인하십시오.
+3. 디지털 인증서: 문서 서명을 위한 디지털 인증서(예: .pfx 파일)를 얻습니다.
+4. 서명할 문서: 서명할 Word 문서를 준비하세요.
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져와야 합니다. 프로젝트에 다음 using 지시문을 추가합니다.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.Security.Cryptography.X509Certificates;
+```
+
+이제 프로세스를 관리 가능한 단계로 나누어 보겠습니다.
+
+## 1단계: 디지털 인증서 로드
+
+첫 번째 단계는 파일에서 디지털 인증서를 로드하는 것입니다. 이 인증서는 문서에 서명하는 데 사용됩니다.
+
+```csharp
+// 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// 디지털 인증서를 로드합니다.
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-인증서 및 관련 비밀번호의 올바른 경로를 지정하십시오.
+### 설명
 
-## 2단계: 문서에 서명하기
+- `dataDir`: 인증서와 문서가 저장되는 디렉터리입니다.
+- `CertificateHolder.Create` : 이 메서드는 지정된 경로에서 인증서를 로드합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 디렉토리의 실제 경로와`"morzal.pfx"` 인증서 파일 이름으로. 그만큼`"aw"` 인증서의 비밀번호입니다.
 
-DigitalSignatureUtil 클래스를 사용하여 문서에 서명합니다.
+## 2단계: Word 문서 로드
 
-```csharp
-DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-	certHolder);
-```
-
-원본 문서와 서명된 문서의 올바른 경로를 지정해야 합니다.
-
-### .NET용 Aspose.Words를 사용하는 서명 문서의 예제 소스 코드
-
-다음은 .NET용 Aspose.Words를 사용하여 문서에 서명하는 전체 소스 코드입니다.
+그런 다음 서명하려는 Word 문서를 로드합니다.
 
 ```csharp
-
-	// 문서 디렉터리의 경로입니다.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
-	
-	DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx",
-		certHolder);
-
+// 서명할 문서를 로드합니다.
+Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
-다음 단계를 따르면 Aspose.Words for .NET을 사용하여 Word 문서에 쉽게 서명할 수 있습니다.
+### 설명
+
+- `Document` : 이 클래스는 Word 문서를 나타냅니다. 바꾸다`"Digitally signed.docx"`문서 이름으로.
+
+## 3단계: 문서에 서명
+
+ 이제`DigitalSignatureUtil.Sign` 문서에 서명하는 방법.
+
+```csharp
+// 문서에 서명하십시오.
+DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx", dataDir + "Document.Signed.docx", certHolder);
+```
+
+### 설명
+
+- `DigitalSignatureUtil.Sign`: 로드된 인증서를 사용하여 문서에 서명하는 방법입니다. 첫 번째 매개변수는 원본 문서의 경로, 두 번째 매개변수는 서명된 문서의 경로, 세 번째 매개변수는 인증서 보유자입니다.
+
+## 4단계: 서명된 문서 저장
+
+마지막으로 서명된 문서를 지정된 위치에 저장합니다.
+
+```csharp
+// 서명된 문서를 저장합니다.
+doc.Save(dataDir + "Document.Signed.docx");
+```
+
+### 설명
+
+- `doc.Save` : 서명된 문서를 저장하는 방법입니다. 바꾸다`"Document.Signed.docx"` 서명된 문서의 원하는 이름으로.
 
 ## 결론
 
- 이 튜토리얼에서는 .NET용 Aspose.Words의 문서 서명 기능을 살펴보았습니다. 서명 인증서를 로드하고`DigitalSignatureUtil.Sign` 방법을 사용하면 Word 문서에 디지털 서명을 할 수 있습니다. 문서 서명은 인증을 제공하고 문서 내용의 무결성을 보장하므로 안전하고 신뢰할 수 있는 문서 관리에 중요한 기능입니다.
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에 성공적으로 서명했습니다. 이러한 간단한 단계를 따르면 문서가 안전하게 서명되고 인증되었는지 확인할 수 있습니다. 디지털 서명은 문서의 무결성을 보호하는 강력한 도구이므로 필요할 때마다 활용하십시오.
 
-### 수화 문서에 대한 FAQ
+## FAQ
 
-#### Q: .NET용 Aspose.Words의 문서 서명이란 무엇입니까?
+### 디지털 서명이란 무엇입니까?
+디지털 서명은 서명자의 신원을 인증하고 문서가 변경되지 않았음을 확인하는 데 사용할 수 있는 전자 형식의 서명입니다.
 
-A: Aspose.Words for .NET의 문서 서명은 인증서를 사용하여 Word 문서에 디지털 서명하는 프로세스를 의미합니다. 이 기능은 문서에 디지털 서명을 추가하여 문서 내용의 신뢰성, 무결성 및 부인 방지 기능을 제공합니다.
+### 디지털 인증서가 필요한 이유는 무엇입니까?
+디지털 서명을 생성하려면 디지털 인증서가 필요합니다. 여기에는 공개 키와 인증서 소유자의 신원이 포함되어 있어 서명을 확인하는 수단을 제공합니다.
 
-#### Q: .NET용 Aspose.Words에서 서명 인증서를 어떻게 로드할 수 있나요?
+### 서명에 .pfx 파일을 사용할 수 있나요?
+예, .pfx 파일에 유효한 디지털 인증서가 포함되어 있고 이에 액세스할 수 있는 비밀번호가 있으면 가능합니다.
 
- A: .NET용 Aspose.Words에서 서명 인증서를 로드하려면 다음을 사용할 수 있습니다.`CertificateHolder` 수업. 인스턴스 만들기`CertificateHolder` 인증서 파일의 경로와 관련 비밀번호를 제공합니다. 예는 다음과 같습니다.
+### .NET용 Aspose.Words는 무료로 사용할 수 있나요?
+ Aspose.Words for .NET은 상용 라이브러리입니다. 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/) , 그러나 전체 기능을 사용하려면 라이센스를 구입해야 합니다. 당신은 그것을 구입할 수 있습니다[여기](https://purchase.aspose.com/buy).
 
-```csharp
-CertificateHolder certHolder = CertificateHolder.Create("path/to/certificate.pfx", "password");
-```
-
-인증서 및 관련 비밀번호에 대한 올바른 경로를 제공하십시오.
-
-#### Q: .NET용 Aspose.Words를 사용하여 Word 문서에 어떻게 서명합니까?
-
- A: .NET용 Aspose.Words를 사용하여 Word 문서에 서명하려면 다음을 사용할 수 있습니다.`DigitalSignatureUtil` 수업. 를 불러`Sign` 소스 문서의 경로, 서명된 문서(출력)의 경로 및`CertificateHolder` 물체. 예는 다음과 같습니다.
-
-```csharp
-DigitalSignatureUtil.Sign("path/to/source/document.docx", "path/to/signed/document.docx", certHolder);
-```
-
-소스 문서와 서명된 문서(출력)에 대한 올바른 경로를 제공하는지 확인하십시오.
-
-#### Q: 문서 서명의 목적은 무엇입니까?
-
-답변: 문서 서명은 문서의 신뢰성과 무결성을 보장하는 방법입니다. 문서에 디지털 서명을 하면 원본에 대한 증거를 제공하고, 내용이 변경되지 않았는지 확인하고, 부인 방지를 설정할 수 있습니다. 문서 서명은 일반적으로 법률, 재무 및 민감한 문서에 사용됩니다.
-
-#### Q: .NET용 Aspose.Words에서 문서 서명에 어떤 인증서든 사용할 수 있나요?
-
-A: .NET용 Aspose.Words에서 문서 서명을 위해서는 유효한 X.509 인증서를 사용해야 합니다. 이 인증서는 신뢰할 수 있는 인증 기관(CA)에서 얻거나 자체 서명된 인증서를 테스트 목적으로 사용할 수 있습니다.
-
-#### Q: Aspose.Words for .NET은 문서 서명을 위해 어떤 파일 형식을 지원합니까?
-
- A: Aspose.Words for .NET은 DOCX 파일 형식의 Word 문서에 대한 문서 서명을 지원합니다. 다음을 사용하여 DOCX 파일에 서명할 수 있습니다.`DigitalSignatureUtil` 수업과 그에 맞는 자격증을 취득하세요.
-
-#### Q: 동일한 인증서를 사용하여 여러 Word 문서에 서명할 수 있나요?
-
-A: 예, 동일한 인증서를 사용하여 여러 Word 문서에 서명할 수 있습니다. 다음을 사용하여 인증서를 로드한 후`CertificateHolder` 클래스를 호출하면 이를 재사용하여 여러 문서에 서명할 수 있습니다.`DigitalSignatureUtil.Sign` 소스 및 서명된 문서 경로가 다른 방법입니다.
-
-#### Q: 문서 서명이 원본 문서를 수정합니까?
-
-A: Aspose.Words for .NET을 사용한 문서 서명은 원본 문서를 수정하지 않습니다. 대신 원본 문서는 그대로 유지하면서 디지털 서명된 문서 복사본을 만듭니다. 디지털 서명된 사본에는 추가된 디지털 서명이 포함되어 문서 내용의 무결성을 보장합니다.
-
-#### Q: Aspose.Words for .NET을 사용하여 서명된 문서의 디지털 서명을 확인할 수 있습니까?
-
- A: 예, Aspose.Words for .NET은 서명된 문서의 디지털 서명을 확인하는 기능을 제공합니다. 당신은 사용할 수 있습니다`DigitalSignatureUtil.Verify` 디지털 서명의 유효성과 진위 여부를 확인하는 방법.
+### .NET용 Aspose.Words에 대한 자세한 정보는 어디서 찾을 수 있나요?
+ 포괄적인 문서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/) 그리고 지원[여기](https://forum.aspose.com/c/words/8).

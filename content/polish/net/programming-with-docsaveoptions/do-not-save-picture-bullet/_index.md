@@ -2,80 +2,96 @@
 title: Nie zapisuj punktora obrazkowego
 linktitle: Nie zapisuj punktora obrazkowego
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wyłączyć zapisywanie punktorów graficznych w dokumentach programu Word przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak obsługiwać punktory obrazkowe w Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Uprość zarządzanie dokumentami i bez wysiłku twórz profesjonalne dokumenty Word.
 type: docs
 weight: 10
 url: /pl/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
+## Wstęp
 
-Punktory obrazkowe to często używana funkcja w dokumentach programu Word służąca do dodawania niestandardowych punktorów. Jednak w niektórych przypadkach może być konieczne wyłączenie rejestracji punktorów obrazu podczas manipulowania dokumentami przy użyciu biblioteki Aspose.Words dla .NET. W tym przewodniku krok po kroku wyjaśnimy, jak używać kodu źródłowego Aspose.Words C# dla .NET, aby wyłączyć zapisywanie punktorów obrazu przy użyciu opcji zapisywania DocSaveOptions.
+Hej, drodzy programiści! Czy kiedykolwiek pracowałeś z dokumentami programu Word i wpadłeś w zawiłości związane z zapisywaniem punktorów obrazkowych? To jeden z tych drobnych szczegółów, które mogą mieć duży wpływ na ostateczny wygląd dokumentu. Cóż, dzisiaj jestem tutaj, aby poprowadzić Cię przez proces obsługi punktorów obrazkowych w Aspose.Words dla .NET, szczególnie skupiając się na funkcji „Nie zapisuj punktorów obrazkowych”. Gotowy do nurkowania? Chodźmy!
 
-## Zrozumienie biblioteki Aspose.Words
+## Warunki wstępne
 
-Przed zagłębieniem się w kod ważne jest zapoznanie się z biblioteką Aspose.Words dla platformy .NET. Aspose.Words to potężna biblioteka do tworzenia, edytowania, konwertowania i ochrony dokumentów programu Word na różnych platformach, w tym .NET. Oferuje wiele funkcji do manipulowania dokumentami, takich jak wstawianie tekstu, zmiana formatowania, dodawanie sekcji i wiele więcej.
+Zanim zaczniemy majstrować przy kodzie, musimy przygotować kilka rzeczy:
 
-## Krok 1: Ustawianie katalogu dokumentów
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną tę potężną bibliotekę. Jeśli jeszcze go nie masz, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: działające środowisko programistyczne .NET, takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Pomocna będzie pewna znajomość programowania w języku C#.
+4. Przykładowy dokument: dokument programu Word z punktorami graficznymi do celów testowych.
 
-Pierwszym krokiem jest zdefiniowanie katalogu, w którym znajdują się Twoje dokumenty. Należy podać pełną ścieżkę katalogu. Na przykład :
+## Importuj przestrzenie nazw
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-Pamiętaj, aby zastąpić „TWOJ KATALOG DOKUMENTÓW” rzeczywistą ścieżką do katalogu dokumentów.
-
-## Krok 2: Ładowanie dokumentu z punktorami obrazkowymi
-
-Następnie musisz załadować dokument z punktorami obrazkowymi. Użyj klasy Document, aby załadować dokument z pliku. Na przykład :
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Jest to dość proste, ale kluczowe dla uzyskania dostępu do funkcjonalności Aspose.Words.
 
 ```csharp
-Document doc = new Document(dataDir + "Image bullet points.docx");
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-W tym przykładzie ładujemy dokument z pliku „Image bullet points.docx”
+Podzielmy proces na łatwe do wykonania etapy. W ten sposób możesz łatwo śledzić i rozumieć każdą część kodu.
 
-  znajduje się w katalogu dokumentów.
+## Krok 1: Skonfiguruj katalog dokumentów
 
-## Krok 3: Skonfiguruj opcje nagrywania
-
-Teraz skonfigurujmy opcje zapisywania naszego dokumentu. Użyj klasy DocSaveOptions, aby określić ustawienia zapisywania. Na przykład :
-
-```csharp
-DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
-```
-
-tym przykładzie tworzymy nowy obiekt DocSaveOptions i ustawiamy właściwość SavePictureBullet na false, aby wyłączyć zapisywanie punktorów obrazkowych.
-
-## Krok 4: Włącz funkcję „Nie zapisuj punktora obrazkowego”.
-
-Aby włączyć funkcję „Nie zapisuj punktora obrazu”, skonfigurowaliśmy już opcje zapisywania przy ustawieniu opcji SavePictureBullet na wartość false. Dzięki temu punktory graficzne nie zostaną zapisane w dokumencie końcowym.
-
-## Krok 5: Zapisz dokument
-
-Na koniec można zapisać dokument za pomocą metody Save klasy Document. Podaj pełną ścieżkę do pliku i żądaną nazwę pliku. Na przykład :
-
-```csharp
-doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
-```
-
-Pamiętaj, aby zastąpić „dataDir” ścieżką katalogu do dokumentów.
-
-## Przykładowy kod źródłowy opcji zapisywania DocSaveOptions z funkcją „Nie zapisuj punktora obrazkowego” przy użyciu Aspose.Words dla .NET
+Po pierwsze, musisz określić ścieżkę do katalogu dokumentów. Tutaj przechowywane są dokumenty programu Word i zapisywane są zmodyfikowane pliki.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Zastępować`"YOUR DOCUMENTS DIRECTORY"` z rzeczywistą ścieżką w systemie, w którym znajdują się dokumenty.
+
+## Krok 2: Załaduj dokument z punktorami obrazkowymi
+
+Następnie załadujesz dokument programu Word zawierający punktory obrazkowe. Ten dokument zostanie zmodyfikowany w celu usunięcia punktorów obrazkowych po zapisaniu.
+
+```csharp
 // Załaduj dokument z punktorami obrazkowymi
 Document doc = new Document(dataDir + "Image bullet points.docx");
+```
 
+ Upewnij się, że plik`"Image bullet points.docx"` istnieje w określonym katalogu.
+
+## Krok 3: Skonfiguruj opcje zapisywania
+
+Teraz skonfigurujmy opcje zapisywania, aby określić, że punktory obrazkowe nie powinny być zapisywane. To tutaj dzieje się magia!
+
+```csharp
 // Skonfiguruj opcje zapisywania za pomocą funkcji „Nie zapisuj punktora obrazkowego”.
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
+```
 
+ Przez ustawienie`SavePictureBullet` Do`false`, instruujesz Aspose.Words, aby nie zapisywał punktorów obrazkowych w dokumencie wyjściowym.
+
+## Krok 4: Zapisz dokument
+
+Na koniec zapisz dokument z określonymi opcjami. Spowoduje to wygenerowanie nowego pliku, w którym nie zostaną uwzględnione punktory obrazkowe.
+
+```csharp
 // Zapisz dokument z określonymi opcjami
 doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", saveOptions);
 ```
 
+ Nowy plik,`"WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx"`, zostanie zapisany w katalogu dokumentów.
+
 ## Wniosek
 
-tym przewodniku omówiliśmy, jak wyłączyć zapisywanie punktorów graficznych w dokumencie przy użyciu biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Wyłączenie zapisywania punktorów obrazkowych może być przydatne w niektórych sytuacjach, aby zachować strukturę i formatowanie dokumentu bez zapisywania punktorów obrazkowych.
+I masz to! Za pomocą zaledwie kilku linii kodu pomyślnie skonfigurowałeś Aspose.Words dla .NET tak, aby pomijał punktory obrazkowe podczas zapisywania dokumentu. Może to być niezwykle przydatne, gdy potrzebujesz czystego, spójnego wyglądu bez rozpraszających punktorów obrazkowych.
+
+## Często zadawane pytania
+
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do tworzenia, edytowania i konwertowania dokumentów Word w aplikacjach .NET.
+
+### Czy mogę używać tej funkcji do innych typów pocisków?
+Nie, ta specyficzna funkcja dotyczy punktorów obrazkowych. Jednak Aspose.Words oferuje szerokie możliwości obsługi innych typów punktorów.
+
+### Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words?
+ Możesz uzyskać wsparcie od[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+
+### Czy istnieje bezpłatna wersja próbna Aspose.Words dla .NET?
+ Tak, możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
+
+### Jak kupić licencję na Aspose.Words dla .NET?
+ Licencję można kupić w witrynie[Sklep Aspose](https://purchase.aspose.com/buy).

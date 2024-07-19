@@ -62,7 +62,7 @@ builder.Writeln("I'm a beautifully formatted line.");
 ## 7. lépés: Fejezze be a táblázatot és mentse el a dokumentumot
 Ban ben
 
- végén befejezzük a táblázat létrehozását a`EndRow()` és`EndTable()` módszerrel, majd a módosított dokumentumot fájlba mentjük.
+ végén befejezzük a táblázat létrehozását a`EndRow()`és`EndTable()` módszerrel, majd a módosított dokumentumot fájlba mentjük.
 
 ```csharp
 builder. EndRow();

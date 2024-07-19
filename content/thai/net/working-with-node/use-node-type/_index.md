@@ -25,7 +25,7 @@ Document doc = new Document();
 ```
 
 ## ขั้นตอนที่ 3: รับประเภทโหนดเอกสาร
- ในการรับประเภทโหนดของเอกสาร เราใช้`NodeType` คุณสมบัติ.
+ในการรับประเภทโหนดของเอกสาร เราใช้`NodeType` คุณสมบัติ.
 
 ```csharp
 NodeType type = doc.NodeType;

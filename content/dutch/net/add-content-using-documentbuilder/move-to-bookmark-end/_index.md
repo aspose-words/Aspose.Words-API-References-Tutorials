@@ -9,7 +9,7 @@ url: /nl/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 ## Invoering
 
-Hallo daar, mede-codeur! Ben je ooit verstrikt geraakt in het web van manipulaties van Word-documenten, terwijl je probeerde uit te vinden hoe je precies naar het einde van een bladwijzer kon gaan en er direct daarna inhoud aan kon toevoegen? Nou, vandaag is je geluksdag! We duiken diep in Aspose.Words voor .NET, een krachtige bibliotheek waarmee u Word-documenten als een professional kunt verwerken. Deze tutorial leidt u door de stappen om naar het einde van een bladwijzer te gaan en daar wat tekst in te voegen. Laten we deze show op de weg krijgen!
+Hallo daar, mede-codeur! Bent u ooit verstrikt geraakt in het web van manipulaties van Word-documenten, terwijl u probeerde uit te vinden hoe u precies naar het einde van een bladwijzer kon gaan en er direct daarna inhoud aan kon toevoegen? Nou, vandaag is je geluksdag! We duiken diep in Aspose.Words voor .NET, een krachtige bibliotheek waarmee u Word-documenten als een professional kunt verwerken. Deze tutorial leidt u door de stappen om naar het einde van een bladwijzer te gaan en daar wat tekst in te voegen. Laten we deze show op de weg krijgen!
 
 ## Vereisten
 
@@ -130,7 +130,7 @@ Daar heb je het! U hebt zojuist geleerd hoe u naar het einde van een bladwijzer 
 
 ### 1. Kan ik naar het begin van een bladwijzer gaan in plaats van naar het einde?
 
- Absoluut! Stel gewoon de`isBookmarkStart` parameter aan`true` En`isBookmarkEnd` naar`false` in de`MoveToBookmark` methode.
+ Absoluut! Stel gewoon de`isBookmarkStart` parameter aan`true`En`isBookmarkEnd` naar`false` in de`MoveToBookmark` methode.
 
 ### 2. Wat moet ik doen als mijn bladwijzernaam onjuist is?
 
@@ -142,7 +142,7 @@ Daar heb je het! U hebt zojuist geleerd hoe u naar het einde van een bladwijzer 
 
 ### 4. Hoe krijg ik een tijdelijke licentie voor Aspose.Words?
 
- U kunt een tijdelijke licentie verkrijgen bij de[Aspose-website](https://purchase.aspose.com/temporary-license/).
+ U kunt een tijdelijke licentie aanvragen bij de[Aspose-website](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Is Aspose.Words voor .NET gratis?
 

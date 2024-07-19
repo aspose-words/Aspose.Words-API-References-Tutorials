@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 
-V tomto tutoriálu se naučíme, jak opakovat řádky tabulky na následujících stránkách dokumentu Word pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete schopni určit řádky, které se mají opakovat na následujících stránkách tabulky v dokumentech aplikace Word.
+tomto tutoriálu se naučíme, jak opakovat řádky tabulky na následujících stránkách dokumentu Word pomocí Aspose.Words for .NET. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete schopni určit řádky, které se mají opakovat na následujících stránkách tabulky v dokumentech aplikace Word.
 
 ## Krok 1: Nastavení projektu
 1. Spusťte Visual Studio a vytvořte nový projekt C#.
@@ -71,7 +71,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Zde používáme tvůrce dokumentů k vytvoření tabulky se dvěma řádky záhlaví a více řádky dat. The`RowFormat.HeadingFormat`parametry se používají k označení řádků záhlaví, které by se měly opakovat na následujících stránkách.
+ Zde používáme tvůrce dokumentů k vytvoření tabulky se dvěma řádky záhlaví a více řádky dat. The`RowFormat.HeadingFormat` parametry se používají k označení řádků záhlaví, které by se měly opakovat na následujících stránkách.
 
 ## Krok 4: Uložení upraveného dokumentu
 Konečně USA

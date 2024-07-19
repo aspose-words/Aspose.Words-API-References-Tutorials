@@ -2,24 +2,39 @@
 title: Sembunyikan Sumbu Bagan Dalam Dokumen Word
 linktitle: Sembunyikan Sumbu Bagan Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyembunyikan sumbu bagan dalam dokumen menggunakan Aspose.Words untuk .NET. Sembunyikan sumbu untuk tampilan grafik yang lebih bersih dan fokus.
+description: Pelajari cara menyembunyikan sumbu bagan di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah kami yang mendetail.
 type: docs
 weight: 10
 url: /id/net/programming-with-charts/hide-chart-axis/
 ---
+## Perkenalan
 
-Tutorial ini menjelaskan cara menggunakan Aspose.Words untuk .NET untuk menyembunyikan sumbu bagan dalam dokumen. Kode sumber yang disediakan menunjukkan cara membuat bagan, menambahkan data seri, dan menyembunyikan sumbu bagan.
+Membuat dokumen Word yang dinamis dan menarik secara visual sering kali melibatkan penggabungan bagan dan grafik. Salah satu skenario tersebut mungkin memerlukan penyembunyian sumbu bagan untuk presentasi yang lebih rapi. Aspose.Words for .NET menyediakan API yang komprehensif dan mudah digunakan untuk tugas-tugas tersebut. Tutorial ini akan memandu Anda melalui langkah-langkah untuk menyembunyikan sumbu bagan di dokumen Word menggunakan Aspose.Words untuk .NET.
 
-## Langkah 1: Siapkan proyek
+## Prasyarat
 
-Pastikan Anda memiliki prasyarat berikut:
+Sebelum kita masuk ke tutorialnya, pastikan Anda memiliki prasyarat berikut:
 
-- Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mendownloadnya dengan menggunakan manajer paket NuGet untuk menginstalnya.
-- Jalur direktori dokumen tempat dokumen keluaran akan disimpan.
+-  Aspose.Words untuk .NET: Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Setiap IDE yang mendukung pengembangan .NET, seperti Visual Studio.
+- .NET Framework: Pastikan Anda telah menginstal .NET Framework di mesin Anda.
+- Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# akan bermanfaat.
 
-## Langkah 2: Buat dokumen baru dan masukkan bagan
+## Impor Namespace
 
- Buat yang baru`Document` objek dan a`DocumentBuilder` untuk membuat dokumen tersebut.
+Untuk mulai bekerja dengan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan dalam proyek Anda. Inilah cara Anda melakukannya:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Charts;
+```
+
+Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah diikuti.
+
+## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
+
+Langkah pertama melibatkan pembuatan dokumen Word baru dan menginisialisasi objek DocumentBuilder.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -29,88 +44,78 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Selanjutnya, masukkan bagan ke dalam dokumen menggunakan`InsertChart` metode`DocumentBuilder`. Dalam contoh ini, kita akan menyisipkan bagan kolom.
+ Pada langkah ini, kita menentukan jalur dimana dokumen akan disimpan. Kami kemudian membuat yang baru`Document` objek dan a`DocumentBuilder` keberatan untuk mulai membuat dokumen kita.
+
+## Langkah 2: Sisipkan Bagan
+
+ Selanjutnya, kita akan menyisipkan bagan ke dalam dokumen menggunakan`DocumentBuilder` obyek.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Langkah 3: Tambahkan data seri ke bagan
+ Di sini, kami menyisipkan bagan kolom dengan dimensi tertentu. Itu`InsertChart` metode mengembalikan a`Shape` objek yang berisi grafik.
 
-Tambahkan data seri ke bagan. Dalam contoh ini, kita akan menambahkan lima item dan nilainya yang sesuai.
+## Langkah 3: Hapus Seri yang Ada
+
+Sebelum menambahkan data baru ke grafik, kita perlu menghapus semua rangkaian yang ada.
 
 ```csharp
 chart.Series.Clear();
+```
+
+Langkah ini memastikan bahwa data default apa pun dalam bagan dihapus, sehingga memberi jalan bagi data baru yang akan kita tambahkan berikutnya.
+
+## Langkah 4: Tambahkan Data Seri
+
+Sekarang, mari tambahkan seri data kita sendiri ke bagan.
+
+```csharp
 chart.Series.Add("Aspose Series 1",
     new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
     new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
 ```
 
-## Langkah 4: Sembunyikan sumbu grafik
+Pada langkah ini, kami menambahkan rangkaian berjudul "Aspose Seri 1" dengan kategori dan nilai yang sesuai.
 
- Untuk menyembunyikan sumbu grafik, akses`AxisY` properti bagan dan atur`Hidden`properti ke`true`.
+## Langkah 5: Sembunyikan Sumbu Y
+
+ Untuk menyembunyikan sumbu Y pada grafik, kita cukup mengaturnya`Hidden` properti sumbu Y ke`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
 ```
 
-Dalam contoh ini, kami menyembunyikan sumbu Y pada grafik.
+Baris kode ini menyembunyikan sumbu Y, sehingga tidak terlihat dalam grafik.
 
-## Langkah 5: Simpan dokumen
+## Langkah 6: Simpan Dokumen
 
- Terakhir, simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode`Document` obyek.
+Terakhir, simpan dokumen ke direktori yang ditentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
 ```
 
-Ini menyelesaikan implementasi menyembunyikan sumbu bagan menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk Sembunyikan Sumbu Bagan menggunakan Aspose.Words untuk .NET 
-
-```csharp
-	// Jalur ke direktori dokumen Anda
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
-	Chart chart = shape.Chart;
-	chart.Series.Clear();
-	chart.Series.Add("Aspose Series 1",
-		new string[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" },
-		new double[] { 1.2, 0.3, 2.1, 2.9, 4.2 });
-	chart.AxisY.Hidden = true;
-	doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
-```
+Perintah ini menyimpan dokumen Word dengan bagan ke jalur yang ditentukan.
 
 ## Kesimpulan
 
-Dalam tutorial ini, Anda telah mempelajari cara menyembunyikan sumbu bagan di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan menggunakan kode sumber yang disediakan, Anda dapat membuat bagan, menambahkan data rangkaian, dan menyembunyikan sumbu bagan untuk mencapai efek visual yang diinginkan.
+Selamat! Anda telah berhasil mempelajari cara menyembunyikan sumbu bagan di dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan manipulasi dokumen Word secara terprogram. Dengan mengikuti langkah-langkah ini, Anda dapat membuat dokumen yang disesuaikan dan terlihat profesional dengan sedikit usaha.
 
- Aspose.Words untuk .NET menyediakan API komprehensif untuk Pemrosesan Kata dengan bagan di dokumen Word, memungkinkan Anda memanipulasi berbagai aspek bagan, termasuk properti sumbu. Dengan mengakses`AxisY` properti bagan, Anda dapat menyembunyikan sumbu Y untuk menghapusnya dari visualisasi bagan.
+## FAQ
 
-Menyembunyikan sumbu bagan dapat berguna saat Anda ingin fokus pada data bagan tanpa gangguan garis sumbu dan label. Ini memberikan tampilan yang lebih bersih dan minimalis pada grafik.
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah API yang kuat untuk membuat, mengedit, mengonversi, dan memanipulasi dokumen Word dalam aplikasi .NET.
 
-Dengan menggunakan Aspose.Words untuk .NET, Anda dapat dengan mudah menggabungkan kemampuan pembuatan bagan ke dalam aplikasi .NET Anda dan menghasilkan dokumen yang terlihat profesional dengan bagan yang disesuaikan dan sumbu bagan tersembunyi.
+### Bisakah saya menyembunyikan sumbu X dan Y dalam grafik?
+ Ya, Anda dapat menyembunyikan kedua sumbu dengan menyetel`Hidden` milik keduanya`AxisX`Dan`AxisY` ke`true`.
 
-### FAQ
+### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?
+ Ya, Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/).
 
-#### Q1. Apa itu Aspose.Words untuk .NET?
-Aspose.Words untuk .NET adalah pustaka pemrosesan dokumen canggih yang memungkinkan pengembang membuat, memanipulasi, dan menyimpan dokumen Word secara terprogram dalam aplikasi .NET. Ini menyediakan berbagai fitur untuk Pemrosesan Kata dengan elemen dokumen, termasuk bagan dan sumbu bagan.
+### Di mana saya dapat menemukan dokumentasi lainnya?
+ Anda dapat menemukan dokumentasi terperinci di Aspose.Words untuk .NET[Di Sini](https://reference.aspose.com/words/net/).
 
-#### Q2. Bagaimana cara menginstal Aspose.Words untuk .NET?
-Anda dapat menginstal Aspose.Words untuk .NET dengan mengunduhnya menggunakan manajer paket NuGet di Visual Studio. Cukup cari "Aspose.Words" di manajer paket NuGet dan instal ke proyek Anda.
-
-#### Q3. Bisakah saya menyembunyikan sumbu X dan sumbu Y pada grafik?
- Ya, Anda dapat menyembunyikan sumbu X dan sumbu Y pada bagan menggunakan Aspose.Words untuk .NET. Untuk menyembunyikan sumbu X, Anda dapat mengakses`AxisX` properti bagan dan atur`Hidden`properti ke`true` . Demikian pula, untuk menyembunyikan sumbu Y, Anda dapat mengakses`AxisY` properti dan atur`Hidden`properti ke`true`. Hal ini memungkinkan Anda untuk menghapus kedua sumbu dari visualisasi grafik.
-
-#### Q4. Bisakah saya menampilkan sumbu lagi setelah menyembunyikannya?
-Ya, Anda dapat menampilkan kembali sumbu bagan setelah menyembunyikannya menggunakan Aspose.Words untuk .NET. Untuk menampilkan sumbu tersembunyi, cukup atur`Hidden` milik yang bersangkutan`AxisX` atau`AxisY` objek untuk`false`. Ini akan membuat sumbu terlihat lagi di grafik.
-
-#### Q5. Bisakah saya menyesuaikan properti lain dari sumbu bagan?
- Ya, Aspose.Words untuk .NET memungkinkan Anda menyesuaikan berbagai properti sumbu bagan, seperti judul sumbu, label, warna garis, dan banyak lagi. Dengan mengakses`AxisX` Dan`AxisY` properti bagan, Anda dapat mengubah properti seperti`Title`, `MajorTickMark`, `MinorTickMark`, `TickLabelOffset`, dan banyak lagi. Ini memberi Anda kontrol menyeluruh atas tampilan dan perilaku sumbu grafik.
-
-#### Q6. Bisakah saya menyimpan grafik dengan sumbu tersembunyi dalam format file berbeda?
- Ya, Aspose.Words untuk .NET memungkinkan Anda menyimpan dokumen yang berisi bagan dengan sumbu tersembunyi dalam berbagai format file, seperti DOCX, PDF, HTML, dan lainnya. Anda dapat memilih format keluaran yang diinginkan berdasarkan kebutuhan Anda dan menggunakan`Save` metode`Document` objek untuk menyimpan dokumen. Sumbu tersembunyi akan disimpan dalam dokumen yang disimpan.
+### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?
+ Anda bisa mendapatkan dukungan dari komunitas Aspose[Di Sini](https://forum.aspose.com/c/words/8).

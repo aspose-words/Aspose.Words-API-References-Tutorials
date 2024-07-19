@@ -109,7 +109,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### D: Come personalizzare l'aspetto del campo TOA inserito nel documento Word con Aspose.Words per .NET?
 
-R: Puoi personalizzare l'aspetto del campo TOA inserito utilizzando le proprietà del file`FieldTOA` oggetto per specificare le opzioni di formattazione.
+ R: Puoi personalizzare l'aspetto del campo TOA inserito utilizzando le proprietà del file`FieldTOA` oggetto per specificare le opzioni di formattazione.
 
 #### D: Posso aggiungere più campi TOA in un singolo documento Word utilizzando Aspose.Words per .NET?
 

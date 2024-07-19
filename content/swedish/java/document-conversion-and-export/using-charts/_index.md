@@ -131,7 +131,7 @@ I den här handledningen har vi utforskat hur man arbetar med diagram med Aspose
 
 ### Hur kan jag formatera dataetiketter med anpassade nummerformat?
 
-Du kan formatera dataetiketter genom att öppna`DataLabels` egenskaper för en serie och ställ in önskad formatkod med hjälp av`getNumberFormat().setFormatCode()`.
+Du kan formatera dataetiketter genom att gå till`DataLabels` egenskaper för en serie och ställ in önskad formatkod med hjälp av`getNumberFormat().setFormatCode()`.
 
 ### Hur anpassar jag axelegenskaper i ett diagram?
 

@@ -22,7 +22,7 @@ url: /th/net/basic-conversions/docx-to-mhtml-and-sending-email/
 
 ## นำเข้าเนมสเปซ
 
-หากต้องการใช้ Aspose.Words และ Aspose.Email ในโปรเจ็กต์ของคุณ คุณต้องนำเข้าเนมสเปซที่จำเป็น เพิ่มคำสั่งต่อไปนี้ที่ด้านบนของไฟล์ C# ของคุณ:
+หากต้องการใช้ Aspose.Words และ Aspose.Email ในโปรเจ็กต์ของคุณ คุณจะต้องนำเข้าเนมสเปซที่จำเป็น เพิ่มคำสั่งต่อไปนี้ที่ด้านบนของไฟล์ C# ของคุณ:
 
 ```csharp
 using Aspose.Words;

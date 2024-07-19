@@ -76,7 +76,7 @@ Aspose.Words for .NET 提供许多用于文档处理和生成的高级功能。�
 
 通过添加必要的引用和导入适当的命名空间来设置您的开发环境。
 
-使用加载文档`Document`方法并指定要加载的 DOCX 文件的路径。
+使用`Document`方法并指定要加载的 DOCX 文件的路径。
 
 通过创建配置 RTF 保存选项`RtfSaveOptions`对象并设置`SaveImagesAsWmf`财产`true`。这告诉 Aspose.Words 将文档图像保存为 
 转换为 RTF 时为 WMF。

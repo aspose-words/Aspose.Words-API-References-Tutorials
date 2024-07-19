@@ -25,7 +25,7 @@ Ebben a példában a dokumentumok könyvtárában található "Encrypted.docx" d
 
 ## Titkosított dokumentum mentése
 
-titkosított dokumentum feltöltése után a kimeneti fájl új jelszó megadásával mentheti is. Példánkban az OdtSaveOptions osztályt használjuk a dokumentum ODT formátumban történő mentésére új jelszóval. Íme, hogyan kell csinálni:
+A titkosított dokumentum feltöltése után a kimeneti fájl új jelszó megadásával mentheti is. Példánkban az OdtSaveOptions osztályt használjuk a dokumentum ODT formátumban történő mentésére új jelszóval. Íme, hogyan kell csinálni:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 // Töltsön be egy titkosított dokumentumot a megadott jelszóval
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
 
-// Titkosított dokumentum mentése új jelszóval
+//Titkosított dokumentum mentése új jelszóval
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 

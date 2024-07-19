@@ -62,7 +62,7 @@ Odpověď: Nadřazený uzel v Node.js odkazuje na nejbližší vyšší uzel v h
 
 #### Otázka: Jak získat nadřazený uzel konkrétního uzlu?
 
-A: Chcete-li získat nadřazený uzel konkrétního uzlu, můžete použít`parentNode` vlastnost uzlu. Tato vlastnost vrací nadřazený uzel aktuálního uzlu.
+ A: Chcete-li získat nadřazený uzel konkrétního uzlu, můžete použít`parentNode` vlastnost uzlu. Tato vlastnost vrací nadřazený uzel aktuálního uzlu.
 
 #### Otázka: Jak zkontrolovat, zda má uzel nadřazený uzel?
 
@@ -70,7 +70,7 @@ A: Chcete-li získat nadřazený uzel konkrétního uzlu, můžete použít`pare
 
 #### Otázka: Můžeme změnit nadřazený uzel uzlu?
 
- Odpověď: Ve většině případů je nadřazený uzel uzlu určen strukturou dokumentu XML a nelze jej přímo změnit. Můžete však přesunout uzel do jiného uzlu pomocí specifických metod, jako je např`appendChild` nebo`insertBefore`.
+Odpověď: Ve většině případů je nadřazený uzel uzlu určen strukturou dokumentu XML a nelze jej přímo změnit. Můžete však přesunout uzel do jiného uzlu pomocí specifických metod, jako je např`appendChild` nebo`insertBefore`.
 
 #### Otázka: Jak procházet hierarchii nadřazených uzlů?
 

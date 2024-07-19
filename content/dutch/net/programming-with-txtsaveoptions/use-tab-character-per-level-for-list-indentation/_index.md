@@ -37,7 +37,7 @@ builder.ListFormat.ListIndent();
 builder.Write("Element 3");
 ```
 
-In deze stap passen we het standaardformaat van lijstnummers toe met behulp van de`ApplyNumberDefault()` methode van de lijstformatter. Vervolgens voegen we drie items toe aan onze lijst met behulp van de documentbuilder`Writeln()` En`Write()` methoden. Wij gebruiken de`ListIndent()` methode om de inspringing op elk niveau te vergroten.
+In deze stap passen we het standaardformaat van lijstnummers toe met behulp van de`ApplyNumberDefault()` methode van de lijstformatter. Vervolgens voegen we drie items toe aan onze lijst met behulp van de documentbuilder`Writeln()`En`Write()` methoden. Wij gebruiken de`ListIndent()` methode om de inspringing op elk niveau te vergroten.
 
 ## Stap 4: Configureer opnameopties
 
@@ -100,7 +100,7 @@ Stel uw ontwikkelomgeving in door de benodigde referenties toe te voegen en de j
 
  Maak een nieuwe`Document` object en een bijbehorende`DocumentBuilder` voorwerp.
 
- Gebruik de`DocumentBuilder` om een lijst met meerdere inspringingsniveaus te maken met behulp van de methoden`ApplyNumberDefault()` om het standaardlijstnummerformaat toe te passen,`Writeln()` En`Write()` om items aan de lijst toe te voegen, en`ListIndent()`om de inspringing op elk niveau te vergroten.
+ Gebruik de`DocumentBuilder` om een lijst met meerdere inspringingsniveaus te maken met behulp van de methoden`ApplyNumberDefault()` om het standaardlijstnummerformaat toe te passen,`Writeln()`En`Write()` om items aan de lijst toe te voegen, en`ListIndent()`om de inspringing op elk niveau te vergroten.
 
  Configureer opslagopties door een`TxtSaveOptions` object en het instellen van de eigenschappen`ListIndentation.Count` aan het aantal tabtekens per niveau en`ListIndentation.Character` naar`'\t'` om de tabtekens te gebruiken.
 

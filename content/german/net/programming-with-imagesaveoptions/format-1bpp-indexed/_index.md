@@ -74,4 +74,4 @@ In diesem Tutorial haben wir die 1Bpp-Indexformatfunktion mit Aspose.Words für 
 
 Diese Funktion ist nützlich, wenn Sie Bilder mit geringer Farbtiefe und kleiner Dateigröße erhalten möchten. Das 1Bpp-Indexformat ermöglicht die Darstellung von Bildern mithilfe einer indizierten Farbpalette, was für bestimmte Anwendungen von Vorteil sein kann.
 
-Aspose.Words für .NET bietet eine breite Palette erweiterter Funktionen zur Dokumentbearbeitung und -erstellung. Das 1Bpp-Indexformat ist eines der vielen leistungsstarken Tools, die Ihnen zur Verfügung stehen.
+Aspose.Words für .NET bietet eine breite Palette an erweiterten Funktionen zur Dokumentbearbeitung und -erstellung. Das 1Bpp-Indexformat ist eines der vielen leistungsstarken Tools, die Ihnen zur Verfügung stehen.

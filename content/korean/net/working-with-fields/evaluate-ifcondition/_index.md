@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 // IF 필드를 문서에 삽입합니다.
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 
-//IF 조건을 평가합니다.
+// IF 조건을 평가합니다.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 
 // 평가 결과를 표시합니다.

@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	//ドキュメント内の CustomXmlPart の内容を表示する StructuredDocumentTag を作成します。
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// StructuredDocumentTagのマッピングを設定すると、
-	// XPath が指す CustomXmlPart の一部のみが表示されます。
+	//XPath が指す CustomXmlPart の一部のみが表示されます。
 	//この XPath は、CustomXmlPart の最初の "<root>" 要素の 2 番目の "<text>" 要素の内容を指します。
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

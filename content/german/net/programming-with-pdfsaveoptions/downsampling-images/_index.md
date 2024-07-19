@@ -81,7 +81,7 @@ A: Um die Größe eines PDF-Dokuments mithilfe der Bildabtastung unter Verwendun
 
  Laden Sie das Dokument, das Sie in PDF konvertieren möchten, mit dem`Document` Klasse und geben Sie den Pfad zum Dokument im angegebenen Dokumentverzeichnis an.
 
- Konfigurieren Sie die Optionen zum Speichern als PDF, indem Sie eine Instanz des`PdfSaveOptions` Klasse und Festlegen der Bildabtastoptionen mithilfe der`DownsampleOptions` Eigenschaft. Sie können die Zielauflösung von Bildern mit der`Resolution` Eigenschaft und legen Sie eine Mindestauflösung fest, oberhalb derer Bilder nicht mit der`ResolutionThreshold` Eigentum.
+ Konfigurieren Sie die Optionen zum Speichern als PDF, indem Sie eine Instanz des`PdfSaveOptions` Klasse und Festlegen der Bildabtastoptionen mithilfe der`DownsampleOptions` Eigenschaft. Sie können die Zielauflösung von Bildern mit der`Resolution` und legen Sie eine Mindestauflösung fest, oberhalb derer Bilder nicht mit der`ResolutionThreshold` Eigentum.
 
  Speichern Sie das Dokument im PDF-Format mit dem`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.
 

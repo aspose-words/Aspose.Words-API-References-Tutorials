@@ -9,7 +9,7 @@ url: /zh/net/add-content-using-documentbuilder/insert-break/
 ---
 ## 介绍
 
-嗨！您准备好进入 Aspose.Words for .NET 的世界了吗？这个强大的库就像是 Word 文档操作的瑞士军刀。无论您是处理复杂的文档自动化任务还是只需要添加简单的分页符，Aspose.Words 都能满足您的需求。在本教程中，我们将逐步介绍如何在 Word 文档中插入分页符。所以，喝杯咖啡，让我们开始吧！
+嗨！您准备好进入 Aspose.Words for .NET 的世界了吗？这个强大的库就像是 Word 文档操作的瑞士军刀。无论您要处理复杂的文档自动化任务还是只需要添加简单的分页符，Aspose.Words 都能满足您的需求。在本教程中，我们将逐步介绍如何在 Word 文档中插入分页符。所以，喝杯咖啡，让我们开始吧！
 
 ## 先决条件
 

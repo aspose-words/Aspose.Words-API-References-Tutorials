@@ -31,7 +31,7 @@ builder.InsertHtml(
 </svg> ");
 ```
 
- Bu kod bir örneğini oluşturur`Document` Ve`DocumentBuilder` belgeyi oluşturmak için. Bir ekler`<svg>` içeren etiket`<polygon>` SVG görüntüsünün şeklini ve stilini tanımlayan niteliklere sahip öğe.
+ Bu kod bir örneğini oluşturur`Document`Ve`DocumentBuilder` belgeyi oluşturmak için. Bir ekler`<svg>` içeren etiket`<polygon>` SVG görüntüsünün şeklini ve stilini tanımlayan niteliklere sahip öğe.
 
 ## 3. Adım: HTML kaydetme seçeneklerini ayarlayın
 

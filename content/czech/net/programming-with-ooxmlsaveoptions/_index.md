@@ -2,7 +2,7 @@
 title: Zpracování slov s možnostmi Ooxmlsave
 linktitle: Zpracování slov s možnostmi Ooxmlsave
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se Words Processing s možnostmi uložení OOXML v Aspose.Words pro .NET. Komplexní výukové programy a ukázkový kód pro manipulaci a přizpůsobení ukládání dokumentů aplikace Word ve formátu OOXML.
+description: Naučte se Words Processing s možnostmi uložení OOXML v Aspose.Words for .NET. Komplexní výukové programy a ukázkový kód pro manipulaci a přizpůsobení ukládání dokumentů aplikace Word ve formátu OOXML.
 type: docs
 weight: 1660
 url: /cs/net/programming-with-ooxmlsaveoptions/
