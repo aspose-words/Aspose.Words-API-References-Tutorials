@@ -2,7 +2,7 @@
 title: Get Variables
 linktitle: Get Variables
 second_title: Aspose.Words Document Processing API
-description: Master Aspose.Words for .NET: Learn to load and extract variables from Word documents with this step-by-step, guide.
+description: Master Aspose.Words for .NET. Learn to load and extract variables from Word documents with this step-by-step, guide.
 type: docs
 weight: 10
 url: /net/programming-with-document-properties/get-variables/

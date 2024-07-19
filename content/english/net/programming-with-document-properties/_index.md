@@ -16,7 +16,7 @@ Whether you are a beginner or an experienced developer, the Aspose.Words for .NE
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Get Variables](./get-variables/) | Master Aspose.Words for .NET: Learn to load and extract variables from Word documents with this step-by-step, guide. |
+| [Get Variables](./get-variables/) | Master Aspose.Words for .NET. Learn to load and extract variables from Word documents with this step-by-step, guide. |
 | [Enumerate Properties](./enumerate-properties/) | Learn how to enumerate properties in a Word document using Aspose.Words for .NET with this step-by-step guide. Perfect for developers of all skill levels. |
 | [Add Custom Document Properties](./add-custom-document-properties/) | Learn how to add custom document properties in Word files using Aspose.Words for .NET. Follow our step-by-step guide to enhance your documents with additional metadata. |
 | [Remove Custom Document Properties](./remove-custom-document-properties/) | Remove custom document properties in Word files using Aspose.Words for .NET. Follow our step-by-step guide for a quick and easy solution. Perfect for developers. |
