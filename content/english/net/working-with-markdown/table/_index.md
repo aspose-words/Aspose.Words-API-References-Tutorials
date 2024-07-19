@@ -2,52 +2,67 @@
 title: Table
 linktitle: Table
 second_title: Aspose.Words Document Processing API
-description: Learn how to create a table with Aspose.Words for .NET Step-by-step guide.
+description: Learn how to create and customize tables in Aspose.Words for .NET with this step-by-step guide. Perfect for generating structured and visually appealing documents.
 type: docs
 weight: 10
 url: /net/working-with-markdown/table/
 ---
+## Introduction
 
+Working with tables in documents is a common requirement. Whether you are generating reports, invoices, or any structured data, tables are indispensable. In this tutorial, I will walk you through creating and customizing tables using Aspose.Words for .NET. Let's dive in!
 
-In this example, we will walk you through how to create a table using Aspose.Words for .NET. A table is a data structure that organizes information into rows and columns.
+## Prerequisites
 
-## Step 1: Using a document generator
+Before we start, make sure you have the following prerequisites:
 
-First, we'll use a document generator to add content to our document.
+- Visual Studio: You need a development environment to write and test your code. Visual Studio is a good choice.
+- Aspose.Words for .NET: Ensure you have the Aspose.Words library installed. If you don't have it, you can download it [here](https://releases.aspose.com/words/net/).
+- Basic Understanding of C#: Some familiarity with C# programming is necessary to follow along.
+
+## Import Namespaces
+
+Before we get into the steps, let's import the necessary namespaces:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+## Step 1: Initialize Document and DocumentBuilder
+
+First things first, we need to create a new document and initialize the DocumentBuilder class, which will help us in constructing our table.
+
+```csharp
+// Initialize DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
+This step is like setting up your workspace. You have your blank document and your pen ready.
 
-## Step 2: Add cells and data
+## Step 2: Start Building Your Table
 
-We will add cells and data to our table using the `InsertCell` method and the `Writeln` method of the document generator.
-
-```csharp
-builder. InsertCell();
-builder.Writeln("a");
-builder. InsertCell();
-builder.Writeln("b");
-
-builder. InsertCell();
-builder.Writeln("c");
-builder. InsertCell();
-builder.Writeln("d");
-```
-
-### Example source code for creating a table with Aspose.Words for .NET
+Now that we have our tools, let's start building the table. We'll begin by inserting the first cell of the first row.
 
 ```csharp
-// Use a document builder to add content to the document.
-DocumentBuilder builder = new DocumentBuilder();
-
 // Add the first row.
 builder.InsertCell();
 builder.Writeln("a");
+
+// Insert the second cell.
 builder.InsertCell();
 builder.Writeln("b");
 
+// End the first row.
+builder.EndRow();
+```
+
+Think of this step as drawing the first row of your table on a piece of paper and filling in the first two cells with "a" and "b".
+
+## Step 3: Add More Rows
+
+Let's add another row to our table.
+
+```csharp
 // Add the second row.
 builder.InsertCell();
 builder.Writeln("c");
@@ -55,26 +70,25 @@ builder.InsertCell();
 builder.Writeln("d");
 ```
 
-Congratulation ! You have now learned how to create a table with Aspose.Words for .NET.
+Here, we are simply extending our table by adding another row with two cells filled with "c" and "d".
 
-### FAQ's
+## Conclusion
 
-#### Q: How do I create a table in Markdown?
+Creating and customizing tables in Aspose.Words for .NET is straightforward once you get the hang of it. By following these steps, you can generate structured and visually appealing tables in your documents. Happy coding!
 
-A: To create a table in Markdown, use the syntax of pipes (`|`) to delimit cells and dashes (`-`) to delimit table headers.
+## FAQ's
 
-#### Q: Can we customize the appearance of a table in Markdown?
+### Can I add more than two cells in a row?
+Yes, you can add as many cells as you need in a row by repeating the `InsertCell()` and `Writeln()` methods.
 
-A: In standard Markdown, table customization options are limited. However, some Markdown editors allow you to add CSS styles to tables to customize their appearance.
+### How can I merge cells in a table?
+You can merge cells using the `CellFormat.HorizontalMerge` and `CellFormat.VerticalMerge` properties.
 
-#### Q: How to merge cells in a table in Markdown?
+### Is it possible to add images to table cells?
+Absolutely! You can insert images into cells using the `DocumentBuilder.InsertImage` method.
 
-A: Merging cells in a table in Markdown depends on the Markdown editor used. Some Markdown editors support merging cells using a specific syntax.
+### Can I style individual cells differently?
+Yes, you can apply different styles to individual cells by accessing them through the `Cells` collection of a row.
 
-#### Q: Do tables in Markdown support CSS styling?
-
-A: In standard Markdown, tables don't offer direct support for CSS styles. However, some Markdown editors allow you to add CSS styles to tables to customize their appearance.
-
-#### Q: Can we add links or text in inline format in the cells of a table in Markdown?
-
-A: Yes, you can add links or inline text to table cells in Markdown using the appropriate Markdown syntax.
+### How do I remove borders from the table?
+You can remove borders by setting the border style to `LineStyle.None` for each border type.
