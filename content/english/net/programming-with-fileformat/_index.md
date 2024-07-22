@@ -16,6 +16,6 @@ Whether you need to generate reports, create custom documents, automate Word doc
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Detect Document File Format](./detect-file-format/) | Step by step guide to detect document file format with Aspose.Words for .NET. |
-| [Detect Digital Signature on Word Document](./detect-document-signatures/) | Step-by-step guide to detect digital signatures in a document with Aspose.Words for .NET. |
-| [Verify Encrypted Word Document](./verify-encrypted-document/) | Step-by-step guide to verify a document is encrypted with Aspose.Words for .NET. |
+| [Detect Document File Format](./detect-file-format/) | Learn how to detect document file formats using Aspose.Words for .NET with this comprehensive, step-by-step guide. |
+| [Detect Digital Signature on Word Document](./detect-document-signatures/) | Learn how to detect digital signatures in Word documents using Aspose.Words for .NET with our step-by-step guide. |
+| [Verify Encrypted Word Document](./verify-encrypted-document/) | Learn how to verify the encryption status of a Word document using Aspose.Words for .NET with this step-by-step guide. |

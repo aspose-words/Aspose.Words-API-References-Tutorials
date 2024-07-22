@@ -2,229 +2,174 @@
 title: Detect Document File Format
 linktitle: Detect Document File Format
 second_title: Aspose.Words Document Processing API
-description: Step by step guide to detect document file format with Aspose.Words for .NET.
+description: Learn how to detect document file formats using Aspose.Words for .NET with this comprehensive, step-by-step guide.
 type: docs
 weight: 10
 url: /net/programming-with-fileformat/detect-file-format/
 ---
+## Introduction
 
-This article provides a step by step guide on how to use the document file format detection feature with Aspose.Words for .NET. We will explain each part of the code in detail. At the end of this tutorial, you will be able to understand how to detect the format of different document files.
+In today's digital world, managing different document formats efficiently is crucial. Whether you are handling Word, PDF, HTML, or other formats, being able to detect and process these files correctly can save you a lot of time and effort. In this tutorial, we'll explore how to detect document file formats using Aspose.Words for .NET. This guide will walk you through everything you need to know, from prerequisites to a detailed step-by-step guide.
 
-Before you start, make sure you have installed and configured the Aspose.Words for .NET library in your project. You can find the library and installation instructions on the Aspose website.
+## Prerequisites
 
-## Step 1: Define directories
+Before we dive into the code, let's make sure you have everything you need:
 
-To start, you need to define the directories where you want to store the files according to their format. Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path to your documents directory. We create the "Supported", "Unknown", "Encrypted" and "Pre97" directories if they do not already exist.
+- Aspose.Words for .NET: You can download it from [here](https://releases.aspose.com/words/net/). Make sure you have a valid license. If not, you can get a [temporary license](https://purchase.aspose.com/temporary-license/).
+- Visual Studio: Any recent version will work fine.
+- .NET Framework: Ensure you have the correct version installed.
+
+## Import Namespaces
+
+To get started, you'll need to import the necessary namespaces in your project:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.FileFormats;
+using Aspose.Words.FileFormats.Util;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+```
+
+Let's break down the example into multiple steps to make it easier to follow.
+
+## Step 1: Set Up Directories
+
+First, we need to set up directories where the files will be sorted based on their format.
+
+```csharp
+// The path to the documents directory.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 string supportedDir = dataDir + "Supported";
 string unknownDir = dataDir + "Unknown";
 string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
-// Create the directories if they don't already exist.
-if (Directory.Exists(supportedDir) == false)
-Directory.CreateDirectory(supportedDir);
-if (Directory.Exists(unknownDir) == false)
-Directory.CreateDirectory(unknownDir);
-if (Directory.Exists(encryptedDir) == false)
-Directory.CreateDirectory(encryptedDir);
-if (Directory.Exists(pre97Dir) == false)
-Directory.CreateDirectory(pre97Dir);
+// Create the directories if they do not already exist.
+if (!Directory.Exists(supportedDir))
+    Directory.CreateDirectory(supportedDir);
+if (!Directory.Exists(unknownDir))
+    Directory.CreateDirectory(unknownDir);
+if (!Directory.Exists(encryptedDir))
+    Directory.CreateDirectory(encryptedDir);
+if (!Directory.Exists(pre97Dir))
+    Directory.CreateDirectory(pre97Dir);
 ```
 
-## Step 2: Browse Files
+## Step 2: Get the List of Files
 
-Then we use the `GetFiles` method of the `Directory` class to get the list of files in the specified directory. We also use a `Where` clause to exclude a specific file named "Corrupted document.docx".
+Next, we'll get a list of files from the directory, excluding any corrupted documents.
 
 ```csharp
-IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
+IEnumerable<string> fileList = Directory.GetFiles(dataDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## Step 3: Detect the format of each file
+## Step 3: Detect File Formats
 
-We loop through each file in the list and use the `DetectFileFormat` method of the `FileFormatUtil` class to detect the format of the file. We also display the detected document type.
+Now, we iterate through each file and detect its format using Aspose.Words.
 
 ```csharp
 foreach (string fileName in fileList)
 {
-string nameOnly = Path. GetFileName(fileName);
-Console.Write(nameOnly);
+    string nameOnly = Path.GetFileName(fileName);
 
-FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
+    Console.Write(nameOnly);
 
-// Display the document type
-switch (info.LoadFormat)
-{
-LoadFormat.Doc box:
-Console.WriteLine("\tDocument Microsoft Word 97-2003.");
-break;
-LoadFormat.Dot box:
-Console.WriteLine("\tMicrosoft Word 97-2003 template.");
-break;
-LoadFormat.Docx box:
-Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
-break;
-// ... Add cases for other supported document formats
-LoadFormat.Unknown case:
-Console.WriteLine("\tFormat in
+    FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-known.");
-break;
-}
+    // Display the document type
+    switch (info.LoadFormat)
+    {
+        case LoadFormat.Doc:
+            Console.WriteLine("\tMicrosoft Word 97-2003 document.");
+            break;
+        case LoadFormat.Dot:
+            Console.WriteLine("\tMicrosoft Word 97-2003 template.");
+            break;
+        case LoadFormat.Docx:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Document.");
+            break;
+        case LoadFormat.Docm:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Document.");
+            break;
+        case LoadFormat.Dotx:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Template.");
+            break;
+        case LoadFormat.Dotm:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Template.");
+            break;
+        case LoadFormat.FlatOpc:
+            Console.WriteLine("\tFlat OPC document.");
+            break;
+        case LoadFormat.Rtf:
+            Console.WriteLine("\tRTF format.");
+            break;
+        case LoadFormat.WordML:
+            Console.WriteLine("\tMicrosoft Word 2003 WordprocessingML format.");
+            break;
+        case LoadFormat.Html:
+            Console.WriteLine("\tHTML format.");
+            break;
+        case LoadFormat.Mhtml:
+            Console.WriteLine("\tMHTML (Web archive) format.");
+            break;
+        case LoadFormat.Odt:
+            Console.WriteLine("\tOpenDocument Text.");
+            break;
+        case LoadFormat.Ott:
+            Console.WriteLine("\tOpenDocument Text Template.");
+            break;
+        case LoadFormat.DocPreWord60:
+            Console.WriteLine("\tMS Word 6 or Word 95 format.");
+            break;
+        case LoadFormat.Unknown:
+            Console.WriteLine("\tUnknown format.");
+            break;
+    }
 
-if (info.IsEncrypted)
-{
-Console.WriteLine("\tAn encrypted document.");
-File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
-}
-else
-{
-switch (info.LoadFormat)
-{
-LoadFormat.DocPreWord60 box:
-File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
-break;
-LoadFormat.Unknown case:
-File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
-break;
-default:
-File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
-break;
-}
-}
+    if (info.IsEncrypted)
+    {
+        Console.WriteLine("\tAn encrypted document.");
+        File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
+    }
+    else
+    {
+        switch (info.LoadFormat)
+        {
+            case LoadFormat.DocPreWord60:
+                File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
+                break;
+            case LoadFormat.Unknown:
+                File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
+                break;
+            default:
+                File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
+                break;
+        }
+    }
 }
 ```
 
-That's all ! You have successfully detected the format of different document files using Aspose.Words for .NET.
+## Conclusion
 
-### Example source code for file format detection with Aspose.Words for .NET
+Detecting document file formats using Aspose.Words for .NET is a straightforward process. By setting up your directories, getting your list of files, and utilizing Aspose.Words to detect file formats, you can efficiently organize and manage your documents. This approach not only saves time but also ensures that you handle various document formats correctly.
 
-```csharp
+## FAQ's
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	string supportedDir = dataDir + "Supported";
-	string unknownDir = dataDir + "Unknown";
-	string encryptedDir = dataDir + "Encrypted";
-	string pre97Dir = dataDir + "Pre97";
+### What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful library for working with Word documents programmatically. It allows developers to create, modify, and convert documents in various formats.
 
-	// Create the directories if they do not already exist.
-	if (Directory.Exists(supportedDir) == false)
-		Directory.CreateDirectory(supportedDir);
-	if (Directory.Exists(unknownDir) == false)
-		Directory.CreateDirectory(unknownDir);
-	if (Directory.Exists(encryptedDir) == false)
-		Directory.CreateDirectory(encryptedDir);
-	if (Directory.Exists(pre97Dir) == false)
-		Directory.CreateDirectory(pre97Dir);
+### Can Aspose.Words detect encrypted documents?
+Yes, Aspose.Words can detect if a document is encrypted and you can handle such documents accordingly.
 
-	
-	IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
-	
-	foreach (string fileName in fileList)
-	{
-		string nameOnly = Path.GetFileName(fileName);
-		
-		Console.Write(nameOnly);
-		
-		FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
+### What formats can Aspose.Words detect?
+Aspose.Words can detect a wide range of formats including DOC, DOCX, RTF, HTML, MHTML, ODT, and many more.
 
-		// Display the document type
-		switch (info.LoadFormat)
-		{
-			case LoadFormat.Doc:
-				Console.WriteLine("\tMicrosoft Word 97-2003 document.");
-				break;
-			case LoadFormat.Dot:
-				Console.WriteLine("\tMicrosoft Word 97-2003 template.");
-				break;
-			case LoadFormat.Docx:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Document.");
-				break;
-			case LoadFormat.Docm:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Document.");
-				break;
-			case LoadFormat.Dotx:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Template.");
-				break;
-			case LoadFormat.Dotm:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Template.");
-				break;
-			case LoadFormat.FlatOpc:
-				Console.WriteLine("\tFlat OPC document.");
-				break;
-			case LoadFormat.Rtf:
-				Console.WriteLine("\tRTF format.");
-				break;
-			case LoadFormat.WordML:
-				Console.WriteLine("\tMicrosoft Word 2003 WordprocessingML format.");
-				break;
-			case LoadFormat.Html:
-				Console.WriteLine("\tHTML format.");
-				break;
-			case LoadFormat.Mhtml:
-				Console.WriteLine("\tMHTML (Web archive) format.");
-				break;
-			case LoadFormat.Odt:
-				Console.WriteLine("\tOpenDocument Text.");
-				break;
-			case LoadFormat.Ott:
-				Console.WriteLine("\tOpenDocument Text Template.");
-				break;
-			case LoadFormat.DocPreWord60:
-				Console.WriteLine("\tMS Word 6 or Word 95 format.");
-				break;
-			case LoadFormat.Unknown:
-				Console.WriteLine("\tUnknown format.");
-				break;
-		}
-		
+### How can I get a temporary license for Aspose.Words?
+You can get a temporary license from the [Aspose Purchase](https://purchase.aspose.com/temporary-license/) page.
 
-		if (info.IsEncrypted)
-		{
-			Console.WriteLine("\tAn encrypted document.");
-			File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
-		}
-		else
-		{
-			switch (info.LoadFormat)
-			{
-				case LoadFormat.DocPreWord60:
-					File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
-					break;
-				case LoadFormat.Unknown:
-					File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
-					break;
-				default:
-					File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
-					break;
-			}
-		}
-	}
-	
+### Where can I find the documentation for Aspose.Words?
+The documentation for Aspose.Words can be found [here](https://reference.aspose.com/words/net/).
 
-```
-
-### FAQ for Document file format detection
-
-#### How to detect the format of a document file using Aspose.Words for .NET?
-
-To detect the format of a document file using Aspose.Words for .NET, you can follow the steps provided in the tutorial. Using the `DetectFileFormat` method of the `FileFormatUtil` class will allow you to detect the format of the document file. This will allow you to determine whether it is a Microsoft Word 97-2003 document, a template, an Office Open XML WordprocessingML document, or other supported formats. The code provided in the tutorial will walk you through implementing this feature.
-
-#### What document formats does Aspose.Words for .NET support?
-
-Aspose.Words for .NET supports a variety of document formats including Microsoft Word 97-2003 documents (DOC), Templates (DOT), Office Open XML WordprocessingML documents (DOCX), Office Open XML WordprocessingML documents with macros (DOCM), Office Open XML WordprocessingML templates without macros (DOTX), Office Open XML WordprocessingML templates with macros (DOTM), Flat OPC documents, RTF documents, Microsoft Word 2003 WordprocessingML documents, HTML documents, MHTML (Web archive) documents, OpenDocument Text (ODT) documents, OpenDocument Text (OTT) templates, MS Word 6 or Word 95 documents, and unknown document formats.
-
-#### How to handle encrypted document files during format detection?
-
-When detecting the format of a document file, you can use the `IsEncrypted` property of the `FileFormatInfo` object to check if the file is encrypted. If the file is encrypted, you can take additional steps to handle this specific case, such as copying the file to a directory dedicated to encrypted documents. You can use the `File.Copy` method to do this.
-
-#### What actions should be taken when the format of a document is unknown?
-
-When the format of a document is unknown, you can decide to handle it in a way specific to your application. In the example provided in the tutorial, the document is copied into a specific directory dedicated to documents of unknown format. You can customize this action to suit your specific needs.
-
-#### Are there any other features of Aspose.Words for .NET that can be used in conjunction with document format detection?
-
-Yes, Aspose.Words for .NET offers many other features for processing and manipulating Word documents. For example, you can use the library to extract text, images, or metadata from documents, apply formatting changes, merge documents, convert documents to different formats, and more.
