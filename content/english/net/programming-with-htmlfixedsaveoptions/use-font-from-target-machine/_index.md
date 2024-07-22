@@ -2,65 +2,113 @@
 title: Use Font From Target Machine
 linktitle: Use Font From Target Machine
 second_title: Aspose.Words Document Processing API
-description: Learn how to convert a Word document to fixed HTML using the target machine's fonts with Aspose.Words for .NET.
+description: Learn how to use fonts from the target machine in your Word documents with Aspose.Words for .NET. Follow our step-by-step guide for seamless font integration.
 type: docs
 weight: 10
 url: /net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
+## Introduction
 
-When converting a Word document to fixed HTML in a C# application, you may want to use the target machine's fonts to ensure that the rendered HTML retains the original look and style of the document. With the Aspose.Words library for .NET, you can easily specify this functionality using the HtmlFixedSaveOptions save options. In this step-by-step guide, we will walk you through how to use the C# source code of Aspose.Words for .NET to convert a Word document to fixed HTML using the target machine's fonts using the HtmlFixedSaveOptions.
+Are you ready to dive into the fascinating world of Aspose.Words for .NET? Buckle up, because we're about to take you on a journey through the magical realm of fonts. Today, we're focusing on how to use fonts from the target machine when working with Word documents. This nifty feature ensures that your document looks exactly the way you intend, regardless of where it's viewed. Let's get started!
 
-## Understanding the Aspose.Words library
+## Prerequisites
 
-Before diving into the code, it's important to understand the Aspose.Words library for .NET. Aspose.Words is a powerful library to create, edit, convert and protect Word documents in different platforms including .NET. It offers many features for manipulating documents, such as inserting text, changing formatting, adding sections and much more.
+Before we jump into the nitty-gritty details, let's make sure you have everything you need:
 
-## Loading the Word document
+1. Aspose.Words for .NET: Make sure you have the Aspose.Words for .NET library installed. If you haven't already, you can download it [here](https://releases.aspose.com/words/net/).
+2. Development Environment: You should have a .NET development environment set up, such as Visual Studio.
+3. Document to Work With: Have a Word document ready for testing. We'll be using a document named "Bullet points with alternative font.docx".
 
-The first step is to load the Word document you want to convert to fixed HTML. Use the Document class to load the document from the source file. Here is an example :
+Now that we've covered the basics, let's dive into the code!
 
-```csharp
-Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
-```
+## Import Namespaces
 
-In this example, we load the document "Bullet points with alternative font.docx" located in the documents directory.
-
-## Configuring backup options
-
-The next step is to configure the save options for converting to fixed HTML. Use the HtmlFixedSaveOptions class and set the UseTargetMachineFonts property to true to tell Aspose.Words to use fonts from the target machine. Here's how to do it:
+First things first, we need to import the necessary namespaces. This is the backbone of our project, connecting all the dots.
 
 ```csharp
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-We create a new HtmlFixedSaveOptions object and set the UseTargetMachineFonts property to true to use the target machine's fonts when converting.
+## Step 1: Load the Word Document
 
-## Fixed HTML document conversion
+The first step in our tutorial is to load the Word document. This is where it all begins. We'll use the `Document` class from the Aspose.Words library to achieve this.
 
-Now that we have configured the save options, we can proceed to convert the document to fixed HTML. Use the Save method of the Document class to save the converted document in fixed HTML format by specifying save options. Here is an example :
+### Step 1.1: Define the Document Path
 
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
-```
-
-In this example, we save the converted document as "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html" using the specified save options.
-
-### Example source code for HtmlFixedSaveOptions with "Use fonts from target machine" feature using Aspose.Words for .NET
+Let's start by defining the path to your documents directory. This is where your Word document is located.
 
 ```csharp
 // Path to your documents directory
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+### Step 1.2: Load the Document
+
+Now, we load the document using the `Document` class.
+
+```csharp
 // Load the Word document
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
+```
 
+## Step 2: Configure Save Options
+
+Next, we need to configure the save options. This step is crucial as it ensures that the fonts used in your document are those from the target machine.
+
+We'll create an instance of `HtmlFixedSaveOptions` and set the `UseTargetMachineFonts` property to `true`.
+
+```csharp
 // Configure backup options with the "Use fonts from target machine" feature
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
+{
+    UseTargetMachineFonts = true
+};
+```
 
+## Step 3: Save the Document
+
+Finally, we save the document as a fixed HTML file. This is where the magic happens!
+
+We'll use the `Save` method to save the document with the configured save options.
+
+```csharp
 // Convert document to fixed HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
+## Step 4: Verify the Output
+
+Last but not least, it's always a good idea to verify the output. Open the saved HTML file and check if the fonts are correctly applied from the target machine.
+
+Navigate to the directory where you saved the HTML file and open it in a web browser.
+
+```csharp
+// Verify the output by opening the HTML file
+System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
+```
+
+And there you have it! You've successfully used fonts from the target machine in your Word document using Aspose.Words for .NET.
+
 ## Conclusion
 
-In this guide, we have explained how to convert a Word document to fixed HTML using the target machine's fonts with the Aspose.Words library for .NET. By following the provided steps and using the provided C# source code, you can easily apply this functionality in your C# application. The conversion to fixed HTML with the fonts of the target machine guarantees faithful and consistent rendering of the document in an HTML format.
+Using fonts from the target machine ensures that your Word documents look consistent and professional, no matter where they're viewed. Aspose.Words for .NET makes this process straightforward and efficient. By following this tutorial, you've learned how to load a document, configure save options, and save the document with the desired font settings. Happy coding!
+
+## FAQ's
+
+### Can I use this method with other document formats?
+Yes, Aspose.Words for .NET supports various document formats, and you can configure similar save options for different formats.
+
+### What if the target machine doesn't have the required fonts?
+If the target machine doesn't have the required fonts, the document might not render as intended. It's always a good idea to embed fonts when necessary.
+
+### How do I embed fonts in a document?
+Embedding fonts can be done using the `FontSettings` class in Aspose.Words for .NET. Refer to the [documentation](https://reference.aspose.com/words/net/) for more details.
+
+### Is there a way to preview the document before saving?
+Yes, you can use the `DocumentRenderer` class to preview the document before saving. Check out the Aspose.Words for .NET [documentation](https://reference.aspose.com/words/net/) for more information.
+
+### Can I customize the HTML output further?
+Absolutely! The `HtmlFixedSaveOptions` class provides various properties to customize the HTML output. Explore the [documentation](https://reference.aspose.com/words/net/) for all available options.
 

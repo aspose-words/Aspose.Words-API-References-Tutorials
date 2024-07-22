@@ -12,5 +12,5 @@ The Aspose.Words for .NET tutorials are designed to help you master using the As
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Use Font From Target Machine](./use-font-from-target-machine/) | Learn how to convert a Word document to fixed HTML using the target machine's fonts with Aspose.Words for .NET. |
-| [Write All Css Rules In Single File](./write-all-css-rules-in-single-file/) | Learn how to convert a Word document to fixed HTML by writing all CSS rules in a single file with Aspose.Words for .NET. |
+| [Use Font From Target Machine](./use-font-from-target-machine/) | Learn how to use fonts from the target machine in your Word documents with Aspose.Words for .NET. Follow our step-by-step guide for seamless font integration. |
+| [Write All Css Rules In Single File](./write-all-css-rules-in-single-file/) | Learn how to convert Word documents to HTML using Aspose.Words for .NET with all CSS rules in a single file for cleaner code and easier maintenance. |
