@@ -13,5 +13,5 @@ Words Processing with MarkdownSaveOptions is an in-depth resource that walks you
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Export Into Markdown With Table Content Alignment](./export-into-markdown-with-table-content-alignment/) | Learn how to export table content with different alignments to Markdown files using Aspose.Words for .NET. |
-| [Set Images Folder](./set-images-folder/) | Learn how to set the images folder when exporting to Markdown with Aspose.Words for .NET. Customize the placement of images for better organization and integration.|
+| [Export Into Markdown With Table Content Alignment](./export-into-markdown-with-table-content-alignment/) | Learn how to export Word documents into Markdown with aligned tables using Aspose.Words for .NET. Follow our step-by-step guide for perfect Markdown tables. |
+| [Set Images Folder](./set-images-folder/) | Convert Word documents to Markdown with proper table alignment using Aspose.Words for .NET. Follow our detailed guide for perfect results. |
