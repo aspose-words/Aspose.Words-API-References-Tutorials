@@ -16,6 +16,7 @@ Do you ever find yourself scratching your head, wondering why your PDF files are
 Before we embark on this exciting journey, let’s make sure you’ve got everything you need. Here’s a quick checklist:
 
 - Aspose.Words for .NET: Make sure you have Aspose.Words for .NET installed. If you don’t have it yet, you can download it [here](https://releases.aspose.com/words/net/).
+- Development Environment: You’ll need a development environment like Visual Studio.
 - A Word Document: We’ll be using a Word document (e.g., "Rendering.docx") for this tutorial.
 - Basic C# Knowledge: A basic understanding of C# will help you follow along.
 
