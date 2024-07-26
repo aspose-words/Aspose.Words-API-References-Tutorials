@@ -16,13 +16,13 @@ The code samples provided in the tutorials will help you understand the concepts
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Check Box Type Content Control](./check-box-type-content-control/) | Learn how to create a Check Box Type Content Control in a Word document using Aspose.Words for .NET. |
+| [Check Box Type Content Control](./check-box-type-content-control/) | Learn how to add a Check Box Type Content Control in Word documents using Aspose.Words for .NET with this detailed, step-by-step tutorial. |
 | [Current State Of Check Box](./current-state-of-check-box/) | Learn how to retrieve and set the current state of a check box content control in a Word document using Aspose.Words for .NET. |
 | [Modify Content Controls](./modify-content-controls/) | Learn how to modify text, dropdown lists, and images within content controls in a Word document using Aspose.Words for .NET. |
 | [Combo Box Content Control](./combo-box-content-control/) | Learn how to create a Combo Box Content Control in a Word document using Aspose.Words for .NET. |
 | [Rich Text Box Content Control](./rich-text-box-content-control/) | Learn how to create a rich text box content control in a Word document using Aspose.Words for .NET enabling text formatting and styling. |
 | [Set Content Control Color](./set-content-control-color/) | Learn how to set the color of a content control in a Word document using Aspose.Words for .NET, customizing its appearance. |
-| [Clear Contents Control](./clear-contents-control/) | Learn how to clear the contents of a control in a Word document using Aspose.Words for .NET. |
+| [Clear Contents Control](./clear-contents-control/) | Learn how to clear contents control in a Word document using Aspose.Words for .NET with our step-by-step guide. |
 | [Bind SDT to Custom Xml Part](./bind-sdt-to-custom-xml-part/) | Learn how to bind a SDT to a Custom Xml Part using Aspose.Words for .NET. |
 | [Set Content Control Style](./set-content-control-style/) | Learn how to set the style of a content control in a Word document using Aspose.Words for .NET, applying consistent formatting. |
 | [Creating Table Repeating Section Mapped To Custom Xml Part](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Learn how to create a table with a repeating section mapped to a CustomXmlPart in a Word document using Aspose.Words for .NET. |
