@@ -16,24 +16,24 @@ Whether you want to convert Word documents to PDF for online distribution, archi
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Display Doc Title In Window Titlebar](./display-doc-title-in-window-titlebar/) | Learn how to display document title in window title bar when converting to PDF with Aspose.Words for .NET. |
+| [Display Document Title In Window Titlebar](./display-doc-title-in-window-titlebar/) | Learn how to display the document title in the window title bar of your PDFs using Aspose.Words for .NET with this step-by-step guide. |
 | [Pdf Render Warnings](./pdf-render-warnings/) | Step-by-step guide to dealing with PDF rendering warnings with Aspose.Words for .NET. |
-| [Add Digital Signature to PDF using Certificate Holder](./digitally-signed-pdf-using-certificate-holder/) | Learn how to digitally sign a PDF using a certificate holder with Aspose.Words for .NET. |
-| [Embed Fonts in PDF Document](./embedded-all-fonts/) | Step by step guide to embed all fonts in a PDF using Aspose.Words for .NET. |
-| [Embed Subset Fonts in PDF Document](./embedded-subset-fonts/) | Step-by-step guide to embedding font subsets in a PDF using Aspose.Words for .NET. |
-| [Reduce PDF Size by Disabling Embeded Fonts](./disable-embed-windows-fonts/) | Learn how to disable Windows font embedding when converting documents to PDF with Aspose.Words for .NET. |
-| [Optimize PDF Size with Skip Embedded Arial & Times Roman Fonts](./skip-embedded-arial-and-times-roman-fonts/) | Step-by-step guide to generate PDF without embedding Arial and Times Roman fonts with Aspose.Words for .NET. |
-| [Reduce PDF File Size by Not Embedding Core Fonts](./avoid-embedding-core-fonts/) | Learn how to avoid basic font embedding when converting Word documents to PDF with Aspose.Words for .NET. |
+| [Add Digital Signature to PDF using Certificate Holder](./digitally-signed-pdf-using-certificate-holder/) | Secure your PDF files with a digital signature using Aspose.Words for .NET. Follow this step-by-step guide to add a digital signature to your PDFs effortlessly. |
+| [Embed Fonts in PDF Document](./embedded-all-fonts/) | Embed fonts in PDF documents effortlessly using Aspose.Words for .NET with this detailed, step-by-step guide. Ensure consistent appearance across all devices. |
+| [Embed Subset Fonts in PDF Document](./embedded-subset-fonts/) | Reduce PDF file size by embedding only necessary font subsets using Aspose.Words for .NET. Follow our step-by-step guide to optimize your PDFs efficiently. |
+| [Reduce PDF Size by Disabling Embeded Fonts](./disable-embed-windows-fonts/) | Reduce PDF size by disabling embedded fonts using Aspose.Words for .NET. Follow our step-by-step guide to optimize your documents for efficient storage and sharing. |
+| [Optimize PDF Size with Skip Embedded Arial & Times Roman Fonts](./skip-embedded-arial-and-times-roman-fonts/) | Optimize PDF size by skipping embedded Arial and Times Roman fonts using Aspose.Words for .NET. Follow this step-by-step guide to streamline your PDF files. |
+| [Reduce PDF File Size by Not Embedding Core Fonts](./avoid-embedding-core-fonts/) | Learn how to reduce PDF file size by not embedding core fonts using Aspose.Words for .NET. Follow our step-by-step guide to optimize your PDFs. |
 | [Escape URI in PDF Document](./escape-uri/) | Learn how to escape URIs in PDFs using Aspose.Words for .NET. This detailed guide walks you through the process step-by-step. |
-| [Export Word Document Header Footer Bookmarks to PDF Document](./export-header-footer-bookmarks/) | Step by step guide to export header and footer bookmarks with Aspose.Words for .NET. |
-| [Reduce PDF Size with Scale Wmf Fonts To Metafile Size](./scale-wmf-fonts-to-metafile-size/) | Step-by-step guide to adjust WMF font size when converting to PDF with Aspose.Words for .NET. |
-| [Imporove PDF Text Postioning with Additional Text Positioning](./additional-text-positioning/) | Learn how to control the placement of additional text when converting Word documents to PDF with Aspose.Words for .NET. |
-| [Convert Word Document To PDF 1.7](./conversion-to-pdf-17/) | Learn how to convert documents to PDF 1.7 with Aspose.Words for .NET. |
-| [Reduce PDF Document Size with Downsampling Images](./downsampling-images/) | Learn how to reduce image resolution when converting to PDF with Aspose.Words for .NET. |
-| [Set Outline Options in a PDF Document](./set-outline-options/) | Step-by-step guide to set outline options in a PDF document with Aspose.Words for .NET. |
-| [Export Custom Properties in a PDF Document](./custom-properties-export/) | Learn how to export custom properties when converting documents to PDF with Aspose.Words for .NET. |
-| [Export Word Document Structure to PDF Document](./export-document-structure/) | Step by step guide to export document structure with Aspose.Words for .NET. |
-| [Image Compression in a PDF Document](./image-compression/) | Step by step guide to compression images with Aspose.Words for .NET. |
-| [Update Last Printed Property in PDF Document](./update-last-printed-property/) | Step-by-step guide to update "Last Printed" property when converting to PDF with Aspose.Words for .NET. |
-| [Render 3D DML 3DEffects in a PDF Document](./dml-3deffects-rendering/) | Learn how to enable rendering of 3D DML effects when converting to PDF with Aspose.Words for .NET. |
-| [Interpolate Images in a PDF Document](./interpolate-images/) | Step-by-step guide to enable image interpolation with Aspose.Words for .NET. |
+| [Export Word Document Header Footer Bookmarks to PDF Document](./export-header-footer-bookmarks/) | Learn how to export header and footer bookmarks from a Word document to PDF using Aspose.Words for .NET with our step-by-step guide. |
+| [Reduce PDF Size with Scale Wmf Fonts To Metafile Size](./scale-wmf-fonts-to-metafile-size/) | Step-by-step guide to reduce pdf size with scale wmf fonts to metafile size size when converting to PDF with Aspose.Words for .NET. |
+| [Imporove PDF Text Postioning with Additional Text Positioning](./additional-text-positioning/) | Learn how to improve PDF text positioning with Aspose.Words for .NET in a few easy steps. Enhance your document's appearance. |
+| [Convert Word Document To PDF 1.7](./conversion-to-pdf-17/) | Effortlessly convert Word documents to PDF 1.7 using Aspose.Words for .NET. Follow this guide to ensure your documents are universally accessible and professionally formatted. |
+| [Reduce PDF Document Size with Downsampling Images](./downsampling-images/) | Reduce PDF document size by downsampling images using Aspose.Words for .NET. Optimize your PDFs for faster upload and download times. |
+| [Set Outline Options in a PDF Document](./set-outline-options/) | Learn how to set outline options in a PDF document using Aspose.Words for .NET. Enhance PDF navigation by configuring heading levels and expanded outlines. |
+| [Export Custom Properties in a PDF Document](./custom-properties-export/) | Learn how to export custom properties in a PDF document using Aspose.Words for .NET with our detailed, step-by-step guide. |
+| [Export Word Document Structure to PDF Document](./export-document-structure/) | Export the structure of a Word document to a PDF with Aspose.Words for .NET. Follow our step-by-step guide to preserve document layout and improve PDF navigation. |
+| [Image Compression in a PDF Document](./image-compression/) | Learn how to compress images in PDF documents using Aspose.Words for .NET. Follow this guide for optimized file size and quality. |
+| [Update Last Printed Property in PDF Document](./update-last-printed-property/) | Learn how to update the last printed property in a PDF document using Aspose.Words for .NET with our step-by-step guide. |
+| [Render 3D DML 3DEffects in a PDF Document](./dml-3deffects-rendering/) | Learn how to render stunning 3D DML effects in PDF documents using Aspose.Words for .NET with this comprehensive step-by-step guide. |
+| [Interpolate Images in a PDF Document](./interpolate-images/) | Learn how to interpolate images in a PDF document using Aspose.Words for .NET with our step-by-step guide. Improve your PDF's image quality easily. |
