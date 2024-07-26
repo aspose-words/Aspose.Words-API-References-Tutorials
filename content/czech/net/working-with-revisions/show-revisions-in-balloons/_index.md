@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Otázka: Jak zobrazit revize v bublinách pomocí Aspose.Words pro .NET?
 
- A: Použijte`ShowInBalloons` vlastnictvím`RevisionOptions` objekt pro konfiguraci zobrazení revizí v bublinách. Tuto vlastnost můžete zapnout`ShowInBalloons.FormatAndDelete` k zobrazení revizí v bublinách s revizemi odstranění a formátování.
+ A: Použijte`ShowInBalloons` majetek z`RevisionOptions` objekt pro konfiguraci zobrazení revizí v bublinách. Tuto vlastnost můžete zapnout`ShowInBalloons.FormatAndDelete` k zobrazení revizí v bublinách s revizemi odstranění a formátování.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

@@ -36,7 +36,7 @@ Section section = doc.Sections[0];
 ```
 
 ## 步骤 3：编辑部分设置
-要修改部分设置，我们使用部分的属性`PageSetup`对象。在此示例中，我们将更改边距、页眉和页脚距离以及文本列间距。
+要修改部分设置，我们使用部分属性`PageSetup`对象。在此示例中，我们将更改边距、页眉和页脚距离以及文本列间距。
 
 ```csharp
 section.PageSetup.LeftMargin = 90; // 3.17厘米

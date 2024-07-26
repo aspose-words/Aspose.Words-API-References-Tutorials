@@ -2,82 +2,94 @@
 title: Kết xuất các hiệu ứng 3D DML 3D trong tài liệu PDF
 linktitle: Kết xuất các hiệu ứng 3D DML 3D trong tài liệu PDF
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách bật hiển thị hiệu ứng DML 3D khi chuyển đổi sang PDF bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách hiển thị các hiệu ứng DML 3D tuyệt đẹp trong tài liệu PDF bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này.
 type: docs
 weight: 10
 url: /vi/net/programming-with-pdfsaveoptions/dml-3deffects-rendering/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để bật hiển thị hiệu ứng DML 3D khi chuyển đổi sang PDF bằng Aspose.Words cho .NET. Điều này giữ các hiệu ứng 3D trong tài liệu PDF được tạo. Làm theo các bước dưới đây:
+Bạn đã bao giờ muốn tạo các tài liệu PDF tuyệt đẹp với hiệu ứng 3D từ các tệp Word của mình chưa? Vâng, bạn thật may mắn! Hôm nay, chúng ta sẽ đi sâu vào cách hiển thị hiệu ứng 3D DrawML (DML) trong tài liệu PDF bằng Aspose.Words cho .NET. Aspose.Words là một thư viện mạnh mẽ cho phép bạn thao tác các tài liệu Word theo chương trình và với các tính năng mạnh mẽ của nó, bạn có thể dễ dàng xuất tài liệu của mình với các hiệu ứng 3D nâng cao sang định dạng PDF. Hướng dẫn từng bước này sẽ hướng dẫn bạn mọi thứ bạn cần biết, từ việc thiết lập môi trường cho đến thực thi mã. Vì vậy, hãy bắt đầu và làm cho tài liệu của bạn nổi bật với hiệu ứng 3D!
 
-## Bước 1: Tải tài liệu
+## Điều kiện tiên quyết
 
-Bắt đầu bằng cách tải lên tài liệu bạn muốn chuyển đổi sang PDF:
+Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ mình cần. Dưới đây là danh sách các điều kiện tiên quyết để giúp bạn bắt đầu:
+
+1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống[đây](https://releases.aspose.com/words/net/).
+2. .NET Framework: Bạn nên cài đặt .NET Framework trên máy của mình.
+3. Môi trường phát triển: Một môi trường phát triển như Visual Studio.
+4. Word Document: Là tài liệu Word có hiệu ứng 3D mà bạn muốn chuyển đổi sang PDF.
+5.  Giấy phép tạm thời: Để có đầy đủ khả năng, bạn có thể cần giấy phép tạm thời từ Aspose mà bạn có thể nhận được[đây](https://purchase.aspose.com/temporary-license/).
+
+Với những điều kiện tiên quyết này, bạn đã sẵn sàng hiển thị hiệu ứng 3D trong tài liệu PDF của mình.
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết trong dự án của bạn. Điều này rất quan trọng vì nó cho phép bạn sử dụng các lớp và phương thức do Aspose.Words cung cấp.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Bước 1: Tải tài liệu Word của bạn
+
+Bước đầu tiên là tải tài liệu Word của bạn. Tài liệu này phải chứa các hiệu ứng 3D mà bạn muốn hiển thị trong PDF.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Hãy chắc chắn chỉ định đường dẫn chính xác đến tài liệu của bạn.
+ Ở đây, chúng tôi xác định đường dẫn đến thư mục tài liệu của bạn và tải tài liệu Word bằng cách sử dụng`Document` lớp học. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục của bạn.
 
 ## Bước 2: Định cấu hình tùy chọn lưu PDF
 
-Tạo một phiên bản của lớp PdfSaveOptions và cho phép hiển thị nâng cao các hiệu ứng DML 3D:
+Tiếp theo, chúng ta cần định cấu hình các tùy chọn lưu để đảm bảo rằng các hiệu ứng 3D được hiển thị chính xác trong tệp PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { Dml3DEffectsRenderingMode = Dml3DEffectsRenderingMode.Advanced };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    Dml3DEffectsRenderingMode = Dml3DEffectsRenderingMode.Advanced
+};
 ```
 
-Tùy chọn này giữ các hiệu ứng 3D trong tài liệu PDF được tạo.
+ Chúng tôi tạo một thể hiện của`PdfSaveOptions` và thiết lập`Dml3DEffectsRenderingMode` ĐẾN`Advanced`. Điều này yêu cầu Aspose.Words hiển thị các hiệu ứng 3D bằng cách sử dụng cài đặt nâng cao, đảm bảo chúng trông ấn tượng nhất có thể trong PDF.
 
-## Bước 3: Chuyển đổi tài liệu sang PDF
+## Bước 3: Lưu tài liệu dưới dạng PDF
 
- Sử dụng`Save` phương pháp chuyển đổi tài liệu sang PDF chỉ định các tùy chọn lưu:
+Cuối cùng, chúng tôi lưu tài liệu dưới dạng PDF bằng các tùy chọn lưu đã chỉ định.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOptions);
 ```
 
-Đảm bảo chỉ định đường dẫn chính xác để lưu tệp PDF đã chuyển đổi.
-
-### Mã nguồn ví dụ cho Kết xuất Dml 3DEffects bằng Aspose.Words cho .NET
-
-```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { Dml3DEffectsRenderingMode = Dml3DEffectsRenderingMode.Advanced };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOptions);
-	 
-```
-
-Bằng cách làm theo các bước này, bạn có thể dễ dàng kích hoạt hiển thị hiệu ứng DML 3D khi chuyển đổi sang PDF bằng Aspose.Words cho .NET.
+ Chúng tôi sử dụng`Save` phương pháp của`Document` class để lưu tài liệu Word dưới dạng PDF. Các tùy chọn lưu mà chúng tôi đã định cấu hình trước đó được chuyển dưới dạng tham số để đảm bảo hiệu ứng 3D được hiển thị chính xác.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách bật hiển thị hiệu ứng DML 3D khi chuyển đổi sang PDF bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được mô tả, bạn có thể dễ dàng giữ các hiệu ứng 3D trong tài liệu PDF được tạo. Sử dụng tính năng này để giữ lại các hiệu ứng hình ảnh quan trọng của tài liệu gốc của bạn.
+Chúc mừng! Bạn đã hiển thị thành công các hiệu ứng DML 3D trong tài liệu PDF bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đơn giản này, bạn có thể chuyển đổi tài liệu Word có hiệu ứng 3D nâng cao thành các tệp PDF tuyệt đẹp, làm cho tài liệu của bạn hấp dẫn và hấp dẫn hơn về mặt hình ảnh. Tính năng mạnh mẽ này của Aspose.Words có thể nâng cao đáng kể chất lượng trình bày tài liệu của bạn.
 
+## Câu hỏi thường gặp
 
-### Các câu hỏi thường gặp
+### Tôi có thể hiển thị các hiệu ứng khác trong tệp PDF bằng Aspose.Words không?
 
-#### Câu hỏi: Việc hiển thị hiệu ứng DML 3D trong tài liệu PDF là gì?
-Đáp: Hiển thị hiệu ứng DML 3D trong tài liệu PDF đề cập đến khả năng giữ lại hiệu ứng 3D khi chuyển đổi tài liệu sang định dạng PDF. Điều này bảo tồn các hiệu ứng hình ảnh và đảm bảo rằng tài liệu PDF được tạo trông giống như tài liệu gốc.
+Có, Aspose.Words hỗ trợ hiển thị nhiều hiệu ứng khác nhau, bao gồm bóng, phản chiếu, v.v. khi xuất sang PDF.
 
-#### Câu hỏi: Làm cách nào tôi có thể bật hiển thị hiệu ứng DML 3D khi chuyển đổi sang PDF bằng Aspose.Words cho .NET?
-Trả lời: Để bật hiển thị hiệu ứng DML 3D khi chuyển đổi sang PDF bằng Aspose.Words cho .NET, hãy làm theo các bước sau:
+### Giấy phép tạm thời có cần thiết để hiển thị hiệu ứng 3D không?
 
- Tạo một thể hiện của`Document` lớp chỉ định đường dẫn đến tài liệu Word.
+Nên sử dụng giấy phép tạm thời để truy cập các tính năng đầy đủ của Aspose.Words, bao gồm các tùy chọn hiển thị nâng cao.
 
- Tạo một thể hiện của`PdfSaveOptions` lớp và thiết lập`Dml3DEffectsRenderingMode`tài sản để`Dml3DEffectsRenderingMode.Advanced` để cho phép hiển thị nâng cao các hiệu ứng DML 3D.
+### Nếu tài liệu Word của tôi không có hiệu ứng 3D thì sao?
 
- Sử dụng`Save` phương pháp của`Document`lớp để lưu tài liệu ở định dạng PDF bằng cách chỉ định các tùy chọn lưu.
+Nếu tài liệu của bạn thiếu hiệu ứng 3D, bạn vẫn có thể chuyển đổi nó sang PDF nhưng các tùy chọn hiển thị đặc biệt sẽ không được áp dụng.
 
-#### Câu hỏi: Làm cách nào để kiểm tra xem hiệu ứng DML 3D đã được hiển thị trong tài liệu PDF được tạo chưa?
-Đáp: Để kiểm tra xem các hiệu ứng DML 3D đã được hiển thị trong tài liệu PDF được tạo hay chưa, hãy mở tệp PDF bằng trình xem PDF tương thích, chẳng hạn như Adobe Acrobat Reader và kiểm tra tài liệu. Bạn sẽ thấy các hiệu ứng 3D giống như chúng xuất hiện trong tài liệu gốc.
+### Tôi có thể tùy chỉnh các khía cạnh khác của việc xuất PDF không?
 
+Tuyệt đối! Aspose.Words cung cấp nhiều tùy chọn để tùy chỉnh đầu ra PDF, bao gồm bố cục trang, cài đặt nén, v.v.
 
+### Tôi có thể tìm tài liệu chi tiết hơn ở đâu?
 
+ Bạn có thể tìm thấy tài liệu toàn diện[đây](https://reference.aspose.com/words/net/).

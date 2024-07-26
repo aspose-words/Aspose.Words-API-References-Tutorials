@@ -2,59 +2,110 @@
 title: مسح التحكم في المحتويات
 linktitle: مسح التحكم في المحتويات
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية مسح محتويات عنصر التحكم في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية مسح التحكم في المحتويات في مستند Word باستخدام Aspose.Words لـ .NET من خلال دليلنا خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-sdt/clear-contents-control/
 ---
+## مقدمة
 
-يوضح هذا البرنامج التعليمي كيفية مسح محتويات SDT في مستند Word باستخدام Aspose.Words لـ .NET. يؤدي مسح محتويات SDT إلى إزالة أي عقد نصية أو فرعية ضمن عنصر التحكم في المحتوى.
+هل أنت مستعد للغوص في عالم Aspose.Words لـ .NET؟ سنستكشف اليوم كيفية مسح التحكم في المحتويات في مستند Word باستخدام هذه المكتبة القوية. لنبدأ بدليل سهل المتابعة خطوة بخطوة!
 
 ## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي، يجب أن يكون لديك ما يلي:
 
-- تم تثبيت Aspose.Words لمكتبة .NET.
-- المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
+قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
 
-## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى الدليل الذي يوجد به المستند الخاص بك.
+1.  Aspose.Words for .NET: قم بتنزيل المكتبة من[هنا](https://releases.aspose.com/words/net/).
+2. .NET Framework: تأكد من تثبيت .NET Framework على جهازك.
+3. IDE: بيئة تطوير متكاملة مثل Visual Studio.
+4. المستند: مستند Word يحتوي على علامات مستند منظمة.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
+مع توفر هذه المتطلبات الأساسية، أنت جاهز لبدء البرمجة.
 
-## الخطوة 2: قم بتحميل المستند واحصل على StructuredDocumentTag
- قم بتحميل مستند Word باستخدام`Document` منشئ، وتمرير المسار إلى الوثيقة كمعلمة. ومن ثم استرجاع المطلوب`StructuredDocumentTag`من الوثيقة. في هذا المثال، نفترض أن SDT هي العقدة الفرعية الأولى في المستند.
+## استيراد مساحات الأسماء
 
-```csharp
-Document doc = new Document(dataDir + "Structured document tags.docx");
-StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
-```
-
-## الخطوة 3: امسح محتويات StructuredDocumentTag
- امسح محتويات SDT باستخدام`Clear` طريقة. يؤدي هذا إلى إزالة أي عقد نصية أو فرعية ضمن عنصر تحكم المحتوى.
+لاستخدام Aspose.Words لـ .NET، تحتاج إلى استيراد مساحات الأسماء الضرورية. إليك مقتطف سريع للبدء:
 
 ```csharp
-sdt.Clear();
+using Aspose.Words;
+using Aspose.Words.Markup;
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند المعدل باستخدام`Save` طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.ClearContentsControl.doc".
+دعونا نقسم عملية مسح التحكم في المحتويات إلى خطوات تفصيلية.
 
-```csharp
-doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
+## الخطوة 1: قم بإعداد مشروعك
+
+أولاً، قم بإعداد بيئة مشروعك.
+
+1. افتح Visual Studio: قم بتشغيل Visual Studio أو IDE المفضل لديك.
+2.  إنشاء مشروع جديد: اذهب إلى`File` >`New` >`Project`، وحدد تطبيق وحدة التحكم C#.
+3. تثبيت Aspose.Words لـ .NET: استخدم NuGet Package Manager لتثبيت Aspose.Words. قم بتشغيل الأمر التالي في وحدة تحكم إدارة الحزم:
+```sh
+Install-Package Aspose.Words
 ```
 
-### مثال على التعليمات البرمجية المصدر لمسح التحكم في المحتويات باستخدام Aspose.Words لـ .NET 
+## الخطوة 2: قم بتحميل المستند
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+بعد ذلك، لنقم بتحميل مستند Word الذي يحتوي على علامات المستندات المنظمة.
 
-	Document doc = new Document(dataDir + "Structured document tags.docx");
-	StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
-	sdt.Clear();
-	doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
-```
+1. المسار إلى المستند: حدد المسار إلى دليل المستند الخاص بك.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  قم بتحميل المستند: استخدم`Document` فئة لتحميل مستند Word الخاص بك.
+   ```csharp
+   Document doc = new Document(dataDir + "Structured document tags.docx");
+   ```
 
-هذا كل شيء! لقد نجحت في مسح محتويات StructuredDocumentTag في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+## الخطوة 3: الوصول إلى علامة المستند المنظمة
+
+الآن، دعنا نصل إلى علامة المستند المنظم (SDT) داخل المستند.
+
+1. الحصول على عقدة SDT: استرداد عقدة SDT من المستند.
+   ```csharp
+   StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
+   ```
+
+## الخطوة 4: مسح محتويات المعاملة الخاصة والتفضيلية (SDT).
+
+امسح محتويات علامة المستند المنظم.
+
+1.  مسح محتويات SDT: استخدم`Clear` طريقة إزالة المحتويات.
+   ```csharp
+   sdt.Clear();
+   ```
+
+## الخطوة 5: احفظ المستند
+
+وأخيرا، احفظ الوثيقة المعدلة.
+
+1. حفظ المستند: احفظ المستند باسم جديد للحفاظ على الملف الأصلي.
+   ```csharp
+   doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
+   ```
+
+## خاتمة
+
+تهانينا! لقد نجحت في مسح التحكم في المحتويات في مستند Word باستخدام Aspose.Words لـ .NET. هذه المكتبة القوية تجعل التعامل مع مستندات Word أمرًا سهلاً. باتباع هذه الخطوات، يمكنك بسهولة إدارة علامات المستندات المنظمة في مشاريعك.
+
+## الأسئلة الشائعة
+
+### ما هو Aspose.Words لـ .NET؟
+
+تعد Aspose.Words for .NET مكتبة قوية للعمل مع مستندات Word برمجيًا ضمن إطار عمل .NET.
+
+### هل يمكنني استخدام Aspose.Words مجانًا؟
+
+ يقدم Aspose.Words نسخة تجريبية مجانية يمكنك تنزيلها[هنا](https://releases.aspose.com/).
+
+### كيف يمكنني الحصول على الدعم لـ Aspose.Words؟
+
+ يمكنك الحصول على الدعم من مجتمع Aspose[هنا](https://forum.aspose.com/c/words/8).
+
+### ما هي علامات المستندات المنظمة؟
+
+علامات المستندات المنظمة (SDTs) هي عناصر تحكم في المحتوى في مستندات Word تعمل كعناصر نائبة لأنواع معينة من المحتوى.
+
+### أين يمكنني العثور على الوثائق الخاصة بـ Aspose.Words؟
+
+ الوثائق متاحة[هنا](https://reference.aspose.com/words/net/).

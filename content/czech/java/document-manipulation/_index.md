@@ -52,7 +52,7 @@ Začněte svou cestu učení ještě dnes a odemkněte nekonečné možnosti man
 Vylepšete srozumitelnost dokumentu pomocí možností Aspose.Words for Java Cleanup. Přečtěte si, jak odstranit prázdné odstavce, nepoužívané oblasti a další.
 ### [Použití polí v Aspose.Words pro Java](./using-fields/)
 Odemkněte automatizaci dokumentů pomocí Aspose.Words pro Java. Naučte se slučovat, formátovat a vkládat obrázky do dokumentů Java. Komplexní průvodce a příklady kódu pro efektivní zpracování dokumentů.
-### [Použití XML dat v Aspose.Words pro Javu](./using-xml-data/)
+### [Použití XML dat v Aspose.Words pro Java](./using-xml-data/)
 Odemkněte sílu Aspose.Words pro Java. Naučte se práci s daty XML, hromadnou korespondenci a knírkovou syntaxi pomocí výukových programů krok za krokem.
 ### [Extrahování obsahu z dokumentů v Aspose.Words pro Java](./extracting-content-from-documents/)
 Naučte se, jak snadno extrahovat obsah z dokumentů pomocí Aspose.Words for Java. Náš podrobný průvodce a ukázky kódu celý proces zjednodušují.

@@ -2,63 +2,119 @@
 title: Ekspor Font Sebagai Basis 64
 linktitle: Ekspor Font Sebagai Basis 64
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengekspor font base 64 saat menyimpan dokumen dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengekspor font sebagai Base64 menggunakan Aspose.Words untuk .NET dalam tutorial mendetail ini. Pastikan font tertanam dan ditampilkan dengan benar dalam file HTML.
 type: docs
 weight: 10
 url: /id/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui kode sumber C# untuk mengekspor font base 64 dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda mengekspor font sebagai data base 64 saat menyimpan dokumen dalam format HTML.
+Dalam hal memanipulasi dokumen Word secara terprogram, Aspose.Words untuk .NET adalah solusinya. Salah satu fitur bagusnya adalah mengekspor font sebagai Base64 dalam file HTML, memastikan font tertanam dan ditampilkan dengan benar di berbagai browser dan sistem. Dalam tutorial ini, kami akan mendalami bagaimana Anda dapat mencapai hal ini. Siap membuat font dokumen Word Anda ramah web? Mari kita mulai!
 
-## Langkah 1: Pengaturan Proyek
+## Prasyarat
 
-Untuk memulai, buat proyek C# baru di IDE favorit Anda. Pastikan perpustakaan Aspose.Words untuk .NET direferensikan dalam proyek Anda.
+Sebelum kita beralih ke pengkodean, pastikan Anda memiliki semua yang Anda butuhkan:
 
-## Langkah 2: Memuat dokumen
+-  Aspose.Words untuk .NET Library: Anda dapat mengunduhnya dari[Asumsikan Rilis](https://releases.aspose.com/words/net/) halaman.
+- Lingkungan Pengembangan .NET: IDE apa pun seperti Visual Studio akan bekerja dengan sempurna.
+- Pengetahuan Dasar C#: Anda tidak perlu menjadi seorang profesional, tetapi pemahaman dasar akan membantu.
 
-Pada langkah ini, kita akan memuat dokumen yang akan diekspor. Gunakan kode berikut untuk memuat dokumen dari direktori tertentu:
+## Impor Namespace
+
+Untuk menggunakan Aspose.Words untuk .NET, Anda harus mengimpor namespace yang diperlukan dalam kode C# Anda. Ini membuat semua kelas dan metode tersedia untuk digunakan.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Langkah 1: Siapkan Proyek Anda
+
+Hal pertama yang pertama, mari siapkan proyek Anda dan instal perpustakaan Aspose.Words.
+
+### 1.1 Buat Proyek Baru
+
+Buka Visual Studio dan buat proyek Aplikasi Konsol baru. Beri nama dengan sesuatu yang bermakna seperti "ExportFontsBase64".
+
+### 1.2 Instal Aspose.Words
+
+Anda dapat menginstal Aspose.Words untuk .NET melalui NuGet Package Manager:
+
+1. Klik kanan pada proyek Anda di Solution Explorer.
+2. Pilih "Kelola Paket NuGet".
+3. Cari "Aspose.Words" dan instal.
+
+Alternatifnya, Anda dapat menjalankan perintah berikut di Konsol Manajer Paket:
+
+```sh
+Install-Package Aspose.Words
+```
+
+## Langkah 2: Muat Dokumen Word Anda
+
+Sekarang proyek Anda sudah siap, mari muat dokumen Word yang ingin Anda ekspor fontnya.
+
+### 2.1 Tentukan Direktori Dokumen
+
+Pertama, tentukan direktori tempat dokumen Word Anda berada:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+
+### 2.2 Memuat Dokumen
+
+ Selanjutnya, muat dokumen Anda menggunakan`Document` kelas:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Kode ini membuat sebuah instance dari`Document` dengan memuat dokumen dari direktori yang ditentukan.
+Pastikan "Rendering.docx" ada di direktori yang Anda tentukan.
 
-## Langkah 3: Mengonfigurasi opsi cadangan HTML
+## Langkah 3: Konfigurasikan Opsi Penyimpanan HTML
 
-Sekarang kita akan mengkonfigurasi opsi penyimpanan HTML untuk mengekspor font base 64. Gunakan kode berikut:
+ Untuk mengekspor font sebagai Base64, kita perlu mengkonfigurasi`HtmlSaveOptions`.
+
+
+ Buat sebuah contoh dari`HtmlSaveOptions` dan atur`ExportFontsAsBase64`properti ke`true`:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
 ```
 
- Kode ini membuat sebuah instance dari`HtmlSaveOptions` dan set`ExportFontsAsBase64` ke`true` untuk menentukan bahwa font harus diekspor sebagai data base 64 saat disimpan sebagai HTML.
+## Langkah 4: Simpan Dokumen sebagai HTML
 
-## Langkah 4: Mengonversi dan menyimpan dokumen ke HTML
+Terakhir, mari simpan dokumen dengan opsi yang dikonfigurasi.
 
-Terakhir, kami akan mengonversi dokumen ke HTML menggunakan opsi penyimpanan HTML yang dikonfigurasi sebelumnya. Gunakan kode berikut:
+
+ Menggunakan`Save` metode`Document` kelas untuk menyimpan dokumen Anda:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
 ```
 
-Kode ini mengubah dokumen menjadi HTML dan menyimpannya ke file dengan font yang diekspor sebagai data base 64.
+Baris ini akan menyimpan dokumen Anda sebagai file HTML dengan font yang diekspor sebagai Base64, memastikan font tersebut tertanam dalam HTML.
 
-### Contoh kode sumber untuk Ekspor Font Sebagai Basis 64 menggunakan Aspose.Words untuk .NET
+## Kesimpulan
 
-```csharp
+Selamat! Anda telah berhasil mengekspor font sebagai Base64 dari dokumen Word menggunakan Aspose.Words untuk .NET. Ini memastikan font Anda dipertahankan dan ditampilkan dengan benar di berbagai platform. Baik Anda menyiapkan dokumen untuk tampilan web atau sekadar memastikan kompatibilitas, fitur ini sangat berguna.
 
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+## FAQ
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
+### Apa itu pengkodean Base64?
+Base64 adalah metode pengkodean data biner (seperti font) ke dalam format teks. Hal ini memastikan kompatibilitas dengan format berbasis teks seperti HTML.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
+### Mengapa saya harus menggunakan Base64 untuk font dalam HTML?
+Penggunaan Base64 memastikan font tertanam langsung di HTML, menghindari masalah hilangnya file font, dan memastikan tampilan konsisten.
 
-```
+### Bisakah saya menggunakan metode ini untuk sumber lain seperti gambar?
+Sangat! Aspose.Words untuk .NET memungkinkan Anda menyematkan berbagai sumber daya, termasuk gambar, sebagai Base64 dalam file HTML Anda.
 
- Pastikan untuk menentukan jalur yang benar ke direktori dokumen di`dataDir` variabel.
+### Bagaimana jika dokumen saya memiliki banyak font?
+Tidak masalah! Aspose.Words untuk .NET akan menyematkan semua font yang digunakan dalam dokumen Anda sebagai Base64 dalam file HTML yang dihasilkan.
 
-Anda sekarang telah mempelajari cara mengekspor font base 64 saat menyimpan dokumen sebagai HTML menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah yang disediakan dalam tutorial ini, Anda dapat dengan mudah mengekspor font dengan aman dan tertanam dalam dokumen HTML Anda.
+### Apakah Aspose.Words untuk .NET gratis untuk digunakan?
+ Aspose.Words untuk .NET adalah perpustakaan komersial. Namun, Anda dapat mengunduh uji coba gratis dari[Asumsikan Rilis](https://releases.aspose.com/) halaman.

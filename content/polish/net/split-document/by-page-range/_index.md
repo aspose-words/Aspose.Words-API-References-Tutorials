@@ -64,7 +64,7 @@ extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
 
 W tym samouczku zbadaliśmy funkcjonalność „Według zakresu stron” Aspose.Words dla .NET. Dowiedzieliśmy się, jak wyodrębnić określone części dużego dokumentu programu Word przy użyciu danego zakresu stron. Inicjując i ładując dokument, wyodrębniając żądane strony i zapisując je w nowym dokumencie, byliśmy w stanie skutecznie wyodrębnić wymaganą treść.
 
-Korzystanie z funkcji „Według zakresu stron” może być przydatne, gdy trzeba pracować z określonymi sekcjami dokumentu, np. wyodrębniać rozdziały, sekcje lub wybrane strony. Aspose.Words dla .NET zapewnia niezawodne i proste rozwiązanie do obsługi wyodrębniania stron, umożliwiające bardziej efektywne zarządzanie dokumentami i manipulowanie nimi.
+Korzystanie z funkcji „Według zakresu stron” może być przydatne, gdy trzeba pracować z określonymi sekcjami dokumentu, np. wyodrębniać rozdziały, sekcje lub wybrane strony. Aspose.Words dla .NET zapewnia niezawodne i proste rozwiązanie do obsługi ekstrakcji stron, umożliwiające bardziej efektywne zarządzanie dokumentami i manipulowanie nimi.
 
 Zachęcamy do zapoznania się z innymi zaawansowanymi funkcjami oferowanymi przez Aspose.Words dla .NET, aby zwiększyć możliwości przetwarzania dokumentów i usprawnić przepływ pracy.
 

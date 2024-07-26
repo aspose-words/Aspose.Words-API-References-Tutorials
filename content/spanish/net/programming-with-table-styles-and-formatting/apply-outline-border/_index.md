@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-## Paso 3: Accede a la tabla
+## Paso 3: Accede a la mesa
  Para aplicar un borde de contorno, debemos acceder a la tabla del documento. El`Table` La clase representa una tabla en Aspose.Words.
 
 ```csharp
@@ -65,7 +65,7 @@ table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
 ## Paso 8: guarde el documento modificado
-Finalmente, guardamos el documento modificado en un archivo. Puede elegir un nombre y una ubicación adecuados para el documento de salida.
+Finalmente, guardamos el documento modificado en un archivo. Puede elegir un nombre y una ubicación apropiados para el documento de salida.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");

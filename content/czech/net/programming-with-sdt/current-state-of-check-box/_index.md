@@ -62,4 +62,4 @@ doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 	doc.Save(dataDir + "WorkingWithSdt.CurrentStateOfCheckBox.docx");
 ```
 
-A je to! Úspěšně jste načetli a nastavili aktuální stav kontroly obsahu zaškrtávacího políčka ve vašem dokumentu Word pomocí Aspose.Words for .NET.
+je to! Úspěšně jste načetli a nastavili aktuální stav kontroly obsahu zaškrtávacího políčka ve vašem dokumentu Word pomocí Aspose.Words for .NET.

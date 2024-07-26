@@ -20,7 +20,7 @@ Processamento de palavras com Markdown fornece um recurso abrangente para aprend
 | [Vinculação automática](./autolink/) | Aprenda como inserir link automático com Aspose.Words for .NET Guia passo a passo. |
 | [Link](./link/) | Aprenda como inserir links com Aspose.Words for .NET. Guia passo a passo. |
 | [Imagemm](./image/) | Aprenda como adicionar imagens aos seus documentos usando Aspose.Words for .NET com este guia passo a passo. Aprimore seus documentos com recursos visuais rapidamente. |
-| [Regra horizontal](./horizontal-rule/) | Aprenda como inserir uma regra horizontal com o guia passo a passo Aspose.Words for .NET. |
+| [Regra Horizontal](./horizontal-rule/) | Aprenda como inserir uma regra horizontal com o guia passo a passo Aspose.Words for .NET. |
 | [Cabeçalho](./heading/) | Aprenda como usar o título com o guia passo a passo do Aspose.Words for .NET. |
 | [Título do texto](./setext-heading/) | Aprenda como usar títulos Setext para formatar seus documentos com o guia passo a passo Aspose.Words for .NET. |
 | [Código recuado](./indented-code/) | Aprenda como usar código recuado com o guia passo a passo Aspose.Words for .NET. |

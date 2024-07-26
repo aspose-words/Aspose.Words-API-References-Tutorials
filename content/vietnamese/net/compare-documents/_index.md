@@ -15,5 +15,5 @@ So sánh Tài liệu là hướng dẫn toàn diện về cách so sánh tài li
 | --- | --- |
 | [So sánh bằng nhau trong tài liệu Word](./compare-for-equal/) | Tìm hiểu cách so sánh sự bằng nhau giữa hai tài liệu Word bằng Aspose.Words for .NET. Hãy làm theo hướng dẫn từng bước này để đảm bảo tài liệu của bạn giống hệt nhau. |
 | [So sánh các tùy chọn trong tài liệu Word](./compare-options/) | Tìm hiểu cách so sánh các tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Đảm bảo tính nhất quán của tài liệu một cách dễ dàng. |
-| [Mục tiêu so sánh trong tài liệu Word](./comparison-target/) | Dễ dàng so sánh các tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. Tiết kiệm thời gian và nâng cao độ chính xác trong việc so sánh tài liệu. |
+| [Mục tiêu so sánh trong tài liệu Word](./comparison-target/) | Dễ dàng so sánh các tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Tiết kiệm thời gian và nâng cao độ chính xác trong việc so sánh tài liệu. |
 | [So sánh chi tiết trong tài liệu Word](./comparison-granularity/) | Tìm hiểu mức độ chi tiết so sánh trong tính năng tài liệu word của Aspose.Words cho .NET cho phép so sánh các tài liệu theo từng ký tự, báo cáo các thay đổi được thực hiện. |

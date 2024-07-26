@@ -21,7 +21,7 @@ url: /ja/net/add-content-using-documentbuilder/move-to-section/
 
 ## 名前空間のインポート
 
-まず、必要な名前空間をインポートする必要があります。これにより、Word 文書の操作に必要なクラスとメソッドにアクセスできるようになります。
+開始するには、必要な名前空間をインポートする必要があります。これにより、Word 文書の操作に必要なクラスとメソッドにアクセスできるようになります。
 
 ```csharp
 using Aspose.Words;

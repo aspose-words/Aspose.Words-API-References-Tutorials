@@ -80,7 +80,7 @@ Os campos do documento em Aspose.Words são espaços reservados que podem armaze
 Aspose.Words oferece suporte a vários tipos de campos como DATE, PAGE, MERGEFIELD e muito mais, permitindo que os desenvolvedores os manipulem programaticamente.
 
 ### O Aspose.Words for .NET pode converter campos em diferentes formatos de documentos?
-Sim, Aspose.Words for .NET pode converter e manipular campos em formatos como DOCX, DOC, RTF e muito mais.
+Sim, o Aspose.Words for .NET pode converter e manipular campos em formatos como DOCX, DOC, RTF e muito mais.
 
 ### Onde posso encontrar documentação abrangente para Aspose.Words for .NET?
  Documentação detalhada e referências de API estão disponíveis[aqui](https://reference.aspose.com/words/net/).

@@ -2,80 +2,100 @@
 title: Kiểm soát ngưỡng tiếp xúc cho quá trình nhị phân hóa Tiff
 linktitle: Kiểm soát ngưỡng tiếp xúc cho quá trình nhị phân hóa Tiff
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách kiểm soát ngưỡng nhị phân TIFF bằng Aspose.Words cho .NET. Hướng dẫn đầy đủ để có hình ảnh chất lượng tốt hơn.
+description: Tìm hiểu cách hiển thị kiểm soát ngưỡng cho quá trình nhị phân TIFF trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này.
 type: docs
 weight: 10
 url: /vi/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
 ---
-Trong hướng dẫn này, chúng ta sẽ khám phá mã nguồn C# được cung cấp cho tính năng "Kiểm soát ngưỡng nhị phân TIFF" với Aspose.Words cho .NET. Tính năng này cho phép bạn kiểm soát ngưỡng nhị phân khi chuyển đổi tài liệu sang định dạng TIFF.
+## Giới thiệu
 
-## Bước 1: Thiết lập môi trường
+Bạn đã bao giờ tự hỏi làm cách nào để kiểm soát ngưỡng nhị phân TIFF trong tài liệu Word của mình chưa? Bạn đang ở đúng nơi! Hướng dẫn này sẽ hướng dẫn bạn từng bước quy trình bằng cách sử dụng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay chỉ mới bắt đầu, bạn sẽ thấy hướng dẫn này hấp dẫn, dễ làm theo và có tất cả thông tin chi tiết bạn cần để hoàn thành công việc. Sẵn sàng để đi sâu vào? Đi nào!
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã thiết lập môi trường phát triển của mình với Aspose.Words for .NET. Đảm bảo bạn đã thêm các tham chiếu cần thiết và nhập các không gian tên thích hợp.
+## Điều kiện tiên quyết
 
-## Bước 2: Tải tài liệu
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
+
+1.  Aspose.Words for .NET: Bạn có thể tải xuống từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/) . Nếu bạn chưa có giấy phép, bạn có thể nhận được[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).
+2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
+3. Kiến thức cơ bản về C#: Làm quen một chút với C# sẽ rất hữu ích, nhưng đừng lo lắng nếu bạn là người mới—chúng tôi sẽ chia nhỏ mọi thứ.
+
+## Nhập không gian tên
+
+Trước khi bắt đầu viết mã, chúng ta cần nhập các không gian tên cần thiết. Điều này rất quan trọng để truy cập các lớp và phương thức mà chúng ta sẽ sử dụng.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Bước 1: Thiết lập thư mục tài liệu của bạn
+
+Trước tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Đây là nơi đặt tài liệu nguồn của bạn và nơi lưu kết quả đầu ra.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+
+## Bước 2: Tải tài liệu của bạn
+
+ Tiếp theo, chúng ta cần tải tài liệu mà chúng ta muốn xử lý. Trong ví dụ này, chúng tôi sẽ sử dụng một tài liệu có tên`Rendering.docx`.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Ở bước này, chúng ta tải tài liệu bằng cách sử dụng`Document` phương thức và chuyển đường dẫn đến tệp DOCX để tải.
+ Dòng mã này tạo ra một cái mới`Document` đối tượng và tải tập tin được chỉ định.
 
-## Bước 3: Định cấu hình tùy chọn sao lưu ảnh
+## Bước 3: Định cấu hình tùy chọn lưu hình ảnh
+
+ Bây giờ đến phần thú vị! Chúng ta cần định cấu hình các tùy chọn lưu hình ảnh để kiểm soát quá trình nhị phân TIFF. Chúng tôi sẽ sử dụng`ImageSaveOptions` lớp để thiết lập các thuộc tính khác nhau.
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
 {
-TiffCompression = TiffCompression.Ccitt3,
-ImageColorMode = ImageColorMode.Grayscale,
-TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
-ThresholdForFloydSteinbergDithering = 254
+    TiffCompression = TiffCompression.Ccitt3,
+    ImageColorMode = ImageColorMode.Grayscale,
+    TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
+    ThresholdForFloydSteinbergDithering = 254
 };
 ```
 
- Trong bước này, chúng tôi định cấu hình các tùy chọn sao lưu cho hình ảnh. Chúng tôi tạo ra một cái mới`ImageSaveOptions` đối tượng chỉ định định dạng lưu mong muốn, ở đây là "Tiff" cho định dạng TIFF. Chúng tôi cũng đặt các tùy chọn nén, chế độ màu hình ảnh và phương pháp nhị phân TIFF với ngưỡng nhị phân được chỉ định.
+Hãy chia nhỏ điều này:
+-  TiffCompression: Đặt kiểu nén cho hình ảnh TIFF. Ở đây, chúng tôi đang sử dụng`Ccitt3`.
+-  ImageColorMode: Đặt chế độ màu. Chúng tôi đặt nó thành`Grayscale` để tạo ra một ảnh thang độ xám.
+-  TiffBinarizationMethod: Chỉ định phương pháp nhị phân hóa. Đang sử dụng`FloydSteinbergDithering`.
+- ThresholdForFloydSteinbergDithering: Đặt ngưỡng cho phối màu Floyd-Steinberg. Giá trị cao hơn có nghĩa là ít pixel đen hơn.
 
-## Bước 4: Sao lưu hình ảnh
+## Bước 4: Lưu tài liệu dưới dạng TIFF
+
+Cuối cùng, chúng tôi lưu tài liệu dưới dạng hình ảnh TIFF với các tùy chọn được chỉ định.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
 ```
 
- Ở bước cuối cùng này, chúng tôi lưu hình ảnh tài liệu ở định dạng TIFF bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu được chỉ định.
+Dòng mã này lưu tài liệu vào đường dẫn đã chỉ định với các tùy chọn lưu hình ảnh đã được định cấu hình.
 
-Bây giờ bạn có thể chạy mã nguồn để chuyển đổi tài liệu của mình sang định dạng TIFF trong khi kiểm soát ngưỡng nhị phân bằng các tùy chọn đã chỉ định. Tệp kết quả sẽ được lưu trong thư mục được chỉ định với tên "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff".
+## Phần kết luận
 
-### Mã nguồn mẫu Kiểm soát ngưỡng hiển thị cho nhị phân Tiff
+Và bạn có nó rồi đấy! Bạn vừa học cách hiển thị kiểm soát ngưỡng cho quá trình nhị phân TIFF trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác với tài liệu Word theo nhiều cách khác nhau, bao gồm chuyển đổi chúng sang các định dạng khác nhau bằng cài đặt tùy chỉnh. Hãy dùng thử và xem nó có thể đơn giản hóa các tác vụ xử lý tài liệu của bạn như thế nào!
 
-```csharp 
+## Câu hỏi thường gặp
 
-// Đường dẫn đến thư mục tài liệu của bạn
- string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+### Nhị phân hóa TIFF là gì?
+Nhị phân hóa TIFF là quá trình chuyển đổi hình ảnh thang độ xám hoặc màu thành hình ảnh đen trắng (nhị phân).
 
-Document doc = new Document(dataDir + "Rendering.docx");
+### Tại sao nên sử dụng phối màu Floyd-Steinberg?
+Phối màu Floyd-Steinberg giúp phân phối lỗi pixel theo cách làm giảm hiện tượng giả tạo hình ảnh trong hình ảnh cuối cùng, khiến hình ảnh trông mượt mà hơn.
 
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
-{
-	TiffCompression = TiffCompression.Ccitt3,
-	ImageColorMode = ImageColorMode.Grayscale,
-	TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
-	ThresholdForFloydSteinbergDithering = 254
-};
+### Tôi có thể sử dụng các phương pháp nén khác cho TIFF không?
+Có, Aspose.Words hỗ trợ nhiều phương pháp nén TIFF khác nhau, chẳng hạn như LZW, CCITT4 và RLE.
 
-doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
-            
-        
-```
+### Aspose.Words cho .NET có miễn phí không?
+Aspose.Words for .NET là một thư viện thương mại nhưng bạn có thể nhận bản dùng thử miễn phí hoặc giấy phép tạm thời để đánh giá các tính năng của nó.
 
-### Phần kết luận
-
-Trong hướng dẫn này, chúng tôi đã khám phá tính năng hiển thị của Kiểm soát ngưỡng nhị phân TIFF với Aspose.Words cho .NET. Chúng tôi đã học cách kiểm soát ngưỡng nhị phân khi chuyển đổi tài liệu sang định dạng TIFF.
-
-Tính năng này rất hữu ích khi bạn muốn điều chỉnh ngưỡng nhị phân để có được hình ảnh TIFF với chất lượng và độ rõ nét tốt hơn. Bằng cách chỉ định ngưỡng nhị phân với các tùy chọn lưu, bạn có thể nhận được kết quả tùy chỉnh phù hợp với nhu cầu của mình.
-
-Aspose.Words for .NET cung cấp nhiều tính năng nâng cao để thao tác và tạo tài liệu. Việc đưa ra Kiểm soát ngưỡng nhị phân TIFF là một trong nhiều công cụ mạnh mẽ mà nó cho phép bạn tùy ý sử dụng.
-
-Vui lòng kết hợp tính năng này vào các dự án Aspose.Words for .NET của bạn để đạt được hình ảnh TIFF chất lượng cao với khả năng kiểm soát ngưỡng nhị phân chính xác.
+### Tôi có thể tìm thêm tài liệu ở đâu?
+ Bạn có thể tìm thấy tài liệu toàn diện về Aspose.Words for .NET trên[trang web giả định](https://reference.aspose.com/words/net/).

@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- tomto kroku vytvoříme nový`Document` objekt a přidružený`DocumentBuilder` objekt. Tyto objekty nám umožní manipulovat a generovat náš dokument.
+ V tomto kroku vytvoříme nový`Document` objekt a přidružený`DocumentBuilder` objekt. Tyto objekty nám umožní manipulovat a generovat náš dokument.
 
 ## Krok 3: Vytvoření seznamu se třemi úrovněmi odsazení
 
@@ -55,7 +55,7 @@ saveOptions.ListIndentation.Character = '\t';
 doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt", saveOptions);
 ```
 
- V tomto posledním kroku dokument uložíme se zadanými možnostmi uložení. Používáme`Save()` metoda dokumentu předá celou cestu k výstupnímu souboru a možnosti uložení.
+ V tomto posledním kroku uložíme dokument se zadanými možnostmi uložení. Používáme`Save()` metoda dokumentu předá celou cestu k výstupnímu souboru a možnosti uložení.
 
 
 Nyní můžete spustit zdrojový kód a vygenerovat dokument s odsazením seznamu pomocí znaků tabulátoru. Výstupní soubor bude uložen do zadaného adresáře s názvem "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListIndentation.txt".
@@ -100,7 +100,7 @@ Nastavte své vývojové prostředí přidáním nezbytných odkazů a importem 
 
  Vytvoř nový`Document` objekt a přidružený`DocumentBuilder` objekt.
 
- Použijte`DocumentBuilder` k vytvoření seznamu s více úrovněmi odsazení pomocí metod`ApplyNumberDefault()` použít výchozí formát čísel seznamu,`Writeln()`a`Write()` pro přidání položek do seznamu a`ListIndent()`pro zvýšení odsazení na každé úrovni.
+ Použijte`DocumentBuilder` vytvoření seznamu s více úrovněmi odsazení pomocí metod`ApplyNumberDefault()` použít výchozí formát čísel seznamu,`Writeln()`a`Write()` pro přidání položek do seznamu a`ListIndent()` pro zvýšení odsazení na každé úrovni.
 
  Nakonfigurujte možnosti uložení vytvořením a`TxtSaveOptions` objektu a nastavení vlastností`ListIndentation.Count` na počet znaků tabulátoru na úroveň a`ListIndentation.Character` na`'\t'` používat znaky tabulátoru.
 
@@ -110,7 +110,7 @@ Nastavte své vývojové prostředí přidáním nezbytných odkazů a importem 
  Ano, můžete upravit počet znaků tabulátoru na úroveň pro odsazení seznamu změnou hodnoty`ListIndentation.Count` nemovitost v`TxtSaveOptions` třída. Můžete zadat požadovaný počet znaků tabulátoru pro každou úroveň odsazení.
 
 #### Otázka: Jaké další znaky mohu použít pro odsazení seznamu pomocí Aspose.Words pro .NET?
- Kromě znaků tabulátoru můžete pro odsazení seznamu pomocí Aspose.Words for .NET použít i jiné znaky. Můžete nastavit`ListIndentation.Character` vlastnost libovolnému požadovanému znaku, jako je mezera (`' '`), pro odsazení seznamů.
+Kromě znaků tabulátoru můžete pro odsazení seznamu pomocí Aspose.Words for .NET použít i jiné znaky. Můžete nastavit`ListIndentation.Character` vlastnost libovolnému požadovanému znaku, jako je mezera (`' '`), pro odsazení seznamů.
 
 #### Otázka: Nabízí Aspose.Words for .NET nějaké další funkce pro správu seznamů?
 Ano, Aspose.Words for .NET nabízí mnoho funkcí pro správu seznamů v dokumentech aplikace Word. Můžete vytvářet číslované seznamy nebo seznamy s odrážkami, nastavovat úrovně odsazení, přizpůsobovat styl seznamů, přidávat položky seznamu a další.

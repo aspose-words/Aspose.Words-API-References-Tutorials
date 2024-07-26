@@ -12,4 +12,4 @@ Aspose.Words för .NET-handledningarna om ordbehandling med OfficeMath guidar di
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Matematiska ekvationer](./math-equations/) | Lär dig hur du lägger till matematiska ekvationer till dina Word-dokument med Aspose.Words för .NET. |
+| [Matematiska ekvationer](./math-equations/) | Lär dig hur du konfigurerar matematiska ekvationer i Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide med exempel, vanliga frågor och mer. |

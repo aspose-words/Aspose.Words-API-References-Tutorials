@@ -2,95 +2,97 @@
 title: Verklein de PDF-bestandsgrootte door geen kernlettertypen in te sluiten
 linktitle: Verklein de PDF-bestandsgrootte door geen kernlettertypen in te sluiten
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de PDF-bestandsgrootte kunt verkleinen door geen kernlettertypen in te sluiten bij het converteren van Word-documenten naar PDF met Aspose.Words voor .NET.
+description: Leer hoe u de PDF-bestandsgrootte kunt verkleinen door geen kernlettertypen in te sluiten met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om uw PDF's te optimaliseren.
 type: docs
 weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u door de stappen voor het verkleinen van de PDF-bestandsgrootte door geen kernlettertypen in te sluiten met Aspose.Words voor .NET. Met deze functie kunt u bepalen of basislettertypen zoals Arial, Times New Roman, enz. in de PDF moeten worden ingesloten bij het converteren van een Word-document. Volg onderstaande stappen:
+Merkt u wel eens dat u zich op uw hoofd krabt en zich afvraagt waarom uw PDF-bestanden zo groot zijn? Nou, je bent niet de enige. Een veel voorkomende boosdoener is het insluiten van kernlettertypen zoals Arial en Times New Roman. Gelukkig heeft Aspose.Words voor .NET een handige manier om dit probleem aan te pakken. In deze zelfstudie laat ik u zien hoe u de grootte van uw PDF-bestand kunt verkleinen door het insluiten van deze kernlettertypen te vermijden. Laten we er meteen in duiken!
 
-## Stap 1: Het document laden
+## Vereisten
 
-Begin met het uploaden van het Word-document dat u naar PDF wilt converteren:
+Voordat we aan deze spannende reis beginnen, moeten we ervoor zorgen dat je alles hebt wat je nodig hebt. Hier is een korte checklist:
+
+-  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Als u deze nog niet heeft, kunt u deze downloaden[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Je hebt een ontwikkelomgeving zoals Visual Studio nodig.
+- Een Word-document: We gebruiken voor deze zelfstudie een Word-document (bijvoorbeeld "Rendering.docx").
+- Basiskennis van C#: Een basiskennis van C# zal u helpen dit te volgen.
+
+Oké, nu we er helemaal klaar voor zijn, gaan we aan de slag!
+
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten importeren. Deze stap zorgt ervoor dat we toegang hebben tot alle Aspose.Words-functionaliteiten die we nodig hebben.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Stap 1: Initialiseer uw documentmap
+
+Voordat we ons document gaan manipuleren, moeten we de map opgeven waar onze documenten zijn opgeslagen. Dit is essentieel voor toegang tot de bestanden.
+
+```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar uw Word-document zich bevindt.
+
+## Stap 2: Laad het Word-document
+
+Vervolgens moeten we het Word-document laden dat we naar PDF willen converteren. In dit voorbeeld gebruiken we een document met de naam "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Zorg ervoor dat u het juiste pad naar uw Word-document opgeeft.
+Deze coderegel laadt het document in het geheugen, klaar voor verdere verwerking.
 
-## Stap 2: Stel PDF-conversieopties in
+## Stap 3: Configureer PDF-opslagopties
 
-Maak een exemplaar van de klasse PdfSaveOptions en schakel het vermijden van basisinsluiting van lettertypen in:
+Nu komt het magische gedeelte! We configureren de PDF-opslagopties om te voorkomen dat kernlettertypen worden ingesloten. Dit is de belangrijkste stap die helpt bij het verkleinen van de PDF-bestandsgrootte.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-Deze optie bepaalt of basislettertypen in de PDF moeten worden ingesloten of niet.
+ Instelling`UseCoreFonts` naar`true` zorgt ervoor dat kernlettertypen zoals Arial en Times New Roman niet in de PDF zijn ingesloten, waardoor de bestandsgrootte aanzienlijk wordt verkleind.
 
-## Stap 3: Converteer document naar PDF
+## Stap 4: Sla het document op als PDF
 
- Gebruik de`Save` methode om het Word-document naar PDF te converteren door conversieopties op te geven:
+Ten slotte slaan we het Word-document op als PDF met behulp van de geconfigureerde opslagopties. Met deze stap wordt het PDF-bestand gegenereerd zonder de kernlettertypen in te sluiten.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Zorg ervoor dat u het juiste pad opgeeft om de geconverteerde PDF op te slaan.
-
-### Voorbeeldbroncode voor het vermijden van het insluiten van kernlettertypen met Aspose.Words voor .NET
-
-Hier is de volledige broncode om de functie te gebruiken om het insluiten van kernlettertypen met Aspose.Words voor .NET te voorkomen:
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// De uitvoer-PDF wordt niet ingesloten met kernlettertypen zoals Arial, Times New Roman enz.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-Door deze stappen te volgen, kunt u eenvoudig bepalen of basislettertypen in de PDF moeten worden ingesloten bij het converteren van een Word-document met Aspose.Words voor .NET.
-
+En daar heb je het! Uw PDF-bestand wordt nu opgeslagen in de opgegeven map zonder die omvangrijke kernlettertypen.
 
 ## Conclusie
 
-In deze zelfstudie hebben we uitgelegd hoe u de grootte van een PDF-bestand kunt verkleinen door geen basislettertypen in te sluiten met Aspose.Words voor .NET. Met deze functie kunt u bepalen of basislettertypen in de PDF moeten worden ingesloten bij het converteren van een Word-document. Door de beschreven stappen te volgen, kunt u eenvoudig het insluiten of niet-insluiten van basislettertypen beheren, wat kan helpen de PDF-bestandsgrootte te verkleinen en een betere compatibiliteit en een consistent uiterlijk van het document op verschillende apparaten en platforms te garanderen. Vergeet niet de gevolgen te overwegen als u geen basislettertypen insluit en experimenteer om ervoor te zorgen dat het document wordt weergegeven zoals verwacht.
+Het verkleinen van de PDF-bestandsgrootte kan heel eenvoudig zijn met Aspose.Words voor .NET. Door het insluiten van kernlettertypen te vermijden, kunt u de bestandsgrootte aanzienlijk verkleinen, waardoor het gemakkelijker wordt om uw documenten te delen en op te slaan. Ik hoop dat deze tutorial nuttig was en je een duidelijk inzicht in het proces heeft gegeven. Vergeet niet dat kleine aanpassingen een groot verschil kunnen maken!
 
-### Veel Gestelde Vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is de optie om geen basislettertypen in een PDF-bestand in te sluiten en waarom is dit belangrijk?
-A: De optie om geen basislettertypen in een PDF-bestand in te sluiten, bepaalt of basislettertypen zoals Arial, Times New Roman, enz. in de PDF moeten worden ingesloten bij het converteren van een Word-document. Dit kan belangrijk zijn om de grootte van het PDF-bestand te verkleinen door te voorkomen dat lettertypen worden gebruikt die algemeen beschikbaar zijn op PDF-leessystemen. Het kan ook helpen zorgen voor een betere compatibiliteit en een consistente weergave van het PDF-document op verschillende apparaten en platforms.
+### Waarom moet ik het insluiten van kernlettertypen in PDF's vermijden?
+Door het insluiten van kernlettertypen te vermijden, wordt de bestandsgrootte kleiner, waardoor het gemakkelijker wordt om te delen en op te slaan.
 
-#### Vraag: Hoe kan ik Aspose.Words voor .NET zo configureren dat er geen basislettertypen in een PDF-bestand worden ingesloten?
-A: Volg deze stappen om Aspose.Words voor .NET zo te configureren dat er geen kernlettertypen in een PDF-bestand worden ingesloten:
+### Kan ik de PDF nog steeds correct bekijken zonder ingesloten kernlettertypen?
+Ja, kernlettertypen zoals Arial en Times New Roman zijn over het algemeen beschikbaar op de meeste systemen.
 
- Stel het mappad in waar uw documenten zich bevinden door te vervangen`"YOUR DOCUMENTS DIRECTORY"` met het daadwerkelijke pad van uw documentenmap.
+### Wat moet ik doen als ik aangepaste lettertypen moet insluiten?
+ U kunt de`PdfSaveOptions`om indien nodig specifieke lettertypen in te sluiten.
 
- Laad het Word-document dat u naar PDF wilt converteren met behulp van de`Document` klasse en het opgegeven documentpad.
+### Is Aspose.Words voor .NET gratis te gebruiken?
+ Voor Aspose.Words voor .NET is een licentie vereist. U kunt een gratis proefperiode krijgen[hier](https://releases.aspose.com/).
 
- Maak een exemplaar van de`PdfSaveOptions` klasse en stel de`UseCoreFonts`eigendom aan`true`. Dit voorkomt het insluiten van basislettertypen in het gegenereerde PDF-bestand.
-
- Gebruik de`Save` werkwijze van de`Document` object om het document in PDF-indeling op te slaan, waarbij de eerder geconfigureerde conversie-opties worden opgegeven.
-
-#### Vraag: Wat zijn de voordelen van het niet insluiten van basislettertypen in een PDF-bestand?
-A: De voordelen van het niet insluiten van basislettertypen in een PDF-bestand zijn:
-
-Verkleining van de PDF-bestandsgrootte: Door het insluiten van algemeen beschikbare lettertypen zoals Arial, Times New Roman, enz. te vermijden, kan de PDF-bestandsgrootte worden verkleind, waardoor het gemakkelijker wordt om bestanden op te slaan, te delen en over te dragen.
-
-Betere compatibiliteit: Door basislettertypen te gebruiken die algemeen beschikbaar zijn op PDF-lezersystemen, zorgt u voor een betere compatibiliteit en documentuiterlijk op verschillende apparaten en platforms.
-
-#### Vraag: Wat zijn de gevolgen als er geen basislettertypen in een PDF-bestand worden ingesloten?
-A: De gevolgen van het niet insluiten van basislettertypen in een PDF-bestand zijn als volgt:
-
-Ander uiterlijk: Als de basislettertypen niet beschikbaar zijn op het systeem waarop de PDF wordt geopend, worden vervangende lettertypen gebruikt, wat kan resulteren in een ander uiterlijk dan bedoeld.
-
-Problemen met de leesbaarheid: gebruikte vervangende lettertypen zijn mogelijk niet zo leesbaar als de originele lettertypen, wat de leesbaarheid van het document kan beïnvloeden.
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
+ U kunt gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/).

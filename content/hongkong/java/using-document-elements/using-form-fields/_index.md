@@ -49,7 +49,7 @@ public void formFieldsWorkWithProperties() throws Exception {
 ```
 
 ## 6. 存取表單欄位集合
-若要有效地使用表單字段，您可以存取文件中的表單欄位集合：
+要有效地使用表單字段，您可以存取文件中的表單字段集合：
 
 ```java
 @Test

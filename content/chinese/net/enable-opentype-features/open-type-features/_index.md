@@ -103,7 +103,7 @@ OpenType 功能包括高级印刷功能，例如连字、字距调整和风格�
 HarfBuzz 是一个开源文本整形引擎，它为 OpenType 功能提供强大的支持，从而提高文档的印刷质量。
 
 ### 我可以将其他文本塑造引擎与 Aspose.Words 一起使用吗？
-是的，Aspose.Words 支持不同的文本整形引擎。不过，我们强烈推荐 HarfBuzz，因为它全面支持 OpenType 功能。
+是的，Aspose.Words 支持不同的文本塑造引擎。但是，HarfBuzz 因其全面的 OpenType 功能支持而备受推荐。
 
 ### Aspose.Words 是否与所有.NET 版本兼容？
  Aspose.Words 支持各种 .NET 版本，包括 .NET Framework、.NET Core 和 .NET Standard。检查[文档](https://reference.aspose.com/words/net/)了解详细的兼容性信息。

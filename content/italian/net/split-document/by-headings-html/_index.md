@@ -14,7 +14,7 @@ In questo tutorial ti spiegheremo come dividere un documento Word in parti più 
 Per iniziare, specifica la directory per il tuo documento e carica il documento in un oggetto Document. Ecco come:
 
 ```csharp
-//Percorso della directory dei documenti.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

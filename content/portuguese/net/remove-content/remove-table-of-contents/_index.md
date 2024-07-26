@@ -41,7 +41,7 @@ Antes de podermos manipular o seu documento, precisamos definir onde ele está l
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho para sua pasta de documentos. É aqui que reside o seu arquivo do Word.
+ Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho para sua pasta de documentos. É aqui que reside o seu arquivo do Word.
 
 ## Etapa 2: carregue o documento
 

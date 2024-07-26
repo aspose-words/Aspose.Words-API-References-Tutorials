@@ -103,7 +103,7 @@ Document doc = new Document(dataDir + "Table of contents.docx");
 
 #### Câu hỏi: Làm cách nào tôi có thể thay đổi các tab được sử dụng trong mục lục bằng Aspose.Words cho .NET?
 
- Đáp: Sau khi tài liệu được tải, bạn có thể duyệt qua từng đoạn của tài liệu và kiểm tra xem nó có được định dạng bằng cách sử dụng kiểu kết quả Mục lục (TOC) hay không. Nếu đoạn văn được định dạng theo kiểu TOC, bạn có thể sửa đổi các tab được sử dụng để căn chỉnh số trang. Trong Aspose.Words cho .NET, bạn có thể truy cập`ParagraphFormat` thuộc tính của mỗi đoạn văn để truy xuất và sửa đổi các điểm dừng tab. Đây là một ví dụ:
+Đáp: Sau khi tài liệu được tải, bạn có thể duyệt qua từng đoạn của tài liệu và kiểm tra xem nó có được định dạng bằng cách sử dụng kiểu kết quả Mục lục (TOC) hay không. Nếu đoạn văn được định dạng theo kiểu TOC, bạn có thể sửa đổi các tab được sử dụng để căn chỉnh số trang. Trong Aspose.Words cho .NET, bạn có thể truy cập`ParagraphFormat` thuộc tính của mỗi đoạn văn để truy xuất và sửa đổi các điểm dừng tab. Đây là một ví dụ:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))

@@ -31,7 +31,7 @@ using Aspose.Words;
 
 ## Etapa 1: configurando seu projeto
 
-### Criando um novo projeto
+### Criando um Novo Projeto
 
 Vamos começar criando um novo projeto no Visual Studio.
 

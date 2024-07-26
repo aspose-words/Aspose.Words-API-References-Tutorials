@@ -112,7 +112,7 @@ Guardaremos el producto final como "JoinAndAppendDocuments.SmartStyleBehavior.do
 
 ## Conclusión
 
-¡Y ahí lo tienen amigos! Con estos pasos, ha aprendido cómo fusionar documentos de Word manteniendo sus estilos únicos usando Aspose.Words para .NET. No más contratiempos de estilo ni dolores de cabeza con el formato: solo documentos fluidos y elegantes en todo momento. Ya sea que combine informes, propuestas o cualquier otro documento, este método garantiza que todo luzca perfecto.
+¡Y ahí lo tienen amigos! Con estos pasos, ha aprendido cómo fusionar documentos de Word manteniendo sus estilos únicos usando Aspose.Words para .NET. No más contratiempos de estilo ni dolores de cabeza con el formato: solo documentos fluidos y elegantes en todo momento. Ya sea que esté combinando informes, propuestas o cualquier otro documento, este método garantiza que todo luzca perfecto.
 
 ## Preguntas frecuentes
 

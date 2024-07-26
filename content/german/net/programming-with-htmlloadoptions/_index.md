@@ -12,4 +12,4 @@ Die Aspose.Words für .NET-Tutorials zur Textverarbeitung mit HTMLLoadOptions si
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Bevorzugter Steuerelementtyp im Word-Dokument](./preferred-control-type/) | Schritt-für-Schritt-Anleitung zum Festlegen des bevorzugten Steuerelementtyps im Word-Dokument beim Laden eines HTML-Dokuments mit Aspose.Words für .NET. |
+| [Bevorzugter Steuerelementtyp im Word-Dokument](./preferred-control-type/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Kombinationsfeld-Formularfeld in ein Word-Dokument einfügen. Folgen Sie dieser Schritt-für-Schritt-Anleitung für die nahtlose Integration von HTML-Inhalten. |

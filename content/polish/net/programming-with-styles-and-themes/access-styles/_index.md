@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-styles-and-themes/access-styles/
 ---
 
-W tym samouczku przyjrzymy się dostarczonemu kodowi źródłowemu C# umożliwiającemu pobieranie stylów dokumentów w programie Word przy użyciu Aspose.Words dla .NET. Ta funkcja pozwala uzyskać pełną kolekcję stylów obecnych w dokumencie.
+tym samouczku przyjrzymy się dostarczonemu kodowi źródłowemu C# umożliwiającemu pobieranie stylów dokumentów w programie Word przy użyciu Aspose.Words dla .NET. Ta funkcja pozwala uzyskać pełną kolekcję stylów obecnych w dokumencie.
 
 ## Krok 1: Konfigurowanie środowiska
 
@@ -30,7 +30,7 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- Na tym etapie uzyskujemy dostęp do kolekcji stylów dokumentu za pomocą metody`Styles`nieruchomość. Ta kolekcja zawiera wszystkie style obecne w dokumencie.
+ Na tym etapie uzyskujemy dostęp do kolekcji stylów dokumentu za pomocą metody`Styles` nieruchomość. Ta kolekcja zawiera wszystkie style obecne w dokumencie.
 
 ## Krok 4: Przeglądaj style
 
@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Wniosek
 
- W tym samouczku nauczyliśmy się, jak pobierać style obecne w dokumencie programu Word i uzyskiwać do nich dostęp za pomocą Aspose.Words dla .NET. Korzystając z`Styles` własność`Document`obiektu, uzyskaliśmy kolekcję stylów i przeglądaliśmy je, aby wyświetlić ich nazwy. Ta funkcja zapewnia cenny wgląd w style użyte w dokumencie i umożliwia dalsze dostosowywanie i analizę.
+ W tym samouczku nauczyliśmy się, jak pobierać style obecne w dokumencie programu Word i uzyskiwać do nich dostęp za pomocą Aspose.Words dla .NET. Korzystając z`Styles` własność`Document` obiektu, uzyskaliśmy kolekcję stylów i przeglądaliśmy je, aby wyświetlić ich nazwy. Ta funkcja zapewnia cenny wgląd w style użyte w dokumencie i umożliwia dalsze dostosowywanie i analizę.
 
 Wykorzystując potężne API Aspose.Words dla .NET, programiści mogą łatwo manipulować stylami dokumentów i pracować ze nimi, oferując lepszą kontrolę nad formatowaniem i przetwarzaniem dokumentów.
 

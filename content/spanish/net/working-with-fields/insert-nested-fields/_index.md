@@ -94,7 +94,7 @@ field. Update();
 doc.Save(dataDir + "InsertNestedFields.docx");
 ```
 
-En este ejemplo, creamos un documento nuevo, insertamos saltos de página, movimos el cursor al pie de página y luego insertamos un campo anidado en el pie de página.
+En este ejemplo, creamos un nuevo documento, insertamos saltos de página, movimos el cursor al pie de página y luego insertamos un campo anidado en el pie de página.
 
 ### Preguntas frecuentes
 

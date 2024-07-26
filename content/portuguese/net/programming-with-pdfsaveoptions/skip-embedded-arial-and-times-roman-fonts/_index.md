@@ -2,94 +2,86 @@
 title: Otimize o tamanho do PDF com fontes Skip Embedded Arial e Times Roman
 linktitle: Otimize o tamanho do PDF com fontes Skip Embedded Arial e Times Roman
 second_title: API de processamento de documentos Aspose.Words
-description: Guia passo a passo para gerar PDF otimizado sem incorporar fontes Arial e Times Roman com Aspose.Words for .NET.
+description: Otimize o tamanho do PDF ignorando as fontes Arial e Times Roman incorporadas usando Aspose.Words for .NET. Siga este guia passo a passo para agilizar seus arquivos PDF.
 type: docs
 weight: 10
 url: /pt/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
+## Introdução
 
-Este artigo fornece um guia passo a passo sobre como usar o recurso para otimizar o tamanho do PDF, ignorando as fontes Arial e Times Roman incorporadas para o tamanho do metarquivo com Aspose.Words for .NET. Explicaremos cada parte do código em detalhes. Ao final deste tutorial você poderá entender como configurar a opção de modo de incorporação de fontes em um documento e gerar um PDF sem incorporar fontes Arial e Times Roman.
+Você já se viu em uma situação em que o tamanho do arquivo PDF é muito grande? É como fazer as malas para as férias e perceber que sua mala está estourando. Você sabe que precisa perder algum peso, mas do que você abre mão? Ao trabalhar com arquivos PDF, especialmente aqueles convertidos de documentos do Word, as fontes incorporadas podem aumentar o tamanho do arquivo. Felizmente, Aspose.Words for .NET oferece uma solução elegante para manter seus PDFs simples e significativos. Neste tutorial, veremos como otimizar o tamanho do PDF ignorando as fontes Arial e Times Roman incorporadas. Vamos começar!
 
-Antes de começar, certifique-se de ter instalado e configurado a biblioteca Aspose.Words for .NET em seu projeto. Você pode encontrar a biblioteca e as instruções de instalação no site do Aspose.
+## Pré-requisitos
 
-## Passo 1: Defina o diretório do documento
+Antes de entrarmos no âmago da questão, há algumas coisas que você precisará:
+-  Aspose.Words for .NET: Certifique-se de ter esta poderosa biblioteca instalada. Caso contrário, você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+- Uma compreensão básica de C#: isso o ajudará a acompanhar os trechos de código.
+- Um documento Word: usaremos um documento de amostra para demonstrar o processo. 
 
- Para começar, você precisa definir o caminho para o diretório onde seus documentos estão localizados. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório de documentos.
+## Importar namespaces
+
+Em primeiro lugar, certifique-se de ter importado os namespaces necessários. Isso prepara o terreno para acessar as funcionalidades do Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Tudo bem, vamos detalhar o processo passo a passo.
+
+## Etapa 1: configure seu ambiente
+
+Para começar, você precisa configurar seu ambiente de desenvolvimento. Abra seu IDE C# favorito (como o Visual Studio) e crie um novo projeto.
+
+## Etapa 2: carregue o documento do Word
+
+A próxima etapa é carregar o documento do Word que deseja converter em PDF. Certifique-se de que seu documento esteja no diretório correto.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Passo 2: Carregue o documento
-
-A seguir, precisamos carregar o documento que queremos processar. Neste exemplo, presumimos que o documento se chama "Rendering.docx" e está localizado no diretório de documentos especificado.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Etapa 3: configurar opções de salvar como PDF com incorporação de fonte
+ Neste trecho, substitua`"YOUR DOCUMENT DIRECTORY"` com o caminho para o diretório do seu documento.
 
- Para ignorar a incorporação de fontes Arial e Times Roman no PDF gerado, precisamos configurar o`PdfSaveOptions` objeto e definir o`FontEmbeddingMode`propriedade para`PdfFontEmbeddingMode.EmbedAll`.
+## Passo 3: Configurar opções para salvar PDF
+
+Agora, precisamos configurar as opções de salvamento do PDF para controlar como as fontes são incorporadas. Por padrão, todas as fontes são incorporadas, o que pode aumentar o tamanho do arquivo. Vamos alterar essa configuração.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll
+};
 ```
 
-## Passo 4: Salve o documento como PDF sem fontes incorporadas
+## Etapa 4: salve o documento como PDF
 
-Por fim, podemos salvar o documento em formato PDF utilizando as opções de salvamento configuradas anteriormente.
+Por fim, salve o documento como PDF com as opções de salvamento especificadas. É aqui que a mágica acontece.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-Isso é tudo ! Você gerou com sucesso um PDF sem incorporar fontes Arial e Times Roman usando Aspose.Words for .NET.
-
-### Exemplo de código-fonte para ignorar fontes Arial e Times Roman incorporadas no tamanho do metarquivo com Aspose.Words for .NET
-
-```csharp
-
-	// O caminho para o diretório de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
-   
-```
+Este comando salva seu documento como um PDF chamado “OptimizedPDF.pdf” no diretório especificado.
 
 ## Conclusão
 
-Neste tutorial, explicamos como desabilitar a incorporação de fontes Arial e Times Roman em um documento PDF usando Aspose.Words for .NET. Seguindo as etapas descritas, você pode gerar um arquivo PDF sem incorporar essas fontes específicas, o que pode ajudar a reduzir o tamanho do arquivo e garantir melhor compatibilidade de documentos em diferentes plataformas. Certifique-se de considerar as consequências de desativar a incorporação de fontes ao usar esse recurso. Sinta-se à vontade para explorar mais recursos do Aspose.Words for .NET para otimizar a geração de seus arquivos PDF.
+E aí está! Você acabou de aprender como otimizar o tamanho do seu arquivo PDF ignorando a incorporação de fontes Arial e Times Roman usando Aspose.Words for .NET. Esse simples ajuste pode reduzir significativamente o tamanho dos arquivos, tornando-os mais fáceis de compartilhar e armazenar. É como ir à academia para pegar seus PDFs, perdendo peso desnecessário e mantendo todos os itens essenciais intactos.
 
-### perguntas frequentes
+## Perguntas frequentes
 
-#### P: O que é desativar a incorporação de fontes Arial e Times Roman em um documento PDF e por que isso é importante?
-R: Desabilitar a incorporação de fontes Arial e Times Roman em um documento PDF é o processo de não incluir essas fontes no arquivo PDF gerado. Isso pode ser importante para reduzir o tamanho do arquivo PDF, evitando a inclusão de fontes que já estão comumente disponíveis em sistemas leitores de PDF. Também pode ajudar a garantir melhor compatibilidade e aparência consistente do documento PDF em diferentes dispositivos e plataformas.
+### Por que devo ignorar a incorporação de fontes Arial e Times Roman?
+Ignorar essas fontes comuns pode reduzir o tamanho do arquivo PDF, pois a maioria dos sistemas já possui essas fontes instaladas.
 
-#### P: Como posso configurar o Aspose.Words for .NET para não incorporar fontes Arial e Times Roman em um documento PDF?
-R: Para configurar o Aspose.Words for .NET para não incorporar fontes Arial e Times Roman em um documento PDF, siga estas etapas:
+### Isso afetará a aparência do meu PDF?
+Não, não vai. Como Arial e Times Roman são fontes padrão, a aparência permanece consistente em diferentes sistemas.
 
- Defina o caminho do diretório onde seus documentos estão localizados, substituindo`"YOUR DOCUMENT DIRECTORY"` com o caminho real do seu diretório de documentos.
+### Posso pular a incorporação de outras fontes também?
+Sim, você pode configurar as opções de salvamento para ignorar a incorporação de outras fontes, se necessário.
 
- Carregue o documento que deseja processar usando o`Document` classe e o caminho do documento especificado.
+### O Aspose.Words para .NET é gratuito?
+Aspose.Words for .NET oferece uma avaliação gratuita que você pode baixar[aqui](https://releases.aspose.com/) , mas para acesso total, você precisa adquirir uma licença[aqui](https://purchase.aspose.com/buy).
 
- Crie uma instância do`PdfSaveOptions` classe e definir o`FontEmbeddingMode`propriedade para`PdfFontEmbeddingMode.EmbedAll`. Isto irá incorporar todas as fontes, exceto Arial e Times Roman, no arquivo PDF gerado.
-
- Use o`Save` método do`Document` objeto para salvar o documento em formato PDF especificando as opções de salvamento configuradas anteriormente.
-
-#### P: Quais são os benefícios de desativar a incorporação de fontes Arial e Times Roman em um documento PDF?
-R: Os benefícios de desativar a incorporação de fontes Arial e Times Roman em um documento PDF são:
-
-Redução do tamanho do arquivo PDF: Ao evitar a incorporação de fontes comumente disponíveis, como Arial e Times Roman, o tamanho do arquivo PDF pode ser reduzido, facilitando o armazenamento, o compartilhamento e a transferência de arquivos.
-
-Melhor compatibilidade: Ao usar fontes comumente disponíveis em sistemas leitores de PDF, você garante melhor compatibilidade e aparência do documento em diferentes dispositivos e plataformas.
-
-#### P: Quais são as consequências de desativar a incorporação de fontes Arial e Times Roman em um documento PDF?
-R: As consequências de desabilitar a incorporação de fontes Arial e Times Roman em um documento PDF são as seguintes:
-
-Aparência diferente: Caso as fontes Arial e Times Roman não estejam disponíveis no sistema onde o PDF é aberto, serão utilizadas fontes substitutas, o que pode resultar em uma aparência diferente da pretendida.
-
-Problemas de legibilidade: As fontes substitutas usadas podem não ser tão legíveis quanto as fontes originais, o que pode afetar a legibilidade do documento.
+### Onde posso encontrar mais tutoriais sobre Aspose.Words for .NET?
+ Você pode encontrar documentação e tutoriais abrangentes[aqui](https://reference.aspose.com/words/net/).

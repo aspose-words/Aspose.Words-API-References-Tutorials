@@ -12,4 +12,4 @@ Výukové programy Aspose.Words for .NET o textovém zpracování pomocí Office
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Matematické rovnice](./math-equations/) | Naučte se přidávat matematické rovnice do dokumentů aplikace Word pomocí Aspose.Words for .NET. |
+| [Matematické rovnice](./math-equations/) | Naučte se konfigurovat matematické rovnice v dokumentech aplikace Word pomocí Aspose.Words for .NET. Podrobný průvodce s příklady, často kladenými dotazy a dalšími. |

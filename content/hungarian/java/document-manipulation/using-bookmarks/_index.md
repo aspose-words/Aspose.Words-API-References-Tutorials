@@ -2,7 +2,7 @@
 title: Könyvjelzők használata az Aspose.Words for Java programban
 linktitle: A könyvjelzők használata
 second_title: Aspose.Words Java Document Processing API
-description: Optimalizálja dokumentumfeldolgozását az Aspose.Words for Java segítségével. Ebben a lépésenkénti útmutatóban tanulja meg a könyvjelzők használatát a hatékony tartalomnavigáció és -kezelés érdekében.
+description: Optimalizálja dokumentumfeldolgozását az Aspose.Words for Java segítségével. Ebben a lépésenkénti útmutatóban megtudhatja, hogyan használhatja a könyvjelzőket a hatékony tartalomnavigációhoz és kezeléshez.
 type: docs
 weight: 17
 url: /hu/java/document-manipulation/using-bookmarks/

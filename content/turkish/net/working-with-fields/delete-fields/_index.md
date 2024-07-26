@@ -20,7 +20,7 @@ Bu eğitime dalmadan önce aşağıdaki önkoşulların mevcut olduğundan emin 
 
 1. Visual Studio: Sisteminize kurulu ve yapılandırılmış.
 2.  Aspose.Words for .NET: İndirildi ve Visual Studio projenize entegre edildi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-3. Bir Word Belgesi: Kaldırmak istediğiniz alanları içeren örnek bir Word belgesini (.docx) hazır bulundurun.
+3. Word Belgesi: Kaldırmak istediğiniz alanları içeren örnek bir Word belgesini (.docx) hazır bulundurun.
 
 ### Bilgi Gereksinimleri
 

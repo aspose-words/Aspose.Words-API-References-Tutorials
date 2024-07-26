@@ -9,7 +9,7 @@ url: /fr/net/basic-conversions/pdf-to-jpeg/
 ---
 ## Introduction
 
-Vous êtes-vous déjà retrouvé dans une situation où vous deviez convertir un fichier PDF en image JPEG ? Peut-être pour un partage plus facile, une intégration dans une présentation ou simplement pour un aperçu rapide ? Eh bien, vous avez de la chance ! Dans ce didacticiel, nous plongeons profondément dans le monde d'Aspose.Words for .NET pour vous montrer exactement comment enregistrer un PDF au format JPEG. Croyez-moi, c'est plus facile que vous ne le pensez. Alors, prenez une tasse de café, asseyez-vous et transformons ces PDF en superbes JPEG !
+Vous êtes-vous déjà retrouvé dans une situation où vous deviez convertir un fichier PDF en image JPEG ? Peut-être pour un partage plus facile, une intégration dans une présentation ou simplement pour un aperçu rapide ? Eh bien, vous avez de la chance ! Dans ce didacticiel, nous plongeons profondément dans le monde d'Aspose.Words for .NET pour vous montrer exactement comment enregistrer un PDF au format JPEG. Croyez-moi, c'est plus facile que vous ne le pensez. Alors, prenez une tasse de café, asseyez-vous et transformons ces PDF en superbes JPEG !
 
 ## Conditions préalables
 
@@ -74,7 +74,7 @@ Une fois notre PDF chargé, il est temps d'effectuer la conversion. Cette étape
 
 ## Conclusion
 
-Et voila! Convertir un PDF en JPEG à l'aide d'Aspose.Words pour .NET est simple comme bonjour. Avec seulement quelques lignes de code, vous pouvez transformer vos documents et ouvrir un monde de possibilités. Que vous soyez un développeur cherchant à rationaliser votre flux de travail ou simplement quelqu'un qui aime bricoler du code, Aspose.Words est là pour vous.
+Et voila! Convertir un PDF en JPEG à l’aide d’Aspose.Words pour .NET est simple comme bonjour. Avec seulement quelques lignes de code, vous pouvez transformer vos documents et ouvrir un monde de possibilités. Que vous soyez un développeur cherchant à rationaliser votre flux de travail ou simplement quelqu'un qui aime bricoler du code, Aspose.Words est là pour vous.
 
 ## FAQ
 

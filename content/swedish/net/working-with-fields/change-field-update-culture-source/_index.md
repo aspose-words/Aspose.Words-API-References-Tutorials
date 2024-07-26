@@ -95,7 +95,7 @@ Grattis! Du har framgångsrikt lärt dig hur du ändrar fältuppdateringskulturk
 
 #### F: Är det möjligt att inaktivera automatisk fältuppdatering i Aspose.Words för .NET?
 
- S: Ja, det är möjligt att inaktivera automatisk fältuppdatering i Aspose.Words för .NET. Du kan använda`Document.FieldOptions.UpdateFields` egenskap och ställ in den på`false` för att förhindra att fält uppdateras automatiskt. Detta låter dig manuellt styra uppdateringen av fält efter behov.
+ S: Ja, det är möjligt att inaktivera automatisk fältuppdatering i Aspose.Words för .NET. Du kan använda`Document.FieldOptions.UpdateFields` egendom och ställ in den på`false` för att förhindra att fält uppdateras automatiskt. Detta låter dig manuellt styra uppdateringen av fält efter behov.
 
 #### F: Hur kan jag manuellt uppdatera dokumentfält i Aspose.Words för .NET?
 

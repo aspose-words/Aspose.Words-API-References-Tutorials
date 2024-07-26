@@ -1,6 +1,6 @@
 ---
-title: Tisk dokumentů na zakázku
-linktitle: Tisk dokumentů na zakázku
+title: Tisk dokumentů na míru
+linktitle: Tisk dokumentů na míru
 second_title: Aspose.Words Java Document Processing API
 description: Naučte se, jak snadno dosáhnout přizpůsobeného tisku dokumentů pomocí Aspose.Words for Java. Tento podrobný průvodce pokrývá vše od nastavení až po pokročilé přizpůsobení.
 type: docs

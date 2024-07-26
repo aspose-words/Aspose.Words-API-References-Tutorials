@@ -115,7 +115,7 @@ Aspose.Words for .NET은 .NET 프레임워크를 사용하여 프로그래밍 �
  다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/) 제공된 설치 지침을 따르십시오.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- 예, 다음을 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/).
+ 예, 다음을 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시면허](https://purchase.aspose.com/temporary-license/).
 
 ### .NET용 Aspose.Words에 대한 문서는 어디서 찾을 수 있나요?
  자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).

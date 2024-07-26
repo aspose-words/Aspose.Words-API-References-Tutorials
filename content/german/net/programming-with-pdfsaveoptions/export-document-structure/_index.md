@@ -2,91 +2,86 @@
 title: Exportieren der Word-Dokumentstruktur in ein PDF-Dokument
 linktitle: Exportieren der Word-Dokumentstruktur in ein PDF-Dokument
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Exportieren der Word-Dokumentstruktur in ein PDF-Dokument mit Aspose.Words für .NET.
+description: Exportieren Sie die Struktur eines Word-Dokuments mit Aspose.Words für .NET in ein PDF. Folgen Sie unserer Schritt-für-Schritt-Anleitung, um das Dokumentlayout beizubehalten und die PDF-Navigation zu verbessern.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/export-document-structure/
 ---
+## Einführung
 
-Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Funktion „Word-Dokumentstruktur in PDF-Dokument exportieren“ mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials werden Sie verstehen, wie Sie die Struktur eines Dokuments exportieren und ein PDF mit sichtbarer Struktur des Dokuments erstellen.
+Das Navigieren in der Welt der Dokumentbearbeitung kann sich manchmal anfühlen, als würde man ohne Karte durch einen dichten Wald wandern. Aber keine Sorge, wir haben den ultimativen Leitfaden, der Ihnen hilft, den Weg zu finden! Heute tauchen wir in die magische Welt des Exportierens von Word-Dokumentstrukturen in PDF mit Aspose.Words für .NET ein. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst anfangen, dieser Leitfaden führt Sie klar und präzise durch jeden Schritt.
 
-Stellen Sie vor dem Start sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Sie finden die Bibliothek und Installationsanweisungen auf der Aspose-Website.
+## Voraussetzungen
 
-## Schritt 1: Dokumentverzeichnis festlegen
+Bevor wir uns auf diese Reise begeben, sammeln wir alle wichtigen Dinge, die Sie für den Anfang brauchen.
 
- Zunächst müssen Sie den Pfad zum Verzeichnis angeben, in dem sich Ihre Dokumente befinden. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
+- Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Eine .NET-kompatible Entwicklungsumgebung wie Visual Studio.
+-  Beispieldokument: Ein Word-Dokument (z. B.`Paragraphs.docx`), das Sie in ein PDF konvertieren.
+
+## Namespaces importieren
+
+Um Aspose.Words nutzen zu können, müssen Sie die erforderlichen Namespaces importieren. Dadurch wird sichergestellt, dass Sie Zugriff auf alle für unsere Aufgabe erforderlichen Features und Funktionen haben.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Jeder Schritt führt Sie durch einen bestimmten Teil des Prozesses und stellt sicher, dass Sie nichts übersehen.
+
+## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
+
+Als Erstes definieren wir den Pfad zu Ihrem Dokumentverzeichnis. Hier befindet sich Ihr Word-Quelldokument und hier wird auch die konvertierte PDF-Datei gespeichert.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Schritt 2: Dokument hochladen
+## Schritt 2: Laden Sie das Word-Dokument
 
-Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Paragraphs.docx“ heißt und sich im angegebenen Dokumentverzeichnis befindet.
+ Als nächstes müssen wir das Word-Dokument laden, das wir in eine PDF-Datei konvertieren möchten. In diesem Beispiel verwenden wir eine Datei namens`Paragraphs.docx`.
 
 ```csharp
 Document doc = new Document(dataDir + "Paragraphs.docx");
 ```
 
-## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF
+## Schritt 3: PDF-Speicheroptionen konfigurieren
 
- Um die Dokumentstruktur zu exportieren und sie beim Bearbeiten der PDF-Datei im Navigationsbereich "Inhalt" von Adobe Acrobat Pro sichtbar zu machen, müssen wir die`PdfSaveOptions` Objekt mit dem`ExportDocumentStructure` Eigenschaft festgelegt auf`true`.
+ Um die Dokumentstruktur zu exportieren, müssen wir die PDF-Speicheroptionen konfigurieren. Dazu müssen wir die`ExportDocumentStructure`Eigentum an`true`Dadurch wird sichergestellt, dass die Struktur des Dokuments im Navigationsbereich „Inhalt“ von Adobe Acrobat Pro sichtbar ist.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    ExportDocumentStructure = true
+};
 ```
 
-## Schritt 4: Speichern Sie das Dokument als PDF mit der Dokumentstruktur
+## Schritt 4: Speichern Sie das Dokument als PDF
 
-Abschließend können wir das Dokument mit den zuvor konfigurierten Speicheroptionen im PDF-Format speichern.
+Nachdem Sie die Speicheroptionen konfiguriert haben, besteht der letzte Schritt darin, das Dokument als PDF zu speichern. Und hier geschieht die Magie!
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
 ```
 
-Das ist alles! Sie haben erfolgreich eine Dokumentstruktur exportiert und mit Aspose.Words für .NET ein PDF mit sichtbarer Dokumentstruktur generiert.
-
-### Beispiel-Quellcode zum Exportieren der Dokumentstruktur mit Aspose.Words für .NET
-
-
-```csharp
-
-            // Der Pfad zum Dokumentverzeichnis.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document(dataDir + "Paragraphs.docx");
-
-            // Die Dateigröße wird erhöht und die Struktur wird im Navigationsbereich „Inhalt“ sichtbar
-            // von Adobe Acrobat Pro, während Sie die PDF-Datei bearbeiten.
-            PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
-
-            doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
-        
-```
-
-
 ## Abschluss
 
-In diesem Tutorial haben wir erklärt, wie Sie die Struktur eines Word-Dokuments mit Aspose.Words für .NET in ein PDF-Dokument exportieren. Indem Sie die beschriebenen Schritte befolgen, können Sie ganz einfach ein PDF mit sichtbarer Dokumentstruktur erstellen, was die Navigation und Suche im Dokument erleichtert. Verwenden Sie die Funktionen von Aspose.Words für .NET, um die Struktur Ihrer Word-Dokumente zu exportieren und gut strukturierte PDFs zu erstellen.
+Herzlichen Glückwunsch! Sie haben die Struktur eines Word-Dokuments mit Aspose.Words für .NET erfolgreich in ein PDF exportiert. Diese Funktion ist unglaublich nützlich, um das Dokumentlayout beizubehalten und die Navigation in komplexen PDFs zu vereinfachen. Mit dieser Anleitung können Sie jetzt Dokumente sicher konvertieren und die leistungsstarken Funktionen von Aspose.Words nutzen.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Was bedeutet das Exportieren der Struktur eines Word-Dokuments in ein PDF-Dokument?
-A: Durch das Exportieren der Struktur eines Word-Dokuments in ein PDF-Dokument wird ein PDF mit einer sichtbaren Dokumentstruktur erstellt. Die Dokumentstruktur umfasst normalerweise Dinge wie Überschriften, Abschnitte, Absätze und andere strukturierte Elemente des Dokuments. Diese Struktur kann für die Navigation und Suche im PDF-Dokument nützlich sein.
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente programmgesteuert erstellen, bearbeiten, konvertieren und bearbeiten können.
 
-#### F: Wie kann ich die Struktur eines Word-Dokuments mit Aspose.Words für .NET in ein PDF-Dokument exportieren?
-A: Um die Struktur eines Word-Dokuments mit Aspose.Words für .NET in ein PDF-Dokument zu exportieren, gehen Sie folgendermaßen vor:
+### Kann ich andere Funktionen eines Word-Dokuments in PDF exportieren?
+Ja, Aspose.Words für .NET bietet verschiedene Optionen zum Exportieren von Funktionen wie Lesezeichen, Hyperlinks und mehr in PDF.
 
- Erstellen Sie eine Instanz des`Document` Klasse, die den Pfad zum Word-Dokument angibt.
+### Ist es möglich, diesen Prozess zu automatisieren?
+Auf jeden Fall! Sie können diesen Prozess mithilfe von Skripten und Stapelverarbeitung in Ihrer Entwicklungsumgebung automatisieren.
 
- Erstellen Sie eine Instanz des`PdfSaveOptions` Klasse und legen Sie die`ExportDocumentStructure`Eigentum an`true`. Dadurch wird die Dokumentstruktur exportiert und beim Bearbeiten der PDF-Datei im Navigationsbereich „Inhalt“ von Adobe Acrobat Pro sichtbar gemacht.
+### Wie kann ich eine kostenlose Testversion von Aspose.Words für .NET erhalten?
+ Sie erhalten eine kostenlose Testversion von[Aspose-Website](https://releases.aspose.com/).
 
- Verwenden Sie die`Save` Methode der`Document`Klasse, um das Dokument durch Angabe von Speicheroptionen im PDF-Format zu speichern.
-
-#### F: Wie kann ich mit Adobe Acrobat Pro die Struktur eines PDF-Dokuments anzeigen?
-A: Um die Struktur eines PDF-Dokuments mit Adobe Acrobat Pro anzuzeigen, gehen Sie folgendermaßen vor:
-
-Öffnen Sie das PDF-Dokument in Adobe Acrobat Pro.
-
-Klicken Sie in der linken Navigationsleiste auf das Symbol „Inhalt“, um den Navigationsbereich „Inhalt“ anzuzeigen.
-
-Im Navigationsbereich „Inhalt“ wird Ihnen die Dokumentstruktur mit Überschriften, Abschnitten und weiteren Strukturelementen angezeigt.
+### Was soll ich tun, wenn ich auf Probleme stoße?
+ Hilfe erhalten Sie beim[Aspose-Supportforum](https://forum.aspose.com/c/words/8).

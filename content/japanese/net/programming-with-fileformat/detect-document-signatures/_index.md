@@ -2,90 +2,105 @@
 title: Word文書のデジタル署名を検出する
 linktitle: Word文書のデジタル署名を検出する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書のデジタル署名を検出するためのステップバイステップ ガイド。
+description: ステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書内のデジタル署名を検出する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-fileformat/detect-document-signatures/
 ---
+## 導入
 
-この記事では、Aspose.Words for .NET で Word 文書のデジタル署名検出機能を使用する方法について、ステップ バイ ステップで説明します。コードの各部分を詳しく説明します。このチュートリアルの最後には、文書内のデジタル署名を検出する方法が理解できるようになります。
+Word 文書の整合性と信頼性を確保することは、特に今日のデジタル時代においては重要です。これを実現する方法の 1 つは、デジタル署名を使用することです。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のデジタル署名を検出する方法について詳しく説明します。基本からステップ バイ ステップ ガイドまですべてをカバーし、最後までに包括的な理解が得られるようにします。
 
-開始する前に、プロジェクトに Aspose.Words for .NET ライブラリがインストールされ、構成されていることを確認してください。ライブラリとインストール手順は、Aspose Web サイトで参照できます。
+## 前提条件
 
-## ステップ1: ドキュメントディレクトリを定義する
+始める前に、以下のものを用意しておいてください。
 
-まず、ドキュメントが保存されているディレクトリへのパスを定義する必要があります。`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
+-  Aspose.Words for .NETライブラリ:以下からダウンロードできます。[Aspose リリース ページ](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio などの .NET 開発環境が設定されていることを確認します。
+- C# の基本的な理解: C# プログラミング言語に精通していると、スムーズに理解できるようになります。
+
+## 名前空間のインポート
+
+まず、必要な名前空間をインポートしましょう。これは、Aspose.Words for .NET によって提供されるクラスとメソッドにアクセスできるようになるため、非常に重要です。
 
 ```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+```
+
+## ステップ1: プロジェクトを設定する
+
+デジタル署名の検出を開始する前に、プロジェクトを設定する必要があります。
+
+### 1.1 新しいプロジェクトを作成する
+
+Visual Studioを開き、新しいコンソールアプリ（.NET Core）プロジェクトを作成します。名前を付けます。`DigitalSignatureDetector`.
+
+### 1.2 Aspose.Words for .NET をインストールする
+
+プロジェクトに Aspose.Words を追加する必要があります。これは NuGet パッケージ マネージャーを使用して実行できます。
+
+- ソリューション エクスプローラーでプロジェクトを右クリックします。
+- 「NuGet パッケージの管理」を選択します。
+- 「Aspose.Words」を検索し、最新バージョンをインストールします。
+
+## ステップ2: ドキュメントディレクトリパスを追加する
+
+ここで、ドキュメントが保存されているディレクトリへのパスを定義する必要があります。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## ステップ2: デジタル署名を検出する
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
 
-次に、`DetectFileFormat`方法の`FileFormatUtil`クラスを使用してファイル形式情報を検出します。この例では、ドキュメントの名前が「Digitally signed.docx」で、指定されたドキュメント ディレクトリにあると想定しています。
+## ステップ3: ファイル形式の検出
+
+次に、ドキュメントのファイル形式を検出して、Word ドキュメントであることを確認する必要があります。
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
 ```
 
-## ステップ3: デジタル署名を確認する
+このコード行は、次の文書のファイル形式をチェックします。`Digitally signed.docx`.
 
-文書にデジタル署名が含まれているかどうかは、`HasDigitalSignature`の財産`FileFormatInfo`オブジェクト。デジタル署名が検出されると、Aspose.Words でドキュメントを開いたり保存したりすると署名が失われることを示すメッセージが表示されます。
+## ステップ4: デジタル署名を確認する
+
+それでは、ドキュメントにデジタル署名があるかどうかを確認しましょう。
 
 ```csharp
 if (info.HasDigitalSignature)
 {
-	Console.WriteLine(
-		$"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
-		"they will be lost if you open/save this document with Aspose.Words.");
+    Console.WriteLine(
+        $"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
+        "they will be lost if you open/save this document with Aspose.Words.");
 }
 ```
 
-以上です。Aspose.Words for .NET を使用してドキュメント内のデジタル署名を正常に検出できました。
-
-### Aspose.Words for .NET でドキュメント署名を検出するためのサンプル ソース コード
-
-```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
-
-	if (info.HasDigitalSignature)
-	{
-		Console.WriteLine(
-			$"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
-			"they will be lost if you open/save this document with Aspose.Words.");
-	}
-	
-        
-```
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET のデジタル署名検出機能を使用して Word 文書のデジタル署名を検出する方法について、ステップ バイ ステップで説明しました。コードの各部分が詳細に説明されているため、文書内のデジタル署名を検出する方法が理解できます。
+Aspose.Words for .NET を使用して Word 文書のデジタル署名を検出するのは簡単なプロセスです。上記の手順に従うことで、プロジェクトを簡単にセットアップし、ファイル形式を検出し、デジタル署名をチェックすることができます。この機能は、文書の整合性と信頼性を維持するために非常に重要です。
 
-### Word 文書のデジタル署名の検出に関する FAQ
+## よくある質問
 
-#### Aspose.Words for .NET を使用して Word 文書上のデジタル署名の存在を検出する方法を教えてください。
+### Aspose.Words for .NET はドキュメントを保存するときにデジタル署名を保持できますか?
 
- Aspose.Words for .NETを使用してWord文書のデジタル署名の有無を検出するには、チュートリアルの手順に従ってください。`DetectFileFormat`方法の`FileFormatUtil`クラスを使用すると、ファイル形式情報を検出できます。その後、`HasDigitalSignature`の財産`FileFormatInfo`オブジェクトを使用して、ドキュメントにデジタル署名が含まれているかどうかを判断します。デジタル署名が検出された場合は、Aspose.Words でドキュメントを開いたり保存したりすると署名が失われることを示すメッセージを表示できます。
+いいえ、Aspose.Words for .NET はドキュメントを開いたり保存したりするときにデジタル署名を保持しません。デジタル署名は失われます。
 
-#### デジタル署名を検索するドキュメントを含むディレクトリを指定するにはどうすればよいですか?
+### 文書上の複数のデジタル署名を検出する方法はありますか?
 
-デジタル署名を検索する文書を含むディレクトリを指定するには、`dataDir`コード内の変数。`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
+はい`HasDigitalSignature`プロパティは、ドキュメントに 1 つ以上のデジタル署名が存在するかどうかを示します。
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
+### Aspose.Words for .NET の無料試用版を入手するにはどうすればよいですか?
 
-#### Aspose.Words を使用してドキュメントを開いたり保存したりすると、デジタル署名にどのような影響がありますか?
+無料トライアルは以下からダウンロードできます。[Aspose リリース ページ](https://releases.aspose.com/).
 
-Aspose.Words でドキュメントを開いたり保存したりすると、ドキュメント内のデジタル署名は失われます。これは、Aspose.Words での処理中にドキュメントが変更されたためです。デジタル署名を保持する必要がある場合は、この点を考慮して、デジタル署名を含むドキュメントを管理する別の方法を使用する必要があります。
+### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
 
-#### デジタル署名検出と組み合わせて使用できる Aspose.Words for .NET の他の機能は何ですか?
+包括的なドキュメントは以下でご覧いただけます。[Aspose ドキュメント ページ](https://reference.aspose.com/words/net/).
 
- Aspose.Words for .NET は、Word 文書の処理と操作のためのさまざまな機能を提供します。デジタル署名の検出に加えて、ライブラリを使用して文書からテキスト、画像、メタデータを抽出したり、書式変更を適用したり、文書を結合したり、文書を異なる形式に変換したりすることができます。[Aspose.Words for .NET API リファレンス](https://reference.aspose.com/words/net/)利用可能なすべての機能を確認し、ニーズに最適なものを見つけてください。
+### Aspose.Words for .NET のサポートを受けることはできますか?
 
-#### Aspose.Words for .NET でデジタル署名を検出する場合の制限は何ですか?
-
-Aspose.Words for .NET によるデジタル署名の検出は、ドキュメント内の署名の存在の検出に限定されています。ただし、Aspose.Words には、デジタル署名の信頼性や整合性を検証する機能は用意されていません。デジタル署名に対してより高度な操作を実行するには、他の専用ツールまたはライブラリを使用する必要があります。
+はい、サポートを受けることができます[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8).

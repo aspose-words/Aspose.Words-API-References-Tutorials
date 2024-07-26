@@ -2,66 +2,94 @@
 title: Atualizar propriedade do último horário salvo
 linktitle: Atualizar propriedade do último horário salvo
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como atualizar automaticamente a propriedade Last Saved Time ao salvar um documento com Aspose.Words for .NET.
+description: Aprenda como atualizar a última propriedade de hora salva em documentos do Word usando Aspose.Words for .NET. Siga nosso guia passo a passo detalhado.
 type: docs
 weight: 10
 url: /pt/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-Neste tutorial, exploraremos o código-fonte C# fornecido para atualizar a propriedade last save time ao salvar um documento usando Aspose.Words for .NET. Este recurso permite atualizar automaticamente a propriedade do último horário de salvamento do documento gerado.
+## Introdução
 
-## Passo 1: Configurando o ambiente
+Já se perguntou como controlar programaticamente a última propriedade de tempo salva em seus documentos do Word? Se você estiver lidando com vários documentos e precisar manter seus metadados, atualizar a última propriedade de horário salvo pode ser bastante útil. Hoje, vou orientá-lo nesse processo usando Aspose.Words for .NET. Então, aperte o cinto e vamos mergulhar!
 
-Antes de começar, certifique-se de configurar seu ambiente de desenvolvimento com Aspose.Words for .NET. Certifique-se de ter adicionado as referências necessárias e importado os namespaces apropriados.
+## Pré-requisitos
 
-## Passo 2: Carregando o documento
+Antes de entrarmos no guia passo a passo, há algumas coisas que você precisa:
+
+1.  Aspose.Words for .NET: Certifique-se de ter o Aspose.Words for .NET instalado. Se ainda não o fez, você pode[baixe aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: um ambiente de desenvolvimento como o Visual Studio.
+3. Conhecimento básico de C#: Compreender os fundamentos da programação C# será útil.
+
+## Importar namespaces
+
+Para começar, certifique-se de importar os namespaces necessários para o seu projeto. Isso permitirá que você acesse as classes e métodos necessários para manipular documentos do Word.
 
 ```csharp
-// Caminho para o seu diretório de documentos
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
+Agora, vamos dividir o processo em etapas simples. Cada etapa irá guiá-lo através do processo de atualização da última propriedade de horário salva em seu documento do Word.
+
+## Etapa 1: configure seu diretório de documentos
+
+Primeiro, você precisa especificar o caminho para o diretório do seu documento. É aqui que o documento existente é armazenado e onde o documento atualizado será salvo.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o seu diretório.
+
+## Etapa 2: carregue seu documento do Word
+
+ Em seguida, carregue o documento do Word que deseja atualizar. Você pode fazer isso criando uma instância do`Document` class e passando o caminho do seu documento.
+
+```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Nesta etapa, carregamos o documento usando o`Document` método e passando o caminho para o arquivo DOCX a ser carregado.
+ Certifique-se de que o documento nomeado`Document.docx` está presente no diretório especificado.
 
-## Etapa 3: configurar opções de backup OOXML
+## Etapa 3: configurar opções de salvamento
+
+ Agora, crie uma instância do`OoxmlSaveOptions` aula. Esta classe permite especificar opções para salvar seu documento no formato Office Open XML (OOXML). Aqui, você definirá o`UpdateLastSavedTimeProperty` para`true`.
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
+{
+    UpdateLastSavedTimeProperty = true
+};
 ```
 
- Nesta etapa, configuramos as opções de salvamento OOXML usando o`OoxmlSaveOptions` aula. Habilitamos a atualização automática da última propriedade de tempo salvo definindo`UpdateLastSavedTimeProperty` para`true`.
+Isso diz ao Aspose.Words para atualizar a última propriedade de hora salva do documento.
 
-## Passo 4: Salve o documento com propriedade atualizada
+## Etapa 4: salve o documento atualizado
+
+ Por fim, salve o documento usando o`Save` método do`Document` class, passando o caminho onde deseja salvar o documento atualizado e as opções de salvamento.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
 ```
 
- Nesta última etapa, salvamos o documento usando o`Save` método e passando o caminho para o arquivo de saída com o`.docx` extensão, junto com as opções de salvamento especificadas.
-
-Agora você pode executar o código-fonte para atualizar automaticamente a propriedade do último horário de salvamento ao salvar um documento. O arquivo resultante será salvo no diretório especificado com o nome "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx".
-
-### Exemplo de código-fonte para atualizar a propriedade do último horário salvo usando Aspose.Words for .NET 
-
-```csharp
-
-// Caminho para o diretório do seu documento
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-Document doc = new Document(dataDir + "Document.docx");
-
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
-
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
-            
-        
-```
+Isso salvará o documento com a propriedade atualizada da última hora salva.
 
 ## Conclusão
 
-Neste tutorial, exploramos o recurso de atualização automática da propriedade do último horário de salvamento ao salvar um documento usando Aspose.Words for .NET. Ao ativar esse recurso com opções de salvamento OOXML, você pode garantir que a última propriedade de horário de salvamento seja atualizada automaticamente no documento gerado.
+E aí está! Seguindo essas etapas, você pode atualizar facilmente a última propriedade de hora salva de seus documentos do Word usando Aspose.Words for .NET. Isto é especialmente útil para manter metadados precisos em seus documentos, o que pode ser crucial para sistemas de gerenciamento de documentos e vários outros aplicativos.
 
-Atualizar a propriedade do último horário salvo pode ser útil para rastrear alterações e versões de um documento. Ele também controla quando o documento foi salvo pela última vez, o que pode ser útil em vários cenários.
+## Perguntas frequentes
 
-Aspose.Words for .NET facilita a atualização automática da propriedade Last Backup Time, fornecendo opções de backup flexíveis e poderosas. Você pode integrar esse recurso em seus projetos para garantir que os documentos gerados tenham informações de backup precisas.
+### O que é Aspose.Words para .NET?
+Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e converter documentos Word em aplicativos .NET.
+
+### Por que devo atualizar a última propriedade de horário salva?
+Atualizar a última propriedade de hora salva ajuda a manter metadados precisos, o que é essencial para rastreamento e gerenciamento de documentos.
+
+### Posso atualizar outras propriedades usando Aspose.Words for .NET?
+Sim, Aspose.Words for .NET permite atualizar várias propriedades do documento, como título, autor e assunto.
+
+### O Aspose.Words para .NET é gratuito?
+ Aspose.Words for .NET oferece uma avaliação gratuita, mas para funcionalidade completa é necessária uma licença. Você pode obter uma licença[aqui](https://purchase.aspose.com/buy).
+
+### Onde posso encontrar mais tutoriais sobre Aspose.Words for .NET?
+Você pode encontrar mais tutoriais e documentação[aqui](https://reference.aspose.com/words/net/).

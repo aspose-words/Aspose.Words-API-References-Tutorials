@@ -12,4 +12,4 @@ HTMLLoadOptions를 사용한 단어 처리에 대한 .NET용 Aspose.Words 튜토
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [Word 문서에서 선호하는 컨트롤 유형](./preferred-control-type/) | .NET용 Aspose.Words를 사용하여 HTML 문서를 로드할 때 Word 문서에서 기본 컨트롤 유형을 지정하는 방법에 대한 단계별 가이드입니다. |
+| [Word 문서에서 선호하는 컨트롤 유형](./preferred-control-type/) | .NET용 Aspose.Words를 사용하여 Word 문서에 콤보 상자 양식 필드를 삽입하는 방법을 알아보세요. 원활한 HTML 콘텐츠 통합을 위해 이 단계별 가이드를 따르세요. |

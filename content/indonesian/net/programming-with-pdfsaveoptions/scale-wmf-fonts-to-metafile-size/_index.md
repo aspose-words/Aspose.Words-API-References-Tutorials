@@ -2,110 +2,109 @@
 title: Kurangi Ukuran PDF dengan Skala Font Wmf Ke Ukuran Metafile
 linktitle: Kurangi Ukuran PDF dengan Skala Font Wmf Ke Ukuran Metafile
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengurangi ukuran pdf dengan skala font wmf ke ukuran metafile saat mengonversi ke PDF dengan Aspose.Words untuk .NET.
+description: Panduan langkah demi langkah untuk memperkecil ukuran pdf dengan skala font wmf ke ukuran metafile saat mengonversi ke PDF dengan Aspose.Words untuk .NET.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
+## Perkenalan
 
-Artikel ini memberikan panduan langkah demi langkah tentang cara memperkecil ukuran pdf dengan fitur skala font wmf ke ukuran metafile dengan Aspose.Words untuk .NET. Kami akan menjelaskan setiap bagian kode secara detail. Di akhir tutorial ini, Anda akan dapat memahami cara mengaktifkan atau menonaktifkan penskalaan font WMF saat mengonversi ke PDF.
+Saat bekerja dengan file PDF, terutama yang dihasilkan dari dokumen Word yang berisi grafik WMF (Windows Metafile), manajemen ukuran dapat menjadi aspek penting dalam penanganan dokumen. Salah satu cara untuk mengontrol ukuran PDF adalah dengan menyesuaikan cara font WMF ditampilkan dalam dokumen. Dalam tutorial ini, kita akan mempelajari cara memperkecil ukuran PDF dengan menskalakan font WMF ke ukuran metafile menggunakan Aspose.Words untuk .NET.
 
-Sebelum memulai, pastikan Anda telah menginstal dan mengonfigurasi pustaka Aspose.Words untuk .NET di proyek Anda. Anda dapat menemukan perpustakaan dan petunjuk instalasi di situs web Aspose.
+## Prasyarat
 
-## Langkah 1: Tentukan direktori dokumen
+Sebelum mendalami langkah-langkahnya, pastikan Anda memiliki hal berikut:
 
- Untuk memulai, Anda perlu menentukan jalur ke direktori tempat dokumen Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+1. Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Tutorial ini mengasumsikan Anda telah menyiapkan lingkungan pengembangan .NET (seperti Visual Studio) tempat Anda dapat menulis dan mengeksekusi kode C#.
+3. Pemahaman Dasar Pemrograman .NET: Keakraban dengan konsep dasar pemrograman .NET dan sintaksis C# akan sangat membantu.
+4. Dokumen Word dengan Grafik WMF: Anda memerlukan dokumen Word yang berisi grafik WMF. Anda dapat menggunakan dokumen Anda sendiri atau membuatnya untuk pengujian.
+
+## Impor Namespace
+
+Pertama, Anda perlu mengimpor namespace yang diperlukan dalam proyek C# Anda. Ini akan memberi Anda akses ke kelas dan metode yang diperlukan untuk bekerja dengan Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Langkah 2: Unggah dokumen
+## Langkah 1: Muat Dokumen Word
 
-Selanjutnya, kita perlu memuat dokumen yang ingin kita proses. Dalam contoh ini, kami berasumsi bahwa dokumen tersebut bernama "WMF dengan text.docx" dan terletak di direktori dokumen yang ditentukan.
+ Untuk memulai, muat dokumen Word yang berisi grafik WMF. Ini dilakukan dengan menggunakan`Document` kelas dari Aspose.Words.
 
 ```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Muat dokumen
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
-## Langkah 3: Konfigurasikan opsi rendering metafile
+ Di Sini,`dataDir` adalah pengganti untuk jalur direktori dokumen Anda. Kami membuat sebuah instance dari`Document` kelas dengan meneruskan jalur ke file Word. Ini memuat dokumen ke dalam memori, siap untuk diproses lebih lanjut.
 
- Untuk mengaktifkan atau menonaktifkan penskalaan font WMF ke ukuran metafile, kita perlu mengkonfigurasi`MetafileRenderingOptions` obyek. Dalam contoh ini, kami menonaktifkan penskalaan font dengan mengatur`ScaleWmfFontsToMetafileSize`properti ke`false`.
+## Langkah 2: Konfigurasikan Opsi Rendering Metafile
+
+ Selanjutnya, Anda perlu mengonfigurasi opsi rendering metafile. Secara khusus, atur`ScaleWmfFontsToMetafileSize`properti ke`false`. Ini mengontrol apakah font WMF diskalakan agar sesuai dengan ukuran metafile.
 
 ```csharp
+// Buat instance baru dari MetafileRenderingOptions
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 {
-     ScaleWmfFontsToMetafileSize=false
+    ScaleWmfFontsToMetafileSize = false
 };
 ```
 
-## Langkah 4: Konfigurasikan opsi simpan sebagai PDF dengan opsi rendering metafile
+ Itu`MetafileRenderingOptions` kelas menyediakan opsi bagaimana metafile (seperti WMF) dirender. Dengan mengatur`ScaleWmfFontsToMetafileSize` ke`false`, Anda menginstruksikan Aspose.Words untuk tidak menskalakan font sesuai dengan ukuran metafile, yang dapat membantu mengurangi ukuran PDF secara keseluruhan.
 
-Terakhir, kita dapat mengonfigurasi opsi simpan ke PDF menggunakan opsi rendering metafile yang dikonfigurasi sebelumnya.
+## Langkah 3: Tetapkan Opsi Penyimpanan PDF
+
+Sekarang, konfigurasikan opsi penyimpanan PDF untuk menggunakan opsi rendering metafile yang baru saja Anda atur. Ini memberitahu Aspose.Words cara menangani metafile saat menyimpan dokumen sebagai PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
+// Buat instance baru dari PdfSaveOptions
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    MetafileRenderingOptions = metafileRenderingOptions
+};
 ```
 
-## Langkah 5: Simpan Dokumen sebagai PDF dengan Opsi Rendering Metafile
+ Itu`PdfSaveOptions` kelas memungkinkan Anda menentukan berbagai pengaturan untuk menyimpan dokumen sebagai PDF. Dengan menetapkan yang dikonfigurasi sebelumnya`MetafileRenderingOptions` ke`MetafileRenderingOptions` milik`PdfSaveOptions`, Anda memastikan bahwa dokumen disimpan sesuai dengan pengaturan rendering metafile yang Anda inginkan.
 
-Simpan dokumen dalam format PDF menggunakan opsi penyimpanan yang dikonfigurasi sebelumnya.
+## Langkah 4: Simpan Dokumen sebagai PDF
+
+Terakhir, simpan dokumen Word sebagai PDF menggunakan opsi penyimpanan yang dikonfigurasi. Ini akan menerapkan semua pengaturan, termasuk opsi rendering metafile, ke PDF keluaran.
+
 
 ```csharp
+// Simpan dokumen sebagai PDF
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-Itu saja ! Anda telah berhasil mengaktifkan atau menonaktifkan penskalaan font WMF ke ukuran metafile saat mengonversi
-
-dokumen PDF menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk menskalakan font WMF ke ukuran metafile dengan Aspose.Words untuk .NET
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "WMF with text.docx");
-
-	MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
-	{
-		ScaleWmfFontsToMetafileSize = false
-	};
-
-	//Jika Aspose.Words tidak dapat merender beberapa rekaman metafile ke grafik vektor dengan benar
-	// lalu Aspose.Words merender metafile ini menjadi bitmap.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
-	
-        
-```
+ Pada langkah ini,`Save` metode`Document` kelas digunakan untuk mengekspor dokumen ke file PDF. Jalur di mana PDF akan disimpan ditentukan, bersama dengan`PdfSaveOptions` yang mencakup pengaturan rendering metafile.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelaskan cara mengaktifkan atau menonaktifkan pengubahan ukuran font WMF ke ukuran metafile dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang dijelaskan, Anda dapat dengan mudah mengontrol apakah font WMF harus diubah ukurannya agar sesuai dengan ukuran metafile saat mengonversi ke dokumen PDF. Ini dapat membantu Anda mengurangi ukuran file PDF yang dihasilkan dan meningkatkan kinerja rendering. Pastikan untuk menentukan jalur yang benar ke dokumen Anda dan konfigurasikan opsi rendering metafile sesuai kebutuhan.
+Dengan menskalakan font WMF ke ukuran metafile, Anda dapat secara signifikan mengurangi ukuran file PDF yang dihasilkan dari dokumen Word. Teknik ini membantu mengoptimalkan penyimpanan dan distribusi dokumen tanpa mengurangi kualitas konten visual. Mengikuti langkah-langkah yang diuraikan di atas memastikan file PDF Anda lebih mudah dikelola dan ukurannya efisien.
 
-### Pertanyaan yang Sering Diajukan
+## FAQ
 
-#### T: Apa yang dimaksud dengan mengubah ukuran font WMF menjadi ukuran metafile dalam dokumen PDF?
-J: Mengubah ukuran font WMF ke ukuran metafile dalam dokumen PDF adalah fitur yang mengontrol apakah font WMF harus diskalakan agar sesuai dengan ukuran metafile saat mengonversi ke dokumen PDF. Saat fitur ini diaktifkan, font WMF akan diskalakan agar sesuai dengan ukuran metafile, yang dapat mengurangi ukuran dokumen PDF yang dihasilkan.
+### Apa itu WMF dan mengapa penting untuk ukuran PDF?
 
-#### T: Bagaimana cara menggunakan Aspose.Words untuk .NET untuk mengaktifkan atau menonaktifkan pengubahan ukuran font WMF menjadi ukuran metafile dalam dokumen PDF?
-J: Untuk mengaktifkan atau menonaktifkan pengubahan ukuran font WMF ke ukuran metafile dalam dokumen PDF menggunakan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
+WMF (Windows Metafile) adalah format grafik yang digunakan di Microsoft Windows. Itu dapat berisi data vektor dan bitmap. Karena data vektor dapat diskalakan dan dimanipulasi, penting untuk menanganinya dengan benar untuk menghindari file PDF berukuran besar yang tidak perlu.
 
- Atur jalur direktori tempat dokumen Anda berada dengan mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya dari direktori dokumen Anda.
+### Bagaimana pengaruh penskalaan font WMF ke ukuran metafile pada PDF?
 
- Muat dokumen yang ingin Anda proses menggunakan`Document` kelas dan tentukan jalur ke dokumen Word di direktori dokumen yang ditentukan.
+Menskalakan font WMF ke ukuran metafile dapat membantu mengurangi ukuran PDF secara keseluruhan dengan menghindari rendering font resolusi tinggi yang mungkin meningkatkan ukuran file.
 
- Konfigurasikan opsi rendering metafile dengan membuat instance dari`MetafileRenderingOptions` kelas dan pengaturan`ScaleWmfFontsToMetafileSize`properti ke`true` untuk mengaktifkan penskalaan font WMF ke ukuran metafile, atau ke`false` untuk menonaktifkan fitur ini.
+### Bisakah saya menggunakan format metafile lain dengan Aspose.Words?
 
- Konfigurasikan opsi simpan sebagai PDF dengan membuat instance dari`PdfSaveOptions` kelas dan menggunakan opsi rendering metafile yang dikonfigurasi sebelumnya.
+Ya, Aspose.Words mendukung berbagai format metafile, termasuk EMF (Enhanced Metafile) dan WMF.
 
- Simpan dokumen dalam format PDF menggunakan`Save` metode`Document` kelas yang menentukan jalur dan opsi penyimpanan.
+### Apakah teknik ini berlaku untuk semua jenis dokumen Word?
 
-#### T: Apa manfaat mengubah ukuran font WMF menjadi ukuran metafile dalam dokumen PDF?
-A: Keuntungan mengubah ukuran font WMF ke ukuran metafile dalam dokumen PDF adalah:
+Ya, teknik ini dapat diterapkan pada dokumen Word apa pun yang berisi grafik WMF, membantu mengoptimalkan ukuran PDF yang dihasilkan.
 
-Pengurangan ukuran file PDF: Mengubah ukuran font WMF ke ukuran metafile dapat mengurangi ukuran dokumen PDF yang dihasilkan dengan menyesuaikan ukuran font dengan kebutuhan metafile.
+### Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Words?
 
-Peningkatan kinerja: Dengan menyesuaikan ukuran font WMF dengan dimensi metafile, rendering dokumen PDF bisa lebih cepat dan efisien.
+ Anda dapat menjelajahi lebih lanjut tentang Aspose.Words di[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) . Untuk unduhan, uji coba, dan dukungan, kunjungi[Halaman Unduh Aspose.Words](https://releases.aspose.com/words/net/), [Beli Aspose.Kata-kata](https://purchase.aspose.com/buy), [Uji Coba Gratis](https://releases.aspose.com/), [Lisensi Sementara](https://purchase.aspose.com/temporary-license/) , Dan[Mendukung](https://forum.aspose.com/c/words/8).

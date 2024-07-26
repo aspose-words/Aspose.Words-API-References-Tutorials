@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Krok 3: Přidejte textový vodoznak se specifickými možnostmi
 
- Vytvoříme instanci`TextWatermarkOptions`třídy a nastavte požadované možnosti pro textový vodoznak.
+ Vytvoříme instanci`TextWatermarkOptions` třídy a nastavte požadované možnosti pro textový vodoznak.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

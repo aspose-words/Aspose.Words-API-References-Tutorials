@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-이 단계에서는 새로운`Document` 객체와 연관된`DocumentBuilder` 물체. 이러한 개체를 사용하면 문서를 조작하고 생성할 수 있습니다.
+ 이 단계에서는 새로운`Document` 객체와 연관된`DocumentBuilder` 물체. 이러한 개체를 사용하면 문서를 조작하고 생성할 수 있습니다.
 
 ## 3단계: 세 가지 들여쓰기 수준으로 목록 만들기
 
@@ -100,7 +100,7 @@ Aspose.Words for .NET의 "목록 들여쓰기를 위해 수준당 하나의 탭 
 
  새로 만들기`Document` 객체와 연관된`DocumentBuilder` 물체.
 
- 사용`DocumentBuilder` 메소드를 사용하여 여러 수준의 들여쓰기 목록을 작성하려면`ApplyNumberDefault()` 기본 목록 번호 형식을 적용하려면`Writeln()`그리고`Write()` 목록에 항목을 추가하려면`ListIndent()`각 수준에서 들여쓰기를 증가시킵니다.
+ 사용`DocumentBuilder`메소드를 사용하여 여러 수준의 들여쓰기 목록을 작성하려면`ApplyNumberDefault()` 기본 목록 번호 형식을 적용하려면`Writeln()`그리고`Write()` 목록에 항목을 추가하려면`ListIndent()` 각 수준에서 들여쓰기를 증가시킵니다.
 
  생성하여 저장 옵션을 구성합니다.`TxtSaveOptions` 개체 및 속성 설정`ListIndentation.Count` 레벨당 탭 문자 수와`ListIndentation.Character` 에게`'\t'` 탭 문자를 사용합니다.
 
@@ -110,7 +110,7 @@ Aspose.Words for .NET의 "목록 들여쓰기를 위해 수준당 하나의 탭 
  예, 목록 들여쓰기에 대한 수준당 탭 문자 수를 사용자 정의할 수 있습니다.`ListIndentation.Count` 에 있는 재산`TxtSaveOptions` 수업. 각 들여쓰기 수준에 대해 원하는 탭 문자 수를 지정할 수 있습니다.
 
 #### Q: .NET용 Aspose.Words에서 목록 들여쓰기에 사용할 수 있는 다른 문자는 무엇입니까?
- 탭 문자 외에도 Aspose.Words for .NET을 사용하여 목록 들여쓰기에 다른 문자를 사용할 수도 있습니다. 당신은 설정할 수 있습니다`ListIndentation.Character` 속성을 공백(`' '`), 들여쓰기 목록의 경우.
+탭 문자 외에도 Aspose.Words for .NET을 사용하여 목록 들여쓰기에 다른 문자를 사용할 수도 있습니다. 당신은 설정할 수 있습니다`ListIndentation.Character` 속성을 공백(`' '`), 들여쓰기 목록의 경우.
 
 #### Q: Aspose.Words for .NET은 목록 관리를 위한 다른 기능을 제공합니까?
 예, Aspose.Words for .NET은 Word 문서의 목록을 관리하기 위한 많은 기능을 제공합니다. 번호 매기기 또는 글머리 기호 목록을 생성하고, 들여쓰기 수준을 설정하고, 목록 스타일을 사용자 정의하고, 목록 항목을 추가하는 등의 작업을 수행할 수 있습니다.

@@ -85,7 +85,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ### س2: هل Aspose.Words for Java متوافق مع تنسيقات المستندات المختلفة؟
 
-نعم، يدعم Aspose.Words for Java مجموعة واسعة من تنسيقات المستندات، بما في ذلك DOCX وPDF وHTML والمزيد.
+نعم، يدعم Aspose.Words for Java نطاقًا واسعًا من تنسيقات المستندات، بما في ذلك DOCX وPDF وHTML والمزيد.
 
 ### س3: هل هناك أي خيارات ترخيص متاحة لـ Aspose.Words for Java؟
 

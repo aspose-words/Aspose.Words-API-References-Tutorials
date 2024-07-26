@@ -1,6 +1,6 @@
 ---
-title: Megjegyzés funkciók használata Word dokumentumokban
-linktitle: Megjegyzés funkciók használata Word dokumentumokban
+title: Megjegyzés funkciók használata a Word dokumentumokban
+linktitle: Megjegyzés funkciók használata a Word dokumentumokban
 second_title: Aspose.Words Python Document Management API
 description: Ismerje meg, hogyan használhatja a megjegyzés funkcióit a Word dokumentumokban az Aspose.Words for Python használatával. Lépésről lépésre útmutató forráskóddal. Fokozza az együttműködést és egyszerűsítse a dokumentumok áttekintését.
 type: docs
@@ -8,7 +8,7 @@ weight: 11
 url: /hu/python-net/document-structure-and-content-manipulation/document-comments/
 ---
 
-A megjegyzések döntő szerepet játszanak a dokumentumok együttműködésében és áttekintésében, így több személy is megoszthatja gondolatait és javaslatait egy Word-dokumentumban. Az Aspose.Words for Python hatékony API-t biztosít, amely lehetővé teszi a fejlesztők számára, hogy könnyedén dolgozhassanak a Word-dokumentumok megjegyzéseivel. Ebben a cikkben azt fogjuk megvizsgálni, hogyan használhatjuk a Word-dokumentumok megjegyzés funkcióit az Aspose.Words for Python használatával.
+A megjegyzések döntő szerepet játszanak a dokumentumok együttműködésében és áttekintésében, így több személy is megoszthatja gondolatait és javaslatait egy Word-dokumentumban. Az Aspose.Words for Python hatékony API-t biztosít, amely lehetővé teszi a fejlesztők számára, hogy könnyedén dolgozhassanak a Word-dokumentumok megjegyzéseivel. Ebben a cikkben azt fogjuk megvizsgálni, hogyan használhatjuk a Word dokumentumok megjegyzés funkcióit az Aspose.Words for Python használatával.
 
 ## Bevezetés
 

@@ -49,7 +49,7 @@ font.Name = "Arial";
 font.Underline = Underline.Dash;
 ```
 
-## 4. lépés: Adjon hozzá szöveget a dokumentumhoz
+## 4. lépés: Szöveg hozzáadása a dokumentumhoz
 Ezután a dokumentumkészítővel formázott szöveget adunk a dokumentumhoz.
 
 ```csharp

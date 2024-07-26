@@ -2,84 +2,85 @@
 title: Dapatkan Rentang Halaman JPEG
 linktitle: Dapatkan Rentang Halaman JPEG
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mendapatkan berbagai halaman JPEG dengan Aspose.Words untuk .NET. Tutorial lengkap untuk mengekstrak gambar khusus.
+description: Konversikan halaman tertentu dokumen Word ke JPEG dengan pengaturan khusus menggunakan Aspose.Words untuk .NET. Pelajari cara menyesuaikan kecerahan, kontras, dan resolusi langkah demi langkah.
 type: docs
 weight: 10
 url: /id/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kita akan menjelajahi kode sumber C# yang disediakan untuk fitur "Dapatkan Rentang Halaman JPEG" dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda mengonversi rentang halaman tertentu dari suatu dokumen menjadi gambar dalam format JPEG.
+Mengonversi dokumen Word menjadi gambar bisa sangat berguna, baik Anda membuat thumbnail, melihat pratinjau dokumen secara online, atau berbagi konten dalam format yang lebih mudah diakses. Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah mengonversi halaman tertentu dokumen Word Anda ke format JPEG sambil menyesuaikan berbagai pengaturan seperti kecerahan, kontras, dan resolusi. Mari selami cara mencapainya selangkah demi selangkah!
 
-## Langkah 1: Menyiapkan lingkungan
+## Prasyarat
 
-Sebelum memulai, pastikan Anda telah menyiapkan lingkungan pengembangan dengan Aspose.Words untuk .NET. Pastikan Anda telah menambahkan referensi yang diperlukan dan mengimpor namespace yang sesuai.
+Sebelum kita mulai, Anda memerlukan beberapa hal:
 
-## Langkah 2: Memuat dokumen
+-  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Lingkungan pengembangan AC# seperti Visual Studio.
+- Contoh Dokumen: Dokumen Word untuk dikerjakan. Anda dapat menggunakan file .docx apa pun untuk tutorial ini.
+- Pengetahuan Dasar C#: Keakraban dengan pemrograman C#.
+
+Setelah Anda menyiapkannya, mari kita mulai!
+
+## Impor Namespace
+
+Untuk menggunakan Aspose.Words untuk .NET, Anda harus mengimpor namespace yang diperlukan di awal kode Anda. Hal ini memastikan Anda memiliki akses ke semua kelas dan metode yang diperlukan untuk manipulasi dokumen.
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
+## Langkah 1: Muat Dokumen Anda
+
+Pertama, kita perlu memuat dokumen Word yang ingin kita konversi. Anggaplah dokumen kita diberi nama`Rendering.docx` dan terletak di direktori yang ditentukan oleh placeholder`YOUR DOCUMENT DIRECTORY`.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Pada langkah ini, kami memuat dokumen menggunakan`Document` metode dan meneruskan jalur ke file DOCX untuk dimuat.
+ Kode ini menginisialisasi jalur ke dokumen Anda dan memuatnya ke dalam Aspose.Words`Document` obyek.
 
-## Langkah 3: Konfigurasikan opsi cadangan gambar
+## Langkah 2: Siapkan ImageSaveOptions
+
+ Selanjutnya, kita akan menyiapkan`ImageSaveOptions` untuk menentukan bagaimana kita ingin JPEG kita dihasilkan. Ini termasuk mengatur rentang halaman, kecerahan gambar, kontras, dan resolusi.
 
 ```csharp
 ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
-options. PageSet = new PageSet(0);
-options. ImageBrightness = 0.3f;
-options. ImageContrast = 0.7f;
-options. HorizontalResolution = 72f;
+options.PageSet = new PageSet(0); // Konversi hanya halaman pertama
+options.ImageBrightness = 0.3f;   // Atur kecerahan
+options.ImageContrast = 0.7f;     // Tetapkan kontras
+options.HorizontalResolution = 72f; // Tetapkan resolusi
 ```
 
- Pada langkah ini, kami mengonfigurasi opsi cadangan untuk gambar. Kami membuat yang baru`ImageSaveOptions` objek menentukan format penyimpanan yang diinginkan, di sini "Jpeg" untuk format JPEG. Kami juga mengatur rentang halaman yang akan dikonversi menggunakan`PageSet`obyek. Terakhir, kami mengatur kecerahan dan kontras gambar menggunakan`ImageBrightness`Dan`ImageContrast` properti, masing-masing. Kami juga mengubah resolusi horizontal menggunakan`HorizontalResolution` Properti.
+## Langkah 3: Simpan Dokumen sebagai JPEG
 
-## Langkah 4: Mencadangkan gambar
+Terakhir, kami menyimpan dokumen sebagai file JPEG menggunakan pengaturan yang telah kami tentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
 ```
 
- Pada langkah terakhir ini, kami menyimpan gambar dari rentang halaman yang ditentukan dalam format JPEG menggunakan`Save` metode dan meneruskan jalur ke file keluaran, bersama dengan opsi penyimpanan yang ditentukan.
-
-Sekarang Anda dapat menjalankan kode sumber untuk mengonversi rentang halaman tertentu di dokumen Anda menjadi gambar JPEG. File yang dihasilkan akan disimpan di direktori yang ditentukan dengan nama "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg".
-
-### Contoh kode sumber untuk Mendapatkan Jpeg Page Range menggunakan Aspose.Words For .NET
-
-```csharp 
- // Jalur ke direktori dokumen Anda
- string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-Document doc = new Document(dataDir + "Rendering.docx");
-
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
-
-// Setel "PageSet" ke "0" untuk mengonversi hanya halaman pertama dokumen.
-options.PageSet = new PageSet(0);
-
-// Ubah kecerahan dan kontras gambar.
-// Keduanya berada pada skala 0-1 dan 0,5 secara default.
-options.ImageBrightness = 0.3f;
-options.ImageContrast = 0.7f;
-
-// Ubah resolusi horizontal.
-// Nilai default untuk properti ini adalah 96,0, untuk resolusi 96dpi.
-options.HorizontalResolution = 72f;
-
-doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
-            
-        
-```
+ Kode ini menyimpan halaman pertama`Rendering.docx` sebagai gambar JPEG dengan pengaturan kecerahan, kontras, dan resolusi yang ditentukan.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelajahi fungsionalitas mendapatkan rentang halaman JPEG dengan Aspose.Words untuk .NET. Kami mempelajari cara mengonversi rentang halaman tertentu dalam dokumen menjadi gambar dalam format JPEG, sambil menyesuaikan opsi penyimpanan.
+Dan itu dia! Anda telah berhasil mengonversi halaman tertentu dari dokumen Word menjadi gambar JPEG dengan pengaturan yang disesuaikan menggunakan Aspose.Words untuk .NET. Proses ini dapat disesuaikan untuk memenuhi berbagai kebutuhan, baik Anda menyiapkan gambar untuk situs web, membuat pratinjau dokumen, atau lainnya.
 
-Fitur ini berguna ketika Anda ingin mengekstrak halaman tertentu dari dokumen dan menyimpannya sebagai gambar JPEG. Anda juga dapat menyesuaikan kecerahan, kontras, dan resolusi horizontal gambar untuk mendapatkan hasil yang dipersonalisasi.
+## FAQ
 
-Aspose.Words untuk .NET menawarkan beragam fitur canggih untuk manipulasi dan pembuatan dokumen. Mendapatkan rentang halaman JPEG adalah salah satu dari banyak alat canggih yang dapat Anda gunakan.
+### Bisakah saya mengonversi beberapa halaman sekaligus?
+ Ya, Anda dapat menentukan rentang halaman menggunakan`PageSet` properti di`ImageSaveOptions`.
 
-Jangan ragu untuk mengintegrasikan fitur ini ke proyek Aspose.Words for .NET Anda untuk mendapatkan gambar JPEG berkualitas tinggi dari dokumen Anda.
+### Bagaimana cara menyesuaikan kualitas gambar?
+ Anda dapat mengatur kualitas JPEG dengan menggunakan`JpegQuality` properti di`ImageSaveOptions`.
+
+### Bisakah saya menyimpan dalam format gambar lain?
+ Ya, Aspose.Words mendukung berbagai format gambar seperti PNG, BMP, dan TIFF. Mengubah`SaveFormat` di dalam`ImageSaveOptions` demikian.
+
+### Apakah ada cara untuk melihat pratinjau gambar sebelum menyimpannya?
+Anda perlu menerapkan mekanisme pratinjau secara terpisah, karena Aspose.Words tidak menyediakan fitur pratinjau bawaan.
+
+### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words?
+ Anda dapat meminta a[izin sementara di sini](https://purchase.aspose.com/temporary-license/).

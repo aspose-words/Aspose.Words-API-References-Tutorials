@@ -2,71 +2,128 @@
 title: Voeg het voorvoegsel van de CSS-klassenaam toe
 linktitle: Voeg het voorvoegsel van de CSS-klassenaam toe
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het toevoegen van een CSS-klassenaamvoorvoegsel bij het converteren van een document naar HTML met Aspose.Words voor .NET.
+description: Leer hoe u een CSS-klassenaamvoorvoegsel kunt toevoegen bij het opslaan van Word-documenten als HTML met Aspose.Words voor .NET. Inclusief stapsgewijze handleiding, codefragmenten en veelgestelde vragen.
 type: docs
 weight: 10
 url: /nl/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u door de C#-broncode om een CSS-klassenaamvoorvoegsel toe te voegen met Aspose.Words voor .NET. Met deze functie kunt u een aangepast voorvoegsel toevoegen aan gegenereerde CSS-klassenamen wanneer u een document naar HTML converteert.
+Welkom! Als je in de wereld van Aspose.Words voor .NET duikt, staat je iets lekkers te wachten. Vandaag onderzoeken we hoe u een CSS-klassenaamvoorvoegsel kunt toevoegen bij het opslaan van een Word-document als HTML met Aspose.Words voor .NET. Deze functie is superhandig als u klassenaamconflicten in uw HTML-bestanden wilt voorkomen.
 
-## Stap 1: Projectconfiguratie
+## Vereisten
 
-Maak om te beginnen een nieuw C#-project in uw favoriete IDE. Zorg ervoor dat er in uw project naar de Aspose.Words voor .NET-bibliotheek wordt verwezen.
+Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 
-## Stap 2: Het document laden
+-  Aspose.Words voor .NET: Als je het nog niet hebt geïnstalleerd,[download het hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Visual Studio of een andere C# IDE.
+-  Een Word-document: we gebruiken een document met de naam`Rendering.docx`. Plaats het in uw projectmap.
 
-In deze stap laden we het Word-document dat we naar HTML willen converteren. Gebruik de volgende code om het document te laden:
+## Naamruimten importeren
+
+Zorg er eerst voor dat de benodigde naamruimten in uw C#-project zijn geïmporteerd. Voeg deze toe bovenaan uw codebestand:
 
 ```csharp
-//Pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Laten we nu eens in de stapsgewijze handleiding duiken!
+
+## Stap 1: Stel uw project in
+
+Voordat we kunnen beginnen met het toevoegen van een CSS-klassenaamvoorvoegsel, gaan we eerst ons project opzetten.
+
+### Stap 1.1: Maak een nieuw project
+
+ Start uw Visual Studio en maak een nieuw Console App-project. Noem het iets pakkends, bijvoorbeeld`AsposeCssPrefixExample`.
+
+### Stap 1.2: Aspose.Words toevoegen voor .NET
+
+Voeg Aspose.Words voor .NET toe aan uw project via NuGet als u dat nog niet heeft gedaan. Open eenvoudigweg de NuGet Package Manager Console en voer het volgende uit:
+
+```bash
+Install-Package Aspose.Words
+```
+
+Geweldig! Nu zijn we klaar om te beginnen met coderen.
+
+## Stap 2: Laad uw document
+
+Het eerste dat we moeten doen is het Word-document laden dat we naar HTML willen converteren.
+
+### Stap 2.1: Definieer het documentpad
+
+ Stel het pad naar uw documentmap in. Laten we voor deze zelfstudie aannemen dat uw document zich in een map met de naam bevindt`Documents` in uw projectmap.
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### Stap 2.2: Laad het document
+
+Laten we nu het document laden met Aspose.Words:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Vervangen`"YOUR DOCUMENTS DIRECTORY"` met het daadwerkelijke pad van de map waar uw document zich bevindt.
+## Stap 3: Configureer HTML-opslagopties
 
-## Stap 3: Stel HTML-opslagopties in
+Vervolgens moeten we de HTML-opslagopties configureren om een CSS-klassenaamvoorvoegsel op te nemen.
 
-Laten we nu de HTML-opslagopties instellen, inclusief het CSS-stylesheettype en het CSS-klassenaamvoorvoegsel. Gebruik de volgende code:
+### Stap 3.1: Creëer HTML-opslagopties
+
+ Instantieer de`HtmlSaveOptions` object en stel het CSS-stijlbladtype in op`External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
- Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions` en sets`CssStyleSheetType` naar`CssStyleSheetType.External` om een extern CSS-stijlblad te genereren, en`CssClassNamePrefix` naar`"pfx_"` naar voorvoegsel`"pfx_"` om de CSS-klasse te benoemen.
+### Stap 3.2: Stel het CSS-klassenaamvoorvoegsel in
 
-## Stap 4: Het document converteren en opslaan naar HTML
+ Laten we nu de`CssClassNamePrefix` eigenschap naar het gewenste voorvoegsel. Voor dit voorbeeld gebruiken we`"pfx_"`.
 
-Ten slotte zullen we het document naar HTML converteren met behulp van de eerder gedefinieerde HTML-opslagopties. Gebruik de volgende code:
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## Stap 4: Sla het document op als HTML
+
+Laten we ten slotte het document opslaan als een HTML-bestand met onze geconfigureerde opties.
+
+
+Geef het HTML-uitvoerbestandspad op en sla het document op.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-Deze code converteert het document naar HTML en slaat het op in een bestand waaraan het CSS-klassenaamvoorvoegsel is toegevoegd.
+## Stap 5: Controleer de uitvoer
 
-### Voorbeeldbroncode voor het toevoegen van een CSS-klassenaamvoorvoegsel met Aspose.Words voor .NET
+ Nadat u uw project hebt uitgevoerd, navigeert u naar uw`Documents` map. Je zou een HTML-bestand moeten vinden met de naam`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Open dit bestand in een teksteditor of browser om te controleren of de CSS-klassen het voorvoegsel hebben`pfx_`.
 
-```csharp
+## Conclusie
 
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+En daar heb je het! Door deze stappen te volgen, hebt u met succes een CSS-klassenaamvoorvoegsel aan uw HTML-uitvoer toegevoegd met behulp van Aspose.Words voor .NET. Met deze eenvoudige maar krachtige functie kunt u schone en conflictvrije stijlen in uw HTML-documenten behouden.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## Veelgestelde vragen
 
-```
+### Kan ik voor elke opslagbewerking een ander voorvoegsel gebruiken?
+ Ja, u kunt het voorvoegsel elke keer dat u een document opslaat, aanpassen door de`CssClassNamePrefix` eigendom.
 
- Zorg ervoor dat u het juiste documentpad opgeeft in het`dataDir` variabel.
+### Ondersteunt deze methode inline CSS?
+ De`CssClassNamePrefix`property werkt met externe CSS. Voor inline CSS heb je een andere aanpak nodig.
 
-hebt nu geleerd hoe u een CSS-klassenaamvoorvoegsel kunt toevoegen bij het converteren van een document naar HTML met Aspose.Words voor .NET. Door de stapsgewijze handleiding in deze zelfstudie te volgen, kunt u de CSS-klassenamen in uw geconverteerde HTML-documenten aanpassen.
+### Hoe kan ik andere HTML-opslagopties toevoegen?
+ U kunt verschillende eigenschappen van configureren`HtmlSaveOptions` om uw HTML-uitvoer aan te passen. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+
+### Is het mogelijk om de HTML in een stream op te slaan?
+ Absoluut! U kunt het document in een stream opslaan door het streamobject door te geven aan de`Save` methode.
+
+### Hoe krijg ik ondersteuning als ik problemen tegenkom?
+ U kunt ondersteuning krijgen van de[Aspose-forum](https://forum.aspose.com/c/words/8).

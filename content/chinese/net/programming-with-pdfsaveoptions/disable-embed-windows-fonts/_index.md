@@ -2,94 +2,87 @@
 title: 通过禁用嵌入字体来减小 PDF 大小
 linktitle: 通过禁用嵌入字体来减小 PDF 大小
 second_title: Aspose.Words 文档处理 API
-description: 了解如何在使用 Aspose.Words for .NET 将文档转换为 PDF 时通过禁用 Windows 字体嵌入来减小 PDF 大小。
+description: 使用 Aspose.Words for .NET 禁用嵌入字体，从而减小 PDF 大小。按照我们的分步指南优化您的文档，以实现高效存储和共享。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
+## 介绍
 
-在本教程中，我们将引导您完成使用 Aspose.Words for .NET 在 PDF 文档中禁用 Windows 字体嵌入以减小 PDF 大小的步骤。通过禁用字体嵌入，您可以减小生成的 PDF 文件的大小。请按照以下步骤操作：
+减小 PDF 文件的大小对于高效存储和快速共享至关重要。一种有效的方法是禁用嵌入字体，尤其是在大多数系统上已经提供标准字体的情况下。在本教程中，我们将探讨如何使用 Aspose.Words for .NET 禁用嵌入字体来减小 PDF 大小。我们将逐步介绍每个步骤，以确保您可以在自己的项目中轻松实现这一点。
 
-## 步骤 1：加载文档
+## 先决条件
 
-首先上传您想要转换为 PDF 的文档：
+在深入研究代码之前，请确保您已具备以下条件：
+
+-  Aspose.Words for .NET：如果你还没有，请从[下载链接](https://releases.aspose.com/words/net/).
+- .NET 开发环境：Visual Studio 是一个流行的选择。
+- 示例 Word 文档：准备好要转换为 PDF 的 DOCX 文件。
+
+## 导入命名空间
+
+首先，确保已将必要的命名空间导入到项目中。这样您就可以访问我们任务所需的类和方法。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+让我们将流程分解为简单、易于管理的步骤。每个步骤都会指导您完成任务，确保您了解每个步骤发生的情况。
+
+## 步骤 1：初始化文档
+
+首先，我们需要加载要转换为 PDF 的 Word 文档。这就是您的旅程的开始。
+
+```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-请确保指定文档的正确路径。
+这里，`dataDir`是文档所在目录的占位符。替换`"YOUR DOCUMENT DIRECTORY"`与实际路径。
 
-## 第 2 步：设置 PDF 保存选项
+## 步骤 2：配置 PDF 保存选项
 
-创建PdfSaveOptions类的实例并指定如何嵌入字体：
+接下来，我们将设置 PDF 保存选项。在这里我们指定不想嵌入标准 Windows 字体。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
+//输出的 PDF 将被保存而不嵌入标准 Windows 字体。
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone
+};
 ```
 
-此选项允许您停用生成的 PDF 文件中的 Windows 字体集成。
+通过设置`FontEmbeddingMode`到`EmbedNone`，我们指示 Aspose.Words 不要在 PDF 中包含这些字体，以减小文件大小。
 
-## 步骤 3：将文档转换为 PDF
+## 步骤 3：将文档保存为 PDF
 
-使用`Save`将文档转换为 PDF 的方法，指定转换选项：
+最后，我们使用配置的保存选项将文档保存为 PDF。这是您的 DOCX 转换为紧凑 PDF 的关键时刻。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-确保指定正确的路径来保存转换后的 PDF。
-
-### 使用 Aspose.Words for .NET 禁用嵌入 Windows 字体的示例源代码
-
-以下是使用 Aspose.Words for .NET 禁用在 PDF 文档中嵌入 Windows 字体的完整源代码：
-
-```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	//输出的 PDF 将被保存而不嵌入标准 Windows 字体。
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
-
-```
-通过遵循这些步骤，您可以轻松地使用 Aspose.Words for .NET 禁用 PDF 文档中 Windows 字体的嵌入。
-
+代替`"YOUR DOCUMENT DIRECTORY"`再次使用您的实际目录路径。输出 PDF 现在将保存在指定的目录中，不包含嵌入的标准字体。
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 禁用嵌入 Windows 字体来减小 PDF 文件的大小。通过禁用字体嵌入，您可以减小生成的 PDF 文件的大小，从而更轻松地存储、共享和传输文件。但是，需要注意的是，禁用 Windows 字体嵌入可能会导致最终 PDF 文档的外观和格式发生变化。使用此功能时，请务必考虑这些后果。请随意探索 Aspose.Words for .NET 的更多功能，以优化 PDF 文件的生成。
+通过遵循这些步骤，您可以显著减小 PDF 文件的大小。禁用嵌入字体是一种简单而有效的方法，可以让您的文档更轻便、更易于共享。Aspose.Words for .NET 使此过程变得无缝，确保您可以以最小的努力优化文件。
 
-### 经常问的问题
+## 常见问题解答
 
-#### 问：什么是禁用 PDF 文档中的 Windows 字体嵌入？为什么这很重要？
-答：禁用 PDF 文档中的 Windows 字体嵌入是阻止 Windows 字体包含在生成的 PDF 文件中的过程。通过删除嵌入的 Windows 字体数据，可以减小 PDF 文件的大小。这对于减小 PDF 文件的大小非常重要，从而使它们更易于存储、共享和更快地传输。
+### 为什么我应该禁用 PDF 中的嵌入字体？
+禁用嵌入字体可以显著减少 PDF 的文件大小，使其更高效地存储和更快地共享。
 
-#### 问：如何使用 Aspose.Words for .NET 禁用 PDF 文档中的 Windows 字体嵌入？
-答：要使用 Aspose.Words for .NET 禁用在 PDF 文档中嵌入 Windows 字体，请按照以下步骤操作：
+### 如果没有嵌入字体，PDF 还能正确显示吗？
+是的，只要字体是标准的并且在查看 PDF 的系统上可用，它就会正确显示。
 
-使用`Document`类和文档路径。
+### 我可以选择性地在 PDF 中嵌入某些字体吗？
+是的，Aspose.Words for .NET 允许您自定义嵌入的字体，从而灵活地减少文件大小。
 
-创建一个实例`PdfSaveOptions`类并设置`FontEmbeddingMode`财产`PdfFontEmbeddingMode.EmbedNone`。这将禁用在生成的 PDF 文件中嵌入 Windows 字体。
+### 我是否需要 Aspose.Words for .NET 来禁用 PDF 中的嵌入字体？
+是的，Aspose.Words for .NET 提供了在 PDF 中配置字体嵌入选项所需的功能。
 
-使用`Save`方法`Document`对象将文档转换为 PDF，指定之前配置的转换选项。
-
-#### 问：禁用 PDF 文档中的 Windows 字体嵌入有什么好处？
-答：禁用 PDF 文档中的 Windows 字体嵌入的好处是：
-
-减小 PDF 文件大小：通过禁用 Windows 字体嵌入，嵌入的 Windows 字体数据将被删除，从而减小生成的 PDF 文件的大小。
-
-更容易存储：较小的 PDF 文件更易于存储、保存和传输。
-
-更快的共享和传输：较小的PDF文件可以更快地共享和传输，从而节省时间和资源。
-
-#### 问：禁用 PDF 文档中的 Windows 字体嵌入会有什么后果？
-答：禁用 PDF 文档中嵌入的 Windows 字体可能会导致以下后果：
-
-外观和格式丢失：如果文档中指定的 Windows 字体在打开 PDF 的系统上不可用，则将使用替代字体，这可能会导致外观和格式不正确，形状与预期不同。
-
-可读性问题：如果使用的替代字体不如原始字体可读性，则可能会影响 PDF 文档中文本的可读性。
+### 如果我遇到问题，如何获得支持？
+您可以访问[支持论坛](https://forum.aspose.com/c/words/8)为您遇到的任何问题提供帮助。

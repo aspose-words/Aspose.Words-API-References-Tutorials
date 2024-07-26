@@ -85,7 +85,7 @@ E aí está! Você aplicou com êxito uma licença de um arquivo no Aspose.Words
 ## Perguntas frequentes
 
 ### O que acontece se eu não definir uma licença?  
-Se você não definir uma licença, o Aspose.Words operará no modo de avaliação, que possui limitações como documentos com marca d’água e funcionalidade restrita.
+Se você não definir uma licença, o Aspose.Words operará no modo de avaliação, que possui limitações como documentos com marca d'água e funcionalidade restrita.
 
 ### Posso usar uma licença de um stream?  
  Sim, você pode carregar uma licença de um fluxo se o arquivo de licença estiver incorporado como um recurso. Use o`SetLicense` método que aceita um fluxo.

@@ -14,8 +14,8 @@ Samouczki obejmują również podstawowe pojęcia manipulacji obrazami, w tym ws
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Ujawnij kontrolę progową dla binaryzacji Tiff](./expose-threshold-control-for-tiff-binarization/) | Dowiedz się, jak kontrolować próg binaryzacji TIFF za pomocą Aspose.Words dla .NET. Kompletny samouczek, aby uzyskać lepszą jakość obrazów. |
-| [Uzyskaj zakres stron Tiff](./get-tiff-page-range/) | Dowiedz się, jak wyodrębnić zakres stron TIFF za pomocą Aspose.Words dla .NET. Kompletny samouczek dotyczący niestandardowych plików TIFF. |
-| [Indeksowany format 1Bpp](./format-1bpp-indexed/) | Dowiedz się, jak formatować obrazy z dokładnością do 1 bpp indeksowane za pomocą Aspose.Words dla .NET. Kompletny samouczek dotyczący obrazów o małej głębi kolorów. |
-| [Pobierz zakres stron JPEG](./get-jpeg-page-range/) | Dowiedz się, jak uzyskać szereg stron JPEG za pomocą Aspose.Words dla .NET. Kompletny samouczek dotyczący wyodrębniania niestandardowych obrazów. |
-| [Wywołanie zwrotne zapisywania strony](./page-saving-callback/) | Dowiedz się, jak dostosować zapisywanie stron dokumentów do obrazów za pomocą Aspose.Words dla .NET. |
+| [Ujawnij kontrolę progową dla binaryzacji Tiff](./expose-threshold-control-for-tiff-binarization/) | Dowiedz się, jak udostępnić kontrolę progową dla binaryzacji TIFF w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku. |
+| [Uzyskaj zakres stron Tiff](./get-tiff-page-range/) | Dowiedz się, jak konwertować określone zakresy stron z dokumentów programu Word do plików TIFF za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. |
+| [Indeksowany format 1Bpp](./format-1bpp-indexed/) | Dowiedz się, jak przekonwertować dokument programu Word na obraz indeksowany o wielkości 1 Bpp przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby ułatwić konwersję. |
+| [Pobierz zakres stron JPEG](./get-jpeg-page-range/) | Konwertuj określone strony dokumentów programu Word do formatu JPEG z niestandardowymi ustawieniami za pomocą Aspose.Words dla .NET. Dowiedz się, jak krok po kroku regulować jasność, kontrast i rozdzielczość. |
+| [Wywołanie zwrotne zapisywania strony](./page-saving-callback/) | Dowiedz się, jak zapisać każdą stronę dokumentu programu Word jako oddzielny obraz PNG przy użyciu Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. |

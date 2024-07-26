@@ -41,7 +41,7 @@ Zanim będziemy mogli manipulować Twoim dokumentem, musimy określić, gdzie si
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` ze ścieżką do folderu dokumentów. Tutaj znajduje się plik programu Word.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"`ze ścieżką do folderu dokumentów. Tutaj znajduje się plik programu Word.
 
 ## Krok 2: Załaduj dokument
 

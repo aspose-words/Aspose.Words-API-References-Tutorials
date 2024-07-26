@@ -2,95 +2,97 @@
 title: Temel Yazı Tiplerini Gömmeyerek PDF Dosya Boyutunu Azaltın
 linktitle: Temel Yazı Tiplerini Gömmeyerek PDF Dosya Boyutunu Azaltın
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile Word belgelerini PDF'ye dönüştürürken Temel Yazı Tiplerini Gömmeyerek PDF Dosya Boyutunu Nasıl Küçülteceğinizi öğrenin.
+description: Aspose.Words for .NET kullanarak temel yazı tiplerini gömmeyerek PDF dosya boyutunu nasıl azaltacağınızı öğrenin. PDF'lerinizi optimize etmek için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## giriiş
 
-Bu eğitimde, temel yazı tiplerini Aspose.Words for .NET'e gömmeyerek PDF dosya boyutunu nasıl azaltabileceğinizi adım adım anlatacağız. Bu özellik, bir Word belgesini dönüştürürken Arial, Times New Roman vb. gibi temel yazı tiplerinin PDF'ye gömülmesi gerekip gerekmediğini kontrol etmenize olanak tanır. Aşağıdaki adımları takip et:
+Hiç PDF dosyalarınızın neden bu kadar büyük olduğunu merak ederek başınızı kaşıdığınız oldu mu? Yalnız değilsin. Yaygın bir suçlu, Arial ve Times New Roman gibi temel yazı tiplerini gömmektir. Neyse ki Aspose.Words for .NET'in bu sorunu çözmenin şık bir yolu var. Bu eğitimde size, bu temel yazı tiplerinin yerleştirilmesini önleyerek PDF dosyanızın boyutunu nasıl küçülteceğinizi göstereceğim. Haydi hemen dalalım!
 
-## 1. Adım: Belgeyi yükleme
+## Önkoşullar
 
-PDF'ye dönüştürmek istediğiniz Word belgesini yükleyerek başlayın:
+Bu heyecan verici yolculuğa çıkmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım. İşte hızlı bir kontrol listesi:
+
+-  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. Henüz sahip değilseniz indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio gibi bir geliştirme ortamına ihtiyacınız olacak.
+- Bir Word Belgesi: Bu eğitim için bir Word belgesi (örneğin, "Rendering.docx") kullanacağız.
+- Temel C# Bilgisi: Temel C# anlayışı, ilerlemenize yardımcı olacaktır.
+
+Tamam, artık her şey hazır olduğuna göre işin özüne geçelim!
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktaralım. Bu adım, ihtiyacımız olan tüm Aspose.Words işlevlerine erişmemizi sağlar.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1. Adım: Belge Dizininizi Başlatın
+
+Belgemizi düzenlemeye başlamadan önce belgelerimizin saklandığı dizini belirtmemiz gerekiyor. Bu, dosyalara erişim için gereklidir.
+
+```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Word belgenizin bulunduğu gerçek yolla.
+
+## Adım 2: Word Belgesini Yükleyin
+
+Daha sonra PDF'ye dönüştürmek istediğimiz Word belgesini yüklememiz gerekiyor. Bu örnekte "Rendering.docx" adında bir belge kullanıyoruz.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Word belgenizin doğru yolunu belirttiğinizden emin olun.
+Bu kod satırı, belgeyi daha sonraki işlemlere hazır şekilde belleğe yükler.
 
-## Adım 2: PDF Dönüştürme Seçeneklerini Ayarlayın
+## 3. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
 
-PdfSaveOptions sınıfının bir örneğini oluşturun ve temel yazı tipi yerleştirmeyi önlemeyi etkinleştirin:
+Şimdi işin sihirli kısmı geliyor! Temel yazı tiplerinin yerleştirilmesini önlemek için PDF kaydetme seçeneklerini yapılandıracağız. Bu, PDF dosya boyutunun azaltılmasına yardımcı olan önemli adımdır.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-Bu seçenek, temel yazı tiplerinin PDF'ye gömülüp gömülmeyeceğini kontrol eder.
+ Ayar`UseCoreFonts` ile`true` Arial ve Times New Roman gibi temel yazı tiplerinin PDF'ye gömülmemesini sağlar, bu da dosya boyutunu önemli ölçüde azaltır.
 
-## 3. Adım: Belgeyi PDF'ye Dönüştürün
+## Adım 4: Belgeyi PDF olarak kaydedin
 
- Kullan`Save` Dönüştürme seçeneklerini belirterek Word belgesini PDF'ye dönüştürme yöntemi:
+Son olarak yapılandırılmış kaydetme seçeneklerini kullanarak Word belgesini PDF olarak kaydediyoruz. Bu adım, temel yazı tiplerini gömmeden PDF dosyasını oluşturur.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
-
-### Aspose.Words for .NET Kullanarak Çekirdek Fontları Gömmekten Kaçının için örnek kaynak kodu
-
-Aspose.Words for .NET'e çekirdek yazı tipi yerleştirmeyi önleme özelliğini kullanmak için tam kaynak kodunu burada bulabilirsiniz:
-
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Çıktı PDF'sine Arial, Times New Roman vb. gibi temel yazı tipleri eklenmez.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-Bu adımları izleyerek, Aspose.Words for .NET ile bir Word belgesini dönüştürürken temel yazı tiplerinin PDF'ye gömülüp gömülmeyeceğini kolayca kontrol edebilirsiniz.
-
+İşte buyur! PDF dosyanız artık bu büyük çekirdek yazı tipleri olmadan belirtilen dizine kaydedildi.
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET'e temel yazı tiplerini gömmeyerek bir PDF dosyasının boyutunun nasıl azaltılacağını açıkladık. Bu özellik, bir Word belgesini dönüştürürken temel yazı tiplerinin PDF'ye gömülüp gömülmeyeceğini kontrol etmenizi sağlar. Özetlenen adımları izleyerek, temel yazı tiplerinin gömülmesini veya gömülmemesini kolayca kontrol edebilirsiniz; bu, PDF dosya boyutunun küçültülmesine yardımcı olabilir ve belgenin farklı cihazlar ve platformlarda daha iyi uyumluluk ve tutarlı bir görünüm sağlamasına yardımcı olabilir. Temel yazı tiplerini yerleştirmemenin sonuçlarını göz önünde bulundurmayı ve belgenin beklendiği gibi görüntülendiğinden emin olmak için denemeler yapmayı unutmayın.
+Aspose.Words for .NET ile PDF dosya boyutunu küçültmek çok kolay olabilir. Temel yazı tiplerinin yerleştirilmesini önleyerek dosya boyutunu önemli ölçüde azaltabilir, belgelerinizi paylaşmayı ve saklamayı kolaylaştırabilirsiniz. Umarım bu eğitim yardımcı olmuştur ve size süreci net bir şekilde anlamanızı sağlamıştır. Unutmayın, küçük ayarlamalar büyük fark yaratabilir!
 
-### Sıkça Sorulan Sorular
+## SSS'ler
 
-#### S: Temel yazı tiplerini PDF dosyasına gömmeme seçeneği nedir ve bu neden önemlidir?
-C: Bir PDF dosyasına temel yazı tiplerini gömmeme seçeneği, bir Word belgesini dönüştürürken Arial, Times New Roman vb. gibi temel yazı tiplerinin PDF'ye gömülmesi gerekip gerekmediğini kontrol eder. Bu, PDF okuyucu sistemlerinde yaygın olarak bulunan yazı tiplerini dahil etmekten kaçınarak PDF dosyasının boyutunu azaltmak için önemli olabilir. Ayrıca, PDF belgesinin farklı cihazlar ve platformlar arasında daha iyi uyumluluğunun ve tutarlı görünümünün sağlanmasına da yardımcı olabilir.
+### Temel yazı tiplerini PDF'lere gömmekten neden kaçınmalıyım?
+Çekirdek yazı tiplerini gömmekten kaçınmak, dosya boyutunu küçülterek paylaşmayı ve saklamayı kolaylaştırır.
 
-#### S: Aspose.Words for .NET'i temel yazı tiplerini bir PDF dosyasına gömmeyecek şekilde nasıl yapılandırabilirim?
-C: Aspose.Words for .NET'i temel yazı tiplerini bir PDF dosyasına yerleştirmeyecek şekilde yapılandırmak için şu adımları izleyin:
+### Gömülü çekirdek yazı tipleri olmadan PDF'yi yine de doğru şekilde görüntüleyebilir miyim?
+Evet, Arial ve Times New Roman gibi temel yazı tipleri genellikle çoğu sistemde mevcuttur.
 
- Belgelerinizin bulunduğu dizin yolunu değiştirerek ayarlayın.`"YOUR DOCUMENTS DIRECTORY"` belge dizininizin gerçek yolu ile.
+### Özel yazı tipleri yerleştirmem gerekirse ne olur?
+ özelleştirebilirsiniz`PdfSaveOptions`Gerektiğinde belirli yazı tiplerini gömmek için.
 
- PDF'ye dönüştürmek istediğiniz Word belgesini kullanarak yükleyin.`Document` sınıf ve belirtilen belge yolu.
+### Aspose.Words for .NET'in kullanımı ücretsiz mi?
+ Aspose.Words for .NET bir lisans gerektirir. Ücretsiz deneme alabilirsiniz[Burada](https://releases.aspose.com/).
 
- Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`UseCoreFonts`mülkiyet`true`. Bu, temel yazı tiplerinin oluşturulan PDF dosyasına gömülmesini önleyecektir.
-
- Kullan`Save` yöntemi`Document` Daha önce yapılandırılan dönüştürme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için nesneyi seçin.
-
-#### S: Temel yazı tiplerini bir PDF dosyasına yerleştirmemenin faydaları nelerdir?
-C: Temel yazı tiplerini PDF dosyasına yerleştirmemenin faydaları şunlardır:
-
-PDF dosya boyutunun küçültülmesi: Arial, Times New Roman vb. gibi yaygın olarak bulunan yazı tiplerinin yerleştirilmesinden kaçınılarak, PDF dosya boyutu küçültülebilir, böylece dosyaların saklanması, paylaşılması ve aktarılması daha kolay hale gelir.
-
-Daha iyi uyumluluk: PDF okuyucu sistemlerinde yaygın olarak bulunan temel yazı tiplerini kullanarak, farklı cihaz ve platformlarda daha iyi uyumluluk ve belge görünümü sağlarsınız.
-
-#### S: Temel yazı tiplerini bir PDF dosyasına yerleştirmemenin sonuçları nelerdir?
-C: Temel yazı tiplerini bir PDF dosyasına yerleştirmemenin sonuçları aşağıdaki gibidir:
-
-Farklı görünüm: PDF'nin açıldığı sistemde temel yazı tipleri mevcut değilse, yedek yazı tipleri kullanılacaktır, bu da amaçlanandan farklı bir görünüme neden olabilir.
-
-Okunabilirlik sorunları: Kullanılan yedek yazı tipleri, orijinal yazı tipleri kadar okunabilir olmayabilir ve bu da belgenin okunabilirliğini etkileyebilir.
+### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+ Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

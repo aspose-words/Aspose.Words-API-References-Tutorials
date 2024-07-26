@@ -42,7 +42,7 @@ doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 
 Jadi ! Anda telah berhasil memuat kamus tanda hubung untuk bahasa tertentu di Aspose.Words untuk .NET.
 
-### Contoh kode sumber untuk pemuatan kamus tanda hubung untuk suatu bahasa menggunakan Aspose.Words untuk .NET
+### Contoh kode sumber untuk kamus tanda hubung yang memuat suatu bahasa menggunakan Aspose.Words untuk .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

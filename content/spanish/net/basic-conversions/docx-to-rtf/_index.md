@@ -97,7 +97,7 @@ Sí, Aspose.Words admite varios formatos, por lo que puede convertir documentos 
  Si bien puedes usar Aspose.Words en modo de prueba, para uso prolongado o proyectos comerciales, debes comprar una licencia. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
 
 ### ¿Qué debo hacer si el resultado de la conversión no es el esperado?
- Consulte su documento de entrada para ver si hay problemas de compatibilidad o consulte el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) para obtener consejos para la resolución de problemas.
+ Consulte su documento de entrada para ver si hay problemas de compatibilidad o consulte el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) para obtener consejos para la solución de problemas.
 
 ### ¿Puedo automatizar este proceso de conversión?
 ¡Absolutamente! Integre este código en sus aplicaciones o scripts para automatizar el proceso de conversión como parte de sus flujos de trabajo de gestión de documentos.

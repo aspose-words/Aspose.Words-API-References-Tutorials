@@ -25,7 +25,7 @@ shape. Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Stap 2: Houd revisies bij en voeg een nieuwe vorm toe
+## Stap 2: Houd revisies bij en voeg een andere vorm toe
 
 We schakelen het bijhouden van revisies in en voegen een andere vorm toe.
 

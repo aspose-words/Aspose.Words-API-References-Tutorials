@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-shapes/layout-in-cell/
 ---
 
-W tym samouczku wyjaśniono, jak rozmieścić kształt w komórce tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Dostosowując właściwości kształtu i korzystając z opcji układu, możesz kontrolować położenie i wygląd kształtu w komórce.
+tym samouczku wyjaśniono, jak rozmieścić kształt w komórce tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Dostosowując właściwości kształtu i korzystając z opcji układu, możesz kontrolować położenie i wygląd kształtu w komórce.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
@@ -17,7 +17,7 @@ Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 - Podstawowa znajomość języka C# i przetwarzania tekstów w dokumentach Word.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
- Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+ Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Zbuduj stół
- Użyj`StartTable`, `EndTable`, `InsertCell` , I`Write` metody`DocumentBuilder`obiekt do zbudowania stołu. Ustaw żądaną wysokość wiersza i regułę wysokości za pomocą`RowFormat` nieruchomości.
+ Użyj`StartTable`, `EndTable`, `InsertCell` , I`Write` metody`DocumentBuilder` obiekt do zbudowania stołu. Ustaw żądaną wysokość wiersza i regułę wysokości za pomocą`RowFormat` nieruchomości.
 
 ```csharp
 builder.StartTable();
@@ -86,7 +86,7 @@ builder.InsertNode(watermark);
 ```
 
 ## Krok 7: Zapisz dokument
- Zapisz dokument w określonym katalogu za pomocą`Save` metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithShapes.LayoutInCell.docx”.
+ Zapisz dokument w określonym katalogu za pomocą`Save`metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithShapes.LayoutInCell.docx”.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);

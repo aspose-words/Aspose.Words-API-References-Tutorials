@@ -10,7 +10,7 @@ url: /tr/java/document-loading-and-saving/determining-document-format/
 
 ## Aspose.Words for Java'da Belge Formatını Belirlemeye Giriş
 
-Java'da belge işlemeyle çalışırken, uğraştığınız dosyaların formatını belirlemek çok önemlidir. Aspose.Words for Java, belge formatlarını tanımlamak için güçlü özellikler sağlar; biz de size süreç boyunca yol göstereceğiz.
+Java'da belge işlemeyle çalışırken, uğraştığınız dosyaların formatını belirlemek çok önemlidir. Aspose.Words for Java, belge formatlarını tanımlamak için güçlü özellikler sunar; biz de size süreç boyunca yol göstereceğiz.
 
 ## Önkoşullar
 

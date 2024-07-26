@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/working-with-textboxes/break-a-link/
 ---
 
-Aspose.Words for .NET, program aracılığıyla Microsoft Word belgeleriyle Kelime İşleme için çeşitli özellikler sunan güçlü bir kütüphanedir. Yararlı özelliklerinden biri, bir word belgesindeki ileri bağlantıları kesme yeteneğidir. Bu eğitimde, Aspose.Words for .NET kullanarak word belgesinde ileri bağlantının nasıl kesileceğini gösteren C# kaynak kodunu inceleyeceğiz.
+Aspose.Words for .NET, Microsoft Word belgeleriyle programlı olarak Kelime İşleme için çeşitli özellikler sunan güçlü bir kütüphanedir. Yararlı özelliklerinden biri, bir word belgesindeki ileri bağlantıları kesme yeteneğidir. Bu eğitimde, Aspose.Words for .NET kullanarak word belgesinde ileri bağlantının nasıl kesileceğini gösteren C# kaynak kodunu inceleyeceğiz.
 
 ## Adım 1: C# Kaynak Kodu Önizlemesi
 
@@ -81,7 +81,7 @@ C: Aspose.Words for .NET kullanarak bir Word belgesindeki yönlendirme bağlant�
 
 #### S: Boş bir değer ayarlayarak yönlendirme bağlantısını nasıl kesebilirim?
 
-C: Alternatif olarak, yönlendirme bağlantısını ayarlayarak da kesebilirsiniz.`Next` TextBox'un özelliği`null`. Bu, bir sonraki şekle olan bağlantıyı etkili bir şekilde ortadan kaldırır.
+C: Alternatif olarak, yönlendirme bağlantısını ayarlayarak da kesebilirsiniz.`Next` TextBox'ın özelliği`null`. Bu, bir sonraki şekle olan bağlantıyı etkili bir şekilde ortadan kaldırır.
 
 #### S: TextBox'a giden bir bağlantı nasıl koparılır?
 

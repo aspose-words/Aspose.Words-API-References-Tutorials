@@ -19,7 +19,7 @@ url: /ko/net/join-and-append-documents/append-document-to-blank/
 2. 개발 환경: Visual Studio 또는 기타 .NET 호환 IDE.
 3. C#에 대한 기본 이해: 간단하게 설명하겠지만 C#에 조금 익숙해지면 큰 도움이 됩니다.
 4. 원본 문서: 빈 문서에 추가하려는 Word 문서입니다.
-5.  라이센스(선택 사항): 평가판을 사용하지 않는 경우 라이센스가 필요할 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는[정식 라이센스](https://purchase.aspose.com/buy).
+5.  라이센스(선택 사항): 평가판을 사용하지 않는 경우 라이센스가 필요할 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/) 또는[정식 라이센스](https://purchase.aspose.com/buy).
 
 ## 네임스페이스 가져오기
 
@@ -126,7 +126,7 @@ using Aspose.Words;
 
 ### Aspose.Words를 사용하려면 라이센스가 필요합니까?
 
- 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 확장된 기능을 위해.
+ 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시면허](https://purchase.aspose.com/temporary-license/) 확장된 기능을 위해.
 
 ### DOCX, DOC 등 다양한 유형의 문서를 추가할 수 있나요?
 

@@ -17,7 +17,7 @@ url: /ko/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 - C# 및 XML에 대한 기본 지식.
 
 ## 1단계: 문서 디렉터리 설정
- 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
+ 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## 3단계: 문서에 SDT(StructuredDocumentTag) 추가
- 을 추가하다`StructuredDocumentTag` 콘텐츠 제어 역할을 하는 문서에 추가합니다. 지정`SdtType` ~처럼`PlainText` 그리고`MarkupLevel` ~처럼`Block` 블록 수준 SDT를 생성합니다.
+ 을 추가하다`StructuredDocumentTag`콘텐츠 제어 역할을 하는 문서에 추가합니다. 지정`SdtType` ~처럼`PlainText` 그리고`MarkupLevel` ~처럼`Block` 블록 수준 SDT를 생성합니다.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

@@ -72,6 +72,6 @@ C: Node.js'deki ana düğüm, bir XML belgesinin hiyerarşisindeki bir sonraki d
 
 C: Çoğu durumda, bir düğümün üst düğümü XML belgesinin yapısına göre belirlenir ve doğrudan değiştirilemez. Ancak belirli yöntemleri kullanarak bir düğümü başka bir düğüme taşıyabilirsiniz.`appendChild` veya`insertBefore`.
 
-#### S: Üst düğümlerin hiyerarşisine nasıl göz atılır?
+#### S: Ana düğümlerin hiyerarşisine nasıl göz atılır?
 
  C: Ana düğümlerin hiyerarşisinde geçiş yapmak için, belirli bir düğümden başlayarak yineleme yapabilirsiniz.`parentNode` belgenin kök düğümüne ulaşana kadar özellik.

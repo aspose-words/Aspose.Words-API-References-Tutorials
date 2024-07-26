@@ -11,7 +11,7 @@ Pemrosesan Kata dengan makro VBA adalah sumber daya berharga bagi pengembang. Tu
 
 Tutorial ini memberikan pendekatan langsung untuk memahami dan menggunakan fitur manipulasi makro VBA di Aspose.Words untuk .NET. Baik Anda seorang pengembang berpengalaman atau baru memulai, sumber daya ini akan membantu Anda mengembangkan keterampilan yang kuat untuk Pemrosesan Kata dengan makro VBA. Anda akan mempelajari cara mengkustomisasi dan mengotomatiskan dokumen Word Anda dengan menggunakan makro untuk melakukan tugas tertentu. Berkat tutorial ini, Anda akan dapat memanfaatkan sepenuhnya potensi makro VBA dalam proyek pengolah kata Anda.
 
-Dengan mengikuti tutorial ini, Anda akan mempelajari cara efektif menggunakan Aspose.Words untuk .NET untuk mengelola makro VBA di dokumen Word Anda. Petunjuk langkah demi langkah, contoh kode, dan tips bagaimana caranya akan membuat Anda percaya diri menavigasi fitur manipulasi makro VBA. Baik Anda perlu menambahkan makro baru, memodifikasi makro yang sudah ada, atau mengelola modul VBA, tutorial ini akan memberi Anda pengetahuan agar berhasil.
+Dengan mengikuti tutorial ini, Anda akan mempelajari cara efektif menggunakan Aspose.Words untuk .NET untuk mengelola makro VBA di dokumen Word Anda. Petunjuk langkah demi langkah, contoh kode, dan tip bagaimana caranya akan membuat Anda percaya diri menavigasi fitur manipulasi makro VBA. Baik Anda perlu menambahkan makro baru, memodifikasi makro yang sudah ada, atau mengelola modul VBA, tutorial ini akan memberi Anda pengetahuan agar berhasil.
 
  ## Tutorial
 | Judul | Keterangan |

@@ -1,6 +1,6 @@
 ---
-title: Kabarcık Grafiğini Word Belgesine Ekle
-linktitle: Kabarcık Grafiğini Word Belgesine Ekle
+title: Kabarcık Grafiği Word Belgesine Ekle
+linktitle: Kabarcık Grafiği Word Belgesine Ekle
 second_title: Aspose.Words Belge İşleme API'si
 description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesine nasıl kabarcık grafiği ekleyeceğinizi öğrenin. Belgelerinizi geliştirin.
 type: docs

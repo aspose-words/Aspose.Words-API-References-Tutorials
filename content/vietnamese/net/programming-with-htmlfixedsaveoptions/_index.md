@@ -12,5 +12,5 @@ Hướng dẫn Aspose.Words for .NET được thiết kế để giúp bạn th�
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Sử dụng phông chữ từ máy mục tiêu](./use-font-from-target-machine/) | Tìm hiểu cách chuyển đổi tài liệu Word sang HTML cố định bằng cách sử dụng phông chữ của máy mục tiêu với Aspose.Words cho .NET. |
-| [Viết tất cả các quy tắc Css trong một tệp](./write-all-css-rules-in-single-file/) | Tìm hiểu cách chuyển đổi tài liệu Word sang HTML cố định bằng cách viết tất cả các quy tắc CSS vào một tệp duy nhất với Aspose.Words cho .NET. |
+| [Sử dụng phông chữ từ máy mục tiêu](./use-font-from-target-machine/) | Tìm hiểu cách sử dụng phông chữ từ máy đích trong tài liệu Word của bạn với Aspose.Words for .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tích hợp phông chữ liền mạch. |
+| [Viết tất cả các quy tắc Css trong một tệp](./write-all-css-rules-in-single-file/) | Tìm hiểu cách chuyển đổi tài liệu Word sang HTML bằng Aspose.Words cho .NET với tất cả các quy tắc CSS trong một tệp duy nhất để có mã sạch hơn và bảo trì dễ dàng hơn. |

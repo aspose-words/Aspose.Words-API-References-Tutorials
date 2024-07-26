@@ -13,5 +13,5 @@ Zpracování textu s MarkdownSaveOptions je podrobný zdroj, který vás provede
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Export do Markdown se zarovnáním obsahu tabulky](./export-into-markdown-with-table-content-alignment/) | Naučte se exportovat obsah tabulky s různým zarovnáním do souborů Markdown pomocí Aspose.Words for .NET. |
-| [Nastavte složku obrázků](./set-images-folder/) | Naučte se, jak nastavit složku obrázků při exportu do Markdown pomocí Aspose.Words for .NET. Upravte umístění obrázků pro lepší organizaci a integraci.|
+| [Export do Markdown se zarovnáním obsahu tabulky](./export-into-markdown-with-table-content-alignment/) | Naučte se exportovat dokumenty Wordu do Markdown se zarovnanými tabulkami pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro dokonalé stoly Markdown. |
+| [Nastavte složku obrázků](./set-images-folder/) | Převeďte dokumenty aplikace Word do formátu Markdown se správným zarovnáním tabulek pomocí Aspose.Words for .NET. Pro dokonalé výsledky postupujte podle našeho podrobného průvodce. |

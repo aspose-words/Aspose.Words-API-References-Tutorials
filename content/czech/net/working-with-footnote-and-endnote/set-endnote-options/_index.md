@@ -89,12 +89,12 @@ Neváhejte použít tento kód ve svých vlastních projektech a upravit jej pod
 
 #### Otázka: Jak mohu umístit vysvětlivky v dokumentu?
 
-Odpověď: Chcete-li umístit vysvětlivky do dokumentu, můžete použít`Position` vlastnictvím`EndnoteOptions` třída. Můžete určit, zda mají být vysvětlivky umístěny na konec každé stránky, na konec každé sekce nebo na konec dokumentu.
+Odpověď: Chcete-li umístit vysvětlivky do dokumentu, můžete použít`Position` majetek z`EndnoteOptions` třída. Můžete určit, zda mají být vysvětlivky umístěny na konec každé stránky, na konec každé sekce nebo na konec dokumentu.
 
 #### Otázka: Mohu přizpůsobit formát číslování vysvětlivky?
 
- Odpověď: Ano, formát číslování koncových poznámek si můžete přizpůsobit v Aspose.Words. Použijte`NumberFormat` vlastnictvím`EndnoteOptions` třídy pro nastavení požadovaného formátu, jako jsou arabské číslice, římské číslice, písmena atd.
+ Odpověď: Ano, formát číslování koncových poznámek si můžete přizpůsobit v Aspose.Words. Použijte`NumberFormat` majetek z`EndnoteOptions` třídy pro nastavení požadovaného formátu, jako jsou arabské číslice, římské číslice, písmena atd.
 
 #### Otázka: Je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu?
 
- Odpověď: Ano, je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu. Použijte`RestartRule` vlastnictvím`EndnoteOptions` třídu a nastavte ji na`RestartContinuous` aby číslování pokračovalo mezi sekcemi.
+ Odpověď: Ano, je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu. Použijte`RestartRule` majetek z`EndnoteOptions` třídu a nastavte ji na`RestartContinuous` aby číslování pokračovalo mezi sekcemi.

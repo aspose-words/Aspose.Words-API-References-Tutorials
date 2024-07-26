@@ -39,7 +39,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"`उस वास्तविक पथ के साथ जहां आप अपना पीडीएफ दस्तावेज़ सहेजना चाहते हैं।
+ प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` उस वास्तविक पथ के साथ जहां आप अपना पीडीएफ दस्तावेज़ सहेजना चाहते हैं।
 
 ## चरण 2: नया दस्तावेज़ बनाएँ
 

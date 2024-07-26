@@ -2,95 +2,97 @@
 title: Csökkentse a PDF-fájl méretét az alapvető betűtípusok beágyazásával
 linktitle: Csökkentse a PDF-fájl méretét az alapvető betűtípusok beágyazásával
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan csökkentheti a PDF-fájl méretét az alapvető betűtípusok beágyazásával, amikor Word-dokumentumokat konvertál PDF-be az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan csökkentheti a PDF-fájl méretét az alapvető betűtípusok beágyazásának mellőzésével az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat PDF-fájljai optimalizálásához.
 type: docs
 weight: 10
 url: /hu/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban végigvezetjük a PDF-fájl méretének csökkentésének lépésein úgy, hogy az Aspose.Words for .NET segítségével nem ágyaz be alapvető betűtípusokat. Ez a funkció lehetővé teszi annak szabályozását, hogy Word-dokumentum konvertálásakor be kell-e ágyazni az olyan alapvető betűtípusokat, mint az Arial, Times New Roman stb. Kövesse az alábbi lépéseket:
+Előfordult már azon, hogy vakarja a fejét, és azon töpreng, miért olyan nagyok a PDF-fájlok? Nos, nem vagy egyedül. Az egyik gyakori bűnös az olyan alapvető betűtípusok beágyazása, mint az Arial és a Times New Roman. Szerencsére az Aspose.Words for .NET remek módszert kínál a probléma megoldására. Ebben az oktatóanyagban megmutatom, hogyan csökkentheti a PDF-fájl méretét az alapvető betűtípusok beágyazásának elkerülésével. Egyből merüljünk bele!
 
-## 1. lépés: A dokumentum betöltése
+## Előfeltételek
 
-Először töltse fel a PDF-be konvertálni kívánt Word-dokumentumot:
+Mielőtt nekivágnánk ennek az izgalmas utazásnak, győződjünk meg arról, hogy mindennel megvan, amire szüksége van. Íme egy gyors ellenőrző lista:
+
+-  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha még nincs meg, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
+- Fejlesztési környezet: Szüksége lesz egy fejlesztői környezetre, például a Visual Studiora.
+- Word-dokumentum: Ehhez az oktatóanyaghoz egy Word-dokumentumot (pl. "Rendering.docx") fogunk használni.
+- Alapvető C# ismeretek: A C# alapvető ismerete segít a követésében.
+
+Rendben, most, hogy minden készen állunk, kezdjük az ügyeskedést!
+
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket. Ez a lépés biztosítja, hogy hozzáférjünk az Aspose.Words összes szükséges funkciójához.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1. lépés: Inicializálja a dokumentumkönyvtárat
+
+Mielőtt elkezdené manipulálni a dokumentumunkat, meg kell adnunk a könyvtárat, ahol a dokumentumainkat tároljuk. Ez elengedhetetlen a fájlok eléréséhez.
+
+```csharp
+// A dokumentumok könyvtárának elérési útja.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` azzal a tényleges elérési úttal, ahol a Word-dokumentum található.
+
+## 2. lépés: Töltse be a Word-dokumentumot
+
+Ezután be kell töltenünk a Word dokumentumot, amelyet PDF-be szeretnénk konvertálni. Ebben a példában egy "Rendering.docx" nevű dokumentumot használunk.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Ügyeljen arra, hogy megadja a Word-dokumentum megfelelő elérési útját.
+Ez a kódsor betölti a dokumentumot a memóriába, készen áll a további feldolgozásra.
 
-## 2. lépés: Állítsa be a PDF-konverziós beállításokat
+## 3. lépés: Konfigurálja a PDF mentési beállításokat
 
-Hozzon létre egy példányt a PdfSaveOptions osztályból, és engedélyezze az alapvető betűtípus-beágyazás elkerülését:
+Most jön a varázslatos rész! A PDF-mentési beállításokat úgy konfiguráljuk, hogy elkerüljük az alapvető betűtípusok beágyazását. Ez a legfontosabb lépés, amely segít a PDF-fájl méretének csökkentésében.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-Ez a beállítás szabályozza, hogy az alapbetűtípusokat be kell-e ágyazni a PDF-be vagy sem.
+ Beállítás`UseCoreFonts` nak nek`true` biztosítja, hogy az olyan alapvető betűtípusok, mint az Arial és a Times New Roman, ne legyenek beágyazva a PDF-be, ami jelentősen csökkenti a fájlméretet.
 
-## 3. lépés: Konvertálja a dokumentumot PDF-be
+## 4. lépés: Mentse el a dokumentumot PDF formátumban
 
- Használja a`Save` módszerrel konvertálhatja a Word-dokumentumot PDF-be az átalakítási beállítások megadásával:
+Végül a Word dokumentumot PDF formátumban mentjük el a beállított mentési beállítások segítségével. Ez a lépés az alapvető betűtípusok beágyazása nélkül hozza létre a PDF-fájlt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Ügyeljen arra, hogy a konvertált PDF mentéséhez a megfelelő útvonalat adja meg.
-
-### Példa forráskódra az Aspose.Words for .NET használatával Kerülje az alapvető betűtípusok beágyazását
-
-Íme a teljes forráskód a funkció használatához, amellyel elkerülhető az Aspose.Words for .NET alapvető betűtípus-beágyazása:
-
-```csharp
-
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// A kimeneti PDF nem lesz beágyazva olyan alapvető betűtípusokkal, mint az Arial, Times New Roman stb.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-Az alábbi lépések követésével egyszerűen szabályozhatja, hogy az alapbetűtípusokat be kell-e ágyazni a PDF-fájlba, amikor Word-dokumentumot Aspose.Words for .NET programmal konvertál.
-
+És megvan! A PDF-fájl most a megadott könyvtárba kerül elmentésre, a terjedelmes alapbetűkészletek nélkül.
 
 ## Következtetés
 
-Ebben az oktatóanyagban elmagyaráztuk, hogyan csökkentheti a PDF-fájlok méretét úgy, hogy az Aspose.Words for .NET segítségével nem ágyaz be alapvető betűtípusokat. Ezzel a funkcióval szabályozhatja, hogy Word-dokumentum konvertálásakor be kell-e ágyazni az alapbetűtípusokat a PDF-fájlba. A vázolt lépések követésével könnyedén szabályozhatja az alapvető betűtípusok beágyazását vagy be nem ágyazását, ami segíthet csökkenteni a PDF-fájl méretét, és biztosítja a jobb kompatibilitást és a dokumentum egységes megjelenését a különböző eszközökön és platformokon. Ne felejtse el mérlegelni az alapbetűkészletek be nem ágyazásának következményeit, és kísérletezni, hogy a dokumentum a várt módon jelenjen meg.
+A PDF-fájl méretének csökkentése gyerekjáték az Aspose.Words for .NET segítségével. Az alapvető betűtípusok beágyazásának elkerülésével jelentősen csökkentheti a fájlméretet, ami megkönnyíti a dokumentumok megosztását és tárolását. Remélem, hogy ez az oktatóanyag hasznos volt, és világosan megértette a folyamatot. Ne feledje, a kis finomítások nagy változást hozhatnak!
 
-### Gyakran Ismételt Kérdések
+## GYIK
 
-#### K: Milyen lehetőség van arra, hogy ne ágyazzon be alapbetűtípusokat egy PDF-fájlba, és miért fontos ez?
-V: Az alapbetűkészletek PDF-fájlba való beágyazásának mellőzése szabályozza, hogy a Word-dokumentum konvertálásakor be kell-e ágyazni az olyan alapbetűkészleteket, mint az Arial, Times New Roman stb. Ez fontos lehet a PDF-fájl méretének csökkentése érdekében azáltal, hogy elkerüli a PDF-olvasó rendszereken általánosan elérhető betűtípusok felvételét. Ezenkívül elősegítheti a PDF-dokumentum jobb kompatibilitását és egységes megjelenését a különböző eszközökön és platformokon.
+### Miért kerüljem az alapvető betűtípusok beágyazását a PDF-ekbe?
+Az alapvető betűtípusok beágyazásának elkerülése csökkenti a fájlméretet, ami megkönnyíti a megosztást és tárolást.
 
-#### K: Hogyan konfigurálhatom az Aspose.Words for .NET alkalmazást úgy, hogy ne ágyazza be az alapbetűtípusokat egy PDF-fájlba?
-V: Az Aspose.Words for .NET konfigurálásához kövesse az alábbi lépéseket:
+### Meg tudom nézni a PDF-fájlt megfelelően beágyazott alapbetűkészletek nélkül?
+Igen, az olyan alapvető betűtípusok, mint az Arial és a Times New Roman, általában elérhetők a legtöbb rendszeren.
 
- Cseréléssel állítsa be a könyvtár elérési útját, ahol a dokumentumok találhatók`"YOUR DOCUMENTS DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+### Mi a teendő, ha egyéni betűtípusokat kell beágyaznom?
+ Testreszabhatja a`PdfSaveOptions`adott betűtípusok beágyazásához szükség szerint.
 
- Töltse be a PDF-be konvertálni kívánt Word-dokumentumot a`Document` osztályt és a megadott dokumentumútvonalat.
+### Ingyenesen használható az Aspose.Words for .NET?
+ Az Aspose.Words for .NET használatához licenc szükséges. Ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/).
 
- Hozzon létre egy példányt a`PdfSaveOptions` osztályt, és állítsa be a`UseCoreFonts`tulajdonát`true`. Ezzel elkerülhető az alapbetűkészletek beágyazása a létrehozott PDF-fájlba.
-
- Használja a`Save` módszere a`Document` objektum a dokumentum PDF formátumban történő mentéséhez, megadva a korábban konfigurált átalakítási beállításokat.
-
-#### K: Milyen előnyökkel jár, ha nem ágyaz be alapbetűtípusokat egy PDF-fájlba?
-V: Az alapbetűkészletek PDF-fájlba való be nem ágyazásának előnyei a következők:
-
-PDF-fájl méretének csökkentése: Az általánosan elérhető betűtípusok, például Arial, Times New Roman stb. beágyazásának elkerülésével a PDF-fájl mérete csökkenthető, így könnyebbé válik a fájlok tárolása, megosztása és átvitele.
-
-Jobb kompatibilitás: A PDF-olvasó rendszereken általánosan elérhető alapvető betűtípusok használatával jobb kompatibilitást és dokumentummegjelenést biztosít a különböző eszközökön és platformokon.
-
-#### K: Milyen következményekkel jár, ha nem ágyaz be alapbetűtípusokat egy PDF-fájlba?
-V: Az alapbetűkészletek PDF-fájlba való be nem ágyazásának a következményei a következők:
-
-Eltérő megjelenés: Ha az alapbetűkészletek nem érhetők el azon a rendszeren, ahol a PDF megnyílik, akkor a rendszer helyettesítő betűtípusokat használ, ami a tervezetttől eltérő megjelenést eredményezhet.
-
-Olvashatósági problémák: Előfordulhat, hogy a használt helyettesítő betűtípusok nem annyira olvashatóak, mint az eredeti betűtípusok, ami befolyásolhatja a dokumentum olvashatóságát.
+### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
+ Részletes dokumentációt találhat[itt](https://reference.aspose.com/words/net/).

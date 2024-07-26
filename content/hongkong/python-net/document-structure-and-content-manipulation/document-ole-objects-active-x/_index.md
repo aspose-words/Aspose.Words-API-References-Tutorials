@@ -8,7 +8,7 @@ weight: 21
 url: /zh-hant/python-net/document-structure-and-content-manipulation/document-ole-objects-active-x/
 ---
 
-在當今的數位時代，創建豐富的互動式文件對於有效溝通至關重要。 Aspose.Words for Python 提供了強大的工具集，使您能夠將 OLE（物件連結和嵌入）物件和 ActiveX 控制項直接嵌入到 Word 文件中。此功能開啟了一個充滿可能性的世界，讓您可以建立包含整合電子表格、圖表、多媒體等的文件。在本教學中，我們將引導您完成使用 Aspose.Words for Python 嵌入 OLE 物件和 ActiveX 控制項的過程。
+在當今的數位時代，創建豐富的互動式文件對於有效溝通至關重要。 Aspose.Words for Python 提供了一個強大的工具集，使您能夠將 OLE（物件連結和嵌入）物件和 ActiveX 控制項直接嵌入到 Word 文件中。此功能開啟了一個充滿可能性的世界，讓您可以建立包含整合電子表格、圖表、多媒體等的文件。在本教學中，我們將引導您完成使用 Aspose.Words for Python 嵌入 OLE 物件和 ActiveX 控制項的過程。
 
 
 ## Python 版 Aspose.Words 入門

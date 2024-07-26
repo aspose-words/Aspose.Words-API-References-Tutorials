@@ -16,5 +16,5 @@ Com esses tutoriais, você será capaz de otimizar o processo de carregamento de
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Carregar PDF criptografado](./load-encrypted-pdf/) | Guia passo a passo para carregar um PDF criptografado usando Aspose.Words for .NET. |
-| [Carregar intervalo de páginas do PDF](./load-page-range-of-pdf/) | Guia passo a passo para carregar um intervalo específico de páginas PDF com Aspose.Words for .NET. |
+| [Carregar PDF criptografado](./load-encrypted-pdf/) | Aprenda como carregar PDFs criptografados usando Aspose.Words for .NET com nosso tutorial passo a passo. Domine a criptografia e descriptografia de PDF rapidamente. |
+| [Carregar intervalo de páginas do PDF](./load-page-range-of-pdf/) | Aprenda como carregar intervalos de páginas específicos de um PDF usando Aspose.Words for .NET neste tutorial passo a passo abrangente. Perfeito para desenvolvedores .NET. |

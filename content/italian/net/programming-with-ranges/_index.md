@@ -16,5 +16,5 @@ Che tu sia un principiante o uno sviluppatore esperto, questi tutorial ti aiuter
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Intervalli Elimina testo nel documento di Word](./ranges-delete-text/) | Scopri come eliminare il testo in intervalli specifici in un documento Word utilizzando Aspose.Words per .NET. |
-| [Gli intervalli ottengono il testo nel documento di Word](./ranges-get-text/) | Scopri come estrarre facilmente il testo in un documento Word utilizzando Aspose.Words per .NET. |
+| [Intervalli Elimina testo nel documento di Word](./ranges-delete-text/) | Scopri come eliminare il testo da un intervallo in un documento Word utilizzando Aspose.Words per .NET con questo tutorial passo passo. Perfetto per gli sviluppatori C#. |
+| [Gli intervalli ottengono il testo nel documento di Word](./ranges-get-text/) | Estrai testo da documenti Word senza sforzo utilizzando Aspose.Words per .NET. Segui la nostra guida dettagliata per iniziare con facilità. |

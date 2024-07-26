@@ -55,7 +55,7 @@ Selamat! Anda sekarang telah mempelajari cara menerapkan gaya teks coretan denga
 
  A: Untuk menambahkan teks yang dicoret di Aspose.Words, Anda dapat menggunakan`Font.StrikeThrough` properti dari`Run`obyek. Anda dapat mengatur properti ini menjadi`true` untuk menambahkan teks yang dicoret ke teks tertentu. Misalnya, Anda bisa menggunakan`run.Font.StrikeThrough=true` untuk menambahkan teks yang dicoret ke dalam`Run` obyek.
 
-#### Q: Apakah bisa menambahkan teks yang dicoret ke beberapa bagian teks dalam paragraf yang sama?
+#### Q: Apakah mungkin untuk menambahkan teks yang dicoret ke beberapa bagian teks dalam paragraf yang sama?
 
  J: Ya, Anda dapat menambahkan teks yang dicoret ke beberapa bagian teks dalam satu paragraf dengan menggunakan beberapa bagian`Run` objek. Anda dapat membuat banyak`Run` objek dan atur`Font.StrikeThrough`properti ke`true` untuk setiap objek untuk menambahkan teks yang dicoret ke bagian teks yang diinginkan. Kemudian Anda dapat menambahkannya ke paragraf menggunakan`Paragraph.AppendChild(run)` metode.
 

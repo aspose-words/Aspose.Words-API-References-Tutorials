@@ -2,94 +2,86 @@
 title: Optimaliseer de PDF-grootte met Skip Embedded Arial & Times Roman-lettertypen
 linktitle: Optimaliseer de PDF-grootte met Skip Embedded Arial & Times Roman-lettertypen
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het genereren van geoptimaliseerde PDF's zonder Arial- en Times Roman-lettertypen in te sluiten met Aspose.Words voor .NET.
+description: Optimaliseer de PDF-grootte door ingesloten Arial- en Times Roman-lettertypen over te slaan met Aspose.Words voor .NET. Volg deze stapsgewijze handleiding om uw PDF-bestanden te stroomlijnen.
 type: docs
 weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
+## Invoering
 
-Dit artikel biedt een stapsgewijze handleiding voor het gebruik van de functie om de PDF-grootte te optimaliseren door de ingesloten Arial- en Times Roman-lettertypen over te slaan naar de metabestandsgrootte met Aspose.Words voor .NET. We zullen elk deel van de code in detail uitleggen. Aan het einde van deze zelfstudie begrijpt u hoe u de optie voor het insluiten van lettertypen in een document kunt configureren en een PDF kunt genereren zonder de Arial- en Times Roman-lettertypen in te sluiten.
+Heeft u zich ooit in een situatie bevonden waarin uw PDF-bestandsgrootte gewoon te groot was? Het is alsof je aan het inpakken bent voor een vakantie en je realiseert dat je koffer uit zijn voegen barst. Je weet dat je wat gewicht moet verliezen, maar wat laat je los? Wanneer u met PDF-bestanden werkt, vooral als deze zijn geconverteerd vanuit Word-documenten, kunnen ingesloten lettertypen de bestandsgrootte vergroten. Gelukkig biedt Aspose.Words voor .NET een gestroomlijnde oplossing om uw PDF's overzichtelijk te houden. In deze zelfstudie gaan we in op hoe u uw PDF-grootte kunt optimaliseren door de ingesloten Arial- en Times Roman-lettertypen over te slaan. Laten we beginnen!
 
-Zorg ervoor dat u, voordat u begint, de Aspose.Words voor .NET-bibliotheek in uw project hebt geïnstalleerd en geconfigureerd. U kunt de bibliotheek en installatie-instructies vinden op de Aspose-website.
+## Vereisten
 
-## Stap 1: Definieer de documentmap
+Voordat we ingaan op de kern van de zaak, zijn er een paar dingen die je nodig hebt:
+-  Aspose.Words voor .NET: Zorg ervoor dat deze krachtige bibliotheek is geïnstalleerd. Als dit niet het geval is, kunt u deze downloaden van[hier](https://releases.aspose.com/words/net/).
+- Een basiskennis van C#: dit zal u helpen de codefragmenten te volgen.
+- Een Word-document: we gebruiken een voorbeelddocument om het proces te demonstreren. 
 
- Om te beginnen moet u het pad definiëren naar de map waar uw documenten zich bevinden. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentenmap.
+## Naamruimten importeren
+
+Zorg er allereerst voor dat u de benodigde naamruimten importeert. Dit vormt de basis voor toegang tot de Aspose.Words-functionaliteiten.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Oké, laten we het proces stap voor stap afbreken.
+
+## Stap 1: Stel uw omgeving in
+
+Om te beginnen moet u uw ontwikkelomgeving instellen. Open uw favoriete C# IDE (zoals Visual Studio) en maak een nieuw project.
+
+## Stap 2: Laad het Word-document
+
+De volgende stap is het laden van het Word-document dat u naar een PDF wilt converteren. Zorg ervoor dat uw document zich in de juiste map bevindt.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Stap 2: Upload het document
-
-Vervolgens moeten we het document laden dat we willen verwerken. In dit voorbeeld gaan we ervan uit dat het document "Rendering.docx" heet en zich in de opgegeven documentenmap bevindt.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Stap 3: Configureer de opties voor opslaan als PDF met insluiting van lettertypen
+ In dit fragment vervangt u`"YOUR DOCUMENT DIRECTORY"` met het pad naar uw documentmap.
 
- Om het insluiten van Arial- en Times Roman-lettertypen in de gegenereerde PDF over te slaan, moeten we de`PdfSaveOptions` bezwaar maken en instellen`FontEmbeddingMode`eigendom aan`PdfFontEmbeddingMode.EmbedAll`.
+## Stap 3: Configureer PDF-opslagopties
+
+Nu moeten we de PDF-opslagopties configureren om te bepalen hoe lettertypen worden ingesloten. Standaard zijn alle lettertypen ingesloten, waardoor de bestandsgrootte kan toenemen. We zullen deze instelling wijzigen.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll
+};
 ```
 
-## Stap 4: Sla het document op als PDF zonder ingesloten lettertypen
+## Stap 4: Sla het document op als PDF
 
-Ten slotte kunnen we het document in PDF-formaat opslaan met behulp van de eerder geconfigureerde opslagopties.
+Sla het document ten slotte op als PDF met de opgegeven opslagopties. Dit is waar de magie gebeurt.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-Dat is alles ! U hebt met succes een PDF gegenereerd zonder de Arial- en Times Roman-lettertypen in te sluiten met behulp van Aspose.Words voor .NET.
-
-### Voorbeeldbroncode om ingebedde Arial- en Times Roman-lettertypen op metabestandsgrootte over te slaan met Aspose.Words voor .NET
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
-   
-```
+Met deze opdracht wordt uw document opgeslagen als een PDF met de naam "OptimizedPDF.pdf" in de opgegeven map.
 
 ## Conclusie
 
-In deze zelfstudie hebben we uitgelegd hoe u de insluiting van Arial- en Times Roman-lettertypen in een PDF-document kunt uitschakelen met behulp van Aspose.Words voor .NET. Door de beschreven stappen te volgen, kunt u een PDF-bestand genereren zonder deze specifieke lettertypen in te sluiten, waardoor de bestandsgrootte kan worden verkleind en een betere documentcompatibiliteit op verschillende platforms kan worden gegarandeerd. Houd rekening met de gevolgen van het uitschakelen van het insluiten van lettertypen wanneer u deze functie gebruikt. Ontdek gerust meer functies van Aspose.Words voor .NET om het genereren van uw PDF-bestanden te optimaliseren.
+En daar heb je het! U heeft zojuist geleerd hoe u de grootte van uw PDF-bestand kunt optimaliseren door het insluiten van Arial- en Times Roman-lettertypen over te slaan met Aspose.Words voor .NET. Deze eenvoudige aanpassing kan uw bestandsgrootte aanzienlijk verkleinen, waardoor u ze gemakkelijker kunt delen en opslaan. Het is alsof u naar de sportschool gaat voor uw PDF's, waarbij u onnodig gewicht verliest terwijl alle essentiële zaken intact blijven.
 
-### Veel Gestelde Vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat houdt het insluiten van Arial- en Times Roman-lettertypen in een PDF-document in en waarom is dit belangrijk?
-A: Het uitschakelen van de insluiting van Arial- en Times Roman-lettertypen in een PDF-document is het proces waarbij deze lettertypen niet worden opgenomen in het gegenereerde PDF-bestand. Dit kan belangrijk zijn om de grootte van het PDF-bestand te verkleinen door het gebruik van lettertypen te vermijden die al algemeen beschikbaar zijn op PDF-leessystemen. Het kan ook helpen zorgen voor een betere compatibiliteit en een consistente weergave van het PDF-document op verschillende apparaten en platforms.
+### Waarom zou ik het insluiten van Arial- en Times Roman-lettertypen overslaan?
+Als u deze veelgebruikte lettertypen overslaat, kan de grootte van uw PDF-bestand kleiner worden, omdat deze lettertypen op de meeste systemen al zijn geïnstalleerd.
 
-#### Vraag: Hoe kan ik Aspose.Words voor .NET zo configureren dat de lettertypen Arial en Times Roman niet in een PDF-document worden ingesloten?
-A: Volg deze stappen om Aspose.Words voor .NET zo te configureren dat de lettertypen Arial en Times Roman niet in een PDF-document worden ingesloten:
+### Heeft dit invloed op het uiterlijk van mijn PDF?
+Nee, dat zal niet gebeuren. Omdat Arial en Times Roman standaardlettertypen zijn, blijft de weergave consistent op verschillende systemen.
 
- Stel het mappad in waar uw documenten zich bevinden door te vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad van uw documentenmap.
+### Kan ik het insluiten van andere lettertypen overslaan?
+Ja, u kunt de opslagopties configureren om indien nodig het insluiten van andere lettertypen over te slaan.
 
- Laad het document dat u wilt verwerken met behulp van de`Document` klasse en het opgegeven documentpad.
+### Is Aspose.Words voor .NET gratis?
+Aspose.Words voor .NET biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/) , maar voor volledige toegang moet u een licentie aanschaffen[hier](https://purchase.aspose.com/buy).
 
- Maak een exemplaar van de`PdfSaveOptions` klasse en stel de`FontEmbeddingMode`eigendom aan`PdfFontEmbeddingMode.EmbedAll`. Hierdoor worden alle lettertypen behalve Arial en Times Roman in het gegenereerde PDF-bestand ingesloten.
-
- Gebruik de`Save` werkwijze van de`Document` object om het document in PDF-formaat op te slaan, waarbij u de eerder geconfigureerde opslagopties opgeeft.
-
-#### Vraag: Wat zijn de voordelen van het uitschakelen van het insluiten van Arial- en Times Roman-lettertypen in een PDF-document?
-A: De voordelen van het uitschakelen van de insluiting van Arial- en Times Roman-lettertypen in een PDF-document zijn:
-
-Verkleining van PDF-bestandsgrootte: Door het insluiten van algemeen beschikbare lettertypen zoals Arial en Times Roman te vermijden, kan de PDF-bestandsgrootte worden verkleind, waardoor het gemakkelijker wordt om bestanden op te slaan, te delen en over te dragen.
-
-Betere compatibiliteit: Door lettertypen te gebruiken die algemeen beschikbaar zijn op PDF-leessystemen, zorgt u voor een betere compatibiliteit en een betere weergave van het document op verschillende apparaten en platforms.
-
-#### Vraag: Wat zijn de gevolgen van het uitschakelen van de insluiting van Arial- en Times Roman-lettertypen in een PDF-document?
-A: De gevolgen van het uitschakelen van de insluiting van Arial- en Times Roman-lettertypen in een PDF-document zijn als volgt:
-
-Ander uiterlijk: Als de lettertypen Arial en Times Roman niet beschikbaar zijn op het systeem waarop de PDF wordt geopend, worden vervangende lettertypen gebruikt, wat kan resulteren in een ander uiterlijk dan bedoeld.
-
-Leesbaarheidsproblemen: gebruikte vervangende lettertypen zijn mogelijk niet zo leesbaar als de oorspronkelijke lettertypen, wat de leesbaarheid van het document kan beïnvloeden.
+### Waar kan ik meer tutorials vinden over Aspose.Words voor .NET?
+ U kunt uitgebreide documentatie en tutorials vinden[hier](https://reference.aspose.com/words/net/).

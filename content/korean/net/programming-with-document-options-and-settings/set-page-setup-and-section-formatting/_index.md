@@ -92,7 +92,7 @@ Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 작업하�
 
 예, .NET용 Aspose.Words는 .NET Core와 호환되므로 크로스 플랫폼 애플리케이션을 구축할 수 있습니다.
 
-### .NET용 Aspose.Words의 무료 평가판을 받으려면 어떻게 해야 합니까?
+### .NET용 Aspose.Words 무료 평가판을 받으려면 어떻게 해야 합니까?
 
  다음에서 무료 평가판을 받을 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/). 평가판을 사용하면 제한된 기간 동안 Aspose.Words의 모든 기능을 테스트할 수 있습니다.
 

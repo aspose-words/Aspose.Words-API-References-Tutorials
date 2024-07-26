@@ -46,7 +46,7 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
 ```
 
- In diesem Schritt erstellen Sie eine Instanz von`LoadOptions` und setzen Sie seine`DefaultEditingLanguage`Eigentum an`EditingLanguage.Russian`. Dies weist Aspose.Words an, Russisch als Standardbearbeitungssprache zu behandeln, wenn ein Dokument mit diesen Optionen geladen wird.
+ In diesem Schritt erstellen Sie eine Instanz von`LoadOptions` und setzen Sie seine`DefaultEditingLanguage`Eigentum an`EditingLanguage.Russian`. Dadurch wird Aspose.Words angewiesen, Russisch als Standardbearbeitungssprache zu behandeln, wenn ein Dokument mit diesen Optionen geladen wird.
 
 ## Schritt 2: Laden Sie das Dokument
 

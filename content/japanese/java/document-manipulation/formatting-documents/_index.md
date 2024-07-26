@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でのドキュメントの書式設定
 linktitle: ドキュメントの書式設定
 second_title: Aspose.Words Java ドキュメント処理 API
-description: 弊社の総合ガイドで、Aspose.Words for Java でのドキュメントの書式設定の技術を習得してください。強力な機能を調べて、ドキュメント処理スキルを強化してください。
+description: 包括的なガイドで、Aspose.Words for Java でのドキュメントの書式設定の技術を学習します。強力な機能を調べて、ドキュメント処理スキルを強化します。
 type: docs
 weight: 29
 url: /ja/java/document-manipulation/formatting-documents/
@@ -159,7 +159,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ## 結論
 
-この記事では、Aspose.Words for Java でのドキュメントの書式設定のさまざまな側面について説明しました。これらの情報を活用して、Java アプリケーション用に美しく書式設定されたドキュメントを作成できます。[Aspose.Words for Java ドキュメント](https://reference.aspose.com/words/java/)より詳しいガイダンスについては、こちらをご覧ください。
+この記事では、Aspose.Words for Java でのドキュメントの書式設定のさまざまな側面について説明しました。これらの情報を活用することで、Java アプリケーション用に美しく書式設定されたドキュメントを作成できます。[Aspose.Words for Java ドキュメント](https://reference.aspose.com/words/java/)より詳しいガイダンスについては、こちらをご覧ください。
 
 ## よくある質問
 

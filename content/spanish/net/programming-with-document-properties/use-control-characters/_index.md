@@ -99,7 +99,7 @@ doc.Save("path/to/your/modified/document.docx");
 
 ## Conclusión
 
-¡Felicitaciones! Acaba de dar sus primeros pasos en el mundo de la automatización de documentos con Aspose.Words para .NET. Desde configurar su proyecto hasta reemplazar texto y manejar caracteres de control, ahora tiene los conceptos básicos para comenzar a hacer que la gestión de sus documentos sea más eficiente. Las posibilidades son infinitas con Aspose.Words, ¡así que sigue experimentando y mira qué más puedes automatizar!
+¡Felicitaciones! Acaba de dar sus primeros pasos en el mundo de la automatización de documentos con Aspose.Words para .NET. Desde configurar su proyecto hasta reemplazar texto y manejar caracteres de control, ahora tiene los conceptos básicos para comenzar a hacer que la gestión de documentos sea más eficiente. Las posibilidades son infinitas con Aspose.Words, ¡así que sigue experimentando y mira qué más puedes automatizar!
 
 ## Preguntas frecuentes
 

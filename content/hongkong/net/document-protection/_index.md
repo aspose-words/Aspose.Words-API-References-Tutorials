@@ -2,7 +2,7 @@
 title: Word文件保護
 linktitle: Word文件保護
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 保護 Word 文件。這些教學將引導您完成各種保護方法，例如鎖定變更、密碼保護、限制對文件元素的存取等等。
+description: 了解如何使用 Aspose.Words for .NET 保護 Word 文件。這些教學將引導您了解各種保護方法，例如鎖定變更、密碼保護、限制對文件元素的存取等等。
 type: docs
 weight: 1430
 url: /zh-hant/net/document-protection/

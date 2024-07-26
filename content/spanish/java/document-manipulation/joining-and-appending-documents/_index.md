@@ -128,7 +128,7 @@ Aspose.Words para Java proporciona herramientas potentes y flexibles para unir y
 
 ### ¿Puedo conservar la numeración de páginas al adjuntar documentos?
 
- Sí, puede conservar la numeración de páginas utilizando el`convertNumPageFieldsToPageRef` método y actualizar el diseño de la página.
+ Sí, puede conservar la numeración de páginas utilizando el`convertNumPageFieldsToPageRef` método y actualización del diseño de la página.
 
 ### ¿Qué es el comportamiento de estilo inteligente?
 

@@ -39,7 +39,7 @@ Sebelum mendalami kodenya, siapkan jalur ke direktori dokumen Anda. Di sinilah f
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen PDF Anda.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen PDF Anda.
 
 ## Langkah 2: Buat Dokumen Baru
 

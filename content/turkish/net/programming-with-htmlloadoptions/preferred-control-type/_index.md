@@ -2,93 +2,112 @@
 title: Word Belgesinde Tercih Edilen Kontrol Türü
 linktitle: Word Belgesinde Tercih Edilen Kontrol Türü
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir HTML belgesi yüklerken word belgesinde tercih edilen kontrol tipini belirlemek için adım adım kılavuz.
+description: Aspose.Words for .NET kullanarak bir Word belgesine nasıl birleşik giriş kutusu form alanı ekleyeceğinizi öğrenin. Sorunsuz HTML içerik entegrasyonu için bu adım adım kılavuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-Bu makale, tercih edilen kontrol türü özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına ilişkin adım adım bir kılavuz sağlar. Kodun her bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir HTML belgesini yüklerken tercih edilen kontrol tipini nasıl belirleyeceğinizi anlayabileceksiniz.
+## giriiş
 
-Başlamadan önce projenize Aspose.Words for .NET kütüphanesini kurup yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
+Aspose.Words for .NET'te HTML yükleme seçenekleriyle nasıl çalışılacağına dair heyecan verici bir eğitime dalıyoruz; özellikle bir Word belgesine birleşik giriş kutusu form alanı eklerken tercih edilen kontrol tipini ayarlamaya odaklanıyoruz. Bu adım adım kılavuz, Aspose.Words for .NET kullanarak Word belgelerinizdeki HTML içeriğini etkili bir şekilde nasıl değiştireceğinizi ve oluşturacağınızı anlamanıza yardımcı olacaktır.
 
-## 1. Adım: HTML kodunu tanımlayın
+## Önkoşullar
 
- Başlamak için belge olarak yüklemek istediğiniz HTML kodunu tanımlamanız gerekir. Bu örnekte, bir tanımladık.`html` Seçeneklere sahip bir seçicinin HTML kodunu içeren değişken.
+Koda geçmeden önce, yerine getirmeniz gereken birkaç şey var:
+
+1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. adresinden indirebilirsiniz.[İnternet sitesi](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi bir geliştirme ortamına sahip olmalısınız.
+3. Temel C# Bilgisi: Öğreticiyi takip etmek için C# programlamaya ilişkin temel bir anlayış gereklidir.
+4. HTML İçeriği: Bu örnekte HTML içeriğiyle çalışacağımız için temel HTML bilgisi faydalıdır.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle başlamak için gerekli ad alanlarını içe aktaralım:
 
 ```csharp
-const string html=@"
-<html>
-<select name='ComboBox' size='1'>
-<option value='val1'>item1</option>
-<option value='val2'></option>
-</select>
-</html>
+using System;
+using System.IO;
+using System.Text;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+Şimdi netlik ve anlayış sağlamak için örneği birden fazla adıma ayıralım.
+
+## 1. Adım: HTML İçeriğinizi Ayarlayın
+
+Öncelikle Word belgesine eklemek istediğimiz HTML içeriğini tanımlamamız gerekiyor. İşte kullanacağımız HTML pasajı:
+
+```csharp
+const string html = @"
+    <html>
+        <select name='ComboBox' size='1'>
+            <option value='val1'>item1</option>
+            <option value='val2'></option>                        
+        </select>
+    </html>
 ";
 ```
 
-## 2. Adım: HTML yükleme seçeneklerini ayarlayın
+Bu HTML, iki seçenekli basit bir açılır kutu içerir. Bu HTML'yi bir Word belgesine yükleyeceğiz ve nasıl oluşturulması gerektiğini belirleyeceğiz.
 
- Daha sonra, bir`HtmlLoadOptions` nesneyi ayarlayın ve`PreferredControlType`mülkiyet`HtmlControlType.StructuredDocumentTag`. Bu, Aspose.Words'e yükleme sırasında HTML'yi temsil etmek için StructuredDocumentTag'leri kullanmasını söyler.
+## Adım 2: Belge Dizinini Tanımlayın
+
+Daha sonra Word belgenizin kaydedileceği dizini belirtin. Bu, dosyalarınızı düzenlemenize ve yol yönetimini temiz tutmanıza yardımcı olur.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Word belgenizi kaydetmek istediğiniz asıl yolla.
+
+## 3. Adım: HTML Yükleme Seçeneklerini Yapılandırma
+
+ Burada, özellikle HTML yükleme seçeneklerini yapılandırıyoruz.`PreferredControlType`mülk. Bu, birleşik giriş kutusunun Word belgesinde nasıl işlenmesi gerektiğini belirler.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## 3. Adım: Belgeyi yükleyin ve kaydedin
+ Ayarlayarak`PreferredControlType` ile`HtmlControlType.StructuredDocumentTag`, birleşik giriş kutusunun Word belgesinde yapılandırılmış belge etiketi (SDT) olarak görüntülenmesini sağlıyoruz.
 
- biz kullanıyoruz`Document` Daha önce tanımlanan yükleme seçenekleriyle HTML kodunu bir bellek akışından yüklemek için sınıf. Daha sonra belgeyi belirtilen dizine kaydediyoruz.`.docx`dosya formatı.
+## Adım 4: HTML İçeriğini Belgeye Yükleyin
+
+Yapılandırılmış yükleme seçeneklerini kullanarak HTML içeriğini yeni bir Word belgesine yüklüyoruz.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
+```
+
+Burada HTML dizesini bir bayt dizisine dönüştürüyoruz ve bir bellek akışı kullanarak belgeye yüklüyoruz. Bu, HTML içeriğinin Aspose.Words tarafından doğru şekilde yorumlanmasını ve işlenmesini sağlar.
+
+## Adım 5: Belgeyi Kaydedin
+
+Son olarak belgeyi belirtilen dizine DOCX formatında kaydedin.
+
+```csharp
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### Aspose.Words for .NET ile tercih edilen kontrol tipi için örnek kaynak kodu
-
-```csharp
-	
-	const string html = @"
-		<html>
-			<select name='ComboBox' size='1'>
-				<option value='val1'>item1</option>
-				<option value='val2'></option>                        
-			</select>
-		</html>
-	";
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
-
-	Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
-
-	doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
-
-```
-
-Bu kadar ! Aspose.Words for .NET ile bir HTML belgesi yüklerken tercih edilen kontrol tipini başarıyla belirlediniz.
+Bu, oluşturulan birleşik giriş kutusu denetimiyle birlikte Word belgesini belirtilen konuma kaydeder.
 
 ## Çözüm
 
- Bu adım adım kılavuzu takip ederek, bir HTML belgesini yüklerken istenen kontrol tipini belirlemek için Aspose.Words for .NET'teki "Tercih Edilen Kontrol Tipi" özelliğini nasıl kullanacağınızı öğrendiniz. ayarlamak`PreferredControlType`mülkiyet`HtmlControlType.StructuredDocumentTag` Aspose.Words'ün HTML içeriğinin daha iyi temsili ve işlenmesi için StructuredDocumentTags'i (SDT) kullanmasına olanak tanır. Özel gereksinimlerinize uyacak şekilde diğer kontrol türlerini de keşfedebilirsiniz. Bu özelliğin kullanılması, Aspose.Words ile C# uygulamanızda HTML belgelerinin doğru ve verimli şekilde işlenmesini sağlamaya yardımcı olur.
+İşte buyur! Aspose.Words for .NET kullanarak, HTML yükleme seçeneklerini kullanarak bir Word belgesine başarılı bir şekilde birleşik giriş kutusu form alanı ekledik. Bu adım adım kılavuz, süreci anlamanıza ve projelerinize uygulamanıza yardımcı olacaktır. İster belge oluşturmayı otomatikleştiriyor olun ister HTML içeriğini yönetiyor olun, Aspose.Words for .NET, hedeflerinize ulaşmanız için güçlü araçlar sağlar.
 
-### Word belgesinde tercih edilen kontrol türü için SSS'ler
+## SSS'ler
 
-#### S: Aspose.Words for .NET'teki "Tercih Edilen Kontrol Türü" özelliği nedir?
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, düzenlemesine, dönüştürmesine ve işlemesine olanak tanıyan güçlü bir belge işleme kitaplığıdır.
 
-C: "Tercih Edilen Kontrol Türü" özelliği, bir HTML belgesini yüklerken HTML öğelerini temsil etmek için tercih edilen kontrol türünü belirtmenize olanak tanır. HTML içeriğinin daha iyi temsil edilmesi ve işlenmesi için uygun kontrol tipinin seçilmesine yardımcı olur.
+### Aspose.Words for .NET ile diğer HTML kontrol türlerini kullanabilir miyim?
+Evet, Aspose.Words for .NET çeşitli HTML kontrol türlerini destekler. Word belgesinde farklı denetimlerin nasıl işleneceğini özelleştirebilirsiniz.
 
-#### S: Bir HTML belgesini yüklerken tercih edilen kontrol türünü nasıl ayarlarım?
+### Aspose.Words for .NET'te karmaşık HTML içeriğini nasıl yönetirim?
+ Aspose.Words for .NET, karmaşık öğeler de dahil olmak üzere HTML için kapsamlı destek sağlar. yapılandırdığınızdan emin olun`HtmlLoadOptions`özel HTML içeriğinizi uygun şekilde işlemek için.
 
- C: Tercih edilen kontrol türünü ayarlamak için bir`HtmlLoadOptions` nesneyi ve onu ayarlayın`PreferredControlType` istenilen mülk`HtmlControlType` . Verilen örnekte,`HtmlControlType.StructuredDocumentTag` kullanıldı.
+### Daha fazla örnek ve belgeyi nerede bulabilirim?
+ Ayrıntılı belgeleri ve örnekleri şurada bulabilirsiniz:[Aspose.Words for .NET dokümantasyon sayfası](https://reference.aspose.com/words/net/).
 
-#### S: Tercih edilen kontrol türü olarak StructuredDocumentTags (SDT) kullanmanın önemi nedir?
-
-C: StructuredDocumentTag'ler (SDT), bir Word belgesindeki karmaşık içeriği ve kontrolleri temsil etmek için kullanılabilen XML tabanlı öğelerdir. SDT'leri tercih edilen kontrol türü olarak kullanmak, HTML içeriğinin daha iyi uyumluluğunu ve temsilini sağlayabilir.
-
-#### S: Aspose.Words'ün HTML belgesini yüklerken tercih edilen kontrol tipini kullanmasını nasıl sağlayabilirim?
-
- C: Ayarlayarak`PreferredControlType`mülkiyet`HtmlControlType.StructuredDocumentTag`Örnek kaynak kodunda gösterildiği gibi Aspose.Words, belgeyi yüklerken HTML öğelerini temsil etmek için SDT'leri kullanacaktır.
-
-#### S: Tercih edilen seçenek olarak diğer kontrol türlerini kullanabilir miyim?
-
- C: Evet, bunun dışında`HtmlControlType.StructuredDocumentTag` Aspose.Words for .NET aşağıdaki gibi diğer kontrol türlerini destekler:`HtmlControlType.ContentControl`Ve`HtmlControlType.CustomXmlMarkup`.
+### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
+ Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Web sitesi](https://releases.aspose.com/).

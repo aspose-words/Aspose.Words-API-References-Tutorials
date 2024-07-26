@@ -7,7 +7,7 @@ type: docs
 weight: 17
 url: /nl/python-net/document-structure-and-content-manipulation/document-hyphenation/
 ---
-Woordafbreking en tekststroom zijn cruciale aspecten als het gaat om het maken van professioneel ogende en goed gestructureerde Word-documenten. Of u nu een rapport, een presentatie of een ander type document voorbereidt, door ervoor te zorgen dat de tekst naadloos doorloopt en op de juiste manier wordt afgebroken, kunt u de leesbaarheid en esthetiek van uw inhoud aanzienlijk verbeteren. In dit artikel onderzoeken we hoe u woordafbreking en tekststroom effectief kunt beheren met behulp van de Aspose.Words voor Python API. We behandelen alles, van het begrijpen van woordafbreking tot het programmatisch implementeren ervan in uw documenten.
+Woordafbreking en tekststroom zijn cruciale aspecten als het gaat om het maken van professioneel ogende en goed gestructureerde Word-documenten. Of u nu een rapport, een presentatie of een ander type document voorbereidt, als u ervoor zorgt dat de tekst naadloos doorloopt en op de juiste manier wordt afgebroken, kunt u de leesbaarheid en esthetiek van uw inhoud aanzienlijk verbeteren. In dit artikel onderzoeken we hoe u woordafbreking en tekststroom effectief kunt beheren met behulp van de Aspose.Words voor Python API. We behandelen alles, van het begrijpen van woordafbreking tot het programmatisch implementeren ervan in uw documenten.
 
 ## Woordafbreking begrijpen
 

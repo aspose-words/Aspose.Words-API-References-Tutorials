@@ -8,7 +8,7 @@ weight: 10
 url: /pt/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 ---
 
-Este tutorial demonstra como vincular uma tag de documento estruturado (SDT) a uma parte Xml personalizada usando Aspose.Words for .NET. SDTs permitem adicionar controles de conteúdo estruturados a um documento do Word, e CustomXmlParts fornecem uma maneira de armazenar dados XML personalizados associados ao documento.
+Este tutorial demonstra como vincular uma tag de documento estruturado (SDT) a uma parte Xml personalizada usando Aspose.Words for .NET. Os SDTs permitem adicionar controles de conteúdo estruturados a um documento do Word, e CustomXmlParts fornecem uma maneira de armazenar dados XML personalizados associados ao documento.
 
 ## Pré-requisitos
 Para seguir este tutorial, você precisa ter o seguinte:
@@ -17,7 +17,7 @@ Para seguir este tutorial, você precisa ter o seguinte:
 - Conhecimento básico de C# e XML.
 
 ## Etapa 1: configurar o diretório de documentos
- Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real para o diretório onde você deseja salvar o documento.
+ Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório onde você deseja salvar o documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Etapa 3: adicionar uma StructuredDocumentTag (SDT) ao documento
- Adicione um`StructuredDocumentTag` ao documento para servir como controle de conteúdo. Especifique o`SdtType` como`PlainText` e a`MarkupLevel` como`Block` para criar um SDT em nível de bloco.
+ Adicione um`StructuredDocumentTag`ao documento para servir como controle de conteúdo. Especifique o`SdtType` como`PlainText` e a`MarkupLevel` como`Block` para criar um SDT em nível de bloco.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

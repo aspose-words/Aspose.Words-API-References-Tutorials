@@ -58,7 +58,7 @@ builder.Writeln("Text inside a bookmark.");
 
 ## 3. lépés: Hozzon létre egy beágyazott könyvjelzőt
 
-Beágyazott könyvjelző hozzáadása a fő könyvjelzőhöz
+Beágyazott könyvjelző hozzáadása a fő könyvjelzőn belül
 
 A könyvjelzőket más könyvjelzőkbe ágyazhatja be. Itt hozzáadjuk a "Beágyazott könyvjelzőt" a "Könyvjelzőm" részhez.
 

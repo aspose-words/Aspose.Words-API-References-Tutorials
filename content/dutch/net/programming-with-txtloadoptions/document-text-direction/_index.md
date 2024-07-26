@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- In deze laatste stap slaan we het resulterende document op in .docx-indeling met behulp van de`Save` methode en geef het pad door aan het uitvoerbestand.
+In deze laatste stap slaan we het resulterende document op in .docx-indeling met behulp van de`Save` methode en geef het pad door aan het uitvoerbestand.
 
 Nu kunt u de broncode uitvoeren om het tekstdocument te laden en de tekstrichting te bepalen. Het resulterende document wordt opgeslagen in de opgegeven map met de naam "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
 

@@ -16,13 +16,13 @@ Gli esempi di codice forniti nelle esercitazioni ti aiuteranno a comprendere i c
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Casella di controllo Tipo Controllo contenuto](./check-box-type-content-control/) | Scopri come creare un controllo del contenuto del tipo casella di controllo in un documento Word utilizzando Aspose.Words per .NET. |
+| [Casella di controllo Tipo Controllo contenuto](./check-box-type-content-control/) | Scopri come aggiungere un controllo del contenuto del tipo di casella di controllo nei documenti di Word utilizzando Aspose.Words per .NET con questo tutorial dettagliato passo dopo passo. |
 | [Casella di controllo Stato corrente](./current-state-of-check-box/) | Scopri come recuperare e impostare lo stato corrente di un controllo del contenuto di una casella di controllo in un documento di Word utilizzando Aspose.Words per .NET. |
 | [Modifica i controlli del contenuto](./modify-content-controls/) | Scopri come modificare testo, elenchi a discesa e immagini all'interno dei controlli contenuto in un documento Word utilizzando Aspose.Words per .NET. |
 | [Controllo del contenuto della casella combinata](./combo-box-content-control/) | Scopri come creare un controllo contenuto casella combinata in un documento Word utilizzando Aspose.Words per .NET. |
 | [Controllo del contenuto della casella di testo RTF](./rich-text-box-content-control/) | Scopri come creare un controllo del contenuto di una casella di testo RTF in un documento di Word utilizzando Aspose.Words per .NET abilitando la formattazione e lo stile del testo. |
 | [Imposta il colore del controllo del contenuto](./set-content-control-color/) | Scopri come impostare il colore di un controllo contenuto in un documento Word utilizzando Aspose.Words per .NET, personalizzandone l'aspetto. |
-| [Cancella controllo dei contenuti](./clear-contents-control/) | Scopri come cancellare il contenuto di un controllo in un documento di Word utilizzando Aspose.Words per .NET. |
+| [Cancella controllo dei contenuti](./clear-contents-control/) | Scopri come cancellare il controllo dei contenuti in un documento Word utilizzando Aspose.Words per .NET con la nostra guida passo passo. |
 | [Associa SDT alla parte Xml personalizzata](./bind-sdt-to-custom-xml-part/) | Scopri come associare un SDT a una parte Xml personalizzata utilizzando Aspose.Words per .NET. |
 | [Imposta lo stile di controllo del contenuto](./set-content-control-style/) | Scopri come impostare lo stile di un controllo contenuto in un documento Word utilizzando Aspose.Words per .NET, applicando una formattazione coerente. |
 | [Creazione di una sezione ripetuta di tabella mappata su una parte Xml personalizzata](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Scopri come creare una tabella con una sezione ripetuta mappata su CustomXmlPart in un documento Word utilizzando Aspose.Words per .NET. |

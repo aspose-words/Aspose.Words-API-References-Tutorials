@@ -2,94 +2,87 @@
 title: Riduci le dimensioni del PDF disabilitando i caratteri incorporati
 linktitle: Riduci le dimensioni del PDF disabilitando i caratteri incorporati
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come ridurre le dimensioni del PDF disabilitando l'incorporamento dei caratteri Windows durante la conversione di documenti in PDF con Aspose.Words per .NET.
+description: Riduci le dimensioni del PDF disabilitando i caratteri incorporati utilizzando Aspose.Words per .NET. Segui la nostra guida passo passo per ottimizzare i tuoi documenti per un'archiviazione e una condivisione efficienti.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
+## introduzione
 
-In questo tutorial, ti guideremo attraverso i passaggi per ridurre le dimensioni del PDF disabilitando l'incorporamento dei caratteri Windows in un documento PDF con Aspose.Words per .NET. Disabilitando l'incorporamento dei caratteri, puoi ridurre la dimensione del file PDF generato. Seguire i passaggi seguenti:
+Ridurre le dimensioni dei file PDF può essere fondamentale per un'archiviazione efficiente e una condivisione rapida. Un modo efficace per farlo è disabilitare i caratteri incorporati, soprattutto quando i caratteri standard sono già disponibili sulla maggior parte dei sistemi. In questo tutorial esploreremo come ridurre le dimensioni del PDF disabilitando i caratteri incorporati utilizzando Aspose.Words per .NET. Esamineremo ogni passaggio per assicurarci che tu possa facilmente implementarlo nei tuoi progetti.
 
-## Passaggio 1: caricamento del documento
+## Prerequisiti
 
-Inizia caricando il documento che desideri convertire in PDF:
+Prima di immergerti nel codice, assicurati di avere quanto segue:
+
+-  Aspose.Words per .NET: se non lo hai già fatto, scaricalo e installalo da[Link per scaricare](https://releases.aspose.com/words/net/).
+- Un ambiente di sviluppo .NET: Visual Studio è una scelta popolare.
+- Un documento Word di esempio: tieni pronto un file DOCX che desideri convertire in PDF.
+
+## Importa spazi dei nomi
+
+Per iniziare, assicurati di aver importato gli spazi dei nomi necessari nel tuo progetto. Ciò ti consente di accedere alle classi e ai metodi richiesti per il nostro compito.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Analizziamo il processo in passaggi semplici e gestibili. Ogni passaggio ti guiderà attraverso l'attività, assicurandoti di comprendere cosa sta succedendo in ogni momento.
+
+## Passaggio 1: inizializza il documento
+
+Per prima cosa dobbiamo caricare il documento Word che desideri convertire in PDF. È qui che inizia il tuo viaggio.
+
+```csharp
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Assicurati di specificare il percorso corretto del documento.
+ Qui,`dataDir` è un segnaposto per la directory in cui si trova il documento. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso vero e proprio.
 
-## Passaggio 2: imposta le opzioni di salvataggio del PDF
+## Passaggio 2: configura le opzioni di salvataggio del PDF
 
-Crea un'istanza della classe PdfSaveOptions e specifica come incorporare i caratteri:
+Successivamente, imposteremo le opzioni di salvataggio del PDF. Qui è dove specifichiamo che non vogliamo incorporare i caratteri standard di Windows.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
+// Il PDF di output verrà salvato senza incorporare i caratteri Windows standard.
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone
+};
 ```
 
-Questa opzione consente di disattivare l'integrazione dei caratteri Windows nel file PDF generato.
+ IMPOSTANDO`FontEmbeddingMode` A`EmbedNone`, chiediamo ad Aspose.Words di non includere questi caratteri nel PDF, riducendo la dimensione del file.
 
-## Passaggio 3: converti il documento in PDF
+## Passaggio 3: salva il documento come PDF
 
- Usa il`Save` metodo per convertire il documento in PDF specificando le opzioni di conversione:
+Infine, salviamo il documento come PDF utilizzando le opzioni di salvataggio configurate. Questo è il momento della verità in cui il tuo DOCX si trasforma in un PDF compatto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-Assicurati di specificare il percorso corretto per salvare il PDF convertito.
-
-### Codice sorgente di esempio per disattivare i caratteri Windows incorporati utilizzando Aspose.Words per .NET
-
-Ecco il codice sorgente completo per disabilitare l'incorporamento di caratteri Windows in un documento PDF con Aspose.Words per .NET:
-
-```csharp
-
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Il PDF di output verrà salvato senza incorporare i caratteri Windows standard.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
-
-```
-Seguendo questi passaggi, puoi facilmente disabilitare l'incorporamento dei caratteri Windows in un documento PDF con Aspose.Words per .NET.
-
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory ancora una volta. Il PDF di output verrà ora salvato nella directory specificata senza caratteri standard incorporati.
 
 ## Conclusione
 
-In questo tutorial, abbiamo imparato come ridurre le dimensioni di un file PDF disabilitando l'incorporamento dei caratteri Windows utilizzando Aspose.Words per .NET. Disabilitando l'incorporamento dei caratteri, puoi ridurre la dimensione del file PDF generato, semplificando l'archiviazione, la condivisione e il trasferimento dei file. Tuttavia, è importante notare che la disabilitazione dell'incorporamento dei caratteri Windows può causare modifiche all'aspetto e alla formattazione del documento PDF finale. Assicurati di considerare queste conseguenze quando usi questa funzione. Sentiti libero di esplorare altre funzionalità di Aspose.Words per .NET per ottimizzare la generazione dei tuoi file PDF.
+Seguendo questi passaggi, puoi ridurre significativamente la dimensione dei tuoi file PDF. Disabilitare i caratteri incorporati è un modo semplice ma efficace per rendere i tuoi documenti più leggeri e più facili da condividere. Aspose.Words per .NET rende questo processo fluido, assicurandoti di poter ottimizzare i tuoi file con il minimo sforzo.
 
-### Domande frequenti
+## Domande frequenti
 
-#### D: Che cosa significa disabilitare l'incorporamento dei caratteri Windows in un documento PDF e perché è importante?
-R: La disabilitazione dell'incorporamento dei caratteri Windows in un documento PDF è il processo che impedisce l'inclusione dei caratteri Windows nel file PDF generato. Ciò riduce la dimensione del file PDF rimuovendo i dati dei caratteri Windows incorporati. Questo può essere importante per ridurre le dimensioni dei file PDF, il che può renderli più facili da archiviare, condividere e trasferire più velocemente.
+### Perché dovrei disabilitare i caratteri incorporati in un PDF?
+La disattivazione dei caratteri incorporati può ridurre significativamente le dimensioni del file di un PDF, rendendolo più efficiente per l'archiviazione e più veloce da condividere.
 
-#### D: Come posso disabilitare l'incorporamento dei caratteri Windows in un documento PDF utilizzando Aspose.Words per .NET?
-R: Per disabilitare l'incorporamento dei caratteri Windows in un documento PDF utilizzando Aspose.Words per .NET, attenersi alla seguente procedura:
+### Il PDF verrà comunque visualizzato correttamente senza i caratteri incorporati?
+Sì, purché i caratteri siano standard e disponibili nel sistema in cui viene visualizzato il PDF, verrà visualizzato correttamente.
 
- Carica il documento che desideri convertire in PDF utilizzando il file`Document` percorso della classe e del documento.
+### Posso incorporare selettivamente solo determinati caratteri in un PDF?
+Sì, Aspose.Words per .NET ti consente di personalizzare i caratteri incorporati, offrendo flessibilità nel modo in cui riduci le dimensioni del file.
 
- Crea un'istanza di`PdfSaveOptions` classe e impostare il file`FontEmbeddingMode`proprietà a`PdfFontEmbeddingMode.EmbedNone`. Ciò disabilita l'incorporamento dei caratteri Windows nel file PDF generato.
+### Ho bisogno di Aspose.Words per .NET per disabilitare i caratteri incorporati nei PDF?
+Sì, Aspose.Words per .NET fornisce le funzionalità necessarie per configurare le opzioni di incorporamento dei caratteri nei PDF.
 
- Usa il`Save` metodo del`Document` oggetto per convertire il documento in PDF specificando le opzioni di conversione configurate in precedenza.
-
-#### D: Quali sono i vantaggi derivanti dalla disattivazione dell'incorporamento dei caratteri Windows in un documento PDF?
-R: I vantaggi derivanti dalla disattivazione dell'incorporamento dei caratteri Windows in un documento PDF sono:
-
-Dimensioni file PDF ridotte: disabilitando l'incorporamento dei caratteri Windows, i dati dei caratteri Windows incorporati vengono rimossi, riducendo le dimensioni del file PDF generato.
-
-Archiviazione più semplice: i file PDF più piccoli sono più facili da archiviare, salvare e trasferire.
-
-Condivisione e trasferimento più rapidi: i file PDF più piccoli possono essere condivisi e trasferiti più velocemente, risparmiando tempo e risorse.
-
-#### D: Quali sono le conseguenze della disattivazione dell'incorporamento dei caratteri Windows in un documento PDF?
-R: Disabilitare l'incorporamento dei caratteri Windows in un documento PDF può portare a conseguenze quali:
-
-Perdita di aspetto e formattazione: se i caratteri Windows specificati nel documento non sono disponibili nel sistema in cui viene aperto il PDF, verranno utilizzati caratteri sostitutivi, il che potrebbe comportare un aspetto e una formattazione errati. forma diversa da quella prevista.
-
-Problemi di leggibilità: se i caratteri sostitutivi utilizzati non sono leggibili come i caratteri originali, ciò potrebbe influire sulla leggibilità del testo nel documento PDF.
+### Come posso ottenere supporto se riscontro problemi?
+ Puoi visitare il[Forum di assistenza](https://forum.aspose.com/c/words/8) per assistenza in caso di problemi riscontrati.

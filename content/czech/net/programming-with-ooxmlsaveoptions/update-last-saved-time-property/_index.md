@@ -2,66 +2,94 @@
 title: Aktualizovat vlastnost posledního uloženého času
 linktitle: Aktualizovat vlastnost posledního uloženého času
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Přečtěte si, jak automaticky aktualizovat vlastnost Last Saved Time při ukládání dokumentu pomocí Aspose.Words for .NET.
+description: Přečtěte si, jak aktualizovat vlastnost posledního uloženého času v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-V tomto tutoriálu prozkoumáme poskytnutý zdrojový kód C#, abychom aktualizovali vlastnost posledního času uložení při ukládání dokumentu pomocí Aspose.Words for .NET. Tato funkce umožňuje automaticky aktualizovat vlastnost času posledního uložení generovaného dokumentu.
+## Úvod
 
-## Krok 1: Nastavení prostředí
+Přemýšleli jste někdy, jak programově sledovat vlastnost posledního uloženého času v dokumentech aplikace Word? Pokud máte co do činění s více dokumenty a potřebujete zachovat jejich metadata, aktualizace vlastnosti posledního uloženého času může být docela užitečná. Dnes vás provedu tímto procesem pomocí Aspose.Words pro .NET. Tak se připoutejte a jdeme do toho!
 
-Než začnete, ujistěte se, že jste nastavili své vývojové prostředí s Aspose.Words for .NET. Ujistěte se, že jste přidali potřebné reference a importovali příslušné jmenné prostory.
+## Předpoklady
 
-## Krok 2: Načtení dokumentu
+Než se pustíme do podrobného průvodce, budete potřebovat několik věcí:
+
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Vývojové prostředí jako Visual Studio.
+3. Základní znalost C#: Bude užitečné porozumět základům programování v C#.
+
+## Importovat jmenné prostory
+
+Nejprve se ujistěte, že jste do projektu importovali potřebné jmenné prostory. To vám umožní přístup ke třídám a metodám potřebným pro manipulaci s dokumenty aplikace Word.
 
 ```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
+Nyní si celý proces rozdělíme do jednoduchých kroků. Každý krok vás provede procesem aktualizace poslední uložené vlastnosti času v dokumentu aplikace Word.
+
+## Krok 1: Nastavte adresář dokumentů
+
+Nejprve musíte zadat cestu k adresáři dokumentů. Zde je uložen váš stávající dokument a kam se uloží aktualizovaný dokument.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři.
+
+## Krok 2: Načtěte dokument aplikace Word
+
+ Dále načtěte dokument aplikace Word, který chcete aktualizovat. Můžete to udělat vytvořením instance souboru`Document` třídy a předání cesty vašeho dokumentu.
+
+```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- V tomto kroku načteme dokument pomocí`Document` a předání cesty k souboru DOCX k načtení.
+ Ujistěte se, že dokument s názvem`Document.docx` je přítomen v zadaném adresáři.
 
-## Krok 3: Konfigurace možností zálohování OOXML
+## Krok 3: Nakonfigurujte možnosti uložení
+
+ Nyní vytvořte instanci souboru`OoxmlSaveOptions` třída. Tato třída umožňuje zadat možnosti pro uložení dokumentu ve formátu Office Open XML (OOXML). Zde nastavíte`UpdateLastSavedTimeProperty` na`true`.
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
+{
+    UpdateLastSavedTimeProperty = true
+};
 ```
 
- V tomto kroku nakonfigurujeme možnosti uložení OOXML pomocí`OoxmlSaveOptions` třída. Nastavením povolíme automatickou aktualizaci vlastnosti posledního času uložení`UpdateLastSavedTimeProperty` na`true`.
+Tím Aspose.Words sdělíte, že má aktualizovat vlastnost posledního uloženého času dokumentu.
 
-## Krok 4: Uložte dokument s aktualizovanou vlastností
+## Krok 4: Uložte aktualizovaný dokument
+
+ Nakonec dokument uložte pomocí`Save` metoda`Document` třídy, předáním cesty, kam chcete uložit aktualizovaný dokument, a možností uložení.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
 ```
 
- V tomto posledním kroku dokument uložíme pomocí`Save` a předání cesty k výstupnímu souboru pomocí`.docx` rozšíření spolu se zadanými možnostmi uložení.
-
-Nyní můžete spustit zdrojový kód a automaticky aktualizovat vlastnost posledního času uložení při ukládání dokumentu. Výsledný soubor bude uložen do zadaného adresáře s názvem "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx".
-
-### Ukázkový zdrojový kód pro vlastnost Update Last Saved Time pomocí Aspose.Words for .NET 
-
-```csharp
-
-// Cesta k vašemu adresáři dokumentů
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-Document doc = new Document(dataDir + "Document.docx");
-
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
-
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
-            
-        
-```
+Tím se dokument uloží s aktualizovanou vlastností posledního uloženého času.
 
 ## Závěr
 
-V tomto tutoriálu jsme prozkoumali funkci automatické aktualizace vlastnosti posledního času uložení při ukládání dokumentu pomocí Aspose.Words for .NET. Povolením této funkce s možnostmi uložení OOXML můžete zajistit, že se vlastnost času posledního uložení ve vygenerovaném dokumentu automaticky aktualizuje.
+A tady to máte! Pomocí těchto kroků můžete snadno aktualizovat vlastnost posledního uloženého času vašich dokumentů Word pomocí Aspose.Words for .NET. To je užitečné zejména pro udržování přesných metadat ve vašich dokumentech, což může být klíčové pro systémy správy dokumentů a různé další aplikace.
 
-Aktualizace vlastnosti posledního uložení může být užitečná pro sledování změn a verzí dokumentu. Zaznamenává také, kdy byl dokument naposledy uložen, což může být užitečné v různých scénářích.
+## FAQ
 
-Aspose.Words for .NET usnadňuje automatickou aktualizaci vlastnosti Last Backup Time tím, že poskytuje flexibilní a výkonné možnosti zálohování. Tuto funkci můžete integrovat do svých projektů, abyste zajistili, že vygenerované dokumenty budou mít přesné záložní informace.
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro vytváření, úpravy a převod dokumentů aplikace Word v aplikacích .NET.
+
+### Proč bych měl aktualizovat vlastnost posledního uloženého času?
+Aktualizace vlastnosti posledního uloženého času pomáhá udržovat přesná metadata, která jsou nezbytná pro sledování a správu dokumentů.
+
+### Mohu aktualizovat další vlastnosti pomocí Aspose.Words for .NET?
+Ano, Aspose.Words for .NET umožňuje aktualizovat různé vlastnosti dokumentu, jako je název, autor a předmět.
+
+### Je Aspose.Words for .NET zdarma?
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plnou funkčnost je vyžadována licence. Můžete získat licenci[tady](https://purchase.aspose.com/buy).
+
+### Kde najdu další návody na Aspose.Words pro .NET?
+Můžete najít další návody a dokumentaci[tady](https://reference.aspose.com/words/net/).

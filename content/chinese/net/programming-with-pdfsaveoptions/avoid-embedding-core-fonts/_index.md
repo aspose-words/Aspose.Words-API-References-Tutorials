@@ -2,95 +2,97 @@
 title: 通过不嵌入核心字体来减小 PDF 文件大小
 linktitle: 通过不嵌入核心字体来减小 PDF 文件大小
 second_title: Aspose.Words 文档处理 API
-description: 了解如何在使用 Aspose.Words for .NET 将 Word 文档转换为 PDF 时通过不嵌入核心字体来减小 PDF 文件大小。
+description: 了解如何通过使用 Aspose.Words for .NET 不嵌入核心字体来减小 PDF 文件大小。按照我们的分步指南优化您的 PDF。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## 介绍
 
-在本教程中，我们将引导您完成如何使用 Aspose.Words for .NET 不嵌入核心字体来减小 PDF 文件大小的步骤。此功能允许您控制在转换 Word 文档时是否必须在 PDF 中嵌入基本字体（例如 Arial、Times New Roman 等）。请按照以下步骤操作：
+您是否曾经感到困惑，想知道为什么您的 PDF 文件这么大？好吧，您并不孤单。一个常见的罪魁祸首是嵌入 Arial 和 Times New Roman 等核心字体。幸运的是，Aspose.Words for .NET 有一个巧妙的方法来解决这个问题。在本教程中，我将向您展示如何通过避免嵌入这些核心字体来减小 PDF 文件大小。让我们开始吧！
 
-## 步骤 1：加载文档
+## 先决条件
 
-首先上传要转换为 PDF 的 Word 文档：
+在我们踏上这段激动人心的旅程之前，让我们确保您已准备好一切所需。以下是一份快速检查清单：
+
+-  Aspose.Words for .NET：确保已安装 Aspose.Words for .NET。如果尚未安装，可以下载[这里](https://releases.aspose.com/words/net/).
+- 开发环境：您需要一个像 Visual Studio 这样的开发环境。
+- Word 文档：本教程中我们将使用 Word 文档（例如“Rendering.docx”）。
+- 基本 C# 知识：对 C# 的基本了解将帮助您跟上进度。
+
+好了，现在一切准备就绪，让我们开始讨论细节！
+
+## 导入命名空间
+
+首先，让我们导入必要的命名空间。此步骤确保我们可以访问所需的所有 Aspose.Words 功能。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 步骤 1：初始化文档目录
+
+在开始操作文档之前，我们需要指定存储文档的目录。这对于访问文件至关重要。
+
+```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+代替`"YOUR DOCUMENT DIRECTORY"`使用您的 Word 文档所在的实际路径。
+
+## 第 2 步：加载 Word 文档
+
+接下来，我们需要加载要转换为 PDF 的 Word 文档。在此示例中，我们使用名为“Rendering.docx”的文档。
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-确保指定 Word 文档的正确路径。
+这行代码将文档加载到内存中，准备进行进一步处理。
 
-## 步骤 2：设置 PDF 转换选项
+## 步骤 3：配置 PDF 保存选项
 
-创建 PdfSaveOptions 类的实例并启用基本字体嵌入避免：
+现在到了神奇的部分！我们将配置 PDF 保存选项以避免嵌入核心字体。这是有助于减小 PDF 文件大小的关键步骤。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-此选项控制是否应将基本字体嵌入 PDF。
+环境`UseCoreFonts`到`true`确保核心字体（如 Arial 和 Times New Roman）不会嵌入到 PDF 中，从而显著减小文件大小。
 
-## 步骤 3：将文档转换为 PDF
+## 步骤 4：将文档保存为 PDF
 
-使用`Save`通过指定转换选项将 Word 文档转换为 PDF 的方法：
+最后，我们使用配置的保存选项将 Word 文档保存为 PDF。此步骤生成的 PDF 文件不包含核心字体。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-确保指定正确的路径来保存转换后的 PDF。
-
-### 使用 Aspose.Words for .NET 避免嵌入核心字体的示例源代码
-
-以下是使用该功能避免使用 Aspose.Words for .NET 嵌入核心字体的完整源代码：
-
-```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	//输出的 PDF 将不会嵌入核心字体，例如 Arial、Times New Roman 等。
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-通过遵循这些步骤，您可以轻松控制在使用 Aspose.Words for .NET 转换 Word 文档时是否应将基本字体嵌入 PDF 中。
-
+就这样！您的 PDF 文件现在已保存在指定的目录中，并且没有那些笨重的核心字体。
 
 ## 结论
 
-在本教程中，我们解释了如何使用 Aspose.Words for .NET 不嵌入基本字体来减小 PDF 文件的大小。此功能允许您控制在转换 Word 文档时是否应在 PDF 中嵌入基本字体。通过遵循概述的步骤，您可以轻松控制基本字体的嵌入或不嵌入，这有助于减小 PDF 文件大小并确保更好的兼容性以及文档在不同设备和平台上的一致外观。不要忘记考虑不嵌入基本字体的后果，并进行实验以确保文档按预期呈现。
+使用 Aspose.Words for .NET 可以轻松减小 PDF 文件大小。通过避免嵌入核心字体，您可以显著减小文件大小，从而更轻松地共享和存储文档。我希望本教程对您有所帮助，并让您清楚地了解该过程。请记住，小调整可以带来大不同！
 
-### 经常问的问题
+## 常见问题解答
 
-#### 问：在 PDF 文件中不嵌入基本字体的选项是什么？为什么这很重要？
-答：不嵌入基本字体到 PDF 文件的选项控制在转换 Word 文档时是否必须嵌入基本字体（例如 Arial、Times New Roman 等）。通过避免包含 PDF 阅读器系统上常用的字体，这对于减小 PDF 文件的大小非常重要。它还可以帮助确保 PDF 文档在不同设备和平台上具有更好的兼容性和一致的外观。
+### 为什么应该避免在 PDF 中嵌入核心字体？
+避免嵌入核心字体可减小文件大小，使其更易于共享和存储。
 
-#### 问：如何配置 Aspose.Words for .NET 以便不在 PDF 文件中嵌入基本字体？
-答：要配置 Aspose.Words for .NET 以不在 PDF 文件中嵌入核心字体，请按照以下步骤操作：
+### 即使没有嵌入核心字体，我还能正确查看 PDF 吗？
+是的，大多数系统上通常都提供 Arial 和 Times New Roman 等核心字体。
 
-通过替换来设置文档所在的目录路径`"YOUR DOCUMENTS DIRECTORY"`与您的文档目录的实际路径。
+### 如果我需要嵌入自定义字体怎么办？
+您可以自定义`PdfSaveOptions`根据需要嵌入特定字体。
 
-使用`Document`类和指定的文档路径。
+### Aspose.Words for .NET 可以免费使用吗？
+ Aspose.Words for .NET 需要许可证。您可以免费试用[这里](https://releases.aspose.com/).
 
-创建一个实例`PdfSaveOptions`类并设置`UseCoreFonts`财产`true`。这将避免在生成的 PDF 文件中嵌入基本字体。
-
-使用`Save`方法`Document`对象以 PDF 格式保存文档，指定之前配置的转换选项。
-
-#### 问：在 PDF 文件中不嵌入基本字体有什么好处？
-答：不在 PDF 文件中嵌入基础字体的好处是：
-
-PDF 文件大小减小：通过避免嵌入常用字体（如 Arial、Times New Roman 等），可以减小 PDF 文件大小，从而更易于存储、共享和传输文件。
-
-更好的兼容性：通过使用 PDF 阅读器系统上常用的基本字体，您可以确保在不同设备和平台上更好的兼容性和文档外观。
-
-#### 问：如果 PDF 文件中没有嵌入基础字体会有什么后果？
-答：PDF文件中不嵌入基础字体的后果如下：
-
-不同的外观：如果打开 PDF 的系统上没有基本字体，则将使用替代字体，这可能会导致外观与预期不同。
-
-可读性问题：使用的替代字体可能不如原始字体清晰易读，这可能会影响文档的可读性。
+### 在哪里可以找到有关 Aspose.Words for .NET 的更多文档？
+您可以找到详细的文档[这里](https://reference.aspose.com/words/net/).

@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- det här steget skapar vi en ny`Document` objekt och en tillhörande`DocumentBuilder` objekt. Dessa objekt kommer att tillåta oss att manipulera och generera vårt dokument.
+ I det här steget skapar vi en ny`Document` objekt och en tillhörande`DocumentBuilder` objekt. Dessa objekt kommer att tillåta oss att manipulera och generera vårt dokument.
 
 ## Steg 3: Skapa en lista med tre nivåer av indrag
 
@@ -100,7 +100,7 @@ Ställ in din utvecklingsmiljö genom att lägga till nödvändiga referenser oc
 
  Skapa en ny`Document` objekt och en tillhörande`DocumentBuilder` objekt.
 
- Använd`DocumentBuilder` för att skapa en lista med flera nivåer av indrag med hjälp av metoderna`ApplyNumberDefault()` för att använda standardformatet för listnummer,`Writeln()`och`Write()` för att lägga till objekt i listan, och`ListIndent()`för att öka indraget på varje nivå.
+ Använd`DocumentBuilder`för att skapa en lista med flera nivåer av indrag med hjälp av metoderna`ApplyNumberDefault()` för att använda standardformatet för listnummer,`Writeln()`och`Write()` för att lägga till objekt i listan, och`ListIndent()` för att öka indraget på varje nivå.
 
  Konfigurera sparalternativ genom att skapa en`TxtSaveOptions` objekt och ställa in egenskaperna`ListIndentation.Count` till antalet tabtecken per nivå och`ListIndentation.Character` till`'\t'` för att använda tabbtecken.
 
@@ -110,7 +110,7 @@ Ställ in din utvecklingsmiljö genom att lägga till nödvändiga referenser oc
  Ja, du kan anpassa antalet tabbtecken per nivå för listindrag genom att ändra värdet på`ListIndentation.Count` egendom i`TxtSaveOptions` klass. Du kan ange hur många tabbtecken du vill ha för varje indragsnivå.
 
 #### F: Vilka andra tecken kan jag använda för listindrag med Aspose.Words för .NET?
- Förutom tabbtecken kan du även använda andra tecken för listindrag med Aspose.Words för .NET. Du kan ställa in`ListIndentation.Character` egenskap till valfritt tecken, till exempel mellanslag (`' '`), för indragningslistor.
+Förutom tabbtecken kan du även använda andra tecken för listindrag med Aspose.Words för .NET. Du kan ställa in`ListIndentation.Character` egenskap till valfritt tecken, till exempel mellanslag (`' '`), för indragningslistor.
 
 #### F: Erbjuder Aspose.Words för .NET några andra funktioner för att hantera listor?
 Ja, Aspose.Words för .NET erbjuder många funktioner för att hantera listor i Word-dokument. Du kan skapa numrerade eller punktlistor, ställa in indragsnivåer, anpassa stilen på listor, lägga till listobjekt och mer.

@@ -18,7 +18,7 @@ Postępując zgodnie z tymi samouczkami, będziesz w stanie efektywnie manipulow
 | Tytuł | Opis |
 | --- | --- |
 | [Uzyskaj dostęp do zakładek w dokumencie programu Word](./access-bookmarks/) | Dowiedz się, jak uzyskać dostęp do zakładek w dokumentach programu Word i manipulować nimi za pomocą Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku. |
-| [Zaktualizuj dane zakładek w dokumencie programu Word](./update-bookmark-data/) | Bezproblemowo aktualizuj zawartość dokumentów programu Word za pomocą zakładek i programu Aspose.Words .NET. Ten przewodnik odblokowuje możliwości automatyzacji raportów, personalizowania szablonów i nie tylko. |
+| [Zaktualizuj dane zakładek w dokumencie programu Word](./update-bookmark-data/) | Bezproblemowo aktualizuj zawartość dokumentów programu Word za pomocą zakładek i aplikacji Aspose.Words .NET. Ten przewodnik odblokowuje możliwości automatyzacji raportów, personalizowania szablonów i nie tylko. |
 | [Dodaj do zakładek kolumny tabeli w dokumencie programu Word](./bookmark-table-columns/) | Dowiedz się, jak dodawać zakładki do kolumn tabeli w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z tego wszechstronnego samouczka krok po kroku. |
 | [Skopiuj tekst z zakładek do dokumentu programu Word](./copy-bookmarked-text/) | Bez wysiłku kopiuj tekst z zakładek pomiędzy dokumentami programu Word za pomocą Aspose.Words dla .NET. Dowiedz się, jak to zrobić, korzystając z tego przewodnika krok po kroku. |
 | [Dołącz zaznaczony tekst do dokumentu programu Word](./append-bookmarked-text/) | Dowiedz się, jak dodać tekst z zakładkami do dokumentu programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. Idealny dla programistów. |

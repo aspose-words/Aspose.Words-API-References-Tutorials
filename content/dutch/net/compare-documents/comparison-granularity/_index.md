@@ -19,7 +19,7 @@ Voordat u begint, moet u uw ontwikkelomgeving instellen om met Aspose.Words voor
 
 ## Stap 3: Voeg de vereiste assemblages toe
 
-Als u de functie Granulariteit vergelijken van Aspose.Words voor .NET wilt gebruiken, moet u de benodigde samenstellingen aan uw project toevoegen. Zorg ervoor dat u de juiste verwijzingen naar Aspose.Words in uw project hebt.
+Als u de functie Vergelijk granulariteit van Aspose.Words voor .NET wilt gebruiken, moet u de benodigde samenstellingen aan uw project toevoegen. Zorg ervoor dat u de juiste verwijzingen naar Aspose.Words in uw project hebt.
 
 ```csharp
 using Aspose.Words;

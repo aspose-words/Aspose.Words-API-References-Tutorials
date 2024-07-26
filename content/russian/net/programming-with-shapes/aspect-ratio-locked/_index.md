@@ -17,7 +17,7 @@ url: /ru/net/programming-with-shapes/aspect-ratio-locked/
 - Базовые знания C# и обработки документов Word.
 
 ## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
+ Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 3. Вставьте фигуру изображения
- Использовать`InsertImage` метод`DocumentBuilder`объект, чтобы вставить фигуру изображения в документ. Укажите путь к файлу изображения в качестве параметра.
+ Использовать`InsertImage` метод`DocumentBuilder` объект, чтобы вставить фигуру изображения в документ. Укажите путь к файлу изображения в качестве параметра.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

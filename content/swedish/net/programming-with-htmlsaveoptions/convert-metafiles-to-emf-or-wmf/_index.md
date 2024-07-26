@@ -15,7 +15,7 @@ Välkommen till ännu en djupdykning i Aspose.Words för .NET-världen. Idag tar
 
 Innan vi dyker in i koden, låt oss se till att vi har allt inställt. Här är vad du behöver:
 
-1. Aspose.Words för .NET Library: Se till att du har den senaste versionen. Om du inte har det kan du ladda ner det från[här](https://releases.aspose.com/words/net/).
+1.  Aspose.Words för .NET Library: Se till att du har den senaste versionen. Om du inte har det kan du ladda ner det från[här](https://releases.aspose.com/words/net/).
 2. .NET Framework: Se till att du har .NET Framework installerat på din dator.
 3. Utvecklingsmiljö: En IDE som Visual Studio kommer att göra ditt liv enklare.
 4. Grundläggande kunskaper i C#: Du behöver inte vara expert, men en grundläggande förståelse hjälper.

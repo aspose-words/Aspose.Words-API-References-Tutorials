@@ -16,4 +16,4 @@ url: /th/net/programming-with-rtfloadoptions/
  ## บทช่วยสอน
 | ชื่อ | คำอธิบาย |
 | --- | --- |
-| [รู้จักข้อความ Utf-8](./recognize-utf8-text/) | เรียนรู้วิธีจดจำอักขระ Utf-8 ในเอกสาร RTF ด้วย Aspose.Words สำหรับ .NET ตรวจสอบความสมบูรณ์ของข้อมูล |
+| [รู้จักข้อความ Utf-8](./recognize-utf8-text/) | เรียนรู้วิธีจดจำข้อความ UTF-8 ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำโดยละเอียดทีละขั้นตอนนี้ |

@@ -50,7 +50,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Шаг 3. Добавьте данные на диаграмму
+## Шаг 3. Добавьте данные в диаграмму
 
  Добавьте ряд данных на диаграмму, используя`Series` собственность`Chart` объект.
 

@@ -2,93 +2,112 @@
 title: نوع التحكم المفضل في مستند Word
 linktitle: نوع التحكم المفضل في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لتحديد نوع التحكم المفضل في مستند Word عند تحميل مستند HTML باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية إدراج حقل نموذج مربع التحرير والسرد في مستند Word باستخدام Aspose.Words لـ .NET. اتبع هذا الدليل التفصيلي خطوة بخطوة للتكامل السلس لمحتوى HTML.
 type: docs
 weight: 10
 url: /ar/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-توفر هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام ميزة نوع التحكم المفضل مع Aspose.Words لـ .NET. وسنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي، ستتمكن من فهم كيفية تحديد نوع التحكم المفضل عند تحميل مستند HTML.
+## مقدمة
 
-قبل البدء، تأكد من تثبيت وتكوين مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وتعليمات التثبيت على موقع Aspose.
+نحن نتعمق في برنامج تعليمي مثير حول كيفية العمل مع خيارات تحميل HTML في Aspose.Words لـ .NET، مع التركيز بشكل خاص على تعيين نوع التحكم المفضل عند إدراج حقل نموذج مربع التحرير والسرد في مستند Word. سيساعدك هذا الدليل التفصيلي خطوة بخطوة على فهم كيفية التعامل مع محتوى HTML وعرضه بشكل فعال داخل مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
 
-## الخطوة 1: تحديد كود HTML
+## المتطلبات الأساسية
 
- للبدء، تحتاج إلى تحديد كود HTML الذي تريد تحميله كمستند. في هذا المثال، قمنا بتحديد`html` متغير يحتوي على كود HTML الخاص بالمحدد مع الخيارات.
+قبل أن ننتقل إلى الكود، هناك بعض الأشياء التي يجب أن تكون لديك:
+
+1.  Aspose.Words for .NET: تأكد من تثبيت مكتبة Aspose.Words for .NET. يمكنك تنزيله من[موقع إلكتروني](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: يجب أن يكون لديك بيئة تطوير، مثل Visual Studio.
+3. المعرفة الأساسية بـ C#: الفهم الأساسي لبرمجة C# ضروري للمتابعة مع البرنامج التعليمي.
+4. محتوى HTML: المعرفة الأساسية بـ HTML مفيدة لأننا سنتعامل مع محتوى HTML في هذا المثال.
+
+## استيراد مساحات الأسماء
+
+أولاً، لنستورد مساحات الأسماء الضرورية للبدء:
 
 ```csharp
-const string html=@"
-<html>
-<select name='ComboBox' size='1'>
-<option value='val1'>item1</option>
-<option value='val2'></option>
-</select>
-</html>
+using System;
+using System.IO;
+using System.Text;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+الآن، دعونا نقسم المثال إلى خطوات متعددة لضمان الوضوح والفهم.
+
+## الخطوة 1: قم بإعداد محتوى HTML الخاص بك
+
+أولاً، نحتاج إلى تحديد محتوى HTML الذي نريد إدراجه في مستند Word. إليك مقتطف HTML الذي سنستخدمه:
+
+```csharp
+const string html = @"
+    <html>
+        <select name='ComboBox' size='1'>
+            <option value='val1'>item1</option>
+            <option value='val2'></option>                        
+        </select>
+    </html>
 ";
 ```
 
-## الخطوة 2: قم بتعيين خيارات تحميل HTML
+يحتوي HTML هذا على مربع تحرير وسرد بسيط يحتوي على خيارين. سنقوم بتحميل ملف HTML هذا في مستند Word ونحدد كيفية عرضه.
 
- بعد ذلك، نقوم بإنشاء`HtmlLoadOptions` الكائن وتعيين`PreferredControlType`الملكية ل`HtmlControlType.StructuredDocumentTag`. هذا يخبر Aspose.Words باستخدام StructuredDocumentTags لتمثيل HTML عند التحميل.
+## الخطوة 2: تحديد دليل المستندات
+
+بعد ذلك، حدد الدليل الذي سيتم حفظ مستند Word الخاص بك فيه. يساعد هذا في تنظيم ملفاتك والحفاظ على إدارة المسار نظيفة.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي الذي تريد حفظ مستند Word الخاص بك فيه.
+
+## الخطوة 3: تكوين خيارات تحميل HTML
+
+ هنا، نقوم بتكوين خيارات تحميل HTML، مع التركيز بشكل خاص على`PreferredControlType`ملكية. يحدد هذا كيفية عرض مربع التحرير والسرد في مستند Word.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## الخطوة 3: تحميل وحفظ المستند
+ عن طريق الإعداد`PreferredControlType` ل`HtmlControlType.StructuredDocumentTag`، نضمن أن يتم عرض مربع التحرير والسرد كعلامة مستند منظمة (SDT) في مستند Word.
 
- نحن نستخدم ال`Document` فئة لتحميل كود HTML من تدفق الذاكرة مع خيارات التحميل المحددة مسبقًا. ثم نقوم بحفظ المستند في الدليل المحدد بالملحق`.docx`تنسيق الملف.
+## الخطوة 4: قم بتحميل محتوى HTML في المستند
+
+باستخدام خيارات التحميل التي تم تكوينها، نقوم بتحميل محتوى HTML في مستند Word جديد.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
+```
+
+هنا، نقوم بتحويل سلسلة HTML إلى مصفوفة بايت ونحملها في المستند باستخدام تدفق الذاكرة. يضمن ذلك تفسير محتوى HTML وعرضه بشكل صحيح بواسطة Aspose.Words.
+
+## الخطوة 5: احفظ المستند
+
+وأخيرًا، احفظ المستند في الدليل المحدد بتنسيق DOCX.
+
+```csharp
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### مثال على التعليمات البرمجية المصدر لنوع التحكم المفضل باستخدام Aspose.Words لـ .NET
-
-```csharp
-	
-	const string html = @"
-		<html>
-			<select name='ComboBox' size='1'>
-				<option value='val1'>item1</option>
-				<option value='val2'></option>                        
-			</select>
-		</html>
-	";
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
-
-	Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
-
-	doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
-
-```
-
-هذا كل شئ ! لقد نجحت في تحديد نوع التحكم المفضل عند تحميل مستند HTML باستخدام Aspose.Words لـ .NET.
+يؤدي هذا إلى حفظ مستند Word باستخدام عنصر تحكم مربع التحرير والسرد المعروض في الموقع المحدد.
 
 ## خاتمة
 
- باتباع هذا الدليل خطوة بخطوة، تكون قد تعلمت كيفية استخدام ميزة "نوع التحكم المفضل" في Aspose.Words لـ .NET لتحديد نوع التحكم المطلوب عند تحميل مستند HTML. وضع`PreferredControlType`الملكية ل`HtmlControlType.StructuredDocumentTag` يسمح لـ Aspose.Words باستخدام StructuredDocumentTags (SDT) لتمثيل محتوى HTML ومعالجته بشكل أفضل. يمكنك استكشاف أنواع التحكم الأخرى أيضًا لتناسب متطلباتك المحددة. يساعد استخدام هذه الميزة على ضمان معالجة دقيقة وفعالة لمستندات HTML في تطبيق C# الخاص بك باستخدام Aspose.Words.
+وهناك لديك! لقد نجحنا في إدراج حقل نموذج مربع التحرير والسرد في مستند Word باستخدام Aspose.Words لـ .NET من خلال الاستفادة من خيارات تحميل HTML. من المفترض أن يساعدك هذا الدليل المفصّل خطوة بخطوة على فهم العملية وتطبيقها على مشاريعك. سواء كنت تقوم بأتمتة إنشاء المستندات أو التعامل مع محتوى HTML، يوفر Aspose.Words for .NET أدوات قوية لتحقيق أهدافك.
 
-### الأسئلة الشائعة حول نوع التحكم المفضل في مستند Word
+## الأسئلة الشائعة
 
-#### س: ما هي ميزة "نوع التحكم المفضل" في Aspose.Words لـ .NET؟
+### ما هو Aspose.Words لـ .NET؟
+Aspose.Words for .NET هي مكتبة قوية لمعالجة المستندات تتيح للمطورين إنشاء مستندات Word وتحريرها وتحويلها وعرضها برمجيًا.
 
-ج: تتيح لك ميزة "نوع التحكم المفضل" تحديد نوع التحكم المفضل لتمثيل عناصر HTML عند تحميل مستند HTML. فهو يساعد في اختيار نوع التحكم المناسب لتمثيل ومعالجة محتوى HTML بشكل أفضل.
+### هل يمكنني استخدام أنواع أخرى من عناصر تحكم HTML مع Aspose.Words لـ .NET؟
+نعم، يدعم Aspose.Words for .NET أنواعًا مختلفة من عناصر تحكم HTML. يمكنك تخصيص كيفية عرض عناصر التحكم المختلفة في مستند Word.
 
-#### س: كيف أقوم بتعيين نوع التحكم المفضل عند تحميل مستند HTML؟
+### كيف يمكنني التعامل مع محتوى HTML المعقد في Aspose.Words لـ .NET؟
+ يوفر Aspose.Words for .NET دعمًا شاملاً لـ HTML، بما في ذلك العناصر المعقدة. تأكد من تكوين`HtmlLoadOptions`بشكل مناسب للتعامل مع محتوى HTML المحدد الخاص بك.
 
- ج: لتعيين نوع التحكم المفضل، تحتاج إلى إنشاء`HtmlLoadOptions` الكائن وتعيينه`PreferredControlType` الملكية إلى المطلوب`HtmlControlType` . في المثال المقدم،`HtmlControlType.StructuredDocumentTag` يستخدم.
+### أين يمكنني العثور على المزيد من الأمثلة والوثائق؟
+ يمكنك العثور على وثائق وأمثلة مفصلة على[Aspose.Words لصفحة وثائق .NET](https://reference.aspose.com/words/net/).
 
-#### س: ما أهمية استخدام StructuredDocumentTags (SDT) كنوع التحكم المفضل؟
-
-ج: StructuredDocumentTags (SDT) عبارة عن عناصر مستندة إلى XML يمكن استخدامها لتمثيل المحتوى المعقد وعناصر التحكم في مستند Word. يمكن أن يؤدي استخدام SDTs كنوع التحكم المفضل إلى توفير توافق وتمثيل أفضل لمحتوى HTML.
-
-#### س: كيف يمكنني التأكد من أن Aspose.Words يستخدم نوع التحكم المفضل عند تحميل مستند HTML؟
-
- ج: من خلال تحديد`PreferredControlType`الملكية ل`HtmlControlType.StructuredDocumentTag`كما هو موضح في مثال التعليمات البرمجية المصدر، سوف يستخدم Aspose.Words SDTs لتمثيل عناصر HTML عند تحميل المستند.
-
-#### س: هل يمكنني استخدام أنواع التحكم الأخرى كخيار مفضل؟
-
- ج: نعم، فيما عدا ذلك`HtmlControlType.StructuredDocumentTag` يدعم Aspose.Words for .NET أنواع التحكم الأخرى مثل`HtmlControlType.ContentControl`و`HtmlControlType.CustomXmlMarkup`.
+### هل تتوفر نسخة تجريبية مجانية من Aspose.Words لـ .NET؟
+ نعم، يمكنك تنزيل نسخة تجريبية مجانية من[موقع أسبوز](https://releases.aspose.com/).

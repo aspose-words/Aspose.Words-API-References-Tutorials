@@ -21,7 +21,7 @@ Pour commencer à construire la table, nous devons créer un nouveau document et
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Créer le document et initialiser le générateur de documents
+//Créer le document et initialiser le générateur de documents
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Appelez la méthode suivante pour terminer la première ligne et démarrer une nouvelle ligne
+// Appelez la méthode suivante pour terminer la première ligne et démarrer une nouvelle ligne
 builder. EndRow();
 
 // Construction de la première cellule de la deuxième rangée
@@ -99,7 +99,7 @@ Assurez-vous de spécifier le chemin et le nom de fichier corrects pour le docum
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Signalez que nous avons fini de construire la table.
+	// Signalez que nous avons fini de construire la table.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

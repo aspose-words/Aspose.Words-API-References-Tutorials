@@ -103,7 +103,7 @@ Este trecho de código carrega o documento "Índice.docx" localizado no diretór
 
 #### P: Como posso alterar as guias usadas no índice usando Aspose.Words for .NET?
 
- R: Depois que o documento for carregado, você poderá percorrer cada parágrafo do documento e verificar se ele está formatado usando os estilos de resultado do Índice (TOC). Se um parágrafo estiver formatado como estilo de índice, você poderá modificar as guias usadas para alinhar os números das páginas. No Aspose.Words for .NET, você pode acessar o`ParagraphFormat` propriedade de cada parágrafo para recuperar e modificar as paradas de tabulação. Aqui está um exemplo:
+R: Depois que o documento for carregado, você poderá percorrer cada parágrafo do documento e verificar se ele está formatado usando os estilos de resultado do Índice (TOC). Se um parágrafo estiver formatado como estilo de índice, você poderá modificar as guias usadas para alinhar os números das páginas. No Aspose.Words for .NET, você pode acessar o`ParagraphFormat` propriedade de cada parágrafo para recuperar e modificar as paradas de tabulação. Aqui está um exemplo:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))

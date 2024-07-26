@@ -31,7 +31,7 @@ Po utworzeniu dokumentu możesz uzyskać dostęp do stylów dokumentu i zmienić
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-W tym przykładzie używamy właściwości Styles klasy Document, aby uzyskać dostęp do stylów dokumentu. Następnie używamy identyfikatora stylu StyleIdentifier.Toc1, aby uzyskać dostęp do stylu używanego dla pierwszego poziomu spisu treści. Na koniec modyfikujemy właściwość Font.Bold stylu, aby był pogrubiony.
+tym przykładzie używamy właściwości Styles klasy Document, aby uzyskać dostęp do stylów dokumentu. Następnie używamy identyfikatora stylu StyleIdentifier.Toc1, aby uzyskać dostęp do stylu używanego dla pierwszego poziomu spisu treści. Na koniec modyfikujemy właściwość Font.Bold stylu, aby był pogrubiony.
 
 ## Zapisz zmodyfikowany dokument
 
@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Wniosek
 
-W tym przewodniku wyjaśniliśmy, jak używać Aspose.Words dla .NET do zmiany stylu poziomu spisu treści dokumentu Word przy użyciu dostarczonego kodu źródłowego C#. Wykonując podane kroki, możesz łatwo dostosować styl spisu treści w dokumentach programu Word w aplikacji C#. Aspose.Words oferuje ogromną elastyczność i możliwości pracy ze stylami i formatowaniem dokumentów, umożliwiając tworzenie atrakcyjnych i profesjonalnych dokumentów Word.
+tym przewodniku wyjaśniliśmy, jak używać Aspose.Words dla .NET do zmiany stylu poziomu spisu treści dokumentu Word przy użyciu dostarczonego kodu źródłowego C#. Wykonując podane kroki, możesz łatwo dostosować styl spisu treści w dokumentach programu Word w aplikacji C#. Aspose.Words oferuje ogromną elastyczność i możliwości pracy ze stylami i formatowaniem dokumentów, umożliwiając tworzenie atrakcyjnych i profesjonalnych dokumentów Word.
 
 ### Często zadawane pytania dotyczące zmiany stylu toc w dokumencie programu Word
 
@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### P: Czy mogę zmienić styl wielu poziomów spisu treści za pomocą Aspose.Words dla .NET?
 
- Odp.: Tak, możesz zmienić styl wielu poziomów spisu treści za pomocą Aspose.Words dla .NET. Aby zmodyfikować styl określonego poziomu, możesz uzyskać dostęp do odpowiedniego stylu za pomocą`Styles`właściwości i dokonaj żądanych zmian indywidualnie na każdym poziomie.
+Odp.: Tak, możesz zmienić styl wielu poziomów spisu treści za pomocą Aspose.Words dla .NET. Aby zmodyfikować styl określonego poziomu, możesz uzyskać dostęp do odpowiedniego stylu za pomocą`Styles` właściwości i dokonaj żądanych zmian indywidualnie na każdym poziomie.
 
 #### P: Jak zapisać zmodyfikowany dokument po zmianie stylu spisu treści za pomocą Aspose.Words dla .NET?
 
@@ -117,7 +117,7 @@ Odp.: Tak, oprócz zmiany stylu, możesz zastosować różne zmiany formatowania
 
 #### P: Czy mogę zmienić styl spisu treści w istniejącym dokumencie programu Word przy użyciu Aspose.Words dla .NET?
 
- O: Tak, możesz zmienić styl spisu treści w istniejącym dokumencie programu Word przy użyciu Aspose.Words dla .NET. Po prostu załaduj dokument za pomocą`Document` class, zmodyfikuj właściwości stylu za pomocą metody`Styles` i zapisz dokument, aby zastosować zmiany.
+O: Tak, możesz zmienić styl spisu treści w istniejącym dokumencie programu Word przy użyciu Aspose.Words dla .NET. Po prostu załaduj dokument za pomocą`Document` class, zmodyfikuj właściwości stylu za pomocą metody`Styles` i zapisz dokument, aby zastosować zmiany.
 
 #### P: Czy Aspose.Words dla .NET obsługuje zmianę innych stylów i formatowanie w dokumentach Word?
 

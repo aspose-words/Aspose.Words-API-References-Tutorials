@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 Než provedeme úklid, podívejme se, kolik stylů je aktuálně v dokumentu. To nám dává základní linii, se kterou lze po vyčištění porovnat.
 
-1.  Přístup ke kolekci stylů: Použijte`Styles` vlastnictvím`Document` třída.
+1.  Přístup ke kolekci stylů: Použijte`Styles` majetek z`Document` třída.
 2. Vytiskněte počet stylů: Použít`Console.WriteLine` pro zobrazení počtu stylů.
 
 ```csharp

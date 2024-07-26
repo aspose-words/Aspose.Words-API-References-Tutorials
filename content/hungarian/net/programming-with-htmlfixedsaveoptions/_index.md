@@ -12,5 +12,5 @@ Az Aspose.Words for .NET oktatóanyagok célja, hogy segítsenek elsajátítani 
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Használja a célgépről származó betűtípust](./use-font-from-target-machine/) | Ismerje meg, hogyan alakíthat át Word-dokumentumot rögzített HTML-formátumba a célgép betűtípusaival az Aspose.Words for .NET segítségével. |
-| [Írja be az összes CSS-szabályt egyetlen fájlba](./write-all-css-rules-in-single-file/) | Tanulja meg, hogyan alakíthat át Word-dokumentumot rögzített HTML-vé az összes CSS-szabály egyetlen fájlba írásával az Aspose.Words for .NET segítségével. |
+| [Használja a célgépről származó betűtípust](./use-font-from-target-machine/) | Az Aspose.Words for .NET segítségével megtudhatja, hogyan használhatja a célgép betűtípusait Word-dokumentumaiban. Kövesse lépésenkénti útmutatónkat a zökkenőmentes betűtípus-integráció érdekében. |
+| [Írja be az összes CSS-szabályt egyetlen fájlba](./write-all-css-rules-in-single-file/) | Tanulja meg, hogyan konvertálhat Word dokumentumokat HTML formátumba az Aspose.Words for .NET használatával, az összes CSS-szabállyal egyetlen fájlban a tisztább kód és a könnyebb karbantartás érdekében. |

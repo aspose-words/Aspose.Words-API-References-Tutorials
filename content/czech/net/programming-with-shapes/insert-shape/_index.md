@@ -17,7 +17,7 @@ Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 - Základní znalost C# a Word Processing s dokumenty Word.
 
 ## Krok 1: Nastavte adresář dokumentů
- Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou k adresáři, kam chcete dokument uložit.
+ Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři, kam chcete dokument uložit.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Vložte tvary
- Použijte`InsertShape` metoda`DocumentBuilder`objekt pro vložení tvarů do dokumentu. Zadejte typ tvaru, relativní vodorovné a svislé polohy, rozměry stránky, velikost a typ obtékání. V případě potřeby můžete také nastavit úhel otočení tvarů.
+ Použijte`InsertShape` metoda`DocumentBuilder` objekt pro vložení tvarů do dokumentu. Zadejte typ tvaru, relativní vodorovné a svislé polohy, rozměry stránky, velikost a typ obtékání. V případě potřeby můžete také nastavit úhel otočení tvarů.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

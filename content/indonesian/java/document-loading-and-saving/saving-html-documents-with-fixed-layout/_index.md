@@ -31,7 +31,7 @@ Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 
 ## Langkah 2: Konfigurasikan Opsi Penyimpanan Tetap HTML
 
- Untuk menyimpan dokumen dengan tata letak tetap, kita perlu mengkonfigurasi`HtmlFixedSaveOptions` kelas. Kami akan mengaturnya`useTargetMachineFonts`properti ke`true` untuk memastikan bahwa font mesin target digunakan dalam output HTML:
+ Untuk menyimpan dokumen dengan tata letak tetap, kita perlu mengkonfigurasi`HtmlFixedSaveOptions` kelas. Kami akan mengaturnya`useTargetMachineFonts`properti ke`true` untuk memastikan bahwa font mesin target digunakan dalam keluaran HTML:
 
 ```java
 HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions();

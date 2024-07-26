@@ -64,7 +64,7 @@ Ez egy példa a forráskódra a honosítás mezőszintű meghatározásához egy
 
 #### K: Hogyan adhatom meg a mezőszintű területi beállítást az Aspose.Words for .NET-ben?
 
- V: A területi beállítás megadásához mezőszinten az Aspose.Words for .NET-ben használja a`FieldOptions` osztály és annak`FieldLocale` tulajdonságot a kívánt terület beállításához. Például használhatja`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` a francia (Franciaország) területi beállítás megadásához.
+ V: A területi beállítás megadásához mezőszinten az Aspose.Words for .NET-ben használja a`FieldOptions` osztály és annak`FieldLocale` tulajdonságot a kívánt terület beállításához. Például használhatja`FieldOptions.FieldLocale = new CultureInfo("fr-FR")` a francia (Franciaország) terület megadásához.
 
 #### K: Megadható-e más területi beállítás az Aspose.Words for .NET minden mezőjéhez?
 

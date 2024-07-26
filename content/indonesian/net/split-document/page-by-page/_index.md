@@ -15,7 +15,7 @@ Dalam tutorial ini, kami akan memandu Anda tentang cara membagi dokumen Word men
 Untuk memulai, tentukan direktori untuk dokumen Anda dan muat dokumen ke dalam objek Dokumen. Begini caranya:
 
 ```csharp
-//Jalur ke direktori dokumen.
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
@@ -82,4 +82,4 @@ Sangat! Aspose.Words untuk .NET memungkinkan Anda membagi dokumen berdasarkan re
 
 #### Apakah mungkin untuk menggabungkan kembali dokumen yang terpisah menjadi satu dokumen?
 
-Ya, Anda dapat menggabungkan kembali dokumen yang terpisah menjadi satu dokumen menggunakan fungsi penggabungan yang disediakan oleh Aspose.Words untuk .NET. Dengan menggabungkan dokumen-dokumen terpisah, Anda dapat membuat ulang dokumen asli atau membuat dokumen baru dengan struktur berbeda, sesuai kebutuhan.
+Ya, Anda dapat menggabungkan kembali dokumen yang terpisah menjadi satu dokumen menggunakan fungsionalitas penggabungan yang disediakan oleh Aspose.Words untuk .NET. Dengan menggabungkan dokumen-dokumen terpisah, Anda dapat membuat ulang dokumen asli atau membuat dokumen baru dengan struktur berbeda, sesuai kebutuhan.

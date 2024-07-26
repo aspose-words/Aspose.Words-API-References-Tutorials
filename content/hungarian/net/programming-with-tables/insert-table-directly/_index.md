@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Ez a kód inicializál egy új Word-dokumentumot. Cserélned kell`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+ Ez a kód inicializál egy új Word-dokumentumot. Cserélned kell`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
 
 ## 2. lépés: A táblázatobjektum létrehozása
 
@@ -71,7 +71,7 @@ A táblázat sorokból és cellákból áll. Adjuk hozzá ezeket az elemeket lé
 // Itt hívhatnánk az EnsureMinimum-ot, hogy létrehozza számunkra a sorokat és cellákat. Ezt a módszert alkalmazzák
 // hogy a megadott csomópont érvényes legyen. Ebben az esetben egy érvényes táblázatnak legalább egy sorral és egy cellával kell rendelkeznie.
 // Ehelyett mi magunk készítjük el a sort és a táblázatot.
-//Ez lenne a legjobb módja ennek, ha egy algoritmuson belül hoznánk létre egy táblázatot.
+// Ez lenne a legjobb módja ennek, ha egy algoritmuson belül hoznánk létre egy táblázatot.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

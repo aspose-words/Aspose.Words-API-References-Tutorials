@@ -199,7 +199,7 @@ Aspose.Words para Java admite varios formatos de documentos, incluidos DOC, DOCX
 
  Puedes usar el`FileFormatUtil.detectFileFormat()` método para detectar documentos cifrados, como se demuestra en esta guía.
 
-### ¿Existe alguna limitación al trabajar con formatos de documentos antiguos?
+### ¿Existe alguna limitación al trabajar con formatos de documentos más antiguos?
 
 Los formatos de documentos más antiguos, como MS Word 6 o Word 95, pueden tener limitaciones en términos de funciones y compatibilidad con aplicaciones modernas. Considere actualizar o convertir estos documentos cuando sea necesario.
 

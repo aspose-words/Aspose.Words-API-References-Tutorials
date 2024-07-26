@@ -23,7 +23,7 @@ url: /ja/net/working-with-fields/
 | [DOM を使用してマージ フィールドを挿入する](./insert-merge-field-using-dom/) | Aspose.Words for .NET を使用して、Word 文書にカスタム フィールド マージ フィールドを挿入する方法を学習します。 |
 | [DOM を使用して差し込み印刷アドレスブロックフィールドを挿入する](./insert-mail-merge-address-block-field-using-dom/) | Aspose.Words for .NET を使用して、Word 文書に差し込み印刷アドレス ブロック フィールドを挿入する方法を学習します。 |
 | [ドキュメント ビルダーを使用せずに FieldIncludeText を挿入する](./insert-field-include-text-without-document-builder/) | Aspose.Words for .NET を使用して Word 文書に FieldIncludeText フィールドを挿入する方法を学習します。 |
-| [フィールドを挿入なし](./insert-field-none/) | AUCUN を使用してドキュメントを作成し、Word や Aspose.Words を使用して .NET を実行する方法を学びます。 |
+| [フィールドを挿入なし](./insert-field-none/) | Word や Aspose.NET を使用して AUCUN の文書を作成する方法を学びます。 |
 | [フィールドを挿入](./insert-field/) | Aspose.Words for .NET を使用して Word 文書にフィールドを挿入する方法を学びます。動的フィールドを使用して文書をカスタマイズします。 |
 | [フィールドビルダーを使用してフィールドを挿入する](./insert-field-using-field-builder/) | Aspose.Words for .NET を使用して Word 文書にカスタム フィールドを挿入する方法を学習します。 |
 | [著者フィールドを挿入](./insert-author-field/) | Aspose.Words for .NET を使用して Word 文書に AUTHOR フィールドを挿入する方法を学びます。作成者の名前を指定して、文書をカスタマイズします。 |

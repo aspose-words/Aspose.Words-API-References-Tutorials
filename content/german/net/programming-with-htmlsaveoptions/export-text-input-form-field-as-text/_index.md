@@ -2,86 +2,130 @@
 title: Texteingabe-Formularfeld als Text exportieren
 linktitle: Texteingabe-Formularfeld als Text exportieren
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Exportieren von Text-Eingabeformularfeldern als Klartext mit Aspose.Words für .NET.
+description: Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Text-Eingabeformularfelder als einfachen Text exportieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-text/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch den C#-Quellcode, um Texteingabeformularfelder mit Aspose.Words für .NET als einfachen Text zu exportieren. Mit dieser Funktion können Sie Texteingabeformularfelder als lesbaren Text exportieren, anstatt sie als HTML-Eingabeelemente zu exportieren.
+Sie tauchen also in die Welt von Aspose.Words für .NET ein? Tolle Wahl! Wenn Sie lernen möchten, wie Sie ein Texteingabeformularfeld als Text exportieren, sind Sie hier richtig. Egal, ob Sie gerade erst anfangen oder Ihre Kenntnisse auffrischen möchten, dieser Leitfaden führt Sie durch alles, was Sie wissen müssen. Lassen Sie uns anfangen, einverstanden?
 
-## Schritt 1: Projekt-Setup
+## Voraussetzungen
 
-Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Bibliothek Aspose.Words für .NET verwiesen wird.
+Bevor wir uns ins Detail stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen, um reibungslos mitmachen zu können:
 
-## Schritt 2: Dokument einlegen
+-  Aspose.Words für .NET: Laden Sie die neueste Version herunter und installieren Sie sie von[Hier](https://releases.aspose.com/words/net/).
+- IDE: Visual Studio oder jede C#-Entwicklungsumgebung.
+- Grundlegende C#-Kenntnisse: Verständnis der grundlegenden C#-Syntax und der Konzepte der objektorientierten Programmierung.
+- Dokument: Ein Beispiel-Word-Dokument (`Rendering.docx`) mit Text-Eingabeformularfeldern.
 
-In diesem Schritt laden wir das zu exportierende Dokument. Verwenden Sie den folgenden Code, um das Dokument aus einem angegebenen Verzeichnis zu laden:
+## Namespaces importieren
+
+Als Erstes müssen Sie die erforderlichen Namespaces importieren. Diese sind sozusagen die Bausteine, die dafür sorgen, dass alles reibungslos funktioniert.
+
+```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Gut, jetzt, da unsere Namespaces bereit sind, können wir loslegen!
+
+## Schritt 1: Einrichten des Projekts
+
+Bevor wir uns mit dem Code befassen, stellen wir sicher, dass unser Projekt richtig eingerichtet ist.
+
+## Erstellen des Projekts
+
+1. Öffnen Sie Visual Studio: Öffnen Sie zunächst Visual Studio oder Ihre bevorzugte C#-Entwicklungsumgebung.
+2.  Neues Projekt erstellen: Navigieren Sie zu`File > New > Project` . Wählen`Console App (.NET Core)` oder jeden anderen relevanten Projekttyp.
+3.  Benennen Sie Ihr Projekt: Geben Sie Ihrem Projekt einen aussagekräftigen Namen, etwa`AsposeWordsExportExample`.
+
+## Aspose.Words hinzufügen
+
+1.  NuGet-Pakete verwalten: Klicken Sie mit der rechten Maustaste auf Ihr Projekt im Solution Explorer und wählen Sie`Manage NuGet Packages`.
+2.  Suche nach Aspose.Words: Suchen Sie im NuGet Package Manager nach`Aspose.Words`.
+3.  Installieren Sie Aspose.Words: Klicken Sie auf`Install` um die Aspose.Words-Bibliothek zu Ihrem Projekt hinzuzufügen.
+
+## Schritt 2: Laden Sie das Word-Dokument
+
+Nachdem unser Projekt nun eingerichtet ist, laden wir das Word-Dokument, das die Text-Eingabeformularfelder enthält.
+
+1. Geben Sie das Dokumentverzeichnis an: Definieren Sie den Pfad zum Verzeichnis, in dem Ihr Dokument gespeichert ist.
+2.  Laden Sie das Dokument: Verwenden Sie die`Document` Klasse, um Ihr Word-Dokument zu laden.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Dieser Code erstellt eine Instanz von`Document` durch Laden des Dokuments aus dem angegebenen Verzeichnis.
+## Schritt 3: Vorbereiten des Exportverzeichnisses
 
-## Schritt 3: Konfigurieren der HTML-Sicherungsoptionen
+Bevor wir exportieren, stellen wir sicher, dass unser Exportverzeichnis bereit ist. Hier werden unsere HTML-Datei und Bilder gespeichert.
 
-Nun konfigurieren wir die HTML-Speicheroptionen, um Texteingabeformularfelder als einfachen Text zu exportieren. Verwenden Sie den folgenden Code:
+1. Definieren Sie das Exportverzeichnis: Geben Sie den Pfad an, in dem die exportierten Dateien gespeichert werden.
+2. Überprüfen und bereinigen Sie das Verzeichnis: Stellen Sie sicher, dass das Verzeichnis vorhanden und leer ist.
 
 ```csharp
-string imagesDir = Path. Combine(ArtifactsDir, "Images");
+string imagesDir = Path.Combine(dataDir, "Images");
 
-// Der angegebene Ordner muss vorhanden und leer sein.
 if (Directory.Exists(imagesDir))
-Directory. Delete(imagesDir, true);
+    Directory.Delete(imagesDir, true);
 
 Directory.CreateDirectory(imagesDir);
+```
 
+## Schritt 4: Speicheroptionen konfigurieren
+
+Und hier geschieht die Magie. Wir müssen unsere Speicheroptionen so einrichten, dass das Texteingabeformularfeld als einfacher Text exportiert wird.
+
+1.  Speicheroptionen erstellen: Initialisieren Sie eine neue`HtmlSaveOptions` Objekt.
+2.  Textexportoption festlegen: Konfigurieren Sie die`ExportTextInputFormFieldAsText`Eigentum an`true`.
+3. Bilderordner festlegen: Definieren Sie den Ordner, in dem Bilder gespeichert werden.
+
+```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 {
-ExportTextInputFormFieldAsText = true,
-ImagesFolder = imagesDir
+    ExportTextInputFormFieldAsText = true,
+    ImagesFolder = imagesDir
 };
 ```
 
- Dieser Code erstellt eine Instanz von`HtmlSaveOptions` und setzt den`ExportTextInputFormFieldAsText` Möglichkeit,`true` um Texteingabeformularfelder als einfachen Text zu exportieren. Darüber hinaus gibt es den Ordner an, in dem die extrahierten Bilder gespeichert werden.
+## Schritt 5: Speichern Sie das Dokument als HTML
 
-## Schritt 4: Konvertieren und Speichern des Dokuments im HTML-Format
+Abschließend speichern wir das Word-Dokument mit den von uns konfigurierten Speicheroptionen als HTML-Datei.
 
-Zum Schluss konvertieren wir das Dokument in HTML, indem wir die zuvor konfigurierten HTML-Speicheroptionen verwenden. Verwenden Sie den folgenden Code:
-
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
-```
-
-Dieser Code konvertiert das Dokument in HTML, indem er Texteingabeformularfelder als einfachen Text exportiert und die exportierte HTML-Datei im angegebenen Verzeichnis speichert.
-
-### Beispielquellcode zum Exportieren von Texteingabeformularfeldern als Text mit Aspose.Words für .NET
-
+1. Definieren Sie den Ausgabepfad: Geben Sie den Pfad an, in dem die HTML-Datei gespeichert wird.
+2.  Speichern Sie das Dokument: Verwenden Sie die`Save` Methode der`Document`Klasse zum Exportieren des Dokuments.
 
 ```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	string imagesDir = Path.Combine(ArtifactsDir, "Images");
-
-	// Der angegebene Ordner muss vorhanden sein und sollte leer sein.
-	if (Directory.Exists(imagesDir))
-		Directory.Delete(imagesDir, true);
-
-	Directory.CreateDirectory(imagesDir);
-
-	// Legen Sie eine Option fest, um Formularfelder als einfachen Text und nicht als HTML-Eingabeelemente zu exportieren.
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
-	{
-		ExportTextInputFormFieldAsText = true, ImagesFolder = imagesDir
-	};
-
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
-
+doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 ```
 
- Achten Sie darauf, den korrekten Pfad zum Dokumentenverzeichnis im`dataDir` Variable.
+## Abschluss
+
+Und da haben Sie es! Sie haben erfolgreich ein Texteingabeformularfeld mit Aspose.Words für .NET als reinen Text exportiert. Diese Anleitung sollte Ihnen eine klare, schrittweise Vorgehensweise zur Erledigung dieser Aufgabe gegeben haben. Denken Sie daran, Übung macht den Meister. Experimentieren Sie also weiter mit verschiedenen Optionen und Einstellungen, um zu sehen, was Sie sonst noch mit Aspose.Words tun können.
+
+## Häufig gestellte Fragen
+
+### Kann ich mit derselben Methode andere Arten von Formularfeldern exportieren?
+
+ Ja, Sie können andere Formularfeldtypen exportieren, indem Sie verschiedene Eigenschaften des`HtmlSaveOptions` Klasse.
+
+### Was ist, wenn mein Dokument Bilder enthält?
+
+ Die Bilder werden im angegebenen Bilderordner gespeichert. Stellen Sie sicher, dass Sie die`ImagesFolder` Eigentum in der`HtmlSaveOptions`.
+
+### Benötige ich eine Lizenz für Aspose.Words?
+
+ Ja, Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/) oder eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
+
+### Kann ich das exportierte HTML anpassen?
+
+ Absolut! Aspose.Words bietet verschiedene Optionen zur Anpassung der HTML-Ausgabe. Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+
+### Ist Aspose.Words mit .NET Core kompatibel?
+
+Ja, Aspose.Words ist mit .NET Core, .NET Framework und anderen .NET-Plattformen kompatibel.

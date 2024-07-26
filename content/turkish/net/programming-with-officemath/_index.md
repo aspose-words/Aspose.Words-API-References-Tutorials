@@ -12,4 +12,4 @@ Aspose.Words for .NET OfficeMath ile Kelime İşleme eğitimleri, Word belgeleri
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Matematik Denklemleri](./math-equations/) | Aspose.Words for .NET'i kullanarak Word belgelerinize matematik denklemlerini nasıl ekleyeceğinizi öğrenin. |
+| [Matematik Denklemleri](./math-equations/) | Aspose.Words for .NET kullanarak Word belgelerinde matematiksel denklemleri nasıl yapılandıracağınızı öğrenin. Örnekler, SSS'ler ve daha fazlasını içeren adım adım kılavuz. |

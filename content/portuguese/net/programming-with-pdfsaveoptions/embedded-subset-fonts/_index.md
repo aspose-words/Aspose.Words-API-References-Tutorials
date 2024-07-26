@@ -2,94 +2,84 @@
 title: Incorporar fontes de subconjunto em documento PDF
 linktitle: Incorporar fontes de subconjunto em documento PDF
 second_title: API de processamento de documentos Aspose.Words
-description: Guia passo a passo para incorporar subconjuntos de fontes em um documento PDF usando Aspose.Words for .NET.
+description: Reduza o tamanho do arquivo PDF incorporando apenas os subconjuntos de fontes necessários usando Aspose.Words for .NET. Siga nosso guia passo a passo para otimizar seus PDFs com eficiência.
 type: docs
 weight: 10
 url: /pt/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
+## Introdução
 
-Este artigo fornece um guia passo a passo sobre como usar o recurso de incorporação de subconjunto de fontes com Aspose.Words for .NET. Explicaremos cada parte do código em detalhes. Ao final deste tutorial, você poderá entender como incorporar subconjuntos de fontes em um documento e gerar um PDF contendo apenas os glifos utilizados no documento.
+Você já percebeu como alguns arquivos PDF são muito maiores que outros, mesmo quando contêm conteúdo semelhante? O culpado geralmente está nas fontes. Incorporar fontes em um PDF garante que ele tenha a mesma aparência em qualquer dispositivo, mas também pode aumentar o tamanho do arquivo. Felizmente, Aspose.Words for .NET oferece um recurso útil para incorporar apenas os subconjuntos de fontes necessários, mantendo seus PDFs simples e eficientes. Este tutorial irá guiá-lo através do processo, passo a passo.
 
-Antes de começar, certifique-se de ter instalado e configurado a biblioteca Aspose.Words for .NET em seu projeto. Você pode encontrar a biblioteca e as instruções de instalação no site do Aspose.
+## Pré-requisitos
 
-## Passo 1: Defina o diretório do documento
+Antes de começarmos, certifique-se de ter o seguinte:
 
- Para começar, você precisa definir o caminho para o diretório onde seus documentos estão localizados. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório de documentos.
+-  Aspose.Words para .NET: você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
+- Ambiente .NET: certifique-se de ter um ambiente de desenvolvimento .NET funcional.
+- Conhecimento básico de C#: A familiaridade com a programação C# o ajudará a acompanhar.
+
+## Importar namespaces
+
+Para usar Aspose.Words for .NET, você precisa importar os namespaces necessários em seu projeto. Adicione-os no topo do seu arquivo C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Passo 2: Carregue o documento
+## Etapa 1: carregue o documento
 
-A seguir, precisamos carregar o documento que queremos processar. Neste exemplo, presumimos que o documento se chama "Rendering.docx" e está localizado no diretório de documentos especificado.
+ Primeiro, precisamos carregar o documento Word que queremos converter para PDF. Isto é feito usando o`Document` classe fornecida por Aspose.Words.
 
 ```csharp
+// O caminho para o diretório de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Etapa 3: configurar as opções de salvar como PDF
+ Este trecho de código carrega o documento localizado em`dataDir` . Certifique-se de substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o seu documento.
 
- Para criar um PDF contendo apenas os subconjuntos de fontes utilizadas no documento, precisamos configurar o`PdfSaveOptions` objeto com o`EmbedFullFonts` propriedade definida como`false`.
+## Passo 2: Configurar opções para salvar PDF
+
+ A seguir, configuramos o`PdfSaveOptions` para garantir que apenas os subconjuntos de fontes necessários sejam incorporados. Definindo`EmbedFullFonts` para`false`, dizemos ao Aspose.Words para incorporar apenas os glifos usados no documento.
 
 ```csharp
+// O PDF de saída conterá subconjuntos das fontes do documento.
+// Somente os glifos usados no documento são incluídos nas fontes do PDF.
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## Etapa 4: salve o documento como PDF com subconjuntos de fontes
+Esta etapa pequena, mas crucial, ajuda a reduzir significativamente o tamanho do arquivo PDF.
 
- Finalmente, podemos salvar o documento como PDF usando os subconjuntos de fontes. Especifique o nome do arquivo de saída e o`saveOptions` objeto que configuramos na etapa anterior.
+## Etapa 3: salve o documento como PDF
 
-```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-```
-
-Isso é tudo ! Você incorporou com sucesso subconjuntos de fontes em um documento e gerou um PDF contendo apenas os glifos usados no documento com Aspose.Words for .NET.
-
-### Exemplo de código-fonte para incorporar subconjuntos de fontes com Aspose.Words for .NET
+ Finalmente, salvamos o documento como PDF usando o`Save` método, aplicando o configurado`PdfSaveOptions`.
 
 ```csharp
-
-	// O caminho para o diretório de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// O PDF de saída conterá subconjuntos das fontes do documento.
-	// Somente os glifos usados no documento são incluídos nas fontes do PDF.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);
 ```
+
+ Este código irá gerar um arquivo PDF com o nome`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf` no diretório especificado, com apenas os subconjuntos de fontes necessários incorporados.
 
 ## Conclusão
 
-Neste tutorial, aprendemos como incorporar subconjuntos de fontes em um documento PDF usando Aspose.Words for .NET. A incorporação de subconjuntos de fontes ajuda a reduzir o tamanho do arquivo PDF enquanto preserva a aparência do documento usando apenas os caracteres realmente usados. Isso garante melhor compatibilidade e desempenho ao visualizar e imprimir o PDF. Sinta-se à vontade para explorar ainda mais os recursos do Aspose.Words for .NET para otimizar a geração de seus documentos PDF com subconjuntos de fontes incorporados.
+aí está! Seguindo essas etapas simples, você pode reduzir com eficiência o tamanho de seus arquivos PDF incorporando apenas os subconjuntos de fontes necessários usando Aspose.Words for .NET. Isto não só economiza espaço de armazenamento, mas também garante tempos de carregamento mais rápidos e melhor desempenho, especialmente para documentos com fontes extensas.
 
-### perguntas frequentes
+## Perguntas frequentes
 
-#### P: O que é incorporar subconjuntos de fontes em um documento PDF?
-R: Incorporar subconjuntos de fontes em um documento PDF é o processo de incluir apenas os glifos usados no documento, em vez de incluir todas as fontes completas. Isso reduz o tamanho do arquivo PDF, incluindo apenas os dados de fonte necessários para exibir os caracteres realmente usados no documento.
+### Por que devo incorporar apenas subconjuntos de fontes em um PDF?
+Incorporar apenas os subconjuntos de fontes necessários pode reduzir significativamente o tamanho do arquivo PDF sem comprometer a aparência e a legibilidade do documento.
 
-#### P: Qual é a diferença entre incorporar fontes completas e incorporar subconjuntos de fontes?
-R: Incorporação completa de fontes significa incluir todas as fontes usadas no documento no arquivo PDF, o que garante que o documento será exibido exatamente como foi projetado, mas pode aumentar o tamanho do arquivo PDF. Por outro lado, a incorporação de subconjuntos de fontes contém apenas os glifos usados no documento, reduzindo assim o tamanho do arquivo PDF, mas limitando a capacidade de replicar exatamente a aparência do documento se caracteres adicionais forem adicionados posteriormente.
+### Posso voltar a incorporar fontes completas, se necessário?
+ Sim você pode. Basta definir o`EmbedFullFonts`propriedade para`true` no`PdfSaveOptions`.
 
-#### P: Como posso incorporar subconjuntos de fontes em um documento PDF usando Aspose.Words for .NET?
-R: Para incorporar subconjuntos de fontes em um documento PDF usando Aspose.Words for .NET, siga estas etapas:
+### O Aspose.Words for .NET oferece suporte a outros recursos de otimização de PDF?
+Absolutamente! Aspose.Words for .NET oferece uma variedade de opções para otimizar PDFs, incluindo compactação de imagens e remoção de objetos não utilizados.
 
- Defina o caminho do diretório do documento substituindo`"YOUR DOCUMENT DIRECTORY"` com o caminho real do seu diretório de documentos.
+### Que tipos de fontes podem ser incorporados em subconjuntos usando Aspose.Words for .NET?
+Aspose.Words for .NET suporta incorporação de subconjuntos para todas as fontes TrueType usadas no documento.
 
- Carregue o documento que deseja processar usando o`Document` classe e o caminho do documento.
-
- Configure as opções de salvamento de PDF criando uma instância do arquivo`PdfSaveOptions` classe e definir o`EmbedFullFonts`propriedade para`false`Isso garante que apenas os subconjuntos de fontes usados no documento serão incluídos no arquivo PDF.
-
- Salve o documento em formato PDF com os subconjuntos de fontes incorporados usando o`Save` método do`Document` objeto, especificando o nome do arquivo de saída e as opções de salvamento configuradas anteriormente.
-
-#### P: Quais são os benefícios de incorporar subconjuntos de fontes em um documento PDF?
-R: Os benefícios de incorporar subconjuntos de fontes em um documento PDF são:
-
-Tamanho reduzido do arquivo PDF: Ao incluir apenas os glifos usados no documento, o tamanho do arquivo PDF é reduzido em comparação com a incorporação de fontes completas.
-
-Preservação da aparência do documento: Os subconjuntos de fontes incluídos no arquivo PDF permitem reproduzir a aparência do documento utilizando apenas os caracteres efetivamente utilizados.
-
-Compatibilidade com as restrições da Licença: A incorporação de subconjuntos de fontes pode ser preferida nos casos em que as fontes completas não podem ser incorporadas legalmente devido a restrições de licenciamento.
+### Como posso verificar quais fontes estão incorporadas no meu PDF?
+Você pode abrir o PDF no Adobe Acrobat Reader e verificar as propriedades na guia Fontes para ver as fontes incorporadas.

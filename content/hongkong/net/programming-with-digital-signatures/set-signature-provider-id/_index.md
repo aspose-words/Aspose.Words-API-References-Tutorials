@@ -93,7 +93,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功設定了簽章提供者 ID。此過程不僅可以保護您的文檔，還可以確保它們符合數位簽章標準。現在，繼續使用您的文件進行嘗試。有任何疑問嗎？請參閱下面的常見問題或點擊[Aspose 支援論壇](https://forum.aspose.com/c/words/8).
+現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功設定簽名提供者 ID。此過程不僅可以保護您的文檔，還可以確保它們符合數位簽章標準。現在，繼續使用您的文件進行嘗試。有任何疑問嗎？請參閱下面的常見問題或點擊[Aspose 支援論壇](https://forum.aspose.com/c/words/8).
 
 ## 常見問題解答
 

@@ -16,5 +16,5 @@ Aspose.Words for .NET の「範囲による単語処理」チュートリアル�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [Word 文書内のテキストを範囲削除する](./ranges-delete-text/) | Aspose.Words for .NET を使用して Word 文書内の特定の範囲のテキストを削除する方法を学習します。 |
-| [Word 文書内のテキストの範囲取得](./ranges-get-text/) | Aspose.Words for .NET を使用して Word 文書内のテキストを簡単に抽出する方法を学びます。 |
+| [Word 文書内のテキストを範囲削除する](./ranges-delete-text/) | このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内の範囲からテキストを削除する方法を学びます。C# 開発者に最適です。 |
+| [Word 文書内のテキストの範囲取得](./ranges-get-text/) | Aspose.Words for .NET を使用すると、Word 文書からテキストを簡単に抽出できます。簡単に開始するには、詳細なガイドに従ってください。 |

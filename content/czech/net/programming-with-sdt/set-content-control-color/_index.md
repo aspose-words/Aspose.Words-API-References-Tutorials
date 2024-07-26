@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Načtěte dokument a získejte kontrolu obsahu
- Načtěte dokument aplikace Word pomocí`Document` konstruktor, předá cestu k dokumentu jako parametr. Načtěte požadovaný ovládací prvek obsahu z dokumentu. V tomto příkladu předpokládáme, že ovládací prvek obsahu je první značkou strukturovaného dokumentu v dokumentu.
+ Načtěte dokument aplikace Word pomocí`Document`konstruktor, předá cestu k dokumentu jako parametr. Načtěte požadovaný ovládací prvek obsahu z dokumentu. V tomto příkladu předpokládáme, že ovládací prvek obsahu je první značkou strukturovaného dokumentu v dokumentu.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

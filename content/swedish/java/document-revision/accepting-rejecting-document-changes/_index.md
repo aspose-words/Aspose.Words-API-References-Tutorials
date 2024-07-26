@@ -16,7 +16,7 @@ Aspose.Words för Java är ett robust bibliotek som gör det möjligt för Java-
 
 Innan vi går in i implementeringen, låt oss förstå vad dokumentändringar är. Dokumentändringar omfattar redigeringar, infogningar, borttagningar och formateringsändringar som görs i ett dokument. Dessa ändringar spåras vanligtvis med hjälp av en revisionsfunktion.
 
-## Laddar ett dokument
+## Ladda ett dokument
 
 För att komma igång måste du ladda ett Word-dokument som innehåller spårade ändringar. Aspose.Words för Java ger ett enkelt sätt att göra detta:
 

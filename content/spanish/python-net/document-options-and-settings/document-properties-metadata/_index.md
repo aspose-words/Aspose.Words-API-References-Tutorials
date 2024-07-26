@@ -2,7 +2,7 @@
 title: Propiedades de documentos y gestión de metadatos
 linktitle: Propiedades de documentos y gestión de metadatos
 second_title: API de gestión de documentos Aspose.Words Python
-description: Aprenda a administrar las propiedades y los metadatos de los documentos usando Aspose.Words para Python. Guía paso a paso con código fuente.
+description: Aprenda a administrar las propiedades y los metadatos de los documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente.
 type: docs
 weight: 12
 url: /es/python-net/document-options-and-settings/document-properties-metadata/

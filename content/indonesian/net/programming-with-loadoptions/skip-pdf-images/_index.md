@@ -2,76 +2,101 @@
 title: Lewati Gambar Pdf
 linktitle: Lewati Gambar Pdf
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara memuat dokumen PDF tanpa memuat gambar PDF dengan Aspose.Words untuk .NET.
+description: Pelajari cara melewati gambar saat memuat dokumen PDF menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah ini untuk ekstraksi teks yang lancar.
 type: docs
 weight: 10
 url: /id/net/programming-with-loadoptions/skip-pdf-images/
 ---
-Saat Memproses Kata dengan dokumen PDF dalam aplikasi C#, mungkin perlu melewatkan memuat gambar PDF karena alasan kinerja atau manajemen ruang penyimpanan. Dengan pustaka Aspose.Words untuk .NET, Anda dapat dengan mudah melewati pemuatan gambar PDF menggunakan opsi pemuatan PdfLoadOptions. Dalam panduan langkah demi langkah ini, kami akan memandu Anda tentang cara menggunakan kode sumber Aspose.Words untuk .NET C# untuk memuat dokumen PDF dengan melewatkan pemuatan gambar PDF menggunakan opsi pemuatan PdfLoadOptions.
+## Perkenalan
 
-## Memahami perpustakaan Aspose.Words
+Hai, Aspose. Penggemar kata-kata! Hari ini, kita mendalami fitur fantastis Aspose.Words untuk .NET: cara melewati gambar PDF saat memuat dokumen. Tutorial ini akan memandu Anda melalui prosesnya, memastikan Anda memahami setiap langkah dengan mudah. Jadi, bersiaplah dan bersiaplah untuk menguasai trik bagus ini.
 
-Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan yang kuat untuk membuat, mengedit, mengonversi, dan melindungi dokumen Word di berbagai platform termasuk .NET. Ia menawarkan banyak fitur untuk memanipulasi dokumen, seperti menyisipkan teks, mengubah format, menambahkan bagian, dan banyak lagi.
+## Prasyarat
 
-## Mengonfigurasi opsi pemuatan
+Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
 
-Langkah pertama adalah mengkonfigurasi opsi pemuatan untuk dokumen PDF kita. Gunakan kelas PdfLoadOptions untuk menentukan parameter beban. Dalam kasus kita, kita perlu menyetel properti SkipPdfImages ke true untuk melewati pemuatan gambar PDF. Berikut cara melakukannya:
+-  Aspose.Words untuk .NET: Unduh versi terbaru[Di Sini](https://releases.aspose.com/words/net/).
+- Visual Studio: Versi terbaru apa pun akan berfungsi dengan baik.
+- Pemahaman dasar tentang C#: Anda tidak perlu menjadi seorang profesional, tetapi pemahaman dasar akan membantu.
+- Dokumen PDF: Siapkan contoh dokumen PDF untuk diuji.
+
+## Impor Namespace
+
+Untuk bekerja dengan Aspose.Words, Anda perlu mengimpor namespace yang diperlukan. Namespace ini berisi kelas dan metode yang membuat pengerjaan dokumen menjadi mudah.
 
 ```csharp
-PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
+using Aspose.Words;
+using Aspose.Words.Loading;
 ```
 
-Kami membuat objek PdfLoadOptions baru dan mengatur properti SkipPdfImages ke true untuk melewati pemuatan gambar PDF.
+Baiklah, mari kita uraikan langkah demi langkah. Setiap langkah akan memandu Anda melalui proses tersebut, sehingga mudah untuk diikuti dan diterapkan.
 
-## Muat dokumen PDF dengan melewatkan gambar PDF
+## Langkah 1: Siapkan Proyek Anda
 
-Sekarang kita telah mengkonfigurasi opsi pemuatan, kita dapat memuat dokumen PDF menggunakan kelas Dokumen dan menentukan opsi pemuatan. Berikut ini contohnya:
+### Buat Proyek Baru
+
+Hal pertama yang pertama, buka Visual Studio dan buat proyek Aplikasi Konsol C# baru. Beri nama seperti "AsposeSkipPdfImages" agar semuanya tetap teratur.
+
+### Tambahkan Referensi Aspose.Words
+
+Selanjutnya, Anda perlu menambahkan referensi ke Aspose.Words untuk .NET. Anda dapat melakukan ini melalui Manajer Paket NuGet:
+
+1. Klik kanan pada proyek Anda di Solution Explorer.
+2. Pilih "Kelola Paket NuGet".
+3. Cari "Aspose.Words" dan instal.
+
+## Langkah 2: Konfigurasikan Opsi Pemuatan
+
+### Tentukan Direktori Data
+
+ Di proyek Anda`Program.cs` file, mulailah dengan menentukan jalur ke direktori dokumen Anda. Di sinilah file PDF Anda berada.
 
 ```csharp
-Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
-```
-
-Dalam contoh ini, kami memuat dokumen PDF "Pdf Document.pdf" yang terletak di direktori dokumen menggunakan opsi pemuatan yang ditentukan.
-
-### Contoh kode sumber untuk PdfLoadOptions dengan fungsionalitas "Lewati Gambar Pdf" menggunakan Aspose.Words untuk .NET
-
-```csharp
-// Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
-// Konfigurasikan opsi pemuatan dengan fitur "Lewati Gambar Pdf".
+ Mengganti`"YOUR DOCUMENTS DIRECTORY"` dengan jalur sebenarnya ke folder dokumen Anda.
+
+### Atur Opsi Muat untuk Melewati Gambar PDF
+
+Sekarang, konfigurasikan opsi pemuatan PDF untuk melewati gambar. Ini adalah dimana keajaiban terjadi. 
+
+```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
+```
 
-// Muat dokumen PDF dengan melewatkan gambar PDF
+## Langkah 3: Muat Dokumen PDF
+
+Dengan mengatur opsi pemuatan, Anda siap memuat dokumen PDF. Langkah ini penting karena memberitahu Aspose.Words untuk melewati gambar dalam PDF.
+
+```csharp
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
+
+ Memastikan bahwa`"Pdf Document.pdf"` adalah nama file PDF Anda di direktori yang ditentukan.
 
 ## Kesimpulan
 
-Dalam panduan ini, kami menjelaskan cara memuat dokumen PDF tanpa memuat gambar PDF menggunakan perpustakaan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang disediakan dan menggunakan kode sumber C# yang disediakan, Anda dapat dengan mudah menerapkan fungsi ini di aplikasi C# Anda. Melewatkan pemuatan gambar PDF dapat meningkatkan kinerja dan manajemen ruang penyimpanan saat memproses dokumen PDF.
+Dan itu dia! Anda baru saja mempelajari cara melewati gambar dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Fitur ini sangat berguna ketika Anda perlu memproses PDF yang banyak teks tanpa gambar yang berantakan. Ingat, latihan membuat sempurna, jadi cobalah bereksperimen dengan PDF yang berbeda untuk melihat cara kerja fitur ini dalam berbagai skenario.
 
-### FAQ untuk Melewatkan Gambar PDF di Aspose.Words untuk .NET
+## FAQ
 
-#### T: Mengapa saya ingin melewatkan pemuatan gambar PDF di aplikasi C# saya?
+### Bisakah saya melewatkan gambar tertentu dalam PDF secara selektif?
 
-J: Melewatkan pemuatan gambar PDF dapat bermanfaat karena beberapa alasan. Ini dapat secara signifikan meningkatkan kecepatan memuat dokumen PDF berukuran besar, sehingga menghasilkan kinerja aplikasi yang lebih baik. Selain itu, ini membantu mengurangi konsumsi memori dan penggunaan ruang penyimpanan, sehingga ideal untuk lingkungan dengan sumber daya terbatas.
+ Tidak, itu`SkipPdfImages` opsi melewatkan semua gambar dalam PDF. Jika Anda memerlukan kontrol selektif, pertimbangkan pra-pemrosesan PDF.
 
-#### T: Bagaimana cara melewati pemuatan gambar PDF di Aspose.Words untuk .NET?
+### Apakah fitur ini memengaruhi teks dalam PDF?
 
- J: Anda dapat melewati pemuatan gambar PDF dengan memanfaatkan`PdfLoadOptions`kelas yang disediakan oleh Aspose.Words untuk .NET. Cukup atur`SkipPdfImages`properti ke`true` saat mengonfigurasi opsi pemuatan untuk dokumen PDF Anda.
+Tidak, melewatkan gambar hanya memengaruhi gambar. Teksnya tetap utuh dan dapat diakses sepenuhnya.
 
-#### T: Apakah saya masih dapat mengakses gambar PDF yang dilewati setelah memuat dokumen?
+### Bisakah saya menggunakan fitur ini dengan format dokumen lain?
 
- J: Tidak, jika Anda melewatkan memuat gambar PDF menggunakan`PdfLoadOptions`, gambar tidak dimuat ke dalam memori. Akibatnya, Anda tidak akan dapat mengakses atau memanipulasi gambar tersebut secara langsung di dalam aplikasi Anda.
+ Itu`SkipPdfImages` opsi khusus untuk dokumen PDF. Untuk format lain, tersedia opsi dan metode berbeda.
 
-#### T: Apakah melewatkan gambar PDF akan memengaruhi tata letak dan tampilan dokumen PDF yang dimuat?
+### Bagaimana cara memverifikasi bahwa gambar dilewati?
 
-J: Melewatkan gambar PDF tidak akan mempengaruhi tata letak atau tampilan dokumen yang dimuat. Namun, konten apa pun yang terkait dengan gambar yang dilewati, seperti hamparan teks atau anotasi, akan tetap dipertahankan dan dimuat seperti biasa.
+Anda dapat membuka dokumen keluaran di pengolah kata untuk mengonfirmasi secara visual tidak adanya gambar.
 
-#### T: Apakah melewatkan gambar PDF cocok untuk semua dokumen PDF?
+### Apa yang terjadi jika PDF tidak memiliki gambar?
 
-J: Melewatkan gambar PDF paling cocok untuk skenario di mana gambar tidak penting untuk fungsi utama aplikasi Anda. Ini berfungsi dengan baik untuk aplikasi yang terutama berhubungan dengan konten tekstual atau tidak memerlukan manipulasi gambar.
-
-#### T: Bisakah saya menerapkan fungsi ini ke bagian tertentu dari dokumen PDF?
-
- A: Ya, Anda dapat menerapkannya`PdfLoadOptions` dengan`SkipPdfImages` mulai`true` ke bagian tertentu dari dokumen PDF dengan memuat bagian itu secara terpisah menggunakan Aspose.Words untuk .NET.
+ Dokumen dimuat seperti biasa, tanpa berdampak pada prosesnya. Itu`SkipPdfImages` opsi tidak berpengaruh dalam kasus ini.

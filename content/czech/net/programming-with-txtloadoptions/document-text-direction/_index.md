@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- V tomto posledním kroku uložíme výsledný dokument ve formátu .docx pomocí souboru`Save` a předání cesty k výstupnímu souboru.
+ tomto posledním kroku uložíme výsledný dokument ve formátu .docx pomocí souboru`Save` a předání cesty k výstupnímu souboru.
 
 Nyní můžete spustit zdrojový kód pro načtení textového dokumentu a určení směru textu. Výsledný dokument bude uložen do zadaného adresáře s názvem "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
 
@@ -79,7 +79,7 @@ V tomto tutoriálu jsme prozkoumali funkci směrování textu dokumentu v Aspose
 
 Tato funkce je nezbytná pro zajištění správného zobrazení textu ve vícejazyčných dokumentech. Pomocí vhodných možností načítání může Aspose.Words automaticky detekovat směr textu a aplikovat jej na dokument.
 
-S Aspose.Words můžete snadno manipulovat se směrem textu ve vašich dokumentech, což uživatelům poskytuje plynulé a intuitivní čtení.
+Aspose.Words můžete snadno manipulovat se směrem textu ve vašich dokumentech, což uživatelům poskytuje plynulé a intuitivní čtení.
 
 Je důležité poznamenat, že tato funkce je zvláště užitečná při zpracování textu v jazycích, které vyžadují specifický směr textu. Aspose.Words tento úkol usnadňuje tím, že poskytuje výkonné nástroje pro správu směru textu ve vašich dokumentech.
 

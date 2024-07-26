@@ -15,7 +15,7 @@ In diesem Beispiel zeigen wir Ihnen, wie Sie ein Word-Dokument mithilfe der Funk
 Zu Beginn müssen wir das Verzeichnis Ihres Dokuments angeben und das Dokument in ein Dokumentobjekt laden. So geht's:
 
 ```csharp
-//Pfad zum Dokumentenverzeichnis.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

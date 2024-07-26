@@ -45,7 +45,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
 Magyarázat:
- Itt betöltjük a „Document source.docx” és a „Northwind traders.docx” fájlokat a megadott könyvtárból. Mindenképpen cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumokat tárolják.
+ Itt betöltjük a „Document source.docx” és a „Northwind traders.docx” fájlokat a megadott könyvtárból. Ügyeljen arra, hogy cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumokat tárolják.
 
 ## 2. lépés: Inicializálja a DocumentBuilder programot
 

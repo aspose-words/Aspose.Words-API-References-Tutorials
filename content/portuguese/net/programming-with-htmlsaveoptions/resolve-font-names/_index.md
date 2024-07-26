@@ -2,68 +2,101 @@
 title: Resolver nomes de fontes
 linktitle: Resolver nomes de fontes
 second_title: API de processamento de documentos Aspose.Words
-description: Guia passo a passo para resolver nomes de fontes ausentes ao converter para HTML com Aspose.Words for .NET.
+description: Aprenda como resolver nomes de fontes em documentos do Word ao converter para HTML usando Aspose.Words for .NET. Guia passo a passo com explicações detalhadas.
 type: docs
 weight: 10
 url: /pt/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
+## Introdução
 
-Neste tutorial, orientaremos você no código-fonte C# para resolver nomes de fontes ausentes com Aspose.Words for .NET. Este recurso permite resolver automaticamente nomes de fontes ausentes ao converter um documento em HTML.
+Olá, colega programador! Se você já se deparou com problemas de fonte ao salvar documentos do Word como HTML, você não está sozinho. As fontes podem ser complicadas, mas não se preocupe; Eu te dou cobertura. Hoje, estamos nos aprofundando em como resolver nomes de fontes em seus documentos do Word usando Aspose.Words for .NET. Este guia irá guiá-lo passo a passo pelo processo, garantindo que suas fontes tenham a aparência correta no formato HTML.
 
-## Etapa 1: configuração do projeto
+## Pré-requisitos
 
-Para começar, crie um novo projeto C# em seu IDE favorito. Certifique-se de que a biblioteca Aspose.Words for .NET seja referenciada em seu projeto.
+Antes de começarmos, vamos ter certeza de que você tem tudo o que precisa:
 
-## Passo 2: Carregando o documento
+1.  Aspose.Words for .NET: Se ainda não o fez, você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
+2.  Uma licença válida: você pode comprar uma licença[aqui](https://purchase.aspose.com/buy) ou obtenha uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
+3. Conhecimento básico de C# e .NET: Este tutorial pressupõe que você esteja confortável com os conceitos básicos de programação em C#.
+4. Visual Studio: qualquer versão que ofereça suporte ao .NET framework.
 
-Nesta etapa carregaremos o documento a ser processado. Use o código a seguir para carregar o documento de um diretório especificado:
+Agora que classificamos nossos pré-requisitos, vamos entrar em ação!
+
+## Importar namespaces
+
+Antes de começarmos a codificar, certifique-se de importar os namespaces necessários para o seu projeto. Isso é crucial para acessar as funcionalidades do Aspose.Words.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Etapa 1: configurando o diretório de documentos
+
+Primeiramente, vamos configurar o caminho para o diretório do seu documento. É aqui que seu documento do Word está localizado e onde você salvará sua saída.
+
+```csharp
+// O caminho para o diretório de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+Explicação:
+ Aqui,`dataDir` contém o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real em seu sistema.
+
+## Etapa 2: Carregar o documento do Word
+
+A seguir, precisamos carregar o documento Word que queremos processar. Este documento deve conter as fontes que você deseja resolver.
+
+```csharp
 Document doc = new Document(dataDir + "Missing font.docx");
 ```
 
- Este código cria uma instância de`Document` carregando o documento do diretório especificado.
+Explicação:
+ Nós criamos um`Document` objeto e carregue o documento do Word chamado "Font.docx ausente" de nosso`dataDir`.
 
-## Etapa 3: configurar opções de backup HTML
+## Etapa 3: configurar opções de salvamento de HTML
 
-Agora configuraremos as opções de salvamento de HTML para resolver nomes de fontes ausentes durante a conversão. Use o seguinte código:
+Agora vamos configurar as opções para salvar o documento como HTML. Aqui, garantiremos que os nomes das fontes sejam resolvidos corretamente.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 {
-PrettyFormat = true,
-ResolveFontNames=true
+    PrettyFormat = true,
+    ResolveFontNames = true
 };
 ```
 
- Este código cria uma instância de`HtmlSaveOptions` e define o`ResolveFontNames` opção para`true`para resolver nomes de fontes ausentes ao converter para HTML. Também o`PrettyFormat` opção está definida como`true` para obter um código HTML bem formatado.
+Explicação:
+ Criamos uma instância de`HtmlSaveOptions` com`SaveFormat.Html` . O`PrettyFormat` opção torna a saída HTML mais legível e`ResolveFontNames` garante que os nomes das fontes sejam resolvidos.
 
-## Passo 4: Convertendo e salvando o documento em HTML
+## Etapa 4: salvando o documento como HTML
 
-Por fim, converteremos o documento em HTML usando as opções de salvamento de HTML configuradas anteriormente. Use o seguinte código:
+Por fim, salvamos o documento como um arquivo HTML usando as opções de salvamento configuradas.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 ```
 
-Este código converte o documento em HTML resolvendo automaticamente nomes de fontes ausentes e salva o arquivo HTML convertido no diretório especificado.
+Explicação:
+ Chamamos o`Save` método no`Document` objeto, especificando o caminho de saída e as opções de salvamento que configuramos. Isso irá gerar um arquivo HTML com os nomes das fontes resolvidos.
 
-### Exemplo de código-fonte para resolver nomes de fontes usando Aspose.Words for .NET
+## Conclusão
 
-```csharp
+E aí está! Seguindo essas etapas, você resolveu com êxito os nomes das fontes ao converter um documento do Word em HTML usando Aspose.Words for .NET. Isso não apenas garante que suas fontes sejam exibidas corretamente, mas também faz com que sua saída HTML pareça refinada e profissional. Boa codificação!
 
-	// O caminho para o diretório de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Missing font.docx");
+## Perguntas frequentes
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
-	{
-		PrettyFormat = true, ResolveFontNames = true
-	};
+### O que é Aspose.Words para .NET?
+Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores criar, modificar e converter documentos do Word programaticamente.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
+### Como instalo o Aspose.Words para .NET?
+ Você pode baixar Aspose.Words para .NET em[aqui](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas na documentação.
 
-```
+### Posso usar o Aspose.Words for .NET sem licença?
+ Sim, mas terá algumas limitações. Para funcionalidade completa, você pode adquirir uma licença[aqui](https://purchase.aspose.com/buy) ou obtenha uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
 
- Certifique-se de especificar o caminho correto para o diretório de documentos no arquivo`dataDir` variável.
+### Por que minhas fontes não são exibidas corretamente em HTML?
+ Isso pode acontecer se as fontes não forem resolvidas corretamente durante a conversão. Usando`ResolveFontNames = true` em`HtmlSaveOptions` pode ajudar a corrigir esse problema.
+
+### Onde posso obter suporte para Aspose.Words for .NET?
+ Você pode obter suporte do[Fórum de suporte Aspose.Words](https://forum.aspose.com/c/words/8).

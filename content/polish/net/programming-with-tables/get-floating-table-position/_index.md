@@ -50,7 +50,7 @@ Console.WriteLine("...............................");
 
  Tutaj używamy a`foreach` pętla do przeglądania wszystkich tablic w dokumencie. Sprawdzamy, czy tablica jest typu float, sprawdzając`TextWrapping` nieruchomość. Jeśli tak, drukujemy właściwości pozycjonowania tabeli, takie jak kotwica pozioma, kotwica pionowa, bezwzględne odległości poziome i pionowe, zezwolenie na nakładanie się, bezwzględna odległość pozioma i względne wyrównanie w pionie.
  
-### Przykładowy kod źródłowy funkcji Uzyskaj pozycję tabeli pływającej przy użyciu Aspose.Words dla platformy .NET 
+### Przykładowy kod źródłowy funkcji Get Floating Table Position przy użyciu Aspose.Words dla .NET 
 
 ```csharp
 	// Ścieżka do katalogu dokumentów

@@ -19,7 +19,7 @@ Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Ge
 Document doc = new Document();
 ```
 
-Bu adımda yeni bir tane oluşturuyoruz.`Document` nesne.
+ Bu adımda yeni bir tane oluşturuyoruz.`Document` nesne.
 
 ## 3. Adım: Tema özelliklerini düzenleyin
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
-Bu adımda şuraya erişiyoruz:`Theme` nesnesi`Document` belge temasını almak için nesne. Daha sonra ikincil yazı tipleri gibi tema özelliklerini değiştirebiliriz (`MinorFonts.Latin`) ve renkler (`Colors.Hyperlink`).
+ Bu adımda şuraya erişiyoruz:`Theme` nesnesi`Document` belge temasını almak için nesne. Daha sonra ikincil yazı tipleri gibi tema özelliklerini değiştirebiliriz (`MinorFonts.Latin`) ve renkler (`Colors.Hyperlink`).
 
 ## 4. Adım: Belgeyi kaydedin
 
@@ -67,7 +67,7 @@ Ortamı kurmak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu v
 
 #### Tema özelliklerine nasıl erişebilirim ve değiştirebilirim?
 
- Tema özelliklerine erişmek ve bunları değiştirmek için`Theme` nesnesi`Document` sınıf. Erişerek`Theme` nesnenin ikincil yazı tipleri gibi özelliklerini değiştirebilirsiniz (`MinorFonts.Latin`) ve renkler (`Colors.Hyperlink`). Belgenizin temasını özelleştirmek için bu özelliklere istediğiniz değerleri atayın.
+ Tema özelliklerine erişmek ve bunları değiştirmek için`Theme` nesnesi`Document` sınıf. Erişerek`Theme`nesnenin ikincil yazı tipleri gibi özelliklerini değiştirebilirsiniz (`MinorFonts.Latin`) ve renkler (`Colors.Hyperlink`). Belgenizin temasını özelleştirmek için bu özelliklere istediğiniz değerleri atayın.
 
 #### Bir Word belgesinde tema özelliklerini ayarlamanın faydaları nelerdir?
 
@@ -79,4 +79,4 @@ Bir Word belgesinde tema özelliklerini ayarlamak, belgenizin görünümünü ve
 
 #### Değiştirilen belgeyi farklı formatlarda kaydedebilir miyim?
 
- Evet, değiştirilen belgeyi Aspose.Words for .NET tarafından desteklenen çeşitli formatlarda kaydedebilirsiniz.`Save` yöntemi`Document` nesne DOCX, PDF, HTML ve daha fazlası gibi çıktı dosyası biçimini belirtmenize olanak tanır. İhtiyaçlarınıza göre uygun formatı seçin.
+Evet, değiştirilen belgeyi Aspose.Words for .NET tarafından desteklenen çeşitli formatlarda kaydedebilirsiniz.`Save` yöntemi`Document` nesne DOCX, PDF, HTML ve daha fazlası gibi çıktı dosyası biçimini belirtmenize olanak tanır. İhtiyaçlarınıza göre uygun formatı seçin.

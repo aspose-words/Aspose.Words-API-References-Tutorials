@@ -16,4 +16,4 @@ Akár dokumentumokat kell konvertálnia, akár tartalmat kell manipulálnia, ak�
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Mértékegység](./measure-unit/) | Ismerje meg, hogyan adhatja meg a mértékegységet egy Word-dokumentum ODT-re konvertálásakor az Aspose.Words for .NET segítségével. |
+| [Mértékegység](./measure-unit/) | Ismerje meg, hogyan konfigurálhatja a mértékegység funkciót az Aspose.Words for .NET-ben, hogy megőrizze a dokumentum formázását az ODT-konverzió során. |

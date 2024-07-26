@@ -70,4 +70,4 @@ Console.WriteLine("\nCell index is " + cellIndex);
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki tablo, satır ve hücrenin indekslerini nasıl bulacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki dizi öğelerinin tam konumlarını program aracılığıyla bulabilir ve tanımlayabilirsiniz. Bu özellik, dizi öğelerini özel ihtiyaçlarınıza uyacak şekilde hassas bir şekilde değiştirmenize ve bunlarla etkileşime girmenize olanak tanır.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki tablo, satır ve hücrenin indekslerini nasıl bulacağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, Word belgelerinizdeki dizi öğelerinin tam konumlarını programlı olarak bulabilir ve tanımlayabilirsiniz. Bu özellik, dizi öğelerini özel ihtiyaçlarınıza uyacak şekilde hassas bir şekilde değiştirmenize ve bunlarla etkileşime girmenize olanak tanır.

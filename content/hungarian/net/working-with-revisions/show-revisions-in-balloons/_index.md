@@ -72,7 +72,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan jeleníthet meg revíziókat bubor�
 
 #### K: Hogyan lehet dokumentumot feltölteni az Aspose.Words for .NET-be?
 
- V: Használja a`Document` osztályú Aspose.Words .NET-hez a dokumentum fájlból való betöltéséhez. Megadhatja a dokumentum teljes elérési útját.
+ V: Használja a`Document` osztályú Aspose.Words .NET-hez a dokumentum fájlból való betöltéséhez. Megadhatja a teljes dokumentum elérési utat.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -80,7 +80,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### K: Hogyan jeleníthet meg revíziókat buborékokban az Aspose.Words for .NET segítségével?
 
- V: Használja a`ShowInBalloons` tulajdona a`RevisionOptions` objektum a revíziók buborékokban való megjelenítésének konfigurálásához. Beállíthatja ezt a tulajdonságot`ShowInBalloons.FormatAndDelete` a revíziók megjelenítése buborékokban a törlési és formázási változatokkal.
+ V: Használja a`ShowInBalloons` tulajdona a`RevisionOptions` objektum a revíziók buborékokban való megjelenítésének konfigurálásához. Ezt a tulajdonságot beállíthatja`ShowInBalloons.FormatAndDelete` a revíziók megjelenítése buborékokban a törlési és formázási változatokkal.
 
 ```csharp
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;

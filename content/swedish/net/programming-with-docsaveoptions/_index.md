@@ -17,5 +17,5 @@ Genom att följa dessa handledningar kommer du att lära dig de bästa metoderna
 | Titel | Beskrivning |
 | --- | --- |
 | [Kryptera dokument med lösenord](./encrypt-document-with-password/) | Lär dig hur du krypterar ett dokument med ett lösenord med Aspose.Words för .NET i denna detaljerade steg-för-steg-guide. Säkra din känsliga information utan ansträngning. |
-| [Komprimera inte små metafiler](./do-not-compress-small-metafiles/) | Lär dig hur du använder Aspose.Words för .NET för att säkerställa att små metafiler i Word-dokument inte komprimeras, vilket bevarar deras kvalitet och integritet. Steg-för-steg-guide ingår. |
+| [Komprimera inte små metafiler](./do-not-compress-small-metafiles/) | Lär dig hur du använder Aspose.Words för .NET för att säkerställa att små metafiler i Word-dokument inte komprimeras, vilket bevarar deras kvalitet och integritet. Steg-för-steg guide ingår. |
 | [Spara inte Picture Bullet](./do-not-save-picture-bullet/) | tjäna hur man hanterar bildkulor i Aspose.Words för .NET med vår steg-för-steg-guide. Förenkla dokumenthanteringen och skapa professionella Word-dokument utan ansträngning. |

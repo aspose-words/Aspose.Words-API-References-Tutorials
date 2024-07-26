@@ -41,7 +41,7 @@ Než budeme moci s vaším dokumentem manipulovat, musíme definovat, kde se nac
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Nahradit`"YOUR DOCUMENT DIRECTORY"` s cestou ke složce dokumentů. Zde se nachází váš soubor aplikace Word.
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` cestou ke složce dokumentů. Zde se nachází váš soubor aplikace Word.
 
 ## Krok 2: Vložte dokument
 

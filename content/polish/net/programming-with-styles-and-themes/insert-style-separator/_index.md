@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/programming-with-styles-and-themes/insert-style-separator/
 ---
-tym samouczku przyjrzymy się kodowi źródłowemu C# dostarczonemu w celu wstawienia separatora stylu w dokumencie przy użyciu Aspose.Words dla .NET. Stworzymy nowy dokument, zdefiniujemy niestandardowe style i wstawimy separator stylów.
+W tym samouczku przyjrzymy się kodowi źródłowemu C# dostarczonemu w celu wstawienia separatora stylu w dokumencie przy użyciu Aspose.Words dla .NET. Stworzymy nowy dokument, zdefiniujemy niestandardowe style i wstawimy separator stylów.
 
 ## Krok 1: Konfigurowanie środowiska
 
@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Na tym etapie tworzymy nowy`Document` obiekt i powiązany`DocumentBuilder` obiekt.
+ Na tym etapie tworzymy nowy`Document` obiekt i powiązany`DocumentBuilder` obiekt.
 
 ## Krok 3: Tworzenie i konfiguracja niestandardowego stylu
 
@@ -98,7 +98,7 @@ Aby skonfigurować środowisko, musisz upewnić się, że masz zainstalowane i s
 
 #### Jak utworzyć i skonfigurować styl niestandardowy?
 
- Aby utworzyć niestandardowy styl, możesz użyć narzędzia`Styles.Add` metoda`Document` obiekt. Określ typ stylu (np.`StyleType.Paragraph`) i podaj nazwę stylu. Po utworzeniu możesz modyfikować właściwości czcionki obiektu stylu, aby skonfigurować jego wygląd.
+ Aby utworzyć niestandardowy styl, możesz użyć narzędzia`Styles.Add` metoda`Document` obiekt. Określ typ stylu (np.`StyleType.Paragraph`i podaj nazwę stylu. Po utworzeniu możesz modyfikować właściwości czcionki obiektu stylu, aby skonfigurować jego wygląd.
 
 #### Jak wstawić separator stylu?
 
@@ -106,7 +106,7 @@ Aby skonfigurować środowisko, musisz upewnić się, że masz zainstalowane i s
 
 #### Jak zastosować różne style do różnych sekcji tekstu?
 
-Możesz zastosować różne style do różnych sekcji tekstu, ustawiając opcję`ParagraphFormat.StyleName` własność`DocumentBuilder` obiekt. Przed napisaniem tekstu możesz ustawić nazwę stylu na żądany styl, a następujący po nim tekst zostanie odpowiednio sformatowany.
+ Możesz zastosować różne style do różnych sekcji tekstu, ustawiając opcję`ParagraphFormat.StyleName` własność`DocumentBuilder` obiekt. Przed napisaniem tekstu możesz ustawić nazwę stylu na żądany styl, a następujący po nim tekst zostanie odpowiednio sformatowany.
 
 #### Czy mogę zapisać dokument w różnych formatach?
 

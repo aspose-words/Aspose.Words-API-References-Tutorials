@@ -112,7 +112,7 @@ Terakhir, mari simpan dokumen dengan perlindungan yang diterapkan dan wilayah ya
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil membuat wilayah yang dapat diedit tanpa batas dalam dokumen Word menggunakan Aspose.Words untuk .NET. Fitur ini sangat berguna untuk lingkungan kolaboratif di mana bagian tertentu dari dokumen harus tetap tidak diubah sementara bagian lain dapat diedit. 
+Dan itu dia! Anda telah berhasil membuat wilayah yang dapat diedit tanpa batas dalam dokumen Word menggunakan Aspose.Words untuk .NET. Fitur ini sangat berguna untuk lingkungan kolaboratif di mana bagian tertentu dari dokumen tidak boleh diubah sementara bagian lain dapat diedit. 
 
  Bereksperimenlah dengan skenario yang lebih kompleks dan tingkat perlindungan yang berbeda untuk mendapatkan hasil maksimal dari Aspose.Words. Jika Anda memiliki pertanyaan atau mengalami masalah, jangan ragu untuk memeriksanya[dokumentasi](https://reference.aspose.com/words/net/) atau menjangkau[mendukung](https://forum.aspose.com/c/words/8).
 

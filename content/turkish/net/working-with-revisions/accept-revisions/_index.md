@@ -15,7 +15,7 @@ Bu eğitimde, Aspose.Words for .NET'in Revizyonları Kabul Et özelliğini kulla
 Bu örnekte bir belge oluşturuyoruz ve içerik ekliyoruz. Değişiklikleri ve revizyonları göstermek için birkaç paragraf kullanıyoruz. İşte nasıl:
 
 ```csharp
-//Belgeler dizininin yolu.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

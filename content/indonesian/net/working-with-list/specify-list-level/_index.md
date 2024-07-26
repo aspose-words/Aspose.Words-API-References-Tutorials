@@ -121,7 +121,7 @@ builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
 
 #### T: Bagaimana cara menentukan level daftar di Aspose.Words?
 
- J: Untuk menentukan level daftar di Aspose.Words, Anda perlu membuat instance dari`List` kelas dan berikan daftar bernomor. Kemudian Anda dapat menggunakan`Paragraph.ListFormat.ListLevelNumber` properti untuk menentukan level setiap item daftar. Anda dapat mengaitkan daftar ini dengan bagian dokumen Anda sehingga item daftar memiliki tingkat yang diinginkan.
+ A: Untuk menentukan level daftar di Aspose.Words, Anda perlu membuat instance dari`List` kelas dan berikan daftar bernomor. Kemudian Anda dapat menggunakan`Paragraph.ListFormat.ListLevelNumber` properti untuk menentukan level setiap item daftar. Anda dapat mengaitkan daftar ini dengan bagian dokumen Anda sehingga item daftar memiliki tingkat yang diinginkan.
 
 #### T: Apakah mungkin mengubah format penomoran item daftar di Aspose.Words?
 

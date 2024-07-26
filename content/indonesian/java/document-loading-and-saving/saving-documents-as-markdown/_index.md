@@ -67,7 +67,7 @@ saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
 
- Dengan mengubah`TableContentAlignment` properti, Anda dapat mengontrol bagaimana konten di dalam tabel disejajarkan saat mengonversi ke Penurunan harga.
+ Dengan mengubah`TableContentAlignment` properti, Anda dapat mengontrol bagaimana konten di dalam tabel disejajarkan saat mengonversi ke Penurunan Harga.
 
 ## Langkah 3: Menangani Gambar
 

@@ -2,7 +2,7 @@
 title: Woordenverwerking met tabelstijlen en opmaak
 linktitle: Woordenverwerking met tabelstijlen en opmaak
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u tabelstijlen en opmaak programmeert in Aspose.Words voor .NET. Leer hoe u vooraf gedefinieerde stijlen toepast, celopmaak, randen en meer aanpast met stapsgewijze zelfstudies en voorbeeldcode in C#.
+description: Leer hoe u tabelstijlen en opmaak programmeert in Aspose.Words voor .NET. Leer hoe u vooraf gedefinieerde stijlen toepast, de celopmaak, randen en meer aanpast met stapsgewijze zelfstudies en voorbeeldcode in C#.
 type: docs
 weight: 1580
 url: /nl/net/programming-with-table-styles-and-formatting/

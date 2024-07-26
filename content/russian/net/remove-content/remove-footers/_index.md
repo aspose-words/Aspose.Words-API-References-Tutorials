@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Первичный нижний колонтитул — это нижний колонтитул, используемый для нечетных страниц.
+	//Первичный нижний колонтитул — это нижний колонтитул, используемый для нечетных страниц.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 
@@ -127,7 +127,7 @@ Document doc = new Document(dataDir + "Name_of_document.docx");
 
 #### Вопрос: Как удалить нижние колонтитулы в документе с помощью Aspose.Words?
 
-О: Чтобы удалить колонтитулы, вам нужно пройтись по разделам документа и проверить каждый возможный тип колонтитула. В Aspose.Words существуют различные типы нижних колонтитулов, например «FooterFirst» (для первой страницы), «FooterPrimary» (для нечетных страниц) и «FooterEven» (для четных страниц). Вам необходимо проверить и удалить все эти типы нижних колонтитулов. Вот пример кода:
+О: Чтобы удалить колонтитулы, вам нужно пройтись по разделам документа и проверить каждый возможный тип колонтитула. В Aspose.Words существуют различные типы нижних колонтитулов, такие как «FooterFirst» (для первой страницы), «FooterPrimary» (для нечетных страниц) и «FooterEven» (для четных страниц). Вам необходимо проверить и удалить все эти типы нижних колонтитулов. Вот пример кода:
 
 ```csharp
 HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];

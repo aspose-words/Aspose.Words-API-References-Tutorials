@@ -52,7 +52,7 @@ Successivamente, cambieremo il tipo di visualizzazione del documento. Il tipo di
 doc.ViewOptions.ViewType = ViewType.PageLayout;
 ```
 
- Qui stiamo impostando il tipo di visualizzazione su`PageLayout`, che è simile alla visualizzazione del layout di stampa in Microsoft Word. Questo ti dà una rappresentazione più accurata di come apparirà il tuo documento una volta stampato.
+ Qui stiamo impostando il tipo di visualizzazione su`PageLayout`, che è simile alla visualizzazione del layout di stampa in Microsoft Word. Ciò ti offre una rappresentazione più accurata di come apparirà il tuo documento una volta stampato.
 
 ## Passaggio 3: regolare il livello di zoom
 

@@ -67,7 +67,7 @@ Neste tutorial, aprendemos como definir várias pastas de fontes ao renderizar u
 
 ### Perguntas frequentes
 
-#### P: Como posso definir várias pastas de fontes no Aspose.Words?
+#### P: Como posso definir várias pastas de fontes em Aspose.Words?
 
  R: Para definir várias pastas de fontes no Aspose.Words, você pode usar o`SetFontsFolders` método do`Fonts` classe que fornece uma lista de locais de pastas de fontes personalizadas.
 

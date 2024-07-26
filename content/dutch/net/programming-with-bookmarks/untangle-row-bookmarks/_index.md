@@ -131,7 +131,7 @@ De code bevat een uitzonderingshandler die een uitzondering genereert als het on
 
 ### Kan ik deze code gebruiken om bladwijzers in niet-aangrenzende rijen te ontwarren?
 
-Momenteel richt de code zich op het ontwarren van bladwijzers die zich over aangrenzende rijen uitstrekken. Het aanpassen van de code om niet-aangrenzende rijen te verwerken zou extra logica vereisen om die scenario's te identificeren en af te handelen.
+Momenteel richt de code zich op het ontwarren van bladwijzers die zich over aangrenzende rijen uitstrekken. Het aanpassen van de code om niet-aangrenzende rijen te verwerken zou extra logica vereisen om deze scenario's te identificeren en af te handelen.
 
 ### Zijn er beperkingen aan het gebruik van deze aanpak?
 

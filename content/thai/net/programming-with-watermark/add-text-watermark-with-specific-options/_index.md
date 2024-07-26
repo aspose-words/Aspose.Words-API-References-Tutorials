@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## ขั้นตอนที่ 3: เพิ่มลายน้ำข้อความพร้อมตัวเลือกเฉพาะ
 
- เราจะสร้างอินสแตนซ์ของ`TextWatermarkOptions`และตั้งค่าตัวเลือกที่ต้องการสำหรับลายน้ำข้อความ
+ เราจะสร้างอินสแตนซ์ของ`TextWatermarkOptions` และตั้งค่าตัวเลือกที่ต้องการสำหรับลายน้ำข้อความ
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

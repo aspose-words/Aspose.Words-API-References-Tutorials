@@ -24,7 +24,7 @@ Aspose.Words for Java 提供了強大的文件樣式工具，使開發人員能�
 
 ## 文件樣式教學
 ### [Word文件樣式](./word-document-styling/)
-了解如何使用 Aspose.Words for Java 設計和處理文件！使用原始程式碼範例創建視覺上令人驚嘆的輸出。 
+了解如何使用 Aspose.Words for Java 設定樣式和處理文件！使用原始程式碼範例創建視覺上令人驚嘆的輸出。 
 ### [在文件中套用樣式和字體](./applying-styles-fonts/)
 了解如何使用 Aspose.Words for Java 在文件中套用樣式和字體。帶有原始程式碼的分步指南。釋放文件格式的全部潛能。
 ### [設定文件中段落和文字的樣式](./styling-paragraphs-text/)

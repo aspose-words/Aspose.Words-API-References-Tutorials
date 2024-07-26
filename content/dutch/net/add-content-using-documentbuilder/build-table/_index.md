@@ -9,7 +9,7 @@ url: /nl/net/add-content-using-documentbuilder/build-table/
 ---
 ## Invoering
 
-Hallo daar! Wilt u programmatisch tabellen in uw Word-documenten maken? Dan ben je hier aan het juiste adres! Vandaag duiken we in de magische wereld van Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u Word-documenten als een professional manipuleren. Stel je voor dat je een tovenaar bent, en Aspose.Words is je toverstaf, waarmee je met een snelle beweging van je pols (of beter gezegd, een regel code) documenten kunt maken, bewerken en opmaken. In deze zelfstudie concentreren we ons op het maken van een tabel in een Word-document. Dus pak je codeerhoed en laten we aan de slag gaan!
+Hallo daar! Wilt u programmatisch tabellen in uw Word-documenten maken? Dan ben je hier aan het juiste adres! Vandaag duiken we in de magische wereld van Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u Word-documenten als een professional manipuleren. Stel je voor dat je een tovenaar bent, en Aspose.Words is je toverstok, waarmee je met een snelle beweging van je pols (of beter gezegd, een regel code) documenten kunt maken, bewerken en opmaken. In deze zelfstudie concentreren we ons op het maken van een tabel in een Word-document. Dus pak je codeerhoed en laten we aan de slag gaan!
 
 ## Vereisten
 

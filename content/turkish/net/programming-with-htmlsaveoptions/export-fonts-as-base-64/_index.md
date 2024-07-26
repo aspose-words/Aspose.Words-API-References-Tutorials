@@ -2,63 +2,119 @@
 title: Yazı Tiplerini Base 64 Olarak Dışa Aktar
 linktitle: Yazı Tiplerini Base 64 Olarak Dışa Aktar
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir belgeyi kaydederken temel 64 yazı tipini dışa aktarmak için adım adım kılavuz.
+description: Bu ayrıntılı eğitimde Aspose.Words for .NET kullanarak yazı tiplerini Base64 olarak nasıl dışa aktaracağınızı öğrenin. Yazı tiplerinin HTML dosyalarına gömüldüğünden ve doğru şekilde görüntülendiğinden emin olun.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
+## giriiş
 
-Bu eğitimde, temel 64 yazı tiplerini Aspose.Words for .NET ile dışa aktarmak için C# kaynak kodunu size anlatacağız. Bu özellik, bir belgeyi HTML formatında kaydederken yazı tiplerini temel 64 veri olarak dışa aktarmanıza olanak tanır.
+Word belgelerinin programlı olarak işlenmesi söz konusu olduğunda Aspose.Words for .NET bir güç merkezidir. Şık özelliklerinden biri, yazı tiplerini HTML dosyaları içinde Base64 olarak dışa aktararak yazı tiplerinin farklı tarayıcılarda ve sistemlerde doğru şekilde gömülmesini ve görüntülenmesini sağlamaktır. Bu eğitimde bunu nasıl başarabileceğinizi ele alacağız. Word belgesi yazı tiplerinizi web dostu hale getirmeye hazır mısınız? Başlayalım!
 
-## Adım 1: Proje Kurulumu
+## Önkoşullar
 
-Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Projenizde Aspose.Words for .NET kütüphanesine başvurulduğundan emin olun.
+Kodlamaya geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-## Adım 2: Belgeyi yükleme
+-  Aspose.Words for .NET Kütüphanesi: Buradan indirebilirsiniz.[Sürümleri Aspose](https://releases.aspose.com/words/net/) sayfa.
+- .NET Geliştirme Ortamı: Visual Studio gibi herhangi bir IDE mükemmel çalışacaktır.
+- Temel C# Bilgisi: Profesyonel olmanıza gerek yok, ancak temel bir anlayış yardımcı olacaktır.
 
-Bu adımda dışa aktarılacak belgeyi yükleyeceğiz. Belgeyi belirtilen dizinden yüklemek için aşağıdaki kodu kullanın:
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words for .NET'i kullanmak için gerekli ad alanlarını C# kodunuza aktarmanız gerekir. Bu, tüm sınıfları ve yöntemleri kullanıma uygun hale getirir.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1. Adım: Projenizi Kurun
+
+Öncelikle projenizi oluşturalım ve Aspose.Words kütüphanesini kuralım.
+
+### 1.1 Yeni Bir Proje Oluşturun
+
+Visual Studio'yu açın ve yeni bir Konsol Uygulaması projesi oluşturun. "ExportFontsBase64" gibi anlamlı bir ad verin.
+
+### 1.2 Aspose.Words'ü yükleyin
+
+Aspose.Words for .NET'i NuGet Paket Yöneticisi aracılığıyla yükleyebilirsiniz:
+
+1. Solution Explorer'da projenize sağ tıklayın.
+2. "NuGet Paketlerini Yönet" seçeneğini seçin.
+3. "Aspose.Words" ifadesini arayın ve yükleyin.
+
+Alternatif olarak Paket Yönetici Konsolunda aşağıdaki komutu çalıştırabilirsiniz:
+
+```sh
+Install-Package Aspose.Words
+```
+
+## Adım 2: Word Belgenizi Yükleyin
+
+Artık projeniz ayarlandığına göre, yazı tiplerini dışa aktarmak istediğiniz Word belgesini yükleyelim.
+
+### 2.1 Belge Dizinini Tanımlayın
+
+Öncelikle Word belgenizin bulunduğu dizini tanımlayın:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+
+### 2.2 Belgeyi Yükleyin
+
+ Daha sonra belgenizi kullanarak yükleyin.`Document` sınıf:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Bu kod bir örneğini oluşturur`Document` Belgeyi belirtilen dizinden yükleyerek.
+"Rendering.docx" dosyasının belirttiğiniz dizinde olduğundan emin olun.
 
-## 3. Adım: HTML yedekleme seçeneklerini yapılandırma
+## 3. Adım: HTML Kaydetme Seçeneklerini Yapılandırın
 
-Şimdi temel 64 yazı tipini dışa aktarmak için HTML kaydetme seçeneklerini yapılandıracağız. Aşağıdaki kodu kullanın:
+ Yazı tiplerini Base64 olarak dışa aktarmak için yapılandırmamız gerekir.`HtmlSaveOptions`.
+
+
+ Bir örneğini oluşturun`HtmlSaveOptions` ve ayarlayın`ExportFontsAsBase64`mülkiyet`true`:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
 ```
 
- Bu kod bir örneğini oluşturur`HtmlSaveOptions` ve setler`ExportFontsAsBase64` ile`true` HTML olarak kaydederken yazı tiplerinin temel 64 verileri olarak dışa aktarılması gerektiğini belirtmek için.
+## Adım 4: Belgeyi HTML olarak kaydedin
 
-## Adım 4: Belgeyi HTML'ye dönüştürme ve kaydetme
+Son olarak, yapılandırılmış seçeneklerle belgeyi kaydedelim.
 
-Son olarak, daha önce yapılandırılan HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
+
+ Kullan`Save` yöntemi`Document` belgenizi kaydetmek için sınıf:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
 ```
 
-Bu kod, belgeyi HTML'ye dönüştürür ve temel 64 verileri olarak dışa aktarılan yazı tipleriyle birlikte bir dosyaya kaydeder.
+Bu satır, belgenizi Base64 olarak dışa aktarılan yazı tipleriyle bir HTML dosyası olarak kaydederek bunların HTML'ye gömülmesini sağlar.
 
-### Aspose.Words for .NET kullanarak Yazı Tiplerini Base 64 Olarak Dışa Aktarma için örnek kaynak kodu
+## Çözüm
 
-```csharp
+Tebrikler! Aspose.Words for .NET'i kullanarak yazı tiplerini bir Word belgesinden Base64 olarak başarıyla dışa aktardınız. Bu, yazı tiplerinizin farklı platformlarda korunmasını ve doğru şekilde görüntülenmesini sağlar. İster web'de görüntülenmek üzere belgeler hazırlıyor olun ister yalnızca uyumluluğu sağlıyor olun, bu özellik inanılmaz derecede faydalıdır.
 
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+## SSS'ler
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
+### Base64 kodlaması nedir?
+Base64, ikili verileri (yazı tipleri gibi) metin formatına kodlamanın bir yöntemidir. Bu, HTML gibi metin tabanlı formatlarla uyumluluğu sağlar.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
+### HTML'deki yazı tipleri için neden Base64 kullanmalıyım?
+Base64'ün kullanılması, yazı tiplerinin doğrudan HTML'ye gömülmesini sağlar, eksik yazı tipi dosyalarıyla ilgili sorunlardan kaçınır ve tutarlı görüntü sağlar.
 
-```
+### Bu yöntemi görseller gibi diğer kaynaklar için kullanabilir miyim?
+Kesinlikle! Aspose.Words for .NET, görüntüler de dahil olmak üzere çeşitli kaynakları HTML dosyalarınıza Base64 olarak yerleştirmenize olanak tanır.
 
- Belgeler dizininin doğru yolunu belirttiğinizden emin olun.`dataDir` değişken.
+### Belgemde birden fazla yazı tipi varsa ne olur?
+Sorun değil! Aspose.Words for .NET, belgenizde kullanılan tüm yazı tiplerini, ortaya çıkan HTML dosyasına Base64 olarak gömecektir.
 
-Artık Aspose.Words for .NET kullanarak bir belgeyi HTML olarak kaydederken temel 64 yazı tipini nasıl dışa aktaracağınızı öğrendiniz. Bu eğitimde sağlanan adım adım kılavuzu izleyerek, yazı tiplerini güvenli bir şekilde dışa aktarabilir ve HTML belgelerinize katıştırabilirsiniz.
+### Aspose.Words for .NET'in kullanımı ücretsiz mi?
+ Aspose.Words for .NET ticari bir kütüphanedir. Ancak ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Sürümleri Aspose](https://releases.aspose.com/) sayfa.

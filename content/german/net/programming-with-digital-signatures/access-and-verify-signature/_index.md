@@ -58,7 +58,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
- Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis. Dieser Codeausschnitt initialisiert ein neues`Document` Objekt und lädt Ihr signiertes Word-Dokument.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad zu Ihrem Dokumentverzeichnis. Dieser Codeausschnitt initialisiert ein neues`Document` Objekt und lädt Ihr signiertes Word-Dokument.
 
 ## Schritt 3: Zugriff auf die digitalen Signaturen
 

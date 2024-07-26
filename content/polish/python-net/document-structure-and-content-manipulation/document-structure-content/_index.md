@@ -202,7 +202,7 @@ Tak, możesz łatwo wstawiać obrazy do dokumentów programu Word za pomocą int
 
 Absolutnie! Aspose.Words umożliwia automatyzację generowania dokumentów poprzez wypełnianie szablonów danymi.
 
-### Gdzie mogę znaleźć więcej informacji na temat funkcji Aspose.Words Python?
+### Gdzie mogę znaleźć więcej informacji na temat funkcji Aspose.Words Pythona?
 
 Aby uzyskać wyczerpujące informacje na temat funkcji Aspose.Words Python, zobacz[dokumentacja](https://reference.aspose.com/words/python-net/).
 

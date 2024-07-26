@@ -17,7 +17,7 @@ url: /ko/net/programming-with-shapes/aspect-ratio-locked/
 - C# 및 Word 문서를 사용한 단어 처리에 대한 기본 지식.
 
 ## 1단계: 문서 디렉터리 설정
- 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
+ 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3단계: 이미지 모양 삽입
- 사용`InsertImage` 의 방법`DocumentBuilder`문서에 이미지 모양을 삽입하는 개체입니다. 이미지 파일의 경로를 매개변수로 제공합니다.
+ 사용`InsertImage` 의 방법`DocumentBuilder` 문서에 이미지 모양을 삽입하는 개체입니다. 이미지 파일의 경로를 매개변수로 제공합니다.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

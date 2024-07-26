@@ -17,7 +17,7 @@ Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 - Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Einrichten des Dokumentverzeichnisses
- Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Schritt 3: Erstellen Sie die Tabelle
- Verwenden Sie die`StartTable`, `EndTable`, `InsertCell` , Und`Write` Methoden der`DocumentBuilder`Objekt, um eine Tabelle zu erstellen. Stellen Sie die gewünschte Zeilenhöhe und Höhenregel mit dem`RowFormat` Eigenschaften.
+ Verwenden Sie die`StartTable`, `EndTable`, `InsertCell` , Und`Write` Methoden der`DocumentBuilder` Objekt, um eine Tabelle zu erstellen. Stellen Sie die gewünschte Zeilenhöhe und Höhenregel mit dem`RowFormat` Eigenschaften.
 
 ```csharp
 builder.StartTable();
@@ -86,7 +86,7 @@ builder.InsertNode(watermark);
 ```
 
 ## Schritt 7: Speichern Sie das Dokument
- Speichern Sie das Dokument im angegebenen Verzeichnis mit dem`Save` Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithShapes.LayoutInCell.docx“.
+ Speichern Sie das Dokument im angegebenen Verzeichnis mit dem`Save`Methode. Geben Sie den gewünschten Dateinamen mit der entsprechenden Dateierweiterung an. In diesem Beispiel speichern wir das Dokument als „WorkingWithShapes.LayoutInCell.docx“.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);

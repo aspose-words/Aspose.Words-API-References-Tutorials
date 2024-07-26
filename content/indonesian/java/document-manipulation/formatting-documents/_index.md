@@ -10,7 +10,7 @@ url: /id/java/document-manipulation/formatting-documents/
 
 ## Pengantar Memformat Dokumen di Aspose.Words untuk Java
 
-Dalam dunia pemrosesan dokumen Java, Aspose.Words for Java merupakan alat yang kuat dan serbaguna. Baik Anda sedang membuat laporan, membuat faktur, atau membuat dokumen yang rumit, Aspose.Words untuk Java siap membantu Anda. Dalam panduan komprehensif ini, kita akan mempelajari seni memformat dokumen menggunakan Java API yang canggih ini. Mari kita memulai perjalanan ini selangkah demi selangkah.
+Dalam dunia pemrosesan dokumen Java, Aspose.Words for Java berdiri sebagai alat yang kuat dan serbaguna. Baik Anda sedang membuat laporan, membuat faktur, atau membuat dokumen yang rumit, Aspose.Words untuk Java siap membantu Anda. Dalam panduan komprehensif ini, kita akan mempelajari seni memformat dokumen menggunakan Java API yang canggih ini. Mari kita memulai perjalanan ini selangkah demi selangkah.
 
 ## Menyiapkan Lingkungan Anda
 

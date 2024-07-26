@@ -39,7 +39,7 @@ Bevor Sie sich in den Code vertiefen, richten Sie den Pfad zu Ihrem Dokumentverz
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Ersetzen`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad, in dem Sie Ihr PDF-Dokument speichern möchten.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad, in dem Sie Ihr PDF-Dokument speichern möchten.
 
 ## Schritt 2: Neues Dokument erstellen
 

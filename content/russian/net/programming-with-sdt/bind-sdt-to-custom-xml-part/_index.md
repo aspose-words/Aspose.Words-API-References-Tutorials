@@ -17,7 +17,7 @@ url: /ru/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 - Базовые знания C# и XML.
 
 ## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
+ Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Шаг 3. Добавьте в документ тег StructuredDocumentTag (SDT).
- Добавить`StructuredDocumentTag` в документ, который будет служить элементом управления содержимым. Укажите`SdtType` как`PlainText` и`MarkupLevel` как`Block` для создания SDT на уровне блока.
+ Добавить`StructuredDocumentTag`в документ, который будет служить элементом управления содержимым. Укажите`SdtType` как`PlainText` и`MarkupLevel` как`Block` для создания SDT на уровне блока.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

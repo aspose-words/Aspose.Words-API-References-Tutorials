@@ -31,7 +31,7 @@ Zodra het document is gemaakt, hebt u toegang tot documentstijlen en kunt u de s
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-In dit voorbeeld gebruiken we de eigenschap Styles van de klasse Document om toegang te krijgen tot documentstijlen. Vervolgens gebruiken we de StyleIdentifier.Toc1 stijl-ID om toegang te krijgen tot de stijl die wordt gebruikt voor het eerste niveau van de inhoudsopgave. Ten slotte wijzigen we de eigenschap Font.Bold van de stijl om deze vetgedrukt te maken.
+In dit voorbeeld gebruiken we de eigenschap Styles van de klasse Document om toegang te krijgen tot documentstijlen. Vervolgens gebruiken we de StyleIdentifier.Toc1 stijl-ID om toegang te krijgen tot de stijl die wordt gebruikt voor het eerste niveau van de inhoudsopgave. Ten slotte wijzigen we de eigenschap Font.Bold van de stijl om deze vet te maken.
 
 ## Bewaar het gewijzigde document
 
@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### Vraag: Kan ik de stijl van meerdere niveaus in de inhoudsopgave wijzigen met Aspose.Words voor .NET?
 
- A: Ja, u kunt de stijl van meerdere niveaus in de inhoudsopgave wijzigen met Aspose.Words voor .NET. Om de stijl van een specifiek niveau te wijzigen, kunt u toegang krijgen tot de overeenkomstige stijl met behulp van de`Styles`eigendom en breng de gewenste wijzigingen op elk niveau afzonderlijk aan.
+A: Ja, u kunt de stijl van meerdere niveaus in de inhoudsopgave wijzigen met Aspose.Words voor .NET. Om de stijl van een specifiek niveau te wijzigen, kunt u toegang krijgen tot de overeenkomstige stijl met behulp van de`Styles` eigendom en breng de gewenste wijzigingen op elk niveau afzonderlijk aan.
 
 #### Vraag: Hoe sla ik het gewijzigde document op nadat ik de stijl van de inhoudsopgave heb gewijzigd met Aspose.Words voor .NET?
 
@@ -117,7 +117,7 @@ A: Ja, naast het wijzigen van de stijl kunt u met Aspose.Words voor .NET ook ver
 
 #### Vraag: Kan ik de stijl van de inhoudsopgave in een bestaand Word-document wijzigen met Aspose.Words voor .NET?
 
- A: Ja, u kunt de stijl van de inhoudsopgave in een bestaand Word-document wijzigen met Aspose.Words voor .NET. Laad het document eenvoudig met behulp van de`Document` klasse, wijzig de stijleigenschappen met behulp van de`Styles` eigenschap en sla het document op om de wijzigingen toe te passen.
+A: Ja, u kunt de stijl van de inhoudsopgave in een bestaand Word-document wijzigen met Aspose.Words voor .NET. Laad het document eenvoudig met behulp van de`Document` klasse, wijzig de stijleigenschappen met behulp van de`Styles` eigenschap en sla het document op om de wijzigingen toe te passen.
 
 #### Vraag: Ondersteunt Aspose.Words voor .NET het wijzigen van andere stijlen en opmaak in Word-documenten?
 

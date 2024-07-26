@@ -2,71 +2,128 @@
 title: Přidat předponu názvu třídy CSS
 linktitle: Přidat předponu názvu třídy CSS
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce přidáním předpony názvu třídy CSS při převodu dokumentu do HTML pomocí Aspose.Words for .NET.
+description: Naučte se, jak přidat předponu názvu třídy CSS při ukládání dokumentů aplikace Word jako HTML pomocí Aspose.Words for .NET. Součástí je podrobný průvodce, úryvky kódu a časté dotazy.
 type: docs
 weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## Úvod
 
-V tomto tutoriálu vás provedeme zdrojovým kódem C# pro přidání předpony názvu třídy CSS pomocí Aspose.Words for .NET. Tato funkce umožňuje přidat vlastní předponu k vygenerovaným názvům tříd CSS při převodu dokumentu do HTML.
+Vítejte! Pokud se ponoříte do světa Aspose.Words pro .NET, budete se těšit. Dnes se podíváme na to, jak přidat předponu názvu třídy CSS při ukládání dokumentu aplikace Word jako HTML pomocí Aspose.Words for .NET. Tato funkce je velmi užitečná, když se chcete vyhnout konfliktům názvů tříd v souborech HTML.
 
-## Krok 1: Nastavení projektu
+## Předpoklady
 
-Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistěte se, že váš projekt odkazuje na knihovnu Aspose.Words for .NET.
+Než začneme, ujistěte se, že máte následující:
 
-## Krok 2: Načtení dokumentu
+-  Aspose.Words for .NET: Pokud jste jej ještě nenainstalovali,[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Visual Studio nebo jakékoli jiné C# IDE.
+-  Dokument aplikace Word: Budeme používat dokument s názvem`Rendering.docx`. Umístěte jej do adresáře projektu.
 
-V tomto kroku načteme dokument Wordu, který chceme převést do HTML. K načtení dokumentu použijte následující kód:
+## Importovat jmenné prostory
+
+Nejprve se ujistěte, že máte do svého projektu C# importovány potřebné jmenné prostory. Přidejte tyto v horní části souboru kódu:
 
 ```csharp
-//Cesta k adresáři dokumentů.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Nyní se pojďme ponořit do podrobného průvodce!
+
+## Krok 1: Nastavte svůj projekt
+
+Než začneme přidávat předponu názvu třídy CSS, nastavíme náš projekt.
+
+### Krok 1.1: Vytvořte nový projekt
+
+ Spusťte své Visual Studio a vytvořte nový projekt Console App. Pojmenujte to nějak chytlavě jako`AsposeCssPrefixExample`.
+
+### Krok 1.2: Přidejte Aspose.Words pro .NET
+
+Pokud jste tak ještě neučinili, přidejte Aspose.Words for .NET do svého projektu prostřednictvím NuGet. Jednoduše otevřete konzolu NuGet Package Manager Console a spusťte:
+
+```bash
+Install-Package Aspose.Words
+```
+
+Skvělý! Nyní jsme připraveni začít kódovat.
+
+## Krok 2: Vložte svůj dokument
+
+První věc, kterou musíme udělat, je načíst dokument aplikace Word, který chceme převést do HTML.
+
+### Krok 2.1: Definujte cestu dokumentu
+
+ Nastavte cestu k adresáři dokumentů. Pro účely tohoto tutoriálu předpokládejme, že váš dokument je ve složce s názvem`Documents` v adresáři vašeho projektu.
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### Krok 2.2: Vložte dokument
+
+Nyní načtěte dokument pomocí Aspose.Words:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Nahradit`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou k adresáři, kde je umístěn váš dokument.
+## Krok 3: Nakonfigurujte možnosti uložení HTML
 
-## Krok 3: Nastavte možnosti uložení HTML
+Dále musíme nakonfigurovat možnosti uložení HTML tak, aby obsahovaly předponu názvu třídy CSS.
 
-Nyní nastavíme možnosti uložení HTML, včetně typu šablony stylů CSS a předpony názvu třídy CSS. Použijte následující kód:
+### Krok 3.1: Vytvořte možnosti uložení HTML
+
+ Vytvořte instanci`HtmlSaveOptions` objekt a nastavte typ šablony stylů CSS na`External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
- Tento kód vytvoří instanci`HtmlSaveOptions` a sady`CssStyleSheetType` na`CssStyleSheetType.External` vygenerovat externí šablonu stylů CSS a`CssClassNamePrefix` na`"pfx_"` předponovat`"pfx_"` pojmenovat třídu CSS.
+### Krok 3.2: Nastavte předponu názvu třídy CSS
 
-## Krok 4: Převod a uložení dokumentu do HTML
+ Nyní nastavíme`CssClassNamePrefix` vlastnost na požadovanou předponu. Pro tento příklad použijeme`"pfx_"`.
 
-Nakonec převedeme dokument do HTML pomocí dříve definovaných možností uložení HTML. Použijte následující kód:
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## Krok 4: Uložte dokument jako HTML
+
+Nakonec uložme dokument jako soubor HTML s našimi nakonfigurovanými možnostmi.
+
+
+Zadejte cestu k výstupnímu souboru HTML a uložte dokument.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-Tento kód převede dokument do HTML a uloží jej do souboru s přidanou předponou názvu třídy CSS.
+## Krok 5: Ověřte výstup
 
-### Příklad zdrojového kódu pro Add Css Class Name Prefix pomocí Aspose.Words for .NET
+ Po spuštění projektu přejděte do svého`Documents` složku. Měli byste najít soubor HTML s názvem`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Otevřete tento soubor v textovém editoru nebo prohlížeči a ověřte, že třídy CSS mají předponu`pfx_`.
 
-```csharp
+## Závěr
 
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+A tady to máte! Pomocí těchto kroků jste úspěšně přidali předponu názvu třídy CSS do výstupu HTML pomocí Aspose.Words for .NET. Tato jednoduchá, ale výkonná funkce vám může pomoci udržovat čisté a nekonfliktní styly v dokumentech HTML.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## FAQ
 
-```
+### Mohu pro každou operaci uložení použít jinou předponu?
+ Ano, předponu můžete přizpůsobit pokaždé, když uložíte dokument změnou`CssClassNamePrefix` vlastnictví.
 
- Ujistěte se, že jste zadali správnou cestu dokumentu v`dataDir` variabilní.
+### Podporuje tato metoda inline CSS?
+ The`CssClassNamePrefix`vlastnost pracuje s externím CSS. Pro inline CSS budete potřebovat jiný přístup.
 
-Nyní jste se naučili, jak přidat předponu názvu třídy CSS při převodu dokumentu do HTML pomocí Aspose.Words for .NET. V návaznosti na krok za krokem průvodce, který je uveden v tomto kurzu, můžete upravit názvy tříd CSS v převedených HTML dokumentech.
+### Jak mohu zahrnout další možnosti uložení HTML?
+ Můžete nakonfigurovat různé vlastnosti`HtmlSaveOptions` k přizpůsobení výstupu HTML. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+
+### Je možné uložit HTML do streamu?
+ Absolutně! Dokument můžete uložit do streamu předáním objektu stream do`Save` metoda.
+
+### Jak získám podporu, pokud narazím na problémy?
+ Můžete získat podporu od[Aspose fórum](https://forum.aspose.com/c/words/8).

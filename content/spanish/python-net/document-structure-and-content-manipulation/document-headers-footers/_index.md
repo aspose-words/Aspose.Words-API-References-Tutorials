@@ -116,7 +116,7 @@ footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 
 Para eliminar encabezados y pies de página de un documento de Word:
 
-1. Eliminación de encabezados y pies de página: borre el contenido de los encabezados y pies de página.
+1. Eliminar encabezados y pies de página: borre el contenido de los encabezados y pies de página.
 
 ```python
 header.clear_content()
@@ -146,7 +146,7 @@ Por supuesto, puede crear diferentes encabezados y pies de página para páginas
 
 ### ¿Puedo eliminar encabezados y pies de página de páginas específicas?
 
-Sí, puede borrar el contenido de los encabezados y pies de página para eliminarlos de manera efectiva.
+Sí, puedes borrar el contenido de los encabezados y pies de página para eliminarlos de forma efectiva.
 
 ### ¿Dónde puedo obtener más información sobre Aspose.Words para Python?
 

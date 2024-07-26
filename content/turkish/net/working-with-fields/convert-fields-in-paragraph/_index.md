@@ -21,7 +21,7 @@ Aspose.Words'ü projenizde kullanmak için gerekli referansları eklemeniz gerek
 Alanları dönüştürebilmeniz için önce dönüştürülecek alanları içeren belgeyi yüklemeniz gerekir. Belgeyi içeren dizinin doğru yolunu belirttiğinizden emin olun. Belgeyi şu şekilde yükleyebilirsiniz:
 
 ```csharp
-//Belgeler dizininin yolu.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Belgeyi yükleyin.
@@ -56,7 +56,7 @@ Yedekleme için doğru yolu ve dosya adını belirttiğinizden emin olun.
 ### Aspose.Words for .NET kullanarak Paragraftaki Alanları Dönüştürme için kaynak kodu örneği
 
 ```csharp
-//Belgeler dizininin yolu.
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Belgeyi yükleyin.
@@ -93,4 +93,4 @@ C: Aspose.Words, tarih formatları, sayı formatları, metin formatları, para b
 
 #### S: Aspose.Words ile bir Word belgesindeki dönüşüm alanı nasıl güncellenir?
 
-C: Bir Word belgesindeki dönüştürme alanını Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem belgede döngü yapar ve dönüştürme alanları da dahil olmak üzere tüm alanları günceller ve değerleri geçerli verilere göre yeniden hesaplar.
+C: Bir Word belgesindeki dönüştürme alanını Aspose.Words ile güncellemek için UpdateFields yöntemini kullanabilirsiniz. Bu yöntem, belgede döngü yapar ve dönüştürme alanları da dahil olmak üzere tüm alanları güncelleyerek değerleri geçerli verilere göre yeniden hesaplar.

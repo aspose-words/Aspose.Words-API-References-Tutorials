@@ -30,7 +30,7 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- Ebben a lépésben elérjük a dokumentum stílusgyűjteményét a`Styles`ingatlan. Ez a gyűjtemény tartalmazza a dokumentumban található összes stílust.
+ Ebben a lépésben elérjük a dokumentum stílusgyűjteményét a`Styles` ingatlan. Ez a gyűjtemény tartalmazza a dokumentumban található összes stílust.
 
 ## 4. lépés: Tallózás a stílusok között
 
@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Következtetés
 
- Ebben az oktatóanyagban megtanultuk, hogyan lehet lekérni és elérni a Word-dokumentumban lévő stílusokat az Aspose.Words for .NET segítségével. Kihasználva a`Styles` tulajdona a`Document`Megszereztük a stílusok gyűjteményét, és átkutattuk őket, hogy megjelenítsük a nevüket. Ez a funkció értékes betekintést nyújt a dokumentumban használt stílusokba, és további testreszabást és elemzést tesz lehetővé.
+ Ebben az oktatóanyagban megtanultuk, hogyan lehet lekérni és elérni a Word-dokumentumban lévő stílusokat az Aspose.Words for .NET segítségével. Kihasználva a`Styles` tulajdona a`Document` Megszereztük a stílusok gyűjteményét, és átkutattuk őket, hogy megjelenítsük a nevüket. Ez a funkció értékes betekintést nyújt a dokumentumban használt stílusokba, és további testreszabást és elemzést tesz lehetővé.
 
 Az Aspose.Words for .NET hatékony API-jának kihasználásával a fejlesztők könnyen kezelhetik a dokumentumstílusokat és dolgozhatnak velük, így továbbfejlesztett irányítást biztosítanak a formázás és a dokumentumfeldolgozás felett.
 
@@ -90,14 +90,14 @@ Az Aspose.Words for .NET hatékony API-jának kihasználásával a fejlesztők k
 
 #### Hogyan érhetem el a stílusokat egy Word-dokumentumban az Aspose.Words for .NET használatával?
 
-A Word-dokumentum stílusainak eléréséhez kövesse az alábbi lépéseket:
+Word-dokumentum stílusainak eléréséhez kövesse az alábbi lépéseket:
 1.  Újat csinálni`Document` tárgy.
 2.  Szerezze vissza a`StyleCollection` elérve a`Styles` a dokumentum tulajdonsága.
 3. Ismételje meg a stílusokat egy hurok segítségével, hogy elérje és feldolgozza az egyes stílusokat.
 
 #### Mit tehetek az Aspose.Words for .NET használatával kapott stílusgyűjteménnyel?
 
-stílusgyűjtemény birtokában különféle műveleteket hajthat végre, például elemezheti a dokumentumban használt stílusokat, módosíthat bizonyos stílusokat, stílusokat alkalmazhat a dokumentumelemekre, vagy információkat nyerhet ki az elérhető stílusokról. Rugalmasságot és ellenőrzést biztosít a dokumentumok stílusa és formázása felett.
+A stílusgyűjtemény birtokában különféle műveleteket hajthat végre, például elemezheti a dokumentumban használt stílusokat, módosíthat bizonyos stílusokat, stílusokat alkalmazhat a dokumentumelemekre, vagy információkat nyerhet ki az elérhető stílusokról. Rugalmasságot és ellenőrzést biztosít a dokumentumok stílusa és formázása felett.
 
 #### Hogyan használhatom fel a megszerzett stílusinformációkat az alkalmazásomban?
 

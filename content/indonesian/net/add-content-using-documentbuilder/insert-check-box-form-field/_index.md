@@ -44,7 +44,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Membuat Dokumen Baru
 
-Sekarang kita telah menetapkan direktori, saatnya membuat dokumen baru. Dokumen ini akan menjadi kanvas kita.
+Sekarang setelah direktori kita ditetapkan, saatnya membuat dokumen baru. Dokumen ini akan menjadi kanvas kita.
 
 ```csharp
 Document doc = new Document();

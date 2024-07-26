@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.WarningCallback = substitutionWarningHandler;
 ```
 
-## Étape 3 : Ajouter des sources de polices personnalisées
+## Étape 3 : ajouter des sources de polices personnalisées
 
 Dans cette étape, nous ajouterons des sources de polices personnalisées pour garantir qu'Aspose.Words puisse localiser et utiliser les polices appropriées. Ceci est particulièrement utile si vous avez des polices spécifiques stockées dans des répertoires personnalisés.
 

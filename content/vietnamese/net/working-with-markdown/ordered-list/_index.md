@@ -85,7 +85,7 @@ Việc tạo danh sách có thứ tự trong tài liệu Word theo chương trì
  Có, bạn có thể tùy chỉnh kiểu đánh số bằng cách sử dụng`ListFormat` của cải. Bạn có thể đặt các kiểu đánh số khác nhau như chữ số La Mã, chữ cái, v.v.
 
 ### Làm cách nào để thêm nhiều mức thụt lề hơn?  
- Bạn có thể dùng`ListIndent` nhiều lần để tạo ra các cấp độ danh sách phụ sâu hơn. Mỗi cuộc gọi đến`ListIndent` thêm một mức thụt lề.
+ Bạn có thể dùng`ListIndent` nhiều lần để tạo ra các cấp độ danh sách phụ sâu hơn. Mỗi cuộc gọi tới`ListIndent` thêm một mức thụt lề.
 
 ### Tôi có thể trộn lẫn các dấu đầu dòng và danh sách đánh số không?  
  Tuyệt đối! Bạn có thể áp dụng các định dạng danh sách khác nhau trong cùng một tài liệu bằng cách sử dụng`ListFormat` tài sản.

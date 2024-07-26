@@ -2,94 +2,86 @@
 title: Optimalizálja a PDF méretét a Skip Embedded Arial és Times Roman betűtípusokkal
 linktitle: Optimalizálja a PDF méretét a Skip Embedded Arial és Times Roman betűtípusokkal
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre optimalizált PDF létrehozásához Arial és Times Roman betűtípusok beágyazása nélkül az Aspose.Words for .NET segítségével.
+description: Optimalizálja a PDF méretét a beágyazott Arial és Times Roman betűtípusok kihagyásával az Aspose.Words for .NET használatával. Kövesse ezt a lépésről lépésre szóló útmutatót a PDF-fájlok egyszerűsítéséhez.
 type: docs
 weight: 10
 url: /hu/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
+## Bevezetés
 
-Ez a cikk lépésről lépésre ismerteti, hogyan használhatja a funkciót a PDF-méret optimalizálására úgy, hogy a beágyazott Arial és Times Roman betűtípusokat átugorja a metafájl méretére az Aspose.Words for .NET segítségével. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan konfigurálhatja a betűtípus beágyazási módot egy dokumentumban, és hogyan hozhat létre PDF-et Arial és Times Roman betűtípusok beágyazása nélkül.
+Előfordult már, hogy olyan helyzetbe került, amikor a PDF-fájl mérete túl nagy? Olyan ez, mintha nyaralásra pakolnál, és észrevennéd, hogy a bőrönd szétreped. Tudod, hogy le kell fogynod, de mit engedsz el? Amikor PDF-fájlokkal dolgozik, különösen a Word-dokumentumokból konvertált fájlokkal, a beágyazott betűtípusok megnövelhetik a fájlméretet. Szerencsére az Aspose.Words for .NET egy karcsú megoldást kínál arra, hogy PDF-fájljait karcsú és aljas maradjon. Ebben az oktatóanyagban azt mutatjuk be, hogyan optimalizálhatja PDF méretét a beágyazott Arial és Times Roman betűtípusok kihagyásával. Kezdjük el!
 
-Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
+## Előfeltételek
 
-## 1. lépés: Határozza meg a dokumentumkönyvtárat
+Mielőtt belevágnánk a lényegbe, van néhány dolog, amire szükséged lesz:
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van ez a hatékony könyvtár. Ha nem, letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- C# alapvető ismerete: Ez segít követni a kódrészleteket.
+- Word-dokumentum: A folyamat bemutatásához mintadokumentumot használunk. 
 
- A kezdéshez meg kell határoznia annak a könyvtárnak az elérési útját, ahol a dokumentumok találhatók. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+## Névterek importálása
+
+Először is győződjön meg arról, hogy a szükséges névtereket importálta. Ez megadja a terepet az Aspose.Words funkciók eléréséhez.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Rendben, bontsuk le a folyamatot lépésről lépésre.
+
+## 1. lépés: Állítsa be környezetét
+
+A kezdéshez be kell állítania a fejlesztői környezetet. Nyissa meg kedvenc C# IDE-jét (mint például a Visual Studio), és hozzon létre egy új projektet.
+
+## 2. lépés: Töltse be a Word-dokumentumot
+
+A következő lépés a PDF-be konvertálni kívánt Word-dokumentum betöltése. Győződjön meg arról, hogy a dokumentum a megfelelő könyvtárban van.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 2. lépés: Töltse fel a dokumentumot
-
-Ezután be kell töltenünk a feldolgozni kívánt dokumentumot. Ebben a példában feltételezzük, hogy a dokumentum neve "Rendering.docx", és a megadott dokumentumkönyvtárban található.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. lépés: Konfigurálja a mentés PDF-ként opciókat betűtípus-beágyazással
+ Ebben a részletben cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár elérési útjával.
 
- Ahhoz, hogy kihagyjuk az Arial és Times Roman betűtípusok beágyazását a létrehozott PDF-be, konfigurálnunk kell a`PdfSaveOptions` objektumot és állítsa be a`FontEmbeddingMode`tulajdonát`PdfFontEmbeddingMode.EmbedAll`.
+## 3. lépés: Konfigurálja a PDF mentési beállításokat
+
+Most konfigurálnunk kell a PDF-mentési beállításokat a betűtípusok beágyazásának szabályozásához. Alapértelmezés szerint minden betűtípus be van ágyazva, ami növelheti a fájlméretet. Módosítjuk ezt a beállítást.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll
+};
 ```
 
-## 4. lépés: Mentse el a dokumentumot PDF formátumban, beágyazott betűtípusok nélkül
+## 4. lépés: Mentse el a dokumentumot PDF formátumban
 
-Végül elmenthetjük a dokumentumot PDF formátumban a korábban beállított mentési opciókkal.
+Végül mentse a dokumentumot PDF formátumban a megadott mentési beállításokkal. Itt történik a varázslat.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-Ez minden ! Sikeresen létrehozott egy PDF-et Arial és Times Roman betűtípusok beágyazása nélkül az Aspose.Words for .NET használatával.
-
-### Példa forráskódra a beágyazott Arial és Times Roman betűtípusok kihagyására metafájl méretben az Aspose.Words for .NET segítségével
-
-```csharp
-
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
-   
-```
+Ez a parancs „OptimizedPDF.pdf” nevű PDF-fájlként menti a dokumentumot a megadott könyvtárba.
 
 ## Következtetés
 
-Ebben az oktatóanyagban elmagyaráztuk, hogyan lehet letiltani az Arial és Times Roman betűtípusok beágyazását egy PDF-dokumentumba az Aspose.Words for .NET használatával. A vázolt lépések követésével PDF-fájlt hozhat létre anélkül, hogy beágyazná ezeket a speciális betűtípusokat, ami csökkentheti a fájlméretet és biztosíthatja a dokumentumok jobb kompatibilitását a különböző platformokon. A funkció használatakor feltétlenül vegye figyelembe a betűtípus-beágyazás letiltásának következményeit. Nyugodtan fedezze fel az Aspose.Words for .NET további funkcióit a PDF-fájlok generálásának optimalizálása érdekében.
+És megvan! Éppen most tanulta meg, hogyan optimalizálhatja PDF fájlméretét az Arial és Times Roman betűtípusok beágyazásának kihagyásával az Aspose.Words for .NET használatával. Ez az egyszerű módosítás jelentősen csökkentheti a fájlméretet, így könnyebben megosztható és tárolható. Ez olyan, mintha az edzőterembe ülne a PDF-ekért, felesleges súlyt leadva, miközben minden lényeges dolgot érintetlenül hagy.
 
-### Gyakran Ismételt Kérdések
+## GYIK
 
-#### K: Mit jelent az Arial és Times Roman betűtípus-beágyazás letiltása egy PDF-dokumentumban, és miért fontos ez?
-V: Az Arial és Times Roman betűtípusok beágyazásának letiltása egy PDF-dokumentumban azt jelenti, hogy ezek a betűtípusok nem szerepelnek a létrehozott PDF-fájlban. Ez fontos lehet a PDF-fájl méretének csökkentése érdekében azáltal, hogy elkerüli a PDF-olvasó rendszereken már általánosan elérhető betűtípusok felvételét. Ezenkívül elősegítheti a PDF-dokumentum jobb kompatibilitását és egységes megjelenését a különböző eszközökön és platformokon.
+### Miért hagyjam ki az Arial és Times Roman betűtípusok beágyazását?
+Ezeknek a gyakori betűtípusoknak a kihagyása csökkentheti a PDF-fájl méretét, mivel a legtöbb rendszeren már telepítve vannak ezek a betűtípusok.
 
-#### K: Hogyan konfigurálhatom az Aspose.Words for .NET alkalmazást úgy, hogy ne ágyazzon be Arial és Times Roman betűtípusokat egy PDF-dokumentumba?
-V: Az Aspose.Words for .NET konfigurálásához, hogy ne ágyazzon be Arial és Times Roman betűtípusokat egy PDF-dokumentumba, kövesse az alábbi lépéseket:
+### Befolyásolja ez a PDF-em megjelenését?
+Nem, nem fog. Mivel az Arial és a Times Roman szabványos betűtípusok, a megjelenés egységes marad a különböző rendszerekben.
 
- Cseréléssel állítsa be a könyvtár elérési útját, ahol a dokumentumok találhatók`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+### Kihagyhatom más betűtípusok beágyazását is?
+Igen, beállíthatja a mentési beállításokat úgy, hogy szükség esetén kihagyja a többi betűtípus beágyazását.
 
- Töltse be a feldolgozni kívánt dokumentumot a`Document` osztályt és a megadott dokumentumútvonalat.
+### Az Aspose.Words for .NET ingyenes?
+Az Aspose.Words for .NET ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/) , de a teljes hozzáféréshez licencet kell vásárolnia[itt](https://purchase.aspose.com/buy).
 
- Hozzon létre egy példányt a`PdfSaveOptions` osztályt, és állítsa be a`FontEmbeddingMode`tulajdonát`PdfFontEmbeddingMode.EmbedAll`. Ezzel az Arial és a Times Roman kivételével minden betűtípust beágyaz a létrehozott PDF-fájlba.
-
- Használja a`Save` módszere a`Document` objektumot a dokumentum PDF formátumban történő mentéséhez, megadva a korábban konfigurált mentési beállításokat.
-
-#### K: Milyen előnyökkel jár, ha letiltja az Arial és Times Roman betűtípus-beágyazást egy PDF-dokumentumban?
-V: Az Arial és Times Roman betűtípus-beágyazás letiltásának előnyei a PDF-dokumentumban:
-
-PDF-fájl méretének csökkentése: Az általánosan elérhető betűtípusok, például az Arial és a Times Roman beágyazásának elkerülésével csökkenthető a PDF-fájl mérete, ami megkönnyíti a fájlok tárolását, megosztását és átvitelét.
-
-Jobb kompatibilitás: A PDF-olvasó rendszereken általánosan elérhető betűtípusok használatával biztosíthatja a dokumentum jobb kompatibilitását és megjelenését a különböző eszközökön és platformokon.
-
-#### K: Milyen következményekkel jár, ha letiltja az Arial és Times Roman betűtípusok beágyazását egy PDF dokumentumba?
-V: Az Arial és Times Roman betűtípusok beágyazásának letiltása egy PDF-dokumentumban a következő következményekkel jár:
-
-Eltérő megjelenés: Ha az Arial és a Times Roman betűtípusok nem érhetők el azon a rendszeren, ahol a PDF megnyílik, akkor a rendszer helyettesítő betűtípusokat használ, ami a tervezetttől eltérő megjelenést eredményezhet.
-
-Olvashatósági problémák: Előfordulhat, hogy a használt helyettesítő betűtípusok nem annyira olvashatóak, mint az eredeti betűtípusok, ami befolyásolhatja a dokumentum olvashatóságát.
+### Hol találok további oktatóanyagokat az Aspose.Words for .NET-hez?
+ Átfogó dokumentációt és oktatóanyagokat találhat[itt](https://reference.aspose.com/words/net/).

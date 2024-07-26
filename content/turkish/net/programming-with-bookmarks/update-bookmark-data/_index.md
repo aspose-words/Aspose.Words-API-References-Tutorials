@@ -79,7 +79,7 @@ bookmark.Name = "RenamedBookmark";
 
 ## 5. Adım: Yer İşareti Metnini Güncelleyin
 
- Şimdi heyecan verici kısım geliyor: yer imiyle ilişkili gerçek içeriğin değiştirilmesi. Aspose.Words doğrudan güncellemenize olanak tanır`Text` mülkiyeti`Bookmark` nesne:
+ Şimdi heyecan verici kısım geliyor: yer imiyle ilişkili gerçek içeriğin değiştirilmesi. Aspose.Words doğrudan güncellemenizi sağlar`Text` mülkiyeti`Bookmark` nesne:
 
 ```csharp
 bookmark.Text = "This is a new bookmarked text.";

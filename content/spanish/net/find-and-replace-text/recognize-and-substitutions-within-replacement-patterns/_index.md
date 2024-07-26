@@ -15,7 +15,7 @@ url: /es/net/find-and-replace-text/recognize-and-substitutions-within-replacemen
 
 Antes de ensuciarnos las manos con el código, asegurémonos de que tiene todo lo que necesita:
 
--  Aspose.Words para .NET: puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: puede descargarlo desde[aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: cualquier IDE como Visual Studio servirá.
 - Conocimientos básicos de C#: si estás familiarizado con C#, ¡estás listo!
 

@@ -49,7 +49,7 @@ builder.Writeln("Text inside a bookmark.");
 builder.EndBookmark("MyBookmark");
 ```
 
-## Steg 3: Få åtkomst till anpassade dokumentegenskaper
+## Steg 3: Få tillgång till anpassade dokumentegenskaper
 
 Med anpassade dokumentegenskaper kan du lägga till metadata till ditt dokument. Här hämtar vi en lista över alla anpassade dokumentegenskaper från filen.
 

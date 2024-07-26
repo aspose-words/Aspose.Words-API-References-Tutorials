@@ -2,94 +2,84 @@
 title: Incrustar fuentes de subconjunto en un documento PDF
 linktitle: Incrustar fuentes de subconjunto en un documento PDF
 second_title: API de procesamiento de documentos Aspose.Words
-description: Guía paso a paso para incrustar subconjuntos de fuentes en un documento PDF usando Aspose.Words para .NET.
+description: Reduzca el tamaño del archivo PDF incorporando solo los subconjuntos de fuentes necesarios utilizando Aspose.Words para .NET. Siga nuestra guía paso a paso para optimizar sus archivos PDF de manera eficiente.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
+## Introducción
 
-Este artículo proporciona una guía paso a paso sobre cómo utilizar la función de incrustación de subconjuntos de fuentes con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo incrustar subconjuntos de fuentes en un documento y generar un PDF que contenga solo los glifos utilizados en el documento.
+¿Alguna vez has notado que algunos archivos PDF son mucho más grandes que otros, incluso cuando contienen contenido similar? El culpable suele estar en las fuentes. Incrustar fuentes en un PDF garantiza que se vea igual en cualquier dispositivo, pero también puede aumentar el tamaño del archivo. Afortunadamente, Aspose.Words para .NET ofrece una función útil para incrustar sólo los subconjuntos de fuentes necesarios, manteniendo sus archivos PDF ágiles y eficientes. Este tutorial lo guiará a través del proceso, paso a paso.
 
-Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
+## Requisitos previos
 
-## Paso 1: definir el directorio de documentos
+Antes de comenzar, asegúrese de tener lo siguiente:
 
- Para comenzar, debe definir la ruta al directorio donde se encuentran sus documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
+-  Aspose.Words para .NET: puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
+- Entorno .NET: asegúrese de tener un entorno de desarrollo .NET que funcione.
+- Conocimientos básicos de C#: la familiaridad con la programación en C# le ayudará a seguir adelante.
+
+## Importar espacios de nombres
+
+Para utilizar Aspose.Words para .NET, debe importar los espacios de nombres necesarios en su proyecto. Agregue estos en la parte superior de su archivo C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Paso 2: Sube el documento
+## Paso 1: cargue el documento
 
-A continuación, debemos cargar el documento que queremos procesar. En este ejemplo, asumimos que el documento se llama "Rendering.docx" y está ubicado en el directorio de documentos especificado.
+ Primero, necesitamos cargar el documento de Word que queremos convertir a PDF. Esto se hace usando el`Document` clase proporcionada por Aspose.Words.
 
 ```csharp
+// La ruta al directorio de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Paso 3: Configurar las opciones de guardar como PDF
+ Este fragmento de código carga el documento ubicado en`dataDir` . Asegúrate de reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su documento.
 
- Para crear un PDF que contenga solo los subconjuntos de fuentes utilizadas en el documento, debemos configurar el`PdfSaveOptions` objeto con el`EmbedFullFonts` propiedad establecida en`false`.
+## Paso 2: configurar las opciones de guardar PDF
+
+ A continuación configuramos el`PdfSaveOptions` para garantizar que solo se incrusten los subconjuntos de fuentes necesarios. Configurando`EmbedFullFonts` a`false`, le decimos a Aspose.Words que incruste solo los glifos utilizados en el documento.
 
 ```csharp
+// El PDF de salida contendrá subconjuntos de las fuentes del documento.
+// En las fuentes PDF sólo se incluyen los glifos utilizados en el documento.
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## Paso 4: guarde el documento como PDF con subconjuntos de fuentes
+Este pequeño pero crucial paso ayuda a reducir significativamente el tamaño del archivo PDF.
 
- Finalmente, podemos guardar el documento como PDF usando los subconjuntos de fuentes. Especifique el nombre del archivo de salida y el`saveOptions` objeto que configuramos en el paso anterior.
+## Paso 3: guarde el documento como PDF
 
-```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-```
-
-Eso es todo ! Ha incrustado con éxito subconjuntos de fuentes en un documento y ha generado un PDF que contiene solo los glifos utilizados en el documento con Aspose.Words para .NET.
-
-### Código fuente de muestra para incrustar subconjuntos de fuentes con Aspose.Words para .NET
+ Finalmente guardamos el documento como PDF usando el`Save` método, aplicando el configurado`PdfSaveOptions`.
 
 ```csharp
-
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// El PDF de salida contendrá subconjuntos de las fuentes del documento.
-	// En las fuentes PDF sólo se incluyen los glifos utilizados en el documento.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);
 ```
+
+ Este código generará un archivo PDF con el nombre`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf` en el directorio especificado, con solo los subconjuntos de fuentes necesarios incrustados.
 
 ## Conclusión
 
-En este tutorial, aprendimos cómo incrustar subconjuntos de fuentes en un documento PDF usando Aspose.Words para .NET. Incrustar subconjuntos de fuentes ayuda a reducir el tamaño del archivo PDF y al mismo tiempo preserva la apariencia del documento al utilizar solo los caracteres realmente utilizados. Esto garantiza una mejor compatibilidad y rendimiento al ver e imprimir el PDF. No dude en explorar más a fondo las funciones de Aspose.Words para .NET para optimizar la generación de sus documentos PDF con subconjuntos de fuentes incrustados.
+¡Y ahí lo tienes! Si sigue estos sencillos pasos, puede reducir de manera eficiente el tamaño de sus archivos PDF incorporando solo los subconjuntos de fuentes necesarios usando Aspose.Words para .NET. Esto no sólo ahorra espacio de almacenamiento sino que también garantiza tiempos de carga más rápidos y un mejor rendimiento, especialmente para documentos con muchas fuentes.
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 
-#### P: ¿Qué es incrustar subconjuntos de fuentes en un documento PDF?
-R: Incrustar subconjuntos de fuentes en un documento PDF es el proceso de incluir solo los glifos utilizados en el documento, en lugar de incluir todas las fuentes completas. Esto reduce el tamaño del archivo PDF al incluir solo los datos de fuente necesarios para mostrar los caracteres realmente utilizados en el documento.
+### ¿Por qué debería incrustar sólo subconjuntos de fuentes en un PDF?
+Incrustar sólo los subconjuntos de fuentes necesarios puede reducir significativamente el tamaño del archivo PDF sin comprometer la apariencia y legibilidad del documento.
 
-#### P: ¿Cuál es la diferencia entre incrustar fuentes completas e incrustar subconjuntos de fuentes?
-R: La incrustación completa de fuentes significa incluir todas las fuentes utilizadas en el documento en el archivo PDF, lo que garantiza que el documento se mostrará exactamente como fue diseñado, pero puede aumentar el tamaño del archivo PDF. Por el contrario, la incrustación de subconjuntos de fuentes contiene solo los glifos utilizados en el documento, lo que reduce el tamaño del archivo PDF, pero limita la capacidad de replicar exactamente el aspecto del documento si se agregan caracteres adicionales más adelante.
+### ¿Puedo volver a incrustar fuentes completas si es necesario?
+ Sí tu puedes. Simplemente configure el`EmbedFullFonts`propiedad a`true` en el`PdfSaveOptions`.
 
-#### P: ¿Cómo puedo incrustar subconjuntos de fuentes en un documento PDF usando Aspose.Words para .NET?
-R: Para incrustar subconjuntos de fuentes en un documento PDF usando Aspose.Words para .NET, siga estos pasos:
+### ¿Aspose.Words para .NET admite otras funciones de optimización de PDF?
+¡Absolutamente! Aspose.Words para .NET ofrece una variedad de opciones para optimizar archivos PDF, incluida la compresión de imágenes y la eliminación de objetos no utilizados.
 
- Establezca la ruta del directorio de documentos reemplazando`"YOUR DOCUMENT DIRECTORY"` con la ruta real de su directorio de documentos.
+### ¿Qué tipos de fuentes se pueden incrustar en subconjuntos utilizando Aspose.Words para .NET?
+Aspose.Words para .NET admite la incrustación de subconjuntos para todas las fuentes TrueType utilizadas en el documento.
 
- Cargue el documento que desea procesar utilizando el`Document` clase y la ruta del documento.
-
- Configure las opciones para guardar PDF creando una instancia del`PdfSaveOptions` clase y establecer el`EmbedFullFonts`propiedad a`false`Esto garantiza que solo los subconjuntos de fuentes utilizados en el documento se incluirán en el archivo PDF.
-
- Guarde el documento en formato PDF con los subconjuntos de fuentes incrustados usando el`Save` método de la`Document` objeto, especificando el nombre del archivo de salida y las opciones de guardado configuradas anteriormente.
-
-#### P: ¿Cuáles son los beneficios de incrustar subconjuntos de fuentes en un documento PDF?
-R: Los beneficios de incrustar subconjuntos de fuentes en un documento PDF son:
-
-Tamaño de archivo PDF reducido: al incluir solo los glifos utilizados en el documento, el tamaño del archivo PDF se reduce en comparación con la incrustación de fuentes completas.
-
-Preservación de la apariencia del documento: Los subconjuntos de fuentes incluidos en el archivo PDF permiten reproducir la apariencia del documento utilizando únicamente los caracteres realmente utilizados.
-
-Compatibilidad con las restricciones de la licencia: es posible que se prefiera incrustar subconjuntos de fuentes en los casos en que las fuentes completas no se puedan incrustar legalmente debido a restricciones de la licencia.
+### ¿Cómo puedo verificar qué fuentes están incrustadas en mi PDF?
+Puede abrir el PDF en Adobe Acrobat Reader y verificar las propiedades en la pestaña Fuentes para ver las fuentes incrustadas.

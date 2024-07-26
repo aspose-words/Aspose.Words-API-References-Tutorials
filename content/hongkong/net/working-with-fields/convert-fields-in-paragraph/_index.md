@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 
 #### Q：Aspose.Words 支援哪些轉換格式？
 
-答：Aspose.Words 支援多種欄位轉換格式，包括日期格式、數字格式、文字格式、貨幣格式、百分比格式等等。您可以查看 Aspose.Words 文件以取得可用轉換格式的完整清單。
+答：Aspose.Words支援多種欄位轉換格式，包括日期格式、數字格式、文字格式、貨幣格式、百分比格式等等。您可以查看 Aspose.Words 文件以取得可用轉換格式的完整清單。
 
 #### Q：如何使用 Aspose.Words 更新 Word 文件中的轉換欄位？
 

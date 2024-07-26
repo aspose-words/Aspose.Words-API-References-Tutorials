@@ -17,7 +17,7 @@ Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindennel rendel
 
 1.  Aspose.Words for .NET Library: Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer telepítve van a számítógépen.
-3. Alapvető C# ismerete: Hasznos a C# programozás ismerete.
+3. C# alapismeretek: Hasznos a C# programozás ismerete.
 
 ## Névterek importálása
 

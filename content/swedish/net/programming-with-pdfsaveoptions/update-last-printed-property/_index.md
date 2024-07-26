@@ -2,81 +2,88 @@
 title: Uppdatera senast utskrivna egenskap i PDF-dokument
 linktitle: Uppdatera senast utskrivna egenskap i PDF-dokument
 second_title: Aspose.Words Document Processing API
-description: Steg-för-steg-guide för att uppdatera egenskapen "Senast utskriven" vid konvertering till PDF med Aspose.Words för .NET.
+description: Lär dig hur du uppdaterar den senast utskrivna egenskapen i ett PDF-dokument med Aspose.Words för .NET med vår steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
+## Introduktion
 
-Den här artikeln ger en steg-för-steg-guide om hur du använder egenskapen "Sista utskrift" i PDF-dokumentuppdateringsfunktionen med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av den här handledningen kommer du att kunna förstå hur du konfigurerar alternativet att uppdatera egenskapen "Senast utskrivet" när du konverterar till PDF.
+Vill du uppdatera den senast utskrivna egenskapen i ett PDF-dokument? Kanske hanterar du en stor volym dokument och behöver hålla reda på när de senast skrevs ut. Oavsett din anledning kan det vara oerhört användbart att uppdatera den här egenskapen, och med Aspose.Words för .NET är det enkelt! Låt oss dyka in i hur du kan uppnå detta.
 
-Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words for .NET-biblioteket i ditt projekt. Du hittar biblioteket och installationsinstruktioner på Asposes webbplats.
+## Förutsättningar
 
-## Steg 1: Definiera dokumentkatalogen
+Innan vi börjar, se till att du har följande förutsättningar på plats:
 
- För att börja måste du definiera sökvägen till katalogen där dina dokument finns. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+-  Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Om du inte redan har gjort det kan du ladda ner det från[här](https://releases.aspose.com/words/net/).
+- Utvecklingsmiljö: En utvecklingsmiljö som Visual Studio.
+- Grundläggande förståelse för C#: Viss förtrogenhet med C# kommer att vara till hjälp.
+- Dokument: Ett Word-dokument som du vill konvertera till PDF och uppdatera den senast utskrivna egenskapen.
+
+## Importera namnområden
+
+För att använda Aspose.Words för .NET i ditt projekt måste du importera de nödvändiga namnrymden. Så här gör du:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Låt oss dela upp processen i enkla, hanterbara steg.
+
+## Steg 1: Konfigurera ditt projekt
+
+Först till kvarn, låt oss ställa in ditt projekt. Öppna Visual Studio, skapa en ny konsolapp (.NET Framework eller .NET Core) och döp den till något meningsfullt som "UpdateLastPrintedPropertyPDF".
+
+## Steg 2: Installera Aspose.Words för .NET
+
+Därefter måste du installera paketet Aspose.Words for .NET. Du kan göra detta via NuGet Package Manager. Högerklicka på ditt projekt i Solution Explorer, välj "Hantera NuGet-paket", sök efter "Aspose.Words" och installera det.
+
+## Steg 3: Ladda ditt dokument
+
+ Låt oss nu ladda Word-dokumentet du vill konvertera till PDF. Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till ditt dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Steg 2: Ladda upp dokumentet
-
-Därefter måste vi ladda dokumentet vi vill bearbeta. I det här exemplet antar vi att dokumentet heter "Rendering.docx" och finns i den angivna dokumentkatalogen.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Steg 3: Konfigurera Spara som PDF-alternativ med den uppdaterade egenskapen "Senast utskriven".
+## Steg 4: Konfigurera PDF-sparalternativ
 
- För att möjliggöra uppdatering av egenskapen "Senast utskriven" vid konvertering till PDF, måste vi konfigurera`PdfSaveOptions` objekt och ställ in`UpdateLastPrintedProperty`egendom till`true`.
+ Vi måste konfigurera PDF-sparalternativen för att uppdatera den senast utskrivna egenskapen. Skapa en ny instans av`PdfSaveOptions` och ställ in`UpdateLastPrintedProperty`egendom till`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions 
+{ 
+	UpdateLastPrintedProperty = true 
+};
 ```
 
-## Steg 4: Spara dokumentet som en PDF med uppdateringen av egenskapen "Senast utskriven".
+## Steg 5: Spara dokumentet som PDF
 
-Slutligen kan vi spara dokumentet i PDF-format med hjälp av de sparade alternativen som konfigurerats tidigare.
+Slutligen, spara dokumentet som en PDF med den uppdaterade egenskapen. Ange utdatasökväg och spara alternativ.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-Det är allt ! Du har framgångsrikt aktiverat uppdatering av egenskapen "Senast utskriven" när du konverterade ett dokument till PDF med Aspose.Words för .NET.
-
-### Exempel på källkod för uppdatering av egenskapen "Senast utskriven" med Aspose.Words för .NET
-
-
-```csharp
-
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
-
-```
 ## Slutsats
 
-I den här handledningen förklarade vi hur man uppdaterar egenskapen "Sista utskrivna" i ett PDF-dokument med Aspose.Words för .NET. Genom att följa de givna stegen kan du enkelt konfigurera alternativet att uppdatera egenskapen "Senast utskrivet" när du konverterar ett dokument till PDF. Använd den här funktionen för att hålla reda på dokumentanvändning och relaterad information.
+Och där har du det! Genom att följa dessa steg kan du enkelt uppdatera den senast utskrivna egenskapen i ett PDF-dokument med Aspose.Words för .NET. Denna metod säkerställer att din dokumenthanteringsprocess förblir effektiv och uppdaterad. Prova det och se hur det förenklar ditt arbetsflöde.
 
-### Vanliga frågor
+## FAQ's
 
-#### F: Vad är egenskapen "Senast utskriven" i ett PDF-dokument?
-S: Egenskapen "Senast utskriven" i ett PDF-dokument hänvisar till datum och tid då dokumentet senast skrevs ut. Den här egenskapen kan vara användbar för att spåra information om dokumentanvändning och hantering.
+### Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt bibliotek för dokumentbearbetningsuppgifter i .NET-applikationer, inklusive att skapa, ändra, konvertera och skriva ut dokument.
 
-#### F: Hur kan jag uppdatera egenskapen "Last Printed" i ett PDF-dokument med Aspose.Words for .NET?
-S: För att uppdatera egenskapen "Last Printed" i ett PDF-dokument med Aspose.Words for .NET, följ dessa steg:
+### Varför uppdatera den senast utskrivna egenskapen i en PDF?
+Att uppdatera den senast utskrivna egenskapen hjälper till att spåra dokumentanvändning, särskilt i miljöer där dokumentutskrift är en frekvent aktivitet.
 
- Skapa en instans av`Document` klass som anger sökvägen till Word-dokumentet.
+### Kan jag uppdatera andra egenskaper med Aspose.Words för .NET?
+Ja, Aspose.Words för .NET låter dig uppdatera olika dokumentegenskaper, såsom författare, titel, ämne och mer.
 
- Skapa en instans av`PdfSaveOptions` klass och ställ in`UpdateLastPrintedProperty`egendom till`true` för att möjliggöra uppdatering av egenskapen "Senast utskriven".
+### Är Aspose.Words för .NET gratis?
+Aspose.Words för .NET erbjuder en gratis testversion som du kan ladda ner[här](https://releases.aspose.com/). För utökad användning skulle du behöva köpa en licens.
 
- Använd`Save` metod för`Document`klass för att spara dokumentet i PDF-format genom att ange sparalternativ.
-
-#### F: Hur kan jag kontrollera om egenskapen "Senast utskriven" har uppdaterats i det genererade PDF-dokumentet?
-S: Du kan kontrollera om egenskapen "Senast utskriven" har uppdaterats i det genererade PDF-dokumentet genom att öppna PDF-filen med en kompatibel PDF-läsare, som Adobe Acrobat Reader, och visa dokumentinformationen. Datum och tid för den senaste utskriften ska motsvara datum och tid för genereringen av PDF-dokumentet.
+### Var kan jag hitta mer dokumentation om Aspose.Words för .NET?
+Du kan hitta detaljerad dokumentation om Aspose.Words för .NET[här](https://reference.aspose.com/words/net/).

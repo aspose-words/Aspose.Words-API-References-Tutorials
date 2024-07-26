@@ -52,7 +52,7 @@ Install-Package Aspose.Words
 
 Budete potřebovat adresář pro uložení dokumentů a certifikátů aplikace Word. Pojďme si jeden vytvořit.
 
-1. Vytvořte adresář v počítači. Pro zjednodušení tomu říkejme „DocumentDirectory“.
+1. Vytvořte adresář v počítači. Pro zjednodušení to nazvěme „DocumentDirectory“.
 2. Do tohoto adresáře umístěte svůj dokument aplikace Word (např. „Document.docx“) a certifikát .pfx (např. „morzal.pfx“).
 
 ## Krok 4: Napsání kódu

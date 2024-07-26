@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-styles-and-themes/access-styles/
 ---
 
-V tomto tutoriálu prozkoumáme poskytnutý zdrojový kód C# pro získání stylů dokumentů ve Wordu pomocí Aspose.Words for .NET. Tato funkce vám umožní získat celou kolekci stylů přítomných v dokumentu.
+tomto tutoriálu prozkoumáme poskytnutý zdrojový kód C# pro získání stylů dokumentů ve Wordu pomocí Aspose.Words for .NET. Tato funkce vám umožní získat celou kolekci stylů přítomných v dokumentu.
 
 ## Krok 1: Nastavení prostředí
 
@@ -30,7 +30,7 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- V tomto kroku přistupujeme ke kolekci stylů dokumentu pomocí`Styles`vlastnictví. Tato kolekce obsahuje všechny styly obsažené v dokumentu.
+ V tomto kroku přistupujeme ke kolekci stylů dokumentu pomocí`Styles` vlastnictví. Tato kolekce obsahuje všechny styly obsažené v dokumentu.
 
 ## Krok 4: Procházení stylů
 
@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Závěr
 
- V tomto tutoriálu jsme se naučili, jak načíst a získat přístup ke stylům přítomným v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pomocí`Styles` vlastnictvím`Document`objekt, získali jsme kolekci stylů a procházeli je, abychom zobrazili jejich názvy. Tato funkce poskytuje cenné informace o stylech používaných v dokumentu a umožňuje další přizpůsobení a analýzu.
+ V tomto tutoriálu jsme se naučili, jak načíst a získat přístup ke stylům přítomným v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pomocí`Styles` majetek z`Document` objekt, získali jsme kolekci stylů a procházeli je, abychom zobrazili jejich názvy. Tato funkce poskytuje cenné informace o stylech používaných v dokumentu a umožňuje další přizpůsobení a analýzu.
 
 Využitím výkonného API Aspose.Words for .NET mohou vývojáři snadno manipulovat a pracovat se styly dokumentů, což nabízí lepší kontrolu nad formátováním a zpracováním dokumentů.
 

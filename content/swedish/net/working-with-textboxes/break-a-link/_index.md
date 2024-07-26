@@ -1,6 +1,6 @@
 ---
-title: Bryt vidarelänken i Word-dokument
-linktitle: Bryt vidarelänken i Word-dokument
+title: Bryt länken framåt i Word-dokument
+linktitle: Bryt länken framåt i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du bryter fram länkar i ett Word-dokument med Aspose.Words för .NET.
 type: docs

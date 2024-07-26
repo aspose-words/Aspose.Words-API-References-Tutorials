@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Mindenképpen cserélje ki`YOUR DOCUMENT DIRECTORY` a tényleges elérési úttal, ahová a dokumentumot menti.
+ Ügyeljen arra, hogy cserélje ki`YOUR DOCUMENT DIRECTORY` a tényleges elérési úttal, ahová a dokumentumot menti.
 
 ## 3. lépés: Inicializálja a DocumentBuilder alkalmazást
 

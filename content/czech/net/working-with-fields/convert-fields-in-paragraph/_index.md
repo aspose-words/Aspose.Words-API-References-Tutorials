@@ -21,7 +21,7 @@ Chcete-li použít Aspose.Words ve svém projektu, musíte přidat potřebné od
 Než budete moci převádět pole, musíte načíst dokument obsahující pole, která chcete převést. Ujistěte se, že jste zadali správnou cestu k adresáři obsahujícímu dokument. Postup nahrání dokumentu:
 
 ```csharp
-//Cesta k adresáři dokumentů.
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Vložte dokument.
@@ -56,7 +56,7 @@ Nezapomeňte zadat správnou cestu a název souboru pro zálohu.
 ### Příklad zdrojového kódu pro Převést pole v odstavci pomocí Aspose.Words pro .NET
 
 ```csharp
-//Cesta k adresáři dokumentů.
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Vložte dokument.

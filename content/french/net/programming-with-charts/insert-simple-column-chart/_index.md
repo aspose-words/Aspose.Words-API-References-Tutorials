@@ -2,7 +2,7 @@
 title: Insérer un diagramme à colonnes simple dans un document Word
 linktitle: Insérer un diagramme à colonnes simple dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment insérer un histogramme simple dans Word à l’aide d’Aspose.Words pour .NET. Améliorez vos documents avec des présentations de données visuelles dynamiques.
+description: Découvrez comment insérer un histogramme simple dans Word à l'aide d'Aspose.Words pour .NET. Améliorez vos documents avec des présentations de données visuelles dynamiques.
 type: docs
 weight: 10
 url: /fr/net/programming-with-charts/insert-simple-column-chart/

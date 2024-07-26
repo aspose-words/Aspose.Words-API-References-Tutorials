@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## चरण 3: स्मार्ट आर्ट ड्राइंग को अपडेट करें
- दस्तावेज़ में आकृतियों के माध्यम से पुनरावृत्ति करें`GetChildNodes` विधि के साथ`NodeType.Shape` पैरामीटर। जाँचें कि क्या प्रत्येक आकृति में स्मार्ट आर्ट है या नहीं`HasSmartArt` संपत्ति, और यदि सच है, तो कॉल करें`UpdateSmartArtDrawing` स्मार्ट आर्ट ड्राइंग को अपडेट करने की विधि।
+ दस्तावेज़ में आकृतियों के माध्यम से पुनरावृत्ति करें`GetChildNodes` विधि के साथ`NodeType.Shape` पैरामीटर। जाँचें कि क्या प्रत्येक आकृति में स्मार्ट आर्ट है या नहीं`HasSmartArt`संपत्ति, और यदि सच है, तो कॉल करें`UpdateSmartArtDrawing` स्मार्ट आर्ट ड्राइंग को अपडेट करने की विधि।
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

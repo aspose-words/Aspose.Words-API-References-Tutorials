@@ -13,5 +13,5 @@ Le traitement de mots avec MarkdownSaveOptions est une ressource détaillée qui
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Exporter vers Markdown avec l'alignement du contenu du tableau](./export-into-markdown-with-table-content-alignment/) | Découvrez comment exporter le contenu d'un tableau avec différents alignements vers des fichiers Markdown à l'aide d'Aspose.Words pour .NET. |
-| [Définir le dossier d'images](./set-images-folder/) | Découvrez comment définir le dossier images lors de l'exportation vers Markdown avec Aspose.Words pour .NET. Personnalisez le placement des images pour une meilleure organisation et intégration.|
+| [Exporter vers Markdown avec l'alignement du contenu du tableau](./export-into-markdown-with-table-content-alignment/) | Découvrez comment exporter des documents Word vers Markdown avec des tableaux alignés à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour des tableaux Markdown parfaits. |
+| [Définir le dossier d'images](./set-images-folder/) | Convertissez des documents Word en Markdown avec un alignement approprié des tableaux à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé pour des résultats parfaits. |

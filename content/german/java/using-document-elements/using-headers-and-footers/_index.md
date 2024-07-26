@@ -147,7 +147,7 @@ Vergessen Sie nicht, Ihr Dokument nach der Erstellung und Anpassung mit dem`doc.
         builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
         builder.write("Aspose.Words Header/Footer Creation Primer.");
         builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
-        // Wir verwenden eine Tabelle mit zwei Zellen, um einen Textteil in der Zeile darzustellen (mit Seitennummerierung).
+        // Wir verwenden eine Tabelle mit zwei Zellen, um einen Teiltext in der Zeile darzustellen (mit Seitennummerierung).
         // Soll linksbündig ausgerichtet sein, der restliche Textteil (mit Copyright) rechtsbündig.
         builder.startTable();
         builder.getCellFormat().clearFormatting();

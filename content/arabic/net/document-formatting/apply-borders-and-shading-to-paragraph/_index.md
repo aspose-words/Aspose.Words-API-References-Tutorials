@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 3: تحديد حدود الفقرة
 
-الآن، دعونا نضيف بعض الحدود الأنيقة إلى فقرتنا. سنقوم بتحديد المسافة من النص وتعيين أنماط حدود مختلفة.
+الآن، دعونا نضيف بعض الحدود الأنيقة إلى فقرتنا. سنقوم بتحديد المسافة من النص وتعيين أنماط الحدود المختلفة.
 
 ```csharp
 BorderCollection borders = builder.ParagraphFormat.Borders;
@@ -101,7 +101,7 @@ builder.Write("I'm a formatted paragraph with double border and nice shading.");
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ```
 
- هذا يحفظ وثيقتنا بالاسم`DocumentFormatting.ApplyBordersAndShadingToParagraph.doc` في الدليل الذي حددناه سابقًا.
+ هذا يحفظ مستندنا بالاسم`DocumentFormatting.ApplyBordersAndShadingToParagraph.doc` في الدليل الذي حددناه سابقًا.
 
 ## خاتمة
 

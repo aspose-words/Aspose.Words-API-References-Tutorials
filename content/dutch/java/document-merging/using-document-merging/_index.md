@@ -23,7 +23,7 @@ Voordat we ingaan op het samenvoegen van documenten, moeten we ervoor zorgen dat
 ### Aspose.Words-bibliotheek toevoegen:
  Neem het JAR-bestand Aspose.Words op in het klassenpad van uw Java-project.
 
-### Initialiseer Aspose.Words:
+### Initialiseer Aspose.Woorden:
  Importeer in uw Java-code de benodigde klassen uit Aspose.Words en u bent klaar om documenten samen te voegen.
 
 ## 3. Twee documenten samenvoegen
@@ -203,7 +203,7 @@ Aspose.Words voor Java geeft Java-ontwikkelaars de mogelijkheid om moeiteloos Wo
 
     Absolutely, Aspose.Words for Java can handle merging documents with tracked changes and comments. You have the option to preserve or remove these revisions during the merging process.
 
-### Behoudt Aspose.Words de originele opmaak van samengevoegde documenten?
+### Behoudt Aspose.Words de oorspronkelijke opmaak van samengevoegde documenten?
 
     Aspose.Words preserves the formatting of the source documents by default. However, you can choose different import format modes to handle conflicts and maintain formatting consistency.
 

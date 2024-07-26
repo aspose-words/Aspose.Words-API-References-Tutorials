@@ -16,4 +16,4 @@ Ať už potřebujete převádět dokumenty, manipulovat s obsahem, spravovat for
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Jednotka měření](./measure-unit/) | Naučte se, jak určit měrnou jednotku při převodu dokumentu aplikace Word na ODT pomocí Aspose.Words for .NET. |
+| [Jednotka měření](./measure-unit/) | Zjistěte, jak nakonfigurovat funkci měrných jednotek v Aspose.Words pro .NET pro zachování formátování dokumentu během převodu ODT. |

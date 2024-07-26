@@ -16,8 +16,8 @@ url: /ar/net/programming-with-ooxmlsaveoptions/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [تشفير Docx بكلمة مرور](./encrypt-docx-with-password/) | تعرف على كيفية تشفير ملف DOCX بكلمة مرور باستخدام Aspose.Words for .NET. البرنامج التعليمي الكامل لأمن الوثائق. |
-| [توافق Ooxml مع ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | تعرف على كيفية التأكد من توافق Ooxml Iso 29500_2008_Strict عند حفظ المستندات باستخدام Aspose.Words for .NET. |
-| [تحديث خاصية الوقت المحفوظ الأخير](./update-last-saved-time-property/) | تعرف على كيفية تحديث خاصية آخر وقت تم حفظه تلقائيًا عند حفظ مستند باستخدام Aspose.Words for .NET. |
-| [احتفظ بأحرف التحكم القديمة](./keep-legacy-control-chars/) | تعرف على كيفية الحفاظ على أحرف التحكم القديمة عند حفظ مستند باستخدام Aspose.Words لـ .NET. |
-| [ضبط مستوى الضغط](./set-compression-level/) | تعرف على كيفية ضبط مستوى الضغط عند حفظ مستند باستخدام Aspose.Words لـ .NET. |
+| [تشفير Docx بكلمة مرور](./encrypt-docx-with-password/) | قم بتأمين مستندات Word الخاصة بك عن طريق تشفيرها بكلمة مرور باستخدام Aspose.Words for .NET. اتبع دليلنا خطوة بخطوة لحماية معلوماتك الحساسة. |
+| [توافق Ooxml مع ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | تعرف على كيفية التأكد من توافق OOXML مع ISO 29500_2008_Strict باستخدام Aspose.Words لـ .NET من خلال هذا الدليل التفصيلي خطوة بخطوة. |
+| [تحديث خاصية الوقت المحفوظ الأخير](./update-last-saved-time-property/) | تعرف على كيفية تحديث خاصية آخر وقت محفوظ في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع دليلنا التفصيلي خطوة بخطوة. |
+| [احتفظ بأحرف التحكم القديمة](./keep-legacy-control-chars/) | تعرف على كيفية الحفاظ على أحرف التحكم القديمة في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل التفصيلي خطوة بخطوة. |
+| [ضبط مستوى الضغط](./set-compression-level/) | تعرف على كيفية ضبط مستوى الضغط في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع دليلنا خطوة بخطوة لتحسين تخزين المستندات والأداء. |

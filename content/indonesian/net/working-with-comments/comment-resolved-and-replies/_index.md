@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 Ingatlah untuk menyesuaikan kode sesuai dengan kebutuhan spesifik Anda, termasuk jalur file dokumen dan penyesuaian tambahan
 
 ## Kesimpulan
-Selamat! Anda telah berhasil mempelajari cara mengatasi komentar dan balasannya di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, kini Anda dapat mengelola resolusi komentar dan memperbarui status komentar serta balasannya sesuai dengan kebutuhan Anda.
+Selamat! Anda telah berhasil mempelajari cara mengatasi komentar dan balasannya di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah dan memanfaatkan kode sumber yang disediakan, kini Anda dapat mengelola resolusi komentar dan memperbarui status komentar dan balasannya sesuai dengan kebutuhan Anda.
 
 Resolusi komentar membantu dalam melacak dan mengelola umpan balik dalam dokumen. Bereksperimenlah dengan berbagai status komentar dan sesuaikan untuk meningkatkan proses kolaborasi dan peninjauan di dokumen Anda.
 
@@ -84,7 +84,7 @@ Resolusi komentar membantu dalam melacak dan mengelola umpan balik dalam dokumen
 
 #### T: Bagaimana cara menambahkan balasan ke komentar yang diselesaikan di Aspose.Words untuk .NET?
 
- J: Meskipun komentar yang diselesaikan disembunyikan secara default di dokumen akhir, Anda masih dapat menambahkan balasan ke komentar yang diselesaikan menggunakan`Comment.AddReply`metode yang menentukan teks balasan dan di mana Anda ingin menambahkannya.
+ J: Meskipun komentar yang terselesaikan disembunyikan secara default di dokumen akhir, Anda masih dapat menambahkan balasan ke komentar yang terselesaikan menggunakan`Comment.AddReply`metode yang menentukan teks balasan dan di mana Anda ingin menambahkannya.
 
 #### T: Bagaimana cara melihat komentar yang terselesaikan di Aspose.Words untuk .NET?
 

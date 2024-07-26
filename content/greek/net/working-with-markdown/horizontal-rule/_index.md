@@ -20,7 +20,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Βήμα 2: Εισαγωγή ενός οριζόντιου κανόνα
 
- Μπορούμε να εισαγάγουμε έναν οριζόντιο κανόνα χρησιμοποιώντας το`InsertHorizontalRule` μέθοδο δημιουργίας εγγράφων.
+ Μπορούμε να εισαγάγουμε έναν οριζόντιο κανόνα χρησιμοποιώντας το`InsertHorizontalRule` μέθοδος δημιουργίας εγγράφων.
 
 ```csharp
 builder. InsertHorizontalRule();

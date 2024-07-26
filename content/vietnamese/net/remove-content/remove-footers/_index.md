@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Chân trang chính là chân trang được sử dụng cho các trang lẻ.
+	//Chân trang chính là chân trang được sử dụng cho các trang lẻ.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

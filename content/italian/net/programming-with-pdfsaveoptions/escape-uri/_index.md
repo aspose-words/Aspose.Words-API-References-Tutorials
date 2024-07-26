@@ -39,7 +39,7 @@ Prima di immergerti nel codice, imposta il percorso della directory dei tuoi doc
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo in cui desideri salvare il documento PDF.
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo in cui desideri salvare il documento PDF.
 
 ## Passaggio 2: crea un nuovo documento
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ## Conclusione
 
-il gioco è fatto! Hai appena imparato come eseguire l'escape degli URI durante il salvataggio di un documento Word come PDF utilizzando Aspose.Words per .NET. Questo processo garantisce che i collegamenti ipertestuali rimangano funzionali e formattati correttamente nel PDF risultante. 
+E il gioco è fatto! Hai appena imparato come eseguire l'escape degli URI durante il salvataggio di un documento Word come PDF utilizzando Aspose.Words per .NET. Questo processo garantisce che i collegamenti ipertestuali rimangano funzionali e formattati correttamente nel PDF risultante. 
 
 Ricorda, padroneggiare queste piccole ma significative tecniche può migliorare notevolmente la qualità e la funzionalità dei tuoi documenti. Buona programmazione!
 

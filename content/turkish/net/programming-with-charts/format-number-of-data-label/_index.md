@@ -9,7 +9,7 @@ url: /tr/net/programming-with-charts/format-number-of-data-label/
 ---
 ## giriiş
 
-İlgi çekici ve bilgilendirici belgeler oluşturmak genellikle iyi biçimlendirilmiş veri etiketlerine sahip grafiklerin eklenmesini içerir. Word belgelerinizi gelişmiş grafiklerle geliştirmek isteyen bir .NET geliştiricisiyseniz Aspose.Words for .NET, bunu başarmanıza yardımcı olacak harika bir kütüphanedir. Bu eğitim, Aspose.Words for .NET kullanarak bir grafikteki sayı etiketlerini biçimlendirme sürecinde size adım adım yol gösterecektir.
+İlgi çekici ve bilgilendirici belgeler oluşturmak genellikle iyi biçimlendirilmiş veri etiketlerine sahip grafiklerin eklenmesini içerir. Word belgelerinizi gelişmiş grafiklerle geliştirmek isteyen bir .NET geliştiricisiyseniz, Aspose.Words for .NET bunu başarmanıza yardımcı olacak muhteşem bir kütüphanedir. Bu eğitim, Aspose.Words for .NET kullanarak bir grafikteki sayı etiketlerini biçimlendirme sürecinde size adım adım yol gösterecektir.
 
 ## Önkoşullar
 
@@ -114,7 +114,7 @@ Bu, belgenizi belirtilen adla kaydeder ve biçimlendirilmiş veri etiketlerine s
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak bir grafikteki veri etiketlerini biçimlendirmek, Word belgelerinizin okunabilirliğini ve profesyonelliğini büyük ölçüde artırabilir. Bu adım adım kılavuzu izleyerek artık bir grafik oluşturabilir, veri serileri ekleyebilir ve veri etiketlerini ihtiyaçlarınızı karşılayacak şekilde biçimlendirebilirsiniz. Aspose.Words for .NET, Word belgelerinin kapsamlı şekilde özelleştirilmesini ve otomasyonunu sağlayan güçlü bir araçtır, bu da onu .NET geliştiricileri için paha biçilmez bir varlık haline getirir.
+Aspose.Words for .NET kullanarak bir grafikteki veri etiketlerini biçimlendirmek, Word belgelerinizin okunabilirliğini ve profesyonelliğini büyük ölçüde artırabilir. Bu adım adım kılavuzu izleyerek artık bir grafik oluşturabilir, veri serileri ekleyebilir ve veri etiketlerini ihtiyaçlarınızı karşılayacak şekilde biçimlendirebilirsiniz. Aspose.Words for .NET, Word belgelerinin kapsamlı şekilde kişiselleştirilmesine ve otomasyonuna olanak tanıyan güçlü bir araçtır ve bu da onu .NET geliştiricileri için paha biçilmez bir varlık haline getirir.
 
 ## SSS'ler
 

@@ -21,7 +21,7 @@ Prvním krokem je načtení dokumentu aplikace Word obsahující obsah, který c
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-V tomto příkladu načteme dokument "Tabulka obsahu.docx" umístěný v adresáři dokumentů.
+tomto příkladu načteme dokument "Tabulka obsahu.docx" umístěný v adresáři dokumentů.
 
 ## Změna karet v obsahu
 
@@ -40,7 +40,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-tomto příkladu používáme smyčku k procházení každého odstavce v dokumentu. Poté zkontrolujeme, zda je odstavec formátován pomocí stylů výsledků obsahu (TOC). Pokud ano, přistoupíme k první kartě použité v tomto odstavci a upravíme ji odstraněním staré karty a přidáním nové karty s upravenou pozicí.
+V tomto příkladu používáme smyčku k procházení každého odstavce v dokumentu. Poté zkontrolujeme, zda je odstavec formátován pomocí stylů výsledků obsahu (TOC). Pokud ano, přistoupíme k první kartě použité v tomto odstavci a upravíme ji odstraněním staré karty a přidáním nové karty s upravenou pozicí.
 
 ## Uložte upravený dokument
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 
 ## Závěr
 
-této příručce jsme se zabývali tím, jak používat Aspose.Words pro .NET ke změně karet v obsahu dokumentu aplikace Word pomocí poskytnutého zdrojového kódu C#. Podle uvedených kroků můžete snadno přizpůsobit karty obsahu v dokumentech aplikace Word v aplikaci C#. Aspose.Words nabízí obrovskou flexibilitu a výkon pro práci se styly a formátováním vašich dokumentů, což vám umožňuje vytvářet atraktivní a profesionální dokumenty Word.
+V této příručce jsme se zabývali tím, jak používat Aspose.Words pro .NET ke změně karet v obsahu dokumentu aplikace Word pomocí poskytnutého zdrojového kódu C#. Podle uvedených kroků můžete snadno přizpůsobit karty obsahu v dokumentech aplikace Word v aplikaci C#. Aspose.Words nabízí obrovskou flexibilitu a výkon pro práci se styly a formátováním vašich dokumentů, což vám umožňuje vytvářet atraktivní a profesionální dokumenty Word.
 
 ### Nejčastější dotazy pro změnu zarážky tabulátoru v dokumentu aplikace Word
 
@@ -103,7 +103,7 @@ Tento fragment kódu načte dokument "Table of content.docx" umístěný v urče
 
 #### Otázka: Jak mohu změnit karty použité v obsahu pomocí Aspose.Words for .NET?
 
- Odpověď: Jakmile je dokument načten, můžete iterovat každý odstavec dokumentu a zkontrolovat, zda je formátován pomocí stylů výsledků obsahu (TOC). Pokud je odstavec formátován jako styl obsahu, můžete upravit tabulátory používané k zarovnání čísel stránek. V Aspose.Words pro .NET máte přístup k`ParagraphFormat` vlastnost každého odstavce pro načtení a úpravu zarážek tabulátoru. Zde je příklad:
+Odpověď: Jakmile je dokument načten, můžete iterovat každý odstavec dokumentu a zkontrolovat, zda je formátován pomocí stylů výsledků obsahu (TOC). Pokud je odstavec formátován jako styl obsahu, můžete upravit tabulátory používané k zarovnání čísel stránek. V Aspose.Words pro .NET máte přístup k`ParagraphFormat` vlastnost každého odstavce pro načtení a úpravu zarážek tabulátoru. Zde je příklad:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -118,7 +118,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-tomto kódu smyčka prochází každým odstavcem v dokumentu. Pokud má odstavec styl obsahu, přistoupí k první zarážce tabulátoru použité v tomto odstavci, odstraní ji a přidá novou zarážku tabulátoru s upravenou pozicí.
+V tomto kódu smyčka prochází každým odstavcem v dokumentu. Pokud má odstavec styl obsahu, přistoupí k první zarážce tabulátoru použité v tomto odstavci, odstraní ji a přidá novou zarážku tabulátoru s upravenou pozicí.
 
 #### Otázka: Mohu změnit karty pro více úrovní v obsahu pomocí Aspose.Words for .NET?
 

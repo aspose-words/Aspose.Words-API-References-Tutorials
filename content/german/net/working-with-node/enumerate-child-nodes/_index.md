@@ -43,7 +43,7 @@ Document doc = new Document("path/to/your/document.docx");
 
 ## Schritt 2: Zugriff auf den ersten Absatz
 
-Als Nächstes müssen wir auf einen bestimmten Absatz im Dokument zugreifen. Der Einfachheit halber nehmen wir den ersten Absatz.
+Als nächstes müssen wir auf einen bestimmten Absatz im Dokument zugreifen. Der Einfachheit halber nehmen wir den ersten Absatz.
 
 ```csharp
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);

@@ -16,12 +16,12 @@ Word 文書を HTML に変換して Web 上に表示したり、Word 文書に H
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [輸出ラウンドトリップ情報](./export-roundtrip-information/) | Aspose.Words for .NET を使用してドキュメントを HTML として保存するときにラウンドトリップ情報をエクスポートするためのステップバイステップ ガイド。 |
-| [フォントをBase64としてエクスポート](./export-fonts-as-base-64/) | Aspose.Words for .NET を使用してドキュメントを保存するときに、Base 64 フォントをエクスポートするためのステップ バイ ステップ ガイド。 |
-| [リソースのエクスポート](./export-resources/) | Aspose.Words for .NET を使用して HTML として保存するときにドキュメント リソースをエクスポートするためのステップ バイ ステップ ガイド。 |
+| [輸出ラウンドトリップ情報](./export-roundtrip-information/) | Aspose.Words for .NET を使用してラウンドトリップ情報をエクスポートする方法を学びます。変換中にドキュメントの整合性と書式設定を保持します。 |
+| [フォントをBase64としてエクスポート](./export-fonts-as-base-64/) | この詳細なチュートリアルでは、Aspose.Words for .NET を使用してフォントを Base64 としてエクスポートする方法を学習します。フォントが HTML ファイルに埋め込まれ、正しく表示されることを確認します。 |
+| [リソースのエクスポート](./export-resources/) | Aspose.Words for .NET を使用して Word 文書を HTML として保存しながら、CSS やフォントなどのリソースをエクスポートする方法を学びます。ステップバイステップのガイドに従ってください。 |
 | [メタファイルを EMF または WMF に変換する](./convert-metafiles-to-emf-or-wmf/) | Aspose.Words for .NET を使用してドキュメントを HTML に変換するときに、メタファイルを EMF または WMF 形式に変換するためのステップ バイ ステップ ガイド。 |
-| [メタファイルをSVGに変換する](./convert-metafiles-to-svg/) | Aspose.Words for .NET を使用してドキュメントを HTML に変換するときに、メタファイルを SVG 形式に変換するためのステップ バイ ステップ ガイド。 |
-| [CSSクラス名プレフィックスを追加する](./add-css-class-name-prefix/) | Aspose.Words for .NET を使用してドキュメントを HTML に変換するときに CSS クラス名プレフィックスを追加するためのステップ バイ ステップ ガイド。 |
-| [MHTML リソースの CID URL をエクスポートする](./export-cid-urls-for-mhtml-resources/) | Aspose.Words for .NET を使用してドキュメントを保存するときに、MHTML リソースの CID URL をエクスポートするためのステップ バイ ステップ ガイド。 |
-| [フォント名を解決する](./resolve-font-names/) | Aspose.Words for .NET を使用して HTML に変換するときに、フォント名が見つからない場合の解決方法をステップバイステップで説明します。 |
-| [テキスト入力フォームフィールドをテキストとしてエクスポート](./export-text-input-form-field-as-text/) | Aspose.Words for .NET を使用してテキスト入力フォーム フィールドをプレーン テキストとしてエクスポートするためのステップ バイ ステップ ガイド。 |
+| [メタファイルをSVGに変換する](./convert-metafiles-to-svg/) | この詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word 文書内のメタファイルを SVG に変換します。あらゆるレベルの開発者に最適です。 |
+| [CSSクラス名プレフィックスを追加する](./add-css-class-name-prefix/) | Aspose.Words for .NET を使用して Word 文書を HTML として保存するときに CSS クラス名プレフィックスを追加する方法を学びます。ステップバイステップ ガイド、コード スニペット、FAQ が含まれています。 |
+| [MHTML リソースの CID URL をエクスポートする](./export-cid-urls-for-mhtml-resources/) | このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して MHTML リソースの Cid URL をエクスポートする方法を学びます。あらゆるレベルの開発者に最適です。 |
+| [フォント名を解決する](./resolve-font-names/) | Aspose.Words for .NET を使用して HTML に変換するときに、Word 文書内のフォント名を解決する方法を学びます。詳細な説明を含むステップバイステップのガイド。 |
+| [テキスト入力フォームフィールドをテキストとしてエクスポート](./export-text-input-form-field-as-text/) | この包括的なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用してテキスト入力フォーム フィールドをプレーン テキストとしてエクスポートする方法を学習します。 |

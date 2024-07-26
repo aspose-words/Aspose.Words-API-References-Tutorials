@@ -2,15 +2,31 @@
 title: 암호화된 Word 문서 확인
 linktitle: 암호화된 Word 문서 확인
 second_title: Aspose.Words 문서 처리 API
-description: Word 문서가 .NET용 Aspose.Words로 암호화되었는지 확인하는 단계별 가이드입니다.
+description: 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 암호화 상태를 확인하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-fileformat/verify-encrypted-document/
 ---
+## .NET용 Aspose.Words를 사용하여 암호화된 Word 문서 확인
 
-이 문서에서는 Aspose.Words for .NET에서 암호화된 Word 문서 확인 기능을 사용하는 방법에 대한 단계별 가이드를 제공합니다. 코드의 각 부분을 자세히 설명하겠습니다. 이 튜토리얼이 끝나면 문서가 암호화되었는지 확인하는 방법을 이해할 수 있습니다.
+ 암호화된 Word 문서를 우연히 발견하고 암호화 상태를 프로그래밍 방식으로 확인하는 방법이 궁금하신가요? 글쎄, 당신은 운이 좋다! 오늘 우리는 .NET용 Aspose.Words를 사용하여 이를 수행하는 방법에 대한 멋진 작은 튜토리얼을 살펴보겠습니다. 이 단계별 가이드는 환경 설정부터 코드 실행까지 알아야 할 모든 것을 안내합니다. 자, 시작해 볼까요?
 
-시작하기 전에 프로젝트에 Aspose.Words for .NET 라이브러리를 설치하고 구성했는지 확인하세요. Aspose 웹사이트에서 라이브러리와 설치 지침을 찾을 수 있습니다.
+## 전제조건
+
+코드를 살펴보기 전에 필요한 모든 것이 있는지 확인하겠습니다. 간단한 체크리스트는 다음과 같습니다.
+
+-  .NET 라이브러리용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+- .NET Framework: 컴퓨터에 .NET이 설치되어 있는지 확인하세요.
+- IDE: Visual Studio와 같은 통합 개발 환경입니다.
+- C#의 기본 지식: C#의 기본 사항을 이해하면 더 쉽게 따라갈 수 있습니다.
+
+## 네임스페이스 가져오기
+
+시작하려면 필요한 네임스페이스를 가져와야 합니다. 필수 코드 조각은 다음과 같습니다.
+
+```csharp
+using Aspose.Words;
+```
 
 ## 1단계: 문서 디렉터리 정의
 
@@ -38,50 +54,23 @@ Console.WriteLine(info.IsEncrypted);
 
 그게 다야 ! .NET용 Aspose.Words를 사용하여 문서가 암호화되었는지 성공적으로 확인했습니다.
 
-### .NET용 Aspose.Words를 사용하여 암호화된 문서를 확인하기 위한 예제 소스 코드
+## 결론
 
-```csharp
+ 그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서의 암호화 상태를 성공적으로 확인했습니다. 몇 줄의 코드가 우리의 삶을 훨씬 더 쉽게 만들어 줄 수 있다는 사실이 놀랍지 않나요? 질문이 있거나 문제가 발생한 경우, 주저하지 말고 다음 연락처로 문의하세요.[Aspose 지원 포럼](https://forum.aspose.com/c/words/8).
 
-	// 문서 디렉터리의 경로입니다.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
-	Console.WriteLine(info.IsEncrypted);
-            
-        
-```
+## FAQ
 
-## 자주 묻는 질문
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 .NET 애플리케이션 내에서 Word 문서를 생성, 편집, 변환 및 조작할 수 있는 강력한 라이브러리입니다.
 
-### Q: 암호화된 Word 문서를 확인하는 단계는 무엇입니까?
+### .NET Core와 함께 .NET용 Aspose.Words를 사용할 수 있나요?
+예, .NET용 Aspose.Words는 .NET Framework 및 .NET Core 모두와 호환됩니다.
 
-암호화된 Word 문서를 확인하는 단계는 다음과 같습니다.
+### Aspose.Words에 대한 임시 라이선스는 어떻게 얻나요?
+ 임시면허를 받을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 
-문서 디렉터리를 정의합니다.
+### .NET용 Aspose.Words에 대한 무료 평가판이 있습니까?
+ 예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 
-파일 형식을 감지합니다.
-
-문서가 암호화되어 있는지 확인하세요.
-
-### Q: 문서 디렉토리는 어떻게 설정하나요?
- 문서 디렉토리를 설정하려면 다음을 바꿔야 합니다.`"YOUR DOCUMENT DIRECTORY"` 다음 코드에서 문서 디렉토리의 실제 경로를 사용하세요.
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-### Q: 파일 형식을 감지하는 방법은 무엇입니까?
- 당신은 사용할 수 있습니다`DetectFileFormat` 의 방법`FileFormatUtil` 파일 형식 정보를 감지하는 클래스입니다. 다음 예에서는 암호화된 문서의 이름이 "Encrypted.docx"이고 지정된 문서 디렉터리에 있다고 가정합니다.
-
-```csharp
-FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
-```
-
-### Q: 문서가 암호화되었는지 어떻게 확인하나요?
- 당신은 사용할 수 있습니다`IsEncrypted` 의 재산`FileFormatInfo` 문서가 암호화되었는지 확인하는 개체입니다. 이 속성은 다음을 반환합니다.`true` 문서가 암호화되어 있으면 그렇지 않으면 반환됩니다.`false`. 결과가 콘솔에 표시됩니다.
-
-```csharp
-Console.WriteLine(info.IsEncrypted);
-```
-
-### Q: .NET용 Aspose.Words를 사용하여 문서가 암호화되었는지 확인하는 방법은 무엇입니까?
-이 튜토리얼에 언급된 단계를 따르고 제공된 소스 코드를 실행하면 Aspose.Words for .NET을 사용하여 문서가 암호화되었는지 확인할 수 있습니다.
+### 더 많은 예제와 문서는 어디에서 찾을 수 있나요?
+ 다음에서 포괄적인 문서와 예제를 찾을 수 있습니다.[.NET 문서 페이지용 Aspose.Words](https://reference.aspose.com/words/net/).

@@ -16,4 +16,4 @@ Ya sea que necesite convertir documentos, manipular contenido, administrar el fo
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Unidad de medida](./measure-unit/) | Aprenda a especificar la unidad de medida al convertir un documento de Word a ODT con Aspose.Words para .NET. |
+| [Unidad de medida](./measure-unit/) | Aprenda a configurar la función de unidad de medida en Aspose.Words para .NET para preservar el formato del documento durante la conversión ODT. |

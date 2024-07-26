@@ -2,91 +2,86 @@
 title: Word Belgesi Yapısını PDF Belgesine Aktarma
 linktitle: Word Belgesi Yapısını PDF Belgesine Aktarma
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile Word Belgesi Yapısını PDF Belgesine Aktarmak için adım adım kılavuz.
+description: Aspose.Words for .NET ile bir Word belgesinin yapısını PDF'ye aktarın. Belge düzenini korumak ve PDF'de gezinmeyi geliştirmek için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/export-document-structure/
 ---
+## giriiş
 
-Bu makale, Aspose.Words for .NET ile Word Belgesi Yapısını PDF Belgesine Dışa Aktar özelliğinin nasıl kullanılacağı hakkında adım adım bir kılavuz sağlar. Kodun her bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgenin yapısını nasıl dışa aktaracağınızı ve belgenin yapısının görünür olduğu bir PDF oluşturmayı anlayabileceksiniz.
+Belge manipülasyonu dünyasında gezinmek bazen yoğun bir ormanda haritasız dolaşmak gibi hissettirebilir. Ancak endişelenmeyin, yolunuzu bulmanıza yardımcı olacak mükemmel bir rehberimiz var! Bugün Aspose.Words for .NET kullanarak Word belge yapılarını PDF'ye aktarmanın büyülü dünyasına dalıyoruz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu kılavuz size her adımda net ve kesin bir şekilde yol gösterecektir.
 
-Başlamadan önce projenize Aspose.Words for .NET kütüphanesini kurup yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
+## Önkoşullar
 
-## 1. Adım: Belge dizinini tanımlayın
+Bu yolculuğa çıkmadan önce, başlamanız için ihtiyaç duyacağınız tüm temel bilgileri toplayalım.
 
- Başlamak için belgelerinizin bulunduğu dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
+- Aspose.Words for .NET: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Değilse, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio gibi .NET uyumlu bir geliştirme ortamı.
+-  Örnek Belge: Bir Word belgesi (ör.`Paragraphs.docx`) PDF'ye dönüştüreceğiniz.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words'ü kullanmak için gerekli ad alanlarını içe aktarmanız gerekir. Bu, görevimiz için gereken tüm özellik ve işlevlere erişmenizi sağlayacaktır.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Süreci yönetilebilir adımlara ayıralım. Her adım, sürecin belirli bir bölümünde size rehberlik edecek ve hiçbir şeyi kaçırmamanızı sağlayacaktır.
+
+## 1. Adım: Belge Dizininizi Kurun
+
+Öncelikle belge dizininizin yolunu tanımlayalım. Burası kaynak Word belgenizin bulunduğu ve dönüştürülen PDF'nin kaydedileceği yerdir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 2. Adım: Belgeyi yükleyin
+## Adım 2: Word Belgesini Yükleyin
 
-Daha sonra işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte belgenin "Paragraphs.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
+ Daha sonra PDF'ye dönüştürmek istediğimiz Word belgesini yüklememiz gerekiyor. Bu örnekte adında bir dosya kullanacağız.`Paragraphs.docx`.
 
 ```csharp
 Document doc = new Document(dataDir + "Paragraphs.docx");
 ```
 
-## 3. Adım: PDF olarak kaydetme seçeneklerini yapılandırın
+## 3. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
 
- PDF dosyasını düzenlerken belge yapısını dışa aktarmak ve yapıyı Adobe Acrobat Pro'nun "İçerik" gezinme bölmesinde görünür kılmak için,`PdfSaveOptions` ile nesne`ExportDocumentStructure` özellik şu şekilde ayarlandı:`true`.
+ Belge yapısını dışa aktarmak için PDF kaydetme seçeneklerini yapılandırmamız gerekir. Bu,`ExportDocumentStructure`mülkiyet`true`Bu, belgenin yapısının Adobe Acrobat Pro'nun "İçerik" gezinme bölmesinde görünmesini sağlar.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    ExportDocumentStructure = true
+};
 ```
 
-## Adım 4: Belgeyi, belge yapısıyla PDF olarak kaydedin
+## Adım 4: Belgeyi PDF olarak kaydedin
 
-Son olarak daha önce yapılandırdığımız kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedebiliriz.
+Kaydetme seçenekleri yapılandırıldığında son adım, belgeyi PDF olarak kaydetmektir. Sihir yapılan yer burasıdır!
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
 ```
 
-Bu kadar ! Aspose.Words for .NET'i kullanarak bir belge yapısını başarıyla dışa aktardınız ve belge yapısının görünür olduğu bir PDF oluşturdunuz.
-
-### Aspose.Words for .NET ile belge yapısını dışa aktarmak için örnek kaynak kodu
-
-
-```csharp
-
-            // Belgeler dizininin yolu.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document(dataDir + "Paragraphs.docx");
-
-            // Dosya boyutu artırılacak ve yapı "İçerik" gezinme bölmesinde görünecek
-            // Adobe Acrobat Pro'nun .pdf dosyasını düzenlerken.
-            PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
-
-            doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
-        
-```
-
-
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinin yapısının PDF belgesine nasıl aktarılacağını açıkladık. Özetlenen adımları izleyerek, belge yapınızın görünür olduğu bir PDF'yi kolayca oluşturabilir, böylece belgede gezinmeyi ve arama yapmayı kolaylaştırabilirsiniz. Aspose.Words for .NET'in özelliklerini kullanarak Word belgelerinizin yapısını dışa aktarın ve iyi yapılandırılmış PDF'ler oluşturun.
+Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesinin yapısını başarıyla PDF'ye aktardınız. Bu özellik, belge düzenini korumak ve karmaşık PDF'lerde gezinmeyi kolaylaştırmak için inanılmaz derecede kullanışlıdır. Bu kılavuzla artık belgeleri güvenle dönüştürebilir ve Aspose.Words'ün güçlü özelliklerinden yararlanabilirsiniz.
 
-### Sıkça Sorulan Sorular
+## SSS'ler
 
-#### S: Bir Word belgesinin yapısını PDF belgesine aktarmak nedir?
-C: Bir Word belgesinin yapısını PDF belgesine aktarmak, görünür belge yapısına sahip bir PDF oluşturur. Belge yapısı genellikle başlıklar, bölümler, paragraflar ve belgenin diğer yapılandırılmış öğelerini içerir. Bu yapı, PDF belgesinde gezinme ve arama yapmak için yararlı olabilir.
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, düzenlemesine, dönüştürmesine ve işlemesine olanak tanıyan güçlü bir kitaplıktır.
 
-#### S: Aspose.Words for .NET'i kullanarak bir Word belgesinin yapısını PDF belgesine nasıl aktarabilirim?
-C: Aspose.Words for .NET kullanarak bir Word belgesinin yapısını PDF belgesine aktarmak için şu adımları izleyin:
+### Bir Word belgesinin diğer özelliklerini PDF'ye aktarabilir miyim?
+Evet, Aspose.Words for .NET yer işaretleri, köprüler ve daha fazlası gibi özellikleri PDF'ye aktarmak için çeşitli seçenekler sunar.
 
- Bir örneğini oluşturun`Document` Word belgesinin yolunu belirten sınıf.
+### Bu süreci otomatikleştirmek mümkün mü?
+Kesinlikle! Geliştirme ortamınızdaki komut dosyalarını ve toplu işlemeyi kullanarak bu işlemi otomatikleştirebilirsiniz.
 
- Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`ExportDocumentStructure`mülkiyet`true`. Bu, belge yapısını dışa aktaracak ve PDF dosyasını düzenlerken Adobe Acrobat Pro'nun "İçerik" gezinme bölmesinde görünür hale getirecektir.
+### Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?
+ adresinden ücretsiz deneme alabilirsiniz.[Web sitesi](https://releases.aspose.com/).
 
- Kullan`Save` yöntemi`Document`Kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için sınıf.
-
-#### S: Adobe Acrobat Pro ile bir PDF belgesinin yapısını nasıl görüntüleyebilirim?
-C: Bir PDF belgesinin yapısını Adobe Acrobat Pro ile görüntülemek için şu adımları izleyin:
-
-PDF belgesini Adobe Acrobat Pro'da açın.
-
-Sol gezinme çubuğunda, "İçerik" gezinme bölmesini görüntülemek için "İçerik" simgesini tıklayın.
-
-"İçerik" gezinme bölmesinde, başlıklar, bölümler ve diğer yapılandırılmış öğelerle birlikte belge yapısını göreceksiniz.
+### Sorunlarla karşılaşırsam ne yapmalıyım?
+ adresinden yardım isteyebilirsiniz.[Aspose destek forumu](https://forum.aspose.com/c/words/8).

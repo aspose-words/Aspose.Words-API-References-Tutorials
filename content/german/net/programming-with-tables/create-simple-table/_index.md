@@ -21,7 +21,7 @@ Um mit dem Erstellen der Tabelle zu beginnen, müssen wir ein neues Dokument ers
 // Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Erstellen Sie das Dokument und initialisieren Sie den Dokumentgenerator
+//Erstellen Sie das Dokument und initialisieren Sie den Dokumentgenerator
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Rufen Sie die folgende Methode auf, um die erste Zeile zu beenden und eine neue Zeile zu beginnen
+// Rufen Sie die folgende Methode auf, um die erste Zeile zu beenden und eine neue Zeile zu beginnen
 builder. EndRow();
 
 // Aufbau der ersten Zelle der zweiten Reihe
@@ -87,7 +87,7 @@ Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument an
 	builder.StartTable();
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 1 Content.");
-	// Baue die zweite Zelle.
+	// Bauen Sie die zweite Zelle.
 	builder.InsertCell();
 	builder.Write("Row 1, Cell 2 Content.");
 	// Rufen Sie die folgende Methode auf, um die Zeile zu beenden und eine neue Zeile zu beginnen.
@@ -95,11 +95,11 @@ Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument an
 	// Bauen Sie die erste Zelle der zweiten Reihe.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 1 Content");
-	// Baue die zweite Zelle.
+	// Bauen Sie die zweite Zelle.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Signal, dass wir mit dem Erstellen der Tabelle fertig sind.
+	// Signal, dass wir mit dem Erstellen der Tabelle fertig sind.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

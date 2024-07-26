@@ -33,7 +33,7 @@ using Aspose.Words;
 
 Para começar, você precisará configurar o ambiente do seu projeto. Isso envolve a criação de um novo projeto no Visual Studio e a instalação da biblioteca Aspose.Words for .NET.
 
-### Criando um novo projeto
+### Criando um Novo Projeto
 
 1. Abra o Visual Studio e selecione Arquivo > Novo > Projeto.
 2. Escolha um aplicativo de console (.NET Core) ou um aplicativo de console (.NET Framework).

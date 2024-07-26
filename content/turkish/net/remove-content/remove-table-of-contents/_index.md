@@ -41,7 +41,7 @@ Belgenizi değiştirebilmemiz için önce nerede bulunduğunu tanımlamamız ger
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge klasörünüzün yolu ile. Burası Word dosyanızın bulunduğu yerdir.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belge klasörünüzün yolu ile. Burası Word dosyanızın bulunduğu yerdir.
 
 ## Adım 2: Belgeyi Yükleyin
 

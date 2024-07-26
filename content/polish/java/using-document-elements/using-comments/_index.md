@@ -87,4 +87,4 @@ Aspose.Words dla Java umożliwia dodawanie komentarzy o różnej długości, zaw
 
 ### 5. Gdzie mogę uzyskać dostęp do Aspose.Words dla Java?
 
-Teraz, gdy masz już pełną wiedzę na temat pracy z komentarzami w Aspose.Words dla Java, możesz z łatwością rozpocząć tworzenie dynamicznych i informacyjnych dokumentów. Miłego kodowania!
+Teraz, gdy masz już kompleksową wiedzę na temat pracy z komentarzami w Aspose.Words dla Java, możesz z łatwością rozpocząć tworzenie dynamicznych i informacyjnych dokumentów. Miłego kodowania!

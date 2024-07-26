@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Primär sidfot är sidfoten som används för udda sidor.
+	//Primär sidfot är sidfoten som används för udda sidor.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 
@@ -103,7 +103,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 
 ## Slutsats
 
-den här artikeln undersökte vi hur man tar bort sidfötter från ett Word-dokument med Aspose.Words för .NET. Genom att följa de angivna stegen kan du enkelt manipulera dina dokument och ta bort oönskade sidfötter. Aspose.Words erbjuder en kraftfull och bekväm lösning för ordbehandling med Word-dokument i din .NET-applikation.
+I den här artikeln undersökte vi hur man tar bort sidfötter från ett Word-dokument med Aspose.Words för .NET. Genom att följa de angivna stegen kan du enkelt manipulera dina dokument och ta bort oönskade sidfötter. Aspose.Words erbjuder en kraftfull och bekväm lösning för ordbehandling med Word-dokument i din .NET-applikation.
 
 ## FAQ's
 

@@ -13,5 +13,5 @@ Ordbehandling med MarkdownSaveOptions är en djupgående resurs som leder dig ge
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Exportera till Markdown med tabellinnehållsjustering](./export-into-markdown-with-table-content-alignment/) | Lär dig hur du exporterar tabellinnehåll med olika justeringar till Markdown-filer med Aspose.Words för .NET. |
-| [Ställ in bildmapp](./set-images-folder/) | Lär dig hur du ställer in bildmappen när du exporterar till Markdown med Aspose.Words för .NET. Anpassa placeringen av bilder för bättre organisation och integration.|
+| [Exportera till Markdown med tabellinnehållsjustering](./export-into-markdown-with-table-content-alignment/) | Lär dig hur du exporterar Word-dokument till Markdown med justerade tabeller med Aspose.Words för .NET. Följ vår steg-för-steg-guide för perfekta Markdown-bord. |
+| [Ställ in bildmapp](./set-images-folder/) | Konvertera Word-dokument till Markdown med korrekt tabelljustering med Aspose.Words för .NET. Följ vår detaljerade guide för perfekta resultat. |

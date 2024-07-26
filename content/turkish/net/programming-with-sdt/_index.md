@@ -16,13 +16,13 @@ Eğitimlerde sağlanan kod örnekleri, kavramları anlamanıza ve SDT kontroller
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Onay Kutusu Türü İçerik Denetimi](./check-box-type-content-control/) | Aspose.Words for .NET kullanarak bir Word belgesinde Onay Kutusu Türü İçerik Denetiminin nasıl oluşturulacağını öğrenin. |
+| [Onay Kutusu Türü İçerik Denetimi](./check-box-type-content-control/) | Bu ayrıntılı, adım adım eğitimle Aspose.Words for .NET kullanarak Word belgelerine Onay Kutusu Türü İçerik Kontrolünü nasıl ekleyeceğinizi öğrenin. |
 | [Onay Kutusunun Mevcut Durumu](./current-state-of-check-box/) | Aspose.Words for .NET'i kullanarak bir Word belgesindeki onay kutusu içerik kontrolünün mevcut durumunu nasıl alacağınızı ve ayarlayacağınızı öğrenin. |
 | [İçerik Kontrollerini Değiştirin](./modify-content-controls/) | Aspose.Words for .NET'i kullanarak bir Word belgesindeki içerik kontrollerindeki metni, açılır listeleri ve görüntüleri nasıl değiştireceğinizi öğrenin. |
 | [Açılan Kutu İçerik Kontrolü](./combo-box-content-control/) | Aspose.Words for .NET kullanarak bir Word belgesinde Birleşik Giriş Kutusu İçerik Denetimi'nin nasıl oluşturulacağını öğrenin. |
 | [Zengin Metin Kutusu İçerik Kontrolü](./rich-text-box-content-control/) | Aspose.Words for .NET'i kullanarak metin biçimlendirme ve stillendirmeyi etkinleştirerek bir Word belgesinde zengin metin kutusu içerik kontrolünü nasıl oluşturacağınızı öğrenin. |
 | [İçerik Kontrol Rengini Ayarla](./set-content-control-color/) | Aspose.Words for .NET kullanarak bir Word belgesindeki içerik kontrolünün rengini nasıl ayarlayacağınızı ve görünümünü nasıl ayarlayacağınızı öğrenin. |
-| [İçerik Kontrolünü Temizle](./clear-contents-control/) | Aspose.Words for .NET kullanarak bir Word belgesindeki bir kontrolün içeriğini nasıl temizleyeceğinizi öğrenin. |
+| [İçerik Kontrolünü Temizle](./clear-contents-control/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesinde içerik kontrolünü nasıl temizleyeceğinizi öğrenin. |
 | [SDT'yi Özel Xml Parçasına Bağla](./bind-sdt-to-custom-xml-part/) | Aspose.Words for .NET kullanarak bir SDT'yi Özel Xml Parçasına nasıl bağlayacağınızı öğrenin. |
 | [İçerik Kontrol Stilini Ayarla](./set-content-control-style/) | Tutarlı formatlama uygulayarak Aspose.Words for .NET kullanarak bir Word belgesinde içerik kontrolünün stilini nasıl ayarlayacağınızı öğrenin. |
 | [Özel Xml Parçasına Eşlenen Tablo Yinelenen Bölüm Oluşturma](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Aspose.Words for .NET kullanarak bir Word belgesinde CustomXmlPart'a eşlenen yinelenen bölüm içeren bir tablonun nasıl oluşturulacağını öğrenin. |

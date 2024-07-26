@@ -29,7 +29,7 @@ Bu eğitim serisinde, Aspose.Words'ü hem Python hem de .NET kullanarak belge b�
 - Üstbilgiler ve Altbilgiler: Markalama ve gezinme için üstbilgi ve altbilgi özelleştirmesini keşfedin.
 - İçindekiler Tablosu: Belgede gezinmek için içindekiler tablosunun nasıl oluşturulacağını ve biçimlendirileceğini anlayın.
 
-Bu eğitimler boyunca pratik bilgiler edinecek, kaynak kodu örneklerine erişecek ve adım adım rehberlik elde edeceksiniz. Bu serinin sonunda, belgeleri verimli bir şekilde bölme ve biçimlendirme becerileriyle donatılmış olacak ve belge yönetimi süreçlerinizi kolaylaştıracaksınız.
+Bu eğitimler boyunca pratik bilgiler edinecek, kaynak kodu örneklerine erişecek ve adım adım rehberlik elde edeceksiniz. Bu serinin sonunda belgeleri verimli bir şekilde bölme ve biçimlendirme becerileriyle donatılacak ve belge yönetimi süreçlerinizi kolaylaştıracaksınız.
 
 ## Belge Bölme ve Biçimlendirme Eğitimleri
 ### [Verimli Belge Bölme ve Biçimlendirme Stratejileri](./split-format-documents/)

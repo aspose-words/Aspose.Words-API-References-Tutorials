@@ -96,7 +96,7 @@ doc.first_section.body.first_paragraph.append_child(shape)
 
 ## حفظ وتصدير المستندات:
 
-احفظ المستند المعدل بتنسيقات مختلفة:
+احفظ مستندك المعدل بتنسيقات مختلفة:
 
 ```python
 doc.save("output.docx", aw.SaveFormat.DOCX)

@@ -2,7 +2,7 @@
 title: 用連字符連接語言單字
 linktitle: 用連字符連接語言單字
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中對不同語言的單字進行連字符。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中以連字符連接不同語言的單字。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-hyphenation/hyphenate-words-of-languages/
@@ -79,4 +79,4 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 
 #### Q：音節化是否適用於 Aspose.Words 中的所有語言？
 
-答：Aspose.Words 中的音節化取決於語言特定的音節化規則。儘管 Aspose.Words 支援多種語言，但某些語言可能不受支援或音節化可能不可用。查看 Aspose.Words 文件以了解哪些語言支援音節化。
+答：Aspose.Words 中的音節化取決於語言特定的音節化規則。儘管Aspose.Words支援多種語言，但某些語言可能不受支援或音節化可能不可用。查看 Aspose.Words 文件以了解哪些語言支援音節化。

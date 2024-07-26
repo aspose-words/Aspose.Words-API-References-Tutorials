@@ -15,7 +15,7 @@ Vítejte u dalšího hlubokého ponoru do světa Aspose.Words pro .NET. Dnes ře
 
 Než se ponoříme do kódu, ujistíme se, že máme vše nastaveno. Zde je to, co potřebujete:
 
-1. Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi. Pokud jej nemáte, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi. Pokud jej nemáte, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 3. Vývojové prostředí: IDE jako Visual Studio vám usnadní život.
 4. Základní znalost C#: Nemusíte být expert, ale základní znalost vám pomůže.

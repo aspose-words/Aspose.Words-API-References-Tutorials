@@ -28,7 +28,7 @@ Než začnete kódovat, ujistěte se, že máte nastavené potřebné prostřed�
     builder.write("Hello world!");
 ```
 
-## Šifrování dokumentu heslem
+## Šifrování dokumentu pomocí hesla
 
 Nyní se vrhneme na první krok – zašifrování dokumentu heslem. To přidává vašim citlivým dokumentům další vrstvu zabezpečení.
 

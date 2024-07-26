@@ -68,7 +68,7 @@ Tento krok zajistí, že váš dokument bude načten a zpracován pomocí měře
 
 ## Krok 5: Řešení výjimek
 
-Vždy je dobrým zvykem zvládnout jakékoli potenciální výjimky. Pojďme do našeho kódu přidat blok try-catch, abychom chyby zvládli elegantně.
+Vždy je dobrým zvykem zvládnout jakékoli potenciální výjimky. Pojďme do našeho kódu přidat blok try-catch, abychom mohli elegantně zvládat chyby.
 
 ```csharp
 try

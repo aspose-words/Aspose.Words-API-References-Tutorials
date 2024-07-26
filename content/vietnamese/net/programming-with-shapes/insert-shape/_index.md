@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách chèn hình vào tài liệu Word bằng
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 3: Chèn hình
- Sử dụng`InsertShape` phương pháp của`DocumentBuilder`đối tượng để chèn hình vào tài liệu. Chỉ định loại hình dạng, vị trí ngang và dọc tương đối, kích thước trang, kích thước và kiểu gói. Bạn cũng có thể thiết lập góc xoay của các hình nếu muốn.
+ Sử dụng`InsertShape` phương pháp của`DocumentBuilder` đối tượng để chèn hình vào tài liệu. Chỉ định loại hình dạng, vị trí ngang và dọc tương đối, kích thước trang, kích thước và kiểu gói. Bạn cũng có thể thiết lập góc xoay của các hình nếu muốn.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

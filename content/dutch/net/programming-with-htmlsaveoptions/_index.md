@@ -16,12 +16,12 @@ Of u nu Word-documenten naar HTML wilt converteren voor weergave op internet, HT
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Retourinformatie exporteren](./export-roundtrip-information/) | Stapsgewijze handleiding voor het exporteren van retourinformatie bij het opslaan van een document als HTML met Aspose.Words voor .NET. |
-| [Lettertypen exporteren als basis 64](./export-fonts-as-base-64/) | Stapsgewijze handleiding voor het exporteren van basis 64-lettertypen bij het opslaan van een document met Aspose.Words voor .NET. |
-| [Hulpbronnen exporteren](./export-resources/) | Stapsgewijze handleiding voor het exporteren van documentbronnen bij het opslaan als HTML met Aspose.Words voor .NET. |
+| [Retourinformatie exporteren](./export-roundtrip-information/) | Leer hoe u retourinformatie kunt exporteren met Aspose.Words voor .NET. Behoud de integriteit en opmaak van uw document tijdens conversies. |
+| [Lettertypen exporteren als basis 64](./export-fonts-as-base-64/) | Leer in deze gedetailleerde tutorial hoe u lettertypen exporteert als Base64 met behulp van Aspose.Words voor .NET. Zorg ervoor dat lettertypen zijn ingesloten en correct worden weergegeven in HTML-bestanden. |
+| [Hulpbronnen exporteren](./export-resources/) | Leer hoe u bronnen zoals CSS en lettertypen kunt exporteren en tegelijkertijd Word-documenten als HTML kunt opslaan met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding. |
 | [Converteer metabestanden naar Emf of Wmf](./convert-metafiles-to-emf-or-wmf/) | Stapsgewijze handleiding voor het converteren van metabestanden naar EMF- of WMF-formaten bij het converteren van een document naar HTML met Aspose.Words voor .NET. |
-| [Converteer metabestanden naar SVG](./convert-metafiles-to-svg/) | Stapsgewijze handleiding voor het converteren van metabestanden naar SVG-indeling bij het converteren van een document naar HTML met Aspose.Words voor .NET. |
-| [Voeg het voorvoegsel van de CSS-klassenaam toe](./add-css-class-name-prefix/) | Stapsgewijze handleiding voor het toevoegen van een CSS-klassenaamvoorvoegsel bij het converteren van een document naar HTML met Aspose.Words voor .NET. |
-| [Exporteer Cid-URL's voor Mhtml-bronnen](./export-cid-urls-for-mhtml-resources/) | Stapsgewijze handleiding voor het exporteren van CID-URL's van MHTML-bronnen bij het opslaan van een document met Aspose.Words voor .NET. |
-| [Lettertypenamen oplossen](./resolve-font-names/) | Stapsgewijze handleiding om ontbrekende lettertypenamen op te lossen bij het converteren naar HTML met Aspose.Words voor .NET. |
-| [Tekstinvoerformulierveld exporteren als tekst](./export-text-input-form-field-as-text/) | Stapsgewijze handleiding voor het exporteren van tekstinvoerformuliervelden als platte tekst met Aspose.Words voor .NET. |
+| [Converteer metabestanden naar SVG](./convert-metafiles-to-svg/) | Converteer metabestanden naar SVG in Word-documenten met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. Perfect voor ontwikkelaars van alle niveaus. |
+| [Voeg het voorvoegsel van de CSS-klassenaam toe](./add-css-class-name-prefix/) | Leer hoe u een CSS-klassenaamvoorvoegsel kunt toevoegen bij het opslaan van Word-documenten als HTML met Aspose.Words voor .NET. Inclusief stapsgewijze handleiding, codefragmenten en veelgestelde vragen. |
+| [Exporteer Cid-URL's voor Mhtml-bronnen](./export-cid-urls-for-mhtml-resources/) | Leer in deze stapsgewijze zelfstudie hoe u Cid-URL's voor MHTML-bronnen kunt exporteren met Aspose.Words voor .NET. Perfect voor ontwikkelaars van alle niveaus. |
+| [Lettertypenamen oplossen](./resolve-font-names/) | Leer hoe u lettertypenamen in Word-documenten kunt omzetten bij het converteren naar HTML met Aspose.Words voor .NET. Stap-voor-stap handleiding met gedetailleerde uitleg. |
+| [Tekstinvoerformulierveld exporteren als tekst](./export-text-input-form-field-as-text/) | Leer hoe u tekstinvoerformuliervelden als platte tekst kunt exporteren met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze handleiding. |

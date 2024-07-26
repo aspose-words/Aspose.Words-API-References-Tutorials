@@ -10,7 +10,7 @@ url: /id/python-net/tables-and-formatting/document-table-styles-formatting/
 
 Tabel dokumen memainkan peran penting dalam menyajikan informasi secara terorganisir dan menarik secara visual. Aspose.Words untuk Python menyediakan seperangkat alat canggih yang memungkinkan pengembang bekerja secara efisien dengan tabel dan menyesuaikan gaya dan pemformatannya. Pada artikel ini, kita akan mempelajari cara memanipulasi dan menyempurnakan tabel dokumen menggunakan Aspose.Words untuk Python API. Ayo selami!
 
-## Memulai dengan Aspose.Words untuk Python
+## Memulai Aspose.Words untuk Python
 
 Sebelum kita mendalami secara spesifik gaya dan pemformatan tabel dokumen, pastikan Anda telah menyiapkan alat yang diperlukan:
 
@@ -86,7 +86,7 @@ Untuk membuat dan menyisipkan tabel ke dalam dokumen menggunakan Aspose.Words un
 
 ## Menata Tabel dengan Aspose.Words
 
-Aspose.Words for Python menyediakan serangkaian opsi gaya untuk membuat tabel Anda menarik secara visual:
+Aspose.Words untuk Python menyediakan berbagai opsi gaya untuk membuat tabel Anda menarik secara visual:
 
 1. Gaya Tabel: Terapkan gaya tabel yang telah ditentukan sebelumnya untuk mendapatkan tampilan profesional.
 
@@ -196,7 +196,7 @@ Gabungkan header dan footer ke dalam tabel Anda untuk konteks yang lebih baik:
 
 Pastikan tata letak tabel Anda disesuaikan secara otomatis berdasarkan konten:
 
-1. Paskan Otomatis ke Jendela: Memungkinkan tabel agar sesuai dengan lebar halaman.
+1. Pas Otomatis ke Jendela: Memungkinkan tabel pas dengan lebar halaman.
 
     ```python
     table.allow_auto_fit = True

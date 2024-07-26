@@ -13,7 +13,7 @@ url: /es/net/find-and-replace-text/simple-find-replace/
 
 ## Requisitos previos
 
-Antes de sumergirnos en la magia del reemplazo de texto, asegurémonos de tener todo lo que necesita:
+Antes de sumergirnos en la magia del reemplazo de texto, asegurémonos de que tiene todo lo que necesita:
 
 1.  Aspose.Words para la biblioteca .NET: puede descargarlo desde[aquí](https://releases.aspose.com/words/net/) . Si aún no lo has hecho, consigue una prueba gratuita[aquí](https://releases.aspose.com/).
 
@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Hello _CustomerName_,");
 ```
 
-Para asegurarnos de que todo esté funcionando correctamente hasta el momento, imprimimos el texto del documento original en la consola.
+Para asegurarnos de que todo funciona correctamente hasta el momento, imprimimos el texto del documento original en la consola.
 
 ```csharp
 Console.WriteLine("Original document text: " + doc.Range.Text);

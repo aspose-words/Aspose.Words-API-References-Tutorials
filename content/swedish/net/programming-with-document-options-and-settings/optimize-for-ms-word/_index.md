@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
 
 ## Slutsats
 
-Och där har du det! Med bara några rader kod har du optimerat ditt dokument för MS Word 2016 med Aspose.Words för .NET. Detta säkerställer att ditt dokument ser bra ut oavsett vilken version av Word din publik använder. Så enkelt och okomplicerat är det. Så fortsätt och prova! Dina dokument kommer att tacka dig.
+Och där har du det! Med bara några rader kod har du optimerat ditt dokument för MS Word 2016 med Aspose.Words för .NET. Detta säkerställer att ditt dokument ser bra ut oavsett vilken version av Word din publik använder. Så enkelt och okomplicerat är det. Så varsågod och prova! Dina dokument kommer att tacka dig.
 
 ## FAQ's
 

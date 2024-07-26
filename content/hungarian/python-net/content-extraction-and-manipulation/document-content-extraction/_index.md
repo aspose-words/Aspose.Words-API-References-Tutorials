@@ -91,7 +91,7 @@ for hyperlink in doc.get_child_nodes(doc.is_hyperlink, True):
 
 ## Fejlécek és láblécek kibontása
 
-Tartalom kinyerése a fej- és láblécekből:
+Tartalom kinyerése fejlécekből és láblécekből:
 
 ```python
 for section in doc.sections:

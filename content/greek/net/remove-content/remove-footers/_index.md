@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Το κύριο υποσέλιδο είναι το υποσέλιδο που χρησιμοποιείται για μονές σελίδες.
+	//Το κύριο υποσέλιδο είναι το υποσέλιδο που χρησιμοποιείται για μονές σελίδες.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

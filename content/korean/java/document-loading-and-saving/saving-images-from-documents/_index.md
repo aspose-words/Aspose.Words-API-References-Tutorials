@@ -136,7 +136,7 @@ public void getJpegPageRange() throws Exception
 	// 문서의 첫 번째 페이지만 변환하려면 "PageSet"을 "0"으로 설정합니다.
 	options.setPageSet(new PageSet(0));
 	// 이미지의 밝기와 대비를 변경합니다.
-	// 둘 다 0-1 규모이며 기본적으로 0.5입니다.
+	// 둘 다 0-1 척도이며 기본적으로 0.5입니다.
 	options.setImageBrightness(0.3f);
 	options.setImageContrast(0.7f);
 	// 수평 해상도를 변경합니다.

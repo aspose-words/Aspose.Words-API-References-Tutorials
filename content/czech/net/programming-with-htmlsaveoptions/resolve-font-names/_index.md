@@ -2,68 +2,101 @@
 title: Vyřešte názvy písem
 linktitle: Vyřešte názvy písem
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce řešením chybějících názvů písem při převodu do HTML pomocí Aspose.Words for .NET.
+description: Naučte se rozlišovat názvy písem v dokumentech aplikace Word při převodu do HTML pomocí Aspose.Words for .NET. Průvodce krok za krokem s podrobným vysvětlením.
 type: docs
 weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
+## Úvod
 
-V tomto tutoriálu vás provedeme zdrojovým kódem C# k vyřešení chybějících názvů písem pomocí Aspose.Words for .NET. Tato funkce umožňuje automaticky vyřešit chybějící názvy písem při převodu dokumentu do HTML.
+Ahoj, kolego kodéru! Pokud jste se někdy při ukládání dokumentů Wordu jako HTML potýkali s problémy s písmy, nejste sami. Fonty mohou být složité, ale nebojte se; Kryji ti záda. Dnes se ponoříme do toho, jak vyřešit názvy písem v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tato příručka vás provede procesem krok za krokem a zajistí, že vaše písma budou ve formátu HTML vypadat správně.
 
-## Krok 1: Nastavení projektu
+## Předpoklady
 
-Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistěte se, že váš projekt odkazuje na knihovnu Aspose.Words for .NET.
+Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-## Krok 2: Načtení dokumentu
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+2.  Platná licence: Můžete si zakoupit licenci[tady](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+3. Základní znalost C# a .NET: Tento výukový program předpokládá, že ovládáte základní koncepty programování v C#.
+4. Visual Studio: Jakákoli verze, která podporuje .NET framework.
 
-V tomto kroku načteme dokument ke zpracování. K načtení dokumentu ze zadaného adresáře použijte následující kód:
+Nyní, když máme naše předpoklady vyřešené, pojďme se vrhnout do akce!
+
+## Importovat jmenné prostory
+
+Než začneme kódovat, ujistěte se, že jste do projektu importovali potřebné jmenné prostory. To je zásadní pro přístup k funkcím Aspose.Words.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Krok 1: Nastavení adresáře dokumentů
+
+Nejprve nastavíme cestu k adresáři s dokumenty. Zde se nachází váš dokument aplikace Word a kam uložíte svůj výstup.
+
+```csharp
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+Vysvětlení:
+ Tady,`dataDir` obsahuje cestu k vašemu adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou ve vašem systému.
+
+## Krok 2: Načtení dokumentu aplikace Word
+
+Dále musíme načíst dokument aplikace Word, který chceme zpracovat. Tento dokument by měl obsahovat písma, která chcete vyřešit.
+
+```csharp
 Document doc = new Document(dataDir + "Missing font.docx");
 ```
 
- Tento kód vytvoří instanci`Document` načtením dokumentu ze zadaného adresáře.
+Vysvětlení:
+ Vytváříme a`Document` objekt a načtěte dokument aplikace Word s názvem "Chybí písmo.docx" z našeho`dataDir`.
 
-## Krok 3: Konfigurace možností zálohování HTML
+## Krok 3: Konfigurace možností uložení HTML
 
-Nyní nakonfigurujeme možnosti uložení HTML pro vyřešení chybějících názvů písem během převodu. Použijte následující kód:
+Nyní nastavíme možnosti pro uložení dokumentu jako HTML. Zde se ujistíme, že názvy písem jsou správně vyřešeny.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 {
-PrettyFormat = true,
-ResolveFontNames=true
+    PrettyFormat = true,
+    ResolveFontNames = true
 };
 ```
 
- Tento kód vytvoří instanci`HtmlSaveOptions` a nastaví`ResolveFontNames` možnost`true` vyřešení chybějících názvů písem při převodu do HTML. Také`PrettyFormat` možnost je nastavena na`true` získat pěkně naformátovaný HTML kód.
+Vysvětlení:
+ Vytvoříme instanci`HtmlSaveOptions` s`SaveFormat.Html` . The`PrettyFormat` volba činí výstup HTML čitelnějším a`ResolveFontNames` zajišťuje překlad názvů písem.
 
-## Krok 4: Převod a uložení dokumentu do HTML
+## Krok 4: Uložení dokumentu jako HTML
 
-Nakonec převedeme dokument do HTML pomocí dříve nakonfigurovaných možností uložení HTML. Použijte následující kód:
+Nakonec dokument uložíme jako soubor HTML pomocí nakonfigurovaných možností uložení.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 ```
 
-Tento kód převede dokument na HTML automatickým vyřešením chybějících názvů písem a uloží převedený soubor HTML do určeného adresáře.
+Vysvětlení:
+ Zavoláme na`Save` metoda na`Document` objekt s uvedením výstupní cesty a možností uložení, které jsme nakonfigurovali. Tím se vygeneruje soubor HTML s vyřešenými názvy písem.
 
-### Příklad zdrojového kódu pro Resolve Font Names using Aspose.Words for .NET
+## Závěr
 
-```csharp
+A tady to máte! Pomocí těchto kroků jste úspěšně vyřešili názvy písem při převodu dokumentu aplikace Word do HTML pomocí Aspose.Words for .NET. To nejen zajistí, že se vaše písma zobrazí správně, ale také váš výstup HTML bude vypadat uhlazeně a profesionálně. Šťastné kódování!
 
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Missing font.docx");
+## FAQ
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
-	{
-		PrettyFormat = true, ResolveFontNames = true
-	};
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word programově.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
+### Jak nainstaluji Aspose.Words for .NET?
+ Aspose.Words for .NET si můžete stáhnout z[tady](https://releases.aspose.com/words/net/). Postupujte podle pokynů k instalaci uvedených v dokumentaci.
 
-```
+### Mohu používat Aspose.Words pro .NET bez licence?
+ Ano, ale bude mít určitá omezení. Pro plnou funkčnost si můžete zakoupit licenci[tady](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
 
- Ujistěte se, že jste zadali správnou cestu k adresáři dokumentů v`dataDir` variabilní.
+### Proč se moje písma v HTML nezobrazují správně?
+ To se může stát, pokud nejsou písma během převodu správně vyřešena. Použitím`ResolveFontNames = true` v`HtmlSaveOptions` může pomoci vyřešit tento problém.
+
+### Kde mohu získat podporu pro Aspose.Words pro .NET?
+ Můžete získat podporu od[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).

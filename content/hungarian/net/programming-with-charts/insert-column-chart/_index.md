@@ -13,7 +13,7 @@ Ebből az oktatóanyagból megtudhatja, hogyan javíthatja Word-dokumentumait az
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
 
 - C# programozási és .NET környezeti alapismeretek.
 -  Az Aspose.Words for .NET telepítve van a fejlesztői környezetében. Letöltheti[itt](https://releases.aspose.com/words/net/).
@@ -50,7 +50,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. lépés: Adjon hozzá adatokat a diagramhoz
+## 3. lépés: Adatok hozzáadása a diagramhoz
 
  Adjon hozzá adatsorokat a diagramhoz a`Series` tulajdona a`Chart` tárgy.
 

@@ -75,7 +75,7 @@ Podsumowując, łączenie dokumentów przy zachowaniu ich oryginalnego formatowa
 ### Co się stanie, jeśli moje dokumenty mają różne style?
 Aspose.Words z wdziękiem obsługuje różne style, zachowując oryginalne formatowanie tak wiernie, jak to możliwe.
 
-### Czy mogę łączyć dokumenty o różnych formatach?
+### Czy mogę łączyć dokumenty w różnych formatach?
 Tak, Aspose.Words obsługuje łączenie dokumentów w różnych formatach, w tym DOCX, DOC, RTF i innych.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?

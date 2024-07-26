@@ -50,7 +50,7 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 
 Pastikan untuk menentukan jalur dan nama file yang benar untuk dokumen keluaran.
 
-### Contoh kode sumber untuk Format Baris Nonaktifkan Pemisahan Halaman menggunakan Aspose.Words untuk .NET 
+### Contoh kode sumber untuk Row Format Disable Break Across Pages menggunakan Aspose.Words untuk .NET 
 
 ```csharp
 // Jalur ke direktori dokumen Anda

@@ -92,11 +92,11 @@ För ytterligare information och detaljerade API-referenser, besök[Aspose.Words
 ### Kan jag använda olika layouter i ett enda dokument?
 Ja, du kan ha flera avsnitt i ett dokument, var och en med sina egna layoutinställningar. Detta gör att du kan använda olika layouter efter behov.
 
-### Är Aspose.Words kompatibel med olika Word-format?
+### Är Aspose.Words kompatibelt med olika Word-format?
 Ja, Aspose.Words stöder olika Word-format, inklusive DOC, DOCX, RTF och mer.
 
 ### Hur lägger jag till bilder i sidhuvuden eller sidfötter?
  Du kan använda`Shape` klass för att lägga till bilder i sidhuvuden eller sidfötter. Se API-dokumentationen för detaljerad vägledning.
 
 ### Var kan jag ladda ner den senaste versionen av Aspose.Words för Python?
- Du kan ladda ner den senaste versionen av Aspose.Words for Python från[Aspose.Words släpper sida](https://releases.aspose.com/words/python/).
+ Du kan ladda ner den senaste versionen av Aspose.Words för Python från[Aspose.Words släpper sida](https://releases.aspose.com/words/python/).

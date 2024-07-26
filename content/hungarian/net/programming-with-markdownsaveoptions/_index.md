@@ -13,5 +13,5 @@ Words Processing with MarkdownSaveOptions egy részletes forrás, amely végigve
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Exportálás a Markdown-ba a táblázattartalom igazításával](./export-into-markdown-with-table-content-alignment/) | Ismerje meg, hogyan exportálhat különböző igazítású táblázattartalmakat Markdown-fájlokba az Aspose.Words for .NET segítségével. |
-| [Képek mappa beállítása](./set-images-folder/) | Ismerje meg, hogyan állíthatja be a képek mappáját, amikor az Aspose.Words for .NET segítségével Markdownba exportál. Testreszabhatja a képek elhelyezését a jobb rendszerezés és integráció érdekében.|
+| [Exportálás a Markdown-ba a táblázattartalom igazításával](./export-into-markdown-with-table-content-alignment/) | Ismerje meg, hogyan exportálhat Word-dokumentumokat a Markdownba igazított táblázatokkal az Aspose.Words for .NET használatával. Kövesse lépésről lépésre útmutatónkat a tökéletes Markdown táblázatokhoz. |
+| [Képek mappa beállítása](./set-images-folder/) | Konvertálja a Word dokumentumokat Markdown formátumba megfelelő táblázatigazítással az Aspose.Words for .NET segítségével. Kövesse részletes útmutatónkat a tökéletes eredmény érdekében. |

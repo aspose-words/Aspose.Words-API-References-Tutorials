@@ -17,7 +17,7 @@ url: /th/net/programming-with-shapes/aspect-ratio-locked/
 - ความรู้พื้นฐานเกี่ยวกับ C# และการประมวลผลคำด้วยเอกสาร Word
 
 ## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสาร
- เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"`ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสาร
+ เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสาร
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 3: แทรกรูปร่างรูปภาพ
- ใช้`InsertImage` วิธีการของ`DocumentBuilder`วัตถุเพื่อแทรกรูปร่างรูปภาพลงในเอกสาร ระบุเส้นทางไปยังไฟล์รูปภาพเป็นพารามิเตอร์
+ ใช้`InsertImage` วิธีการของ`DocumentBuilder` วัตถุเพื่อแทรกรูปร่างรูปภาพลงในเอกสาร ระบุเส้นทางไปยังไฟล์รูปภาพเป็นพารามิเตอร์
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

@@ -231,7 +231,7 @@ builder.write("Hello, World!");
 doc.save("automated_document.docx", SaveFormat.DOCX);
 ```
 
-### Làm cách nào tôi có thể so sánh hai tài liệu Word để tìm sự khác biệt?
+### Làm cách nào để so sánh hai tài liệu Word về sự khác biệt?
 
 Bạn có thể sử dụng tính năng so sánh tài liệu trong Aspose.Words for Java để so sánh hai tài liệu và nêu bật những điểm khác biệt.
 

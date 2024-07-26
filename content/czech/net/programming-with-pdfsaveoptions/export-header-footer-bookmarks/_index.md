@@ -2,35 +2,49 @@
 title: Exportujte záložky Záhlaví dokumentu Word do dokumentu PDF
 linktitle: Exportujte záložky Záhlaví dokumentu Word do dokumentu PDF
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Průvodce krok za krokem pro export záložek záhlaví zápatí dokumentu do záložek dokumentu PDF pomocí Aspose.Words pro .NET.
+description: Naučte se exportovat záložky záhlaví a zápatí z dokumentu aplikace Word do PDF pomocí Aspose.Words for .NET s naším podrobným průvodcem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## Úvod
 
-Tento článek poskytuje podrobného průvodce, jak exportovat záložky záhlaví zápatí dokumentu aplikace Word do funkce dokumentu PDF pomocí Aspose.Words for .NET. Každou část kódu si podrobně vysvětlíme. Na konci tohoto tutoriálu budete schopni porozumět tomu, jak exportovat záložky ze záhlaví a zápatí dokumentu a vygenerovat PDF s příslušnými záložkami.
+Převod dokumentů aplikace Word do formátu PDF je běžný úkol, zejména pokud chcete dokumenty sdílet nebo archivovat při zachování jejich formátování. Někdy tyto dokumenty obsahují důležité záložky v záhlaví a zápatí. V tomto tutoriálu projdeme procesem exportu těchto záložek z dokumentu Word do PDF pomocí Aspose.Words for .NET.
 
-Než začnete, ujistěte se, že jste ve svém projektu nainstalovali a nakonfigurovali knihovnu Aspose.Words for .NET. Knihovnu a pokyny k instalaci najdete na webu Aspose.
+## Předpoklady
 
-## Krok 1: Definujte adresář dokumentů
+Než se ponoříme, ujistěte se, že máte následující:
 
- Chcete-li začít, musíte definovat cestu k adresáři, kde jsou umístěny vaše dokumenty. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+- Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Nastavte své vývojové prostředí. Můžete použít Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
+- Základní znalost C#: Spolu s příklady kódu je vyžadována znalost programování C#.
+
+## Importovat jmenné prostory
+
+Nejprve musíte do svého projektu C# importovat potřebné jmenné prostory. Přidejte tyto řádky do horní části souboru kódu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Krok 2: Nahrajte dokument
+Pojďme si tento proces rozdělit do snadno pochopitelných kroků.
 
-Dále musíme načíst dokument, který chceme zpracovat. V tomto příkladu předpokládáme, že dokument se nazývá "Záložky v záhlaví a zápatí.docx" a je umístěn v určeném adresáři dokumentů.
+## Krok 1: Inicializujte dokument
+
+Prvním krokem je načtení dokumentu aplikace Word. Můžete to udělat takto:
 
 ```csharp
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## Krok 3: Nakonfigurujte možnosti uložení jako PDF
+V tomto kroku jednoduše zadáte cestu k adresáři dokumentů a načtete dokument aplikace Word.
 
- Chcete-li exportovat záložky záhlaví a zápatí, musíme nakonfigurovat`PdfSaveOptions` objekt. V tomto příkladu nastavíme výchozí úroveň obrysu záložek na 1 a režim exportu záložek záhlaví a zápatí na „První“.
+## Krok 2: Nakonfigurujte možnosti uložení PDF
+
+Dále musíte nakonfigurovat možnosti ukládání PDF, abyste zajistili, že se záložky v záhlaví a zápatí exportují správně.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## Krok 4: Uložte dokument jako PDF se záložkami záhlaví a zápatí
+ Zde nastavujeme`PdfSaveOptions` . The`DefaultBookmarksOutlineLevel` vlastnost nastavuje úroveň osnovy pro záložky a`HeaderFooterBookmarksExportMode` vlastnost zajišťuje, že se exportuje pouze první výskyt záložek v záhlaví a zápatí.
 
-Nakonec můžeme dokument uložit ve formátu PDF pomocí dříve nakonfigurovaných možností uložení.
+## Krok 3: Uložte dokument jako PDF
+
+Nakonec uložte dokument jako PDF s nakonfigurovanými možnostmi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-To je vše ! Úspěšně jste exportovali záložky záhlaví a zápatí z dokumentu a pomocí Aspose.Words for .NET vygenerovali PDF s příslušnými záložkami.
-
-### Ukázkový zdrojový kód pro export záložek záhlaví a zápatí pomocí Aspose.Words pro .NET
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+V tomto kroku ukládáte dokument do zadané cesty s možnostmi, které jste nakonfigurovali.
 
 ## Závěr
 
-tomto tutoriálu jsme vysvětlili, jak exportovat záložky záhlaví a zápatí z dokumentu aplikace Word do dokumentu PDF pomocí Aspose.Words for .NET. Exportované záložky umožňují snadnou navigaci a rychlý odkaz na odpovídající záhlaví a zápatí ve vygenerovaném dokumentu PDF. Podle popsaných kroků exportujte záložky záhlaví a zápatí z dokumentu a vygenerujte PDF s příslušnými záložkami pomocí Aspose.Words for .NET. Ujistěte se, že jste zadali správnou cestu ke svým dokumentům a podle potřeby nakonfigurujte možnosti uložení.
+tady to máte! Podle těchto kroků můžete snadno exportovat záložky ze záhlaví a zápatí dokumentu aplikace Word do PDF pomocí Aspose.Words for .NET. Tato metoda zajišťuje zachování důležitých navigačních pomůcek v dokumentu ve formátu PDF, což čtenářům usnadňuje procházení dokumentu.
 
-### Často kladené otázky
+## FAQ
 
-### Otázka: Co je export záložek záhlaví a zápatí z dokumentu aplikace Word do dokumentu PDF?
-Odpověď: Export záložek záhlaví a zápatí z dokumentu aplikace Word do dokumentu PDF je funkce pro uchování a generování záložek v dokumentu PDF ze záhlaví a zápatí. zápatí původního dokumentu aplikace Word. To umožňuje uživatelům rychle a snadno procházet dokumentem PDF pomocí záložek odpovídajících záhlaví a zápatí.
+### Mohu exportovat všechny záložky z dokumentu Word do PDF?
 
-### Otázka: Jak mohu pomocí Aspose.Words for .NET exportovat záložky záhlaví a zápatí z dokumentu aplikace Word do dokumentu PDF?
-A: Chcete-li exportovat záložky záhlaví a zápatí z dokumentu aplikace Word do dokumentu PDF pomocí Aspose.Words for .NET, postupujte takto:
+ Ano můžeš. V`PdfSaveOptions`, můžete v případě potřeby upravit nastavení tak, aby zahrnovala všechny záložky.
 
- Nahrazením nastavte cestu k adresáři, kde jsou umístěny vaše dokumenty`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+### Co když chci exportovat záložky i z těla dokumentu?
 
- Vložte dokument, který chcete zpracovat, pomocí`Document` třídy a zadejte cestu k dokumentu aplikace Word v zadaném adresáři dokumentů.
+ Můžete nakonfigurovat`OutlineOptions` v`PdfSaveOptions` zahrnout záložky z těla dokumentu.
 
- Nakonfigurujte možnosti uložení jako PDF vytvořením instance souboru`PdfSaveOptions` třídy a nastavení příslušných možností záložky záhlaví a zápatí.
+### Je možné upravit úrovně záložek v PDF?
 
- Uložte dokument ve formátu PDF pomocí`Save` metoda`Document` třída určující cestu a možnosti uložení.
+ Absolutně! Můžete si přizpůsobit`DefaultBookmarksOutlineLevel` vlastnost pro nastavení různých úrovní obrysu pro vaše záložky.
 
-### Otázka: Jaké jsou výhody exportu záložek záhlaví a zápatí do dokumentu PDF?
-A: Výhody exportu záložek záhlaví a zápatí do dokumentu PDF jsou:
+### Jak mohu pracovat s dokumenty bez záložek?
 
-Snadná navigace: Záložky umožňují uživatelům snadno se pohybovat v dokumentu PDF odkazem na konkrétní záhlaví a zápatí.
+Pokud váš dokument nemá žádné záložky, bude PDF vygenerováno bez obrysu záložek. Ujistěte se, že váš dokument obsahuje záložky, pokud je v PDF potřebujete.
 
-Rychlý průvodce: Záložky umožňují uživatelům rychle najít relevantní části dokumentu PDF na základě záhlaví a zápatí.
+### Mohu tuto metodu použít pro jiné typy dokumentů, jako je DOCX nebo RTF?
+
+Ano, Aspose.Words for .NET podporuje různé typy dokumentů, včetně DOCX, RTF a dalších.

@@ -55,7 +55,7 @@ is_root: true
 | [表のスタイルと書式設定によるワードプロセッシング](./programming-with-table-styles-and-formatting/) | Aspose.Words for .NET で表のスタイルと書式をプログラムする方法を学びます。ステップバイステップのチュートリアルと C# のサンプル コードを使用して、定義済みのスタイルを適用したり、セルの書式や境界線などをカスタマイズしたりする方法を学びます。 |  
 | [表を使ったワード処理](./programming-with-tables/) | Aspose.Words for .NET でテーブルをプログラミングする方法を学びます。ステップバイステップのチュートリアルと C# コード例を使用して、Word 文書でテーブルを作成、操作、および書式設定する方法を学びます。 |  
 | [Htmlloadoptions による単語処理](./programming-with-htmlloadoptions/) | Aspose.Words for .NET で HTML 読み込みオプションを使用してプログラミングする方法を学びます。チュートリアルでは、HTML ドキュメントを読み込むためのさまざまな機能について説明します。 |  
-| [Loadoptions による単語処理](./programming-with-loadoptions/) | Aspose.Words for .NET で LoadOptions を使用してプログラミングする方法を学びます。Word ドキュメントの読み込みと読み込みのカスタマイズに関するサンプル コードを含む詳細なチュートリアルです。 |  
+| [Loadoptions による単語処理](./programming-with-loadoptions/) | Aspose.Words for .NET の LoadOptions を使用してプログラミングする方法を学びます。Word ドキュメントの読み込みと読み込みのカスタマイズに関するサンプル コードを含む詳細なチュートリアルです。 |  
 | [Pdfloadoptions による単語処理](./programming-with-pdfloadoptions/) | Aspose.Words for .NET の PDF 読み込みオプションを使用した Words 処理について学習します。ステップバイステップのチュートリアルとサンプル コードを使用して、PDF 形式の Word 文書を読み込み、操作する方法を学習します。 |  
 | [Rtfloadoptions による単語処理](./programming-with-rtfloadoptions/) | Aspose.Words for .NET の RTF 読み込みオプションを使用した Words 処理について学習します。ステップバイステップのチュートリアルとサンプル C# コードを使用して、RTF ドキュメントを読み込み、操作する方法を学習します。 |  
 | [Txtloadoptions による単語処理](./programming-with-txtloadoptions/) | Aspose.Words for .NET でテキスト ファイルの読み込みオプションを使用してプログラミングする方法を学びます。ステップ バイ ステップのチュートリアルと C# のサンプル コードを使用して、エンコードの指定方法、不明な文字の無視方法、改行の処理方法などを学習します。 |  

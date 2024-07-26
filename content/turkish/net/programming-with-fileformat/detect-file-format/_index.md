@@ -2,21 +2,45 @@
 title: Belge Dosya Formatını Algıla
 linktitle: Belge Dosya Formatını Algıla
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile belge dosya formatını algılamak için adım adım kılavuz.
+description: Bu kapsamlı, adım adım kılavuzla Aspose.Words for .NET kullanarak belge dosya formatlarını nasıl tespit edeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-fileformat/detect-file-format/
 ---
+## giriiş
 
-Bu makale, belge dosyası formatı algılama özelliğinin Aspose.Words for .NET ile nasıl kullanılacağına ilişkin adım adım bir kılavuz sağlar. Kodun her bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda farklı belge dosyalarının formatının nasıl tespit edileceğini anlayabileceksiniz.
+Günümüzün dijital dünyasında, farklı belge formatlarını verimli bir şekilde yönetmek çok önemlidir. İster Word, PDF, HTML veya diğer formatları kullanıyor olun, bu dosyaları doğru bir şekilde algılayıp işleyebilmek size çok fazla zaman ve emek tasarrufu sağlayabilir. Bu eğitimde Aspose.Words for .NET kullanarak belge dosya formatlarının nasıl tespit edileceğini inceleyeceğiz. Bu kılavuz, ön koşullardan ayrıntılı adım adım kılavuza kadar bilmeniz gereken her şeyde size yol gösterecektir.
 
-Başlamadan önce projenize Aspose.Words for .NET kütüphanesini kurup yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
+## Önkoşullar
 
-## 1. Adım: Dizinleri tanımlayın
+Koda dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
- Başlamak için, dosyaları formatlarına göre saklamak istediğiniz dizinleri tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`Belgeler dizininizin gerçek yolu ile. Henüz mevcut değilse "Desteklenen", "Bilinmeyen", "Şifrelenmiş" ve "Pre97" dizinlerini oluşturuyoruz.
+-  Aspose.Words for .NET: Buradan indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/) . Geçerli bir lisansınız olduğundan emin olun. Değilse, bir tane alabilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license/).
+- Visual Studio: Herhangi bir güncel sürüm düzgün çalışacaktır.
+- .NET Framework: Doğru sürümün kurulu olduğundan emin olun.
+
+## Ad Alanlarını İçe Aktar
+
+Başlamak için projenize gerekli ad alanlarını içe aktarmanız gerekir:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.FileFormats;
+using Aspose.Words.FileFormats.Util;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+```
+
+Takip etmeyi kolaylaştırmak için örneği birden fazla adıma ayıralım.
+
+## 1. Adım: Dizinleri Ayarlayın
+
+Öncelikle dosyaların formatlarına göre sıralanacağı dizinleri ayarlamamız gerekiyor.
+
+```csharp
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 string supportedDir = dataDir + "Supported";
 string unknownDir = dataDir + "Unknown";
@@ -24,207 +48,127 @@ string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
 // Henüz mevcut değilse dizinleri oluşturun.
-if (Directory.Exists(supportedDir) == false)
-Directory.CreateDirectory(supportedDir);
-if (Directory.Exists(unknownDir) == false)
-Directory.CreateDirectory(unknownDir);
-if (Directory.Exists(encryptedDir) == false)
-Directory.CreateDirectory(encryptedDir);
-if (Directory.Exists(pre97Dir) == false)
-Directory.CreateDirectory(pre97Dir);
+if (!Directory.Exists(supportedDir))
+    Directory.CreateDirectory(supportedDir);
+if (!Directory.Exists(unknownDir))
+    Directory.CreateDirectory(unknownDir);
+if (!Directory.Exists(encryptedDir))
+    Directory.CreateDirectory(encryptedDir);
+if (!Directory.Exists(pre97Dir))
+    Directory.CreateDirectory(pre97Dir);
 ```
 
-## 2. Adım: Dosyalara Göz Atın
+## Adım 2: Dosya Listesini Alın
 
- Daha sonra şunu kullanırız:`GetFiles` yöntemi`Directory` Belirtilen dizindeki dosyaların listesini almak için sınıf. Ayrıca bir tane kullanıyoruz`Where` "Bozuk belge.docx" adlı belirli bir dosyayı hariç tutmak için yan tümce.
+Daha sonra, bozuk belgeler hariç, dizindeki dosyaların bir listesini alacağız.
 
 ```csharp
-IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
+IEnumerable<string> fileList = Directory.GetFiles(dataDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## 3. Adım: Her dosyanın formatını tespit edin
+## 3. Adım: Dosya Formatlarını Algılama
 
- Listedeki her dosyanın üzerinden geçiyoruz ve`DetectFileFormat` yöntemi`FileFormatUtil` Dosyanın biçimini algılamak için sınıf. Ayrıca tespit edilen belge türünü de görüntüleriz.
+Artık her dosyayı yineliyoruz ve Aspose.Words'ü kullanarak formatını tespit ediyoruz.
 
 ```csharp
 foreach (string fileName in fileList)
 {
-string nameOnly = Path. GetFileName(fileName);
-Console.Write(nameOnly);
+    string nameOnly = Path.GetFileName(fileName);
 
-FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
+    Console.Write(nameOnly);
 
-// Belge türünü görüntüle
-switch (info.LoadFormat)
-{
-LoadFormat.Doc box:
-Console.WriteLine("\tDocument Microsoft Word 97-2003.");
-break;
-LoadFormat.Dot box:
-Console.WriteLine("\tMicrosoft Word 97-2003 template.");
-break;
-LoadFormat.Docx box:
-Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
-break;
-// ... Desteklenen diğer belge biçimleri için vakalar ekleyin
-LoadFormat.Unknown case:
-Console.WriteLine("\tFormat in
+    FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-known.");
-break;
-}
+    // Belge türünü görüntüle
+    switch (info.LoadFormat)
+    {
+        case LoadFormat.Doc:
+            Console.WriteLine("\tMicrosoft Word 97-2003 document.");
+            break;
+        case LoadFormat.Dot:
+            Console.WriteLine("\tMicrosoft Word 97-2003 template.");
+            break;
+        case LoadFormat.Docx:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Document.");
+            break;
+        case LoadFormat.Docm:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Document.");
+            break;
+        case LoadFormat.Dotx:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Template.");
+            break;
+        case LoadFormat.Dotm:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Template.");
+            break;
+        case LoadFormat.FlatOpc:
+            Console.WriteLine("\tFlat OPC document.");
+            break;
+        case LoadFormat.Rtf:
+            Console.WriteLine("\tRTF format.");
+            break;
+        case LoadFormat.WordML:
+            Console.WriteLine("\tMicrosoft Word 2003 WordprocessingML format.");
+            break;
+        case LoadFormat.Html:
+            Console.WriteLine("\tHTML format.");
+            break;
+        case LoadFormat.Mhtml:
+            Console.WriteLine("\tMHTML (Web archive) format.");
+            break;
+        case LoadFormat.Odt:
+            Console.WriteLine("\tOpenDocument Text.");
+            break;
+        case LoadFormat.Ott:
+            Console.WriteLine("\tOpenDocument Text Template.");
+            break;
+        case LoadFormat.DocPreWord60:
+            Console.WriteLine("\tMS Word 6 or Word 95 format.");
+            break;
+        case LoadFormat.Unknown:
+            Console.WriteLine("\tUnknown format.");
+            break;
+    }
 
-if (info.IsEncrypted)
-{
-Console.WriteLine("\tAn encrypted document.");
-File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
-}
-else
-{
-switch (info.LoadFormat)
-{
-LoadFormat.DocPreWord60 box:
-File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
-break;
-LoadFormat.Unknown case:
-File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
-break;
-default:
-File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
-break;
-}
-}
+    if (info.IsEncrypted)
+    {
+        Console.WriteLine("\tAn encrypted document.");
+        File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
+    }
+    else
+    {
+        switch (info.LoadFormat)
+        {
+            case LoadFormat.DocPreWord60:
+                File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
+                break;
+            case LoadFormat.Unknown:
+                File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
+                break;
+            default:
+                File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
+                break;
+        }
+    }
 }
 ```
 
-Bu kadar ! Aspose.Words for .NET'i kullanarak farklı belge dosyalarının formatını başarıyla tespit ettiniz.
+## Çözüm
 
-### Aspose.Words for .NET ile dosya formatı tespiti için örnek kaynak kodu
+Aspose.Words for .NET kullanarak belge dosya formatlarını tespit etmek basit bir işlemdir. Dizinlerinizi ayarlayarak, dosya listenizi alarak ve dosya formatlarını tespit etmek için Aspose.Words'ü kullanarak belgelerinizi verimli bir şekilde düzenleyebilir ve yönetebilirsiniz. Bu yaklaşım hem zamandan tasarruf etmenizi sağlar hem de çeşitli belge formatlarını doğru şekilde işlemenizi sağlar.
 
-```csharp
+## SSS'ler
 
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	string supportedDir = dataDir + "Supported";
-	string unknownDir = dataDir + "Unknown";
-	string encryptedDir = dataDir + "Encrypted";
-	string pre97Dir = dataDir + "Pre97";
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için güçlü bir kütüphanedir. Geliştiricilerin çeşitli formatlarda belgeler oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanır.
 
-	// Henüz mevcut değilse dizinleri oluşturun.
-	if (Directory.Exists(supportedDir) == false)
-		Directory.CreateDirectory(supportedDir);
-	if (Directory.Exists(unknownDir) == false)
-		Directory.CreateDirectory(unknownDir);
-	if (Directory.Exists(encryptedDir) == false)
-		Directory.CreateDirectory(encryptedDir);
-	if (Directory.Exists(pre97Dir) == false)
-		Directory.CreateDirectory(pre97Dir);
+### Aspose.Words şifrelenmiş belgeleri tespit edebilir mi?
+Evet, Aspose.Words bir belgenin şifreli olup olmadığını tespit edebilir ve siz de bu tür belgeleri buna göre yönetebilirsiniz.
 
-	
-	IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
-	
-	foreach (string fileName in fileList)
-	{
-		string nameOnly = Path.GetFileName(fileName);
-		
-		Console.Write(nameOnly);
-		
-		FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
+### Aspose.Words hangi formatları algılayabilir?
+Aspose.Words, DOC, DOCX, RTF, HTML, MHTML, ODT ve çok daha fazlasını içeren çok çeşitli formatları algılayabilir.
 
-		// Belge türünü görüntüle
-		switch (info.LoadFormat)
-		{
-			case LoadFormat.Doc:
-				Console.WriteLine("\tMicrosoft Word 97-2003 document.");
-				break;
-			case LoadFormat.Dot:
-				Console.WriteLine("\tMicrosoft Word 97-2003 template.");
-				break;
-			case LoadFormat.Docx:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Document.");
-				break;
-			case LoadFormat.Docm:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Document.");
-				break;
-			case LoadFormat.Dotx:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Template.");
-				break;
-			case LoadFormat.Dotm:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Template.");
-				break;
-			case LoadFormat.FlatOpc:
-				Console.WriteLine("\tFlat OPC document.");
-				break;
-			case LoadFormat.Rtf:
-				Console.WriteLine("\tRTF format.");
-				break;
-			case LoadFormat.WordML:
-				Console.WriteLine("\tMicrosoft Word 2003 WordprocessingML format.");
-				break;
-			case LoadFormat.Html:
-				Console.WriteLine("\tHTML format.");
-				break;
-			case LoadFormat.Mhtml:
-				Console.WriteLine("\tMHTML (Web archive) format.");
-				break;
-			case LoadFormat.Odt:
-				Console.WriteLine("\tOpenDocument Text.");
-				break;
-			case LoadFormat.Ott:
-				Console.WriteLine("\tOpenDocument Text Template.");
-				break;
-			case LoadFormat.DocPreWord60:
-				Console.WriteLine("\tMS Word 6 or Word 95 format.");
-				break;
-			case LoadFormat.Unknown:
-				Console.WriteLine("\tUnknown format.");
-				break;
-		}
-		
+### Aspose.Words için nasıl geçici lisans alabilirim?
+ Geçici lisansı şu adresten alabilirsiniz:[Satın Almayı Düşün](https://purchase.aspose.com/temporary-license/) sayfa.
 
-		if (info.IsEncrypted)
-		{
-			Console.WriteLine("\tAn encrypted document.");
-			File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
-		}
-		else
-		{
-			switch (info.LoadFormat)
-			{
-				case LoadFormat.DocPreWord60:
-					File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
-					break;
-				case LoadFormat.Unknown:
-					File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
-					break;
-				default:
-					File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
-					break;
-			}
-		}
-	}
-	
-
-```
-
-### Belge dosyası formatı tespiti için SSS
-
-#### Aspose.Words for .NET kullanılarak bir belge dosyasının formatı nasıl tespit edilir?
-
- Aspose.Words for .NET kullanarak bir belge dosyasının formatını tespit etmek için eğitimde verilen adımları takip edebilirsiniz. Kullanmak`DetectFileFormat` yöntemi`FileFormatUtil` class belge dosyasının formatını tespit etmenize izin verecektir. Bu, bunun bir Microsoft Word 97-2003 belgesi mi, bir şablon mu, bir Office Açık XML WordprocessingML belgesi mi yoksa desteklenen diğer formatlar mı olduğunu belirlemenize olanak tanır. Eğitimde sağlanan kod, bu özelliğin uygulanmasında size yol gösterecektir.
-
-#### Aspose.Words for .NET hangi belge formatlarını destekliyor?
-
-Aspose.Words for .NET, Microsoft Word 97-2003 belgeleri (DOC), Şablonlar (DOT), Office Açık XML Kelime İşlemeML belgeleri (DOCX), Makrolu Office Açık XML Kelime İşlemeML belgeleri (DOCM), Office Open dahil olmak üzere çeşitli belge formatlarını destekler XML Kelime İşlemeMakro içermeyen ML şablonları (DOTX), Makrolu Office Açık XML Kelime İşlemeML şablonları (DOTM), Düz OPC belgeleri, RTF belgeleri, Microsoft Word 2003 Kelime İşlemeML belgeleri, HTML belgeleri, MHTML (Web arşivi) belgeleri, OpenDocument Metni (ODT) belgeleri, OpenDocument Metni (OTT) şablonları, MS Word 6 veya Word 95 belgeleri ve bilinmeyen belge biçimleri.
-
-#### Biçim algılama sırasında şifrelenmiş belge dosyaları nasıl işlenir?
-
- Bir belge dosyasının formatını tespit ederken,`IsEncrypted` mülkiyeti`FileFormatInfo` Dosyanın şifrelenip şifrelenmediğini kontrol etmek için nesne. Dosya şifrelenmişse, bu özel durumu ele almak için dosyayı şifrelenmiş belgelere ayrılmış bir dizine kopyalamak gibi ek adımlar uygulayabilirsiniz. Şunu kullanabilirsiniz:`File.Copy` bunu yapmanın yöntemi.
-
-#### Bir belgenin formatı bilinmediğinde ne gibi işlemler yapılmalıdır?
-
-Bir belgenin formatı bilinmiyorsa, onu uygulamanıza özel bir şekilde ele almaya karar verebilirsiniz. Eğitimde verilen örnekte belge, bilinmeyen formattaki belgelere ayrılmış belirli bir dizine kopyalanır. Bu eylemi özel ihtiyaçlarınıza uyacak şekilde özelleştirebilirsiniz.
-
-#### Aspose.Words for .NET'in belge formatı algılamayla birlikte kullanılabilecek başka özellikleri var mı?
-
-Evet, Aspose.Words for .NET, Word belgelerinin işlenmesi ve işlenmesi için birçok başka özellik sunar. Örneğin, belgelerden metin, görüntü veya meta veriler çıkarmak, biçimlendirme değişiklikleri uygulamak, belgeleri birleştirmek, belgeleri farklı biçimlere dönüştürmek ve daha fazlası için kitaplığı kullanabilirsiniz.
+### Aspose.Words belgelerini nerede bulabilirim?
+ Aspose.Words belgelerini burada bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

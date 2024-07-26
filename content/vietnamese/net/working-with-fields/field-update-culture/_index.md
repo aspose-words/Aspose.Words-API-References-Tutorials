@@ -91,7 +91,7 @@ Trả lời: Để đặt văn hóa cập nhật cho các trường trong tài l
 
 Trả lời: Aspose.Words hỗ trợ các nền văn hóa khác nhau để cập nhật các trường. Bạn có thể chỉ định bất kỳ nền văn hóa nào được hệ điều hành hỗ trợ. Ví dụ: "en-US" cho tiếng Anh Mỹ, "fr-FR" cho tiếng Pháp, "de-DE" cho tiếng Đức, v.v.
 
-#### Câu hỏi: Có thể đặt văn hóa cụ thể cho một trường riêng lẻ thay vì cho toàn bộ tài liệu không?
+#### Câu hỏi: Có thể thiết lập một nền văn hóa cụ thể cho một trường riêng lẻ thay vì cho toàn bộ tài liệu không?
 
 Đáp: Có, có thể đặt văn hóa cụ thể cho từng trường riêng lẻ thay vì cho toàn bộ tài liệu. Trong Aspose.Words, mỗi trường có thuộc tính Định dạng có thể được sử dụng để đặt văn hóa định dạng cụ thể cho trường đó. Điều này cho phép bạn kiểm soát cách trường này được hiển thị và cập nhật độc lập với các trường khác trong tài liệu.
 

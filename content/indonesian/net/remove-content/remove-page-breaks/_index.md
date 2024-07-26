@@ -124,7 +124,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 #### T: Bagaimana cara menghapus hentian halaman dalam dokumen menggunakan Aspose.Words?
 
-J: Setelah dokumen dimuat, Anda dapat mulai menghapus hentian halaman. Gunakan loop untuk mengulang semua paragraf dalam dokumen, periksa apakah paragraf tersebut berisi hentian halaman, dan hapus jika perlu. Berikut ini contoh kodenya:
+J: Setelah dokumen dimuat, Anda dapat mulai menghapus hentian halaman. Gunakan loop untuk mengulang semua paragraf dalam dokumen, periksa apakah paragraf tersebut berisi hentian halaman dan hapus jika perlu. Berikut ini contoh kodenya:
 
 ```csharp
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
@@ -148,7 +148,7 @@ Kode ini menelusuri semua paragraf dalam dokumen, memeriksa apakah paragraf ters
 
 #### T: Bagaimana cara menyimpan dokumen yang diedit di Aspose.Words untuk .NET?
 
-J: Setelah menghapus hentian halaman, Anda perlu menyimpan dokumen yang dimodifikasi. Gunakan metode Save() untuk menyimpan dokumen yang dimodifikasi ke lokasi tertentu. Berikut ini contoh kodenya:
+J: Setelah menghapus hentian halaman, Anda perlu menyimpan dokumen yang dimodifikasi. Gunakan metode Save() untuk menyimpan dokumen yang diubah ke lokasi tertentu. Berikut ini contoh kodenya:
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);

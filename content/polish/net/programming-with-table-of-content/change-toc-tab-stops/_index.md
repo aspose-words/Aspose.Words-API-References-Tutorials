@@ -21,7 +21,7 @@ Pierwszym krokiem jest załadowanie dokumentu Word zawierającego spis treści, 
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-W tym przykładzie ładujemy dokument „Spis treści.docx” znajdujący się w katalogu dokumentów.
+tym przykładzie ładujemy dokument „Spis treści.docx” znajdujący się w katalogu dokumentów.
 
 ## Zmiana zakładek w spisie treści
 
@@ -40,7 +40,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-tym przykładzie używamy pętli do przeglądania każdego akapitu w dokumencie. Następnie sprawdzamy, czy akapit jest sformatowany przy użyciu stylów wyników spisu treści (TOC). Jeśli tak, uzyskujemy dostęp do pierwszej zakładki użytej w tym akapicie i modyfikujemy ją, usuwając starą zakładkę i dodając nową zakładkę ze zmodyfikowaną pozycją.
+W tym przykładzie używamy pętli do przeglądania każdego akapitu w dokumencie. Następnie sprawdzamy, czy akapit jest sformatowany przy użyciu stylów wyników spisu treści (TOC). Jeśli tak, uzyskujemy dostęp do pierwszej zakładki użytej w tym akapicie i modyfikujemy ją, usuwając starą zakładkę i dodając nową zakładkę ze zmodyfikowaną pozycją.
 
 ## Zapisz zmodyfikowany dokument
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 
 ## Wniosek
 
-tym przewodniku omówiliśmy, jak używać Aspose.Words dla .NET do zmiany zakładek w spisie treści dokumentu programu Word przy użyciu dostarczonego kodu źródłowego C#. Wykonując podane kroki, możesz łatwo dostosować karty spisu treści w dokumentach programu Word w aplikacji C#. Aspose.Words oferuje ogromną elastyczność i możliwości pracy ze stylami i formatowaniem dokumentów, umożliwiając tworzenie atrakcyjnych i profesjonalnych dokumentów Word.
+W tym przewodniku omówiliśmy, jak używać Aspose.Words dla .NET do zmiany zakładek w spisie treści dokumentu programu Word przy użyciu dostarczonego kodu źródłowego C#. Wykonując podane kroki, możesz łatwo dostosować karty spisu treści w dokumentach programu Word w aplikacji C#. Aspose.Words oferuje ogromną elastyczność i możliwości pracy ze stylami i formatowaniem dokumentów, umożliwiając tworzenie atrakcyjnych i profesjonalnych dokumentów Word.
 
 ### Często zadawane pytania dotyczące zmiany tabulatorów w dokumencie programu Word
 
@@ -103,7 +103,7 @@ Ten fragment kodu ładuje dokument „Spis treści.docx” znajdujący się w ok
 
 #### P: Jak mogę zmienić karty używane w spisie treści przy użyciu Aspose.Words dla .NET?
 
- O: Po załadowaniu dokumentu możesz przeglądać każdy akapit dokumentu i sprawdzać, czy jest on sformatowany przy użyciu stylów wynikowych spisu treści (TOC). Jeśli akapit jest sformatowany w stylu spisu treści, możesz modyfikować tabulatory używane do wyrównywania numerów stron. W Aspose.Words dla .NET możesz uzyskać dostęp do`ParagraphFormat` właściwość każdego akapitu, aby pobrać i zmodyfikować tabulatory. Oto przykład:
+O: Po załadowaniu dokumentu możesz przeglądać każdy akapit dokumentu i sprawdzać, czy jest on sformatowany przy użyciu stylów wynikowych spisu treści (TOC). Jeśli akapit jest sformatowany w stylu spisu treści, możesz modyfikować tabulatory używane do wyrównywania numerów stron. W Aspose.Words dla .NET możesz uzyskać dostęp do`ParagraphFormat` właściwość każdego akapitu, aby pobrać i zmodyfikować tabulatory. Oto przykład:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -118,7 +118,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-tym kodzie pętla wykonuje iterację po każdym akapicie dokumentu. Jeśli akapit ma styl spisu treści, uzyskuje dostęp do pierwszego tabulatora użytego w tym akapicie, usuwa go i dodaje nowy tabulator ze zmodyfikowaną pozycją.
+W tym kodzie pętla wykonuje iterację po każdym akapicie dokumentu. Jeśli akapit ma styl spisu treści, uzyskuje dostęp do pierwszego tabulatora użytego w tym akapicie, usuwa go i dodaje nowy tabulator ze zmodyfikowaną pozycją.
 
 #### P: Czy mogę zmieniać karty dla wielu poziomów spisu treści przy użyciu Aspose.Words dla .NET?
 

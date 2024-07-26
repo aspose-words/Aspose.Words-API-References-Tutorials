@@ -14,13 +14,13 @@ Ezekből az oktatóanyagokból megtudhatja, hogyan használhatja a LoadOptions a
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Frissítse a piszkos mezőket a Word-dokumentumban](./update-dirty-fields/) | Ismerje meg, hogyan tölthet be Word-dokumentumot a piszkos mezők Aspose.Words for .NET segítségével történő frissítésével. |
-| [Töltsön be titkosított Word dokumentumot](./load-encrypted-document/) | Ismerje meg, hogyan tölthet be és menthet titkosított Word dokumentumokat az Aspose.Words for .NET segítségével. |
-| [Alakzat konvertálása irodai matematikává](./convert-shape-to-office-math/) | Ismerje meg, hogyan konvertálhat alakzatokat Office matematikai képletekké, amikor dokumentumokat tölt fel az Aspose.Words for .NET segítségével. |
-| [Állítsa be az Ms Word verziót](./set-ms-word-version/) | Ismerje meg, hogyan tölthet be dokumentumot az MS Word meghatározott verziójával az Aspose.Words for .NET használatával. |
-| [Használja a Temp mappát a Word dokumentumban](./use-temp-folder/) | Ismerje meg, hogyan használhat ideiglenes mappát dokumentumok feltöltésekor az Aspose.Words for .NET segítségével. |
-| [Figyelmeztetés visszahívás a Word dokumentumban](./warning-callback/) | Ismerje meg, hogyan kezelheti a figyelmeztetéseket Word-dokumentum betöltésekor az Aspose.Words for .NET segítségével visszahívási funkcióval. |
-| [Betöltés kódolással Word dokumentumban](./load-with-encoding/) | Ismerje meg, hogyan tölthet be egy dokumentumot meghatározott kódolással Word dokumentumba az Aspose.Words for .NET használatával. |
-| [Pdf képek kihagyása](./skip-pdf-images/) | Ismerje meg, hogyan tölthet be PDF-dokumentumot a PDF-képek betöltésének kihagyásával az Aspose.Words for .NET segítségével. |
-| [Metafájlok konvertálása Png formátumba](./convert-metafiles-to-png/) | Ismerje meg, hogyan konvertálhat metafájlokat PNG-képekké, amikor dokumentumokat tölt fel az Aspose.Words for .NET segítségével. |
-| [Töltsön be Chm fájlokat a Word dokumentumba](./load-chm/) | Ismerje meg, hogyan tölthet be CHM fájlokat Word dokumentumba az Aspose.Words for .NET segítségével. |
+| [Frissítse a piszkos mezőket a Word-dokumentumban](./update-dirty-fields/) | Könnyedén frissítheti a szennyezett mezőket Word-dokumentumaiban az Aspose.Words for .NET segítségével ezzel az átfogó, lépésről lépésre szóló útmutatóval. |
+| [Töltsön be titkosított Word dokumentumot](./load-encrypted-document/) | Ismerje meg, hogyan tölthet be és menthet titkosított Word dokumentumokat az Aspose.Words for .NET használatával. Biztosítsa dokumentumait egyszerűen új jelszavakkal. Lépésről lépésre útmutató mellékelve. |
+| [Alakzat konvertálása irodai matematikává](./convert-shape-to-office-math/) | Útmutatónk segítségével megtudhatja, hogyan konvertálhat alakzatokat Office Math formátummá Word dokumentumokban az Aspose.Words for .NET használatával. Fokozza a dokumentum formázását erőfeszítés nélkül. |
+| [Állítsa be az Ms Word verziót](./set-ms-word-version/) | Részletes útmutatónkból megtudhatja, hogyan állíthat be MS Word verziókat az Aspose.Words for .NET használatával. Tökéletes azoknak a fejlesztőknek, akik egyszerűsíteni szeretnék a dokumentumkezelést. |
+| [Használja a Temp mappát a Word dokumentumban](./use-temp-folder/) | Ismerje meg, hogyan javíthatja .NET-alkalmazásai teljesítményét egy ideiglenes mappa használatával, miközben Word dokumentumokat tölt be az Aspose.Words programmal. |
+| [Figyelmeztetés visszahívás a Word dokumentumban](./warning-callback/) | A lépésenkénti útmutatónkból megtudhatja, hogyan lehet elkapni és kezelni a Word-dokumentumok figyelmeztetéseit az Aspose.Words for .NET használatával. Biztosítsa a robusztus dokumentumfeldolgozást. |
+| [Betöltés kódolással Word dokumentumban](./load-with-encoding/) | Ismerje meg, hogyan tölthet be Word-dokumentumot meghatározott kódolással az Aspose.Words for .NET használatával. Lépésről lépésre útmutató részletes magyarázatokkal. |
+| [Pdf képek kihagyása](./skip-pdf-images/) | Ismerje meg, hogyan hagyhatja ki a képeket PDF-dokumentumok betöltésekor az Aspose.Words for .NET használatával. Kövesse ezt a lépésről lépésre szóló útmutatót a zökkenőmentes szövegkivonáshoz. |
+| [Metafájlok konvertálása Png formátumba](./convert-metafiles-to-png/) | Ezzel a lépésenkénti oktatóanyaggal könnyedén konvertálhat metafájlokat PNG-formátumba Word dokumentumokban az Aspose.Words for .NET segítségével. Egyszerűsítse dokumentumkezelését. |
+| [Töltsön be Chm fájlokat a Word dokumentumba](./load-chm/) | Ezzel a lépésenkénti oktatóanyaggal egyszerűen tölthet be CHM fájlokat Word dokumentumokba az Aspose.Words for .NET segítségével. Tökéletes a műszaki dokumentáció összevonásához. |

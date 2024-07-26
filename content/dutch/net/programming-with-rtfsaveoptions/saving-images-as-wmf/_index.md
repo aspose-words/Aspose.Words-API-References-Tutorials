@@ -2,92 +2,83 @@
 title: Afbeeldingen opslaan als Wmf
 linktitle: Afbeeldingen opslaan als Wmf
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u afbeeldingen opslaat als WMF bij het converteren naar RTF met Aspose.Words voor .NET.
+description: Leer hoe u afbeeldingen als WMF in Word-documenten kunt opslaan met Aspose.Words voor .NET met onze gedetailleerde stapsgewijze handleiding. Verbeter uw documentcompatibiliteit en beeldkwaliteit.
 type: docs
 weight: 10
 url: /nl/net/programming-with-rtfsaveoptions/saving-images-as-wmf/
 ---
+## Invoering
 
-In deze zelfstudie verkennen we de C#-broncode voor de functie 'Afbeeldingen opslaan als WMF met RTF-opslagopties' met Aspose.Words voor .NET. Met deze functie kunt u documentafbeeldingen opslaan in Windows Metafile (WMF)-indeling bij conversie naar RTF-indeling.
+Hallo daar, mede-ontwikkelaars! Heeft u zich ooit afgevraagd hoe u afbeeldingen als WMF (Windows Metafile) in uw Word-documenten kunt opslaan met Aspose.Words voor .NET? Nou, je bent op de juiste plek! In deze zelfstudie duiken we in de wereld van Aspose.Words voor .NET en onderzoeken we hoe u afbeeldingen kunt opslaan als WMF. Het is superhandig om de beeldkwaliteit te behouden en compatibiliteit tussen verschillende platforms te garanderen. Klaar? Laten we beginnen!
 
-## Stap 1: De omgeving instellen
+## Vereisten
 
-Zorg ervoor dat u, voordat u begint, uw ontwikkelomgeving hebt ingesteld met Aspose.Words voor .NET. Zorg ervoor dat u de benodigde referenties hebt toegevoegd en de juiste naamruimten hebt geïmporteerd.
+Voordat we ingaan op de code, moeten we ervoor zorgen dat je alles hebt wat je nodig hebt om de code soepel te kunnen volgen:
 
-## Stap 2: Het document laden
+-  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Als dit niet het geval is, kunt u deze downloaden van[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: U moet een C#-ontwikkelomgeving hebben, zoals Visual Studio.
+- Basiskennis van C#: Een basiskennis van programmeren in C# zal nuttig zijn.
+
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten importeren. Dit is cruciaal voor toegang tot de Aspose.Words-klassen en -methoden die we gaan gebruiken.
 
 ```csharp
-// Pad naar uw documentenmap
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-Document doc = new Document(dataDir + "Document.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- In deze stap laden we het document met behulp van de`Document` methode en geef het pad door naar het DOCX-bestand dat moet worden geladen.
+Oké, nu komen we bij het leuke gedeelte. Laten we het proces opsplitsen in eenvoudig te volgen stappen.
 
-## Stap 3: Back-upopties configureren
+## Stap 1: Laad uw document
 
-```csharp
-RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
-```
-
- In deze stap configureren we de RTF-back-upopties. Wij creëren een nieuwe`RtfSaveOptions` bezwaar maken en instellen`SaveImagesAsWmf`eigendom aan`true`. Dit vertelt Aspose.Words om de documentafbeeldingen op te slaan als WMF bij het converteren naar RTF.
-
-## Stap 4: Het document opslaan
+Eerst moet u het document laden dat de afbeeldingen bevat die u als WMF wilt opslaan. 
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
-```
-
- In deze laatste stap slaan we het resulterende document op in RTF-formaat met behulp van de`Save` methode en geef het pad door naar het uitvoerbestand, samen met de opgegeven opslagopties.
-
-Nu kunt u broncode uitvoeren om documentafbeeldingen in WMF-indeling op te slaan terwijl u naar RTF-indeling converteert. Het resulterende document wordt opgeslagen in de opgegeven map met de naam "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf".
-
-### Voorbeeldbroncode voor functionaliteit voor het opslaan van WMF-afbeeldingen met RTF-opslagopties met Aspose.Words voor .NET".
-
-```csharp
-
-            
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
 Document doc = new Document(dataDir + "Document.docx");
-
-RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
-
-doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
-            
-        
 ```
+
+ Uitleg: In deze stap specificeren we de map waarin uw document zich bevindt. Vervolgens laden we het document met behulp van de`Document` klasse aangeboden door Aspose.Words. Makkelijk, toch?
+
+## Stap 2: Configureer de opslagopties
+
+Vervolgens moeten we de opslagopties configureren om ervoor te zorgen dat de afbeeldingen worden opgeslagen als WMF.
+
+```csharp
+RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
+```
+
+ Uitleg: Hier maken we een exemplaar van`RtfSaveOptions` en stel de`SaveImagesAsWmf`eigendom aan`true`. Dit vertelt Aspose.Words om de afbeeldingen op te slaan als WMF wanneer het document wordt opgeslagen.
+
+## Stap 3: Sla het document op
+
+Eindelijk is het tijd om het document op te slaan met de opgegeven opslagopties.
+
+```csharp
+doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
+```
+
+ Uitleg: In deze stap gebruiken we de`Save` werkwijze van de`Document` klasse om het document op te slaan. We geven het bestandspad en de`saveOptions` als parameters. Dit zorgt ervoor dat de afbeeldingen worden opgeslagen als WMF.
+
 ## Conclusie
 
-In deze zelfstudie hebben we de functionaliteit onderzocht van het opslaan van afbeeldingen als WMF met RTF-opslagopties in Aspose.Words voor .NET. We hebben geleerd hoe u afbeeldingen uit een document in WMF-indeling kunt opslaan bij het converteren naar RTF-indeling.
+En daar heb je het! Met slechts een paar regels code kunt u afbeeldingen opslaan als WMF in uw Word-documenten met Aspose.Words voor .NET. Dit kan ongelooflijk handig zijn voor het behouden van afbeeldingen van hoge kwaliteit en het garanderen van compatibiliteit tussen verschillende platforms. Probeer het eens en zie het verschil dat het maakt!
 
-Deze functie is handig als u de kwaliteit en resolutie van afbeeldingen in uw RTF-documenten wilt behouden. Door afbeeldingen op te slaan in WMF-formaat, kunt u ervoor zorgen dat hun uiterlijk en scherpte intact blijven.
+## Veelgestelde vragen
 
-Aspose.Words voor .NET biedt veel geavanceerde functies voor het manipuleren en genereren van documenten. Het opslaan van afbeeldingen in WMF-formaat tijdens het converteren naar RTF-formaat is een van de vele krachtige tools die het u biedt.
+### Kan ik andere afbeeldingsformaten gebruiken met Aspose.Words voor .NET?
+Ja, Aspose.Words voor .NET ondersteunt verschillende afbeeldingsformaten zoals PNG, JPEG, BMP en meer. U kunt de opslagopties dienovereenkomstig configureren.
 
-### Veel Gestelde Vragen
+### Is er een proefversie beschikbaar voor Aspose.Words voor .NET?
+ Absoluut! U kunt een gratis proefversie downloaden van[hier](https://releases.aspose.com/).
 
-#### Vraag: Wat is de functie "Afbeeldingen opslaan als WMF met RTF-opslagopties" met Aspose.Words voor .NET?
-A: Met de functie "Afbeeldingen opslaan als WMF met RTF-opslagopties" met Aspose.Words voor .NET kunnen documentafbeeldingen worden opgeslagen in Windows Metafile (WMF)-indeling bij conversie naar RTF. Dit biedt de mogelijkheid om de beeldkwaliteit en resolutie in RTF-documenten te behouden.
+### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
+ Ja, voor Aspose.Words voor .NET is een licentie vereist. Je kunt er een kopen[hier](https://purchase.aspose.com/buy) of vraag een tijdelijke licentie aan[hier](https://purchase.aspose.com/temporary-license/).
 
-#### Vraag: Hoe kan ik deze functie gebruiken met Aspose.Words voor .NET?
-A: Om deze functie te gebruiken met Aspose.Words voor .NET, kunt u deze stappen volgen:
+### Kan ik ondersteuning krijgen als ik problemen tegenkom?
+ Zeker! Aspose biedt uitgebreide ondersteuning via hun forums. U kunt toegang krijgen tot ondersteuning[hier](https://forum.aspose.com/c/words/8).
 
-Stel uw ontwikkelomgeving in door de benodigde referenties toe te voegen en de juiste naamruimten te importeren.
-
- Laad het document met behulp van de`Document` methode en specificeert het pad van het DOCX-bestand dat moet worden geladen.
-
- Configureer RTF-opslagopties door een`RtfSaveOptions` object en het instellen van de`SaveImagesAsWmf`eigendom aan`true`. Dit vertelt Aspose.Words om de documentafbeeldingen op te slaan als 
-WMF bij conversie naar RTF.
-
- Sla het resulterende document op in RTF-indeling met behulp van de`Save` methode en specificeert het volledige pad naar het uitvoerbestand, samen met de opgegeven opslagopties.
-
-#### Vraag: Is het mogelijk om een ander afbeeldingsformaat te kiezen om op te slaan met RTF-opslagopties?
-A: Nee, deze specifieke functie slaat afbeeldingen op in WMF-formaat bij conversie naar RTF. Andere afbeeldingsformaten worden niet rechtstreeks ondersteund door deze functie. Aspose.Words biedt echter nog andere functies voor beeldmanipulatie en -conversie, waardoor u afbeeldingen naar andere formaten kunt converteren voor of na de conversie naar RTF.
-
-#### Vraag: Bieden de RTF-opslagopties met Aspose.Words voor .NET andere functionaliteit?
-A: Ja, Aspose.Words voor .NET biedt veel meer functies met RTF-opslagopties. U kunt verschillende aspecten van de RTF-conversie aanpassen, zoals lettertypebeheer, lay-out, afbeeldingen, tabellen, hyperlinks, enz. Deze opties geven u nauwkeurige controle over het eindresultaat van de RTF-conversie.
-
-#### Vraag: Hoe kan ik afbeeldingen in een document manipuleren met Aspose.Words voor .NET?
-A: Aspose.Words voor .NET biedt een volledige reeks functionaliteiten voor het manipuleren van afbeeldingen in een document. U kunt extraheren, invoegen, het formaat wijzigen, bijsnijden, filters en effecten toepassen, de kwaliteit aanpassen, converteren tussen verschillende afbeeldingsformaten en nog veel meer. Zie de Aspose.Words-documentatie voor meer details over beeldmanipulatie.
+### Zijn er specifieke systeemvereisten voor Aspose.Words voor .NET?
+Aspose.Words voor .NET is compatibel met .NET Framework, .NET Core en .NET Standard. Zorg ervoor dat uw ontwikkelomgeving aan deze vereisten voldoet.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-In deze zelfstudie verkennen we de C#-broncode voor de functie "Detectie van nummering met witruimten" met Aspose.Words voor .NET. Met deze functie kunt u lijsten detecteren en maken op basis van een tekstdocument met lijstnummers gevolgd door spaties.
+In deze zelfstudie verkennen we de C#-broncode voor de functie "Detectie van nummering met spaties" met Aspose.Words voor .NET. Met deze functie kunt u lijsten detecteren en maken op basis van een tekstdocument met lijstnummers gevolgd door spaties.
 
 ## Stap 1: De omgeving instellen
 

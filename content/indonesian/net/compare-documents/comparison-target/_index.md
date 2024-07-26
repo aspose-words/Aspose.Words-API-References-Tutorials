@@ -97,7 +97,7 @@ docA.Save(dataDir + "ComparedDocument.docx");
 
 ## Kesimpulan
 
-Itu dia – cara sederhana dan efektif untuk membandingkan dokumen Word menggunakan Aspose.Words untuk .NET! Tidak ada lagi perbandingan manual, tidak ada lagi sakit kepala. Hanya dengan beberapa baris kode, Anda dapat menyoroti perbedaan dan fokus pada hal yang benar-benar penting. Jadi, silakan mencobanya, dan lihat berapa banyak waktu yang Anda hemat.
+Itu dia – cara sederhana dan efektif untuk membandingkan dokumen Word menggunakan Aspose.Words untuk .NET! Tidak ada lagi perbandingan manual, tidak ada lagi sakit kepala. Hanya dengan beberapa baris kode, Anda dapat menyorot perbedaan dan fokus pada hal yang benar-benar penting. Jadi, silakan mencobanya, dan lihat berapa banyak waktu yang Anda hemat.
 
 ## FAQ
 

@@ -20,7 +20,7 @@ Trong hướng dẫn này, chúng ta sẽ khám phá mã nguồn C# được cun
 Document doc = new Document();
 ```
 
-Ở bước này chúng ta tạo mới`Document` sự vật.
+ Ở bước này chúng ta tạo mới`Document` sự vật.
 
 ## Bước 3: Nhận thuộc tính chủ đề
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- Ở bước này, chúng ta sử dụng`Theme` tài sản của`Document` đối tượng để có được`Theme` sự vật. Sau đó, chúng ta có thể truy cập các thuộc tính khác nhau của chủ đề, chẳng hạn như phông chữ chính (`MajorFonts`), các phông chữ phụ (`MinorFonts`) và màu nhấn (`Colors`).
+ Ở bước này, chúng ta sử dụng`Theme` tài sản của`Document`đối tượng để có được`Theme` sự vật. Sau đó, chúng ta có thể truy cập các thuộc tính khác nhau của chủ đề, chẳng hạn như phông chữ chính (`MajorFonts`), các phông chữ phụ (`MinorFonts`) và màu nhấn (`Colors`).
 
 ## Bước 4: Hiển thị thuộc tính chủ đề
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Phần kết luận
 
- Trong hướng dẫn này, chúng ta đã khám phá chức năng lấy các thuộc tính chủ đề của tài liệu bằng Aspose.Words cho .NET. Sử dụng`Theme`đối tượng và các thuộc tính liên quan của nó, chúng tôi có thể truy cập thông tin về phông chữ chính và phụ cũng như màu nhấn được sử dụng trong chủ đề tài liệu.
+ Trong hướng dẫn này, chúng ta đã khám phá chức năng lấy các thuộc tính chủ đề của tài liệu bằng Aspose.Words cho .NET. Sử dụng`Theme` đối tượng và các thuộc tính liên quan của nó, chúng tôi có thể truy cập thông tin về phông chữ chính và phụ cũng như màu nhấn được sử dụng trong chủ đề tài liệu.
 
 Khả năng lấy thuộc tính chủ đề cho phép bạn phân tích và tùy chỉnh kiểu và bố cục của tài liệu. Bạn có thể sử dụng thông tin này để áp dụng các thay đổi được nhắm mục tiêu, tạo báo cáo hoặc thực hiện phân tích về cách sử dụng phông chữ và màu sắc trong tài liệu của mình.
 
@@ -68,17 +68,17 @@ Vui lòng khám phá thêm các tính năng của Aspose.Words for .NET để n�
 
 #### Làm cách nào tôi có thể truy cập các thuộc tính chủ đề của tài liệu bằng Aspose.Words cho .NET?
 
- Để truy cập các thuộc tính chủ đề của một tài liệu, bạn có thể sử dụng`Theme` tài sản của`Document` sự vật. Nó trả về một`Theme`đối tượng chứa thông tin về phông chữ chính và phụ, cũng như màu nhấn được sử dụng trong chủ đề của tài liệu.
+ Để truy cập các thuộc tính chủ đề của một tài liệu, bạn có thể sử dụng`Theme` tài sản của`Document` sự vật. Nó trả về một`Theme` đối tượng chứa thông tin về phông chữ chính và phụ, cũng như màu nhấn được sử dụng trong chủ đề của tài liệu.
 
 #### Làm cách nào tôi có thể truy xuất phông chữ chính và phụ của chủ đề tài liệu?
 
- Bạn có thể truy cập phông chữ chính và phụ của chủ đề tài liệu bằng cách sử dụng`MajorFonts`Và`MinorFonts` thuộc tính của`Theme` đối tượng tương ứng. Các thuộc tính này cung cấp quyền truy cập vào tên phông chữ được sử dụng trong chủ đề của tài liệu cho các ngôn ngữ hoặc khu vực khác nhau.
+Bạn có thể truy cập phông chữ chính và phụ của chủ đề tài liệu bằng cách sử dụng`MajorFonts`Và`MinorFonts` thuộc tính của`Theme` đối tượng tương ứng. Các thuộc tính này cung cấp quyền truy cập vào tên phông chữ được sử dụng trong chủ đề của tài liệu cho các ngôn ngữ hoặc khu vực khác nhau.
 
 #### Tôi có thể lấy màu nhấn được sử dụng trong chủ đề của tài liệu không?
 
  Có, bạn có thể lấy màu nhấn được sử dụng trong chủ đề của tài liệu bằng cách truy cập vào`Colors` tài sản của`Theme` sự vật. Thuộc tính này cung cấp quyền truy cập vào các màu nhấn, chẳng hạn như`Accent1`, `Accent2`, `Accent3`, v.v. mà bạn có thể sử dụng cho mục đích tùy chỉnh hoặc phân tích.
 
-#### Làm cách nào tôi có thể sử dụng các thuộc tính chủ đề được truy xuất?
+#### Làm cách nào tôi có thể sử dụng các thuộc tính chủ đề đã truy xuất?
 
 Các thuộc tính chủ đề được truy xuất có thể được sử dụng cho nhiều mục đích khác nhau. Bạn có thể tùy chỉnh kiểu và bố cục của tài liệu dựa trên phông chữ và màu sắc được sử dụng trong chủ đề. Bạn cũng có thể thực hiện phân tích về cách sử dụng phông chữ và màu sắc trong tài liệu của mình hoặc áp dụng các thay đổi được nhắm mục tiêu cho các thành phần cụ thể dựa trên thuộc tính chủ đề.
 

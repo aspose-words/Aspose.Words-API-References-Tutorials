@@ -14,4 +14,4 @@ Clone And Combine Documents erbjuder handledning om kloning och kombination av d
 | --- | --- |
 | [Klona Ett Word-dokument](./cloning-document/) | Lär dig hur du enkelt klona ett Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Perfekt för både nybörjare och erfarna utvecklare. |
 | [Infoga dokument vid ersätt](./insert-document-at-replace/) | Lär dig hur du sömlöst infogar ett Word-dokument i ett annat med Aspose.Words för .NET med vår detaljerade, steg-för-steg-guide. Perfekt för utvecklare som vill effektivisera dokumentbehandlingen. |
-| [Infoga dokument vid brevkoppling](./insert-document-at-mail-merge/) | Lär dig hur du infogar dokument vid sammanslagningsfält med Aspose.Words för .NET i denna omfattande, steg-för-steg-handledning. |
+| [Infoga dokument vid brevkoppling](./insert-document-at-mail-merge/) | Lär dig hur du infogar dokument vid sammanslagningsfält med Aspose.Words för .NET i denna omfattande, steg-för-steg handledning. |

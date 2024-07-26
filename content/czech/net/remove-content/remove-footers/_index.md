@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Primární zápatí je zápatí používané pro liché stránky.
+	//Primární zápatí je zápatí používané pro liché stránky.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 
@@ -103,7 +103,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 
 ## Závěr
 
-tomto článku jsme prozkoumali, jak odstranit zápatí z dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle uvedených kroků můžete snadno manipulovat s dokumenty a odstranit nežádoucí zápatí. Aspose.Words nabízí výkonné a pohodlné řešení pro zpracování textu s dokumenty Word ve vaší aplikaci .NET.
+V tomto článku jsme prozkoumali, jak odstranit zápatí z dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle uvedených kroků můžete snadno manipulovat s dokumenty a odstranit nežádoucí zápatí. Aspose.Words nabízí výkonné a pohodlné řešení pro zpracování textu s dokumenty Word ve vaší aplikaci .NET.
 
 ## FAQ
 

@@ -16,7 +16,7 @@ Vytváření tabulek a řádků v dokumentech je základním aspektem zpracován
 
 ## Stavební stoly
 ### Vytvoření tabulky
-Pro začátek vytvořte v dokumentu tabulku. Zde je jednoduchý úryvek kódu, který vám pomůže:
+Začněme vytvořením tabulky v dokumentu. Zde je jednoduchý úryvek kódu, který vám pomůže:
 
 ```java
 // Importujte potřebné třídy

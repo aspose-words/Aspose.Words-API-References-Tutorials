@@ -68,7 +68,7 @@ footer.paragraphs.add_run("Footer Text")
 
 ## Správa zalomení stránek
 
-Konce stránek zajišťují hladký tok obsahu mezi sekcemi. Konce stránek můžete vložit na konkrétní místa v dokumentu:
+Konce stránek zajišťují, že obsah plynule přechází mezi sekcemi. Konce stránek můžete vložit na konkrétní místa v dokumentu:
 
 ```python
 # Insert page break
@@ -80,7 +80,7 @@ doc_builder.write("Content after page break.")
 
 ## Závěr
 
-Na závěr, Aspose.Words pro Python umožňuje vývojářům bezproblémově spravovat sekce dokumentu, rozvržení a formátování. Tento výukový program poskytl informace o vytváření, úpravách sekcí, přizpůsobení rozvržení stránky, práci se záhlavími a zápatím a správě zalomení stránek.
+Závěrem lze říci, že Aspose.Words pro Python umožňuje vývojářům bezproblémově spravovat sekce dokumentu, rozvržení a formátování. Tento výukový program poskytl informace o vytváření, úpravách sekcí, přizpůsobení rozvržení stránky, práci se záhlavími a zápatím a správě zalomení stránek.
 
 Další informace a podrobné reference API naleznete na adrese[Aspose.Words pro dokumentaci Pythonu](https://reference.aspose.com/words/python-net/).
 

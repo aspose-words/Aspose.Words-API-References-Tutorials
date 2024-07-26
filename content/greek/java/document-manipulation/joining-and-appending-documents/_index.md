@@ -50,7 +50,7 @@ Document srcDoc = new Document("source.docx");
 Document dstDoc = new Document("destination.docx");
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 convertNumPageFieldsToPageRef(dstDoc); // Μετατροπή NUMPAGES πεδίων
-dstDoc.updatePageLayout(); // Ενημερώστε τη διάταξη σελίδας για σωστή αρίθμηση
+dstDoc.updatePageLayout(); // Ενημερώστε τη διάταξη της σελίδας για σωστή αρίθμηση
 ```
 
 ## Χειρισμός διαφορετικών ρυθμίσεων σελίδας

@@ -2,64 +2,91 @@
 title: Viết tất cả các quy tắc Css trong một tệp
 linktitle: Viết tất cả các quy tắc Css trong một tệp
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chuyển đổi tài liệu Word sang HTML cố định bằng cách viết tất cả các quy tắc CSS vào một tệp duy nhất với Aspose.Words cho .NET.
+description: Tìm hiểu cách chuyển đổi tài liệu Word sang HTML bằng Aspose.Words cho .NET với tất cả các quy tắc CSS trong một tệp duy nhất để có mã sạch hơn và bảo trì dễ dàng hơn.
 type: docs
 weight: 10
 url: /vi/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/
 ---
+## Giới thiệu
 
-Khi chuyển đổi tài liệu Word sang HTML cố định trong ứng dụng C#, bạn có thể muốn hợp nhất tất cả các quy tắc CSS thành một tệp duy nhất để tổ chức tốt hơn và có tính linh hoạt hơn. Với thư viện Aspose.Words dành cho .NET, bạn có thể dễ dàng chỉ định chức năng này bằng cách sử dụng tùy chọn lưu HtmlFixedSaveOptions. Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn cách sử dụng mã nguồn Aspose.Words for .NET C# để chuyển đổi tài liệu Word sang HTML cố định bằng cách viết tất cả các quy tắc CSS trong một tệp bằng cách sử dụng tùy chọn lưu HtmlFixedSaveOptions.
+Bạn đã bao giờ thấy mình bị vướng vào mạng lưới các quy tắc CSS nằm rải rác khắp nơi khi chuyển đổi tài liệu Word sang HTML chưa? Không boăn khoăn! Hôm nay, chúng ta sẽ đi sâu vào một tính năng thú vị của Aspose.Words dành cho .NET cho phép bạn viết tất cả các quy tắc CSS trong một tệp duy nhất. Điều này không chỉ giúp bạn dọn dẹp mã mà còn giúp cuộc sống của bạn dễ dàng hơn rất nhiều. Hãy thắt dây an toàn và hãy bắt đầu hành trình tạo ra đầu ra HTML sạch hơn, hiệu quả hơn!
 
-## Tìm hiểu thư viện Aspose.Words
+## Điều kiện tiên quyết
 
-Trước khi đi sâu vào mã, điều quan trọng là phải hiểu thư viện Aspose.Words cho .NET. Aspose.Words là một thư viện mạnh mẽ để tạo, chỉnh sửa, chuyển đổi và bảo vệ tài liệu Word trên các nền tảng khác nhau bao gồm .NET. Nó cung cấp nhiều tính năng để thao tác với tài liệu, chẳng hạn như chèn văn bản, thay đổi định dạng, thêm phần và hơn thế nữa.
+Trước khi đi sâu vào nội dung chi tiết, chúng ta hãy sắp xếp các con vịt của mình thành một hàng. Đây là những gì bạn cần để bắt đầu:
 
-## Đang tải tài liệu Word
+1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Nếu bạn chưa có nó, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển .NET: Bạn sẽ cần thiết lập môi trường phát triển .NET trên máy của mình. Visual Studio là một lựa chọn phổ biến.
+3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về lập trình C# sẽ rất hữu ích.
+4. Tài liệu Word: Chuẩn bị sẵn tài liệu Word (.docx) mà bạn muốn chuyển đổi.
 
-Bước đầu tiên là tải tài liệu Word bạn muốn chuyển đổi sang HTML cố định. Sử dụng lớp Tài liệu để tải tài liệu từ tệp nguồn. Đây là một ví dụ :
+## Nhập không gian tên
 
-```csharp
-Document doc = new Document(dataDir + "Document.docx");
-```
-
-Trong ví dụ này, chúng tôi tải tài liệu "Document.docx" nằm trong thư mục tài liệu.
-
-## Định cấu hình tùy chọn sao lưu
-
-Bước tiếp theo là định cấu hình các tùy chọn lưu để chuyển đổi sang HTML cố định. Sử dụng lớp HtmlFixedSaveOptions và đặt thuộc tính SaveFontFaceCssSeparately thành false để ghi tất cả quy tắc CSS vào một tệp duy nhất. Đây là cách thực hiện:
+Trước tiên, hãy nhập các vùng tên cần thiết vào dự án C# của bạn. Điều này sẽ cho phép chúng ta truy cập các chức năng của Aspose.Words một cách dễ dàng.
 
 ```csharp
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Chúng tôi tạo một đối tượng HtmlFixedSaveOptions mới và đặt thuộc tính SaveFontFaceCssSeparately thành false để ghi tất cả các quy tắc CSS vào một tệp duy nhất.
+Được rồi, hãy chia quy trình thành các bước dễ thực hiện. Mỗi bước sẽ hướng dẫn bạn qua một phần cụ thể của quy trình để đảm bảo mọi thứ diễn ra suôn sẻ.
 
-## Đã sửa lỗi chuyển đổi tài liệu HTML
+## Bước 1: Thiết lập thư mục tài liệu của bạn
 
-Bây giờ chúng ta đã định cấu hình các tùy chọn lưu, chúng ta có thể tiến hành chuyển đổi tài liệu sang HTML cố định. Sử dụng phương thức Lưu của lớp Tài liệu để lưu tài liệu đã chuyển đổi ở định dạng HTML cố định bằng cách chỉ định các tùy chọn lưu. Đây là một ví dụ :
-
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
-```
-
-Trong ví dụ này, chúng tôi lưu tài liệu đã chuyển đổi dưới dạng "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html" bằng cách sử dụng các tùy chọn lưu đã chỉ định.
-
-### Mã nguồn mẫu cho HtmlFixedSaveOptions với tính năng "Viết tất cả quy tắc CSS trong một tệp" bằng Aspose.Words cho .NET
+Đầu tiên, chúng ta cần xác định đường dẫn đến thư mục tài liệu của bạn. Đây là nơi tài liệu Word của bạn được lưu trữ và nơi HTML đã chuyển đổi sẽ được lưu.
 
 ```csharp
 // Đường dẫn truy cập vào thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+## Bước 2: Tải tài liệu Word
+
+ Tiếp theo, chúng ta tải tài liệu Word mà bạn muốn chuyển đổi sang HTML. Việc này được thực hiện bằng cách sử dụng`Document` lớp từ thư viện Aspose.Words.
+
+```csharp
 // Tải tài liệu Word
 Document doc = new Document(dataDir + "Document.docx");
+```
 
+## Bước 3: Định cấu hình tùy chọn lưu HTML
+
+ Bây giờ, chúng ta cần định cấu hình các tùy chọn lưu HTML. Cụ thể, chúng tôi muốn kích hoạt tính năng ghi tất cả các quy tắc CSS vào một tệp duy nhất. Điều này đạt được bằng cách thiết lập`SaveFontFaceCssSeparately`tài sản để`false`.
+
+```csharp
 // Định cấu hình các tùy chọn sao lưu với tính năng "Viết tất cả các quy tắc CSS trong một tệp"
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };
+HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions 
+{ 
+    SaveFontFaceCssSeparately = false 
+};
+```
 
-// Chuyển đổi tài liệu sang HTML cố định
+## Bước 4: Chuyển đổi tài liệu sang HTML cố định
+
+Cuối cùng, chúng tôi lưu tài liệu dưới dạng tệp HTML bằng cách sử dụng các tùy chọn lưu đã định cấu hình. Bước này đảm bảo rằng tất cả các quy tắc CSS được viết trong một tệp duy nhất.
+
+```csharp
+//Chuyển đổi tài liệu sang HTML cố định
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã đề cập đến cách chuyển đổi tài liệu Word sang HTML cố định bằng cách viết tất cả các quy tắc CSS trong một tệp bằng cách sử dụng HtmlFixedSaveOptions với thư viện Aspose.Words cho .NET. Bằng cách làm theo các bước được cung cấp và sử dụng mã nguồn C# được cung cấp, bạn có thể dễ dàng áp dụng chức năng này trong ứng dụng C# của mình. Viết tất cả các quy tắc CSS vào một tệp giúp việc tổ chức và quản lý mã HTML được tạo trong quá trình chuyển đổi tài liệu trở nên dễ dàng hơn.
+Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã chuyển đổi thành công tài liệu Word sang HTML với tất cả các quy tắc CSS được sắp xếp gọn gàng trong một tệp duy nhất. Phương pháp này không chỉ đơn giản hóa việc quản lý CSS mà còn nâng cao khả năng bảo trì tài liệu HTML của bạn. Vì vậy, lần tới khi bạn được giao nhiệm vụ chuyển đổi tài liệu Word, bạn sẽ biết chính xác cách giữ mọi thứ gọn gàng!
+
+## Câu hỏi thường gặp
+
+### Tại sao tôi nên sử dụng một tệp CSS duy nhất cho đầu ra HTML của mình?
+Việc sử dụng một tệp CSS giúp đơn giản hóa việc quản lý và bảo trì kiểu của bạn. Nó làm cho HTML của bạn sạch hơn và hiệu quả hơn.
+
+### Tôi có thể tách các quy tắc CSS về mặt phông chữ nếu cần không?
+ Có, bằng cách thiết lập`SaveFontFaceCssSeparately` ĐẾN`true`, bạn có thể tách các quy tắc CSS về phông chữ thành một tệp khác.
+
+### Aspose.Words cho .NET có được sử dụng miễn phí không?
+ Aspose.Words cung cấp bản dùng thử miễn phí mà bạn có thể[tải xuống ở đây](https://releases.aspose.com/) . Để tiếp tục sử dụng, hãy cân nhắc việc mua giấy phép[đây](https://purchase.aspose.com/buy).
+
+### Aspose.Words cho .NET có thể chuyển đổi sang những định dạng nào khác?
+Aspose.Words for .NET hỗ trợ nhiều định dạng khác nhau bao gồm PDF, TXT và các định dạng hình ảnh như JPEG và PNG.
+
+### Tôi có thể tìm thêm tài nguyên trên Aspose.Words cho .NET ở đâu?
+ Kiểm tra[tài liệu](https://reference.aspose.com/words/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.

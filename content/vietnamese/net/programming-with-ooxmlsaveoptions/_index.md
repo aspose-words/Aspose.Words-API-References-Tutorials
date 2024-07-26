@@ -16,8 +16,8 @@ Cho dù bạn muốn tạo tài liệu tương thích với các phiên bản Wo
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Mã hóa Docx bằng mật khẩu](./encrypt-docx-with-password/) | Tìm hiểu cách mã hóa tệp DOCX bằng mật khẩu bằng Aspose.Words cho .NET. Hướng dẫn đầy đủ về bảo mật tài liệu. |
-| [Tuân thủ Ooxml Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Tìm hiểu cách đảm bảo tuân thủ Ooxml Iso 29500_2008_Strict khi lưu tài liệu bằng Aspose.Words cho .NET. |
-| [Cập nhật thuộc tính thời gian đã lưu lần cuối](./update-last-saved-time-property/) | Tìm hiểu cách tự động cập nhật thuộc tính Thời gian lưu lần cuối khi lưu tài liệu bằng Aspose.Words cho .NET. |
-| [Giữ ký tự kiểm soát kế thừa](./keep-legacy-control-chars/) | Tìm hiểu cách giữ nguyên các ký tự điều khiển cũ khi lưu tài liệu bằng Aspose.Words cho .NET. |
-| [Đặt mức nén](./set-compression-level/) | Tìm hiểu cách đặt mức nén khi lưu tài liệu bằng Aspose.Words cho .NET. |
+| [Mã hóa Docx bằng mật khẩu](./encrypt-docx-with-password/) | Bảo mật tài liệu Word của bạn bằng cách mã hóa chúng bằng mật khẩu bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để bảo vệ thông tin nhạy cảm của bạn. |
+| [Tuân thủ Ooxml Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Tìm hiểu cách đảm bảo tuân thủ OOXML ISO 29500_2008_Strict bằng cách sử dụng Aspose.Words cho .NET với hướng dẫn từng bước này. |
+| [Cập nhật thuộc tính thời gian đã lưu lần cuối](./update-last-saved-time-property/) | Tìm hiểu cách cập nhật thuộc tính thời gian đã lưu lần cuối trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết từng bước của chúng tôi. |
+| [Giữ ký tự kiểm soát kế thừa](./keep-legacy-control-chars/) | Tìm hiểu cách giữ nguyên các ký tự điều khiển cũ trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. |
+| [Đặt mức nén](./set-compression-level/) | Tìm hiểu cách đặt mức nén trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tối ưu hóa hiệu suất và lưu trữ tài liệu của bạn. |

@@ -59,7 +59,7 @@ Gratulálok ! Megtanulta, hogyan kell Markdown dokumentumot olvasni az Aspose.Wo
 
  V: Markdown dokumentum .NET használatával történő olvasásához használhat Markdown-kompatibilis könyvtárat, például`Markdig` vagy`CommonMark.NET`. Ezek a könyvtárak funkcionalitást biztosítanak a Markdown-dokumentum tartalmának elemzéséhez és kibontásához.
 
-#### K: Hogyan lehet Markdown-dokumentumot HTML-be konvertálni .NET használatával?
+#### K: Hogyan konvertálhatunk Markdown dokumentumot HTML formátumba .NET használatával?
 
  V: Markdown-dokumentum HTML-formátumba való konvertálásához .NET használatával olyan könyvtárakat használhat, mint pl`Markdig` vagy`CommonMark.NET`. Ezek a könyvtárak lefordítják a Markdown jelölést HTML jelöléssé, megőrizve a dokumentum szerkezetét és formázását.
 

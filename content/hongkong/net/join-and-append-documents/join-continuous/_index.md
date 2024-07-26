@@ -85,7 +85,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 
 ## 結論
 
-現在你就得到它了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 成功將兩個 Word 文件合併為一個連續文件。這個過程不僅簡單而且高效，確保您的文件保留其原始格式。
+現在你就擁有了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 成功將兩個 Word 文件合併為一個連續文件。這個過程不僅簡單而且高效，確保您的文件保留其原始格式。
 
 ## 常見問題解答
 

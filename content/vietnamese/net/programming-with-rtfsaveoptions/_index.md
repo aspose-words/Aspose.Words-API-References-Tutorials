@@ -16,4 +16,4 @@ Bằng cách sử dụng hướng dẫn Aspose.Words for .NET, bạn sẽ có th
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Lưu hình ảnh dưới dạng Wmf](./saving-images-as-wmf/) | Tìm hiểu cách lưu hình ảnh dưới dạng WMF khi chuyển đổi sang RTF bằng Aspose.Words cho .NET. |
+| [Lưu hình ảnh dưới dạng Wmf](./saving-images-as-wmf/) | Tìm hiểu cách lưu hình ảnh dưới dạng WMF trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Tăng cường khả năng tương thích tài liệu và chất lượng hình ảnh của bạn. |

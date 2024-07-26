@@ -77,7 +77,7 @@ Selamat! Anda telah menguasai dasar-dasar mengelola pengaturan font menggunakan 
 
 ## FAQ
 
-### Q1: Dapatkah saya menggunakan font dari beberapa folder khusus?
+### Q1: Bisakah saya menggunakan font dari beberapa folder khusus?
 
  Ya, Anda dapat menentukan beberapa`FolderFontSource` contoh di dalam`SetFontsSources` metode untuk memasukkan font dari folder yang berbeda.
 

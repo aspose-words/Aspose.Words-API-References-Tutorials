@@ -38,7 +38,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Present
 ```
 
 ## Βήμα 4: Αποθηκεύστε το έγγραφο
- Χρησιμοποιήστε το έγγραφο`Save` μέθοδος αποθήκευσης του εγγράφου σε αρχείο.
+ Χρησιμοποιήστε το έγγραφο`Save` μέθοδο αποθήκευσης του εγγράφου σε αρχείο.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");

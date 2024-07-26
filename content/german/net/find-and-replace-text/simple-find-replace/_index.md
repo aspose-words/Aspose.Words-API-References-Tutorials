@@ -89,7 +89,7 @@ Sie sollten sehen, dass „_CustomerName_" wurde durch "James Bond" ersetzt.
 
 ## Schritt 6: Speichern des Dokuments
 
-Speichern Sie abschließend das geänderte Dokument im angegebenen Verzeichnis.
+Speichern Sie abschließend das geänderte Dokument in dem von Ihnen angegebenen Verzeichnis.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");

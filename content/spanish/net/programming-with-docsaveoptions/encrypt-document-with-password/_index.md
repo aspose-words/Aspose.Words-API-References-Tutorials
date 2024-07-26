@@ -9,7 +9,7 @@ url: /es/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
 ## Introducción
 
-¿Alguna vez has necesitado proteger un documento con una contraseña? No estás solo. Con el auge de la documentación digital, proteger la información confidencial es más importante que nunca. Aspose.Words para .NET ofrece una manera perfecta de cifrar sus documentos con contraseñas. Imagínelo como si pusiera un candado en su diario. Sólo aquellos con la clave (o contraseña, en este caso) pueden echar un vistazo al interior. Profundicemos en cómo puede lograr esto, paso a paso.
+¿Alguna vez has necesitado proteger un documento con una contraseña? No estás solo. Con el auge de la documentación digital, proteger la información confidencial es más importante que nunca. Aspose.Words para .NET ofrece una manera perfecta de cifrar sus documentos con contraseñas. Imagínelo como si pusiera un candado en su diario. Sólo aquellos con la clave (o contraseña, en este caso) pueden echar un vistazo al interior. Profundicemos en cómo puede lograrlo, paso a paso.
 
 ## Requisitos previos
 

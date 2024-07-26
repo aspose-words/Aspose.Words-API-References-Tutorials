@@ -89,7 +89,7 @@ Vergeet ten slotte niet om, nadat u alle noodzakelijke wijzigingen heeft aangebr
 doc.Save(dataDir + "DocumentProtection.RemoveDocumentProtection.docx");
 ```
 
-Hierdoor wordt uw onbeveiligde document in de opgegeven map opgeslagen.
+Hiermee wordt uw onbeveiligde document in de opgegeven map opgeslagen.
 
 ## Conclusie
 

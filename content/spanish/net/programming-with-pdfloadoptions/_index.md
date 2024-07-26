@@ -16,5 +16,5 @@ Con estos tutoriales, podrá optimizar el proceso de carga de archivos PDF en su
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Cargar PDF cifrado](./load-encrypted-pdf/) | Guía paso a paso para cargar un PDF cifrado usando Aspose.Words para .NET. |
-| [Cargar rango de páginas de PDF](./load-page-range-of-pdf/) | Guía paso a paso para cargar un rango de páginas PDF específico con Aspose.Words para .NET. |
+| [Cargar PDF cifrado](./load-encrypted-pdf/) | Aprenda cómo cargar archivos PDF cifrados usando Aspose.Words para .NET con nuestro tutorial paso a paso. Domine el cifrado y descifrado de PDF en poco tiempo. |
+| [Cargar rango de páginas de PDF](./load-page-range-of-pdf/) | Aprenda a cargar rangos de páginas específicos desde un PDF usando Aspose.Words para .NET en este completo tutorial paso a paso. Perfecto para desarrolladores .NET. |

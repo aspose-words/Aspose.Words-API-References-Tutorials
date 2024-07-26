@@ -2,95 +2,97 @@
 title: Réduisez la taille du fichier PDF en n’incorporant pas les polices principales
 linktitle: Réduisez la taille du fichier PDF en n’incorporant pas les polices principales
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment réduire la taille d'un fichier PDF en n'incorporant pas les polices principales lors de la conversion de documents Word en PDF avec Aspose.Words pour .NET.
+description: Découvrez comment réduire la taille du fichier PDF en n'incorporant pas les polices principales à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour optimiser vos PDF.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## Introduction
 
-Dans ce didacticiel, nous vous expliquerons les étapes à suivre pour réduire la taille d'un fichier PDF en n'intégrant pas les polices principales avec Aspose.Words for .NET. Cette fonctionnalité vous permet de contrôler si les polices de base telles que Arial, Times New Roman, etc. doivent être intégrées au PDF lors de la conversion d'un document Word. Suivez les étapes ci-dessous :
+Vous est-il déjà arrivé de vous gratter la tête en vous demandant pourquoi vos fichiers PDF sont si volumineux ? Eh bien, vous n'êtes pas seul. L’intégration de polices de base comme Arial et Times New Roman est l’un des coupables courants. Heureusement, Aspose.Words for .NET propose un moyen astucieux de résoudre ce problème. Dans ce didacticiel, je vais vous montrer comment réduire la taille de votre fichier PDF en évitant l'intégration de ces polices principales. Allons-y !
 
-## Étape 1 : Chargement du document
+## Conditions préalables
 
-Commencez par télécharger le document Word que vous souhaitez convertir en PDF :
+Avant de nous lancer dans ce voyage passionnant, assurons-nous que vous disposez de tout ce dont vous avez besoin. Voici une liste de contrôle rapide :
+
+-  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Si vous ne l'avez pas encore, vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
+- Environnement de développement : vous aurez besoin d'un environnement de développement tel que Visual Studio.
+- Un document Word : nous utiliserons un document Word (par exemple, "Rendering.docx") pour ce didacticiel.
+- Connaissances de base de C# : Une compréhension de base de C# vous aidera à suivre.
+
+Très bien, maintenant que nous sommes tous prêts, entrons dans le vif du sujet !
+
+## Importer des espaces de noms
+
+Tout d’abord, importons les espaces de noms nécessaires. Cette étape garantit que nous avons accès à toutes les fonctionnalités Aspose.Words dont nous avons besoin.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Étape 1 : initialisez votre répertoire de documents
+
+Avant de commencer à manipuler notre document, nous devons spécifier le répertoire dans lequel nos documents sont stockés. Ceci est essentiel pour accéder aux fichiers.
+
+```csharp
+// Le chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où se trouve votre document Word.
+
+## Étape 2 : Charger le document Word
+
+Ensuite, nous devons charger le document Word que nous voulons convertir en PDF. Dans cet exemple, nous utilisons un document nommé « Rendering.docx ».
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Assurez-vous de spécifier le chemin correct vers votre document Word.
+Cette ligne de code charge le document en mémoire, prêt pour un traitement ultérieur.
 
-## Étape 2 : Définir les options de conversion PDF
+## Étape 3 : Configurer les options d'enregistrement PDF
 
-Créez une instance de la classe PdfSaveOptions et activez l'évitement de base de l'incorporation de polices :
+Vient maintenant la partie magique ! Nous allons configurer les options d'enregistrement PDF pour éviter d'incorporer les polices principales. Il s’agit de l’étape clé qui permet de réduire la taille du fichier PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-Cette option contrôle si les polices de base doivent être intégrées ou non dans le PDF.
+ Paramètre`UseCoreFonts` à`true` garantit que les polices principales comme Arial et Times New Roman ne sont pas intégrées au PDF, ce qui réduit considérablement la taille du fichier.
 
-## Étape 3 : Convertir le document en PDF
+## Étape 4 : Enregistrez le document au format PDF
 
- Utilisez le`Save` méthode pour convertir le document Word en PDF en spécifiant les options de conversion :
+Enfin, nous enregistrons le document Word au format PDF en utilisant les options d'enregistrement configurées. Cette étape génère le fichier PDF sans intégrer les polices principales.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Assurez-vous de spécifier le chemin correct pour enregistrer le PDF converti.
-
-### Exemple de code source pour éviter d'incorporer des polices principales à l'aide d'Aspose.Words pour .NET
-
-Voici le code source complet permettant d'utiliser la fonctionnalité permettant d'éviter l'intégration des polices principales avec Aspose.Words for .NET :
-
-```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Le PDF de sortie ne sera pas intégré aux polices principales telles que Arial, Times New Roman, etc.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-En suivant ces étapes, vous pouvez facilement contrôler si les polices de base doivent être intégrées au PDF lors de la conversion d'un document Word avec Aspose.Words pour .NET.
-
+Et voila! Votre fichier PDF est maintenant enregistré dans le répertoire spécifié sans ces polices principales volumineuses.
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons expliqué comment réduire la taille d'un fichier PDF en n'intégrant pas de polices de base avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de contrôler si les polices de base doivent être intégrées au PDF lors de la conversion d'un document Word. En suivant les étapes décrites, vous pouvez facilement contrôler l'intégration ou la non-intégration des polices de base, ce qui peut contribuer à réduire la taille du fichier PDF et garantir une meilleure compatibilité et une apparence cohérente du document sur différents appareils et plates-formes. N'oubliez pas de considérer les conséquences de la non-intégration des polices de base et d'expérimenter pour vous assurer que le document s'affiche comme prévu.
+Réduire la taille du fichier PDF peut être un jeu d'enfant avec Aspose.Words pour .NET. En évitant l'intégration de polices principales, vous pouvez réduire considérablement la taille du fichier, facilitant ainsi le partage et le stockage de vos documents. J'espère que ce tutoriel vous a été utile et vous a permis de comprendre clairement le processus. N'oubliez pas que de petits ajustements peuvent faire une grande différence !
 
-### Questions fréquemment posées
+## FAQ
 
-#### Q : Quelle est l'option permettant de ne pas intégrer les polices de base dans un fichier PDF et pourquoi est-ce important ?
-R : L'option permettant de ne pas intégrer les polices de base dans un fichier PDF contrôle si les polices de base telles que Arial, Times New Roman, etc. doivent être intégrées dans le PDF lors de la conversion d'un document Word. Cela peut être important pour réduire la taille du fichier PDF en évitant d'inclure les polices couramment disponibles sur les systèmes de lecture PDF. Cela peut également contribuer à garantir une meilleure compatibilité et une apparence cohérente du document PDF sur différents appareils et plates-formes.
+### Pourquoi devrais-je éviter d’incorporer les polices principales dans les PDF ?
+Éviter d'incorporer les polices principales réduit la taille du fichier, ce qui facilite son partage et son stockage.
 
-#### Q : Comment puis-je configurer Aspose.Words pour .NET pour ne pas intégrer les polices de base dans un fichier PDF ?
-R : Pour configurer Aspose.Words for .NET afin qu'il n'intègre pas les polices principales dans un fichier PDF, procédez comme suit :
+### Puis-je toujours afficher correctement le PDF sans les polices principales intégrées ?
+Oui, les polices principales comme Arial et Times New Roman sont généralement disponibles sur la plupart des systèmes.
 
- Définissez le chemin du répertoire où se trouvent vos documents en remplaçant`"YOUR DOCUMENTS DIRECTORY"` avec le chemin réel de votre répertoire de documents.
+### Que faire si je dois intégrer des polices personnalisées ?
+ Vous pouvez personnaliser le`PdfSaveOptions`pour intégrer des polices spécifiques selon vos besoins.
 
- Chargez le document Word que vous souhaitez convertir en PDF à l'aide du`Document` classe et le chemin du document spécifié.
+### L’utilisation d’Aspose.Words pour .NET est-elle gratuite ?
+ Aspose.Words pour .NET nécessite une licence. Vous pouvez obtenir un essai gratuit[ici](https://releases.aspose.com/).
 
- Créez une instance du`PdfSaveOptions` classe et définir le`UseCoreFonts`propriété à`true`. Cela évitera l'intégration de polices de base dans le fichier PDF généré.
-
- Utilisez le`Save` méthode du`Document` objet pour enregistrer le document au format PDF en précisant les options de conversion configurées précédemment.
-
-#### Q : Quels sont les avantages de ne pas intégrer de polices de base dans un fichier PDF ?
-R : Les avantages de ne pas intégrer les polices de base dans un fichier PDF sont :
-
-Réduction de la taille du fichier PDF : en évitant d'incorporer des polices couramment disponibles comme Arial, Times New Roman, etc., la taille du fichier PDF peut être réduite, ce qui facilite le stockage, le partage et le transfert de fichiers.
-
-Meilleure compatibilité : en utilisant des polices de base couramment disponibles sur les systèmes de lecture PDF, vous garantissez une meilleure compatibilité et une meilleure apparence des documents sur différents appareils et plates-formes.
-
-#### Q : Quelles sont les conséquences de la non-intégration des polices de base dans un fichier PDF ?
-R : Les conséquences de la non-intégration des polices de base dans un fichier PDF sont les suivantes :
-
-Apparence différente : si les polices de base ne sont pas disponibles sur le système sur lequel le PDF est ouvert, des polices de remplacement seront utilisées, ce qui peut donner une apparence différente de celle prévue.
-
-Problèmes de lisibilité : les polices de remplacement utilisées peuvent ne pas être aussi lisibles que les polices d'origine, ce qui peut affecter la lisibilité du document.
+### Où puis-je trouver plus de documentation sur Aspose.Words pour .NET ?
+ Vous pouvez trouver une documentation détaillée[ici](https://reference.aspose.com/words/net/).

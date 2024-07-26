@@ -130,7 +130,7 @@ Ano, Aspose.Words je k dispozici pro více platforem, včetně Javy a .NET, což
 ### Mohu převést dokumenty Wordu do PDF pomocí Aspose.Words?
 Absolutně! Aspose.Words podporuje různé formáty, včetně převodu DOCX do PDF.
 
-### Je Aspose.Words vhodný pro automatizaci úloh zpracování dokumentů velkého rozsahu?
+### Je Aspose.Words vhodný pro automatizaci úloh zpracování rozsáhlých dokumentů?
 Ano, Aspose.Words je navržen tak, aby efektivně zvládal velké objemy zpracování dokumentů.
 
 ### Podporuje Aspose.Words cloudovou manipulaci s dokumenty?

@@ -2,38 +2,36 @@
 title: Tải tài liệu được mã hóa trong Word
 linktitle: Tải tài liệu được mã hóa trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tải và lưu mã hóa trong tài liệu word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách tải và lưu tài liệu Word được mã hóa bằng Aspose.Words cho .NET. Bảo mật tài liệu của bạn bằng mật khẩu mới một cách dễ dàng. Hướng dẫn từng bước bao gồm.
 type: docs
 weight: 10
 url: /vi/net/programming-with-loadoptions/load-encrypted-document/
 ---
-Khi Xử lý văn bản với tài liệu word được mã hóa trong ứng dụng C#, điều quan trọng là có thể tải chúng một cách chính xác bằng cách cung cấp mật khẩu chính xác. Với thư viện Aspose.Words dành cho .NET, bạn có thể dễ dàng tải các tài liệu word được mã hóa bằng cách sử dụng các tùy chọn tải thích hợp. Trong hướng dẫn từng bước này, chúng tôi sẽ chỉ cho bạn cách sử dụng mã nguồn C# của Aspose.Words cho .NET để tải tài liệu được mã hóa bằng tùy chọn tải LoadOptions.
+## Giới thiệu
 
-## Tìm hiểu thư viện Aspose.Words
+Trong hướng dẫn này, bạn sẽ tìm hiểu cách tải tài liệu Word được mã hóa và lưu nó bằng mật khẩu mới bằng Aspose.Words cho .NET. Xử lý tài liệu được mã hóa là điều cần thiết để duy trì tính bảo mật của tài liệu, đặc biệt là khi xử lý thông tin nhạy cảm.
 
-Trước khi đi sâu vào mã, điều quan trọng là phải hiểu thư viện Aspose.Words cho .NET. Aspose.Words là một thư viện mạnh mẽ để tạo, chỉnh sửa, chuyển đổi và bảo vệ tài liệu Word trên các nền tảng khác nhau bao gồm .NET. Nó cung cấp nhiều tính năng để thao tác với tài liệu, chẳng hạn như chèn văn bản, thay đổi định dạng, thêm phần và hơn thế nữa.
+## Điều kiện tiên quyết
 
-## Đang tải một tài liệu được mã hóa
+Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
 
-Bước đầu tiên là tải lên tài liệu được mã hóa bằng các tùy chọn tải lên thích hợp. Trong trường hợp của chúng tôi, chúng tôi sử dụng lớp Tài liệu để tải tài liệu bằng cách chỉ định đường dẫn tài liệu và mật khẩu. Đây là một ví dụ :
+1.  Đã cài đặt thư viện Aspose.Words cho .NET. Bạn có thể tải nó xuống từ[đây](https://downloads.aspose.com/words/net).
+2.  Giấy phép Aspose hợp lệ. Bạn có thể dùng thử miễn phí hoặc mua một cái từ[đây](https://purchase.aspose.com/buy).
+3. Visual Studio hoặc bất kỳ môi trường phát triển .NET nào khác.
 
-```csharp
-Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
-```
+## Nhập không gian tên
 
-Trong ví dụ này, chúng tôi tải tài liệu "Encrypted.docx" nằm trong thư mục tài liệu bằng mật khẩu "password".
-
-## Lưu tài liệu được mã hóa
-
-Sau khi tải lên tài liệu được mã hóa, bạn cũng có thể lưu tài liệu đó bằng cách chỉ định mật khẩu mới cho tệp đầu ra. Trong ví dụ của chúng tôi, chúng tôi sử dụng lớp OdtSaveOptions để lưu tài liệu ở định dạng ODT bằng mật khẩu mới. Đây là cách thực hiện:
+Để bắt đầu, hãy đảm bảo bạn đã nhập các không gian tên cần thiết vào dự án của mình:
 
 ```csharp
-doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Trong ví dụ này, chúng tôi lưu tài liệu với tên "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt" bằng cách chỉ định mật khẩu mới "newpassword".
+## Bước 1: Tải tài liệu được mã hóa
 
-### Mã nguồn mẫu cho LoadOptions với chức năng "Tải tài liệu được mã hóa" bằng Aspose.Words cho .NET
+ Trước tiên, bạn sẽ tải tài liệu được mã hóa bằng cách sử dụng`LoadOptions` lớp học. Lớp này cho phép bạn chỉ định mật khẩu cần thiết để mở tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
@@ -41,34 +39,34 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Tải tài liệu được mã hóa bằng mật khẩu được chỉ định
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
+```
 
-//Lưu tài liệu được mã hóa bằng mật khẩu mới
+## Bước 2: Lưu tài liệu bằng mật khẩu mới
+
+ Tiếp theo, bạn sẽ lưu tài liệu đã tải dưới dạng tệp ODT, lần này hãy đặt mật khẩu mới bằng cách sử dụng`OdtSaveOptions` lớp học.
+
+```csharp
+// Lưu tài liệu được mã hóa bằng mật khẩu mới
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách tải và lưu tài liệu được mã hóa bằng thư viện Aspose.Words cho .NET. Bằng cách làm theo các bước được cung cấp và sử dụng mã nguồn C# được cung cấp, bạn có thể dễ dàng áp dụng chức năng này trong ứng dụng C# của mình. Tải lên các tài liệu được mã hóa sẽ giúp dữ liệu của bạn an toàn và cho phép bạn làm việc với các tài liệu được bảo vệ trong Aspose.Words.
+Bằng cách làm theo các bước được nêu trong hướng dẫn này, bạn có thể dễ dàng tải và lưu tài liệu Word được mã hóa bằng Aspose.Words cho .NET. Điều này đảm bảo rằng tài liệu của bạn vẫn được bảo mật và chỉ những cá nhân được ủy quyền mới có thể truy cập được.
 
+## Câu hỏi thường gặp
 
-### Câu hỏi thường gặp về tải được mã hóa trong tài liệu word
+### Tôi có thể sử dụng Aspose.Words để tải và lưu các định dạng tệp khác không?
+Có, Aspose.Words hỗ trợ nhiều định dạng tệp bao gồm DOC, DOCX, PDF, HTML, v.v.
 
-#### Hỏi: Tài liệu Word được mã hóa là gì?
+### Nếu tôi quên mật khẩu của tài liệu được mã hóa thì sao?
+Thật không may, nếu bạn quên mật khẩu, bạn sẽ không thể tải tài liệu. Đảm bảo bạn lưu trữ mật khẩu một cách an toàn.
 
-Trả lời: Tài liệu Word được mã hóa là các tệp đã được bảo vệ bằng mật khẩu để hạn chế truy cập trái phép. Những mật khẩu này được yêu cầu để mở, xem hoặc sửa đổi nội dung của tài liệu.
+### Có thể xóa mã hóa khỏi tài liệu không?
+Có, bằng cách lưu tài liệu mà không chỉ định mật khẩu, bạn có thể xóa mã hóa.
 
-#### Câu hỏi: Aspose.Words xử lý các tài liệu được mã hóa trong ứng dụng C# như thế nào?
+### Tôi có thể áp dụng các cài đặt mã hóa khác nhau không?
+Có, Aspose.Words cung cấp nhiều tùy chọn khác nhau để mã hóa tài liệu, bao gồm chỉ định các loại thuật toán mã hóa khác nhau.
 
-Trả lời: Aspose.Words for .NET cung cấp các công cụ và chức năng cần thiết để tải tài liệu Word được mã hóa bằng cách chỉ định mật khẩu chính xác, đảm bảo quyền truy cập an toàn vào các tệp được bảo vệ.
-
-#### Câu hỏi: Tôi có thể thay đổi mật khẩu của tài liệu được mã hóa bằng Aspose.Words không?
-
-Đ: Chắc chắn rồi! Aspose.Words cho phép bạn lưu tài liệu được mã hóa bằng mật khẩu mới, mang đến cho bạn sự linh hoạt trong việc cập nhật mật khẩu khi cần.
-
-#### Câu hỏi: Aspose.Words hỗ trợ những thuật toán mã hóa nào?
-
-Đáp: Aspose.Words hỗ trợ nhiều thuật toán mã hóa khác nhau, bao gồm Tiêu chuẩn mã hóa nâng cao (AES), đảm bảo bảo vệ dữ liệu mạnh mẽ.
-
-#### Hỏi: Aspose.Words có tương thích với các định dạng tài liệu khác ngoài Word không?
-
-Trả lời: Có, Aspose.Words hỗ trợ nhiều định dạng tài liệu, bao gồm PDF, HTML, EPUB, v.v., khiến nó trở thành một giải pháp linh hoạt để xử lý tài liệu.
+### Có giới hạn về kích thước của tài liệu có thể được mã hóa không?
+Không, Aspose.Words có thể xử lý các tài liệu ở mọi kích thước, tùy thuộc vào giới hạn bộ nhớ hệ thống của bạn.

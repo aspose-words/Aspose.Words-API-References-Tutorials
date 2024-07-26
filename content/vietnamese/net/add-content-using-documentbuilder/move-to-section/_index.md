@@ -9,7 +9,7 @@ url: /vi/net/add-content-using-documentbuilder/move-to-section/
 ---
 ## Giới thiệu
 
-Trong thế giới kỹ thuật số ngày nay, tự động hóa là chìa khóa để tăng năng suất. Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển thao tác với tài liệu Word theo chương trình. Một nhiệm vụ phổ biến là di chuyển đến các phần khác nhau trong tài liệu để thêm hoặc sửa đổi nội dung. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách di chuyển đến một phần cụ thể trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ chia nhỏ quy trình theo từng bước để đảm bảo bạn có thể thực hiện dễ dàng.
+Trong thế giới kỹ thuật số ngày nay, tự động hóa là chìa khóa để tăng năng suất. Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển thao tác với tài liệu Word theo chương trình. Một tác vụ phổ biến là di chuyển đến các phần khác nhau trong tài liệu để thêm hoặc sửa đổi nội dung. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách di chuyển đến một phần cụ thể trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ chia nhỏ quy trình theo từng bước để đảm bảo bạn có thể thực hiện dễ dàng.
 
 ## Điều kiện tiên quyết
 

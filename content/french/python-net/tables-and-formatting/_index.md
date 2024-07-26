@@ -11,7 +11,7 @@ url: /fr/python-net/tables-and-formatting/
 
 ## Introduction aux tableaux et au formatage dans les didacticiels Aspose.Words
 
-Bienvenue dans le monde des didacticiels Aspose.Words, où nous approfondissons l'art des tableaux et du formatage. Cette série de didacticiels est conçue pour les développeurs travaillant avec Python et .NET, dans le but de vous doter des compétences nécessaires pour exploiter la puissance des tableaux dans vos documents. Que vous conceviez des rapports, rédigiez des newsletters ou rédigiez des articles universitaires, la maîtrise de la création, de la personnalisation et du formatage de tableaux est essentielle pour produire des documents à la fois visuellement attrayants et riches en contenu.
+Bienvenue dans le monde des didacticiels Aspose.Words, où nous approfondissons l'art des tableaux et du formatage. Cette série de didacticiels est conçue pour les développeurs travaillant avec Python et .NET, dans le but de vous doter des compétences nécessaires pour exploiter la puissance des tableaux dans vos documents. Que vous conceviez des rapports, rédigiez des newsletters ou rédigiez des articles universitaires, maîtriser la création, la personnalisation et le formatage de tableaux est essentiel pour produire des documents à la fois visuellement attrayants et riches en contenu.
 
 ## L'importance des tableaux et du formatage
 

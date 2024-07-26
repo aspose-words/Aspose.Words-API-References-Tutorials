@@ -85,7 +85,7 @@ Sì, Aspose.Words per Java offre un'ampia gamma di funzionalità di automazione 
 
 Sì, Aspose.Words per Java supporta una varietà di formati di documenti, inclusi DOCX, DOC, PDF e altri. Puoi lavorare facilmente con diversi formati in base alle tue esigenze.
 
-### Sono necessarie autorizzazioni speciali per stampare i documenti a livello di codice?
+### Sono necessarie autorizzazioni speciali per stampare documenti a livello di codice?
 
 La stampa di documenti a livello di codice utilizzando Aspose.Words per Java non richiede autorizzazioni speciali oltre a quelle generalmente necessarie per la stampa dal sistema. Assicurati che la tua applicazione disponga dei diritti di accesso alla stampante necessari.
 

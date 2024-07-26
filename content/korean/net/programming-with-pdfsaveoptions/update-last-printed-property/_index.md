@@ -2,81 +2,88 @@
 title: PDF 문서의 마지막 인쇄 속성 업데이트
 linktitle: PDF 문서의 마지막 인쇄 속성 업데이트
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 PDF로 변환할 때 "마지막 인쇄" 속성을 업데이트하는 단계별 가이드입니다.
+description: 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 PDF 문서에서 마지막으로 인쇄된 속성을 업데이트하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
+## 소개
 
-이 문서에서는 Aspose.Words for .NET에서 PDF 문서 업데이트 기능의 "마지막 인쇄" 속성을 사용하는 방법에 대한 단계별 가이드를 제공합니다. 코드의 각 부분을 자세히 설명하겠습니다. 이 튜토리얼이 끝나면 PDF로 변환할 때 "마지막 인쇄" 속성을 업데이트하는 옵션을 구성하는 방법을 이해할 수 있습니다.
+PDF 문서에서 마지막으로 인쇄된 속성을 업데이트하려고 하시나요? 아마도 많은 양의 문서를 관리하고 있으며 문서가 마지막으로 인쇄된 시기를 추적해야 할 수도 있습니다. 이유가 무엇이든 이 속성을 업데이트하는 것은 매우 유용할 수 있으며 .NET용 Aspose.Words를 사용하면 매우 쉽습니다! 이를 달성할 수 있는 방법을 살펴보겠습니다.
 
-시작하기 전에 프로젝트에 Aspose.Words for .NET 라이브러리를 설치하고 구성했는지 확인하세요. Aspose 웹사이트에서 라이브러리와 설치 지침을 찾을 수 있습니다.
+## 전제조건
 
-## 1단계: 문서 디렉터리 정의
+시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
- 시작하려면 문서가 있는 디렉터리의 경로를 정의해야 합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요.
+-  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 아직 다운로드하지 않았다면 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+- 개발 환경: Visual Studio와 같은 개발 환경입니다.
+- C#에 대한 기본 이해: C#에 어느 정도 익숙해지면 도움이 됩니다.
+- 문서: PDF로 변환하고 마지막 인쇄 속성을 업데이트하려는 Word 문서입니다.
+
+## 네임스페이스 가져오기
+
+프로젝트에서 Aspose.Words for .NET을 사용하려면 필요한 네임스페이스를 가져와야 합니다. 방법은 다음과 같습니다.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+프로세스를 간단하고 관리 가능한 단계로 나누어 보겠습니다.
+
+## 1단계: 프로젝트 설정
+
+먼저, 프로젝트를 설정해 보겠습니다. Visual Studio를 열고 새 콘솔 앱(.NET Framework 또는 .NET Core)을 만들고 "UpdateLastPrintedPropertyPDF"와 같이 의미 있는 이름을 지정합니다.
+
+## 2단계: .NET용 Aspose.Words 설치
+
+다음으로 Aspose.Words for .NET 패키지를 설치해야 합니다. NuGet 패키지 관리자를 통해 이 작업을 수행할 수 있습니다. 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고 "NuGet 패키지 관리"를 선택한 다음 "Aspose.Words"를 검색하여 설치합니다.
+
+## 3단계: 문서 로드
+
+ 이제 PDF로 변환하려는 Word 문서를 로드해 보겠습니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서의 경로와 함께.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 2단계: 문서 업로드
-
-다음으로 처리하려는 문서를 로드해야 합니다. 이 예에서는 문서가 "Rendering.docx"이고 지정된 문서 디렉터리에 있다고 가정합니다.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3단계: 업데이트된 "마지막 인쇄" 속성을 사용하여 PDF로 저장 옵션 구성
+## 4단계: PDF 저장 옵션 구성
 
- PDF로 변환할 때 "마지막 인쇄" 속성 업데이트를 활성화하려면 다음을 구성해야 합니다.`PdfSaveOptions` 객체를 설정하고`UpdateLastPrintedProperty`재산`true`.
+ 마지막으로 인쇄된 속성을 업데이트하려면 PDF 저장 옵션을 구성해야 합니다. 새 인스턴스 만들기`PdfSaveOptions` 그리고 설정`UpdateLastPrintedProperty`재산`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions 
+{ 
+	UpdateLastPrintedProperty = true 
+};
 ```
 
-## 4단계: "마지막 인쇄" 속성을 업데이트하여 문서를 PDF로 저장합니다.
+## 5단계: 문서를 PDF로 저장
 
-마지막으로 이전에 구성한 저장 옵션을 사용하여 문서를 PDF 형식으로 저장할 수 있습니다.
+마지막으로 업데이트된 속성을 사용하여 문서를 PDF로 저장합니다. 출력 경로와 저장 옵션을 지정합니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-그게 다야 ! .NET용 Aspose.Words를 사용하여 문서를 PDF로 변환할 때 "마지막 인쇄" 속성 업데이트를 성공적으로 활성화했습니다.
-
-### .NET용 Aspose.Words를 사용하여 "마지막 인쇄" 속성을 업데이트하기 위한 예제 소스 코드
-
-
-```csharp
-
-	// 문서 디렉터리의 경로입니다.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
-
-```
 ## 결론
 
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 PDF 문서에서 "마지막 인쇄" 속성을 업데이트하는 방법을 설명했습니다. 주어진 단계를 따르면 문서를 PDF로 변환할 때 "마지막 인쇄" 속성을 업데이트하는 옵션을 쉽게 구성할 수 있습니다. 이 기능을 사용하면 문서 사용 및 관련 정보를 추적할 수 있습니다.
+그리고 거기에 있습니다! 다음 단계를 따르면 Aspose.Words for .NET을 사용하여 PDF 문서에서 마지막으로 인쇄된 속성을 쉽게 업데이트할 수 있습니다. 이 방법을 사용하면 문서 관리 프로세스가 효율적이고 최신 상태로 유지됩니다. 한번 시도해 보고 이것이 작업 흐름을 어떻게 단순화하는지 확인해 보십시오.
 
-### 자주 묻는 질문
+## FAQ
 
-#### Q: PDF 문서의 "마지막 인쇄" 속성은 무엇입니까?
-답변: PDF 문서의 "마지막 인쇄" 속성은 문서가 마지막으로 인쇄된 날짜와 시간을 나타냅니다. 이 속성은 문서 사용 및 관리에 대한 정보를 추적하는 데 유용할 수 있습니다.
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 문서 생성, 수정, 변환 및 인쇄를 포함하여 .NET 애플리케이션의 문서 처리 작업을 위한 강력한 라이브러리입니다.
 
-#### Q: .NET용 Aspose.Words를 사용하여 PDF 문서의 "마지막 인쇄" 속성을 어떻게 업데이트할 수 있습니까?
-A: .NET용 Aspose.Words를 사용하여 PDF 문서의 "마지막 인쇄" 속성을 업데이트하려면 다음 단계를 따르세요.
+### PDF에서 마지막으로 인쇄된 속성을 업데이트하는 이유는 무엇입니까?
+마지막으로 인쇄된 속성을 업데이트하면 특히 문서 인쇄가 빈번한 환경에서 문서 사용을 추적하는 데 도움이 됩니다.
 
- 인스턴스를 생성합니다.`Document` Word 문서의 경로를 지정하는 클래스입니다.
+### .NET용 Aspose.Words를 사용하여 다른 속성을 업데이트할 수 있나요?
+예, .NET용 Aspose.Words를 사용하면 작성자, 제목, 주제 등과 같은 다양한 문서 속성을 업데이트할 수 있습니다.
 
- 인스턴스를 생성합니다.`PdfSaveOptions` 클래스를 설정하고`UpdateLastPrintedProperty`재산`true` "마지막 인쇄" 속성 업데이트를 활성화합니다.
+### .NET용 Aspose.Words는 무료인가요?
+Aspose.Words for .NET은 다운로드할 수 있는 무료 평가판을 제공합니다.[여기](https://releases.aspose.com/). 장기간 사용하려면 라이센스를 구입해야 합니다.
 
- 사용`Save` 의 방법`Document`저장 옵션을 지정하여 문서를 PDF 형식으로 저장하는 클래스입니다.
-
-#### Q: 생성된 PDF 문서에서 "마지막 인쇄" 속성이 업데이트되었는지 어떻게 확인할 수 있습니까?
-A: Adobe Acrobat Reader와 같은 호환 가능한 PDF 뷰어로 PDF 파일을 열고 문서 정보를 보면 생성된 PDF 문서에서 "마지막 인쇄" 속성이 업데이트되었는지 확인할 수 있습니다. 마지막 인쇄 날짜 및 시간은 PDF 문서 생성 날짜 및 시간과 일치해야 합니다.
+### .NET용 Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
+.NET용 Aspose.Words에 대한 자세한 문서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/).

@@ -66,7 +66,7 @@ currentSection.HeadersFooters.Clear();
 
 ## Schritt 5: Kopf- und Fußzeilen kopieren
 
-Kopieren Sie die Kopf- und Fußzeilen aus dem vorherigen Abschnitt in den aktuellen Abschnitt. Dadurch wird sichergestellt, dass Formatierung und Inhalt in allen Abschnitten konsistent sind.
+Kopieren Sie die Kopf- und Fußzeilen aus dem vorherigen Abschnitt in den aktuellen Abschnitt. Dadurch wird sichergestellt, dass Formatierung und Inhalt in allen Abschnitten einheitlich sind.
 
 ```csharp
 foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)

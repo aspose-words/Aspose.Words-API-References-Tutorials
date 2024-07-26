@@ -21,7 +21,7 @@ Pour commencer à créer le tableau formaté, nous devons créer un nouveau docu
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Créer le document et initialiser le générateur de documents
+//Créer le document et initialiser le générateur de documents
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

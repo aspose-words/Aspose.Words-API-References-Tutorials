@@ -16,8 +16,8 @@ Of u nu documenten wilt maken die compatibel zijn met oudere versies van Word, d
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Versleutel Docx met wachtwoord](./encrypt-docx-with-password/) | Leer hoe u een DOCX-bestand met een wachtwoord codeert met Aspose.Words voor .NET. Volledige tutorial voor documentbeveiliging. |
-| [Ooxml-naleving Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Ontdek hoe u ervoor kunt zorgen dat Ooxml Iso 29500_2008_Strict wordt nageleefd bij het opslaan van documenten met Aspose.Words voor .NET. |
-| [Update laatst opgeslagen tijdeigenschap](./update-last-saved-time-property/) | Leer hoe u de eigenschap Laatst opgeslagen tijd automatisch bijwerkt wanneer u een document opslaat met Aspose.Words voor .NET. |
-| [Bewaar oude controletekens](./keep-legacy-control-chars/) | Leer hoe u oudere stuurtekens kunt behouden bij het opslaan van een document met Aspose.Words voor .NET. |
-| [Compressieniveau instellen](./set-compression-level/) | Leer hoe u het compressieniveau instelt wanneer u een document opslaat met Aspose.Words voor .NET. |
+| [Versleutel Docx met wachtwoord](./encrypt-docx-with-password/) | Beveilig uw Word-documenten door ze te coderen met een wachtwoord met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om uw gevoelige informatie te beschermen. |
+| [Ooxml-naleving Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Leer hoe u OOXML-naleving ISO 29500_2008_Strict kunt garanderen met behulp van Aspose.Words voor .NET met deze stapsgewijze handleiding. |
+| [Update laatst opgeslagen tijdeigenschap](./update-last-saved-time-property/) | Leer hoe u de laatst opgeslagen tijd-eigenschap in Word-documenten bijwerkt met Aspose.Words voor .NET. Volg onze gedetailleerde, stapsgewijze handleiding. |
+| [Bewaar oude controletekens](./keep-legacy-control-chars/) | Leer met deze stapsgewijze handleiding hoe u oudere stuurtekens in Word-documenten kunt behouden met Aspose.Words voor .NET. |
+| [Compressieniveau instellen](./set-compression-level/) | Leer hoe u het compressieniveau in Word-documenten instelt met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om uw documentopslag en -prestaties te optimaliseren. |

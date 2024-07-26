@@ -9,7 +9,7 @@ url: /pt/net/programming-with-table-of-content/
 ---
 Os tutoriais do Aspose.Words for .NET sobre processamento de palavras com índice orientam você nas etapas para manipular e personalizar índices em seus documentos do Word. Você aprenderá como criar, atualizar e personalizar índices para organizar efetivamente o conteúdo de seus documentos.
 
-Esses tutoriais fornecem exemplos de código passo a passo e explicações claras sobre como usar os recursos do Aspose.Words for .NET para trabalhar com índices. Você aprenderá como adicionar níveis de títulos, especificar estilos de formatação, personalizar a aparência e o comportamento de índices e gerenciar atualizações automáticas.
+Esses tutoriais fornecem exemplos de código passo a passo e explicações claras sobre como usar os recursos do Aspose.Words for .NET para trabalhar com índices analíticos. Você aprenderá como adicionar níveis de títulos, especificar estilos de formatação, personalizar a aparência e o comportamento dos índices e gerenciar atualizações automáticas.
 
 Quer você seja um desenvolvedor iniciante ou experiente, esses tutoriais o ajudarão a dominar as técnicas avançadas para criar e manter índices profissionais em seus documentos do Word usando Aspose.Words for .NET. Melhore a organização dos seus documentos e facilite a navegação dos seus usuários com estes tutoriais completos e informativos.
 

@@ -12,5 +12,5 @@ Tutorial Aspose.Words untuk .NET dirancang untuk membantu Anda menguasai penggun
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Gunakan Font Dari Mesin Target](./use-font-from-target-machine/) | Pelajari cara mengonversi dokumen Word menjadi HTML tetap menggunakan font mesin target dengan Aspose.Words untuk .NET. |
-| [Tulis Semua Aturan Css Dalam Satu File](./write-all-css-rules-in-single-file/) | Pelajari cara mengonversi dokumen Word menjadi HTML tetap dengan menulis semua aturan CSS dalam satu file dengan Aspose.Words untuk .NET. |
+| [Gunakan Font Dari Mesin Target](./use-font-from-target-machine/) | Pelajari cara menggunakan font dari mesin target di dokumen Word Anda dengan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk integrasi font yang lancar. |
+| [Tulis Semua Aturan Css Dalam Satu File](./write-all-css-rules-in-single-file/) | Pelajari cara mengonversi dokumen Word ke HTML menggunakan Aspose.Words untuk .NET dengan semua aturan CSS dalam satu file untuk kode yang lebih bersih dan pemeliharaan yang lebih mudah. |

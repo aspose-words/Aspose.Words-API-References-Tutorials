@@ -14,8 +14,8 @@ Eğitimler aynı zamanda Aspose.Words for .NET kullanarak bir Word belgesine res
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Tiff Binarizasyonu İçin Eşik Kontrolünü Açığa Çıkarın](./expose-threshold-control-for-tiff-binarization/) | Aspose.Words for .NET ile TIFF ikilileştirme eşiğini nasıl kontrol edeceğinizi öğrenin. Daha kaliteli görüntüler için eğitimi tamamlayın. |
-| [Tiff Sayfa Aralığını Alın](./get-tiff-page-range/) | Aspose.Words for .NET ile çeşitli TIFF sayfalarını nasıl çıkaracağınızı öğrenin. Özel TIFF dosyaları için eğitimi tamamlayın. |
-| [1Bpp Dizine Alınmış Biçim](./format-1bpp-indexed/) | Aspose.Words for .NET ile indekslenmiş görüntüleri 1 bpp'lik formatta nasıl formatlayacağınızı öğrenin. Düşük renk derinliğine sahip görüntüler için eğitimi tamamlayın. |
-| [Jpeg Sayfa Aralığını Al](./get-jpeg-page-range/) | Aspose.Words for .NET ile çeşitli JPEG sayfalarını nasıl elde edeceğinizi öğrenin. Özel görüntülerin çıkarılmasına yönelik eksiksiz eğitim. |
-| [Sayfa Kaydederek Geri Arama](./page-saving-callback/) | Aspose.Words for .NET ile belge sayfalarını görüntülere kaydetmeyi nasıl özelleştireceğinizi öğrenin. |
+| [Tiff Binarizasyonu İçin Eşik Kontrolünü Açığa Çıkarın](./expose-threshold-control-for-tiff-binarization/) | Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde TIFF ikilileştirmesi için eşik kontrolünü nasıl ortaya çıkaracağınızı öğrenin. |
+| [Tiff Sayfa Aralığını Alın](./get-tiff-page-range/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak belirli sayfa aralıklarını Word belgelerinden TIFF dosyalarına nasıl dönüştüreceğinizi öğrenin. |
+| [1Bpp Dizine Alınmış Format](./format-1bpp-indexed/) | Aspose.Words for .NET kullanarak bir Word belgesini 1Bpp dizinli görüntüye nasıl dönüştüreceğinizi öğrenin. Kolay dönüşüm için adım adım kılavuzumuzu izleyin. |
+| [Jpeg Sayfa Aralığını Al](./get-jpeg-page-range/) | Aspose.Words for .NET'i kullanarak Word belgelerinin belirli sayfalarını özel ayarlarla JPEG'e dönüştürün. Parlaklığı, kontrastı ve çözünürlüğü adım adım nasıl ayarlayacağınızı öğrenin. |
+| [Sayfa Kaydederek Geri Arama](./page-saving-callback/) | Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET'i kullanarak bir Word belgesinin her sayfasını ayrı bir PNG görüntüsü olarak kaydetmeyi öğrenin. |

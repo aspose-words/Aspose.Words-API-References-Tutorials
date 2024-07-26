@@ -39,7 +39,7 @@ ShapeRenderer render = shape.getShapeRenderer();
 
 ## 5. Merender Bentuk sebagai Gambar EMF
 
- Kini sampai pada bagian yang menarik - menampilkan bentuk sebagai gambar EMF. Kami akan menggunakan`ImageSaveOptions` kelas untuk menentukan format keluaran dan menyesuaikan rendering.
+ Kini sampai pada bagian yang menarik - menampilkan bentuk sebagai gambar EMF. Kami akan menggunakan`ImageSaveOptions` kelas untuk menentukan format output dan menyesuaikan rendering.
 
 ```java
 ImageSaveOptions imageOptions = new ImageSaveOptions(SaveFormat.EMF);
@@ -83,7 +83,7 @@ Selamat! Anda telah berhasil mempelajari cara merender bentuk di Aspose.Words un
 
 Ya, Anda bisa merender beberapa bentuk dalam satu dokumen. Cukup ulangi proses untuk setiap bentuk yang ingin Anda render.
 
-### Q2: Apakah Aspose.Words untuk Java kompatibel dengan berbagai format dokumen?
+### Q2: Apakah Aspose.Words untuk Java kompatibel dengan format dokumen yang berbeda?
 
 Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOCX, PDF, HTML, dan banyak lagi.
 

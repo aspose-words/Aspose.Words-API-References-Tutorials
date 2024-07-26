@@ -1,6 +1,6 @@
 ---
-title: Az Egyesítési mezők átnevezése
-linktitle: Az Egyesítési mezők átnevezése
+title: Az egyesítési mezők átnevezése
+linktitle: Az egyesítési mezők átnevezése
 second_title: Aspose.Words Document Processing API
 description: Ebből az oktatóanyagból megtudhatja, hogyan nevezheti át a dokumentum egyesített mezőit az Aspose.Words for .NET használatával.
 type: docs
@@ -88,7 +88,7 @@ Kövesse ezeket a lépéseket a dokumentum egyesítési mezőinek átnevezéséh
 
 #### K: Hogyan nevezhetem át az egyesített mezőket egy Word-dokumentumban az Aspose.Words for .NET használatával?
 
- V: A Word-dokumentum egyesített mezőinek átnevezéséhez az Aspose.Words for .NET használatával, a dokumentumban lévő mezők között lépkedhet a`FieldMergingArgs` osztályt, és használja a`FieldMergingArgs.FieldName` metódus a mező átnevezéséhez.
+ V: A Word-dokumentum egyesített mezőinek átnevezéséhez az Aspose.Words for .NET használatával, a dokumentumban található mezők között lépkedhet a`FieldMergingArgs` osztályt, és használja a`FieldMergingArgs.FieldName` mező átnevezésének módja.
 
 #### K: A Word-dokumentumban csak bizonyos egyesített mezőket lehet átnevezni az Aspose.Words for .NET segítségével?
 

@@ -14,7 +14,7 @@ Das programmgesteuerte Erstellen von Tabellen kann eine ziemliche Herausforderun
 
 Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie zum Starten benötigen. Hier ist eine kurze Checkliste:
 
-1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek heruntergeladen und installiert haben. Sie erhalten sie von[Download-Seite](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek heruntergeladen und installiert haben. Sie erhalten sie von der[Download-Seite](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine Entwicklungsumgebung wie Visual Studio.
 3. Grundkenntnisse in C#: Verstehen der Grundlagen der C#-Programmierung.
 4. Dokumentverzeichnis: Ein Verzeichnispfad, in dem Sie Ihre Dokumente speichern.
@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Dieser Code initialisiert ein neues Word-Dokument. Sie müssen ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
+ Dieser Code initialisiert ein neues Word-Dokument. Sie müssen ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
 
 ## Schritt 2: Erstellen des Tabellenobjekts
 
@@ -71,7 +71,7 @@ Eine Tabelle besteht aus Zeilen und Zellen. Lassen Sie uns diese Elemente Schrit
 // Hier könnten wir EnsureMinimum aufrufen, um die Zeilen und Zellen für uns zu erstellen. Diese Methode wird verwendet
 // um sicherzustellen, dass der angegebene Knoten gültig ist. In diesem Fall sollte eine gültige Tabelle mindestens eine Zeile und eine Zelle haben.
 // Stattdessen kümmern wir uns selbst um die Erstellung der Zeile und Tabelle.
-//Dies wäre die beste Möglichkeit, wenn wir eine Tabelle innerhalb eines Algorithmus erstellen würden.
+// Dies wäre die beste Möglichkeit, wenn wir eine Tabelle innerhalb eines Algorithmus erstellen würden.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

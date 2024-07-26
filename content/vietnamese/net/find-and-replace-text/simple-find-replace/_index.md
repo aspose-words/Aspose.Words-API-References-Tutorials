@@ -102,7 +102,7 @@ Và bạn có nó rồi đấy! Bạn vừa tự động hóa quá trình tìm v
 ## Câu hỏi thường gặp
 
 ### Tôi có thể thay thế nhiều văn bản khác nhau cùng một lúc không?
- Vâng, bạn có thể. Chỉ cần gọi`Replace` phương pháp cho mỗi văn bản bạn muốn thay thế.
+ Có, bạn có thể. Chỉ cần gọi`Replace` phương pháp cho mỗi văn bản bạn muốn thay thế.
 
 ### Aspose.Words cho .NET có miễn phí không?
 Aspose.Words for .NET cung cấp bản dùng thử miễn phí nhưng để có đầy đủ chức năng, bạn sẽ cần phải mua giấy phép. Kiểm tra của họ[định giá](https://purchase.aspose.com/buy) để biết thêm chi tiết.

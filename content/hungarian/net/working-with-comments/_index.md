@@ -15,5 +15,5 @@ Ezekben az oktatóanyagokban az Aspose.Words for .NET használatával megismerhe
 | --- | --- |
 | [Megjegyzések hozzáadása](./add-comments/) | Ismerje meg, hogyan adhat megjegyzéseket Word-dokumentumokhoz az Aspose.Words for .NET használatával. |
 | [Horgony megjegyzés](./anchor-comment/) | Ismerje meg, hogyan rögzítheti a megjegyzésekre adott válaszokat Word-dokumentumokban az Aspose.Words for .NET használatával. |
-| [Hozzáadás: Megjegyzés eltávolítása Válasz](./add-remove-comment-reply/) | Ismerje meg, hogyan adhat hozzá és távolíthat el megjegyzésekre adott válaszokat Word-dokumentumokban az Aspose.Words for .NET használatával. |
+| [Hozzáadás: Hozzászólás eltávolítása Válasz](./add-remove-comment-reply/) | Ismerje meg, hogyan adhat hozzá és távolíthat el megjegyzésekre adott válaszokat Word-dokumentumokban az Aspose.Words for .NET használatával. |
 | [Megjegyzés megoldva és válaszok](./comment-resolved-and-replies/) | Ismerje meg, hogyan oldhatja fel a megjegyzéseket és a rájuk adott válaszokat a Word-dokumentumokban az Aspose.Words for .NET használatával. |

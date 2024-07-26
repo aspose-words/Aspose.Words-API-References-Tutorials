@@ -106,7 +106,7 @@ In questa guida, abbiamo esplorato il processo di miglioramento del contenuto vi
 
 ### Come faccio ad aggiungere bordi a una casella di testo?
 
- Puoi aggiungere bordi a una casella di testo utilizzando il comando`textbox.border` proprietà e personalizzarne l'aspetto.
+ Puoi aggiungere bordi a una casella di testo utilizzando il comando`textbox.border` proprietà e personalizzandone l'aspetto.
 
 ### Posso incorporare collegamenti ipertestuali all'interno di una casella di testo?
 

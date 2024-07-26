@@ -87,7 +87,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Otázka: Jak získám přístup k revidované verzi dokumentu v Aspose.Words for .NET?
 
- A: Použijte`RevisionsView` vlastnictvím`Document` zamítnout přístup k revidované verzi dokumentu. Můžete nastavit hodnotu`RevisionsView`majetek do`RevisionsView.Final` zobrazit konečnou verzi bez revizí.
+ A: Použijte`RevisionsView` majetek z`Document` zamítnout přístup k revidované verzi dokumentu. Můžete nastavit hodnotu`RevisionsView`majetek do`RevisionsView.Final` zobrazit konečnou verzi bez revizí.
 
 ```csharp
 doc.RevisionsView = RevisionsView.Final;
@@ -95,7 +95,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 #### Otázka: Jak mohu procházet revize dokumentů v Aspose.Words pro .NET?
 
-A: Použijte a`foreach` smyčka pro iteraci revizí přítomných v dokumentu. Můžete použít`Revisions` vlastnictvím`Document` objekt k získání kolekce všech revizí dokumentu.
+A: Použijte a`foreach` smyčka pro iteraci revizí přítomných v dokumentu. Můžete použít`Revisions` majetek z`Document` objekt k získání kolekce všech revizí dokumentu.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -106,7 +106,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Otázka: Jak zkontrolovat, zda je odstavec položkou seznamu v Aspose.Words pro .NET?
 
- A: Použijte`IsListItem` vlastnictvím`Paragraph` objekt pro kontrolu, zda je odstavec položkou seznamu. The`IsListItem` majetkové výnosy`true` pokud je odstavec položkou seznamu, jinak se vrátí`false`.
+ A: Použijte`IsListItem` majetek z`Paragraph` objekt pro kontrolu, zda je odstavec položkou seznamu. The`IsListItem` majetkové výnosy`true` pokud je odstavec položkou seznamu, jinak se vrátí`false`.
 
 ```csharp
 if (paragraph.IsListItem)

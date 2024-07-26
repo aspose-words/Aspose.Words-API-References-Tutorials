@@ -48,7 +48,7 @@ import com.aspose.words.OoxmlCompliance;
 // Загрузите документ
 Document doc = new Document("Document.docx");
 
-// Оптимизировать для Word 2016
+// Оптимизация для Word 2016
 doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2016);
 
 // Создайте OoxmlSaveOptions и установите уровень соответствия.

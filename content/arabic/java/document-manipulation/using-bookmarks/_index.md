@@ -111,6 +111,6 @@ doc.save("Your Directory Path" + "WorkingWithBookmarks.UntangleRowBookmarks.docx
 
 تُستخدم الإشارات المرجعية بشكل شائع لإنشاء جدول المحتويات واستخراج محتوى محدد وأتمتة عمليات إنشاء المستندات.
 
-### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words for Java؟
+### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words لـ Java؟
 
  للحصول على الوثائق التفصيلية والتنزيلات، تفضل بزيارة[Aspose.Words لتوثيق جافا](https://reference.aspose.com/words/java/).

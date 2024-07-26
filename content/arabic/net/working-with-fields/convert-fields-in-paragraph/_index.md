@@ -21,7 +21,7 @@ url: /ar/net/working-with-fields/convert-fields-in-paragraph/
 قبل أن تتمكن من تحويل الحقول، يجب عليك تحميل المستند الذي يحتوي على الحقول المطلوب تحويلها. تأكد من تحديد المسار الصحيح للدليل الذي يحتوي على المستند. إليك كيفية تحميل المستند:
 
 ```csharp
-//المسار إلى دليل المستندات.
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // قم بتحميل المستند.
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ### مثال على التعليمات البرمجية المصدر لتحويل الحقول في الفقرة باستخدام Aspose.Words لـ .NET
 
 ```csharp
-//المسار إلى دليل المستندات.
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // قم بتحميل المستند.

@@ -65,7 +65,7 @@ Estamos configurando el`ParagraphFormat` propiedades. Analicemos qué hace cada 
 - RightIndent: establece la sangría derecha en 50 puntos.
 - SpaceAfter: Agrega 25 puntos de espacio después del párrafo.
 
-## Paso 3: agregar texto al documento
+## Paso 3: agregue texto al documento
 
 Con nuestro formato implementado, es hora de agregar algo de texto. Esto es como pintar en tu lienzo.
 

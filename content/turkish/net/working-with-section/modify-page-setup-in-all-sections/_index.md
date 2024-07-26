@@ -9,7 +9,7 @@ url: /tr/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 ## giriiş
 
-Selam! Bir Word belgesindeki birden çok bölümdeki sayfa düzenlerini değiştirmeniz gerekiyorsa doğru yerdesiniz. Bu eğitimde Aspose.Words for .NET'i kullanarak süreç boyunca size rehberlik edeceğim. Bu güçlü kitaplık, Word belgelerinin hemen hemen her yönünü programlı olarak kontrol etmenize olanak tanır ve bu da onu geliştiricilerin başvuracağı bir araç haline getirir. O halde, bir fincan kahve alın ve sayfa düzeni değişikliklerinde uzmanlaşmaya yönelik bu adım adım yolculuğa başlayalım!
+Selam! Bir Word belgesinin birden çok bölümünün sayfa düzenlerini değiştirmeniz gerekiyorsa doğru yerdesiniz. Bu eğitimde Aspose.Words for .NET'i kullanarak süreç boyunca size rehberlik edeceğim. Bu güçlü kitaplık, Word belgelerinin hemen hemen her yönünü programlı olarak kontrol etmenize olanak tanır ve bu da onu geliştiricilerin başvuracağı bir araç haline getirir. O halde, bir fincan kahve alın ve sayfa düzeni değişikliklerinde uzmanlaşmaya yönelik bu adım adım yolculuğa başlayalım!
 
 ## Önkoşullar
 
@@ -89,7 +89,7 @@ Bu kod satırı, belgeyi, yapılan değişiklikleri gösteren net bir dosya adı
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tüm bölümlerin sayfa düzenini başarıyla değiştirdiniz. Bu eğitici belge oluşturma, bölümler ekleme ve sayfa düzenlerini eşit şekilde ayarlama konusunda size yol gösterdi. Aspose.Words zengin bir dizi özellik sunar; bu nedenle, keşfetmekten çekinmeyin[API belgeleri](https://reference.aspose.com/words/net/) daha gelişmiş yetenekler için.
+İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tüm bölümlerin sayfa düzenini başarıyla değiştirdiniz. Bu eğitici belge oluşturma, bölümler ekleme ve sayfa düzenlerini eşit şekilde ayarlama konusunda size yol gösterdi. Aspose.Words zengin bir dizi özellik sunar; bu nedenle, keşfetmekten çekinmeyin.[API belgeleri](https://reference.aspose.com/words/net/) daha gelişmiş yetenekler için.
 
 ## SSS
 

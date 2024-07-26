@@ -151,7 +151,7 @@ try {
 }
 ```
 
-### 常见问题故障排除
+### 解决常见问题
 
 如果在打印过程中遇到任何问题，请参阅[Aspose.Words for Java API 参考](https://reference.aspose.com/words/java/)了解故障排除步骤和社区支持。
 

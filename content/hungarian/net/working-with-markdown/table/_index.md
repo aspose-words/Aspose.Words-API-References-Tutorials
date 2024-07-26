@@ -37,7 +37,7 @@ Először is létre kell hoznunk egy új dokumentumot, és inicializálnunk kell
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Ez a lépés olyan, mint a munkaterület beállítása. Készen van az üres dokumentuma és a toll.
+Ez a lépés olyan, mint a munkaterület beállítása. Készen van az üres dokumentuma és a tolla.
 
 ## 2. lépés: Kezdje el az asztal elkészítését
 

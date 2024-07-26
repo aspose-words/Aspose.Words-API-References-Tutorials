@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- Bu son adımda, ortaya çıkan belgeyi kullanarak .docx formatında kaydediyoruz.`Save` yöntemi ve yolu çıktı dosyasına geçirme.
+Bu son adımda, ortaya çıkan belgeyi kullanarak .docx formatında kaydediyoruz.`Save` yöntemi ve yolu çıktı dosyasına geçirme.
 
 Artık metin belgesini yüklemek ve metnin yönünü belirlemek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan belge, "WorkingWithTxtLoadOptions.DocumentTextDirection.docx" adıyla belirtilen dizine kaydedilecektir.
 

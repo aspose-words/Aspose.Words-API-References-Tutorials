@@ -2,7 +2,7 @@
 title: Memisahkan Dokumen menjadi Beberapa File
 linktitle: Memisahkan Dokumen menjadi Beberapa File
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Buka kehebatan Aspose.Words untuk Java dengan panduan langkah demi langkah kami tentang membagi dokumen menjadi beberapa file. Dapatkan wawasan ahli dan contoh kode sumber.
+description: Buka kecanggihan Aspose.Words untuk Java dengan panduan langkah demi langkah kami dalam membagi dokumen menjadi beberapa file. Dapatkan wawasan ahli dan contoh kode sumber.
 type: docs
 weight: 10
 url: /id/java/document-splitting/splitting-documents-into-multiple-files/

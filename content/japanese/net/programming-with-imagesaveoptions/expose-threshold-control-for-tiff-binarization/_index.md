@@ -2,80 +2,100 @@
 title: TIFF バイナリ化のしきい値コントロールを公開する
 linktitle: TIFF バイナリ化のしきい値コントロールを公開する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して TIFF の 2 値化しきい値を制御する方法を学びます。より高品質の画像を得るための完全なチュートリアルです。
+description: この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書で TIFF 2 値化のしきい値制御を公開する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
 ---
-このチュートリアルでは、Aspose.Words for .NET の「TIFF 2 値化しきい値制御露出」機能用に提供されている C# ソース コードについて説明します。この機能を使用すると、ドキュメントを TIFF 形式に変換するときに 2 値化しきい値を制御できます。
+## 導入
 
-## ステップ1: 環境の設定
+Word 文書で TIFF バイナリ化のしきい値を制御する方法を知りたいと思ったことはありませんか? まさにその通りです! このガイドでは、Aspose.Words for .NET を使用して、そのプロセスをステップごとに説明します。熟練した開発者でも、始めたばかりの開発者でも、このチュートリアルは魅力的でわかりやすく、作業を完了するために必要なすべての詳細が詰まっていることがわかります。始める準備はできましたか? さあ始めましょう!
 
-始める前に、Aspose.Words for .NET を使用して開発環境をセットアップしていることを確認してください。必要な参照を追加し、適切な名前空間をインポートしたことを確認してください。
+## 前提条件
 
-## ステップ2: ドキュメントの読み込み
+始める前に、以下のものを用意してください。
+
+1.  Aspose.Words for .NET: ダウンロードはこちらから[Aspose リリース ページ](https://releases.aspose.com/words/net/)ライセンスをまだお持ちでない場合は、[一時ライセンス](https://purchase.aspose.com/temporary-license/).
+2. 開発環境: Visual Studio またはその他の .NET 互換 IDE。
+3. C# の基礎知識: C# に少し精通していると役立ちますが、初めてでも心配はいりません。すべて説明します。
+
+## 名前空間のインポート
+
+コードに進む前に、必要な名前空間をインポートする必要があります。これは、使用するクラスとメソッドにアクセスするために重要です。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## ステップ1: ドキュメントディレクトリを設定する
+
+まず最初に、ドキュメント ディレクトリへのパスを設定する必要があります。これはソース ドキュメントが保存される場所であり、出力が保存される場所です。
 
 ```csharp
 //ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
+
+## ステップ2: ドキュメントを読み込む
+
+次に、処理したい文書を読み込む必要があります。この例では、`Rendering.docx`.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-このステップでは、`Document`メソッドを呼び出して、読み込む DOCX ファイルへのパスを渡します。
+このコード行は新しい`Document`オブジェクトを作成し、指定されたファイルを読み込みます。
 
-## ステップ3: イメージバックアップオプションを構成する
+## ステップ3: 画像保存オプションを設定する
+
+ここからが楽しい部分です！TIFFの2値化を制御するために画像保存オプションを設定する必要があります。`ImageSaveOptions`さまざまなプロパティを設定するクラス。
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
 {
-TiffCompression = TiffCompression.Ccitt3,
-ImageColorMode = ImageColorMode.Grayscale,
-TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
-ThresholdForFloydSteinbergDithering = 254
+    TiffCompression = TiffCompression.Ccitt3,
+    ImageColorMode = ImageColorMode.Grayscale,
+    TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
+    ThresholdForFloydSteinbergDithering = 254
 };
 ```
 
-このステップでは、画像のバックアップオプションを設定します。新しい`ImageSaveOptions`希望する保存形式を指定するオブジェクト。ここでは、TIFF 形式の場合は「Tiff」です。また、圧縮オプション、画像カラー モード、および指定された 2 値化しきい値による TIFF 2 値化方法も設定します。
+これを詳しく見てみましょう:
+-  TiffCompression: TIFF画像の圧縮タイプを設定します。ここでは、`Ccitt3`.
+-  ImageColorMode: カラーモードを設定します。`Grayscale`グレースケール画像を作成します。
+-  TiffBinarizationMethod: 2値化の方法を指定します。`FloydSteinbergDithering`.
+- ThresholdForFloydSteinbergDithering: Floyd-Steinberg ディザリングのしきい値を設定します。値が高いほど、黒のピクセルが少なくなります。
 
-## ステップ4: 画像のバックアップ
+## ステップ4: ドキュメントをTIFFとして保存する
+
+最後に、指定したオプションを使用してドキュメントを TIFF 画像として保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
 ```
 
-この最後のステップでは、ドキュメント画像をTIFF形式で保存します。`Save`メソッドを実行し、指定された保存オプションとともに出力ファイルへのパスを渡します。
+このコード行は、設定された画像保存オプションを使用して、指定されたパスにドキュメントを保存します。
 
-これで、ソース コードを実行して、指定されたオプションで 2 値化しきい値を制御しながら、ドキュメントを TIFF 形式に変換できます。結果のファイルは、指定されたディレクトリに「WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff」という名前で保存されます。
+## 結論
 
-### TIFF バイナリ化のしきい値制御を公開するサンプル ソース コード
+これで完了です。Aspose.Words for .NET を使用して、Word 文書で TIFF 2 値化のしきい値コントロールを公開する方法を学びました。この強力なライブラリを使用すると、カスタム設定を使用して Word 文書をさまざまな形式に変換するなど、さまざまな方法で Word 文書を簡単に操作できます。試してみて、文書処理タスクをいかに簡素化できるかを確認してください。
 
-```csharp 
+## よくある質問
 
-//ドキュメントディレクトリへのパス
- string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+### TIFF の 2 値化とは何ですか?
+TIFF の 2 値化は、グレースケールまたはカラー画像を白黒 (2 値) 画像に変換するプロセスです。
 
-Document doc = new Document(dataDir + "Rendering.docx");
+### なぜ Floyd-Steinberg ディザリングを使用するのですか?
+Floyd-Steinberg ディザリングは、ピクセル エラーを分散して、最終画像の視覚的なアーティファクトを減らし、より滑らかに見えるようにします。
 
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
-{
-	TiffCompression = TiffCompression.Ccitt3,
-	ImageColorMode = ImageColorMode.Grayscale,
-	TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
-	ThresholdForFloydSteinbergDithering = 254
-};
+### TIFF に他の圧縮方法を使用できますか?
+はい、Aspose.Words は LZW、CCITT4、RLE などのさまざまな TIFF 圧縮方式をサポートしています。
 
-doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
-            
-        
-```
+### Aspose.Words for .NET は無料ですか?
+Aspose.Words for .NET は商用ライブラリですが、無料試用版または一時ライセンスを取得してその機能を評価することができます。
 
-### 結論
-
-このチュートリアルでは、Aspose.Words for .NET を使用した TIFF 2 値化しきい値コントロールの露出機能について説明しました。ドキュメントを TIFF 形式に変換するときに 2 値化しきい値を制御する方法を学習しました。
-
-この機能は、2 値化しきい値を調整して、より高品質で鮮明な TIFF 画像を取得する場合に便利です。保存オプションで 2 値化しきい値を指定すると、ニーズに合わせたカスタム結果を得ることができます。
-
-Aspose.Words for .NET は、ドキュメントの操作と生成のためのさまざまな高度な機能を提供します。TIFF バイナリ化しきい値コントロールを公開することは、Aspose.Words for .NET が提供する多くの強力なツールの 1 つです。
-
-この機能を Aspose.Words for .NET プロジェクトに自由に組み込むことで、正確な二値化しきい値制御による高品質の TIFF 画像を実現できます。
+### さらに詳しいドキュメントはどこで見つかりますか?
+ Aspose.Words for .NETの包括的なドキュメントは、[Aspose ウェブサイト](https://reference.aspose.com/words/net/).

@@ -45,11 +45,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Este código inicializa um novo documento do Word. Você precisará substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório do seu documento.
+ Este código inicializa um novo documento do Word. Você precisará substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório do seu documento.
 
 ## Etapa 2: Criando o Objeto Tabela
 
-A seguir, criamos o objeto tabela. É aqui que definiremos a estrutura da nossa tabela.
+seguir, criamos o objeto tabela. É aqui que definiremos a estrutura da nossa tabela.
 
 ```csharp
 // Começamos criando o objeto tabela. Observe que devemos passar o objeto document
@@ -71,7 +71,7 @@ Uma tabela é composta por linhas e células. Vamos adicionar esses elementos pa
 // Aqui poderíamos chamar GaranteMinimum para criar as linhas e células para nós. Este método é usado
 // para garantir que o nó especificado seja válido. Neste caso, uma tabela válida deve ter pelo menos uma linha e uma célula.
 // Em vez disso, nós mesmos cuidaremos da criação da linha e da tabela.
-//Esta seria a melhor maneira de fazer isso se estivéssemos criando uma tabela dentro de um algoritmo.
+// Esta seria a melhor maneira de fazer isso se estivéssemos criando uma tabela dentro de um algoritmo.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

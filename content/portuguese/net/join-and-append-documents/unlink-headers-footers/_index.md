@@ -88,7 +88,7 @@ E aí está! Seguindo essas etapas, você desvinculou com êxito os cabeçalhos 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?  
-Aspose.Words for .NET é uma biblioteca poderosa para trabalhar com documentos do Word em aplicativos .NET. Ele permite que os desenvolvedores criem, modifiquem, convertam e imprimam documentos programaticamente.
+Aspose.Words for .NET é uma biblioteca poderosa para trabalhar com documentos do Word em aplicativos .NET. Ele permite que os desenvolvedores criem, modifiquem, convertam e imprimam documentos de forma programática.
 
 ### Posso desvincular cabeçalhos e rodapés apenas de seções específicas?  
  Sim, você pode desvincular cabeçalhos e rodapés de seções específicas acessando o`HeadersFooters` propriedade da seção desejada e usando o`LinkToPrevious` método.

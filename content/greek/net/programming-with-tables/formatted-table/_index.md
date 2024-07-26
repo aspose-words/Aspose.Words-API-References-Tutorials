@@ -21,7 +21,7 @@ url: /el/net/programming-with-tables/formatted-table/
 // Διαδρομή στον κατάλογο των εγγράφων σας
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Δημιουργήστε το έγγραφο και αρχικοποιήστε τη δημιουργία εγγράφων
+//Δημιουργήστε το έγγραφο και αρχικοποιήστε τη δημιουργία εγγράφων
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

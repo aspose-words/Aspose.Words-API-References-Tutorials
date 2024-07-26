@@ -2,101 +2,116 @@
 title: تصدير إلى تخفيض السعر مع محاذاة محتوى الجدول
 linktitle: تصدير إلى تخفيض السعر مع محاذاة محتوى الجدول
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية تصدير محتوى الجدول بمحاذاة مختلفة إلى ملفات Markdown باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية تصدير مستندات Word إلى Markdown مع جداول محاذية باستخدام Aspose.Words for .NET. اتبع دليلنا خطوة بخطوة للحصول على جداول Markdown المثالية.
 type: docs
 weight: 10
 url: /ar/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-فيما يلي دليل خطوة بخطوة لشرح كود مصدر C# التالي الذي يساعد على تصدير المحتوى إلى ملف Markdown مع محاذاة محتوى الجدول باستخدام مكتبة Aspose.Words لـ .NET. تأكد من تضمين مكتبة Aspose.Words في مشروعك قبل استخدام هذا الرمز.
+## مقدمة
 
-## الخطوة 1: قم بتعيين مسار دليل المستند
+مرحبًا يا من هناك! هل تساءلت يومًا عن كيفية تصدير مستند Word الخاص بك إلى تنسيق Markdown مع جداول محاذاة تمامًا؟ سواء كنت مطورًا يعمل على التوثيق أو مجرد شخص يحب Markdown، فهذا الدليل مناسب لك. سنتعمق في التفاصيل الجوهرية لاستخدام Aspose.Words for .NET لتحقيق ذلك. هل أنت مستعد لتحويل جداول Word الخاصة بك إلى جداول Markdown محاذاة بدقة؟ هيا بنا نبدأ!
+
+## المتطلبات الأساسية
+
+قبل أن نتعمق في التعليمات البرمجية، هناك بعض الأشياء التي ستحتاج إلى توفرها:
+
+1.  Aspose.Words لمكتبة .NET: تأكد من أن لديك مكتبة Aspose.Words لـ .NET. يمكنك تنزيله من[صفحة الإصدارات Aspose](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: قم بإعداد بيئة التطوير الخاصة بك. يعد Visual Studio خيارًا شائعًا لتطوير .NET.
+3. المعرفة الأساسية بـ C#: يعد فهم C# أمرًا ضروريًا لأننا سنكتب التعليمات البرمجية بهذه اللغة.
+4. نموذج مستند Word: احصل على مستند Word يمكنك استخدامه للاختبار.
+
+## استيراد مساحات الأسماء
+
+قبل أن نبدأ بالبرمجة، فلنستورد مساحات الأسماء الضرورية. سيتيح لنا ذلك الوصول إلى فئات Aspose.Words والأساليب التي سنستخدمها.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## الخطوة 1: تهيئة المستند و DocumentBuilder
+
+أول الأشياء أولاً، نحتاج إلى إنشاء مستند Word جديد وتهيئة ملف`DocumentBuilder` كائن لبدء بناء وثيقتنا.
 
 ```csharp
 // المسار إلى دليل المستندات.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-```
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-تأكد من تحديد المسار الصحيح إلى دليل المستندات الخاص بك حيث سيتم حفظ المستند المحرر.
-
-## الخطوة 2: إنشاء مستند ومولد المستندات
-
-```csharp
+// إنشاء مستند جديد.
 Document doc = new Document();
+
+// تهيئة DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- هنا نقوم بإنشاء مثيل لـ`Document` فئة ومثال على`DocumentBuilder` فئة والتي سوف تسمح لنا بمعالجة الوثيقة وإضافة عناصر.
+## الخطوة 2: إدراج الخلايا ومحاذاة المحتوى
 
-## الخطوة 3: قم بإدراج خلايا في الجدول بمحاذاة فقرات مختلفة
+بعد ذلك، سنقوم بإدراج بعض الخلايا في وثيقتنا وضبط محاذاتها. يعد هذا أمرًا بالغ الأهمية لضمان احتفاظ تصدير Markdown بالمحاذاة الصحيحة.
 
 ```csharp
-builder. InsertCell();
+// أدخل خلية وقم بتعيين المحاذاة إلى اليمين.
+builder.InsertCell();
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 builder.Write("Cell1");
-builder. InsertCell();
+
+// أدخل خلية أخرى وقم بتعيين المحاذاة إلى المركز.
+builder.InsertCell();
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.Write("Cell2");
 ```
 
-نستخدم منشئ المستندات لإدراج الخلايا في الجدول وتعيين محاذاة فقرات مختلفة لكل خلية.
+## الخطوة 3: تعيين محاذاة محتوى الجدول لتصدير Markdown
 
-## الخطوة 4: قم بتعيين خيارات تصدير Markdown واحفظ المستند المعدل
+ الآن، حان الوقت لتكوين`MarkdownSaveOptions` للتحكم في محاذاة محتوى الجدول في ملف Markdown المُصدَّر. سنقوم بحفظ المستند بإعدادات محاذاة مختلفة لنرى كيف يعمل.
 
 ```csharp
+// قم بإنشاء كائن MarkdownSaveOptions.
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 {
-     TableContentAlignment = TableContentAlignment.Left
+    TableContentAlignment = TableContentAlignment.Left
 };
-doc.Save(dataDir + "Content_table_left_alignment.md", saveOptions);
 
+// احفظ المستند بمحاذاة لليسار.
+doc.Save(dataDir + "LeftTableContentAlignment.md", saveOptions);
+
+// تغيير المحاذاة إلى اليمين وحفظها.
 saveOptions.TableContentAlignment = TableContentAlignment.Right;
-doc.Save(dataDir + "Content_table_right_alignment.md", saveOptions);
+doc.Save(dataDir + "RightTableContentAlignment.md", saveOptions);
 
+// تغيير المحاذاة إلى المركز وحفظها.
 saveOptions.TableContentAlignment = TableContentAlignment.Center;
-doc.Save(dataDir + "Content_table_alignment_center.md", saveOptions);
-
-saveOptions.TableContentAlignment = TableContentAlignment.Auto;
-doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
+doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 ```
 
-نقوم بتعيين خيارات تصدير Markdown بمحاذاة مختلفة لمحتوى الجدول، ثم نحفظ المستند المعدل باستخدام كل خيار محاذاة.
+## الخطوة 4: استخدم محاذاة محتوى الجدول تلقائيًا
 
-### مثال على التعليمات البرمجية المصدر للتصدير إلى Markdown مع محاذاة محتوى الجدول باستخدام Aspose.Words لـ .NET
+ ال`Auto`يأخذ خيار المحاذاة المحاذاة من الفقرة الأولى في عمود الجدول المقابل. يمكن أن يكون هذا مفيدًا عندما يكون لديك تحالفات مختلطة في جدول واحد.
 
 ```csharp
+// اضبط المحاذاة على تلقائي.
+saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 
-            
-	// المسار إلى دليل المستندات.
-    string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.InsertCell();
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-	builder.Write("Cell1");
-	builder.InsertCell();
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Write("Cell2");
-
-	// جعل جميع الفقرات الموجودة داخل الجدول تتم محاذاتها.
-	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
-	{
-		TableContentAlignment = TableContentAlignment.Left
-	};
-	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.LeftTableContentAlignment.md", saveOptions);
-
-	saveOptions.TableContentAlignment = TableContentAlignment.Right;
-	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.RightTableContentAlignment.md", saveOptions);
-
-	saveOptions.TableContentAlignment = TableContentAlignment.Center;
-	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
-
-	// سيتم أخذ المحاذاة في هذه الحالة من الفقرة الأولى في عمود الجدول المقابل.
-	saveOptions.TableContentAlignment = TableContentAlignment.Auto;
-	
-	// احفظ المستند المعدل
-	doc.Save(dataDir + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
-            
-        
+// حفظ المستند مع المحاذاة التلقائية.
+doc.Save(dataDir + "AutoTableContentAlignment.md", saveOptions);
 ```
+
+## خاتمة
+
+وهناك لديك! يعد تصدير مستندات Word إلى Markdown مع جداول محاذية باستخدام Aspose.Words for .NET أمرًا سهلاً بمجرد أن تعرف كيفية القيام بذلك. تسهل هذه المكتبة القوية التحكم في تنسيق جداولك ومواءمتها، مما يضمن ظهور مستندات Markdown بالطريقة التي تريدها تمامًا. ترميز سعيد!
+
+## الأسئلة الشائعة
+
+### ما هو Aspose.Words لـ .NET؟
+Aspose.Words for .NET هي مكتبة قوية تمكن المطورين من إنشاء مستندات Word وتعديلها وتحويلها وتصديرها برمجيًا.
+
+### هل يمكنني تعيين محاذاة مختلفة لأعمدة مختلفة في نفس الجدول؟
+ نعم باستخدام`Auto` خيار المحاذاة، يمكنك الحصول على محاذاة مختلفة بناءً على الفقرة الأولى في كل عمود.
+
+### هل أحتاج إلى ترخيص لاستخدام Aspose.Words لـ .NET؟
+ نعم، يتطلب Aspose.Words for .NET ترخيصًا للحصول على الوظائف الكاملة. يمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للتقييم.
+
+### هل من الممكن تصدير عناصر مستند أخرى إلى Markdown باستخدام Aspose.Words؟
+نعم، يدعم Aspose.Words تصدير عناصر متنوعة مثل العناوين والقوائم والصور إلى تنسيق Markdown.
+
+### أين يمكنني الحصول على الدعم إذا واجهت مشاكل؟
+ يمكنك الحصول على الدعم من[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8).

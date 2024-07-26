@@ -22,7 +22,7 @@ Antes de entrar en los detalles esenciales, asegurémonos de que tiene todo lo q
 
 ## Importar espacios de nombres
 
-Para usar Aspose.Words para .NET en su proyecto, necesitará importar los espacios de nombres necesarios. Así es como lo haces:
+Para usar Aspose.Words para .NET en su proyecto, deberá importar los espacios de nombres necesarios. Así es como lo haces:
 
 ```csharp
 using Aspose.Words;

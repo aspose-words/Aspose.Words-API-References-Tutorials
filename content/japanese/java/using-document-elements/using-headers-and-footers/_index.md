@@ -166,7 +166,7 @@ Aspose.Words を使用すると、ドキュメント内の複数のセクショ�
         builder.endRow();
         builder.endTable();
         builder.moveToDocumentEnd();
-        //改ページして、主要なヘッダー/フッターが表示される 2 番目のページを作成します。
+        //改ページして、主要なヘッダー/フッターが表示される 2 ページ目を作成します。
         builder.insertBreak(BreakType.PAGE_BREAK);
         builder.insertBreak(BreakType.SECTION_BREAK_NEW_PAGE);
         currentSection = builder.getCurrentSection();

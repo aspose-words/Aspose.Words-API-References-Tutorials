@@ -75,7 +75,7 @@ Dan itu dia! Anda telah berhasil mengambil jenis perlindungan dokumen Word mengg
 Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan Anda membuat, mengedit, mengonversi, dan memanipulasi dokumen Word secara terprogram.
 
 ### Bisakah saya menggunakan Aspose.Words secara gratis?
- Anda bisa memulai dengan a[uji coba gratis](https://releases.aspose.com/) , namun untuk fungsionalitas penuh, Anda harus membeli lisensi. Lihat[opsi pembelian](https://purchase.aspose.com/buy).
+ Anda bisa memulai dengan a[uji coba gratis](https://releases.aspose.com/) , namun untuk mendapatkan fungsionalitas penuh, Anda perlu membeli lisensi. Lihat[opsi pembelian](https://purchase.aspose.com/buy).
 
 ### Jenis perlindungan apa yang dapat dideteksi Aspose.Words?
 Aspose.Words dapat mendeteksi berbagai jenis perlindungan seperti NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments, dan AllowOnlyFormFields.

@@ -41,7 +41,7 @@ Avant de pouvoir manipuler votre document, nous devons définir son emplacement.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin d'accès à votre dossier de documents. C'est ici que réside votre fichier Word.
+ Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin d'accès à votre dossier de documents. C'est ici que réside votre fichier Word.
 
 ## Étape 2 : Charger le document
 

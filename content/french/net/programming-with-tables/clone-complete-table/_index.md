@@ -68,7 +68,7 @@ Assurez-vous de spécifier le chemin et le nom de fichier corrects pour le docum
 	// Clonez le tableau et insérez-le dans le document après l'original.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	//Insérez un paragraphe vide entre les deux tableaux,
+	// Insérez un paragraphe vide entre les deux tableaux,
 	// sinon, ils seront combinés en un seul lors de la sauvegarde, cela a à voir avec la validation du document.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

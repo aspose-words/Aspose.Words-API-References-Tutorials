@@ -14,7 +14,7 @@ url: /zh-hant/java/document-manipulation/using-styles-and-themes/
 
 ## 檢索樣式
 
-若要從文件中檢索樣式，您可以使用以下 Java 程式碼片段：
+若要從文件中擷取樣式，您可以使用以下 Java 程式碼片段：
 
 ```java
 Document doc = new Document();
@@ -111,7 +111,7 @@ public void insertStyleSeparator() throws Exception
 
 ## 結論
 
-本指南涵蓋了在 Aspose.Words for Java 中使用樣式和主題的基礎知識。您已經學習如何擷取和複製樣式、管理主題以及插入樣式分隔符號以建立具有視覺吸引力且格式良好的文件。嘗試使用這些技術來根據您的要求自訂您的文件。
+本指南涵蓋了在 Aspose.Words for Java 中使用樣式和主題的基礎知識。您已經了解如何擷取和複製樣式、管理主題以及插入樣式分隔符號以建立具有視覺吸引力且格式良好的文件。嘗試使用這些技術來根據您的要求自訂您的文件。
 
 
 ## 常見問題解答

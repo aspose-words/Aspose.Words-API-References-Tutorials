@@ -2,99 +2,95 @@
 title: Vložení písem do dokumentu PDF
 linktitle: Vložení písem do dokumentu PDF
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Krok za krokem průvodce vkládáním písem do PDF pomocí Aspose.Words pro .NET.
+description: Vkládejte písma do dokumentů PDF bez námahy pomocí Aspose.Words pro .NET s tímto podrobným průvodcem krok za krokem. Zajistěte konzistentní vzhled na všech zařízeních.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
+## Úvod
 
-Tento článek poskytuje podrobného průvodce, jak používat vkládání písem do dokumentu PDF funkce Aspose.Words for .NET. Projdeme si úryvek kódu a podrobně vysvětlíme každou část. Na konci tohoto tutoriálu budete schopni porozumět tomu, jak vložit všechna písma do dokumentu a generovat PDF s vloženými písmy pomocí Aspose.Words for .NET.
+Ahoj, tech nadšenci! Už jste se někdy ocitli v bahně při pokusu vložit písma do dokumentu PDF pomocí Aspose.Words pro .NET? Tak to jste na správném místě! V tomto tutoriálu se ponoříme hluboko do toho nejnutnějšího vkládání písem do vašich PDF. Ať už jste začátečník nebo ostřílený profík, tento průvodce vás jednoduchým a poutavým způsobem provede každým krokem. Na konci budete mít jistotu, že si vaše soubory PDF udrží svůj zamýšlený vzhled a dojem, bez ohledu na to, kde si je prohlížíte. Takže, začneme, ano?
 
-Než začneme, ujistěte se, že máte v projektu nainstalovanou a nastavenou knihovnu Aspose.Words for .NET. Knihovnu a pokyny k instalaci najdete na webu Aspose.
+## Předpoklady
 
-## Krok 1: Definujte cestu k adresáři dokumentu
+Než se pustíme do podrobného průvodce, ujistěte se, že máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
 
- Chcete-li začít, musíte definovat cestu k adresáři, kde jsou umístěny vaše dokumenty. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů.
+1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Visual Studio nebo jakékoli kompatibilní vývojové prostředí .NET.
+3. Základní znalost C#: Základní znalost C# vám pomůže pokračovat.
+4. Ukázkový dokument aplikace Word: Mějte ukázkový dokument aplikace Word (`Rendering.docx`) připravené v adresáři dokumentů.
+
+ Pokud ještě nemáte Aspose.Words pro .NET, vyzkoušejte si bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo si ho koupit[tady](https://purchase.aspose.com/buy) . Potřebujete dočasnou licenci? Můžete získat jeden[tady](https://purchase.aspose.com/temporary-license/).
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Tento krok je zásadní, protože nastavuje prostředí pro používání funkcí Aspose.Words.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Nyní si tento proces rozdělíme do snadno pochopitelných kroků. Každý krok vás provede konkrétní částí vkládání písem do vašeho dokumentu PDF pomocí Aspose.Words for .NET.
+
+## Krok 1: Nastavte adresář dokumentů
+
+Než se ponoříte do kódu, musíte nastavit adresář dokumentů. Zde je váš ukázkový dokument Word (`Rendering.docx`) a výstupní PDF zůstane.
+
+```csharp
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Krok 2: Vložte dokument
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů. Tady se stane všechna ta kouzla!
 
-Dále musíme načíst dokument, který chceme zpracovat. V tomto příkladu předpokládáme, že dokument se jmenuje "Rendering.docx" a je umístěn v zadaném adresáři dokumentů.
+## Krok 2: Načtěte dokument aplikace Word
+
+ Dále načtete dokument aplikace Word do souboru Aspose.Words`Document` objekt. Toto je dokument, se kterým budete pracovat.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
+ V tomto řádku vytvoříme nový`Document` objekt a načíst`Rendering.docx` soubor z našeho adresáře dokumentů.
+
 ## Krok 3: Nakonfigurujte možnosti uložení PDF
 
- Pro vložení všech písem do výsledného PDF musíme nakonfigurovat`PdfSaveOptions` objekt s`EmbedFullFonts` vlastnost nastavena na`true`. To zajistí, že všechna písma použitá v dokumentu budou zahrnuta do vygenerovaného souboru PDF.
+ Nyní je čas nakonfigurovat možnosti uložení PDF. Konkrétně nastavíme`EmbedFullFonts`majetek do`true` abyste zajistili, že všechna písma použitá v dokumentu budou vložena do PDF.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
 ```
 
-## Krok 4: Uložte dokument jako PDF s vloženými fonty
+ Tento řádek vytvoří nový`PdfSaveOptions` objekt a nastaví`EmbedFullFonts`majetek do`true`. Tím zajistíte, že vygenerovaný PDF bude obsahovat všechna písma použitá v dokumentu.
 
- Nakonec můžeme dokument uložit jako soubor PDF s vloženými fonty. Zadejte název výstupního souboru a`saveOptions` objekt, který jsme nakonfigurovali v předchozím kroku.
+## Krok 4: Uložte dokument jako PDF
+
+Nakonec uložíte dokument aplikace Word jako PDF se zadanými možnostmi uložení. Tento krok převede dokument a vloží písma.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
 ```
 
-A je to! Úspěšně jste vložili všechna písma do dokumentu a pomocí Aspose.Words for .NET vygenerovali soubor PDF s vloženými písmy.
-
-### Příklad zdrojového kódu pro Embedded All Fonts pomocí Aspose.Words for .NET
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Výstupní PDF bude vloženo se všemi fonty nalezenými v dokumentu.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
-  
-```
+tomto řádku uložíme dokument jako PDF do adresáře dokumentů, přičemž vložíme všechna písma použitá v dokumentu Word.
 
 ## Závěr
 
-V tomto tutoriálu jsme se naučili, jak vložit všechna písma do dokumentu PDF pomocí Aspose.Words for .NET. Vkládání písem zajišťuje, že písma specifikovaná v dokumentu budou dostupná a správně zobrazena, i když nejsou nainstalována v systému, kde je soubor PDF otevřen. To zajišťuje konzistentní vzhled a přesné formátování dokumentů napříč různými zařízeními a platformami. Neváhejte a prozkoumejte další funkce Aspose.Words pro .NET, abyste optimalizovali generování vašich dokumentů PDF pomocí vložených písem.
+A tady to máte! Úspěšně jste vložili písma do dokumentu PDF pomocí Aspose.Words for .NET. S těmito znalostmi můžete zajistit, že si vaše soubory PDF zachovají svůj zamýšlený vzhled bez ohledu na to, kde jsou zobrazeny. Není to super? Nyní pokračujte a vyzkoušejte to se svými vlastními dokumenty.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co je vkládání písem do dokumentu PDF a proč je to důležité?
-Odpověď: Vkládání písem do dokumentu PDF je proces zahrnutí všech písem použitých v dokumentu do samotného souboru PDF. Tím je zajištěno, že písma určená v dokumentu budou dostupná a správně zobrazena, a to i v případě, že písma nejsou nainstalována v systému, kde je soubor PDF otevřen. Vkládání písem je důležité pro zachování vzhledu a formátování dokumentu a zajišťuje konzistentní vykreslování písem na různých zařízeních a platformách.
+### Proč bych měl do PDF vkládat písma?
+Vkládání písem zajistí, že se váš dokument zobrazí na všech zařízeních stejně, bez ohledu na písma nainstalovaná v systému prohlížeče.
 
-#### Otázka: Jak mohu vložit všechna písma do dokumentu PDF pomocí Aspose.Words for .NET?
-Odpověď: Chcete-li vložit všechna písma do dokumentu PDF pomocí Aspose.Words pro .NET, postupujte takto:
+### Mohu si vybrat konkrétní písma pro vložení?
+ Ano, můžete si přizpůsobit, která písma chcete vložit pomocí různých`PdfSaveOptions` vlastnosti.
 
- Nastavte cestu k adresáři dokumentu nahrazením`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+### Zvětší vkládání písem velikost souboru?
+Ano, vkládání písem může zvětšit velikost souboru PDF, ale zajišťuje konzistentní vzhled na různých zařízeních.
 
- Vložte dokument, který chcete zpracovat, pomocí`Document` třída a cesta k dokumentu.
+### Je Aspose.Words for .NET zdarma?
+Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plné funkce si musíte zakoupit licenci.
 
- Nakonfigurujte možnosti uložení PDF vytvořením instance souboru`PdfSaveOptions` třídy a nastavení`EmbedFullFonts`majetek do`true`. To zajistí, že všechna písma použitá v dokumentu budou vložena do vygenerovaného souboru PDF.
-
- Uložte dokument ve formátu PDF s vloženými fonty pomocí`Save` metoda`Document`objekt s uvedením názvu výstupního souboru a dříve nakonfigurovaných voleb uložení.
-
-#### Otázka: Proč je důležité vložit všechna písma do dokumentu PDF?
-Odpověď: Vložení všech písem do dokumentu PDF je důležité pro zajištění správného zobrazení dokumentu, i když zadaná písma nejsou dostupná v systému, kde je PDF otevřen. To pomáhá zachovat vzhled, formátování a čitelnost dokumentu a zajišťuje konzistentní vykreslování použitých písem na různých zařízeních a platformách.
-
-#### Otázka: Jaké jsou výhody vkládání písem do dokumentu PDF?
-Odpověď: Výhody vkládání písem do dokumentu PDF jsou:
-
-Zajistěte konzistentní vzhled dokumentu: Vložená písma zajistí, že se dokument zobrazí přesně tak, jak byl navržen, bez ohledu na písma dostupná v systému.
-
-Zachování formátování: Vložená písma zachovávají formátování a rozvržení dokumentu, vyhýbají se záměnám písem a odchylkám ve vzhledu.
-
-Vylepšená čitelnost: Vložení písem zajišťuje lepší čitelnost dokumentu, protože k zobrazení textu se používají určená písma, i když původní písma nejsou k dispozici.
-
-#### Otázka: Zvětší vložení všech písem velikost souboru PDF?
-Odpověď: Ano, vložení všech písem do dokumentu PDF může zvětšit velikost generovaného souboru PDF, protože data písem musí být zahrnuta v souboru. Toto zvětšení velikosti je však u většiny dokumentů obvykle zanedbatelné a výhody vkládání písem často převažují nad tímto mírným zvětšením.
-
-#### Otázka: Mohu vybrat konkrétní písma pro vložení do dokumentu PDF?
- Odpověď: Ano, pomocí Aspose.Words for .NET můžete vybrat konkrétní písma pro vložení do dokumentu PDF pomocí pokročilých možností konfigurace. Můžete například použít`SubsetFonts` vlastnictvím`PdfSaveOptions` objekt k určení, která písma se mají zahrnout, nebo použijte další možnosti k nastavení vlastních filtrů výběru písem.
+### Mohu pomocí Aspose.Words for .NET vložit písma do jiných formátů dokumentů?
+Ano, Aspose.Words for .NET podporuje různé formáty dokumentů a do mnoha z nich můžete vložit písma.

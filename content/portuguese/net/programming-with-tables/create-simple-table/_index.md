@@ -21,7 +21,7 @@ Para começar a construir a tabela, precisamos criar um novo documento e inicial
 // Caminho para o seu diretório de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Crie o documento e inicialize o gerador de documentos
+//Crie o documento e inicialize o gerador de documentos
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Chame o método a seguir para finalizar a primeira linha e iniciar uma nova linha
+// Chame o método a seguir para finalizar a primeira linha e iniciar uma nova linha
 builder. EndRow();
 
 // Construção da primeira célula da segunda linha
@@ -66,7 +66,7 @@ builder. EndTable();
 ## Etapa 4: salve o documento
 Finalmente, precisamos salvar
 
-  o documento com a tabela criada. Use o seguinte código:
+  documento com a tabela criada. Use o seguinte código:
 
 ```csharp
 // Salve o documento
@@ -99,7 +99,7 @@ Certifique-se de especificar o caminho e o nome de arquivo corretos para o docum
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Sinalize que terminamos de construir a mesa.
+	// Sinalize que terminamos de construir a mesa.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

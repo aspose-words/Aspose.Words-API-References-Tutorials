@@ -21,7 +21,7 @@ url: /hi/net/programming-with-tables/create-simple-table/
 // आपके दस्तावेज़ निर्देशिका का पथ
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// दस्तावेज़ बनाएँ और दस्तावेज़ जनरेटर आरंभ करें
+//दस्तावेज़ बनाएँ और दस्तावेज़ जनरेटर आरंभ करें
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//पहली पंक्ति को समाप्त करने और नई पंक्ति शुरू करने के लिए निम्नलिखित विधि को कॉल करें
+// पहली पंक्ति को समाप्त करने और नई पंक्ति शुरू करने के लिए निम्नलिखित विधि को कॉल करें
 builder. EndRow();
 
 // दूसरी पंक्ति के पहले सेल का निर्माण
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//संकेत दें कि हमने तालिका का निर्माण पूरा कर लिया है।
+	// संकेत दें कि हमने तालिका का निर्माण पूरा कर लिया है।
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

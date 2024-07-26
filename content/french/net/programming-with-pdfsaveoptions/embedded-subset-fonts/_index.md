@@ -2,94 +2,84 @@
 title: Incorporer des polices de sous-ensemble dans un document PDF
 linktitle: Incorporer des polices de sous-ensemble dans un document PDF
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour intégrer des sous-ensembles de polices dans un document PDF à l'aide d'Aspose.Words pour .NET.
+description: Réduisez la taille du fichier PDF en intégrant uniquement les sous-ensembles de polices nécessaires à l’aide d’Aspose.Words for .NET. Suivez notre guide étape par étape pour optimiser efficacement vos PDF.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
+## Introduction
 
-Cet article fournit un guide étape par étape sur la façon d’utiliser la fonctionnalité d’intégration de sous-ensembles de polices avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. A la fin de ce tutoriel, vous serez en mesure de comprendre comment intégrer des sous-ensembles de polices dans un document et générer un PDF contenant uniquement les glyphes utilisés dans le document.
+Avez-vous déjà remarqué à quel point certains fichiers PDF sont beaucoup plus volumineux que d'autres, même lorsqu'ils contiennent un contenu similaire ? Le coupable réside souvent dans les polices de caractères. L'intégration de polices dans un PDF garantit qu'il aura la même apparence sur n'importe quel appareil, mais cela peut également augmenter la taille du fichier. Heureusement, Aspose.Words for .NET offre une fonctionnalité pratique pour intégrer uniquement les sous-ensembles de polices nécessaires, gardant ainsi vos PDF simples et efficaces. Ce tutoriel vous guidera tout au long du processus, étape par étape.
 
-Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words for .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
+## Conditions préalables
 
-## Étape 1 : Définir le répertoire des documents
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
- Pour commencer, vous devez définir le chemin d’accès au répertoire où se trouvent vos documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
+-  Aspose.Words pour .NET : vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
+- Environnement .NET : assurez-vous de disposer d'un environnement de développement .NET fonctionnel.
+- Connaissance de base de C# : La familiarité avec la programmation C# vous aidera à suivre.
+
+## Importer des espaces de noms
+
+Pour utiliser Aspose.Words pour .NET, vous devez importer les espaces de noms nécessaires dans votre projet. Ajoutez-les en haut de votre fichier C# :
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Étape 2 : Téléchargez le document
+## Étape 1 : Charger le document
 
-Ensuite, nous devons charger le document que nous voulons traiter. Dans cet exemple, nous supposons que le document s'appelle « Rendering.docx » et se trouve dans le répertoire de documents spécifié.
+ Tout d’abord, nous devons charger le document Word que nous voulons convertir en PDF. Cela se fait en utilisant le`Document` classe fournie par Aspose.Words.
 
 ```csharp
+// Le chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Étape 3 : Configurer les options d'enregistrement au format PDF
+ Cet extrait de code charge le document situé à l'adresse`dataDir` . Assurez-vous de remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre document.
 
- Pour créer un PDF contenant uniquement les sous-ensembles de polices utilisés dans le document, nous devons configurer le`PdfSaveOptions` objet avec le`EmbedFullFonts` propriété définie sur`false`.
+## Étape 2 : Configurer les options d'enregistrement PDF
+
+ Ensuite, nous configurons le`PdfSaveOptions` pour garantir que seuls les sous-ensembles de polices nécessaires sont intégrés. En définissant`EmbedFullFonts` à`false`, nous disons à Aspose.Words d'intégrer uniquement les glyphes utilisés dans le document.
 
 ```csharp
+// Le PDF de sortie contiendra des sous-ensembles des polices du document.
+// Seuls les glyphes utilisés dans le document sont inclus dans les polices PDF.
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## Étape 4 : Enregistrez le document au format PDF avec des sous-ensembles de polices
+Cette étape petite mais cruciale permet de réduire considérablement la taille du fichier PDF.
 
- Enfin, nous pouvons enregistrer le document au format PDF en utilisant les sous-ensembles de polices. Spécifiez le nom du fichier de sortie et le`saveOptions` objet que nous avons configuré à l’étape précédente.
+## Étape 3 : Enregistrez le document au format PDF
 
-```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-```
-
-C'est tout ! Vous avez réussi à intégrer des sous-ensembles de polices dans un document et à générer un PDF contenant uniquement les glyphes utilisés dans le document avec Aspose.Words for .NET.
-
-### Exemple de code source pour intégrer des sous-ensembles de polices avec Aspose.Words for .NET
+ Enfin, nous enregistrons le document au format PDF en utilisant le`Save` méthode, en appliquant la configuration`PdfSaveOptions`.
 
 ```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Le PDF de sortie contiendra des sous-ensembles des polices du document.
-	// Seuls les glyphes utilisés dans le document sont inclus dans les polices PDF.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);
 ```
+
+ Ce code générera un fichier PDF avec le nom`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf` dans le répertoire spécifié, avec uniquement les sous-ensembles de polices nécessaires intégrés.
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons appris à intégrer des sous-ensembles de polices dans un document PDF à l'aide d'Aspose.Words pour .NET. L'intégration de sous-ensembles de polices permet de réduire la taille du fichier PDF tout en préservant l'apparence du document en utilisant uniquement les caractères réellement utilisés. Cela garantit une meilleure compatibilité et de meilleures performances lors de la visualisation et de l’impression du PDF. N'hésitez pas à explorer davantage les fonctionnalités d'Aspose.Words for .NET pour optimiser la génération de vos documents PDF avec des sous-ensembles de polices intégrés.
+Et voila! En suivant ces étapes simples, vous pouvez réduire efficacement la taille de vos fichiers PDF en intégrant uniquement les sous-ensembles de polices nécessaires à l'aide d'Aspose.Words for .NET. Cela permet non seulement d'économiser de l'espace de stockage, mais garantit également des temps de chargement plus rapides et de meilleures performances, en particulier pour les documents comportant de nombreuses polices.
 
-### Questions fréquemment posées
+## FAQ
 
-#### Q : Qu'est-ce que l'intégration de sous-ensembles de polices dans un document PDF ?
-R : L'intégration de sous-ensembles de polices dans un document PDF consiste à inclure uniquement les glyphes utilisés dans le document, plutôt que d'inclure toutes les polices complètes. Cela réduit la taille du fichier PDF en incluant uniquement les données de police nécessaires pour afficher les caractères réellement utilisés dans le document.
+### Pourquoi devrais-je intégrer uniquement des sous-ensembles de polices dans un PDF ?
+L'intégration uniquement des sous-ensembles de polices nécessaires peut réduire considérablement la taille du fichier PDF sans compromettre l'apparence et la lisibilité du document.
 
-#### Q : Quelle est la différence entre l’intégration de polices complètes et l’intégration de sous-ensembles de polices ?
-R : L'intégration complète des polices signifie inclure toutes les polices utilisées dans le document dans le fichier PDF, ce qui garantit que le document sera affiché exactement tel qu'il a été conçu, mais peut augmenter la taille du fichier PDF. En revanche, l'intégration de sous-ensembles de polices contient uniquement les glyphes utilisés dans le document, réduisant ainsi la taille du fichier PDF, mais limitant la capacité de reproduire exactement l'apparence du document si des caractères supplémentaires sont ajoutés ultérieurement.
+### Puis-je revenir à l’intégration de polices complètes si nécessaire ?
+ Oui, vous pouvez. Réglez simplement le`EmbedFullFonts`propriété à`true` dans le`PdfSaveOptions`.
 
-#### Q : Comment puis-je intégrer des sous-ensembles de polices dans un document PDF à l'aide d'Aspose.Words for .NET ?
-R : Pour intégrer des sous-ensembles de polices dans un document PDF à l'aide d'Aspose.Words for .NET, procédez comme suit :
+### Aspose.Words for .NET prend-il en charge d'autres fonctionnalités d'optimisation PDF ?
+Absolument! Aspose.Words for .NET offre une gamme d'options pour optimiser les PDF, notamment la compression d'images et la suppression des objets inutilisés.
 
- Définissez le chemin du répertoire du document en remplaçant`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire de documents.
+### Quels types de polices peuvent être intégrées en sous-ensemble à l’aide d’Aspose.Words for .NET ?
+Aspose.Words for .NET prend en charge l'intégration de sous-ensembles pour toutes les polices TrueType utilisées dans le document.
 
- Chargez le document que vous souhaitez traiter à l'aide du`Document` classe et le chemin du document.
-
- Configurez les options d'enregistrement PDF en créant une instance du`PdfSaveOptions` classe et définir le`EmbedFullFonts`propriété à`false`Cela garantit que seuls les sous-ensembles de polices utilisés dans le document seront inclus dans le fichier PDF.
-
- Enregistrez le document au format PDF avec les sous-ensembles de polices intégrés à l'aide du`Save` méthode du`Document` objet, spécifiant le nom du fichier de sortie et les options de sauvegarde configurées précédemment.
-
-#### Q : Quels sont les avantages de l’intégration de sous-ensembles de polices dans un document PDF ?
-R : Les avantages de l'intégration de sous-ensembles de polices dans un document PDF sont :
-
-Taille du fichier PDF réduite : en incluant uniquement les glyphes utilisés dans le document, la taille du fichier PDF est réduite par rapport à l'intégration de polices complètes.
-
-Préservation de l'apparence du document : Les sous-ensembles de polices inclus dans le fichier PDF permettent de reproduire l'apparence du document en utilisant uniquement les caractères réellement utilisés.
-
-Compatibilité avec les restrictions de licence : l'intégration de sous-ensembles de polices peut être préférée dans les cas où les polices complètes ne peuvent pas être légalement intégrées en raison de restrictions de licence.
+### Comment puis-je vérifier quelles polices sont intégrées dans mon PDF ?
+Vous pouvez ouvrir le PDF dans Adobe Acrobat Reader et vérifier les propriétés sous l'onglet Polices pour voir les polices intégrées.

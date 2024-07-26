@@ -17,7 +17,7 @@ url: /ko/net/programming-with-sdt/creating-table-repeating-section-mapped-to-cus
 - C# 및 Word 문서를 사용한 단어 처리에 대한 기본 지식.
 
 ## 1단계: 문서 디렉터리 설정
- 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
+ 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## 4단계: 테이블 및 테이블 구조 만들기
- 다음을 사용하여 테이블 생성을 시작합니다.`StartTable` 의 방법`DocumentBuilder` . 다음을 사용하여 표 셀과 내용을 추가합니다.`InsertCell`그리고`Write` 행동 양식.
+다음을 사용하여 테이블 생성을 시작합니다.`StartTable` 의 방법`DocumentBuilder` . 다음을 사용하여 표 셀과 내용을 추가합니다.`InsertCell`그리고`Write` 행동 양식.
 
 ```csharp
 Table table = builder.StartTable();
@@ -98,7 +98,7 @@ row.AppendChild(authorSdt);
 ```
 
 ## 8단계: 문서 저장
- 수정된 문서를 다음을 사용하여 지정된 디렉터리에 저장합니다.`Save` 방법. 적절한 파일 확장자와 함께 원하는 파일 이름을 제공하십시오. 이 예에서는 문서를 "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx"로 저장합니다.
+ 수정된 문서를 다음을 사용하여 지정된 디렉터리에 저장합니다.`Save`방법. 적절한 파일 확장자와 함께 원하는 파일 이름을 제공하십시오. 이 예에서는 문서를 "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx"로 저장합니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");

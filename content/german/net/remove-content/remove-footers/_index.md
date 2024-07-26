@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Die primäre Fußzeile ist die Fußzeile, die für ungerade Seiten verwendet wird.
+	//Die primäre Fußzeile ist die Fußzeile, die für ungerade Seiten verwendet wird.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

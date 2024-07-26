@@ -68,7 +68,7 @@ Achten Sie darauf, den richtigen Pfad und Dateinamen für das Ausgabedokument an
 	// Klonen Sie die Tabelle und fügen Sie sie nach dem Original in das Dokument ein.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	//Fügen Sie zwischen den beiden Tabellen einen leeren Absatz ein.
+	// Fügen Sie zwischen den beiden Tabellen einen leeren Absatz ein.
 	// oder sie werden beim Speichern zu einem zusammengefasst. Dies hat mit der Dokumentvalidierung zu tun.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

@@ -2,92 +2,83 @@
 title: Bilder als WMF speichern
 linktitle: Bilder als WMF speichern
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie Bilder als WMF speichern, wenn Sie sie mit Aspose.Words für .NET in RTF konvertieren.
+description: Erfahren Sie in unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Bilder als WMF in Word-Dokumenten speichern. Steigern Sie die Dokumentkompatibilität und Bildqualität.
 type: docs
 weight: 10
 url: /de/net/programming-with-rtfsaveoptions/saving-images-as-wmf/
 ---
+## Einführung
 
-In diesem Tutorial untersuchen wir den C#-Quellcode für die Funktion „Bilder als WMF mit RTF-Speicheroptionen speichern“ mit Aspose.Words für .NET. Mit dieser Funktion können Sie Dokumentbilder beim Konvertieren in das RTF-Format im Windows Metafile-Format (WMF) speichern.
+Hallo liebe Entwicklerkollegen! Haben Sie sich schon einmal gefragt, wie Sie mit Aspose.Words für .NET Bilder als WMF (Windows Metafile) in Ihren Word-Dokumenten speichern können? Dann sind Sie hier richtig! In diesem Tutorial tauchen wir in die Welt von Aspose.Words für .NET ein und erkunden, wie man Bilder als WMF speichert. Das ist super praktisch, um die Bildqualität zu erhalten und die Kompatibilität zwischen verschiedenen Plattformen sicherzustellen. Bereit? Dann legen wir los!
 
-## Schritt 1: Einrichten der Umgebung
+## Voraussetzungen
 
-Bevor Sie beginnen, stellen Sie sicher, dass Sie Ihre Entwicklungsumgebung mit Aspose.Words für .NET eingerichtet haben. Stellen Sie sicher, dass Sie die erforderlichen Referenzen hinzugefügt und die entsprechenden Namespaces importiert haben.
+Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen, um reibungslos mitmachen zu können:
 
-## Schritt 2: Dokument einlegen
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn nicht, können Sie es hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Sie sollten eine C#-Entwicklungsumgebung wie beispielsweise Visual Studio eingerichtet haben.
+- Grundkenntnisse in C#: Grundkenntnisse der C#-Programmierung sind von Vorteil.
+
+## Namespaces importieren
+
+Als Erstes importieren wir die erforderlichen Namespaces. Dies ist entscheidend für den Zugriff auf die von uns verwendeten Aspose.Words-Klassen und -Methoden.
 
 ```csharp
-// Pfad zu Ihrem Dokumentverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-Document doc = new Document(dataDir + "Document.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- In diesem Schritt laden wir das Dokument mit dem`Document` Methode und Übergabe des Pfads an die zu ladende DOCX-Datei.
+Okay, jetzt kommen wir zum spaßigen Teil. Lassen Sie uns den Prozess in leicht verständliche Schritte unterteilen.
 
-## Schritt 3: Konfigurieren der Sicherungsoptionen
+## Schritt 1: Laden Sie Ihr Dokument
 
-```csharp
-RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
-```
-
- In diesem Schritt konfigurieren wir die RTF-Backup-Optionen. Wir erstellen ein neues`RtfSaveOptions` Objekt und setzen Sie den`SaveImagesAsWmf`Eigentum an`true`. Dies weist Aspose.Words an, die Dokumentbilder beim Konvertieren in RTF als WMF zu speichern.
-
-## Schritt 4: Speichern des Dokuments
+Zuerst müssen Sie das Dokument laden, das die Bilder enthält, die Sie als WMF speichern möchten. 
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
-```
-
- In diesem letzten Schritt speichern wir das resultierende Dokument im RTF-Format mit dem`Save` Methode und Übergabe des Pfads zur Ausgabedatei zusammen mit den angegebenen Speicheroptionen.
-
-Jetzt können Sie Quellcode ausführen, um Dokumentbilder im WMF-Format zu speichern, während Sie in das RTF-Format konvertieren. Das resultierende Dokument wird im angegebenen Verzeichnis unter dem Namen „WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf“ gespeichert.
-
-### Beispiel-Quellcode für die Funktion zum Speichern von WMF-Bildern mit RTF-Speicheroptionen mit Aspose.Words für .NET".
-
-```csharp
-
-            
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
 Document doc = new Document(dataDir + "Document.docx");
-
-RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
-
-doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
-            
-        
 ```
+
+ Erklärung: In diesem Schritt geben wir das Verzeichnis an, in dem sich Ihr Dokument befindet. Anschließend laden wir das Dokument mit dem`Document` Klasse bereitgestellt von Aspose.Words. Kinderleicht, oder?
+
+## Schritt 2: Speicheroptionen konfigurieren
+
+Als nächstes müssen wir die Speicheroptionen konfigurieren, um sicherzustellen, dass die Bilder als WMF gespeichert werden.
+
+```csharp
+RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
+```
+
+ Erklärung: Hier erstellen wir eine Instanz von`RtfSaveOptions` und legen Sie die`SaveImagesAsWmf`Eigentum an`true`. Dadurch wird Aspose.Words angewiesen, die Bilder beim Speichern des Dokuments als WMF zu speichern.
+
+## Schritt 3: Speichern Sie das Dokument
+
+Abschließend ist es an der Zeit, das Dokument mit den angegebenen Speicheroptionen zu speichern.
+
+```csharp
+doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
+```
+
+ Erklärung: In diesem Schritt verwenden wir die`Save` Methode der`Document` Klasse, um das Dokument zu speichern. Wir übergeben den Dateipfad und die`saveOptions` als Parameter. Dadurch wird sichergestellt, dass die Bilder als WMF gespeichert werden.
+
 ## Abschluss
 
-In diesem Tutorial haben wir die Funktion zum Speichern von Bildern als WMF mit RTF-Speicheroptionen in Aspose.Words für .NET untersucht. Wir haben gelernt, wie man Bilder aus einem Dokument im WMF-Format speichert, wenn man es in das RTF-Format konvertiert.
+Und da haben Sie es! Mit nur wenigen Codezeilen können Sie mit Aspose.Words für .NET Bilder als WMF in Ihren Word-Dokumenten speichern. Dies kann unglaublich nützlich sein, um qualitativ hochwertige Bilder beizubehalten und die Kompatibilität zwischen verschiedenen Plattformen sicherzustellen. Probieren Sie es aus und sehen Sie den Unterschied!
 
-Diese Funktion ist nützlich, wenn Sie die Qualität und Auflösung von Bildern in Ihren RTF-Dokumenten beibehalten möchten. Indem Sie Bilder im WMF-Format speichern, können Sie sicherstellen, dass ihr Aussehen und ihre Schärfe erhalten bleiben.
+## Häufig gestellte Fragen
 
-Aspose.Words für .NET bietet viele erweiterte Funktionen zur Dokumentbearbeitung und -erstellung. Das Speichern von Bildern im WMF-Format während der Konvertierung in das RTF-Format ist eines der vielen leistungsstarken Tools, die es Ihnen bietet.
+### Kann ich mit Aspose.Words für .NET andere Bildformate verwenden?
+Ja, Aspose.Words für .NET unterstützt verschiedene Bildformate wie PNG, JPEG, BMP und mehr. Sie können die Speicheroptionen entsprechend konfigurieren.
 
-### Häufig gestellte Fragen
+### Gibt es eine Testversion für Aspose.Words für .NET?
+ Auf jeden Fall! Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/).
 
-#### F: Was ist die Funktion „Bilder als WMF mit RTF-Speicheroptionen speichern“ in Aspose.Words für .NET?
-A: Die Funktion „Bilder als WMF mit RTF-Speicheroptionen speichern“ von Aspose.Words für .NET ermöglicht das Speichern von Dokumentbildern im Windows Metafile-Format (WMF) beim Konvertieren in RTF. Dadurch können Bildqualität und Auflösung in RTF-Dokumenten beibehalten werden.
+### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
+ Ja, Aspose.Words für .NET erfordert eine Lizenz. Sie können eine erwerben[Hier](https://purchase.aspose.com/buy) oder holen Sie sich eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
 
-#### F: Wie kann ich diese Funktion mit Aspose.Words für .NET verwenden?
-A: Um diese Funktion mit Aspose.Words für .NET zu verwenden, können Sie diese Schritte befolgen:
+### Kann ich Support erhalten, wenn ich auf Probleme stoße?
+ Auf jeden Fall! Aspose bietet umfassenden Support über seine Foren. Sie können auf den Support zugreifen[Hier](https://forum.aspose.com/c/words/8).
 
-Richten Sie Ihre Entwicklungsumgebung ein, indem Sie die erforderlichen Referenzen hinzufügen und die entsprechenden Namespaces importieren.
-
- Laden Sie das Dokument mit dem`Document` Methode und geben Sie den Pfad der zu ladenden DOCX-Datei an.
-
- Konfigurieren Sie RTF-Speicheroptionen durch die Erstellung einer`RtfSaveOptions` Objekt und Festlegen der`SaveImagesAsWmf`Eigentum an`true`. Dies weist Aspose.Words an, die Dokumentbilder zu speichern als 
-WMF beim Konvertieren in RTF.
-
- Speichern Sie das resultierende Dokument im RTF-Format mit dem`Save` Methode und geben Sie den vollständigen Pfad zur Ausgabedatei zusammen mit den angegebenen Speicheroptionen an.
-
-#### F: Ist es mit den RTF-Speicheroptionen möglich, ein anderes Bildformat zum Speichern auszuwählen?
-A: Nein, diese spezielle Funktion speichert Bilder beim Konvertieren in RTF im WMF-Format. Andere Bildformate werden von dieser Funktion nicht direkt unterstützt. Aspose.Words bietet jedoch andere Funktionen zur Bildbearbeitung und -konvertierung, mit denen Sie Bilder vor oder nach der Konvertierung in RTF in andere Formate konvertieren können.
-
-#### F: Bieten die RTF-Speicheroptionen mit Aspose.Words für .NET andere Funktionen?
-A: Ja, Aspose.Words für .NET bietet viele weitere Funktionen mit RTF-Speicheroptionen. Sie können verschiedene Aspekte der RTF-Konvertierung anpassen, z. B. Schriftartverwaltung, Layout, Bilder, Tabellen, Hyperlinks usw. Diese Optionen geben Ihnen präzise Kontrolle über das Endergebnis der RTF-Konvertierung.
-
-#### F: Wie kann ich mit Aspose.Words für .NET Bilder in einem Dokument bearbeiten?
-A: Aspose.Words für .NET bietet eine umfassende Palette an Funktionen zur Bearbeitung von Bildern in einem Dokument. Sie können Bilder extrahieren, einfügen, ihre Größe ändern, zuschneiden, Filter und Effekte anwenden, die Qualität anpassen, zwischen verschiedenen Bildformaten konvertieren und vieles mehr. Weitere Einzelheiten zur Bildbearbeitung finden Sie in der Aspose.Words-Dokumentation.
+### Gibt es spezielle Systemanforderungen für Aspose.Words für .NET?
+Aspose.Words für .NET ist mit .NET Framework, .NET Core und .NET Standard kompatibel. Stellen Sie sicher, dass Ihre Entwicklungsumgebung diese Anforderungen erfüllt.

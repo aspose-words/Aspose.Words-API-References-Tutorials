@@ -50,7 +50,7 @@ doc.FirstSection.Remove();
 
 ## Következtetés
 
- A Word dokumentumok programozott kezelése rengeteg időt és erőfeszítést takaríthat meg. Az Aspose.Words for .NET segítségével olyan feladatokat végezhet, mint a szakaszok törlése. Ne felejtse el felfedezni a kiterjedt[dokumentáció](https://reference.aspose.com/words/net/) még hatékonyabb funkciók feloldásához. Boldog kódolást!
+ A Word dokumentumok programozott kezelése rengeteg időt és erőfeszítést takaríthat meg. Az Aspose.Words for .NET segítségével olyan feladatokat végezhet, mint a szakaszok törlése. Ne felejtse el felfedezni a kiterjedt[dokumentáció](https://reference.aspose.com/words/net/) még erősebb funkciók feloldásához. Boldog kódolást!
 
 ## GYIK
 

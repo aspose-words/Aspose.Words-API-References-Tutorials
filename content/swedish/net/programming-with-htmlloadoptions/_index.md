@@ -12,4 +12,4 @@ Aspose.Words för .NET-handledningarna om ordbehandling med HTMLLoadOptions är 
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Föredragen kontrolltyp i Word-dokument](./preferred-control-type/) | Steg-för-steg-guide för att ange den föredragna kontrolltypen i word-dokument när du laddar ett HTML-dokument med Aspose.Words för .NET. |
+| [Föredragen kontrolltyp i Word-dokument](./preferred-control-type/) | Lär dig hur du infogar ett formulärfält med kombinationsruta i ett Word-dokument med Aspose.Words för .NET. Följ den här steg-för-steg-guiden för sömlös HTML-innehållsintegration. |

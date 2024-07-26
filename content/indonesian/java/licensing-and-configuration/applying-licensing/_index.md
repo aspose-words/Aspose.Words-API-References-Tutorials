@@ -12,7 +12,7 @@ Dalam tutorial ini, kami akan memandu Anda melalui proses penerapan lisensi ke A
 
 ## 1. Pengantar Lisensi di Aspose.Words untuk Java
 
-Aspose.Words untuk Java adalah pustaka pemrosesan dokumen canggih yang memungkinkan Anda membuat, mengedit, dan memanipulasi dokumen Word secara terprogram. Untuk menggunakannya secara efektif, Anda perlu menerapkan lisensi yang valid. Tanpa lisensi, Aspose.Words beroperasi dalam mode uji coba dengan batasan.
+Aspose.Words for Java adalah pustaka pemrosesan dokumen canggih yang memungkinkan Anda membuat, mengedit, dan memanipulasi dokumen Word secara terprogram. Untuk menggunakannya secara efektif, Anda perlu menerapkan lisensi yang valid. Tanpa lisensi, Aspose.Words beroperasi dalam mode uji coba dengan batasan.
 
 ## 2. Memperoleh Lisensi
 

@@ -2,68 +2,101 @@
 title: Schriftnamen auflösen
 linktitle: Schriftnamen auflösen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Beheben fehlender Schriftnamen bei der Konvertierung in HTML mit Aspose.Words für .NET.
+description: Erfahren Sie, wie Sie Schriftnamen in Word-Dokumenten auflösen, wenn Sie sie mit Aspose.Words für .NET in HTML konvertieren. Schritt-für-Schritt-Anleitung mit ausführlichen Erklärungen.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch den C#-Quellcode, um fehlende Schriftnamen mit Aspose.Words für .NET aufzulösen. Mit dieser Funktion können Sie fehlende Schriftnamen automatisch auflösen, wenn Sie ein Dokument in HTML konvertieren.
+Hallo, Programmierkollege! Wenn Sie beim Speichern von Word-Dokumenten als HTML schon einmal mit Schriftartproblemen zu kämpfen hatten, sind Sie nicht allein. Schriftarten können knifflig sein, aber keine Sorge, ich stehe Ihnen zur Seite. Heute tauchen wir ein in die Frage, wie Sie mit Aspose.Words für .NET Schriftartnamen in Ihren Word-Dokumenten auflösen können. Diese Anleitung führt Sie Schritt für Schritt durch den Prozess und stellt sicher, dass Ihre Schriftarten im HTML-Format genau richtig aussehen.
 
-## Schritt 1: Projekt-Setup
+## Voraussetzungen
 
-Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Bibliothek Aspose.Words für .NET verwiesen wird.
+Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-## Schritt 2: Dokument einlegen
+1.  Aspose.Words für .NET: Falls noch nicht geschehen, können Sie es herunterladen[Hier](https://releases.aspose.com/words/net/).
+2.  Eine gültige Lizenz: Sie können eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy) oder holen Sie sich eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
+3. Grundkenntnisse in C# und .NET: Dieses Tutorial setzt voraus, dass Sie mit den grundlegenden Programmierkonzepten in C# vertraut sind.
+4. Visual Studio: Jede Version, die .NET Framework unterstützt.
 
-In diesem Schritt laden wir das zu verarbeitende Dokument. Verwenden Sie den folgenden Code, um das Dokument aus einem angegebenen Verzeichnis zu laden:
+Nachdem wir nun unsere Voraussetzungen geklärt haben, können wir loslegen!
+
+## Namespaces importieren
+
+Bevor wir mit dem Codieren beginnen, stellen Sie sicher, dass Sie die erforderlichen Namespaces in Ihr Projekt importiert haben. Dies ist für den Zugriff auf die Aspose.Words-Funktionen von entscheidender Bedeutung.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Schritt 1: Einrichten des Dokumentverzeichnisses
+
+Als Erstes richten wir den Pfad zu Ihrem Dokumentverzeichnis ein. Hier befindet sich Ihr Word-Dokument und hier speichern Sie Ihre Ausgabe.
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+Erläuterung:
+ Hier,`dataDir` enthält den Pfad zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad auf Ihrem System.
+
+## Schritt 2: Laden des Word-Dokuments
+
+Als nächstes müssen wir das Word-Dokument laden, das wir verarbeiten möchten. Dieses Dokument sollte die Schriftarten enthalten, die Sie auflösen möchten.
+
+```csharp
 Document doc = new Document(dataDir + "Missing font.docx");
 ```
 
- Dieser Code erstellt eine Instanz von`Document` durch Laden des Dokuments aus dem angegebenen Verzeichnis.
+Erläuterung:
+ Wir schaffen eine`Document` Objekt und laden Sie das Word-Dokument mit dem Namen "Missing font.docx" aus unserem`dataDir`.
 
-## Schritt 3: Konfigurieren der HTML-Sicherungsoptionen
+## Schritt 3: Konfigurieren der HTML-Speicheroptionen
 
-Nun konfigurieren wir die HTML-Speicheroptionen, um fehlende Schriftnamen während der Konvertierung aufzulösen. Verwenden Sie den folgenden Code:
+Richten wir nun die Optionen zum Speichern des Dokuments als HTML ein. Dabei stellen wir sicher, dass die Schriftnamen richtig aufgelöst werden.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 {
-PrettyFormat = true,
-ResolveFontNames=true
+    PrettyFormat = true,
+    ResolveFontNames = true
 };
 ```
 
- Dieser Code erstellt eine Instanz von`HtmlSaveOptions` und setzt den`ResolveFontNames` Möglichkeit,`true`um fehlende Schriftnamen bei der Konvertierung in HTML zu beheben. Außerdem`PrettyFormat` ist eingestellt auf`true` um schön formatierten HTML-Code zu erhalten.
+Erläuterung:
+ Wir erstellen eine Instanz von`HtmlSaveOptions` mit`SaveFormat.Html` . Der`PrettyFormat` Option macht die HTML-Ausgabe lesbarer und`ResolveFontNames` stellt sicher, dass Schriftnamen aufgelöst werden.
 
-## Schritt 4: Konvertieren und Speichern des Dokuments im HTML-Format
+## Schritt 4: Speichern des Dokuments als HTML
 
-Zum Schluss konvertieren wir das Dokument in HTML, indem wir die zuvor konfigurierten HTML-Speicheroptionen verwenden. Verwenden Sie den folgenden Code:
+Abschließend speichern wir das Dokument mit den konfigurierten Speicheroptionen als HTML-Datei ab.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 ```
 
-Dieser Code konvertiert das Dokument in HTML, indem er fehlende Schriftnamen automatisch auflöst und die konvertierte HTML-Datei im angegebenen Verzeichnis speichert.
+Erläuterung:
+ Wir nennen die`Save` Methode auf der`Document` Objekt, wobei der Ausgabepfad und die von uns konfigurierten Speicheroptionen angegeben werden. Dadurch wird eine HTML-Datei mit aufgelösten Schriftnamen generiert.
 
-### Beispielquellcode zum Auflösen von Schriftnamen mit Aspose.Words für .NET
+## Abschluss
 
-```csharp
+Und da haben Sie es! Indem Sie diese Schritte befolgen, haben Sie beim Konvertieren eines Word-Dokuments in HTML mit Aspose.Words für .NET erfolgreich Schriftnamen aufgelöst. Dies stellt nicht nur sicher, dass Ihre Schriftarten korrekt angezeigt werden, sondern sorgt auch dafür, dass Ihre HTML-Ausgabe elegant und professionell aussieht. Viel Spaß beim Programmieren!
 
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Missing font.docx");
+## Häufig gestellte Fragen
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
-	{
-		PrettyFormat = true, ResolveFontNames = true
-	};
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente programmgesteuert erstellen, ändern und konvertieren können.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
+### Wie installiere ich Aspose.Words für .NET?
+ Sie können Aspose.Words für .NET herunterladen von[Hier](https://releases.aspose.com/words/net/). Befolgen Sie die Installationsanweisungen in der Dokumentation.
 
-```
+### Kann ich Aspose.Words für .NET ohne Lizenz verwenden?
+ Ja, aber es wird einige Einschränkungen geben. Für die volle Funktionalität können Sie eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy) oder holen Sie sich eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
 
- Achten Sie darauf, den korrekten Pfad zum Dokumentenverzeichnis im`dataDir` Variable.
+### Warum werden meine Schriftarten in HTML nicht richtig angezeigt?
+ Dies kann passieren, wenn die Schriftarten bei der Konvertierung nicht richtig aufgelöst werden.`ResolveFontNames = true` In`HtmlSaveOptions` kann helfen, dieses Problem zu beheben.
+
+### Wo erhalte ich Support für Aspose.Words für .NET?
+ Unterstützung erhalten Sie vom[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8).

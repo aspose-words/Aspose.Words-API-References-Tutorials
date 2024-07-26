@@ -107,6 +107,6 @@ Istniejące numery stron w dokumencie źródłowym pozostają niezmienione. Nume
 
  Absolutnie! Aspose.Words oferuje szeroką kontrolę nad formatami numeracji stron. Poznaj`NumberStyle` własność`HeaderFooter` obiekt do wyboru spośród różnych stylów numerowania, takich jak cyfry rzymskie, litery lub formaty niestandardowe.
 
-### Gdzie mogę znaleźć dalsze zasoby lub pomoc?
+### Gdzie mogę znaleźć dalsze zasoby i pomoc?
 
  Aspose zapewnia kompleksowy portal dokumentacji[Link do dokumentacji](https://reference.aspose.com/words/net/) który zagłębia się w funkcje numerowania stron i inne funkcje Aspose.Words. Dodatkowo ich aktywne forum[Link do wsparcia](https://forum.aspose.com/c/words/8) to świetna platforma do łączenia się ze społecznością programistów i szukania pomocy w przypadku konkretnych wyzwań.

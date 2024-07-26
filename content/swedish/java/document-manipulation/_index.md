@@ -25,7 +25,7 @@ Det första steget på din resa mot att bli ett proffs för dokumentmanipulering
 
 ### Skapa och ändra dokument
 
-När du har installerat Aspose.Words är det dags att börja skapa och ändra dokument. Lär dig hur du genererar nya dokument, lägger till innehåll, formaterar text och manipulerar dokumentstrukturen utan ansträngning.
+När du har installerat Aspose.Words är det dags att börja skapa och ändra dokument. Lär dig hur du genererar nya dokument, lägger till innehåll, formaterar text och manipulerar dokumentstruktur utan ansträngning.
 
 ### Konvertera dokument
 

@@ -36,7 +36,7 @@ builder.Write("Simple text");
 ```
 
 ## Paso 3: guarde el documento
- Guarde el documento utilizando el`Save` método de la`Document` con la ruta y el nombre de archivo apropiados.
+ Guarde el documento usando el`Save` método de la`Document` con la ruta y el nombre de archivo apropiados.
 
 ```csharp
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");

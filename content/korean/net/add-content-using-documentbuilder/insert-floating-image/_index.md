@@ -16,7 +16,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-floating-image/
 시작하기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
 1.  .NET용 Aspose.Words: 다음에서 라이브러리를 다운로드할 수 있습니다.[Aspose 릴리스 페이지](https://releases.aspose.com/words/net/).
-2. Visual Studio: .NET 개발을 지원하는 모든 버전.
+2. Visual Studio: .NET 개발을 지원하는 모든 버전입니다.
 3. C# 기본 지식: C# 프로그래밍의 기본을 이해하면 도움이 됩니다.
 4. 이미지 파일: 로고, 그림 등 삽입하려는 이미지 파일입니다.
 
@@ -140,6 +140,6 @@ Aspose.Words for .NET을 사용하여 Word 문서에 부동 이미지를 삽입�
 
 예, Aspose.Words는 JPEG, PNG, BMP 및 GIF를 포함한 광범위한 이미지 형식을 지원합니다.
 
-### .NET용 Aspose.Words의 무료 평가판을 받으려면 어떻게 해야 합니까?
+### .NET용 Aspose.Words 무료 평가판을 받으려면 어떻게 해야 합니까?
 
  다음에서 무료 평가판을 받을 수 있습니다.[Aspose 무료 평가판 페이지](https://releases.aspose.com/).

@@ -98,7 +98,7 @@ A: Než budete moci vytvořit projekt VBA v dokumentu aplikace Word, musíte mí
 
 #### Otázka: Jak specifikovat zdrojový kód makra v modulu VBA?
 
- Odpověď: Chcete-li zadat zdrojový kód makra v modulu VBA, můžete použít`SourceCode` vlastnictvím`VbaModule` třídy tak, že jí přiřadíte znakový řetězec obsahující kód VBA.
+ Odpověď: Chcete-li zadat zdrojový kód makra v modulu VBA, můžete použít`SourceCode` majetek z`VbaModule` třídy tak, že jí přiřadíte znakový řetězec obsahující kód VBA.
 
 #### Otázka: Mohu přidat více modulů VBA do projektu VBA v dokumentu aplikace Word?
 

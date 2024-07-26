@@ -16,6 +16,6 @@ Baik Anda perlu membuat laporan, membuat dokumen khusus, mengotomatiskan tugas d
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Deteksi Format File Dokumen](./detect-file-format/) | Panduan langkah demi langkah untuk mendeteksi format file dokumen dengan Aspose.Words for .NET. |
-| [Deteksi Tanda Tangan Digital pada Dokumen Word](./detect-document-signatures/) | Panduan langkah demi langkah untuk mendeteksi tanda tangan digital dalam dokumen dengan Aspose.Words untuk .NET. |
-| [Verifikasi Dokumen Word Terenkripsi](./verify-encrypted-document/) | Panduan langkah demi langkah untuk memverifikasi dokumen dienkripsi dengan Aspose.Words untuk .NET. |
+| [Deteksi Format File Dokumen](./detect-file-format/) | Pelajari cara mendeteksi format file dokumen menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. |
+| [Deteksi Tanda Tangan Digital pada Dokumen Word](./detect-document-signatures/) | Pelajari cara mendeteksi tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. |
+| [Verifikasi Dokumen Word Terenkripsi](./verify-encrypted-document/) | Pelajari cara memverifikasi status enkripsi dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. |

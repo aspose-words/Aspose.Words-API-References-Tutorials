@@ -2,7 +2,7 @@
 title: ソースをまとめる
 linktitle: ソースをまとめる
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、書式設定を維持しながら Word 文書を結合する方法を学びます。この包括的なガイドでは、セットアップから実行まですべてをカバーしています。
+description: Aspose.Words for .NET を使用して、書式設定を保持しながら Word 文書を結合する方法を学びます。この包括的なガイドでは、セットアップから実行まですべてをカバーしています。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/keep-source-together/

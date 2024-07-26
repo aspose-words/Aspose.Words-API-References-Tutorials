@@ -21,7 +21,7 @@ Untuk menggunakan Aspose.Words dalam proyek Anda, Anda perlu menambahkan referen
 Sebelum Anda dapat mengonversi bidang, Anda harus memuat dokumen yang berisi bidang yang akan dikonversi. Pastikan untuk menentukan jalur yang benar ke direktori yang berisi dokumen tersebut. Berikut cara mengunggah dokumen:
 
 ```csharp
-//Jalur ke direktori dokumen.
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Muat dokumen.
@@ -56,7 +56,7 @@ Pastikan untuk menentukan jalur dan nama file yang benar untuk cadangan.
 ### Contoh kode sumber untuk Konversi Bidang Dalam Paragraf menggunakan Aspose.Words untuk .NET
 
 ```csharp
-//Jalur ke direktori dokumen.
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Muat dokumen.

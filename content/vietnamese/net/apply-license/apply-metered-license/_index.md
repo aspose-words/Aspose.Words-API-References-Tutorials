@@ -13,7 +13,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép bạn làm vi�
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
 
 1.  Aspose.Words for .NET: Nếu bạn chưa có, hãy tải xuống thư viện từ[trang web giả định](https://releases.aspose.com/words/net/).
 2. Khóa cấp phép đo lường hợp lệ: Bạn cần có khóa để kích hoạt giấy phép đo lường. Bạn có thể lấy những thứ này từ[Trang mua hàng giả định](https://purchase.aspose.com/buy).

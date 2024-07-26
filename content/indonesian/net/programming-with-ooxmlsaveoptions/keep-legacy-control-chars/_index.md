@@ -2,68 +2,102 @@
 title: Pertahankan Karakter Kontrol Lama
 linktitle: Pertahankan Karakter Kontrol Lama
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mempertahankan karakter kontrol lama saat menyimpan dokumen dengan Aspose.Words untuk .NET.
+description: Pelajari cara mempertahankan karakter kontrol lama di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kita akan menjelajahi kode sumber C# yang disediakan untuk mempertahankan karakter kontrol lama saat menyimpan dokumen menggunakan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda mempertahankan karakter kontrol khusus saat mengonversi atau menyimpan dokumen.
+Pernah dibuat bingung dengan karakter kontrol yang aneh dan tidak terlihat di dokumen Word Anda? Mereka seperti gremlin kecil dan tersembunyi yang dapat mengacaukan format dan fungsionalitas. Untungnya, Aspose.Words untuk .NET menyediakan fitur praktis untuk menjaga karakter kontrol lama ini tetap utuh saat menyimpan dokumen. Dalam tutorial ini, kita akan mendalami cara mengelola karakter kontrol ini menggunakan Aspose.Words untuk .NET. Kami akan menguraikannya langkah demi langkah, memastikan Anda memahami setiap detailnya. Siap untuk memulai? Ayo selami!
 
-## Langkah 1: Menyiapkan lingkungan
+## Prasyarat
 
-Sebelum memulai, pastikan Anda telah menyiapkan lingkungan pengembangan dengan Aspose.Words untuk .NET. Pastikan Anda telah menambahkan referensi yang diperlukan dan mengimpor namespace yang sesuai.
+Sebelum kita mulai, pastikan Anda memiliki yang berikut ini:
 
-## Langkah 2: Memuat dokumen
+1.  Aspose.Words untuk .NET: Unduh dan instal dari[Di Sini](https://releases.aspose.com/words/net/).
+2.  Lisensi Aspose yang valid: Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
+3. Lingkungan Pengembangan: Visual Studio atau IDE lain yang mendukung .NET.
+4. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# akan sangat membantu.
 
-```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+## Impor Namespace
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
-```
-
- Pada langkah ini, kami memuat dokumen menggunakan`Document` metode dan meneruskan jalur ke file yang berisi karakter kontrol yang diwarisi.
-
-## Langkah 3: Mengonfigurasi opsi pencadangan OOXML
+Sebelum menulis kode, Anda perlu mengimpor namespace yang diperlukan. Tambahkan baris berikut ke bagian atas file C# Anda:
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- Pada langkah ini, kami mengonfigurasi opsi penyimpanan OOXML dengan membuat yang baru`OoxmlSaveOptions` obyek. Kami menentukan format penyimpanan yang diinginkan (di sini,`FlatOpc` ) dan aktifkan`KeepLegacyControlChars` opsi untuk mempertahankan karakter kontrol lama.
+## Langkah 1: Menyiapkan Proyek Anda
 
-## Langkah 4: Menyimpan dokumen dengan karakter kontrol lama
+Pertama, Anda harus menyiapkan proyek Anda di Visual Studio (atau IDE pilihan Anda). 
 
-```csharp
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-```
+1. Buat proyek C# baru: Buka Visual Studio dan buat proyek Aplikasi Konsol C# baru.
+2. Instal Aspose.Words untuk .NET: Gunakan NuGet Package Manager untuk menginstal Aspose.Words untuk .NET. Klik kanan proyek Anda di Solution Explorer, pilih "Kelola Paket NuGet", cari "Aspose.Words", dan instal.
 
- Pada langkah terakhir ini, kita menyimpan dokumen menggunakan`Save` metode dan meneruskan jalur ke file keluaran dengan`.docx` ekstensi, bersama dengan opsi penyimpanan yang ditentukan.
+## Langkah 2: Muat Dokumen Anda
 
-Sekarang Anda dapat menjalankan kode sumber untuk mempertahankan karakter kontrol lama saat menyimpan dokumen. File yang dihasilkan akan disimpan di direktori yang ditentukan dengan nama "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
+Selanjutnya, Anda akan memuat dokumen Word yang berisi karakter kontrol lama.
 
-### Contoh kode sumber untuk Pertahankan Karakter Kontrol Lama menggunakan Aspose.Words untuk .NET 
-```csharp
+1. Tentukan jalur dokumen: Tetapkan jalur ke direktori dokumen Anda.
+   
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
 
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+2.  Memuat dokumen: Gunakan`Document` kelas untuk memuat dokumen Anda.
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```csharp
+   Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+## Langkah 3: Konfigurasikan Opsi Penyimpanan
 
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-            
-        
-```
+Sekarang, mari konfigurasikan opsi penyimpanan agar karakter kontrol lama tetap utuh.
+
+1.  Buat Opsi Simpan: Inisialisasi sebuah instance dari`OoxmlSaveOptions` dan atur`KeepLegacyControlChars`properti ke`true`.
+
+   ```csharp
+   OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)
+   {
+       KeepLegacyControlChars = true
+   };
+   ```
+
+## Langkah 4: Simpan Dokumen
+
+Terakhir, simpan dokumen dengan opsi penyimpanan yang dikonfigurasi.
+
+1.  Menyimpan dokumen: Gunakan`Save` metode`Document` kelas untuk menyimpan dokumen dengan opsi penyimpanan yang ditentukan.
+
+   ```csharp
+   doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
+   ```
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita menjelajahi fungsionalitas mempertahankan karakter kontrol lama saat menyimpan dokumen menggunakan Aspose.Words untuk .NET. Kita telah mempelajari cara mempertahankan karakter khusus yang mungkin penting untuk pemformatan atau tampilan dokumen yang benar.
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat memastikan bahwa karakter kontrol lama Anda dipertahankan saat bekerja dengan dokumen Word di Aspose.Words untuk .NET. Fitur ini dapat menjadi penyelamat, terutama ketika berhadapan dengan dokumen kompleks yang mana karakter kontrol memainkan peran penting. 
 
- Mempertahankan karakter kontrol warisan sangat berguna ketika Pemrosesan Kata dengan dokumen yang menggunakan fitur yang lebih lama atau spesifik, seperti karakter kontrol khusus. Dengan mengaktifkan`KeepLegacyControlChars` pilihan saat menyimpan dokumen, Anda memastikan bahwa karakter ini dipertahankan.
+## FAQ
 
-Aspose.Words for .NET menawarkan serangkaian opsi pencadangan yang fleksibel dan kuat untuk memenuhi kebutuhan manipulasi dokumen Anda. Dengan menggunakan opsi yang sesuai, Anda dapat menyesuaikan proses pencadangan untuk mempertahankan karakteristik spesifik dokumen Anda.
+### Apa yang dimaksud dengan karakter kontrol warisan?
 
-Jangan ragu untuk memasukkan fungsi ini ke dalam proyek Aspose.Words for .NET Anda untuk memastikan integritas dan pelestarian karakter kontrol lama dalam dokumen Anda.
+Karakter kontrol lama adalah karakter non-cetak yang digunakan dalam dokumen lama untuk mengontrol pemformatan dan tata letak.
+
+### Bisakah saya menghapus karakter kontrol ini dan tidak menyimpannya?
+
+Ya, Anda dapat menggunakan Aspose.Words untuk .NET untuk menghapus atau mengganti karakter ini jika diperlukan.
+
+### Apakah fitur ini tersedia di semua versi Aspose.Words untuk .NET?
+
+Fitur ini tersedia dalam versi terbaru. Pastikan untuk menggunakan versi terbaru untuk mengakses semua fungsi.
+
+### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
+
+ Ya, Anda memerlukan lisensi yang valid. Anda bisa mendapatkan lisensi sementara untuk tujuan evaluasi[Di Sini](https://purchase.aspose.com/temporary-license/).
+
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
+
+ Anda dapat menemukan dokumentasi terperinci[Di Sini](https://reference.aspose.com/words/net/).
+ 

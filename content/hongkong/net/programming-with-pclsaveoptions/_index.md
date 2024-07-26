@@ -14,4 +14,4 @@ Aspose.Words for .NET 教學課程為您提供了寶貴的資源，幫助您在 
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [柵格化變換的元素](./rasterize-transformed-elements/) | 了解在使用 Aspose.Words for .NET 轉換為 PCL 格式時如何停用轉換元素的光柵化。 |
+| [柵格化變換的元素](./rasterize-transformed-elements/) | 了解使用 Aspose.Words for .NET 將 Word 文件轉換為 PCL 格式時如何光柵化轉換後的元素。包括逐步指南。 |

@@ -85,7 +85,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 ## Steg 5: Flytta bokmärkesänden
 
-Slutligen, om villkoren är uppfyllda, flyttar vi bokmärkets slutnod till slutet av det sista stycket i den översta radens sista cell. Detta steg löser effektivt bokmärket.
+Slutligen, om villkoren är uppfyllda, flyttar vi bokmärkets slutnod till slutet av det sista stycket i den översta radens sista cell. Detta steg löser bokmärket effektivt.
 
 Steg 5 Rubrik: Flytta bokmärkesänden
 

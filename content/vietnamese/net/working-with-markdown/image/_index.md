@@ -13,7 +13,7 @@ Bạn đã sẵn sàng đi sâu vào thế giới của Aspose.Words cho .NET ch
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
 
 1.  Aspose.Words for .NET: Bạn có thể tải xuống từ[trang web giả định](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Bất kỳ môi trường phát triển .NET nào như Visual Studio.

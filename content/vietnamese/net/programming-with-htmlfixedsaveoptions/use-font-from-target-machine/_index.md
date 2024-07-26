@@ -2,64 +2,112 @@
 title: Sử dụng phông chữ từ máy mục tiêu
 linktitle: Sử dụng phông chữ từ máy mục tiêu
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chuyển đổi tài liệu Word sang HTML cố định bằng cách sử dụng phông chữ của máy mục tiêu với Aspose.Words cho .NET.
+description: Tìm hiểu cách sử dụng phông chữ từ máy đích trong tài liệu Word của bạn với Aspose.Words for .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tích hợp phông chữ liền mạch.
 type: docs
 weight: 10
 url: /vi/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
+## Giới thiệu
 
-Khi chuyển đổi tài liệu Word sang HTML cố định trong ứng dụng C#, bạn có thể muốn sử dụng phông chữ của máy đích để đảm bảo rằng HTML được hiển thị vẫn giữ nguyên giao diện và kiểu dáng ban đầu của tài liệu. Với thư viện Aspose.Words dành cho .NET, bạn có thể dễ dàng chỉ định chức năng này bằng cách sử dụng tùy chọn lưu HtmlFixedSaveOptions. Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn cách sử dụng mã nguồn C# của Aspose.Words cho .NET để chuyển đổi tài liệu Word sang HTML cố định bằng cách sử dụng phông chữ của máy mục tiêu bằng cách sử dụng HtmlFixedSaveOptions.
+Bạn đã sẵn sàng bước vào thế giới hấp dẫn của Aspose.Words dành cho .NET chưa? Hãy thắt dây an toàn vì chúng tôi sắp đưa bạn vào cuộc hành trình xuyên qua thế giới huyền diệu của phông chữ. Hôm nay, chúng tôi tập trung vào cách sử dụng phông chữ từ máy mục tiêu khi làm việc với tài liệu Word. Tính năng tiện lợi này đảm bảo rằng tài liệu của bạn trông chính xác như bạn dự định, bất kể nó được xem ở đâu. Bắt đầu nào!
 
-## Tìm hiểu thư viện Aspose.Words
+## Điều kiện tiên quyết
 
-Trước khi đi sâu vào mã, điều quan trọng là phải hiểu thư viện Aspose.Words cho .NET. Aspose.Words là một thư viện mạnh mẽ để tạo, chỉnh sửa, chuyển đổi và bảo vệ tài liệu Word trên các nền tảng khác nhau bao gồm .NET. Nó cung cấp nhiều tính năng để thao tác với tài liệu, chẳng hạn như chèn văn bản, thay đổi định dạng, thêm phần và hơn thế nữa.
+Trước khi chúng ta đi vào chi tiết quan trọng, hãy đảm bảo bạn có mọi thứ bạn cần:
 
-## Đang tải tài liệu Word
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Nếu chưa có, bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Bạn nên thiết lập môi trường phát triển .NET, chẳng hạn như Visual Studio.
+3. Tài liệu để làm việc: Chuẩn bị sẵn tài liệu Word để kiểm tra. Chúng tôi sẽ sử dụng tài liệu có tên "Dấu đầu dòng với phông chữ thay thế.docx".
 
-Bước đầu tiên là tải tài liệu Word bạn muốn chuyển đổi sang HTML cố định. Sử dụng lớp Tài liệu để tải tài liệu từ tệp nguồn. Đây là một ví dụ :
+Bây giờ chúng ta đã đề cập đến những điều cơ bản, hãy đi sâu vào mã!
 
-```csharp
-Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
-```
+## Nhập không gian tên
 
-Trong ví dụ này, chúng tôi tải tài liệu "Dấu đầu dòng với phông chữ thay thế.docx" nằm trong thư mục tài liệu.
-
-## Định cấu hình tùy chọn sao lưu
-
-Bước tiếp theo là định cấu hình các tùy chọn lưu để chuyển đổi sang HTML cố định. Sử dụng lớp HtmlFixedSaveOptions và đặt thuộc tính UseTargetMachineFonts thành true để báo cho Aspose.Words sử dụng phông chữ từ máy đích. Đây là cách thực hiện:
+Trước tiên, chúng ta cần nhập các không gian tên cần thiết. Đây là xương sống của dự án của chúng tôi, kết nối tất cả các điểm.
 
 ```csharp
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Chúng tôi tạo một đối tượng HtmlFixedSaveOptions mới và đặt thuộc tính UseTargetMachineFonts thành true để sử dụng phông chữ của máy đích khi chuyển đổi.
+## Bước 1: Tải tài liệu Word
 
-## Đã sửa lỗi chuyển đổi tài liệu HTML
+ Bước đầu tiên trong hướng dẫn của chúng tôi là tải tài liệu Word. Đây là nơi mà tất cả bắt đầu. Chúng tôi sẽ sử dụng`Document` class từ thư viện Aspose.Words để đạt được điều này.
 
-Bây giờ chúng ta đã định cấu hình các tùy chọn lưu, chúng ta có thể tiến hành chuyển đổi tài liệu sang HTML cố định. Sử dụng phương thức Lưu của lớp Tài liệu để lưu tài liệu đã chuyển đổi ở định dạng HTML cố định bằng cách chỉ định các tùy chọn lưu. Đây là một ví dụ :
+### Bước 1.1: Xác định đường dẫn tài liệu
 
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
-```
-
-Trong ví dụ này, chúng tôi lưu tài liệu đã chuyển đổi dưới dạng "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html" bằng cách sử dụng các tùy chọn lưu đã chỉ định.
-
-### Mã nguồn ví dụ cho HtmlFixedSaveOptions với tính năng "Sử dụng phông chữ từ máy đích" bằng Aspose.Words cho .NET
+Hãy bắt đầu bằng cách xác định đường dẫn đến thư mục tài liệu của bạn. Đây là nơi chứa tài liệu Word của bạn.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+### Bước 1.2: Tải tài liệu
+
+ Bây giờ, chúng ta tải tài liệu bằng cách sử dụng`Document` lớp học.
+
+```csharp
 // Tải tài liệu Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
+```
 
+## Bước 2: Định cấu hình tùy chọn lưu
+
+Tiếp theo, chúng ta cần cấu hình các tùy chọn lưu. Bước này rất quan trọng vì nó đảm bảo rằng phông chữ được sử dụng trong tài liệu của bạn là phông chữ từ máy đích.
+
+ Chúng ta sẽ tạo một thể hiện của`HtmlFixedSaveOptions` và thiết lập`UseTargetMachineFonts`tài sản để`true`.
+
+```csharp
 // Định cấu hình các tùy chọn sao lưu với tính năng "Sử dụng phông chữ từ máy đích"
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
+{
+    UseTargetMachineFonts = true
+};
+```
 
-// Chuyển đổi tài liệu sang HTML cố định
+## Bước 3: Lưu tài liệu
+
+Cuối cùng, chúng tôi lưu tài liệu dưới dạng tệp HTML cố định. Đây là nơi phép thuật xảy ra!
+
+ Chúng tôi sẽ sử dụng`Save` phương pháp lưu tài liệu với các tùy chọn lưu được cấu hình.
+
+```csharp
+//Chuyển đổi tài liệu sang HTML cố định
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
+## Bước 4: Xác minh đầu ra
+
+Cuối cùng nhưng không kém phần quan trọng, việc xác minh kết quả đầu ra luôn là một ý tưởng hay. Mở tệp HTML đã lưu và kiểm tra xem phông chữ có được áp dụng chính xác từ máy đích hay không.
+
+Điều hướng đến thư mục nơi bạn đã lưu tệp HTML và mở nó trong trình duyệt web.
+
+```csharp
+// Xác minh đầu ra bằng cách mở tệp HTML
+System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
+```
+
+Và bạn có nó rồi đấy! Bạn đã sử dụng thành công phông chữ từ máy đích trong tài liệu Word của mình bằng Aspose.Words for .NET.
+
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách chuyển đổi tài liệu Word sang HTML cố định bằng cách sử dụng phông chữ của máy mục tiêu với thư viện Aspose.Words cho .NET. Bằng cách làm theo các bước được cung cấp và sử dụng mã nguồn C# được cung cấp, bạn có thể dễ dàng áp dụng chức năng này trong ứng dụng C# của mình. Việc chuyển đổi sang HTML cố định với phông chữ của máy đích đảm bảo hiển thị tài liệu trung thực và nhất quán ở định dạng HTML.
+Việc sử dụng phông chữ từ máy mục tiêu sẽ đảm bảo rằng tài liệu Word của bạn trông nhất quán và chuyên nghiệp, bất kể chúng được xem ở đâu. Aspose.Words for .NET làm cho quá trình này trở nên đơn giản và hiệu quả. Bằng cách làm theo hướng dẫn này, bạn đã học cách tải tài liệu, định cấu hình các tùy chọn lưu và lưu tài liệu với cài đặt phông chữ mong muốn. Chúc mừng mã hóa!
+
+## Câu hỏi thường gặp
+
+### Tôi có thể sử dụng phương pháp này với các định dạng tài liệu khác không?
+Có, Aspose.Words for .NET hỗ trợ nhiều định dạng tài liệu khác nhau và bạn có thể định cấu hình các tùy chọn lưu tương tự cho các định dạng khác nhau.
+
+### Điều gì sẽ xảy ra nếu máy mục tiêu không có phông chữ cần thiết?
+Nếu máy mục tiêu không có phông chữ được yêu cầu thì tài liệu có thể không hiển thị như dự định. Việc nhúng phông chữ khi cần thiết luôn là một ý tưởng hay.
+
+### Làm cách nào để nhúng phông chữ vào tài liệu?
+ Việc nhúng phông chữ có thể được thực hiện bằng cách sử dụng`FontSettings` lớp trong Aspose.Words cho .NET. Tham khảo đến[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.
+
+### Có cách nào để xem trước tài liệu trước khi lưu không?
+ Có, bạn có thể sử dụng`DocumentRenderer` class để xem trước tài liệu trước khi lưu. Hãy xem Aspose.Words dành cho .NET[tài liệu](https://reference.aspose.com/words/net/) để biết thêm thông tin.
+
+### Tôi có thể tùy chỉnh thêm đầu ra HTML không?
+ Tuyệt đối! Các`HtmlFixedSaveOptions` lớp cung cấp các thuộc tính khác nhau để tùy chỉnh đầu ra HTML. Khám phá cái[tài liệu](https://reference.aspose.com/words/net/) cho tất cả các tùy chọn có sẵn.

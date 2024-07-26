@@ -13,7 +13,7 @@ Tutorialnya mencakup berbagai aspek seperti pemformatan teks, paragraf, tabel, g
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Spasi Antara Teks Asia dan Latin Dalam Dokumen Word](./space-between-asian-and-latin-text/) | Pelajari cara menyesuaikan spasi antara teks Asia dan Latin secara otomatis di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang mendetail. |
+| [Spasi Antara Teks Asia dan Latin Dalam Dokumen Word](./space-between-asian-and-latin-text/) | Pelajari cara menyesuaikan spasi antara teks Asia dan Latin secara otomatis di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci. |
 | [Grup Pemutusan Garis Tipografi Asia Dalam Dokumen Word](./asian-typography-line-break-group/) | Kuasai jeda baris tipografi Asia dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan ini memberikan tutorial langkah demi langkah untuk pemformatan yang tepat. |
 | [Pemformatan Paragraf Dalam Dokumen Word](./paragraph-formatting/) | Pelajari cara memformat paragraf dalam dokumen Word dengan mudah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. |
 | [Pemformatan Daftar Bertingkat Dalam Dokumen Word](./multilevel-list-formatting/) | Pelajari cara menguasai pemformatan daftar bertingkat di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurnakan struktur dokumen dengan mudah. |

@@ -12,4 +12,4 @@ Hướng dẫn Aspose.Words for .NET về Xử lý văn bản bằng OfficeMath 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Phương trình toán học](./math-equations/) | Tìm hiểu cách thêm phương trình toán học vào tài liệu Word của bạn bằng Aspose.Words for .NET. |
+| [Phương trình toán học](./math-equations/) | Tìm hiểu cách định cấu hình phương trình toán học trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước với các ví dụ, câu hỏi thường gặp và hơn thế nữa. |

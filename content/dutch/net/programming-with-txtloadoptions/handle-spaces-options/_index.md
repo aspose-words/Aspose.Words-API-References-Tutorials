@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- In deze laatste stap slaan we het resulterende document op in .docx-indeling met behulp van de`Save` methode en geef het pad door aan het uitvoerbestand.
+In deze laatste stap slaan we het resulterende document op in .docx-indeling met behulp van de`Save` methode en geef het pad door aan het uitvoerbestand.
 
 Nu kunt u de broncode uitvoeren om het tekstdocument te laden door opties voor de verwerking van witruimte op te geven. Het resulterende document wordt opgeslagen in de opgegeven map met de naam "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
 

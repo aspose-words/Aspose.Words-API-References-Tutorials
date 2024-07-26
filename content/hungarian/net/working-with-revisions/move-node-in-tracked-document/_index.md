@@ -89,7 +89,7 @@ builder.Writeln("Paragraph 6");
 Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 
-// Kezdje el a változatok követését.
+// Kezdje el a revíziók követését.
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 
 // Verziókat generál, amikor egy csomópontot egyik helyről a másikra helyez át.

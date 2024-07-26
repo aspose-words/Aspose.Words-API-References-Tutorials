@@ -2,94 +2,87 @@
 title: Réduisez la taille du PDF en désactivant les polices intégrées
 linktitle: Réduisez la taille du PDF en désactivant les polices intégrées
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment réduire la taille d'un PDF en désactivant l'intégration des polices Windows lors de la conversion de documents au format PDF avec Aspose.Words pour .NET.
+description: Réduisez la taille du PDF en désactivant les polices intégrées à l’aide d’Aspose.Words for .NET. Suivez notre guide étape par étape pour optimiser vos documents pour un stockage et un partage efficaces.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
+## Introduction
 
-Dans ce didacticiel, nous vous expliquerons les étapes permettant de réduire la taille d'un PDF en désactivant l'intégration des polices Windows dans un document PDF avec Aspose.Words for .NET. En désactivant l'intégration des polices, vous pouvez réduire la taille du fichier PDF généré. Suivez les étapes ci-dessous :
+Réduire la taille des fichiers PDF peut être crucial pour un stockage efficace et un partage rapide. Un moyen efficace d'y parvenir consiste à désactiver les polices intégrées, en particulier lorsque les polices standard sont déjà disponibles sur la plupart des systèmes. Dans ce didacticiel, nous verrons comment réduire la taille d'un PDF en désactivant les polices intégrées à l'aide d'Aspose.Words pour .NET. Nous passerons en revue chaque étape pour nous assurer que vous pouvez facilement mettre en œuvre cela dans vos propres projets.
 
-## Étape 1 : Chargement du document
+## Conditions préalables
 
-Commencez par télécharger le document que vous souhaitez convertir en PDF :
+Avant de plonger dans le code, assurez-vous d'avoir les éléments suivants :
+
+-  Aspose.Words for .NET : si vous ne l'avez pas déjà fait, téléchargez-le et installez-le à partir du[Lien de téléchargement](https://releases.aspose.com/words/net/).
+- Un environnement de développement .NET : Visual Studio est un choix populaire.
+- Un exemple de document Word : préparez un fichier DOCX que vous souhaitez convertir en PDF.
+
+## Importer des espaces de noms
+
+Pour commencer, assurez-vous d'avoir importé les espaces de noms nécessaires dans votre projet. Cela vous permet d'accéder aux classes et méthodes nécessaires à notre tâche.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Décomposons le processus en étapes simples et gérables. Chaque étape vous guidera tout au long de la tâche, vous assurant de comprendre ce qui se passe à chaque instant.
+
+## Étape 1 : initialisez votre document
+
+Tout d’abord, nous devons charger le document Word que vous souhaitez convertir en PDF. C'est ici que commence votre voyage.
+
+```csharp
+// Le chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Assurez-vous de spécifier le chemin correct vers votre document.
+ Ici,`dataDir` est un espace réservé pour le répertoire où se trouve votre document. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel.
 
-## Étape 2 : Définir les options d'enregistrement au format PDF
+## Étape 2 : Configurer les options d'enregistrement PDF
 
-Créez une instance de la classe PdfSaveOptions et spécifiez comment intégrer les polices :
+Ensuite, nous allons configurer les options d'enregistrement PDF. C'est ici que nous précisons que nous ne souhaitons pas embarquer les polices Windows standards.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
+// Le PDF de sortie sera enregistré sans intégrer les polices Windows standard.
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone
+};
 ```
 
-Cette option permet de désactiver l'intégration des polices Windows dans le fichier PDF généré.
+ En définissant`FontEmbeddingMode` à`EmbedNone`, nous demandons à Aspose.Words de ne pas inclure ces polices dans le PDF, réduisant ainsi la taille du fichier.
 
-## Étape 3 : Convertir le document en PDF
+## Étape 3 : Enregistrez le document au format PDF
 
- Utilisez le`Save` méthode pour convertir le document en PDF en spécifiant les options de conversion :
+Enfin, nous enregistrons le document au format PDF en utilisant les options d'enregistrement configurées. C'est le moment de vérité où votre DOCX se transforme en un PDF compact.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-Assurez-vous de spécifier le chemin correct pour enregistrer le PDF converti.
-
-### Exemple de code source pour désactiver l'intégration des polices Windows à l'aide d'Aspose.Words pour .NET
-
-Voici le code source complet pour désactiver l'intégration des polices Windows dans un document PDF avec Aspose.Words for .NET :
-
-```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Le PDF de sortie sera enregistré sans intégrer les polices Windows standard.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
-
-```
-En suivant ces étapes, vous pouvez facilement désactiver l'intégration des polices Windows dans un document PDF avec Aspose.Words pour .NET.
-
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec votre chemin de répertoire réel une fois de plus. Le PDF de sortie sera désormais enregistré dans le répertoire spécifié sans polices standard intégrées.
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons appris comment réduire la taille d'un fichier PDF en désactivant l'intégration des polices Windows à l'aide d'Aspose.Words pour .NET. En désactivant l'intégration des polices, vous pouvez réduire la taille du fichier PDF généré, facilitant ainsi le stockage, le partage et le transfert de fichiers. Cependant, il est important de noter que la désactivation de l'intégration des polices Windows peut entraîner des modifications de l'apparence et du formatage du document PDF final. Assurez-vous de prendre en compte ces conséquences lorsque vous utilisez cette fonctionnalité. N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words for .NET pour optimiser la génération de vos fichiers PDF.
+En suivant ces étapes, vous pouvez réduire considérablement la taille de vos fichiers PDF. La désactivation des polices intégrées est un moyen simple mais efficace de rendre vos documents plus légers et plus faciles à partager. Aspose.Words for .NET rend ce processus transparent, vous garantissant ainsi d'optimiser vos fichiers avec un minimum d'effort.
 
-### Questions fréquemment posées
+## FAQ
 
-#### Q : Qu'est-ce qui désactive l'intégration des polices Windows dans un document PDF et pourquoi est-ce important ?
-R : La désactivation de l'intégration des polices Windows dans un document PDF consiste à empêcher les polices Windows d'être incluses dans le fichier PDF généré. Cela réduit la taille du fichier PDF en supprimant les données de police Windows intégrées. Cela peut être important pour réduire la taille des fichiers PDF, ce qui peut faciliter leur stockage, leur partage et leur transfert plus rapide.
+### Pourquoi devrais-je désactiver les polices intégrées dans un PDF ?
+La désactivation des polices intégrées peut réduire considérablement la taille du fichier PDF, ce qui le rend plus efficace pour le stockage et plus rapide à partager.
 
-#### Q : Comment puis-je désactiver l'intégration des polices Windows dans un document PDF à l'aide d'Aspose.Words pour .NET ?
-R : Pour désactiver l'intégration des polices Windows dans un document PDF à l'aide d'Aspose.Words for .NET, procédez comme suit :
+### Le PDF s'affichera-t-il toujours correctement sans les polices intégrées ?
+Oui, tant que les polices sont standards et disponibles sur le système sur lequel le PDF est visualisé, il s'affichera correctement.
 
- Chargez le document que vous souhaitez convertir en PDF à l'aide du`Document` chemin de classe et de document.
+### Puis-je intégrer de manière sélective uniquement certaines polices dans un PDF ?
+Oui, Aspose.Words for .NET vous permet de personnaliser les polices intégrées, offrant ainsi une flexibilité dans la manière dont vous réduisez la taille du fichier.
 
- Créez une instance du`PdfSaveOptions` classe et définir le`FontEmbeddingMode`propriété à`PdfFontEmbeddingMode.EmbedNone`. Cela désactive l'intégration des polices Windows dans le fichier PDF généré.
+### Ai-je besoin d’Aspose.Words for .NET pour désactiver les polices intégrées dans les PDF ?
+Oui, Aspose.Words for .NET fournit les fonctionnalités nécessaires pour configurer les options d'intégration de polices dans les PDF.
 
- Utilisez le`Save` méthode du`Document` objet pour convertir le document en PDF en spécifiant les options de conversion configurées précédemment.
-
-#### Q : Quels sont les avantages de désactiver l’intégration des polices Windows dans un document PDF ?
-R : Les avantages de la désactivation de l'intégration des polices Windows dans un document PDF sont les suivants :
-
-Taille du fichier PDF réduite : en désactivant l'intégration des polices Windows, les données de police Windows intégrées sont supprimées, réduisant ainsi la taille du fichier PDF généré.
-
-Stockage plus facile : les fichiers PDF plus petits sont plus faciles à stocker, à enregistrer et à transférer.
-
-Partage et transfert plus rapides : les fichiers PDF plus petits peuvent être partagés et transférés plus rapidement, économisant ainsi du temps et des ressources.
-
-#### Q : Quelles sont les conséquences de la désactivation de l'intégration des polices Windows dans un document PDF ?
-R : La désactivation de l'intégration des polices Windows dans un document PDF peut entraîner les conséquences suivantes :
-
-Perte d'apparence et de formatage : si les polices Windows spécifiées dans le document ne sont pas disponibles sur le système sur lequel le PDF est ouvert, des polices de remplacement seront utilisées, ce qui peut entraîner une apparence et un formatage incorrects. de forme différente de celles attendues.
-
-Problèmes de lisibilité : si les polices de remplacement utilisées ne sont pas aussi lisibles que les polices d'origine, cela peut affecter la lisibilité du texte dans le document PDF.
+### Comment puis-je obtenir de l'aide si je rencontre des problèmes ?
+ Vous pouvez visiter le[Forum d'entraide](https://forum.aspose.com/c/words/8) pour obtenir de l'aide concernant tout problème que vous rencontrez.

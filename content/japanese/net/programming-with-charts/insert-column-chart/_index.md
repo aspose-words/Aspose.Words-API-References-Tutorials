@@ -16,7 +16,7 @@ url: /ja/net/programming-with-charts/insert-column-chart/
 始める前に、以下のものを用意してください。
 
 - C# プログラミングと .NET 環境に関する基本的な知識。
-- 開発環境にAspose.Words for .NETがインストールされていること。ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- 開発環境にAspose.Words for .NETをインストールします。ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
 - テキスト エディターまたは Visual Studio などの統合開発環境 (IDE)。
 
 ## 名前空間のインポート

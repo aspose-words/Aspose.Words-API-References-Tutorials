@@ -2,7 +2,7 @@
 title: Ne mentse el a képet
 linktitle: Ne mentse el a képet
 second_title: Aspose.Words Document Processing API
-description: Részletes útmutatónkból megtudhatja, hogyan kezelheti a képjeleket az Aspose.Words for .NET-ben. Egyszerűsítse a dokumentumkezelést és hozzon létre professzionális Word dokumentumokat könnyedén.
+description: Részletes útmutatónkból megtudhatja, hogyan kell kezelni a képjeleket az Aspose.Words for .NET-ben. Egyszerűsítse a dokumentumkezelést és hozzon létre professzionális Word dokumentumokat könnyedén.
 type: docs
 weight: 10
 url: /hu/net/programming-with-docsaveoptions/do-not-save-picture-bullet/

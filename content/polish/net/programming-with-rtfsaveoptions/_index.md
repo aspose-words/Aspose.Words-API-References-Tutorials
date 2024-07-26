@@ -16,4 +16,4 @@ Korzystając z samouczków Aspose.Words dla .NET, będziesz mógł łatwo zarzą
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Zapisywanie obrazów jako Wmf](./saving-images-as-wmf/) | Dowiedz się, jak zapisywać obrazy w formacie WMF podczas konwersji do formatu RTF za pomocą Aspose.Words dla .NET. |
+| [Zapisywanie obrazów jako Wmf](./saving-images-as-wmf/) | Dowiedz się, jak zapisywać obrazy w formacie WMF w dokumentach Word przy użyciu Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. Zwiększ zgodność dokumentów i jakość obrazu. |

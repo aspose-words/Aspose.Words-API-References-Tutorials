@@ -65,4 +65,4 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde bir tabloyu kayan konumda nasıl konumlandıracağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve verilen C# kodunu uygulayarak, Word belgelerinizdeki kayan tabloların konumunu ve hizalamasını programlı olarak kontrol edebilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesinde bir tabloyu kayan konumda nasıl konumlandıracağımızı öğrendik. Bu adım adım kılavuzu izleyerek ve sağlanan C# kodunu uygulayarak, Word belgelerinizdeki kayan tabloların konumunu ve hizalamasını programlı olarak kontrol edebilirsiniz.

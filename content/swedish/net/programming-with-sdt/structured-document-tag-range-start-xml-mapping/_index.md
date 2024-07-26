@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Steg 2: Ladda dokumentet och skapa XML-del
- Ladda Word-dokumentet med hjälp av`Document`konstruktor, skickar sökvägen till dokumentet som en parameter. Skapa en XML-del som innehåller de data du vill visa i den strukturerade dokumenttaggen.
+ Ladda Word-dokumentet med hjälp av`Document` konstruktor, skickar sökvägen till dokumentet som en parameter. Skapa en XML-del som innehåller de data du vill visa i den strukturerade dokumenttaggen.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -42,7 +42,7 @@ sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 ```
 
 ## Steg 4: Spara dokumentet
- Spara det ändrade dokumentet i den angivna katalogen med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx".
+ Spara det ändrade dokumentet i den angivna katalogen med hjälp av`Save`metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Skapa en StructuredDocumentTag som visar innehållet i vår CustomXmlPart i dokumentet.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Om vi ställer in en mappning för vår StructuredDocumentTag,
-	//den visar bara en del av CustomXmlPart som XPath pekar på.
+	// den visar bara en del av CustomXmlPart som XPath pekar på.
 	// Denna XPath kommer att peka på innehållets andra "<text>"-element i det första "<root>"-elementet i vår CustomXmlPart.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

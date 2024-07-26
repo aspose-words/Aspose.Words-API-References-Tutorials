@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-tables/combine-rows/
 ---
 
-W tym samouczku dowiemy się, jak używać Aspose.Words dla .NET do łączenia wierszy tabel w dokumencie programu Word. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł programowo manipulować i łączyć wiersze tabeli w dokumentach programu Word.
+tym samouczku dowiemy się, jak używać Aspose.Words dla .NET do łączenia wierszy tabel w dokumencie programu Word. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł programowo manipulować i łączyć wiersze tabeli w dokumentach programu Word.
 
 ## Krok 1: Konfiguracja projektu
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
@@ -72,4 +72,4 @@ Pamiętaj, aby określić poprawną ścieżkę i nazwę pliku dokumentu wyjścio
 ```
 
 ## Wniosek
-tym samouczku nauczyliśmy się łączyć wiersze tabel w dokumencie programu Word za pomocą Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz programowo manipulować wierszami tabeli w dokumentach programu Word. Ta funkcja umożliwia efektywne scalanie i porządkowanie danych w tabeli.
+W tym samouczku nauczyliśmy się łączyć wiersze tabel w dokumencie programu Word za pomocą Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz programowo manipulować wierszami tabeli w dokumentach programu Word. Ta funkcja umożliwia efektywne scalanie i porządkowanie danych w tabeli.

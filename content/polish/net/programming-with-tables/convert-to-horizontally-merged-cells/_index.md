@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
 
-W tym samouczku dowiemy się, jak używać Aspose.Words dla .NET do konwertowania komórek tabeli na komórki scalone poziomo w dokumencie programu Word. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł programowo manipulować komórkami tabeli w dokumentach programu Word.
+tym samouczku dowiemy się, jak używać Aspose.Words dla .NET do konwertowania komórek tabeli na komórki scalone poziomo w dokumencie programu Word. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł programowo manipulować komórkami tabeli w dokumentach programu Word.
 
 ## Krok 1: Konfiguracja projektu
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
@@ -53,4 +53,4 @@ table. ConvertToHorizontallyMergedCells();
 ```
 
 ## Wniosek
-W tym samouczku nauczyliśmy się, jak konwertować komórki tabeli na komórki scalone poziomo w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz programowo manipulować komórkami tabeli w dokumentach programu Word. Ta funkcja pozwala zarządzać danymi i organizować je w elastyczny i spersonalizowany sposób w formie tabeli.
+tym samouczku nauczyliśmy się, jak konwertować komórki tabeli na komórki scalone poziomo w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku i wdrażając dostarczony kod C#, możesz programowo manipulować komórkami tabeli w dokumentach programu Word. Ta funkcja pozwala zarządzać danymi i organizować je w elastyczny i spersonalizowany sposób w formie tabeli.

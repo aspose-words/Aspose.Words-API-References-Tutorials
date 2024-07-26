@@ -2,94 +2,84 @@
 title: Vložení podmnožin písem do dokumentu PDF
 linktitle: Vložení podmnožin písem do dokumentu PDF
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce vkládáním podmnožin písem do dokumentu PDF pomocí Aspose.Words for .NET.
+description: Zmenšete velikost souboru PDF vložením pouze nezbytných podmnožin písem pomocí Aspose.Words for .NET. Chcete-li efektivně optimalizovat soubory PDF, postupujte podle našeho podrobného průvodce.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
+## Úvod
 
-Tento článek obsahuje podrobného průvodce, jak používat funkci vkládání podmnožiny písem s Aspose.Words pro .NET. Každou část kódu si podrobně vysvětlíme. Na konci tohoto tutoriálu budete schopni porozumět tomu, jak vložit podmnožiny písem do dokumentu a vygenerovat PDF obsahující pouze glyfy použité v dokumentu.
+Všimli jste si někdy, že některé soubory PDF jsou mnohem větší než jiné, i když obsahují podobný obsah? Viník často leží v písmech. Vložení písem do PDF zajistí, že bude vypadat stejně na jakémkoli zařízení, ale také může zvětšit velikost souboru. Naštěstí Aspose.Words for .NET nabízí šikovnou funkci pro vložení pouze nezbytných podmnožin písem, takže vaše PDF budou štíhlé a efektivní. Tento tutoriál vás provede procesem krok za krokem.
 
-Než začnete, ujistěte se, že jste ve svém projektu nainstalovali a nakonfigurovali knihovnu Aspose.Words for .NET. Knihovnu a pokyny k instalaci najdete na webu Aspose.
+## Předpoklady
 
-## Krok 1: Definujte adresář dokumentů
+Než začneme, ujistěte se, že máte následující:
 
- Chcete-li začít, musíte definovat cestu k adresáři, kde jsou umístěny vaše dokumenty. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+-  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+- Prostředí .NET: Ujistěte se, že máte funkční vývojové prostředí .NET.
+- Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
+
+## Importovat jmenné prostory
+
+Chcete-li používat Aspose.Words pro .NET, musíte do projektu importovat potřebné jmenné prostory. Přidejte je do horní části souboru C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Krok 2: Nahrajte dokument
+## Krok 1: Vložte dokument
 
-Dále musíme načíst dokument, který chceme zpracovat. V tomto příkladu předpokládáme, že dokument se nazývá "Rendering.docx" a je umístěn v určeném adresáři dokumentů.
+ Nejprve musíme načíst dokument Word, který chceme převést do PDF. To se provádí pomocí`Document` třídy poskytuje Aspose.Words.
 
 ```csharp
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Krok 3: Nakonfigurujte možnosti uložení jako PDF
+ Tento fragment kódu načte dokument umístěný na`dataDir` . Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
 
- Chcete-li vytvořit PDF obsahující pouze podmnožiny písem použitých v dokumentu, musíme nakonfigurovat`PdfSaveOptions` objekt s`EmbedFullFonts` vlastnost nastavena na`false`.
+## Krok 2: Nakonfigurujte možnosti uložení PDF
+
+ Dále nakonfigurujeme`PdfSaveOptions` abyste zajistili, že budou vloženy pouze nezbytné podmnožiny písem. Nastavením`EmbedFullFonts` na`false`, řekneme Aspose.Words, aby vložil pouze glyfy použité v dokumentu.
 
 ```csharp
+// Výstupní PDF bude obsahovat podmnožiny písem v dokumentu.
+// Do písem PDF jsou zahrnuty pouze glyfy použité v dokumentu.
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## Krok 4: Uložte dokument jako PDF s podmnožinami písem
+Tento malý, ale zásadní krok pomáhá výrazně snížit velikost souboru PDF.
 
- Nakonec můžeme dokument uložit jako PDF pomocí podmnožin písem. Zadejte název výstupního souboru a`saveOptions` objekt, který jsme nakonfigurovali v předchozím kroku.
+## Krok 3: Uložte dokument jako PDF
 
-```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-```
-
-To je vše ! Úspěšně jste vložili podmnožiny písem do dokumentu a pomocí Aspose.Words for .NET vygenerovali PDF obsahující pouze glyfy použité v dokumentu.
-
-### Ukázka zdrojového kódu pro vkládání podmnožin písem pomocí Aspose.Words pro .NET
+ Nakonec dokument uložíme jako PDF pomocí`Save` metoda, použití nakonfigurovaného`PdfSaveOptions`.
 
 ```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Výstupní PDF bude obsahovat podmnožiny písem v dokumentu.
-	// Do písem PDF jsou zahrnuty pouze glyfy použité v dokumentu.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);
 ```
+
+ Tento kód vygeneruje soubor PDF s názvem`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf` v zadaném adresáři s vloženými pouze nezbytnými podmnožinami písem.
 
 ## Závěr
 
-V tomto tutoriálu jsme se naučili, jak vložit podmnožiny písem do dokumentu PDF pomocí Aspose.Words for .NET. Vkládání podmnožin písem pomáhá zmenšit velikost souboru PDF při zachování vzhledu dokumentu použitím pouze skutečně použitých znaků. To zajišťuje lepší kompatibilitu a výkon při prohlížení a tisku PDF. Neváhejte dále prozkoumat funkce Aspose.Words pro .NET, abyste optimalizovali generování vašich dokumentů PDF s vloženými podmnožinami písem.
+tady to máte! Pomocí těchto jednoduchých kroků můžete efektivně zmenšit velikost souborů PDF vložením pouze nezbytných podmnožin písem pomocí Aspose.Words for .NET. To nejen šetří úložný prostor, ale také zajišťuje rychlejší načítání a lepší výkon, zejména u dokumentů s rozsáhlými písmy.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co je vkládání podmnožin písem do dokumentu PDF?
-Odpověď: Vložení podmnožin písem do dokumentu PDF je proces, kdy se zahrnou pouze glyfy použité v dokumentu, nikoli všechna kompletní písma. Tím se zmenšuje velikost souboru PDF tím, že obsahuje pouze data písma nezbytná k zobrazení znaků skutečně použitých v dokumentu.
+### Proč bych měl do PDF vkládat pouze podmnožiny písem?
+Vložení pouze nezbytných podmnožin písem může výrazně snížit velikost souboru PDF, aniž by došlo ke snížení vzhledu a čitelnosti dokumentu.
 
-#### Otázka: Jaký je rozdíl mezi vkládáním celých písem a vkládáním podmnožin písem?
-Odpověď: Úplné vložení písem znamená zahrnutí všech písem použitých v dokumentu do souboru PDF, což zajišťuje, že dokument bude zobrazen přesně tak, jak byl navržen, ale může zvětšit velikost souboru PDF. Naproti tomu vkládání podmnožin písem obsahuje pouze glyfy použité v dokumentu, čímž se zmenšuje velikost souboru PDF, ale omezuje se možnost přesně replikovat vzhled dokumentu, pokud se později přidají další znaky.
+### Mohu se v případě potřeby vrátit k vkládání plných písem?
+ Ano můžeš. Jednoduše nastavte`EmbedFullFonts`majetek do`true` v`PdfSaveOptions`.
 
-#### Otázka: Jak mohu vložit podmnožiny písem do dokumentu PDF pomocí Aspose.Words for .NET?
-Odpověď: Chcete-li vložit podmnožiny písem do dokumentu PDF pomocí Aspose.Words pro .NET, postupujte takto:
+### Podporuje Aspose.Words for .NET další funkce pro optimalizaci PDF?
+Absolutně! Aspose.Words for .NET nabízí řadu možností pro optimalizaci souborů PDF, včetně komprese obrázků a odstranění nepoužívaných objektů.
 
- Nastavte cestu k adresáři dokumentu nahrazením`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+### Jaké typy písem lze vložit pomocí Aspose.Words pro .NET?
+Aspose.Words for .NET podporuje vkládání podmnožin pro všechna písma TrueType použitá v dokumentu.
 
- Vložte dokument, který chcete zpracovat, pomocí`Document` třída a cesta k dokumentu.
-
- Nakonfigurujte možnosti uložení PDF vytvořením instance souboru`PdfSaveOptions` třídy a nastavení`EmbedFullFonts`majetek do`false`Tím zajistíte, že do souboru PDF budou zahrnuty pouze podmnožiny písem použité v dokumentu.
-
- Uložte dokument ve formátu PDF s vloženými podmnožinami písem pomocí`Save` metoda`Document` objekt s uvedením názvu výstupního souboru a dříve nakonfigurovaných voleb uložení.
-
-#### Otázka: Jaké jsou výhody vkládání podmnožin písem do dokumentu PDF?
-Odpověď: Výhody vkládání podmnožin písem do dokumentu PDF jsou:
-
-Zmenšená velikost souboru PDF: Zahrnutím pouze glyfů použitých v dokumentu se velikost souboru PDF zmenší ve srovnání s vložením plných písem.
-
-Zachování vzhledu dokumentu: Podmnožiny písem obsažené v souboru PDF umožňují reprodukovat vzhled dokumentu pouze pomocí skutečně použitých znaků.
-
-Kompatibilita s omezeními licence: Vkládání podmnožin písem může být preferováno v případech, kdy plná písma nelze legálně vložit z důvodu licenčních omezení.
+### Jak mohu ověřit, která písma jsou vložena do mého PDF?
+Soubor PDF můžete otevřít v aplikaci Adobe Acrobat Reader a zkontrolovat vlastnosti na kartě Písma, abyste viděli vložená písma.

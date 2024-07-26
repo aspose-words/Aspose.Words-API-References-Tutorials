@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 2: Vložte obrazový tvar
- Použijte`InsertImage` metoda`DocumentBuilder`objekt pro vložení tvaru obrázku do dokumentu. Jako parametr zadejte cestu k souboru obrázku.
+ Použijte`InsertImage` metoda`DocumentBuilder` objekt pro vložení tvaru obrázku do dokumentu. Jako parametr zadejte cestu k souboru obrázku.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

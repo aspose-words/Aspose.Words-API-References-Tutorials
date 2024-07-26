@@ -2,94 +2,86 @@
 title: Optimalkan Ukuran PDF dengan Lewati Font Arial & Times Roman yang Tersemat
 linktitle: Optimalkan Ukuran PDF dengan Lewati Font Arial & Times Roman yang Tersemat
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk menghasilkan PDF yang dioptimalkan tanpa menyematkan font Arial dan Times Roman dengan Aspose.Words untuk .NET.
+description: Optimalkan ukuran PDF dengan melewatkan font Arial dan Times Roman yang tertanam menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah ini untuk menyederhanakan file PDF Anda.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
+## Perkenalan
 
-Artikel ini memberikan panduan langkah demi langkah tentang cara menggunakan fitur untuk mengoptimalkan ukuran PDF dengan melewatkan font Arial dan Times Roman yang tertanam ke ukuran metafile dengan Aspose.Words untuk .NET. Kami akan menjelaskan setiap bagian kode secara detail. Di akhir tutorial ini, Anda akan dapat memahami cara mengonfigurasi opsi mode penyematan font dalam dokumen dan menghasilkan PDF tanpa menyematkan font Arial dan Times Roman.
+Pernahkah Anda mendapati diri Anda berada dalam situasi di mana ukuran file PDF Anda terlalu besar? Ini seperti berkemas untuk liburan dan menyadari koper Anda penuh sesak. Anda tahu Anda perlu menurunkan berat badan, tapi apa yang Anda lepaskan? Saat bekerja dengan file PDF, terutama yang dikonversi dari dokumen Word, font yang disematkan dapat membuat ukuran file Anda membengkak. Untungnya, Aspose.Words untuk .NET memberikan solusi ramping untuk menjaga PDF Anda tetap ramping dan rapi. Dalam tutorial ini, kita akan mendalami cara mengoptimalkan ukuran PDF Anda dengan melewatkan font Arial dan Times Roman yang tertanam. Mari kita mulai!
 
-Sebelum memulai, pastikan Anda telah menginstal dan mengonfigurasi pustaka Aspose.Words untuk .NET di proyek Anda. Anda dapat menemukan perpustakaan dan petunjuk instalasi di situs web Aspose.
+## Prasyarat
 
-## Langkah 1: Tentukan direktori dokumen
+Sebelum kita masuk ke seluk beluknya, ada beberapa hal yang Anda perlukan:
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan yang kuat ini. Jika tidak, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Pemahaman dasar tentang C#: Ini akan membantu Anda mengikuti cuplikan kode.
+- Dokumen Word: Kami akan menggunakan contoh dokumen untuk mendemonstrasikan prosesnya. 
 
- Untuk memulai, Anda perlu menentukan jalur ke direktori tempat dokumen Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+## Impor Namespace
+
+Hal pertama yang pertama, pastikan Anda telah mengimpor namespace yang diperlukan. Ini menetapkan tahapan untuk mengakses fungsionalitas Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Baiklah, mari kita uraikan prosesnya langkah demi langkah.
+
+## Langkah 1: Siapkan Lingkungan Anda
+
+Untuk memulai, Anda perlu menyiapkan lingkungan pengembangan Anda. Buka C# IDE favorit Anda (seperti Visual Studio) dan buat proyek baru.
+
+## Langkah 2: Muat Dokumen Word
+
+Langkah selanjutnya adalah memuat dokumen Word yang ingin Anda konversi ke PDF. Pastikan dokumen Anda berada di direktori yang benar.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Langkah 2: Unggah dokumen
-
-Selanjutnya, kita perlu memuat dokumen yang ingin kita proses. Dalam contoh ini, kami berasumsi bahwa dokumen tersebut bernama "Rendering.docx" dan terletak di direktori dokumen yang ditentukan.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Langkah 3: Konfigurasikan opsi simpan sebagai PDF dengan penyematan font
+ Dalam cuplikan ini, ganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur ke direktori dokumen Anda.
 
- Untuk melewati penyematan font Arial dan Times Roman di PDF yang dihasilkan, kita perlu mengkonfigurasi`PdfSaveOptions` objek dan atur`FontEmbeddingMode`properti ke`PdfFontEmbeddingMode.EmbedAll`.
+## Langkah 3: Konfigurasikan Opsi Penyimpanan PDF
+
+Sekarang, kita perlu mengonfigurasi opsi penyimpanan PDF untuk mengontrol bagaimana font disematkan. Secara default, semua font tertanam, yang dapat meningkatkan ukuran file. Kami akan mengubah pengaturan ini.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll
+};
 ```
 
-## Langkah 4: Simpan dokumen sebagai PDF tanpa font yang disematkan
+## Langkah 4: Simpan Dokumen sebagai PDF
 
-Terakhir, kita dapat menyimpan dokumen dalam format PDF menggunakan opsi penyimpanan yang dikonfigurasi sebelumnya.
+Terakhir, simpan dokumen sebagai PDF dengan opsi penyimpanan yang ditentukan. Ini adalah dimana keajaiban terjadi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-Itu saja ! Anda telah berhasil membuat PDF tanpa menyematkan font Arial dan Times Roman menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk melewati font Arial dan Times Roman yang tertanam pada ukuran metafile dengan Aspose.Words untuk .NET
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
-   
-```
+Perintah ini menyimpan dokumen Anda sebagai PDF bernama "OptimizedPDF.pdf" di direktori yang ditentukan.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelaskan cara menonaktifkan penyematan font Arial dan Times Roman dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang diuraikan, Anda dapat membuat file PDF tanpa menyematkan font khusus ini, yang dapat membantu mengurangi ukuran file dan memastikan kompatibilitas dokumen yang lebih baik di berbagai platform. Pastikan untuk mempertimbangkan konsekuensi menonaktifkan penyematan font saat menggunakan fitur ini. Jangan ragu untuk menjelajahi lebih banyak fitur Aspose.Words untuk .NET untuk mengoptimalkan pembuatan file PDF Anda.
+Dan itu dia! Anda baru saja mempelajari cara mengoptimalkan ukuran file PDF dengan melewatkan penyematan font Arial dan Times Roman menggunakan Aspose.Words untuk .NET. Perubahan sederhana ini dapat mengurangi ukuran file Anda secara signifikan, membuatnya lebih mudah untuk dibagikan dan disimpan. Ini seperti pergi ke gym untuk mengambil PDF Anda, mengurangi beban yang tidak perlu sambil menjaga semua hal penting tetap utuh.
 
-### Pertanyaan yang Sering Diajukan
+## FAQ
 
-#### T: Apa yang dimaksud dengan menonaktifkan penyematan font Arial dan Times Roman dalam dokumen PDF dan mengapa ini penting?
-A: Menonaktifkan penyematan font Arial dan Times Roman dalam dokumen PDF adalah proses tidak menyertakan font tersebut dalam file PDF yang dihasilkan. Hal ini penting untuk mengurangi ukuran file PDF dengan menghindari penyertaan font yang sudah umum tersedia di sistem pembaca PDF. Ini juga dapat membantu memastikan kompatibilitas yang lebih baik dan tampilan dokumen PDF yang konsisten di berbagai perangkat dan platform.
+### Mengapa saya harus melewatkan penyematan font Arial dan Times Roman?
+Melewatkan font-font umum ini dapat mengurangi ukuran file PDF Anda, karena sebagian besar sistem sudah menginstal font-font ini.
 
-#### T: Bagaimana cara mengonfigurasi Aspose.Words untuk .NET agar tidak menyematkan font Arial dan Times Roman dalam dokumen PDF?
-J: Untuk mengonfigurasi Aspose.Words untuk .NET agar tidak menyematkan font Arial dan Times Roman dalam dokumen PDF, ikuti langkah-langkah berikut:
+### Apakah ini akan mempengaruhi tampilan PDF saya?
+Tidak, itu tidak akan terjadi. Karena Arial dan Times Roman adalah font standar, tampilannya tetap konsisten di berbagai sistem.
 
- Atur jalur direktori tempat dokumen Anda berada dengan mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya dari direktori dokumen Anda.
+### Bisakah saya melewatkan penyematan font lain juga?
+Ya, Anda dapat mengonfigurasi opsi penyimpanan untuk melewati penyematan font lain jika diperlukan.
 
- Muat dokumen yang ingin Anda proses menggunakan`Document` kelas dan jalur dokumen yang ditentukan.
+### Apakah Aspose.Words untuk .NET gratis?
+Aspose.Words untuk .NET menawarkan uji coba gratis yang dapat Anda unduh[Di Sini](https://releases.aspose.com/) , namun untuk akses penuh, Anda perlu membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
- Buat sebuah instance dari`PdfSaveOptions` kelas dan atur`FontEmbeddingMode`properti ke`PdfFontEmbeddingMode.EmbedAll`. Ini akan menyematkan semua font kecuali Arial dan Times Roman dalam file PDF yang dihasilkan.
-
- Menggunakan`Save` metode`Document` objek untuk menyimpan dokumen dalam format PDF dengan menentukan opsi penyimpanan yang dikonfigurasi sebelumnya.
-
-#### T: Apa manfaat menonaktifkan penyematan font Arial dan Times Roman di dokumen PDF?
-A: Keuntungan menonaktifkan penyematan font Arial dan Times Roman di dokumen PDF adalah:
-
-Pengurangan ukuran file PDF: Dengan menghindari penyematan font yang umum tersedia seperti Arial dan Times Roman, ukuran file PDF dapat diperkecil, sehingga lebih mudah untuk menyimpan, berbagi, dan mentransfer file.
-
-Kompatibilitas yang lebih baik: Dengan menggunakan font yang umumnya tersedia di sistem pembaca PDF, Anda memastikan kompatibilitas dan tampilan dokumen yang lebih baik di berbagai perangkat dan platform.
-
-#### T: Apa konsekuensi dari menonaktifkan penyematan font Arial dan Times Roman di dokumen PDF?
-A: Akibat dari menonaktifkan penyematan font Arial dan Times Roman pada dokumen PDF adalah sebagai berikut:
-
-Tampilan berbeda: Jika font Arial dan Times Roman tidak tersedia di sistem tempat PDF dibuka, font pengganti akan digunakan, yang mungkin menghasilkan tampilan berbeda dari yang diharapkan.
-
-Masalah keterbacaan: Font pengganti yang digunakan mungkin tidak dapat dibaca seperti font aslinya, sehingga dapat mempengaruhi keterbacaan dokumen.
+### Di mana saya dapat menemukan tutorial lainnya tentang Aspose.Words untuk .NET?
+ Anda dapat menemukan dokumentasi dan tutorial yang komprehensif[Di Sini](https://reference.aspose.com/words/net/).

@@ -11,7 +11,7 @@ url: /id/net/programming-with-sdt/current-state-of-check-box/
 Tutorial ini menjelaskan cara mengambil dan mengatur status kontrol konten kotak centang saat ini di dokumen Word menggunakan Aspose.Words untuk .NET. Anda dapat mencentang atau menghapus centang pada kotak berdasarkan statusnya saat ini.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
+Untuk mengikuti tutorial ini, Anda perlu memiliki yang berikut ini:
 
 - Aspose.Words untuk perpustakaan .NET diinstal.
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
@@ -33,7 +33,7 @@ StructuredDocumentTag sdtCheckBox =
 ```
 
 ## Langkah 3: Centang atau Hapus Centang Kotak Berdasarkan Statusnya Saat Ini
- Periksa apakah tag dokumen terstruktur yang diambil bertipe`SdtType.Checkbox` . Jika ya, atur`Checked` properti kontrol konten untuk`true` untuk mencentang kotak. Jika tidak, Anda dapat membiarkannya tidak dicentang.
+ Periksa apakah tag dokumen terstruktur yang diambil bertipe`SdtType.Checkbox` . Jika ya, atur`Checked` properti kontrol konten ke`true` untuk mencentang kotak. Jika tidak, Anda dapat membiarkannya tidak dicentang.
 
 ```csharp
 if (sdtCheckBox.SdtType == SdtType.Checkbox)

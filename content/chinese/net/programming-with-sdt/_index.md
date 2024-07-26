@@ -16,13 +16,13 @@ Aspose.Words for .NET 教程可让您深入探索库的功能，并学习如何�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [复选框类型内容控制](./check-box-type-content-control/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建复选框类型内容控件。 |
+| [复选框类型内容控制](./check-box-type-content-control/) | 通过这个详细的分步教程学习如何使用 Aspose.Words for .NET 在 Word 文档中添加复选框类型内容控件。 |
 | [复选框的当前状态](./current-state-of-check-box/) | 了解如何使用 Aspose.Words for .NET 检索和设置 Word 文档中复选框内容控件的当前状态。 |
 | [修改内容控件](./modify-content-controls/) | 了解如何使用 Aspose.Words for .NET 修改 Word 文档中内容控件内的文本、下拉列表和图像。 |
 | [组合框内容控件](./combo-box-content-control/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建组合框内容控件。 |
 | [富文本框内容控件](./rich-text-box-content-control/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中创建富文本框内容控件，以实现文本格式和样式设置。 |
 | [设置内容控件颜色](./set-content-control-color/) | 了解如何使用 Aspose.Words for .NET 设置 Word 文档中内容控件的颜色并自定义其外观。 |
-| [清除内容控制](./clear-contents-control/) | 了解如何使用 Aspose.Words for .NET 清除 Word 文档中控件的内容。 |
+| [清除内容控制](./clear-contents-control/) | 通过我们的分步指南了解如何使用 Aspose.Words for .NET 清除 Word 文档中的内容控制。 |
 | [将 SDT 绑定到自定义 Xml 部分](./bind-sdt-to-custom-xml-part/) | 了解如何使用 Aspose.Words for .NET 将 SDT 绑定到自定义 Xml 部分。 |
 | [设置内容控件样式](./set-content-control-style/) | 了解如何使用 Aspose.Words for .NET 设置 Word 文档中内容控件的样式，应用一致的格式。 |
 | [创建映射到自定义 XML 部分的表重复部分](./creating-table-repeating-section-mapped-to-custom-xml-part/) | 了解如何使用 Aspose.Words for .NET 创建一个表格，其中重复部分映射到 Word 文档中的 CustomXmlPart。 |

@@ -2,99 +2,95 @@
 title: Sematkan Font dalam Dokumen PDF
 linktitle: Sematkan Font dalam Dokumen PDF
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk Menyematkan Font dalam PDF menggunakan Aspose.Words untuk .NET.
+description: Sematkan font dalam dokumen PDF dengan mudah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Pastikan tampilan konsisten di semua perangkat.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
+## Perkenalan
 
-Artikel ini memberikan panduan langkah demi langkah tentang cara menggunakan font yang disematkan di fitur dokumen PDF Aspose.Words untuk .NET. Kami akan menelusuri cuplikan kode dan menjelaskan setiap bagian secara detail. Di akhir tutorial ini, Anda akan dapat memahami cara menyematkan semua font dalam dokumen dan menghasilkan PDF dengan font yang disematkan menggunakan Aspose.Words untuk .NET.
+Hai, penggemar teknologi! Pernahkah Anda kesulitan mencoba menyematkan font dalam dokumen PDF menggunakan Aspose.Words untuk .NET? Nah, Anda berada di tempat yang tepat! Dalam tutorial ini, kita mendalami seluk beluk penyematan font di PDF Anda. Baik Anda seorang pemula atau profesional berpengalaman, panduan ini akan memandu Anda melalui setiap langkah dengan cara yang sederhana dan menarik. Pada akhirnya, Anda akan ahli dalam memastikan PDF Anda tetap mempertahankan tampilan dan nuansa yang diinginkan, di mana pun mereka melihatnya. Jadi, mari kita mulai, ya?
 
-Sebelum kita mulai, pastikan Anda telah menginstal dan menyiapkan pustaka Aspose.Words untuk .NET di proyek Anda. Anda dapat menemukan perpustakaan dan petunjuk instalasi di situs web Aspose.
+## Prasyarat
 
-## Langkah 1: Tentukan jalur direktori dokumen
+Sebelum kita masuk ke panduan langkah demi langkah, pastikan Anda memiliki semua yang Anda butuhkan. Berikut daftar periksa singkatnya:
 
- Untuk memulai, Anda perlu menentukan jalur ke direktori tempat dokumen Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+1. Aspose.Words untuk .NET: Pastikan Anda menginstal versi terbaru. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan .NET apa pun yang kompatibel.
+3. Pengetahuan Dasar tentang C#: Pemahaman dasar tentang C# akan membantu Anda mengikutinya.
+4. Contoh Dokumen Word: Miliki contoh dokumen Word (`Rendering.docx`) siap di direktori dokumen Anda.
+
+ Jika Anda belum memiliki Aspose.Words untuk .NET, dapatkan uji coba gratis[Di Sini](https://releases.aspose.com/) atau membelinya[Di Sini](https://purchase.aspose.com/buy) . Butuh lisensi sementara? Anda bisa mendapatkannya[Di Sini](https://purchase.aspose.com/temporary-license/).
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Langkah ini penting karena menyiapkan lingkungan untuk menggunakan fungsionalitas Aspose.Words.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah yang mudah diikuti. Setiap langkah akan memandu Anda melalui bagian tertentu dalam menyematkan font di dokumen PDF Anda menggunakan Aspose.Words untuk .NET.
+
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+Sebelum mendalami kodenya, Anda perlu menyiapkan direktori dokumen Anda. Di sinilah contoh dokumen Word Anda (`Rendering.docx`) dan PDF keluaran akan berada.
+
+```csharp
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Langkah 2: Muat dokumen
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda. Di sinilah semua keajaiban akan terjadi!
 
-Selanjutnya kita perlu memuat dokumen yang ingin kita proses. Dalam contoh ini, kami berasumsi bahwa dokumen tersebut bernama "Rendering.docx" dan terletak di direktori dokumen yang ditentukan.
+## Langkah 2: Muat Dokumen Word Anda
+
+ Selanjutnya, Anda akan memuat dokumen Word Anda ke dalam Aspose.Words`Document` obyek. Ini adalah dokumen yang akan Anda kerjakan.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Langkah 3: Konfigurasikan opsi penyimpanan PDF
+ Di baris ini, kami membuat yang baru`Document` objek dan memuat`Rendering.docx` file dari direktori dokumen kami.
 
- Untuk menyematkan semua font dalam PDF yang dihasilkan, kita perlu mengkonfigurasi`PdfSaveOptions` keberatan dengan`EmbedFullFonts` properti disetel ke`true`. Ini memastikan bahwa semua font yang digunakan dalam dokumen disertakan dalam file PDF yang dihasilkan.
+## Langkah 3: Konfigurasikan Opsi Penyimpanan PDF
+
+ Sekarang, saatnya mengonfigurasi opsi penyimpanan PDF. Secara khusus, kami akan mengaturnya`EmbedFullFonts`properti ke`true` untuk memastikan semua font yang digunakan dalam dokumen tertanam dalam PDF.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
 ```
 
-## Langkah 4: Simpan dokumen sebagai PDF dengan font tertanam
+ Baris ini menciptakan yang baru`PdfSaveOptions` objek dan mengatur`EmbedFullFonts`properti ke`true`. Ini memastikan bahwa PDF yang dihasilkan akan menyertakan semua font yang digunakan dalam dokumen.
 
- Terakhir, kita dapat menyimpan dokumen sebagai file PDF dengan font yang disematkan. Tentukan nama file keluaran, dan`saveOptions` objek yang kita konfigurasikan pada langkah sebelumnya.
+## Langkah 4: Simpan Dokumen sebagai PDF
+
+Terakhir, Anda akan menyimpan dokumen Word sebagai PDF dengan opsi penyimpanan yang ditentukan. Langkah ini mengonversi dokumen dan menyematkan font.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
 ```
 
-Itu dia! Anda telah berhasil menyematkan semua font dalam dokumen dan menghasilkan PDF dengan font yang disematkan menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk Semua Font Tersemat menggunakan Aspose.Words untuk .NET
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// PDF keluaran akan disematkan dengan semua font yang ditemukan di dokumen.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
-  
-```
+Di baris ini, kami menyimpan dokumen sebagai PDF di direktori dokumen, menyematkan semua font yang digunakan dalam dokumen Word.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita mempelajari cara menyematkan semua font dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Menyematkan font memastikan bahwa font yang ditentukan dalam dokumen akan tersedia dan ditampilkan dengan benar, meskipun font tersebut tidak diinstal pada sistem tempat PDF dibuka. Hal ini memastikan tampilan yang konsisten dan pemformatan dokumen yang akurat di berbagai perangkat dan platform. Jangan ragu untuk menjelajahi lebih banyak fitur Aspose.Words untuk .NET untuk mengoptimalkan pembuatan dokumen PDF Anda dengan font yang disematkan.
+Dan itu dia! Anda telah berhasil menyematkan font dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Dengan pengetahuan ini, Anda dapat memastikan bahwa PDF Anda tetap mempertahankan tampilan yang diinginkan, di mana pun PDF dilihat. Bukankah itu keren? Sekarang, lanjutkan dan cobalah dengan dokumen Anda sendiri.
 
-### Pertanyaan yang Sering Diajukan
+## FAQ
 
-#### T: Apa yang dimaksud dengan menyematkan font dalam dokumen PDF dan mengapa itu penting?
-A: Menyematkan font dalam dokumen PDF adalah proses memasukkan semua font yang digunakan dalam dokumen ke dalam file PDF itu sendiri. Hal ini memastikan bahwa font yang ditentukan dalam dokumen akan tersedia dan ditampilkan dengan benar, meskipun font tersebut tidak diinstal pada sistem tempat PDF dibuka. Penyematan font penting untuk menjaga tampilan dan format dokumen, memastikan bahwa font ditampilkan secara konsisten di berbagai perangkat dan platform.
+### Mengapa saya harus menyematkan font dalam PDF?
+Menyematkan font memastikan dokumen Anda tampak sama di semua perangkat, apa pun font yang diinstal pada sistem penampil.
 
-#### T: Bagaimana cara menyematkan semua font dalam dokumen PDF menggunakan Aspose.Words untuk .NET?
-J: Untuk menyematkan semua font dalam dokumen PDF menggunakan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
+### Bisakah saya memilih font tertentu untuk disematkan?
+ Ya, Anda dapat menyesuaikan font mana yang akan disematkan menggunakan font yang berbeda`PdfSaveOptions` properti.
 
- Atur jalur direktori dokumen dengan mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya dari direktori dokumen Anda.
+### Apakah menyematkan font meningkatkan ukuran file?
+Ya, menyematkan font dapat meningkatkan ukuran file PDF, namun memastikan tampilan yang konsisten di berbagai perangkat.
 
- Muat dokumen yang ingin Anda proses menggunakan`Document` kelas dan jalur dokumen.
+### Apakah Aspose.Words untuk .NET gratis?
+Aspose.Words untuk .NET menawarkan uji coba gratis, tetapi untuk fitur lengkap, Anda perlu membeli lisensi.
 
- Konfigurasikan opsi penyimpanan PDF dengan membuat instance dari`PdfSaveOptions` kelas dan pengaturan`EmbedFullFonts`properti ke`true`. Ini memastikan bahwa semua font yang digunakan dalam dokumen akan tertanam dalam file PDF yang dihasilkan.
-
- Simpan dokumen dalam format PDF dengan font tertanam menggunakan`Save` metode`Document`objek, menentukan nama file keluaran dan opsi penyimpanan yang dikonfigurasi sebelumnya.
-
-#### T: Mengapa penting untuk menyematkan semua font dalam dokumen PDF?
-J: Menyematkan semua font dalam dokumen PDF penting untuk memastikan bahwa dokumen akan ditampilkan dengan benar, meskipun font yang ditentukan tidak tersedia di sistem tempat PDF dibuka. Hal ini membantu menjaga tampilan, pemformatan, dan keterbacaan dokumen, memastikan bahwa font yang digunakan ditampilkan secara konsisten di berbagai perangkat dan platform.
-
-#### T: Apa manfaat menyematkan font dalam dokumen PDF?
-A: Keuntungan menyematkan font pada dokumen PDF adalah:
-
-Pastikan tampilan dokumen konsisten: Font yang disematkan memastikan bahwa dokumen akan ditampilkan persis seperti desainnya, apa pun font yang tersedia di sistem.
-
-Pelestarian format: Font yang tertanam menjaga format dan tata letak dokumen, menghindari penggantian font dan variasi tampilan.
-
-Peningkatan keterbacaan: Menyematkan font memastikan keterbacaan dokumen yang lebih baik, karena font yang ditentukan digunakan untuk menampilkan teks, meskipun font asli tidak tersedia.
-
-#### T: Apakah menyematkan semua font akan menambah ukuran file PDF?
-J: Ya, menyematkan semua font dalam dokumen PDF dapat meningkatkan ukuran file PDF yang dihasilkan, karena data font harus disertakan dalam file. Namun, peningkatan ukuran ini biasanya dapat diabaikan pada sebagian besar dokumen, dan manfaat menyematkan font sering kali lebih besar daripada sedikit peningkatan ukuran ini.
-
-#### T: Dapatkah saya memilih font tertentu untuk disematkan dalam dokumen PDF?
- J: Ya, dengan Aspose.Words untuk .NET Anda dapat memilih font tertentu untuk disematkan dalam dokumen PDF menggunakan opsi konfigurasi lanjutan. Misalnya, Anda dapat menggunakan`SubsetFonts` properti dari`PdfSaveOptions` objek untuk menentukan font mana yang akan disertakan, atau menggunakan opsi tambahan untuk menyetel filter pemilihan font khusus.
+### Bisakah saya menyematkan font dalam format dokumen lain menggunakan Aspose.Words untuk .NET?
+Ya, Aspose.Words untuk .NET mendukung berbagai format dokumen, dan Anda dapat menyematkan font di banyak format tersebut.

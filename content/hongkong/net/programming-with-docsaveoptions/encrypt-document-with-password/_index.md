@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 ## 結論
 
-現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 使用密碼加密文件。這就像成為數位鎖匠，確保您的文件安全無虞。無論您是要保護敏感的業務報告還是個人筆記，此方法都提供了簡單而有效的解決方案。
+現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 使用密碼加密文件。這就像成為數位鎖匠，確保您的文件安全無虞。無論您是要保護敏感的業務報告還是個人筆記，此方法都提供了簡單而有效的解決方案。
 
 ## 常見問題解答
 

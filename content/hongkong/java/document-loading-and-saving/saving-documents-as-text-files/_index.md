@@ -58,7 +58,7 @@ saveOptions.getListIndentation().setCharacter('\t');
 doc.save("output.txt", saveOptions);
 ```
 
-在這裡，我們配置保存選項以使用製表符進行列表縮進，計數為 1。
+在這裡，我們將儲存選項配置為使用製表符進行清單縮進，計數為 1。
 
 ## 步驟 3：將文件另存為文字
 

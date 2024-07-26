@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using System.Drawing;
 ```
 
-Ahora, dividamos el proceso en pasos breves. Cada paso tendrá un título y una explicación detallada. ¿Listo? ¡Vamos!
+Ahora, dividamos el proceso en pasos breves. Cada paso tendrá un encabezado y una explicación detallada. ¿Listo? ¡Vamos!
 
 ## Paso 1: configure su directorio de documentos
 

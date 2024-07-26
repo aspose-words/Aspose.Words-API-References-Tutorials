@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Itt,`dataDir` az az út, ahol a tiéd`Tables.docx` fájl található. Mindenképpen cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentum tényleges elérési útjával.
+ Itt,`dataDir` az az út, ahol a tiéd`Tables.docx` fájl található. Ügyeljen arra, hogy cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentum tényleges elérési útjával.
 
 ## 2. lépés: Nyissa meg a táblázatot
 

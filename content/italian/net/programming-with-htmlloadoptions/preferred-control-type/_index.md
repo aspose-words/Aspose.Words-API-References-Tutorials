@@ -2,93 +2,112 @@
 title: Tipo di controllo preferito nel documento Word
 linktitle: Tipo di controllo preferito nel documento Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per specificare il tipo di controllo preferito nel documento Word quando si carica un documento HTML con Aspose.Words per .NET.
+description: Scopri come inserire un campo modulo casella combinata in un documento di Word utilizzando Aspose.Words per .NET. Segui questa guida passo passo per un'integrazione perfetta dei contenuti HTML.
 type: docs
 weight: 10
 url: /it/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-Questo articolo fornisce una guida passo passo su come utilizzare la funzionalità del tipo di controllo preferito con Aspose.Words per .NET. Spiegheremo ogni parte del codice in dettaglio. Alla fine di questo tutorial sarai in grado di capire come specificare il tipo di controllo preferito durante il caricamento di un documento HTML.
+## introduzione
 
-Prima di iniziare, assicurati di aver installato e configurato la libreria Aspose.Words per .NET nel tuo progetto. È possibile trovare la libreria e le istruzioni di installazione sul sito Web Aspose.
+ci stiamo immergendo in un entusiasmante tutorial su come lavorare con le opzioni di caricamento HTML in Aspose.Words per .NET, concentrandoci in particolare sull'impostazione del tipo di controllo preferito quando si inserisce un campo modulo casella combinata in un documento Word. Questa guida passo passo ti aiuterà a capire come manipolare e visualizzare in modo efficace il contenuto HTML all'interno dei tuoi documenti Word utilizzando Aspose.Words per .NET.
 
-## Passaggio 1: definire il codice HTML
+## Prerequisiti
 
- Per iniziare, devi definire il codice HTML che desideri caricare come documento. In questo esempio, abbiamo definito an`html` variabile contenente il codice HTML di un selettore con opzioni.
+Prima di addentrarci nel codice, ci sono alcune cose che devi avere a posto:
+
+1.  Aspose.Words per .NET: assicurati di aver installato la libreria Aspose.Words per .NET. Puoi scaricarlo da[sito web](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: dovresti avere un ambiente di sviluppo configurato, come Visual Studio.
+3. Conoscenza di base di C#: è necessaria una comprensione fondamentale della programmazione C# insieme al tutorial.
+4. Contenuto HTML: la conoscenza di base dell'HTML è utile poiché in questo esempio lavoreremo con contenuto HTML.
+
+## Importa spazi dei nomi
+
+Innanzitutto, importiamo gli spazi dei nomi necessari per iniziare:
 
 ```csharp
-const string html=@"
-<html>
-<select name='ComboBox' size='1'>
-<option value='val1'>item1</option>
-<option value='val2'></option>
-</select>
-</html>
+using System;
+using System.IO;
+using System.Text;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+Ora suddividiamo l'esempio in più passaggi per garantire chiarezza e comprensione.
+
+## Passaggio 1: imposta il contenuto HTML
+
+Per prima cosa dobbiamo definire il contenuto HTML che vogliamo inserire nel documento Word. Ecco lo snippet HTML che utilizzeremo:
+
+```csharp
+const string html = @"
+    <html>
+        <select name='ComboBox' size='1'>
+            <option value='val1'>item1</option>
+            <option value='val2'></option>                        
+        </select>
+    </html>
 ";
 ```
 
-## Passaggio 2: imposta le opzioni di caricamento HTML
+Questo codice HTML contiene una semplice casella combinata con due opzioni. Caricheremo questo HTML in un documento Word e specificheremo come dovrebbe essere visualizzato.
 
- Successivamente, creiamo un file`HtmlLoadOptions` oggetto e impostare il`PreferredControlType`proprietà a`HtmlControlType.StructuredDocumentTag`. Questo indica ad Aspose.Words di utilizzare StructuredDocumentTags per rappresentare HTML durante il caricamento.
+## Passaggio 2: definire la directory dei documenti
+
+Successivamente, specifica la directory in cui verrà salvato il documento Word. Questo aiuta a organizzare i tuoi file e a mantenere pulita la gestione del percorso.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo in cui desideri salvare il documento Word.
+
+## Passaggio 3: configura le opzioni di caricamento HTML
+
+ Qui configuriamo le opzioni di caricamento HTML, concentrandoci in particolare sul file`PreferredControlType`proprietà. Ciò determina il modo in cui deve essere visualizzata la casella combinata nel documento di Word.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## Passaggio 3: caricare e salvare il documento
+ IMPOSTANDO`PreferredControlType` A`HtmlControlType.StructuredDocumentTag`, ci assicuriamo che la casella combinata venga visualizzata come tag di documento strutturato (SDT) nel documento di Word.
 
- Noi usiamo il`Document` classe per caricare il codice HTML da un flusso di memoria con le opzioni di caricamento definite in precedenza. Quindi salviamo il documento nella directory specificata con il file`.docx`formato del file.
+## Passaggio 4: carica il contenuto HTML nel documento
+
+Utilizzando le opzioni di caricamento configurate, carichiamo il contenuto HTML in un nuovo documento Word.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
+```
+
+Qui, convertiamo la stringa HTML in un array di byte e la carichiamo nel documento utilizzando un flusso di memoria. Ciò garantisce che il contenuto HTML venga interpretato e visualizzato correttamente da Aspose.Words.
+
+## Passaggio 5: salva il documento
+
+Infine, salva il documento nella directory specificata in formato DOCX.
+
+```csharp
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### Codice sorgente di esempio per il tipo di controllo preferito con Aspose.Words per .NET
-
-```csharp
-	
-	const string html = @"
-		<html>
-			<select name='ComboBox' size='1'>
-				<option value='val1'>item1</option>
-				<option value='val2'></option>                        
-			</select>
-		</html>
-	";
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
-
-	Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
-
-	doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
-
-```
-
-È tutto ! Hai specificato con successo il tipo di controllo preferito durante il caricamento di un documento HTML con Aspose.Words per .NET.
+Ciò salva il documento di Word con il controllo della casella combinata renderizzata nella posizione specificata.
 
 ## Conclusione
 
- Seguendo questa guida passo passo, hai imparato come utilizzare la funzione "Tipo di controllo preferito" in Aspose.Words per .NET per specificare il tipo di controllo desiderato durante il caricamento di un documento HTML. Impostazione del`PreferredControlType`proprietà a`HtmlControlType.StructuredDocumentTag` consente ad Aspose.Words di utilizzare StructuredDocumentTags (SDT) per una migliore rappresentazione ed elaborazione del contenuto HTML. Puoi esplorare anche altri tipi di controllo per soddisfare le tue esigenze specifiche. L'utilizzo di questa funzionalità aiuta a garantire una gestione accurata ed efficiente dei documenti HTML nell'applicazione C# con Aspose.Words.
+il gioco è fatto! Abbiamo inserito con successo un campo modulo casella combinata in un documento Word utilizzando Aspose.Words per .NET sfruttando le opzioni di caricamento HTML. Questa guida passo passo dovrebbe aiutarti a comprendere il processo e ad applicarlo ai tuoi progetti. Sia che tu stia automatizzando la creazione di documenti o manipolando contenuto HTML, Aspose.Words per .NET fornisce potenti strumenti per raggiungere i tuoi obiettivi.
 
-### Domande frequenti sul tipo di controllo preferito nel documento Word
+## Domande frequenti
 
-#### D: Qual è la funzionalità "Tipo di controllo preferito" in Aspose.Words per .NET?
+### Cos'è Aspose.Words per .NET?
+Aspose.Words per .NET è una potente libreria di manipolazione di documenti che consente agli sviluppatori di creare, modificare, convertire ed eseguire il rendering di documenti Word a livello di codice.
 
-R: La funzione "Tipo di controllo preferito" ti consente di specificare il tipo di controllo preferito per rappresentare gli elementi HTML durante il caricamento di un documento HTML. Aiuta a selezionare il tipo di controllo appropriato per una migliore rappresentazione ed elaborazione del contenuto HTML.
+### Posso utilizzare altri tipi di controllo HTML con Aspose.Words per .NET?
+Sì, Aspose.Words per .NET supporta vari tipi di controllo HTML. È possibile personalizzare il modo in cui vengono visualizzati i diversi controlli nel documento di Word.
 
-#### D: Come posso impostare il tipo di controllo preferito durante il caricamento di un documento HTML?
+### Come posso gestire contenuti HTML complessi in Aspose.Words per .NET?
+ Aspose.Words per .NET fornisce un supporto completo per HTML, inclusi elementi complessi. Assicurati di configurare il file`HtmlLoadOptions`in modo appropriato per gestire il tuo contenuto HTML specifico.
 
- R: Per impostare il tipo di controllo preferito, è necessario creare un file`HtmlLoadOptions` oggetto e impostarlo`PreferredControlType` proprietà a quella desiderata`HtmlControlType` . Nell'esempio fornito,`HtmlControlType.StructuredDocumentTag` si usa.
+### Dove posso trovare altri esempi e documentazione?
+ È possibile trovare documentazione dettagliata ed esempi su[Aspose.Words per la pagina della documentazione .NET](https://reference.aspose.com/words/net/).
 
-#### D: Qual è il significato dell'utilizzo di StructuredDocumentTags (SDT) come tipo di controllo preferito?
-
-R: StructuredDocumentTag (SDT) sono elementi basati su XML che possono essere utilizzati per rappresentare contenuti e controlli complessi in un documento di Word. L'utilizzo degli SDT come tipo di controllo preferito può fornire una migliore compatibilità e rappresentazione del contenuto HTML.
-
-#### D: Come posso assicurarmi che Aspose.Words utilizzi il tipo di controllo preferito durante il caricamento del documento HTML?
-
- R: Impostando il`PreferredControlType`proprietà a`HtmlControlType.StructuredDocumentTag`come mostrato nel codice sorgente di esempio, Aspose.Words utilizzerà gli SDT per rappresentare gli elementi HTML durante il caricamento del documento.
-
-#### D: Posso utilizzare altri tipi di controllo come opzione preferita?
-
- R: Sì, a parte`HtmlControlType.StructuredDocumentTag` , Aspose.Words per .NET supporta altri tipi di controllo come`HtmlControlType.ContentControl`E`HtmlControlType.CustomXmlMarkup`.
+### È disponibile una prova gratuita per Aspose.Words per .NET?
+ Sì, puoi scaricare una versione di prova gratuita da[Sito web Aspose](https://releases.aspose.com/).

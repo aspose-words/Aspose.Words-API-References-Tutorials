@@ -21,7 +21,7 @@ url: /ko/net/programming-with-tables/formatted-table/
 // 문서 디렉토리 경로
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// 문서 생성 및 문서 생성기 초기화
+//문서 생성 및 문서 생성기 초기화
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

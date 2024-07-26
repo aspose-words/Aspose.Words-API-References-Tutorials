@@ -33,7 +33,7 @@ fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
 ## Krok 4: Použijte nastavení písma
- Dále musíte použít nastavení písma na váš dokument pomocí`FontSettings` vlastnictvím`Document` třída.
+ Dále musíte použít nastavení písma na váš dokument pomocí`FontSettings` majetek z`Document` třída.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -69,7 +69,7 @@ tomto tutoriálu jsme se naučili, jak nastavit více složek písem při vykres
 
 #### Otázka: Jak mohu v Aspose.Words nastavit více složek písem?
 
- A: Chcete-li nastavit více složek písem v Aspose.Words, můžete použít`SetFontsFolders` metoda`Fonts` class poskytující seznam umístění vlastních složek písem.
+ A: Chcete-li nastavit více složek písem v Aspose.Words, můžete použít`SetFontsFolders` metoda`Fonts` třídy poskytující seznam umístění složek vlastních písem.
 
 #### Otázka: Má nastavení více složek písem vliv na všechny dokumenty zpracovávané pomocí Aspose.Words?
 

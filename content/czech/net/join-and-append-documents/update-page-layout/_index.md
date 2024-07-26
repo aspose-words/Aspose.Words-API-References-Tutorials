@@ -105,7 +105,7 @@ Tato závěrečná operace uložení zachytí provedené změny a použije aktua
 
 ## Závěr
 
-Aktualizace rozvržení stránek v dokumentech aplikace Word pomocí Aspose.Words for .NET je účinný způsob, jak zajistit, aby vaše dokumenty vypadaly přesně tak, jak chcete. Podle těchto kroků můžete načíst dokument, použít úpravy, aktualizovat rozvržení a uložit změny bez problémů. Ať už upravujete písma, měníte orientaci nebo upravujete okraje, tento proces pomáhá zachovat vizuální integritu vašich dokumentů.
+Aktualizace rozvržení stránek v dokumentech aplikace Word pomocí Aspose.Words for .NET je účinný způsob, jak zajistit, aby vaše dokumenty vypadaly přesně tak, jak chcete. Pomocí těchto kroků můžete načíst dokument, použít úpravy, aktualizovat rozvržení a uložit změny bez problémů. Ať už upravujete písma, měníte orientaci nebo upravujete okraje, tento proces pomáhá zachovat vizuální integritu vašich dokumentů.
 
 
 ## FAQ

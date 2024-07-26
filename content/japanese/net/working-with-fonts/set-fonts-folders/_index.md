@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-### Aspose.Words for .NET を使用してフォント フォルダーを設定するサンプル ソース コード 
+### Aspose.Words for .NET を使用してフォント フォルダーを設定するためのサンプル ソース コード 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";

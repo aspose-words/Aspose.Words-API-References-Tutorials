@@ -34,7 +34,7 @@ table.Description = "Test Description";
 ```
 
 ## ステップ4: バックアップオプションを設定する
-保存オプションを指定したい場合は、`OoxmlSaveOptions`クラスです。この例では、`Compliance` ISO 29500:2008 厳密な形式への準拠を指定するオプション。
+保存オプションを指定したい場合は、`OoxmlSaveOptions`クラス。この例では、`Compliance` ISO 29500:2008 厳密な形式への準拠を指定するオプション。
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Strict };

@@ -37,7 +37,7 @@ fontSettings.SetFontsSources(updatedFontSources);
 ```
 
 ## Krok 4: Použijte nastavení písma
- Dále musíte použít nastavení písma na váš dokument pomocí`FontSettings` vlastnictvím`Document` třída.
+ Dále musíte použít nastavení písma na váš dokument pomocí`FontSettings` majetek z`Document` třída.
 
 ```csharp
 doc.FontSettings = fontSettings;

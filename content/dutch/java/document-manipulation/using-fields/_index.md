@@ -103,7 +103,7 @@ Om afbeeldingen in een document in te voegen, kunt u de Aspose.Words voor Java-b
 
 ### Wat is het doel van voorwaardelijke velden in Aspose.Words voor Java?
 
-Met voorwaardelijke velden in Aspose.Words voor Java kunt u dynamische documenten maken door inhoud voorwaardelijk op te nemen op basis van bepaalde criteria. In het gegeven voorbeeld wordt een IF-veld gebruikt om voorwaardelijk gegevens in het document op te nemen tijdens een samenvoegbewerking op basis van het resultaat van de IF-instructie.
+Met voorwaardelijke velden in Aspose.Words voor Java kunt u dynamische documenten maken door inhoud voorwaardelijk op te nemen op basis van bepaalde criteria. In het gegeven voorbeeld wordt een IF-veld gebruikt om gegevens voorwaardelijk op te nemen in het document tijdens een samenvoegbewerking op basis van het resultaat van de IF-instructie.
 
 ### Hoe kan ik afwisselende rijen in een tabel opmaken met Aspose.Words voor Java?
 
@@ -111,7 +111,7 @@ Met voorwaardelijke velden in Aspose.Words voor Java kunt u dynamische documente
 
 ### Waar kan ik meer documentatie en bronnen vinden voor Aspose.Words voor Java?
 
- Uitgebreide documentatie, codevoorbeelden en tutorials voor Aspose.Words voor Java vindt u op de Aspose-website:[Aspose.Words voor Java-documentatie](https://reference.aspose.com/words/java/). Met deze informatiebron kunt u aanvullende kenmerken en functionaliteiten van de bibliotheek ontdekken.
+ Uitgebreide documentatie, codevoorbeelden en tutorials voor Aspose.Words voor Java vindt u op de Aspose-website:[Aspose.Words voor Java-documentatie](https://reference.aspose.com/words/java/). Met deze informatiebron kunt u aanvullende kenmerken en functionaliteiten van de bibliotheek verkennen.
 
 ### Hoe kan ik ondersteuning krijgen of hulp zoeken bij Aspose.Words voor Java?
 

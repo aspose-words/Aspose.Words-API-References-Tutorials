@@ -89,7 +89,7 @@ Aspose.Words for .NET은 .NET 애플리케이션에서 프로그래밍 방식으
 ### .NET용 Aspose.Words를 어떻게 다운로드할 수 있나요?
  .NET용 Aspose.Words는 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
 
-### Aspose.Words에서 수평선의 모양을 사용자 정의할 수 있습니까?
+### Aspose.Words에서 수평선의 모양을 사용자 정의할 수 있나요?
 예, Aspose.Words를 사용하여 가로 규칙의 정렬, 너비, 높이, 색상 및 음영과 같은 다양한 측면을 사용자 정의할 수 있습니다.
 
 ### Aspose.Words는 기업 수준의 문서 처리에 적합합니까?

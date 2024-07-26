@@ -116,11 +116,11 @@ if template.range.bookmarks.get(bookmark_name):
 
 ## Zaawansowane techniki zakładek
 
-W miarę lepszego zaznajomienia się z zakładkami możesz poznać zaawansowane techniki, takie jak zakładki zagnieżdżone, zakładki obejmujące wiele sekcji i nie tylko. Techniki te umożliwiają tworzenie wyrafinowanych struktur dokumentów i usprawnianie interakcji użytkownika.
+Gdy lepiej zaznajomisz się z zakładkami, możesz poznać zaawansowane techniki, takie jak zakładki zagnieżdżone, zakładki obejmujące wiele sekcji i nie tylko. Techniki te umożliwiają tworzenie wyrafinowanych struktur dokumentów i usprawnianie interakcji użytkownika.
 
 ## Wniosek
 
-Zakładki dokumentów to nieocenione narzędzia umożliwiające efektywną nawigację i zarządzanie dużymi dokumentami. Dzięki interfejsowi API Aspose.Words for Python masz możliwość bezproblemowej integracji funkcji związanych z zakładkami ze swoimi aplikacjami, dzięki czemu przetwarzanie dokumentów staje się płynniejsze i usprawnione.
+Zakładki dokumentów to nieocenione narzędzia umożliwiające efektywną nawigację i zarządzanie dużymi dokumentami. Dzięki interfejsowi API Aspose.Words for Python masz możliwość bezproblemowej integracji funkcji związanych z zakładkami ze swoimi aplikacjami, dzięki czemu zadania przetwarzania dokumentów stają się płynniejsze i usprawnione.
 
 ## Często zadawane pytania
 

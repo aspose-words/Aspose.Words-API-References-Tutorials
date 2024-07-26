@@ -21,7 +21,7 @@ Abychom mohli začít vytvářet formátovanou tabulku, musíme vytvořit nový 
 // Cesta k adresáři vašich dokumentů
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Vytvořte dokument a inicializujte generátor dokumentů
+//Vytvořte dokument a inicializujte generátor dokumentů
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

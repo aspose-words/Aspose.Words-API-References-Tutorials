@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Properties.docx");
 
 Med dokumentet laddat är det dags att ta bort dessa irriterande anpassade egenskaper. Så här gör du steg för steg.
 
-### Steg 2.1: Få åtkomst till anpassade dokumentegenskaper
+### Steg 2.1: Få tillgång till anpassade dokumentegenskaper
 
 Öppna först de anpassade dokumentegenskaperna för det laddade dokumentet.
 

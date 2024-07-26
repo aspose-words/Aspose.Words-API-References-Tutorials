@@ -11,13 +11,13 @@ url: /id/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 Tutorial ini menunjukkan cara mengikat Tag Dokumen Terstruktur (SDT) ke Bagian Xml Kustom menggunakan Aspose.Words untuk .NET. SDT memungkinkan Anda menambahkan kontrol konten terstruktur ke dokumen Word, dan CustomXmlParts menyediakan cara untuk menyimpan data XML khusus yang terkait dengan dokumen tersebut.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
+Untuk mengikuti tutorial ini, Anda perlu memiliki yang berikut ini:
 
 - Aspose.Words untuk perpustakaan .NET diinstal.
 - Pengetahuan dasar tentang C# dan XML.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Langkah 3: Tambahkan StructuredDocumentTag (SDT) ke Dokumen
- Tambah sebuah`StructuredDocumentTag` ke dokumen untuk berfungsi sebagai kontrol konten. Tentukan`SdtType` sebagai`PlainText` dan itu`MarkupLevel` sebagai`Block` untuk membuat SDT tingkat blok.
+ Tambah sebuah`StructuredDocumentTag`ke dokumen untuk berfungsi sebagai kontrol konten. Tentukan`SdtType` sebagai`PlainText` dan itu`MarkupLevel` sebagai`Block` untuk membuat SDT tingkat blok.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

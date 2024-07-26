@@ -103,7 +103,7 @@ Bu kod parçacığı, belirtilen dizinde bulunan "İçindekiler tablosu.docx" be
 
 #### S: İçindekiler tablosunda kullanılan sekmeleri Aspose.Words for .NET kullanarak nasıl değiştirebilirim?
 
- C: Belge yüklendikten sonra, belgenin her paragrafını yineleyebilir ve İçindekiler Tablosu (TOC) sonuç stillerini kullanarak biçimlendirilip biçimlendirilmediğini kontrol edebilirsiniz. Bir paragraf İçindekiler stili olarak biçimlendirilmişse sayfa numaralarını hizalamak için kullanılan sekmeleri değiştirebilirsiniz. Aspose.Words for .NET'te aşağıdakilere erişebilirsiniz:`ParagraphFormat` Sekme duraklarını almak ve değiştirmek için her paragrafın özelliği. İşte bir örnek:
+C: Belge yüklendikten sonra, belgenin her paragrafını yineleyebilir ve İçindekiler Tablosu (TOC) sonuç stillerini kullanarak biçimlendirilip biçimlendirilmediğini kontrol edebilirsiniz. Bir paragraf İçindekiler stili olarak biçimlendirilmişse sayfa numaralarını hizalamak için kullanılan sekmeleri değiştirebilirsiniz. Aspose.Words for .NET'te aşağıdakilere erişebilirsiniz:`ParagraphFormat` Sekme duraklarını almak ve değiştirmek için her paragrafın özelliği. İşte bir örnek:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -148,4 +148,4 @@ C: Evet, Aspose.Words for .NET, Word belgelerindeki çeşitli stilleri ve format
 
 #### S: Mevcut bir Word belgesindeki içindekiler tablosundaki sekmeleri Aspose.Words for .NET kullanarak değiştirebilir miyim?
 
-C: Evet, Aspose.Words for .NET'i kullanarak mevcut bir Word belgesindeki içindekiler tablosundaki sekmeleri değiştirebilirsiniz. Belgeyi yükleyerek, paragraflar arasında yineleyerek ve sekme duraklarında gerekli değişiklikleri yaparak içindekiler tablosundaki sekmeleri güncelleyebilirsiniz. Son olarak değişiklikleri uygulamak için belgeyi kaydedin.
+C: Evet, Aspose.Words for .NET'i kullanarak mevcut bir Word belgesindeki içindekiler tablosundaki sekmeleri değiştirebilirsiniz. Belgeyi yükleyerek, paragraflar arasında yineleyerek ve sekme duraklarında gerekli değişiklikleri yaparak içindekiler tablosundaki sekmeleri güncelleştirebilirsiniz. Son olarak değişiklikleri uygulamak için belgeyi kaydedin.

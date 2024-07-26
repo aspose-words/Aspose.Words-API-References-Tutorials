@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Etapa 2: carregar o documento e recuperar o controle de conteúdo
- Carregue o documento do Word usando o`Document` construtor, passando o caminho para o documento como parâmetro. Recupere o controle de conteúdo desejado do documento. Neste exemplo, assumimos que o controle de conteúdo é a primeira tag de documento estruturada no documento.
+ Carregue o documento do Word usando o`Document`construtor, passando o caminho para o documento como parâmetro. Recupere o controle de conteúdo desejado do documento. Neste exemplo, assumimos que o controle de conteúdo é a primeira tag de documento estruturada no documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

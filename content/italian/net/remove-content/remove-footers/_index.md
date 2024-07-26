@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Il piè di pagina primario è il piè di pagina utilizzato per le pagine dispari.
+	//Il piè di pagina primario è il piè di pagina utilizzato per le pagine dispari.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

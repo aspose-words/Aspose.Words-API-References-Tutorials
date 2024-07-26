@@ -91,7 +91,7 @@ Os campos podem criar hiperlinks e referências cruzadas:
 builder.insert_field('HYPERLINK "https://www.example.com" "Visite nosso site"')
 ```
 
-## Personalização de formatos de campo
+## Personalizando formatos de campo
 
 Os campos podem ser formatados usando opções:
 

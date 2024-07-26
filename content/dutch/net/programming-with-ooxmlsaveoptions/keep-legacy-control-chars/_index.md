@@ -2,68 +2,102 @@
 title: Bewaar oude controletekens
 linktitle: Bewaar oude controletekens
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u oudere stuurtekens kunt behouden bij het opslaan van een document met Aspose.Words voor .NET.
+description: Leer met deze stapsgewijze handleiding hoe u oudere stuurtekens in Word-documenten kunt behouden met Aspose.Words voor .NET.
 type: docs
 weight: 10
 url: /nl/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
+## Invoering
 
-In deze zelfstudie verkennen we de meegeleverde C#-broncode om oudere stuurtekens te behouden bij het opslaan van een document met Aspose.Words voor .NET. Met deze functie kunt u speciale controletekens behouden bij het converteren of opslaan van een document.
+Bent u ooit verbaasd geweest over die vreemde, onzichtbare controletekens in uw Word-documenten? Het zijn net kleine, verborgen gremlins die de opmaak en functionaliteit kunnen verstoren. Gelukkig biedt Aspose.Words voor .NET een handige functie om deze verouderde stuurtekens intact te houden bij het opslaan van documenten. In deze zelfstudie gaan we dieper in op het beheren van deze controletekens met Aspose.Words voor .NET. We leggen het stap voor stap uit, zodat u onderweg elk detail begrijpt. klaar om te beginnen? Laten we erin duiken!
 
-## Stap 1: De omgeving instellen
+## Vereisten
 
-Zorg ervoor dat u, voordat u begint, uw ontwikkelomgeving hebt ingesteld met Aspose.Words voor .NET. Zorg ervoor dat u de benodigde referenties hebt toegevoegd en de juiste naamruimten hebt geïmporteerd.
+Voordat we beginnen, zorg ervoor dat je het volgende hebt:
 
-## Stap 2: Het document laden
+1.  Aspose.Words voor .NET: downloaden en installeren vanaf[hier](https://releases.aspose.com/words/net/).
+2.  Een geldige Aspose-licentie: U kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/).
+3. Ontwikkelomgeving: Visual Studio of een andere IDE die .NET ondersteunt.
+4. Basiskennis van C#: Bekendheid met de programmeertaal C# is nuttig.
 
-```csharp
-// Pad naar uw documentenmap
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+## Naamruimten importeren
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
-```
-
- In deze stap laden we het document met behulp van de`Document` methode en geef het pad door naar het bestand dat de overgenomen controletekens bevat.
-
-## Stap 3: OOXML-back-upopties configureren
+Voordat u uw code schrijft, moet u de benodigde naamruimten importeren. Voeg de volgende regels toe bovenaan uw C#-bestand:
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- In deze stap configureren we de OOXML-opslagopties door een nieuw`OoxmlSaveOptions` voorwerp. We specificeren het gewenste opslagformaat (hier`FlatOpc` ) en schakel de in`KeepLegacyControlChars` optie om oudere stuurtekens te behouden.
+## Stap 1: Uw project opzetten
 
-## Stap 4: Het document opslaan met oudere stuurtekens
+Eerst moet u uw project instellen in Visual Studio (of uw favoriete IDE). 
 
-```csharp
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-```
+1. Maak een nieuw C#-project: Open Visual Studio en maak een nieuw C# Console-toepassingsproject.
+2. Installeer Aspose.Words voor .NET: Gebruik NuGet Package Manager om Aspose.Words voor .NET te installeren. Klik met de rechtermuisknop op uw project in Solution Explorer, selecteer 'NuGet-pakketten beheren', zoek naar 'Aspose.Words' en installeer het.
 
- In deze laatste stap slaan we het document op met behulp van de`Save` methode en geef het pad door naar het uitvoerbestand met de`.docx` extensie, samen met de opgegeven opslagopties.
+## Stap 2: Laad uw document
 
-Nu kunt u broncode uitvoeren om oudere stuurtekens te behouden bij het opslaan van een document. Het resulterende bestand wordt opgeslagen in de opgegeven map met de naam "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
+Vervolgens laadt u het Word-document dat de oude besturingstekens bevat.
 
-### Voorbeeldbroncode voor Keep Legacy Control Chars met Aspose.Words voor .NET 
-```csharp
+1. Geef het documentpad op: Stel het pad naar uw documentmap in.
+   
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
 
-// Pad naar uw documentmap
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+2.  Laad het document: Gebruik de`Document` klasse om uw document te laden.
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```csharp
+   Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+## Stap 3: Configureer de opslagopties
 
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-            
-        
-```
+Laten we nu de opslagopties configureren om de oude stuurtekens intact te houden.
+
+1.  Creëer opslagopties: Initialiseer een exemplaar van`OoxmlSaveOptions` en stel de`KeepLegacyControlChars`eigendom aan`true`.
+
+   ```csharp
+   OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)
+   {
+       KeepLegacyControlChars = true
+   };
+   ```
+
+## Stap 4: Sla het document op
+
+Sla ten slotte het document op met de geconfigureerde opslagopties.
+
+1.  Sla het document op: Gebruik de`Save` werkwijze van de`Document` class om het document op te slaan met de opgegeven opslagopties.
+
+   ```csharp
+   doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
+   ```
 
 ## Conclusie
 
-In deze zelfstudie hebben we de functionaliteit onderzocht van het behouden van oudere stuurtekens bij het opslaan van een document met Aspose.Words voor .NET. We hebben geleerd hoe we de speciale tekens kunnen behouden die belangrijk kunnen zijn voor de juiste documentopmaak of weergave.
+En daar heb je het! Door deze stappen te volgen, kunt u ervoor zorgen dat uw oude stuurtekens behouden blijven wanneer u met Word-documenten werkt in Aspose.Words voor .NET. Deze functie kan een redder in nood zijn, vooral als het gaat om complexe documenten waarbij controlekarakters een cruciale rol spelen. 
 
- Het behouden van oudere stuurtekens is vooral handig bij het verwerken van woorden met documenten die oudere of specifieke functies gebruiken, zoals speciale stuurtekens. Door het inschakelen van de`KeepLegacyControlChars` optie bij het opslaan van het document zorgt u ervoor dat deze tekens behouden blijven.
+## Veelgestelde vragen
 
-Aspose.Words voor .NET biedt een reeks flexibele en krachtige back-upopties om aan uw behoeften op het gebied van documentmanipulatie te voldoen. Door de juiste opties te gebruiken, kunt u het back-upproces aanpassen om de specifieke kenmerken van uw documenten te behouden.
+### Wat zijn oudere controlekarakters?
 
-Voel je vrij om deze functionaliteit op te nemen in je Aspose.Words voor .NET-projecten om de integriteit en het behoud van oudere stuurtekens in je documenten te garanderen.
+Verouderde besturingstekens zijn niet-afdrukbare tekens die in oudere documenten worden gebruikt om de opmaak en lay-out te bepalen.
+
+### Kan ik deze controletekens verwijderen in plaats van ze te behouden?
+
+Ja, u kunt Aspose.Words voor .NET gebruiken om deze tekens indien nodig te verwijderen of te vervangen.
+
+### Is deze functie beschikbaar in alle versies van Aspose.Words voor .NET?
+
+Deze functie is beschikbaar in recente versies. Zorg ervoor dat u de nieuwste versie gebruikt om toegang te krijgen tot alle functionaliteiten.
+
+### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
+
+ Ja, u heeft een geldige licentie nodig. U kunt een tijdelijke licentie krijgen voor evaluatiedoeleinden[hier](https://purchase.aspose.com/temporary-license/).
+
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
+
+ U kunt gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/).
+ 

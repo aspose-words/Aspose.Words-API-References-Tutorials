@@ -16,5 +16,5 @@ PDFLoadOptions を使用した Words 処理に関する Aspose.Words for .NET �
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [暗号化されたPDFを読み込む](./load-encrypted-pdf/) | Aspose.Words for .NET を使用して暗号化された PDF を読み込むためのステップバイステップ ガイド。 |
-| [PDF のページ範囲を読み込む](./load-page-range-of-pdf/) | Aspose.Words for .NET を使用して特定の PDF ページ範囲を読み込むためのステップバイステップ ガイド。 |
+| [暗号化されたPDFを読み込む](./load-encrypted-pdf/) | ステップバイステップのチュートリアルで、Aspose.Words for .NET を使用して暗号化された PDF を読み込む方法を学びます。すぐに PDF の暗号化と復号化をマスターできます。 |
+| [PDF のページ範囲を読み込む](./load-page-range-of-pdf/) | この包括的なステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して PDF から特定のページ範囲を読み込む方法を学びます。.NET 開発者に最適です。 |

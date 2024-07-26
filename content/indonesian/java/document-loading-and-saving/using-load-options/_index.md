@@ -97,7 +97,7 @@ public static class DocumentLoadingWarningCallback implements IWarningCallback {
 }
 ```
 
-Kode ini menunjukkan cara menyiapkan panggilan balik peringatan untuk menangani peringatan selama pemuatan dokumen. Anda dapat menyesuaikan perilaku aplikasi Anda saat peringatan muncul.
+Kode ini menunjukkan cara menyiapkan panggilan balik peringatan untuk menangani peringatan selama pemuatan dokumen. Anda dapat menyesuaikan perilaku aplikasi Anda saat peringatan terjadi.
 
 ## Konversi Metafile ke PNG
 

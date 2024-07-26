@@ -21,7 +21,7 @@ Para comenzar a construir la tabla, necesitamos crear un nuevo documento e inici
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Cree el documento e inicialice el generador de documentos.
+//Cree el documento e inicialice el generador de documentos.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Llame al siguiente método para finalizar la primera línea y comenzar una nueva línea
+// Llame al siguiente método para finalizar la primera línea y comenzar una nueva línea
 builder. EndRow();
 
 // Construcción de la primera celda de la segunda fila.
@@ -99,10 +99,10 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Señala que hemos terminado de construir la mesa.
+	// Señala que hemos terminado de construir la mesa.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```
 
 ## Conclusión
-En este tutorial, aprendimos cómo crear una tabla simple en un documento de Word usando Aspose.Words para .NET. Si sigue esta guía paso a paso e implementa el código C# proporcionado, puede crear tablas personalizadas en sus documentos de Word mediante programación. Esta característica le permite formatear y organizar sus datos de una manera estructurada y clara.
+En este tutorial, aprendimos cómo crear una tabla simple en un documento de Word usando Aspose.Words para .NET. Si sigue esta guía paso a paso e implementa el código C# proporcionado, puede crear tablas personalizadas en sus documentos de Word mediante programación. Esta función le permite formatear y organizar sus datos de una manera estructurada y clara.

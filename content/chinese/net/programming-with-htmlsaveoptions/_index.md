@@ -16,12 +16,12 @@ Aspose.Words for .NET 是一个功能强大的库，用于在 .NET 应用程序�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [导出往返信息](./export-roundtrip-information/) | 使用 Aspose.Words for .NET 将文档保存为 HTML 时导出往返信息的分步指南。 |
-| [将字体导出为 Base 64](./export-fonts-as-base-64/) | 使用 Aspose.Words for .NET 保存文档时导出 base 64 字体的分步指南。 |
-| [出口资源](./export-resources/) | 使用 Aspose.Words for .NET 将文档资源保存为 HTML 时导出的分步指南。 |
+| [导出往返信息](./export-roundtrip-information/) | 了解如何使用 Aspose.Words for .NET 导出往返信息。在转换过程中保留文档的完整性和格式。 |
+| [将字体导出为 Base 64](./export-fonts-as-base-64/) | 在此详细教程中了解如何使用 Aspose.Words for .NET 将字体导出为 Base64。确保字体嵌入并正确显示在 HTML 文件中。 |
+| [出口资源](./export-resources/) | 了解如何使用 Aspose.Words for .NET 将 Word 文档保存为 HTML 并导出 CSS 和字体等资源。请按照我们的分步指南进行操作。 |
 | [将图元文件转换为 Emf 或 Wmf](./convert-metafiles-to-emf-or-wmf/) | 使用 Aspose.Words for .NET 将文档转换为 HTML 时，将元文件转换为 EMF 或 WMF 格式的分步指南。 |
-| [将图元文件转换为 Svg](./convert-metafiles-to-svg/) | 使用 Aspose.Words for .NET 将文档转换为 HTML 时，将元文件转换为 SVG 格式的分步指南。 |
-| [添加 Css 类名前缀](./add-css-class-name-prefix/) | 使用 Aspose.Words for .NET 将文档转换为 HTML 时添加 CSS 类名前缀的分步指南。 |
-| [导出 Mhtml 资源的 Cid Url](./export-cid-urls-for-mhtml-resources/) | 使用 Aspose.Words for .NET 保存文档时导出 MHTML 资源的 CID URL 的分步指南。 |
-| [解析字体名称](./resolve-font-names/) | 使用 Aspose.Words for .NET 转换为 HTML 时解决缺少字体名称的分步指南。 |
-| [将文本输入表单字段导出为文本](./export-text-input-form-field-as-text/) | 使用 Aspose.Words for .NET 将文本输入表单字段导出为纯文本的分步指南。 |
+| [将图元文件转换为 Svg](./convert-metafiles-to-svg/) | 按照这份详细的分步指南，使用 Aspose.Words for .NET 将 Word 文档中的元文件转换为 SVG。非常适合各个级别的开发人员。 |
+| [添加 Css 类名前缀](./add-css-class-name-prefix/) | 了解如何在使用 Aspose.Words for .NET 将 Word 文档保存为 HTML 时添加 CSS 类名前缀。其中包括分步指南、代码片段和常见问题解答。 |
+| [导出 Mhtml 资源的 Cid Url](./export-cid-urls-for-mhtml-resources/) | 在本分步教程中学习如何使用 Aspose.Words for .NET 导出 MHTML 资源的 Cid URL。适合所有级别的开发人员。 |
+| [解析字体名称](./resolve-font-names/) | 了解如何在使用 Aspose.Words for .NET 转换为 HTML 时解析 Word 文档中的字体名称。带有详细解释的分步指南。 |
+| [将文本输入表单字段导出为文本](./export-text-input-form-field-as-text/) | 通过本全面的分步指南了解如何使用 Aspose.Words for .NET 将文本输入表单字段导出为纯文本。 |

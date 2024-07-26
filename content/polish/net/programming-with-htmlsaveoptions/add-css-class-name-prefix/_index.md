@@ -2,71 +2,128 @@
 title: Dodaj przedrostek nazwy klasy CSS
 linktitle: Dodaj przedrostek nazwy klasy CSS
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący dodawania przedrostka nazwy klasy CSS podczas konwersji dokumentu do formatu HTML za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak dodać przedrostek nazwy klasy CSS podczas zapisywania dokumentów programu Word jako HTML przy użyciu Aspose.Words dla .NET. Zawiera przewodnik krok po kroku, fragmenty kodu i często zadawane pytania.
 type: docs
 weight: 10
 url: /pl/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## Wstęp
 
-W tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby dodać przedrostek nazwy klasy CSS za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia dodanie niestandardowego przedrostka do wygenerowanych nazw klas CSS podczas konwersji dokumentu do formatu HTML.
+Powitanie! Jeśli nurkujesz w świecie Aspose.Words dla .NET, czeka Cię prawdziwa gratka. Dzisiaj przyjrzymy się, jak dodać przedrostek nazwy klasy CSS podczas zapisywania dokumentu programu Word jako HTML przy użyciu Aspose.Words dla .NET. Ta funkcja jest bardzo przydatna, jeśli chcesz uniknąć konfliktów nazw klas w plikach HTML.
 
-## Krok 1: Konfiguracja projektu
+## Warunki wstępne
 
-Aby rozpocząć, utwórz nowy projekt C# w swoim ulubionym środowisku IDE. Upewnij się, że w Twoim projekcie znajduje się odwołanie do biblioteki Aspose.Words for .NET.
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
-## Krok 2: Załaduj dokument
+-  Aspose.Words dla .NET: Jeśli jeszcze go nie zainstalowałeś,[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Visual Studio lub dowolne inne IDE C#.
+-  Dokument programu Word: Będziemy używać dokumentu o nazwie`Rendering.docx`. Umieść go w katalogu swojego projektu.
 
-W tym kroku załadujemy dokument Word, który chcemy przekonwertować na HTML. Aby załadować dokument, użyj poniższego kodu:
+## Importuj przestrzenie nazw
+
+Najpierw upewnij się, że do projektu C# zaimportowano niezbędne przestrzenie nazw. Dodaj je na górze pliku kodu:
 
 ```csharp
-//Ścieżka do katalogu dokumentów.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Przejdźmy teraz do przewodnika krok po kroku!
+
+## Krok 1: Skonfiguruj swój projekt
+
+Zanim zaczniemy dodawać przedrostek nazwy klasy CSS, skonfigurujmy nasz projekt.
+
+### Krok 1.1: Utwórz nowy projekt
+
+ Uruchom program Visual Studio i utwórz nowy projekt aplikacji konsolowej. Nazwij to czymś chwytliwym, np`AsposeCssPrefixExample`.
+
+### Krok 1.2: Dodaj Aspose.Words dla .NET
+
+Jeśli jeszcze tego nie zrobiłeś, dodaj Aspose.Words dla .NET do swojego projektu za pośrednictwem NuGet. Po prostu otwórz konsolę Menedżera pakietów NuGet i uruchom:
+
+```bash
+Install-Package Aspose.Words
+```
+
+Świetnie! Teraz jesteśmy gotowi, aby rozpocząć kodowanie.
+
+## Krok 2: Załaduj swój dokument
+
+Pierwszą rzeczą, którą musimy zrobić, to załadować dokument Word, który chcemy przekonwertować na HTML.
+
+### Krok 2.1: Zdefiniuj ścieżkę dokumentu
+
+ Ustaw ścieżkę do katalogu dokumentów. Na potrzeby tego samouczka załóżmy, że dokument znajduje się w folderze o nazwie`Documents` w katalogu Twojego projektu.
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### Krok 2.2: Załaduj dokument
+
+Teraz załadujmy dokument za pomocą Aspose.Words:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Zastępować`"YOUR DOCUMENTS DIRECTORY"` z rzeczywistą ścieżką katalogu, w którym znajduje się dokument.
+## Krok 3: Skonfiguruj opcje zapisywania HTML
 
-## Krok 3: Ustaw opcje zapisywania HTML
+Następnie musimy skonfigurować opcje zapisywania HTML, aby zawierały przedrostek nazwy klasy CSS.
 
-Teraz ustawmy opcje zapisywania HTML, w tym typ arkusza stylów CSS i przedrostek nazwy klasy CSS. Użyj następującego kodu:
+### Krok 3.1: Utwórz opcje zapisu HTML
+
+ Utwórz instancję`HtmlSaveOptions` obiekt i ustaw typ arkusza stylów CSS na`External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
- Ten kod tworzy instancję`HtmlSaveOptions` i zestawy`CssStyleSheetType` Do`CssStyleSheetType.External` wygenerować zewnętrzny arkusz stylów CSS i`CssClassNamePrefix` Do`"pfx_"` prefiksować`"pfx_"` nadawać nazwy klasom CSS.
+### Krok 3.2: Ustaw prefiks nazwy klasy CSS
 
-## Krok 4: Konwertowanie i zapisywanie dokumentu do formatu HTML
+ Teraz ustawmy`CssClassNamePrefix` właściwość do żądanego przedrostka. W tym przykładzie użyjemy`"pfx_"`.
 
-Na koniec przekonwertujemy dokument na format HTML, korzystając z zdefiniowanych wcześniej opcji zapisywania HTML. Użyj następującego kodu:
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## Krok 4: Zapisz dokument jako HTML
+
+Na koniec zapiszmy dokument jako plik HTML z naszymi skonfigurowanymi opcjami.
+
+
+Określ ścieżkę wyjściowego pliku HTML i zapisz dokument.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-Ten kod konwertuje dokument do formatu HTML i zapisuje go w pliku z dodanym przedrostkiem nazwy klasy CSS.
+## Krok 5: Sprawdź dane wyjściowe
 
-### Przykładowy kod źródłowy dla dodania prefiksu nazwy klasy Css przy użyciu Aspose.Words dla .NET
+ Po uruchomieniu projektu przejdź do pliku`Documents` teczka. Powinieneś znaleźć plik HTML o nazwie`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Otwórz ten plik w edytorze tekstu lub przeglądarce, aby sprawdzić, czy klasy CSS mają przedrostek`pfx_`.
 
-```csharp
+## Wniosek
 
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+I masz to! Wykonując te kroki, pomyślnie dodałeś przedrostek nazwy klasy CSS do danych wyjściowych HTML za pomocą Aspose.Words dla .NET. Ta prosta, ale zaawansowana funkcja może pomóc w utrzymaniu przejrzystych i pozbawionych konfliktów stylów w dokumentach HTML.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## Często zadawane pytania
 
-```
+### Czy mogę użyć innego prefiksu dla każdej operacji zapisywania?
+ Tak, możesz dostosować prefiks za każdym razem, gdy zapisujesz dokument, zmieniając`CssClassNamePrefix` nieruchomość.
 
- Pamiętaj, aby określić poprawną ścieżkę dokumentu w pliku`dataDir` zmienny.
+### Czy ta metoda obsługuje wbudowany CSS?
+ The`CssClassNamePrefix`Właściwość działa z zewnętrznym CSS. W przypadku wbudowanego CSS będziesz potrzebować innego podejścia.
 
-Nauczyłeś się teraz, jak dodać przedrostek nazwy klasy CSS podczas konwersji dokumentu do HTML przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowymi instrukcjami zawartymi w tym samouczku, możesz dostosować nazwy klas CSS w przekonwertowanych dokumentach HTML.
+### Jak mogę uwzględnić inne opcje zapisywania HTML?
+ Można skonfigurować różne właściwości`HtmlSaveOptions` aby dostosować wyjście HTML. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+
+### Czy można zapisać kod HTML w strumieniu?
+ Absolutnie! Możesz zapisać dokument w strumieniu, przekazując obiekt strumienia do`Save` metoda.
+
+### Jak uzyskać pomoc, jeśli napotkam problemy?
+ Możesz uzyskać wsparcie od[forum dyskusyjne](https://forum.aspose.com/c/words/8).

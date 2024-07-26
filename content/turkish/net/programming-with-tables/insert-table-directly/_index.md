@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Bu kod yeni bir Word belgesini başlatır. Değiştirmeniz gerekecek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+ Bu kod yeni bir Word belgesini başlatır. Değiştirmeniz gerekecek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
 
 ## Adım 2: Tablo Nesnesini Oluşturma
 
@@ -71,7 +71,7 @@ Bir tablo satırlardan ve hücrelerden oluşur. Bu elemanları adım adım ekley
 // Burada bizim için satırları ve hücreleri oluşturmak için ProvidingMinimum'u çağırabiliriz. Bu yöntem kullanılıyor
 // Belirtilen düğümün geçerli olduğundan emin olmak için. Bu durumda geçerli bir tablonun en az bir Satır ve bir hücreye sahip olması gerekir.
 // Bunun yerine sırayı ve tabloyu kendimiz oluşturmayı ele alacağız.
-//Bir algoritmanın içinde bir tablo oluşturuyor olsaydık, bunu yapmanın en iyi yolu bu olurdu.
+// Bir algoritmanın içinde bir tablo oluşturuyor olsaydık, bunu yapmanın en iyi yolu bu olurdu.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

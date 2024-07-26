@@ -15,7 +15,7 @@ Trong ví dụ này, chúng tôi sẽ hướng dẫn bạn cách chia tài liệ
 Để bắt đầu, chúng ta cần chỉ định thư mục tài liệu của bạn và tải tài liệu vào đối tượng Document. Đây là cách thực hiện:
 
 ```csharp
-//Đường dẫn đến thư mục tài liệu.
+// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```
@@ -81,7 +81,7 @@ Hãy thoải mái khám phá các tính năng mạnh mẽ khác do Aspose.Words 
 ### Câu hỏi thường gặp
 
 #### Câu hỏi 1: Tôi có thể chia tài liệu Word thành các phần dựa trên các tiêu chí cụ thể ngoài dấu ngắt phần không?
-Có, bạn có thể tùy chỉnh tiêu chí phân chia theo nhu cầu cụ thể của mình. Ngoài ngắt phần, bạn có thể phân chia tài liệu dựa trên các thành phần khác như tiêu đề, dấu trang hoặc nội dung cụ thể bằng cách sử dụng các tính năng và phương pháp khác nhau do Aspose.Words cho .NET cung cấp.
+Có, bạn có thể tùy chỉnh tiêu chí phân chia theo nhu cầu cụ thể của mình. Ngoài ngắt phần, bạn có thể chia tài liệu dựa trên các thành phần khác như tiêu đề, dấu trang hoặc nội dung cụ thể bằng cách sử dụng các tính năng và phương pháp khác nhau do Aspose.Words cho .NET cung cấp.
 
 #### Câu hỏi 2: Có thể hợp nhất các phần lại thành một tài liệu không?
  Có, bạn có thể hợp nhất các phần riêng biệt lại thành một tài liệu bằng cách nhập và kết hợp các phần từ nhiều tài liệu bằng cách sử dụng`ImportNode`Và`Sections.Add` phương pháp. Điều này cho phép bạn đảo ngược quá trình chia tách và xây dựng lại tài liệu gốc.

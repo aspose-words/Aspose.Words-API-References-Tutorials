@@ -9,7 +9,7 @@ url: /zh-hant/net/basic-conversions/docx-to-byte/
 ---
 ## 介紹
 
-在 .NET 開發領域，Aspose.Words 作為以程式設計方式操作 Word 文件的強大工具而脫穎而出。無論您是建立生成報告、自動化文件工作流程還是增強文件處理功能的應用程序，Aspose.Words 都能提供您所需的強大功能。本文深入探討使用 Aspose.Words for .NET 將 Docx 檔案轉換為位元組數組，並提供詳細的逐步指南來幫助您有效地利用此功能。
+在 .NET 開發領域，Aspose.Words 作為以程式設計方式操作 Word 文件的強大工具而脫穎而出。無論您是建立生成報告、自動化文件工作流程還是增強文件處理能力的應用程序，Aspose.Words 都能提供您所需的強大功能。本文深入探討使用 Aspose.Words for .NET 將 Docx 檔案轉換為位元組數組，並提供詳細的逐步指南來幫助您有效地利用此功能。
 
 ## 先決條件
 

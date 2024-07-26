@@ -13,7 +13,7 @@ No hej! Czy zdarzyło Ci się kiedyś przekonwertować dokument Word na plik PDF
 
 ## Warunki wstępne
 
-Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
+Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby rozpocząć:
 
 1.  Biblioteka Aspose.Words dla .NET: Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
 2. .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.

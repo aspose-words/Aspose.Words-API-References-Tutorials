@@ -89,7 +89,7 @@ doc.save("FormattedDocument.doc");
 
 ## Çözüm
 
-Aspose.Words for Java, belgelerinizdeki alanlarla çalışmak için güçlü özellikler sağlar. Kolayca temel alan birleştirme işlemlerini gerçekleştirebilir, koşullu alanlarla çalışabilir, resimler ekleyebilir ve tabloları biçimlendirebilirsiniz. Dinamik ve özelleştirilmiş belgeler oluşturmak için bu teknikleri belge otomasyon süreçlerinize ekleyin.
+Aspose.Words for Java, belgelerinizdeki alanlarla çalışmak için güçlü özellikler sunar. Kolayca temel alan birleştirme işlemlerini gerçekleştirebilir, koşullu alanlarla çalışabilir, resimler ekleyebilir ve tabloları biçimlendirebilirsiniz. Dinamik ve özelleştirilmiş belgeler oluşturmak için bu teknikleri belge otomasyon süreçlerinize ekleyin.
 
 ## SSS'ler
 

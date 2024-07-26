@@ -127,7 +127,7 @@ Tạo bố cục bảng phức tạp thường yêu cầu hợp nhất và chia 
 
 ## Điều chỉnh chiều cao và chiều rộng của hàng và cột
 
-Tinh chỉnh kích thước hàng và cột để có bố cục bảng cân đối:
+Tinh chỉnh kích thước hàng và cột để có bố cục bảng cân bằng:
 
 1. Điều chỉnh chiều cao hàng: Sửa đổi chiều cao hàng dựa trên nội dung.
 

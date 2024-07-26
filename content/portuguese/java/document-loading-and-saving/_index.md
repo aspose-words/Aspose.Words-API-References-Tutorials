@@ -56,7 +56,7 @@ Aprenda manipulação avançada de documentos com Aspose.Words for Java. Criptog
 Aprenda como salvar documentos HTML com layout fixo em Aspose.Words for Java. Siga nosso guia passo a passo para uma formatação perfeita de documentos.
 ### [Opções avançadas de salvamento de documentos HTML com Aspose.Words Java](./advance-html-documents-saving-options/)
 Neste tutorial, cobrimos várias opções avançadas de salvamento de documentos HTML com Aspose.Words para Java. Essas opções permitem que você crie HTML de alta qualidade.
-### [Salvando imagens de documentos em Aspose.Words para Java](./saving-images-from-documents/)
+### [Salvando imagens de documentos em Aspose.Words for Java](./saving-images-from-documents/)
 Aprenda como salvar imagens de documentos usando Aspose.Words for Java com nosso guia passo a passo abrangente. Personalize formatos, compactação e muito mais.
 ### [Salvando documentos como Markdown em Aspose.Words para Java](./saving-documents-as-markdown/)
 Aprenda como converter documentos do Word em Markdown com Aspose.Words para Java. Este guia passo a passo aborda alinhamento de tabelas, manipulação de imagens e muito mais.

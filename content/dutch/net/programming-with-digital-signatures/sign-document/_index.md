@@ -47,7 +47,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 ### Uitleg
 
 - `dataDir`: Dit is de map waar uw certificaat en documenten worden opgeslagen.
-- `CertificateHolder.Create` : Deze methode laadt het certificaat vanaf het opgegeven pad. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map, en`"morzal.pfx"` met de naam van uw certificaatbestand. De`"aw"` is het wachtwoord voor het certificaat.
+- `CertificateHolder.Create` : Deze methode laadt het certificaat vanaf het opgegeven pad. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory, en`"morzal.pfx"` met de naam van uw certificaatbestand. De`"aw"` is het wachtwoord voor het certificaat.
 
 ## Stap 2: Laad het Word-document
 

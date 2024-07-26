@@ -2,66 +2,94 @@
 title: Jednotka měření
 linktitle: Jednotka měření
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak určit měrnou jednotku při převodu dokumentu aplikace Word na ODT pomocí Aspose.Words for .NET.
+description: Zjistěte, jak nakonfigurovat funkci měrných jednotek v Aspose.Words pro .NET pro zachování formátování dokumentu během převodu ODT.
 type: docs
 weight: 10
 url: /cs/net/programming-with-odtsaveoptions/measure-unit/
 ---
+## Úvod
 
-Když převádíte dokument aplikace Word do formátu OpenDocument Text (ODT) v aplikaci C#, možná budete chtít zadat měrnou jednotku použitou pro měřitelné formátování a vlastnosti obsahu. S knihovnou Aspose.Words pro .NET můžete tuto funkci snadno určit pomocí možností uložení OdtSaveOptions. V tomto podrobném průvodci vás provedeme tím, jak používat zdrojový kód Aspose.Words for .NET C# k převodu dokumentu aplikace Word na ODT zadáním měrné jednotky pomocí OdtSaveOptions.
+Stalo se vám někdy, že jste museli převádět dokumenty aplikace Word do různých formátů, ale potřebovali jste pro své rozvržení konkrétní měrnou jednotku? Ať už máte co do činění s palci, centimetry nebo body, je zásadní zajistit, aby si dokument během procesu převodu zachoval integritu. V tomto tutoriálu si projdeme, jak nakonfigurovat funkci jednotky měření v Aspose.Words pro .NET. Tato výkonná funkce zajišťuje, že při převodu do formátu ODT (Open Document Text) bude formátování vašeho dokumentu zachováno přesně tak, jak jej potřebujete.
 
-## Porozumění knihovně Aspose.Words
+## Předpoklady
 
-Než se ponoříte do kódu, je důležité porozumět knihovně Aspose.Words pro .NET. Aspose.Words je výkonná knihovna pro vytváření, úpravu, převod a ochranu dokumentů aplikace Word na různých platformách včetně .NET. Nabízí mnoho funkcí pro manipulaci s dokumenty, jako je vkládání textu, změna formátování, přidávání oddílů a mnoho dalšího.
+Než se ponoříte do kódu, je několik věcí, které budete potřebovat:
 
-## Načítání dokumentu aplikace Word
+1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi Aspose.Words pro .NET. Pokud ji ještě nemáte, můžete si ji stáhnout z[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: IDE jako Visual Studio pro psaní a spouštění vašeho kódu C#.
+3. Základní znalost C#: Pochopení základů C# vám pomůže postupovat společně s výukovým programem.
+4. Dokument aplikace Word: Připravte si vzorový dokument aplikace Word, který můžete použít pro převod.
 
-Prvním krokem je načtení dokumentu aplikace Word, který chcete převést na ODT. Pomocí třídy Document načtěte dokument ze zdrojového souboru. Zde je příklad:
+## Importovat jmenné prostory
 
-```csharp
-Document doc = new Document(dataDir + "Document.docx");
-```
-
-V tomto příkladu načteme dokument "Document.docx" umístěný v adresáři dokumentů.
-
-## Konfigurace možností zálohování
-
-Dalším krokem je konfigurace možností zálohování pro převod na ODT. Použijte třídu OdtSaveOptions a nastavte vlastnost MeasureUnit na požadovanou hodnotu. Pokud například chcete jako jednotku měření použít palce, nastavte MeasureUnit na OdtSaveMeasureUnit.Inches. Jak na to:
+Než začneme kódovat, ujistěte se, že máme importované potřebné jmenné prostory. Přidejte je pomocí direktiv v horní části souboru kódu:
 
 ```csharp
-OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Vytvoříme nový objekt OdtSaveOptions a nastavíme vlastnost MeasureUnit na požadovanou hodnotu, v našem případě OdtSaveMeasureUnit.Inches, abychom jako měrnou jednotku použili palce.
+## Krok 1: Nastavte adresář dokumentů
 
-## Převést dokument na ODT
-
-Nyní, když jsme nakonfigurovali možnosti uložení, můžeme přistoupit k převodu dokumentu na ODT. Použijte metodu Uložit třídy Document k uložení převedeného dokumentu ve formátu ODT zadáním možností uložení. Zde je příklad:
-
-```csharp
-doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
-```
-
-tomto příkladu uložíme převedený dokument jako "WorkingWithOdtSaveOptions.MeasureUnit.odt" pomocí zadaných možností uložení.
-
-### Ukázkový zdrojový kód pro OdtSaveOptions s funkcí "Měrná jednotka" pomocí Aspose.Words for .NET
-
-
+Nejprve musíte definovat cestu k adresáři dokumentů. Zde se nachází váš dokument aplikace Word a kam se uloží převedený soubor.
 
 ```csharp
 // Cesta k adresáři vašich dokumentů
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Nahradit`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou k vašemu adresáři. Tím zajistíte, že váš kód ví, kde má najít váš dokument aplikace Word.
+
+## Krok 2: Načtěte dokument aplikace Word
+
+ Dále musíte načíst dokument aplikace Word, který chcete převést. To se provádí pomocí`Document` třídy z Aspose.Words.
+
+```csharp
 // Načtěte dokument aplikace Word
 Document doc = new Document(dataDir + "Document.docx");
+```
 
+Ujistěte se, že váš dokument aplikace Word s názvem "Document.docx" je přítomen v zadaném adresáři.
+
+## Krok 3: Nakonfigurujte jednotku měření
+
+ Nyní nakonfigurujme jednotku měření pro převod ODT. Tady se děje kouzlo. Nastavíme`OdtSaveOptions` používat palce jako měrnou jednotku.
+
+```csharp
 // Konfigurace možností zálohování pomocí funkce "Měrná jednotka".
 OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
+```
 
+ V tomto příkladu nastavujeme jednotku měření na palce. Můžete si vybrat i jiné jednotky jako např`OdtSaveMeasureUnit.Centimeters` nebo`OdtSaveMeasureUnit.Points` v závislosti na vašich požadavcích.
+
+## Krok 4: Převeďte dokument na ODT
+
+ Nakonec převedeme dokument aplikace Word do formátu ODT pomocí nakonfigurovaného`OdtSaveOptions`.
+
+```csharp
 // Převeďte dokument na ODT
 doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
+Tento řádek kódu uloží převedený dokument do určeného adresáře s aplikovanou novou měrnou jednotkou.
+
 ## Závěr
 
-V této příručce jsme vysvětlili, jak převést dokument aplikace Word na ODT zadáním měrné jednotky pomocí možností uložení OdtSaveOptions s knihovnou Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Zadání měrné jednotky při převodu do ODT umožňuje řídit formátování a rozměry výsledného dokumentu podle vašich konkrétních potřeb.
+tady to máte! Podle těchto kroků můžete snadno nakonfigurovat funkci měrných jednotek v Aspose.Words for .NET, abyste zajistili, že rozložení vašeho dokumentu bude během převodu zachováno. Ať už pracujete s palci, centimetry nebo body, tento výukový program vám ukáže, jak snadno převzít kontrolu nad formátováním dokumentu.
+
+## Nejčastější dotazy
+
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty Wordu. Umožňuje vývojářům vytvářet, upravovat, převádět a zpracovávat dokumenty aplikace Word bez nutnosti aplikace Microsoft Word.
+
+### Mohu použít jiné měrné jednotky než palce?
+ Ano, Aspose.Words for .NET podporuje další jednotky měření, jako jsou centimetry a body. Požadovanou jednotku můžete určit pomocí`OdtSaveMeasureUnit` výčet.
+
+### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
+ Ano, můžete si stáhnout bezplatnou zkušební verzi Aspose.Words for .NET z[tady](https://releases.aspose.com/).
+
+### Kde najdu dokumentaci k Aspose.Words pro .NET?
+ Kompletní dokumentaci k Aspose.Words pro .NET získáte na adrese[tento odkaz](https://reference.aspose.com/words/net/).
+
+### Jak mohu získat podporu pro Aspose.Words pro .NET?
+ Pro podporu můžete navštívit fórum Aspose.Words na adrese[tento odkaz](https://forum.aspose.com/c/words/8).

@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## चरण 3: विशिष्ट विकल्पों के साथ टेक्स्ट वॉटरमार्क जोड़ें
 
- हम इसका एक उदाहरण बनाएंगे`TextWatermarkOptions`क्लास पर जाएँ और टेक्स्ट वॉटरमार्क के लिए वांछित विकल्प सेट करें।
+ हम इसका एक उदाहरण बनाएंगे`TextWatermarkOptions` क्लास पर जाएँ और टेक्स्ट वॉटरमार्क के लिए वांछित विकल्प सेट करें।
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

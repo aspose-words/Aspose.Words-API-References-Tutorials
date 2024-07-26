@@ -9,7 +9,7 @@ url: /nl/net/add-content-using-documentbuilder/cursor-position/
 ---
 ## Invoering
 
-Hallo daar, mede-codeerders! Bent u ooit diep in een project verwikkeld geweest en worstelde u met Word-documenten in uw .NET-toepassingen? Je bent niet alleen. We zijn er allemaal geweest, krabden ons op het hoofd en probeerden erachter te komen hoe we Word-bestanden konden manipuleren zonder ons gezond verstand te verliezen. Vandaag duiken we in de wereld van Aspose.Words voor .NET: een fantastische bibliotheek die de pijn wegneemt bij het programmatisch omgaan met Word-documenten. We gaan uitleggen hoe u de cursorpositie in een Word-document kunt beheren met behulp van dit handige hulpmiddel. Dus pak je koffie en laten we gaan coderen!
+Hallo daar, mede-codeerders! Bent u ooit diep in een project verwikkeld geweest en worstelde u met Word-documenten in uw .NET-toepassingen? Je bent niet alleen. We zijn er allemaal geweest, krabden ons op het hoofd en probeerden uit te vinden hoe we Word-bestanden konden manipuleren zonder ons gezond verstand te verliezen. Vandaag duiken we in de wereld van Aspose.Words voor .NET: een fantastische bibliotheek die de pijn wegneemt bij het programmatisch omgaan met Word-documenten. We gaan uitleggen hoe u de cursorpositie in een Word-document kunt beheren met behulp van dit handige hulpmiddel. Dus pak je koffie en laten we gaan coderen!
 
 ## Vereisten
 

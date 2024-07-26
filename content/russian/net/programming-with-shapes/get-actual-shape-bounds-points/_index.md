@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Шаг 2. Вставьте фигуру изображения
- Использовать`InsertImage` метод`DocumentBuilder`объект, чтобы вставить фигуру изображения в документ. Укажите путь к файлу изображения в качестве параметра.
+ Использовать`InsertImage` метод`DocumentBuilder` объект, чтобы вставить фигуру изображения в документ. Укажите путь к файлу изображения в качестве параметра.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Stap 2: Laad het document en haal het inhoudsbeheer op
- Laad het Word-document met behulp van de`Document` constructor, waarbij het pad naar het document als parameter wordt doorgegeven. Haal het gewenste inhoudsbeheer uit het document op. In dit voorbeeld gaan we ervan uit dat het inhoudsbesturingselement de eerste gestructureerde documenttag in het document is.
+ Laad het Word-document met behulp van de`Document`constructor, waarbij het pad naar het document als parameter wordt doorgegeven. Haal het gewenste inhoudsbeheer uit het document op. In dit voorbeeld gaan we ervan uit dat het inhoudsbesturingselement de eerste gestructureerde documenttag in het document is.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

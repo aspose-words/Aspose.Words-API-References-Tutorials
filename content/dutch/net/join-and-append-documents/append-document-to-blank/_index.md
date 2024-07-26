@@ -48,7 +48,7 @@ Om aan de slag te gaan, moet u uw projectomgeving instellen. Dit omvat het maken
    Install-Package Aspose.Words
    ```
 
-Met deze opdracht wordt de Aspose.Words-bibliotheek in uw project gedownload en geïnstalleerd, waardoor alle krachtige functies voor documentmanipulatie beschikbaar komen.
+Met deze opdracht wordt de Aspose.Words-bibliotheek gedownload en in uw project geïnstalleerd, waardoor alle krachtige functies voor documentmanipulatie beschikbaar komen.
 
 ## Stap 2: Laad het brondocument
 

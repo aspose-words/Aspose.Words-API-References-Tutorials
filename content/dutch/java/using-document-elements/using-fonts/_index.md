@@ -8,7 +8,7 @@ weight: 12
 url: /nl/java/using-document-elements/using-fonts/
 ---
 
-In de wereld van documentverwerking onderscheidt Aspose.Words voor Java zich als een krachtige tool waarmee ontwikkelaars gemakkelijk Word-documenten kunnen maken en manipuleren. Een van de essentiële aspecten van documentopmaak is het werken met lettertypen. In deze stapsgewijze zelfstudie onderzoeken we hoe u lettertypen effectief kunt gebruiken in Aspose.Words voor Java.
+In de wereld van documentverwerking onderscheidt Aspose.Words voor Java zich als een krachtige tool waarmee ontwikkelaars gemakkelijk Word-documenten kunnen maken en manipuleren. Een van de essentiële aspecten van documentopmaak is het werken met lettertypen, en in deze stapsgewijze zelfstudie onderzoeken we hoe u lettertypen effectief kunt gebruiken in Aspose.Words voor Java.
 
 ## Invoering
 

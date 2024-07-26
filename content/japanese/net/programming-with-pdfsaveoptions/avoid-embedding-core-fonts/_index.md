@@ -2,95 +2,97 @@
 title: コアフォントを埋め込まないことでPDFファイルのサイズを縮小する
 linktitle: コアフォントを埋め込まないことでPDFファイルのサイズを縮小する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書を PDF に変換するときに、コア フォントを埋め込まないことで PDF ファイル サイズを縮小する方法を学びます。
+description: Aspose.Words for .NET を使用してコア フォントを埋め込まないことで PDF ファイルのサイズを縮小する方法を学びます。ステップ バイ ステップ ガイドに従って PDF を最適化してください。
 type: docs
 weight: 10
 url: /ja/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してコア フォントを埋め込まずに PDF ファイルのサイズを縮小する手順を説明します。この機能を使用すると、Word 文書を変換するときに Arial、Times New Roman などの基本フォントを PDF に埋め込むかどうかを制御できます。次の手順に従います。
+PDF ファイルがなぜこんなに大きいのかと首をかしげたことはありませんか? そう思っているのはあなただけではありません。よくある原因の 1 つは、Arial や Times New Roman などのコア フォントを埋め込むことです。幸い、Aspose.Words for .NET にはこの問題に対処する優れた方法があります。このチュートリアルでは、これらのコア フォントを埋め込まないようにして PDF ファイルのサイズを縮小する方法を紹介します。早速始めましょう!
 
-## ステップ1: ドキュメントの読み込み
+## 前提条件
 
-まず、PDF に変換したい Word 文書をアップロードします。
+このエキサイティングな旅に出発する前に、必要なものがすべて揃っているかどうか確認しましょう。簡単なチェックリストを以下に示します。
+
+-  Aspose.Words for .NET: Aspose.Words for .NETがインストールされていることを確認してください。まだインストールしていない場合は、ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio などの開発環境が必要です。
+- Word 文書: このチュートリアルでは、Word 文書 (例: 「Rendering.docx」) を使用します。
+- 基本的な C# の知識: C# の基本的な理解があれば、理解しやすくなります。
+
+さて、準備が整いましたので、本題に入りましょう。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートしましょう。この手順により、必要なすべての Aspose.Words 機能にアクセスできるようになります。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## ステップ1: ドキュメントディレクトリを初期化する
+
+ドキュメントの操作を始める前に、ドキュメントが保存されているディレクトリを指定する必要があります。これは、ファイルにアクセスするために不可欠です。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+交換する`"YOUR DOCUMENT DIRECTORY"` Word 文書が保存されている実際のパスを入力します。
+
+## ステップ2: Word文書を読み込む
+
+次に、PDF に変換する Word 文書を読み込む必要があります。この例では、「Rendering.docx」という名前の文書を使用しています。
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Word 文書への正しいパスを必ず指定してください。
+このコード行はドキュメントをメモリに読み込み、さらに処理する準備を整えます。
 
-## ステップ2: PDF変換オプションを設定する
+## ステップ3: PDF保存オプションを設定する
 
-PdfSaveOptions クラスのインスタンスを作成し、基本的なフォント埋め込み回避を有効にします。
+次は魔法のパートです。コアフォントが埋め込まれないように PDF 保存オプションを設定します。これは PDF ファイルのサイズを縮小するのに役立つ重要なステップです。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-このオプションは、基本フォントを PDF に埋め込むかどうかを制御します。
+設定`UseCoreFonts`に`true`Arial や Times New Roman などのコアフォントが PDF に埋め込まれないようにし、ファイル サイズを大幅に削減します。
 
-## ステップ3: ドキュメントをPDFに変換する
+## ステップ4: ドキュメントをPDFとして保存する
 
-使用`Save`変換オプションを指定して Word 文書を PDF に変換する方法:
+最後に、設定された保存オプションを使用して、Word 文書を PDF として保存します。この手順では、コア フォントを埋め込まずに PDF ファイルが生成されます。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-変換した PDF を保存するには、正しいパスを指定してください。
-
-### Aspose.Words for .NET を使用してコア フォントの埋め込みを回避するためのサンプル ソース コード
-
-Aspose.Words for .NET でコア フォントの埋め込みを回避する機能を使用するための完全なソース コードは次のとおりです。
-
-```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	//出力 PDF には、Arial、Times New Roman などのコア フォントは埋め込まれません。
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-これらの手順に従うと、Aspose.Words for .NET を使用して Word 文書を変換するときに、基本フォントを PDF に埋め込むかどうかを簡単に制御できます。
-
+これで完了です。PDF ファイルは、かさばるコア フォントなしで、指定したディレクトリに保存されます。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して基本フォントを埋め込まないことで PDF ファイルのサイズを縮小する方法を説明しました。この機能を使用すると、Word 文書を変換するときに基本フォントを PDF に埋め込むかどうかを制御できます。説明されている手順に従うことで、基本フォントの埋め込みまたは非埋め込みを簡単に制御できます。これにより、PDF ファイルのサイズが縮小され、さまざまなデバイスやプラットフォームでの互換性が向上し、文書の外観が統一されます。基本フォントを埋め込まない場合の影響を考慮し、文書が期待どおりにレンダリングされるかどうか実験することを忘れないでください。
+Aspose.Words for .NET を使用すると、PDF ファイルのサイズを簡単に縮小できます。コア フォントの埋め込みを回避することで、ファイル サイズを大幅に縮小でき、ドキュメントの共有や保存が容易になります。このチュートリアルが役に立ち、プロセスを明確に理解していただければ幸いです。小さな調整が大きな違いを生むことを忘れないでください。
 
-### よくある質問
+## よくある質問
 
-#### Q: PDF ファイルにベースフォントを埋め込まないオプションとは何ですか? また、それが重要なのはなぜですか?
-A: PDF ファイルに基本フォントを埋め込まないオプションは、Word 文書を変換するときに、Arial、Times New Roman などの基本フォントを PDF に埋め込む必要があるかどうかを制御します。これは、PDF リーダー システムで一般的に使用できるフォントを含めないようにすることで、PDF ファイルのサイズを縮小するために重要です。また、さまざまなデバイスやプラットフォーム間で PDF 文書の互換性を高め、外観の一貫性を保つことにも役立ちます。
+### PDF にコアフォントを埋め込まないほうがよいのはなぜですか?
+コアフォントの埋め込みを避けることでファイルサイズが小さくなり、共有や保存が容易になります。
 
-#### Q: PDF ファイルに基本フォントを埋め込まないように Aspose.Words for .NET を構成するにはどうすればよいでしょうか?
-A: Aspose.Words for .NET を構成して PDF ファイルにコア フォントを埋め込まないようにするには、次の手順に従います。
+### 埋め込まれたコアフォントがなくても PDF を正しく表示できますか?
+はい、Arial や Times New Roman などのコアフォントは、ほとんどのシステムで一般的に利用できます。
 
-ドキュメントが保存されているディレクトリパスを次のように設定します。`"YOUR DOCUMENTS DIRECTORY"`ドキュメント ディレクトリの実際のパスを入力します。
+### カスタムフォントを埋め込む必要がある場合はどうすればよいですか?
+カスタマイズできます`PdfSaveOptions`必要に応じて特定のフォントを埋め込みます。
 
- PDFに変換したいWord文書を読み込み、`Document`クラスと指定されたドキュメント パス。
+### Aspose.Words for .NET は無料で使用できますか?
+ Aspose.Words for .NETにはライセンスが必要です。無料トライアルをご利用いただけます。[ここ](https://releases.aspose.com/).
 
-インスタンスを作成する`PdfSaveOptions`クラスを設定し、`UseCoreFonts`財産に`true`これにより、生成された PDF ファイルに基本フォントが埋め込まれなくなります。
-
-使用`Save`方法の`Document`以前に設定した変換オプションを指定してドキュメントを PDF 形式で保存するオブジェクト。
-
-#### Q: PDF ファイルにベースフォントを埋め込まないことの利点は何ですか?
-A: PDF ファイルにベースフォントを埋め込まないことの利点は次のとおりです。
-
-PDF ファイル サイズの縮小: Arial、Times New Roman などの一般的なフォントの埋め込みを避けることで、PDF ファイルのサイズを縮小でき、ファイルの保存、共有、転送が容易になります。
-
-互換性の向上: PDF リーダー システムで一般的に使用できる基本フォントを使用することで、さまざまなデバイスやプラットフォームでの互換性とドキュメントの外観が向上します。
-
-#### Q: PDF ファイルに基本フォントを埋め込まないと、どのような影響がありますか?
-A: PDF ファイルに基本フォントを埋め込まない場合の結果は次のようになります。
-
-異なる外観: PDF を開いたシステムで基本フォントが使用できない場合は代替フォントが使用され、意図した外観と異なる可能性があります。
-
-読みやすさの問題: 使用される代替フォントは元のフォントほど読みやすくない場合があり、ドキュメントの読みやすさに影響する可能性があります。
+### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
+詳細なドキュメントは以下をご覧ください[ここ](https://reference.aspose.com/words/net/).

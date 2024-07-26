@@ -16,5 +16,5 @@ Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini akan memban
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Rentang Hapus Teks Dalam Dokumen Word](./ranges-delete-text/) | Pelajari cara menghapus teks dalam rentang tertentu di dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Rentang Dapatkan Teks Dalam Dokumen Word](./ranges-get-text/) | Pelajari cara mengekstrak teks dengan mudah dalam dokumen Word menggunakan Aspose.Words untuk .NET. |
+| [Rentang Hapus Teks Dalam Dokumen Word](./ranges-delete-text/) | Pelajari cara menghapus teks dari suatu rentang dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah ini. Sempurna untuk pengembang C#. |
+| [Rentang Dapatkan Teks Dalam Dokumen Word](./ranges-get-text/) | Ekstrak teks dari dokumen Word dengan mudah menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci kami untuk memulai dengan mudah. |

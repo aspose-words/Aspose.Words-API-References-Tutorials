@@ -2,7 +2,7 @@
 title: تنسيق الخط
 linktitle: تنسيق الخط
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: في هذا البرنامج التعليمي، تعرف على كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words لـ .NET.
+description: في هذا البرنامج التعليمي، تعرف على كيفية تنسيق الخط في مستند Word باستخدام Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /ar/net/working-with-fonts/font-formatting/

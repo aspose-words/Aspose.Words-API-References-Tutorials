@@ -9,13 +9,13 @@ url: /pl/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 ---
 ## Wstęp
 
-Witamy w kolejnym głębokim zanurzeniu się w świat Aspose.Words dla .NET. Dzisiaj zajmiemy się ciekawą sztuczką: konwersją obrazów SVG do formatów EMF lub WMF w dokumentach Word. Może to brzmieć nieco technicznie, ale nie martw się. Pod koniec tego samouczka będziesz w tym profesjonalistą. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz pracę z Aspose.Words dla .NET, ten przewodnik krok po kroku przeprowadzi Cię przez wszystko, co musisz wiedzieć.
+Witamy w kolejnym głębokim zanurzeniu się w świat Aspose.Words dla .NET. Dzisiaj zajmiemy się ciekawą sztuczką: konwersją obrazów SVG do formatów EMF lub WMF w dokumentach Word. Może to brzmieć nieco technicznie, ale nie martw się. Pod koniec tego samouczka będziesz w tym profesjonalistą. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz pracę z Aspose.Words dla .NET, ten przewodnik przeprowadzi Cię krok po kroku przez wszystko, co musisz wiedzieć.
 
 ## Warunki wstępne
 
 Zanim zagłębimy się w kod, upewnijmy się, że mamy wszystko skonfigurowane. Oto, czego potrzebujesz:
 
-1. Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję. Jeśli go nie masz, możesz go pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję. Jeśli go nie masz, możesz go pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
 2. .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
 3. Środowisko programistyczne: IDE takie jak Visual Studio ułatwi Ci życie.
 4. Podstawowa znajomość języka C#: Nie musisz być ekspertem, ale podstawowa znajomość będzie pomocna.

@@ -103,7 +103,7 @@ builder.MoveToBookmark("MyBookmark1", false, true);
 ## Langkah 5: Sisipkan Teks di Ujung Bookmark
 
 
-Setelah Anda berada di akhir bookmark, Anda dapat menyisipkan teks atau konten lainnya. Mari tambahkan satu baris teks sederhana:
+Setelah Anda berada di akhir penanda, Anda dapat menyisipkan teks atau konten lainnya. Mari tambahkan satu baris teks sederhana:
 
 ```csharp
 builder.Writeln("This is a bookmark.");

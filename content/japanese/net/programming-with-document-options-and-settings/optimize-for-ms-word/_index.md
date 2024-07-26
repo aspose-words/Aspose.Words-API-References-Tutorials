@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
 ## よくある質問
 
 ### Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、開発者がプログラムによって Word 文書を作成、操作、変換できるようにする強力なライブラリです。
+Aspose.Words for .NET は、開発者がプログラムで Word 文書を作成、操作、変換できるようにする強力なライブラリです。
 
 ### 他のバージョンの MS Word 用に最適化できますか?
 もちろんです！Aspose.Wordsは複数のバージョンをサポートしています。`MsWordVersion.Word2016`必要なバージョンを選択してください。

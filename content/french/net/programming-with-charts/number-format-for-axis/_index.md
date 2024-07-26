@@ -9,7 +9,7 @@ url: /fr/net/programming-with-charts/number-format-for-axis/
 ---
 ## Introduction
 
-Salut! Avez-vous déjà travaillé avec des graphiques dans vos documents et souhaité pouvoir formater les nombres sur votre axe pour leur donner un aspect plus professionnel ? Eh bien, vous avez de la chance ! Dans ce didacticiel, nous allons approfondir la façon dont vous pouvez y parvenir en utilisant Aspose.Words pour .NET. Cette puissante bibliothèque vous permet de gérer les documents Word d'une manière aussi simple que bonjour. Et aujourd’hui, nous nous concentrons sur la refonte de ces axes de graphique avec des formats de nombres personnalisés.
+Salut! Avez-vous déjà travaillé avec des graphiques dans vos documents et souhaité pouvoir formater les nombres sur votre axe pour leur donner un aspect plus professionnel ? Eh bien, vous avez de la chance ! Dans ce didacticiel, nous allons approfondir la façon dont vous pouvez y parvenir en utilisant Aspose.Words pour .NET. Cette puissante bibliothèque vous permet de gérer les documents Word d'une manière aussi simple que bonjour. Et aujourd’hui, nous nous concentrons sur la refonte de ces axes de graphique avec des formats de nombres personnalisés.
 
 ## Conditions préalables
 
@@ -86,7 +86,7 @@ Enfin, formatons les nombres sur l'axe Y pour les rendre plus lisibles. C’est 
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
- Le`FormatCode` La propriété vous permet de définir un format personnalisé pour les nombres sur l'axe. Dans cet exemple,`#,##0`garantit que les grands nombres sont affichés avec des virgules pour les milliers.
+ Le`FormatCode` La propriété vous permet de définir un format personnalisé pour les nombres sur l’axe. Dans cet exemple,`#,##0`garantit que les grands nombres sont affichés avec des virgules pour les milliers.
 
 ## Étape 5 : Sauvegarde du document
 

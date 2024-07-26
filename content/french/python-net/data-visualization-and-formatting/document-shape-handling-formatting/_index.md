@@ -37,7 +37,7 @@ Cet extrait de code initialise un nouveau document, ajoute un paragraphe avec le
 
 ## Ajouter des formes élégantes
 
-Les formes sont un moyen fantastique d’ajouter des éléments visuels à votre document. Aspose.Words for Python vous permet d'insérer diverses formes, telles que des rectangles, des cercles et des flèches. Ajoutons un rectangle à notre document :
+Les formes sont un moyen fantastique d'ajouter des éléments visuels à votre document. Aspose.Words for Python vous permet d'insérer diverses formes, telles que des rectangles, des cercles et des flèches. Ajoutons un rectangle à notre document :
 
 ```python
 # Add a rectangle shape

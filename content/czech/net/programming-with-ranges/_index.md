@@ -16,5 +16,5 @@ Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy v
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Rozsahy Odstranění textu v dokumentu aplikace Word](./ranges-delete-text/) | Zjistěte, jak odstranit text v určitých oblastech v dokumentu aplikace Word pomocí Aspose.Words for .NET. |
-| [Rozsahy získat text v dokumentu aplikace Word](./ranges-get-text/) | Naučte se, jak snadno extrahovat text z dokumentu aplikace Word pomocí Aspose.Words for .NET. |
+| [Rozsahy Odstranění textu v dokumentu aplikace Word](./ranges-delete-text/) | Naučte se, jak odstranit text z rozsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného kurzu. Ideální pro vývojáře v C#. |
+| [Rozsahy získat text v dokumentu aplikace Word](./ranges-get-text/) | Extrahujte text z dokumentů aplikace Word bez námahy pomocí Aspose.Words pro .NET. Postupujte podle našeho podrobného průvodce, abyste mohli snadno začít. |

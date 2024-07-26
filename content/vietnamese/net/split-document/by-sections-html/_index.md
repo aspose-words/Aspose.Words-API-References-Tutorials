@@ -15,7 +15,7 @@ Trong ví dụ này, chúng tôi sẽ chỉ cho bạn cách chia tài liệu Wor
 Để bắt đầu, hãy chỉ định thư mục cho tài liệu của bạn và tải tài liệu vào đối tượng Tài liệu. Đây là cách thực hiện:
 
 ```csharp
-//Đường dẫn đến thư mục tài liệu.
+// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```
@@ -66,7 +66,7 @@ Aspose.Words for .NET cung cấp nhiều tùy chọn khác nhau để tùy chỉ
 
 #### Tôi có thể chia tài liệu dựa trên tiêu chí khác không?
 
-Có, ngoài việc sử dụng dấu ngắt phần làm tiêu chí phân chia, Aspose.Words for .NET còn cung cấp các tùy chọn khác như ngắt đoạn, kiểu tiêu đề hoặc nội dung cụ thể làm tiêu chí để phân chia tài liệu. Bạn có thể chọn tiêu chí phù hợp nhất dựa trên yêu cầu của mình và điều chỉnh mã cho phù hợp.
+Có, ngoài việc sử dụng dấu ngắt phần làm tiêu chí phân tách, Aspose.Words for .NET còn cung cấp các tùy chọn khác như ngắt đoạn, kiểu tiêu đề hoặc nội dung cụ thể làm tiêu chí để phân chia tài liệu. Bạn có thể chọn tiêu chí phù hợp nhất dựa trên yêu cầu của mình và điều chỉnh mã cho phù hợp.
 
 #### Có thể chia tài liệu thành các định dạng khác ngoài HTML không?
 

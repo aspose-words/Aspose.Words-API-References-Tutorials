@@ -35,7 +35,7 @@ doc.save("NewDocument.docx");
 
 ## 新增段落並設定其格式
 
-段落是任何文件的構建塊。您可以根據需要添加段落並設定它們的格式。以下是新增段落並設定其對齊方式的範例：
+段落是任何文件的構建塊。您可以新增段落並根據需要設定它們的格式。以下是新增段落並設定其對齊方式的範例：
 
 ```java
 //建立一個新文檔
@@ -274,7 +274,7 @@ pageSetup.setTopMargin(72);    // 1吋（72點）
 pageSetup.setBottomMargin(72); // 1吋（72點）
 
 //為文件添加內容
-//……
+//…
 
 //儲存文件
 doc.save("PageLayoutDocument.docx");
@@ -305,7 +305,7 @@ Field pageField = new Field(doc, FieldType.FIELD_PAGE);
 footer.appendChild(pageField);
 
 //將內容新增至文件正文
-//……
+//…
 
 //儲存文件
 doc.save("HeaderFooterDocument.docx");
@@ -351,7 +351,7 @@ doc.save("TableDocument.docx");
 Document doc = new Document();
 
 //為文件添加內容
-//……
+//…
 
 //將文件另存為 PDF
 doc.save("Document.pdf", SaveFormat.PDF);

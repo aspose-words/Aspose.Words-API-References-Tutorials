@@ -2,95 +2,97 @@
 title: Minska PDF-filstorleken genom att inte bädda in kärnteckensnitt
 linktitle: Minska PDF-filstorleken genom att inte bädda in kärnteckensnitt
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du minskar PDF-filstorleken genom att inte bädda in kärnteckensnitt när du konverterar Word-dokument till PDF med Aspose.Words för .NET.
+description: Lär dig hur du minskar PDF-filstorleken genom att inte bädda in kärnteckensnitt med Aspose.Words för .NET. Följ vår steg-för-steg-guide för att optimera dina PDF-filer.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## Introduktion
 
-I den här handledningen går vi igenom stegen för hur du minskar PDF-filstorleken genom att inte bädda in kärnteckensnitt med Aspose.Words för .NET. Den här funktionen låter dig styra om grundläggande typsnitt som Arial, Times New Roman, etc. måste bäddas in i PDF:en när du konverterar ett Word-dokument. Följ stegen nedan:
+Kommer du någonsin på att du kliar dig i huvudet och undrar varför dina PDF-filer är så stora? Tja, du är inte ensam. En vanlig boven är att bädda in kärnteckensnitt som Arial och Times New Roman. Lyckligtvis har Aspose.Words för .NET ett smart sätt att lösa detta problem. I den här handledningen kommer jag att visa dig hur du minskar din PDF-filstorlek genom att undvika inbäddning av dessa kärnteckensnitt. Låt oss dyka direkt in!
 
-## Steg 1: Ladda dokumentet
+## Förutsättningar
 
-Börja med att ladda upp Word-dokumentet du vill konvertera till PDF:
+Innan vi ger oss ut på denna spännande resa, låt oss se till att du har allt du behöver. Här är en snabb checklista:
+
+-  Aspose.Words för .NET: Se till att du har Aspose.Words för .NET installerat. Om du inte har det ännu kan du ladda ner det[här](https://releases.aspose.com/words/net/).
+- Utvecklingsmiljö: Du behöver en utvecklingsmiljö som Visual Studio.
+- Ett Word-dokument: Vi kommer att använda ett Word-dokument (t.ex. "Rendering.docx") för denna handledning.
+- Grundläggande C#-kunskap: En grundläggande förståelse för C# hjälper dig att följa med.
+
+Okej, nu när vi är klara, låt oss gå in i det knasiga!
+
+## Importera namnområden
+
+Till att börja med, låt oss importera de nödvändiga namnrymden. Detta steg säkerställer att vi har tillgång till alla Aspose.Words-funktioner vi behöver.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Steg 1: Initiera din dokumentkatalog
+
+Innan vi börjar manipulera vårt dokument måste vi ange katalogen där våra dokument lagras. Detta är viktigt för att komma åt filerna.
+
+```csharp
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt Word-dokument finns.
+
+## Steg 2: Ladda Word-dokumentet
+
+Därefter måste vi ladda Word-dokumentet som vi vill konvertera till PDF. I det här exemplet använder vi ett dokument som heter "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Var noga med att ange rätt sökväg till ditt Word-dokument.
+Denna kodrad laddar dokumentet i minnet, redo för vidare bearbetning.
 
-## Steg 2: Ställ in PDF-konverteringsalternativ
+## Steg 3: Konfigurera PDF-sparalternativ
 
-Skapa en instans av klassen PdfSaveOptions och aktivera grundläggande teckensnittsinbäddning:
+Nu kommer den magiska delen! Vi kommer att konfigurera PDF-sparalternativen för att undvika att bädda in kärnteckensnitt. Detta är nyckelsteget som hjälper till att minska PDF-filstorleken.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-Det här alternativet styr om basteckensnitt ska bäddas in i PDF:en eller inte.
+ Miljö`UseCoreFonts` till`true` säkerställer att kärnteckensnitt som Arial och Times New Roman inte är inbäddade i PDF-filen, vilket avsevärt minskar filstorleken.
 
-## Steg 3: Konvertera dokument till PDF
+## Steg 4: Spara dokumentet som PDF
 
- Använd`Save` metod för att konvertera Word-dokumentet till PDF genom att ange konverteringsalternativ:
+Slutligen sparar vi Word-dokumentet som en PDF med hjälp av de konfigurerade sparalternativen. Detta steg genererar PDF-filen utan att bädda in kärnteckensnitten.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Se till att ange rätt sökväg för att spara den konverterade PDF-filen.
-
-### Exempel på källkod för Undvik att bädda in kärnteckensnitt med Aspose.Words för .NET
-
-Här är den fullständiga källkoden för att använda funktionen för att undvika inbäddning av kärnteckensnitt med Aspose.Words för .NET:
-
-```csharp
-
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Utdata-PDF-filen kommer inte att bäddas in med kärnteckensnitt som Arial, Times New Roman etc.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-Genom att följa dessa steg kan du enkelt kontrollera om basteckensnitt ska bäddas in i PDF:en när du konverterar ett Word-dokument med Aspose.Words för .NET.
-
+Och där har du det! Din PDF-fil sparas nu i den angivna katalogen utan dessa skrymmande kärnteckensnitt.
 
 ## Slutsats
 
-den här handledningen förklarade vi hur man minskar storleken på en PDF-fil genom att inte bädda in grundläggande typsnitt med Aspose.Words för .NET. Den här funktionen låter dig styra om basteckensnitt ska bäddas in i PDF:en när du konverterar ett Word-dokument. Genom att följa stegen som beskrivs kan du enkelt styra inbäddning eller icke-inbäddning av grundläggande typsnitt, vilket kan hjälpa till att minska PDF-filstorleken och säkerställa bättre kompatibilitet och ett konsekvent utseende av dokumentet på olika enheter och plattformar. Glöm inte att överväga konsekvenserna av att inte bädda in bastypsnitt och att experimentera för att säkerställa att dokumentet återges som förväntat.
+Att minska PDF-filstorleken kan vara en bris med Aspose.Words för .NET. Genom att undvika inbäddning av kärnteckensnitt kan du minska filstorleken avsevärt, vilket gör det lättare att dela och lagra dina dokument. Jag hoppas att den här handledningen var till hjälp och gav dig en tydlig förståelse av processen. Kom ihåg att små justeringar kan göra stor skillnad!
 
-### Vanliga frågor
+## FAQ's
 
-#### F: Vad är alternativet att inte bädda in bastypsnitt i en PDF-fil och varför är det viktigt?
-S: Alternativet att inte bädda in basteckensnitt i en PDF-fil styr om basteckensnitt som Arial, Times New Roman, etc. måste bäddas in i PDF:en när ett Word-dokument konverteras. Detta kan vara viktigt för att minska storleken på PDF-filen genom att undvika att inkludera typsnitt som är allmänt tillgängliga på PDF-läsarsystem. Det kan också hjälpa till att säkerställa bättre kompatibilitet och konsekvent utseende för PDF-dokumentet på olika enheter och plattformar.
+### Varför ska jag undvika att bädda in kärnteckensnitt i PDF-filer?
+Att undvika att bädda in kärnteckensnitt minskar filstorleken, vilket gör det lättare att dela och lagra.
 
-#### F: Hur kan jag konfigurera Aspose.Words för .NET att inte bädda in basteckensnitt i en PDF-fil?
-S: För att konfigurera Aspose.Words för .NET att inte bädda in kärnteckensnitt i en PDF-fil, följ dessa steg:
+### Kan jag fortfarande visa PDF-filen korrekt utan inbäddade kärnteckensnitt?
+Ja, kärnteckensnitt som Arial och Times New Roman är generellt tillgängliga på de flesta system.
 
- Ställ in katalogsökvägen där dina dokument finns genom att ersätta`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+### Vad händer om jag behöver bädda in anpassade typsnitt?
+ Du kan anpassa`PdfSaveOptions`för att bädda in specifika typsnitt efter behov.
 
- Ladda Word-dokumentet du vill konvertera till PDF med hjälp av`Document` klass och den angivna dokumentsökvägen.
+### Är Aspose.Words för .NET gratis att använda?
+ Aspose.Words för .NET kräver en licens. Du kan få en gratis provperiod[här](https://releases.aspose.com/).
 
- Skapa en instans av`PdfSaveOptions` klass och ställ in`UseCoreFonts`egendom till`true`. Detta kommer att undvika inbäddning av bastypsnitt i den genererade PDF-filen.
-
- Använd`Save` metod för`Document` objekt för att spara dokumentet i PDF-format med angivande av konverteringsalternativen som konfigurerats tidigare.
-
-#### F: Vilka är fördelarna med att inte bädda in bastypsnitt i en PDF-fil?
-S: Fördelarna med att inte bädda in bastypsnitt i en PDF-fil är:
-
-Reduktion av PDF-filstorlek: Genom att undvika att bädda in vanliga typsnitt som Arial, Times New Roman, etc., kan PDF-filstorleken minskas, vilket gör det lättare att lagra, dela och överföra filer.
-
-Bättre kompatibilitet: Genom att använda grundläggande typsnitt som är allmänt tillgängliga på PDF-läsarsystem säkerställer du bättre kompatibilitet och dokumentutseende på olika enheter och plattformar.
-
-#### F: Vilka är konsekvenserna av att inte bädda in bastypsnitt i en PDF-fil?
-S: Konsekvenserna av att inte bädda in basteckensnitt i en PDF-fil är följande:
-
-Annat utseende: Om basteckensnitten inte är tillgängliga i systemet där PDF:en öppnas kommer ersättningsteckensnitt att användas, vilket kan resultera i ett annat utseende än tänkt.
-
-Läsbarhetsproblem: Ersättningsteckensnitt som används kanske inte är lika läsbara som de ursprungliga typsnitten, vilket kan påverka dokumentets läsbarhet.
+### Var kan jag hitta mer dokumentation om Aspose.Words för .NET?
+ Du kan hitta detaljerad dokumentation[här](https://reference.aspose.com/words/net/).

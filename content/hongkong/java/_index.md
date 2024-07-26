@@ -40,7 +40,7 @@ is_root: true
 ### [文件安全](./document-security/)
 使用 Aspose.Words for Java 增強文件安全性！實施保護、加密和數位簽章以實現強大的資料保護。 
 ### [文件分割](./document-splitting/)
-使用 Aspose.Words for Java 輕鬆分割文件！根據頁面範圍、段落計數或自訂標準有效地劃分大型文件。
+使用 Aspose.Words for Java 輕鬆分割文件！根據頁面範圍、段落計數或自訂標準有效地劃分大檔案。
 ### [文件修訂](./document-revision/)
 使用 Aspose.Words for Java 簡化文件修訂！輕鬆追蹤變更、管理版本控制並自動執行修訂任務。 
 ### [文件載入和儲存](./document-loading-and-saving/)

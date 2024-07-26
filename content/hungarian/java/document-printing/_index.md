@@ -33,4 +33,4 @@ Tanulja meg, hogyan lehet könnyedén személyre szabott dokumentumokat nyomtatn
 ### [Konkrét dokumentumoldalak nyomtatása](./printing-specific-document-pages/)
 Ismerje meg, hogyan nyomtathat ki bizonyos oldalakat Word dokumentumokból az Aspose.Words for Java használatával. Lépésről lépésre útmutató Java fejlesztőknek.
 ### [Dokumentum nyomtatása a PrintDialog segítségével](./print-document-printdialog/)
-Ismerje meg, hogyan nyomtathat dokumentumokat az Aspose.Words for Java használatával a PrintDialog segítségével. Ebben a lépésenkénti útmutatóban testreszabhatja a beállításokat, nyomtathat konkrét oldalakat és még sok mást.
+Ismerje meg, hogyan nyomtathat dokumentumokat az Aspose.Words for Java használatával a PrintDialog segítségével. Ebben a lépésenkénti útmutatóban testreszabhatja a beállításokat, nyomtathat konkrét oldalakat stb.

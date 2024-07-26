@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-sdt/combo-box-content-control/
 ---
 
-tym samouczku wyjaśniono, jak utworzyć kontrolkę zawartości pola kombi w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Elementy sterujące zawartością pola kombi umożliwiają użytkownikom wybranie elementu z listy rozwijanej.
+W tym samouczku wyjaśniono, jak utworzyć kontrolkę zawartości pola kombi w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Elementy sterujące zawartością pola kombi umożliwiają użytkownikom wybranie elementu z listy rozwijanej.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
@@ -17,7 +17,7 @@ Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 - Podstawowa znajomość języka C# i przetwarzania tekstów w dokumentach Word.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
- Rozpocznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+ Rozpocznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

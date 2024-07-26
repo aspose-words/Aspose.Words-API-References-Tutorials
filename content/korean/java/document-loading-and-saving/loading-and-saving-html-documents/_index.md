@@ -87,12 +87,12 @@ doc.save("Your Directory Path" + "WorkingWithHtmlLoadOptions.PreferredControlTyp
 
 ### Aspose.Words는 어떤 다른 문서 형식을 지원합니까?
 
-Aspose.Words는 DOC, DOCX, RTF, HTML, PDF 등을 포함한 광범위한 문서 형식을 지원합니다. 이는 Java 애플리케이션을 위한 포괄적인 문서 처리 기능을 제공합니다.
+Aspose.Words는 DOC, DOCX, RTF, HTML, PDF 등을 포함한 광범위한 문서 형식을 지원합니다. 이는 Java 애플리케이션에 대한 포괄적인 문서 처리 기능을 제공합니다.
 
 ### Aspose.Words는 기업 수준의 문서 조작에 적합합니까?
 
 전적으로! Aspose.Words는 문서 자동화, 보고 및 문서 생성을 위해 전 세계 기업에서 사용하는 강력한 솔루션입니다. 대규모 응용 프로그램에서 문서를 관리하기 위한 광범위한 기능을 제공합니다.
 
-### Aspose.Words for Java에 대한 추가 문서와 예제는 어디서 찾을 수 있나요?
+### Aspose.Words for Java에 대한 추가 문서와 예제는 어디에서 찾을 수 있나요?
 
 Aspose.Words for Java 설명서 웹사이트에서 자세한 설명서, 코드 예제 및 튜토리얼을 찾을 수 있습니다.[Aspose.Words for Java 문서](https://reference.aspose.com/words/java/).

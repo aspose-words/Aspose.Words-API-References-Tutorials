@@ -8,7 +8,7 @@ weight: 10
 url: /fr/net/programming-with-shapes/update-smart-art-drawing/
 ---
 
-Ce didacticiel explique comment mettre à jour le dessin Smart Art dans un document Word à l'aide d'Aspose.Words for .NET. En parcourant les formes du document et en vérifiant si elles contiennent du Smart Art, vous pouvez mettre à jour le dessin Smart Art pour refléter toutes les modifications apportées à ses données.
+Ce didacticiel explique comment mettre à jour le dessin Smart Art dans un document Word à l'aide d'Aspose.Words for .NET. En parcourant les formes du document et en vérifiant si elles contiennent Smart Art, vous pouvez mettre à jour le dessin Smart Art pour refléter toutes les modifications apportées à ses données.
 
 ## Conditions préalables
 Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
@@ -30,8 +30,8 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
-## Étape 3 : mettre à jour le dessin Smart Art
- Parcourez les formes du document à l'aide de l'outil`GetChildNodes` méthode avec le`NodeType.Shape` paramètre. Vérifiez si chaque forme a Smart Art en utilisant le`HasSmartArt` propriété, et si c'est vrai, appelez le`UpdateSmartArtDrawing` méthode pour mettre à jour le dessin Smart Art.
+## Étape 3 : Mettre à jour le dessin Smart Art
+ Parcourez les formes du document à l'aide de l'outil`GetChildNodes` méthode avec le`NodeType.Shape` paramètre. Vérifiez si chaque forme a Smart Art en utilisant le`HasSmartArt`propriété, et si c'est vrai, appelez le`UpdateSmartArtDrawing` méthode pour mettre à jour le dessin Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

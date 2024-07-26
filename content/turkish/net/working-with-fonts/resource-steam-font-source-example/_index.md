@@ -81,7 +81,7 @@ Son olarak yazı tipi ayarlarını uyguladıktan sonra belgeyi kaydedin. İstedi
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
-Bu adımları izleyerek, uygulamanızı yazı tipi kaynağı olarak bir kaynak akışını kullanacak şekilde yapılandırmış ve gerekli yazı tiplerinin belgeleriniz için katıştırılmış ve kullanılabilir olmasını sağlamış olursunuz.
+Bu adımları izleyerek uygulamanızı, yazı tipi kaynağı olarak bir kaynak akışını kullanacak şekilde yapılandırmış ve gerekli yazı tiplerinin belgeleriniz için katıştırılmış ve kullanılabilir olmasını sağlamış olursunuz.
 
 ## Çözüm
 

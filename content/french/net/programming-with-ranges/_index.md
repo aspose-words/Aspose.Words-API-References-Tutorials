@@ -16,5 +16,5 @@ Que vous soyez débutant ou développeur expérimenté, ces didacticiels vous ai
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Plages Supprimer le texte dans un document Word](./ranges-delete-text/) | Découvrez comment supprimer du texte dans des plages spécifiques dans un document Word à l'aide d'Aspose.Words pour .NET. |
-| [Les plages obtiennent du texte dans un document Word](./ranges-get-text/) | Découvrez comment extraire facilement du texte dans un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Plages Supprimer le texte dans un document Word](./ranges-delete-text/) | Découvrez comment supprimer du texte d'une plage dans un document Word à l'aide d'Aspose.Words for .NET avec ce didacticiel étape par étape. Parfait pour les développeurs C#. |
+| [Les plages obtiennent du texte dans un document Word](./ranges-get-text/) | Extrayez facilement le texte des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé pour démarrer en toute simplicité. |

@@ -16,5 +16,5 @@ Aspose.Words for .NET“使用范围进行文字处理”教程是学习如何�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [在 Word 文档中删除文本](./ranges-delete-text/) | 了解如何使用 Aspose.Words for .NET 删除 Word 文档中特定范围内的文本。 |
-| [在 Word 文档中获取文本范围](./ranges-get-text/) | 了解如何使用 Aspose.Words for .NET 轻松提取 Word 文档中的文本。 |
+| [在 Word 文档中删除文本](./ranges-delete-text/) | 通过本分步教程学习如何使用 Aspose.Words for .NET 从 Word 文档的某个范围中删除文本。非常适合 C# 开发人员。 |
+| [在 Word 文档中获取文本范围](./ranges-get-text/) | 使用 Aspose.Words for .NET 轻松从 Word 文档中提取文本。按照我们的详细指南轻松上手。 |

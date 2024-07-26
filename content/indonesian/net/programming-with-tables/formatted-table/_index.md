@@ -21,7 +21,7 @@ Untuk mulai membuat tabel yang diformat, kita perlu membuat dokumen baru dan men
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Buat dokumen dan inisialisasi pembuat dokumen
+//Buat dokumen dan inisialisasi pembuat dokumen
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

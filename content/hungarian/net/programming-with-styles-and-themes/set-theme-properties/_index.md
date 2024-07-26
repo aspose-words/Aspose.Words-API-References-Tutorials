@@ -19,7 +19,7 @@ Győződjön meg arról, hogy beállította fejlesztői környezetét az Aspose.
 Document doc = new Document();
 ```
 
-Ebben a lépésben létrehozunk egy újat`Document` tárgy.
+ Ebben a lépésben létrehozunk egy újat`Document` tárgy.
 
 ## 3. lépés: Szerkessze a téma tulajdonságait
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
-Ebben a lépésben elérjük a`Theme` tárgya a`Document` objektumot a dokumentumtéma lekéréséhez. Ezután módosíthatjuk a téma tulajdonságait, például a másodlagos betűtípusokat (`MinorFonts.Latin`) és színek (`Colors.Hyperlink`).
+ Ebben a lépésben elérjük a`Theme` tárgya a`Document` objektumot a dokumentumtéma lekéréséhez. Ezután módosíthatjuk a téma tulajdonságait, például a másodlagos betűtípusokat (`MinorFonts.Latin`) és színek (`Colors.Hyperlink`).
 
 ## 4. lépés: Mentse el a dokumentumot
 
@@ -67,7 +67,7 @@ A környezet beállításához gondoskodnia kell arról, hogy az Aspose.Words fo
 
 #### Hogyan érhetem el és módosíthatom a téma tulajdonságait?
 
- A téma tulajdonságainak eléréséhez és módosításához használja a`Theme` tárgya a`Document` osztály. A hozzáféréssel a`Theme` objektum tulajdonságait, például másodlagos betűtípusokat (`MinorFonts.Latin`) és színek (`Colors.Hyperlink`). Rendelje hozzá a kívánt értékeket ezekhez a tulajdonságokhoz a dokumentum témájának testreszabásához.
+ A téma tulajdonságainak eléréséhez és módosításához használja a`Theme` tárgya a`Document` osztály. A hozzáféréssel a`Theme`objektum tulajdonságait, például másodlagos betűtípusokat (`MinorFonts.Latin`) és színek (`Colors.Hyperlink`). Rendelje hozzá a kívánt értékeket ezekhez a tulajdonságokhoz a dokumentum témájának testreszabásához.
 
 #### Milyen előnyei vannak a tématulajdonságok Word-dokumentumban történő beállításának?
 
@@ -79,4 +79,4 @@ A téma tulajdonságainak megadásával egy Word-dokumentumban testreszabhatja a
 
 #### Elmenthetem a módosított dokumentumot különböző formátumokban?
 
- Igen, elmentheti a módosított dokumentumot az Aspose.Words for .NET által támogatott különféle formátumokban. A`Save` módszere a`Document` Az objektum lehetővé teszi a kimeneti fájlformátum megadását, például DOCX, PDF, HTML stb. Válassza ki a megfelelő formátumot az Ön igényei szerint.
+Igen, elmentheti a módosított dokumentumot az Aspose.Words for .NET által támogatott különféle formátumokban. A`Save` módszere a`Document` Az objektum lehetővé teszi a kimeneti fájlformátum megadását, például DOCX, PDF, HTML stb. Válassza ki a megfelelő formátumot az Ön igényei szerint.

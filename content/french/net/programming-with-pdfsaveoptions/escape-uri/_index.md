@@ -39,7 +39,7 @@ Avant de plonger dans le code, configurez le chemin d’accès à votre réperto
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin réel où vous souhaitez enregistrer votre document PDF.
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où vous souhaitez enregistrer votre document PDF.
 
 ## Étape 2 : Créer un nouveau document
 

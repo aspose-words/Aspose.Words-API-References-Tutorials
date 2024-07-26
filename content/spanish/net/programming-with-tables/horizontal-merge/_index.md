@@ -21,7 +21,7 @@ Para iniciar el procesamiento de palabras con la tabla y las celdas, necesitamos
 // Ruta a su directorio de documentos
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Cree el documento e inicialice el generador de documentos.
+//Cree el documento e inicialice el generador de documentos.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

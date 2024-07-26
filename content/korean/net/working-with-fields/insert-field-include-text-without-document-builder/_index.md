@@ -29,7 +29,7 @@ Paragraph para = new Paragraph(doc);
 
 ## 3단계: FieldIncludeText 필드 삽입
 
- 우리는`AppendField()` FieldIncludeText 필드를 단락에 삽입하는 메서드입니다.
+ 우리는`AppendField()` FieldIncludeText 필드를 단락에 삽입하는 방법입니다.
 
 ```csharp
 FieldIncludeText fieldIncludeText = (FieldIncludeText)para.AppendField(FieldType.FieldIncludeText, false);
@@ -95,6 +95,6 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 
 A: 문서 작성기 없이 텍스트 포함 필드를 삽입해도 Word 문서의 구조에 직접적인 영향을 미치지 않습니다. 그러나 문서 콘텐츠에 새 필드 요소를 추가합니다. 필요에 따라 기존 요소를 추가, 삭제, 수정하여 문서 구조를 조작할 수 있습니다.
 
-#### Q: .NET용 Aspose.Words를 사용하여 Word 문서에서 텍스트 포함 필드의 모양을 사용자 지정할 수 있나요?
+#### Q: .NET용 Aspose.Words를 사용하여 Word 문서에서 텍스트 포함 필드의 모양을 사용자 지정할 수 있습니까?
 
 A: 텍스트 포함 필드는 Word 문서의 모양을 직접 사용자 정의하지 않습니다. 그러나 .NET용 Aspose.Words에서 사용할 수 있는 단락 속성, 글꼴 속성 및 기타 서식 개체를 사용하여 포함된 텍스트의 서식을 지정할 수 있습니다.

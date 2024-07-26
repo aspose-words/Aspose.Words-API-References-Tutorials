@@ -132,7 +132,7 @@ Dan itu dia! Anda telah berhasil mengakses dan memverifikasi tanda tangan digita
 
 ### Bisakah saya menggunakan Aspose.Words untuk .NET untuk menambahkan tanda tangan digital ke dokumen Word?
 
-Ya, Anda dapat menggunakan Aspose.Words untuk .NET untuk menambahkan tanda tangan digital ke dokumen Word. Perpustakaan menyediakan fitur lengkap untuk menambah dan memverifikasi tanda tangan digital.
+Ya, Anda dapat menggunakan Aspose.Words untuk .NET untuk menambahkan tanda tangan digital ke dokumen Word. Perpustakaan menyediakan fitur lengkap untuk menambahkan dan memverifikasi tanda tangan digital.
 
 ### Jenis tanda tangan digital apa yang dapat diverifikasi Aspose.Words for .NET?
 

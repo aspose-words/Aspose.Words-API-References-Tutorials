@@ -2,88 +2,102 @@
 title: Gliederungsoptionen in einem PDF-Dokument festlegen
 linktitle: Gliederungsoptionen in einem PDF-Dokument festlegen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Festlegen von Gliederungsoptionen in einem PDF-Dokument mit Aspose.Words für .NET.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Gliederungsoptionen in einem PDF-Dokument festlegen. Verbessern Sie die PDF-Navigation, indem Sie Überschriftenebenen und erweiterte Gliederungen konfigurieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
+## Einführung
 
-Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Funktion „Gliederungsoptionen auf Metadateigröße festlegen“ mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials werden Sie wissen, wie Sie Gliederungsoptionen in einem Dokument festlegen und ein PDF mit den entsprechenden Gliederungsoptionen erstellen.
+Beim Arbeiten mit Dokumenten, insbesondere für berufliche oder akademische Zwecke, ist es entscheidend, Ihre Inhalte effektiv zu organisieren. Eine Möglichkeit, die Benutzerfreundlichkeit Ihrer PDF-Dokumente zu verbessern, besteht darin, Gliederungsoptionen festzulegen. Gliederungen oder Lesezeichen ermöglichen Benutzern eine effiziente Navigation durch das Dokument, genau wie Kapitel in einem Buch. In diesem Handbuch erfahren Sie, wie Sie diese Optionen mit Aspose.Words für .NET festlegen können, um sicherzustellen, dass Ihre PDF-Dateien gut organisiert und benutzerfreundlich sind.
 
-Stellen Sie vor dem Start sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Sie finden die Bibliothek und Installationsanweisungen auf der Aspose-Website.
+## Voraussetzungen
 
-## Schritt 1: Dokumentverzeichnis festlegen
+Bevor Sie beginnen, müssen Sie Folgendes sicherstellen:
 
- Zunächst müssen Sie den Pfad zum Verzeichnis angeben, in dem sich Ihre Dokumente befinden. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn nicht, können Sie[Laden Sie die neueste Version hier](https://releases.aspose.com/words/net/).
+2. Eine .NET-Entwicklungsumgebung: Sie benötigen eine funktionierende .NET-Entwicklungsumgebung wie beispielsweise Visual Studio.
+3. Grundlegende Kenntnisse in C#: Wenn Sie mit der Programmiersprache C# vertraut sind, können Sie den Schritten problemlos folgen.
+4. Ein Word-Dokument: Halten Sie ein Word-Dokument bereit, das Sie in ein PDF konvertieren.
+
+## Namespaces importieren
+
+Zuerst müssen Sie die erforderlichen Namespaces importieren. Hier fügen Sie die Aspose.Words-Bibliothek ein, um mit Ihrem Dokument zu interagieren. So richten Sie sie ein:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Schritt 1: Dokumentpfad festlegen
+
+Zu Beginn müssen Sie den Pfad zu Ihrem Word-Dokument angeben. Dies ist die Datei, die Sie in ein PDF mit Gliederungsoptionen konvertieren möchten. 
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Schritt 2: Dokument hochladen
-
-Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Rendering.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF mit den Planoptionen
+ Ersetzen Sie im obigen Codeausschnitt`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis. So weiß das Programm, wo das Word-Dokument zu finden ist.
 
-Um die Gliederungsoptionen im generierten PDF festzulegen, müssen wir die`PdfSaveOptions` Objekt. Wir können die Anzahl der Gliederungsebenen für Überschriften festlegen (`HeadingsOutlineLevels`) und die Anzahl der erweiterten Gliederungsebenen (`ExpandedOutlineLevels`).
+## Schritt 2: PDF-Speicheroptionen konfigurieren
+
+ Als nächstes müssen Sie die PDF-Speicheroptionen konfigurieren. Dazu gehört die Einstellung, wie Konturen in der PDF-Ausgabe behandelt werden sollen. Sie verwenden die`PdfSaveOptions` Klasse, um dies zu tun.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
+```
+
+Legen wir nun die Gliederungsoptionen fest. 
+
+### Gliederungsebenen für Überschriften festlegen
+
+ Der`HeadingsOutlineLevels` Die Eigenschaft definiert, wie viele Überschriftenebenen in der PDF-Gliederung enthalten sein sollen. Wenn Sie den Wert beispielsweise auf 3 setzen, werden bis zu drei Überschriftenebenen in die PDF-Gliederung aufgenommen.
+
+```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
+```
+
+### Erweiterte Gliederungsebenen festlegen
+
+ Der`ExpandedOutlineLevels`Diese Eigenschaft steuert, wie viele Gliederungsebenen standardmäßig erweitert werden sollen, wenn die PDF-Datei geöffnet wird. Wenn Sie diese Eigenschaft auf 1 setzen, werden die Überschriften der obersten Ebene erweitert, sodass die Hauptabschnitte klarer zu sehen sind.
+
+```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 ```
 
-## Schritt 4: Dokument als PDF mit Gliederungsoptionen speichern
+## Schritt 3: Speichern Sie das Dokument als PDF
 
-Abschließend können wir das Dokument mit den zuvor konfigurierten Speicheroptionen im PDF-Format speichern.
+ Wenn Sie die Optionen konfiguriert haben, können Sie das Dokument als PDF speichern. Verwenden Sie die`Save` Methode der`Document` Klasse und übergeben Sie den Dateipfad und die Speicheroptionen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-Das ist alles! Sie haben erfolgreich Gliederungsoptionen in einem Dokument festgelegt und mit Aspose.Words für .NET ein PDF mit entsprechenden Gliederungsoptionen erstellt.
-
-### Beispielquellcode zum Festlegen von Planoptionen auf die Metadateigröße mit Aspose.Words für .NET
-
-
-```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
-	saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
-   
-```
+Diese Codezeile speichert Ihr Word-Dokument als PDF und wendet dabei die von Ihnen konfigurierten Gliederungsoptionen an. 
 
 ## Abschluss
 
-In diesem Tutorial haben wir erklärt, wie Sie mit Aspose.Words für .NET Gliederungsoptionen in einem PDF-Dokument festlegen. Mit den beschriebenen Schritten können Sie ganz einfach Überschriften- und Gliederungsebenen in Ihrem Dokument festlegen und eine PDF-Datei mit entsprechenden Gliederungsoptionen erstellen. Profitieren Sie von den Vorteilen der Gliederungsoption, um mit Aspose.Words für .NET die Struktur und Navigation in Ihren PDF-Dokumenten zu verbessern.
+Das Festlegen von Gliederungsoptionen in einem PDF-Dokument kann dessen Navigation erheblich verbessern und es Benutzern erleichtern, die benötigten Abschnitte zu finden und darauf zuzugreifen. Mit Aspose.Words für .NET können Sie diese Einstellungen ganz einfach an Ihre Anforderungen anpassen und so sicherstellen, dass Ihre PDF-Dokumente so benutzerfreundlich wie möglich sind.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Was ist die Gliederungsoption in einem PDF-Dokument?
-A: Die Gliederungsoption in einem PDF-Dokument bezieht sich auf die hierarchische Struktur des Dokumentinhalts. Sie ermöglicht Ihnen die Erstellung eines interaktiven Inhaltsverzeichnisses und erleichtert die Navigation im Dokument. Gliederungsoptionen bestimmen die Titel- und Untertitelebenen, die in die Gliederung aufgenommen werden sollen, und den Detaillierungsgrad, der in der generierten Gliederung angezeigt werden soll.
+### Welchen Zweck hat das Festlegen von Gliederungsoptionen in einer PDF-Datei?
 
-#### F: Wie kann ich mit Aspose.Words für .NET Gliederungsoptionen in einem PDF-Dokument festlegen?
-A: Um Gliederungsoptionen in einem PDF-Dokument mit Aspose.Words für .NET festzulegen, folgen Sie diesen Schritten:
+Durch das Festlegen von Gliederungsoptionen können Benutzer leichter in großen PDF-Dokumenten navigieren, indem sie ein strukturiertes, anklickbares Inhaltsverzeichnis bereitstellen.
 
- Legen Sie den Verzeichnispfad fest, in dem sich Ihre Dokumente befinden, indem Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad Ihres Dokumentverzeichnisses.
+### Kann ich für unterschiedliche Abschnitte in meinem Dokument unterschiedliche Überschriftenebenen festlegen?
 
- Laden Sie das Dokument, das Sie in PDF konvertieren möchten, mit dem`Document` Klasse und geben Sie den Pfad zum Dokument im angegebenen Dokumentverzeichnis an.
+Nein, die Gliederungseinstellungen gelten global für das gesamte Dokument. Sie können Ihr Dokument jedoch mit entsprechenden Überschriftenebenen strukturieren, um einen ähnlichen Effekt zu erzielen.
 
- Konfigurieren Sie die Optionen zum Speichern als PDF, indem Sie eine Instanz des`PdfSaveOptions` Klasse und unter Verwendung der`OutlineOptions` -Eigenschaft, um die Gliederungsoptionen festzulegen. Sie können die Anzahl der Überschriftenebenen angeben, die in die Gliederung aufgenommen werden sollen, indem Sie`HeadingsOutlineLevels` und die Anzahl der erweiterten Gliederungsebenen mit dem`ExpandedOutlineLevels` Eigentum.
+### Wie kann ich die Änderungen in der Vorschau anzeigen, bevor ich die PDF-Datei speichere?
 
- Speichern Sie das Dokument im PDF-Format mit dem`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.
+Um zu prüfen, wie die Gliederung aussieht, können Sie PDF-Viewer verwenden, die die Gliederungsnavigation unterstützen. Einige Anwendungen bieten hierfür eine Vorschaufunktion.
 
-#### F: Wozu dient die Planoption in einem PDF-Dokument?
-A: Mit der Gliederungsoption in einem PDF-Dokument können Sie eine hierarchische Struktur des Inhalts erstellen, die die Navigation im Dokument und den Zugriff auf verschiedene Abschnitte erleichtert. So können Benutzer schnell zu bestimmten Teilen des Dokuments springen, indem sie auf Einträge im Inhaltsverzeichnis oder in der Gliederung klicken. Die Gliederungsoption verbessert außerdem das Leseerlebnis, indem sie einen Überblick über die Gesamtstruktur des Dokuments bietet.
+### Ist es möglich, die Gliederung nach dem Speichern der PDF-Datei zu entfernen?
+
+Ja, Sie können Konturen mithilfe einer PDF-Bearbeitungssoftware entfernen, dies ist mit Aspose.Words jedoch nicht direkt möglich, nachdem die PDF-Datei erstellt wurde.
+
+### Welche anderen PDF-Speicheroptionen kann ich mit Aspose.Words konfigurieren?
+
+Aspose.Words bietet verschiedene Optionen, beispielsweise das Festlegen der PDF-Konformitätsstufe, das Einbetten von Schriftarten und das Anpassen der Bildqualität.

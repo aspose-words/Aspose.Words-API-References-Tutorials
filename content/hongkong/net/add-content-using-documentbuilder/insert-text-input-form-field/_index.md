@@ -79,7 +79,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將文字輸入表單欄位插入 Word 文件中。這只是冰山一角。透過 Aspose.Words，您可以透過多種方式自動化和增強文件處理任務。從建立複雜的範本到產生互動式表單，可能性是無限的。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將文字輸入表單欄位插入 Word 文件中。這只是冰山一角。透過 Aspose.Words，您可以透過多種方式自動化和增強文件處理任務。從建立複雜的範本到產生互動式表單，可能性是無限的。
 
 ## 常見問題解答
 

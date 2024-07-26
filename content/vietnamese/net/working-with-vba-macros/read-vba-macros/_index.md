@@ -63,7 +63,7 @@ Trong hướng dẫn này, chúng ta đã biết cách đọc macro VBA từ tà
 
 #### Hỏi: Macro VBA trong tài liệu Word là gì?
 
-Đáp: Macro VBA trong tài liệu Word là một tập hợp hướng dẫn hoặc mã có thể chạy để tự động hóa các tác vụ hoặc thực hiện các hành động cụ thể trong tài liệu. Macro VBA cho phép bạn thêm chức năng tùy chỉnh và tự động hóa các hoạt động lặp đi lặp lại.
+Đáp: Macro VBA trong tài liệu Word là một tập hợp các hướng dẫn hoặc mã có thể chạy để tự động hóa các tác vụ hoặc thực hiện các hành động cụ thể trong tài liệu. Macro VBA cho phép bạn thêm chức năng tùy chỉnh và tự động hóa các hoạt động lặp đi lặp lại.
 
 #### Câu hỏi: Điều kiện tiên quyết để đọc macro VBA từ tài liệu Word là gì?
 

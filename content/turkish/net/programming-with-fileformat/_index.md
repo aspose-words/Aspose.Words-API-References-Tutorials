@@ -16,6 +16,6 @@ Raporlar oluşturmanız, özel belgeler oluşturmanız, Word belge görevlerini 
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Belge Dosya Formatını Algıla](./detect-file-format/) | Aspose.Words for .NET ile belge dosya formatını algılamak için adım adım kılavuz. |
-| [Word Belgesinde Dijital İmzayı Algılama](./detect-document-signatures/) | Aspose.Words for .NET ile bir belgedeki dijital imzaları tespit etmek için adım adım kılavuz. |
-| [Şifrelenmiş Word Belgesini Doğrulayın](./verify-encrypted-document/) | Bir belgenin Aspose.Words for .NET ile şifrelendiğini doğrulamak için adım adım kılavuz. |
+| [Belge Dosya Formatını Algıla](./detect-file-format/) | Bu kapsamlı, adım adım kılavuzla Aspose.Words for .NET kullanarak belge dosya formatlarını nasıl tespit edeceğinizi öğrenin. |
+| [Word Belgesinde Dijital İmzayı Algılama](./detect-document-signatures/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerindeki dijital imzaları nasıl tespit edeceğinizi öğrenin. |
+| [Şifrelenmiş Word Belgesini Doğrulayın](./verify-encrypted-document/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesinin şifreleme durumunu nasıl doğrulayacağınızı öğrenin. |

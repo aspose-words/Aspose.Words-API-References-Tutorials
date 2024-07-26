@@ -17,13 +17,13 @@ url: /ru/net/programming-with-shapes/add-group-shape/
 - Базовые знания C# и обработки документов Word.
 
 ## Шаг 1. Настройте каталог документов
- Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"`с фактическим путем к каталогу, в котором вы хотите сохранить документ.
+ Начните с настройки пути к каталогу ваших документов. Заменять`"YOUR DOCUMENT DIRECTORY"` с фактическим путем к каталогу, в котором вы хотите сохранить документ.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Шаг 2. Создайте новый документ и GroupShape
+## Шаг 2. Создайте новый документ и GroupShape.
  Создайте новый экземпляр`Document` класс и`GroupShape` объект для работы с документом.
 
 ```csharp
@@ -33,7 +33,7 @@ GroupShape groupShape = new GroupShape(doc);
 ```
 
 ## Шаг 3. Создайте и добавьте фигуры в GroupShape
- Создавайте отдельные фигуры, например`accentBorderShape`и`actionButtonShape` используя`Shape` сорт. Настройте их свойства по своему желанию. Добавьте эти фигуры в`groupShape` объект.
+ Создавайте отдельные фигуры, например`accentBorderShape`и`actionButtonShape` используя`Shape` сорт. Настройте их свойства по своему усмотрению. Добавьте эти фигуры в`groupShape` объект.
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1) { Width = 100, Height = 100 };
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Шаг 4. Установите размеры для GroupShape
-Установите ширину, высоту и размер координат для`groupShape`.
+ Установите ширину, высоту и размер координат для`groupShape`.
 
 ```csharp
 groupShape.Width = 200;

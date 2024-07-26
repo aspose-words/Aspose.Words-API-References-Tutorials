@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- V tomto posledním kroku uložíme výsledný dokument ve formátu .docx pomocí souboru`Save` a předání cesty k výstupnímu souboru.
+ tomto posledním kroku uložíme výsledný dokument ve formátu .docx pomocí souboru`Save` a předání cesty k výstupnímu souboru.
 
 Nyní můžete spustit zdrojový kód pro načtení textového dokumentu zadáním voleb manipulace s mezerami. Výsledný dokument bude uložen do zadaného adresáře s názvem "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
 

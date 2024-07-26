@@ -192,7 +192,7 @@ public void loadChm() throws Exception {
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons abordé divers aspects de l'utilisation des options de chargement dans Aspose.Words pour Java. Les options de chargement jouent un rôle crucial dans la personnalisation de la façon dont les documents sont chargés et traités, vous permettant d'adapter le traitement de vos documents à vos besoins spécifiques. Récapitulons les points clés abordés dans ce guide :
+Dans ce didacticiel, nous avons abordé divers aspects de l'utilisation des options de chargement dans Aspose.Words pour Java. Les options de chargement jouent un rôle crucial dans la personnalisation de la manière dont les documents sont chargés et traités, vous permettant d'adapter le traitement de vos documents à vos besoins spécifiques. Récapitulons les points clés abordés dans ce guide :
 
 ## FAQ
 

@@ -14,7 +14,7 @@ Các tài liệu hiện đại không chỉ xoay quanh nội dung chứa đựng
 
 ## Thiết lập môi trường
 
- Trước khi chúng ta đi sâu vào việc tạo các hình dạng tài liệu ấn tượng, hãy đảm bảo bạn đã cài đặt Aspose.Words cho Python. Bạn có thể tải nó xuống từ[Liên kết tải xuống](https://releases.aspose.com/words/python/) . Ngoài ra, hãy tham khảo các[tài liệu](https://reference.aspose.com/words/python-net/) để được hướng dẫn toàn diện về cách sử dụng thư viện.
+ Trước khi chúng ta đi sâu vào việc tạo các hình dạng tài liệu ấn tượng, hãy đảm bảo bạn đã cài đặt Aspose.Words for Python. Bạn có thể tải nó xuống từ[Liên kết tải xuống](https://releases.aspose.com/words/python/) . Ngoài ra, hãy tham khảo các[tài liệu](https://reference.aspose.com/words/python-net/) để được hướng dẫn toàn diện về cách sử dụng thư viện.
 
 ## Tạo một tài liệu cơ bản
 
@@ -98,4 +98,4 @@ Tuyệt đối! Aspose.Words for Python cung cấp các tùy chọn để tùy c
 Bạn có thể thêm hình ảnh vào tài liệu của mình bằng cách sử dụng`append_image` phương thức, cung cấp đường dẫn đến tệp hình ảnh.
 
 ### Có nhiều tính năng nâng cao hơn có sẵn trong Aspose.Words cho Python không?
-Có, Aspose.Words for Python cung cấp nhiều tính năng nâng cao, bao gồm bảng, biểu đồ, siêu liên kết, v.v. để tạo tài liệu động và hấp dẫn.
+Có, Aspose.Words for Python cung cấp nhiều tính năng nâng cao, bao gồm bảng, biểu đồ, siêu liên kết, v.v., để tạo tài liệu động và hấp dẫn.

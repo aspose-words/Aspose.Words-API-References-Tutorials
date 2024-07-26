@@ -16,4 +16,4 @@ Ob Sie Dokumente konvertieren, Inhalte bearbeiten, Formatierungen verwalten oder
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Maßeinheit](./measure-unit/) | Erfahren Sie, wie Sie die Maßeinheit angeben, wenn Sie ein Word-Dokument mit Aspose.Words für .NET in ODT konvertieren. |
+| [Maßeinheit](./measure-unit/) | Erfahren Sie, wie Sie die Maßeinheitenfunktion in Aspose.Words für .NET konfigurieren, um die Dokumentformatierung während der ODT-Konvertierung beizubehalten. |

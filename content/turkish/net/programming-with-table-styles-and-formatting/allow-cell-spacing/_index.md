@@ -8,7 +8,7 @@ weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
 
-Bu eğitimde, Aspose.Words for .NET kullanarak tablolarda hücre aralığına izin verme sürecini adım adım anlatacağız. Bu görevi gerçekleştiren C# kaynak kodunu açıklayacağız ve bunu anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sunacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak Word belgelerinizdeki tablo formatını nasıl değiştireceğinizi net bir şekilde anlayacaksınız.
+Bu eğitimde, Aspose.Words for .NET kullanarak tablolarda hücre aralığına izin verme sürecini adım adım anlatacağız. Bu görevi gerçekleştiren C# kaynak kodunu açıklayacağız ve bunu anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sunacağız. Bu eğitimin sonunda Aspose.Words for .NET kullanarak Word belgelerinizdeki tablo formatını nasıl değiştireceğinizi net bir şekilde anlayacaksınız.
 
 ## 1. Adım: Belge Dizinini Ayarlayın
 Öncelikle belge dizininizin yolunu ayarlamanız gerekir. Bu, Word belgenizin depolandığı konumdur. "BELGE DİZİNİNİZ"i uygun yolla değiştirin.

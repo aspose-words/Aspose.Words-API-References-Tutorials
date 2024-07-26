@@ -19,7 +19,7 @@ url: /zh-hant/net/working-with-fields/
 | [重命名合併字段](./rename-merge-fields/) | 在本教學中，您將學習如何使用 Aspose.Words for .NET 重新命名文件中的合併欄位。 |
 | [刪除字段](./remove-field/) | 在本指南中，您將了解如何使用 Aspose.Words for .NET 刪除文件中的特定欄位。 |
 | [在沒有文件產生器的情況下插入 TOA 字段](./insert-toafield-without-document-builder/) | 逐步指南使用 Aspose.Words for .NET 插入 TOA 字段，無需文件產生器。 |
-| [插入嵌套字段](./insert-nested-fields/) | 了解如何使用 Aspose.Words for .NET 輕鬆地將巢狀欄位插入 Word 文件中。 |
+| [插入嵌套字段](./insert-nested-fields/) | 了解如何使用 Aspose.Words for .NET 輕鬆將巢狀欄位插入 Word 文件中。 |
 | [使用 DOM 插入合併字段](./insert-merge-field-using-dom/) | 了解如何使用 Aspose.Words for .NET 將自訂欄位合併欄位插入 Word 文件中。 |
 | [使用 DOM 插入郵件合併地址區塊字段](./insert-mail-merge-address-block-field-using-dom/) | 了解如何使用 Aspose.Words for .NET 將郵件合併位址區塊欄位插入 Word 文件中。 |
 | [在沒有文件產生器的情況下插入 FieldIncludeText](./insert-field-include-text-without-document-builder/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中插入 FieldIncludeText 欄位。 |

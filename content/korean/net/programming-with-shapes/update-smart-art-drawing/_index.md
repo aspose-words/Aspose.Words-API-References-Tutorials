@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## 3단계: 스마트 아트 드로잉 업데이트
- 다음을 사용하여 문서의 모양을 반복합니다.`GetChildNodes` 방법`NodeType.Shape` 매개변수. 다음을 사용하여 각 도형에 스마트 아트가 있는지 확인하세요.`HasSmartArt` 속성을 확인하고, true인 경우`UpdateSmartArtDrawing` 스마트 아트 도면을 업데이트하는 방법입니다.
+ 다음을 사용하여 문서의 모양을 반복합니다.`GetChildNodes` 방법`NodeType.Shape` 매개변수. 다음을 사용하여 각 도형에 스마트 아트가 있는지 확인하세요.`HasSmartArt`속성을 확인하고, true인 경우`UpdateSmartArtDrawing` 스마트 아트 도면을 업데이트하는 방법입니다.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

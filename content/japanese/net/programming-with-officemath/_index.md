@@ -12,4 +12,4 @@ OfficeMath を使用した Words Processing に関する Aspose.Words for .NET �
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [数式](./math-equations/) | Aspose.Words for .NET を使用して Word 文書に数式を追加する方法を学習します。 |
+| [数式](./math-equations/) | Aspose.Words for .NET を使用して Word 文書で数式を構成する方法を学びます。例、FAQ などを含むステップバイステップ ガイド。 |

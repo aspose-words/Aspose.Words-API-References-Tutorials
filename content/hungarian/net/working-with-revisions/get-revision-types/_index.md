@@ -54,11 +54,11 @@ for (int i = 0; i < paragraphs.Count; i++)
 
 Ebben az oktatóanyagban megtudtuk, hogyan szerezheti be a szavak típusait egy Word-dokumentumban az Aspose.Words for .NET használatával. Követtük a lépéseket a dokumentum betöltéséhez, végigmegyünk a bekezdéseken, és ellenőriztük az egyes bekezdésekhez kapcsolódó szöveges ismertetők típusait. Mostantól ezt a tudást felhasználhatja saját Word-dokumentumaiban a szóelemzések elemzéséhez az Aspose.Words for .NET használatával.
 
-### Gyakran ismételt kérdések a szavak revíziótípusainak lekéréséhez
+### GYIK a szavak átdolgozásáról
 
 #### K: Hogyan lehet dokumentumot feltölteni az Aspose.Words for .NET-be?
 
- V: Használja a`Document` osztályú Aspose.Words .NET-hez a dokumentum fájlból való betöltéséhez. Megadhatja a dokumentum teljes elérési útját.
+ V: Használja a`Document` osztályú Aspose.Words .NET-hez a dokumentum fájlból való betöltéséhez. Megadhatja a teljes dokumentum elérési utat.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");

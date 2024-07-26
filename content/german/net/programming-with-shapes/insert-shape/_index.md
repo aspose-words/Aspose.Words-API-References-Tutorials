@@ -17,7 +17,7 @@ Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 - Grundkenntnisse in C# und Textverarbeitung mit Word-Dokumenten.
 
 ## Schritt 1: Einrichten des Dokumentverzeichnisses
- Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Schritt 3: Formen einfügen
- Verwenden Sie die`InsertShape` Methode der`DocumentBuilder`Objekt, um Formen in das Dokument einzufügen. Geben Sie den Formtyp, die relativen horizontalen und vertikalen Positionen, die Seitenabmessungen, die Größe und den Umbruchtyp an. Sie können bei Bedarf auch den Drehwinkel der Formen festlegen.
+ Verwenden Sie die`InsertShape` Methode der`DocumentBuilder` Objekt, um Formen in das Dokument einzufügen. Geben Sie den Formtyp, die relativen horizontalen und vertikalen Positionen, die Seitenabmessungen, die Größe und den Umbruchtyp an. Sie können bei Bedarf auch den Drehwinkel der Formen festlegen.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

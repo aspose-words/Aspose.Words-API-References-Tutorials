@@ -15,7 +15,7 @@ Di era modern dengan kemajuan teknologi yang pesat, otomasi telah menjadi landas
 
 Dalam lanskap digital saat ini, mengelola dan memproses dokumen Word secara efisien sangatlah penting. Aspose.Words untuk Python berfungsi sebagai API tangguh yang memberdayakan pengembang untuk memanipulasi dan mengotomatisasi berbagai aspek dokumen Word secara terprogram. Ketika digabungkan dengan makro VBA, kemampuan otomatisasi menjadi lebih kuat, memungkinkan tugas-tugas rumit dijalankan dengan lancar.
 
-## Memulai dengan Aspose.Words untuk Python
+## Memulai Aspose.Words untuk Python
 
 Untuk memulai perjalanan otomatisasi ini, Anda perlu menginstal Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Asumsikan situs web](https://releases.aspose.com/words/python/). Setelah terinstal, Anda dapat memulai proyek Python Anda dan mengimpor modul yang diperlukan.
 

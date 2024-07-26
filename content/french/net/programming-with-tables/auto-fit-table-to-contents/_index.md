@@ -40,7 +40,7 @@ table. AutoFit(AutoFitBehavior.AutoFitToContents);
 
  Ici, nous castons le premier nœud enfant de type`Table` à partir du document, puis en utilisant le`AutoFit` méthode avec le`AutoFitToContents` comportement pour ajuster la largeur du tableau en fonction de son contenu.
 
-## Étape 4 : Enregistrez le document modifié
+## Étape 4 : Enregistrez le document modifié
 Enfin, nous devons enregistrer le document modifié avec le tableau auto-ajusté. Utilisez le code suivant :
 
 ```csharp

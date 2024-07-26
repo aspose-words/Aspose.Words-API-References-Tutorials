@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## الخطوة 2: إدراج شكل الصورة
- استخدم ال`InsertImage` طريقة`DocumentBuilder`كائن لإدراج شكل صورة في المستند. توفير المسار إلى ملف الصورة كمعلمة.
+ استخدم ال`InsertImage` طريقة`DocumentBuilder` كائن لإدراج شكل صورة في المستند. توفير المسار إلى ملف الصورة كمعلمة.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

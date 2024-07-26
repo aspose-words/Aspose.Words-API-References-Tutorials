@@ -63,7 +63,7 @@ La protección con contraseña en Aspose.Words para Java es altamente segura. Ut
 
 ### ¿Puedo cambiar o eliminar la contraseña más tarde?
 
-Sí, puede cambiar o eliminar la contraseña más adelante utilizando Aspose.Words para Java. Simplemente cargue el documento, realice los cambios necesarios y guárdelo nuevamente.
+Sí, puedes cambiar o eliminar la contraseña más adelante usando Aspose.Words para Java. Simplemente cargue el documento, realice los cambios necesarios y guárdelo nuevamente.
 
 ### ¿Es posible establecer contraseñas diferentes para diferentes partes del documento?
 

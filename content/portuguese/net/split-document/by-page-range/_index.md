@@ -73,7 +73,7 @@ Sinta-se à vontade para explorar outros recursos poderosos oferecidos pelo Aspo
 #### P1: Posso extrair páginas não consecutivas usando o recurso "Por intervalo de páginas"?
  Sim, você pode extrair páginas não consecutivas especificando o intervalo de páginas desejado. Por exemplo, se quiser extrair as páginas 1, 3 e 5, você pode definir o intervalo de páginas como`1,3,5` no`ExtractPages` função.
 
-#### Q2: É possível extrair um intervalo de páginas específico de vários documentos simultaneamente?
+#### P2: É possível extrair um intervalo de páginas específico de vários documentos simultaneamente?
  Sim, você pode aplicar o recurso “Por intervalo de páginas” a vários documentos. Basta carregar cada documento individualmente e extrair o intervalo de páginas desejado usando o`ExtractPages` função. Você pode então salvar as páginas extraídas de cada documento separadamente.
 
 #### P3: Posso extrair intervalos de páginas de documentos Word criptografados ou protegidos por senha?

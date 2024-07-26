@@ -12,4 +12,4 @@ Výukové programy Aspose.Words for .NET o textovém zpracování s HTMLLoadOpti
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Preferovaný typ ovládacího prvku v dokumentu aplikace Word](./preferred-control-type/) | Podrobný průvodce určením preferovaného typu ovládacího prvku v dokumentu aplikace Word při načítání dokumentu HTML pomocí Aspose.Words for .NET. |
+| [Preferovaný typ ovládacího prvku v dokumentu aplikace Word](./preferred-control-type/) | Naučte se, jak vložit pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupujte podle tohoto podrobného průvodce pro bezproblémovou integraci obsahu HTML. |

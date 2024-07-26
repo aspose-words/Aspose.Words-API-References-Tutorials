@@ -135,4 +135,4 @@ Hiện tại, mã này tập trung vào việc gỡ rối các dấu trang trả
 
 ### Có bất kỳ hạn chế nào khi sử dụng phương pháp này không?
 
-Cách tiếp cận này giả định rằng dấu trang được xác định rõ ràng trong các ô của bảng. Nếu dấu trang được đặt bên ngoài ô hoặc ở vị trí không mong muốn thì quá trình gỡ rối có thể không hoạt động như dự định.
+Cách tiếp cận này giả định rằng dấu trang được xác định rõ ràng trong các ô của bảng. Nếu dấu trang được đặt bên ngoài ô hoặc ở vị trí không mong muốn thì quá trình gỡ rối có thể không hoạt động như dự kiến.

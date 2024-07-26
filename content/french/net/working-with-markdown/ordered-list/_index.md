@@ -93,5 +93,5 @@ Créer une liste ordonnée dans un document Word par programmation peut sembler 
 ### Est-il possible de continuer la numérotation à partir d'une liste précédente ?  
 Oui, vous pouvez continuer la numérotation en utilisant le même format de liste. Aspose.Words vous permet de contrôler la numérotation des listes dans différents paragraphes.
 
-### Comment puis-je supprimer le format de liste ?  
+### Comment puis-je supprimer le format de liste ?  
  Vous pouvez supprimer le format de liste en appelant`ListFormat.RemoveNumbers()`. Cela transformera les éléments de la liste en paragraphes normaux.

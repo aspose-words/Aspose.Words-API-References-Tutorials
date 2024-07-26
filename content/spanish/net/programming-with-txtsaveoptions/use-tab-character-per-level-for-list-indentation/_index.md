@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-En este paso, creamos un nuevo`Document` objeto y un asociado`DocumentBuilder` objeto. Estos objetos nos permitirán manipular y generar nuestro documento.
+ En este paso, creamos un nuevo`Document` objeto y un asociado`DocumentBuilder` objeto. Estos objetos nos permitirán manipular y generar nuestro documento.
 
 ## Paso 3: crear una lista con tres niveles de sangría
 
@@ -100,17 +100,17 @@ Configure su entorno de desarrollo agregando las referencias necesarias e import
 
  Crear un nuevo`Document` objeto y un asociado`DocumentBuilder` objeto.
 
- Utilizar el`DocumentBuilder` para crear una lista con múltiples niveles de sangría usando los métodos`ApplyNumberDefault()` para aplicar el formato de número de lista predeterminado,`Writeln()`y`Write()` para agregar elementos a la lista, y`ListIndent()`para incrementar la sangría en cada nivel.
+ Utilizar el`DocumentBuilder`para crear una lista con múltiples niveles de sangría usando los métodos`ApplyNumberDefault()` para aplicar el formato de número de lista predeterminado,`Writeln()`y`Write()` para agregar elementos a la lista, y`ListIndent()` para incrementar la sangría en cada nivel.
 
  Configure las opciones de guardado creando un`TxtSaveOptions` objeto y estableciendo las propiedades`ListIndentation.Count` al número de caracteres de tabulación por nivel y`ListIndentation.Character` a`'\t'` para utilizar los caracteres de tabulación.
 
- Guarde el documento utilizando el`Save()` método del documento especificando la ruta completa del archivo de salida y las opciones de guardado.
+ Guarde el documento usando el`Save()` método del documento especificando la ruta completa del archivo de salida y las opciones de guardado.
 
 #### P: ¿Es posible personalizar la cantidad de caracteres de tabulación por nivel para la sangría de la lista?
  Sí, puede personalizar el número de caracteres de tabulación por nivel para la sangría de la lista cambiando el valor de`ListIndentation.Count` propiedad en el`TxtSaveOptions` clase. Puede especificar la cantidad de caracteres de tabulación que desea para cada nivel de sangría.
 
 #### P: ¿Qué otros caracteres puedo usar para la sangría de listas con Aspose.Words para .NET?
- Además de los caracteres de tabulación, también puede utilizar otros caracteres para la sangría de la lista con Aspose.Words para .NET. Puedes configurar el`ListIndentation.Character` propiedad a cualquier carácter deseado, como el espacio (`' '`), para sangrar listas.
+Además de los caracteres de tabulación, también puede utilizar otros caracteres para la sangría de la lista con Aspose.Words para .NET. Puedes configurar el`ListIndentation.Character` propiedad a cualquier carácter deseado, como el espacio (`' '`), para sangrar listas.
 
 #### P: ¿Aspose.Words para .NET ofrece otras funciones para administrar listas?
 Sí, Aspose.Words para .NET ofrece muchas funciones para administrar listas en documentos de Word. Puede crear listas numeradas o con viñetas, establecer niveles de sangría, personalizar el estilo de las listas, agregar elementos de lista y más.

@@ -12,5 +12,5 @@ Výukové programy Aspose.Words for .NET jsou navrženy tak, aby vám pomohly zv
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Použít písmo z cílového stroje](./use-font-from-target-machine/) | Naučte se, jak převést dokument aplikace Word na pevný HTML pomocí písem cílového počítače pomocí Aspose.Words for .NET. |
-| [Napište všechna pravidla CSS do jednoho souboru](./write-all-css-rules-in-single-file/) | Naučte se, jak převést dokument aplikace Word na pevný HTML zápisem všech pravidel CSS do jednoho souboru pomocí Aspose.Words for .NET. |
+| [Použít písmo z cílového stroje](./use-font-from-target-machine/) | Naučte se používat písma z cílového počítače v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémovou integraci písem. |
+| [Napište všechna pravidla CSS do jednoho souboru](./write-all-css-rules-in-single-file/) | Naučte se převádět dokumenty Wordu do HTML pomocí Aspose.Words for .NET se všemi pravidly CSS v jediném souboru pro čistší kód a snadnější údržbu. |

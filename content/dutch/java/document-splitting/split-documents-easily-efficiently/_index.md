@@ -69,7 +69,7 @@ for (Paragraph paragraph : paragraphs) {
 
 ## 6. Documenten opsplitsen op koppen
 
-Het splitsen van documenten op kop is een geavanceerdere aanpak waarmee u subdocumenten kunt maken op basis van de hiërarchische structuur van het document. Elke sectie onder een specifieke kop wordt opgeslagen als een afzonderlijk subdocument, waardoor het eenvoudiger wordt om met verschillende delen van het document te navigeren en ermee te werken.
+Het splitsen van documenten op kop is een meer geavanceerde aanpak waarmee u subdocumenten kunt maken op basis van de hiërarchische structuur van het document. Elke sectie onder een specifieke kop wordt opgeslagen als een afzonderlijk subdocument, waardoor het gemakkelijker wordt om met verschillende delen van het document te navigeren en ermee te werken.
 
 Volg deze stappen om een document op te splitsen op koppen met Aspose.Words voor Java:
 

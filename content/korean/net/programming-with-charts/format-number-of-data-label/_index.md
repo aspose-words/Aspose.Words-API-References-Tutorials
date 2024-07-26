@@ -18,7 +18,7 @@ url: /ko/net/programming-with-charts/format-number-of-data-label/
 -  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 아직 설치하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
 - 개발 환경: .NET 개발 환경이 설정되어 있어야 합니다. Visual Studio를 적극 권장합니다.
 - C#에 대한 기본 지식: 이 튜토리얼에는 C# 코드 작성 및 이해가 포함되므로 C# 프로그래밍에 대한 지식이 필수적입니다.
--  임시 라이선스: Aspose.Words를 제한 없이 사용하려면[임시 면허증](https://purchase.aspose.com/temporary-license/).
+-  임시 라이선스: Aspose.Words를 제한 없이 사용하려면[임시면허](https://purchase.aspose.com/temporary-license/).
 
 이제 차트에서 숫자 레이블의 서식을 지정하는 단계별 프로세스를 살펴보겠습니다.
 

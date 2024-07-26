@@ -2,94 +2,86 @@
 title: Optymalizuj rozmiar pliku PDF, pomijając osadzone czcionki Arial i Times Roman
 linktitle: Optymalizuj rozmiar pliku PDF, pomijając osadzone czcionki Arial i Times Roman
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący generowania zoptymalizowanego pliku PDF bez osadzania czcionek Arial i Times Roman za pomocą Aspose.Words dla .NET.
+description: Zoptymalizuj rozmiar pliku PDF, pomijając osadzone czcionki Arial i Times Roman przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby usprawnić tworzenie plików PDF.
 type: docs
 weight: 10
 url: /pl/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
+## Wstęp
 
-tym artykule znajduje się przewodnik krok po kroku dotyczący korzystania z tej funkcji w celu optymalizacji rozmiaru pliku PDF poprzez pominięcie osadzonych czcionek Arial i Times Roman na rzecz rozmiaru metapliku w Aspose.Words dla .NET. Szczegółowo wyjaśnimy każdą część kodu. Pod koniec tego samouczka będziesz mógł zrozumieć, jak skonfigurować opcję trybu osadzania czcionek w dokumencie i wygenerować plik PDF bez osadzania czcionek Arial i Times Roman.
+Czy kiedykolwiek znalazłeś się w sytuacji, w której rozmiar pliku PDF był po prostu za duży? To jak pakowanie się na wakacje i świadomość, że walizka pęka w szwach. Wiesz, że musisz schudnąć, ale z czego zrezygnować? Podczas pracy z plikami PDF, zwłaszcza przekonwertowanymi z dokumentów programu Word, osadzone czcionki mogą zwiększyć rozmiar pliku. Na szczęście Aspose.Words dla .NET zapewnia eleganckie rozwiązanie, dzięki któremu Twoje pliki PDF będą eleganckie i oszczędne. W tym samouczku omówimy, jak zoptymalizować rozmiar pliku PDF, pomijając osadzone czcionki Arial i Times Roman. Zacznijmy!
 
-Zanim zaczniesz, upewnij się, że w swoim projekcie zainstalowałeś i skonfigurowałeś bibliotekę Aspose.Words for .NET. Bibliotekę i instrukcje instalacji można znaleźć na stronie internetowej Aspose.
+## Warunki wstępne
 
-## Krok 1: Zdefiniuj katalog dokumentów
+Zanim przejdziemy do sedna, jest kilka rzeczy, których będziesz potrzebować:
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną tę potężną bibliotekę. Jeśli nie, możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Podstawowa znajomość języka C#: pomoże Ci to w podążaniu za fragmentami kodu.
+- Dokument programu Word: użyjemy przykładowego dokumentu, aby zademonstrować proces. 
 
- Na początek musisz zdefiniować ścieżkę do katalogu, w którym znajdują się Twoje dokumenty. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+## Importuj przestrzenie nazw
+
+Po pierwsze, upewnij się, że zaimportowano niezbędne przestrzenie nazw. To przygotowuje grunt pod dostęp do funkcjonalności Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+porządku, przeanalizujmy proces krok po kroku.
+
+## Krok 1: Skonfiguruj swoje środowisko
+
+Na początek musisz skonfigurować środowisko programistyczne. Otwórz swoje ulubione środowisko C# IDE (np. Visual Studio) i utwórz nowy projekt.
+
+## Krok 2: Załaduj dokument Word
+
+Następnym krokiem jest załadowanie dokumentu Word, który chcesz przekonwertować na plik PDF. Upewnij się, że dokument znajduje się we właściwym katalogu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Krok 2: Prześlij dokument
-
-Następnie musimy załadować dokument, który chcemy przetworzyć. W tym przykładzie zakładamy, że dokument nazywa się „Rendering.docx” i znajduje się w określonym katalogu dokumentów.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Krok 3: Skonfiguruj opcje zapisywania jako PDF z osadzaniem czcionek
+ W tym fragmencie zamień`"YOUR DOCUMENT DIRECTORY"` ze ścieżką do katalogu dokumentów.
 
- Aby pominąć osadzanie czcionek Arial i Times Roman w wygenerowanym pliku PDF, musimy skonfigurować`PdfSaveOptions` obiekt i ustaw`FontEmbeddingMode`własność do`PdfFontEmbeddingMode.EmbedAll`.
+## Krok 3: Skonfiguruj opcje zapisywania plików PDF
+
+Teraz musimy skonfigurować opcje zapisywania plików PDF, aby kontrolować sposób osadzania czcionek. Domyślnie wszystkie czcionki są osadzone, co może zwiększyć rozmiar pliku. Zmienimy to ustawienie.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll
+};
 ```
 
-## Krok 4: Zapisz dokument w formacie PDF bez osadzonych czcionek
+## Krok 4: Zapisz dokument w formacie PDF
 
-Wreszcie możemy zapisać dokument w formacie PDF, korzystając z wcześniej skonfigurowanych opcji zapisywania.
+Na koniec zapisz dokument jako plik PDF z określonymi opcjami zapisywania. To tutaj dzieje się magia.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-To wszystko ! Pomyślnie wygenerowałeś plik PDF bez osadzania czcionek Arial i Times Roman przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy umożliwiający pominięcie osadzonych czcionek Arial i Times Roman przy rozmiarze metapliku za pomocą Aspose.Words dla .NET
-
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
-   
-```
+To polecenie zapisuje dokument jako plik PDF o nazwie „OptimizedPDF.pdf” w określonym katalogu.
 
 ## Wniosek
 
-tym samouczku wyjaśniliśmy, jak wyłączyć osadzanie czcionek Arial i Times Roman w dokumencie PDF przy użyciu Aspose.Words dla .NET. Wykonując opisane czynności, możesz wygenerować plik PDF bez osadzania tych konkretnych czcionek, co może pomóc zmniejszyć rozmiar pliku i zapewnić lepszą zgodność dokumentów na różnych platformach. Podczas korzystania z tej funkcji należy wziąć pod uwagę konsekwencje wyłączenia osadzania czcionek. Zachęcamy do poznania większej liczby funkcji Aspose.Words dla .NET, aby zoptymalizować generowanie plików PDF.
+I masz to! Właśnie nauczyłeś się, jak zoptymalizować rozmiar pliku PDF, pomijając osadzanie czcionek Arial i Times Roman przy użyciu Aspose.Words dla .NET. To proste ulepszenie może znacznie zmniejszyć rozmiar plików, ułatwiając ich udostępnianie i przechowywanie. To jak pójście na siłownię z plikami PDF i pozbycie się zbędnych kilogramów, przy jednoczesnym zachowaniu wszystkich niezbędnych rzeczy w nienaruszonym stanie.
 
-### Często Zadawane Pytania
+## Często zadawane pytania
 
-#### P: Co uniemożliwia osadzanie czcionek Arial i Times Roman w dokumencie PDF i dlaczego jest to ważne?
-Odp.: Wyłączenie osadzania czcionek Arial i Times Roman w dokumencie PDF polega na nieuwzględnianiu tych czcionek w wygenerowanym pliku PDF. Może to być ważne, aby zmniejszyć rozmiar pliku PDF poprzez unikanie dołączania czcionek, które są już powszechnie dostępne w systemach czytników plików PDF. Może również pomóc zapewnić lepszą kompatybilność i spójny wygląd dokumentu PDF na różnych urządzeniach i platformach.
+### Dlaczego powinienem pominąć osadzanie czcionek Arial i Times Roman?
+Pomijanie tych popularnych czcionek może zmniejszyć rozmiar pliku PDF, ponieważ większość systemów ma już zainstalowane te czcionki.
 
-#### P: Jak mogę skonfigurować Aspose.Words dla .NET tak, aby nie osadzał czcionek Arial i Times Roman w dokumencie PDF?
-O: Aby skonfigurować Aspose.Words dla .NET tak, aby nie osadzał czcionek Arial i Times Roman w dokumencie PDF, wykonaj następujące kroki:
+### Czy wpłynie to na wygląd mojego pliku PDF?
+Nie, nie będzie. Ponieważ Arial i Times Roman są czcionkami standardowymi, ich wygląd pozostaje spójny w różnych systemach.
 
- Ustaw ścieżkę katalogu, w którym znajdują się Twoje dokumenty, zastępując`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+### Czy mogę pominąć osadzanie innych czcionek?
+Tak, możesz skonfigurować opcje zapisywania, aby w razie potrzeby pominąć osadzanie innych czcionek.
 
- Załaduj dokument, który chcesz przetworzyć za pomocą`Document` class i określoną ścieżkę dokumentu.
+### Czy Aspose.Words dla .NET jest darmowy?
+Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/) , ale aby uzyskać pełny dostęp, musisz kupić licencję[Tutaj](https://purchase.aspose.com/buy).
 
- Utwórz instancję`PdfSaveOptions` klasę i ustaw`FontEmbeddingMode`własność do`PdfFontEmbeddingMode.EmbedAll`. Spowoduje to osadzenie w wygenerowanym pliku PDF wszystkich czcionek z wyjątkiem Arial i Times Roman.
-
- Użyj`Save` metoda`Document` obiekt, aby zapisać dokument w formacie PDF, określając skonfigurowane wcześniej opcje zapisu.
-
-#### P: Jakie są korzyści z wyłączenia osadzania czcionek Arial i Times Roman w dokumencie PDF?
-O: Korzyści z wyłączenia osadzania czcionek Arial i Times Roman w dokumencie PDF są następujące:
-
-Zmniejszanie rozmiaru pliku PDF: Unikając osadzania powszechnie dostępnych czcionek, takich jak Arial i Times Roman, można zmniejszyć rozmiar pliku PDF, co ułatwia przechowywanie, udostępnianie i przesyłanie plików.
-
-Lepsza kompatybilność: Używając czcionek powszechnie dostępnych w systemach czytników plików PDF, zapewniasz lepszą kompatybilność i wygląd dokumentu na różnych urządzeniach i platformach.
-
-#### P: Jakie są konsekwencje wyłączenia osadzania czcionek Arial i Times Roman w dokumencie PDF?
-O: Konsekwencje wyłączenia osadzania czcionek Arial i Times Roman w dokumencie PDF są następujące:
-
-Inny wygląd: Jeżeli w systemie, w którym otwierany jest plik PDF, nie są dostępne czcionki Arial i Times Roman, zostaną użyte czcionki zastępcze, co może skutkować wyglądem innym niż zamierzony.
-
-Problemy z czytelnością: użyte czcionki zastępcze mogą nie być tak czytelne jak czcionki oryginalne, co może mieć wpływ na czytelność dokumentu.
+### Gdzie mogę znaleźć więcej samouczków na temat Aspose.Words dla .NET?
+ Można znaleźć obszerną dokumentację i tutoriale[Tutaj](https://reference.aspose.com/words/net/).

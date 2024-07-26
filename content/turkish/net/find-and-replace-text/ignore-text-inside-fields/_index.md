@@ -9,7 +9,7 @@ url: /tr/net/find-and-replace-text/ignore-text-inside-fields/
 ---
 ## giriiş
 
-Bu eğitimde Aspose.Words for .NET'i kullanarak Word belgeleri içindeki alanların içindeki metinleri değiştirmeyi inceleyeceğiz. Aspose.Words, belge işleme için güçlü özellikler sağlayarak geliştiricilerin görevleri verimli bir şekilde otomatikleştirmesine olanak tanır. Burada, belge otomasyon senaryolarında yaygın bir gereksinim olan alanların içindeki metinlerin göz ardı edilmesine odaklanacağız.
+Bu eğitimde Aspose.Words for .NET'i kullanarak Word belgeleri içindeki alanların içindeki metinleri değiştirmeyi inceleyeceğiz. Aspose.Words, belge işleme için güçlü özellikler sunarak geliştiricilerin görevleri verimli bir şekilde otomatikleştirmesine olanak tanır. Burada, belge otomasyon senaryolarında yaygın bir gereksinim olan alanların içindeki metinlerin göz ardı edilmesine odaklanacağız.
 
 ## Önkoşullar
 
@@ -83,7 +83,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak Word belgelerindeki alanların iç
 ### Word belgelerindeki iç içe geçmiş alanları nasıl yönetirim?
 İç içe alanlar, Aspose.Words'ün API'sini kullanarak belgenin içeriğinde yinelemeli olarak gezinilerek yönetilebilir.
 
-### Metni seçici olarak değiştirmek için koşullu mantık uygulayabilir miyim?
+### Metni seçici olarak değiştirmek için koşullu mantığı uygulayabilir miyim?
 Evet, Aspose.Words, belirli kriterlere göre metin değiştirmeyi kontrol etmek için FindReplaceOptions'ı kullanarak koşullu mantık uygulamanıza olanak tanır.
 
 ### Aspose.Words .NET Core uygulamalarıyla uyumlu mu?

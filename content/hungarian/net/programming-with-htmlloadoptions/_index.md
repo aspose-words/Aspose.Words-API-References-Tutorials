@@ -12,4 +12,4 @@ Az Aspose.Words for .NET oktatóanyagok a szövegfeldolgozásról HTMLLoadOption
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Előnyben részesített vezérlőtípus Word dokumentumban](./preferred-control-type/) | Útmutató lépésről lépésre az előnyben részesített vezérlőtípus megadásához a Word-dokumentumban HTML-dokumentum Aspose.Words for .NET segítségével történő betöltésekor. |
+| [Előnyben részesített vezérlőtípus Word dokumentumban](./preferred-control-type/) | Ismerje meg, hogyan illeszthet be kombinált mezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Kövesse ezt a lépésről lépésre szóló útmutatót a zökkenőmentes HTML-tartalomintegráció érdekében. |

@@ -2,93 +2,112 @@
 title: Voorkeursbesturingstype in Word-document
 linktitle: Voorkeursbesturingstype in Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het opgeven van het gewenste besturingstype in een Word-document bij het laden van een HTML-document met Aspose.Words voor .NET.
+description: Leer hoe u een formulierveld met invoervak invoegt in een Word-document met Aspose.Words voor .NET. Volg deze stapsgewijze handleiding voor een naadloze integratie van HTML-inhoud.
 type: docs
 weight: 10
 url: /nl/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-Dit artikel biedt een stapsgewijze handleiding voor het gebruik van de functie van het voorkeursbesturingstype met Aspose.Words voor .NET. We zullen elk deel van de code in detail uitleggen. Aan het einde van deze tutorial zult u begrijpen hoe u het gewenste besturingstype kunt opgeven bij het laden van een HTML-document.
+## Invoering
 
-Zorg ervoor dat u, voordat u begint, de Aspose.Words voor .NET-bibliotheek in uw project hebt geïnstalleerd en geconfigureerd. U kunt de bibliotheek en installatie-instructies vinden op de Aspose-website.
+we duiken in een spannende tutorial over hoe je kunt werken met HTML-laadopties in Aspose.Words voor .NET, waarbij we ons specifiek richten op het instellen van het gewenste besturingstype bij het invoegen van een keuzelijst met invoervak in een Word-document. Deze stapsgewijze handleiding helpt u te begrijpen hoe u effectief HTML-inhoud in uw Word-documenten kunt manipuleren en weergeven met behulp van Aspose.Words voor .NET.
 
-## Stap 1: Definieer de HTML-code
+## Vereisten
 
- Om te beginnen moet u de HTML-code definiëren die u als document wilt laden. In dit voorbeeld hebben we een gedefinieerd`html` variabele die de HTML-code van een selector met opties bevat.
+Voordat we ingaan op de code, zijn er een paar dingen die u moet regelen:
+
+1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Je kunt het downloaden van de[website](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: U moet een ontwikkelomgeving hebben, zoals Visual Studio.
+3. Basiskennis van C#: Een fundamenteel begrip van C#-programmeren is noodzakelijk om samen met de tutorial te volgen.
+4. HTML-inhoud: Basiskennis van HTML is nuttig, aangezien we in dit voorbeeld met HTML-inhoud gaan werken.
+
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten importeren om aan de slag te gaan:
 
 ```csharp
-const string html=@"
-<html>
-<select name='ComboBox' size='1'>
-<option value='val1'>item1</option>
-<option value='val2'></option>
-</select>
-</html>
+using System;
+using System.IO;
+using System.Text;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+Laten we het voorbeeld nu in meerdere stappen opsplitsen om duidelijkheid en begrip te garanderen.
+
+## Stap 1: Stel uw HTML-inhoud in
+
+Eerst moeten we de HTML-inhoud definiëren die we in het Word-document willen invoegen. Dit is het HTML-fragment dat we gaan gebruiken:
+
+```csharp
+const string html = @"
+    <html>
+        <select name='ComboBox' size='1'>
+            <option value='val1'>item1</option>
+            <option value='val2'></option>                        
+        </select>
+    </html>
 ";
 ```
 
-## Stap 2: Stel HTML-laadopties in
+Deze HTML bevat een eenvoudige keuzelijst met twee opties. We laden deze HTML in een Word-document en specificeren hoe deze moet worden weergegeven.
 
- Vervolgens maken we een`HtmlLoadOptions` bezwaar maken en instellen`PreferredControlType`eigendom aan`HtmlControlType.StructuredDocumentTag`. Dit vertelt Aspose.Words om StructuredDocumentTags te gebruiken om HTML weer te geven tijdens het laden.
+## Stap 2: Definieer de documentmap
+
+Geef vervolgens de map op waarin uw Word-document wordt opgeslagen. Dit helpt bij het organiseren van uw bestanden en het schoonhouden van het padbeheer.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar u uw Word-document wilt opslaan.
+
+## Stap 3: Configureer HTML-laadopties
+
+ Hier configureren we de HTML-laadopties, met name gericht op de`PreferredControlType`eigendom. Dit bepaalt hoe de keuzelijst met invoervak in het Word-document moet worden weergegeven.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## Stap 3: Laad het document en sla het op
+ Door in te stellen`PreferredControlType` naar`HtmlControlType.StructuredDocumentTag`, zorgen we ervoor dat de keuzelijst met invoervak wordt weergegeven als een gestructureerde documenttag (SDT) in het Word-document.
 
- Wij gebruiken de`Document` class om HTML-code uit een geheugenstroom te laden met de eerder gedefinieerde laadopties. Vervolgens slaan we het document op in de opgegeven map met de extensie`.docx`bestandsformaat.
+## Stap 4: Laad de HTML-inhoud in het document
+
+Met behulp van de geconfigureerde laadopties laden we de HTML-inhoud in een nieuw Word-document.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
+```
+
+Hier converteren we de HTML-tekenreeks naar een byte-array en laden deze in het document met behulp van een geheugenstroom. Dit zorgt ervoor dat de HTML-inhoud correct wordt geïnterpreteerd en weergegeven door Aspose.Words.
+
+## Stap 5: Sla het document op
+
+Sla het document ten slotte op in de opgegeven map in DOCX-indeling.
+
+```csharp
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### Voorbeeldbroncode voor het voorkeursbesturingstype met Aspose.Words voor .NET
-
-```csharp
-	
-	const string html = @"
-		<html>
-			<select name='ComboBox' size='1'>
-				<option value='val1'>item1</option>
-				<option value='val2'></option>                        
-			</select>
-		</html>
-	";
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
-
-	Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
-
-	doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
-
-```
-
-Dat is alles ! U hebt met succes het gewenste besturingstype opgegeven bij het laden van een HTML-document met Aspose.Words voor .NET.
+Hiermee wordt het Word-document met het weergegeven keuzelijstbesturingselement op de opgegeven locatie opgeslagen.
 
 ## Conclusie
 
- Door deze stapsgewijze handleiding te volgen, heeft u geleerd hoe u de functie "Voorkeursbesturingstype" in Aspose.Words voor .NET kunt gebruiken om het gewenste besturingstype op te geven bij het laden van een HTML-document. Het instellen van de`PreferredControlType`eigendom aan`HtmlControlType.StructuredDocumentTag` staat Aspose.Words toe om StructuredDocumentTags (SDT) te gebruiken voor een betere weergave en verwerking van HTML-inhoud. U kunt ook andere soorten besturingselementen verkennen, afhankelijk van uw specifieke vereisten. Het gebruik van deze functie zorgt voor een nauwkeurige en efficiënte verwerking van HTML-documenten in uw C#-toepassing met Aspose.Words.
+En daar heb je het! We hebben met succes een keuzelijstformulierveld ingevoegd in een Word-document met behulp van Aspose.Words voor .NET door gebruik te maken van HTML-laadopties. Deze stapsgewijze handleiding moet u helpen het proces te begrijpen en toe te passen op uw projecten. Of u nu het maken van documenten automatiseert of HTML-inhoud manipuleert, Aspose.Words voor .NET biedt krachtige hulpmiddelen om uw doelen te bereiken.
 
-### Veelgestelde vragen over het gewenste besturingstype in een Word-document
+## Veelgestelde vragen
 
-#### Vraag: Wat is de functie "Voorkeursbesturingstype" in Aspose.Words voor .NET?
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek voor documentmanipulatie waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, bewerken, converteren en weergeven.
 
-A: Met de functie "Voorkeurstype besturingselement" kunt u het voorkeurstype besturingselement specificeren om HTML-elementen weer te geven bij het laden van een HTML-document. Het helpt bij het selecteren van het juiste besturingstype voor een betere weergave en verwerking van de HTML-inhoud.
+### Kan ik andere HTML-besturingstypen gebruiken met Aspose.Words voor .NET?
+Ja, Aspose.Words voor .NET ondersteunt verschillende HTML-besturingstypen. U kunt aanpassen hoe verschillende besturingselementen in het Word-document worden weergegeven.
 
-#### Vraag: Hoe stel ik het gewenste besturingstype in bij het laden van een HTML-document?
+### Hoe ga ik om met complexe HTML-inhoud in Aspose.Words voor .NET?
+ Aspose.Words voor .NET biedt uitgebreide ondersteuning voor HTML, inclusief complexe elementen. Zorg ervoor dat u de`HtmlLoadOptions`op de juiste manier om te gaan met uw specifieke HTML-inhoud.
 
- A: Om het gewenste besturingstype in te stellen, moet u een`HtmlLoadOptions` object en stel het in`PreferredControlType` eigendom naar wens`HtmlControlType` . In het gegeven voorbeeld,`HtmlControlType.StructuredDocumentTag` is gebruikt.
+### Waar kan ik meer voorbeelden en documentatie vinden?
+ Gedetailleerde documentatie en voorbeelden vindt u op de website[Aspose.Words voor .NET-documentatiepagina](https://reference.aspose.com/words/net/).
 
-#### Vraag: Wat is de betekenis van het gebruik van StructuredDocumentTags (SDT) als het voorkeursbesturingstype?
-
-A: StructuredDocumentTags (SDT) zijn op XML gebaseerde elementen die kunnen worden gebruikt om complexe inhoud en besturingselementen in een Word-document weer te geven. Het gebruik van SDT's als voorkeursbesturingstype kan zorgen voor een betere compatibiliteit en weergave van HTML-inhoud.
-
-#### Vraag: Hoe kan ik ervoor zorgen dat Aspose.Words het gewenste besturingstype gebruikt bij het laden van het HTML-document?
-
- A: Door het instellen van de`PreferredControlType`eigendom aan`HtmlControlType.StructuredDocumentTag`zoals weergegeven in de voorbeeldbroncode, gebruikt Aspose.Words SDT's om HTML-elementen weer te geven bij het laden van het document.
-
-#### Vraag: Kan ik andere soorten besturingselementen als voorkeursoptie gebruiken?
-
- A: Ja, behalve`HtmlControlType.StructuredDocumentTag` , Aspose.Words voor .NET ondersteunt andere besturingstypen, zoals`HtmlControlType.ContentControl`En`HtmlControlType.CustomXmlMarkup`.
+### Is er een gratis proefversie beschikbaar voor Aspose.Words voor .NET?
+ Ja, u kunt een gratis proefversie downloaden van de[Aspose-website](https://releases.aspose.com/).

@@ -106,7 +106,7 @@ class MultipagePrintDocument implements Printable
                 (float) (pf.getImageableHeight() / thumbCount.getHeight()));
         //计算这张纸上要打印的第一页的数字。
         int startPage = pagesOnCurrentSheet + fromPage;
-        //选择此纸上要打印的最后一页的页码。
+        //选择在此纸张上要打印的最后一页的页码。
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
         //循环遍历所选页面，从存储的当前页面到计算的
         //最后一页。

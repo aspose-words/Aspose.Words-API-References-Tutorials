@@ -2,71 +2,128 @@
 title: Ajouter un préfixe de nom de classe CSS
 linktitle: Ajouter un préfixe de nom de classe CSS
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour ajouter un préfixe de nom de classe CSS lors de la conversion d'un document en HTML avec Aspose.Words pour .NET.
+description: Découvrez comment ajouter un préfixe de nom de classe CSS lors de l'enregistrement de documents Word au format HTML à l'aide d'Aspose.Words pour .NET. Guide étape par étape, extraits de code et FAQ inclus.
 type: docs
 weight: 10
 url: /fr/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## Introduction
 
-Dans ce didacticiel, nous vous guiderons à travers le code source C# pour ajouter un préfixe de nom de classe CSS avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'ajouter un préfixe personnalisé aux noms de classes CSS générés lors de la conversion d'un document en HTML.
+Accueillir! Si vous plongez dans le monde d'Aspose.Words pour .NET, vous allez vous régaler. Aujourd'hui, nous allons explorer comment ajouter un préfixe de nom de classe CSS lors de l'enregistrement d'un document Word au format HTML à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité est très pratique lorsque vous souhaitez éviter les conflits de noms de classes dans vos fichiers HTML.
 
-## Étape 1 : Configuration du projet
+## Conditions préalables
 
-Pour commencer, créez un nouveau projet C# dans votre IDE préféré. Assurez-vous que la bibliothèque Aspose.Words for .NET est référencée dans votre projet.
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-## Étape 2 : Chargement du document
+-  Aspose.Words for .NET : si vous ne l'avez pas encore installé,[Télécharger les ici](https://releases.aspose.com/words/net/).
+- Environnement de développement : Visual Studio ou tout autre IDE C#.
+-  Un document Word : nous utiliserons un document nommé`Rendering.docx`. Placez-le dans le répertoire de votre projet.
 
-Dans cette étape, nous chargerons le document Word que nous souhaitons convertir en HTML. Utilisez le code suivant pour charger le document :
+## Importer des espaces de noms
+
+Tout d’abord, assurez-vous que les espaces de noms nécessaires sont importés dans votre projet C#. Ajoutez-les en haut de votre fichier de code :
 
 ```csharp
-//Chemin d'accès au répertoire des documents.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Passons maintenant au guide étape par étape !
+
+## Étape 1 : Configurez votre projet
+
+Avant de pouvoir commencer à ajouter un préfixe de nom de classe CSS, configurons notre projet.
+
+### Étape 1.1 : Créer un nouveau projet
+
+ Lancez votre Visual Studio et créez un nouveau projet d’application console. Nommez-le de quelque chose d'accrocheur comme`AsposeCssPrefixExample`.
+
+### Étape 1.2 : Ajouter Aspose.Words pour .NET
+
+Si vous ne l'avez pas déjà fait, ajoutez Aspose.Words for .NET à votre projet via NuGet. Ouvrez simplement la console NuGet Package Manager et exécutez :
+
+```bash
+Install-Package Aspose.Words
+```
+
+Super! Maintenant, nous sommes prêts à commencer à coder.
+
+## Étape 2 : Chargez votre document
+
+La première chose à faire est de charger le document Word que nous voulons convertir en HTML.
+
+### Étape 2.1 : Définir le chemin du document
+
+ Configurez le chemin d'accès à votre répertoire de documents. Pour les besoins de ce didacticiel, supposons que votre document se trouve dans un dossier nommé`Documents` dans le répertoire de votre projet.
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### Étape 2.2 : Charger le document
+
+Maintenant, chargeons le document en utilisant Aspose.Words :
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Remplacer`"YOUR DOCUMENTS DIRECTORY"` avec le chemin réel du répertoire où se trouve votre document.
+## Étape 3 : Configurer les options d'enregistrement HTML
 
-## Étape 3 : Définir les options d'enregistrement HTML
+Ensuite, nous devons configurer les options de sauvegarde HTML pour inclure un préfixe de nom de classe CSS.
 
-Définissons maintenant les options d'enregistrement HTML, y compris le type de feuille de style CSS et le préfixe du nom de classe CSS. Utilisez le code suivant :
+### Étape 3.1 : Créer des options d'enregistrement HTML
+
+ Instancier le`HtmlSaveOptions` objet et définissez le type de feuille de style CSS sur`External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
- Ce code crée une instance de`HtmlSaveOptions` et des ensembles`CssStyleSheetType` à`CssStyleSheetType.External` pour générer une feuille de style CSS externe, et`CssClassNamePrefix` à`"pfx_"` préfixer`"pfx_"` aux noms de classe CSS.
+### Étape 3.2 : Définir le préfixe du nom de classe CSS
 
-## Étape 4 : Conversion et enregistrement du document au format HTML
+ Maintenant, définissons le`CssClassNamePrefix` propriété au préfixe souhaité. Pour cet exemple, nous utiliserons`"pfx_"`.
 
-Enfin, nous convertirons le document en HTML en utilisant les options de sauvegarde HTML définies précédemment. Utilisez le code suivant :
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## Étape 4 : Enregistrez le document au format HTML
+
+Enfin, enregistrons le document sous forme de fichier HTML avec nos options configurées.
+
+
+Spécifiez le chemin du fichier HTML de sortie et enregistrez le document.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-Ce code convertit le document en HTML et l'enregistre dans un fichier avec le préfixe de nom de classe CSS ajouté.
+## Étape 5 : vérifier la sortie
 
-### Exemple de code source pour ajouter un préfixe de nom de classe CSS à l'aide d'Aspose.Words pour .NET
+ Après avoir exécuté votre projet, accédez à votre`Documents` dossier. Vous devriez trouver un fichier HTML nommé`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Ouvrez ce fichier dans un éditeur de texte ou un navigateur pour vérifier que les classes CSS portent le préfixe`pfx_`.
 
-```csharp
+## Conclusion
 
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+Et voila! En suivant ces étapes, vous avez ajouté avec succès un préfixe de nom de classe CSS à votre sortie HTML à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité simple mais puissante peut vous aider à conserver des styles propres et sans conflit dans vos documents HTML.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## FAQ
 
-```
+### Puis-je utiliser un préfixe différent pour chaque opération de sauvegarde ?
+ Oui, vous pouvez personnaliser le préfixe à chaque fois que vous enregistrez un document en modifiant le`CssClassNamePrefix` propriété.
 
- Assurez-vous de spécifier le chemin d'accès correct au document dans le champ`dataDir` variable.
+### Cette méthode prend-elle en charge le CSS en ligne ?
+ Le`CssClassNamePrefix`la propriété fonctionne avec du CSS externe. Pour le CSS en ligne, vous aurez besoin d'une approche différente.
 
-Vous avez maintenant appris comment ajouter un préfixe de nom de classe CSS lors de la conversion d'un document en HTML à l'aide d'Aspose.Words pour .NET. En suivant les étapes du guide étape par étape fournies dans ce didacticiel, vous pouvez personnaliser les noms de classes CSS dans vos documents HTML convertis.
+### Comment puis-je inclure d’autres options de sauvegarde HTML ?
+ Vous pouvez configurer diverses propriétés de`HtmlSaveOptions` pour personnaliser votre sortie HTML. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+
+### Est-il possible de sauvegarder le HTML dans un flux ?
+ Absolument! Vous pouvez enregistrer le document dans un flux en transmettant l'objet flux au`Save` méthode.
+
+### Comment puis-je obtenir de l'aide si je rencontre des problèmes ?
+ Vous pouvez bénéficier du soutien du[Forum Aspose](https://forum.aspose.com/c/words/8).

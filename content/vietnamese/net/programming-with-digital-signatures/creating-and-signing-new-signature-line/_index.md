@@ -13,7 +13,7 @@ Này! Như vậy, bạn đã có một tài liệu Word và bạn cần thêm d�
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
 1.  Aspose.Words cho .NET - Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển .NET - Visual Studio rất được khuyến khích.
 3. Tài liệu cần ký - Tạo một tài liệu Word đơn giản hoặc sử dụng tài liệu hiện có.

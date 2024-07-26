@@ -41,7 +41,7 @@ Bu noktada Aspose.Words for Java'nın temellerine hakim oldunuz. Ama keşfedilec
 
 ## Java Eğitimleri için Aspose.Words'ü Nerede Bulabilirsiniz?
 
- Belge işleme yolculuğunuza başlamaya hazır mısınız? Eğitimlerimize ve kaynaklarımıza adresinden ulaşabilirsiniz.[Aspose.Words API Belgeleri](https://reference.aspose.com/words/java/). İster yeni başlayan ister deneyimli bir geliştirici olun, adım adım eğitimlerimiz tüm beceri düzeylerine uygundur.
+ Belge işleme yolculuğunuza başlamaya hazır mısınız? Eğitimlerimize ve kaynaklarımıza adresinden ulaşabilirsiniz.[Aspose.Words API Belgeleri](https://reference.aspose.com/words/java/). İster yeni başlayan ister deneyimli bir geliştirici olun, adım adım eğitimlerimiz tüm beceri düzeylerine hitap eder.
 
 Aspose.Words for Java kullanarak belge işleme, geliştiriciler ve işletmeler için değerli bir beceridir. Eğitimlerimiz ve Aspose.Words'ün gücüyle, belgelerle ilgili görevlerinizi kolaylaştırabilir, üretkenliğinizi artırabilir ve zahmetsizce çarpıcı belgeler oluşturabilirsiniz.
 
@@ -71,7 +71,7 @@ Bu kapsamlı kılavuzla Aspose.Words for Java'da Yapılandırılmış Belge Etik
 ### [Aspose.Words for Java'da Stilleri ve Temaları Kullanmak](./using-styles-and-themes/)
 Aspose.Words for Java ile belge formatını nasıl geliştireceğinizi öğrenin. Kaynak kodu örnekleri içeren bu kapsamlı kılavuzda stilleri, temaları ve daha fazlasını keşfedin.
 ### [Aspose.Words for Java'da İçindekiler Oluşturma](./generating-table-of-contents/)
-Aspose.Words for Java'yı kullanarak İçindekiler Tablosunu (TOC) nasıl oluşturacağınızı ve özelleştireceğinizi öğrenin. Zahmetsizce düzenli ve profesyonel belgeler oluşturun.
+Aspose.Words for Java'yı kullanarak İçindekiler Tablosunu (TOC) nasıl oluşturacağınızı ve özelleştireceğinizi öğrenin. Düzenli ve profesyonel belgeleri zahmetsizce oluşturun.
 ### [Aspose.Words for Java'da Belgeleri Koruma](./protecting-documents/)
 Aspose.Words for Java ile Java Word belgelerinizi nasıl güvence altına alacağınızı öğrenin. Verilerinizi şifre ve daha fazlasıyla koruyun.
 ### [Aspose.Words for Java'da Belgeleri Sayfalara Bölme](./splitting-documents-into-pages/)

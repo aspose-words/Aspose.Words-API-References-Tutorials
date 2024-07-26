@@ -9,7 +9,7 @@ url: /pl/net/join-and-append-documents/join-new-page/
 ---
 ## Wstęp
 
-Podczas pracy z dużymi dokumentami lub łączenia wielu dokumentów w jeden zachowanie formatowania i zapewnienie przejrzystości ma kluczowe znaczenie. Aspose.Words dla .NET zapewnia potężne narzędzia do programowego manipulowania dokumentami programu Word, umożliwiając programistom efektywne wykonywanie złożonych zadań.
+Podczas pracy z dużymi dokumentami lub łączenia wielu dokumentów w jeden zachowanie formatowania i zapewnienie przejrzystości ma kluczowe znaczenie. Aspose.Words dla .NET zapewnia potężne narzędzia do programowego manipulowania dokumentami programu Word, umożliwiając programistom wydajne wykonywanie złożonych zadań.
 
 ## Warunki wstępne
 

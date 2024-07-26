@@ -39,7 +39,7 @@ Antes de mergulhar no código, configure o caminho para o diretório de document
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real onde você deseja salvar seu documento PDF.
+ Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real onde você deseja salvar seu documento PDF.
 
 ## Etapa 2: crie um novo documento
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ## Conclusão
 
-aí está! Você acabou de aprender como escapar de URIs ao salvar um documento do Word como PDF usando Aspose.Words for .NET. Este processo garante que seus hiperlinks permaneçam funcionais e formatados corretamente no PDF resultante. 
+E aí está! Você acabou de aprender como escapar de URIs ao salvar um documento do Word como PDF usando Aspose.Words for .NET. Este processo garante que seus hiperlinks permaneçam funcionais e formatados corretamente no PDF resultante. 
 
 Lembre-se de que dominar essas técnicas pequenas, mas significativas, pode melhorar muito a qualidade e a funcionalidade dos seus documentos. Boa codificação!
 

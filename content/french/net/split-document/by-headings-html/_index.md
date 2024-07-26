@@ -14,7 +14,7 @@ Dans ce didacticiel, nous vous expliquerons comment diviser un document Word en 
 Pour commencer, spécifiez le répertoire de votre document et chargez le document dans un objet Document. Voici comment:
 
 ```csharp
-//Chemin d'accès au répertoire des documents.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

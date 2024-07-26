@@ -13,5 +13,5 @@ Pemrosesan Kata dengan MarkdownSaveOptions adalah sumber daya mendalam yang mema
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Ekspor Ke Penurunan Harga Dengan Penyelarasan Isi Tabel](./export-into-markdown-with-table-content-alignment/) | Pelajari cara mengekspor konten tabel dengan perataan berbeda ke file Markdown menggunakan Aspose.Words untuk .NET. |
-| [Atur Folder Gambar](./set-images-folder/) | Pelajari cara mengatur folder gambar saat mengekspor ke Markdown dengan Aspose.Words untuk .NET. Sesuaikan penempatan gambar untuk pengorganisasian dan integrasi yang lebih baik.|
+| [Ekspor Ke Penurunan Harga Dengan Penyelarasan Isi Tabel](./export-into-markdown-with-table-content-alignment/) | Pelajari cara mengekspor dokumen Word ke Markdown dengan tabel yang disejajarkan menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk tabel penurunan harga yang sempurna. |
+| [Atur Folder Gambar](./set-images-folder/) | Konversikan dokumen Word ke Markdown dengan perataan tabel yang tepat menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci kami untuk hasil sempurna. |

@@ -2,107 +2,96 @@
 title: 使用证书持有者将数字签名添加到 PDF
 linktitle: 使用证书持有者将数字签名添加到 PDF
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用带有 Aspose.Words for .NET 的证书持有者将数字签名添加到 PDF。
+description: 使用 Aspose.Words for .NET 通过数字签名保护您的 PDF 文件。按照此分步指南，您可以轻松地将数字签名添加到您的 PDF 中。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
+## 介绍
 
-在本教程中，我们将引导您完成使用 Aspose.Words for .NET 的证书持有者向 PDF 添加数字签名的步骤。数字签名为 PDF 文档增加了一层安全性和完整性。请按照以下步骤操作：
+您是否曾经想过如何使用数字签名保护您的 PDF 文档？好吧，您来对地方了！数字签名是手写签名的现代等价物，提供了一种验证数字文档真实性和完整性的方法。在本教程中，我们将向您展示如何使用 Aspose.Words for .NET 将数字签名添加到 PDF。我们将逐步介绍从设置环境到执行代码的所有内容。在本指南结束时，您将拥有一个安全可靠的数字签名 PDF。
 
-## 步骤 1：创建文档并添加内容
+## 先决条件
 
-首先创建 Document 类的实例：
+在开始之前，您需要准备一些东西：
+
+1.  Aspose.Words for .NET：确保您已安装 Aspose.Words for .NET。您可以从[Aspose 网站](https://releases.aspose.com/words/net/).
+2. 证书文件：您需要一个 .pfx 证书文件来签署 PDF。如果您没有，您可以创建一个自签名证书用于测试目的。
+3. Visual Studio：本教程假设您使用 Visual Studio 作为开发环境。
+4. C# 基础知识：熟悉 C# 和 .NET 编程至关重要。
+
+## 导入命名空间
+
+首先，让我们导入必要的命名空间。这些对于访问文档操作和数字签名所需的类和方法至关重要。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System;
+```
+
+让我们将这个过程分解为简单、易于管理的步骤。
+
+## 步骤 1：设置你的项目
+
+在 Visual Studio 中创建一个新的 C# 项目。添加对 Aspose.Words for .NET 的引用。您可以通过 NuGet 包管理器搜索“Aspose.Words”并安装它来执行此操作。
+
+## 步骤 2：加载或创建文档
+
+您需要一份要签署的文件。您可以加载现有文档或创建新文档。在本教程中，我们将创建新文档并添加一些示例文本。
+
+```csharp
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-```
 
-## 步骤 2：向文档添加内容
-
-然后使用`DocumentBuilder`向文档添加内容。例如，要添加包含文本“测试签名 PDF”的段落，请使用`Writeln`方法：
-
-```csharp
+//向文档中添加一些文本。
 builder.Writeln("Test Signed PDF.");
 ```
 
-您可以根据需要添加其他内容项。
+## 步骤 3：指定数字签名详细信息
 
-## 步骤 3：设置 PDF 保存选项
-
-创建 PdfSaveOptions 类的实例并指定数字签名详细信息：
+现在，是时候设置数字签名详细信息了。您需要指定 .pfx 证书文件的路径、签名原因、位置和签名日期。
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-	DigitalSignatureDetails = new PdfDigitalSignatureDetails(
-		CertificateHolder.Create(MyDir + "morzal.pfx", "aw"), "reason", "location",
-		DateTime.Now)
+    DigitalSignatureDetails = new PdfDigitalSignatureDetails(
+        CertificateHolder.Create(dataDir + "morzal.pfx", "your_password"), "reason", "location",
+        DateTime.Now)
 };
 ```
 
-请务必指定证书的正确路径和相关密码。您还可以自定义签名原因和位置。
+代替`"your_password"`使用您的 .pfx 文件的密码。
 
 ## 步骤 4：将文档保存为数字签名的 PDF
 
-使用`Save`通过指定保存选项将文档保存为 PDF 的方法：
+最后，将文档保存为带有数字签名的 PDF。
 
 ```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
+doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-确保指定正确的路径来保存数字签名的 PDF。
+就这样！您的文档现已签名并保存为 PDF。
 
-通过遵循这些步骤，您可以使用 Aspose.Words for .NET 轻松创建带有证书的数字签名的 PDF。
-
-### 使用 Aspose.Words for .NET 的证书持有者进行数字签名的 PDF 的示例源代码
-
-以下是使用 Aspose.Words for .NET 从文档中使用证书持有者对 PDF 进行数字签名的完整源代码：
-
-```csharp
-
-            //文档目录的路径。
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document();
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            
-            builder.Writeln("Test Signed PDF.");
-
-            PdfSaveOptions saveOptions = new PdfSaveOptions
-            {
-                DigitalSignatureDetails = new PdfDigitalSignatureDetails(
-                    CertificateHolder.Create(MyDir + "morzal.pfx", "aw"), "reason", "location",
-                    DateTime.Now)
-            };
-
-            doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
-            
-        
-```
 ## 结论
 
-在本教程中，我们探索了使用 Aspose.Words for .NET 证书向 PDF 文档添加数字签名的步骤。数字签名为文档增加了一层安全性和完整性，从而保证了其真实性并可以检测到任何后续修改。按照给定的步骤，您可以轻松使用 Aspose.Words for .NET 证书创建数字签名的 PDF。
+数字签名是确保文档完整性和真实性的强大工具。使用 Aspose.Words for .NET，向 PDF 文件添加数字签名既简单又高效。通过遵循本分步指南，您可以保护 PDF 文档，并让收件人对其真实性放心。祝您编码愉快！
 
-### 经常问的问题
+## 常见问题解答
 
-#### 问：什么是数字签名？为什么它在 PDF 文档中很重要？
-答：数字签名是一种安全技术，有助于确保电子文档（如 PDF 文件）的真实性、完整性和不可否认性。它使用数字证书为文档添加一层安全性，有助于验证作者的身份并检测对内容的任何后续更改。
+### 什么是数字签名？
+数字签名是一种电子形式的签名，用于验证数字文档的真实性和完整性。
 
-#### 问：如何使用 Aspose.Words for .NET 的证书向 PDF 文档添加数字签名？
-答：要使用 Aspose.Words for .NET 的证书向 PDF 文档添加数字签名，请按照以下步骤操作：
+### 我需要证书来添加数字签名吗？
+是的，您需要一个 .pfx 证书文件来向您的 PDF 添加数字签名。
 
-创建一个实例`Document`类来表示文档。
+### 我可以创建一个自签名证书来测试吗？
+是的，您可以创建自签名证书用于测试目的。但是，对于生产用途，建议从受信任的证书颁发机构获取证书。
 
-使用`DocumentBuilder`类来将所需内容添加到文档中。
+### Aspose.Words for .NET 免费吗？
+ Aspose.Words for .NET 是一款商业产品，但您可以从[Aspose 网站](https://releases.aspose.com/).
 
-创建一个实例`PdfSaveOptions`类并使用指定数字签名详细信息`PdfDigitalSignatureDetails`类。您需要提供证书的路径（`CertificateHolder.Create`)、关联密码以及签名原因和位置。
-
-使用`Save`方法将文档保存为 PDF 格式，并指定保存选项。
-
-#### 问：如何获取证书以便为 PDF 文档添加数字签名？
-答：要获取证书以向 PDF 文档添加数字签名，通常可以联系证书颁发机构 (CA) 或信任服务提供商。这些实体在验证您的身份并确认您的请求后颁发数字证书。获得证书后，您可以在应用程序中使用它向 PDF 文档添加数字签名。
-
-#### 问：是否可以自定义数字签名的详细信息，例如原因和位置？
-答：是的，您可以通过指定签名的原因和位置来自定义数字签名详细信息。在提供的示例代码中，您可以修改`reason`和`location`创建时的参数`PdfDigitalSignatureDetails`对象。请确保为每个参数提供适当的信息，以反映 PDF 文档中签名的原因和位置。
+### 我可以使用 Aspose.Words for .NET 签署其他类型的文件吗？
+是的，Aspose.Words for .NET 可用于签署各种类型的文档，而不仅仅是 PDF。

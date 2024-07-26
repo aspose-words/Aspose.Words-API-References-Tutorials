@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- Ở bước cuối cùng này, chúng tôi lưu tài liệu kết quả ở định dạng .docx bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra.
+Ở bước cuối cùng này, chúng tôi lưu tài liệu kết quả ở định dạng .docx bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra.
 
 Bây giờ bạn có thể chạy mã nguồn để tải tài liệu văn bản bằng cách chỉ định các tùy chọn xử lý khoảng trắng. Tài liệu thu được sẽ được lưu trong thư mục được chỉ định với tên "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
 

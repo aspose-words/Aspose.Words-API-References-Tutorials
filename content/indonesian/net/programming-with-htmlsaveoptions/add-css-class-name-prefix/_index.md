@@ -2,71 +2,128 @@
 title: Tambahkan Awalan Nama Kelas Css
 linktitle: Tambahkan Awalan Nama Kelas Css
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk menambahkan awalan nama kelas CSS saat mengonversi dokumen ke HTML dengan Aspose.Words untuk .NET.
+description: Pelajari cara menambahkan awalan nama kelas CSS saat menyimpan dokumen Word sebagai HTML menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah, cuplikan kode, dan FAQ disertakan.
 type: docs
 weight: 10
 url: /id/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui kode sumber C# untuk menambahkan awalan nama kelas CSS dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menambahkan awalan khusus ke nama kelas CSS yang dihasilkan saat mengonversi dokumen ke HTML.
+Selamat datang! Jika Anda mendalami dunia Aspose.Words untuk .NET, Anda akan mendapat hadiahnya. Hari ini, kita akan mempelajari cara menambahkan awalan nama kelas CSS saat menyimpan dokumen Word sebagai HTML menggunakan Aspose.Words untuk .NET. Fitur ini sangat berguna ketika Anda ingin menghindari konflik nama kelas di file HTML Anda.
 
-## Langkah 1: Pengaturan Proyek
+## Prasyarat
 
-Untuk memulai, buat proyek C# baru di IDE favorit Anda. Pastikan perpustakaan Aspose.Words untuk .NET direferensikan dalam proyek Anda.
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
-## Langkah 2: Memuat dokumen
+-  Aspose.Words untuk .NET: Jika Anda belum menginstalnya,[Unduh di sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Visual Studio atau C# IDE lainnya.
+-  Dokumen Word: Kami akan menggunakan dokumen bernama`Rendering.docx`. Tempatkan di direktori proyek Anda.
 
-Pada langkah ini, kita akan memuat dokumen Word yang ingin kita konversi ke HTML. Gunakan kode berikut untuk memuat dokumen:
+## Impor Namespace
+
+Pertama, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek C# Anda. Tambahkan ini di bagian atas file kode Anda:
 
 ```csharp
-//Jalur ke direktori dokumen.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Sekarang, mari selami panduan langkah demi langkah!
+
+## Langkah 1: Siapkan Proyek Anda
+
+Sebelum kita dapat mulai menambahkan awalan nama kelas CSS, mari siapkan proyek kita.
+
+### Langkah 1.1: Buat Proyek Baru
+
+ Jalankan Visual Studio Anda dan buat proyek Aplikasi Konsol baru. Beri nama sesuatu yang menarik`AsposeCssPrefixExample`.
+
+### Langkah 1.2: Tambahkan Aspose.Words untuk .NET
+
+Jika Anda belum melakukannya, tambahkan Aspose.Words for .NET ke proyek Anda melalui NuGet. Cukup buka Konsol Manajer Paket NuGet dan jalankan:
+
+```bash
+Install-Package Aspose.Words
+```
+
+Besar! Sekarang, kami siap untuk memulai coding.
+
+## Langkah 2: Muat Dokumen Anda
+
+Hal pertama yang perlu kita lakukan adalah memuat dokumen Word yang ingin kita konversi ke HTML.
+
+### Langkah 2.1: Tentukan Jalur Dokumen
+
+ Siapkan jalur ke direktori dokumen Anda. Demi tutorial ini, anggaplah dokumen Anda ada di folder bernama`Documents` dalam direktori proyek Anda.
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### Langkah 2.2: Muat Dokumen
+
+Sekarang, mari muat dokumen menggunakan Aspose.Words:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Mengganti`"YOUR DOCUMENTS DIRECTORY"` dengan jalur sebenarnya dari direktori tempat dokumen Anda berada.
+## Langkah 3: Konfigurasikan Opsi Penyimpanan HTML
 
-## Langkah 3: Tetapkan opsi penyimpanan HTML
+Selanjutnya, kita perlu mengkonfigurasi opsi penyimpanan HTML untuk menyertakan awalan nama kelas CSS.
 
-Sekarang mari kita atur opsi penyimpanan HTML, termasuk tipe stylesheet CSS dan awalan nama kelas CSS. Gunakan kode berikut:
+### Langkah 3.1: Buat Opsi Penyimpanan HTML
+
+ Buat instance`HtmlSaveOptions` objek dan atur jenis lembar gaya CSS menjadi`External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
- Kode ini membuat sebuah instance dari`HtmlSaveOptions` dan set`CssStyleSheetType` ke`CssStyleSheetType.External` untuk menghasilkan style sheet CSS eksternal, dan`CssClassNamePrefix` ke`"pfx_"` untuk awalan`"pfx_"` untuk memberi nama kelas CSS.
+### Langkah 3.2: Tetapkan Awalan Nama Kelas CSS
 
-## Langkah 4: Mengonversi dan menyimpan dokumen ke HTML
+ Sekarang, mari kita atur`CssClassNamePrefix` properti ke awalan yang Anda inginkan. Untuk contoh ini, kami akan menggunakan`"pfx_"`.
 
-Terakhir, kita akan mengonversi dokumen ke HTML menggunakan opsi penyimpanan HTML yang ditentukan sebelumnya. Gunakan kode berikut:
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## Langkah 4: Simpan Dokumen sebagai HTML
+
+Terakhir, mari simpan dokumen sebagai file HTML dengan opsi yang dikonfigurasi.
+
+
+Tentukan jalur file HTML keluaran dan simpan dokumen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-Kode ini mengubah dokumen menjadi HTML dan menyimpannya ke file dengan awalan nama kelas CSS ditambahkan.
+## Langkah 5: Verifikasi Outputnya
 
-### Contoh kode sumber untuk Tambahkan Awalan Nama Kelas Css menggunakan Aspose.Words untuk .NET
+ Setelah menjalankan proyek Anda, navigasikan ke`Documents` map. Anda harus menemukan file HTML bernama`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Buka file ini di editor teks atau browser untuk memverifikasi bahwa kelas CSS memiliki awalan`pfx_`.
 
-```csharp
+## Kesimpulan
 
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda telah berhasil menambahkan awalan nama kelas CSS ke output HTML Anda menggunakan Aspose.Words untuk .NET. Fitur sederhana namun kuat ini dapat membantu Anda mempertahankan gaya yang bersih dan bebas konflik dalam dokumen HTML Anda.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## FAQ
 
-```
+### Bisakah saya menggunakan awalan berbeda untuk setiap operasi penyimpanan?
+ Ya, Anda dapat menyesuaikan awalan setiap kali Anda menyimpan dokumen dengan mengubah`CssClassNamePrefix` Properti.
 
- Pastikan untuk menentukan jalur dokumen yang benar di`dataDir` variabel.
+### Apakah metode ini mendukung CSS sebaris?
+ Itu`CssClassNamePrefix`properti berfungsi dengan CSS eksternal. Untuk CSS sebaris, Anda memerlukan pendekatan berbeda.
 
-Anda sekarang telah mempelajari cara menambahkan awalan nama kelas CSS saat mengonversi dokumen ke HTML menggunakan Aspose.Words untuk .NET. Mengikuti langkah panduan langkah demi langkah yang disediakan dalam tutorial ini, Anda dapat menyesuaikan nama kelas CSS dalam dokumen HTML yang dikonversi.
+### Bagaimana cara menyertakan opsi penyimpanan HTML lainnya?
+ Anda dapat mengonfigurasi berbagai properti`HtmlSaveOptions` untuk menyesuaikan keluaran HTML Anda. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
+
+### Apakah mungkin menyimpan HTML ke aliran?
+ Sangat! Anda dapat menyimpan dokumen ke aliran dengan meneruskan objek aliran ke`Save` metode.
+
+### Bagaimana cara mendapatkan dukungan jika saya mengalami masalah?
+ Anda bisa mendapatkan dukungan dari[Asumsikan forum](https://forum.aspose.com/c/words/8).

@@ -103,7 +103,7 @@ Jetzt können Sie den Quellcode ausführen, um das Textdokument mit Listennummer
 ## Abschluss
 In diesem Tutorial haben wir die Funktion zur Erkennung von Leerzeichen in Aspose.Words für .NET untersucht. Wir haben gelernt, wie man aus einem Textdokument Listen erstellt, die Listennummern gefolgt von Leerzeichen enthalten.
 
-Diese Funktion ist äußerst nützlich für die Verarbeitung von Dokumenten, die auf unterschiedliche Weise formatierte Listennummern enthalten. Mithilfe der entsprechenden Ladeoptionen kann Aspose.Words diese Listennummern erkennen, auch wenn ihnen Leerzeichen folgen, und sie im endgültigen Dokument in strukturierte Listen umwandeln.
+Diese Funktion ist äußerst nützlich für die Verarbeitung von Dokumenten, die auf unterschiedliche Weise formatierte Listennummern enthalten. Durch die Verwendung der entsprechenden Ladeoptionen kann Aspose.Words diese Listennummern erkennen, auch wenn ihnen Leerzeichen folgen, und sie im endgültigen Dokument in strukturierte Listen umwandeln.
 
 Mit dieser Funktion können Sie Zeit sparen und die Effizienz Ihres Arbeitsablaufs verbessern. Sie können problemlos Informationen aus Textdokumenten extrahieren und diese mit entsprechenden Listen in gut strukturierte Dokumente umwandeln.
 

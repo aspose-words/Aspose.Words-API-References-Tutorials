@@ -39,7 +39,7 @@ Než se ponoříte do kódu, nastavte cestu k adresáři dokumentů. Zde budou u
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou, kam chcete uložit dokument PDF.
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kam chcete uložit dokument PDF.
 
 ## Krok 2: Vytvořte nový dokument
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ## Závěr
 
-tady to máte! Právě jste se naučili, jak uniknout URI při ukládání dokumentu aplikace Word jako PDF pomocí Aspose.Words for .NET. Tento proces zajišťuje, že vaše hypertextové odkazy zůstanou ve výsledném PDF funkční a správně naformátované. 
+A tady to máte! Právě jste se naučili, jak uniknout URI při ukládání dokumentu aplikace Word jako PDF pomocí Aspose.Words for .NET. Tento proces zajišťuje, že vaše hypertextové odkazy zůstanou ve výsledném PDF funkční a správně naformátované. 
 
 Pamatujte, že zvládnutí těchto malých, ale významných technik může výrazně zlepšit kvalitu a funkčnost vašich dokumentů. Šťastné kódování!
 

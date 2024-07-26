@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- ในขั้นตอนนี้ เราใช้ LINQ เพื่อกรองและนับรูปร่างที่มี SmartArt ที่`GetChildNodes` วิธีการดึงรูปร่างทั้งหมดและ`HasSmartArt` คุณสมบัติตรวจสอบว่ารูปร่างมี SmartArt หรือไม่
+ ในขั้นตอนนี้ เราใช้ LINQ เพื่อกรองและนับรูปร่างที่มี SmartArt ที่`GetChildNodes` วิธีการดึงรูปร่างทั้งหมดและ`HasSmartArt`คุณสมบัติตรวจสอบว่ารูปร่างมี SmartArt หรือไม่
 
 ## ขั้นตอนที่ 4: การเรียกใช้โค้ด
 
@@ -80,7 +80,7 @@ The document has X shapes with SmartArt.
 
 ## บทสรุป
 
-และคุณก็ได้แล้ว! คุณได้เรียนรู้วิธีตรวจจับรูปร่าง SmartArt ในเอกสาร Word โดยใช้ Aspose.Words for .NET เรียบร้อยแล้ว บทช่วยสอนนี้ครอบคลุมถึงการตั้งค่าสภาพแวดล้อมของคุณ การโหลดเอกสาร การตรวจจับรูปร่าง SmartArt และการรันโค้ด Aspose.Words นำเสนอฟีเจอร์ที่หลากหลาย ดังนั้นอย่าลืมสำรวจดู[เอกสารประกอบ API](https://reference.aspose.com/words/net/) เพื่อปลดล็อกศักยภาพอันเต็มเปี่ยม
+ และคุณก็ได้แล้ว! คุณได้เรียนรู้วิธีตรวจจับรูปร่าง SmartArt ในเอกสาร Word โดยใช้ Aspose.Words for .NET เรียบร้อยแล้ว บทช่วยสอนนี้ครอบคลุมถึงการตั้งค่าสภาพแวดล้อมของคุณ การโหลดเอกสาร การตรวจจับรูปร่าง SmartArt และการรันโค้ด Aspose.Words นำเสนอฟีเจอร์ที่หลากหลาย ดังนั้นอย่าลืมสำรวจดู[เอกสารประกอบ API](https://reference.aspose.com/words/net/) เพื่อปลดล็อกศักยภาพอันเต็มเปี่ยม
 
 ## คำถามที่พบบ่อย
 

@@ -21,7 +21,7 @@ Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách tạo một bảng �
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Tạo tài liệu và khởi tạo trình tạo tài liệu
+//Tạo tài liệu và khởi tạo trình tạo tài liệu
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Gọi phương thức sau để kết thúc dòng đầu tiên và bắt đầu một dòng mới
+// Gọi phương thức sau để kết thúc dòng đầu tiên và bắt đầu một dòng mới
 builder. EndRow();
 
 // Xây dựng ô đầu tiên của hàng thứ hai
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Báo hiệu chúng ta đã hoàn thành việc xây dựng bảng.
+	// Báo hiệu chúng ta đã hoàn thành việc xây dựng bảng.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

@@ -2,88 +2,102 @@
 title: Définir les options de plan dans un document PDF
 linktitle: Définir les options de plan dans un document PDF
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour définir les options de plan dans un document PDF avec Aspose.Words for .NET.
+description: Découvrez comment définir les options de plan dans un document PDF à l'aide d'Aspose.Words for .NET. Améliorez la navigation PDF en configurant les niveaux de titre et les plans développés.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
+## Introduction
 
-Cet article fournit un guide étape par étape sur la façon d'utiliser les options de plan définies pour la fonctionnalité de taille des métafichiers avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. A la fin de ce didacticiel, vous serez en mesure de comprendre comment définir les options de plan dans un document et générer un PDF avec les options de plan correspondantes.
+Lorsque vous travaillez avec des documents, notamment à des fins professionnelles ou académiques, il est crucial d’organiser efficacement votre contenu. Une façon d'améliorer la convivialité de vos documents PDF consiste à définir des options de plan. Les plans, ou signets, permettent aux utilisateurs de naviguer efficacement dans le document, tout comme les chapitres d'un livre. Dans ce guide, nous verrons comment définir ces options à l'aide d'Aspose.Words for .NET, garantissant ainsi que vos fichiers PDF sont bien organisés et conviviaux.
 
-Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words for .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
+## Conditions préalables
 
-## Étape 1 : Définir le répertoire des documents
+Avant de commencer, vous devez vous assurer de disposer de quelques éléments :
 
- Pour commencer, vous devez définir le chemin d’accès au répertoire où se trouvent vos documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
+1.  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Sinon, vous pouvez[Télécharger la dernière version ici](https://releases.aspose.com/words/net/).
+2. Un environnement de développement .NET : vous aurez besoin d'un environnement de développement .NET fonctionnel, tel que Visual Studio.
+3. Compréhension de base de C# : La familiarité avec le langage de programmation C# vous aidera à suivre facilement.
+4. Un document Word : préparez un document Word que vous convertirez en PDF.
+
+## Importer des espaces de noms
+
+Tout d’abord, vous devrez importer les espaces de noms nécessaires. C'est ici que vous inclurez la bibliothèque Aspose.Words pour interagir avec votre document. Voici comment le configurer :
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Étape 1 : définir le chemin du document
+
+Pour commencer, vous devrez spécifier le chemin d'accès à votre document Word. Il s'agit du fichier que vous souhaitez convertir en PDF avec des options de plan. 
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Étape 2 : Téléchargez le document
-
-Ensuite, nous devons charger le document que nous voulons traiter. Dans cet exemple, nous supposons que le document s'appelle « Rendering.docx » et se trouve dans le répertoire de documents spécifié.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Étape 3 : Configurez les options d'enregistrement au format PDF avec les options du plan
+ Dans l'extrait de code ci-dessus, remplacez`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents. Cela indique au programme où trouver le document Word.
 
-Pour définir les options de plan dans le PDF généré, nous devons configurer le`PdfSaveOptions` objet. Nous pouvons définir le nombre de niveaux de plan de titre (`HeadingsOutlineLevels`) et le nombre de niveaux de plan étendus (`ExpandedOutlineLevels`).
+## Étape 2 : Configurer les options d'enregistrement PDF
+
+ Ensuite, vous devez configurer les options d'enregistrement PDF. Cela inclut la définition de la manière dont les plans doivent être traités dans la sortie PDF. Vous utiliserez le`PdfSaveOptions` classe pour faire cela.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
+```
+
+Maintenant, définissons les options de plan. 
+
+### Définir les niveaux de plan des titres
+
+ Le`HeadingsOutlineLevels` La propriété définit le nombre de niveaux de titres qui doivent être inclus dans le plan PDF. Par exemple, si vous le définissez sur 3, il inclura jusqu'à trois niveaux de titres dans le plan PDF.
+
+```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
+```
+
+### Définir des niveaux de plan étendus
+
+ Le`ExpandedOutlineLevels`La propriété contrôle le nombre de niveaux du plan qui doivent être développés par défaut lorsque le PDF est ouvert. Définir cette valeur sur 1 développera les titres de niveau supérieur, donnant une vue claire des sections principales.
+
+```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 ```
 
-## Étape 4 : Enregistrez le document au format PDF avec les options de plan
+## Étape 3 : Enregistrez le document au format PDF
 
-Enfin, nous pouvons enregistrer le document au format PDF en utilisant les options de sauvegarde configurées précédemment.
+ Une fois les options configurées, vous êtes prêt à enregistrer le document au format PDF. Utilisez le`Save` méthode du`Document` classe et transmettez le chemin du fichier et enregistrez les options.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-C'est tout ! Vous avez réussi à définir les options de plan dans un document et à générer un PDF avec les options de plan correspondantes à l'aide d'Aspose.Words for .NET.
-
-### Exemple de code source pour définir les options du plan sur la taille du métafichier avec Aspose.Words for .NET
-
-
-```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
-	saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
-   
-```
+Cette ligne de code enregistre votre document Word au format PDF, en appliquant les options de plan que vous avez configurées. 
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons expliqué comment définir les options de plan dans un document PDF à l'aide d'Aspose.Words for .NET. À l'aide des étapes décrites, vous pouvez facilement spécifier les niveaux de titre et de plan dans votre document et générer un fichier PDF avec les options de plan correspondantes. Profitez des avantages de l'option Plan pour améliorer la structure et la navigation dans vos documents PDF à l'aide d'Aspose.Words for .NET.
+La définition d'options de plan dans un document PDF peut grandement améliorer sa navigabilité, permettant ainsi aux utilisateurs de trouver et d'accéder plus facilement aux sections dont ils ont besoin. Avec Aspose.Words pour .NET, vous pouvez facilement configurer ces paramètres en fonction de vos besoins, garantissant ainsi que vos documents PDF sont aussi conviviaux que possible.
 
-### Questions fréquemment posées
+## FAQ
 
-#### Q : Qu'est-ce que l'option de plan dans un document PDF ?
-R : L'option de plan dans un document PDF fait référence à la structure hiérarchique du contenu du document. Il permet de créer une table des matières interactive et facilite la navigation dans le document. Les options de plan déterminent les niveaux de titre et de sous-titres à inclure dans le plan ainsi que le niveau de détail à afficher dans le plan généré.
+### Quel est le but de définir des options de plan dans un PDF ?
 
-#### Q : Comment puis-je définir les options de plan dans un document PDF à l'aide d'Aspose.Words for .NET ?
-R : Pour définir les options de plan dans un document PDF à l'aide d'Aspose.Words for .NET, procédez comme suit :
+La définition des options de plan aide les utilisateurs à parcourir plus facilement les documents PDF volumineux en fournissant une table des matières structurée et cliquable.
 
- Définissez le chemin du répertoire où se trouvent vos documents en remplaçant`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire de documents.
+### Puis-je définir différents niveaux de titre pour différentes sections de mon document ?
 
- Chargez le document que vous souhaitez convertir en PDF à l'aide du`Document` classe et spécifiez le chemin d'accès au document dans le répertoire de documents spécifié.
+Non, les paramètres de plan s'appliquent globalement à l'ensemble du document. Cependant, vous pouvez structurer votre document avec des niveaux de titres appropriés pour obtenir un effet similaire.
 
- Configurez les options d'enregistrement au format PDF en créant une instance du`PdfSaveOptions` classe et en utilisant le`OutlineOptions` propriété pour définir les options de contour. Vous pouvez spécifier le nombre de niveaux de titres à inclure dans le plan à l'aide de l'option`HeadingsOutlineLevels` propriété et le nombre de niveaux de plan développés à l'aide de la`ExpandedOutlineLevels` propriété.
+### Comment puis-je prévisualiser les modifications avant d'enregistrer le PDF ?
 
- Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document` classe spécifiant le chemin et les options de sauvegarde.
+Vous pouvez utiliser des visionneuses PDF prenant en charge la navigation dans le plan pour vérifier l'apparence du plan. Certaines applications proposent une fonctionnalité de prévisualisation à cet effet.
 
-#### Q : À quoi sert l'option de plan dans un document PDF ?
-: L'option Plan dans un document PDF vous permet de créer une structure hiérarchique du contenu, ce qui facilite la navigation dans le document et l'accès aux différentes sections. Cela permet aux utilisateurs d'accéder rapidement à des parties spécifiques du document en cliquant sur les entrées de la table des matières ou du plan. L'option de plan améliore également l'expérience de lecture en fournissant un aperçu de la structure globale du document.
+### Est-il possible de supprimer le contour après avoir enregistré le PDF ?
+
+Oui, vous pouvez supprimer les contours à l'aide d'un logiciel d'édition de PDF, mais cela n'est pas directement réalisable avec Aspose.Words une fois le PDF créé.
+
+### Quelles autres options d'enregistrement PDF puis-je configurer avec Aspose.Words ?
+
+Aspose.Words propose diverses options telles que la définition du niveau de conformité PDF, l'intégration de polices et l'ajustement de la qualité de l'image.

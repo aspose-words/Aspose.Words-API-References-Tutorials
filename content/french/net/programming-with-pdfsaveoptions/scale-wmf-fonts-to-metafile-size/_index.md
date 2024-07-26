@@ -7,105 +7,104 @@ type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
+## Introduction
 
-Cet article fournit un guide étape par étape sur la façon de réduire la taille d'un PDF avec la fonction de mise à l'échelle des polices WMF en fonction de la taille des métafichiers avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment activer ou désactiver la mise à l'échelle des polices WMF lors de la conversion en PDF.
+Lorsque vous travaillez avec des fichiers PDF, en particulier ceux générés à partir de documents Word contenant des graphiques WMF (Windows Metafile), la gestion de la taille peut devenir un aspect crucial de la gestion des documents. Une façon de contrôler la taille du PDF consiste à ajuster la façon dont les polices WMF sont rendues dans le document. Dans ce didacticiel, nous verrons comment réduire la taille d'un PDF en adaptant les polices WMF à la taille du métafichier à l'aide d'Aspose.Words for .NET.
 
-Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words for .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
+## Conditions préalables
 
-## Étape 1 : Définir le répertoire des documents
+Avant de plonger dans les étapes, assurez-vous d'avoir les éléments suivants :
 
- Pour commencer, vous devez définir le chemin d’accès au répertoire où se trouvent vos documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
+1. Aspose.Words pour .NET : assurez-vous que la bibliothèque Aspose.Words est installée. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : ce didacticiel suppose que vous disposez d'un environnement de développement .NET (comme Visual Studio) dans lequel vous pouvez écrire et exécuter du code C#.
+3. Compréhension de base de la programmation .NET : une connaissance des concepts de base de la programmation .NET et de la syntaxe C# sera utile.
+4. Document Word avec graphiques WMF : vous aurez besoin d'un document Word contenant des graphiques WMF. Vous pouvez utiliser votre propre document ou en créer un pour le tester.
+
+## Importer des espaces de noms
+
+Tout d’abord, vous devez importer les espaces de noms nécessaires dans votre projet C#. Cela vous donnera accès aux classes et méthodes requises pour travailler avec Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Étape 2 : Téléchargez le document
+## Étape 1 : Charger le document Word
 
-Ensuite, nous devons charger le document que nous voulons traiter. Dans cet exemple, nous supposons que le document s'appelle « WMF with text.docx » et se trouve dans le répertoire de documents spécifié.
+ Pour commencer, chargez le document Word contenant les graphiques WMF. Cela se fait en utilisant le`Document` classe d’Aspose.Words.
 
 ```csharp
+// Le chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Charger le document
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
-## Étape 3 : Configurer les options de rendu des métafichiers
+ Ici,`dataDir` est un espace réservé pour le chemin du répertoire de vos documents. Nous créons une instance du`Document` classe en passant le chemin d’accès au fichier Word. Cela charge le document en mémoire, prêt pour un traitement ultérieur.
 
- Pour activer ou désactiver la mise à l'échelle des polices WMF en fonction de la taille du métafichier, nous devons configurer le`MetafileRenderingOptions` objet. Dans cet exemple, nous désactivons la mise à l'échelle des polices en définissant le`ScaleWmfFontsToMetafileSize`propriété à`false`.
+## Étape 2 : configurer les options de rendu des métafichiers
+
+ Ensuite, vous devez configurer les options de rendu du métafichier. Plus précisément, définissez le`ScaleWmfFontsToMetafileSize`propriété à`false`. Cela contrôle si les polices WMF sont mises à l'échelle pour correspondre à la taille du métafichier.
 
 ```csharp
+// Créer une nouvelle instance de MetafileRenderingOptions
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 {
-     ScaleWmfFontsToMetafileSize=false
+    ScaleWmfFontsToMetafileSize = false
 };
 ```
 
-## Étape 4 : Configurer les options d'enregistrement au format PDF avec les options de rendu des métafichiers
+ Le`MetafileRenderingOptions` La classe fournit des options sur la façon dont les métafichiers (comme WMF) sont rendus. En définissant`ScaleWmfFontsToMetafileSize` à`false`, vous demandez à Aspose.Words de ne pas redimensionner les polices en fonction de la taille du métafichier, ce qui peut aider à réduire la taille globale du PDF.
 
-Enfin, nous pouvons configurer les options d'enregistrement au format PDF à l'aide des options de rendu des métafichiers configurées précédemment.
+## Étape 3 : Définir les options d'enregistrement PDF
+
+Maintenant, configurez les options d'enregistrement PDF pour utiliser les options de rendu des métafichiers que vous venez de définir. Cela indique à Aspose.Words comment gérer les métafichiers lors de l'enregistrement du document au format PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
+// Créer une nouvelle instance de PdfSaveOptions
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    MetafileRenderingOptions = metafileRenderingOptions
+};
 ```
 
-## Étape 5 : Enregistrez le document au format PDF avec les options de rendu des métafichiers
+ Le`PdfSaveOptions` La classe vous permet de spécifier divers paramètres pour enregistrer le document au format PDF. En attribuant le paramètre précédemment configuré`MetafileRenderingOptions` au`MetafileRenderingOptions` propriété de`PdfSaveOptions`, vous vous assurez que le document est enregistré selon les paramètres de rendu de métafichier souhaités.
 
-Enregistrez le document au format PDF en utilisant les options d'enregistrement précédemment configurées.
+## Étape 4 : Enregistrez le document au format PDF
+
+Enfin, enregistrez le document Word au format PDF à l'aide des options d'enregistrement configurées. Cela appliquera tous les paramètres, y compris les options de rendu des métafichiers, au PDF de sortie.
+
 
 ```csharp
+// Enregistrez le document au format PDF
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-C'est tout ! Vous avez activé ou désactivé avec succès la mise à l'échelle de la police WMF en fonction de la taille du métafichier lors de la conversion.
-
-un document PDF utilisant Aspose.Words pour .NET.
-
-### Exemple de code source pour mettre à l'échelle les polices WMF à la taille du métafichier avec Aspose.Words pour .NET
-
-```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "WMF with text.docx");
-
-	MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
-	{
-		ScaleWmfFontsToMetafileSize = false
-	};
-
-	//Si Aspose.Words ne peut pas restituer correctement certains enregistrements de métafichier en graphiques vectoriels
-	// puis Aspose.Words restitue ce métafichier en bitmap.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
-	
-        
-```
+ Dans cette étape, le`Save` méthode du`Document` La classe est utilisée pour exporter le document vers un fichier PDF. Le chemin où le PDF sera enregistré est spécifié, ainsi que le`PdfSaveOptions` qui incluent les paramètres de rendu du métafichier.
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons expliqué comment activer ou désactiver le redimensionnement des polices WMF à la taille d'un métafichier dans un document PDF à l'aide d'Aspose.Words pour .NET. En suivant les étapes décrites, vous pouvez facilement contrôler si les polices WMF doivent être redimensionnées pour correspondre à la taille du métafichier lors de la conversion en document PDF. Cela peut vous aider à réduire la taille du fichier PDF généré et à améliorer les performances de rendu. Assurez-vous de spécifier le chemin correct vers vos documents et de configurer les options de rendu des métafichiers selon vos besoins.
+En adaptant les polices WMF à la taille du métafichier, vous pouvez réduire considérablement la taille de vos fichiers PDF générés à partir de documents Word. Cette technique permet d'optimiser le stockage et la distribution des documents sans compromettre la qualité du contenu visuel. Suivre les étapes décrites ci-dessus garantit que vos fichiers PDF sont plus gérables et de taille plus efficace.
 
-### Questions fréquemment posées
+## FAQ
 
-#### Q : Qu'est-ce que le redimensionnement des polices WMF à la taille d'un métafichier dans un document PDF ?
-R : Le redimensionnement des polices WMF à la taille du métafichier dans un document PDF est une fonctionnalité qui contrôle si les polices WMF doivent être mises à l'échelle pour correspondre à la taille du métafichier lors de la conversion en document PDF. Lorsque cette fonctionnalité est activée, les polices WMF sont mises à l'échelle pour correspondre à la taille du métafichier, ce qui peut réduire la taille du document PDF généré.
+### Qu'est-ce que WMF et pourquoi est-il important pour la taille du PDF ?
 
-#### Q : Comment puis-je utiliser Aspose.Words for .NET pour activer ou désactiver le redimensionnement des polices WMF à la taille d'un métafichier dans un document PDF ?
-R : Pour activer ou désactiver le redimensionnement des polices WMF à la taille d'un métafichier dans un document PDF à l'aide d'Aspose.Words for .NET, procédez comme suit :
+WMF (Windows Metafile) est un format graphique utilisé dans Microsoft Windows. Il peut contenir des données vectorielles et bitmap. Étant donné que les données vectorielles peuvent être mises à l'échelle et manipulées, il est important de les gérer correctement pour éviter des fichiers PDF inutilement volumineux.
 
- Définissez le chemin du répertoire où se trouvent vos documents en remplaçant`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire de documents.
+### Comment la mise à l'échelle des polices WMF en fonction de la taille du métafichier affecte-t-elle le PDF ?
 
- Chargez le document que vous souhaitez traiter à l'aide du`Document` classe et spécifiez le chemin d’accès au document Word dans le répertoire de documents spécifié.
+La mise à l'échelle des polices WMF à la taille du métafichier peut aider à réduire la taille globale du PDF en évitant le rendu des polices haute résolution qui pourrait augmenter la taille du fichier.
 
- Configurez les options de rendu des métafichiers en créant une instance du`MetafileRenderingOptions` classe et définir le`ScaleWmfFontsToMetafileSize`propriété à`true` pour activer la mise à l'échelle des polices WMF à la taille du métafichier, ou pour`false` pour désactiver cette fonctionnalité.
+### Puis-je utiliser d’autres formats de métafichiers avec Aspose.Words ?
 
- Configurez les options d'enregistrement au format PDF en créant une instance du`PdfSaveOptions` classe et en utilisant les options de rendu de métafichier configurées précédemment.
+Oui, Aspose.Words prend en charge divers formats de métafichiers, notamment EMF (Enhanced Metafile) en plus de WMF.
 
- Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document` classe spécifiant le chemin et les options de sauvegarde.
+### Cette technique est-elle applicable à tous les types de documents Word ?
 
-#### Q : Quels sont les avantages du redimensionnement des polices WMF à la taille d'un métafichier dans un document PDF ?
-R : Les avantages du redimensionnement des polices WMF à la taille d'un métafichier dans un document PDF sont :
+Oui, cette technique peut être appliquée à n'importe quel document Word contenant des graphiques WMF, aidant ainsi à optimiser la taille du PDF généré.
 
-Réduction de la taille du fichier PDF : le redimensionnement des polices WMF à la taille du métafichier peut réduire la taille du document PDF généré en adaptant la taille de la police aux besoins du métafichier.
+### Où puis-je trouver plus d’informations sur Aspose.Words ?
 
-Performances améliorées : en ajustant la taille des polices WMF aux dimensions du métafichier, le rendu du document PDF peut être plus rapide et plus efficace.
+ Vous pouvez en savoir plus sur Aspose.Words dans le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) . Pour les téléchargements, les essais et l'assistance, visitez le[Page de téléchargement d'Aspose.Words](https://releases.aspose.com/words/net/), [Acheter Aspose.Words](https://purchase.aspose.com/buy), [Essai gratuit](https://releases.aspose.com/), [Permis temporaire](https://purchase.aspose.com/temporary-license/) , et[Soutien](https://forum.aspose.com/c/words/8).

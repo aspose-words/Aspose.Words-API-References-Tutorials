@@ -103,7 +103,7 @@ Document doc = new Document(dataDir + "Table of contents.docx");
 
 #### Q: Aspose.Words for .NET を使用して目次で使用されるタブを変更するにはどうすればよいですか?
 
- A: ドキュメントが読み込まれたら、ドキュメントの各段落を反復処理して、目次 (TOC) 結果スタイルを使用して書式設定されているかどうかを確認できます。段落が TOC スタイルとして書式設定されている場合は、ページ番号を揃えるために使用されるタブを変更できます。Aspose.Words for .NET では、`ParagraphFormat`各段落のプロパティを使用してタブ ストップを取得および変更します。次に例を示します。
+A: ドキュメントが読み込まれたら、ドキュメントの各段落を反復処理して、目次 (TOC) 結果スタイルを使用して書式設定されているかどうかを確認できます。段落が TOC スタイルとして書式設定されている場合は、ページ番号を揃えるために使用されるタブを変更できます。Aspose.Words for .NET では、`ParagraphFormat`各段落のプロパティを使用してタブ ストップを取得および変更します。次に例を示します。
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))

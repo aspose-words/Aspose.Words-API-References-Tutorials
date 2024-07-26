@@ -53,7 +53,7 @@ DataSet data = new DataSet();
 // Ställ in rensningsalternativ för att ta bort oanvända regioner
 doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS);
 
-// Utför e-postsammanslagning med regioner
+// Kör sammanslagning med regioner
 doc.getMailMerge().executeWithRegions(data);
 
 // Spara dokumentet

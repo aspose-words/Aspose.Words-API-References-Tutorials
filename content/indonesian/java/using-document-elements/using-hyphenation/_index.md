@@ -64,7 +64,7 @@ Tanda hubung adalah proses menambahkan tanda hubung di akhir baris untuk meningk
 
 ### 2. Bisakah saya menggunakan tanda hubung dalam berbagai bahasa?
 
-Ya kamu bisa. Aspose.Words untuk Java memungkinkan Anda mendaftarkan dan memuat kamus tanda hubung untuk berbagai bahasa.
+Ya kamu bisa. Aspose.Words untuk Java memungkinkan Anda mendaftar dan memuat kamus tanda hubung untuk berbagai bahasa.
 
 ### 3. Apakah Aspose.Words for Java mudah diintegrasikan ke dalam proyek Java saya?
 

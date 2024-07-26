@@ -16,13 +16,13 @@ Los ejemplos de código proporcionados en los tutoriales lo ayudarán a comprend
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Control de contenido del tipo de casilla de verificación](./check-box-type-content-control/) | Aprenda a crear un control de contenido tipo casilla de verificación en un documento de Word usando Aspose.Words para .NET. |
+| [Control de contenido del tipo de casilla de verificación](./check-box-type-content-control/) | Aprenda cómo agregar un control de contenido tipo casilla de verificación en documentos de Word usando Aspose.Words para .NET con este tutorial detallado paso a paso. |
 | [Estado actual de la casilla de verificación](./current-state-of-check-box/) | Aprenda a recuperar y configurar el estado actual de un control de contenido de casilla de verificación en un documento de Word usando Aspose.Words para .NET. |
 | [Modificar controles de contenido](./modify-content-controls/) | Aprenda a modificar texto, listas desplegables e imágenes dentro de los controles de contenido en un documento de Word usando Aspose.Words para .NET. |
 | [Control de contenido del cuadro combinado](./combo-box-content-control/) | Aprenda a crear un control de contenido de cuadro combinado en un documento de Word usando Aspose.Words para .NET. |
 | [Control de contenido del cuadro de texto enriquecido](./rich-text-box-content-control/) | Aprenda a crear un control de contenido de cuadro de texto enriquecido en un documento de Word utilizando Aspose.Words para .NET, lo que permite dar formato y estilo al texto. |
 | [Establecer color de control de contenido](./set-content-control-color/) | Aprenda a configurar el color de un control de contenido en un documento de Word usando Aspose.Words para .NET, personalizando su apariencia. |
-| [Control de contenido claro](./clear-contents-control/) | Aprenda cómo borrar el contenido de un control en un documento de Word usando Aspose.Words para .NET. |
+| [Control de contenido claro](./clear-contents-control/) | Aprenda cómo borrar el control de contenidos en un documento de Word usando Aspose.Words para .NET con nuestra guía paso a paso. |
 | [Vincular SDT a una parte XML personalizada](./bind-sdt-to-custom-xml-part/) | Aprenda cómo vincular un SDT a una parte XML personalizada usando Aspose.Words para .NET. |
 | [Establecer estilo de control de contenido](./set-content-control-style/) | Aprenda a configurar el estilo de un control de contenido en un documento de Word usando Aspose.Words para .NET, aplicando un formato consistente. |
 | [Creación de una sección repetida de tabla asignada a una parte XML personalizada](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Aprenda a crear una tabla con una sección repetida asignada a CustomXmlPart en un documento de Word usando Aspose.Words para .NET. |

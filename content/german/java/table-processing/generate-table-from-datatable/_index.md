@@ -90,7 +90,7 @@ Aspose.Words für Java bietet eine breite Palette an Formatierungsoptionen für 
 
 ### 3. Kann ich die generierte Tabelle in andere Formate exportieren?
 
-Absolut! Aspose.Words für Java unterstützt den Export von Word-Dokumenten in verschiedene Formate, darunter PDF, HTML, XPS und mehr. Mit den bereitgestellten Exportoptionen können Sie die generierte Tabelle problemlos in das gewünschte Format konvertieren.
+Absolut! Aspose.Words für Java unterstützt den Export von Word-Dokumenten in verschiedene Formate, darunter PDF, HTML, XPS und mehr. Sie können die generierte Tabelle mit den bereitgestellten Exportoptionen problemlos in das gewünschte Format konvertieren.
 
 ### 4. Ist Aspose.Words für Java für die Verarbeitung umfangreicher Dokumente geeignet?
 

@@ -12,5 +12,5 @@ Aspose.Words for .NET チュートリアルは、.NET プロジェクトで Aspo
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [ターゲットマシンのフォントを使用する](./use-font-from-target-machine/) | Aspose.Words for .NET を使用して、ターゲット マシンのフォントを使用して Word 文書を固定 HTML に変換する方法を学習します。 |
-| [すべての CSS ルールを 1 つのファイルに記述する](./write-all-css-rules-in-single-file/) | Aspose.Words for .NET を使用して、すべての CSS ルールを 1 つのファイルに記述し、Word 文書を固定 HTML に変換する方法を学習します。 |
+| [ターゲットマシンのフォントを使用する](./use-font-from-target-machine/) | Aspose.Words for .NET を使用して、Word 文書でターゲット マシンのフォントを使用する方法を学びます。シームレスなフォント統合については、ステップ バイ ステップ ガイドに従ってください。 |
+| [すべての CSS ルールを 1 つのファイルに記述する](./write-all-css-rules-in-single-file/) | Aspose.Words for .NET を使用して Word 文書を HTML に変換する方法を学びます。すべての CSS ルールが 1 つのファイルにまとめられており、コードがよりクリーンになり、メンテナンスが容易になります。 |

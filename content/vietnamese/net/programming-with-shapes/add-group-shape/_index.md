@@ -2,7 +2,7 @@
 title: Thêm hình dạng nhóm
 linktitle: Thêm hình dạng nhóm
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách thêm hình dạng nhóm có nhiều hình dạng vào tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách thêm hình dạng nhóm có nhiều hình dạng vào tài liệu Word bằng Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /vi/net/programming-with-shapes/add-group-shape/
@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách thêm hình dạng nhóm chứa nhiều 
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Bước 4: Đặt kích thước cho GroupShape
-Đặt chiều rộng, chiều cao và kích thước tọa độ cho`groupShape`.
+ Đặt chiều rộng, chiều cao và kích thước tọa độ cho`groupShape`.
 
 ```csharp
 groupShape.Width = 200;

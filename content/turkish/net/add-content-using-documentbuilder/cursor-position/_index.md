@@ -2,7 +2,7 @@
 title: Word Belgesinde İmleç Konumu
 linktitle: Word Belgesinde İmleç Konumu
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki imleç konumlarını nasıl yöneteceğinizi öğrenin. .NET geliştiricileri için mükemmel.
+description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde imleç konumlarını nasıl yöneteceğinizi öğrenin. .NET geliştiricileri için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/cursor-position/

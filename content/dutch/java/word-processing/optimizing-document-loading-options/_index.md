@@ -124,7 +124,7 @@ Aspose.Words voor Java ondersteunt een breed scala aan documentformaten, waarond
 
 #### Is er een community- of ondersteuningsforum voor Aspose.Words voor Java?
 
-Ja, op de Aspose-website kunt u een communityforum vinden waar u vragen kunt stellen, kennis kunt delen en ondersteuning kunt krijgen van andere gebruikers en experts.
+Ja, u kunt op de Aspose-website een communityforum vinden waar u vragen kunt stellen, kennis kunt delen en ondersteuning kunt krijgen van andere gebruikers en experts.
 
 #### Hoe kan ik het laden van documenten optimaliseren voor extreem grote documenten?
 

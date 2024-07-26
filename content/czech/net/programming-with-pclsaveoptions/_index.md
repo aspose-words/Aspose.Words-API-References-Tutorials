@@ -14,4 +14,4 @@ Výukové programy Aspose.Words for .NET vám poskytují cenný zdroj pro zvlád
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Rastrování transformovaných prvků](./rasterize-transformed-elements/) | Naučte se, jak zakázat rasterizaci transformovaných prvků při převodu do formátu PCL pomocí Aspose.Words for .NET. |
+| [Rastrování transformovaných prvků](./rasterize-transformed-elements/) | Naučte se, jak rastrovat transformované prvky při převodu dokumentů Wordu do formátu PCL pomocí Aspose.Words for .NET. Včetně průvodce krok za krokem. |

@@ -42,7 +42,7 @@ Aprenda a utilizar los campos de Aspose.Words para Java de forma eficaz en este 
 ### [Uso de fuentes en Aspose.Words para Java](./using-fonts/)
 Explore el formato de fuente en Aspose.Words para Java: tamaño, estilo, color y más. Cree documentos bellamente formateados con facilidad.
 ### [Uso de notas al pie y notas finales en Aspose.Words para Java](./using-footnotes-and-endnotes/)
-Aprenda a utilizar notas al pie y notas al final de forma eficaz en Aspose.Words para Java. ¡Mejore sus habilidades de formato de documentos hoy!
+Aprenda a utilizar notas al pie y notas finales de forma eficaz en Aspose.Words para Java. ¡Mejore sus habilidades de formato de documentos hoy!
 ### [Uso de campos de formulario en Aspose.Words para Java](./using-form-fields/)
 "Aprenda a utilizar Aspose.Words para Java para crear documentos de Word interactivos con campos de formulario. ¡Empiece ahora!"
 ### [Usando HarfBuzz en Aspose.Words para Java](./using-harfbuzz/)

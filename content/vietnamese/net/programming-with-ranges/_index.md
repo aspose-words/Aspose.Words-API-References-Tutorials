@@ -16,5 +16,5 @@ Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh ng
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Phạm vi Xóa văn bản trong tài liệu Word](./ranges-delete-text/) | Tìm hiểu cách xóa văn bản trong các phạm vi cụ thể trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Phạm vi Nhận văn bản trong tài liệu Word](./ranges-get-text/) | Tìm hiểu cách dễ dàng trích xuất văn bản trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Phạm vi Xóa văn bản trong tài liệu Word](./ranges-delete-text/) | Tìm hiểu cách xóa văn bản khỏi một phạm vi trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo cho các nhà phát triển C#. |
+| [Phạm vi Nhận văn bản trong tài liệu Word](./ranges-get-text/) | Trích xuất văn bản từ tài liệu Word một cách dễ dàng bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết của chúng tôi để bắt đầu một cách dễ dàng. |

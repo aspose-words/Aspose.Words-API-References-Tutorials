@@ -16,7 +16,7 @@ Aspose.Words för Python är ett funktionsrikt bibliotek som gör det möjligt f
 
 Innan vi dyker in i kodexemplen, se till att du har Python installerat på ditt system. Dessutom måste du ha en giltig licens för Aspose.Words. Om du inte har en ännu kan du få den från Asposes webbplats.
 
-## Installera Aspose.Words för Python
+## Installerar Aspose.Words för Python
 
  För att komma igång måste du installera Aspose.Words-biblioteket för Python. Du kan installera den med hjälp av`pip` genom att köra följande kommando:
 

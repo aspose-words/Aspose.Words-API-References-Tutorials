@@ -2,92 +2,88 @@
 title: Export uživatelských vlastností v dokumentu PDF
 linktitle: Export uživatelských vlastností v dokumentu PDF
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se exportovat uživatelské vlastnosti při převodu dokumentů do PDF pomocí Aspose.Words for .NET.
+description: Naučte se exportovat uživatelské vlastnosti v dokumentu PDF pomocí Aspose.Words for .NET pomocí našeho podrobného průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
+## Úvod
 
-tomto tutoriálu vás provedeme kroky k exportu uživatelských vlastností dokumentu do dokumentu PDF pomocí Aspose.Words for .NET. Export uživatelských vlastností umožňuje zahrnout do vygenerovaného dokumentu PDF další informace. Postupujte podle následujících kroků:
+Export uživatelských vlastností v dokumentu PDF může být neuvěřitelně užitečný pro různé obchodní potřeby. Ať už spravujete metadata pro lepší vyhledávání nebo vkládáte důležité informace přímo do svých dokumentů, Aspose.Words for .NET zajistí bezproblémový proces. Tento kurz vás provede vytvořením dokumentu aplikace Word, přidáním uživatelských vlastností a jejich exportem do PDF s těmito vlastnostmi nedotčenými.
 
-## Krok 1: Vytvoření dokumentu a přidání uživatelských vlastností
+## Předpoklady
 
-Začněte vytvořením instance třídy Document:
+Než se ponoříte do kódu, ujistěte se, že máte následující:
+
+-  Aspose.Words for .NET nainstalován. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+- Vývojové prostředí jako Visual Studio.
+- Základní znalost programování v C#.
+
+## Importovat jmenné prostory
+
+Nejprve musíte do projektu importovat potřebné jmenné prostory. Tyto jmenné prostory obsahují třídy a metody potřebné pro manipulaci s dokumenty Wordu a jejich export jako PDF.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky.
+
+## Krok 1: Inicializujte dokument
+
+Chcete-li začít, budete muset vytvořit nový objekt dokumentu. Tento objekt bude sloužit jako základ pro přidávání uživatelských vlastností a export do PDF.
+
+```csharp
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## Krok 2: Přidejte vlastní vlastnosti
- Dále přidejte požadované uživatelské vlastnosti. Chcete-li například přidat vlastnost "Společnost" s hodnotou "Aspose", použijte`Add` metoda kolekce CustomDocumentProperties:
+## Krok 2: Přidejte uživatelské vlastnosti
+
+Dále do dokumentu přidáte vlastní vlastnosti. Tyto vlastnosti mohou zahrnovat metadata, jako je název společnosti, autor nebo jakékoli jiné relevantní informace.
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-Můžete přidat tolik vlastních vlastností, kolik potřebujete.
+## Krok 3: Nakonfigurujte možnosti uložení PDF
 
-## Krok 3: Nastavte možnosti exportu PDF
-
-Vytvořte instanci třídy PdfSaveOptions a určete, jak exportovat uživatelské vlastnosti:
+ Nyní nakonfigurujte možnosti uložení PDF, abyste zajistili, že při exportu dokumentu budou zahrnuty uživatelské vlastnosti. The`PdfSaveOptions` class poskytuje různá nastavení pro řízení toho, jak se dokument uloží jako PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    CustomPropertiesExport = PdfCustomPropertiesExport.Standard
+};
 ```
 
-Tato volba řídí export uživatelských vlastností při převodu do PDF.
+## Krok 4: Uložte dokument jako PDF
 
-## Krok 4: Převeďte dokument do PDF
-
- Použijte`Save` metoda převodu dokumentu do PDF s uvedením možností převodu:
+ Nakonec uložte dokument jako PDF do určeného adresáře. The`Save` kombinuje všechny předchozí kroky a vytváří PDF se zahrnutými uživatelskými vlastnostmi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-Ujistěte se, že jste zadali správnou cestu pro uložení převedeného PDF.
-
-### Příklad zdrojového kódu pro export uživatelských vlastností pomocí Aspose.Words pro .NET
-
-Zde je úplný zdrojový kód pro export uživatelských vlastností z dokumentu pomocí Aspose.Words pro .NET:
-
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	doc.CustomDocumentProperties.Add("Company", "Aspose");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
-
-```
-
-Podle těchto kroků můžete snadno exportovat uživatelské vlastnosti dokumentu při převodu do PDF pomocí Aspose.Words for .NET.
-
-
 ## Závěr
 
-V tomto tutoriálu jsme vysvětlili, jak exportovat uživatelské vlastnosti z dokumentu do dokumentu PDF pomocí Aspose.Words for .NET. Podle popsaných kroků můžete do vygenerovaného dokumentu PDF snadno zahrnout další informace exportem uživatelských vlastností dokumentu. Využijte funkce Aspose.Words for .NET k přizpůsobení a obohacení dokumentů PDF exportem vlastních vlastností.
+Export uživatelských vlastností v dokumentu PDF pomocí Aspose.Words for .NET je přímočarý proces, který může výrazně zlepšit vaše možnosti správy dokumentů. Dodržováním těchto kroků můžete zajistit, že důležitá metadata budou zachována a přístupná, čímž se zlepší efektivita a organizace vašich digitálních dokumentů.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co je export uživatelských vlastností do dokumentu PDF?
-Odpověď: Export uživatelských vlastností do dokumentu PDF umožňuje zahrnout do vygenerovaného dokumentu PDF další informace. Vlastní vlastnosti jsou metadata specifická pro váš dokument, jako jsou značky, klíčová slova nebo pověření. Exportem těchto uživatelských vlastností je můžete zpřístupnit uživatelům při prohlížení dokumentu PDF.
+### Jaké jsou uživatelské vlastnosti v dokumentu PDF?
+Uživatelské vlastnosti jsou metadata přidaná do dokumentu, která mohou obsahovat informace, jako je autor, název společnosti nebo jakákoli jiná relevantní data, která je třeba vložit do dokumentu.
 
-#### Otázka: Jak mohu exportovat uživatelské vlastnosti dokumentu do dokumentu PDF pomocí Aspose.Words for .NET?
-Odpověď: Chcete-li exportovat uživatelské vlastnosti dokumentu do dokumentu PDF pomocí Aspose.Words for .NET, postupujte takto:
+### Proč bych měl používat Aspose.Words for .NET pro export uživatelských vlastností?
+Aspose.Words for .NET poskytuje robustní a snadno použitelné rozhraní API pro manipulaci s dokumenty aplikace Word a jejich export jako soubory PDF, což zajišťuje zachování a dostupnost uživatelských vlastností.
 
- Vytvořte instanci souboru`Document` třída.
+### Mohu do dokumentu přidat více uživatelských vlastností?
+ Ano, do dokumentu můžete přidat více uživatelských vlastností voláním`Add`pro každou vlastnost, kterou chcete zahrnout.
 
- Přidejte požadované uživatelské vlastnosti pomocí`CustomDocumentProperties` sbírka. Použijte například`Add` metoda pro přidání vlastnosti "Společnost" s hodnotou "Aspose".
+### Do jakých dalších formátů mohu exportovat pomocí Aspose.Words for .NET?
+Aspose.Words for .NET podporuje export do různých formátů, včetně DOCX, HTML, EPUB a mnoha dalších.
 
- Vytvořte instanci souboru`PdfSaveOptions` třídy a určete, jak exportovat uživatelské vlastnosti pomocí`CustomPropertiesExport` vlastnictví. The`PdfCustomPropertiesExport.Standard` value exportuje uživatelské vlastnosti podle výchozího nastavení.
-
- Použijte`Save` metoda`Document` třídy pro převod dokumentu do PDF s uvedením možností převodu.
-
-#### Otázka: Jak mohu získat přístup k uživatelským vlastnostem dokumentu PDF?
-Odpověď: Pro přístup k uživatelským vlastnostem dokumentu PDF můžete použít kompatibilní čtečku PDF, která podporuje zobrazení vlastností dokumentu. Většina běžných čteček PDF, jako je Adobe Acrobat Reader, poskytuje přístup k metadatům a vlastnostem dokumentu PDF. Tyto možnosti obvykle najdete v nabídce "Soubor" nebo kliknutím pravým tlačítkem na dokument a výběrem "Vlastnosti".
+### Kde mohu získat podporu, pokud narazím na problémy?
+ Pro podporu můžete navštívit[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pro pomoc.

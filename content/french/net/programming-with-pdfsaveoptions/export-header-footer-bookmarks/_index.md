@@ -2,35 +2,49 @@
 title: Exporter les signets de pied de page d’en-tête de document Word vers un document PDF
 linktitle: Exporter les signets de pied de page d’en-tête de document Word vers un document PDF
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour exporter les signets d’en-tête de document Word vers les signets de document PDF avec Aspose.Words pour .NET.
+description: Découvrez comment exporter des signets d'en-tête et de pied de page d'un document Word vers un PDF à l'aide d'Aspose.Words pour .NET avec notre guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## Introduction
 
-Cet article fournit un guide étape par étape sur la façon d'exporter les signets d'en-tête et de pied de page d'un document Word vers la fonctionnalité de document PDF avec Aspose.Words pour .NET. Nous expliquerons chaque partie du code en détail. A la fin de ce tutoriel, vous serez en mesure de comprendre comment exporter des signets à partir des en-têtes et pieds de page d'un document et générer un PDF avec les signets appropriés.
+La conversion de documents Word en PDF est une tâche courante, notamment lorsque vous souhaitez partager ou archiver des documents tout en préservant leur mise en forme. Parfois, ces documents contiennent des signets importants dans les en-têtes et les pieds de page. Dans ce didacticiel, nous allons parcourir le processus d'exportation de ces signets d'un document Word vers un PDF à l'aide d'Aspose.Words pour .NET.
 
-Avant de commencer, assurez-vous d'avoir installé et configuré la bibliothèque Aspose.Words for .NET dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
+## Conditions préalables
 
-## Étape 1 : Définir le répertoire des documents
+Avant de plonger, assurez-vous d’avoir les éléments suivants :
 
- Pour commencer, vous devez définir le chemin d’accès au répertoire où se trouvent vos documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
+- Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+- Environnement de développement : configurez votre environnement de développement. Vous pouvez utiliser Visual Studio ou tout autre IDE compatible .NET.
+- Connaissance de base de C# : Une connaissance de la programmation C# est requise pour suivre les exemples de code.
+
+## Importer des espaces de noms
+
+Tout d’abord, vous devez importer les espaces de noms nécessaires dans votre projet C#. Ajoutez ces lignes en haut de votre fichier de code :
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Étape 2 : Téléchargez le document
+Décomposons le processus en étapes faciles à suivre.
 
-Ensuite, nous devons charger le document que nous voulons traiter. Dans cet exemple, nous supposons que le document s'appelle « Signets dans les en-têtes et les pieds de page.docx » et se trouve dans le répertoire de documents spécifié.
+## Étape 1 : initialiser le document
+
+La première étape consiste à charger votre document Word. Voici comment procéder :
 
 ```csharp
+// Le chemin d'accès au répertoire des documents.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## Étape 3 : Configurer les options d'enregistrement au format PDF
+Dans cette étape, vous spécifiez simplement le chemin d'accès à votre répertoire de documents et chargez le document Word.
 
- Pour exporter les signets d'en-tête et de pied de page, nous devons configurer le`PdfSaveOptions` objet. Dans cet exemple, nous définissons le niveau de présentation des favoris par défaut sur 1 et le mode d'exportation des favoris d'en-tête et de pied de page sur « Premier ».
+## Étape 2 : Configurer les options d'enregistrement PDF
+
+Ensuite, vous devez configurer les options d'enregistrement PDF pour garantir que les signets dans les en-têtes et les pieds de page sont correctement exportés.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## Étape 4 : Enregistrez le document au format PDF avec des signets d'en-tête et de pied de page
+ Ici, nous mettons en place le`PdfSaveOptions` . Le`DefaultBookmarksOutlineLevel` La propriété définit le niveau de plan pour les signets et le`HeaderFooterBookmarksExportMode` La propriété garantit que seule la première occurrence des signets dans les en-têtes et les pieds de page est exportée.
 
-Enfin, nous pouvons enregistrer le document au format PDF en utilisant les options de sauvegarde configurées précédemment.
+## Étape 3 : Enregistrez le document au format PDF
+
+Enfin, enregistrez votre document au format PDF avec les options configurées.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-C'est tout ! Vous avez exporté avec succès les signets d'en-tête et de pied de page d'un document et généré un PDF avec les signets appropriés à l'aide d'Aspose.Words pour .NET.
-
-### Exemple de code source pour exporter des signets d’en-tête et de pied de page avec Aspose.Words for .NET
-
-```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+Dans cette étape, vous enregistrez le document dans le chemin spécifié avec les options que vous avez configurées.
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons expliqué comment exporter des signets d'en-tête et de pied de page d'un document Word vers un document PDF à l'aide d'Aspose.Words pour .NET. Les signets exportés permettent une navigation facile et une référence rapide aux en-têtes et pieds de page correspondants dans le document PDF généré. Suivez les étapes décrites pour exporter les signets d'en-tête et de pied de page d'un document et générer un PDF avec les signets appropriés à l'aide d'Aspose.Words for .NET. Assurez-vous de spécifier le chemin d'accès correct à vos documents et de configurer les options d'enregistrement selon vos besoins.
+Et voila! En suivant ces étapes, vous pouvez facilement exporter des signets des en-têtes et pieds de page d'un document Word vers un PDF à l'aide d'Aspose.Words pour .NET. Cette méthode garantit que les aides à la navigation importantes dans votre document sont conservées au format PDF, permettant ainsi aux lecteurs de naviguer plus facilement dans votre document.
 
-### Questions fréquemment posées
+## FAQ
 
-### Q : Qu'est-ce que l'exportation de signets d'en-tête et de pied de page d'un document Word vers un document PDF ?
-R : L'exportation de signets d'en-tête et de pied de page d'un document Word vers un document PDF est une fonctionnalité permettant de conserver et de générer des signets dans le document PDF à partir des en-têtes et des pieds de page. pieds de page du document Word original. Cela permet aux utilisateurs de naviguer rapidement et facilement dans le document PDF en utilisant des signets correspondant aux en-têtes et pieds de page.
+### Puis-je exporter tous les signets du document Word vers PDF ?
 
-### Q : Comment puis-je utiliser Aspose.Words for .NET pour exporter les signets d'en-tête et de pied de page d'un document Word vers un document PDF ?
-R : Pour exporter les signets d'en-tête et de pied de page d'un document Word vers un document PDF à l'aide d'Aspose.Words for .NET, procédez comme suit :
+ Oui, vous pouvez. Dans le`PdfSaveOptions`, vous pouvez ajuster les paramètres pour inclure tous les signets si nécessaire.
 
- Définissez le chemin du répertoire où se trouvent vos documents en remplaçant`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire de documents.
+### Que faire si je souhaite également exporter les signets du corps du document ?
 
- Chargez le document que vous souhaitez traiter à l'aide du`Document` classe et spécifiez le chemin d’accès au document Word dans le répertoire de documents spécifié.
+ Vous pouvez configurer le`OutlineOptions` dans`PdfSaveOptions` pour inclure des signets du corps du document.
 
- Configurez les options d'enregistrement au format PDF en créant une instance du`PdfSaveOptions` classe et en définissant les options de signets d’en-tête et de pied de page appropriées.
+### Est-il possible de personnaliser les niveaux de signets dans le PDF ?
 
- Enregistrez le document au format PDF à l'aide du`Save` méthode du`Document` classe spécifiant le chemin et les options de sauvegarde.
+ Absolument! Vous pouvez personnaliser le`DefaultBookmarksOutlineLevel` propriété pour définir différents niveaux de plan pour vos signets.
 
-### Q : Quels sont les avantages de l’exportation des signets d’en-tête et de pied de page vers un document PDF ?
-R : Les avantages de l’exportation des signets d’en-tête et de pied de page dans un document PDF sont :
+### Comment gérer des documents sans favoris ?
 
-Navigation facile : les signets permettent aux utilisateurs de naviguer facilement dans un document PDF en se référant à des en-têtes et des pieds de page spécifiques.
+Si votre document ne comporte aucun signet, le PDF sera généré sans aucun contour de signet. Assurez-vous que votre document contient des signets si vous en avez besoin dans le PDF.
 
-Référence rapide : les signets permettent aux utilisateurs de trouver rapidement les sections pertinentes du document PDF en fonction des en-têtes et des pieds de page.
+### Puis-je utiliser cette méthode pour d’autres types de documents comme DOCX ou RTF ?
+
+Oui, Aspose.Words for .NET prend en charge différents types de documents, notamment DOCX, RTF et autres.

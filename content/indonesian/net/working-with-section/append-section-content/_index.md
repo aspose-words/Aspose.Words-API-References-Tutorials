@@ -17,7 +17,7 @@ Sebelum kita mulai, ada beberapa hal yang Anda perlukan:
 
 1. Pengetahuan Dasar C#: Anda tidak perlu menjadi ahli, tetapi pemahaman dasar C# akan sangat membantu.
 2.  Aspose.Words untuk .NET: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/) Jika Anda tidak ingin langsung membelinya, Anda dapat memilih a[uji coba gratis](https://releases.aspose.com/).
-3. Visual Studio: Versi apa pun dapat digunakan, tetapi versi terbaru disarankan.
+3. Visual Studio: Versi apa pun dapat berfungsi, tetapi versi terbaru disarankan.
 4. .NET Framework: Pastikan Anda telah menginstalnya di mesin Anda.
 
 Baiklah, sekarang semuanya sudah siap, mari beralih ke bagian pengkodean.

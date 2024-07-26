@@ -68,7 +68,7 @@ builder.ListFormat.RemoveNumbers();
 
 ## Steg 6: Spara det ändrade dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 builder.Document.Save(dataDir + "ResetListNumber.docx");

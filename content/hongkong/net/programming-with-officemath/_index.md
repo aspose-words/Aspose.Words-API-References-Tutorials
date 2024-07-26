@@ -12,4 +12,4 @@ url: /zh-hant/net/programming-with-officemath/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [數學方程](./math-equations/) | 了解如何使用 Aspose.Words for .NET 將數學方程式加入 Word 文件。 |
+| [數學方程](./math-equations/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中配置數學方程式。包含範例、常見問題解答等的逐步指南。 |

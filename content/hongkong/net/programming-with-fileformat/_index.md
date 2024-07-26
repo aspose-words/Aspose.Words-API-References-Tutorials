@@ -16,6 +16,6 @@ Aspose.Words for .NET 關於檔案格式的文字處理教學課程為希望在�
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [檢測文件文件格式](./detect-file-format/) | 使用 Aspose.Words for .NET 偵測文件檔案格式的逐步指南。 |
-| [檢測 Word 文件上的數位簽名](./detect-document-signatures/) | 使用 Aspose.Words for .NET 偵測文件中的數位簽章的逐步指南。 |
-| [驗證加密的Word文檔](./verify-encrypted-document/) | 驗證文件是否已使用 Aspose.Words for .NET 加密的逐步指南。 |
+| [檢測文件文件格式](./detect-file-format/) | 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 偵測文件檔案格式。 |
+| [檢測 Word 文件上的數位簽名](./detect-document-signatures/) | 透過我們的逐步指南，了解如何使用 Aspose.Words for .NET 偵測 Word 文件中的數位簽章。 |
+| [驗證加密的Word文檔](./verify-encrypted-document/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 驗證 Word 文件的加密狀態。 |

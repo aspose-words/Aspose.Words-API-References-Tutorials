@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- 이 마지막 단계에서는 다음을 사용하여 결과 문서를 .docx 형식으로 저장합니다.`Save` 메서드를 사용하고 경로를 출력 파일에 전달합니다.
+이 마지막 단계에서는 다음을 사용하여 결과 문서를 .docx 형식으로 저장합니다.`Save` 메서드를 사용하고 경로를 출력 파일에 전달합니다.
 
 이제 공백 처리 옵션을 지정하여 소스 코드를 실행하여 텍스트 문서를 로드할 수 있습니다. 결과 문서는 "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx"라는 이름으로 지정된 디렉터리에 저장됩니다.
 

@@ -2,92 +2,88 @@
 title: Exporter des propriétés personnalisées dans un document PDF
 linktitle: Exporter des propriétés personnalisées dans un document PDF
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment exporter des propriétés personnalisées lors de la conversion de documents au format PDF avec Aspose.Words pour .NET.
+description: Découvrez comment exporter des propriétés personnalisées dans un document PDF à l'aide d'Aspose.Words for .NET grâce à notre guide détaillé étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
+## Introduction
 
-Dans ce didacticiel, nous vous guiderons à travers les étapes pour exporter les propriétés personnalisées d'un document dans un document PDF à l'aide d'Aspose.Words for .NET. L'exportation de propriétés personnalisées vous permet d'inclure des informations supplémentaires dans le document PDF généré. Suivez les étapes ci-dessous :
+L'exportation de propriétés personnalisées dans un document PDF peut être extrêmement utile pour divers besoins professionnels. Que vous gériez des métadonnées pour une meilleure recherche ou que vous intégriez des informations critiques directement dans vos documents, Aspose.Words for .NET rend le processus transparent. Ce didacticiel vous guidera dans la création d'un document Word, l'ajout de propriétés personnalisées et leur exportation au format PDF avec ces propriétés intactes.
 
-## Étape 1 : Création d'un document et ajout de propriétés personnalisées
+## Conditions préalables
 
-Commencez par créer une instance de la classe Document :
+Avant de plonger dans le code, assurez-vous d'avoir les éléments suivants :
+
+-  Aspose.Words pour .NET installé. Si vous ne l'avez pas encore installé, vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
+- Un environnement de développement comme Visual Studio.
+- Connaissance de base de la programmation C#.
+
+## Importer des espaces de noms
+
+Tout d’abord, vous devez importer les espaces de noms nécessaires dans votre projet. Ces espaces de noms contiennent les classes et méthodes requises pour manipuler des documents Word et les exporter au format PDF.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Décomposons le processus en étapes simples et gérables.
+
+## Étape 1 : initialiser le document
+
+Pour commencer, vous devrez créer un nouvel objet document. Cet objet servira de base à l'ajout de propriétés personnalisées et à l'exportation au format PDF.
+
+```csharp
+// Le chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## Étape 2 : Ajouter des propriétés personnalisées
- Ensuite, ajoutez les propriétés personnalisées souhaitées. Par exemple, pour ajouter une propriété « Société » avec la valeur « Aspose », utilisez le`Add` méthode de la collection CustomDocumentProperties :
+## Étape 2 : Ajouter des propriétés personnalisées
+
+Ensuite, vous ajouterez des propriétés personnalisées à votre document. Ces propriétés peuvent inclure des métadonnées telles que le nom de l'entreprise, l'auteur ou toute autre information pertinente.
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-Vous pouvez ajouter autant de propriétés personnalisées que nécessaire.
+## Étape 3 : Configurer les options d'enregistrement PDF
 
-## Étape 3 : Définir les options d'exportation PDF
-
-Créez une instance de la classe PdfSaveOptions et spécifiez comment exporter les propriétés personnalisées :
+ Maintenant, configurez les options d'enregistrement PDF pour vous assurer que les propriétés personnalisées sont incluses lors de l'exportation du document. Le`PdfSaveOptions` La classe fournit divers paramètres pour contrôler la façon dont le document est enregistré au format PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    CustomPropertiesExport = PdfCustomPropertiesExport.Standard
+};
 ```
 
-Cette option contrôle l'exportation des propriétés personnalisées lors de la conversion au format PDF.
+## Étape 4 : Enregistrez le document au format PDF
 
-## Étape 4 : Convertir le document en PDF
-
- Utilisez le`Save` méthode pour convertir le document en PDF en spécifiant les options de conversion :
+ Enfin, enregistrez le document au format PDF dans le répertoire spécifié. Le`Save` La méthode combine toutes les étapes précédentes et produit un PDF avec les propriétés personnalisées incluses.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-Assurez-vous de spécifier le chemin correct pour enregistrer le PDF converti.
-
-### Exemple de code source pour l'exportation de propriétés personnalisées à l'aide d'Aspose.Words pour .NET
-
-Voici le code source complet pour exporter les propriétés personnalisées d'un document à l'aide d'Aspose.Words for .NET :
-
-
-```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	doc.CustomDocumentProperties.Add("Company", "Aspose");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
-
-```
-
-En suivant ces étapes, vous pouvez facilement exporter les propriétés personnalisées d'un document lors de la conversion au format PDF avec Aspose.Words pour .NET.
-
-
 ## Conclusion
 
-Dans ce didacticiel, nous avons expliqué comment exporter les propriétés personnalisées d'un document vers un document PDF à l'aide d'Aspose.Words pour .NET. En suivant les étapes décrites, vous pouvez facilement inclure des informations supplémentaires dans le document PDF généré en exportant les propriétés personnalisées du document. Profitez des fonctionnalités d'Aspose.Words for .NET pour personnaliser et enrichir vos documents PDF en exportant des propriétés personnalisées.
+L'exportation de propriétés personnalisées dans un document PDF à l'aide d'Aspose.Words pour .NET est un processus simple qui peut considérablement améliorer vos capacités de gestion de documents. En suivant ces étapes, vous pouvez garantir que les métadonnées critiques sont préservées et accessibles, améliorant ainsi l'efficacité et l'organisation de vos documents numériques.
 
-### Questions fréquemment posées
+## FAQ
 
-#### Q : Qu'est-ce que l'exportation de propriétés personnalisées vers un document PDF ?
-: L'exportation de propriétés personnalisées vers un document PDF permet d'inclure des informations supplémentaires dans le document PDF généré. Les propriétés personnalisées sont des métadonnées spécifiques à votre document, telles que des balises, des mots-clés ou des informations d'identification. En exportant ces propriétés personnalisées, vous pouvez les mettre à la disposition des utilisateurs lors de la visualisation du document PDF.
+### Que sont les propriétés personnalisées dans un document PDF ?
+Les propriétés personnalisées sont des métadonnées ajoutées à un document qui peuvent inclure des informations telles que l'auteur, le nom de l'entreprise ou toute autre donnée pertinente devant être intégrée dans le document.
 
-#### Q : Comment puis-je exporter les propriétés personnalisées d'un document vers un document PDF à l'aide d'Aspose.Words pour .NET ?
-R : Pour exporter les propriétés personnalisées d'un document vers un document PDF à l'aide d'Aspose.Words for .NET, procédez comme suit :
+### Pourquoi devrais-je utiliser Aspose.Words for .NET pour exporter des propriétés personnalisées ?
+Aspose.Words for .NET fournit une API robuste et facile à utiliser pour manipuler des documents Word et les exporter au format PDF, garantissant ainsi que les propriétés personnalisées sont préservées et accessibles.
 
- Créez une instance du`Document` classe.
+### Puis-je ajouter plusieurs propriétés personnalisées à un document ?
+ Oui, vous pouvez ajouter plusieurs propriétés personnalisées à un document en appelant le`Add`méthode pour chaque propriété que vous souhaitez inclure.
 
- Ajoutez les propriétés personnalisées souhaitées à l'aide du`CustomDocumentProperties` collection. Par exemple, utilisez le`Add` méthode pour ajouter une propriété « Entreprise » avec la valeur « Aspose ».
+### Vers quels autres formats puis-je exporter en utilisant Aspose.Words pour .NET ?
+Aspose.Words for .NET prend en charge l'exportation vers divers formats, notamment DOCX, HTML, EPUB et bien d'autres.
 
- Créez une instance du`PdfSaveOptions` classe et spécifiez comment exporter les propriétés personnalisées à l'aide de la classe`CustomPropertiesExport` propriété. Le`PdfCustomPropertiesExport.Standard` value exporte les propriétés personnalisées en fonction des paramètres par défaut.
-
- Utilisez le`Save` méthode du`Document` classe pour convertir le document en PDF en spécifiant les options de conversion.
-
-#### Q : Comment puis-je accéder aux propriétés personnalisées d'un document PDF ?
-R : Pour accéder aux propriétés personnalisées d'un document PDF, vous pouvez utiliser un lecteur PDF compatible prenant en charge l'affichage des propriétés du document. Les lecteurs PDF les plus courants, tels qu'Adobe Acrobat Reader, permettent d'accéder aux métadonnées et aux propriétés d'un document PDF. Vous pouvez généralement trouver ces options dans le menu "Fichier" ou en cliquant avec le bouton droit sur le document et en sélectionnant "Propriétés".
+### Où puis-je obtenir de l'aide si je rencontre des problèmes ?
+ Pour obtenir de l'aide, vous pouvez visiter le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) à l'aide.

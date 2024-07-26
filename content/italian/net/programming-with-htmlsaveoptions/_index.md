@@ -16,12 +16,12 @@ Che tu voglia convertire documenti Word in HTML per visualizzarli sul Web, incor
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Esporta informazioni di andata e ritorno](./export-roundtrip-information/) | Guida passo passo per esportare informazioni di andata e ritorno quando si salva un documento come HTML con Aspose.Words per .NET. |
-| [Esporta caratteri come Base 64](./export-fonts-as-base-64/) | Guida passo passo per esportare i caratteri Base 64 durante il salvataggio di un documento con Aspose.Words per .NET. |
-| [Esporta risorse](./export-resources/) | Guida passo passo per esportare le risorse del documento durante il salvataggio in formato HTML con Aspose.Words per .NET. |
+| [Esporta informazioni di andata e ritorno](./export-roundtrip-information/) | Scopri come esportare informazioni di andata e ritorno utilizzando Aspose.Words per .NET. Preserva l'integrità e la formattazione del tuo documento durante le conversioni. |
+| [Esporta caratteri come Base 64](./export-fonts-as-base-64/) | Scopri come esportare i caratteri come Base64 utilizzando Aspose.Words per .NET in questo tutorial dettagliato. Assicurati che i caratteri siano incorporati e visualizzati correttamente nei file HTML. |
+| [Esporta risorse](./export-resources/) | Scopri come esportare risorse come CSS e caratteri salvando documenti Word come HTML utilizzando Aspose.Words per .NET. Segui la nostra guida passo passo. |
 | [Converti metafile in Emf o Wmf](./convert-metafiles-to-emf-or-wmf/) | Guida passo passo per convertire i metafile nei formati EMF o WMF durante la conversione di un documento in HTML con Aspose.Words per .NET. |
-| [Converti metafile in Svg](./convert-metafiles-to-svg/) | Guida passo passo per convertire i metafile in formato SVG durante la conversione di un documento in HTML con Aspose.Words per .NET. |
-| [Aggiungi prefisso nome classe CSS](./add-css-class-name-prefix/) | Guida passo passo per aggiungere un prefisso del nome della classe CSS durante la conversione di un documento in HTML con Aspose.Words per .NET. |
-| [Esporta URL Cid per risorse Mhtml](./export-cid-urls-for-mhtml-resources/) | Guida passo passo per esportare URL CID di risorse MHTML quando si salva un documento con Aspose.Words per .NET. |
-| [Risolvi i nomi dei caratteri](./resolve-font-names/) | Guida passo passo per risolvere i nomi dei caratteri mancanti durante la conversione in HTML con Aspose.Words per .NET. |
-| [Esporta il campo del modulo di input testo come testo](./export-text-input-form-field-as-text/) | Guida passo passo per esportare i campi del modulo di input di testo come testo normale con Aspose.Words per .NET. |
+| [Converti metafile in Svg](./convert-metafiles-to-svg/) | Converti metafile in SVG in documenti Word utilizzando Aspose.Words per .NET con questa guida dettagliata passo passo. Perfetto per sviluppatori di tutti i livelli. |
+| [Aggiungi prefisso nome classe CSS](./add-css-class-name-prefix/) | Scopri come aggiungere un prefisso del nome di classe CSS quando salvi documenti Word come HTML utilizzando Aspose.Words per .NET. Guida passo passo, frammenti di codice e domande frequenti incluse. |
+| [Esporta URL Cid per risorse Mhtml](./export-cid-urls-for-mhtml-resources/) | Scopri come esportare URL Cid per risorse MHTML utilizzando Aspose.Words per .NET in questo tutorial passo passo. Perfetto per sviluppatori di tutti i livelli. |
+| [Risolvi i nomi dei caratteri](./resolve-font-names/) | Scopri come risolvere i nomi dei caratteri nei documenti Word durante la conversione in HTML utilizzando Aspose.Words per .NET. Guida passo passo con spiegazioni dettagliate. |
+| [Esporta il campo del modulo di input testo come testo](./export-text-input-form-field-as-text/) | Scopri come esportare i campi del modulo di input di testo come testo normale utilizzando Aspose.Words per .NET con questa guida completa passo passo. |

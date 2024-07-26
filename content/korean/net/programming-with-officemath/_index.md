@@ -12,4 +12,4 @@ OfficeMath를 사용한 단어 처리에 대한 .NET용 Aspose.Words 자습서�
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [수학 방정식](./math-equations/) | .NET용 Aspose.Words를 사용하여 Word 문서에 수학 방정식을 추가하는 방법을 알아보세요. |
+| [수학 방정식](./math-equations/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 수학 방정식을 구성하는 방법을 알아보세요. 예제, FAQ 등이 포함된 단계별 가이드입니다. |

@@ -21,7 +21,7 @@ Per avviare l'elaborazione delle parole con la tabella e le celle, dobbiamo crea
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Creare il documento e inizializzare il generatore di documenti
+//Creare il documento e inizializzare il generatore di documenti
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

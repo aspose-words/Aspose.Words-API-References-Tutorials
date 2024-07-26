@@ -2,90 +2,105 @@
 title: Deteksi Tanda Tangan Digital pada Dokumen Word
 linktitle: Deteksi Tanda Tangan Digital pada Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mendeteksi tanda tangan digital pada dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara mendeteksi tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami.
 type: docs
 weight: 10
 url: /id/net/programming-with-fileformat/detect-document-signatures/
 ---
+## Perkenalan
 
-Artikel ini memberikan panduan langkah demi langkah tentang cara menggunakan Tanda Tangan Digital pada fitur deteksi Dokumen Word dengan Aspose.Words untuk .NET. Kami akan menjelaskan setiap bagian kode secara detail. Di akhir tutorial ini, Anda akan dapat memahami cara mendeteksi tanda tangan digital dalam sebuah dokumen.
+Memastikan integritas dan keaslian dokumen Word Anda sangatlah penting, terutama di era digital saat ini. Salah satu cara untuk mencapai hal ini adalah dengan menggunakan tanda tangan digital. Dalam tutorial ini, kita akan mendalami cara mendeteksi tanda tangan digital pada dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan membahas semuanya mulai dari dasar hingga panduan langkah demi langkah, memastikan Anda memiliki pemahaman yang komprehensif pada akhirnya.
 
-Sebelum memulai, pastikan Anda telah menginstal dan mengonfigurasi pustaka Aspose.Words untuk .NET di proyek Anda. Anda dapat menemukan perpustakaan dan petunjuk instalasi di situs web Aspose.
+## Prasyarat
 
-## Langkah 1: Tentukan direktori dokumen
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
- Untuk memulai, Anda perlu menentukan jalur ke direktori tempat dokumen Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+-  Aspose.Words untuk .NET Library: Anda dapat mengunduhnya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Pastikan Anda telah menyiapkan lingkungan pengembangan .NET, seperti Visual Studio.
+- Pemahaman Dasar C#: Keakraban dengan bahasa pemrograman C# akan membantu Anda mengikutinya dengan lancar.
+
+## Impor Namespace
+
+Pertama, mari impor namespace yang diperlukan. Ini penting karena memungkinkan Anda mengakses kelas dan metode yang disediakan oleh Aspose.Words untuk .NET.
 
 ```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+```
+
+## Langkah 1: Siapkan Proyek Anda
+
+Sebelum kita dapat mulai mendeteksi tanda tangan digital, kita perlu menyiapkan proyek kita.
+
+### 1.1 Buat Proyek Baru
+
+ Buka Visual Studio dan buat proyek Aplikasi Konsol (.NET Core) baru. Beri nama`DigitalSignatureDetector`.
+
+### 1.2 Instal Aspose.Words untuk .NET
+
+Anda perlu menambahkan Aspose.Words ke proyek Anda. Anda dapat melakukan ini melalui Manajer Paket NuGet:
+
+- Klik kanan pada proyek Anda di Solution Explorer.
+- Pilih "Kelola Paket NuGet".
+- Cari "Aspose.Words" dan instal versi terbaru.
+
+## Langkah 2: Tambahkan Jalur Direktori Dokumen
+
+Sekarang, kita perlu menentukan jalur ke direktori tempat dokumen Anda disimpan.
+
+```csharp
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Langkah 2: Deteksi tanda tangan digital
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
 
- Selanjutnya kita menggunakan`DetectFileFormat` metode`FileFormatUtil`kelas untuk mendeteksi informasi format file. Dalam contoh ini, kami berasumsi bahwa dokumen tersebut bernama "Ditandatangani secara digital.docx" dan terletak di direktori dokumen yang ditentukan.
+## Langkah 3: Deteksi Format File
+
+Selanjutnya, kita perlu mendeteksi format file dokumen tersebut untuk memastikan itu adalah dokumen Word.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
 ```
 
-## Langkah 3: Periksa tanda tangan digital
+ Baris kode ini memeriksa format file dari dokumen yang diberi nama`Digitally signed.docx`.
 
- Kami memeriksa apakah dokumen tersebut berisi tanda tangan digital menggunakan`HasDigitalSignature` properti dari`FileFormatInfo` obyek. Jika tanda tangan digital terdeteksi, kami menampilkan pesan yang menunjukkan bahwa tanda tangan tersebut akan hilang jika dokumen dibuka/disimpan dengan Aspose.Words.
+## Langkah 4: Periksa Tanda Tangan Digital
+
+Sekarang, mari kita periksa apakah dokumen tersebut memiliki tanda tangan digital.
 
 ```csharp
 if (info.HasDigitalSignature)
 {
-	Console.WriteLine(
-		$"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
-		"they will be lost if you open/save this document with Aspose.Words.");
+    Console.WriteLine(
+        $"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
+        "they will be lost if you open/save this document with Aspose.Words.");
 }
 ```
 
-Itu saja ! Anda telah berhasil mendeteksi tanda tangan digital dalam dokumen menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk mendeteksi tanda tangan dokumen dengan Aspose.Words for .NET
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
-
-	if (info.HasDigitalSignature)
-	{
-		Console.WriteLine(
-			$"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
-			"they will be lost if you open/save this document with Aspose.Words.");
-	}
-	
-        
-```
 ## Kesimpulan
 
-Tutorial ini memberi Anda panduan langkah demi langkah tentang cara mendeteksi tanda tangan digital pada dokumen Word menggunakan fitur deteksi tanda tangan digital dengan Aspose.Words untuk .NET. Setiap bagian kode telah dijelaskan secara rinci sehingga memungkinkan Anda memahami cara mendeteksi tanda tangan digital dalam suatu dokumen.
+Mendeteksi tanda tangan digital di dokumen Word menggunakan Aspose.Words untuk .NET adalah proses yang mudah. Dengan mengikuti langkah-langkah yang diuraikan di atas, Anda dapat dengan mudah menyiapkan proyek Anda, mendeteksi format file, dan memeriksa tanda tangan digital. Kemampuan ini sangat berharga untuk menjaga integritas dan keaslian dokumen Anda.
 
-### FAQ untuk Mendeteksi tanda tangan digital pada dokumen Word
+## FAQ
 
-#### Bagaimana cara mendeteksi keberadaan tanda tangan digital pada dokumen Word menggunakan Aspose.Words for .NET?
+### Bisakah Aspose.Words for .NET mempertahankan tanda tangan digital saat menyimpan dokumen?
 
- Untuk mendeteksi keberadaan tanda tangan digital pada dokumen Word menggunakan Aspose.Words for .NET, Anda dapat mengikuti langkah-langkah yang disediakan dalam tutorial. Menggunakan`DetectFileFormat` metode`FileFormatUtil` kelas akan memungkinkan Anda mendeteksi informasi format file. Kemudian Anda dapat memeriksanya`HasDigitalSignature` properti dari`FileFormatInfo` objek untuk menentukan apakah dokumen tersebut berisi tanda tangan digital. Jika tanda tangan digital terdeteksi, Anda dapat menampilkan pesan yang menyatakan bahwa tanda tangan akan hilang jika dokumen dibuka/disimpan dengan Aspose.Words.
+Tidak, Aspose.Words untuk .NET tidak menyimpan tanda tangan digital saat membuka atau menyimpan dokumen. Tanda tangan digital akan hilang.
 
-#### Bagaimana cara menentukan direktori yang berisi dokumen untuk mencari tanda tangan digital?
+### Apakah ada cara untuk mendeteksi banyak tanda tangan digital pada suatu dokumen?
 
- Untuk menentukan direktori yang berisi dokumen tempat Anda ingin mencari tanda tangan digital, Anda harus memodifikasi`dataDir` variabel dalam kode. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+ Ya, itu`HasDigitalSignature` properti dapat menunjukkan adanya satu atau lebih tanda tangan digital pada dokumen.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
+### Bagaimana cara mendapatkan uji coba gratis Aspose.Words untuk .NET?
 
-#### Apa dampak membuka/menyimpan dokumen dengan Aspose.Words terhadap tanda tangan digital?
+ Anda dapat mengunduh uji coba gratis dari[Halaman rilis Aspose](https://releases.aspose.com/).
 
-Saat Anda membuka atau menyimpan dokumen dengan Aspose.Words, tanda tangan digital yang ada dalam dokumen tersebut akan hilang. Hal ini disebabkan oleh perubahan yang dilakukan pada dokumen saat memproses dengan Aspose.Words. Jika Anda perlu menyimpan tanda tangan digital, Anda harus mempertimbangkan hal ini dan menggunakan metode lain untuk mengelola dokumen yang berisi tanda tangan digital.
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
 
-#### Fitur Aspose.Words for .NET apa lagi yang dapat digunakan bersama dengan deteksi tanda tangan digital?
+ Anda dapat menemukan dokumentasi lengkap di[Halaman Dokumentasi Aspose](https://reference.aspose.com/words/net/).
 
- Aspose.Words untuk .NET menawarkan berbagai fitur untuk memproses dan memanipulasi dokumen Word. Selain mendeteksi tanda tangan digital, Anda dapat menggunakan perpustakaan untuk mengekstrak teks, gambar, atau metadata dari dokumen, menerapkan perubahan pemformatan, menggabungkan dokumen, mengonversi dokumen ke format berbeda, dan banyak lagi. Anda dapat menjelajahi[Aspose.Words untuk referensi .NET API](https://reference.aspose.com/words/net/) untuk menemukan semua fitur yang tersedia dan menemukan yang paling sesuai dengan kebutuhan Anda.
+### Bisakah saya mendapatkan dukungan untuk Aspose.Words untuk .NET?
 
-#### Apa batasan mendeteksi tanda tangan digital dengan Aspose.Words for .NET?
-
-Deteksi tanda tangan digital dengan Aspose.Words for .NET hanya sebatas mendeteksi keberadaan tanda tangan dalam suatu dokumen. Namun, Aspose.Words tidak menyediakan fungsionalitas untuk memverifikasi keaslian atau integritas tanda tangan digital. Untuk melakukan operasi lebih lanjut pada tanda tangan digital, Anda perlu menggunakan alat atau pustaka khusus lainnya.
+ Ya, Anda bisa mendapatkan dukungan dari[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8).

@@ -113,7 +113,7 @@ Spowoduje to zapisanie dokumentu z rozplątanymi zakładkami i wszystkimi usuni�
 
 ## Wniosek
 
- Wykonując poniższe kroki i korzystając z`Untangle`funkcji, możesz skutecznie rozplątać zakładki wierszy w dokumentach Word za pomocą Aspose.Words dla .NET. Dzięki temu usuwanie wierszy według zakładek nie spowoduje niezamierzonych konsekwencji w przypadku innych zakładek w sąsiednich wierszach. Pamiętaj o zastąpieniu symboli zastępczych, takich jak`"YOUR DOCUMENT DIRECTORY"` z rzeczywistymi ścieżkami i nazwami plików.
+ Wykonując poniższe kroki i korzystając z`Untangle`funkcji, możesz skutecznie rozplątać zakładki wierszy w dokumentach programu Word za pomocą Aspose.Words dla .NET. Dzięki temu usuwanie wierszy według zakładek nie spowoduje niezamierzonych konsekwencji w przypadku innych zakładek w sąsiednich wierszach. Pamiętaj o zastąpieniu symboli zastępczych, takich jak`"YOUR DOCUMENT DIRECTORY"` z rzeczywistymi ścieżkami i nazwami plików.
 
 ## Często zadawane pytania
 

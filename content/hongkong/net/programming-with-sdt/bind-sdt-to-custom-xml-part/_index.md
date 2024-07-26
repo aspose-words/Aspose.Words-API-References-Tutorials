@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 ---
 
-本教學課程示範如何使用 Aspose.Words for .NET 將結構化文件標籤 (SDT) 綁定到自訂 Xml 元件。 SDT 可讓您為 Word 文件新增結構化內容控件，而 CustomXmlParts 提供一種儲存與文件關聯的自訂 XML 資料的方法。
+本教學課程示範如何使用 Aspose.Words for .NET 將結構化文件標籤 (SDT) 綁定到自訂 Xml 元件。 SDT 可讓您為 Word 文件新增結構化內容控件，而 CustomXmlParts 提供了一種儲存與文件關聯的自訂 XML 資料的方法。
 
 ## 先決條件
 要學習本教程，您需要具備以下條件：

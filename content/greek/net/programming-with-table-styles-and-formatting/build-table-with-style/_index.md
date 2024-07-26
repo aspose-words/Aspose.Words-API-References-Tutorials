@@ -89,7 +89,7 @@ builder.EndRow();
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
 ```
 
-συγχαρητήρια ! Έχετε πλέον δημιουργήσει έναν πίνακα προσαρμοσμένου στυλ χρησιμοποιώντας το Aspose.Words για .NET.
+Συγχαρητήρια ! Έχετε πλέον δημιουργήσει έναν πίνακα προσαρμοσμένου στυλ χρησιμοποιώντας το Aspose.Words για .NET.
 
 ### Δείγμα πηγαίου κώδικα για Build Table With Style χρησιμοποιώντας Aspose.Words για .NET 
 

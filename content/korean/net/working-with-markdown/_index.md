@@ -27,7 +27,7 @@ Markdown을 사용한 단어 처리는 .NET용 Aspose.Words 라이브러리를 �
 | [펜스된 코드](./fenced-code/) | .NET용 Aspose.Words 단계별 가이드로 분리 코드 기능을 사용하는 방법을 알아보세요. |
 | [인용하다](./quote/) | .NET용 Aspose.Words 단계별 가이드를 통해 견적을 사용하는 방법을 알아보세요. |
 | [글머리 기호 목록](./bulleted-list/) | .NET용 Aspose.Words 단계별 가이드를 통해 글머리 기호 목록을 만드는 방법을 알아보세요. |
-| [정렬된 목록](./ordered-list/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 정렬된 목록을 만드는 방법을 알아보세요. 문서 작성 자동화에 적합합니다. |
+| [주문 목록](./ordered-list/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 정렬된 목록을 만드는 방법을 알아보세요. 문서 작성 자동화에 적합합니다. |
 | [테이블](./table/) | 이 단계별 가이드를 통해 Aspose.Words for .NET에서 테이블을 만들고 사용자 정의하는 방법을 알아보세요. 체계적이고 시각적으로 매력적인 문서를 생성하는 데 적합합니다. |
 | [마크다운 문서 읽기](./read-markdown-document/) | .NET용 Aspose.Words 단계별 가이드를 통해 마크다운 문서를 읽는 방법을 알아보세요. |
 | [강조점](./emphases/) | .NET용 Aspose.Words 단계별 가이드에서 강조(굵게 및 기울임꼴)를 사용하는 방법을 알아보세요. |

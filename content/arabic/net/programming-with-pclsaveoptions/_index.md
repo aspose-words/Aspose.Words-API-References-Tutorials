@@ -14,4 +14,4 @@ url: /ar/net/programming-with-pclsaveoptions/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [تنقيط العناصر المحولة](./rasterize-transformed-elements/) | تعرف على كيفية تعطيل التنقيط للعناصر المحولة عند التحويل إلى تنسيق PCL باستخدام Aspose.Words for .NET. |
+| [تنقيط العناصر المحولة](./rasterize-transformed-elements/) | تعرف على كيفية تنقيط العناصر المحولة عند تحويل مستندات Word إلى تنسيق PCL باستخدام Aspose.Words for .NET. يتضمن دليل خطوة بخطوة. |

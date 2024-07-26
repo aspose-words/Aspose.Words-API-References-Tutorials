@@ -2,93 +2,112 @@
 title: Előnyben részesített vezérlőtípus Word dokumentumban
 linktitle: Előnyben részesített vezérlőtípus Word dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre az előnyben részesített vezérlőtípus megadásához a Word-dokumentumban HTML-dokumentum Aspose.Words for .NET segítségével történő betöltésekor.
+description: Ismerje meg, hogyan illeszthet be kombinált mezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Kövesse ezt a lépésről lépésre szóló útmutatót a zökkenőmentes HTML-tartalomintegráció érdekében.
 type: docs
 weight: 10
 url: /hu/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-Ez a cikk lépésenkénti útmutatót tartalmaz az előnyben részesített vezérlőtípus használatához az Aspose.Words for .NET-hez. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megértheti, hogyan kell megadni az előnyben részesített vezérlőtípust HTML-dokumentum betöltésekor.
+## Bevezetés
 
-Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
+egy izgalmas oktatóanyagba merülünk bele, amely az Aspose.Words for .NET HTML-betöltési beállításaival foglalkozik, különös tekintettel az előnyben részesített vezérlőtípus beállítására, amikor kombinált űrlapmezőt illeszt be egy Word-dokumentumba. Ez a részletes útmutató segít megérteni, hogyan lehet hatékonyan manipulálni és megjeleníteni a Word-dokumentumok HTML-tartalmát az Aspose.Words for .NET használatával.
 
-## 1. lépés: Határozza meg a HTML kódot
+## Előfeltételek
 
- A kezdéshez meg kell határoznia a dokumentumként betölteni kívánt HTML-kódot. Ebben a példában definiáltunk egy`html` változó, amely egy választó HTML kódját tartalmazza opciókkal.
+Mielőtt belevágnánk a kódba, néhány dolgot meg kell határoznia:
+
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words for .NET könyvtár. Letöltheti a[weboldal](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: Be kell állítania egy fejlesztői környezetet, például a Visual Studio-t.
+3. Alapvető C# ismerete: A C# programozás alapvető ismerete szükséges az oktatóanyag követéséhez.
+4. HTML-tartalom: A HTML alapszintű ismerete hasznos, mivel ebben a példában HTML-tartalommal fogunk dolgozni.
+
+## Névterek importálása
+
+Először is importáljuk a szükséges névtereket a kezdéshez:
 
 ```csharp
-const string html=@"
-<html>
-<select name='ComboBox' size='1'>
-<option value='val1'>item1</option>
-<option value='val2'></option>
-</select>
-</html>
+using System;
+using System.IO;
+using System.Text;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+Most bontsuk fel a példát több lépésre az egyértelműség és a megértés érdekében.
+
+## 1. lépés: Állítsa be HTML-tartalmát
+
+Először is meg kell határoznunk azt a HTML-tartalmat, amelyet be szeretnénk szúrni a Word dokumentumba. Íme az általunk használt HTML-részlet:
+
+```csharp
+const string html = @"
+    <html>
+        <select name='ComboBox' size='1'>
+            <option value='val1'>item1</option>
+            <option value='val2'></option>                        
+        </select>
+    </html>
 ";
 ```
 
-## 2. lépés: Állítsa be a HTML-betöltési beállításokat
+Ez a HTML egy egyszerű kombinált mezőt tartalmaz két lehetőséggel. Ezt a HTML-t betöltjük egy Word dokumentumba, és megadjuk, hogyan kell renderelni.
 
- Ezután létrehozunk egy`HtmlLoadOptions` objektumot és állítsa be a`PreferredControlType`tulajdonát`HtmlControlType.StructuredDocumentTag`. Ez arra utasítja az Aspose.Words-t, hogy a StructuredDocumentTag-eket használja a HTML megjelenítésére betöltéskor.
+## 2. lépés: Határozza meg a dokumentumkönyvtárat
+
+Ezután adja meg azt a könyvtárat, ahová a Word-dokumentum mentésre kerül. Ez segít a fájlok rendszerezésében és az útvonalkezelés tisztán tartásában.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` azzal a tényleges elérési úttal, ahová menteni szeretné a Word-dokumentumot.
+
+## 3. lépés: Konfigurálja a HTML-betöltési beállításokat
+
+ Itt konfiguráljuk a HTML-betöltési beállításokat, különös tekintettel a`PreferredControlType`ingatlan. Ez határozza meg, hogy a kombinált mező hogyan jelenjen meg a Word dokumentumban.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## 3. lépés: Töltse be és mentse a dokumentumot
+ A beállítással`PreferredControlType` nak nek`HtmlControlType.StructuredDocumentTag`, biztosítjuk, hogy a kombinált mező strukturált dokumentumcímkeként (SDT) jelenjen meg a Word dokumentumban.
 
- Használjuk a`Document` osztályt a HTML-kód memóriafolyamból való betöltéséhez a korábban meghatározott betöltési beállításokkal. Ezután a megadott könyvtárba mentjük a dokumentumot a`.docx`fájlformátum.
+## 4. lépés: Töltse be a HTML-tartalmat a dokumentumba
+
+A beállított betöltési opciók segítségével egy új Word dokumentumba töltjük be a HTML tartalmat.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
+```
+
+Itt a HTML karakterláncot bájttömbbé alakítjuk, és memóriafolyam segítségével betöltjük a dokumentumba. Ez biztosítja, hogy az Aspose.Words helyesen értelmezze és jelenítse meg a HTML-tartalmat.
+
+## 5. lépés: Mentse el a dokumentumot
+
+Végül mentse a dokumentumot a megadott könyvtárba DOCX formátumban.
+
+```csharp
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### Példa forráskódra a preferált vezérlőtípushoz az Aspose.Words for .NET-hez
-
-```csharp
-	
-	const string html = @"
-		<html>
-			<select name='ComboBox' size='1'>
-				<option value='val1'>item1</option>
-				<option value='val2'></option>                        
-			</select>
-		</html>
-	";
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
-
-	Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
-
-	doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
-
-```
-
-Ez minden ! Sikeresen megadta az előnyben részesített vezérlőtípust egy HTML-dokumentum Aspose.Words for .NET segítségével történő betöltésekor.
+Ezzel elmenti a Word-dokumentumot a megjelenített kombinált vezérlővel a megadott helyre.
 
 ## Következtetés
 
- Ennek a lépésenkénti útmutatónak a követésével megtanulta, hogyan használhatja az Aspose.Words for .NET "Preferred Control Type" funkcióját a kívánt vezérlőtípus megadására HTML-dokumentum betöltésekor. Beállítása a`PreferredControlType`tulajdonát`HtmlControlType.StructuredDocumentTag` lehetővé teszi az Aspose.Words számára a StructuredDocumentTags (SDT) használatát a HTML-tartalom jobb megjelenítése és feldolgozása érdekében. Más vezérlési típusokat is felfedezhet sajátos igényeinek megfelelően. Ennek a funkciónak a használata biztosítja a HTML-dokumentumok pontos és hatékony kezelését a C#-alkalmazásban az Aspose.Words segítségével.
+És megvan! Sikeresen beszúrtunk egy kombinált űrlapmezőt egy Word-dokumentumba az Aspose.Words for .NET használatával a HTML-betöltési lehetőségek kihasználásával. Ez a lépésenkénti útmutató segít megérteni a folyamatot és alkalmazni azt a projektjeire. Akár a dokumentumok létrehozásának automatizálásáról, akár a HTML-tartalom manipulálásáról van szó, az Aspose.Words for .NET hatékony eszközöket kínál céljainak eléréséhez.
 
-### GYIK az előnyben részesített vezérlőtípusokhoz a Word dokumentumban
+## GYIK
 
-#### K: Mi az Aspose.Words for .NET "Preferred Control Type" szolgáltatása?
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony dokumentumkezelési könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, szerkesztését, konvertálását és renderelését.
 
-V: Az "Előnyben részesített vezérlőtípus" funkció lehetővé teszi, hogy megadja a HTML elemeket megjelenítő vezérlőelemek preferált típusát a HTML-dokumentum betöltésekor. Segít a megfelelő vezérlőtípus kiválasztásában a HTML-tartalom jobb megjelenítéséhez és feldolgozásához.
+### Használhatok más HTML-vezérlőtípusokat az Aspose.Words for .NET-hez?
+Igen, az Aspose.Words for .NET támogatja a különböző HTML-vezérlőtípusokat. Testreszabhatja, hogyan jelenjenek meg a különböző vezérlők a Word-dokumentumban.
 
-#### K: Hogyan állíthatom be az előnyben részesített vezérlőtípust HTML-dokumentum betöltésekor?
+### Hogyan kezelhetem az Aspose.Words for .NET komplex HTML-tartalmát?
+ Az Aspose.Words for .NET átfogó támogatást nyújt a HTML-hez, beleértve az összetett elemeket is. Győződjön meg arról, hogy konfigurálta a`HtmlLoadOptions`megfelelően kezelni az adott HTML-tartalmat.
 
- V: Az előnyben részesített vezérlőtípus beállításához létre kell hoznia egy`HtmlLoadOptions` objektumot, és állítsa be`PreferredControlType` ingatlan a kívántnak`HtmlControlType` . A megadott példában`HtmlControlType.StructuredDocumentTag` használt.
+### Hol találok további példákat és dokumentációt?
+ Részletes dokumentációt és példákat találhat a[Aspose.Words for .NET dokumentációs oldal](https://reference.aspose.com/words/net/).
 
-#### K: Mi a jelentősége a StructuredDocumentTags (SDT) preferált vezérlőtípusként való használatának?
-
-V: A StructuredDocumentTags (SDT) XML-alapú elemek, amelyek segítségével összetett tartalmat és vezérlőket jeleníthet meg egy Word-dokumentumban. Az SDT-k preferált vezérlőtípusként történő használata jobb kompatibilitást és a HTML-tartalom megjelenítését biztosíthatja.
-
-#### K: Hogyan biztosíthatom, hogy az Aspose.Words az előnyben részesített vezérlőtípust használja a HTML-dokumentum betöltésekor?
-
- V: Beállítva a`PreferredControlType`tulajdonát`HtmlControlType.StructuredDocumentTag`amint az a példa forráskódjában látható, az Aspose.Words SDT-ket használ a HTML elemek megjelenítésére a dokumentum betöltésekor.
-
-#### K: Használhatok más vezérlőtípusokat preferált lehetőségként?
-
- V: Igen, azon kívül`HtmlControlType.StructuredDocumentTag` , Az Aspose.Words for .NET más vezérlőtípusokat is támogat, mint pl`HtmlControlType.ContentControl`és`HtmlControlType.CustomXmlMarkup`.
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
+ Igen, letölthet egy ingyenes próbaverziót a webhelyről[Aspose honlapja](https://releases.aspose.com/).

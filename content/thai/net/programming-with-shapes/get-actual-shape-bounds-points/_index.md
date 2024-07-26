@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## ขั้นตอนที่ 2: แทรกรูปร่างรูปภาพ
- ใช้`InsertImage` วิธีการของ`DocumentBuilder`วัตถุเพื่อแทรกรูปร่างรูปภาพลงในเอกสาร ระบุเส้นทางไปยังไฟล์รูปภาพเป็นพารามิเตอร์
+ ใช้`InsertImage` วิธีการของ`DocumentBuilder` วัตถุเพื่อแทรกรูปร่างรูปภาพลงในเอกสาร ระบุเส้นทางไปยังไฟล์รูปภาพเป็นพารามิเตอร์
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

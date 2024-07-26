@@ -2,68 +2,102 @@
 title: Udržujte starší ovládací znaky
 linktitle: Udržujte starší ovládací znaky
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak zachovat starší řídicí znaky při ukládání dokumentu pomocí Aspose.Words for .NET.
+description: Naučte se, jak zachovat starší řídicí znaky v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce.
 type: docs
 weight: 10
 url: /cs/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
+## Úvod
 
-V tomto tutoriálu prozkoumáme poskytnutý zdrojový kód C#, abychom zachovali starší řídicí znaky při ukládání dokumentu pomocí Aspose.Words for .NET. Tato funkce umožňuje zachovat speciální řídicí znaky při převodu nebo ukládání dokumentu.
+Byli jste někdy zmateni těmi podivnými, neviditelnými řídicími znaky ve vašich dokumentech aplikace Word? Jsou jako malí, skrytí gremlinové, kteří mohou zkazit formátování a funkčnost. Naštěstí Aspose.Words for .NET poskytuje šikovnou funkci, která tyto starší řídicí znaky při ukládání dokumentů uchová nedotčené. V tomto tutoriálu se ponoříme hluboko do toho, jak spravovat tyto řídicí znaky pomocí Aspose.Words for .NET. Rozebereme to krok za krokem a zajistíme, že po cestě pochopíte každý detail. Jste připraveni začít? Pojďme se ponořit!
 
-## Krok 1: Nastavení prostředí
+## Předpoklady
 
-Než začnete, ujistěte se, že jste nastavili své vývojové prostředí s Aspose.Words for .NET. Ujistěte se, že jste přidali potřebné reference a importovali příslušné jmenné prostory.
+Než začneme, ujistěte se, že máte následující:
 
-## Krok 2: Načtení dokumentu
+1.  Aspose.Words for .NET: Stáhněte a nainstalujte z[tady](https://releases.aspose.com/words/net/).
+2.  Platná licence Aspose: Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+3. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje .NET.
+4. Základní znalost C#: Užitečná bude znalost programovacího jazyka C#.
 
-```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+## Importovat jmenné prostory
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
-```
-
- V tomto kroku načteme dokument pomocí`Document` a předání cesty k souboru obsahujícímu zděděné řídicí znaky.
-
-## Krok 3: Konfigurace možností zálohování OOXML
+Před napsáním kódu musíte importovat potřebné jmenné prostory. Přidejte následující řádky na začátek souboru C#:
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- V tomto kroku nakonfigurujeme možnosti uložení OOXML vytvořením nového`OoxmlSaveOptions` objekt. Zadáme požadovaný formát uložení (zde,`FlatOpc` ) a povolte`KeepLegacyControlChars` možnost zachovat starší řídicí znaky.
+## Krok 1: Nastavení vašeho projektu
 
-## Krok 4: Uložení dokumentu se staršími řídicími znaky
+Nejprve budete muset nastavit svůj projekt ve Visual Studiu (nebo preferovaném IDE). 
 
-```csharp
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-```
+1. Vytvoření nového projektu C#: Otevřete Visual Studio a vytvořte nový projekt C# Console Application.
+2. Instalace Aspose.Words pro .NET: K instalaci Aspose.Words pro .NET použijte Správce balíčků NuGet. Klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení, vyberte „Spravovat balíčky NuGet“, vyhledejte „Aspose.Words“ a nainstalujte jej.
 
- V tomto posledním kroku dokument uložíme pomocí`Save` a předání cesty k výstupnímu souboru pomocí`.docx` rozšíření spolu se zadanými možnostmi uložení.
+## Krok 2: Vložte svůj dokument
 
-Nyní můžete spouštět zdrojový kód pro zachování starších řídicích znaků při ukládání dokumentu. Výsledný soubor bude uložen do zadaného adresáře s názvem "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
+Dále načtete dokument aplikace Word, který obsahuje starší řídicí znaky.
 
-### Ukázkový zdrojový kód pro Keep Legacy Control Chars pomocí Aspose.Words pro .NET 
-```csharp
+1. Zadejte cestu dokumentu: Nastavte cestu k adresáři dokumentů.
+   
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
 
-// Cesta k vašemu adresáři dokumentů
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+2.  Vložte dokument: Použijte`Document` třídy k načtení dokumentu.
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```csharp
+   Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+## Krok 3: Nakonfigurujte možnosti uložení
 
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-            
-        
-```
+Nyní nakonfigurujme možnosti uložení tak, aby zůstaly původní řídicí znaky nedotčené.
+
+1.  Vytvořit možnosti uložení: Inicializace instance`OoxmlSaveOptions` a nastavte`KeepLegacyControlChars`majetek do`true`.
+
+   ```csharp
+   OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)
+   {
+       KeepLegacyControlChars = true
+   };
+   ```
+
+## Krok 4: Uložte dokument
+
+Nakonec uložte dokument s nakonfigurovanými možnostmi uložení.
+
+1.  Uložte dokument: Použijte`Save` metoda`Document` třídy k uložení dokumentu se zadanými možnostmi uložení.
+
+   ```csharp
+   doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
+   ```
 
 ## Závěr
 
-V tomto tutoriálu jsme prozkoumali funkčnost zachování starších řídicích znaků při ukládání dokumentu pomocí Aspose.Words for .NET. Naučili jsme se, jak zachovat ty speciální znaky, které mohou být důležité pro správné formátování nebo zobrazení dokumentu.
+tady to máte! Pomocí těchto kroků můžete zajistit, že při práci s dokumenty aplikace Word v Aspose.Words for .NET budou zachovány vaše starší řídicí znaky. Tato funkce může být záchranou, zejména při práci se složitými dokumenty, kde hrají rozhodující roli řídící postavy. 
 
- Zachování starších řídicích znaků je užitečné zejména při zpracování textu s dokumenty, které používají starší nebo specifické funkce, jako jsou speciální řídicí znaky. Povolením`KeepLegacyControlChars` Při ukládání dokumentu zajistíte zachování těchto znaků.
+## FAQ
 
-Aspose.Words for .NET nabízí řadu flexibilních a výkonných možností zálohování, které splní vaše potřeby manipulace s dokumenty. Pomocí vhodných možností můžete přizpůsobit proces zálohování tak, aby byly zachovány specifické vlastnosti vašich dokumentů.
+### Co jsou starší řídicí znaky?
 
-Neváhejte začlenit tuto funkci do svých projektů Aspose.Words for .NET, abyste zajistili integritu a zachování starších řídicích znaků ve vašich dokumentech.
+Starší řídicí znaky jsou netisknutelné znaky používané ve starších dokumentech k řízení formátování a rozvržení.
+
+### Mohu tyto řídicí znaky místo ponechání odstranit?
+
+Ano, můžete použít Aspose.Words for .NET k odstranění nebo nahrazení těchto znaků v případě potřeby.
+
+### Je tato funkce dostupná ve všech verzích Aspose.Words pro .NET?
+
+Tato funkce je dostupná v posledních verzích. Ujistěte se, že používáte nejnovější verzi pro přístup ke všem funkcím.
+
+### Potřebuji licenci k používání Aspose.Words pro .NET?
+
+ Ano, potřebujete platnou licenci. Pro účely hodnocení můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
+
+ Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ 

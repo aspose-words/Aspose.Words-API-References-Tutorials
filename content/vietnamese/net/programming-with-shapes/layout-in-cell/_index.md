@@ -17,7 +17,7 @@ Hướng dẫn này giải thích cách bố trí hình dạng trong ô bảng t
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 3: Xây dựng bảng
- Sử dụng`StartTable`, `EndTable`, `InsertCell` , Và`Write` các phương pháp của`DocumentBuilder`đối tượng để xây dựng một bảng. Đặt quy tắc chiều cao và chiều cao hàng mong muốn bằng cách sử dụng`RowFormat` của cải.
+ Sử dụng`StartTable`, `EndTable`, `InsertCell` , Và`Write` các phương pháp của`DocumentBuilder` đối tượng để xây dựng một bảng. Đặt quy tắc chiều cao và chiều cao hàng mong muốn bằng cách sử dụng`RowFormat` của cải.
 
 ```csharp
 builder.StartTable();
@@ -86,7 +86,7 @@ builder.InsertNode(watermark);
 ```
 
 ## Bước 7: Lưu tài liệu
- Lưu tài liệu vào thư mục được chỉ định bằng cách sử dụng`Save` phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithShapes.LayoutInCell.docx".
+ Lưu tài liệu vào thư mục được chỉ định bằng cách sử dụng`Save`phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithShapes.LayoutInCell.docx".
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);

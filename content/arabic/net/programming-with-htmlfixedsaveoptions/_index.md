@@ -12,5 +12,5 @@ url: /ar/net/programming-with-htmlfixedsaveoptions/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [استخدم الخط من الجهاز المستهدف](./use-font-from-target-machine/) | تعرف على كيفية تحويل مستند Word إلى HTML ثابت باستخدام خطوط الجهاز المستهدف باستخدام Aspose.Words for .NET. |
-| [كتابة جميع قواعد Css في ملف واحد](./write-all-css-rules-in-single-file/) | تعرف على كيفية تحويل مستند Word إلى HTML ثابت عن طريق كتابة جميع قواعد CSS في ملف واحد باستخدام Aspose.Words for .NET. |
+| [استخدم الخط من الجهاز المستهدف](./use-font-from-target-machine/) | تعرف على كيفية استخدام الخطوط من الجهاز الهدف في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET. اتبع دليلنا خطوة بخطوة لتكامل الخطوط بسلاسة. |
+| [كتابة جميع قواعد Css في ملف واحد](./write-all-css-rules-in-single-file/) | تعرف على كيفية تحويل مستندات Word إلى HTML باستخدام Aspose.Words for .NET مع جميع قواعد CSS في ملف واحد للحصول على تعليمات برمجية أكثر وضوحًا وصيانة أسهل. |

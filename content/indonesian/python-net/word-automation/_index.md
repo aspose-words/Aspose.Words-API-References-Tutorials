@@ -9,7 +9,7 @@ url: /id/python-net/word-automation/
 ---
 ## Tutorial Otomatisasi Kata Menggunakan Aspose.Words untuk Python
 
-Otomatisasi kata adalah pengubah permainan dalam manajemen dokumen dan pemrosesan dokumen kata. Aspose.Words untuk Python menawarkan tutorial komprehensif tentang otomatisasi kata, memberdayakan pengembang untuk menyederhanakan tugas pembuatan, modifikasi, dan pemformatan dokumen secara terprogram.
+Otomatisasi kata adalah pengubah permainan dalam manajemen dokumen dan pemrosesan dokumen kata. Aspose.Words untuk Python menawarkan tutorial komprehensif tentang otomatisasi kata, memberdayakan pengembang untuk menyederhanakan pembuatan dokumen, modifikasi, dan tugas pemformatan secara terprogram.
 
 ## Menguasai Otomatisasi Kata Python
 

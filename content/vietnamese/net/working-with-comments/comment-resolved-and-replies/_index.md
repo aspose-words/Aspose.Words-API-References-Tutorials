@@ -14,7 +14,7 @@ Trong hướng dẫn toàn diện này, bạn sẽ tìm hiểu cách giải quy�
 Trước khi chúng tôi bắt đầu, hãy đảm bảo rằng bạn có các điều kiện tiên quyết sau:
 - Thư viện Aspose.Words for .NET được cài đặt trên hệ thống của bạn.
 
-## Bước 1: Tải tài liệu và truy cập nhận xét
+## Bước 1: Tải tài liệu và truy cập bình luận
 Để bắt đầu, hãy tải tài liệu chứa các nhận xét bằng lớp Tài liệu và truy cập bộ sưu tập nhận xét:
 
 ```csharp

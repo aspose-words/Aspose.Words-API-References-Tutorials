@@ -2,68 +2,102 @@
 title: Tartsa meg a régi vezérlőkaraktereket
 linktitle: Tartsa meg a régi vezérlőkaraktereket
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan őrizheti meg a régi vezérlőkaraktereket, amikor egy dokumentumot ment az Aspose.Words for .NET segítségével.
+description: Ebből a lépésenkénti útmutatóból megtudhatja, hogyan őrizheti meg a régi vezérlőkaraktereket a Word dokumentumokban az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban megvizsgáljuk a mellékelt C# forráskódot, hogy megőrizzük a régi vezérlőkaraktereket, amikor egy dokumentumot Aspose.Words for .NET használatával mentünk. Ez a funkció lehetővé teszi a speciális vezérlőkarakterek megőrzését dokumentum konvertálásakor vagy mentésekor.
+Valaha értetlenül állt a Word-dokumentumok furcsa, láthatatlan vezérlőkarakterei előtt? Olyanok, mint az apró, rejtett gremlinek, amelyek összezavarhatják a formázást és a funkcionalitást. Szerencsére az Aspose.Words for .NET egy praktikus funkciót biztosít, amely a dokumentumok mentésekor érintetlenül tartja ezeket a régi vezérlőkaraktereket. Ebben az oktatóanyagban részletesen bemutatjuk, hogyan kezeljük ezeket a vezérlőkaraktereket az Aspose.Words for .NET használatával. Lépésről lépésre lebontjuk, így biztosítva, hogy minden részletet megértsen az út során. Készen áll az indulásra? Merüljünk el!
 
-## 1. lépés: A környezet beállítása
+## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy beállította fejlesztői környezetét az Aspose.Words for .NET segítségével. Győződjön meg arról, hogy hozzáadta a szükséges hivatkozásokat, és importálta a megfelelő névtereket.
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
 
-## 2. lépés: A dokumentum betöltése
+1.  Aspose.Words for .NET: Töltse le és telepítse innen[itt](https://releases.aspose.com/words/net/).
+2.  Érvényes Aspose licenc: Kaphat ideiglenes licencet[itt](https://purchase.aspose.com/temporary-license/).
+3. Fejlesztési környezet: Visual Studio vagy bármely más IDE, amely támogatja a .NET-et.
+4. Alapvető C# ismerete: Hasznos lesz a C# programozási nyelv ismerete.
 
-```csharp
-// A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+## Névterek importálása
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
-```
-
- Ebben a lépésben a dokumentumot a`Document` metódust, és átadja az örökölt vezérlőkaraktereket tartalmazó fájl elérési útját.
-
-## 3. lépés: Az OOXML biztonsági mentési beállításainak konfigurálása
+A kód megírása előtt importálnia kell a szükséges névtereket. Adja hozzá a következő sorokat a C# fájl tetejéhez:
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- Ebben a lépésben konfiguráljuk az OOXML mentési beállításait egy új létrehozásával`OoxmlSaveOptions` tárgy. Megadjuk a kívánt mentési formátumot (itt,`FlatOpc` ), és engedélyezze a`KeepLegacyControlChars` lehetőség az örökölt vezérlőkarakterek megtartására.
+## 1. lépés: A projekt beállítása
 
-## 4. lépés: A dokumentum mentése örökölt vezérlőkarakterekkel
+Először is be kell állítania a projektet a Visual Studióban (vagy a kívánt IDE-ben). 
 
-```csharp
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-```
+1. Hozzon létre egy új C#-projektet: Nyissa meg a Visual Studio-t, és hozzon létre egy új C#-konzolalkalmazás-projektet.
+2. Az Aspose.Words for .NET telepítése: Használja a NuGet Package Managert az Aspose.Words for .NET telepítéséhez. Kattintson a jobb gombbal a projektre a Solution Explorerben, válassza a „NuGet-csomagok kezelése” lehetőséget, keresse meg az „Aspose.Words” kifejezést, és telepítse.
 
- Az utolsó lépésben a dokumentumot a`Save` metódust, és átadja a kimeneti fájl elérési útját a`.docx` kiterjesztést, a megadott mentési beállításokkal együtt.
+## 2. lépés: Töltse be a dokumentumot
 
-Mostantól a forráskód futtatásával megőrizheti a régi vezérlőkaraktereket a dokumentum mentésekor. Az eredményül kapott fájl a megadott könyvtárba kerül mentésre „WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx” néven.
+Ezután töltse be a Word dokumentumot, amely tartalmazza a régi vezérlőkaraktereket.
 
-### Minta forráskód a Keep Legacy Control Chars alkalmazáshoz az Aspose.Words for .NET használatával 
-```csharp
+1. Adja meg a dokumentum elérési útját: Állítsa be a dokumentumkönyvtár elérési útját.
+   
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
 
-// A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+2.  A dokumentum betöltése: Használja a`Document` osztályt a dokumentum betöltéséhez.
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```csharp
+   Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+## 3. lépés: Konfigurálja a mentési beállításokat
 
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-            
-        
-```
+Most állítsuk be a mentési beállításokat, hogy a régi vezérlőkarakterek érintetlenül maradjanak.
+
+1.  Mentési beállítások létrehozása: Inicializálja a példányt`OoxmlSaveOptions` és állítsa be a`KeepLegacyControlChars`tulajdonát`true`.
+
+   ```csharp
+   OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)
+   {
+       KeepLegacyControlChars = true
+   };
+   ```
+
+## 4. lépés: Mentse el a dokumentumot
+
+Végül mentse a dokumentumot a beállított mentési beállításokkal.
+
+1.  Mentse el a dokumentumot: Használja a`Save` módszere a`Document` osztályba a dokumentum mentéséhez a megadott mentési beállításokkal.
+
+   ```csharp
+   doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
+   ```
 
 ## Következtetés
 
-Ebben az oktatóanyagban megvizsgáltuk a régi vezérlőkarakterek megőrzésének funkcióit egy dokumentum Aspose.Words for .NET használatával mentésekor. Megtanultuk, hogyan kell megőrizni azokat a speciális karaktereket, amelyek fontosak lehetnek a dokumentum megfelelő formázásához vagy megjelenítéséhez.
+És megvan! Az alábbi lépések követésével biztosíthatja, hogy a régi vezérlőkarakterek megmaradjanak, amikor Word-dokumentumokkal dolgozik az Aspose.Words for .NET-ben. Ez a funkció életmentő lehet, különösen összetett dokumentumok kezelésekor, ahol a vezérlőkarakterek döntő szerepet játszanak. 
 
- Az örökölt vezérlőkarakterek megőrzése különösen hasznos olyan dokumentumoknál, amelyek régebbi vagy speciális szolgáltatásokat, például speciális vezérlőkaraktereket használnak. Engedélyezésével a`KeepLegacyControlChars` opcióval a dokumentum mentésekor gondoskodik ezeknek a karaktereknek a megőrzéséről.
+## GYIK
 
-Az Aspose.Words for .NET rugalmas és hatékony biztonsági mentési lehetőségek széles skáláját kínálja a dokumentumkezelési igények kielégítésére. A megfelelő opciók használatával testreszabhatja a biztonsági mentési folyamatot, hogy megőrizze a dokumentumok sajátos jellemzőit.
+### Mik azok az örökölt vezérlőkarakterek?
 
-Nyugodtan építse be ezt a funkciót Aspose.Words for .NET projektjébe, hogy biztosítsa a dokumentumaiban lévő örökölt vezérlőkarakterek integritását és megőrzését.
+Az örökölt vezérlőkarakterek nem nyomtatható karakterek, amelyeket régebbi dokumentumokban használnak a formázás és az elrendezés szabályozására.
+
+### Eltávolíthatom ezeket a vezérlőkaraktereket ahelyett, hogy megtartanám őket?
+
+Igen, szükség esetén az Aspose.Words for .NET segítségével eltávolíthatja vagy lecserélheti ezeket a karaktereket.
+
+### Elérhető ez a funkció az Aspose.Words for .NET összes verziójában?
+
+Ez a funkció a legújabb verziókban érhető el. Ügyeljen arra, hogy a legújabb verziót használja az összes funkció eléréséhez.
+
+### Szükségem van licencre az Aspose.Words for .NET használatához?
+
+ Igen, érvényes jogosítvány kell. Ideiglenes engedélyt kaphat értékelési célokra[itt](https://purchase.aspose.com/temporary-license/).
+
+### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
+
+ Részletes dokumentációt találhat[itt](https://reference.aspose.com/words/net/).
+ 

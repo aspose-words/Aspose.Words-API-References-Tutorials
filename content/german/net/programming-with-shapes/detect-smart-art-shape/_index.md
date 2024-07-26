@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- In diesem Schritt verwenden wir LINQ, um die Formen zu filtern und zu zählen, die SmartArt haben.`GetChildNodes` Methode ruft alle Formen ab, und die`HasSmartArt` -Eigenschaft prüft, ob eine Form SmartArt enthält.
+ In diesem Schritt verwenden wir LINQ, um die Formen zu filtern und zu zählen, die SmartArt haben.`GetChildNodes` Methode ruft alle Formen ab, und die`HasSmartArt`-Eigenschaft prüft, ob eine Form SmartArt enthält.
 
 ## Schritt 4: Ausführen des Codes
 
@@ -80,7 +80,7 @@ Ersetzen Sie „X“ durch die tatsächliche Anzahl der SmartArt-Formen in Ihrem
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich gelernt, wie Sie SmartArt-Formen in Word-Dokumenten mit Aspose.Words für .NET erkennen. In diesem Tutorial wurde das Einrichten Ihrer Umgebung, das Laden von Dokumenten, das Erkennen von SmartArt-Formen und das Ausführen des Codes behandelt. Aspose.Words bietet eine breite Palette von Funktionen. Erkunden Sie daher unbedingt die[API-Dokumentation](https://reference.aspose.com/words/net/) um sein volles Potenzial auszuschöpfen.
+ Und da haben Sie es! Sie haben erfolgreich gelernt, wie Sie SmartArt-Formen in Word-Dokumenten mit Aspose.Words für .NET erkennen. In diesem Tutorial wurde das Einrichten Ihrer Umgebung, das Laden von Dokumenten, das Erkennen von SmartArt-Formen und das Ausführen des Codes behandelt. Aspose.Words bietet eine breite Palette von Funktionen. Erkunden Sie daher unbedingt die[API-Dokumentation](https://reference.aspose.com/words/net/) um sein volles Potenzial auszuschöpfen.
 
 ## FAQs
 

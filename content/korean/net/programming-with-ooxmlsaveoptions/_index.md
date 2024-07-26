@@ -16,8 +16,8 @@ OOXMLSaveOptions를 사용한 단어 처리에 대한 .NET용 Aspose.Words 자�
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [비밀번호로 Docx 암호화](./encrypt-docx-with-password/) | .NET용 Aspose.Words를 사용하여 DOCX 파일을 비밀번호로 암호화하는 방법을 알아보세요. 문서 보안에 대한 전체 튜토리얼입니다. |
-| [Ooxml 규정 준수 ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | .NET용 Aspose.Words를 사용하여 문서를 저장할 때 Ooxml Iso 29500_2008_Strict 규정 준수를 보장하는 방법을 알아보세요. |
-| [마지막으로 저장된 시간 속성 업데이트](./update-last-saved-time-property/) | .NET용 Aspose.Words를 사용하여 문서를 저장할 때 마지막 저장 시간 속성을 자동으로 업데이트하는 방법을 알아보세요. |
-| [레거시 제어 문자 유지](./keep-legacy-control-chars/) | Aspose.Words for .NET을 사용하여 문서를 저장할 때 레거시 제어 문자를 보존하는 방법을 알아보세요. |
-| [압축 수준 설정](./set-compression-level/) | .NET용 Aspose.Words를 사용하여 문서를 저장할 때 압축 수준을 설정하는 방법을 알아보세요. |
+| [비밀번호로 Docx 암호화](./encrypt-docx-with-password/) | Aspose.Words for .NET을 사용하여 Word 문서를 비밀번호로 암호화하여 보호하세요. 민감한 정보를 보호하려면 단계별 가이드를 따르세요. |
+| [Ooxml 규정 준수 ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 OOXML 규정 ISO 29500_2008_Strict를 보장하는 방법을 알아보세요. |
+| [마지막으로 저장된 시간 속성 업데이트](./update-last-saved-time-property/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 마지막으로 저장된 시간 속성을 업데이트하는 방법을 알아보세요. 자세한 단계별 가이드를 따르세요. |
+| [레거시 제어 문자 유지](./keep-legacy-control-chars/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 레거시 제어 문자를 보존하는 방법을 알아보세요. |
+| [압축 수준 설정](./set-compression-level/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 압축 수준을 설정하는 방법을 알아보세요. 문서 저장 및 성능을 최적화하려면 단계별 가이드를 따르십시오. |

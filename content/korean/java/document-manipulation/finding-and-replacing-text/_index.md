@@ -201,7 +201,7 @@ Aspose.Words for Java를 사용하여 텍스트를 필드로 바꿀 수 있습�
 // 문서를 로드하세요
 Document doc = new Document("your-document.docx");
 
-// FindReplaceOptions 인스턴스를 생성하고 필드에 대한 사용자 지정 교체 콜백을 설정합니다.
+// FindReplaceOptions 인스턴스를 생성하고 필드에 대한 사용자 지정 대체 콜백을 설정합니다.
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceTextWithFieldHandler(FieldType.FIELD_MERGE_FIELD));
 
@@ -222,7 +222,7 @@ doc.save("modified-document.docx");
 // 문서를 로드하세요
 Document doc = new Document("your-document.docx");
 
-// FindReplaceOptions 인스턴스를 생성하고 사용자 정의 대체 콜백을 설정합니다.
+// FindReplaceOptions 인스턴스를 생성하고 사용자 지정 대체 콜백을 설정합니다.
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new MyReplaceEvaluator());
 

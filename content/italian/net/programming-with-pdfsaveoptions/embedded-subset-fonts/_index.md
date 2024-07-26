@@ -2,94 +2,84 @@
 title: Incorpora caratteri sottoinsieme nel documento PDF
 linktitle: Incorpora caratteri sottoinsieme nel documento PDF
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per incorporare sottoinsiemi di caratteri in un documento PDF utilizzando Aspose.Words per .NET.
+description: Riduci le dimensioni del file PDF incorporando solo i sottoinsiemi di caratteri necessari utilizzando Aspose.Words per .NET. Segui la nostra guida passo passo per ottimizzare i tuoi PDF in modo efficiente.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
+## introduzione
 
-Questo articolo fornisce una guida passo passo su come utilizzare la funzionalità di incorporamento del sottoinsieme di caratteri con Aspose.Words per .NET. Spiegheremo ogni parte del codice in dettaglio. Alla fine di questo tutorial sarai in grado di capire come incorporare sottoinsiemi di caratteri in un documento e generare un PDF contenente solo i glifi utilizzati nel documento.
+Hai mai notato come alcuni file PDF siano molto più grandi di altri, anche quando contengono contenuti simili? Il colpevole spesso risiede nei caratteri. Incorporare i caratteri in un PDF garantisce che abbia lo stesso aspetto su qualsiasi dispositivo, ma può anche aumentare le dimensioni del file. Fortunatamente, Aspose.Words per .NET offre una pratica funzionalità per incorporare solo i sottoinsiemi di caratteri necessari, mantenendo i tuoi PDF snelli ed efficienti. Questo tutorial ti guiderà attraverso il processo, passo dopo passo.
 
-Prima di iniziare, assicurati di aver installato e configurato la libreria Aspose.Words per .NET nel tuo progetto. È possibile trovare la libreria e le istruzioni di installazione sul sito Web Aspose.
+## Prerequisiti
 
-## Passaggio 1: definire la directory dei documenti
+Prima di iniziare, assicurati di avere quanto segue:
 
- Per iniziare, devi definire il percorso della directory in cui si trovano i tuoi documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
+-  Aspose.Words per .NET: puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+- Ambiente .NET: assicurati di disporre di un ambiente di sviluppo .NET funzionante.
+- Conoscenza di base di C#: la familiarità con la programmazione C# ti aiuterà a proseguire.
+
+## Importa spazi dei nomi
+
+Per utilizzare Aspose.Words per .NET, è necessario importare gli spazi dei nomi necessari nel progetto. Aggiungi questi nella parte superiore del tuo file C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Passaggio 2: carica il documento
+## Passaggio 1: caricare il documento
 
-Successivamente, dobbiamo caricare il documento che vogliamo elaborare. In questo esempio presupponiamo che il documento si chiami "Rendering.docx" e si trovi nella directory dei documenti specificata.
+ Per prima cosa dobbiamo caricare il documento Word che vogliamo convertire in PDF. Questo viene fatto utilizzando il`Document` classe fornita da Aspose.Words.
 
 ```csharp
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Passaggio 3: configura le opzioni di salvataggio come PDF
+ Questo frammento di codice carica il documento che si trova in`dataDir` . Assicurati di sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo del documento.
 
- Per creare un PDF contenente solo i sottoinsiemi di font utilizzati nel documento, dobbiamo configurare il file`PdfSaveOptions` oggetto con il`EmbedFullFonts` proprietà impostata su`false`.
+## Passaggio 2: configura le opzioni di salvataggio del PDF
+
+ Successivamente, configuriamo il`PdfSaveOptions` per garantire che vengano incorporati solo i sottoinsiemi di caratteri necessari. IMPOSTANDO`EmbedFullFonts` A`false`, diciamo ad Aspose.Words di incorporare solo i glifi utilizzati nel documento.
 
 ```csharp
+// Il PDF di output conterrà sottoinsiemi di caratteri nel documento.
+// Solo i glifi utilizzati nel documento sono inclusi nei caratteri PDF.
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## Passaggio 4: salva il documento come PDF con sottoinsiemi di caratteri
+Questo piccolo ma cruciale passaggio aiuta a ridurre significativamente le dimensioni del file PDF.
 
- Infine, possiamo salvare il documento come PDF utilizzando i sottoinsiemi di caratteri. Specificare il nome del file di output e il file`saveOptions` oggetto che abbiamo configurato nel passaggio precedente.
+## Passaggio 3: salva il documento come PDF
 
-```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-```
-
-È tutto ! Hai incorporato con successo sottoinsiemi di caratteri in un documento e generato un PDF contenente solo i glifi utilizzati nel documento con Aspose.Words per .NET.
-
-### Codice sorgente di esempio per incorporare sottoinsiemi di caratteri con Aspose.Words per .NET
+ Infine, salviamo il documento come PDF utilizzando il file`Save` metodo, applicando il configurato`PdfSaveOptions`.
 
 ```csharp
-
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Il PDF di output conterrà sottoinsiemi di caratteri nel documento.
-	// Solo i glifi utilizzati nel documento sono inclusi nei caratteri PDF.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);
 ```
+
+ Questo codice genererà un file PDF con il nome`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf` nella directory specificata, con incorporati solo i sottoinsiemi di caratteri necessari.
 
 ## Conclusione
 
-In questo tutorial, abbiamo imparato come incorporare sottoinsiemi di caratteri in un documento PDF utilizzando Aspose.Words per .NET. Incorporare sottoinsiemi di caratteri aiuta a ridurre le dimensioni del file PDF preservando l'aspetto del documento utilizzando solo i caratteri effettivamente utilizzati. Ciò garantisce migliore compatibilità e prestazioni durante la visualizzazione e la stampa del PDF. Sentiti libero di esplorare ulteriormente le funzionalità di Aspose.Words per .NET per ottimizzare la generazione dei tuoi documenti PDF con sottoinsiemi di caratteri incorporati.
+il gioco è fatto! Seguendo questi semplici passaggi, puoi ridurre in modo efficiente la dimensione dei tuoi file PDF incorporando solo i sottoinsiemi di caratteri necessari utilizzando Aspose.Words per .NET. Ciò non solo consente di risparmiare spazio di archiviazione, ma garantisce anche tempi di caricamento più rapidi e prestazioni migliori, soprattutto per i documenti con caratteri estesi.
 
-### Domande frequenti
+## Domande frequenti
 
-#### D: Che cosa significa incorporare sottoinsiemi di caratteri in un documento PDF?
-R: L'incorporamento di sottoinsiemi di caratteri in un documento PDF è il processo che include solo i glifi utilizzati nel documento, anziché includere tutti i caratteri completi. Ciò riduce la dimensione del file PDF includendo solo i dati dei font necessari per visualizzare i caratteri effettivamente utilizzati nel documento.
+### Perché dovrei incorporare solo sottoinsiemi di caratteri in un PDF?
+Incorporando solo i sottoinsiemi di caratteri necessari è possibile ridurre significativamente le dimensioni del file PDF senza compromettere l'aspetto e la leggibilità del documento.
 
-#### D: Qual è la differenza tra l'incorporamento di caratteri completi e l'incorporamento di sottoinsiemi di caratteri?
-R: L'incorporamento completo dei caratteri significa includere tutti i caratteri utilizzati nel documento nel file PDF, il che garantisce che il documento verrà visualizzato esattamente come è stato progettato, ma può aumentare le dimensioni del file PDF. Al contrario, l'incorporamento di sottoinsiemi di caratteri contiene solo i glifi utilizzati nel documento, riducendo così la dimensione del file PDF, ma limitando la capacità di replicare esattamente l'aspetto del documento se vengono aggiunti ulteriori caratteri in seguito.
+### Posso ripristinare l'incorporamento dei caratteri completi, se necessario?
+ Si, puoi. Basta impostare il`EmbedFullFonts`proprietà a`true` nel`PdfSaveOptions`.
 
-#### D: Come posso incorporare sottoinsiemi di caratteri in un documento PDF utilizzando Aspose.Words per .NET?
-R: Per incorporare sottoinsiemi di caratteri in un documento PDF utilizzando Aspose.Words per .NET, attenersi alla seguente procedura:
+### Aspose.Words per .NET supporta altre funzionalità di ottimizzazione dei PDF?
+Assolutamente! Aspose.Words per .NET offre una gamma di opzioni per l'ottimizzazione dei PDF, inclusa la compressione delle immagini e la rimozione di oggetti inutilizzati.
 
- Imposta il percorso della directory del documento sostituendolo`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
+### Quali tipi di caratteri possono essere incorporati in sottoinsiemi utilizzando Aspose.Words per .NET?
+Aspose.Words per .NET supporta l'incorporamento di sottoinsiemi per tutti i caratteri TrueType utilizzati nel documento.
 
- Carica il documento che desideri elaborare utilizzando il file`Document` classe e il percorso del documento.
-
- Configura le opzioni di salvataggio del PDF creando un'istanza del file`PdfSaveOptions` classe e impostando il file`EmbedFullFonts`proprietà a`false`Ciò garantisce che solo i sottoinsiemi di caratteri utilizzati nel documento verranno inclusi nel file PDF.
-
- Salva il documento in formato PDF con i sottoinsiemi di caratteri incorporati utilizzando il file`Save` metodo del`Document` oggetto, specificando il nome del file di output e le opzioni di salvataggio configurate in precedenza.
-
-#### D: Quali sono i vantaggi derivanti dall'incorporamento di sottoinsiemi di caratteri in un documento PDF?
-R: I vantaggi derivanti dall'incorporamento di sottoinsiemi di caratteri in un documento PDF sono:
-
-Dimensioni file PDF ridotte: includendo solo i glifi utilizzati nel documento, le dimensioni del file PDF vengono ridotte rispetto all'incorporamento di caratteri completi.
-
-Conservazione dell'aspetto del documento: i sottoinsiemi di caratteri inclusi nel file PDF consentono di riprodurre l'aspetto del documento utilizzando solo i caratteri effettivamente utilizzati.
-
-Compatibilità con le restrizioni della licenza: l'incorporamento di sottoinsiemi di caratteri può essere preferibile nei casi in cui i caratteri completi non possono essere incorporati legalmente a causa di restrizioni di licenza.
+### Come posso verificare quali caratteri sono incorporati nel mio PDF?
+Puoi aprire il PDF in Adobe Acrobat Reader e controllare le proprietà nella scheda Caratteri per vedere i caratteri incorporati.

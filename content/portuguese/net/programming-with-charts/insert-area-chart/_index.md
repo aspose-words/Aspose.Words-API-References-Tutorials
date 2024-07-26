@@ -20,7 +20,7 @@ Antes de começarmos, vamos garantir que você tenha tudo o que precisa para com
 3. IDE: um ambiente de desenvolvimento integrado (IDE) como o Visual Studio para escrever e executar seu código.
 4. Conhecimento básico de C#: Um conhecimento básico de programação C# será útil.
 
-Depois de cumprir esses pré-requisitos, você estará pronto para começar a criar lindos gráficos de área em seus documentos do Word.
+Depois de cumprir esses pré-requisitos, você estará pronto para começar a criar belos gráficos de área em seus documentos do Word.
 
 ## Importar namespaces
 
@@ -84,7 +84,7 @@ chart.Series.Add("Aspose Series 1", new []
 new double[] { 32, 32, 28, 12, 15 });
 ```
 
-Nesta etapa, adicionamos uma série chamada "Aspose Series 1" com um conjunto de datas e valores correspondentes.
+Nesta etapa, adicionamos uma série chamada “Aspose Series 1” com um conjunto de datas e valores correspondentes.
 
 ## Etapa 5: salve o documento
 

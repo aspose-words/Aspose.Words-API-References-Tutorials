@@ -119,7 +119,7 @@ Het maken van complexe tabelindelingen vereist vaak het samenvoegen en splitsen 
     table.rows[0].cells[1].cell_format.horizontal_merge = aspose.words.CellMerge.PREVIOUS
     ```
 
-2. Gespleten cellen: Splits cellen terug in hun afzonderlijke componenten.
+2. Cellen splitsen: Splits cellen terug in hun afzonderlijke componenten.
 
     ```python
     cell.cell_format.horizontal_merge = aspose.words.CellMerge.NONE
@@ -202,7 +202,7 @@ Zorg ervoor dat uw tafelindeling zich automatisch aanpast op basis van de inhoud
     table.allow_auto_fit = True
     ```
 
-2. Automatisch formaat van cellen wijzigen: schakel het automatisch aanpassen van de celgrootte in om inhoud te kunnen bevatten.
+2. Automatisch formaat van cellen wijzigen: schakel het automatisch aanpassen van de grootte van cellen in om inhoud te kunnen bevatten.
 
     ```python
     table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)

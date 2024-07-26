@@ -149,7 +149,7 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## Wniosek
 
-Opanowanie technik formatowania dokumentów za pomocą Aspose.Words dla Pythona umożliwia programowe tworzenie atrakcyjnych wizualnie i dobrze zorganizowanych dokumentów. Od stylów czcionek po tabele, nagłówki i hiperłącza — biblioteka oferuje kompleksowy zestaw narzędzi poprawiających efekt wizualny treści.
+Opanowanie technik formatowania dokumentów za pomocą Aspose.Words dla Pythona umożliwia programowe tworzenie atrakcyjnych wizualnie i dobrze ustrukturyzowanych dokumentów. Od stylów czcionek po tabele, nagłówki i hiperłącza — biblioteka oferuje kompleksowy zestaw narzędzi poprawiających efekt wizualny treści.
 
 ## Często zadawane pytania
 
@@ -171,4 +171,4 @@ pip install aspose-words
 ### Do jakich formatów mogę eksportować dokumenty?
 Aspose.Words umożliwia eksport dokumentów do różnych formatów, w tym PDF, DOCX i innych.
 
- Aby uzyskać więcej informacji i uzyskać dostęp do dokumentacji i plików do pobrania Aspose.Words dla języka Python, odwiedź stronę[Tutaj](https://reference.aspose.com/words/python-net/).
+ Aby uzyskać więcej informacji oraz uzyskać dostęp do dokumentacji i plików do pobrania Aspose.Words for Python, odwiedź stronę[Tutaj](https://reference.aspose.com/words/python-net/).

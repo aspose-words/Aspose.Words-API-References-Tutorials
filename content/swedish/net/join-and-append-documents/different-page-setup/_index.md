@@ -2,7 +2,7 @@
 title: Olika sidinställningar
 linktitle: Olika sidinställningar
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du ställer in olika sidkonfigurationer när du slår samman Word-dokument med Aspose.Words för .NET. Steg-för-steg guide ingår.
+description: Lär dig hur du ställer in olika sidkonfigurationer när du slår samman Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide ingår.
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/different-page-setup/

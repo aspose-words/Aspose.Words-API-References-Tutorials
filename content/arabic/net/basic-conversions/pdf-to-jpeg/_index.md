@@ -33,7 +33,7 @@ using Aspose.Words;
 
 ## الخطوة 1: قم بإعداد مشروعك
 
-قبل الغوص في الكود، تحتاج إلى إعداد مشروعك. إليك الطريقة:
+قبل الغوص في التعليمات البرمجية، تحتاج إلى إعداد مشروعك. إليك الطريقة:
 
 1. افتح Visual Studio: ابدأ بتشغيل Visual Studio وإنشاء مشروع C# جديد.
 2.  تثبيت Aspose.Words: استخدم NuGet Package Manager لتثبيت Aspose.Words لـ .NET. يمكن ان تجدها[هنا](https://releases.aspose.com/words/net/).

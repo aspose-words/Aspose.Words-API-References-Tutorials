@@ -95,7 +95,7 @@ As extensões da Web podem modificar dinamicamente o conteúdo do documento. Por
 
 ## Salvando e exportando documentos
 
-Após incorporar extensões da web e fazer as modificações necessárias, você pode salvar o documento usando vários formatos suportados pelo Aspose.Words:
+Depois de incorporar as extensões da web e fazer as modificações necessárias, você pode salvar o documento usando vários formatos suportados pelo Aspose.Words:
 
 ```python
 document.save("output.docx", aspose.words.SaveFormat.DOCX)

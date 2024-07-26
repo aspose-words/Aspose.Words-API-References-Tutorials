@@ -8,7 +8,7 @@ weight: 10
 url: /es/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
 
-Agregar y copiar encabezados y pies de página en sus documentos puede mejorar enormemente su profesionalismo y coherencia. Con Aspose.Words para .NET, esta tarea se vuelve sencilla y altamente personalizable. En este completo tutorial, lo guiaremos a través del proceso de copiar encabezados y pies de página de una sección a otra en sus documentos de Word, paso a paso.
+Agregar y copiar encabezados y pies de página en sus documentos puede mejorar enormemente su profesionalismo y coherencia. Con Aspose.Words para .NET, esta tarea se vuelve sencilla y altamente personalizable. En este tutorial completo, lo guiaremos a través del proceso de copiar encabezados y pies de página de una sección a otra en sus documentos de Word, paso a paso.
 
 ## Requisitos previos
 

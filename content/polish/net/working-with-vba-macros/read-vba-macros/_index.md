@@ -63,7 +63,7 @@ tym samouczku widzieliśmy, jak czytać makra VBA z dokumentu Worda za pomocą A
 
 #### P: Co to jest makro VBA w dokumencie programu Word?
 
-Odp.: Makro VBA w dokumencie programu Word to zestaw instrukcji lub kodu, który można uruchomić w celu zautomatyzowania zadań lub wykonania określonych działań w dokumencie. Makra VBA umożliwiają dodawanie niestandardowych funkcjonalności i automatyzację powtarzalnych operacji.
+O: Makro VBA w dokumencie programu Word to zestaw instrukcji lub kodu, który można uruchomić w celu zautomatyzowania zadań lub wykonania określonych czynności w dokumencie. Makra VBA umożliwiają dodawanie niestandardowych funkcjonalności i automatyzację powtarzalnych operacji.
 
 #### P: Jakie są wymagania wstępne dotyczące odczytywania makr VBA z dokumentu programu Word?
 

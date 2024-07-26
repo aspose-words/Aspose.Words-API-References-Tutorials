@@ -11,7 +11,7 @@ url: /id/net/programming-with-sdt/modify-content-controls/
 Tutorial ini menjelaskan cara memodifikasi berbagai tipe kontrol konten dalam dokumen Word menggunakan Aspose.Words untuk .NET. Anda dapat memperbarui teks, nilai yang dipilih dari daftar dropdown, atau mengganti gambar dalam kontrol konten.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
+Untuk mengikuti tutorial ini, Anda perlu memiliki yang berikut ini:
 
 - Aspose.Words untuk perpustakaan .NET diinstal.
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Langkah 6: Simpan Dokumen yang Dimodifikasi
- Simpan dokumen yang dimodifikasi ke direktori yang ditentukan menggunakan`Save`metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.ModifyContentControls.docx".
+ Simpan dokumen yang dimodifikasi ke direktori yang ditentukan menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.ModifyContentControls.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

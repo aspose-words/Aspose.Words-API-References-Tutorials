@@ -7,7 +7,7 @@ type: docs
 weight: 1590
 url: /vi/net/programming-with-tables/
 ---
-Các hướng dẫn của Aspose.Words for .NET về Xử lý văn bản bằng bảng sẽ hướng dẫn bạn các tính năng và kỹ thuật khác nhau để thao tác với bảng trong tài liệu Word của bạn. Bạn sẽ học cách tạo, sửa đổi và định dạng bảng cũng như cách thêm ô, hàng và cột một cách linh hoạt. Những hướng dẫn này sẽ cung cấp cho bạn hướng dẫn chi tiết từng bước, ví dụ mã rõ ràng và giải thích để giúp bạn nắm vững thao tác bảng trong Aspose.Words cho .NET.
+Các hướng dẫn của Aspose.Words for .NET về Xử lý văn bản bằng bảng sẽ hướng dẫn bạn các tính năng và kỹ thuật khác nhau để thao tác với bảng trong tài liệu Word của bạn. Bạn sẽ tìm hiểu cách tạo, sửa đổi và định dạng bảng cũng như cách thêm ô, hàng và cột một cách linh hoạt. Những hướng dẫn này sẽ cung cấp cho bạn hướng dẫn chi tiết từng bước, ví dụ mã rõ ràng và giải thích để giúp bạn nắm vững thao tác bảng trong Aspose.Words cho .NET.
 
 Cho dù bạn muốn điều chỉnh bố cục bảng, hợp nhất các ô, thêm tiêu đề cột hay sắp xếp dữ liệu bảng, các hướng dẫn sẽ chỉ cho bạn cách hoàn thành các tác vụ này một cách hiệu quả với Aspose.Words cho .NET. Bạn cũng sẽ tìm hiểu cách trích xuất và cập nhật dữ liệu bảng, thêm đường viền và áp dụng kiểu tùy chỉnh cho ô. Các hướng dẫn sẽ cung cấp cho bạn sự hiểu biết sâu sắc về thao tác trên bảng, cho phép bạn tạo các tài liệu Word chuyên nghiệp và có cấu trúc tốt.
 

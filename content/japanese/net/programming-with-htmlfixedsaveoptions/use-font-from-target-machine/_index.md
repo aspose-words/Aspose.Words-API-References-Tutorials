@@ -2,64 +2,112 @@
 title: ターゲットマシンのフォントを使用する
 linktitle: ターゲットマシンのフォントを使用する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、ターゲット マシンのフォントを使用して Word 文書を固定 HTML に変換する方法を学習します。
+description: Aspose.Words for .NET を使用して、Word 文書でターゲット マシンのフォントを使用する方法を学びます。シームレスなフォント統合については、ステップ バイ ステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
+## 導入
 
-C# アプリケーションで Word 文書を固定 HTML に変換する場合、レンダリングされた HTML が文書の元の外観とスタイルを保持するように、ターゲット マシンのフォントを使用することをお勧めします。Aspose.Words ライブラリ for .NET では、HtmlFixedSaveOptions 保存オプションを使用してこの機能を簡単に指定できます。このステップ バイ ステップ ガイドでは、Aspose.Words for .NET の C# ソース コードを使用して、HtmlFixedSaveOptions を使用してターゲット マシンのフォントを使用して Word 文書を固定 HTML に変換する方法について説明します。
+Aspose.Words for .NET の魅力的な世界に飛び込む準備はできていますか? シートベルトを締めてください。これからフォントの魔法の世界を旅することになります。今日は、Word 文書を操作するときにターゲット マシンのフォントを使用する方法に焦点を当てます。この気の利いた機能により、どこで表示されても、文書が意図したとおりに表示されます。さあ、始めましょう!
 
-## Aspose.Words ライブラリを理解する
+## 前提条件
 
-コードに進む前に、.NET 用の Aspose.Words ライブラリを理解することが重要です。Aspose.Words は、.NET を含むさまざまなプラットフォームで Word 文書を作成、編集、変換、保護するための強力なライブラリです。テキストの挿入、書式の変更、セクションの追加など、文書を操作するための多くの機能を提供します。
+細かい詳細に入る前に、必要なものがすべて揃っていることを確認しましょう。
 
-## Word文書の読み込み
+1.  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされていることを確認してください。まだインストールしていない場合は、ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio などの .NET 開発環境をセットアップする必要があります。
+3. 使用するドキュメント: テスト用に Word ドキュメントを用意します。「Bullet points with alternative font.docx」という名前のドキュメントを使用します。
 
-最初のステップは、固定 HTML に変換する Word 文書を読み込むことです。Document クラスを使用して、ソース ファイルから文書を読み込みます。次に例を示します。
+基本を説明したので、コードを見ていきましょう。
 
-```csharp
-Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
-```
+## 名前空間のインポート
 
-この例では、ドキュメント ディレクトリにあるドキュメント「Bullet points with alternative font.docx」を読み込みます。
-
-## バックアップオプションの設定
-
-次の手順では、固定 HTML に変換するための保存オプションを構成します。HtmlFixedSaveOptions クラスを使用して、UseTargetMachineFonts プロパティを true に設定し、Aspose.Words にターゲット マシンのフォントを使用するように指示します。手順は次のとおりです。
+まず最初に、必要な名前空間をインポートする必要があります。これがプロジェクトのバックボーンであり、すべての点を結び付けます。
 
 ```csharp
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-新しい HtmlFixedSaveOptions オブジェクトを作成し、UseTargetMachineFonts プロパティを true に設定して、変換時にターゲット マシンのフォントを使用します。
+## ステップ1: Word文書を読み込む
 
-## HTMLドキュメント変換を修正
+チュートリアルの最初のステップはWord文書を読み込むことです。ここからすべてが始まります。`Document`これを実現するには、Aspose.Words ライブラリのクラスを使用します。
 
-保存オプションを設定したので、ドキュメントを固定 HTML に変換する手順に進むことができます。Document クラスの Save メソッドを使用して、保存オプションを指定して、変換されたドキュメントを固定 HTML 形式で保存します。次に例を示します。
+### ステップ1.1: ドキュメントパスを定義する
 
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
-```
-
-この例では、指定された保存オプションを使用して、変換されたドキュメントを「WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html」として保存します。
-
-### Aspose.Words for .NET を使用した「ターゲット マシンのフォントを使用する」機能を備えた HtmlFixedSaveOptions のサンプル ソース コード
+まず、ドキュメント ディレクトリへのパスを定義します。ここに Word ドキュメントが保存されます。
 
 ```csharp
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+### ステップ1.2: ドキュメントを読み込む
+
+さて、ドキュメントをロードするには、`Document`クラス。
+
+```csharp
 // Word文書を読み込む
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
+```
 
+## ステップ2: 保存オプションを設定する
+
+次に、保存オプションを設定する必要があります。この手順は、ドキュメントで使用されるフォントがターゲット マシンのフォントであることを確認するために重要です。
+
+インスタンスを作成します`HtmlFixedSaveOptions`そして、`UseTargetMachineFonts`財産に`true`.
+
+```csharp
 //「ターゲットマシンのフォントを使用する」機能を使用してバックアップオプションを構成する
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
+{
+    UseTargetMachineFonts = true
+};
+```
 
+## ステップ3: ドキュメントを保存する
+
+最後に、ドキュメントを固定 HTML ファイルとして保存します。ここで魔法が起こります。
+
+私たちは`Save`設定された保存オプションを使用してドキュメントを保存する方法。
+
+```csharp
 //ドキュメントを固定HTMLに変換する
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
+## ステップ4: 出力を確認する
+
+最後に、出力を確認することは常に良い考えです。保存した HTML ファイルを開き、ターゲット マシンからフォントが正しく適用されているかどうかを確認します。
+
+HTML ファイルを保存したディレクトリに移動し、Web ブラウザーで開きます。
+
+```csharp
+// HTMLファイルを開いて出力を確認します
+System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
+```
+
+これで完了です。Aspose.Words for .NET を使用して、Word 文書でターゲット マシンのフォントを正常に使用できました。
+
 ## 結論
 
-このガイドでは、.NET 用の Aspose.Words ライブラリを使用して、ターゲット マシンのフォントを使用して Word 文書を固定 HTML に変換する方法について説明しました。提供されている手順に従い、提供されている C# ソース コードを使用すると、この機能を C# アプリケーションに簡単に適用できます。ターゲット マシンのフォントを使用して固定 HTML に変換すると、HTML 形式での文書の忠実で一貫したレンダリングが保証されます。
+ターゲット マシンのフォントを使用すると、Word ドキュメントはどこで表示しても一貫性があり、プロフェッショナルな外観になります。Aspose.Words for .NET を使用すると、このプロセスが簡単かつ効率的になります。このチュートリアルでは、ドキュメントを読み込み、保存オプションを構成し、目的のフォント設定でドキュメントを保存する方法を学習しました。コーディングをお楽しみください。
+
+## よくある質問
+
+### この方法を他のドキュメント形式でも使用できますか?
+はい、Aspose.Words for .NET はさまざまなドキュメント形式をサポートしており、異なる形式に対して同様の保存オプションを構成できます。
+
+### ターゲットマシンに必要なフォントがない場合はどうなりますか?
+ターゲットマシンに必要なフォントがない場合、ドキュメントが意図したとおりにレンダリングされない可能性があります。必要に応じてフォントを埋め込むことをお勧めします。
+
+### ドキュメントにフォントを埋め込むにはどうすればいいですか?
+フォントの埋め込みは、`FontSettings` Aspose.Words for .NETのクラス。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+
+### 保存する前にドキュメントをプレビューする方法はありますか?
+はい、`DocumentRenderer`クラスを使用して、保存する前にドキュメントをプレビューします。Aspose.Words for .NETをご覧ください。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+
+### HTML 出力をさらにカスタマイズできますか?
+絶対に！`HtmlFixedSaveOptions`クラスはHTML出力をカスタマイズするためのさまざまなプロパティを提供します。[ドキュメンテーション](https://reference.aspose.com/words/net/)利用可能なすべてのオプション。

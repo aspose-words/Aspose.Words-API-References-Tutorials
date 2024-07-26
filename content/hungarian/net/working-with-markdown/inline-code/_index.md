@@ -18,7 +18,7 @@ Először egy dokumentumgenerátort fogunk használni, hogy tartalmat adjunk a d
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. lépés: Stílus hozzáadása a soron belüli kódhoz
+## 2. lépés: Adjon hozzá stílust a soron belüli kódhoz
 
  Egyéni stílust adunk hozzá a soron belüli kódhoz a segítségével`Styles.Add` módszere a`Document` tárgy. Ebben a példában egy "InlineCode" nevű stílust hozunk létre a soron belüli kódhoz, alapértelmezett backtick-el.
 

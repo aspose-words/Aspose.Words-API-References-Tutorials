@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Étape 2 : charger le document et récupérer le contrôle de contenu
- Chargez le document Word à l'aide du`Document` constructeur, en passant le chemin d'accès au document en paramètre. Récupérez le contrôle de contenu souhaité à partir du document. Dans cet exemple, nous supposons que le contrôle de contenu est la première balise de document structuré du document.
+ Chargez le document Word à l'aide du`Document`constructeur, en passant le chemin d'accès au document en paramètre. Récupérez le contrôle de contenu souhaité à partir du document. Dans cet exemple, nous supposons que le contrôle de contenu est la première balise de document structuré du document.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

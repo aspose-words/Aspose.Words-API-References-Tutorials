@@ -27,7 +27,7 @@ string dataDir = "PATH_TO_YOUR_DOCUMENT_DIRECTORY";
 
 ## Krok 2: Załaduj dokument
 
-Pierwszym krokiem jest załadowanie dokumentu do obiektu typu Document. Umożliwi to dostęp i manipulowanie zawartością dokumentu.
+Pierwszym krokiem jest załadowanie dokumentu do obiektu typu Dokument. Umożliwi to dostęp i manipulowanie zawartością dokumentu.
 
 ```csharp
 Document doc = new Document(dataDir + "Name_of_document.docx");
@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Stopka podstawowa to stopka używana w przypadku stron nieparzystych.
+	//Stopka podstawowa to stopka używana w przypadku stron nieparzystych.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 
@@ -103,7 +103,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 
 ## Wniosek
 
-tym artykule zbadaliśmy, jak usunąć stopki z dokumentu programu Word za pomocą Aspose.Words dla .NET. Postępując zgodnie z podanymi instrukcjami, możesz łatwo manipulować dokumentami i usuwać niechciane stopki. Aspose.Words oferuje wydajne i wygodne rozwiązanie do przetwarzania słów z dokumentami Word w aplikacji .NET.
+W tym artykule zbadaliśmy, jak usunąć stopki z dokumentu programu Word za pomocą Aspose.Words dla .NET. Postępując zgodnie z podanymi instrukcjami, możesz łatwo manipulować dokumentami i usuwać niechciane stopki. Aspose.Words oferuje wydajne i wygodne rozwiązanie do przetwarzania słów z dokumentami Word w aplikacji .NET.
 
 ## Często zadawane pytania
 

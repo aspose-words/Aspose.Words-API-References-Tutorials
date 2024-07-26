@@ -21,7 +21,7 @@ Untuk mulai membuat tabel, kita perlu membuat dokumen baru dan menginisialisasi 
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Buat dokumen dan inisialisasi pembuat dokumen
+//Buat dokumen dan inisialisasi pembuat dokumen
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Panggil metode berikut untuk mengakhiri baris pertama dan memulai baris baru
+// Panggil metode berikut untuk mengakhiri baris pertama dan memulai baris baru
 builder. EndRow();
 
 // Konstruksi sel pertama dari baris kedua
@@ -99,7 +99,7 @@ Pastikan untuk menentukan jalur dan nama file yang benar untuk dokumen keluaran.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Tanda bahwa kita telah selesai membuat tabel.
+	// Tanda bahwa kita telah selesai membuat tabel.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

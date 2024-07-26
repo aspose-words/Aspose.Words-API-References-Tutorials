@@ -32,7 +32,7 @@ Dividamos el proceso en pasos manejables para ayudarlo a desvincular encabezados
 
 ## Paso 1: configura tu proyecto
 
-Primero, deberá configurar el entorno de su proyecto. Abra su IDE y cree un nuevo proyecto .NET. Agregue una referencia a la biblioteca Aspose.Words que descargó anteriormente.
+Primero, necesitará configurar el entorno de su proyecto. Abra su IDE y cree un nuevo proyecto .NET. Agregue una referencia a la biblioteca Aspose.Words que descargó anteriormente.
 
 ```csharp
 // Ruta a su directorio de documentos
@@ -100,4 +100,4 @@ Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos d
 ¡Absolutamente! Aspose.Words para .NET se puede utilizar con cualquier lenguaje .NET, incluidos VB.NET y F#.
 
 ### ¿Dónde puedo encontrar más documentación y soporte para Aspose.Words para .NET?  
- Puede encontrar documentación completa sobre el[Página de documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/) , y hay soporte disponible en el[aspose foro](https://forum.aspose.com/c/words/8).
+ Puede encontrar documentación completa sobre el[Página de documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/) , y hay soporte disponible en el[asponer foro](https://forum.aspose.com/c/words/8).

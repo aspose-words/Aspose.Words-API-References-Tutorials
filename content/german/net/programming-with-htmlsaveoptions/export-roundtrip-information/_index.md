@@ -2,62 +2,84 @@
 title: Informationen zum Exportieren von Roundtrips
 linktitle: Informationen zum Exportieren von Roundtrips
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Exportieren von Roundtrip-Informationen beim Speichern eines Dokuments als HTML mit Aspose.Words für .NET.
+description: Erfahren Sie, wie Sie Roundtrip-Informationen mit Aspose.Words für .NET exportieren. Bewahren Sie die Integrität und Formatierung Ihres Dokuments während der Konvertierung.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch den C#-Quellcode zum Exportieren von Roundtrip-Informationen aus einem Dokument mit Aspose.Words für .NET. Mit dieser Funktion können Sie Roundtrip-Informationen in die exportierte HTML-Datei aufnehmen, wodurch sich Änderungen am Originaldokument leichter abrufen lassen.
+Willkommen in der wunderbaren Welt von Aspose.Words für .NET! Heute tauchen wir tief in eine raffinierte Funktion ein, die Ihnen jede Menge Zeit und Mühe sparen kann: das Exportieren von Roundtrip-Informationen. Stellen Sie sich vor, Sie konvertieren ein Word-Dokument in HTML und zurück, ohne wichtige Daten oder Formatierungen zu verlieren. Klingt wie ein Traum, oder? Mit Aspose.Words ist das durchaus möglich. Schnall dich an und lass uns diese aufregende Reise beginnen!
 
-## Schritt 1: Projekt-Setup
+## Voraussetzungen
 
-Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Bibliothek Aspose.Words für .NET verwiesen wird.
+Bevor wir uns in die Einzelheiten stürzen, stellen wir sicher, dass wir alles haben, was wir brauchen:
 
-## Schritt 2: Dokument einlegen
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben.[Hier herunterladen](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Visual Studio oder eine andere C#-kompatible IDE.
+3. Grundkenntnisse in C#: Es ist hilfreich, wenn Sie sich ein wenig mit C# und dem .NET-Framework auskennen.
+4. Lizenz: Sie können eine temporäre Lizenz verwenden, wenn Sie keine Volllizenz haben. Hol sie dir[Hier](https://purchase.aspose.com/temporary-license/).
 
-In diesem Schritt laden wir das zu exportierende Dokument. Verwenden Sie den folgenden Code, um das Dokument aus einem angegebenen Verzeichnis zu laden:
+## Namespaces importieren
+
+Als Erstes müssen wir die erforderlichen Namespaces importieren, um mit Aspose.Words für .NET beginnen zu können.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Lassen Sie uns den Prozess nun in überschaubare Schritte unterteilen. Jeder Schritt wird von detaillierten Erklärungen begleitet, damit Sie nichts verpassen.
+
+## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
+
+Zunächst müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis einrichten. Hier ist Ihr Word-Dokument abgelegt und hier wird auch die HTML-Datei gespeichert.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Schritt 2: Laden Sie das Word-Dokument
+
+Laden Sie als Nächstes das Word-Dokument, das Sie konvertieren möchten. Für dieses Tutorial verwenden wir ein Dokument mit dem Namen „Rendering.docx“.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Dieser Code erstellt eine Instanz von`Document` durch Laden des Dokuments aus dem angegebenen Verzeichnis.
+## Schritt 3: HTML-Speicheroptionen konfigurieren
 
-## Schritt 3: Konfigurieren der HTML-Sicherungsoptionen
-
-Nun konfigurieren wir die HTML-Speicheroptionen, um die Roundtrip-Informationen des Dokuments zu exportieren. Verwenden Sie den folgenden Code:
+Jetzt passiert die Magie. Wir müssen die HTML-Speicheroptionen einrichten und insbesondere die Eigenschaft ExportRoundtripInformation aktivieren. Dadurch wird sichergestellt, dass alle Roundtrip-Informationen während der Konvertierung erhalten bleiben.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Dieser Code erstellt eine Instanz von`HtmlSaveOptions` und setzt den`ExportRoundtripInformation` Möglichkeit,`true` um Roundtrip-Informationen beim Export einzuschließen.
+## Schritt 4: Speichern Sie das Dokument als HTML
 
-## Schritt 4: Konvertieren und Speichern des Dokuments im HTML-Format
-
-Zum Schluss konvertieren wir das Dokument in HTML, indem wir die zuvor konfigurierten HTML-Speicheroptionen verwenden. Verwenden Sie den folgenden Code:
+Speichern Sie das Dokument abschließend mit den konfigurierten Speicheroptionen als HTML-Datei. Mit diesem Schritt wird sichergestellt, dass das Dokument bei der Konvertierung in HTML und zurück nach Word alle Formatierungen und Daten behält.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
 ```
 
-Dieser Code konvertiert das Dokument einschließlich der Roundtrip-Informationen in HTML und speichert die exportierte HTML-Datei im angegebenen Verzeichnis.
+## Abschluss
 
-### Beispielquellcode für den Export von Roundtrip-Informationen mit Aspose.Words für .NET
+Und da haben Sie es! Mit nur wenigen Codezeilen haben Sie erfolgreich Roundtrip-Informationen aus einem Word-Dokument mit Aspose.Words für .NET nach HTML exportiert. Diese leistungsstarke Funktion stellt sicher, dass Ihre Dokumente während der Konvertierung ihre Integrität und Formatierung behalten, was Ihnen das Leben erheblich erleichtert.
 
+## Häufig gestellte Fragen
 
-```csharp
+### Was sind Roundtrip-Informationen in Aspose.Words?
+Bei Roundtrip-Informationen handelt es sich um Daten, die die Integrität und Formatierung eines Dokuments bei der Konvertierung von einem Format in ein anderes und zurück sicherstellen.
 
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+### Kann ich Aspose.Words für .NET ohne Lizenz verwenden?
+Ja, Sie können es mit einer temporären Lizenz verwenden, die Sie erhalten können[Hier](https://purchase.aspose.com/temporary-license/).
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
+### Wo finde ich die neueste Version von Aspose.Words für .NET?
+ Sie können die neueste Version herunterladen[Hier](https://releases.aspose.com/words/net/).
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
+### Wie erhalte ich Unterstützung für Aspose.Words für .NET?
+ Sie können Unterstützung von der Aspose-Community erhalten[Hier](https://forum.aspose.com/c/words/8).
 
-```
-
- Achten Sie darauf, den korrekten Pfad zum Dokumentenverzeichnis im`dataDir` Variable.
+### Ist es möglich, die Formatierung bei der Konvertierung von Word-Dokumenten in HTML beizubehalten?
+Ja, mithilfe der Eigenschaft „ExportRoundtripInformation“ in „HtmlSaveOptions“ können Sie während der Konvertierung die gesamte Formatierung beibehalten.

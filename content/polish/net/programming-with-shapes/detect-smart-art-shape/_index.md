@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- Na tym etapie używamy LINQ do filtrowania i zliczania kształtów zawierających grafikę SmartArt. The`GetChildNodes` Metoda pobiera wszystkie kształty, a metoda`HasSmartArt` Właściwość sprawdza, czy kształt zawiera grafikę SmartArt.
+ Na tym etapie używamy LINQ do filtrowania i zliczania kształtów zawierających grafikę SmartArt. The`GetChildNodes` Metoda pobiera wszystkie kształty, a metoda`HasSmartArt`Właściwość sprawdza, czy kształt zawiera grafikę SmartArt.
 
 ## Krok 4: Uruchomienie kodu
 
@@ -80,7 +80,7 @@ Zamień „X” na rzeczywistą liczbę kształtów SmartArt w dokumencie.
 
 ## Wniosek
 
- masz to! Pomyślnie nauczyłeś się wykrywać kształty SmartArt w dokumentach programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono konfigurowanie środowiska, ładowanie dokumentów, wykrywanie kształtów SmartArt i uruchamianie kodu. Aspose.Words oferuje szeroką gamę funkcji, więc koniecznie zapoznaj się z[Dokumentacja API](https://reference.aspose.com/words/net/) aby uwolnić jego pełny potencjał.
+ I masz to! Pomyślnie nauczyłeś się wykrywać kształty SmartArt w dokumentach programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono konfigurowanie środowiska, ładowanie dokumentów, wykrywanie kształtów SmartArt i uruchamianie kodu. Aspose.Words oferuje szeroką gamę funkcji, więc koniecznie zapoznaj się z[Dokumentacja API](https://reference.aspose.com/words/net/) aby uwolnić jego pełny potencjał.
 
 ## Często zadawane pytania
 

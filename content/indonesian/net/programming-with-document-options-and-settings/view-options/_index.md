@@ -72,7 +72,7 @@ Terakhir, setelah melakukan perubahan yang diperlukan, Anda dapat menyimpan doku
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ViewOptions.docx");
 ```
 
-Baris kode ini menyimpan dokumen yang diubah dengan nama baru, sehingga Anda tidak menimpa file asli Anda. Anda sekarang dapat membuka file ini untuk melihat opsi tampilan yang diperbarui.
+Baris kode ini menyimpan dokumen yang dimodifikasi dengan nama baru, sehingga Anda tidak menimpa file asli Anda. Anda sekarang dapat membuka file ini untuk melihat opsi tampilan yang diperbarui.
 
 ## Kesimpulan
 

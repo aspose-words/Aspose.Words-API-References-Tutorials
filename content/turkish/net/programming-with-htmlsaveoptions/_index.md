@@ -16,12 +16,12 @@ Web'de görüntülemek için Word belgelerini HTML'ye dönüştürmek, Word belg
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Gidiş Dönüş Bilgilerini Dışa Aktar](./export-roundtrip-information/) | Aspose.Words for .NET ile bir belgeyi HTML olarak kaydederken gidiş dönüş bilgilerini dışa aktarmak için adım adım kılavuz. |
-| [Yazı Tiplerini Base 64 Olarak Dışa Aktar](./export-fonts-as-base-64/) | Aspose.Words for .NET ile bir belgeyi kaydederken temel 64 yazı tipini dışa aktarmak için adım adım kılavuz. |
-| [Kaynakları Dışa Aktar](./export-resources/) | Aspose.Words for .NET ile HTML olarak kaydederken belge kaynaklarını dışa aktarmak için adım adım kılavuz. |
+| [Gidiş Dönüş Bilgilerini Dışa Aktar](./export-roundtrip-information/) | Aspose.Words for .NET'i kullanarak gidiş dönüş bilgilerini nasıl dışa aktaracağınızı öğrenin. Dönüşümler sırasında belgenizin bütünlüğünü ve biçimlendirmesini koruyun. |
+| [Yazı Tiplerini Base 64 Olarak Dışa Aktar](./export-fonts-as-base-64/) | Bu ayrıntılı eğitimde Aspose.Words for .NET kullanarak yazı tiplerini Base64 olarak nasıl dışa aktaracağınızı öğrenin. Yazı tiplerinin HTML dosyalarına gömüldüğünden ve doğru şekilde görüntülendiğinden emin olun. |
+| [Kaynakları Dışa Aktar](./export-resources/) | Aspose.Words for .NET kullanarak Word belgelerini HTML olarak kaydederken CSS ve yazı tipleri gibi kaynakları nasıl dışa aktaracağınızı öğrenin. Adım adım kılavuzumuzu takip edin. |
 | [Meta Dosyalarını Emf veya Wmf'ye Dönüştürme](./convert-metafiles-to-emf-or-wmf/) | Aspose.Words for .NET ile bir belgeyi HTML'ye dönüştürürken meta dosyalarını EMF veya WMF formatlarına dönüştürmek için adım adım kılavuz. |
-| [Meta Dosyalarını Svg'ye Dönüştür](./convert-metafiles-to-svg/) | Aspose.Words for .NET ile bir belgeyi HTML'ye dönüştürürken meta dosyalarını SVG formatına dönüştürmek için adım adım kılavuz. |
-| [Css Sınıf Adı Öneki Ekle](./add-css-class-name-prefix/) | Aspose.Words for .NET ile bir belgeyi HTML'ye dönüştürürken CSS sınıfı adı öneki eklemek için adım adım kılavuz. |
-| [Mhtml Kaynakları İçin Cid URL'lerini Dışa Aktarma](./export-cid-urls-for-mhtml-resources/) | Aspose.Words for .NET ile bir belgeyi kaydederken MHTML kaynaklarının CID URL'lerini dışa aktarmak için adım adım kılavuz. |
-| [Yazı Tipi Adlarını Çözümle](./resolve-font-names/) | Aspose.Words for .NET ile HTML'ye dönüştürürken eksik font adlarını çözmek için adım adım kılavuz. |
-| [Metin Giriş Formu Alanını Metin Olarak Dışa Aktar](./export-text-input-form-field-as-text/) | Aspose.Words for .NET ile metin girişi form alanlarını düz metin olarak dışa aktarmak için adım adım kılavuz. |
+| [Meta Dosyalarını Svg'ye Dönüştür](./convert-metafiles-to-svg/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET'i kullanarak meta dosyalarını Word belgelerinde SVG'ye dönüştürün. Her seviyedeki geliştiriciler için mükemmeldir. |
+| [Css Sınıf Adı Öneki Ekle](./add-css-class-name-prefix/) | Aspose.Words for .NET kullanarak Word belgelerini HTML olarak kaydederken CSS sınıfı adı önekini nasıl ekleyeceğinizi öğrenin. Adım adım kılavuz, kod parçacıkları ve SSS'ler dahildir. |
+| [Mhtml Kaynakları İçin Cid URL'lerini Dışa Aktarma](./export-cid-urls-for-mhtml-resources/) | Bu adım adım eğitimde Aspose.Words for .NET kullanarak MHTML kaynakları için Cid URL'lerini nasıl dışa aktaracağınızı öğrenin. Her seviyedeki geliştiriciler için mükemmeldir. |
+| [Yazı Tipi Adlarını Çözümle](./resolve-font-names/) | Aspose.Words for .NET kullanarak HTML'ye dönüştürürken Word belgelerindeki yazı tipi adlarını nasıl çözümleyeceğinizi öğrenin. Ayrıntılı açıklamalarla adım adım kılavuz. |
+| [Metin Giriş Formu Alanını Metin Olarak Dışa Aktar](./export-text-input-form-field-as-text/) | Bu kapsamlı, adım adım kılavuzla Aspose.Words for .NET kullanarak metin girişi form alanlarını düz metin olarak nasıl dışa aktaracağınızı öğrenin. |

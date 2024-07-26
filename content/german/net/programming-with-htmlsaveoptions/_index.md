@@ -16,12 +16,12 @@ Egal, ob Sie Word-Dokumente zur Anzeige im Web in HTML konvertieren, HTML-Inhalt
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Informationen zum Exportieren von Roundtrips](./export-roundtrip-information/) | Schritt-für-Schritt-Anleitung zum Exportieren von Roundtrip-Informationen beim Speichern eines Dokuments als HTML mit Aspose.Words für .NET. |
-| [Schriftarten als Base 64 exportieren](./export-fonts-as-base-64/) | Schritt-für-Schritt-Anleitung zum Exportieren von Base64-Schriftarten beim Speichern eines Dokuments mit Aspose.Words für .NET. |
-| [Ressourcen exportieren](./export-resources/) | Schritt-für-Schritt-Anleitung zum Exportieren von Dokumentressourcen beim Speichern als HTML mit Aspose.Words für .NET. |
+| [Informationen zum Exportieren von Roundtrips](./export-roundtrip-information/) | Erfahren Sie, wie Sie Roundtrip-Informationen mit Aspose.Words für .NET exportieren. Bewahren Sie die Integrität und Formatierung Ihres Dokuments während der Konvertierung. |
+| [Schriftarten als Base 64 exportieren](./export-fonts-as-base-64/) | Erfahren Sie in diesem ausführlichen Tutorial, wie Sie Schriftarten mit Aspose.Words für .NET als Base64 exportieren. Stellen Sie sicher, dass Schriftarten in HTML-Dateien eingebettet und korrekt angezeigt werden. |
+| [Ressourcen exportieren](./export-resources/) | Erfahren Sie, wie Sie Ressourcen wie CSS und Schriftarten exportieren, während Sie Word-Dokumente mit Aspose.Words für .NET als HTML speichern. Folgen Sie unserer Schritt-für-Schritt-Anleitung. |
 | [Metadateien in EMF oder WMF konvertieren](./convert-metafiles-to-emf-or-wmf/) | Schritt-für-Schritt-Anleitung zum Konvertieren von Metadateien in die Formate EMF oder WMF bei der Konvertierung eines Dokuments in HTML mit Aspose.Words für .NET. |
-| [Metadateien in SVG konvertieren](./convert-metafiles-to-svg/) | Schritt-für-Schritt-Anleitung zum Konvertieren von Metadateien in das SVG-Format beim Konvertieren eines Dokuments in HTML mit Aspose.Words für .NET. |
-| [Präfix für CSS-Klassennamen hinzufügen](./add-css-class-name-prefix/) | Schritt-für-Schritt-Anleitung zum Hinzufügen eines CSS-Klassennamenpräfixes beim Konvertieren eines Dokuments in HTML mit Aspose.Words für .NET. |
-| [CID-URLs für MHTML-Ressourcen exportieren](./export-cid-urls-for-mhtml-resources/) | Schritt-für-Schritt-Anleitung zum Exportieren von CID-URLs von MHTML-Ressourcen beim Speichern eines Dokuments mit Aspose.Words für .NET. |
-| [Schriftnamen auflösen](./resolve-font-names/) | Schritt-für-Schritt-Anleitung zum Beheben fehlender Schriftnamen bei der Konvertierung in HTML mit Aspose.Words für .NET. |
-| [Texteingabe-Formularfeld als Text exportieren](./export-text-input-form-field-as-text/) | Schritt-für-Schritt-Anleitung zum Exportieren von Text-Eingabeformularfeldern als Klartext mit Aspose.Words für .NET. |
+| [Metadateien in SVG konvertieren](./convert-metafiles-to-svg/) | Konvertieren Sie Metadateien in Word-Dokumenten mit Aspose.Words für .NET in SVG mit dieser detaillierten Schritt-für-Schritt-Anleitung. Perfekt für Entwickler aller Niveaus. |
+| [Präfix für CSS-Klassennamen hinzufügen](./add-css-class-name-prefix/) | Erfahren Sie, wie Sie beim Speichern von Word-Dokumenten als HTML mit Aspose.Words für .NET ein CSS-Klassennamenpräfix hinzufügen. Schritt-für-Schritt-Anleitung, Codeausschnitte und FAQs enthalten. |
+| [CID-URLs für MHTML-Ressourcen exportieren](./export-cid-urls-for-mhtml-resources/) | Erfahren Sie in diesem Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET Cid-URLs für MHTML-Ressourcen exportieren. Perfekt für Entwickler aller Niveaus. |
+| [Schriftnamen auflösen](./resolve-font-names/) | Erfahren Sie, wie Sie Schriftnamen in Word-Dokumenten auflösen, wenn Sie sie mit Aspose.Words für .NET in HTML konvertieren. Schritt-für-Schritt-Anleitung mit ausführlichen Erklärungen. |
+| [Texteingabe-Formularfeld als Text exportieren](./export-text-input-form-field-as-text/) | Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Text-Eingabeformularfelder als einfachen Text exportieren. |

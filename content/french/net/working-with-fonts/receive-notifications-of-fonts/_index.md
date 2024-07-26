@@ -95,7 +95,7 @@ Enfin, enregistrez le document après avoir appliqué les paramètres de police 
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ```
 
-En suivant ces étapes, vous avez configuré votre application pour gérer les substitutions de polices avec élégance et recevoir des notifications chaque fois qu'une substitution se produit.
+En suivant ces étapes, vous avez configuré votre application pour gérer correctement les substitutions de polices et recevoir des notifications chaque fois qu'une substitution se produit.
 
 ## Conclusion
 

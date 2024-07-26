@@ -21,7 +21,7 @@ Per iniziare a costruire la tabella formattata, dobbiamo creare un nuovo documen
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Creare il documento e inizializzare il generatore di documenti
+//Creare il documento e inizializzare il generatore di documenti
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

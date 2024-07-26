@@ -115,7 +115,7 @@ Auf jeden Fall! Aspose.Words bietet Methoden zum Einfügen von Lesezeichen an be
 
 ### Wie kann ich sicherstellen, dass mein Code nicht vorhandene Lesezeichen ordnungsgemäß verarbeitet?
 
- Wie bereits erwähnt, löst der Zugriff auf ein nicht vorhandenes Lesezeichen eine Ausnahme aus. Sie können Ausnahmebehandlungsmechanismen implementieren (wie z. B.`try-catch` Block), um solche Szenarien elegant zu handhaben.
+ Wie bereits erwähnt, wird beim Zugriff auf ein nicht vorhandenes Lesezeichen eine Ausnahme ausgelöst. Sie können Ausnahmebehandlungsmechanismen implementieren (wie z. B.`try-catch` Block), um solche Szenarien elegant zu handhaben.
 
 ### Kann ich Lesezeichen nach der Aktualisierung löschen?
 

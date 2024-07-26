@@ -114,7 +114,7 @@ A Word dokumentumok oldalelrendezésének frissítése az Aspose.Words for .NET 
 Az Aspose.Words for .NET egy Word-dokumentumok programozott létrehozására, módosítására és konvertálására szolgáló könyvtár.
 
 ### Szükségem van licencre az Aspose.Words for .NET használatához?  
- Igen, kereskedelmi használatra engedélyre van szüksége. Kaphat engedélyt[itt](https://purchase.aspose.com/buy) vagy jelentkezzen a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
+ Igen, kereskedelmi használatra engedélyre van szükség. Kaphat engedélyt[itt](https://purchase.aspose.com/buy) vagy jelentkezzen a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).
 
 ### Hogyan kezdhetem el az Aspose.Words for .NET használatát?  
  Kezdheti a könyvtár letöltésével a[Aspose honlapja](https://releases.aspose.com/words/net/), majd importálja a szükséges névtereket a C# projektbe.

@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-In deze stap maken we een nieuw`Document` object en een bijbehorende`DocumentBuilder` voorwerp.
+ In deze stap maken we een nieuw`Document` object en een bijbehorende`DocumentBuilder` voorwerp.
 
 ## Stap 3: De aangepaste stijl maken en configureren
 
@@ -49,7 +49,7 @@ In deze stap stellen we de alineastijl in op "Kop 1", schrijven we wat tekst met
 
 In deze laatste stap kunt u het aangemaakte document naar wens opslaan.
 
-kunt de broncode uitvoeren om een stijlscheidingsteken in een document in te voegen. Hiermee kunt u tekstgedeelten met verschillende stijlen maken en het uiterlijk van uw document aanpassen.
+U kunt de broncode uitvoeren om een stijlscheidingsteken in een document in te voegen. Hiermee kunt u tekstgedeelten met verschillende stijlen maken en het uiterlijk van uw document aanpassen.
 
 ### Voorbeeldbroncode voor Insert Style Separator met Aspose.Words voor .NET 
 
@@ -98,7 +98,7 @@ Om de omgeving in te stellen, moet u ervoor zorgen dat Aspose.Words voor .NET in
 
 #### Hoe maak en configureer ik een aangepaste stijl?
 
- Om een aangepaste stijl te maken, kunt u de`Styles.Add` werkwijze van de`Document` voorwerp. Geef het stijltype op (bijv.`StyleType.Paragraph`) en geef een naam op voor de stijl. Eenmaal gemaakt, kunt u de lettertype-eigenschappen van het stijlobject wijzigen om het uiterlijk ervan te configureren.
+ Om een aangepaste stijl te maken, kunt u de`Styles.Add` werkwijze van de`Document` voorwerp. Geef het stijltype op (bijv.`StyleType.Paragraph`en geef een naam op voor de stijl. Eenmaal gemaakt, kunt u de lettertype-eigenschappen van het stijlobject wijzigen om het uiterlijk ervan te configureren.
 
 #### Hoe voeg ik een stijlscheidingsteken in?
 
@@ -106,7 +106,7 @@ Om de omgeving in te stellen, moet u ervoor zorgen dat Aspose.Words voor .NET in
 
 #### Hoe kan ik verschillende stijlen toepassen op verschillende tekstgedeelten?
 
- kunt verschillende stijlen toepassen op verschillende tekstgedeelten door de`ParagraphFormat.StyleName` eigendom van de`DocumentBuilder` voorwerp. Voordat u de tekst schrijft, kunt u de stijlnaam instellen op de gewenste stijl, waarna de tekst die daarop volgt dienovereenkomstig wordt opgemaakt.
+ U kunt verschillende stijlen toepassen op verschillende tekstgedeelten door de`ParagraphFormat.StyleName` eigendom van de`DocumentBuilder` voorwerp. Voordat u de tekst schrijft, kunt u de stijlnaam instellen op de gewenste stijl, waarna de tekst die daarop volgt dienovereenkomstig wordt opgemaakt.
 
 #### Kan ik het document in verschillende formaten opslaan?
 

@@ -21,7 +21,7 @@ url: /ko/net/programming-with-tables/create-simple-table/
 // 문서 디렉토리 경로
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// 문서 생성 및 문서 생성기 초기화
+//문서 생성 및 문서 생성기 초기화
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//첫 번째 줄을 끝내고 새 줄을 시작하려면 다음 메서드를 호출하세요.
+// 첫 번째 줄을 끝내고 새 줄을 시작하려면 다음 메서드를 호출하세요.
 builder. EndRow();
 
 // 두 번째 행의 첫 번째 셀 구성
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//테이블 구축이 완료되었음을 알리는 신호입니다.
+	// 테이블 구축이 완료되었음을 알리는 신호입니다.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

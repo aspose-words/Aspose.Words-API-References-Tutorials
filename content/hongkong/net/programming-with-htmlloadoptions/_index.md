@@ -12,4 +12,4 @@ url: /zh-hant/net/programming-with-htmlloadoptions/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [Word 文件中的首選控制項類型](./preferred-control-type/) | 使用 Aspose.Words for .NET 載入 HTML 文件時在 Word 文件中指定首選控制項類型的逐步指南。 |
+| [Word 文件中的首選控制項類型](./preferred-control-type/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中插入組合方塊表單欄位。請按照此逐步指南進行無縫 HTML 內容整合。 |

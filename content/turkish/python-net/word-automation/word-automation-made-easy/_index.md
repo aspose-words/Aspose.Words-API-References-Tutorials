@@ -154,7 +154,7 @@ Cevap6: Evet, Aspose.Words for Python'u kullanarak Word belgelerine kolayca gör
 ### Aspose.Words'ü kullanarak Word belgelerini farklı dosya formatlarına aktarabilir miyim?
 Kesinlikle! Aspose.Words, dışa aktarma için PDF, DOCX, RTF, HTML ve daha fazlası dahil olmak üzere çeşitli dosya formatlarını destekleyerek farklı ihtiyaçlar için esneklik sağlar.
 
-### Aspose.Words adres-mektup birleştirme işlemlerini otomatikleştirmek için uygun mudur?
+### Aspose.Words adres-mektup birleştirme işlemlerini otomatikleştirmek için uygun mu?
 Evet, Aspose.Words adres-mektup birleştirme işlevini etkinleştirerek çeşitli kaynaklardan gelen verileri Word şablonlarında birleştirmenize olanak tanır ve kişiselleştirilmiş belgeler oluşturma sürecini basitleştirir.
 
 ### Aspose.Words belge şifreleme için herhangi bir güvenlik özelliği sunuyor mu?

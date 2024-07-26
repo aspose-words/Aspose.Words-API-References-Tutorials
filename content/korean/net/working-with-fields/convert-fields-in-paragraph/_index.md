@@ -21,7 +21,7 @@ url: /ko/net/working-with-fields/convert-fields-in-paragraph/
 필드를 변환하려면 먼저 변환할 필드가 포함된 문서를 로드해야 합니다. 문서가 포함된 디렉터리의 올바른 경로를 지정해야 합니다. 문서를 업로드하는 방법은 다음과 같습니다.
 
 ```csharp
-//문서 디렉터리의 경로입니다.
+// 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // 문서를 로드합니다.
@@ -56,7 +56,7 @@ doc.Save(dataDir + "WorkingWithFields.TestFile.docx");
 ### .NET용 Aspose.Words를 사용하여 단락의 필드 변환에 대한 소스 코드 예
 
 ```csharp
-//문서 디렉터리의 경로입니다.
+// 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // 문서를 로드합니다.

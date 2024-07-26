@@ -16,7 +16,7 @@ url: /zh-hant/net/enable-opentype-features/open-type-features/
 在我們開始之前，請確保您具備以下條件：
 
 1.  Aspose.Words for .NET：您可以下載它[這裡](https://releases.aspose.com/words/net/).
-2. .NET Framework：請確保您安裝了相容版本的 .NET Framework。
+2. .NET Framework：確保您安裝了相容版本的 .NET Framework。
 3. Visual Studio：用於編碼的整合開發環境 (IDE)。
 4. C# 基礎知識：本教學假設您對 C# 程式設計有基本了解。
 
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithHarfBuzz.OpenTypeFeatures.pdf");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功啟用 OpenType 功能。透過執行這些步驟，您可以解鎖高級排版功能，確保您的文件看起來專業且精美。
+現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功啟用 OpenType 功能。透過執行這些步驟，您可以解鎖高級排版功能，確保您的文件看起來專業且精美。
 
 但不要停在這裡！探索 Aspose.Words 的更多功能並了解如何進一步增強您的文件。請記住，熟能生巧，所以要不斷嘗試和學習。
 

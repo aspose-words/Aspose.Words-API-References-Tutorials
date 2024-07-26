@@ -9,7 +9,7 @@ url: /de/net/programming-with-document-properties/add-custom-document-properties
 ---
 ## Einführung
 
-Hallo! Tauchen Sie in die Welt von Aspose.Words für .NET ein und fragen sich, wie Sie Ihren Word-Dateien benutzerdefinierte Dokumenteigenschaften hinzufügen können? Dann sind Sie hier genau richtig! Benutzerdefinierte Eigenschaften können unglaublich nützlich sein, um zusätzliche Metadaten zu speichern, die nicht von integrierten Eigenschaften abgedeckt werden. Ob es um die Autorisierung eines Dokuments, das Hinzufügen einer Revisionsnummer oder sogar das Einfügen bestimmter Daten geht, mit benutzerdefinierten Eigenschaften sind Sie bestens bedient. In diesem Tutorial führen wir Sie durch die Schritte zum nahtlosen Hinzufügen dieser Eigenschaften mit Aspose.Words für .NET. Bereit, loszulegen? Tauchen wir ein!
+Hallo! Tauchen Sie in die Welt von Aspose.Words für .NET ein und fragen sich, wie Sie Ihren Word-Dateien benutzerdefinierte Dokumenteigenschaften hinzufügen können? Dann sind Sie hier genau richtig! Benutzerdefinierte Eigenschaften können unglaublich nützlich sein, um zusätzliche Metadaten zu speichern, die nicht von integrierten Eigenschaften abgedeckt werden. Ob es um die Autorisierung eines Dokuments, das Hinzufügen einer Revisionsnummer oder sogar das Einfügen bestimmter Daten geht, mit benutzerdefinierten Eigenschaften sind Sie bestens bedient. In diesem Tutorial führen wir Sie durch die Schritte zum nahtlosen Hinzufügen dieser Eigenschaften mit Aspose.Words für .NET. Bereit, loszulegen? Lassen Sie uns eintauchen!
 
 ## Voraussetzungen
 
@@ -53,7 +53,7 @@ Auf diese Weise erhalten wir einen Überblick über die Sammlung benutzerdefinie
 
 ## Schritt 3: Auf vorhandene Eigenschaften prüfen
 
-Bevor Sie neue Eigenschaften hinzufügen, sollten Sie prüfen, ob eine bestimmte Eigenschaft bereits vorhanden ist. Dadurch werden unnötige Duplikate vermieden.
+Bevor Sie neue Eigenschaften hinzufügen, sollten Sie prüfen, ob eine bestimmte Eigenschaft bereits vorhanden ist. Dadurch vermeiden Sie unnötige Duplikate.
 
 ```csharp
 if (customDocumentProperties["Authorized"] != null) return;

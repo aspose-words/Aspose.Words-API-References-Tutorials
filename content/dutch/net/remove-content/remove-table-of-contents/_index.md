@@ -41,7 +41,7 @@ Voordat we uw document kunnen manipuleren, moeten we definiëren waar het zich b
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het pad naar uw documentmap. Dit is waar uw Word-bestand zich bevindt.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"`met het pad naar uw documentmap. Dit is waar uw Word-bestand zich bevindt.
 
 ## Stap 2: Laad het document
 

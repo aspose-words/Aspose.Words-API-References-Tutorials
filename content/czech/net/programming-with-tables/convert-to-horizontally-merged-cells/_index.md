@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
 
-V tomto tutoriálu se naučíme, jak používat Aspose.Words pro .NET k převodu buněk tabulky na horizontálně sloučené buňky v dokumentu aplikace Word. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci programově manipulovat s buňkami tabulky v dokumentech aplikace Word.
+tomto tutoriálu se naučíme, jak používat Aspose.Words pro .NET k převodu buněk tabulky na horizontálně sloučené buňky v dokumentu aplikace Word. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci programově manipulovat s buňkami tabulky v dokumentech aplikace Word.
 
 ## Krok 1: Nastavení projektu
 1. Spusťte Visual Studio a vytvořte nový projekt C#.
@@ -53,4 +53,4 @@ table. ConvertToHorizontallyMergedCells();
 ```
 
 ## Závěr
-V tomto tutoriálu jsme se naučili, jak převést buňky tabulky na horizontálně sloučené buňky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete programově manipulovat s buňkami tabulky v dokumentech aplikace Word. Tato funkce vám umožňuje spravovat a organizovat data flexibilním a personalizovaným způsobem v tabulce.
+tomto tutoriálu jsme se naučili, jak převést buňky tabulky na horizontálně sloučené buňky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete programově manipulovat s buňkami tabulky v dokumentech aplikace Word. Tato funkce vám umožňuje spravovat a organizovat data flexibilním a personalizovaným způsobem v tabulce.

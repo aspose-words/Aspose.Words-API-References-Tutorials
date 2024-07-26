@@ -9,7 +9,7 @@ url: /id/net/add-content-using-documentbuilder/move-to-section/
 ---
 ## Perkenalan
 
-Di dunia digital saat ini, otomatisasi adalah kunci untuk meningkatkan produktivitas. Aspose.Words untuk .NET adalah perpustakaan tangguh yang memungkinkan pengembang memanipulasi dokumen Word secara terprogram. Salah satu tugas umum adalah berpindah ke bagian berbeda dalam dokumen untuk menambah atau mengubah konten. Dalam tutorial ini, kita akan mempelajari cara berpindah ke bagian tertentu dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan menguraikan prosesnya langkah demi langkah untuk memastikan Anda dapat mengikutinya dengan mudah.
+Di dunia digital saat ini, otomatisasi adalah kunci untuk meningkatkan produktivitas. Aspose.Words untuk .NET adalah perpustakaan tangguh yang memungkinkan pengembang memanipulasi dokumen Word secara terprogram. Salah satu tugas umum adalah berpindah ke bagian berbeda dalam dokumen untuk menambah atau mengubah konten. Dalam tutorial ini, kita akan mempelajari cara berpindah ke bagian tertentu dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan menguraikan prosesnya selangkah demi selangkah untuk memastikan Anda dapat mengikutinya dengan mudah.
 
 ## Prasyarat
 

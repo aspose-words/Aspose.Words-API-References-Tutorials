@@ -9,7 +9,7 @@ url: /fr/net/find-and-replace-text/replace-with-regex/
 ---
 ## Introduction
 
-Salut! Vous est-il déjà arrivé de devoir remplacer du texte dans un document Word, mais vous avez besoin d'un peu plus de puissance qu'une simple recherche et remplacement ? Peut-être avez-vous besoin de quelque chose qui puisse gérer les modèles et les caractères génériques ? Eh bien, vous avez de la chance ! Aspose.Words for .NET vous propose sa fonctionnalité de recherche et de remplacement basée sur les expressions régulières. Dans ce didacticiel, nous allons expliquer comment utiliser les expressions régulières pour remplacer du texte dans vos documents Word à l'aide d'Aspose.Words pour .NET. Nous allons tout détailler étape par étape, donc même si vous débutez avec les regex ou Aspose.Words, vous pourrez suivre et vous mettre au courant en un rien de temps.
+Salut! Vous est-il déjà arrivé de devoir remplacer du texte dans un document Word, mais vous avez besoin d'un peu plus de puissance qu'une simple recherche et remplacement ? Peut-être avez-vous besoin de quelque chose qui puisse gérer les modèles et les caractères génériques ? Eh bien, vous avez de la chance ! Aspose.Words for .NET vous propose sa fonctionnalité de recherche et de remplacement basée sur les expressions régulières. Dans ce didacticiel, nous allons expliquer comment utiliser les expressions régulières pour remplacer du texte dans vos documents Word à l'aide d'Aspose.Words pour .NET. Nous allons tout détailler étape par étape, donc même si vous débutez avec les regex ou Aspose.Words, vous pourrez suivre et vous mettre au courant en un rien de temps.
 
 ## Conditions préalables
 

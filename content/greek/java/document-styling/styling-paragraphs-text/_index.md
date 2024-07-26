@@ -158,7 +158,7 @@ Paragraph para = new Paragraph(doc);
 // Ορίστε τη στοίχιση παραγράφου
 para.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 
-// Προσθέστε κείμενο με κενά
+// Προσθήκη κειμένου με κενά
 Run run = new Run(doc, "Right-aligned text with spacing.");
 para.appendChild(run);
 

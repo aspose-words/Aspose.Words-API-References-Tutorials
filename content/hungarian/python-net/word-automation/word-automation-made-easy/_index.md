@@ -110,9 +110,9 @@ Miután befejeztük a munkát a dokumentummal, különböző formátumokba menth
 doc.save("output.docx", aw.SaveFormat.DOCX)
 ```
 
-## Speciális Word-automatizálási szolgáltatások
+## Speciális Word automatizálási szolgáltatások
 
-Az Aspose.Words olyan fejlett funkciókat kínál, mint a körlevél, a dokumentumtitkosítás, valamint a könyvjelzők, hivatkozások és megjegyzések kezelése.
+Az Aspose.Words olyan fejlett funkciókat kínál, mint a körlevél, a dokumentumtitkosítás, valamint a könyvjelzők, hiperhivatkozások és megjegyzések kezelése.
 
 ## Dokumentumfeldolgozás automatizálása
 
@@ -161,7 +161,7 @@ Igen, az Aspose.Words lehetővé teszi a körlevél funkciót, lehetővé téve 
 Igen, az Aspose.Words titkosítási és jelszavas védelmi funkciókat kínál a Word-dokumentumok érzékeny tartalmának védelme érdekében.
 
 ### Használható-e az Aspose.Word szöveg kinyerésére Word dokumentumokból?
-Teljesen! Az Aspose.Words lehetővé teszi szövegek kinyerését a Word dokumentumokból, így hasznos lehet adatfeldolgozáshoz és elemzéshez.
+Teljesen! Az Aspose.Words lehetővé teszi szövegek kinyerését Word-dokumentumokból, ami hasznossá teszi az adatfeldolgozáshoz és -elemzéshez.
 
 ### Az Aspose.Words támogatja a felhő alapú dokumentumkezelést?
 Igen, az Aspose.Words zökkenőmentesen integrálható felhőplatformokkal, így kiváló választás a felhőalapú alkalmazásokhoz.

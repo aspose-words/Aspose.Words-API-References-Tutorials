@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- W tym ostatnim kroku zapisujemy powstały dokument w formacie .docx za pomocą`Save` metodę i przekazanie ścieżki do pliku wyjściowego.
+ tym ostatnim kroku zapisujemy powstały dokument w formacie .docx za pomocą`Save` metodę i przekazanie ścieżki do pliku wyjściowego.
 
 Teraz możesz uruchomić kod źródłowy, aby załadować dokument tekstowy i określić kierunek tekstu. Powstały dokument zostanie zapisany w określonym katalogu pod nazwą „WorkingWithTxtLoadOptions.DocumentTextDirection.docx”.
 
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## Wniosek
 
-W tym samouczku omówiliśmy funkcję kierunku tekstu dokumentu w Aspose.Words dla .NET. Dowiedzieliśmy się, jak określić kierunek tekstu w dokumencie, zwłaszcza w przypadku języków pisanych od prawej do lewej, takich jak hebrajski czy arabski.
+W tym samouczku omówiliśmy funkcję kierunku tekstu dokumentu w Aspose.Words dla .NET. Dowiedzieliśmy się, jak określić kierunek tekstu w dokumencie, szczególnie w przypadku języków pisanych od prawej do lewej, takich jak hebrajski czy arabski.
 
 Ta funkcja jest niezbędna, aby zapewnić prawidłowe wyświetlanie tekstu w dokumentach wielojęzycznych. Korzystając z odpowiednich opcji ładowania, Aspose.Words może automatycznie wykryć kierunek tekstu i zastosować go do dokumentu.
 

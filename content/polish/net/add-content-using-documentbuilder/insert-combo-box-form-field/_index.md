@@ -17,7 +17,7 @@ Zanim przejdziemy do najdrobniejszych szczegółów, upewnijmy się, że masz ws
 
 1.  Aspose.Words dla .NET: Przede wszystkim potrzebujesz biblioteki Aspose.Words dla .NET. Jeśli jeszcze go nie pobrałeś, możesz pobrać go z[Strona z plikami do pobrania Aspose](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Upewnij się, że masz skonfigurowane środowisko programistyczne w programie Visual Studio lub dowolnym innym środowisku IDE obsługującym platformę .NET.
-3. Podstawowa znajomość języka C#: Chociaż ten samouczek jest przyjazny dla początkujących, podstawowa znajomość języka C# sprawi, że będzie działać płynniej.
+3. Podstawowa znajomość języka C#: Chociaż ten samouczek jest przyjazny dla początkujących, podstawowa znajomość języka C# sprawi, że wszystko będzie płynniejsze.
 4.  Licencja tymczasowa (opcjonalna): Jeśli chcesz korzystać z pełnych funkcji bez ograniczeń, możesz chcieć uzyskać licencję[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
 
 Po spełnieniu tych warunków wstępnych możesz wyruszyć w tę ekscytującą podróż!

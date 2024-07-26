@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Belgeyi Yükleyin ve İçerik Denetimini Alın
- Word belgesini kullanarak yükleyin`Document` yapıcı, belgenin yolunu parametre olarak iletir. İstediğiniz içerik kontrolünü belgeden alın. Bu örnekte içerik denetiminin belgedeki ilk yapılandırılmış belge etiketi olduğunu varsayıyoruz.
+ Word belgesini kullanarak yükleyin`Document`yapıcı, belgenin yolunu parametre olarak iletir. İstediğiniz içerik kontrolünü belgeden alın. Bu örnekte içerik denetiminin belgedeki ilk yapılandırılmış belge etiketi olduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -40,7 +40,7 @@ sdt.Style = style;
 ```
 
 ## Adım 4: Belgeyi Kaydedin
- Değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydedin:`Save`yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.SetContentControlStyle.docx" olarak kaydediyoruz.
+ Değiştirilen belgeyi aşağıdaki komutu kullanarak belirtilen dizine kaydedin:`Save` yöntem. İstediğiniz dosya adını uygun dosya uzantısıyla sağlayın. Bu örnekte belgeyi "WorkingWithSdt.SetContentControlStyle.docx" olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");

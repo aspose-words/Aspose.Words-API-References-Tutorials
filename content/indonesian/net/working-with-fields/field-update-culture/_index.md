@@ -58,7 +58,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Masukkan bidang waktu.
+// Masukkan kolom waktu.
 builder. InsertField(FieldType.FieldTime, true);
 
 // Konfigurasikan budaya pembaruan lapangan.

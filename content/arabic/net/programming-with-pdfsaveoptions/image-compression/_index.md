@@ -2,126 +2,157 @@
 title: ضغط الصور في وثيقة PDF
 linktitle: ضغط الصور في وثيقة PDF
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لضغط الصور في مستند PDF باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية ضغط الصور في مستندات PDF باستخدام Aspose.Words for .NET. اتبع هذا الدليل لتحسين حجم الملف وجودته.
 type: docs
 weight: 10
 url: /ar/net/programming-with-pdfsaveoptions/image-compression/
 ---
+## مقدمة
 
-توفر هذه المقالة دليلاً خطوة بخطوة حول كيفية استخدام ميزة ضغط الصور في مستند PDF مع Aspose.Words for .NET. وسنشرح كل جزء من الكود بالتفصيل. في نهاية هذا البرنامج التعليمي، ستكون قادرًا على فهم كيفية ضغط الصور في مستند وإنشاء ملف PDF باستخدام ضغط الصور المناسب.
+في العصر الرقمي الحالي، تعد إدارة حجم المستند أمرًا بالغ الأهمية لكل من الأداء وكفاءة التخزين. سواء كنت تتعامل مع تقارير كبيرة أو عروض تقديمية معقدة، فإن تقليل حجم الملف دون التضحية بالجودة يعد أمرًا ضروريًا. يعد ضغط الصور في مستندات PDF تقنية أساسية لتحقيق هذا الهدف. إذا كنت تعمل مع Aspose.Words لـ .NET، فأنت محظوظ! سيرشدك هذا البرنامج التعليمي خلال عملية ضغط الصور في مستندات PDF باستخدام Aspose.Words for .NET. سنستكشف خيارات الضغط المختلفة وكيفية تطبيقها بفعالية لضمان تحسين ملفات PDF الخاصة بك من حيث الجودة والحجم.
 
-قبل البدء، تأكد من تثبيت وتكوين مكتبة Aspose.Words for .NET في مشروعك. يمكنك العثور على المكتبة وتعليمات التثبيت على موقع Aspose.
+## المتطلبات الأساسية
 
-## الخطوة 1: تحديد دليل المستند
+قبل الغوص في البرنامج التعليمي، تأكد من توفر المتطلبات الأساسية التالية:
 
- للبدء، تحتاج إلى تحديد المسار إلى الدليل الذي توجد به مستنداتك. يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى دليل المستندات الخاص بك.
+1.  Aspose.Words لـ .NET: أنت بحاجة إلى تثبيت Aspose.Words لـ .NET. يمكنك تنزيله من[موقع أسبوز](https://releases.aspose.com/words/net/).
+
+2. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# سيساعدك على فهم أمثلة التعليمات البرمجية المتوفرة في هذا البرنامج التعليمي.
+
+3. بيئة التطوير: تأكد من إعداد بيئة تطوير .NET، مثل Visual Studio.
+
+4. نموذج مستند: احصل على نموذج مستند Word (على سبيل المثال، "Rendering.docx") جاهز لاختبار ضغط الصور.
+
+5. ترخيص Aspose: إذا كنت تستخدم إصدارًا مرخصًا من Aspose.Words لـ .NET، فتأكد من تكوين الترخيص بشكل صحيح. إذا كنت بحاجة إلى ترخيص مؤقت، يمكنك الحصول عليه من[صفحة الترخيص المؤقت لـ Aspose](https://purchase.aspose.com/temporary-license/).
+
+## استيراد مساحات الأسماء
+
+للبدء في ضغط الصور في مستندات PDF باستخدام Aspose.Words لـ .NET، تحتاج إلى استيراد مساحات الأسماء الضرورية. إليك كيفية القيام بذلك:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+توفر مساحات الأسماء هذه إمكانية الوصول إلى الوظائف الأساسية اللازمة لمعالجة مستندات Word وحفظها كملفات PDF مع خيارات متنوعة.
+
+## الخطوة 1: قم بإعداد دليل المستندات الخاص بك
+
+قبل البدء في البرمجة، حدد المسار إلى دليل المستندات الخاص بك. سيساعدك هذا على تحديد موقع ملفاتك وحفظها بسهولة.
+
+```csharp
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## الخطوة 2: تحميل الوثيقة
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار حيث تم تخزين مستند العينة الخاص بك.
 
-بعد ذلك، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال، نفترض أن المستند يسمى "Rendering.docx" ويقع في دليل المستندات المحدد.
+## الخطوة 2: قم بتحميل مستند Word
+
+ بعد ذلك، قم بتحميل مستند Word الخاص بك إلى ملف`Aspose.Words.Document` هدف. سيسمح لك هذا بالعمل مع المستند برمجياً.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## الخطوة 3: تكوين خيارات الحفظ بتنسيق PDF مع ضغط الصور
+ هنا،`"Rendering.docx"` هو اسم مستند Word النموذجي. تأكد من وجود هذا الملف في الدليل المحدد.
 
- لضغط الصور عند التحويل إلى PDF، نحتاج إلى تكوين ملف`PdfSaveOptions` هدف. يمكننا ضبط نوع ضغط الصورة وجودة JPEG وخيارات التوافق الأخرى مع PDF إذا لزم الأمر.
+## الخطوة 3: تكوين ضغط الصور الأساسي
+
+ إنشاء`PdfSaveOptions`الكائن لتكوين خيارات حفظ PDF، بما في ذلك ضغط الصور. تعيين`ImageCompression`الملكية ل`PdfImageCompression.Jpeg` لاستخدام ضغط JPEG للصور.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-ImageCompression = PdfImageCompression.Jpeg,
-PreserveFormFields = true
+	// ضغط الصور باستخدام JPEG
+    ImageCompression = PdfImageCompression.Jpeg,
+	// اختياري: احتفظ بحقول النموذج في ملف PDF
+    PreserveFormFields = true
 };
 ```
 
-## الخطوة 4: احفظ المستند بصيغة PDF مع ضغط الصور
+## الخطوة 4: احفظ المستند بالضغط الأساسي
 
-أخيرًا، يمكننا حفظ المستند بتنسيق PDF باستخدام خيارات الحفظ التي تم تكوينها مسبقًا.
+احفظ مستند Word كملف PDF باستخدام خيارات ضغط الصور التي تم تكوينها. سيؤدي هذا إلى تطبيق ضغط JPEG على الصور الموجودة في ملف PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOptions);
 ```
 
-## الخطوة 5: تكوين خيارات الحفظ إلى PDF/A-2u مع ضغط الصور
+ في هذا المثال، تمت تسمية ملف PDF الناتج`"WorkingWithPdfSaveOptions.PdfImageCompression.pdf"`. اضبط اسم الملف حسب الحاجة.
 
-إذا كنت تريد إنشاء ملف PDF متوافق مع PDF/A-2u مع ضغط الصور، فيمكنك تكوين خيارات الحفظ الإضافية.
+## الخطوة 5: تكوين الضغط المتقدم مع التوافق مع PDF/A
+
+ للحصول على ضغط أفضل، خاصة إذا كنت بحاجة إلى الالتزام بمعايير PDF/A، يمكنك تكوين خيارات إضافية. تعيين`Compliance`الملكية ل`PdfCompliance.PdfA2u` وضبط`JpegQuality` ملكية.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
 {
-Compliance = PdfCompliance.PdfA2u,
-ImageCompression = PdfImageCompression.Jpeg,
-JpegQuality=100, // استخدم ضغط JPEG بجودة 50% لتقليل حجم الملف.
+	// اضبط التوافق على PDF/A-2u
+    Compliance = PdfCompliance.PdfA2u,
+	// استخدم ضغط JPEG
+    ImageCompression = PdfImageCompression.Jpeg,
+	// اضبط جودة JPEG للتحكم في مستوى الضغط
+    JpegQuality = 100 
 };
 ```
 
-## الخطوة 6: احفظ المستند بصيغة PDF/A-2u مع ضغط الصور
+## الخطوة 6: احفظ المستند بالضغط المتقدم
 
-احفظ المستند بتنسيق PDF/A-2u باستخدام خيارات الحفظ الإضافية التي تم تكوينها مسبقًا.
+احفظ مستند Word كملف PDF باستخدام إعدادات الضغط المتقدمة. يضمن هذا التكوين أن يلتزم ملف PDF بمعايير PDF/A ويستخدم ضغط JPEG عالي الجودة.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", saveOptionsA2U);
 ```
 
+ هنا، تتم تسمية ملف PDF الناتج`"WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf"`. قم بتعديل اسم الملف وفقًا لتفضيلاتك.
+
+## خاتمة
+
+يعد تقليل حجم مستندات PDF عن طريق ضغط الصور خطوة حيوية في تحسين أداء المستند وتخزينه. باستخدام Aspose.Words for .NET، لديك أدوات قوية تحت تصرفك للتحكم في ضغط الصور بشكل فعال. باتباع الخطوات الموضحة في هذا البرنامج التعليمي، يمكنك التأكد من أن مستندات PDF الخاصة بك عالية الجودة وصغيرة الحجم. سواء كنت بحاجة إلى ضغط أساسي أو متقدم، فإن Aspose.Words يوفر المرونة اللازمة لتلبية احتياجاتك.
 
 
-هذا كل شئ ! لقد نجحت في ضغط الصور الموجودة في مستند وإنشاء ملف PDF باستخدام ضغط الصور المناسب باستخدام Aspose.Words for .NET.
+## الأسئلة الشائعة
+
+### ما هو ضغط الصور في ملفات PDF؟
+يؤدي ضغط الصور إلى تقليل حجم ملف مستندات PDF عن طريق تقليل جودة الصور، مما يساعد في تحسين التخزين والأداء.
+
+### كيف يتعامل Aspose.Words لـ .NET مع ضغط الصور؟
+يوفر Aspose.Words لـ .NET`PdfSaveOptions` فئة، والتي تسمح لك بتعيين خيارات ضغط الصور المختلفة، بما في ذلك ضغط JPEG.
+
+### هل يمكنني استخدام Aspose.Words لـ .NET للتوافق مع معايير PDF/A؟
+نعم، يدعم Aspose.Words التوافق مع PDF/A، مما يسمح لك بحفظ المستندات بتنسيقات تلبي معايير الأرشفة والحفظ طويل المدى.
+
+### ما هو تأثير جودة JPEG على حجم ملف PDF؟
+تؤدي إعدادات جودة JPEG الأعلى إلى جودة صورة أفضل ولكن أحجام ملفات أكبر، بينما تؤدي إعدادات الجودة المنخفضة إلى تقليل حجم الملف ولكنها قد تؤثر على وضوح الصورة.
+
+### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words لـ .NET؟
+ يمكنك استكشاف المزيد حول Aspose.Words for .NET على موقعهم[توثيق](https://reference.aspose.com/words/net/), [يدعم](https://forum.aspose.com/c/words/8) ، و[تحميل](https://releases.aspose.com/words/net/) الصفحات.
 
 ### نموذج التعليمات البرمجية المصدر لضغط الصور باستخدام Aspose.Words لـ .NET
 
 ```csharp
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+// المسار إلى دليل المستندات.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Rendering.docx");
 
-	PdfSaveOptions saveOptions = new PdfSaveOptions
-	{
-		ImageCompression = PdfImageCompression.Jpeg, PreserveFormFields = true
-	};
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+	ImageCompression = PdfImageCompression.Jpeg, PreserveFormFields = true
+};
 
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOptions);
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOptions);
 
-	PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
-	{
-		Compliance = PdfCompliance.PdfA2u,
-		ImageCompression = PdfImageCompression.Jpeg,
-		JpegQuality = 100, // استخدم ضغط JPEG بجودة 50% لتقليل حجم الملف.
-	};
+PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
+{
+	Compliance = PdfCompliance.PdfA2u,
+	ImageCompression = PdfImageCompression.Jpeg,
+	JpegQuality = 100, // استخدم ضغط JPEG بجودة 50% لتقليل حجم الملف.
+};
 
-	
 
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", saveOptionsA2U);
+
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", saveOptionsA2U);
 	
 ```
-
-## خاتمة
-
-في هذا البرنامج التعليمي، شرحنا كيفية ضغط الصور في مستند PDF باستخدام Aspose.Words for .NET. باتباع الخطوات الموضحة، يمكنك بسهولة تقليل حجم الصور في مستند PDF الخاص بك وإنشاء ملف PDF مع ضغط الصور المناسب. استخدم ميزات ضغط الصور في Aspose.Words for .NET لتحسين حجم مستندات PDF الخاصة بك مع الحفاظ على جودة الصورة.
-
-### أسئلة مكررة
-
-#### س: ما هو ضغط الصور في وثيقة PDF؟
-ج: إن ضغط الصور في مستند PDF هو تقليل حجم الصور المضمنة في مستند PDF لتقليل الحجم الإجمالي لملف PDF. يؤدي ذلك إلى تقليل مساحة التخزين المطلوبة وتحسين الأداء عند تحميل ملف PDF وعرضه.
-
-#### س: كيف يمكنني ضغط الصور في مستند PDF باستخدام Aspose.Words for .NET؟
-ج: لضغط الصور في مستند PDF باستخدام Aspose.Words لـ .NET، اتبع الخطوات التالية:
-
- إنشاء مثيل لـ`Document` فئة تحدد المسار إلى مستند Word.
-
- إنشاء مثيل لـ`PdfSaveOptions` فئة وتعيين`ImageCompression`الملكية ل`PdfImageCompression.Jpeg` لاستخدام ضغط JPEG.
-
-يمكنك أيضًا تعيين خيارات أخرى لضغط الصور، مثل جودة JPEG، وفقًا لاحتياجاتك.
-
- استخدم ال`Save` طريقة`Document`فئة لحفظ المستند بتنسيق PDF عن طريق تحديد خيارات الحفظ.
-
-#### س: ما الفرق بين ضغط الصور القياسي وضغط الصور PDF/A-2u؟
-ج: يعمل ضغط الصور القياسي على تقليل حجم الصور في مستند PDF مع الحفاظ على حقول النموذج. يؤدي هذا إلى تقليل الحجم الإجمالي لملف PDF دون المساس بوظيفة حقل النموذج.
-
-يعد ضغط الصور باستخدام PDF/A-2u خيارًا إضافيًا يسمح لك بإنشاء ملف PDF يتوافق مع معيار PDF/A-2u أثناء تطبيق ضغط الصور. PDF/A-2u هو معيار ISO لمستندات PDF الأرشيفية ويضمن الحفاظ على المستندات على المدى الطويل.

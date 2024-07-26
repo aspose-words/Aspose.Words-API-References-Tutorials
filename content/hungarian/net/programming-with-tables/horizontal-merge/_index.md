@@ -21,7 +21,7 @@ A táblával és cellákkal való szövegfeldolgozás elindításához új dokum
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Hozzon létre egy dokumentumot, és inicializálja a dokumentumgenerátort
+//Hozzon létre egy dokumentumot, és inicializálja a dokumentumgenerátort
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

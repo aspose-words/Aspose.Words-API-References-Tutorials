@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-sdt/modify-content-controls/
 ---
 
-tym samouczku wyjaśniono, jak modyfikować różne typy kontrolek treści w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Możesz zaktualizować tekst, wybraną wartość z listy rozwijanej lub zastąpić obraz w ramach kontrolek zawartości.
+W tym samouczku wyjaśniono, jak modyfikować różne typy kontrolek treści w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Możesz zaktualizować tekst, wybraną wartość z listy rozwijanej lub zastąpić obraz w ramach kontrolek zawartości.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Krok 6: Zapisz zmodyfikowany dokument
- Zapisz zmodyfikowany dokument w określonym katalogu za pomocą`Save`metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithSdt.ModifyContentControls.docx”.
+ Zapisz zmodyfikowany dokument w określonym katalogu za pomocą`Save` metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithSdt.ModifyContentControls.docx”.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

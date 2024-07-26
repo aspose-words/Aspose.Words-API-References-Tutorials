@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- في هذه الخطوة الأخيرة، نقوم بحفظ المستند الناتج بتنسيق .docx باستخدام الملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج.
+في هذه الخطوة الأخيرة، نقوم بحفظ المستند الناتج بتنسيق .docx باستخدام الملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج.
 
 يمكنك الآن تشغيل الكود المصدري لتحميل المستند النصي وتحديد اتجاه النص. سيتم حفظ المستند الناتج في الدليل المحدد بالاسم "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
 

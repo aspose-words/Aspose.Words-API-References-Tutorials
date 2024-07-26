@@ -2,76 +2,101 @@
 title: Pdf Resimlerini Atla
 linktitle: Pdf Resimlerini Atla
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile PDF görüntülerini yüklemeyi atlayarak PDF belgesini nasıl yükleyeceğinizi öğrenin.
+description: Aspose.Words for .NET kullanarak PDF belgelerini yüklerken görüntüleri nasıl atlayacağınızı öğrenin. Sorunsuz metin çıkarma için bu adım adım kılavuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-loadoptions/skip-pdf-images/
 ---
-Bir C# uygulamasında PDF belgeleriyle Kelime İşleme yaparken, performans veya depolama alanı yönetimi nedeniyle PDF görüntülerinin yüklenmesini atlamak gerekebilir. .NET için Aspose.Words kütüphanesiyle, PdfLoadOptions yükleme seçeneklerini kullanarak PDF görüntülerini yüklemeyi kolayca atlayabilirsiniz. Bu adım adım kılavuzda, PdfLoadOptions yükleme seçeneklerini kullanarak PDF görüntülerinin yüklenmesini atlayarak bir PDF belgesi yüklemek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+## giriiş
 
-## Aspose.Words kütüphanesini anlama
+Merhaba Aspose.Words tutkunları! Bugün Aspose.Words for .NET'in harika bir özelliğine dalıyoruz: Bir belgeyi yüklerken PDF görüntülerinin nasıl atlanacağı. Bu eğitim, süreç boyunca size rehberlik edecek ve her adımı kolaylıkla kavramanızı sağlayacaktır. O halde kemerlerinizi bağlayın ve bu şık numarada ustalaşmaya hazırlanın.
 
-Koda dalmadan önce .NET için Aspose.Words kütüphanesini anlamak önemlidir. Aspose.Words, Word belgelerini .NET dahil farklı platformlarda oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kütüphanedir. Metin ekleme, biçimlendirmeyi değiştirme, bölüm ekleme ve çok daha fazlası gibi belgeleri değiştirmek için birçok özellik sunar.
+## Önkoşullar
 
-## Yükleme seçeneklerini yapılandırma
+Başlamadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-İlk adım, PDF belgemiz için yükleme seçeneklerini yapılandırmaktır. Yükleme parametrelerini belirtmek için PdfLoadOptions sınıfını kullanın. Bizim durumumuzda, PDF görsellerinin yüklenmesini atlamak için SkipPdfImages özelliğini true olarak ayarlamamız gerekiyor. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
+-  Aspose.Words for .NET: En son sürümü indirin[Burada](https://releases.aspose.com/words/net/).
+- Visual Studio: Herhangi bir yeni sürüm düzgün çalışmalıdır.
+- Temel C# anlayışı: Profesyonel olmanıza gerek yok, ancak temel bir kavrama yardımcı olacaktır.
+- PDF belgesi: Test için örnek bir PDF belgesini hazır bulundurun.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words ile çalışmak için gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları, belgelerle çalışmayı kolaylaştıran sınıflar ve yöntemler içerir.
 
 ```csharp
-PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
+using Aspose.Words;
+using Aspose.Words.Loading;
 ```
 
-Yeni bir PdfLoadOptions nesnesi oluşturuyoruz ve PDF görsellerinin yüklenmesini atlamak için SkipPdfImages özelliğini true olarak ayarlıyoruz.
+Tamam, adım adım inceleyelim. Her adım süreç boyunca size yol göstererek takip etmeyi ve uygulamayı kolaylaştıracaktır.
 
-## PDF görüntülerini atlayarak PDF belgesini yükleyin
+## 1. Adım: Projenizi Kurun
 
-Artık yükleme seçeneklerini yapılandırdığımıza göre PDF belgesini Document sınıfını kullanarak yükleyebilir ve yükleme seçeneklerini belirtebiliriz. İşte bir örnek :
+### Yeni Bir Proje Oluştur
+
+Öncelikle Visual Studio'yu açın ve yeni bir C# Konsol Uygulaması projesi oluşturun. İşleri düzenli tutmak için buna "AsposeSkipPdfImages" gibi bir ad verin.
+
+### Aspose.Words Referansı Ekle
+
+Daha sonra Aspose.Words for .NET'e bir referans eklemeniz gerekir. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz:
+
+1. Solution Explorer'da projenize sağ tıklayın.
+2. "NuGet Paketlerini Yönet" seçeneğini seçin.
+3. "Aspose.Words" ifadesini arayın ve yükleyin.
+
+## Adım 2: Yükleme Seçeneklerini Yapılandırın
+
+### Veri Dizinini Tanımlayın
+
+ Projenizde`Program.cs` dosyanızı oluşturmak için, belgeler dizininizin yolunu tanımlayarak başlayın. PDF dosyanızın bulunduğu yer burasıdır.
 
 ```csharp
-Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
-```
-
-Bu örnekte, belgeler dizininde bulunan "Pdf Document.pdf" PDF belgesini belirtilen yükleme seçeneklerini kullanarak yüklüyoruz.
-
-### Aspose.Words for .NET kullanan "Pdf Görüntülerini Atla" işlevine sahip PdfLoadOptions için örnek kaynak kodu
-
-```csharp
-// Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
-// "Pdf Görüntülerini Atla" özelliğiyle yükleme seçeneklerini yapılandırın
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgeler klasörünüzün gerçek yolu ile.
+
+### PDF Görüntülerini Atlamak için Yükleme Seçeneklerini Ayarlama
+
+Şimdi görüntüleri atlamak için PDF yükleme seçeneklerini yapılandırın. Sihir yapılan yer burasıdır. 
+
+```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
+```
 
-// PDF görüntülerini atlayarak PDF belgesini yükleyin
+## 3. Adım: PDF Belgesini Yükleyin
+
+Yükleme seçenekleri ayarlandığında PDF belgesini yüklemeye hazırsınız. Bu adım çok önemlidir çünkü Aspose.Words'e PDF'deki görselleri atlamasını söyler.
+
+```csharp
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
+
+ Şundan emin olun:`"Pdf Document.pdf"` belirtilen dizindeki PDF dosyanızın adıdır.
 
 ## Çözüm
 
-Bu kılavuzda, .NET için Aspose.Words kütüphanesini kullanarak PDF görüntülerinin yüklenmesini atlayarak bir PDF belgesinin nasıl yükleneceğini açıkladık. Verilen adımları takip ederek ve verilen C# kaynak kodunu kullanarak bu işlevselliği C# uygulamanıza kolayca uygulayabilirsiniz. PDF görüntü yüklemesini atlamak, PDF belgelerini işlerken performansı ve depolama alanı yönetimini iyileştirebilir.
+İşte buyur! Aspose.Words for .NET'i kullanarak bir PDF belgesindeki görüntüleri nasıl atlayacağınızı öğrendiniz. Bu özellik, metin ağırlıklı PDF'leri görüntü karmaşası olmadan işlemeniz gerektiğinde son derece kullanışlıdır. Unutmayın, pratik yapmak mükemmelleştirir; bu nedenle, bu özelliğin çeşitli senaryolarda nasıl çalıştığını görmek için farklı PDF'lerle denemeler yapmayı deneyin.
 
-### Aspose.Words for .NET'te PDF Görüntülerini Atlamak Hakkında SSS
+## SSS'ler
 
-#### S: C# uygulamamda PDF görüntülerini yüklemeyi neden atlamak isteyeyim?
+### PDF'deki belirli görselleri seçerek atlayabilir miyim?
 
-C: PDF görüntü yüklemesini atlamak çeşitli nedenlerden dolayı faydalı olabilir. Büyük PDF belgelerinin yükleme hızını önemli ölçüde artırarak daha iyi uygulama performansı sağlayabilir. Ayrıca, bellek tüketiminin ve depolama alanı kullanımının azaltılmasına yardımcı olarak sınırlı kaynaklara sahip ortamlar için idealdir.
+ Hayır,`SkipPdfImages` seçeneği PDF'deki tüm görüntüleri atlar. Seçici kontrole ihtiyacınız varsa PDF'yi ön işlemeyi düşünün.
 
-#### S: Aspose.Words for .NET'te PDF görüntülerini yüklemeyi nasıl atlayabilirim?
+### Bu özellik PDF'deki metni etkiler mi?
 
- C: PDF görüntülerini yüklemeyi aşağıdaki düğmeyi kullanarak atlayabilirsiniz:`PdfLoadOptions`Aspose.Words for .NET tarafından sağlanan sınıf. Basitçe ayarlayın`SkipPdfImages`mülkiyet`true` PDF belgeniz için yükleme seçeneklerini yapılandırırken.
+Hayır, görsellerin atlanması yalnızca görselleri etkiler. Metin bozulmadan kalır ve tamamen erişilebilir durumdadır.
 
-#### S: Belgeyi yükledikten sonra atlanan PDF görüntülerine hâlâ erişebilir miyim?
+### Bu özelliği diğer belge formatlarıyla kullanabilir miyim?
 
- C: Hayır, PDF görüntülerini yüklemeyi atladığınızda`PdfLoadOptions`görüntüler belleğe yüklenmez. Sonuç olarak, bu görüntülere doğrudan uygulamanızın içinden erişemez veya bunları değiştiremezsiniz.
+`SkipPdfImages` seçeneği özellikle PDF belgeleri içindir. Diğer formatlar için farklı seçenekler ve yöntemler mevcuttur.
 
-#### S: PDF görsellerinin atlanması, yüklenen PDF belgesinin düzenini ve görünümünü etkiler mi?
+### Resimlerin atlandığını nasıl doğrulayabilirim?
 
-C: PDF görsellerinin atlanması, yüklenen belgenin düzenini veya görünümünü etkilemez. Ancak atlanan görsellerle ilişkili metin kaplamaları veya ek açıklamalar gibi içerikler her zamanki gibi korunmaya ve yüklenmeye devam edecek.
+Görüntülerin olmadığını görsel olarak doğrulamak için çıktı belgesini bir Kelime işlemcide açabilirsiniz.
 
-#### S: PDF görüntülerini atlamak tüm PDF belgeleri için uygun mudur?
+### PDF'de resim yoksa ne olur?
 
-C: PDF görüntülerini atlamak, görüntülerin uygulamanızın birincil işlevleri için gerekli olmadığı senaryolar için en uygun yöntemdir. Öncelikle metin içeriğiyle ilgilenen veya görüntü manipülasyonu gerektirmeyen uygulamalar için iyi çalışır.
-
-#### S: Bu işlevi bir PDF belgesinin belirli bir bölümüne uygulayabilir miyim?
-
- C: Evet, uygulayabilirsiniz`PdfLoadOptions` ile`SkipPdfImages` ayarlanır`true` Aspose.Words for .NET'i kullanarak bu bölümü ayrı ayrı yükleyerek bir PDF belgesinin belirli bir bölümüne kopyalayabilirsiniz.
+ Belge, süreç üzerinde herhangi bir etki olmaksızın her zamanki gibi yüklenir.`SkipPdfImages` seçeneğin bu durumda hiçbir etkisi yoktur.

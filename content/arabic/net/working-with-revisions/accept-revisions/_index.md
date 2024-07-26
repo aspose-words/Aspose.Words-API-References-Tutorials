@@ -15,7 +15,7 @@ url: /ar/net/working-with-revisions/accept-revisions/
 في هذا المثال، نقوم بإنشاء مستند وإضافة محتوى. نستخدم عدة فقرات لتوضيح التغييرات والمراجعات. إليك الطريقة:
 
 ```csharp
-//المسار إلى دليل المستندات.
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

@@ -15,7 +15,7 @@ url: /zh/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 
 在深入研究代码之前，让我们确保已设置好一切。以下是您需要的内容：
 
-1. Aspose.Words for .NET Library：请确保您拥有最新版本。如果没有，您可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library：请确保您拥有最新版本。如果没有，您可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 2. .NET Framework：确保您的机器上安装了 .NET Framework。
 3. 开发环境：像 Visual Studio 这样的 IDE 将使您的生活更轻松。
 4. C# 基础知识：您不需要成为专家，但基本的了解会有所帮助。
@@ -102,7 +102,7 @@ Aspose.Words for .NET 支持多个 .NET Framework 版本，但为了获得最佳
 ### 将 SVG 转换为 EMF 或 WMF 有什么好处？
 将 SVG 转换为 EMF 或 WMF 可确保矢量图形在可能不完全支持 SVG 的环境中得以正确保存和呈现。
 
-### 我可以对多个文档自动执行此过程吗？
+### 我可以对多个文档自动执行这一过程吗？
 当然可以！您可以循环遍历多个 HTML 文件，应用相同的过程来自动执行批处理转换。
 
 ### 在哪里可以找到有关 Aspose.Words for .NET 的更多资源和支持？

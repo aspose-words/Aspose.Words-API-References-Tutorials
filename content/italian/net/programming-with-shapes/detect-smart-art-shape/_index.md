@@ -10,7 +10,7 @@ url: /it/net/programming-with-shapes/detect-smart-art-shape/
 
 ## introduzione
 
-Ehilà! Hai mai avuto bisogno di lavorare con SmartArt nei documenti Word a livello di programmazione? Che tu stia automatizzando report, creando documenti dinamici o semplicemente immergendoti nell'elaborazione dei documenti, Aspose.Words per .NET ti copre. In questo tutorial esploreremo come rilevare le forme SmartArt nei documenti Word utilizzando Aspose.Words per .NET. Analizzeremo ogni passaggio in una guida dettagliata e facile da seguire. Entro la fine di questo articolo sarai in grado di identificare facilmente le forme SmartArt in qualsiasi documento di Word!
+Ehilà! Hai mai avuto bisogno di lavorare con SmartArt nei documenti Word a livello di codice? Che tu stia automatizzando report, creando documenti dinamici o semplicemente immergendoti nell'elaborazione dei documenti, Aspose.Words per .NET ti copre. In questo tutorial esploreremo come rilevare le forme SmartArt nei documenti Word utilizzando Aspose.Words per .NET. Analizzeremo ogni passaggio in una guida dettagliata e facile da seguire. Entro la fine di questo articolo sarai in grado di identificare facilmente le forme SmartArt in qualsiasi documento di Word!
 
 ## Prerequisiti
 
@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- In questo passaggio utilizziamo LINQ per filtrare e contare le forme con SmartArt. IL`GetChildNodes` il metodo recupera tutte le forme e il metodo`HasSmartArt` La proprietà controlla se una forma contiene SmartArt.
+ In questo passaggio utilizziamo LINQ per filtrare e contare le forme con SmartArt. IL`GetChildNodes` il metodo recupera tutte le forme e il metodo`HasSmartArt`La proprietà controlla se una forma contiene SmartArt.
 
 ## Passaggio 4: esecuzione del codice
 
@@ -80,7 +80,7 @@ Sostituisci "X" con il conteggio effettivo delle forme SmartArt nel documento.
 
 ## Conclusione
 
- il gioco è fatto! Hai imparato con successo come rilevare le forme SmartArt nei documenti Word utilizzando Aspose.Words per .NET. Questo tutorial ha riguardato la configurazione dell'ambiente, il caricamento dei documenti, il rilevamento delle forme SmartArt e l'esecuzione del codice. Aspose.Words offre una vasta gamma di funzionalità, quindi assicurati di esplorare il[Documentazione dell'API](https://reference.aspose.com/words/net/) per sbloccare il suo pieno potenziale.
+ E il gioco è fatto! Hai imparato con successo come rilevare le forme SmartArt nei documenti Word utilizzando Aspose.Words per .NET. Questo tutorial ha riguardato la configurazione dell'ambiente, il caricamento dei documenti, il rilevamento delle forme SmartArt e l'esecuzione del codice. Aspose.Words offre una vasta gamma di funzionalità, quindi assicurati di esplorare il[Documentazione dell'API](https://reference.aspose.com/words/net/) per sbloccare il suo pieno potenziale.
 
 ## Domande frequenti
 

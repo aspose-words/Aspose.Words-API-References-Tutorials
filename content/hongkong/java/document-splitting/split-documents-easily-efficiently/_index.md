@@ -49,7 +49,7 @@ for (int i = 0; i < pageCount; i++) {
 
 ## 5. 按段落拆分文檔
 
-按段落拆分文件可讓您根據文檔的自然結構來劃分文檔。每個段落將保存為單獨的子文檔，從而更輕鬆地管理內容和編輯特定部分，而不會影響文檔的其餘部分。
+按段落拆分文件可讓您根據文檔的自然結構來劃分文檔。每個段落將保存為單獨的子文檔，以便更輕鬆地管理內容和編輯特定部分，而不會影響文檔的其餘部分。
 
 若要使用 Aspose.Words for Java 按段落分割文檔，請使用下列程式碼：
 
@@ -74,7 +74,7 @@ for (Paragraph paragraph : paragraphs) {
 若要使用 Aspose.Words for Java 按標題分割文檔，請依照下列步驟操作：
 
 ```java
-//使用 Aspose.Words for Java 按標題拆分文件的 Java 程式碼
+//使用 Aspose.Words for Java 按標題分割文件的 Java 程式碼
 Document doc = new Document("input.docx");
 LayoutCollector layoutCollector = new LayoutCollector(doc);
 

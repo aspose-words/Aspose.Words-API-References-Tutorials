@@ -2,7 +2,7 @@
 title: Chuyển đổi Doc sang Docx
 linktitle: Chuyển đổi Doc sang Docx
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chuyển đổi DOC sang DOCX bằng Aspose.Words cho .NET. Hướng dẫn từng bước với các ví dụ về mã. Hoàn hảo cho các nhà phát triển.
+description: Tìm hiểu cách chuyển đổi DOC sang DOCX bằng Aspose.Words for .NET. Hướng dẫn từng bước với các ví dụ về mã. Hoàn hảo cho các nhà phát triển.
 type: docs
 weight: 10
 url: /vi/net/basic-conversions/doc-to-docx/

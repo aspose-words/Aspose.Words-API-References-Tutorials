@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Kode ini menginisialisasi dokumen Word baru. Anda harus menggantinya`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+ Kode ini menginisialisasi dokumen Word baru. Anda harus menggantinya`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
 
 ## Langkah 2: Membuat Objek Tabel
 
@@ -71,7 +71,7 @@ Sebuah tabel terdiri dari baris dan sel. Mari tambahkan elemen ini langkah demi 
 // Di sini kita dapat memanggil PastikanMinimum untuk membuat baris dan sel untuk kita. Metode ini digunakan
 // untuk memastikan bahwa node yang ditentukan valid. Dalam hal ini, tabel yang valid harus memiliki setidaknya satu Baris dan satu sel.
 // Sebagai gantinya, kita akan menangani sendiri pembuatan baris dan tabelnya.
-//Ini akan menjadi cara terbaik untuk melakukan ini jika kita membuat tabel di dalam suatu algoritma.
+// Ini akan menjadi cara terbaik untuk melakukan ini jika kita membuat tabel di dalam suatu algoritma.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

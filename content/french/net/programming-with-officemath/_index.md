@@ -12,4 +12,4 @@ Les didacticiels Aspose.Words pour .NET sur le traitement de mots avec OfficeMat
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Équations mathématiques](./math-equations/) | Découvrez comment ajouter des équations mathématiques à vos documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Équations mathématiques](./math-equations/) | Découvrez comment configurer des équations mathématiques dans des documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape avec des exemples, des FAQ et bien plus encore. |

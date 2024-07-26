@@ -38,7 +38,7 @@ using Aspose.Words.Layout;
 
 Deze naamruimten geven u toegang tot de klassen en methoden die u nodig hebt om met Word-documenten te werken en hun lay-outs te manipuleren.
 
-Nu we aan onze vereisten hebben voldaan, gaan we over tot het eigenlijke proces. We zullen het opsplitsen in een reeks eenvoudige stappen:
+Nu we aan onze vereisten hebben voldaan, gaan we over tot het daadwerkelijke proces. We zullen het opsplitsen in een reeks eenvoudige stappen:
 
 ## Stap 1: Laad uw document
 

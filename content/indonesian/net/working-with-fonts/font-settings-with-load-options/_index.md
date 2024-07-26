@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /id/net/working-with-fonts/font-settings-with-load-options/
 ---
-Dalam tutorial ini, kami akan menunjukkan cara menggunakan opsi pemuatan dengan pengaturan font di dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Opsi pemuatan memungkinkan Anda menentukan pengaturan tambahan saat memuat dokumen, termasuk pengaturan font. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
+Dalam tutorial ini, kami akan menunjukkan kepada Anda cara menggunakan opsi pemuatan dengan pengaturan font di dokumen Word menggunakan perpustakaan Aspose.Words untuk .NET. Opsi pemuatan memungkinkan Anda menentukan pengaturan tambahan saat memuat dokumen, termasuk pengaturan font. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
 
 ## Prasyarat
 Sebelum memulai, pastikan Anda memiliki item berikut:

@@ -21,7 +21,7 @@ Untuk memulai Pemrosesan Kata dengan tabel dan sel, kita perlu membuat dokumen b
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Buat dokumen dan inisialisasi pembuat dokumen
+//Buat dokumen dan inisialisasi pembuat dokumen
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

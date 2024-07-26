@@ -15,7 +15,7 @@ url: /hi/net/split-document/by-sections-html/
 आरंभ करने के लिए, अपने दस्तावेज़ के लिए निर्देशिका निर्दिष्ट करें और दस्तावेज़ को दस्तावेज़ ऑब्जेक्ट में लोड करें। यहाँ बताया गया है कि कैसे:
 
 ```csharp
-//दस्तावेज़ निर्देशिका का पथ.
+// दस्तावेज़ निर्देशिका का पथ.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

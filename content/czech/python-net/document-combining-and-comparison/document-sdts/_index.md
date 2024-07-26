@@ -117,7 +117,7 @@ SDT nabízejí různé možnosti přizpůsobení, jako je změna stylů písma, 
 
 Pokročilé techniky zahrnují vnořené SDT, vlastní vazbu dat XML a zpracování událostí spojených s SDT. Tyto techniky umožňují složité struktury dokumentů a interaktivnější uživatelské zkušenosti.
 
-## Doporučené postupy pro používání SDT
+## Osvědčené postupy pro používání SDT
 
 Při používání SDT dodržujte tyto osvědčené postupy:
 

@@ -15,7 +15,7 @@ Selamat datang di penyelaman mendalam lainnya ke dunia Aspose.Words untuk .NET. 
 
 Sebelum kita mendalami kodenya, pastikan semuanya sudah siap. Inilah yang Anda butuhkan:
 
-1. Aspose.Words untuk .NET Library: Pastikan Anda memiliki versi terbaru. Jika Anda tidak memilikinya, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET Library: Pastikan Anda memiliki versi terbaru. Jika Anda tidak memilikinya, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 2. .NET Framework: Pastikan Anda telah menginstal .NET Framework di mesin Anda.
 3. Lingkungan Pengembangan: IDE seperti Visual Studio akan membuat hidup Anda lebih mudah.
 4. Pengetahuan Dasar C#: Anda tidak perlu menjadi ahli, tetapi pemahaman dasar akan membantu.

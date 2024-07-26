@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## 3. lépés: Állítsa be a True Type Fonts mappát
-Mostantól megadhatja a rendereléskor használandó igaz típusú betűtípusok mappáját a példány létrehozásával`FontSettings` osztályban és a`SetFontsFolder()` módszer a betűtípusok mappa beállításához. Megadhat egy egyéni mappát, amely a True Type betűtípusokat tartalmazza. A második paraméter a`SetFontsFolder()` jelzi, hogy kíván-e keresni a megadott mappa almappáiban is.
+Mostantól megadhatja a rendereléskor használandó igaz típusú betűtípusok mappáját a példány létrehozásával`FontSettings` osztályt és a`SetFontsFolder()` módszer a betűtípusok mappa beállításához. Megadhat egy egyéni mappát, amely a True Type betűtípusokat tartalmazza. A második paraméter a`SetFontsFolder()` jelzi, hogy kíván-e keresni a megadott mappa almappáiban is.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

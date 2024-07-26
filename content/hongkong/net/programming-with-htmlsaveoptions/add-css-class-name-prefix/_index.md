@@ -2,71 +2,128 @@
 title: 加入 CSS 類別名稱前綴
 linktitle: 加入 CSS 類別名稱前綴
 second_title: Aspose.Words 文件處理 API
-description: 使用 Aspose.Words for .NET 將文件轉換為 HTML 時新增 CSS 類別名稱前綴的逐步指南。
+description: 了解如何使用 Aspose.Words for .NET 將 Word 文件儲存為 HTML 時新增 CSS 類別名稱前綴。包括逐步指南、程式碼片段和常見問題。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## 介紹
 
-在本教學中，我們將引導您完成 C# 原始程式碼，以使用 Aspose.Words for .NET 新增 CSS 類別名稱前綴。此功能可讓您在將文件轉換為 HTML 時為產生的 CSS 類別名稱新增自訂前綴。
+歡迎！如果您正在深入探索 Aspose.Words for .NET 的世界，那麼您將會大飽口福。今天，我們將探討如何使用 Aspose.Words for .NET 將 Word 文件儲存為 HTML 時新增 CSS 類別名稱前綴。當您想要避免 HTML 文件中的類別名稱衝突時，此功能非常方便。
 
-## 第 1 步：項目設置
+## 先決條件
 
-首先，在您最喜歡的 IDE 中建立一個新的 C# 專案。請確定您的專案中引用了 Aspose.Words for .NET 程式庫。
+在我們開始之前，請確保您具備以下條件：
 
-## 第 2 步：載入文檔
+-  Aspose.Words for .NET：如果您還沒有安裝它，[在這裡下載](https://releases.aspose.com/words/net/).
+- 開發環境：Visual Studio 或任何其他 C# IDE。
+-  Word 文件：我們將使用名為`Rendering.docx`。將其放在您的專案目錄中。
 
-在此步驟中，我們將載入要轉換為 HTML 的 Word 文件。使用以下程式碼載入文件：
+## 導入命名空間
+
+首先，請確保您已將必要的命名空間匯入到您的 C# 專案中。將這些添加到程式碼檔案的頂部：
 
 ```csharp
-//文檔目錄的路徑。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+現在，讓我們深入了解逐步指南！
+
+## 第 1 步：設定您的項目
+
+在開始加入 CSS 類別名稱前綴之前，讓我們先設定我們的專案。
+
+### 步驟1.1：建立一個新項目
+
+啟動 Visual Studio 並建立一個新的控制台應用程式專案。給它取個吸引人的名字，例如`AsposeCssPrefixExample`.
+
+### 步驟1.2：新增Aspose.Words for .NET
+
+如果您尚未透過 NuGet 將 Aspose.Words for .NET 新增至您的專案中。只需開啟 NuGet 套件管理器控制台並執行：
+
+```bash
+Install-Package Aspose.Words
+```
+
+偉大的！現在，我們準備開始編碼。
+
+## 第 2 步：載入您的文檔
+
+我們需要做的第一件事是載入要轉換為 HTML 的 Word 文件。
+
+### 步驟2.1：定義文檔路徑
+
+設定文檔目錄的路徑。為了本教學的目的，我們假設您的文件位於名為`Documents`在您的專案目錄中。
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### 步驟2.2：載入文檔
+
+現在，讓我們使用 Aspose.Words 來載入文件：
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-代替`"YOUR DOCUMENTS DIRECTORY"`與文件所在目錄的實際路徑。
+## 步驟 3：設定 HTML 儲存選項
 
-## 第 3 步：設定 HTML 儲存選項
+接下來，我們需要配置 HTML 儲存選項以包含 CSS 類別名稱前綴。
 
-現在讓我們設定 HTML 儲存選項，包括 CSS 樣式表類型和 CSS 類別名稱前綴。使用以下程式碼：
+### 步驟 3.1：建立 HTML 儲存選項
+
+實例化`HtmlSaveOptions`物件並將 CSS 樣式表類型設定為`External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
-這段程式碼創建了一個實例`HtmlSaveOptions`和集`CssStyleSheetType`到`CssStyleSheetType.External`產生外部 CSS 樣式表，以及`CssClassNamePrefix`到`"pfx_"`前綴`"pfx_"`命名 CSS 類別。
+### 步驟3.2：設定CSS類別名稱前綴
 
-## 步驟 4：將文件轉換並儲存為 HTML
+現在，讓我們設定`CssClassNamePrefix`屬性到您想要的前綴。對於這個例子，我們將使用`"pfx_"`.
 
-最後，我們將使用先前定義的 HTML 儲存選項將文件轉換為 HTML。使用以下程式碼：
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## 步驟 4：將文件另存為 HTML
+
+最後，讓我們使用配置的選項將文件儲存為 HTML 文件。
+
+
+指定輸出 HTML 檔案路徑並儲存文件。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-此程式碼將文件轉換為 HTML 並將其儲存到新增了 CSS 類別名稱前綴的檔案中。
+## 第 5 步：驗證輸出
 
-### 使用 Aspose.Words for .NET 新增 Css 類別名稱前綴的範例原始程式碼
+運行項目後，導航到您的`Documents`資料夾。您應該找到一個名為`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html`。在文字編輯器或瀏覽器中開啟此文件以驗證 CSS 類別是否具有前綴`pfx_`.
 
-```csharp
+## 結論
 
-	//文檔目錄的路徑。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+現在你就擁有了！透過執行這些步驟，您已成功使用 Aspose.Words for .NET 將 CSS 類別名稱前綴新增至 HTML 輸出。這個簡單而強大的功能可以幫助您在 HTML 文件中保持乾淨且無衝突的樣式。
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## 常見問題解答
 
-```
+### 我可以為每個保存操作使用不同的前綴嗎？
+是的，您可以在每次儲存文件時透過更改前綴來自訂前綴`CssClassNamePrefix`財產。
 
-請務必在中指定正確的文件路徑`dataDir`多變的。
+### 這個方法支援內聯CSS嗎？
+這`CssClassNamePrefix`屬性與外部 CSS 一起使用。對於內聯 CSS，您需要不同的方法。
 
-現在您已經了解如何使用 Aspose.Words for .NET 將文件轉換為 HTML 時新增 CSS 類別名稱前綴。按照本教學中提供的逐步指導步驟，您可以在轉換後的 HTML 文件中自訂 CSS 類別名稱。
+### 如何包含其他 HTML 保存選項？
+您可以配置各種屬性`HtmlSaveOptions`自訂您的 HTML 輸出。檢查[文件](https://reference.aspose.com/words/net/)更多細節。
+
+### 是否可以將 HTML 儲存到流中？
+絕對地！您可以透過將流物件傳遞給`Save`方法。
+
+### 如果遇到問題，我該如何獲得支援？
+您可以從以下方面獲得支持[Aspose論壇](https://forum.aspose.com/c/words/8).

@@ -7,105 +7,104 @@ type: docs
 weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
+## Invoering
 
-Dit artikel biedt een stapsgewijze handleiding voor het verkleinen van de pdf-grootte met de functie WMF-lettertypen schalen naar metabestandsgrootte met Aspose.Words voor .NET. We zullen elk deel van de code in detail uitleggen. Aan het einde van deze zelfstudie begrijpt u hoe u de schaal van WMF-lettertypen kunt in- of uitschakelen bij het converteren naar PDF.
+Bij het werken met PDF-bestanden, vooral als deze zijn gegenereerd op basis van Word-documenten die WMF-afbeeldingen (Windows Metafile) bevatten, kan formaatbeheer een cruciaal aspect worden van de documentverwerking. Eén manier om de PDF-grootte te beheren is door aan te passen hoe WMF-lettertypen in het document worden weergegeven. In deze zelfstudie onderzoeken we hoe u de PDF-grootte kunt verkleinen door WMF-lettertypen te schalen naar de metabestandsgrootte met behulp van Aspose.Words voor .NET.
 
-Zorg ervoor dat u, voordat u begint, de Aspose.Words voor .NET-bibliotheek in uw project hebt geïnstalleerd en geconfigureerd. U kunt de bibliotheek en installatie-instructies vinden op de Aspose-website.
+## Vereisten
 
-## Stap 1: Definieer de documentmap
+Voordat u in de stappen duikt, moet u ervoor zorgen dat u over het volgende beschikt:
 
- Om te beginnen moet u het pad definiëren naar de map waar uw documenten zich bevinden. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentenmap.
+1. Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words-bibliotheek is geïnstalleerd. Zo niet, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: in deze zelfstudie wordt ervan uitgegaan dat u een .NET-ontwikkelomgeving hebt ingesteld (zoals Visual Studio) waarin u C#-code kunt schrijven en uitvoeren.
+3. Basiskennis van .NET-programmering: Bekendheid met de basisconcepten van .NET-programmering en C#-syntaxis zal nuttig zijn.
+4. Word-document met WMF-afbeeldingen: u hebt een Word-document nodig met WMF-afbeeldingen. U kunt uw eigen document gebruiken of er een maken om te testen.
+
+## Naamruimten importeren
+
+Eerst moet u de benodigde naamruimten in uw C#-project importeren. Hiermee krijgt u toegang tot de klassen en methoden die nodig zijn om met Aspose.Words te werken.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Stap 2: Upload het document
+## Stap 1: Laad het Word-document
 
-Vervolgens moeten we het document laden dat we willen verwerken. In dit voorbeeld gaan we ervan uit dat het document "WMF met text.docx" heet en zich in de opgegeven documentenmap bevindt.
+ Laad om te beginnen het Word-document dat de WMF-afbeeldingen bevat. Dit gebeurt met behulp van de`Document` klasse van Aspose.Words.
 
 ```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Laad het document
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
-## Stap 3: Configureer de weergaveopties voor metabestanden
+ Hier,`dataDir` is een tijdelijke aanduiding voor het pad van uw documentmap. We maken een exemplaar van de`Document` klasse door het pad naar het Word-bestand door te geven. Hierdoor wordt het document in het geheugen geladen, klaar voor verdere verwerking.
 
- Om het schalen van WMF-lettertypen naar metabestandsgrootte in of uit te schakelen, moeten we de`MetafileRenderingOptions` voorwerp. In dit voorbeeld schakelen we het schalen van lettertypen uit door de`ScaleWmfFontsToMetafileSize`eigendom aan`false`.
+## Stap 2: Configureer de weergaveopties voor metabestanden
+
+ Vervolgens moet u de weergaveopties voor metabestanden configureren. Stel met name de`ScaleWmfFontsToMetafileSize`eigendom aan`false`. Dit bepaalt of WMF-lettertypen worden geschaald zodat ze overeenkomen met de grootte van het metabestand.
 
 ```csharp
+// Maak een nieuw exemplaar van MetafileRenderingOptions
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 {
-     ScaleWmfFontsToMetafileSize=false
+    ScaleWmfFontsToMetafileSize = false
 };
 ```
 
-## Stap 4: Configureer de opties voor opslaan als PDF met weergaveopties voor metabestanden
+ De`MetafileRenderingOptions` class biedt opties voor hoe metabestanden (zoals WMF) worden weergegeven. Door in te stellen`ScaleWmfFontsToMetafileSize` naar`false`, geeft u Aspose.Words de opdracht om lettertypen niet te schalen op basis van de metabestandsgrootte, wat kan helpen bij het verkleinen van de totale PDF-grootte.
 
-Ten slotte kunnen we de opties voor opslaan naar PDF configureren met behulp van de eerder geconfigureerde weergaveopties voor metabestanden.
+## Stap 3: Stel de PDF-opslagopties in
+
+Configureer nu de PDF-opslagopties om de weergaveopties voor metabestanden te gebruiken die u zojuist hebt ingesteld. Dit vertelt Aspose.Words hoe om te gaan met metabestanden bij het opslaan van het document als PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
+// Maak een nieuw exemplaar van PdfSaveOptions
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    MetafileRenderingOptions = metafileRenderingOptions
+};
 ```
 
-## Stap 5: Document opslaan als PDF met weergaveopties voor metabestanden
+ De`PdfSaveOptions` Met class kunt u verschillende instellingen opgeven voor het opslaan van het document als PDF. Door het eerder geconfigureerde toe te wijzen`MetafileRenderingOptions` naar de`MetafileRenderingOptions` eigendom van`PdfSaveOptions`, zorgt u ervoor dat het document wordt opgeslagen volgens de door u gewenste weergave-instellingen voor metabestanden.
 
-Sla het document op in PDF-formaat met behulp van de eerder geconfigureerde opslagopties.
+## Stap 4: Sla het document op als PDF
+
+Sla ten slotte het Word-document op als PDF met behulp van de geconfigureerde opslagopties. Hierdoor worden alle instellingen, inclusief de weergaveopties voor metabestanden, toegepast op de uitvoer-PDF.
+
 
 ```csharp
+// Sla het document op als PDF
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-Dat is alles ! U hebt tijdens het converteren het schalen van WMF-lettertypen naar metabestandsgrootte met succes in- of uitgeschakeld
-
-een PDF-document met Aspose.Words voor .NET.
-
-### Voorbeeldbroncode voor het schalen van WMF-lettertypen naar metabestandsgrootte met Aspose.Words voor .NET
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "WMF with text.docx");
-
-	MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
-	{
-		ScaleWmfFontsToMetafileSize = false
-	};
-
-	//Als Aspose.Words sommige metabestandsrecords niet correct kan weergeven in vectorafbeeldingen
-	// vervolgens rendert Aspose.Words dit metabestand naar een bitmap.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
-	
-        
-```
+ In deze stap wordt de`Save` werkwijze van de`Document` class wordt gebruikt om het document naar een PDF-bestand te exporteren. Het pad waar de PDF wordt opgeslagen, wordt opgegeven, samen met het`PdfSaveOptions` die de weergave-instellingen voor metabestanden bevatten.
 
 ## Conclusie
 
-In deze zelfstudie hebben we uitgelegd hoe u het formaat van WMF-lettertypen naar metabestandsgrootte in een PDF-document kunt in- of uitschakelen met behulp van Aspose.Words voor .NET. Door de beschreven stappen te volgen, kunt u eenvoudig bepalen of de grootte van WMF-lettertypen moet worden aangepast aan de grootte van het metabestand bij het converteren naar een PDF-document. Dit kan u helpen de grootte van het gegenereerde PDF-bestand te verkleinen en de weergaveprestaties te verbeteren. Zorg ervoor dat u het juiste pad naar uw documenten opgeeft en configureer indien nodig de weergaveopties voor metabestanden.
+Door WMF-lettertypen te schalen naar de grootte van metabestanden, kunt u de grootte van uw PDF-bestanden die zijn gegenereerd op basis van Word-documenten aanzienlijk verkleinen. Deze techniek helpt bij het optimaliseren van de opslag en distributie van documenten zonder de kwaliteit van de visuele inhoud in gevaar te brengen. Als u de hierboven beschreven stappen volgt, zorgt u ervoor dat uw PDF-bestanden beter beheersbaar en efficiënter van formaat zijn.
 
-### Veel Gestelde Vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat betekent het wijzigen van de grootte van WMF-lettertypen naar metabestandsgrootte in een PDF-document?
-A: Het formaat van WMF-lettertypen aanpassen aan de grootte van metabestanden in een PDF-document is een functie die bepaalt of WMF-lettertypen moeten worden geschaald zodat ze overeenkomen met de grootte van het metabestand bij het converteren naar een PDF-document. Wanneer deze functie is ingeschakeld, worden WMF-lettertypen geschaald zodat ze overeenkomen met de grootte van het metabestand, waardoor de grootte van het gegenereerde PDF-document mogelijk kleiner wordt.
+### Wat is WMF en waarom is het belangrijk voor PDF-grootte?
 
-#### Vraag: Hoe kan ik Aspose.Words voor .NET gebruiken om het wijzigen van de grootte van WMF-lettertypen naar metabestandsgrootte in een PDF-document in of uit te schakelen?
-A: Om het formaat van WMF-lettertypen naar metabestandsgrootte in een PDF-document met Aspose.Words voor .NET in of uit te schakelen, volgt u deze stappen:
+WMF (Windows Metafile) is een grafisch formaat dat wordt gebruikt in Microsoft Windows. Het kan zowel vector- als bitmapgegevens bevatten. Omdat vectorgegevens kunnen worden geschaald en gemanipuleerd, is het belangrijk om er op de juiste manier mee om te gaan om onnodig grote PDF-bestanden te voorkomen.
 
- Stel het mappad in waar uw documenten zich bevinden door te vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad van uw documentenmap.
+### Welke invloed heeft het schalen van WMF-lettertypen naar de grootte van metabestanden op de PDF?
 
- Laad het document dat u wilt verwerken met behulp van de`Document` class en specificeer het pad naar het Word-document in de opgegeven documentenmap.
+Door WMF-lettertypen te schalen naar de grootte van metabestanden, kunt u de algehele PDF-grootte verkleinen door lettertypeweergave met hoge resolutie te vermijden, waardoor de bestandsgrootte groter zou kunnen worden.
 
- Configureer de weergaveopties voor metabestanden door een exemplaar te maken van het`MetafileRenderingOptions` klasse en het instellen van de`ScaleWmfFontsToMetafileSize`eigendom aan`true` om het schalen van WMF-lettertypen naar metabestandsgrootte mogelijk te maken, of naar`false` om deze functie uit te schakelen.
+### Kan ik andere metabestandsformaten gebruiken met Aspose.Words?
 
- Configureer de opties voor opslaan als PDF door een exemplaar te maken van het`PdfSaveOptions` class en met behulp van de eerder geconfigureerde weergaveopties voor metabestanden.
+Ja, Aspose.Words ondersteunt verschillende metabestandsindelingen, waaronder EMF (Enhanced Metafile) naast WMF.
 
- Sla het document op in PDF-formaat met behulp van de`Save` werkwijze van de`Document` klasse die het pad specificeert en opties voor opslaan.
+### Is deze techniek toepasbaar op alle soorten Word-documenten?
 
-#### Vraag: Wat zijn de voordelen van het wijzigen van de grootte van WMF-lettertypen naar metabestandsgrootte in een PDF-document?
-A: De voordelen van het wijzigen van de grootte van WMF-lettertypen naar metabestandsgrootte in een PDF-document zijn:
+Ja, deze techniek kan worden toegepast op elk Word-document dat WMF-afbeeldingen bevat, waardoor de grootte van de gegenereerde PDF wordt geoptimaliseerd.
 
-Verkleining van de PDF-bestandsgrootte: Door de grootte van WMF-lettertypen aan te passen aan de metabestandsgrootte kan de grootte van het gegenereerde PDF-document worden verkleind door de lettergrootte aan te passen aan de metabestandsbehoeften.
+### Waar kan ik meer informatie vinden over Aspose.Words?
 
-Verbeterde prestaties: Door de grootte van WMF-lettertypen aan te passen aan de afmetingen van het metabestand, kan de weergave van het PDF-document sneller en efficiënter zijn.
+ U kunt meer over Aspose.Words ontdekken in de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) . Voor downloads, proefversies en ondersteuning gaat u naar de[Aspose.Words-downloadpagina](https://releases.aspose.com/words/net/), [Koop Aspose.Words](https://purchase.aspose.com/buy), [Gratis proefperiode](https://releases.aspose.com/), [Tijdelijke licentie](https://purchase.aspose.com/temporary-license/) , En[Steun](https://forum.aspose.com/c/words/8).

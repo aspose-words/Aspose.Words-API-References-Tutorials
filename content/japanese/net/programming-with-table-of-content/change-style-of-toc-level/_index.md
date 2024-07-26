@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### Q: Aspose.Words for .NET を使用して、目次の複数レベルのスタイルを変更できますか?
 
- A: はい、Aspose.Words for .NETを使用して、目次の複数のレベルのスタイルを変更できます。特定のレベルのスタイルを変更するには、`Styles`プロパティを選択し、各レベルに対して個別に必要な変更を加えます。
+A: はい、Aspose.Words for .NETを使用して、目次の複数のレベルのスタイルを変更できます。特定のレベルのスタイルを変更するには、`Styles`プロパティを選択し、各レベルに対して個別に必要な変更を加えます。
 
 #### Q: Aspose.Words for .NET を使用して目次のスタイルを変更した後、変更したドキュメントを保存するにはどうすればよいですか?
 
@@ -117,7 +117,7 @@ A: はい、スタイルの変更に加えて、Aspose.Words for .NET を使用�
 
 #### Q: Aspose.Words for .NET を使用して、既存の Word 文書の目次のスタイルを変更できますか?
 
- A: はい、Aspose.Words for .NETを使用して既存のWord文書の目次のスタイルを変更できます。`Document`クラスでは、スタイルプロパティを`Styles`プロパティを選択し、ドキュメントを保存して変更を適用します。
+A: はい、Aspose.Words for .NETを使用して既存のWord文書の目次のスタイルを変更できます。`Document`クラスでは、スタイルプロパティを`Styles`プロパティを選択し、ドキュメントを保存して変更を適用します。
 
 #### Q: Aspose.Words for .NET は、Word 文書内の他のスタイルや書式の変更をサポートしていますか?
 

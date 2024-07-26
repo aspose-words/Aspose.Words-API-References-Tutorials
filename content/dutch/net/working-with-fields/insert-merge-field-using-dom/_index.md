@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 5: Verplaats de cursor naar een specifieke paragraaf
+## Stap 5: Verplaats de cursor naar een specifieke alinea
 
 Vervolgens moeten we de cursor naar een specifieke paragraaf in het document verplaatsen waar we het samenvoegveld willen invoegen.
 

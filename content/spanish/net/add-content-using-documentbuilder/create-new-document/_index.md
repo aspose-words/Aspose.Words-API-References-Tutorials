@@ -81,7 +81,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 
 ## Conclusión
 
-¡Felicidades! Ha dado sus primeros pasos en el mundo de la automatización de documentos con Aspose.Words para .NET. Comenzamos desde cero, configuramos nuestro entorno, creamos un nuevo documento, agregamos contenido y lo guardamos. Esto es sólo la punta del iceberg. Con Aspose.Words, puede manipular documentos de maneras que nunca creyó posibles: fusionar documentos, agregar imágenes, crear tablas y mucho más.
+¡Felicidades! Ha dado sus primeros pasos en el mundo de la automatización de documentos con Aspose.Words para .NET. Comenzamos desde cero, configuramos nuestro entorno, creamos un nuevo documento, agregamos contenido y lo guardamos. Esto es sólo la punta del iceberg. Con Aspose.Words, puede manipular documentos de formas que nunca creyó posibles: fusionar documentos, agregar imágenes, crear tablas y mucho más.
 
 ## Preguntas frecuentes
 

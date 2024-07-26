@@ -15,7 +15,7 @@ url: /es/net/working-with-section/delete-all-sections/
 
 Antes de sumergirnos, asegurémonos de que tiene todo lo que necesita. Esto es lo que necesitará para comenzar:
 
--  Aspose.Words para .NET: puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: puede descargarlo desde[aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: cualquier IDE compatible con .NET (como Visual Studio).
 - Conocimientos básicos de C#: esto le ayudará a comprender mejor los fragmentos de código.
 - Un documento de Word: un documento de entrada con el que trabajar.

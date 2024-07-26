@@ -12,7 +12,7 @@ mai digitális korban a dokumentumok formázása döntő szerepet játszik az in
 
 ## Az Aspose.Words for Python bemutatása
 
-Az Aspose.Words for Python egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy Python programozással dolgozzanak Word dokumentumokkal. Funkciók széles skáláját kínálja Word-dokumentumok programozott létrehozásához, szerkesztéséhez és formázásához, és a dokumentumkezelés zökkenőmentes integrációját kínálja Python-alkalmazásaiba.
+Az Aspose.Words for Python egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára, hogy Python programozással dolgozzanak Word dokumentumokkal. Funkciók széles skáláját kínálja a Word-dokumentumok programozott létrehozásához, szerkesztéséhez és formázásához, és a dokumentumkezelés zökkenőmentes integrációját kínálja Python-alkalmazásaiba.
 
 ## Első lépések: Az Aspose.Words telepítése
 

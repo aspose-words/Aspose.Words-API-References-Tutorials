@@ -13,5 +13,5 @@ Xử lý từ với MarkdownSaveOptions là tài nguyên chuyên sâu hướng d
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Xuất sang Markdown với việc căn chỉnh nội dung bảng](./export-into-markdown-with-table-content-alignment/) | Tìm hiểu cách xuất nội dung bảng với các cách sắp xếp khác nhau sang tệp Markdown bằng Aspose.Words cho .NET. |
-| [Đặt thư mục hình ảnh](./set-images-folder/) | Tìm hiểu cách đặt thư mục hình ảnh khi xuất sang Markdown bằng Aspose.Words cho .NET. Tùy chỉnh vị trí của hình ảnh để tổ chức và tích hợp tốt hơn.|
+| [Xuất sang Markdown với việc căn chỉnh nội dung bảng](./export-into-markdown-with-table-content-alignment/) | Tìm hiểu cách xuất tài liệu Word sang Markdown với các bảng được căn chỉnh bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để có bảng Markdown hoàn hảo. |
+| [Đặt thư mục hình ảnh](./set-images-folder/) | Chuyển đổi tài liệu Word sang Markdown với căn chỉnh bảng thích hợp bằng Aspose.Words for .NET. Thực hiện theo hướng dẫn chi tiết của chúng tôi để có kết quả hoàn hảo. |

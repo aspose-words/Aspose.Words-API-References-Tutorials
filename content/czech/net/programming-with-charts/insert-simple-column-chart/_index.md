@@ -94,4 +94,4 @@ Ano, dokumenty obsahující grafy můžete bez problémů exportovat do různýc
 Ano, Aspose.Words for .NET vám umožňuje dynamicky naplňovat grafy daty z externích zdrojů, jako jsou databáze nebo API.
 
 ### Kde najdu další zdroje a podporu pro Aspose.Words pro .NET?
- Navštivte[Aspose.Words pro .NET dokumentaci](https://reference.aspose.com/words/net/) pro podrobné odkazy a příklady API. Pro podporu můžete také navštívit[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Navštivte[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) pro podrobné API reference a příklady. Pro podporu můžete také navštívit[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).

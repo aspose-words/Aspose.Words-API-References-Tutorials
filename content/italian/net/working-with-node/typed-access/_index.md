@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-node/typed-access/
 ---
 
-Ecco una guida passo passo per spiegare il codice sorgente C# di seguito che illustra come utilizzare la funzionalità di accesso digitato con Aspose.Words per .NET.
+Ecco una guida passo passo per spiegare il codice sorgente C# di seguito che illustra come utilizzare la funzionalità di accesso tipizzato con Aspose.Words per .NET.
 
 ## Passaggio 1: importa i riferimenti necessari
 Prima di iniziare, assicurati di aver importato i riferimenti necessari per utilizzare Aspose.Words per .NET nel tuo progetto. Ciò include l'importazione della libreria Aspose.Words e l'aggiunta degli spazi dei nomi richiesti al file di origine.

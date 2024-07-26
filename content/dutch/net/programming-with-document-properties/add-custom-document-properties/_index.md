@@ -89,7 +89,7 @@ Laten we een eigenschap toevoegen om de autorisatiedatum op te slaan. Dit helpt 
 customDocumentProperties.Add("Authorized Date", DateTime.Today);
 ```
 
- Dit fragment voegt een eigenschap toe met de naam 'Geautoriseerde datum', met de huidige datum als waarde. De`DateTime.Today`eigenschap haalt automatisch de datum van vandaag op.
+ Dit fragment voegt een eigenschap toe met de naam 'Geautoriseerde datum', met de huidige datum als waarde. De`DateTime.Today`property haalt automatisch de datum van vandaag op.
 
 ## Stap 7: Een revisienummer toevoegen
 

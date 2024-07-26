@@ -84,7 +84,7 @@ HarfBuzz, farklı formatlarda tutarlı metin oluşturma sağlayan, metin şekill
 
 ### 4. HarfBuzz Java uygulamalarıyla uyumlu mu?
 
-Evet, HarfBuzz Java uygulamalarıyla uyumludur ve Aspose.Words for Java ile kolayca entegre edilebilir.
+Evet, HarfBuzz Java uygulamalarıyla uyumludur ve Aspose.Words for Java ile kolaylıkla entegre edilebilir.
 
 ### 5. Aspose.Words for Java hakkında nereden daha fazla bilgi edinebilirim?
 

@@ -10,7 +10,7 @@ url: /zh-hant/java/document-loading-and-saving/saving-documents-as-odt-format/
 
 ## 在 Aspose.Words for Java 中將文件儲存為 ODT 格式簡介
 
-在本文中，我們將探討如何使用 Aspose.Words for Java 將文件儲存為 ODT（開放文件文字）格式。 ODT 是一種流行的開放標準文件格式，並被各種辦公室套件使用，包括 OpenOffice 和 LibreOffice。透過將文件儲存為 ODT 格式，您可以確保與這些軟體包的相容性。
+在本文中，我們將探討如何使用 Aspose.Words for Java 將文件儲存為 ODT（開放文件文字）格式。 ODT 是一種流行的開放標準文件格式，被各種辦公室套件使用，包括 OpenOffice 和 LibreOffice。透過將文件儲存為 ODT 格式，您可以確保與這些軟體包的相容性。
 
 ## 先決條件
 

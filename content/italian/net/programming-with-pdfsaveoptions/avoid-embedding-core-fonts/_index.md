@@ -2,95 +2,97 @@
 title: Riduci le dimensioni del file PDF non incorporando i caratteri principali
 linktitle: Riduci le dimensioni del file PDF non incorporando i caratteri principali
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come ridurre le dimensioni del file PDF non incorporando i caratteri principali durante la conversione di documenti Word in PDF con Aspose.Words per .NET.
+description: Scopri come ridurre le dimensioni del file PDF non incorporando i caratteri principali utilizzando Aspose.Words per .NET. Segui la nostra guida passo passo per ottimizzare i tuoi PDF.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## introduzione
 
-In questo tutorial, ti guideremo attraverso i passaggi su come ridurre le dimensioni del file PDF non incorporando i caratteri principali con Aspose.Words per .NET. Questa funzione consente di controllare se i caratteri di base come Arial, Times New Roman, ecc. devono essere incorporati nel PDF durante la conversione di un documento Word. Seguire i passaggi seguenti:
+Ti capita mai di grattarti la testa chiedendoti perché i tuoi file PDF sono così grandi? Beh, non sei solo. Un colpevole comune è l’incorporamento di caratteri principali come Arial e Times New Roman. Fortunatamente, Aspose.Words per .NET ha un modo ingegnoso per affrontare questo problema. In questo tutorial, ti mostrerò come ridurre le dimensioni del tuo file PDF evitando l'incorporamento di questi caratteri principali. Immergiamoci subito!
 
-## Passaggio 1: caricamento del documento
+## Prerequisiti
 
-Inizia caricando il documento Word che desideri convertire in PDF:
+Prima di intraprendere questo entusiasmante viaggio, assicuriamoci che tu abbia tutto ciò di cui hai bisogno. Ecco una rapida lista di controllo:
+
+-  Aspose.Words per .NET: assicurati di avere Aspose.Words per .NET installato. Se non lo hai ancora, puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+- Ambiente di sviluppo: avrai bisogno di un ambiente di sviluppo come Visual Studio.
+- Un documento Word: utilizzeremo un documento Word (ad esempio "Rendering.docx") per questo tutorial.
+- Conoscenza di base di C#: una conoscenza di base di C# ti aiuterà a proseguire.
+
+Bene, ora che è tutto pronto, passiamo al nocciolo della questione!
+
+## Importa spazi dei nomi
+
+Per prima cosa, importiamo gli spazi dei nomi necessari. Questo passaggio garantisce l'accesso a tutte le funzionalità Aspose.Words di cui abbiamo bisogno.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Passaggio 1: inizializza la directory dei documenti
+
+Prima di iniziare a manipolare il nostro documento, dobbiamo specificare la directory in cui sono archiviati i nostri documenti. Questo è essenziale per accedere ai file.
+
+```csharp
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo in cui si trova il documento Word.
+
+## Passaggio 2: caricare il documento Word
+
+Successivamente, dobbiamo caricare il documento Word che vogliamo convertire in PDF. In questo esempio, stiamo utilizzando un documento denominato "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Assicurati di specificare il percorso corretto del tuo documento Word.
+Questa riga di codice carica il documento in memoria, pronto per ulteriori elaborazioni.
 
-## Passaggio 2: imposta le opzioni di conversione PDF
+## Passaggio 3: configura le opzioni di salvataggio del PDF
 
-Crea un'istanza della classe PdfSaveOptions e abilita l'elusione dell'incorporamento dei caratteri di base:
+Ora arriva la parte magica! Configureremo le opzioni di salvataggio del PDF per evitare di incorporare i caratteri principali. Questo è il passaggio chiave che aiuta a ridurre le dimensioni del file PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-Questa opzione controlla se i caratteri di base devono essere incorporati o meno nel PDF.
+ Collocamento`UseCoreFonts` A`true` garantisce che i caratteri principali come Arial e Times New Roman non siano incorporati nel PDF, riducendo significativamente le dimensioni del file.
 
-## Passaggio 3: converti il documento in PDF
+## Passaggio 4: salva il documento come PDF
 
- Usa il`Save` metodo per convertire il documento Word in PDF specificando le opzioni di conversione:
+Infine, salviamo il documento Word come PDF utilizzando le opzioni di salvataggio configurate. Questo passaggio genera il file PDF senza incorporare i caratteri principali.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Assicurati di specificare il percorso corretto per salvare il PDF convertito.
-
-### Codice sorgente di esempio per evitare di incorporare caratteri principali utilizzando Aspose.Words per .NET
-
-Ecco il codice sorgente completo per utilizzare la funzionalità per evitare l'incorporamento dei caratteri principali con Aspose.Words per .NET:
-
-```csharp
-
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Il PDF di output non verrà incorporato con caratteri principali come Arial, Times New Roman ecc.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-Seguendo questi passaggi, puoi facilmente controllare se i caratteri di base devono essere incorporati nel PDF durante la conversione di un documento Word con Aspose.Words per .NET.
-
+E il gioco è fatto! Il tuo file PDF è ora salvato nella directory specificata senza quei caratteri principali ingombranti.
 
 ## Conclusione
 
-In questo tutorial, abbiamo spiegato come ridurre le dimensioni di un file PDF non incorporando caratteri di base con Aspose.Words per .NET. Questa funzionalità ti consente di controllare se i caratteri di base devono essere incorporati nel PDF durante la conversione di un documento Word. Seguendo i passaggi descritti, puoi controllare facilmente l'incorporamento o il non incorporamento dei caratteri di base, il che può aiutare a ridurre le dimensioni del file PDF e garantire una migliore compatibilità e un aspetto coerente del documento su diversi dispositivi e piattaforme. Non dimenticare di considerare le conseguenze della mancata incorporazione dei caratteri di base e di sperimentare per garantire che il documento venga visualizzato come previsto.
+Ridurre le dimensioni del file PDF può essere un gioco da ragazzi con Aspose.Words per .NET. Evitando l'incorporamento dei caratteri principali, puoi ridurre significativamente le dimensioni del file, facilitando la condivisione e l'archiviazione dei tuoi documenti. Spero che questo tutorial sia stato utile e ti abbia dato una chiara comprensione del processo. Ricorda, piccoli accorgimenti possono fare una grande differenza!
 
-### Domande frequenti
+## Domande frequenti
 
-#### D: Qual è l'opzione per non incorporare i caratteri di base in un file PDF e perché è importante?
-R: L'opzione per non incorporare i caratteri di base in un file PDF controlla se i caratteri di base come Arial, Times New Roman, ecc. devono essere incorporati nel PDF durante la conversione di un documento Word. Questo può essere importante per ridurre la dimensione del file PDF evitando di includere caratteri comunemente disponibili sui sistemi di lettura PDF. Può anche contribuire a garantire una migliore compatibilità e un aspetto coerente del documento PDF su diversi dispositivi e piattaforme.
+### Perché dovrei evitare di incorporare i caratteri principali nei PDF?
+Evitare di incorporare i caratteri principali riduce le dimensioni del file, facilitandone la condivisione e l'archiviazione.
 
-#### D: Come posso configurare Aspose.Words per .NET per non incorporare i caratteri di base in un file PDF?
-R: Per configurare Aspose.Words per .NET per non incorporare i caratteri principali in un file PDF, attenersi alla seguente procedura:
+### Posso comunque visualizzare correttamente il PDF senza i caratteri principali incorporati?
+Sì, i caratteri principali come Arial e Times New Roman sono generalmente disponibili sulla maggior parte dei sistemi.
 
- Imposta il percorso della directory in cui si trovano i tuoi documenti sostituendo`"YOUR DOCUMENTS DIRECTORY"` con il percorso effettivo della directory dei documenti.
+### Cosa succede se devo incorporare caratteri personalizzati?
+ Puoi personalizzare il`PdfSaveOptions`per incorporare caratteri specifici secondo necessità.
 
- Carica il documento Word che desideri convertire in PDF utilizzando il file`Document` classe e il percorso del documento specificato.
+### Aspose.Words per .NET è gratuito?
+ Aspose.Words per .NET richiede una licenza. Puoi ottenere una prova gratuita[Qui](https://releases.aspose.com/).
 
- Crea un'istanza di`PdfSaveOptions` classe e impostare il file`UseCoreFonts`proprietà a`true`. Ciò eviterà l'incorporamento dei caratteri di base nel file PDF generato.
-
- Usa il`Save` metodo del`Document` oggetto per salvare il documento in formato PDF specificando le opzioni di conversione configurate in precedenza.
-
-#### D: Quali sono i vantaggi di non incorporare i caratteri di base in un file PDF?
-R: I vantaggi di non incorporare i caratteri di base in un file PDF sono:
-
-Riduzione delle dimensioni del file PDF: evitando di incorporare caratteri comunemente disponibili come Arial, Times New Roman, ecc., è possibile ridurre le dimensioni del file PDF, semplificando l'archiviazione, la condivisione e il trasferimento dei file.
-
-Migliore compatibilità: utilizzando i caratteri di base comunemente disponibili sui sistemi di lettura PDF, garantisci una migliore compatibilità e aspetto del documento su diversi dispositivi e piattaforme.
-
-#### D: Quali sono le conseguenze se non si incorporano i caratteri di base in un file PDF?
-R: Le conseguenze della mancata incorporazione dei caratteri di base in un file PDF sono le seguenti:
-
-Aspetto diverso: se i caratteri di base non sono disponibili nel sistema in cui viene aperto il PDF, verranno utilizzati caratteri sostitutivi, il che potrebbe comportare un aspetto diverso da quello previsto.
-
-Problemi di leggibilità: i caratteri sostitutivi utilizzati potrebbero non essere leggibili come i caratteri originali, il che potrebbe influire sulla leggibilità del documento.
+### Dove posso trovare ulteriore documentazione su Aspose.Words per .NET?
+ Puoi trovare documentazione dettagliata[Qui](https://reference.aspose.com/words/net/).

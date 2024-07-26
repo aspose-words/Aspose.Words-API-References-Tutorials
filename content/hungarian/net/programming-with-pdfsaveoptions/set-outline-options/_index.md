@@ -2,88 +2,102 @@
 title: Állítsa be a vázlatbeállításokat egy PDF-dokumentumban
 linktitle: Állítsa be a vázlatbeállításokat egy PDF-dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre a vázlatbeállítások megadásához PDF-dokumentumban az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan állíthat be vázlatbeállításokat egy PDF-dokumentumban az Aspose.Words for .NET használatával. Javítsa a PDF navigációt a címsorszintek és a kiterjesztett körvonalak konfigurálásával.
 type: docs
 weight: 10
 url: /hu/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
+## Bevezetés
 
-Ez a cikk lépésről lépésre ismerteti, hogyan használhatja a beállított vázlatbeállításokat a metafájlméret funkcióhoz az Aspose.Words for .NET-ben. Részletesen elmagyarázzuk a kód minden részét. Az oktatóanyag végén megtudhatja, hogyan állíthat be vázlatbeállításokat egy dokumentumban, és hogyan hozhat létre PDF-et a megfelelő vázlatbeállításokkal.
+Amikor dokumentumokkal dolgozik, különösen szakmai vagy tanulmányi célokra, döntő fontosságú a tartalom hatékony rendszerezése. A PDF-dokumentumok használhatóságának javításának egyik módja a vázlatbeállítások megadása. A körvonalak vagy könyvjelzők segítségével a felhasználók hatékonyan navigálhatnak a dokumentumban, akárcsak egy könyv fejezetei között. Ebben az útmutatóban bemutatjuk, hogyan állíthatja be ezeket a beállításokat az Aspose.Words for .NET használatával, így biztosítva, hogy PDF-fájljai jól szervezett és felhasználóbarátak legyenek.
 
-Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
+## Előfeltételek
 
-## 1. lépés: Határozza meg a dokumentumkönyvtárat
+Mielőtt elkezdené, néhány dolgot meg kell győződnie arról, hogy rendelkezik:
 
- A kezdéshez meg kell határoznia annak a könyvtárnak az elérési útját, ahol a dokumentumok találhatók. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha nem, akkor megteheti[töltse le a legújabb verziót innen](https://releases.aspose.com/words/net/).
+2. .NET fejlesztői környezet: Szüksége lesz egy működő .NET fejlesztői környezetre, például a Visual Studiora.
+3. A C# alapvető ismerete: A C# programozási nyelv ismerete segít a könnyebb követésben.
+4. Word-dokumentum: Készítsen egy Word-dokumentumot, amelyet PDF-be konvertálhat.
+
+## Névterek importálása
+
+Először is importálnia kell a szükséges névtereket. Itt helyezheti el az Aspose.Words könyvtárat a dokumentummal való interakcióhoz. A következőképpen állíthatja be:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1. lépés: Határozza meg a dokumentum elérési útját
+
+A kezdéshez meg kell adnia a Word-dokumentum elérési útját. Ez az a fájl, amelyet PDF formátumba szeretne konvertálni a vázlat opciókkal. 
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 2. lépés: Töltse fel a dokumentumot
-
-Ezután be kell töltenünk a feldolgozni kívánt dokumentumot. Ebben a példában feltételezzük, hogy a dokumentum neve "Rendering.docx", és a megadott dokumentumkönyvtárban található.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. lépés: Konfigurálja a mentés PDF-ként opciókat a tervbeállításokkal
+ A fenti kódrészletben cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával. Ez megmondja a programnak, hogy hol találja meg a Word dokumentumot.
 
- generált PDF-ben a vázlatbeállítások beállításához konfigurálnunk kell a`PdfSaveOptions` tárgy. Beállíthatjuk a címsorvázlat szintek számát (`HeadingsOutlineLevels`) és a kibontott körvonalszintek száma (`ExpandedOutlineLevels`).
+## 2. lépés: Konfigurálja a PDF mentési beállításokat
+
+ Ezután konfigurálnia kell a PDF-mentési beállításokat. Ez magában foglalja a körvonalak kezelésének módját a PDF-kimenetben. Használni fogod a`PdfSaveOptions` osztályt erre.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
+```
+
+Most állítsuk be a vázlatbeállításokat. 
+
+### Állítsa be a címsorok vázlatszintjeit
+
+ A`HeadingsOutlineLevels` tulajdonság határozza meg, hogy hány szintű címsor szerepeljen a PDF-vázlatban. Ha például 3-ra állítja, akkor legfeljebb három szintű címsort fog tartalmazni a PDF-vázlatban.
+
+```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
+```
+
+### Állítsa be a kiterjesztett körvonalszinteket
+
+ A`ExpandedOutlineLevels` tulajdonság azt szabályozza, hogy a vázlat hány szintje legyen kibontva alapértelmezés szerint a PDF megnyitásakor. Ha ezt 1-re állítja, akkor a legfelső szintű címsorok kibővülnek, így áttekinthetőek lesznek a fő szakaszok.
+
+```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 ```
 
-## 4. lépés: Mentse el a dokumentumot PDF formátumban a vázlat opciókkal
+## 3. lépés: Mentse el a dokumentumot PDF formátumban
 
-Végül elmenthetjük a dokumentumot PDF formátumban a korábban beállított mentési opciókkal.
+ A konfigurált beállításokkal készen áll a dokumentum PDF formátumban történő mentésére. Használja a`Save` módszere a`Document` osztályt, és adja meg a fájl elérési útját és a mentési beállításokat.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-Ez minden ! Sikeresen beállította a vázlatbeállításokat egy dokumentumban, és az Aspose.Words for .NET segítségével PDF-et hozott létre a megfelelő vázlatbeállításokkal.
-
-### Példa forráskódra a tervbeállítások metafájl méretének beállításához az Aspose.Words for .NET segítségével
-
-
-```csharp
-
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
-	saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
-   
-```
+Ez a kódsor PDF formátumban menti a Word-dokumentumot, a konfigurált vázlatbeállítások alkalmazásával. 
 
 ## Következtetés
 
-Ebben az oktatóanyagban elmagyaráztuk, hogyan állíthat be vázlatbeállításokat egy PDF-dokumentumban az Aspose.Words for .NET használatával. A leírt lépések segítségével egyszerűen megadhatja a címsor és a vázlat szintjeit a dokumentumban, és létrehozhat egy PDF-fájlt a megfelelő vázlatopciókkal. Az Aspose.Words for .NET használatával javíthatja a PDF-dokumentumok szerkezetét és navigálását az vázlat opció előnyeit.
+A vázlatbeállítások megadása a PDF-dokumentumban nagymértékben javíthatja annak navigálhatóságát, megkönnyítve a felhasználók számára a szükséges szakaszok megtalálását és elérését. Az Aspose.Words for .NET segítségével könnyedén konfigurálhatja ezeket a beállításokat igényeinek megfelelően, így biztosítva, hogy PDF-dokumentumai a lehető legfelhasználóbarátabbak legyenek.
 
-### Gyakran Ismételt Kérdések
+## GYIK
 
-#### K: Mi a vázlat opció egy PDF-dokumentumban?
-V: A PDF-dokumentumban a vázlat opció a dokumentum tartalmának hierarchikus szerkezetére utal. Lehetővé teszi interaktív tartalomjegyzék létrehozását, és megkönnyíti a navigációt a dokumentumban. A vázlatbeállítások határozzák meg a vázlatban szereplő cím- és feliratszinteket, valamint a generált vázlatban megjelenítendő részletezési szintet.
+### Mi a célja a vázlatbeállítások megadásának a PDF-ben?
 
-#### K: Hogyan állíthatok be vázlatbeállításokat egy PDF-dokumentumban az Aspose.Words for .NET használatával?
-V: Az Aspose.Words for .NET használatával PDF-dokumentumban a vázlatbeállítások megadásához kövesse az alábbi lépéseket:
+A vázlatbeállítások megadásával a felhasználók könnyebben navigálhatnak a nagy PDF-dokumentumok között azáltal, hogy strukturált, kattintható tartalomjegyzéket biztosítanak.
 
- Cseréléssel állítsa be a könyvtár elérési útját, ahol a dokumentumok találhatók`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+### Beállíthatok különböző címsorszinteket a dokumentumom különböző szakaszaihoz?
 
- Töltse be a PDF-be konvertálni kívánt dokumentumot a`Document` osztályt, és adja meg a dokumentum elérési útját a megadott dokumentumok könyvtárban.
+Nem, a vázlatbeállítások globálisan érvényesek a teljes dokumentumra. A dokumentumot azonban megfelelő címsorszintekkel strukturálhatja, hogy hasonló hatást érjen el.
 
- Konfigurálja a mentés PDF-ként opcióit a példány létrehozásával`PdfSaveOptions` osztályban és a`OutlineOptions` tulajdonság a vázlatbeállítások beállításához. A vázlatban szereplő címsorszintek számát a gombbal adhatja meg`HeadingsOutlineLevels` tulajdonság és a kiterjesztett körvonalszintek száma a segítségével`ExpandedOutlineLevels` ingatlan.
+### Hogyan tekinthetem meg a módosítások előnézetét a PDF mentése előtt?
 
- Mentse el a dokumentumot PDF formátumban a`Save` módszere a`Document` osztály, amely megadja az elérési utat és a mentési lehetőségeket.
+A vázlatos navigációt támogató PDF-megtekintők segítségével ellenőrizheti a vázlat megjelenését. Egyes alkalmazások előnézeti funkciót biztosítanak ehhez.
 
-#### K: Mi a terv opció egy PDF-dokumentumban?
-V: A PDF-dokumentumban található vázlat opció lehetővé teszi a tartalom hierarchikus szerkezetének létrehozását, amely megkönnyíti a dokumentumban való navigálást és a különböző szakaszok elérését. Ez lehetővé teszi a felhasználók számára, hogy a tartalomjegyzék vagy a vázlat bejegyzéseire kattintva gyorsan a dokumentum adott részeire ugorjanak. A vázlat opció az olvasási élményt is javítja azáltal, hogy áttekintést nyújt a dokumentum általános szerkezetéről.
+### Eltávolítható a körvonal a PDF mentése után?
+
+Igen, eltávolíthatja a körvonalakat PDF-szerkesztő szoftverrel, de ez közvetlenül nem érhető el az Aspose.Words segítségével a PDF létrehozása után.
+
+### Milyen egyéb PDF-mentési lehetőségeket konfigurálhatok az Aspose.Words segítségével?
+
+Az Aspose.Words különféle lehetőségeket kínál, például a PDF megfelelőségi szintjének beállítását, a betűtípusok beágyazását és a képminőség beállítását.

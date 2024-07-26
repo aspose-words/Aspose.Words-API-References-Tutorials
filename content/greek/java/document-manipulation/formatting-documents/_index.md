@@ -112,7 +112,7 @@ builder.write("I'm a formatted paragraph with double border and nice shading.");
 doc.save("ApplyBordersAndShadingToParagraph.docx");
 ```
 
-## Αλλαγή διαστήματος ασιατικών παραγράφων και εσοχών
+## Αλλαγή ασιατικών διαστημάτων και εσοχών παραγράφων
 
 Βελτιώστε την απόσταση και τις εσοχές παραγράφων για ασιατικό κείμενο:
 

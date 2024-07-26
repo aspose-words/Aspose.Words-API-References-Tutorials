@@ -104,7 +104,7 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
 
 Här laddar vi dokumentet som ska infogas och anropar sedan en hjälpmetod för att utföra infogningen.
 
-## Steg 6: Definiera metoden Infoga dokument
+## Steg 6: Definiera metoden för att infoga dokument
 
 Den sista biten i vårt pussel är metoden som faktiskt infogar dokumentet på den angivna platsen.
 

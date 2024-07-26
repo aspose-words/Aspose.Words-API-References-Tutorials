@@ -48,7 +48,7 @@ Nu när vi har vårt dokument laddat är nästa steg att rensa alla avsnitt. Det
 doc.Sections.Clear();
 ```
 
-Denna enkla kodrad rensar alla avsnitt i det inlästa dokumentet. Men hur fungerar det? Låt oss dela upp det:
+Denna enkla kodrad rensar alla avsnitt i det inlästa dokumentet. Men hur fungerar det? Låt oss bryta ner det:
 
 - `doc.Sections` åtkomst till avsnitten i dokumentet.
 - `.Clear()` tar bort alla avsnitt från dokumentet.

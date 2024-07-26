@@ -2,94 +2,87 @@
 title: Reduza o tamanho do PDF desativando fontes incorporadas
 linktitle: Reduza o tamanho do PDF desativando fontes incorporadas
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como reduzir o tamanho do PDF desabilitando a incorporação de fontes do Windows ao converter documentos em PDF com Aspose.Words for .NET.
+description: Reduza o tamanho do PDF desativando fontes incorporadas usando Aspose.Words for .NET. Siga nosso guia passo a passo para otimizar seus documentos para armazenamento e compartilhamento eficientes.
 type: docs
 weight: 10
 url: /pt/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
+## Introdução
 
-Neste tutorial, orientaremos você nas etapas para reduzir o tamanho do PDF desabilitando a incorporação de fontes do Windows em um documento PDF com Aspose.Words for .NET. Ao desativar a incorporação de fontes, você pode reduzir o tamanho do arquivo PDF gerado. Siga os passos abaixo:
+Reduzir o tamanho dos arquivos PDF pode ser crucial para um armazenamento eficiente e um compartilhamento rápido. Uma maneira eficaz de fazer isso é desabilitar as fontes incorporadas, especialmente quando as fontes padrão já estão disponíveis na maioria dos sistemas. Neste tutorial, exploraremos como reduzir o tamanho do PDF desativando fontes incorporadas usando Aspose.Words for .NET. Percorreremos cada etapa para garantir que você possa implementar isso facilmente em seus próprios projetos.
 
-## Passo 1: Carregando o documento
+## Pré-requisitos
 
-Comece enviando o documento que deseja converter para PDF:
+Antes de mergulhar no código, certifique-se de ter o seguinte:
+
+-  Aspose.Words for .NET: Se ainda não o fez, baixe e instale-o no[Link para Download](https://releases.aspose.com/words/net/).
+- Um ambiente de desenvolvimento .NET: o Visual Studio é uma escolha popular.
+- Um exemplo de documento do Word: tenha um arquivo DOCX pronto que deseja converter em PDF.
+
+## Importar namespaces
+
+Para começar, certifique-se de ter os namespaces necessários importados para o seu projeto. Isso permite que você acesse as classes e métodos necessários para nossa tarefa.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Vamos dividir o processo em etapas simples e gerenciáveis. Cada etapa irá guiá-lo através da tarefa, garantindo que você entenda o que está acontecendo em cada ponto.
+
+## Etapa 1: inicialize seu documento
+
+Primeiro, precisamos carregar o documento Word que deseja converter em PDF. É aqui que sua jornada começa.
+
+```csharp
+// O caminho para o diretório de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Certifique-se de especificar o caminho correto para o seu documento.
+ Aqui,`dataDir` é um espaço reservado para o diretório onde seu documento está localizado. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real.
 
-## Passo 2: Definir opções para salvar PDF
+## Passo 2: Configurar opções para salvar PDF
 
-Crie uma instância da classe PdfSaveOptions e especifique como incorporar fontes:
+A seguir, configuraremos as opções de salvamento do PDF. É aqui que especificamos que não queremos incorporar as fontes padrão do Windows.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
+// O PDF de saída será salvo sem incorporar fontes padrão do Windows.
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone
+};
 ```
 
-Esta opção permite desativar a integração de fontes do Windows no arquivo PDF gerado.
+ Definindo`FontEmbeddingMode` para`EmbedNone`, instruímos o Aspose.Words a não incluir essas fontes no PDF, reduzindo o tamanho do arquivo.
 
-## Passo 3: Converter Documento em PDF
+## Etapa 3: salve o documento como PDF
 
- Use o`Save` método para converter o documento em PDF especificando opções de conversão:
+Por fim, salvamos o documento como PDF usando as opções de salvamento configuradas. Este é o momento da verdade onde o seu DOCX se transforma em um PDF compacto.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-Certifique-se de especificar o caminho correto para salvar o PDF convertido.
-
-### Exemplo de código-fonte para desativar fontes incorporadas do Windows usando Aspose.Words for .NET
-
-Aqui está o código-fonte completo para desativar a incorporação de fontes do Windows em um documento PDF com Aspose.Words for .NET:
-
-```csharp
-
-	// O caminho para o diretório de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// O PDF de saída será salvo sem incorporar fontes padrão do Windows.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
-
-```
-Seguindo essas etapas, você pode facilmente desabilitar a incorporação de fontes do Windows em um documento PDF com Aspose.Words for .NET.
-
+ Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho do diretório real mais uma vez. O PDF de saída agora será salvo no diretório especificado sem fontes padrão incorporadas.
 
 ## Conclusão
 
-Neste tutorial, aprendemos como reduzir o tamanho de um arquivo PDF desativando a incorporação de fontes do Windows usando Aspose.Words for .NET. Ao desativar a incorporação de fontes, você pode reduzir o tamanho do arquivo PDF gerado, facilitando o armazenamento, o compartilhamento e a transferência de arquivos. No entanto, é importante observar que desabilitar a incorporação de fontes do Windows pode causar alterações na aparência e na formatação do documento PDF final. Certifique-se de considerar essas consequências ao usar esse recurso. Sinta-se à vontade para explorar mais recursos do Aspose.Words for .NET para otimizar a geração de seus arquivos PDF.
+Seguindo estas etapas, você pode reduzir significativamente o tamanho dos seus arquivos PDF. Desativar fontes incorporadas é uma maneira simples, porém eficaz, de tornar seus documentos mais leves e fáceis de compartilhar. Aspose.Words for .NET torna esse processo perfeito, garantindo que você possa otimizar seus arquivos com o mínimo de esforço.
 
-### perguntas frequentes
+## Perguntas frequentes
 
-#### P: O que é desabilitar a incorporação de fontes do Windows em um documento PDF e por que isso é importante?
-R: Desabilitar a incorporação de fontes do Windows em um documento PDF é o processo que evita que fontes do Windows sejam incluídas no arquivo PDF gerado. Isso reduz o tamanho do arquivo PDF removendo dados de fontes incorporados do Windows. Isso pode ser importante para reduzir o tamanho dos arquivos PDF, o que pode torná-los mais fáceis de armazenar, compartilhar e transferir com mais rapidez.
+### Por que devo desabilitar fontes incorporadas em um PDF?
+Desativar fontes incorporadas pode reduzir significativamente o tamanho do arquivo de um PDF, tornando-o mais eficiente para armazenamento e mais rápido para compartilhar.
 
-#### P: Como posso desativar a incorporação de fontes do Windows em um documento PDF usando Aspose.Words for .NET?
-R: Para desativar a incorporação de fontes do Windows em um documento PDF usando Aspose.Words for .NET, siga estas etapas:
+### O PDF ainda será exibido corretamente sem fontes incorporadas?
+Sim, desde que as fontes sejam padrão e estejam disponíveis no sistema onde o PDF é visualizado, ele será exibido corretamente.
 
- Carregue o documento que deseja converter para PDF usando o`Document` classe e caminho do documento.
+### Posso incorporar seletivamente apenas determinadas fontes em um PDF?
+Sim, o Aspose.Words for .NET permite que você personalize quais fontes são incorporadas, proporcionando flexibilidade na forma como você reduz o tamanho do arquivo.
 
- Crie uma instância do`PdfSaveOptions` classe e definir o`FontEmbeddingMode`propriedade para`PdfFontEmbeddingMode.EmbedNone`. Isso desativa a incorporação de fontes do Windows no arquivo PDF gerado.
+### Preciso do Aspose.Words for .NET para desativar fontes incorporadas em PDFs?
+Sim, Aspose.Words for .NET fornece a funcionalidade necessária para configurar opções de incorporação de fontes em PDFs.
 
- Use o`Save` método do`Document` objeto para converter o documento em PDF especificando as opções de conversão configuradas anteriormente.
-
-#### P: Quais são os benefícios de desativar a incorporação de fontes do Windows em um documento PDF?
-R: Os benefícios de desabilitar a incorporação de fontes do Windows em um documento PDF são:
-
-Tamanho reduzido do arquivo PDF: Ao desativar a incorporação de fontes do Windows, os dados de fontes incorporadas do Windows são removidos, reduzindo o tamanho do arquivo PDF gerado.
-
-Armazenamento mais fácil: Arquivos PDF menores são mais fáceis de armazenar, salvar e transferir.
-
-Compartilhamento e transferência mais rápidos: Arquivos PDF menores podem ser compartilhados e transferidos mais rapidamente, economizando tempo e recursos.
-
-#### P: Quais são as consequências de desativar a incorporação de fontes do Windows em um documento PDF?
-R: Desabilitar a incorporação de fontes do Windows em um documento PDF pode levar a consequências como:
-
-Perda de aparência e formatação: Se as fontes do Windows especificadas no documento não estiverem disponíveis no sistema onde o PDF é aberto, serão utilizadas fontes substitutas, o que pode resultar em aparência e formatação incorretas. formato diferente do esperado.
-
-Problemas de legibilidade: Se as fontes substitutas usadas não forem tão legíveis quanto as fontes originais, isso poderá afetar a legibilidade do texto no documento PDF.
+### Como posso obter suporte se encontrar problemas?
+ Você pode visitar o[Fórum de suporte](https://forum.aspose.com/c/words/8) para obter assistência com quaisquer problemas que você encontrar.

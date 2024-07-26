@@ -2,64 +2,112 @@
 title: 使用目标机器的字体
 linktitle: 使用目标机器的字体
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 将 Word 文档转换为使用目标机器字体的固定 HTML。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中使用目标机器的字体。按照我们的分步指南进行无缝字体集成。
 type: docs
 weight: 10
 url: /zh/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
+## 介绍
 
-在 C# 应用程序中将 Word 文档转换为固定 HTML 时，您可能希望使用目标机器的字体来确保呈现的 HTML 保留文档的原始外观和样式。使用 .NET 的 Aspose.Words 库，您可以使用 HtmlFixedSaveOptions 保存选项轻松指定此功能。在本分步指南中，我们将引导您了解如何使用 .NET 的 Aspose.Words 的 C# 源代码，使用 HtmlFixedSaveOptions 将 Word 文档转换为使用目标机器字体的固定 HTML。
+您准备好进入 Aspose.Words for .NET 的迷人世界了吗？系好安全带，因为我们将带您踏上字体的神奇之旅。今天，我们将重点介绍如何在处理 Word 文档时使用目标机器上的字体。无论在哪里查看，这个巧妙的功能都可以确保您的文档看起来完全符合您的预期。让我们开始吧！
 
-## 了解 Aspose.Words 库
+## 先决条件
 
-在深入研究代码之前，了解 .NET 的 Aspose.Words 库非常重要。Aspose.Words 是一个功能强大的库，可用于在包括 .NET 在内的不同平台中创建、编辑、转换和保护 Word 文档。它提供了许多用于操作文档的功能，例如插入文本、更改格式、添加部分等等。
+在我们讨论细节之前，让我们先确保您已准备好所需的一切：
 
-## 加载 Word 文档
+1.  Aspose.Words for .NET：确保已安装 Aspose.Words for .NET 库。如果尚未安装，可以下载[这里](https://releases.aspose.com/words/net/).
+2. 开发环境：您应该设置一个 .NET 开发环境，例如 Visual Studio。
+3. 要使用的文档：准备好一个 Word 文档以供测试。我们将使用名为“带有替代字体的要点.docx”的文档。
 
-第一步是加载要转换为固定 HTML 的 Word 文档。使用 Document 类从源文件加载文档。以下是示例：
+现在我们已经介绍了基础知识，让我们深入研究代码！
 
-```csharp
-Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
-```
+## 导入命名空间
 
-在这个例子中，我们加载位于文档目录中的文档“Bullet points with alternative font.docx”。
-
-## 配置备份选项
-
-下一步是配置转换为固定 HTML 的保存选项。使用 HtmlFixedSaveOptions 类并将 UseTargetMachineFonts 属性设置为 true，以告诉 Aspose.Words 使用目标机器的字体。操作方法如下：
+首先，我们需要导入必要的命名空间。这是我们项目的骨干，连接所有点。
 
 ```csharp
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-我们创建一个新的 HtmlFixedSaveOptions 对象并将 UseTargetMachineFonts 属性设置为 true，以便在转换时使用目标机器的字体。
+## 步骤 1：加载 Word 文档
 
-## 修复 HTML 文档转换
+本教程的第一步是加载 Word 文档。一切从这里开始。我们将使用`Document`来自 Aspose.Words 库的类来实现这一点。
 
-现在我们已经配置了保存选项，我们可以继续将文档转换为固定 HTML。使用 Document 类的 Save 方法通过指定保存选项将转换后的文档保存为固定 HTML 格式。以下是示例：
+### 步骤 1.1：定义文档路径
 
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
-```
-
-在此示例中，我们使用指定的保存选项将转换后的文档保存为“WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html”。
-
-### 使用 Aspose.Words for .NET 的具有“使用目标机器的字体”功能的 HtmlFixedSaveOptions 示例源代码
+首先，我们来定义文档目录的路径。这是您的 Word 文档所在的位置。
 
 ```csharp
 //文档目录的路径
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+### 步骤 1.2：加载文档
+
+现在，我们使用`Document`班级。
+
+```csharp
 //加载 Word 文档
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
+```
 
+## 步骤 2：配置保存选项
+
+接下来，我们需要配置保存选项。这一步至关重要，因为它可以确保文档中使用的字体是目标机器的字体。
+
+我们将创建一个实例`HtmlFixedSaveOptions`并设置`UseTargetMachineFonts`财产`true`.
+
+```csharp
 //使用“使用目标机器的字体”功能配置备份选项
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
+{
+    UseTargetMachineFonts = true
+};
+```
 
+## 步骤 3：保存文档
+
+最后，我们将文档保存为固定的 HTML 文件。这就是奇迹发生的地方！
+
+我们将使用`Save`方法使用配置的保存选项保存文档。
+
+```csharp
 //将文档转换为固定 HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
+## 步骤 4：验证输出
+
+最后但同样重要的是，验证输出总是一个好主意。打开保存的 HTML 文件并检查字体是否从目标机器正确应用。
+
+导航到保存 HTML 文件的目录并在 Web 浏览器中打开它。
+
+```csharp
+//通过打开 HTML 文件验证输出
+System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
+```
+
+就这样！您已成功使用 Aspose.Words for .NET 在 Word 文档中使用了目标机器的字体。
+
 ## 结论
 
-在本指南中，我们解释了如何使用目标机器的字体和适用于 .NET 的 Aspose.Words 库将 Word 文档转换为固定 HTML。通过遵循提供的步骤并使用提供的 C# 源代码，您可以轻松地在 C# 应用程序中应用此功能。使用目标机器的字体转换为固定 HTML 可确保以 HTML 格式忠实一致地呈现文档。
+使用目标机器的字体可确保您的 Word 文档无论在何处查看都看起来一致且专业。Aspose.Words for .NET 使此过程变得简单而高效。通过学习本教程，您已经学会了如何加载文档、配置保存选项以及使用所需的字体设置保存文档。祝您编码愉快！
+
+## 常见问题解答
+
+### 我可以将此方法用于其他文档格式吗？
+是的，Aspose.Words for .NET 支持各种文档格式，您可以为不同的格式配置类似的保存选项。
+
+### 如果目标机器没有所需的字体怎么办？
+如果目标机器没有所需的字体，文档可能无法按预期呈现。必要时嵌入字体总是一个好主意。
+
+### 如何在文档中嵌入字体？
+嵌入字体可以使用`FontSettings`Aspose.Words for .NET 中的类。请参阅[文档](https://reference.aspose.com/words/net/)更多细节。
+
+### 有没有办法在保存之前预览文档？
+是的，您可以使用`DocumentRenderer`类用于在保存之前预览文档。查看 Aspose.Words for .NET[文档](https://reference.aspose.com/words/net/)了解更多信息。
+
+### 我可以进一步自定义 HTML 输出吗？
+当然！`HtmlFixedSaveOptions`类提供了各种属性来自定义 HTML 输出。探索[文档](https://reference.aspose.com/words/net/)所有可用选项。

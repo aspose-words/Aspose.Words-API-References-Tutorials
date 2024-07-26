@@ -120,7 +120,7 @@ doc.Save("ManipulatedDocument.docx");
 
 ### ¿Qué es Aspose.Words para .NET?
 
-Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrolladores crear, manipular y convertir documentos de Word mediante programación usando C# u otros lenguajes .NET.
+Aspose.Words para .NET es una potente biblioteca que permite a los desarrolladores crear, manipular y convertir documentos de Word mediante programación utilizando C# u otros lenguajes .NET.
 
 ### ¿Puedo utilizar Aspose.Words gratis?
 

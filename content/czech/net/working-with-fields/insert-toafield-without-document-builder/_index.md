@@ -113,7 +113,7 @@ doc.Save(ArtifactsDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.
 
 #### Otázka: Mohu přidat více polí TOA do jednoho dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
-Odpověď: Ano, můžete přidat více polí TOA do jednoho dokumentu aplikace Word pomocí Aspose.Words for .NET. Stačí zopakovat kroky vložení pro každé pole.
+Odpověď: Ano, můžete přidat více polí TOA do jednoho dokumentu aplikace Word pomocí Aspose.Words for .NET. Stačí opakovat kroky vložení pro každé pole.
 
 #### Otázka: Jak mohu zkontrolovat, zda bylo pole TOA úspěšně vloženo do dokumentu aplikace Word pomocí Aspose.Words for .NET?
 

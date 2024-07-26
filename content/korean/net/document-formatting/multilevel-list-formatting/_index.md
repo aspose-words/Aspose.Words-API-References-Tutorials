@@ -127,5 +127,5 @@ doc.Save(dataDir + "DocumentFormatting.MultilevelListFormatting.docx");
 ### 들여쓰기 수준을 어떻게 동적으로 변경합니까?
  다음을 사용하여 들여쓰기 수준을 동적으로 변경할 수 있습니다.`ListIndent`그리고`ListOutdent` 필요에 따라 방법.
 
-### PDF와 같은 다른 문서 형식으로 다단계 목록을 만들 수 있습니까?
+### PDF와 같은 다른 문서 형식으로 다단계 목록을 만들 수 있나요?
 예, Aspose.Words는 PDF를 포함한 다양한 형식으로 문서를 저장하고 서식을 유지하는 것을 지원합니다.

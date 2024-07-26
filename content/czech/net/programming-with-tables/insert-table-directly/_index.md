@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Tento kód inicializuje nový dokument aplikace Word. Budete muset vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů.
+ Tento kód inicializuje nový dokument aplikace Word. Budete muset vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů.
 
 ## Krok 2: Vytvoření objektu tabulky
 
@@ -71,7 +71,7 @@ Tabulka se skládá z řádků a buněk. Přidejme tyto prvky postupně.
 // Zde bychom mohli zavolat SecureMinimum, aby za nás vytvořili řádky a buňky. Tato metoda se používá
 // abyste se ujistili, že zadaný uzel je platný. V tomto případě by platná tabulka měla mít alespoň jeden řádek a jednu buňku.
 // Místo toho si vytvoříme řádek a tabulku sami.
-//To by byl nejlepší způsob, jak toho dosáhnout, pokud bychom vytvářeli tabulku uvnitř algoritmu.
+// To by byl nejlepší způsob, jak toho dosáhnout, pokud bychom vytvářeli tabulku uvnitř algoritmu.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

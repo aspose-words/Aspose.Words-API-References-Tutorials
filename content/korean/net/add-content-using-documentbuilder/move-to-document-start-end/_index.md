@@ -78,7 +78,7 @@ Aspose.Words for .NET은 C#에서 프로그래밍 방식으로 Word 문서를 �
 전적으로! 이 가이드에서는 C#을 사용하지만 VB.NET과 같은 모든 .NET 언어와 함께 .NET용 Aspose.Words를 사용할 수 있습니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?  
- 예, 하지만 다음과 같이 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/).
+ 예, 하지만 다음과 같이 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시면허](https://purchase.aspose.com/temporary-license/).
 
 ### .NET용 Aspose.Words는 .NET Core와 호환됩니까?  
 예, .NET용 Aspose.Words는 .NET Framework와 .NET Core를 모두 지원합니다.

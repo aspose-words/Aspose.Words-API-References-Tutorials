@@ -2,88 +2,102 @@
 title: Tetapkan Opsi Garis Besar dalam Dokumen PDF
 linktitle: Tetapkan Opsi Garis Besar dalam Dokumen PDF
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengatur opsi kerangka dalam dokumen PDF dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengatur opsi kerangka dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Tingkatkan navigasi PDF dengan mengonfigurasi tingkat judul dan garis besar yang diperluas.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
+## Perkenalan
 
-Artikel ini memberikan panduan langkah demi langkah tentang cara menggunakan opsi kerangka set untuk fitur ukuran metafile dengan Aspose.Words untuk .NET. Kami akan menjelaskan setiap bagian kode secara detail. Di akhir tutorial ini, Anda akan dapat memahami cara mengatur opsi kerangka dalam dokumen dan menghasilkan PDF dengan opsi kerangka yang sesuai.
+Saat bekerja dengan dokumen, terutama untuk tujuan profesional atau akademis, mengatur konten Anda secara efektif sangatlah penting. Salah satu cara untuk meningkatkan kegunaan dokumen PDF Anda adalah dengan mengatur opsi kerangka. Garis besar, atau penanda, memungkinkan pengguna menavigasi dokumen secara efisien, seperti bab dalam buku. Dalam panduan ini, kami akan mendalami cara mengatur opsi ini menggunakan Aspose.Words untuk .NET, memastikan file PDF Anda tertata dengan baik dan mudah digunakan.
 
-Sebelum memulai, pastikan Anda telah menginstal dan mengonfigurasi pustaka Aspose.Words untuk .NET di proyek Anda. Anda dapat menemukan perpustakaan dan petunjuk instalasi di situs web Aspose.
+## Prasyarat
 
-## Langkah 1: Tentukan direktori dokumen
+Sebelum memulai, ada beberapa hal yang perlu Anda pastikan:
 
- Untuk memulai, Anda perlu menentukan jalur ke direktori tempat dokumen Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Jika tidak, Anda bisa[unduh versi terbaru di sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan .NET: Anda memerlukan lingkungan pengembangan .NET yang berfungsi, seperti Visual Studio.
+3. Pemahaman Dasar C#: Keakraban dengan bahasa pemrograman C# akan membantu Anda mengikutinya dengan mudah.
+4. Dokumen Word: Siapkan dokumen Word yang akan Anda ubah menjadi PDF.
+
+## Impor Namespace
+
+Pertama, Anda harus mengimpor namespace yang diperlukan. Di sinilah Anda akan menyertakan perpustakaan Aspose.Words untuk berinteraksi dengan dokumen Anda. Berikut cara mengaturnya:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Langkah 1: Tentukan Jalur Dokumen
+
+Untuk memulai, Anda harus menentukan jalur ke dokumen Word Anda. Ini adalah file yang ingin Anda konversi ke PDF dengan opsi garis besar. 
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Langkah 2: Unggah dokumen
-
-Selanjutnya, kita perlu memuat dokumen yang ingin kita proses. Dalam contoh ini, kami berasumsi bahwa dokumen tersebut bernama "Rendering.docx" dan terletak di direktori dokumen yang ditentukan.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Langkah 3: Konfigurasikan opsi simpan sebagai PDF dengan opsi paket
+ Pada cuplikan kode di atas, ganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda. Ini memberi tahu program di mana menemukan dokumen Word.
 
-Untuk mengatur opsi kerangka dalam PDF yang dihasilkan, kita perlu mengkonfigurasi`PdfSaveOptions` obyek. Kita dapat mengatur jumlah level outline heading (`HeadingsOutlineLevels`) dan jumlah tingkat garis besar yang diperluas (`ExpandedOutlineLevels`).
+## Langkah 2: Konfigurasikan Opsi Penyimpanan PDF
+
+ Selanjutnya, Anda perlu mengonfigurasi opsi penyimpanan PDF. Ini termasuk mengatur bagaimana garis besar harus ditangani dalam keluaran PDF. Anda akan menggunakan`PdfSaveOptions` kelas untuk melakukan ini.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
+```
+
+Sekarang, mari kita atur opsi kerangkanya. 
+
+### Tetapkan Tingkat Garis Besar Judul
+
+ Itu`HeadingsOutlineLevels` properti menentukan berapa banyak tingkat judul yang harus disertakan dalam kerangka PDF. Misalnya, jika Anda menyetelnya ke 3, ini akan menyertakan hingga tiga tingkat judul dalam kerangka PDF.
+
+```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
+```
+
+### Tetapkan Tingkat Garis Besar yang Diperluas
+
+ Itu`ExpandedOutlineLevels`properti mengontrol berapa banyak tingkat garis besar yang harus diperluas secara default saat PDF dibuka. Menyetelnya ke 1 akan memperluas judul tingkat atas, memberikan gambaran yang jelas tentang bagian utama.
+
+```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 ```
 
-## Langkah 4: Simpan dokumen sebagai PDF dengan opsi garis besar
+## Langkah 3: Simpan Dokumen sebagai PDF
 
-Terakhir, kita dapat menyimpan dokumen dalam format PDF menggunakan opsi penyimpanan yang dikonfigurasi sebelumnya.
+ Dengan opsi yang dikonfigurasi, Anda siap menyimpan dokumen sebagai PDF. Menggunakan`Save` metode`Document` kelas dan meneruskan jalur file dan menyimpan opsi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-Itu saja ! Anda telah berhasil mengatur opsi kerangka dalam dokumen dan menghasilkan PDF dengan opsi kerangka yang sesuai menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk mengatur opsi paket ke ukuran metafile dengan Aspose.Words untuk .NET
-
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
-	saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
-   
-```
+Baris kode ini menyimpan dokumen Word Anda sebagai PDF, menerapkan opsi kerangka yang Anda konfigurasikan. 
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelaskan cara mengatur opsi kerangka dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Dengan menggunakan langkah-langkah yang dijelaskan, Anda dapat dengan mudah menentukan tingkat judul dan garis besar dalam dokumen Anda dan menghasilkan file PDF dengan opsi garis besar yang sesuai. Nikmati manfaat opsi kerangka untuk meningkatkan struktur dan navigasi dalam dokumen PDF Anda menggunakan Aspose.Words untuk .NET.
+Menetapkan opsi garis besar dalam dokumen PDF dapat sangat meningkatkan kemampuan navigasinya, sehingga memudahkan pengguna menemukan dan mengakses bagian yang mereka perlukan. Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah mengonfigurasi pengaturan ini agar sesuai dengan kebutuhan Anda, memastikan dokumen PDF Anda semudah mungkin digunakan.
 
-### Pertanyaan yang Sering Diajukan
+## FAQ
 
-#### T: Apa yang dimaksud dengan opsi kerangka dalam dokumen PDF?
-J: Opsi garis besar dalam dokumen PDF mengacu pada struktur hierarki konten dokumen. Ini memungkinkan Anda membuat daftar isi interaktif dan memfasilitasi navigasi dalam dokumen. Opsi kerangka menentukan tingkat judul dan subjudul untuk disertakan dalam kerangka dan tingkat detail untuk ditampilkan dalam kerangka yang dihasilkan.
+### Apa tujuan mengatur opsi garis besar dalam PDF?
 
-#### T: Bagaimana cara mengatur opsi kerangka dalam dokumen PDF menggunakan Aspose.Words untuk .NET?
-J: Untuk mengatur opsi kerangka dalam dokumen PDF menggunakan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
+Menetapkan opsi kerangka membantu pengguna menavigasi dokumen PDF berukuran besar dengan lebih mudah dengan menyediakan daftar isi yang terstruktur dan dapat diklik.
 
- Atur jalur direktori tempat dokumen Anda berada dengan mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya dari direktori dokumen Anda.
+### Bisakah saya menetapkan tingkat judul yang berbeda untuk bagian berbeda di dokumen saya?
 
- Muat dokumen yang ingin Anda konversi ke PDF menggunakan`Document` kelas dan tentukan jalur ke dokumen di direktori dokumen yang ditentukan.
+Tidak, pengaturan kerangka berlaku secara global di seluruh dokumen. Namun, Anda dapat menyusun dokumen Anda dengan tingkat judul yang sesuai untuk mencapai efek serupa.
 
- Konfigurasikan opsi simpan sebagai PDF dengan membuat instance dari`PdfSaveOptions` kelas dan menggunakan`OutlineOptions` properti untuk mengatur opsi garis besar. Anda dapat menentukan jumlah tingkat judul yang akan disertakan dalam kerangka menggunakan`HeadingsOutlineLevels` properti dan jumlah tingkat garis yang diperluas menggunakan`ExpandedOutlineLevels` Properti.
+### Bagaimana cara melihat pratinjau perubahan sebelum menyimpan PDF?
 
- Simpan dokumen dalam format PDF menggunakan`Save` metode`Document` kelas yang menentukan jalur dan opsi penyimpanan.
+Anda dapat menggunakan penampil PDF yang mendukung navigasi kerangka untuk memeriksa tampilan kerangka. Beberapa aplikasi menyediakan fitur pratinjau untuk ini.
 
-#### T: Apa saja pilihan paket dalam dokumen PDF?
-J: Opsi kerangka dalam dokumen PDF memungkinkan Anda membuat struktur hierarki konten, yang memudahkan navigasi dokumen dan mengakses berbagai bagian. Hal ini memungkinkan pengguna untuk dengan cepat melompat ke bagian tertentu dari dokumen dengan mengklik entri di daftar isi atau kerangka. Opsi garis besar juga meningkatkan pengalaman membaca dengan memberikan gambaran umum tentang struktur dokumen secara keseluruhan.
+### Apakah mungkin untuk menghapus garis besar setelah menyimpan PDF?
+
+Ya, Anda dapat menghapus garis besar menggunakan perangkat lunak pengedit PDF, tetapi hal ini tidak dapat dilakukan secara langsung dengan Aspose.Words setelah PDF dibuat.
+
+### Opsi penyimpanan PDF apa lagi yang dapat saya konfigurasikan dengan Aspose.Words?
+
+Aspose.Words menyediakan berbagai opsi seperti mengatur tingkat kepatuhan PDF, menyematkan font, dan menyesuaikan kualitas gambar.

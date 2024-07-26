@@ -2,81 +2,88 @@
 title: Aktualizujte naposledy vytištěnou vlastnost v dokumentu PDF
 linktitle: Aktualizujte naposledy vytištěnou vlastnost v dokumentu PDF
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce aktualizací vlastnosti "Last Printed" při převodu do PDF pomocí Aspose.Words for .NET.
+description: Naučte se, jak aktualizovat poslední vytištěnou vlastnost v dokumentu PDF pomocí Aspose.Words for .NET s naším podrobným průvodcem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
+## Úvod
 
-Tento článek obsahuje podrobného průvodce, jak používat vlastnost "Poslední tisk" ve funkci aktualizace dokumentu PDF pomocí Aspose.Words for .NET. Každou část kódu si podrobně vysvětlíme. Na konci tohoto tutoriálu budete schopni porozumět tomu, jak nakonfigurovat možnost aktualizace vlastnosti "Poslední tisk" při převodu do PDF.
+Chcete aktualizovat poslední vytištěnou vlastnost v dokumentu PDF? Možná spravujete velké množství dokumentů a potřebujete mít přehled o tom, kdy byly naposledy vytištěny. Ať už je váš důvod jakýkoli, aktualizace této vlastnosti může být neuvěřitelně užitečná as Aspose.Words pro .NET je to hračka! Pojďme se ponořit do toho, jak toho můžete dosáhnout.
 
-Než začnete, ujistěte se, že jste ve svém projektu nainstalovali a nakonfigurovali knihovnu Aspose.Words for .NET. Knihovnu a pokyny k instalaci najdete na webu Aspose.
+## Předpoklady
 
-## Krok 1: Definujte adresář dokumentů
+Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
- Chcete-li začít, musíte definovat cestu k adresáři, kde jsou umístěny vaše dokumenty. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+-  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Vývojové prostředí jako Visual Studio.
+- Základní porozumění C#: Určitá znalost C# bude užitečná.
+- Dokument: Dokument aplikace Word, který chcete převést do formátu PDF a aktualizovat poslední vytištěnou vlastnost.
+
+## Importovat jmenné prostory
+
+Chcete-li ve svém projektu použít Aspose.Words for .NET, musíte importovat potřebné jmenné prostory. Postup je následující:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky.
+
+## Krok 1: Nastavte svůj projekt
+
+Za prvé, pojďme nastavit váš projekt. Otevřete Visual Studio, vytvořte novou konzolovou aplikaci (.NET Framework nebo .NET Core) a pojmenujte ji smysluplným způsobem jako „UpdateLastPrintedPropertyPDF“.
+
+## Krok 2: Nainstalujte Aspose.Words for .NET
+
+Dále je třeba nainstalovat balíček Aspose.Words for .NET. Můžete to udělat pomocí Správce balíčků NuGet. Klikněte pravým tlačítkem na svůj projekt v Průzkumníku řešení, vyberte „Spravovat balíčky NuGet“, vyhledejte „Aspose.Words“ a nainstalujte jej.
+
+## Krok 3: Vložte svůj dokument
+
+ Nyní načteme dokument Word, který chcete převést do PDF. Nahradit`"YOUR DOCUMENT DIRECTORY"` s cestou k vašemu dokumentu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Krok 2: Nahrajte dokument
-
-Dále musíme načíst dokument, který chceme zpracovat. V tomto příkladu předpokládáme, že dokument se nazývá "Rendering.docx" a je umístěn v určeném adresáři dokumentů.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Krok 3: Nakonfigurujte možnosti Uložit jako PDF s aktualizovanou vlastností „Poslední vytištění“.
+## Krok 4: Nakonfigurujte možnosti uložení PDF
 
- Chcete-li povolit aktualizaci vlastnosti "Poslední vytištěno" při převodu do PDF, musíme nakonfigurovat`PdfSaveOptions` objekt a nastavte`UpdateLastPrintedProperty`majetek do`true`.
+ Musíme nakonfigurovat možnosti uložení PDF, abychom aktualizovali poslední vytištěnou vlastnost. Vytvořte novou instanci`PdfSaveOptions` a nastavte`UpdateLastPrintedProperty`majetek do`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions 
+{ 
+	UpdateLastPrintedProperty = true 
+};
 ```
 
-## Krok 4: Uložte dokument jako PDF s aktualizací vlastnosti "Poslední tisk".
+## Krok 5: Uložte dokument jako PDF
 
-Nakonec můžeme dokument uložit ve formátu PDF pomocí dříve nakonfigurovaných možností uložení.
+Nakonec uložte dokument jako PDF s aktualizovanou vlastností. Zadejte výstupní cestu a možnosti uložení.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-To je vše ! Úspěšně jste povolili aktualizaci vlastnosti "Last Printed" při převodu dokumentu do PDF pomocí Aspose.Words for .NET.
-
-### Příklad zdrojového kódu pro aktualizaci vlastnosti "Last Printed" pomocí Aspose.Words pro .NET
-
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
-
-```
 ## Závěr
 
-V tomto tutoriálu jsme vysvětlili, jak aktualizovat vlastnost "Last Printed" v dokumentu PDF pomocí Aspose.Words for .NET. Podle uvedených kroků můžete snadno nakonfigurovat možnost aktualizace vlastnosti "Poslední vytištění" při převodu dokumentu do PDF. Pomocí této funkce můžete sledovat využití dokumentů a související informace.
+A tady to máte! Pomocí těchto kroků můžete snadno aktualizovat poslední vytištěnou vlastnost v dokumentu PDF pomocí Aspose.Words for .NET. Tato metoda zajišťuje, že váš proces správy dokumentů zůstane efektivní a aktuální. Vyzkoušejte to a uvidíte, jak vám to zjednoduší pracovní postup.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co je vlastnost "Last Printed" v dokumentu PDF?
-Odpověď: Vlastnost "Naposledy vytištěno" v dokumentu PDF odkazuje na datum a čas, kdy byl dokument naposledy vytištěn. Tato vlastnost může být užitečná pro sledování informací o používání a správě dokumentů.
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro úlohy zpracování dokumentů v aplikacích .NET, včetně vytváření, úprav, převodu a tisku dokumentů.
 
-#### Otázka: Jak mohu aktualizovat vlastnost "Last Printed" v dokumentu PDF pomocí Aspose.Words for .NET?
-A: Chcete-li aktualizovat vlastnost "Last Printed" v dokumentu PDF pomocí Aspose.Words for .NET, postupujte takto:
+### Proč aktualizovat poslední vytištěnou vlastnost v PDF?
+Aktualizace poslední vlastnosti tisku pomáhá při sledování využití dokumentu, zejména v prostředích, kde je tisk dokumentů častou činností.
 
- Vytvořte instanci souboru`Document` třídy určující cestu k dokumentu aplikace Word.
+### Mohu aktualizovat další vlastnosti pomocí Aspose.Words for .NET?
+Ano, Aspose.Words for .NET umožňuje aktualizovat různé vlastnosti dokumentu, jako je autor, název, předmět a další.
 
- Vytvořte instanci souboru`PdfSaveOptions` třídu a nastavte`UpdateLastPrintedProperty`majetek do`true` povolit aktualizaci vlastnosti "Naposledy vytištěno".
+### Je Aspose.Words for .NET zdarma?
+Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/). Pro rozšířené použití byste si museli zakoupit licenci.
 
- Použijte`Save` metoda`Document`třídy pro uložení dokumentu ve formátu PDF zadáním možností uložení.
-
-#### Otázka: Jak mohu zkontrolovat, zda byla ve vygenerovaném dokumentu PDF aktualizována vlastnost "Last Printed"?
-Odpověď: Můžete zkontrolovat, zda byla vlastnost "Poslední vytištěno" ve vygenerovaném dokumentu PDF aktualizována otevřením souboru PDF v kompatibilním prohlížeči PDF, jako je Adobe Acrobat Reader, a zobrazením informací o dokumentu. Datum a čas posledního tisku by měl odpovídat datu a času generování PDF dokumentu.
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
+Podrobnou dokumentaci najdete na Aspose.Words pro .NET[tady](https://reference.aspose.com/words/net/).

@@ -16,4 +16,4 @@ Door de Aspose.Words voor .NET-tutorials te volgen, kunt u de RTF-laadopties in 
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Herken Utf-8-tekst](./recognize-utf8-text/) | Leer hoe u Utf-8-tekens in RTF-documenten kunt herkennen met Aspose.Words voor .NET. Zorg voor gegevensintegriteit. |
+| [Herken Utf-8-tekst](./recognize-utf8-text/) | Leer hoe u UTF-8-tekst in Word-documenten kunt herkennen met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. |

@@ -34,4 +34,4 @@ Aspose.Words for Java'yı kullanarak Belge Sayfası Ayırma işlemini nasıl ger
 ### [Belge İçeriğini Sayfalara Göre Çıkarma](./extracting-document-content-pages/)
 Aspose.Words for Java kullanarak belge içeriğini sayfalara göre nasıl çıkaracağınızı öğrenin. Kaynak kodlu bu adım adım kılavuz sizi kısa sürede uzman yapacaktır.
 ### [Belge Bölme ve Çıkarma Teknikleri](./document-splitting-extraction-techniques/)
-Aspose.Words for Java'yı kullanarak belge bölme ve çıkartmayı öğrenin. Verimli manipülasyon için kaynak kodlu adım adım kılavuz. Aspose'un gücünün kilidini açın
+Aspose.Words for Java'yı kullanarak belge bölme ve çıkartmayı öğrenin. Verimli manipülasyon için kaynak koduyla adım adım kılavuz. Aspose'un gücünün kilidini açın

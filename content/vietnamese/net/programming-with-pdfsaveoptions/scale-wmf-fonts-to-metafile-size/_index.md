@@ -7,105 +7,104 @@ type: docs
 weight: 10
 url: /vi/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
+## Giới thiệu
 
-Bài viết này cung cấp hướng dẫn từng bước về cách giảm kích thước pdf bằng phông chữ wmf tỷ lệ thành tính năng kích thước siêu tệp bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích chi tiết từng phần của mã. Ở cuối hướng dẫn này, bạn sẽ có thể hiểu cách bật hoặc tắt tỷ lệ phông chữ WMF khi chuyển đổi sang PDF.
+Khi làm việc với các tệp PDF, đặc biệt là các tệp được tạo từ tài liệu Word có chứa đồ họa WMF (Windows Metafile), quản lý kích thước có thể trở thành một khía cạnh quan trọng trong việc xử lý tài liệu. Một cách để kiểm soát kích thước PDF là điều chỉnh cách hiển thị phông chữ WMF trong tài liệu. Trong hướng dẫn này, chúng ta sẽ khám phá cách giảm kích thước PDF bằng cách chia tỷ lệ phông chữ WMF thành kích thước siêu tệp bằng cách sử dụng Aspose.Words cho .NET.
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt và định cấu hình thư viện Aspose.Words cho .NET trong dự án của mình. Bạn có thể tìm thấy thư viện và hướng dẫn cài đặt trên trang web Aspose.
+## Điều kiện tiên quyết
 
-## Bước 1: Xác định thư mục tài liệu
+Trước khi đi sâu vào các bước, hãy đảm bảo bạn có những điều sau:
 
- Để bắt đầu, bạn cần xác định đường dẫn đến thư mục chứa tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+1. Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Hướng dẫn này giả sử bạn đã thiết lập môi trường phát triển .NET (như Visual Studio), nơi bạn có thể viết và thực thi mã C#.
+3. Hiểu biết cơ bản về lập trình .NET: Làm quen với các khái niệm lập trình .NET cơ bản và cú pháp C# sẽ hữu ích.
+4. Tài liệu Word có đồ họa WMF: Bạn sẽ cần một tài liệu Word có chứa đồ họa WMF. Bạn có thể sử dụng tài liệu của riêng mình hoặc tạo một tài liệu để thử nghiệm.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các vùng tên cần thiết trong dự án C# của mình. Điều này sẽ cung cấp cho bạn quyền truy cập vào các lớp và phương thức cần thiết để làm việc với Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Bước 2: Tải tài liệu lên
+## Bước 1: Tải tài liệu Word
 
-Tiếp theo, chúng ta cần tải tài liệu mà chúng ta muốn xử lý. Trong ví dụ này, chúng tôi giả sử tài liệu có tên là "WMF with text.docx" và nằm trong thư mục tài liệu được chỉ định.
+ Để bắt đầu, hãy tải tài liệu Word có chứa đồ họa WMF. Việc này được thực hiện bằng cách sử dụng`Document` lớp từ Aspose.Words.
 
 ```csharp
+// Đường dẫn đến thư mục tài liệu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Tải tài liệu
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
-## Bước 3: Định cấu hình tùy chọn hiển thị siêu tệp
+ Đây,`dataDir` là trình giữ chỗ cho đường dẫn thư mục tài liệu của bạn. Chúng tôi tạo một thể hiện của`Document` class bằng cách chuyển đường dẫn đến tệp Word. Việc này sẽ tải tài liệu vào bộ nhớ, sẵn sàng để xử lý tiếp.
 
- Để bật hoặc tắt tỷ lệ phông chữ WMF theo kích thước siêu tệp, chúng ta cần định cấu hình`MetafileRenderingOptions` sự vật. Trong ví dụ này, chúng tôi vô hiệu hóa việc chia tỷ lệ phông chữ bằng cách đặt`ScaleWmfFontsToMetafileSize`tài sản để`false`.
+## Bước 2: Định cấu hình tùy chọn hiển thị Metafile
+
+ Tiếp theo, bạn cần định cấu hình các tùy chọn hiển thị siêu tệp. Cụ thể, hãy thiết lập`ScaleWmfFontsToMetafileSize`tài sản để`false`. Điều này kiểm soát xem phông chữ WMF có được chia tỷ lệ để phù hợp với kích thước siêu tệp hay không.
 
 ```csharp
+// Tạo một phiên bản mới của MetafileRenderingOptions
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 {
-     ScaleWmfFontsToMetafileSize=false
+    ScaleWmfFontsToMetafileSize = false
 };
 ```
 
-## Bước 4: Định cấu hình tùy chọn lưu dưới dạng PDF với tùy chọn hiển thị siêu tệp
+ Các`MetafileRenderingOptions` lớp cung cấp các tùy chọn về cách hiển thị siêu tệp (như WMF). Bằng cách thiết lập`ScaleWmfFontsToMetafileSize` ĐẾN`false`, bạn đang hướng dẫn Aspose.Words không chia tỷ lệ phông chữ theo kích thước siêu tệp, điều này có thể giúp giảm kích thước PDF tổng thể.
 
-Cuối cùng, chúng ta có thể định cấu hình các tùy chọn lưu thành PDF bằng cách sử dụng các tùy chọn hiển thị siêu tệp được định cấu hình trước đó.
+## Bước 3: Đặt tùy chọn lưu PDF
+
+Bây giờ, hãy định cấu hình các tùy chọn lưu PDF để sử dụng các tùy chọn hiển thị siêu tệp bạn vừa đặt. Điều này cho Aspose.Words biết cách xử lý siêu tệp khi lưu tài liệu dưới dạng PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
+// Tạo một phiên bản mới của PdfSaveOptions
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    MetafileRenderingOptions = metafileRenderingOptions
+};
 ```
 
-## Bước 5: Lưu tài liệu dưới dạng PDF với tùy chọn kết xuất Metafile
+ Các`PdfSaveOptions` lớp cho phép bạn chỉ định các cài đặt khác nhau để lưu tài liệu dưới dạng PDF. Bằng cách chỉ định cấu hình trước đó`MetafileRenderingOptions` đến`MetafileRenderingOptions` tài sản của`PdfSaveOptions`, bạn đảm bảo rằng tài liệu được lưu theo cài đặt kết xuất siêu tệp mong muốn của bạn.
 
-Lưu tài liệu ở định dạng PDF bằng các tùy chọn lưu đã định cấu hình trước đó.
+## Bước 4: Lưu tài liệu dưới dạng PDF
+
+Cuối cùng, lưu tài liệu Word dưới dạng PDF bằng các tùy chọn lưu đã định cấu hình. Điều này sẽ áp dụng tất cả các cài đặt, bao gồm các tùy chọn hiển thị siêu tệp, cho tệp PDF đầu ra.
+
 
 ```csharp
+// Lưu tài liệu dưới dạng PDF
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-Đó là tất cả ! Bạn đã bật hoặc tắt thành công tỷ lệ phông chữ WMF thành kích thước siêu tệp khi chuyển đổi
-
-một tài liệu PDF sử dụng Aspose.Words cho .NET.
-
-### Mã nguồn ví dụ để chia tỷ lệ phông chữ WMF thành kích thước siêu tệp với Aspose.Words cho .NET
-
-```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "WMF with text.docx");
-
-	MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
-	{
-		ScaleWmfFontsToMetafileSize = false
-	};
-
-	//Nếu Aspose.Words không thể hiển thị chính xác một số bản ghi siêu tệp thành đồ họa vector
-	// sau đó Aspose.Words hiển thị siêu tệp này thành bitmap.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
-	
-        
-```
+ Ở bước này,`Save` phương pháp của`Document` lớp được sử dụng để xuất tài liệu sang tệp PDF. Đường dẫn nơi tệp PDF sẽ được lưu được chỉ định cùng với`PdfSaveOptions` bao gồm các cài đặt kết xuất siêu tệp.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách bật hoặc tắt việc thay đổi kích thước phông chữ WMF thành kích thước siêu tệp trong tài liệu PDF bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được mô tả, bạn có thể dễ dàng kiểm soát liệu phông chữ WMF có nên được thay đổi kích thước để phù hợp với kích thước siêu tệp khi chuyển đổi sang tài liệu PDF hay không. Điều này có thể giúp bạn giảm kích thước tệp PDF được tạo và cải thiện hiệu suất hiển thị. Hãy đảm bảo chỉ định đường dẫn chính xác tới tài liệu của bạn và định cấu hình các tùy chọn hiển thị siêu tệp nếu cần.
+Bằng cách chia tỷ lệ phông chữ WMF thành kích thước siêu tệp, bạn có thể giảm đáng kể kích thước tệp PDF được tạo từ tài liệu Word. Kỹ thuật này giúp tối ưu hóa việc lưu trữ và phân phối tài liệu mà không ảnh hưởng đến chất lượng của nội dung trực quan. Thực hiện theo các bước được nêu ở trên đảm bảo rằng các tệp PDF của bạn có kích thước dễ quản lý và hiệu quả hơn.
 
-### Các câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Việc thay đổi kích thước phông chữ WMF thành kích thước siêu tệp trong tài liệu PDF là gì?
-Trả lời: Thay đổi kích thước phông chữ WMF thành kích thước siêu tệp trong tài liệu PDF là tính năng kiểm soát xem phông chữ WMF có nên được điều chỉnh tỷ lệ để phù hợp với kích thước siêu tệp khi chuyển đổi sang tài liệu PDF hay không. Khi tính năng này được bật, phông chữ WMF sẽ được chia tỷ lệ để phù hợp với kích thước của siêu tệp, điều này có thể làm giảm kích thước của tài liệu PDF được tạo.
+### WMF là gì và tại sao nó quan trọng đối với kích thước PDF?
 
-#### Câu hỏi: Làm cách nào tôi có thể sử dụng Aspose.Words cho .NET để bật hoặc tắt việc thay đổi kích thước phông chữ WMF thành kích thước siêu tệp trong tài liệu PDF?
-Trả lời: Để bật hoặc tắt việc thay đổi kích thước phông chữ WMF thành kích thước siêu tệp trong tài liệu PDF bằng Aspose.Words cho .NET, hãy làm theo các bước sau:
+WMF (Windows Metafile) là một định dạng đồ họa được sử dụng trong Microsoft Windows. Nó có thể chứa cả dữ liệu vector và bitmap. Vì dữ liệu vectơ có thể được thu nhỏ và thao tác nên điều quan trọng là phải xử lý dữ liệu đó đúng cách để tránh các tệp PDF lớn không cần thiết.
 
- Đặt đường dẫn thư mục nơi chứa tài liệu của bạn bằng cách thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế của thư mục tài liệu của bạn.
+### Việc chia tỷ lệ phông chữ WMF thành kích thước siêu tệp ảnh hưởng đến tệp PDF như thế nào?
 
- Tải tài liệu bạn muốn xử lý bằng cách sử dụng`Document` class và chỉ định đường dẫn đến tài liệu Word trong thư mục tài liệu đã chỉ định.
+Chia tỷ lệ phông chữ WMF thành kích thước siêu tệp có thể giúp giảm kích thước PDF tổng thể bằng cách tránh hiển thị phông chữ có độ phân giải cao có thể làm tăng kích thước tệp.
 
- Định cấu hình các tùy chọn hiển thị siêu tệp bằng cách tạo một phiên bản của`MetafileRenderingOptions` lớp và thiết lập`ScaleWmfFontsToMetafileSize`tài sản để`true` để cho phép chia tỷ lệ phông chữ WMF theo kích thước siêu tệp hoặc để`false` để vô hiệu hóa tính năng này.
+### Tôi có thể sử dụng các định dạng siêu tệp khác với Aspose.Words không?
 
- Định cấu hình tùy chọn lưu dưới dạng PDF bằng cách tạo một phiên bản của`PdfSaveOptions` class và sử dụng các tùy chọn kết xuất siêu tệp được định cấu hình trước đó.
+Có, Aspose.Words hỗ trợ nhiều định dạng siêu tệp khác nhau, bao gồm EMF (Siêu tệp nâng cao) ngoài WMF.
 
- Lưu tài liệu ở định dạng PDF bằng cách sử dụng`Save` phương pháp của`Document` lớp chỉ định đường dẫn và các tùy chọn lưu.
+### Kỹ thuật này có áp dụng được cho tất cả các loại tài liệu Word không?
 
-#### Câu hỏi: Lợi ích của việc thay đổi kích thước phông chữ WMF thành kích thước siêu tệp trong tài liệu PDF là gì?
-Trả lời: Ưu điểm của việc thay đổi kích thước phông chữ WMF thành kích thước siêu tệp trong tài liệu PDF là:
+Có, kỹ thuật này có thể được áp dụng cho bất kỳ tài liệu Word nào có chứa đồ họa WMF, giúp tối ưu hóa kích thước của tệp PDF được tạo.
 
-Giảm kích thước tệp PDF: Thay đổi kích thước phông chữ WMF thành kích thước siêu tệp có thể giảm kích thước của tài liệu PDF được tạo bằng cách điều chỉnh kích thước phông chữ cho phù hợp với nhu cầu của siêu tệp.
+### Tôi có thể tìm thêm thông tin về Aspose.Words ở đâu?
 
-Cải thiện hiệu suất: Bằng cách điều chỉnh kích thước phông chữ WMF theo kích thước của siêu tệp, việc hiển thị tài liệu PDF có thể nhanh hơn và hiệu quả hơn.
+ Bạn có thể khám phá thêm về Aspose.Words trong[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) . Để tải xuống, dùng thử và hỗ trợ, hãy truy cập[Trang tải xuống Aspose.Words](https://releases.aspose.com/words/net/), [Mua Aspose.Words](https://purchase.aspose.com/buy), [Dùng thử miễn phí](https://releases.aspose.com/), [Giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) , Và[Ủng hộ](https://forum.aspose.com/c/words/8).

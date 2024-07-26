@@ -17,7 +17,7 @@ url: /hi/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 - C# और XML का बुनियादी ज्ञान.
 
 ## चरण 1: दस्तावेज़ निर्देशिका सेट करें
- अपने दस्तावेज़ निर्देशिका का पथ सेट करके आरंभ करें।`"YOUR DOCUMENT DIRECTORY"`उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
+ अपने दस्तावेज़ निर्देशिका का पथ सेट करके आरंभ करें।`"YOUR DOCUMENT DIRECTORY"` उस निर्देशिका का वास्तविक पथ जहाँ आप दस्तावेज़ को सहेजना चाहते हैं।
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## चरण 3: दस्तावेज़ में एक संरचित दस्तावेज़ टैग (SDT) जोड़ें
- एक जोड़ना`StructuredDocumentTag` दस्तावेज़ में सामग्री नियंत्रण के रूप में कार्य करने के लिए। निर्दिष्ट करें`SdtType` जैसा`PlainText` और यह`MarkupLevel` जैसा`Block` ब्लॉक-स्तरीय SDT बनाने के लिए.
+ एक जोड़ना`StructuredDocumentTag`दस्तावेज़ में सामग्री नियंत्रण के रूप में कार्य करने के लिए। निर्दिष्ट करें`SdtType` जैसा`PlainText` और यह`MarkupLevel` जैसा`Block` ब्लॉक-स्तरीय SDT बनाने के लिए.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

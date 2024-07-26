@@ -9,7 +9,7 @@ url: /cs/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
 ## Úvod
 
-Stalo se vám, že jste potřebovali zabezpečit dokument heslem? Nejsi sám. S nárůstem digitální dokumentace je ochrana citlivých informací důležitější než kdy jindy. Aspose.Words for .NET nabízí bezproblémový způsob šifrování dokumentů pomocí hesel. Představte si to jako zámek na svém deníku. Dovnitř mohou nahlédnout pouze ti, kdo mají klíč (nebo v tomto případě heslo). Pojďme se krok za krokem ponořit do toho, jak toho můžete dosáhnout.
+Stalo se vám, že jste potřebovali zabezpečit dokument heslem? Nejsi sám. S nárůstem digitální dokumentace je ochrana citlivých informací důležitější než kdy jindy. Aspose.Words for .NET nabízí bezproblémový způsob šifrování dokumentů pomocí hesel. Představte si to, jako byste si dali zámek do deníku. Dovnitř mohou nahlédnout pouze ti, kdo mají klíč (nebo v tomto případě heslo). Pojďme se krok za krokem ponořit do toho, jak toho můžete dosáhnout.
 
 ## Předpoklady
 

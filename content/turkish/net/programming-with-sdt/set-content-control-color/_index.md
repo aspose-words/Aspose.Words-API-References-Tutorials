@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Belgeyi Yükleyin ve İçerik Denetimini Alın
- Word belgesini kullanarak yükleyin`Document` yapıcı, belgenin yolunu parametre olarak iletir. İstediğiniz içerik kontrolünü belgeden alın. Bu örnekte içerik denetiminin belgedeki ilk yapılandırılmış belge etiketi olduğunu varsayıyoruz.
+ Word belgesini kullanarak yükleyin`Document`yapıcı, belgenin yolunu parametre olarak iletir. İstediğiniz içerik kontrolünü belgeden alın. Bu örnekte içerik denetiminin belgedeki ilk yapılandırılmış belge etiketi olduğunu varsayıyoruz.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

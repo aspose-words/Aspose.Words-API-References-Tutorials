@@ -50,7 +50,7 @@ catch (Exception e)
 
  Ici, nous créons une instance de notre rappel personnalisé et l'attribuons à`Hyphenation.Callback`.
 
-## Étape 2 : définir le chemin du document
+## Étape 2 : Définir le chemin du document
 
 Ensuite, nous devons définir le répertoire dans lequel nos documents sont stockés. Ceci est crucial car nous allons charger et enregistrer des documents à partir de ce chemin.
 

@@ -16,13 +16,13 @@ url: /ko/net/programming-with-sdt/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [확인란 유형 콘텐츠 제어](./check-box-type-content-control/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 확인란 유형 콘텐츠 컨트롤을 만드는 방법을 알아보세요. |
+| [확인란 유형 콘텐츠 제어](./check-box-type-content-control/) | 이 상세한 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 확인란 유형 콘텐츠 제어를 추가하는 방법을 알아보세요. |
 | [체크박스 현황](./current-state-of-check-box/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 확인란 콘텐츠 컨트롤의 현재 상태를 검색하고 설정하는 방법을 알아보세요. |
 | [콘텐츠 컨트롤 수정](./modify-content-controls/) | .NET용 Aspose.Words를 사용하여 Word 문서의 콘텐츠 컨트롤 내에서 텍스트, 드롭다운 목록 및 이미지를 수정하는 방법을 알아보세요. |
 | [콤보 상자 콘텐츠 제어](./combo-box-content-control/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 콤보 상자 콘텐츠 컨트롤을 만드는 방법을 알아보세요. |
 | [서식 있는 텍스트 상자 콘텐츠 제어](./rich-text-box-content-control/) | 텍스트 서식 지정 및 스타일 지정이 가능한 .NET용 Aspose.Words를 사용하여 Word 문서에서 서식 있는 텍스트 상자 콘텐츠 컨트롤을 만드는 방법을 알아보세요. |
 | [콘텐츠 제어 색상 설정](./set-content-control-color/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 콘텐츠 컨트롤의 색상을 설정하고 모양을 사용자 지정하는 방법을 알아보세요. |
-| [컨텐츠 제어 지우기](./clear-contents-control/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 컨트롤의 내용을 지우는 방법을 알아보세요. |
+| [컨텐츠 제어 지우기](./clear-contents-control/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 콘텐츠 제어를 지우는 방법을 알아보세요. |
 | [SDT를 사용자 정의 Xml 부분에 바인딩](./bind-sdt-to-custom-xml-part/) | .NET용 Aspose.Words를 사용하여 SDT를 사용자 정의 Xml 부분에 바인딩하는 방법을 알아보세요. |
 | [콘텐츠 제어 스타일 설정](./set-content-control-style/) | 일관된 서식을 적용하여 .NET용 Aspose.Words를 사용하여 Word 문서에서 콘텐츠 컨트롤의 스타일을 설정하는 방법을 알아보세요. |
 | [사용자 지정 XML 부분에 매핑된 표 반복 구역 만들기](./creating-table-repeating-section-mapped-to-custom-xml-part/) | .NET용 Aspose.Words를 사용하여 Word 문서의 CustomXmlPart에 매핑된 반복 구역이 있는 테이블을 만드는 방법을 알아보세요. |

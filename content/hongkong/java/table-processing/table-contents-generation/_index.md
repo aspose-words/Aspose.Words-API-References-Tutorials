@@ -131,4 +131,4 @@ public void generateTOC() {
 
 ## 結論
 
-在本綜合指南中，我們探討了使用 Aspose.Words for Java 生成目錄 (TOC) 的藝術。您已經學習如何設定環境、建立基本和進階 TOC，甚至使用原始程式碼將 TOC 生成整合到您的 Java 專案中。 Aspose.Words for Java 讓您能夠透過動態且具有視覺吸引力的目錄來增強文件。現在，繼續應用這些知識在您的 Java 應用程式中創建令人驚嘆的 TOC。快樂編碼！
+在本綜合指南中，我們探討了使用 Aspose.Words for Java 產生目錄 (TOC) 的技巧。您已經學習如何設定環境、建立基本和進階 TOC，甚至使用原始程式碼將 TOC 生成整合到您的 Java 專案中。 Aspose.Words for Java 讓您能夠透過動態且具有視覺吸引力的目錄來增強文件。現在，繼續應用這些知識在您的 Java 應用程式中創建令人驚嘆的 TOC。快樂編碼！

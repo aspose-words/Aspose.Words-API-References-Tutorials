@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 
 ## Conclusión
 
-¡Y ahí lo tienes! Con estos sencillos pasos, habrá configurado el diseño de página de su documento usando Aspose.Words para .NET. Este proceso puede ahorrarle muchos dolores de cabeza al formatear y garantizar que sus documentos luzcan profesionales y pulidos. Entonces, la próxima vez que trabajes en un proyecto, recuerda esta guía y configura rápidamente tu página como un profesional.
+¡Y ahí lo tienes! Con estos sencillos pasos, habrá configurado el diseño de página de su documento utilizando Aspose.Words para .NET. Este proceso puede ahorrarle muchos dolores de cabeza al formatear y garantizar que sus documentos luzcan profesionales y pulidos. Entonces, la próxima vez que trabajes en un proyecto, recuerda esta guía y configura rápidamente tu página como un profesional.
 
 ## Preguntas frecuentes
 

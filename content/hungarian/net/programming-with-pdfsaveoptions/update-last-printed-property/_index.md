@@ -2,81 +2,88 @@
 title: Frissítse az utolsó nyomtatott tulajdonságot PDF-dokumentumban
 linktitle: Frissítse az utolsó nyomtatott tulajdonságot PDF-dokumentumban
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre az „Utolsó nyomtatás” tulajdonság frissítéséhez, amikor az Aspose.Words for .NET segítségével PDF formátumba konvertál.
+description: Részletes útmutatónkból megtudhatja, hogyan frissítheti az utolsó nyomtatott tulajdonságot egy PDF-dokumentumban az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
+## Bevezetés
 
-Ez a cikk lépésenkénti útmutatót tartalmaz a PDF-dokumentum frissítési funkciójának „Utolsó nyomtatás” tulajdonságának használatához az Aspose.Words for .NET-ben. Részletesen elmagyarázzuk a kód minden részét. Ennek az oktatóanyagnak a végén megtudhatja, hogyan konfigurálhatja az „Utolsó nyomtatás” tulajdonság frissítését a PDF-formátumba konvertáláskor.
+Frissíteni szeretné az utolsó nyomtatott tulajdonságot egy PDF-dokumentumban? Lehet, hogy nagy mennyiségű dokumentumot kezel, és nyomon kell követnie, mikor nyomtatták ki őket utoljára. Bármi legyen is az oka, ennek a tulajdonságnak a frissítése hihetetlenül hasznos lehet, és az Aspose.Words for .NET használatával gyerekjáték! Nézzük meg, hogyan érheti el ezt.
 
-Mielőtt elkezdené, győződjön meg arról, hogy telepítette és konfigurálta az Aspose.Words for .NET könyvtárat a projektben. A könyvtárat és a telepítési utasításokat az Aspose webhelyén találja.
+## Előfeltételek
 
-## 1. lépés: Határozza meg a dokumentumkönyvtárat
+Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
 
- A kezdéshez meg kell határoznia annak a könyvtárnak az elérési útját, ahol a dokumentumok találhatók. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával.
+-  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Ha még nem tette meg, letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: Olyan fejlesztői környezet, mint a Visual Studio.
+- A C# alapismerete: Hasznos lesz a C# ismerete.
+- Dokumentum: PDF-be konvertálni kívánt Word dokumentum, és frissíteni kívánja az utoljára nyomtatott tulajdonságot.
+
+## Névterek importálása
+
+Az Aspose.Words for .NET használatához a projektben importálnia kell a szükséges névtereket. Íme, hogyan kell csinálni:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Bontsuk le a folyamatot egyszerű, kezelhető lépésekre.
+
+## 1. lépés: Állítsa be projektjét
+
+Először is állítsuk be a projektet. Nyissa meg a Visual Studio-t, hozzon létre egy új konzolalkalmazást (.NET-keretrendszer vagy .NET Core), és nevezze el valami értelmesnek, például „UpdateLastPrintedPropertyPDF”.
+
+## 2. lépés: Az Aspose.Words for .NET telepítése
+
+Ezután telepítenie kell az Aspose.Words for .NET csomagot. Ezt a NuGet Package Manager segítségével teheti meg. Kattintson a jobb gombbal a projektre a Solution Explorerben, válassza a "NuGet-csomagok kezelése" lehetőséget, keresse meg az "Aspose.Words" kifejezést, és telepítse.
+
+## 3. lépés: Töltse be a dokumentumot
+
+ Most töltsük be a PDF-be konvertálni kívánt Word-dokumentumot. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentum elérési útjával.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 2. lépés: Töltse fel a dokumentumot
-
-Ezután be kell töltenünk a feldolgozni kívánt dokumentumot. Ebben a példában feltételezzük, hogy a dokumentum neve "Rendering.docx", és a megadott dokumentumkönyvtárban található.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. lépés: Konfigurálja a Mentés PDF-ként opciókat a frissített „Utolsó nyomtatás” tulajdonsággal
+## 4. lépés: Konfigurálja a PDF mentési beállításokat
 
- A „Utolsó nyomtatás” tulajdonság frissítésének engedélyezéséhez PDF-be konvertáláskor konfigurálnunk kell a`PdfSaveOptions` objektumot és állítsa be a`UpdateLastPrintedProperty`tulajdonát`true`.
+ Az utolsó nyomtatott tulajdonság frissítéséhez be kell állítanunk a PDF mentési beállításokat. Hozzon létre egy új példányt a`PdfSaveOptions` és állítsa be a`UpdateLastPrintedProperty`tulajdonát`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions 
+{ 
+	UpdateLastPrintedProperty = true 
+};
 ```
 
-## 4. lépés: Mentse el a dokumentumot PDF formátumban az „Utolsó nyomtatás” tulajdonság frissítésével
+## 5. lépés: Mentse el a dokumentumot PDF formátumban
 
-Végül elmenthetjük a dokumentumot PDF formátumban a korábban beállított mentési opciókkal.
+Végül mentse a dokumentumot PDF-ként a frissített tulajdonsággal. Adja meg a kimeneti útvonalat és a mentési beállításokat.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-Ez minden ! Sikeresen engedélyezte az "Utolsó nyomtatás" tulajdonság frissítését, amikor egy dokumentumot PDF-formátumba konvertál az Aspose.Words for .NET használatával.
-
-### Példa forráskód az "Utoljára nyomtatott" tulajdonság frissítéséhez az Aspose.Words .NET-hez
-
-
-```csharp
-
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
-
-```
 ## Következtetés
 
-Ebben az oktatóanyagban elmagyaráztuk, hogyan frissítheti a "Utoljára nyomtatott" tulajdonságot egy PDF-dokumentumban az Aspose.Words for .NET használatával. A megadott lépések követésével egyszerűen konfigurálhatja az „Utolsó nyomtatás” tulajdonság frissítésének lehetőségét, amikor egy dokumentumot PDF formátumba konvertál. Ezzel a funkcióval nyomon követheti a dokumentumhasználatot és a kapcsolódó információkat.
+És megvan! Ha követi ezeket a lépéseket, az Aspose.Words for .NET segítségével könnyedén frissítheti a PDF-dokumentum utolsó nyomtatott tulajdonságát. Ez a módszer biztosítja, hogy dokumentumkezelési folyamata hatékony és naprakész marad. Próbálja ki, és nézze meg, hogyan egyszerűsíti le a munkafolyamatot.
 
-### Gyakran Ismételt Kérdések
+## GYIK
 
-#### K: Mi az „Utoljára nyomtatott” tulajdonság egy PDF-dokumentumban?
-V: A PDF-dokumentum "Utolsó nyomtatása" tulajdonsága a dokumentum utolsó nyomtatásának dátumára és időpontjára vonatkozik. Ez a tulajdonság hasznos lehet a dokumentumhasználattal és -kezeléssel kapcsolatos információk nyomon követéséhez.
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár a .NET-alkalmazások dokumentumfeldolgozási feladataihoz, beleértve a dokumentumok létrehozását, módosítását, konvertálását és nyomtatását.
 
-#### K: Hogyan frissíthetem az "Utoljára nyomtatott" tulajdonságot egy PDF-dokumentumban az Aspose.Words for .NET segítségével?
-V: A PDF-dokumentum "Utolsó nyomtatása" tulajdonságának Aspose.Words for .NET használatával frissítéséhez kövesse az alábbi lépéseket:
+### Miért frissítse az utolsó nyomtatott tulajdonságot PDF-ben?
+Az utolsó nyomtatott tulajdonság frissítése segít a dokumentumhasználat nyomon követésében, különösen olyan környezetben, ahol a dokumentumnyomtatás gyakori tevékenység.
 
- Hozzon létre egy példányt a`Document` osztály, amely megadja a Word dokumentum elérési útját.
+### Frissíthetek más tulajdonságokat az Aspose.Words for .NET használatával?
+Igen, az Aspose.Words for .NET lehetővé teszi a dokumentum különféle tulajdonságainak frissítését, például szerző, cím, tárgy stb.
 
- Hozzon létre egy példányt a`PdfSaveOptions` osztályt, és állítsa be a`UpdateLastPrintedProperty`tulajdonát`true` az "Utolsó nyomtatás" tulajdonság frissítésének engedélyezéséhez.
+### Az Aspose.Words for .NET ingyenes?
+Az Aspose.Words for .NET ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/). Hosszabb használathoz licencet kell vásárolnia.
 
- Használja a`Save` módszere a`Document`osztályba, hogy a dokumentumot PDF formátumba mentse a mentési beállítások megadásával.
-
-#### K: Hogyan ellenőrizhetem, hogy az "Utolsó nyomtatás" tulajdonság frissült-e a létrehozott PDF dokumentumban?
-V: Ellenőrizheti, hogy az „Utolsó nyomtatás” tulajdonság frissült-e a létrehozott PDF-dokumentumban, ha megnyitja a PDF-fájlt egy kompatibilis PDF-megtekintővel, például az Adobe Acrobat Readerrel, és megtekinti a dokumentum adatait. Az utolsó nyomtatás dátumának és időpontjának meg kell egyeznie a PDF dokumentum generálásának dátumával és időpontjával.
+### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
+Részletes dokumentációt találhat az Aspose.Words for .NET webhelyen[itt](https://reference.aspose.com/words/net/).

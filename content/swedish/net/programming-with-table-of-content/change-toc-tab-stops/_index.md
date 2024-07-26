@@ -1,6 +1,6 @@
 ---
-title: Ändra Toc-tabstopp i Word-dokument
-linktitle: Ändra Toc-tabstopp i Word-dokument
+title: Ändra Toc-flikstopp i Word-dokument
+linktitle: Ändra Toc-flikstopp i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ändrar innehållsförteckningsflikar i ett Word-dokument med Aspose.Words för .NET.
 type: docs
@@ -21,7 +21,7 @@ Det första steget är att ladda Word-dokumentet som innehåller innehållsfört
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-I det här exemplet laddar vi dokumentet "Table of contents.docx" som finns i dokumentkatalogen.
+det här exemplet laddar vi dokumentet "Table of contents.docx" som finns i dokumentkatalogen.
 
 ## Ändra flikar i innehållsförteckningen
 
@@ -40,7 +40,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-det här exemplet använder vi en loop för att gå igenom varje stycke i dokumentet. Vi kontrollerar sedan om stycket är formaterat med hjälp av Table of Contents Result (TOC) stilar. Om så är fallet kommer vi åt den första fliken som används i detta stycke och ändrar den genom att ta bort den gamla fliken och lägga till en ny flik med en modifierad position.
+I det här exemplet använder vi en loop för att gå igenom varje stycke i dokumentet. Vi kontrollerar sedan om stycket är formaterat med hjälp av Table of Contents Result (TOC) stilar. Om så är fallet kommer vi åt den första fliken som används i detta stycke och ändrar den genom att ta bort den gamla fliken och lägga till en ny flik med en modifierad position.
 
 ## Spara ändrat dokument
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 
 ## Slutsats
 
-den här guiden har vi tagit upp hur man använder Aspose.Words för .NET för att ändra flikarna i innehållsförteckningen i ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt anpassa innehållsförteckningsflikarna i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder enorm flexibilitet och kraft att arbeta med stilarna och formateringen av dina dokument, vilket gör att du kan skapa attraktiva och professionella Word-dokument.
+I den här guiden har vi tagit upp hur man använder Aspose.Words för .NET för att ändra flikarna i innehållsförteckningen i ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt anpassa innehållsförteckningsflikarna i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder enorm flexibilitet och kraft att arbeta med stilarna och formateringen av dina dokument, vilket gör att du kan skapa attraktiva och professionella Word-dokument.
 
 ### Vanliga frågor om ändring av tabbstopp i Word-dokument
 
@@ -103,7 +103,7 @@ Detta kodavsnitt laddar dokumentet "Table of contents.docx" som finns i den angi
 
 #### F: Hur kan jag ändra flikarna som används i innehållsförteckningen med Aspose.Words för .NET?
 
- S: När dokumentet har laddats kan du iterera genom varje stycke i dokumentet och kontrollera om det är formaterat med resultatstilarna för innehållsförteckningen (TOC). Om ett stycke är formaterat som ett innehållsförteckningsformat kan du ändra flikarna som används för att justera sidnumren. I Aspose.Words för .NET kan du komma åt`ParagraphFormat` egenskapen för varje stycke för att hämta och ändra tabbstoppen. Här är ett exempel:
+S: När dokumentet har laddats kan du iterera genom varje stycke i dokumentet och kontrollera om det är formaterat med resultatstilarna för innehållsförteckningen (TOC). Om ett stycke är formaterat som ett innehållsförteckningsformat kan du ändra flikarna som används för att justera sidnumren. I Aspose.Words för .NET kan du komma åt`ParagraphFormat` egenskapen för varje stycke för att hämta och ändra tabbstoppen. Här är ett exempel:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -118,7 +118,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-den här koden itererar loopen genom varje stycke i dokumentet. Om ett stycke har en innehållsförteckningsstil, kommer det åt det första tabbstoppet som används i det stycket, tar bort det och lägger till ett nytt tabbstopp med en modifierad position.
+I den här koden itererar loopen genom varje stycke i dokumentet. Om ett stycke har en innehållsförteckningsstil, kommer det åt det första tabbstoppet som används i det stycket, tar bort det och lägger till ett nytt tabbstopp med en modifierad position.
 
 #### F: Kan jag ändra flikarna för flera nivåer i innehållsförteckningen med Aspose.Words för .NET?
 

@@ -16,8 +16,8 @@ Ať už chcete vytvářet dokumenty kompatibilní se staršími verzemi aplikace
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Šifrovat Docx pomocí hesla](./encrypt-docx-with-password/) | Naučte se zašifrovat soubor DOCX pomocí hesla pomocí Aspose.Words for .NET. Kompletní návod pro zabezpečení dokumentů. |
-| [Soulad s Ooxml ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Naučte se, jak zajistit shodu s Ooxml Iso 29500_2008_Strict při ukládání dokumentů pomocí Aspose.Words for .NET. |
-| [Aktualizovat vlastnost posledního uloženého času](./update-last-saved-time-property/) | Přečtěte si, jak automaticky aktualizovat vlastnost Last Saved Time při ukládání dokumentu pomocí Aspose.Words for .NET. |
-| [Udržujte starší ovládací znaky](./keep-legacy-control-chars/) | Naučte se, jak zachovat starší řídicí znaky při ukládání dokumentu pomocí Aspose.Words for .NET. |
-| [Nastavte úroveň komprese](./set-compression-level/) | Naučte se, jak nastavit úroveň komprese při ukládání dokumentu pomocí Aspose.Words for .NET. |
+| [Šifrovat Docx pomocí hesla](./encrypt-docx-with-password/) | Zabezpečte své dokumenty Word jejich šifrováním heslem pomocí Aspose.Words for .NET. Chraňte své citlivé informace podle našeho podrobného průvodce. |
+| [Soulad s Ooxml ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Zjistěte, jak zajistit shodu s OOXML ISO 29500_2008_Strict pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. |
+| [Aktualizovat vlastnost posledního uloženého času](./update-last-saved-time-property/) | Přečtěte si, jak aktualizovat vlastnost posledního uloženého času v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce krok za krokem. |
+| [Udržujte starší ovládací znaky](./keep-legacy-control-chars/) | Naučte se, jak zachovat starší řídicí znaky v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce. |
+| [Nastavte úroveň komprese](./set-compression-level/) | Naučte se, jak nastavit úroveň komprese v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro optimalizaci úložiště a výkonu dokumentů. |

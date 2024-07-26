@@ -14,8 +14,8 @@ Os tutoriais também abordam os conceitos básicos de manipulação de imagens, 
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Expor controle de limite para binarização Tiff](./expose-threshold-control-for-tiff-binarization/) | Aprenda como controlar o limite de binarização TIFF com Aspose.Words for .NET. Tutorial completo para imagens de melhor qualidade. |
-| [Obtenha o intervalo de páginas Tiff](./get-tiff-page-range/) | Aprenda como extrair uma série de páginas TIFF com Aspose.Words for .NET. Tutorial completo para arquivos TIFF personalizados. |
-| [Formato 1Bpp indexado](./format-1bpp-indexed/) | Aprenda como formatar imagens em 1 bpp indexadas com Aspose.Words for .NET. Tutorial completo para imagens com baixa profundidade de cor. |
-| [Obtenha o intervalo de páginas JPEG](./get-jpeg-page-range/) | Aprenda como obter uma variedade de páginas JPEG com Aspose.Words for .NET. Tutorial completo para extrair imagens personalizadas. |
-| [Retorno de chamada para salvar página](./page-saving-callback/) | Aprenda como personalizar o salvamento de páginas de documentos em imagens com Aspose.Words for .NET. |
+| [Expor controle de limite para binarização Tiff](./expose-threshold-control-for-tiff-binarization/) | Aprenda como expor o controle de limite para binarização TIFF em documentos do Word usando Aspose.Words for .NET com este guia passo a passo abrangente. |
+| [Obtenha o intervalo de páginas Tiff](./get-tiff-page-range/) | Aprenda como converter intervalos de páginas específicos de documentos do Word em arquivos TIFF usando Aspose.Words for .NET com este guia passo a passo. |
+| [Formato 1Bpp indexado](./format-1bpp-indexed/) | Aprenda como converter um documento do Word em uma imagem indexada de 1Bpp usando Aspose.Words for .NET. Siga nosso guia passo a passo para fácil conversão. |
+| [Obtenha o intervalo de páginas JPEG](./get-jpeg-page-range/) | Converta páginas específicas de documentos do Word em JPEG com configurações personalizadas usando Aspose.Words for .NET. Aprenda como ajustar brilho, contraste e resolução passo a passo. |
+| [Retorno de chamada para salvar página](./page-saving-callback/) | Aprenda a salvar cada página de um documento do Word como uma imagem PNG separada usando Aspose.Words for .NET com nosso guia passo a passo detalhado. |

@@ -2,76 +2,93 @@
 title: Formátum 1Bpp Indexelt
 linktitle: Formátum 1Bpp Indexelt
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan formázhat képeket 1 bpp-ben az Aspose.Words for .NET segítségével indexelve. Teljes oktatóanyag az alacsony színmélységű képekhez.
+description: Ismerje meg, hogyan alakíthat át Word-dokumentumot 1 Bpp indexelt képpé az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat az egyszerű átalakítás érdekében.
 type: docs
 weight: 10
 url: /hu/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
-Ebben az oktatóanyagban megvizsgáljuk az Aspose.Words for .NET "Format 1Bpp Indexed" funkciójához biztosított C# forráskódot. Ez a funkció lehetővé teszi, hogy a dokumentumokban lévő képeket PNG formátumban formázza 1 bit/pixel (1 bpp) színmélységgel és indexelt színmóddal.
+## Bevezetés
 
-## 1. lépés: A környezet beállítása
+Gondolkozott már azon, hogyan menthet el egy Word-dokumentumot fekete-fehér képként, mindössze néhány sornyi kóddal? Nos, szerencséd van! Ma egy ügyes kis trükkben merülünk el az Aspose.Words for .NET használatával, amely lehetővé teszi dokumentumainak 1 Bpp indexelt képekké alakítását. Ez a formátum tökéletes bizonyos típusú digitális archiváláshoz, nyomtatáshoz, vagy amikor helyet takarít meg. Az egyes lépéseket lebontjuk, hogy olyan egyszerű legyen, mint a pite. Készen áll az indulásra? Merüljünk el!
 
-Mielőtt elkezdené, győződjön meg arról, hogy beállította fejlesztői környezetét az Aspose.Words for .NET segítségével. Győződjön meg arról, hogy hozzáadta a szükséges hivatkozásokat, és importálta a megfelelő névtereket.
+## Előfeltételek
 
-## 2. lépés: A dokumentum betöltése
+Mielőtt bemocskolnánk a kezünket, néhány dolgot meg kell tennie:
+
+-  Aspose.Words for .NET: Győződjön meg arról, hogy a könyvtár telepítve van. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+- .NET fejlesztői környezet: A Visual Studio jó választás, de bármilyen olyan környezetet használhat, amelyben kényelmes.
+- Alapvető C# ismeretek: Ne aggódjon, mi lesz egyszerű, de egy kis C# ismerete segít.
+- Word-dokumentum: Készítsen egy minta Word-dokumentumot a konvertálásra.
+
+## Névterek importálása
+
+Először is importálnunk kell a szükséges névtereket. Ez döntő fontosságú, mivel lehetővé teszi számunkra, hogy hozzáférjünk a szükséges osztályokhoz és metódusokhoz az Aspose.Words-ből.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1. lépés: Állítsa be a dokumentumkönyvtárat
+
+Meg kell adnia a dokumentumkönyvtár elérési útját. Ez az a hely, ahol a Word dokumentumot tárolja, és ahol a konvertált kép mentésre kerül.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## 2. lépés: Töltse be a Word-dokumentumot
+
+ Most töltsük be a Word dokumentumot egy Aspose.Words-be`Document` tárgy. Ez az objektum a Word-fájlt képviseli, és lehetővé teszi annak kezelését.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Ebben a lépésben a dokumentumot a`Document` metódust, és átadja a betöltendő DOCX fájl elérési útját.
+## 3. lépés: Állítsa be a képmentési beállításokat
 
-## 3. lépés: Konfigurálja a kép biztonsági mentési beállításait
+ Ezután be kell állítanunk a`ImageSaveOptions`Itt történik a varázslat. Úgy konfiguráljuk, hogy a képet PNG formátumban, 1 Bpp indexelt színmóddal mentse.
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
 {
-     PageSet = new PageSet(1),
-     ImageColorMode = ImageColorMode.BlackAndWhite,
-     PixelFormat = ImagePixelFormat.Format1bppIndexed
+    PageSet = new PageSet(1),
+    ImageColorMode = ImageColorMode.BlackAndWhite,
+    PixelFormat = ImagePixelFormat.Format1bppIndexed
 };
 ```
 
- Ebben a lépésben konfiguráljuk a képek biztonsági mentési beállításait. Létrehozunk egy újat`ImageSaveOptions`objektum megadja a kívánt mentési formátumot, itt "Png" a PNG formátumhoz. Meghatározzuk továbbá a képbe belefoglalandó oldalt, a fekete-fehér színmódot és az indexelt 1 bpp pixelformátumot.
+- SaveFormat.Png: Ez adja meg, hogy a dokumentumot PNG képként szeretnénk menteni.
+- PageSet(1): Ez azt jelzi, hogy csak az első oldalt konvertáljuk.
+- ImageColorMode.BlackAndWhite: Fekete-fehérre állítja a képet.
+- ImagePixelFormat.Format1bppIndexed: A képformátumot 1 Bpp indexeltre állítja.
 
-## 4. lépés: Képek biztonsági mentése
+## 4. lépés: Mentse el a dokumentumot képként
+
+ Végül a dokumentumot képként mentjük el a`Save` módszere a`Document` tárgy.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);
 ```
 
- Ebben az utolsó lépésben a dokumentum képeit PNG formátumban mentjük a`Save` metódust, és átadja a kimeneti fájl elérési útját a megadott mentési beállításokkal együtt.
+## Következtetés
 
-Most már futtathatja a forráskódot a dokumentumképek PNG formátumban való formázásához, 1 bpp indexelt színmélységgel. Az eredményül kapott fájl a megadott könyvtárba kerül mentésre "WorkingWithImageSaveOptions.Format1BppIndexed.Png" néven.
+És megvan! Csak néhány sornyi kóddal a Word-dokumentumot 1 Bpp indexelt képpé alakította az Aspose.Words for .NET segítségével. Ez a módszer hihetetlenül hasznos nagy kontrasztú, helytakarékos képek készítéséhez a dokumentumokból. Most ezt könnyedén integrálhatja projektjeibe és munkafolyamataiba. Boldog kódolást!
 
-### Minta forráskód az 1Bpp formátumhoz, indexelve az Aspose.Words for .NET használatával
+## GYIK
 
-```csharp 
- 
-			 // A dokumentumkönyvtár elérési útja
-			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-            
-            Document doc = new Document(dataDir + "Rendering.docx");
+### Mi az 1 Bpp indexelt kép?
+Az 1 Bpp (1 Bit Per Pixel) indexelt kép egy fekete-fehér képformátum, amelyben minden képpont egyetlen bittel (0 vagy 1) jelenik meg. Ez a formátum rendkívül helytakarékos.
 
-            ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
-            {
-                PageSet = new PageSet(1),
-                ImageColorMode = ImageColorMode.BlackAndWhite,
-                PixelFormat = ImagePixelFormat.Format1bppIndexed
-            };
+### Konvertálhatok egy Word-dokumentum több oldalát egyszerre?
+ Igen tudsz. Módosítsa a`PageSet` ingatlan a`ImageSaveOptions` hogy több oldalt vagy a teljes dokumentumot tartalmazza.
 
-            doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);
-            
-        
-```
+### Szükségem van licencre az Aspose.Words for .NET használatához?
+ Igen, az Aspose.Words for .NET szolgáltatáshoz licenc szükséges a teljes funkcionalitáshoz. Kaphatsz a[ideiglenes engedély itt](https://purchase.aspose.com/temporary-license/).
 
-### Következtetés
+### Milyen más képformátumokba konvertálhatom a Word dokumentumomat?
+ Az Aspose.Words különféle képformátumokat támogat, beleértve a JPEG-et, BMP-t és TIFF-et. Egyszerűen változtassa meg a`SaveFormat` ban,-ben`ImageSaveOptions`.
 
-Ebben az oktatóanyagban megvizsgáltuk az 1Bpp indexelt formátum funkciót az Aspose.Words for .NET segítségével. Megtanultuk, hogyan formázhatunk képeket egy dokumentumban PNG formátumban 1 bit/pixel (1 bpp) színmélységgel és indexelt színmóddal.
-
-Ez a funkció akkor hasznos, ha alacsony színmélységgel és kis fájlmérettel szeretne képeket készíteni. Az 1Bpp indexelt formátum lehetővé teszi a képek indexelt színpaletta használatával történő megjelenítését, ami bizonyos alkalmazásoknál előnyös lehet.
-
-Az Aspose.Words for .NET fejlett funkciók széles skáláját kínálja a dokumentumok kezeléséhez és létrehozásához. Az 1Bpp indexelt formátum egyike a sok hatékony eszköznek, amelyet az Ön rendelkezésére bocsát.
+### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
+ Részletes dokumentációt találhat a[Aspose.Words for .NET dokumentációs oldal](https://reference.aspose.com/words/net/).

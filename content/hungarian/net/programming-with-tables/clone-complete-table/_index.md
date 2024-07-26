@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 	// Klónozza a táblázatot, és helyezze be a dokumentumba az eredeti után.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	//Szúrjon be egy üres bekezdést a két táblázat közé,
+	// Szúrjon be egy üres bekezdést a két táblázat közé,
 	// vagy különben összevonják őket a mentéskor, ami a dokumentum érvényesítésével kapcsolatos.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

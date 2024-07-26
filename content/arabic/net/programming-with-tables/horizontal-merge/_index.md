@@ -21,7 +21,7 @@ url: /ar/net/programming-with-tables/horizontal-merge/
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستندات
+//قم بإنشاء المستند وتهيئة منشئ المستندات
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

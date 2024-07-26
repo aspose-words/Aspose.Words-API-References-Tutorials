@@ -92,7 +92,7 @@ doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 
  يمكنك تثبيته باستخدام النقطة عن طريق تشغيل:`pip install aspose-words`.
 
-### هل يمكنني تقييد التحرير لمجموعات محددة؟
+### هل يمكنني تقييد التحرير لمجموعات معينة؟
 
  نعم، يمكنك تعيين أذونات التحرير لمجموعات محددة باستخدام`protection.set_editing_groups(["Editors"])`.
 

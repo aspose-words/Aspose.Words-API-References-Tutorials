@@ -104,7 +104,7 @@ dataPoint12.Marker.Symbol = MarkerSymbol.Star;
 dataPoint12.Marker.Size = 20;
 ```
 
- För den tredje datapunkten in`series1`, vi ställer in den för att invertera om värdet är negativt, ändrar markörsymbolen till en stjärna och ställer in markörstorleken till 20.
+ För den tredje datapunkten i`series1`, vi ställer in den för att invertera om värdet är negativt, ändrar markörsymbolen till en stjärna och ställer in markörstorleken till 20.
 
 ## Steg 5: Spara dokumentet
 

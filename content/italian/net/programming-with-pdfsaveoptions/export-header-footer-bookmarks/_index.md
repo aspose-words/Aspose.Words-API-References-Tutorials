@@ -2,35 +2,49 @@
 title: Esporta i segnalibri del piè di pagina dell'intestazione del documento Word in un documento PDF
 linktitle: Esporta i segnalibri del piè di pagina dell'intestazione del documento Word in un documento PDF
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per esportare i segnalibri del piè di pagina dell'intestazione del documento Word nei segnalibri del documento PDF con Aspose.Words per .NET.
+description: Scopri come esportare i segnalibri di intestazione e piè di pagina da un documento Word in PDF utilizzando Aspose.Words per .NET con la nostra guida passo passo.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## introduzione
 
-Questo articolo fornisce una guida passo passo su come esportare i segnalibri del piè di pagina dell'intestazione del documento Word nella funzionalità del documento PDF con Aspose.Words per .NET. Spiegheremo ogni parte del codice in dettaglio. Alla fine di questo tutorial sarai in grado di capire come esportare i segnalibri dalle intestazioni e dai piè di pagina di un documento e generare un PDF con i segnalibri appropriati.
+Convertire documenti Word in PDF è un'attività comune, soprattutto quando desideri condividere o archiviare documenti preservandone la formattazione. A volte, questi documenti contengono segnalibri importanti nelle intestazioni e nei piè di pagina. In questo tutorial, esamineremo il processo di esportazione di questi segnalibri da un documento Word a un PDF utilizzando Aspose.Words per .NET.
 
-Prima di iniziare, assicurati di aver installato e configurato la libreria Aspose.Words per .NET nel tuo progetto. È possibile trovare la libreria e le istruzioni di installazione sul sito Web Aspose.
+## Prerequisiti
 
-## Passaggio 1: definire la directory dei documenti
+Prima di immergerci, assicurati di avere quanto segue:
 
- Per iniziare, devi definire il percorso della directory in cui si trovano i tuoi documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
+- Aspose.Words per .NET: è necessario che sia installato Aspose.Words per .NET. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+- Ambiente di sviluppo: configura il tuo ambiente di sviluppo. È possibile utilizzare Visual Studio o qualsiasi altro IDE compatibile con .NET.
+- Conoscenza di base di C#: è richiesta familiarità con la programmazione C# insieme agli esempi di codice.
+
+## Importa spazi dei nomi
+
+Per prima cosa, devi importare gli spazi dei nomi necessari nel tuo progetto C#. Aggiungi queste righe nella parte superiore del file di codice:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Passaggio 2: carica il documento
+Suddividiamo il processo in passaggi facili da seguire.
 
-Successivamente, dobbiamo caricare il documento che vogliamo elaborare. In questo esempio presupponiamo che il documento si chiami "Segnalibri in intestazioni e piè di pagina.docx" e si trovi nella directory dei documenti specificata.
+## Passaggio 1: inizializzare il documento
+
+Il primo passo è caricare il tuo documento Word. Ecco come puoi farlo:
 
 ```csharp
+// Il percorso della directory dei documenti.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## Passaggio 3: configura le opzioni di salvataggio come PDF
+In questo passaggio, stai semplicemente specificando il percorso della directory dei documenti e caricando il documento Word.
 
- Per esportare i segnalibri di intestazione e piè di pagina, dobbiamo configurare il file`PdfSaveOptions` oggetto. In questo esempio, impostiamo il livello di struttura dei segnalibri predefinito su 1 e la modalità di esportazione dei segnalibri di intestazione e piè di pagina su "Primo".
+## Passaggio 2: configura le opzioni di salvataggio del PDF
+
+Successivamente, è necessario configurare le opzioni di salvataggio del PDF per garantire che i segnalibri nelle intestazioni e nei piè di pagina vengano esportati correttamente.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## Passaggio 4: salva il documento come PDF con segnalibri intestazioni e piè di pagina
+ Qui stiamo configurando il`PdfSaveOptions` . IL`DefaultBookmarksOutlineLevel` imposta il livello di struttura per i segnalibri e il file`HeaderFooterBookmarksExportMode` La proprietà garantisce che venga esportata solo la prima occorrenza dei segnalibri nelle intestazioni e nei piè di pagina.
 
-Infine, possiamo salvare il documento in formato PDF utilizzando le opzioni di salvataggio configurate in precedenza.
+## Passaggio 3: salva il documento come PDF
+
+Infine, salva il tuo documento come PDF con le opzioni configurate.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-È tutto ! Hai esportato con successo i segnalibri di intestazione e piè di pagina da un documento e generato un PDF con i segnalibri appropriati utilizzando Aspose.Words per .NET.
-
-### Codice sorgente di esempio per esportare segnalibri di intestazione e piè di pagina con Aspose.Words per .NET
-
-```csharp
-
-	// Il percorso della directory dei documenti.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+In questo passaggio, stai salvando il documento nel percorso specificato con le opzioni che hai configurato.
 
 ## Conclusione
 
-In questo tutorial, abbiamo spiegato come esportare i segnalibri di intestazione e piè di pagina da un documento Word a un documento PDF utilizzando Aspose.Words per .NET. I segnalibri esportati consentono una facile navigazione e un rapido riferimento alle intestazioni e ai piè di pagina corrispondenti nel documento PDF generato. Seguire i passaggi descritti per esportare i segnalibri di intestazione e piè di pagina da un documento e generare un PDF con i segnalibri appropriati utilizzando Aspose.Words per .NET. Assicurati di specificare il percorso corretto dei tuoi documenti e di configurare le opzioni di salvataggio secondo necessità.
+il gioco è fatto! Seguendo questi passaggi, puoi esportare facilmente i segnalibri dalle intestazioni e dai piè di pagina di un documento Word in un PDF utilizzando Aspose.Words per .NET. Questo metodo garantisce che importanti aiuti alla navigazione all'interno del documento vengano conservati nel formato PDF, semplificando la navigazione all'interno del documento per i lettori.
 
-### Domande frequenti
+## Domande frequenti
 
-### D: Che cosa significa esportare i segnalibri di intestazione e piè di pagina da un documento Word a un documento PDF?
-R: L'esportazione dei segnalibri di intestazione e piè di pagina da un documento Word a un documento PDF è una funzionalità che consente di conservare e generare segnalibri nel documento PDF dalle intestazioni e dai piè di pagina. piè di pagina del documento Word originale. Ciò consente agli utenti di navigare rapidamente e facilmente nel documento PDF utilizzando i segnalibri corrispondenti alle intestazioni e ai piè di pagina.
+### Posso esportare tutti i segnalibri dal documento Word in PDF?
 
-### D: Come posso utilizzare Aspose.Words per .NET per esportare segnalibri di intestazione e piè di pagina da un documento Word a un documento PDF?
-R: Per esportare i segnalibri di intestazione e piè di pagina da un documento Word a un documento PDF utilizzando Aspose.Words per .NET, attenersi alla seguente procedura:
+ Si, puoi. Nel`PdfSaveOptions`, puoi regolare le impostazioni per includere tutti i segnalibri, se necessario.
 
- Imposta il percorso della directory in cui si trovano i tuoi documenti sostituendo`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
+### Cosa succede se voglio esportare i segnalibri anche dal corpo del documento?
 
- Carica il documento che desideri elaborare utilizzando il file`Document` class e specificare il percorso del documento Word nella directory dei documenti specificata.
+ È possibile configurare il`OutlineOptions` In`PdfSaveOptions` per includere segnalibri dal corpo del documento.
 
- Configura le opzioni di salvataggio come PDF creando un'istanza del file`PdfSaveOptions` classe e impostando le opzioni appropriate per i segnalibri di intestazione e piè di pagina.
+### È possibile personalizzare i livelli dei segnalibri nel PDF?
 
- Salvare il documento in formato PDF utilizzando il file`Save` metodo del`Document` classe specificando il percorso e le opzioni di salvataggio.
+ Assolutamente! Puoi personalizzare il`DefaultBookmarksOutlineLevel` proprietà per impostare diversi livelli di struttura per i tuoi segnalibri.
 
-### D: Quali sono i vantaggi dell'esportazione dei segnalibri di intestazione e piè di pagina in un documento PDF?
-R: I vantaggi derivanti dall'esportazione dei segnalibri di intestazione e piè di pagina in un documento PDF sono:
+### Come posso gestire i documenti senza segnalibri?
 
-Navigazione semplice: i segnalibri consentono agli utenti di navigare facilmente in un documento PDF facendo riferimento a intestazioni e piè di pagina specifici.
+Se il tuo documento non ha segnalibri, il PDF verrà generato senza alcun contorno di segnalibri. Assicurati che il tuo documento contenga segnalibri se ne hai bisogno nel PDF.
 
-Riferimento rapido: i segnalibri consentono agli utenti di trovare rapidamente le sezioni pertinenti del documento PDF in base a intestazioni e piè di pagina.
+### Posso utilizzare questo metodo per altri tipi di documenti come DOCX o RTF?
+
+Sì, Aspose.Words per .NET supporta vari tipi di documenti, inclusi DOCX, RTF e altri.

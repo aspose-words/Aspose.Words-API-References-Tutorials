@@ -19,7 +19,7 @@ url: /ar/net/add-content-using-documentbuilder/move-to-bookmark-end/
 -  Aspose.Words for .NET: احصل عليه من[رابط التحميل](https://releases.aspose.com/words/net/).
 -  ترخيص Aspose.Words صالح: يمكنك الحصول على ترخيص مؤقت[هنا](https://purchase.aspose.com/temporary-license/) إذا لم يكن لديك واحدة.
 
-وبالطبع، فإن بعض المعرفة الأساسية بـ C# و.NET ستقطع شوطًا طويلًا.
+وبطبيعة الحال، فإن بعض المعرفة الأساسية بـ C# و.NET ستقطع شوطا طويلا.
 
 ## استيراد مساحات الأسماء
 

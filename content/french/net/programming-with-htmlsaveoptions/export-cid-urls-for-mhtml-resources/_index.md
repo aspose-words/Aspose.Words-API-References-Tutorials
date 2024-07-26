@@ -2,71 +2,107 @@
 title: Exporter les URL Cid pour les ressources Mhtml
 linktitle: Exporter les URL Cid pour les ressources Mhtml
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour exporter les URL CID des ressources MHTML lors de l'enregistrement d'un document avec Aspose.Words pour .NET.
+description: Découvrez comment exporter des URL Cid pour les ressources MHTML à l'aide d'Aspose.Words for .NET dans ce didacticiel étape par étape. Parfait pour les développeurs de tous niveaux.
 type: docs
 weight: 10
 url: /fr/net/programming-with-htmlsaveoptions/export-cid-urls-for-mhtml-resources/
 ---
+## Introduction
 
-Dans ce didacticiel, nous vous guiderons à travers le code source C# pour exporter les URL CID des ressources MHTML avec Aspose.Words pour .NET. Cette fonctionnalité vous permet d'exporter les URL CID des ressources MHTML lors de l'enregistrement d'un document au format MHTML.
+Êtes-vous prêt à maîtriser l'art de l'exportation d'URL Cid pour des ressources MHTML à l'aide d'Aspose.Words pour .NET ? Que vous soyez un développeur chevronné ou débutant, ce guide complet vous guidera à chaque étape. À la fin de cet article, vous comprendrez parfaitement comment gérer efficacement les ressources MHTML dans vos documents Word. Allons-y !
 
-## Étape 1 : Configuration du projet
+## Conditions préalables
 
-Pour commencer, créez un nouveau projet C# dans votre IDE préféré. Assurez-vous que la bibliothèque Aspose.Words for .NET est référencée dans votre projet.
+Avant de commencer, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-## Étape 2 : Chargement du document
+-  Aspose.Words pour .NET : assurez-vous que la dernière version d'Aspose.Words pour .NET est installée. Sinon, vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+- Environnement de développement : un environnement de développement tel que Visual Studio.
+- Connaissance de base de C# : bien que je vous guide à travers chaque étape, une compréhension de base de C# sera bénéfique.
 
-Dans cette étape, nous allons charger le document à exporter. Utilisez le code suivant pour charger le document à partir d'un répertoire spécifié :
+## Importer des espaces de noms
+
+Tout d’abord, importons les espaces de noms nécessaires. Cette étape prépare le terrain pour notre tutoriel :
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Maintenant, décomposons le processus en étapes simples et gérables. Chaque étape comprendra une explication détaillée pour vous assurer que vous pouvez suivre sans effort.
+
+## Étape 1 : Configuration de votre projet
+
+### Étape 1.1 : Créer un nouveau projet
+Ouvrez Visual Studio et créez un nouveau projet C#. Choisissez le modèle d’application console pour simplifier les choses.
+
+### Étape 1.2 : Ajouter une référence Aspose.Words pour .NET
+Pour utiliser Aspose.Words pour .NET, vous devez ajouter une référence à la bibliothèque Aspose.Words. Vous pouvez le faire via NuGet Package Manager :
+
+1. Cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions.
+2. Sélectionnez « Gérer les packages NuGet ».
+3. Recherchez « Aspose.Words » et installez-le.
+
+## Étape 2 : Chargement du document Word
+
+### Étape 2.1 : Spécifiez le répertoire de documents
+Définissez le chemin d'accès à votre répertoire de documents. C'est ici que se trouve votre document Word.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire.
+
+### Étape 2.2 : Charger le document
+Chargez votre document Word dans le projet.
+
+```csharp
 Document doc = new Document(dataDir + "Content-ID.docx");
 ```
 
- Ce code crée une instance de`Document` en chargeant le document à partir du répertoire spécifié.
+## Étape 3 : Configuration des options d'enregistrement HTML
 
-## Étape 3 : Configuration des options de sauvegarde HTML
-
-Nous allons maintenant configurer les options de sauvegarde HTML pour exporter les URL CID des ressources MHTML. Utilisez le code suivant :
+ Créer une instance de`HtmlSaveOptions` pour personnaliser la façon dont votre document sera enregistré au format MHTML.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Mhtml)
 {
-PrettyFormat = true,
-ExportCidUrlsForMhtmlResources = true
+    PrettyFormat = true,
+    ExportCidUrlsForMhtmlResources = true
 };
 ```
 
- Ce code crée une instance de`HtmlSaveOptions` avec le format de sauvegarde défini sur MHTML. Il permet également l'exportation des URL CID des ressources MHTML en définissant`ExportCidUrlsForMhtmlResources` à`true`.
+- `SaveFormat.Mhtml` spécifie que le format de sortie est MHTML.
+- `PrettyFormat = true` garantit que la sortie est soigneusement formatée.
+- `ExportCidUrlsForMhtmlResources = true` permet l'exportation des URL Cid pour les ressources MHTML.
 
-## Étape 4 : Conversion et enregistrement du document au format MHTML
+### Étape 4 : Enregistrer le document au format MHTML
 
-Enfin, nous convertirons le document en MHTML en utilisant les options d'enregistrement HTML configurées précédemment. Utilisez le code suivant :
+Étape 4.1 : Enregistrez le document
+Enregistrez votre document sous forme de fichier MHTML en utilisant les options configurées.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
 ```
 
-Ce code convertit le document en MHTML et l'enregistre dans un fichier avec les URL CID des ressources MHTML exportées.
+## Conclusion
 
-### Exemple de code source pour exporter les URL Cid pour les ressources Mhtml à l'aide d'Aspose.Words pour .NET
+Toutes nos félicitations! Vous avez exporté avec succès les URL Cid pour les ressources MHTML à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé tout au long de la configuration de votre projet, du chargement d'un document Word, de la configuration des options d'enregistrement HTML et de l'enregistrement du document au format MHTML. Vous pouvez désormais appliquer ces étapes à vos propres projets et améliorer vos tâches de gestion documentaire.
 
-```csharp
+## FAQ
 
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Content-ID.docx");
+### Quel est le but de l’exportation des URL Cid pour les ressources MHTML ?
+L'exportation d'URL Cid pour les ressources MHTML garantit que les ressources intégrées dans votre fichier MHTML sont correctement référencées, améliorant ainsi la portabilité et l'intégrité du document.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Mhtml)
-	{
-		PrettyFormat = true, ExportCidUrlsForMhtmlResources = true
-	};
+### Puis-je personnaliser davantage le format de sortie ?
+ Oui, Aspose.Words for .NET offre des options de personnalisation étendues pour l'enregistrement des documents. Se référer au[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
+### Ai-je besoin d’une licence pour utiliser Aspose.Words pour .NET ?
+ Oui, vous avez besoin d'une licence pour utiliser Aspose.Words pour .NET. Vous pouvez obtenir un essai gratuit[ici](https://releases.aspose.com/) ou acheter une licence[ici](https://purchase.aspose.com/buy).
 
-```
+### Puis-je automatiser ce processus pour plusieurs documents ?
+Absolument! Vous pouvez créer un script pour automatiser le processus pour plusieurs documents, en tirant parti de la puissance d'Aspose.Words for .NET pour gérer efficacement les opérations par lots.
 
- Assurez-vous de spécifier le chemin correct vers le répertoire des documents dans le`dataDir` variable.
-
-Vous avez maintenant appris à exporter les URL CID des ressources MHTML lors de l'enregistrement d'un document au format MHTML à l'aide d'Aspose.Words pour .NET. En suivant le guide étape par étape fourni dans ce didacticiel, vous pouvez facilement gérer les URL CID dans vos documents MHTML exportés.
-
+### Où puis-je obtenir de l'aide si je rencontre des problèmes ?
+Si vous avez besoin d'aide, visitez le forum d'assistance Aspose[ici](https://forum.aspose.com/c/words/8) pour obtenir l'aide de la communauté et des développeurs Aspose.

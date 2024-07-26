@@ -21,7 +21,7 @@ Tabloyu oluşturmaya başlamak için yeni bir belge oluşturmamız ve belge olu�
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Belgeyi oluşturun ve belge oluşturucuyu başlatın
+//Belgeyi oluşturun ve belge oluşturucuyu başlatın
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//İlk satırı bitirmek ve yeni bir satır başlatmak için aşağıdaki yöntemi çağırın
+// İlk satırı bitirmek ve yeni bir satır başlatmak için aşağıdaki yöntemi çağırın
 builder. EndRow();
 
 // İkinci sıranın ilk hücresinin inşaatı
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Masayı oluşturmayı bitirdiğimizi belirtin.
+	// Masayı oluşturmayı bitirdiğimizi belirtin.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

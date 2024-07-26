@@ -17,7 +17,7 @@ Ellerimizi kirletmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan em
 
 1.  Aspose.Words for .NET: Kütüphanenin kurulu olduğundan emin olun. Değilse, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
 2.  Lisans Dosyası: Geçerli bir lisans dosyasına ihtiyacınız var. Eğer bir tane yoksa, bir tane alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) test amaçlı.
-3. Temel C# Bilgisi: C# programlamanın temel düzeyde anlaşıldığı varsayılmaktadır.
+3. Temel C# Bilgisi: C# programlamanın temel düzeyde anlaşıldığı varsayılır.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -52,7 +52,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Aspose.Words.li
 
 ## 3. Adım: Lisansı Uygulayın
 
- İçinde`using` bloke et, arayacaksın`SetLicense` senin yöntemi`license` bellek akışından geçen nesne. Bu yöntem Aspose.Words'ün lisansını belirler.
+ İçinde`using` bloke et, arayacaksın`SetLicense` senin yöntemi`license` bellek akışından geçen nesne. Bu yöntem Aspose.Words'ün lisansını ayarlar.
 
 ```csharp
 license.SetLicense(stream);

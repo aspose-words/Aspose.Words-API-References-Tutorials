@@ -56,7 +56,7 @@ Ahora, carguemos el documento PDF en nuestro proyecto usando Aspose.Words.
 Document doc = new Document(dataDir + "Pdf Document.pdf");
 ```
 
- Aquí, creamos una instancia de la`Document` class y pasarle la ruta de nuestro archivo PDF. Esta acción carga el PDF en la memoria, listo para la conversión.
+ Aquí creamos una instancia del`Document` class y pasarle la ruta de nuestro archivo PDF. Esta acción carga el PDF en la memoria, listo para la conversión.
 
 ## Paso 3: guardar el PDF como documento de Word
 

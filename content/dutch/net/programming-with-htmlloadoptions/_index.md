@@ -12,4 +12,4 @@ De Aspose.Words voor .NET-tutorials over Woordenverwerking met HTMLLoadOptions z
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Voorkeursbesturingstype in Word-document](./preferred-control-type/) | Stapsgewijze handleiding voor het opgeven van het gewenste besturingstype in een Word-document bij het laden van een HTML-document met Aspose.Words voor .NET. |
+| [Voorkeursbesturingstype in Word-document](./preferred-control-type/) | Leer hoe u een formulierveld met invoervak invoegt in een Word-document met Aspose.Words voor .NET. Volg deze stapsgewijze handleiding voor een naadloze integratie van HTML-inhoud. |

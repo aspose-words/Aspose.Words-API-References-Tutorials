@@ -20,7 +20,7 @@ Ujistěte se, že jste nastavili vývojové prostředí pomocí Aspose.Words pro
 Document doc = new Document();
 ```
 
- tomto kroku vytvoříme nový`Document` objekt.
+ V tomto kroku vytvoříme nový`Document` objekt.
 
 ## Krok 3: Získejte vlastnosti motivu
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- V tomto kroku použijeme`Theme` vlastnictvím`Document` objekt získat`Theme` objekt. Poté můžeme přistupovat k různým vlastnostem motivu, jako jsou hlavní písma (`MajorFonts`), sekundární písma (`MinorFonts`) a zvýrazňující barvy (`Colors`).
+ V tomto kroku použijeme`Theme` majetek z`Document`objekt získat`Theme` objekt. Poté můžeme přistupovat k různým vlastnostem motivu, jako jsou hlavní písma (`MajorFonts`), sekundární písma (`MinorFonts`) a zvýrazňující barvy (`Colors`).
 
 ## Krok 4: Zobrazte vlastnosti motivu
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Závěr
 
- V tomto tutoriálu jsme prozkoumali funkčnost získání vlastností motivu dokumentu pomocí Aspose.Words pro .NET. Za použití`Theme`objektu a jeho souvisejících vlastností jsme měli přístup k informacím o primárním a sekundárním písmu a také o akcentních barvách použitých v tématu dokumentu.
+ V tomto tutoriálu jsme prozkoumali funkčnost získání vlastností motivu dokumentu pomocí Aspose.Words pro .NET. Za použití`Theme` objektu a jeho souvisejících vlastností jsme měli přístup k informacím o primárním a sekundárním písmu a také o akcentních barvách použitých v tématu dokumentu.
 
 Schopnost získat vlastnosti motivu vám umožní analyzovat a přizpůsobit styly a rozvržení vašich dokumentů. Tyto informace můžete použít k použití cílených změn, vytváření sestav nebo provádění analýzy použití písem a barev ve vašich dokumentech.
 
@@ -68,15 +68,15 @@ Neváhejte a prozkoumejte další funkce Aspose.Words pro .NET, abyste zlepšili
 
 #### Jak mohu získat přístup k vlastnostem motivu dokumentu pomocí Aspose.Words for .NET?
 
- Chcete-li získat přístup k vlastnostem motivu dokumentu, můžete použít`Theme` vlastnictvím`Document` objekt. Vrací a`Theme`objekt, který obsahuje informace o primárním a sekundárním písmu a také o barvách zvýraznění použitých v motivu dokumentu.
+ Chcete-li získat přístup k vlastnostem motivu dokumentu, můžete použít`Theme` majetek z`Document` objekt. Vrací a`Theme` objekt, který obsahuje informace o primárním a sekundárním písmu a také o barvách zvýraznění použitých v motivu dokumentu.
 
 #### Jak mohu načíst primární a sekundární písma motivu dokumentu?
 
- K primárnímu a sekundárnímu písmu motivu dokumentu můžete přistupovat pomocí`MajorFonts`a`MinorFonts` vlastnosti`Theme` objekt, resp. Tyto vlastnosti poskytují přístup k názvům písem používaných v motivu dokumentu pro různé jazyky nebo oblasti.
+ primárnímu a sekundárnímu písmu motivu dokumentu můžete přistupovat pomocí`MajorFonts`a`MinorFonts` vlastnosti`Theme` objekt, resp. Tyto vlastnosti poskytují přístup k názvům písem používaných v motivu dokumentu pro různé jazyky nebo oblasti.
 
 #### Mohu získat zvýrazňující barvy použité v motivu dokumentu?
 
- Ano, akcentové barvy použité v motivu dokumentu můžete získat přístupem k`Colors` vlastnictvím`Theme` objekt. Tato vlastnost poskytuje přístup k akcentovým barvám, jako je např`Accent1`, `Accent2`, `Accent3`a tak dále, které můžete použít pro účely přizpůsobení nebo analýzy.
+ Ano, akcentové barvy použité v motivu dokumentu můžete získat přístupem k`Colors` majetek z`Theme` objekt. Tato vlastnost poskytuje přístup k akcentovým barvám, jako je např`Accent1`, `Accent2`, `Accent3`a tak dále, které můžete použít pro účely přizpůsobení nebo analýzy.
 
 #### Jak mohu použít načtené vlastnosti motivu?
 

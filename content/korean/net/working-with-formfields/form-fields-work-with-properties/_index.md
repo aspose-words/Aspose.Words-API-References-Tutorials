@@ -38,7 +38,7 @@ if (formField.Type == FieldType.FieldFormTextInput)
     formField.Result = "My name is " + formField.Name;
 ```
 
-다른 속성을 자유롭게 탐색하고 특정 요구 사항에 따라 다양한 작업을 수행하십시오.
+다른 속성을 자유롭게 탐색하고 특정 요구 사항에 따라 다양한 작업을 수행하세요.
 
 ## 4단계: 문서 저장
 

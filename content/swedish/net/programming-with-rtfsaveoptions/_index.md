@@ -16,4 +16,4 @@ Genom att använda Aspose.Words för .NET-handledningarna kommer du enkelt att k
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Spara bilder som Wmf](./saving-images-as-wmf/) | Lär dig hur du sparar bilder som WMF när du konverterar till RTF med Aspose.Words för .NET. |
+| [Spara bilder som Wmf](./saving-images-as-wmf/) | Lär dig hur du sparar bilder som WMF i Word-dokument med Aspose.Words för .NET med vår detaljerade steg-för-steg-guide. Öka din dokumentkompatibilitet och bildkvalitet. |

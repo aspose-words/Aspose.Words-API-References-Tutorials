@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Étape 2 : Insérer une forme d'image
- Utilisez le`InsertImage` méthode du`DocumentBuilder`objet pour insérer une forme d’image dans le document. Fournissez le chemin d’accès au fichier image en tant que paramètre.
+ Utilisez le`InsertImage` méthode du`DocumentBuilder` objet pour insérer une forme d’image dans le document. Fournissez le chemin d’accès au fichier image en tant que paramètre.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

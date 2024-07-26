@@ -79,7 +79,7 @@ builder.insert_image("image.jpg")
 builder.insert_shape(aw.Drawing.Shapes.ARROW_RIGHT, 100, 100, 50, 50)
 ```
 
-## Aggiunta di tabelle per contenuto strutturato
+## Aggiunta di tabelle per contenuti strutturati
 
 Le tabelle organizzano le informazioni in modo sistematico. Aggiungi tabelle con questo codice:
 

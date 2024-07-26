@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- ที่นี่เราเริ่มต้น a`Document` วัตถุและการใช้งาน`DocumentBuilder` เพื่อเพิ่มข้อความลงไป ที่`Writeln` method เพิ่มบรรทัดข้อความลงในเอกสาร
+ ที่นี่เราเริ่มต้น a`Document` วัตถุและการใช้งาน`DocumentBuilder` เพื่อเพิ่มข้อความลงไป ที่`Writeln` method เพิ่มบรรทัดข้อความให้กับเอกสาร
 
 ## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกการบันทึก
 

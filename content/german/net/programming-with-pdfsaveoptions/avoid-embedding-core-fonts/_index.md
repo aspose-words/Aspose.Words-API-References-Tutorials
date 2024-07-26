@@ -2,95 +2,97 @@
 title: Reduzieren Sie die PDF-Dateigröße, indem Sie keine Kernschriftarten einbetten
 linktitle: Reduzieren Sie die PDF-Dateigröße, indem Sie keine Kernschriftarten einbetten
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie die PDF-Dateigröße reduzieren, indem Sie beim Konvertieren von Word-Dokumenten in PDF mit Aspose.Words für .NET keine Kernschriftarten einbetten.
+description: Erfahren Sie, wie Sie die PDF-Dateigröße reduzieren, indem Sie mit Aspose.Words für .NET keine Kernschriftarten einbetten. Folgen Sie unserer Schritt-für-Schritt-Anleitung zur Optimierung Ihrer PDFs.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch die Schritte, wie Sie die PDF-Dateigröße reduzieren können, indem Sie mit Aspose.Words für .NET keine Kernschriftarten einbetten. Mit dieser Funktion können Sie steuern, ob beim Konvertieren eines Word-Dokuments grundlegende Schriftarten wie Arial, Times New Roman usw. in das PDF eingebettet werden müssen. Befolgen Sie die folgenden Schritte:
+Haben Sie sich schon einmal gefragt, warum Ihre PDF-Dateien so groß sind? Nun, Sie sind nicht allein. Ein häufiger Grund dafür ist das Einbetten von Kernschriften wie Arial und Times New Roman. Glücklicherweise bietet Aspose.Words für .NET eine raffinierte Möglichkeit, dieses Problem anzugehen. In diesem Tutorial zeige ich Ihnen, wie Sie die Größe Ihrer PDF-Datei reduzieren können, indem Sie das Einbetten dieser Kernschriften vermeiden. Lassen Sie uns direkt loslegen!
 
-## Schritt 1: Dokument einlegen
+## Voraussetzungen
 
-Beginnen Sie mit dem Hochladen des Word-Dokuments, das Sie in PDF konvertieren möchten:
+Bevor wir uns auf diese spannende Reise begeben, stellen wir sicher, dass Sie alles haben, was Sie brauchen. Hier ist eine kurze Checkliste:
+
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn Sie es noch nicht haben, können Sie es herunterladen[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Sie benötigen eine Entwicklungsumgebung wie Visual Studio.
+- Ein Word-Dokument: Für dieses Tutorial verwenden wir ein Word-Dokument (z. B. „Rendering.docx“).
+- Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse in C# erleichtern Ihnen den weiteren Verlauf.
+
+Gut, da wir nun bereit sind, können wir ans Eingemachte gehen!
+
+## Namespaces importieren
+
+Als Erstes importieren wir die erforderlichen Namespaces. Dieser Schritt stellt sicher, dass wir Zugriff auf alle Aspose.Words-Funktionen haben, die wir benötigen.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Schritt 1: Initialisieren Sie Ihr Dokumentverzeichnis
+
+Bevor wir mit der Bearbeitung unseres Dokuments beginnen, müssen wir das Verzeichnis angeben, in dem unsere Dokumente gespeichert sind. Dies ist für den Zugriff auf die Dateien wichtig.
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad, in dem sich Ihr Word-Dokument befindet.
+
+## Schritt 2: Laden Sie das Word-Dokument
+
+Als nächstes müssen wir das Word-Dokument laden, das wir in PDF konvertieren möchten. In diesem Beispiel verwenden wir ein Dokument namens „Rendering.docx“.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Achten Sie darauf, den richtigen Pfad zu Ihrem Word-Dokument anzugeben.
+Diese Codezeile lädt das Dokument in den Speicher, bereit zur weiteren Verarbeitung.
 
-## Schritt 2: PDF-Konvertierungsoptionen festlegen
+## Schritt 3: PDF-Speicheroptionen konfigurieren
 
-Erstellen Sie eine Instanz der Klasse PdfSaveOptions und aktivieren Sie die Vermeidung grundlegender Schriftarteinbettungen:
+Jetzt kommt der magische Teil! Wir konfigurieren die PDF-Speicheroptionen, um das Einbetten von Kernschriftarten zu vermeiden. Dies ist der entscheidende Schritt, der dabei hilft, die PDF-Dateigröße zu reduzieren.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-Diese Option steuert, ob Basisschriftarten in das PDF eingebettet werden sollen oder nicht.
+ Einstellung`UseCoreFonts` Zu`true` stellt sicher, dass Kernschriftarten wie Arial und Times New Roman nicht in das PDF eingebettet werden, was die Dateigröße erheblich reduziert.
 
-## Schritt 3: Dokument in PDF konvertieren
+## Schritt 4: Speichern Sie das Dokument als PDF
 
- Verwenden Sie die`Save` Methode zum Konvertieren des Word-Dokuments in PDF durch Angabe der Konvertierungsoptionen:
+Abschließend speichern wir das Word-Dokument mit den konfigurierten Speicheroptionen als PDF. Dieser Schritt erzeugt die PDF-Datei ohne Einbettung der Kernschriftarten.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Stellen Sie sicher, dass Sie den richtigen Pfad zum Speichern der konvertierten PDF-Datei angeben.
-
-### Beispielquellcode zum Vermeiden der Einbettung von Core Fonts mit Aspose.Words für .NET
-
-Hier ist der vollständige Quellcode zur Verwendung der Funktion zum Vermeiden der Einbettung von Kernschriftarten mit Aspose.Words für .NET:
-
-```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// In das Ausgabe-PDF werden keine Kernschriftarten wie Arial, Times New Roman usw. eingebettet.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-Indem Sie diese Schritte befolgen, können Sie einfach steuern, ob beim Konvertieren eines Word-Dokuments mit Aspose.Words für .NET Basisschriftarten in das PDF eingebettet werden sollen.
-
+Und da haben Sie es! Ihre PDF-Datei ist jetzt ohne diese sperrigen Kernschriftarten im angegebenen Verzeichnis gespeichert.
 
 ## Abschluss
 
-In diesem Tutorial haben wir erklärt, wie Sie die Größe einer PDF-Datei reduzieren können, indem Sie mit Aspose.Words für .NET keine Basisschriftarten einbetten. Mit dieser Funktion können Sie steuern, ob Basisschriftarten beim Konvertieren eines Word-Dokuments in die PDF-Datei eingebettet werden sollen. Indem Sie die beschriebenen Schritte befolgen, können Sie das Einbetten oder Nichteinbetten von Basisschriftarten problemlos steuern. Dies kann dazu beitragen, die PDF-Dateigröße zu reduzieren und eine bessere Kompatibilität und ein einheitliches Erscheinungsbild des Dokuments auf verschiedenen Geräten und Plattformen sicherzustellen. Vergessen Sie nicht, die Konsequenzen des Nichteinbettens von Basisschriftarten zu berücksichtigen und zu experimentieren, um sicherzustellen, dass das Dokument wie erwartet gerendert wird.
+Mit Aspose.Words für .NET ist die Reduzierung der PDF-Dateigröße ein Kinderspiel. Indem Sie die Einbettung von Kernschriftarten vermeiden, können Sie die Dateigröße erheblich verringern und so das Teilen und Speichern Ihrer Dokumente vereinfachen. Ich hoffe, dieses Tutorial war hilfreich und hat Ihnen ein klares Verständnis des Prozesses vermittelt. Denken Sie daran, kleine Optimierungen können einen großen Unterschied machen!
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Welche Option gibt es, Basisschriftarten nicht in eine PDF-Datei einzubetten, und warum ist sie wichtig?
-A: Die Option, Basisschriftarten nicht in eine PDF-Datei einzubetten, steuert, ob Basisschriftarten wie Arial, Times New Roman usw. beim Konvertieren eines Word-Dokuments in die PDF-Datei eingebettet werden müssen. Dies kann wichtig sein, um die Größe der PDF-Datei zu reduzieren, indem die Einbeziehung von Schriftarten vermieden wird, die allgemein in PDF-Lesesystemen verfügbar sind. Es kann auch dazu beitragen, eine bessere Kompatibilität und ein einheitliches Erscheinungsbild des PDF-Dokuments auf verschiedenen Geräten und Plattformen sicherzustellen.
+### Warum sollte ich das Einbetten von Kernschriftarten in PDFs vermeiden?
+Durch das Vermeiden der Einbettung von Kernschriftarten wird die Dateigröße reduziert, was die Weitergabe und Speicherung erleichtert.
 
-#### F: Wie kann ich Aspose.Words für .NET so konfigurieren, dass keine Basisschriftarten in eine PDF-Datei eingebettet werden?
-A: Um Aspose.Words für .NET so zu konfigurieren, dass keine Kernschriftarten in eine PDF-Datei eingebettet werden, befolgen Sie diese Schritte:
+### Kann ich das PDF auch ohne eingebettete Kernschriftarten korrekt anzeigen?
+Ja, Kernschriftarten wie Arial und Times New Roman sind grundsätzlich auf den meisten Systemen verfügbar.
 
- Legen Sie den Verzeichnispfad fest, in dem sich Ihre Dokumente befinden, indem Sie ersetzen`"YOUR DOCUMENTS DIRECTORY"` durch den tatsächlichen Pfad Ihres Dokumentverzeichnisses.
+### Was ist, wenn ich benutzerdefinierte Schriftarten einbetten muss?
+ Sie können die`PdfSaveOptions`um nach Bedarf bestimmte Schriftarten einzubetten.
 
- Laden Sie das Word-Dokument, das Sie in PDF konvertieren möchten, mit dem`Document` Klasse und dem angegebenen Dokumentpfad.
+### Ist die Nutzung von Aspose.Words für .NET kostenlos?
+ Aspose.Words für .NET erfordert eine Lizenz. Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/).
 
- Erstellen Sie eine Instanz des`PdfSaveOptions` Klasse und legen Sie die`UseCoreFonts`Eigentum an`true`. Dadurch wird das Einbetten von Basisschriftarten in die generierte PDF-Datei vermieden.
-
- Verwenden Sie die`Save` Methode der`Document` Objekt, um das Dokument im PDF-Format zu speichern und dabei die zuvor konfigurierten Konvertierungsoptionen anzugeben.
-
-#### F: Welche Vorteile bietet es, keine Basisschriftarten in eine PDF-Datei einzubetten?
-A: Das Nichteinbetten von Basisschriftarten in eine PDF-Datei hat folgende Vorteile:
-
-Reduzierung der PDF-Dateigröße: Durch den Verzicht auf die Einbettung allgemein verfügbarer Schriftarten wie Arial, Times New Roman usw. kann die PDF-Dateigröße reduziert werden, was das Speichern, Teilen und Übertragen von Dateien erleichtert.
-
-Bessere Kompatibilität: Durch die Verwendung grundlegender Schriftarten, die in PDF-Lesesystemen allgemein verfügbar sind, gewährleisten Sie eine bessere Kompatibilität und ein besseres Erscheinungsbild des Dokuments auf verschiedenen Geräten und Plattformen.
-
-#### F: Welche Konsequenzen hat es, wenn Basisschriftarten nicht in eine PDF-Datei eingebettet werden?
-A: Das Nichteinbetten von Basisschriftarten in eine PDF-Datei hat folgende Konsequenzen:
-
-Anderes Erscheinungsbild: Wenn die Basisschriftarten auf dem System, auf dem die PDF-Datei geöffnet wird, nicht verfügbar sind, werden Ersatzschriftarten verwendet, was zu einem anderen Erscheinungsbild als beabsichtigt führen kann.
-
-Probleme mit der Lesbarkeit: Die verwendeten Ersatzschriften sind möglicherweise nicht so gut lesbar wie die Originalschriften, was die Lesbarkeit des Dokuments beeinträchtigen kann.
+### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?
+ Eine ausführliche Dokumentation finden Sie[Hier](https://reference.aspose.com/words/net/).

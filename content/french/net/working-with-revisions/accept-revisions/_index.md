@@ -15,7 +15,7 @@ Dans ce didacticiel, nous vous expliquerons comment accepter les révisions d'un
 Dans cet exemple, nous créons un document et ajoutons du contenu. Nous utilisons plusieurs paragraphes pour illustrer les changements et les révisions. Voici comment:
 
 ```csharp
-//Chemin d'accès au répertoire des documents.
+// Chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

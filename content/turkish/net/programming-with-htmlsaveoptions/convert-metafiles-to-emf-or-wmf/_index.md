@@ -15,7 +15,7 @@ Aspose.Words for .NET dünyasına yeni bir derinlemesine dalışa hoş geldiniz.
 
 Koda dalmadan önce her şeyin ayarlandığından emin olalım. İşte ihtiyacınız olan şey:
 
-1. Aspose.Words for .NET Library: En son sürüme sahip olduğunuzdan emin olun. Eğer elinizde yoksa adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: En son sürüme sahip olduğunuzdan emin olun. Eğer elinizde yoksa adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
 2. .NET Framework: Makinenizde .NET Framework'ün kurulu olduğundan emin olun.
 3. Geliştirme Ortamı: Visual Studio gibi bir IDE hayatınızı kolaylaştıracaktır.
 4. Temel C# Bilgisi: Uzman olmanıza gerek yok, ancak temel bir anlayış yardımcı olacaktır.

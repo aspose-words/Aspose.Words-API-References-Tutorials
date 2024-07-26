@@ -74,7 +74,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Otázka: Jak skrýt komentáře v PDF generovaném pomocí Aspose.Words pro .NET?
 
- A: Použijte`CommentDisplayMode` vlastnictvím`LayoutOptions` objekt pro konfiguraci způsobu zobrazení poznámek při generování PDF. Chcete-li skrýt komentáře, nastavte tuto vlastnost na`CommentDisplayMode.Hide`.
+ A: Použijte`CommentDisplayMode` majetek z`LayoutOptions` objekt pro konfiguraci způsobu zobrazení poznámek při generování PDF. Chcete-li skrýt komentáře, nastavte tuto vlastnost na`CommentDisplayMode.Hide`.
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;

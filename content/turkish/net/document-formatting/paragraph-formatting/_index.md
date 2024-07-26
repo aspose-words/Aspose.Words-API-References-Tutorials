@@ -103,7 +103,7 @@ Aspose.Words for .NET, geliştiricilerin .NET kullanarak Word belgelerini progra
 ### Aspose.Words for .NET'i ücretsiz deneyebilir miyim?
  Evet, ücretsiz deneme sürümünden yararlanabilirsiniz[Burada](https://releases.aspose.com/).
 
-### Aspose.Words for .NET kullanarak daha karmaşık formatlama uygulamak mümkün mü?
+### Aspose.Words for .NET kullanarak daha karmaşık formatlama uygulamak mümkün müdür?
 Kesinlikle! Aspose.Words for .NET çok çeşitli biçimlendirme seçeneklerini destekleyerek çok karmaşık ve ayrıntılı belge düzenlerine olanak tanır.
 
 ### Daha ayrıntılı belge ve desteği nerede bulabilirim?

@@ -47,7 +47,7 @@ doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rt
 
  Yer değiştirmek`"Your Directory Path"` değiştirilen belgeyi kaydetmek istediğiniz yolu belirtin.
 
-## Aspose.Words for Java'da RTF Yükleme Seçeneklerini Yapılandırmak İçin Eksiksiz Kaynak Kodu
+## Aspose.Words for Java'da RTF Yükleme Seçeneklerini Yapılandırmak İçin Tam Kaynak Kodu
 
 ```java
 RtfLoadOptions loadOptions = new RtfLoadOptions();

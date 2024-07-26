@@ -15,7 +15,7 @@ Chào mừng bạn đến với một bước đi sâu khác vào thế giới c
 
 Trước khi đi sâu vào mã, hãy đảm bảo rằng chúng ta đã thiết lập mọi thứ. Đây là những gì bạn cần:
 
-1. Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất. Nếu chưa có, bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất. Nếu chưa có, bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
 2. .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework trên máy của mình.
 3. Môi trường phát triển: Một IDE như Visual Studio sẽ giúp cuộc sống của bạn dễ dàng hơn.
 4. Kiến thức cơ bản về C#: Bạn không cần phải là chuyên gia nhưng hiểu biết cơ bản sẽ giúp ích.

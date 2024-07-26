@@ -9,7 +9,7 @@ url: /vi/net/programming-with-pdfsaveoptions/escape-uri/
 ---
 ## Giới thiệu
 
-Này! Bạn đã bao giờ tự hỏi cách xử lý URI khi lưu tài liệu Word dưới dạng PDF bằng Aspose.Words cho .NET chưa? Bạn đang ở đúng nơi! Hôm nay, chúng ta sẽ đi sâu vào tìm hiểu các URI thoát trong tài liệu PDF để đảm bảo chúng hoạt động chính xác khi tài liệu của bạn được chuyển đổi. Hãy cùng nhau bắt tay vào cuộc hành trình này, từng bước một, đảm bảo bạn nắm bắt được từng khái niệm trên đường đi.
+Này! Bạn đã bao giờ tự hỏi cách xử lý URI khi lưu tài liệu Word dưới dạng PDF bằng Aspose.Words cho .NET chưa? Bạn đang ở đúng nơi! Hôm nay, chúng ta sẽ đi sâu vào tìm hiểu các URI thoát trong tài liệu PDF để đảm bảo chúng hoạt động chính xác khi tài liệu của bạn được chuyển đổi. Hãy cùng nhau bắt tay vào cuộc hành trình này, từng bước một, đảm bảo bạn nắm bắt được từng khái niệm trong suốt chặng đường.
 
 ## Điều kiện tiên quyết
 
@@ -39,7 +39,7 @@ Trước khi đi sâu vào mã, hãy thiết lập đường dẫn đến thư m
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế nơi bạn muốn lưu tài liệu PDF của mình.
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi bạn muốn lưu tài liệu PDF của mình.
 
 ## Bước 2: Tạo một tài liệu mới
 
@@ -86,7 +86,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### Tại sao việc thoát URI lại quan trọng trong các tệp PDF?
 
-Tính năng thoát URI đảm bảo rằng các ký tự đặc biệt trong URL được diễn giải chính xác, ngăn chặn các liên kết bị hỏng và đảm bảo chúng hoạt động như dự định.
+Tính năng thoát URI đảm bảo rằng các ký tự đặc biệt trong URL được diễn giải chính xác, ngăn chặn các liên kết bị hỏng và đảm bảo chúng hoạt động như dự kiến.
 
 ### Tôi có thể sử dụng các loại liên kết khác trong Aspose.Words cho .NET không?
 

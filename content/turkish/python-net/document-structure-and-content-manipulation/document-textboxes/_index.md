@@ -8,7 +8,7 @@ weight: 25
 url: /tr/python-net/document-structure-and-content-manipulation/document-textboxes/
 ---
 
-Metin kutuları, Word belgelerinde görsel olarak çekici ve düzenli içerik düzenleri oluşturmanıza olanak tanıyan güçlü bir özelliktir. Aspose.Words for Python ile metin kutularını belgelerinize kusursuz bir şekilde entegre ederek belge oluşturma sürecinizi bir sonraki seviyeye taşıyabilirsiniz. Bu adım adım kılavuzda Aspose.Words Python API'sini kullanarak metin kutularıyla görsel içeriğin nasıl geliştirileceğini keşfedeceğiz.
+Metin kutuları, Word belgelerinde görsel olarak çekici ve düzenli içerik düzenleri oluşturmanıza olanak tanıyan güçlü bir özelliktir. Aspose.Words for Python ile metin kutularını belgelerinize kusursuz bir şekilde entegre ederek belge oluşturma sürecinizi bir sonraki seviyeye taşıyabilirsiniz. Bu adım adım kılavuzda, Aspose.Words Python API'sini kullanarak metin kutuları ile görsel içeriğin nasıl geliştirileceğini keşfedeceğiz.
 
 ## giriiş
 
@@ -112,7 +112,7 @@ Bu kılavuzda Aspose.Words Python API'sini kullanarak Word belgelerindeki metin 
 
 Kesinlikle! Ek kaynaklar veya referanslar sağlamak için metin kutusu içeriğine köprüler ekleyebilirsiniz.
 
-### Metin kutularını belgeler arasında kopyalayıp yapıştırmak mümkün müdür?
+### Metin kutularını belgeler arasında kopyalayıp yapıştırmak mümkün mü?
 
  Evet, bir metin kutusunu bir belgeden kopyalayıp başka bir belgeye yapıştırabilirsiniz.`builder.insert_node` yöntem.
 

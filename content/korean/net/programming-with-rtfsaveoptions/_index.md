@@ -16,4 +16,4 @@ url: /ko/net/programming-with-rtfsaveoptions/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [WMF로 이미지 저장](./saving-images-as-wmf/) | .NET용 Aspose.Words를 사용하여 RTF로 변환할 때 이미지를 WMF로 저장하는 방법을 알아보세요. |
+| [WMF로 이미지 저장](./saving-images-as-wmf/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 이미지를 WMF로 저장하는 방법을 알아보세요. 문서 호환성과 이미지 품질을 향상시키세요. |

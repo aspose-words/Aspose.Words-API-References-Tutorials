@@ -15,7 +15,7 @@ In dit voorbeeld laten we u zien hoe u een Word-document in afzonderlijke sectie
 Om te beginnen moeten we de directory van uw document opgeven en het document in een Document-object laden. Hier is hoe:
 
 ```csharp
-//Pad naar de documentenmap.
+// Pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

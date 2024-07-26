@@ -16,5 +16,5 @@ Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programist
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Zakresy usuwają tekst w dokumencie programu Word](./ranges-delete-text/) | Dowiedz się, jak usunąć tekst w określonych zakresach w dokumencie programu Word przy użyciu Aspose.Words dla .NET. |
-| [Zakresy Pobierz tekst w dokumencie programu Word](./ranges-get-text/) | Dowiedz się, jak łatwo wyodrębnić tekst z dokumentu programu Word za pomocą Aspose.Words dla .NET. |
+| [Zakresy usuwają tekst w dokumencie programu Word](./ranges-delete-text/) | Dowiedz się, jak usunąć tekst z zakresu w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z tego samouczka krok po kroku. Idealny dla programistów C#. |
+| [Zakresy Pobierz tekst w dokumencie programu Word](./ranges-get-text/) | Wyodrębnij tekst z dokumentów programu Word bez wysiłku, korzystając z Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem, aby łatwo rozpocząć pracę. |

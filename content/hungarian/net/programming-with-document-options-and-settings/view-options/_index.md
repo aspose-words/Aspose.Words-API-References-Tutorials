@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Ebben a részletben meghatározzuk a dokumentumunk elérési útját, és betöltjük a segítségével`Document` osztály. Mindenképpen cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentum tényleges elérési útjával.
+ Ebben a részletben meghatározzuk a dokumentumunk elérési útját, és betöltjük a segítségével`Document` osztály. Ügyeljen arra, hogy cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentum tényleges elérési útjával.
 
 ## 2. lépés: Állítsa be a nézet típusát
 

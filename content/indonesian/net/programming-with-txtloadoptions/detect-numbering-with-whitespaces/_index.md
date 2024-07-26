@@ -103,7 +103,7 @@ Sekarang Anda dapat menjalankan kode sumber untuk memuat dokumen teks yang beris
 ## Kesimpulan
 Dalam tutorial ini, kita menjelajahi fitur deteksi penomoran spasi putih di Aspose.Words untuk .NET. Kita mempelajari cara membuat daftar dari dokumen teks yang berisi nomor daftar diikuti dengan spasi.
 
-Fitur ini sangat berguna untuk memproses dokumen yang berisi nomor daftar yang diformat dengan cara berbeda. Dengan menggunakan opsi pemuatan yang sesuai, Aspose.Words mampu mendeteksi nomor daftar ini, meskipun diikuti oleh spasi, dan mengubahnya menjadi daftar terstruktur di dokumen akhir.
+Fitur ini sangat berguna untuk memproses dokumen yang berisi nomor daftar yang diformat dengan cara berbeda. Dengan menggunakan opsi pemuatan yang sesuai, Aspose.Words dapat mendeteksi nomor daftar ini, meskipun diikuti oleh spasi, dan mengubahnya menjadi daftar terstruktur di dokumen akhir.
 
 Menggunakan fitur ini dapat menghemat waktu dan meningkatkan efisiensi alur kerja Anda. Anda dapat dengan mudah mengekstrak informasi dari dokumen teks dan mengubahnya menjadi dokumen terstruktur dengan baik dengan daftar yang tepat.
 

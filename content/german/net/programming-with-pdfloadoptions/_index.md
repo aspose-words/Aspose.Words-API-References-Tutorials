@@ -16,5 +16,5 @@ Mit diesen Tutorials können Sie den Prozess des Ladens von PDF-Dateien in Ihre 
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Verschlüsseltes PDF laden](./load-encrypted-pdf/) | Schritt-für-Schritt-Anleitung zum Laden einer verschlüsselten PDF-Datei mit Aspose.Words für .NET. |
-| [Seitenbereich einer PDF laden](./load-page-range-of-pdf/) | Schritt-für-Schritt-Anleitung zum Laden eines bestimmten PDF-Seitenbereichs mit Aspose.Words für .NET. |
+| [Verschlüsseltes PDF laden](./load-encrypted-pdf/) | Erfahren Sie in unserem Schritt-für-Schritt-Tutorial, wie Sie verschlüsselte PDFs mit Aspose.Words für .NET laden. Beherrschen Sie die PDF-Verschlüsselung und -Entschlüsselung im Handumdrehen. |
+| [Seitenbereich einer PDF laden](./load-page-range-of-pdf/) | Erfahren Sie in diesem umfassenden Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET bestimmte Seitenbereiche aus einer PDF-Datei laden. Perfekt für .NET-Entwickler. |

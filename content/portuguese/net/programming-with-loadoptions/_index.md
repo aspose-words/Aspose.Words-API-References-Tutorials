@@ -14,13 +14,13 @@ Nestes tutoriais, você aprenderá como usar LoadOptions para carregar documento
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Atualizar campos sujos em documento do Word](./update-dirty-fields/) | Aprenda como carregar um documento do Word atualizando campos sujos com Aspose.Words for .NET. |
-| [Carregar criptografado em documento do Word](./load-encrypted-document/) | Aprenda como carregar e salvar documentos criptografados em Word com Aspose.Words for .NET. |
-| [Converter forma em matemática do Office](./convert-shape-to-office-math/) | Aprenda como converter formas em fórmulas matemáticas do Office ao enviar documentos com Aspose.Words for .NET. |
-| [Definir versão do Ms Word](./set-ms-word-version/) | Aprenda como carregar um documento com uma versão específica do MS Word usando Aspose.Words for .NET. |
-| [Use a pasta temporária no documento do Word](./use-temp-folder/) | Aprenda como usar uma pasta temporária ao fazer upload de documentos com Aspose.Words for .NET. |
-| [Aviso de retorno de chamada em documento do Word](./warning-callback/) | Aprenda como lidar com avisos ao carregar um documento do Word usando a funcionalidade de retorno de chamada com Aspose.Words for .NET. |
-| [Carregar com codificação em documento do Word](./load-with-encoding/) | Aprenda como carregar um documento com uma codificação especificada em um documento do Word usando Aspose.Words for .NET. |
-| [Pular imagens PDF](./skip-pdf-images/) | Aprenda como carregar um documento PDF ignorando o carregamento de imagens PDF com Aspose.Words for .NET. |
-| [Converter metarquivos em png](./convert-metafiles-to-png/) | Aprenda como converter metarquivos em imagens PNG ao enviar documentos com Aspose.Words for .NET. |
-| [Carregar arquivos Chm em documento do Word](./load-chm/) | Aprenda como carregar arquivos CHM em documentos do Word com Aspose.Words for .NET. |
+| [Atualizar campos sujos em documento do Word](./update-dirty-fields/) | Atualize facilmente campos sujos em seus documentos do Word usando Aspose.Words for .NET com este guia passo a passo abrangente. |
+| [Carregar criptografado em documento do Word](./load-encrypted-document/) | Aprenda como carregar e salvar documentos criptografados do Word usando Aspose.Words for .NET. Proteja seus documentos com novas senhas facilmente. Guia passo a passo incluído. |
+| [Converter forma em matemática do Office](./convert-shape-to-office-math/) | Aprenda como converter formas para Office Math em documentos do Word usando Aspose.Words for .NET com nosso guia. Melhore a formatação do seu documento sem esforço. |
+| [Definir versão do Ms Word](./set-ms-word-version/) | Aprenda como definir versões do MS Word usando Aspose.Words for .NET com nosso guia detalhado. Perfeito para desenvolvedores que buscam agilizar a manipulação de documentos. |
+| [Use a pasta temporária no documento do Word](./use-temp-folder/) | Aprenda como melhorar o desempenho de seus aplicativos .NET usando uma pasta temporária ao carregar documentos do Word com Aspose.Words. |
+| [Aviso de retorno de chamada em documento do Word](./warning-callback/) | Aprenda como capturar e lidar com avisos em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo. Garanta um processamento robusto de documentos. |
+| [Carregar com codificação em documento do Word](./load-with-encoding/) | Aprenda como carregar um documento Word com codificação específica usando Aspose.Words for .NET. Guia passo a passo com explicações detalhadas. |
+| [Pular imagens PDF](./skip-pdf-images/) | Aprenda como pular imagens ao carregar documentos PDF usando Aspose.Words for .NET. Siga este guia passo a passo para extração de texto perfeita. |
+| [Converter metarquivos em png](./convert-metafiles-to-png/) | Converta facilmente metarquivos para PNG em documentos do Word usando Aspose.Words for .NET com este tutorial passo a passo. Simplifique a sua gestão documental. |
+| [Carregar arquivos Chm em documento do Word](./load-chm/) | Carregue facilmente arquivos CHM em documentos do Word usando Aspose.Words for .NET com este tutorial passo a passo. Perfeito para consolidar sua documentação técnica. |

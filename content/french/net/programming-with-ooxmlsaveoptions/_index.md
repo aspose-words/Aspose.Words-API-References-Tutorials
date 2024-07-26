@@ -16,8 +16,8 @@ Que vous souhaitiez créer des documents compatibles avec les anciennes versions
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Chiffrer Docx avec un mot de passe](./encrypt-docx-with-password/) | Découvrez comment chiffrer un fichier DOCX avec un mot de passe à l'aide d'Aspose.Words pour .NET. Tutoriel complet sur la sécurité des documents. |
-| [Conformité Ooxml ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Découvrez comment garantir la conformité Ooxml Iso 29500_2008_Strict lors de l'enregistrement de documents avec Aspose.Words pour .NET. |
-| [Propriété Mettre à jour la dernière heure enregistrée](./update-last-saved-time-property/) | Découvrez comment mettre à jour automatiquement la propriété Dernière heure enregistrée lors de l’enregistrement d’un document avec Aspose.Words pour .NET. |
-| [Conserver les caractères de contrôle hérités](./keep-legacy-control-chars/) | Découvrez comment conserver les caractères de contrôle hérités lors de l’enregistrement d’un document avec Aspose.Words for .NET. |
-| [Définir le niveau de compression](./set-compression-level/) | Découvrez comment définir le niveau de compression lors de l'enregistrement d'un document avec Aspose.Words for .NET. |
+| [Chiffrer Docx avec un mot de passe](./encrypt-docx-with-password/) | Sécurisez vos documents Word en les chiffrant avec un mot de passe à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour protéger vos informations sensibles. |
+| [Conformité Ooxml ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Découvrez comment garantir la conformité OOXML ISO 29500_2008_Strict à l'aide d'Aspose.Words for .NET avec ce guide étape par étape. |
+| [Propriété Mettre à jour la dernière heure enregistrée](./update-last-saved-time-property/) | Découvrez comment mettre à jour la dernière propriété d’heure enregistrée dans les documents Word à l’aide d’Aspose.Words pour .NET. Suivez notre guide détaillé étape par étape. |
+| [Conserver les caractères de contrôle hérités](./keep-legacy-control-chars/) | Découvrez comment conserver les caractères de contrôle hérités dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide étape par étape. |
+| [Définir le niveau de compression](./set-compression-level/) | Découvrez comment définir le niveau de compression dans les documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour optimiser le stockage et les performances de vos documents. |

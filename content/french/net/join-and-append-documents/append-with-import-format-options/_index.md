@@ -2,7 +2,7 @@
 title: Ajouter avec les options de format d'importation
 linktitle: Ajouter avec les options de format d'importation
 second_title: API de traitement de documents Aspose.Words
-description: Ajoutez sans effort des documents Word à l'aide d'Aspose.Words pour .NET, en conservant le formatage avec des instructions détaillées étape par étape.
+description: Ajoutez sans effort des documents Word à l'aide d'Aspose.Words for .NET, en conservant le formatage avec des instructions détaillées étape par étape.
 type: docs
 weight: 10
 url: /fr/net/join-and-append-documents/append-with-import-format-options/

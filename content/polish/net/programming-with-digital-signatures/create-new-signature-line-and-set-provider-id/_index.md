@@ -100,7 +100,7 @@ SignOptions signOptions = new SignOptions
 };
 ```
 
-Opcje te zapewniają, że dokument zostanie podpisany przy użyciu prawidłowych szczegółów.
+Opcje te zapewniają, że dokument zostanie podpisany przy użyciu prawidłowych danych.
 
 ## Krok 6: Utwórz posiadacza certyfikatu
 

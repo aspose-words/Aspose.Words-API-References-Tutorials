@@ -150,7 +150,7 @@ Thuộc tính tài liệu đóng một vai trò quan trọng trong việc quản
 
 ### Tôi có thể thêm thuộc tính tài liệu tùy chỉnh vào tài liệu không?
 
- Có, bạn có thể thêm thuộc tính tài liệu tùy chỉnh vào tài liệu bằng cách sử dụng`CustomDocumentProperties` bộ sưu tập. Bạn có thể xác định các thuộc tính tùy chỉnh với nhiều loại dữ liệu khác nhau, bao gồm chuỗi, boolean, ngày tháng và giá trị số.
+ Có, bạn có thể thêm thuộc tính tài liệu tùy chỉnh vào tài liệu bằng cách sử dụng`CustomDocumentProperties` bộ sưu tập. Bạn có thể xác định các thuộc tính tùy chỉnh với nhiều loại dữ liệu khác nhau, bao gồm chuỗi, booleans, ngày tháng và giá trị số.
 
 ### Làm cách nào để xóa thuộc tính tài liệu tùy chỉnh cụ thể?
 

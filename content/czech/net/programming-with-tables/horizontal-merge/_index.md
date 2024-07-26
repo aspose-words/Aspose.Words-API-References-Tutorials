@@ -21,7 +21,7 @@ Chcete-li spustit Textový procesor s tabulkou a buňkami, musíme vytvořit nov
 // Cesta k adresáři vašich dokumentů
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Vytvořte dokument a inicializujte generátor dokumentů
+//Vytvořte dokument a inicializujte generátor dokumentů
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -49,7 +49,7 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Zde použijeme tvůrce dokumentů k vytvoření tabulky a nastavení vlastností horizontálního sloučení buněk. Používáme`HorizontalMerge` vlastnictvím`CellFormat` objekt k určení typu horizontálního sloučení, které se má použít pro každou buňku. Použitím`CellMerge.First` při používání sloučíme první buňku s další`CellMerge.Previous` sloučíme aktuální buňku s předchozí buňkou.`CellMerge.None` označuje, že buňka by neměla být sloučena.
+ Zde použijeme tvůrce dokumentů k vytvoření tabulky a nastavení vlastností horizontálního sloučení buněk. Používáme`HorizontalMerge` majetek z`CellFormat` objekt k určení typu horizontálního sloučení, které se má použít pro každou buňku. Použitím`CellMerge.First` při používání sloučíme první buňku s další`CellMerge.Previous` sloučíme aktuální buňku s předchozí buňkou.`CellMerge.None` označuje, že buňka by neměla být sloučena.
 
 ## Krok 4: Uložení upraveného dokumentu
 Nakonec musíme upravený dokument uložit s buňkami sloučenými vodorovně. Použijte následující kód:

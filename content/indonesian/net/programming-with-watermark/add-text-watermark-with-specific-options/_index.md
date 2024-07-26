@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Langkah 3: Tambahkan tanda air teks dengan opsi spesifik
 
- Kami akan membuat sebuah instance dari`TextWatermarkOptions`kelas dan atur opsi yang diinginkan untuk tanda air teks.
+ Kami akan membuat sebuah instance dari`TextWatermarkOptions` kelas dan atur opsi yang diinginkan untuk tanda air teks.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

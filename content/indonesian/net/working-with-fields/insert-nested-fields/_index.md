@@ -102,7 +102,7 @@ Dalam contoh ini, kita membuat dokumen baru, menyisipkan hentian halaman, memind
 
 J: Untuk menyisipkan bidang bertumpuk dalam dokumen Word menggunakan Aspose.Words untuk .NET, Anda dapat mengikuti langkah-langkah berikut:
 
-1. Dapatkan paragraf di mana Anda ingin menyisipkan bidang bersarang.
+1. Dapatkan paragraf tempat Anda ingin menyisipkan bidang bersarang.
 2.  Membuat`FieldStart` objek untuk bidang induk.
 3.  Tambahkan bidang anak menggunakan`FieldStart.NextSibling` metode melewati yang sesuai`FieldStart` objek sebagai parameter.
 

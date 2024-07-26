@@ -64,7 +64,7 @@ Gạch nối là quá trình thêm dấu gạch nối ở cuối dòng để c�
 
 ### 2. Tôi có thể sử dụng dấu gạch nối trong nhiều ngôn ngữ không?
 
-Vâng, bạn có thể. Aspose.Words for Java cho phép bạn đăng ký và tải từ điển gạch nối cho các ngôn ngữ khác nhau.
+Có, bạn có thể. Aspose.Words for Java cho phép bạn đăng ký và tải từ điển gạch nối cho các ngôn ngữ khác nhau.
 
 ### 3. Aspose.Words for Java có dễ tích hợp vào dự án Java của tôi không?
 

@@ -12,7 +12,7 @@ url: /hu/net/working-with-fonts/font-settings-default-instance/
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
 
 - Alapvető C# ismerete: A C# programozás ismerete segít a lépések megértésében és zökkenőmentes végrehajtásában.
 -  Aspose.Words for .NET Library: Töltse le és telepítse az Aspose.Words for .NET programot a[letöltési link](https://releases.aspose.com/words/net/).

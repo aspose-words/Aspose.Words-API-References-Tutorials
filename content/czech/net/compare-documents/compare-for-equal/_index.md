@@ -65,7 +65,7 @@ docA.Compare(docBClone, "user", DateTime.Now);
 
 ## Krok 5: Zkontrolujte revize
 
- Po porovnání dokumentů můžete zkontrolovat`Revisions` sběru, abyste zjistili, zda existují nějaké rozdíly. Pokud je sbírka prázdná, dokumenty jsou totožné.
+ Po porovnání dokumentů můžete zkontrolovat`Revisions` sběr, abyste zjistili, zda existují nějaké rozdíly. Pokud je sbírka prázdná, dokumenty jsou totožné.
 
 ```csharp
 Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents are not equal");

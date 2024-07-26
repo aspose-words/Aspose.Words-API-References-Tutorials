@@ -2,7 +2,7 @@
 title: Skaffa styckestilseparator i Word-dokument
 linktitle: Skaffa styckestilseparator i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du identifierar och hanterar styckeformatsavgränsare i Word-dokument med Aspose.Words för .NET med denna omfattande, steg-för-steg handledning.
+description: Lär dig hur du identifierar och hanterar styckeformatavgränsare i Word-dokument med Aspose.Words för .NET med den här omfattande, steg-för-steg-handledningen.
 type: docs
 weight: 10
 url: /sv/net/document-formatting/get-paragraph-style-separator/

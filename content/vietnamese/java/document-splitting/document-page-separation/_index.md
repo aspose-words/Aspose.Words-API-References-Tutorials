@@ -68,7 +68,7 @@ for (int i = 0; i < pages.size(); i++) {
 
 Trong hướng dẫn từng bước này, chúng tôi đã học cách tách tài liệu thành các trang riêng lẻ bằng Aspose.Words cho Java. Điều này có thể cực kỳ hữu ích khi xử lý các tài liệu lớn hoặc khi bạn cần trích xuất các trang cụ thể để xử lý thêm.
 
-Với Aspose.Words for Java, thao tác tài liệu trở nên dễ dàng đối với các nhà phát triển Java và hướng dẫn này đã cung cấp cho bạn nền tảng vững chắc để thực hiện các tác vụ tách trang một cách hiệu quả.
+Với Aspose.Words for Java, thao tác tài liệu trở nên dễ dàng đối với các nhà phát triển Java và hướng dẫn này đã mang lại cho bạn nền tảng vững chắc để thực hiện các tác vụ tách trang một cách hiệu quả.
 
 ## Câu hỏi thường gặp
 

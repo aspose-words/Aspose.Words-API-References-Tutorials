@@ -97,7 +97,7 @@ aí está! Você acabou de aprender como criptografar um documento com uma senha
 Infelizmente, se você esquecer a senha, não conseguirá acessar o documento. Certifique-se de manter suas senhas seguras!
 
 ### Posso alterar a senha de um documento existente?
-Sim, você pode carregar um documento existente e salvá-lo com uma nova senha seguindo as mesmas etapas.
+Sim, você pode carregar um documento existente e salvá-lo com uma nova senha seguindo os mesmos passos.
 
 ### É possível remover a senha de um documento?
 Sim, ao salvar o documento sem especificar uma senha, você pode remover a proteção por senha existente.

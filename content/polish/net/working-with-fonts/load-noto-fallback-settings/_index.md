@@ -71,7 +71,7 @@ O: Tak, używanie czcionek Noto do zastępowania w dokumentach programu Word zap
 
 #### P: Czy czcionki Noto są darmowe?
 
-O: Tak, czcionki Noto są bezpłatne i mają otwarte oprogramowanie. Można je pobrać i wykorzystać w swoich projektach bezpłatnie. Dzięki temu jest to świetna opcja poprawiająca wyświetlanie czcionek w dokumentach programu Word bez konieczności inwestowania w czcionki komercyjne.
+Odp.: Tak, czcionki Noto są bezpłatne i mają otwarte oprogramowanie. Można je pobrać i wykorzystać w swoich projektach bezpłatnie. Dzięki temu jest to świetna opcja poprawiająca wyświetlanie czcionek w dokumentach programu Word bez konieczności inwestowania w czcionki komercyjne.
 
 #### P: Czy używanie czcionek Noto zwiększa dostępność moich dokumentów programu Word?
 

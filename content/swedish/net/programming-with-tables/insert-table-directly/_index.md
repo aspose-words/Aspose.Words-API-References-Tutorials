@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Den här koden initierar ett nytt Word-dokument. Du måste byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ Den här koden initierar ett nytt Word-dokument. Du måste byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ## Steg 2: Skapa tabellobjektet
 
@@ -71,7 +71,7 @@ En tabell består av rader och celler. Låt oss lägga till dessa element steg f
 // Här skulle vi kunna ringa EnsureMinimum för att skapa raderna och cellerna åt oss. Denna metod används
 // för att säkerställa att den angivna noden är giltig. I det här fallet bör en giltig tabell ha minst en rad och en cell.
 // Istället kommer vi att hantera att skapa raden och tabellen själva.
-//Detta skulle vara det bästa sättet att göra detta om vi skapade en tabell i en algoritm.
+// Detta skulle vara det bästa sättet att göra detta om vi skapade en tabell i en algoritm.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

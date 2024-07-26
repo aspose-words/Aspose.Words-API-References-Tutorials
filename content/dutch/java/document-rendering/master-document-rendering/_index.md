@@ -14,7 +14,7 @@ In deze uitgebreide stapsgewijze zelfstudie duiken we in de wereld van documentw
 
 Documentweergave is het proces waarbij elektronische documenten worden omgezet in een visuele weergave die gebruikers kunnen bekijken, bewerken of afdrukken. Het omvat het vertalen van de inhoud, lay-out en opmaak van het document naar een geschikt formaat, zoals PDF, XPS of afbeeldingen, terwijl de oorspronkelijke structuur en het uiterlijk van het document behouden blijven. In de context van Java-ontwikkeling is Aspose.Words een krachtige bibliotheek waarmee u met verschillende documentformaten kunt werken en deze naadloos voor gebruikers kunt weergeven.
 
-Documentweergave is een cruciaal onderdeel van moderne toepassingen die met een breed scala aan documenten omgaan. Of u nu een webgebaseerde documenteditor, een documentbeheersysteem of een rapportagetool maakt, het beheersen van documentweergave zal de gebruikerservaring verbeteren en documentgerichte processen stroomlijnen.
+Documentweergave is een cruciaal onderdeel van moderne toepassingen die met een breed scala aan documenten omgaan. Of u nu een webgebaseerde documenteditor, een documentbeheersysteem of een rapportagetool maakt, het beheersen van de documentweergave zal de gebruikerservaring verbeteren en documentgerichte processen stroomlijnen.
 
 ## Aan de slag met Aspose.Words voor Java
 

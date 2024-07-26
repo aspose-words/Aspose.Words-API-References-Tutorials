@@ -42,7 +42,7 @@ Först och främst måste du definiera sökvägen till din dokumentkatalog. Det 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina Word-dokument lagras. Detta hjälper Aspose.Words att hitta dokumentet du vill arbeta med.
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina Word-dokument lagras. Detta kommer att hjälpa Aspose.Words att hitta dokumentet du vill arbeta med.
 
 ## Steg 3: Ladda ditt dokument
 

@@ -94,7 +94,7 @@ using (MemoryStream dstStream = new MemoryStream())
 是的，Aspose.Words 支援各種格式，因此您可以將文件從 DOC、DOCX 和 HTML 等格式轉換為 RTF。
 
 ### 我需要許可證才能使用 Aspose.Words 嗎？
-雖然您可以在試用模式下使用 Aspose.Words，但對於擴展使用或商業項目，您應該購買授權。你可以獲得一個[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
+雖然您可以在試用模式下使用 Aspose.Words，但對於擴展使用或商業項目，您應該購買授權。您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
 
 ### 如果轉換輸出不符合預期怎麼辦？
 檢查您的輸入文件是否有相容性問題或查閱[Aspose.Words 文檔](https://reference.aspose.com/words/net/)取得故障排除提示。

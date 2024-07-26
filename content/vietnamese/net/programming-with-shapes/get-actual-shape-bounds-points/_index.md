@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Bước 2: Chèn hình ảnh
- Sử dụng`InsertImage` phương pháp của`DocumentBuilder`đối tượng để chèn hình ảnh vào tài liệu. Cung cấp đường dẫn đến tệp hình ảnh làm tham số.
+ Sử dụng`InsertImage` phương pháp của`DocumentBuilder` đối tượng để chèn hình ảnh vào tài liệu. Cung cấp đường dẫn đến tệp hình ảnh làm tham số.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

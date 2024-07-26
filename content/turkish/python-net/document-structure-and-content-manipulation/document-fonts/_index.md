@@ -7,7 +7,7 @@ type: docs
 weight: 13
 url: /tr/python-net/document-structure-and-content-manipulation/document-fonts/
 ---
-Kelime işlem alanında, yazı tipleri ve metin stili, bilginin etkili bir şekilde iletilmesinde çok önemli bir rol oynar. İster resmi bir belge, ister yaratıcı bir eser veya bir sunum oluşturuyor olun, yazı tiplerini ve metin stillerini nasıl değiştireceğinizi anlamak, içeriğinizin görsel çekiciliğini ve okunabilirliğini önemli ölçüde artırabilir. Bu makalede yazı tiplerinin dünyasını derinlemesine inceleyeceğiz, çeşitli metin şekillendirme seçeneklerini inceleyeceğiz ve Aspose.Words for Python API'sini kullanarak pratik örnekler sunacağız.
+Kelime işlem alanında, yazı tipleri ve metin stili, bilginin etkili bir şekilde iletilmesinde çok önemli bir rol oynar. İster resmi bir belge, ister yaratıcı bir eser veya bir sunum oluşturuyor olun, yazı tiplerini ve metin stillerini nasıl değiştireceğinizi anlamak, içeriğinizin görsel çekiciliğini ve okunabilirliğini önemli ölçüde artırabilir. Bu makalede yazı tipleri dünyasını derinlemesine inceleyeceğiz, çeşitli metin şekillendirme seçeneklerini inceleyeceğiz ve Aspose.Words for Python API'sini kullanarak pratik örnekler sunacağız.
 
 ## giriiş
 
@@ -43,7 +43,7 @@ Metin hizalaması belgenin estetiğini etkiler. Gösterişli bir görünüm içi
 
 Başlıklar ve alt başlıklar içeriği düzenler ve okuyuculara belgenin yapısı boyunca rehberlik eder. Başlıkları normal metinlerden ayırmak için daha büyük yazı tipleri ve kalın stiller kullanın.
 
-## Aspose.Words for Python ile Stil Uygulama
+## Python için Aspose.Words ile Stil Uygulama
 
 Aspose.Words for Python, Word belgelerini programlı olarak oluşturmak ve değiştirmek için güçlü bir araçtır. Bu API'yi kullanarak yazı tipi ve metin stilinin nasıl uygulanacağını keşfedelim.
 

@@ -2,7 +2,7 @@
 title: Localizar e substituir texto simples no Word
 linktitle: Localizar e substituir texto simples no Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como localizar e substituir texto sem esforço em documentos do Word usando Aspose.Words for .NET. Guia passo a passo incluído.
+description: Aprenda como localizar e substituir facilmente texto em documentos do Word usando Aspose.Words for .NET. Guia passo a passo incluído.
 type: docs
 weight: 10
 url: /pt/net/find-and-replace-text/simple-find-replace/

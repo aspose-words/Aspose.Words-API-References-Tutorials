@@ -46,7 +46,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Steg 2: Ställ in vytyp
 
-Därefter kommer vi att ändra vytypen för dokumentet. Vytypen avgör hur dokumentet visas, till exempel utskriftslayout, webblayout eller dispositionsvy.
+Därefter kommer vi att ändra vytypen för dokumentet. Vytypen avgör hur dokumentet visas, till exempel Print Layout, Web Layout eller Disposition View.
 
 ```csharp
 doc.ViewOptions.ViewType = ViewType.PageLayout;

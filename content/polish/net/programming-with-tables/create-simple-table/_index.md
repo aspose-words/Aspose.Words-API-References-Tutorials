@@ -14,14 +14,14 @@ W tym samouczku nauczymy się, jak utworzyć prostą tabelę w dokumencie progra
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
 2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
 
-## Krok 2: Tworzenie dokumentu i inicjalizacja generatora dokumentów
+## Krok 2: Tworzenie dokumentu i inicjowanie generatora dokumentów
 Aby rozpocząć budowanie tabeli, musimy utworzyć nowy dokument i zainicjować kreator dokumentów. Wykonaj następujące kroki:
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Utwórz dokument i zainicjuj generator dokumentów
+//Utwórz dokument i zainicjuj generator dokumentów
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Wywołaj następującą metodę, aby zakończyć pierwszą linię i rozpocząć nową
+// Wywołaj następującą metodę, aby zakończyć pierwszą linię i rozpocząć nową
 builder. EndRow();
 
 // Budowa pierwszej komórki drugiego rzędu
@@ -99,7 +99,7 @@ Pamiętaj, aby określić poprawną ścieżkę i nazwę pliku dokumentu wyjścio
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Sygnał, że zakończyliśmy budowę stołu.
+	// Sygnał, że zakończyliśmy budowę stołu.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

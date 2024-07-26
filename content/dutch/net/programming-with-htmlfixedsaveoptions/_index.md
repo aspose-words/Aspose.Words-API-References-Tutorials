@@ -12,5 +12,5 @@ De Aspose.Words voor .NET-tutorials zijn ontworpen om u te helpen de Aspose.Word
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Gebruik het lettertype van de doelmachine](./use-font-from-target-machine/) | Leer hoe u een Word-document naar vaste HTML converteert met behulp van de lettertypen van de doelmachine met Aspose.Words voor .NET. |
-| [Schrijf alle CSS-regels in één bestand](./write-all-css-rules-in-single-file/) | Leer hoe u een Word-document naar vaste HTML converteert door alle CSS-regels in één bestand te schrijven met Aspose.Words voor .NET. |
+| [Gebruik het lettertype van de doelmachine](./use-font-from-target-machine/) | Leer hoe u lettertypen van de doelcomputer kunt gebruiken in uw Word-documenten met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor een naadloze lettertype-integratie. |
+| [Schrijf alle CSS-regels in één bestand](./write-all-css-rules-in-single-file/) | Leer hoe u Word-documenten naar HTML converteert met Aspose.Words voor .NET met alle CSS-regels in één bestand voor schonere code en eenvoudiger onderhoud. |

@@ -42,7 +42,7 @@ Section section = doc.Sections[0];
 section.ClearHeadersFooters();
 ```
 
-### Aspose.Words for .NET kullanarak Üstbilgi Altbilgi İçeriğini Silmek için örnek kaynak kodu 
+### Aspose.Words for .NET kullanarak Üst Bilgi Alt Bilgi İçeriğini Silmek için örnek kaynak kodu 
 
 ```csharp
 

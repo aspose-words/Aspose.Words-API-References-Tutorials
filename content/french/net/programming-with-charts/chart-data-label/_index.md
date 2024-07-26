@@ -111,7 +111,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 
 ### Explication
 
-- doc.Save : enregistre le document sous le nom spécifié dans le répertoire fourni.
+- doc.Save : enregistre le document avec le nom spécifié dans le répertoire fourni.
 
 ## Conclusion
 

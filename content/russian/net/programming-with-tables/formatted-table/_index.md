@@ -21,7 +21,7 @@ url: /ru/net/programming-with-tables/formatted-table/
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Создайте документ и инициализируйте генератор документов.
+//Создайте документ и инициализируйте генератор документов.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

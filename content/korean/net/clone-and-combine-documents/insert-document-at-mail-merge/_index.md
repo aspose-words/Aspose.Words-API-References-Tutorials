@@ -15,7 +15,7 @@ url: /ko/net/clone-and-combine-documents/insert-document-at-mail-merge/
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
-1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기서 최신 버전을 다운로드하세요](https://releases.aspose.com/words/net/) . 라이센스를 구매해야 하는 경우 그렇게 할 수 있습니다.[여기](https://purchase.aspose.com/buy) . 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 아니면[무료 시험판](https://releases.aspose.com/).
+1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기서 최신 버전을 다운로드하세요](https://releases.aspose.com/words/net/) . 라이센스를 구매해야 하는 경우 그렇게 할 수 있습니다.[여기](https://purchase.aspose.com/buy) . 또는[임시면허](https://purchase.aspose.com/temporary-license/) 아니면[무료 시험판](https://releases.aspose.com/).
 2. 개발 환경: Visual Studio 또는 기타 C# IDE.
 3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 이 튜토리얼을 쉽게 만들 수 있습니다.
 

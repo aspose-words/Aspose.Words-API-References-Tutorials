@@ -201,4 +201,4 @@ Aspose.Words for Python 是一个功能强大的库，允许开发人员以编�
 
 ### 使用 Aspose.Words for Python 实现文档安全有没有最佳实践？
 
-是的，当使用 Aspose.Words for Python 实现文档安全时，请考虑使用强密码、选择适当的加密算法、限制授权用户的访问，并定期更新 Aspose.Words 库以获取最新的安全补丁。
+是的，在使用 Aspose.Words for Python 实现文档安全时，请考虑使用强密码、选择适当的加密算法、限制授权用户的访问，并定期更新 Aspose.Words 库以获取最新的安全补丁。

@@ -107,7 +107,7 @@ Funkcja ta jest niezwykle przydatna przy przetwarzaniu dokumentów zawierającyc
 
 Korzystanie z tej funkcji może zaoszczędzić czas i poprawić efektywność przepływu pracy. Możesz łatwo wyodrębnić informacje z dokumentów tekstowych i przekształcić je w dokumenty o dobrze zorganizowanej strukturze z odpowiednimi listami.
 
-Pamiętaj, aby wziąć pod uwagę opcje ładowania, takie jak skonfigurowanie wykrywania wybierania białych znaków, aby osiągnąć pożądane rezultaty.
+Pamiętaj, aby wziąć pod uwagę opcje ładowania, takie jak skonfigurowanie wykrywania wybierania białych znaków, aby osiągnąć pożądane wyniki.
 
 Aspose.Words dla .NET oferuje wiele zaawansowanych funkcji do manipulowania i generowania dokumentów. Dalsze zapoznawanie się z dokumentacją i przykładami dostarczonymi przez Aspose.Words umożliwi pełne wykorzystanie możliwości tej potężnej biblioteki.
 

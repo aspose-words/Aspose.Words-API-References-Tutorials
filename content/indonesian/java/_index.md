@@ -50,7 +50,7 @@ Pelajari cara memanipulasi dokumen secara efisien menggunakan Aspose.Words untuk
 ### [Konversi dan Ekspor Dokumen](./document-conversion-and-export/)
 Temukan kekuatan Aspose.Words untuk Java dalam panduan komprehensif ini. Pelajari cara mengonversi dan mengekspor dokumen dengan mudah.
 ### [Lisensi dan Konfigurasi](./licensing-and-configuration/)
-Temukan cara melisensikan dan mengkonfigurasi Aspose.Words untuk Java dengan mudah. Selidiki seluk-beluk pengaturan perangkat canggih ini untuk pemrosesan dokumen di aplikasi Java Anda.
+Temukan cara melisensikan dan mengkonfigurasi Aspose.Words untuk Java dengan mudah. Selidiki seluk-beluk menyiapkan perangkat canggih ini untuk pemrosesan dokumen di aplikasi Java Anda.
 ### [Menggunakan Elemen Dokumen](./using-document-elements/)
 Pelajari cara menggunakan elemen dokumen secara efisien di Aspose.Words untuk Java dengan tutorial komprehensif kami. Tingkatkan keterampilan pemrosesan dokumen Java Anda hari ini!
 ### [Mencetak Dokumen](./printing-documents/)

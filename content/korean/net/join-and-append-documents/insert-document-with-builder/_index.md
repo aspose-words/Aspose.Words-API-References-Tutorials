@@ -115,7 +115,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
  예, 다음을 사용하여`ImportFormatMode.KeepSourceFormatting`를 사용하면 원본 문서의 서식이 대상 문서에 삽입될 때 그대로 유지됩니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?  
- 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ### 이 프로세스를 자동화할 수 있나요?  
 전적으로! 설명된 방법은 문서 처리 작업을 자동화하기 위해 더 큰 응용 프로그램에 통합될 수 있습니다.

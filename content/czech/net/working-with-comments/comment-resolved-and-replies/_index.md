@@ -88,11 +88,11 @@ Rozlišení komentářů pomáhá při sledování a správě zpětné vazby v d
 
 #### Otázka: Jak zobrazím vyřešené komentáře v Aspose.Words for .NET?
 
- Odpověď: Ve výchozím nastavení jsou vyřešené komentáře v konečném dokumentu skryté. Můžete je však zobrazit pomocí`CommentOptions.ShowResolvedComments` vlastnictvím`Document` objekt a jeho nastavení`true`.
+ Odpověď: Ve výchozím nastavení jsou vyřešené komentáře v konečném dokumentu skryté. Můžete je však zobrazit pomocí`CommentOptions.ShowResolvedComments` majetek z`Document` objekt a jeho nastavení`true`.
 
 #### Otázka: Jak mohu skrýt všechny komentáře, včetně odpovědí, v Aspose.Words for .NET?
 
- A: Chcete-li skrýt všechny komentáře, včetně odpovědí, v Aspose.Words pro .NET, můžete použít`CommentOptions.CommentDisplayMode` vlastnictvím`Document` objekt a nastavte jej na`CommentDisplayMode.None`.
+ A: Chcete-li skrýt všechny komentáře, včetně odpovědí, v Aspose.Words pro .NET, můžete použít`CommentOptions.CommentDisplayMode` majetek z`Document` objekt a nastavte jej na`CommentDisplayMode.None`.
 
 #### Otázka: Mohu upravit text vyřešeného komentáře v Aspose.Words pro .NET?
 

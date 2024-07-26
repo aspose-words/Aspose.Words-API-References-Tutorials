@@ -14,7 +14,7 @@ W tym samouczku dowiemy się, jak utworzyć zagnieżdżoną tabelę w dokumencie
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
 2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
 
-## Krok 2: Tworzenie dokumentu i inicjalizacja generatora dokumentów
+## Krok 2: Tworzenie dokumentu i inicjowanie generatora dokumentów
 Aby rozpocząć przetwarzanie tekstu za pomocą dokumentu i generatora dokumentów, wykonaj następujące kroki:
 
 ```csharp

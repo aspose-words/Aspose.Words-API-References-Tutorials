@@ -101,7 +101,7 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功合併了兩個 Word 文檔，同時忽略了它們的頁首和頁尾。此方法對於維護特定文件部分至關重要的各種文件管理任務非常方便。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功合併了兩個 Word 文檔，同時忽略了它們的頁首和頁尾。此方法對於維護特定文件部分至關重要的各種文件管理任務非常方便。
 
 使用 Aspose.Words for .NET 可以大幅簡化您的文件處理工作流程。請記住，如果您遇到困難或需要更多信息，您可以隨時查看[文件](https://reference.aspose.com/words/net/).
 
@@ -117,7 +117,7 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
 ### 我需要許可證才能使用 Aspose.Words for .NET 嗎？
 
-是的，Aspose.Words for .NET 是一個商業產品。你可以獲得一個[免費試用](https://releases.aspose.com/)或購買許可證[這裡](https://purchase.aspose.com/buy).
+是的，Aspose.Words for .NET 是一個商業產品。您可以獲得[免費試用](https://releases.aspose.com/)或購買許可證[這裡](https://purchase.aspose.com/buy).
 
 ### 我可以使用此方法合併兩個以上的文件嗎？
 

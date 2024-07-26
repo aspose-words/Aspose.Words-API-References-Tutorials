@@ -1,6 +1,6 @@
 ---
-title: Vytvořte nový řádek podpisu a nastavte ID poskytovatele
-linktitle: Vytvořte nový řádek podpisu a nastavte ID poskytovatele
+title: Vytvořte nový podpisový řádek a nastavte ID poskytovatele
+linktitle: Vytvořte nový podpisový řádek a nastavte ID poskytovatele
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak vytvořit nový řádek podpisu a nastavit ID poskytovatele v dokumentech aplikace Word pomocí Aspose.Words for .NET. Průvodce krok za krokem.
 type: docs

@@ -113,7 +113,7 @@ Pole scalania to element zastępczy w dokumencie, który można dynamicznie zast
  Aspose.Words oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/). W przypadku długotrwałego użytkowania konieczne będzie wykupienie licencji.
 
 ### 3. Jak uzyskać tymczasową licencję na Aspose.Words?
- Licencję tymczasową można uzyskać ze strony internetowej Aspose[Tutaj](https://purchase.aspose.com/temporary-license/).
+ Licencję tymczasową można uzyskać na stronie internetowej Aspose[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### 4. Jakie wersje .NET są obsługiwane przez Aspose.Words?
 Aspose.Words obsługuje wiele wersji .NET, w tym .NET Framework, .NET Core i .NET Standard.

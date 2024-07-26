@@ -97,7 +97,7 @@ Az Aspose.Words for Java hatékony szolgáltatásokat nyújt a dokumentumok mez�
 
 Igen, az Aspose.Words for Java programban levélegyesítést végezhet. Létrehozhat dokumentumsablonokat körlevél-mezőkkel, majd feltöltheti azokat különböző forrásokból származó adatokkal. Tekintse meg a mellékelt kódpéldákat a levélegyesítés végrehajtásának részleteiért.
 
-### Hogyan illeszthetek be képeket egy dokumentumba az Aspose.Words for Java segítségével?
+### Hogyan illeszthetek be képeket egy dokumentumba az Aspose.Words for Java használatával?
 
 Ha képeket szeretne beszúrni egy dokumentumba, használhatja az Aspose.Words for Java könyvtárat. Tekintse meg a „Képekkel való munkavégzés” részben található kódpéldát, ahol lépésről lépésre olvashat arról, hogyan egyesítheti a képeket egy adatbázisból egy dokumentumba.
 
@@ -115,7 +115,7 @@ Az Aspose.Words for Java feltételes mezői lehetővé teszik dinamikus dokument
 
 ### Hogyan kaphatok támogatást vagy kérhetek segítséget az Aspose.Words for Java-val kapcsolatban?
 
- Ha segítségre van szüksége, kérdései vannak, vagy problémákba ütközik az Aspose.Words for Java használata során, látogasson el az Aspose.Words fórumra, ahol közösségi támogatást és beszélgetéseket folytathat:[Aspose.Words Forum](https://forum.aspose.com/c/words).
+ Ha segítségre van szüksége, kérdései vannak, vagy problémákba ütközik az Aspose.Words for Java használata során, látogassa meg az Aspose.Words fórumot, ahol közösségi támogatást és beszélgetéseket folytathat:[Aspose.Words Forum](https://forum.aspose.com/c/words).
 
 ### Az Aspose.Words for Java kompatibilis a különböző Java IDE-kkel?
 

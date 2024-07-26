@@ -9,7 +9,7 @@ url: /zh/net/programming-with-charts/hide-chart-axis/
 ---
 ## 介绍
 
-创建动态且视觉上有吸引力的 Word 文档通常涉及合并图表和图形。其中一种情况可能需要隐藏图表轴以获得更清晰的呈现效果。Aspose.Words for .NET 为此类任务提供了全面且易于使用的 API。本教程将指导您完成使用 Aspose.Words for .NET 隐藏 Word 文档中图表轴的步骤。
+创建动态且具有视觉吸引力的 Word 文档通常涉及合并图表和图形。其中一种情况可能需要隐藏图表轴以获得更清晰的呈现效果。Aspose.Words for .NET 为此类任务提供了全面且易于使用的 API。本教程将指导您完成使用 Aspose.Words for .NET 隐藏 Word 文档中图表轴的步骤。
 
 ## 先决条件
 

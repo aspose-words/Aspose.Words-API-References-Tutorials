@@ -100,7 +100,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 
 ## Conclusie
 
-En daar heb je het! U hebt met succes dubbele stijlen uit uw Word-document opgeschoond met Aspose.Words voor .NET. Door deze stappen te volgen, kunt u uw documenten overzichtelijk en overzichtelijk houden, waardoor ze gemakkelijker te beheren zijn en minder gevoelig zijn voor stijlproblemen. Vergeet niet dat de sleutel tot het beheersen van welke tool dan ook oefening is, dus blijf experimenteren met Aspose.Words en ontdek alle krachtige functies die het te bieden heeft.
+En daar heb je het! U hebt met succes dubbele stijlen uit uw Word-document opgeschoond met Aspose.Words voor .NET. Door deze stappen te volgen, kunt u uw documenten overzichtelijk en overzichtelijk houden, waardoor ze gemakkelijker te beheren zijn en minder gevoelig zijn voor stijlproblemen. Vergeet niet dat oefenen de sleutel is tot het beheersen van een tool, dus blijf experimenteren met Aspose.Words en ontdek alle krachtige functies die het te bieden heeft.
 
 ## Veelgestelde vragen
 

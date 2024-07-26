@@ -73,7 +73,7 @@ field. Update();
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
 ```
 
-Ebben a példában létrehoztunk egy új dokumentumot, beszúrtunk egy ASK mezőt a DocumentBuilder használata nélkül, konfiguráltuk a mező különböző tulajdonságait, és elmentettük a dokumentumot egy megadott fájlnévvel.
+Ebben a példában létrehoztunk egy új dokumentumot, beszúrtunk egy ASK mezőt a DocumentBuilder használata nélkül, konfiguráltuk a mező különféle tulajdonságait, és elmentettük a dokumentumot egy megadott fájlnévvel.
 
 Ezzel véget is értünk az "Insert ASK Field Without DocumentBuilder" funkció használatáról szóló útmutatónknak az Aspose.Words for .NET-hez.
 

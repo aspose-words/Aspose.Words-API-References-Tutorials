@@ -16,12 +16,12 @@ Ať už chcete převést dokumenty aplikace Word do formátu HTML pro zobrazení
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Export zpátečních informací](./export-roundtrip-information/) | Podrobný průvodce exportem zpátečních informací při ukládání dokumentu jako HTML pomocí Aspose.Words for .NET. |
-| [Exportovat písma jako základ 64](./export-fonts-as-base-64/) | Krok za krokem průvodce exportem základních 64 písem při ukládání dokumentu pomocí Aspose.Words for .NET. |
-| [Export zdrojů](./export-resources/) | Podrobný průvodce pro export zdrojů dokumentu při ukládání jako HTML pomocí Aspose.Words for .NET. |
+| [Export zpátečních informací](./export-roundtrip-information/) | Naučte se exportovat zpáteční informace pomocí Aspose.Words for .NET. Zachovejte integritu a formátování dokumentu během převodů. |
+| [Exportovat písma jako základ 64](./export-fonts-as-base-64/) | V tomto podrobném kurzu se dozvíte, jak exportovat písma jako Base64 pomocí Aspose.Words for .NET. Ujistěte se, že jsou písma vložena a správně zobrazena v souborech HTML. |
+| [Export zdrojů](./export-resources/) | Naučte se exportovat zdroje, jako jsou CSS a písma, a zároveň ukládat dokumenty Wordu jako HTML pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce. |
 | [Převést metasoubory na EMF nebo WMF](./convert-metafiles-to-emf-or-wmf/) | Podrobný průvodce převodem metasouborů do formátu EMF nebo WMF při převodu dokumentu do HTML pomocí Aspose.Words for .NET. |
-| [Převést metasoubory na svg](./convert-metafiles-to-svg/) | Podrobný průvodce převodem metasouborů do formátu SVG při převodu dokumentu do HTML pomocí Aspose.Words for .NET. |
-| [Přidat předponu názvu třídy CSS](./add-css-class-name-prefix/) | Podrobný průvodce přidáním předpony názvu třídy CSS při převodu dokumentu do HTML pomocí Aspose.Words for .NET. |
-| [Export Cid URL pro zdroje Mhtml](./export-cid-urls-for-mhtml-resources/) | Podrobný průvodce exportem CID URL zdrojů MHTML při ukládání dokumentu pomocí Aspose.Words for .NET. |
-| [Vyřešte názvy písem](./resolve-font-names/) | Podrobný průvodce řešením chybějících názvů písem při převodu do HTML pomocí Aspose.Words for .NET. |
-| [Export textového vstupního pole formuláře jako text](./export-text-input-form-field-as-text/) | Průvodce krok za krokem pro export polí formuláře pro zadávání textu jako prostý text pomocí Aspose.Words pro .NET. |
+| [Převést metasoubory na svg](./convert-metafiles-to-svg/) | Převeďte metasoubory na SVG v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem. Ideální pro vývojáře všech úrovní. |
+| [Přidat předponu názvu třídy CSS](./add-css-class-name-prefix/) | Naučte se, jak přidat předponu názvu třídy CSS při ukládání dokumentů aplikace Word jako HTML pomocí Aspose.Words for .NET. Součástí je podrobný průvodce, úryvky kódu a časté dotazy. |
+| [Export Cid URL pro zdroje Mhtml](./export-cid-urls-for-mhtml-resources/) | V tomto podrobném kurzu se dozvíte, jak exportovat adresy URL Cid pro zdroje MHTML pomocí Aspose.Words for .NET. Ideální pro vývojáře všech úrovní. |
+| [Vyřešte názvy písem](./resolve-font-names/) | Naučte se rozlišovat názvy písem v dokumentech aplikace Word při převodu do HTML pomocí Aspose.Words for .NET. Průvodce krok za krokem s podrobným vysvětlením. |
+| [Export textového vstupního pole formuláře jako text](./export-text-input-form-field-as-text/) | Naučte se exportovat pole formuláře pro zadávání textu jako prostý text pomocí Aspose.Words for .NET pomocí tohoto komplexního průvodce krok za krokem. |

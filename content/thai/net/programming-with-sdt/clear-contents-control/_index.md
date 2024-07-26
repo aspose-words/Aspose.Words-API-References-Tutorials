@@ -2,59 +2,110 @@
 title: การควบคุมเนื้อหาที่ชัดเจน
 linktitle: การควบคุมเนื้อหาที่ชัดเจน
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีล้างเนื้อหาของตัวควบคุมในเอกสาร Word โดยใช้ Aspose.Words for .NET
+description: เรียนรู้วิธีล้างการควบคุมเนื้อหาในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนของเรา
 type: docs
 weight: 10
 url: /th/net/programming-with-sdt/clear-contents-control/
 ---
+## การแนะนำ
 
-บทช่วยสอนนี้สาธิตวิธีการล้างเนื้อหาของ SDT ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET การล้างเนื้อหาของ SDT จะลบข้อความหรือโหนดย่อยภายในตัวควบคุมเนื้อหา
+คุณพร้อมที่จะดำดิ่งสู่โลกของ Aspose.Words สำหรับ .NET แล้วหรือยัง? วันนี้ เราจะมาสำรวจวิธีการล้างการควบคุมเนื้อหาในเอกสาร Word โดยใช้ไลบรารีที่มีประสิทธิภาพนี้ มาเริ่มต้นด้วยคำแนะนำทีละขั้นตอนที่ปฏิบัติตามง่าย!
 
 ## ข้อกำหนดเบื้องต้น
-หากต้องการติดตามบทช่วยสอนนี้ คุณจะต้องมีสิ่งต่อไปนี้:
 
-- ติดตั้ง Aspose.Words สำหรับไลบรารี .NET แล้ว
-- ความรู้พื้นฐานเกี่ยวกับ C# และการประมวลผลคำด้วยเอกสาร Word
+ก่อนที่เราจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณมีข้อกำหนดเบื้องต้นดังต่อไปนี้:
 
-## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสาร
- เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่เอกสารของคุณตั้งอยู่
+1.  Aspose.Words สำหรับ .NET: ดาวน์โหลดไลบรารี่จาก[ที่นี่](https://releases.aspose.com/words/net/).
+2. .NET Framework: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง .NET Framework บนเครื่องของคุณ
+3. IDE: สภาพแวดล้อมการพัฒนาแบบรวมเช่น Visual Studio
+4. เอกสาร: เอกสาร Word ที่มีแท็กเอกสารที่มีโครงสร้าง
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
+ด้วยข้อกำหนดเบื้องต้นเหล่านี้ คุณก็พร้อมที่จะเริ่มเขียนโค้ดแล้ว
 
-## ขั้นตอนที่ 2: โหลดเอกสารและรับ StructuredDocumentTag
- โหลดเอกสาร Word โดยใช้ไฟล์`Document` Constructor โดยส่งเส้นทางไปยังเอกสารเป็นพารามิเตอร์ จากนั้นจึงดึงสิ่งที่ต้องการกลับมา`StructuredDocumentTag`จากเอกสาร ในตัวอย่างนี้ เราถือว่า SDT เป็นโหนดลูกแรกในเอกสาร
+## นำเข้าเนมสเปซ
 
-```csharp
-Document doc = new Document(dataDir + "Structured document tags.docx");
-StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
-```
-
-## ขั้นตอนที่ 3: ล้างเนื้อหาของ StructuredDocumentTag
- ล้างเนื้อหาของ SDT โดยใช้`Clear` วิธี. วิธีนี้จะลบข้อความหรือโหนดย่อยภายในตัวควบคุมเนื้อหา
+หากต้องการใช้ Aspose.Words สำหรับ .NET คุณต้องนำเข้าเนมสเปซที่จำเป็น นี่เป็นตัวอย่างสั้นๆ เพื่อช่วยคุณเริ่มต้น:
 
 ```csharp
-sdt.Clear();
+using Aspose.Words;
+using Aspose.Words.Markup;
 ```
 
-## ขั้นตอนที่ 4: บันทึกเอกสาร
- บันทึกเอกสารที่แก้ไขโดยใช้`Save` วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithSdt.ClearContentsControl.doc"
+เรามาแบ่งกระบวนการล้างการควบคุมเนื้อหาออกเป็นขั้นตอนโดยละเอียดกัน
 
-```csharp
-doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
+## ขั้นตอนที่ 1: ตั้งค่าโครงการของคุณ
+
+ขั้นแรก ให้ตั้งค่าสภาพแวดล้อมโปรเจ็กต์ของคุณ
+
+1. เปิด Visual Studio: เปิด Visual Studio หรือ IDE ที่คุณต้องการ
+2.  สร้างโครงการใหม่: ไปที่`File` -`New` -`Project`และเลือกแอปพลิเคชันคอนโซล C#
+3. ติดตั้ง Aspose.Words สำหรับ .NET: ใช้ NuGet Package Manager เพื่อติดตั้ง Aspose.Words รันคำสั่งต่อไปนี้ใน Package Manager Console:
+```sh
+Install-Package Aspose.Words
 ```
 
-### ตัวอย่างซอร์สโค้ดสำหรับการควบคุมเนื้อหาที่ชัดเจนโดยใช้ Aspose.Words สำหรับ .NET 
+## ขั้นตอนที่ 2: โหลดเอกสาร
 
-```csharp
-	// เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+ต่อไป มาโหลดเอกสาร Word ที่มีแท็กเอกสารที่มีโครงสร้าง
 
-	Document doc = new Document(dataDir + "Structured document tags.docx");
-	StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
-	sdt.Clear();
-	doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
-```
+1. เส้นทางไปยังเอกสาร: กำหนดเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  โหลดเอกสาร: ใช้`Document` คลาสเพื่อโหลดเอกสาร Word ของคุณ
+   ```csharp
+   Document doc = new Document(dataDir + "Structured document tags.docx");
+   ```
 
-แค่นั้นแหละ! คุณได้ล้างเนื้อหาของ StructuredDocumentTag ในเอกสาร Word ของคุณสำเร็จแล้วโดยใช้ Aspose.Words for .NET
+## ขั้นตอนที่ 3: เข้าถึงแท็กเอกสารที่มีโครงสร้าง
+
+ตอนนี้ เรามาเข้าถึงแท็กเอกสารที่มีโครงสร้าง (SDT) ภายในเอกสารกันดีกว่า
+
+1. รับโหนด SDT: ดึงโหนด SDT จากเอกสาร
+   ```csharp
+   StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
+   ```
+
+## ขั้นตอนที่ 4: ล้างเนื้อหาของ SDT
+
+ล้างเนื้อหาของแท็กเอกสารที่มีโครงสร้าง
+
+1.  ล้างเนื้อหา SDT: ใช้`Clear` วิธีการลบเนื้อหา
+   ```csharp
+   sdt.Clear();
+   ```
+
+## ขั้นตอนที่ 5: บันทึกเอกสาร
+
+สุดท้าย ให้บันทึกเอกสารที่แก้ไข
+
+1. บันทึกเอกสาร: บันทึกเอกสารด้วยชื่อใหม่เพื่อเก็บรักษาไฟล์ต้นฉบับ
+   ```csharp
+   doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
+   ```
+
+## บทสรุป
+
+ยินดีด้วย! คุณได้ล้างการควบคุมเนื้อหาในเอกสาร Word โดยใช้ Aspose.Words for .NET เรียบร้อยแล้ว ไลบรารีอันทรงพลังนี้ทำให้การจัดการเอกสาร Word เป็นเรื่องง่าย เมื่อทำตามขั้นตอนเหล่านี้ คุณจะจัดการแท็กเอกสารที่มีโครงสร้างในโครงการของคุณได้อย่างง่ายดาย
+
+## คำถามที่พบบ่อย
+
+### Aspose.Words สำหรับ .NET คืออะไร
+
+Aspose.Words for .NET เป็นไลบรารีที่มีประสิทธิภาพสำหรับการทำงานกับเอกสาร Word โดยทางโปรแกรมภายในกรอบงาน .NET
+
+### ฉันสามารถใช้ Aspose.Words ได้ฟรีหรือไม่
+
+ Aspose.Words ให้ทดลองใช้ฟรีซึ่งคุณสามารถดาวน์โหลดได้[ที่นี่](https://releases.aspose.com/).
+
+### ฉันจะรับการสนับสนุนสำหรับ Aspose.Words ได้อย่างไร
+
+ คุณสามารถรับการสนับสนุนจากชุมชน Aspose[ที่นี่](https://forum.aspose.com/c/words/8).
+
+### แท็กเอกสารที่มีโครงสร้างคืออะไร
+
+แท็กเอกสารที่มีโครงสร้าง (SDT) คือการควบคุมเนื้อหาในเอกสาร Word ที่ทำหน้าที่เป็นตัวแทนสำหรับเนื้อหาบางประเภท
+
+### ฉันจะหาเอกสารสำหรับ Aspose.Words ได้ที่ไหน
+
+ เอกสารก็มีให้[ที่นี่](https://reference.aspose.com/words/net/).

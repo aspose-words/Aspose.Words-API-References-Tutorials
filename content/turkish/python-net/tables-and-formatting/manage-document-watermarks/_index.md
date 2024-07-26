@@ -12,7 +12,7 @@ Filigranlar, belgelere incelikli ancak etkili bir öğe olarak hizmet ederek pro
 
 ## Belgelerdeki Filigranlara Giriş
 
-Filigranlar, ana içeriği engellemeden ek bilgi veya marka bilinci oluşturmak amacıyla belgelerin arka planına yerleştirilen tasarım öğeleridir. Belge bütünlüğünü korumak ve görsel çekiciliği artırmak için iş belgelerinde, yasal belgelerde ve yaratıcı çalışmalarda yaygın olarak kullanılırlar.
+Filigranlar, ana içeriği engellemeden ek bilgi veya markalama sağlamak amacıyla belgelerin arka planına yerleştirilen tasarım öğeleridir. Belge bütünlüğünü korumak ve görsel çekiciliği artırmak için iş belgelerinde, yasal belgelerde ve yaratıcı çalışmalarda yaygın olarak kullanılırlar.
 
 ## Aspose.Words for Python'a Başlarken
 
@@ -61,7 +61,7 @@ watermark.color = aw.drawing.Color.GRAY
 
 ## Resim Filigranları Ekleme
 
-Görüntü filigranlarının eklenmesi benzer bir süreci içerir:
+Görüntü filigranları eklemek benzer bir süreci içerir:
 
 1. Filigran için görüntüyü yükleyin.
 2. Bir görüntü filigranı nesnesi oluşturun.

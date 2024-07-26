@@ -64,7 +64,7 @@ In diesem Schritt fügen wir unserem Dokument vier Abschnitte hinzu. Jeder Absch
 
 ## Schritt 3: Seiteneinrichtung verstehen
 
-Bevor wir das Seitenlayout ändern, müssen wir uns darüber im Klaren sein, dass jeder Abschnitt in einem Word-Dokument sein eigenes Seitenlayout haben kann. Diese Flexibilität ermöglicht unterschiedliche Formatierungen innerhalb eines einzelnen Dokuments.
+Bevor wir das Seiten-Setup ändern, ist es wichtig zu verstehen, dass jeder Abschnitt in einem Word-Dokument sein eigenes Seiten-Setup haben kann. Diese Flexibilität ermöglicht unterschiedliche Formatierungen innerhalb eines einzelnen Dokuments.
 
 ## Schritt 4: Seiteneinrichtung in allen Abschnitten ändern
 

@@ -27,7 +27,7 @@ Trước khi chúng ta đi sâu vào mã, hãy đảm bảo bạn có sẵn các
 
 ### Bước 1: Tải tài liệu
 
-Để tách một tài liệu, trước tiên chúng ta cần tải nó vào ứng dụng Java của mình. Đây là cách bạn có thể làm điều đó:
+Để phân chia một tài liệu, trước tiên chúng ta cần tải nó vào ứng dụng Java của mình. Đây là cách bạn có thể làm điều đó:
 
 ```java
 // Tải tài liệu

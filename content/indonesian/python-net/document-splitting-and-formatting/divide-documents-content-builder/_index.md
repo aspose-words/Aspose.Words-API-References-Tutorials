@@ -70,7 +70,7 @@ builder.insert_break(aw.BreakType.SECTION_BREAK_NEW_PAGE)
 
 ## Contoh Kasus Penggunaan: Membuat Curriculum Vitae
 
-Mari pertimbangkan kasus penggunaan praktis: membuat curriculum vitae (CV) dengan bagian-bagian berbeda.
+Mari kita pertimbangkan kasus penggunaan praktis: membuat curriculum vitae (CV) dengan bagian-bagian berbeda.
 
 ```python
 # Add CV sections

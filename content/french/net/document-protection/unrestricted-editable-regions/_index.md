@@ -9,7 +9,7 @@ url: /fr/net/document-protection/unrestricted-editable-regions/
 ---
 ## Introduction
 
-Si vous avez toujours voulu protéger un document Word tout en permettant que certaines parties soient modifiables, vous êtes au bon endroit ! Ce guide vous guidera tout au long du processus de configuration de régions modifiables sans restriction dans un document Word à l'aide d'Aspose.Words pour .NET. Nous couvrirons tout, des conditions préalables aux étapes détaillées, afin de vous assurer une expérience fluide. Prêt? Allons-y !
+Si vous avez toujours voulu protéger un document Word tout en permettant que certaines parties soient modifiables, vous êtes au bon endroit ! Ce guide vous guidera tout au long du processus de configuration de régions modifiables sans restriction dans un document Word à l'aide d'Aspose.Words pour .NET. Nous couvrirons tout, des conditions préalables aux étapes détaillées, afin de vous garantir une expérience fluide. Prêt? Allons-y !
 
 ## Conditions préalables
 

@@ -71,7 +71,7 @@ shape.setShadowEnabled(true);
 
 ## Konumlandırma ve Boyutlandırma
 
-Şekillerin hassas konumlandırılması ve boyutlandırılması belgenin düzeni açısından çok önemlidir. Aspose.Words for Java şu özellikleri ayarlamak için yöntemler sunar:
+Şekillerin hassas konumlandırılması ve boyutlandırılması belgenin düzeni açısından çok önemlidir. Aspose.Words for Java şu özellikleri ayarlamak için yöntemler sağlar:
 
 ```java
 shape.setLeft(100);

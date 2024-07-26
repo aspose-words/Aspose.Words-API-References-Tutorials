@@ -103,7 +103,7 @@ Ez a kódrészlet betölti a megadott könyvtárban található "Table of Conten
 
 #### K: Hogyan módosíthatom a tartalomjegyzékben használt füleket az Aspose.Words for .NET használatával?
 
- V: A dokumentum betöltése után ismételheti a dokumentum egyes bekezdéseit, és ellenőrizheti, hogy a tartalomjegyzék (TOC) eredménystílusai alapján formázták-e. Ha egy bekezdés TOC stílusban van formázva, módosíthatja az oldalszámok igazításához használt tabulátorokat. Az Aspose.Words for .NET alkalmazásban elérheti a`ParagraphFormat` minden bekezdés tulajdonsága a tabulátorok lekéréséhez és módosításához. Íme egy példa:
+V: A dokumentum betöltése után ismételheti a dokumentum egyes bekezdéseit, és ellenőrizheti, hogy a tartalomjegyzék (TOC) eredménystílusai alapján formázták-e. Ha egy bekezdés TOC stílusban van formázva, módosíthatja az oldalszámok igazításához használt tabulátorokat. Az Aspose.Words for .NET alkalmazásban elérheti a`ParagraphFormat` minden bekezdés tulajdonsága a tabulátorok lekéréséhez és módosításához. Íme egy példa:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))

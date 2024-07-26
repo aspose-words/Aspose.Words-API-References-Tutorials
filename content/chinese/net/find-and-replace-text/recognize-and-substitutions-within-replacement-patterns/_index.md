@@ -13,7 +13,7 @@ url: /zh/net/find-and-replace-text/recognize-and-substitutions-within-replacemen
 
 ## 先决条件
 
-在我们开始编写代码之前，让我们确保您已准备好所需的一切：
+在我们开始编写代码之前，请确保您已准备好所需的一切：
 
 -  Aspose.Words for .NET：你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 - 开发环境：任何 IDE（如 Visual Studio）都可以。

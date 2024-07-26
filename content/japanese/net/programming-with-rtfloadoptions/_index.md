@@ -16,4 +16,4 @@ Aspose.Words for .NET チュートリアルに従うことで、Aspose.Words の
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [UTF-8テキストを認識する](./recognize-utf8-text/) | Aspose.Words for .NET を使用して RTF ドキュメント内の Utf-8 文字を認識する方法を学習します。データの整合性を確保します。 |
+| [UTF-8テキストを認識する](./recognize-utf8-text/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の UTF-8 テキストを認識する方法を学習します。 |

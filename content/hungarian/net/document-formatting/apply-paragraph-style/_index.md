@@ -33,7 +33,7 @@ Rendben, most, hogy készen vannak a hozzávalóink, bontsuk le a folyamatot fal
 
 ## 1. lépés: A dokumentumkönyvtár beállítása
 
-Először is meg kell határoznunk, hogy a dokumentumainkat hova mentsük. Tekintsd ezt a munkaterület beállításának.
+Először is meg kell határoznunk, hogy a dokumentumainkat hova mentsük. Tekintse ezt úgy, mint a munkaterület beállítását.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.

@@ -173,7 +173,7 @@ Document doc2 = new Document("modified.docx");
 doc1.compare(doc2, "comparison_result.docx");
 ```
 
-## 常见问题故障排除
+## 解决常见问题
 
 即使是最好的开发人员也会遇到问题。我们将在本节中解决常见问题及其解决方案。
 
@@ -245,4 +245,4 @@ doc1.compare(doc2, "comparison_result.docx");
 
 掌握使用 Aspose.Words for Java 进行文档的高级保存设置，为文档处理开辟了无限可能。无论您是优化文档大小、保护敏感信息还是自动生成文档，Aspose.Words for Java 都能让您轻松实现目标。
 
-现在，有了这些知识，您可以将文档处理技能提升到新的高度。利用 Aspose.Words for Java 的强大功能，创建符合您确切要求的文档。
+现在，有了这些知识，您可以将文档处理技能提升到新的高度。利用 Aspose.Words for Java 的强大功能，创建符合您确切规格的文档。

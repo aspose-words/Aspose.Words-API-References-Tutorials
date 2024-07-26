@@ -15,7 +15,7 @@ url: /hu/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 
 Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy mindent beállítottunk. Íme, amire szüksége van:
 
-1. Aspose.Words for .NET Library: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Ha nincs meg, letöltheti innen[itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Ha nincs meg, letöltheti innen[itt](https://releases.aspose.com/words/net/).
 2. .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer telepítve van a számítógépen.
 3. Fejlesztési környezet: Az olyan IDE, mint a Visual Studio, megkönnyíti az életét.
 4. Alapvető C# ismeretek: Nem kell szakértőnek lenned, de az alapvető ismeretek sokat segítenek.

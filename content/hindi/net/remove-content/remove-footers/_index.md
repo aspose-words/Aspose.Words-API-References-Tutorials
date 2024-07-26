@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// प्राथमिक फ़ुटर वह फ़ुटर है जिसका उपयोग विषम पृष्ठों के लिए किया जाता है।
+	//प्राथमिक फ़ुटर वह फ़ुटर है जिसका उपयोग विषम पृष्ठों के लिए किया जाता है।
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

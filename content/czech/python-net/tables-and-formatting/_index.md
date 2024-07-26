@@ -15,7 +15,7 @@ Vítejte ve světě výukových programů Aspose.Words, kde se ponoříme do um�
 
 ## Význam tabulek a formátování
 
-Tabulky slouží jako mocné nástroje pro uspořádání a prezentaci informací strukturovaným způsobem. Správné formátování zlepšuje vizuální přehlednost tabulek a usnadňuje čtenářům trávení dat a přehledů. Ať už vytváříte složité finanční výkazy, generujete faktury nebo předvádíte výsledky výzkumu, tabulky jsou všestranné komponenty, které dokážou transformovat nezpracovaná data do smysluplných prezentací.
+Tabulky slouží jako mocné nástroje pro uspořádání a prezentaci informací strukturovaným způsobem. Správné formátování zlepšuje vizuální přehlednost tabulek a usnadňuje čtenářům trávení dat a přehledů. Ať už vytváříte složité finanční výkazy, generujete faktury nebo předvádíte výsledky výzkumu, tabulky jsou všestrannými součástmi, které dokážou transformovat nezpracovaná data do smysluplných prezentací.
 
 ## Co se naučíte
 

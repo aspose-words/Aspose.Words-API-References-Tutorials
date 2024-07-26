@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /fr/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-Dans ce tutoriel, nous explorerons le code source C# fourni pour la fonctionnalité « Détection de numérotation avec espaces blancs » avec Aspose.Words for .NET. Cette fonctionnalité vous permet de détecter et de créer des listes à partir d'un document texte contenant des numéros de liste suivis d'espaces blancs.
+Dans ce tutoriel, nous explorerons le code source C# fourni pour la fonctionnalité « Détection de numérotation avec espaces blancs » avec Aspose.Words pour .NET. Cette fonctionnalité vous permet de détecter et de créer des listes à partir d'un document texte contenant des numéros de liste suivis d'espaces blancs.
 
 ## Étape 1 : Configuration de l'environnement
 

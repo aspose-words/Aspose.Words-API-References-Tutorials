@@ -54,7 +54,7 @@ Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
 Assert.True(shapes[1].IsInsertRevision);
 ```
 
-## Adım 4: Şekil Taşıma Revizyonlarını Kontrol Etme
+## 4. Adım: Şekil Taşıma Revizyonlarını Kontrol Etme
 
 Şekil değiştirme revizyonlarını içeren mevcut bir belgeyi yükleyeceğiz ve ilgili revizyonları kontrol edeceğiz.
 

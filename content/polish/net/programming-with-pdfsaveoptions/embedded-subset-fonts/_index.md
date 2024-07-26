@@ -2,94 +2,84 @@
 title: Osadź podzbiór czcionek w dokumencie PDF
 linktitle: Osadź podzbiór czcionek w dokumencie PDF
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący osadzania podzbiorów czcionek w dokumencie PDF przy użyciu Aspose.Words dla .NET.
+description: Zmniejsz rozmiar pliku PDF, osadzając tylko niezbędne podzbiory czcionek za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby efektywnie optymalizować pliki PDF.
 type: docs
 weight: 10
 url: /pl/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
+## Wstęp
 
-Ten artykuł zawiera przewodnik krok po kroku dotyczący korzystania z funkcji osadzania podzbioru czcionek w Aspose.Words dla .NET. Szczegółowo wyjaśnimy każdą część kodu. Pod koniec tego samouczka będziesz w stanie zrozumieć, jak osadzać podzbiory czcionek w dokumencie i generować plik PDF zawierający tylko glify użyte w dokumencie.
+Czy zauważyłeś, że niektóre pliki PDF są znacznie większe od innych, nawet jeśli zawierają podobną treść? Winowajca często leży w czcionkach. Osadzanie czcionek w pliku PDF gwarantuje, że będzie on wyglądał tak samo na każdym urządzeniu, ale może również zwiększyć rozmiar pliku. Na szczęście Aspose.Words dla .NET oferuje przydatną funkcję osadzania tylko niezbędnych podzbiorów czcionek, dzięki czemu Twoje pliki PDF są schludne i wydajne. Ten samouczek przeprowadzi Cię przez ten proces krok po kroku.
 
-Zanim zaczniesz, upewnij się, że w swoim projekcie zainstalowałeś i skonfigurowałeś bibliotekę Aspose.Words for .NET. Bibliotekę i instrukcje instalacji można znaleźć na stronie internetowej Aspose.
+## Warunki wstępne
 
-## Krok 1: Zdefiniuj katalog dokumentów
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
- Na początek musisz zdefiniować ścieżkę do katalogu, w którym znajdują się Twoje dokumenty. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+-  Aspose.Words dla .NET: Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko .NET: Upewnij się, że masz działające środowisko programistyczne .NET.
+- Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci podążać dalej.
+
+## Importuj przestrzenie nazw
+
+Aby używać Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw w swoim projekcie. Dodaj je na górze pliku C#:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Krok 2: Prześlij dokument
+## Krok 1: Załaduj dokument
 
-Następnie musimy załadować dokument, który chcemy przetworzyć. W tym przykładzie zakładamy, że dokument nazywa się „Rendering.docx” i znajduje się w określonym katalogu dokumentów.
+ Najpierw musimy załadować dokument Word, który chcemy przekonwertować do formatu PDF. Odbywa się to za pomocą`Document` klasa dostarczona przez Aspose.Words.
 
 ```csharp
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Krok 3: Skonfiguruj opcje zapisywania jako PDF
+ Ten fragment kodu ładuje dokument znajdujący się pod adresem`dataDir` . Pamiętaj o wymianie`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentu.
 
- Aby utworzyć plik PDF zawierający tylko podzbiory czcionek używanych w dokumencie, musimy skonfigurować`PdfSaveOptions` obiekt z`EmbedFullFonts` właściwość ustawiona na`false`.
+## Krok 2: Skonfiguruj opcje zapisywania plików PDF
+
+ Następnie konfigurujemy`PdfSaveOptions` aby mieć pewność, że osadzone zostaną tylko niezbędne podzbiory czcionek. Przez ustawienie`EmbedFullFonts` Do`false`, mówimy Aspose.Words, aby osadził tylko glify użyte w dokumencie.
 
 ```csharp
+// Wyjściowy plik PDF będzie zawierał podzbiory czcionek w dokumencie.
+// Czcionki PDF uwzględniają tylko glify użyte w dokumencie.
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## Krok 4: Zapisz dokument jako plik PDF z podzestawami czcionek
+Ten mały, ale kluczowy krok pomaga znacznie zmniejszyć rozmiar pliku PDF.
 
- Wreszcie możemy zapisać dokument jako plik PDF, korzystając z podzbiorów czcionek. Określ nazwę pliku wyjściowego i`saveOptions` obiekt, który skonfigurowaliśmy w poprzednim kroku.
+## Krok 3: Zapisz dokument w formacie PDF
 
-```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-```
-
-To wszystko ! Pomyślnie osadziłeś podzestawy czcionek w dokumencie i wygenerowałeś plik PDF zawierający tylko glify użyte w dokumencie za pomocą Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy do osadzania podzbiorów czcionek w Aspose.Words dla .NET
+ Na koniec zapisujemy dokument jako plik PDF za pomocą`Save` metoda, stosując skonfigurowaną`PdfSaveOptions`.
 
 ```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Wyjściowy plik PDF będzie zawierał podzbiory czcionek w dokumencie.
-	// Czcionki PDF uwzględniają tylko glify użyte w dokumencie.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);
 ```
+
+ Ten kod wygeneruje plik PDF z nazwą`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf` w określonym katalogu, z osadzonymi tylko niezbędnymi podzestawami czcionek.
 
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak osadzać podzbiory czcionek w dokumencie PDF za pomocą Aspose.Words dla .NET. Osadzanie podzbiorów czcionek pomaga zmniejszyć rozmiar pliku PDF, zachowując jednocześnie wygląd dokumentu poprzez użycie tylko faktycznie używanych znaków. Zapewnia to lepszą kompatybilność i wydajność podczas przeglądania i drukowania plików PDF. Zachęcamy do dalszego odkrywania funkcji Aspose.Words dla .NET w celu optymalizacji generowania dokumentów PDF z osadzonymi podzbiorami czcionek.
+masz to! Wykonując te proste kroki, możesz skutecznie zmniejszyć rozmiar plików PDF, osadzając tylko niezbędne podzbiory czcionek za pomocą Aspose.Words dla .NET. To nie tylko oszczędza miejsce na dysku, ale także zapewnia szybsze ładowanie i lepszą wydajność, szczególnie w przypadku dokumentów z rozbudowaną czcionką.
 
-### Często Zadawane Pytania
+## Często zadawane pytania
 
-#### P: Na czym polega osadzanie podzbiorów czcionek w dokumencie PDF?
-O: Osadzanie podzbiorów czcionek w dokumencie PDF polega na dołączaniu jedynie glifów użytych w dokumencie, a nie wszystkich pełnych czcionek. Zmniejsza to rozmiar pliku PDF, włączając tylko dane czcionki niezbędne do wyświetlenia znaków faktycznie używanych w dokumencie.
+### Dlaczego w pliku PDF powinienem osadzać tylko podzbiory czcionek?
+Osadzanie tylko niezbędnych podzbiorów czcionek może znacznie zmniejszyć rozmiar pliku PDF bez pogarszania wyglądu i czytelności dokumentu.
 
-#### P: Jaka jest różnica pomiędzy osadzaniem pełnych czcionek a osadzaniem podzbiorów czcionek?
-Odp.: Pełne osadzanie czcionek oznacza włączenie wszystkich czcionek użytych w dokumencie w pliku PDF, co gwarantuje, że dokument będzie wyświetlany dokładnie tak, jak został zaprojektowany, ale może zwiększyć rozmiar pliku PDF. Natomiast osadzanie podzbiorów czcionek zawiera tylko glify użyte w dokumencie, zmniejszając w ten sposób rozmiar pliku PDF, ale ograniczając możliwość dokładnego odtworzenia wyglądu dokumentu w przypadku późniejszego dodania dodatkowych znaków.
+### Czy w razie potrzeby mogę powrócić do osadzania pełnych czcionek?
+ Tak, możesz. Po prostu ustaw`EmbedFullFonts`własność do`true` w`PdfSaveOptions`.
 
-#### P: Jak mogę osadzić podzbiory czcionek w dokumencie PDF przy użyciu Aspose.Words dla .NET?
-O: Aby osadzić podzbiory czcionek w dokumencie PDF za pomocą Aspose.Words dla .NET, wykonaj następujące kroki:
+### Czy Aspose.Words dla .NET obsługuje inne funkcje optymalizacji plików PDF?
+Absolutnie! Aspose.Words dla .NET oferuje szereg opcji optymalizacji plików PDF, w tym kompresję obrazu i usuwanie nieużywanych obiektów.
 
- Ustaw ścieżkę katalogu dokumentu, zastępując`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+### Jakie typy czcionek można osadzać za pomocą Aspose.Words dla .NET?
+Aspose.Words dla .NET obsługuje osadzanie podzbiorów wszystkich czcionek TrueType używanych w dokumencie.
 
- Załaduj dokument, który chcesz przetworzyć za pomocą`Document` klasa i ścieżka dokumentu.
-
- Skonfiguruj opcje zapisywania plików PDF, tworząc instancję pliku`PdfSaveOptions` klasę i ustawienie`EmbedFullFonts`własność do`false`Dzięki temu w pliku PDF zostaną uwzględnione tylko podzbiory czcionek użyte w dokumencie.
-
- Zapisz dokument w formacie PDF z osadzonymi podzestawami czcionek, korzystając z pliku`Save` metoda`Document` obiektu, podając nazwę pliku wyjściowego i skonfigurowane wcześniej opcje zapisu.
-
-#### P: Jakie są korzyści z osadzania podzbiorów czcionek w dokumencie PDF?
-O: Korzyści z osadzania podzbiorów czcionek w dokumencie PDF są następujące:
-
-Zmniejszony rozmiar pliku PDF: uwzględnienie tylko glifów używanych w dokumencie powoduje zmniejszenie rozmiaru pliku PDF w porównaniu do osadzania pełnych czcionek.
-
-Zachowanie wyglądu dokumentu: Podzbiory czcionek zawarte w pliku PDF umożliwiają odtworzenie wyglądu dokumentu przy użyciu wyłącznie faktycznie używanych znaków.
-
-Zgodność z ograniczeniami Licencji: Osadzanie podzbiorów czcionek może być preferowane w przypadkach, gdy pełne czcionki nie mogą być legalnie osadzone ze względu na ograniczenia licencyjne.
+### Jak mogę sprawdzić, które czcionki są osadzone w moim pliku PDF?
+Możesz otworzyć plik PDF w programie Adobe Acrobat Reader i sprawdzić właściwości na karcie Czcionki, aby zobaczyć osadzone czcionki.

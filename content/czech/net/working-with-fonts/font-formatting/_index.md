@@ -49,7 +49,7 @@ font.Name = "Arial";
 font.Underline = Underline.Dash;
 ```
 
-## Krok 4: Přidejte do dokumentu text
+## Krok 4: Přidejte text do dokumentu
 Dále použijeme tvůrce dokumentů k přidání nějakého formátovaného textu do dokumentu.
 
 ```csharp

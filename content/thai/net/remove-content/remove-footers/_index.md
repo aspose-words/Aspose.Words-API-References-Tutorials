@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// ส่วนท้ายหลักคือส่วนท้ายที่ใช้สำหรับหน้าคี่
+	//ส่วนท้ายหลักคือส่วนท้ายที่ใช้สำหรับหน้าคี่
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

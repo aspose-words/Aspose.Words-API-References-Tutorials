@@ -15,7 +15,7 @@ Bienvenido a otra inmersión profunda en el mundo de Aspose.Words para .NET. Hoy
 
 Antes de sumergirnos en el código, asegurémonos de tener todo configurado. Esto es lo que necesitas:
 
-1. Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión. Si no lo tienes, puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión. Si no lo tienes, puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
 2. .NET Framework: asegúrese de tener .NET Framework instalado en su máquina.
 3. Entorno de desarrollo: un IDE como Visual Studio le hará la vida más fácil.
 4. Conocimientos básicos de C#: no es necesario ser un experto, pero unos conocimientos básicos le ayudarán.
@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Paso 2: crea la cadena HTML con SVG
 
-A continuación, necesitamos una cadena HTML que contenga la imagen SVG que queremos convertir. He aquí un ejemplo sencillo:
+continuación, necesitamos una cadena HTML que contenga la imagen SVG que queremos convertir. He aquí un ejemplo sencillo:
 
 ```csharp
 string html = 

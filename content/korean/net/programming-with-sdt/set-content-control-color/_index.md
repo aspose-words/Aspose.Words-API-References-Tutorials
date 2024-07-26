@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2단계: 문서 로드 및 콘텐츠 컨트롤 검색
- 다음을 사용하여 Word 문서를 로드합니다.`Document` 생성자, 문서 경로를 매개변수로 전달합니다. 문서에서 원하는 콘텐츠 컨트롤을 검색합니다. 이 예에서는 콘텐츠 컨트롤이 문서의 첫 번째 구조화된 문서 태그라고 가정합니다.
+ 다음을 사용하여 Word 문서를 로드합니다.`Document`생성자, 문서 경로를 매개변수로 전달합니다. 문서에서 원하는 콘텐츠 컨트롤을 검색합니다. 이 예에서는 콘텐츠 컨트롤이 문서의 첫 번째 구조화된 문서 태그라고 가정합니다.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

@@ -14,7 +14,7 @@ Välkommen till denna djupgående handledning om hur du hanterar teckensnittsins
 
 Innan vi börjar, se till att du har följande:
 
-- Grundläggande kunskaper i C#: Bekantskap med C#-programmering hjälper dig att förstå och implementera stegen smidigt.
+- Grundläggande kunskaper om C#: Bekantskap med C#-programmering hjälper dig att förstå och implementera stegen smidigt.
 -  Aspose.Words for .NET Library: Ladda ner och installera Aspose.Words for .NET från[nedladdningslänk](https://releases.aspose.com/words/net/).
 - Utvecklingsmiljö: En lämplig miljö som Visual Studio för att skriva och exekvera din kod.
 - Exempeldokument: Ett exempeldokument (t.ex.`Rendering.docx`) för att tillämpa teckensnittsinställningarna.

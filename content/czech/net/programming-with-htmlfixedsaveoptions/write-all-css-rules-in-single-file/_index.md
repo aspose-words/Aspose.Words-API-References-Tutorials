@@ -2,64 +2,91 @@
 title: Napište všechna pravidla CSS do jednoho souboru
 linktitle: Napište všechna pravidla CSS do jednoho souboru
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak převést dokument aplikace Word na pevný HTML zápisem všech pravidel CSS do jednoho souboru pomocí Aspose.Words for .NET.
+description: Naučte se převádět dokumenty Wordu do HTML pomocí Aspose.Words for .NET se všemi pravidly CSS v jediném souboru pro čistší kód a snadnější údržbu.
 type: docs
 weight: 10
 url: /cs/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/
 ---
+## Úvod
 
-Při převodu dokumentu aplikace Word na pevný HTML v aplikaci C# možná budete chtít sloučit všechna pravidla CSS do jednoho souboru pro lepší organizaci a přenositelnost. S knihovnou Aspose.Words pro .NET můžete tuto funkci snadno určit pomocí možností uložení HtmlFixedSaveOptions. V tomto podrobném průvodci vás provedeme tím, jak používat zdrojový kód Aspose.Words for .NET C# k převodu dokumentu aplikace Word na pevný HTML zápisem všech pravidel CSS do jednoho souboru pomocí možností uložení HtmlFixedSaveOptions.
+Stalo se vám, že jste se při převodu dokumentů Wordu do HTML zapletli do sítě pravidel CSS roztroušených všude možně? Nebojte se! Dnes se ponoříme do úhledné funkce Aspose.Words for .NET, která vám umožňuje psát všechna pravidla CSS do jednoho souboru. To nejen uklidí váš kód, ale také vám to usnadní život. Připoutejte se a vydejte se na cestu k čistšímu a efektivnějšímu výstupu HTML!
 
-## Porozumění knihovně Aspose.Words
+## Předpoklady
 
-Než se ponoříte do kódu, je důležité porozumět knihovně Aspose.Words pro .NET. Aspose.Words je výkonná knihovna pro vytváření, úpravu, převod a ochranu dokumentů aplikace Word na různých platformách včetně .NET. Nabízí mnoho funkcí pro manipulaci s dokumenty, jako je vkládání textu, změna formátování, přidávání oddílů a mnoho dalšího.
+Než se ponoříme do hlíny, dáme si kachny do řady. Zde je to, co potřebujete, abyste mohli začít:
 
-## Načítání dokumentu aplikace Word
+1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Pokud ho ještě nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí .NET: Na svém počítači budete potřebovat vývojové prostředí .NET. Visual Studio je oblíbenou volbou.
+3. Základní znalost C#: Základní znalost programování v C# bude užitečná.
+4. Dokument aplikace Word: Připravte si dokument aplikace Word (.docx), který chcete převést.
 
-Prvním krokem je načtení dokumentu aplikace Word, který chcete převést do pevného HTML. Pomocí třídy Document načtěte dokument ze zdrojového souboru. Zde je příklad:
+## Importovat jmenné prostory
 
-```csharp
-Document doc = new Document(dataDir + "Document.docx");
-```
-
-V tomto příkladu načteme dokument "Document.docx" umístěný v adresáři dokumentů.
-
-## Konfigurace možností zálohování
-
-Dalším krokem je konfigurace možností uložení pro převod do pevného HTML. Chcete-li zapsat všechna pravidla CSS do jednoho souboru, použijte třídu HtmlFixedSaveOptions a nastavte vlastnost SaveFontFaceCssSeparately na hodnotu false. Jak na to:
+Nejprve importujme potřebné jmenné prostory do vašeho projektu C#. To nám umožní snadný přístup k funkcím Aspose.Words.
 
 ```csharp
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Vytvoříme nový objekt HtmlFixedSaveOptions a nastavíme vlastnost SaveFontFaceCssSeparately na false, abychom zapsali všechna pravidla CSS do jednoho souboru.
+Dobře, pojďme si tento proces rozdělit do snadno pochopitelných kroků. Každý krok vás provede konkrétní částí procesu, abyste zajistili, že vše proběhne hladce.
 
-## Opravena konverze HTML dokumentů
+## Krok 1: Nastavte adresář dokumentů
 
-Nyní, když jsme nakonfigurovali možnosti uložení, můžeme přistoupit k převodu dokumentu do pevného HTML. Pomocí metody Save třídy Document uložte převedený dokument v pevném formátu HTML zadáním voleb uložení. Zde je příklad:
-
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
-```
-
-tomto příkladu uložíme převedený dokument jako „WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html“ pomocí zadaných možností uložení.
-
-### Příklad zdrojového kódu pro HtmlFixedSaveOptions s funkcí "Zapsat všechna pravidla CSS do jednoho souboru" pomocí Aspose.Words for .NET
+Nejprve musíme definovat cestu k vašemu adresáři dokumentů. Zde je uložen váš dokument aplikace Word a kde bude uložen převedený HTML.
 
 ```csharp
 // Přístupová cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+## Krok 2: Načtěte dokument aplikace Word
+
+ Dále načteme dokument Word, který chcete převést do HTML. To se provádí pomocí`Document` třídy z knihovny Aspose.Words.
+
+```csharp
 // Načtěte dokument aplikace Word
 Document doc = new Document(dataDir + "Document.docx");
+```
 
+## Krok 3: Nakonfigurujte možnosti uložení HTML
+
+ Nyní musíme nakonfigurovat možnosti uložení HTML. Konkrétně chceme povolit funkci, která zapisuje všechna pravidla CSS do jednoho souboru. Toho je dosaženo nastavením`SaveFontFaceCssSeparately`majetek do`false`.
+
+```csharp
 // Nakonfigurujte možnosti zálohování pomocí funkce „Zapsat všechna pravidla CSS do jednoho souboru“.
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };
+HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions 
+{ 
+    SaveFontFaceCssSeparately = false 
+};
+```
 
-// Převést dokument do pevného HTML
+## Krok 4: Převeďte dokument do pevného HTML
+
+Nakonec dokument uložíme jako soubor HTML pomocí nakonfigurovaných možností uložení. Tento krok zajistí, že všechna pravidla CSS budou zapsána do jednoho souboru.
+
+```csharp
+//Převést dokument do pevného HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
 ## Závěr
 
-V této příručce jsme se zabývali tím, jak převést dokument aplikace Word na pevný HTML zápisem všech pravidel CSS do jednoho souboru pomocí HtmlFixedSaveOptions s knihovnou Aspose.Words pro .NET. Dodržováním uvedených kroků a použitím poskytnutého zdrojového kódu C# můžete tuto funkci snadno použít ve své aplikaci C#. Zápis všech pravidel CSS do jednoho souboru usnadňuje organizaci a správu kódu HTML generovaného během převodu dokumentu.
+A tady to máte! Pomocí pouhých několika řádků kódu jste úspěšně převedli dokument Wordu do HTML se všemi pravidly CSS úhledně uspořádanými v jediném souboru. Tato metoda nejen zjednodušuje správu CSS, ale také zlepšuje udržovatelnost vašich HTML dokumentů. Takže až budete příště mít za úkol převést dokument aplikace Word, budete přesně vědět, jak udržet pořádek!
+
+## FAQ
+
+### Proč bych měl pro výstup HTML používat jeden soubor CSS?
+Použití jediného souboru CSS zjednodušuje správu a údržbu vašich stylů. Díky tomu bude vaše HTML čistší a efektivnější.
+
+### Mohu v případě potřeby oddělit pravidla CSS pro vzhled písma?
+ Ano, nastavením`SaveFontFaceCssSeparately` na`true`, můžete oddělit pravidla CSS pro vzhled písma do jiného souboru.
+
+### Je Aspose.Words for .NET zdarma k použití?
+ Aspose.Words nabízí bezplatnou zkušební verzi, kterou můžete[stáhnout zde](https://releases.aspose.com/) . Pro další používání zvažte zakoupení licence[tady](https://purchase.aspose.com/buy).
+
+### Na jaké další formáty lze Aspose.Words for .NET převést?
+Aspose.Words for .NET podporuje různé formáty včetně PDF, TXT a obrazových formátů jako JPEG a PNG.
+
+### Kde najdu další zdroje na Aspose.Words pro .NET?
+ Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) pro komplexní průvodce a reference API.

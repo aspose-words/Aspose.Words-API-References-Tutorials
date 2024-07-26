@@ -63,7 +63,7 @@ for (String fileName : listFiles) {
         case LoadFormat.DOC:
             System.out.println("\tMicrosoft Word 97-2003 document.");
             break;
-        // Podle potřeby přidejte pouzdra pro jiné formáty dokumentů
+        // Podle potřeby přidejte pouzdra pro další formáty dokumentů
     }
 
     // Zpracovávat šifrované dokumenty

@@ -17,7 +17,7 @@ Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 - Základní znalost C# a Word Processing s dokumenty Word.
 
 ## Krok 1: Nastavte adresář dokumentů
- Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou k adresáři, kam chcete dokument uložit.
+ Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři, kam chcete dokument uložit.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Krok 4: Nastavte rozměry pro GroupShape
-Nastavte šířku, výšku a velikost souřadnic pro`groupShape`.
+ Nastavte šířku, výšku a velikost souřadnic pro`groupShape`.
 
 ```csharp
 groupShape.Width = 200;
@@ -96,4 +96,4 @@ doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 	doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-A je to! Úspěšně jste přidali tvar skupiny obsahující více tvarů do dokumentu aplikace Word pomocí Aspose.W
+je to! Úspěšně jste přidali tvar skupiny obsahující více tvarů do dokumentu aplikace Word pomocí Aspose.W

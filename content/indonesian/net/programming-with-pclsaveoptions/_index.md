@@ -14,4 +14,4 @@ Tutorial Aspose.Words untuk .NET memberi Anda sumber daya berharga untuk menguas
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Rasterisasi Elemen yang Diubah](./rasterize-transformed-elements/) | Pelajari cara menonaktifkan rasterisasi elemen yang diubah saat mengonversi ke format PCL dengan Aspose.Words untuk .NET. |
+| [Rasterisasi Elemen yang Diubah](./rasterize-transformed-elements/) | Pelajari cara melakukan rasterisasi elemen yang diubah saat mengonversi dokumen Word ke format PCL menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah disertakan. |

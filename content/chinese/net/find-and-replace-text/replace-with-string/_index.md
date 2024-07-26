@@ -14,7 +14,7 @@ url: /zh/net/find-and-replace-text/replace-with-string/
 
 ## 先决条件
 
-在我们开始编写代码之前，让我们确保您已准备好所需的一切：
+在我们开始编写代码之前，请确保您已准备好所需的一切：
 
 1.  Aspose.Words for .NET：下载最新版本[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何 C# IDE。

@@ -38,7 +38,7 @@ Laten we beginnen met het definiëren van het pad naar uw documentenmap. Hier wo
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map.
 
 ## Stap 2: Maak een nieuw document
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 
 ## Conclusie
 
-En daar heb je het! U hebt regex met succes gebruikt om tekst in een Word-document te zoeken en te vervangen met Aspose.Words voor .NET. Deze krachtige functie kan u veel tijd en moeite besparen, vooral als u met complexe tekstpatronen te maken heeft. Of u nu documenten opschoont, tekst opmaakt of grote wijzigingen aanbrengt, regex met Aspose.Words voor .NET is een hulpmiddel dat u in uw arsenaal wilt hebben.
+En daar heb je het! U hebt met succes regex gebruikt om tekst in een Word-document te zoeken en te vervangen met Aspose.Words voor .NET. Deze krachtige functie kan u veel tijd en moeite besparen, vooral als u met complexe tekstpatronen te maken heeft. Of u nu documenten opschoont, tekst opmaakt of bulkwijzigingen aanbrengt, regex met Aspose.Words voor .NET is een hulpmiddel dat u in uw arsenaal wilt hebben.
 
 ## Veelgestelde vragen
 

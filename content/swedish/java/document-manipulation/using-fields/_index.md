@@ -35,7 +35,7 @@ doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save("MergedDocument.docx");
 ```
 
- I den här koden laddar vi en dokumentmall, ställer in sammanslagningsfält och utför sammanslagningen. De`HandleMergeField` klass hanterar specifika fälttyper som kryssrutor och HTML-kroppsinnehåll.
+ I den här koden laddar vi en dokumentmall, ställer in kopplingsfält och utför kopplingen. De`HandleMergeField` klass hanterar specifika fälttyper som kryssrutor och HTML-kroppsinnehåll.
 
 ## Villkorliga fält
 

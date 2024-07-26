@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-tables/combine-rows/
 ---
 
-V tomto tutoriálu se naučíme, jak používat Aspose.Words pro .NET ke kombinování řádků tabulek v dokumentu aplikace Word. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci programově manipulovat a slučovat řádky tabulky v dokumentech aplikace Word.
+tomto tutoriálu se naučíme, jak používat Aspose.Words pro .NET ke kombinování řádků tabulek v dokumentu aplikace Word. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci programově manipulovat a slučovat řádky tabulky v dokumentech aplikace Word.
 
 ## Krok 1: Nastavení projektu
 1. Spusťte Visual Studio a vytvořte nový projekt C#.
@@ -72,4 +72,4 @@ Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
 ```
 
 ## Závěr
-tomto tutoriálu jsme se naučili, jak kombinovat řádky tabulek v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete programově manipulovat s řádky tabulky v dokumentech aplikace Word. Tato funkce umožňuje efektivně sloučit a uspořádat data do tabulky.
+V tomto tutoriálu jsme se naučili, jak kombinovat řádky tabulek v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce a implementace poskytnutého kódu C# můžete programově manipulovat s řádky tabulky v dokumentech aplikace Word. Tato funkce umožňuje efektivně sloučit a uspořádat data do tabulky.

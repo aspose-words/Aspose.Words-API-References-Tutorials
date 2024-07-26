@@ -1,5 +1,5 @@
 ---
-title: 在 Aspose.Words for Java 中使用部分
+title: 在 Aspose.Words for Java 中使用節
 linktitle: 使用部分
 second_title: Aspose.Words Java 文件處理 API
 description: 探索 Aspose.Words for Java；使用部分的綜合指南。新增、刪除、追加、克隆部分以及程式碼範例。

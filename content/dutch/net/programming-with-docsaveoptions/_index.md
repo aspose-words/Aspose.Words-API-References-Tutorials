@@ -17,5 +17,5 @@ Door deze tutorials te volgen, leert u de beste werkwijzen voor het opslaan van 
 | Titel | Beschrijving |
 | --- | --- |
 | [Versleutel document met wachtwoord](./encrypt-document-with-password/) | Leer hoe u een document met een wachtwoord codeert met Aspose.Words voor .NET in deze gedetailleerde, stapsgewijze handleiding. Beveilig uw gevoelige informatie moeiteloos. |
-| [Comprimeer kleine metabestanden niet](./do-not-compress-small-metafiles/) | Leer hoe u Aspose.Words voor .NET kunt gebruiken om ervoor te zorgen dat kleine metabestanden in Word-documenten niet worden gecomprimeerd, waardoor hun kwaliteit en integriteit behouden blijft. Stap-voor-stap handleiding inbegrepen. |
+| [Comprimeer geen kleine metabestanden](./do-not-compress-small-metafiles/) | Leer hoe u Aspose.Words voor .NET kunt gebruiken om ervoor te zorgen dat kleine metabestanden in Word-documenten niet worden gecomprimeerd, waardoor hun kwaliteit en integriteit behouden blijft. Stap-voor-stap handleiding inbegrepen. |
 | [Afbeeldingsopsommingsteken niet opslaan](./do-not-save-picture-bullet/) | Leer hoe u met afbeeldingsopsommingstekens omgaat in Aspose.Words voor .NET met onze stapsgewijze handleiding. Vereenvoudig het documentbeheer en creëer moeiteloos professionele Word-documenten. |

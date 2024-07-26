@@ -12,7 +12,7 @@ Nesta era digital, onde a informação é fundamental, manter os seus documentos
 
 ## 1. Introdução
 
-Neste mundo digital acelerado, a segurança dos documentos eletrónicos tornou-se uma prioridade máxima para indivíduos e empresas. As violações de dados e os ataques cibernéticos levantaram preocupações sobre a confidencialidade e integridade de informações confidenciais. Aspose.Words for Java vem ao resgate, fornecendo um conjunto abrangente de recursos para garantir que seus documentos permaneçam protegidos contra acesso não autorizado.
+Neste mundo digital acelerado, a segurança dos documentos eletrónicos tornou-se uma prioridade máxima para indivíduos e empresas. As violações de dados e os ataques cibernéticos levantaram preocupações sobre a confidencialidade e integridade de informações confidenciais. Aspose.Words for Java vem em socorro, fornecendo um conjunto abrangente de recursos para garantir que seus documentos permaneçam protegidos contra acesso não autorizado.
 
 ## 2. Compreendendo a segurança de documentos
 
@@ -26,7 +26,7 @@ Antes de nos aprofundarmos nos aspectos técnicos, vamos entender os conceitos f
  Converta o conteúdo do documento em um formato embaralhado usando algoritmos de criptografia, tornando-o indecifrável sem a chave de descriptografia correta.
 - #### Assinaturas digitais:
  Anexe assinaturas digitais para verificar a autenticidade e integridade do documento.
-- #### Marca d’água:
+- #### Marca d'água:
  Sobreponha marcas d'água visíveis ou invisíveis para indicar propriedade ou confidencialidade.
 - #### Redação:
  Remova permanentemente informações confidenciais do documento.
@@ -131,7 +131,7 @@ doc.save("path/to/signed/document.docx");
 A marca d'água pode ajudar a proteger a confidencialidade do seu documento e indicar seu status. Aspose.Words for Java oferece recursos de marca d'água fáceis de usar:
 
 ```java
-// Adicione uma marca d’água visível
+// Adicione uma marca d'água visível
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(200);
@@ -199,7 +199,7 @@ Depois de aplicar medidas de segurança, teste minuciosamente seus documentos pa
 
 ## 14. Conclusão
 
-Neste guia passo a passo, exploramos a importância da segurança dos documentos e como o Aspose.Words for Java pode ajudar a proteger seus documentos contra acesso não autorizado. Ao aproveitar os recursos da biblioteca, como proteção por senha, criptografia, assinaturas digitais, marca d'água e redação, você pode garantir que seus documentos permaneçam seguros e protegidos.
+Neste guia passo a passo, exploramos a importância da segurança dos documentos e como o Aspose.Words for Java pode ajudar a proteger seus documentos contra acesso não autorizado. Ao aproveitar os recursos da biblioteca, como proteção por senha, criptografia, assinaturas digitais, marca d’água e redação, você pode garantir que seus documentos permaneçam seguros e protegidos.
 
 ## Perguntas frequentes
 

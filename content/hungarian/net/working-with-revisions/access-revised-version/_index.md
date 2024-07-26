@@ -106,7 +106,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### K: Hogyan ellenőrizhető, hogy egy bekezdés listaelem-e az Aspose.Words for .NET-ben?
 
- V: Használja a`IsListItem` tulajdona a`Paragraph` objektum annak ellenőrzésére, hogy egy bekezdés listaelem-e. A`IsListItem` ingatlan visszaadása`true` ha a bekezdés listaelem, ellenkező esetben visszaadja`false`.
+ V: Használja a`IsListItem` tulajdona a`Paragraph` objektum annak ellenőrzésére, hogy egy bekezdés listaelem-e. A`IsListItem` ingatlan visszaadja`true` ha a bekezdés listaelem, ellenkező esetben visszaadja`false`.
 
 ```csharp
 if (paragraph.IsListItem)

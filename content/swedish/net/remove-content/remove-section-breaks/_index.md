@@ -31,7 +31,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-## Steg 3: Ta bort avsnittsavbrott
+## Steg 3: Ta bort avsnittsbrytningar
 För att ta bort avsnittsbrytningar kommer vi att gå igenom alla avsnitt med början från avsnittet som föregår det sista och flyttar till det första avsnittet. Inom slingan kommer vi att lägga till innehållet i varje avsnitt till början av det sista avsnittet och sedan ta bort det kopierade avsnittet.
 
 ```csharp

@@ -69,7 +69,7 @@ Vysvětlení:
 - `doc.Range.Bookmarks["MyBookmark3"]`: Toto zpřístupní záložku s názvem "MyBookmark3".
 - `Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];` : Toto uloží zpřístupněnou záložku do`bookmark2` variabilní.
 
-## Krok 4: Manipulujte s obsahem záložky
+## Krok 4: Manipulujte s obsahem záložek
 
 Jakmile vstoupíte do záložky, můžete manipulovat s jejím obsahem. Můžete například aktualizovat text v záložce.
 
@@ -113,7 +113,7 @@ Vysvětlení:
 
 ## Závěr
 
-Přístup a manipulace se záložkami v dokumentu aplikace Word pomocí Aspose.Words for .NET je přímočarý proces, který může výrazně zlepšit vaše možnosti zpracování dokumentů. Podle kroků uvedených v této příručce můžete bez námahy načítat dokumenty, přistupovat k záložkám podle indexu nebo názvu, manipulovat s obsahem záložek, přidávat nové záložky a ukládat změny. Ať už automatizujete sestavy, generujete dynamické dokumenty nebo jen potřebujete spolehlivý způsob, jak zacházet se záložkami, Aspose.Words pro .NET vás pokryje.
+Přístup a manipulace se záložkami v dokumentu aplikace Word pomocí Aspose.Words for .NET je přímočarý proces, který může výrazně zlepšit vaše možnosti zpracování dokumentů. Podle kroků uvedených v této příručce můžete bez námahy načítat dokumenty, přistupovat k záložkám podle indexu nebo názvu, manipulovat s obsahem záložek, přidávat nové záložky a ukládat změny. Ať už automatizujete sestavy, generujete dynamické dokumenty nebo jen potřebujete spolehlivý způsob zpracování záložek, Aspose.Words pro .NET vás pokryje.
 
 ## FAQ
 

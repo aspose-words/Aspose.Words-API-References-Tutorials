@@ -2,107 +2,96 @@
 title: 인증서 보유자를 사용하여 PDF에 디지털 서명 추가
 linktitle: 인증서 보유자를 사용하여 PDF에 디지털 서명 추가
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words와 함께 인증서 보유자를 사용하여 PDF에 디지털 서명을 추가하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 디지털 서명으로 PDF 파일을 보호하세요. PDF에 디지털 서명을 손쉽게 추가하려면 이 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
+## 소개
 
-이 튜토리얼에서는 Aspose.Words for .NET의 인증서 홀더를 사용하여 PDF에 디지털 서명을 추가하는 단계를 안내합니다. 디지털 서명은 PDF 문서에 보안 및 무결성 계층을 추가합니다. 아래 단계를 따르십시오.
+디지털 서명으로 PDF 문서를 보호하는 방법이 궁금하신가요? 글쎄, 당신은 바로 이곳에 있어요! 디지털 서명은 현대의 자필 서명과 동일하며 디지털 문서의 신뢰성과 무결성을 확인하는 방법을 제공합니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 PDF에 디지털 서명을 추가하는 방법을 보여줍니다. 환경 설정부터 코드 실행까지 단계별로 모든 것을 다룹니다. 이 가이드가 끝나면 안전하고 신뢰할 수 있는 디지털 서명된 PDF를 얻게 됩니다.
 
-## 1단계: 문서 만들기 및 콘텐츠 추가
+## 전제조건
 
-Document 클래스의 인스턴스를 생성하여 시작합니다.
+시작하기 전에 필요한 몇 가지 사항이 있습니다.
+
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/words/net/).
+2. 인증서 파일: PDF에 서명하려면 .pfx 인증서 파일이 필요합니다. 인증서가 없는 경우 테스트 목적으로 자체 서명된 인증서를 생성할 수 있습니다.
+3. Visual Studio: 이 튜토리얼에서는 Visual Studio를 개발 환경으로 사용하고 있다고 가정합니다.
+4. C#에 대한 기본 지식: C# 및 .NET 프로그래밍에 대한 지식이 필수적입니다.
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져오겠습니다. 이는 문서 조작 및 디지털 서명에 필요한 클래스 및 메소드에 액세스하는 데 필수적입니다.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System;
+```
+
+프로세스를 간단하고 관리 가능한 단계로 나누어 보겠습니다.
+
+## 1단계: 프로젝트 설정
+
+Visual Studio에서 새 C# 프로젝트를 만듭니다. .NET용 Aspose.Words에 대한 참조를 추가합니다. NuGet 패키지 관리자를 통해 "Aspose.Words"를 검색하고 설치하면 됩니다.
+
+## 2단계: 문서 로드 또는 만들기
+
+서명하려면 문서가 필요합니다. 기존 문서를 로드하거나 새 문서를 만들 수 있습니다. 이 튜토리얼에서는 새 문서를 만들고 몇 가지 샘플 텍스트를 추가하겠습니다.
+
+```csharp
+// 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-```
 
-## 2단계: 문서에 콘텐츠 추가
-
- 그런 다음`DocumentBuilder`문서에 내용을 추가하려면 예를 들어, "서명된 PDF 테스트"라는 텍스트가 포함된 단락을 추가하려면`Writeln` 방법:
-
-```csharp
+// 문서에 텍스트를 추가합니다.
 builder.Writeln("Test Signed PDF.");
 ```
 
-필요에 따라 다른 콘텐츠 항목을 추가할 수 있습니다.
+## 3단계: 디지털 서명 세부정보 지정
 
-## 3단계: PDF 저장 옵션 설정
-
-PdfSaveOptions 클래스의 인스턴스를 만들고 디지털 서명 세부 정보를 지정합니다.
+이제 디지털 서명 세부 정보를 설정할 차례입니다. .pfx 인증서 파일의 경로, 서명 이유, 위치 및 서명 날짜를 지정해야 합니다.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-	DigitalSignatureDetails = new PdfDigitalSignatureDetails(
-		CertificateHolder.Create(MyDir + "morzal.pfx", "aw"), "reason", "location",
-		DateTime.Now)
+    DigitalSignatureDetails = new PdfDigitalSignatureDetails(
+        CertificateHolder.Create(dataDir + "morzal.pfx", "your_password"), "reason", "location",
+        DateTime.Now)
 };
 ```
 
-인증서 및 관련 비밀번호의 올바른 경로를 지정하십시오. 서명 이유와 위치를 사용자 정의할 수도 있습니다.
+ 바꾸다`"your_password"` .pfx 파일의 비밀번호를 사용하세요.
 
 ## 4단계: 문서를 디지털 서명된 PDF로 저장
 
- 사용`Save` 저장 옵션을 지정하여 문서를 PDF로 저장하는 방법:
+마지막으로 문서를 디지털 서명이 포함된 PDF로 저장합니다.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
+doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-디지털 서명된 PDF를 저장하려면 올바른 경로를 지정해야 합니다.
+그리고 그게 다야! 이제 문서가 서명되고 PDF로 저장됩니다.
 
-다음 단계를 따르면 Aspose.Words for .NET을 사용하여 인증서로 디지털 서명된 PDF를 쉽게 만들 수 있습니다.
-
-### .NET용 Aspose.Words를 사용하는 인증서 보유자를 사용하는 디지털 서명된 PDF의 예제 소스 코드
-
-다음은 .NET용 Aspose.Words를 사용하는 문서의 인증서 홀더를 사용하여 디지털 서명된 PDF에 대한 전체 소스 코드입니다.
-
-```csharp
-
-            // 문서 디렉터리의 경로입니다.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document();
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            
-            builder.Writeln("Test Signed PDF.");
-
-            PdfSaveOptions saveOptions = new PdfSaveOptions
-            {
-                DigitalSignatureDetails = new PdfDigitalSignatureDetails(
-                    CertificateHolder.Create(MyDir + "morzal.pfx", "aw"), "reason", "location",
-                    DateTime.Now)
-            };
-
-            doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
-            
-        
-```
 ## 결론
 
-이 튜토리얼에서는 .NET용 Aspose.Words가 포함된 인증서를 사용하여 PDF 문서에 디지털 서명을 추가하는 단계를 살펴보았습니다. 디지털 서명은 문서에 보안 및 무결성 계층을 추가하여 문서의 신뢰성을 보장하고 이후 수정 사항을 감지할 수 있게 해줍니다. 주어진 단계를 따르면 Aspose.Words for .NET이 포함된 인증서를 사용하여 디지털 서명된 PDF를 쉽게 만들 수 있습니다.
+디지털 서명은 문서의 무결성과 신뢰성을 보장하는 강력한 도구입니다. .NET용 Aspose.Words를 사용하면 PDF 파일에 디지털 서명을 추가하는 것이 간단하고 효율적입니다. 이 단계별 가이드를 따르면 PDF 문서를 보호하고 수신자에게 문서의 진위 여부에 대해 안심할 수 있습니다. 즐거운 코딩하세요!
 
-### 자주 묻는 질문
+## FAQ
 
-#### Q: 디지털 서명이란 무엇이며 PDF 문서에서 디지털 서명이 중요한 이유는 무엇입니까?
-답변: 디지털 서명은 PDF 파일과 같은 전자 문서의 신뢰성, 무결성 및 부인 방지를 보장하는 데 도움이 되는 보안 기술입니다. 디지털 인증서를 사용하여 문서에 보안 계층을 추가합니다. 이는 작성자의 신원을 확인하고 콘텐츠에 대한 후속 변경 사항을 감지하는 데 도움이 됩니다.
+### 디지털 서명이란 무엇입니까?
+디지털 서명은 디지털 문서의 신뢰성과 무결성을 확인하는 전자 형태의 서명입니다.
 
-#### Q: Aspose.Words for .NET 인증서를 사용하여 PDF 문서에 디지털 서명을 추가하려면 어떻게 해야 합니까?
-A: .NET용 Aspose.Words가 포함된 인증서를 사용하여 PDF 문서에 디지털 서명을 추가하려면 다음 단계를 따르세요.
+### 디지털 서명을 추가하려면 인증서가 필요합니까?
+예, PDF에 디지털 서명을 추가하려면 .pfx 인증서 파일이 필요합니다.
 
- 인스턴스를 생성합니다.`Document` 문서를 표현하는 클래스입니다.
+### 테스트용으로 자체 서명된 인증서를 만들 수 있나요?
+예, 테스트 목적으로 자체 서명된 인증서를 생성할 수 있습니다. 그러나 프로덕션 용도로 사용하려면 신뢰할 수 있는 인증 기관으로부터 인증서를 얻는 것이 좋습니다.
 
- 사용`DocumentBuilder` 문서에 원하는 내용을 추가하는 클래스입니다.
+### .NET용 Aspose.Words는 무료인가요?
+ Aspose.Words for .NET은 상용 제품이지만 다음 사이트에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).
 
- 인스턴스를 생성합니다.`PdfSaveOptions` 클래스를 사용하여 디지털 서명 세부 정보를 지정합니다.`PdfDigitalSignatureDetails` 수업. 인증서 경로(`CertificateHolder.Create`), 관련 비밀번호, 서명 이유 및 위치.
-
- 사용`Save` 저장 옵션을 지정하여 문서를 PDF 형식으로 저장하는 방법입니다.
-
-#### Q: PDF 문서에 디지털 서명을 추가하기 위한 인증서를 얻으려면 어떻게 해야 합니까?
-답변: PDF 문서에 디지털 서명을 추가하기 위한 인증서를 얻으려면 일반적으로 인증 기관(CA)이나 신뢰 서비스 제공업체에 문의하세요. 이러한 기관은 귀하의 신원을 확인하고 요청을 확인한 후 디지털 인증서를 발급합니다. 인증서를 얻은 후에는 응용 프로그램에서 이를 사용하여 PDF 문서에 디지털 서명을 추가할 수 있습니다.
-
-#### Q: 디지털 서명의 사유, 위치 등 세부 사항을 맞춤 설정할 수 있나요?
- A: 예, 서명 이유와 위치를 지정하여 디지털 서명 세부 사항을 사용자 정의할 수 있습니다. 제공된 예제 코드에서`reason`그리고`location` 생성 시 매개변수`PdfDigitalSignatureDetails` 물체. PDF 문서의 서명 이유와 위치를 반영하려면 각 매개변수에 적절한 정보를 제공해야 합니다.
+### .NET용 Aspose.Words를 사용하여 다른 유형의 문서에 서명할 수 있나요?
+예, Aspose.Words for .NET은 PDF뿐만 아니라 다양한 유형의 문서에 서명하는 데 사용할 수 있습니다.

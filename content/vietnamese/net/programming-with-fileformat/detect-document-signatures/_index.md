@@ -2,90 +2,105 @@
 title: Phát hiện chữ ký số trên tài liệu Word
 linktitle: Phát hiện chữ ký số trên tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước phát hiện chữ ký số trên tài liệu word bằng Aspose.Words for .NET.
+description: Tìm hiểu cách phát hiện chữ ký điện tử trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn từng bước của chúng tôi.
 type: docs
 weight: 10
 url: /vi/net/programming-with-fileformat/detect-document-signatures/
 ---
+## Giới thiệu
 
-Bài viết này cung cấp hướng dẫn từng bước về cách sử dụng Chữ ký số trên tính năng phát hiện Tài liệu Word với Aspose.Words cho .NET. Chúng tôi sẽ giải thích chi tiết từng phần của mã. Khi kết thúc hướng dẫn này, bạn sẽ có thể hiểu cách phát hiện chữ ký số trong tài liệu.
+Đảm bảo tính toàn vẹn và xác thực của tài liệu Word của bạn là rất quan trọng, đặc biệt là trong thời đại kỹ thuật số ngày nay. Một cách để đạt được điều này là sử dụng chữ ký số. Trong hướng dẫn này, chúng tôi sẽ đi sâu vào cách bạn có thể phát hiện chữ ký điện tử trên tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ đề cập đến mọi thứ, từ những điều cơ bản đến hướng dẫn từng bước, đảm bảo bạn sẽ hiểu biết toàn diện đến cuối.
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt và định cấu hình thư viện Aspose.Words cho .NET trong dự án của mình. Bạn có thể tìm thấy thư viện và hướng dẫn cài đặt trên trang web Aspose.
+## Điều kiện tiên quyết
 
-## Bước 1: Xác định thư mục tài liệu
+Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
 
- Để bắt đầu, bạn cần xác định đường dẫn đến thư mục chứa tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+-  Aspose.Words for .NET Library: Bạn có thể tải xuống từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Đảm bảo bạn đã thiết lập môi trường phát triển .NET, chẳng hạn như Visual Studio.
+- Hiểu biết cơ bản về C#: Làm quen với ngôn ngữ lập trình C# sẽ giúp bạn theo dõi suôn sẻ.
+
+## Nhập không gian tên
+
+Đầu tiên, hãy nhập các không gian tên cần thiết. Điều này rất quan trọng vì nó cho phép bạn truy cập các lớp và phương thức do Aspose.Words cung cấp cho .NET.
 
 ```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+```
+
+## Bước 1: Thiết lập dự án của bạn
+
+Trước khi có thể bắt đầu phát hiện chữ ký số, chúng ta cần thiết lập dự án của mình.
+
+### 1.1 Tạo một dự án mới
+
+ Mở Visual Studio và tạo dự án Console App (.NET Core) mới. Gọi tên nó`DigitalSignatureDetector`.
+
+### 1.2 Cài đặt Aspose.Words cho .NET
+
+Bạn cần thêm Aspose.Words vào dự án của mình. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet:
+
+- Nhấp chuột phải vào dự án của bạn trong Solution Explorer.
+- Chọn "Quản lý gói NuGet".
+- Tìm kiếm "Aspose.Words" và cài đặt phiên bản mới nhất.
+
+## Bước 2: Thêm đường dẫn thư mục tài liệu
+
+Bây giờ, chúng ta cần xác định đường dẫn đến thư mục lưu trữ tài liệu của bạn.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Bước 2: Phát hiện chữ ký số
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
 
- Tiếp theo, chúng tôi sử dụng`DetectFileFormat` phương pháp của`FileFormatUtil`class để phát hiện thông tin định dạng tệp. Trong ví dụ này, chúng tôi giả sử tài liệu có tên là "Được ký điện tử.docx" và nằm trong thư mục tài liệu được chỉ định.
+## Bước 3: Phát hiện định dạng tệp
+
+Tiếp theo, chúng ta cần phát hiện định dạng file của tài liệu để đảm bảo đó là tài liệu Word.
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
 ```
 
-## Bước 3: Kiểm tra chữ ký số
+ Dòng mã này kiểm tra định dạng tệp của tài liệu có tên`Digitally signed.docx`.
 
- Chúng tôi kiểm tra xem tài liệu có chứa chữ ký điện tử hay không bằng cách sử dụng`HasDigitalSignature` tài sản của`FileFormatInfo` sự vật. Nếu phát hiện thấy chữ ký số, chúng tôi sẽ hiển thị thông báo cho biết chữ ký sẽ bị mất nếu tài liệu được mở/lưu bằng Aspose.Words.
+## Bước 4: Kiểm tra chữ ký số
+
+Bây giờ, hãy kiểm tra xem tài liệu có chữ ký số hay không.
 
 ```csharp
 if (info.HasDigitalSignature)
 {
-	Console.WriteLine(
-		$"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
-		"they will be lost if you open/save this document with Aspose.Words.");
+    Console.WriteLine(
+        $"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
+        "they will be lost if you open/save this document with Aspose.Words.");
 }
 ```
 
-Đó là tất cả ! Bạn đã phát hiện thành công chữ ký số trong tài liệu bằng Aspose.Words for .NET.
-
-### Mã nguồn ví dụ để phát hiện chữ ký tài liệu bằng Aspose.Words cho .NET
-
-```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
-
-	if (info.HasDigitalSignature)
-	{
-		Console.WriteLine(
-			$"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
-			"they will be lost if you open/save this document with Aspose.Words.");
-	}
-	
-        
-```
 ## Phần kết luận
 
-Hướng dẫn này đã cung cấp cho bạn hướng dẫn từng bước về cách phát hiện chữ ký số trên tài liệu word bằng tính năng phát hiện chữ ký số với Aspose.Words for .NET. Mỗi phần của mã đã được giải thích chi tiết, cho phép bạn hiểu cách phát hiện chữ ký số trong tài liệu.
+Phát hiện chữ ký số trong tài liệu Word bằng Aspose.Words cho .NET là một quá trình đơn giản. Bằng cách làm theo các bước được nêu ở trên, bạn có thể dễ dàng thiết lập dự án của mình, phát hiện các định dạng tệp và kiểm tra chữ ký điện tử. Khả năng này là vô giá để duy trì tính toàn vẹn và tính xác thực của tài liệu của bạn.
 
-### Câu hỏi thường gặp về Phát hiện chữ ký số trên tài liệu Word
+## Câu hỏi thường gặp
 
-#### Làm cách nào để phát hiện sự hiện diện của chữ ký số trên tài liệu Word bằng Aspose.Words cho .NET?
+### Aspose.Words for .NET có thể lưu giữ chữ ký số khi lưu tài liệu không?
 
- Để phát hiện sự hiện diện của chữ ký số trên tài liệu Word bằng Aspose.Words cho .NET, bạn có thể làm theo các bước được cung cấp trong hướng dẫn. Sử dụng`DetectFileFormat` phương pháp của`FileFormatUtil` class sẽ cho phép bạn phát hiện thông tin định dạng tệp. Sau đó bạn có thể kiểm tra`HasDigitalSignature` tài sản của`FileFormatInfo` để xác định xem tài liệu có chứa chữ ký số hay không. Nếu phát hiện thấy chữ ký số, bạn có thể hiển thị thông báo cho biết chữ ký sẽ bị mất nếu tài liệu được mở/lưu bằng Aspose.Words.
+Không, Aspose.Words for .NET không lưu giữ chữ ký số khi mở hoặc lưu tài liệu. Chữ ký số sẽ bị mất.
 
-#### Làm cách nào để chỉ định thư mục chứa tài liệu cần tìm kiếm chữ ký số?
+### Có cách nào để phát hiện nhiều chữ ký số trên một tài liệu không?
 
- Để chỉ định thư mục chứa tài liệu mà bạn muốn tìm kiếm chữ ký số, bạn phải sửa đổi`dataDir` biến trong mã. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+ Vâng`HasDigitalSignature` thuộc tính có thể chỉ ra sự hiện diện của một hoặc nhiều chữ ký số trên tài liệu.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
+### Làm cách nào để tôi có được bản dùng thử miễn phí Aspose.Words cho .NET?
 
-#### Tác động của việc mở/lưu tài liệu bằng Aspose.Words trên chữ ký số là gì?
+ Bạn có thể tải xuống bản dùng thử miễn phí từ[Trang phát hành Aspose](https://releases.aspose.com/).
 
-Khi bạn mở hoặc lưu tài liệu bằng Aspose.Words, chữ ký điện tử có trong tài liệu sẽ bị mất. Điều này là do những thay đổi được thực hiện đối với tài liệu trong khi xử lý bằng Aspose.Words. Nếu cần bảo toàn chữ ký số, bạn nên lưu ý điều này và sử dụng phương pháp khác để quản lý tài liệu chứa chữ ký số.
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
 
-#### Những tính năng nào khác của Aspose.Words cho .NET có thể được sử dụng cùng với tính năng phát hiện chữ ký số?
+ Bạn có thể tìm thấy tài liệu đầy đủ tại[Trang tài liệu Aspose](https://reference.aspose.com/words/net/).
 
- Aspose.Words for .NET cung cấp nhiều tính năng để xử lý và thao tác với tài liệu Word. Ngoài việc phát hiện chữ ký số, bạn có thể sử dụng thư viện để trích xuất văn bản, hình ảnh hoặc siêu dữ liệu từ tài liệu, áp dụng các thay đổi định dạng, hợp nhất tài liệu, chuyển đổi tài liệu sang các định dạng khác nhau, v.v. Bạn có thể khám phá[Aspose.Words cho tài liệu tham khảo API .NET](https://reference.aspose.com/words/net/) để khám phá tất cả các tính năng có sẵn và tìm những tính năng phù hợp nhất với nhu cầu của bạn.
+### Tôi có thể nhận hỗ trợ cho Aspose.Words cho .NET không?
 
-#### Những hạn chế của việc phát hiện chữ ký số bằng Aspose.Words cho .NET là gì?
-
-Phát hiện chữ ký số với Aspose.Words cho .NET bị giới hạn ở việc phát hiện sự hiện diện của chữ ký trong tài liệu. Tuy nhiên, Aspose.Words không cung cấp chức năng xác minh tính xác thực hoặc tính toàn vẹn của chữ ký số. Để thực hiện các thao tác nâng cao hơn về chữ ký số, bạn sẽ cần sử dụng các công cụ hoặc thư viện chuyên dụng khác.
+ Có, bạn có thể nhận được hỗ trợ từ[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).

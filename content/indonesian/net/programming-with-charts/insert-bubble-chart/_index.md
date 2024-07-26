@@ -15,7 +15,7 @@ Pernahkah Anda bertanya-tanya bagaimana cara membuat dokumen Word Anda lebih din
 
 Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
 
-- Aspose.Words for .NET: Jika belum, Anda harus mengunduh dan menginstal Aspose.Words for .NET. Anda dapat mengambilnya dari[Unduh Halaman](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Jika belum melakukannya, Anda harus mengunduh dan menginstal Aspose.Words for .NET. Anda dapat mengambilnya dari[Unduh Halaman](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Anda harus menyiapkan lingkungan pengembangan tempat Anda dapat menulis dan mengeksekusi kode .NET. Visual Studio adalah pilihan yang populer.
 - Pengetahuan Dasar tentang C#: Meskipun panduan ini ramah bagi pemula, pemahaman dasar tentang C# akan membantu Anda mengikutinya dengan lebih mudah.
 

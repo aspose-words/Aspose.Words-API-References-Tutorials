@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Stap 3: Voeg een tekstwatermerk toe met specifieke opties
 
- We zullen een exemplaar maken van de`TextWatermarkOptions`klasse en stel de gewenste opties voor het tekstwatermerk in.
+ We zullen een exemplaar maken van de`TextWatermarkOptions` klasse en stel de gewenste opties voor het tekstwatermerk in.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

@@ -60,7 +60,7 @@ public void exportResources() throws Exception {
 ```java
 @Test
 public void convertMetafilesToEmfOrWmf() throws Exception {
-    // Codefragment niet weergegeven vanwege beknoptheid.
+    // Codefragment wordt vanwege beknoptheid niet weergegeven.
 }
 ```
 
@@ -70,7 +70,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```java
 @Test
 public void convertMetafilesToSvg() throws Exception {
-    // Codefragment niet weergegeven vanwege beknoptheid.
+    // Codefragment wordt vanwege beknoptheid niet weergegeven.
 }
 ```
 
@@ -94,7 +94,7 @@ public void addCssClassNamePrefix() throws Exception {
 ```java
 @Test
 public void exportCidUrlsForMhtmlResources() throws Exception {
-    // Codefragment niet weergegeven vanwege beknoptheid.
+    // Codefragment wordt vanwege beknoptheid niet weergegeven.
 }
 ```
 
@@ -104,7 +104,7 @@ public void exportCidUrlsForMhtmlResources() throws Exception {
 ```java
 @Test
 public void resolveFontNames() throws Exception {
-    // Codefragment niet weergegeven vanwege beknoptheid.
+    // Codefragment wordt vanwege beknoptheid niet weergegeven.
 }
 ```
 
@@ -114,7 +114,7 @@ public void resolveFontNames() throws Exception {
 ```java
 @Test
 public void exportTextInputFormFieldAsText() throws Exception {
-    // Codefragment niet weergegeven vanwege beknoptheid.
+    // Codefragment wordt vanwege beknoptheid niet weergegeven.
 }
 ```
 

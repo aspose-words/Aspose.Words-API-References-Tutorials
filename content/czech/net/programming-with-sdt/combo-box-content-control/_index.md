@@ -17,7 +17,7 @@ Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 - Základní znalost C# a Word Processing s dokumenty Word.
 
 ## Krok 1: Nastavte adresář dokumentů
- Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou k adresáři, kam chcete dokument uložit.
+ Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři, kam chcete dokument uložit.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 ```
 
 ## Krok 3: Přidejte položky do Combo Boxu
- Přidejte položky do pole se seznamem pomocí`ListItems` vlastnictvím`StructuredDocumentTag` . Každá položka je reprezentována a`SdtListItem` objekt, který přebírá zobrazovaný text a hodnotu. V tomto příkladu přidáme tři položky do pole se seznamem.
+ Přidejte položky do pole se seznamem pomocí`ListItems` majetek z`StructuredDocumentTag` . Každá položka je reprezentována a`SdtListItem` objekt, který přebírá zobrazovaný text a hodnotu. V tomto příkladu přidáme tři položky do pole se seznamem.
 
 ```csharp
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));

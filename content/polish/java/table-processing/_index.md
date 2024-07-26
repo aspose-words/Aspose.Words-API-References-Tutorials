@@ -36,6 +36,6 @@ Dowiedz się, jak pracować z listami dokumentów w Javie przy użyciu Aspose.Wo
 ### [Tworzenie tabel i wierszy w dokumentach](./creating-tables-rows/)
 Dowiedz się, jak tworzyć tabele i wiersze w dokumentach za pomocą Aspose.Words dla Java. Postępuj zgodnie z tym obszernym przewodnikiem z kodem źródłowym i często zadawanymi pytaniami.
 ### [Formatowanie tabel w dokumentach](./formatting-tables/)
-Opanuj sztukę formatowania tabel w dokumentach przy użyciu Aspose.Words dla Java. Zapoznaj się ze wskazówkami krok po kroku i przykładami kodu źródłowego umożliwiającymi precyzyjne formatowanie tabeli.
+Opanuj sztukę formatowania tabel w dokumentach za pomocą Aspose.Words dla Java. Zapoznaj się ze wskazówkami krok po kroku i przykładami kodu źródłowego umożliwiającymi precyzyjne formatowanie tabeli.
 ### [Generowanie spisu treści](./table-contents-generation/)
 Dowiedz się, jak utworzyć dynamiczny spis treści przy użyciu Aspose.Words dla Java. Opanuj generowanie spisu treści ze wskazówkami krok po kroku i przykładami kodu źródłowego.

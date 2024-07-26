@@ -124,4 +124,4 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ### Ποιες είναι οι απαιτήσεις συστήματος για το Aspose.Words για .NET;
 
- Το Aspose.Words για .NET απαιτεί περιβάλλον .NET. Συγκεκριμένες απαιτήσεις συστήματος μπορούν να βρεθούν στο[τεκμηρίωση](https://reference.aspose.com/words/net/).
+ Το Aspose.Words για .NET απαιτεί περιβάλλον .NET. Οι συγκεκριμένες απαιτήσεις συστήματος μπορούν να βρεθούν στο[τεκμηρίωση](https://reference.aspose.com/words/net/).

@@ -2,81 +2,88 @@
 title: Zaktualizuj ostatnio wydrukowaną właściwość w dokumencie PDF
 linktitle: Zaktualizuj ostatnio wydrukowaną właściwość w dokumencie PDF
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący aktualizacji właściwości „Ostatni wydruk” podczas konwersji do formatu PDF za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak zaktualizować ostatnio wydrukowaną właściwość w dokumencie PDF za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
+## Wstęp
 
-Ten artykuł zawiera przewodnik krok po kroku dotyczący korzystania z właściwości „Ostatni wydruk” w funkcji aktualizacji dokumentu PDF w Aspose.Words dla .NET. Szczegółowo wyjaśnimy każdą część kodu. Pod koniec tego samouczka będziesz mógł zrozumieć, jak skonfigurować opcję aktualizacji właściwości „Ostatni wydruk” podczas konwersji do formatu PDF.
+Czy chcesz zaktualizować ostatnio wydrukowaną właściwość w dokumencie PDF? Być może zarządzasz dużą liczbą dokumentów i musisz śledzić, kiedy zostały one ostatnio wydrukowane. Bez względu na powód, aktualizacja tej właściwości może być niezwykle użyteczna, a dzięki Aspose.Words dla .NET jest to dziecinnie proste! Przyjrzyjmy się, jak możesz to osiągnąć.
 
-Zanim zaczniesz, upewnij się, że w swoim projekcie zainstalowałeś i skonfigurowałeś bibliotekę Aspose.Words for .NET. Bibliotekę i instrukcje instalacji można znaleźć na stronie internetowej Aspose.
+## Warunki wstępne
 
-## Krok 1: Zdefiniuj katalog dokumentów
+Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
 
- Na początek musisz zdefiniować ścieżkę do katalogu, w którym znajdują się Twoje dokumenty. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+-  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go z[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: środowisko programistyczne, takie jak Visual Studio.
+- Podstawowa znajomość języka C#: Pomocna będzie pewna znajomość języka C#.
+- Dokument: dokument programu Word, który chcesz przekonwertować na format PDF i zaktualizować ostatnio wydrukowaną właściwość.
+
+## Importuj przestrzenie nazw
+
+Aby użyć Aspose.Words for .NET w swoim projekcie, musisz zaimportować niezbędne przestrzenie nazw. Oto jak to zrobić:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Podzielmy proces na proste, łatwe do wykonania etapy.
+
+## Krok 1: Skonfiguruj swój projekt
+
+Najpierw skonfigurujmy Twój projekt. Otwórz program Visual Studio, utwórz nową aplikację konsolową (.NET Framework lub .NET Core) i nadaj jej jakąś znaczącą nazwę, na przykład „UpdateLastPrintedPropertyPDF”.
+
+## Krok 2: Zainstaluj Aspose.Words dla .NET
+
+Następnie musisz zainstalować pakiet Aspose.Words dla .NET. Możesz to zrobić za pomocą Menedżera pakietów NuGet. Kliknij prawym przyciskiem myszy swój projekt w Eksploratorze rozwiązań, wybierz „Zarządzaj pakietami NuGet”, wyszukaj „Aspose.Words” i zainstaluj go.
+
+## Krok 3: Załaduj swój dokument
+
+ Teraz załadujmy dokument Word, który chcesz przekonwertować na format PDF. Zastępować`"YOUR DOCUMENT DIRECTORY"` ze ścieżką do dokumentu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Krok 2: Prześlij dokument
-
-Następnie musimy załadować dokument, który chcemy przetworzyć. W tym przykładzie zakładamy, że dokument nazywa się „Rendering.docx” i znajduje się w określonym katalogu dokumentów.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Krok 3: Skonfiguruj opcje zapisu jako PDF ze zaktualizowaną właściwością „Ostatni wydruk”.
+## Krok 4: Skonfiguruj opcje zapisywania plików PDF
 
- Aby umożliwić aktualizację właściwości „Ostatni wydruk” podczas konwersji do formatu PDF, musimy skonfigurować plik`PdfSaveOptions` obiekt i ustaw`UpdateLastPrintedProperty`własność do`true`.
+ Musimy skonfigurować opcje zapisywania pliku PDF, aby zaktualizować ostatnio wydrukowaną właściwość. Utwórz nową instancję`PdfSaveOptions` i ustaw`UpdateLastPrintedProperty`własność do`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions 
+{ 
+	UpdateLastPrintedProperty = true 
+};
 ```
 
-## Krok 4: Zapisz dokument jako plik PDF z aktualizacją właściwości „Ostatni wydruk”.
+## Krok 5: Zapisz dokument w formacie PDF
 
-Wreszcie możemy zapisać dokument w formacie PDF, korzystając z wcześniej skonfigurowanych opcji zapisywania.
+Na koniec zapisz dokument jako plik PDF ze zaktualizowaną właściwością. Określ ścieżkę wyjściową i opcje zapisu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-To wszystko ! Pomyślnie włączyłeś aktualizację właściwości „Ostatni wydruk” podczas konwersji dokumentu do formatu PDF przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy aktualizacji właściwości „Ostatni wydruk” za pomocą Aspose.Words dla .NET
-
-
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
-
-```
 ## Wniosek
 
-W tym samouczku wyjaśniliśmy, jak zaktualizować właściwość „Ostatni wydruk” w dokumencie PDF przy użyciu Aspose.Words dla .NET. Wykonując podane kroki, możesz łatwo skonfigurować opcję aktualizacji właściwości „Ostatni wydruk” podczas konwersji dokumentu do formatu PDF. Użyj tej funkcji, aby śledzić wykorzystanie dokumentów i powiązane informacje.
+I masz to! Wykonując poniższe kroki, możesz łatwo zaktualizować ostatnio wydrukowaną właściwość w dokumencie PDF za pomocą Aspose.Words dla .NET. Dzięki tej metodzie Twój proces zarządzania dokumentami będzie wydajny i aktualny. Wypróbuj i przekonaj się, jak upraszcza to pracę.
 
-### Często Zadawane Pytania
+## Często zadawane pytania
 
-#### P: Jaka jest właściwość „Ostatni wydruk” w dokumencie PDF?
-Odp.: Właściwość „Ostatni wydruk” w dokumencie PDF odnosi się do daty i godziny ostatniego wydrukowania dokumentu. Ta właściwość może być przydatna do śledzenia informacji o użyciu dokumentów i zarządzaniu nimi.
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do zadań przetwarzania dokumentów w aplikacjach .NET, w tym tworzenia, modyfikowania, konwertowania i drukowania dokumentów.
 
-#### P: Jak mogę zaktualizować właściwość „Ostatni wydruk” w dokumencie PDF za pomocą Aspose.Words dla .NET?
-Odp.: Aby zaktualizować właściwość „Ostatni wydruk” w dokumencie PDF za pomocą Aspose.Words dla .NET, wykonaj następujące kroki:
+### Po co aktualizować ostatnią wydrukowaną właściwość w pliku PDF?
+Aktualizacja ostatnio wydrukowanej właściwości pomaga w śledzeniu użycia dokumentu, szczególnie w środowiskach, w których drukowanie dokumentów jest częstą czynnością.
 
- Utwórz instancję`Document` class określająca ścieżkę do dokumentu programu Word.
+### Czy mogę zaktualizować inne właściwości za pomocą Aspose.Words dla .NET?
+Tak, Aspose.Words dla .NET umożliwia aktualizację różnych właściwości dokumentu, takich jak autor, tytuł, temat i inne.
 
- Utwórz instancję`PdfSaveOptions` klasę i ustaw`UpdateLastPrintedProperty`własność do`true` aby włączyć aktualizację właściwości „Ostatni wydruk”.
+### Czy Aspose.Words dla .NET jest darmowy?
+Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/). W przypadku długotrwałego użytkowania należy zakupić licencję.
 
- Użyj`Save` metoda`Document`class, aby zapisać dokument w formacie PDF, określając opcje zapisywania.
-
-#### P: Jak mogę sprawdzić, czy właściwość „Ostatni wydruk” została zaktualizowana w wygenerowanym dokumencie PDF?
-O: Możesz sprawdzić, czy właściwość „Ostatni wydruk” w wygenerowanym dokumencie PDF została zaktualizowana, otwierając plik PDF w kompatybilnej przeglądarce plików PDF, takiej jak Adobe Acrobat Reader, i przeglądając informacje o dokumencie. Data i godzina ostatniego wydruku powinna odpowiadać dacie i godzinie wygenerowania dokumentu PDF.
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+Możesz znaleźć szczegółową dokumentację dotyczącą Aspose.Words dla .NET[Tutaj](https://reference.aspose.com/words/net/).

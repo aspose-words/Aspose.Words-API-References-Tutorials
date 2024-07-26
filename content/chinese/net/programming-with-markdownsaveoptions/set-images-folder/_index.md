@@ -2,60 +2,114 @@
 title: 设置图像文件夹
 linktitle: 设置图像文件夹
 second_title: Aspose.Words 文档处理 API
-description: 了解如何在使用 Aspose.Words for .NET 导出到 Markdown 时设置图像文件夹。自定义图像的位置以实现更好的组织和集成。
+description: 使用 Aspose.Words for .NET 将 Word 文档转换为具有正确表格对齐的 Markdown。按照我们的详细指南可获得完美结果。
 type: docs
 weight: 10
 url: /zh/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
+## 介绍
 
-以下是分步指南，用于解释以下 C# 源代码，该代码有助于使用 .NET 的 Aspose.Words 库为 Markdown 导出选项设置图像文件夹。在使用此代码之前，请确保已在项目中包含 Aspose.Words 库。
+您是否曾想过将 Word 文档导出为 Markdown 格式，同时确保表格和内容完美对齐？Aspose.Words for .NET 是您完成此任务的首选解决方案。在本文中，我们将引导您完成设置 Aspose.Words、准备文档以及以正确的表格内容对齐方式将其导出到 Markdown 的过程。我们将分解每个步骤，使其易于遵循和理解。那么，让我们深入研究并将您的 Word 文档转换为精美对齐的 Markdown 文件！
 
-## 步骤 1：设置文档目录路径
+## 先决条件
+
+在开始之前，请确保您已准备好以下内容：
+
+-  Aspose.Words for .NET：您可以下载它[这里](https://releases.aspose.com/words/net/).
+- 有效的许可证：获得免费试用[这里](https://releases.aspose.com/)或临时执照[这里](https://purchase.aspose.com/temporary-license/).
+- Visual Studio：或任何其他支持.NET 开发的 IDE。
+- C# 基础知识：了解 C# 编程语言。
+
+## 导入命名空间
+
+首先，您需要在 C# 项目中导入必要的命名空间。这些命名空间将允许您访问 Aspose.Words 功能。
 
 ```csharp
-//文档目录的路径。
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.IO;
 ```
 
-确保指定包含图像的文档所在文档目录的正确路径。
+## 步骤 1：设置你的项目
 
-## 第 2 步：加载包含图像的文档
+首先，在 IDE 中设置 .NET 项目。创建一个新的控制台应用程序并添加对 Aspose.Words for .NET 的引用。
+
+### 1.1 创建新项目
+
+打开 Visual Studio 并创建一个新的控制台应用程序项目。将其命名为“MarkdownExporter”或类似名称。
+
+### 1.2 添加 Aspose.Words 引用
+
+要将 Aspose.Words 添加到您的项目中，您可以从[Aspose 网站](https://releases.aspose.com/words/net/)并手动添加，或者使用 NuGet 包管理器：
+
+```bash
+Install-Package Aspose.Words
+```
+
+## 步骤 2：编写导出为 Markdown 的代码
+
+现在，让我们编写代码来读取 Word 文档并将其保存为具有适当表格对齐的 Markdown 文件。
+
+### 2.1 定义文档路径
+
+设置您的 Word 文档的路径和您想要保存图像的文件夹。
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
+```
+
+### 2.2 加载文档
+
+使用 Aspose.Words 加载您的 Word 文档。
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-我们加载包含要使用 Markdown 选项导出的图像的指定文档。
+### 2.3 配置 Markdown 保存选项
 
-## 步骤 3：设置 Markdown 导出选项的图像文件夹
+配置`MarkdownSaveOptions`指定图像的存储位置。
 
 ```csharp
-MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
+MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
+{
+    ImagesFolder = dataDir + "Images"
+};
 ```
 
-我们创建一个实例`MarkdownSaveOptions`并使用`ImagesFolder`属性。请确保指定要保存导出图像的文件夹的正确路径。
+### 2.4 将文档保存为 Markdown
 
-## 步骤 4：使用 Markdown 导出选项保存文档
+用一个`MemoryStream`将文档保存为 Markdown 格式。
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())
-     doc. Save(stream, saveOptions);
+{
+    doc.Save(stream, saveOptions);
+}
 ```
 
-我们使用指定的 Markdown 导出选项将文档保存到内存流。然后，您可以使用该流执行其他操作，例如将 Markdown 内容保存到文件。
+## 结论
 
-### 使用 Aspose.Words for .NET 设置 MarkdownSaveOptions 图像文件夹的示例源代码
+按照以下步骤使用 Aspose.Words for .NET 将 Word 文档导出为具有表格内容对齐的 Markdown 非常简单。只需几行代码，您就可以自动执行转换过程并确保内容格式正确。现在，您可以轻松地以 Markdown 格式共享文档，并且知道它们看起来很棒并且保持其结构。
 
-```csharp
-//文档目录的路径。
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+## 常见问题解答
 
-Document doc = new Document(dataDir + "Image bullet points.docx");
+### 我可以将 Aspose.Words for .NET 与其他编程语言一起使用吗？
 
-MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
+是的，Aspose.Words for .NET 可以与任何与 .NET 兼容的语言一起使用，例如 VB.NET、F# 等。
 
-using (MemoryStream stream = new MemoryStream())
-     doc. Save(stream, saveOptions);
-```
+### 如何获得 Aspose.Words 的临时许可证？
 
-此源代码演示了如何加载包含图像的文档，然后为 Markdown 导出选项设置图像文件夹。使用指定的选项，文档随后将保存到内存流。这允许您在导出 Markdown 内容时自定义图像文件夹的位置。
+您可以获得临时驾照[这里](https://purchase.aspose.com/temporary-license/).
+
+### 我可以将哪些类型的文档转换为 Markdown？
+
+您可以转换各种 Word 文档，包括 .doc、.docx、.rtf 等。
+
+### Aspose.Words 试用版有什么限制吗？
+
+试用版有一些限制，例如输出文件中有水印。您可以免费试用[这里](https://releases.aspose.com/).
+
+### 在哪里可以找到 Aspose.Words 的更多示例和文档？
+
+您可以在[Aspose 网站](https://reference.aspose.com/words/net/).

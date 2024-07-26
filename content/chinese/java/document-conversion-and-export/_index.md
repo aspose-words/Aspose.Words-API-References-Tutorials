@@ -23,7 +23,7 @@ Aspose.Words for Java 的一个主要功能是它能够无缝地将文档转换�
 
 因此，请深入研究上面列出的教程，并在与文档相关的项目中充分发挥 Aspose.Words for Java 的潜力。祝您编码愉快！
 
-如需了解更多信息，请访问[Aspose.Words for Java API 文档](https://reference.aspose.com/words/java/)，首先从[这里](https://releases.aspose.com/words/java/)。如果您有任何疑问或需要帮助，请随时联系我们[支持论坛](https://forum.aspose.com/).
+如需了解更多信息，请访问[Aspose.Words for Java API 文档](https://reference.aspose.com/words/java/)，请从以下网址下载[这里](https://releases.aspose.com/words/java/)。如果您有任何疑问或需要帮助，请随时联系我们[支持论坛](https://forum.aspose.com/).
 
 ## 文档转换和导出教程
 ### [在 Aspose.Words for Java 中生成自定义条形码标签](./generating-custom-barcode-labels/)

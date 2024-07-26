@@ -62,7 +62,7 @@ Dit is een compleet codevoorbeeld voor het invoegen van een OLE-object als picto
 
 ## Conclusie
 
-In de stapsgewijze handleiding hierboven wordt uitgelegd hoe u een OLE-object als pictogram in een Word-document kunt invoegen met behulp van een stroom met Aspose.Words voor .NET. Door de beschreven stappen te volgen, kunt u deze functionaliteit in uw project integreren. Zorg ervoor dat u de benodigde referenties importeert, een nieuwe document- en documentgenerator maakt, het OLE-object invoegt als een pictogram uit de stream en het document vervolgens opslaat. Gebruik de meegeleverde voorbeeldcode als uitgangspunt en pas deze aan uw behoeften aan.
+In de stapsgewijze handleiding hierboven wordt uitgelegd hoe u een OLE-object als pictogram in een Word-document kunt invoegen met behulp van een stroom met Aspose.Words voor .NET. Door de beschreven stappen te volgen, kunt u deze functionaliteit in uw project integreren. Zorg ervoor dat u de benodigde referenties importeert, een nieuwe document- en documentgenerator maakt, het OLE-object invoegt als een pictogram uit de stream en vervolgens het document opslaat. Gebruik de meegeleverde voorbeeldcode als uitgangspunt en pas deze aan uw behoeften aan.
 
 ### Veelgestelde vragen
 

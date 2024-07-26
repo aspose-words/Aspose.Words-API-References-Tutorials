@@ -68,7 +68,7 @@ series1.Name = "Chart Series Name 2";
 
 ## Bước 5: Làm mịn các đường kẻ
 
-Bạn muốn những đường nét đó trông mịn màng và bóng mượt? Hãy thực hiện điều đó bằng cách sử dụng spline Catmull-Rom.
+Bạn muốn những đường nét đó trông mịn màng và bóng bẩy? Hãy thực hiện điều đó bằng cách sử dụng spline Catmull-Rom.
 
 ```csharp
 series0.Smooth = true;

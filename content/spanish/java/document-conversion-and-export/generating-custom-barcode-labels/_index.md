@@ -28,7 +28,7 @@ Ahora, comencemos a crear etiquetas de códigos de barras personalizadas usando 
 
 ## Configuración de la altura del código de barras
 
-Para comenzar, debemos establecer la altura de nuestro código de barras en twips (1/1440 pulgadas). Luego convertiremos este valor a milímetros (mm). Aquí está el código para lograr esto:
+Para comenzar, necesitamos establecer la altura de nuestro código de barras en twips (1/1440 pulgadas). Luego convertiremos este valor a milímetros (mm). Aquí está el código para lograr esto:
 
 ```java
 	// El valor de entrada está en 1/1440 pulgadas (twips)

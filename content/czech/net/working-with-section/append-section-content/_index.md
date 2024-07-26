@@ -1,6 +1,6 @@
 ---
-title: Připojit část Obsah slova
-linktitle: Připojit část Obsah slova
+title: Připojit část Slovní obsah
+linktitle: Připojit část Slovní obsah
 second_title: Aspose.Words API pro zpracování dokumentů
 description: V tomto kurzu se dozvíte, jak přidat obsah slov do konkrétních částí dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs

@@ -87,6 +87,6 @@ C: Evet, yineleme döngünüzdeki uygun koşulları kullanarak form alanları ko
 
  C: Belirli bir form alanını koleksiyondan kaldırmak için`FormField.Remove` Kaldırmak istediğiniz alanı belirten yöntem. Bu yöntem form alanını koleksiyondan kaldıracaktır.
 
-#### S: Aspose.Words'te bir form alanının özelliklerini değiştirmek mümkün mü?
+#### S: Aspose.Words'te bir form alanının özelliklerini değiştirmek mümkün müdür?
 
 C: Evet, Aspose.Words'de bir form alanının özelliklerini, o alanın bireysel özelliklerine erişerek değiştirebilirsiniz. Örneğin, uygun özellikleri kullanarak bir form alanının adını, değerini veya seçeneklerini değiştirebilirsiniz.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /ko/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## .NET용 Aspose.Words를 사용하여 PDF 렌더링 경고 처리
+## 소개
 
 .NET용 Aspose.Words로 작업하는 경우 PDF 렌더링 경고를 관리하는 것은 문서가 올바르게 처리되고 저장되도록 하는 데 필수적인 측면입니다. 이 종합 가이드에서는 Aspose.Words를 사용하여 PDF 렌더링 경고를 처리하는 방법을 안내합니다. 이 자습서를 마치면 .NET 프로젝트에서 이 기능을 구현하는 방법을 명확하게 이해하게 될 것입니다.
 
@@ -79,7 +79,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 public class HandleDocumentWarnings : IWarningCallback
 {
     /// <요약>
-    /// 문서 처리 중 잠재적인 문제가 발생할 때마다 이 메소드가 호출됩니다.
+    //문서 처리 중 잠재적인 문제가 발생할 때마다 이 메소드가 호출됩니다.
     /// </summary>
     public void Warning(WarningInfo info)
     {

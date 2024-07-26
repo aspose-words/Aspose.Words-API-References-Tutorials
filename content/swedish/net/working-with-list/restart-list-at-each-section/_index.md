@@ -47,7 +47,7 @@ I det här exemplet infogar vi en avsnittsbrytning efter den 15:e listposten fö
 
 ## Steg 3: Spara det ändrade dokumentet
 
-Slutligen, spara det ändrade dokumentet:
+Spara slutligen det ändrade dokumentet:
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };

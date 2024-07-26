@@ -16,4 +16,4 @@ Bằng cách làm theo các hướng dẫn Aspose.Words for .NET, bạn sẽ có
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Nhận dạng văn bản Utf-8](./recognize-utf8-text/) | Tìm hiểu cách nhận dạng các ký tự Utf-8 trong tài liệu RTF bằng Aspose.Words for .NET. Đảm bảo tính toàn vẹn dữ liệu. |
+| [Nhận dạng văn bản Utf-8](./recognize-utf8-text/) | Tìm hiểu cách nhận dạng văn bản UTF-8 trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. |

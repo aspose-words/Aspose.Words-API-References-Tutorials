@@ -9,7 +9,7 @@ url: /id/net/programming-with-document-options-and-settings/cleanup-unused-style
 ---
 ## Perkenalan
 
-Hai! Pernahkah Anda merasa dokumen Word Anda menjadi sedikit berantakan? Tahukah Anda, gaya dan daftar yang tidak terpakai itu hanya ada di sana, menghabiskan ruang dan membuat dokumen Anda terlihat lebih rumit dari yang seharusnya? Nah, Anda beruntung! Hari ini, kita menyelami trik kecil yang menarik menggunakan Aspose.Words untuk .NET untuk membersihkan gaya dan daftar yang tidak digunakan tersebut. Ini seperti memandikan dokumen Anda dengan nyaman dan menyegarkan. Jadi, ambil kopimu, duduk santai, dan mari kita mulai!
+Hai! Pernahkah Anda merasa dokumen Word Anda menjadi sedikit berantakan? Tahukah Anda, gaya dan daftar yang tidak terpakai itu hanya ada di sana, menghabiskan ruang dan membuat dokumen Anda terlihat lebih rumit dari yang seharusnya? Nah, Anda beruntung! Hari ini, kita akan mempelajari trik kecil yang menarik menggunakan Aspose.Words untuk .NET untuk membersihkan gaya dan daftar yang tidak digunakan tersebut. Ini seperti memandikan dokumen Anda dengan nyaman dan menyegarkan. Jadi, ambil kopimu, duduk santai, dan mari kita mulai!
 
 ## Prasyarat
 

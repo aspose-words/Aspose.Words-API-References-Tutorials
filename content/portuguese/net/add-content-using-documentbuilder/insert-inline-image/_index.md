@@ -9,7 +9,7 @@ url: /pt/net/add-content-using-documentbuilder/insert-inline-image/
 ---
 ## Introdução
 
-No domínio do processamento de documentos com aplicativos .NET, o Aspose.Words se destaca como uma solução robusta para manipular documentos do Word programaticamente. Um de seus principais recursos é a capacidade de inserir imagens embutidas sem esforço, melhorando o apelo visual e a funcionalidade de seus documentos. Este tutorial se aprofunda em como você pode aproveitar o Aspose.Words for .NET para incorporar imagens perfeitamente em seus documentos do Word.
+No domínio do processamento de documentos com aplicativos .NET, Aspose.Words se destaca como uma solução robusta para manipular documentos do Word programaticamente. Um de seus principais recursos é a capacidade de inserir imagens embutidas sem esforço, melhorando o apelo visual e a funcionalidade de seus documentos. Este tutorial se aprofunda em como você pode aproveitar o Aspose.Words for .NET para incorporar imagens perfeitamente em seus documentos do Word.
 
 ## Pré-requisitos
 

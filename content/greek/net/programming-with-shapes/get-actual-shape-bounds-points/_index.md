@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Βήμα 2: Εισαγάγετε ένα σχήμα εικόνας
- Χρησιμοποιήστε το`InsertImage` μέθοδος του`DocumentBuilder`αντικείμενο για να εισαγάγετε ένα σχήμα εικόνας στο έγγραφο. Δώστε τη διαδρομή προς το αρχείο εικόνας ως παράμετρο.
+ Χρησιμοποιήστε το`InsertImage` μέθοδος του`DocumentBuilder` αντικείμενο για να εισαγάγετε ένα σχήμα εικόνας στο έγγραφο. Δώστε τη διαδρομή προς το αρχείο εικόνας ως παράμετρο.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

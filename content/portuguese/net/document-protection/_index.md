@@ -11,7 +11,7 @@ Os tutoriais de proteção de documentos Aspose.Words para .NET oferecem um guia
 
 Por meio desses tutoriais, você aprenderá como usar os recursos de proteção do Aspose.Words for .NET para proteger seus documentos confidenciais contra acesso não autorizado. Você aprenderá como gerenciar senhas, restringir permissões de edição, bloquear seções específicas do documento e adicionar assinaturas digitais para garantir a autenticidade do documento.
 
-Os tutoriais de proteção de documentos Aspose.Words para .NET guiam você por meio de exemplos práticos e explicações passo a passo, facilitando a aplicação de medidas de segurança avançadas aos seus documentos do Word. Proteja suas informações confidenciais, evite modificações não autorizadas e garanta a integridade dos seus documentos com estes tutoriais abrangentes.
+Os tutoriais de proteção de documentos Aspose.Words para .NET guiam você através de exemplos práticos e explicações passo a passo, facilitando a aplicação de medidas de segurança avançadas aos seus documentos do Word. Proteja suas informações confidenciais, evite modificações não autorizadas e garanta a integridade dos seus documentos com estes tutoriais abrangentes.
 
  ## Tutoriais
 | Título | Descrição |

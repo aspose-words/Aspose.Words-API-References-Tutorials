@@ -140,7 +140,7 @@ doc.save("output.docx")
 
 ### Técnicas de PNL para el análisis de documentos
 
-Combine el poder de las bibliotecas de procesamiento del lenguaje natural (NLP) con Aspose.Words para realizar análisis de documentos en profundidad, análisis de sentimientos y reconocimiento de entidades.
+Combine el poder de las bibliotecas de procesamiento del lenguaje natural (NLP) con Aspose.Words para realizar análisis de documentos en profundidad, análisis de opiniones y reconocimiento de entidades.
 
 ```python
 # Use a Python NLP library (e.g., spaCy) in combination with Aspose.Words for document analysis

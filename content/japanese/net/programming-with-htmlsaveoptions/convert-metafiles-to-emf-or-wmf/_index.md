@@ -15,7 +15,7 @@ Aspose.Words for .NET の世界を深く掘り下げる旅へようこそ。今�
 
 コードに進む前に、すべてが設定されていることを確認しましょう。必要なものは次のとおりです。
 
-1. Aspose.Words for .NET ライブラリ: 最新バージョンであることを確認してください。最新バージョンでない場合は、以下からダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET ライブラリ: 最新バージョンであることを確認してください。最新バージョンでない場合は、以下からダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
 2. .NET Framework: マシンに .NET Framework がインストールされていることを確認します。
 3. 開発環境: Visual Studio のような IDE を使用すると、作業が楽になります。
 4. C# の基本知識: 専門家である必要はありませんが、基本的な理解があると役立ちます。

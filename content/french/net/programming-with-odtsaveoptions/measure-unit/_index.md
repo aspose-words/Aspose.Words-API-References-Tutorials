@@ -2,66 +2,94 @@
 title: Unité de mesure
 linktitle: Unité de mesure
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment spécifier l'unité de mesure lors de la conversion d'un document Word en ODT avec Aspose.Words pour .NET.
+description: Découvrez comment configurer la fonctionnalité d'unité de mesure dans Aspose.Words for .NET pour préserver le formatage du document lors de la conversion ODT.
 type: docs
 weight: 10
 url: /fr/net/programming-with-odtsaveoptions/measure-unit/
 ---
+## Introduction
 
-Lorsque vous convertissez un document Word au format OpenDocument Text (ODT) dans une application C#, vous souhaiterez peut-être spécifier l'unité de mesure utilisée pour le formatage mesurable et les propriétés de contenu. Avec la bibliothèque Aspose.Words pour .NET, vous pouvez facilement spécifier cette fonctionnalité à l'aide des options de sauvegarde OdtSaveOptions. Dans ce guide étape par étape, nous vous expliquerons comment utiliser le code source Aspose.Words pour .NET C# pour convertir un document Word en ODT en spécifiant l'unité de mesure à l'aide d'OdtSaveOptions.
+Avez-vous déjà dû convertir vos documents Word dans différents formats mais aviez besoin d'une unité de mesure spécifique pour votre mise en page ? Qu'il s'agisse de pouces, de centimètres ou de points, il est crucial de garantir que votre document conserve son intégrité pendant le processus de conversion. Dans ce didacticiel, nous verrons comment configurer la fonctionnalité d'unité de mesure dans Aspose.Words pour .NET. Cette fonctionnalité puissante garantit que la mise en forme de votre document est conservée exactement comme vous en avez besoin lors de la conversion au format ODT (Open Document Text).
 
-## Comprendre la bibliothèque Aspose.Words
+## Conditions préalables
 
-Avant de plonger dans le code, il est important de comprendre la bibliothèque Aspose.Words pour .NET. Aspose.Words est une bibliothèque puissante pour créer, éditer, convertir et protéger des documents Word sur différentes plates-formes, dont .NET. Il offre de nombreuses fonctionnalités pour manipuler des documents, telles que l'insertion de texte, la modification du formatage, l'ajout de sections et bien plus encore.
+Avant de plonger dans le code, vous aurez besoin de quelques éléments pour commencer :
 
-## Chargement du document Word
+1. Aspose.Words pour .NET : assurez-vous que la dernière version d'Aspose.Words pour .NET est installée. Si vous ne l'avez pas encore, vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : un IDE comme Visual Studio pour écrire et exécuter votre code C#.
+3. Connaissance de base de C# : Comprendre les bases de C# vous aidera à suivre le didacticiel.
+4. Un document Word : préparez un exemple de document Word que vous pourrez utiliser pour la conversion.
 
-La première étape consiste à charger le document Word que vous souhaitez convertir en ODT. Utilisez la classe Document pour charger le document à partir du fichier source. Voici un exemple :
+## Importer des espaces de noms
 
-```csharp
-Document doc = new Document(dataDir + "Document.docx");
-```
-
-Dans cet exemple, nous chargeons le document "Document.docx" situé dans le répertoire documents.
-
-## Configuration des options de sauvegarde
-
-L'étape suivante consiste à configurer les options de sauvegarde pour la conversion en ODT. Utilisez la classe OdtSaveOptions et définissez la propriété MeasureUnit sur la valeur souhaitée. Par exemple, si vous souhaitez utiliser les pouces comme unité de mesure, définissez MeasureUnit sur OdtSaveMeasureUnit.Inches. Voici comment procéder :
+Avant de commencer à coder, assurons-nous que les espaces de noms nécessaires sont importés. Ajoutez-les à l'aide de directives en haut de votre fichier de code :
 
 ```csharp
-OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Nous créons un nouvel objet OdtSaveOptions et définissons la propriété MeasureUnit sur la valeur souhaitée, dans notre cas, OdtSaveMeasureUnit.Inches pour utiliser les pouces comme unité de mesure.
+## Étape 1 : Configurez votre répertoire de documents
 
-## Convertir un document en ODT
-
-Maintenant que nous avons configuré les options de sauvegarde, nous pouvons procéder à la conversion du document en ODT. Utilisez la méthode Save de la classe Document pour enregistrer le document converti au format ODT en spécifiant les options d'enregistrement. Voici un exemple :
-
-```csharp
-doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
-```
-
-Dans cet exemple, nous enregistrons le document converti sous le nom « WorkingWithOdtSaveOptions.MeasureUnit.odt » en utilisant les options d'enregistrement spécifiées.
-
-### Exemple de code source pour OdtSaveOptions avec la fonctionnalité « Unité de mesure » utilisant Aspose.Words pour .NET
-
-
+Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. C'est ici que se trouve votre document Word et que le fichier converti sera enregistré.
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Remplacer`"YOUR DOCUMENTS DIRECTORY"` avec le chemin réel de votre répertoire. Cela garantit que votre code sait où trouver votre document Word.
+
+## Étape 2 : Charger le document Word
+
+ Ensuite, vous devez charger le document Word que vous souhaitez convertir. Cela se fait en utilisant le`Document` classe d’Aspose.Words.
+
+```csharp
 // Charger le document Word
 Document doc = new Document(dataDir + "Document.docx");
+```
 
+Assurez-vous que votre document Word, nommé « Document.docx », est présent dans le répertoire spécifié.
+
+## Étape 3 : Configurer l'unité de mesure
+
+ Maintenant, configurons l'unité de mesure pour la conversion ODT. C'est là que la magie opère. Nous allons mettre en place le`OdtSaveOptions` d'utiliser les pouces comme unité de mesure.
+
+```csharp
 // Paramétrage des options de sauvegarde avec la fonctionnalité "Unité de mesure"
 OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
+```
 
+ Dans cet exemple, nous définissons l'unité de mesure en pouces. Vous pouvez également choisir d'autres unités telles que`OdtSaveMeasureUnit.Centimeters` ou`OdtSaveMeasureUnit.Points` en fonction de vos besoins.
+
+## Étape 4 : Convertir le document en ODT
+
+ Enfin, nous convertirons le document Word au format ODT en utilisant le paramètre configuré`OdtSaveOptions`.
+
+```csharp
 // Convertir le document en ODT
 doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
+Cette ligne de code enregistre le document converti dans le répertoire spécifié avec la nouvelle unité de mesure appliquée.
+
 ## Conclusion
 
-Dans ce guide, nous avons expliqué comment convertir un document Word en ODT en spécifiant l'unité de mesure à l'aide des options d'enregistrement OdtSaveOptions avec la bibliothèque Aspose.Words pour .NET. En suivant les étapes fournies et en utilisant le code source C# fourni, vous pouvez facilement appliquer cette fonctionnalité dans votre application C#. La spécification de l'unité de mesure lors de la conversion en ODT vous permet de contrôler le formatage et les dimensions du document résultant en fonction de vos besoins spécifiques.
+Et voila! En suivant ces étapes, vous pouvez facilement configurer la fonctionnalité d'unité de mesure dans Aspose.Words for .NET pour garantir que la mise en page de votre document est préservée lors de la conversion. Que vous travailliez avec des pouces, des centimètres ou des points, ce didacticiel vous a montré comment contrôler facilement la mise en forme de votre document.
+
+## FAQ
+
+### Qu’est-ce qu’Aspose.Words pour .NET ?
+Aspose.Words for .NET est une bibliothèque puissante permettant de travailler avec des documents Word par programmation. Il permet aux développeurs de créer, modifier, convertir et traiter des documents Word sans nécessiter Microsoft Word.
+
+### Puis-je utiliser d’autres unités de mesure que les pouces ?
+ Oui, Aspose.Words for .NET prend en charge d'autres unités de mesure telles que les centimètres et les points. Vous pouvez spécifier l'unité souhaitée à l'aide du`OdtSaveMeasureUnit` énumération.
+
+### Existe-t-il un essai gratuit disponible pour Aspose.Words pour .NET ?
+ Oui, vous pouvez télécharger un essai gratuit d'Aspose.Words pour .NET à partir de[ici](https://releases.aspose.com/).
+
+### Où puis-je trouver de la documentation pour Aspose.Words pour .NET ?
+ Vous pouvez accéder à une documentation complète pour Aspose.Words pour .NET à l'adresse[ce lien](https://reference.aspose.com/words/net/).
+
+### Comment puis-je obtenir de l’assistance pour Aspose.Words pour .NET ?
+ Pour obtenir de l'aide, vous pouvez visiter le forum Aspose.Words à l'adresse[ce lien](https://forum.aspose.com/c/words/8).

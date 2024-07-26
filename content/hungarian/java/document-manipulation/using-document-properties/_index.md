@@ -97,7 +97,7 @@ public void configuringLinkToContent() throws Exception
 
 Ez a kódrészlet bemutatja, hogyan hozhat létre könyvjelzőt a dokumentumban, és hogyan adhat hozzá egy egyéni dokumentumtulajdonságot, amely a könyvjelzőre hivatkozik.
 
-## Konvertálás a mértékegységek között
+## Konvertálás mértékegységek között
 
 Az Aspose.Words for Java programban egyszerűen konvertálhatja a mértékegységeket. Íme egy példa, hogyan kell csinálni:
 

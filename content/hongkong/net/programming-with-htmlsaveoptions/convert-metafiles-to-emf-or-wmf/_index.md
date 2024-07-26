@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-w
 
 在我們深入研究程式碼之前，讓我們確保一切都已設定完畢。這是您需要的：
 
-1. Aspose.Words for .NET Library：確保您擁有最新版本。如果沒有，您可以從以下位置下載[這裡](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library：確保您擁有最新版本。如果沒有，您可以從以下位置下載[這裡](https://releases.aspose.com/words/net/).
 2. .NET Framework：請確定您的電腦上安裝了 .NET Framework。
 3. 開發環境：像 Visual Studio 這樣的 IDE 會讓您的生活更輕鬆。
 4. C# 基礎知識：您不需要成為專家，但基本了解會有所幫助。
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToPng.html", save
 
 ## 結論
 
-現在你就得到它了！透過執行這些步驟，您已使用 Aspose.Words for .NET 在 Word 文件中成功將 SVG 文件轉換為 EMF 或 WMF 格式。此方法可以方便地確保相容性並保持文件在不同平台上的視覺完整性。快樂編碼！
+現在你就擁有了！透過執行這些步驟，您已使用 Aspose.Words for .NET 在 Word 文件中成功將 SVG 文件轉換為 EMF 或 WMF 格式。此方法可以方便地確保相容性並保持文件在不同平台上的視覺完整性。快樂編碼！
 
 ## 常見問題解答
 

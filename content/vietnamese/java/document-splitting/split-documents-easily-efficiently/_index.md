@@ -12,7 +12,7 @@ Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách phân 
 
 ## 1. Giới thiệu
 
-Aspose.Words for Java là một API Java cho phép các nhà phát triển tạo, sửa đổi, chuyển đổi và phân chia tài liệu Word một cách dễ dàng. Trong bài viết này, chúng tôi sẽ tập trung vào tính năng chia tài liệu của Aspose.Words, tính năng này cực kỳ hữu ích khi xử lý các tài liệu lớn cần được chia thành các phần nhỏ hơn, dễ quản lý hơn.
+Aspose.Words for Java là một API Java cho phép các nhà phát triển tạo, sửa đổi, chuyển đổi và phân chia tài liệu Word một cách dễ dàng. Trong bài viết này, chúng tôi sẽ tập trung vào tính năng chia nhỏ tài liệu của Aspose.Words, tính năng này cực kỳ hữu ích khi xử lý các tài liệu lớn cần được chia thành các phần nhỏ hơn, dễ quản lý hơn.
 
 ## 2. Bắt đầu với Aspose.Words cho Java
 
@@ -154,4 +154,4 @@ Có, Aspose.Words for Java hỗ trợ chia nhỏ tài liệu được bảo vệ
 
 ### Q5. Aspose.Words cho Java có phù hợp để xử lý tài liệu cấp doanh nghiệp không?
 
-Tuyệt đối! Aspose.Words cho Java được sử dụng rộng rãi trong các ứng dụng cấp doanh nghiệp cho các tác vụ xử lý tài liệu khác nhau do tính mạnh mẽ và bộ tính năng mở rộng của nó.
+Tuyệt đối! Aspose.Words for Java được sử dụng rộng rãi trong các ứng dụng cấp doanh nghiệp cho các tác vụ xử lý tài liệu khác nhau do tính mạnh mẽ và bộ tính năng mở rộng của nó.

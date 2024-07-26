@@ -39,7 +39,7 @@ builder.Write("Element 3");
 
 在此步驟中，我們使用以下命令套用清單編號的預設格式`ApplyNumberDefault()`列表格式化程式的方法。接下來，我們使用文檔產生器將三個項目新增到清單中`Writeln()`和`Write()`方法。我們使用`ListIndent()`增加每個層級縮排的方法。
 
-## 步驟 4：配置錄製選項
+## 第 4 步：配置錄製選項
 
 ```csharp
 TxtSaveOptions saveOptions = new TxtSaveOptions();

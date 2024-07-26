@@ -2,7 +2,7 @@
 title: Truy cập phiên bản sửa đổi
 linktitle: Truy cập phiên bản sửa đổi
 second_title: API xử lý tài liệu Aspose.Words
-description: Truy cập phiên bản sửa đổi của tài liệu Word bằng Aspose.Words cho .NET.
+description: Truy cập phiên bản sửa đổi của tài liệu Word bằng Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/access-revised-version/

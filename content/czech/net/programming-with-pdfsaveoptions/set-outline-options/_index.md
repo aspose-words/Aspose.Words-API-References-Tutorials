@@ -2,88 +2,102 @@
 title: Nastavte možnosti obrysu v dokumentu PDF
 linktitle: Nastavte možnosti obrysu v dokumentu PDF
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce nastavením možností obrysu v dokumentu PDF pomocí Aspose.Words pro .NET.
+description: Naučte se, jak nastavit možnosti osnovy v dokumentu PDF pomocí Aspose.Words for .NET. Vylepšete navigaci PDF konfigurací úrovní nadpisů a rozšířených obrysů.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
+## Úvod
 
-Tento článek obsahuje podrobného průvodce, jak používat nastavení možností osnovy pro funkci velikosti metasouboru s Aspose.Words pro .NET. Každou část kódu si podrobně vysvětlíme. Na konci tohoto kurzu budete schopni porozumět tomu, jak nastavit možnosti osnovy v dokumentu a vygenerovat PDF s odpovídajícími možnostmi osnovy.
+Při práci s dokumenty, zejména pro profesionální nebo akademické účely, je efektivní organizace obsahu zásadní. Jedním ze způsobů, jak zlepšit použitelnost vašich dokumentů PDF, je nastavení možností obrysu. Obrysy neboli záložky umožňují uživatelům procházet dokumentem efektivně, stejně jako kapitoly v knize. V této příručce se ponoříme do toho, jak můžete nastavit tyto možnosti pomocí Aspose.Words pro .NET, aby byly vaše soubory PDF dobře organizované a uživatelsky přívětivé.
 
-Než začnete, ujistěte se, že jste ve svém projektu nainstalovali a nakonfigurovali knihovnu Aspose.Words for .NET. Knihovnu a pokyny k instalaci najdete na webu Aspose.
+## Předpoklady
 
-## Krok 1: Definujte adresář dokumentů
+Než začnete, je několik věcí, které budete potřebovat, abyste se ujistili, že máte:
 
- Chcete-li začít, musíte definovat cestu k adresáři, kde jsou umístěny vaše dokumenty. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete[stáhněte si nejnovější verzi zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí .NET: Budete potřebovat funkční vývojové prostředí .NET, jako je Visual Studio.
+3. Základní porozumění C#: Znalost programovacího jazyka C# vám pomůže snadno pokračovat.
+4. Dokument aplikace Word: Připravte si dokument aplikace Word, který převedete do formátu PDF.
+
+## Importovat jmenné prostory
+
+Nejprve budete muset importovat potřebné jmenné prostory. Zde zahrnete knihovnu Aspose.Words pro interakci s vaším dokumentem. Postup nastavení:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Krok 1: Definujte cestu dokumentu
+
+Chcete-li začít, musíte zadat cestu k dokumentu aplikace Word. Toto je soubor, který chcete převést do PDF s možnostmi obrysu. 
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Krok 2: Nahrajte dokument
-
-Dále musíme načíst dokument, který chceme zpracovat. V tomto příkladu předpokládáme, že dokument se nazývá "Rendering.docx" a je umístěn v určeném adresáři dokumentů.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Krok 3: Nakonfigurujte možnosti uložení jako PDF s možnostmi plánu
+ Ve výše uvedeném fragmentu kódu nahraďte`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů. To programu řekne, kde má najít dokument aplikace Word.
 
-Chcete-li nastavit možnosti obrysu ve vygenerovaném PDF, musíme nakonfigurovat`PdfSaveOptions` objekt. Můžeme nastavit počet úrovní osnovy nadpisů (`HeadingsOutlineLevels`) a počet úrovní rozšířené osnovy (`ExpandedOutlineLevels`).
+## Krok 2: Nakonfigurujte možnosti uložení PDF
+
+ Dále musíte nakonfigurovat možnosti uložení PDF. To zahrnuje nastavení, jak se má zacházet s obrysy ve výstupu PDF. Budete používat`PdfSaveOptions` třídy to udělat.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
+```
+
+Nyní nastavíme možnosti osnovy. 
+
+### Nastavte úrovně obrysu nadpisů
+
+ The`HeadingsOutlineLevels` Vlastnost definuje, kolik úrovní nadpisů by mělo být zahrnuto v obrysu PDF. Pokud například nastavíte hodnotu 3, budou v obrysu PDF zahrnuty až tři úrovně nadpisů.
+
+```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
+```
+
+### Nastavte úrovně rozšířeného obrysu
+
+ The`ExpandedOutlineLevels`Vlastnost určuje, kolik úrovní obrysu se má ve výchozím nastavení rozbalit při otevření PDF. Nastavením této hodnoty na 1 se rozbalí nadpisy nejvyšší úrovně a získáte jasný pohled na hlavní sekce.
+
+```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 ```
 
-## Krok 4: Uložte dokument jako PDF s možnostmi obrysu
+## Krok 3: Uložte dokument jako PDF
 
-Nakonec můžeme dokument uložit ve formátu PDF pomocí dříve nakonfigurovaných možností uložení.
+ S nakonfigurovanými možnostmi jste připraveni uložit dokument jako PDF. Použijte`Save` metoda`Document` třídy a předejte cestu k souboru a možnosti uložení.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-To je vše ! Úspěšně jste nastavili možnosti osnovy v dokumentu a vygenerovali PDF s odpovídajícími možnostmi osnovy pomocí Aspose.Words pro .NET.
-
-### Příklad zdrojového kódu pro nastavení možností plánu na velikost metasouboru pomocí Aspose.Words pro .NET
-
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
-	saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
-   
-```
+Tento řádek kódu uloží váš dokument aplikace Word jako PDF s použitím vámi nakonfigurovaných možností osnovy. 
 
 ## Závěr
 
-V tomto tutoriálu jsme vysvětlili, jak nastavit možnosti obrysu v dokumentu PDF pomocí Aspose.Words for .NET. Pomocí popsaných kroků můžete snadno určit úrovně nadpisu a obrysu v dokumentu a vygenerovat soubor PDF s odpovídajícími možnostmi obrysu. Využijte výhod možnosti osnovy ke zlepšení struktury a navigace v dokumentech PDF pomocí Aspose.Words for .NET.
+Nastavení možností obrysu v dokumentu PDF může výrazně zlepšit jeho navigaci a uživatelům usnadnit nalezení a přístup k požadovaným sekcím. Pomocí Aspose.Words for .NET můžete tato nastavení snadno nakonfigurovat tak, aby vyhovovala vašim potřebám, a zajistit tak, aby vaše dokumenty PDF byly co nejpříjemnější.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Jaká je možnost osnovy v dokumentu PDF?
-Odpověď: Volba osnovy v dokumentu PDF odkazuje na hierarchickou strukturu obsahu dokumentu. Umožňuje vytvořit interaktivní obsah a usnadňuje navigaci v dokumentu. Možnosti obrysu určují úrovně titulků a titulků, které se mají zahrnout do obrysu, a úroveň podrobností, které se mají zobrazit ve vygenerovaném obrysu.
+### Jaký je účel nastavení možností osnovy v PDF?
 
-#### Otázka: Jak mohu nastavit možnosti obrysu v dokumentu PDF pomocí Aspose.Words for .NET?
-Odpověď: Chcete-li nastavit možnosti osnovy v dokumentu PDF pomocí Aspose.Words pro .NET, postupujte takto:
+Nastavení možností obrysu pomáhá uživatelům snadněji procházet velké dokumenty PDF tím, že poskytuje strukturovaný obsah, na který lze kliknout.
 
- Nahrazením nastavte cestu k adresáři, kde jsou umístěny vaše dokumenty`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+### Mohu nastavit různé úrovně nadpisů pro různé sekce v mém dokumentu?
 
- Načtěte dokument, který chcete převést do PDF, pomocí`Document` třídy a zadejte cestu k dokumentu v zadaném adresáři dokumentů.
+Ne, nastavení osnovy platí globálně v celém dokumentu. Chcete-li však dosáhnout podobného efektu, můžete dokument strukturovat pomocí vhodných úrovní nadpisů.
 
- Nakonfigurujte možnosti uložení jako PDF vytvořením instance souboru`PdfSaveOptions` třídy a pomocí`OutlineOptions` vlastnost pro nastavení možností osnovy. Počet úrovní nadpisů, které se mají zahrnout do osnovy, můžete určit pomocí`HeadingsOutlineLevels` vlastnost a počet úrovní rozšířeného obrysu pomocí`ExpandedOutlineLevels` vlastnictví.
+### Jak mohu zobrazit náhled změn před uložením PDF?
 
- Uložte dokument ve formátu PDF pomocí`Save` metoda`Document` třída určující cestu a možnosti uložení.
+Ke kontrole vzhledu obrysu můžete použít prohlížeče PDF, které podporují navigaci obrysu. Některé aplikace k tomu poskytují funkci náhledu.
 
-#### Otázka: Jaká je možnost plánu v dokumentu PDF?
-Odpověď: Volba osnovy v dokumentu PDF vám umožňuje vytvořit hierarchickou strukturu obsahu, která usnadňuje navigaci v dokumentu a přístup k různým sekcím. To umožňuje uživatelům rychle přejít na konkrétní části dokumentu kliknutím na položky v obsahu nebo osnově. Možnost osnovy také zlepšuje zážitek ze čtení tím, že poskytuje přehled o celkové struktuře dokumentu.
+### Je možné po uložení PDF odstranit obrys?
+
+Ano, můžete odstranit obrysy pomocí softwaru pro úpravu PDF, ale to není přímo dosažitelné s Aspose.Words, jakmile je PDF vytvořen.
+
+### Jaké další možnosti ukládání PDF mohu nakonfigurovat pomocí Aspose.Words?
+
+Aspose.Words poskytuje různé možnosti, jako je nastavení úrovně shody PDF, vkládání písem a úprava kvality obrazu.

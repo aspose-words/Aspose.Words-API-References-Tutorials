@@ -16,5 +16,5 @@ Dengan tutorial ini, Anda akan dapat mengoptimalkan proses memuat file PDF ke da
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Muat Pdf Terenkripsi](./load-encrypted-pdf/) | Panduan langkah demi langkah untuk memuat PDF terenkripsi menggunakan Aspose.Words untuk .NET. |
-| [Muat Rentang Halaman Pdf](./load-page-range-of-pdf/) | Panduan langkah demi langkah untuk memuat rentang halaman PDF tertentu dengan Aspose.Words untuk .NET. |
+| [Muat Pdf Terenkripsi](./load-encrypted-pdf/) | Pelajari cara memuat PDF terenkripsi menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah kami. Enkripsi dan dekripsi PDF master dalam waktu singkat. |
+| [Muat Rentang Halaman Pdf](./load-page-range-of-pdf/) | Pelajari cara memuat rentang halaman tertentu dari PDF menggunakan Aspose.Words untuk .NET dalam tutorial langkah demi langkah yang komprehensif ini. Sempurna untuk pengembang .NET. |

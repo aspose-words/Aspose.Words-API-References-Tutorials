@@ -16,4 +16,4 @@ Az Aspose.Words for .NET oktatóprogramjait követve alaposan megértheti az Asp
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Az Utf-8 szöveg felismerése](./recognize-utf8-text/) | Tanulja meg, hogyan ismerheti fel az Utf-8 karaktereket RTF-dokumentumokban az Aspose.Words for .NET segítségével. Biztosítsa az adatok integritását. |
+| [Az Utf-8 szöveg felismerése](./recognize-utf8-text/) | Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan ismerheti fel az UTF-8 szöveget Word dokumentumokban az Aspose.Words for .NET használatával. |

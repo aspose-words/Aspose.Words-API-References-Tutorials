@@ -16,5 +16,5 @@ url: /ko/net/programming-with-ranges/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [범위는 Word 문서에서 텍스트 삭제](./ranges-delete-text/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 특정 범위의 텍스트를 삭제하는 방법을 알아보세요. |
-| [범위는 Word 문서에서 텍스트 가져오기](./ranges-get-text/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 텍스트를 쉽게 추출하는 방법을 알아보세요. |
+| [범위는 Word 문서에서 텍스트 삭제](./ranges-delete-text/) | 이 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 범위에서 텍스트를 삭제하는 방법을 알아보세요. C# 개발자에게 적합합니다. |
+| [범위는 Word 문서에서 텍스트 가져오기](./ranges-get-text/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 텍스트를 쉽게 추출할 수 있습니다. 자세한 가이드를 따라 쉽게 시작해보세요. |

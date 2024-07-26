@@ -16,8 +16,8 @@ Ya sea que desee crear documentos compatibles con versiones anteriores de Word, 
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Cifrar Docx con contraseña](./encrypt-docx-with-password/) | Aprenda a cifrar un archivo DOCX con una contraseña usando Aspose.Words para .NET. Tutorial completo para la seguridad de documentos. |
-| [Cumplimiento de Ooxml ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Aprenda cómo garantizar el cumplimiento estricto de Ooxml Iso 29500_2008_al guardar documentos con Aspose.Words para .NET. |
-| [Actualizar la propiedad de la última hora guardada](./update-last-saved-time-property/) | Aprenda cómo actualizar automáticamente la propiedad Última hora guardada al guardar un documento con Aspose.Words para .NET. |
-| [Mantener caracteres de control heredados](./keep-legacy-control-chars/) | Aprenda cómo conservar los caracteres de control heredados al guardar un documento con Aspose.Words para .NET. |
-| [Establecer nivel de compresión](./set-compression-level/) | Aprenda cómo configurar el nivel de compresión al guardar un documento con Aspose.Words para .NET. |
+| [Cifrar Docx con contraseña](./encrypt-docx-with-password/) | Asegure sus documentos de Word cifrándolos con una contraseña usando Aspose.Words para .NET. Siga nuestra guía paso a paso para proteger su información confidencial. |
+| [Cumplimiento de Ooxml ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Aprenda cómo garantizar el cumplimiento de OOXML ISO 29500_2008_Strict utilizando Aspose.Words para .NET con esta guía paso a paso. |
+| [Actualizar la propiedad de la última hora guardada](./update-last-saved-time-property/) | Aprenda cómo actualizar la propiedad de la última hora guardada en documentos de Word usando Aspose.Words para .NET. Siga nuestra guía detallada paso a paso. |
+| [Mantener caracteres de control heredados](./keep-legacy-control-chars/) | Aprenda cómo conservar los caracteres de control heredados en documentos de Word usando Aspose.Words para .NET con esta guía paso a paso. |
+| [Establecer nivel de compresión](./set-compression-level/) | Aprenda a configurar el nivel de compresión en documentos de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para optimizar el almacenamiento y el rendimiento de sus documentos. |

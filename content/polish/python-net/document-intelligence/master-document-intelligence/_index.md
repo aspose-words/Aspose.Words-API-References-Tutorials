@@ -10,7 +10,7 @@ url: /pl/python-net/document-intelligence/master-document-intelligence/
 
 ## Zrozumienie inteligencji dokumentów
 
-Analiza dokumentów odnosi się do procesu automatycznego wyodrębniania cennych informacji z dokumentów, takich jak tekst, metadane, tabele i wykresy. Polega na analizie nieustrukturyzowanych danych w dokumentach i przekształceniu ich w ustrukturyzowane i użyteczne formaty. Analiza dokumentów umożliwia organizacjom usprawnienie obiegu dokumentów, usprawnienie podejmowania decyzji w oparciu o dane i zwiększenie ogólnej produktywności.
+Analiza dokumentów odnosi się do procesu automatycznego wydobywania cennych informacji z dokumentów, takich jak tekst, metadane, tabele i wykresy. Polega na analizie nieustrukturyzowanych danych w dokumentach i przekształceniu ich w ustrukturyzowane i użyteczne formaty. Analiza dokumentów umożliwia organizacjom usprawnienie obiegu dokumentów, usprawnienie podejmowania decyzji w oparciu o dane i zwiększenie ogólnej produktywności.
 
 ## Znaczenie inteligencji dokumentów w Pythonie
 

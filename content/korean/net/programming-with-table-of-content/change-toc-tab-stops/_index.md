@@ -103,7 +103,7 @@ Document doc = new Document(dataDir + "Table of contents.docx");
 
 #### Q: Aspose.Words for .NET을 사용하여 목차에 사용된 탭을 어떻게 변경할 수 있나요?
 
- A: 문서가 로드되면 문서의 각 단락을 반복하여 목차(TOC) 결과 스타일을 사용하여 형식이 지정되었는지 확인할 수 있습니다. 단락의 형식이 목차 스타일로 지정된 경우 페이지 번호를 정렬하는 데 사용되는 탭을 수정할 수 있습니다. .NET용 Aspose.Words에서는`ParagraphFormat` 탭 정지를 검색하고 수정하려면 각 단락의 속성을 사용하세요. 예는 다음과 같습니다.
+A: 문서가 로드되면 문서의 각 단락을 반복하여 목차(TOC) 결과 스타일을 사용하여 형식이 지정되었는지 확인할 수 있습니다. 단락의 형식이 목차 스타일로 지정된 경우 페이지 번호를 정렬하는 데 사용되는 탭을 수정할 수 있습니다. .NET용 Aspose.Words에서는`ParagraphFormat` 탭 정지를 검색하고 수정하려면 각 단락의 속성을 사용하세요. 예는 다음과 같습니다.
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))

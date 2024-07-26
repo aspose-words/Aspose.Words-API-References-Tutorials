@@ -2,35 +2,49 @@
 title: 将 Word 文档页眉页脚书签导出为 PDF 文档
 linktitle: 将 Word 文档页眉页脚书签导出为 PDF 文档
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 将 Word 文档页眉页脚书签导出为 PDF 文档书签的分步指南。
+description: 通过我们的分步指南了解如何使用 Aspose.Words for .NET 将 Word 文档的页眉和页脚书签导出为 PDF。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## 介绍
 
-本文提供了有关如何使用 Aspose.Words for .NET 将 Word 文档页眉页脚书签导出为 PDF 文档功能的分步指南。我们将详细解释代码的每个部分。在本教程结束时，您将能够了解如何从文档的页眉和页脚导出书签并生成带有适当书签的 PDF。
+将 Word 文档转换为 PDF 是一项常见任务，尤其是当您想要共享或存档文档同时保留其格式时。有时，这些文档的页眉和页脚中包含重要的书签。在本教程中，我们将介绍使用 Aspose.Words for .NET 将这些书签从 Word 文档导出到 PDF 的过程。
 
-开始之前，请确保您已在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到该库和安装说明。
+## 先决条件
 
-## 步骤1：定义文档目录
+在深入研究之前，请确保您已准备好以下内容：
 
-首先，您需要定义文档所在目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档目录的实际路径。
+- Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。您可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
+- 开发环境：设置您的开发环境。您可以使用 Visual Studio 或任何其他兼容 .NET 的 IDE。
+- C# 基础知识：需要熟悉 C# 编程才能理解代码示例。
+
+## 导入命名空间
+
+首先，您需要在 C# 项目中导入必要的命名空间。在代码文件顶部添加以下几行：
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 第 2 步：上传文件
+让我们将这个过程分解为易于遵循的步骤。
 
-接下来，我们需要加载要处理的文档。在此示例中，我们假设文档名为“Bookmarks in headers and footers.docx”，位于指定的文档目录中。
+## 步骤 1：初始化文档
+
+第一步是加载 Word 文档。操作方法如下：
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## 步骤 3：配置另存为 PDF 选项
+在此步骤中，您只需指定文档目录的路径并加载 Word 文档。
 
-要导出页眉和页脚书签，我们需要配置`PdfSaveOptions`对象。在此示例中，我们将默认书签大纲级别设置为 1，将页眉和页脚书签导出模式设置为“First”。
+## 步骤 2：配置 PDF 保存选项
+
+接下来，您需要配置 PDF 保存选项以确保页眉和页脚中的书签正确导出。
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## 步骤 4：将文档保存为带有页眉和页脚书签的 PDF
+在这里，我们正在设置`PdfSaveOptions`。 这`DefaultBookmarksOutlineLevel`属性设置书签的大纲级别，以及`HeaderFooterBookmarksExportMode`属性确保仅导出页眉和页脚中第一次出现的书签。
 
-最后，我们可以使用之前配置的保存选项将文档保存为 PDF 格式。
+## 步骤 3：将文档保存为 PDF
+
+最后，使用配置的选项将您的文档保存为 PDF。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-就这样！您已成功从文档中导出页眉和页脚书签，并使用 Aspose.Words for .NET 生成了带有相应书签的 PDF。
-
-### 使用 Aspose.Words for .NET 导出页眉和页脚书签的示例源代码
-
-```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+在此步骤中，您将使用已配置的选项将文档保存到指定路径。
 
 ## 结论
 
-在本教程中，我们解释了如何使用 Aspose.Words for .NET 将 Word 文档中的页眉和页脚书签导出到 PDF 文档。导出的书签可让您轻松导航并快速引用生成的 PDF 文档中的相应页眉和页脚。按照所述步骤从文档中导出页眉和页脚书签，并使用 Aspose.Words for .NET 生成带有适当书签的 PDF。请确保指定文档的正确路径并根据需要配置保存选项。
+就这样！按照这些步骤，您可以使用 Aspose.Words for .NET 轻松地将 Word 文档页眉和页脚中的书签导出到 PDF。此方法可确保文档中的重要导航辅助信息以 PDF 格式保存，使读者更容易浏览您的文档。
 
-### 经常问的问题
+## 常见问题解答
 
-### 问：什么是将页眉和页脚书签从 Word 文档导出到 PDF 文档？
-答：将页眉和页脚书签从 Word 文档导出到 PDF 文档是一项功能，用于从原始 Word 文档的页眉和页脚中保留并生成 PDF 文档中的书签。这允许用户使用与页眉和页脚相对应的书签快速轻松地浏览 PDF 文档。
+### 我可以将 Word 文档中的所有书签导出为 PDF 吗？
 
-### 问：如何使用 Aspose.Words for .NET 将页眉和页脚书签从 Word 文档导出到 PDF 文档？
-答：要使用 Aspose.Words for .NET 将页眉和页脚书签从 Word 文档导出到 PDF 文档，请按照以下步骤操作：
+是的，你可以。在`PdfSaveOptions`，您可以根据需要调整设置以包含所有书签。
 
-通过替换来设置文档所在的目录路径`"YOUR DOCUMENT DIRECTORY"`与您的文档目录的实际路径。
+### 如果我也想从文档正文导出书签该怎么办？
 
-使用`Document`类并指定指定文档目录中的 Word 文档的路径。
+您可以配置`OutlineOptions`在`PdfSaveOptions`包含文档正文中的书签。
 
-通过创建实例来配置另存为 PDF 选项`PdfSaveOptions`类并设置适当的页眉和页脚书签选项。
+### 是否可以自定义 PDF 中的书签级别？
 
-使用`Save`方法`Document`指定路径和保存选项的类。
+当然！您可以自定义`DefaultBookmarksOutlineLevel`属性为您的书签设置不同的大纲级别。
 
-### 问：将页眉和页脚书签导出至 PDF 文档有什么好处？
-答：将页眉和页脚书签导出到 PDF 文档的优点是：
+### 如何处理没有书签的文档？
 
-轻松导航：书签允许用户通过参考特定的页眉和页脚轻松浏览 PDF 文档。
+如果您的文档没有书签，则生成的 PDF 没有任何书签轮廓。如果您需要 PDF 中的书签，请确保您的文档包含书签。
 
-快速参考：书签允许用户根据页眉和页脚快速找到 PDF 文档的相关部分。
+### 我可以将此方法用于其他文档类型（例如 DOCX 或 RTF）吗？
+
+是的，Aspose.Words for .NET 支持各种文档类型，包括 DOCX、RTF 等。

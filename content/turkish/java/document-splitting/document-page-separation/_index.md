@@ -86,7 +86,7 @@ Aspose.Words for Java ticari bir kütüphanedir ancak ücretsiz deneme sürümü
 
 ### Ayrılmış sayfaları tekrar tek bir belgede birleştirebilir miyim?
 
-Evet, Aspose.Words for Java'yı kullanarak ayrılan sayfaları tekrar tek bir belgede birleştirebilirsiniz. Birleştirme talimatları için belgelere bakın.
+Evet, Aspose.Words for Java'yı kullanarak ayrılmış sayfaları tekrar tek bir belgede birleştirebilirsiniz. Birleştirme talimatları için belgelere bakın.
 
 ### Aspose.Words için daha fazla kaynağı ve örneği nerede bulabilirim?
 

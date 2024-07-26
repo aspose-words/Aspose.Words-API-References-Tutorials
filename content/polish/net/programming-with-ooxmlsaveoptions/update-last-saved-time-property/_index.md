@@ -2,66 +2,94 @@
 title: Zaktualizuj właściwość ostatniego zapisanego czasu
 linktitle: Zaktualizuj właściwość ostatniego zapisanego czasu
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak automatycznie aktualizować właściwość Ostatni zapisany czas podczas zapisywania dokumentu za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak zaktualizować właściwość ostatniego zapisanego czasu w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-W tym samouczku przyjrzymy się dostarczonemu kodowi źródłowemu C#, aby zaktualizować właściwość czasu ostatniego zapisu podczas zapisywania dokumentu przy użyciu Aspose.Words dla .NET. Ta funkcja umożliwia automatyczną aktualizację właściwości czasu ostatniego zapisu wygenerowanego dokumentu.
+## Wstęp
 
-## Krok 1: Konfigurowanie środowiska
+Czy zastanawiałeś się kiedyś, jak programowo śledzić ostatnią zaoszczędzoną właściwość czasu w dokumentach programu Word? Jeśli masz do czynienia z wieloma dokumentami i musisz zachować ich metadane, aktualizacja właściwości ostatniego zapisanego czasu może być bardzo przydatna. Dzisiaj przeprowadzę Cię przez ten proces, używając Aspose.Words dla .NET. Zatem zapnij pasy i zanurzmy się!
 
-Zanim zaczniesz, upewnij się, że skonfigurowałeś środowisko programistyczne za pomocą Aspose.Words dla .NET. Upewnij się, że dodałeś niezbędne odniesienia i zaimportowałeś odpowiednie przestrzenie nazw.
+## Warunki wstępne
 
-## Krok 2: Załaduj dokument
+Zanim przejdziemy do przewodnika krok po kroku, będziesz potrzebować kilku rzeczy:
+
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: środowisko programistyczne, takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Pomocne będzie zrozumienie podstaw programowania w języku C#.
+
+## Importuj przestrzenie nazw
+
+Na początek pamiętaj o zaimportowaniu niezbędnych przestrzeni nazw do swojego projektu. Umożliwi to dostęp do klas i metod wymaganych do manipulowania dokumentami Word.
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
+Teraz podzielmy proces na proste kroki. Każdy krok poprowadzi Cię przez proces aktualizacji właściwości ostatniego zapisanego czasu w dokumencie programu Word.
+
+## Krok 1: Skonfiguruj katalog dokumentów
+
+Najpierw musisz określić ścieżkę do katalogu dokumentów. W tym miejscu przechowywany jest istniejący dokument i miejsce, w którym zostanie zapisany zaktualizowany dokument.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu.
+
+## Krok 2: Załaduj dokument Word
+
+ Następnie załaduj dokument programu Word, który chcesz zaktualizować. Można to zrobić, tworząc instancję klasy`Document` class i podanie ścieżki dokumentu.
+
+```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- W tym kroku ładujemy dokument za pomocą`Document` metodę i przekazanie ścieżki do pliku DOCX do załadowania.
+ Upewnij się, że dokument o nazwie`Document.docx` znajduje się w określonym katalogu.
 
-## Krok 3: Konfiguracja opcji tworzenia kopii zapasowych OOXML
+## Krok 3: Skonfiguruj opcje zapisywania
+
+ Teraz utwórz instancję`OoxmlSaveOptions` klasa. Ta klasa umożliwia określenie opcji zapisywania dokumentu w formacie Office Open XML (OOXML). Tutaj ustawisz`UpdateLastSavedTimeProperty` Do`true`.
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
+{
+    UpdateLastSavedTimeProperty = true
+};
 ```
 
- W tym kroku konfigurujemy opcje zapisywania OOXML za pomocą pliku`OoxmlSaveOptions` klasa. Umożliwiamy automatyczną aktualizację właściwości ostatniego zapisu czasu poprzez ustawienie`UpdateLastSavedTimeProperty` Do`true`.
+To mówi Aspose.Words, aby zaktualizował właściwość dokumentu dotyczącą ostatniego zapisanego czasu.
 
-## Krok 4: Zapisz dokument ze zaktualizowaną właściwością
+## Krok 4: Zapisz zaktualizowany dokument
+
+ Na koniec zapisz dokument za pomocą pliku`Save` metoda`Document` class, podając ścieżkę, w której chcesz zapisać zaktualizowany dokument i opcje zapisywania.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
 ```
 
- W ostatnim kroku zapisujemy dokument za pomocą pliku`Save` metodę i przekazanie ścieżki do pliku wyjściowego za pomocą`.docx` rozszerzenie wraz z określonymi opcjami zapisywania.
-
-Teraz możesz uruchomić kod źródłowy, aby automatycznie zaktualizować właściwość czasu ostatniego zapisu podczas zapisywania dokumentu. Wynikowy plik zostanie zapisany w określonym katalogu pod nazwą „WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx”.
-
-### Przykładowy kod źródłowy dla właściwości Aktualizuj ostatni zapisany czas przy użyciu Aspose.Words dla .NET 
-
-```csharp
-
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-Document doc = new Document(dataDir + "Document.docx");
-
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
-
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
-            
-        
-```
+Spowoduje to zapisanie dokumentu ze zaktualizowaną właściwością ostatniego zapisanego czasu.
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy funkcję automatycznego aktualizowania właściwości czasu ostatniego zapisu podczas zapisywania dokumentu przy użyciu Aspose.Words dla .NET. Włączając tę funkcję z opcjami zapisywania OOXML, możesz mieć pewność, że właściwość czasu ostatniego zapisu zostanie automatycznie zaktualizowana w wygenerowanym dokumencie.
+I masz to! Wykonując poniższe kroki, możesz łatwo zaktualizować właściwość ostatniego zapisanego czasu w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Jest to szczególnie przydatne do utrzymywania dokładnych metadanych w dokumentach, co może mieć kluczowe znaczenie dla systemów zarządzania dokumentami i różnych innych aplikacji.
 
-Aktualizacja właściwości czasu ostatniego zapisu może być przydatna do śledzenia zmian i wersji dokumentu. Śledzi także, kiedy dokument został ostatnio zapisany, co może być przydatne w różnych scenariuszach.
+## Często zadawane pytania
 
-Aspose.Words dla .NET ułatwia automatyczną aktualizację właściwości Czas ostatniej kopii zapasowej, zapewniając elastyczne i wydajne opcje tworzenia kopii zapasowych. Możesz zintegrować tę funkcję ze swoimi projektami, aby mieć pewność, że wygenerowane dokumenty zawierają dokładne informacje o kopii zapasowej.
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka do tworzenia, edytowania i konwertowania dokumentów Word w aplikacjach .NET.
+
+### Dlaczego powinienem zaktualizować właściwość ostatniego zapisanego czasu?
+Aktualizacja właściwości ostatniego zaoszczędzonego czasu pomaga zachować dokładne metadane, które są niezbędne do śledzenia dokumentów i zarządzania nimi.
+
+### Czy mogę zaktualizować inne właściwości za pomocą Aspose.Words dla .NET?
+Tak, Aspose.Words dla .NET umożliwia aktualizację różnych właściwości dokumentu, takich jak tytuł, autor i temat.
+
+### Czy Aspose.Words dla .NET jest darmowy?
+ Aspose.Words dla .NET oferuje bezpłatną wersję próbną, ale do pełnej funkcjonalności wymagana jest licencja. Można uzyskać licencję[Tutaj](https://purchase.aspose.com/buy).
+
+### Gdzie mogę znaleźć więcej samouczków na temat Aspose.Words dla .NET?
+Możesz znaleźć więcej samouczków i dokumentacji[Tutaj](https://reference.aspose.com/words/net/).

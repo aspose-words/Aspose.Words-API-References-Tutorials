@@ -14,8 +14,8 @@ Handledningarna täcker också de grundläggande begreppen bildmanipulering, ink
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Exponera tröskelkontroll för Tiff-binarisering](./expose-threshold-control-for-tiff-binarization/) | Lär dig hur du kontrollerar TIFF-binariseringströskeln med Aspose.Words för .NET. Komplett handledning för bättre bilder. |
-| [Få Tiff Page Range](./get-tiff-page-range/) | Lär dig hur du extraherar en rad TIFF-sidor med Aspose.Words för .NET. Komplett handledning för anpassade TIFF-filer. |
-| [Format 1Bpp Indexerad](./format-1bpp-indexed/) | Lär dig hur du formaterar bilder i 1 bpp indexerade med Aspose.Words för .NET. Komplett handledning för bilder med lågt färgdjup. |
-| [Hämta Jpeg-sidintervall](./get-jpeg-page-range/) | Lär dig hur du får en rad JPEG-sidor med Aspose.Words för .NET. Komplett handledning för att extrahera anpassade bilder. |
-| [Sidspara återuppringning](./page-saving-callback/) | Lär dig hur du anpassar spara dokumentsidor till bilder med Aspose.Words för .NET. |
+| [Exponera tröskelkontroll för Tiff-binarisering](./expose-threshold-control-for-tiff-binarization/) | Lär dig hur du exponerar tröskelkontroll för TIFF-binarisering i Word-dokument med Aspose.Words för .NET med den här omfattande steg-för-steg-guiden. |
+| [Få Tiff Page Range](./get-tiff-page-range/) | Lär dig hur du konverterar specifika sidintervall från Word-dokument till TIFF-filer med Aspose.Words för .NET med denna steg-för-steg-guide. |
+| [Format 1Bpp Indexerad](./format-1bpp-indexed/) | Lär dig hur du konverterar ett Word-dokument till en indexerad bild på 1 Bpp med Aspose.Words för .NET. Följ vår steg-för-steg-guide för enkel konvertering. |
+| [Hämta Jpeg-sidintervall](./get-jpeg-page-range/) | Konvertera specifika sidor av Word-dokument till JPEG med anpassade inställningar med Aspose.Words för .NET. Lär dig hur du justerar ljusstyrka, kontrast och upplösning steg för steg. |
+| [Sidspara återuppringning](./page-saving-callback/) | Lär dig att spara varje sida i ett Word-dokument som en separat PNG-bild med Aspose.Words för .NET med vår detaljerade steg-för-steg-guide. |

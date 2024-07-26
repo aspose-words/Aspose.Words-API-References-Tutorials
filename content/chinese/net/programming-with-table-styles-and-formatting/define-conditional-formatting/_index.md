@@ -92,4 +92,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 ```
 
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 设置条件格式。按照本分步指南，您可以轻松地将条件格式应用于 Word 文档中的表格。Aspose.Words 提供了强大而灵活的 API 来操作和格式化文档中的表格。有了这些知识，您可以改善 Word 文档的视觉呈现并满足特定需求。
+在本教程中，我们学习了如何使用 Aspose.Words for .NET 设置条件格式。按照本分步指南，您可以轻松地将条件格式应用于 Word 文档中的表格。Aspose.Words 提供了强大而灵活的 API，用于操作和格式化文档中的表格。有了这些知识，您可以改善 Word 文档的视觉呈现并满足特定需求。

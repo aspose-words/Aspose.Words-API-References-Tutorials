@@ -82,7 +82,7 @@ doc.save("modified-document.docx");
 
 Detta är användbart när du vill utesluta att text i fält, till exempel sammanslagningsfält, ersätts.
 
-## Ignorera text inuti Ta bort versioner
+## Ignorera text inuti Ta bort revisioner
 
 Du kan konfigurera Aspose.Words att ignorera text i raderingsversioner under sök- och ersättningsoperationer.
 
@@ -169,7 +169,7 @@ doc.save("modified-document.docx");
 
 Detta gör att du kan utföra textersättningar specifikt i sidhuvuden och sidfötter.
 
-## Visar ändringar för sidhuvuds- och sidfotsbeställningar
+## Visar ändringar för sidhuvuds- och sidfotsordningar
 
 Du kan använda Aspose.Words för att visa ändringar för sidhuvuden och sidfötter i ditt dokument.
 

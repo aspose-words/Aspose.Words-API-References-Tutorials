@@ -2,93 +2,112 @@
 title: Preferovaný typ ovládacího prvku v dokumentu aplikace Word
 linktitle: Preferovaný typ ovládacího prvku v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce určením preferovaného typu ovládacího prvku v dokumentu aplikace Word při načítání dokumentu HTML pomocí Aspose.Words for .NET.
+description: Naučte se, jak vložit pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupujte podle tohoto podrobného průvodce pro bezproblémovou integraci obsahu HTML.
 type: docs
 weight: 10
 url: /cs/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-Tento článek poskytuje podrobného průvodce, jak používat preferovaný typ ovládacího prvku s Aspose.Words pro .NET. Každou část kódu si podrobně vysvětlíme. Na konci tohoto tutoriálu budete schopni porozumět tomu, jak určit preferovaný typ ovládacího prvku při načítání dokumentu HTML.
+## Úvod
 
-Než začnete, ujistěte se, že jste ve svém projektu nainstalovali a nakonfigurovali knihovnu Aspose.Words for .NET. Knihovnu a pokyny k instalaci najdete na webu Aspose.
+ponoříme se do vzrušujícího návodu, jak pracovat s možnostmi načítání HTML v Aspose.Words pro .NET, konkrétně se zaměřujeme na nastavení preferovaného typu ovládacího prvku při vkládání pole formuláře se seznamem do dokumentu aplikace Word. Tento podrobný průvodce vám pomůže pochopit, jak efektivně manipulovat a vykreslovat obsah HTML v dokumentech aplikace Word pomocí Aspose.Words for .NET.
 
-## Krok 1: Definujte HTML kód
+## Předpoklady
 
- Chcete-li začít, musíte definovat kód HTML, který chcete načíst jako dokument. V tomto příkladu jsme definovali an`html` proměnná obsahující HTML kód selektoru s volbami.
+Než se pustíme do kódu, je třeba mít připraveno několik věcí:
+
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[webová stránka](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Měli byste mít nastavené vývojové prostředí, jako je Visual Studio.
+3. Základní znalost C#: Spolu s výukovým programem je nutné dodržet základní znalost programování v C#.
+4. Obsah HTML: Základní znalost HTML je užitečná, protože v tomto příkladu budeme pracovat s obsahem HTML.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory, abychom mohli začít:
 
 ```csharp
-const string html=@"
-<html>
-<select name='ComboBox' size='1'>
-<option value='val1'>item1</option>
-<option value='val2'></option>
-</select>
-</html>
+using System;
+using System.IO;
+using System.Text;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+Nyní rozdělme příklad do několika kroků, abychom zajistili jasnost a porozumění.
+
+## Krok 1: Nastavte obsah HTML
+
+Nejprve musíme definovat obsah HTML, který chceme vložit do dokumentu aplikace Word. Zde je úryvek HTML, který budeme používat:
+
+```csharp
+const string html = @"
+    <html>
+        <select name='ComboBox' size='1'>
+            <option value='val1'>item1</option>
+            <option value='val2'></option>                        
+        </select>
+    </html>
 ";
 ```
 
-## Krok 2: Nastavte možnosti načítání HTML
+Toto HTML obsahuje jednoduché pole se dvěma možnostmi. Tento HTML načteme do dokumentu aplikace Word a určíme, jak se má vykreslit.
 
- Dále vytvoříme`HtmlLoadOptions` objekt a nastavte`PreferredControlType`majetek do`HtmlControlType.StructuredDocumentTag`. To říká Aspose.Words, aby použil StructuredDocumentTags k reprezentaci HTML při načítání.
+## Krok 2: Definujte adresář dokumentů
+
+Dále určete adresář, kam se uloží váš dokument aplikace Word. To pomáhá při organizování souborů a udržování čistoty ve správě cest.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kam chcete uložit dokument aplikace Word.
+
+## Krok 3: Nakonfigurujte možnosti načítání HTML
+
+ Zde nakonfigurujeme možnosti načítání HTML, zejména se zaměřením na`PreferredControlType`vlastnictví. To určuje, jak má být pole se seznamem vykresleno v dokumentu aplikace Word.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## Krok 3: Načtěte a uložte dokument
+ Nastavením`PreferredControlType` na`HtmlControlType.StructuredDocumentTag`, zajistíme, aby se pole se seznamem vykreslilo jako značka strukturovaného dokumentu (SDT) v dokumentu aplikace Word.
 
- Používáme`Document` třídy k načtení kódu HTML z paměťového toku s dříve definovanými možnostmi načítání. Poté dokument uložíme do určeného adresáře s`.docx`formát souboru.
+## Krok 4: Načtěte obsah HTML do dokumentu
+
+Pomocí nakonfigurovaných možností načtení načteme obsah HTML do nového dokumentu aplikace Word.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
+```
+
+Zde převedeme řetězec HTML na bajtové pole a načteme jej do dokumentu pomocí paměťového proudu. To zajišťuje, že obsah HTML je správně interpretován a vykreslen Aspose.Words.
+
+## Krok 5: Uložte dokument
+
+Nakonec dokument uložte do určeného adresáře ve formátu DOCX.
+
+```csharp
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### Příklad zdrojového kódu pro preferovaný typ ovládání s Aspose.Words pro .NET
-
-```csharp
-	
-	const string html = @"
-		<html>
-			<select name='ComboBox' size='1'>
-				<option value='val1'>item1</option>
-				<option value='val2'></option>                        
-			</select>
-		</html>
-	";
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
-
-	Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
-
-	doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
-
-```
-
-To je vše ! Úspěšně jste zadali preferovaný typ ovládacího prvku při načítání dokumentu HTML pomocí Aspose.Words for .NET.
+Tím uložíte dokument aplikace Word s vykresleným ovládacím prvkem pole se seznamem do zadaného umístění.
 
 ## Závěr
 
- Podle tohoto podrobného průvodce jste se naučili používat funkci "Preferovaný typ ovládacího prvku" v Aspose.Words pro .NET k určení požadovaného typu ovládacího prvku při načítání dokumentu HTML. Nastavení`PreferredControlType`majetek do`HtmlControlType.StructuredDocumentTag` umožňuje Aspose.Words používat StructuredDocumentTags (SDT) pro lepší reprezentaci a zpracování obsahu HTML. Můžete také prozkoumat další typy ovládání, aby vyhovovaly vašim specifickým požadavkům. Použití této funkce pomáhá zajistit přesné a efektivní zpracování dokumentů HTML ve vaší aplikaci C# pomocí Aspose.Words.
+tady to máte! Úspěšně jsme vložili pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET využitím možností načítání HTML. Tento podrobný průvodce by vám měl pomoci pochopit proces a aplikovat jej na vaše projekty. Ať už automatizujete vytváření dokumentů nebo manipulujete s obsahem HTML, Aspose.Words for .NET poskytuje výkonné nástroje k dosažení vašich cílů.
 
-### Časté dotazy pro preferovaný typ ovládacího prvku v dokumentu aplikace Word
+## FAQ
 
-#### Otázka: Co je funkce "Preferovaný typ ovládání" v Aspose.Words pro .NET?
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro manipulaci s dokumenty, která umožňuje vývojářům vytvářet, upravovat, převádět a vykreslovat dokumenty aplikace Word programově.
 
-Odpověď: Funkce "Preferovaný typ ovládacího prvku" vám umožňuje určit preferovaný typ ovládacího prvku pro reprezentaci prvků HTML při načítání dokumentu HTML. Pomáhá při výběru vhodného typu ovládacího prvku pro lepší reprezentaci a zpracování obsahu HTML.
+### Mohu s Aspose.Words pro .NET používat jiné typy ovládacích prvků HTML?
+Ano, Aspose.Words for .NET podporuje různé typy ovládacích prvků HTML. Způsob vykreslování různých ovládacích prvků v dokumentu aplikace Word můžete přizpůsobit.
 
-#### Otázka: Jak nastavím preferovaný typ ovládacího prvku při načítání dokumentu HTML?
+### Jak zvládnu složitý obsah HTML v Aspose.Words for .NET?
+ Aspose.Words for .NET poskytuje komplexní podporu pro HTML, včetně složitých prvků. Ujistěte se, že jste nakonfigurovali`HtmlLoadOptions`vhodně zpracovat váš konkrétní obsah HTML.
 
- A: Chcete-li nastavit preferovaný typ ovládání, musíte vytvořit`HtmlLoadOptions` objekt a nastavte jej`PreferredControlType` vlastnost k požadovanému`HtmlControlType` . V uvedeném příkladu`HtmlControlType.StructuredDocumentTag` se používá.
+### Kde najdu další příklady a dokumentaci?
+ Podrobnou dokumentaci a příklady naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).
 
-#### Otázka: Jaký význam má použití strukturovaných značek dokumentů (SDT) jako preferovaného typu ovládacího prvku?
-
-Odpověď: StructuredDocumentTags (SDT) jsou prvky založené na XML, které lze použít k reprezentaci komplexního obsahu a ovládacích prvků v dokumentu aplikace Word. Použití SDT jako preferovaného typu ovládacího prvku může zajistit lepší kompatibilitu a reprezentaci obsahu HTML.
-
-#### Otázka: Jak mohu zajistit, aby Aspose.Words používal preferovaný typ ovládacího prvku při načítání dokumentu HTML?
-
- A: Nastavením`PreferredControlType`majetek do`HtmlControlType.StructuredDocumentTag`jak je znázorněno v příkladu zdrojového kódu, Aspose.Words použije SDT k reprezentaci prvků HTML při načítání dokumentu.
-
-#### Otázka: Mohu jako preferovanou možnost použít jiné typy ovládacích prvků?
-
- A: Ano, kromě`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET podporuje další typy ovládání, jako např`HtmlControlType.ContentControl`a`HtmlControlType.CustomXmlMarkup`.
+### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
+ Ano, můžete si stáhnout bezplatnou zkušební verzi z[Aspose webové stránky](https://releases.aspose.com/).

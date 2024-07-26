@@ -2,7 +2,7 @@
 title: Dokumentumok konvertálása képekké
 linktitle: Dokumentumok konvertálása képekké
 second_title: Aspose.Words Java Document Processing API
-description: Ismerje meg, hogyan konvertálhat dokumentumokat képekké az Aspose.Words for Java használatával. Lépésről lépésre útmutató Java fejlesztőknek.
+description: Ismerje meg, hogyan konvertálhat dokumentumokat képekké az Aspose.Words for Java használatával. Lépésről lépésre szóló útmutató Java fejlesztőknek.
 type: docs
 weight: 14
 url: /hu/java/document-converting/converting-documents-images/

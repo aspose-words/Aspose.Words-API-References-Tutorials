@@ -70,6 +70,6 @@ A: U kunt syllabisatiewoordenboekbestanden voor verschillende talen vinden op ve
 
 A: Om het geladen syllabiseringswoordenboek toe te passen op een document in Aspose.Words, moet u de woorden in het document herhalen en de`Hyphenate()` werkwijze van de`Hyphenation` klas om de syllabisatie van de woorden te krijgen. Vervolgens kunt u de syllabische woorden naar wens opmaken, bijvoorbeeld door koppeltekens tussen lettergrepen toe te voegen.
 
-#### Vraag: Welke talen worden ondersteund voor syllabisatie in Aspose.Words?
+#### Vraag: Welke talen worden ondersteund voor syllabisering in Aspose.Words?
 
-A: Aspose.Words ondersteunt syllabisatie voor meerdere talen, waaronder Engels, Frans, Spaans, Duits, Italiaans, Nederlands, Russisch, Portugees, Zweeds, Noors, Deens, Fins, Pools, Tsjechisch en nog veel meer. Raadpleeg de Aspose.Words-documentatie voor de volledige lijst met ondersteunde talen voor syllabisatie.
+A: Aspose.Words ondersteunt syllabisatie voor meerdere talen, waaronder Engels, Frans, Spaans, Duits, Italiaans, Nederlands, Russisch, Portugees, Zweeds, Noors, Deens, Fins, Pools, Tsjechisch en nog veel meer. Raadpleeg de Aspose.Words-documentatie voor de volledige lijst met ondersteunde talen voor syllabisering.

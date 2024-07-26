@@ -16,5 +16,5 @@ Bu eğitimlerle, PDF dosyalarını uygulamalarınıza yükleme sürecini optimiz
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Şifreli PDF Yükle](./load-encrypted-pdf/) | Aspose.Words for .NET kullanarak şifrelenmiş bir PDF yüklemek için adım adım kılavuz. |
-| [Pdf Sayfa Aralığını Yükle](./load-page-range-of-pdf/) | Aspose.Words for .NET ile belirli bir PDF sayfa aralığını yüklemek için adım adım kılavuz. |
+| [Şifreli PDF Yükle](./load-encrypted-pdf/) | Adım adım eğitimimizle Aspose.Words for .NET kullanarak şifrelenmiş PDF'leri nasıl yükleyeceğinizi öğrenin. Kısa sürede PDF şifreleme ve şifre çözme konusunda uzmanlaşın. |
+| [Pdf Sayfa Aralığını Yükle](./load-page-range-of-pdf/) | Bu kapsamlı, adım adım eğitimde Aspose.Words for .NET kullanarak bir PDF'den belirli sayfa aralıklarını nasıl yükleyeceğinizi öğrenin. .NET geliştiricileri için mükemmel. |

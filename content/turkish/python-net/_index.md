@@ -32,7 +32,7 @@ Aspose.Words for Python'un Belge İstihbaratı ile belgelerinizdeki değerli iç
 Aspose.Words for Python ile belgeleri formatlar arasında verimli bir şekilde dönüştürün. Kelime belgesi işlemeyi kolaylaştırın ve belge yönetimi görevlerinizi basitleştirin. 
 ### [Belge Koruması](./document-protection/)
 Belgelerinizi Aspose.Words for Python ile koruyun! Güçlü belge koruması için parola şifrelemeyi, kullanıcı izinlerini ve dijital imzaları uygulayın.
-### [Belge Yapısı ve İçerik Düzenlemesi](./document-structure-and-content-manipulation/)
+### [Doküman Yapısı ve İçerik Düzenlemesi](./document-structure-and-content-manipulation/)
 Belge yapısı ve içerik manipülasyonuna odaklanan Python ve .NET için Aspose.Words eğitimlerini keşfedin. Belge öğelerinde verimli bir şekilde nasıl gezineceğinizi, ayıklayacağınızı ve değiştireceğinizi öğrenin. Sağlanan kaynak kodu örnekleri.
 ### [İçerik Çıkarma ve Manipülasyon](./content-extraction-and-manipulation/)
 Aspose.Words eğitimleriyle içerik çıkarma ve değiştirme dünyasını keşfedin. Python ve .NET kullanarak içeriği verimli bir şekilde nasıl çıkaracağınızı ve değiştireceğinizi öğrenin, böylece belge işleme yeteneklerinizi geliştirin.

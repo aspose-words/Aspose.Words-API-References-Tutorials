@@ -114,7 +114,7 @@ Vkládání hypertextových odkazů do dokumentu aplikace Word pomocí Aspose.Wo
 
 ### Mohu k obrázku přidat hypertextový odkaz?
 
- Ano, můžete použít`InsertHyperlink` metoda v kombinaci s`InsertImage` přidat hypertextové odkazy na obrázky.
+ Ano, můžete použít`InsertHyperlink` metoda v kombinaci s`InsertImage` pro přidání hypertextových odkazů k obrázkům.
 
 ### Co se stane, když je adresa URL neplatná?
 

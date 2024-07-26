@@ -73,7 +73,7 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Sisipkan kolom formulir masukan teks
+// Sisipkan kolom formulir input teks
 builder.insertTextInput("TextInput", TextFormFieldType.REGULAR, "", "Default text", 0);
 
 // Simpan dokumennya
@@ -93,7 +93,7 @@ builder.insertCheckBox("CheckBox", true, true, 0);
 doc.save("path/to/your/document.docx");
 ```
 
-### Bidang Formulir Kotak Kombo
+### Bidang Bentuk Kotak Kombo
 
 ```java
 Document doc = new Document();

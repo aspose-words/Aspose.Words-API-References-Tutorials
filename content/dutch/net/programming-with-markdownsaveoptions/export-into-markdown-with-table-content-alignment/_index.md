@@ -2,101 +2,116 @@
 title: Exporteren naar prijsverlaging met uitlijning van tabelinhoud
 linktitle: Exporteren naar prijsverlaging met uitlijning van tabelinhoud
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u tabelinhoud met verschillende uitlijningen naar Markdown-bestanden kunt exporteren met behulp van Aspose.Words voor .NET.
+description: Leer hoe u Word-documenten kunt exporteren naar Markdown met uitgelijnde tabellen met behulp van Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor perfecte Markdown-tabellen.
 type: docs
 weight: 10
 url: /nl/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-Hier is een stapsgewijze handleiding om de volgende C#-broncode uit te leggen die helpt bij het exporteren van inhoud naar een Markdown-bestand met uitlijning van tabelinhoud met behulp van de Aspose.Words-bibliotheek voor .NET. Zorg ervoor dat u de Aspose.Words-bibliotheek in uw project hebt opgenomen voordat u deze code gebruikt.
+## Invoering
 
-## Stap 1: Stel het documentmappad in
+Hallo daar! Heeft u zich ooit afgevraagd hoe u uw Word-document kunt exporteren naar Markdown-indeling met perfect uitgelijnde tabellen? Of u nu een ontwikkelaar bent die aan documentatie werkt of gewoon iemand bent die van Markdown houdt, deze handleiding is voor u. We duiken in de kern van het gebruik van Aspose.Words voor .NET om dit te bereiken. Klaar om uw Word-tabellen om te zetten in netjes uitgelijnde Markdown-tabellen? Laten we beginnen!
+
+## Vereisten
+
+Voordat we in de code duiken, zijn er een paar dingen die je moet regelen:
+
+1.  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Je kunt het downloaden van de[Aspose-releasepagina](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Stel uw ontwikkelomgeving in. Visual Studio is een populaire keuze voor .NET-ontwikkeling.
+3. Basiskennis van C#: Het begrijpen van C# is essentieel omdat we code in deze taal gaan schrijven.
+4. Voorbeeld van een Word-document: zorg dat u een Word-document heeft dat u kunt gebruiken om te testen.
+
+## Naamruimten importeren
+
+Voordat we beginnen met coderen, importeren we de benodigde naamruimten. Deze geven ons toegang tot de Aspose.Words-klassen en -methoden die we zullen gebruiken.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Stap 1: Initialiseer Document en DocumentBuilder
+
+Allereerst moeten we een nieuw Word-document maken en een`DocumentBuilder` bezwaar maken om te beginnen met het bouwen van ons document.
 
 ```csharp
 // Het pad naar de documentenmap.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-```
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-Zorg ervoor dat u het juiste pad opgeeft naar uw documentenmap waar het bewerkte document zal worden opgeslagen.
-
-## Stap 2: Maak een document en een documentgenerator
-
-```csharp
+// Maak een nieuw document.
 Document doc = new Document();
+
+// Initialiseer DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hier maken we een exemplaar van de`Document` klasse en een exemplaar van de`DocumentBuilder` class waarmee we het document kunnen manipuleren en elementen kunnen toevoegen.
+## Stap 2: cellen invoegen en inhoud uitlijnen
 
-## Stap 3: Voeg cellen in de tabel in met verschillende alinea-uitlijningen
+Vervolgens voegen we enkele cellen in ons document in en stellen we hun uitlijning in. Dit is van cruciaal belang om ervoor te zorgen dat de Markdown-export de juiste uitlijning behoudt.
 
 ```csharp
-builder. InsertCell();
+// Voeg een cel in en stel de uitlijning naar rechts in.
+builder.InsertCell();
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 builder.Write("Cell1");
-builder. InsertCell();
+
+// Voeg nog een cel in en stel de uitlijning in op het midden.
+builder.InsertCell();
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.Write("Cell2");
 ```
 
-We gebruiken de Document Builder om cellen in de tabel in te voegen en voor elke cel verschillende alinea-uitlijningen in te stellen.
+## Stap 3: Stel de uitlijning van de tabelinhoud in voor het exporteren van prijsverlagingen
 
-## Stap 4: Stel Markdown-exportopties in en sla het gewijzigde document op
+ Nu is het tijd om de`MarkdownSaveOptions` om de uitlijning van de tabelinhoud in het geëxporteerde Markdown-bestand te beheren. We slaan het document op met verschillende uitlijningsinstellingen om te zien hoe het werkt.
 
 ```csharp
+// Maak een MarkdownSaveOptions-object.
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 {
-     TableContentAlignment = TableContentAlignment.Left
+    TableContentAlignment = TableContentAlignment.Left
 };
-doc.Save(dataDir + "Content_table_left_alignment.md", saveOptions);
 
+// Sla het document links uitgelijnd op.
+doc.Save(dataDir + "LeftTableContentAlignment.md", saveOptions);
+
+// Wijzig de uitlijning naar rechts en sla op.
 saveOptions.TableContentAlignment = TableContentAlignment.Right;
-doc.Save(dataDir + "Content_table_right_alignment.md", saveOptions);
+doc.Save(dataDir + "RightTableContentAlignment.md", saveOptions);
 
+// Wijzig de uitlijning naar het midden en sla op.
 saveOptions.TableContentAlignment = TableContentAlignment.Center;
-doc.Save(dataDir + "Content_table_alignment_center.md", saveOptions);
-
-saveOptions.TableContentAlignment = TableContentAlignment.Auto;
-doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
+doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 ```
 
-We stellen de Markdown-exportopties in met verschillende uitlijningen van de tabelinhoud en slaan vervolgens het gewijzigde document op met elke uitlijningsoptie.
+## Stap 4: Gebruik automatische uitlijning van tabelinhoud
 
-### Voorbeeldbroncode om naar Markdown te exporteren met uitlijning van tabelinhoud met behulp van Aspose.Words voor .NET
+ De`Auto`De uitlijningsoptie neemt de uitlijning van de eerste alinea in de overeenkomstige tabelkolom. Dit kan handig zijn als u gemengde uitlijningen in één tabel heeft.
 
 ```csharp
+// Stel de uitlijning in op Automatisch.
+saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 
-            
-	// Het pad naar de documentenmap.
-    string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.InsertCell();
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-	builder.Write("Cell1");
-	builder.InsertCell();
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Write("Cell2");
-
-	// Zorgt ervoor dat alle alinea's in de tabel worden uitgelijnd.
-	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
-	{
-		TableContentAlignment = TableContentAlignment.Left
-	};
-	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.LeftTableContentAlignment.md", saveOptions);
-
-	saveOptions.TableContentAlignment = TableContentAlignment.Right;
-	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.RightTableContentAlignment.md", saveOptions);
-
-	saveOptions.TableContentAlignment = TableContentAlignment.Center;
-	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
-
-	// De uitlijning wordt in dit geval overgenomen uit de eerste alinea in de overeenkomstige tabelkolom.
-	saveOptions.TableContentAlignment = TableContentAlignment.Auto;
-	
-	// Sla het gewijzigde document op
-	doc.Save(dataDir + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
-            
-        
+// Document opslaan met automatische uitlijning.
+doc.Save(dataDir + "AutoTableContentAlignment.md", saveOptions);
 ```
+
+## Conclusie
+
+En daar heb je het! Het exporteren van Word-documenten naar Markdown met uitgelijnde tabellen met Aspose.Words voor .NET is een fluitje van een cent als u eenmaal weet hoe u het moet doen. Met deze krachtige bibliotheek kunt u eenvoudig de opmaak en uitlijning van uw tabellen beheren, zodat uw Markdown-documenten er precies zo uitzien als u dat wilt. Veel codeerplezier!
+
+## Veelgestelde vragen
+
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen, converteren en exporteren.
+
+### Kan ik verschillende uitlijningen instellen voor verschillende kolommen in dezelfde tabel?
+ Ja, door gebruik te maken van de`Auto` uitlijningsoptie kunt u verschillende uitlijningen hebben op basis van de eerste alinea in elke kolom.
+
+### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
+ Ja, Aspose.Words voor .NET vereist een licentie voor volledige functionaliteit. Je kunt een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
+
+### Is het mogelijk om andere documentelementen naar Markdown te exporteren met Aspose.Words?
+Ja, Aspose.Words ondersteunt het exporteren van verschillende elementen zoals koppen, lijsten en afbeeldingen naar Markdown-indeling.
+
+### Waar kan ik ondersteuning krijgen als ik problemen tegenkom?
+ U kunt ondersteuning krijgen van de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).

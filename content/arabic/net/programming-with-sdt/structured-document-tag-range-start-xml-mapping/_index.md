@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## الخطوة 2: قم بتحميل المستند وإنشاء جزء XML
- قم بتحميل مستند Word باستخدام`Document`منشئ، وتمرير المسار إلى الوثيقة كمعلمة. قم بإنشاء جزء XML يحتوي على البيانات التي تريد عرضها ضمن علامة المستند المنظمة.
+ قم بتحميل مستند Word باستخدام`Document` منشئ، وتمرير المسار إلى الوثيقة كمعلمة. قم بإنشاء جزء XML يحتوي على البيانات التي تريد عرضها ضمن علامة المستند المنظمة.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -42,7 +42,7 @@ sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 ```
 
 ## الخطوة 4: احفظ المستند
- احفظ المستند المعدل في الدليل المحدد باستخدام الملف`Save` طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx".
+ احفظ المستند المعدل في الدليل المحدد باستخدام الملف`Save`طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// قم بإنشاء StructuredDocumentTag الذي سيعرض محتويات CustomXmlPart في المستند.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// إذا قمنا بتعيين تعيين لـ StructuredDocumentTag الخاص بنا،
-	//سيعرض فقط جزءًا من CustomXmlPart الذي يشير إليه XPath.
+	// سيعرض فقط جزءًا من CustomXmlPart الذي يشير إليه XPath.
 	// سيشير XPath هذا إلى محتويات العنصر "<text>" الثاني للعنصر "<root>" الأول في CustomXmlPart الخاص بنا.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

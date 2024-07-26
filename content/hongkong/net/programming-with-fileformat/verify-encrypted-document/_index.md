@@ -2,15 +2,31 @@
 title: 驗證加密的Word文檔
 linktitle: 驗證加密的Word文檔
 second_title: Aspose.Words 文件處理 API
-description: 驗證 Word 文件是否已使用 Aspose.Words for .NET 加密的逐步指南。
+description: 透過此逐步指南，了解如何使用 Aspose.Words for .NET 驗證 Word 文件的加密狀態。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-fileformat/verify-encrypted-document/
 ---
+## 使用 Aspose.Words for .NET 驗證加密的 Word 文件
 
-本文提供了有關如何將加密 Word 文件驗證功能與 Aspose.Words for .NET 結合使用的逐步指南。我們將詳細解釋程式碼的每一部分。在本教學結束時，您將能夠了解如何檢查文件是否已加密。
+ 您是否曾經偶然發現過加密的 Word 文檔，並想知道如何以程式設計方式驗證其加密狀態？嗯，你很幸運！今天，我們將深入探討如何使用 Aspose.Words for .NET 實現這一點的精彩小教學。本逐步指南將引導您完成從設定環境到執行程式碼所需了解的所有內容。那麼，讓我們開始吧？
 
-在開始之前，請確保您已在專案中安裝並設定了 Aspose.Words for .NET 程式庫。您可以在 Aspose 網站上找到庫和安裝說明。
+## 先決條件
+
+在我們深入研究程式碼之前，讓我們確保您擁有所需的一切。這是一個快速清單：
+
+-  Aspose.Words for .NET Library：您可以從以下位置下載它[這裡](https://releases.aspose.com/words/net/).
+- .NET Framework：確保您的電腦上安裝了 .NET。
+- IDE：類似 Visual Studio 的整合開發環境。
+- C# 基礎知識：了解 C# 基礎知識將幫助您更輕鬆地進行操作。
+
+## 導入命名空間
+
+首先，您需要匯入必要的命名空間。這是所需的程式碼片段：
+
+```csharp
+using Aspose.Words;
+```
 
 ## 步驟1：定義文檔目錄
 
@@ -38,50 +54,23 @@ Console.WriteLine(info.IsEncrypted);
 
 就這樣 ！您已使用 Aspose.Words for .NET 成功檢查文件是否已加密。
 
-### 使用 Aspose.Words for .NET 驗證加密文件的範例原始碼
+## 結論
 
-```csharp
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功驗證了 Word 文件的加密狀態。幾行程式碼就能讓我們的生活變得如此輕鬆，這不是很神奇嗎？如果您有任何疑問或遇到任何問題，請隨時聯繫[Aspose 支援論壇](https://forum.aspose.com/c/words/8).
 
-	//文檔目錄的路徑。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
-	Console.WriteLine(info.IsEncrypted);
-            
-        
-```
+## 常見問題解答
 
-## 經常問的問題
+### 什麼是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一個功能強大的程式庫，可讓您在 .NET 應用程式中建立、編輯、轉換和操作 Word 文件。
 
-### Q：驗證加密的Word文檔的步驟是什麼？
+### 我可以將 Aspose.Words for .NET 與 .NET Core 一起使用嗎？
+是的，Aspose.Words for .NET 與 .NET Framework 和 .NET Core 也相容。
 
-驗證加密Word文檔的步驟如下：
+### 如何取得 Aspose.Words 的臨時授權？
+您可以從以下地點獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
 
-定義文檔目錄。
+### Aspose.Words for .NET 有沒有免費試用版？
+是的，您可以從以下位置下載免費試用版[這裡](https://releases.aspose.com/).
 
-檢測文件格式。
-
-檢查文檔是否已加密。
-
-### Q：如何設定文檔目錄？
-設定文檔目錄，需要替換`"YOUR DOCUMENT DIRECTORY"`在以下程式碼中使用文檔目錄的實際路徑：
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-### Q：如何檢測文件格式？
-您可以使用`DetectFileFormat`的方法`FileFormatUtil`類別來檢測文件格式資訊。在以下範例中，我們假設加密文件名稱為「Encrypted.docx」並且位於指定的文檔目錄中：
-
-```csharp
-FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
-```
-
-### Q：如何檢查文件是否加密？
-您可以使用`IsEncrypted`的財產`FileFormatInfo`物件檢查文件是否已加密。該屬性傳回`true`如果文件已加密，否則返回`false`。結果顯示在控制台中：
-
-```csharp
-Console.WriteLine(info.IsEncrypted);
-```
-
-### Q：如何使用 Aspose.Words for .NET 檢查文件是否已加密？
-透過遵循本教學中提到的步驟並執行提供的原始程式碼，您可以使用 Aspose.Words for .NET 檢查文件是否已加密。
+### 在哪裡可以找到更多範例和文件？
+您可以在以下位置找到全面的文件和範例[Aspose.Words for .NET 文件頁面](https://reference.aspose.com/words/net/).

@@ -64,7 +64,7 @@ doc.save("document_with_header_footer.docx")
 
 ## 自定义页眉和页脚内容
 
-您可以通过添加图片、表格和动态字段来自定义页眉和页脚内容。例如：
+您可以通过添加图像、表格和动态字段来自定义页眉和页脚内容。例如：
 
 1. 添加图像：将图像插入页眉或页脚。
 
@@ -73,7 +73,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. 添加表格：合并表格以获取表格信息。
+2. 添加表格：合并表格信息。
 
 ```python
 footer_table = footer.add_table(1, 2)

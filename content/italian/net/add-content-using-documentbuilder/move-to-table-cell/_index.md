@@ -9,7 +9,7 @@ url: /it/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
 ## introduzione
 
-Passare a una cella di tabella specifica in un documento Word potrebbe sembrare un compito arduo, ma con Aspose.Words per .NET è un gioco da ragazzi! Che tu stia automatizzando report, creando documenti dinamici o semplicemente manipolando i dati delle tabelle a livello di codice, questa potente libreria ti copre. Immergiamoci nel modo in cui è possibile spostarsi in una cella di tabella e aggiungervi contenuto utilizzando Aspose.Words per .NET.
+Passare a una cella di tabella specifica in un documento Word potrebbe sembrare un compito arduo, ma con Aspose.Words per .NET è un gioco da ragazzi! Che tu stia automatizzando report, creando documenti dinamici o semplicemente manipolando i dati delle tabelle a livello di programmazione, questa potente libreria ti copre. Immergiamoci nel modo in cui è possibile spostarsi in una cella di tabella e aggiungervi contenuto utilizzando Aspose.Words per .NET.
 
 ## Prerequisiti
 

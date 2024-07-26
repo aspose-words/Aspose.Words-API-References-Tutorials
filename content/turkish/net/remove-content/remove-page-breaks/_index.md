@@ -2,7 +2,7 @@
 title: Word Belgesindeki Sayfa Sonlarını Kaldırma
 linktitle: Sayfa Sonlarını Kaldır
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words Library for .NET'i kullanarak word belgesindeki sayfa sonlarını nasıl kaldıracağınızı öğrenin. Kusursuz bir düzen için adım adım kılavuzumuzu izleyin.
+description: Aspose.Words Library for .NET'i kullanarak word belgesindeki sayfa sonlarını nasıl kaldıracağınızı öğrenin. Sorunsuz bir düzen için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/remove-content/remove-page-breaks/

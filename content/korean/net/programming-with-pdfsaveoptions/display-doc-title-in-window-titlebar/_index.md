@@ -2,81 +2,87 @@
 title: 창 제목 표시줄에 문서 제목 표시
 linktitle: 창 제목 표시줄에 문서 제목 표시
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 PDF로 변환할 때 창 제목 표시줄에 문서 제목을 표시하는 방법을 알아보세요.
+description: 이 단계별 가이드를 통해 Aspose.Words for .NET을 사용하여 PDF의 창 제목 표시줄에 문서 제목을 표시하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titlebar/
 ---
+## 소개
 
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 창 제목 표시줄에 문서 제목을 표시하는 단계를 안내합니다. 이 기능을 사용하면 생성된 PDF 문서를 열 때 창 제목 표시줄에 문서 제목을 표시할 수 있습니다. 아래 단계를 따르십시오.
+PDF를 더욱 전문적으로 보이게 만들 준비가 되셨나요? 작지만 영향력 있는 변경 사항 중 하나는 창 제목 표시줄에 문서 제목을 표시하는 것입니다. 마치 PDF에 이름 태그를 붙여서 즉시 알아볼 수 있게 만드는 것과 같습니다. 오늘은 .NET용 Aspose.Words를 사용하여 이를 달성하는 방법을 살펴보겠습니다. 이 가이드가 끝나면 프로세스를 명확하게 이해하게 될 것입니다. 시작하자!
+
+## 전제조건
+
+단계를 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
+
+-  .NET 라이브러리용 Aspose.Words: 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+- 개발 환경: Visual Studio 또는 기타 호환 가능한 IDE.
+- C#에 대한 기본 지식: C#으로 코드를 작성하겠습니다.
+
+이것들이 제대로 준비되었는지 확인하세요. 그러면 우리는 준비가 완료됩니다!
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져와야 합니다. 이는 작업에 필요한 클래스와 메서드에 액세스할 수 있게 해주기 때문에 매우 중요합니다.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
 ## 1단계: 문서 로드
 
-PDF로 변환하려는 문서를 업로드하여 시작하십시오.
+여정은 기존 Word 문서를 로드하는 것으로 시작됩니다. 이 문서는 창 제목 표시줄에 제목이 표시된 PDF로 변환됩니다.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+// 문서 디렉터리의 경로입니다.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-문서의 올바른 경로를 지정해야 합니다.
+ 이 단계에서는 문서의 경로를 지정합니다. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서가 저장된 실제 경로와 함께.
 
 ## 2단계: PDF 저장 옵션 구성
 
-PdfSaveOptions 클래스의 인스턴스를 만들고 창 제목 표시줄에 문서 제목 표시를 활성화합니다.
+다음으로 문서를 PDF로 저장하기 위한 옵션을 설정해야 합니다. 여기서는 문서 제목이 창 제목 표시줄에 표시되도록 지정하겠습니다.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { DisplayDocTitle = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    DisplayDocTitle = true
+};
 ```
 
-이 옵션을 사용하면 PDF로 변환할 때 창 제목 표시줄에 문서 제목을 표시할 수 있습니다.
+ 설정으로`DisplayDocTitle` 에게`true`, Aspose.Words에 PDF 창 제목 표시줄의 문서 제목을 사용하도록 지시합니다.
 
-## 3단계: 문서를 PDF로 변환
+## 3단계: 문서를 PDF로 저장
 
- 사용`Save` 변환 옵션을 지정하여 문서를 PDF로 변환하는 방법:
+마지막으로 구성한 옵션을 적용하여 문서를 PDF로 저장합니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
 ```
 
-변환된 PDF를 저장할 올바른 경로를 지정했는지 확인하세요.
+이 코드 줄은 제목 표시줄에 제목이 표시된 PDF 형식으로 문서를 저장합니다. 이번에도 꼭 교체하세요`"YOUR DOCUMENT DIRECTORY"` 실제 디렉토리 경로와 함께.
 
-### .NET용 Aspose.Words를 사용하여 창 제목 표시줄에 문서 제목 표시에 대한 예제 소스 코드
+## 결론
 
-다음은 .NET용 Aspose.Words를 사용하여 PDF 문서의 창 제목 표시줄에 문서 제목을 표시하는 전체 소스 코드입니다.
+그리고 거기에 있습니다! 단 몇 줄의 코드만으로 .NET용 Aspose.Words를 사용하여 창 제목 표시줄에 문서 제목을 표시하도록 PDF를 성공적으로 구성했습니다. 이 작은 개선 사항을 통해 PDF가 더욱 세련되고 전문적으로 보일 수 있습니다.
 
-```csharp
+## FAQ
 
-	// 문서 디렉터리의 경로입니다.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+### .NET용 Aspose.Words를 사용하여 다른 PDF 옵션을 사용자 정의할 수 있습니까?
+전적으로! Aspose.Words for .NET은 보안 설정, 압축 등을 포함하여 PDF 저장을 위한 광범위한 사용자 정의 옵션을 제공합니다.
 
-	PdfSaveOptions saveOptions = new PdfSaveOptions { DisplayDocTitle = true };
+### 내 문서에 제목이 없으면 어떻게 되나요?
+문서에 제목이 없으면 창 제목 표시줄에 제목이 표시되지 않습니다. 문서를 PDF로 변환하기 전에 문서에 제목이 있는지 확인하세요.
 
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
-        
-```
-다음 단계를 따르면 Aspose.Words for .NET을 사용하여 PDF로 변환할 때 창 제목 표시줄에 문서 제목을 쉽게 표시할 수 있습니다.
+### Aspose.Words for .NET은 모든 버전의 .NET과 호환됩니까?
+예, Aspose.Words for .NET은 다양한 .NET 프레임워크를 지원하므로 다양한 개발 환경에 맞게 다용도로 사용할 수 있습니다.
 
-### 자주 묻는 질문
+### .NET용 Aspose.Words를 사용하여 다른 파일 형식을 PDF로 변환할 수 있습니까?
+예, Aspose.Words for .NET을 사용하여 DOCX, RTF, HTML 등과 같은 다양한 파일 형식을 PDF로 변환할 수 있습니다.
 
-#### Q: Aspose.Words for .NET의 "창 제목 표시줄에 문서 제목 표시" 기능은 무엇입니까?
-.NET용 Aspose.Words의 "창 제목 표시줄에 문서 제목 표시" 기능을 사용하면 생성된 PDF 문서를 열 때 창 제목 표시줄에 문서 제목을 표시할 수 있습니다. 이를 통해 읽기 환경에서 PDF 문서를 더 쉽게 식별하고 구별할 수 있습니다.
-
-#### Q: .NET용 Aspose.Words에서 이 기능을 어떻게 사용할 수 있나요?
-.NET용 Aspose.Words에서 이 기능을 사용하려면 다음 단계를 따르세요.
-
- 다음을 사용하여 문서를 로드합니다.`Document` 방법을 사용하고 PDF로 변환할 파일의 경로를 지정합니다.
-
- 인스턴스를 생성하여 PDF 저장 옵션을 구성합니다.`PdfSaveOptions` 수업과 설정`DisplayDocTitle`재산`true`. 이를 통해 PDF로 변환할 때 창 제목 표시줄에 문서 제목을 표시할 수 있습니다.
-
- 사용`Save` 변환 옵션을 지정하여 문서를 PDF로 변환하는 방법입니다.
-
-#### Q: 이 기능을 사용하면 문서 자체의 내용이 변경되나요?
-아니요. 이 기능은 문서 자체의 내용을 수정하지 않습니다. PDF 문서로 열릴 때 창 제목 표시줄의 문서 제목 표시에만 영향을 줍니다. 문서의 내용은 변경되지 않습니다.
-
-#### Q: 창의 제목 표시줄에 표시되는 문서의 제목을 사용자 정의할 수 있나요?
- 예, 창 제목 표시줄에 표시되는 문서 제목을 사용자 정의할 수 있습니다.`Document.Title` PDF로 변환하기 전에 문서의 속성을 변경하세요. 문자열을 사용하여 원하는 제목을 설정할 수 있습니다. 전화하기 전에 반드시 제목을 설정하세요.`Save` PDF로 변환하는 방법.
-
-#### Q: Aspose.Words는 문서 변환을 위해 어떤 다른 출력 형식을 지원합니까?
-Aspose.Words for .NET은 PDF, XPS, HTML, EPUB, MOBI, 이미지(JPEG, PNG, BMP, TIFF, GIF) 등과 같은 문서 변환을 위한 다양한 출력 형식을 지원합니다. 아직도 다른 사람들. 특정 요구 사항에 따라 적절한 출력 형식을 선택할 수 있습니다.
+### 문제가 발생하면 어떻게 지원을 받을 수 있나요?
+ 당신은 방문 할 수 있습니다[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 귀하가 가질 수 있는 문제나 질문에 대한 도움을 받으려면

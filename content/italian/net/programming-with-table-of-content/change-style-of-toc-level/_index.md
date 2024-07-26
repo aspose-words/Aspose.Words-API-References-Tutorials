@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### D: Posso modificare lo stile di più livelli nel sommario utilizzando Aspose.Words per .NET?
 
- R: Sì, puoi modificare lo stile di più livelli nel sommario utilizzando Aspose.Words per .NET. Per modificare lo stile di un livello specifico, puoi accedere allo stile corrispondente utilizzando il pulsante`Styles`proprietà e apportare le modifiche desiderate a ciascun livello individualmente.
+R: Sì, puoi modificare lo stile di più livelli nel sommario utilizzando Aspose.Words per .NET. Per modificare lo stile di un livello specifico, puoi accedere allo stile corrispondente utilizzando il pulsante`Styles` proprietà e apportare le modifiche desiderate a ciascun livello individualmente.
 
 #### D: Come posso salvare il documento modificato dopo aver cambiato lo stile del sommario utilizzando Aspose.Words per .NET?
 
@@ -117,7 +117,7 @@ R: Sì, oltre a modificare lo stile, puoi applicare varie modifiche di formattaz
 
 #### D: Posso modificare lo stile del sommario in un documento Word esistente utilizzando Aspose.Words per .NET?
 
- R: Sì, puoi modificare lo stile del sommario in un documento Word esistente utilizzando Aspose.Words per .NET. Basta caricare il documento utilizzando il file`Document` classe, modificare le proprietà dello stile utilizzando la classe`Styles` proprietà e salvare il documento per applicare le modifiche.
+R: Sì, puoi modificare lo stile del sommario in un documento Word esistente utilizzando Aspose.Words per .NET. Basta caricare il documento utilizzando il file`Document` classe, modificare le proprietà dello stile utilizzando la classe`Styles` proprietà e salvare il documento per applicare le modifiche.
 
 #### D: Aspose.Words per .NET supporta la modifica di altri stili e formattazione nei documenti di Word?
 

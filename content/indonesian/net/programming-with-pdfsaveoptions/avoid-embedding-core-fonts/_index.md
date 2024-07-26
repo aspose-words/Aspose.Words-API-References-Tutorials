@@ -2,95 +2,97 @@
 title: Kurangi Ukuran File PDF dengan Tidak Menyematkan Font Inti
 linktitle: Kurangi Ukuran File PDF dengan Tidak Menyematkan Font Inti
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara Mengurangi Ukuran File PDF dengan Tidak Menyematkan Font Inti saat mengonversi dokumen Word ke PDF dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengurangi ukuran file PDF dengan tidak menyematkan font inti menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengoptimalkan PDF Anda.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah cara mengurangi ukuran file PDF dengan tidak menyematkan font inti dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda mengontrol apakah font dasar seperti Arial, Times New Roman, dll. harus disematkan dalam PDF saat mengonversi dokumen Word. Ikuti langkah-langkah di bawah ini:
+Pernahkah Anda menggaruk-garuk kepala dan bertanya-tanya mengapa file PDF Anda begitu besar? Ya, kamu tidak sendirian. Salah satu penyebab umum adalah menyematkan font inti seperti Arial dan Times New Roman. Untungnya, Aspose.Words untuk .NET memiliki cara yang bagus untuk mengatasi masalah ini. Dalam tutorial ini, saya akan menunjukkan cara memperkecil ukuran file PDF Anda dengan menghindari penyematan font inti ini. Mari selami!
 
-## Langkah 1: Memuat dokumen
+## Prasyarat
 
-Mulailah dengan mengunggah dokumen Word yang ingin Anda konversi ke PDF:
+Sebelum kita memulai perjalanan yang mengasyikkan ini, pastikan Anda memiliki semua yang Anda butuhkan. Berikut daftar periksa singkatnya:
+
+-  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Jika Anda belum memilikinya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Anda memerlukan lingkungan pengembangan seperti Visual Studio.
+- Dokumen Word: Kami akan menggunakan dokumen Word (misalnya, "Rendering.docx") untuk tutorial ini.
+- Pengetahuan Dasar C#: Pemahaman dasar tentang C# akan membantu Anda mengikutinya.
+
+Baiklah, sekarang kita sudah siap, mari masuk ke seluk beluknya!
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Langkah ini memastikan kita memiliki akses ke semua fungsi Aspose.Words yang kita perlukan.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Langkah 1: Inisialisasi Direktori Dokumen Anda
+
+Sebelum kita mulai memanipulasi dokumen kita, kita perlu menentukan direktori dimana dokumen kita disimpan. Ini penting untuk mengakses file.
+
+```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya di mana dokumen Word Anda berada.
+
+## Langkah 2: Muat Dokumen Word
+
+Selanjutnya, kita perlu memuat dokumen Word yang ingin kita konversi ke PDF. Dalam contoh ini, kami menggunakan dokumen bernama "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Pastikan untuk menentukan jalur yang benar ke dokumen Word Anda.
+Baris kode ini memuat dokumen ke dalam memori, siap untuk diproses lebih lanjut.
 
-## Langkah 2: Tetapkan Opsi Konversi PDF
+## Langkah 3: Konfigurasikan Opsi Penyimpanan PDF
 
-Buat instance kelas PdfSaveOptions dan aktifkan penghindaran penyematan font dasar:
+Sekarang sampai pada bagian ajaibnya! Kami akan mengonfigurasi opsi penyimpanan PDF untuk menghindari penyematan font inti. Ini adalah langkah kunci yang membantu mengurangi ukuran file PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-Opsi ini mengontrol apakah font dasar harus disematkan dalam PDF atau tidak.
+ Pengaturan`UseCoreFonts` ke`true` memastikan bahwa font inti seperti Arial dan Times New Roman tidak tertanam dalam PDF, sehingga mengurangi ukuran file secara signifikan.
 
-## Langkah 3: Konversi Dokumen ke PDF
+## Langkah 4: Simpan Dokumen sebagai PDF
 
- Menggunakan`Save` metode untuk mengonversi dokumen Word ke PDF dengan menentukan opsi konversi:
+Terakhir, kami menyimpan dokumen Word sebagai PDF menggunakan opsi penyimpanan yang dikonfigurasi. Langkah ini menghasilkan file PDF tanpa menyematkan font inti.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Pastikan untuk menentukan jalur yang benar untuk menyimpan PDF yang dikonversi.
-
-### Contoh kode sumber untuk Hindari Menyematkan Font Inti menggunakan Aspose.Words untuk .NET
-
-Berikut adalah kode sumber lengkap untuk menggunakan fitur tersebut guna menghindari penyematan font inti dengan Aspose.Words untuk .NET:
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// PDF keluaran tidak akan disematkan dengan font inti seperti Arial, Times New Roman, dll.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah mengontrol apakah font dasar harus disematkan dalam PDF saat mengonversi dokumen Word dengan Aspose.Words untuk .NET.
-
+Dan itu dia! File PDF Anda sekarang disimpan di direktori yang ditentukan tanpa font inti yang besar.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelaskan cara memperkecil ukuran file PDF dengan tidak menyematkan font dasar dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda mengontrol apakah font dasar harus disematkan dalam PDF saat mengonversi dokumen Word. Dengan mengikuti langkah-langkah yang diuraikan, Anda dapat dengan mudah mengontrol penyematan atau non-penyematan font dasar, yang dapat membantu mengurangi ukuran file PDF dan memastikan kompatibilitas yang lebih baik serta tampilan dokumen yang konsisten di berbagai perangkat dan platform. Jangan lupa untuk mempertimbangkan konsekuensi dari tidak menyematkan font dasar dan bereksperimen untuk memastikan bahwa dokumen ditampilkan seperti yang diharapkan.
+Mengurangi ukuran file PDF sangatlah mudah dengan Aspose.Words untuk .NET. Dengan menghindari penyematan font inti, Anda dapat mengurangi ukuran file secara signifikan, sehingga lebih mudah untuk berbagi dan menyimpan dokumen Anda. Saya harap tutorial ini bermanfaat dan memberi Anda pemahaman yang jelas tentang prosesnya. Ingat, perubahan kecil dapat membuat perbedaan besar!
 
-### Pertanyaan yang Sering Diajukan
+## FAQ
 
-#### T: Apa yang dimaksud dengan opsi untuk tidak menyematkan font dasar dalam file PDF dan mengapa ini penting?
-J: Opsi untuk tidak menyematkan font dasar dalam file PDF mengontrol apakah font dasar seperti Arial, Times New Roman, dll. harus disematkan dalam PDF saat mengonversi dokumen Word. Hal ini penting untuk mengurangi ukuran file PDF dengan menghindari penyertaan font yang umum tersedia pada sistem pembaca PDF. Ini juga dapat membantu memastikan kompatibilitas yang lebih baik dan tampilan dokumen PDF yang konsisten di berbagai perangkat dan platform.
+### Mengapa saya harus menghindari penyematan font inti dalam PDF?
+Menghindari penyematan font inti akan mengurangi ukuran file, sehingga lebih mudah untuk dibagikan dan disimpan.
 
-#### T: Bagaimana cara mengonfigurasi Aspose.Words untuk .NET agar tidak menyematkan font dasar dalam file PDF?
-J: Untuk mengonfigurasi Aspose.Words untuk .NET agar tidak menyematkan font inti dalam file PDF, ikuti langkah-langkah berikut:
+### Apakah saya masih dapat melihat PDF dengan benar tanpa font inti yang disematkan?
+Ya, font inti seperti Arial dan Times New Roman umumnya tersedia di sebagian besar sistem.
 
- Atur jalur direktori tempat dokumen Anda berada dengan mengganti`"YOUR DOCUMENTS DIRECTORY"` dengan jalur sebenarnya dari direktori dokumen Anda.
+### Bagaimana jika saya perlu menyematkan font khusus?
+ Anda dapat menyesuaikannya`PdfSaveOptions`untuk menyematkan font tertentu sesuai kebutuhan.
 
- Muat dokumen Word yang ingin Anda konversi ke PDF menggunakan`Document` kelas dan jalur dokumen yang ditentukan.
+### Apakah Aspose.Words untuk .NET gratis untuk digunakan?
+ Aspose.Words untuk .NET memerlukan lisensi. Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/).
 
- Buat sebuah instance dari`PdfSaveOptions` kelas dan atur`UseCoreFonts`properti ke`true`. Ini akan menghindari penyematan font dasar dalam file PDF yang dihasilkan.
-
- Menggunakan`Save` metode`Document` keberatan untuk menyimpan dokumen dalam format PDF dengan menentukan opsi konversi yang dikonfigurasi sebelumnya.
-
-#### T: Apa keuntungan jika tidak menyematkan font dasar dalam file PDF?
-J: Keuntungan tidak menyematkan font dasar dalam file PDF adalah:
-
-Pengurangan ukuran file PDF: Dengan menghindari penyematan font yang umum tersedia seperti Arial, Times New Roman, dll., ukuran file PDF dapat diperkecil, sehingga lebih mudah untuk menyimpan, berbagi, dan mentransfer file.
-
-Kompatibilitas yang lebih baik: Dengan menggunakan font dasar yang umum tersedia pada sistem pembaca PDF, Anda memastikan kompatibilitas dan tampilan dokumen yang lebih baik di berbagai perangkat dan platform.
-
-#### T: Apa konsekuensi jika tidak menyematkan font dasar dalam file PDF?
-A: Akibat tidak menyematkan font dasar pada file PDF adalah sebagai berikut:
-
-Tampilan berbeda: Jika font dasar tidak tersedia di sistem tempat PDF dibuka, font pengganti akan digunakan, yang mungkin menghasilkan tampilan berbeda dari yang diharapkan.
-
-Masalah keterbacaan: Font pengganti yang digunakan mungkin tidak terbaca seperti font asli, sehingga dapat mempengaruhi keterbacaan dokumen.
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
+ Anda dapat menemukan dokumentasi terperinci[Di Sini](https://reference.aspose.com/words/net/).

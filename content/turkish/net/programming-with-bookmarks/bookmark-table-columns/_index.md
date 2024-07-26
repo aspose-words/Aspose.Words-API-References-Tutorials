@@ -9,7 +9,7 @@ url: /tr/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## giriiş
 
-Belge otomasyonu becerilerinizi geliştirmek istiyorsanız, o zaman bir fırsatla karşı karşıyasınız. Bu eğitim, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo sütunlarına yer işareti koyma sürecinde size rehberlik edecektir. Dalmaya hazır mısınız? Başlayalım!
+Belge otomasyon becerilerinizi geliştirmek istiyorsanız, o zaman bir fırsatla karşı karşıyasınız. Bu eğitim, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo sütunlarına yer işareti koyma sürecinde size rehberlik edecektir. Dalmaya hazır mısınız? Başlayalım!
 
 ## Önkoşullar
 

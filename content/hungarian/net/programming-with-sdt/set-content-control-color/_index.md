@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Töltse be a dokumentumot, és töltse le a tartalomvezérlőt
- Töltse be a Word dokumentumot a`Document` konstruktor, paraméterként átadva a dokumentum elérési útját. Töltse le a kívánt tartalomvezérlőt a dokumentumból. Ebben a példában feltételezzük, hogy a tartalomvezérlő az első strukturált dokumentumcímke a dokumentumban.
+ Töltse be a Word dokumentumot a`Document`konstruktor, paraméterként átadva a dokumentum elérési útját. Töltse le a kívánt tartalomvezérlőt a dokumentumból. Ebben a példában feltételezzük, hogy a tartalomvezérlő az első strukturált dokumentumcímke a dokumentumban.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

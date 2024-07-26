@@ -2,81 +2,88 @@
 title: Update de laatst afgedrukte eigenschap in het PDF-document
 linktitle: Update de laatst afgedrukte eigenschap in het PDF-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het bijwerken van de eigenschap 'Laatst afgedrukt' bij het converteren naar PDF met Aspose.Words voor .NET.
+description: Leer hoe u de laatst afgedrukte eigenschap in een PDF-document kunt bijwerken met Aspose.Words voor .NET met onze stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
+## Invoering
 
-Dit artikel biedt een stapsgewijze handleiding voor het gebruik van de eigenschap 'Laatste afdruk' in de updatefunctie voor PDF-documenten met Aspose.Words voor .NET. We zullen elk deel van de code in detail uitleggen. Aan het einde van deze tutorial zult u begrijpen hoe u de optie kunt configureren om de eigenschap "Laatst afgedrukt" bij te werken bij het converteren naar PDF.
+Wilt u de laatst afgedrukte eigenschap in een PDF-document bijwerken? Misschien beheert u een groot aantal documenten en moet u bijhouden wanneer deze voor het laatst zijn afgedrukt. Wat de reden ook is, het bijwerken van deze eigenschap kan ongelooflijk nuttig zijn, en met Aspose.Words voor .NET is het een fluitje van een cent! Laten we eens kijken hoe u dit kunt bereiken.
 
-Zorg ervoor dat u, voordat u begint, de Aspose.Words voor .NET-bibliotheek in uw project hebt geïnstalleerd en geconfigureerd. U kunt de bibliotheek en installatie-instructies vinden op de Aspose-website.
+## Vereisten
 
-## Stap 1: Definieer de documentmap
+Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
 
- Om te beginnen moet u het pad definiëren naar de map waar uw documenten zich bevinden. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentenmap.
+-  Aspose.Words voor .NET: Aspose.Words voor .NET moet geïnstalleerd zijn. Als u dat nog niet heeft gedaan, kunt u deze downloaden van[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Een ontwikkelomgeving zoals Visual Studio.
+- Basiskennis van C#: Enige bekendheid met C# zal nuttig zijn.
+- Document: een Word-document dat u naar PDF wilt converteren en de laatst afgedrukte eigenschap wilt bijwerken.
+
+## Naamruimten importeren
+
+Om Aspose.Words voor .NET in uw project te gebruiken, moet u de benodigde naamruimten importeren. Zo doe je het:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Laten we het proces opsplitsen in eenvoudige, beheersbare stappen.
+
+## Stap 1: Stel uw project in
+
+Laten we eerst uw project opzetten. Open Visual Studio, maak een nieuwe console-app (.NET Framework of .NET Core) en geef deze een betekenisvolle naam, zoals "UpdateLastPrintedPropertyPDF".
+
+## Stap 2: Installeer Aspose.Words voor .NET
+
+Vervolgens moet u het Aspose.Words voor .NET-pakket installeren. U kunt dit doen via NuGet Package Manager. Klik met de rechtermuisknop op uw project in de Solution Explorer, kies "NuGet-pakketten beheren", zoek naar "Aspose.Words" en installeer het.
+
+## Stap 3: Laad uw document
+
+ Laten we nu het Word-document laden dat u naar PDF wilt converteren. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het pad naar uw document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Stap 2: Upload het document
-
-Vervolgens moeten we het document laden dat we willen verwerken. In dit voorbeeld gaan we ervan uit dat het document "Rendering.docx" heet en zich in de opgegeven documentenmap bevindt.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Stap 3: Configureer de opties voor Opslaan als PDF met bijgewerkte eigenschap "Laatst afgedrukt".
+## Stap 4: Configureer PDF-opslagopties
 
- Om het bijwerken van de eigenschap "Laatst afgedrukt" mogelijk te maken bij het converteren naar PDF, moeten we de`PdfSaveOptions` bezwaar maken en instellen`UpdateLastPrintedProperty`eigendom aan`true`.
+ We moeten de PDF-opslagopties configureren om de laatst afgedrukte eigenschap bij te werken. Maak een nieuw exemplaar van`PdfSaveOptions` en stel de`UpdateLastPrintedProperty`eigendom aan`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions 
+{ 
+	UpdateLastPrintedProperty = true 
+};
 ```
 
-## Stap 4: Sla het document op als PDF met de update van de eigenschap "Laatst afgedrukt".
+## Stap 5: Sla het document op als PDF
 
-Ten slotte kunnen we het document in PDF-formaat opslaan met behulp van de eerder geconfigureerde opslagopties.
+Sla het document ten slotte op als PDF met de bijgewerkte eigenschap. Geef het uitvoerpad en de opslagopties op.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-Dat is alles ! U hebt het bijwerken van de eigenschap 'Laatst afgedrukt' ingeschakeld bij het converteren van een document naar PDF met Aspose.Words voor .NET.
-
-### Voorbeeldbroncode voor het bijwerken van de eigenschap 'Laatst afgedrukt' met Aspose.Words voor .NET
-
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
-
-```
 ## Conclusie
 
-In deze zelfstudie hebben we uitgelegd hoe u de eigenschap "Laatst afgedrukt" in een PDF-document kunt bijwerken met Aspose.Words voor .NET. Door de gegeven stappen te volgen, kunt u eenvoudig de optie configureren om de eigenschap "Laatst afgedrukt" bij te werken bij het converteren van een document naar PDF. Gebruik deze functie om het documentgebruik en gerelateerde informatie bij te houden.
+En daar heb je het! Door deze stappen te volgen, kunt u eenvoudig de laatst afgedrukte eigenschap in een PDF-document bijwerken met Aspose.Words voor .NET. Deze werkwijze zorgt ervoor dat uw documentbeheerproces efficiënt en up-to-date blijft. Probeer het eens en zie hoe het uw workflow vereenvoudigt.
 
-### Veel Gestelde Vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is de eigenschap 'Laatst afgedrukt' in een PDF-document?
-A: De eigenschap "Laatst afgedrukt" in een PDF-document verwijst naar de datum en tijd waarop het document voor het laatst is afgedrukt. Deze eigenschap kan handig zijn voor het bijhouden van informatie over documentgebruik en -beheer.
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek voor documentverwerkingstaken in .NET-toepassingen, waaronder het maken, wijzigen, converteren en afdrukken van documenten.
 
-#### Vraag: Hoe kan ik de eigenschap "Laatst afgedrukt" in een PDF-document bijwerken met Aspose.Words voor .NET?
-A: Volg deze stappen om de eigenschap 'Laatst afgedrukt' in een PDF-document met Aspose.Words voor .NET bij te werken:
+### Waarom de laatst afgedrukte eigenschap in een PDF bijwerken?
+Het bijwerken van de laatst afgedrukte eigenschap helpt bij het bijhouden van documentgebruik, vooral in omgevingen waar het afdrukken van documenten vaak voorkomt.
 
- Maak een exemplaar van de`Document` klasse die het pad naar het Word-document specificeert.
+### Kan ik andere eigenschappen bijwerken met Aspose.Words voor .NET?
+Ja, met Aspose.Words voor .NET kunt u verschillende documenteigenschappen bijwerken, zoals auteur, titel, onderwerp en meer.
 
- Maak een exemplaar van de`PdfSaveOptions` klasse en stel de`UpdateLastPrintedProperty`eigendom aan`true` om het bijwerken van de eigenschap 'Laatst afgedrukt' mogelijk te maken.
+### Is Aspose.Words voor .NET gratis?
+Aspose.Words voor .NET biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/). Voor langdurig gebruik moet u een licentie aanschaffen.
 
- Gebruik de`Save` werkwijze van de`Document`class om het document in PDF-indeling op te slaan door opslagopties op te geven.
-
-#### Vraag: Hoe kan ik controleren of de eigenschap "Laatst afgedrukt" is bijgewerkt in het gegenereerde PDF-document?
-A: U kunt controleren of de eigenschap "Laatst afgedrukt" is bijgewerkt in het gegenereerde PDF-document door het PDF-bestand te openen met een compatibele PDF-viewer, zoals Adobe Acrobat Reader, en de documentinformatie te bekijken. De datum en tijd van de laatste afdruk moeten overeenkomen met de datum en tijd van het genereren van het PDF-document.
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
+ kunt gedetailleerde documentatie vinden op Aspose.Words voor .NET[hier](https://reference.aspose.com/words/net/).

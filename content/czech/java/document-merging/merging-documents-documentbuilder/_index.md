@@ -41,7 +41,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Nyní řekněme, že máme dva existující dokumenty, které chceme sloučit. Tyto dokumenty načteme a poté připojíme obsah k našemu nově vytvořenému dokumentu pomocí DocumentBuilderu.
 
 ```java
-// Vložte dokumenty, které chcete sloučit
+// Načtěte dokumenty, které chcete sloučit
 Document doc1 = new Document("document1.docx");
 Document doc2 = new Document("document2.docx");
 

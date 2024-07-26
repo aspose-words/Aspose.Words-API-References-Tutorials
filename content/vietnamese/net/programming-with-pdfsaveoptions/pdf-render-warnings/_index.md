@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /vi/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## Xử lý cảnh báo kết xuất PDF bằng Aspose.Words cho .NET
+## Giới thiệu
 
 Nếu bạn đang làm việc với Aspose.Words cho .NET, việc quản lý cảnh báo hiển thị PDF là một khía cạnh thiết yếu để đảm bảo tài liệu của bạn được xử lý và lưu chính xác. Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn cách xử lý các cảnh báo hiển thị PDF bằng Aspose.Words. Đến cuối hướng dẫn này, bạn sẽ hiểu rõ về cách triển khai tính năng này trong các dự án .NET của mình.
 
@@ -36,7 +36,7 @@ using System;
 Đầu tiên, xác định thư mục nơi tài liệu của bạn được lưu trữ. Điều này rất cần thiết cho việc định vị và xử lý tài liệu của bạn.
 
 ```csharp
-// Đường dẫn tới thư mục tài liệu
+// Đường dẫn đến thư mục tài liệu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
@@ -79,7 +79,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 public class HandleDocumentWarnings : IWarningCallback
 {
     /// <tóm tắt>
-    /// Phương thức này được gọi bất cứ khi nào có vấn đề tiềm ẩn trong quá trình xử lý tài liệu.
+    //Phương thức này được gọi bất cứ khi nào có vấn đề tiềm ẩn trong quá trình xử lý tài liệu.
     /// </tóm tắt>
     public void Warning(WarningInfo info)
     {

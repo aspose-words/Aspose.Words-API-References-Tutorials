@@ -44,7 +44,7 @@ builder.EndRow();
 // Rensa cellformatering från tidigare operationer.
 builder.CellFormat.ClearFormatting();
 builder.InsertCell();
-// Skapa tjockare ramar för den första cellen i den här raden. Det kommer att bli annorlunda
+// Skapa tjockare ramar för den första cellen i den här raden. Det blir annorlunda
 // i förhållande till gränserna definierade för tabellen.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
 builder.CellFormat.Borders.Right.LineWidth = 4.0;

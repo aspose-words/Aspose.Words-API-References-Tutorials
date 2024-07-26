@@ -2,92 +2,88 @@
 title: 导出 PDF 文档中的自定义属性
 linktitle: 导出 PDF 文档中的自定义属性
 second_title: Aspose.Words 文档处理 API
-description: 了解如何在使用 Aspose.Words for .NET 将文档转换为 PDF 时导出自定义属性。
+description: 通过我们详细的分步指南了解如何使用 Aspose.Words for .NET 导出 PDF 文档中的自定义属性。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
+## 介绍
 
-在本教程中，我们将引导您完成使用 Aspose.Words for .NET 在 PDF 文档中导出文档自定义属性的步骤。导出自定义属性允许您在生成的 PDF 文档中包含其他信息。请按照以下步骤操作：
+导出 PDF 文档中的自定义属性对于各种业务需求非常有用。无论您是管理元数据以提高可搜索性还是将关键信息直接嵌入文档中，Aspose.Words for .NET 都能让这一过程变得无缝衔接。本教程将指导您创建 Word 文档、添加自定义属性以及将这些属性完整地导出到 PDF 中。
 
-## 步骤 1：创建文档并添加自定义属性
+## 先决条件
 
-首先创建 Document 类的实例：
+在深入研究代码之前，请确保您已具备以下条件：
+
+- 已安装 Aspose.Words for .NET。如果您尚未安装，可以下载[这里](https://releases.aspose.com/words/net/).
+- 像 Visual Studio 这样的开发环境。
+- C# 编程的基本知识。
+
+## 导入命名空间
+
+首先，您需要在项目中导入必要的命名空间。这些命名空间包含操作 Word 文档并将其导出为 PDF 所需的类和方法。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+让我们将这个过程分解为简单、易于管理的步骤。
+
+## 步骤 1：初始化文档
+
+首先，您需要创建一个新的文档对象。此对象将作为添加自定义属性和导出为 PDF 的基础。
+
+```csharp
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
 ## 步骤 2：添加自定义属性
-接下来，添加所需的自定义属性。例如，要添加值为“Aspose”的“Company”属性，请使用`Add`CustomDocumentProperties集合的方法：
+
+接下来，您将向文档添加自定义属性。这些属性可以包括公司名称、作者或任何其他相关信息等元数据。
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-您可以根据需要添加任意数量的自定义属性。
+## 步骤 3：配置 PDF 保存选项
 
-## 步骤 3：设置 PDF 导出选项
-
-创建 PdfSaveOptions 类的实例并指定如何导出自定义属性：
+现在，配置 PDF 保存选项以确保在导出文档时包含自定义属性。`PdfSaveOptions`该类提供各种设置来控制如何将文档保存为 PDF。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    CustomPropertiesExport = PdfCustomPropertiesExport.Standard
+};
 ```
 
-此选项控制转换为 PDF 时自定义属性的导出。
+## 步骤 4：将文档另存为 PDF
 
-## 步骤 4：将文档转换为 PDF
-
-使用`Save`将文档转换为 PDF 的方法，指定转换选项：
+最后，将文档保存为 PDF 并保存在指定的目录中。`Save`方法结合了所有前面的步骤并生成包含自定义属性的 PDF。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-确保指定正确的路径来保存转换后的 PDF。
-
-### 使用 Aspose.Words for .NET 导出自定义属性的示例源代码
-
-以下是使用 Aspose.Words for .NET 从文档导出自定义属性的完整源代码：
-
-
-```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	doc.CustomDocumentProperties.Add("Company", "Aspose");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
-
-```
-
-通过遵循这些步骤，您可以在使用 Aspose.Words for .NET 转换为 PDF 时轻松导出文档的自定义属性。
-
-
 ## 结论
 
-在本教程中，我们解释了如何使用 Aspose.Words for .NET 将文档中的自定义属性导出到 PDF 文档中。按照所述步骤，您可以通过导出文档的自定义属性轻松地在生成的 PDF 文档中包含其他信息。利用 Aspose.Words for .NET 的功能，通过导出自定义属性来个性化和丰富您的 PDF 文档。
+使用 Aspose.Words for .NET 导出 PDF 文档中的自定义属性是一个简单的过程，可以大大增强您的文档管理能力。通过遵循这些步骤，您可以确保关键元数据得到保留和访问，从而提高数字文档的效率和组织性。
 
-### 经常问的问题
+## 常见问题解答
 
-#### 问：什么是将自定义属性导出到 PDF 文档？
-答：将自定义属性导出到 PDF 文档允许在生成的 PDF 文档中包含更多信息。自定义属性是特定于文档的元数据，例如标签、关键字或凭据。通过导出这些自定义属性，您可以在查看 PDF 文档时让用户使用它们。
+### PDF 文档中的自定义属性是什么？
+自定义属性是添加到文档的元数据，可以包含作者、公司名称或任何其他需要嵌入文档的相关数据等信息。
 
-#### 问：如何使用 Aspose.Words for .NET 将文档的自定义属性导出到 PDF 文档？
-答：要使用 Aspose.Words for .NET 将文档的自定义属性导出到 PDF 文档，请按照以下步骤操作：
+### 为什么我应该使用 Aspose.Words for .NET 导出自定义属性？
+Aspose.Words for .NET 提供了一个强大且易于使用的 API，用于操作 Word 文档并将其导出为 PDF，确保自定义属性得到保留和访问。
 
-创建一个实例`Document`班级。
+### 我可以向文档添加多个自定义属性吗？
+是的，您可以通过调用`Add`方法适用于您想要包含的每个属性。
 
-使用添加所需的自定义属性`CustomDocumentProperties`集合。例如，使用`Add`方法添加一个值为“Aspose”的“Company”属性。
+### 使用 Aspose.Words for .NET 还可以导出哪些其他格式？
+Aspose.Words for .NET 支持导出为各种格式，包括 DOCX、HTML、EPUB 等。
 
-创建一个实例`PdfSaveOptions`类并指定如何使用导出自定义属性`CustomPropertiesExport`属性。`PdfCustomPropertiesExport.Standard`值根据默认设置导出自定义属性。
-
-使用`Save`方法`Document`类将文档转换为 PDF，并指定转换选项。
-
-#### 问：如何访问 PDF 文档的自定义属性？
-答：要访问 PDF 文档的自定义属性，您可以使用支持查看文档属性的兼容 PDF 阅读器。大多数常见的 PDF 阅读器（例如 Adobe Acrobat Reader）都提供对 PDF 文档的元数据和属性的访问。您通常可以在“文件”菜单下找到这些选项，或者右键单击文档并选择“属性”。
+### 如果我遇到问题，可以在哪里获得支持？
+如需支持，您可以访问[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8)寻求帮助。

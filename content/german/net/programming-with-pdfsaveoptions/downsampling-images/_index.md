@@ -2,94 +2,89 @@
 title: Reduzieren Sie die Größe von PDF-Dokumenten durch Downsampling von Bildern
 linktitle: Reduzieren Sie die Größe von PDF-Dokumenten durch Downsampling von Bildern
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie die Größe von PDF-Dokumenten durch Downsampling von Bildern reduzieren, wenn Sie mit Aspose.Words für .NET in PDF konvertieren.
+description: Reduzieren Sie die Größe von PDF-Dokumenten, indem Sie Bilder mit Aspose.Words für .NET herunterskalieren. Optimieren Sie Ihre PDFs für schnellere Upload- und Downloadzeiten.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch die Schritte zum Reduzieren der PDF-Dokumentgröße durch Downsampling von Bildern bei der Konvertierung in PDF mit Aspose.Words für .NET. Dadurch wird die Größe der generierten PDF-Datei reduziert. Befolgen Sie die folgenden Schritte:
+PDFs sind ein Grundnahrungsmittel in der digitalen Welt und werden für alles verwendet, vom Teilen von Dokumenten bis zum Erstellen von E-Books. Ihre Größe kann jedoch manchmal ein Hindernis darstellen, insbesondere bei bildreichen Inhalten. Hier kommt das Downsampling von Bildern ins Spiel. Indem Sie die Auflösung der Bilder im PDF reduzieren, können Sie die Dateigröße erheblich verringern, ohne zu große Kompromisse bei der Qualität einzugehen. In diesem Tutorial führen wir Sie durch die Schritte, um dies mit Aspose.Words für .NET zu erreichen.
 
-## Schritt 1: Dokument einlegen
+## Voraussetzungen
 
-Beginnen Sie mit dem Hochladen des Dokuments, das Sie in PDF konvertieren möchten:
+Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn nicht, können Sie sie herunterladen[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Jede .NET-Entwicklungsumgebung wie Visual Studio.
+3. Grundkenntnisse in C#: Kenntnisse der Grundlagen der C#-Programmierung sind hilfreich.
+4.  Ein Beispieldokument: Ein Word-Dokument (z. B.`Rendering.docx`) mit Bildern zum Konvertieren in PDF.
+
+## Namespaces importieren
+
+Als Erstes müssen Sie die erforderlichen Namespaces importieren. Fügen Sie diese oben in Ihrer Codedatei hinzu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Lassen Sie uns den Prozess nun in überschaubare Schritte unterteilen.
+
+## Schritt 1: Dokument laden
+
+Im ersten Schritt laden Sie Ihr Word-Dokument. Hier geben Sie den Pfad zu Ihrem Dokumentverzeichnis an.
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Achten Sie darauf, den richtigen Pfad zu Ihrem Dokument anzugeben.
+In diesem Schritt laden wir das Word-Dokument aus dem angegebenen Verzeichnis. Achten Sie darauf,`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad, in dem sich Ihr Dokument befindet.
 
-## Schritt 2: PDF-Speicheroptionen konfigurieren
+## Schritt 2: Downsampling-Optionen konfigurieren
 
-Erstellen Sie eine Instanz der Klasse PdfSaveOptions und legen Sie die Optionen zum Verkleinern des Bildes fest:
+Als nächstes müssen wir die Downsampling-Optionen konfigurieren. Dazu gehört das Einstellen der Auflösung und der Auflösungsschwelle für die Bilder.
 
 ```csharp
+// Wir können einen Mindestschwellenwert für das Downsampling festlegen.
+// Dieser Wert verhindert, dass das zweite Bild im Eingabedokument herunterskaliert wird.
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
+    DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- Der`Resolution` Eigenschaft gibt die Zielauflösung der Bilder an und die`ResolutionThreshold`-Eigenschaft gibt die Mindestauflösung an, unter die die Bilder nicht verkleinert werden.
+ Hier erstellen wir eine neue Instanz von`PdfSaveOptions` und Festlegen der`Resolution` bis zu 36 DPI und die`ResolutionThreshold` auf 128 DPI. Das bedeutet, dass jedes Bild mit einer Auflösung über 128 DPI auf 36 DPI heruntergerechnet wird.
 
-## Schritt 3: Dokument in PDF konvertieren
+## Schritt 3: Speichern Sie das Dokument als PDF
 
- Verwenden Sie die`Save` Methode zum Konvertieren des Dokuments in PDF unter Angabe der Speicheroptionen:
+Abschließend speichern wir das Dokument mit den konfigurierten Optionen als PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
 ```
 
-Stellen Sie sicher, dass Sie den richtigen Pfad zum Speichern der konvertierten PDF-Datei angeben.
-
-### Beispielquellcode zum Downsampling von Bildern mit Aspose.Words für .NET
-
-```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Wir können einen Mindestschwellenwert für das Downsampling festlegen.
-	// Dieser Wert verhindert, dass das zweite Bild im Eingabedokument herunterskaliert wird.
-	PdfSaveOptions saveOptions = new PdfSaveOptions
-	{
-		DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
-	};
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
-
-```
-
-Indem Sie diese Schritte befolgen, können Sie die Bildauflösung bei der Konvertierung in PDF mit Aspose.Words für .NET problemlos reduzieren.
+In diesem letzten Schritt speichern wir das Dokument als PDF im selben Verzeichnis mit den angegebenen Downsampling-Optionen.
 
 ## Abschluss
 
-In diesem Tutorial haben wir erklärt, wie Sie die Größe eines PDF-Dokuments mit Bildabtastung reduzieren, wenn Sie es mit Aspose.Words für .NET in PDF konvertieren. Indem Sie die beschriebenen Schritte befolgen, können Sie die Auflösung von Bildern und die Größe der generierten PDF-Datei problemlos reduzieren. Geben Sie unbedingt den richtigen Pfad zu Ihrem Dokument an und konfigurieren Sie die Bildabtastungsoptionen nach Bedarf. Durch die Reduzierung der PDF-Dateigröße lässt sich die Datei einfacher teilen, speichern und schnell auf verschiedenen Plattformen laden. Profitieren Sie von den Vorteilen der Reduzierung der PDF-Dokumentgröße mit Bildabtastung mit Aspose.Words für .NET.
+Und da haben Sie es! Sie haben die Größe Ihrer PDF-Datei erfolgreich reduziert, indem Sie Bilder mit Aspose.Words für .NET herunterskaliert haben. Dadurch werden Ihre PDF-Dateien nicht nur übersichtlicher, sondern auch schnellere Uploads und Downloads sowie ein flüssigeres Anzeigeerlebnis ermöglicht.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Was bedeutet die Reduzierung der Größe eines PDF-Dokuments durch Bildabtastung?
-A: Durch die Reduzierung der PDF-Dokumentgröße mit Image Sampling wird die Größe der generierten PDF-Datei verringert, indem die Auflösung der Bilder bei der Konvertierung in PDF reduziert wird. Dies optimiert die Nutzung des Speicherplatzes und erleichtert das Teilen und Übertragen der PDF-Datei.
+### Was ist Downsampling?
+Beim Downsampling wird die Auflösung von Bildern verringert, wodurch die Dateigröße der Dokumente, die diese Bilder enthalten, verringert wird.
 
-#### F: Wie kann ich die Größe eines PDF-Dokuments mithilfe von Bildsampling unter Verwendung von Aspose.Words für .NET reduzieren?
-A: Um die Größe eines PDF-Dokuments mithilfe der Bildabtastung unter Verwendung von Aspose.Words für .NET zu reduzieren, befolgen Sie diese Schritte:
+### Wird die Bildqualität durch Downsampling beeinträchtigt?
+Ja, durch Downsampling verringert sich die Bildqualität. Die Auswirkung hängt jedoch vom Grad der Auflösungsreduzierung ab. Es handelt sich um einen Kompromiss zwischen Dateigröße und Bildqualität.
 
- Legen Sie den Verzeichnispfad fest, in dem sich Ihre Dokumente befinden, indem Sie ersetzen`"YOUR DOCUMENTS DIRECTORY"` durch den tatsächlichen Pfad Ihres Dokumentverzeichnisses.
+### Kann ich auswählen, welche Bilder herunterskaliert werden sollen?
+ Ja, durch die Einstellung der`ResolutionThreshold`können Sie steuern, welche Bilder basierend auf ihrer Originalauflösung herunterskaliert werden.
 
- Laden Sie das Dokument, das Sie in PDF konvertieren möchten, mit dem`Document` Klasse und geben Sie den Pfad zum Dokument im angegebenen Dokumentverzeichnis an.
+### Was ist die ideale Auflösung für Downsampling?
+Die ideale Auflösung hängt von Ihren spezifischen Anforderungen ab. Normalerweise werden 72 DPI für Webbilder verwendet, während höhere Auflösungen für die Druckqualität verwendet werden.
 
- Konfigurieren Sie die Optionen zum Speichern als PDF, indem Sie eine Instanz des`PdfSaveOptions` Klasse und Festlegen der Bildabtastoptionen mithilfe der`DownsampleOptions` Eigenschaft. Sie können die Zielauflösung von Bildern mit der`Resolution` und legen Sie eine Mindestauflösung fest, oberhalb derer Bilder nicht mit der`ResolutionThreshold` Eigentum.
-
- Speichern Sie das Dokument im PDF-Format mit dem`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.
-
-#### F: Welche Vorteile bietet die Reduzierung der PDF-Dokumentgröße durch Bildabtastung?
-A: Die Reduzierung der PDF-Dokumentgröße durch Bildabtastung bietet folgende Vorteile:
-
-Reduzierte PDF-Dateigröße: Durch die Bildabtastung wird die Auflösung der Bilder im PDF-Dokument reduziert, was zu einer deutlichen Reduzierung der PDF-Dateigröße führt. Dies erleichtert das Teilen und Übertragen der Datei, insbesondere per E-Mail oder online.
-
-Optimierung des Speicherplatzes: Durch die Reduzierung der PDF-Dateigröße lässt sich der Speicherplatz optimal nutzen, insbesondere wenn Sie viele PDF-Dateien mit hochauflösenden Bildern haben.
-
-Leistungsverbesserungen: Kleinere PDF-Dateien werden schneller geladen und können auf verschiedenen Geräten schneller geöffnet und angezeigt werden.
+### Ist Aspose.Words für .NET kostenlos?
+ Aspose.Words für .NET ist ein kommerzielles Produkt, aber Sie können eine kostenlose Testversion herunterladen[Hier](https://releases.aspose.com/) oder bewerben Sie sich für eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).

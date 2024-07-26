@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## Manipulace s varováními vykreslování PDF pomocí Aspose.Words pro .NET
+## Úvod
 
 Pokud pracujete s Aspose.Words for .NET, je správa upozornění na vykreslování PDF základním aspektem pro zajištění správného zpracování a uložení vašich dokumentů. V tomto komplexním průvodci si projdeme, jak zacházet s upozorněními na vykreslování PDF pomocí Aspose.Words. Na konci tohoto kurzu budete mít jasno v tom, jak implementovat tuto funkci do vašich projektů .NET.
 
@@ -79,7 +79,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 public class HandleDocumentWarnings : IWarningCallback
 {
     /// <souhrn>
-    /// Tato metoda je volána vždy, když během zpracování dokumentu dojde k potenciálnímu problému.
+    //Tato metoda je volána vždy, když během zpracování dokumentu dojde k potenciálnímu problému.
     /// </summary>
     public void Warning(WarningInfo info)
     {

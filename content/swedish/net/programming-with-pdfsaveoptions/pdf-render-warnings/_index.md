@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## Hantera varningar för PDF-rendering med Aspose.Words för .NET
+## Introduktion
 
 Om du arbetar med Aspose.Words för .NET är hantering av PDF-renderingsvarningar en viktig aspekt för att säkerställa att dina dokument behandlas och sparas korrekt. I den här omfattande guiden går vi igenom hur man hanterar varningar för PDF-rendering med Aspose.Words. I slutet av denna handledning har du en tydlig förståelse för hur du implementerar den här funktionen i dina .NET-projekt.
 
@@ -79,7 +79,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 public class HandleDocumentWarnings : IWarningCallback
 {
     /// <sammanfattning>
-    /// Den här metoden anropas när det finns ett potentiellt problem under dokumentbehandlingen.
+    //Den här metoden anropas när det finns ett potentiellt problem under dokumentbehandlingen.
     /// </summary>
     public void Warning(WarningInfo info)
     {

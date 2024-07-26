@@ -21,7 +21,7 @@ Om te beginnen met het bouwen van de tabel, moeten we een nieuw document maken e
 // Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Maak het document en initialiseer de documentgenerator
+//Maak het document en initialiseer de documentgenerator
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Roep de volgende methode aan om de eerste regel te beëindigen en een nieuwe regel te beginnen
+// Roep de volgende methode aan om de eerste regel te beëindigen en een nieuwe regel te beginnen
 builder. EndRow();
 
 // Constructie van de eerste cel van de tweede rij
@@ -99,7 +99,7 @@ Zorg ervoor dat u het juiste pad en de juiste bestandsnaam voor het uitvoerdocum
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Geef aan dat we klaar zijn met het bouwen van de tafel.
+	// Geef aan dat we klaar zijn met het bouwen van de tafel.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

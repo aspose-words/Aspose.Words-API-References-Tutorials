@@ -14,8 +14,8 @@ Die Tutorials behandeln auch die grundlegenden Konzepte der Bildbearbeitung, ein
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Belichtungsschwellenwertsteuerung für die TIFF-Binarisierung](./expose-threshold-control-for-tiff-binarization/) | Erfahren Sie, wie Sie den TIFF-Binarisierungsschwellenwert mit Aspose.Words für .NET steuern. Vollständiges Tutorial für Bilder in besserer Qualität. |
-| [Tiff-Seitenbereich abrufen](./get-tiff-page-range/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Reihe von TIFF-Seiten extrahieren. Vollständiges Tutorial für benutzerdefinierte TIFF-Dateien. |
-| [Format 1Bpp indiziert](./format-1bpp-indexed/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET indizierte Bilder in 1 bpp formatieren. Vollständiges Tutorial für Bilder mit geringer Farbtiefe. |
-| [JPEG-Seitenbereich abrufen](./get-jpeg-page-range/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Reihe von JPEG-Seiten erhalten. Vollständiges Tutorial zum Extrahieren benutzerdefinierter Bilder. |
-| [Rückruf zum Speichern der Seite](./page-saving-callback/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET das Speichern von Dokumentseiten als Bilder anpassen. |
+| [Belichtungsschwellenwertsteuerung für die TIFF-Binarisierung](./expose-threshold-control-for-tiff-binarization/) | Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET die Schwellenwertsteuerung für die TIFF-Binarisierung in Word-Dokumenten verfügbar machen. |
+| [Tiff-Seitenbereich abrufen](./get-tiff-page-range/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET bestimmte Seitenbereiche aus Word-Dokumenten in TIFF-Dateien konvertieren. |
+| [Format 1Bpp indiziert](./format-1bpp-indexed/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ein Word-Dokument in ein 1Bpp-indiziertes Bild konvertieren. Folgen Sie unserer Schritt-für-Schritt-Anleitung zur einfachen Konvertierung. |
+| [JPEG-Seitenbereich abrufen](./get-jpeg-page-range/) | Konvertieren Sie bestimmte Seiten von Word-Dokumenten mit benutzerdefinierten Einstellungen mit Aspose.Words für .NET in JPEG. Erfahren Sie Schritt für Schritt, wie Sie Helligkeit, Kontrast und Auflösung anpassen. |
+| [Rückruf zum Speichern der Seite](./page-saving-callback/) | Erfahren Sie mit unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET jede Seite eines Word-Dokuments als separates PNG-Bild speichern. |

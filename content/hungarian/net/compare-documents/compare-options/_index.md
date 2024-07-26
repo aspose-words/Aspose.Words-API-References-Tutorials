@@ -116,7 +116,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## GYIK
 
-### Összehasonlíthatok egyszerre kettőnél több dokumentumot?  
+### Összehasonlíthatok kettőnél több dokumentumot egyszerre?  
 Az Aspose.Words for .NET egyszerre két dokumentumot hasonlít össze. Több dokumentum összehasonlításához páronként is megteheti.
 
 ### Hogyan hagyhatom figyelmen kívül a képek változásait?  

@@ -39,7 +39,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي الذي تريد حفظ مستند PDF الخاص بك فيه.
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي الذي تريد حفظ مستند PDF الخاص بك فيه.
 
 ## الخطوة 2: إنشاء مستند جديد
 

@@ -16,6 +16,6 @@ Niezależnie od tego, czy potrzebujesz generować raporty, tworzyć niestandardo
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Wykryj format pliku dokumentu](./detect-file-format/) | Przewodnik krok po kroku dotyczący wykrywania formatu pliku dokumentu za pomocą Aspose.Words dla .NET. |
-| [Wykryj podpis cyfrowy w dokumencie programu Word](./detect-document-signatures/) | Przewodnik krok po kroku dotyczący wykrywania podpisów cyfrowych w dokumencie za pomocą Aspose.Words dla .NET. |
-| [Zweryfikuj zaszyfrowany dokument Word](./verify-encrypted-document/) | Przewodnik krok po kroku, jak sprawdzić, czy dokument jest zaszyfrowany za pomocą Aspose.Words dla .NET. |
+| [Wykryj format pliku dokumentu](./detect-file-format/) | Dowiedz się, jak wykrywać formaty plików dokumentów za pomocą Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku. |
+| [Wykryj podpis cyfrowy w dokumencie programu Word](./detect-document-signatures/) | Dowiedz się, jak wykryć podpisy cyfrowe w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. |
+| [Zweryfikuj zaszyfrowany dokument Word](./verify-encrypted-document/) | Dowiedz się, jak zweryfikować status szyfrowania dokumentu programu Word za pomocą Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. |

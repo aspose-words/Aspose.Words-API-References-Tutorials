@@ -30,7 +30,7 @@ import com.aspose.words.FieldOptions;
 
 ## Belge Nesnesi Oluşturma
 
- Bir başlat`Document` Barkod alanı içeren mevcut bir Word belgesini yükleyerek nesneyi tarayın. Yer değiştirmek`"Field sample - BARCODE.docx"` Word belgenizin yolu ile birlikte:
+ Bir başlat`Document` Barkod alanı içeren mevcut bir Word belgesini yükleyerek nesneyi tarayın. Yer değiştirmek`"Field sample - BARCODE.docx"` Word belgenizin yolu ile:
 
 ```java
 Document doc = new Document("Field sample - BARCODE.docx");

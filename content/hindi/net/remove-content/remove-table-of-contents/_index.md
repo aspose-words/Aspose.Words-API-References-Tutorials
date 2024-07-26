@@ -41,7 +41,7 @@ using Aspose.Words.Fields;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"` अपने डॉक्यूमेंट फ़ोल्डर के पथ के साथ। यह वह जगह है जहाँ आपकी वर्ड फ़ाइल रहती है।
+ प्रतिस्थापित करें`"YOUR DOCUMENT DIRECTORY"`अपने डॉक्यूमेंट फ़ोल्डर के पथ के साथ। यह वह जगह है जहाँ आपकी वर्ड फ़ाइल रहती है।
 
 ## चरण 2: दस्तावेज़ लोड करें
 

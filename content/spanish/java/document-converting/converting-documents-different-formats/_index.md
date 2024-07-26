@@ -10,7 +10,7 @@ url: /es/java/document-converting/converting-documents-different-formats/
 
 ## Introducción a la conversión de documentos a diferentes formatos
 
-En el mundo digital actual, la capacidad de convertir documentos de un formato a otro es esencial. Ya sea que se trate de informes, contratos o cualquier otro tipo de documento, es fundamental contar con una herramienta confiable para manejar la conversión de documentos. En esta guía paso a paso, exploraremos cómo utilizar Aspose.Words para Java para convertir documentos a diferentes formatos sin esfuerzo. Aspose.Words para Java es una potente API que proporciona una solución perfecta para la manipulación y conversión de documentos.
+En el mundo digital actual, la capacidad de convertir documentos de un formato a otro es esencial. Ya sea que se trate de informes, contratos o cualquier otro tipo de documento, es fundamental contar con una herramienta confiable para manejar la conversión de documentos. En esta guía paso a paso, exploraremos cómo usar Aspose.Words para Java para convertir documentos a diferentes formatos sin esfuerzo. Aspose.Words para Java es una potente API que proporciona una solución perfecta para la manipulación y conversión de documentos.
 
 ## Primeros pasos con Aspose.Words para Java
 

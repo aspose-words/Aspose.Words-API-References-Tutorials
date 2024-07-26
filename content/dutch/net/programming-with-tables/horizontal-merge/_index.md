@@ -21,7 +21,7 @@ Om Woordenverwerking met de tabel en cellen te starten, moeten we een nieuw docu
 // Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Maak het document en initialiseer de documentgenerator
+//Maak het document en initialiseer de documentgenerator
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

@@ -52,7 +52,7 @@ public class DocumentEncryptionExample {
 }
 ```
 
-Dalam kode ini, kita memuat dokumen, menetapkan kata sandi untuk enkripsi, dan kemudian menyimpan dokumen terenkripsi sebagai "encrypted_document.docx".
+Dalam kode ini, kami memuat dokumen, menetapkan kata sandi untuk enkripsi, dan kemudian menyimpan dokumen terenkripsi sebagai "encrypted_document.docx".
 
 ## Langkah 3: Dekripsi Dokumen
 
