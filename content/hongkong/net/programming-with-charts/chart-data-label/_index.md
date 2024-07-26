@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-charts/chart-data-label/
 
 在我們開始之前，請確保您具備以下條件：
 
-1. Visual Studio：安裝 Visual Studio 2019 或更新版本。
+1. Visual Studio：安裝 Visual Studio 2019 或更高版本。
 2. .NET Framework：確保您擁有 .NET Framework 4.0 或更高版本。
 3.  Aspose.Words for .NET：從下列位置下載並安裝 Aspose.Words for .NET[下載連結](https://releases.aspose.com/words/net/).
 4. C# 基礎知識：熟悉 C# 程式設計至關重要。
@@ -132,4 +132,4 @@ Aspose.Words for .NET 是一個功能強大的文件處理庫，可讓開發人�
 是的，Aspose.Words for .NET 與 .NET Core、.NET Standard 和 .NET Framework 相容。
 
 ### 在哪裡可以獲得 Aspose.Words for .NET 支援？
-您可以訪問[支援論壇](https://forum.aspose.com/c/words/8)尋求 Aspose 社區和專家的幫助和協助。
+您可以訪問[支援論壇](https://forum.aspose.com/c/words/8)尋求 Aspose 社區和專家的幫助和幫助。

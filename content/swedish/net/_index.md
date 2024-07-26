@@ -23,7 +23,7 @@ is_root: true
 | [Ordbehandling med sidhuvuden och sidfötter](./working-with-headers-and-footers/) |Lär dig hur du arbetar med sidhuvuden och sidfötter i Word-dokument med Aspose.Words för .NET. Kompletta handledningar och praktiska exempel. |  
 | [Ordbehandling med avstavning](./working-with-hyphenation/) | Lär dig hur du hanterar ordavstavning i Word-dokument med Aspose.Words för .NET. Kompletta handledningar och praktiska exempel ingår. |  
 | [Ordbehandling med lista](./working-with-list/) | Lär dig hur du arbetar med listor i Word-dokument med Aspose.Words för .NET. Detaljerade tutorials med kodexempel. |  
-| [Ordbehandling med Markdown](./working-with-markdown/) | Lär dig hur du arbetar med Markdown-syntax i Word-dokument med Aspose.Words för .NET med dessa steg-för-steg handledningar och praktiska exempel. |  
+| [Ordbehandling med Markdown](./working-with-markdown/) | Lär dig hur du arbetar med Markdown-syntax i Word-dokument med Aspose.Words för .NET med dessa steg-för-steg-handledningar och praktiska exempel. |  
 | [Ordbehandling med Node](./working-with-node/) | Lär dig hur du arbetar med noder i Word-dokument med Aspose.Words för .NET. Detaljerade tutorials med kodexempel. |  
 | [Ordbehandling med OleObjects och ActiveX](./working-with-oleobjects-and-activex/) | Lär dig hur du arbetar med OLE- och ActiveX-objekt i Word-dokument med Aspose.Words för .NET. Detaljerade tutorials med kodexempel. |  
 | [Ordbehandling med revisioner](./working-with-revisions/) | Lär dig hur du arbetar med revisioner i Word-dokument med Aspose.Words för .NET. Steg-för-steg handledning med exempelkod för hantering och visning av revisioner. |  

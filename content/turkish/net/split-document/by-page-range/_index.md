@@ -83,5 +83,5 @@ Hayır, "Sayfa Aralığına Göre" özelliği korumasız Word belgelerinde çal�
 "Sayfa Aralığına Göre" özelliği kullanılarak çıkarılabilecek sayfa sayısı Aspose.Words for .NET'in yeteneklerine ve mevcut sistem kaynaklarına bağlıdır. Genel olarak çeşitli boyutlardaki belgelerden sayfa aralıklarının çıkarılmasını destekler, ancak çok büyük belgeler veya çok uzun sayfa aralıkları ek sistem kaynakları ve işlem süresi gerektirebilir.
 
 #### S5: "Sayfa Aralığına Göre" özelliğini kullanarak metin içeriğinin yanı sıra resim veya tablo gibi diğer öğeleri de çıkarabilir miyim?
-Evet, Aspose.Words for .NET kullanarak bir sayfa aralığını çıkardığınızda, metin, görseller, tablolar ve bu sayfalarda bulunan diğer öğeler de dahil olmak üzere belirtilen aralıktaki tüm içeriği içerir. Çıkarılan içerik yeni belgede korunacaktır.
+Evet, Aspose.Words for .NET'i kullanarak bir sayfa aralığını çıkardığınızda, metin, görseller, tablolar ve bu sayfalarda bulunan diğer öğeler de dahil olmak üzere belirtilen aralıktaki tüm içeriği içerir. Çıkarılan içerik yeni belgede korunacaktır.
 

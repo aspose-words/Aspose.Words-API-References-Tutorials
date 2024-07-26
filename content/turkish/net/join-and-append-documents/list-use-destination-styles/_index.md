@@ -9,7 +9,7 @@ url: /tr/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## giriiş
 
-Hiç Word belgelerini birleştirmeyi denediniz mi ve biçimlendirmeyle uğraştınız mı? Bazen yağla suyu karıştırmaya benziyor, değil mi? Bugün Aspose.Words for .NET'i kullanarak sizi bu baş ağrısından kurtaracak güzel bir numaraya dalıyoruz. Numaralandırmayı ve stilleri bozmadan listeleri bir belgeden diğerine nasıl aktaracağımızı öğreneceğiz. Hayatınızı biraz daha kolaylaştırmaya hazır mısınız? Başlayalım!
+Hiç Word belgelerini birleştirmeyi denediniz mi ve biçimlendirmeyle uğraştınız mı? Bazen yağla suyu karıştırmaya benziyor, değil mi? Bugün Aspose.Words for .NET'i kullanarak sizi bu baş ağrısından kurtaracak harika bir numaraya dalıyoruz. Numaralandırmayı ve stilleri bozmadan listeleri bir belgeden diğerine nasıl aktaracağımızı öğreneceğiz. Hayatınızı biraz daha kolaylaştırmaya hazır mısınız? Başlayalım!
 
 ## Önkoşullar
 

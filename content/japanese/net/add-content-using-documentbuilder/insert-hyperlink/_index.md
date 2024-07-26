@@ -114,7 +114,7 @@ Aspose.Words for .NET を使用して Word 文書にハイパーリンクを挿�
 
 ### 画像にハイパーリンクを追加できますか?
 
-はい、`InsertHyperlink`方法と組み合わせる`InsertImage`画像にハイパーリンクを追加します。
+はい、`InsertHyperlink`と組み合わせた方法`InsertImage`画像にハイパーリンクを追加します。
 
 ### URL が無効な場合はどうなりますか?
 

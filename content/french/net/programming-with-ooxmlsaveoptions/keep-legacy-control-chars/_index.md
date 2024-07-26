@@ -2,68 +2,102 @@
 title: Conserver les caractères de contrôle hérités
 linktitle: Conserver les caractères de contrôle hérités
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment conserver les caractères de contrôle hérités lors de l’enregistrement d’un document avec Aspose.Words for .NET.
+description: Découvrez comment conserver les caractères de contrôle hérités dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
+## Introduction
 
-Dans ce didacticiel, nous explorerons le code source C# fourni pour conserver les caractères de contrôle hérités lors de l'enregistrement d'un document à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité vous permet de conserver les caractères de contrôle spéciaux lors de la conversion ou de l'enregistrement d'un document.
+Avez-vous déjà été intrigué par ces étranges caractères de contrôle invisibles dans vos documents Word ? Ils sont comme de minuscules gremlins cachés qui peuvent gâcher le formatage et les fonctionnalités. Heureusement, Aspose.Words for .NET fournit une fonctionnalité pratique pour conserver ces caractères de contrôle hérités intacts lors de l'enregistrement de documents. Dans ce didacticiel, nous verrons en profondeur comment gérer ces caractères de contrôle à l'aide d'Aspose.Words pour .NET. Nous le détaillerons étape par étape, en veillant à ce que vous compreniez chaque détail tout au long du processus. Prêt à commencer? Allons-y !
 
-## Étape 1 : Configuration de l'environnement
+## Conditions préalables
 
-Avant de commencer, assurez-vous d'avoir configuré votre environnement de développement avec Aspose.Words for .NET. Assurez-vous d'avoir ajouté les références nécessaires et importé les espaces de noms appropriés.
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-## Étape 2 : Chargement du document
+1.  Aspose.Words pour .NET : télécharger et installer à partir de[ici](https://releases.aspose.com/words/net/).
+2.  Une licence Aspose valide : Vous pouvez obtenir une licence temporaire[ici](https://purchase.aspose.com/temporary-license/).
+3. Environnement de développement : Visual Studio ou tout autre IDE prenant en charge .NET.
+4. Connaissance de base de C# : Une connaissance du langage de programmation C# sera utile.
 
-```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+## Importer des espaces de noms
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
-```
-
- Dans cette étape, nous chargeons le document en utilisant le`Document` et en transmettant le chemin d'accès au fichier contenant les caractères de contrôle hérités.
-
-## Étape 3 : Configuration des options de sauvegarde OOXML
+Avant d'écrire votre code, vous devez importer les espaces de noms nécessaires. Ajoutez les lignes suivantes en haut de votre fichier C# :
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- Dans cette étape, nous configurons les options de sauvegarde OOXML en créant un nouveau`OoxmlSaveOptions` objet. Nous précisons le format de sauvegarde souhaité (ici,`FlatOpc` ) et activez le`KeepLegacyControlChars` option pour conserver les caractères de contrôle hérités.
+## Étape 1 : Configuration de votre projet
 
-## Étape 4 : Enregistrement du document avec les caractères de contrôle hérités
+Tout d’abord, vous devrez configurer votre projet dans Visual Studio (ou votre IDE préféré). 
 
-```csharp
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-```
+1. Créez un nouveau projet C# : ouvrez Visual Studio et créez un nouveau projet d'application console C#.
+2. Installez Aspose.Words pour .NET : utilisez NuGet Package Manager pour installer Aspose.Words pour .NET. Cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions, sélectionnez « Gérer les packages NuGet », recherchez « Aspose.Words » et installez-le.
 
- Dans cette dernière étape, nous sauvegardons le document en utilisant le`Save` méthode et en passant le chemin d'accès au fichier de sortie avec le`.docx` extension, ainsi que les options de sauvegarde spécifiées.
+## Étape 2 : Chargez votre document
 
-Vous pouvez désormais exécuter du code source pour conserver les caractères de contrôle hérités lors de l'enregistrement d'un document. Le fichier résultant sera enregistré dans le répertoire spécifié sous le nom "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
+Ensuite, vous chargerez le document Word contenant les caractères de contrôle hérités.
 
-### Exemple de code source pour conserver les caractères de contrôle hérités à l'aide d'Aspose.Words pour .NET 
-```csharp
+1. Spécifiez le chemin du document : définissez le chemin d'accès à votre répertoire de documents.
+   
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
 
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+2.  Chargez le document : Utilisez le`Document` classe pour charger votre document.
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```csharp
+   Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+## Étape 3 : Configurer les options d'enregistrement
 
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-            
-        
-```
+Maintenant, configurons les options de sauvegarde pour conserver les caractères de contrôle hérités intacts.
+
+1.  Créer des options de sauvegarde : initialiser une instance de`OoxmlSaveOptions` et réglez le`KeepLegacyControlChars`propriété à`true`.
+
+   ```csharp
+   OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)
+   {
+       KeepLegacyControlChars = true
+   };
+   ```
+
+## Étape 4 : Enregistrez le document
+
+Enfin, enregistrez le document avec les options d'enregistrement configurées.
+
+1.  Enregistrez le document : utilisez le`Save` méthode du`Document` classe pour enregistrer le document avec les options d’enregistrement spécifiées.
+
+   ```csharp
+   doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
+   ```
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons exploré la fonctionnalité de préservation des caractères de contrôle hérités lors de l'enregistrement d'un document à l'aide d'Aspose.Words pour .NET. Nous avons appris à conserver les caractères spéciaux qui peuvent être importants pour le formatage ou l'affichage correct du document.
+Et voila! En suivant ces étapes, vous pouvez vous assurer que vos caractères de contrôle hérités sont préservés lorsque vous travaillez avec des documents Word dans Aspose.Words pour .NET. Cette fonctionnalité peut vous sauver la vie, en particulier lorsqu'il s'agit de documents complexes dans lesquels les caractères de contrôle jouent un rôle crucial. 
 
- La préservation des caractères de contrôle hérités est particulièrement utile lors du traitement de texte avec des documents qui utilisent des fonctionnalités plus anciennes ou spécifiques, telles que des caractères de contrôle spéciaux. En activant le`KeepLegacyControlChars` lors de l’enregistrement du document, vous vous assurez que ces caractères sont conservés.
+## FAQ
 
-Aspose.Words for .NET offre une gamme d'options de sauvegarde flexibles et puissantes pour répondre à vos besoins de manipulation de documents. En utilisant les options appropriées, vous pouvez personnaliser le processus de sauvegarde pour préserver les caractéristiques spécifiques de vos documents.
+### Que sont les caractères de contrôle hérités ?
 
-N'hésitez pas à intégrer cette fonctionnalité dans vos projets Aspose.Words for .NET pour garantir l'intégrité et la préservation des caractères de contrôle hérités dans vos documents.
+Les caractères de contrôle hérités sont des caractères non imprimables utilisés dans les documents plus anciens pour contrôler le formatage et la mise en page.
+
+### Puis-je supprimer ces caractères de contrôle au lieu de les conserver ?
+
+Oui, vous pouvez utiliser Aspose.Words for .NET pour supprimer ou remplacer ces caractères si nécessaire.
+
+### Cette fonctionnalité est-elle disponible dans toutes les versions d’Aspose.Words for .NET ?
+
+Cette fonctionnalité est disponible dans les versions récentes. Assurez-vous d'utiliser la dernière version pour accéder à toutes les fonctionnalités.
+
+### Ai-je besoin d’une licence pour utiliser Aspose.Words pour .NET ?
+
+ Oui, vous avez besoin d'une licence valide. Vous pouvez obtenir une licence temporaire à des fins d'évaluation[ici](https://purchase.aspose.com/temporary-license/).
+
+### Où puis-je trouver plus de documentation sur Aspose.Words pour .NET ?
+
+ Vous pouvez trouver une documentation détaillée[ici](https://reference.aspose.com/words/net/).
+ 

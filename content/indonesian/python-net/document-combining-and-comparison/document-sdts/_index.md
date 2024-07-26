@@ -22,7 +22,7 @@ Pemanfaatan SDT menawarkan beberapa manfaat, antara lain:
 - Konten Dinamis: SDT memungkinkan penyisipan konten dinamis yang diperbarui secara otomatis, seperti stempel tanggal dan waktu.
 - Kemudahan Kolaborasi: Kolaborator dapat fokus pada konten tanpa mengubah struktur dokumen.
 
-## Memulai dengan Aspose.Words untuk Python
+## Memulai Aspose.Words untuk Python
 
 Sebelum kita mendalami penggunaan SDT, mari kita mulai dengan Aspose.Words untuk Python. Aspose.Words adalah perpustakaan canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram. Untuk memulai, ikuti langkah-langkah berikut:
 
@@ -145,7 +145,7 @@ Tidak, SDT khusus untuk dokumen Word dan tidak tersedia di Excel atau PowerPoint
 
 ### Apakah SDT kompatibel dengan Microsoft Word versi lama?
 
-SDT kompatibel dengan Microsoft Word 2010 dan versi yang lebih baru. Mereka mungkin tidak berfungsi sebagaimana mestinya di versi sebelumnya.
+SDT kompatibel dengan Microsoft Word 2010 dan versi yang lebih baru. Mereka mungkin tidak berfungsi sebagaimana mestinya pada versi sebelumnya.
 
 ### Bisakah saya membuat tipe SDT khusus?
 

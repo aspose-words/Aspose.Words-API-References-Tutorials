@@ -108,7 +108,7 @@ using Aspose.Words;
    dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
    ```
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將文件附加到空白文件。這不是比你想像的更容易嗎？
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將文件附加到空白文件。這不是比你想像的更容易嗎？
 
 ## 結論
 

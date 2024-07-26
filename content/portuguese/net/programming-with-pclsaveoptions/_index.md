@@ -14,4 +14,4 @@ Os tutoriais Aspose.Words for .NET fornecem um recurso valioso para dominar os p
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Rasterizar elementos transformados](./rasterize-transformed-elements/) | Aprenda como desabilitar a rasterização de elementos transformados ao converter para o formato PCL com Aspose.Words for .NET. |
+| [Rasterizar elementos transformados](./rasterize-transformed-elements/) | Aprenda como rasterizar elementos transformados ao converter documentos do Word para o formato PCL usando Aspose.Words for .NET. Guia passo a passo incluído. |

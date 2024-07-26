@@ -16,5 +16,5 @@ Oavsett om du är nybörjare eller en erfaren utvecklare, kommer dessa tutorials
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Områden Ta bort text i Word-dokument](./ranges-delete-text/) | Lär dig hur du tar bort text i specifika intervall i ett Word-dokument med Aspose.Words för .NET. |
-| [Ranges Få text i Word-dokument](./ranges-get-text/) | Lär dig hur du enkelt extraherar text i ett Word-dokument med Aspose.Words för .NET. |
+| [Områden Ta bort text i Word-dokument](./ranges-delete-text/) | Lär dig hur du tar bort text från ett intervall i ett Word-dokument med Aspose.Words för .NET med denna steg-för-steg handledning. Perfekt för C#-utvecklare. |
+| [Ranges Få text i Word-dokument](./ranges-get-text/) | Extrahera text från Word-dokument utan ansträngning med Aspose.Words för .NET. Följ vår detaljerade guide för att komma igång med lätthet. |

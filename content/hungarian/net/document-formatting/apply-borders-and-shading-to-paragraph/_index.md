@@ -2,7 +2,7 @@
 title: Szegélyek és árnyékolások alkalmazása a Word-dokumentum bekezdésére
 linktitle: Szegélyek és árnyékolások alkalmazása a Word-dokumentum bekezdésére
 second_title: Aspose.Words Document Processing API
-description: Szegélyek és árnyékolások alkalmazása a Word-dokumentumok bekezdéseinél az Aspose.Words for .NET segítségével. Kövesse lépésenkénti útmutatónkat a dokumentum formázásának javításához.
+description: Szegélyek és árnyékolások alkalmazása a Word-dokumentumok bekezdéseire az Aspose.Words for .NET segítségével. Kövesse lépésenkénti útmutatónkat a dokumentum formázásának javításához.
 type: docs
 weight: 10
 url: /hu/net/document-formatting/apply-borders-and-shading-to-paragraph/
@@ -18,7 +18,7 @@ Mielőtt feltűrjük az ingujjunkat és belemerülünk a kódolásba, győződj�
 -  Aspose.Words for .NET: Telepíteni kell ezt a könyvtárat. Letöltheti a[Aspose honlapja](https://releases.aspose.com/words/net/).
 - Fejlesztési környezet: Visual Studio vagy bármely más IDE, amely támogatja a .NET-et.
 - Alapvető C# ismerete: éppen elég ahhoz, hogy megértse és módosítsa a kódrészleteket.
-- Érvényes engedély: vagy a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) vagy egy től vásárolt[Aspose](https://purchase.aspose.com/buy).
+- Érvényes licenc: vagy a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) vagy egy től vásárolt[Aspose](https://purchase.aspose.com/buy).
 
 ## Névterek importálása
 
@@ -112,7 +112,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ### Használhatok különböző vonalstílusokat minden szegélyhez?  
  Teljesen! Az Aspose.Words for .NET lehetővé teszi az egyes szegélyek egyéni testreszabását. Csak állítsd be a`LineStyle` minden szegélytípushoz az útmutatóban látható módon.
 
-### Milyen más árnyékoló textúrák állnak rendelkezésre?  
+### Milyen egyéb árnyékoló textúrák állnak rendelkezésre?  
  Számos textúra használható, például tömör, vízszintes csík, függőleges csík stb. Ellenőrizd a[Aspose dokumentáció](https://reference.aspose.com/words/net/) a teljes listáért.
 
 ### Hogyan tudom megváltoztatni a keret színét?  

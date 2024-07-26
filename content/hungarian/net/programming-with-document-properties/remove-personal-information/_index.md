@@ -58,7 +58,7 @@ doc.RemovePersonalInformation = true;
 
 ### 2.2 Mentse el a dokumentumot
 
-Most, hogy megtisztítottuk a dokumentumunkat, mentsük el. Ez biztosítja, hogy minden módosításunk alkalmazásra kerüljön, és a dokumentum készen álljon a használatra.
+Most, hogy megtisztítottuk a dokumentumunkat, mentsük el. Ez biztosítja, hogy minden módosításunk alkalmazásra kerül, és a dokumentum készen áll a használatra.
 
 ```csharp
 doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.docx");

@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Schritt 3: Aktualisieren Sie die Smart Art-Zeichnung
- Iterieren Sie durch die Formen im Dokument mit dem`GetChildNodes` Methode mit dem`NodeType.Shape` Parameter. Überprüfen Sie, ob jede Form Smart Art hat, indem Sie den`HasSmartArt` Eigenschaft, und wenn wahr, rufen Sie die`UpdateSmartArtDrawing` Methode zum Aktualisieren der Smart Art-Zeichnung.
+ Iterieren Sie durch die Formen im Dokument mit dem`GetChildNodes` Methode mit dem`NodeType.Shape` Parameter. Überprüfen Sie, ob jede Form Smart Art hat, indem Sie den`HasSmartArt`Eigenschaft, und wenn wahr, rufen Sie die`UpdateSmartArtDrawing` Methode zum Aktualisieren der Smart Art-Zeichnung.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

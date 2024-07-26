@@ -16,5 +16,5 @@ Bu eğitimlerde, metin aralıklarıyla verimli ve doğru bir şekilde çalışma
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Aralıklar Word Belgesindeki Metni Silme](./ranges-delete-text/) | Aspose.Words for .NET'i kullanarak bir Word belgesinde belirli aralıklardaki metni nasıl sileceğinizi öğrenin. |
-| [Aralıklar Word Belgesindeki Metni Al](./ranges-get-text/) | Aspose.Words for .NET'i kullanarak bir Word belgesindeki metni nasıl kolayca çıkaracağınızı öğrenin. |
+| [Aralıklar Word Belgesindeki Metni Silme](./ranges-delete-text/) | Bu adım adım eğitimle Aspose.Words for .NET kullanarak bir Word belgesindeki bir aralıktaki metni nasıl sileceğinizi öğrenin. C# geliştiricileri için mükemmel. |
+| [Aralıklar Word Belgesindeki Metni Al](./ranges-get-text/) | Aspose.Words for .NET'i kullanarak Word belgelerinden metni zahmetsizce çıkarın. Kolayca başlamak için ayrıntılı kılavuzumuzu takip edin. |

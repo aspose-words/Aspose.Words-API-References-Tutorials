@@ -107,7 +107,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werk
 
 `LoadOptions` wordt gebruikt om verschillende opties op te geven voor het laden van een document, zoals het instellen van de standaard bewerkingstaal.
 
-### Kan ik andere talen instellen als de standaard bewerkingstaal?
+### Kan ik andere talen instellen als standaard bewerkingstaal?
 
  Ja, u kunt elke door Aspose.Words ondersteunde taal instellen door de juiste taal toe te wijzen`EditingLanguage` waarde aan`DefaultEditingLanguage`.
 

@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-W porządku, podzielmy proces na zrozumiałe etapy. Postępuj zgodnie ze wskazówkami, a w mgnieniu oka staniesz się profesjonalistą w unikaniu identyfikatorów URI!
+porządku, podzielmy proces na zrozumiałe etapy. Postępuj zgodnie ze wskazówkami, a w mgnieniu oka staniesz się profesjonalistą w unikaniu identyfikatorów URI!
 
 ## Krok 1: Skonfiguruj katalog dokumentów
 
@@ -39,7 +39,7 @@ Zanim zagłębisz się w kod, ustaw ścieżkę do katalogu dokumentów. Tutaj b�
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, w której chcesz zapisać dokument PDF.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której chcesz zapisać dokument PDF.
 
 ## Krok 2: Utwórz nowy dokument
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ## Wniosek
 
-masz to! Właśnie nauczyłeś się, jak uniknąć identyfikatorów URI podczas zapisywania dokumentu programu Word jako pliku PDF przy użyciu Aspose.Words dla .NET. Ten proces gwarantuje, że hiperłącza pozostaną funkcjonalne i prawidłowo sformatowane w wynikowym pliku PDF. 
+I masz to! Właśnie nauczyłeś się, jak uniknąć identyfikatorów URI podczas zapisywania dokumentu programu Word jako pliku PDF przy użyciu Aspose.Words dla .NET. Ten proces gwarantuje, że hiperłącza pozostaną funkcjonalne i prawidłowo sformatowane w wynikowym pliku PDF. 
 
 Pamiętaj, że opanowanie tych małych, ale znaczących technik może znacznie poprawić jakość i funkcjonalność Twoich dokumentów. Miłego kodowania!
 

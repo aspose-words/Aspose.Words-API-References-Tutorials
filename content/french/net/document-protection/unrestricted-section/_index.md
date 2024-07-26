@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Le`Document` la classe initialise un nouveau document, et la`DocumentBuilder` nous aide à ajouter facilement du contenu à notre document.
+ Le`Document` la classe initialise un nouveau document et la classe`DocumentBuilder` nous aide à ajouter facilement du contenu à notre document.
 
 ## Étape 2 : Insérer des sections
 

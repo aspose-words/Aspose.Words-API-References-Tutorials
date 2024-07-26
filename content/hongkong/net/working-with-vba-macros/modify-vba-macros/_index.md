@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithVba.ModifyVbaMacros.docm");
 
 #### Q：Word 文件中的 VBA 巨集是什麼？
 
-答：Word 文件中的 VBA 巨集是一段程式碼，可以執行該程式碼來執行文件中的特定操作。 VBA 巨集可讓您自動執行任務、新增自訂功能以及與文件內容互動。
+答：Word 文件中的 VBA 巨集是一段可以運作以執行文件中特定操作的程式碼。 VBA 巨集可讓您自動執行任務、新增自訂功能以及與文件內容互動。
 
 #### Q：在Word文件中編輯VBA巨集的先決條件是什麼？
 

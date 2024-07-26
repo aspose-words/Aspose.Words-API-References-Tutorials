@@ -13,5 +13,5 @@ Words Processing with MarkdownSaveOptions ist eine ausführliche Ressource, die 
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Exportieren in Markdown mit Ausrichtung des Tabelleninhalts](./export-into-markdown-with-table-content-alignment/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Tabelleninhalte mit unterschiedlichen Ausrichtungen in Markdown-Dateien exportieren. |
-| [Bilderordner festlegen](./set-images-folder/) | Erfahren Sie, wie Sie den Bilderordner beim Exportieren nach Markdown mit Aspose.Words für .NET festlegen. Passen Sie die Platzierung der Bilder für eine bessere Organisation und Integration an.|
+| [Exportieren in Markdown mit Ausrichtung des Tabelleninhalts](./export-into-markdown-with-table-content-alignment/) | Erfahren Sie, wie Sie Word-Dokumente mit ausgerichteten Tabellen mithilfe von Aspose.Words für .NET in Markdown exportieren. Folgen Sie unserer Schritt-für-Schritt-Anleitung für perfekte Markdown-Tabellen. |
+| [Bilderordner festlegen](./set-images-folder/) | Konvertieren Sie Word-Dokumente mit der richtigen Tabellenausrichtung in Markdown mit Aspose.Words für .NET. Folgen Sie unserer ausführlichen Anleitung für perfekte Ergebnisse. |

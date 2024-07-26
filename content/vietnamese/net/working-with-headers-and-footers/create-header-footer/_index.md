@@ -34,7 +34,7 @@ using System;
 Xác định thư mục nơi tài liệu của bạn sẽ được lưu. Điều này giúp quản lý đường dẫn một cách hiệu quả.
 
 ```csharp
-// Đường dẫn tới thư mục tài liệu
+// Đường dẫn đến thư mục tài liệu
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 

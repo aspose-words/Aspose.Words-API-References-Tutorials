@@ -16,4 +16,4 @@ url: /ko/net/programming-with-rtfloadoptions/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [Utf-8 텍스트 인식](./recognize-utf8-text/) | .NET용 Aspose.Words를 사용하여 RTF 문서에서 Utf-8 문자를 인식하는 방법을 알아보세요. 데이터 무결성을 보장합니다. |
+| [Utf-8 텍스트 인식](./recognize-utf8-text/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 UTF-8 텍스트를 인식하는 방법을 알아보세요. |

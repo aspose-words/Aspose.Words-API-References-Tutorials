@@ -2,81 +2,88 @@
 title: Perbarui Properti Cetakan Terakhir dalam Dokumen PDF
 linktitle: Perbarui Properti Cetakan Terakhir dalam Dokumen PDF
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk memperbarui properti "Terakhir Dicetak" saat mengonversi ke PDF dengan Aspose.Words untuk .NET.
+description: Pelajari cara memperbarui properti cetakan terakhir dalam dokumen PDF menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
+## Perkenalan
 
-Artikel ini memberikan panduan langkah demi langkah tentang cara menggunakan properti "Pencetakan Terakhir" di fitur pembaruan Dokumen PDF dengan Aspose.Words untuk .NET. Kami akan menjelaskan setiap bagian kode secara detail. Di akhir tutorial ini, Anda akan dapat memahami cara mengonfigurasi opsi untuk memperbarui properti "Terakhir dicetak" saat mengonversi ke PDF.
+Apakah Anda ingin memperbarui properti cetakan terakhir dalam dokumen PDF? Mungkin Anda mengelola dokumen dalam jumlah besar dan perlu melacak kapan terakhir kali dokumen tersebut dicetak. Apa pun alasan Anda, memperbarui properti ini bisa sangat berguna, dan dengan Aspose.Words untuk .NET, semuanya sangat mudah! Mari selami bagaimana Anda dapat mencapai hal ini.
 
-Sebelum memulai, pastikan Anda telah menginstal dan mengonfigurasi pustaka Aspose.Words untuk .NET di proyek Anda. Anda dapat menemukan perpustakaan dan petunjuk instalasi di situs web Aspose.
+## Prasyarat
 
-## Langkah 1: Tentukan direktori dokumen
+Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
 
- Untuk memulai, Anda perlu menentukan jalur ke direktori tempat dokumen Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+-  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Lingkungan pengembangan seperti Visual Studio.
+- Pemahaman Dasar C#: Keakraban dengan C# akan sangat membantu.
+- Dokumen: Dokumen Word yang ingin Anda konversi ke PDF dan perbarui properti cetakan terakhir.
+
+## Impor Namespace
+
+Untuk menggunakan Aspose.Words untuk .NET di proyek Anda, Anda perlu mengimpor namespace yang diperlukan. Inilah cara Anda melakukannya:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dikelola.
+
+## Langkah 1: Siapkan Proyek Anda
+
+Hal pertama yang pertama, mari siapkan proyek Anda. Buka Visual Studio, buat Aplikasi Konsol baru (.NET Framework atau .NET Core), dan beri nama dengan sesuatu yang bermakna seperti "UpdateLastPrintedPropertyPDF".
+
+## Langkah 2: Instal Aspose.Words untuk .NET
+
+Selanjutnya, Anda perlu menginstal paket Aspose.Words for .NET. Anda dapat melakukan ini melalui Manajer Paket NuGet. Klik kanan proyek Anda di Solution Explorer, pilih "Kelola Paket NuGet", cari "Aspose.Words", dan instal.
+
+## Langkah 3: Muat Dokumen Anda
+
+ Sekarang, mari muat dokumen Word yang ingin Anda konversi ke PDF. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur ke dokumen Anda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Langkah 2: Unggah dokumen
-
-Selanjutnya, kita perlu memuat dokumen yang ingin kita proses. Dalam contoh ini, kami berasumsi bahwa dokumen tersebut bernama "Rendering.docx" dan terletak di direktori dokumen yang ditentukan.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Langkah 3: Konfigurasikan Opsi Simpan sebagai PDF dengan Properti "Terakhir Dicetak" yang Diperbarui
+## Langkah 4: Konfigurasikan Opsi Penyimpanan PDF
 
- Untuk mengaktifkan pembaruan properti "Terakhir Dicetak" saat mengonversi ke PDF, kita perlu mengkonfigurasi`PdfSaveOptions` objek dan atur`UpdateLastPrintedProperty`properti ke`true`.
+ Kita perlu mengonfigurasi opsi penyimpanan PDF untuk memperbarui properti cetakan terakhir. Buat instance baru dari`PdfSaveOptions` dan atur`UpdateLastPrintedProperty`properti ke`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions 
+{ 
+	UpdateLastPrintedProperty = true 
+};
 ```
 
-## Langkah 4: Simpan dokumen sebagai PDF dengan pembaruan properti "Terakhir dicetak".
+## Langkah 5: Simpan Dokumen sebagai PDF
 
-Terakhir, kita dapat menyimpan dokumen dalam format PDF menggunakan opsi penyimpanan yang dikonfigurasi sebelumnya.
+Terakhir, simpan dokumen sebagai PDF dengan properti yang diperbarui. Tentukan jalur keluaran dan opsi penyimpanan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-Itu saja ! Anda telah berhasil mengaktifkan pembaruan properti "Terakhir Dicetak" saat mengonversi dokumen ke PDF menggunakan Aspose.Words untuk .NET.
-
-### Contoh Kode Sumber untuk Memperbarui Properti "Terakhir Dicetak" dengan Aspose.Words untuk .NET
-
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
-
-```
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelaskan cara memperbarui properti "Terakhir Dicetak" dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang diberikan, Anda dapat dengan mudah mengonfigurasi opsi untuk memperbarui properti "Terakhir Dicetak" saat mengonversi dokumen ke PDF. Gunakan fitur ini untuk melacak penggunaan dokumen dan informasi terkait.
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah memperbarui properti cetakan terakhir dalam dokumen PDF menggunakan Aspose.Words untuk .NET. Metode ini memastikan proses pengelolaan dokumen Anda tetap efisien dan terkini. Cobalah dan lihat bagaimana ini menyederhanakan alur kerja Anda.
 
-### Pertanyaan yang Sering Diajukan
+## FAQ
 
-#### T: Apa yang dimaksud dengan properti "Terakhir Dicetak" dalam dokumen PDF?
-J: Properti "Terakhir Dicetak" dalam dokumen PDF mengacu pada tanggal dan waktu dokumen terakhir dicetak. Properti ini dapat berguna untuk melacak informasi tentang penggunaan dan pengelolaan dokumen.
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah pustaka yang kuat untuk tugas pemrosesan dokumen dalam aplikasi .NET, termasuk membuat, memodifikasi, mengonversi, dan mencetak dokumen.
 
-#### T: Bagaimana cara memperbarui properti "Terakhir Dicetak" di dokumen PDF dengan Aspose.Words untuk .NET?
-J: Untuk memperbarui properti "Terakhir Dicetak" dalam dokumen PDF dengan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
+### Mengapa memperbarui properti cetakan terakhir dalam PDF?
+Memperbarui properti cetakan terakhir membantu melacak penggunaan dokumen, terutama di lingkungan di mana pencetakan dokumen sering dilakukan.
 
- Buat sebuah instance dari`Document` kelas yang menentukan jalur ke dokumen Word.
+### Bisakah saya memperbarui properti lain menggunakan Aspose.Words untuk .NET?
+Ya, Aspose.Words untuk .NET memungkinkan Anda memperbarui berbagai properti dokumen, seperti penulis, judul, subjek, dan lainnya.
 
- Buat sebuah instance dari`PdfSaveOptions` kelas dan atur`UpdateLastPrintedProperty`properti ke`true` untuk mengaktifkan pembaruan properti "Terakhir Dicetak".
+### Apakah Aspose.Words untuk .NET gratis?
+Aspose.Words untuk .NET menawarkan uji coba gratis yang dapat Anda unduh[Di Sini](https://releases.aspose.com/). Untuk penggunaan jangka panjang, Anda perlu membeli lisensi.
 
- Menggunakan`Save` metode`Document`kelas untuk menyimpan dokumen dalam format PDF dengan menentukan opsi penyimpanan.
-
-#### T: Bagaimana cara memeriksa apakah properti "Terakhir Dicetak" telah diperbarui dalam dokumen PDF yang dihasilkan?
-J: Anda dapat memeriksa apakah properti "Terakhir Dicetak" telah diperbarui dalam dokumen PDF yang dihasilkan dengan membuka file PDF dengan penampil PDF yang kompatibel, seperti Adobe Acrobat Reader, dan melihat informasi dokumen. Tanggal dan waktu pencetakan terakhir harus sesuai dengan tanggal dan waktu pembuatan dokumen PDF.
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
+Anda dapat menemukan dokumentasi terperinci di Aspose.Words untuk .NET[Di Sini](https://reference.aspose.com/words/net/).

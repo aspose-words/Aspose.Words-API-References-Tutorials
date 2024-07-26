@@ -9,11 +9,11 @@ url: /fr/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 ## Introduction
 
-Vous est-il déjà arrivé de devoir copier des sections spécifiques d’un document Word à un autre ? Eh bien, vous avez de la chance ! Dans ce didacticiel, nous vous expliquerons comment copier du texte marqué d'un signet d'un document Word à un autre à l'aide d'Aspose.Words pour .NET. Que vous créiez un rapport dynamique ou automatisiez la génération de documents, ce guide simplifiera le processus pour vous.
+Vous est-il déjà arrivé de devoir copier des sections spécifiques d’un document Word à un autre ? Eh bien, vous avez de la chance ! Dans ce didacticiel, nous vous expliquerons comment copier du texte marqué d'un signet d'un document Word à un autre à l'aide d'Aspose.Words pour .NET. Que vous créiez un rapport dynamique ou automatisiez la génération de documents, ce guide simplifiera le processus pour vous.
 
 ## Conditions préalables
 
-Avant de plonger, assurez-vous d'avoir les éléments suivants :
+Avant de plonger, assurez-vous d’avoir les éléments suivants :
 
 -  Aspose.Words for .NET Library : vous pouvez le télécharger à partir de[ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : Visual Studio ou tout autre environnement de développement .NET.

@@ -2,35 +2,49 @@
 title: Exporteer Word-documentkoptekst en voettekstbladwijzers naar PDF-document
 linktitle: Exporteer Word-documentkoptekst en voettekstbladwijzers naar PDF-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het exporteren van word-documentkoptekst-voettekstbladwijzers naar pdf-documentbladwijzers met Aspose.Words voor .NET.
+description: Leer hoe u kop- en voettekstbladwijzers van een Word-document naar PDF kunt exporteren met behulp van Aspose.Words voor .NET met onze stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## Invoering
 
-Dit artikel biedt een stapsgewijze handleiding voor het exporteren van bladwijzers van de koptekst en voettekst van Word-documenten naar de pdf-documentfunctie met Aspose.Words voor .NET. We zullen elk deel van de code in detail uitleggen. Aan het einde van deze zelfstudie begrijpt u hoe u bladwijzers uit de kop- en voetteksten van een document kunt exporteren en een PDF met de juiste bladwijzers kunt genereren.
+Het converteren van Word-documenten naar PDF is een veel voorkomende taak, vooral als u documenten wilt delen of archiveren met behoud van de opmaak. Soms bevatten deze documenten belangrijke bladwijzers in de kop- en voetteksten. In deze zelfstudie doorlopen we het proces van het exporteren van deze bladwijzers van een Word-document naar een PDF met behulp van Aspose.Words voor .NET.
 
-Zorg ervoor dat u, voordat u begint, de Aspose.Words voor .NET-bibliotheek in uw project hebt geïnstalleerd en geconfigureerd. U kunt de bibliotheek en installatie-instructies vinden op de Aspose-website.
+## Vereisten
 
-## Stap 1: Definieer de documentmap
+Voordat we erin duiken, zorg ervoor dat je het volgende hebt:
 
- Om te beginnen moet u het pad definiëren naar de map waar uw documenten zich bevinden. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentenmap.
+- Aspose.Words voor .NET: Aspose.Words voor .NET moet geïnstalleerd zijn. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Stel uw ontwikkelomgeving in. U kunt Visual Studio of een andere .NET-compatibele IDE gebruiken.
+- Basiskennis van C#: Bekendheid met programmeren in C# is vereist om de codevoorbeelden te kunnen volgen.
+
+## Naamruimten importeren
+
+Allereerst moet u de benodigde naamruimten in uw C#-project importeren. Voeg deze regels toe bovenaan uw codebestand:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Stap 2: Upload het document
+Laten we het proces opsplitsen in eenvoudig te volgen stappen.
 
-Vervolgens moeten we het document laden dat we willen verwerken. In dit voorbeeld gaan we ervan uit dat het document "Bladwijzers in kop- en voetteksten.docx" heet en zich in de opgegeven documentenmap bevindt.
+## Stap 1: Initialiseer het document
+
+De eerste stap is het laden van uw Word-document. Hier ziet u hoe u het kunt doen:
 
 ```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## Stap 3: Configureer de opties voor opslaan als PDF
+In deze stap geeft u eenvoudigweg het pad naar uw documentmap op en laadt u het Word-document.
 
- Om kop- en voettekstbladwijzers te exporteren, moeten we de`PdfSaveOptions` voorwerp. In dit voorbeeld stellen we het standaardoverzichtsniveau van de bladwijzer in op 1 en de bladwijzerexportmodus voor kop- en voettekst op 'Eerste'.
+## Stap 2: Configureer de PDF-opslagopties
+
+Vervolgens moet u de PDF-opslagopties configureren om ervoor te zorgen dat bladwijzers in de kop- en voetteksten correct worden geëxporteerd.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## Stap 4: Sla het document op als PDF met bladwijzers voor kop- en voetteksten
+ Hier zijn we bezig met het opzetten van de`PdfSaveOptions` . De`DefaultBookmarksOutlineLevel` eigenschap stelt het overzichtsniveau voor bladwijzers in, en de`HeaderFooterBookmarksExportMode` eigenschap zorgt ervoor dat alleen de eerste bladwijzers in kop- en voetteksten worden geëxporteerd.
 
-Ten slotte kunnen we het document in PDF-formaat opslaan met behulp van de eerder geconfigureerde opslagopties.
+## Stap 3: Sla het document op als PDF
+
+Sla ten slotte uw document op als PDF met de geconfigureerde opties.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-Dat is alles ! U hebt met succes kop- en voettekstbladwijzers uit een document geëxporteerd en een PDF met de juiste bladwijzers gegenereerd met behulp van Aspose.Words voor .NET.
-
-### Voorbeeldbroncode voor het exporteren van kop- en voettekstbladwijzers met Aspose.Words voor .NET
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+In deze stap slaat u het document op in het opgegeven pad met de opties die u heeft geconfigureerd.
 
 ## Conclusie
 
-In deze zelfstudie hebben we uitgelegd hoe u kop- en voettekstbladwijzers kunt exporteren van een Word-document naar een PDF-document met behulp van Aspose.Words voor .NET. Geëxporteerde bladwijzers maken eenvoudige navigatie en snelle verwijzing naar overeenkomstige kop- en voetteksten in het gegenereerde PDF-document mogelijk. Volg de beschreven stappen om kop- en voettekstbladwijzers uit een document te exporteren en een PDF met de juiste bladwijzers te genereren met behulp van Aspose.Words voor .NET. Zorg ervoor dat u het juiste pad naar uw documenten opgeeft en configureer indien nodig de opslagopties.
+En daar heb je het! Door deze stappen te volgen, kunt u eenvoudig bladwijzers uit de kop- en voetteksten van een Word-document naar een PDF exporteren met behulp van Aspose.Words voor .NET. Deze methode zorgt ervoor dat belangrijke navigatiehulpmiddelen binnen uw document in het PDF-formaat behouden blijven, waardoor het voor lezers gemakkelijker wordt om door uw document te navigeren.
 
-### Veel Gestelde Vragen
+## Veelgestelde vragen
 
-### Vraag: Wat is het exporteren van kop- en voettekstbladwijzers van een Word-document naar een PDF-document?
-A: Het exporteren van bladwijzers voor kop- en voetteksten van een Word-document naar een PDF-document is een functie waarmee u bladwijzers in het PDF-document kunt bewaren en genereren op basis van de kop- en voetteksten. voetteksten van het originele Word-document. Hierdoor kunnen gebruikers snel en eenvoudig door het PDF-document navigeren met behulp van bladwijzers die overeenkomen met kop- en voetteksten.
+### Kan ik alle bladwijzers van het Word-document naar PDF exporteren?
 
-### Vraag: Hoe kan ik Aspose.Words voor .NET gebruiken om kop- en voettekstbladwijzers van een Word-document naar een PDF-document te exporteren?
-A: Volg deze stappen om kop- en voettekstbladwijzers van een Word-document naar een PDF-document te exporteren met Aspose.Words voor .NET:
+ Ja, dat kan. In de`PdfSaveOptions`, kunt u indien nodig de instellingen aanpassen om alle bladwijzers op te nemen.
 
- Stel het mappad in waar uw documenten zich bevinden door te vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad van uw documentenmap.
+### Wat moet ik doen als ik bladwijzers ook uit de hoofdtekst van het document wil exporteren?
 
- Laad het document dat u wilt verwerken met behulp van de`Document` class en specificeer het pad naar het Word-document in de opgegeven documentenmap.
+ U kunt de configureren`OutlineOptions` in`PdfSaveOptions` om bladwijzers uit de hoofdtekst van het document op te nemen.
 
- Configureer de opties voor opslaan als PDF door een exemplaar te maken van het`PdfSaveOptions` klasse en het instellen van de juiste bladwijzeropties voor kop- en voettekst.
+### Is het mogelijk om de bladwijzerniveaus in de PDF aan te passen?
 
- Sla het document op in PDF-formaat met behulp van de`Save` werkwijze van de`Document` klasse die het pad specificeert en opties voor opslaan.
+ Absoluut! U kunt de`DefaultBookmarksOutlineLevel` eigenschap om verschillende overzichtsniveaus voor uw bladwijzers in te stellen.
 
-### Vraag: Wat zijn de voordelen van het exporteren van kop- en voettekstbladwijzers naar een PDF-document?
-A: De voordelen van het exporteren van kop- en voettekstbladwijzers naar een PDF-document zijn:
+### Hoe ga ik om met documenten zonder bladwijzers?
 
-Eenvoudige navigatie: Met bladwijzers kunnen gebruikers eenvoudig door een PDF-document navigeren door naar specifieke kop- en voetteksten te verwijzen.
+Als uw document geen bladwijzers heeft, wordt de PDF gegenereerd zonder bladwijzeroverzicht. Zorg ervoor dat uw document bladwijzers bevat als u deze nodig heeft in de PDF.
 
-Snelle referentie: Met bladwijzers kunnen gebruikers snel relevante secties van het PDF-document vinden op basis van kop- en voetteksten.
+### Kan ik deze methode gebruiken voor andere documenttypen zoals DOCX of RTF?
+
+Ja, Aspose.Words voor .NET ondersteunt verschillende documenttypen, waaronder DOCX, RTF en andere.

@@ -80,7 +80,7 @@ foreach (DigitalSignature signature in doc.DigitalSignatures)
 Este código percorre cada assinatura digital do documento e imprime vários detalhes sobre a assinatura. Vamos detalhar o que cada parte faz:
 
 1. Assinatura encontrada: indica que uma assinatura foi encontrada.
-2. É válido: verifica se a assinatura é válida.
+2. É válido: Verifica se a assinatura é válida.
 3. Motivo da assinatura: Exibe o motivo da assinatura, se disponível.
 4. Hora da assinatura: Mostra a hora em que o documento foi assinado.
 5. Nome do assunto: recupera o nome do assunto do certificado.

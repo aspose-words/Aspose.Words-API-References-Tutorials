@@ -97,7 +97,7 @@ Dans ce didacticiel, nous avons exploré le processus de cryptage et de déchiff
 
 Nous avons commencé par configurer notre projet Java et nous assurer que nous avions les prérequis nécessaires en place, y compris la bibliothèque Aspose.Words. Ensuite, nous avons parcouru les étapes pour chiffrer un document, en ajoutant une couche de protection supplémentaire pour empêcher tout accès non autorisé. Nous avons également appris à décrypter le document crypté en cas de besoin, à l'aide du mot de passe spécifié.
 
-Il est important de se rappeler que le cryptage des documents est une mesure de sécurité précieuse, mais qu'il implique la responsabilité de protéger le mot de passe de cryptage. Si vous oubliez le mot de passe, il n'y a aucun moyen de récupérer le contenu du document.
+Il est important de se rappeler que le cryptage des documents est une mesure de sécurité précieuse, mais il s'accompagne de la responsabilité de protéger le mot de passe de cryptage. Si vous oubliez le mot de passe, il n'y a aucun moyen de récupérer le contenu du document.
 
 En suivant les étapes décrites dans ce didacticiel, vous pouvez améliorer la sécurité de vos applications Java et protéger efficacement les informations sensibles contenues dans vos documents.
 

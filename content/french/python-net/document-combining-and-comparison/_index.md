@@ -25,7 +25,7 @@ Tout au long de cette série de didacticiels, nous aborderons un large éventail
 - Automatisation et personnalisation : comprenez comment automatiser les tâches de traitement des documents et personnaliser le processus de fusion et de comparaison en fonction de vos besoins spécifiques.
 - Intégration Python et .NET : plongez dans des exemples et des extraits de code pour les environnements Python et .NET, destinés aux développeurs ayant des préférences de programmation différentes.
 
-À la fin de ces didacticiels, vous serez doté des compétences nécessaires pour combiner et comparer de manière transparente des documents à l'aide d'Aspose.Words. Que vous soyez un développeur débutant ou expérimenté, ces guides étape par étape vous permettront d'intégrer efficacement ces fonctionnalités dans vos flux de travail documentaires.
+À la fin de ces didacticiels, vous disposerez des compétences nécessaires pour combiner et comparer des documents de manière transparente à l'aide d'Aspose.Words. Que vous soyez un développeur débutant ou expérimenté, ces guides étape par étape vous permettront d'intégrer efficacement ces fonctionnalités dans vos flux de travail documentaires.
 
 ## Didacticiels de combinaison et de comparaison de documents
 ### [Fusionner et comparer des documents dans Word](./merge-compare-documents/)

@@ -73,7 +73,7 @@ Stil yönetimini geliştirmek ve iş akışınızı optimize etmek için Aspose.
 #### Aspose.Words for .NET'i kullanarak stilleri bir belgeden diğerine nasıl kopyalayabilirim?
 
 Stilleri kaynak belgeden hedef belgeye kopyalamak için şu adımları izleyin:
-1.  İki tane oluştur`Document` kaynak belgeyi ve hedef belgeyi temsil eden nesneler.
+1.  İki tane oluştur`Document` Kaynak belgeyi ve hedef belgeyi temsil eden nesneler.
 2.  Kullan`CopyStylesFromTemplate` Hedef belgede kaynak belgeyi argüman olarak ileten yöntem.
 
 #### Stilleri belgeler arasında kopyalamanın faydası nedir?

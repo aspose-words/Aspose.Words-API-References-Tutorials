@@ -12,5 +12,5 @@ Les didacticiels Aspose.Words pour .NET sont conçus pour vous aider à maîtris
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Utiliser la police de la machine cible](./use-font-from-target-machine/) | Découvrez comment convertir un document Word en HTML fixe à l'aide des polices de la machine cible avec Aspose.Words pour .NET. |
-| [Écrivez toutes les règles CSS dans un seul fichier](./write-all-css-rules-in-single-file/) | Apprenez à convertir un document Word en HTML fixe en écrivant toutes les règles CSS dans un seul fichier avec Aspose.Words pour .NET. |
+| [Utiliser la police de la machine cible](./use-font-from-target-machine/) | Apprenez à utiliser les polices de la machine cible dans vos documents Word avec Aspose.Words pour .NET. Suivez notre guide étape par étape pour une intégration transparente des polices. |
+| [Écrivez toutes les règles CSS dans un seul fichier](./write-all-css-rules-in-single-file/) | Découvrez comment convertir des documents Word en HTML à l'aide d'Aspose.Words pour .NET avec toutes les règles CSS dans un seul fichier pour un code plus propre et une maintenance plus facile. |

@@ -13,5 +13,5 @@ url: /ar/net/programming-with-markdownsaveoptions/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [تصدير إلى تخفيض السعر مع محاذاة محتوى الجدول](./export-into-markdown-with-table-content-alignment/) | تعرف على كيفية تصدير محتوى الجدول بمحاذاة مختلفة إلى ملفات Markdown باستخدام Aspose.Words for .NET. |
-| [تعيين مجلد الصور](./set-images-folder/) | تعرف على كيفية تعيين مجلد الصور عند التصدير إلى Markdown باستخدام Aspose.Words لـ .NET. قم بتخصيص موضع الصور لتحسين التنظيم والتكامل.|
+| [تصدير إلى تخفيض السعر مع محاذاة محتوى الجدول](./export-into-markdown-with-table-content-alignment/) | تعرف على كيفية تصدير مستندات Word إلى Markdown مع جداول محاذية باستخدام Aspose.Words for .NET. اتبع دليلنا خطوة بخطوة للحصول على جداول Markdown المثالية. |
+| [تعيين مجلد الصور](./set-images-folder/) | قم بتحويل مستندات Word إلى Markdown مع محاذاة الجدول المناسبة باستخدام Aspose.Words لـ .NET. اتبع دليلنا التفصيلي للحصول على نتائج مثالية. |

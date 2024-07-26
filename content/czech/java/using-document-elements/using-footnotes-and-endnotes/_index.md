@@ -49,7 +49,7 @@ public void setFootnoteAndEndNotePosition() throws Exception {
 }
 ```
 
-## 5. Přidání vysvětlivek do vašeho dokumentu
+## 5. Přidání vysvětlujících poznámek do vašeho dokumentu
 
 Přidání vysvětlivky do dokumentu je jednoduché. Zde je příklad:
 ```java

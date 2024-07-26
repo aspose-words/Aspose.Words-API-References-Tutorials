@@ -72,7 +72,7 @@ Selamat! Anda telah berhasil mempelajari cara membuat gambar kode batang khusus 
 
 ### Bisakah saya membuat kode batang dari data teks?
 
-Ya, Anda dapat menghasilkan barcode dari data teks dengan memberikan teks yang diinginkan sebagai masukan ke generator barcode.
+Ya, Anda dapat menghasilkan barcode dari data teks dengan memberikan teks yang diinginkan sebagai input ke generator barcode.
 
 ### Apakah Aspose.Words untuk Java cocok untuk pemrosesan dokumen skala besar?
 

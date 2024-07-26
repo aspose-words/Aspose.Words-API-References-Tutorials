@@ -2,91 +2,86 @@
 title: Xuất cấu trúc tài liệu Word sang tài liệu PDF
 linktitle: Xuất cấu trúc tài liệu Word sang tài liệu PDF
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để xuất cấu trúc tài liệu Word sang tài liệu PDF bằng Aspose.Words cho .NET.
+description: Xuất cấu trúc của tài liệu Word sang PDF bằng Aspose.Words for .NET. Làm theo hướng dẫn từng bước của chúng tôi để duy trì bố cục tài liệu và cải thiện điều hướng PDF.
 type: docs
 weight: 10
 url: /vi/net/programming-with-pdfsaveoptions/export-document-structure/
 ---
+## Giới thiệu
 
-Bài viết này cung cấp hướng dẫn từng bước về cách sử dụng tính năng Xuất cấu trúc tài liệu Word sang Tài liệu PDF với Aspose.Words cho .NET. Chúng tôi sẽ giải thích chi tiết từng phần của mã. Khi kết thúc hướng dẫn này, bạn sẽ có thể hiểu cách xuất cấu trúc của tài liệu và tạo tệp PDF với cấu trúc của tài liệu hiển thị.
+Điều hướng thế giới thao tác tài liệu đôi khi có thể có cảm giác như đang lang thang trong một khu rừng rậm rạp mà không có bản đồ. Nhưng đừng lo lắng, chúng tôi có hướng dẫn tối ưu để giúp bạn tìm ra con đường của mình! Hôm nay, chúng ta sẽ đi sâu vào thế giới kỳ diệu của việc xuất cấu trúc tài liệu Word sang PDF bằng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn hay chỉ mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn từng bước một cách rõ ràng và chính xác.
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt và định cấu hình thư viện Aspose.Words cho .NET trong dự án của mình. Bạn có thể tìm thấy thư viện và hướng dẫn cài đặt trên trang web Aspose.
+## Điều kiện tiên quyết
 
-## Bước 1: Xác định thư mục tài liệu
+Trước khi bắt đầu cuộc hành trình này, hãy tập hợp tất cả những điều cần thiết mà bạn cần để bắt đầu.
 
- Để bắt đầu, bạn cần xác định đường dẫn đến thư mục chứa tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+- Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Môi trường phát triển tương thích với .NET như Visual Studio.
+-  Tài liệu mẫu: Một tài liệu Word (ví dụ:`Paragraphs.docx`) mà bạn sẽ chuyển đổi thành PDF.
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words, bạn cần nhập các không gian tên cần thiết. Điều này sẽ đảm bảo bạn có quyền truy cập vào tất cả các tính năng và chức năng cần thiết cho nhiệm vụ của chúng tôi.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Hãy chia nhỏ quy trình thành các bước có thể quản lý được. Mỗi bước sẽ hướng dẫn bạn qua một phần cụ thể của quy trình, đảm bảo bạn không bỏ lỡ điều gì.
+
+## Bước 1: Thiết lập thư mục tài liệu của bạn
+
+Trước tiên, hãy xác định đường dẫn đến thư mục tài liệu của bạn. Đây là nơi đặt tài liệu Word nguồn của bạn và nơi lưu tệp PDF đã chuyển đổi.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Bước 2: Tải tài liệu lên
+## Bước 2: Tải tài liệu Word
 
-Tiếp theo, chúng ta cần tải tài liệu mà chúng ta muốn xử lý. Trong ví dụ này, chúng tôi giả sử tài liệu có tên là "Paragraphs.docx" và nằm trong thư mục tài liệu được chỉ định.
+ Tiếp theo, chúng ta cần tải tài liệu Word mà chúng ta muốn chuyển đổi sang PDF. Trong ví dụ này, chúng tôi sẽ sử dụng một tệp có tên`Paragraphs.docx`.
 
 ```csharp
 Document doc = new Document(dataDir + "Paragraphs.docx");
 ```
 
-## Bước 3: Định cấu hình tùy chọn lưu dưới dạng PDF
+## Bước 3: Định cấu hình tùy chọn lưu PDF
 
- Để xuất cấu trúc tài liệu và hiển thị cấu trúc trong ngăn điều hướng "Nội dung" của Adobe Acrobat Pro trong khi chỉnh sửa tệp PDF, chúng ta cần định cấu hình`PdfSaveOptions` đối tượng với`ExportDocumentStructure` thuộc tính được đặt thành`true`.
+ Để xuất cấu trúc tài liệu, chúng ta cần định cấu hình các tùy chọn lưu PDF. Điều này liên quan đến việc thiết lập`ExportDocumentStructure`tài sản để`true`Điều này đảm bảo rằng cấu trúc của tài liệu hiển thị trong khung điều hướng "Nội dung" của Adobe Acrobat Pro.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    ExportDocumentStructure = true
+};
 ```
 
-## Bước 4: Lưu tài liệu dưới dạng PDF với cấu trúc tài liệu
+## Bước 4: Lưu tài liệu dưới dạng PDF
 
-Cuối cùng, chúng ta có thể lưu tài liệu ở định dạng PDF bằng cách sử dụng các tùy chọn lưu đã định cấu hình trước đó.
+Với các tùy chọn lưu được định cấu hình, bước cuối cùng là lưu tài liệu dưới dạng PDF. Đây là nơi phép thuật xảy ra!
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
 ```
 
-Đó là tất cả ! Bạn đã xuất thành công cấu trúc tài liệu và tạo tệp PDF có cấu trúc tài liệu hiển thị bằng Aspose.Words cho .NET.
-
-### Mã nguồn mẫu để xuất cấu trúc tài liệu với Aspose.Words cho .NET
-
-
-```csharp
-
-            // Đường dẫn đến thư mục tài liệu.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document(dataDir + "Paragraphs.docx");
-
-            // Kích thước tệp sẽ được tăng lên và cấu trúc sẽ hiển thị trong ngăn điều hướng "Nội dung"
-            // của Adobe Acrobat Pro, trong khi chỉnh sửa .pdf.
-            PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
-
-            doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
-        
-```
-
-
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách xuất cấu trúc của tài liệu Word sang tài liệu PDF bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đã nêu, bạn có thể dễ dàng tạo tệp PDF với cấu trúc tài liệu hiển thị, giúp điều hướng và tìm kiếm trong tài liệu dễ dàng hơn. Sử dụng các tính năng của Aspose.Words for .NET để xuất cấu trúc tài liệu Word của bạn và tạo các tệp PDF có cấu trúc tốt.
+Chúc mừng! Bạn đã xuất thành công cấu trúc của tài liệu Word sang PDF bằng Aspose.Words for .NET. Tính năng này cực kỳ hữu ích để giữ nguyên bố cục tài liệu và giúp dễ dàng điều hướng các tệp PDF phức tạp. Với hướng dẫn này, giờ đây bạn có thể tự tin chuyển đổi tài liệu và tận dụng các khả năng mạnh mẽ của Aspose.Words.
 
-### Các câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Hỏi: Xuất cấu trúc của tài liệu Word sang tài liệu PDF là gì?
-Đáp: Việc xuất cấu trúc của tài liệu Word sang tài liệu PDF sẽ tạo ra một tệp PDF có cấu trúc tài liệu hiển thị. Cấu trúc tài liệu thường bao gồm những thứ như tiêu đề, phần, đoạn văn và các thành phần có cấu trúc khác của tài liệu. Cấu trúc này có thể hữu ích cho việc điều hướng và tìm kiếm trong tài liệu PDF.
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển tạo, chỉnh sửa, chuyển đổi và thao tác các tài liệu Word theo chương trình.
 
-#### Câu hỏi: Làm cách nào tôi có thể xuất cấu trúc của tài liệu Word sang tài liệu PDF bằng Aspose.Words cho .NET?
-Trả lời: Để xuất cấu trúc của tài liệu Word sang tài liệu PDF bằng Aspose.Words cho .NET, hãy làm theo các bước sau:
+### Tôi có thể xuất các tính năng khác của tài liệu Word sang PDF không?
+Có, Aspose.Words for .NET cung cấp nhiều tùy chọn khác nhau để xuất các tính năng như dấu trang, siêu liên kết, v.v. sang PDF.
 
- Tạo một thể hiện của`Document` lớp chỉ định đường dẫn đến tài liệu Word.
+### Có thể tự động hóa quá trình này?
+Tuyệt đối! Bạn có thể tự động hóa quy trình này bằng cách sử dụng tập lệnh và xử lý hàng loạt trong môi trường phát triển của mình.
 
- Tạo một thể hiện của`PdfSaveOptions` lớp và thiết lập`ExportDocumentStructure`tài sản để`true`. Thao tác này sẽ xuất cấu trúc tài liệu và hiển thị cấu trúc đó trong ngăn điều hướng "Nội dung" của Adobe Acrobat Pro khi chỉnh sửa tệp PDF.
+### Làm cách nào tôi có thể dùng thử miễn phí Aspose.Words cho .NET?
+ Bạn có thể dùng thử miễn phí từ[trang web giả định](https://releases.aspose.com/).
 
- Sử dụng`Save` phương pháp của`Document`lớp để lưu tài liệu ở định dạng PDF bằng cách chỉ định các tùy chọn lưu.
-
-#### Hỏi: Làm cách nào tôi có thể xem cấu trúc của tài liệu PDF bằng Adobe Acrobat Pro?
-Trả lời: Để xem cấu trúc của tài liệu PDF bằng Adobe Acrobat Pro, hãy làm theo các bước sau:
-
-Mở tài liệu PDF trong Adobe Acrobat Pro.
-
-Trong thanh điều hướng bên trái, nhấp vào biểu tượng "Nội dung" để hiển thị ngăn điều hướng "Nội dung".
-
-Trong ngăn điều hướng "Nội dung", bạn sẽ thấy cấu trúc tài liệu với các tiêu đề, phần và các thành phần có cấu trúc khác.
+### Tôi nên làm gì nếu gặp phải vấn đề?
+ Bạn có thể tìm kiếm sự giúp đỡ từ[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).

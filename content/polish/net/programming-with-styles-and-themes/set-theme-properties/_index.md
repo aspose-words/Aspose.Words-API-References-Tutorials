@@ -19,7 +19,7 @@ Upewnij się, że skonfigurowałeś środowisko programistyczne za pomocą Aspos
 Document doc = new Document();
 ```
 
-Na tym etapie tworzymy nowy`Document` obiekt.
+ Na tym etapie tworzymy nowy`Document` obiekt.
 
 ## Krok 3: Edytuj właściwości motywu
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
-Na tym etapie uzyskujemy dostęp do`Theme` przedmiot`Document` obiekt, aby uzyskać motyw dokumentu. Następnie możemy modyfikować właściwości motywu, takie jak czcionki dodatkowe (`MinorFonts.Latin`) i kolory (`Colors.Hyperlink`).
+ Na tym etapie uzyskujemy dostęp do`Theme` przedmiot`Document` obiekt, aby uzyskać motyw dokumentu. Następnie możemy modyfikować właściwości motywu, takie jak czcionki dodatkowe (`MinorFonts.Latin`) i kolory (`Colors.Hyperlink`).
 
 ## Krok 4: Zapisz dokument
 
@@ -51,7 +51,7 @@ theme.Colors.Hyperlink = Color.Gold;
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy funkcjonalność ustawiania właściwości motywu dokumentu za pomocą Aspose.Words dla .NET. Zmieniając czcionki dodatkowe i kolory motywu, możesz dostosować wygląd swoich dokumentów i zachować spójność wizualną.
+tym samouczku zbadaliśmy funkcjonalność ustawiania właściwości motywu dokumentu za pomocą Aspose.Words dla .NET. Zmieniając czcionki dodatkowe i kolory motywu, możesz dostosować wygląd swoich dokumentów i zachować spójność wizualną.
 
 Aspose.Words dla .NET oferuje potężny interfejs API do manipulowania stylami i motywami dokumentów. Modyfikując właściwości motywu, możesz dostosować wygląd swoich dokumentów do konkretnych potrzeb Twojego projektu lub Twojej marki.
 
@@ -67,7 +67,7 @@ Aby skonfigurować środowisko, musisz upewnić się, że masz zainstalowane i s
 
 #### Jak uzyskać dostęp do właściwości motywu i je modyfikować?
 
- Aby uzyskać dostęp do właściwości motywu i je modyfikować, możesz użyć opcji`Theme` przedmiot`Document` klasa. Uzyskując dostęp do`Theme` obiektu, możesz modyfikować właściwości, takie jak czcionki dodatkowe (`MinorFonts.Latin`) i kolory (`Colors.Hyperlink`). Przypisz żądane wartości do tych właściwości, aby dostosować motyw dokumentu.
+ Aby uzyskać dostęp do właściwości motywu i je modyfikować, możesz użyć opcji`Theme` przedmiot`Document` klasa. Uzyskując dostęp do`Theme`obiektu, możesz modyfikować właściwości, takie jak czcionki dodatkowe (`MinorFonts.Latin`) i kolory (`Colors.Hyperlink`). Przypisz żądane wartości do tych właściwości, aby dostosować motyw dokumentu.
 
 #### Jakie są zalety ustawiania właściwości motywu w dokumencie programu Word?
 
@@ -79,4 +79,4 @@ Ustawianie właściwości motywu w dokumencie programu Word umożliwia dostosowa
 
 #### Czy mogę zapisać zmodyfikowany dokument w różnych formatach?
 
- Tak, możesz zapisać zmodyfikowany dokument w różnych formatach obsługiwanych przez Aspose.Words dla .NET. The`Save` metoda`Document` obiekt pozwala określić format pliku wyjściowego, taki jak DOCX, PDF, HTML i inne. Wybierz odpowiedni format w oparciu o swoje wymagania.
+Tak, możesz zapisać zmodyfikowany dokument w różnych formatach obsługiwanych przez Aspose.Words dla .NET. The`Save` metoda`Document` obiekt pozwala określić format pliku wyjściowego, taki jak DOCX, PDF, HTML i inne. Wybierz odpowiedni format w oparciu o swoje wymagania.

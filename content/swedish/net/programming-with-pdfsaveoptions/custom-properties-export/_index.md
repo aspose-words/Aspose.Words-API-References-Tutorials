@@ -2,92 +2,88 @@
 title: Exportera anpassade egenskaper i ett PDF-dokument
 linktitle: Exportera anpassade egenskaper i ett PDF-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du exporterar anpassade egenskaper när du konverterar dokument till PDF med Aspose.Words för .NET.
+description: Lär dig hur du exporterar anpassade egenskaper i ett PDF-dokument med Aspose.Words för .NET med vår detaljerade, steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
+## Introduktion
 
-den här handledningen går vi igenom stegen för att exportera ett dokuments anpassade egenskaper i ett PDF-dokument med Aspose.Words för .NET. Genom att exportera anpassade egenskaper kan du inkludera ytterligare information i det genererade PDF-dokumentet. Följ stegen nedan:
+Att exportera anpassade egenskaper i ett PDF-dokument kan vara oerhört användbart för olika affärsbehov. Oavsett om du hanterar metadata för bättre sökbarhet eller bäddar in viktig information direkt i dina dokument, gör Aspose.Words för .NET processen sömlös. Denna handledning guidar dig genom att skapa ett Word-dokument, lägga till anpassade egenskaper och exportera dem till en PDF med dessa egenskaper intakta.
 
-## Steg 1: Skapa ett dokument och lägga till anpassade egenskaper
+## Förutsättningar
 
-Börja med att skapa en instans av klassen Document:
+Innan du dyker in i koden, se till att du har följande:
+
+-  Aspose.Words för .NET installerat. Om du inte har installerat det ännu kan du ladda ner det[här](https://releases.aspose.com/words/net/).
+- En utvecklingsmiljö som Visual Studio.
+- Grundläggande kunskaper i C#-programmering.
+
+## Importera namnområden
+
+Först måste du importera de nödvändiga namnrymden i ditt projekt. Dessa namnrymder innehåller de klasser och metoder som krävs för att manipulera Word-dokument och exportera dem som PDF-filer.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Låt oss dela upp processen i enkla, hanterbara steg.
+
+## Steg 1: Initiera dokumentet
+
+För att börja måste du skapa ett nytt dokumentobjekt. Detta objekt kommer att fungera som grunden för att lägga till anpassade egenskaper och exportera till PDF.
+
+```csharp
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
 ## Steg 2: Lägg till anpassade egenskaper
- Lägg sedan till önskade anpassade egenskaper. Till exempel, för att lägga till en "Company"-egenskap med värdet "Aspose", använd`Add` metod för CustomDocumentProperties-samlingen:
+
+Därefter lägger du till anpassade egenskaper till ditt dokument. Dessa egenskaper kan innehålla metadata som företagsnamn, författare eller annan relevant information.
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-Du kan lägga till så många anpassade egenskaper som behövs.
+## Steg 3: Konfigurera PDF-sparalternativ
 
-## Steg 3: Ställ in alternativ för PDF-export
-
-Skapa en instans av klassen PdfSaveOptions och ange hur anpassade egenskaper exporteras:
+ Konfigurera nu PDF-sparalternativen för att säkerställa att de anpassade egenskaperna ingår när du exporterar dokumentet. De`PdfSaveOptions` class tillhandahåller olika inställningar för att styra hur dokumentet sparas som PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    CustomPropertiesExport = PdfCustomPropertiesExport.Standard
+};
 ```
 
-Det här alternativet styr exporten av anpassade egenskaper vid konvertering till PDF.
+## Steg 4: Spara dokumentet som en PDF
 
-## Steg 4: Konvertera dokument till PDF
-
- Använd`Save` metod för att konvertera dokumentet till PDF med angivande av konverteringsalternativ:
+ Slutligen, spara dokumentet som en PDF i den angivna katalogen. De`Save` metoden kombinerar alla föregående steg och producerar en PDF med de anpassade egenskaperna inkluderade.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-Se till att ange rätt sökväg för att spara den konverterade PDF-filen.
-
-### Exempel på källkod för export av anpassade egenskaper med Aspose.Words för .NET
-
-Här är den fullständiga källkoden för att exportera anpassade egenskaper från ett dokument med Aspose.Words för .NET:
-
-
-```csharp
-
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	doc.CustomDocumentProperties.Add("Company", "Aspose");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
-
-```
-
-Genom att följa dessa steg kan du enkelt exportera anpassade egenskaper för ett dokument när du konverterar till PDF med Aspose.Words för .NET.
-
-
 ## Slutsats
 
-I den här handledningen förklarade vi hur man exporterar anpassade egenskaper från ett dokument till ett PDF-dokument med Aspose.Words för .NET. Genom att följa stegen som beskrivs kan du enkelt inkludera ytterligare information i det genererade PDF-dokumentet genom att exportera dokumentets anpassade egenskaper. Dra nytta av funktionerna i Aspose.Words för .NET för att anpassa och berika dina PDF-dokument genom att exportera anpassade egenskaper.
+Att exportera anpassade egenskaper i ett PDF-dokument med Aspose.Words för .NET är en enkel process som avsevärt kan förbättra dina dokumenthanteringsmöjligheter. Genom att följa dessa steg kan du säkerställa att kritisk metadata bevaras och är tillgänglig, vilket förbättrar effektiviteten och organisationen av dina digitala dokument.
 
-### Vanliga frågor
+## FAQ's
 
-#### F: Vad är att exportera anpassade egenskaper till ett PDF-dokument?
-S: Genom att exportera anpassade egenskaper till ett PDF-dokument kan ytterligare information inkluderas i det genererade PDF-dokumentet. Anpassade egenskaper är metadata som är specifik för ditt dokument, till exempel taggar, nyckelord eller autentiseringsuppgifter. Genom att exportera dessa anpassade egenskaper kan du göra dem tillgängliga för användare när de visar PDF-dokumentet.
+### Vad är anpassade egenskaper i ett PDF-dokument?
+Anpassade egenskaper är metadata som läggs till i ett dokument som kan innehålla information som författare, företagsnamn eller annan relevant data som behöver bäddas in i dokumentet.
 
-#### F: Hur kan jag exportera ett dokuments anpassade egenskaper till ett PDF-dokument med Aspose.Words för .NET?
-S: För att exportera ett dokuments anpassade egenskaper till ett PDF-dokument med Aspose.Words för .NET, följ dessa steg:
+### Varför ska jag använda Aspose.Words för .NET för att exportera anpassade egenskaper?
+Aspose.Words för .NET tillhandahåller ett robust och lättanvänt API för att manipulera Word-dokument och exportera dem som PDF-filer, vilket säkerställer att anpassade egenskaper bevaras och är tillgängliga.
 
- Skapa en instans av`Document` klass.
+### Kan jag lägga till flera anpassade egenskaper till ett dokument?
+ Ja, du kan lägga till flera anpassade egenskaper till ett dokument genom att anropa`Add`metod för varje fastighet du vill inkludera.
 
- Lägg till önskade anpassade egenskaper med hjälp av`CustomDocumentProperties` samling. Använd till exempel`Add` metod för att lägga till en "Company"-egenskap med värdet "Aspose".
+### Vilka andra format kan jag exportera till med Aspose.Words för .NET?
+Aspose.Words för .NET stöder export till olika format, inklusive DOCX, HTML, EPUB och många fler.
 
- Skapa en instans av`PdfSaveOptions` klass och ange hur man exporterar anpassade egenskaper med hjälp av`CustomPropertiesExport` fast egendom. De`PdfCustomPropertiesExport.Standard` värde exporterar anpassade egenskaper enligt standardinställningar.
-
- Använd`Save` metod för`Document` klass för att konvertera dokumentet till PDF och ange konverteringsalternativen.
-
-#### F: Hur kommer jag åt anpassade egenskaper för ett PDF-dokument?
-S: För att komma åt de anpassade egenskaperna för ett PDF-dokument kan du använda en kompatibel PDF-läsare som stöder visning av dokumentegenskaper. De vanligaste PDF-läsarna, som Adobe Acrobat Reader, ger tillgång till metadata och egenskaper för ett PDF-dokument. Du kan vanligtvis hitta dessa alternativ under "Arkiv"-menyn eller genom att högerklicka på dokumentet och välja "Egenskaper".
+### Var kan jag få support om jag stöter på problem?
+ För support kan du besöka[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för assistens.

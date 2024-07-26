@@ -105,4 +105,4 @@ Możesz zastąpić dowolny konkretny tekst w stopce. Jeśli chcesz zastąpić wi
 Tak, Aspose.Words obsługuje wyrażenia regularne do operacji znajdowania i zamieniania. Możesz określić wzorzec wyrażenia regularnego w pliku`Range.Replace` metoda.
 
 ### Jak obsługiwać wiele stopek w dokumencie?
-Jeśli dokument zawiera wiele sekcji z różnymi stopkami, wykonaj iterację po każdej sekcji i zastosuj zamianę tekstu dla każdej stopki indywidualnie.
+Jeśli dokument zawiera wiele sekcji z różnymi stopkami, przejrzyj każdą sekcję i zastosuj zamianę tekstu dla każdej stopki indywidualnie.

@@ -2,35 +2,49 @@
 title: Eksportuj zakładki nagłówka stopki dokumentu Word do dokumentu PDF
 linktitle: Eksportuj zakładki nagłówka stopki dokumentu Word do dokumentu PDF
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący eksportowania zakładek nagłówka dokumentu Word do zakładek dokumentu PDF za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak eksportować zakładki nagłówków i stopek z dokumentu Word do formatu PDF przy użyciu Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## Wstęp
 
-Ten artykuł zawiera przewodnik krok po kroku dotyczący eksportowania zakładek nagłówka dokumentu Word do funkcji dokumentu PDF za pomocą Aspose.Words dla .NET. Szczegółowo wyjaśnimy każdą część kodu. Pod koniec tego samouczka będziesz w stanie zrozumieć, jak wyeksportować zakładki z nagłówków i stopek dokumentu oraz wygenerować plik PDF z odpowiednimi zakładkami.
+Konwertowanie dokumentów programu Word do formatu PDF jest częstym zadaniem, zwłaszcza gdy chcesz udostępniać lub archiwizować dokumenty, zachowując ich formatowanie. Czasami dokumenty te zawierają ważne zakładki w nagłówkach i stopkach. W tym samouczku omówimy proces eksportowania tych zakładek z dokumentu Word do pliku PDF przy użyciu Aspose.Words dla .NET.
 
-Zanim zaczniesz, upewnij się, że w swoim projekcie zainstalowałeś i skonfigurowałeś bibliotekę Aspose.Words for .NET. Bibliotekę i instrukcje instalacji można znaleźć na stronie internetowej Aspose.
+## Warunki wstępne
 
-## Krok 1: Zdefiniuj katalog dokumentów
+Zanim zagłębimy się w temat, upewnij się, że masz następujące elementy:
 
- Na początek musisz zdefiniować ścieżkę do katalogu, w którym znajdują się Twoje dokumenty. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+- Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Skonfiguruj środowisko programistyczne. Możesz użyć programu Visual Studio lub dowolnego innego środowiska IDE zgodnego z platformą .NET.
+- Podstawowa znajomość języka C#: Wymagana jest znajomość programowania w języku C#, aby postępować zgodnie z przykładami kodu.
+
+## Importuj przestrzenie nazw
+
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu C#. Dodaj te linie na górze pliku kodu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Krok 2: Prześlij dokument
+Podzielmy proces na łatwe do wykonania kroki.
 
-Następnie musimy załadować dokument, który chcemy przetworzyć. W tym przykładzie zakładamy, że dokument nosi nazwę „Zakładki w nagłówkach i stopkach.docx” i znajduje się w określonym katalogu dokumentów.
+## Krok 1: Zainicjuj dokument
+
+Pierwszym krokiem jest załadowanie dokumentu Word. Oto jak możesz to zrobić:
 
 ```csharp
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## Krok 3: Skonfiguruj opcje zapisywania jako PDF
+W tym kroku po prostu określasz ścieżkę do katalogu dokumentów i ładujesz dokument programu Word.
 
- Aby wyeksportować zakładki nagłówków i stopek, musimy skonfigurować plik`PdfSaveOptions` obiekt. W tym przykładzie ustawiliśmy domyślny poziom konspektu zakładki na 1, a tryb eksportu zakładek nagłówka i stopki na „Pierwszy”.
+## Krok 2: Skonfiguruj opcje zapisywania plików PDF
+
+Następnie musisz skonfigurować opcje zapisywania plików PDF, aby mieć pewność, że zakładki w nagłówkach i stopkach zostaną poprawnie wyeksportowane.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## Krok 4: Zapisz dokument w formacie PDF z zakładkami nagłówków i stopek
+ Tutaj konfigurujemy`PdfSaveOptions` . The`DefaultBookmarksOutlineLevel` Właściwość ustawia poziom konspektu zakładek, a`HeaderFooterBookmarksExportMode` zapewnia, że eksportowane jest tylko pierwsze wystąpienie zakładek w nagłówkach i stopkach.
 
-Wreszcie możemy zapisać dokument w formacie PDF, korzystając z wcześniej skonfigurowanych opcji zapisywania.
+## Krok 3: Zapisz dokument w formacie PDF
+
+Na koniec zapisz dokument jako plik PDF ze skonfigurowanymi opcjami.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-To wszystko ! Pomyślnie wyeksportowałeś zakładki nagłówka i stopki z dokumentu i wygenerowałeś plik PDF z odpowiednimi zakładkami przy użyciu Aspose.Words dla .NET.
-
-### Przykładowy kod źródłowy do eksportowania zakładek nagłówków i stopek za pomocą Aspose.Words dla .NET
-
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+W tym kroku zapisujesz dokument w określonej ścieżce ze skonfigurowanymi opcjami.
 
 ## Wniosek
 
-tym samouczku wyjaśniliśmy, jak eksportować zakładki nagłówków i stopek z dokumentu Word do dokumentu PDF za pomocą Aspose.Words dla .NET. Wyeksportowane zakładki umożliwiają łatwą nawigację i szybkie odwoływanie się do odpowiednich nagłówków i stopek w wygenerowanym dokumencie PDF. Wykonaj opisane kroki, aby wyeksportować zakładki nagłówka i stopki z dokumentu i wygenerować plik PDF z odpowiednimi zakładkami przy użyciu Aspose.Words dla .NET. Pamiętaj, aby określić poprawną ścieżkę do dokumentów i skonfigurować opcje zapisywania, jeśli to konieczne.
+masz to! Wykonując poniższe kroki, możesz łatwo eksportować zakładki z nagłówków i stopek dokumentu Word do pliku PDF przy użyciu Aspose.Words dla .NET. Ta metoda zapewnia zachowanie ważnych pomocy nawigacyjnych w dokumencie w formacie PDF, co ułatwia czytelnikom poruszanie się po dokumencie.
 
-### Często Zadawane Pytania
+## Często zadawane pytania
 
-### P: Na czym polega eksport zakładek nagłówków i stopek z dokumentu programu Word do dokumentu PDF?
-Odp.: Eksportowanie zakładek nagłówków i stopek z dokumentu Word do dokumentu PDF to funkcja umożliwiająca przechowywanie i generowanie zakładek w dokumencie PDF na podstawie nagłówków i stopek. stopki oryginalnego dokumentu programu Word. Dzięki temu użytkownicy mogą szybko i łatwo poruszać się po dokumencie PDF, korzystając z zakładek odpowiadających nagłówkom i stopkom.
+### Czy mogę wyeksportować wszystkie zakładki z dokumentu Word do formatu PDF?
 
-### P: Jak mogę używać Aspose.Words dla .NET do eksportowania zakładek nagłówków i stopek z dokumentu Word do dokumentu PDF?
-O: Aby wyeksportować zakładki nagłówków i stopek z dokumentu Word do dokumentu PDF przy użyciu Aspose.Words dla .NET, wykonaj następujące kroki:
+ Tak, możesz. w`PdfSaveOptions`, w razie potrzeby możesz dostosować ustawienia, aby uwzględnić wszystkie zakładki.
 
- Ustaw ścieżkę katalogu, w którym znajdują się Twoje dokumenty, zastępując`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+### A co jeśli chcę wyeksportować zakładki również z treści dokumentu?
 
- Załaduj dokument, który chcesz przetworzyć za pomocą`Document` class i określ ścieżkę do dokumentu programu Word w określonym katalogu dokumentów.
+ Możesz skonfigurować`OutlineOptions` W`PdfSaveOptions` aby uwzględnić zakładki z treści dokumentu.
 
- Skonfiguruj opcje zapisywania jako PDF, tworząc instancję pliku`PdfSaveOptions` class i ustawienie odpowiednich opcji zakładek nagłówka i stopki.
+### Czy można dostosować poziomy zakładek w pliku PDF?
 
- Zapisz dokument w formacie PDF za pomocą`Save` metoda`Document` class określając ścieżkę i opcje zapisu.
+ Absolutnie! Możesz dostosować`DefaultBookmarksOutlineLevel` aby ustawić różne poziomy konspektu zakładek.
 
-### P: Jakie są korzyści z eksportowania zakładek nagłówków i stopek do dokumentu PDF?
-O: Zalety eksportowania zakładek nagłówków i stopek do dokumentu PDF są następujące:
+### Jak obsługiwać dokumenty bez zakładek?
 
-Łatwa nawigacja: Zakładki pozwalają użytkownikom łatwo poruszać się po dokumencie PDF, odwołując się do określonych nagłówków i stopek.
+Jeśli dokument nie zawiera zakładek, plik PDF zostanie wygenerowany bez zarysu zakładek. Upewnij się, że dokument zawiera zakładki, jeśli są potrzebne w pliku PDF.
 
-Skrócona instrukcja: Zakładki pozwalają użytkownikom szybko znaleźć odpowiednie sekcje dokumentu PDF na podstawie nagłówków i stopek.
+### Czy mogę użyć tej metody w przypadku innych typów dokumentów, takich jak DOCX lub RTF?
+
+Tak, Aspose.Words dla .NET obsługuje różne typy dokumentów, w tym DOCX, RTF i inne.

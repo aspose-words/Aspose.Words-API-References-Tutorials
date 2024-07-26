@@ -178,7 +178,7 @@ Aspose.Words for .NET je knihovna, která umožňuje vývojářům vytvářet, u
 
 ### Q3: Jak nastavím různá záhlaví a zápatí pro první stránku?
 
- Můžete nastavit různá záhlaví a zápatí pro první stránku pomocí`DifferentFirstPageHeaderFooter` vlastnictvím`PageSetup` třída.
+ Můžete nastavit různá záhlaví a zápatí pro první stránku pomocí`DifferentFirstPageHeaderFooter` majetek z`PageSetup` třída.
 
 ### Q4: Kde najdu další dokumentaci k Aspose.Words?
 

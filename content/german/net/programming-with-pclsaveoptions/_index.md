@@ -14,4 +14,4 @@ Die Aspose.Words für .NET-Tutorials bieten Ihnen eine wertvolle Ressource, um d
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Transformierte Elemente rastern](./rasterize-transformed-elements/) | Erfahren Sie, wie Sie die Rasterung transformierter Elemente bei der Konvertierung in das PCL-Format mit Aspose.Words für .NET deaktivieren. |
+| [Transformierte Elemente rastern](./rasterize-transformed-elements/) | Erfahren Sie, wie Sie transformierte Elemente rastern, wenn Sie Word-Dokumente mit Aspose.Words für .NET in das PCL-Format konvertieren. Schritt-für-Schritt-Anleitung enthalten. |

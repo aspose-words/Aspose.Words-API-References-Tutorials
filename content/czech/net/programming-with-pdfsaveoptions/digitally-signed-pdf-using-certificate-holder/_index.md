@@ -2,107 +2,96 @@
 title: Přidejte digitální podpis do PDF pomocí držitele certifikátu
 linktitle: Přidejte digitální podpis do PDF pomocí držitele certifikátu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak přidat digitální podpis do PDF pomocí držitele certifikátu s Aspose.Words pro .NET.
+description: Zabezpečte své soubory PDF digitálním podpisem pomocí Aspose.Words for .NET. Postupujte podle tohoto podrobného průvodce a snadno přidejte digitální podpis do souborů PDF.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
+## Úvod
 
-V tomto tutoriálu vás provedeme kroky pro přidání digitálního podpisu do PDF pomocí držitele certifikátu s Aspose.Words pro .NET. Digitální podpis dodává dokumentu PDF vrstvu zabezpečení a integrity. Postupujte podle následujících kroků:
+Přemýšleli jste někdy, jak zabezpečit dokumenty PDF digitálním podpisem? Tak to jste na správném místě! Digitální podpisy jsou moderním ekvivalentem ručně psaných podpisů a nabízejí způsob, jak ověřit pravost a integritu digitálních dokumentů. V tomto tutoriálu vám ukážeme, jak přidat digitální podpis do PDF pomocí Aspose.Words for .NET. Pokryjeme vše od nastavení vašeho prostředí až po spuštění kódu krok za krokem. Na konci této příručky budete mít digitálně podepsané PDF, které je bezpečné a spolehlivé.
 
-## Krok 1: Vytvoření dokumentu a přidání obsahu
+## Předpoklady
 
-Začněte vytvořením instance třídy Document:
+Než začneme, budete potřebovat několik věcí:
+
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[Aspose webové stránky](https://releases.aspose.com/words/net/).
+2. Soubor certifikátu: K podepsání PDF budete potřebovat soubor certifikátu .pfx. Pokud jej nemáte, můžete si pro testovací účely vytvořit certifikát s vlastním podpisem.
+3. Visual Studio: Tento kurz předpokládá, že jako vývojové prostředí používáte Visual Studio.
+4. Základní znalost C#: Znalost programování C# a .NET je nezbytná.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Ty jsou nezbytné pro přístup ke třídám a metodám potřebným pro manipulaci s dokumenty a digitální podpisy.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System;
+```
+
+Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky.
+
+## Krok 1: Nastavte svůj projekt
+
+Vytvořte nový projekt C# v sadě Visual Studio. Přidejte odkaz na Aspose.Words pro .NET. Můžete to udělat přes NuGet Package Manager vyhledáním „Apose.Words“ a jeho instalací.
+
+## Krok 2: Načtěte nebo vytvořte dokument
+
+K podpisu budete potřebovat dokument. Můžete buď načíst existující dokument, nebo vytvořit nový. Pro tento tutoriál vytvoříme nový dokument a přidáme ukázkový text.
+
+```csharp
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-```
 
-## Krok 2: Přidejte obsah do dokumentu
-
- Poté použijte`DocumentBuilder`pro přidání obsahu do dokumentu. Chcete-li například přidat odstavec obsahující text "Test Signed PDF", použijte`Writeln` metoda:
-
-```csharp
+// Přidejte do dokumentu nějaký text.
 builder.Writeln("Test Signed PDF.");
 ```
 
-Podle potřeby můžete přidat další položky obsahu.
+## Krok 3: Zadejte podrobnosti o digitálním podpisu
 
-## Krok 3: Nastavte možnosti uložení PDF
-
-Vytvořte instanci třídy PdfSaveOptions a zadejte podrobnosti o digitálním podpisu:
+Nyní je čas nastavit podrobnosti digitálního podpisu. Budete muset zadat cestu k souboru certifikátu .pfx, důvod podpisu, umístění a datum podpisu.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-	DigitalSignatureDetails = new PdfDigitalSignatureDetails(
-		CertificateHolder.Create(MyDir + "morzal.pfx", "aw"), "reason", "location",
-		DateTime.Now)
+    DigitalSignatureDetails = new PdfDigitalSignatureDetails(
+        CertificateHolder.Create(dataDir + "morzal.pfx", "your_password"), "reason", "location",
+        DateTime.Now)
 };
 ```
 
-Ujistěte se, že jste zadali správnou cestu k certifikátu a související heslo. Můžete také upravit důvod a umístění podpisu.
+ Nahradit`"your_password"` s heslem pro váš soubor .pfx.
 
 ## Krok 4: Uložte dokument jako digitálně podepsaný PDF
 
- Použijte`Save` způsob uložení dokumentu jako PDF zadáním možností uložení:
+Nakonec uložte dokument jako PDF s digitálním podpisem.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
+doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-Ujistěte se, že jste zadali správnou cestu k uložení digitálně podepsaného PDF.
+A to je vše! Váš dokument je nyní podepsán a uložen jako PDF.
 
-Podle těchto kroků můžete snadno vytvořit digitálně podepsaný PDF s certifikátem pomocí Aspose.Words for .NET.
-
-### Příklad zdrojového kódu pro digitálně podepsané PDF pomocí držitele certifikátu pomocí Aspose.Words pro .NET
-
-Zde je kompletní zdrojový kód digitálně podepsaného PDF pomocí držitele certifikátu z dokumentu pomocí Aspose.Words pro .NET:
-
-```csharp
-
-            // Cesta k adresáři dokumentů.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document();
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            
-            builder.Writeln("Test Signed PDF.");
-
-            PdfSaveOptions saveOptions = new PdfSaveOptions
-            {
-                DigitalSignatureDetails = new PdfDigitalSignatureDetails(
-                    CertificateHolder.Create(MyDir + "morzal.pfx", "aw"), "reason", "location",
-                    DateTime.Now)
-            };
-
-            doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
-            
-        
-```
 ## Závěr
 
-tomto tutoriálu jsme prozkoumali kroky pro přidání digitálního podpisu do dokumentu PDF pomocí certifikátu s Aspose.Words for .NET. Digitální podpis dodává dokumentu vrstvu zabezpečení a integrity, čímž zaručuje jeho pravost a umožňuje odhalit případné následné úpravy. Podle uvedených kroků můžete snadno vytvořit digitálně podepsaný PDF pomocí certifikátu s Aspose.Words for .NET.
+Digitální podpisy jsou mocným nástrojem pro zajištění integrity a pravosti vašich dokumentů. S Aspose.Words for .NET je přidávání digitálního podpisu k vašim souborům PDF přímočaré a efektivní. Podle tohoto podrobného průvodce můžete zabezpečit své dokumenty PDF a poskytnout příjemcům klid ohledně jejich pravosti. Šťastné kódování!
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co je digitální podpis a proč je důležitý v dokumentu PDF?
-Odpověď: Digitální podpis je bezpečnostní technika, která pomáhá zajistit pravost, integritu a nepopiratelnost elektronického dokumentu, jako je soubor PDF. Používá digitální certifikát k přidání vrstvy zabezpečení do dokumentu, což pomáhá ověřit identitu autora a odhalit případné následné změny obsahu.
+### Co je digitální podpis?
+Digitální podpis je elektronická forma podpisu, která ověřuje pravost a integritu digitálního dokumentu.
 
-#### Otázka: Jak mohu přidat digitální podpis do dokumentu PDF pomocí certifikátu s Aspose.Words for .NET?
-Odpověď: Chcete-li přidat digitální podpis do dokumentu PDF pomocí certifikátu s Aspose.Words for .NET, postupujte takto:
+### Potřebuji certifikát k přidání digitálního podpisu?
+Ano, k přidání digitálního podpisu do PDF budete potřebovat soubor certifikátu .pfx.
 
- Vytvořte instanci souboru`Document` třídy reprezentovat dokument.
+### Mohu pro testování vytvořit certifikát s vlastním podpisem?
+Ano, pro testovací účely můžete vytvořit certifikát s vlastním podpisem. Pro produkční použití se však doporučuje získat certifikát od důvěryhodné certifikační autority.
 
- Použijte`DocumentBuilder` třídy přidat požadovaný obsah do dokumentu.
+### Je Aspose.Words for .NET zdarma?
+ Aspose.Words for .NET je komerční produkt, ale můžete si stáhnout bezplatnou zkušební verzi z webu[Aspose webové stránky](https://releases.aspose.com/).
 
- Vytvořte instanci souboru`PdfSaveOptions` třídy a zadejte podrobnosti digitálního podpisu pomocí`PdfDigitalSignatureDetails` třída. Budete muset zadat cestu k certifikátu (`CertificateHolder.Create`), související heslo a důvod a umístění podpisu.
-
- Použijte`Save` způsob uložení dokumentu ve formátu PDF s uvedením možností uložení.
-
-#### Otázka: Jak získám certifikát pro přidání digitálního podpisu do dokumentu PDF?
-Odpověď: Chcete-li získat certifikát pro přidání digitálního podpisu do dokumentu PDF, můžete obvykle kontaktovat certifikační autoritu (CA) nebo poskytovatele důvěryhodných služeb. Tyto entity vydávají digitální certifikáty po ověření vaší identity a ověření vaší žádosti. Jakmile certifikát získáte, můžete jej použít ve své aplikaci k přidávání digitálních podpisů do dokumentů PDF.
-
-#### Otázka: Je možné upravit podrobnosti digitálního podpisu, jako je důvod a umístění?
- Odpověď: Ano, podrobnosti digitálního podpisu můžete přizpůsobit zadáním důvodu a umístění podpisu. V uvedeném příkladu kódu můžete upravit hodnoty`reason`a`location` parametry při vytváření`PdfDigitalSignatureDetails` objekt. Ujistěte se, že jste pro každý parametr poskytli příslušné informace, aby odrážely důvod a umístění podpisu v dokumentu PDF.
+### Mohu použít Aspose.Words pro .NET k podepisování jiných typů dokumentů?
+Ano, Aspose.Words for .NET lze použít k podepisování různých typů dokumentů, nejen souborů PDF.

@@ -2,7 +2,7 @@
 title: Belge Bölme ve Çıkarma Teknikleri
 linktitle: Belge Bölme ve Çıkarma Teknikleri
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak belge bölme ve çıkartmayı öğrenin. Verimli manipülasyon için kaynak kodlu adım adım kılavuz. Aspose'un gücünün kilidini açın
+description: Aspose.Words for Java'yı kullanarak belge bölme ve çıkartmayı öğrenin. Verimli manipülasyon için kaynak koduyla adım adım kılavuz. Aspose'un gücünün kilidini açın
 type: docs
 weight: 14
 url: /tr/java/document-splitting/document-splitting-extraction-techniques/

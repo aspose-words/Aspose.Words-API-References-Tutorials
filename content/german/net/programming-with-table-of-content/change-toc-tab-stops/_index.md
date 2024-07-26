@@ -103,7 +103,7 @@ Dieser Codeausschnitt lädt das Dokument „Inhaltsverzeichnis.docx“, das sich
 
 #### F: Wie kann ich mit Aspose.Words für .NET die im Inhaltsverzeichnis verwendeten Registerkarten ändern?
 
- A: Sobald das Dokument geladen ist, können Sie jeden Absatz des Dokuments durchlaufen und prüfen, ob er mit den Ergebnisstilen des Inhaltsverzeichnisses (TOC) formatiert ist. Wenn ein Absatz als TOC-Stil formatiert ist, können Sie die Tabulatoren ändern, die zum Ausrichten der Seitenzahlen verwendet werden. In Aspose.Words für .NET können Sie auf die`ParagraphFormat` Eigenschaft jedes Absatzes, um die Tabulatorstopps abzurufen und zu ändern. Hier ist ein Beispiel:
+A: Sobald das Dokument geladen ist, können Sie jeden Absatz des Dokuments durchlaufen und prüfen, ob er mit den Ergebnisstilen des Inhaltsverzeichnisses (TOC) formatiert ist. Wenn ein Absatz als TOC-Stil formatiert ist, können Sie die Tabulatoren ändern, die zum Ausrichten der Seitenzahlen verwendet werden. In Aspose.Words für .NET können Sie auf die`ParagraphFormat` Eigenschaft jedes Absatzes, um die Tabulatorstopps abzurufen und zu ändern. Hier ist ein Beispiel:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))

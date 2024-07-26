@@ -9,7 +9,7 @@ url: /nl/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 ## Invoering
 
-Hallo daar, mede-ontwikkelaars! Heeft u ooit met Word-documenten gewerkt en bent u verstrikt geraakt in de complexiteit van het opslaan van afbeeldingsopsommingstekens? Het is een van die kleine details die een groot verschil kunnen maken in het uiteindelijke uiterlijk van uw document. Welnu, vandaag ben ik hier om je door het proces te leiden van het omgaan met afbeeldingsopsommingstekens in Aspose.Words voor .NET, met bijzondere nadruk op de functie "Afbeeldingsopsommingstekens niet opslaan". Klaar om erin te duiken? Laten we gaan!
+Hallo daar, mede-ontwikkelaars! Heeft u ooit met Word-documenten gewerkt en bent u verstrikt geraakt in de complexiteit van het opslaan van afbeeldingsopsommingstekens? Het is een van die kleine details die een groot verschil kunnen maken in het uiteindelijke uiterlijk van uw document. Welnu, vandaag ben ik hier om je door het proces te leiden van het omgaan met afbeeldingsopsommingstekens in Aspose.Words voor .NET, met bijzondere aandacht voor de functie "Afbeeldingsopsommingstekens niet opslaan". Klaar om erin te duiken? Laten we gaan!
 
 ## Vereisten
 

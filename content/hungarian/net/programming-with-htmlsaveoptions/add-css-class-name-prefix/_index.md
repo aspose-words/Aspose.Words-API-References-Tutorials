@@ -2,71 +2,128 @@
 title: Adja hozzá a Css osztálynév előtagot
 linktitle: Adja hozzá a Css osztálynév előtagot
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre a CSS-osztálynév előtag hozzáadásához, amikor egy dokumentumot HTML formátumba konvertál az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan adhat hozzá CSS-osztálynév-előtagot Word-dokumentumok HTML-ként történő mentésekor az Aspose.Words for .NET használatával. Részletes útmutató, kódrészletek és GYIK mellékelve.
 type: docs
 weight: 10
 url: /hu/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban végigvezetjük a C# forráskódon, hogy hozzáadhasson egy CSS-osztálynév előtagot az Aspose.Words for .NET-hez. Ez a funkció lehetővé teszi, hogy egyéni előtagot adjon a generált CSS-osztálynevekhez, amikor egy dokumentumot HTML formátumba konvertál.
+Üdvözöljük! Ha belemerül az Aspose.Words for .NET világába, egy csemege vár rád. Ma megvizsgáljuk, hogyan adhatunk hozzá CSS-osztálynév-előtagot egy Word-dokumentum HTML formátumban történő mentésekor az Aspose.Words for .NET használatával. Ez a funkció rendkívül hasznos, ha el szeretné kerülni az osztálynév-ütközést a HTML-fájlokban.
 
-## 1. lépés: A projekt beállítása
+## Előfeltételek
 
-A kezdéshez hozzon létre egy új C#-projektet kedvenc IDE-jében. Győződjön meg arról, hogy az Aspose.Words for .NET könyvtárra hivatkozik a projektben.
+Mielőtt elkezdenénk, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-## 2. lépés: A dokumentum betöltése
+-  Aspose.Words for .NET: Ha még nem telepítette,[töltse le itt](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: Visual Studio vagy bármely más C# IDE.
+-  Word-dokumentum: Egy nevű dokumentumot fogunk használni`Rendering.docx`. Helyezze el a projektkönyvtárába.
 
-Ebben a lépésben betöltjük azt a Word dokumentumot, amelyet HTML-be szeretnénk konvertálni. A dokumentum betöltéséhez használja a következő kódot:
+## Névterek importálása
+
+Először győződjön meg arról, hogy a szükséges névtereket importálta a C# projektbe. Adja hozzá ezeket a kódfájl tetejéhez:
 
 ```csharp
-// dokumentumok könyvtár elérési útja.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Most pedig merüljünk el a lépésről lépésre szóló útmutatóban!
+
+## 1. lépés: Állítsa be projektjét
+
+Mielőtt elkezdhetnénk hozzáadni egy CSS-osztálynév előtagot, állítsuk be projektünket.
+
+### 1.1. lépés: Hozzon létre egy új projektet
+
+ Indítsa el a Visual Studio-t, és hozzon létre egy új Console App projektet. Nevezd valami fülbemászónak, mint pl`AsposeCssPrefixExample`.
+
+### 1.2. lépés: Adja hozzá az Aspose.Words for .NET-et
+
+Ha még nem tette meg, adja hozzá az Aspose.Words for .NET-et projektjéhez a NuGet segítségével. Egyszerűen nyissa meg a NuGet Package Manager konzolt, és futtassa:
+
+```bash
+Install-Package Aspose.Words
+```
+
+Nagy! Most készen állunk a kódolás megkezdésére.
+
+## 2. lépés: Töltse be a dokumentumot
+
+Az első dolog, amit tennünk kell, hogy betöltsük azt a Word dokumentumot, amelyet HTML-be szeretnénk konvertálni.
+
+### 2.1. lépés: Határozza meg a dokumentum elérési útját
+
+ Állítsa be a dokumentumkönyvtár elérési útját. Az oktatóanyag kedvéért tegyük fel, hogy a dokumentuma egy nevű mappában található`Documents` projektkönyvtárában.
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### 2.2. lépés: Töltse be a dokumentumot
+
+Most töltsük be a dokumentumot az Aspose.Words használatával:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Cserélje ki`"YOUR DOCUMENTS DIRECTORY"` annak a könyvtárnak az elérési útjával, ahol a dokumentum található.
+## 3. lépés: Konfigurálja a HTML mentési beállításokat
 
-## 3. lépés: Állítsa be a HTML mentési beállításokat
+Ezután konfigurálnunk kell a HTML-mentési beállításokat, hogy tartalmazzák a CSS-osztálynév előtagját.
 
-Most állítsuk be a HTML mentési beállításokat, beleértve a CSS-stíluslap típusát és a CSS-osztálynév előtagját. Használja a következő kódot:
+### 3.1. lépés: Hozzon létre HTML mentési beállításokat
+
+ Példányosítsa a`HtmlSaveOptions` objektumot, és állítsa be a CSS stíluslap típusát`External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
- Ez a kód létrehozza a`HtmlSaveOptions` és beállítja`CssStyleSheetType` nak nek`CssStyleSheetType.External` külső CSS stíluslap létrehozásához, és`CssClassNamePrefix` nak nek`"pfx_"` előtaghoz`"pfx_"` a CSS osztály megnevezéséhez.
+### 3.2. lépés: Állítsa be a CSS-osztálynév előtagját
 
-## 4. lépés: A dokumentum konvertálása és mentése HTML formátumba
+ Most állítsuk be a`CssClassNamePrefix` tulajdonságot a kívánt előtaghoz. Ehhez a példához használjuk`"pfx_"`.
 
-Végül a dokumentumot HTML formátumba konvertáljuk a korábban meghatározott HTML mentési beállításokkal. Használja a következő kódot:
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## 4. lépés: Mentse el a dokumentumot HTML-ként
+
+Végül mentsük el a dokumentumot HTML fájlként a beállított opciókkal.
+
+
+Adja meg a kimeneti HTML fájl elérési útját, és mentse a dokumentumot.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-Ez a kód átalakítja a dokumentumot HTML formátumba, és elmenti egy fájlba, hozzáadva a CSS osztálynév előtaggal.
+## 5. lépés: Ellenőrizze a kimenetet
 
-### Példa forráskódra a Css osztálynév előtag hozzáadása Aspose.Words for .NET használatával forráskódjához
+ A projekt futtatása után navigáljon a sajátjához`Documents` mappát. Meg kell találnia egy nevű HTML-fájlt`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Nyissa meg ezt a fájlt egy szövegszerkesztőben vagy böngészőben, és ellenőrizze, hogy a CSS-osztályok rendelkeznek-e az előtaggal`pfx_`.
 
-```csharp
+## Következtetés
 
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+És megvan! Az alábbi lépések végrehajtásával sikeresen hozzáadott egy CSS-osztálynév előtagot a HTML-kimenethez az Aspose.Words for .NET használatával. Ez az egyszerű, de hatékony funkció segítségével tiszta és konfliktusmentes stílusokat tarthat fenn HTML-dokumentumaiban.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## GYIK
 
-```
+### Használhatok más előtagot minden mentési művelethez?
+ Igen, személyre szabhatja az előtagot minden egyes dokumentum mentésekor, ha módosítja a`CssClassNamePrefix` ingatlan.
 
- Ügyeljen arra, hogy a megfelelő dokumentum elérési utat adja meg a`dataDir` változó.
+### Ez a módszer támogatja a beépített CSS-t?
+ A`CssClassNamePrefix` tulajdonság külső CSS-sel működik. A beépített CSS-hez más megközelítésre lesz szüksége.
 
-Most megtanulta, hogyan adhat hozzá CSS-osztálynév-előtagot egy dokumentum HTML-formátumba konvertálásakor az Aspose.Words for .NET használatával. Az ebben az oktatóanyagban található lépésenkénti útmutató lépéseit követve testreszabhatja a konvertált HTML-dokumentumokban lévő CSS-osztályneveket.
+### Hogyan vehetek fel más HTML mentési lehetőségeket?
+ Különféle tulajdonságait konfigurálhatja`HtmlSaveOptions` a HTML-kimenet testreszabásához. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+
+### Elmenthető a HTML adatfolyamba?
+ Teljesen! A dokumentumot adatfolyamba mentheti, ha átadja a stream objektumot a`Save` módszer.
+
+### Hogyan kaphatok támogatást, ha problémákba ütközöm?
+ Támogatást kaphat a[Aspose fórum](https://forum.aspose.com/c/words/8).

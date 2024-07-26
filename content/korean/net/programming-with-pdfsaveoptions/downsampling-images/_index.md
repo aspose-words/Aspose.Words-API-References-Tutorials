@@ -2,94 +2,89 @@
 title: 이미지 다운샘플링으로 PDF 문서 크기 줄이기
 linktitle: 이미지 다운샘플링으로 PDF 문서 크기 줄이기
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 PDF로 변환할 때 이미지를 다운샘플링하여 PDF 문서 크기를 줄이는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 이미지를 다운샘플링하여 PDF 문서 크기를 줄입니다. 더 빠른 업로드 및 다운로드 시간을 위해 PDF를 최적화하세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
+## 소개
 
-이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 PDF로 변환할 때 이미지를 다운샘플링하여 PDF 문서 크기를 줄이는 단계를 안내합니다. 이렇게 하면 생성된 PDF 파일의 크기가 줄어듭니다. 아래 단계를 따르십시오.
+PDF는 문서 공유부터 eBook 제작에 이르기까지 모든 작업에 사용되는 디지털 세계의 필수 요소입니다. 그러나 특히 이미지가 많은 콘텐츠를 처리할 때 크기가 장애물이 될 수 있습니다. 여기서 다운샘플링 이미지가 작동합니다. PDF 내의 이미지 해상도를 줄이면 품질을 크게 저하시키지 않으면서 파일 크기를 크게 줄일 수 있습니다. 이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 이를 달성하는 단계를 안내합니다.
+
+## 전제조건
+
+코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
+
+1.  .NET용 Aspose.Words: Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않은 경우 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio와 같은 모든 .NET 개발 환경.
+3. C# 기본 지식: C# 프로그래밍의 기본을 이해하면 도움이 됩니다.
+4.  샘플 문서: Word 문서(예:`Rendering.docx`) PDF로 변환할 이미지가 포함되어 있습니다.
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져와야 합니다. 코드 파일 상단에 다음을 추가하세요.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+이제 프로세스를 관리 가능한 단계로 나누어 보겠습니다.
 
 ## 1단계: 문서 로드
 
-PDF로 변환하려는 문서를 업로드하여 시작하십시오.
+첫 번째 단계는 Word 문서를 로드하는 것입니다. 여기에서 문서 디렉터리의 경로를 지정합니다.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+// 문서 디렉터리의 경로입니다.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-문서의 올바른 경로를 지정해야 합니다.
+이 단계에서는 지정된 디렉터리에서 Word 문서를 로드합니다. 꼭 교체하세요`"YOUR DOCUMENT DIRECTORY"`문서가 있는 실제 경로를 사용합니다.
 
-## 2단계: PDF 저장 옵션 구성
+## 2단계: 다운샘플링 옵션 구성
 
-PdfSaveOptions 클래스의 인스턴스를 만들고 이미지 축소 옵션을 설정합니다.
+다음으로 다운샘플링 옵션을 구성해야 합니다. 여기에는 이미지의 해상도와 해상도 임계값 설정이 포함됩니다.
 
 ```csharp
+// 다운샘플링을 위한 최소 임계값을 설정할 수 있습니다.
+// 이 값은 입력 문서의 두 번째 이미지가 다운샘플링되는 것을 방지합니다.
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
+    DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- 그만큼`Resolution` 속성은 이미지의 목표 해상도를 지정하고`ResolutionThreshold`속성은 이미지가 축소되지 않는 최소 해상도를 지정합니다.
+ 여기서는 새로운 인스턴스를 생성합니다.`PdfSaveOptions` 그리고 설정`Resolution` 36DPI로,`ResolutionThreshold` 128DPI로. 즉, 해상도가 128DPI보다 높은 모든 이미지는 36DPI로 다운샘플링됩니다.
 
-## 3단계: 문서를 PDF로 변환
+## 3단계: 문서를 PDF로 저장
 
- 사용`Save` 저장 옵션을 지정하여 문서를 PDF로 변환하는 방법:
+마지막으로 구성된 옵션을 사용하여 문서를 PDF로 저장합니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
 ```
 
-변환된 PDF를 저장할 올바른 경로를 지정했는지 확인하세요.
-
-### .NET용 Aspose.Words를 사용하여 이미지 다운샘플링을 위한 예제 소스 코드
-
-```csharp
-
-	// 문서 디렉터리의 경로입니다.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// 다운샘플링을 위한 최소 임계값을 설정할 수 있습니다.
-	// 이 값은 입력 문서의 두 번째 이미지가 다운샘플링되는 것을 방지합니다.
-	PdfSaveOptions saveOptions = new PdfSaveOptions
-	{
-		DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
-	};
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
-
-```
-
-다음 단계를 따르면 Aspose.Words for .NET을 사용하여 PDF로 변환할 때 이미지 해상도를 쉽게 줄일 수 있습니다.
+이 마지막 단계에서는 지정된 다운샘플링 옵션을 사용하여 문서를 동일한 디렉터리에 PDF로 저장합니다.
 
 ## 결론
 
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 PDF로 변환할 때 이미지 샘플링을 사용하여 PDF 문서의 크기를 줄이는 방법을 설명했습니다. 설명된 단계를 따르면 이미지의 해상도와 생성된 PDF 파일의 크기를 쉽게 줄일 수 있습니다. 문서의 올바른 경로를 지정하고 필요에 따라 이미지 샘플링 옵션을 구성하십시오. PDF 파일 크기를 줄이면 다양한 플랫폼에서 파일을 더 쉽게 공유하고, 저장하고, 빠르게 로드할 수 있습니다. Aspose.Words for .NET을 사용하여 이미지 샘플링을 통해 PDF 문서 크기를 줄이는 이점을 누려보세요.
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 이미지를 다운샘플링하여 PDF 크기를 성공적으로 줄였습니다. 이렇게 하면 PDF를 더욱 쉽게 관리할 수 있을 뿐만 아니라 업로드, 다운로드 속도가 빨라지고 보기 환경이 더욱 원활해집니다.
 
-### 자주 묻는 질문
+## FAQ
 
-#### Q: 이미지 샘플링으로 PDF 문서의 크기를 줄이는 것은 무엇입니까?
-A: 이미지 샘플링으로 PDF 문서 크기를 줄이는 것은 PDF로 변환할 때 이미지의 해상도를 줄여 생성된 PDF 파일의 크기를 줄이는 것입니다. 이를 통해 저장 공간 사용이 최적화되고 PDF 파일을 더 쉽게 공유하고 전송할 수 있습니다.
+### 다운샘플링이란 무엇입니까?
+다운샘플링은 이미지의 해상도를 줄이는 프로세스로, 해당 이미지가 포함된 문서의 파일 크기를 줄이는 데 도움이 됩니다.
 
-#### Q: Aspose.Words for .NET을 사용하여 이미지 샘플링으로 PDF 문서 크기를 어떻게 줄일 수 있나요?
-A: .NET용 Aspose.Words를 사용하여 이미지 샘플링으로 PDF 문서 크기를 줄이려면 다음 단계를 따르세요.
+### 다운샘플링이 이미지 품질에 영향을 미치나요?
+예, 다운샘플링을 하면 이미지 품질이 저하됩니다. 그러나 그 영향은 해상도 감소 정도에 따라 달라집니다. 이는 파일 크기와 이미지 품질 간의 균형입니다.
 
- 교체하여 문서가 있는 디렉토리 경로를 설정하십시오.`"YOUR DOCUMENTS DIRECTORY"` 문서 디렉토리의 실제 경로로.
+### 다운샘플링할 이미지를 선택할 수 있나요?
+ 예, 설정을 통해`ResolutionThreshold`를 사용하면 원본 해상도에 따라 다운샘플링할 이미지를 제어할 수 있습니다.
 
- PDF로 변환하려는 문서를 로드합니다.`Document` 클래스를 지정하고 지정된 문서 디렉터리에 있는 문서의 경로를 지정합니다.
+### 다운샘플링에 이상적인 해상도는 무엇입니까?
+이상적인 해상도는 특정 요구 사항에 따라 다릅니다. 일반적으로 웹 이미지에는 72DPI가 사용되는 반면 인쇄 품질에는 더 높은 해상도가 사용됩니다.
 
- 인스턴스를 생성하여 PDF로 저장 옵션을 구성합니다.`PdfSaveOptions` 클래스를 사용하여 이미지 샘플링 옵션을 설정합니다.`DownsampleOptions` 재산. 다음을 사용하여 이미지의 대상 해상도를 지정할 수 있습니다.`Resolution` 속성을 사용하여 이미지가 축소되지 않는 최소 해상도 임계값을 설정합니다.`ResolutionThreshold` 재산.
-
- 다음을 사용하여 문서를 PDF 형식으로 저장합니다.`Save` 의 방법`Document` 경로와 저장 옵션을 지정하는 클래스입니다.
-
-#### Q: 이미지 샘플링을 통해 PDF 문서 크기를 줄이면 어떤 이점이 있습니까?
-A: 이미지 샘플링을 통해 PDF 문서 크기를 줄이면 다음과 같은 이점이 있습니다.
-
-PDF 파일 크기 감소: 이미지 샘플링은 PDF 문서의 이미지 해상도를 줄여서 PDF 파일 크기를 크게 줄입니다. 이를 통해 특히 이메일이나 온라인을 통해 파일을 쉽게 공유하고 전송할 수 있습니다.
-
-저장 공간 최적화: PDF 파일의 크기를 줄이면 특히 고해상도 이미지가 포함된 PDF 파일이 많은 경우 저장 공간 사용을 최적화하는 데 도움이 됩니다.
-
-성능 개선: 작은 PDF 파일은 더 빠르게 로드되며 다른 장치에서 더 빠르게 열고 볼 수 있습니다.
+### .NET용 Aspose.Words는 무료인가요?
+ Aspose.Words for .NET은 상용 제품이지만 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/) 또는[임시면허](https://purchase.aspose.com/temporary-license/).

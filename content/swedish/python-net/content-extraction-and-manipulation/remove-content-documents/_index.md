@@ -20,7 +20,7 @@ Innan vi går in i implementeringen, se till att du har följande på plats:
 - Grundläggande förståelse för Python-programmering
 - Aspose.Words för Python-biblioteket installerat
 
-## Installera Aspose.Words för Python
+## Installerar Aspose.Words för Python
 
  För att komma igång måste du installera Aspose.Words for Python-biblioteket. Du kan göra detta med hjälp av`pip`, Python-pakethanteraren, genom att köra följande kommando:
 

@@ -48,7 +48,7 @@ table. ConvertToHorizontallyMergedCells();
 
 	Document doc = new Document(dataDir + "Table with merged cells.docx");
 	Table table = doc.FirstSection.Body.Tables[0];
-	// Most az egyesített cellák megfelelő összevonási jelzőkkel rendelkeznek.
+	// Most az egyesített cellák megfelelő egyesítési jelzőkkel rendelkeznek.
 	table.ConvertToHorizontallyMergedCells();
 ```
 

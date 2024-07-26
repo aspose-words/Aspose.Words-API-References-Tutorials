@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Krok 3: Nastavení zpětného volání upozornění
+## Krok 3: Nastavte zpětné volání upozornění
 
  Chcete-li zachytit a zpracovat varování, vytvořte třídu, která implementuje`IWarningCallback` rozhraní. Tato třída zaznamená všechna varování, která se vyskytnou během zpracování dokumentu.
 

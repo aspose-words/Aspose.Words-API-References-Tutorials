@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- Dans cette dernière étape, nous enregistrons le document résultant au format .docx en utilisant le`Save` méthode et en transmettant le chemin d’accès au fichier de sortie.
+Dans cette dernière étape, nous enregistrons le document résultant au format .docx en utilisant le`Save` méthode et en transmettant le chemin d’accès au fichier de sortie.
 
 Vous pouvez maintenant exécuter le code source pour charger le document texte et déterminer la direction du texte. Le document résultant sera enregistré dans le répertoire spécifié sous le nom "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
 

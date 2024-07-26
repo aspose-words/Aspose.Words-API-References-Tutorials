@@ -9,7 +9,7 @@ url: /sv/net/join-and-append-documents/simple-append-document/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin sett dig själv att behöva slå samman två Word-dokument sömlöst? Tja, du har tur! Idag dyker vi in i världen av Aspose.Words för .NET, ett kraftfullt bibliotek som låter dig manipulera Word-dokument programmatiskt. Specifikt kommer vi att fokusera på hur du lägger till ett dokument till ett annat i några enkla steg. Oavsett om du skapar rapporter, kombinerar delar av ett projekt eller bara effektiviserar dokumenthanteringen, har den här guiden täckt dig. Så, låt oss komma igång!
+Hallå där! Har du någonsin sett dig själv att behöva slå samman två Word-dokument sömlöst? Nåväl, du har tur! Idag dyker vi in i världen av Aspose.Words för .NET, ett kraftfullt bibliotek som låter dig manipulera Word-dokument programmatiskt. Specifikt kommer vi att fokusera på hur du lägger till ett dokument till ett annat i några enkla steg. Oavsett om du skapar rapporter, kombinerar delar av ett projekt eller bara effektiviserar dokumenthanteringen, har den här guiden täckt dig. Så, låt oss komma igång!
 
 ## Förutsättningar
 

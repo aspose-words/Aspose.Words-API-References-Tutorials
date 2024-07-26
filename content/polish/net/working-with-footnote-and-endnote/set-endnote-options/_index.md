@@ -97,4 +97,4 @@ Odp.: Aby rozmieścić przypisy końcowe w dokumencie, możesz użyć opcji`Posi
 
 #### P: Czy można kontynuować numerowanie przypisów końcowych pomiędzy sekcjami dokumentu?
 
- Odpowiedź: Tak, możliwe jest kontynuowanie numerowania przypisów końcowych pomiędzy sekcjami dokumentu. Użyj`RestartRule` własność`EndnoteOptions` class i ustaw ją na`RestartContinuous` aby umożliwić kontynuację numeracji pomiędzy sekcjami.
+ Odpowiedź: Tak, możliwe jest kontynuowanie numeracji przypisów końcowych pomiędzy sekcjami dokumentu. Użyj`RestartRule` własność`EndnoteOptions` class i ustaw ją na`RestartContinuous` aby umożliwić kontynuację numeracji pomiędzy sekcjami.

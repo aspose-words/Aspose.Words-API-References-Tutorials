@@ -55,7 +55,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- Ide beszúrunk egy oszlopdiagramot meghatározott méretekkel. A`InsertChart` metódus visszaadja a`Shape` objektum, amely tartalmazza a diagramot.
+ Ide beszúrunk egy oszlopdiagramot meghatározott méretekkel. A`InsertChart` metódus visszaadja a`Shape` objektum, amely a diagramot tartalmazza.
 
 ## 3. lépés: Törölje a meglévő sorozatokat
 

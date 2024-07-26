@@ -67,7 +67,7 @@ Az SDT-k dokumentumhoz való hozzáadása néhány egyszerű lépésből áll:
    doc.get_first_section().get_body().append_child(sdt)
    ```
 
-## Munka az SDT tartalomvezérlőkkel
+## Munkavégzés az SDT tartalomvezérlőkkel
 
 Az SDT tartalomvezérlők lehetővé teszik a felhasználók számára a dokumentummal való interakciót. Nézzünk meg néhány gyakori tartalomvezérlőt:
 
@@ -139,7 +139,7 @@ A strukturált dokumentumcímkék hatékony módot biztosítanak a dokumentumoko
 
  Az SDT-n belüli tartalom eléréséhez használja a`get_text()`az SDT tartalomszabályozásának módszere. Ez lekéri az SDT-n belüli szöveget.
 
-### Használhatom az SDT-ket Excel vagy PowerPoint dokumentumokban?
+### Használhatok SDT-ket Excel vagy PowerPoint dokumentumokban?
 
 Nem, az SDT-k a Word dokumentumokra vonatkoznak, és nem érhetők el Excelben vagy PowerPointban.
 

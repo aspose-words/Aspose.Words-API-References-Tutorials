@@ -85,7 +85,7 @@ En suivant ces étapes, vous avez configuré votre application pour utiliser un 
 
 ## Conclusion
 
-Vous maîtrisez désormais le processus d'utilisation d'un flux de ressources comme source de police avec Aspose.Words pour .NET. Cette technique vous aidera à gérer les polices plus efficacement et à garantir que vos documents soient toujours à leur meilleur. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d'Aspose.Words.
+Vous maîtrisez désormais le processus d'utilisation d'un flux de ressources comme source de police avec Aspose.Words pour .NET. Cette technique vous aidera à gérer les polices plus efficacement et à garantir que vos documents soient toujours à leur meilleur. Continuez à expérimenter différents paramètres pour exploiter pleinement la puissance d’Aspose.Words.
 
 ## FAQ
 

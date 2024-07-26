@@ -90,7 +90,7 @@ hyphenation_options.consecutive_hyphen_limit = 2
 
 ### Điều chỉnh khoảng cách dòng
 
-Khoảng cách dòng thích hợp sẽ nâng cao khả năng đọc. Bạn có thể đặt giãn cách dòng trong tài liệu của mình để cải thiện hình thức trực quan tổng thể.
+Khoảng cách dòng thích hợp sẽ nâng cao khả năng đọc. Bạn có thể đặt khoảng cách dòng trong tài liệu của mình để cải thiện hình thức trực quan tổng thể.
 
 ### Sự biện minh và sự liên kết
 

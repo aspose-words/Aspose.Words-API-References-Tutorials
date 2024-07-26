@@ -16,8 +16,8 @@ Ob Sie Dokumente erstellen möchten, die mit älteren Versionen von Word kompati
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Docx mit Passwort verschlüsseln](./encrypt-docx-with-password/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET eine DOCX-Datei mit einem Kennwort verschlüsseln. Vollständiges Tutorial zur Dokumentensicherheit. |
-| [Ooxml-Konformität mit Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Erfahren Sie, wie Sie beim Speichern von Dokumenten mit Aspose.Words für .NET die Einhaltung von Ooxml Iso 29500_2008_Strict sicherstellen. |
-| [Eigenschaft „Zuletzt gespeicherter Zeitpunkt aktualisieren“](./update-last-saved-time-property/) | Erfahren Sie, wie Sie die Eigenschaft „Letzte Speicherzeit“ beim Speichern eines Dokuments mit Aspose.Words für .NET automatisch aktualisieren. |
-| [Behalten Sie die alten Steuerzeichen bei](./keep-legacy-control-chars/) | Erfahren Sie, wie Sie beim Speichern eines Dokuments mit Aspose.Words für .NET alte Steuerzeichen beibehalten. |
-| [Komprimierungsstufe festlegen](./set-compression-level/) | Erfahren Sie, wie Sie die Komprimierungsstufe beim Speichern eines Dokuments mit Aspose.Words für .NET festlegen. |
+| [Docx mit Passwort verschlüsseln](./encrypt-docx-with-password/) | Sichern Sie Ihre Word-Dokumente, indem Sie sie mit Aspose.Words für .NET mit einem Kennwort verschlüsseln. Folgen Sie unserer Schritt-für-Schritt-Anleitung, um Ihre vertraulichen Informationen zu schützen. |
+| [Ooxml-Konformität mit Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET die OOXML-Konformität mit ISO 29500_2008_Strict sicherstellen. |
+| [Eigenschaft „Zuletzt gespeicherter Zeitpunkt aktualisieren“](./update-last-saved-time-property/) | Erfahren Sie, wie Sie die Eigenschaft „Zuletzt gespeicherte Zeit“ in Word-Dokumenten mit Aspose.Words für .NET aktualisieren. Folgen Sie unserer detaillierten Schritt-für-Schritt-Anleitung. |
+| [Behalten Sie die alten Steuerzeichen bei](./keep-legacy-control-chars/) | Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET alte Steuerzeichen in Word-Dokumenten beibehalten. |
+| [Komprimierungsstufe festlegen](./set-compression-level/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET den Komprimierungsgrad in Word-Dokumenten festlegen. Folgen Sie unserer Schritt-für-Schritt-Anleitung, um Ihren Dokumentspeicher und Ihre Leistung zu optimieren. |

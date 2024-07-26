@@ -23,7 +23,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Krok 2: Načtení kolekce polí formuláře
 
- Dále přejděte na`FormFields` vlastnictvím`Range` objekt v dokumentu pro načtení kolekce polí formuláře:
+ Dále přejděte na`FormFields` majetek z`Range` objekt v dokumentu pro načtení kolekce polí formuláře:
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

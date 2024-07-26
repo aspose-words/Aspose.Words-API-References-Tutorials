@@ -104,7 +104,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功自訂了單一圖表系列。很酷，對吧？這只是冰山一角;使用 Aspose.Words 可以做更多事情。所以，繼續嘗試並創建很棒的文檔！
+現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功自訂了單一圖表系列。很酷，對吧？這只是冰山一角;使用 Aspose.Words 可以做更多事情。所以，繼續嘗試並創建很棒的文檔！
 
 ## 常見問題解答
 

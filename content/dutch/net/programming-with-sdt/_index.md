@@ -16,13 +16,13 @@ De codevoorbeelden in de tutorials helpen u de concepten te begrijpen en de func
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Selectievakje Type inhoudscontrole](./check-box-type-content-control/) | Leer hoe u een inhoudsbesturingselement voor selectievakjes in een Word-document kunt maken met Aspose.Words voor .NET. |
+| [Selectievakje Type inhoudscontrole](./check-box-type-content-control/) | Leer hoe u een inhoudsbesturingselement voor selectievakjes kunt toevoegen aan Word-documenten met behulp van Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze zelfstudie. |
 | [Huidige status van het selectievakje](./current-state-of-check-box/) | Leer hoe u de huidige status van een inhoudsbesturingselement voor selectievakjes in een Word-document kunt ophalen en instellen met behulp van Aspose.Words voor .NET. |
 | [Wijzig inhoudsbesturingselementen](./modify-content-controls/) | Leer hoe u tekst, vervolgkeuzelijsten en afbeeldingen binnen inhoudsbesturingselementen in een Word-document kunt wijzigen met Aspose.Words voor .NET. |
 | [Inhoudscontrole van keuzelijst met invoervak](./combo-box-content-control/) | Leer hoe u een Inhoudscontrole van keuzelijst met invoervak in een Word-document kunt maken met Aspose.Words voor .NET. |
 | [Inhoudscontrole voor rijke tekstvakken](./rich-text-box-content-control/) | Leer hoe u een inhoudsbesturingselement voor een RTF-vak kunt maken in een Word-document met behulp van Aspose.Words voor .NET, waardoor tekstopmaak en -stijl mogelijk wordt gemaakt. |
 | [Stel de kleur van het inhoudsbeheer in](./set-content-control-color/) | Leer hoe u de kleur van een inhoudsbesturingselement in een Word-document instelt met Aspose.Words voor .NET, en hoe u het uiterlijk ervan aanpast. |
-| [Inhoudsbeheer wissen](./clear-contents-control/) | Leer hoe u de inhoud van een besturingselement in een Word-document wist met Aspose.Words voor .NET. |
+| [Inhoudsbeheer wissen](./clear-contents-control/) | Leer hoe u de inhoudscontrole in een Word-document kunt wissen met Aspose.Words voor .NET met onze stapsgewijze handleiding. |
 | [Bind SDT aan een aangepast XML-onderdeel](./bind-sdt-to-custom-xml-part/) | Leer hoe u een SDT aan een aangepast XML-onderdeel koppelt met behulp van Aspose.Words voor .NET. |
 | [Stel de stijl voor inhoudscontrole in](./set-content-control-style/) | Leer hoe u de stijl van een inhoudsbesturingselement in een Word-document instelt met Aspose.Words voor .NET, waarbij u consistente opmaak toepast. |
 | [Tabelherhalende sectie maken, toegewezen aan aangepast XML-onderdeel](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Leer hoe u een tabel kunt maken met een herhalende sectie die is toegewezen aan een CustomXmlPart in een Word-document met behulp van Aspose.Words voor .NET. |

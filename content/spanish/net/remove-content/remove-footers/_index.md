@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// El pie de página principal es el pie de página que se utiliza para las páginas impares.
+	//El pie de página principal es el pie de página que se utiliza para las páginas impares.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

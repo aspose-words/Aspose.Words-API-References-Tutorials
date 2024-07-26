@@ -96,7 +96,7 @@ doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 3. 使用 InsertField 方法通过指定高级字段代码来插入高级字段。
 4. 保存文档。
 
-#### 问：如何获取 Word 文档中高级字段的结果？
+#### 问：如何获取Word文档中高级字段的结果？
 
 答：要获取 Word 文档中高级字段的结果，可以使用 Field 类中的 Result 属性。此属性返回字段的计算结果。
 

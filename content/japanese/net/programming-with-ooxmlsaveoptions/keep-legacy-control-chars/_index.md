@@ -2,68 +2,102 @@
 title: 従来の制御文字を保持する
 linktitle: 従来の制御文字を保持する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメントを保存するときに、従来の制御文字を保持する方法を学習します。
+description: このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の従来の制御文字を保持する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントを保存するときに従来の制御文字を保持するための C# ソース コードについて説明します。この機能を使用すると、ドキュメントを変換または保存するときに特殊な制御文字を保持できます。
+Word 文書内の奇妙で目に見えない制御文字に困惑したことはありませんか? それらは、書式設定や機能を台無しにする小さな隠れたグレムリンのようなものです。幸いなことに、Aspose.Words for .NET には、文書を保存するときにこれらの従来の制御文字をそのまま維持する便利な機能があります。このチュートリアルでは、Aspose.Words for .NET を使用してこれらの制御文字を管理する方法について詳しく説明します。手順ごとに説明し、すべての詳細を理解できるようにします。準備はできましたか? さあ、始めましょう!
 
-## ステップ1: 環境の設定
+## 前提条件
 
-始める前に、Aspose.Words for .NET を使用して開発環境をセットアップしていることを確認してください。必要な参照を追加し、適切な名前空間をインポートしたことを確認してください。
+始める前に、以下のものを用意してください。
 
-## ステップ2: ドキュメントの読み込み
+1.  Aspose.Words for .NET: ダウンロードしてインストールする[ここ](https://releases.aspose.com/words/net/).
+2. 有効なAsposeライセンス: 一時ライセンスを取得できます[ここ](https://purchase.aspose.com/temporary-license/).
+3. 開発環境: Visual Studio または .NET をサポートするその他の IDE。
+4. C# の基礎知識: C# プログラミング言語に精通していると役立ちます。
 
-```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+## 名前空間のインポート
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
-```
-
-このステップでは、`Document`メソッドを使用し、継承された制御文字を含むファイルへのパスを渡します。
-
-## ステップ3: OOXMLバックアップオプションの設定
+コードを記述する前に、必要な名前空間をインポートする必要があります。C# ファイルの先頭に次の行を追加します。
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-このステップでは、新しいOOXMLファイルを作成して、OOXML保存オプションを設定します。`OoxmlSaveOptions`オブジェクト。希望する保存形式を指定します（ここでは、`FlatOpc` ）を有効にして、`KeepLegacyControlChars`従来の制御文字を保持するオプション。
+## ステップ1: プロジェクトの設定
 
-## ステップ4: 従来の制御文字を使用してドキュメントを保存する
+まず、Visual Studio (またはお好みの IDE) でプロジェクトを設定する必要があります。 
 
-```csharp
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-```
+1. 新しい C# プロジェクトを作成する: Visual Studio を開き、新しい C# コンソール アプリケーション プロジェクトを作成します。
+2. Aspose.Words for .NET をインストールします。NuGet パッケージ マネージャーを使用して Aspose.Words for .NET をインストールします。ソリューション エクスプローラーでプロジェクトを右クリックし、[NuGet パッケージの管理] を選択して、「Aspose.Words」を検索し、インストールします。
 
-この最後のステップでは、`Save`メソッドを使用し、出力ファイルへのパスを`.docx`拡張子と指定された保存オプションを指定します。
+## ステップ2: ドキュメントを読み込む
 
-ドキュメントを保存するときに、ソース コードを実行して従来の制御文字を保持できるようになりました。結果のファイルは、指定されたディレクトリに「WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx」という名前で保存されます。
+次に、従来の制御文字を含む Word 文書を読み込みます。
 
-### Aspose.Words for .NET を使用して従来の制御文字を保持するサンプル ソース コード 
-```csharp
+1. ドキュメント パスを指定します。ドキュメント ディレクトリへのパスを設定します。
+   
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
 
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+2. ドキュメントをロードします。`Document`ドキュメントを読み込むためのクラス。
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```csharp
+   Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+## ステップ3: 保存オプションを設定する
 
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-            
-        
-```
+ここで、従来の制御文字をそのまま維持するように保存オプションを構成しましょう。
+
+1. 保存オプションの作成: インスタンスを初期化する`OoxmlSaveOptions`そして、`KeepLegacyControlChars`財産に`true`.
+
+   ```csharp
+   OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)
+   {
+       KeepLegacyControlChars = true
+   };
+   ```
+
+## ステップ4: ドキュメントを保存する
+
+最後に、設定した保存オプションを使用してドキュメントを保存します。
+
+1. 文書を保存するには、`Save`方法の`Document`指定された保存オプションでドキュメントを保存するクラス。
+
+   ```csharp
+   doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
+   ```
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントを保存するときに、従来の制御文字を保持する機能について説明しました。ドキュメントの適切な書式設定や表示に重要となる可能性のある特殊文字を保持する方法について学習しました。
+これで完了です。これらの手順に従うことで、Aspose.Words for .NET で Word 文書を操作するときに、従来の制御文字が保持されることが保証されます。この機能は、特に制御文字が重要な役割を果たす複雑な文書を扱うときに役立ちます。 
 
-従来の制御文字の保存は、特殊な制御文字などの古い機能や特定の機能を使用する文書をWords Processingで処理する場合に特に便利です。`KeepLegacyControlChars`ドキュメントを保存するときにオプションを選択すると、これらの文字が保持されます。
+## よくある質問
 
-Aspose.Words for .NET は、ドキュメント操作のニーズを満たす、柔軟で強力なバックアップ オプションを幅広く提供しています。適切なオプションを使用することで、バックアップ プロセスをカスタマイズし、ドキュメントの特定の特性を保持することができます。
+### レガシー制御文字とは何ですか?
 
-この機能を Aspose.Words for .NET プロジェクトに自由に組み込むことで、ドキュメント内の従来の制御文字の整合性と保持を確保できます。
+レガシー制御文字は、書式設定とレイアウトを制御するために古いドキュメントで使用される非印刷文字です。
+
+### これらの制御文字を保持せずに削除することはできますか?
+
+はい、必要に応じて Aspose.Words for .NET を使用してこれらの文字を削除または置き換えることができます。
+
+### この機能は Aspose.Words for .NET のすべてのバージョンで使用できますか?
+
+この機能は最新バージョンで利用できます。すべての機能にアクセスするには、必ず最新バージョンを使用してください。
+
+### Aspose.Words for .NET を使用するにはライセンスが必要ですか?
+
+はい、有効なライセンスが必要です。評価目的で一時的なライセンスを取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
+
+### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
+
+詳細なドキュメントは以下をご覧ください[ここ](https://reference.aspose.com/words/net/).
+ 

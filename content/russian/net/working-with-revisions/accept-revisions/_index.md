@@ -15,7 +15,7 @@ url: /ru/net/working-with-revisions/accept-revisions/
 В этом примере мы создаем документ и добавляем контент. Мы используем несколько абзацев для иллюстрации изменений и исправлений. Вот как:
 
 ```csharp
-//Путь к каталогу документов.
+// Путь к каталогу документов.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

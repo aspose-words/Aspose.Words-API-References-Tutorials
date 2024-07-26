@@ -39,7 +39,7 @@ Voordat u in de code duikt, stelt u het pad naar uw documentenmap in. Dit is waa
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"`met het daadwerkelijke pad waar u uw PDF-document wilt opslaan.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar u uw PDF-document wilt opslaan.
 
 ## Stap 2: Maak een nieuw document
 
@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Laten we nu een hyperlink in het document invoegen. Deze hyperlink zal de focus zijn van ons URI-escape-proces.
 
 ```csharp
-builder.InsertHyperlink("Testlink", "https://www.google.com/search?q=aspose", false);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
 ```
 
  In deze lijn,`"Testlink"` is de weergavetekst voor de hyperlink, en`"https://www.google.com/search?q= aspose"` is de URL. De`false` parameter geeft aan dat de link niet als hyperlink moet worden opgemaakt (dat wil zeggen dat hij niet onderstreept en blauw is).

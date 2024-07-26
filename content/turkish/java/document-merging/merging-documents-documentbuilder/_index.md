@@ -85,7 +85,7 @@ Evet, farklı belgelerden düğümleri içe aktarma sırasını ayarlayarak içe
 
 ### Aspose.Words gelişmiş belge işleme görevleri için uygun mudur?
 
-Kesinlikle! Aspose.Words for Java, gelişmiş belge işleme için birleştirme, bölme, biçimlendirme ve daha fazlasını içeren ancak bunlarla sınırlı olmayan çok çeşitli özellikler sunar.
+Kesinlikle! Aspose.Words for Java, gelişmiş belge işleme için birleştirme, bölme, biçimlendirme ve daha fazlasını içeren ancak bunlarla sınırlı olmayan çok çeşitli özellikler sağlar.
 
 ### Aspose.Words DOCX'in yanı sıra diğer belge formatlarını da destekliyor mu?
 

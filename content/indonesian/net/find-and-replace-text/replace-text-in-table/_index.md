@@ -85,7 +85,7 @@ Ini menyimpan dokumen yang diperbarui dengan pengganti teks baru.
 
 ## Kesimpulan
 
-Dan itu dia! Anda baru saja mempelajari cara mengganti teks dalam tabel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ini adalah alat canggih yang dapat menghemat banyak waktu dan tenaga, terutama saat menangani dokumen besar atau banyak file. Cobalah dan lihat bagaimana ini dapat menyederhanakan tugas pemrosesan dokumen Anda. Selamat membuat kode!
+Dan itu dia! Anda baru saja mempelajari cara mengganti teks dalam tabel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ini adalah alat canggih yang dapat menghemat banyak waktu dan tenaga, terutama saat menangani dokumen berukuran besar atau banyak file. Cobalah dan lihat bagaimana ini dapat menyederhanakan tugas pemrosesan dokumen Anda. Selamat membuat kode!
 
 ## FAQ
 

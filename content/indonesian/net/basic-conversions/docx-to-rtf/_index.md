@@ -1,6 +1,6 @@
 ---
-title: Konversi Docx Ke Rtf
-linktitle: Konversi Docx Ke Rtf
+title: Ubah Docx Ke Rtf
+linktitle: Ubah Docx Ke Rtf
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara mengonversi DOCX ke RTF menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Konversi mudah untuk pemrosesan dokumen yang lancar.
 type: docs

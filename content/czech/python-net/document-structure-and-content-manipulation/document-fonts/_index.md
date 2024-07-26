@@ -153,7 +153,7 @@ Ano, můžete použít více stylů na stejný text odpovídající úpravou vla
 
 ### Je možné upravit mezery mezi znaky?
 
-Ano, Aspose.Words vám umožňuje upravit mezery mezi znaky pomocí`kerning` vlastnictvím`Font` třída.
+Ano, Aspose.Words vám umožňuje upravit mezery mezi znaky pomocí`kerning` majetek z`Font` třída.
 
 ### Podporuje Aspose.Words import písem z externích zdrojů?
 

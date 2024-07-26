@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-charts/number-format-for-axis/
 
 在開始之前，讓我們確保您已擁有所需的一切。這是一個快速清單：
 
--  Aspose.Words for .NET：確保您已安裝它。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：確保您已安裝它。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
 - .NET Framework：確保您安裝了相容的 .NET 框架。
 - 開發環境：像 Visual Studio 這樣的 IDE 就可以完美運作。
 - C# 基礎知識：這將幫助您遵循編碼範例。
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功設定了圖表 Y 軸上數字的格式。這不僅使您的圖表看起來更專業，而且還增強了可讀性。 Aspose.Words 提供了大量功能，可以幫助您以程式設計方式建立令人驚嘆的 Word 文件。那麼，為什麼不進行更多探索，看看還能做些什麼呢？
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功設定了圖表 Y 軸上數字的格式。這不僅使您的圖表看起來更專業，而且還增強了可讀性。 Aspose.Words 提供了大量功能，可以幫助您以程式設計方式建立令人驚嘆的 Word 文件。那麼，為什麼不進行更多探索，看看還能做些什麼呢？
 
 ## 常見問題解答
 

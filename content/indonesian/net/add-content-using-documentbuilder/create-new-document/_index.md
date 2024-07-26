@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/add-content-using-documentbuilder/create-new-document/
 ---
 ## Perkenalan
-Kami mendalami dunia Aspose.Words untuk .NET, permata perpustakaan untuk semua kebutuhan manipulasi dokumen Anda. Baik Anda membuat laporan dinamis, mengotomatiskan pembuatan dokumen, atau sekadar lelah melakukan tugas berulang secara manual, Aspose.Words hadir untuk menyelamatkan pekerjaan Anda. Mari menyingsingkan lengan baju dan mengotori tangan kita dengan membuat dokumen Word baru dari awal menggunakan alat canggih ini.
+Kami mendalami dunia Aspose.Words untuk .NET, permata perpustakaan untuk semua kebutuhan manipulasi dokumen Anda. Baik Anda membuat laporan dinamis, mengotomatiskan pembuatan dokumen, atau hanya lelah melakukan tugas berulang secara manual, Aspose.Words hadir untuk menghemat waktu. Mari menyingsingkan lengan baju dan mengotori tangan kita dengan membuat dokumen Word baru dari awal menggunakan alat canggih ini.
 
 ## Prasyarat
 

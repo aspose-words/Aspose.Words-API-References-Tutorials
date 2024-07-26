@@ -71,7 +71,7 @@ A seguir, definiremos o documento como somente leitura. Isso garantirá que nenh
    builder.Writeln("Hello world! Since we have set the document's protection level to read-only, we cannot edit this paragraph without the password.");
    ```
 
-## Etapa 4: criando intervalos editáveis
+## Etapa 4: Criando intervalos editáveis
 
 É aqui que a mágica acontece. Criaremos seções no documento que podem ser editadas apesar da proteção geral somente leitura.
 

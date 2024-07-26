@@ -2,91 +2,86 @@
 title: Export struktury dokumentu Word do dokumentu PDF
 linktitle: Export struktury dokumentu Word do dokumentu PDF
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Krok za krokem průvodce exportem struktury dokumentu Word do dokumentu PDF pomocí Aspose.Words pro .NET.
+description: Exportujte strukturu dokumentu aplikace Word do PDF pomocí Aspose.Words for .NET. Chcete-li zachovat rozvržení dokumentu a zlepšit navigaci v PDF, postupujte podle našeho podrobného průvodce.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/export-document-structure/
 ---
+## Úvod
 
-Tento článek obsahuje podrobného průvodce, jak používat funkci Export struktury dokumentu Word do dokumentu PDF s Aspose.Words pro .NET. Každou část kódu si podrobně vysvětlíme. Na konci tohoto tutoriálu budete schopni porozumět tomu, jak exportovat strukturu dokumentu a vygenerovat PDF s viditelnou strukturou dokumentu.
+Procházet se světem manipulace s dokumenty vám může někdy připadat jako bloudění hustým lesem bez mapy. Ale nebojte se, máme dokonalého průvodce, který vám pomůže najít cestu! Dnes se ponoříme do kouzelného světa exportu struktur dokumentů Wordu do PDF pomocí Aspose.Words for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento průvodce vás provede každým krokem s jasností a přesností.
 
-Než začnete, ujistěte se, že jste ve svém projektu nainstalovali a nakonfigurovali knihovnu Aspose.Words for .NET. Knihovnu a pokyny k instalaci najdete na webu Aspose.
+## Předpoklady
 
-## Krok 1: Definujte adresář dokumentů
+Než se vydáme na tuto cestu, shrňme si vše podstatné, co budete do začátku potřebovat.
 
- Chcete-li začít, musíte definovat cestu k adresáři, kde jsou umístěny vaše dokumenty. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ne, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Vývojové prostředí kompatibilní s .NET, jako je Visual Studio.
+-  Ukázkový dokument: Dokument aplikace Word (např.`Paragraphs.docx`), který převedete do PDF.
+
+## Importovat jmenné prostory
+
+Chcete-li používat Aspose.Words, musíte importovat potřebné jmenné prostory. To zajistí, že budete mít přístup ke všem funkcím a funkcím požadovaným pro náš úkol.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Pojďme si tento proces rozdělit na zvládnutelné kroky. Každý krok vás provede určitou částí procesu a zajistí, že vám nic neunikne.
+
+## Krok 1: Nastavte adresář dokumentů
+
+Nejprve si definujme cestu k adresáři s dokumenty. Zde se nachází váš zdrojový dokument aplikace Word a kam se uloží převedený soubor PDF.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Krok 2: Nahrajte dokument
+## Krok 2: Načtěte dokument aplikace Word
 
-Dále musíme načíst dokument, který chceme zpracovat. V tomto příkladu předpokládáme, že dokument se nazývá "Paragraphs.docx" a je umístěn v určeném adresáři dokumentů.
+ Dále musíme načíst dokument Word, který chceme převést do PDF. V tomto příkladu použijeme soubor s názvem`Paragraphs.docx`.
 
 ```csharp
 Document doc = new Document(dataDir + "Paragraphs.docx");
 ```
 
-## Krok 3: Nakonfigurujte možnosti uložení jako PDF
+## Krok 3: Nakonfigurujte možnosti uložení PDF
 
- Chcete-li exportovat strukturu dokumentu a zviditelnit strukturu v navigačním panelu „Obsah“ aplikace Adobe Acrobat Pro při úpravách souboru PDF, musíme nakonfigurovat`PdfSaveOptions` objekt s`ExportDocumentStructure` vlastnost nastavena na`true`.
+ Chcete-li exportovat strukturu dokumentu, musíme nakonfigurovat možnosti uložení PDF. To zahrnuje nastavení`ExportDocumentStructure`majetek do`true`Tím zajistíte, že struktura dokumentu bude viditelná v navigačním panelu "Obsah" aplikace Adobe Acrobat Pro.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    ExportDocumentStructure = true
+};
 ```
 
-## Krok 4: Uložte dokument jako PDF se strukturou dokumentu
+## Krok 4: Uložte dokument jako PDF
 
-Nakonec můžeme dokument uložit ve formátu PDF pomocí dříve nakonfigurovaných možností uložení.
+S nakonfigurovanými možnostmi uložení je posledním krokem uložení dokumentu jako PDF. Tady se děje kouzlo!
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
 ```
 
-To je vše ! Úspěšně jste exportovali strukturu dokumentu a vygenerovali PDF s viditelnou strukturou dokumentu pomocí Aspose.Words for .NET.
-
-### Ukázka zdrojového kódu pro export struktury dokumentu pomocí Aspose.Words pro .NET
-
-
-```csharp
-
-            // Cesta k adresáři dokumentů.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document(dataDir + "Paragraphs.docx");
-
-            // Velikost souboru se zvětší a struktura bude viditelná v navigačním panelu "Obsah".
-            // Adobe Acrobat Pro při úpravě souboru .pdf.
-            PdfSaveOptions saveOptions = new PdfSaveOptions { ExportDocumentStructure = true };
-
-            doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);
-        
-```
-
-
 ## Závěr
 
-V tomto tutoriálu jsme vysvětlili, jak exportovat strukturu dokumentu Word do dokumentu PDF pomocí Aspose.Words for .NET. Podle uvedených kroků můžete snadno vygenerovat PDF s viditelnou strukturou dokumentu, což usnadní navigaci a prohledávání dokumentu. Pomocí funkcí Aspose.Words for .NET můžete exportovat strukturu dokumentů aplikace Word a vytvářet dobře strukturované soubory PDF.
+Gratulujeme! Úspěšně jste exportovali strukturu dokumentu aplikace Word do PDF pomocí Aspose.Words for .NET. Tato funkce je neuvěřitelně užitečná pro zachování rozvržení dokumentu a usnadňuje procházení složitých souborů PDF. Pomocí této příručky nyní můžete s jistotou převádět dokumenty a využívat výkonné možnosti Aspose.Words.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co je export struktury dokumentu aplikace Word do dokumentu PDF?
-Odpověď: Exportováním struktury dokumentu aplikace Word do dokumentu PDF se vytvoří PDF s viditelnou strukturou dokumentu. Struktura dokumentu obvykle zahrnuje věci, jako jsou nadpisy, oddíly, odstavce a další strukturované prvky dokumentu. Tato struktura může být užitečná pro navigaci a vyhledávání v dokumentu PDF.
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, upravovat, převádět a manipulovat s dokumenty Wordu programově.
 
-#### Otázka: Jak mohu exportovat strukturu dokumentu aplikace Word do dokumentu PDF pomocí Aspose.Words for .NET?
-Odpověď: Chcete-li exportovat strukturu dokumentu aplikace Word do dokumentu PDF pomocí Aspose.Words for .NET, postupujte takto:
+### Mohu exportovat další funkce dokumentu aplikace Word do PDF?
+Ano, Aspose.Words for .NET nabízí různé možnosti exportu funkcí, jako jsou záložky, hypertextové odkazy a další, do PDF.
 
- Vytvořte instanci souboru`Document` třídy určující cestu k dokumentu aplikace Word.
+### Je možné tento proces automatizovat?
+Absolutně! Tento proces můžete automatizovat pomocí skriptů a dávkového zpracování ve vašem vývojovém prostředí.
 
- Vytvořte instanci souboru`PdfSaveOptions` třídu a nastavte`ExportDocumentStructure`majetek do`true`. Tím se exportuje struktura dokumentu a při úpravě souboru PDF se zviditelní v navigačním panelu „Obsah“ aplikace Adobe Acrobat Pro.
+### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
+ Můžete získat bezplatnou zkušební verzi od[Aspose webové stránky](https://releases.aspose.com/).
 
- Použijte`Save` metoda`Document`třídy pro uložení dokumentu ve formátu PDF zadáním možností uložení.
-
-#### Otázka: Jak mohu zobrazit strukturu dokumentu PDF pomocí aplikace Adobe Acrobat Pro?
-Odpověď: Chcete-li zobrazit strukturu dokumentu PDF pomocí aplikace Adobe Acrobat Pro, postupujte takto:
-
-Otevřete dokument PDF v aplikaci Adobe Acrobat Pro.
-
-levém navigačním panelu klikněte na ikonu "Obsah" pro zobrazení navigačního panelu "Obsah".
-
-V navigačním panelu "Obsah" uvidíte strukturu dokumentu s nadpisy, sekcemi a dalšími strukturovanými prvky.
+### Co mám dělat, když narazím na problémy?
+ Pomoc můžete hledat u[Aspose fórum podpory](https://forum.aspose.com/c/words/8).

@@ -15,7 +15,7 @@ url: /ko/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 
 코드를 살펴보기 전에 모든 것이 설정되었는지 확인하겠습니다. 필요한 것은 다음과 같습니다.
 
-1. .NET 라이브러리용 Aspose.Words: 최신 버전인지 확인하세요. 없으시면 아래에서 다운받으실 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+1.  .NET 라이브러리용 Aspose.Words: 최신 버전인지 확인하세요. 없으시면 아래에서 다운받으실 수 있습니다.[여기](https://releases.aspose.com/words/net/).
 2. .NET Framework: 컴퓨터에 .NET Framework가 설치되어 있는지 확인하세요.
 3. 개발 환경: Visual Studio와 같은 IDE는 여러분의 삶을 더 쉽게 만들어줄 것입니다.
 4. C#에 대한 기본 지식: 전문가가 될 필요는 없지만 기본적인 이해가 있으면 도움이 됩니다.

@@ -2,90 +2,105 @@
 title: 检测 Word 文档上的数字签名
 linktitle: 检测 Word 文档上的数字签名
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 检测 Word 文档上的数字签名的分步指南。
+description: 通过我们的分步指南了解如何使用 Aspose.Words for .NET 检测 Word 文档中的数字签名。
 type: docs
 weight: 10
 url: /zh/net/programming-with-fileformat/detect-document-signatures/
 ---
+## 介绍
 
-本文提供了有关如何使用 Aspose.Words for .NET 的 Word 文档数字签名检测功能的分步指南。我们将详细解释代码的每个部分。在本教程结束时，您将能够了解如何检测文档中的数字签名。
+确保 Word 文档的完整性和真实性至关重要，尤其是在当今的数字时代。实现此目的的一种方法是使用数字签名。在本教程中，我们将深入介绍如何使用 Aspose.Words for .NET 检测 Word 文档上的数字签名。我们将涵盖从基础知识到分步指南的所有内容，确保您最终全面了解。
 
-开始之前，请确保您已在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到该库和安装说明。
+## 先决条件
 
-## 步骤1：定义文档目录
+在开始之前，请确保您已准备好以下事项：
 
-首先，您需要定义文档所在目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档目录的实际路径。
+-  Aspose.Words for .NET 库：您可以从[Aspose 发布页面](https://releases.aspose.com/words/net/).
+- 开发环境：确保您已经设置了 .NET 开发环境，例如 Visual Studio。
+- 对 C# 的基本了解：熟悉 C# 编程语言将帮助您顺利跟上。
+
+## 导入命名空间
+
+首先，让我们导入必要的命名空间。这很重要，因为它使您能够访问 Aspose.Words for .NET 提供的类和方法。
 
 ```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+```
+
+## 步骤 1：设置你的项目
+
+在我们开始检测数字签名之前，我们需要设置我们的项目。
+
+### 1.1 创建新项目
+
+打开 Visual Studio 并创建一个新的控制台应用程序（.NET Core）项目。将其命名为`DigitalSignatureDetector`.
+
+### 1.2 安装 Aspose.Words for .NET
+
+您需要将 Aspose.Words 添加到您的项目中。您可以通过 NuGet 包管理器执行此操作：
+
+- 在解决方案资源管理器中右键单击您的项目。
+- 选择“管理 NuGet 包”。
+- 搜索“Aspose.Words”并安装最新版本。
+
+## 第 2 步：添加文档目录路径
+
+现在，我们需要定义存储文档的目录的路径。
+
+```csharp
+//文档目录的路径。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 第 2 步：检测数字签名
+代替`"YOUR DOCUMENT DIRECTORY"`使用您的文档目录的实际路径。
 
-接下来，我们使用`DetectFileFormat`方法`FileFormatUtil`类来检测文件格式信息。在此示例中，我们假设文档名为“Digitallysigned.docx”，位于指定的文档目录中。
+## 步骤 3：检测文件格式
+
+接下来，我们需要检测该文档的文件格式，以确保它是Word文档。
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
 ```
 
-## 步骤 3：检查数字签名
+这行代码检查名为`Digitally signed.docx`.
 
-我们使用以下方法检查文档是否包含数字签名`HasDigitalSignature`的财产`FileFormatInfo`对象。如果检测到数字签名，我们会显示一条消息，表明如果使用 Aspose.Words 打开/保存文档，签名将丢失。
+## 步骤 4：检查数字签名
+
+现在，让我们检查该文档是否有数字签名。
 
 ```csharp
 if (info.HasDigitalSignature)
 {
-	Console.WriteLine(
-		$"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
-		"they will be lost if you open/save this document with Aspose.Words.");
+    Console.WriteLine(
+        $"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
+        "they will be lost if you open/save this document with Aspose.Words.");
 }
 ```
 
-就这样！您已成功使用 Aspose.Words for .NET 检测文档中的数字签名。
-
-### 使用 Aspose.Words for .NET 检测文档签名的示例源代码
-
-```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
-
-	if (info.HasDigitalSignature)
-	{
-		Console.WriteLine(
-			$"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
-			"they will be lost if you open/save this document with Aspose.Words.");
-	}
-	
-        
-```
 ## 结论
 
-本教程为您提供了如何使用 Aspose.Words for .NET 的数字签名检测功能检测 Word 文档上的数字签名的分步指南。代码的每个部分都已详细解释，让您了解如何检测文档中的数字签名。
+使用 Aspose.Words for .NET 检测 Word 文档中的数字签名是一个简单的过程。按照上面概述的步骤，您可以轻松设置项目、检测文件格式并检查数字签名。此功能对于维护文档的完整性和真实性非常有用。
 
-### 检测 Word 文档上的数字签名的常见问题解答
+## 常见问题解答
 
-#### 如何使用 Aspose.Words for .NET 检测 Word 文档中是否存在数字签名？
+### 保存文档时，Aspose.Words for .NET 可以保留数字签名吗？
 
-要使用 Aspose.Words for .NET 检测 Word 文档中是否存在数字签名，您可以按照本教程中提供的步骤进行操作。使用`DetectFileFormat`方法`FileFormatUtil`类将允许您检测文件格式信息。然后您可以检查`HasDigitalSignature`的财产`FileFormatInfo`对象来确定文档是否包含数字签名。如果检测到数字签名，则可以显示一条消息，指出如果使用 Aspose.Words 打开/保存文档，签名将丢失。
+不，Aspose.Words for .NET 在打开或保存文档时不会保留数字签名。数字签名将会丢失。
 
-#### 如何指定包含要搜索数字签名的文档的目录？
+### 有没有办法检测文档上的多个数字签名？
 
-要指定包含要在其中搜索数字签名的文档的目录，您必须修改`dataDir`代码中的变量。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档目录的实际路径。
+是的`HasDigitalSignature`属性可以指示文档上存在一个或多个数字签名。
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
+### 如何获得 Aspose.Words for .NET 的免费试用版？
 
-#### 使用 Aspose.Words 打开/保存文档对数字签名有何影响？
+您可以从[Aspose 发布页面](https://releases.aspose.com/).
 
-当您使用 Aspose.Words 打开或保存文档时，文档中的数字签名将丢失。这是由于使用 Aspose.Words 处理文档时对文档进行了更改。如果您需要保留数字签名，则应考虑到这一点并使用其他方法来管理包含数字签名的文档。
+### 在哪里可以找到有关 Aspose.Words for .NET 的更多文档？
 
-#### Aspose.Words for .NET 的哪些其他功能可以与数字签名检测结合使用？
+您可以在以下位置找到全面的文档[Aspose 文档页面](https://reference.aspose.com/words/net/).
 
- Aspose.Words for .NET 提供了多种处理和操作 Word 文档的功能。除了检测数字签名之外，您还可以使用该库从文档中提取文本、图像或元数据、应用格式更改、合并文档、将文档转换为不同格式等等。您可以探索[Aspose.Words for .NET API 参考](https://reference.aspose.com/words/net/)发现所有可用功能并找到最适合您需求的功能。
+### 我可以获得 Aspose.Words for .NET 的支持吗？
 
-#### 使用 Aspose.Words for .NET 检测数字签名有哪些局限性？
-
-使用 Aspose.Words for .NET 进行数字签名检测仅限于检测文档中是否存在签名。但是，Aspose.Words 不提供验证数字签名真实性或完整性的功能。要对数字签名执行更高级的操作，您需要使用其他专用工具或库。
+是的，你可以从[Aspose 支持论坛](https://forum.aspose.com/c/words/8).

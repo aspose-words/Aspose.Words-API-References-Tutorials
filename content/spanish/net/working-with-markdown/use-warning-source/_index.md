@@ -88,7 +88,7 @@ Esta línea guarda el documento como un archivo Markdown en el directorio especi
 
 ## Conclusión
 
- ¡Y ahí lo tienes! Acabas de aprender a utilizar el`WarningSource`clase en Aspose.Words para .NET para manejar las advertencias de Markdown. Este tutorial cubrió la configuración de su proyecto, la carga de un documento, la recopilación y el procesamiento de advertencias y el guardado del documento final. Con este conocimiento, estará mejor equipado para gestionar el procesamiento de documentos en sus aplicaciones. ¡Siga experimentando y explorando las amplias capacidades de Aspose.Words para .NET!
+ ¡Y ahí lo tienes! Acabas de aprender a utilizar el`WarningSource`clase en Aspose.Words para .NET para manejar las advertencias de Markdown. Este tutorial cubrió la configuración de su proyecto, cargar un documento, recopilar y procesar advertencias y guardar el documento final. Con este conocimiento, estará mejor equipado para gestionar el procesamiento de documentos en sus aplicaciones. ¡Siga experimentando y explorando las amplias capacidades de Aspose.Words para .NET!
 
 ## Preguntas frecuentes
 

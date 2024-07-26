@@ -12,4 +12,4 @@ Tutorial Aspose.Words untuk .NET tentang Pemrosesan Kata dengan HTMLLoadOptions 
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Jenis Kontrol Pilihan Dalam Dokumen Word](./preferred-control-type/) | Panduan langkah demi langkah untuk menentukan jenis kontrol pilihan di dokumen Word saat memuat dokumen HTML dengan Aspose.Words untuk .NET. |
+| [Jenis Kontrol Pilihan Dalam Dokumen Word](./preferred-control-type/) | Pelajari cara menyisipkan bidang formulir kotak kombo di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah ini untuk integrasi konten HTML yang lancar. |

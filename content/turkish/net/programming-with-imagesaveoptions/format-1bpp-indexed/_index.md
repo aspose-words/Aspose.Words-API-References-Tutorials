@@ -1,77 +1,94 @@
 ---
-title: 1Bpp Dizine Alınmış Biçim
-linktitle: 1Bpp Dizine Alınmış Biçim
+title: 1Bpp Dizine Alınmış Format
+linktitle: 1Bpp Dizine Alınmış Format
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile indekslenmiş görüntüleri 1 bpp'lik formatta nasıl formatlayacağınızı öğrenin. Düşük renk derinliğine sahip görüntüler için eğitimi tamamlayın.
+description: Aspose.Words for .NET kullanarak bir Word belgesini 1Bpp dizinli görüntüye nasıl dönüştüreceğinizi öğrenin. Kolay dönüşüm için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
-Bu eğitimde Aspose.Words for .NET ile "Format 1Bpp Indexed" işlevi için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, bir belgedeki görüntüleri piksel başına 1 bit (1 bpp) renk derinliği ve indekslenmiş renk modu ile PNG formatında formatlamanıza olanak tanır.
+## giriiş
 
-## 1. Adım: Ortamı ayarlama
+Bir Word belgesini yalnızca birkaç satır kodla siyah beyaz resim olarak nasıl kaydedeceğinizi hiç merak ettiniz mi? Şanslısın! Bugün, Aspose.Words for .NET'i kullanarak belgelerinizi 1Bpp dizinli görüntülere dönüştürmenize olanak tanıyan küçük ve güzel bir numaraya dalıyoruz. Bu format, belirli dijital arşivleme ve yazdırma türleri için veya yerden tasarruf etmeniz gerektiğinde mükemmeldir. Bunu pasta kadar kolaylaştırmak için her adımı parçalara ayıracağız. başlamaya hazır mısın? Hadi dalalım!
 
-Başlamadan önce Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
+## Önkoşullar
 
-## Adım 2: Belgeyi yükleme
+Ellerimizi kirletmeden önce, elimizde olması gereken birkaç şey var:
+
+-  Aspose.Words for .NET: Kütüphanenin kurulu olduğundan emin olun. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+- .NET Geliştirme Ortamı: Visual Studio iyi bir seçenektir ancak kendinizi rahat hissettiğiniz herhangi bir ortamı kullanabilirsiniz.
+- Temel C# Bilgisi: Endişelenmeyin, konuyu basit tutacağız, ancak C#'a biraz aşina olmak yardımcı olacaktır.
+- Bir Word Belgesi: Dönüştürülmeye hazır örnek bir Word belgesine sahip olun.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktarmamız gerekiyor. Bu, Aspose.Words'ten ihtiyacımız olan sınıflara ve yöntemlere erişmemizi sağladığı için çok önemlidir.
 
 ```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
+## 1. Adım: Belge Dizininizi Kurun
+
+Belge dizininizin yolunu belirtmeniz gerekecektir. Burası Word belgenizin saklandığı ve dönüştürülen görüntünün kaydedileceği yerdir.
+
+```csharp
+// Belge dizininizin yolu
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Adım 2: Word Belgesini Yükleyin
+
+ Şimdi Word belgesini Aspose.Words'e yükleyelim`Document` nesne. Bu nesne Word dosyanızı temsil eder ve onu değiştirmenize olanak tanır.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Bu adımda belgeyi aşağıdaki komutu kullanarak yüklüyoruz:`Document` yöntemi ve yüklenecek DOCX dosyasının yolunu iletme.
+## 3. Adım: Görüntü Kaydetme Seçeneklerini Yapılandırın
 
-## 3. Adım: Görüntü yedekleme seçeneklerini yapılandırın
+ Daha sonra, ayarlamamız gerekiyor`ImageSaveOptions`Sihir yapılan yer burasıdır. Görüntüyü 1Bpp indeksli renk moduyla PNG formatında kaydedecek şekilde yapılandıracağız.
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
 {
-     PageSet = new PageSet(1),
-     ImageColorMode = ImageColorMode.BlackAndWhite,
-     PixelFormat = ImagePixelFormat.Format1bppIndexed
+    PageSet = new PageSet(1),
+    ImageColorMode = ImageColorMode.BlackAndWhite,
+    PixelFormat = ImagePixelFormat.Format1bppIndexed
 };
 ```
 
- Bu adımda imajlar için yedekleme seçeneklerini yapılandırıyoruz. Yeni bir tane yaratıyoruz`ImageSaveOptions`İstenilen kaydetme biçimini belirten nesne, burada PNG biçimi için "Png" bulunur. Ayrıca görsele dahil edilecek sayfayı, siyah beyaz renk modunu ve indekslenmiş 1 bpp piksel formatını da tanımlıyoruz.
+- SaveFormat.Png: Bu, belgeyi PNG görüntüsü olarak kaydetmek istediğimizi belirtir.
+- PageSet(1): Bu sadece ilk sayfayı dönüştürdüğümüzü gösterir.
+- ImageColorMode.BlackAndWhite: Bu, görüntüyü siyah beyaza ayarlar.
+- ImagePixelFormat.Format1bppIndexed: Bu, görüntü formatını 1Bpp indeksli olarak ayarlar.
 
-## 4. Adım: Görüntüleri yedekleme
+## Adım 4: Belgeyi Görüntü Olarak Kaydetme
+
+ Son olarak belgeyi kullanarak resim olarak kaydediyoruz.`Save` yöntemi`Document` nesne.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);
 ```
 
- Bu son adımda belge görsellerini PNG formatında kaydediyoruz.`Save` yöntemini kullanarak ve belirtilen kaydetme seçenekleriyle birlikte çıktı dosyasına giden yolu iletebilirsiniz.
+## Çözüm
 
-Artık belge görüntülerini PNG formatında, indekslenmiş 1 bpp renk derinliğiyle biçimlendirmek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithImageSaveOptions.Format1BppIndexed.Png" adıyla belirtilen dizine kaydedilecektir.
+İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizi yalnızca birkaç satır kodla 1Bpp indeksli bir görüntüye dönüştürdünüz. Bu yöntem, belgelerinizden yüksek kontrastlı, yerden tasarruf sağlayan görüntüler oluşturmak için inanılmaz derecede kullanışlıdır. Artık bunu projelerinize ve iş akışlarınıza kolayca entegre edebilirsiniz. Mutlu kodlama!
 
-### Aspose.Words for .NET kullanılarak İndekslenmiş Format 1Bpp için örnek kaynak kodu
+## SSS'ler
 
-```csharp 
- 
-			 // Belge dizininizin yolu
-			 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-            
-            Document doc = new Document(dataDir + "Rendering.docx");
+### 1Bpp indeksli görsel nedir?
+1Bpp (Piksel Başına 1 Bit) indekslenmiş görüntü, her pikselin 0 veya 1 gibi tek bir bit ile temsil edildiği siyah beyaz bir görüntü formatıdır. Bu format, alan açısından oldukça verimlidir.
 
-            ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
-            {
-                PageSet = new PageSet(1),
-                ImageColorMode = ImageColorMode.BlackAndWhite,
-                PixelFormat = ImagePixelFormat.Format1bppIndexed
-            };
+### Bir Word belgesinin birden fazla sayfasını aynı anda dönüştürebilir miyim?
+ Evet yapabilirsin. Değiştirmek`PageSet` içindeki mülk`ImageSaveOptions` birden fazla sayfayı veya belgenin tamamını eklemek için.
 
-            doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOptions);
-            
-        
-```
+### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
+ Evet, Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Alabilirsin[geçici lisans burada](https://purchase.aspose.com/temporary-license/).
 
-### Çözüm
+### Word belgemi başka hangi görüntü formatlarına dönüştürebilirim?
+ Aspose.Words, JPEG, BMP ve TIFF dahil olmak üzere çeşitli görüntü formatlarını destekler. Basitçe değiştirin`SaveFormat` içinde`ImageSaveOptions`.
 
-Bu eğitimde Aspose.Words for .NET ile 1Bpp Indexed format özelliğini inceledik. PNG formatındaki bir belgedeki görüntüleri piksel başına 1 bit (1 bpp) renk derinliği ve indekslenmiş renk modu ile nasıl formatlayacağımızı öğrendik.
-
-Bu özellik, düşük renk derinliğine ve küçük dosya boyutuna sahip görüntüler elde etmek istediğinizde kullanışlıdır. 1Bpp İndekslenmiş format, görüntülerin indekslenmiş bir renk paleti kullanılarak temsil edilmesine olanak tanır ve bu, bazı özel uygulamalar için yararlı olabilir.
-
-Aspose.Words for .NET, belge işleme ve oluşturma için çok çeşitli gelişmiş özellikler sunar. 1Bpp İndekslenmiş format, kullanımınıza sunduğu birçok güçlü araçtan biridir.
+### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+ Ayrıntılı belgeleri şu adreste bulabilirsiniz:[Aspose.Words for .NET dokümantasyon sayfası](https://reference.aspose.com/words/net/).

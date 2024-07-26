@@ -37,6 +37,6 @@ Desbloquee el poder de las ecuaciones matemáticas en documentos con Aspose.Word
 ### [Uso de formas de documentos en Aspose.Words para Java](./using-document-shapes/)
 Desbloquee el poder de las formas de documentos en Aspose.Words para Java. Aprenda a crear documentos visualmente atractivos con ejemplos paso a paso.
 ### [Uso de marcas de agua en documentos en Aspose.Words para Java](./using-watermarks-to-documents/)
-Aprenda cómo agregar marcas de agua a documentos en Aspose.Words para Java. Personalice marcas de agua de texto e imágenes para documentos de aspecto profesional.
+Aprenda a agregar marcas de agua a documentos en Aspose.Words para Java. Personalice marcas de agua de texto e imágenes para documentos de aspecto profesional.
 ### [Formato de tablas y estilos de tablas en Aspose.Words para Java](./formatting-tables-and-table-styles/)
 Aprenda a formatear tablas y aplicar estilos de tabla en Aspose.Words para Java. Explore guías paso a paso con código fuente para formatear tablas de manera eficaz. Mejore el diseño de su documento con Aspose.Words.

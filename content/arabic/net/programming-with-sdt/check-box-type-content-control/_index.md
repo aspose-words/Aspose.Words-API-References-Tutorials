@@ -2,61 +2,101 @@
 title: حدد خانة الاختيار للتحكم في محتوى النوع
 linktitle: حدد خانة الاختيار للتحكم في محتوى النوع
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إنشاء عنصر تحكم في محتوى نوع خانة الاختيار في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إضافة عنصر التحكم في محتوى نوع خانة الاختيار في مستندات Word باستخدام Aspose.Words لـ .NET من خلال هذا البرنامج التعليمي التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-sdt/check-box-type-content-control/
 ---
+## مقدمة
 
-يشرح هذا البرنامج التعليمي كيفية إنشاء عنصر تحكم في محتوى نوع خانة الاختيار في مستند Word باستخدام Aspose.Words for .NET. تسمح عناصر التحكم في محتوى خانة الاختيار للمستخدمين بتحديد أو إلغاء تحديد خانة اختيار داخل المستند.
+مرحبًا بك في الدليل النهائي حول كيفية إدراج عنصر التحكم في محتوى نوع خانة الاختيار في مستند Word باستخدام Aspose.Words for .NET! إذا كنت تتطلع إلى أتمتة عملية إنشاء المستندات وإضافة عناصر تفاعلية مثل مربعات الاختيار، فأنت في المكان الصحيح. في هذا البرنامج التعليمي، سنرشدك خلال كل ما تحتاج إلى معرفته، بدءًا من المتطلبات الأساسية وحتى دليل خطوة بخطوة حول تنفيذ هذه الميزة. بحلول نهاية هذه المقالة، سيكون لديك فهم واضح لكيفية تحسين مستندات Word الخاصة بك باستخدام مربعات الاختيار باستخدام Aspose.Words for .NET.
 
 ## المتطلبات الأساسية
-لمتابعة هذا البرنامج التعليمي، يجب أن يكون لديك ما يلي:
 
-- تم تثبيت Aspose.Words لمكتبة .NET.
-- المعرفة الأساسية بـ C# ومعالجة الكلمات باستخدام مستندات Word.
+قبل أن نتعمق في جزء البرمجة، دعونا نتأكد من أن لديك كل ما تحتاجه للبدء:
 
-## الخطوة 1: إعداد دليل المستندات
- ابدأ بإعداد المسار إلى دليل المستندات الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"`بالمسار الفعلي إلى الدليل الذي تريد حفظ المستند فيه.
+1.  Aspose.Words لـ .NET: تأكد من أن لديك أحدث إصدار من Aspose.Words لـ .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: Visual Studio أو أي C# IDE آخر مثبت على جهازك.
+3. المعرفة الأساسية بـ C#: الإلمام ببرمجة C# مطلوب لمتابعة البرنامج التعليمي.
+4. دليل المستندات: الدليل الذي ستحفظ فيه مستندات Word الخاصة بك.
+
+## استيراد مساحات الأسماء
+
+أولاً، نحتاج إلى استيراد مساحات الأسماء الضرورية. وهذا سيمكننا من استخدام مكتبة Aspose.Words في مشروعنا.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Markup;
 ```
 
-## الخطوة 2: إنشاء مستند و DocumentBuilder
- إنشاء مثيل جديد لـ`Document` فئة و أ`DocumentBuilder` لبناء محتوى الوثيقة.
+دعنا نقسم عملية إدراج عنصر التحكم في محتوى نوع خانة الاختيار إلى خطوات متعددة لفهم أفضل.
+
+## الخطوة 1: قم بإعداد مشروعك
+
+الخطوة الأولى هي إعداد بيئة المشروع الخاص بك. افتح Visual Studio وقم بإنشاء تطبيق C# Console جديد. أطلق عليها اسمًا وصفيًا مثل "AsposeWordsCheckBoxTutorial".
+
+## الخطوة 2: إضافة مرجع Aspose.Words
+
+بعد ذلك، تحتاج إلى إضافة مرجع إلى مكتبة Aspose.Words. يمكنك القيام بذلك عبر NuGet Package Manager في Visual Studio.
+
+1. انقر بزر الماوس الأيمن على مشروعك في Solution Explorer.
+2. حدد "إدارة حزم NuGet".
+3. ابحث عن "Aspose.Words" وقم بتثبيت الإصدار الأحدث.
+
+## الخطوة 3: تهيئة المستند والمنشئ
+
+الآن، لنبدأ بالبرمجة! سنبدأ بتهيئة مستند جديد وكائن DocumentBuilder.
 
 ```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: إضافة عنصر تحكم في محتوى نوع خانة الاختيار
- إنشاء`StructuredDocumentTag` مع`SdtType.Checkbox` لتمثيل التحكم في محتوى خانة الاختيار. تحديد`MarkupLevel.Inline` لوضعه داخل النص.
+ في هذا المقتطف، نقوم بإنشاء جديد`Document` كائن و`DocumentBuilder` كائن لمساعدتنا في التعامل مع الوثيقة.
+
+## الخطوة 4: إنشاء عنصر التحكم في محتوى نوع خانة الاختيار
+
+يكمن جوهر برنامجنا التعليمي في إنشاء عنصر التحكم في محتوى نوع خانة الاختيار. سوف نستخدم`StructuredDocumentTag` الطبقة لهذا الغرض.
 
 ```csharp
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.Checkbox, MarkupLevel.Inline);
 builder.InsertNode(sdtCheckBox);
 ```
 
-## الخطوة 4: احفظ المستند
- احفظ المستند في الدليل المحدد باستخدام ملف`Save`طريقة. قم بتوفير اسم الملف المطلوب مع امتداد الملف المناسب. في هذا المثال، نقوم بحفظ المستند باسم "WorkingWithSdt.CheckBoxTypeContentControl.docx".
+ هنا نقوم بإنشاء جديد`StructuredDocumentTag` كائن مع النوع`Checkbox` وأدخله في المستند باستخدام`DocumentBuilder`.
+
+## الخطوة 5: احفظ المستند
+
+وأخيرًا، نحتاج إلى حفظ وثيقتنا في الدليل المحدد.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);
 ```
 
-### مثال على التعليمات البرمجية المصدر للتحكم في محتوى نوع خانة الاختيار باستخدام Aspose.Words لـ .NET 
+يحفظ هذا السطر المستند مع مربع الاختيار المضاف حديثًا إلى الدليل المحدد.
 
-```csharp
-	// المسار إلى دليل المستندات الخاص بك
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+## خاتمة
 
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.Checkbox, MarkupLevel.Inline);
-	builder.InsertNode(sdtCheckBox);
-	doc.Save(dataDir + "WorkingWithSdt.CheckBoxTypeContentControl.docx", SaveFormat.Docx);
-```
+وهناك لديك! لقد نجحت في إضافة عنصر التحكم في محتوى نوع خانة الاختيار إلى مستند Word الخاص بك باستخدام Aspose.Words for .NET. يمكن أن تكون هذه الميزة مفيدة بشكل لا يصدق لإنشاء مستندات تفاعلية وسهلة الاستخدام. سواء كنت تقوم بإنشاء نماذج أو استطلاعات أو أي مستند يتطلب إدخال المستخدم، فإن مربعات الاختيار تعد طريقة رائعة لتحسين سهولة الاستخدام.
 
-هذا كل شيء! لقد نجحت في إنشاء عنصر تحكم في محتوى نوع خانة الاختيار في مستند Word الخاص بك باستخدام Aspose.Words for .NET.
+ إذا كان لديك أي أسئلة أو كنت بحاجة إلى مزيد من المساعدة، فلا تتردد في مراجعة[Aspose.توثيق الكلمات](https://reference.aspose.com/words/net/) أو زيارة[منتدى الدعم Aspose](https://forum.aspose.com/c/words/8).
+
+## الأسئلة الشائعة
+
+### ما هو Aspose.Words لـ .NET؟
+Aspose.Words for .NET هي مكتبة قوية تتيح للمطورين إنشاء مستندات Word ومعالجتها وتحويلها برمجيًا.
+
+### كيف يمكنني تثبيت Aspose.Words لـ .NET؟
+ يمكنك تثبيت Aspose.Words لـ .NET عبر NuGet Package Manager في Visual Studio أو تنزيله من[موقع أسبوز](https://releases.aspose.com/words/net/).
+
+### هل يمكنني إضافة أنواع أخرى من عناصر التحكم في المحتوى باستخدام Aspose.Words؟
+نعم، يدعم Aspose.Words أنواعًا مختلفة من عناصر التحكم في المحتوى، بما في ذلك عناصر التحكم في النص والتاريخ ومربع التحرير والسرد.
+
+### هل تتوفر نسخة تجريبية مجانية من Aspose.Words لـ .NET؟
+ نعم، يمكنك تنزيل نسخة تجريبية مجانية من[موقع أسبوز](https://releases.aspose.com/).
+
+### أين يمكنني الحصول على الدعم إذا واجهت مشاكل؟
+ يمكنك زيارة[منتدى الدعم Aspose](https://forum.aspose.com/c/words/8) للمساعدة.

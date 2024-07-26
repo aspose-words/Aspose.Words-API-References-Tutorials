@@ -139,7 +139,7 @@ Và bạn có nó rồi đấy! Bạn đã chèn thành công tài liệu vào c
 ## Câu hỏi thường gặp
 
 ### Tôi có thể chèn nhiều tài liệu vào các trường hợp nhất khác nhau không?
-Vâng, bạn có thể. Chỉ cần chỉ định các trường hợp nhất thích hợp và đường dẫn tài liệu tương ứng trong`MailMerge.Execute` phương pháp.
+Có, bạn có thể. Chỉ cần chỉ định các trường hợp nhất thích hợp và đường dẫn tài liệu tương ứng trong`MailMerge.Execute` phương pháp.
 
 ### Có thể định dạng tài liệu được chèn khác với tài liệu chính không?
  Tuyệt đối! Bạn có thể dùng`ImportFormatMode` tham số trong`NodeImporter` để kiểm soát việc định dạng.

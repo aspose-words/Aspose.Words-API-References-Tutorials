@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Signature line.docx");
 
 ## الخطوة 2: الوصول إلى خط التوقيع
 
-الآن وبعد أن قمنا بتحميل المستند، فإن الخطوة التالية هي تحديد موقع سطر التوقيع داخل المستند والوصول إليه.
+الآن بعد أن قمنا بتحميل المستند، فإن الخطوة التالية هي تحديد موقع سطر التوقيع داخل المستند والوصول إليه.
 
 ```csharp
 SignatureLine signatureLine = ((Shape) doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;

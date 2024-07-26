@@ -39,7 +39,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"`PDF 문서를 저장하려는 실제 경로를 사용하세요.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` PDF 문서를 저장하려는 실제 경로를 사용하세요.
 
 ## 2단계: 새 문서 만들기
 

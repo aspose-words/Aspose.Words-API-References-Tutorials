@@ -13,7 +13,7 @@ Belgelerinizi şifrelerle korumak için Aspose.Words for Java'nın gücünün ki
 
 ## giriiş
 
-Günümüzün dijital dünyasında veri güvenliği çok önemlidir. İster gizli iş belgeleri, ister kişisel dosyalar kullanıyor olun, belgelerinize yalnızca yetkili kişilerin erişebilmesini sağlamak çok önemlidir. Bu adım adım kılavuz, şifre uygulayarak belgelerinize güçlü bir güvenlik katmanı eklemek için Aspose.Words for Java'yı nasıl kullanacağınızı gösterecek.
+Günümüzün dijital dünyasında veri güvenliği çok önemlidir. İster gizli iş belgeleri ister kişisel dosyalar kullanıyor olun, belgelerinize yalnızca yetkili kişilerin erişebilmesini sağlamak çok önemlidir. Bu adım adım kılavuz, şifre uygulayarak belgelerinize güçlü bir güvenlik katmanı eklemek için Aspose.Words for Java'yı nasıl kullanacağınızı gösterecek.
 
 ## Java için Aspose.Words'ü Kurma
 

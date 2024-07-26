@@ -119,7 +119,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 
 ## 結論
 
-現在你就得到它了！您剛剛使用 Aspose.Words for .NET 將兩個具有不同頁面設定的 Word 文件合併在一起。這個強大的程式庫使得以程式設計方式操作文件變得非常容易。無論您是建立複雜的報告、組裝書籍或管理任何多節文檔，Aspose.Words 都能為您提供支援。
+現在你就擁有了！您剛剛使用 Aspose.Words for .NET 將兩個具有不同頁面設定的 Word 文件合併在一起。這個強大的程式庫使得以程式設計方式操作文件變得非常容易。無論您是建立複雜的報告、組裝書籍或管理任何多節文檔，Aspose.Words 都能為您提供支援。
 
 ## 常見問題解答
 

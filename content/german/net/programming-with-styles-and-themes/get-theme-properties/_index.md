@@ -20,7 +20,7 @@ Stellen Sie sicher, dass Sie Ihre Entwicklungsumgebung mit Aspose.Words für .NE
 Document doc = new Document();
 ```
 
-In diesem Schritt erstellen wir ein neues`Document` Objekt.
+ In diesem Schritt erstellen wir ein neues`Document` Objekt.
 
 ## Schritt 3: Designeigenschaften abrufen
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- In diesem Schritt verwenden wir die`Theme` Eigentum der`Document` Objekt, um die`Theme` Objekt. Dann können wir auf die verschiedenen Eigenschaften des Designs zugreifen, wie zum Beispiel die Hauptschriftarten (`MajorFonts`), die sekundären Schriftarten (`MinorFonts`) und die Akzentfarben (`Colors`).
+ In diesem Schritt verwenden wir die`Theme` Eigentum der`Document`Objekt, um die`Theme` Objekt. Dann können wir auf die verschiedenen Eigenschaften des Designs zugreifen, wie zum Beispiel die Hauptschriftarten (`MajorFonts`), die sekundären Schriftarten (`MinorFonts`) und die Akzentfarben (`Colors`).
 
 ## Schritt 4: Designeigenschaften anzeigen
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Abschluss
 
- In diesem Tutorial haben wir die Funktionalität zum Abrufen der Designeigenschaften eines Dokuments mit Aspose.Words für .NET untersucht. Mit dem`Theme`Objekt und seine zugehörigen Eigenschaften konnten wir auf Informationen zu den primären und sekundären Schriftarten sowie den im Dokumentdesign verwendeten Akzentfarben zugreifen.
+ In diesem Tutorial haben wir die Funktionalität zum Abrufen der Designeigenschaften eines Dokuments mit Aspose.Words für .NET untersucht. Mit dem`Theme` Objekt und seine zugehörigen Eigenschaften konnten wir auf Informationen zu den primären und sekundären Schriftarten sowie den im Dokumentdesign verwendeten Akzentfarben zugreifen.
 
 Durch die Möglichkeit, Designeigenschaften abzurufen, können Sie die Stile und Layouts Ihrer Dokumente analysieren und anpassen. Sie können diese Informationen verwenden, um gezielte Änderungen vorzunehmen, Berichte zu erstellen oder Analysen zur Verwendung von Schriftarten und Farben in Ihren Dokumenten durchzuführen.
 
@@ -68,11 +68,11 @@ Entdecken Sie weitere Funktionen von Aspose.Words für .NET, um Ihren Workflow z
 
 #### Wie kann ich mit Aspose.Words für .NET auf die Designeigenschaften eines Dokuments zugreifen?
 
- Um auf die Designeigenschaften eines Dokuments zuzugreifen, können Sie das`Theme` Eigentum der`Document` Objekt. Es gibt ein`Theme`Objekt, das Informationen zu den primären und sekundären Schriftarten sowie den im Design des Dokuments verwendeten Akzentfarben enthält.
+ Um auf die Designeigenschaften eines Dokuments zuzugreifen, können Sie das`Theme` Eigentum der`Document` Objekt. Es gibt ein`Theme` Objekt, das Informationen zu den primären und sekundären Schriftarten sowie den im Design des Dokuments verwendeten Akzentfarben enthält.
 
 #### Wie kann ich die primären und sekundären Schriftarten des Designs eines Dokuments abrufen?
 
- Sie können auf die primären und sekundären Schriftarten des Designs eines Dokuments zugreifen, indem Sie das`MajorFonts`Und`MinorFonts` Eigenschaften der`Theme` Objekt. Diese Eigenschaften ermöglichen den Zugriff auf die im Design des Dokuments für verschiedene Sprachen oder Regionen verwendeten Schriftnamen.
+Sie können auf die primären und sekundären Schriftarten des Designs eines Dokuments zugreifen, indem Sie das`MajorFonts`Und`MinorFonts` Eigenschaften der`Theme` Objekt. Diese Eigenschaften ermöglichen den Zugriff auf die im Design des Dokuments für verschiedene Sprachen oder Regionen verwendeten Schriftnamen.
 
 #### Kann ich die im Design eines Dokuments verwendeten Akzentfarben abrufen?
 

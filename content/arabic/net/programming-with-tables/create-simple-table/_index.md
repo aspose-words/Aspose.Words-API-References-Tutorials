@@ -21,7 +21,7 @@ url: /ar/net/programming-with-tables/create-simple-table/
 // المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// قم بإنشاء المستند وتهيئة منشئ المستندات
+//قم بإنشاء المستند وتهيئة منشئ المستندات
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//اتصل بالطريقة التالية لإنهاء السطر الأول وبدء سطر جديد
+// اتصل بالطريقة التالية لإنهاء السطر الأول وبدء سطر جديد
 builder. EndRow();
 
 // بناء الخلية الأولى من الصف الثاني
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//إشارة إلى أننا انتهينا من بناء الجدول.
+	// إشارة إلى أننا انتهينا من بناء الجدول.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

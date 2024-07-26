@@ -2,35 +2,49 @@
 title: Xuất Dấu trang Đầu trang Chân trang Tài liệu Word sang Tài liệu PDF
 linktitle: Xuất Dấu trang Đầu trang Chân trang Tài liệu Word sang Tài liệu PDF
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để xuất dấu trang chân trang đầu trang tài liệu word sang dấu trang tài liệu pdf bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách xuất dấu trang đầu trang và chân trang từ tài liệu Word sang PDF bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi.
 type: docs
 weight: 10
 url: /vi/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## Giới thiệu
 
-Bài viết này cung cấp hướng dẫn từng bước về cách xuất dấu trang chân trang đầu trang tài liệu word sang tính năng tài liệu pdf bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích chi tiết từng phần của mã. Khi kết thúc hướng dẫn này, bạn sẽ có thể hiểu cách xuất dấu trang từ đầu trang và chân trang của tài liệu và tạo tệp PDF với các dấu trang thích hợp.
+Chuyển đổi tài liệu Word sang PDF là một công việc thường xuyên, đặc biệt khi bạn muốn chia sẻ hoặc lưu trữ tài liệu mà vẫn giữ nguyên định dạng của chúng. Đôi khi, những tài liệu này chứa các dấu trang quan trọng ở đầu trang và chân trang. Trong hướng dẫn này, chúng ta sẽ tìm hiểu quy trình xuất các dấu trang này từ tài liệu Word sang PDF bằng Aspose.Words cho .NET.
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt và định cấu hình thư viện Aspose.Words cho .NET trong dự án của mình. Bạn có thể tìm thấy thư viện và hướng dẫn cài đặt trên trang web Aspose.
+## Điều kiện tiên quyết
 
-## Bước 1: Xác định thư mục tài liệu
+Trước khi chúng ta đi sâu vào, hãy đảm bảo bạn có những điều sau:
 
- Để bắt đầu, bạn cần xác định đường dẫn đến thư mục chứa tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+- Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Thiết lập môi trường phát triển của bạn. Bạn có thể sử dụng Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
+- Kiến thức cơ bản về C#: Cần phải làm quen với lập trình C# cùng với các ví dụ về mã.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các vùng tên cần thiết vào dự án C# của mình. Thêm những dòng này vào đầu tệp mã của bạn:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Bước 2: Tải tài liệu lên
+Hãy chia nhỏ quy trình thành các bước dễ thực hiện.
 
-Tiếp theo, chúng ta cần tải tài liệu mà chúng ta muốn xử lý. Trong ví dụ này, chúng tôi giả sử tài liệu có tên là "Dấu trang trong đầu trang và chân trang.docx" và nằm trong thư mục tài liệu được chỉ định.
+## Bước 1: Khởi tạo tài liệu
+
+Bước đầu tiên là tải tài liệu Word của bạn. Đây là cách bạn có thể làm điều đó:
 
 ```csharp
+// Đường dẫn đến thư mục tài liệu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## Bước 3: Định cấu hình tùy chọn lưu dưới dạng PDF
+Trong bước này, bạn chỉ cần chỉ định đường dẫn đến thư mục tài liệu của mình và tải tài liệu Word.
 
- Để xuất dấu trang đầu trang và chân trang, chúng ta cần định cấu hình`PdfSaveOptions` sự vật. Trong ví dụ này, chúng tôi đặt mức phác thảo dấu trang mặc định thành 1 và chế độ xuất dấu trang đầu trang và chân trang thành "Đầu tiên".
+## Bước 2: Định cấu hình tùy chọn lưu PDF
+
+Tiếp theo, bạn cần định cấu hình tùy chọn lưu PDF để đảm bảo rằng dấu trang ở đầu trang và chân trang được xuất chính xác.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## Bước 4: Lưu tài liệu dưới dạng PDF với dấu trang đầu trang và chân trang
+ Ở đây, chúng tôi đang thiết lập`PdfSaveOptions` . Các`DefaultBookmarksOutlineLevel` thuộc tính đặt mức phác thảo cho dấu trang và`HeaderFooterBookmarksExportMode` thuộc tính đảm bảo rằng chỉ lần xuất hiện đầu tiên của dấu trang trong đầu trang và chân trang mới được xuất.
 
-Cuối cùng, chúng ta có thể lưu tài liệu ở định dạng PDF bằng cách sử dụng các tùy chọn lưu đã định cấu hình trước đó.
+## Bước 3: Lưu tài liệu dưới dạng PDF
+
+Cuối cùng, lưu tài liệu của bạn dưới dạng PDF với các tùy chọn đã định cấu hình.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-Đó là tất cả ! Bạn đã xuất thành công dấu trang đầu trang và chân trang từ tài liệu và tạo tệp PDF có dấu trang thích hợp bằng Aspose.Words cho .NET.
-
-### Mã nguồn mẫu để xuất dấu trang đầu trang và chân trang bằng Aspose.Words cho .NET
-
-```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+Ở bước này, bạn sẽ lưu tài liệu vào đường dẫn đã chỉ định với các tùy chọn bạn đã định cấu hình.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách xuất dấu trang đầu trang và chân trang từ tài liệu Word sang tài liệu PDF bằng Aspose.Words cho .NET. Dấu trang đã xuất cho phép điều hướng dễ dàng và tham khảo nhanh đến đầu trang và chân trang tương ứng trong tài liệu PDF được tạo. Thực hiện theo các bước được mô tả để xuất dấu trang đầu trang và chân trang từ tài liệu và tạo tệp PDF có dấu trang thích hợp bằng Aspose.Words cho .NET. Đảm bảo chỉ định đường dẫn chính xác tới tài liệu của bạn và định cấu hình các tùy chọn lưu nếu cần.
+Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng xuất dấu trang từ đầu trang và chân trang của tài liệu Word sang PDF bằng Aspose.Words for .NET. Phương pháp này đảm bảo rằng các công cụ hỗ trợ điều hướng quan trọng trong tài liệu của bạn được giữ nguyên ở định dạng PDF, giúp người đọc điều hướng qua tài liệu của bạn dễ dàng hơn.
 
-### Các câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-### Hỏi: Xuất dấu trang đầu trang và chân trang từ tài liệu Word sang tài liệu PDF là gì?
-Trả lời: Xuất dấu trang đầu trang và chân trang từ tài liệu Word sang tài liệu PDF là một tính năng giúp giữ và tạo dấu trang trong tài liệu PDF từ đầu trang và chân trang. chân trang của tài liệu Word gốc. Điều này cho phép người dùng điều hướng nhanh chóng và dễ dàng qua tài liệu PDF bằng cách sử dụng dấu trang tương ứng với đầu trang và chân trang.
+### Tôi có thể xuất tất cả dấu trang từ tài liệu Word sang PDF không?
 
-### Câu hỏi: Làm cách nào tôi có thể sử dụng Aspose.Words cho .NET để xuất dấu trang đầu trang và chân trang từ tài liệu Word sang tài liệu PDF?
-Trả lời: Để xuất dấu trang đầu trang và chân trang từ tài liệu Word sang tài liệu PDF bằng Aspose.Words cho .NET, hãy làm theo các bước sau:
+ Có, bạn có thể. bên trong`PdfSaveOptions`, bạn có thể điều chỉnh cài đặt để bao gồm tất cả dấu trang nếu cần.
 
- Đặt đường dẫn thư mục nơi chứa tài liệu của bạn bằng cách thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế của thư mục tài liệu của bạn.
+### Nếu tôi cũng muốn xuất dấu trang từ nội dung tài liệu thì sao?
 
- Tải tài liệu bạn muốn xử lý bằng cách sử dụng`Document` class và chỉ định đường dẫn đến tài liệu Word trong thư mục tài liệu đã chỉ định.
+ Bạn có thể cấu hình`OutlineOptions` TRONG`PdfSaveOptions` để bao gồm các dấu trang từ nội dung của tài liệu.
 
- Định cấu hình tùy chọn lưu dưới dạng PDF bằng cách tạo một phiên bản của`PdfSaveOptions` class và thiết lập các tùy chọn đánh dấu đầu trang và chân trang thích hợp.
+### Có thể tùy chỉnh mức độ đánh dấu trong PDF không?
 
- Lưu tài liệu ở định dạng PDF bằng cách sử dụng`Save` phương pháp của`Document` lớp chỉ định đường dẫn và các tùy chọn lưu.
+ Tuyệt đối! Bạn có thể tùy chỉnh`DefaultBookmarksOutlineLevel` thuộc tính để đặt các mức phác thảo khác nhau cho dấu trang của bạn.
 
-### Câu hỏi: Lợi ích của việc xuất dấu trang đầu trang và chân trang sang tài liệu PDF là gì?
-Đáp: Ưu điểm của việc xuất dấu trang đầu trang và chân trang thành tài liệu PDF là:
+### Làm cách nào để xử lý tài liệu không có dấu trang?
 
-Điều hướng dễ dàng: Dấu trang cho phép người dùng dễ dàng điều hướng tài liệu PDF bằng cách tham khảo các đầu trang và chân trang cụ thể.
+Nếu tài liệu của bạn không có dấu trang, tệp PDF sẽ được tạo mà không có bất kỳ đường viền dấu trang nào. Đảm bảo tài liệu của bạn chứa dấu trang nếu bạn cần chúng trong PDF.
 
-Tham khảo nhanh: Dấu trang cho phép người dùng nhanh chóng tìm thấy các phần có liên quan của tài liệu PDF dựa trên đầu trang và chân trang.
+### Tôi có thể sử dụng phương pháp này cho các loại tài liệu khác như DOCX hoặc RTF không?
+
+Có, Aspose.Words for .NET hỗ trợ nhiều loại tài liệu khác nhau, bao gồm DOCX, RTF và các loại khác.

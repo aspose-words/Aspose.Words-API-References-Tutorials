@@ -2,38 +2,36 @@
 title: Załaduj zaszyfrowany dokument programu Word
 linktitle: Załaduj zaszyfrowany dokument do dokumentu programu Word
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ładować i zapisywać zaszyfrowane dokumenty w formacie Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak ładować i zapisywać zaszyfrowane dokumenty programu Word przy użyciu Aspose.Words dla .NET. Z łatwością zabezpiecz swoje dokumenty nowymi hasłami. W zestawie instrukcja krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-loadoptions/load-encrypted-document/
 ---
-Kiedy Words Processing zawiera zaszyfrowane dokumenty Word w aplikacji C#, ważne jest, aby móc je poprawnie załadować, podając prawidłowe hasło. Dzięki bibliotece Aspose.Words dla .NET możesz łatwo ładować zaszyfrowane dokumenty Word, korzystając z odpowiednich opcji ładowania. W tym przewodniku krok po kroku pokażemy, jak używać kodu źródłowego C# Aspose.Words dla .NET do ładowania zaszyfrowanego dokumentu przy użyciu opcji ładowania LoadOptions.
+## Wstęp
 
-## Zrozumienie biblioteki Aspose.Words
+W tym samouczku dowiesz się, jak załadować zaszyfrowany dokument Word i zapisać go z nowym hasłem, używając Aspose.Words dla .NET. Obsługa zaszyfrowanych dokumentów jest niezbędna dla utrzymania bezpieczeństwa dokumentów, szczególnie w przypadku poufnych informacji.
 
-Przed zagłębieniem się w kod ważne jest zapoznanie się z biblioteką Aspose.Words dla platformy .NET. Aspose.Words to potężna biblioteka do tworzenia, edytowania, konwertowania i ochrony dokumentów programu Word na różnych platformach, w tym .NET. Oferuje wiele funkcji do manipulowania dokumentami, takich jak wstawianie tekstu, zmiana formatowania, dodawanie sekcji i wiele więcej.
+## Warunki wstępne
 
-## Ładowanie zaszyfrowanego dokumentu
+Zanim zaczniesz, upewnij się, że masz następujące elementy:
 
-Pierwszym krokiem jest przesłanie zaszyfrowanego dokumentu przy użyciu odpowiednich opcji przesyłania. W naszym przypadku do załadowania dokumentu używamy klasy Document, podając ścieżkę dokumentu i hasło. Oto przykład :
+1.  Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://downloads.aspose.com/words/net).
+2.  Ważna licencja Aspose. Możesz uzyskać bezpłatną wersję próbną lub kupić ją[Tutaj](https://purchase.aspose.com/buy).
+3. Visual Studio lub dowolne inne środowisko programistyczne .NET.
 
-```csharp
-Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
-```
+## Importuj przestrzenie nazw
 
-W tym przykładzie ładujemy dokument „Encrypted.docx” znajdujący się w katalogu dokumentów przy użyciu hasła „hasło”.
-
-## Zapisywanie zaszyfrowanego dokumentu
-
-Po przesłaniu zaszyfrowanego dokumentu możesz go także zapisać, podając nowe hasło dla pliku wyjściowego. W naszym przykładzie wykorzystujemy klasę OdtSaveOptions do zapisania dokumentu w formacie ODT z nowym hasłem. Oto jak to zrobić:
+Na początek upewnij się, że do projektu zaimportowano niezbędne przestrzenie nazw:
 
 ```csharp
-doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-W tym przykładzie zapisujemy dokument pod nazwą „WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt” podając nowe hasło „newpassword”.
+## Krok 1: Załaduj zaszyfrowany dokument
 
-### Przykładowy kod źródłowy dla LoadOptions z funkcją „Załaduj zaszyfrowany dokument” przy użyciu Aspose.Words dla .NET
+ Najpierw załadujesz zaszyfrowany dokument za pomocą`LoadOptions` klasa. Klasa ta umożliwia określenie hasła wymaganego do otwarcia dokumentu.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -41,34 +39,34 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Załaduj zaszyfrowany dokument z określonym hasłem
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
+```
 
-//Zapisz zaszyfrowany dokument z nowym hasłem
+## Krok 2: Zapisz dokument z nowym hasłem
+
+ Następnie zapiszesz załadowany dokument jako plik ODT, tym razem ustawiając nowe hasło za pomocą`OdtSaveOptions` klasa.
+
+```csharp
+// Zapisz zaszyfrowany dokument z nowym hasłem
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
 ## Wniosek
 
-W tym przewodniku wyjaśniliśmy, jak ładować i zapisywać zaszyfrowane dokumenty przy użyciu biblioteki Aspose.Words dla .NET. Wykonując podane kroki i korzystając z dostarczonego kodu źródłowego C#, możesz łatwo zastosować tę funkcjonalność w swojej aplikacji C#. Przesyłanie zaszyfrowanych dokumentów zapewnia bezpieczeństwo Twoich danych i umożliwia pracę z chronionymi dokumentami w Aspose.Words.
+Wykonując kroki opisane w tym samouczku, możesz łatwo ładować i zapisywać zaszyfrowane dokumenty Worda za pomocą Aspose.Words dla .NET. Dzięki temu Twoje dokumenty pozostają bezpieczne i dostępne tylko dla upoważnionych osób.
 
+## Często zadawane pytania
 
-### Często zadawane pytania dotyczące ładowania zaszyfrowanego w dokumencie Word
+### Czy mogę używać Aspose.Words do ładowania i zapisywania plików w innych formatach?
+Tak, Aspose.Words obsługuje szeroką gamę formatów plików, w tym DOC, DOCX, PDF, HTML i inne.
 
-#### P: Czym są zaszyfrowane dokumenty programu Word?
+### Co się stanie, jeśli zapomnę hasła do zaszyfrowanego dokumentu?
+Niestety, jeśli zapomnisz hasła, nie będziesz mógł załadować dokumentu. Upewnij się, że przechowujesz hasła w bezpieczny sposób.
 
-Odp.: Zaszyfrowane dokumenty programu Word to pliki chronione hasłem w celu ograniczenia nieautoryzowanego dostępu. Hasła te są wymagane do otwierania, przeglądania i modyfikowania zawartości dokumentu.
+### Czy można usunąć szyfrowanie z dokumentu?
+Tak, zapisując dokument bez podawania hasła, możesz usunąć szyfrowanie.
 
-#### P: W jaki sposób Aspose.Words obsługuje zaszyfrowane dokumenty w aplikacji C#?
+### Czy mogę zastosować inne ustawienia szyfrowania?
+Tak, Aspose.Words zapewnia różne opcje szyfrowania dokumentów, w tym określenie różnych typów algorytmów szyfrowania.
 
-Odp.: Aspose.Words dla .NET zapewnia niezbędne narzędzia i funkcjonalność do ładowania zaszyfrowanych dokumentów Word poprzez podanie prawidłowego hasła, zapewniając bezpieczny dostęp do chronionych plików.
-
-#### P: Czy mogę zmienić hasło do zaszyfrowanego dokumentu za pomocą Aspose.Words?
-
-Odp.: Absolutnie! Aspose.Words umożliwia zapisywanie zaszyfrowanych dokumentów z nowym hasłem, zapewniając elastyczność aktualizacji hasła w razie potrzeby.
-
-#### P: Jakie algorytmy szyfrowania obsługuje Aspose.Words?
-
-Odp.: Aspose.Words obsługuje różne algorytmy szyfrowania, w tym Advanced Encryption Standard (AES), który zapewnia silną ochronę danych.
-
-#### P: Czy Aspose.Words jest kompatybilny z innymi formatami dokumentów poza Wordem?
-
-Odp.: Tak, Aspose.Words obsługuje szeroką gamę formatów dokumentów, w tym PDF, HTML, EPUB i inne, co czyni go wszechstronnym rozwiązaniem do przetwarzania dokumentów.
+### Czy istnieje ograniczenie rozmiaru dokumentu, który można zaszyfrować?
+Nie, Aspose.Words może obsługiwać dokumenty o dowolnym rozmiarze, z zastrzeżeniem ograniczeń pamięci systemu.

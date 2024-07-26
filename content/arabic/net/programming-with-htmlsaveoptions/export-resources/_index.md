@@ -2,78 +2,106 @@
 title: تصدير الموارد
 linktitle: تصدير الموارد
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لتصدير موارد المستند عند حفظه بتنسيق HTML باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية تصدير الموارد مثل CSS والخطوط مع حفظ مستندات Word بتنسيق HTML باستخدام Aspose.Words for .NET. اتبع دليلنا خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-htmlsaveoptions/export-resources/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سنرشدك عبر التعليمات البرمجية المصدر لـ C# لتصدير موارد المستند باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة تصدير الموارد، مثل الخطوط، كملفات خارجية عند حفظ مستند بتنسيق HTML.
+مرحبًا بك، أيها الزميل المتحمس للتكنولوجيا! إذا وجدت نفسك بحاجة إلى تحويل مستندات Word إلى HTML، فأنت في المكان الصحيح. اليوم، نحن نتعمق في عالم Aspose.Words for .NET الرائع. تجعل هذه المكتبة القوية من السهل العمل مع مستندات Word برمجيًا. في هذا البرنامج التعليمي، سنتعرف على خطوات تصدير الموارد، مثل الخطوط وCSS، عند حفظ مستند Word بتنسيق HTML باستخدام Aspose.Words لـ .NET. استعدوا لرحلة ممتعة وغنية بالمعلومات!
 
-## الخطوة 1: إعداد المشروع
+## المتطلبات الأساسية
 
-للبدء، قم بإنشاء مشروع C# جديد في بيئة التطوير المتكاملة (IDE) المفضلة لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+قبل أن نتعمق في الكود، دعنا نتأكد من حصولك على كل ما تحتاجه للبدء. فيما يلي قائمة مرجعية سريعة:
 
-## الخطوة 2: تحميل الوثيقة
+1.  Visual Studio: تأكد من تثبيت Visual Studio على جهازك. يمكنك تنزيله من[موقع فيجوال ستوديو](https://visualstudio.microsoft.com/).
+2.  Aspose.Words لـ .NET: ستحتاج إلى مكتبة Aspose.Words لـ .NET. إذا لم تكن قد حصلت عليه بعد، احصل على نسخة تجريبية مجانية من[إصدارات Aspose](https://releases.aspose.com/words/net/) أو شرائه من[متجر أسبوز](https://purchase.aspose.com/buy).
+3. المعرفة الأساسية بـ C#: الفهم الأساسي لـ C# سيساعدك على متابعة أمثلة التعليمات البرمجية.
 
-في هذه الخطوة، سنقوم بتحميل المستند للتصدير. استخدم الكود التالي لتحميل المستند من دليل محدد:
+حصلت على كل ذلك؟ عظيم! دعنا ننتقل إلى استيراد مساحات الأسماء الضرورية.
+
+## استيراد مساحات الأسماء
+
+لاستخدام Aspose.Words لـ .NET، يتعين عليك تضمين مساحات الأسماء ذات الصلة في مشروعك. إليك كيفية القيام بذلك:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+تعد مساحات الأسماء هذه ضرورية للوصول إلى فئات Aspose.Words والأساليب التي سنستخدمها في برنامجنا التعليمي.
+
+دعونا نحلل عملية تصدير الموارد عند حفظ مستند Word بتنسيق HTML. سنأخذ الأمر خطوة بخطوة، لذلك من السهل متابعته.
+
+## الخطوة 1: قم بإعداد دليل المستندات الخاص بك
+
+أول الأشياء أولاً، عليك تحديد المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يوجد فيه مستند Word الخاص بك والمكان الذي سيتم فيه حفظ ملف HTML.
+
+```csharp
+// المسار إلى دليل المستندات.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي إلى الدليل الخاص بك.
+
+## الخطوة 2: قم بتحميل مستند Word
+
+ بعد ذلك، لنقم بتحميل مستند Word الذي تريد تحويله إلى HTML. في هذا البرنامج التعليمي، سنستخدم مستندًا اسمه`Rendering.docx`.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`Document` عن طريق تحميل المستند من الدليل المحدد.
+يقوم سطر التعليمات البرمجية هذا بتحميل المستند من الدليل المحدد.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي لـ HTML
+## الخطوة 3: تكوين خيارات حفظ HTML
 
-سنقوم الآن بتكوين خيارات حفظ HTML لتصدير موارد المستند. استخدم الكود التالي:
+لتصدير الموارد مثل CSS والخطوط، تحتاج إلى تكوين ملف`HtmlSaveOptions`. تعتبر هذه الخطوة ضرورية لضمان أن مخرجات HTML الخاصة بك جيدة التنظيم وتتضمن الموارد اللازمة.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-CssStyleSheetType = CssStyleSheetType.External,
-ExportFontResources=true,
-ResourceFolder = ArtifactsDir + "Resources",
-ResourceFolderAlias = "http://example.com/resources"
+    CssStyleSheetType = CssStyleSheetType.External,
+    ExportFontResources = true,
+    ResourceFolder = dataDir + "Resources",
+    ResourceFolderAlias = "http://example.com/resources"
 };
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ويضبط الخيارات التالية:
+دعنا نحلل ما يفعله كل خيار:
+- `CssStyleSheetType = CssStyleSheetType.External`: يحدد هذا الخيار ضرورة حفظ أنماط CSS في ورقة أنماط خارجية.
+- `ExportFontResources = true`: يتيح ذلك تصدير موارد الخطوط.
+- `ResourceFolder = dataDir + "Resources"`: يحدد المجلد المحلي حيث سيتم حفظ الموارد (مثل الخطوط وملفات CSS).
+- `ResourceFolderAlias = "http://example.com/resources"`: يعين اسمًا مستعارًا لمجلد المورد، والذي سيتم استخدامه في ملف HTML.
 
-- `CssStyleSheetType` تم ضبطه على`CssStyleSheetType.External` لتصدير ورقة أنماط CSS إلى ملف خارجي.
-- `ExportFontResources` تم ضبطه على`true` لتصدير موارد الخطوط.
-- `ResourceFolder` يحدد الدليل الوجهة حيث سيتم حفظ الموارد.
-- `ResourceFolderAlias`يحدد الاسم المستعار لعنوان URL الذي سيتم استخدامه للوصول إلى الموارد.
+## الخطوة 4: احفظ المستند بتنسيق HTML
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
-
-وأخيرًا، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML التي تم تكوينها مسبقًا. استخدم الكود التالي:
+بعد تكوين خيارات الحفظ، فإن الخطوة الأخيرة هي حفظ المستند كملف HTML. إليك كيفية القيام بذلك:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
 ```
 
-يقوم هذا الرمز بتحويل المستند إلى HTML وحفظ الموارد في الدليل المحدد، باستخدام الاسم المستعار لعنوان URL المحدد.
+يقوم سطر التعليمات البرمجية هذا بحفظ المستند بتنسيق HTML، بالإضافة إلى الموارد المصدرة.
 
-### مثال على التعليمات البرمجية المصدر لتصدير الموارد باستخدام Aspose.Words لـ .NET
+## خاتمة
 
-```csharp
+وهناك لديك! لقد نجحت في تصدير الموارد أثناء حفظ مستند Word بتنسيق HTML باستخدام Aspose.Words لـ .NET. باستخدام هذه المكتبة القوية، يصبح التعامل مع مستندات Word برمجيًا أمرًا في غاية السهولة. سواء كنت تعمل على تطبيق ويب أو تحتاج فقط إلى تحويل المستندات للاستخدام دون الاتصال بالإنترنت، فإن Aspose.Words هو الحل الأمثل لك.
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+## الأسئلة الشائعة
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External,
-		ExportFontResources = true,
-		ResourceFolder = ArtifactsDir + "Resources",
-		ResourceFolderAlias = "http://example.com/resources"
-	};
+### هل يمكنني تصدير الصور مع الخطوط وCSS؟
+ نعم يمكنك! يدعم Aspose.Words for .NET تصدير الصور أيضًا. فقط تأكد من تكوين`HtmlSaveOptions` وفقاً لذلك.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
-  
-```
+### هل هناك طريقة لتضمين CSS بدلاً من استخدام ورقة أنماط خارجية؟
+ قطعاً. يمكنك ضبط`CssStyleSheetType` ل`CssStyleSheetType.Embedded` إذا كنت تفضل الأنماط المضمنة.
 
- تأكد من تحديد المسار الصحيح إلى دليل المستندات في ملف`dataDir` عامل.
+### كيف يمكنني تخصيص اسم ملف HTML الناتج؟
+ يمكنك تحديد أي اسم ملف تريده في ملف`doc.Save` طريقة. على سبيل المثال،`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
+
+### هل يدعم Aspose.Words التنسيقات الأخرى إلى جانب HTML؟
+ نعم، فهو يدعم العديد من التنسيقات بما في ذلك PDF وDOCX وTXT والمزيد. تفحص ال[توثيق](https://reference.aspose.com/words/net/) للحصول على قائمة كاملة.
+
+### أين يمكنني الحصول على المزيد من الدعم والموارد؟
+لمزيد من المساعدة، قم بزيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) . يمكنك أيضًا العثور على وثائق وأمثلة مفصلة على الموقع[موقع أسبوز](https://reference.aspose.com/words/net/).

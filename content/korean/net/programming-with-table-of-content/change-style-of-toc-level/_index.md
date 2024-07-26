@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### Q: Aspose.Words for .NET을 사용하여 목차의 여러 수준 스타일을 변경할 수 있나요?
 
- A: 예, Aspose.Words for .NET을 사용하여 목차의 여러 수준 스타일을 변경할 수 있습니다. 특정 수준의 스타일을 수정하려면 다음을 사용하여 해당 스타일에 액세스할 수 있습니다.`Styles`속성을 선택하고 각 레벨을 개별적으로 원하는 대로 변경합니다.
+A: 예, Aspose.Words for .NET을 사용하여 목차의 여러 수준 스타일을 변경할 수 있습니다. 특정 수준의 스타일을 수정하려면 다음을 사용하여 해당 스타일에 액세스할 수 있습니다.`Styles` 속성을 선택하고 각 레벨을 개별적으로 원하는 대로 변경합니다.
 
 #### Q: Aspose.Words for .NET을 사용하여 목차 스타일을 변경한 후 수정된 문서를 어떻게 저장합니까?
 
@@ -117,7 +117,7 @@ A: 예, 스타일 변경 외에도 Aspose.Words for .NET을 사용하여 목차�
 
 #### Q: Aspose.Words for .NET을 사용하여 기존 Word 문서의 목차 스타일을 변경할 수 있나요?
 
- A: 예, Aspose.Words for .NET을 사용하여 기존 Word 문서의 목차 스타일을 변경할 수 있습니다. 다음을 사용하여 문서를 로드하기만 하면 됩니다.`Document` 클래스에서 다음을 사용하여 스타일 속성을 수정합니다.`Styles` 속성을 선택하고 문서를 저장하여 변경 사항을 적용합니다.
+A: 예, Aspose.Words for .NET을 사용하여 기존 Word 문서의 목차 스타일을 변경할 수 있습니다. 다음을 사용하여 문서를 로드하기만 하면 됩니다.`Document` 클래스에서 다음을 사용하여 스타일 속성을 수정합니다.`Styles` 속성을 선택하고 문서를 저장하여 변경 사항을 적용합니다.
 
 #### Q: .NET용 Aspose.Words는 Word 문서의 다른 스타일 및 서식 변경을 지원합니까?
 

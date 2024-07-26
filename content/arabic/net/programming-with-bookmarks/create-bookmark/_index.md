@@ -2,7 +2,7 @@
 title: إنشاء إشارة مرجعية في مستند Word
 linktitle: إنشاء إشارة مرجعية في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إنشاء إشارات مرجعية في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل المفصل خطوة بخطوة. مثالية لتصفح المستندات وتنظيمها.
+description: تعرف على كيفية إنشاء إشارات مرجعية في مستندات Word باستخدام Aspose.Words لـ .NET من خلال هذا الدليل المفصل خطوة بخطوة. مثالية لتصفح المستندات وتنظيمها.
 type: docs
 weight: 10
 url: /ar/net/programming-with-bookmarks/create-bookmark/

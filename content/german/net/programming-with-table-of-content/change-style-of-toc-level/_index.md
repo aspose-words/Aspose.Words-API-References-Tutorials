@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### F: Kann ich mit Aspose.Words für .NET den Stil mehrerer Ebenen im Inhaltsverzeichnis ändern?
 
- A: Ja, Sie können den Stil mehrerer Ebenen im Inhaltsverzeichnis mit Aspose.Words für .NET ändern. Um den Stil einer bestimmten Ebene zu ändern, können Sie über den`Styles`Eigenschaft und nehmen Sie für jede Ebene einzeln die gewünschten Änderungen vor.
+A: Ja, Sie können den Stil mehrerer Ebenen im Inhaltsverzeichnis mit Aspose.Words für .NET ändern. Um den Stil einer bestimmten Ebene zu ändern, können Sie über den`Styles` Eigenschaft und nehmen Sie für jede Ebene einzeln die gewünschten Änderungen vor.
 
 #### F: Wie speichere ich das geänderte Dokument, nachdem ich den Stil des Inhaltsverzeichnisses mit Aspose.Words für .NET geändert habe?
 
@@ -117,7 +117,7 @@ A: Ja, zusätzlich zum Ändern des Stils können Sie mit Aspose.Words für .NET 
 
 #### F: Kann ich mit Aspose.Words für .NET den Stil des Inhaltsverzeichnisses in einem vorhandenen Word-Dokument ändern?
 
- A: Ja, Sie können den Stil des Inhaltsverzeichnisses in einem vorhandenen Word-Dokument mit Aspose.Words für .NET ändern. Laden Sie das Dokument einfach mit dem`Document` Klasse ändern Sie die Stileigenschaften mit dem`Styles` Eigenschaft und speichern Sie das Dokument, um die Änderungen anzuwenden.
+A: Ja, Sie können den Stil des Inhaltsverzeichnisses in einem vorhandenen Word-Dokument mit Aspose.Words für .NET ändern. Laden Sie das Dokument einfach mit dem`Document` Klasse ändern Sie die Stileigenschaften mit dem`Styles` Eigenschaft und speichern Sie das Dokument, um die Änderungen anzuwenden.
 
 #### F: Unterstützt Aspose.Words für .NET das Ändern anderer Stile und Formatierungen in Word-Dokumenten?
 

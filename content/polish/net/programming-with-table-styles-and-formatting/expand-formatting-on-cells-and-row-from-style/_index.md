@@ -80,4 +80,4 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ```
 
 ## Wniosek
-tym samouczku nauczyliśmy się, jak rozszerzać formatowanie na komórki i wiersze ze stylu tabeli przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku, możesz z łatwością zastosować formatowanie w stylu tabeli do określonych komórek i wierszy w dokumentach programu Word. Aspose.Words oferuje potężny i elastyczny interfejs API do manipulowania i formatowania tabel w dokumentach. Dzięki tej wiedzy możesz jeszcze bardziej dostosować układ i prezentację dokumentów programu Word.
+tym samouczku nauczyliśmy się, jak rozszerzać formatowanie na komórki i wiersze ze stylu tabeli przy użyciu Aspose.Words dla .NET. Postępując zgodnie z tym przewodnikiem krok po kroku, możesz łatwo zastosować formatowanie w stylu tabeli do określonych komórek i wierszy w dokumentach programu Word. Aspose.Words oferuje potężny i elastyczny interfejs API do manipulowania i formatowania tabel w dokumentach. Dzięki tej wiedzy możesz jeszcze bardziej dostosować układ i prezentację dokumentów programu Word.

@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Formatting;
 ```
 
-Nu när vi har fått grunderna ur vägen, låt oss dyka in i den steg-för-steg-guiden. Vi delar upp processen i hanterbara steg för att säkerställa att du enkelt kan följa med.
+Nu när vi har fått grunderna ur vägen, låt oss dyka in i steg-för-steg-guiden. Vi delar upp processen i hanterbara steg för att säkerställa att du enkelt kan följa med.
 
 ## Steg 1: Ladda dokumentet
 

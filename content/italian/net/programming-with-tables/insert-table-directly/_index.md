@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Questo codice inizializza un nuovo documento di Word. Dovrai sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
+ Questo codice inizializza un nuovo documento di Word. Dovrai sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti.
 
 ## Passaggio 2: creazione dell'oggetto tabella
 
@@ -71,7 +71,7 @@ Una tabella è composta da righe e celle. Aggiungiamo questi elementi passo dopo
 // Qui potremmo chiamare GuaranteeMinimum per creare le righe e le celle per noi. Questo metodo viene utilizzato
 // per garantire che il nodo specificato sia valido. In questo caso, una tabella valida dovrebbe avere almeno una riga e una cella.
 // Gestiremo invece la creazione della riga e della tabella da soli.
-//Questo sarebbe il modo migliore per farlo se stessimo creando una tabella all'interno di un algoritmo.
+// Questo sarebbe il modo migliore per farlo se stessimo creando una tabella all'interno di un algoritmo.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

@@ -16,8 +16,8 @@ Akár a Word régebbi verzióival kompatibilis dokumentumokat szeretne létrehoz
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Docx titkosítása jelszóval](./encrypt-docx-with-password/) | Ismerje meg, hogyan titkosíthat DOCX-fájlokat jelszóval az Aspose.Words for .NET használatával. A dokumentumbiztonság teljes oktatóanyaga. |
-| [Ooxml Compliance Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Ismerje meg, hogyan biztosítható az Ooxml Iso 29500_2008_Strict megfelelés a dokumentumok Aspose.Words for .NET segítségével történő mentésekor. |
-| [Frissítse az utolsó megtakarított idő tulajdonságot](./update-last-saved-time-property/) | Ismerje meg, hogyan frissítheti automatikusan az Utolsó megtakarított idő tulajdonságot a dokumentum Aspose.Words for .NET segítségével történő mentésekor. |
-| [Tartsa meg a régi vezérlőkaraktereket](./keep-legacy-control-chars/) | Ismerje meg, hogyan őrizheti meg a régi vezérlőkaraktereket, amikor egy dokumentumot ment az Aspose.Words for .NET segítségével. |
-| [Állítsa be a tömörítési szintet](./set-compression-level/) | Ismerje meg, hogyan állíthatja be a tömörítési szintet egy dokumentum Aspose.Words for .NET segítségével történő mentésekor. |
+| [Docx titkosítása jelszóval](./encrypt-docx-with-password/) | Védje Word-dokumentumait az Aspose.Words for .NET használatával jelszóval történő titkosításával. Kövesse lépésenkénti útmutatónkat, hogy megvédje bizalmas adatait. |
+| [Ooxml Compliance Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Ebből a lépésenkénti útmutatóból megtudhatja, hogyan biztosíthatja az OOXML ISO 29500_2008_Strict megfelelőségét az Aspose.Words for .NET használatával. |
+| [Frissítse az utolsó megtakarított idő tulajdonságot](./update-last-saved-time-property/) | Ismerje meg, hogyan frissítheti az utolsó mentett idő tulajdonságot a Word-dokumentumokban az Aspose.Words for .NET használatával. Kövesse részletes, lépésenkénti útmutatónkat. |
+| [Tartsa meg a régi vezérlőkaraktereket](./keep-legacy-control-chars/) | Ebből a lépésenkénti útmutatóból megtudhatja, hogyan őrizheti meg a régi vezérlőkaraktereket a Word dokumentumokban az Aspose.Words for .NET használatával. |
+| [Állítsa be a tömörítési szintet](./set-compression-level/) | Ismerje meg, hogyan állíthatja be a tömörítési szintet Word dokumentumokban az Aspose.Words for .NET használatával. Kövesse lépésről lépésre útmutatónkat a dokumentumok tárolásának és teljesítményének optimalizálásához. |

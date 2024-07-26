@@ -94,4 +94,4 @@ A Word-dokumentumban rendezett lista programozott létrehozása elsőre ijesztő
 Igen, folytathatja a számozást ugyanazzal a listaformátummal. Az Aspose.Words lehetővé teszi a listák számozásának szabályozását a különböző bekezdésekben.
 
 ### Hogyan távolíthatom el a lista formátumát?  
- A lista formátumot hívással távolíthatja el`ListFormat.RemoveNumbers()`. Ezzel a listaelemek normál bekezdésekké változnak.
+ A lista formátumot a telefonszámon távolíthatja el`ListFormat.RemoveNumbers()`. Ezzel a listaelemek normál bekezdésekké változnak.

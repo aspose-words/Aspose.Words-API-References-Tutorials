@@ -2,74 +2,98 @@
 title: Rastrování transformovaných prvků
 linktitle: Rastrování transformovaných prvků
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak zakázat rasterizaci transformovaných prvků při převodu do formátu PCL pomocí Aspose.Words for .NET.
+description: Naučte se, jak rastrovat transformované prvky při převodu dokumentů Wordu do formátu PCL pomocí Aspose.Words for .NET. Včetně průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
+## Úvod
 
-Aspose.Words for .NET je výkonná knihovna pro vytváření, manipulaci a konverzi dokumentů aplikace Word v aplikaci C#. Mezi funkce, které Aspose.Words nabízí, patří schopnost rastrovat transformované prvky při převodu dokumentů do různých formátů. V této příručce vám ukážeme, jak pomocí zdrojového kódu C# Aspose.Words for .NET zakázat rasterizaci transformovaných prvků při převodu dokumentu do formátu PCL.
+Představte si, že pracujete s dokumentem aplikace Word, který obsahuje různé transformované prvky, jako je otočený text nebo obrázky. Při převodu tohoto dokumentu do formátu PCL (Printer Command Language) možná budete chtít zajistit, aby tyto transformované prvky byly správně rastrovány. V tomto tutoriálu se ponoříme do toho, jak toho můžete dosáhnout pomocí Aspose.Words for .NET.
 
-## Porozumění knihovně Aspose.Words
+## Předpoklady
 
-Než se ponoříte do kódu, je důležité porozumět knihovně Aspose.Words pro .NET. Aspose.Words je oblíbená knihovna, která usnadňuje a zefektivňuje zpracování textu s dokumenty aplikace Word. Nabízí širokou škálu funkcí pro vytváření, úpravy a převod dokumentů aplikace Word, včetně podpory rastrování transformovaných prvků během převodu.
+Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
-## Načítání dokumentu aplikace Word
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+2.  Platná licence: Můžete si zakoupit licenci[tady](https://purchase.aspose.com/buy) nebo získat dočasnou licenci pro hodnocení[tady](https://purchase.aspose.com/temporary-license/).
+3. Vývojové prostředí: Nastavte své vývojové prostředí (např. Visual Studio) s podporou rozhraní .NET.
 
-Prvním krokem je načtení dokumentu aplikace Word, který chcete převést do formátu PCL. Pomocí třídy Document načtěte dokument ze zdrojového souboru. Zde je příklad:
+## Importovat jmenné prostory
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
-
-V tomto příkladu načítáme dokument „Rendering.docx“ umístěný v adresáři dokumentů.
-
-## Konfigurace možností zálohování
-
-Dalším krokem je konfigurace možností uložení pro převod do formátu PCL. Použijte třídu PclSaveOptions a nastavte vlastnost RasterizeTransformedElements na hodnotu false. Jak na to:
+Chcete-li používat Aspose.Words pro .NET, musíte importovat potřebné jmenné prostory. Na začátek souboru C# přidejte následující:
 
 ```csharp
-PclSaveOptions saveOptions = new PclSaveOptions
-{
-     SaveFormat = SaveFormat.Pcl,
-     RasterizeTransformedElements = false
-};
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Vytvoříme nový objekt PclSaveOptions a nastavíme vlastnost SaveFormat na SaveFormat.Pcl, abychom určili, že chceme dokument uložit ve formátu PCL. Dále nastavíme vlastnost RasterizeTransformedElements na false, abychom zakázali rastrování transformovaných prvků.
+Nyní si tento proces rozdělíme do několika kroků, abychom se ujistili, že každé části důkladně porozumíte.
 
-## Převod dokumentu do formátu PCL
+## Krok 1: Nastavte svůj projekt
 
-Nyní, když jsme nakonfigurovali možnosti uložení, můžeme přistoupit k převodu dokumentu do formátu PCL. Pomocí metody Save třídy Document uložte převedený dokument ve formátu PCL zadáním voleb uložení. Zde je příklad:
+Nejprve musíte vytvořit nový projekt nebo použít existující. Otevřete vývojové prostředí a nastavte projekt.
 
-```csharp
-doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
-```
+1. Vytvoření nového projektu: Otevřete Visual Studio a vytvořte novou konzolovou aplikaci C#.
+2.  Instalace Aspose.Words: K instalaci Aspose.Words použijte NuGet Package Manager. Klikněte pravým tlačítkem na svůj projekt, vyberte „Spravovat balíčky NuGet“ a vyhledejte`Aspose.Words`. Nainstalujte nejnovější verzi.
 
-V tomto příkladu uložíme převedený dokument jako "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" pomocí zadaných možností uložení.
+## Krok 2: Načtěte dokument aplikace Word
 
-### Příklad zdrojového kódu pro funkci "Rasterize Transformed Elements" s Aspose.Words pro .NET
+Dále musíte načíst dokument aplikace Word, který chcete převést. Ujistěte se, že máte připravený dokument, nebo jej vytvořte s transformovanými prvky.
 
 ```csharp
 // Cesta k adresáři vašich dokumentů
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Načtěte dokument aplikace Word
-
-
 Document doc = new Document(dataDir + "Rendering.docx");
+```
 
-// Nakonfigurujte možnosti zálohování pro převod do formátu PCL
+ V tomto fragmentu kódu nahraďte`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou k vašemu adresáři obsahujícímu dokument aplikace Word. Ujistěte se, že název dokumentu (`Rendering.docx`) odpovídá vašemu souboru.
+
+## Krok 3: Nakonfigurujte možnosti uložení
+
+ Chcete-li převést dokument do formátu PCL, musíte nakonfigurovat možnosti uložení. To zahrnuje nastavení`SaveFormat` na`Pcl` a určení, zda se mají transformované prvky rastrovat.
+
+```csharp
+//Nakonfigurujte možnosti zálohování pro převod do formátu PCL
 PclSaveOptions saveOptions = new PclSaveOptions
 {
-     SaveFormat = SaveFormat.Pcl,
-     RasterizeTransformedElements = false
+    SaveFormat = SaveFormat.Pcl,
+    RasterizeTransformedElements = false
 };
+```
 
+ Tady,`RasterizeTransformedElements` je nastaveno na`false` , což znamená, že transformované prvky nebudou rastrovány. Můžete to nastavit na`true` pokud je chcete rastrovat.
+
+## Krok 4: Převeďte dokument
+
+Nakonec převedete dokument do formátu PCL pomocí nakonfigurovaných možností uložení.
+
+```csharp
 // Převeďte dokument do formátu PCL
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
+ V tomto řádku je dokument uložen ve formátu PCL se zadanými možnostmi. Výstupní soubor je pojmenován`WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl`.
+
 ## Závěr
 
-této příručce jsme se zabývali tím, jak pomocí Aspose.Words for .NET zakázat rasterizaci transformovaných prvků při převodu dokumentu do formátu PCL pomocí dodaného zdrojového kódu C#. Podle uvedených kroků můžete snadno ovládat chování rastrování transformovaných prvků při převodu dokumentů aplikace Word do různých formátů. Aspose.Words nabízí obrovskou flexibilitu a výkon pro práci s transformovanými prvky, což vám umožňuje vytvářet převedené dokumenty přesně podle vašich specifických potřeb.
+Převod dokumentů aplikace Word s transformovanými prvky do formátu PCL může být trochu složitější, ale s Aspose.Words pro .NET se to stává přímočarým procesem. Podle kroků uvedených v tomto kurzu můžete snadno určit, zda chcete tyto prvky během převodu rastrovat.
+
+## FAQ
+
+### Mohu použít Aspose.Words for .NET ve webové aplikaci?  
+Ano, Aspose.Words for .NET lze použít v různých typech aplikací, včetně webových aplikací. Zajistěte správné licencování a konfiguraci.
+
+### Na jaké další formáty lze Aspose.Words for .NET převést?  
+Aspose.Words podporuje širokou škálu formátů, včetně PDF, HTML, EPUB a dalších. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) pro úplný seznam.
+
+### Je možné rastrovat pouze konkrétní prvky v dokumentu?  
+ V současné době je`RasterizeTransformedElements` Tato možnost se vztahuje na všechny transformované prvky v dokumentu. Pro podrobnější kontrolu zvažte zpracování prvků samostatně před převodem.
+
+### Jak mohu řešit problémy s převodem dokumentů?  
+ Ujistěte se, že máte nejnovější verzi Aspose.Words a zkontrolujte dokumentaci, zda neobsahuje konkrétní problémy s převodem. Kromě toho,[Fórum podpory](https://forum.aspose.com/c/words/8) je skvělé místo, kde můžete požádat o pomoc.
+
+### Existují nějaká omezení zkušební verze Aspose.Words pro .NET?  
+ Zkušební verze má určitá omezení, jako je vodoznak hodnocení. Pro plně funkční zážitek zvažte pořízení a[dočasná licence](https://purchase.aspose.com/temporary-license/).

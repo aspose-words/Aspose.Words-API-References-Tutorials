@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben die mehrzeilige Beschriftungsausrichtung in einem Diagramm mithilfe von Aspose.Words für .NET erfolgreich aktiviert. Indem Sie diese Schritte befolgen, können Sie Ihre Diagramme mühelos an Ihre spezifischen Anforderungen anpassen. Egal, ob Sie einen professionellen Bericht erstellen oder einfach nur experimentieren, Aspose.Words für .NET bietet die Flexibilität und Leistung, die Sie für die Erledigung Ihrer Aufgaben benötigen. Viel Spaß beim Programmieren!
+Und da haben Sie es! Sie haben die mehrzeilige Beschriftungsausrichtung in einem Diagramm mit Aspose.Words für .NET erfolgreich aktiviert. Indem Sie diese Schritte befolgen, können Sie Ihre Diagramme mühelos an Ihre spezifischen Anforderungen anpassen. Egal, ob Sie einen professionellen Bericht erstellen oder einfach nur experimentieren, Aspose.Words für .NET bietet die Flexibilität und Leistung, die Sie für die Erledigung Ihrer Aufgaben benötigen. Viel Spaß beim Programmieren!
 
 ## Häufig gestellte Fragen
 

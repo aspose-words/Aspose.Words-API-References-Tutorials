@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Az elsődleges lábléc a páratlan oldalakhoz használt lábléc.
+	//Az elsődleges lábléc a páratlan oldalakhoz használt lábléc.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

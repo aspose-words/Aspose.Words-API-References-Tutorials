@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Bước 1: Khởi tạo Document và DocumentBuilder
 
- Hãy bắt đầu bằng cách khởi tạo`Document`Và`DocumentBuilder` các đối tượng. Các`DocumentBuilder` là một lớp trợ giúp giúp đơn giản hóa việc tạo và thao tác tài liệu.
+ Hãy bắt đầu bằng việc khởi tạo`Document`Và`DocumentBuilder` các đối tượng. Các`DocumentBuilder` là một lớp trợ giúp giúp đơn giản hóa việc tạo và thao tác tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.

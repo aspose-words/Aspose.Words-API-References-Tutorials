@@ -12,4 +12,4 @@ Los tutoriales de Aspose.Words para .NET sobre procesamiento de textos con Offic
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Ecuaciones matemáticas](./math-equations/) | Aprenda a agregar ecuaciones matemáticas a sus documentos de Word usando Aspose.Words para .NET. |
+| [Ecuaciones matemáticas](./math-equations/) | Aprenda a configurar ecuaciones matemáticas en documentos de Word usando Aspose.Words para .NET. Guía paso a paso con ejemplos, preguntas frecuentes y más. |

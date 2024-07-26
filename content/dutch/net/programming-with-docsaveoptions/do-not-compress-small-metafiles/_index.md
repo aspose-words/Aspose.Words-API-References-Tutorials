@@ -1,6 +1,6 @@
 ---
-title: Comprimeer kleine metabestanden niet
-linktitle: Comprimeer kleine metabestanden niet
+title: Comprimeer geen kleine metabestanden
+linktitle: Comprimeer geen kleine metabestanden
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u Aspose.Words voor .NET kunt gebruiken om ervoor te zorgen dat kleine metabestanden in Word-documenten niet worden gecomprimeerd, waardoor hun kwaliteit en integriteit behouden blijft. Stap-voor-stap handleiding inbegrepen.
 type: docs
@@ -80,13 +80,13 @@ doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 
 ## Conclusie
 
-Door deze stappen te volgen, kunt u ervoor zorgen dat kleine metabestanden in uw Word-documenten niet worden gecomprimeerd, waardoor hun kwaliteit en integriteit behouden blijft. Aspose.Words voor .NET biedt krachtige tools om uw documentverwerkingsbehoeften aan te passen, waardoor het van onschatbare waarde is voor ontwikkelaars die met Word-documenten werken.
+Door deze stappen te volgen, kunt u ervoor zorgen dat kleine metabestanden in uw Word-documenten niet worden gecomprimeerd, waardoor hun kwaliteit en integriteit behouden blijft. Aspose.Words voor .NET biedt krachtige tools om uw behoeften op het gebied van documentverwerking aan te passen, waardoor het van onschatbare waarde is voor ontwikkelaars die met Word-documenten werken.
 
 ## Veelgestelde vragen
 
 ### Waarom zou ik de functie "Kleine metabestanden niet comprimeren" gebruiken?
 
-Door deze functie te gebruiken, blijven de kwaliteit en details van kleine metabestanden in uw documenten behouden, wat cruciaal is voor professionele uitvoer van hoge kwaliteit.
+Door deze functie te gebruiken, blijven de kwaliteit en details van kleine metabestanden in uw documenten behouden, wat cruciaal is voor professionele en hoogwaardige resultaten.
 
 ### Kan ik deze functie gebruiken met andere bestandsindelingen?
 

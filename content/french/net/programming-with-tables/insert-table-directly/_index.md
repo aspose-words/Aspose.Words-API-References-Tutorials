@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Ce code initialise un nouveau document Word. Vous devrez remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
+ Ce code initialise un nouveau document Word. Vous devrez remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
 
 ## Étape 2 : création de l'objet table
 
@@ -71,7 +71,7 @@ Un tableau est composé de lignes et de cellules. Ajoutons ces éléments étape
 // Ici, nous pourrions appeler EnsureMinimum pour créer les lignes et les cellules pour nous. Cette méthode est utilisée
 // pour garantir que le nœud spécifié est valide. Dans ce cas, un tableau valide doit avoir au moins une ligne et une cellule.
 // Au lieu de cela, nous nous occuperons nous-mêmes de la création de la ligne et du tableau.
-//Ce serait la meilleure façon de procéder si nous créions une table dans un algorithme.
+// Ce serait la meilleure façon de procéder si nous créions une table dans un algorithme.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

@@ -177,7 +177,7 @@ U kunt Aspose.Words gebruiken om wijzigingen in de kop- en voettekstvolgorde in 
 // Laad het document
 Document doc = new Document("your-document.docx");
 
-// Verkrijg het eerste gedeelte
+// Haal het eerste gedeelte
 Section firstPageSection = doc.getFirstSection();
 
 // Maak een FindReplaceOptions-instantie en pas deze toe op het bereik van het document

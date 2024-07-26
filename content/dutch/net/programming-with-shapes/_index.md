@@ -17,7 +17,7 @@ Door Aspose.Words voor .NET te gebruiken en deze tutorials te volgen, kunt u de 
 | Titel | Beschrijving |
 | --- | --- |
 | [Groepsvorm toevoegen](./add-group-shape/) | Leer hoe u een groepsvorm met meerdere vormen aan een Word-document kunt toevoegen met Aspose.Words voor .NET. |
-| [Vorm invoegen](./insert-shape/) | Leer hoe u vormen in een Word-document invoegt met Aspose.Words voor .NET. |
+| [Vorm invoegen](./insert-shape/) | Leer hoe u vormen invoegt in een Word-document met Aspose.Words voor .NET. |
 | [Beeldverhouding vergrendeld](./aspect-ratio-locked/) | Leer hoe u de beeldverhouding van een vorm in een Word-document kunt vergrendelen of ontgrendelen met Aspose.Words voor .NET. |
 | [Indeling in cel](./layout-in-cell/) | Leer hoe u een vorm in een tabelcel in een Word-document kunt opmaken met Aspose.Words voor .NET. |
 | [Hoeken toevoegen, geknipt](./add-corners-snipped/) | Leer hoe u een vorm met afgeknipte hoeken aan een Word-document kunt toevoegen met Aspose.Words voor .NET. |

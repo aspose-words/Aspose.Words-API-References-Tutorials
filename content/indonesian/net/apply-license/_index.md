@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/apply-license/
 ---
 
-Halaman ini memberikan panduan mendetail tentang cara menerapkan lisensi dalam proyek menggunakan Aspose.Words untuk .NET. Tutorial ini menjelaskan langkah demi langkah cara menggunakan lisensi untuk mengaktifkan semua fitur Aspose.Words. Ini juga menyediakan kode contoh untuk menggambarkan proses perizinan. Ikuti panduan ini untuk menerapkan lisensi dan mendapatkan hasil maksimal dari pustaka Aspose.Words yang canggih di aplikasi .NET Anda.
+Halaman ini memberikan panduan mendetail tentang cara menerapkan lisensi dalam proyek menggunakan Aspose.Words untuk .NET. Tutorial ini menjelaskan langkah demi langkah cara menggunakan lisensi untuk mengaktifkan semua fitur Aspose.Words. Ini juga menyediakan kode contoh untuk menggambarkan proses perizinan. Ikuti panduan ini untuk menerapkan lisensi dan mendapatkan hasil maksimal dari perpustakaan Aspose.Words yang canggih di aplikasi .NET Anda.
 
  ## Tutorial
 | Judul | Keterangan |

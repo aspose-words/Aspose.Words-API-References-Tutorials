@@ -82,7 +82,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 ## Passaggio 6: impostare l'allineamento dell'etichetta di spunta
 
-Ora arriva la magia! Imposteremo l'allineamento dell'etichetta di spunta per le etichette su più righe.
+Adesso arriva la magia! Imposteremo l'allineamento dell'etichetta di spunta per le etichette su più righe.
 
  Impostare il`TickLabelAlignment` proprietà dell'asse a`ParagraphAlignment.Right`.
 

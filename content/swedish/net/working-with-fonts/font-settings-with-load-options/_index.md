@@ -69,4 +69,4 @@ S: Om det angivna standardteckensnittet inte är tillgängligt när dokumentet l
 
 #### F: Kan jag ange olika teckensnittsinställningar för varje uppladdat dokument?
 
- S: Ja, du kan ange olika teckensnittsinställningar för varje laddat dokument genom att använda separata instanser av`LoadOptions` klass och ställ in önskade teckensnittsinställningar för varje instans. Detta gör att du kan anpassa teckensnittets utseende för varje dokument oberoende av varandra.
+ S: Ja, du kan ange olika teckensnittsinställningar för varje laddat dokument genom att använda separata instanser av`LoadOptions` klass och ställ in önskade teckensnittsinställningar för varje instans. Detta gör att du kan anpassa teckensnittets utseende för varje dokument oberoende.

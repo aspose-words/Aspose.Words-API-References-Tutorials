@@ -160,7 +160,7 @@ Ujistěte se, že ukládáte dokumenty v kompatibilních formátech, abyste pře
 
 U velkých dokumentů zvažte použití třídy DocumentBuilder, která poskytuje lepší výkon pro rozsáhlé vkládání obsahu.
 
-### 9.3 Problémy s písmem a stylingem
+### 9.3 Problémy s písmem a stylem
 
 Ověřte, zda jsou písma a styly použité ve vašem dokumentu dostupné a kompatibilní napříč systémy.
 

@@ -93,5 +93,5 @@ Não, esse recurso específico é para marcadores de imagens. No entanto, Aspose
 ### Existe uma avaliação gratuita do Aspose.Words for .NET?
  Sim, você pode obter um teste gratuito[aqui](https://releases.aspose.com/).
 
-### Como faço para adquirir uma licença do Aspose.Words for .NET?
+### Como posso adquirir uma licença do Aspose.Words for .NET?
  Você pode comprar uma licença no[Aspose Loja](https://purchase.aspose.com/buy).

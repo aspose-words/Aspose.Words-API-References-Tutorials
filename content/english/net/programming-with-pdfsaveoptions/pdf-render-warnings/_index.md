@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## Handling PDF Render Warnings with Aspose.Words for .NET
+## Introduction
 
 If you're working with Aspose.Words for .NET, managing PDF render warnings is an essential aspect to ensure your documents are processed and saved correctly. In this comprehensive guide, we'll walk through how to handle PDF render warnings using Aspose.Words. By the end of this tutorial, you'll have a clear understanding of how to implement this feature in your .NET projects.
 

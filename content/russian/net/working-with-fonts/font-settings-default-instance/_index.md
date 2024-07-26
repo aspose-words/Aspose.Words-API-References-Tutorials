@@ -15,7 +15,7 @@ url: /ru/net/working-with-fonts/font-settings-default-instance/
 Прежде чем мы начнем, убедитесь, что у вас есть следующее:
 
 - Базовые знания C#: Знакомство с программированием на C# поможет вам понять и беспрепятственно реализовать шаги.
--  Библиотека Aspose.Words for .NET: загрузите и установите Aspose.Words for .NET с сайта[ссылка для скачивания](https://releases.aspose.com/words/net/).
+-  Библиотека Aspose.Words for .NET: Загрузите и установите Aspose.Words for .NET с сайта[ссылка для скачивания](https://releases.aspose.com/words/net/).
 - Среда разработки: подходящая среда, такая как Visual Studio, для написания и выполнения вашего кода.
 - Образец документа: Образец документа (например,`Rendering.docx`), чтобы применить настройки шрифта.
 

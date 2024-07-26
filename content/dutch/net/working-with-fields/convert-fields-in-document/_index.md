@@ -15,7 +15,7 @@ Zorg ervoor dat u over het volgende beschikt voordat u begint:
 
 - Aspose.Words voor .NET geïnstalleerd op uw ontwikkelmachine.
 - Een Word-document met gekoppelde velden die u naar tekst wilt converteren.
-- Een documentmap waar u het getransformeerde document kunt opslaan.
+- Een documentmap waarin u het getransformeerde document kunt opslaan.
 
 ## Stap 2: De omgeving instellen
 Zorg ervoor dat u uw ontwikkelomgeving correct hebt geconfigureerd voor het gebruik van Aspose.Words voor .NET. Importeer de benodigde naamruimten en stel het pad in naar uw documentenmap.

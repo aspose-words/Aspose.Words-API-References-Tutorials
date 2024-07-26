@@ -1,5 +1,5 @@
 ---
-title: Salvando imagens de documentos em Aspose.Words para Java
+title: Salvando imagens de documentos em Aspose.Words for Java
 linktitle: Salvando imagens de documentos
 second_title: API de processamento de documentos Java Aspose.Words
 description: Aprenda como salvar imagens de documentos usando Aspose.Words for Java com nosso guia passo a passo abrangente. Personalize formatos, compactação e muito mais.

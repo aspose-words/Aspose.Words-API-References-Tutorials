@@ -19,7 +19,7 @@ Pastikan Anda telah menyiapkan lingkungan pengembangan Anda dengan Aspose.Words 
 Document doc = new Document();
 ```
 
-Pada langkah ini, kami membuat yang baru`Document` obyek.
+ Pada langkah ini, kami membuat yang baru`Document` obyek.
 
 ## Langkah 3: Edit properti tema
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
-Pada langkah ini, kita mengakses`Theme` objek dari`Document` objek untuk mendapatkan tema dokumen. Selanjutnya, kita dapat memodifikasi properti tema seperti font sekunder (`MinorFonts.Latin`) dan warna (`Colors.Hyperlink`).
+ Pada langkah ini, kita mengakses`Theme` objek dari`Document` objek untuk mendapatkan tema dokumen. Selanjutnya, kita dapat memodifikasi properti tema seperti font sekunder (`MinorFonts.Latin`) dan warna (`Colors.Hyperlink`).
 
 ## Langkah 4: Simpan dokumen
 
@@ -67,7 +67,7 @@ Untuk menyiapkan lingkungan, Anda perlu memastikan bahwa Anda telah menginstal d
 
 #### Bagaimana cara mengakses dan mengubah properti tema?
 
- Untuk mengakses dan mengubah properti tema, Anda dapat menggunakan`Theme` objek dari`Document` kelas. Dengan mengakses`Theme` objek, Anda dapat mengubah properti seperti font sekunder (`MinorFonts.Latin`) dan warna (`Colors.Hyperlink`). Tetapkan nilai yang diinginkan ke properti ini untuk menyesuaikan tema dokumen Anda.
+ Untuk mengakses dan mengubah properti tema, Anda dapat menggunakan`Theme` objek dari`Document` kelas. Dengan mengakses`Theme`objek, Anda dapat mengubah properti seperti font sekunder (`MinorFonts.Latin`) dan warna (`Colors.Hyperlink`). Tetapkan nilai yang diinginkan ke properti ini untuk menyesuaikan tema dokumen Anda.
 
 #### Apa manfaat mengatur properti tema di dokumen Word?
 
@@ -79,4 +79,4 @@ Mengatur properti tema di dokumen Word memungkinkan Anda menyesuaikan tampilan d
 
 #### Bisakah saya menyimpan dokumen yang dimodifikasi dalam format berbeda?
 
- Ya, Anda dapat menyimpan dokumen yang dimodifikasi dalam berbagai format yang didukung oleh Aspose.Words untuk .NET. Itu`Save` metode`Document` objek memungkinkan Anda menentukan format file keluaran, seperti DOCX, PDF, HTML, dan lainnya. Pilih format yang sesuai berdasarkan kebutuhan Anda.
+Ya, Anda dapat menyimpan dokumen yang dimodifikasi dalam berbagai format yang didukung oleh Aspose.Words untuk .NET. Itu`Save` metode`Document` objek memungkinkan Anda menentukan format file keluaran, seperti DOCX, PDF, HTML, dan lainnya. Pilih format yang sesuai berdasarkan kebutuhan Anda.

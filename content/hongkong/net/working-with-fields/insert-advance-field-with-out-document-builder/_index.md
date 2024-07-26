@@ -85,7 +85,7 @@ doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 
 #### Q：Aspose.Words 中的高階欄位是什麼？
 
-答：Aspose.Words 中的高階字段是一種特殊類型的字段，可讓您在 Word 文件中執行計算、包含條件和執行複雜的操作。它為創建動態和自訂欄位提供了極大的靈活性。
+答：Aspose.Words 中的高階字段是一種特殊類型的字段，可讓您在 Word 文件中執行計算、包含條件並執行複雜的操作。它為創建動態和自訂欄位提供了極大的靈活性。
 
 #### Q：如何在不使用 Aspose.Words 中的文件產生器的情況下在 Word 文件中插入進階欄位？
 

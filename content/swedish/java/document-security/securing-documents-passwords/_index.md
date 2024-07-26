@@ -77,7 +77,7 @@ Nej, Aspose.Words för Java har ingen inbyggd funktion för att återställa gl�
 
 Medan Aspose.Words för Java erbjuder robust lösenordsskydd, är det viktigt att använda starka och unika lösenord för optimal säkerhet.
 
-### Kan jag automatisera processen för ansökan om lösenord?
+### Kan jag automatisera ansökningsprocessen för lösenord?
 
 Ja, du kan automatisera lösenordsansökningsprocessen med hjälp av skript eller ditt föredragna programmeringsspråk.
 

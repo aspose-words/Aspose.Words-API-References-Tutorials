@@ -73,7 +73,7 @@ SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPass
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-## Adım 6: Belgeyi İmzalama
+## Adım 6: Belgeyi İmzalamak
 
  Son olarak şunu kullanın:`DigitalSignatureUtil.Sign` şifrelenmiş Word belgenizi imzalama yöntemi. Bu yöntem, giriş dosyası, çıkış dosyası, sertifika sahibi ve imza seçeneklerini gerektirir.
 

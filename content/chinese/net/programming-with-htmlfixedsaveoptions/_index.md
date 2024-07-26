@@ -12,5 +12,5 @@ Aspose.Words for .NET 教程旨在帮助您掌握在 .NET 项目中使用 Aspose
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [使用目标机器的字体](./use-font-from-target-machine/) | 了解如何使用 Aspose.Words for .NET 将 Word 文档转换为使用目标机器字体的固定 HTML。 |
-| [在单个文件中写入所有 CSS 规则](./write-all-css-rules-in-single-file/) | 了解如何通过使用 Aspose.Words for .NET 在单个文件中编写所有 CSS 规则将 Word 文档转换为固定 HTML。 |
+| [使用目标机器的字体](./use-font-from-target-machine/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中使用目标机器的字体。按照我们的分步指南进行无缝字体集成。 |
+| [在单个文件中写入所有 CSS 规则](./write-all-css-rules-in-single-file/) | 了解如何使用 Aspose.Words for .NET 将 Word 文档转换为 HTML，并在单个文件中包含所有 CSS 规则，以获得更清晰的代码和更易于维护。 |

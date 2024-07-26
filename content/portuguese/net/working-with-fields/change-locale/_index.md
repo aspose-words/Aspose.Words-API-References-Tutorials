@@ -102,7 +102,7 @@ R: Absolutamente! Aspose.Words oferece amplo suporte para estruturas de campos c
 
 #### P: O Aspose.Words oferece suporte a operações de atualização de campo?
 
-R: Sim, Aspose.Words permite que você atualize campos de acordo com uma programação. Você pode facilmente atualizar valores de campos, atualizar cálculos e realizar outras operações relacionadas a campos usando a API.
+R: Sim, Aspose.Words permite que você atualize campos de acordo com uma programação. Você pode atualizar facilmente valores de campos, atualizar cálculos e realizar outras operações relacionadas a campos usando a API.
 
 #### P: É possível converter campos em texto simples usando Aspose.Words?
 

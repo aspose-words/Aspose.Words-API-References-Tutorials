@@ -103,7 +103,7 @@ Dit codefragment laadt het document "Inhoudsopgave.docx" in de opgegeven map.
 
 #### Vraag: Hoe kan ik de tabbladen wijzigen die in de inhoudsopgave worden gebruikt met Aspose.Words voor .NET?
 
- A: Zodra het document is geladen, kunt u elke alinea van het document doorlopen en controleren of het is opgemaakt met de resultaatstijlen van de inhoudsopgave (TOC). Als een alinea is opgemaakt als inhoudsopgavestijl, kunt u de tabbladen wijzigen die worden gebruikt om de paginanummers uit te lijnen. In Aspose.Words voor .NET hebt u toegang tot de`ParagraphFormat` eigenschap van elke alinea om de tabstops op te halen en te wijzigen. Hier is een voorbeeld:
+A: Zodra het document is geladen, kunt u elke alinea van het document doorlopen en controleren of het is opgemaakt met de resultaatstijlen van de inhoudsopgave (TOC). Als een alinea is opgemaakt als inhoudsopgavestijl, kunt u de tabbladen wijzigen die worden gebruikt om de paginanummers uit te lijnen. In Aspose.Words voor .NET hebt u toegang tot de`ParagraphFormat` eigenschap van elke alinea om de tabstops op te halen en te wijzigen. Hier is een voorbeeld:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))

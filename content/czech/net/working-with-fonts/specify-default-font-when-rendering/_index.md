@@ -25,7 +25,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
 ## Krok 3: Nastavte výchozí písmo
- Nyní můžete určit výchozí písmo, které se má použít při vykreslování, vytvořením instance souboru`FontSettings` třídy a nastavení`DefaultFontName` vlastnictvím`DefaultFontSubstitution` namítat proti`DefaultFontSubstitution` objekt`SubstitutionSettings` z`FontSettings`.
+ Nyní můžete určit výchozí písmo, které se má použít při vykreslování, vytvořením instance souboru`FontSettings` třídy a nastavení`DefaultFontName` majetek z`DefaultFontSubstitution` namítat proti`DefaultFontSubstitution` objekt`SubstitutionSettings` z`FontSettings`.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -74,7 +74,7 @@ Odpověď: Ano, můžete určit výchozí písmo pro jiné výstupní formáty, 
 
 #### Otázka: Jak mohu zkontrolovat výchozí písmo určené v Aspose.Words?
 
- A: Chcete-li zkontrolovat výchozí písmo určené v Aspose.Words, můžete použít`DefaultFontName` vlastnictvím`PdfOptions` třídy a načte název nakonfigurovaného písma.
+ A: Chcete-li zkontrolovat výchozí písmo určené v Aspose.Words, můžete použít`DefaultFontName` majetek z`PdfOptions` třídy a načte název nakonfigurovaného písma.
 
 #### Otázka: Je možné určit jiné výchozí písmo pro každou část dokumentu?
 

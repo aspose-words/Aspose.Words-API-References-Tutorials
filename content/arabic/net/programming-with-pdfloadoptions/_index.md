@@ -16,5 +16,5 @@ url: /ar/net/programming-with-pdfloadoptions/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [تحميل ملف pdf مشفر](./load-encrypted-pdf/) | دليل خطوة بخطوة لتحميل ملف PDF مشفر باستخدام Aspose.Words for .NET. |
-| [تحميل نطاق الصفحات لملف PDF](./load-page-range-of-pdf/) | دليل خطوة بخطوة لتحميل نطاق صفحات PDF محدد باستخدام Aspose.Words for .NET. |
+| [تحميل ملف pdf مشفر](./load-encrypted-pdf/) | تعرف على كيفية تحميل ملفات PDF المشفرة باستخدام Aspose.Words لـ .NET من خلال برنامجنا التعليمي خطوة بخطوة. إتقان تشفير وفك تشفير ملفات PDF في أي وقت من الأوقات. |
+| [تحميل نطاق الصفحات لملف PDF](./load-page-range-of-pdf/) | تعرف على كيفية تحميل نطاقات صفحات معينة من ملف PDF باستخدام Aspose.Words for .NET في هذا البرنامج التعليمي الشامل خطوة بخطوة. مثالي لمطوري .NET. |

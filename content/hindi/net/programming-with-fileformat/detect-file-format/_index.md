@@ -2,21 +2,45 @@
 title: दस्तावेज़ फ़ाइल स्वरूप का पता लगाएँ
 linktitle: दस्तावेज़ फ़ाइल स्वरूप का पता लगाएँ
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words के साथ दस्तावेज़ फ़ाइल प्रारूप का पता लगाने के लिए चरण दर चरण गाइड।
+description: इस व्यापक, चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ फ़ाइल स्वरूपों का पता लगाना सीखें।
 type: docs
 weight: 10
 url: /hi/net/programming-with-fileformat/detect-file-format/
 ---
+## परिचय
 
-यह लेख Aspose.Words for .NET के साथ दस्तावेज़ फ़ाइल प्रारूप पहचान सुविधा का उपयोग करने के तरीके पर चरण-दर-चरण मार्गदर्शिका प्रदान करता है। हम कोड के प्रत्येक भाग को विस्तार से समझाएँगे। इस ट्यूटोरियल के अंत में, आप यह समझ पाएँगे कि विभिन्न दस्तावेज़ फ़ाइलों के प्रारूप का पता कैसे लगाया जाता है।
+आज की डिजिटल दुनिया में, विभिन्न दस्तावेज़ प्रारूपों को कुशलतापूर्वक प्रबंधित करना महत्वपूर्ण है। चाहे आप Word, PDF, HTML या अन्य प्रारूपों को संभाल रहे हों, इन फ़ाइलों को सही ढंग से पहचानना और संसाधित करना आपका बहुत समय और प्रयास बचा सकता है। इस ट्यूटोरियल में, हम .NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ फ़ाइल प्रारूपों का पता लगाने का तरीका जानेंगे। यह मार्गदर्शिका आपको आवश्यक सभी चीज़ों से परिचित कराएगी, जिसमें पूर्वापेक्षाओं से लेकर विस्तृत चरण-दर-चरण मार्गदर्शिका तक शामिल है।
 
-शुरू करने से पहले, सुनिश्चित करें कि आपने अपने प्रोजेक्ट में Aspose.Words for .NET लाइब्रेरी को इंस्टॉल और कॉन्फ़िगर किया है। आप Aspose वेबसाइट पर लाइब्रेरी और इंस्टॉलेशन निर्देश पा सकते हैं।
+## आवश्यक शर्तें
 
-## चरण 1: निर्देशिकाएँ परिभाषित करें
+इससे पहले कि हम कोड में उतरें, आइए सुनिश्चित करें कि आपके पास वह सब कुछ है जो आपको चाहिए:
 
- शुरू करने के लिए, आपको उन निर्देशिकाओं को परिभाषित करना होगा जहाँ आप फ़ाइलों को उनके प्रारूप के अनुसार संग्रहीत करना चाहते हैं।`"YOUR DOCUMENT DIRECTORY"`आपके दस्तावेज़ निर्देशिका के वास्तविक पथ के साथ। यदि वे पहले से मौजूद नहीं हैं, तो हम "समर्थित", "अज्ञात", "एन्क्रिप्टेड" और "प्री97" निर्देशिकाएँ बनाते हैं।
+-  .NET के लिए Aspose.Words: आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/net/) सुनिश्चित करें कि आपके पास वैध लाइसेंस है। यदि नहीं, तो आप एक वैध लाइसेंस प्राप्त कर सकते हैं।[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/).
+- विजुअल स्टूडियो: कोई भी नवीनतम संस्करण ठीक काम करेगा।
+- .NET फ्रेमवर्क: सुनिश्चित करें कि आपके पास सही संस्करण स्थापित है।
+
+## नामस्थान आयात करें
+
+आरंभ करने के लिए, आपको अपने प्रोजेक्ट में आवश्यक नामस्थान आयात करने होंगे:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.FileFormats;
+using Aspose.Words.FileFormats.Util;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+```
+
+आइये इस उदाहरण को कई चरणों में विभाजित करें ताकि इसका अनुसरण करना आसान हो जाए।
+
+## चरण 1: निर्देशिकाएँ सेट करें
+
+सबसे पहले, हमें निर्देशिकाएं स्थापित करनी होंगी जहां फाइलों को उनके प्रारूप के आधार पर क्रमबद्ध किया जाएगा।
+
+```csharp
+// दस्तावेज़ निर्देशिका का पथ.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 string supportedDir = dataDir + "Supported";
 string unknownDir = dataDir + "Unknown";
@@ -24,207 +48,127 @@ string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
 // यदि निर्देशिकाएं पहले से मौजूद नहीं हैं तो उन्हें बनाएं।
-if (Directory.Exists(supportedDir) == false)
-Directory.CreateDirectory(supportedDir);
-if (Directory.Exists(unknownDir) == false)
-Directory.CreateDirectory(unknownDir);
-if (Directory.Exists(encryptedDir) == false)
-Directory.CreateDirectory(encryptedDir);
-if (Directory.Exists(pre97Dir) == false)
-Directory.CreateDirectory(pre97Dir);
+if (!Directory.Exists(supportedDir))
+    Directory.CreateDirectory(supportedDir);
+if (!Directory.Exists(unknownDir))
+    Directory.CreateDirectory(unknownDir);
+if (!Directory.Exists(encryptedDir))
+    Directory.CreateDirectory(encryptedDir);
+if (!Directory.Exists(pre97Dir))
+    Directory.CreateDirectory(pre97Dir);
 ```
 
-## चरण 2: फ़ाइलें ब्राउज़ करें
+## चरण 2: फ़ाइलों की सूची प्राप्त करें
 
- फिर हम उपयोग करते हैं`GetFiles` की विधि`Directory` निर्दिष्ट निर्देशिका में फ़ाइलों की सूची प्राप्त करने के लिए क्लास। हम एक का भी उपयोग करते हैं`Where` "भ्रष्ट document.docx" नामक एक विशिष्ट फ़ाइल को बाहर करने के लिए खंड।
+इसके बाद, हम निर्देशिका से फ़ाइलों की एक सूची प्राप्त करेंगे, जिसमें कोई भी दूषित दस्तावेज़ शामिल नहीं होगा।
 
 ```csharp
-IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
+IEnumerable<string> fileList = Directory.GetFiles(dataDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## चरण 3: प्रत्येक फ़ाइल का प्रारूप पता करें
+## चरण 3: फ़ाइल स्वरूपों का पता लगाएं
 
- हम सूची में प्रत्येक फ़ाइल के माध्यम से लूप करते हैं और उपयोग करते हैं`DetectFileFormat` की विधि`FileFormatUtil` फ़ाइल के प्रारूप का पता लगाने के लिए क्लास का उपयोग करें। हम पता लगाए गए दस्तावेज़ प्रकार को भी प्रदर्शित करते हैं।
+अब, हम प्रत्येक फ़ाइल को दोहराते हैं और Aspose.Words का उपयोग करके उसके प्रारूप का पता लगाते हैं।
 
 ```csharp
 foreach (string fileName in fileList)
 {
-string nameOnly = Path. GetFileName(fileName);
-Console.Write(nameOnly);
+    string nameOnly = Path.GetFileName(fileName);
 
-FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
+    Console.Write(nameOnly);
 
-// दस्तावेज़ प्रकार प्रदर्शित करें
-switch (info.LoadFormat)
-{
-LoadFormat.Doc box:
-Console.WriteLine("\tDocument Microsoft Word 97-2003.");
-break;
-LoadFormat.Dot box:
-Console.WriteLine("\tMicrosoft Word 97-2003 template.");
-break;
-LoadFormat.Docx box:
-Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
-break;
-// ... अन्य समर्थित दस्तावेज़ स्वरूपों के लिए मामले जोड़ें
-LoadFormat.Unknown case:
-Console.WriteLine("\tFormat in
+    FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-known.");
-break;
-}
+    // दस्तावेज़ प्रकार प्रदर्शित करें
+    switch (info.LoadFormat)
+    {
+        case LoadFormat.Doc:
+            Console.WriteLine("\tMicrosoft Word 97-2003 document.");
+            break;
+        case LoadFormat.Dot:
+            Console.WriteLine("\tMicrosoft Word 97-2003 template.");
+            break;
+        case LoadFormat.Docx:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Document.");
+            break;
+        case LoadFormat.Docm:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Document.");
+            break;
+        case LoadFormat.Dotx:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Template.");
+            break;
+        case LoadFormat.Dotm:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Template.");
+            break;
+        case LoadFormat.FlatOpc:
+            Console.WriteLine("\tFlat OPC document.");
+            break;
+        case LoadFormat.Rtf:
+            Console.WriteLine("\tRTF format.");
+            break;
+        case LoadFormat.WordML:
+            Console.WriteLine("\tMicrosoft Word 2003 WordprocessingML format.");
+            break;
+        case LoadFormat.Html:
+            Console.WriteLine("\tHTML format.");
+            break;
+        case LoadFormat.Mhtml:
+            Console.WriteLine("\tMHTML (Web archive) format.");
+            break;
+        case LoadFormat.Odt:
+            Console.WriteLine("\tOpenDocument Text.");
+            break;
+        case LoadFormat.Ott:
+            Console.WriteLine("\tOpenDocument Text Template.");
+            break;
+        case LoadFormat.DocPreWord60:
+            Console.WriteLine("\tMS Word 6 or Word 95 format.");
+            break;
+        case LoadFormat.Unknown:
+            Console.WriteLine("\tUnknown format.");
+            break;
+    }
 
-if (info.IsEncrypted)
-{
-Console.WriteLine("\tAn encrypted document.");
-File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
-}
-else
-{
-switch (info.LoadFormat)
-{
-LoadFormat.DocPreWord60 box:
-File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
-break;
-LoadFormat.Unknown case:
-File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
-break;
-default:
-File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
-break;
-}
-}
+    if (info.IsEncrypted)
+    {
+        Console.WriteLine("\tAn encrypted document.");
+        File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
+    }
+    else
+    {
+        switch (info.LoadFormat)
+        {
+            case LoadFormat.DocPreWord60:
+                File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
+                break;
+            case LoadFormat.Unknown:
+                File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
+                break;
+            default:
+                File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
+                break;
+        }
+    }
 }
 ```
 
-बस इतना ही ! आपने .NET के लिए Aspose.Words का उपयोग करके विभिन्न दस्तावेज़ फ़ाइलों के प्रारूप का सफलतापूर्वक पता लगा लिया है।
+## निष्कर्ष
 
-### .NET के लिए Aspose.Words के साथ फ़ाइल प्रारूप का पता लगाने के लिए उदाहरण स्रोत कोड
+.NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ फ़ाइल स्वरूपों का पता लगाना एक सीधी प्रक्रिया है। अपनी निर्देशिकाएँ सेट करके, अपनी फ़ाइलों की सूची प्राप्त करके, और फ़ाइल स्वरूपों का पता लगाने के लिए Aspose.Words का उपयोग करके, आप अपने दस्तावेज़ों को कुशलतापूर्वक व्यवस्थित और प्रबंधित कर सकते हैं। यह दृष्टिकोण न केवल समय बचाता है बल्कि यह भी सुनिश्चित करता है कि आप विभिन्न दस्तावेज़ स्वरूपों को सही ढंग से संभालें।
 
-```csharp
+## अक्सर पूछे जाने वाले प्रश्न
 
-	// दस्तावेज़ निर्देशिका का पथ.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	string supportedDir = dataDir + "Supported";
-	string unknownDir = dataDir + "Unknown";
-	string encryptedDir = dataDir + "Encrypted";
-	string pre97Dir = dataDir + "Pre97";
+### .NET के लिए Aspose.Words क्या है?
+Aspose.Words for .NET, Word दस्तावेज़ों के साथ प्रोग्रामेटिक रूप से काम करने के लिए एक शक्तिशाली लाइब्रेरी है। यह डेवलपर्स को विभिन्न प्रारूपों में दस्तावेज़ बनाने, संशोधित करने और परिवर्तित करने की अनुमति देता है।
 
-	// यदि निर्देशिकाएं पहले से मौजूद नहीं हैं तो उन्हें बनाएं।
-	if (Directory.Exists(supportedDir) == false)
-		Directory.CreateDirectory(supportedDir);
-	if (Directory.Exists(unknownDir) == false)
-		Directory.CreateDirectory(unknownDir);
-	if (Directory.Exists(encryptedDir) == false)
-		Directory.CreateDirectory(encryptedDir);
-	if (Directory.Exists(pre97Dir) == false)
-		Directory.CreateDirectory(pre97Dir);
+### क्या Aspose.Words एन्क्रिप्टेड दस्तावेज़ों का पता लगा सकता है?
+हां, Aspose.Words यह पता लगा सकता है कि कोई दस्तावेज़ एन्क्रिप्टेड है या नहीं और आप ऐसे दस्तावेज़ों को तदनुसार संभाल सकते हैं।
 
-	
-	IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
-	
-	foreach (string fileName in fileList)
-	{
-		string nameOnly = Path.GetFileName(fileName);
-		
-		Console.Write(nameOnly);
-		
-		FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
+### Aspose.Words किन प्रारूपों का पता लगा सकता है?
+Aspose.Words DOC, DOCX, RTF, HTML, MHTML, ODT, और कई अन्य सहित प्रारूपों की एक विस्तृत श्रृंखला का पता लगा सकता है।
 
-		// दस्तावेज़ प्रकार प्रदर्शित करें
-		switch (info.LoadFormat)
-		{
-			case LoadFormat.Doc:
-				Console.WriteLine("\tMicrosoft Word 97-2003 document.");
-				break;
-			case LoadFormat.Dot:
-				Console.WriteLine("\tMicrosoft Word 97-2003 template.");
-				break;
-			case LoadFormat.Docx:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Document.");
-				break;
-			case LoadFormat.Docm:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Document.");
-				break;
-			case LoadFormat.Dotx:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Template.");
-				break;
-			case LoadFormat.Dotm:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Template.");
-				break;
-			case LoadFormat.FlatOpc:
-				Console.WriteLine("\tFlat OPC document.");
-				break;
-			case LoadFormat.Rtf:
-				Console.WriteLine("\tRTF format.");
-				break;
-			case LoadFormat.WordML:
-				Console.WriteLine("\tMicrosoft Word 2003 WordprocessingML format.");
-				break;
-			case LoadFormat.Html:
-				Console.WriteLine("\tHTML format.");
-				break;
-			case LoadFormat.Mhtml:
-				Console.WriteLine("\tMHTML (Web archive) format.");
-				break;
-			case LoadFormat.Odt:
-				Console.WriteLine("\tOpenDocument Text.");
-				break;
-			case LoadFormat.Ott:
-				Console.WriteLine("\tOpenDocument Text Template.");
-				break;
-			case LoadFormat.DocPreWord60:
-				Console.WriteLine("\tMS Word 6 or Word 95 format.");
-				break;
-			case LoadFormat.Unknown:
-				Console.WriteLine("\tUnknown format.");
-				break;
-		}
-		
+### मैं Aspose.Words के लिए अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूं?
+ आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[Aspose खरीद](https://purchase.aspose.com/temporary-license/) पृष्ठ।
 
-		if (info.IsEncrypted)
-		{
-			Console.WriteLine("\tAn encrypted document.");
-			File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
-		}
-		else
-		{
-			switch (info.LoadFormat)
-			{
-				case LoadFormat.DocPreWord60:
-					File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
-					break;
-				case LoadFormat.Unknown:
-					File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
-					break;
-				default:
-					File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
-					break;
-			}
-		}
-	}
-	
-
-```
-
-### दस्तावेज़ फ़ाइल प्रारूप पहचान के लिए अक्सर पूछे जाने वाले प्रश्न
-
-#### .NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ फ़ाइल के प्रारूप का पता कैसे लगाएं?
-
- .NET के लिए Aspose.Words का उपयोग करके दस्तावेज़ फ़ाइल के प्रारूप का पता लगाने के लिए, आप ट्यूटोरियल में दिए गए चरणों का पालन कर सकते हैं।`DetectFileFormat` की विधि`FileFormatUtil` क्लास आपको दस्तावेज़ फ़ाइल के प्रारूप का पता लगाने की अनुमति देगा। यह आपको यह निर्धारित करने की अनुमति देगा कि यह Microsoft Word 97-2003 दस्तावेज़ है, टेम्पलेट है, Office Open XML WordprocessingML दस्तावेज़ है या अन्य समर्थित प्रारूप है। ट्यूटोरियल में प्रदान किया गया कोड आपको इस सुविधा को लागू करने में मार्गदर्शन करेगा।
-
-#### Aspose.Words for .NET किस दस्तावेज़ प्रारूप का समर्थन करता है?
-
-Aspose.Words for .NET विभिन्न प्रकार के दस्तावेज़ स्वरूपों का समर्थन करता है, जिसमें Microsoft Word 97-2003 दस्तावेज़ (DOC), टेम्पलेट्स (DOT), Office Open XML WordprocessingML दस्तावेज़ (DOCX), Office Open XML WordprocessingML दस्तावेज़ मैक्रोज़ के साथ (DOCM), Office Open XML WordprocessingML टेम्पलेट्स मैक्रोज़ के बिना (DOTX), Office Open XML WordprocessingML टेम्पलेट्स मैक्रोज़ के साथ (DOTM), फ़्लैट OPC दस्तावेज़, RTF दस्तावेज़, Microsoft Word 2003 WordprocessingML दस्तावेज़, HTML दस्तावेज़, MHTML (वेब संग्रह) दस्तावेज़, OpenDocument Text (ODT) दस्तावेज़, OpenDocument Text (OTT) टेम्पलेट्स, MS Word 6 या Word 95 दस्तावेज़, और अज्ञात दस्तावेज़ स्वरूप शामिल हैं।
-
-#### प्रारूप पहचान के दौरान एन्क्रिप्टेड दस्तावेज़ फ़ाइलों को कैसे संभालें?
-
- किसी दस्तावेज़ फ़ाइल के प्रारूप का पता लगाते समय, आप इसका उपयोग कर सकते हैं`IsEncrypted` की संपत्ति`FileFormatInfo` ऑब्जेक्ट का उपयोग करके जाँच करें कि फ़ाइल एन्क्रिप्टेड है या नहीं। यदि फ़ाइल एन्क्रिप्टेड है, तो आप इस विशिष्ट मामले को संभालने के लिए अतिरिक्त कदम उठा सकते हैं, जैसे कि फ़ाइल को एन्क्रिप्टेड दस्तावेज़ों के लिए समर्पित निर्देशिका में कॉपी करना। आप इसका उपयोग कर सकते हैं`File.Copy` ऐसा करने की विधि.
-
-#### जब किसी दस्तावेज़ का प्रारूप अज्ञात हो तो क्या कार्रवाई की जानी चाहिए?
-
-जब किसी दस्तावेज़ का प्रारूप अज्ञात हो, तो आप इसे अपने आवेदन के लिए विशिष्ट तरीके से संभालने का निर्णय ले सकते हैं। ट्यूटोरियल में दिए गए उदाहरण में, दस्तावेज़ को अज्ञात प्रारूप के दस्तावेज़ों के लिए समर्पित एक विशिष्ट निर्देशिका में कॉपी किया जाता है। आप अपनी विशिष्ट आवश्यकताओं के अनुरूप इस क्रिया को अनुकूलित कर सकते हैं।
-
-#### क्या .NET के लिए Aspose.Words की कोई अन्य विशेषताएं हैं जिनका उपयोग दस्तावेज़ प्रारूप पहचान के साथ किया जा सकता है?
-
-हां, .NET के लिए Aspose.Words Word दस्तावेज़ों को संसाधित करने और उनमें हेरफेर करने के लिए कई अन्य सुविधाएँ प्रदान करता है। उदाहरण के लिए, आप दस्तावेज़ों से टेक्स्ट, छवियाँ या मेटाडेटा निकालने, फ़ॉर्मेटिंग परिवर्तन लागू करने, दस्तावेज़ों को मर्ज करने, दस्तावेज़ों को अलग-अलग फ़ॉर्मेट में बदलने आदि के लिए लाइब्रेरी का उपयोग कर सकते हैं।
+### मैं Aspose.Words के लिए दस्तावेज़ कहां पा सकता हूं?
+ Aspose.Words के लिए दस्तावेज़ यहां पाया जा सकता है[यहाँ](https://reference.aspose.com/words/net/).

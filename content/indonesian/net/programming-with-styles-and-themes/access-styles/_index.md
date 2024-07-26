@@ -30,7 +30,7 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- Pada langkah ini, kita mengakses koleksi gaya dokumen menggunakan`Styles`Properti. Koleksi ini berisi semua gaya yang ada dalam dokumen.
+ Pada langkah ini, kita mengakses koleksi gaya dokumen menggunakan`Styles` Properti. Koleksi ini berisi semua gaya yang ada dalam dokumen.
 
 ## Langkah 4: Telusuri Gaya
 
@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Kesimpulan
 
- Dalam tutorial ini, kita mempelajari cara mengambil dan mengakses gaya yang ada dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan memanfaatkan`Styles` properti dari`Document`objek, kami memperoleh kumpulan gaya dan mengulanginya untuk menampilkan namanya. Fitur ini memberikan wawasan berharga tentang gaya yang digunakan dalam dokumen dan memungkinkan penyesuaian dan analisis lebih lanjut.
+ Dalam tutorial ini, kita mempelajari cara mengambil dan mengakses gaya yang ada dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan memanfaatkan`Styles` properti dari`Document` objek, kami memperoleh kumpulan gaya dan mengulanginya untuk menampilkan namanya. Fitur ini memberikan wawasan berharga tentang gaya yang digunakan dalam dokumen dan memungkinkan penyesuaian dan analisis lebih lanjut.
 
 Dengan memanfaatkan API Aspose.Words for .NET yang kuat, pengembang dapat dengan mudah memanipulasi dan bekerja dengan gaya dokumen, menawarkan kontrol yang lebih baik atas pemformatan dan pemrosesan dokumen.
 

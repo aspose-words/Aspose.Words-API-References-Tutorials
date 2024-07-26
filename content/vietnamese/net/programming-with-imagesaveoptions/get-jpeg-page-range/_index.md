@@ -2,84 +2,85 @@
 title: Nhận phạm vi trang Jpeg
 linktitle: Nhận phạm vi trang Jpeg
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách lấy nhiều trang JPEG bằng Aspose.Words cho .NET. Hướng dẫn hoàn chỉnh để trích xuất hình ảnh tùy chỉnh.
+description: Chuyển đổi các trang cụ thể của tài liệu Word sang JPEG bằng cài đặt tùy chỉnh bằng Aspose.Words cho .NET. Tìm hiểu cách điều chỉnh độ sáng, độ tương phản và độ phân giải theo từng bước.
 type: docs
 weight: 10
 url: /vi/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng ta sẽ khám phá mã nguồn C# được cung cấp cho tính năng "Nhận phạm vi trang JPEG" với Aspose.Words cho .NET. Tính năng này cho phép bạn chuyển đổi một phạm vi trang cụ thể của tài liệu thành hình ảnh ở định dạng JPEG.
+Việc chuyển đổi tài liệu Word thành hình ảnh có thể cực kỳ hữu ích, cho dù bạn đang tạo hình thu nhỏ, xem trước tài liệu trực tuyến hay chia sẻ nội dung ở định dạng dễ truy cập hơn. Với Aspose.Words for .NET, bạn có thể dễ dàng chuyển đổi các trang cụ thể của tài liệu Word sang định dạng JPEG trong khi tùy chỉnh các cài đặt khác nhau như độ sáng, độ tương phản và độ phân giải. Chúng ta hãy đi sâu vào cách đạt được điều này từng bước một!
 
-## Bước 1: Thiết lập môi trường
+## Điều kiện tiên quyết
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã thiết lập môi trường phát triển của mình với Aspose.Words for .NET. Đảm bảo bạn đã thêm các tham chiếu cần thiết và nhập các không gian tên thích hợp.
+Trước khi chúng ta bắt đầu, bạn sẽ cần chuẩn bị sẵn một số thứ:
 
-## Bước 2: Tải tài liệu
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Môi trường phát triển AC# như Visual Studio.
+- Tài liệu mẫu: Một tài liệu Word để làm việc. Bạn có thể sử dụng bất kỳ tệp .docx nào cho hướng dẫn này.
+- Kiến thức C# cơ bản: Làm quen với lập trình C#.
+
+Khi bạn đã sẵn sàng những thứ này, hãy bắt đầu!
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words cho .NET, bạn sẽ cần nhập các vùng tên cần thiết ở đầu mã của mình. Điều này đảm bảo bạn có quyền truy cập vào tất cả các lớp và phương thức cần thiết để thao tác tài liệu.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
+## Bước 1: Tải tài liệu của bạn
+
+Đầu tiên chúng ta cần tải tài liệu Word muốn chuyển đổi. Giả sử tài liệu của chúng tôi được đặt tên`Rendering.docx` và nằm trong thư mục được chỉ định bởi trình giữ chỗ`YOUR DOCUMENT DIRECTORY`.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Ở bước này, chúng ta tải tài liệu bằng cách sử dụng`Document` phương thức và chuyển đường dẫn đến tệp DOCX để tải.
+ Mã này khởi tạo đường dẫn đến tài liệu của bạn và tải nó vào Aspose.Words`Document` sự vật.
 
-## Bước 3: Định cấu hình tùy chọn sao lưu ảnh
+## Bước 2: Thiết lập ImageSaveOptions
+
+ Tiếp theo, chúng ta sẽ thiết lập`ImageSaveOptions` để chỉ định cách chúng tôi muốn tạo JPEG. Điều này bao gồm cài đặt phạm vi trang, độ sáng, độ tương phản và độ phân giải của hình ảnh.
 
 ```csharp
 ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
-options. PageSet = new PageSet(0);
-options. ImageBrightness = 0.3f;
-options. ImageContrast = 0.7f;
-options. HorizontalResolution = 72f;
+options.PageSet = new PageSet(0); // Chỉ chuyển đổi trang đầu tiên
+options.ImageBrightness = 0.3f;   // Đặt độ sáng
+options.ImageContrast = 0.7f;     // Đặt độ tương phản
+options.HorizontalResolution = 72f; // Đặt độ phân giải
 ```
 
- Trong bước này, chúng tôi định cấu hình các tùy chọn sao lưu cho hình ảnh. Chúng tôi tạo ra một cái mới`ImageSaveOptions` đối tượng chỉ định định dạng lưu mong muốn, ở đây là "Jpeg" cho định dạng JPEG. Chúng tôi cũng đặt phạm vi trang cần chuyển đổi bằng cách sử dụng`PageSet`sự vật. Cuối cùng, chúng ta điều chỉnh độ sáng và độ tương phản của hình ảnh bằng cách sử dụng`ImageBrightness`Và`ImageContrast` các thuộc tính tương ứng. Chúng tôi cũng thay đổi độ phân giải ngang bằng cách sử dụng`HorizontalResolution` tài sản.
+## Bước 3: Lưu tài liệu dưới dạng JPEG
 
-## Bước 4: Sao lưu hình ảnh
+Cuối cùng, chúng tôi lưu tài liệu dưới dạng tệp JPEG bằng các cài đặt mà chúng tôi đã xác định.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
 ```
 
- Ở bước cuối cùng này, chúng tôi lưu hình ảnh của phạm vi trang được chỉ định ở định dạng JPEG bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra, cùng với các tùy chọn lưu được chỉ định.
-
-Bây giờ bạn có thể chạy mã nguồn để chuyển đổi một phạm vi trang cụ thể trong tài liệu của mình sang hình ảnh JPEG. Tệp kết quả sẽ được lưu trong thư mục được chỉ định với tên "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg".
-
-### Mã nguồn mẫu cho Nhận phạm vi trang Jpeg bằng Aspose.Words For .NET
-
-```csharp 
- // Đường dẫn đến thư mục tài liệu của bạn
- string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-Document doc = new Document(dataDir + "Rendering.docx");
-
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
-
-// Đặt "PageSet" thành "0" để chỉ chuyển đổi trang đầu tiên của tài liệu.
-options.PageSet = new PageSet(0);
-
-// Thay đổi độ sáng và độ tương phản của hình ảnh.
-// Cả hai đều có thang điểm 0-1 và ở mức 0,5 theo mặc định.
-options.ImageBrightness = 0.3f;
-options.ImageContrast = 0.7f;
-
-// Thay đổi độ phân giải ngang.
-// Giá trị mặc định cho các thuộc tính này là 96,0, cho độ phân giải 96dpi.
-options.HorizontalResolution = 72f;
-
-doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
-            
-        
-```
+ Mã này lưu trang đầu tiên của`Rendering.docx` dưới dạng hình ảnh JPEG với cài đặt độ sáng, độ tương phản và độ phân giải được chỉ định.
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng ta đã khám phá chức năng lấy phạm vi trang JPEG bằng Aspose.Words cho .NET. Chúng tôi đã học cách chuyển đổi một phạm vi trang cụ thể của tài liệu thành hình ảnh ở định dạng JPEG, đồng thời tùy chỉnh các tùy chọn lưu.
+Và bạn có nó rồi đấy! Bạn đã chuyển đổi thành công một trang cụ thể của tài liệu Word thành hình ảnh JPEG với các cài đặt tùy chỉnh bằng Aspose.Words cho .NET. Quá trình này có thể được điều chỉnh để phù hợp với nhiều nhu cầu khác nhau, cho dù bạn đang chuẩn bị hình ảnh cho trang web, tạo bản xem trước tài liệu hay hơn thế nữa.
 
-Tính năng này hữu ích khi bạn muốn trích xuất các trang cụ thể từ tài liệu và lưu chúng dưới dạng hình ảnh JPEG. Bạn cũng có thể điều chỉnh độ sáng, độ tương phản và độ phân giải ngang của hình ảnh để đạt được kết quả được cá nhân hóa.
+## Câu hỏi thường gặp
 
-Aspose.Words for .NET cung cấp nhiều tính năng nâng cao để thao tác và tạo tài liệu. Lấy một phạm vi trang JPEG là một trong nhiều công cụ mạnh mẽ mà nó cung cấp cho bạn.
+### Tôi có thể chuyển đổi nhiều trang cùng một lúc không?
+ Có, bạn có thể chỉ định một loạt trang bằng cách sử dụng`PageSet` tài sản ở`ImageSaveOptions`.
 
-Vui lòng tích hợp tính năng này vào các dự án Aspose.Words for .NET để có được hình ảnh JPEG chất lượng cao từ tài liệu của bạn.
+### Làm cách nào để điều chỉnh chất lượng hình ảnh?
+ Bạn có thể điều chỉnh chất lượng của JPEG bằng cách sử dụng`JpegQuality` tài sản ở`ImageSaveOptions`.
+
+### Tôi có thể lưu ở các định dạng hình ảnh khác không?
+ Có, Aspose.Words hỗ trợ nhiều định dạng hình ảnh khác nhau như PNG, BMP và TIFF. Thay đổi`SaveFormat` TRONG`ImageSaveOptions` tương ứng.
+
+### Có cách nào để xem trước hình ảnh trước khi lưu không?
+Bạn sẽ cần phải triển khai cơ chế xem trước một cách riêng biệt vì Aspose.Words không cung cấp tính năng xem trước tích hợp sẵn.
+
+### Làm cách nào để có được giấy phép tạm thời cho Aspose.Words?
+ Bạn có thể yêu cầu một[giấy phép tạm thời ở đây](https://purchase.aspose.com/temporary-license/).

@@ -11,7 +11,7 @@ Belge işleme alanında Aspose.Words for Python, belge bölümlerini ve düzenin
 
 ## Aspose.Words Python Kütüphanesine Giriş
 
-Aspose.Words for Python, geliştiricilerin Microsoft Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve işlemesine olanak tanıyan, zengin özelliklere sahip bir kitaplıktır. Belge bölümlerini, düzenini, biçimlendirmesini ve içeriğini yönetmek için bir dizi araç sağlar.
+Aspose.Words for Python, geliştiricilerin Microsoft Word belgelerini programlı bir şekilde oluşturmasına, değiştirmesine ve işlemesine olanak tanıyan, zengin özelliklere sahip bir kitaplıktır. Belge bölümlerini, düzenini, biçimlendirmesini ve içeriğini yönetmek için bir dizi araç sağlar.
 
 ## Yeni Bir Belge Oluşturma
 

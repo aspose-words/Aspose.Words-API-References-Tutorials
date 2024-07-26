@@ -60,7 +60,7 @@ doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons appris à supprimer les commentaires d'un fichier PDF à l'aide d'Aspose.Words for .NET. En utilisant les options de mise en page appropriées, nous avons pu masquer les commentaires lors de la génération du PDF. Aspose.Words for .NET offre une grande flexibilité pour manipuler des fichiers Word et les convertir en différents formats, dont PDF. Vous pouvez désormais appliquer ces connaissances pour supprimer des commentaires dans vos propres fichiers PDF à l'aide d'Aspose.Words for .NET.
+Dans ce didacticiel, nous avons appris à supprimer les commentaires d'un fichier PDF à l'aide d'Aspose.Words pour .NET. En utilisant les options de mise en page appropriées, nous avons pu masquer les commentaires lors de la génération du PDF. Aspose.Words for .NET offre une grande flexibilité pour manipuler des fichiers Word et les convertir en différents formats, dont PDF. Vous pouvez désormais appliquer ces connaissances pour supprimer des commentaires dans vos propres fichiers PDF à l'aide d'Aspose.Words for .NET.
 
 ### FAQ pour supprimer des commentaires dans un fichier pdf
 
@@ -74,7 +74,7 @@ Document doc = new Document("path/to/the/document.docx");
 
 #### Q : Comment masquer les commentaires dans un PDF généré avec Aspose.Words for .NET ?
 
- R : Utilisez le`CommentDisplayMode` propriété du`LayoutOptions` objet pour configurer la manière dont les commentaires sont affichés lors de la génération du PDF. Pour masquer les commentaires, définissez cette propriété sur`CommentDisplayMode.Hide`.
+ R : Utilisez le`CommentDisplayMode` propriété du`LayoutOptions` objet pour configurer la façon dont les commentaires sont affichés lors de la génération du PDF. Pour masquer les commentaires, définissez cette propriété sur`CommentDisplayMode.Hide`.
 
 ```csharp
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;

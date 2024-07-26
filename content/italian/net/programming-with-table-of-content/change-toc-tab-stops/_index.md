@@ -103,7 +103,7 @@ Questo frammento di codice carica il documento "Sommario.docx" situato nella dir
 
 #### D: Come posso modificare le schede utilizzate nel sommario utilizzando Aspose.Words per .NET?
 
- R: Una volta caricato il documento, è possibile scorrere ogni paragrafo del documento e verificare se è formattato utilizzando gli stili di risultato del sommario (TOC). Se un paragrafo è formattato come stile sommario, puoi modificare le tabulazioni utilizzate per allineare i numeri di pagina. In Aspose.Words per .NET, puoi accedere a`ParagraphFormat` proprietà di ogni paragrafo per recuperare e modificare le tabulazioni. Ecco un esempio:
+R: Una volta caricato il documento, è possibile scorrere ogni paragrafo del documento e verificare se è formattato utilizzando gli stili di risultato del sommario (TOC). Se un paragrafo è formattato come stile sommario, puoi modificare le tabulazioni utilizzate per allineare i numeri di pagina. In Aspose.Words per .NET, puoi accedere a`ParagraphFormat` proprietà di ogni paragrafo per recuperare e modificare le tabulazioni. Ecco un esempio:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))

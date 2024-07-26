@@ -16,13 +16,13 @@ Les exemples de code fournis dans les didacticiels vous aideront à comprendre l
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Contrôle du contenu du type de case à cocher](./check-box-type-content-control/) | Découvrez comment créer un contrôle de contenu de type case à cocher dans un document Word à l’aide d’Aspose.Words pour .NET. |
+| [Contrôle du contenu du type de case à cocher](./check-box-type-content-control/) | Découvrez comment ajouter un contrôle de contenu de type case à cocher dans les documents Word à l'aide d'Aspose.Words pour .NET avec ce didacticiel détaillé étape par étape. |
 | [Case à cocher État actuel de la situation](./current-state-of-check-box/) | Découvrez comment récupérer et définir l’état actuel d’un contrôle de contenu de case à cocher dans un document Word à l’aide d’Aspose.Words pour .NET. |
 | [Modifier les contrôles de contenu](./modify-content-controls/) | Découvrez comment modifier le texte, les listes déroulantes et les images dans les contrôles de contenu d'un document Word à l'aide d'Aspose.Words pour .NET. |
 | [Contrôle du contenu de la zone de liste déroulante](./combo-box-content-control/) | Découvrez comment créer un contrôle de contenu Combo Box dans un document Word à l’aide d’Aspose.Words pour .NET. |
 | [Contrôle du contenu de la zone de texte enrichi](./rich-text-box-content-control/) | Découvrez comment créer un contrôle de contenu de zone de texte enrichi dans un document Word à l'aide d'Aspose.Words for .NET, permettant le formatage et le style du texte. |
 | [Définir la couleur du contrôle du contenu](./set-content-control-color/) | Découvrez comment définir la couleur d'un contrôle de contenu dans un document Word à l'aide d'Aspose.Words for .NET, en personnalisant son apparence. |
-| [Effacer le contrôle du contenu](./clear-contents-control/) | Découvrez comment effacer le contenu d'un contrôle dans un document Word à l'aide d'Aspose.Words pour .NET. |
+| [Effacer le contrôle du contenu](./clear-contents-control/) | Découvrez comment effacer le contrôle du contenu dans un document Word à l'aide d'Aspose.Words for .NET avec notre guide étape par étape. |
 | [Lier SDT à une partie XML personnalisée](./bind-sdt-to-custom-xml-part/) | Découvrez comment lier un SDT à une partie XML personnalisée à l'aide d'Aspose.Words pour .NET. |
 | [Définir le style de contrôle du contenu](./set-content-control-style/) | Découvrez comment définir le style d'un contrôle de contenu dans un document Word à l'aide d'Aspose.Words for .NET, en appliquant une mise en forme cohérente. |
 | [Création d'une section répétitive de tableau mappée à une partie XML personnalisée](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Découvrez comment créer un tableau avec une section répétitive mappée à un CustomXmlPart dans un document Word à l'aide d'Aspose.Words pour .NET. |

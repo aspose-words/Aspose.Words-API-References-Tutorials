@@ -2,92 +2,83 @@
 title: WMF로 이미지 저장
 linktitle: WMF로 이미지 저장
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 RTF로 변환할 때 이미지를 WMF로 저장하는 방법을 알아보세요.
+description: 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 이미지를 WMF로 저장하는 방법을 알아보세요. 문서 호환성과 이미지 품질을 향상시키세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-rtfsaveoptions/saving-images-as-wmf/
 ---
+## 소개
 
-이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 "RTF 저장 옵션을 사용하여 이미지를 WMF로 저장" 기능에 제공된 C# 소스 코드를 살펴보겠습니다. 이 기능을 사용하면 RTF 형식으로 변환할 때 문서 이미지를 WMF(Windows Metafile) 형식으로 저장할 수 있습니다.
+안녕하세요, 동료 개발자 여러분! .NET용 Aspose.Words를 사용하여 Word 문서에 이미지를 WMF(Windows 메타파일)로 저장하는 방법이 궁금하신가요? 글쎄, 당신은 바로 이곳에 있어요! 이 튜토리얼에서는 .NET용 Aspose.Words의 세계를 살펴보고 이미지를 WMF로 저장하는 방법을 살펴보겠습니다. 이미지 품질을 유지하고 다양한 플랫폼 간의 호환성을 보장하는 데 매우 편리합니다. 준비가 된? 시작하자!
 
-## 1단계: 환경 설정
+## 전제조건
 
-시작하기 전에 Aspose.Words for .NET을 사용하여 개발 환경을 설정했는지 확인하세요. 필요한 참조를 추가하고 적절한 네임스페이스를 가져왔는지 확인하세요.
+코드를 시작하기 전에 원활하게 진행하는 데 필요한 모든 것이 있는지 확인하겠습니다.
 
-## 2단계: 문서 로드
+-  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 그렇지 않은 경우 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+- 개발 환경: Visual Studio와 같은 C# 개발 환경이 설정되어 있어야 합니다.
+- C#에 대한 기본 지식: C# 프로그래밍에 대한 기본적인 이해가 있으면 도움이 됩니다.
+
+## 네임스페이스 가져오기
+
+먼저 필요한 네임스페이스를 가져오겠습니다. 이는 우리가 사용할 Aspose.Words 클래스와 메서드에 액세스하는 데 중요합니다.
 
 ```csharp
-// 문서 디렉토리 경로
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-
-Document doc = new Document(dataDir + "Document.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- 이 단계에서는 다음을 사용하여 문서를 로드합니다.`Document` 메서드를 사용하고 로드할 DOCX 파일의 경로를 전달합니다.
+좋아요, 이제 우리는 재미있는 부분에 접근하고 있습니다. 프로세스를 따라하기 쉬운 단계로 나누어 보겠습니다.
 
-## 3단계: 백업 옵션 구성
+## 1단계: 문서 로드
 
-```csharp
-RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
-```
-
- 이 단계에서는 RTF 백업 옵션을 구성합니다. 우리는 새로운 것을 만듭니다`RtfSaveOptions` 객체를 설정하고`SaveImagesAsWmf`재산`true`. 이는 Aspose.Words가 RTF로 변환할 때 문서 이미지를 WMF로 저장하도록 지시합니다.
-
-## 4단계: 문서 저장
+먼저 WMF로 저장하려는 이미지가 포함된 문서를 로드해야 합니다. 
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
-```
-
- 이 마지막 단계에서는 결과 문서를 다음을 사용하여 RTF 형식으로 저장합니다.`Save` 메서드를 지정하고 지정된 저장 옵션과 함께 출력 파일에 경로를 전달합니다.
-
-이제 소스 코드를 실행하여 RTF 형식으로 변환하는 동안 문서 이미지를 WMF 형식으로 저장할 수 있습니다. 결과 문서는 "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf"라는 이름으로 지정된 디렉터리에 저장됩니다.
-
-### Aspose.Words for .NET을 사용하여 RTF 저장 옵션을 사용하여 WMF 이미지를 저장하는 기능에 대한 샘플 소스 코드입니다.
-
-```csharp
-
-            
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
 Document doc = new Document(dataDir + "Document.docx");
-
-RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
-
-doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
-            
-        
 ```
+
+ 설명: 이 단계에서는 문서가 있는 디렉토리를 지정합니다. 그런 다음 다음을 사용하여 문서를 로드합니다.`Document` Aspose.Words에서 제공하는 클래스입니다. 정말이지, 그렇지?
+
+## 2단계: 저장 옵션 구성
+
+다음으로 이미지가 WMF로 저장되도록 저장 옵션을 구성해야 합니다.
+
+```csharp
+RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
+```
+
+ 설명: 여기서는 인스턴스를 생성합니다.`RtfSaveOptions` 그리고 설정`SaveImagesAsWmf`재산`true`. 이는 문서가 저장될 때 이미지를 WMF로 저장하도록 Aspose.Words에 지시합니다.
+
+## 3단계: 문서 저장
+
+마지막으로 지정된 저장 옵션을 사용하여 문서를 저장할 차례입니다.
+
+```csharp
+doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
+```
+
+ 설명: 이 단계에서는`Save` 의 방법`Document` 문서를 저장하는 클래스입니다. 우리는 파일 경로와`saveOptions` 매개변수로. 이렇게 하면 이미지가 WMF로 저장됩니다.
+
 ## 결론
 
-이 튜토리얼에서는 .NET용 Aspose.Words에서 RTF 저장 옵션을 사용하여 이미지를 WMF로 저장하는 기능을 살펴보았습니다. RTF 형식으로 변환할 때 문서의 이미지를 WMF 형식으로 저장하는 방법을 배웠습니다.
+그리고 거기에 있습니다! 단 몇 줄의 코드만으로 Aspose.Words for .NET을 사용하여 Word 문서에 이미지를 WMF로 저장할 수 있습니다. 이는 고품질 이미지를 유지하고 다양한 플랫폼 간의 호환성을 보장하는 데 매우 유용할 수 있습니다. 한번 시도해보고 차이점을 확인해보세요!
 
-이 기능은 RTF 문서에서 이미지의 품질과 해상도를 유지하려는 경우에 유용합니다. 이미지를 WMF 형식으로 저장하면 모양과 선명도가 그대로 유지됩니다.
+## FAQ
 
-Aspose.Words for .NET은 문서 조작 및 생성을 위한 다양한 고급 기능을 제공합니다. RTF 형식으로 변환하는 동안 이미지를 WMF 형식으로 저장하는 것은 RTF 형식이 제공하는 많은 강력한 도구 중 하나입니다.
+### .NET용 Aspose.Words에서 다른 이미지 형식을 사용할 수 있나요?
+예, .NET용 Aspose.Words는 PNG, JPEG, BMP 등과 같은 다양한 이미지 형식을 지원합니다. 이에 따라 저장 옵션을 구성할 수 있습니다.
 
-### 자주 묻는 질문
+### .NET용 Aspose.Words에 사용할 수 있는 평가판이 있습니까?
+ 전적으로! 다음에서 무료 평가판을 다운로드할 수 있습니다.[여기](https://releases.aspose.com/).
 
-#### Q: Aspose.Words for .NET의 "RTF 저장 옵션을 사용하여 이미지를 WMF로 저장" 기능은 무엇입니까?
-A: Aspose.Words for .NET의 "RTF 저장 옵션을 사용하여 이미지를 WMF로 저장" 기능을 사용하면 RTF로 변환할 때 문서 이미지를 WMF(Windows Metafile) 형식으로 저장할 수 있습니다. 이는 RTF 문서에서 이미지 품질과 해상도를 유지하는 기능을 제공합니다.
+### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
+ 예, .NET용 Aspose.Words에는 라이선스가 필요합니다. 하나 구매하시면 됩니다[여기](https://purchase.aspose.com/buy) 아니면 임시면허를 취득하세요.[여기](https://purchase.aspose.com/temporary-license/).
 
-#### Q: .NET용 Aspose.Words에서 이 기능을 어떻게 사용할 수 있나요?
-A: .NET용 Aspose.Words와 함께 이 기능을 사용하려면 다음 단계를 따르세요.
+### 문제가 발생하면 지원을 받을 수 있나요?
+ 분명히! Aspose는 포럼을 통해 포괄적인 지원을 제공합니다. 지원에 액세스할 수 있습니다.[여기](https://forum.aspose.com/c/words/8).
 
-필요한 참조를 추가하고 적절한 네임스페이스를 가져와 개발 환경을 설정하세요.
-
- 다음을 사용하여 문서를 로드합니다.`Document` 방법을 사용하고 로드할 DOCX 파일의 경로를 지정합니다.
-
- 생성하여 RTF 저장 옵션을 구성합니다.`RtfSaveOptions` 개체 및 설정`SaveImagesAsWmf`재산`true`. 이는 Aspose.Words에게 문서 이미지를 다음과 같이 저장하도록 지시합니다. 
-RTF로 변환할 때 WMF.
-
- 결과 문서를 다음을 사용하여 RTF 형식으로 저장합니다.`Save` 방법을 사용하고 지정된 저장 옵션과 함께 출력 파일의 전체 경로를 지정합니다.
-
-#### Q: RTF 저장 옵션을 사용하여 저장할 때 다른 이미지 형식을 선택할 수 있습니까?
-A: 아니요. 이 특정 기능은 RTF로 변환할 때 이미지를 WMF 형식으로 저장합니다. 다른 이미지 형식은 이 기능에서 직접 지원되지 않습니다. 그러나 Aspose.Words는 이미지 조작 및 변환을 위한 다른 기능을 제공하므로 RTF로 변환하기 전이나 후에 이미지를 다른 형식으로 변환할 수 있습니다.
-
-#### Q: .NET용 Aspose.Words의 RTF 저장 옵션은 다른 기능을 제공합니까?
-A: 예, .NET용 Aspose.Words는 RTF 저장 옵션과 함께 더 많은 기능을 제공합니다. 글꼴 관리, 레이아웃, 이미지, 표, 하이퍼링크 등과 같은 RTF 변환의 다양한 측면을 사용자 정의할 수 있습니다. 이러한 옵션을 사용하면 RTF 변환의 최종 결과를 정확하게 제어할 수 있습니다.
-
-#### Q: Aspose.Words for .NET을 사용하여 문서의 이미지를 어떻게 조작할 수 있나요?
-A: Aspose.Words for .NET은 문서의 이미지를 조작하기 위한 모든 기능을 제공합니다. 추출, 삽입, 크기 조정, 자르기, 필터 및 효과 적용, 품질 조정, 다양한 이미지 형식 간 변환 등의 작업을 수행할 수 있습니다. 이미지 조작에 대한 자세한 내용은 Aspose.Words 문서를 참조하세요.
+### .NET용 Aspose.Words에 대한 특정 시스템 요구 사항이 있습니까?
+.NET용 Aspose.Words는 .NET Framework, .NET Core 및 .NET Standard와 호환됩니다. 개발 환경이 이러한 요구 사항을 충족하는지 확인하세요.

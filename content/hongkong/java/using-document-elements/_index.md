@@ -61,5 +61,5 @@ url: /zh-hant/java/using-document-elements/
 了解如何在 Aspose.Words for Java 中使用 OLE 物件和 ActiveX 控制項。輕鬆建立互動式文件。現在就開始吧！
 ### [在 Aspose.Words for Java 中使用修訂版](./using-revisions/)
 學習如何有效地使用 Aspose.Words for Java 的修訂控制。開發人員的分步指南。優化您的文件管理。
-### [在 Aspose.Words for Java 中使用部分](./using-sections/)
+### [在 Aspose.Words for Java 中使用節](./using-sections/)
 探索 Aspose.Words for Java：有關使用部分的綜合指南。新增、刪除、追加、克隆部分以及程式碼範例。

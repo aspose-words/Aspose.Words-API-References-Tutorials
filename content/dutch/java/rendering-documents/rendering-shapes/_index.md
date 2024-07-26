@@ -20,7 +20,7 @@ Voordat we in de code duiken, moet u uw ontwikkelomgeving instellen. Zorg ervoor
 
 ## 3. Een document laden
 
-Om te beginnen heeft u een Word-document nodig om mee te werken. Zorg ervoor dat er een document beschikbaar is in de door u opgegeven map.
+Om te beginnen heeft u een Word-document nodig om mee te werken. Zorg ervoor dat er een document beschikbaar is in de door u opgegeven directory.
 
 ```java
 string dataDir = "Your Document Directory";

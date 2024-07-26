@@ -149,7 +149,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // İçindekiler tablosu ekleme
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-// Belge içeriği ekleyin
+// Belge içeriği ekle
 // ...
 
 // İçindekiler tablosunu güncelleyin
@@ -252,7 +252,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // İçindekiler alanı ekleme
 builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 
-// Belge içeriği ekleyin
+// Belge içeriği ekle
 // ...
 
 // İçindekiler tablosunu güncelleyin

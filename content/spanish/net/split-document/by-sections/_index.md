@@ -15,7 +15,7 @@ En este ejemplo, le mostraremos cómo dividir un documento de Word en secciones 
 Para comenzar, necesitamos especificar el directorio de su documento y cargar el documento en un objeto Documento. Así es cómo:
 
 ```csharp
-//Ruta al directorio de documentos.
+// Ruta al directorio de documentos.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

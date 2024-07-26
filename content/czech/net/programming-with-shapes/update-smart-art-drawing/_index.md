@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Krok 3: Aktualizujte kresbu Smart Art
- Procházejte tvary v dokumentu pomocí`GetChildNodes` metoda s`NodeType.Shape` parametr. Zkontrolujte, zda má každý tvar Smart Art pomocí`HasSmartArt` vlastnost, a pokud je to pravda, zavolejte`UpdateSmartArtDrawing` způsob aktualizace výkresu Smart Art.
+ Procházejte tvary v dokumentu pomocí`GetChildNodes` metoda s`NodeType.Shape` parametr. Zkontrolujte, zda má každý tvar Smart Art pomocí`HasSmartArt`vlastnost, a pokud je to pravda, zavolejte`UpdateSmartArtDrawing` způsob aktualizace výkresu Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

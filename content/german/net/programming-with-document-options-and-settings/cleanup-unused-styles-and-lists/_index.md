@@ -9,7 +9,7 @@ url: /de/net/programming-with-document-options-and-settings/cleanup-unused-style
 ---
 ## Einführung
 
-Hallo! Hatten Sie schon einmal das Gefühl, dass Ihre Word-Dokumente ein wenig unübersichtlich werden? Sie wissen schon, diese ungenutzten Stile und Listen, die einfach da herumliegen, Platz beanspruchen und Ihr Dokument komplexer aussehen lassen, als es sein muss? Nun, Sie haben Glück! Heute tauchen wir in einen netten kleinen Trick ein, bei dem wir Aspose.Words für .NET verwenden, um diese ungenutzten Stile und Listen aufzuräumen. Es ist, als würden Sie Ihrem Dokument ein schönes, erfrischendes Bad geben. Also, schnappen Sie sich Ihren Kaffee, lehnen Sie sich zurück und lassen Sie uns anfangen!
+Hallo! Hatten Sie schon einmal das Gefühl, dass Ihre Word-Dokumente ein wenig überladen wirken? Sie wissen schon, diese ungenutzten Stile und Listen, die einfach da herumliegen, Platz beanspruchen und Ihr Dokument komplexer aussehen lassen, als es sein muss? Nun, Sie haben Glück! Heute tauchen wir in einen netten kleinen Trick ein, bei dem wir Aspose.Words für .NET verwenden, um diese ungenutzten Stile und Listen aufzuräumen. Es ist, als würden Sie Ihrem Dokument ein schönes, erfrischendes Bad geben. Also, schnappen Sie sich Ihren Kaffee, lehnen Sie sich zurück und lassen Sie uns anfangen!
 
 ## Voraussetzungen
 

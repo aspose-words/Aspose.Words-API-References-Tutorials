@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 3: Flytta till önskat stycke
 
- Det är här magin händer. Vi flyttar till önskat stycke med hjälp av`MoveToParagraph` metod. Denna metod tar två parametrar: indexet för stycket och teckenpositionen i det stycket.
+ Här händer magin. Vi flyttar till önskat stycke med hjälp av`MoveToParagraph` metod. Denna metod tar två parametrar: indexet för stycket och teckenpositionen i det stycket.
 
 ```csharp
 builder.MoveToParagraph(2, 0);

@@ -30,7 +30,7 @@ using Aspose.Words.Tables;
 using System;
 ```
 
-Được rồi, hãy chia nhỏ điều này từng bước một. Chúng ta sẽ bắt đầu lại từ đầu và dần dần tìm ra các dấu phân cách kiểu đoạn văn khó chịu đó.
+Được rồi, hãy chia nhỏ điều này từng bước một. Chúng ta sẽ bắt đầu lại từ đầu và dần dần tìm ra những dấu phân cách kiểu đoạn văn khó chịu đó.
 
 ## Bước 1: Thiết lập dự án của bạn
 

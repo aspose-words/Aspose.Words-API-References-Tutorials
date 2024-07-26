@@ -81,7 +81,7 @@ En este tutorial, exploramos cómo manipular texto dentro de campos en documento
 ## Preguntas frecuentes
 
 ### ¿Cómo manejo los campos anidados dentro de los documentos de Word?
-Los campos anidados se pueden administrar navegando recursivamente a través del contenido del documento usando la API de Aspose.Words.
+Los campos anidados se pueden administrar navegando recursivamente por el contenido del documento utilizando la API de Aspose.Words.
 
 ### ¿Puedo aplicar lógica condicional para reemplazar texto de forma selectiva?
 Sí, Aspose.Words le permite implementar lógica condicional usando FindReplaceOptions para controlar el reemplazo de texto según criterios específicos.

@@ -39,7 +39,7 @@ Document doc = new Document("path/to/your/document.docx");
 Daha sonra, belgeyi bölmek istediğimiz kriterleri temel alarak tanımlayacağız. Bu, sayfaya, bölüme veya ihtiyaçlarınıza uygun herhangi bir özel kritere göre olabilir.
 
 ```java
-// Bölünme kriterlerini tanımlayın
+// Bölme kriterlerini tanımlayın
 DocumentSplitCriteria splitCriteria = new PageSplitCriteria();
 ```
 

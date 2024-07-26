@@ -13,7 +13,7 @@ Di era digital saat ini, pengumpulan data dan pengorganisasian dokumen yang efis
 
 Bidang formulir adalah elemen interaktif dalam dokumen yang memungkinkan pengguna memasukkan data, membuat pilihan, dan berinteraksi dengan konten dokumen. Mereka biasanya digunakan dalam berbagai skenario, seperti survei, formulir umpan balik, formulir lamaran, dan banyak lagi. Aspose.Words untuk Python adalah perpustakaan tangguh yang memberdayakan pengembang untuk membuat, memanipulasi, dan mengelola bidang formulir ini secara terprogram.
 
-## Memulai dengan Aspose.Words untuk Python
+## Memulai Aspose.Words untuk Python
 
 Sebelum kita mendalami cara membuat dan menguasai bidang formulir, mari siapkan lingkungan kita dan kenali Aspose.Words untuk Python. Ikuti langkah-langkah berikut untuk memulai:
 
@@ -138,11 +138,11 @@ text_input_field.text = "John Doe"
 text_input_field.placeholder_text = "Enter your full name"
 ```
 
-Bidang input teks memberikan cara mudah untuk menangkap data tekstual, menjadikannya alat penting dalam pengumpulan data berbasis dokumen.
+Bidang masukan teks memberikan cara mudah untuk menangkap data tekstual, menjadikannya alat penting dalam pengumpulan data berbasis dokumen.
 
 ### Kotak centang dan Tombol Radio
 
-Kotak centang dan tombol radio ideal untuk skenario yang memerlukan pilihan pilihan ganda. Kotak centang memungkinkan pengguna untuk memilih beberapa opsi, sedangkan tombol radio membatasi pengguna pada satu pilihan.
+Kotak centang dan tombol radio ideal untuk skenario yang memerlukan pilihan pilihan ganda. Kotak centang memungkinkan pengguna untuk memilih beberapa opsi, sementara tombol radio membatasi pengguna pada satu pilihan.
 
 Untuk membuat bidang formulir kotak centang, gunakan
 
@@ -232,7 +232,7 @@ Menguasai bidang formulir dan pengambilan data di dokumen Word adalah keterampil
 
 Dalam panduan ini, kita telah menjelajahi dasar-dasar bidang formulir, jenis bidang formulir, mengatur properti, dan menyesuaikan perilakunya. Kami juga telah membahas praktik terbaik untuk desain formulir dan menawarkan wawasan dalam mengoptimalkan formulir dokumen untuk mesin pencari.
 
-Dengan memanfaatkan kekuatan Aspose.Words untuk Python, Anda dapat membuat dokumen yang tidak hanya menangkap data secara efektif namun juga meningkatkan keterlibatan pengguna dan menyederhanakan alur kerja pemrosesan data. Sekarang, Anda siap memulai perjalanan Anda untuk menjadi ahli bidang formulir dan pengambilan data dalam dokumen Word.
+Dengan memanfaatkan kekuatan Aspose.Words untuk Python, Anda dapat membuat dokumen yang tidak hanya menangkap data secara efektif namun juga meningkatkan keterlibatan pengguna dan menyederhanakan alur kerja pemrosesan data. Sekarang, Anda siap memulai perjalanan Anda untuk menjadi ahli bidang formulir dan pengambilan data di dokumen Word.
 
 ## FAQ
 
@@ -246,7 +246,7 @@ pip install aspose-words
 
 ### Bisakah saya menetapkan nilai default untuk bidang formulir?
 
- Ya, Anda bisa mengatur nilai default untuk bidang formulir menggunakan properti yang sesuai. Misalnya, untuk menyetel teks default pada kolom input teks, gunakan`text` Properti.
+ Ya, Anda bisa mengatur nilai default untuk bidang formulir menggunakan properti yang sesuai. Misalnya, untuk menyetel teks default pada kolom masukan teks, gunakan`text` Properti.
 
 ### Apakah kolom formulir dapat diakses oleh pengguna penyandang disabilitas?
 

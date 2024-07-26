@@ -15,7 +15,7 @@ url: /ar/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 
 قبل أن نتعمق في التعليمات البرمجية، دعونا نتأكد من إعداد كل شيء. إليك ما تحتاجه:
 
-1. Aspose.Words لمكتبة .NET: تأكد من أن لديك الإصدار الأحدث. إذا لم يكن لديك، يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+1.  Aspose.Words لمكتبة .NET: تأكد من أن لديك الإصدار الأحدث. إذا لم يكن لديك، يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
 2. .NET Framework: تأكد من تثبيت .NET Framework على جهازك.
 3. بيئة التطوير: بيئة تطوير متكاملة مثل Visual Studio ستجعل حياتك أسهل.
 4. المعرفة الأساسية بـ C#: لست بحاجة إلى أن تكون خبيرًا، ولكن الفهم الأساسي سيساعدك.

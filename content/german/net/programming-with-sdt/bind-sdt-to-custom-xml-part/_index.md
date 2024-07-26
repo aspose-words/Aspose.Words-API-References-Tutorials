@@ -17,7 +17,7 @@ Um diesem Tutorial folgen zu können, benötigen Sie Folgendes:
 - Grundkenntnisse in C# und XML.
 
 ## Schritt 1: Einrichten des Dokumentverzeichnisses
- Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
+ Beginnen Sie mit der Einrichtung des Pfades zu Ihrem Dokumentverzeichnis. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zum Verzeichnis, in dem Sie das Dokument speichern möchten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Schritt 3: Fügen Sie dem Dokument einen StructuredDocumentTag (SDT) hinzu
- Füge hinzu ein`StructuredDocumentTag` zum Dokument, das als Inhaltssteuerelement dienen soll. Geben Sie die`SdtType` als`PlainText` und das`MarkupLevel` als`Block` um ein SDT auf Blockebene zu erstellen.
+ Füge hinzu ein`StructuredDocumentTag`zum Dokument, das als Inhaltssteuerelement dienen soll. Geben Sie die`SdtType` als`PlainText` und das`MarkupLevel` als`Block` um ein SDT auf Blockebene zu erstellen.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

@@ -12,7 +12,7 @@ url: /ko/java/table-processing/creating-tables-rows/
 문서에 테이블과 행을 만드는 것은 문서 처리의 기본 측면이며 Aspose.Words for Java를 사용하면 이 작업이 그 어느 때보다 쉬워집니다. 이 단계별 가이드에서는 Aspose.Words for Java를 활용하여 문서에 테이블과 행을 만드는 방법을 살펴보겠습니다. 보고서를 작성하든, 송장을 생성하든, 구조화된 데이터 표시가 필요한 문서를 작성하든 이 가이드에서 다룹니다.
 
 ## 무대 설정
- 핵심적인 세부 사항을 살펴보기 전에 Aspose.Words for Java를 사용하는 데 필요한 설정이 있는지 확인하세요. 라이브러리를 다운로드하여 설치했는지 확인하세요. 아직 다운로드 링크를 찾지 못했다면 다운로드 링크를 찾아보세요.[여기](https://releases.aspose.com/words/java/).
+ 핵심적인 세부 사항을 살펴보기 전에 Aspose.Words for Java를 사용하는 데 필요한 설정이 있는지 확인하겠습니다. 라이브러리를 다운로드하여 설치했는지 확인하세요. 아직 다운로드 링크를 찾지 못했다면 다운로드 링크를 찾아보세요.[여기](https://releases.aspose.com/words/java/).
 
 ## 테이블 만들기
 ### 테이블 생성

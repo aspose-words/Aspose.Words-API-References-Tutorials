@@ -38,7 +38,7 @@ Paragraph para = new Paragraph(doc);
 Section section = doc.LastSection;
 ```
 
-## Etapa 5: adicione o nó do parágrafo ao documento
+## Etapa 5: adicione o nó de parágrafo ao documento
  Agora que temos a seção do documento, podemos adicionar o nó do parágrafo à seção usando o comando`AppendChild` método na seção`Body` propriedade.
 
 ```csharp

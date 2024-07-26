@@ -12,5 +12,5 @@ Aspose.Words for .NET eğitimleri, .NET projelerinizde Aspose.Words kütüphanes
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Hedef Makinedeki Yazı Tipini Kullan](./use-font-from-target-machine/) | Aspose.Words for .NET ile hedef makinenin yazı tiplerini kullanarak bir Word belgesini sabit HTML'ye nasıl dönüştüreceğinizi öğrenin. |
-| [Tüm Css Kurallarını Tek Dosyaya Yazın](./write-all-css-rules-in-single-file/) | Aspose.Words for .NET ile tüm CSS kurallarını tek bir dosyaya yazarak bir Word belgesini sabit HTML'ye nasıl dönüştüreceğinizi öğrenin. |
+| [Hedef Makinedeki Yazı Tipini Kullan](./use-font-from-target-machine/) | Aspose.Words for .NET ile Word belgelerinizde hedef makinedeki yazı tiplerini nasıl kullanacağınızı öğrenin. Sorunsuz yazı tipi entegrasyonu için adım adım kılavuzumuzu izleyin. |
+| [Tüm Css Kurallarını Tek Dosyaya Yazın](./write-all-css-rules-in-single-file/) | Daha temiz kod ve daha kolay bakım için Aspose.Words for .NET kullanarak tüm CSS kurallarını tek bir dosyada içeren Word belgelerini HTML'ye nasıl dönüştüreceğinizi öğrenin. |

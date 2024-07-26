@@ -17,7 +17,7 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. lépés: Alakzatok beszúrása
- Használja a`InsertShape` módszere a`DocumentBuilder`objektum alakzatok beszúrásához a dokumentumba. Adja meg az alakzat típusát, a relatív vízszintes és függőleges pozíciókat, az oldalméreteket, a méretet és a csomagolás típusát. Igény szerint beállíthatja az alakzatok elforgatási szögét is.
+ Használja a`InsertShape` módszere a`DocumentBuilder` objektum alakzatok beszúrásához a dokumentumba. Adja meg az alakzat típusát, a relatív vízszintes és függőleges pozíciókat, az oldalméreteket, a méretet és a csomagolás típusát. Igény szerint beállíthatja az alakzatok elforgatási szögét is.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,
@@ -54,7 +54,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.Docx)
 doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-### Példa forráskódra az Insert Shape-hoz az Aspose.Words segítségével .NET-hez 
+### Példa forráskódra a Forrás beszúrásához az Aspose.Words segítségével .NET-hez 
 
 ```csharp
 	// A dokumentumkönyvtár elérési útja
@@ -75,4 +75,4 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 	doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ```
 
-Ez az! Sikeresen beillesztett alakzatokat a Word-dokumentumba az Aspose.Words for .NET segítségével.
+Ez az! Sikeresen beillesztett alakzatokat a Word-dokumentumba az Aspose.Words for .NET használatával.

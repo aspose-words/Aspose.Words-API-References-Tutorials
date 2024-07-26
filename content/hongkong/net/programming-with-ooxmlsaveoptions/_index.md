@@ -16,8 +16,8 @@ Aspose.Words for .NET 關於使用 OOXMLSaveOptions 進行文字處理的教學�
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [使用密碼加密 Docx](./encrypt-docx-with-password/) | 了解如何使用 Aspose.Words for .NET 使用密碼加密 DOCX 檔案。文件安全完整教學。 |
-| [Ooxml 合規性 ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | 了解使用 Aspose.Words for .NET 儲存文件時如何確保 Ooxml Iso 29500_2008_Strict 合規性。 |
-| [更新上次儲存時間屬性](./update-last-saved-time-property/) | 了解如何在使用 Aspose.Words for .NET 儲存文件時自動更新「上次儲存時間」屬性。 |
-| [保留舊控製字符](./keep-legacy-control-chars/) | 了解如何在使用 Aspose.Words for .NET 儲存文件時保留舊控製字元。 |
-| [設定壓縮等級](./set-compression-level/) | 了解如何在使用 Aspose.Words for .NET 儲存文件時設定壓縮等級。 |
+| [使用密碼加密 Docx](./encrypt-docx-with-password/) | 使用 Aspose.Words for .NET 使用密碼加密 Word 文檔，從而保護其安全。請按照我們的逐步指南來保護您的敏感資訊。 |
+| [Ooxml 合規性 ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 確保 OOXML 符合 ISO 29500_2008_Strict。 |
+| [更新上次儲存時間屬性](./update-last-saved-time-property/) | 了解如何使用 Aspose.Words for .NET 更新 Word 文件中的上次儲存時間屬性。請遵循我們詳細的逐步指南。 |
+| [保留舊控製字符](./keep-legacy-control-chars/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 保留 Word 文件中的舊控製字元。 |
+| [設定壓縮等級](./set-compression-level/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中設定壓縮等級。請按照我們的逐步指南來優化您的文件儲存和效能。 |

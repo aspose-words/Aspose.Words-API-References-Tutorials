@@ -40,7 +40,7 @@ const string newSourceCode = "Test change source code";
 project.Modules[0].SourceCode = newSourceCode;
 ```
 
-## Étape 4 : Enregistrez le document modifié
+## Étape 4 : Enregistrez le document modifié
 Enfin, nous enregistrerons le document modifié avec les macros VBA mises à jour dans un fichier.
 
 ```csharp

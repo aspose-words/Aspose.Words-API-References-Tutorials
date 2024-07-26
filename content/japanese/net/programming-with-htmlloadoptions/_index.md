@@ -12,4 +12,4 @@ HTMLLoadOptions を使用した Words Processing に関する Aspose.Words for .
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [Word 文書で優先されるコントロールの種類](./preferred-control-type/) | Aspose.Words for .NET を使用して HTML ドキュメントを読み込むときに、Word ドキュメントで優先されるコントロール タイプを指定するためのステップ バイ ステップ ガイド。 |
+| [Word 文書で優先されるコントロールの種類](./preferred-control-type/) | Aspose.Words for .NET を使用して、Word 文書にコンボ ボックス フォーム フィールドを挿入する方法を学びます。シームレスな HTML コンテンツ統合を行うには、このステップ バイ ステップ ガイドに従ってください。 |

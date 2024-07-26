@@ -2,101 +2,116 @@
 title: ส่งออกไปยัง Markdown ด้วยการจัดตำแหน่งเนื้อหาตาราง
 linktitle: ส่งออกไปยัง Markdown ด้วยการจัดตำแหน่งเนื้อหาตาราง
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีส่งออกเนื้อหาตารางที่มีการจัดแนวต่างๆ ไปยังไฟล์ Markdown โดยใช้ Aspose.Words สำหรับ .NET
+description: เรียนรู้วิธีส่งออกเอกสาร Word ไปยัง Markdown ด้วยตารางที่จัดเรียงโดยใช้ Aspose.Words สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อให้ได้ตาราง Markdown ที่สมบูรณ์แบบ
 type: docs
 weight: 10
 url: /th/net/programming-with-markdownsaveoptions/export-into-markdown-with-table-content-alignment/
 ---
-ต่อไปนี้เป็นคำแนะนำทีละขั้นตอนเพื่ออธิบายซอร์สโค้ด C# ต่อไปนี้ที่ช่วยส่งออกเนื้อหาไปยังไฟล์ Markdown ด้วยการจัดแนวเนื้อหาตารางโดยใช้ไลบรารี Aspose.Words สำหรับ .NET ตรวจสอบให้แน่ใจว่าคุณได้รวมไลบรารี Aspose.Words ไว้ในโปรเจ็กต์ของคุณก่อนที่จะใช้โค้ดนี้
+## การแนะนำ
 
-## ขั้นตอนที่ 1: ตั้งค่าเส้นทางไดเรกทอรีเอกสาร
+สวัสดี! เคยสงสัยบ้างไหมว่าจะส่งออกเอกสาร Word ของคุณเป็นรูปแบบ Markdown ด้วยตารางที่จัดแนวอย่างสมบูรณ์แบบได้อย่างไร ไม่ว่าคุณจะเป็นนักพัฒนาที่ทำงานเกี่ยวกับเอกสารหรือเพียงผู้ที่รัก Markdown คู่มือนี้เหมาะสำหรับคุณ เราจะเจาะลึกถึงสาระสำคัญของการใช้ Aspose.Words สำหรับ .NET เพื่อบรรลุเป้าหมายนี้ พร้อมที่จะเปลี่ยนตาราง Word ของคุณให้เป็นตาราง Markdown ที่จัดชิดอย่างเรียบร้อยแล้วหรือยัง? มาเริ่มกันเลย!
+
+## ข้อกำหนดเบื้องต้น
+
+ก่อนที่เราจะเจาะลึกโค้ด มีบางสิ่งที่คุณต้องเตรียม:
+
+1.  Aspose.Words สำหรับ .NET Library: ตรวจสอบให้แน่ใจว่าคุณมีไลบรารี Aspose.Words สำหรับ .NET คุณสามารถดาวน์โหลดได้จาก[กำหนดหน้าเผยแพร่](https://releases.aspose.com/words/net/).
+2. สภาพแวดล้อมการพัฒนา: ตั้งค่าสภาพแวดล้อมการพัฒนาของคุณ Visual Studio เป็นตัวเลือกยอดนิยมสำหรับการพัฒนา .NET
+3. ความรู้พื้นฐานของ C#: การทำความเข้าใจ C# เป็นสิ่งสำคัญ เนื่องจากเราจะเขียนโค้ดในภาษานี้
+4. ตัวอย่างเอกสาร Word: มีเอกสาร Word ที่คุณสามารถใช้สำหรับการทดสอบ
+
+## นำเข้าเนมสเปซ
+
+ก่อนที่เราจะเริ่มเขียนโค้ด เรามานำเข้าเนมสเปซที่จำเป็นก่อน สิ่งเหล่านี้จะทำให้เราสามารถเข้าถึงคลาส Aspose.Words และวิธีการที่เราจะใช้
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## ขั้นตอนที่ 1: เริ่มต้นเอกสารและ DocumentBuilder
+
+ก่อนอื่น เราต้องสร้างเอกสาร Word ใหม่และเริ่มต้นไฟล์`DocumentBuilder` วัตถุเพื่อเริ่มสร้างเอกสารของเรา
 
 ```csharp
 // เส้นทางไปยังไดเร็กทอรีเอกสาร
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
-```
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 
-ตรวจสอบให้แน่ใจว่าได้ระบุเส้นทางที่ถูกต้องไปยังไดเร็กทอรีเอกสารของคุณที่จะบันทึกเอกสารที่แก้ไข
-
-## ขั้นตอนที่ 2: สร้างเอกสารและตัวสร้างเอกสาร
-
-```csharp
+// สร้างเอกสารใหม่
 Document doc = new Document();
+
+// เริ่มต้น DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- ที่นี่เราสร้างอินสแตนซ์ของ`Document` คลาสและตัวอย่างของ`DocumentBuilder` คลาสซึ่งจะทำให้เราสามารถจัดการเอกสารและเพิ่มองค์ประกอบได้
+## ขั้นตอนที่ 2: แทรกเซลล์และจัดแนวเนื้อหา
 
-## ขั้นตอนที่ 3: แทรกเซลล์ในตารางโดยมีการจัดแนวย่อหน้าต่างกัน
+ต่อไป เราจะแทรกเซลล์บางเซลล์ลงในเอกสารของเราและตั้งค่าการจัดตำแหน่ง นี่เป็นสิ่งสำคัญในการรับรองว่าการส่งออก Markdown จะรักษาการจัดตำแหน่งที่ถูกต้อง
 
 ```csharp
-builder. InsertCell();
+// แทรกเซลล์และตั้งค่าการจัดตำแหน่งไปทางขวา
+builder.InsertCell();
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
 builder.Write("Cell1");
-builder. InsertCell();
+
+// แทรกเซลล์อื่นและตั้งค่าการจัดตำแหน่งให้อยู่ตรงกลาง
+builder.InsertCell();
 builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
 builder.Write("Cell2");
 ```
 
-เราใช้ตัวสร้างเอกสารเพื่อแทรกเซลล์ลงในตารางและตั้งค่าการจัดแนวย่อหน้าที่แตกต่างกันสำหรับแต่ละเซลล์
+## ขั้นตอนที่ 3: ตั้งค่าการจัดตำแหน่งเนื้อหาตารางสำหรับการส่งออก Markdown
 
-## ขั้นตอนที่ 4: ตั้งค่าตัวเลือกการส่งออก Markdown และบันทึกเอกสารที่แก้ไข
+ ตอนนี้ก็ถึงเวลากำหนดค่า`MarkdownSaveOptions` เพื่อควบคุมการจัดตำแหน่งของเนื้อหาตารางในไฟล์ Markdown ที่ส่งออก เราจะบันทึกเอกสารด้วยการตั้งค่าการจัดตำแหน่งที่แตกต่างกันเพื่อดูว่ามันทำงานอย่างไร
 
 ```csharp
+// สร้างวัตถุ MarkdownSaveOptions
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 {
-     TableContentAlignment = TableContentAlignment.Left
+    TableContentAlignment = TableContentAlignment.Left
 };
-doc.Save(dataDir + "Content_table_left_alignment.md", saveOptions);
 
+// บันทึกเอกสารโดยจัดชิดซ้าย
+doc.Save(dataDir + "LeftTableContentAlignment.md", saveOptions);
+
+// เปลี่ยนการจัดตำแหน่งไปทางขวาแล้วบันทึก
 saveOptions.TableContentAlignment = TableContentAlignment.Right;
-doc.Save(dataDir + "Content_table_right_alignment.md", saveOptions);
+doc.Save(dataDir + "RightTableContentAlignment.md", saveOptions);
 
+// เปลี่ยนการจัดตำแหน่งให้อยู่กึ่งกลางและบันทึก
 saveOptions.TableContentAlignment = TableContentAlignment.Center;
-doc.Save(dataDir + "Content_table_alignment_center.md", saveOptions);
-
-saveOptions.TableContentAlignment = TableContentAlignment.Auto;
-doc.Save(dataDir + "Content_table_auto_alignment.md", saveOptions);
+doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 ```
 
-เราตั้งค่าตัวเลือกการส่งออก Markdown ด้วยการจัดแนวเนื้อหาตารางที่แตกต่างกัน จากนั้นบันทึกเอกสารที่แก้ไขโดยใช้ตัวเลือกการจัดตำแหน่งแต่ละรายการ
+## ขั้นตอนที่ 4: ใช้การจัดตำแหน่งเนื้อหาตารางอัตโนมัติ
 
-### ตัวอย่างซอร์สโค้ดที่จะส่งออกไปยัง Markdown พร้อมการจัดตำแหน่งเนื้อหาตารางโดยใช้ Aspose.Words สำหรับ .NET
+ ที่`Auto`ตัวเลือกการจัดตำแหน่งจะใช้การจัดตำแหน่งจากย่อหน้าแรกในคอลัมน์ตารางที่เกี่ยวข้อง ซึ่งจะมีประโยชน์เมื่อคุณมีการจัดแนวแบบผสมในตารางเดียว
 
 ```csharp
+// ตั้งค่าการจัดตำแหน่งเป็นอัตโนมัติ
+saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 
-            
-	// เส้นทางไปยังไดเร็กทอรีเอกสาร
-    string dataDir = "YOUR DOCUMENT DIRECTORY";
-	
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-
-	builder.InsertCell();
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Right;
-	builder.Write("Cell1");
-	builder.InsertCell();
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Write("Cell2");
-
-	// ทำให้ย่อหน้าทั้งหมดภายในตารางถูกจัดแนว
-	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
-	{
-		TableContentAlignment = TableContentAlignment.Left
-	};
-	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.LeftTableContentAlignment.md", saveOptions);
-
-	saveOptions.TableContentAlignment = TableContentAlignment.Right;
-	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.RightTableContentAlignment.md", saveOptions);
-
-	saveOptions.TableContentAlignment = TableContentAlignment.Center;
-	doc.Save(ArtifactsDir + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
-
-	// การจัดตำแหน่งในกรณีนี้จะนำมาจากย่อหน้าแรกในคอลัมน์ตารางที่เกี่ยวข้อง
-	saveOptions.TableContentAlignment = TableContentAlignment.Auto;
-	
-	// บันทึกเอกสารที่แก้ไข
-	doc.Save(dataDir + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
-            
-        
+// บันทึกเอกสารด้วยการจัดตำแหน่งอัตโนมัติ
+doc.Save(dataDir + "AutoTableContentAlignment.md", saveOptions);
 ```
+
+## บทสรุป
+
+และคุณก็ได้แล้ว! การส่งออกเอกสาร Word ไปยัง Markdown ด้วยตารางที่จัดแนวโดยใช้ Aspose.Words สำหรับ .NET เป็นเรื่องง่ายเมื่อคุณรู้วิธีดำเนินการแล้ว ไลบรารีอันทรงพลังนี้ทำให้การควบคุมการจัดรูปแบบและการจัดแนวตารางของคุณเป็นเรื่องง่าย ทำให้มั่นใจได้ว่าเอกสาร Markdown ของคุณจะมีลักษณะตามที่คุณต้องการ ขอให้มีความสุขในการเขียนโค้ด!
+
+## คำถามที่พบบ่อย
+
+### Aspose.Words สำหรับ .NET คืออะไร
+Aspose.Words สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้นักพัฒนาสามารถสร้าง แก้ไข แปลง และส่งออกเอกสาร Word โดยทางโปรแกรม
+
+### ฉันสามารถตั้งค่าการจัดแนวที่แตกต่างกันสำหรับคอลัมน์ต่างๆ ในตารางเดียวกันได้หรือไม่
+ ใช่ โดยใช้`Auto` ตัวเลือกการจัดตำแหน่ง คุณสามารถมีการจัดตำแหน่งที่แตกต่างกันตามย่อหน้าแรกในแต่ละคอลัมน์
+
+### ฉันต้องมีใบอนุญาตเพื่อใช้ Aspose.Words สำหรับ .NET หรือไม่
+ ใช่ Aspose.Words สำหรับ .NET จำเป็นต้องมีใบอนุญาตสำหรับการใช้งานเต็มรูปแบบ คุณจะได้รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) สำหรับการประเมินผล
+
+### เป็นไปได้หรือไม่ที่จะส่งออกองค์ประกอบเอกสารอื่น ๆ ไปยัง Markdown โดยใช้ Aspose.Words
+ใช่ Aspose.Words รองรับการส่งออกองค์ประกอบต่างๆ เช่น ส่วนหัว รายการ และรูปภาพเป็นรูปแบบ Markdown
+
+### ฉันจะรับการสนับสนุนได้ที่ไหนหากฉันประสบปัญหา
+ คุณสามารถรับการสนับสนุนจาก[ฟอรั่มสนับสนุน Aspose.Words](https://forum.aspose.com/c/words/8).

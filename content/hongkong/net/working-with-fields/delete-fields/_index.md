@@ -18,7 +18,7 @@ url: /zh-hant/net/working-with-fields/delete-fields/
 
 ### 軟體需求
 
-1. Visual Studio：已在您的系統上安裝並設定。
+1. Visual Studio：在您的系統上安裝並設定。
 2.  Aspose.Words for .NET：下載並整合到您的 Visual Studio 專案中。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
 3. Word 文件：準備好範例 Word 文件 (.docx)，其中包含要刪除的欄位。
 

@@ -12,4 +12,4 @@ Aspose.Words for .NET 教程“使用 OfficeMath 进行文字处理”将指导�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [数学方程式](./math-equations/) | 了解如何使用 Aspose.Words for .NET 将数学方程式添加到 Word 文档中。 |
+| [数学方程式](./math-equations/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中配置数学方程式。分步指南包含示例、常见问题解答等。 |

@@ -80,7 +80,7 @@ public void setThemeProperties() throws Exception
 }
 ```
 
-Diese Code-Ausschnitte zeigen, wie Designeigenschaften wie Schriftarten und Farben abgerufen und geändert werden.
+Diese Code-Schnipsel zeigen, wie Designeigenschaften wie Schriftarten und Farben abgerufen und geändert werden.
 
 ## Einfügen von Stiltrennzeichen
 

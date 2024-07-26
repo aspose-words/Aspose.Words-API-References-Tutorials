@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- इस अंतिम चरण में, हम परिणामी दस्तावेज़ को .docx प्रारूप में सहेजते हैं`Save` विधि और आउटपुट फ़ाइल के लिए पथ पारित करना।
+इस अंतिम चरण में, हम परिणामी दस्तावेज़ को .docx प्रारूप में सहेजते हैं`Save` विधि और आउटपुट फ़ाइल के लिए पथ पारित करना।
 
 अब आप रिक्त स्थान प्रबंधन विकल्प निर्दिष्ट करके टेक्स्ट दस्तावेज़ लोड करने के लिए स्रोत कोड चला सकते हैं। परिणामी दस्तावेज़ निर्दिष्ट निर्देशिका में "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx" नाम से सहेजा जाएगा।
 

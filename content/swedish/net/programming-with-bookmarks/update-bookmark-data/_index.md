@@ -119,7 +119,7 @@ Absolut! Aspose.Words tillhandahåller metoder för att infoga bokmärken på sp
 
 ### Kan jag ta bort bokmärken efter att ha uppdaterat dem?
 
- Ja, Aspose.Words tillhandahåller`Remove` metod på`Bookmarks` samling för att radera bokmärken.
+ Ja, Aspose.Words tillhandahåller`Remove` metod på`Bookmarks` samling för att ta bort bokmärken.
 
 ### Finns det några begränsningar för bokmärkesinnehåll?
 

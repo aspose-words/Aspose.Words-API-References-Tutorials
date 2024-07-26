@@ -12,4 +12,4 @@ Tutorial Aspose.Words untuk .NET tentang Pemrosesan Kata dengan OfficeMath akan 
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Persamaan Matematika](./math-equations/) | Pelajari cara menambahkan persamaan matematika ke dokumen Word Anda menggunakan Aspose.Words untuk .NET. |
+| [Persamaan Matematika](./math-equations/) | Pelajari cara mengonfigurasi persamaan matematika di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah dengan contoh, FAQ, dan banyak lagi. |

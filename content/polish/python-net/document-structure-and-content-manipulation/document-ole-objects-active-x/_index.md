@@ -8,7 +8,7 @@ weight: 21
 url: /pl/python-net/document-structure-and-content-manipulation/document-ole-objects-active-x/
 ---
 
-dzisiejszej erze cyfrowej tworzenie bogatych i interaktywnych dokumentów ma kluczowe znaczenie dla skutecznej komunikacji. Aspose.Words dla Pythona zapewnia potężny zestaw narzędzi, który umożliwia osadzanie obiektów OLE (łączenie i osadzanie obiektów) oraz formantów ActiveX bezpośrednio w dokumentach Word. Ta funkcja otwiera świat możliwości, umożliwiając tworzenie dokumentów ze zintegrowanymi arkuszami kalkulacyjnymi, wykresami, multimediami i nie tylko. W tym samouczku przeprowadzimy Cię przez proces osadzania obiektów OLE i kontrolek ActiveX przy użyciu Aspose.Words dla Pythona.
+dzisiejszej erze cyfrowej tworzenie bogatych i interaktywnych dokumentów ma kluczowe znaczenie dla skutecznej komunikacji. Aspose.Words dla Pythona zapewnia potężny zestaw narzędzi, który umożliwia osadzanie obiektów OLE (łączenie i osadzanie obiektów) oraz kontrolek ActiveX bezpośrednio w dokumentach Word. Ta funkcja otwiera świat możliwości, umożliwiając tworzenie dokumentów ze zintegrowanymi arkuszami kalkulacyjnymi, wykresami, multimediami i nie tylko. W tym samouczku przeprowadzimy Cię przez proces osadzania obiektów OLE i kontrolek ActiveX przy użyciu Aspose.Words dla Pythona.
 
 
 ## Pierwsze kroki z Aspose.Words dla Pythona
@@ -99,4 +99,4 @@ Jeśli formant ActiveX nie działa, może to być spowodowane ustawieniami zabez
 
 ## Wniosek
 
-Włączenie obiektów OLE i kontrolek ActiveX za pomocą Aspose.Words dla Pythona otwiera świat możliwości tworzenia dynamicznych i interaktywnych dokumentów Word. Niezależnie od tego, czy chcesz osadzić arkusze kalkulacyjne, multimedia czy interaktywne formularze, ta funkcja umożliwia skuteczne komunikowanie swoich pomysłów.
+Włączenie obiektów OLE i kontrolek ActiveX za pomocą Aspose.Words dla Pythona otwiera świat możliwości tworzenia dynamicznych i interaktywnych dokumentów Word. Niezależnie od tego, czy chcesz osadzić arkusze kalkulacyjne, multimedia czy formularze interaktywne, ta funkcja umożliwia skuteczne komunikowanie swoich pomysłów.

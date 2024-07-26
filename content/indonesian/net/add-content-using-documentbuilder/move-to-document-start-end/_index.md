@@ -72,7 +72,7 @@ Dan itu dia! Berpindah ke awal dan akhir dokumen di Aspose.Words untuk .NET sang
 ## FAQ
 
 ### Apa itu Aspose.Words untuk .NET?  
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk membuat, mengedit, dan memanipulasi dokumen Word secara terprogram dalam C#.
+Aspose.Words untuk .NET adalah perpustakaan yang kuat untuk membuat, mengedit, dan memanipulasi dokumen Word secara terprogram dalam C#.
 
 ### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa .NET lainnya?  
 Sangat! Meskipun panduan ini menggunakan C#, Anda dapat menggunakan Aspose.Words untuk .NET dengan bahasa .NET apa pun seperti VB.NET.

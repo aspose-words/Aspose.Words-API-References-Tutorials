@@ -119,7 +119,7 @@ doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ## 常见问题解答
 
 ### 我可以一次切换多个书签吗？
-是的，您可以致电`ShowHideBookmarkedContent`方法。
+是的，您可以致电`ShowHideBookmarkedContent`方法适用于您想要切换的每个书签。
 
 ### 隐藏内容会影响文档的结构吗？
 不会，隐藏内容只会影响其可见性。内容仍保留在文档中。

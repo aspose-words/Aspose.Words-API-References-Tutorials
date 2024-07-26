@@ -18,7 +18,7 @@ Innan du dyker in i Aspose.Words, se till att du har följande inställning:
 - Grundläggande kunskaper i programmeringsspråket C#
 -  Tillgång till Aspose.Words för .NET-biblioteket (nedladdningslänk[här](https://releases.aspose.com/words/net/))
 
-## Importera namnområden och komma igång
+## Importera namnutrymmen och komma igång
 
 Låt oss börja med att importera de nödvändiga namnområdena och ställa in vår utvecklingsmiljö.
 
@@ -67,7 +67,7 @@ chart.AxisX.TickLabelSpacing = 2;
 ```
 
 ## Steg 3: Spara dokumentet
-Slutligen, spara dokumentet med det infogade diagrammet:
+Spara slutligen dokumentet med det infogade diagrammet:
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```

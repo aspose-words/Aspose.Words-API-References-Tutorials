@@ -15,7 +15,7 @@ Willkommen zu einem weiteren tiefen Einblick in die Welt von Aspose.Words für .
 
 Bevor wir uns in den Code vertiefen, stellen wir sicher, dass wir alles eingerichtet haben. Folgendes benötigen Sie:
 
-1. Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben. Wenn Sie sie nicht haben, können Sie sie hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben. Wenn Sie sie nicht haben, können Sie sie hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
 2. .NET Framework: Stellen Sie sicher, dass .NET Framework auf Ihrem Computer installiert ist.
 3. Entwicklungsumgebung: Eine IDE wie Visual Studio wird Ihnen das Leben leichter machen.
 4. Grundkenntnisse in C#: Sie müssen kein Experte sein, aber ein grundlegendes Verständnis ist hilfreich.

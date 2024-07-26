@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- Nesta última etapa, salvamos o documento resultante no formato .docx usando o`Save` método e passando o caminho para o arquivo de saída.
+Nesta última etapa, salvamos o documento resultante no formato .docx usando o`Save` método e passando o caminho para o arquivo de saída.
 
 Agora você pode executar o código-fonte para carregar o documento de texto especificando opções de tratamento de espaços em branco. O documento resultante será salvo no diretório especificado com o nome "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
 

@@ -16,24 +16,24 @@ Word 文書を PDF に変換してオンライン配布、アーカイブ、ま�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [ウィンドウのタイトルバーにドキュメントのタイトルを表示する](./display-doc-title-in-window-titlebar/) | Aspose.Words for .NET を使用して PDF に変換するときに、ウィンドウのタイトル バーにドキュメント タイトルを表示する方法を学習します。 |
+| [ウィンドウのタイトルバーにドキュメントのタイトルを表示する](./display-doc-title-in-window-titlebar/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して PDF のウィンドウ タイトル バーにドキュメント タイトルを表示する方法を学習します。 |
 | [PDF レンダリングの警告](./pdf-render-warnings/) | Aspose.Words for .NET を使用して PDF レンダリングの警告に対処するためのステップバイステップ ガイド。 |
-| [証明書ホルダーを使用してPDFにデジタル署名を追加する](./digitally-signed-pdf-using-certificate-holder/) | Aspose.Words for .NET で証明書ホルダーを使用して PDF にデジタル署名する方法を学習します。 |
-| [PDF文書にフォントを埋め込む](./embedded-all-fonts/) | Aspose.Words for .NET を使用して PDF にすべてのフォントを埋め込むためのステップ バイ ステップ ガイド。 |
-| [PDF ドキュメントにサブセット フォントを埋め込む](./embedded-subset-fonts/) | Aspose.Words for .NET を使用して PDF にフォント サブセットを埋め込む手順ガイド。 |
-| [埋め込みフォントを無効にしてPDFのサイズを縮小する](./disable-embed-windows-fonts/) | Aspose.Words for .NET を使用してドキュメントを PDF に変換するときに Windows フォントの埋め込みを無効にする方法を学習します。 |
-| [埋め込まれた Arial および Times Roman フォントをスキップして PDF サイズを最適化](./skip-embedded-arial-and-times-roman-fonts/) | Aspose.Words for .NET を使用して、Arial および Times Roman フォントを埋め込まずに PDF を生成する手順ガイド。 |
-| [コアフォントを埋め込まないことでPDFファイルのサイズを縮小する](./avoid-embedding-core-fonts/) | Aspose.Words for .NET を使用して Word 文書を PDF に変換するときに、基本的なフォントの埋め込みを回避する方法を学習します。 |
+| [証明書ホルダーを使用してPDFにデジタル署名を追加する](./digitally-signed-pdf-using-certificate-holder/) | Aspose.Words for .NET を使用して、デジタル署名で PDF ファイルを保護します。このステップバイステップ ガイドに従って、PDF にデジタル署名を簡単に追加します。 |
+| [PDF文書にフォントを埋め込む](./embedded-all-fonts/) | この詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して PDF ドキュメントにフォントを簡単に埋め込みます。すべてのデバイスで一貫した外観を実現します。 |
+| [PDF ドキュメントにサブセット フォントを埋め込む](./embedded-subset-fonts/) | Aspose.Words for .NET を使用して必要なフォント サブセットのみを埋め込むことで、PDF ファイルのサイズを縮小します。ステップ バイ ステップ ガイドに従って、PDF を効率的に最適化します。 |
+| [埋め込みフォントを無効にしてPDFのサイズを縮小する](./disable-embed-windows-fonts/) | Aspose.Words for .NET を使用して埋め込みフォントを無効にすることで、PDF のサイズを縮小します。ステップ バイ ステップ ガイドに従って、ドキュメントを最適化し、効率的に保存および共有できるようにします。 |
+| [埋め込まれた Arial および Times Roman フォントをスキップして PDF サイズを最適化](./skip-embedded-arial-and-times-roman-fonts/) | Aspose.Words for .NET を使用して、埋め込まれた Arial および Times Roman フォントをスキップすることで PDF サイズを最適化します。このステップ バイ ステップ ガイドに従って、PDF ファイルを効率化します。 |
+| [コアフォントを埋め込まないことでPDFファイルのサイズを縮小する](./avoid-embedding-core-fonts/) | Aspose.Words for .NET を使用してコア フォントを埋め込まないことで PDF ファイルのサイズを縮小する方法を学びます。ステップ バイ ステップ ガイドに従って PDF を最適化してください。 |
 | [PDF ドキュメント内の URI をエスケープする](./escape-uri/) | Aspose.Words for .NET を使用して PDF 内の URI をエスケープする方法を学びます。この詳細なガイドでは、プロセスをステップごとに説明します。 |
-| [Word 文書のヘッダー フッター ブックマークを PDF 文書にエクスポートする](./export-header-footer-bookmarks/) | Aspose.Words for .NET を使用してヘッダーとフッターのブックマークをエクスポートするためのステップ バイ ステップ ガイド。 |
-| [WMF フォントをメタファイル サイズにスケールして PDF サイズを縮小する](./scale-wmf-fonts-to-metafile-size/) | Aspose.Words for .NET を使用して PDF に変換するときに WMF フォント サイズを調整するためのステップ バイ ステップ ガイド。 |
-| [追加のテキスト配置でPDFテキストの配置を改善](./additional-text-positioning/) | Aspose.Words for .NET を使用して Word 文書を PDF に変換するときに、追加テキストの配置を制御する方法を学習します。 |
-| [Word 文書を PDF に変換する 1.7](./conversion-to-pdf-17/) | Aspose.Words for .NET を使用してドキュメントを PDF 1.7 に変換する方法を学習します。 |
-| [画像のダウンサンプリングでPDF文書のサイズを縮小](./downsampling-images/) | Aspose.Words for .NET を使用して PDF に変換するときに画像の解像度を下げる方法を学習します。 |
-| [PDF ドキュメントのアウトライン オプションを設定する](./set-outline-options/) | Aspose.Words for .NET を使用して PDF ドキュメントのアウトライン オプションを設定する手順ガイド。 |
-| [PDF ドキュメントのカスタム プロパティをエクスポートする](./custom-properties-export/) | Aspose.Words for .NET を使用してドキュメントを PDF に変換するときにカスタム プロパティをエクスポートする方法を学習します。 |
-| [Word 文書の構造を PDF 文書にエクスポートする](./export-document-structure/) | Aspose.Words for .NET を使用してドキュメント構造をエクスポートするためのステップ バイ ステップ ガイド。 |
-| [PDF 文書内の画像圧縮](./image-compression/) | Aspose.Words for .NET を使用して画像を圧縮するためのステップ バイ ステップ ガイド。 |
-| [PDF ドキュメントの最終印刷プロパティを更新する](./update-last-printed-property/) | Aspose.Words for .NET を使用して PDF に変換するときに、「最終印刷」プロパティを更新するためのステップバイステップ ガイド。 |
-| [PDF ドキュメントで 3D DML 3DEffects をレンダリングする](./dml-3deffects-rendering/) | Aspose.Words for .NET を使用して PDF に変換するときに 3D DML 効果のレンダリングを有効にする方法を学習します。 |
-| [PDF ドキュメント内の画像を補間する](./interpolate-images/) | Aspose.Words for .NET を使用して画像補間を有効にするためのステップバイステップ ガイド。 |
+| [Word 文書のヘッダー フッター ブックマークを PDF 文書にエクスポートする](./export-header-footer-bookmarks/) | Aspose.Words for .NET を使用して、Word 文書からヘッダーとフッターのブックマークを PDF にエクスポートする方法をステップバイステップ ガイドで学習します。 |
+| [WMF フォントをメタファイル サイズにスケールして PDF サイズを縮小する](./scale-wmf-fonts-to-metafile-size/) | Aspose.Words for .NET を使用して PDF に変換するときに、wmf フォントをメタファイル サイズに合わせて PDF サイズを縮小する手順ガイド。 |
+| [追加のテキスト配置でPDFテキストの配置を改善](./additional-text-positioning/) | Aspose.Words for .NET を使用して、いくつかの簡単な手順で PDF テキストの配置を改善する方法を学びます。ドキュメントの外観を強化します。 |
+| [Word 文書を PDF に変換する 1.7](./conversion-to-pdf-17/) | Aspose.Words for .NET を使用して、Word 文書を PDF 1.7 に簡単に変換できます。このガイドに従って、文書がユニバーサルにアクセス可能でプロフェッショナルな形式になっていることを確認してください。 |
+| [画像のダウンサンプリングでPDF文書のサイズを縮小](./downsampling-images/) | Aspose.Words for .NET を使用して画像をダウンサンプリングすることで、PDF ドキュメントのサイズを縮小します。PDF を最適化して、アップロードとダウンロードの時間を短縮します。 |
+| [PDF ドキュメントのアウトライン オプションを設定する](./set-outline-options/) | Aspose.Words for .NET を使用して PDF ドキュメントのアウトライン オプションを設定する方法を学習します。見出しレベルと拡張アウトラインを構成することで、PDF ナビゲーションを強化します。 |
+| [PDF ドキュメントのカスタム プロパティをエクスポートする](./custom-properties-export/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して PDF ドキュメントのカスタム プロパティをエクスポートする方法を学習します。 |
+| [Word 文書の構造を PDF 文書にエクスポートする](./export-document-structure/) | Aspose.Words for .NET を使用して、Word 文書の構造を PDF にエクスポートします。ステップ バイ ステップ ガイドに従って、文書のレイアウトを維持し、PDF ナビゲーションを改善します。 |
+| [PDF 文書内の画像圧縮](./image-compression/) | Aspose.Words for .NET を使用して PDF ドキュメント内の画像を圧縮する方法を学びます。ファイル サイズと品質を最適化するには、このガイドに従ってください。 |
+| [PDF ドキュメントの最終印刷プロパティを更新する](./update-last-printed-property/) | ステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して PDF ドキュメント内の最後に印刷されたプロパティを更新する方法を学習します。 |
+| [PDF ドキュメントで 3D DML 3DEffects をレンダリングする](./dml-3deffects-rendering/) | この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して PDF ドキュメントに魅力的な 3D DML 効果をレンダリングする方法を学習します。 |
+| [PDF ドキュメント内の画像を補間する](./interpolate-images/) | Aspose.Words for .NET を使用して PDF ドキュメント内の画像を補間する方法をステップバイステップ ガイドで学習します。PDF の画像品質を簡単に向上できます。 |

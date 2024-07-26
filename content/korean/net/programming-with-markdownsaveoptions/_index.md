@@ -13,5 +13,5 @@ MarkdownSaveOptions를 사용한 단어 처리는 .NET용 Aspose.Words 라이브
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [테이블 내용 정렬을 사용하여 마크다운으로 내보내기](./export-into-markdown-with-table-content-alignment/) | .NET용 Aspose.Words를 사용하여 다양한 정렬로 테이블 콘텐츠를 Markdown 파일로 내보내는 방법을 알아보세요. |
-| [이미지 폴더 설정](./set-images-folder/) | .NET용 Aspose.Words를 사용하여 Markdown으로 내보낼 때 이미지 폴더를 설정하는 방법을 알아보세요. 더 나은 구성과 통합을 위해 이미지 배치를 사용자 정의하세요.|
+| [테이블 내용 정렬을 사용하여 마크다운으로 내보내기](./export-into-markdown-with-table-content-alignment/) | .NET용 Aspose.Words를 사용하여 정렬된 표를 사용하여 Word 문서를 Markdown으로 내보내는 방법을 알아보세요. 완벽한 Markdown 테이블을 위한 단계별 가이드를 따르세요. |
+| [이미지 폴더 설정](./set-images-folder/) | .NET용 Aspose.Words를 사용하여 적절한 테이블 정렬을 통해 Word 문서를 Markdown으로 변환합니다. 완벽한 결과를 얻으려면 자세한 가이드를 따르십시오. |

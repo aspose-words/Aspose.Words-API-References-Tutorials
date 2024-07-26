@@ -16,6 +16,6 @@ url: /ko/net/programming-with-fileformat/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [문서 파일 형식 감지](./detect-file-format/) | .NET용 Aspose.Words를 사용하여 문서 파일 형식을 감지하는 단계별 가이드입니다. |
-| [Word 문서에서 디지털 서명 감지](./detect-document-signatures/) | .NET용 Aspose.Words를 사용하여 문서에서 디지털 서명을 감지하는 단계별 가이드입니다. |
-| [암호화된 Word 문서 확인](./verify-encrypted-document/) | 문서가 .NET용 Aspose.Words로 암호화되었는지 확인하는 단계별 가이드입니다. |
+| [문서 파일 형식 감지](./detect-file-format/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 문서 파일 형식을 감지하는 방법을 알아보세요. |
+| [Word 문서에서 디지털 서명 감지](./detect-document-signatures/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 디지털 서명을 감지하는 방법을 알아보세요. |
+| [암호화된 Word 문서 확인](./verify-encrypted-document/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 암호화 상태를 확인하는 방법을 알아보세요. |

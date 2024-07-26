@@ -157,7 +157,7 @@ if __name__ == "__main__":
 
 ## 9. Xử lý văn bản và xử lý tài liệu với Aspose.Words
 
-Ngoài các tính năng bảo mật, Aspose.Words còn cung cấp nhiều chức năng xử lý văn bản và thao tác tài liệu. Những tính năng này trao quyền cho nhà phát triển tạo tài liệu Word động và giàu tính năng.
+Ngoài các tính năng bảo mật, Aspose.Words còn cung cấp nhiều chức năng xử lý văn bản và thao tác tài liệu. Những tính năng này cho phép các nhà phát triển tạo ra các tài liệu Word động và giàu tính năng.
 
 ## Phần kết luận
 

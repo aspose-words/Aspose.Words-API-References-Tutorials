@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Шаг 3. Добавьте текстовый водяной знак с определенными параметрами.
 
- Мы создадим экземпляр`TextWatermarkOptions`class и установите нужные параметры для текстового водяного знака.
+ Мы создадим экземпляр`TextWatermarkOptions` class и установите нужные параметры для текстового водяного знака.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

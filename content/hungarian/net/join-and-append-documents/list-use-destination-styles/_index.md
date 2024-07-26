@@ -64,7 +64,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## 4. lépés: Csatolja a forrásdokumentumot a céldokumentumhoz
 
-Most végezzük el az egyesítést. Itt történik a varázslat. A forrásdokumentumot hozzáfűzzük a céldokumentumhoz, miközben a megadott importálási beállításokat használjuk.
+Most pedig végezzük az összevonást. Itt történik a varázslat. A forrásdokumentumot hozzáfűzzük a céldokumentumhoz, miközben a megadott importálási beállításokat használjuk.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

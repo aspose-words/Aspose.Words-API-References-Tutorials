@@ -16,8 +16,8 @@ Niezależnie od tego, czy chcesz tworzyć dokumenty kompatybilne ze starszymi we
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Zaszyfruj dokument za pomocą hasła](./encrypt-docx-with-password/) | Dowiedz się, jak zaszyfrować plik DOCX hasłem przy użyciu Aspose.Words dla .NET. Kompletny samouczek dotyczący bezpieczeństwa dokumentów. |
-| [Zgodność z Ooxml ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Dowiedz się, jak zapewnić zgodność Ooxml ISO 29500_2008_Strict podczas zapisywania dokumentów za pomocą Aspose.Words dla .NET. |
-| [Zaktualizuj właściwość ostatniego zapisanego czasu](./update-last-saved-time-property/) | Dowiedz się, jak automatycznie aktualizować właściwość Ostatni zapisany czas podczas zapisywania dokumentu za pomocą Aspose.Words dla .NET. |
-| [Zachowaj starsze znaki kontrolne](./keep-legacy-control-chars/) | Dowiedz się, jak zachować starsze znaki kontrolne podczas zapisywania dokumentu za pomocą Aspose.Words dla .NET. |
-| [Ustaw poziom kompresji](./set-compression-level/) | Dowiedz się, jak ustawić poziom kompresji podczas zapisywania dokumentu za pomocą Aspose.Words dla .NET. |
+| [Zaszyfruj dokument za pomocą hasła](./encrypt-docx-with-password/) | Zabezpiecz swoje dokumenty Word, szyfrując je hasłem przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby chronić swoje wrażliwe informacje. |
+| [Zgodność z Ooxml ISO 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Dowiedz się, jak zapewnić zgodność OOXML z ISO 29500_2008_Strict przy użyciu Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. |
+| [Zaktualizuj właściwość ostatniego zapisanego czasu](./update-last-saved-time-property/) | Dowiedz się, jak zaktualizować właściwość ostatniego zapisanego czasu w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku. |
+| [Zachowaj starsze znaki kontrolne](./keep-legacy-control-chars/) | Dowiedz się, jak zachować starsze znaki kontrolne w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku. |
+| [Ustaw poziom kompresji](./set-compression-level/) | Dowiedz się, jak ustawić poziom kompresji w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby zoptymalizować przechowywanie i wydajność dokumentów. |

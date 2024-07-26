@@ -16,6 +16,6 @@ Függetlenül attól, hogy jelentéseket kell készítenie, egyedi dokumentumoka
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Dokumentumfájl formátum észlelése](./detect-file-format/) | Lépésről lépésre útmutató a dokumentumfájl-formátum felismeréséhez az Aspose.Words for .NET segítségével. |
-| [Digitális aláírás észlelése Word dokumentumon](./detect-document-signatures/) | Útmutató lépésről lépésre a digitális aláírások észleléséhez egy dokumentumban az Aspose.Words for .NET segítségével. |
-| [Ellenőrizze a titkosított Word-dokumentumot](./verify-encrypted-document/) | Útmutató lépésről lépésre a dokumentum Aspose.Words for .NET segítségével történő titkosításának ellenőrzéséhez. |
+| [Dokumentumfájl formátum észlelése](./detect-file-format/) | Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan észlelheti a dokumentumfájl-formátumokat az Aspose.Words for .NET használatával. |
+| [Digitális aláírás észlelése Word dokumentumon](./detect-document-signatures/) | Részletes útmutatónkból megtudhatja, hogyan észlelheti a digitális aláírásokat Word-dokumentumokban az Aspose.Words for .NET használatával. |
+| [Ellenőrizze a titkosított Word-dokumentumot](./verify-encrypted-document/) | Ebből a lépésenkénti útmutatóból megtudhatja, hogyan ellenőrizheti egy Word-dokumentum titkosítási állapotát az Aspose.Words for .NET használatával. |

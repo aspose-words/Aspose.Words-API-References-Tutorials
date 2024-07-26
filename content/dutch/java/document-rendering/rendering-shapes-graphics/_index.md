@@ -129,7 +129,7 @@ Aspose.Words voor Java is veelzijdig en kan in verschillende scenario's worden g
 
 ## Tips voor het oplossen van problemen
 
-Als u problemen ondervindt bij het werken met vormen en afbeeldingen, raadpleeg dan de Aspose.Words voor Java-documentatie of communityforums voor oplossingen. Veelvoorkomende problemen zijn onder meer de compatibiliteit van afbeeldingsformaten en problemen met lettertypen.
+Als u problemen ondervindt tijdens het werken met vormen en afbeeldingen, raadpleeg dan de Aspose.Words voor Java-documentatie of communityforums voor oplossingen. Veelvoorkomende problemen zijn onder meer de compatibiliteit van afbeeldingsformaten en problemen met lettertypen.
 
 ## Conclusie
 

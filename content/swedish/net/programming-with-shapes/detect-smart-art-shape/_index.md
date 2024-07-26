@@ -21,7 +21,7 @@ Innan vi dyker in i detaljerna, låt oss se till att du har allt konfigurerat:
 3. Visual Studio: Alla senaste versioner bör fungera, men den senaste versionen rekommenderas.
 4. .NET Framework: Se till att det är installerat på ditt system.
 
-Redo att komma igång? Grymt bra! Låt oss hoppa direkt in.
+Redo att börja? Grymt bra! Låt oss hoppa direkt in.
 
 ## Importera namnområden
 
@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- I det här steget använder vi LINQ för att filtrera och räkna de former som har SmartArt. De`GetChildNodes` metoden hämtar alla former, och`HasSmartArt` egenskapen kontrollerar om en form innehåller SmartArt.
+ I det här steget använder vi LINQ för att filtrera och räkna de former som har SmartArt. De`GetChildNodes` metoden hämtar alla former, och`HasSmartArt`egenskapen kontrollerar om en form innehåller SmartArt.
 
 ## Steg 4: Kör koden
 
@@ -80,7 +80,7 @@ Ersätt "X" med det faktiska antalet SmartArt-former i ditt dokument.
 
 ## Slutsats
 
-Och där har du det! Du har framgångsrikt lärt dig hur du upptäcker SmartArt-former i Word-dokument med Aspose.Words för .NET. Denna handledning behandlade hur du ställer in din miljö, laddar dokument, upptäcker SmartArt-former och kör koden. Aspose.Words erbjuder ett brett utbud av funktioner, så se till att utforska[API dokumentation](https://reference.aspose.com/words/net/) för att frigöra dess fulla potential.
+ Och där har du det! Du har framgångsrikt lärt dig hur du upptäcker SmartArt-former i Word-dokument med Aspose.Words för .NET. Denna handledning behandlade hur du ställer in din miljö, laddar dokument, upptäcker SmartArt-former och kör koden. Aspose.Words erbjuder ett brett utbud av funktioner, så se till att utforska[API dokumentation](https://reference.aspose.com/words/net/) för att frigöra dess fulla potential.
 
 ## Vanliga frågor
 

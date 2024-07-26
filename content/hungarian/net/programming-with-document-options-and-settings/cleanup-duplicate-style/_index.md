@@ -9,13 +9,13 @@ url: /hu/net/programming-with-document-options-and-settings/cleanup-duplicate-st
 ---
 ## Bevezetés
 
-Sziasztok, a kódolás szerelmesei! Volt már olyan, hogy belegabalyodik a duplikált stílusok hálójába, miközben Word-dokumentumon dolgozott? Mindannyian ott voltunk, és ez nem valami szép látvány. De ne aggódjon, az Aspose.Words for .NET itt van, hogy megmentse a napot! Ebben az oktatóanyagban belevetjük magunkat a Word-dokumentumok ismétlődő stílusainak megtisztításába az Aspose.Words for .NET használatával. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az útmutató világos, könnyen követhető utasításokkal végigvezeti Önt minden lépésen. Szóval, feltűrjük az ingujjunkat, és kezdjük!
+Sziasztok, a kódolás szerelmesei! Volt már olyan, hogy belegabalyodott a duplikált stílusok hálójába, miközben Word-dokumentumon dolgozott? Mindannyian ott voltunk, és ez nem valami szép látvány. De ne aggódjon, az Aspose.Words for .NET itt van, hogy megmentse a napot! Ebben az oktatóanyagban belevetjük magunkat a Word-dokumentumok ismétlődő stílusainak megtisztításába az Aspose.Words for .NET használatával. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az útmutató világos, könnyen követhető utasításokkal végigvezeti Önt minden lépésen. Szóval, feltűrjük az ingujjunkat, és kezdjük!
 
 ## Előfeltételek
 
 Mielőtt belevágnánk a cselekvésbe, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
-1. Alapvető C# ismerete: Nem kell C# varázslónak lenned, de a nyelv alapszintű ismerete hasznos lesz.
+1. Alapvető C# ismerete: Nem kell C# varázslónak lenned, de a nyelv alapvető ismerete hasznos lesz.
 2. Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words for .NET könyvtár. Ha nem, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
 3. Fejlesztési környezet: Egy jó fejlesztői környezet, mint a Visual Studio, nagyban megkönnyíti az életét.
 4. Mintadokumentum: Készítsen tesztre készen egy Word dokumentumot (.docx), amely ismétlődő stílusokat tartalmaz.

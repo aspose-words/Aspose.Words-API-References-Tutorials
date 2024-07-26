@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## 3. lépés: Adjon hozzá szöveges vízjelet meghatározott beállításokkal
 
- Létrehozunk egy példányt a`TextWatermarkOptions`osztályt, és állítsa be a szöveges vízjel kívánt beállításait.
+ Létrehozunk egy példányt a`TextWatermarkOptions` osztályt, és állítsa be a szöveges vízjel kívánt beállításait.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

@@ -1,6 +1,6 @@
 ---
-title: Känn igen och ersättningar inom ersättningsmönster
-linktitle: Känn igen och ersättningar inom ersättningsmönster
+title: Identifiera och ersättningar inom ersättningsmönster
+linktitle: Identifiera och ersättningar inom ersättningsmönster
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du känner igen och ersätter text i ersättningsmönster med Aspose.Words för .NET. Steg-för-steg guide med detaljerade exempel.
 type: docs

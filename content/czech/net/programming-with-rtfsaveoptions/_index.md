@@ -16,4 +16,4 @@ Pomocí výukových programů Aspose.Words for .NET budete moci snadno spravovat
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Ukládání obrázků jako Wmf](./saving-images-as-wmf/) | Naučte se ukládat obrázky jako WMF při převodu do RTF pomocí Aspose.Words for .NET. |
+| [Ukládání obrázků jako Wmf](./saving-images-as-wmf/) | Naučte se ukládat obrázky jako WMF v dokumentech Word pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. Zvyšte kompatibilitu svých dokumentů a kvalitu obrazu. |

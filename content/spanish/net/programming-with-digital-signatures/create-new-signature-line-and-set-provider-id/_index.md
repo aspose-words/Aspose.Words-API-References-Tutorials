@@ -104,7 +104,7 @@ Estas opciones garantizan que el documento esté firmado con los detalles correc
 
 ## Paso 6: crear titular del certificado
 
-Para firmar el documento, usaremos un certificado PFX. Creemos un titular de certificado para ello.
+Para firmar el documento, utilizaremos un certificado PFX. Creemos un titular de certificado para ello.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");

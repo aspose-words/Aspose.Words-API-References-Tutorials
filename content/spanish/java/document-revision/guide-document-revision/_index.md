@@ -161,7 +161,7 @@ Aspose.Words ofrece funciones avanzadas para el manejo de revisiones, como resol
 
 ### 5.1 Formato de texto y párrafos
 
-Aspose.Words le permite aplicar varias opciones de formato al texto y párrafos, como estilos de fuente, colores, alineación, interlineado y sangría.
+Aspose.Words le permite aplicar varias opciones de formato al texto y a los párrafos, como estilos de fuente, colores, alineación, interlineado y sangría.
 
 ### 5.2 Agregar encabezados, pies de página y marcas de agua
 

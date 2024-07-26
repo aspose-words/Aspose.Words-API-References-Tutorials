@@ -41,7 +41,7 @@ Mielőtt manipulálhatnánk a dokumentumát, meg kell határoznunk, hol találha
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentummappa elérési útjával. Itt található a Word fájl.
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` dokumentummappa elérési útjával. Itt található a Word fájl.
 
 ## 2. lépés: Töltse be a dokumentumot
 

@@ -13,7 +13,7 @@ Words Processing with Markdown は、Aspose.Words for .NET ライブラリを使
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [太字](./bold-text/) | Aspose.Words for .NET を使用してテキストを太字にする方法をステップバイステップで学習します。 |
+| [太字](./bold-text/) | Aspose.Words for .NET を使用してテキストを太字にする方法をステップバイステップ ガイドで学習します。 |
 | [斜体テキスト](./italic-text/) | Aspose.Words for .NET を使用してテキストを斜体にする方法をステップバイステップで学習します。 |
 | [取り消し線](./strikethrough/) | Aspose.Words for .NET を使用して取り消し線テキスト スタイルを適用する方法をステップ バイ ステップ ガイドで学習します。 |
 | [インラインコード](./inline-code/) | Aspose.Words for .NET を使用してコードをインライン化する方法を学ぶステップバイステップ ガイド。 |
@@ -27,7 +27,7 @@ Words Processing with Markdown は、Aspose.Words for .NET ライブラリを使
 | [フェンスコード](./fenced-code/) | Aspose.Words for .NET でフェンス コード機能を使用する方法をステップ バイ ステップ ガイドで学習します。 |
 | [引用](./quote/) | Aspose.Words for .NET で quote を使用する方法をステップバイステップ ガイドで学習します。 |
 | [箇条書きリスト](./bulleted-list/) | Aspose.Words for .NET を使用して箇条書きリストを作成する方法をステップバイステップ ガイドで学習します。 |
-| [順序付きリスト](./ordered-list/) | Aspose.Words for .NET を使用して Word 文書に順序付きリストを作成する方法を、ステップバイステップ ガイドで学習します。文書作成の自動化に最適です。 |
+| [順序付きリスト](./ordered-list/) | Aspose.Words for .NET を使用して Word 文書に順序付きリストを作成する方法を、ステップバイステップ ガイドで学習します。ドキュメント作成の自動化に最適です。 |
 | [テーブル](./table/) | このステップバイステップ ガイドでは、Aspose.Words for .NET でテーブルを作成し、カスタマイズする方法を学習します。構造化された視覚的に魅力的なドキュメントを生成するのに最適です。 |
 | [Markdownドキュメントを読む](./read-markdown-document/) | Aspose.Words for .NET を使用してマークダウン ドキュメントを読み取る方法をステップ バイ ステップ ガイドで学習します。 |
 | [強調点](./emphases/) | Aspose.Words for .NET で強調 (太字と斜体) を使用する方法をステップ バイ ステップ ガイドで学習します。 |

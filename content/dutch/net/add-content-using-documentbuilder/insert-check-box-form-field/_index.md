@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 4: Een formulierveld voor een selectievakje invoegen
 
-Hier komt het leuke gedeelte! We gaan nu een selectievakje-formulierveld in ons document invoegen.
+Hier komt het leuke gedeelte! We gaan nu een formulierveld voor een selectievakje in ons document invoegen.
 
 ```csharp
 builder.InsertCheckBox("CheckBox", true, true, 0);
@@ -106,7 +106,7 @@ Ja, Aspose.Words voor .NET kan worden geïntegreerd met elke .NET-toepassing, in
 
 ### Is het mogelijk om het formulierveld van het selectievakje aan te passen?
 
-Absoluut! Aspose.Words voor .NET biedt verschillende parameters om het formulierveld van het selectievakje aan te passen, inclusief de grootte, de standaardstatus en meer.
+Absoluut! Aspose.Words voor .NET biedt verschillende parameters om het formulierveld van het selectievakje aan te passen, inclusief de grootte, standaardstatus en meer.
 
 ### Waar kan ik meer tutorials vinden over Aspose.Words voor .NET?
 

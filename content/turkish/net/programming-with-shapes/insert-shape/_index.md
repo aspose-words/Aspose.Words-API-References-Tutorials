@@ -17,7 +17,7 @@ Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 - Temel C# bilgisi ve Word belgeleriyle Kelime İşleme.
 
 ## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. Adım: Şekilleri Ekleme
- Kullan`InsertShape` yöntemi`DocumentBuilder`Belgeye şekiller eklemek için nesne. Şekil türünü, göreli yatay ve dikey konumları, sayfa boyutlarını, boyutunu ve sarma türünü belirtin. İsterseniz şekillerin dönüş açısını da ayarlayabilirsiniz.
+ Kullan`InsertShape` yöntemi`DocumentBuilder` Belgeye şekiller eklemek için nesne. Şekil türünü, göreli yatay ve dikey konumları, sayfa boyutlarını, boyutunu ve sarma türünü belirtin. İsterseniz şekillerin dönüş açısını da ayarlayabilirsiniz.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

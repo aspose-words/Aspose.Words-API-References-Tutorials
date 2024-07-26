@@ -15,7 +15,7 @@ W tym samouczku przeprowadzimy Cię przez proces akceptowania poprawek w dokumen
 W tym przykładzie tworzymy dokument i dodajemy treść. Używamy kilku akapitów do zilustrowania zmian i poprawek. Oto jak:
 
 ```csharp
-//Ścieżka do katalogu dokumentów.
+// Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

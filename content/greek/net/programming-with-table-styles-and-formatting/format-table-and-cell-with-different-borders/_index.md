@@ -65,7 +65,7 @@ builder.Writeln("Cell #4");
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-Συγχαρητήρια ! Τώρα έχετε μορφοποιήσει έναν πίνακα και ένα κελί με διαφορετικά περιγράμματα χρησιμοποιώντας το Aspose.Words για .NET.
+συγχαρητήρια ! Τώρα έχετε μορφοποιήσει έναν πίνακα και ένα κελί με διαφορετικά περιγράμματα χρησιμοποιώντας το Aspose.Words για .NET.
 
 ### Δείγμα πηγαίου κώδικα για Μορφοποίηση πίνακα και κελί με διαφορετικά σύνορα χρησιμοποιώντας το Aspose.Words για .NET 
 

@@ -12,4 +12,4 @@ url: /ar/net/programming-with-htmlloadoptions/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [نوع التحكم المفضل في مستند Word](./preferred-control-type/) | دليل خطوة بخطوة لتحديد نوع التحكم المفضل في مستند Word عند تحميل مستند HTML باستخدام Aspose.Words for .NET. |
+| [نوع التحكم المفضل في مستند Word](./preferred-control-type/) | تعرف على كيفية إدراج حقل نموذج مربع التحرير والسرد في مستند Word باستخدام Aspose.Words لـ .NET. اتبع هذا الدليل التفصيلي خطوة بخطوة للتكامل السلس لمحتوى HTML. |

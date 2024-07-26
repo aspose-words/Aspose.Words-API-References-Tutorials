@@ -2,88 +2,102 @@
 title: PDF Belgesinde Anahat Seçeneklerini Ayarlama
 linktitle: PDF Belgesinde Anahat Seçeneklerini Ayarlama
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir PDF belgesinde taslak seçeneklerini ayarlamak için adım adım kılavuz.
+description: Aspose.Words for .NET kullanarak bir PDF belgesinde anahat seçeneklerini nasıl ayarlayacağınızı öğrenin. Başlık düzeylerini ve genişletilmiş ana hatları yapılandırarak PDF gezinmesini geliştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
+## giriiş
 
-Bu makale, Aspose.Words for .NET ile meta dosya boyutuna yönelik anahat seçeneklerini ayarlama özelliğinin nasıl kullanılacağı hakkında adım adım bir kılavuz sağlar. Kodun her bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgedeki anahat seçeneklerini nasıl ayarlayacağınızı ve ilgili anahat seçenekleriyle bir PDF oluşturmayı anlayabileceksiniz.
+Özellikle profesyonel veya akademik amaçlarla belgelerle çalışırken içeriğinizi etkili bir şekilde düzenlemek çok önemlidir. PDF belgelerinizin kullanılabilirliğini geliştirmenin bir yolu anahat seçeneklerini ayarlamaktır. Ana hatlar veya yer imleri, tıpkı bir kitaptaki bölümler gibi kullanıcıların belgede verimli bir şekilde gezinmesine olanak tanır. Bu kılavuzda, Aspose.Words for .NET'i kullanarak bu seçenekleri nasıl ayarlayabileceğinizi, PDF dosyalarınızın iyi organize edilmiş ve kullanıcı dostu olmasını nasıl sağlayacağınızı açıklayacağız.
 
-Başlamadan önce projenize Aspose.Words for .NET kütüphanesini kurup yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
+## Önkoşullar
 
-## 1. Adım: Belge dizinini tanımlayın
+Başlamadan önce, sahip olduğunuzdan emin olmanız gereken birkaç şey var:
 
- Başlamak için belgelerinizin bulunduğu dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
+1.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. Değilse, yapabilirsiniz[en son sürümü buradan indirin](https://releases.aspose.com/words/net/).
+2. .NET Geliştirme Ortamı: Visual Studio gibi çalışan bir .NET geliştirme ortamına ihtiyacınız olacak.
+3. Temel C# Anlayışı: C# programlama diline aşina olmak, kolayca ilerlemenize yardımcı olacaktır.
+4. Word Belgesi: PDF'ye dönüştüreceğiniz bir Word belgesini hazır bulundurun.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Belgenizle etkileşim kurmak için Aspose.Words kütüphanesini ekleyeceğiniz yer burasıdır. Bunu nasıl ayarlayacağınız aşağıda açıklanmıştır:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1. Adım: Belge Yolunu Tanımlayın
+
+Başlamak için Word belgenizin yolunu belirtmeniz gerekir. Bu, anahat seçenekleriyle PDF'ye dönüştürmek istediğiniz dosyadır. 
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 2. Adım: Belgeyi yükleyin
-
-Daha sonra işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte belgenin "Rendering.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. Adım: PDF olarak kaydetme seçeneklerini plan seçenekleriyle yapılandırın
+ Yukarıdaki kod parçacığında değiştirin`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile. Bu, programa Word belgesini nerede bulacağını söyler.
 
-Oluşturulan PDF'deki anahat seçeneklerini ayarlamak için,`PdfSaveOptions` nesne. Başlık anahat düzeylerinin sayısını ayarlayabiliriz (`HeadingsOutlineLevels`) ve genişletilmiş anahat düzeylerinin sayısı (`ExpandedOutlineLevels`).
+## 2. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
+
+ Daha sonra PDF kaydetme seçeneklerini yapılandırmanız gerekir. Bu, PDF çıktısında ana hatların nasıl ele alınması gerektiğinin ayarlanmasını da içerir. Kullanacaksın`PdfSaveOptions` Bunu yapmak için sınıf.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
+```
+
+Şimdi anahat seçeneklerini ayarlayalım. 
+
+### Başlık Anahat Düzeylerini Ayarlayın
+
+`HeadingsOutlineLevels` özelliği, PDF taslağına kaç düzeyde başlık eklenmesi gerektiğini tanımlar. Örneğin, bunu 3'e ayarlarsanız PDF taslağında en fazla üç düzeyde başlık bulunur.
+
+```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
+```
+
+### Genişletilmiş Anahat Düzeylerini Ayarlama
+
+`ExpandedOutlineLevels`özelliği, PDF açıldığında varsayılan olarak anahattın kaç düzeyinin genişletilmesi gerektiğini kontrol eder. Bunu 1'e ayarlamak, üst düzey başlıkları genişleterek ana bölümlerin net bir görünümünü sağlar.
+
+```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 ```
 
-## 4. Adım: Anahat seçenekleriyle belgeyi PDF olarak kaydedin
+## 3. Adım: Belgeyi PDF olarak kaydedin
 
-Son olarak daha önce yapılandırdığımız kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedebiliriz.
+ Seçenekler yapılandırıldığında belgeyi PDF olarak kaydetmeye hazırsınız. Kullan`Save` yöntemi`Document` sınıf ve dosya yolunu iletin ve seçenekleri kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-Bu kadar ! Aspose.Words for .NET'i kullanarak bir belgedeki anahat seçeneklerini başarıyla ayarladınız ve karşılık gelen anahat seçenekleriyle bir PDF oluşturdunuz.
-
-### Aspose.Words for .NET ile plan seçeneklerini meta dosya boyutuna ayarlamak için örnek kaynak kodu
-
-
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
-	saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
-   
-```
+Bu kod satırı, yapılandırdığınız anahat seçeneklerini uygulayarak Word belgenizi PDF olarak kaydeder. 
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir PDF belgesinde anahat seçeneklerinin nasıl ayarlanacağını açıkladık. Açıklanan adımları kullanarak belgenizdeki başlık ve anahat düzeylerini kolayca belirleyebilir ve ilgili anahat seçenekleriyle bir PDF dosyası oluşturabilirsiniz. Aspose.Words for .NET'i kullanarak PDF belgelerinizdeki yapıyı ve gezinmeyi geliştirmek için anahat seçeneğinin avantajlarından yararlanın.
+Bir PDF belgesinde anahat seçeneklerini ayarlamak, belgenin gezinilebilirliğini büyük ölçüde artırabilir ve kullanıcıların ihtiyaç duydukları bölümleri bulmasını ve erişmesini kolaylaştırabilir. Aspose.Words for .NET ile bu ayarları ihtiyaçlarınıza uyacak şekilde kolayca yapılandırabilir, PDF belgelerinizin mümkün olduğunca kullanıcı dostu olmasını sağlayabilirsiniz.
 
-### Sıkça Sorulan Sorular
+## SSS'ler
 
-#### S: Bir PDF belgesindeki anahat seçeneği nedir?
-C: Bir PDF belgesindeki anahat seçeneği, belge içeriğinin hiyerarşik yapısını ifade eder. Etkileşimli bir içindekiler tablosu oluşturmanıza olanak tanır ve belgede gezinmeyi kolaylaştırır. Anahat seçenekleri, ana hatta eklenecek başlık ve alt başlık düzeylerini ve oluşturulan taslakta görüntülenecek ayrıntı düzeyini belirler.
+### PDF'de anahat seçeneklerini ayarlamanın amacı nedir?
 
-#### S: Aspose.Words for .NET'i kullanarak bir PDF belgesindeki anahat seçeneklerini nasıl ayarlayabilirim?
-C: Aspose.Words for .NET kullanarak bir PDF belgesindeki taslak seçeneklerini ayarlamak için şu adımları izleyin:
+Anahat seçeneklerini ayarlamak, yapılandırılmış, tıklanabilir bir içindekiler tablosu sağlayarak kullanıcıların büyük PDF belgelerinde daha kolay gezinmesine yardımcı olur.
 
- Belgelerinizin bulunduğu dizin yolunu değiştirerek ayarlayın.`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+### Belgemdeki farklı bölümler için farklı başlık düzeyleri ayarlayabilir miyim?
 
- PDF'ye dönüştürmek istediğiniz belgeyi kullanarak yükleyin.`Document` sınıfını seçin ve belirtilen belgeler dizinindeki belgenin yolunu belirtin.
+Hayır, anahat ayarları belgenin tamamına genel olarak uygulanır. Ancak benzer bir etki elde etmek için belgenizi uygun başlık düzeyleriyle yapılandırabilirsiniz.
 
- Bir örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve kullanımı`OutlineOptions` Anahat seçeneklerini ayarlama özelliği. Anahatta dahil edilecek başlık düzeylerinin sayısını aşağıdaki düğmeyi kullanarak belirleyebilirsiniz:`HeadingsOutlineLevels` özelliğini ve genişletilmiş anahat seviyelerinin sayısını kullanarak`ExpandedOutlineLevels` mülk.
+### PDF'yi kaydetmeden önce değişiklikleri nasıl önizleyebilirim?
 
- Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document` yolu ve kaydetme seçeneklerini belirten sınıf.
+Anahatın nasıl göründüğünü kontrol etmek için anahat gezinmesini destekleyen PDF görüntüleyicileri kullanabilirsiniz. Bazı uygulamalar bunun için bir önizleme özelliği sağlar.
 
-#### S: Bir PDF belgesindeki plan seçeneği nedir?
-C: Bir PDF belgesindeki anahat seçeneği, içeriğin hiyerarşik bir yapısını oluşturmanıza olanak tanır; bu da belgede gezinmeyi ve farklı bölümlere erişmeyi kolaylaştırır. Bu, kullanıcıların içindekiler veya anahattaki girişleri tıklatarak belgenin belirli bölümlerine hızlı bir şekilde atlamasına olanak tanır. Anahat seçeneği aynı zamanda genel belge yapısına genel bir bakış sağlayarak okuma deneyimini de geliştirir.
+### PDF'yi kaydettikten sonra taslağı kaldırmak mümkün mü?
+
+Evet, PDF düzenleme yazılımını kullanarak ana hatları kaldırabilirsiniz ancak PDF oluşturulduktan sonra bunu Aspose.Words ile doğrudan başarmak mümkün değildir.
+
+### Aspose.Words ile başka hangi PDF kaydetme seçeneklerini yapılandırabilirim?
+
+Aspose.Words, PDF uyumluluk düzeyini ayarlama, yazı tiplerini gömme ve görüntü kalitesini ayarlama gibi çeşitli seçenekler sunar.

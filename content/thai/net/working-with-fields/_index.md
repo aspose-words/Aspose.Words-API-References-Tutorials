@@ -19,7 +19,7 @@ url: /th/net/working-with-fields/
 | [เปลี่ยนชื่อเขตข้อมูลผสาน](./rename-merge-fields/) | ในบทช่วยสอนนี้ คุณจะได้เรียนรู้วิธีเปลี่ยนชื่อเขตข้อมูลผสานในเอกสารโดยใช้ Aspose.Words สำหรับ .NET |
 | [ลบฟิลด์](./remove-field/) | ในคู่มือนี้ คุณจะได้เรียนรู้วิธีลบฟิลด์เฉพาะในเอกสารโดยใช้ Aspose.Words for .NET |
 | [แทรกฟิลด์ TOA โดยไม่มีตัวสร้างเอกสาร](./insert-toafield-without-document-builder/) | คำแนะนำทีละขั้นตอนในการแทรกฟิลด์ TOA โดยไม่ต้องใช้ตัวสร้างเอกสารโดยใช้ Aspose.Words สำหรับ .NET |
-| [แทรกฟิลด์ที่ซ้อนกัน](./insert-nested-fields/) | เรียนรู้วิธีแทรกฟิลด์ที่ซ้อนกันลงในเอกสาร Word ของคุณด้วย Aspose.Words for .NET |
+| [แทรกฟิลด์ที่ซ้อนกัน](./insert-nested-fields/) | เรียนรู้วิธีแทรกฟิลด์ที่ซ้อนกันลงในเอกสาร Word ของคุณอย่างง่ายดายด้วย Aspose.Words for .NET |
 | [แทรกเขตข้อมูลผสานโดยใช้ DOM](./insert-merge-field-using-dom/) | เรียนรู้วิธีแทรกฟิลด์ผสานฟิลด์แบบกำหนดเองลงในเอกสาร Word ของคุณด้วย Aspose.Words for .NET |
 | [แทรกฟิลด์บล็อกที่อยู่จดหมายเวียนโดยใช้ DOM](./insert-mail-merge-address-block-field-using-dom/) | เรียนรู้วิธีแทรกฟิลด์บล็อกที่อยู่จดหมายเวียนลงในเอกสาร Word ของคุณด้วย Aspose.Words สำหรับ .NET |
 | [แทรก FieldIncludeText โดยไม่มีตัวสร้างเอกสาร](./insert-field-include-text-without-document-builder/) | เรียนรู้วิธีแทรกฟิลด์ FieldIncludeText ในเอกสาร Word ของคุณด้วย Aspose.Words สำหรับ .NET |

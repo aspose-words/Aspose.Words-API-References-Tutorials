@@ -32,7 +32,7 @@ using Aspose.Words.Loading;
 
 ## Adım 1: LoadOptions'ı Ayarlama
 
- İlk önce yapılandırmamız gerekiyor`LoadOptions` Varsayılan düzenleme dilini Rusça olarak ayarlamak için. Bu adım bir örneğinin oluşturulmasını içerir`LoadOptions` ve onun ayarlanması`LanguagePreferences.DefaultEditingLanguage` mülk.
+ İlk önce yapılandırmamız gerekiyor`LoadOptions` Varsayılan düzenleme dilini Rusça olarak ayarlamak için. Bu adım, bir örneğinin oluşturulmasını içerir.`LoadOptions` ve onun ayarlanması`LanguagePreferences.DefaultEditingLanguage` mülk.
 
 ### LoadOptions Örneği Oluşturun
 

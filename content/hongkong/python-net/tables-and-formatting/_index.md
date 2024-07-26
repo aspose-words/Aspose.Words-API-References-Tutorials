@@ -21,7 +21,7 @@ url: /zh-hant/python-net/tables-and-formatting/
 
 在整個教學系列中，您將踏上在 Aspose.Words 環境中理解和利用表格和格式設定的旅程。這些教程涵蓋了廣泛的主題，包括：
 
-- 表格建立：了解如何從頭開始建立表格或將其插入現有文件中。
+- 建立表格：了解如何從頭開始建立表格或將其插入現有文件中。
 - 單元格自訂：深入研究單元格格式、調整邊框、陰影和對齊方式。
 - 文字操作：探索在表格單元格中插入文字和格式化文字的技術。
 - 列和行管理：了解如何新增、刪除和調整列和行。
@@ -39,4 +39,4 @@ url: /zh-hant/python-net/tables-and-formatting/
 ### [優化 Word 文件中資料呈現的表格](./document-tables/)
 了解如何使用 Aspose.Words for Python 優化 Word 文件中的資料呈現表格。透過逐步指導和原始程式碼範例增強可讀性和視覺吸引力。
 ### [文件表格樣式和格式](./document-table-styles-formatting/)
-了解如何使用 Aspose.Words for Python 設定文件表格的樣式和格式。透過逐步指南和程式碼範例建立、自訂和匯出表。立即增強您的文件示範！ 
+了解如何使用 Aspose.Words for Python 設定文件表格的樣式和格式。透過逐步指南和程式碼範例建立、自訂和匯出表格。立即增強您的文件示範！ 

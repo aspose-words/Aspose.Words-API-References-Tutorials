@@ -14,4 +14,4 @@ Samouczki Aspose.Words dla .NET dostarczają cennych zasobów pozwalających opa
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Rasteryzuj przekształcone elementy](./rasterize-transformed-elements/) | Dowiedz się, jak wyłączyć rasteryzację przekształconych elementów podczas konwersji do formatu PCL za pomocą Aspose.Words dla .NET. |
+| [Rasteryzuj przekształcone elementy](./rasterize-transformed-elements/) | Dowiedz się, jak rasteryzować przekształcone elementy podczas konwersji dokumentów programu Word do formatu PCL przy użyciu Aspose.Words dla .NET. W zestawie instrukcja krok po kroku. |

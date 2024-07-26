@@ -16,4 +16,4 @@ Oavsett om du behöver konvertera dokument, manipulera innehåll, hantera format
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Mätenhet](./measure-unit/) | Lär dig hur du anger måttenheten när du konverterar ett Word-dokument till ODT med Aspose.Words för .NET. |
+| [Mätenhet](./measure-unit/) | Lär dig hur du konfigurerar måttenhetsfunktionen i Aspose.Words för .NET för att bevara dokumentformateringen under ODT-konvertering. |

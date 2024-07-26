@@ -66,7 +66,7 @@ foreach(Field field in document.Range.Fields)
      Console.WriteLine(field.DisplayResult);
 ```
 
-Trong ví dụ này, chúng tôi đã tải lên một tài liệu, cập nhật tất cả các trường rồi duyệt qua các trường để hiển thị kết quả của chúng. Bạn có thể tùy chỉnh bước này bằng cách sử dụng logic của riêng mình để xử lý kết quả trường.
+Trong ví dụ này, chúng tôi đã tải lên một tài liệu, cập nhật tất cả các trường và sau đó duyệt qua các trường để hiển thị kết quả của chúng. Bạn có thể tùy chỉnh bước này bằng cách sử dụng logic của riêng mình để xử lý kết quả trường.
 
 Điều này kết thúc hướng dẫn của chúng tôi về cách sử dụng tính năng "Hiển thị kết quả trường" với Aspose.Words cho .NET.
 

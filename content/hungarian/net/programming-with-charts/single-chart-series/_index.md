@@ -9,7 +9,7 @@ url: /hu/net/programming-with-charts/single-chart-series/
 ---
 ## Bevezetés
 
-Halihó! Szerette volna valaha is feldobni Word-dokumentumait néhány mutatós diagrammal? Nos, jó helyen jársz! Ma az Aspose.Words for .NET világába merülünk, hogy testreszabhassuk az egyes diagramsorozatokat egy diagramon. Akár tapasztalt profi, akár csak most kezdi, ez az útmutató lépésről lépésre végigvezeti a teljes folyamaton. Szóval, kösd be a csatot, és kezdjük a diagramkészítést!
+Halihó! Szerette volna valaha is feldobni Word-dokumentumait néhány mutatós diagrammal? Nos, jó helyen jársz! Ma az Aspose.Words for .NET világába merülünk, hogy testreszabhassuk az egyes diagramsorozatokat egy diagramon. Akár tapasztalt profi, akár csak most kezdi, ez az útmutató lépésről lépésre végigvezeti a teljes folyamaton. Szóval, kösd be, és kezdjük a diagramkészítést!
 
 ## Előfeltételek
 

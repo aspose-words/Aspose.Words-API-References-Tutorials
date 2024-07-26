@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- ในขั้นตอนสุดท้ายนี้ เราจะบันทึกเอกสารผลลัพธ์ในรูปแบบ .docx โดยใช้`Save` วิธีการและส่งเส้นทางไปยังไฟล์ที่ส่งออก
+ในขั้นตอนสุดท้ายนี้ เราจะบันทึกเอกสารผลลัพธ์ในรูปแบบ .docx โดยใช้`Save` วิธีการและส่งเส้นทางไปยังไฟล์ที่ส่งออก
 
 ตอนนี้คุณสามารถรันซอร์สโค้ดเพื่อโหลดเอกสารข้อความและกำหนดทิศทางของข้อความได้ เอกสารผลลัพธ์จะถูกบันทึกในไดเร็กทอรีที่ระบุโดยใช้ชื่อ "WorkingWithTxtLoadOptions.DocumentTextDirection.docx"
 

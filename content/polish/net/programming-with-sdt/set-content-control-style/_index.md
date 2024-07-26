@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-sdt/set-content-control-style/
 ---
 
-W tym samouczku wyjaśniono, jak ustawić styl kontrolki treści w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Do kontrolek zawartości można zastosować wstępnie zdefiniowane lub niestandardowe style, aby zapewnić spójne formatowanie.
+tym samouczku wyjaśniono, jak ustawić styl kontrolki treści w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Do kontrolek zawartości można zastosować wstępnie zdefiniowane lub niestandardowe style, aby zapewnić spójne formatowanie.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Załaduj dokument i odzyskaj kontrolę zawartości
- Załaduj dokument Word za pomocą`Document` konstruktor, przekazując ścieżkę do dokumentu jako parametr. Pobierz żądaną kontrolę zawartości z dokumentu. W tym przykładzie zakładamy, że kontrola treści jest pierwszym strukturalnym znacznikiem dokumentu w dokumencie.
+ Załaduj dokument Word za pomocą`Document`konstruktor, przekazując ścieżkę do dokumentu jako parametr. Pobierz żądaną kontrolę zawartości z dokumentu. W tym przykładzie zakładamy, że kontrola treści jest pierwszym strukturalnym znacznikiem dokumentu w dokumencie.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -40,7 +40,7 @@ sdt.Style = style;
 ```
 
 ## Krok 4: Zapisz dokument
- Zapisz zmodyfikowany dokument w określonym katalogu za pomocą`Save`metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithSdt.SetContentControlStyle.docx”.
+ Zapisz zmodyfikowany dokument w określonym katalogu za pomocą`Save` metoda. Podaj żądaną nazwę pliku z odpowiednim rozszerzeniem. W tym przykładzie zapisujemy dokument jako „WorkingWithSdt.SetContentControlStyle.docx”.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");

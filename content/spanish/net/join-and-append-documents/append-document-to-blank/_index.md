@@ -66,7 +66,7 @@ Ahora que nuestro proyecto está configurado, carguemos el documento fuente que 
    Document srcDoc = new Document(dataDir + "Document source.docx");
    ```
 
- Este fragmento carga el documento fuente en un`Document` objeto, que adjuntaremos a nuestro documento en blanco en los próximos pasos.
+ Este fragmento carga el documento fuente en un`Document` objeto, que adjuntaremos a nuestro documento en blanco en los siguientes pasos.
 
 ## Paso 3: crear y preparar el documento de destino
 

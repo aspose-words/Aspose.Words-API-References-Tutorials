@@ -77,7 +77,7 @@ dstDoc.Save(dataDir + "MergedDocument.docx");
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak orijinal formatı korurken Word belgelerini nasıl birleştireceğinizi ele aldık. Bu yaklaşım, kaynak belgelerdeki stillerin, yazı tiplerinin ve düzenlerin hedef belgeye sorunsuz bir şekilde entegre edilmesini sağlayarak belge birleştirme görevleri için sağlam bir çözüm sunar.
+Bu eğitimde Aspose.Words for .NET kullanarak orijinal formatı korurken Word belgelerini nasıl birleştireceğinizi ele aldık. Bu yaklaşım, kaynak belgelerdeki stillerin, yazı tiplerinin ve düzenlerin hedef belgeye sorunsuz bir şekilde entegre edilmesini sağlayarak belge birleştirme görevleri için sağlam bir çözüm sağlar.
 
 ## SSS'ler
 

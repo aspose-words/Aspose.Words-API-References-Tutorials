@@ -75,7 +75,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 
 ## 結論
 
-使用 Aspose.Words for .NET 在文件之間連結頁首和頁尾非常簡單，並可確保文件之間的一致性，從而更輕鬆地管理和維護大型文件集。
+使用 Aspose.Words for .NET 在文件之間連結頁首和頁尾非常簡單，並確保文件之間的一致性，從而更輕鬆地管理和維護大型文件集。
 
 ## 常見問題解答
 

@@ -61,7 +61,7 @@ using Aspose.Words;
     Document doc = new Document(dataDir + "Document.docx");
     ```
 
-## الخطوة 4: استنساخ المستند
+## الخطوة 4: استنساخ الوثيقة
 
 يعد استنساخ المستند أمرًا سهلاً مع Aspose.Words:
 

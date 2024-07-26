@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 步骤 2：应用编号列表格式
 
-现在，让我们应用默认的编号列表格式。这就像将 Word 文档设置为使用编号项目符号一样。
+现在，让我们应用默认的编号列表格式。这就像设置您的 Word 文档使用编号项目符号一样。
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
@@ -77,7 +77,7 @@ builder.Writeln("Item 2b");
 
 ## 结论
 
-一开始，以编程方式在 Word 文档中创建有序列表似乎很困难，但使用 Aspose.Words for .NET，这很容易。通过遵循这些简单的步骤，您可以轻松地在文档中添加和管理列表。无论您是生成报告、创建结构化文档，还是只是自动化工作流程，Aspose.Words for .NET 都能满足您的需求。那么，还等什么？开始编码，看看奇迹是如何发生的吧！
+以编程方式在 Word 文档中创建有序列表乍一看似乎很困难，但使用 Aspose.Words for .NET，这很容易。通过遵循这些简单的步骤，您可以轻松地在文档中添加和管理列表。无论您是生成报告、创建结构化文档，还是只是自动化工作流程，Aspose.Words for .NET 都能满足您的需求。那么，还等什么？开始编码，看看奇迹是如何发生的！
 
 ## 常见问题解答
 

@@ -83,7 +83,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 
 ## 結論
 
-現在你就得到它了！透過執行這些步驟，您已成功取消來源文件中頁首和頁尾的鏈接，並使用 Aspose.Words for .NET 將其附加到目標文件。當您處理不同部分需要不同頁首和頁尾的複雜文件時，此技術特別有用。快樂編碼！
+現在你就擁有了！透過執行這些步驟，您已成功取消來源文件中頁首和頁尾的鏈接，並使用 Aspose.Words for .NET 將其附加到目標文件。當您處理不同部分需要不同頁首和頁尾的複雜文件時，此技術特別有用。快樂編碼！
 
 ## 常見問題解答
 

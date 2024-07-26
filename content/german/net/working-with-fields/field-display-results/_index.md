@@ -86,4 +86,4 @@ A: Ja, Sie können das in einem Ergebnisanzeigefeld angezeigte Ergebnis formatie
 
 #### F: Wie kann ich mit Aspose.Words ein Ergebnisanzeigefeld aus einem Word-Dokument entfernen?
 
-A: Um ein Ergebnisanzeigefeld mit Aspose.Words aus einem Word-Dokument zu entfernen, können Sie die Remove-Methode verwenden. Diese Methode entfernt das Feld und ersetzt es durch sein statisches Ergebnis.
+A: Um ein Ergebnisanzeigefeld mit Aspose.Words aus einem Word-Dokument zu entfernen, können Sie die Methode Remove verwenden. Diese Methode entfernt das Feld und ersetzt es durch sein statisches Ergebnis.

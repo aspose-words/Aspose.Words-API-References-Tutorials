@@ -17,7 +17,7 @@ url: /el/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 - Βασικές γνώσεις C# και XML.
 
 ## Βήμα 1: Ρυθμίστε τον Κατάλογο Εγγράφων
- Ξεκινήστε ρυθμίζοντας τη διαδρομή προς τον κατάλογο εγγράφων σας. Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"`με την πραγματική διαδρομή προς τον κατάλογο όπου θέλετε να αποθηκεύσετε το έγγραφο.
+ Ξεκινήστε ρυθμίζοντας τη διαδρομή προς τον κατάλογο εγγράφων σας. Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"` με την πραγματική διαδρομή προς τον κατάλογο όπου θέλετε να αποθηκεύσετε το έγγραφο.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Βήμα 3: Προσθέστε μια StructuredDocumentTag (SDT) στο Έγγραφο
- Πρόσθεσε ένα`StructuredDocumentTag` στο έγγραφο για να χρησιμεύσει ως έλεγχος περιεχομένου. Προσδιορίστε το`SdtType` όπως και`PlainText` και το`MarkupLevel` όπως και`Block` για να δημιουργήσετε ένα SDT σε επίπεδο μπλοκ.
+ Πρόσθεσε ένα`StructuredDocumentTag`στο έγγραφο για να χρησιμεύσει ως έλεγχος περιεχομένου. Προσδιορίστε το`SdtType` όπως και`PlainText` και το`MarkupLevel` όπως και`Block` για να δημιουργήσετε ένα SDT σε επίπεδο μπλοκ.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

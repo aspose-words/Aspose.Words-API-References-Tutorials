@@ -104,4 +104,4 @@ V: Elolvashatja az ActiveX-vezérlők különféle tulajdonságait, például a 
 
 #### K: Hogyan tudhatom meg a dokumentumban található ActiveX-vezérlők teljes számát?
 
- V: A dokumentumban található ActiveX-vezérlők teljes számának megtekintéséhez használja a`GetChildNodes` módszere a`Document` objektum megadja a`NodeType.Shape` típusát és a gyermek csomópontokat is beleértve.
+ V: A dokumentumban található ActiveX-vezérlők teljes számának megtekintéséhez használja a`GetChildNodes` módszere a`Document` objektum, amely megadja a`NodeType.Shape` típusát és a gyermek csomópontokat is beleértve.

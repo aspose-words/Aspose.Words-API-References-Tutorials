@@ -16,5 +16,5 @@ Con questi tutorial, sarai in grado di ottimizzare il processo di caricamento de
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Carica PDF crittografato](./load-encrypted-pdf/) | Guida passo passo per caricare un PDF crittografato utilizzando Aspose.Words per .NET. |
-| [Carica intervallo di pagine del PDF](./load-page-range-of-pdf/) | Guida passo passo per caricare un intervallo di pagine PDF specifico con Aspose.Words per .NET. |
+| [Carica PDF crittografato](./load-encrypted-pdf/) | Scopri come caricare PDF crittografati utilizzando Aspose.Words per .NET con il nostro tutorial passo passo. Padroneggia la crittografia e la decrittografia dei PDF in pochissimo tempo. |
+| [Carica intervallo di pagine del PDF](./load-page-range-of-pdf/) | Scopri come caricare intervalli di pagine specifici da un PDF utilizzando Aspose.Words per .NET in questo tutorial completo e passo passo. Perfetto per gli sviluppatori .NET. |

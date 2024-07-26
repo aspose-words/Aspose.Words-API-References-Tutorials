@@ -17,7 +17,7 @@ url: /ja/net/programming-with-charts/format-number-of-data-label/
 
 -  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされていることを確認してください。まだインストールしていない場合は、[ここからダウンロード](https://releases.aspose.com/words/net/).
 - 開発環境: .NET 開発環境をセットアップする必要があります。Visual Studio を強くお勧めします。
-- C# の基礎知識: このチュートリアルでは C# コードの記述と理解が含まれるため、C# プログラミングの知識が必須です。
+- C# の基礎知識: このチュートリアルでは C# コードの作成と理解が含まれるため、C# プログラミングの知識が必須です。
 - 一時ライセンス: Aspose.Wordsを制限なく使用するには、[一時ライセンス](https://purchase.aspose.com/temporary-license/).
 
 それでは、グラフ内の数値ラベルをフォーマットする手順を詳しく説明します。

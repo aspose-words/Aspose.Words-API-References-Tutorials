@@ -11,7 +11,7 @@ Hướng dẫn Aspose.Words for .NET về Xử lý từ bằng WebExtensions s�
 
 Các hướng dẫn này cung cấp hướng dẫn từng bước để hiểu và sử dụng chức năng của WebExtensions với Aspose.Words cho .NET. Bạn sẽ tìm hiểu cách truy cập các đối tượng tiện ích mở rộng web, xử lý sự kiện, đánh giá mã JavaScript, thêm chức năng tùy chỉnh, v.v. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, những hướng dẫn này sẽ giúp bạn nắm vững các kỹ thuật lập trình với WebExtensions.
 
-Bằng cách làm theo các hướng dẫn này, bạn sẽ có thể khai thác triệt để khả năng của tiện ích mở rộng web trong tài liệu Word của mình, cung cấp cho chúng các tính năng động và tương tác. Các hướng dẫn này cung cấp các ví dụ về mã từng bước và giải thích rõ ràng để giúp bạn tận dụng tối đa các tính năng này cũng như tạo các tài liệu Word có tính tương tác và sáng tạo.
+Bằng cách làm theo các hướng dẫn này, bạn sẽ có thể khai thác triệt để khả năng của tiện ích mở rộng web trong tài liệu Word của mình, cung cấp cho chúng các tính năng động và tương tác. Các hướng dẫn này cung cấp các ví dụ về mã theo từng bước và giải thích rõ ràng để giúp bạn tận dụng tối đa các tính năng này cũng như tạo các tài liệu Word có tính tương tác và sáng tạo.
 
 ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |

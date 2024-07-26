@@ -9,7 +9,7 @@ url: /tr/net/programming-with-digital-signatures/creating-and-signing-new-signat
 ---
 ## giriiş
 
-Selam! Yani bir Word belgeniz var ve bir imza satırı eklemeniz ve ardından onu dijital olarak imzalamanız gerekiyor. Zor görünüyor mu? Hiç de bile! Aspose.Words for .NET sayesinde bunu yalnızca birkaç satır kodla sorunsuz bir şekilde başarabilirsiniz. Bu eğitimde, ortamınızı ayarlamaktan belgenizi yeni ve parlak bir imzayla kaydetmeye kadar tüm süreç boyunca size yol göstereceğiz. Hazır? Hadi dalalım!
+Selam! Yani bir Word belgeniz var ve bir imza satırı eklemeniz ve ardından bunu dijital olarak imzalamanız gerekiyor. Zor görünüyor mu? Hiç de bile! Aspose.Words for .NET sayesinde bunu yalnızca birkaç satır kodla sorunsuz bir şekilde başarabilirsiniz. Bu eğitimde, ortamınızı ayarlamaktan belgenizi yeni ve parlak bir imzayla kaydetmeye kadar tüm süreç boyunca size yol göstereceğiz. Hazır? Hadi dalalım!
 
 ## Önkoşullar
 

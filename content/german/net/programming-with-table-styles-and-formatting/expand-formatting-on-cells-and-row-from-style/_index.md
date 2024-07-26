@@ -80,4 +80,4 @@ Shading the cell after style expansion: " + cellShadingAfter);
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie Sie mit Aspose.Words für .NET die Formatierung von einem Tabellenstil auf Zellen und Zeilen erweitern. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie die Formatierung im Tabellenstil ganz einfach auf bestimmte Zellen und Zeilen in Ihren Word-Dokumenten anwenden. Aspose.Words bietet eine leistungsstarke und flexible API zum Bearbeiten und Formatieren von Tabellen in Ihren Dokumenten. Mit diesem Wissen können Sie das Layout und die Präsentation Ihrer Word-Dokumente weiter anpassen.
+In diesem Tutorial haben wir gelernt, wie Sie mit Aspose.Words für .NET die Formatierung eines Tabellenstils auf Zellen und Zeilen erweitern. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie die Formatierung im Tabellenstil ganz einfach auf bestimmte Zellen und Zeilen in Ihren Word-Dokumenten anwenden. Aspose.Words bietet eine leistungsstarke und flexible API zum Bearbeiten und Formatieren von Tabellen in Ihren Dokumenten. Mit diesem Wissen können Sie das Layout und die Präsentation Ihrer Word-Dokumente weiter anpassen.

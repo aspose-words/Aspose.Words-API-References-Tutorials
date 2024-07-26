@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh-hant/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## 使用 Aspose.Words for .NET 處理 PDF 渲染警告
+## 介紹
 
 如果您使用 Aspose.Words for .NET，管理 PDF 渲染警告是確保正確處理和保存文件的重要方面。在本綜合指南中，我們將介紹如何使用 Aspose.Words 處理 PDF 渲染警告。學完本教學後，您將清楚地了解如何在 .NET 專案中實現此功能。
 
@@ -79,7 +79,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 public class HandleDocumentWarnings : IWarningCallback
 {
     /// <摘要>
-    /// 當文件處理過程中出現潛在問題時，就會呼叫此方法。
+    //當文件處理過程中出現潛在問題時，就會呼叫此方法。
     /// </摘要>
     public void Warning(WarningInfo info)
     {

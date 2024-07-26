@@ -83,7 +83,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
  Burada, her iki satırın da bulunup bulunmadığını ve bitişik olup olmadıklarını kontrol etmek için bir koşul ekliyoruz.`NextSibling` mülkiyet bitişikliği doğrulamamıza yardımcı olur.
 
-## Adım 5: Yer İşaretinin Sonunu Taşıyın
+## Adım 5: Yer İşaretinin Sonunu Taşı
 
 Son olarak, eğer koşullar karşılanırsa, yer imi bitiş düğümünü üst satırın son hücresindeki son paragrafın sonuna taşırız. Bu adım, yer imini etkili bir şekilde çözer.
 
@@ -97,7 +97,7 @@ row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak bir Word belgesindeki yer imlerini çözmek göz korkutucu görünebilir, ancak bunu yönetilebilir adımlara bölerek süreç çok daha net hale gelir. Bir belge yükleme, yer imleri arasında yineleme yapma, ilgili satırları belirleme, bitişikliği kontrol etme ve son olarak yer imi uç düğümünü taşıma adımlarını inceledik. Bu kılavuzla, Word belgelerinizdeki yer işaretlerini daha etkili bir şekilde yönetebilmelisiniz.
+Aspose.Words for .NET kullanarak bir Word belgesindeki yer işaretlerini çözmek göz korkutucu görünebilir, ancak bunu yönetilebilir adımlara bölerek süreç çok daha net hale gelir. Bir belge yükleme, yer imleri arasında yineleme yapma, ilgili satırları belirleme, bitişikliği kontrol etme ve son olarak yer imi uç düğümünü taşıma adımlarını inceledik. Bu kılavuzla, Word belgelerinizdeki yer işaretlerini daha etkili bir şekilde yönetebilmelisiniz.
 
 ## SSS'ler
 

@@ -9,7 +9,7 @@ url: /nl/net/apply-license/apply-license-from-stream/
 ---
 ## Invoering
 
-Hallo daar, mede-codeerders! Als u in de wereld van Aspose.Words voor .NET duikt, is een van de eerste dingen die u hoeft te doen een licentie aanvragen om het volledige potentieel van de bibliotheek te ontsluiten. In deze handleiding laten we u zien hoe u een licentie voor een stream kunt aanvragen. Geloof me, het is eenvoudiger dan het klinkt, en aan het einde van deze tutorial heb je je applicatie soepel werkend. klaar om te beginnen? Laten we er meteen in springen!
+Hallo daar, mede-codeerders! Als u in de wereld van Aspose.Words voor .NET duikt, is een van de eerste dingen die u moet doen het aanvragen van een licentie om het volledige potentieel van de bibliotheek te ontsluiten. In deze handleiding laten we u zien hoe u een licentie voor een stream kunt aanvragen. Geloof me, het is eenvoudiger dan het klinkt, en aan het einde van deze tutorial heb je je applicatie soepel werkend. klaar om te beginnen? Laten we er meteen in springen!
 
 ## Vereisten
 

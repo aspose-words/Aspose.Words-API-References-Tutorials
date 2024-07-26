@@ -14,7 +14,7 @@ In diesem Tutorial zeigen wir Ihnen, wie Sie ein Word-Dokument mithilfe der Funk
 Geben Sie zunächst das Verzeichnis für Ihr Dokument an und laden Sie das Dokument in ein Dokumentobjekt. So geht's:
 
 ```csharp
-//Pfad zum Dokumentenverzeichnis.
+// Pfad zum Dokumentenverzeichnis.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```
@@ -80,6 +80,6 @@ Ja, Sie können je nach Ihren Anforderungen ein anderes Kriterium für die Aufte
 
  Mit Aspose.Words für .NET können Sie die Ausgabe-HTML für die geteilten Teile anpassen, indem Sie zusätzliche Optionen in der`HtmlSaveOptions` Objekt. Sie können verschiedene Aspekte wie CSS-Stile, Bilder, Schriftarten und mehr steuern. Weitere Informationen zum Anpassen der HTML-Ausgabe finden Sie in der Aspose.Words-Dokumentation.
 
-#### Kann ich das Dokument nach mehreren Kriterien aufteilen?
+#### Kann ich das Dokument anhand mehrerer Kriterien aufteilen?
 
  Ja, Sie können das Dokument anhand mehrerer Kriterien aufteilen, indem Sie die Kriterienoptionen entsprechend kombinieren. Sie können das Dokument beispielsweise sowohl nach Überschrift als auch nach Seite aufteilen, indem Sie die`DocumentSplitCriteria`Eigentum an`HeadingParagraph | Page`. Dadurch wird das Dokument an jeder Überschrift und jeder Seite aufgeteilt, wobei basierend auf beiden Kriterien kleinere Teile erstellt werden.

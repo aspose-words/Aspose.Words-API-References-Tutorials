@@ -135,4 +135,4 @@ doc.update_fields()
 
 ## الوصول إلى المزيد من الموارد
 
- لمزيد من المعلومات التفصيلية وأمثلة التعليمات البرمجية، قم بزيارة[Aspose.Words لمرجع Python API](https://reference.aspose.com/words/python-net/) . لتنزيل الإصدار الأخير من المكتبة، قم بزيارة[صفحة تنزيل Aspose.Words لـ Python](https://releases.aspose.com/words/python/).
+ للحصول على مزيد من المعلومات التفصيلية وأمثلة التعليمات البرمجية، قم بزيارة[Aspose.Words لمرجع Python API](https://reference.aspose.com/words/python-net/) . لتنزيل الإصدار الأخير من المكتبة، قم بزيارة[صفحة تنزيل Aspose.Words لـ Python](https://releases.aspose.com/words/python/).

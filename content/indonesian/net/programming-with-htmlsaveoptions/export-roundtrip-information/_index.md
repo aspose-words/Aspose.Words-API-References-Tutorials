@@ -2,62 +2,84 @@
 title: Ekspor Informasi Pulang Pergi
 linktitle: Ekspor Informasi Pulang Pergi
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengekspor informasi pulang pergi saat menyimpan dokumen sebagai HTML dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengekspor informasi pulang pergi menggunakan Aspose.Words untuk .NET. Pertahankan integritas dan format dokumen Anda selama konversi.
 type: docs
 weight: 10
 url: /id/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui kode sumber C# untuk mengekspor informasi bolak-balik dari dokumen dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda memasukkan informasi bolak-balik ke dalam file HTML yang diekspor, sehingga memudahkan untuk mengambil perubahan yang dilakukan pada dokumen asli.
+Selamat datang di dunia Aspose.Words for .NET yang menakjubkan! Hari ini, kami mendalami fitur bagus yang dapat menghemat banyak waktu dan tenaga: mengekspor informasi pulang pergi. Bayangkan Anda mengonversi dokumen Word ke HTML dan sebaliknya, tanpa kehilangan data atau format penting apa pun. Kedengarannya seperti mimpi, bukan? Ya, itu sangat mungkin dengan Aspose.Words. Bersiaplah, dan mari kita mulai perjalanan menarik ini!
 
-## Langkah 1: Pengaturan Proyek
+## Prasyarat
 
-Untuk memulai, buat proyek C# baru di IDE favorit Anda. Pastikan perpustakaan Aspose.Words untuk .NET direferensikan dalam proyek Anda.
+Sebelum kita membahas lebih dalam, pastikan kita memiliki semua yang kita butuhkan:
 
-## Langkah 2: Memuat dokumen
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru.[Unduh di sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan C#.
+3. Pengetahuan Dasar tentang C#: Ada baiknya jika Anda memiliki sedikit pemahaman tentang C# dan kerangka .NET.
+4. Lisensi: Anda dapat menggunakan lisensi sementara jika Anda tidak memiliki lisensi penuh. Mendapatkan[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-Pada langkah ini, kita akan memuat dokumen yang akan diekspor. Gunakan kode berikut untuk memuat dokumen dari direktori tertentu:
+## Impor Namespace
+
+Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan untuk memulai Aspose.Words untuk .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah yang dapat dikelola. Setiap langkah akan disertai dengan penjelasan mendetail untuk memastikan Anda tidak ketinggalan.
+
+## Langkah 1: Siapkan Direktori Dokumen Anda
+
+Pertama, Anda perlu menyiapkan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda disimpan dan file HTML akan disimpan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Langkah 2: Muat Dokumen Word
+
+Selanjutnya, muat dokumen Word yang ingin Anda konversi. Untuk tutorial ini, kita akan menggunakan dokumen bernama "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Kode ini membuat sebuah instance dari`Document` dengan memuat dokumen dari direktori yang ditentukan.
+## Langkah 3: Konfigurasikan Opsi Penyimpanan HTML
 
-## Langkah 3: Mengonfigurasi opsi cadangan HTML
-
-Sekarang kita akan mengonfigurasi opsi penyimpanan HTML untuk mengekspor informasi bolak-balik dokumen. Gunakan kode berikut:
+Sekarang, di sinilah keajaiban terjadi. Kita perlu menyiapkan opsi penyimpanan HTML, khususnya mengaktifkan properti EksporRoundtripInformation. Hal ini memastikan bahwa semua informasi pulang pergi disimpan selama konversi.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Kode ini membuat sebuah instance dari`HtmlSaveOptions` dan mengatur`ExportRoundtripInformation` pilihan untuk`true` untuk memasukkan informasi pulang pergi saat mengekspor.
+## Langkah 4: Simpan Dokumen sebagai HTML
 
-## Langkah 4: Mengonversi dan menyimpan dokumen ke HTML
-
-Terakhir, kami akan mengonversi dokumen ke HTML menggunakan opsi penyimpanan HTML yang dikonfigurasi sebelumnya. Gunakan kode berikut:
+Terakhir, simpan dokumen sebagai file HTML menggunakan opsi penyimpanan yang dikonfigurasi. Langkah ini memastikan bahwa dokumen mempertahankan semua format dan datanya saat dikonversi ke HTML dan kembali ke Word.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
 ```
 
-Kode ini mengubah dokumen menjadi HTML termasuk informasi pulang pergi, dan menyimpan file HTML yang diekspor ke direktori yang ditentukan.
+## Kesimpulan
 
-### Contoh kode sumber untuk Mengekspor Informasi Pulang Pergi menggunakan Aspose.Words untuk .NET
+Dan itu dia! Hanya dengan beberapa baris kode, Anda telah berhasil mengekspor informasi bolak-balik dari dokumen Word ke HTML menggunakan Aspose.Words untuk .NET. Fitur canggih ini memastikan dokumen Anda mempertahankan integritas dan formatnya selama konversi, sehingga membuat hidup Anda lebih mudah.
 
+## FAQ
 
-```csharp
+### Apa itu informasi pulang pergi di Aspose.Words?
+Informasi pulang pergi mengacu pada data yang menjamin integritas dan format dokumen ketika dikonversi dari satu format ke format lain dan kembali lagi.
 
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+### Bisakah saya menggunakan Aspose.Words untuk .NET tanpa lisensi?
+Ya, Anda bisa menggunakannya dengan lisensi sementara yang bisa Anda dapatkan[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
+### Di mana saya dapat menemukan versi terbaru Aspose.Words untuk .NET?
+ Anda dapat mengunduh versi terbaru[Di Sini](https://releases.aspose.com/words/net/).
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
+### Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
+ Anda bisa mendapatkan dukungan dari komunitas Aspose[Di Sini](https://forum.aspose.com/c/words/8).
 
-```
-
- Pastikan untuk menentukan jalur yang benar ke direktori dokumen di`dataDir` variabel.
+### Apakah mungkin untuk mempertahankan pemformatan saat mengonversi dokumen Word ke HTML?
+Ya, dengan menggunakan properti EksporRoundtripInformation di HtmlSaveOptions, Anda dapat mempertahankan semua pemformatan selama konversi.

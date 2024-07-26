@@ -2,62 +2,84 @@
 title: Xuất thông tin khứ hồi
 linktitle: Xuất thông tin khứ hồi
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để xuất thông tin khứ hồi khi lưu tài liệu dưới dạng HTML bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách xuất thông tin khứ hồi bằng Aspose.Words cho .NET. Bảo toàn tính toàn vẹn và định dạng tài liệu của bạn trong quá trình chuyển đổi.
 type: docs
 weight: 10
 url: /vi/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn mã nguồn C# để xuất thông tin khứ hồi từ tài liệu bằng Aspose.Words cho .NET. Tính năng này cho phép bạn đưa thông tin khứ hồi vào tệp HTML đã xuất, giúp truy xuất các thay đổi được thực hiện đối với tài liệu gốc dễ dàng hơn.
+Chào mừng bạn đến với thế giới tuyệt vời của Aspose.Words dành cho .NET! Hôm nay, chúng ta sẽ đi sâu vào một tính năng tiện lợi có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức: xuất thông tin khứ hồi. Hãy tưởng tượng bạn đang chuyển đổi tài liệu Word sang HTML và ngược lại mà không làm mất bất kỳ dữ liệu hoặc định dạng quan trọng nào. Nghe như một giấc mơ phải không? Chà, điều đó hoàn toàn có thể thực hiện được với Aspose.Words. Hãy thắt dây an toàn và bắt đầu cuộc hành trình thú vị này!
 
-## Bước 1: Thiết lập dự án
+## Điều kiện tiên quyết
 
-Để bắt đầu, hãy tạo một dự án C# mới trong IDE yêu thích của bạn. Đảm bảo thư viện Aspose.Words for .NET được tham chiếu trong dự án của bạn.
+Trước khi đi vào chi tiết, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
 
-## Bước 2: Tải tài liệu
+1.  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất.[Tải về tại đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích C# nào khác.
+3. Kiến thức cơ bản về C#: Làm quen một chút với C# và .NET framework sẽ giúp ích.
+4. Giấy phép: Bạn có thể sử dụng giấy phép tạm thời nếu không có giấy phép đầy đủ. Hiểu rồi[đây](https://purchase.aspose.com/temporary-license/).
 
-Ở bước này, chúng ta sẽ tải tài liệu để xuất. Sử dụng đoạn mã sau để tải tài liệu từ một thư mục được chỉ định:
+## Nhập không gian tên
+
+Trước tiên, chúng ta cần nhập các không gian tên cần thiết để bắt đầu với Aspose.Words cho .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Bây giờ, hãy chia quy trình thành các bước có thể quản lý được. Mỗi bước sẽ có kèm theo lời giải thích chi tiết để đảm bảo bạn không bỏ lỡ nhịp nào.
+
+## Bước 1: Thiết lập thư mục tài liệu của bạn
+
+Trước tiên, bạn cần thiết lập đường dẫn đến thư mục tài liệu của mình. Đây là nơi tài liệu Word của bạn được lưu trữ và nơi tệp HTML sẽ được lưu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Bước 2: Tải tài liệu Word
+
+Tiếp theo, tải tài liệu Word bạn muốn chuyển đổi. Đối với hướng dẫn này, chúng tôi sẽ sử dụng tài liệu có tên "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Mã này tạo ra một thể hiện của`Document` bằng cách tải tài liệu từ thư mục được chỉ định.
+## Bước 3: Định cấu hình tùy chọn lưu HTML
 
-## Bước 3: Định cấu hình tùy chọn sao lưu HTML
-
-Bây giờ chúng ta sẽ định cấu hình các tùy chọn lưu HTML để xuất thông tin khứ hồi của tài liệu. Sử dụng mã sau đây:
+Bây giờ, đây là nơi phép thuật xảy ra. Chúng ta cần thiết lập các tùy chọn lưu HTML, đặc biệt là bật thuộc tính XuấtRoundtripInformation. Điều này đảm bảo rằng tất cả thông tin khứ hồi được giữ nguyên trong quá trình chuyển đổi.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Mã này tạo ra một thể hiện của`HtmlSaveOptions` và thiết lập`ExportRoundtripInformation` tùy chọn để`true` để bao gồm thông tin khứ hồi khi xuất.
+## Bước 4: Lưu tài liệu dưới dạng HTML
 
-## Bước 4: Chuyển đổi và lưu tài liệu sang HTML
-
-Cuối cùng, chúng tôi sẽ chuyển đổi tài liệu sang HTML bằng các tùy chọn lưu HTML được định cấu hình trước đó. Sử dụng mã sau đây:
+Cuối cùng, lưu tài liệu dưới dạng tệp HTML bằng các tùy chọn lưu đã định cấu hình. Bước này đảm bảo rằng tài liệu giữ lại tất cả định dạng và dữ liệu khi được chuyển đổi sang HTML và quay lại Word.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
 ```
 
-Mã này chuyển đổi tài liệu sang HTML bao gồm thông tin khứ hồi và lưu tệp HTML đã xuất vào thư mục được chỉ định.
+## Phần kết luận
 
-### Mã nguồn ví dụ để xuất thông tin khứ hồi bằng Aspose.Words cho .NET
+Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã xuất thành công thông tin khứ hồi từ tài liệu Word sang HTML bằng Aspose.Words cho .NET. Tính năng mạnh mẽ này đảm bảo rằng tài liệu của bạn giữ được tính toàn vẹn và định dạng trong quá trình chuyển đổi, giúp cuộc sống của bạn dễ dàng hơn nhiều.
 
+## Câu hỏi thường gặp
 
-```csharp
+### Thông tin khứ hồi trong Aspose.Words là gì?
+Thông tin khứ hồi đề cập đến dữ liệu đảm bảo tính toàn vẹn và định dạng của tài liệu khi nó được chuyển đổi từ định dạng này sang định dạng khác và ngược lại.
 
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+### Tôi có thể sử dụng Aspose.Words cho .NET mà không cần giấy phép không?
+Có, bạn có thể sử dụng nó với giấy phép tạm thời mà bạn có thể nhận được[đây](https://purchase.aspose.com/temporary-license/).
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
+### Tôi có thể tìm phiên bản mới nhất của Aspose.Words cho .NET ở đâu?
+ Bạn có thể tải xuống phiên bản mới nhất[đây](https://releases.aspose.com/words/net/).
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
+### Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
+ Bạn có thể nhận được hỗ trợ từ cộng đồng Aspose[đây](https://forum.aspose.com/c/words/8).
 
-```
-
- Đảm bảo chỉ định đường dẫn chính xác tới thư mục tài liệu trong thư mục`dataDir` Biến đổi.
+### Có thể giữ nguyên định dạng khi chuyển đổi tài liệu Word sang HTML không?
+Có, bằng cách sử dụng thuộc tính XuấtRoundtripInformation trong HtmlSaveOptions, bạn có thể giữ nguyên tất cả định dạng trong quá trình chuyển đổi.

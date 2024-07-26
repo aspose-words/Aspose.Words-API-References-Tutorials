@@ -122,7 +122,7 @@ doc.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-これにより、変更履歴に挿入されたとマークされたテキストを置換対象から除外できます。
+これにより、変更履歴で挿入としてマークされたテキストを置換対象から除外できます。
 
 ## テキストをHTMLに置き換える
 

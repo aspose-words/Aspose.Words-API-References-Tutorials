@@ -1,6 +1,6 @@
 ---
-title: 정렬된 목록
-linktitle: 정렬된 목록
+title: 주문 목록
+linktitle: 주문 목록
 second_title: Aspose.Words 문서 처리 API
 description: 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 정렬된 목록을 만드는 방법을 알아보세요. 문서 작성 자동화에 적합합니다.
 type: docs

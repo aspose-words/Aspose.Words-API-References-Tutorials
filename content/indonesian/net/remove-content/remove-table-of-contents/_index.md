@@ -41,7 +41,7 @@ Sebelum kami dapat memanipulasi dokumen Anda, kami perlu menentukan di mana loka
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur ke folder dokumen Anda. Di sinilah file Word Anda berada.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur ke folder dokumen Anda. Di sinilah file Word Anda berada.
 
 ## Langkah 2: Muat Dokumen
 

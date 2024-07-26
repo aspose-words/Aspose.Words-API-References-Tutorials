@@ -17,7 +17,7 @@ För att följa denna handledning måste du ha följande:
 - Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -41,7 +41,7 @@ sdt.ListItems.Add(new SdtListItem("Item 2", "2"));
 ```
 
 ## Steg 4: Lägg till StructuredDocumentTag till dokumentet
- Lägg till kombinationsrutans innehållskontroll till dokumentets brödtext genom att använda`AppendChild` metoden för dokumentets första avsnitts kropp.
+ Lägg till kombinationsrutans innehållskontroll till dokumentets brödtext genom att använda`AppendChild` metod för dokumentets första avsnitts kropp.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdt);

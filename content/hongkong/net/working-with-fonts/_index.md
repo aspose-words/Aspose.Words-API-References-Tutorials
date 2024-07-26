@@ -39,4 +39,4 @@ url: /zh-hant/net/working-with-fonts/
 | [接收字體通知](./receive-notifications-of-fonts/) | 了解使用 Aspose.Words for .NET 時如何接收缺失或取代字體通知。 |
 | [收到警告通知](./receive-warning-notification/) | 了解如何在使用 Aspose.Words for .NET 時接收警告通知並管理文件中的任何問題或警告。 |
 | [資源 Steam 字體來源範例](./resource-steam-font-source-example/) | 了解如何使用資源流字體來源將自訂字體載入到 Aspose.Words for .NET 中。 |
-| [取得不含後綴的替換](./get-substitution-without-suffixes/) | 在本教學中，了解如何使用 Aspose.Words for .NET 在 Word 文件中獲得無後綴覆蓋。 |
+| [取得不含後綴的替換](./get-substitution-without-suffixes/) | 在本教學中，了解如何使用 Aspose.Words for .NET 在 Word 文件中取得無後綴覆蓋。 |

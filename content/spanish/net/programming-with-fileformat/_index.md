@@ -16,6 +16,6 @@ Ya sea que necesite generar informes, crear documentos personalizados, automatiz
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Detectar formato de archivo de documento](./detect-file-format/) | Guía paso a paso para detectar el formato de archivo de documento con Aspose.Words para .NET. |
-| [Detectar firma digital en un documento de Word](./detect-document-signatures/) | Guía paso a paso para detectar firmas digitales en un documento con Aspose.Words para .NET. |
-| [Verificar documento de Word cifrado](./verify-encrypted-document/) | Guía paso a paso para verificar que un documento esté cifrado con Aspose.Words para .NET. |
+| [Detectar formato de archivo de documento](./detect-file-format/) | Aprenda a detectar formatos de archivos de documentos utilizando Aspose.Words para .NET con esta guía completa paso a paso. |
+| [Detectar firma digital en un documento de Word](./detect-document-signatures/) | Aprenda cómo detectar firmas digitales en documentos de Word usando Aspose.Words para .NET con nuestra guía paso a paso. |
+| [Verificar documento de Word cifrado](./verify-encrypted-document/) | Aprenda cómo verificar el estado de cifrado de un documento de Word usando Aspose.Words para .NET con esta guía paso a paso. |

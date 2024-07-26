@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Bước 3: Cập nhật bản vẽ nghệ thuật thông minh
- Lặp lại các hình dạng trong tài liệu bằng cách sử dụng`GetChildNodes` phương pháp với`NodeType.Shape` tham số. Kiểm tra xem mỗi hình có Smart Art hay không bằng cách sử dụng`HasSmartArt` thuộc tính và nếu đúng, hãy gọi`UpdateSmartArtDrawing` phương pháp cập nhật bản vẽ Smart Art.
+ Lặp lại các hình dạng trong tài liệu bằng cách sử dụng`GetChildNodes` phương pháp với`NodeType.Shape` tham số. Kiểm tra xem mỗi hình có Smart Art hay không bằng cách sử dụng`HasSmartArt`thuộc tính và nếu đúng, hãy gọi`UpdateSmartArtDrawing` phương pháp cập nhật bản vẽ Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

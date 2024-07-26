@@ -11,7 +11,7 @@ Aspose.Words untuk .NET adalah perpustakaan yang kuat untuk membuat, mengedit, d
 
 ## Memahami perpustakaan Aspose.Words
 
-Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk mengubah gaya daftar isi.
+Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ia menawarkan berbagai fitur untuk membuat, mengedit, dan memanipulasi dokumen Word, termasuk mengubah gaya daftar isi.
 
 ## Membuat dokumen baru
 
@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### T: Bisakah saya mengubah gaya beberapa level di daftar isi menggunakan Aspose.Words untuk .NET?
 
- A: Ya, Anda dapat mengubah gaya beberapa level di daftar isi menggunakan Aspose.Words for .NET. Untuk mengubah gaya pada level tertentu, Anda dapat mengakses gaya yang sesuai menggunakan`Styles`properti dan buat perubahan yang diinginkan pada setiap level satu per satu.
+A: Ya, Anda dapat mengubah gaya beberapa level di daftar isi menggunakan Aspose.Words for .NET. Untuk mengubah gaya pada level tertentu, Anda dapat mengakses gaya yang sesuai menggunakan`Styles` properti dan buat perubahan yang diinginkan pada setiap level satu per satu.
 
 #### T: Bagaimana cara menyimpan dokumen yang dimodifikasi setelah mengubah gaya daftar isi menggunakan Aspose.Words untuk .NET?
 
@@ -117,7 +117,7 @@ A: Ya, selain mengubah gaya, Anda dapat menerapkan berbagai perubahan format pad
 
 #### T: Bisakah saya mengubah gaya daftar isi di dokumen Word yang sudah ada menggunakan Aspose.Words untuk .NET?
 
- J: Ya, Anda dapat mengubah gaya daftar isi di dokumen Word yang sudah ada menggunakan Aspose.Words untuk .NET. Cukup muat dokumen menggunakan`Document` kelas, ubah properti gaya menggunakan`Styles` properti, dan simpan dokumen untuk menerapkan perubahan.
+J: Ya, Anda dapat mengubah gaya daftar isi di dokumen Word yang sudah ada menggunakan Aspose.Words untuk .NET. Cukup muat dokumen menggunakan`Document` kelas, ubah properti gaya menggunakan`Styles` properti, dan simpan dokumen untuk menerapkan perubahan.
 
 #### T: Apakah Aspose.Words untuk .NET mendukung perubahan gaya dan pemformatan lain di dokumen Word?
 

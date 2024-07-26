@@ -16,7 +16,7 @@ url: /ko/java/document-loading-and-saving/saving-documents-as-pcl-format/
 
 코드와 단계별 프로세스를 살펴보기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
-- Aspose.Words for Java: Java 개발 환경에 Aspose.Words for Java가 설치 및 설정되어 있는지 확인하세요.
+- Java용 Aspose.Words: Java 개발 환경에 Aspose.Words for Java가 설치 및 설정되어 있는지 확인하세요.
 
 ## 1단계: Word 문서 로드
 

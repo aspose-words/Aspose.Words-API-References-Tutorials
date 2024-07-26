@@ -7,105 +7,104 @@ type: docs
 weight: 10
 url: /ja/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
+## 導入
 
-この記事では、Aspose.Words for .NET の WMF フォントをメタファイル サイズにスケールする機能を使用して PDF サイズを縮小する方法について、ステップ バイ ステップで説明します。コードの各部分を詳しく説明します。このチュートリアルの最後には、PDF に変換するときに WMF フォントのスケーリングを有効または無効にする方法を理解できるようになります。
+PDF ファイル、特に WMF (Windows メタファイル) グラフィックを含む Word 文書から生成された PDF ファイルを扱う場合、サイズ管理は文書処理の重要な側面になります。PDF サイズを制御する 1 つの方法は、文書内での WMF フォントのレンダリング方法を調整することです。このチュートリアルでは、Aspose.Words for .NET を使用して WMF フォントをメタファイル サイズにスケーリングすることで PDF サイズを縮小する方法について説明します。
 
-開始する前に、プロジェクトに Aspose.Words for .NET ライブラリがインストールされ、構成されていることを確認してください。ライブラリとインストール手順は、Aspose Web サイトで参照できます。
+## 前提条件
 
-## ステップ1: ドキュメントディレクトリを定義する
+手順に進む前に、以下のものを用意してください。
 
-まず、ドキュメントが保存されているディレクトリへのパスを定義する必要があります。`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
+1. Aspose.Words for .NET: Aspose.Wordsライブラリがインストールされていることを確認してください。インストールされていない場合は、[ここからダウンロード](https://releases.aspose.com/words/net/).
+2. 開発環境: このチュートリアルでは、C# コードを記述して実行できる .NET 開発環境 (Visual Studio など) がセットアップされていることを前提としています。
+3. .NET プログラミングの基本的な理解: 基本的な .NET プログラミングの概念と C# 構文を理解していると役立ちます。
+4. WMF グラフィックを含む Word 文書: WMF グラフィックを含む Word 文書が必要です。独自の文書を使用することも、テスト用に文書を作成することもできます。
+
+## 名前空間のインポート
+
+まず、C# プロジェクトに必要な名前空間をインポートする必要があります。これにより、Aspose.Words の操作に必要なクラスとメソッドにアクセスできるようになります。
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## ステップ2: ドキュメントをアップロードする
+## ステップ1: Word文書を読み込む
 
-次に、処理するドキュメントを読み込む必要があります。この例では、ドキュメントの名前が「WMF with text.docx」で、指定されたドキュメント ディレクトリにあると想定しています。
+まず、WMFグラフィックを含むWord文書を読み込みます。これは、`Document` Aspose.Words のクラス。
 
 ```csharp
+//ドキュメント ディレクトリへのパス。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+//ドキュメントを読み込む
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
-## ステップ3: メタファイルのレンダリングオプションを構成する
+ここ、`dataDir`ドキュメントディレクトリパスのプレースホルダです。`Document`クラスに Word ファイルへのパスを渡すことで、ドキュメントがメモリに読み込まれ、さらに処理できるようになります。
 
-WMFフォントをメタファイルサイズに合わせて拡大縮小する機能を有効または無効にするには、`MetafileRenderingOptions`オブジェクト。この例では、フォントのスケーリングを無効にし、`ScaleWmfFontsToMetafileSize`財産に`false`.
+## ステップ2: メタファイルレンダリングオプションを構成する
+
+次に、メタファイルのレンダリングオプションを設定する必要があります。具体的には、`ScaleWmfFontsToMetafileSize`財産に`false`これは、WMF フォントがメタファイルのサイズに合わせて拡大縮小されるかどうかを制御します。
 
 ```csharp
+// MetafileRenderingOptionsの新しいインスタンスを作成する
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 {
-     ScaleWmfFontsToMetafileSize=false
+    ScaleWmfFontsToMetafileSize = false
 };
 ```
 
-## ステップ4: メタファイルレンダリングオプションを使用してPDFとして保存オプションを構成する
+の`MetafileRenderingOptions`クラスは、メタファイル（WMFなど）のレンダリング方法のオプションを提供します。設定により`ScaleWmfFontsToMetafileSize`に`false`すると、Aspose.Words にメタファイルのサイズに応じてフォントを拡大縮小しないように指示することになり、全体的な PDF サイズを削減するのに役立ちます。
 
-最後に、先ほど設定したメタファイル レンダリング オプションを使用して、PDF に保存するオプションを設定できます。
+## ステップ3: PDF保存オプションを設定する
+
+ここで、設定したメタファイル レンダリング オプションを使用するように PDF 保存オプションを構成します。これにより、ドキュメントを PDF として保存するときにメタファイルを処理する方法が Aspose.Words に指示されます。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
+// PdfSaveOptionsの新しいインスタンスを作成する
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    MetafileRenderingOptions = metafileRenderingOptions
+};
 ```
 
-## ステップ5: メタファイルレンダリングオプションを使用してドキュメントをPDFとして保存する
+の`PdfSaveOptions`クラスを使用すると、ドキュメントをPDFとして保存するためのさまざまな設定を指定できます。以前に設定した`MetafileRenderingOptions`に`MetafileRenderingOptions`の所有物`PdfSaveOptions`、ドキュメントが希望するメタファイル レンダリング設定に従って保存されていることを確認します。
 
-以前に設定した保存オプションを使用して、ドキュメントを PDF 形式で保存します。
+## ステップ4: ドキュメントをPDFとして保存する
+
+最後に、設定した保存オプションを使用して Word 文書を PDF として保存します。これにより、メタファイル レンダリング オプションを含むすべての設定が出力 PDF に適用されます。
+
 
 ```csharp
+//文書をPDFとして保存する
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-以上です。変換時にWMFフォントをメタファイルサイズに合わせてスケーリングする設定を有効または無効にできました。
-
-Aspose.Words for .NET を使用して PDF ドキュメントを作成します。
-
-### Aspose.Words for .NET を使用して WMF フォントをメタファイル サイズにスケーリングするサンプル ソース コード
-
-```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "WMF with text.docx");
-
-	MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
-	{
-		ScaleWmfFontsToMetafileSize = false
-	};
-
-	//Aspose.Wordsがメタファイルレコードの一部をベクターグラフィックに正しくレンダリングできない場合
-	//次に、Aspose.Words はこのメタファイルをビットマップにレンダリングします。
-	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
-	
-        
-```
+このステップでは、`Save`方法の`Document`クラスは、ドキュメントをPDFファイルにエクスポートするために使用されます。PDFが保存されるパスと、`PdfSaveOptions`メタファイルのレンダリング設定が含まれます。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、PDF ドキュメント内の WMF フォントをメタファイル サイズにサイズ変更する機能を有効または無効にする方法を説明しました。説明されている手順に従うことで、PDF ドキュメントに変換するときに、WMF フォントをメタファイル サイズに合わせてサイズ変更するかどうかを簡単に制御できます。これにより、生成される PDF ファイルのサイズが縮小され、レンダリング パフォーマンスが向上します。ドキュメントへの正しいパスを指定し、必要に応じてメタファイル レンダリング オプションを構成するようにしてください。
+WMF フォントをメタファイル サイズにスケーリングすると、Word 文書から生成される PDF ファイルのサイズを大幅に削減できます。この手法は、視覚コンテンツの品質を損なうことなく、文書の保存と配布を最適化するのに役立ちます。上記の手順に従うと、PDF ファイルの管理が容易になり、サイズが効率的になります。
 
-### よくある質問
+## よくある質問
 
-#### Q: PDF ドキュメント内の WMF フォントをメタファイル サイズに変更するとはどういうことですか?
-A: PDF ドキュメント内の WMF フォントをメタファイル サイズにサイズ変更する機能は、PDF ドキュメントに変換するときに WMF フォントをメタファイル サイズに合わせて拡大縮小するかどうかを制御する機能です。この機能を有効にすると、WMF フォントはメタファイルのサイズに合わせて拡大縮小され、生成される PDF ドキュメントのサイズが小さくなる可能性があります。
+### WMF とは何ですか? また、PDF サイズにとってなぜ重要ですか?
 
-#### Q: Aspose.Words for .NET を使用して、PDF ドキュメント内の WMF フォントをメタファイル サイズに合わせてサイズ変更する機能を有効または無効にするにはどうすればよいですか?
-A: Aspose.Words for .NET を使用して PDF ドキュメント内の WMF フォントをメタファイル サイズにサイズ変更する機能を有効または無効にするには、次の手順に従います。
+WMF (Windows メタファイル) は、Microsoft Windows で使用されるグラフィック形式です。ベクター データとビットマップ データの両方を含めることができます。ベクター データは拡大縮小や操作が可能なため、PDF ファイルが不必要に大きくなるのを避けるために適切に処理することが重要です。
 
-ドキュメントが保存されているディレクトリパスを次のように設定します。`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリの実際のパスを入力します。
+### WMF フォントをメタファイル サイズにスケーリングすると、PDF にどのような影響がありますか?
 
-処理したい文書をロードします。`Document`クラスを作成し、指定されたドキュメント ディレクトリ内の Word ドキュメントへのパスを指定します。
+WMF フォントをメタファイル サイズにスケーリングすると、ファイル サイズが増加する可能性のある高解像度フォントのレンダリングを回避することで、全体的な PDF サイズを削減できます。
 
-メタファイルのレンダリングオプションを設定するには、`MetafileRenderingOptions`クラスと設定`ScaleWmfFontsToMetafileSize`財産に`true` WMFフォントをメタファイルサイズに拡大縮小できるようにするか、`false`この機能を無効にします。
+### Aspose.Words で他のメタファイル形式を使用できますか?
 
- PDFとして保存オプションを設定するには、`PdfSaveOptions`クラスと、以前に構成したメタファイル レンダリング オプションを使用します。
+はい、Aspose.Words は WMF に加えて EMF (拡張メタファイル) を含むさまざまなメタファイル形式をサポートしています。
 
-ドキュメントをPDF形式で保存するには、`Save`方法の`Document`パスと保存オプションを指定するクラス。
+### この手法はすべての種類の Word 文書に適用できますか?
 
-#### Q: PDF ドキュメントで WMF フォントをメタファイル サイズに変更する利点は何ですか?
-A: PDF ドキュメントで WMF フォントをメタファイル サイズに変更する利点は次のとおりです。
+はい、この手法は WMF グラフィックを含む任意の Word 文書に適用でき、生成される PDF のサイズを最適化するのに役立ちます。
 
-PDF ファイル サイズの縮小: WMF フォントをメタファイル サイズに合わせてサイズ変更すると、フォント サイズがメタファイルのニーズに合わせて調整され、生成される PDF ドキュメントのサイズが縮小されます。
+### Aspose.Words の詳細情報はどこで入手できますか?
 
-パフォーマンスの向上: WMF フォントのサイズをメタファイルの寸法に合わせて調整することで、PDF ドキュメントのレンダリングがより高速かつ効率的になります。
+ Aspose.Wordsの詳細については、[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)ダウンロード、トライアル、サポートについては、[Aspose.Words ダウンロード ページ](https://releases.aspose.com/words/net/), [Aspose.Words を購入する](https://purchase.aspose.com/buy), [無料トライアル](https://releases.aspose.com/), [一時ライセンス](https://purchase.aspose.com/temporary-license/) 、 そして[サポート](https://forum.aspose.com/c/words/8).

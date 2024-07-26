@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 2. lépés: Szúrjon be egy képalakot
- Használja a`InsertImage` módszere a`DocumentBuilder`objektum egy képforma beillesztéséhez a dokumentumba. Paraméterként adja meg a képfájl elérési útját.
+ Használja a`InsertImage` módszere a`DocumentBuilder` objektum egy képforma beillesztéséhez a dokumentumba. Paraméterként adja meg a képfájl elérési útját.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

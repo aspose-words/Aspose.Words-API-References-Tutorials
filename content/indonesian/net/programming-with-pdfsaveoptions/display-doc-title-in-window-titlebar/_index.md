@@ -2,81 +2,87 @@
 title: Tampilkan Judul Dokumen di Bilah Judul Jendela
 linktitle: Tampilkan Judul Dokumen di Bilah Judul Jendela
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menampilkan judul dokumen di bilah judul jendela saat mengonversi ke PDF dengan Aspose.Words untuk .NET.
+description: Pelajari cara menampilkan judul dokumen di bilah judul jendela PDF Anda menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titlebar/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk menampilkan judul dokumen di bilah judul jendela dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda untuk menampilkan judul dokumen di bilah judul jendela saat Anda membuka dokumen PDF yang dihasilkan. Ikuti langkah-langkah di bawah ini:
+Apakah Anda siap membuat PDF Anda terlihat lebih profesional? Satu perubahan kecil namun berdampak adalah menampilkan judul dokumen di bilah judul jendela. Ini seperti memberi tag nama pada PDF Anda, sehingga langsung dapat dikenali. Hari ini, kita akan mendalami cara mencapainya menggunakan Aspose.Words untuk .NET. Di akhir panduan ini, Anda akan memiliki pemahaman yang jelas tentang prosesnya. Mari kita mulai!
 
-## Langkah 1: Memuat dokumen
+## Prasyarat
 
-Mulailah dengan mengunggah dokumen yang ingin Anda konversi ke PDF:
+Sebelum kita masuk ke langkah-langkahnya, pastikan Anda memiliki semua yang Anda butuhkan:
+
+-  Aspose.Words untuk .NET Library: Anda dapat mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel.
+- Pengetahuan Dasar C#: Kita akan menulis kode dalam C#.
+
+Pastikan Anda sudah menyiapkannya, dan kami siap berangkat!
+
+## Impor Namespace
+
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan. Ini penting karena memungkinkan Anda mengakses kelas dan metode yang diperlukan untuk tugas kita.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Langkah 1: Muat Dokumen Anda
+
+Perjalanan dimulai dengan memuat dokumen Word Anda yang sudah ada. Dokumen ini akan dikonversi ke PDF dengan judul ditampilkan di bilah judul jendela.
+
+```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Pastikan untuk menentukan jalur yang benar ke dokumen Anda.
+ Pada langkah ini, Anda menentukan jalur ke dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat dokumen Anda disimpan.
 
 ## Langkah 2: Konfigurasikan Opsi Penyimpanan PDF
 
-Buat instance kelas PdfSaveOptions dan aktifkan tampilan judul dokumen di bilah judul jendela:
+Selanjutnya, kita perlu mengatur opsi untuk menyimpan dokumen sebagai PDF. Di sini, kami akan menentukan bahwa judul dokumen harus ditampilkan di bilah judul jendela.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { DisplayDocTitle = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    DisplayDocTitle = true
+};
 ```
 
-Opsi ini memungkinkan tampilan judul dokumen di bilah judul jendela saat mengonversi ke PDF.
+ Dengan mengatur`DisplayDocTitle` ke`true`, kami menginstruksikan Aspose.Words untuk menggunakan judul dokumen di bilah judul jendela PDF.
 
-## Langkah 3: Konversi Dokumen ke PDF
+## Langkah 3: Simpan Dokumen sebagai PDF
 
- Menggunakan`Save` metode untuk mengonversi dokumen ke PDF dengan menentukan opsi konversi:
+Terakhir, kami menyimpan dokumen sebagai PDF, menerapkan opsi yang telah kami konfigurasikan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
 ```
 
-Pastikan untuk menentukan jalur yang benar untuk menyimpan PDF yang dikonversi.
+Baris kode ini mengatur penyimpanan dokumen Anda dalam format PDF dengan judul ditampilkan di bilah judul. Sekali lagi, pastikan untuk mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur direktori sebenarnya.
 
-### Contoh kode sumber untuk Menampilkan Judul Dokumen di Bilah Judul Jendela menggunakan Aspose.Words untuk .NET
+## Kesimpulan
 
-Berikut adalah kode sumber lengkap untuk menampilkan judul dokumen di bilah judul jendela dalam dokumen PDF dengan Aspose.Words untuk .NET:
+Dan itu dia! Hanya dengan beberapa baris kode, Anda telah berhasil mengonfigurasi PDF Anda untuk menampilkan judul dokumen di bilah judul jendela menggunakan Aspose.Words untuk .NET. Peningkatan kecil ini dapat membuat PDF Anda terlihat lebih halus dan profesional.
 
-```csharp
+## FAQ
 
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+### Bisakah saya menyesuaikan opsi PDF lainnya menggunakan Aspose.Words untuk .NET?
+Sangat! Aspose.Words untuk .NET menyediakan berbagai opsi penyesuaian untuk menyimpan PDF, termasuk pengaturan keamanan, kompresi, dan banyak lagi.
 
-	PdfSaveOptions saveOptions = new PdfSaveOptions { DisplayDocTitle = true };
+### Bagaimana jika dokumen saya tidak memiliki judul?
+Jika dokumen Anda tidak memiliki judul, bilah judul jendela tidak akan menampilkan judul. Pastikan dokumen Anda memiliki judul sebelum mengonversinya ke PDF.
 
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
-        
-```
-Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menampilkan judul dokumen di bilah judul jendela saat mengonversi ke PDF dengan Aspose.Words untuk .NET.
+### Apakah Aspose.Words for .NET kompatibel dengan semua versi .NET?
+Ya, Aspose.Words untuk .NET mendukung berbagai kerangka .NET, menjadikannya serbaguna untuk lingkungan pengembangan yang berbeda.
 
-### Pertanyaan yang Sering Diajukan
+### Bisakah saya menggunakan Aspose.Words for .NET untuk mengonversi format file lain ke PDF?
+Ya, Anda dapat mengonversi berbagai format file seperti DOCX, RTF, HTML, dan lainnya ke PDF menggunakan Aspose.Words untuk .NET.
 
-#### T: Apa yang dimaksud dengan fitur "Tampilkan judul dokumen di bilah judul jendela" dengan Aspose.Words untuk .NET?
-Fitur "Tampilkan judul dokumen di bilah judul jendela" dengan Aspose.Words untuk .NET memungkinkan Anda menampilkan judul dokumen di bilah judul jendela saat Anda membuka dokumen PDF yang dihasilkan. Hal ini memudahkan untuk mengidentifikasi dan membedakan dokumen PDF di lingkungan membaca Anda.
-
-#### T: Bagaimana cara menggunakan fitur ini dengan Aspose.Words untuk .NET?
-Untuk menggunakan fitur ini dengan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
-
- Muat dokumen menggunakan`Document` metode dan menentukan jalur file yang akan dikonversi ke PDF.
-
- Konfigurasikan opsi penyimpanan PDF dengan membuat instance dari`PdfSaveOptions` kelas dan pengaturan`DisplayDocTitle`properti ke`true`. Ini memungkinkan tampilan judul dokumen di bilah judul jendela saat mengonversi ke PDF.
-
- Menggunakan`Save` metode untuk mengonversi dokumen ke PDF dengan menentukan opsi konversi.
-
-#### T: Apakah fitur ini mengubah konten dokumen itu sendiri?
-Tidak, fitur ini tidak mengubah konten dokumen itu sendiri. Ini hanya mempengaruhi tampilan judul dokumen di bilah judul jendela ketika dibuka sebagai dokumen PDF. Isi dokumen tersebut tetap tidak berubah.
-
-#### T: Apakah mungkin untuk menyesuaikan judul dokumen yang ditampilkan di bilah judul jendela?
- Ya, Anda dapat menyesuaikan judul dokumen yang ditampilkan di bilah judul jendela dengan mengubah`Document.Title` properti dokumen sebelum mengonversinya ke PDF. Anda dapat mengatur judul yang diinginkan menggunakan string. Pastikan untuk mengatur judul sebelum memanggil`Save` metode untuk mengkonversi ke PDF.
-
-#### T: Format keluaran lain apa yang didukung Aspose.Words untuk konversi dokumen?
-Aspose.Words for .NET mendukung banyak format output untuk konversi dokumen, seperti PDF, XPS, HTML, EPUB, MOBI, gambar (JPEG, PNG, BMP, TIFF, GIF), dan masih banyak lagi. masih yang lain. Anda dapat memilih format keluaran yang sesuai dengan kebutuhan spesifik Anda.
+### Bagaimana cara mendapatkan dukungan jika saya mengalami masalah?
+ Anda dapat mengunjungi[Forum Dukungan Aspose.Words](https://forum.aspose.com/c/words/8) untuk bantuan dengan masalah atau pertanyaan apa pun yang mungkin Anda miliki.

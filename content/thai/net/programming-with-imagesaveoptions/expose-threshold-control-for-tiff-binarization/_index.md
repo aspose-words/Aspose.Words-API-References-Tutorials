@@ -2,80 +2,100 @@
 title: เปิดเผยการควบคุมเกณฑ์สำหรับ Tiff Binarization
 linktitle: เปิดเผยการควบคุมเกณฑ์สำหรับ Tiff Binarization
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีควบคุมเกณฑ์การแบ่งไบนารี TIFF ด้วย Aspose.Words สำหรับ .NET บทช่วยสอนที่สมบูรณ์เพื่อภาพที่มีคุณภาพดีขึ้น
+description: เรียนรู้วิธีเปิดเผยการควบคุมเกณฑ์สำหรับการแปลงไบนารี TIFF ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนที่ครอบคลุมนี้
 type: docs
 weight: 10
 url: /th/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
 ---
-ในบทช่วยสอนนี้ เราจะสำรวจซอร์สโค้ด C# ที่ให้มาสำหรับฟีเจอร์ "TIFF Binarization Threshold Control Exposure" ด้วย Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณควบคุมเกณฑ์การแบ่งไบนารีเมื่อแปลงเอกสารเป็นรูปแบบ TIFF
+## การแนะนำ
 
-## ขั้นตอนที่ 1: การตั้งค่าสภาพแวดล้อม
+เคยสงสัยบ้างไหมว่าจะควบคุมเกณฑ์สำหรับการแปลงไบนารี TIFF ในเอกสาร Word ของคุณได้อย่างไร? คุณอยู่ในสถานที่ที่เหมาะสม! คู่มือนี้จะแนะนำคุณตลอดกระบวนการทีละขั้นตอนโดยใช้ Aspose.Words สำหรับ .NET ไม่ว่าคุณจะเป็นนักพัฒนาที่มีประสบการณ์หรือเพิ่งเริ่มต้น คุณจะพบว่าบทช่วยสอนนี้น่าสนใจ ปฏิบัติตามได้ง่าย และอัดแน่นไปด้วยรายละเอียดทั้งหมดที่คุณต้องการเพื่อให้งานสำเร็จลุล่วง พร้อมที่จะดำน้ำแล้วหรือยัง? ไปกันเถอะ!
 
-ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ตั้งค่าสภาพแวดล้อมการพัฒนาของคุณด้วย Aspose.Words สำหรับ .NET ตรวจสอบให้แน่ใจว่าคุณได้เพิ่มข้อมูลอ้างอิงที่จำเป็นและนำเข้าเนมสเปซที่เหมาะสมแล้ว
+## ข้อกำหนดเบื้องต้น
 
-## ขั้นตอนที่ 2: กำลังโหลดเอกสาร
+ก่อนที่เราจะเริ่ม ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
-```csharp
-// พาธไปยังไดเร็กทอรีเอกสารของคุณ
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+1.  Aspose.Words สำหรับ .NET: คุณสามารถดาวน์โหลดได้จากไฟล์[กำหนดหน้าการเผยแพร่](https://releases.aspose.com/words/net/) - หากคุณยังไม่มีใบอนุญาต คุณสามารถขอรับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/).
+2. สภาพแวดล้อมการพัฒนา: Visual Studio หรือ IDE ที่รองรับ .NET อื่นๆ
+3. ความรู้พื้นฐานเกี่ยวกับ C#: ความคุ้นเคยเล็กน้อยกับ C# จะเป็นประโยชน์ แต่ไม่ต้องกังวลหากคุณยังใหม่ เราจะแจกแจงรายละเอียดทุกอย่าง
 
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## นำเข้าเนมสเปซ
 
- ในขั้นตอนนี้ เราโหลดเอกสารโดยใช้`Document` วิธีการและส่งเส้นทางไปยังไฟล์ DOCX ที่จะโหลด
-
-## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกการสำรองข้อมูลรูปภาพ
+ก่อนที่เราจะข้ามไปที่โค้ด เราจำเป็นต้องนำเข้าเนมสเปซที่จำเป็นก่อน นี่เป็นสิ่งสำคัญสำหรับการเข้าถึงคลาสและวิธีการที่เราจะใช้
 
 ```csharp
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
-{
-TiffCompression = TiffCompression.Ccitt3,
-ImageColorMode = ImageColorMode.Grayscale,
-TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
-ThresholdForFloydSteinbergDithering = 254
-};
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- ในขั้นตอนนี้ เราจะกำหนดค่าตัวเลือกการสำรองข้อมูลสำหรับรูปภาพ เราสร้างใหม่`ImageSaveOptions` วัตถุที่ระบุรูปแบบการบันทึกที่ต้องการ ที่นี่ "Tiff" สำหรับรูปแบบ TIFF นอกจากนี้เรายังตั้งค่าตัวเลือกการบีบอัด โหมดสีของภาพ และวิธีการแปลงไบนาไรเซชัน TIFF ด้วยเกณฑ์กำหนดไบนาไรเซชันที่ระบุ
+## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสารของคุณ
 
-## ขั้นตอนที่ 4: การสำรองรูปภาพ
+ก่อนอื่น คุณต้องกำหนดเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ นี่คือที่ที่เอกสารต้นฉบับของคุณตั้งอยู่และที่ที่เอาต์พุตจะถูกบันทึก
 
 ```csharp
-doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
-```
-
- ในขั้นตอนสุดท้ายนี้ เราจะบันทึกรูปภาพเอกสารในรูปแบบ TIFF โดยใช้นามสกุลไฟล์`Save` วิธีการและส่งเส้นทางไปยังไฟล์เอาต์พุตพร้อมกับตัวเลือกการบันทึกที่ระบุ
-
-ตอนนี้คุณสามารถเรียกใช้ซอร์สโค้ดเพื่อแปลงเอกสารของคุณเป็นรูปแบบ TIFF ในขณะที่ควบคุมเกณฑ์การแบ่งไบนารีด้วยตัวเลือกที่ระบุ ไฟล์ผลลัพธ์จะถูกบันทึกในไดเร็กทอรีที่ระบุโดยใช้ชื่อ "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff"
-
-### ซอร์สโค้ดตัวอย่างการเปิดเผยการควบคุมเกณฑ์สำหรับ Tiff Binarization
-
-```csharp 
-
 // เส้นทางไปยังไดเร็กทอรีเอกสารของคุณ
- string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-Document doc = new Document(dataDir + "Rendering.docx");
-
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
-{
-	TiffCompression = TiffCompression.Ccitt3,
-	ImageColorMode = ImageColorMode.Grayscale,
-	TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
-	ThresholdForFloydSteinbergDithering = 254
-};
-
-doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
-            
-        
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-### บทสรุป
+ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีเอกสารของคุณ
 
-ในบทช่วยสอนนี้ เราได้สำรวจฟีเจอร์การรับแสงของ TIFF Binarization Threshold Control ด้วย Aspose.Words สำหรับ .NET เราเรียนรู้วิธีควบคุมเกณฑ์การแบ่งไบนารีเมื่อแปลงเอกสารเป็นรูปแบบ TIFF
+## ขั้นตอนที่ 2: โหลดเอกสารของคุณ
 
-คุณสมบัตินี้มีประโยชน์เมื่อคุณต้องการปรับเกณฑ์ไบนาไรเซชันเพื่อให้ได้ภาพ TIFF ที่มีคุณภาพและความคมชัดดีขึ้น ด้วยการระบุเกณฑ์การแบ่งไบนารีพร้อมตัวเลือกการบันทึก คุณจะได้รับผลลัพธ์แบบกำหนดเองที่ปรับให้เหมาะกับความต้องการของคุณ
+ ต่อไปเราจะต้องโหลดเอกสารที่เราต้องการดำเนินการ ในตัวอย่างนี้ เราจะใช้เอกสารชื่อ`Rendering.docx`.
 
-Aspose.Words สำหรับ .NET นำเสนอคุณสมบัติขั้นสูงที่หลากหลายสำหรับการจัดการและสร้างเอกสาร การเปิดเผย TIFF Binarization Threshold Control เป็นหนึ่งในเครื่องมืออันทรงพลังมากมายที่คุณสามารถใช้ได้
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx");
+```
 
-อย่าลังเลที่จะรวมคุณสมบัตินี้เข้ากับโปรเจ็กต์ Aspose.Words สำหรับ .NET ของคุณเพื่อให้ได้ภาพ TIFF คุณภาพสูงพร้อมการควบคุมเกณฑ์ไบนาไรเซชันที่แม่นยำ
+ บรรทัดโค้ดนี้จะสร้างโค้ดใหม่`Document` วัตถุและโหลดไฟล์ที่ระบุ
+
+## ขั้นตอนที่ 3: กำหนดค่าตัวเลือกการบันทึกรูปภาพ
+
+ ตอนนี้มาถึงส่วนที่สนุกแล้ว! เราจำเป็นต้องกำหนดค่าตัวเลือกการบันทึกรูปภาพเพื่อควบคุม TIFF ไบนาไรเซชัน เราจะใช้`ImageSaveOptions` คลาสเพื่อกำหนดคุณสมบัติต่างๆ
+
+```csharp
+ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
+{
+    TiffCompression = TiffCompression.Ccitt3,
+    ImageColorMode = ImageColorMode.Grayscale,
+    TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
+    ThresholdForFloydSteinbergDithering = 254
+};
+```
+
+มาทำลายสิ่งนี้กัน:
+-  TiffCompression: ตั้งค่าประเภทการบีบอัดสำหรับภาพ TIFF นี่เราใช้อยู่.`Ccitt3`.
+-  ImageColorMode: ตั้งค่าโหมดสี เราตั้งค่าให้เป็น`Grayscale` เพื่อสร้างภาพระดับสีเทา
+-  TiffBinarizationMethod: ระบุวิธีการไบนาไรเซชัน เราใช้อยู่`FloydSteinbergDithering`.
+- ThresholdForFloydSteinberg Dithering: ตั้งค่าเกณฑ์ขั้นต่ำสำหรับ Floyd-Steinberg dithering ค่าที่สูงกว่าหมายถึงพิกเซลสีดำน้อยลง
+
+## ขั้นตอนที่ 4: บันทึกเอกสารเป็น TIFF
+
+สุดท้าย เราบันทึกเอกสารเป็นรูปภาพ TIFF พร้อมตัวเลือกที่ระบุ
+
+```csharp
+doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
+```
+
+บรรทัดโค้ดนี้จะบันทึกเอกสารไปยังเส้นทางที่ระบุด้วยตัวเลือกการบันทึกรูปภาพที่กำหนดค่าไว้
+
+## บทสรุป
+
+และคุณก็ได้แล้ว! คุณเพิ่งเรียนรู้วิธีเปิดเผยการควบคุมเกณฑ์สำหรับการแปลงไบนารี TIFF ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ไลบรารีอันทรงพลังนี้ทำให้ง่ายต่อการจัดการเอกสาร Word ในรูปแบบต่าง ๆ รวมถึงการแปลงเป็นรูปแบบต่าง ๆ ด้วยการตั้งค่าแบบกำหนดเอง ลองดูว่ามันจะทำให้งานประมวลผลเอกสารของคุณง่ายขึ้นได้อย่างไร!
+
+## คำถามที่พบบ่อย
+
+### TIFF ไบนารี่คืออะไร?
+TIFF ไบนาไรซ์เป็นกระบวนการแปลงภาพระดับสีเทาหรือสีให้เป็นภาพขาวดำ (ไบนารี)
+
+### เหตุใดจึงต้องใช้ Floyd-Steinberg dithering?
+การปรับสีแบบ Floyd-Steinberg ช่วยกระจายข้อผิดพลาดของพิกเซลในลักษณะที่จะลดสิ่งรบกวนทางภาพในภาพสุดท้าย ทำให้ภาพดูนุ่มนวลขึ้น
+
+### ฉันสามารถใช้วิธีการบีบอัดอื่นสำหรับ TIFF ได้หรือไม่
+ใช่ Aspose.Words รองรับวิธีการบีบอัด TIFF ที่หลากหลาย เช่น LZW, CCITT4 และ RLE
+
+### Aspose.Words สำหรับ .NET ฟรีหรือไม่
+Aspose.Words สำหรับ .NET เป็นไลบรารีเชิงพาณิชย์ แต่คุณสามารถทดลองใช้ฟรีหรือสิทธิ์ใช้งานชั่วคราวเพื่อประเมินคุณสมบัติต่างๆ ได้
+
+### ฉันจะหาเอกสารเพิ่มเติมได้ที่ไหน?
+ คุณสามารถค้นหาเอกสารที่ครอบคลุมสำหรับ Aspose.Words สำหรับ .NET ได้ที่[เว็บไซต์กำหนด](https://reference.aspose.com/words/net/).

@@ -2,71 +2,128 @@
 title: Präfix für CSS-Klassennamen hinzufügen
 linktitle: Präfix für CSS-Klassennamen hinzufügen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Hinzufügen eines CSS-Klassennamenpräfixes beim Konvertieren eines Dokuments in HTML mit Aspose.Words für .NET.
+description: Erfahren Sie, wie Sie beim Speichern von Word-Dokumenten als HTML mit Aspose.Words für .NET ein CSS-Klassennamenpräfix hinzufügen. Schritt-für-Schritt-Anleitung, Codeausschnitte und FAQs enthalten.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch den C#-Quellcode, um mit Aspose.Words für .NET ein CSS-Klassennamenpräfix hinzuzufügen. Mit dieser Funktion können Sie beim Konvertieren eines Dokuments in HTML ein benutzerdefiniertes Präfix zu generierten CSS-Klassennamen hinzufügen.
+Willkommen! Wenn Sie in die Welt von Aspose.Words für .NET eintauchen, erwartet Sie ein Leckerbissen. Heute werden wir untersuchen, wie Sie beim Speichern eines Word-Dokuments als HTML mit Aspose.Words für .NET ein CSS-Klassennamenpräfix hinzufügen. Diese Funktion ist äußerst praktisch, wenn Sie Klassennamenkonflikte in Ihren HTML-Dateien vermeiden möchten.
 
-## Schritt 1: Projekt-Setup
+## Voraussetzungen
 
-Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Bibliothek Aspose.Words für .NET verwiesen wird.
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-## Schritt 2: Dokument einlegen
+-  Aspose.Words für .NET: Wenn Sie es noch nicht installiert haben,[hier herunterladen](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Visual Studio oder eine andere C#-IDE.
+-  Ein Word-Dokument: Wir verwenden ein Dokument namens`Rendering.docx`. Platzieren Sie es in Ihrem Projektverzeichnis.
 
-In diesem Schritt laden wir das Word-Dokument, das wir in HTML konvertieren möchten. Verwenden Sie den folgenden Code, um das Dokument zu laden:
+## Namespaces importieren
+
+Stellen Sie zunächst sicher, dass Sie die erforderlichen Namespaces in Ihr C#-Projekt importiert haben. Fügen Sie diese oben in Ihrer Codedatei hinzu:
 
 ```csharp
-//Pfad zum Dokumentenverzeichnis.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Lassen Sie uns nun in die Schritt-für-Schritt-Anleitung eintauchen!
+
+## Schritt 1: Richten Sie Ihr Projekt ein
+
+Bevor wir mit dem Hinzufügen eines CSS-Klassennamenpräfixes beginnen können, richten wir unser Projekt ein.
+
+### Schritt 1.1: Neues Projekt erstellen
+
+ Starten Sie Visual Studio und erstellen Sie ein neues Konsolen-App-Projekt. Geben Sie ihm einen einprägsamen Namen wie`AsposeCssPrefixExample`.
+
+### Schritt 1.2: Aspose.Words für .NET hinzufügen
+
+Wenn Sie dies noch nicht getan haben, fügen Sie Aspose.Words für .NET über NuGet zu Ihrem Projekt hinzu. Öffnen Sie einfach die NuGet Package Manager-Konsole und führen Sie Folgendes aus:
+
+```bash
+Install-Package Aspose.Words
+```
+
+Großartig! Jetzt können wir mit dem Codieren beginnen.
+
+## Schritt 2: Laden Sie Ihr Dokument
+
+Als Erstes müssen wir das Word-Dokument laden, das wir in HTML konvertieren möchten.
+
+### Schritt 2.1: Dokumentpfad festlegen
+
+ Richten Sie den Pfad zu Ihrem Dokumentverzeichnis ein. Für dieses Tutorial gehen wir davon aus, dass sich Ihr Dokument in einem Ordner namens`Documents` in Ihrem Projektverzeichnis.
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### Schritt 2.2: Laden Sie das Dokument
+
+Laden wir nun das Dokument mit Aspose.Words:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Ersetzen`"YOUR DOCUMENTS DIRECTORY"` durch den tatsächlichen Pfad des Verzeichnisses, in dem sich Ihr Dokument befindet.
+## Schritt 3: HTML-Speicheroptionen konfigurieren
 
-## Schritt 3: HTML-Speicheroptionen festlegen
+Als Nächstes müssen wir die HTML-Speicheroptionen so konfigurieren, dass sie ein CSS-Klassennamenpräfix enthalten.
 
-Jetzt legen wir die HTML-Speicheroptionen fest, einschließlich CSS-Stylesheet-Typ und CSS-Klassennamenpräfix. Verwenden Sie den folgenden Code:
+### Schritt 3.1: HTML-Speicheroptionen erstellen
+
+ Instanziieren Sie den`HtmlSaveOptions` Objekt und setzen Sie den CSS-Stylesheet-Typ auf`External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
- Dieser Code erstellt eine Instanz von`HtmlSaveOptions` und Sets`CssStyleSheetType` Zu`CssStyleSheetType.External` ein externes CSS-Stylesheet zu generieren und`CssClassNamePrefix` Zu`"pfx_"` voranstellen`"pfx_"` zur Benennung der CSS-Klasse.
+### Schritt 3.2: CSS-Klassennamenpräfix festlegen
 
-## Schritt 4: Konvertieren und Speichern des Dokuments im HTML-Format
+ Nun setzen wir die`CssClassNamePrefix` Eigenschaft auf das gewünschte Präfix. Für dieses Beispiel verwenden wir`"pfx_"`.
 
-Zum Schluss konvertieren wir das Dokument in HTML, indem wir die zuvor definierten HTML-Speicheroptionen verwenden. Verwenden Sie den folgenden Code:
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## Schritt 4: Speichern Sie das Dokument als HTML
+
+Abschließend speichern wir das Dokument mit unseren konfigurierten Optionen als HTML-Datei.
+
+
+Geben Sie den Pfad zur HTML-Ausgabedatei an und speichern Sie das Dokument.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-Dieser Code konvertiert das Dokument in HTML und speichert es in einer Datei mit dem hinzugefügten Präfix des CSS-Klassennamens.
+## Schritt 5: Überprüfen der Ausgabe
 
-### Beispielquellcode zum Hinzufügen eines CSS-Klassennamenpräfixes mit Aspose.Words für .NET
+ Navigieren Sie nach dem Ausführen Ihres Projekts zu Ihrem`Documents` Ordner. Sie sollten eine HTML-Datei mit dem Namen finden`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Öffnen Sie diese Datei in einem Texteditor oder Browser, um zu überprüfen, ob die CSS-Klassen das Präfix haben`pfx_`.
 
-```csharp
+## Abschluss
 
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+Und da haben Sie es! Indem Sie diese Schritte befolgen, haben Sie Ihrer HTML-Ausgabe mithilfe von Aspose.Words für .NET erfolgreich ein CSS-Klassennamenpräfix hinzugefügt. Diese einfache, aber leistungsstarke Funktion kann Ihnen dabei helfen, saubere und konfliktfreie Stile in Ihren HTML-Dokumenten beizubehalten.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## Häufig gestellte Fragen
 
-```
+### Kann ich für jeden Speichervorgang ein anderes Präfix verwenden?
+ Ja, Sie können das Präfix bei jedem Speichern eines Dokuments anpassen, indem Sie das`CssClassNamePrefix` Eigentum.
 
- Achten Sie darauf, den korrekten Dokumentpfad im`dataDir` Variable.
+### Unterstützt diese Methode Inline-CSS?
+ Der`CssClassNamePrefix`-Eigenschaft funktioniert mit externem CSS. Für Inline-CSS benötigen Sie einen anderen Ansatz.
 
-Sie haben jetzt gelernt, wie Sie beim Konvertieren eines Dokuments in HTML mit Aspose.Words für .NET ein CSS-Klassennamenpräfix hinzufügen. Wenn Sie der Schritt-für-Schritt-Anleitung in diesem Tutorial folgen, können Sie die CSS-Klassennamen in Ihren konvertierten HTML-Dokumenten anpassen.
+### Wie kann ich andere HTML-Speicheroptionen einbinden?
+ Sie können verschiedene Eigenschaften von`HtmlSaveOptions` um Ihre HTML-Ausgabe anzupassen. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+
+### Ist es möglich, das HTML in einem Stream zu speichern?
+ Absolut! Sie können das Dokument in einem Stream speichern, indem Sie das Stream-Objekt an den`Save` Methode.
+
+### Wie erhalte ich Unterstützung, wenn Probleme auftreten?
+ Unterstützung erhalten Sie vom[Aspose-Forum](https://forum.aspose.com/c/words/8).

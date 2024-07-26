@@ -16,4 +16,4 @@ Aspose.Words for .NET チュートリアルを使用すると、.NET プロジ�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [画像をWmfとして保存する](./saving-images-as-wmf/) | Aspose.Words for .NET を使用して RTF に変換するときに画像を WMF として保存する方法を学習します。 |
+| [画像をWmfとして保存する](./saving-images-as-wmf/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書に画像を WMF として保存する方法を学びます。ドキュメントの互換性と画像の品質が向上します。 |

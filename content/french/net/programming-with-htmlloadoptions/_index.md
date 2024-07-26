@@ -12,4 +12,4 @@ Les didacticiels Aspose.Words pour .NET sur le traitement de mots avec HTMLLoadO
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Type de contrôle préféré dans un document Word](./preferred-control-type/) | Guide étape par étape pour spécifier le type de contrôle préféré dans un document Word lors du chargement d'un document HTML avec Aspose.Words pour .NET. |
+| [Type de contrôle préféré dans un document Word](./preferred-control-type/) | Découvrez comment insérer un champ de formulaire de zone de liste déroulante dans un document Word à l'aide d'Aspose.Words pour .NET. Suivez ce guide étape par étape pour une intégration transparente du contenu HTML. |

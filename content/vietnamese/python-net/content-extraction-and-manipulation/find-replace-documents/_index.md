@@ -106,7 +106,7 @@ Việc quản lý và thao tác hiệu quả các tài liệu Word thường li�
 
 ### Tôi có thể thay thế văn bản chỉ trong một phạm vi trang cụ thể không?
 
- Vâng, bạn có thể. Trước khi thực hiện thay thế, hãy chỉ định phạm vi trang bằng cách sử dụng`doc.get_child_nodes()` phương pháp để có được nội dung của các trang cụ thể.
+ Có, bạn có thể. Trước khi thực hiện thay thế, hãy chỉ định phạm vi trang bằng cách sử dụng`doc.get_child_nodes()` phương pháp để có được nội dung của các trang cụ thể.
 
 ### Có thể hoàn tác thao tác tìm và thay thế không?
 

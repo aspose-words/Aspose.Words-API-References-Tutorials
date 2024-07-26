@@ -76,7 +76,7 @@ Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서�
  전적으로! Aspose.Words는 여러 버전을 지원합니다. 그냥 교체하세요`MsWordVersion.Word2016` 필요한 버전으로.
 
 ### .NET용 Aspose.Words는 무료인가요?
- 다음을 사용하여 무료로 사용해 볼 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/), 그러나 장기간 사용하려면 라이센스를 구입해야 합니다.
+ 다음을 사용하여 무료로 사용해 볼 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/), 그러나 장기간 사용하려면 라이센스를 구입해야 합니다.
 
 ### 추가 문서는 어디서 찾을 수 있나요?
  자세한 문서를 찾을 수 있습니다[여기](https://reference.aspose.com/words/net/).

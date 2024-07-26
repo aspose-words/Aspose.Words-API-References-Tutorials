@@ -117,7 +117,7 @@ A Word-dokumentumok mezőinek és adatainak hatékony kezelése lehetővé teszi
 
  A mezőértékek kézi frissítéséhez válassza ki a mezőt, és nyomja meg a gombot`F9`.
 
-### Használhatok mezőket a fejléc- és láblécterületeken?
+### Használhatok mezőket a fejléc és a lábléc területén?
 
 Igen, a mezők a fő dokumentumhoz hasonlóan használhatók a fejléc- és láblécterületeken.
 

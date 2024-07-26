@@ -2,35 +2,49 @@
 title: Ekspor Bookmark Header Footer Dokumen Word ke Dokumen PDF
 linktitle: Ekspor Bookmark Header Footer Dokumen Word ke Dokumen PDF
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengekspor bookmark header footer dokumen kata ke bookmark dokumen pdf dengan Aspose.Words untuk .NET.
+description: Pelajari cara mengekspor bookmark header dan footer dari dokumen Word ke PDF menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## Perkenalan
 
-Artikel ini memberikan panduan langkah demi langkah tentang cara mengekspor bookmark header footer dokumen Word ke fitur dokumen pdf dengan Aspose.Words untuk .NET. Kami akan menjelaskan setiap bagian kode secara detail. Di akhir tutorial ini, Anda akan dapat memahami cara mengekspor bookmark dari header dan footer dokumen dan menghasilkan PDF dengan bookmark yang sesuai.
+Mengonversi dokumen Word ke PDF adalah tugas umum, terutama saat Anda ingin berbagi atau mengarsipkan dokumen sambil mempertahankan formatnya. Terkadang, dokumen-dokumen ini berisi penanda penting di dalam header dan footer. Dalam tutorial ini, kita akan memandu proses mengekspor bookmark ini dari dokumen Word ke PDF menggunakan Aspose.Words untuk .NET.
 
-Sebelum memulai, pastikan Anda telah menginstal dan mengonfigurasi pustaka Aspose.Words untuk .NET di proyek Anda. Anda dapat menemukan perpustakaan dan petunjuk instalasi di situs web Aspose.
+## Prasyarat
 
-## Langkah 1: Tentukan direktori dokumen
+Sebelum kita mendalaminya, pastikan Anda memiliki hal berikut:
 
- Untuk memulai, Anda perlu menentukan jalur ke direktori tempat dokumen Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda.
+- Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Siapkan lingkungan pengembangan Anda. Anda dapat menggunakan Visual Studio atau IDE lain yang kompatibel dengan .NET.
+- Pengetahuan Dasar C#: Keakraban dengan pemrograman C# diperlukan untuk mengikuti contoh kode.
+
+## Impor Namespace
+
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan dalam proyek C# Anda. Tambahkan baris ini di bagian atas file kode Anda:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Langkah 2: Unggah dokumen
+Mari kita bagi prosesnya menjadi langkah-langkah yang mudah diikuti.
 
-Selanjutnya, kita perlu memuat dokumen yang ingin kita proses. Dalam contoh ini, kami berasumsi bahwa dokumen tersebut bernama "Bookmark di header dan footer.docx" dan terletak di direktori dokumen yang ditentukan.
+## Langkah 1: Inisialisasi Dokumen
+
+Langkah pertama adalah memuat dokumen Word Anda. Inilah cara Anda melakukannya:
 
 ```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## Langkah 3: Konfigurasikan opsi simpan sebagai PDF
+Pada langkah ini, Anda cukup menentukan jalur ke direktori dokumen Anda dan memuat dokumen Word.
 
- Untuk mengekspor bookmark header dan footer, kita perlu mengkonfigurasi`PdfSaveOptions` obyek. Dalam contoh ini, kami menetapkan tingkat kerangka bookmark default ke 1 dan mode ekspor bookmark header dan footer ke "Pertama".
+## Langkah 2: Konfigurasikan Opsi Penyimpanan PDF
+
+Selanjutnya, Anda perlu mengonfigurasi opsi penyimpanan PDF untuk memastikan bahwa bookmark di header dan footer diekspor dengan benar.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## Langkah 4: Simpan dokumen sebagai PDF dengan penanda header dan footer
+ Di sini, kami sedang menyiapkan`PdfSaveOptions` . Itu`DefaultBookmarksOutlineLevel` properti menetapkan tingkat garis besar untuk bookmark, dan`HeaderFooterBookmarksExportMode` properti memastikan bahwa hanya kemunculan pertama bookmark di header dan footer yang diekspor.
 
-Terakhir, kita dapat menyimpan dokumen dalam format PDF menggunakan opsi penyimpanan yang dikonfigurasi sebelumnya.
+## Langkah 3: Simpan Dokumen sebagai PDF
+
+Terakhir, simpan dokumen Anda sebagai PDF dengan opsi yang dikonfigurasi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-Itu saja ! Anda telah berhasil mengekspor penanda header dan footer dari dokumen dan menghasilkan PDF dengan penanda yang sesuai menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk mengekspor bookmark header dan footer dengan Aspose.Words untuk .NET
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+Pada langkah ini, Anda menyimpan dokumen ke jalur yang ditentukan dengan opsi yang telah Anda konfigurasi.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelaskan cara mengekspor bookmark header dan footer dari dokumen Word ke dokumen PDF menggunakan Aspose.Words untuk .NET. Bookmark yang diekspor memungkinkan navigasi yang mudah dan referensi cepat ke header dan footer terkait dalam dokumen PDF yang dihasilkan. Ikuti langkah-langkah yang dijelaskan untuk mengekspor bookmark header dan footer dari dokumen dan menghasilkan PDF dengan bookmark yang sesuai menggunakan Aspose.Words untuk .NET. Pastikan untuk menentukan jalur yang benar ke dokumen Anda dan konfigurasikan opsi penyimpanan sesuai kebutuhan.
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah mengekspor bookmark dari header dan footer dokumen Word ke PDF menggunakan Aspose.Words untuk .NET. Metode ini memastikan bahwa alat bantu navigasi penting dalam dokumen Anda disimpan dalam format PDF, sehingga memudahkan pembaca untuk menavigasi dokumen Anda.
 
-### Pertanyaan yang Sering Diajukan
+## FAQ
 
-### T: Apa yang dimaksud dengan mengekspor penanda header dan footer dari dokumen Word ke dokumen PDF?
-A: Mengekspor bookmark header dan footer dari dokumen Word ke dokumen PDF adalah fitur untuk menyimpan dan menghasilkan bookmark dalam dokumen PDF dari header dan footer. footer dokumen Word asli. Hal ini memungkinkan pengguna dengan cepat dan mudah menavigasi dokumen PDF dengan menggunakan bookmark yang sesuai dengan header dan footer.
+### Bisakah saya mengekspor semua bookmark dari dokumen Word ke PDF?
 
-### T: Bagaimana cara menggunakan Aspose.Words untuk .NET untuk mengekspor penanda header dan footer dari dokumen Word ke dokumen PDF?
-J: Untuk mengekspor penanda header dan footer dari dokumen Word ke dokumen PDF menggunakan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
+ Ya kamu bisa. Dalam`PdfSaveOptions`, Anda dapat menyesuaikan pengaturan untuk menyertakan semua bookmark jika diperlukan.
 
- Atur jalur direktori tempat dokumen Anda berada dengan mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya dari direktori dokumen Anda.
+### Bagaimana jika saya ingin mengekspor bookmark dari badan dokumen juga?
 
- Muat dokumen yang ingin Anda proses menggunakan`Document` kelas dan tentukan jalur ke dokumen Word di direktori dokumen yang ditentukan.
+ Anda dapat mengonfigurasi`OutlineOptions` di dalam`PdfSaveOptions` untuk menyertakan penanda dari badan dokumen.
 
- Konfigurasikan opsi simpan sebagai PDF dengan membuat instance dari`PdfSaveOptions` kelas dan mengatur opsi penanda header dan footer yang sesuai.
+### Apakah mungkin untuk menyesuaikan level bookmark di PDF?
 
- Simpan dokumen dalam format PDF menggunakan`Save` metode`Document` kelas yang menentukan jalur dan opsi penyimpanan.
+ Sangat! Anda dapat menyesuaikannya`DefaultBookmarksOutlineLevel` properti untuk mengatur tingkat garis besar yang berbeda untuk bookmark Anda.
 
-### T: Apa manfaat mengekspor penanda header dan footer ke dokumen PDF?
-J: Keuntungan mengekspor bookmark header dan footer ke dalam dokumen PDF adalah:
+### Bagaimana cara menangani dokumen tanpa penanda?
 
-Navigasi Mudah: Bookmark memungkinkan pengguna menavigasi dokumen PDF dengan mudah dengan merujuk ke header dan footer tertentu.
+Jika dokumen Anda tidak memiliki penanda, PDF akan dihasilkan tanpa kerangka penanda apa pun. Pastikan dokumen Anda berisi penanda jika Anda memerlukannya dalam PDF.
 
-Referensi Cepat: Bookmark memungkinkan pengguna dengan cepat menemukan bagian yang relevan dari dokumen PDF berdasarkan header dan footer.
+### Bisakah saya menggunakan metode ini untuk jenis dokumen lain seperti DOCX atau RTF?
+
+Ya, Aspose.Words for .NET mendukung berbagai jenis dokumen, termasuk DOCX, RTF, dan lainnya.

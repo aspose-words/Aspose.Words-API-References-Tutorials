@@ -73,7 +73,7 @@ Sentiti libero di utilizzare questo codice nei tuoi progetti e modificarlo in ba
 
 #### D: Come posso accedere alla raccolta dei campi del modulo in Aspose.Words?
 
- R: Per accedere alla raccolta di campi modulo in Aspose.Words, è possibile utilizzare il file`Document.FormFields` proprietà. Questa proprietà restituisce la raccolta completa dei campi modulo presenti nel documento.
+ R: Per accedere alla raccolta di campi modulo in Aspose.Words, è possibile utilizzare il file`Document.FormFields` proprietà. Questa proprietà restituisce la raccolta completa dei campi del modulo presenti nel documento.
 
 #### D: Come posso scorrere i campi del modulo ed eseguire operazioni su ciascuno di essi?
 

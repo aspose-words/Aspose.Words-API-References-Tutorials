@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## ขั้นตอนที่ 3: อัปเดตการวาดภาพศิลปะอัจฉริยะ
- วนซ้ำรูปร่างในเอกสารโดยใช้`GetChildNodes` วิธีการด้วย`NodeType.Shape` พารามิเตอร์. ตรวจสอบว่าแต่ละรูปร่างมี Smart Art หรือไม่โดยใช้`HasSmartArt` ทรัพย์สินและหากเป็นจริงให้โทรไปที่`UpdateSmartArtDrawing` วิธีการอัพเดตภาพวาด Smart Art
+ วนซ้ำรูปร่างในเอกสารโดยใช้`GetChildNodes` วิธีการด้วย`NodeType.Shape` พารามิเตอร์. ตรวจสอบว่าแต่ละรูปร่างมี Smart Art หรือไม่โดยใช้`HasSmartArt`ทรัพย์สินและหากเป็นจริงให้โทรไปที่`UpdateSmartArtDrawing` วิธีการอัพเดตภาพวาด Smart Art
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

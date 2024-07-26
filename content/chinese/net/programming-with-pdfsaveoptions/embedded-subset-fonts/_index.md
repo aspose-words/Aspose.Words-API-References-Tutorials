@@ -2,94 +2,84 @@
 title: 在 PDF 文档中嵌入子集字体
 linktitle: 在 PDF 文档中嵌入子集字体
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 在 PDF 文档中嵌入字体子集的分步指南。
+description: 使用 Aspose.Words for .NET 仅嵌入必要的字体子集，从而减小 PDF 文件大小。按照我们的分步指南，有效优化您的 PDF。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
+## 介绍
 
-本文提供了有关如何使用 Aspose.Words for .NET 的字体子集嵌入功能的分步指南。我们将详细解释代码的每个部分。在本教程结束时，您将能够了解如何在文档中嵌入字体子集并生成仅包含文档中使用的字形的 PDF。
+您是否注意到，即使包含相似的内容，某些 PDF 文件也比其他文件大得多？罪魁祸首往往在于字体。在 PDF 中嵌入字体可确保它在任何设备上看起来都一样，但也会使文件大小膨胀。幸运的是，Aspose.Words for .NET 提供了一个方便的功能，可以仅嵌入必要的字体子集，从而使您的 PDF 保持精简和高效。本教程将逐步指导您完成该过程。
 
-开始之前，请确保您已在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到该库和安装说明。
+## 先决条件
 
-## 步骤1：定义文档目录
+在开始之前，请确保您已准备好以下内容：
 
-首先，您需要定义文档所在目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档目录的实际路径。
+-  Aspose.Words for .NET：您可以下载它[这里](https://releases.aspose.com/words/net/).
+- .NET 环境：确保您有一个可运行的 .NET 开发环境。
+- C# 基础知识：熟悉 C# 编程将帮助您跟上。
+
+## 导入命名空间
+
+要使用 Aspose.Words for .NET，您需要在项目中导入必要的命名空间。将这些添加到 C# 文件的顶部：
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 第 2 步：上传文件
+## 步骤 1：加载文档
 
-接下来，我们需要加载要处理的文档。在此示例中，我们假设文档名为“Rendering.docx”，位于指定的文档目录中。
+首先，我们需要加载要转换为 PDF 的 Word 文档。这是使用`Document`Aspose.Words 提供的类。
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 步骤 3：配置另存为 PDF 选项
+此代码片段加载位于`dataDir` 确保更换`"YOUR DOCUMENT DIRECTORY"`使用您的文档的实际路径。
 
-要创建仅包含文档中使用的字体子集的 PDF，我们需要配置`PdfSaveOptions`对象与`EmbedFullFonts`属性设置为`false`.
+## 步骤 2：配置 PDF 保存选项
+
+接下来，我们配置`PdfSaveOptions`以确保只嵌入必要的字体子集。通过设置`EmbedFullFonts`到`false`，我们告诉 Aspose.Words 仅嵌入文档中使用的字形。
 
 ```csharp
+//输出 PDF 将包含文档中字体的子集。
+// PDF 字体仅包含文档中使用的字形。
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## 步骤 4：将文档另存为包含字体子集的 PDF
+这个小但关键的步骤有助于显著减少 PDF 文件的大小。
 
-最后，我们可以使用字体子集将文档保存为 PDF。指定输出文件名和`saveOptions`我们在上一步中配置的对象。
+## 步骤 3：将文档保存为 PDF
 
-```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-```
-
-就这样！您已成功将字体子集嵌入文档中，并使用 Aspose.Words for .NET 生成了仅包含文档中使用的字形的 PDF。
-
-### 使用 Aspose.Words for .NET 嵌入字体子集的示例源代码
+最后，我们使用`Save`方法，应用配置的`PdfSaveOptions`.
 
 ```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	//输出 PDF 将包含文档中字体的子集。
-	// PDF 字体仅包含文档中使用的字形。
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);
 ```
+
+此代码将生成一个名为`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf`在指定的目录中，仅嵌入必要的字体子集。
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 在 PDF 文档中嵌入字体子集。嵌入字体子集有助于减小 PDF 文件的大小，同时仅使用实际使用的字符来保留文档的外观。这可确保在查看和打印 PDF 时具有更好的兼容性和性能。请随意进一步探索 Aspose.Words for .NET 的功能，以优化使用嵌入字体子集的 PDF 文档的生成。
+就这样！通过遵循这些简单的步骤，您可以使用 Aspose.Words for .NET 仅嵌入必要的字体子集，从而有效地减小 PDF 文件的大小。这不仅可以节省存储空间，还可以确保更快的加载时间和更好的性能，尤其是对于具有大量字体的文档。
 
-### 经常问的问题
+## 常见问题解答
 
-#### 问：什么是在 PDF 文档中嵌入字体子集？
-答：在 PDF 文档中嵌入字体子集是指仅包含文档中使用的字形，而不是包含所有完整字体的过程。通过仅包含显示文档中实际使用的字符所需的字体数据，可以减小 PDF 文件的大小。
+### 为什么我应该在 PDF 中嵌入字体子集？
+仅嵌入必要的字体子集可以显著减少 PDF 文件大小，而不会影响文档的外观和可读性。
 
-#### 问：嵌入完整字体和嵌入字体子集有什么区别？
-答：完全字体嵌入意味着将文档中使用的所有字体都包含在 PDF 文件中，这可确保文档按设计准确显示，但会增加 PDF 文件的大小。相比之下，嵌入字体子集仅包含文档中使用的字形，从而减小 PDF 文件的大小，但如果以后添加其他字符，则限制了准确复制文档外观的能力。
+### 如果需要，我可以恢复嵌入完整字体吗？
+是的，你可以。只需设置`EmbedFullFonts`财产`true`在里面`PdfSaveOptions`.
 
-#### 问：如何使用 Aspose.Words for .NET 在 PDF 文档中嵌入字体子集？
-答：要使用 Aspose.Words for .NET 在 PDF 文档中嵌入字体子集，请按照以下步骤操作：
+### Aspose.Words for .NET 是否支持其他 PDF 优化功能？
+当然！Aspose.Words for .NET 提供了一系列用于优化 PDF 的选项，包括图像压缩和删除未使用的对象。
 
-通过替换来设置文档目录路径`"YOUR DOCUMENT DIRECTORY"`与您的文档目录的实际路径。
+### 使用 Aspose.Words for .NET 可以嵌入哪些类型的字体子集？
+Aspose.Words for .NET 支持文档中使用的所有 TrueType 字体的子集嵌入。
 
-使用`Document`类和文档路径。
-
-通过创建实例来配置 PDF 保存选项`PdfSaveOptions`类和设置`EmbedFullFonts`财产`false`这可确保只有文档中使用的字体子集才会包含在 PDF 文件中。
-
-将文档保存为 PDF 格式，并使用嵌入的字体子集`Save`方法`Document`对象，指定输出文件的名称和之前配置的保存选项。
-
-#### 问：在 PDF 文档中嵌入字体子集有什么好处？
-答：在 PDF 文档中嵌入字体子集的好处是：
-
-减小 PDF 文件大小：通过仅包含文档中使用的字形，与嵌入完整字体相比，PDF 文件大小有所减小。
-
-保留文档的外观：PDF 文件中包含的字体子集使得仅使用实际使用的字符就可以重现文档的外观。
-
-与许可证限制的兼容性：在由于许可限制而无法合法嵌入完整字体的情况下，可能优先嵌入字体子集。
+### 我如何验证我的 PDF 中嵌入了哪些字体？
+您可以在 Adobe Acrobat Reader 中打开 PDF，并检查“字体”选项卡下的属性以查看嵌入的字体。

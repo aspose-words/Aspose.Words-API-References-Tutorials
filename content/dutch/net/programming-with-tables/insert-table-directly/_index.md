@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Deze code initialiseert een nieuw Word-document. Je zult moeten vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+ Deze code initialiseert een nieuw Word-document. Je zult moeten vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
 
 ## Stap 2: Het tabelobject maken
 
@@ -71,7 +71,7 @@ Een tabel bestaat uit rijen en cellen. Laten we deze elementen stap voor stap to
 // Hier kunnen we VerzekerMinimum bellen om de rijen en cellen voor ons te maken. Deze methode wordt gebruikt
 // om ervoor te zorgen dat het opgegeven knooppunt geldig is. In dit geval moet een geldige tabel minimaal één rij en één cel bevatten.
 // In plaats daarvan zullen we zelf de rij en tabel maken.
-//Dit zou de beste manier zijn om dit te doen als we een tabel binnen een algoritme zouden maken.
+// Dit zou de beste manier zijn om dit te doen als we een tabel binnen een algoritme zouden maken.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

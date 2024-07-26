@@ -121,6 +121,6 @@ Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOC, DOCX, P
 
 Dalam panduan ekstensif ini, kami telah menjelajahi seni menata header dan footer dokumen menggunakan Aspose.Words untuk Java. Dari dasar-dasar membuat header dan footer hingga teknik tingkat lanjut seperti menambahkan gambar dan nomor halaman dinamis, kini Anda memiliki dasar yang kuat untuk membuat dokumen Anda menarik secara visual dan profesional.
 
-Ingatlah untuk melatih keterampilan ini dan bereksperimen dengan gaya berbeda untuk menemukan yang paling cocok untuk dokumen Anda. Aspose.Words untuk Java memberdayakan Anda untuk mengambil kendali penuh atas format dokumen Anda, membuka kemungkinan tak terbatas untuk membuat konten yang menakjubkan.
+Ingatlah untuk melatih keterampilan ini dan bereksperimen dengan gaya berbeda untuk menemukan yang paling cocok untuk dokumen Anda. Aspose.Words untuk Java memberdayakan Anda untuk mengambil kendali penuh atas format dokumen Anda, membuka kemungkinan tak terbatas untuk membuat konten menakjubkan.
 
 Jadi, mulailah membuat dokumen yang meninggalkan kesan mendalam. Keahlian baru Anda dalam penataan header dan footer dokumen pasti akan mengarahkan Anda menuju kesempurnaan dokumen.

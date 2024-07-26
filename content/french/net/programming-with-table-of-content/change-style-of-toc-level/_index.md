@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### Q : Puis-je modifier le style de plusieurs niveaux dans la table des matières à l'aide d'Aspose.Words pour .NET ?
 
- R : Oui, vous pouvez modifier le style de plusieurs niveaux dans la table des matières à l'aide d'Aspose.Words for .NET. Pour modifier le style d'un niveau spécifique, vous pouvez accéder au style correspondant à l'aide du bouton`Styles`propriété et apportez les modifications souhaitées à chaque niveau individuellement.
+ : Oui, vous pouvez modifier le style de plusieurs niveaux dans la table des matières à l'aide d'Aspose.Words for .NET. Pour modifier le style d'un niveau spécifique, vous pouvez accéder au style correspondant à l'aide du bouton`Styles` propriété et apportez les modifications souhaitées à chaque niveau individuellement.
 
 #### Q : Comment puis-je enregistrer le document modifié après avoir modifié le style de la table des matières à l'aide d'Aspose.Words for .NET ?
 
@@ -109,7 +109,7 @@ Ce code enregistre le document modifié sous le nom « WorkingWithChangeStyleOfT
 
 #### Q : Puis-je appliquer d'autres modifications de formatage à la table des matières à l'aide d'Aspose.Words pour .NET ?
 
-R : Oui, en plus de modifier le style, vous pouvez appliquer diverses modifications de formatage à la table des matières à l'aide d'Aspose.Words for .NET. Par exemple, vous pouvez modifier la taille de la police, la couleur, l'alignement ou ajouter des propriétés de mise en forme supplémentaires pour améliorer l'apparence de la table des matières.
+: Oui, en plus de modifier le style, vous pouvez appliquer diverses modifications de formatage à la table des matières à l'aide d'Aspose.Words for .NET. Par exemple, vous pouvez modifier la taille de la police, la couleur, l'alignement ou ajouter des propriétés de mise en forme supplémentaires pour améliorer l'apparence de la table des matières.
 
 #### Q : Comment puis-je spécifier un style personnalisé pour un niveau spécifique dans la table des matières à l'aide d'Aspose.Words pour .NET ?
 
@@ -117,8 +117,8 @@ R : Oui, en plus de modifier le style, vous pouvez appliquer diverses modificati
 
 #### Q : Puis-je modifier le style de la table des matières dans un document Word existant à l'aide d'Aspose.Words pour .NET ?
 
- R : Oui, vous pouvez modifier le style de la table des matières dans un document Word existant à l'aide d'Aspose.Words pour .NET. Chargez simplement le document à l'aide du`Document` classe, modifiez les propriétés de style à l'aide de la`Styles` propriété et enregistrez le document pour appliquer les modifications.
+ : Oui, vous pouvez modifier le style de la table des matières dans un document Word existant à l'aide d'Aspose.Words pour .NET. Chargez simplement le document à l'aide du`Document` classe, modifiez les propriétés de style à l'aide de la`Styles` propriété et enregistrez le document pour appliquer les modifications.
 
 #### Q : Aspose.Words pour .NET prend-il en charge la modification d'autres styles et formats dans les documents Word ?
 
-: Oui, Aspose.Words for .NET offre une prise en charge étendue pour modifier divers styles et formatages dans les documents Word. Il vous permet de modifier les styles de différents éléments tels que les paragraphes, les titres, les tableaux, les listes, etc. Vous pouvez modifier les polices, les couleurs, l'alignement, l'indentation, l'espacement et d'autres aspects de formatage en fonction de vos besoins.
+R : Oui, Aspose.Words for .NET offre une prise en charge étendue pour modifier divers styles et formatages dans les documents Word. Il vous permet de modifier les styles de différents éléments tels que les paragraphes, les titres, les tableaux, les listes, etc. Vous pouvez modifier les polices, les couleurs, l'alignement, l'indentation, l'espacement et d'autres aspects de formatage en fonction de vos besoins.

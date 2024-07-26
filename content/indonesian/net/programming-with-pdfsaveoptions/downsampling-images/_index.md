@@ -2,94 +2,89 @@
 title: Kurangi Ukuran Dokumen PDF dengan Downsampling Gambar
 linktitle: Kurangi Ukuran Dokumen PDF dengan Downsampling Gambar
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara memperkecil ukuran dokumen pdf dengan downsampling gambar saat mengonversi ke PDF dengan Aspose.Words untuk .NET.
+description: Kurangi ukuran dokumen PDF dengan melakukan downsampling gambar menggunakan Aspose.Words untuk .NET. Optimalkan PDF Anda untuk waktu unggah dan unduh yang lebih cepat.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk mengurangi ukuran dokumen pdf dengan downsampling gambar saat mengonversi ke PDF dengan Aspose.Words untuk .NET. Ini mengurangi ukuran file PDF yang dihasilkan. Ikuti langkah-langkah di bawah ini:
+PDF adalah kebutuhan pokok di dunia digital, digunakan untuk segala hal mulai dari berbagi dokumen hingga membuat eBuku. Namun, ukurannya terkadang menjadi kendala, terutama ketika berhadapan dengan konten yang kaya gambar. Di sinilah downsampling gambar berperan. Dengan mengurangi resolusi gambar dalam PDF, Anda dapat mengurangi ukuran file secara signifikan tanpa terlalu mengurangi kualitasnya. Dalam tutorial ini, kita akan memandu langkah-langkah untuk mencapai hal ini menggunakan Aspose.Words untuk .NET.
 
-## Langkah 1: Memuat dokumen
+## Prasyarat
 
-Mulailah dengan mengunggah dokumen yang ingin Anda konversi ke PDF:
+Sebelum kita beralih ke kode, pastikan Anda memiliki semua yang Anda butuhkan:
+
+1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika belum, Anda dapat mendownloadnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan .NET apa pun seperti Visual Studio.
+3. Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C# akan sangat membantu.
+4.  Contoh Dokumen: Dokumen Word (misalnya,`Rendering.docx`) dengan gambar untuk dikonversi ke PDF.
+
+## Impor Namespace
+
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan. Tambahkan ini di bagian atas file kode Anda:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah yang dapat dikelola.
+
+## Langkah 1: Muat Dokumen
+
+Langkah pertama adalah memuat dokumen Word Anda. Di sinilah Anda menentukan jalur ke direktori dokumen Anda.
+
+```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Pastikan untuk menentukan jalur yang benar ke dokumen Anda.
+Pada langkah ini, kami memuat dokumen Word dari direktori yang ditentukan. Pastikan untuk mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya di mana dokumen Anda berada.
 
-## Langkah 2: Konfigurasikan opsi penyimpanan PDF
+## Langkah 2: Konfigurasikan Opsi Downsampling
 
-Buat instance kelas PdfSaveOptions dan atur opsi penurunan skala gambar:
+Selanjutnya, kita perlu mengkonfigurasi opsi downsampling. Ini melibatkan pengaturan resolusi dan ambang resolusi untuk gambar.
 
 ```csharp
+// Kita dapat menetapkan ambang batas minimum untuk downsampling.
+// Nilai ini akan mencegah gambar kedua dalam dokumen masukan didownsampling.
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
+    DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- Itu`Resolution` properti menentukan resolusi target gambar dan`ResolutionThreshold`properti menentukan resolusi minimum di mana gambar tidak akan diperkecil.
+ Di sini, kami membuat contoh baru`PdfSaveOptions` dan mengatur`Resolution` hingga 36 DPI dan`ResolutionThreshold` hingga 128DPI. Artinya, gambar apa pun dengan resolusi lebih tinggi dari 128 DPI akan diturunkan sampelnya menjadi 36 DPI.
 
-## Langkah 3: Konversi Dokumen ke PDF
+## Langkah 3: Simpan Dokumen sebagai PDF
 
- Menggunakan`Save` metode untuk mengonversi dokumen ke PDF dengan menentukan opsi penyimpanan:
+Terakhir, kami menyimpan dokumen sebagai PDF dengan opsi yang dikonfigurasi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
 ```
 
-Pastikan untuk menentukan jalur yang benar untuk menyimpan PDF yang dikonversi.
-
-### Contoh kode sumber untuk Downsampling Gambar menggunakan Aspose.Words untuk .NET
-
-```csharp
-
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Kita dapat menetapkan ambang batas minimum untuk downsampling.
-	// Nilai ini akan mencegah gambar kedua dalam dokumen masukan didownsampling.
-	PdfSaveOptions saveOptions = new PdfSaveOptions
-	{
-		DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
-	};
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
-
-```
-
-Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah mengurangi resolusi gambar saat mengonversi ke PDF dengan Aspose.Words untuk .NET.
+Pada langkah terakhir ini, kami menyimpan dokumen sebagai PDF di direktori yang sama dengan opsi downsampling yang ditentukan.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami telah menjelaskan cara memperkecil ukuran dokumen PDF dengan pengambilan sampel gambar saat mengonversi ke PDF menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang dijelaskan, Anda dapat dengan mudah mengurangi resolusi gambar dan ukuran file PDF yang dihasilkan. Pastikan untuk menentukan jalur yang benar ke dokumen Anda dan konfigurasikan opsi pengambilan sampel gambar sesuai kebutuhan. Mengurangi ukuran file PDF memudahkan berbagi, menyimpan, dan memuat file dengan cepat di berbagai platform. Nikmati manfaat mengurangi ukuran dokumen PDF dengan pengambilan sampel gambar menggunakan Aspose.Words untuk .NET.
+Dan itu dia! Anda telah berhasil mengurangi ukuran PDF Anda dengan menurunkan sampel gambar menggunakan Aspose.Words untuk .NET. Ini tidak hanya membuat PDF Anda lebih mudah dikelola tetapi juga membantu pengunggahan, pengunduhan, dan pengalaman menonton yang lebih cepat.
 
-### Pertanyaan yang Sering Diajukan
+## FAQ
 
-#### T: Apa yang dimaksud dengan pengurangan ukuran dokumen PDF dengan pengambilan sampel gambar?
-A: Mengurangi ukuran dokumen PDF dengan Image Sampling adalah memperkecil ukuran file PDF yang dihasilkan dengan mengurangi resolusi gambar saat mengkonversi ke PDF. Ini mengoptimalkan penggunaan ruang penyimpanan dan mempermudah berbagi dan mentransfer file PDF.
+### Apa itu downsampling?
+Downsampling adalah proses pengurangan resolusi gambar, yang membantu memperkecil ukuran file dokumen yang berisi gambar tersebut.
 
-#### T: Bagaimana cara mengurangi ukuran dokumen PDF dengan pengambilan sampel gambar menggunakan Aspose.Words untuk .NET?
-J: Untuk memperkecil ukuran dokumen PDF dengan pengambilan sampel gambar menggunakan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
+### Apakah downsampling akan mempengaruhi kualitas gambar?
+Ya, downsampling akan menurunkan kualitas gambar. Namun, dampaknya bergantung pada tingkat pengurangan resolusi. Ini adalah trade-off antara ukuran file dan kualitas gambar.
 
- Atur jalur direktori tempat dokumen Anda berada dengan mengganti`"YOUR DOCUMENTS DIRECTORY"` dengan jalur sebenarnya dari direktori dokumen Anda.
+### Bisakah saya memilih gambar mana yang akan didownsample?
+ Ya, dengan mengatur`ResolutionThreshold`, Anda dapat mengontrol gambar mana yang diambil sampelnya berdasarkan resolusi aslinya.
 
- Muat dokumen yang ingin Anda konversi ke PDF menggunakan`Document` kelas dan tentukan jalur ke dokumen di direktori dokumen yang ditentukan.
+### Apa resolusi ideal untuk downsampling?
+Resolusi ideal bergantung pada kebutuhan spesifik Anda. Umumnya, 72 DPI digunakan untuk gambar web, sedangkan resolusi yang lebih tinggi digunakan untuk kualitas cetak.
 
- Konfigurasikan opsi simpan sebagai PDF dengan membuat instance dari`PdfSaveOptions` kelas dan mengatur opsi pengambilan sampel gambar menggunakan`DownsampleOptions` Properti. Anda dapat menentukan resolusi target gambar menggunakan`Resolution` properti dan tetapkan ambang resolusi minimum yang di atasnya gambar tidak akan diperkecil menggunakan`ResolutionThreshold` Properti.
-
- Simpan dokumen dalam format PDF menggunakan`Save` metode`Document` kelas yang menentukan jalur dan opsi penyimpanan.
-
-#### T: Apa manfaat memperkecil ukuran dokumen PDF dengan pengambilan sampel gambar?
-A: Keuntungan memperkecil ukuran dokumen PDF dengan pengambilan sampel gambar adalah:
-
-Mengurangi ukuran file PDF: Pengambilan sampel gambar mengurangi resolusi gambar dalam dokumen PDF, sehingga mengurangi ukuran file PDF secara signifikan. Hal ini memudahkan untuk berbagi dan mentransfer file, terutama melalui email atau online.
-
-Optimalisasi ruang penyimpanan: Mengurangi ukuran file PDF membantu mengoptimalkan penggunaan ruang penyimpanan, terutama bila Anda memiliki banyak file PDF yang berisi gambar beresolusi tinggi.
-
-Peningkatan kinerja: File PDF yang lebih kecil dimuat lebih cepat dan dapat dibuka serta dilihat lebih cepat di perangkat berbeda.
+### Apakah Aspose.Words untuk .NET gratis?
+ Aspose.Words untuk .NET adalah produk komersial, tetapi Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/) atau melamar a[izin sementara](https://purchase.aspose.com/temporary-license/).

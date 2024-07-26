@@ -41,7 +41,7 @@ Başlamak için barkodumuzun yüksekliğini twips (1/1440 inç) cinsinden ayarla
 
 ## Barkod Görüntü Rengini Dönüştürme
 
-Daha sonra barkod görselinin rengini Word'den Aspose.BarCode'a dönüştüreceğiz. Giriş rengi "0xRRGGBB" (onaltılık) biçiminde olmalıdır. İşte dönüşümün kodu:
+Daha sonra barkod görsel rengini Word'den Aspose.BarCode'a dönüştüreceğiz. Giriş rengi "0xRRGGBB" (onaltılık) biçiminde olmalıdır. İşte dönüşümün kodu:
 
 ```java
 /// <özet>

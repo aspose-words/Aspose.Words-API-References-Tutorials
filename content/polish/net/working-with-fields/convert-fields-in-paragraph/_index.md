@@ -21,7 +21,7 @@ Aby użyć Aspose.Words w swoim projekcie, musisz dodać niezbędne odniesienia.
 Zanim będzie można dokonać konwersji pól, należy załadować dokument zawierający pola do konwersji. Pamiętaj, aby podać poprawną ścieżkę do katalogu zawierającego dokument. Oto jak przesłać dokument:
 
 ```csharp
-//Ścieżka do katalogu dokumentów.
+// Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Załaduj dokument.
@@ -56,7 +56,7 @@ Pamiętaj, aby podać poprawną ścieżkę i nazwę pliku kopii zapasowej.
 ### Przykład kodu źródłowego dla opcji Konwertuj pola w akapicie przy użyciu Aspose.Words dla .NET
 
 ```csharp
-//Ścieżka do katalogu dokumentów.
+// Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Załaduj dokument.

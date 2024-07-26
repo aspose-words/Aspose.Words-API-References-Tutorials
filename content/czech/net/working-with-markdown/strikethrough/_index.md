@@ -21,7 +21,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Použijte styl přeškrtnutého textu
 
- Styl přeškrtnutého textu povolíme nastavením`StrikeThrough` vlastnictvím`Font` namítat proti`true`.
+ Styl přeškrtnutého textu povolíme nastavením`StrikeThrough` majetek z`Font` namítat proti`true`.
 
 ```csharp
 builder.Font.StrikeThrough = true;
@@ -42,7 +42,7 @@ builder.Writeln("This text will be StrikeThrough");
 // K přidání obsahu do dokumentu použijte tvůrce dokumentů.
 DocumentBuilder builder = new DocumentBuilder();
 
-// Přeškrtněte text.
+// Proveďte přeškrtnutí textu.
 builder.Font.StrikeThrough = true;
 builder.Writeln("This text will be StrikeThrough");
 ```
@@ -53,7 +53,7 @@ gratuluji! Nyní jste se naučili, jak použít styl přeškrtnutého textu s As
 
 #### Otázka: Jak mohu přidat přeškrtnutý text do Aspose.Words?
 
- A: Chcete-li přidat přeškrtnutý text do Aspose.Words, můžete použít`Font.StrikeThrough` vlastnictvím`Run`objekt. Tuto vlastnost můžete nastavit na`true` přidat přeškrtnutý text ke konkrétnímu textu. Můžete například použít`run.Font.StrikeThrough=true` přidat přeškrtnutý text do`Run` objekt.
+ A: Chcete-li přidat přeškrtnutý text do Aspose.Words, můžete použít`Font.StrikeThrough` majetek z`Run`objekt. Tuto vlastnost můžete nastavit na`true` přidat přeškrtnutý text ke konkrétnímu textu. Můžete například použít`run.Font.StrikeThrough=true` přidat přeškrtnutý text do`Run` objekt.
 
 #### Otázka: Je možné přidat přeškrtnutý text k několika částem textu ve stejném odstavci?
 
@@ -61,4 +61,4 @@ gratuluji! Nyní jste se naučili, jak použít styl přeškrtnutého textu s As
 
 #### Otázka: Mohu přidat přeškrtnutý text k textu, který je v tabulce nebo buňce v Aspose.Words?
 
- Odpověď: Ano, k textu, který je v tabulce nebo buňce v Aspose.Words, můžete přidat přeškrtnutý text. Můžete přeskočit na požadovanou buňku nebo odstavec pomocí vhodných metod a poté použít formátování přeškrtnutého textu pomocí`Font.StrikeThrough` vlastnictvím`Run` nebo`Paragraph` objekt.
+ Odpověď: Ano, k textu, který je v tabulce nebo buňce v Aspose.Words, můžete přidat přeškrtnutý text. Můžete přeskočit na požadovanou buňku nebo odstavec pomocí vhodných metod a poté použít formátování přeškrtnutého textu pomocí`Font.StrikeThrough` majetek z`Run` nebo`Paragraph` objekt.

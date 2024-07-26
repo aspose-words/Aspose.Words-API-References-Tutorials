@@ -2,92 +2,88 @@
 title: Eksportuj właściwości niestandardowe do dokumentu PDF
 linktitle: Eksportuj właściwości niestandardowe do dokumentu PDF
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak eksportować niestandardowe właściwości podczas konwersji dokumentów do formatu PDF za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak eksportować niestandardowe właściwości do dokumentu PDF za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
+## Wstęp
 
-tym samouczku przeprowadzimy Cię przez kroki eksportowania niestandardowych właściwości dokumentu do dokumentu PDF przy użyciu Aspose.Words dla .NET. Eksportowanie niestandardowych właściwości umożliwia dołączenie dodatkowych informacji do wygenerowanego dokumentu PDF. Wykonaj poniższe kroki:
+Eksportowanie niestandardowych właściwości do dokumentu PDF może być niezwykle przydatne w przypadku różnych potrzeb biznesowych. Niezależnie od tego, czy zarządzasz metadanymi w celu lepszej przeszukiwalności, czy osadzasz najważniejsze informacje bezpośrednio w swoich dokumentach, Aspose.Words dla .NET sprawia, że proces ten przebiega bezproblemowo. Ten samouczek poprowadzi Cię przez proces tworzenia dokumentu programu Word, dodawania niestandardowych właściwości i eksportowania ich do pliku PDF z nienaruszonymi właściwościami.
 
-## Krok 1: Tworzenie dokumentu i dodawanie właściwości niestandardowych
+## Warunki wstępne
 
-Zacznij od utworzenia instancji klasy Document:
+Zanim zagłębisz się w kod, upewnij się, że masz następujące elementy:
+
+-  Zainstalowano Aspose.Words dla .NET. Jeśli jeszcze go nie zainstalowałeś, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne, takie jak Visual Studio.
+- Podstawowa znajomość programowania w języku C#.
+
+## Importuj przestrzenie nazw
+
+Najpierw musisz zaimportować niezbędne przestrzenie nazw do swojego projektu. Te przestrzenie nazw zawierają klasy i metody wymagane do manipulowania dokumentami programu Word i eksportowania ich do plików PDF.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Podzielmy proces na proste, łatwe do wykonania etapy.
+
+## Krok 1: Zainicjuj dokument
+
+Aby rozpocząć, musisz utworzyć nowy obiekt dokumentu. Obiekt ten posłuży jako podstawa do dodawania niestandardowych właściwości i eksportowania do formatu PDF.
+
+```csharp
+// Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
 ## Krok 2: Dodaj właściwości niestandardowe
- Następnie dodaj żądane właściwości niestandardowe. Na przykład, aby dodać właściwość „Firma” o wartości „Aspose”, użyj metody`Add` metoda kolekcji CustomDocumentProperties:
+
+Następnie dodasz niestandardowe właściwości do swojego dokumentu. Właściwości te mogą obejmować metadane, takie jak nazwa firmy, autor lub inne istotne informacje.
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-Możesz dodać tyle właściwości niestandardowych, ile potrzeba.
+## Krok 3: Skonfiguruj opcje zapisywania plików PDF
 
-## Krok 3: Ustaw opcje eksportu PDF
-
-Utwórz instancję klasy PdfSaveOptions i określ sposób eksportowania właściwości niestandardowych:
+ Teraz skonfiguruj opcje zapisywania pliku PDF, aby mieć pewność, że niestandardowe właściwości zostaną uwzględnione podczas eksportowania dokumentu. The`PdfSaveOptions` class udostępnia różne ustawienia umożliwiające kontrolowanie sposobu zapisywania dokumentu w formacie PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    CustomPropertiesExport = PdfCustomPropertiesExport.Standard
+};
 ```
 
-Ta opcja kontroluje eksport niestandardowych właściwości podczas konwersji do formatu PDF.
+## Krok 4: Zapisz dokument jako plik PDF
 
-## Krok 4: Konwertuj dokument na format PDF
-
- Użyj`Save` metoda konwersji dokumentu do formatu PDF określająca opcje konwersji:
+ Na koniec zapisz dokument jako plik PDF we wskazanym katalogu. The`Save` Metoda łączy wszystkie poprzednie kroki i tworzy plik PDF z dołączonymi właściwościami niestandardowymi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-Upewnij się, że podałeś poprawną ścieżkę do zapisania przekonwertowanego pliku PDF.
-
-### Przykładowy kod źródłowy eksportu właściwości niestandardowych przy użyciu Aspose.Words dla .NET
-
-Oto kompletny kod źródłowy do eksportowania niestandardowych właściwości z dokumentu przy użyciu Aspose.Words dla .NET:
-
-
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	doc.CustomDocumentProperties.Add("Company", "Aspose");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
-
-```
-
-Wykonując te kroki, możesz łatwo wyeksportować niestandardowe właściwości dokumentu podczas konwersji do formatu PDF za pomocą Aspose.Words dla .NET.
-
-
 ## Wniosek
 
-W tym samouczku wyjaśniliśmy, jak eksportować niestandardowe właściwości z dokumentu do dokumentu PDF za pomocą Aspose.Words dla .NET. Wykonując opisane kroki, możesz łatwo dołączyć dodatkowe informacje do wygenerowanego dokumentu PDF, eksportując niestandardowe właściwości dokumentu. Skorzystaj z funkcji Aspose.Words dla .NET, aby personalizować i wzbogacać swoje dokumenty PDF poprzez eksport niestandardowych właściwości.
+Eksportowanie niestandardowych właściwości do dokumentu PDF przy użyciu Aspose.Words dla .NET to prosty proces, który może znacznie zwiększyć możliwości zarządzania dokumentami. Wykonując poniższe kroki, możesz mieć pewność, że najważniejsze metadane zostaną zachowane i dostępne, co poprawi wydajność i organizację dokumentów cyfrowych.
 
-### Często Zadawane Pytania
+## Często zadawane pytania
 
-#### P: Na czym polega eksportowanie niestandardowych właściwości do dokumentu PDF?
-Odp.: Eksportowanie niestandardowych właściwości do dokumentu PDF umożliwia dodanie dodatkowych informacji do wygenerowanego dokumentu PDF. Właściwości niestandardowe to metadane specyficzne dla Twojego dokumentu, takie jak znaczniki, słowa kluczowe lub poświadczenia. Eksportując te niestandardowe właściwości, możesz udostępnić je użytkownikom podczas przeglądania dokumentu PDF.
+### Jakie są właściwości niestandardowe w dokumencie PDF?
+Właściwości niestandardowe to metadane dodawane do dokumentu, które mogą zawierać informacje takie jak autor, nazwa firmy lub inne istotne dane, które należy osadzić w dokumencie.
 
-#### P: Jak mogę wyeksportować niestandardowe właściwości dokumentu do dokumentu PDF przy użyciu Aspose.Words dla .NET?
-O: Aby wyeksportować niestandardowe właściwości dokumentu do dokumentu PDF przy użyciu Aspose.Words dla .NET, wykonaj następujące kroki:
+### Dlaczego powinienem używać Aspose.Words dla .NET do eksportowania niestandardowych właściwości?
+Aspose.Words dla .NET zapewnia solidny i łatwy w użyciu interfejs API do manipulowania dokumentami programu Word i eksportowania ich jako plików PDF, zapewniając zachowanie i dostępność niestandardowych właściwości.
 
- Utwórz instancję`Document` klasa.
+### Czy mogę dodać wiele niestandardowych właściwości do dokumentu?
+ Tak, możesz dodać wiele niestandardowych właściwości do dokumentu, wywołując metodę`Add`metodę dla każdej właściwości, którą chcesz uwzględnić.
 
- Dodaj żądane właściwości niestandardowe za pomocą`CustomDocumentProperties` kolekcja. Na przykład użyj`Add` metodę dodania właściwości „Firma” o wartości „Aspose”.
+### Do jakich innych formatów mogę eksportować przy użyciu Aspose.Words dla .NET?
+Aspose.Words dla .NET obsługuje eksport do różnych formatów, w tym DOCX, HTML, EPUB i wielu innych.
 
- Utwórz instancję`PdfSaveOptions` klasę i określ sposób eksportowania właściwości niestandardowych za pomocą pliku`CustomPropertiesExport` nieruchomość. The`PdfCustomPropertiesExport.Standard` wartość eksportuje właściwości niestandardowe zgodnie z ustawieniami domyślnymi.
-
- Użyj`Save` metoda`Document` class, aby przekonwertować dokument do formatu PDF, określając opcje konwersji.
-
-#### P: Jak mogę uzyskać dostęp do niestandardowych właściwości dokumentu PDF?
-O: Aby uzyskać dostęp do niestandardowych właściwości dokumentu PDF, możesz użyć kompatybilnego czytnika PDF, który obsługuje przeglądanie właściwości dokumentu. Najpopularniejsze czytniki plików PDF, takie jak Adobe Acrobat Reader, zapewniają dostęp do metadanych i właściwości dokumentu PDF. Zazwyczaj opcje te można znaleźć w menu „Plik” lub klikając dokument prawym przyciskiem myszy i wybierając „Właściwości”.
+### Gdzie mogę uzyskać pomoc, jeśli napotkam problemy?
+ Aby uzyskać pomoc, możesz odwiedzić stronę[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) do pomocy.

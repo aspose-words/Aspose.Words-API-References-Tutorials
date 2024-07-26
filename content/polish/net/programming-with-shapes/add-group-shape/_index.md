@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-shapes/add-group-shape/
 ---
 
-W tym samouczku wyjaśniono, jak dodać kształt grupy zawierający wiele kształtów do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Kształty grupowe umożliwiają łączenie wielu kształtów i manipulowanie nimi w ramach jednego elementu.
+tym samouczku wyjaśniono, jak dodać kształt grupy zawierający wiele kształtów do dokumentu programu Word przy użyciu Aspose.Words dla .NET. Kształty grupowe umożliwiają łączenie wielu kształtów i manipulowanie nimi w ramach jednego elementu.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
@@ -17,7 +17,7 @@ Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 - Podstawowa znajomość języka C# i przetwarzania tekstów w dokumentach Word.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
- Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+ Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -49,7 +49,7 @@ groupShape.AppendChild(actionButtonShape);
 ```
 
 ## Krok 4: Ustaw wymiary dla GroupShape
-Ustaw szerokość, wysokość i rozmiar współrzędnych dla`groupShape`.
+ Ustaw szerokość, wysokość i rozmiar współrzędnych dla`groupShape`.
 
 ```csharp
 groupShape.Width = 200;

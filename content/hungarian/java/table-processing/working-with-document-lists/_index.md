@@ -128,7 +128,7 @@ Teljesen! Az Aspose.Words for Java a dokumentumformátumok széles skáláját t
 A dokumentumlista PDF formátumba konvertálásához egyszerűen töltse be a dokumentumot az Aspose.Words for Java segítségével, és mentse el PDF formátumban. Ilyen egyszerű!
 
 ### Az Aspose.Words for Java támogatja a dokumentumokban lévő táblázatokkal való munkát?
-Igen, az Aspose.Words for Java kiterjedt támogatást nyújt a táblázatokkal való munkavégzéshez, lehetővé téve a táblázatos adatok könnyű létrehozását, módosítását és kibontását.
+Igen, az Aspose.Words for Java széleskörű támogatást nyújt a táblázatokkal való munkavégzéshez, lehetővé téve a táblázatos adatok könnyű létrehozását, módosítását és kinyerését.
 
 ## Következtetés
 

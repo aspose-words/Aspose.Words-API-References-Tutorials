@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 2단계: 이미지 모양 삽입
- 사용`InsertImage` 의 방법`DocumentBuilder`문서에 이미지 모양을 삽입하는 개체입니다. 이미지 파일의 경로를 매개변수로 제공합니다.
+ 사용`InsertImage` 의 방법`DocumentBuilder` 문서에 이미지 모양을 삽입하는 개체입니다. 이미지 파일의 경로를 매개변수로 제공합니다.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

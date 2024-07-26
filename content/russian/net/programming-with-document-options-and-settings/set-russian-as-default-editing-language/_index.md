@@ -40,7 +40,7 @@ using Aspose.Words.Loading;
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-### Установите язык редактирования по умолчанию на русский
+### Установить язык редактирования по умолчанию на русский
 
 ```csharp
 loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;

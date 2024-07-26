@@ -1,6 +1,6 @@
 ---
-title: Få dokumentstilar i Word
-linktitle: Få dokumentstilar i Word
+title: Få dokumentformat i Word
+linktitle: Få dokumentformat i Word
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du får dokumentstilar i Word med Aspose.Words för .NET. Komplett handledning för att manipulera stilarna i dina dokument.
 type: docs
@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-styles-and-themes/access-styles/
 ---
 
-I den här handledningen kommer vi att utforska den medföljande C#-källkoden för att hämta dokumentstilar i Word med Aspose.Words för .NET. Den här funktionen låter dig få hela samlingen av stilar som finns i dokumentet.
+den här handledningen kommer vi att utforska den medföljande C#-källkoden för att hämta dokumentstilar i Word med Aspose.Words för .NET. Den här funktionen låter dig få hela samlingen av stilar som finns i dokumentet.
 
 ## Steg 1: Sätta upp miljön
 
@@ -30,7 +30,7 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- I det här steget kommer vi åt dokumentets stilsamling med hjälp av`Styles`fast egendom. Den här samlingen innehåller alla stilar som finns i dokumentet.
+ I det här steget kommer vi åt dokumentets stilsamling med hjälp av`Styles` fast egendom. Den här samlingen innehåller alla stilar som finns i dokumentet.
 
 ## Steg 4: Bläddra bland stilar
 
@@ -82,9 +82,9 @@ foreach (Style style in styles)
 
 ## Slutsats
 
- I den här handledningen lärde vi oss hur man hämtar och får åtkomst till de stilar som finns i ett Word-dokument med Aspose.Words för .NET. Genom att använda`Styles` egendom av`Document`objekt fick vi samlingen av stilar och gick igenom dem för att visa deras namn. Den här funktionen ger värdefulla insikter om stilarna som används i ett dokument och möjliggör ytterligare anpassning och analys.
+ I den här handledningen lärde vi oss hur man hämtar och får åtkomst till de stilar som finns i ett Word-dokument med Aspose.Words för .NET. Genom att använda`Styles` egendom av`Document` objekt fick vi samlingen av stilar och gick igenom dem för att visa deras namn. Den här funktionen ger värdefulla insikter om stilarna som används i ett dokument och möjliggör ytterligare anpassning och analys.
 
-Genom att utnyttja Aspose.Words för .NET:s kraftfulla API kan utvecklare enkelt manipulera och arbeta med dokumentstilar, vilket ger förbättrad kontroll över formatering och dokumentbehandling.
+Genom att utnyttja Aspose.Words för .NET:s kraftfulla API, kan utvecklare enkelt manipulera och arbeta med dokumentstilar, vilket ger förbättrad kontroll över formatering och dokumentbearbetning.
 
 ### Vanliga frågor
 

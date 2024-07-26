@@ -109,7 +109,7 @@ Aspose.Words for .NET é uma biblioteca que permite aos desenvolvedores criar, m
 ### Posso usar o Aspose.Words gratuitamente?
  Você pode experimentá-lo gratuitamente baixando um[teste grátis](https://releases.aspose.com/). Para obter todos os recursos, você precisará adquirir uma licença.
 
-### Quais formatos o Aspose.Words pode suportar?
+### Quais formatos o Aspose.Words pode manipular?
 Suporta uma variedade de formatos, incluindo .doc, .docx, .pdf, .html e muito mais.
 
 ### Preciso saber C# para usar Aspose.Words?

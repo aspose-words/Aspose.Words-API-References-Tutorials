@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### P: ¿Cómo obtener el tipo de revisión de un grupo de revisión en Aspose.Words para .NET?
 
- R: Utilice el`RevisionType` propiedad de la`RevisionGroup` objeto para obtener el tipo de revisión del grupo.
+ R: Utilice el`RevisionType` propiedad de la`RevisionGroup` Objeto para obtener el tipo de revisión del grupo.
 
 ```csharp
 string revisionType = group.RevisionType;

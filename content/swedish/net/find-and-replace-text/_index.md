@@ -16,7 +16,7 @@ Oavsett om du behöver ersätta specifika ord, uppdatera textmallar eller anpass
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Enkel text hitta och ersätt i Word](./simple-find-replace/) | Lär dig hur du enkelt hittar och ersätter text i Word-dokument med Aspose.Words för .NET. Steg-för-steg guide ingår. |
+| [Enkel text hitta och ersätt i Word](./simple-find-replace/) | Lär dig hur du enkelt hittar och ersätter text i Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide ingår. |
 | [Meta-tecken i sökmönster](./meta-characters-in-search-pattern/) | Lär dig hur du använder meta-tecken i sökmönster med Aspose.Words för .NET i denna detaljerade, steg-för-steg-guide. Optimera din dokumentbehandling. |
 | [Ordbyt ut text som innehåller metatecken](./replace-text-containing-meta-characters/) | Lär dig hur du ersätter text som innehåller meta-tecken i Word-dokument med Aspose.Words för .NET. Följ vår detaljerade, engagerande handledning för sömlös textmanipulation. |
 | [Ignorera text i fält](./ignore-text-inside-fields/) | Lär dig hur du manipulerar text i fält i Word-dokument med Aspose.Words för .NET. Denna handledning ger steg-för-steg-vägledning med praktiska exempel. |
@@ -24,6 +24,6 @@ Oavsett om du behöver ersätta specifika ord, uppdatera textmallar eller anpass
 | [Ignorera text inuti Infoga ändringar](./ignore-text-inside-insert-revisions/) | Lär dig hur du hanterar dokumentrevisioner effektivt med Aspose.Words för .NET. Upptäck tekniker för att ignorera text i infogningsversioner för strömlinjeformad redigering. |
 | [Ersätt text i sidfot](./replace-text-in-footer/) | Lär dig hur du ersätter text i sidfoten i ett Word-dokument med Aspose.Words för .NET. Följ den här guiden för att bemästra textersättning med detaljerade exempel. |
 | [Ersätt med Regex](./replace-with-regex/) | Lär dig hur du använder regex för att hitta och ersätta i Word-dokument med Aspose.Words för .NET. Följ vår detaljerade, steg-för-steg-guide för att bemästra textmanipulation. |
-| [Känn igen och ersättningar inom ersättningsmönster](./recognize-and-substitutions-within-replacement-patterns/) | Lär dig hur du känner igen och ersätter text i ersättningsmönster med Aspose.Words för .NET. Steg-för-steg guide med detaljerade exempel. |
+| [Identifiera och ersättningar inom ersättningsmönster](./recognize-and-substitutions-within-replacement-patterns/) | Lär dig hur du känner igen och ersätter text i ersättningsmönster med Aspose.Words för .NET. Steg-för-steg guide med detaljerade exempel. |
 | [Ersätt med sträng](./replace-with-string/) | Lär dig hur du ersätter strängar i Word-dokument med Aspose.Words för .NET med denna steg-för-steg-guide. Perfekt för utvecklare som vill automatisera dokumentredigering. |
 | [Byt ut text i tabell](./replace-text-in-table/) | Byt enkelt ut text i Word-tabellen med Aspose.Words för .NET med denna detaljerade steg-för-steg-guide. |

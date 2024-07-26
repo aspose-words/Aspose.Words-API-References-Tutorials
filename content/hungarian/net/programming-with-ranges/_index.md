@@ -16,5 +16,5 @@ Akár kezdő, akár tapasztalt fejlesztő, ezek az oktatóanyagok segítenek els
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Tartományok Szöveg törlése a Word-dokumentumban](./ranges-delete-text/) | Ismerje meg, hogyan törölhet szöveget meghatározott tartományokban egy Word-dokumentumban az Aspose.Words for .NET használatával. |
-| [Tartományok Szöveg lekérése Word-dokumentumban](./ranges-get-text/) | Ismerje meg, hogyan bonthat ki egyszerűen szöveget Word-dokumentumokból az Aspose.Words for .NET segítségével. |
+| [Tartományok Szöveg törlése a Word-dokumentumban](./ranges-delete-text/) | Ebből a lépésenkénti oktatóanyagból megtudhatja, hogyan törölhet szöveget egy Word-dokumentum tartományából az Aspose.Words for .NET használatával. C# fejlesztőknek tökéletes. |
+| [Tartományok Szöveg lekérése Word-dokumentumban](./ranges-get-text/) | Az Aspose.Words for .NET segítségével könnyedén kivonhat szöveget Word-dokumentumokból. Kövesse részletes útmutatónkat a könnyű kezdéshez. |

@@ -2,92 +2,88 @@
 title: Exportieren benutzerdefinierter Eigenschaften in ein PDF-Dokument
 linktitle: Exportieren benutzerdefinierter Eigenschaften in ein PDF-Dokument
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie benutzerdefinierte Eigenschaften exportieren, wenn Sie Dokumente mit Aspose.Words für .NET in PDF konvertieren.
+description: Erfahren Sie in unserer ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET benutzerdefinierte Eigenschaften in ein PDF-Dokument exportieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch die Schritte zum Exportieren der benutzerdefinierten Eigenschaften eines Dokuments in ein PDF-Dokument mit Aspose.Words für .NET. Durch das Exportieren benutzerdefinierter Eigenschaften können Sie zusätzliche Informationen in das generierte PDF-Dokument aufnehmen. Befolgen Sie die folgenden Schritte:
+Das Exportieren benutzerdefinierter Eigenschaften in ein PDF-Dokument kann für verschiedene geschäftliche Zwecke unglaublich nützlich sein. Egal, ob Sie Metadaten für eine bessere Durchsuchbarkeit verwalten oder wichtige Informationen direkt in Ihre Dokumente einbetten, Aspose.Words für .NET macht den Prozess nahtlos. Dieses Tutorial führt Sie durch die Erstellung eines Word-Dokuments, das Hinzufügen benutzerdefinierter Eigenschaften und deren Export in ein PDF mit diesen Eigenschaften intakt.
 
-## Schritt 1: Erstellen eines Dokuments und Hinzufügen benutzerdefinierter Eigenschaften
+## Voraussetzungen
 
-Beginnen Sie mit der Erstellung einer Instanz der Klasse „Document“:
+Bevor Sie in den Code eintauchen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+
+-  Aspose.Words für .NET installiert. Wenn Sie es noch nicht installiert haben, können Sie es herunterladen[Hier](https://releases.aspose.com/words/net/).
+- Eine Entwicklungsumgebung wie Visual Studio.
+- Grundkenntnisse der C#-Programmierung.
+
+## Namespaces importieren
+
+Zunächst müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren. Diese Namespaces enthalten die Klassen und Methoden, die zum Bearbeiten von Word-Dokumenten und zum Exportieren als PDF erforderlich sind.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Lassen Sie uns den Prozess in einfache, überschaubare Schritte unterteilen.
+
+## Schritt 1: Initialisieren Sie das Dokument
+
+Zu Beginn müssen Sie ein neues Dokumentobjekt erstellen. Dieses Objekt dient als Grundlage für das Hinzufügen benutzerdefinierter Eigenschaften und den Export ins PDF-Format.
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
 ## Schritt 2: Benutzerdefinierte Eigenschaften hinzufügen
- Fügen Sie als Nächstes die gewünschten benutzerdefinierten Eigenschaften hinzu. Um beispielsweise eine Eigenschaft „Firma“ mit dem Wert „Aspose“ hinzuzufügen, verwenden Sie die`Add` Methode der CustomDocumentProperties-Sammlung:
+
+Als Nächstes fügen Sie Ihrem Dokument benutzerdefinierte Eigenschaften hinzu. Diese Eigenschaften können Metadaten wie Firmenname, Autor oder andere relevante Informationen enthalten.
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-Sie können beliebig viele benutzerdefinierte Eigenschaften hinzufügen.
+## Schritt 3: PDF-Speicheroptionen konfigurieren
 
-## Schritt 3: PDF-Exportoptionen festlegen
-
-Erstellen Sie eine Instanz der Klasse PdfSaveOptions und geben Sie an, wie benutzerdefinierte Eigenschaften exportiert werden sollen:
+ Konfigurieren Sie nun die PDF-Speicheroptionen, um sicherzustellen, dass die benutzerdefinierten Eigenschaften beim Exportieren des Dokuments berücksichtigt werden. Die`PdfSaveOptions` Die Klasse bietet verschiedene Einstellungen, um zu steuern, wie das Dokument als PDF gespeichert wird.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    CustomPropertiesExport = PdfCustomPropertiesExport.Standard
+};
 ```
 
-Diese Option steuert den Export benutzerdefinierter Eigenschaften bei der Konvertierung in PDF.
+## Schritt 4: Speichern Sie das Dokument als PDF
 
-## Schritt 4: Dokument in PDF konvertieren
-
- Verwenden Sie die`Save` Methode zum Konvertieren des Dokuments in PDF unter Angabe der Konvertierungsoptionen:
+ Speichern Sie das Dokument abschließend als PDF im angegebenen Verzeichnis.`Save` Die Methode kombiniert alle vorherigen Schritte und erstellt eine PDF-Datei mit den enthaltenen benutzerdefinierten Eigenschaften.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-Stellen Sie sicher, dass Sie den richtigen Pfad zum Speichern der konvertierten PDF-Datei angeben.
-
-### Beispielquellcode für den Export benutzerdefinierter Eigenschaften mit Aspose.Words für .NET
-
-Hier ist der vollständige Quellcode zum Exportieren benutzerdefinierter Eigenschaften aus einem Dokument mit Aspose.Words für .NET:
-
-
-```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	doc.CustomDocumentProperties.Add("Company", "Aspose");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
-
-```
-
-Wenn Sie diese Schritte befolgen, können Sie benutzerdefinierte Eigenschaften eines Dokuments beim Konvertieren in PDF mit Aspose.Words für .NET problemlos exportieren.
-
-
 ## Abschluss
 
-In diesem Tutorial haben wir erklärt, wie Sie mit Aspose.Words für .NET benutzerdefinierte Eigenschaften aus einem Dokument in ein PDF-Dokument exportieren. Indem Sie die beschriebenen Schritte befolgen, können Sie ganz einfach zusätzliche Informationen in das generierte PDF-Dokument aufnehmen, indem Sie die benutzerdefinierten Eigenschaften des Dokuments exportieren. Nutzen Sie die Funktionen von Aspose.Words für .NET, um Ihre PDF-Dokumente durch den Export benutzerdefinierter Eigenschaften zu personalisieren und zu erweitern.
+Das Exportieren benutzerdefinierter Eigenschaften in einem PDF-Dokument mit Aspose.Words für .NET ist ein unkomplizierter Vorgang, der Ihre Dokumentenverwaltungsfunktionen erheblich verbessern kann. Indem Sie diese Schritte befolgen, können Sie sicherstellen, dass wichtige Metadaten erhalten und zugänglich sind, wodurch die Effizienz und Organisation Ihrer digitalen Dokumente verbessert wird.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Was bedeutet das Exportieren benutzerdefinierter Eigenschaften in ein PDF-Dokument?
-A: Durch das Exportieren benutzerdefinierter Eigenschaften in ein PDF-Dokument können zusätzliche Informationen in das generierte PDF-Dokument aufgenommen werden. Benutzerdefinierte Eigenschaften sind Metadaten, die für Ihr Dokument spezifisch sind, wie z. B. Tags, Schlüsselwörter oder Anmeldeinformationen. Indem Sie diese benutzerdefinierten Eigenschaften exportieren, können Sie sie Benutzern beim Anzeigen des PDF-Dokuments zur Verfügung stellen.
+### Was sind benutzerdefinierte Eigenschaften in einem PDF-Dokument?
+Benutzerdefinierte Eigenschaften sind Metadaten, die einem Dokument hinzugefügt werden und Informationen wie den Autor, den Firmennamen oder andere relevante Daten enthalten können, die in das Dokument eingebettet werden müssen.
 
-#### F: Wie kann ich die benutzerdefinierten Eigenschaften eines Dokuments mit Aspose.Words für .NET in ein PDF-Dokument exportieren?
-A: Um die benutzerdefinierten Eigenschaften eines Dokuments mit Aspose.Words für .NET in ein PDF-Dokument zu exportieren, gehen Sie folgendermaßen vor:
+### Warum sollte ich Aspose.Words für .NET zum Exportieren benutzerdefinierter Eigenschaften verwenden?
+Aspose.Words für .NET bietet eine robuste und benutzerfreundliche API zum Bearbeiten und Exportieren von Word-Dokumenten als PDFs und stellt sicher, dass benutzerdefinierte Eigenschaften erhalten bleiben und zugänglich sind.
 
- Erstellen Sie eine Instanz des`Document` Klasse.
+### Kann ich einem Dokument mehrere benutzerdefinierte Eigenschaften hinzufügen?
+ Ja, Sie können einem Dokument mehrere benutzerdefinierte Eigenschaften hinzufügen, indem Sie den`Add`Methode für jede Eigenschaft, die Sie einschließen möchten.
 
- Fügen Sie die gewünschten benutzerdefinierten Eigenschaften hinzu, indem Sie`CustomDocumentProperties` Sammlung. Verwenden Sie beispielsweise die`Add` Methode, um eine „Company“-Eigenschaft mit dem Wert „Aspose“ hinzuzufügen.
+### In welche anderen Formate kann ich mit Aspose.Words für .NET exportieren?
+Aspose.Words für .NET unterstützt den Export in verschiedene Formate, darunter DOCX, HTML, EPUB und viele mehr.
 
- Erstellen Sie eine Instanz des`PdfSaveOptions` und geben Sie an, wie benutzerdefinierte Eigenschaften exportiert werden sollen. Dazu verwenden Sie die`CustomPropertiesExport` Eigentum. Die`PdfCustomPropertiesExport.Standard` Wert exportiert benutzerdefinierte Eigenschaften gemäß den Standardeinstellungen.
-
- Verwenden Sie die`Save` Methode der`Document` Klasse zum Konvertieren des Dokuments in PDF unter Angabe der Konvertierungsoptionen.
-
-#### F: Wie kann ich auf benutzerdefinierte Eigenschaften eines PDF-Dokuments zugreifen?
-A: Um auf die benutzerdefinierten Eigenschaften eines PDF-Dokuments zuzugreifen, können Sie einen kompatiblen PDF-Reader verwenden, der das Anzeigen von Dokumenteigenschaften unterstützt. Die meisten gängigen PDF-Reader, wie beispielsweise Adobe Acrobat Reader, bieten Zugriff auf Metadaten und Eigenschaften eines PDF-Dokuments. Normalerweise finden Sie diese Optionen im Menü „Datei“ oder indem Sie mit der rechten Maustaste auf das Dokument klicken und „Eigenschaften“ auswählen.
+### Wo erhalte ich Unterstützung, wenn Probleme auftreten?
+ Für Unterstützung besuchen Sie bitte die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) zur Hilfe.

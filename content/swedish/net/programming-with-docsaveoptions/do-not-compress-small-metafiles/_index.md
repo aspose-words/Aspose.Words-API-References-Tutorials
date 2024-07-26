@@ -2,7 +2,7 @@
 title: Komprimera inte små metafiler
 linktitle: Komprimera inte små metafiler
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du använder Aspose.Words för .NET för att säkerställa att små metafiler i Word-dokument inte komprimeras, vilket bevarar deras kvalitet och integritet. Steg-för-steg guide ingår.
+description: Lär dig hur du använder Aspose.Words för .NET för att säkerställa att små metafiler i Word-dokument inte komprimeras, vilket bevarar deras kvalitet och integritet. Steg-för-steg-guide ingår.
 type: docs
 weight: 10
 url: /sv/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/

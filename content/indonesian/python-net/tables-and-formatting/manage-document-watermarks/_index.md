@@ -14,7 +14,7 @@ Tanda air berfungsi sebagai elemen halus namun berdampak dalam dokumen, menambah
 
 Watermark adalah elemen desain yang ditempatkan di latar belakang dokumen untuk menyampaikan informasi tambahan atau branding tanpa menghalangi konten utama. Mereka biasanya digunakan dalam dokumen bisnis, dokumen hukum, dan karya kreatif untuk menjaga integritas dokumen dan meningkatkan daya tarik visual.
 
-## Memulai dengan Aspose.Words untuk Python
+## Memulai Aspose.Words untuk Python
 
  Untuk memulai, pastikan Anda telah menginstal Aspose.Words for Python. Anda dapat mengunduhnya dari Aspose Releases:[Unduh Aspose.Words untuk Python](https://releases.aspose.com/words/python/).
 

@@ -2,68 +2,102 @@
 title: Eski Kontrol Karakterlerini Koruyun
 linktitle: Eski Kontrol Karakterlerini Koruyun
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir belgeyi kaydederken eski kontrol karakterlerini nasıl koruyacağınızı öğrenin.
+description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki eski kontrol karakterlerini nasıl koruyacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi kaydederken eski kontrol karakterlerini korumak için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, bir belgeyi dönüştürürken veya kaydederken özel kontrol karakterlerini korumanıza olanak tanır.
+Hiç Word belgelerinizdeki o garip, görünmez kontrol karakterleri karşısında şaşırdınız mı? Biçimlendirmeyi ve işlevselliği bozabilecek küçük, gizli gremlinler gibidirler. Neyse ki Aspose.Words for .NET, belgeleri kaydederken bu eski kontrol karakterlerini olduğu gibi tutmak için kullanışlı bir özellik sunuyor. Bu eğitimde, Aspose.Words for .NET kullanarak bu kontrol karakterlerinin nasıl yönetileceğini derinlemesine inceleyeceğiz. Bunu adım adım anlatacağız ve yol boyunca her ayrıntıyı kavramanızı sağlayacağız. başlamaya hazır mısın? Hadi dalalım!
 
-## 1. Adım: Ortamı ayarlama
+## Önkoşullar
 
-Başlamadan önce Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-## Adım 2: Belgeyi yükleme
+1.  Aspose.Words for .NET: Buradan indirin ve yükleyin[Burada](https://releases.aspose.com/words/net/).
+2.  Geçerli bir Aspose lisansı: Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+3. Geliştirme Ortamı: Visual Studio veya .NET'i destekleyen başka bir IDE.
+4. Temel C# Bilgisi: C# programlama diline aşinalık faydalı olacaktır.
 
-```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+## Ad Alanlarını İçe Aktar
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
-```
-
- Bu adımda belgeyi aşağıdaki komutu kullanarak yüklüyoruz:`Document` yöntemi ve devralınan kontrol karakterlerini içeren dosyanın yolunu iletmek.
-
-## 3. Adım: OOXML yedekleme seçeneklerini yapılandırma
+Kodunuzu yazmadan önce gerekli ad alanlarını içe aktarmanız gerekir. C# dosyanızın en üstüne aşağıdaki satırları ekleyin:
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- Bu adımda yeni bir OOXML kaydetme seçeneklerini yapılandırıyoruz.`OoxmlSaveOptions` nesne. İstediğiniz kaydetme formatını belirtiyoruz (burada,`FlatOpc` ) ve etkinleştirin`KeepLegacyControlChars` eski kontrol karakterlerini koruma seçeneği.
+## 1. Adım: Projenizi Kurma
 
-## Adım 4: Belgeyi eski kontrol karakterleriyle kaydetme
+Öncelikle projenizi Visual Studio'da (veya tercih ettiğiniz IDE'de) ayarlamanız gerekir. 
 
-```csharp
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-```
+1. Yeni bir C# projesi oluşturun: Visual Studio'yu açın ve yeni bir C# Konsol Uygulaması projesi oluşturun.
+2. Aspose.Words for .NET'i yükleyin: Aspose.Words for .NET'i yüklemek için NuGet Paket Yöneticisini kullanın. Solution Explorer'da projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin, "Aspose.Words" ifadesini arayın ve yükleyin.
 
- Bu son adımda, belgeyi kullanarak kaydediyoruz.`Save` yöntemi ve çıktı dosyasına giden yolu iletmek`.docx` uzantı, belirtilen kaydetme seçenekleriyle birlikte.
+## 2. Adım: Belgenizi Yükleyin
 
-Artık bir belgeyi kaydederken eski kontrol karakterlerini korumak için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx" adıyla belirtilen dizine kaydedilecektir.
+Daha sonra eski kontrol karakterlerini içeren Word belgesini yükleyeceksiniz.
 
-### Aspose.Words for .NET kullanan Keep Legacy Control Chars için örnek kaynak kodu 
-```csharp
+1. Belge yolunu belirtin: Belge dizininizin yolunu ayarlayın.
+   
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
 
-// Belge dizininizin yolu
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+2.  Belgeyi yükleyin:`Document` belgenizi yüklemek için sınıf.
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```csharp
+   Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+## 3. Adım: Kaydetme Seçeneklerini Yapılandırın
 
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-            
-        
-```
+Şimdi, eski kontrol karakterlerini olduğu gibi korumak için kaydetme seçeneklerini yapılandıralım.
+
+1.  Kaydetme Seçenekleri Oluşturun: Bir örneğini başlatın:`OoxmlSaveOptions` ve ayarlayın`KeepLegacyControlChars`mülkiyet`true`.
+
+   ```csharp
+   OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)
+   {
+       KeepLegacyControlChars = true
+   };
+   ```
+
+## Adım 4: Belgeyi Kaydedin
+
+Son olarak, belgeyi yapılandırılmış kaydetme seçenekleriyle kaydedin.
+
+1.  Belgeyi kaydedin:`Save` yöntemi`Document` Belgeyi belirtilen kaydetme seçenekleriyle kaydetmek için sınıf.
+
+   ```csharp
+   doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
+   ```
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi kaydederken eski kontrol karakterlerini korumanın işlevselliğini araştırdık. Belgenin doğru biçimlendirilmesi veya görüntülenmesi açısından önemli olabilecek özel karakterlerin nasıl korunacağını öğrendik.
+İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'te Word belgeleriyle çalışırken eski kontrol karakterlerinizin korunduğundan emin olabilirsiniz. Bu özellik, özellikle kontrol karakterlerinin çok önemli bir rol oynadığı karmaşık belgelerle uğraşırken cankurtaran olabilir. 
 
- Eski kontrol karakterlerini korumak, özel kontrol karakterleri gibi daha eski veya belirli özellikleri kullanan belgelerle Sözcük İşleme yaparken özellikle kullanışlıdır. Etkinleştirerek`KeepLegacyControlChars` seçeneğini kullanarak belgeyi kaydederken bu karakterlerin korunmasını sağlarsınız.
+## SSS'ler
 
-Aspose.Words for .NET, belge düzenleme ihtiyaçlarınızı karşılamak için bir dizi esnek ve güçlü yedekleme seçeneği sunar. Uygun seçenekleri kullanarak yedekleme işlemini belgelerinizin belirli özelliklerini koruyacak şekilde özelleştirebilirsiniz.
+### Eski kontrol karakterleri nelerdir?
 
-Belgelerinizdeki eski kontrol karakterlerinin bütünlüğünü ve korunmasını sağlamak için bu işlevselliği Aspose.Words for .NET projelerinize dahil etmekten çekinmeyin.
+Eski kontrol karakterleri, eski belgelerde biçimlendirmeyi ve düzeni kontrol etmek için kullanılan yazdırılmayan karakterlerdir.
+
+### Bu kontrol karakterlerini saklamak yerine kaldırabilir miyim?
+
+Evet, gerekirse bu karakterleri kaldırmak veya değiştirmek için Aspose.Words for .NET'i kullanabilirsiniz.
+
+### Bu özellik Aspose.Words for .NET'in tüm sürümlerinde mevcut mu?
+
+Bu özellik son sürümlerde mevcuttur. Tüm işlevlere erişmek için en son sürümü kullandığınızdan emin olun.
+
+### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
+
+ Evet, geçerli bir lisansa ihtiyacınız var. Değerlendirme amacıyla geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+
+### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+
+ Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+ 

@@ -67,7 +67,7 @@ table.columns[0].set_preferred_width(100)
 
 ## Sammanfoga och dela celler:
 
-Sammanfogning av celler kan vara användbart för att skapa rubrikceller som spänner över flera kolumner eller rader. Omvänt hjälper uppdelning av celler att dela samman sammanslagna celler tillbaka till sin ursprungliga konfiguration.
+Sammanfogning av celler kan vara användbart för att skapa rubrikceller som spänner över flera kolumner eller rader. Omvänt hjälper delande celler till att dela samman sammanslagna celler tillbaka till sin ursprungliga konfiguration.
 
 ```python
 # Merge cells in the first row

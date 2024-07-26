@@ -31,7 +31,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 ## Шаг 3. Обновите рисунок Smart Art.
- Перебирайте фигуры в документе, используя`GetChildNodes` метод с`NodeType.Shape` параметр. Проверьте, есть ли у каждой фигуры Smart Art, используя`HasSmartArt` собственности, и если это правда, позвоните в`UpdateSmartArtDrawing` метод обновления рисунка Smart Art.
+ Перебирайте фигуры в документе, используя`GetChildNodes` метод с`NodeType.Shape` параметр. Проверьте, есть ли у каждой фигуры Smart Art, используя`HasSmartArt`собственности, и если это правда, позвоните в`UpdateSmartArtDrawing` метод обновления рисунка Smart Art.
 
 ```csharp
 	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))

@@ -48,7 +48,7 @@ foreach (Section section in doc)
 
 ## الخطوة 4: إزالة التذييلات
 
-الآن بعد أن انتقلنا إلى قسم معين، يمكننا إزالة التذييلات من هذا القسم. في Aspose.Words، توجد أنواع مختلفة من التذييلات المحتملة، مثل "FooterFirst" (للصفحة الأولى)، و"FooterPrimary" (للصفحات الفردية)، و"FooterEven" (للصفحات الزوجية). نحن بحاجة إلى التحقق من كل هذه الأنواع من التذييلات وإزالتها.
+الآن بعد أن انتقلنا إلى قسم معين، يمكننا إزالة التذييلات من هذا القسم. في Aspose.Words، هناك أنواع مختلفة من التذييلات المحتملة، مثل "FooterFirst" (للصفحة الأولى)، و"FooterPrimary" (للصفحات الفردية)، و"FooterEven" (للصفحات الزوجية). نحن بحاجة إلى التحقق من كل هذه الأنواع من التذييلات وإزالتها.
 
 ```csharp
 HeaderFooter footer = section.HeadersFooters[HeaderFooterType.Footer
@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// التذييل الأساسي هو التذييل المستخدم للصفحات الفردية.
+	//التذييل الأساسي هو التذييل المستخدم للصفحات الفردية.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

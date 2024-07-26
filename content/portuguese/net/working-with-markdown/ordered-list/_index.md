@@ -94,4 +94,4 @@ Criar uma lista ordenada em um documento do Word programaticamente pode parecer 
 Sim, você pode continuar a numeração usando o mesmo formato de lista. Aspose.Words permite controlar a numeração da lista em diferentes parágrafos.
 
 ### Como posso remover o formato da lista?  
- Você pode remover o formato da lista chamando`ListFormat.RemoveNumbers()`. Isso transformará os itens da lista novamente em parágrafos normais.
+ Você pode remover o formato da lista chamando`ListFormat.RemoveNumbers()`. Isso transformará os itens da lista novamente em parágrafos regulares.

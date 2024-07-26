@@ -12,5 +12,5 @@ Samouczki Aspose.Words dla .NET zostały zaprojektowane, aby pomóc Ci opanować
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Użyj czcionki z komputera docelowego](./use-font-from-target-machine/) | Dowiedz się, jak przekonwertować dokument programu Word na stały kod HTML przy użyciu czcionek komputera docelowego za pomocą Aspose.Words dla .NET. |
-| [Zapisz wszystkie reguły CSS w jednym pliku](./write-all-css-rules-in-single-file/) | Dowiedz się, jak przekonwertować dokument Word na stały kod HTML, zapisując wszystkie reguły CSS w jednym pliku za pomocą Aspose.Words dla .NET. |
+| [Użyj czcionki z komputera docelowego](./use-font-from-target-machine/) | Dowiedz się, jak używać czcionek z komputera docelowego w dokumentach programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać bezproblemową integrację czcionek. |
+| [Zapisz wszystkie reguły CSS w jednym pliku](./write-all-css-rules-in-single-file/) | Dowiedz się, jak konwertować dokumenty programu Word do formatu HTML za pomocą Aspose.Words dla .NET ze wszystkimi regułami CSS w jednym pliku, aby uzyskać czystszy kod i łatwiejszą konserwację. |

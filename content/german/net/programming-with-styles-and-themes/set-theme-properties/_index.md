@@ -19,7 +19,7 @@ Stellen Sie sicher, dass Sie Ihre Entwicklungsumgebung mit Aspose.Words für .NE
 Document doc = new Document();
 ```
 
-In diesem Schritt erstellen wir ein neues`Document` Objekt.
+ In diesem Schritt erstellen wir ein neues`Document` Objekt.
 
 ## Schritt 3: Designeigenschaften bearbeiten
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
-In diesem Schritt greifen wir auf die`Theme` Gegenstand der`Document` Objekt, um das Dokumentdesign abzurufen. Als Nächstes können wir Designeigenschaften wie sekundäre Schriftarten ändern (`MinorFonts.Latin`) und Farben (`Colors.Hyperlink`).
+ In diesem Schritt greifen wir auf die`Theme` Gegenstand der`Document` Objekt, um das Dokumentdesign abzurufen. Als Nächstes können wir Designeigenschaften wie sekundäre Schriftarten ändern (`MinorFonts.Latin`) und Farben (`Colors.Hyperlink`).
 
 ## Schritt 4: Speichern Sie das Dokument
 
@@ -67,7 +67,7 @@ Um die Umgebung einzurichten, müssen Sie sicherstellen, dass Aspose.Words für 
 
 #### Wie greife ich auf Designeigenschaften zu und ändere sie?
 
- Um auf die Designeigenschaften zuzugreifen und diese zu ändern, können Sie das`Theme` Gegenstand der`Document` Klasse. Durch den Zugriff auf die`Theme` Objekt können Sie Eigenschaften wie sekundäre Schriftarten ändern (`MinorFonts.Latin`) und Farben (`Colors.Hyperlink`). Weisen Sie diesen Eigenschaften die gewünschten Werte zu, um das Design Ihres Dokuments anzupassen.
+ Um auf die Designeigenschaften zuzugreifen und diese zu ändern, können Sie das`Theme` Gegenstand der`Document` Klasse. Durch den Zugriff auf die`Theme`Objekt können Sie Eigenschaften wie sekundäre Schriftarten ändern (`MinorFonts.Latin`) und Farben (`Colors.Hyperlink`). Weisen Sie diesen Eigenschaften die gewünschten Werte zu, um das Design Ihres Dokuments anzupassen.
 
 #### Welche Vorteile bietet das Festlegen von Designeigenschaften in einem Word-Dokument?
 
@@ -79,4 +79,4 @@ Durch das Festlegen von Designeigenschaften in einem Word-Dokument können Sie d
 
 #### Kann ich das geänderte Dokument in anderen Formaten speichern?
 
- Ja, Sie können das geänderte Dokument in verschiedenen von Aspose.Words für .NET unterstützten Formaten speichern. Das`Save` Methode der`Document` Mit dem Objekt können Sie das Ausgabedateiformat angeben, z. B. DOCX, PDF, HTML usw. Wählen Sie das geeignete Format entsprechend Ihren Anforderungen aus.
+Ja, Sie können das geänderte Dokument in verschiedenen von Aspose.Words für .NET unterstützten Formaten speichern. Das`Save` Methode der`Document` Mit dem Objekt können Sie das Ausgabedateiformat angeben, z. B. DOCX, PDF, HTML usw. Wählen Sie das geeignete Format entsprechend Ihren Anforderungen aus.

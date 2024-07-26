@@ -14,8 +14,8 @@ ImageSaveOptions를 사용한 단어 처리에 대한 .NET용 Aspose.Words 자�
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [Tiff 이진화를 위한 임계값 제어 노출](./expose-threshold-control-for-tiff-binarization/) | .NET용 Aspose.Words를 사용하여 TIFF 이진화 임계값을 제어하는 방법을 알아보세요. 더 나은 품질의 이미지를 위한 완벽한 튜토리얼입니다. |
-| [Tiff 페이지 범위 가져오기](./get-tiff-page-range/) | .NET용 Aspose.Words를 사용하여 다양한 TIFF 페이지를 추출하는 방법을 알아보세요. 사용자 정의 TIFF 파일에 대한 전체 튜토리얼입니다. |
-| [형식 1Bpp 인덱스](./format-1bpp-indexed/) | .NET용 Aspose.Words를 사용하여 인덱싱된 1bpp로 이미지 형식을 지정하는 방법을 알아보세요. 낮은 색상 심도 이미지에 대한 완전한 튜토리얼입니다. |
-| [JPEG 페이지 범위 가져오기](./get-jpeg-page-range/) | .NET용 Aspose.Words를 사용하여 다양한 JPEG 페이지를 얻는 방법을 알아보세요. 사용자 정의 이미지 추출을 위한 완전한 튜토리얼입니다. |
-| [페이지 저장 콜백](./page-saving-callback/) | Aspose.Words for .NET을 사용하여 문서 페이지를 이미지에 저장하는 방법을 알아보세요. |
+| [Tiff 이진화를 위한 임계값 제어 노출](./expose-threshold-control-for-tiff-binarization/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 TIFF 이진화에 대한 임계값 제어를 노출하는 방법을 알아보세요. |
+| [Tiff 페이지 범위 가져오기](./get-tiff-page-range/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 특정 페이지 범위를 TIFF 파일로 변환하는 방법을 알아보세요. |
+| [형식 1Bpp 인덱스](./format-1bpp-indexed/) | .NET용 Aspose.Words를 사용하여 Word 문서를 1Bpp 인덱스 이미지로 변환하는 방법을 알아보세요. 쉬운 변환을 위해 단계별 가이드를 따르십시오. |
+| [JPEG 페이지 범위 가져오기](./get-jpeg-page-range/) | Aspose.Words for .NET을 사용하여 사용자 정의 설정을 사용하여 Word 문서의 특정 페이지를 JPEG로 변환합니다. 밝기, 대비, 해상도를 단계별로 조정하는 방법을 알아보세요. |
+| [페이지 저장 콜백](./page-saving-callback/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 각 페이지를 별도의 PNG 이미지로 저장하는 방법을 알아보세요. |

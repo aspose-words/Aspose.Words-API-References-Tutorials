@@ -2,74 +2,98 @@
 title: Raszterizálja az átalakított elemeket
 linktitle: Raszterizálja az átalakított elemeket
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan tilthatja le az átalakított elemek raszterezését, amikor az Aspose.Words for .NET segítségével PCL formátumba konvertál.
+description: Ismerje meg, hogyan raszterizálható az átalakított elemek Word-dokumentumok PCL formátumba konvertálásakor az Aspose.Words for .NET használatával. Lépésről lépésre útmutató mellékelve.
 type: docs
 weight: 10
 url: /hu/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
+## Bevezetés
 
-Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumok létrehozására, kezelésére és konvertálására C#-alkalmazásokban. Az Aspose.Words által kínált szolgáltatások közé tartozik az átalakított elemek raszterizálásának lehetősége a dokumentumok különböző formátumokba konvertálásakor. Ebben az útmutatóban bemutatjuk, hogyan használhatja az Aspose.Words for .NET C# forráskódját az átalakított elemek raszterizálásának letiltásához, amikor egy dokumentumot PCL formátumba konvertál.
+Képzelje el, hogy egy Word-dokumentummal dolgozik, amely különféle átalakított elemeket, például elforgatott szöveget vagy képeket tartalmaz. Amikor ezt a dokumentumot PCL (Printer Command Language) formátumba konvertálja, érdemes lehet gondoskodni arról, hogy ezek az átalakított elemek megfelelően legyenek raszterizálva. Ebben az oktatóanyagban bemutatjuk, hogyan érheti el ezt az Aspose.Words for .NET használatával.
 
-## Az Aspose.Words könyvtár megértése
+## Előfeltételek
 
-Mielőtt belemerülne a kódba, fontos megérteni a .NET Aspose.Words könyvtárát. Az Aspose.Words egy népszerű könyvtár, amely egyszerűvé és hatékonysá teszi a Word-dokumentumokkal végzett szövegfeldolgozást. Funkciók széles skáláját kínálja Word-dokumentumok létrehozásához, szerkesztéséhez és konvertálásához, beleértve az átalakított elemek raszterizálásának támogatását az átalakítás során.
+Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
 
-## Word dokumentum betöltése
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzió van telepítve. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+2.  Érvényes licenc: licencet vásárolhat[itt](https://purchase.aspose.com/buy) vagy kapjon ideiglenes engedélyt az értékeléshez[itt](https://purchase.aspose.com/temporary-license/).
+3. Fejlesztői környezet: Állítsa be fejlesztői környezetét (pl. Visual Studio) .NET keretrendszer támogatással.
 
-Az első lépés a PCL formátumba konvertálni kívánt Word dokumentum betöltése. A Dokumentum osztály segítségével töltse be a dokumentumot a forrásfájlból. Íme egy példa:
+## Névterek importálása
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
-
-Ebben a példában a dokumentumok könyvtárában található "Rendering.docx" dokumentumot töltjük be.
-
-## Biztonsági mentési beállítások konfigurálása
-
-A következő lépés a PCL formátumba konvertálás mentési beállításainak konfigurálása. Használja a PclSaveOptions osztályt, és állítsa a RasterizeTransformedElements tulajdonságot false értékre. Íme, hogyan kell csinálni:
+Az Aspose.Words for .NET használatához importálnia kell a szükséges névtereket. Adja hozzá a következőket a C# fájl tetejéhez:
 
 ```csharp
-PclSaveOptions saveOptions = new PclSaveOptions
-{
-     SaveFormat = SaveFormat.Pcl,
-     RasterizeTransformedElements = false
-};
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Létrehozunk egy új PclSaveOptions objektumot, és a SaveFormat tulajdonságot SaveFormat.Pcl értékre állítjuk annak megadásához, hogy PCL formátumban akarjuk menteni a dokumentumot. Ezután a RasterizeTransformedElements tulajdonságot false értékre állítjuk az átalakított elemek raszterezésének letiltásához.
+Most bontsuk le a folyamatot több lépésre, hogy minden részt alaposan megértsünk.
 
-## A dokumentum konvertálása PCL formátumba
+## 1. lépés: Állítsa be projektjét
 
-Most, hogy konfiguráltuk a mentési beállításokat, folytathatjuk a dokumentum PCL formátumba való konvertálását. Használja a Dokumentum osztály Mentés metódusát a konvertált dokumentum PCL formátumba mentéséhez a mentési beállítások megadásával. Íme egy példa:
+Először is létre kell hoznia egy új projektet, vagy használnia kell egy meglévőt. Nyissa meg fejlesztői környezetét, és állítson be egy projektet.
 
-```csharp
-doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
-```
+1. Új projekt létrehozása: Nyissa meg a Visual Studio-t, és hozzon létre egy új C# konzolalkalmazást.
+2.  Az Aspose.Words telepítése: Az Aspose.Words telepítéséhez használja a NuGet Package Managert. Kattintson a jobb gombbal a projektre, válassza a „NuGet-csomagok kezelése” lehetőséget, és keressen rá`Aspose.Words`. Telepítse a legújabb verziót.
 
-Ebben a példában a konvertált dokumentumot "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" néven mentjük a megadott mentési beállítások használatával.
+## 2. lépés: Töltse be a Word-dokumentumot
 
-### Példa forráskódra az Aspose.Words for .NET "Raszterize Transformed Elements" funkciójához
+Ezután be kell töltenie a konvertálni kívánt Word dokumentumot. Győződjön meg arról, hogy készen van egy dokumentum, vagy hozzon létre egyet átalakított elemekkel.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Töltse be a Word dokumentumot
-
-
 Document doc = new Document(dataDir + "Rendering.docx");
+```
 
-// Konfigurálja a biztonsági mentési beállításokat a PCL formátumra való átalakításhoz
+ Ebben a kódrészletben cserélje ki`"YOUR DOCUMENTS DIRECTORY"` a Word-dokumentumot tartalmazó könyvtár tényleges elérési útjával. Ellenőrizze a dokumentum nevét (`Rendering.docx`) megegyezik a fájljával.
+
+## 3. lépés: Konfigurálja a mentési beállításokat
+
+ A dokumentum PCL formátumba konvertálásához konfigurálnia kell a mentési beállításokat. Ez magában foglalja a`SaveFormat` nak nek`Pcl` és annak megadása, hogy kell-e raszterizálni a transzformált elemeket.
+
+```csharp
+//Konfigurálja a biztonsági mentési beállításokat a PCL formátumra való átalakításhoz
 PclSaveOptions saveOptions = new PclSaveOptions
 {
-     SaveFormat = SaveFormat.Pcl,
-     RasterizeTransformedElements = false
+    SaveFormat = SaveFormat.Pcl,
+    RasterizeTransformedElements = false
 };
+```
 
+ Itt,`RasterizeTransformedElements` be van állítva`false` , vagyis a transzformált elemek nem lesznek raszterizálva. Beállíthatja`true` ha raszteresíteni szeretné őket.
+
+## 4. lépés: Konvertálja a dokumentumot
+
+Végül a dokumentumot PCL formátumba konvertálja a konfigurált mentési beállításokkal.
+
+```csharp
 // Konvertálja a dokumentumot PCL formátumba
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
+ Ebben a sorban a dokumentum PCL formátumban kerül mentésre a megadott opciókkal. A kimeneti fájl neve`WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl`.
+
 ## Következtetés
 
-Ebben az útmutatóban bemutattuk, hogyan használhatja az Aspose.Words for .NET-et az átalakított elemek raszterezésének letiltására, amikor egy dokumentumot PCL formátumba konvertál a mellékelt C# forráskód használatával. A megadott lépések követésével könnyedén szabályozhatja az átalakított elemek raszterezési viselkedését, amikor Word-dokumentumait különböző formátumokba konvertálja. Az Aspose.Words óriási rugalmasságot és teljesítményt kínál az átalakított elemekkel való munkavégzéshez, lehetővé téve, hogy pontosan az Ön egyedi igényei szerint hozzon létre konvertált dokumentumokat.
+Az átalakított elemeket tartalmazó Word-dokumentumok PCL-formátumba konvertálása kissé körülményes lehet, de az Aspose.Words for .NET használatával ez egyszerű folyamat. Az oktatóanyagban ismertetett lépések követésével könnyedén szabályozhatja, hogy az átalakítás során raszterezze-e ezeket az elemeket.
+
+## GYIK
+
+### Használhatom az Aspose.Words for .NET-et webalkalmazásban?  
+Igen, az Aspose.Words for .NET különféle típusú alkalmazásokban használható, beleértve a webalkalmazásokat is. Biztosítsa a megfelelő licencelést és konfigurációt.
+
+### Milyen más formátumokba konvertálható az Aspose.Words for .NET?  
+Az Aspose.Words a formátumok széles skáláját támogatja, beleértve a PDF, HTML, EPUB és egyebeket. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) a teljes listáért.
+
+### Lehetséges-e csak bizonyos elemek raszterizálása a dokumentumban?  
+ Jelenleg a`RasterizeTransformedElements` opció a dokumentum összes átalakított elemére vonatkozik. A részletesebb szabályozás érdekében fontolja meg az elemek külön feldolgozását az átalakítás előtt.
+
+### Hogyan háríthatom el a dokumentumok konvertálásával kapcsolatos problémákat?  
+ Győződjön meg arról, hogy az Aspose.Words legújabb verziójával rendelkezik, és ellenőrizze a dokumentációt az esetleges konverziós problémákra vonatkozóan. Ezenkívül a[támogatói fórum](https://forum.aspose.com/c/words/8) remek hely a segítség kérésére.
+
+### Vannak korlátozások az Aspose.Words for .NET próbaverziójára vonatkozóan?  
+ A próbaverziónak van néhány korlátozása, például az értékelési vízjel. A teljesen működőképes élmény érdekében fontolja meg a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/).

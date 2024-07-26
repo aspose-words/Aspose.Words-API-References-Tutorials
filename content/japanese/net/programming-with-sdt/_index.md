@@ -16,13 +16,13 @@ Aspose.Words for .NET チュートリアルでは、ライブラリの機能を�
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [チェックボックス型コンテンツコントロール](./check-box-type-content-control/) | Aspose.Words for .NET を使用して Word 文書にチェック ボックス タイプのコンテンツ コントロールを作成する方法を学習します。 |
+| [チェックボックス型コンテンツコントロール](./check-box-type-content-control/) | この詳細なステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書にチェック ボックス タイプのコンテンツ コントロールを追加する方法を学習します。 |
 | [チェックボックスの現在の状態](./current-state-of-check-box/) | Aspose.Words for .NET を使用して、Word 文書内のチェック ボックス コンテンツ コントロールの現在の状態を取得および設定する方法を学習します。 |
 | [コンテンツコントロールの変更](./modify-content-controls/) | Aspose.Words for .NET を使用して、Word 文書内のコンテンツ コントロール内のテキスト、ドロップダウン リスト、画像を変更する方法を学習します。 |
 | [コンボ ボックス コンテンツ コントロール](./combo-box-content-control/) | Aspose.Words for .NET を使用して Word 文書にコンボ ボックス コンテンツ コントロールを作成する方法を学習します。 |
 | [リッチテキストボックスコンテンツコントロール](./rich-text-box-content-control/) | Aspose.Words for .NET を使用して、テキストの書式設定とスタイル設定を可能にする、Word 文書にリッチ テキスト ボックス コンテンツ コントロールを作成する方法を学習します。 |
 | [コンテンツコントロールの色を設定する](./set-content-control-color/) | Aspose.Words for .NET を使用して Word 文書内のコンテンツ コントロールの色を設定し、その外観をカスタマイズする方法を学習します。 |
-| [クリアコンテンツコントロール](./clear-contents-control/) | Aspose.Words for .NET を使用して Word 文書内のコントロールの内容をクリアする方法を学習します。 |
+| [クリアコンテンツコントロール](./clear-contents-control/) | ステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書内のコンテンツ コントロールをクリアする方法を学びます。 |
 | [SDT をカスタム XML パーツにバインドする](./bind-sdt-to-custom-xml-part/) | Aspose.Words for .NET を使用して SDT をカスタム XML パーツにバインドする方法を学習します。 |
 | [コンテンツコントロールスタイルの設定](./set-content-control-style/) | Aspose.Words for .NET を使用して、一貫した書式を適用し、Word 文書内のコンテンツ コントロールのスタイルを設定する方法を学習します。 |
 | [カスタム XML パーツにマップされたテーブル繰り返しセクションの作成](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Aspose.Words for .NET を使用して、Word 文書内の CustomXmlPart にマップされた繰り返しセクションを含むテーブルを作成する方法を学習します。 |

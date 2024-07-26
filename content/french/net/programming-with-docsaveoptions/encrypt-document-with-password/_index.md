@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 - Document doc = new Document() : Cette ligne initialise un nouveau document.
 - DocumentBuilder builder = new DocumentBuilder(doc) : Le DocumentBuilder est un outil pratique pour ajouter du contenu à votre document.
 
-## Étape 2 : Ajouter du contenu
+## Étape 2 : ajouter du contenu
 
 Maintenant que nous avons notre feuille vierge, écrivons quelque chose dessus. Que diriez-vous d'un simple « Bonjour tout le monde ! » ? Classique.
 

@@ -9,7 +9,7 @@ url: /zh-hant/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 ## 介紹
 
-以程式設計方式建立和管理 Word 文件時，Aspose.Words for .NET 是一個功能強大的工具，可以為您節省大量時間和精力。在本文中，我們將探討如何使用 Aspose.Words for .NET 在 Word 文件中移至頁首和頁尾。當您需要將特定內容新增至文件的頁首或頁尾部分時，此功能至關重要。無論您是要建立報告、發票還是任何需要專業操作的文檔，了解如何操作頁首和頁尾都至關重要。
+以程式設計方式建立和管理 Word 文件時，Aspose.Words for .NET 是一款功能強大的工具，可為您節省大量時間和精力。在本文中，我們將探討如何使用 Aspose.Words for .NET 在 Word 文件中移至頁首和頁尾。當您需要將特定內容新增至文件的頁首或頁尾部分時，此功能至關重要。無論您是要建立報告、發票還是任何需要專業操作的文檔，了解如何操作頁首和頁尾都至關重要。
 
 ## 先決條件
 

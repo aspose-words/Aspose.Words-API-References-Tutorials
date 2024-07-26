@@ -42,7 +42,7 @@ section.page_setup.left_margin = aw.ConvertUtil.inch_to_point(1)
 
 ## Personalizzazione del layout della pagina
 
-Aspose.Words per Python ti consente di personalizzare il layout della pagina in base alle tue esigenze. Puoi regolare i margini, le dimensioni della pagina, l'orientamento e altro ancora. Ad esempio:
+Aspose.Words for Python ti consente di personalizzare il layout della pagina in base alle tue esigenze. Puoi regolare i margini, le dimensioni della pagina, l'orientamento e altro ancora. Ad esempio:
 
 ```python
 # Customize page layout

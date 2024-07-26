@@ -2,74 +2,98 @@
 title: Rasterisasi Elemen yang Diubah
 linktitle: Rasterisasi Elemen yang Diubah
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menonaktifkan rasterisasi elemen yang diubah saat mengonversi ke format PCL dengan Aspose.Words untuk .NET.
+description: Pelajari cara melakukan rasterisasi elemen yang diubah saat mengonversi dokumen Word ke format PCL menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah disertakan.
 type: docs
 weight: 10
 url: /id/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
+## Perkenalan
 
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk membuat, memanipulasi, dan mengonversi dokumen Word dalam aplikasi C#. Di antara fitur yang ditawarkan oleh Aspose.Words adalah kemampuan untuk merasterisasi elemen yang diubah saat mengonversi dokumen ke format berbeda. Dalam panduan ini, kami akan menunjukkan kepada Anda cara menggunakan kode sumber C# Aspose.Words untuk .NET untuk menonaktifkan rasterisasi elemen yang diubah saat mengonversi dokumen ke format PCL.
+Bayangkan Anda sedang bekerja dengan dokumen Word yang berisi berbagai elemen yang diubah, seperti teks atau gambar yang diputar. Saat mengonversi dokumen ini ke format PCL (Bahasa Perintah Printer), Anda mungkin ingin memastikan bahwa elemen yang diubah ini dirasterisasi dengan benar. Dalam tutorial ini, kami akan mendalami bagaimana Anda dapat mencapai hal ini menggunakan Aspose.Words untuk .NET.
 
-## Memahami perpustakaan Aspose.Words
+## Prasyarat
 
-Sebelum mendalami kodenya, penting untuk memahami perpustakaan Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan populer yang membuat Pemrosesan Kata dengan dokumen Word menjadi mudah dan efisien. Ini menawarkan berbagai fitur untuk membuat, mengedit, dan mengonversi dokumen Word, termasuk dukungan untuk rasterisasi elemen yang diubah selama konversi.
+Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
 
-## Memuat dokumen Word
+1.  Aspose.Words untuk .NET: Pastikan Anda menginstal versi terbaru. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2.  Lisensi yang Valid: Anda dapat membeli lisensi[Di Sini](https://purchase.aspose.com/buy) atau dapatkan izin sementara untuk evaluasi[Di Sini](https://purchase.aspose.com/temporary-license/).
+3. Lingkungan Pengembangan: Siapkan lingkungan pengembangan Anda (misalnya, Visual Studio) dengan dukungan kerangka .NET.
 
-Langkah pertama adalah memuat dokumen Word yang ingin Anda konversi ke format PCL. Gunakan kelas Dokumen untuk memuat dokumen dari file sumber. Berikut ini contohnya:
+## Impor Namespace
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
-
-Dalam contoh ini, kita memuat dokumen "Rendering.docx" yang terletak di direktori dokumen.
-
-## Mengonfigurasi opsi cadangan
-
-Langkah selanjutnya adalah mengkonfigurasi opsi penyimpanan untuk mengkonversi ke format PCL. Gunakan kelas PclSaveOptions dan atur properti RasterizeTransformedElements ke false. Berikut cara melakukannya:
+Untuk menggunakan Aspose.Words untuk .NET, Anda perlu mengimpor namespace yang diperlukan. Tambahkan yang berikut ini di bagian atas file C# Anda:
 
 ```csharp
-PclSaveOptions saveOptions = new PclSaveOptions
-{
-     SaveFormat = SaveFormat.Pcl,
-     RasterizeTransformedElements = false
-};
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Kita membuat objek PclSaveOptions baru dan mengatur properti SaveFormat ke SaveFormat.Pcl untuk menentukan bahwa kita ingin menyimpan dokumen dalam format PCL. Selanjutnya, kita menyetel properti RasterizeTransformedElements ke false untuk menonaktifkan rasterisasi elemen yang diubah.
+Sekarang, mari kita bagi prosesnya menjadi beberapa langkah untuk memastikan Anda memahami setiap bagian secara menyeluruh.
 
-## Mengonversi dokumen ke format PCL
+## Langkah 1: Siapkan Proyek Anda
 
-Sekarang kita telah mengonfigurasi opsi penyimpanan, kita dapat melanjutkan untuk mengonversi dokumen ke format PCL. Gunakan metode Simpan dari kelas Dokumen untuk menyimpan dokumen yang dikonversi dalam format PCL dengan menentukan opsi penyimpanan. Berikut ini contohnya:
+Pertama, Anda perlu membuat proyek baru atau menggunakan proyek yang sudah ada. Buka lingkungan pengembangan Anda dan siapkan proyek.
 
-```csharp
-doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
-```
+1. Buat Proyek Baru: Buka Visual Studio dan buat aplikasi konsol C# baru.
+2.  Instal Aspose.Words: Gunakan NuGet Package Manager untuk menginstal Aspose.Words. Klik kanan pada proyek Anda, pilih "Kelola Paket NuGet", dan cari`Aspose.Words`. Instal versi terbaru.
 
-Dalam contoh ini, kami menyimpan dokumen yang dikonversi sebagai "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl" menggunakan opsi penyimpanan yang ditentukan.
+## Langkah 2: Muat Dokumen Word
 
-### Contoh kode sumber untuk fitur "Rasterize Transformed Elements" dengan Aspose.Words untuk .NET
+Selanjutnya, Anda perlu memuat dokumen Word yang ingin Anda konversi. Pastikan Anda telah menyiapkan dokumen, atau buat dokumen dengan elemen yang diubah.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Muat dokumen Word
-
-
 Document doc = new Document(dataDir + "Rendering.docx");
+```
 
-// Konfigurasikan opsi cadangan untuk konversi ke format PCL
+ Dalam cuplikan kode ini, ganti`"YOUR DOCUMENTS DIRECTORY"` dengan jalur sebenarnya ke direktori Anda yang berisi dokumen Word. Pastikan nama dokumen (`Rendering.docx`) cocok dengan file Anda.
+
+## Langkah 3: Konfigurasikan Opsi Penyimpanan
+
+ Untuk mengonversi dokumen ke format PCL, Anda perlu mengonfigurasi opsi penyimpanan. Ini termasuk pengaturan`SaveFormat` ke`Pcl` dan menentukan apakah akan melakukan rasterisasi elemen yang diubah.
+
+```csharp
+//Konfigurasikan opsi cadangan untuk konversi ke format PCL
 PclSaveOptions saveOptions = new PclSaveOptions
 {
-     SaveFormat = SaveFormat.Pcl,
-     RasterizeTransformedElements = false
+    SaveFormat = SaveFormat.Pcl,
+    RasterizeTransformedElements = false
 };
+```
 
+ Di Sini,`RasterizeTransformedElements` diatur ke`false` , artinya elemen yang diubah tidak akan dirasterisasi. Anda dapat mengaturnya menjadi`true` jika Anda ingin mereka dirasterisasi.
+
+## Langkah 4: Konversi Dokumen
+
+Terakhir, Anda mengonversi dokumen ke format PCL menggunakan opsi penyimpanan yang dikonfigurasi.
+
+```csharp
 // Konversikan dokumen ke format PCL
 doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl", saveOptions);
 ```
 
+ Pada baris ini, dokumen disimpan dalam format PCL dengan opsi yang ditentukan. File keluaran diberi nama`WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl`.
+
 ## Kesimpulan
 
-Dalam panduan ini, kami membahas cara menggunakan Aspose.Words untuk .NET untuk menonaktifkan rasterisasi elemen yang diubah saat mengonversi dokumen ke format PCL menggunakan kode sumber C# yang disediakan. Dengan mengikuti langkah-langkah yang disediakan, Anda dapat dengan mudah mengontrol perilaku rasterisasi elemen yang diubah saat mengonversi dokumen Word Anda ke format berbeda. Aspose.Words menawarkan fleksibilitas dan kekuatan luar biasa untuk bekerja dengan elemen yang diubah, memungkinkan Anda membuat dokumen yang dikonversi secara tepat sesuai kebutuhan spesifik Anda.
+Mengonversi dokumen Word dengan elemen yang diubah ke format PCL bisa jadi sedikit rumit, tetapi dengan Aspose.Words untuk .NET, prosesnya menjadi mudah. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat dengan mudah mengontrol apakah akan melakukan rasterisasi elemen-elemen ini selama konversi.
+
+## FAQ
+
+### Bisakah saya menggunakan Aspose.Words untuk .NET dalam aplikasi web?  
+Ya, Aspose.Words for .NET dapat digunakan di berbagai jenis aplikasi, termasuk aplikasi web. Pastikan lisensi dan konfigurasi yang tepat.
+
+### Format lain apa yang dapat dikonversi ke Aspose.Words untuk .NET?  
+Aspose.Words mendukung berbagai format, termasuk PDF, HTML, EPUB, dan banyak lagi. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk daftar lengkap.
+
+### Apakah mungkin untuk melakukan rasterisasi hanya pada elemen tertentu dalam dokumen?  
+ Saat ini,`RasterizeTransformedElements` opsi berlaku untuk semua elemen yang diubah dalam dokumen. Untuk kontrol yang lebih terperinci, pertimbangkan untuk memproses elemen secara terpisah sebelum konversi.
+
+### Bagaimana cara memecahkan masalah konversi dokumen?  
+ Pastikan Anda memiliki Aspose.Words versi terbaru dan periksa dokumentasi untuk masalah konversi tertentu. Selain itu,[forum dukungan](https://forum.aspose.com/c/words/8) adalah tempat yang bagus untuk meminta bantuan.
+
+### Apakah ada batasan pada versi uji coba Aspose.Words untuk .NET?  
+ Versi uji coba memiliki beberapa keterbatasan, seperti watermark evaluasi. Untuk pengalaman yang berfungsi penuh, pertimbangkan untuk mendapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/).

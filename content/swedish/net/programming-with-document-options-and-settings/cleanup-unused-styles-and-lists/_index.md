@@ -9,7 +9,7 @@ url: /sv/net/programming-with-document-options-and-settings/cleanup-unused-style
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin känt att dina Word-dokument blir lite röriga? Du vet, de där oanvända stilarna och listorna som bara sitter där, tar upp plats och får ditt dokument att se mer komplext ut än det behöver vara? Tja, du har tur! Idag dyker vi in i ett snyggt litet trick med Aspose.Words för .NET för att rensa bort dessa oanvända stilar och listor. Det är som att ge ditt dokument ett skönt, uppfriskande bad. Så ta ditt kaffe, luta dig tillbaka och låt oss börja!
+Hallå där! Har du någonsin känt att dina Word-dokument blir lite röriga? Du vet, de där oanvända stilarna och listorna som bara sitter där, tar upp plats och får ditt dokument att se mer komplext ut än det behöver vara? Nåväl, du har tur! Idag dyker vi in i ett snyggt litet trick med Aspose.Words för .NET för att rensa bort dessa oanvända stilar och listor. Det är som att ge ditt dokument ett skönt, uppfriskande bad. Så ta ditt kaffe, luta dig tillbaka och låt oss börja!
 
 ## Förutsättningar
 
@@ -74,7 +74,7 @@ Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 
 ## Steg 6: Spara det rengjorda dokumentet
 
-Låt oss slutligen spara vårt rensade dokument. Detta säkerställer att alla ändringar sparas och att ditt dokument är så snyggt som möjligt.
+Till sist, låt oss spara vårt rensade dokument. Detta säkerställer att alla ändringar sparas och att ditt dokument är så snyggt som möjligt.
 
 ```csharp
 doc.Save(dataDir + "CleanedDocument.docx");

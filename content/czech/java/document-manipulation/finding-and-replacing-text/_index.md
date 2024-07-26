@@ -22,7 +22,7 @@ Než se ponoříme do podrobností o hledání a nahrazování textu, ujistěte 
 
  Knihovnu Aspose.Words for Java si můžete stáhnout z[tady](https://releases.aspose.com/words/java/).
 
-## Vyhledání a nahrazení jednoduchého textu
+## Hledání a nahrazování jednoduchého textu
 
 ```java
 // Vložte dokument
@@ -143,7 +143,7 @@ doc.getRange().replace("text-to-replace", "new-html-content", options);
 doc.save("modified-document.docx");
 ```
 
- V tomto příkladu používáme zvyk`ReplaceWithHtmlEvaluator` k nahrazení textu obsahem HTML.
+ V tomto příkladu používáme vlastní`ReplaceWithHtmlEvaluator` k nahrazení textu obsahem HTML.
 
 ## Nahrazení textu v záhlaví a zápatí
 
@@ -347,7 +347,7 @@ Ano, v Aspose.Words for Java můžete použít regulární výrazy pro nahrazen�
 
 ### Jak mohu při výměně ignorovat text uvnitř polí?
 
- Chcete-li ignorovat text uvnitř polí během nahrazování, můžete nastavit`IgnoreFields` vlastnictvím`FindReplaceOptions` na`true`To zajistí, že text v polích, jako jsou slučovací pole, bude vyloučen z nahrazování.
+ Chcete-li ignorovat text uvnitř polí během nahrazování, můžete nastavit`IgnoreFields` majetek z`FindReplaceOptions` na`true`To zajistí, že text v polích, jako jsou slučovací pole, bude vyloučen z nahrazování.
 
 ### Mohu nahradit text uvnitř záhlaví a zápatí?
 

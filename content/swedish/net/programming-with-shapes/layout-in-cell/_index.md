@@ -17,7 +17,7 @@ För att följa denna handledning måste du ha följande:
 - Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Steg 3: Bygg tabellen
- Använd`StartTable`, `EndTable`, `InsertCell` , och`Write` metoder för`DocumentBuilder`objekt för att bygga ett bord. Ställ in önskad radhöjd och höjdregel med hjälp av`RowFormat` egenskaper.
+ Använd`StartTable`, `EndTable`, `InsertCell` , och`Write` metoder för`DocumentBuilder` objekt för att bygga ett bord. Ställ in önskad radhöjd och höjdregel med hjälp av`RowFormat` egenskaper.
 
 ```csharp
 builder.StartTable();
@@ -86,7 +86,7 @@ builder.InsertNode(watermark);
 ```
 
 ## Steg 7: Spara dokumentet
- Spara dokumentet i den angivna katalogen med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithShapes.LayoutInCell.docx".
+ Spara dokumentet i den angivna katalogen med hjälp av`Save`metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithShapes.LayoutInCell.docx".
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);

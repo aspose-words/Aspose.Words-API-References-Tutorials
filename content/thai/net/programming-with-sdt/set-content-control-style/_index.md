@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## ขั้นตอนที่ 2: โหลดเอกสารและเรียกข้อมูลการควบคุมเนื้อหา
- โหลดเอกสาร Word โดยใช้ไฟล์`Document` Constructor โดยส่งเส้นทางไปยังเอกสารเป็นพารามิเตอร์ ดึงตัวควบคุมเนื้อหาที่ต้องการจากเอกสาร ในตัวอย่างนี้ เราถือว่าตัวควบคุมเนื้อหาเป็นแท็กเอกสารที่มีโครงสร้างแท็กแรกในเอกสาร
+ โหลดเอกสาร Word โดยใช้ไฟล์`Document`Constructor โดยส่งเส้นทางไปยังเอกสารเป็นพารามิเตอร์ ดึงตัวควบคุมเนื้อหาที่ต้องการจากเอกสาร ในตัวอย่างนี้ เราถือว่าตัวควบคุมเนื้อหาเป็นแท็กเอกสารที่มีโครงสร้างแท็กแรกในเอกสาร
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -40,7 +40,7 @@ sdt.Style = style;
 ```
 
 ## ขั้นตอนที่ 4: บันทึกเอกสาร
- บันทึกเอกสารที่แก้ไขไปยังไดเร็กทอรีที่ระบุโดยใช้`Save`วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithSdt.SetContentControlStyle.docx"
+ บันทึกเอกสารที่แก้ไขไปยังไดเร็กทอรีที่ระบุโดยใช้`Save` วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithSdt.SetContentControlStyle.docx"
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
@@ -59,4 +59,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 	doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ```
 
-แค่นั้นแหละ! คุณได้ตั้งค่ารูปแบบของการควบคุมเนื้อหาในเอกสาร Word ของคุณโดยใช้ Aspose.Words for .NET เรียบร้อยแล้ว
+แค่นั้นแหละ! คุณได้กำหนดรูปแบบของการควบคุมเนื้อหาในเอกสาร Word ของคุณโดยใช้ Aspose.Words for .NET เรียบร้อยแล้ว

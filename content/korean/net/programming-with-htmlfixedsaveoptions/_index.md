@@ -12,5 +12,5 @@ url: /ko/net/programming-with-htmlfixedsaveoptions/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [대상 컴퓨터의 글꼴 사용](./use-font-from-target-machine/) | .NET용 Aspose.Words와 함께 대상 컴퓨터의 글꼴을 사용하여 Word 문서를 고정 HTML로 변환하는 방법을 알아보세요. |
-| [단일 파일에 모든 CSS 규칙 작성](./write-all-css-rules-in-single-file/) | .NET용 Aspose.Words를 사용하여 단일 파일에 모든 CSS 규칙을 작성하여 Word 문서를 고정 HTML로 변환하는 방법을 알아보세요. |
+| [대상 컴퓨터의 글꼴 사용](./use-font-from-target-machine/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 대상 컴퓨터의 글꼴을 사용하는 방법을 알아보세요. 원활한 글꼴 통합을 위한 단계별 가이드를 따르세요. |
+| [단일 파일에 모든 CSS 규칙 작성](./write-all-css-rules-in-single-file/) | 더 깔끔한 코드와 더 쉬운 유지 관리를 위해 단일 파일에 모든 CSS 규칙이 포함된 Aspose.Words for .NET을 사용하여 Word 문서를 HTML로 변환하는 방법을 알아보세요. |

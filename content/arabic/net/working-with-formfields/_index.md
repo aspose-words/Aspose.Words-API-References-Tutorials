@@ -15,4 +15,4 @@ url: /ar/net/working-with-formfields/
 | [إدراج حقول النموذج](./insert-form-fields/) | تعرف على كيفية إدراج حقول النموذج المنسدلة في مستندات Word باستخدام Aspose.Words لـ .NET. |
 | [تعمل حقول النموذج مع الخصائص](./form-fields-work-with-properties/) | تعرف على كيفية العمل مع خصائص حقل النموذج في مستندات Word باستخدام Aspose.Words لـ .NET. |
 | [حقول النموذج احصل على مجموعة حقول النموذج](./form-fields-get-form-fields-collection/) | تعرف على كيفية استرداد مجموعة حقول النموذج ومعالجتها في مستندات Word باستخدام Aspose.Words for .NET. |
-| [الحصول على حقول النموذج بالاسم](./form-fields-get-by-name/) | تعرف على كيفية استرداد حقول النموذج وتعديلها حسب الاسم في مستندات Word باستخدام Aspose.Words for .NET. |
+| [الحصول على حقول النموذج بالاسم](./form-fields-get-by-name/) | تعرف على كيفية استرداد حقول النموذج وتعديلها حسب الاسم في مستندات Word باستخدام Aspose.Words لـ .NET. |

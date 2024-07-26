@@ -8,7 +8,7 @@ weight: 10
 url: /ja/net/programming-with-shapes/add-corners-snipped/
 ---
 
-このチュートリアルでは、Aspose.Words for .NETを使用して、Word文書に角を切り取った図形を追加する方法について説明します。角を切り取った図形は、`InsertShape`方法。
+このチュートリアルでは、Aspose.Words for .NETを使用して、角を切り取った図形をWord文書に追加する方法について説明します。角を切り取った図形は、`InsertShape`方法。
 
 ## 前提条件
 このチュートリアルを実行するには、次のものが必要です。

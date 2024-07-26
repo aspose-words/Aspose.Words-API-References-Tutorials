@@ -16,7 +16,7 @@ Heeft u zich ooit afgevraagd hoe u de pagina-indeling van uw document kunt inste
 Voordat we in de kern duiken, laten we ervoor zorgen dat je alles hebt wat je nodig hebt:
 
 -  Aspose.Words voor .NET: je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
--  Een geldige licentie: u kunt er een aanschaffen[hier](https://purchase.aspose.com/buy) of vraag een tijdelijke licentie aan[hier](https://purchase.aspose.com/temporary-license/).
+-  Een geldige licentie: u kunt er een kopen[hier](https://purchase.aspose.com/buy) of vraag een tijdelijke licentie aan[hier](https://purchase.aspose.com/temporary-license/).
 - Een basiskennis van programmeren in C#: Maak je geen zorgen, ik zal het simpel en duidelijk houden.
 - Een geïntegreerde ontwikkelomgeving (IDE): Visual Studio is een goede keuze.
 

@@ -16,7 +16,7 @@ Aspose.Words for Python, Python kullanarak Word belgeleri oluşturmanıza, deği
 
 ## Belgeleri Yükleme ve Kaydetme
 
-Başlamak için Aspose.Words kütüphanesini kurmanız ve onu Python betiğinize aktarmanız gerekir. Mevcut Word belgelerini yükleyebilir veya sıfırdan yenilerini oluşturabilirsiniz. Değiştirilen belgenizi kaydetmek de aynı derecede kolaydır.
+Başlamak için Aspose.Words kütüphanesini kurmanız ve onu Python betiğinize aktarmanız gerekir. Mevcut Word belgelerini yükleyebilir veya sıfırdan yenilerini oluşturabilirsiniz. Değiştirilen belgenizi kaydetmek de aynı derecede basittir.
 
 ```python
 import aspose.words as aw

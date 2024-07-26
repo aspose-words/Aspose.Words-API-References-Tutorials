@@ -22,7 +22,7 @@ Innan du börjar, se till att du har följande:
 - En grundläggande förståelse för Python-programmering.
 - Aspose.Words för Python API-referenser.
 
-## Installera Aspose.Words för Python
+## Installerar Aspose.Words för Python
 
 För att komma igång måste du installera paketet Aspose.Words for Python. Du kan göra detta med pip, Python-paketets installationsprogram, med följande kommando:
 

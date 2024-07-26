@@ -304,7 +304,7 @@ footer.appendChild(footerRun);
 Field pageField = new Field(doc, FieldType.FIELD_PAGE);
 footer.appendChild(pageField);
 
-// เพิ่มเนื้อหาลงในเนื้อหาของเอกสาร
+// เพิ่มเนื้อหาลงในเนื้อหาเอกสาร
 // -
 
 // บันทึกเอกสาร

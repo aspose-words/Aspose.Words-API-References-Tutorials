@@ -2,78 +2,106 @@
 title: リソースのエクスポート
 linktitle: リソースのエクスポート
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して HTML として保存するときにドキュメント リソースをエクスポートするためのステップ バイ ステップ ガイド。
+description: Aspose.Words for .NET を使用して Word 文書を HTML として保存しながら、CSS やフォントなどのリソースをエクスポートする方法を学びます。ステップバイステップのガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/programming-with-htmlsaveoptions/export-resources/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメント リソースをエクスポートするための C# ソース コードについて説明します。この機能を使用すると、ドキュメントを HTML 形式で保存するときに、フォントなどのリソースを外部ファイルとしてエクスポートできます。
+こんにちは、テクノロジー愛好家の皆さん! Word 文書を HTML に変換する必要があると感じたことがあれば、ここが最適な場所です。今日は、Aspose.Words for .NET の素晴らしい世界に飛び込みます。この強力なライブラリを使用すると、Word 文書をプログラムで簡単に操作できます。このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書を HTML として保存するときに、フォントや CSS などのリソースをエクスポートする手順を説明します。楽しくてためになる旅に出発しましょう!
 
-## ステップ1: プロジェクトのセットアップ
+## 前提条件
 
-まず、お気に入りの IDE で新しい C# プロジェクトを作成します。プロジェクトで Aspose.Words for .NET ライブラリが参照されていることを確認します。
+コードに進む前に、始めるのに必要なものがすべて揃っていることを確認しましょう。簡単なチェックリストを以下に示します。
 
-## ステップ2: ドキュメントの読み込み
+1.  Visual Studio: お使いのマシンにVisual Studioがインストールされていることを確認してください。[Visual Studio の Web サイト](https://visualstudio.microsoft.com/).
+2. Aspose.Words for .NET: Aspose.Words for .NETライブラリが必要です。まだ入手していない場合は、無料トライアル版を入手してください。[Aspose リリース](https://releases.aspose.com/words/net/)または、[アポーズストア](https://purchase.aspose.com/buy).
+3. C# の基礎知識: C# の基礎を理解しておくと、コード例を理解するのに役立ちます。
 
-このステップでは、エクスポートするドキュメントを読み込みます。指定されたディレクトリからドキュメントを読み込むには、次のコードを使用します。
+すべて理解できましたか? 素晴らしい! 必要な名前空間のインポートに進みましょう。
+
+## 名前空間のインポート
+
+Aspose.Words for .NET を使用するには、プロジェクトに関連する名前空間を含める必要があります。手順は次のとおりです。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+これらの名前空間は、チュートリアルで使用する Aspose.Words のクラスとメソッドにアクセスするために重要です。
+
+Word 文書を HTML として保存するときにリソースをエクスポートするプロセスを詳しく説明します。手順を 1 つ 1 つ説明していくので、わかりやすいでしょう。
+
+## ステップ1: ドキュメントディレクトリを設定する
+
+まず最初に、ドキュメント ディレクトリへのパスを指定する必要があります。これは、Word ドキュメントが保存され、HTML ファイルが保存される場所です。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+交換する`"YOUR DOCUMENT DIRECTORY"`ディレクトリへの実際のパスを入力します。
+
+## ステップ2: Word文書を読み込む
+
+次に、HTMLに変換したいWord文書を読み込みます。このチュートリアルでは、次の名前の文書を使用します。`Rendering.docx`.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-このコードはインスタンスを作成します`Document`指定されたディレクトリからドキュメントを読み込みます。
+このコード行は、指定されたディレクトリからドキュメントを読み込みます。
 
-## ステップ3: HTMLバックアップオプションの設定
+## ステップ3: HTML保存オプションを設定する
 
-ここで、ドキュメント リソースをエクスポートするための HTML 保存オプションを設定します。次のコードを使用します。
+CSSやフォントなどのリソースをエクスポートするには、`HtmlSaveOptions`この手順は、HTML 出力が適切に構造化され、必要なリソースが含まれていることを確認するために重要です。
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-CssStyleSheetType = CssStyleSheetType.External,
-ExportFontResources=true,
-ResourceFolder = ArtifactsDir + "Resources",
-ResourceFolderAlias = "http://example.com/resources"
+    CssStyleSheetType = CssStyleSheetType.External,
+    ExportFontResources = true,
+    ResourceFolder = dataDir + "Resources",
+    ResourceFolderAlias = "http://example.com/resources"
 };
 ```
 
-このコードはインスタンスを作成します`HtmlSaveOptions`次のオプションを設定します。
+それぞれのオプションの機能について詳しく見ていきましょう。
+- `CssStyleSheetType = CssStyleSheetType.External`: このオプションは、CSS スタイルを外部スタイルシートに保存することを指定します。
+- `ExportFontResources = true`: これにより、フォント リソースのエクスポートが可能になります。
+- `ResourceFolder = dataDir + "Resources"`: リソース (フォントや CSS ファイルなど) が保存されるローカル フォルダーを指定します。
+- `ResourceFolderAlias = "http://example.com/resources"`: HTML ファイルで使用されるリソース フォルダーのエイリアスを設定します。
 
-- `CssStyleSheetType`に設定されています`CssStyleSheetType.External` CSS スタイルシートを外部ファイルにエクスポートします。
-- `ExportFontResources`に設定されています`true`フォントリソースをエクスポートします。
-- `ResourceFolder`リソースを保存する宛先ディレクトリを指定します。
-- `ResourceFolderAlias`リソースにアクセスするために使用する URL エイリアスを指定します。
+## ステップ4: ドキュメントをHTMLとして保存する
 
-## ステップ4: ドキュメントをHTMLに変換して保存する
-
-最後に、先ほど設定した HTML 保存オプションを使用してドキュメントを HTML に変換します。次のコードを使用します。
+保存オプションを設定したら、最後の手順としてドキュメントを HTML ファイルとして保存します。手順は次のとおりです。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
 ```
 
-このコードは、ドキュメントを HTML に変換し、指定された URL エイリアスを使用して、指定されたディレクトリにリソースを保存します。
+このコード行は、エクスポートされたリソースとともにドキュメントを HTML 形式で保存します。
 
-### Aspose.Words for .NET を使用してリソースをエクスポートするためのサンプル ソース コード
+## 結論
 
-```csharp
+これで完了です。Aspose.Words for .NET を使用して Word 文書を HTML として保存しながら、リソースを正常にエクスポートできました。この強力なライブラリを使用すると、Word 文書をプログラムで処理することが簡単になります。Web アプリケーションで作業している場合でも、オフラインで使用するために文書を変換する必要がある場合でも、Aspose.Words が役立ちます。
 
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+## よくある質問
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External,
-		ExportFontResources = true,
-		ResourceFolder = ArtifactsDir + "Resources",
-		ResourceFolderAlias = "http://example.com/resources"
-	};
+### フォントや CSS と一緒に画像をエクスポートできますか?
+はい、できます。Aspose.Words for .NETは画像のエクスポートもサポートしています。`HtmlSaveOptions`それに応じて。
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
-  
-```
+### 外部スタイルシートを使用する代わりに CSS を埋め込む方法はありますか?
+もちろんです。設定できます`CssStyleSheetType`に`CssStyleSheetType.Embedded`埋め込みスタイルを好む場合。
 
-ドキュメントディレクトリへの正しいパスを必ず指定してください。`dataDir`変数。
+### 出力 HTML ファイルの名前をカスタマイズするにはどうすればよいですか?
+任意のファイル名を指定できます。`doc.Save`方法。例えば、`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
+
+### Aspose.Words は HTML 以外の形式もサポートしていますか?
+はい、PDF、DOCX、TXTなど、さまざまな形式をサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)完全なリストについてはこちらをご覧ください。
+
+### さらにサポートやリソースはどこで入手できますか?
+さらに詳しい情報については、[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)詳細なドキュメントと例は、[Aspose ウェブサイト](https://reference.aspose.com/words/net/).

@@ -36,7 +36,7 @@ Document srcDoc = new Document(dataDir + "Document.docx");
 Document dstDoc = new Document();
 ```
 
-## Etapa 3: Copie a seção para o documento de destino
+## Etapa 3: copie a seção para o documento de destino
  Para copiar a seção do documento de origem para o documento de destino, usaremos o`ImportNode` método para importar a seção de origem e adicioná-la ao documento de destino.
 
 ```csharp

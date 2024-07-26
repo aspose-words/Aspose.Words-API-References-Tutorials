@@ -41,7 +41,7 @@ RowFormat rowFormat = builder.RowFormat;
 ```
 
 ## Steg 5: Ställ in radhöjd
- För att ställa in radhöjden använder vi`Height`och`HeightRule` egenskaperna för radformatet. I det här exemplet sätter vi en radhöjd på 100 poäng och använder`Exactly` regel.
+ För att ställa in radhöjden använder vi`Height`och`HeightRule` egenskaper för radformatet. I det här exemplet sätter vi en radhöjd på 100 poäng och använder`Exactly` regel.
 
 ```csharp
 rowFormat. Height = 100;

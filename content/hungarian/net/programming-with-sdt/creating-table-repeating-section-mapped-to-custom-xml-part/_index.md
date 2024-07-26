@@ -17,7 +17,7 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## 4. lépés: Hozzon létre egy táblázatot és táblázatszerkezetet
- Kezdje el a táblázat létrehozását a`StartTable` módszere a`DocumentBuilder` . Adja hozzá a táblázat celláit és tartalmát a`InsertCell`és`Write` mód.
+Kezdje el a táblázat létrehozását a`StartTable` módszere a`DocumentBuilder` . Adja hozzá a táblázat celláit és tartalmát a`InsertCell`és`Write` mód.
 
 ```csharp
 Table table = builder.StartTable();
@@ -98,7 +98,7 @@ row.AppendChild(authorSdt);
 ```
 
 ## 8. lépés: Mentse el a dokumentumot
- Mentse el a módosított dokumentumot a megadott könyvtárba a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx" néven mentjük.
+ Mentse el a módosított dokumentumot a megadott könyvtárba a`Save`módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx" néven mentjük.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");

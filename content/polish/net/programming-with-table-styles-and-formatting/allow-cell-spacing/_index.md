@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
 
-W tym samouczku przeprowadzimy Cię krok po kroku przez proces zezwalania na odstępy między komórkami w tabelach przy użyciu Aspose.Words dla .NET. Wyjaśnimy kod źródłowy C#, który realizuje to zadanie i udostępnimy kompleksowy przewodnik, który pomoże Ci zrozumieć i wdrożyć go we własnych projektach. Pod koniec tego samouczka będziesz mieć jasne zrozumienie, jak manipulować formatowaniem tabeli w dokumentach programu Word za pomocą Aspose.Words dla .NET.
+W tym samouczku przeprowadzimy Cię krok po kroku przez proces zezwalania na odstępy między komórkami w tabelach przy użyciu Aspose.Words dla .NET. Wyjaśnimy kod źródłowy C#, który realizuje to zadanie i udostępnimy kompleksowy przewodnik, który pomoże Ci zrozumieć i wdrożyć go we własnych projektach. Pod koniec tego samouczka będziesz dobrze rozumieć, jak manipulować formatowaniem tabel w dokumentach programu Word za pomocą Aspose.Words dla .NET.
 
 ## Krok 1: Ustaw katalog dokumentów
 Najpierw musisz ustawić ścieżkę do katalogu dokumentów. Jest to lokalizacja, w której przechowywany jest dokument programu Word. Zastąp „TWOJ KATALOG DOKUMENTÓW” odpowiednią ścieżką.

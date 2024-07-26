@@ -2,78 +2,106 @@
 title: Exportera resurser
 linktitle: Exportera resurser
 second_title: Aspose.Words Document Processing API
-description: Steg-för-steg-guide för att exportera dokumentresurser när du sparar som HTML med Aspose.Words för .NET.
+description: Lär dig hur du exporterar resurser som CSS och typsnitt samtidigt som du sparar Word-dokument som HTML med Aspose.Words för .NET. Följ vår steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/programming-with-htmlsaveoptions/export-resources/
 ---
+## Introduktion
 
-I den här handledningen går vi igenom C#-källkoden för att exportera dokumentresurser med Aspose.Words för .NET. Den här funktionen låter dig exportera resurser, som typsnitt, som externa filer när du sparar ett dokument i HTML-format.
+Hej där, andra teknikentusiast! Om du någonsin har märkt att du behöver konvertera Word-dokument till HTML, är du på rätt plats. Idag dyker vi in i den underbara världen av Aspose.Words för .NET. Detta kraftfulla bibliotek gör det enkelt att arbeta med Word-dokument programmatiskt. I den här handledningen går vi igenom stegen för att exportera resurser, såsom typsnitt och CSS, när du sparar ett Word-dokument som HTML med Aspose.Words för .NET. Spänn dig för en rolig, informativ åktur!
 
-## Steg 1: Projektinställning
+## Förutsättningar
 
-För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
+Innan vi dyker in i koden, låt oss se till att du har allt du behöver för att komma igång. Här är en snabb checklista:
 
-## Steg 2: Ladda dokumentet
+1.  Visual Studio: Se till att du har Visual Studio installerat på din dator. Du kan ladda ner den från[Visual Studio hemsida](https://visualstudio.microsoft.com/).
+2.  Aspose.Words for .NET: Du behöver Aspose.Words for .NET-biblioteket. Om du inte har det ännu, prova gratis från[Aspose släpper](https://releases.aspose.com/words/net/) eller köp den från[Aspose Store](https://purchase.aspose.com/buy).
+3. Grundläggande kunskaper om C#: En grundläggande förståelse av C# hjälper dig att följa med i kodexemplen.
 
-I det här steget kommer vi att ladda dokumentet för att exportera. Använd följande kod för att ladda dokumentet från en angiven katalog:
+Har du allt det där? Bra! Låt oss gå vidare till att importera de nödvändiga namnrymden.
+
+## Importera namnområden
+
+För att använda Aspose.Words för .NET måste du inkludera relevanta namnområden i ditt projekt. Så här gör du:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Dessa namnutrymmen är avgörande för att komma åt Aspose.Words-klasserna och metoderna som vi kommer att använda i vår handledning.
+
+Låt oss bryta ner processen för att exportera resurser när du sparar ett Word-dokument som HTML. Vi tar det steg för steg, så det är lätt att följa.
+
+## Steg 1: Konfigurera din dokumentkatalog
+
+Först och främst måste du ange sökvägen till din dokumentkatalog. Det är här ditt Word-dokument finns och där HTML-filen kommer att sparas.
+
+```csharp
+// Sökvägen till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
+
+## Steg 2: Ladda Word-dokumentet
+
+ Låt oss sedan ladda Word-dokumentet du vill konvertera till HTML. För den här handledningen använder vi ett dokument med namnet`Rendering.docx`.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Denna kod skapar en instans av`Document` genom att ladda dokumentet från den angivna katalogen.
+Denna kodrad laddar dokumentet från den angivna katalogen.
 
-## Steg 3: Konfigurera alternativ för HTML-säkerhetskopiering
+## Steg 3: Konfigurera HTML-sparalternativ
 
-Nu kommer vi att konfigurera HTML-sparalternativen för att exportera dokumentresurserna. Använd följande kod:
+För att exportera resurser som CSS och typsnitt måste du konfigurera`HtmlSaveOptions`. Detta steg är avgörande för att säkerställa att din HTML-utdata är välstrukturerad och inkluderar de nödvändiga resurserna.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-CssStyleSheetType = CssStyleSheetType.External,
-ExportFontResources=true,
-ResourceFolder = ArtifactsDir + "Resources",
-ResourceFolderAlias = "http://example.com/resurser"
+    CssStyleSheetType = CssStyleSheetType.External,
+    ExportFontResources = true,
+    ResourceFolder = dataDir + "Resources",
+    ResourceFolderAlias = "http://example.com/resurser"
 };
 ```
 
- Denna kod skapar en instans av`HtmlSaveOptions` och ställer in följande alternativ:
+Låt oss dela upp vad varje alternativ gör:
+- `CssStyleSheetType = CssStyleSheetType.External`: Det här alternativet anger att CSS-stilar ska sparas i en extern stilmall.
+- `ExportFontResources = true`: Detta möjliggör export av teckensnittsresurser.
+- `ResourceFolder = dataDir + "Resources"`: Anger den lokala mapp där resurser (som typsnitt och CSS-filer) kommer att sparas.
+- `ResourceFolderAlias = "http://example.com/resources"`: Ställer in ett alias för resursmappen, som kommer att användas i HTML-filen.
 
-- `CssStyleSheetType` är satt till`CssStyleSheetType.External` för att exportera CSS-formatmallen till en extern fil.
-- `ExportFontResources` är satt till`true` för att exportera teckensnittsresurser.
-- `ResourceFolder` anger destinationskatalogen där resurserna ska sparas.
-- `ResourceFolderAlias`anger URL-aliaset som kommer att användas för att komma åt resurser.
+## Steg 4: Spara dokumentet som HTML
 
-## Steg 4: Konvertera och spara dokumentet till HTML
-
-Slutligen kommer vi att konvertera dokumentet till HTML med hjälp av de HTML-sparalternativ som konfigurerats tidigare. Använd följande kod:
+Med sparalternativen konfigurerade är det sista steget att spara dokumentet som en HTML-fil. Så här gör du:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
 ```
 
-Den här koden konverterar dokumentet till HTML och sparar resurserna i den angivna katalogen med det angivna URL-aliaset.
+Denna kodrad sparar dokumentet i HTML-format, tillsammans med de exporterade resurserna.
 
-### Exempel på källkod för Export Resources med Aspose.Words för .NET
+## Slutsats
 
-```csharp
+Och där har du det! Du har framgångsrikt exporterat resurser medan du sparat ett Word-dokument som HTML med Aspose.Words för .NET. Med detta kraftfulla bibliotek blir hanteringen av Word-dokument programmatiskt en pjäs. Oavsett om du arbetar med en webbapplikation eller bara behöver konvertera dokument för offlineanvändning, har Aspose.Words dig täckt.
 
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+## FAQ's
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External,
-		ExportFontResources = true,
-		ResourceFolder = ArtifactsDir + "Resources",
-		ResourceFolderAlias = "http://example.com/resurser"
-	};
+### Kan jag exportera bilder tillsammans med typsnitt och CSS?
+ Jo det kan du! Aspose.Words för .NET stöder även export av bilder. Se bara till att konfigurera`HtmlSaveOptions` följaktligen.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
-  
-```
+### Finns det något sätt att bädda in CSS istället för att använda en extern stilmall?
+ Absolut. Du kan ställa in`CssStyleSheetType` till`CssStyleSheetType.Embedded` om du föredrar inbäddade stilar.
 
- Var noga med att ange rätt sökväg till dokumentkatalogen i`dataDir` variabel.
+### Hur kan jag anpassa HTML-filens namn?
+ Du kan ange vilket filnamn du vill i`doc.Save` metod. Till exempel,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
+
+### Stöder Aspose.Words andra format än HTML?
+ Ja, det stöder olika format inklusive PDF, DOCX, TXT och mer. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för en fullständig lista.
+
+### Var kan jag få mer support och resurser?
+För mer hjälp, besök[Aspose.Words Support Forum](https://forum.aspose.com/c/words/8) . Du kan också hitta detaljerad dokumentation och exempel på[Aspose hemsida](https://reference.aspose.com/words/net/).

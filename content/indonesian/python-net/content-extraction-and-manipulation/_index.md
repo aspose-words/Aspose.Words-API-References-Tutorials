@@ -20,7 +20,7 @@ Di dunia yang berbasis data saat ini, mengekstraksi dan memanipulasi konten dari
 Sepanjang tutorial ini, Anda akan mendalami konsep inti dan teknik ekstraksi dan manipulasi konten menggunakan Aspose.Words. Tutorialnya mencakup berbagai topik, termasuk:
 
 - Ekstraksi Teks: Pelajari cara mengekstrak teks dari berbagai bagian dokumen.
-- Pemformatan dan Penataan Gaya: Pahami cara memanipulasi pemformatan dan gaya dalam konten yang diekstraksi.
+- Pemformatan dan Gaya: Pahami cara memanipulasi pemformatan dan gaya dalam konten yang diekstraksi.
 - Ekstraksi Tabel: Jelajahi teknik untuk mengekstraksi data tabel dari dokumen.
 - Ekstraksi Gambar: Pelajari cara mengekstrak gambar dan grafik yang tertanam dalam dokumen.
 - Pencarian dan Penggantian Konten: Temukan metode untuk mencari dan mengganti konten tertentu.

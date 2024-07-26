@@ -2,7 +2,7 @@
 title: Dokumentum renderelés
 linktitle: Dokumentum renderelés
 second_title: Aspose.Words Java Document Processing API
-description: Az Aspose.Words segítségével hatékonyan renderelhet Word dokumentumokat különféle formátumokba Java nyelven! Mesterdokumentum renderelés professzionális eredményekhez.
+description: Az Aspose.Words segítségével hatékonyan renderelhet Word dokumentumokat különböző formátumokba Java nyelven! Mesterdokumentum renderelés professzionális eredményekhez.
 type: docs
 weight: 16
 url: /hu/java/document-rendering/

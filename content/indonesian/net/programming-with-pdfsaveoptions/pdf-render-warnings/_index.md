@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## Menangani Peringatan Render PDF dengan Aspose.Words untuk .NET
+## Perkenalan
 
 Jika Anda bekerja dengan Aspose.Words untuk .NET, mengelola peringatan render PDF merupakan aspek penting untuk memastikan dokumen Anda diproses dan disimpan dengan benar. Dalam panduan komprehensif ini, kami akan membahas cara menangani peringatan render PDF menggunakan Aspose.Words. Di akhir tutorial ini, Anda akan memiliki pemahaman yang jelas tentang cara mengimplementasikan fitur ini di proyek .NET Anda.
 
@@ -79,7 +79,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 public class HandleDocumentWarnings : IWarningCallback
 {
     /// <ringkasan>
-    /// Metode ini dipanggil setiap kali ada potensi masalah selama pemrosesan dokumen.
+    //Metode ini dipanggil setiap kali ada potensi masalah selama pemrosesan dokumen.
     ///</ringkasan>
     public void Warning(WarningInfo info)
     {

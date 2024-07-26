@@ -8,7 +8,7 @@ weight: 10
 url: /id/net/working-with-node/use-node-type/
 ---
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di bawah ini yang menggambarkan cara menggunakan fungsionalitas tipe node dengan Aspose.Words untuk .NET.
+Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di bawah ini yang menggambarkan cara menggunakan fungsionalitas tipe simpul dengan Aspose.Words untuk .NET.
 
 ## Langkah 1: Impor referensi yang diperlukan
 Sebelum memulai, pastikan Anda telah mengimpor referensi yang diperlukan untuk menggunakan Aspose.Words untuk .NET ke dalam proyek Anda. Ini termasuk mengimpor perpustakaan Aspose.Words dan menambahkan namespace yang diperlukan ke file sumber Anda.

@@ -81,7 +81,7 @@ En este tutorial, cubrimos cómo fusionar documentos de Word manteniendo el form
 
 ## Preguntas frecuentes
 
-### ¿Puedo combinar varios documentos en una sola operación usando Aspose.Words para .NET?
+### ¿Puedo fusionar varios documentos en una sola operación usando Aspose.Words para .NET?
 Sí, puede combinar varios documentos agregando secuencialmente cada documento al documento de destino.
 
 ### ¿Aspose.Words conserva todos los atributos de formato durante la combinación de documentos?

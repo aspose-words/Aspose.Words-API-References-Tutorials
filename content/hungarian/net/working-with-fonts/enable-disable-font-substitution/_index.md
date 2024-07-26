@@ -82,7 +82,7 @@ V: Ha egy Word-dokumentumban hiányoznak a szükséges betűtípusok a helyettes
 
 #### K: Hogyan kezelhetem a hiányzó betűtípusokat, amikor a Word-dokumentumban az Aspose.Words-szel helyettesítem?
 
-V: A hiányzó betűtípusok kezeléséhez, amikor egy Word-dokumentumban Aspose.Words-szel helyettesíti, használhatja az API-t a hiányzó betűtípusok észlelésére és a felbontási beállítások megadására. Igényeitől függően választhatja a hiányzó betűtípusok helyettesítését alternatív betűtípusokkal, vagy beillesztheti a hiányzó betűtípusokat a dokumentumba.
+V: A hiányzó betűtípusok kezeléséhez, amikor egy Word-dokumentumban Aspose.Words-szel helyettesíti, használhatja az API-t a hiányzó betűtípusok észlelésére és a felbontási beállítások megadására. Dönthet úgy, hogy a hiányzó betűtípusokat alternatív betűtípusokkal helyettesíti, vagy beillesztheti a hiányzó betűtípusokat a dokumentumba, igényeitől függően.
 
 #### K: Fontos a betűkészlet-helyettesítés szabályozása egy Word-dokumentumban?
 

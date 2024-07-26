@@ -14,8 +14,8 @@ De tutorials behandelen ook de basisconcepten van beeldmanipulatie, inclusief he
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Stel drempelcontrole bloot voor TIFF-binarisatie](./expose-threshold-control-for-tiff-binarization/) | Leer hoe u de TIFF-binarisatiedrempel kunt beheren met Aspose.Words voor .NET. Volledige tutorial voor afbeeldingen van betere kwaliteit. |
-| [TIFF-paginabereik ophalen](./get-tiff-page-range/) | Leer hoe u een reeks TIFF-pagina's kunt extraheren met Aspose.Words voor .NET. Volledige tutorial voor aangepaste TIFF-bestanden. |
-| [Formaat 1Bpp geïndexeerd](./format-1bpp-indexed/) | Leer hoe u afbeeldingen kunt opmaken in 1 bpp, geïndexeerd met Aspose.Words voor .NET. Volledige tutorial voor afbeeldingen met een lage kleurdiepte. |
-| [Jpeg-paginabereik ophalen](./get-jpeg-page-range/) | Leer hoe u een reeks JPEG-pagina's kunt verkrijgen met Aspose.Words voor .NET. Volledige tutorial voor het extraheren van aangepaste afbeeldingen. |
-| [Pagina Terugbellen opslaan](./page-saving-callback/) | Leer hoe u het opslaan van documentpagina's naar afbeeldingen kunt aanpassen met Aspose.Words voor .NET. |
+| [Stel drempelcontrole bloot voor TIFF-binarisatie](./expose-threshold-control-for-tiff-binarization/) | Leer hoe u drempelcontrole voor TIFF-binarisatie in Word-documenten kunt blootleggen met behulp van Aspose.Words voor .NET met deze uitgebreide stapsgewijze handleiding. |
+| [TIFF-paginabereik ophalen](./get-tiff-page-range/) | Leer met deze stapsgewijze handleiding hoe u specifieke paginabereiken van Word-documenten naar TIFF-bestanden kunt converteren met Aspose.Words voor .NET. |
+| [Formaat 1Bpp geïndexeerd](./format-1bpp-indexed/) | Leer hoe u een Word-document converteert naar een 1Bpp-geïndexeerde afbeelding met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor eenvoudige conversie. |
+| [Jpeg-paginabereik ophalen](./get-jpeg-page-range/) | Converteer specifieke pagina's van Word-documenten naar JPEG met aangepaste instellingen met Aspose.Words voor .NET. Leer stap voor stap hoe u de helderheid, het contrast en de resolutie kunt aanpassen. |
+| [Pagina Terugbellen opslaan](./page-saving-callback/) | Leer hoe u elke pagina van een Word-document opslaat als een afzonderlijke PNG-afbeelding met Aspose.Words voor .NET met onze gedetailleerde, stapsgewijze handleiding. |

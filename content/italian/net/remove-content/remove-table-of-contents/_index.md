@@ -41,7 +41,7 @@ Prima di poter manipolare il tuo documento, dobbiamo definire dove si trova. Que
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso della cartella dei documenti. Qui è dove risiede il tuo file Word.
+ Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso della cartella dei documenti. Qui è dove risiede il tuo file Word.
 
 ## Passaggio 2: caricare il documento
 

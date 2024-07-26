@@ -39,7 +39,7 @@ Antes de profundizar en el código, configure la ruta a su directorio de documen
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real donde desea guardar su documento PDF.
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde desea guardar su documento PDF.
 
 ## Paso 2: cree un nuevo documento
 

@@ -108,6 +108,6 @@ Ya, Aspose.Words kompatibel dengan .NET Core, .NET Framework, dan platform .NET 
 
  Sangat! Anda dapat memuat dokumen yang ada menggunakan`Document` kelas dan kemudian menerapkan perlindungan.
 
-### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words?
+### Di mana saya dapat menemukan lebih banyak dokumentasi tentang Aspose.Words?
 
 Anda dapat menemukan dokumentasi lebih lanjut di[Halaman dokumentasi Aspose.Words](https://reference.aspose.com/words/net/).

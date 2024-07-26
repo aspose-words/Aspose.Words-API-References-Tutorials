@@ -151,7 +151,7 @@ doc.save("output.pdf", saveOptions);
 
 ### Wat is het doel van beeldcompressie in Aspose.Words voor Java?
 
- Met beeldcompressie kunt u de kwaliteit en grootte van afbeeldingen inde gegenereerde PDF bepalen. U kunt de beeldcompressiemodus instellen met`setImageCompression` in `PdfSaveOptions`.
+ Met beeldcompressie kunt u de kwaliteit en grootte van afbeeldingen inde gegenereerde PDF beheren. U kunt de beeldcompressiemodus instellen met`setImageCompression` in `PdfSaveOptions`.
 
 ### Hoe werk ik de eigenschap "Laatst afgedrukt" in de PDF bij?
 

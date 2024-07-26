@@ -64,7 +64,7 @@ for (int i = 0; i < 9; i++)
 }
 ```
 
-## Steg 6: Stoppa formateringslistan
+## Steg 6: Sluta formatera listan
 
  För att stoppa listformateringen, ställ in`null` till`List`egenskapen för dokumentgeneratorn:
 

@@ -170,7 +170,7 @@ Bu kapsamlı kılavuzda Aspose.Words for Java kullanarak OOXML formatındaki bel
 
 Parola korumalı bir belgedeki parola korumasını kaldırmak için belgeyi doğru parolayla açabilir ve ardından kaydetme seçeneklerinde parola belirtmeden kaydedebilirsiniz. Bu, belgeyi parola koruması olmadan kaydedecektir.
 
-### Bir belgeyi OOXML biçiminde kaydederken özel özellikleri ayarlayabilir miyim?
+### Bir belgeyi OOXML formatında kaydederken özel özellikleri ayarlayabilir miyim?
 
  Evet, bir belgeyi OOXML formatında kaydetmeden önce onun özel özelliklerini ayarlayabilirsiniz. Kullan`BuiltInDocumentProperties`Ve`CustomDocumentProperties` yazar, başlık, anahtar kelimeler ve özel özellikler gibi çeşitli özellikleri ayarlamak için sınıflar.
 

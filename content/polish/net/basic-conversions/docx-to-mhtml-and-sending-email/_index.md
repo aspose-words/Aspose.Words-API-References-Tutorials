@@ -9,7 +9,7 @@ url: /pl/net/basic-conversions/docx-to-mhtml-and-sending-email/
 ---
 ## Wstęp
 
-W dzisiejszej erze cyfrowej konwertowanie dokumentów z jednego formatu na inny i wysyłanie ich pocztą elektroniczną jest częstym zadaniem. Ten artykuł przeprowadzi Cię przez proces konwertowania pliku DOCX do formatu MHTML, a następnie wysyłania go jako wiadomości e-mail przy użyciu Aspose.Words dla .NET. Każdy krok omówimy w szczegółowym, łatwym do zrozumienia przewodniku, dzięki któremu zrozumiesz proces od początku do końca. Zanurzmy się!
+W dzisiejszej erze cyfrowej konwertowanie dokumentów z jednego formatu na inny i wysyłanie ich pocztą elektroniczną jest częstym zadaniem. Ten artykuł przeprowadzi Cię przez proces konwertowania pliku DOCX do formatu MHTML, a następnie wysyłania go jako wiadomości e-mail za pomocą Aspose.Words dla .NET. Każdy krok omówimy w szczegółowym, łatwym do zrozumienia przewodniku, dzięki któremu zrozumiesz proces od początku do końca. Zanurzmy się!
 
 ## Warunki wstępne
 

@@ -13,7 +13,7 @@ Cześć, entuzjasta technologii! Czy zdarzyło Ci się kiedyś, że musiałeś p
 
 ## Warunki wstępne
 
-Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
+Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby rozpocząć:
 
 1.  Aspose.Words dla .NET: Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
 2. Visual Studio: wystarczy dowolna najnowsza wersja.

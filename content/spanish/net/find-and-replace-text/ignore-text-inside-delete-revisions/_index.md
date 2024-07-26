@@ -50,7 +50,7 @@ doc.StopTrackRevisions();
 
 ## Paso 3: reemplazar texto usando expresiones regulares
 
-Para manipular texto, puede utilizar expresiones regulares para buscar y reemplazar patrones específicos:
+Para manipular texto, puedes usar expresiones regulares para buscar y reemplazar patrones específicos:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreDeleted = true };
 

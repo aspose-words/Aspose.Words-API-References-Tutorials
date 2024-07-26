@@ -96,7 +96,7 @@ builder.getListFormat().setList(doc.getLists().add(ListTemplate.NUMBER_ARABIC_DO
 ```
 
 ### Specificare i livelli di elenco: 
-Scorri diversi livelli di elenco e aggiungi contenuto.
+Scorri diversi livelli di elenco e aggiungi contenuti.
 
 ```java
 for (int i = 0; i < 9; i++) {

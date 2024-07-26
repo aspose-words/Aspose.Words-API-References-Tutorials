@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 	// Sao chép bảng và chèn nó vào tài liệu sau bản gốc.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	//Chèn một đoạn trống giữa hai bảng,
+	// Chèn một đoạn trống giữa hai bảng,
 	// nếu không chúng sẽ được kết hợp thành một khi lưu, việc này liên quan đến việc xác thực tài liệu.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

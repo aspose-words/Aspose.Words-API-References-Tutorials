@@ -16,4 +16,4 @@ Aspose.Words for .NET 教學課程旨在引導您使用 Aspose.Words for .NET �
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [將影像另存為 Wmf](./saving-images-as-wmf/) | 了解如何在使用 Aspose.Words for .NET 轉換為 RTF 時將映像儲存為 WMF。 |
+| [將影像另存為 Wmf](./saving-images-as-wmf/) | 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中將圖片儲存為 WMF。提高文件相容性和影像品質。 |

@@ -2,107 +2,96 @@
 title: Thêm chữ ký số vào PDF bằng Người giữ chứng chỉ
 linktitle: Thêm chữ ký số vào PDF bằng Người giữ chứng chỉ
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách thêm Chữ ký số vào PDF bằng cách sử dụng Người giữ chứng chỉ với Aspose.Words cho .NET.
+description: Bảo mật các tệp PDF của bạn bằng chữ ký điện tử bằng Aspose.Words for .NET. Hãy làm theo hướng dẫn từng bước này để thêm chữ ký điện tử vào tệp PDF của bạn một cách dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để thêm chữ ký điện tử vào PDF bằng cách sử dụng chủ sở hữu chứng chỉ với Aspose.Words cho .NET. Chữ ký số bổ sung thêm một lớp bảo mật và tính toàn vẹn cho tài liệu PDF. Làm theo các bước dưới đây:
+Bạn đã bao giờ tự hỏi làm thế nào để bảo mật tài liệu PDF của mình bằng chữ ký số chưa? Vâng, bạn đang ở đúng nơi! Chữ ký số hiện đại tương đương với chữ ký viết tay, cung cấp cách xác minh tính xác thực và tính toàn vẹn của tài liệu kỹ thuật số. Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn cách thêm chữ ký điện tử vào tệp PDF bằng Aspose.Words cho .NET. Chúng tôi sẽ đề cập đến mọi thứ từ việc thiết lập môi trường của bạn đến việc thực thi mã theo từng bước. Đến cuối hướng dẫn này, bạn sẽ có bản PDF được ký điện tử an toàn và đáng tin cậy.
 
-## Bước 1: Tạo tài liệu và thêm nội dung
+## Điều kiện tiên quyết
 
-Bắt đầu bằng cách tạo một thể hiện của lớp Document:
+Trước khi chúng ta bắt đầu, có một số điều bạn cần:
+
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Bạn có thể tải nó xuống từ[trang web giả định](https://releases.aspose.com/words/net/).
+2. Tệp chứng chỉ: Bạn sẽ cần tệp chứng chỉ .pfx để ký vào tệp PDF. Nếu chưa có, bạn có thể tạo chứng chỉ tự ký cho mục đích thử nghiệm.
+3. Visual Studio: Hướng dẫn này giả sử bạn đang sử dụng Visual Studio làm môi trường phát triển của mình.
+4. Kiến thức cơ bản về C#: Cần phải làm quen với lập trình C# và .NET.
+
+## Nhập không gian tên
+
+Đầu tiên, hãy nhập các không gian tên cần thiết. Đây là những điều cần thiết để truy cập các lớp và phương thức cần thiết để thao tác tài liệu và chữ ký số.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System;
+```
+
+Hãy chia nhỏ quy trình thành các bước đơn giản, dễ quản lý.
+
+## Bước 1: Thiết lập dự án của bạn
+
+Tạo một dự án C# mới trong Visual Studio. Thêm tham chiếu đến Aspose.Words cho .NET. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet bằng cách tìm kiếm "Aspose.Words" và cài đặt nó.
+
+## Bước 2: Tải hoặc tạo tài liệu
+
+Bạn sẽ cần một tài liệu để ký. Bạn có thể tải tài liệu hiện có hoặc tạo tài liệu mới. Đối với hướng dẫn này, chúng ta sẽ tạo một tài liệu mới và thêm một số văn bản mẫu.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-```
 
-## Bước 2: Thêm nội dung vào tài liệu
-
- Sau đó sử dụng`DocumentBuilder`để thêm nội dung vào tài liệu. Ví dụ: để thêm một đoạn có chứa văn bản "PDF đã ký thử", hãy sử dụng`Writeln` phương pháp:
-
-```csharp
+// Thêm một số văn bản vào tài liệu.
 builder.Writeln("Test Signed PDF.");
 ```
 
-Bạn có thể thêm các mục nội dung khác nếu cần.
+## Bước 3: Chỉ định chi tiết chữ ký số
 
-## Bước 3: Đặt tùy chọn lưu PDF
-
-Tạo một thể hiện của lớp PdfSaveOptions và chỉ định chi tiết chữ ký số:
+Bây giờ là lúc thiết lập chi tiết chữ ký số. Bạn sẽ cần chỉ định đường dẫn đến tệp chứng chỉ .pfx của mình, lý do ký, vị trí và ngày ký.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-	DigitalSignatureDetails = new PdfDigitalSignatureDetails(
-		CertificateHolder.Create(MyDir + "morzal.pfx", "aw"), "reason", "location",
-		DateTime.Now)
+    DigitalSignatureDetails = new PdfDigitalSignatureDetails(
+        CertificateHolder.Create(dataDir + "morzal.pfx", "your_password"), "reason", "location",
+        DateTime.Now)
 };
 ```
 
-Hãy đảm bảo chỉ định đường dẫn chính xác tới chứng chỉ và mật khẩu liên quan của bạn. Bạn cũng có thể tùy chỉnh lý do và vị trí chữ ký.
+ Thay thế`"your_password"` bằng mật khẩu cho tệp .pfx của bạn.
 
 ## Bước 4: Lưu tài liệu dưới dạng PDF được ký điện tử
 
- Sử dụng`Save` phương pháp lưu tài liệu dưới dạng PDF bằng cách chỉ định các tùy chọn lưu:
+Cuối cùng, lưu tài liệu dưới dạng PDF có chữ ký số.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
+doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-Đảm bảo chỉ định đường dẫn chính xác để lưu tệp PDF được ký điện tử.
+Và thế là xong! Tài liệu của bạn hiện đã được ký và lưu dưới dạng PDF.
 
-Bằng cách làm theo các bước này, bạn có thể dễ dàng tạo tệp PDF được ký điện tử có chứng chỉ bằng Aspose.Words cho .NET.
-
-### Mã nguồn ví dụ cho Pdf được ký điện tử bằng cách sử dụng Người giữ chứng chỉ bằng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh cho Pdf được ký điện tử bằng cách sử dụng chủ sở hữu chứng chỉ từ một tài liệu sử dụng Aspose.Words cho .NET:
-
-```csharp
-
-            // Đường dẫn đến thư mục tài liệu.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document();
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            
-            builder.Writeln("Test Signed PDF.");
-
-            PdfSaveOptions saveOptions = new PdfSaveOptions
-            {
-                DigitalSignatureDetails = new PdfDigitalSignatureDetails(
-                    CertificateHolder.Create(MyDir + "morzal.pfx", "aw"), "reason", "location",
-                    DateTime.Now)
-            };
-
-            doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
-            
-        
-```
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã khám phá các bước để thêm chữ ký điện tử vào tài liệu PDF bằng chứng chỉ có Aspose.Words cho .NET. Chữ ký số bổ sung thêm một lớp bảo mật và tính toàn vẹn cho tài liệu, do đó đảm bảo tính xác thực của nó và giúp phát hiện bất kỳ sửa đổi nào sau đó. Bằng cách làm theo các bước đã cho, bạn có thể dễ dàng tạo tệp PDF được ký điện tử bằng chứng chỉ với Aspose.Words cho .NET.
+Chữ ký số là một công cụ mạnh mẽ để đảm bảo tính toàn vẹn và xác thực cho tài liệu của bạn. Với Aspose.Words cho .NET, việc thêm chữ ký điện tử vào tệp PDF của bạn thật đơn giản và hiệu quả. Bằng cách làm theo hướng dẫn từng bước này, bạn có thể bảo mật tài liệu PDF của mình và mang lại sự an tâm cho người nhận về tính xác thực của chúng. Chúc mừng mã hóa!
 
-### Các câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Hỏi: Chữ ký điện tử là gì và tại sao nó lại quan trọng trong tài liệu PDF?
-Đáp: Chữ ký số là một kỹ thuật bảo mật giúp đảm bảo tính xác thực, tính toàn vẹn và tính không thể chối bỏ của tài liệu điện tử, chẳng hạn như tệp PDF. Nó sử dụng chứng chỉ kỹ thuật số để thêm một lớp bảo mật cho tài liệu, giúp xác minh danh tính của tác giả và phát hiện mọi thay đổi tiếp theo đối với nội dung.
+### Chữ ký số là gì?
+Chữ ký số là một dạng chữ ký điện tử dùng để xác minh tính xác thực và tính toàn vẹn của tài liệu kỹ thuật số.
 
-#### Câu hỏi: Làm cách nào tôi có thể thêm chữ ký điện tử vào tài liệu PDF bằng chứng chỉ với Aspose.Words cho .NET?
-Trả lời: Để thêm chữ ký điện tử vào tài liệu PDF bằng chứng chỉ có Aspose.Words cho .NET, hãy làm theo các bước sau:
+### Tôi có cần chứng chỉ để thêm chữ ký số không?
+Có, bạn sẽ cần tệp chứng chỉ .pfx để thêm chữ ký điện tử vào tệp PDF của mình.
 
- Tạo một thể hiện của`Document` lớp để đại diện cho tài liệu.
+### Tôi có thể tạo chứng chỉ tự ký để thử nghiệm không?
+Có, bạn có thể tạo chứng chỉ tự ký cho mục đích thử nghiệm. Tuy nhiên, để sử dụng trong sản xuất, bạn nên lấy chứng chỉ từ cơ quan chứng nhận đáng tin cậy.
 
- Sử dụng`DocumentBuilder` class để thêm nội dung mong muốn vào tài liệu.
+### Aspose.Words cho .NET có miễn phí không?
+ Aspose.Words for .NET là một sản phẩm thương mại, nhưng bạn có thể tải xuống bản dùng thử miễn phí từ[trang web giả định](https://releases.aspose.com/).
 
- Tạo một thể hiện của`PdfSaveOptions` lớp và chỉ định chi tiết chữ ký số bằng cách sử dụng`PdfDigitalSignatureDetails` lớp học. Bạn sẽ cần cung cấp đường dẫn đến chứng chỉ (`CertificateHolder.Create`), mật khẩu liên quan cũng như lý do và vị trí ký.
-
- Sử dụng`Save` phương pháp lưu tài liệu ở định dạng PDF chỉ định các tùy chọn lưu.
-
-#### Câu hỏi: Làm cách nào để có được chứng chỉ để thêm chữ ký điện tử vào tài liệu PDF?
-Đáp: Để có được chứng chỉ nhằm thêm chữ ký điện tử vào tài liệu PDF, bạn thường có thể liên hệ với cơ quan cấp chứng chỉ (CA) hoặc nhà cung cấp dịch vụ ủy thác. Các tổ chức này cấp chứng chỉ kỹ thuật số sau khi xác minh danh tính của bạn và xác thực yêu cầu của bạn. Sau khi nhận được chứng chỉ, bạn có thể sử dụng nó trong ứng dụng của mình để thêm chữ ký điện tử vào tài liệu PDF.
-
-#### Hỏi: Có thể tùy chỉnh các chi tiết của chữ ký số như lý do và vị trí không?
- Trả lời: Có, bạn có thể tùy chỉnh chi tiết chữ ký số bằng cách chỉ định lý do và vị trí của chữ ký. Trong mã ví dụ được cung cấp, bạn có thể sửa đổi các giá trị của`reason`Và`location` các thông số khi tạo`PdfDigitalSignatureDetails` sự vật. Đảm bảo cung cấp thông tin phù hợp cho từng tham số để phản ánh lý do và vị trí của chữ ký trong tài liệu PDF của bạn.
+### Tôi có thể sử dụng Aspose.Words for .NET để ký các loại tài liệu khác không?
+Có, Aspose.Words for .NET có thể được sử dụng để ký nhiều loại tài liệu khác nhau, không chỉ các tệp PDF.

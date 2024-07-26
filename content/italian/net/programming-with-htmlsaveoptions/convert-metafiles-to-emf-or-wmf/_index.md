@@ -15,7 +15,7 @@ Benvenuti in un altro tuffo nel mondo di Aspose.Words per .NET. Oggi affrontiamo
 
 Prima di immergerci nel codice, assicuriamoci di aver impostato tutto. Ecco cosa ti serve:
 
-1. Aspose.Words per .NET Library: assicurati di avere la versione più recente. Se non ce l'hai, puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per .NET Library: assicurati di avere la versione più recente. Se non ce l'hai, puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
 2. .NET Framework: assicurati di avere .NET Framework installato sul tuo computer.
 3. Ambiente di sviluppo: un IDE come Visual Studio ti semplificherà la vita.
 4. Conoscenza di base di C#: non è necessario essere un esperto, ma una conoscenza di base sarà utile.

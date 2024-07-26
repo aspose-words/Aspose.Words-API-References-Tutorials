@@ -63,7 +63,7 @@ doc.save("Your Directory Path" + "WorkingWithPclSaveOptions.RasterizeTransformed
 
 ## Conclusão
 
-Neste tutorial, exploramos como salvar documentos no formato PCL no Aspose.Words for Java. Com apenas algumas etapas simples, você pode converter seus documentos do Word em um formato adequado para impressão em impressoras a laser. Aspose.Words for Java permite que você automatize esse processo, tornando-o eficiente e descomplicado.
+Neste tutorial, exploramos como salvar documentos no formato PCL no Aspose.Words for Java. Com apenas alguns passos simples, você pode converter seus documentos do Word em um formato adequado para impressão em impressoras a laser. Aspose.Words for Java permite que você automatize esse processo, tornando-o eficiente e descomplicado.
 
 ## Perguntas frequentes
 

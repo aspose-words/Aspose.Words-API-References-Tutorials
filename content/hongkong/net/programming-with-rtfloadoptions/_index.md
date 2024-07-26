@@ -16,4 +16,4 @@ url: /zh-hant/net/programming-with-rtfloadoptions/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [識別 UTF-8 文本](./recognize-utf8-text/) | 了解如何使用 Aspose.Words for .NET 識別 RTF 文件中的 Utf-8 字元。確保資料完整性。 |
+| [識別 UTF-8 文本](./recognize-utf8-text/) | 透過這份詳細的逐步指南，了解如何使用 Aspose.Words for .NET 識別 Word 文件中的 UTF-8 文字。 |

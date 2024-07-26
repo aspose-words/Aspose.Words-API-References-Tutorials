@@ -14,7 +14,7 @@ tym samouczku nauczymy się, jak wstawić tabelę do dokumentu Word z HTML za po
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
 2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
 
-## Krok 2: Tworzenie dokumentu i inicjalizacja generatora dokumentów
+## Krok 2: Tworzenie dokumentu i inicjowanie generatora dokumentów
 Aby rozpocząć przetwarzanie tekstu za pomocą dokumentu i generatora dokumentów, wykonaj następujące kroki:
 
 ```csharp

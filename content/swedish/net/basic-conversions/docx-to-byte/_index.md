@@ -2,7 +2,7 @@
 title: Konvertera Docx till byte
 linktitle: Konvertera Docx till byte
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du konverterar Docx till byte-array i .NET med Aspose.Words för effektiv dokumentbehandling. Steg-för-steg guide ingår.
+description: Lär dig hur du konverterar Docx till byte-array i .NET med Aspose.Words för effektiv dokumentbehandling. Steg-för-steg-guide ingår.
 type: docs
 weight: 10
 url: /sv/net/basic-conversions/docx-to-byte/

@@ -76,7 +76,7 @@ case SdtType.Picture:
 ```
 
 ## Krok 6: Uložte upravený dokument
- Uložte upravený dokument do zadaného adresáře pomocí`Save`metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu dokument uložíme jako „WorkingWithSdt.ModifyContentControls.docx“.
+ Uložte upravený dokument do zadaného adresáře pomocí`Save` metoda. Zadejte požadovaný název souboru s příslušnou příponou souboru. V tomto příkladu dokument uložíme jako „WorkingWithSdt.ModifyContentControls.docx“.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");

@@ -2,7 +2,7 @@
 title: Formatowanie tabel w dokumentach
 linktitle: Formatowanie tabel w dokumentach
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Opanuj sztukę formatowania tabel w dokumentach przy użyciu Aspose.Words dla Java. Zapoznaj się ze wskazówkami krok po kroku i przykładami kodu źródłowego umożliwiającymi precyzyjne formatowanie tabeli.
+description: Opanuj sztukę formatowania tabel w dokumentach za pomocą Aspose.Words dla Java. Zapoznaj się ze wskazówkami krok po kroku i przykładami kodu źródłowego umożliwiającymi precyzyjne formatowanie tabeli.
 type: docs
 weight: 13
 url: /pl/java/table-processing/formatting-tables/

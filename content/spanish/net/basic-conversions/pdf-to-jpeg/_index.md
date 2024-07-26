@@ -64,7 +64,7 @@ Ahora que nuestro proyecto está listo, carguemos el documento PDF. ¡Aquí es d
 
 Con nuestro PDF cargado, llega el momento de realizar la conversión. Este paso es sorprendentemente sencillo.
 
-1.  Guardar como JPEG: utilice el`Save` Método para convertir el PDF en una imagen JPEG.
+1.  Guardar como JPEG: utilice el`Save` método para convertir el PDF en una imagen JPEG.
 
     ```csharp
     doc.Save(dataDir + "BaseConversions.PdfToJpeg.jpeg");

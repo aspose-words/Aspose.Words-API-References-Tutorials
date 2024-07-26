@@ -16,5 +16,5 @@ Ezekkel az oktatóanyagokkal optimalizálhatja a PDF-fájlok betöltésének fol
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Töltsön be titkosított pdf-et](./load-encrypted-pdf/) | Útmutató lépésről lépésre titkosított PDF betöltéséhez az Aspose.Words for .NET használatával. |
-| [Pdf oldaltartomány betöltése](./load-page-range-of-pdf/) | Útmutató lépésről lépésre egy adott PDF-oldaltartomány betöltéséhez az Aspose.Words for .NET segítségével. |
+| [Töltsön be titkosított pdf-et](./load-encrypted-pdf/) | Részletes oktatóanyagunkból megtudhatja, hogyan tölthet be titkosított PDF-fájlokat az Aspose.Words for .NET használatával. Sajátítsa el a PDF titkosítást és visszafejtést pillanatok alatt. |
+| [Pdf oldaltartomány betöltése](./load-page-range-of-pdf/) | Ebben az átfogó, lépésenkénti oktatóanyagban megtudhatja, hogyan tölthet be adott oldaltartományokat PDF-ből az Aspose.Words for .NET segítségével. Tökéletes .NET fejlesztőknek. |

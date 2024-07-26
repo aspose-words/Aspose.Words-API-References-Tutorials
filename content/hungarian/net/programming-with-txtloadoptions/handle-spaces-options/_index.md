@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- Ebben az utolsó lépésben az eredményül kapott dokumentumot .docx formátumban mentjük a`Save` módszert, és átadja a kimeneti fájl elérési útját.
+Ebben az utolsó lépésben az eredményül kapott dokumentumot .docx formátumban mentjük a`Save` metódust, és átadja a kimeneti fájl elérési útját.
 
 Most már futtathatja a forráskódot a szöveges dokumentum betöltéséhez a szóközkezelési beállítások megadásával. Az eredményül kapott dokumentumot a rendszer a megadott könyvtárba menti "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx" néven.
 

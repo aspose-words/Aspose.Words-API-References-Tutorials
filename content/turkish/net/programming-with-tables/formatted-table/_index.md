@@ -21,7 +21,7 @@ Biçimlendirilmiş tabloyu oluşturmaya başlamak için yeni bir belge oluşturm
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Belgeyi oluşturun ve belge oluşturucuyu başlatın
+//Belgeyi oluşturun ve belge oluşturucuyu başlatın
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

@@ -112,7 +112,7 @@ doc.save("output.docx", aw.SaveFormat.DOCX)
 
 ## Fonctionnalités avancées d'automatisation des mots
 
-Aspose.Words fournit des fonctionnalités avancées telles que le publipostage, le cryptage de documents et l'utilisation de signets, d'hyperliens et de commentaires.
+Aspose.Words fournit des fonctionnalités avancées telles que le publipostage, le cryptage de documents et l'utilisation de signets, de liens hypertexte et de commentaires.
 
 ## Automatisation du traitement des documents
 

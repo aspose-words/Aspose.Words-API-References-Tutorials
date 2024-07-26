@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-이 단계에서는 새로운`Document` 객체와 연관된`DocumentBuilder` 물체.
+ 이 단계에서는 새로운`Document` 객체와 연관된`DocumentBuilder` 물체.
 
 ## 3단계: 사용자 정의 스타일 생성 및 구성
 
@@ -98,7 +98,7 @@ Aspose.Words for .NET은 문서의 스타일을 관리하기 위한 강력한 AP
 
 #### 사용자 정의 스타일을 만들고 구성하려면 어떻게 해야 합니까?
 
- 사용자 정의 스타일을 생성하려면`Styles.Add` 의 방법`Document` 물체. 스타일 유형을 지정합니다(예:`StyleType.Paragraph`) 스타일의 이름을 제공합니다. 스타일 개체를 만든 후에는 스타일 개체의 글꼴 속성을 수정하여 모양을 구성할 수 있습니다.
+ 사용자 정의 스타일을 생성하려면`Styles.Add` 의 방법`Document` 물체. 스타일 유형을 지정합니다(예:`StyleType.Paragraph`스타일의 이름을 제공합니다. 스타일 개체를 만든 후에는 스타일 개체의 글꼴 속성을 수정하여 모양을 구성할 수 있습니다.
 
 #### 스타일 구분 기호를 어떻게 삽입하나요?
 
@@ -106,7 +106,7 @@ Aspose.Words for .NET은 문서의 스타일을 관리하기 위한 강력한 AP
 
 #### 텍스트의 다양한 섹션에 다양한 스타일을 적용하려면 어떻게 해야 합니까?
 
-다음을 설정하여 텍스트의 다양한 섹션에 다양한 스타일을 적용할 수 있습니다.`ParagraphFormat.StyleName` 의 재산`DocumentBuilder` 물체. 텍스트를 작성하기 전에 스타일 이름을 원하는 스타일로 설정하면 그에 따라 텍스트 서식이 지정됩니다.
+ 다음을 설정하여 텍스트의 다양한 섹션에 다양한 스타일을 적용할 수 있습니다.`ParagraphFormat.StyleName` 의 재산`DocumentBuilder` 물체. 텍스트를 작성하기 전에 스타일 이름을 원하는 스타일로 설정하면 그에 따라 텍스트 서식이 지정됩니다.
 
 #### 문서를 다른 형식으로 저장할 수 있나요?
 

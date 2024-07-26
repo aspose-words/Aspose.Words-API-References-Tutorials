@@ -2,13 +2,13 @@
 title: Définir le formatage des lignes du tableau
 linktitle: Définir le formatage des lignes du tableau
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour définir le formatage des lignes d’un tableau à l’aide d’Aspose.Words pour .NET.
+description: Guide étape par étape pour définir le formatage des lignes d’un tableau à l’aide d’Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /fr/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
 
-Dans ce didacticiel, nous vous guiderons pas à pas à travers le processus de définition du formatage des lignes d'un tableau à l'aide d'Aspose.Words for .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. À la fin de ce didacticiel, vous saurez comment ajuster la hauteur et les remplissages d'une ligne de tableau dans vos documents Word à l'aide d'Aspose.Words pour .NET.
+Dans ce didacticiel, nous vous guiderons tout au long du processus étape par étape pour définir le formatage des lignes d'un tableau à l'aide d'Aspose.Words for .NET. Nous expliquerons le code source C# fourni et vous fournirons un guide complet pour vous aider à comprendre et à implémenter cette fonctionnalité dans vos propres projets. À la fin de ce didacticiel, vous saurez comment ajuster la hauteur et les remplissages d'une ligne de tableau dans vos documents Word à l'aide d'Aspose.Words pour .NET.
 
 ## Étape 1 : Définir le répertoire des documents
 Tout d’abord, vous devez définir le chemin d’accès à votre répertoire de documents. C'est l'emplacement où vous souhaitez enregistrer votre document Word modifié. Remplacez « VOTRE RÉPERTOIRE DE DOCUMENTS » par le chemin approprié.
@@ -52,7 +52,7 @@ table. TopPadding = 30;
 table. BottomPadding = 30;
 ```
 
-## Étape 6 : ajouter du contenu à la ligne
+## Étape 6 : Ajouter du contenu à la ligne
  Enfin, nous pouvons ajouter du contenu à la ligne en utilisant le générateur de documents`Writeln()` méthode.
 
 ```csharp

@@ -207,7 +207,7 @@ Dropdown-Listen vereinfachen die Auswahl von Optionen aus einem vordefinierten S
 
 ### Datumsauswahl
 
-Datumsauswahlen vereinfachen die Erfassung von Daten von Benutzern. Sie bieten eine benutzerfreundliche Oberfläche zur Auswahl von Daten und verringern so die Wahrscheinlichkeit von Eingabefehlern. Verwenden Sie den folgenden Code, um ein Datumsauswahlformularfeld zu erstellen:
+Datumsauswahlen vereinfachen die Erfassung von Daten von Benutzern. Sie bieten eine benutzerfreundliche Oberfläche zur Auswahl von Daten und verringern so die Wahrscheinlichkeit von Eingabefehlern. Um ein Datumsauswahlformularfeld zu erstellen, verwenden Sie den folgenden Code:
 
 ```python
 # Create a date picker form field

@@ -14,8 +14,8 @@ The tutorials also cover the basic concepts of image manipulation, including ins
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Expose Threshold Control For Tiff Binarization](./expose-threshold-control-for-tiff-binarization/) | Learn how to control the TIFF binarization threshold with Aspose.Words for .NET. Complete tutorial for better quality images. |
-| [Get Tiff Page Range](./get-tiff-page-range/) | Learn how to extract a range of TIFF pages with Aspose.Words for .NET. Complete tutorial for custom TIFF files. |
-| [Format 1Bpp Indexed](./format-1bpp-indexed/) | Learn how to format images in 1 bpp indexed with Aspose.Words for .NET. Complete tutorial for low color depth images. |
-| [Get Jpeg Page Range](./get-jpeg-page-range/) | Learn how to get a range of JPEG pages with Aspose.Words for .NET. Complete tutorial for extracting custom images. |
-| [Page Saving Callback](./page-saving-callback/) | Learn how to customize saving document pages to images with Aspose.Words for .NET. |
+| [Expose Threshold Control For Tiff Binarization](./expose-threshold-control-for-tiff-binarization/) | Learn how to expose threshold control for TIFF binarization in Word documents using Aspose.Words for .NET with this comprehensive step-by-step guide. |
+| [Get Tiff Page Range](./get-tiff-page-range/) | Learn how to convert specific page ranges from Word documents to TIFF files using Aspose.Words for .NET with this step-by-step guide. |
+| [Format 1Bpp Indexed](./format-1bpp-indexed/) | Learn how to convert a Word document to a 1Bpp indexed image using Aspose.Words for .NET. Follow our step-by-step guide for easy conversion. |
+| [Get Jpeg Page Range](./get-jpeg-page-range/) | Convert specific pages of Word documents to JPEG with custom settings using Aspose.Words for .NET. Learn how to adjust brightness, contrast, and resolution step-by-step. |
+| [Page Saving Callback](./page-saving-callback/) | Learn to save each page of a Word document as a separate PNG image using Aspose.Words for .NET with our detailed, step-by-step guide. |

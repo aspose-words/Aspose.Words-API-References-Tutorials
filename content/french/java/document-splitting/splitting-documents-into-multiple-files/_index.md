@@ -40,7 +40,7 @@ Document[] splitDocuments = doc.splitIntoPages(5); // Diviser toutes les 5 pages
 
 ## Étape 3 : Enregistrer les documents fractionnés
 
-Maintenant que vous avez divisé le document, vous souhaiterez enregistrer les parties divisées en tant que fichiers distincts. Voici comment procéder :
+Maintenant que vous avez divisé le document, vous souhaiterez enregistrer les parties fractionnées dans des fichiers distincts. Voici comment procéder :
 
 ```java
 for (int i = 0; i < splitDocuments.length; i++) {
@@ -72,4 +72,4 @@ Aspose.Words for Java peut gérer des documents de différentes tailles, mais de
 
 ## Conclusion
 
-Dans ce guide étape par étape, nous avons appris à diviser des documents en plusieurs fichiers à l'aide d'Aspose.Words pour Java. Grâce aux exemples de code fournis et aux réponses aux questions fréquemment posées, vous êtes parfaitement équipé pour gérer efficacement les tâches de fractionnement de documents. Aspose.Words for Java simplifie le processus et offre une flexibilité pour divers critères de fractionnement. Bon codage !
+Dans ce guide étape par étape, nous avons appris à diviser des documents en plusieurs fichiers à l'aide d'Aspose.Words pour Java. Grâce aux exemples de code fournis et aux réponses aux questions fréquemment posées, vous êtes bien équipé pour gérer efficacement les tâches de fractionnement de documents. Aspose.Words for Java simplifie le processus et offre une flexibilité pour divers critères de fractionnement. Bon codage !

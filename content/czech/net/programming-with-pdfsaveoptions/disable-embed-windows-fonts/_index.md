@@ -2,94 +2,87 @@
 title: Zmenšete velikost PDF deaktivací vložených písem
 linktitle: Zmenšete velikost PDF deaktivací vložených písem
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak zmenšit velikost PDF deaktivací vkládání písem Windows při převodu dokumentů do PDF pomocí Aspose.Words for .NET.
+description: Zmenšete velikost PDF deaktivací vložených písem pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce a optimalizujte své dokumenty pro efektivní ukládání a sdílení.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
+## Úvod
 
-V tomto tutoriálu vás provedeme kroky ke zmenšení velikosti PDF pomocí deaktivace vkládání písem Windows do dokumentu PDF pomocí Aspose.Words for .NET. Zakázáním vkládání písem můžete zmenšit velikost generovaného souboru PDF. Postupujte podle následujících kroků:
+Zmenšení velikosti souborů PDF může být zásadní pro efektivní ukládání a rychlé sdílení. Jedním z účinných způsobů, jak toho dosáhnout, je zakázat vložená písma, zvláště když jsou standardní písma již k dispozici na většině systémů. V tomto tutoriálu prozkoumáme, jak zmenšit velikost PDF deaktivací vložených písem pomocí Aspose.Words for .NET. Projdeme si každý krok, abychom se ujistili, že to můžete snadno implementovat do svých vlastních projektů.
 
-## Krok 1: Načtení dokumentu
+## Předpoklady
 
-Začněte nahráním dokumentu, který chcete převést do PDF:
+Než se ponoříte do kódu, ujistěte se, že máte následující:
+
+-  Aspose.Words for .NET: Pokud jste tak ještě neučinili, stáhněte si a nainstalujte jej z[Odkaz ke stažení](https://releases.aspose.com/words/net/).
+- Vývojové prostředí .NET: Visual Studio je oblíbenou volbou.
+- Ukázkový dokument Word: Připravte si soubor DOCX, který chcete převést do PDF.
+
+## Importovat jmenné prostory
+
+Chcete-li začít, ujistěte se, že máte do projektu importovány potřebné jmenné prostory. To vám umožní přístup ke třídám a metodám požadovaným pro náš úkol.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Pojďme si tento proces rozdělit na jednoduché, zvládnutelné kroky. Každý krok vás provede úkolem a zajistí, že porozumíte tomu, co se v každém bodě děje.
+
+## Krok 1: Inicializujte svůj dokument
+
+Nejprve musíme načíst dokument aplikace Word, který chcete převést do formátu PDF. Tady vaše cesta začíná.
+
+```csharp
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Nezapomeňte zadat správnou cestu k dokumentu.
+ Tady,`dataDir` je zástupný symbol pro adresář, kde je umístěn váš dokument. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou.
 
-## Krok 2: Nastavte možnosti uložení PDF
+## Krok 2: Nakonfigurujte možnosti uložení PDF
 
-Vytvořte instanci třídy PdfSaveOptions a zadejte způsob vkládání písem:
+Dále nastavíme možnosti uložení PDF. Zde určíme, že nechceme vkládat standardní písma Windows.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
+// Výstupní PDF bude uloženo bez vkládání standardních písem systému Windows.
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone
+};
 ```
 
-Tato možnost umožňuje deaktivovat integraci písem Windows ve vygenerovaném souboru PDF.
+ Nastavením`FontEmbeddingMode` na`EmbedNone`, instruujeme Aspose.Words, aby tato písma do PDF nezahrnovala, čímž se sníží velikost souboru.
 
-## Krok 3: Převeďte dokument do PDF
+## Krok 3: Uložte dokument jako PDF
 
- Použijte`Save` metoda převodu dokumentu do PDF s uvedením možností převodu:
+Nakonec dokument uložíme jako PDF pomocí nakonfigurovaných možností uložení. Toto je okamžik pravdy, kdy se váš DOCX přemění na kompaktní PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-Ujistěte se, že jste zadali správnou cestu pro uložení převedeného PDF.
-
-### Příklad zdrojového kódu pro Zakázat vkládání písem Windows pomocí Aspose.Words pro .NET
-
-Zde je úplný zdrojový kód pro zakázání vkládání písem Windows do dokumentu PDF pomocí Aspose.Words for .NET:
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Výstupní PDF bude uloženo bez vkládání standardních písem systému Windows.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
-
-```
-Pomocí těchto kroků můžete snadno zakázat vkládání písem Windows do dokumentu PDF pomocí Aspose.Words for .NET.
-
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` s vaší skutečnou cestou k adresáři ještě jednou. Výstupní PDF se nyní uloží do určeného adresáře bez vložených standardních písem.
 
 ## Závěr
 
-tomto tutoriálu jsme se naučili, jak zmenšit velikost souboru PDF zakázáním vkládání písem Windows pomocí Aspose.Words for .NET. Zakázáním vkládání písem můžete zmenšit velikost generovaného souboru PDF, což usnadňuje ukládání, sdílení a přenos souborů. Je však důležité si uvědomit, že zakázání vkládání písem systému Windows může způsobit změny vzhledu a formátování v konečném dokumentu PDF. Při používání této funkce nezapomeňte vzít v úvahu tyto důsledky. Neváhejte a prozkoumejte další funkce Aspose.Words for .NET pro optimalizaci generování vašich souborů PDF.
+Pomocí těchto kroků můžete výrazně zmenšit velikost souborů PDF. Zakázání vložených písem je přímý, ale účinný způsob, jak zesvětlit vaše dokumenty a snáze je sdílet. Aspose.Words for .NET činí tento proces bezproblémovým a zajišťuje, že můžete optimalizovat své soubory s minimálním úsilím.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co zakazuje vkládání písem systému Windows do dokumentu PDF a proč je to důležité?
-Odpověď: Zakázání vkládání písem systému Windows do dokumentu PDF je proces, který zabraňuje zahrnutí písem systému Windows do vygenerovaného souboru PDF. Tím se zmenší velikost souboru PDF odstraněním vložených dat písem systému Windows. To může být důležité pro zmenšení velikosti souborů PDF, což může usnadnit jejich ukládání, sdílení a rychlejší přenos.
+### Proč bych měl zakázat vložená písma v PDF?
+Zakázání vložených písem může výrazně snížit velikost souboru PDF, což zefektivní ukládání a zrychlí sdílení.
 
-#### Otázka: Jak mohu zakázat vkládání písem Windows do dokumentu PDF pomocí Aspose.Words for .NET?
-Odpověď: Chcete-li zakázat vkládání písem Windows do dokumentu PDF pomocí Aspose.Words for .NET, postupujte takto:
+### Bude se PDF stále zobrazovat správně bez vložených písem?
+Ano, pokud jsou písma standardní a dostupná v systému, kde je PDF zobrazeno, zobrazí se správně.
 
- Načtěte dokument, který chcete převést do PDF, pomocí`Document` třída a cesta k dokumentu.
+### Mohu do PDF selektivně vložit pouze určitá písma?
+Ano, Aspose.Words for .NET vám umožňuje přizpůsobit, která písma jsou vložena, a poskytuje flexibilitu ve způsobu zmenšování velikosti souboru.
 
- Vytvořte instanci souboru`PdfSaveOptions` třídu a nastavte`FontEmbeddingMode`majetek do`PdfFontEmbeddingMode.EmbedNone`. Tím zakážete vkládání písem Windows do vygenerovaného souboru PDF.
+### Potřebuji Aspose.Words for .NET k deaktivaci vložených písem v PDF?
+Ano, Aspose.Words for .NET poskytuje funkce potřebné ke konfiguraci možností vkládání písem do souborů PDF.
 
- Použijte`Save` metoda`Document` objekt pro převod dokumentu do PDF s určením voleb převodu nakonfigurovaných dříve.
-
-#### Otázka: Jaké jsou výhody zakázání vkládání písem systému Windows do dokumentu PDF?
-Odpověď: Výhody zakázání vkládání písem systému Windows do dokumentu PDF jsou:
-
-Zmenšená velikost souboru PDF: Zakázáním vkládání písem systému Windows se odstraní data vložených písem systému Windows, čímž se zmenší velikost generovaného souboru PDF.
-
-Snazší ukládání: Menší soubory PDF se snáze ukládají, ukládají a přenášejí.
-
-Rychlejší sdílení a přenos: Menší soubory PDF lze sdílet a přenášet rychleji, což šetří čas a zdroje.
-
-#### Otázka: Jaké jsou důsledky zakázání vkládání písem systému Windows do dokumentu PDF?
-Odpověď: Zakázání vkládání písem Windows do dokumentu PDF může vést k následkům, jako jsou:
-
-Ztráta vzhledu a formátování: Pokud v systému, kde je PDF otevřen, nejsou k dispozici písma Windows uvedená v dokumentu, budou použita náhradní písma, což může mít za následek nesprávný vzhled a formátování. tvarově odlišný od očekávaných.
-
-Problémy s čitelností: Pokud použitá náhradní písma nejsou tak čitelná jako původní písma, může to ovlivnit čitelnost textu v dokumentu PDF.
+### Jak získám podporu, pokud narazím na problémy?
+ Můžete navštívit[Fórum podpory](https://forum.aspose.com/c/words/8) o pomoc s jakýmikoli problémy, se kterými se setkáte.

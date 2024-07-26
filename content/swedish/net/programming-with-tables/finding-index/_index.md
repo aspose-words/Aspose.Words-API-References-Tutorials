@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-tables/finding-index/
 ---
 
-I den här handledningen kommer vi att lära oss hur man använder Aspose.Words för .NET för att hitta indexen för en tabell, rad och cell i ett Word-dokument. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna hitta indexen för arrayelement i dina Word-dokument programmatiskt.
+den här handledningen kommer vi att lära oss hur man använder Aspose.Words för .NET för att hitta indexen för en tabell, rad och cell i ett Word-dokument. Vi kommer att följa en steg-för-steg-guide för att förstå koden och implementera den här funktionen. I slutet av denna handledning kommer du att kunna hitta indexen för arrayelement i dina Word-dokument programmatiskt.
 
 ## Steg 1: Projektinställning
 1. Starta Visual Studio och skapa ett nytt C#-projekt.

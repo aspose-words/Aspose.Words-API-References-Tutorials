@@ -162,7 +162,7 @@ public void setCompressionLevel() throws Exception
 
 ## Phần kết luận
 
-Trong hướng dẫn toàn diện này, chúng tôi đã khám phá cách lưu tài liệu ở định dạng OOXML bằng Aspose.Words cho Java. Cho dù bạn cần mã hóa tài liệu của mình bằng mật khẩu, đảm bảo tuân thủ các tiêu chuẩn OOXML cụ thể, cập nhật thuộc tính tài liệu, giữ nguyên các ký tự kiểm soát cũ hay điều chỉnh mức độ nén, Aspose.Words đều cung cấp một bộ công cụ linh hoạt để đáp ứng yêu cầu của bạn.
+Trong hướng dẫn toàn diện này, chúng tôi đã khám phá cách lưu tài liệu ở định dạng OOXML bằng Aspose.Words cho Java. Cho dù bạn cần mã hóa tài liệu của mình bằng mật khẩu, đảm bảo tuân thủ các tiêu chuẩn OOXML cụ thể, cập nhật thuộc tính tài liệu, giữ nguyên các ký tự điều khiển cũ hay điều chỉnh mức độ nén, Aspose.Words đều cung cấp một bộ công cụ linh hoạt để đáp ứng yêu cầu của bạn.
 
 ## Câu hỏi thường gặp
 

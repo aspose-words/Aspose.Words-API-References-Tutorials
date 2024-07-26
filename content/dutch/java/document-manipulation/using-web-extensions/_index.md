@@ -77,7 +77,7 @@ Met dit codefragment wordt informatie over elk taakvenster van de webextensie in
 
 ## Conclusie
 
-In deze zelfstudie hebt u geleerd hoe u webextensies in Aspose.Words voor Java kunt gebruiken om uw documenten uit te breiden met webgebaseerde inhoud en toepassingen. U kunt nu taakvensters voor webextensies toevoegen, de eigenschappen ervan instellen en informatie hierover ophalen. Ontdek verder en integreer webextensies om dynamische en interactieve documenten te creëren die zijn afgestemd op uw behoeften.
+In deze zelfstudie hebt u geleerd hoe u webextensies in Aspose.Words voor Java kunt gebruiken om uw documenten uit te breiden met webgebaseerde inhoud en toepassingen. U kunt nu taakvensters voor webextensies toevoegen, de eigenschappen ervan instellen en informatie daarover ophalen. Ontdek verder en integreer webextensies om dynamische en interactieve documenten te creëren die zijn afgestemd op uw behoeften.
 
 ## Veelgestelde vragen
 

@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");
 	// 테이블을 복제하여 원본 뒤에 문서에 삽입합니다.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	//두 테이블 사이에 빈 단락을 삽입하고,
+	// 두 테이블 사이에 빈 단락을 삽입하고,
 	// 그렇지 않으면 저장 시 하나로 결합됩니다. 이는 문서 유효성 검사와 관련이 있습니다.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

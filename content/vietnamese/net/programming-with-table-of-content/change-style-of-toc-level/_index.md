@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### Câu hỏi: Tôi có thể thay đổi kiểu nhiều cấp độ trong mục lục bằng Aspose.Words cho .NET không?
 
- Đáp: Có, bạn có thể thay đổi kiểu nhiều cấp độ trong mục lục bằng Aspose.Words for .NET. Để sửa đổi kiểu của một cấp độ cụ thể, bạn có thể truy cập kiểu tương ứng bằng cách sử dụng`Styles`thuộc tính và thực hiện các thay đổi mong muốn cho từng cấp độ riêng lẻ.
+Đáp: Có, bạn có thể thay đổi kiểu nhiều cấp độ trong mục lục bằng Aspose.Words for .NET. Để sửa đổi kiểu của một cấp độ cụ thể, bạn có thể truy cập kiểu tương ứng bằng cách sử dụng`Styles` thuộc tính và thực hiện các thay đổi mong muốn cho từng cấp độ riêng lẻ.
 
 #### Câu hỏi: Làm cách nào để lưu tài liệu đã sửa đổi sau khi thay đổi kiểu mục lục bằng Aspose.Words cho .NET?
 
@@ -117,7 +117,7 @@ Mã này lưu tài liệu đã sửa đổi dưới dạng "WorkingWithChangeSty
 
 #### Câu hỏi: Tôi có thể thay đổi kiểu mục lục trong tài liệu Word hiện có bằng Aspose.Words cho .NET không?
 
- Đáp: Có, bạn có thể thay đổi kiểu mục lục trong tài liệu Word hiện có bằng Aspose.Words for .NET. Chỉ cần tải tài liệu bằng cách sử dụng`Document` lớp, sửa đổi các thuộc tính kiểu bằng cách sử dụng`Styles` thuộc tính và lưu tài liệu để áp dụng các thay đổi.
+Đáp: Có, bạn có thể thay đổi kiểu mục lục trong tài liệu Word hiện có bằng Aspose.Words for .NET. Chỉ cần tải tài liệu bằng cách sử dụng`Document` lớp, sửa đổi các thuộc tính kiểu bằng cách sử dụng`Styles` thuộc tính và lưu tài liệu để áp dụng các thay đổi.
 
 #### Hỏi: Aspose.Words for .NET có hỗ trợ thay đổi các kiểu và định dạng khác trong tài liệu Word không?
 

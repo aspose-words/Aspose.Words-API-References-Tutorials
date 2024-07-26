@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-In deze stap maken we een nieuw`Document` object en een bijbehorende`DocumentBuilder` voorwerp. Met deze objecten kunnen we ons document manipuleren en genereren.
+ In deze stap maken we een nieuw`Document` object en een bijbehorende`DocumentBuilder` voorwerp. Met deze objecten kunnen we ons document manipuleren en genereren.
 
 ## Stap 3: Een lijst maken met drie inspringingsniveaus
 
@@ -100,7 +100,7 @@ Stel uw ontwikkelomgeving in door de benodigde referenties toe te voegen en de j
 
  Maak een nieuwe`Document` object en een bijbehorende`DocumentBuilder` voorwerp.
 
- Gebruik de`DocumentBuilder` om een lijst met meerdere inspringingsniveaus te maken met behulp van de methoden`ApplyNumberDefault()` om het standaardlijstnummerformaat toe te passen,`Writeln()`En`Write()` om items aan de lijst toe te voegen, en`ListIndent()`om de inspringing op elk niveau te vergroten.
+ Gebruik de`DocumentBuilder`om een lijst met meerdere inspringingsniveaus te maken met behulp van de methoden`ApplyNumberDefault()` om het standaardlijstnummerformaat toe te passen,`Writeln()`En`Write()` om items aan de lijst toe te voegen, en`ListIndent()` om de inspringing op elk niveau te vergroten.
 
  Configureer opslagopties door een`TxtSaveOptions` object en het instellen van de eigenschappen`ListIndentation.Count` aan het aantal tabtekens per niveau en`ListIndentation.Character` naar`'\t'` om de tabtekens te gebruiken.
 
@@ -110,7 +110,7 @@ Stel uw ontwikkelomgeving in door de benodigde referenties toe te voegen en de j
  Ja, u kunt het aantal tabtekens per niveau voor het inspringen van de lijst aanpassen door de waarde van de`ListIndentation.Count` eigendom in de`TxtSaveOptions` klas. U kunt voor elk inspringingsniveau het gewenste aantal tabtekens opgeven.
 
 #### Vraag: Welke andere tekens kan ik gebruiken voor het inspringen van lijsten met Aspose.Words voor .NET?
- Naast tabtekens kunt u met Aspose.Words voor .NET ook andere tekens gebruiken voor het inspringen van lijsten. U kunt de`ListIndentation.Character` eigenschap naar elk gewenst teken, zoals spatie (`' '`), voor het inspringen van lijsten.
+Naast tabtekens kunt u met Aspose.Words voor .NET ook andere tekens gebruiken voor het inspringen van lijsten. U kunt de`ListIndentation.Character` eigenschap naar elk gewenst teken, zoals spatie (`' '`), voor het inspringen van lijsten.
 
 #### Vraag: Biedt Aspose.Words voor .NET nog andere functies voor het beheren van lijsten?
 Ja, Aspose.Words voor .NET biedt veel functies voor het beheren van lijsten in Word-documenten. U kunt genummerde lijsten of lijsten met opsommingstekens maken, inspringingsniveaus instellen, de stijl van lijsten aanpassen, lijstitems toevoegen en meer.

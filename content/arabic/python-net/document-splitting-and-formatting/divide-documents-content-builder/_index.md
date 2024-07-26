@@ -2,7 +2,7 @@
 title: تقسيم المستندات باستخدام Content Builder للحصول على الدقة
 linktitle: تقسيم المستندات باستخدام Content Builder للحصول على الدقة
 second_title: Aspose.Words Python إدارة المستندات API
-description: قم بتقسيم مستنداتك وقهرها بدقة باستخدام Aspose.Words for Python. تعرف على كيفية الاستفادة من Content Builder لاستخراج المحتوى وتنظيمه بكفاءة.
+description: قم بتقسيم مستنداتك وقهرها بدقة باستخدام Aspose.Words for Python. تعرف على كيفية الاستفادة من أداة إنشاء المحتوى لاستخراج المحتوى وتنظيمه بكفاءة.
 type: docs
 weight: 11
 url: /ar/python-net/document-splitting-and-formatting/divide-documents-content-builder/

@@ -12,4 +12,4 @@ Samouczki Aspose.Words dla .NET dotyczące przetwarzania słów za pomocą HTMLL
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Preferowany typ kontroli w dokumencie programu Word](./preferred-control-type/) | Przewodnik krok po kroku dotyczący określania preferowanego typu kontroli w dokumencie Word podczas ładowania dokumentu HTML za pomocą Aspose.Words dla .NET. |
+| [Preferowany typ kontroli w dokumencie programu Word](./preferred-control-type/) | Dowiedz się, jak wstawić pole formularza kombi w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby bezproblemowo zintegrować treść HTML. |

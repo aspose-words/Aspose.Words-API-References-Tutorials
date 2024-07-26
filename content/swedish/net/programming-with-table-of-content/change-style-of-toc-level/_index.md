@@ -31,7 +31,7 @@ När dokumentet har skapats kan du komma åt dokumentstilar och ändra stilen so
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-I det här exemplet använder vi egenskapen Styles för klassen Document för att komma åt dokumentstilar. Därefter använder vi stilidentifieraren StyleIdentifier.Toc1 för att komma åt stilen som används för den första nivån i innehållsförteckningen. Slutligen ändrar vi egenskapen Font.Bold för stilen för att göra den fet.
+det här exemplet använder vi egenskapen Styles för klassen Document för att komma åt dokumentstilar. Därefter använder vi stilidentifieraren StyleIdentifier.Toc1 för att komma åt stilen som används för den första nivån i innehållsförteckningen. Slutligen ändrar vi egenskapen Font.Bold för stilen för att göra den fet.
 
 ## Spara ändrat dokument
 
@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Slutsats
 
-I den här guiden förklarade vi hur man använder Aspose.Words för .NET för att ändra stilen på en nivå i innehållsförteckningen i ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt anpassa stilen på innehållsförteckningen i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder enorm flexibilitet och kraft att arbeta med stilarna och formateringen av dina dokument, vilket gör att du kan skapa attraktiva och professionella Word-dokument.
+den här guiden förklarade vi hur man använder Aspose.Words för .NET för att ändra stilen på en nivå i innehållsförteckningen i ett Word-dokument med hjälp av den medföljande C#-källkoden. Genom att följa de angivna stegen kan du enkelt anpassa stilen på innehållsförteckningen i dina Word-dokument i ditt C#-program. Aspose.Words erbjuder enorm flexibilitet och kraft att arbeta med stilarna och formateringen av dina dokument, vilket gör att du kan skapa attraktiva och professionella Word-dokument.
 
 ### Vanliga frågor för att ändra toc-stil i word-dokument
 
@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### F: Kan jag ändra stilen på flera nivåer i innehållsförteckningen med Aspose.Words för .NET?
 
- S: Ja, du kan ändra stilen på flera nivåer i innehållsförteckningen med Aspose.Words för .NET. För att ändra stilen för en specifik nivå kan du komma åt motsvarande stil med hjälp av`Styles`egendom och gör de önskade ändringarna för varje nivå individuellt.
+S: Ja, du kan ändra stilen på flera nivåer i innehållsförteckningen med Aspose.Words för .NET. För att ändra stilen för en specifik nivå kan du komma åt motsvarande stil med hjälp av`Styles` egendom och gör de önskade ändringarna för varje nivå individuellt.
 
 #### F: Hur sparar jag det ändrade dokumentet efter att ha ändrat stilen på innehållsförteckningen med Aspose.Words för .NET?
 
@@ -117,7 +117,7 @@ S: Ja, förutom att ändra stilen kan du tillämpa olika formateringsändringar 
 
 #### F: Kan jag ändra stilen på innehållsförteckningen i ett befintligt Word-dokument med Aspose.Words för .NET?
 
- S: Ja, du kan ändra stilen på innehållsförteckningen i ett befintligt Word-dokument med Aspose.Words för .NET. Ladda helt enkelt dokumentet med hjälp av`Document` klass, ändra stilegenskaperna med hjälp av`Styles` egenskap och spara dokumentet för att tillämpa ändringarna.
+S: Ja, du kan ändra stilen på innehållsförteckningen i ett befintligt Word-dokument med Aspose.Words för .NET. Ladda helt enkelt dokumentet med hjälp av`Document` klass, ändra stilegenskaperna med hjälp av`Styles` egenskap och spara dokumentet för att tillämpa ändringarna.
 
 #### F: Har Aspose.Words för .NET stöd för att ändra andra stilar och formatering i Word-dokument?
 

@@ -30,7 +30,7 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- Bu adımda belgenin stil koleksiyonuna şu komutu kullanarak erişiyoruz:`Styles`mülk. Bu koleksiyon, belgede bulunan tüm stilleri içerir.
+ Bu adımda belgenin stil koleksiyonuna şu komutu kullanarak erişiyoruz:`Styles` mülk. Bu koleksiyon, belgede bulunan tüm stilleri içerir.
 
 ## 4. Adım: Stillere Göz Atın
 
@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Çözüm
 
- Bu eğitimde Aspose.Words for .NET'i kullanarak bir Word belgesinde bulunan stilleri nasıl elde edeceğimizi ve bunlara nasıl erişeceğimizi öğrendik. Kullanarak`Styles` mülkiyeti`Document`nesne, stil koleksiyonunu elde ettik ve adlarını görüntülemek için bunlar arasında dolaştık. Bu özellik, bir belgede kullanılan stillere ilişkin değerli bilgiler sağlar ve daha fazla özelleştirme ve analiz yapılmasına olanak tanır.
+ Bu eğitimde Aspose.Words for .NET'i kullanarak bir Word belgesinde bulunan stilleri nasıl elde edeceğimizi ve bunlara nasıl erişeceğimizi öğrendik. Kullanarak`Styles` mülkiyeti`Document` nesne, stil koleksiyonunu elde ettik ve adlarını görüntülemek için bunlar arasında dolaştık. Bu özellik, bir belgede kullanılan stillere ilişkin değerli bilgiler sağlar ve daha fazla özelleştirme ve analiz yapılmasına olanak tanır.
 
 Geliştiriciler, Aspose.Words for .NET'in güçlü API'sinden yararlanarak belge stillerini kolayca yönetebilir ve bunlarla çalışabilir, bu da biçimlendirme ve belge işleme üzerinde gelişmiş kontrol sunar.
 

@@ -14,8 +14,8 @@ Az oktatóanyagok a képkezelés alapvető fogalmait is lefedik, beleértve a k�
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Expose Threshol Control for Tiff Binarization](./expose-threshold-control-for-tiff-binarization/) | Ismerje meg, hogyan szabályozható a TIFF binarizálási küszöbértéke az Aspose.Words for .NET segítségével. Teljes oktatóanyag a jobb minőségű képekért. |
-| [Szerezze be a Tiff Page Range szolgáltatást](./get-tiff-page-range/) | Ismerje meg, hogyan bonthat ki egy sor TIFF-oldalt az Aspose.Words for .NET segítségével. Teljes oktatóanyag az egyéni TIFF-fájlokhoz. |
-| [Formátum 1Bpp Indexelt](./format-1bpp-indexed/) | Ismerje meg, hogyan formázhat képeket 1 bpp-ben az Aspose.Words for .NET segítségével indexelve. Teljes oktatóanyag az alacsony színmélységű képekhez. |
-| [Szerezze be a Jpeg oldaltartományt](./get-jpeg-page-range/) | Ismerje meg, hogyan szerezhet be egy sor JPEG oldalt az Aspose.Words for .NET segítségével. Teljes oktatóanyag az egyéni képek kinyeréséhez. |
-| [Oldal mentése Visszahívás](./page-saving-callback/) | Ismerje meg, hogyan testreszabhatja a dokumentumoldalak képekké történő mentését az Aspose.Words for .NET segítségével. |
+| [Expose Threshol Control for Tiff Binarization](./expose-threshold-control-for-tiff-binarization/) | Ebből az átfogó, lépésről lépésre szóló útmutatóból megtudhatja, hogyan teheti közzé a küszöbérték-szabályozást a TIFF-binarizáláshoz Word-dokumentumokban az Aspose.Words for .NET használatával. |
+| [Szerezze be a Tiff Page Range szolgáltatást](./get-tiff-page-range/) | Ebből a lépésenkénti útmutatóból megtudhatja, hogyan alakíthat át bizonyos oldaltartományokat Word-dokumentumokból TIFF-fájlokká az Aspose.Words for .NET használatával. |
+| [Formátum 1Bpp Indexelt](./format-1bpp-indexed/) | Ismerje meg, hogyan alakíthat át Word-dokumentumot 1 Bpp indexelt képpé az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat az egyszerű átalakítás érdekében. |
+| [Szerezze be a Jpeg oldaltartományt](./get-jpeg-page-range/) | Az Aspose.Words for .NET segítségével egyéni beállításokkal konvertálja a Word dokumentumok adott oldalait JPEG formátumba. Ismerje meg, hogyan állíthatja be lépésről lépésre a fényerőt, a kontrasztot és a felbontást. |
+| [Oldal mentése Visszahívás](./page-saving-callback/) | Részletes, lépésenkénti útmutatónkkal megtudhatja, hogyan mentheti el a Word-dokumentum minden oldalát külön PNG-képként az Aspose.Words for .NET segítségével. |

@@ -2,88 +2,102 @@
 title: Definir opções de estrutura de tópicos em um documento PDF
 linktitle: Definir opções de estrutura de tópicos em um documento PDF
 second_title: API de processamento de documentos Aspose.Words
-description: Guia passo a passo para definir opções de estrutura de tópicos em um documento PDF com Aspose.Words for .NET.
+description: Aprenda como definir opções de estrutura de tópicos em um documento PDF usando Aspose.Words for .NET. Aprimore a navegação no PDF configurando níveis de títulos e contornos expandidos.
 type: docs
 weight: 10
 url: /pt/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
+## Introdução
 
-Este artigo fornece um guia passo a passo sobre como usar o recurso definir opções de estrutura de tópicos para tamanho de metarquivo com Aspose.Words for .NET. Explicaremos cada parte do código em detalhes. Ao final deste tutorial, você poderá entender como definir opções de estrutura de tópicos em um documento e gerar um PDF com as opções de estrutura de tópicos correspondentes.
+Ao trabalhar com documentos, especialmente para fins profissionais ou acadêmicos, organizar seu conteúdo de forma eficaz é crucial. Uma maneira de melhorar a usabilidade dos seus documentos PDF é definindo opções de estrutura de tópicos. Os contornos, ou marcadores, permitem que os usuários naveguem pelo documento com eficiência, assim como os capítulos de um livro. Neste guia, veremos como você pode definir essas opções usando Aspose.Words for .NET, garantindo que seus arquivos PDF estejam bem organizados e fáceis de usar.
 
-Antes de começar, certifique-se de ter instalado e configurado a biblioteca Aspose.Words for .NET em seu projeto. Você pode encontrar a biblioteca e as instruções de instalação no site do Aspose.
+## Pré-requisitos
 
-## Passo 1: Defina o diretório do documento
+Antes de começar, há algumas coisas que você precisa garantir:
 
- Para começar, você precisa definir o caminho para o diretório onde seus documentos estão localizados. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório de documentos.
+1.  Aspose.Words for .NET: Certifique-se de ter o Aspose.Words for .NET instalado. Se não, você pode[Baixe a última versão aqui](https://releases.aspose.com/words/net/).
+2. Um ambiente de desenvolvimento .NET: você precisará de um ambiente de desenvolvimento .NET funcional, como o Visual Studio.
+3. Compreensão básica de C#: A familiaridade com a linguagem de programação C# o ajudará a acompanhar facilmente.
+4. Um documento do Word: tenha um documento do Word pronto para converter em PDF.
+
+## Importar namespaces
+
+Primeiro, você precisará importar os namespaces necessários. É aqui que você incluirá a biblioteca Aspose.Words para interagir com seu documento. Veja como configurá-lo:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Etapa 1: definir o caminho do documento
+
+Para começar, você precisará especificar o caminho para o seu documento do Word. Este é o arquivo que você deseja converter em PDF com opções de estrutura de tópicos. 
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Passo 2: Carregue o documento
-
-A seguir, precisamos carregar o documento que queremos processar. Neste exemplo, presumimos que o documento se chama "Rendering.docx" e está localizado no diretório de documentos especificado.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Etapa 3: configurar opções de salvar como PDF com opções de plano
+ No trecho de código acima, substitua`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório do seu documento. Isso informa ao programa onde encontrar o documento do Word.
 
-Para definir opções de contorno no PDF gerado, precisamos configurar o`PdfSaveOptions` objeto. Podemos definir o número de níveis de contorno do título (`HeadingsOutlineLevels`) e o número de níveis de estrutura de tópicos expandidos (`ExpandedOutlineLevels`).
+## Passo 2: Configurar opções para salvar PDF
+
+ Em seguida, você precisa configurar as opções de salvamento do PDF. Isso inclui definir como os contornos devem ser tratados na saída do PDF. Você usará o`PdfSaveOptions` classe para fazer isso.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
+```
+
+Agora, vamos definir as opções de contorno. 
+
+### Definir níveis de contorno de títulos
+
+ O`HeadingsOutlineLevels` propriedade define quantos níveis de títulos devem ser incluídos no esboço do PDF. Por exemplo, se você definir como 3, incluirá até três níveis de títulos no esboço do PDF.
+
+```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
+```
+
+### Definir níveis de estrutura de tópicos expandidos
+
+ O`ExpandedOutlineLevels` propriedade controla quantos níveis do contorno devem ser expandidos por padrão quando o PDF é aberto. Definir como 1 expandirá os títulos de nível superior, proporcionando uma visão clara das seções principais.
+
+```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 ```
 
-## Passo 4: Salve o documento como PDF com opções de estrutura de tópicos
+## Etapa 3: salve o documento como PDF
 
-Por fim, podemos salvar o documento em formato PDF utilizando as opções de salvamento configuradas anteriormente.
+ Com as opções configuradas, você está pronto para salvar o documento como PDF. Use o`Save` método do`Document` class e passe o caminho do arquivo e salve as opções.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
 ```
 
-Isso é tudo ! Você definiu com êxito as opções de estrutura de tópicos em um documento e gerou um PDF com as opções de estrutura de tópicos correspondentes usando Aspose.Words for .NET.
-
-### Exemplo de código-fonte para definir opções de plano para tamanho de metarquivo com Aspose.Words for .NET
-
-
-```csharp
-
-	// O caminho para o diretório de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
-	saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);
-   
-```
+Esta linha de código salva seu documento do Word como PDF, aplicando as opções de estrutura de tópicos que você configurou. 
 
 ## Conclusão
 
-Neste tutorial, explicamos como definir opções de estrutura de tópicos em um documento PDF usando Aspose.Words for .NET. Usando as etapas descritas, você pode especificar facilmente os níveis de título e estrutura de tópicos em seu documento e gerar um arquivo PDF com as opções de estrutura de tópicos correspondentes. Aproveite os benefícios da opção de estrutura de tópicos para melhorar a estrutura e a navegação em seus documentos PDF usando Aspose.Words for .NET.
+Definir opções de estrutura de tópicos em um documento PDF pode melhorar muito sua navegabilidade, tornando mais fácil para os usuários encontrarem e acessarem as seções de que precisam. Com Aspose.Words for .NET, você pode definir facilmente essas configurações para atender às suas necessidades, garantindo que seus documentos PDF sejam tão fáceis de usar quanto possível.
 
-### perguntas frequentes
+## Perguntas frequentes
 
-#### P: Qual é a opção de estrutura de tópicos em um documento PDF?
-R: A opção de estrutura de tópicos em um documento PDF refere-se à estrutura hierárquica do conteúdo do documento. Permite criar um índice interativo e facilita a navegação no documento. As opções de estrutura de tópicos determinam os níveis de título e subtítulo a serem incluídos na estrutura de tópicos e o nível de detalhe a ser exibido na estrutura de tópicos gerada.
+### Qual é o propósito de definir opções de estrutura de tópicos em um PDF?
 
-#### P: Como posso definir opções de estrutura de tópicos em um documento PDF usando Aspose.Words for .NET?
-R: Para definir opções de estrutura de tópicos em um documento PDF usando Aspose.Words for .NET, siga estas etapas:
+Definir opções de estrutura de tópicos ajuda os usuários a navegar em documentos PDF grandes com mais facilidade, fornecendo um índice estruturado e clicável.
 
- Defina o caminho do diretório onde seus documentos estão localizados, substituindo`"YOUR DOCUMENT DIRECTORY"` com o caminho real do seu diretório de documentos.
+### Posso definir diferentes níveis de títulos para diferentes seções do meu documento?
 
- Carregue o documento que deseja converter para PDF usando o`Document` class e especifique o caminho para o documento no diretório de documentos especificado.
+Não, as configurações de estrutura de tópicos se aplicam globalmente a todo o documento. No entanto, você pode estruturar seu documento com níveis de títulos apropriados para obter um efeito semelhante.
 
- Configure as opções de salvar como PDF criando uma instância do arquivo`PdfSaveOptions` classe e usando o`OutlineOptions` propriedade para definir as opções de estrutura de tópicos. Você pode especificar o número de níveis de título a serem incluídos no esboço usando o botão`HeadingsOutlineLevels` propriedade e o número de níveis de estrutura de tópicos expandidos usando a propriedade`ExpandedOutlineLevels` propriedade.
+### Como posso visualizar as alterações antes de salvar o PDF?
 
- Salve o documento em formato PDF usando o`Save` método do`Document` classe especificando o caminho e as opções de salvamento.
+Você pode usar visualizadores de PDF compatíveis com navegação de esboço para verificar como o esboço aparece. Alguns aplicativos fornecem um recurso de visualização para isso.
 
-#### P: Qual é a opção de plano em um documento PDF?
-R: A opção de estrutura de tópicos em um documento PDF permite criar uma estrutura hierárquica do conteúdo, o que facilita a navegação no documento e o acesso às diferentes seções. Isso permite que os usuários pulem rapidamente para partes específicas do documento clicando nas entradas do índice ou do esboço. A opção de estrutura de tópicos também aprimora a experiência de leitura, fornecendo uma visão geral da estrutura geral do documento.
+### É possível remover o contorno após salvar o PDF?
+
+Sim, você pode remover contornos usando um software de edição de PDF, mas isso não é possível diretamente com o Aspose.Words depois que o PDF é criado.
+
+### Que outras opções de salvamento de PDF posso configurar com Aspose.Words?
+
+Aspose.Words oferece várias opções, como definir o nível de conformidade do PDF, incorporar fontes e ajustar a qualidade da imagem.

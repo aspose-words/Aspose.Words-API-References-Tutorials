@@ -18,7 +18,7 @@ url: /ja/net/join-and-append-documents/different-page-setup/
 1.  Aspose.Words for .NET: Aspose.Words for .NETがインストールされていることを確認してください。[ここからダウンロード](https://releases.aspose.com/words/net/).
 2. .NET Framework: Aspose.Words for .NET をサポートする任意のバージョン。
 3. 開発環境: Visual Studio またはその他の .NET 互換 IDE。
-4. 基本的な C# の知識: 構文と構造を理解するための基本のみ。
+4. 基本的な C# の知識: 構文と構造を理解するための基本的な知識のみ。
 
 ## 名前空間のインポート
 

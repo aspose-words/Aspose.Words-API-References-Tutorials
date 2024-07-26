@@ -72,7 +72,7 @@ FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 
 `FindReplaceOptions` class, bulma ve değiştirme işlemlerinizi özelleştirmek için çeşitli seçenekler sunar.
 
-## Adım 5: Değiştirmeyi Gerçekleştirin
+## Adım 5: Değiştirme işlemini gerçekleştirin
 
 Şimdi değiştirme işlemini gerçekleştirelim. Sihir yapılan yer burasıdır!
 

@@ -42,7 +42,7 @@ using (Stream stream = new MemoryStream(bs))
 ```
 
 ## Βήμα 4: Αποθηκεύστε το έγγραφο
- Χρησιμοποιήστε το έγγραφο`Save` μέθοδος αποθήκευσης του εγγράφου σε αρχείο.
+ Χρησιμοποιήστε το έγγραφο`Save` μέθοδο αποθήκευσης του εγγράφου σε αρχείο.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");

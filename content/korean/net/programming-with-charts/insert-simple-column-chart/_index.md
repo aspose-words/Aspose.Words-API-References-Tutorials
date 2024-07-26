@@ -85,7 +85,7 @@ doc.Save(dataDir + "InsertSimpleColumnChart.docx");
 예, 색상, 글꼴, 스타일 등 차트의 다양한 측면을 프로그래밍 방식으로 사용자 정의할 수 있습니다.
 
 ### Aspose.Words for .NET은 복잡한 차트를 만드는 데 적합합니까?
-전적으로! Aspose.Words for .NET은 복잡한 차트를 생성하기 위한 다양한 차트 유형과 사용자 정의 옵션을 지원합니다.
+전적으로! Aspose.Words for .NET은 복잡한 차트를 생성하기 위한 광범위한 차트 유형과 사용자 정의 옵션을 지원합니다.
 
 ### .NET용 Aspose.Words는 PDF와 같은 다른 형식으로 차트 내보내기를 지원합니까?
 예, 차트가 포함된 문서를 PDF를 포함한 다양한 형식으로 원활하게 내보낼 수 있습니다.

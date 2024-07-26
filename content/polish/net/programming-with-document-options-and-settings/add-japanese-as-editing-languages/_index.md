@@ -17,7 +17,7 @@ Zanim zaczniemy, musisz przygotować kilka rzeczy:
 
 1. Visual Studio: Upewnij się, że masz zainstalowany program Visual Studio. Będziemy używać zintegrowanego środowiska programistycznego (IDE).
 2.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Jeśli jeszcze go nie masz, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
-3.  Przykładowy dokument: przygotuj przykładowy dokument, który chcesz edytować. Powinno być`.docx` format.
+3.  Przykładowy dokument: Przygotuj przykładowy dokument, który chcesz edytować. Powinno być`.docx` format.
 4. Podstawowa znajomość języka C#: Podstawowa znajomość programowania w języku C# pomoże Ci postępować zgodnie z przykładami.
 
 ## Importuj przestrzenie nazw

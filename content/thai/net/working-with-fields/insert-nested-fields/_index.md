@@ -2,7 +2,7 @@
 title: แทรกฟิลด์ที่ซ้อนกัน
 linktitle: แทรกฟิลด์ที่ซ้อนกัน
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีแทรกฟิลด์ที่ซ้อนกันลงในเอกสาร Word ของคุณด้วย Aspose.Words for .NET
+description: เรียนรู้วิธีแทรกฟิลด์ที่ซ้อนกันลงในเอกสาร Word ของคุณอย่างง่ายดายด้วย Aspose.Words for .NET
 type: docs
 weight: 10
 url: /th/net/working-with-fields/insert-nested-fields/

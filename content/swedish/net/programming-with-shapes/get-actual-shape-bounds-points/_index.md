@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Steg 2: Infoga en bildform
- Använd`InsertImage` metod för`DocumentBuilder`objekt för att infoga en bildform i dokumentet. Ange sökvägen till bildfilen som en parameter.
+ Använd`InsertImage` metod för`DocumentBuilder` objekt för att infoga en bildform i dokumentet. Ange sökvägen till bildfilen som en parameter.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

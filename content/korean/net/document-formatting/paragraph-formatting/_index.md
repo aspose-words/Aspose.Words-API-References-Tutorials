@@ -95,7 +95,7 @@ Word 문서에서 단락 서식을 지정하는 것이 어려운 작업일 필�
 ## FAQ
 
 ### .NET용 Aspose.Words란 무엇입니까?
-Aspose.Words for .NET은 개발자가 .NET을 사용하여 프로그래밍 방식으로 Word 문서를 생성, 편집 및 서식을 지정할 수 있는 강력한 문서 조작 API입니다.
+Aspose.Words for .NET은 개발자가 .NET을 사용하여 프로그래밍 방식으로 Word 문서를 생성, 편집 및 서식을 지정할 수 있도록 하는 강력한 문서 조작 API입니다.
 
 ### .NET용 Aspose.Words를 어떻게 설치하나요?
  .NET용 Aspose.Words는 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).

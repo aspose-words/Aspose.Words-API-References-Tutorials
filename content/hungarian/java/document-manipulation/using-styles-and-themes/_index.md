@@ -111,7 +111,7 @@ Ebben a kódban egyéni bekezdésstílust hozunk létre, és stíluselválasztó
 
 ## Következtetés
 
-Ez az útmutató az Aspose.Words for Java stílusaival és témáival való munka alapjait ismerteti. Megtanulta a stílusok lekérését és másolását, a témák kezelését, valamint a stíluselválasztók beszúrását, így tetszetős és jól formázott dokumentumokat hozhat létre. Kísérletezzen ezekkel a technikákkal, hogy igényei szerint testreszabhassa dokumentumait.
+Ez az útmutató az Aspose.Words for Java stílusaival és témáival való munka alapjait ismerteti. Megtanulta a stílusok lekérését és másolását, a témák kezelését, valamint a stíluselválasztók beillesztését, így tetszetős és jól formázott dokumentumokat hozhat létre. Kísérletezzen ezekkel a technikákkal, hogy igényei szerint testreszabhassa dokumentumait.
 
 
 ## GYIK

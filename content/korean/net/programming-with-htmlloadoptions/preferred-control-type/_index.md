@@ -2,93 +2,112 @@
 title: Word 문서에서 선호하는 컨트롤 유형
 linktitle: Word 문서에서 선호하는 컨트롤 유형
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 HTML 문서를 로드할 때 Word 문서에서 기본 컨트롤 유형을 지정하는 방법에 대한 단계별 가이드입니다.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에 콤보 상자 양식 필드를 삽입하는 방법을 알아보세요. 원활한 HTML 콘텐츠 통합을 위해 이 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-이 문서에서는 Aspose.Words for .NET에서 기본 컨트롤 유형 기능을 사용하는 방법에 대한 단계별 가이드를 제공합니다. 코드의 각 부분을 자세히 설명하겠습니다. 이 튜토리얼이 끝나면 HTML 문서를 로드할 때 선호하는 컨트롤 유형을 지정하는 방법을 이해할 수 있을 것입니다.
+## 소개
 
-시작하기 전에 프로젝트에 Aspose.Words for .NET 라이브러리를 설치하고 구성했는지 확인하세요. Aspose 웹사이트에서 라이브러리와 설치 지침을 찾을 수 있습니다.
+.NET용 Aspose.Words에서 HTML 로드 옵션을 사용하는 방법에 대한 흥미로운 튜토리얼을 살펴보겠습니다. 특히 Word 문서에 콤보 상자 양식 필드를 삽입할 때 선호하는 컨트롤 유형을 설정하는 데 중점을 두고 있습니다. 이 단계별 가이드는 Aspose.Words for .NET을 사용하여 Word 문서 내에서 HTML 콘텐츠를 효과적으로 조작하고 렌더링하는 방법을 이해하는 데 도움이 됩니다.
 
-## 1단계: HTML 코드 정의
+## 전제조건
 
- 시작하려면 문서로 로드하려는 HTML 코드를 정의해야 합니다. 이 예에서는`html` 옵션이 있는 선택기의 HTML 코드가 포함된 변수입니다.
+코드를 시작하기 전에 준비해야 할 몇 가지 사항이 있습니다.
+
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[웹사이트](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio와 같은 개발 환경이 설정되어 있어야 합니다.
+3. C#의 기본 지식: 튜토리얼을 진행하려면 C# 프로그래밍에 대한 기본적인 이해가 필요합니다.
+4. HTML 콘텐츠: 이 예에서는 HTML 콘텐츠를 다룰 것이므로 HTML에 대한 기본 지식이 있으면 도움이 됩니다.
+
+## 네임스페이스 가져오기
+
+먼저 시작하는 데 필요한 네임스페이스를 가져오겠습니다.
 
 ```csharp
-const string html=@"
-<html>
-<select name='ComboBox' size='1'>
-<option value='val1'>item1</option>
-<option value='val2'></option>
-</select>
-</html>
+using System;
+using System.IO;
+using System.Text;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+이제 명확성과 이해를 보장하기 위해 예제를 여러 단계로 나누어 보겠습니다.
+
+## 1단계: HTML 콘텐츠 설정
+
+먼저 Word 문서에 삽입하려는 HTML 콘텐츠를 정의해야 합니다. 우리가 사용할 HTML 스니펫은 다음과 같습니다.
+
+```csharp
+const string html = @"
+    <html>
+        <select name='ComboBox' size='1'>
+            <option value='val1'>item1</option>
+            <option value='val2'></option>                        
+        </select>
+    </html>
 ";
 ```
 
-## 2단계: HTML 로딩 옵션 설정
+이 HTML에는 두 가지 옵션이 있는 간단한 콤보 상자가 포함되어 있습니다. 이 HTML을 Word 문서에 로드하고 렌더링 방법을 지정하겠습니다.
 
- 다음으로 우리는`HtmlLoadOptions` 객체를 설정하고`PreferredControlType`재산`HtmlControlType.StructuredDocumentTag`. 이는 Aspose.Words가 로드할 때 HTML을 나타내기 위해 StructuredDocumentTags를 사용하도록 지시합니다.
+## 2단계: 문서 디렉터리 정의
+
+다음으로 Word 문서가 저장될 디렉터리를 지정합니다. 이는 파일을 정리하고 경로 관리를 깔끔하게 유지하는 데 도움이 됩니다.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` Word 문서를 저장하려는 실제 경로를 사용하십시오.
+
+## 3단계: HTML 로드 옵션 구성
+
+ 여기서는 특히 HTML 로드 옵션에 중점을 두고 구성합니다.`PreferredControlType`재산. 이는 Word 문서에서 콤보 상자를 렌더링하는 방법을 결정합니다.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## 3단계: 문서 로드 및 저장
+ 설정으로`PreferredControlType` 에게`HtmlControlType.StructuredDocumentTag`, 콤보 상자가 Word 문서에서 구조화된 문서 태그(SDT)로 렌더링되는지 확인합니다.
 
- 우리는`Document` 앞에서 정의한 로드 옵션을 사용하여 메모리 스트림에서 HTML 코드를 로드하는 클래스입니다. 그런 다음 지정된 디렉토리에 문서를 저장합니다.`.docx`파일 형식.
+## 4단계: 문서에 HTML 콘텐츠 로드
+
+구성된 로드 옵션을 사용하여 HTML 콘텐츠를 새 Word 문서에 로드합니다.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
+```
+
+여기서는 HTML 문자열을 바이트 배열로 변환하고 메모리 스트림을 사용하여 문서에 로드합니다. 이렇게 하면 HTML 콘텐츠가 Aspose.Words에 의해 올바르게 해석되고 렌더링됩니다.
+
+## 5단계: 문서 저장
+
+마지막으로 문서를 지정된 디렉터리에 DOCX 형식으로 저장합니다.
+
+```csharp
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### .NET용 Aspose.Words를 사용하여 선호하는 컨트롤 유형에 대한 예제 소스 코드
-
-```csharp
-	
-	const string html = @"
-		<html>
-			<select name='ComboBox' size='1'>
-				<option value='val1'>item1</option>
-				<option value='val2'></option>                        
-			</select>
-		</html>
-	";
-	// 문서 디렉터리의 경로입니다.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
-
-	Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
-
-	doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
-
-```
-
-그게 다야 ! .NET용 Aspose.Words를 사용하여 HTML 문서를 로드할 때 기본 컨트롤 유형을 성공적으로 지정했습니다.
+이렇게 하면 렌더링된 콤보 상자 컨트롤이 포함된 Word 문서가 지정된 위치에 저장됩니다.
 
 ## 결론
 
- 이 단계별 가이드를 따라 HTML 문서를 로드할 때 Aspose.Words for .NET의 "선호 컨트롤 유형" 기능을 사용하여 원하는 컨트롤 유형을 지정하는 방법을 배웠습니다. 설정`PreferredControlType`재산`HtmlControlType.StructuredDocumentTag` Aspose.Words는 HTML 콘텐츠의 더 나은 표현과 처리를 위해 SDT(StructuredDocumentTags)를 사용할 수 있습니다. 특정 요구 사항에 맞게 다른 제어 유형도 탐색할 수 있습니다. 이 기능을 사용하면 Aspose.Words를 사용하여 C# 애플리케이션에서 HTML 문서를 정확하고 효율적으로 처리하는 데 도움이 됩니다.
+그리고 거기에 있습니다! HTML 로드 옵션을 활용하여 .NET용 Aspose.Words를 사용하여 콤보 상자 양식 필드를 Word 문서에 성공적으로 삽입했습니다. 이 단계별 가이드는 프로세스를 이해하고 이를 프로젝트에 적용하는 데 도움이 됩니다. 문서 생성을 자동화하든 HTML 콘텐츠를 조작하든 Aspose.Words for .NET은 목표를 달성할 수 있는 강력한 도구를 제공합니다.
 
-### Word 문서에서 선호하는 컨트롤 유형에 대한 FAQ
+## FAQ
 
-#### Q: Aspose.Words for .NET의 "선호 컨트롤 유형" 기능은 무엇입니까?
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 편집, 변환 및 렌더링할 수 있는 강력한 문서 조작 라이브러리입니다.
 
-A: "기본 컨트롤 유형" 기능을 사용하면 HTML 문서를 로드할 때 HTML 요소를 나타내기 위해 기본 컨트롤 유형을 지정할 수 있습니다. HTML 콘텐츠를 더 잘 표현하고 처리하기 위해 적절한 컨트롤 유형을 선택하는 데 도움이 됩니다.
+### .NET용 Aspose.Words에서 다른 HTML 컨트롤 유형을 사용할 수 있나요?
+예, Aspose.Words for .NET은 다양한 HTML 컨트롤 유형을 지원합니다. Word 문서에서 다양한 컨트롤이 렌더링되는 방식을 사용자 지정할 수 있습니다.
 
-#### Q: HTML 문서를 로드할 때 기본 컨트롤 유형을 어떻게 설정합니까?
+### .NET용 Aspose.Words에서 복잡한 HTML 콘텐츠를 어떻게 처리합니까?
+ Aspose.Words for .NET은 복잡한 요소를 포함하여 HTML에 대한 포괄적인 지원을 제공합니다. 구성했는지 확인하세요.`HtmlLoadOptions`특정 HTML 콘텐츠를 적절하게 처리합니다.
 
- A: 선호하는 컨트롤 유형을 설정하려면`HtmlLoadOptions` 개체를 설정하고`PreferredControlType` 원하는 재산에`HtmlControlType` . 제공된 예에서는`HtmlControlType.StructuredDocumentTag` 사용.
+### 더 많은 예제와 문서는 어디에서 찾을 수 있나요?
+ 자세한 문서와 예제는 다음에서 찾을 수 있습니다.[.NET 문서 페이지용 Aspose.Words](https://reference.aspose.com/words/net/).
 
-#### Q: 기본 컨트롤 유형으로 SDT(StructuredDocumentTags)를 사용하는 것의 의미는 무엇입니까?
-
-A: SDT(StructuredDocumentTags)는 Word 문서의 복잡한 콘텐츠와 컨트롤을 나타내는 데 사용할 수 있는 XML 기반 요소입니다. SDT를 기본 컨트롤 유형으로 사용하면 HTML 콘텐츠의 호환성과 표현이 향상될 수 있습니다.
-
-#### Q: Aspose.Words가 HTML 문서를 로드할 때 기본 컨트롤 유형을 사용하도록 하려면 어떻게 해야 합니까?
-
- A: 설정함으로써`PreferredControlType`재산`HtmlControlType.StructuredDocumentTag`예제 소스 코드에 표시된 것처럼 Aspose.Words는 문서를 로드할 때 SDT를 사용하여 HTML 요소를 나타냅니다.
-
-#### Q: 다른 컨트롤 유형을 기본 옵션으로 사용할 수 있나요?
-
- A: 네, 그 외에는`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET은 다음과 같은 다른 컨트롤 유형을 지원합니다.`HtmlControlType.ContentControl`그리고`HtmlControlType.CustomXmlMarkup`.
+### .NET용 Aspose.Words에 대한 무료 평가판이 있습니까?
+ 예, 다음에서 무료 평가판을 다운로드할 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).

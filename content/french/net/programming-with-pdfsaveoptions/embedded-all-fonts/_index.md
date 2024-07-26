@@ -2,99 +2,95 @@
 title: Incorporer des polices dans un document PDF
 linktitle: Incorporer des polices dans un document PDF
 second_title: API de traitement de documents Aspose.Words
-description: Guide étape par étape pour intégrer des polices dans un PDF à l’aide d’Aspose.Words for .NET.
+description: Intégrez facilement des polices dans des documents PDF à l'aide d'Aspose.Words for .NET grâce à ce guide détaillé étape par étape. Assurez une apparence cohérente sur tous les appareils.
 type: docs
 weight: 10
 url: /fr/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
+## Introduction
 
-Cet article fournit un guide étape par étape sur la façon d'utiliser la fonctionnalité d'incorporation de polices dans un document PDF d'Aspose.Words pour .NET. Nous allons parcourir l'extrait de code et expliquer chaque partie en détail. À la fin de ce didacticiel, vous serez en mesure de comprendre comment intégrer toutes les polices dans un document et générer un PDF avec les polices intégrées à l'aide d'Aspose.Words pour .NET.
+Salut les passionnés de technologie ! Vous êtes-vous déjà retrouvé dans le pétrin en essayant d'incorporer des polices dans un document PDF à l'aide d'Aspose.Words pour .NET ? Eh bien, vous êtes au bon endroit ! Dans ce didacticiel, nous approfondissons les détails de l'intégration de polices dans vos PDF. Que vous soyez débutant ou professionnel chevronné, ce guide vous guidera à travers chaque étape de manière simple et engageante. À la fin, vous saurez comment garantir que vos PDF conservent leur apparence et leur convivialité, quel que soit l'endroit où ils sont consultés. Alors commençons, d'accord ?
 
-Avant de commencer, assurez-vous que la bibliothèque Aspose.Words for .NET est installée et configurée dans votre projet. Vous pouvez trouver la bibliothèque et les instructions d'installation sur le site Web d'Aspose.
+## Conditions préalables
 
-## Étape 1 : Définir le chemin du répertoire du document
+Avant de passer au guide étape par étape, assurons-nous que vous disposez de tout ce dont vous avez besoin. Voici une liste de contrôle rapide :
 
- Pour commencer, vous devez définir le chemin d’accès au répertoire où se trouvent vos documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents.
+1. Aspose.Words pour .NET : assurez-vous que la dernière version est installée. Vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : Visual Studio ou tout environnement de développement .NET compatible.
+3. Connaissance de base de C# : Une compréhension de base de C# vous aidera à suivre.
+4. Exemple de document Word : disposez d'un exemple de document Word (`Rendering.docx`) prêt dans votre répertoire de documents.
+
+ Si vous n'avez pas encore Aspose.Words pour .NET, profitez d'un essai gratuit[ici](https://releases.aspose.com/) ou achetez-le[ici](https://purchase.aspose.com/buy) . Besoin d'un permis temporaire ? Vous pouvez en obtenir un[ici](https://purchase.aspose.com/temporary-license/).
+
+## Importer des espaces de noms
+
+Tout d’abord, importons les espaces de noms nécessaires. Cette étape est cruciale car elle met en place l’environnement d’utilisation des fonctionnalités d’Aspose.Words.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Maintenant, décomposons le processus en étapes faciles à suivre. Chaque étape vous guidera à travers une partie spécifique de l'intégration des polices dans votre document PDF à l'aide d'Aspose.Words for .NET.
+
+## Étape 1 : Configurez votre répertoire de documents
+
+Avant de plonger dans le code, vous devez configurer votre répertoire de documents. C'est ici que votre exemple de document Word (`Rendering.docx`) et le PDF de sortie résidera.
+
+```csharp
+// Le chemin d'accès au répertoire des documents.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Étape 2 : Charger le document
+ Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre répertoire de documents. C'est ici que toute la magie va opérer !
 
-Ensuite, nous devons charger le document que nous voulons traiter. Dans cet exemple, nous supposons que le document s'appelle « Rendering.docx » et se trouve dans le répertoire de documents spécifié.
+## Étape 2 : Chargez votre document Word
+
+ Ensuite, vous chargerez votre document Word dans Aspose.Words`Document` objet. C'est le document avec lequel vous allez travailler.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
+ Dans cette ligne, nous créons un nouveau`Document` objet et charger le`Rendering.docx` fichier de notre répertoire de documents.
+
 ## Étape 3 : Configurer les options d'enregistrement PDF
 
- Pour intégrer toutes les polices dans le PDF résultant, nous devons configurer le`PdfSaveOptions` objet avec le`EmbedFullFonts` propriété définie sur`true`. Cela garantit que toutes les polices utilisées dans le document sont incluses dans le fichier PDF généré.
+ Il est maintenant temps de configurer les options d'enregistrement PDF. Plus précisément, nous définirons le`EmbedFullFonts`propriété à`true` pour garantir que toutes les polices utilisées dans le document sont intégrées dans le PDF.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
 ```
 
-## Étape 4 : Enregistrez le document au format PDF avec les polices intégrées
+ Cette ligne crée un nouveau`PdfSaveOptions` objet et définit le`EmbedFullFonts`propriété à`true`. Cela garantit que le PDF généré inclura toutes les polices utilisées dans le document.
 
- Enfin, nous pouvons enregistrer le document sous forme de fichier PDF avec les polices intégrées. Spécifiez le nom du fichier de sortie et le`saveOptions` objet que nous avons configuré à l’étape précédente.
+## Étape 4 : Enregistrez le document au format PDF
+
+Enfin, vous enregistrerez le document Word au format PDF avec les options d'enregistrement spécifiées. Cette étape convertit le document et intègre les polices.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
 ```
 
-C'est ça! Vous avez intégré avec succès toutes les polices dans un document et généré un PDF avec les polices intégrées à l'aide d'Aspose.Words pour .NET.
-
-### Exemple de code source pour toutes les polices intégrées à l'aide d'Aspose.Words pour .NET
-
-```csharp
-
-	// Le chemin d'accès au répertoire des documents.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Le PDF de sortie sera intégré à toutes les polices trouvées dans le document.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptions);
-  
-```
+Dans cette ligne, nous enregistrons le document au format PDF dans le répertoire des documents, en intégrant toutes les polices utilisées dans le document Word.
 
 ## Conclusion
 
-Dans ce didacticiel, nous avons appris à intégrer toutes les polices dans un document PDF à l'aide d'Aspose.Words for .NET. L'intégration de polices garantit que les polices spécifiées dans le document seront disponibles et affichées correctement, même si elles ne sont pas installées sur le système sur lequel le PDF est ouvert. Cela garantit une apparence cohérente et un formatage précis des documents sur différents appareils et plates-formes. N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words for .NET pour optimiser la génération de vos documents PDF avec des polices intégrées.
+Et voila! Vous avez intégré avec succès des polices dans un document PDF à l'aide d'Aspose.Words for .NET. Grâce à ces connaissances, vous pouvez garantir que vos PDF conservent leur apparence souhaitée, quel que soit l'endroit où ils sont consultés. N'est-ce pas cool ? Maintenant, allez-y et essayez avec vos propres documents.
 
-### Questions fréquemment posées
+## FAQ
 
-#### Q : Qu'est-ce que l'intégration de polices dans un document PDF et pourquoi est-ce important ?
-R : L'intégration de polices dans un document PDF consiste à inclure toutes les polices utilisées dans le document dans le fichier PDF lui-même. Cela garantit que les polices spécifiées dans le document seront disponibles et affichées correctement, même si les polices ne sont pas installées sur le système sur lequel le PDF est ouvert. L'intégration de polices est importante pour préserver l'apparence et le formatage du document, en garantissant que les polices sont rendues de manière cohérente sur différents appareils et plates-formes.
+### Pourquoi devrais-je intégrer des polices dans un PDF ?
+L'intégration de polices garantit que votre document apparaît de la même manière sur tous les appareils, quelles que soient les polices installées sur le système de la visionneuse.
 
-#### Q : Comment puis-je intégrer toutes les polices dans un document PDF à l'aide d'Aspose.Words for .NET ?
-R : Pour intégrer toutes les polices dans un document PDF à l'aide d'Aspose.Words for .NET, procédez comme suit :
+### Puis-je choisir des polices spécifiques à intégrer ?
+ Oui, vous pouvez personnaliser les polices à intégrer en utilisant différents`PdfSaveOptions` propriétés.
 
- Définissez le chemin du répertoire du document en remplaçant`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire de documents.
+### L’intégration de polices augmente-t-elle la taille du fichier ?
+Oui, l’intégration de polices peut augmenter la taille du fichier PDF, mais elle garantit une apparence cohérente sur différents appareils.
 
- Chargez le document que vous souhaitez traiter à l'aide du`Document` classe et le chemin du document.
+### Aspose.Words pour .NET est-il gratuit ?
+Aspose.Words for .NET propose un essai gratuit, mais pour bénéficier de toutes les fonctionnalités, vous devez acheter une licence.
 
- Configurez les options d'enregistrement PDF en créant une instance du`PdfSaveOptions` classe et définir le`EmbedFullFonts`propriété à`true`. Cela garantit que toutes les polices utilisées dans le document seront intégrées dans le fichier PDF généré.
-
- Enregistrez le document au format PDF avec les polices intégrées à l'aide du`Save` méthode du`Document`objet, en spécifiant le nom du fichier de sortie et les options de sauvegarde configurées précédemment.
-
-#### Q : Pourquoi est-il important d'intégrer toutes les polices dans un document PDF ?
-R : L'intégration de toutes les polices dans un document PDF est importante pour garantir que le document s'affichera correctement, même si les polices spécifiées ne sont pas disponibles sur le système sur lequel le PDF est ouvert. Cela permet de préserver l'apparence, le formatage et la lisibilité du document, garantissant que les polices utilisées sont rendues de manière cohérente sur différents appareils et plates-formes.
-
-#### Q : Quels sont les avantages de l’intégration de polices dans un document PDF ?
-R : Les avantages de l'intégration de polices dans un document PDF sont :
-
-Garantissez une apparence cohérente du document : les polices intégrées garantissent que le document s'affichera exactement tel qu'il a été conçu, quelles que soient les polices disponibles sur le système.
-
-Préservation du formatage : les polices intégrées préservent le formatage et la mise en page des documents, évitant ainsi les substitutions de polices et les variations d'apparence.
-
-Lisibilité améliorée : l'intégration de polices garantit une meilleure lisibilité du document, car les polices spécifiées sont utilisées pour afficher le texte, même si les polices d'origine ne sont pas disponibles.
-
-#### Q : L'intégration de toutes les polices augmente-t-elle la taille du fichier PDF ?
-R : Oui, l'intégration de toutes les polices dans un document PDF peut augmenter la taille du fichier PDF généré, car les données de police doivent être incluses dans le fichier. Cependant, cette augmentation de taille est généralement négligeable pour la plupart des documents, et les avantages de l’intégration des polices compensent souvent cette légère augmentation de taille.
-
-#### Q : Puis-je sélectionner des polices spécifiques à intégrer dans un document PDF ?
- R : Oui, avec Aspose.Words pour .NET, vous pouvez sélectionner des polices spécifiques à intégrer dans un document PDF à l'aide des options de configuration avancées. Par exemple, vous pouvez utiliser le`SubsetFonts` propriété du`PdfSaveOptions` pour spécifier les polices à inclure, ou utilisez des options supplémentaires pour définir des filtres de sélection de polices personnalisés.
+### Puis-je intégrer des polices dans d’autres formats de document à l’aide d’Aspose.Words for .NET ?
+Oui, Aspose.Words for .NET prend en charge différents formats de documents et vous pouvez intégrer des polices dans bon nombre d'entre eux.

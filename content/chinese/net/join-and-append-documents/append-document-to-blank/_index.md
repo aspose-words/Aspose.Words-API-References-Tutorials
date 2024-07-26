@@ -37,7 +37,7 @@ using Aspose.Words;
 
 1. 打开 Visual Studio 并选择文件 > 新建 > 项目。
 2. 选择控制台应用程序（.NET Core）或控制台应用程序（.NET Framework）。
-3. 命名您的项目并单击“创建”。
+3. 为您的项目命名并单击“创建”。
 
 ### 安装 Aspose.Words
 

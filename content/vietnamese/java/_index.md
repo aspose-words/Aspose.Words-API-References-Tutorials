@@ -30,7 +30,7 @@ Tìm hiểu API xử lý bảng mạnh mẽ dành cho nhà phát triển Java b�
 ### [Tạo kiểu tài liệu](./document-styling/)
 Nắm vững cách tạo kiểu tài liệu với các hướng dẫn Aspose.Words for Java. Tìm hiểu các kỹ thuật định dạng nâng cao để tạo ra các tài liệu hiệu quả và hấp dẫn về mặt hình ảnh. 
 ### [Hợp nhất tài liệu](./document-merging/)
-Khai phá tiềm năng hợp nhất tài liệu trong Java bằng Aspose.Words! Tìm hiểu cách hợp nhất tài liệu, xử lý văn bản và xử lý tài liệu hiệu quả với các hướng dẫn chi tiết. 
+Khám phá tiềm năng hợp nhất tài liệu trong Java bằng Aspose.Words! Tìm hiểu cách hợp nhất tài liệu, xử lý văn bản và xử lý tài liệu hiệu quả với các hướng dẫn chi tiết. 
 ### [Chuyển đổi tài liệu](./document-converting/)
 Hợp lý hóa việc chuyển đổi tài liệu trong Java với Aspose.Words! Tìm hiểu hướng dẫn toàn diện về chuyển đổi tài liệu, xử lý văn bản và xử lý tài liệu.
 ### [In tài liệu](./document-printing/)

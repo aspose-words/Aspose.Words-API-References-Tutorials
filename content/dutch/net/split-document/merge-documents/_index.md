@@ -78,7 +78,7 @@ Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx",
 
 ## Stap 5: Een documentinstantie maken op basis van samengevoegde documenten
 
-Soms wilt u mogelijk verder met het samengevoegde document werken voordat u het opslaat. U kunt een`Document` exemplaar uit samengevoegde documenten:
+Soms wilt u misschien verder met het samengevoegde document werken voordat u het opslaat. U kunt een`Document` exemplaar uit samengevoegde documenten:
 
 ```csharp
 Document doc = Merger.Merge(new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, MergeFormatMode.MergeFormatting);

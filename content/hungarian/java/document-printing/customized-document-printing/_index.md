@@ -26,7 +26,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek
 
 ## Üres dokumentum létrehozása
 
-Kezdjük egy üres dokumentum létrehozásával az Aspose.Words for Java segítségével:
+Kezdjük egy üres dokumentum létrehozásával az Aspose.Words for Java használatával:
 
 ```java
 //Java kód egy üres dokumentum létrehozásához

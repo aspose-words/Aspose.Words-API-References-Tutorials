@@ -51,7 +51,7 @@ Het project opzetten
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Met deze regel wordt de map ingesteld waarin uw documenten worden opgeslagen. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
+ Met deze regel wordt de map ingesteld waarin uw documenten worden opgeslagen. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map.
 
 ## Stap 2: Initialiseer het document en DocumentBuilder
 

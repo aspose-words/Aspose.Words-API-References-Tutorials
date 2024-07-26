@@ -2,94 +2,87 @@
 title: 透過停用嵌入字體來減少 PDF 大小
 linktitle: 透過停用嵌入字體來減少 PDF 大小
 second_title: Aspose.Words 文件處理 API
-description: 了解在使用 Aspose.Words for .NET 將文件轉換為 PDF 時如何透過停用 Windows 字體嵌入來減少 PDF 大小。
+description: 透過使用 Aspose.Words for .NET 停用嵌入字體來減少 PDF 大小。請按照我們的逐步指南來優化您的文檔，以實現高效存儲和共享。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
+## 介紹
 
-在本教學中，我們將引導您完成使用 Aspose.Words for .NET 在 PDF 文件中停用 Windows 字體嵌入來減少 PDF 大小的步驟。透過停用字體嵌入，您可以減少生成的 PDF 文件的大小。請依照以下步驟操作：
+減小 PDF 檔案的大小對於高效儲存和快速共享至關重要。一種有效的方法是停用嵌入字體，尤其是當標準字體已在大多數系統上可用時。在本教學中，我們將探討如何使用 Aspose.Words for .NET 停用嵌入字體來減少 PDF 大小。我們將逐步完成每個步驟，以確保您可以在自己的專案中輕鬆實現這一點。
 
-## 第 1 步：載入文檔
+## 先決條件
 
-首先上傳您想要轉換為 PDF 的文件：
+在深入研究程式碼之前，請確保您具備以下條件：
+
+-  Aspose.Words for .NET：如果您還沒有安裝它，請從[下載連結](https://releases.aspose.com/words/net/).
+- .NET 開發環境：Visual Studio 是個受歡迎的選擇。
+- 範例 Word 文件：準備好要轉換為 PDF 的 DOCX 文件。
+
+## 導入命名空間
+
+首先，請確保您已將必要的命名空間匯入到您的專案中。這允許您存取我們的任務所需的類別和方法。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+讓我們將這個過程分解為簡單、易於管理的步驟。每個步驟都將引導您完成任務，確保您了解每個點發生的情況。
+
+## 第 1 步：初始化您的文檔
+
+首先，我們需要載入要轉換為PDF的Word文件。這就是您的旅程開始的地方。
+
+```csharp
+//文檔目錄的路徑。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-請務必指定文件的正確路徑。
+這裡，`dataDir`是文檔所在目錄的佔位符。代替`"YOUR DOCUMENT DIRECTORY"`與實際路徑。
 
-## 第 2 步：設定 PDF 儲存選項
+## 步驟 2：設定 PDF 儲存選項
 
-建立 PdfSaveOptions 類別的實例並指定如何嵌入字型：
+接下來，我們將設定 PDF 儲存選項。這是我們指定不想嵌入標準 Windows 字型的地方。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
+//儲存輸出的 PDF 時不會嵌入標準 Windows 字型。
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone
+};
 ```
 
-此選項可讓您在生成的 PDF 檔案中停用 Windows 字體的整合。
+透過設定`FontEmbeddingMode`到`EmbedNone`，我們指示 Aspose.Words 不要在 PDF 中包含這些字體，從而減少檔案大小。
 
-## 步驟 3：將文件轉換為 PDF
+## 步驟 3：將文件另存為 PDF
 
-使用`Save`將文件轉換為 PDF 的方法，指定轉換選項：
+最後，我們使用配置的儲存選項將文件儲存為 PDF。這是您的 DOCX 轉換為緊湊 PDF 的關鍵時刻。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-確保指定正確的路徑來儲存轉換後的 PDF。
-
-### 使用 Aspose.Words for .NET 停用嵌入 Windows 字體的範例原始碼
-
-以下是使用 Aspose.Words for .NET 在 PDF 文件中停用嵌入 Windows 字體的完整原始碼：
-
-```csharp
-
-	//文檔目錄的路徑。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	//儲存輸出的 PDF 時不會嵌入標準 Windows 字型。
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
-
-```
-透過執行下列步驟，您可以使用 Aspose.Words for .NET 輕鬆停用在 PDF 文件中嵌入 Windows 字型。
-
+代替`"YOUR DOCUMENT DIRECTORY"`再次使用您的實際目錄路徑。輸出 PDF 現在將保存在指定目錄中，而不嵌入標準字體。
 
 ## 結論
 
-在本教學中，我們學習如何透過使用 Aspose.Words for .NET 停用嵌入 Windows 字體來減少 PDF 檔案的大小。透過停用字體嵌入，您可以減少生成的 PDF 文件的大小，從而更輕鬆地儲存、共享和傳輸文件。但是，請務必注意，停用 Windows 字型嵌入可能會導致最終 PDF 文件的外觀和格式變更。使用此功能時請務必考慮這些後果。請隨意探索 Aspose.Words for .NET 的更多功能來優化 PDF 檔案的產生。
+透過執行以下步驟，您可以大幅減少 PDF 檔案的大小。停用嵌入字體是一種簡單而有效的方法，可讓您的文件更簡潔、更易於分享。 Aspose.Words for .NET 讓這個過程變得無縫，確保您可以以最少的努力優化您的檔案。
 
-### 經常問的問題
+## 常見問題解答
 
-#### Q：什麼是在 PDF 文件中禁用 Windows 字體嵌入？
-答：在 PDF 文件中停用 Windows 字型嵌入是防止 Windows 字型包含在產生的 PDF 文件中的過程。這可以透過刪除嵌入的 Windows 字型資料來減少 PDF 檔案的大小。這對於減小 PDF 檔案的大小非常重要，使它們更容易儲存、共享和更快地傳輸。
+### 為什麼要停用 PDF 中的嵌入字體？
+停用嵌入字體可以顯著減小 PDF 的檔案大小，從而提高儲存效率並加快共享速度。
 
-#### Q：如何使用 Aspose.Words for .NET 在 PDF 文件中停用 Windows 字型嵌入？
-答：若要使用 Aspose.Words for .NET 在 PDF 文件中停用嵌入 Windows 字體，請依照下列步驟操作：
+### 如果沒有嵌入字體，PDF 是否仍能正確顯示？
+是的，只要字體是標準的並且在查看 PDF 的系統上可用，它就會正確顯示。
 
-使用以下命令載入要轉換為 PDF 的文檔`Document`類和文檔路徑。
+### 我可以選擇性地在 PDF 中僅嵌入某些字體嗎？
+是的，Aspose.Words for .NET 可讓您自訂嵌入的字體，從而為縮小檔案大小提供了靈活性。
 
-建立一個實例`PdfSaveOptions`類別並設定`FontEmbeddingMode`財產給`PdfFontEmbeddingMode.EmbedNone`。這會停用在產生的 PDF 檔案中嵌入 Windows 字型。
+### 我是否需要 Aspose.Words for .NET 才能停用 PDF 中的嵌入字體？
+是的，Aspose.Words for .NET 提供了在 PDF 中配置字體嵌入選項所需的功能。
 
-使用`Save`的方法`Document`將文件轉換為 PDF 的對象，指定先前配置的轉換選項。
-
-#### Q：在 PDF 文件中停用 Windows 字型嵌入有什麼好處？
-答：在 PDF 文件中停用 Windows 字型嵌入的好處是：
-
-減小 PDF 檔案大小：透過停用 Windows 字型嵌入，嵌入的 Windows 字型資料將會被刪除，從而減少產生的 PDF 檔案的大小。
-
-更容易儲存：較小的 PDF 檔案更容易儲存、儲存和傳輸。
-
-更快的共享和傳輸：較小的 PDF 文件可以更快地共享和傳輸，從而節省時間和資源。
-
-#### Q：在 PDF 文件中停用 Windows 字型嵌入會產生什麼後果？
-答：在 PDF 文件中停用 Windows 字型嵌入可能會導致以下後果：
-
-外觀和格式遺失：如果文件中指定的 Windows 字體在開啟 PDF 的系統上不可用，則將使用替代字體，這可能會導致外觀和格式不正確。形狀與預期不同。
-
-可讀性問題：如果使用的替代字體不如原始字體可讀，可能會影響 PDF 文件中文字的可讀性。
+### 如果遇到問題，我該如何獲得支援？
+您可以訪問[支援論壇](https://forum.aspose.com/c/words/8)尋求有關您遇到的任何問題的協助。

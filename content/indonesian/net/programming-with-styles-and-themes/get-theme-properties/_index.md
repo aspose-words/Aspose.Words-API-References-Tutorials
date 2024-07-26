@@ -20,7 +20,7 @@ Pastikan Anda telah menyiapkan lingkungan pengembangan Anda dengan Aspose.Words 
 Document doc = new Document();
 ```
 
-Pada langkah ini, kami membuat yang baru`Document` obyek.
+ Pada langkah ini, kami membuat yang baru`Document` obyek.
 
 ## Langkah 3: Dapatkan properti tema
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- Pada langkah ini, kami menggunakan`Theme` properti dari`Document` objek untuk mendapatkan`Theme` obyek. Kemudian kita dapat mengakses berbagai properti tema seperti font utama (`MajorFonts`), font sekunder (`MinorFonts`) dan warna aksen (`Colors`).
+ Pada langkah ini, kami menggunakan`Theme` properti dari`Document`objek untuk mendapatkan`Theme` obyek. Kemudian kita dapat mengakses berbagai properti tema seperti font utama (`MajorFonts`), font sekunder (`MinorFonts`) dan warna aksen (`Colors`).
 
 ## Langkah 4: Tampilkan properti tema
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Kesimpulan
 
- Dalam tutorial ini, kita menjelajahi fungsionalitas mendapatkan properti tema dokumen dengan Aspose.Words untuk .NET. Menggunakan`Theme`objek dan properti terkaitnya, kami dapat mengakses informasi tentang font primer dan sekunder serta warna aksen yang digunakan dalam tema dokumen.
+ Dalam tutorial ini, kita menjelajahi fungsionalitas mendapatkan properti tema dokumen dengan Aspose.Words untuk .NET. Menggunakan`Theme` objek dan properti terkaitnya, kami dapat mengakses informasi tentang font primer dan sekunder serta warna aksen yang digunakan dalam tema dokumen.
 
 Kemampuan untuk mendapatkan properti tema memungkinkan Anda menganalisis dan menyesuaikan gaya dan tata letak dokumen Anda. Anda dapat menggunakan informasi ini untuk menerapkan perubahan yang ditargetkan, membuat laporan, atau melakukan analisis penggunaan font dan warna di dokumen Anda.
 
@@ -68,11 +68,11 @@ Jangan ragu untuk menjelajahi lebih banyak fitur Aspose.Words untuk .NET untuk m
 
 #### Bagaimana cara mengakses properti tema dokumen menggunakan Aspose.Words untuk .NET?
 
- Untuk mengakses properti tema dokumen, Anda dapat menggunakan`Theme` properti dari`Document` obyek. Ini mengembalikan a`Theme`objek yang berisi informasi tentang font primer dan sekunder, serta warna aksen yang digunakan dalam tema dokumen.
+ Untuk mengakses properti tema dokumen, Anda dapat menggunakan`Theme` properti dari`Document` obyek. Ini mengembalikan a`Theme` objek yang berisi informasi tentang font primer dan sekunder, serta warna aksen yang digunakan dalam tema dokumen.
 
 #### Bagaimana cara mengambil font primer dan sekunder dari tema dokumen?
 
- Anda dapat mengakses font primer dan sekunder dari tema dokumen dengan menggunakan`MajorFonts`Dan`MinorFonts` properti dari`Theme` objek, masing-masing. Properti ini menyediakan akses ke nama font yang digunakan dalam tema dokumen untuk bahasa atau wilayah berbeda.
+Anda dapat mengakses font primer dan sekunder dari tema dokumen dengan menggunakan`MajorFonts`Dan`MinorFonts` properti dari`Theme` objek, masing-masing. Properti ini menyediakan akses ke nama font yang digunakan dalam tema dokumen untuk bahasa atau wilayah berbeda.
 
 #### Bisakah saya menggunakan warna aksen dalam tema dokumen?
 

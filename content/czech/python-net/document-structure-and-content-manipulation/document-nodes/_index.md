@@ -1,6 +1,6 @@
 ---
-title: Pochopení a navigace v uzlech dokumentu
-linktitle: Pochopení a navigace v uzlech dokumentu
+title: Pochopení uzlů dokumentu a navigace
+linktitle: Pochopení uzlů dokumentu a navigace
 second_title: Aspose.Words Python Document Management API
 description: Naučte se manipulovat s dokumenty aplikace Word pomocí Aspose.Words pro Python. Tento podrobný průvodce pokrývá načítání, formátování, tabulky, obrázky a další. Zvyšte své dovednosti v oblasti zpracování dokumentů ještě dnes!
 type: docs

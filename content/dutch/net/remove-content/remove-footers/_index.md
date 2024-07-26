@@ -2,7 +2,7 @@
 title: Voetteksten verwijderen uit Word-document
 linktitle: Voetteksten verwijderen uit Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u eenvoudig voetteksten in Word-documenten kunt verwijderen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor een efficiënte verwerking van DOCX-bestanden.
+description: Leer hoe u eenvoudig voetteksten in Word-documenten kunt verwijderen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor een efficiënte omgang met DOCX-bestanden.
 type: docs
 weight: 10
 url: /nl/net/remove-content/remove-footers/
@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Primaire voettekst is de voettekst die wordt gebruikt voor oneven pagina's.
+	//Primaire voettekst is de voettekst die wordt gebruikt voor oneven pagina's.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

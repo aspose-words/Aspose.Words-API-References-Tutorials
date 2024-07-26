@@ -21,7 +21,7 @@ url: /el/net/programming-with-tables/create-simple-table/
 // Διαδρομή στον κατάλογο των εγγράφων σας
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Δημιουργήστε το έγγραφο και αρχικοποιήστε τη δημιουργία εγγράφων
+//Δημιουργήστε το έγγραφο και αρχικοποιήστε τη δημιουργία εγγράφων
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Καλέστε την ακόλουθη μέθοδο για να τερματίσετε την πρώτη γραμμή και να ξεκινήσετε μια νέα γραμμή
+// Καλέστε την ακόλουθη μέθοδο για να τερματίσετε την πρώτη γραμμή και να ξεκινήσετε μια νέα γραμμή
 builder. EndRow();
 
 // Κατασκευή του πρώτου κελιού της δεύτερης σειράς
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Σήμα ότι έχουμε τελειώσει το χτίσιμο του τραπεζιού.
+	// Σήμα ότι έχουμε τελειώσει το χτίσιμο του τραπεζιού.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

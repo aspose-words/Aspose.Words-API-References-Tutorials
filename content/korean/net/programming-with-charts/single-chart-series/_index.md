@@ -16,7 +16,7 @@ url: /ko/net/programming-with-charts/single-chart-series/
 시작하기 전에 필요한 모든 것이 있는지 확인합시다. 간단한 체크리스트는 다음과 같습니다.
 
 1.  .NET 라이브러리용 Aspose.Words: 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
-2. Visual Studio: 모든 최신 버전에서 이 작업을 수행할 수 있습니다.
+2. Visual Studio: 최신 버전이면 모두 가능합니다.
 3. C#에 대한 기본 이해: 너무 화려할 필요는 없으며 기본 사항만 이해하면 됩니다.
 
 ## 네임스페이스 가져오기

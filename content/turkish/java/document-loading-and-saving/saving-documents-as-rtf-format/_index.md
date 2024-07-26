@@ -14,7 +14,7 @@ Bu kılavuzda, Aspose.Words for Java kullanarak belgeleri RTF (Zengin Metin Form
 
 ## Önkoşullar
 
-Başlamadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
 1.  Aspose.Words for Java Kütüphanesi: Aspose.Words for Java kütüphanesinin Java projenize entegre olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
@@ -83,7 +83,7 @@ Bu kılavuzda Aspose.Words for Java kullanarak belgelerin RTF formatında nasıl
 
  Evet, kullanarak RTF belgesinin kodlamasını belirleyebilirsiniz.`saveOptions.setEncoding(Charset.forName("UTF-8"))`örneğin UTF-8 kodlamasında kaydetmek için.
 
-### RTF belgesini resimler olmadan kaydetmek mümkün mü?
+### RTF belgesini resimler olmadan kaydetmek mümkün müdür?
 
  Kesinlikle. kullanarak görüntü kaydetmeyi devre dışı bırakabilirsiniz.`saveOptions.setSaveImagesAsWmf(false)`.
 

@@ -2,95 +2,97 @@
 title: Zmenšete velikost souboru PDF nevkládáním základních písem
 linktitle: Zmenšete velikost souboru PDF nevkládáním základních písem
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak zmenšit velikost souboru PDF nevkládáním základních písem při převodu dokumentů Wordu do PDF pomocí Aspose.Words for .NET.
+description: Naučte se, jak zmenšit velikost souboru PDF nevkládáním základních písem pomocí Aspose.Words for .NET. Chcete-li optimalizovat soubory PDF, postupujte podle našeho podrobného průvodce.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## Úvod
 
-V tomto tutoriálu vás provedeme kroky, jak zmenšit velikost souboru PDF tím, že do Aspose.Words for .NET nevkládáte základní písma. Tato funkce umožňuje řídit, zda při převodu dokumentu aplikace Word musí být do PDF vložena základní písma jako Arial, Times New Roman atd. Postupujte podle následujících kroků:
+Stává se vám někdy, že se škrábete na hlavě a říkáte si, proč jsou vaše soubory PDF tak velké? No, nejsi sám. Jedním společným viníkem je vkládání základních písem, jako jsou Arial a Times New Roman. Naštěstí má Aspose.Words pro .NET šikovný způsob, jak tento problém vyřešit. V tomto tutoriálu vám ukážu, jak zmenšit velikost souboru PDF tím, že se vyhnete vkládání těchto základních písem. Pojďme se rovnou ponořit!
 
-## Krok 1: Načtení dokumentu
+## Předpoklady
 
-Začněte nahráním dokumentu aplikace Word, který chcete převést do formátu PDF:
+Než se vydáme na tuto vzrušující cestu, ujistěte se, že máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
+
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ji ještě nemáte, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Budete potřebovat vývojové prostředí, jako je Visual Studio.
+- Dokument aplikace Word: Pro tento výukový program budeme používat dokument aplikace Word (např. „Rendering.docx“).
+- Základní znalost C#: Základní znalost C# vám pomůže pokračovat.
+
+Dobře, teď, když jsme vše připraveni, pojďme do toho natvrdo!
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Tento krok zajišťuje, že máme přístup ke všem funkcím Aspose.Words, které potřebujeme.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Krok 1: Inicializujte svůj adresář dokumentů
+
+Než začneme s naším dokumentem manipulovat, musíme určit adresář, kde jsou naše dokumenty uloženy. To je nezbytné pro přístup k souborům.
+
+```csharp
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou, kde se nachází váš dokument aplikace Word.
+
+## Krok 2: Načtěte dokument aplikace Word
+
+Dále musíme načíst dokument Word, který chceme převést do PDF. V tomto příkladu používáme dokument s názvem "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Nezapomeňte zadat správnou cestu k dokumentu aplikace Word.
+Tento řádek kódu načte dokument do paměti, připraven k dalšímu zpracování.
 
-## Krok 2: Nastavte možnosti převodu PDF
+## Krok 3: Nakonfigurujte možnosti uložení PDF
 
-Vytvořte instanci třídy PdfSaveOptions a povolte základní zamezení vkládání písem:
+Teď přichází ta kouzelná část! Nakonfigurujeme možnosti uložení PDF, abychom se vyhnuli vkládání základních písem. Toto je klíčový krok, který pomáhá zmenšit velikost souboru PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-Tato volba určuje, zda mají být základní písma vložena do PDF, nebo ne.
+ Nastavení`UseCoreFonts` na`true` zajišťuje, že základní písma jako Arial a Times New Roman nejsou vložena do PDF, což výrazně snižuje velikost souboru.
 
-## Krok 3: Převeďte dokument do PDF
+## Krok 4: Uložte dokument jako PDF
 
- Použijte`Save` způsob převodu dokumentu aplikace Word do formátu PDF zadáním možností převodu:
+Nakonec uložíme dokument aplikace Word jako PDF pomocí nakonfigurovaných možností uložení. Tento krok vygeneruje soubor PDF bez vkládání základních písem.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Ujistěte se, že jste zadali správnou cestu pro uložení převedeného PDF.
-
-### Příklad zdrojového kódu pro Avoid Embedding Core Fonts pomocí Aspose.Words for .NET
-
-Zde je úplný zdrojový kód pro použití této funkce, abyste se vyhnuli vkládání základních písem pomocí Aspose.Words pro .NET:
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Výstupní PDF nebude vloženo základními fonty, jako je Arial, Times New Roman atd.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-Pomocí těchto kroků můžete snadno určit, zda mají být základní písma vložena do PDF při převodu dokumentu aplikace Word pomocí Aspose.Words for .NET.
-
+A tady to máte! Váš soubor PDF je nyní uložen v určeném adresáři bez těchto objemných základních písem.
 
 ## Závěr
 
-tomto tutoriálu jsme vysvětlili, jak zmenšit velikost souboru PDF tím, že do Aspose.Words for .NET nevkládáte základní písma. Tato funkce vám umožňuje řídit, zda mají být základní písma vložena do PDF při převodu dokumentu aplikace Word. Podle uvedených kroků můžete snadno ovládat vkládání nebo nevkládání základních písem, což může pomoci snížit velikost souboru PDF a zajistit lepší kompatibilitu a konzistentní vzhled dokumentu na různých zařízeních a platformách. Nezapomeňte zvážit důsledky nevložení základních písem a experimentujte, abyste zajistili, že se dokument vykreslí podle očekávání.
+Zmenšení velikosti souboru PDF může být s Aspose.Words pro .NET hračkou. Tím, že se vyhnete vkládání základních písem, můžete výrazně zmenšit velikost souboru, což usnadňuje sdílení a ukládání dokumentů. Doufám, že vám tento tutoriál pomohl a dal vám jasné pochopení procesu. Pamatujte, že malé úpravy mohou znamenat velký rozdíl!
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Jaká je možnost nevkládat základní písma do souboru PDF a proč je to důležité?
-Odpověď: Volba nevkládat základní písma do souboru PDF řídí, zda musí být základní písma, jako je Arial, Times New Roman atd., vložena do PDF při převodu dokumentu aplikace Word. To může být důležité pro zmenšení velikosti souboru PDF tím, že se vyhnete zahrnutí písem běžně dostupných v systémech pro čtení PDF. Může také pomoci zajistit lepší kompatibilitu a konzistentní vzhled dokumentu PDF na různých zařízeních a platformách.
+### Proč bych se měl vyhnout vkládání základních písem do souborů PDF?
+Vyhýbání se vkládání základních písem snižuje velikost souboru, což usnadňuje sdílení a ukládání.
 
-#### Otázka: Jak mohu nakonfigurovat Aspose.Words pro .NET, aby do souboru PDF nevkládala základní písma?
-Odpověď: Chcete-li nakonfigurovat Aspose.Words pro .NET tak, aby do souboru PDF nevkládala základní písma, postupujte takto:
+### Mohu stále správně zobrazit PDF bez vložených základních písem?
+Ano, základní písma jako Arial a Times New Roman jsou obecně dostupná na většině systémů.
 
- Nahrazením nastavte cestu k adresáři, kde jsou umístěny vaše dokumenty`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+### Co když potřebuji vložit vlastní písma?
+ Můžete si přizpůsobit`PdfSaveOptions`podle potřeby vložit konkrétní písma.
 
- Načtěte dokument Word, který chcete převést do PDF, pomocí`Document` třída a zadaná cesta dokumentu.
+### Je Aspose.Words for .NET zdarma k použití?
+ Aspose.Words for .NET vyžaduje licenci. Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
 
- Vytvořte instanci souboru`PdfSaveOptions` třídu a nastavte`UseCoreFonts`majetek do`true`. Vyhnete se tak vkládání základních písem do vygenerovaného souboru PDF.
-
- Použijte`Save` metoda`Document` objekt k uložení dokumentu ve formátu PDF s uvedením dříve nakonfigurovaných voleb převodu.
-
-#### Otázka: Jaké jsou výhody nevkládání základních písem do souboru PDF?
-Odpověď: Výhody nevkládání základních písem do souboru PDF jsou:
-
-Zmenšení velikosti souboru PDF: Tím, že se vyhnete vkládání běžně dostupných písem, jako je Arial, Times New Roman atd., lze zmenšit velikost souboru PDF, což usnadňuje ukládání, sdílení a přenos souborů.
-
-Lepší kompatibilita: Použitím základních písem běžně dostupných v systémech pro čtení PDF zajistíte lepší kompatibilitu a vzhled dokumentu na různých zařízeních a platformách.
-
-#### Otázka: Jaké jsou důsledky nevložení základních písem do souboru PDF?
-Odpověď: Důsledky nevložení základních písem do souboru PDF jsou následující:
-
-Odlišný vzhled: Pokud základní písma nejsou k dispozici v systému, kde je soubor PDF otevřen, použijí se náhradní písma, což může mít za následek jiný vzhled, než je zamýšleno.
-
-Problémy s čitelností: Použité náhradní písma nemusí být tak čitelné jako původní písma, což může ovlivnit čitelnost dokumentu.
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
+ Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).

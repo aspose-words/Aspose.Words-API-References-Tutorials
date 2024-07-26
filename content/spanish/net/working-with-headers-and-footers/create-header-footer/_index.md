@@ -40,7 +40,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Paso 2: cree un nuevo documento
 
- Crea un nuevo documento y un`DocumentBuilder` para facilitar la adición de contenidos.
+ Crea un nuevo documento y un`DocumentBuilder` para facilitar la adición de contenido.
 
 ```csharp
 Document doc = new Document();

@@ -45,11 +45,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Este código inicializa un nuevo documento de Word. Necesitarás reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
+ Este código inicializa un nuevo documento de Word. Necesitarás reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
 
 ## Paso 2: crear el objeto de tabla
 
-A continuación, creamos el objeto de tabla. Aquí es donde definiremos la estructura de nuestra tabla.
+continuación, creamos el objeto de tabla. Aquí es donde definiremos la estructura de nuestra tabla.
 
 ```csharp
 // Empezamos creando el objeto tabla. Tenga en cuenta que debemos pasar el objeto del documento.
@@ -71,7 +71,7 @@ Una tabla se compone de filas y celdas. Agreguemos estos elementos paso a paso.
 // Aquí podríamos llamar a GuaranteeMinimum para crear las filas y celdas por nosotros. Este método se utiliza
 // para garantizar que el nodo especificado sea válido. En este caso, una tabla válida debe tener al menos una fila y una celda.
 // En su lugar, nos encargaremos de crear la fila y la tabla nosotros mismos.
-//Esta sería la mejor manera de hacerlo si estuviéramos creando una tabla dentro de un algoritmo.
+// Esta sería la mejor manera de hacerlo si estuviéramos creando una tabla dentro de un algoritmo.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

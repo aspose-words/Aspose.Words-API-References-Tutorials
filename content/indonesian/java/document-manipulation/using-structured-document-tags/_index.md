@@ -10,7 +10,7 @@ url: /id/java/document-manipulation/using-structured-document-tags/
 
 ## Pengantar Penggunaan Tag Dokumen Terstruktur (SDT) di Aspose.Words untuk Java
 
-Tag Dokumen Terstruktur (SDT) adalah fitur canggih di Aspose.Words untuk Java yang memungkinkan Anda membuat dan memanipulasi konten terstruktur dalam dokumen Anda. Dalam panduan komprehensif ini, kami akan memandu Anda melalui berbagai aspek penggunaan SDT di Aspose.Words untuk Java. Baik Anda seorang pemula atau pengembang berpengalaman, Anda akan menemukan wawasan berharga dan contoh praktis dalam artikel ini.
+Tag Dokumen Terstruktur (SDT) adalah fitur canggih di Aspose.Words untuk Java yang memungkinkan Anda membuat dan memanipulasi konten terstruktur dalam dokumen Anda. Dalam panduan komprehensif ini, kami akan memandu Anda melalui berbagai aspek penggunaan SDT di Aspose.Words untuk Java. Baik Anda seorang pemula atau pengembang berpengalaman, Anda akan menemukan wawasan berharga dan contoh praktis di artikel ini.
 
 ## Mulai
 
@@ -202,7 +202,7 @@ doc.save("RepeatingTableDocument.docx");
 
 ## Bekerja dengan Tag Dokumen Terstruktur Multi-Bagian
 
-Tag Dokumen Terstruktur dapat mencakup beberapa bagian dalam sebuah dokumen. Di bagian ini, kita akan mempelajari cara bekerja dengan SDT multi-bagian.
+Tag Dokumen Terstruktur dapat menjangkau beberapa bagian dalam sebuah dokumen. Di bagian ini, kita akan mempelajari cara bekerja dengan SDT multi-bagian.
 
 ```java
 Document doc = new Document("MultiSectionDocument.docx");

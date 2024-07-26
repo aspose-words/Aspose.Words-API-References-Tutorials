@@ -7,7 +7,7 @@ type: docs
 weight: 660
 url: /vi/net/working-with-footnote-and-endnote/
 ---
-Xử lý văn bản với chú thích cuối trang và chú thích cuối trang là một tài nguyên toàn diện hướng dẫn bạn cách Xử lý văn bản với chú thích cuối trang và chú thích cuối trang trong tài liệu Word của bạn bằng thư viện Aspose.Words cho .NET. Các hướng dẫn cung cấp giải thích chi tiết từng bước, mã nguồn hoàn chỉnh và các ví dụ thực tế để thêm, sửa đổi và xóa chú thích cuối trang và chú thích cuối trang. Bạn cũng sẽ tìm hiểu cách tùy chỉnh định dạng và kiểu ghi chú, điều hướng giữa các ghi chú và chuyển đổi chúng sang các định dạng khác nhau, chẳng hạn như PDF hoặc HTML. Tài nguyên này rất cần thiết cho các nhà phát triển muốn quản lý tài liệu tham khảo và chú thích trong tài liệu Word của họ bằng Aspose.Words for .NET.
+Xử lý văn bản với chú thích cuối trang và chú thích cuối trang là một tài nguyên toàn diện hướng dẫn bạn cách Xử lý văn bản với chú thích cuối trang và chú thích cuối trang trong tài liệu Word của bạn bằng thư viện Aspose.Words cho .NET. Các hướng dẫn này cung cấp giải thích chi tiết từng bước, mã nguồn hoàn chỉnh và các ví dụ thực tế để thêm, sửa đổi và xóa chú thích cuối trang và chú thích cuối trang. Bạn cũng sẽ tìm hiểu cách tùy chỉnh định dạng và kiểu ghi chú, điều hướng giữa các ghi chú và chuyển đổi chúng sang các định dạng khác nhau, chẳng hạn như PDF hoặc HTML. Tài nguyên này rất cần thiết cho các nhà phát triển muốn quản lý tài liệu tham khảo và chú thích trong tài liệu Word của họ bằng Aspose.Words for .NET.
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |

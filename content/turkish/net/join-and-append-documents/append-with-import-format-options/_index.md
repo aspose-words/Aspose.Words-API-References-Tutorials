@@ -64,7 +64,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 Bu kod parçası, belgeleriniz arasında numaralandırma çakışması olması durumunda kaynak belgenin numaralandırmasının geçerli olmasını sağlar. Kullanışlı, değil mi?
 
-## Adım 4: Belgeleri Ekleyin
+## 4. Adım: Belgeleri Ekleyin
 
 Hepsini bir araya getirme zamanı! Tanımlanan içe aktarma formatı seçeneklerini kullanarak kaynak belgeyi hedef belgeye ekleyeceğiz.
 

@@ -2,62 +2,84 @@
 title: Export zpátečních informací
 linktitle: Export zpátečních informací
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce exportem zpátečních informací při ukládání dokumentu jako HTML pomocí Aspose.Words for .NET.
+description: Naučte se exportovat zpáteční informace pomocí Aspose.Words for .NET. Zachovejte integritu a formátování dokumentu během převodů.
 type: docs
 weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
+## Úvod
 
-V tomto tutoriálu vás provedeme zdrojovým kódem jazyka C# pro export informací z dokumentu s Aspose.Words for .NET. Tato funkce umožňuje zahrnout do exportovaného souboru HTML informace zpáteční cesty, což usnadňuje načítání změn provedených v původním dokumentu.
+Vítejte v nádherném světě Aspose.Words pro .NET! Dnes se ponoříme hluboko do šikovné funkce, která vám může ušetřit spoustu času a námahy: export informací o zpáteční cestě. Představte si, že převádíte dokument aplikace Word do HTML a zpět, aniž byste ztratili zásadní data nebo formátování. Zní to jako sen, že? S Aspose.Words je to zcela možné. Připoutejte se a vydejte se na tuto vzrušující cestu!
 
-## Krok 1: Nastavení projektu
+## Předpoklady
 
-Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistěte se, že váš projekt odkazuje na knihovnu Aspose.Words for .NET.
+Než se pustíme do matic a šroubů, ujistěte se, že máme vše, co potřebujeme:
 
-## Krok 2: Načtení dokumentu
+1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi.[Stáhněte si jej zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s C#.
+3. Základní znalost C#: Pomáhá trochu obeznámit se s C# a .NET frameworkem.
+4. Licence: Pokud nemáte plnou licenci, můžete použít dočasnou licenci. Pochopit to[tady](https://purchase.aspose.com/temporary-license/).
 
-V tomto kroku načteme dokument k exportu. K načtení dokumentu ze zadaného adresáře použijte následující kód:
+## Importovat jmenné prostory
+
+Nejprve musíme importovat potřebné jmenné prostory, abychom mohli začít s Aspose.Words pro .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Nyní si tento proces rozdělíme na zvládnutelné kroky. Každý krok bude doprovázen podrobným vysvětlením, aby vám nic neuniklo.
+
+## Krok 1: Nastavte adresář dokumentů
+
+Nejprve musíte nastavit cestu k adresáři dokumentů. Zde je uložen váš dokument aplikace Word a kde bude uložen soubor HTML.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Krok 2: Načtěte dokument aplikace Word
+
+Dále načtěte dokument aplikace Word, který chcete převést. V tomto tutoriálu budeme používat dokument s názvem "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Tento kód vytvoří instanci`Document` načtením dokumentu ze zadaného adresáře.
+## Krok 3: Nakonfigurujte možnosti uložení HTML
 
-## Krok 3: Konfigurace možností zálohování HTML
-
-Nyní nakonfigurujeme možnosti uložení HTML pro export informací o zpětné cestě dokumentu. Použijte následující kód:
+Tady se děje kouzlo. Musíme nastavit možnosti uložení HTML, konkrétně povolit vlastnost ExportRoundtripInformation. Tím je zajištěno, že během převodu budou zachovány všechny informace o zpětné cestě.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Tento kód vytvoří instanci`HtmlSaveOptions` a nastaví`ExportRoundtripInformation` možnost`true` k zahrnutí informací o zpáteční cestě při exportu.
+## Krok 4: Uložte dokument jako HTML
 
-## Krok 4: Převod a uložení dokumentu do HTML
-
-Nakonec převedeme dokument do HTML pomocí dříve nakonfigurovaných možností uložení HTML. Použijte následující kód:
+Nakonec uložte dokument jako soubor HTML pomocí nakonfigurovaných možností uložení. Tento krok zajistí, že si dokument zachová veškeré své formátování a data při převodu do HTML a zpět do Wordu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
 ```
 
-Tento kód převede dokument do HTML včetně informací o zpáteční cestě a uloží exportovaný soubor HTML do určeného adresáře.
+## Závěr
 
-### Příklad zdrojového kódu pro Export Roundtrip Information pomocí Aspose.Words for .NET
+A tady to máte! Pomocí několika řádků kódu jste úspěšně exportovali zpáteční informace z dokumentu aplikace Word do HTML pomocí Aspose.Words for .NET. Tato výkonná funkce zajišťuje, že si vaše dokumenty během převodu zachovají svou integritu a formátování, což vám výrazně usnadní život.
 
+## FAQ
 
-```csharp
+### Co jsou informace o zpáteční cestě v Aspose.Words?
+Informace o zpětném přenosu se týkají dat, která zajišťují integritu a formátování dokumentu při jeho převodu z jednoho formátu do druhého a zpět.
 
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+### Mohu používat Aspose.Words pro .NET bez licence?
+Ano, můžete jej používat s dočasnou licencí, kterou můžete získat[tady](https://purchase.aspose.com/temporary-license/).
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
+### Kde najdu nejnovější verzi Aspose.Words pro .NET?
+ Můžete si stáhnout nejnovější verzi[tady](https://releases.aspose.com/words/net/).
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
+### Jak získám podporu pro Aspose.Words for .NET?
+ Můžete získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).
 
-```
-
- Ujistěte se, že jste zadali správnou cestu k adresáři dokumentů v`dataDir` variabilní.
+### Je možné zachovat formátování při převodu dokumentů Wordu do HTML?
+Ano, pomocí vlastnosti ExportRoundtripInformation v HtmlSaveOptions můžete zachovat veškeré formátování během převodu.

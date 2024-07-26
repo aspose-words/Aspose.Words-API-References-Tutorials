@@ -41,7 +41,7 @@ Trước khi có thể thao tác với tài liệu của bạn, chúng tôi cầ
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn đến thư mục tài liệu của bạn. Đây là nơi chứa tệp Word của bạn.
+ Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn đến thư mục tài liệu của bạn. Đây là nơi chứa tệp Word của bạn.
 
 ## Bước 2: Tải tài liệu
 

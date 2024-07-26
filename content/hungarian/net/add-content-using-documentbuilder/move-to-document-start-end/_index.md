@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Itt egy példányt hozunk létre`Document`és`DocumentBuilder` . Gondol`Document` mint az Ön üres Word-dokumentuma és`DocumentBuilder` mint a tollad.
+ Itt egy példányt hozunk létre`Document`és`DocumentBuilder` . Gondol`Document` mint az üres Word-dokumentum és`DocumentBuilder` mint a tollad.
 
 ## 2. lépés: Lépjen a Dokumentum indítása elemre
 

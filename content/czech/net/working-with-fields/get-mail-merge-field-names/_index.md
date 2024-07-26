@@ -116,4 +116,4 @@ Odpověď: Ano, je možné filtrovat pole hromadné korespondence na základě u
 
 #### Otázka: Jak mohu manipulovat s poli hromadné korespondence v Aspose.Words?
 
-Odpověď: K manipulaci s poli hromadné korespondence v Aspose.Words můžete použít metody a vlastnosti poskytované objekty Document a MailMergeField. Můžete přidávat, odebírat nebo aktualizovat pole hromadné korespondence a také načítat a upravovat hodnoty spojené s poli.
+Odpověď: Pro manipulaci s poli hromadné korespondence v Aspose.Words můžete použít metody a vlastnosti poskytované objekty Document a MailMergeField. Můžete přidávat, odebírat nebo aktualizovat pole hromadné korespondence a také načítat a upravovat hodnoty spojené s poli.

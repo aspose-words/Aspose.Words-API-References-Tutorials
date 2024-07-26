@@ -17,7 +17,7 @@ url: /th/net/programming-with-sdt/creating-table-repeating-section-mapped-to-cus
 - ความรู้พื้นฐานเกี่ยวกับ C# และการประมวลผลคำด้วยเอกสาร Word
 
 ## ขั้นตอนที่ 1: ตั้งค่าไดเร็กทอรีเอกสาร
- เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"`ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสาร
+ เริ่มต้นด้วยการตั้งค่าเส้นทางไปยังไดเร็กทอรีเอกสารของคุณ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงไปยังไดเร็กทอรีที่คุณต้องการบันทึกเอกสาร
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## ขั้นตอนที่ 4: สร้างตารางและโครงสร้างตาราง
- เริ่มสร้างตารางโดยใช้`StartTable` วิธีการของ`DocumentBuilder` - เพิ่มเซลล์ตารางและเนื้อหาโดยใช้`InsertCell`และ`Write` วิธีการ
+เริ่มสร้างตารางโดยใช้`StartTable` วิธีการของ`DocumentBuilder` - เพิ่มเซลล์ตารางและเนื้อหาโดยใช้`InsertCell`และ`Write` วิธีการ
 
 ```csharp
 Table table = builder.StartTable();
@@ -98,7 +98,7 @@ row.AppendChild(authorSdt);
 ```
 
 ## ขั้นตอนที่ 8: บันทึกเอกสาร
- บันทึกเอกสารที่แก้ไขไปยังไดเร็กทอรีที่ระบุโดยใช้`Save` วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx"
+ บันทึกเอกสารที่แก้ไขไปยังไดเร็กทอรีที่ระบุโดยใช้`Save`วิธี. ระบุชื่อไฟล์ที่ต้องการพร้อมนามสกุลไฟล์ที่เหมาะสม ในตัวอย่างนี้ เราบันทึกเอกสารเป็น "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx"
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");

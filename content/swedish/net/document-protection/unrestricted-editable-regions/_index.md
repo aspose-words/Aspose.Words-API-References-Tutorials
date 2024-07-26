@@ -73,13 +73,13 @@ Därefter ställer vi in dokumentet på skrivskyddat. Detta säkerställer att i
 
 ## Steg 4: Skapa redigerbara intervall
 
-Det är här magin händer. Vi kommer att skapa avsnitt i dokumentet som kan redigeras trots det övergripande skrivskyddet.
+Här händer magin. Vi kommer att skapa avsnitt i dokumentet som kan redigeras trots det övergripande skrivskyddet.
 
 1. Starta redigerbart intervall: Definiera början på det redigerbara intervallet.
    ```csharp
    EditableRangeStart edRangeStart = builder.StartEditableRange();
    ```
-2.  Skapa redigerbart områdesobjekt: An`EditableRange` objekt kommer att skapas automatiskt.
+2.  Skapa redigerbart områdesobjekt: An`EditableRange` objektet skapas automatiskt.
    ```csharp
    EditableRange editableRange = edRangeStart.EditableRange;
    ```

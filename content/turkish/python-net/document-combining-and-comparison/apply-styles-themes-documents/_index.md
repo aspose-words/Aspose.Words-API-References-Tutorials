@@ -157,7 +157,7 @@ Aspose.Words for Python'u kullanarak stil ve tema uygulamak, görsel olarak çek
 
 Kesinlikle! Aspose.Words for Python, benzersiz marka kimliğinizi yansıtan özel stiller oluşturmanıza olanak tanır.
 
-### Belge stiline yönelik bazı pratik kullanım durumları nelerdir?
+### Belge stiline yönelik bazı pratik kullanım örnekleri nelerdir?
 
 Belge stili, markalı raporlar oluşturma, özgeçmiş tasarlama ve akademik makaleleri biçimlendirme gibi çeşitli senaryolarda uygulanabilir.
 

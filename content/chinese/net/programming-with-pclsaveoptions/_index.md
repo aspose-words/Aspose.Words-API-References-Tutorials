@@ -14,4 +14,4 @@ Aspose.Words for .NET 教程为您提供了宝贵的资源，帮助您掌握此�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [栅格化变换元素](./rasterize-transformed-elements/) | 了解如何在使用 Aspose.Words for .NET 转换为 PCL 格式时禁用转换元素的光栅化。 |
+| [栅格化变换元素](./rasterize-transformed-elements/) | 了解如何在使用 Aspose.Words for .NET 将 Word 文档转换为 PCL 格式时栅格化转换后的元素。包含分步指南。 |

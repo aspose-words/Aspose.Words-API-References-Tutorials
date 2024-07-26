@@ -16,7 +16,7 @@ Halihó! Érezte már valaha, hogy Word-dokumentumai egy kicsit zsúfoltak? Tudj
 Mielőtt belemerülnénk a finom részletekbe, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van. Íme egy gyors ellenőrző lista:
 
 - C# alapismeretek: Kényelmesnek kell lennie a C# programozásban.
--  Aspose.Words for .NET: Győződjön meg arról, hogy ez a könyvtár telepítve van. Ha nem, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van ez a könyvtár. Ha nem, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
 - Fejlesztői környezet: Bármely C#-kompatibilis IDE, például a Visual Studio.
 - Mintadokumentum: Word-dokumentum néhány fel nem használt stílussal és listával.
 

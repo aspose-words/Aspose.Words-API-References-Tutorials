@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 ## 介紹
 
-嘿，開發人員朋友們！您是否曾經在處理 Word 文件時發現自己陷入了保存圖片項目符號的複雜過程中？這是對文件的最終外觀產生重大影響的微小細節之一。好吧，今天，我在這裡指導您完成在 Aspose.Words for .NET 中處理圖片項目符號的過程，特別關注「不保存圖片項目符號」功能。準備好潛入了嗎？我們走吧！
+嘿，開發人員朋友們！您是否曾經在處理 Word 文件時發現自己陷入了保存圖片項目符號的複雜過程中？這是可以對文件的最終外觀產生重大影響的微小細節之一。好吧，今天，我在這裡指導您完成在 Aspose.Words for .NET 中處理圖片項目符號的過程，特別關注「不保存圖片項目符號」功能。準備好潛入了嗎？我們走吧！
 
 ## 先決條件
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", save
 
 ## 結論
 
-現在你就得到它了！只需幾行程式碼，您就可以成功配置 Aspose.Words for .NET 在儲存文件時省略圖片項目符號。當您需要乾淨、一致的外觀且不受圖像項目符號幹擾時，這會非常有用。
+現在你就擁有了！只需幾行程式碼，您就可以成功配置 Aspose.Words for .NET 在儲存文件時省略圖片項目符號。當您需要乾淨、一致的外觀且不受圖像項目符號幹擾時，這會非常有用。
 
 ## 常見問題解答
 

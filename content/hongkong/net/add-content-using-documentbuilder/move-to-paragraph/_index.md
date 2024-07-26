@@ -74,7 +74,7 @@ builder.Writeln("This is the 3rd paragraph.");
 
 ## 結論
 
-現在你就得到它了！使用 Aspose.Words for .NET 移動到 Word 文件中的特定段落非常簡單。只需幾行程式碼，您就可以自動化文件編輯過程並節省大量時間。因此，下次您需要以程式設計方式瀏覽文件時，您將確切地知道該怎麼做。
+現在你就擁有了！使用 Aspose.Words for .NET 移動到 Word 文件中的特定段落非常簡單。只需幾行程式碼，您就可以自動化文件編輯過程並節省大量時間。因此，下次您需要以程式設計方式瀏覽文件時，您將確切地知道該怎麼做。
 
 ## 常見問題解答
 
@@ -88,7 +88,7 @@ builder.Writeln("This is the 3rd paragraph.");
 絕對地！您可以使用以下命令插入文字、圖像、表格等`DocumentBuilder`班級。
 
 ### 我需要許可證才能使用 Aspose.Words for .NET 嗎？
-是的，Aspose.Words for .NET 需要完整功能的授權。你可以獲得一個[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
+是的，Aspose.Words for .NET 需要完整功能的授權。您可以獲得[臨時執照](https://purchase.aspose.com/temporary-license/)進行評估。
 
 ### 在哪裡可以找到更詳細的文件？
 你可以找到詳細的文檔[這裡](https://reference.aspose.com/words/net/).

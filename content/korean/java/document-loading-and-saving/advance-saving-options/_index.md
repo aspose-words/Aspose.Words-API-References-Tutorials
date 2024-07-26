@@ -30,7 +30,7 @@ url: /ko/java/document-loading-and-saving/advance-saving-options/
 
 ## 비밀번호로 문서 암호화
 
-이제 첫 번째 단계인 비밀번호로 문서를 암호화하는 방법을 살펴보겠습니다. 이렇게 하면 민감한 문서에 보안 계층이 추가됩니다.
+이제 첫 번째 단계인 비밀번호로 문서를 암호화하는 방법을 살펴보겠습니다. 이렇게 하면 민감한 문서에 추가 보안 계층이 추가됩니다.
 
 ```java
 DocSaveOptions saveOptions = new DocSaveOptions();

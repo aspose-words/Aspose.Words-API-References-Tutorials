@@ -2,60 +2,114 @@
 title: Stel de map Afbeeldingen in
 linktitle: Stel de map Afbeeldingen in
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de map afbeeldingen instelt bij het exporteren naar Markdown met Aspose.Words voor .NET. Pas de plaatsing van afbeeldingen aan voor een betere organisatie en integratie.
+description: Converteer Word-documenten naar Markdown met de juiste tabeluitlijning met behulp van Aspose.Words voor .NET. Volg onze gedetailleerde gids voor perfecte resultaten.
 type: docs
 weight: 10
 url: /nl/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
+## Invoering
 
-Hier is een stapsgewijze handleiding om de volgende C#-broncode uit te leggen die helpt bij het instellen van de afbeeldingenmap voor Markdown-exportopties met behulp van de Aspose.Words-bibliotheek voor .NET. Zorg ervoor dat u de Aspose.Words-bibliotheek in uw project hebt opgenomen voordat u deze code gebruikt.
+Heeft u ooit uw Word-document naar Markdown-indeling willen exporteren en er tegelijkertijd voor willen zorgen dat de tabellen en inhoud perfect op één lijn liggen? Aspose.Words voor .NET is uw beste oplossing voor deze taak. In dit artikel begeleiden we u door het proces van het instellen van Aspose.Words, het voorbereiden van uw document en het exporteren naar Markdown met de juiste afstemming van de tabelinhoud. We zullen elke stap opsplitsen, zodat deze gemakkelijk te volgen en te begrijpen is. Laten we er dus in duiken en uw Word-documenten omzetten in prachtig uitgelijnde Markdown-bestanden!
 
-## Stap 1: Stel het documentmappad in
+## Vereisten
+
+Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
+
+-  Aspose.Words voor .NET: je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+-  Een geldige licentie: ontvang een gratis proefperiode[hier](https://releases.aspose.com/) of een tijdelijke licentie[hier](https://purchase.aspose.com/temporary-license/).
+- Visual Studio: of een andere IDE die .NET-ontwikkeling ondersteunt.
+- Basiskennis van C#: Inzicht in de programmeertaal C#.
+
+## Naamruimten importeren
+
+Om te beginnen moet u de benodigde naamruimten in uw C#-project importeren. Met deze naamruimten krijgt u toegang tot de Aspose.Words-functionaliteit.
 
 ```csharp
-// Het pad naar de documentenmap.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.IO;
 ```
 
-Zorg ervoor dat u het juiste pad opgeeft naar uw documentenmap waar het document met de afbeeldingen zich bevindt.
+## Stap 1: Stel uw project in
 
-## Stap 2: Laad het document met de afbeeldingen
+Stel eerst uw .NET-project in uw IDE in. Maak een nieuwe consoletoepassing en voeg een verwijzing toe naar Aspose.Words voor .NET.
+
+### 1.1 Maak een nieuw project
+
+Open Visual Studio en maak een nieuw consoletoepassingsproject. Noem het "MarkdownExporter" of iets dergelijks.
+
+### 1.2 Aspose.Words-referentie toevoegen
+
+ Om Aspose.Words aan uw project toe te voegen, kunt u de DLL downloaden van de[Aspose-website](https://releases.aspose.com/words/net/) en voeg het handmatig toe, of gebruik NuGet Package Manager:
+
+```bash
+Install-Package Aspose.Words
+```
+
+## Stap 2: Schrijf de code om te exporteren als Markdown
+
+Laten we nu de code schrijven om het Word-document te lezen en het op te slaan als een Markdown-bestand met de juiste tabeluitlijning.
+
+### 2.1 Definieer het pad naar uw document
+
+Stel het pad in naar uw Word-document en de map waarin u afbeeldingen wilt opslaan.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
+```
+
+### 2.2 Laad het document
+
+Laad uw Word-document met Aspose.Words.
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-We laden het opgegeven document dat de afbeeldingen bevat die we willen exporteren met Markdown-opties.
+### 2.3 Markdown-opslagopties configureren
 
-## Stap 3: Stel de afbeeldingenmap in voor Markdown-exportopties
+ Configureer de`MarkdownSaveOptions` om aan te geven waar afbeeldingen moeten worden opgeslagen.
 
 ```csharp
-MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
+MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
+{
+    ImagesFolder = dataDir + "Images"
+};
 ```
 
- We maken een exemplaar van`MarkdownSaveOptions` en stel het pad naar de map afbeeldingen in met behulp van de`ImagesFolder` eigendom. Zorg ervoor dat u het juiste pad opgeeft naar de map waarin u de geëxporteerde afbeeldingen wilt opslaan.
+### 2.4 Sla het document op als Markdown
 
-## Stap 4: Sla het document op met Markdown-exportopties
+ Gebruik een`MemoryStream` om het document in Markdown-indeling op te slaan.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())
-     doc. Save(stream, saveOptions);
+{
+    doc.Save(stream, saveOptions);
+}
 ```
 
-We slaan het document op in een geheugenstroom met behulp van de opgegeven Markdown-exportopties. U kunt de stroom vervolgens gebruiken om andere bewerkingen uit te voeren, zoals het opslaan van Markdown-inhoud in een bestand.
+## Conclusie
 
-### Voorbeeldbroncode om de afbeeldingenmap in te stellen voor MarkdownSaveOptions met Aspose.Words voor .NET
+Het exporteren van een Word-document naar Markdown met uitlijning van de tabelinhoud met behulp van Aspose.Words voor .NET is eenvoudig als u deze stappen volgt. Met een paar regels code kunt u het conversieproces automatiseren en ervoor zorgen dat uw inhoud goed is opgemaakt. Nu kunt u uw documenten eenvoudig delen in Markdown-indeling, in de wetenschap dat ze er geweldig uitzien en hun structuur behouden.
 
-```csharp
-// Het pad naar de documentenmap.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+## Veelgestelde vragen
 
-Document doc = new Document(dataDir + "Image bullet points.docx");
+### Kan ik Aspose.Words voor .NET gebruiken met andere programmeertalen?
 
-MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
+Ja, Aspose.Words voor .NET kan worden gebruikt met elke .NET-compatibele taal, zoals VB.NET, F# en meer.
 
-using (MemoryStream stream = new MemoryStream())
-     doc. Save(stream, saveOptions);
-```
+### Hoe krijg ik een tijdelijke licentie voor Aspose.Words?
 
-Deze broncode laat zien hoe u een document laadt dat afbeeldingen bevat en vervolgens de map afbeeldingen instelt voor Markdown-exportopties. Met behulp van de opgegeven opties wordt het document vervolgens opgeslagen in een geheugenstroom. Hiermee kunt u de locatie van de map met afbeeldingen aanpassen wanneer u Markdown-inhoud exporteert.
+ U kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/).
+
+### Welke soorten documenten kan ik naar Markdown converteren?
+
+U kunt verschillende Word-documenten converteren, waaronder .doc, .docx, .rtf en meer.
+
+### Zijn er beperkingen in de proefversie van Aspose.Words?
+
+De proefversie heeft enkele beperkingen, zoals watermerken in de uitvoerbestanden. U kunt een gratis proefperiode krijgen[hier](https://releases.aspose.com/).
+
+### Waar kan ik meer voorbeelden en documentatie voor Aspose.Words vinden?
+
+ Gedetailleerde documentatie en voorbeelden vindt u op de website[Aspose-website](https://reference.aspose.com/words/net/).

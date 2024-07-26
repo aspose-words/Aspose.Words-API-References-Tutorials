@@ -77,7 +77,7 @@ Bu, birleştirilmiş belgeyi eklenen içerikle birlikte yeni bir sayfadan başla
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word dosyasındaki belgeleri nasıl birleştireceğimizi ve ekleyeceğimizi öğrendik. Bu adımları izleyerek, birden fazla belgeyi verimli bir şekilde birleştirirken, eklenen içeriğin orijinal biçimlendirmeyi koruyarak yeni bir sayfada başlamasını sağlayabilirsiniz.
+Bu eğitimde Aspose.Words for .NET kullanarak bir Word dosyasındaki belgeleri nasıl birleştireceğimizi ve ekleyeceğimizi öğrendik. Bu adımları izleyerek, birden fazla belgeyi etkili bir şekilde birleştirirken, eklenen içeriğin orijinal biçimlendirmeyi koruyarak yeni bir sayfada başlamasını sağlayabilirsiniz.
 
 ## SSS'ler
 

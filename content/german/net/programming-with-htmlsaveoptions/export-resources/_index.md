@@ -2,78 +2,106 @@
 title: Ressourcen exportieren
 linktitle: Ressourcen exportieren
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Exportieren von Dokumentressourcen beim Speichern als HTML mit Aspose.Words für .NET.
+description: Erfahren Sie, wie Sie Ressourcen wie CSS und Schriftarten exportieren, während Sie Word-Dokumente mit Aspose.Words für .NET als HTML speichern. Folgen Sie unserer Schritt-für-Schritt-Anleitung.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlsaveoptions/export-resources/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch den C#-Quellcode zum Exportieren von Dokumentressourcen mit Aspose.Words für .NET. Mit dieser Funktion können Sie Ressourcen wie Schriftarten als externe Dateien exportieren, wenn Sie ein Dokument im HTML-Format speichern.
+Hallo Technikbegeisterter! Wenn Sie schon einmal Word-Dokumente in HTML konvertieren mussten, sind Sie hier richtig. Heute tauchen wir in die wunderbare Welt von Aspose.Words für .NET ein. Diese leistungsstarke Bibliothek macht das programmgesteuerte Arbeiten mit Word-Dokumenten zum Kinderspiel. In diesem Tutorial führen wir Sie durch die Schritte zum Exportieren von Ressourcen wie Schriftarten und CSS, wenn Sie ein Word-Dokument mit Aspose.Words für .NET als HTML speichern. Schnall dich an für eine unterhaltsame und informative Reise!
 
-## Schritt 1: Projekt-Setup
+## Voraussetzungen
 
-Erstellen Sie zunächst ein neues C#-Projekt in Ihrer bevorzugten IDE. Stellen Sie sicher, dass in Ihrem Projekt auf die Bibliothek Aspose.Words für .NET verwiesen wird.
+Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie zum Einstieg benötigen. Hier ist eine kurze Checkliste:
 
-## Schritt 2: Dokument einlegen
+1.  Visual Studio: Stellen Sie sicher, dass Visual Studio auf Ihrem Computer installiert ist. Sie können es von der[Visual Studio-Website](https://visualstudio.microsoft.com/).
+2.  Aspose.Words für .NET: Sie benötigen die Bibliothek Aspose.Words für .NET. Wenn Sie sie noch nicht haben, holen Sie sich eine kostenlose Testversion von[Aspose-Veröffentlichungen](https://releases.aspose.com/words/net/) oder kaufen Sie es bei der[Aspose Store](https://purchase.aspose.com/buy).
+3. Grundkenntnisse in C#: Grundlegende Kenntnisse in C# helfen Ihnen, den Codebeispielen zu folgen.
 
-In diesem Schritt laden wir das zu exportierende Dokument. Verwenden Sie den folgenden Code, um das Dokument aus einem angegebenen Verzeichnis zu laden:
+Alles klar? Super! Fahren wir mit dem Importieren der erforderlichen Namespaces fort.
+
+## Namespaces importieren
+
+Um Aspose.Words für .NET zu verwenden, müssen Sie die relevanten Namespaces in Ihr Projekt einbinden. So geht's:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Diese Namespaces sind entscheidend für den Zugriff auf die Aspose.Words-Klassen und -Methoden, die wir in unserem Tutorial verwenden werden.
+
+Lassen Sie uns den Vorgang des Ressourcenexports beim Speichern eines Word-Dokuments als HTML aufschlüsseln. Wir gehen Schritt für Schritt vor, damit es leicht nachvollziehbar ist.
+
+## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
+
+Als Erstes müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis angeben. Hier befindet sich Ihr Word-Dokument und hier wird auch die HTML-Datei gespeichert.
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Verzeichnis.
+
+## Schritt 2: Laden Sie das Word-Dokument
+
+ Als nächstes laden wir das Word-Dokument, das Sie in HTML konvertieren möchten. Für dieses Tutorial verwenden wir ein Dokument namens`Rendering.docx`.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Dieser Code erstellt eine Instanz von`Document` durch Laden des Dokuments aus dem angegebenen Verzeichnis.
+Diese Codezeile lädt das Dokument aus dem angegebenen Verzeichnis.
 
-## Schritt 3: Konfigurieren der HTML-Sicherungsoptionen
+## Schritt 3: HTML-Speicheroptionen konfigurieren
 
-Nun konfigurieren wir die HTML-Speicheroptionen, um die Dokumentressourcen zu exportieren. Verwenden Sie den folgenden Code:
+Um Ressourcen wie CSS und Schriftarten zu exportieren, müssen Sie die`HtmlSaveOptions`Dieser Schritt ist entscheidend, um sicherzustellen, dass Ihre HTML-Ausgabe gut strukturiert ist und die erforderlichen Ressourcen enthält.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-CssStyleSheetType = CssStyleSheetType.External,
-ExportFontResources=true,
-ResourceFolder = ArtifactsDir + "Resources",
-ResourceFolderAlias = "http://example.com/resources"
+    CssStyleSheetType = CssStyleSheetType.External,
+    ExportFontResources = true,
+    ResourceFolder = dataDir + "Resources",
+    ResourceFolderAlias = "http://example.com/resources"
 };
 ```
 
- Dieser Code erstellt eine Instanz von`HtmlSaveOptions` und legt die folgenden Optionen fest:
+Lassen Sie uns aufschlüsseln, was jede Option bewirkt:
+- `CssStyleSheetType = CssStyleSheetType.External`: Diese Option gibt an, dass CSS-Stile in einem externen Stylesheet gespeichert werden sollen.
+- `ExportFontResources = true`: Dies ermöglicht den Export von Schriftressourcen.
+- `ResourceFolder = dataDir + "Resources"`: Gibt den lokalen Ordner an, in dem Ressourcen (wie Schriftarten und CSS-Dateien) gespeichert werden.
+- `ResourceFolderAlias = "http://example.com/resources"`: Legt einen Alias für den Ressourcenordner fest, der in der HTML-Datei verwendet wird.
 
-- `CssStyleSheetType` ist eingestellt auf`CssStyleSheetType.External` um das CSS-Stylesheet in eine externe Datei zu exportieren.
-- `ExportFontResources` ist eingestellt auf`true` um Schriftressourcen zu exportieren.
-- `ResourceFolder` Gibt das Zielverzeichnis an, in dem die Ressourcen gespeichert werden.
-- `ResourceFolderAlias`Gibt den URL-Alias an, der für den Zugriff auf Ressourcen verwendet wird.
+## Schritt 4: Speichern Sie das Dokument als HTML
 
-## Schritt 4: Konvertieren und Speichern des Dokuments im HTML-Format
-
-Zum Schluss konvertieren wir das Dokument in HTML, indem wir die zuvor konfigurierten HTML-Speicheroptionen verwenden. Verwenden Sie den folgenden Code:
+Nachdem Sie die Speicheroptionen konfiguriert haben, besteht der letzte Schritt darin, das Dokument als HTML-Datei zu speichern. So geht's:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
 ```
 
-Dieser Code konvertiert das Dokument in HTML und speichert die Ressourcen unter Verwendung des angegebenen URL-Alias im angegebenen Verzeichnis.
+Diese Codezeile speichert das Dokument zusammen mit den exportierten Ressourcen im HTML-Format.
 
-### Beispielquellcode für Exportressourcen mit Aspose.Words für .NET
+## Abschluss
 
-```csharp
+Und da haben Sie es! Sie haben erfolgreich Ressourcen exportiert, während Sie ein Word-Dokument mit Aspose.Words für .NET als HTML gespeichert haben. Mit dieser leistungsstarken Bibliothek wird die programmgesteuerte Handhabung von Word-Dokumenten zum Kinderspiel. Egal, ob Sie an einer Webanwendung arbeiten oder nur Dokumente für die Offline-Verwendung konvertieren müssen, Aspose.Words bietet Ihnen alles.
 
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+## Häufig gestellte Fragen
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External,
-		ExportFontResources = true,
-		ResourceFolder = ArtifactsDir + "Resources",
-		ResourceFolderAlias = "http://example.com/resources"
-	};
+### Kann ich Bilder zusammen mit Schriftarten und CSS exportieren?
+ Ja, das können Sie! Aspose.Words für .NET unterstützt auch den Export von Bildern. Stellen Sie einfach sicher, dass Sie die`HtmlSaveOptions` entsprechend.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOptions);
-  
-```
+### Gibt es eine Möglichkeit, CSS einzubetten, anstatt ein externes Stylesheet zu verwenden?
+ Absolut. Sie können`CssStyleSheetType` Zu`CssStyleSheetType.Embedded` wenn Sie eingebettete Stile bevorzugen.
 
- Achten Sie darauf, den korrekten Pfad zum Dokumentenverzeichnis im`dataDir` Variable.
+### Wie kann ich den Namen der HTML-Ausgabedatei anpassen?
+ Sie können einen beliebigen Dateinamen im Feld`doc.Save` Methode. Beispielsweise`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
+
+### Unterstützt Aspose.Words andere Formate außer HTML?
+ Ja, es unterstützt verschiedene Formate, darunter PDF, DOCX, TXT und mehr. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für eine vollständige Liste.
+
+### Wo erhalte ich weitere Unterstützung und Ressourcen?
+Weitere Hilfe erhalten Sie im[Aspose.Words Support Forum](https://forum.aspose.com/c/words/8) . Detaillierte Dokumentation und Beispiele finden Sie auch auf der[Aspose-Website](https://reference.aspose.com/words/net/).

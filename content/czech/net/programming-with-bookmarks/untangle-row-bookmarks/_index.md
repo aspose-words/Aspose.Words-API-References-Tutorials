@@ -35,7 +35,7 @@ using System;
  Začneme načtením dokumentu aplikace Word obsahující záložky spletených řádků. The`Document` třída zpracovává manipulaci s dokumenty v Aspose.Words. Postup načtení dokumentu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY"; // Nahraďte umístěním dokumentu
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Nahraďte umístěním vašeho dokumentu
 Document doc = new Document(dataDir + "Table column bookmarks.docx");
 ```
 
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
 ## Krok 2: Rozbalte záložky řádků
 
- Tady se děje kouzlo! The`Untangle` funkce se stará o rozmotání záložek řádků. Pojďme si jeho funkčnost rozebrat:
+ Tady se děje kouzlo! The`Untangle` funkce se stará o rozmotání záložek řádků. Pojďme si rozebrat jeho funkčnost:
 
 ```csharp
 private void Untangle(Document doc)

@@ -2,7 +2,7 @@
 title: 文档结构和内容操作
 linktitle: 文档结构和内容操作
 second_title: Aspose.Words Python 文档管理 API
-description: 探索适用于 Python 和 .NET 的 Aspose.Words 教程，重点介绍文档结构和内容操作。了解如何有效地导航、提取和修改文档元素。提供源代码示例。
+description: 探索 Python 和 .NET 的 Aspose.Words 教程，重点介绍文档结构和内容操作。了解如何有效地导航、提取和修改文档元素。提供源代码示例。
 type: docs
 weight: 10
 url: /zh/python-net/document-structure-and-content-manipulation/

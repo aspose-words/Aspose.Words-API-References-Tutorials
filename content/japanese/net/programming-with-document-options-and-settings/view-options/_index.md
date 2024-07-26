@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.ViewOptions.ViewType = ViewType.PageLayout;
 ```
 
-ここでは、ビュータイプを`PageLayout`これは、Microsoft Word の印刷レイアウト表示に似ています。これにより、文書が印刷されたときにどのように表示されるかをより正確に表現できます。
+ここでは、ビュータイプを`PageLayout`これは、Microsoft Word の印刷レイアウト表示に似ています。これにより、文書が印刷されたときにどのように表示されるかがより正確に表現されます。
 
 ## ステップ3: ズームレベルを調整する
 

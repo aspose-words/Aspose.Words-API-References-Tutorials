@@ -7,105 +7,104 @@ type: docs
 weight: 10
 url: /sv/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
+## Introduktion
 
-Den här artikeln ger en steg-för-steg-guide om hur man minskar pdf-storlek med skala wmf-teckensnitt till metafilstorlek med Aspose.Words för .NET. Vi kommer att förklara varje del av koden i detalj. I slutet av denna handledning kommer du att kunna förstå hur du aktiverar eller inaktiverar WMF-teckensnittsskalning när du konverterar till PDF.
+När du arbetar med PDF-filer, särskilt de som genereras från Word-dokument som innehåller WMF-grafik (Windows Metafile), kan storlekshantering bli en avgörande aspekt av dokumenthantering. Ett sätt att styra PDF-storleken är genom att justera hur WMF-teckensnitt renderas i dokumentet. I den här handledningen kommer vi att undersöka hur du minskar PDF-storleken genom att skala WMF-teckensnitt till metafilstorleken med Aspose.Words för .NET.
 
-Innan du börjar, se till att du har installerat och konfigurerat Aspose.Words for .NET-biblioteket i ditt projekt. Du hittar biblioteket och installationsinstruktioner på Asposes webbplats.
+## Förutsättningar
 
-## Steg 1: Definiera dokumentkatalogen
+Innan du dyker in i stegen, se till att du har följande:
 
- För att börja måste du definiera sökvägen till katalogen där dina dokument finns. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+1. Aspose.Words för .NET: Se till att du har Aspose.Words-biblioteket installerat. Om inte, kan du[ladda ner den här](https://releases.aspose.com/words/net/).
+2. Utvecklingsmiljö: Denna handledning förutsätter att du har en .NET-utvecklingsmiljö inställd (som Visual Studio) där du kan skriva och köra C#-kod.
+3. Grundläggande förståelse för .NET-programmering: Bekantskap med grundläggande .NET-programmeringskoncept och C#-syntax kommer att vara till hjälp.
+4. Word-dokument med WMF-grafik: Du behöver ett Word-dokument som innehåller WMF-grafik. Du kan använda ditt eget dokument eller skapa ett för testning.
+
+## Importera namnområden
+
+Först måste du importera de nödvändiga namnrymden i ditt C#-projekt. Detta ger dig tillgång till de klasser och metoder som krävs för att arbeta med Aspose.Words.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Steg 2: Ladda upp dokumentet
+## Steg 1: Ladda Word-dokumentet
 
-Därefter måste vi ladda dokumentet vi vill bearbeta. I det här exemplet antar vi att dokumentet heter "WMF med text.docx" och finns i den angivna dokumentkatalogen.
+ Börja med att ladda Word-dokumentet som innehåller WMF-grafiken. Detta görs med hjälp av`Document` klass från Aspose.Words.
 
 ```csharp
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Ladda dokumentet
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
-## Steg 3: Konfigurera alternativ för metafilrendering
+ Här,`dataDir` är en platshållare för sökvägen till din dokumentkatalog. Vi skapar en instans av`Document` klass genom att skicka sökvägen till Word-filen. Detta laddar dokumentet i minnet, redo för vidare bearbetning.
 
- För att aktivera eller inaktivera WMF-teckensnittsskalning till metafilstorlek måste vi konfigurera`MetafileRenderingOptions` objekt. I det här exemplet inaktiverar vi teckensnittsskalning genom att ställa in`ScaleWmfFontsToMetafileSize`egendom till`false`.
+## Steg 2: Konfigurera metafilåtergivningsalternativ
+
+ Därefter måste du konfigurera alternativen för metafilrendering. Specifikt, ställ in`ScaleWmfFontsToMetafileSize`egendom till`false`. Detta styr om WMF-teckensnitt skalas för att matcha metafilstorleken.
 
 ```csharp
+// Skapa en ny instans av MetafileRenderingOptions
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 {
-     ScaleWmfFontsToMetafileSize=false
+    ScaleWmfFontsToMetafileSize = false
 };
 ```
 
-## Steg 4: Konfigurera spara som PDF-alternativ med alternativ för metafilrendering
+ De`MetafileRenderingOptions` klass ger alternativ för hur metafiler (som WMF) renderas. Genom att sätta`ScaleWmfFontsToMetafileSize` till`false`, instruerar du Aspose.Words att inte skala teckensnitt enligt metafilstorleken, vilket kan hjälpa till att minska den totala PDF-storleken.
 
-Slutligen kan vi konfigurera spara-till-PDF-alternativen med hjälp av metafilåtergivningsalternativen som konfigurerats tidigare.
+## Steg 3: Ställ in PDF-sparalternativ
+
+Konfigurera nu PDF-sparalternativen för att använda alternativen för metafilrendering som du just har ställt in. Detta berättar för Aspose.Words hur man hanterar metafiler när man sparar dokumentet som en PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
+// Skapa en ny instans av PdfSaveOptions
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    MetafileRenderingOptions = metafileRenderingOptions
+};
 ```
 
-## Steg 5: Spara dokument som PDF med metafilåtergivningsalternativ
+ De`PdfSaveOptions` class låter dig ange olika inställningar för att spara dokumentet som en PDF. Genom att tilldela den tidigare konfigurerade`MetafileRenderingOptions` till`MetafileRenderingOptions` egendom av`PdfSaveOptions`, ser du till att dokumentet sparas enligt dina önskade metafilrenderingsinställningar.
 
-Spara dokumentet i PDF-format med de tidigare konfigurerade sparalternativen.
+## Steg 4: Spara dokumentet som PDF
+
+Slutligen sparar du Word-dokumentet som en PDF med hjälp av de konfigurerade sparalternativen. Detta kommer att tillämpa alla inställningar, inklusive alternativen för rendering av metafiler, på den utgående PDF-filen.
+
 
 ```csharp
+// Spara dokumentet som PDF
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-Det är allt ! Du har framgångsrikt aktiverat eller inaktiverat WMF-teckensnittsskalning till metafilstorlek vid konvertering
-
-ett PDF-dokument med Aspose.Words för .NET.
-
-### Exempel på källkod för att skala WMF-teckensnitt till metafilstorlek med Aspose.Words för .NET
-
-```csharp
-
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "WMF with text.docx");
-
-	MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
-	{
-		ScaleWmfFontsToMetafileSize = false
-	};
-
-	//Om Aspose.Words inte kan rendera några av metafilposterna korrekt till vektorgrafik
-	// sedan renderar Aspose.Words denna metafil till en bitmapp.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
-	
-        
-```
+ I detta steg,`Save` metod för`Document` klass används för att exportera dokumentet till en PDF-fil. Sökvägen där PDF:en kommer att sparas anges, tillsammans med`PdfSaveOptions` som inkluderar metafilrenderingsinställningarna.
 
 ## Slutsats
 
-I den här handledningen förklarade vi hur man aktiverar eller inaktiverar storleksändring av WMF-teckensnitt till metafilstorlek i ett PDF-dokument med Aspose.Words för .NET. Genom att följa stegen som beskrivs kan du enkelt kontrollera om WMF-teckensnitt ska ändras för att matcha metafilstorleken vid konvertering till ett PDF-dokument. Detta kan hjälpa dig att minska storleken på den genererade PDF-filen och förbättra renderingsprestanda. Var noga med att ange rätt sökväg till dina dokument och konfigurera alternativen för metafilrendering efter behov.
+Genom att skala WMF-teckensnitt till metafilstorlek kan du avsevärt minska storleken på dina PDF-filer som genereras från Word-dokument. Denna teknik hjälper till att optimera dokumentlagring och distribution utan att kompromissa med kvaliteten på det visuella innehållet. Genom att följa stegen ovan säkerställer du att dina PDF-filer är mer hanterbara och effektiva i storlek.
 
-### Vanliga frågor
+## FAQ's
 
-#### F: Vad är att ändra storlek på WMF-teckensnitt till metafilstorlek i ett PDF-dokument?
-S: Ändra storlek på WMF-teckensnitt till metafilstorlek i ett PDF-dokument är en funktion som styr om WMF-teckensnitt ska skalas för att matcha metafilstorleken vid konvertering till ett PDF-dokument. När den här funktionen är aktiverad skalas WMF-teckensnitt för att matcha storleken på metafilen, vilket kan minska storleken på det genererade PDF-dokumentet.
+### Vad är WMF och varför är det viktigt för PDF-storlek?
 
-#### F: Hur kan jag använda Aspose.Words för .NET för att aktivera eller inaktivera storleksändring av WMF-teckensnitt till metafilstorlek i ett PDF-dokument?
-S: För att aktivera eller inaktivera storleksändring av WMF-teckensnitt till metafilstorlek i ett PDF-dokument med Aspose.Words för .NET, följ dessa steg:
+WMF (Windows Metafile) är ett grafiskt format som används i Microsoft Windows. Den kan innehålla både vektor- och bitmappsdata. Eftersom vektordata kan skalas och manipuleras är det viktigt att hantera det på rätt sätt för att undvika onödigt stora PDF-filer.
 
- Ställ in katalogsökvägen där dina dokument finns genom att ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+### Hur påverkar skalning av WMF-teckensnitt till metafilstorlek PDF:en?
 
- Ladda dokumentet du vill bearbeta med hjälp av`Document` klass och ange sökvägen till Word-dokumentet i den angivna dokumentkatalogen.
+Att skala WMF-teckensnitt till metafilstorlek kan hjälpa till att minska den totala PDF-storleken genom att undvika högupplöst teckensnittsrendering som kan öka filstorleken.
 
- Konfigurera alternativ för metafilrendering genom att skapa en instans av`MetafileRenderingOptions` klass och ställa in`ScaleWmfFontsToMetafileSize`egendom till`true` för att möjliggöra skalning av WMF-teckensnitt till metafilstorlek, eller till`false` för att inaktivera den här funktionen.
+### Kan jag använda andra metafilformat med Aspose.Words?
 
- Konfigurera alternativen för att spara som PDF genom att skapa en instans av`PdfSaveOptions` klass och använda alternativen för metafilrendering som konfigurerats tidigare.
+Ja, Aspose.Words stöder olika metafilformat, inklusive EMF (Enhanced Metafile) förutom WMF.
 
- Spara dokumentet i PDF-format med hjälp av`Save` metod för`Document` klass som anger sökvägen och sparalternativ.
+### Är denna teknik tillämpbar på alla typer av Word-dokument?
 
-#### F: Vilka är fördelarna med att ändra storlek på WMF-teckensnitt till metafilstorlek i ett PDF-dokument?
-S: Fördelarna med att ändra storlek på WMF-teckensnitt till metafilstorlek i ett PDF-dokument är:
+Ja, den här tekniken kan tillämpas på alla Word-dokument som innehåller WMF-grafik, vilket hjälper till att optimera storleken på den genererade PDF-filen.
 
-Reduktion av PDF-filstorlek: Ändra storlek på WMF-teckensnitt till metafilstorlek kan minska storleken på det genererade PDF-dokumentet genom att anpassa teckensnittsstorleken till metafilbehoven.
+### Var kan jag hitta mer information om Aspose.Words?
 
-Förbättrad prestanda: Genom att anpassa storleken på WMF-teckensnitt till metafilens mått kan renderingen av PDF-dokumentet bli snabbare och effektivare.
+ Du kan utforska mer om Aspose.Words i[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) . För nedladdningar, testversioner och support, besök[Aspose.Words nedladdningssida](https://releases.aspose.com/words/net/), [Köp Aspose.Words](https://purchase.aspose.com/buy), [Gratis provperiod](https://releases.aspose.com/), [Tillfällig licens](https://purchase.aspose.com/temporary-license/) , och[Stöd](https://forum.aspose.com/c/words/8).

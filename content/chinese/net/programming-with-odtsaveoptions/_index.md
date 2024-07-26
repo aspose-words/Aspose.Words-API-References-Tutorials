@@ -16,4 +16,4 @@ Aspose.Words for .NET 教程是学习如何在开发项目中操作和充分利�
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [测量单位](./measure-unit/) | 了解如何在使用 Aspose.Words for .NET 将 Word 文档转换为 ODT 时指定度量单位。 |
+| [测量单位](./measure-unit/) | 了解如何配置 Aspose.Words for .NET 中的测量单位功能以在 ODT 转换期间保留文档格式。 |

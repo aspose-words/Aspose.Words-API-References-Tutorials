@@ -2,35 +2,49 @@
 title: Exportar marcadores de encabezado y pie de página de un documento de Word a un documento PDF
 linktitle: Exportar marcadores de encabezado y pie de página de un documento de Word a un documento PDF
 second_title: API de procesamiento de documentos Aspose.Words
-description: Guía paso a paso para exportar marcadores de encabezado y pie de página de documentos de Word a marcadores de documentos PDF con Aspose.Words para .NET.
+description: Aprenda a exportar marcadores de encabezado y pie de página de un documento de Word a PDF usando Aspose.Words para .NET con nuestra guía paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## Introducción
 
-Este artículo proporciona una guía paso a paso sobre cómo exportar marcadores de pie de página de encabezado de documento de Word a la función de documento pdf con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo exportar marcadores de encabezados y pies de página de un documento y generar un PDF con los marcadores apropiados.
+Convertir documentos de Word a PDF es una tarea común, especialmente cuando desea compartir o archivar documentos conservando su formato. A veces, estos documentos contienen marcadores importantes en los encabezados y pies de página. En este tutorial, recorreremos el proceso de exportar estos marcadores de un documento de Word a un PDF usando Aspose.Words para .NET.
 
-Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
+## Requisitos previos
 
-## Paso 1: definir el directorio de documentos
+Antes de sumergirnos, asegúrese de tener lo siguiente:
 
- Para comenzar, debe definir la ruta al directorio donde se encuentran sus documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
+- Aspose.Words para .NET: Debe tener instalado Aspose.Words para .NET. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+- Entorno de desarrollo: configure su entorno de desarrollo. Puede utilizar Visual Studio o cualquier otro IDE compatible con .NET.
+- Conocimientos básicos de C#: se requiere familiaridad con la programación de C# para seguir los ejemplos de código.
+
+## Importar espacios de nombres
+
+Lo primero es lo primero: debe importar los espacios de nombres necesarios en su proyecto C#. Agregue estas líneas en la parte superior de su archivo de código:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Paso 2: Sube el documento
+Dividamos el proceso en pasos fáciles de seguir.
 
-continuación, debemos cargar el documento que queremos procesar. En este ejemplo, asumimos que el documento se llama "Marcadores en encabezados y pies de página.docx" y está ubicado en el directorio de documentos especificado.
+## Paso 1: Inicializar el documento
+
+El primer paso es cargar su documento de Word. Así es como puedes hacerlo:
 
 ```csharp
+// La ruta al directorio de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## Paso 3: Configurar las opciones de guardar como PDF
+En este paso, simplemente especificará la ruta a su directorio de documentos y cargará el documento de Word.
 
- Para exportar marcadores de encabezado y pie de página, necesitamos configurar el`PdfSaveOptions` objeto. En este ejemplo, configuramos el nivel de esquema de marcador predeterminado en 1 y el modo de exportación de marcadores de encabezado y pie de página en "Primero".
+## Paso 2: configurar las opciones de guardar PDF
+
+A continuación, debe configurar las opciones de guardado de PDF para asegurarse de que los marcadores en los encabezados y pies de página se exporten correctamente.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## Paso 4: guarde el documento como PDF con marcadores de encabezados y pies de página
+ Aquí estamos configurando el`PdfSaveOptions` . El`DefaultBookmarksOutlineLevel` La propiedad establece el nivel de contorno de los marcadores y el`HeaderFooterBookmarksExportMode` La propiedad garantiza que solo se exporte la primera aparición de marcadores en encabezados y pies de página.
 
-Finalmente podremos guardar el documento en formato PDF utilizando las opciones de guardado configuradas previamente.
+## Paso 3: guarde el documento como PDF
+
+Finalmente, guarde su documento como PDF con las opciones configuradas.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-Eso es todo ! Ha exportado correctamente los marcadores de encabezado y pie de página de un documento y ha generado un PDF con los marcadores adecuados utilizando Aspose.Words para .NET.
-
-### Código fuente de muestra para exportar marcadores de encabezado y pie de página con Aspose.Words para .NET
-
-```csharp
-
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+En este paso, guardará el documento en la ruta especificada con las opciones que ha configurado.
 
 ## Conclusión
 
-En este tutorial, explicamos cómo exportar marcadores de encabezado y pie de página de un documento de Word a un documento PDF usando Aspose.Words para .NET. Los marcadores exportados permiten una navegación sencilla y una referencia rápida a los encabezados y pies de página correspondientes en el documento PDF generado. Siga los pasos descritos para exportar marcadores de encabezado y pie de página de un documento y generar un PDF con los marcadores apropiados usando Aspose.Words para .NET. Asegúrese de especificar la ruta correcta a sus documentos y configurar las opciones de guardado según sea necesario.
+¡Y ahí lo tienes! Si sigue estos pasos, puede exportar fácilmente marcadores de los encabezados y pies de página de un documento de Word a un PDF usando Aspose.Words para .NET. Este método garantiza que las ayudas de navegación importantes dentro de su documento se conserven en formato PDF, lo que facilita a los lectores la navegación por su documento.
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 
-### P: ¿Qué significa exportar marcadores de encabezado y pie de página de un documento de Word a un documento PDF?
-R: Exportar marcadores de encabezado y pie de página de un documento de Word a un documento PDF es una función para mantener y generar marcadores en el documento PDF a partir de los encabezados y pies de página. pies de página del documento original de Word. Esto permite a los usuarios navegar rápida y fácilmente por el documento PDF utilizando marcadores correspondientes a encabezados y pies de página.
+### ¿Puedo exportar todos los marcadores del documento de Word a PDF?
 
-### P: ¿Cómo puedo usar Aspose.Words para .NET para exportar marcadores de encabezado y pie de página de un documento de Word a un documento PDF?
-R: Para exportar marcadores de encabezado y pie de página de un documento de Word a un documento PDF usando Aspose.Words para .NET, siga estos pasos:
+ Sí tu puedes. En el`PdfSaveOptions`, puede ajustar la configuración para incluir todos los marcadores si es necesario.
 
- Establezca la ruta del directorio donde se encuentran sus documentos reemplazando`"YOUR DOCUMENT DIRECTORY"` con la ruta real de su directorio de documentos.
+### ¿Qué pasa si también quiero exportar marcadores del cuerpo del documento?
 
- Cargue el documento que desea procesar utilizando el`Document` clase y especifique la ruta al documento de Word en el directorio de documentos especificado.
+ Puedes configurar el`OutlineOptions` en`PdfSaveOptions` para incluir marcadores del cuerpo del documento.
 
- Configure las opciones de guardar como PDF creando una instancia del`PdfSaveOptions` clase y configurar las opciones apropiadas de marcador de encabezado y pie de página.
+### ¿Es posible personalizar los niveles de marcadores en el PDF?
 
- Guarde el documento en formato PDF utilizando el`Save` método de la`Document` clase que especifica la ruta y las opciones de guardado.
+ ¡Absolutamente! Puedes personalizar el`DefaultBookmarksOutlineLevel` propiedad para establecer diferentes niveles de contorno para sus marcadores.
 
-### P: ¿Cuáles son los beneficios de exportar marcadores de encabezado y pie de página a un documento PDF?
-R: Las ventajas de exportar marcadores de encabezado y pie de página a un documento PDF son:
+### ¿Cómo manejo documentos sin marcadores?
 
-Navegación sencilla: los marcadores permiten a los usuarios navegar fácilmente en un documento PDF haciendo referencia a encabezados y pies de página específicos.
+Si su documento no tiene marcadores, el PDF se generará sin ningún contorno de marcador. Asegúrese de que su documento contenga marcadores si los necesita en el PDF.
 
-Referencia rápida: los marcadores permiten a los usuarios encontrar rápidamente secciones relevantes del documento PDF según los encabezados y pies de página.
+### ¿Puedo utilizar este método para otros tipos de documentos como DOCX o RTF?
+
+Sí, Aspose.Words para .NET admite varios tipos de documentos, incluidos DOCX, RTF y otros.

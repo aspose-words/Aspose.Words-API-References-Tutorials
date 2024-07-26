@@ -23,7 +23,7 @@ url: /ko/net/programming-with-document-options-and-settings/set-russian-as-defau
 
 ## 네임스페이스 가져오기
 
-세부 사항을 알아보기 전에 프로젝트에 필요한 네임스페이스를 가져왔는지 확인하세요. 이러한 네임스페이스는 Word 문서를 조작하는 데 필요한 클래스 및 메서드에 대한 액세스를 제공합니다.
+세부 사항을 알아보기 전에 프로젝트에 필요한 네임스페이스를 가져왔는지 확인하세요. 이러한 네임스페이스는 Word 문서를 조작하는 데 필요한 클래스와 메서드에 대한 액세스를 제공합니다.
 
 ```csharp
 using Aspose.Words;
@@ -85,7 +85,7 @@ Console.WriteLine(
         : "The document default language was set to another than Russian language originally, so it is not overridden.");
 ```
 
- 이 단계에서는`LocaleId` 기본 글꼴 스타일을 선택하고 이를`EditingLanguage.Russian` 식별자. 출력 메시지는 기본 언어가 러시아어로 설정되어 있는지 여부를 나타냅니다.
+ 이 단계에서는`LocaleId` 기본 글꼴 스타일을 선택하고 이를`EditingLanguage.Russian` 식별자. 출력 메시지에는 기본 언어가 러시아어로 설정되어 있는지 여부가 표시됩니다.
 
 ## 결론
 

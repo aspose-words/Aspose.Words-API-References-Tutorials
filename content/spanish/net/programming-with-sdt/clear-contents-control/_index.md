@@ -2,59 +2,110 @@
 title: Control de contenido claro
 linktitle: Control de contenido claro
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo borrar el contenido de un control en un documento de Word usando Aspose.Words para .NET.
+description: Aprenda cómo borrar el control de contenidos en un documento de Word usando Aspose.Words para .NET con nuestra guía paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-sdt/clear-contents-control/
 ---
+## Introducción
 
-Este tutorial demuestra cómo borrar el contenido de una SDT en un documento de Word usando Aspose.Words para .NET. Al borrar el contenido de una SDT, se elimina cualquier texto o nodos secundarios dentro del control de contenido.
+¿Estás listo para sumergirte en el mundo de Aspose.Words para .NET? Hoy vamos a explorar cómo borrar el control de contenidos en un documento de Word usando esta poderosa biblioteca. ¡Comencemos con una guía paso a paso fácil de seguir!
 
 ## Requisitos previos
-Para seguir este tutorial, necesita tener lo siguiente:
 
-- Aspose.Words para la biblioteca .NET instalada.
-- Conocimientos básicos de C# y procesamiento de textos con documentos Word.
+Antes de comenzar, asegúrese de tener los siguientes requisitos previos:
 
-## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde se encuentra su documento.
+1.  Aspose.Words para .NET: descargue la biblioteca desde[aquí](https://releases.aspose.com/words/net/).
+2. .NET Framework: asegúrese de tener .NET Framework instalado en su máquina.
+3. IDE: un entorno de desarrollo integrado como Visual Studio.
+4. Documento: un documento de Word con etiquetas de documento estructuradas.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
+Con estos requisitos previos implementados, estará listo para comenzar a codificar.
 
-## Paso 2: cargue el documento y obtenga la etiqueta StructuredDocumentTag
- Cargue el documento de Word usando el`Document` constructor, pasando la ruta al documento como parámetro. Luego, recupere el deseado`StructuredDocumentTag`del documento. En este ejemplo, asumimos que SDT es el primer nodo secundario del documento.
+## Importar espacios de nombres
 
-```csharp
-Document doc = new Document(dataDir + "Structured document tags.docx");
-StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
-```
-
-## Paso 3: borrar el contenido de StructuredDocumentTag
- Borre el contenido del SDT utilizando el`Clear` método. Esto elimina cualquier texto o nodos secundarios dentro del control de contenido.
+Para utilizar Aspose.Words para .NET, debe importar los espacios de nombres necesarios. Aquí hay un fragmento rápido para comenzar:
 
 ```csharp
-sdt.Clear();
+using Aspose.Words;
+using Aspose.Words.Markup;
 ```
 
-## Paso 4: guarde el documento
- Guarde el documento modificado usando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithSdt.ClearContentsControl.doc".
+Dividamos el proceso de limpieza del control de contenidos en pasos detallados.
 
-```csharp
-doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
+## Paso 1: configura tu proyecto
+
+Primero, configure el entorno de su proyecto.
+
+1. Abra Visual Studio: inicie Visual Studio o su IDE preferido.
+2.  Crear un nuevo proyecto: ir a`File` >`New` >`Project`y seleccione una aplicación de consola C#.
+3. Instale Aspose.Words para .NET: utilice el Administrador de paquetes NuGet para instalar Aspose.Words. Ejecute el siguiente comando en la Consola del Administrador de paquetes:
+```sh
+Install-Package Aspose.Words
 ```
 
-### Código fuente de ejemplo para Clear Contents Control usando Aspose.Words para .NET 
+## Paso 2: cargue el documento
 
-```csharp
-	// Ruta a su directorio de documentos
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+A continuación, carguemos el documento de Word que contiene las etiquetas del documento estructurado.
 
-	Document doc = new Document(dataDir + "Structured document tags.docx");
-	StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
-	sdt.Clear();
-	doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
-```
+1. Ruta al documento: defina la ruta a su directorio de documentos.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  Cargue el documento: utilice el`Document` clase para cargar su documento de Word.
+   ```csharp
+   Document doc = new Document(dataDir + "Structured document tags.docx");
+   ```
 
-¡Eso es todo! Ha borrado con éxito el contenido de StructuredDocumentTag en su documento de Word usando Aspose.Words para .NET.
+## Paso 3: Acceda a la etiqueta de documento estructurado
+
+Ahora, accedamos a la etiqueta de documento estructurado (SDT) dentro del documento.
+
+1. Obtener nodo SDT: recupere el nodo SDT del documento.
+   ```csharp
+   StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
+   ```
+
+## Paso 4: Borrar el contenido de SDT
+
+Borre el contenido de la etiqueta del documento estructurado.
+
+1.  Borrar contenido SDT: utilice el`Clear` método para eliminar el contenido.
+   ```csharp
+   sdt.Clear();
+   ```
+
+## Paso 5: guarde el documento
+
+Finalmente, guarde el documento modificado.
+
+1. Guardar documento: guarde el documento con un nuevo nombre para conservar el archivo original.
+   ```csharp
+   doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
+   ```
+
+## Conclusión
+
+¡Felicidades! Ha borrado con éxito el control de contenidos en un documento de Word usando Aspose.Words para .NET. Esta poderosa biblioteca facilita la manipulación de documentos de Word. Si sigue estos pasos, podrá administrar fácilmente etiquetas de documentos estructurados en sus proyectos.
+
+## Preguntas frecuentes
+
+### ¿Qué es Aspose.Words para .NET?
+
+Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos de Word mediante programación dentro del marco .NET.
+
+### ¿Puedo utilizar Aspose.Words gratis?
+
+ Aspose.Words ofrece una prueba gratuita que puedes descargar[aquí](https://releases.aspose.com/).
+
+### ¿Cómo obtengo soporte para Aspose.Words?
+
+ Puede obtener apoyo de la comunidad Aspose[aquí](https://forum.aspose.com/c/words/8).
+
+### ¿Qué son las etiquetas de documentos estructurados?
+
+Las etiquetas de documentos estructurados (SDT) son controles de contenido en documentos de Word que actúan como marcadores de posición para tipos específicos de contenido.
+
+### ¿Dónde puedo encontrar la documentación de Aspose.Words?
+
+ La documentación está disponible.[aquí](https://reference.aspose.com/words/net/).

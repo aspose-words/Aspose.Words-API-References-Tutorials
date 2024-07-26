@@ -17,7 +17,7 @@ För att följa denna handledning måste du ha följande:
 - Grundläggande kunskaper i C# och ordbehandling med Word-dokument.
 
 ## Steg 1: Konfigurera dokumentkatalogen
- Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen till katalogen där du vill spara dokumentet.
+ Börja med att ställa in sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till katalogen där du vill spara dokumentet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Steg 4: Skapa en tabell- och tabellstruktur
- Börja skapa en tabell med hjälp av`StartTable` metod för`DocumentBuilder` . Lägg till tabellceller och innehåll med hjälp av`InsertCell`och`Write` metoder.
+Börja skapa en tabell med hjälp av`StartTable` metod för`DocumentBuilder` . Lägg till tabellceller och innehåll med hjälp av`InsertCell`och`Write` metoder.
 
 ```csharp
 Table table = builder.StartTable();
@@ -98,7 +98,7 @@ row.AppendChild(authorSdt);
 ```
 
 ## Steg 8: Spara dokumentet
- Spara det ändrade dokumentet i den angivna katalogen med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
+ Spara det ändrade dokumentet i den angivna katalogen med hjälp av`Save`metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");

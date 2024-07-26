@@ -21,7 +21,7 @@ Avant de commencer, assurez-vous d'avoir les prérequis suivants :
 
 ## Importer des espaces de noms
 
-Tout d’abord, assurez-vous d’avoir importé les espaces de noms nécessaires dans votre projet. Cela aide à accéder aux classes et méthodes requises pour notre tâche de conversion.
+Tout d’abord, assurez-vous que les espaces de noms nécessaires sont importés dans votre projet. Cela aide à accéder aux classes et méthodes requises pour notre tâche de conversion.
 
 ```csharp
 using Aspose.Words;
@@ -92,7 +92,7 @@ Les fichiers TXT ne prennent pas en charge le formatage de texte enrichi, la sor
 
 ### Puis-je convertir des fichiers DOCX vers d'autres formats à l'aide d'Aspose.Words pour .NET ?
 
-Oui, Aspose.Words for .NET prend en charge la conversion de fichiers DOCX vers divers formats tels que PDF, HTML, etc.
+Oui, Aspose.Words for .NET prend en charge la conversion de fichiers DOCX vers différents formats tels que PDF, HTML, etc.
 
 ### Où puis-je trouver davantage de didacticiels et d’assistance pour Aspose.Words for .NET ?
 

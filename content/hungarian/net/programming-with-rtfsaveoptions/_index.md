@@ -16,4 +16,4 @@ Az Aspose.Words for .NET oktatóanyagok használatával könnyedén kezelheti é
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Képek mentése Wmf formátumban](./saving-images-as-wmf/) | Ismerje meg, hogyan mentheti el a képeket WMF-ként, amikor RTF-re konvertál az Aspose.Words for .NET segítségével. |
+| [Képek mentése Wmf formátumban](./saving-images-as-wmf/) | Részletes, lépésenkénti útmutatónkból megtudhatja, hogyan menthet el képeket WMF-ként Word dokumentumokban az Aspose.Words for .NET használatával. Növelje dokumentumkompatibilitását és képminőségét. |

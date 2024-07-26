@@ -1,6 +1,6 @@
 ---
-title: Bekijk opties
-linktitle: Bekijk opties
+title: Bekijk Opties
+linktitle: Bekijk Opties
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u opties in Word-documenten kunt bekijken met Aspose.Words voor .NET. Deze handleiding behandelt het instellen van weergavetypen, het aanpassen van zoomniveaus en het opslaan van uw document.
 type: docs

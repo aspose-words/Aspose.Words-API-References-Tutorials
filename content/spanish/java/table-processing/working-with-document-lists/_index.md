@@ -77,7 +77,7 @@ public class ModifyDocumentListExample {
         // Accede a la lista
         List list = doc.getLists().get(0);
 
-        // Agregar un nuevo elemento
+        // Agregar un nuevo artículo
         list.getListItems().add("New Item");
 
         // Guardar el documento modificado
@@ -132,4 +132,4 @@ Sí, Aspose.Words para Java proporciona un amplio soporte para trabajar con tabl
 
 ## Conclusión
 
-En esta guía completa, exploramos el mundo del trabajo con listas de documentos usando Aspose.Words para Java. Ha aprendido a crear, modificar y extraer información de listas de documentos, todo con el poder y la flexibilidad de Aspose.Words para Java. Comience a implementar estas técnicas en sus proyectos Java hoy y agilice sus tareas de automatización de documentos.
+En esta guía completa, exploramos el mundo del trabajo con listas de documentos utilizando Aspose.Words para Java. Ha aprendido a crear, modificar y extraer información de listas de documentos, todo con el poder y la flexibilidad de Aspose.Words para Java. Comience a implementar estas técnicas en sus proyectos Java hoy y agilice sus tareas de automatización de documentos.

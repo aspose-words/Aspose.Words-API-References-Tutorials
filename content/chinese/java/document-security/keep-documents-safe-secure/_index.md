@@ -209,7 +209,7 @@ doc.save("path/to/converted/document.html", SaveFormat.HTML);
 ### Aspose.Words 除了 Word 之外还支持其他文档格式吗？
    是的，Aspose.Words 支持多种格式，包括 PDF、HTML、EPUB 等。
 
-### 是否可以在一份文档中添加多个数字签名？
+### 是否可以在文档中添加多个数字签名？
    是的，Aspose.Words 允许您向文档添加多个数字签名。
 
 ### Aspose.Words 支持文档密码恢复吗？

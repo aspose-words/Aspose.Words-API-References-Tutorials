@@ -2,71 +2,128 @@
 title: Css Sınıf Adı Öneki Ekle
 linktitle: Css Sınıf Adı Öneki Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir belgeyi HTML'ye dönüştürürken CSS sınıfı adı öneki eklemek için adım adım kılavuz.
+description: Aspose.Words for .NET kullanarak Word belgelerini HTML olarak kaydederken CSS sınıfı adı önekini nasıl ekleyeceğinizi öğrenin. Adım adım kılavuz, kod parçacıkları ve SSS'ler dahildir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET ile CSS sınıfı adı öneki eklemek için C# kaynak kodunu adım adım anlatacağız. Bu özellik, bir belgeyi HTML'ye dönüştürürken oluşturulan CSS sınıfı adlarına özel bir önek eklemenizi sağlar.
+Hoş geldin! Aspose.Words for .NET dünyasına dalıyorsanız, sizi bir ziyafet bekliyor. Bugün Aspose.Words for .NET kullanarak bir Word belgesini HTML olarak kaydederken CSS sınıfı adı önekinin nasıl ekleneceğini inceleyeceğiz. Bu özellik, HTML dosyalarınızda sınıf adı çakışmalarını önlemek istediğinizde son derece kullanışlıdır.
 
-## Adım 1: Proje Kurulumu
+## Önkoşullar
 
-Başlamak için favori IDE'nizde yeni bir C# projesi oluşturun. Projenizde Aspose.Words for .NET kütüphanesine başvurulduğundan emin olun.
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-## Adım 2: Belgeyi yükleme
+-  Aspose.Words for .NET: Henüz yüklemediyseniz,[buradan indir](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio veya başka herhangi bir C# IDE.
+-  Bir Word Belgesi: Adlı bir belge kullanacağız`Rendering.docx`. Proje dizininize yerleştirin.
 
-Bu adımda HTML'ye dönüştürmek istediğimiz Word belgesini yükleyeceğiz. Belgeyi yüklemek için aşağıdaki kodu kullanın:
+## Ad Alanlarını İçe Aktar
+
+Öncelikle C# projenize gerekli ad alanlarının aktarıldığından emin olun. Bunları kod dosyanızın en üstüne ekleyin:
 
 ```csharp
-//Belgeler dizininin yolu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Şimdi adım adım kılavuza geçelim!
+
+## 1. Adım: Projenizi Kurun
+
+CSS sınıfı adı öneki eklemeye başlamadan önce projemizi oluşturalım.
+
+### Adım 1.1: Yeni Bir Proje Oluşturun
+
+ Visual Studio'nuzu çalıştırın ve yeni bir Konsol Uygulaması projesi oluşturun. Buna akılda kalıcı bir şey söyle`AsposeCssPrefixExample`.
+
+### Adım 1.2: Aspose.Words for .NET'i ekleyin
+
+Henüz yapmadıysanız Aspose.Words for .NET'i NuGet aracılığıyla projenize ekleyin. NuGet Paket Yöneticisi Konsolunu açmanız ve çalıştırmanız yeterlidir:
+
+```bash
+Install-Package Aspose.Words
+```
+
+Harika! Artık kodlamaya başlamaya hazırız.
+
+## 2. Adım: Belgenizi Yükleyin
+
+Yapmamız gereken ilk şey HTML'ye dönüştürmek istediğimiz Word belgesini yüklemek.
+
+### Adım 2.1: Belge Yolunu Tanımlayın
+
+ Belge dizininizin yolunu ayarlayın. Bu eğitimin amacına uygun olarak, belgenizin adlı bir klasörde olduğunu varsayalım.`Documents` proje dizininizde.
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### Adım 2.2: Belgeyi Yükleyin
+
+Şimdi belgeyi Aspose.Words kullanarak yükleyelim:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` belgenizin bulunduğu dizinin gerçek yolu ile.
+## 3. Adım: HTML Kaydetme Seçeneklerini Yapılandırın
 
-## 3. Adım: HTML kaydetme seçeneklerini ayarlayın
+Daha sonra, HTML kaydetme seçeneklerini bir CSS sınıfı adı öneki içerecek şekilde yapılandırmamız gerekiyor.
 
-Şimdi CSS stil sayfası türü ve CSS sınıfı adı öneki dahil olmak üzere HTML kaydetme seçeneklerini ayarlayalım. Aşağıdaki kodu kullanın:
+### Adım 3.1: HTML Kaydetme Seçenekleri Oluşturun
+
+ Örnekleyin`HtmlSaveOptions` nesnesini seçin ve CSS stil sayfası türünü şu şekilde ayarlayın:`External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
- Bu kod bir örneğini oluşturur`HtmlSaveOptions` ve setler`CssStyleSheetType` ile`CssStyleSheetType.External` harici bir CSS stil sayfası oluşturmak ve`CssClassNamePrefix` ile`"pfx_"` önek için`"pfx_"` CSS sınıfını adlandırmak için.
+### Adım 3.2: CSS Sınıfı Adı Önekini Ayarlayın
 
-## Adım 4: Belgeyi HTML'ye dönüştürme ve kaydetme
+ Şimdi ayarları yapalım`CssClassNamePrefix` özelliği istediğiniz öneke ekleyin. Bu örnek için şunu kullanacağız:`"pfx_"`.
 
-Son olarak, daha önce tanımladığımız HTML kaydetme seçeneklerini kullanarak belgeyi HTML'ye dönüştüreceğiz. Aşağıdaki kodu kullanın:
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## Adım 4: Belgeyi HTML olarak kaydedin
+
+Son olarak yapılandırılmış seçeneklerimizle belgeyi HTML dosyası olarak kaydedelim.
+
+
+Çıkış HTML dosyası yolunu belirtin ve belgeyi kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-Bu kod, belgeyi HTML'ye dönüştürür ve CSS sınıfı adı öneki eklenmiş bir dosyaya kaydeder.
+## Adım 5: Çıktıyı Doğrulayın
 
-### Aspose.Words for .NET kullanarak Css Sınıf Adı Öneki Ekleme için örnek kaynak kodu
+ Projenizi çalıştırdıktan sonra şuraya gidin:`Documents` dosya. Adlı bir HTML dosyası bulmalısınız.`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . CSS sınıflarının öneke sahip olduğunu doğrulamak için bu dosyayı bir metin düzenleyicide veya tarayıcıda açın.`pfx_`.
 
-```csharp
+## Çözüm
 
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak HTML çıktınıza başarıyla bir CSS sınıfı adı öneki eklediniz. Bu basit ama güçlü özellik, HTML belgelerinizde temiz ve çakışmayan stiller korumanıza yardımcı olabilir.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## SSS'ler
 
-```
+### Her kaydetme işlemi için farklı bir önek kullanabilir miyim?
+ Evet, bir belgeyi her kaydettiğinizde ön eki değiştirerek, öneki özelleştirebilirsiniz.`CssClassNamePrefix` mülk.
 
- Doğru belge yolunu belirttiğinizden emin olun.`dataDir` değişken.
+### Bu yöntem satır içi CSS'yi destekliyor mu?
+`CssClassNamePrefix`özellik harici CSS ile çalışır. Satır içi CSS için farklı bir yaklaşıma ihtiyacınız olacak.
 
-Artık Aspose.Words for .NET kullanarak bir belgeyi HTML'ye dönüştürürken CSS sınıfı adı önekini nasıl ekleyeceğinizi öğrendiniz. Bu eğitimde sağlanan adım adım kılavuz adımını izleyerek, dönüştürülen HTML belgelerinizdeki CSS sınıfı adlarını özelleştirebilirsiniz.
+### Diğer HTML kaydetme seçeneklerini nasıl ekleyebilirim?
+ Çeşitli özelliklerini yapılandırabilirsiniz`HtmlSaveOptions` HTML çıktınızı özelleştirmek için. Kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+
+### HTML'yi bir akışa kaydetmek mümkün mü?
+ Kesinlikle! Akış nesnesini aktararak belgeyi bir akışa kaydedebilirsiniz.`Save` yöntem.
+
+### Sorunla karşılaşırsam nasıl destek alabilirim?
+ adresinden destek alabilirsiniz.[Forumu aspose](https://forum.aspose.com/c/words/8).

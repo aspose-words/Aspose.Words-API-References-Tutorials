@@ -54,7 +54,7 @@ Dit geeft u toegang tot verschillende eigenschappen voor de pagina-instelling, z
 
 ## Stap 3: Converteer inches naar punten
 
- Aspose.Words gebruikt standaard punten als meeteenheid. Als u de marges in inches wilt instellen, moet u inches naar punten converteren met behulp van de`ConvertUtil.InchToPoint` methode.
+ Aspose.Words gebruikt standaard punten als meeteenheid. Om de marges in inches in te stellen, moet u inches naar punten converteren met behulp van de`ConvertUtil.InchToPoint` methode.
 
 ```csharp
 pageSetup.TopMargin = ConvertUtil.InchToPoint(1.0);

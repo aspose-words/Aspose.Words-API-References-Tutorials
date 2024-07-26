@@ -15,7 +15,7 @@ url: /es/net/find-and-replace-text/replace-text-in-table/
 
 Antes de pasar a la parte divertida, asegurémonos de que tienes todo lo que necesitas:
 
-1.  Aspose.Words para .NET: puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: puede descargarlo desde[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro IDE de C# con el que se sienta cómodo.
 3. Documento de Word de muestra: un documento de Word (`Tables.docx`) que contiene tablas en las que desea reemplazar texto.
 

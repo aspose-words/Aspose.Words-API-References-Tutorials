@@ -2,60 +2,114 @@
 title: 画像フォルダの設定
 linktitle: 画像フォルダの設定
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Markdown にエクスポートするときに画像フォルダーを設定する方法を学びます。画像の配置をカスタマイズして、整理と統合を改善します。
+description: Aspose.Words for .NET を使用して、適切なテーブル配置で Word 文書を Markdown に変換します。完璧な結果を得るには、詳細なガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
+## 導入
 
-ここでは、.NET 用の Aspose.Words ライブラリを使用して Markdown エクスポート オプションの画像フォルダーを設定するのに役立つ次の C# ソース コードを説明するステップ バイ ステップ ガイドを示します。このコードを使用する前に、プロジェクトに Aspose.Words ライブラリが含まれていることを確認してください。
+表とコンテンツが完璧に揃った状態で Word 文書を Markdown 形式にエクスポートしたいと思ったことはありませんか? Aspose.Words for .NET は、このタスクに最適なソリューションです。この記事では、Aspose.Words の設定、文書の準備、表コンテンツを適切に揃えた状態で Markdown にエクスポートするプロセスについて説明します。各手順を分解して、わかりやすく説明します。それでは、Word 文書を美しく揃った Markdown ファイルに変換してみましょう。
 
-## ステップ1: ドキュメントディレクトリのパスを設定する
+## 前提条件
+
+始める前に、以下のものを用意してください。
+
+-  Aspose.Words for .NET: ダウンロードできます[ここ](https://releases.aspose.com/words/net/).
+- 有効なライセンス: 無料トライアルを取得する[ここ](https://releases.aspose.com/)または一時ライセンス[ここ](https://purchase.aspose.com/temporary-license/).
+- Visual Studio: または、.NET 開発をサポートするその他の IDE。
+- C# の基礎知識: C# プログラミング言語の理解。
+
+## 名前空間のインポート
+
+まず、C# プロジェクトに必要な名前空間をインポートする必要があります。これらの名前空間により、Aspose.Words の機能にアクセスできるようになります。
 
 ```csharp
-//ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.IO;
 ```
 
-画像を含むドキュメントが保存されているドキュメント ディレクトリへの正しいパスを必ず指定してください。
+## ステップ1: プロジェクトを設定する
 
-## ステップ2: 画像を含むドキュメントを読み込む
+まず最初に、IDE で .NET プロジェクトを設定します。新しいコンソール アプリケーションを作成し、Aspose.Words for .NET への参照を追加します。
+
+### 1.1 新しいプロジェクトを作成する
+
+Visual Studio を開き、新しいコンソール アプリケーション プロジェクトを作成します。「MarkdownExporter」または同様の名前を付けます。
+
+### 1.2 Aspose.Words 参照の追加
+
+Aspose.Wordsをプロジェクトに追加するには、DLLを[Aspose ウェブサイト](https://releases.aspose.com/words/net/)手動で追加するか、NuGet パッケージ マネージャーを使用します。
+
+```bash
+Install-Package Aspose.Words
+```
+
+## ステップ2: Markdownとしてエクスポートするコードを書く
+
+ここで、Word 文書を読み取り、適切な表の配置で Markdown ファイルとして保存するコードを記述しましょう。
+
+### 2.1 ドキュメントへのパスを定義する
+
+Word 文書へのパスと画像を保存するフォルダーを設定します。
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
+```
+
+### 2.2 ドキュメントを読み込む
+
+Aspose.Words を使用して Word 文書を読み込みます。
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-Markdown オプションを使用してエクスポートする画像を含む指定されたドキュメントを読み込みます。
+### 2.3 Markdown保存オプションの設定
 
-## ステップ3: Markdownエクスポートオプションの画像フォルダを設定する
+設定する`MarkdownSaveOptions`画像を保存する場所を指定します。
 
 ```csharp
-MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
+MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
+{
+    ImagesFolder = dataDir + "Images"
+};
 ```
 
-インスタンスを作成します`MarkdownSaveOptions`そして、画像フォルダへのパスを`ImagesFolder`プロパティ。エクスポートした画像を保存するフォルダーへの正しいパスを指定してください。
+### 2.4 ドキュメントをMarkdownとして保存する
 
-## ステップ4: Markdownエクスポートオプションを使用してドキュメントを保存する
+使う`MemoryStream`ドキュメントを Markdown 形式で保存します。
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())
-     doc. Save(stream, saveOptions);
+{
+    doc.Save(stream, saveOptions);
+}
 ```
 
-指定された Markdown エクスポート オプションを使用して、ドキュメントをメモリ ストリームに保存します。その後、フローを使用して、Markdown コンテンツをファイルに保存するなどの他の操作を実行できます。
+## 結論
 
-### Aspose.Words for .NET を使用して MarkdownSaveOptions の画像フォルダーを設定するサンプル ソース コード
+Aspose.Words for .NET を使用して、表のコンテンツの位置合わせを行った Word 文書を Markdown にエクスポートするのは、次の手順に従えば簡単です。数行のコードで、変換プロセスを自動化し、コンテンツが適切にフォーマットされるようにすることができます。これで、見栄えがよく、構造が維持されるので、Markdown 形式で文書を簡単に共有できます。
 
-```csharp
-//ドキュメント ディレクトリへのパス。
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+## よくある質問
 
-Document doc = new Document(dataDir + "Image bullet points.docx");
+### Aspose.Words for .NET を他のプログラミング言語で使用できますか?
 
-MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
+はい、Aspose.Words for .NET は、VB.NET、F# などの任意の .NET 互換言語で使用できます。
 
-using (MemoryStream stream = new MemoryStream())
-     doc. Save(stream, saveOptions);
-```
+### Aspose.Words の一時ライセンスを取得するにはどうすればよいですか?
 
-このソース コードは、画像を含むドキュメントを読み込み、Markdown エクスポート オプションの画像フォルダーを設定する方法を示しています。指定されたオプションを使用して、ドキュメントはメモリ ストリームに保存されます。これにより、Markdown コンテンツをエクスポートするときに画像フォルダーの場所をカスタマイズできます。
+臨時免許証を取得できます[ここ](https://purchase.aspose.com/temporary-license/).
+
+### どのような種類のドキュメントを Markdown に変換できますか?
+
+.doc、.docx、.rtf など、さまざまな Word 文書を変換できます。
+
+### Aspose.Words の試用版には制限はありますか?
+
+試用版には、出力ファイルに透かしが入るなどの制限があります。無料試用版を入手できます。[ここ](https://releases.aspose.com/).
+
+### Aspose.Words のその他の例やドキュメントはどこで見つかりますか?
+
+詳細なドキュメントと例は、[Aspose ウェブサイト](https://reference.aspose.com/words/net/).

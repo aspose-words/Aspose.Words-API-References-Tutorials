@@ -2,75 +2,112 @@
 title: แปลง Metafiles เป็น Svg
 linktitle: แปลง Metafiles เป็น Svg
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: คำแนะนำทีละขั้นตอนในการแปลงไฟล์เมตาเป็นรูปแบบ SVG เมื่อแปลงเอกสารเป็น HTML ด้วย Aspose.Words สำหรับ .NET
+description: แปลง metafiles เป็น SVG ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำโดยละเอียดทีละขั้นตอนนี้ เหมาะสำหรับนักพัฒนาทุกระดับ
 type: docs
 weight: 10
 url: /th/net/programming-with-htmlsaveoptions/convert-metafiles-to-svg/
 ---
+## การแนะนำ
 
-ในบทช่วยสอนนี้ เราจะแนะนำคุณเกี่ยวกับซอร์สโค้ด C# เพื่อแปลงเมตาไฟล์เป็นรูปแบบ SVG ด้วย Aspose.Words สำหรับ .NET คุณลักษณะนี้ช่วยให้คุณสามารถแปลง metafiles เป็นรูปแบบ SVG เมื่อแปลงเอกสารเป็น HTML
+สวัสดีผู้ชื่นชอบการเขียนโค้ด! คุณเคยสงสัยบ้างไหมว่าจะแปลง metafiles เป็น SVG ในเอกสาร Word ของคุณโดยใช้ Aspose.Words สำหรับ .NET ได้อย่างไร เอาล่ะ คุณพร้อมแล้ว! วันนี้ เราจะเจาะลึกเข้าไปในโลกของ Aspose.Words ซึ่งเป็นไลบรารีอันทรงพลังที่ทำให้การจัดการเอกสารเป็นเรื่องง่าย เมื่อสิ้นสุดบทช่วยสอนนี้ คุณจะเป็นมืออาชีพในการแปลงไฟล์เมตาเป็น SVG ทำให้เอกสาร Word ของคุณมีความหลากหลายและดึงดูดสายตามากขึ้น เอาล่ะ มาเริ่มกันเลยดีมั้ย?
 
-## ขั้นตอนที่ 1: การตั้งค่าโครงการ
+## ข้อกำหนดเบื้องต้น
 
-ในการเริ่มต้น ให้สร้างโปรเจ็กต์ C# ใหม่ใน IDE ที่คุณชื่นชอบ ตรวจสอบให้แน่ใจว่าไลบรารี Aspose.Words สำหรับ .NET ถูกอ้างอิงในโปรเจ็กต์ของคุณ
+ก่อนที่เราจะลงรายละเอียดสำคัญๆ เราต้องแน่ใจว่าเรามีทุกสิ่งที่จำเป็นในการเริ่มต้น:
 
-## ขั้นตอนที่ 2: การแทรกรูปภาพ SVG ลงในเอกสาร
+1.  Aspose.Words สำหรับ .NET: คุณสามารถดาวน์โหลดได้จากไฟล์[กำหนดหน้าการเผยแพร่](https://releases.aspose.com/words/net/).
+2. .NET Framework: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง .NET Framework บนเครื่องของคุณ
+3. สภาพแวดล้อมการพัฒนา: IDE ใด ๆ เช่น Visual Studio จะทำเคล็ดลับได้
+4. ความรู้พื้นฐานเกี่ยวกับ C#: ความคุ้นเคยเล็กน้อยกับ C# จะเป็นประโยชน์ แต่ไม่ต้องกังวลหากคุณเป็นมือใหม่ เราจะอธิบายทุกอย่างอย่างละเอียด
 
-ในขั้นตอนนี้ เราจะแทรกรูปภาพ SVG ลงในเอกสารที่จะแปลง ใช้โค้ดต่อไปนี้เพื่อแทรกรูปภาพ SVG โดยใช้แท็ก HTML:
+## นำเข้าเนมสเปซ
+
+ก่อนอื่นเรามานำเข้ากันก่อน ในโปรเจ็กต์ C# คุณจะต้องนำเข้าเนมสเปซที่จำเป็น นี่เป็นสิ่งสำคัญสำหรับการเข้าถึงฟังก์ชัน Aspose.Words
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+ตอนนี้เราได้เรียงลำดับข้อกำหนดเบื้องต้นและเนมสเปซแล้ว มาดูคำแนะนำทีละขั้นตอนในการแปลงไฟล์เมตาเป็น SVG กัน
+
+## ขั้นตอนที่ 1: เริ่มต้นเอกสารและ DocumentBuilder
+
+ เอาล่ะ มาเริ่มกันด้วยการสร้างเอกสาร Word ใหม่และเริ่มต้นไฟล์`DocumentBuilder` วัตถุ. เครื่องมือสร้างนี้จะช่วยให้เราเพิ่มเนื้อหาลงในเอกสารของเรา
+
+```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสาร
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
 
+ ที่นี่ เราเริ่มต้นเอกสารใหม่และตัวสร้างเอกสาร ที่`dataDir` ตัวแปรเก็บเส้นทางไปยังไดเร็กทอรีเอกสารของคุณที่คุณจะบันทึกไฟล์ของคุณ
+
+## ขั้นตอนที่ 2: เพิ่มข้อความลงในเอกสาร
+
+ ต่อไป เรามาเพิ่มข้อความลงในเอกสารของเรา เราจะใช้`Write` วิธีการของ`DocumentBuilder` เพื่อแทรกข้อความ
+
+```csharp
 builder.Write("Here is an SVG image: ");
+```
+
+บรรทัดนี้จะเพิ่มข้อความ "นี่คือรูปภาพ SVG: " ลงในเอกสารของคุณ เป็นความคิดที่ดีเสมอที่จะจัดเตรียมบริบทหรือคำอธิบายสำหรับรูปภาพ SVG ที่คุณกำลังจะแทรก
+
+## ขั้นตอนที่ 3: แทรกรูปภาพ SVG
+
+ ตอนนี้เพื่อความสนุก! เราจะแทรกรูปภาพ SVG ลงในเอกสารของเราโดยใช้`InsertHtml` วิธี.
+
+```csharp
 builder.InsertHtml(
-	@"<svg height='210' width='500'>
-	<polygon points='100,10 40,198 190,78 10,78 160,198' 
-		style='fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;' />
+    @"<svg height='210' width='500'>
+    <polygon points='100,10 40,198 190,78 10,78 160,198' 
+    style='fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;' />
 </svg> ");
 ```
 
- รหัสนี้สร้างอินสแตนซ์ของ`Document`และ`DocumentBuilder` เพื่อสร้างเอกสาร มันแทรกก`<svg>` แท็กที่มี`<polygon>` องค์ประกอบพร้อมแอตทริบิวต์เพื่อกำหนดรูปร่างและสไตล์ของรูปภาพ SVG
+ตัวอย่างนี้จะแทรกรูปภาพ SVG ลงในเอกสาร รหัส SVG กำหนดรูปหลายเหลี่ยมอย่างง่ายพร้อมจุด สี และสไตล์ที่ระบุ คุณสามารถปรับแต่งโค้ด SVG ตามความต้องการของคุณได้
 
-## ขั้นตอนที่ 3: ตั้งค่าตัวเลือกการบันทึก HTML
+## ขั้นตอนที่ 4: กำหนด HtmlSaveOptions
 
-ตอนนี้เราจะตั้งค่าตัวเลือกการบันทึก HTML โดยระบุว่าควรแปลงไฟล์เมตาเป็นรูปแบบ SVG ใช้รหัสต่อไปนี้:
+ เพื่อให้แน่ใจว่าไฟล์เมตาของเราได้รับการบันทึกเป็น SVG เราจะกำหนดไฟล์`HtmlSaveOptions` และตั้งค่า`MetafileFormat`ทรัพย์สินเพื่อ`HtmlMetafileFormat.Svg`.
 
 ```csharp
-HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Svg };
+HtmlSaveOptions saveOptions = new HtmlSaveOptions
+{
+    MetafileFormat = HtmlMetafileFormat.Svg
+};
 ```
 
- รหัสนี้สร้างอินสแตนซ์ของ`HtmlSaveOptions` และชุด`MetafileFormat` ถึง`HtmlMetafileFormat.Svg` เพื่อระบุว่าควรแปลง metafiles เป็นรูปแบบ SVG เมื่อแปลงเป็น HTML
+ซึ่งจะเป็นการบอกให้ Aspose.Words บันทึกไฟล์เมตาใดๆ ในเอกสารเป็น SVG เมื่อส่งออกเป็น HTML
 
-## ขั้นตอนที่ 4: การแปลงและบันทึกเอกสารเป็น HTML
+## ขั้นตอนที่ 5: บันทึกเอกสาร
 
-สุดท้ายนี้ เราจะแปลงเอกสารเป็น HTML โดยใช้ตัวเลือกการบันทึก HTML ที่กำหนดไว้ก่อนหน้านี้ ใช้รหัสต่อไปนี้:
+ สุดท้ายมาบันทึกเอกสารของเรากัน เราจะใช้`Save` วิธีการของ`Document` คลาสและส่งผ่านเส้นทางไดเร็กทอรีและบันทึกตัวเลือก
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 ```
 
-รหัสนี้จะแปลงเอกสารเป็น HTML และบันทึกเป็นไฟล์ที่มี metafiles แปลงเป็น SVG
+ บรรทัดนี้จะบันทึกเอกสารลงในไดเร็กทอรีที่ระบุพร้อมชื่อไฟล์`WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html` - ที่`saveOptions` ตรวจสอบให้แน่ใจว่าไฟล์เมตาถูกแปลงเป็น SVG
 
-### ตัวอย่างซอร์สโค้ดสำหรับการแปลง Metafiles เป็น Svg โดยใช้ Aspose.Words สำหรับ .NET
+## บทสรุป
 
-```csharp
+และคุณก็ได้แล้ว! คุณได้แปลง metafiles เป็น SVG ในเอกสาร Word ของคุณสำเร็จแล้วโดยใช้ Aspose.Words สำหรับ .NET ค่อนข้างเท่ห์ใช่มั้ย? ด้วยโค้ดเพียงไม่กี่บรรทัด คุณสามารถปรับปรุงเอกสาร Word ของคุณได้โดยการเพิ่มกราฟิกแบบเวกเตอร์ที่ปรับขนาดได้ ทำให้เป็นแบบไดนามิกและดึงดูดสายตามากขึ้น ดังนั้นไปข้างหน้าและลองใช้ในโครงการของคุณ ขอให้มีความสุขในการเขียนโค้ด!
 
-	// เส้นทางไปยังไดเร็กทอรีเอกสาร
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	
-	builder.Write("Here is an SVG image: ");
-	builder.InsertHtml(
-		@"<svg height='210' width='500'>
-		<polygon points='100,10 40,198 190,78 10,78 160,198' 
-			style='fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;' />
-	</svg> ");
+## คำถามที่พบบ่อย
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Svg };
+### Aspose.Words สำหรับ .NET คืออะไร
+Aspose.Words สำหรับ .NET เป็นไลบรารีที่มีประสิทธิภาพซึ่งช่วยให้คุณสามารถสร้าง แก้ไข และแปลงเอกสาร Word โดยทางโปรแกรมโดยใช้ C#
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
-	
-```
+### ฉันสามารถใช้ Aspose.Words สำหรับ .NET กับ .NET Core ได้หรือไม่
+ใช่ Aspose.Words สำหรับ .NET รองรับ .NET Core ทำให้มีความหลากหลายสำหรับแอปพลิเคชัน .NET ต่างๆ
+
+### ฉันจะทดลองใช้ Aspose.Words สำหรับ .NET ฟรีได้อย่างไร
+ คุณสามารถดาวน์โหลดรุ่นทดลองใช้ฟรีได้จาก[กำหนดหน้าการเผยแพร่](https://releases.aspose.com/).
+
+### เป็นไปได้หรือไม่ที่จะแปลงรูปแบบรูปภาพอื่นเป็น SVG โดยใช้ Aspose.Words
+ใช่ Aspose.Words รองรับการแปลงรูปแบบรูปภาพต่างๆ รวมถึง metafiles เป็น SVG
+
+### ฉันจะหาเอกสารสำหรับ Aspose.Words สำหรับ .NET ได้ที่ไหน
+ คุณสามารถดูเอกสารรายละเอียดได้ที่[กำหนดหน้าเอกสารประกอบ](https://reference.aspose.com/words/net/).

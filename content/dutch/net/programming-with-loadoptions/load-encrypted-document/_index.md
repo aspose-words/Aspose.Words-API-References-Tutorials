@@ -2,38 +2,36 @@
 title: Laad gecodeerd in Word-document
 linktitle: Laad een gecodeerd document in een Word-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u gecodeerde Word-documenten kunt laden en opslaan met Aspose.Words voor .NET.
+description: Leer hoe u gecodeerde Word-documenten kunt laden en opslaan met Aspose.Words voor .NET. Beveilig uw documenten eenvoudig met nieuwe wachtwoorden. Stap-voor-stap handleiding inbegrepen.
 type: docs
 weight: 10
 url: /nl/net/programming-with-loadoptions/load-encrypted-document/
 ---
-Bij het verwerken van woorden met gecodeerde Word-documenten in een C#-applicatie is het belangrijk om deze correct te kunnen laden door het juiste wachtwoord op te geven. Met de Aspose.Words-bibliotheek voor .NET kunt u eenvoudig gecodeerde Word-documenten laden met behulp van de juiste laadopties. In deze stapsgewijze handleiding laten we u zien hoe u de C#-broncode van Aspose.Words voor .NET kunt gebruiken om een gecodeerd document te laden met behulp van de laadopties van LoadOptions.
+## Invoering
 
-## Inzicht in de Aspose.Words-bibliotheek
+In deze zelfstudie leert u hoe u een gecodeerd Word-document laadt en opslaat met een nieuw wachtwoord met Aspose.Words voor .NET. Het omgaan met gecodeerde documenten is essentieel voor het handhaven van de documentbeveiliging, vooral als het gaat om gevoelige informatie.
 
-Voordat u in de code duikt, is het belangrijk dat u de Aspose.Words-bibliotheek voor .NET begrijpt. Aspose.Words is een krachtige bibliotheek voor het maken, bewerken, converteren en beschermen van Word-documenten op verschillende platforms, waaronder .NET. Het biedt veel functies voor het manipuleren van documenten, zoals het invoegen van tekst, het wijzigen van de opmaak, het toevoegen van secties en nog veel meer.
+## Vereisten
 
-## Een gecodeerd document laden
+Zorg ervoor dat u over het volgende beschikt voordat u begint:
 
-De eerste stap is het uploaden van een gecodeerd document met behulp van de juiste uploadopties. In ons geval gebruiken we de klasse Document om het document te laden door het documentpad en het wachtwoord op te geven. Hier is een voorbeeld :
+1.  Aspose.Words voor .NET-bibliotheek geïnstalleerd. Je kunt het downloaden van[hier](https://downloads.aspose.com/words/net).
+2.  Een geldige Aspose-licentie. U kunt een gratis proefversie krijgen of er een kopen[hier](https://purchase.aspose.com/buy).
+3. Visual Studio of een andere .NET-ontwikkelomgeving.
 
-```csharp
-Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
-```
+## Naamruimten importeren
 
-In dit voorbeeld laden we het document "Encrypted.docx" in de documentenmap met het wachtwoord "password".
-
-## Een gecodeerd document opslaan
-
-Nadat u een gecodeerd document heeft geüpload, kunt u het ook opslaan door een nieuw wachtwoord op te geven voor het uitvoerbestand. In ons voorbeeld gebruiken we de klasse OdtSaveOptions om het document in ODT-indeling op te slaan met een nieuw wachtwoord. Hier leest u hoe u het moet doen:
+Zorg er om te beginnen voor dat u de benodigde naamruimten in uw project importeert:
 
 ```csharp
-doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-In dit voorbeeld slaan we het document op met de naam "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt" door het nieuwe wachtwoord "newpassword" op te geven.
+## Stap 1: Laad het gecodeerde document
 
-### Voorbeeldbroncode voor LoadOptions met de functionaliteit "Load Encrypted Document" met Aspose.Words voor .NET
+ Eerst laadt u het gecodeerde document met behulp van de`LoadOptions` klas. Met deze klasse kunt u het wachtwoord opgeven dat nodig is om het document te openen.
 
 ```csharp
 // Pad naar uw documentenmap
@@ -41,34 +39,34 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Laad een gecodeerd document met het opgegeven wachtwoord
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
+```
 
-//Sla een gecodeerd document op met een nieuw wachtwoord
+## Stap 2: Sla het document op met een nieuw wachtwoord
+
+ Vervolgens slaat u het geladen document op als een ODT-bestand, waarbij u deze keer een nieuw wachtwoord instelt met behulp van de`OdtSaveOptions` klas.
+
+```csharp
+// Sla een gecodeerd document op met een nieuw wachtwoord
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
 ## Conclusie
 
-In deze handleiding hebben we uitgelegd hoe u gecodeerde documenten kunt laden en opslaan met behulp van de Aspose.Words-bibliotheek voor .NET. Door de meegeleverde stappen te volgen en de meegeleverde C#-broncode te gebruiken, kunt u deze functionaliteit eenvoudig toepassen in uw C#-applicatie. Door gecodeerde documenten te uploaden, blijven uw gegevens veilig en kunt u met beveiligde documenten werken in Aspose.Words.
+Door de stappen in deze tutorial te volgen, kunt u eenvoudig gecodeerde Word-documenten laden en opslaan met Aspose.Words voor .NET. Dit zorgt ervoor dat uw documenten veilig blijven en alleen toegankelijk zijn voor geautoriseerde personen.
 
+## Veelgestelde vragen
 
-### Veelgestelde vragen over het laden van gecodeerde bestanden in een Word-document
+### Kan ik Aspose.Words gebruiken om andere bestandsformaten te laden en op te slaan?
+Ja, Aspose.Words ondersteunt een breed scala aan bestandsindelingen, waaronder DOC, DOCX, PDF, HTML en meer.
 
-#### Vraag: Wat zijn gecodeerde Word-documenten?
+### Wat moet ik doen als ik het wachtwoord van een gecodeerd document vergeet?
+Als u het wachtwoord vergeet, kunt u het document helaas niet laden. Zorg ervoor dat u wachtwoorden veilig opslaat.
 
-A: Gecodeerde Word-documenten zijn bestanden die zijn beveiligd met een wachtwoord om ongeautoriseerde toegang te beperken. Deze wachtwoorden zijn vereist om de inhoud van het document te openen, bekijken of wijzigen.
+### Is het mogelijk om de encryptie van een document te verwijderen?
+Ja, door het document op te slaan zonder een wachtwoord op te geven, kunt u de codering verwijderen.
 
-#### Vraag: Hoe gaat Aspose.Words om met gecodeerde documenten in een C#-toepassing?
+### Kan ik verschillende encryptie-instellingen toepassen?
+Ja, Aspose.Words biedt verschillende opties voor het versleutelen van documenten, inclusief het specificeren van verschillende soorten versleutelingsalgoritmen.
 
-A: Aspose.Words voor .NET biedt de noodzakelijke tools en functionaliteit om gecodeerde Word-documenten te laden door het juiste wachtwoord op te geven, waardoor veilige toegang tot beveiligde bestanden wordt gegarandeerd.
-
-#### Vraag: Kan ik het wachtwoord van een gecodeerd document wijzigen met Aspose.Words?
-
-EEN: Absoluut! Met Aspose.Words kunt u gecodeerde documenten opslaan met een nieuw wachtwoord, waardoor u de flexibiliteit heeft om het wachtwoord indien nodig bij te werken.
-
-#### Vraag: Welke versleutelingsalgoritmen ondersteunt Aspose.Words?
-
-A: Aspose.Words ondersteunt verschillende versleutelingsalgoritmen, waaronder Advanced Encryption Standard (AES), die een sterke gegevensbescherming garandeert.
-
-#### Vraag: Is Aspose.Words compatibel met andere documentformaten dan Word?
-
-A: Ja, Aspose.Words ondersteunt een uitgebreide reeks documentformaten, waaronder PDF, HTML, EPUB en meer, waardoor het een veelzijdige oplossing is voor documentverwerking.
+### Is er een limiet aan de grootte van het document dat kan worden gecodeerd?
+Nee, Aspose.Words kan documenten van elk formaat verwerken, afhankelijk van de beperkingen van het geheugen van uw systeem.

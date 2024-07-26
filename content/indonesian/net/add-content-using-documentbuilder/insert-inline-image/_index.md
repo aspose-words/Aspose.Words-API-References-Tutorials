@@ -34,7 +34,7 @@ Namespace ini menyediakan akses ke kelas dan metode yang diperlukan untuk memani
 
 ## Langkah 1: Buat Dokumen Baru
 
- Mulailah dengan menginisialisasi instance baru dari`Document` kelas dan a`DocumentBuilder` untuk memudahkan pembuatan dokumen.
+ Mulailah dengan menginisialisasi instance baru dari`Document` kelas dan a`DocumentBuilder` untuk memudahkan konstruksi dokumen.
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";

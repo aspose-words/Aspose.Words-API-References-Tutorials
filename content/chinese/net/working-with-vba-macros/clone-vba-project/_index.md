@@ -33,7 +33,7 @@ Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
 ## 步骤 3：使用克隆的 VBA 项目创建一个新文档
-我们将创建一个具有空 VBA 项目的新文档，并从源文档克隆 VBA 项目。
+我们将创建一个具有空 VBA 项目的新文档，并从源文档克隆该 VBA 项目。
 
 ```csharp
 //使用空的 VBA 项目创建新文档

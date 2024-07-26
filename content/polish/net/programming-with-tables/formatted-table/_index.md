@@ -14,14 +14,14 @@ W tym samouczku nauczymy się, jak utworzyć sformatowaną tabelę w dokumencie 
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.
 2. Dodaj odwołanie do biblioteki Aspose.Words dla .NET.
 
-## Krok 2: Tworzenie dokumentu i inicjalizacja generatora dokumentów
+## Krok 2: Tworzenie dokumentu i inicjowanie generatora dokumentów
 Aby rozpocząć budowanie sformatowanej tabeli, musimy utworzyć nowy dokument i zainicjować generator dokumentów. Wykonaj następujące kroki:
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Utwórz dokument i zainicjuj generator dokumentów
+//Utwórz dokument i zainicjuj generator dokumentów
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

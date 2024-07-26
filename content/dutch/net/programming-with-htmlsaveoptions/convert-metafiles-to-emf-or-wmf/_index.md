@@ -15,7 +15,7 @@ Welkom bij weer een diepe duik in de wereld van Aspose.Words voor .NET. Vandaag 
 
 Voordat we in de code duiken, zorgen we ervoor dat we alles hebben ingesteld. Dit is wat je nodig hebt:
 
-1. Aspose.Words voor .NET Library: Zorg ervoor dat je de nieuwste versie hebt. Als u deze niet heeft, kunt u deze downloaden van[hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET Library: Zorg ervoor dat je de nieuwste versie hebt. Als u deze niet heeft, kunt u deze downloaden van[hier](https://releases.aspose.com/words/net/).
 2. .NET Framework: Zorg ervoor dat .NET Framework op uw computer is geïnstalleerd.
 3. Ontwikkelomgeving: Een IDE zoals Visual Studio zal uw leven gemakkelijker maken.
 4. Basiskennis van C#: u hoeft geen expert te zijn, maar een basiskennis kan helpen.

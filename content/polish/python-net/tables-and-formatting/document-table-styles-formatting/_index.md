@@ -145,7 +145,7 @@ Dostosuj wymiary wierszy i kolumn, aby uzyskać zrównoważony układ tabeli:
 
 Popraw wygląd tabeli, dodając obramowania i cieniowanie:
 
-1. Obramowania: dostosuj obramowania tabel i komórek.
+1. Obramowania: Dostosuj obramowania tabel i komórek.
 
     ```python
     table.set_borders(0.5, aspose.words.LineStyle.SINGLE, aspose.words.Color.from_rgb(0, 0, 0))

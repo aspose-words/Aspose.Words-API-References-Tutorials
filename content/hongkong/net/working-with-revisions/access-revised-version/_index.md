@@ -73,7 +73,7 @@ foreach (Revision revision in doc.Revisions)
 
 ## 結論
 
-在本教學中，我們學習如何使用 Aspose.Words for .NET 存取 Word 文件的修訂版本。透過載入文件、導覽至修訂版本並瀏覽修訂版本，我們能夠取得清單項目段落的具體資訊。 Aspose.Words for .NET 提供了用於操作 Word 文件的強大功能，包括存取評論。現在您可以利用這些知識，使用 Aspose.Words for .NET 存取您自己的 Word 文件的修訂版本。
+在本教學中，我們學習如何使用 Aspose.Words for .NET 存取 Word 文件的修訂版本。透過載入文件、導覽至修訂版本並瀏覽修訂版本，我們能夠取得清單項目段落的特定資訊。 Aspose.Words for .NET 提供了用於操作 Word 文件的強大功能，包括存取評論。現在您可以利用這些知識，使用 Aspose.Words for .NET 存取您自己的 Word 文件的修訂版本。
 
 ### 常見問題解答
 

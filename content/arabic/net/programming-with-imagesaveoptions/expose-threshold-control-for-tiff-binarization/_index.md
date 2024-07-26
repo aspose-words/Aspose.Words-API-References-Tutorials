@@ -2,80 +2,100 @@
 title: فضح التحكم في عتبة Tiff Binarization
 linktitle: فضح التحكم في عتبة Tiff Binarization
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية التحكم في حد ثنائية TIFF باستخدام Aspose.Words لـ .NET. برنامج تعليمي كامل للحصول على صور ذات جودة أفضل.
+description: تعرف على كيفية الكشف عن التحكم في العتبة لثنائية TIFF في مستندات Word باستخدام Aspose.Words لـ .NET مع هذا الدليل الشامل خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
 ---
-في هذا البرنامج التعليمي، سوف نستكشف كود مصدر C# المقدم لميزة "TIFF Binarization Threshold Control Exposure" مع Aspose.Words for .NET. تتيح لك هذه الميزة التحكم في حد التحويل الثنائي عند تحويل مستند إلى تنسيق TIFF.
+## مقدمة
 
-## الخطوة 1: تهيئة البيئة
+هل تساءلت يومًا عن كيفية التحكم في عتبة ثنائية TIFF في مستندات Word الخاصة بك؟ أنت في المكان الصحيح! سيرشدك هذا الدليل خلال العملية خطوة بخطوة باستخدام Aspose.Words for .NET. سواء كنت مطورًا متمرسًا أو بدأت للتو، ستجد هذا البرنامج التعليمي جذابًا وسهل المتابعة ومليئًا بكل التفاصيل التي تحتاجها لإنجاز المهمة. على استعداد للغوص في؟ دعنا نذهب!
 
-قبل أن تبدأ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من إضافة المراجع الضرورية واستيراد مساحات الأسماء المناسبة.
+## المتطلبات الأساسية
 
-## الخطوة 2: تحميل الوثيقة
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
+
+1.  Aspose.Words for .NET: يمكنك تنزيله من[صفحة الإصدارات Aspose](https://releases.aspose.com/words/net/) . إذا لم يكن لديك ترخيص بعد، فيمكنك الحصول على[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/).
+2. بيئة التطوير: Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة مع .NET.
+3. المعرفة الأساسية بـ C#: سيكون القليل من الإلمام بـ C# مفيدًا، ولكن لا تقلق إذا كنت جديدًا، فسنقوم بتفصيل كل شيء.
+
+## استيراد مساحات الأسماء
+
+قبل أن ننتقل إلى الكود، نحتاج إلى استيراد مساحات الأسماء الضرورية. يعد هذا أمرًا بالغ الأهمية للوصول إلى الفئات والأساليب التي سنستخدمها.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## الخطوة 1: قم بإعداد دليل المستندات الخاص بك
+
+أول الأشياء أولاً، تحتاج إلى تعيين المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يوجد فيه المستند المصدر الخاص بك والمكان الذي سيتم فيه حفظ الإخراج.
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى دليل المستندات الخاص بك.
+
+## الخطوة 2: قم بتحميل المستند الخاص بك
+
+ بعد ذلك، نحتاج إلى تحميل المستند الذي نريد معالجته. في هذا المثال، سنستخدم مستندًا اسمه`Rendering.docx`.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- في هذه الخطوة نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ يقوم هذا السطر من التعليمات البرمجية بإنشاء ملف جديد`Document` الكائن ويقوم بتحميل الملف المحدد.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي للصورة
+## الخطوة 3: تكوين خيارات حفظ الصورة
+
+ الآن يأتي الجزء الممتع! نحن بحاجة إلى تكوين خيارات حفظ الصورة للتحكم في ثنائية TIFF. سوف نستخدم`ImageSaveOptions` فئة لتعيين خصائص مختلفة.
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
 {
-TiffCompression = TiffCompression.Ccitt3,
-ImageColorMode = ImageColorMode.Grayscale,
-TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
-ThresholdForFloydSteinbergDithering = 254
+    TiffCompression = TiffCompression.Ccitt3,
+    ImageColorMode = ImageColorMode.Grayscale,
+    TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
+    ThresholdForFloydSteinbergDithering = 254
 };
 ```
 
- في هذه الخطوة، نقوم بتكوين خيارات النسخ الاحتياطي للصور. نحن نخلق جديدا`ImageSaveOptions` كائن يحدد تنسيق الحفظ المطلوب، هنا "Tiff" لتنسيق TIFF. نقوم أيضًا بتعيين خيارات الضغط ووضع ألوان الصورة وطريقة ثنائية TIFF مع عتبة ثنائية محددة.
+دعونا نحلل هذا:
+-  TiffCompression: يضبط نوع الضغط لصورة TIFF. هنا، نحن نستخدم`Ccitt3`.
+-  ImageColorMode: يضبط وضع اللون. وضعناها على`Grayscale` لإنشاء صورة ذات تدرج رمادي.
+-  TiffBinarizationMethod: يحدد طريقة الثنائية. كانوا يستخدمون`FloydSteinbergDithering`.
+- ThresholdForFloydSteinbergDithering: يضبط عتبة ثبات Floyd-Steinberg. القيمة الأعلى تعني عددًا أقل من وحدات البكسل السوداء.
 
-## الخطوة 4: النسخ الاحتياطي للصور
+## الخطوة 4: احفظ المستند كملف TIFF
+
+وأخيرًا، نقوم بحفظ المستند كصورة TIFF مع الخيارات المحددة.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة، نقوم بحفظ صور المستند بتنسيق TIFF باستخدام الملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج، إلى جانب خيارات الحفظ المحددة.
+يقوم سطر التعليمات البرمجية هذا بحفظ المستند في المسار المحدد باستخدام خيارات حفظ الصورة التي تم تكوينها.
 
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لتحويل مستندك إلى تنسيق TIFF مع التحكم في حد الثنائية باستخدام الخيارات المحددة. سيتم حفظ الملف الناتج في الدليل المحدد بالاسم "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff".
+## خاتمة
 
-### نموذج التعليمات البرمجية المصدرية تعريض التحكم في العتبة لثنائية Tiff
+وهناك لديك! لقد تعلمت للتو كيفية الكشف عن التحكم في العتبة لثنائية TIFF في مستند Word باستخدام Aspose.Words لـ .NET. تسهل هذه المكتبة القوية التعامل مع مستندات Word بطرق مختلفة، بما في ذلك تحويلها إلى تنسيقات مختلفة باستخدام إعدادات مخصصة. جربه وشاهد كيف يمكنه تبسيط مهام معالجة المستندات الخاصة بك!
 
-```csharp 
+## الأسئلة الشائعة
 
-// المسار إلى دليل المستندات الخاص بك
- string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+### ما هي الثنائية TIFF؟
+إن ثنائية TIFF هي عملية تحويل صورة ذات تدرج رمادي أو صورة ملونة إلى صورة بالأبيض والأسود (ثنائية).
 
-Document doc = new Document(dataDir + "Rendering.docx");
+### لماذا نستخدم ثبات فلويد شتاينبرغ؟
+يساعد ثبات Floyd-Steinberg على توزيع أخطاء البكسل بطريقة تقلل من التشويش البصري في الصورة النهائية، مما يجعلها تبدو أكثر سلاسة.
 
-ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
-{
-	TiffCompression = TiffCompression.Ccitt3,
-	ImageColorMode = ImageColorMode.Grayscale,
-	TiffBinarizationMethod = ImageBinarizationMethod.FloydSteinbergDithering,
-	ThresholdForFloydSteinbergDithering = 254
-};
+### هل يمكنني استخدام طرق ضغط أخرى لـ TIFF؟
+نعم، يدعم Aspose.Words طرق ضغط TIFF المتنوعة، مثل LZW، وCCITT4، وRLE.
 
-doc.Save(dataDir + "WorkingWithImageSaveOptions.ExposeThresholdControlForTiffBinarization.tiff", saveOptions);
-            
-        
-```
+### هل Aspose.Words لـ .NET مجاني؟
+Aspose.Words for .NET هي مكتبة تجارية، ولكن يمكنك الحصول على نسخة تجريبية مجانية أو ترخيص مؤقت لتقييم ميزاتها.
 
-### خاتمة
-
-في هذا البرنامج التعليمي، اكتشفنا ميزة التعريض الضوئي للتحكم في عتبة ثنائية TIFF باستخدام Aspose.Words لـ .NET. لقد تعلمنا كيفية التحكم في عتبة التحويل الثنائي عند تحويل مستند إلى تنسيق TIFF.
-
-تكون هذه الميزة مفيدة عندما تريد ضبط حد الثنائية للحصول على صور TIFF بجودة ووضوح أفضل. من خلال تحديد حد الثنائية مع خيارات الحفظ، يمكنك الحصول على نتائج مخصصة مصممة خصيصًا لتلبية احتياجاتك.
-
-يقدم Aspose.Words for .NET مجموعة واسعة من الميزات المتقدمة لمعالجة المستندات وإنشائها. يعد الكشف عن التحكم في عتبة TIFF Binarization أحد الأدوات القوية العديدة التي يضعها تحت تصرفك.
-
-لا تتردد في دمج هذه الميزة في مشروعات Aspose.Words الخاصة بـ .NET للحصول على صور TIFF عالية الجودة مع تحكم دقيق في عتبة التحويل الثنائي.
+### أين يمكنني العثور على المزيد من الوثائق؟
+ يمكنك العثور على وثائق شاملة لـ Aspose.Words for .NET على الموقع[موقع أسبوز](https://reference.aspose.com/words/net/).

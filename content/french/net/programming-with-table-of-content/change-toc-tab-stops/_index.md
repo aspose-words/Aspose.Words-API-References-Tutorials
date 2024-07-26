@@ -103,7 +103,7 @@ Cet extrait de code charge le document "Table of contents.docx" situé dans le r
 
 #### Q : Comment puis-je modifier les onglets utilisés dans la table des matières à l'aide d'Aspose.Words pour .NET ?
 
- R : Une fois le document chargé, vous pouvez parcourir chaque paragraphe du document et vérifier s'il est formaté à l'aide des styles de résultat de la table des matières (TOC). Si un paragraphe est formaté en style TOC, vous pouvez modifier les tabulations utilisées pour aligner les numéros de page. Dans Aspose.Words for .NET, vous pouvez accéder au`ParagraphFormat` propriété de chaque paragraphe pour récupérer et modifier les taquets de tabulation. Voici un exemple :
+R : Une fois le document chargé, vous pouvez parcourir chaque paragraphe du document et vérifier s'il est formaté à l'aide des styles de résultat de la table des matières (TOC). Si un paragraphe est formaté en style TOC, vous pouvez modifier les tabulations utilisées pour aligner les numéros de page. Dans Aspose.Words for .NET, vous pouvez accéder au`ParagraphFormat` propriété de chaque paragraphe pour récupérer et modifier les taquets de tabulation. Voici un exemple :
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -122,7 +122,7 @@ Dans ce code, la boucle parcourt chaque paragraphe du document. Si un paragraphe
 
 #### Q : Puis-je modifier les onglets de plusieurs niveaux dans la table des matières à l'aide d'Aspose.Words for .NET ?
 
-R : Oui, vous pouvez modifier les onglets de plusieurs niveaux dans la table des matières à l'aide d'Aspose.Words for .NET. En parcourant chaque paragraphe et en vérifiant le style de la table des matières, vous pouvez modifier les onglets de chaque niveau individuellement. Vous pouvez accéder au niveau souhaité de la table des matières et ajuster les taquets de tabulation en conséquence.
+: Oui, vous pouvez modifier les onglets de plusieurs niveaux dans la table des matières à l'aide d'Aspose.Words for .NET. En parcourant chaque paragraphe et en vérifiant le style de la table des matières, vous pouvez modifier les onglets de chaque niveau individuellement. Vous pouvez accéder au niveau souhaité de la table des matières et ajuster les taquets de tabulation en conséquence.
 
 #### Q : Comment puis-je enregistrer le document modifié après avoir modifié les onglets de la table des matières à l'aide d'Aspose.Words for .NET ?
 
@@ -136,7 +136,7 @@ Ce code enregistre le document modifié sous « WorkingWithTableOfContent.Change
 
 #### Q : Puis-je personnaliser d'autres aspects de la table des matières à l'aide d'Aspose.Words pour .NET ?
 
-R : Oui, avec Aspose.Words pour .NET, vous pouvez personnaliser divers aspects de la table des matières. Outre la modification des onglets, vous pouvez modifier les styles de police, la taille, l'alignement et d'autres propriétés de formatage des entrées de la table des matières et des numéros de page. De plus, vous pouvez ajuster l'indentation, l'espacement et le formatage des titres correspondants.
+: Oui, avec Aspose.Words pour .NET, vous pouvez personnaliser divers aspects de la table des matières. Outre la modification des onglets, vous pouvez modifier les styles de police, la taille, l'alignement et d'autres propriétés de formatage des entrées de la table des matières et des numéros de page. De plus, vous pouvez ajuster l'indentation, l'espacement et le formatage des titres correspondants.
 
 #### Question : . Puis-je modifier l’alignement des tabulations et les caractères de début de la table des matières à l’aide d’Aspose.Words for .NET ?
 
@@ -144,8 +144,8 @@ R : Oui, vous pouvez modifier l'alignement des tabulations et les caractères de
 
 #### Q : Aspose.Words pour .NET prend-il en charge la modification d'autres styles et formats dans les documents Word ?
 
-: Oui, Aspose.Words for .NET offre une prise en charge étendue pour modifier divers styles et formatages dans les documents Word. Il vous permet de modifier les styles de différents éléments tels que les paragraphes, les titres, les tableaux, les listes, etc. Vous pouvez modifier les polices, les couleurs, l'alignement, l'indentation, l'espacement et d'autres aspects de formatage en fonction de vos besoins.
+R : Oui, Aspose.Words for .NET offre une prise en charge étendue pour modifier divers styles et formatages dans les documents Word. Il vous permet de modifier les styles de différents éléments tels que les paragraphes, les titres, les tableaux, les listes, etc. Vous pouvez modifier les polices, les couleurs, l'alignement, l'indentation, l'espacement et d'autres aspects de formatage en fonction de vos besoins.
 
 #### Q : Puis-je modifier les onglets de la table des matières d'un document Word existant à l'aide d'Aspose.Words pour .NET ?
 
-R : Oui, vous pouvez modifier les onglets de la table des matières d'un document Word existant à l'aide d'Aspose.Words pour .NET. En chargeant le document, en parcourant les paragraphes et en apportant les modifications nécessaires aux taquets de tabulation, vous pouvez mettre à jour les onglets de la table des matières. Enfin, enregistrez le document pour appliquer les modifications.
+: Oui, vous pouvez modifier les onglets de la table des matières d'un document Word existant à l'aide d'Aspose.Words pour .NET. En chargeant le document, en parcourant les paragraphes et en apportant les modifications nécessaires aux taquets de tabulation, vous pouvez mettre à jour les onglets de la table des matières. Enfin, enregistrez le document pour appliquer les modifications.

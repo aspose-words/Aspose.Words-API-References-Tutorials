@@ -9,7 +9,7 @@ url: /zh-hant/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
 ## 介紹
 
-移動到 Word 文件中的特定表格單元格可能聽起來是一項艱鉅的任務，但使用 Aspose.Words for .NET，這一切變得輕而易舉！無論您是要自動化報告、建立動態文檔，還是只是需要以程式設計方式操作表數據，這個強大的函式庫都能滿足您的需求。讓我們深入了解如何使用 Aspose.Words for .NET 移至表格儲存格並在其中新增內容。
+移動到 Word 文件中的特定表格單元格可能聽起來是一項艱鉅的任務，但使用 Aspose.Words for .NET，這一切變得輕而易舉！無論您是自動化報告、建立動態文檔，還是只需要以程式設計方式操作表數據，這個強大的函式庫都能滿足您的需求。讓我們深入了解如何使用 Aspose.Words for .NET 移至表格儲存格並在其中新增內容。
 
 ## 先決條件
 

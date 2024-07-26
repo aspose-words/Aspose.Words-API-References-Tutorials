@@ -2,7 +2,7 @@
 title: Word 文書のフィールドとデータの処理
 linktitle: Word 文書のフィールドとデータの処理
 second_title: Aspose.Words Python ドキュメント管理 API
-description: Aspose.Words for Python を使用して Word 文書内のフィールドとデータを処理する方法を学びます。動的コンテンツ、自動化などのコード例を含むステップバイステップ ガイド。
+description: Aspose.Words for Python を使用して Word 文書内のフィールドとデータを処理する方法を学びます。動的コンテンツ、自動化などのコード例を含むステップバイステップ ガイドです。
 type: docs
 weight: 12
 url: /ja/python-net/document-structure-and-content-manipulation/document-fields/

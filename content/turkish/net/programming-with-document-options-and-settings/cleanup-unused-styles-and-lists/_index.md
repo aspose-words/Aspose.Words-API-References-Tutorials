@@ -40,7 +40,7 @@ Document doc = new Document(dataDir + "Unused styles.docx");
 
 ## 2. Adım: Mevcut Stilleri ve Listeleri Kontrol Edin
 
-Temizlemeye başlamadan önce, belgenizde şu anda kaç stil ve listenin bulunduğunu görmek iyi bir fikirdir. Bu bize temizlikten sonra karşılaştırma yapabileceğimiz bir temel verecektir.
+Temizliğe başlamadan önce belgenizde şu anda kaç stil ve listenin bulunduğunu görmek iyi bir fikirdir. Bu bize temizlikten sonra karşılaştırma yapabileceğimiz bir temel verecektir.
 
 ```csharp
 Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");

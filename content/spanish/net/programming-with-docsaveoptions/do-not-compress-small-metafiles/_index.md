@@ -18,7 +18,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 -  Aspose.Words para .NET: descargue e instale la última versión desde[aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: Visual Studio o cualquier otro IDE compatible.
 - Comprensión básica de C#: familiaridad con el lenguaje de programación C# y el marco .NET.
--  Licencia Aspose: Para desbloquear todo el potencial de Aspose.Words, considere obtener una[licencia](https://purchase.aspose.com/buy) . También puedes usar un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
+-  Licencia Aspose: Para desbloquear todo el potencial de Aspose.Words, considere obtener una[licencia](https://purchase.aspose.com/buy) . También puedes utilizar un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
 
 ## Importar espacios de nombres
 

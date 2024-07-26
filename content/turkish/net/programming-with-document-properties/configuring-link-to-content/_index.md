@@ -9,7 +9,7 @@ url: /tr/net/programming-with-document-properties/configuring-link-to-content/
 ---
 ## giriiş
 
-Bir Word belgesindeki içeriği programlı olarak nasıl bağlayacağınızı hiç merak ettiniz mi? Aspose.Words for .NET'i kullanarak bağlantılı içerik özelliklerini Word belgelerinize zahmetsizce ekleyebilirsiniz. Bu güçlü kitaplık, Word belgelerini kod aracılığıyla yönetmeyi kolaylaştıran çok çeşitli işlevler sunar. Bu öğreticide, bir Word belgesi içindeki içeriğe bağlantı yapılandırma sürecinde size yol göstereceğiz ve bu süreçteki her adımı anlamanızı sağlayacağız.
+Bir Word belgesindeki içeriği programlı olarak nasıl bağlayacağınızı hiç merak ettiniz mi? Aspose.Words for .NET'i kullanarak bağlantılı içerik özelliklerini Word belgelerinize zahmetsizce ekleyebilirsiniz. Bu güçlü kitaplık, Word belgelerini kod aracılığıyla yönetmeyi kolaylaştıran çok çeşitli işlevler sunar. Bu öğreticide, bir Word belgesindeki içeriğe bağlantı yapılandırma sürecinde size yol göstereceğiz ve bu süreçteki her adımı anlamanızı sağlayacağız.
 
 ## Önkoşullar
 

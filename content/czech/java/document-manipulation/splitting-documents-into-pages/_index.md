@@ -534,7 +534,7 @@ private Iterable<Node> findChildSplitPositions(CompositeNode node) throws Except
 			pageNumberFinder.addPageNumbersForNode(childNode, pageNum, pageNum);
 		}
 	}
-	// Rozdělte kompozity pozpátku, takže klonované uzly jsou vloženy ve správném pořadí.
+	// Rozdělte kompozity pozpátku, aby byly klonované uzly vloženy ve správném pořadí.
 	Collections.reverse(splitList);
 	return splitList;
 }
@@ -542,7 +542,7 @@ private CompositeNode splitCompositeAtNode(CompositeNode baseNode, Node targetNo
 	CompositeNode cloneNode = (CompositeNode) baseNode.deepClone(false);
 	Node node = targetNode;
 	int currentPageNum = pageNumberFinder.getPage(baseNode);
-	// Přesuňte všechny uzly nalezené na další stránce do zkopírovaného uzlu. Řadové uzly zpracujte samostatně.
+	// Přesuňte všechny uzly nalezené na další stránce do zkopírovaného uzlu. Řadové uzly manipulujte samostatně.
 	if (baseNode.getNodeType() != NodeType.ROW)
 	{
 		CompositeNode composite = cloneNode;

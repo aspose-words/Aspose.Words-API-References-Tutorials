@@ -11,7 +11,7 @@ url: /id/net/programming-with-sdt/set-content-control-color/
 Tutorial ini menjelaskan cara mengatur warna kontrol konten di dokumen Word menggunakan Aspose.Words untuk .NET. Anda dapat menyesuaikan tampilan kontrol konten dengan mengubah warnanya.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
+Untuk mengikuti tutorial ini, Anda perlu memiliki yang berikut ini:
 
 - Aspose.Words untuk perpustakaan .NET diinstal.
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Langkah 2: Muat Dokumen dan Ambil Kontrol Konten
- Muat dokumen Word menggunakan`Document` konstruktor, meneruskan jalur ke dokumen sebagai parameter. Ambil kontrol konten yang diinginkan dari dokumen. Dalam contoh ini, kami berasumsi bahwa kontrol konten adalah tag dokumen terstruktur pertama dalam dokumen.
+ Muat dokumen Word menggunakan`Document`konstruktor, meneruskan jalur ke dokumen sebagai parameter. Ambil kontrol konten yang diinginkan dari dokumen. Dalam contoh ini, kami berasumsi bahwa kontrol konten adalah tag dokumen terstruktur pertama dalam dokumen.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

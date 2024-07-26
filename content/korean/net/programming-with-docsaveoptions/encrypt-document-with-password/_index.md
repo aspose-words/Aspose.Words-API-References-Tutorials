@@ -17,13 +17,13 @@ url: /ko/net/programming-with-docsaveoptions/encrypt-document-with-password/
 1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 원하는 C# IDE.
 3. .NET Framework: 설치되어 있는지 확인하세요.
-4.  라이센스: 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 완전한 기능을 위해.
+4.  라이센스: 다음으로 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시면허](https://purchase.aspose.com/temporary-license/) 완전한 기능을 위해.
 
 모든 것을 얻었나요? 엄청난! 프로젝트 설정으로 넘어가겠습니다.
 
 ## 네임스페이스 가져오기
 
-시작하기 전에 필요한 네임스페이스를 가져와야 합니다. 네임스페이스를 DIY 프로젝트에 필요한 툴킷으로 생각하십시오.
+시작하기 전에 필요한 네임스페이스를 가져와야 합니다. 네임스페이스를 DIY 프로젝트에 필요한 툴킷으로 생각하세요.
 
 ```csharp
 using Aspose.Words;

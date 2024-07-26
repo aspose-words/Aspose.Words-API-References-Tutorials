@@ -2,64 +2,112 @@
 title: Gunakan Font Dari Mesin Target
 linktitle: Gunakan Font Dari Mesin Target
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengonversi dokumen Word menjadi HTML tetap menggunakan font mesin target dengan Aspose.Words untuk .NET.
+description: Pelajari cara menggunakan font dari mesin target di dokumen Word Anda dengan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk integrasi font yang lancar.
 type: docs
 weight: 10
 url: /id/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
+## Perkenalan
 
-Saat mengonversi dokumen Word ke HTML tetap dalam aplikasi C#, Anda mungkin ingin menggunakan font mesin target untuk memastikan bahwa HTML yang dirender mempertahankan tampilan dan gaya asli dokumen. Dengan pustaka Aspose.Words untuk .NET, Anda dapat dengan mudah menentukan fungsionalitas ini menggunakan opsi penyimpanan HtmlFixedSaveOptions. Dalam panduan langkah demi langkah ini, kami akan memandu Anda tentang cara menggunakan kode sumber C# Aspose.Words untuk .NET untuk mengonversi dokumen Word menjadi HTML tetap menggunakan font mesin target menggunakan HtmlFixedSaveOptions.
+Apakah Anda siap untuk terjun ke dunia Aspose.Words for .NET yang menakjubkan? Bersiaplah, karena kami akan membawa Anda dalam perjalanan melalui dunia font yang ajaib. Hari ini, kami berfokus pada cara menggunakan font dari mesin target saat bekerja dengan dokumen Word. Fitur bagus ini memastikan dokumen Anda terlihat persis seperti yang Anda inginkan, di mana pun dokumen itu dilihat. Mari kita mulai!
 
-## Memahami perpustakaan Aspose.Words
+## Prasyarat
 
-Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan yang kuat untuk membuat, mengedit, mengonversi, dan melindungi dokumen Word di berbagai platform termasuk .NET. Ia menawarkan banyak fitur untuk memanipulasi dokumen, seperti menyisipkan teks, mengubah format, menambahkan bagian, dan banyak lagi.
+Sebelum kita masuk ke detail seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan:
 
-## Memuat dokumen Word
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Jika Anda belum melakukannya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Anda harus menyiapkan lingkungan pengembangan .NET, seperti Visual Studio.
+3. Dokumen untuk Digunakan: Siapkan dokumen Word untuk pengujian. Kami akan menggunakan dokumen bernama "Poin-poin dengan font.docx alternatif".
 
-Langkah pertama adalah memuat dokumen Word yang ingin Anda konversi ke HTML tetap. Gunakan kelas Dokumen untuk memuat dokumen dari file sumber. Berikut ini contohnya:
+Sekarang kita telah membahas dasar-dasarnya, mari selami kodenya!
 
-```csharp
-Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
-```
+## Impor Namespace
 
-Dalam contoh ini, kita memuat dokumen "Poin-poin dengan font.docx alternatif" yang terletak di direktori dokumen.
-
-## Mengonfigurasi opsi cadangan
-
-Langkah selanjutnya adalah mengonfigurasi opsi penyimpanan untuk mengonversi ke HTML tetap. Gunakan kelas HtmlFixedSaveOptions dan atur properti UseTargetMachineFonts ke true untuk memberi tahu Aspose.Words agar menggunakan font dari mesin target. Berikut cara melakukannya:
+Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan. Ini adalah tulang punggung proyek kami, yang menghubungkan semua titik.
 
 ```csharp
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Kami membuat objek HtmlFixedSaveOptions baru dan menyetel properti UseTargetMachineFonts ke true untuk menggunakan font mesin target saat mengonversi.
+## Langkah 1: Muat Dokumen Word
 
-## Memperbaiki konversi dokumen HTML
+ Langkah pertama dalam tutorial kami adalah memuat dokumen Word. Di sinilah semuanya dimulai. Kami akan menggunakan`Document` kelas dari perpustakaan Aspose.Words untuk mencapai ini.
 
-Sekarang kita telah mengonfigurasi opsi penyimpanan, kita dapat melanjutkan untuk mengonversi dokumen menjadi HTML tetap. Gunakan metode Simpan dari kelas Dokumen untuk menyimpan dokumen yang dikonversi dalam format HTML tetap dengan menentukan opsi penyimpanan. Berikut ini contohnya:
+### Langkah 1.1: Tentukan Jalur Dokumen
 
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
-```
-
-Dalam contoh ini, kami menyimpan dokumen yang dikonversi sebagai "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html" menggunakan opsi penyimpanan yang ditentukan.
-
-### Contoh kode sumber untuk HtmlFixedSaveOptions dengan fitur "Gunakan font dari mesin target" menggunakan Aspose.Words untuk .NET
+Mari kita mulai dengan menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda berada.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+### Langkah 1.2: Muat Dokumen
+
+ Sekarang, kita memuat dokumen menggunakan`Document` kelas.
+
+```csharp
 // Muat dokumen Word
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
+```
 
+## Langkah 2: Konfigurasikan Opsi Penyimpanan
+
+Selanjutnya, kita perlu mengkonfigurasi opsi penyimpanan. Langkah ini penting karena memastikan bahwa font yang digunakan dalam dokumen Anda berasal dari mesin target.
+
+ Kami akan membuat sebuah instance dari`HtmlFixedSaveOptions` dan atur`UseTargetMachineFonts`properti ke`true`.
+
+```csharp
 // Konfigurasikan opsi pencadangan dengan fitur "Gunakan font dari mesin target".
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
+{
+    UseTargetMachineFonts = true
+};
+```
 
-// Ubah dokumen menjadi HTML tetap
+## Langkah 3: Simpan Dokumen
+
+Terakhir, kami menyimpan dokumen sebagai file HTML tetap. Ini adalah dimana keajaiban terjadi!
+
+ Kami akan menggunakan`Save` metode untuk menyimpan dokumen dengan opsi penyimpanan yang dikonfigurasi.
+
+```csharp
+//Ubah dokumen menjadi HTML tetap
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
+## Langkah 4: Verifikasi Outputnya
+
+Yang terakhir, selalu merupakan ide bagus untuk memverifikasi hasilnya. Buka file HTML yang disimpan dan periksa apakah font diterapkan dengan benar dari mesin target.
+
+Arahkan ke direktori tempat Anda menyimpan file HTML dan buka di browser web.
+
+```csharp
+// Verifikasi hasilnya dengan membuka file HTML
+System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
+```
+
+Dan itu dia! Anda telah berhasil menggunakan font dari mesin target di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+
 ## Kesimpulan
 
-Dalam panduan ini, kami telah menjelaskan cara mengonversi dokumen Word menjadi HTML tetap menggunakan font mesin target dengan pustaka Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang disediakan dan menggunakan kode sumber C# yang disediakan, Anda dapat dengan mudah menerapkan fungsi ini di aplikasi C# Anda. Konversi ke HTML tetap dengan font mesin target menjamin rendering dokumen yang setia dan konsisten dalam format HTML.
+Menggunakan font dari mesin target memastikan dokumen Word Anda terlihat konsisten dan profesional, di mana pun dokumen tersebut dilihat. Aspose.Words untuk .NET menjadikan proses ini mudah dan efisien. Dengan mengikuti tutorial ini, Anda telah mempelajari cara memuat dokumen, mengonfigurasi opsi penyimpanan, dan menyimpan dokumen dengan pengaturan font yang diinginkan. Selamat membuat kode!
+
+## FAQ
+
+### Bisakah saya menggunakan metode ini dengan format dokumen lain?
+Ya, Aspose.Words untuk .NET mendukung berbagai format dokumen, dan Anda dapat mengonfigurasi opsi penyimpanan serupa untuk format berbeda.
+
+### Bagaimana jika mesin target tidak memiliki font yang diperlukan?
+Jika mesin target tidak memiliki font yang diperlukan, dokumen mungkin tidak ditampilkan sebagaimana mestinya. Itu selalu merupakan ide bagus untuk menyematkan font bila diperlukan.
+
+### Bagaimana cara menyematkan font ke dalam dokumen?
+ Menyematkan font dapat dilakukan menggunakan`FontSettings` kelas di Aspose.Words untuk .NET. Mengacu kepada[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
+
+### Apakah ada cara untuk melihat pratinjau dokumen sebelum menyimpannya?
+ Ya, Anda dapat menggunakan`DocumentRenderer` kelas untuk melihat pratinjau dokumen sebelum menyimpan. Lihat Aspose.Words untuk .NET[dokumentasi](https://reference.aspose.com/words/net/) untuk informasi lebih lanjut.
+
+### Bisakah saya menyesuaikan keluaran HTML lebih lanjut?
+ Sangat! Itu`HtmlFixedSaveOptions` kelas menyediakan berbagai properti untuk menyesuaikan keluaran HTML. Jelajahi[dokumentasi](https://reference.aspose.com/words/net/) untuk semua opsi yang tersedia.

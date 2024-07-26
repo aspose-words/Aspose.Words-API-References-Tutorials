@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- На этом этапе мы используем LINQ для фильтрации и подсчета фигур, имеющих SmartArt.`GetChildNodes` метод извлекает все фигуры, а метод`HasSmartArt` Свойство проверяет, содержит ли фигура SmartArt.
+ На этом этапе мы используем LINQ для фильтрации и подсчета фигур, имеющих SmartArt.`GetChildNodes` метод извлекает все фигуры, а метод`HasSmartArt`Свойство проверяет, содержит ли фигура SmartArt.
 
 ## Шаг 4. Запуск кода
 
@@ -80,7 +80,7 @@ The document has X shapes with SmartArt.
 
 ## Заключение
 
-И вот оно! Вы успешно научились обнаруживать фигуры SmartArt в документах Word с помощью Aspose.Words для .NET. В этом руководстве рассматривается настройка среды, загрузка документов, обнаружение фигур SmartArt и запуск кода. Aspose.Words предлагает широкий спектр функций, поэтому обязательно изучите[Документация по API](https://reference.aspose.com/words/net/) раскрыть весь свой потенциал.
+ И вот оно! Вы успешно научились обнаруживать фигуры SmartArt в документах Word с помощью Aspose.Words для .NET. В этом руководстве рассматривается настройка среды, загрузка документов, обнаружение фигур SmartArt и запуск кода. Aspose.Words предлагает широкий спектр функций, поэтому обязательно изучите[Документация по API](https://reference.aspose.com/words/net/) раскрыть весь свой потенциал.
 
 ## Часто задаваемые вопросы
 

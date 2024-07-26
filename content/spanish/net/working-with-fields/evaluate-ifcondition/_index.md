@@ -26,7 +26,7 @@ DocumentBuilder builder = new DocumentBuilder();
 FieldIf field = (FieldIf) builder.InsertField("IF 1 = 1", null);
 ```
 
-Aquí usamos la condición "1=1" como ejemplo, pero puede personalizar la condición según sea necesario.
+Aquí utilizamos la condición "1=1" como ejemplo, pero puede personalizar la condición según sea necesario.
 
 ## Paso 3: evaluar la condición IF
 

@@ -85,7 +85,7 @@ doc.Save("OutputDocument.docx");
 
 ### 1. Adım: Yeni Bir Belge Oluşturun
 
- Bu adımda, yeni bir örneğini başlatıyoruz.`Document` sınıf ve bir`DocumentBuilder` .`DocumentBuilder` belgeye içerik ekleme sürecini basitleştiren bir yardımcı sınıftır.
+ Bu adımda, yeni bir örneğini başlatıyoruz.`Document` sınıf ve bir`DocumentBuilder` .`DocumentBuilder` belgeye içerik ekleme işlemini kolaylaştıran yardımcı bir sınıftır.
 
 ### Adım 2: Geçerli Bölüme Erişin
 

@@ -34,7 +34,7 @@ Dengan mengikuti tutorial ini, Anda akan dapat memanfaatkan sepenuhnya fitur man
 | [Ulangi Baris Di Halaman Berikutnya](./repeat-rows-on-subsequent-pages/) | Pelajari cara mengulang baris tabel pada halaman berikutnya dalam dokumen Word dengan Aspose.Words untuk .NET. |
 | [Pas Otomatis Ke Jendela](./auto-fit-to-page-width/) | Sesuaikan tabel secara otomatis ke jendela di dokumen Word dengan mudah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk dokumen yang lebih bersih dan profesional. |
 | [Pengaturan Lebar Pilihan](./preferred-width-settings/) | Pelajari cara membuat tabel dengan pengaturan lebar absolut, relatif, dan otomatis di Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. |
-| [Ambil Jenis Lebar Pilihan](./retrieve-preferred-width-type/) | Pelajari cara mengambil jenis dan nilai lebar sel yang diinginkan dalam tabel Word dengan Aspose.Words untuk .NET. |
+| [Ambil Jenis Lebar Pilihan](./retrieve-preferred-width-type/) | Pelajari cara mengambil jenis dan nilai lebar sel yang diinginkan di tabel Word dengan Aspose.Words untuk .NET. |
 | [Dapatkan Posisi Meja](./get-table-position/) | Pelajari cara mendapatkan posisi tabel di dokumen Word dengan Aspose.Words untuk .NET. |
 | [Dapatkan Posisi Meja Mengambang](./get-floating-table-position/) | Pelajari cara mendapatkan posisi tabel mengambang di dokumen Word dengan Aspose.Words untuk .NET. |
 | [Posisi Meja Mengambang](./floating-table-position/) | Pelajari cara memposisikan tabel dalam posisi mengambang di dokumen Word dengan Aspose.Words untuk .NET. |

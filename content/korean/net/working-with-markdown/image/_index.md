@@ -74,5 +74,5 @@ Aspose.Words는 JPEG, PNG, BMP, GIF 등을 포함한 다양한 이미지 형식�
 ### URL에서 이미지를 추가할 수 있나요?  
  예, URL을 제공하여 URL에서 이미지를 추가할 수 있습니다.`InsertImage` 방법.
 
-### .NET용 Aspose.Words의 무료 평가판을 받으려면 어떻게 해야 합니까?  
+### .NET용 Aspose.Words 무료 평가판을 받으려면 어떻게 해야 합니까?  
  다음에서 무료 평가판을 받을 수 있습니다.[Aspose 웹 사이트](https://releases.aspose.com/).

@@ -15,7 +15,7 @@ V tomto příkladu vám ukážeme, jak rozdělit dokument aplikace Word do samos
 Chcete-li začít, zadejte adresář pro váš dokument a načtěte dokument do objektu Document. Zde je postup:
 
 ```csharp
-//Cesta k adresáři dokumentů.
+// Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```

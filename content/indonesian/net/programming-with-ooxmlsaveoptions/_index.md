@@ -16,8 +16,8 @@ Baik Anda ingin membuat dokumen yang kompatibel dengan versi Word yang lebih lam
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Enkripsi Docx Dengan Kata Sandi](./encrypt-docx-with-password/) | Pelajari cara mengenkripsi file DOCX dengan kata sandi menggunakan Aspose.Words untuk .NET. Tutorial lengkap untuk keamanan dokumen. |
-| [Kepatuhan Ooxml Iso 29500_2008_Ketat](./ooxml-compliance-iso-29500_2008_strict/) | Pelajari cara memastikan kepatuhan Ooxml Iso 29500_2008_Strict saat menyimpan dokumen dengan Aspose.Words untuk .NET. |
-| [Perbarui Properti Waktu Tersimpan Terakhir](./update-last-saved-time-property/) | Pelajari cara memperbarui properti Waktu Tersimpan Terakhir secara otomatis saat menyimpan dokumen dengan Aspose.Words untuk .NET. |
-| [Pertahankan Karakter Kontrol Lama](./keep-legacy-control-chars/) | Pelajari cara mempertahankan karakter kontrol lama saat menyimpan dokumen dengan Aspose.Words untuk .NET. |
-| [Tetapkan Tingkat Kompresi](./set-compression-level/) | Pelajari cara mengatur tingkat kompresi saat menyimpan dokumen dengan Aspose.Words untuk .NET. |
+| [Enkripsi Docx Dengan Kata Sandi](./encrypt-docx-with-password/) | Amankan dokumen Word Anda dengan mengenkripsinya menggunakan kata sandi menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk melindungi informasi sensitif Anda. |
+| [Kepatuhan Ooxml Iso 29500_2008_Ketat](./ooxml-compliance-iso-29500_2008_strict/) | Pelajari cara memastikan kepatuhan OOXML ISO 29500_2008_Strict menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. |
+| [Perbarui Properti Waktu Tersimpan Terakhir](./update-last-saved-time-property/) | Pelajari cara memperbarui properti waktu yang terakhir disimpan di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci. |
+| [Pertahankan Karakter Kontrol Lama](./keep-legacy-control-chars/) | Pelajari cara mempertahankan karakter kontrol lama di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. |
+| [Tetapkan Tingkat Kompresi](./set-compression-level/) | Pelajari cara mengatur tingkat kompresi dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengoptimalkan penyimpanan dan kinerja dokumen Anda. |

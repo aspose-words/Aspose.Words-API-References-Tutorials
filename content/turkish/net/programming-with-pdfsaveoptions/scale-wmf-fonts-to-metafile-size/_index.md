@@ -7,105 +7,104 @@ type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
+## giriiş
 
-Bu makale, Aspose.Words for .NET ile wmf yazı tiplerini meta dosya boyutuna ölçeklendirme özelliğiyle pdf boyutunun nasıl azaltılacağı konusunda adım adım bir kılavuz sağlar. Kodun her bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, PDF'ye dönüştürürken WMF yazı tipi ölçeklendirmenin nasıl etkinleştirileceğini veya devre dışı bırakılacağını anlayabileceksiniz.
+PDF dosyalarıyla, özellikle de WMF (Windows Meta Dosyası) grafikleri içeren Word belgelerinden oluşturulanlarla çalışırken boyut yönetimi, belge işlemenin çok önemli bir yönü haline gelebilir. PDF boyutunu kontrol etmenin bir yolu, WMF yazı tiplerinin belgede nasıl işleneceğini ayarlamaktır. Bu eğitimde, Aspose.Words for .NET'i kullanarak WMF yazı tiplerini meta dosya boyutuna ölçeklendirerek PDF boyutunu nasıl küçültebileceğinizi keşfedeceğiz.
 
-Başlamadan önce projenize Aspose.Words for .NET kütüphanesini kurup yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
+## Önkoşullar
 
-## 1. Adım: Belge dizinini tanımlayın
+Adımlara dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
- Başlamak için belgelerinizin bulunduğu dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
+1. Aspose.Words for .NET: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Değilse, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Bu öğreticide, C# kodunu yazıp çalıştırabileceğiniz bir .NET geliştirme ortamı (Visual Studio gibi) kurulduğu varsayılmaktadır.
+3. .NET Programlamanın Temel Anlayışı: Temel .NET programlama kavramlarına ve C# sözdizimine aşina olmak faydalı olacaktır.
+4. WMF Grafikli Word Belgesi: WMF grafikleri içeren bir Word belgesine ihtiyacınız olacak. Kendi belgenizi kullanabilir veya test etmek için bir tane oluşturabilirsiniz.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle C# projenize gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words ile çalışmak için gereken sınıflara ve yöntemlere erişmenizi sağlayacaktır.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 2. Adım: Belgeyi yükleyin
+## Adım 1: Word Belgesini Yükleyin
 
-Daha sonra işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte, belgenin "text.docx içeren WMF" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
+ Başlamak için WMF grafiklerini içeren Word belgesini yükleyin. Bu, kullanılarak yapılır.`Document` Aspose.Words'ten sınıf.
 
 ```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+// Belgeyi yükleyin
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
-## 3. Adım: Meta dosyası oluşturma seçeneklerini yapılandırma
+ Burada,`dataDir` belge dizini yolunuz için bir yer tutucudur. Bunun bir örneğini oluşturuyoruz`Document` Word dosyasının yolunu ileterek sınıf. Bu, belgeyi daha sonraki işlemlere hazır şekilde belleğe yükler.
 
- WMF yazı tipi ölçeklendirmesini meta dosya boyutuna göre etkinleştirmek veya devre dışı bırakmak için,`MetafileRenderingOptions` nesne. Bu örnekte, yazı tipi ölçeklendirmeyi ayarlayarak devre dışı bırakıyoruz.`ScaleWmfFontsToMetafileSize`mülkiyet`false`.
+## 2. Adım: Meta Dosyası Oluşturma Seçeneklerini Yapılandırma
+
+ Daha sonra meta dosyası oluşturma seçeneklerini yapılandırmanız gerekir. Özellikle,`ScaleWmfFontsToMetafileSize`mülkiyet`false`. Bu, WMF yazı tiplerinin meta dosya boyutuyla eşleşecek şekilde ölçeklenip ölçeklenmeyeceğini denetler.
 
 ```csharp
+// Yeni bir MetafileRenderingOptions örneği oluşturun
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 {
-     ScaleWmfFontsToMetafileSize=false
+    ScaleWmfFontsToMetafileSize = false
 };
 ```
 
-## 4. Adım: PDF olarak kaydetme seçeneklerini meta dosya oluşturma seçenekleriyle yapılandırın
+`MetafileRenderingOptions` class, meta dosyalarının (WMF gibi) nasıl oluşturulduğuna ilişkin seçenekler sağlar. Ayarlayarak`ScaleWmfFontsToMetafileSize` ile`false`Aspose.Words'e yazı tiplerini meta dosya boyutuna göre ölçeklendirmemesi talimatını veriyorsunuz, bu da genel PDF boyutunun azaltılmasına yardımcı olabilir.
 
-Son olarak, daha önce yapılandırılan meta dosya oluşturma seçeneklerini kullanarak PDF'ye kaydetme seçeneklerini yapılandırabiliriz.
+## 3. Adım: PDF Kaydetme Seçeneklerini Ayarlayın
+
+Şimdi, az önce ayarladığınız meta dosyası oluşturma seçeneklerini kullanmak için PDF kaydetme seçeneklerini yapılandırın. Bu, Aspose.Words'e belgeyi PDF olarak kaydederken meta dosyaları nasıl işleyeceğini anlatır.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
+// PdfSaveOptions'ın yeni bir örneğini oluşturun
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    MetafileRenderingOptions = metafileRenderingOptions
+};
 ```
 
-## Adım 5: Meta Dosyası Oluşturma Seçenekleri ile Belgeyi PDF Olarak Kaydetme
+`PdfSaveOptions` class, belgeyi PDF olarak kaydetmek için çeşitli ayarları belirtmenize olanak tanır. Daha önce yapılandırılmış olanı atayarak`MetafileRenderingOptions` -e`MetafileRenderingOptions` mülkiyet`PdfSaveOptions`ile belgenin istediğiniz meta dosya oluşturma ayarlarına göre kaydedilmesini sağlarsınız.
 
-Daha önce yapılandırılan kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedin.
+## Adım 4: Belgeyi PDF olarak kaydedin
+
+Son olarak, yapılandırılmış kaydetme seçeneklerini kullanarak Word belgesini PDF olarak kaydedin. Bu, meta dosyası oluşturma seçenekleri de dahil olmak üzere tüm ayarları çıktı PDF'sine uygulayacaktır.
+
 
 ```csharp
+// Belgeyi PDF olarak kaydedin
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-Bu kadar ! Dönüştürme sırasında WMF yazı tipi ölçeklendirmesini meta dosya boyutuna başarıyla etkinleştirdiniz veya devre dışı bıraktınız
-
-Aspose.Words for .NET kullanan bir PDF belgesi.
-
-### Aspose.Words for .NET ile WMF yazı tiplerini meta dosya boyutuna ölçeklendirmek için örnek kaynak kodu
-
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "WMF with text.docx");
-
-	MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
-	{
-		ScaleWmfFontsToMetafileSize = false
-	};
-
-	//Aspose.Words bazı meta dosyası kayıtlarını vektör grafiklerine doğru şekilde işleyemiyorsa
-	// daha sonra Aspose.Words bu meta dosyasını bir bitmap'e dönüştürür.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
-	
-        
-```
+ Bu adımda,`Save` yöntemi`Document` sınıfı, belgeyi bir PDF dosyasına aktarmak için kullanılır. PDF'nin kaydedileceği yol,`PdfSaveOptions` meta dosyası oluşturma ayarlarını içerir.
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir PDF belgesinde WMF yazı tiplerinin meta dosya boyutuna göre yeniden boyutlandırılmasının nasıl etkinleştirilip devre dışı bırakılacağını açıkladık. Açıklanan adımları izleyerek, bir PDF belgesine dönüştürürken WMF yazı tiplerinin meta dosya boyutuyla eşleşecek şekilde yeniden boyutlandırılması gerekip gerekmediğini kolayca kontrol edebilirsiniz. Bu, oluşturulan PDF dosyasının boyutunu azaltmanıza ve oluşturma performansını artırmanıza yardımcı olabilir. Belgelerinizin doğru yolunu belirttiğinizden ve meta dosyası oluşturma seçeneklerini gerektiği gibi yapılandırdığınızdan emin olun.
+WMF yazı tiplerini meta dosya boyutuna ölçeklendirerek, Word belgelerinden oluşturulan PDF dosyalarınızın boyutunu önemli ölçüde azaltabilirsiniz. Bu teknik, görsel içeriğin kalitesinden ödün vermeden belge depolama ve dağıtımını optimize etmeye yardımcı olur. Yukarıda özetlenen adımları takip etmek, PDF dosyalarınızın boyut olarak daha yönetilebilir ve verimli olmasını sağlar.
 
-### Sıkça Sorulan Sorular
+## SSS'ler
 
-#### S: Bir PDF belgesinde WMF yazı tiplerini meta dosya boyutuna göre yeniden boyutlandırmak nedir?
-C: PDF belgesindeki WMF yazı tiplerini meta dosya boyutuna göre yeniden boyutlandırmak, WMF yazı tiplerinin PDF belgesine dönüştürürken meta dosya boyutuyla eşleşecek şekilde ölçeklendirilmesi gerekip gerekmediğini kontrol eden bir özelliktir. Bu özellik etkinleştirildiğinde, WMF yazı tipleri meta dosyanın boyutuna uyacak şekilde ölçeklendirilir; bu, oluşturulan PDF belgesinin boyutunu küçültebilir.
+### WMF nedir ve PDF boyutu açısından neden önemlidir?
 
-#### S: Bir PDF belgesinde WMF yazı tiplerinin meta dosya boyutuna göre yeniden boyutlandırılmasını etkinleştirmek veya devre dışı bırakmak için Aspose.Words for .NET'i nasıl kullanabilirim?
-C: Aspose.Words for .NET kullanarak bir PDF belgesinde WMF yazı tiplerinin meta dosya boyutuna göre yeniden boyutlandırılmasını etkinleştirmek veya devre dışı bırakmak için şu adımları izleyin:
+WMF (Windows Meta Dosyası), Microsoft Windows'ta kullanılan bir grafik formatıdır. Hem vektör hem de bitmap verilerini içerebilir. Vektör verileri ölçeklendirilebildiğinden ve değiştirilebildiğinden, gereksiz derecede büyük PDF dosyalarından kaçınmak için bunların doğru şekilde işlenmesi önemlidir.
 
- Belgelerinizin bulunduğu dizin yolunu değiştirerek ayarlayın.`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+### WMF yazı tiplerini meta dosya boyutuna ölçeklendirmek PDF'yi nasıl etkiler?
 
- İşlemek istediğiniz belgeyi kullanarak yükleyin.`Document` sınıfını seçin ve belirtilen belgeler dizinindeki Word belgesinin yolunu belirtin.
+WMF yazı tiplerini meta dosya boyutuna göre ölçeklendirmek, dosya boyutunu artırabilecek yüksek çözünürlüklü yazı tipi oluşturmayı önleyerek genel PDF boyutunun küçültülmesine yardımcı olabilir.
 
- Bir örneğini oluşturarak meta dosyası oluşturma seçeneklerini yapılandırın.`MetafileRenderingOptions` sınıf ve ayarlama`ScaleWmfFontsToMetafileSize`mülkiyet`true` WMF yazı tiplerinin meta dosya boyutuna ölçeklenmesini etkinleştirmek veya`false` Bu özelliği devre dışı bırakmak için.
+### Aspose.Words ile diğer meta dosyası formatlarını kullanabilir miyim?
 
- Bir örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıfını kullanarak ve daha önce yapılandırılan meta dosyası oluşturma seçeneklerini kullanarak.
+Evet, Aspose.Words, WMF'nin yanı sıra EMF (Gelişmiş Meta Dosyası) da dahil olmak üzere çeşitli meta dosyası formatlarını destekler.
 
- Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document` yolu ve kaydetme seçeneklerini belirten sınıf.
+### Bu teknik tüm Word belgesi türlerine uygulanabilir mi?
 
-#### S: Bir PDF belgesinde WMF yazı tiplerini meta dosya boyutuna göre yeniden boyutlandırmanın faydaları nelerdir?
-C: Bir PDF belgesinde WMF yazı tiplerini meta dosya boyutuna göre yeniden boyutlandırmanın avantajları şunlardır:
+Evet, bu teknik WMF grafikleri içeren herhangi bir Word belgesine uygulanabilir ve oluşturulan PDF'nin boyutunun optimize edilmesine yardımcı olur.
 
-PDF dosya boyutunu küçültme: WMF yazı tiplerini meta dosya boyutuna göre yeniden boyutlandırmak, yazı tipi boyutunu meta dosya ihtiyaçlarına göre uyarlayarak oluşturulan PDF belgesinin boyutunu azaltabilir.
+### Aspose.Words hakkında daha fazla bilgiyi nerede bulabilirim?
 
-Geliştirilmiş performans: WMF yazı tiplerinin boyutunu meta dosyanın boyutlarına göre ayarlayarak PDF belgesinin oluşturulması daha hızlı ve daha verimli olabilir.
+ Aspose.Words hakkında daha fazlasını şuradan keşfedebilirsiniz:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) . İndirmeler, denemeler ve destek için şu adresi ziyaret edin:[Aspose.Words İndirme Sayfası](https://releases.aspose.com/words/net/), [Aspose.Words'ü satın alın](https://purchase.aspose.com/buy), [Ücretsiz deneme](https://releases.aspose.com/), [Geçici Lisans](https://purchase.aspose.com/temporary-license/) , Ve[Destek](https://forum.aspose.com/c/words/8).

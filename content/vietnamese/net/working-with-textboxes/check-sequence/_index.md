@@ -87,7 +87,7 @@ Xin chúc mừng! Bây giờ bạn đã biết cách kiểm tra trình tự các
 
 #### Câu hỏi: Thư viện nào được sử dụng để kiểm tra trình tự của TextBox bằng Aspose.Words cho .NET?
 
-Trả lời: Để kiểm tra trình tự các TextBox bằng Aspose.Words cho .NET, thư viện được sử dụng là Aspose.Words cho .NET.
+Trả lời: Để kiểm tra trình tự của TextBox bằng Aspose.Words cho .NET, thư viện được sử dụng là Aspose.Words cho .NET.
 
 #### Câu hỏi: Làm cách nào để xác định xem TextBox có phải là phần đầu của chuỗi không?
 

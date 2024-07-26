@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-In diesem Schritt erstellen wir ein neues`Document` Objekt und ein zugehöriges`DocumentBuilder` Objekt.
+ In diesem Schritt erstellen wir ein neues`Document` Objekt und ein zugehöriges`DocumentBuilder` Objekt.
 
 ## Schritt 3: Erstellen und Konfigurieren des benutzerdefinierten Stils
 
@@ -98,7 +98,7 @@ Um die Umgebung einzurichten, müssen Sie sicherstellen, dass Aspose.Words für 
 
 #### Wie erstelle und konfiguriere ich einen benutzerdefinierten Stil?
 
- Um einen benutzerdefinierten Stil zu erstellen, können Sie die`Styles.Add` Methode der`Document` Objekt. Geben Sie den Stiltyp an (z. B.`StyleType.Paragraph`) und geben Sie einen Namen für den Stil ein. Nach der Erstellung können Sie die Schrifteigenschaften des Stilobjekts ändern, um sein Erscheinungsbild zu konfigurieren.
+ Um einen benutzerdefinierten Stil zu erstellen, können Sie die`Styles.Add` Methode der`Document` Objekt. Geben Sie den Stiltyp an (z. B.`StyleType.Paragraph`und geben Sie einen Namen für den Stil ein. Nach der Erstellung können Sie die Schrifteigenschaften des Stilobjekts ändern, um sein Erscheinungsbild zu konfigurieren.
 
 #### Wie füge ich einen Stiltrenner ein?
 
@@ -106,7 +106,7 @@ Um die Umgebung einzurichten, müssen Sie sicherstellen, dass Aspose.Words für 
 
 #### Wie kann ich unterschiedliche Stile auf unterschiedliche Textabschnitte anwenden?
 
-Sie können unterschiedliche Stile auf unterschiedliche Textabschnitte anwenden, indem Sie die`ParagraphFormat.StyleName` Eigentum der`DocumentBuilder` Objekt. Bevor Sie den Text schreiben, können Sie den Stilnamen auf den gewünschten Stil setzen, und der folgende Text wird entsprechend formatiert.
+ Sie können unterschiedliche Stile auf unterschiedliche Textabschnitte anwenden, indem Sie die`ParagraphFormat.StyleName` Eigentum der`DocumentBuilder` Objekt. Bevor Sie den Text schreiben, können Sie den Stilnamen auf den gewünschten Stil setzen, und der folgende Text wird entsprechend formatiert.
 
 #### Kann ich das Dokument in verschiedenen Formaten speichern?
 

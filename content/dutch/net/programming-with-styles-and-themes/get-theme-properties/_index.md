@@ -20,7 +20,7 @@ Zorg ervoor dat u uw ontwikkelomgeving hebt ingesteld met Aspose.Words voor .NET
 Document doc = new Document();
 ```
 
-In deze stap maken we een nieuw`Document` voorwerp.
+ In deze stap maken we een nieuw`Document` voorwerp.
 
 ## Stap 3: Thema-eigenschappen ophalen
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- In deze stap gebruiken we de`Theme` eigendom van de`Document` bezwaar maken om de`Theme` voorwerp. Vervolgens hebben we toegang tot de verschillende eigenschappen van het thema, zoals de hoofdlettertypen (`MajorFonts`), de secundaire lettertypen (`MinorFonts`) en de accentkleuren (`Colors`).
+ In deze stap gebruiken we de`Theme` eigendom van de`Document`bezwaar maken om de`Theme` voorwerp. Vervolgens hebben we toegang tot de verschillende eigenschappen van het thema, zoals de hoofdlettertypen (`MajorFonts`), de secundaire lettertypen (`MinorFonts`) en de accentkleuren (`Colors`).
 
 ## Stap 4: Thema-eigenschappen weergeven
 
@@ -56,7 +56,7 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Conclusie
 
- In deze zelfstudie hebben we de functionaliteit onderzocht van het ophalen van de thema-eigenschappen van een document met Aspose.Words voor .NET. De ... gebruiken`Theme`object en de bijbehorende eigenschappen, konden we toegang krijgen tot informatie over de primaire en secundaire lettertypen, evenals de accentkleuren die in het documentthema werden gebruikt.
+ In deze zelfstudie hebben we de functionaliteit onderzocht van het ophalen van de thema-eigenschappen van een document met Aspose.Words voor .NET. De ... gebruiken`Theme` object en de bijbehorende eigenschappen, konden we toegang krijgen tot informatie over de primaire en secundaire lettertypen, evenals de accentkleuren die in het documentthema werden gebruikt.
 
 Dankzij de mogelijkheid om thema-eigenschappen op te halen, kunt u de stijlen en lay-outs van uw documenten analyseren en aanpassen. U kunt deze informatie gebruiken om gerichte wijzigingen door te voeren, rapporten te maken of analyses uit te voeren op het lettertype- en kleurgebruik in uw documenten.
 
@@ -68,11 +68,11 @@ Ontdek gerust meer functies van Aspose.Words voor .NET om uw workflow te verbete
 
 #### Hoe kan ik toegang krijgen tot de thema-eigenschappen van een document met Aspose.Words voor .NET?
 
- Om toegang te krijgen tot de thema-eigenschappen van een document, kunt u de`Theme` eigendom van de`Document` voorwerp. Het retourneert een`Theme`object dat informatie bevat over de primaire en secundaire lettertypen, evenals de accentkleuren die in het thema van het document worden gebruikt.
+ Om toegang te krijgen tot de thema-eigenschappen van een document, kunt u de`Theme` eigendom van de`Document` voorwerp. Het retourneert een`Theme` object dat informatie bevat over de primaire en secundaire lettertypen, evenals de accentkleuren die in het thema van het document worden gebruikt.
 
 #### Hoe kan ik de primaire en secundaire lettertypen van het thema van een document ophalen?
 
- U kunt toegang krijgen tot de primaire en secundaire lettertypen van het thema van een document door de`MajorFonts`En`MinorFonts` eigenschappen van de`Theme` voorwerp, respectievelijk. Deze eigenschappen bieden toegang tot de lettertypenamen die in het thema van het document worden gebruikt voor verschillende talen of regio's.
+ kunt toegang krijgen tot de primaire en secundaire lettertypen van het thema van een document door de`MajorFonts`En`MinorFonts` eigenschappen van de`Theme` voorwerp, respectievelijk. Deze eigenschappen bieden toegang tot de lettertypenamen die in het thema van het document worden gebruikt voor verschillende talen of regio's.
 
 #### Kan ik de accentkleuren krijgen die in het thema van een document worden gebruikt?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## PDF-weergavewaarschuwingen afhandelen met Aspose.Words voor .NET
+## Invoering
 
 Als u met Aspose.Words voor .NET werkt, is het beheren van PDF-weergavewaarschuwingen een essentieel aspect om ervoor te zorgen dat uw documenten correct worden verwerkt en opgeslagen. In deze uitgebreide handleiding laten we zien hoe u met Aspose.Words waarschuwingen voor PDF-weergave kunt afhandelen. Aan het einde van deze zelfstudie heeft u een duidelijk inzicht in hoe u deze functie in uw .NET-projecten kunt implementeren.
 
@@ -79,7 +79,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 public class HandleDocumentWarnings : IWarningCallback
 {
     /// <samenvatting>
-    /// Deze methode wordt aangeroepen wanneer er een potentieel probleem is tijdens de documentverwerking.
+    //Deze methode wordt aangeroepen wanneer er een potentieel probleem is tijdens de documentverwerking.
     ///</samenvatting>
     public void Warning(WarningInfo info)
     {

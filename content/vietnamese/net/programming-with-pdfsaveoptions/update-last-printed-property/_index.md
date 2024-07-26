@@ -2,81 +2,88 @@
 title: Cập nhật thuộc tính được in lần cuối trong tài liệu PDF
 linktitle: Cập nhật thuộc tính được in lần cuối trong tài liệu PDF
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để cập nhật thuộc tính "Bản in cuối cùng" khi chuyển đổi sang PDF bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách cập nhật thuộc tính được in cuối cùng trong tài liệu PDF bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi.
 type: docs
 weight: 10
 url: /vi/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
+## Giới thiệu
 
-Bài viết này cung cấp hướng dẫn từng bước về cách sử dụng thuộc tính "In lần cuối" trong tính năng cập nhật Tài liệu PDF với Aspose.Words cho .NET. Chúng tôi sẽ giải thích chi tiết từng phần của mã. Ở cuối hướng dẫn này, bạn sẽ có thể hiểu cách định cấu hình tùy chọn cập nhật thuộc tính "Được in lần cuối" khi chuyển đổi sang PDF.
+Bạn đang muốn cập nhật thuộc tính được in cuối cùng trong tài liệu PDF? Có thể bạn đang quản lý một khối lượng lớn tài liệu và cần theo dõi thời điểm chúng được in lần cuối. Dù lý do của bạn là gì thì việc cập nhật thuộc tính này có thể cực kỳ hữu ích và với Aspose.Words dành cho .NET, điều đó thật dễ dàng! Hãy đi sâu vào cách bạn có thể đạt được điều này.
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt và định cấu hình thư viện Aspose.Words cho .NET trong dự án của mình. Bạn có thể tìm thấy thư viện và hướng dẫn cài đặt trên trang web Aspose.
+## Điều kiện tiên quyết
 
-## Bước 1: Xác định thư mục tài liệu
+Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
 
- Để bắt đầu, bạn cần xác định đường dẫn đến thư mục chứa tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+-  Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Nếu chưa có, bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Một môi trường phát triển như Visual Studio.
+- Hiểu biết cơ bản về C#: Một số hiểu biết cơ bản về C# sẽ hữu ích.
+- Tài liệu: Tài liệu Word bạn muốn chuyển đổi sang PDF và cập nhật thuộc tính được in cuối cùng.
+
+## Nhập không gian tên
+
+Để sử dụng Aspose.Words cho .NET trong dự án của bạn, bạn cần nhập các vùng tên cần thiết. Đây là cách bạn làm điều đó:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Hãy chia nhỏ quy trình thành các bước đơn giản, dễ quản lý.
+
+## Bước 1: Thiết lập dự án của bạn
+
+Trước tiên, hãy thiết lập dự án của bạn. Mở Visual Studio, tạo Ứng dụng Console mới (.NET Framework hoặc .NET Core) và đặt tên cho nó có ý nghĩa như "UpdateLastPrintedPropertyPDF".
+
+## Bước 2: Cài đặt Aspose.Words cho .NET
+
+Tiếp theo, bạn cần cài đặt gói Aspose.Words for .NET. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet. Nhấp chuột phải vào dự án của bạn trong Solution Explorer, chọn "Quản lý gói NuGet", tìm kiếm "Aspose.Words" và cài đặt nó.
+
+## Bước 3: Tải tài liệu của bạn
+
+ Bây giờ, hãy tải tài liệu Word mà bạn muốn chuyển đổi sang PDF. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn đến tài liệu của bạn.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Bước 2: Tải tài liệu lên
-
-Tiếp theo, chúng ta cần tải tài liệu mà chúng ta muốn xử lý. Trong ví dụ này, chúng tôi giả sử tài liệu có tên là "Rendering.docx" và nằm trong thư mục tài liệu được chỉ định.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Bước 3: Định cấu hình tùy chọn Lưu dưới dạng PDF với thuộc tính "In lần cuối" được cập nhật
+## Bước 4: Định cấu hình tùy chọn lưu PDF
 
- Để bật cập nhật thuộc tính "Bản in cuối cùng" khi chuyển đổi sang PDF, chúng ta cần định cấu hình`PdfSaveOptions` đối tượng và thiết lập`UpdateLastPrintedProperty`tài sản để`true`.
+ Chúng ta cần định cấu hình các tùy chọn lưu PDF để cập nhật thuộc tính được in cuối cùng. Tạo một phiên bản mới của`PdfSaveOptions` và thiết lập`UpdateLastPrintedProperty`tài sản để`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions 
+{ 
+	UpdateLastPrintedProperty = true 
+};
 ```
 
-## Bước 4: Lưu tài liệu dưới dạng PDF với bản cập nhật thuộc tính "Được in lần cuối"
+## Bước 5: Lưu tài liệu dưới dạng PDF
 
-Cuối cùng, chúng ta có thể lưu tài liệu ở định dạng PDF bằng cách sử dụng các tùy chọn lưu đã định cấu hình trước đó.
+Cuối cùng, lưu tài liệu dưới dạng PDF với thuộc tính được cập nhật. Chỉ định đường dẫn đầu ra và các tùy chọn lưu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-Đó là tất cả ! Bạn đã kích hoạt thành công việc cập nhật thuộc tính "Bản in cuối cùng" khi chuyển đổi tài liệu sang PDF bằng Aspose.Words for .NET.
-
-### Mã nguồn ví dụ để cập nhật thuộc tính "Được in lần cuối" với Aspose.Words cho .NET
-
-
-```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
-
-```
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách cập nhật thuộc tính "Bản in cuối cùng" trong tài liệu PDF bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đã cho, bạn có thể dễ dàng định cấu hình tùy chọn cập nhật thuộc tính "Được in lần cuối" khi chuyển đổi tài liệu sang PDF. Sử dụng tính năng này để theo dõi việc sử dụng tài liệu và thông tin liên quan.
+Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng cập nhật thuộc tính được in cuối cùng trong tài liệu PDF bằng Aspose.Words for .NET. Phương pháp này đảm bảo quy trình quản lý tài liệu của bạn luôn hiệu quả và cập nhật. Hãy dùng thử và xem nó đơn giản hóa quy trình làm việc của bạn như thế nào.
 
-### Các câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Thuộc tính "Bản in cuối cùng" trong tài liệu PDF là gì?
-Trả lời: Thuộc tính "Được in lần cuối" trong tài liệu PDF đề cập đến ngày và giờ tài liệu được in lần cuối. Thuộc tính này có thể hữu ích để theo dõi thông tin về việc sử dụng và quản lý tài liệu.
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ dành cho các tác vụ xử lý tài liệu trong các ứng dụng .NET, bao gồm tạo, sửa đổi, chuyển đổi và in tài liệu.
 
-#### Câu hỏi: Làm cách nào tôi có thể cập nhật thuộc tính "Bản in cuối cùng" trong tài liệu PDF bằng Aspose.Words cho .NET?
-Trả lời: Để cập nhật thuộc tính "Bản in cuối cùng" trong tài liệu PDF bằng Aspose.Words cho .NET, hãy làm theo các bước sau:
+### Tại sao phải cập nhật thuộc tính được in cuối cùng trong PDF?
+Cập nhật thuộc tính được in cuối cùng giúp theo dõi việc sử dụng tài liệu, đặc biệt là trong môi trường mà việc in tài liệu là hoạt động thường xuyên.
 
- Tạo một thể hiện của`Document` lớp chỉ định đường dẫn đến tài liệu Word.
+### Tôi có thể cập nhật các thuộc tính khác bằng Aspose.Words cho .NET không?
+Có, Aspose.Words for .NET cho phép bạn cập nhật nhiều thuộc tính tài liệu khác nhau, chẳng hạn như tác giả, tiêu đề, chủ đề, v.v.
 
- Tạo một thể hiện của`PdfSaveOptions` lớp và thiết lập`UpdateLastPrintedProperty`tài sản để`true` để cho phép cập nhật thuộc tính "Được in lần cuối".
+### Aspose.Words cho .NET có miễn phí không?
+Aspose.Words for .NET cung cấp bản dùng thử miễn phí mà bạn có thể tải xuống[đây](https://releases.aspose.com/). Để sử dụng lâu dài, bạn sẽ cần phải mua giấy phép.
 
- Sử dụng`Save` phương pháp của`Document`lớp để lưu tài liệu ở định dạng PDF bằng cách chỉ định các tùy chọn lưu.
-
-#### Câu hỏi: Làm cách nào để kiểm tra xem thuộc tính "Bản in lần cuối" đã được cập nhật trong tài liệu PDF được tạo chưa?
-Trả lời: Bạn có thể kiểm tra xem thuộc tính "Bản in cuối cùng" đã được cập nhật trong tài liệu PDF được tạo hay chưa bằng cách mở tệp PDF bằng trình xem PDF tương thích, chẳng hạn như Adobe Acrobat Reader và xem thông tin tài liệu. Ngày và giờ của lần in cuối cùng phải tương ứng với ngày và giờ tạo tài liệu PDF.
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
+Bạn có thể tìm tài liệu chi tiết về Aspose.Words for .NET[đây](https://reference.aspose.com/words/net/).

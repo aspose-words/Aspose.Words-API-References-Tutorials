@@ -106,7 +106,7 @@ Toutes nos félicitations! Vous avez appris avec succès comment masquer un axe 
 ## FAQ
 
 ### Qu’est-ce qu’Aspose.Words pour .NET ?
-Aspose.Words for .NET est une API puissante pour créer, modifier, convertir et manipuler des documents Word dans des applications .NET.
+Aspose.Words for .NET est une API puissante pour créer, éditer, convertir et manipuler des documents Word dans des applications .NET.
 
 ### Puis-je masquer les axes X et Y dans un graphique ?
  Oui, vous pouvez masquer les deux axes en définissant le`Hidden` propriété des deux`AxisX`et`AxisY` à`true`.

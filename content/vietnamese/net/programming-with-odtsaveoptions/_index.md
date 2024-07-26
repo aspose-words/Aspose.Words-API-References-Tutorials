@@ -16,4 +16,4 @@ Cho dù bạn cần chuyển đổi tài liệu, thao tác nội dung, quản l�
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Đơn vị đo lường](./measure-unit/) | Tìm hiểu cách chỉ định đơn vị đo khi chuyển đổi tài liệu Word sang ODT bằng Aspose.Words for .NET. |
+| [Đơn vị đo lường](./measure-unit/) | Tìm hiểu cách định cấu hình tính năng đơn vị đo lường trong Aspose.Words for .NET để duy trì định dạng tài liệu trong quá trình chuyển đổi ODT. |

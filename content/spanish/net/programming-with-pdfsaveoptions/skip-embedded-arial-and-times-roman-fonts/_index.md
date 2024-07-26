@@ -2,94 +2,86 @@
 title: Optimice el tamaño del PDF con omitir fuentes Arial y Times Roman incrustadas
 linktitle: Optimice el tamaño del PDF con omitir fuentes Arial y Times Roman incrustadas
 second_title: API de procesamiento de documentos Aspose.Words
-description: Guía paso a paso para generar PDF optimizado sin incrustar fuentes Arial y Times Roman con Aspose.Words para .NET.
+description: Optimice el tamaño del PDF omitiendo las fuentes Arial y Times Roman incrustadas usando Aspose.Words para .NET. Siga esta guía paso a paso para optimizar sus archivos PDF.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
+## Introducción
 
-Este artículo proporciona una guía paso a paso sobre cómo utilizar la función para optimizar el tamaño de PDF omitiendo las fuentes Arial y Times Roman incrustadas al tamaño de metarchivo con Aspose.Words para .NET. Explicaremos cada parte del código en detalle. Al final de este tutorial, podrá comprender cómo configurar la opción del modo de incrustación de fuentes en un documento y generar un PDF sin incrustar fuentes Arial y Times Roman.
+¿Alguna vez te has encontrado en una situación en la que el tamaño de tu archivo PDF es demasiado grande? Es como hacer las maletas para unas vacaciones y darse cuenta de que la maleta está a punto de estallar. Sabes que necesitas perder algo de peso, pero ¿qué dejas ir? Al trabajar con archivos PDF, especialmente aquellos convertidos a partir de documentos de Word, las fuentes incrustadas pueden aumentar el tamaño del archivo. Afortunadamente, Aspose.Words para .NET proporciona una solución elegante para mantener sus archivos PDF ágiles y sencillos. En este tutorial, veremos cómo optimizar el tamaño de su PDF omitiendo las fuentes incrustadas Arial y Times Roman. ¡Empecemos!
 
-Antes de comenzar, asegúrese de haber instalado y configurado la biblioteca Aspose.Words para .NET en su proyecto. Puede encontrar la biblioteca y las instrucciones de instalación en el sitio web de Aspose.
+## Requisitos previos
 
-## Paso 1: definir el directorio de documentos
+Antes de entrar en el meollo de la cuestión, hay algunas cosas que necesitará:
+-  Aspose.Words para .NET: asegúrese de tener instalada esta potente biblioteca. Si no, puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+- Un conocimiento básico de C#: esto le ayudará a seguir los fragmentos de código.
+- Un documento de Word: usaremos un documento de muestra para demostrar el proceso. 
 
- Para comenzar, debe definir la ruta al directorio donde se encuentran sus documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su directorio de documentos.
+## Importar espacios de nombres
+
+Lo primero es lo primero, asegúrese de haber importado los espacios de nombres necesarios. Esto prepara el escenario para acceder a las funcionalidades de Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Muy bien, analicemos el proceso paso a paso.
+
+## Paso 1: configure su entorno
+
+Para comenzar, necesita configurar su entorno de desarrollo. Abra su IDE de C# favorito (como Visual Studio) y cree un nuevo proyecto.
+
+## Paso 2: cargue el documento de Word
+
+El siguiente paso es cargar el documento de Word que desea convertir a PDF. Asegúrese de que su documento esté en el directorio correcto.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Paso 2: Sube el documento
-
-A continuación, debemos cargar el documento que queremos procesar. En este ejemplo, asumimos que el documento se llama "Rendering.docx" y está ubicado en el directorio de documentos especificado.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Paso 3: Configurar las opciones de guardar como PDF con incrustación de fuentes
+ En este fragmento, reemplace`"YOUR DOCUMENT DIRECTORY"` con la ruta a su directorio de documentos.
 
- Para omitir la incrustación de fuentes Arial y Times Roman en el PDF generado, debemos configurar el`PdfSaveOptions` objeto y establecer el`FontEmbeddingMode`propiedad a`PdfFontEmbeddingMode.EmbedAll`.
+## Paso 3: configurar las opciones de guardar PDF
+
+Ahora, necesitamos configurar las opciones de guardar PDF para controlar cómo se incrustan las fuentes. De forma predeterminada, todas las fuentes están incrustadas, lo que puede aumentar el tamaño del archivo. Cambiaremos esta configuración.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll
+};
 ```
 
-## Paso 4: guarde el documento como PDF sin fuentes incrustadas
+## Paso 4: guarde el documento como PDF
 
-Finalmente podremos guardar el documento en formato PDF utilizando las opciones de guardado configuradas previamente.
+Finalmente, guarde el documento como PDF con las opciones de guardado especificadas. Aquí es donde ocurre la magia.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-Eso es todo ! Ha generado exitosamente un PDF sin incrustar fuentes Arial y Times Roman usando Aspose.Words para .NET.
-
-### Código fuente de ejemplo para omitir las fuentes Arial y Times Roman incrustadas en tamaño de metarchivo con Aspose.Words para .NET
-
-```csharp
-
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
-   
-```
+Este comando guarda su documento como un PDF llamado "OptimizedPDF.pdf" en el directorio especificado.
 
 ## Conclusión
 
-En este tutorial, explicamos cómo deshabilitar la incrustación de fuentes Arial y Times Roman en un documento PDF usando Aspose.Words para .NET. Si sigue los pasos descritos, puede generar un archivo PDF sin incrustar estas fuentes específicas, lo que puede ayudar a reducir el tamaño del archivo y garantizar una mejor compatibilidad de los documentos en diferentes plataformas. Asegúrese de considerar las consecuencias de desactivar la incrustación de fuentes cuando utilice esta función. No dude en explorar más funciones de Aspose.Words para .NET para optimizar la generación de sus archivos PDF.
+¡Y ahí lo tienes! Acaba de aprender cómo optimizar el tamaño de su archivo PDF omitiendo la incrustación de fuentes Arial y Times Roman usando Aspose.Words para .NET. Este simple ajuste puede reducir significativamente el tamaño de sus archivos, haciéndolos más fáciles de compartir y almacenar. Es como ir al gimnasio a buscar archivos PDF, perder peso innecesario y mantener intactos todos los elementos esenciales.
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 
-#### P: ¿Qué significa desactivar la incrustación de fuentes Arial y Times Roman en un documento PDF y por qué es importante?
-R: Deshabilitar la incrustación de fuentes Arial y Times Roman en un documento PDF es el proceso de no incluir estas fuentes en el archivo PDF generado. Esto puede ser importante para reducir el tamaño del archivo PDF evitando incluir fuentes que ya están comúnmente disponibles en los sistemas de lectura de PDF. También puede ayudar a garantizar una mejor compatibilidad y una apariencia consistente del documento PDF en diferentes dispositivos y plataformas.
+### ¿Por qué debería omitir la incorporación de fuentes Arial y Times Roman?
+Omitir estas fuentes comunes puede reducir el tamaño de su archivo PDF, ya que la mayoría de los sistemas ya tienen estas fuentes instaladas.
 
-#### P: ¿Cómo puedo configurar Aspose.Words para .NET para que no incruste fuentes Arial y Times Roman en un documento PDF?
-R: Para configurar Aspose.Words para .NET para que no incorpore fuentes Arial y Times Roman en un documento PDF, siga estos pasos:
+### ¿Esto afectará la apariencia de mi PDF?
+No, no lo será. Dado que Arial y Times Roman son fuentes estándar, la apariencia sigue siendo constante en los diferentes sistemas.
 
- Establezca la ruta del directorio donde se encuentran sus documentos reemplazando`"YOUR DOCUMENT DIRECTORY"` con la ruta real de su directorio de documentos.
+### ¿Puedo omitir la inserción de otras fuentes también?
+Sí, puede configurar las opciones de guardar para omitir la incorporación de otras fuentes si es necesario.
 
- Cargue el documento que desea procesar utilizando el`Document` clase y la ruta del documento especificada.
+### ¿Aspose.Words para .NET es gratuito?
+Aspose.Words para .NET ofrece una prueba gratuita que puedes descargar[aquí](https://releases.aspose.com/) , pero para tener acceso completo, necesitas comprar una licencia[aquí](https://purchase.aspose.com/buy).
 
- Crear una instancia del`PdfSaveOptions` clase y establecer el`FontEmbeddingMode`propiedad a`PdfFontEmbeddingMode.EmbedAll`. Esto incrustará todas las fuentes excepto Arial y Times Roman en el archivo PDF generado.
-
- Utilizar el`Save` método de la`Document` objeto para guardar el documento en formato PDF especificando las opciones de guardado configuradas anteriormente.
-
-#### P: ¿Cuáles son los beneficios de desactivar la incrustación de fuentes Arial y Times Roman en un documento PDF?
-R: Los beneficios de desactivar la incrustación de fuentes Arial y Times Roman en un documento PDF son:
-
-Reducción del tamaño del archivo PDF: al evitar incrustar fuentes comúnmente disponibles como Arial y Times Roman, se puede reducir el tamaño del archivo PDF, lo que facilita almacenar, compartir y transferir archivos.
-
-Mejor compatibilidad: al utilizar fuentes que están comúnmente disponibles en los sistemas lectores de PDF, garantiza una mejor compatibilidad y apariencia del documento en diferentes dispositivos y plataformas.
-
-#### P: ¿Cuáles son las consecuencias de desactivar la incorporación de fuentes Arial y Times Roman en un documento PDF?
-R: Las consecuencias de desactivar la incorporación de fuentes Arial y Times Roman en un documento PDF son las siguientes:
-
-Apariencia diferente: si las fuentes Arial y Times Roman no están disponibles en el sistema donde se abre el PDF, se utilizarán fuentes sustitutas, lo que puede dar como resultado una apariencia diferente a la prevista.
-
-Problemas de legibilidad: las fuentes sustitutas utilizadas pueden no ser tan legibles como las fuentes originales, lo que puede afectar la legibilidad del documento.
+### ¿Dónde puedo encontrar más tutoriales sobre Aspose.Words para .NET?
+ Puede encontrar documentación completa y tutoriales.[aquí](https://reference.aspose.com/words/net/).

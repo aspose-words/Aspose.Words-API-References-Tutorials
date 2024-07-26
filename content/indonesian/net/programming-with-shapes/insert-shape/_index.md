@@ -11,13 +11,13 @@ url: /id/net/programming-with-shapes/insert-shape/
 Tutorial ini menjelaskan cara menyisipkan bentuk ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Bentuk dapat digunakan untuk menyempurnakan tampilan visual dan tata letak dokumen Anda.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
+Untuk mengikuti tutorial ini, Anda perlu memiliki yang berikut ini:
 
 - Aspose.Words untuk perpustakaan .NET diinstal.
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Langkah 3: Sisipkan Bentuk
- Menggunakan`InsertShape` metode`DocumentBuilder`objek untuk menyisipkan bentuk ke dalam dokumen. Tentukan tipe bentuk, posisi relatif horizontal dan vertikal, dimensi halaman, ukuran, dan tipe pembungkus. Anda juga dapat mengatur sudut rotasi bentuk jika diinginkan.
+ Menggunakan`InsertShape` metode`DocumentBuilder` objek untuk menyisipkan bentuk ke dalam dokumen. Tentukan tipe bentuk, posisi relatif horizontal dan vertikal, dimensi halaman, ukuran, dan tipe pembungkus. Anda juga dapat mengatur sudut rotasi bentuk jika diinginkan.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

@@ -2,93 +2,112 @@
 title: Word 文書で優先されるコントロールの種類
 linktitle: Word 文書で優先されるコントロールの種類
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して HTML ドキュメントを読み込むときに、Word ドキュメントで優先されるコントロール タイプを指定するためのステップ バイ ステップ ガイド。
+description: Aspose.Words for .NET を使用して、Word 文書にコンボ ボックス フォーム フィールドを挿入する方法を学びます。シームレスな HTML コンテンツ統合を行うには、このステップ バイ ステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-この記事では、Aspose.Words for .NET で優先コントロール タイプ機能を使用する方法について、ステップ バイ ステップで説明します。コードの各部分を詳しく説明します。このチュートリアルの最後には、HTML ドキュメントを読み込むときに優先コントロール タイプを指定する方法が理解できるようになります。
+## 導入
 
-開始する前に、プロジェクトに Aspose.Words for .NET ライブラリがインストールされ、構成されていることを確認してください。ライブラリとインストール手順は、Aspose Web サイトで参照できます。
+Aspose.Words for .NET で HTML 読み込みオプションを操作する方法についての興味深いチュートリアルを紹介します。特に、コンボ ボックス フォーム フィールドを Word 文書に挿入するときに優先されるコントロール タイプを設定することに焦点を当てています。このステップ バイ ステップ ガイドは、Aspose.Words for .NET を使用して Word 文書内で HTML コンテンツを効果的に操作およびレンダリングする方法を理解するのに役立ちます。
 
-## ステップ1: HTMLコードを定義する
+## 前提条件
 
-まず、ドキュメントとしてロードしたいHTMLコードを定義する必要があります。この例では、`html`オプション付きのセレクターの HTML コードを含む変数。
+コードに進む前に、準備しておくべきことがいくつかあります。
+
+1.  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされていることを確認してください。[Webサイト](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio などの開発環境をセットアップする必要があります。
+3. C# の基礎知識: チュートリアルに従うには、C# プログラミングの基本的な理解が必要です。
+4. HTML コンテンツ: この例では HTML コンテンツを扱うため、HTML の基本的な知識が役立ちます。
+
+## 名前空間のインポート
+
+まず、開始するために必要な名前空間をインポートしましょう。
 
 ```csharp
-const string html=@"
-<html>
-<select name='ComboBox' size='1'>
-<option value='val1'>item1</option>
-<option value='val2'></option>
-</select>
-</html>
+using System;
+using System.IO;
+using System.Text;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+ここで、明確さと理解を確実にするために、例を複数のステップに分解してみましょう。
+
+## ステップ1: HTMLコンテンツを設定する
+
+まず、Word 文書に挿入する HTML コンテンツを定義する必要があります。使用する HTML スニペットは次のとおりです。
+
+```csharp
+const string html = @"
+    <html>
+        <select name='ComboBox' size='1'>
+            <option value='val1'>item1</option>
+            <option value='val2'></option>                        
+        </select>
+    </html>
 ";
 ```
 
-## ステップ2: HTML読み込みオプションを設定する
+この HTML には、2 つのオプションを持つシンプルなコンボ ボックスが含まれています。この HTML を Word 文書に読み込み、レンダリング方法を指定します。
 
-次に、`HtmlLoadOptions`オブジェクトを設定し、`PreferredControlType`財産に`HtmlControlType.StructuredDocumentTag`. これにより、Aspose.Words は読み込み時に StructuredDocumentTags を使用して HTML を表すようになります。
+## ステップ2: ドキュメントディレクトリを定義する
+
+次に、Word 文書を保存するディレクトリを指定します。これにより、ファイルを整理し、パス管理を整理しやすくなります。
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+交換する`"YOUR DOCUMENT DIRECTORY"` Word 文書を保存する実際のパスを入力します。
+
+## ステップ3: HTML読み込みオプションを構成する
+
+ここでは、HTML読み込みオプションを設定します。特に、`PreferredControlType`プロパティ。これにより、Word 文書でコンボ ボックスをどのようにレンダリングするかが決まります。
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## ステップ3: ドキュメントを読み込んで保存する
+設定することにより`PreferredControlType`に`HtmlControlType.StructuredDocumentTag`、コンボ ボックスが Word 文書内で構造化ドキュメント タグ (SDT) としてレンダリングされるようにします。
 
-私たちは`Document`クラスは、先に定義したロードオプションを使用してメモリストリームからHTMLコードをロードします。次に、指定されたディレクトリにドキュメントを保存します。`.docx`ファイル形式。
+## ステップ4: HTMLコンテンツをドキュメントに読み込む
+
+設定された読み込みオプションを使用して、HTML コンテンツを新しい Word 文書に読み込みます。
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
+```
+
+ここでは、HTML 文字列をバイト配列に変換し、メモリ ストリームを使用してドキュメントに読み込みます。これにより、HTML コンテンツが Aspose.Words によって正しく解釈され、レンダリングされることが保証されます。
+
+## ステップ5: ドキュメントを保存する
+
+最後に、ドキュメントを DOCX 形式で指定されたディレクトリに保存します。
+
+```csharp
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### Aspose.Words for .NET の優先コントロール タイプのサンプル ソース コード
-
-```csharp
-	
-	const string html = @"
-		<html>
-			<select name='ComboBox' size='1'>
-				<option value='val1'>item1</option>
-				<option value='val2'></option>                        
-			</select>
-		</html>
-	";
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
-
-	Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
-
-	doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
-
-```
-
-以上です。Aspose.Words for .NET を使用して HTML ドキュメントを読み込むときに、優先コントロール タイプを正常に指定できました。
+これにより、レンダリングされたコンボ ボックス コントロールを含む Word 文書が指定された場所に保存されます。
 
 ## 結論
 
-このステップバイステップガイドに従って、Aspose.Words for .NETの「優先コントロールタイプ」機能を使用して、HTMLドキュメントを読み込むときに必要なコントロールタイプを指定する方法を学習しました。`PreferredControlType`財産に`HtmlControlType.StructuredDocumentTag` Aspose.Words で StructuredDocumentTags (SDT) を使用して、HTML コンテンツの表現と処理を改善できます。特定の要件に合わせて、他のコントロール タイプも検討できます。この機能を使用すると、Aspose.Words を使用した C# アプリケーションで HTML ドキュメントを正確かつ効率的に処理できるようになります。
+これで完了です。Aspose.Words for .NET で HTML 読み込みオプションを利用して、コンボ ボックス フォーム フィールドを Word 文書に挿入できました。このステップ バイ ステップ ガイドは、プロセスを理解し、プロジェクトに適用するのに役立ちます。文書作成を自動化する場合でも、HTML コンテンツを操作する場合でも、Aspose.Words for .NET は目標を達成するための強力なツールを提供します。
 
-### Word 文書の優先コントロール タイプに関する FAQ
+## よくある質問
 
-#### Q: Aspose.Words for .NET の「優先コントロール タイプ」機能とは何ですか?
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、開発者がプログラムによって Word ドキュメントを作成、編集、変換、レンダリングできるようにする強力なドキュメント操作ライブラリです。
 
-A: 「優先コントロール タイプ」機能を使用すると、HTML ドキュメントを読み込むときに HTML 要素を表す優先コントロール タイプを指定できます。この機能は、HTML コンテンツの表現と処理を向上させるために適切なコントロール タイプを選択するのに役立ちます。
+### Aspose.Words for .NET で他の HTML コントロール タイプを使用できますか?
+はい、Aspose.Words for .NET はさまざまな HTML コントロール タイプをサポートしています。Word 文書でさまざまなコントロールをレンダリングする方法をカスタマイズできます。
 
-#### Q: HTML ドキュメントを読み込むときに優先コントロール タイプを設定するにはどうすればよいですか?
+### Aspose.Words for .NET で複雑な HTML コンテンツを処理するにはどうすればよいですか?
+ Aspose.Words for .NETは、複雑な要素を含むHTMLを包括的にサポートします。`HtmlLoadOptions`特定の HTML コンテンツを適切に処理します。
 
- A: 優先コントロールタイプを設定するには、`HtmlLoadOptions`オブジェクトを設定し、`PreferredControlType`希望する物件`HtmlControlType`提供された例では、`HtmlControlType.StructuredDocumentTag`使用されている。
+### その他の例やドキュメントはどこで見つかりますか?
+詳細なドキュメントと例は、[Aspose.Words for .NET ドキュメント ページ](https://reference.aspose.com/words/net/).
 
-#### Q: StructuredDocumentTags (SDT) を優先コントロール タイプとして使用することの重要性は何ですか?
-
-A: StructuredDocumentTags (SDT) は、Word 文書内の複雑なコンテンツやコントロールを表すために使用できる XML ベースの要素です。SDT を優先コントロール タイプとして使用すると、HTML コンテンツの互換性と表現が向上します。
-
-#### Q: HTML ドキュメントを読み込むときに、Aspose.Words が優先コントロール タイプを使用するようにするにはどうすればよいですか?
-
- A: 設定することで`PreferredControlType`財産に`HtmlControlType.StructuredDocumentTag`サンプル ソース コードに示されているように、Aspose.Words はドキュメントを読み込むときに SDT を使用して HTML 要素を表します。
-
-#### Q: 優先オプションとして他のコントロール タイプを使用できますか?
-
- A: はい、それ以外は`HtmlControlType.StructuredDocumentTag`Aspose.Words for .NETは、次のような他のコントロールタイプもサポートしています。`HtmlControlType.ContentControl`そして`HtmlControlType.CustomXmlMarkup`.
+### Aspose.Words for .NET の無料試用版はありますか?
+はい、無料トライアルは以下からダウンロードできます。[Aspose ウェブサイト](https://releases.aspose.com/).

@@ -49,7 +49,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-เราเพิ่งสร้างเอกสาร Word เปล่า ค่อนข้างเท่ห์ใช่มั้ย?
+เราเพิ่งสร้างเอกสาร Word เปล่า ค่อนข้างเจ๋งใช่มั้ย?
 
 ## ขั้นตอนที่ 3: การเพิ่มเนื้อหาด้วย DocumentBuilder
 

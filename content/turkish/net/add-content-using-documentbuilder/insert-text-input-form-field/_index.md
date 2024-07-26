@@ -9,7 +9,7 @@ url: /tr/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
 ## giriiş
 
-Bu eğitimde, Aspose.Words for .NET dünyasının derinliklerine dalarak Word belgesine metin giriş formu alanının nasıl eklendiğini öğreneceğiz. Kemerlerinizi bağlayın çünkü belge otomasyonu görevlerinizi kolaylaştıracak bir yolculuğa çıkmak üzereyiz. İster formlar, şablonlar veya etkileşimli belgeler oluşturuyor olun, bu beceride uzmanlaşmak .NET uygulamalarınızı bir sonraki seviyeye taşıyacaktır.
+Bu eğitimde, bir Word belgesine metin giriş formu alanının nasıl eklendiğini öğrenmek için Aspose.Words for .NET dünyasının derinliklerine dalıyoruz. Kemerlerinizi bağlayın çünkü belge otomasyonu görevlerinizi kolaylaştıracak bir yolculuğa çıkmak üzereyiz. İster formlar, şablonlar veya etkileşimli belgeler oluşturuyor olun, bu beceride uzmanlaşmak .NET uygulamalarınızı bir sonraki seviyeye taşıyacaktır.
 
 ### Önkoşullar
 

@@ -72,4 +72,4 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã học cách kết hợp các hàng bảng trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này và triển khai mã C# được cung cấp, bạn có thể thao tác các hàng của bảng trong tài liệu Word theo chương trình. Tính năng này cho phép bạn hợp nhất và sắp xếp dữ liệu của mình thành một bảng một cách hiệu quả.
+Trong hướng dẫn này, chúng ta đã học cách kết hợp các hàng bảng trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này và triển khai mã C# được cung cấp, bạn có thể thao tác các hàng trong bảng trong tài liệu Word của mình theo chương trình. Tính năng này cho phép bạn hợp nhất và sắp xếp dữ liệu của mình thành một bảng một cách hiệu quả.

@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/programming-with-tables/finding-index/
 ---
 
-V tomto tutoriálu se naučíme, jak používat Aspose.Words pro .NET k nalezení indexů tabulky, řádku a buňky v dokumentu aplikace Word. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci programově najít indexy prvků pole v dokumentech aplikace Word.
+tomto tutoriálu se naučíme, jak používat Aspose.Words pro .NET k nalezení indexů tabulky, řádku a buňky v dokumentu aplikace Word. Budeme postupovat podle průvodce krok za krokem, abychom porozuměli kódu a implementovali tuto funkci. Na konci tohoto kurzu budete moci programově najít indexy prvků pole v dokumentech aplikace Word.
 
 ## Krok 1: Nastavení projektu
 1. Spusťte Visual Studio a vytvořte nový projekt C#.

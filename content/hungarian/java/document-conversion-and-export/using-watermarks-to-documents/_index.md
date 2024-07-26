@@ -18,7 +18,7 @@ Mielőtt elkezdenénk vízjeleket adni a dokumentumokhoz, be kell állítanunk a
 
 1.  Az Aspose.Words for Java letöltése innen[itt](https://releases.aspose.com/words/java/).
 2. Adja hozzá az Aspose.Words for Java könyvtárat a Java projekthez.
-3. Importálja a szükséges osztályokat a Java kódba.
+3. Importálja a szükséges osztályokat a Java kódjába.
 
 Most, hogy a könyvtárat beállítottuk, folytassuk a vízjelek hozzáadásával.
 

@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- Bu son adımda, ortaya çıkan belgeyi kullanarak .docx formatında kaydediyoruz.`Save` yöntemi ve yolu çıktı dosyasına geçirme.
+Bu son adımda, ortaya çıkan belgeyi kullanarak .docx formatında kaydediyoruz.`Save` yöntemi ve yolu çıktı dosyasına geçirme.
 
 Artık boşluk işleme seçeneklerini belirterek metin belgesini yüklemek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan belge, "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx" adıyla belirtilen dizine kaydedilecektir.
 

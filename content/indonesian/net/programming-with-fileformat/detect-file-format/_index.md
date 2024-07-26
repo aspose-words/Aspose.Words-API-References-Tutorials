@@ -2,21 +2,45 @@
 title: Deteksi Format File Dokumen
 linktitle: Deteksi Format File Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mendeteksi format file dokumen dengan Aspose.Words for .NET.
+description: Pelajari cara mendeteksi format file dokumen menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-fileformat/detect-file-format/
 ---
+## Perkenalan
 
-Artikel ini memberikan panduan langkah demi langkah tentang cara menggunakan fitur deteksi format file dokumen dengan Aspose.Words untuk .NET. Kami akan menjelaskan setiap bagian kode secara detail. Di akhir tutorial ini, Anda akan dapat memahami cara mendeteksi format file dokumen yang berbeda.
+Di dunia digital saat ini, mengelola berbagai format dokumen secara efisien sangatlah penting. Baik Anda menangani Word, PDF, HTML, atau format lainnya, kemampuan mendeteksi dan memproses file-file ini dengan benar dapat menghemat banyak waktu dan tenaga. Dalam tutorial ini, kita akan mempelajari cara mendeteksi format file dokumen menggunakan Aspose.Words untuk .NET. Panduan ini akan memandu Anda melalui semua yang perlu Anda ketahui, mulai dari prasyarat hingga panduan langkah demi langkah yang mendetail.
 
-Sebelum memulai, pastikan Anda telah menginstal dan mengonfigurasi pustaka Aspose.Words untuk .NET di proyek Anda. Anda dapat menemukan perpustakaan dan petunjuk instalasi di situs web Aspose.
+## Prasyarat
 
-## Langkah 1: Tentukan direktori
+Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
 
- Untuk memulai, Anda perlu menentukan direktori tempat Anda ingin menyimpan file sesuai dengan formatnya. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori dokumen Anda. Kami membuat direktori "Didukung", "Tidak Diketahui", "Terenkripsi" dan "Pre97" jika belum ada.
+-  Aspose.Words untuk .NET: Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/) . Pastikan Anda memiliki lisensi yang valid. Jika tidak, Anda bisa mendapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/).
+- Visual Studio: Versi terbaru apa pun akan berfungsi dengan baik.
+- .NET Framework: Pastikan Anda menginstal versi yang benar.
+
+## Impor Namespace
+
+Untuk memulai, Anda perlu mengimpor namespace yang diperlukan dalam proyek Anda:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.FileFormats;
+using Aspose.Words.FileFormats.Util;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+```
+
+Mari kita bagi contoh ini menjadi beberapa langkah agar lebih mudah diikuti.
+
+## Langkah 1: Siapkan Direktori
+
+Pertama, kita perlu menyiapkan direktori tempat file akan diurutkan berdasarkan formatnya.
+
+```csharp
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 string supportedDir = dataDir + "Supported";
 string unknownDir = dataDir + "Unknown";
@@ -24,207 +48,127 @@ string encryptedDir = dataDir + "Encrypted";
 string pre97Dir = dataDir + "Pre97";
 
 // Buat direktori jika belum ada.
-if (Directory.Exists(supportedDir) == false)
-Directory.CreateDirectory(supportedDir);
-if (Directory.Exists(unknownDir) == false)
-Directory.CreateDirectory(unknownDir);
-if (Directory.Exists(encryptedDir) == false)
-Directory.CreateDirectory(encryptedDir);
-if (Directory.Exists(pre97Dir) == false)
-Directory.CreateDirectory(pre97Dir);
+if (!Directory.Exists(supportedDir))
+    Directory.CreateDirectory(supportedDir);
+if (!Directory.Exists(unknownDir))
+    Directory.CreateDirectory(unknownDir);
+if (!Directory.Exists(encryptedDir))
+    Directory.CreateDirectory(encryptedDir);
+if (!Directory.Exists(pre97Dir))
+    Directory.CreateDirectory(pre97Dir);
 ```
 
-## Langkah 2: Telusuri File
+## Langkah 2: Dapatkan Daftar File
 
- Kemudian kita menggunakan`GetFiles` metode`Directory` kelas untuk mendapatkan daftar file di direktori yang ditentukan. Kami juga menggunakan a`Where` klausa untuk mengecualikan file tertentu bernama "Dokumen.docx rusak".
+Selanjutnya, kita akan mendapatkan daftar file dari direktori, tidak termasuk dokumen yang rusak.
 
 ```csharp
-IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
+IEnumerable<string> fileList = Directory.GetFiles(dataDir).Where(name => !name.EndsWith("Corrupted document.docx"));
 ```
 
-## Langkah 3: Deteksi format setiap file
+## Langkah 3: Deteksi Format File
 
- Kami mengulang setiap file dalam daftar dan menggunakan`DetectFileFormat` metode`FileFormatUtil` kelas untuk mendeteksi format file. Kami juga menampilkan jenis dokumen yang terdeteksi.
+Sekarang, kami mengulangi setiap file dan mendeteksi formatnya menggunakan Aspose.Words.
 
 ```csharp
 foreach (string fileName in fileList)
 {
-string nameOnly = Path. GetFileName(fileName);
-Console.Write(nameOnly);
+    string nameOnly = Path.GetFileName(fileName);
 
-FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
+    Console.Write(nameOnly);
 
-// Menampilkan jenis dokumen
-switch (info.LoadFormat)
-{
-LoadFormat.Doc box:
-Console.WriteLine("\tDocument Microsoft Word 97-2003.");
-break;
-LoadFormat.Dot box:
-Console.WriteLine("\tMicrosoft Word 97-2003 template.");
-break;
-LoadFormat.Docx box:
-Console.WriteLine("\tDocument Office Open XML WordprocessingML without macros.");
-break;
-// ... Tambahkan kasus untuk format dokumen lain yang didukung
-LoadFormat.Unknown case:
-Console.WriteLine("\tFormat in
+    FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
 
-known.");
-break;
-}
+    // Menampilkan jenis dokumen
+    switch (info.LoadFormat)
+    {
+        case LoadFormat.Doc:
+            Console.WriteLine("\tMicrosoft Word 97-2003 document.");
+            break;
+        case LoadFormat.Dot:
+            Console.WriteLine("\tMicrosoft Word 97-2003 template.");
+            break;
+        case LoadFormat.Docx:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Document.");
+            break;
+        case LoadFormat.Docm:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Document.");
+            break;
+        case LoadFormat.Dotx:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Template.");
+            break;
+        case LoadFormat.Dotm:
+            Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Template.");
+            break;
+        case LoadFormat.FlatOpc:
+            Console.WriteLine("\tFlat OPC document.");
+            break;
+        case LoadFormat.Rtf:
+            Console.WriteLine("\tRTF format.");
+            break;
+        case LoadFormat.WordML:
+            Console.WriteLine("\tMicrosoft Word 2003 WordprocessingML format.");
+            break;
+        case LoadFormat.Html:
+            Console.WriteLine("\tHTML format.");
+            break;
+        case LoadFormat.Mhtml:
+            Console.WriteLine("\tMHTML (Web archive) format.");
+            break;
+        case LoadFormat.Odt:
+            Console.WriteLine("\tOpenDocument Text.");
+            break;
+        case LoadFormat.Ott:
+            Console.WriteLine("\tOpenDocument Text Template.");
+            break;
+        case LoadFormat.DocPreWord60:
+            Console.WriteLine("\tMS Word 6 or Word 95 format.");
+            break;
+        case LoadFormat.Unknown:
+            Console.WriteLine("\tUnknown format.");
+            break;
+    }
 
-if (info.IsEncrypted)
-{
-Console.WriteLine("\tAn encrypted document.");
-File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
-}
-else
-{
-switch (info.LoadFormat)
-{
-LoadFormat.DocPreWord60 box:
-File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
-break;
-LoadFormat.Unknown case:
-File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
-break;
-default:
-File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
-break;
-}
-}
+    if (info.IsEncrypted)
+    {
+        Console.WriteLine("\tAn encrypted document.");
+        File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
+    }
+    else
+    {
+        switch (info.LoadFormat)
+        {
+            case LoadFormat.DocPreWord60:
+                File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
+                break;
+            case LoadFormat.Unknown:
+                File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
+                break;
+            default:
+                File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
+                break;
+        }
+    }
 }
 ```
 
-Itu saja ! Anda telah berhasil mendeteksi format file dokumen yang berbeda menggunakan Aspose.Words untuk .NET.
+## Kesimpulan
 
-### Contoh kode sumber untuk deteksi format file dengan Aspose.Words for .NET
+Mendeteksi format file dokumen menggunakan Aspose.Words untuk .NET adalah proses yang mudah. Dengan menyiapkan direktori, mendapatkan daftar file, dan memanfaatkan Aspose.Words untuk mendeteksi format file, Anda dapat mengatur dan mengelola dokumen Anda secara efisien. Pendekatan ini tidak hanya menghemat waktu tetapi juga memastikan Anda menangani berbagai format dokumen dengan benar.
 
-```csharp
+## FAQ
 
-	// Jalur ke direktori dokumen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	string supportedDir = dataDir + "Supported";
-	string unknownDir = dataDir + "Unknown";
-	string encryptedDir = dataDir + "Encrypted";
-	string pre97Dir = dataDir + "Pre97";
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram. Hal ini memungkinkan pengembang untuk membuat, memodifikasi, dan mengkonversi dokumen dalam berbagai format.
 
-	// Buat direktori jika belum ada.
-	if (Directory.Exists(supportedDir) == false)
-		Directory.CreateDirectory(supportedDir);
-	if (Directory.Exists(unknownDir) == false)
-		Directory.CreateDirectory(unknownDir);
-	if (Directory.Exists(encryptedDir) == false)
-		Directory.CreateDirectory(encryptedDir);
-	if (Directory.Exists(pre97Dir) == false)
-		Directory.CreateDirectory(pre97Dir);
+### Bisakah Aspose.Words mendeteksi dokumen terenkripsi?
+Ya, Aspose.Words dapat mendeteksi apakah suatu dokumen dienkripsi dan Anda dapat menangani dokumen tersebut sesuai dengan itu.
 
-	
-	IEnumerable<string> fileList = Directory.GetFiles(MyDir).Where(name => !name.EndsWith("Corrupted document.docx"));
-	
-	foreach (string fileName in fileList)
-	{
-		string nameOnly = Path.GetFileName(fileName);
-		
-		Console.Write(nameOnly);
-		
-		FileFormatInfo info = FileFormatUtil.DetectFileFormat(fileName);
+### Format apa yang dapat dideteksi Aspose.Words?
+Aspose.Words dapat mendeteksi berbagai format termasuk DOC, DOCX, RTF, HTML, MHTML, ODT, dan masih banyak lagi.
 
-		// Menampilkan jenis dokumen
-		switch (info.LoadFormat)
-		{
-			case LoadFormat.Doc:
-				Console.WriteLine("\tMicrosoft Word 97-2003 document.");
-				break;
-			case LoadFormat.Dot:
-				Console.WriteLine("\tMicrosoft Word 97-2003 template.");
-				break;
-			case LoadFormat.Docx:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Document.");
-				break;
-			case LoadFormat.Docm:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Document.");
-				break;
-			case LoadFormat.Dotx:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Free Template.");
-				break;
-			case LoadFormat.Dotm:
-				Console.WriteLine("\tOffice Open XML WordprocessingML Macro-Enabled Template.");
-				break;
-			case LoadFormat.FlatOpc:
-				Console.WriteLine("\tFlat OPC document.");
-				break;
-			case LoadFormat.Rtf:
-				Console.WriteLine("\tRTF format.");
-				break;
-			case LoadFormat.WordML:
-				Console.WriteLine("\tMicrosoft Word 2003 WordprocessingML format.");
-				break;
-			case LoadFormat.Html:
-				Console.WriteLine("\tHTML format.");
-				break;
-			case LoadFormat.Mhtml:
-				Console.WriteLine("\tMHTML (Web archive) format.");
-				break;
-			case LoadFormat.Odt:
-				Console.WriteLine("\tOpenDocument Text.");
-				break;
-			case LoadFormat.Ott:
-				Console.WriteLine("\tOpenDocument Text Template.");
-				break;
-			case LoadFormat.DocPreWord60:
-				Console.WriteLine("\tMS Word 6 or Word 95 format.");
-				break;
-			case LoadFormat.Unknown:
-				Console.WriteLine("\tUnknown format.");
-				break;
-		}
-		
+### Bagaimana saya bisa mendapatkan lisensi sementara untuk Aspose.Words?
+ Anda bisa mendapatkan lisensi sementara dari[Asumsikan Pembelian](https://purchase.aspose.com/temporary-license/) halaman.
 
-		if (info.IsEncrypted)
-		{
-			Console.WriteLine("\tAn encrypted document.");
-			File.Copy(fileName, Path.Combine(encryptedDir, nameOnly), true);
-		}
-		else
-		{
-			switch (info.LoadFormat)
-			{
-				case LoadFormat.DocPreWord60:
-					File.Copy(fileName, Path.Combine(pre97Dir, nameOnly), true);
-					break;
-				case LoadFormat.Unknown:
-					File.Copy(fileName, Path.Combine(unknownDir, nameOnly), true);
-					break;
-				default:
-					File.Copy(fileName, Path.Combine(supportedDir, nameOnly), true);
-					break;
-			}
-		}
-	}
-	
-
-```
-
-### FAQ untuk deteksi format file dokumen
-
-#### Bagaimana cara mendeteksi format file dokumen menggunakan Aspose.Words untuk .NET?
-
- Untuk mendeteksi format file dokumen menggunakan Aspose.Words for .NET, Anda dapat mengikuti langkah-langkah yang disediakan dalam tutorial. Menggunakan`DetectFileFormat` metode`FileFormatUtil` kelas akan memungkinkan Anda mendeteksi format file dokumen. Ini akan memungkinkan Anda menentukan apakah itu dokumen Microsoft Word 97-2003, templat, dokumen Office Open XML WordprocessingML, atau format lain yang didukung. Kode yang diberikan dalam tutorial akan memandu Anda dalam mengimplementasikan fitur ini.
-
-#### Format dokumen apa yang didukung Aspose.Words untuk .NET?
-
-Aspose.Words untuk .NET mendukung berbagai format dokumen termasuk dokumen Microsoft Word 97-2003 (DOC), Templat (DOT), dokumen Office Open XML WordprocessingML (DOCX), dokumen Office Open XML WordprocessingML dengan makro (DOCM), Office Open Templat XML WordprocessingML tanpa makro (DOTX), Templat Office Open XML WordprocessingML dengan makro (DOTM), dokumen Flat OPC, dokumen RTF, dokumen Microsoft Word 2003 WordprocessingML, dokumen HTML, dokumen MHTML (arsip Web), dokumen OpenDocument Text (ODT), Templat OpenDocument Text (OTT), dokumen MS Word 6 atau Word 95, dan format dokumen yang tidak diketahui.
-
-#### Bagaimana cara menangani file dokumen terenkripsi selama deteksi format?
-
- Saat mendeteksi format file dokumen, Anda dapat menggunakan`IsEncrypted` properti dari`FileFormatInfo` keberatan untuk memeriksa apakah file tersebut dienkripsi. Jika file dienkripsi, Anda dapat mengambil langkah tambahan untuk menangani kasus khusus ini, seperti menyalin file ke direktori yang didedikasikan untuk dokumen terenkripsi. Anda dapat menggunakan`File.Copy` metode untuk melakukan ini.
-
-#### Tindakan apa yang harus diambil jika format dokumen tidak diketahui?
-
-Jika format dokumen tidak diketahui, Anda dapat memutuskan untuk menanganinya dengan cara yang spesifik untuk aplikasi Anda. Dalam contoh yang diberikan dalam tutorial, dokumen disalin ke direktori tertentu yang didedikasikan untuk dokumen dengan format yang tidak diketahui. Anda dapat menyesuaikan tindakan ini agar sesuai dengan kebutuhan spesifik Anda.
-
-#### Apakah ada fitur lain dari Aspose.Words untuk .NET yang dapat digunakan bersama dengan deteksi format dokumen?
-
-Ya, Aspose.Words untuk .NET menawarkan banyak fitur lain untuk memproses dan memanipulasi dokumen Word. Misalnya, Anda bisa menggunakan perpustakaan untuk mengekstrak teks, gambar, atau metadata dari dokumen, menerapkan perubahan pemformatan, menggabungkan dokumen, mengonversi dokumen ke format berbeda, dan banyak lagi.
+### Di mana saya dapat menemukan dokumentasi untuk Aspose.Words?
+ Dokumentasi untuk Aspose.Words dapat ditemukan[Di Sini](https://reference.aspose.com/words/net/).

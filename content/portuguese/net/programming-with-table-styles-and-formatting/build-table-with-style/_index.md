@@ -41,7 +41,7 @@ table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
 ```
 
 ## Etapa 5: aplicar opções de estilo à tabela
- Podemos especificar quais características devem ser formatadas pelo estilo usando o comando`StyleOptions`propriedade da matriz. Neste exemplo, aplicamos as seguintes opções: “FirstColumn”, “RowBands” e “FirstRow”.
+ Podemos especificar quais características devem ser formatadas pelo estilo usando o`StyleOptions`propriedade da matriz. Neste exemplo, aplicamos as seguintes opções: “FirstColumn”, “RowBands” e “FirstRow”.
 
 ```csharp
 table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;

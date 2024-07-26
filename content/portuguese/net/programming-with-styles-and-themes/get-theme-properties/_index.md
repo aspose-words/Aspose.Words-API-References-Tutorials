@@ -20,7 +20,7 @@ Certifique-se de configurar seu ambiente de desenvolvimento com Aspose.Words for
 Document doc = new Document();
 ```
 
-Nesta etapa, criamos um novo`Document` objeto.
+ Nesta etapa, criamos um novo`Document` objeto.
 
 ## Etapa 3: obtenha as propriedades do tema
 
@@ -32,7 +32,7 @@ Console.WriteLine(theme.MinorFonts.EastAsian);
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- Nesta etapa, usamos o`Theme` propriedade do`Document` objeto para obter o`Theme` objeto. Depois podemos acessar as diferentes propriedades do tema, como as fontes principais (`MajorFonts`), as fontes secundárias (`MinorFonts`) e as cores de destaque (`Colors`).
+ Nesta etapa, usamos o`Theme` propriedade do`Document`objeto para obter o`Theme` objeto. Depois podemos acessar as diferentes propriedades do tema, como as fontes principais (`MajorFonts`), as fontes secundárias (`MinorFonts`) e as cores de destaque (`Colors`).
 
 ## Etapa 4: exibir propriedades do tema
 
@@ -56,9 +56,9 @@ Console.WriteLine(theme.Colors.Accent1);
 
 ## Conclusão
 
- Neste tutorial, exploramos a funcionalidade de obter as propriedades do tema de um documento com Aspose.Words for .NET. Usando o`Theme`objeto e suas propriedades associadas, pudemos acessar informações sobre as fontes primárias e secundárias, bem como as cores de destaque usadas no tema do documento.
+ Neste tutorial, exploramos a funcionalidade de obter as propriedades do tema de um documento com Aspose.Words for .NET. Usando o`Theme` objeto e suas propriedades associadas, pudemos acessar informações sobre as fontes primárias e secundárias, bem como as cores de destaque usadas no tema do documento.
 
-A capacidade de obter propriedades de tema permite analisar e personalizar os estilos e layouts de seus documentos. Você pode usar essas informações para aplicar alterações direcionadas, criar relatórios ou realizar análises sobre o uso de fontes e cores em seus documentos.
+capacidade de obter propriedades de tema permite analisar e personalizar os estilos e layouts de seus documentos. Você pode usar essas informações para aplicar alterações direcionadas, criar relatórios ou realizar análises sobre o uso de fontes e cores em seus documentos.
 
 Aspose.Words for .NET oferece uma API poderosa para manipular os temas de seus documentos, permitindo ajustar e personalizar facilmente a aparência de seus documentos.
 
@@ -68,11 +68,11 @@ Sinta-se à vontade para explorar mais recursos do Aspose.Words for .NET para ap
 
 #### Como posso acessar as propriedades do tema de um documento usando Aspose.Words for .NET?
 
- Para acessar as propriedades do tema de um documento, você pode usar o`Theme` propriedade do`Document` objeto. Ele retorna um`Theme`objeto que contém informações sobre as fontes primárias e secundárias, bem como as cores de destaque utilizadas no tema do documento.
+ Para acessar as propriedades do tema de um documento, você pode usar o`Theme` propriedade do`Document` objeto. Ele retorna um`Theme` objeto que contém informações sobre as fontes primárias e secundárias, bem como as cores de destaque utilizadas no tema do documento.
 
 #### Como posso recuperar as fontes primárias e secundárias do tema de um documento?
 
- Você pode acessar as fontes primárias e secundárias do tema de um documento usando o botão`MajorFonts`e`MinorFonts` propriedades do`Theme` objeto, respectivamente. Essas propriedades fornecem acesso aos nomes das fontes usadas no tema do documento para diferentes idiomas ou regiões.
+Você pode acessar as fontes primárias e secundárias do tema de um documento usando o botão`MajorFonts`e`MinorFonts` propriedades do`Theme` objeto, respectivamente. Essas propriedades fornecem acesso aos nomes das fontes usadas no tema do documento para diferentes idiomas ou regiões.
 
 #### Posso obter as cores de destaque usadas no tema de um documento?
 

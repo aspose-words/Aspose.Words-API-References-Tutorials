@@ -26,7 +26,7 @@ is_root: true
 | [使用 Markdown 进行文字处理](./working-with-markdown/) | 通过这些分步教程和实践示例学习如何使用 Aspose.Words for .NET 在 Word 文档中使用 Markdown 语法。 |  
 | [使用 Node 进行文字处理](./working-with-node/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的节点。带有代码示例的详细教程。 |  
 | [使用 OleObjects 和 ActiveX 进行文字处理](./working-with-oleobjects-and-activex/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中使用 OLE 和 ActiveX 对象。带有代码示例的详细教程。 |  
-| [文字处理与修订](./working-with-revisions/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的修订版本。分步教程，包含用于管理和查看修订版本的示例代码。 |  
+| [带修订的文字处理](./working-with-revisions/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的修订版本。分步教程，包含用于管理和查看修订版本的示例代码。 |  
 | [使用 Section 进行文字处理](./working-with-section/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的部分。分步教程包含示例代码，可帮助您高效地创建、编辑和格式化部分。 |  
 | [使用文本框进行文字处理](./working-with-textboxes/) | 了解如何使用 Aspose.Words for .NET 处理 Word 文档中的文本框。分步教程包含示例代码，用于高效创建、操作和格式化文本框。 |  
 | [使用 VBA 宏进行文字处理](./working-with-vba-macros/) | 了解如何使用 Aspose.Words for .NET 在 Word 文档中使用 VBA 宏。使用代码示例完成教程，以在 Word 文档中创建、修改和运行 VBA 宏。  |  
@@ -52,7 +52,7 @@ is_root: true
 | [使用 Officemath 进行文字处理](./programming-with-officemath/) | 在 Aspose.Words for .NET 中探索使用 Office Math 公式进行文字处理。用于在 Word 文档中创建、编辑和格式化数学公式的分步教程和示例代码。 |  
 | [用形状处理文字](./programming-with-shapes/) | 探索 Aspose.Words for .NET 中的形状编程。通过分步教程和 C# 中的示例代码了解如何操作和自定义 Word 文档中的形状。 |  
 | [带水印的文字处理](./programming-with-watermark/) | 了解如何在 Aspose.Words for .NET 中使用水印进行编程。通过分步教程和示例 C# 代码了解如何添加文本或图像水印、自定义其外观、将其放置在页面上等。 |  
-| [使用表格样式和格式进行文字处理](./programming-with-table-styles-and-formatting/) | 了解如何在 Aspose.Words for .NET 中对表格样式和格式进行编程。通过分步教程和 C# 中的示例代码了解如何应用预定义样式、自定义单元格格式、边框等。 |  
+| [使用表格样式和格式进行文字处理](./programming-with-table-styles-and-formatting/) | 了解如何在 Aspose.Words for .NET 中编程表格样式和格式。通过分步教程和 C# 中的示例代码了解如何应用预定义样式、自定义单元格格式、边框等。 |  
 | [使用表格进行文字处理](./programming-with-tables/) | 了解如何在 Aspose.Words for .NET 中对表格进行编程。通过分步教程和 C# 代码示例了解如何在 Word 文档中创建、操作和格式化表格。 |  
 | [使用 Htmlloadoptions 进行文字处理](./programming-with-htmlloadoptions/) | 了解如何使用 Aspose.Words for .NET 中的 HTML 加载选项进行编程。本教程将指导您了解加载 HTML 文档的不同功能。 |  
 | [使用 Loadoptions 进行文字处理](./programming-with-loadoptions/) | 学习使用 Aspose.Words for .NET 中的 LoadOptions 进行编程。详细的教程，带有用于加载和自定义 Word 文档加载的示例代码。 |  

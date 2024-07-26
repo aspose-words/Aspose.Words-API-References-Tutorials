@@ -13,7 +13,7 @@ Này, anh bạn lập trình viên! Bạn đã sẵn sàng đi sâu vào thế g
 
 ## Điều kiện tiên quyết
 
-Trước khi đi sâu vào vấn đề chi tiết, hãy đảm bảo bạn có mọi thứ mình cần:
+Trước khi chúng ta đi sâu vào vấn đề chi tiết, hãy đảm bảo bạn có mọi thứ mình cần:
 
 1. Kiến thức cơ bản về C# và .NET: Bạn nên làm quen với những kiến thức cơ bản về C# và .NET framework.
 2.  Thư viện Aspose.Words for .NET: Tải xuống thư viện Aspose.Words for .NET từ[đây](https://releases.aspose.com/words/net/).

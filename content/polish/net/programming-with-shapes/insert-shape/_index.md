@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-shapes/insert-shape/
 ---
 
-W tym samouczku wyjaśniono, jak wstawiać kształty do dokumentu programu Word za pomocą Aspose.Words dla .NET. Kształtów można używać do poprawiania wyglądu i układu dokumentów.
+tym samouczku wyjaśniono, jak wstawiać kształty do dokumentu programu Word za pomocą Aspose.Words dla .NET. Kształtów można używać do poprawiania wyglądu i układu dokumentów.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
@@ -17,7 +17,7 @@ Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 - Podstawowa znajomość języka C# i przetwarzania tekstów w dokumentach Word.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
- Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+ Zacznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 3: Wstaw kształty
- Użyj`InsertShape` metoda`DocumentBuilder`obiekt, aby wstawić kształty do dokumentu. Określ typ kształtu, względne położenie w poziomie i w pionie, wymiary strony, rozmiar i typ zawijania. W razie potrzeby możesz także ustawić kąt obrotu kształtów.
+ Użyj`InsertShape` metoda`DocumentBuilder` obiekt, aby wstawić kształty do dokumentu. Określ typ kształtu, względne położenie w poziomie i w pionie, wymiary strony, rozmiar i typ zawijania. W razie potrzeby możesz także ustawić kąt obrotu kształtów.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

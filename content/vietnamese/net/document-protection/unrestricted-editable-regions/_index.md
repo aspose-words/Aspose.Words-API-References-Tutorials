@@ -112,7 +112,7 @@ Cuối cùng, hãy lưu tài liệu với các vùng có thể chỉnh sửa và
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word bằng Aspose.Words for .NET. Tính năng này cực kỳ hữu ích cho các môi trường cộng tác trong đó các phần nhất định của tài liệu cần được giữ nguyên trong khi các phần khác có thể được chỉnh sửa. 
+Và bạn có nó rồi đấy! Bạn đã tạo thành công các vùng có thể chỉnh sửa không hạn chế trong tài liệu Word bằng Aspose.Words for .NET. Tính năng này cực kỳ hữu ích cho các môi trường cộng tác trong đó một số phần nhất định của tài liệu cần được giữ nguyên trong khi những phần khác có thể được chỉnh sửa. 
 
  Thử nghiệm với các tình huống phức tạp hơn và các mức độ bảo vệ khác nhau để tận dụng tối đa Aspose.Words. Nếu bạn có bất kỳ câu hỏi hoặc gặp vấn đề gì, đừng ngần ngại kiểm tra[tài liệu](https://reference.aspose.com/words/net/) hoặc tiếp cận với[ủng hộ](https://forum.aspose.com/c/words/8).
 

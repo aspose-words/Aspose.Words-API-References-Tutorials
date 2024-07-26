@@ -21,7 +21,7 @@ Per utilizzare Aspose.Words nel tuo progetto, devi aggiungere i riferimenti nece
 Prima di poter convertire i campi, è necessario caricare il documento che contiene i campi da convertire. Assicurati di specificare il percorso corretto della directory contenente il documento. Ecco come caricare il documento:
 
 ```csharp
-//Percorso della directory dei documenti.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Caricare il documento.
@@ -56,7 +56,7 @@ Assicurati di specificare il percorso e il nome file corretti per il backup.
 ### Esempio di codice sorgente per Converti campi in paragrafo utilizzando Aspose.Words per .NET
 
 ```csharp
-//Percorso della directory dei documenti.
+// Percorso della directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Caricare il documento.

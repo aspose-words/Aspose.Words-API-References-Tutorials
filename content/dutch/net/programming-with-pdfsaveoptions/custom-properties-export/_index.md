@@ -2,92 +2,88 @@
 title: Aangepaste eigenschappen exporteren in een PDF-document
 linktitle: Aangepaste eigenschappen exporteren in een PDF-document
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u aangepaste eigenschappen exporteert bij het converteren van documenten naar PDF met Aspose.Words voor .NET.
+description: Leer hoe u aangepaste eigenschappen in een PDF-document kunt exporteren met Aspose.Words voor .NET met onze gedetailleerde, stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u door de stappen voor het exporteren van de aangepaste eigenschappen van een document naar een PDF-document met Aspose.Words voor .NET. Door aangepaste eigenschappen te exporteren, kunt u aanvullende informatie opnemen in het gegenereerde PDF-document. Volg onderstaande stappen:
+Het exporteren van aangepaste eigenschappen in een PDF-document kan ongelooflijk handig zijn voor verschillende zakelijke behoeften. Of u nu metadata beheert voor een betere doorzoekbaarheid of cruciale informatie rechtstreeks in uw documenten insluit, Aspose.Words voor .NET maakt het proces naadloos. Deze zelfstudie begeleidt u bij het maken van een Word-document, het toevoegen van aangepaste eigenschappen en het exporteren ervan naar een PDF met intacte eigenschappen.
 
-## Stap 1: Een document maken en aangepaste eigenschappen toevoegen
+## Vereisten
 
-Begin met het maken van een exemplaar van de klasse Document:
+Voordat je in de code duikt, zorg ervoor dat je over het volgende beschikt:
+
+-  Aspose.Words voor .NET geïnstalleerd. Als je het nog niet hebt geïnstalleerd, kun je het downloaden[hier](https://releases.aspose.com/words/net/).
+- Een ontwikkelomgeving zoals Visual Studio.
+- Basiskennis van programmeren in C#.
+
+## Naamruimten importeren
+
+Eerst moet u de benodigde naamruimten in uw project importeren. Deze naamruimten bevatten de klassen en methoden die nodig zijn om Word-documenten te manipuleren en als PDF's te exporteren.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Laten we het proces opsplitsen in eenvoudige, beheersbare stappen.
+
+## Stap 1: Initialiseer het document
+
+Om te beginnen moet u een nieuw documentobject maken. Dit object zal dienen als basis voor het toevoegen van aangepaste eigenschappen en het exporteren naar PDF.
+
+```csharp
+// Het pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## Stap 2: Voeg aangepaste eigenschappen toe
- Voeg vervolgens de gewenste aangepaste eigenschappen toe. Als u bijvoorbeeld een eigenschap "Bedrijf" met de waarde "Aspose" wilt toevoegen, gebruikt u de`Add` methode van de CustomDocumentProperties-verzameling:
+## Stap 2: aangepaste eigenschappen toevoegen
+
+Vervolgens voegt u aangepaste eigenschappen aan uw document toe. Deze eigenschappen kunnen metagegevens bevatten, zoals bedrijfsnaam, auteur of andere relevante informatie.
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-U kunt zoveel aangepaste eigenschappen toevoegen als nodig is.
+## Stap 3: Configureer PDF-opslagopties
 
-## Stap 3: Stel de PDF-exportopties in
-
-Maak een exemplaar van de klasse PdfSaveOptions en geef op hoe aangepaste eigenschappen moeten worden geëxporteerd:
+ Configureer nu de PDF-opslagopties om ervoor te zorgen dat de aangepaste eigenschappen worden opgenomen bij het exporteren van het document. De`PdfSaveOptions` class biedt verschillende instellingen om te bepalen hoe het document als PDF wordt opgeslagen.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    CustomPropertiesExport = PdfCustomPropertiesExport.Standard
+};
 ```
 
-Met deze optie regelt u de export van aangepaste eigenschappen bij het converteren naar PDF.
+## Stap 4: Sla het document op als PDF
 
-## Stap 4: Converteer document naar PDF
-
- Gebruik de`Save` methode om het document naar PDF te converteren, met vermelding van conversieopties:
+ Sla het document ten slotte op als PDF in de opgegeven map. De`Save` methode combineert alle voorgaande stappen en produceert een PDF met de aangepaste eigenschappen inbegrepen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-Zorg ervoor dat u het juiste pad opgeeft om de geconverteerde PDF op te slaan.
-
-### Voorbeeldbroncode voor het exporteren van aangepaste eigenschappen met Aspose.Words voor .NET
-
-Hier is de volledige broncode om aangepaste eigenschappen uit een document te exporteren met Aspose.Words voor .NET:
-
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	doc.CustomDocumentProperties.Add("Company", "Aspose");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
-
-```
-
-Door deze stappen te volgen, kunt u eenvoudig aangepaste eigenschappen van een document exporteren wanneer u naar PDF converteert met Aspose.Words voor .NET.
-
-
 ## Conclusie
 
-In deze zelfstudie hebben we uitgelegd hoe u aangepaste eigenschappen van een document naar een PDF-document kunt exporteren met behulp van Aspose.Words voor .NET. Door de beschreven stappen te volgen, kunt u eenvoudig aanvullende informatie in het gegenereerde PDF-document opnemen door de aangepaste eigenschappen van het document te exporteren. Profiteer van de functies van Aspose.Words voor .NET om uw PDF-documenten te personaliseren en te verrijken door aangepaste eigenschappen te exporteren.
+Het exporteren van aangepaste eigenschappen in een PDF-document met Aspose.Words voor .NET is een eenvoudig proces dat uw mogelijkheden voor documentbeheer aanzienlijk kan verbeteren. Door deze stappen te volgen, kunt u ervoor zorgen dat cruciale metadata behouden en toegankelijk blijven, waardoor de efficiëntie en organisatie van uw digitale documenten wordt verbeterd.
 
-### Veel Gestelde Vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is het exporteren van aangepaste eigenschappen naar een PDF-document?
-A: Door aangepaste eigenschappen naar een PDF-document te exporteren, kan aanvullende informatie in het gegenereerde PDF-document worden opgenomen. Aangepaste eigenschappen zijn metagegevens die specifiek zijn voor uw document, zoals tags, trefwoorden of inloggegevens. Door deze aangepaste eigenschappen te exporteren, kunt u ze beschikbaar maken voor gebruikers wanneer ze het PDF-document bekijken.
+### Wat zijn aangepaste eigenschappen in een PDF-document?
+Aangepaste eigenschappen zijn metagegevens die aan een document worden toegevoegd en die informatie kunnen bevatten zoals de auteur, bedrijfsnaam of andere relevante gegevens die in het document moeten worden ingesloten.
 
-#### Vraag: Hoe kan ik de aangepaste eigenschappen van een document exporteren naar een PDF-document met Aspose.Words voor .NET?
-A: Volg deze stappen om de aangepaste eigenschappen van een document naar een PDF-document te exporteren met Aspose.Words voor .NET:
+### Waarom zou ik Aspose.Words voor .NET gebruiken voor het exporteren van aangepaste eigenschappen?
+Aspose.Words voor .NET biedt een robuuste en eenvoudig te gebruiken API voor het manipuleren van Word-documenten en het exporteren ervan als PDF's, zodat aangepaste eigenschappen behouden en toegankelijk blijven.
 
- Maak een exemplaar van de`Document` klas.
+### Kan ik meerdere aangepaste eigenschappen aan een document toevoegen?
+ Ja, u kunt meerdere aangepaste eigenschappen aan een document toevoegen door het bestand`Add`methode voor elke eigenschap die u wilt opnemen.
 
- Voeg de gewenste aangepaste eigenschappen toe met behulp van de`CustomDocumentProperties` verzameling. Gebruik bijvoorbeeld de`Add` methode om een eigenschap "Bedrijf" toe te voegen met de waarde "Aspose".
+### Naar welke andere formaten kan ik exporteren met Aspose.Words voor .NET?
+Aspose.Words voor .NET ondersteunt het exporteren naar verschillende formaten, waaronder DOCX, HTML, EPUB en nog veel meer.
 
- Maak een exemplaar van de`PdfSaveOptions` class en geef op hoe aangepaste eigenschappen moeten worden geëxporteerd met behulp van de`CustomPropertiesExport` eigendom. De`PdfCustomPropertiesExport.Standard` waarde exporteert aangepaste eigenschappen volgens de standaardinstellingen.
-
- Gebruik de`Save` werkwijze van de`Document` class om het document naar PDF te converteren, waarbij de conversieopties worden gespecificeerd.
-
-#### Vraag: Hoe krijg ik toegang tot aangepaste eigenschappen van een PDF-document?
-A: Om toegang te krijgen tot de aangepaste eigenschappen van een PDF-document, kunt u een compatibele PDF-lezer gebruiken die het bekijken van documenteigenschappen ondersteunt. De meeste gangbare PDF-lezers, zoals Adobe Acrobat Reader, bieden toegang tot metadata en eigenschappen van een PDF-document. U vindt deze opties meestal onder het menu 'Bestand' of door met de rechtermuisknop op het document te klikken en 'Eigenschappen' te selecteren.
+### Waar kan ik ondersteuning krijgen als ik problemen tegenkom?
+ Voor ondersteuning kunt u terecht op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) Voor assistentie.

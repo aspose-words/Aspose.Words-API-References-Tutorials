@@ -12,4 +12,4 @@ De Aspose.Words voor .NET-tutorials over woordenverwerking met OfficeMath begele
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Wiskundige vergelijkingen](./math-equations/) | Leer hoe u wiskundige vergelijkingen aan uw Word-documenten kunt toevoegen met Aspose.Words voor .NET. |
+| [Wiskundige vergelijkingen](./math-equations/) | Leer hoe u wiskundige vergelijkingen in Word-documenten configureert met Aspose.Words voor .NET. Stapsgewijze handleiding met voorbeelden, veelgestelde vragen en meer. |

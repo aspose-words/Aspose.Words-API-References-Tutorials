@@ -116,7 +116,7 @@ if template.range.bookmarks.get(bookmark_name):
 
 ## Técnicas avançadas de marcadores
 
-À medida que você se familiariza com os marcadores, você pode explorar técnicas avançadas, como marcadores aninhados, marcadores que abrangem várias seções e muito mais. Essas técnicas permitem criar estruturas de documentos sofisticadas e aprimorar as interações do usuário.
+À medida que você se familiariza com os marcadores, pode explorar técnicas avançadas, como marcadores aninhados, marcadores que abrangem várias seções e muito mais. Essas técnicas permitem criar estruturas de documentos sofisticadas e aprimorar as interações do usuário.
 
 ## Conclusão
 

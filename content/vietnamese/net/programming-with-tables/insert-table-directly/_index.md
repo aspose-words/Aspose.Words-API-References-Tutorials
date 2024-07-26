@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Mã này khởi tạo một tài liệu Word mới. Bạn sẽ cần phải thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+ Mã này khởi tạo một tài liệu Word mới. Bạn sẽ cần phải thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
 
 ## Bước 2: Tạo đối tượng bảng
 
@@ -71,7 +71,7 @@ Một bảng bao gồm các hàng và ô. Hãy thêm các yếu tố này từng
 // Ở đây chúng ta có thể gọi EnsureMinimum để tạo các hàng và ô cho chúng ta. Phương pháp này được sử dụng
 // để đảm bảo rằng nút được chỉ định là hợp lệ. Trong trường hợp này, một bảng hợp lệ phải có ít nhất một Hàng và một ô.
 // Thay vào đó, chúng ta sẽ tự xử lý việc tạo hàng và bảng.
-//Đây sẽ là cách tốt nhất để làm điều này nếu chúng ta tạo một bảng bên trong một thuật toán.
+// Đây sẽ là cách tốt nhất để làm điều này nếu chúng ta tạo một bảng bên trong một thuật toán.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

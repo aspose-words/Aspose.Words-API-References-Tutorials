@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Dengan namespace ini yang diimpor, Anda siap untuk memulai coding!
+Dengan namespace ini diimpor, Anda siap untuk memulai coding!
 
 ## Langkah 1: Siapkan LoadOptions Anda
 

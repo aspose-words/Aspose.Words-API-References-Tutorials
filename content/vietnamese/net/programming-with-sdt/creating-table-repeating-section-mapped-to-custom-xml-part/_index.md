@@ -17,7 +17,7 @@ Hướng dẫn này trình bày cách tạo bảng có phần lặp lại đư�
 - Kiến thức cơ bản về C# và Xử lý văn bản với tài liệu Word.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Bước 4: Tạo bảng và cấu trúc bảng
- Bắt đầu tạo bảng bằng cách sử dụng`StartTable` phương pháp của`DocumentBuilder` . Thêm ô và nội dung bảng bằng cách sử dụng`InsertCell`Và`Write` phương pháp.
+Bắt đầu tạo bảng bằng cách sử dụng`StartTable` phương pháp của`DocumentBuilder` . Thêm ô và nội dung bảng bằng cách sử dụng`InsertCell`Và`Write` phương pháp.
 
 ```csharp
 Table table = builder.StartTable();
@@ -98,7 +98,7 @@ row.AppendChild(authorSdt);
 ```
 
 ## Bước 8: Lưu tài liệu
- Lưu tài liệu đã sửa đổi vào thư mục được chỉ định bằng cách sử dụng`Save` phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
+ Lưu tài liệu đã sửa đổi vào thư mục được chỉ định bằng cách sử dụng`Save`phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");

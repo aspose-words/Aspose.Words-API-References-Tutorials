@@ -19,7 +19,7 @@ Zorg ervoor dat u uw ontwikkelomgeving hebt ingesteld met Aspose.Words voor .NET
 Document doc = new Document();
 ```
 
-In deze stap maken we een nieuw`Document` voorwerp.
+ In deze stap maken we een nieuw`Document` voorwerp.
 
 ## Stap 3: Bewerk thema-eigenschappen
 
@@ -29,7 +29,7 @@ theme.MinorFonts.Latin = "Times New Roman";
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
-In deze stap hebben we toegang tot de`Theme` voorwerp van de`Document` object om het documentthema op te halen. Vervolgens kunnen we thema-eigenschappen wijzigen, zoals secundaire lettertypen (`MinorFonts.Latin`) en kleuren (`Colors.Hyperlink`).
+ In deze stap hebben we toegang tot de`Theme` voorwerp van de`Document` object om het documentthema op te halen. Vervolgens kunnen we thema-eigenschappen wijzigen, zoals secundaire lettertypen (`MinorFonts.Latin`) en kleuren (`Colors.Hyperlink`).
 
 ## Stap 4: Sla het document op
 
@@ -67,7 +67,7 @@ Om de omgeving in te stellen, moet u ervoor zorgen dat Aspose.Words voor .NET in
 
 #### Hoe kan ik thema-eigenschappen openen en wijzigen?
 
- Om thema-eigenschappen te openen en te wijzigen, kunt u de`Theme` voorwerp van de`Document` klas. Door toegang te krijgen tot de`Theme` object, kunt u eigenschappen wijzigen, zoals secundaire lettertypen (`MinorFonts.Latin`) en kleuren (`Colors.Hyperlink`). Wijs de gewenste waarden aan deze eigenschappen toe om het thema van uw document aan te passen.
+ Om thema-eigenschappen te openen en te wijzigen, kunt u de`Theme` voorwerp van de`Document` klas. Door toegang te krijgen tot de`Theme`object, kunt u eigenschappen wijzigen, zoals secundaire lettertypen (`MinorFonts.Latin`) en kleuren (`Colors.Hyperlink`). Wijs de gewenste waarden aan deze eigenschappen toe om het thema van uw document aan te passen.
 
 #### Wat zijn de voordelen van het instellen van thema-eigenschappen in een Word-document?
 
@@ -79,4 +79,4 @@ Door thema-eigenschappen in een Word-document in te stellen, kunt u het uiterlij
 
 #### Kan ik het gewijzigde document in verschillende formaten opslaan?
 
- Ja, u kunt het gewijzigde document opslaan in verschillende formaten die worden ondersteund door Aspose.Words voor .NET. De`Save` werkwijze van de`Document` Met object kunt u het uitvoerbestandsformaat opgeven, zoals DOCX, PDF, HTML en meer. Kies het juiste formaat op basis van uw vereisten.
+Ja, u kunt het gewijzigde document opslaan in verschillende formaten die worden ondersteund door Aspose.Words voor .NET. De`Save` werkwijze van de`Document` Met object kunt u het uitvoerbestandsformaat opgeven, zoals DOCX, PDF, HTML en meer. Kies het juiste formaat op basis van uw vereisten.

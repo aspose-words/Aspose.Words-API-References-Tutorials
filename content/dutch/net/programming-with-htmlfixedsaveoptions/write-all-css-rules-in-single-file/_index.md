@@ -2,64 +2,91 @@
 title: Schrijf alle CSS-regels in één bestand
 linktitle: Schrijf alle CSS-regels in één bestand
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een Word-document naar vaste HTML converteert door alle CSS-regels in één bestand te schrijven met Aspose.Words voor .NET.
+description: Leer hoe u Word-documenten naar HTML converteert met Aspose.Words voor .NET met alle CSS-regels in één bestand voor schonere code en eenvoudiger onderhoud.
 type: docs
 weight: 10
 url: /nl/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/
 ---
+## Invoering
 
-Wanneer u een Word-document converteert naar vaste HTML in een C#-toepassing, wilt u wellicht alle CSS-regels consolideren in één bestand voor een betere organisatie en draagbaarheid. Met de Aspose.Words-bibliotheek voor .NET kunt u deze functionaliteit eenvoudig opgeven met behulp van de HtmlFixedSaveOptions-opslagopties. In deze stapsgewijze handleiding laten we u zien hoe u Aspose.Words voor .NET C#-broncode kunt gebruiken om een Word-document naar vaste HTML te converteren door alle CSS-regels in één bestand te schrijven met behulp van de opslagopties HtmlFixedSaveOptions.
+Bent u ooit verstrikt geraakt in het web van overal verspreide CSS-regels bij het converteren van Word-documenten naar HTML? Maak je geen zorgen! Vandaag duiken we in een leuke functie van Aspose.Words voor .NET waarmee je alle CSS-regels in één bestand kunt schrijven. Dit ruimt niet alleen uw code op, maar maakt uw leven ook een stuk eenvoudiger. Maak uw gordel vast en laten we aan de slag gaan op weg naar schonere, efficiëntere HTML-uitvoer!
 
-## Inzicht in de Aspose.Words-bibliotheek
+## Vereisten
 
-Voordat u in de code duikt, is het belangrijk dat u de Aspose.Words-bibliotheek voor .NET begrijpt. Aspose.Words is een krachtige bibliotheek voor het maken, bewerken, converteren en beschermen van Word-documenten op verschillende platforms, waaronder .NET. Het biedt veel functies voor het manipuleren van documenten, zoals het invoegen van tekst, het wijzigen van de opmaak, het toevoegen van secties en nog veel meer.
+Voordat we in de kern duiken, laten we onze eenden op een rij zetten. Dit is wat u nodig heeft om aan de slag te gaan:
 
-## Het Word-document laden
+1.  Aspose.Words voor .NET: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Als je hem nog niet hebt, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
+2. .NET-ontwikkelomgeving: u hebt een .NET-ontwikkelomgeving op uw computer nodig. Visual Studio is een populaire keuze.
+3. Basiskennis van C#: Een basiskennis van programmeren in C# zal nuttig zijn.
+4. Een Word-document: Zorg ervoor dat u een Word-document (.docx) bij de hand heeft dat u wilt converteren.
 
-De eerste stap is het laden van het Word-document dat u naar vaste HTML wilt converteren. Gebruik de klasse Document om het document uit het bronbestand te laden. Hier is een voorbeeld :
+## Naamruimten importeren
 
-```csharp
-Document doc = new Document(dataDir + "Document.docx");
-```
-
-In dit voorbeeld laden we het document "Document.docx" in de documentenmap.
-
-## Back-upopties configureren
-
-De volgende stap is het configureren van de opslagopties voor het converteren naar vaste HTML. Gebruik de klasse HtmlFixedSaveOptions en stel de eigenschap SaveFontFaceCssSeparately in op false om alle CSS-regels in één bestand te schrijven. Hier leest u hoe u het moet doen:
+Laten we eerst de benodigde naamruimten in uw C#-project importeren. Hierdoor hebben we eenvoudig toegang tot de functionaliteiten van Aspose.Words.
 
 ```csharp
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-We maken een nieuw HtmlFixedSaveOptions-object en stellen de eigenschap SaveFontFaceCssSeparately in op false om alle CSS-regels in één bestand te schrijven.
+Oké, laten we het proces opsplitsen in eenvoudig te volgen stappen. Elke stap begeleidt u door een specifiek deel van het proces om ervoor te zorgen dat alles soepel verloopt.
 
-## Vaste HTML-documentconversie
+## Stap 1: Stel uw documentenmap in
 
-Nu we de opslagopties hebben geconfigureerd, kunnen we doorgaan met het converteren van het document naar vaste HTML. Gebruik de Save-methode van de Document-klasse om het geconverteerde document in een vast HTML-formaat op te slaan door opslagopties op te geven. Hier is een voorbeeld :
-
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
-```
-
-In dit voorbeeld slaan we het geconverteerde document op als "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html" met behulp van de opgegeven opslagopties.
-
-### Voorbeeldbroncode voor HtmlFixedSaveOptions met de functie "Schrijf alle CSS-regels in één bestand" met behulp van Aspose.Words voor .NET
+Eerst moeten we het pad naar uw documentmap definiëren. Dit is waar uw Word-document wordt opgeslagen en waar de geconverteerde HTML wordt opgeslagen.
 
 ```csharp
 // Toegangspad naar uw documentmap
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+## Stap 2: Laad het Word-document
+
+ Vervolgens laden we het Word-document dat u naar HTML wilt converteren. Dit gebeurt met behulp van de`Document` klasse uit de Aspose.Words-bibliotheek.
+
+```csharp
 // Laad het Word-document
 Document doc = new Document(dataDir + "Document.docx");
+```
 
+## Stap 3: Configureer HTML-opslagopties
+
+ Nu moeten we de HTML-opslagopties configureren. Concreet willen we de functie inschakelen die alle CSS-regels in één bestand schrijft. Dit wordt bereikt door het instellen van de`SaveFontFaceCssSeparately`eigendom aan`false`.
+
+```csharp
 // Configureer back-upopties met de functie "Alle CSS-regels in één bestand schrijven".
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { SaveFontFaceCssSeparately = false };
+HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions 
+{ 
+    SaveFontFaceCssSeparately = false 
+};
+```
 
-// Converteer document naar vaste HTML
+## Stap 4: Document converteren naar vaste HTML
+
+Ten slotte slaan we het document op als HTML-bestand met behulp van de geconfigureerde opslagopties. Deze stap zorgt ervoor dat alle CSS-regels in één bestand worden geschreven.
+
+```csharp
+//Converteer document naar vaste HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
 ## Conclusie
 
-In deze handleiding hebben we besproken hoe u een Word-document naar vaste HTML kunt converteren door alle CSS-regels in één bestand te schrijven met behulp van HtmlFixedSaveOptions met de Aspose.Words-bibliotheek voor .NET. Door de meegeleverde stappen te volgen en de meegeleverde C#-broncode te gebruiken, kunt u deze functionaliteit eenvoudig toepassen in uw C#-applicatie. Door alle CSS-regels in één bestand te schrijven, wordt het eenvoudiger om de HTML-code die tijdens de documentconversie wordt gegenereerd, te organiseren en te beheren.
+En daar heb je het! Met slechts een paar regels code heeft u uw Word-document met succes naar HTML geconverteerd, waarbij alle CSS-regels netjes in één bestand zijn geordend. Deze methode vereenvoudigt niet alleen uw CSS-beheer, maar verbetert ook de onderhoudbaarheid van uw HTML-documenten. Dus de volgende keer dat u een Word-document moet converteren, weet u precies hoe u alles netjes kunt houden!
+
+## Veelgestelde vragen
+
+### Waarom zou ik één enkel CSS-bestand gebruiken voor mijn HTML-uitvoer?
+Het gebruik van één enkel CSS-bestand vereenvoudigt het beheer en onderhoud van uw stijlen. Het maakt uw HTML schoner en efficiënter.
+
+### Kan ik indien nodig CSS-regels voor het lettertype scheiden?
+ Ja, door instelling`SaveFontFaceCssSeparately` naar`true`, kunt u CSS-regels voor lettertypen in een ander bestand scheiden.
+
+### Is Aspose.Words voor .NET gratis te gebruiken?
+ Aspose.Words biedt een gratis proefperiode aan die u kunt gebruiken[download hier](https://releases.aspose.com/) . Voor voortgezet gebruik kunt u overwegen een licentie aan te schaffen[hier](https://purchase.aspose.com/buy).
+
+### Naar welke andere formaten kan Aspose.Words voor .NET worden geconverteerd?
+Aspose.Words voor .NET ondersteunt verschillende formaten, waaronder PDF, TXT en afbeeldingsformaten zoals JPEG en PNG.
+
+### Waar kan ik meer bronnen vinden over Aspose.Words voor .NET?
+ Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor uitgebreide handleidingen en API-referenties.

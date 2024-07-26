@@ -8,7 +8,7 @@ weight: 10
 url: /sv/net/programming-with-styles-and-themes/copy-styles/
 ---
 
-den här handledningen kommer vi att utforska den medföljande C#-källkoden för att kopiera Word-dokumentstilar från ett källdokument till ett måldokument med Aspose.Words för .NET. Den här funktionen låter dig överföra stilar från ett dokument till ett annat, vilket kan vara användbart när du vill använda konsekventa stilar på flera dokument.
+I den här handledningen kommer vi att utforska den medföljande C#-källkoden för att kopiera Word-dokumentstilar från ett källdokument till ett måldokument med Aspose.Words för .NET. Den här funktionen låter dig överföra stilar från ett dokument till ett annat, vilket kan vara användbart när du vill använda konsekventa stilar på flera dokument.
 
 ## Steg 1: Sätta upp miljön
 

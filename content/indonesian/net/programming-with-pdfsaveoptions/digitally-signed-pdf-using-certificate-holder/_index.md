@@ -2,107 +2,96 @@
 title: Tambahkan Tanda Tangan Digital ke PDF menggunakan Pemegang Sertifikat
 linktitle: Tambahkan Tanda Tangan Digital ke PDF menggunakan Pemegang Sertifikat
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menambahkan Tanda Tangan Digital ke PDF menggunakan Pemegang Sertifikat dengan Aspose.Words untuk .NET.
+description: Amankan file PDF Anda dengan tanda tangan digital menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah ini untuk menambahkan tanda tangan digital ke PDF Anda dengan mudah.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah menambahkan tanda tangan digital ke PDF menggunakan pemegang sertifikat dengan Aspose.Words untuk .NET. Tanda tangan digital menambahkan lapisan keamanan dan integritas pada dokumen PDF. Ikuti langkah-langkah di bawah ini:
+Pernahkah Anda bertanya-tanya bagaimana cara mengamankan dokumen PDF Anda dengan tanda tangan digital? Nah, Anda berada di tempat yang tepat! Tanda tangan digital setara dengan tanda tangan tulisan tangan modern, yang menawarkan cara untuk memverifikasi keaslian dan integritas dokumen digital. Dalam tutorial ini, kami akan menunjukkan cara menambahkan tanda tangan digital ke PDF menggunakan Aspose.Words untuk .NET. Kami akan membahas semuanya mulai dari menyiapkan lingkungan Anda hingga mengeksekusi kode langkah demi langkah. Di akhir panduan ini, Anda akan memiliki PDF yang ditandatangani secara digital, aman dan andal.
 
-## Langkah 1: Membuat dokumen dan menambahkan konten
+## Prasyarat
 
-Mulailah dengan membuat instance kelas Dokumen:
+Sebelum kita mulai, ada beberapa hal yang Anda perlukan:
+
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Anda dapat mengunduhnya dari[Asumsikan situs web](https://releases.aspose.com/words/net/).
+2. File Sertifikat: Anda memerlukan file sertifikat .pfx untuk menandatangani PDF. Jika tidak memilikinya, Anda dapat membuat sertifikat yang ditandatangani sendiri untuk tujuan pengujian.
+3. Visual Studio: Tutorial ini mengasumsikan Anda menggunakan Visual Studio sebagai lingkungan pengembangan Anda.
+4. Pengetahuan Dasar tentang C#: Keakraban dengan pemrograman C# dan .NET sangat penting.
+
+## Impor Namespace
+
+Pertama, mari impor namespace yang diperlukan. Ini penting untuk mengakses kelas dan metode yang diperlukan untuk manipulasi dokumen dan tanda tangan digital.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System;
+```
+
+Mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dikelola.
+
+## Langkah 1: Siapkan Proyek Anda
+
+Buat proyek C# baru di Visual Studio. Tambahkan referensi ke Aspose.Words untuk .NET. Anda dapat melakukan ini melalui NuGet Package Manager dengan mencari "Aspose.Words" dan menginstalnya.
+
+## Langkah 2: Muat atau Buat Dokumen
+
+Anda memerlukan dokumen untuk ditandatangani. Anda dapat memuat dokumen yang sudah ada atau membuat dokumen baru. Untuk tutorial ini, kita akan membuat dokumen baru dan menambahkan beberapa contoh teks.
+
+```csharp
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-```
 
-## Langkah 2: Tambahkan konten ke dokumen
-
- Kemudian gunakan`DocumentBuilder`untuk menambahkan konten ke dokumen. Misalnya, untuk menambahkan paragraf yang berisi teks "Test Signed PDF", gunakan`Writeln` metode:
-
-```csharp
+// Tambahkan beberapa teks ke dokumen.
 builder.Writeln("Test Signed PDF.");
 ```
 
-Anda dapat menambahkan item konten lainnya sesuai kebutuhan.
+## Langkah 3: Tentukan Detail Tanda Tangan Digital
 
-## Langkah 3: Tetapkan opsi penyimpanan PDF
-
-Buat instance kelas PdfSaveOptions dan tentukan detail tanda tangan digital:
+Sekarang saatnya menyiapkan detail tanda tangan digital. Anda harus menentukan jalur ke file sertifikat .pfx Anda, alasan penandatanganan, lokasi, dan tanggal penandatanganan.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-	DigitalSignatureDetails = new PdfDigitalSignatureDetails(
-		CertificateHolder.Create(MyDir + "morzal.pfx", "aw"), "reason", "location",
-		DateTime.Now)
+    DigitalSignatureDetails = new PdfDigitalSignatureDetails(
+        CertificateHolder.Create(dataDir + "morzal.pfx", "your_password"), "reason", "location",
+        DateTime.Now)
 };
 ```
 
-Pastikan untuk menentukan jalur yang benar ke sertifikat Anda dan kata sandi terkait. Anda juga dapat menyesuaikan alasan dan lokasi tanda tangan.
+ Mengganti`"your_password"` dengan kata sandi untuk file .pfx Anda.
 
 ## Langkah 4: Simpan Dokumen sebagai PDF yang Ditandatangani Secara Digital
 
- Menggunakan`Save` metode untuk menyimpan dokumen sebagai PDF dengan menentukan opsi penyimpanan:
+Terakhir, simpan dokumen sebagai PDF dengan tanda tangan digital.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
+doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-Pastikan untuk menentukan jalur yang benar untuk menyimpan PDF yang ditandatangani secara digital.
+Dan itu saja! Dokumen Anda sekarang ditandatangani dan disimpan sebagai PDF.
 
-Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah membuat PDF yang ditandatangani secara digital dengan sertifikat menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk Pdf yang Ditandatangani Secara Digital Menggunakan Pemegang Sertifikat menggunakan Aspose.Words untuk .NET
-
-Berikut kode sumber lengkap untuk menandatangani Pdf secara digital menggunakan pemegang sertifikat dari dokumen menggunakan Aspose.Words untuk .NET:
-
-```csharp
-
-            // Jalur ke direktori dokumen.
-			string dataDir = "YOUR DOCUMENT DIRECTORY";
-            Document doc = new Document();
-            DocumentBuilder builder = new DocumentBuilder(doc);
-            
-            builder.Writeln("Test Signed PDF.");
-
-            PdfSaveOptions saveOptions = new PdfSaveOptions
-            {
-                DigitalSignatureDetails = new PdfDigitalSignatureDetails(
-                    CertificateHolder.Create(MyDir + "morzal.pfx", "aw"), "reason", "location",
-                    DateTime.Now)
-            };
-
-            doc.Save(dataDir + "WorkingWithPdfSaveOptions.DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
-            
-        
-```
 ## Kesimpulan
 
-Dalam tutorial ini, kami menjelajahi langkah-langkah untuk menambahkan tanda tangan digital ke dokumen PDF menggunakan sertifikat dengan Aspose.Words untuk .NET. Tanda tangan digital menambahkan lapisan keamanan dan integritas pada dokumen, sehingga menjamin keasliannya dan memungkinkan untuk mendeteksi modifikasi selanjutnya. Dengan mengikuti langkah-langkah yang diberikan, Anda dapat dengan mudah membuat PDF yang ditandatangani secara digital menggunakan sertifikat dengan Aspose.Words untuk .NET.
+Tanda tangan digital adalah alat yang ampuh untuk memastikan integritas dan keaslian dokumen Anda. Dengan Aspose.Words untuk .NET, menambahkan tanda tangan digital ke file PDF Anda sangatlah mudah dan efisien. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat mengamankan dokumen PDF Anda dan memberikan ketenangan pikiran kepada penerima mengenai keasliannya. Selamat membuat kode!
 
-### Pertanyaan yang Sering Diajukan
+## FAQ
 
-#### T: Apa itu tanda tangan digital dan mengapa penting dalam dokumen PDF?
-J: Tanda tangan digital adalah teknik keamanan yang membantu memastikan keaslian, integritas, dan non-penyangkalan dokumen elektronik, seperti file PDF. Ia menggunakan sertifikat digital untuk menambahkan lapisan keamanan pada dokumen, yang membantu memverifikasi identitas penulis dan mendeteksi perubahan selanjutnya pada konten.
+### Apa itu tanda tangan digital?
+Tanda tangan digital adalah bentuk tanda tangan elektronik yang memverifikasi keaslian dan integritas dokumen digital.
 
-#### T: Bagaimana cara menambahkan tanda tangan digital ke dokumen PDF menggunakan sertifikat dengan Aspose.Words untuk .NET?
-J: Untuk menambahkan tanda tangan digital ke dokumen PDF menggunakan sertifikat dengan Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
+### Apakah saya memerlukan sertifikat untuk menambahkan tanda tangan digital?
+Ya, Anda memerlukan file sertifikat .pfx untuk menambahkan tanda tangan digital ke PDF Anda.
 
- Buat sebuah instance dari`Document` kelas untuk mewakili dokumen.
+### Bisakah saya membuat sertifikat yang ditandatangani sendiri untuk pengujian?
+Ya, Anda dapat membuat sertifikat yang ditandatangani sendiri untuk tujuan pengujian. Namun, untuk penggunaan produksi, disarankan untuk mendapatkan sertifikat dari otoritas sertifikat tepercaya.
 
- Menggunakan`DocumentBuilder` kelas untuk menambahkan konten yang diinginkan ke dokumen.
+### Apakah Aspose.Words untuk .NET gratis?
+ Aspose.Words untuk .NET adalah produk komersial, tetapi Anda dapat mengunduh uji coba gratis dari .NET[Asumsikan situs web](https://releases.aspose.com/).
 
- Buat sebuah instance dari`PdfSaveOptions` kelas dan tentukan detail tanda tangan digital menggunakan`PdfDigitalSignatureDetails` kelas. Anda harus memberikan jalur ke sertifikat (`CertificateHolder.Create`), kata sandi terkait, serta alasan penandatanganan dan lokasi.
-
- Menggunakan`Save` metode untuk menyimpan dokumen dalam format PDF dengan menentukan opsi penyimpanan.
-
-#### T: Bagaimana cara mendapatkan sertifikat untuk menambahkan tanda tangan digital ke dokumen PDF?
-J: Untuk mendapatkan sertifikat guna menambahkan tanda tangan digital ke dokumen PDF, Anda biasanya dapat menghubungi otoritas sertifikat (CA) atau penyedia layanan kepercayaan. Entitas ini menerbitkan sertifikat digital setelah memverifikasi identitas Anda dan memvalidasi permintaan Anda. Setelah Anda memperoleh sertifikat, Anda dapat menggunakannya di aplikasi Anda untuk menambahkan tanda tangan digital ke dokumen PDF.
-
-#### T: Apakah detail tanda tangan digital dapat disesuaikan, seperti alasan dan lokasi?
- J: Ya, Anda dapat menyesuaikan detail tanda tangan digital dengan menentukan alasan dan lokasi tanda tangan. Dalam contoh kode yang disediakan, Anda dapat mengubah nilai`reason`Dan`location` parameter saat membuat`PdfDigitalSignatureDetails` obyek. Pastikan untuk memberikan informasi yang sesuai untuk setiap parameter untuk mencerminkan alasan dan lokasi tanda tangan di dokumen PDF Anda.
+### Bisakah saya menggunakan Aspose.Words untuk .NET untuk menandatangani jenis dokumen lain?
+Ya, Aspose.Words for .NET dapat digunakan untuk menandatangani berbagai jenis dokumen, tidak hanya PDF.

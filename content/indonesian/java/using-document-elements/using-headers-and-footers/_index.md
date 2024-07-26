@@ -189,7 +189,7 @@ Setelah membuat dan menyesuaikan dokumen Anda, jangan lupa untuk menyimpannya me
         row.getLastCell().getCellFormat().setPreferredWidth(PreferredWidth.fromPercent(100 * 2 / 3));
         doc.save("Your Directory Path" + "WorkingWithHeadersAndFooters.CreateHeaderFooter.docx");
 ```	
-Kode sumber metode copyHeadersFootersFromPreviousSection
+Kode sumber metode copyHeadersFootersFromPviousSection
 ```java
     /// <ringkasan>
     /// Mengkloning dan menyalin header/footer dari bagian sebelumnya ke bagian yang ditentukan.

@@ -13,5 +13,5 @@ Woordenverwerking met MarkdownSaveOptions is een diepgaande bron die u door de w
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Exporteren naar prijsverlaging met uitlijning van tabelinhoud](./export-into-markdown-with-table-content-alignment/) | Leer hoe u tabelinhoud met verschillende uitlijningen naar Markdown-bestanden kunt exporteren met behulp van Aspose.Words voor .NET. |
-| [Stel de map Afbeeldingen in](./set-images-folder/) | Leer hoe u de map afbeeldingen instelt bij het exporteren naar Markdown met Aspose.Words voor .NET. Pas de plaatsing van afbeeldingen aan voor een betere organisatie en integratie.|
+| [Exporteren naar prijsverlaging met uitlijning van tabelinhoud](./export-into-markdown-with-table-content-alignment/) | Leer hoe u Word-documenten kunt exporteren naar Markdown met uitgelijnde tabellen met behulp van Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor perfecte Markdown-tabellen. |
+| [Stel de map Afbeeldingen in](./set-images-folder/) | Converteer Word-documenten naar Markdown met de juiste tabeluitlijning met behulp van Aspose.Words voor .NET. Volg onze gedetailleerde gids voor perfecte resultaten. |

@@ -2,93 +2,112 @@
 title: Loại điều khiển ưa thích trong tài liệu Word
 linktitle: Loại điều khiển ưa thích trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để chỉ định loại điều khiển ưu tiên trong tài liệu word khi tải tài liệu HTML bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách chèn trường biểu mẫu hộp tổ hợp vào tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước này để tích hợp nội dung HTML liền mạch.
 type: docs
 weight: 10
 url: /vi/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
-Bài viết này cung cấp hướng dẫn từng bước về cách sử dụng tính năng loại điều khiển ưa thích với Aspose.Words cho .NET. Chúng tôi sẽ giải thích chi tiết từng phần của mã. Ở cuối hướng dẫn này, bạn sẽ có thể hiểu cách chỉ định loại điều khiển ưa thích khi tải tài liệu HTML.
+## Giới thiệu
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt và định cấu hình thư viện Aspose.Words cho .NET trong dự án của mình. Bạn có thể tìm thấy thư viện và hướng dẫn cài đặt trên trang web Aspose.
+chúng tôi đang đi sâu vào một hướng dẫn thú vị về cách làm việc với các tùy chọn tải HTML trong Aspose.Words cho .NET, đặc biệt tập trung vào việc đặt loại điều khiển ưa thích khi chèn trường biểu mẫu hộp tổ hợp vào tài liệu Word. Hướng dẫn từng bước này sẽ giúp bạn hiểu cách thao tác và hiển thị nội dung HTML một cách hiệu quả trong tài liệu Word bằng Aspose.Words cho .NET.
 
-## Bước 1: Xác định mã HTML
+## Điều kiện tiên quyết
 
- Để bắt đầu, bạn cần xác định mã HTML bạn muốn tải dưới dạng tài liệu. Trong ví dụ này, chúng tôi đã xác định một`html` biến chứa mã HTML của bộ chọn với các tùy chọn.
+Trước khi chúng ta bắt đầu viết mã, có một số điều bạn cần phải chuẩn bị sẵn:
+
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[trang mạng](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Bạn nên thiết lập môi trường phát triển, như Visual Studio.
+3. Kiến thức cơ bản về C#: Cần phải có hiểu biết cơ bản về lập trình C# để tuân theo hướng dẫn.
+4. Nội dung HTML: Kiến thức cơ bản về HTML rất hữu ích vì chúng ta sẽ làm việc với nội dung HTML trong ví dụ này.
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết để bắt đầu:
 
 ```csharp
-const string html=@"
-<html>
-<select name='ComboBox' size='1'>
-<option value='val1'>item1</option>
-<option value='val2'></option>
-</select>
-</html>
+using System;
+using System.IO;
+using System.Text;
+using Aspose.Words;
+using Aspose.Words.Loading;
+```
+
+Bây giờ, hãy chia ví dụ thành nhiều bước để đảm bảo sự rõ ràng và dễ hiểu.
+
+## Bước 1: Thiết lập nội dung HTML của bạn
+
+Đầu tiên chúng ta cần xác định nội dung HTML muốn chèn vào tài liệu Word. Đây là đoạn mã HTML chúng tôi sẽ sử dụng:
+
+```csharp
+const string html = @"
+    <html>
+        <select name='ComboBox' size='1'>
+            <option value='val1'>item1</option>
+            <option value='val2'></option>                        
+        </select>
+    </html>
 ";
 ```
 
-## Bước 2: Đặt tùy chọn tải HTML
+HTML này chứa một hộp tổ hợp đơn giản với hai tùy chọn. Chúng tôi sẽ tải HTML này vào tài liệu Word và chỉ định cách hiển thị nó.
 
- Tiếp theo, chúng ta tạo một`HtmlLoadOptions` đối tượng và thiết lập`PreferredControlType`tài sản để`HtmlControlType.StructuredDocumentTag`. Điều này yêu cầu Aspose.Words sử dụng StructuredDocumentTags để thể hiện HTML khi tải.
+## Bước 2: Xác định thư mục tài liệu
+
+Tiếp theo, chỉ định thư mục nơi tài liệu Word của bạn sẽ được lưu. Điều này giúp tổ chức các tệp của bạn và giữ cho việc quản lý đường dẫn được rõ ràng.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi bạn muốn lưu tài liệu Word của mình.
+
+## Bước 3: Định cấu hình tùy chọn tải HTML
+
+ Ở đây, chúng tôi định cấu hình các tùy chọn tải HTML, đặc biệt tập trung vào`PreferredControlType`tài sản. Điều này xác định cách hiển thị hộp tổ hợp trong tài liệu Word.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
-## Bước 3: Tải và lưu tài liệu
+ Bằng cách thiết lập`PreferredControlType` ĐẾN`HtmlControlType.StructuredDocumentTag`, chúng tôi đảm bảo rằng hộp tổ hợp được hiển thị dưới dạng thẻ tài liệu có cấu trúc (SDT) trong tài liệu Word.
 
- Chúng tôi sử dụng`Document` lớp để tải mã HTML từ luồng bộ nhớ với các tùy chọn tải được xác định trước đó. Sau đó, chúng tôi lưu tài liệu vào thư mục được chỉ định với`.docx`định dạng tập tin.
+## Bước 4: Tải nội dung HTML vào tài liệu
+
+Sử dụng các tùy chọn tải đã định cấu hình, chúng tôi tải nội dung HTML vào tài liệu Word mới.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
+```
+
+Ở đây, chúng tôi chuyển đổi chuỗi HTML thành mảng byte và tải nó vào tài liệu bằng luồng bộ nhớ. Điều này đảm bảo rằng nội dung HTML được Aspose.Words diễn giải và hiển thị chính xác.
+
+## Bước 5: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu vào thư mục đã chỉ định ở định dạng DOCX.
+
+```csharp
 doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
 ```
 
-### Mã nguồn ví dụ cho loại điều khiển ưa thích với Aspose.Words for .NET
-
-```csharp
-	
-	const string html = @"
-		<html>
-			<select name='ComboBox' size='1'>
-				<option value='val1'>item1</option>
-				<option value='val2'></option>                        
-			</select>
-		</html>
-	";
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
-
-	Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), loadOptions);
-
-	doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveFormat.Docx);
-
-```
-
-Đó là tất cả ! Bạn đã chỉ định thành công loại điều khiển ưa thích khi tải tài liệu HTML bằng Aspose.Words cho .NET.
+Thao tác này sẽ lưu tài liệu Word bằng điều khiển hộp tổ hợp được hiển thị tại vị trí đã chỉ định.
 
 ## Phần kết luận
 
- Bằng cách làm theo hướng dẫn từng bước này, bạn đã học cách sử dụng tính năng "Loại điều khiển ưa thích" trong Aspose.Words cho .NET để chỉ định loại điều khiển mong muốn khi tải tài liệu HTML. Thiết lập`PreferredControlType`tài sản để`HtmlControlType.StructuredDocumentTag` cho phép Aspose.Words sử dụng StructuredDocumentTags (SDT) để trình bày và xử lý nội dung HTML tốt hơn. Bạn cũng có thể khám phá các loại điều khiển khác để phù hợp với yêu cầu cụ thể của mình. Sử dụng tính năng này giúp đảm bảo xử lý chính xác và hiệu quả các tài liệu HTML trong ứng dụng C# của bạn bằng Aspose.Words.
+Và bạn có nó rồi đấy! Chúng tôi đã chèn thành công trường biểu mẫu hộp tổ hợp vào tài liệu Word bằng Aspose.Words cho .NET bằng cách tận dụng các tùy chọn tải HTML. Hướng dẫn từng bước này sẽ giúp bạn hiểu quy trình và áp dụng nó vào các dự án của bạn. Cho dù bạn đang tự động hóa việc tạo tài liệu hay thao tác nội dung HTML, Aspose.Words for .NET đều cung cấp các công cụ mạnh mẽ để đạt được mục tiêu của bạn.
 
-### Câu hỏi thường gặp về loại điều khiển ưa thích trong tài liệu word
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Tính năng "Loại điều khiển ưa thích" trong Aspose.Words dành cho .NET là gì?
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện thao tác tài liệu mạnh mẽ cho phép các nhà phát triển tạo, chỉnh sửa, chuyển đổi và hiển thị tài liệu Word theo chương trình.
 
-Trả lời: Tính năng "Loại điều khiển ưa thích" cho phép bạn chỉ định loại điều khiển ưa thích để thể hiện các phần tử HTML khi tải tài liệu HTML. Nó giúp chọn loại điều khiển thích hợp để thể hiện và xử lý nội dung HTML tốt hơn.
+### Tôi có thể sử dụng các loại điều khiển HTML khác với Aspose.Words cho .NET không?
+Có, Aspose.Words for .NET hỗ trợ nhiều loại điều khiển HTML khác nhau. Bạn có thể tùy chỉnh cách hiển thị các điều khiển khác nhau trong tài liệu Word.
 
-#### Câu hỏi: Làm cách nào để đặt loại điều khiển ưa thích khi tải tài liệu HTML?
+### Làm cách nào để xử lý nội dung HTML phức tạp trong Aspose.Words cho .NET?
+ Aspose.Words for .NET cung cấp hỗ trợ toàn diện cho HTML, bao gồm các phần tử phức tạp. Đảm bảo bạn định cấu hình`HtmlLoadOptions`một cách thích hợp để xử lý nội dung HTML cụ thể của bạn.
 
- Trả lời: Để đặt loại điều khiển ưa thích, bạn cần tạo một`HtmlLoadOptions` đối tượng và thiết lập nó`PreferredControlType` tài sản theo ý muốn`HtmlControlType` . Trong ví dụ được cung cấp,`HtmlControlType.StructuredDocumentTag` Được sử dụng.
+### Tôi có thể tìm thêm ví dụ và tài liệu ở đâu?
+ Bạn có thể tìm thấy tài liệu chi tiết và ví dụ trên[Trang tài liệu Aspose.Words cho .NET](https://reference.aspose.com/words/net/).
 
-#### Câu hỏi: Tầm quan trọng của việc sử dụng Thẻ tài liệu có cấu trúc (SDT) làm loại điều khiển ưu tiên là gì?
-
-Đáp: Thẻ tài liệu có cấu trúc (SDT) là các thành phần dựa trên XML có thể được sử dụng để thể hiện nội dung và điều khiển phức tạp trong tài liệu Word. Việc sử dụng SDT làm loại điều khiển ưu tiên có thể mang lại khả năng tương thích và trình bày nội dung HTML tốt hơn.
-
-#### Câu hỏi: Làm cách nào tôi có thể đảm bảo rằng Aspose.Words sử dụng loại điều khiển ưa thích khi tải tài liệu HTML?
-
- A: Bằng cách thiết lập`PreferredControlType`tài sản để`HtmlControlType.StructuredDocumentTag`như được hiển thị trong mã nguồn ví dụ, Aspose.Words sẽ sử dụng SDT để thể hiện các phần tử HTML khi tải tài liệu.
-
-#### Câu hỏi: Tôi có thể sử dụng các loại điều khiển khác làm tùy chọn ưu tiên không?
-
- Đ: Vâng, ngoài`HtmlControlType.StructuredDocumentTag` , Aspose.Words for .NET hỗ trợ các loại điều khiển khác như`HtmlControlType.ContentControl`Và`HtmlControlType.CustomXmlMarkup`.
+### Có bản dùng thử miễn phí dành cho Aspose.Words cho .NET không?
+ Có, bạn có thể tải xuống bản dùng thử miễn phí từ[trang web giả định](https://releases.aspose.com/).

@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-tables/finding-index/
 ---
 
-W tym samouczku dowiemy się, jak używać Aspose.Words dla .NET do znajdowania indeksów tabeli, wiersza i komórki w dokumencie programu Word. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł programowo znaleźć indeksy elementów tablicy w dokumentach programu Word.
+tym samouczku dowiemy się, jak używać Aspose.Words dla .NET do znajdowania indeksów tabeli, wiersza i komórki w dokumencie programu Word. Będziemy postępować zgodnie z przewodnikiem krok po kroku, aby zrozumieć kod i wdrożyć tę funkcję. Pod koniec tego samouczka będziesz mógł programowo znaleźć indeksy elementów tablicy w dokumentach programu Word.
 
 ## Krok 1: Konfiguracja projektu
 1. Uruchom program Visual Studio i utwórz nowy projekt C#.

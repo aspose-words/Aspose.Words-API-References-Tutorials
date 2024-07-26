@@ -11,13 +11,13 @@ url: /id/net/programming-with-sdt/rich-text-box-content-control/
 Tutorial ini menunjukkan cara membuat kontrol konten kotak teks kaya di dokumen Word menggunakan Aspose.Words untuk .NET. Kontrol konten kotak teks kaya memungkinkan pengguna memasukkan dan memformat teks dengan berbagai gaya dan opsi pemformatan.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
+Untuk mengikuti tutorial ini, Anda perlu memiliki yang berikut ini:
 
 - Aspose.Words untuk perpustakaan .NET diinstal.
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -57,7 +57,7 @@ doc.FirstSection.Body.AppendChild(sdtRichText);
 ```
 
 ## Langkah 6: Simpan Dokumen
- Simpan dokumen ke direktori yang ditentukan menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.RichTextBoxContentControl.docx".
+ Simpan dokumen ke direktori yang ditentukan menggunakan`Save`metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.RichTextBoxContentControl.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");

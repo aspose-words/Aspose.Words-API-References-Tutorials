@@ -146,7 +146,7 @@ pip install aspose-words
 
 ### Tôi có thể trích xuất nội dung cụ thể từ một tài liệu không?
 
-Vâng, bạn có thể. Xác định phạm vi nội dung bằng kỹ thuật điều hướng tài liệu, sau đó trích xuất nội dung mong muốn bằng phạm vi đã xác định.
+Có, bạn có thể. Xác định phạm vi nội dung bằng kỹ thuật điều hướng tài liệu, sau đó trích xuất nội dung mong muốn bằng phạm vi đã xác định.
 
 ### Có thể hợp nhất nhiều tài liệu bằng Aspose.Words cho Python không?
 

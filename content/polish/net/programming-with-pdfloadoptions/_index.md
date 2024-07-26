@@ -16,5 +16,5 @@ Dzięki tym samouczkom będziesz w stanie zoptymalizować proces ładowania plik
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Załaduj zaszyfrowany plik PDF](./load-encrypted-pdf/) | Przewodnik krok po kroku dotyczący ładowania zaszyfrowanego pliku PDF przy użyciu Aspose.Words dla .NET. |
-| [Załaduj zakres stron pliku PDF](./load-page-range-of-pdf/) | Przewodnik krok po kroku dotyczący ładowania określonego zakresu stron PDF za pomocą Aspose.Words dla .NET. |
+| [Załaduj zaszyfrowany plik PDF](./load-encrypted-pdf/) | Dowiedz się, jak ładować zaszyfrowane pliki PDF przy użyciu Aspose.Words dla .NET, korzystając z naszego samouczka krok po kroku. Opanuj szyfrowanie i deszyfrowanie plików PDF w mgnieniu oka. |
+| [Załaduj zakres stron pliku PDF](./load-page-range-of-pdf/) | Dowiedz się, jak załadować określone zakresy stron z pliku PDF przy użyciu Aspose.Words dla .NET w tym kompleksowym samouczku krok po kroku. Idealny dla programistów .NET. |

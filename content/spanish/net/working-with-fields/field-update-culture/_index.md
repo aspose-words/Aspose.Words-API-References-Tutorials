@@ -93,7 +93,7 @@ R: Aspose.Words admite diferentes culturas para actualizar campos. Puede especif
 
 #### P: ¿Es posible establecer una cultura específica para un campo individual en lugar de para todo el documento?
 
-R: Sí, es posible establecer una cultura específica para un campo individual en lugar de para todo el documento. En Aspose.Words, cada campo tiene una propiedad Formato que se puede usar para establecer la cultura de formato específica de ese campo. Esto le permite controlar cómo se muestra y actualiza este campo independientemente de otros campos en el documento.
+R: Sí, es posible establecer una cultura específica para un campo individual en lugar de para todo el documento. En Aspose.Words, cada campo tiene una propiedad Formato que se puede utilizar para establecer la cultura de formato específica de ese campo. Esto le permite controlar cómo se muestra y actualiza este campo independientemente de otros campos del documento.
 
 #### P: ¿Cómo puedo comprobar la cultura de actualización de campos actualmente definida en un documento de Word?
 

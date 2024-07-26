@@ -31,7 +31,7 @@ import com.aspose.words.Document;
 Document doc = new Document("path/to/Document.docx");
 ```
 
- Mindenképpen cserélje ki`"path/to/Document.docx"` a forrásdokumentum tényleges elérési útjával.
+ Ügyeljen arra, hogy cserélje ki`"path/to/Document.docx"` a forrásdokumentum tényleges elérési útjával.
 
 ## 2. lépés: Az RTF mentési opciók konfigurálása
 

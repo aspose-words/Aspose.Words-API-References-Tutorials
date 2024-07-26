@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Krok 2: Załaduj dokument i odzyskaj kontrolę zawartości
- Załaduj dokument Word za pomocą`Document` konstruktor, przekazując ścieżkę do dokumentu jako parametr. Pobierz żądaną kontrolę zawartości z dokumentu. W tym przykładzie zakładamy, że kontrola treści jest pierwszym strukturalnym znacznikiem dokumentu w dokumencie.
+ Załaduj dokument Word za pomocą`Document`konstruktor, przekazując ścieżkę do dokumentu jako parametr. Pobierz żądaną kontrolę zawartości z dokumentu. W tym przykładzie zakładamy, że kontrola treści jest pierwszym strukturalnym znacznikiem dokumentu w dokumencie.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

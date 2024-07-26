@@ -17,7 +17,7 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és Word dokumentumokkal végzett szövegszerkesztési alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3. lépés: Építsd meg az asztalt
- Használja a`StartTable`, `EndTable`, `InsertCell` , és`Write` módszerei a`DocumentBuilder`tárgyat építeni egy asztalt. Állítsa be a kívánt sormagasságot és magasságszabályt a gombbal`RowFormat` tulajdonságait.
+ Használja a`StartTable`, `EndTable`, `InsertCell` , és`Write` módszerei a`DocumentBuilder` tárgyat építeni egy asztalt. Állítsa be a kívánt sormagasságot és magasságszabályt a gombbal`RowFormat` tulajdonságait.
 
 ```csharp
 builder.StartTable();
@@ -86,7 +86,7 @@ builder.InsertNode(watermark);
 ```
 
 ## 7. lépés: Mentse el a dokumentumot
- Mentse a dokumentumot a megadott könyvtárba a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithShapes.LayoutInCell.docx" néven mentjük.
+ Mentse a dokumentumot a megadott könyvtárba a`Save`módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithShapes.LayoutInCell.docx" néven mentjük.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);

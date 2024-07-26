@@ -2,7 +2,7 @@
 title: Aspose.Words for Java'da İçindekiler Oluşturma
 linktitle: İçindekiler Oluşturuluyor
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak İçindekiler Tablosunu (TOC) nasıl oluşturacağınızı ve özelleştireceğinizi öğrenin. Zahmetsizce düzenli ve profesyonel belgeler oluşturun.
+description: Aspose.Words for Java'yı kullanarak İçindekiler Tablosunu (TOC) nasıl oluşturacağınızı ve özelleştireceğinizi öğrenin. Düzenli ve profesyonel belgeleri zahmetsizce oluşturun.
 type: docs
 weight: 21
 url: /tr/java/document-manipulation/generating-table-of-contents/

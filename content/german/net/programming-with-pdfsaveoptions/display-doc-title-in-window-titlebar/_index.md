@@ -2,81 +2,87 @@
 title: Dokumenttitel in der Fenstertitelleiste anzeigen
 linktitle: Dokumenttitel in der Fenstertitelleiste anzeigen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie beim Konvertieren in PDF mit Aspose.Words für .NET den Dokumenttitel in der Fenstertitelleiste anzeigen.
+description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET den Dokumenttitel in der Fenstertitelleiste Ihrer PDFs anzeigen.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titlebar/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie durch die Schritte zum Anzeigen des Dokumenttitels in der Fenstertitelleiste mit Aspose.Words für .NET. Mit dieser Funktion können Sie den Dokumenttitel in der Fenstertitelleiste anzeigen, wenn Sie das generierte PDF-Dokument öffnen. Befolgen Sie die folgenden Schritte:
+Sind Sie bereit, Ihren PDFs ein noch professionelleres Aussehen zu verleihen? Eine kleine, aber wirkungsvolle Änderung ist die Anzeige des Dokumenttitels in der Fenstertitelleiste. Das ist, als würden Sie Ihrem PDF ein Namensschild hinzufügen, das es sofort erkennbar macht. Heute werden wir uns damit befassen, wie Sie dies mit Aspose.Words für .NET erreichen können. Am Ende dieses Handbuchs werden Sie den Prozess kristallklar verstehen. Lassen Sie uns anfangen!
 
-## Schritt 1: Dokument einlegen
+## Voraussetzungen
 
-Beginnen Sie mit dem Hochladen des Dokuments, das Sie in PDF konvertieren möchten:
+Bevor wir mit den Schritten beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+
+-  Aspose.Words für .NET-Bibliothek: Sie können sie herunterladen[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Visual Studio oder eine andere kompatible IDE.
+- Grundkenntnisse in C#: Wir werden Code in C# schreiben.
+
+Stellen Sie sicher, dass Sie alles eingerichtet haben, und schon kann es losgehen!
+
+## Namespaces importieren
+
+Als Erstes müssen Sie die erforderlichen Namespaces importieren. Dies ist wichtig, da Sie dadurch auf die für unsere Aufgabe erforderlichen Klassen und Methoden zugreifen können.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Schritt 1: Laden Sie Ihr Dokument
+
+Der Vorgang beginnt mit dem Laden Ihres vorhandenen Word-Dokuments. Dieses Dokument wird in eine PDF-Datei konvertiert, wobei der Titel in der Titelleiste des Fensters angezeigt wird.
+
+```csharp
+// Der Pfad zum Dokumentverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Achten Sie darauf, den richtigen Pfad zu Ihrem Dokument anzugeben.
+ In diesem Schritt geben Sie den Pfad zu Ihrem Dokument an. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad, in dem Ihr Dokument gespeichert ist.
 
 ## Schritt 2: PDF-Speicheroptionen konfigurieren
 
-Erstellen Sie eine Instanz der Klasse PdfSaveOptions und aktivieren Sie die Anzeige des Dokumenttitels in der Fenstertitelleiste:
+Als nächstes müssen wir die Optionen zum Speichern des Dokuments als PDF festlegen. Hier legen wir fest, dass der Dokumenttitel in der Titelleiste des Fensters angezeigt werden soll.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { DisplayDocTitle = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    DisplayDocTitle = true
+};
 ```
 
-Diese Option aktiviert die Anzeige des Dokumenttitels in der Fenstertitelleiste bei der Konvertierung in PDF.
+ Indem man es einstellt`DisplayDocTitle` Zu`true`weisen wir Aspose.Words an, den Dokumenttitel in der Titelleiste des PDF-Fensters zu verwenden.
 
-## Schritt 3: Dokument in PDF konvertieren
+## Schritt 3: Speichern Sie das Dokument als PDF
 
- Verwenden Sie die`Save` Methode zum Konvertieren des Dokuments in PDF unter Angabe der Konvertierungsoptionen:
+Abschließend speichern wir das Dokument als PDF und wenden dabei die von uns konfigurierten Optionen an.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
 ```
 
-Stellen Sie sicher, dass Sie den richtigen Pfad zum Speichern der konvertierten PDF-Datei angeben.
+Diese Codezeile sorgt dafür, dass Ihr Dokument im PDF-Format gespeichert wird und der Titel in der Titelleiste angezeigt wird. Ersetzen Sie erneut`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Verzeichnispfad.
 
-### Beispielquellcode für „Dokumenttitel in Fenstertitelleiste anzeigen“ mit Aspose.Words für .NET
+## Abschluss
 
-Hier ist der vollständige Quellcode zum Anzeigen des Dokumenttitels in der Fenstertitelleiste in einem PDF-Dokument mit Aspose.Words für .NET:
+Und da haben Sie es! Mit nur wenigen Codezeilen haben Sie Ihr PDF erfolgreich so konfiguriert, dass der Dokumenttitel mithilfe von Aspose.Words für .NET in der Fenstertitelleiste angezeigt wird. Diese kleine Verbesserung kann dazu führen, dass Ihre PDFs eleganter und professioneller aussehen.
 
-```csharp
+## Häufig gestellte Fragen
 
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+### Kann ich mit Aspose.Words für .NET andere PDF-Optionen anpassen?
+Auf jeden Fall! Aspose.Words für .NET bietet eine breite Palette an Anpassungsoptionen zum Speichern von PDFs, einschließlich Sicherheitseinstellungen, Komprimierung und mehr.
 
-	PdfSaveOptions saveOptions = new PdfSaveOptions { DisplayDocTitle = true };
+### Was ist, wenn mein Dokument keinen Titel hat?
+Wenn Ihr Dokument keinen Titel hat, wird in der Titelleiste des Fensters kein Titel angezeigt. Stellen Sie sicher, dass Ihr Dokument einen Titel hat, bevor Sie es in PDF konvertieren.
 
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisplayDocTitleInWindowTitlebar.pdf", saveOptions);
-        
-```
-Wenn Sie diese Schritte befolgen, können Sie den Dokumenttitel bei der Konvertierung in PDF mit Aspose.Words für .NET problemlos in der Titelleiste des Fensters anzeigen.
+### Ist Aspose.Words für .NET mit allen Versionen von .NET kompatibel?
+Ja, Aspose.Words für .NET unterstützt eine Vielzahl von .NET-Frameworks und ist daher vielseitig für verschiedene Entwicklungsumgebungen einsetzbar.
 
-### Häufig gestellte Fragen
+### Kann ich Aspose.Words für .NET verwenden, um andere Dateiformate in PDF zu konvertieren?
+Ja, Sie können mit Aspose.Words für .NET verschiedene Dateiformate wie DOCX, RTF, HTML und mehr in PDF konvertieren.
 
-#### F: Was ist die Funktion „Dokumenttitel in der Fenstertitelleiste anzeigen“ mit Aspose.Words für .NET?
-Mit der Funktion „Dokumenttitel in Fenstertitelleiste anzeigen“ von Aspose.Words für .NET können Sie den Dokumenttitel in der Fenstertitelleiste anzeigen, wenn Sie das generierte PDF-Dokument öffnen. Dies erleichtert das Identifizieren und Unterscheiden von PDF-Dokumenten in Ihrer Leseumgebung.
-
-#### F: Wie kann ich diese Funktion mit Aspose.Words für .NET verwenden?
-Um diese Funktion mit Aspose.Words für .NET zu verwenden, gehen Sie folgendermaßen vor:
-
- Laden Sie das Dokument mit dem`Document` Methode und geben Sie den Pfad der in PDF zu konvertierenden Datei an.
-
- Konfigurieren Sie PDF-Speicheroptionen, indem Sie eine Instanz des`PdfSaveOptions` Klasse und Festlegen der`DisplayDocTitle`Eigentum an`true`. Dies ermöglicht die Anzeige des Dokumenttitels in der Fenstertitelleiste bei der Konvertierung in PDF.
-
- Verwenden Sie die`Save` Methode zum Konvertieren des Dokuments in PDF unter Angabe der Konvertierungsoptionen.
-
-#### F: Ändert diese Funktion den Inhalt des Dokuments selbst?
-Nein, diese Funktion verändert nicht den Inhalt des Dokuments selbst. Sie wirkt sich lediglich auf die Anzeige des Dokumenttitels in der Fenstertitelleiste aus, wenn das Dokument als PDF-Dokument geöffnet wird. Der Inhalt des Dokuments bleibt unverändert.
-
-#### F: Ist es möglich, den Titel des Dokuments anzupassen, der in der Titelleiste des Fensters angezeigt wird?
- Ja, Sie können den in der Titelleiste des Fensters angezeigten Dokumenttitel anpassen, indem Sie den`Document.Title` Eigenschaft des Dokuments, bevor Sie es in PDF konvertieren. Sie können den gewünschten Titel mithilfe einer Zeichenfolge festlegen. Stellen Sie sicher, dass Sie den Titel festlegen, bevor Sie den`Save` Methode zur Konvertierung in PDF.
-
-#### F: Welche anderen Ausgabeformate unterstützt Aspose.Words für die Dokumentkonvertierung?
-Aspose.Words für .NET unterstützt viele Ausgabeformate für die Dokumentkonvertierung, wie PDF, XPS, HTML, EPUB, MOBI, Bild (JPEG, PNG, BMP, TIFF, GIF) und viele mehr. Sie können das entsprechende Ausgabeformat entsprechend Ihren spezifischen Anforderungen auswählen.
+### Wie erhalte ich Unterstützung, wenn ich auf Probleme stoße?
+ Besuchen Sie die[Aspose.Words Support Forum](https://forum.aspose.com/c/words/8) für Unterstützung bei allen Problemen oder Fragen, die Sie möglicherweise haben.

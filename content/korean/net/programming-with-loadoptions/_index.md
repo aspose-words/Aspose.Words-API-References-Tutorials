@@ -14,13 +14,13 @@ url: /ko/net/programming-with-loadoptions/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [Word 문서에서 더티 필드 업데이트](./update-dirty-fields/) | .NET용 Aspose.Words로 더티 필드를 업데이트하여 Word 문서를 로드하는 방법을 알아보세요. |
-| [Word 문서에서 암호화된 로드](./load-encrypted-document/) | Aspose.Words for .NET을 사용하여 암호화된 Word 문서를 로드하고 저장하는 방법을 알아보세요. |
-| [도형을 Office 수학으로 변환](./convert-shape-to-office-math/) | .NET용 Aspose.Words를 사용하여 문서를 업로드할 때 도형을 Office 수학 공식으로 변환하는 방법을 알아보세요. |
-| [Ms Word 버전 설정](./set-ms-word-version/) | .NET용 Aspose.Words를 사용하여 특정 버전의 MS Word로 문서를 로드하는 방법을 알아보세요. |
-| [Word 문서에서 임시 폴더 사용](./use-temp-folder/) | Aspose.Words for .NET으로 문서를 업로드할 때 임시 폴더를 사용하는 방법을 알아보세요. |
-| [Word 문서의 경고 콜백](./warning-callback/) | .NET용 Aspose.Words의 콜백 기능을 사용하여 Word 문서를 로드할 때 경고를 처리하는 방법을 알아보세요. |
-| [Word 문서에서 인코딩을 사용하여 로드](./load-with-encoding/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 지정된 인코딩으로 문서를 로드하는 방법을 알아보세요. |
-| [PDF 이미지 건너뛰기](./skip-pdf-images/) | .NET용 Aspose.Words를 사용하여 PDF 이미지 로드를 건너뛰고 PDF 문서를 로드하는 방법을 알아보세요. |
-| [메타파일을 Png로 변환](./convert-metafiles-to-png/) | .NET용 Aspose.Words를 사용하여 문서를 업로드할 때 메타파일을 PNG 이미지로 변환하는 방법을 알아보세요. |
-| [Word 문서에 Chm 파일 로드](./load-chm/) | Aspose.Words for .NET을 사용하여 Word 문서에서 CHM 파일을 로드하는 방법을 알아보세요. |
+| [Word 문서에서 더티 필드 업데이트](./update-dirty-fields/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 더티 필드를 쉽게 업데이트하세요. |
+| [Word 문서에서 암호화된 로드](./load-encrypted-document/) | .NET용 Aspose.Words를 사용하여 암호화된 Word 문서를 로드하고 저장하는 방법을 알아보세요. 새로운 비밀번호로 문서를 쉽게 보호하세요. 단계별 가이드가 포함되어 있습니다. |
+| [도형을 Office 수학으로 변환](./convert-shape-to-office-math/) | 가이드와 함께 .NET용 Aspose.Words를 사용하여 Word 문서에서 도형을 Office Math로 변환하는 방법을 알아보세요. 손쉽게 문서 형식을 향상하세요. |
+| [Ms Word 버전 설정](./set-ms-word-version/) | 자세한 가이드를 통해 .NET용 Aspose.Words를 사용하여 MS Word 버전을 설정하는 방법을 알아보세요. 문서 조작을 간소화하려는 개발자에게 적합합니다. |
+| [Word 문서에서 임시 폴더 사용](./use-temp-folder/) | Aspose.Words로 Word 문서를 로드하는 동안 임시 폴더를 사용하여 .NET 애플리케이션의 성능을 향상시키는 방법을 알아보세요. |
+| [Word 문서의 경고 콜백](./warning-callback/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 경고를 포착하고 처리하는 방법을 알아보세요. 강력한 문서 처리를 보장합니다. |
+| [Word 문서에서 인코딩을 사용하여 로드](./load-with-encoding/) | .NET용 Aspose.Words를 사용하여 특정 인코딩으로 Word 문서를 로드하는 방법을 알아보세요. 자세한 설명이 포함된 단계별 가이드입니다. |
+| [PDF 이미지 건너뛰기](./skip-pdf-images/) | .NET용 Aspose.Words를 사용하여 PDF 문서를 로드할 때 이미지를 건너뛰는 방법을 알아보세요. 원활한 텍스트 추출을 위해 이 단계별 가이드를 따르세요. |
+| [메타파일을 Png로 변환](./convert-metafiles-to-png/) | 이 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 메타파일을 PNG로 쉽게 변환하세요. 문서 관리를 단순화하세요. |
+| [Word 문서에 Chm 파일 로드](./load-chm/) | 이 단계별 튜토리얼을 통해 .NET용 Aspose.Words를 사용하여 CHM 파일을 Word 문서에 쉽게 로드하세요. 기술 문서를 통합하는 데 적합합니다. |

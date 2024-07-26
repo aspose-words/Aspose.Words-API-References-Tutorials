@@ -17,7 +17,7 @@ Bu öğreticiyi takip etmek için aşağıdakilere sahip olmanız gerekir:
 - Temel C# ve XML bilgisi.
 
 ## 1. Adım: Belge Dizinini Ayarlayın
- Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
+ Belge dizininizin yolunu ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgeyi kaydetmek istediğiniz dizinin gerçek yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## 3. Adım: Belgeye bir StructuredDocumentTag (SDT) ekleyin
- Ekle`StructuredDocumentTag` İçerik kontrolü görevi görecek şekilde belgeye. Belirtin`SdtType` gibi`PlainText` ve`MarkupLevel` gibi`Block` Blok düzeyinde bir SDT oluşturmak için.
+ Ekle`StructuredDocumentTag`İçerik kontrolü görevi görecek şekilde belgeye. Belirtin`SdtType` gibi`PlainText` ve`MarkupLevel` gibi`Block` Blok düzeyinde bir SDT oluşturmak için.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

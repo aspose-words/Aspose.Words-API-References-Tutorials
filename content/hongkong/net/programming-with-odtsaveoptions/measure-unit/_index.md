@@ -2,66 +2,94 @@
 title: 測量單位
 linktitle: 測量單位
 second_title: Aspose.Words 文件處理 API
-description: 了解如何在使用 Aspose.Words for .NET 將 Word 文件轉換為 ODT 時指定度量單位。
+description: 了解如何在 Aspose.Words for .NET 中配置測量單位功能，以在 ODT 轉換期間保留文件格式。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-odtsaveoptions/measure-unit/
 ---
+## 介紹
 
-在 C# 應用程式中將 Word 文件轉換為 OpenDocument Text (ODT) 格式時，您可能需要指定用於可測量格式和內容屬性的測量單位。使用適用於 .NET 的 Aspose.Words 程式庫，您可以使用 OdtSaveOptions 儲存選項輕鬆指定此功能。在本逐步指南中，我們將引導您了解如何使用 Aspose.Words for .NET C# 原始程式碼透過使用 OdtSaveOptions 指定度量單位將 Word 文件轉換為 ODT。
+您是否曾經需要將 Word 文件轉換為不同的格式，但需要為佈局指定特定的測量單位？無論您處理的是英吋、公分還是磅，確保文件在轉換過程中保持完整性至關重要。在本教學中，我們將介紹如何在 Aspose.Words for .NET 中設定測量單位功能。這項強大的功能可確保您的文件格式在轉換為 ODT（開放文件文字）格式時完全按照您的需求保留。
 
-## 了解 Aspose.Words 函式庫
+## 先決條件
 
-在深入研究程式碼之前，了解 .NET 的 Aspose.Words 函式庫非常重要。 Aspose.Words 是一個功能強大的程式庫，可在包括.NET 在內的不同平台上建立、編輯、轉換和保護 Word 文件。它提供了許多用於操作文件的功能，例如插入文字、更改格式、添加部分等等。
+在深入研究程式碼之前，您需要先完成一些事情：
 
-## 載入Word文檔
+1. Aspose.Words for .NET：請確定您已安裝了最新版本的 Aspose.Words for .NET。如果您還沒有，您可以從以下位置下載[這裡](https://releases.aspose.com/words/net/).
+2. 開發環境：像 Visual Studio 這樣的 IDE，用於編寫和執行 C# 程式碼。
+3. C# 基礎知識：了解 C# 基礎知識將幫助您遵循本教學。
+4. Word 文件：準備好可用於轉換的範例 Word 文件。
 
-第一步是載入要轉換為 ODT 的 Word 文件。使用 Document 類別從來源檔案載入文件。這是一個例子：
+## 導入命名空間
 
-```csharp
-Document doc = new Document(dataDir + "Document.docx");
-```
-
-在此範例中，我們載入位於文件目錄中的文件「Document.docx」。
-
-## 配置備份選項
-
-下一步是配置轉換為 ODT 的備份選項。使用 OdtSaveOptions 類別並將 MeasureUnit 屬性設定為所需的值。例如，如果要使用英吋作為測量單位，請將 MeasureUnit 設定為 OdtSaveMeasureUnit.Inches。操作方法如下：
+在開始編碼之前，讓我們確保導入了必要的命名空間。在程式碼檔案的頂部加入這些 using 指令：
 
 ```csharp
-OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-我們建立一個新的 OdtSaveOptions 物件並將 MeasureUnit 屬性設定為所需的值，在我們的範例中，OdtSaveMeasureUnit.Inches 使用英吋作為測量單位。
+## 第 1 步：設定您的文件目錄
 
-## 將文件轉換為 ODT
-
-現在我們已經配置了儲存選項，我們可以繼續將文件轉換為 ODT。使用 Document 類別的 Save 方法透過指定儲存選項以 ODT 格式儲存轉換後的文件。這是一個例子：
-
-```csharp
-doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
-```
-
-在此範例中，我們使用指定的儲存選項將轉換後的文件儲存為「WorkingWithOdtSaveOptions.MeasureUnit.odt」。
-
-### 使用 Aspose.Words for .NET 的具有「測量單位」功能的 OdtSaveOptions 範例原始碼
-
-
+首先，您需要定義文檔目錄的路徑。這是您的 Word 文件所在的位置以及轉換後的文件將保存的位置。
 
 ```csharp
 //文檔目錄的路徑
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+代替`"YOUR DOCUMENTS DIRECTORY"`與目錄的實際路徑。這可確保您的程式碼知道在哪裡可以找到您的 Word 文件。
+
+## 步驟2：載入Word文檔
+
+接下來，您需要載入要轉換的Word文件。這是使用以下方法完成的`Document`來自 Aspose.Words 的類別。
+
+```csharp
 //載入Word文檔
 Document doc = new Document(dataDir + "Document.docx");
+```
 
+確保名為「Document.docx」的 Word 文件存在於指定目錄中。
+
+## 步驟 3：配置測量單位
+
+現在，讓我們來設定 ODT 轉換的測量單位。這就是奇蹟發生的地方。我們將設定`OdtSaveOptions`使用英吋作為測量單位。
+
+```csharp
 //使用“測量單位”功能配置備份選項
 OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
+```
 
+在此範例中，我們將測量單位設為英吋。您也可以選擇其他單位，例如`OdtSaveMeasureUnit.Centimeters`或者`OdtSaveMeasureUnit.Points`根據您的要求。
+
+## 步驟 4：將文件轉換為 ODT
+
+最後，我們將使用配置的Word文檔轉換為ODT格式`OdtSaveOptions`.
+
+```csharp
 //將文件轉換為 ODT
 doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
+此行程式碼將轉換後的文件保存在指定的目錄中，並套用新的度量單位。
+
 ## 結論
 
-在本指南中，我們解釋瞭如何透過使用適用於 .NET 的 Aspose.Words 函式庫的 OdtSaveOptions 儲存選項指定測量單位，將 Word 文件轉換為 ODT。透過遵循提供的步驟並使用提供的 C# 原始程式碼，您可以輕鬆地在 C# 應用程式中應用此功能。轉換為 ODT 時指定測量單位可讓您根據特定需求控制產生文件的格式和尺寸。
+現在你就擁有了！透過執行下列步驟，您可以輕鬆設定 Aspose.Words for .NET 中的測量單位功能，以確保在轉換過程中保留文件的佈局。無論您使用的是英吋、公分還是點，本教學向您展示如何輕鬆控製文件的格式。
+
+## 常見問題解答
+
+### 什麼是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一個功能強大的程式庫，用於以程式設計方式處理 Word 文件。它允許開發人員創建、修改、轉換和處理 Word 文檔，而無需使用 Microsoft Word。
+
+### 除了英吋之外，我還可以使用其他測量單位嗎？
+是的，Aspose.Words for .NET 支援其他測量單位，例如公分和點。您可以使用指定所需的單位`OdtSaveMeasureUnit`枚舉。
+
+### Aspose.Words for .NET 有沒有免費試用版？
+是的，您可以從以下位置下載 Aspose.Words for .NET 的免費試用版：[這裡](https://releases.aspose.com/).
+
+### 在哪裡可以找到 Aspose.Words for .NET 的文檔？
+您可以存取 Aspose.Words for .NET 的綜合文件：[這個連結](https://reference.aspose.com/words/net/).
+
+### 如何獲得 Aspose.Words for .NET 支援？
+如需支持，您可以造訪 Aspose.Words 論壇：[這個連結](https://forum.aspose.com/c/words/8).

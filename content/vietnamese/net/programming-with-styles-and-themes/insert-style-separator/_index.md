@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Ở bước này chúng ta tạo mới`Document` đối tượng và một liên kết`DocumentBuilder` sự vật.
+ Ở bước này chúng ta tạo mới`Document` đối tượng và một liên kết`DocumentBuilder` sự vật.
 
 ## Bước 3: Tạo và định cấu hình kiểu tùy chỉnh
 
@@ -98,7 +98,7 @@ Hãy nhớ lưu tài liệu của bạn sau khi chèn dấu phân cách kiểu.
 
 #### Làm cách nào để tạo và định cấu hình kiểu tùy chỉnh?
 
- Để tạo một kiểu tùy chỉnh, bạn có thể sử dụng`Styles.Add` phương pháp của`Document` sự vật. Chỉ định loại kiểu (ví dụ:`StyleType.Paragraph`) và cung cấp tên cho kiểu đó. Sau khi tạo, bạn có thể sửa đổi các thuộc tính phông chữ của đối tượng kiểu để định cấu hình giao diện của nó.
+ Để tạo một kiểu tùy chỉnh, bạn có thể sử dụng`Styles.Add` phương pháp của`Document` sự vật. Chỉ định loại kiểu (ví dụ:`StyleType.Paragraph`và cung cấp tên cho kiểu đó. Sau khi tạo, bạn có thể sửa đổi các thuộc tính phông chữ của đối tượng kiểu để định cấu hình giao diện của nó.
 
 #### Làm cách nào để chèn dấu phân cách kiểu?
 
@@ -106,7 +106,7 @@ Hãy nhớ lưu tài liệu của bạn sau khi chèn dấu phân cách kiểu.
 
 #### Làm cách nào để áp dụng các kiểu khác nhau cho các phần khác nhau của văn bản?
 
-Bạn có thể áp dụng các kiểu khác nhau cho các phần khác nhau của văn bản bằng cách đặt`ParagraphFormat.StyleName` tài sản của`DocumentBuilder` sự vật. Trước khi viết văn bản, bạn có thể đặt tên kiểu theo kiểu mong muốn và văn bản theo sau sẽ được định dạng tương ứng.
+ Bạn có thể áp dụng các kiểu khác nhau cho các phần khác nhau của văn bản bằng cách đặt`ParagraphFormat.StyleName` tài sản của`DocumentBuilder` sự vật. Trước khi viết văn bản, bạn có thể đặt tên kiểu theo kiểu mong muốn và văn bản theo sau sẽ được định dạng tương ứng.
 
 #### Tôi có thể lưu tài liệu ở các định dạng khác nhau không?
 

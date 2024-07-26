@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-styles-and-themes/copy-styles/
 ---
 
-tym samouczku przyjrzymy się dostarczonemu kodowi źródłowemu C#, aby skopiować style dokumentu Word z dokumentu źródłowego do dokumentu docelowego za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia przenoszenie stylów z jednego dokumentu do drugiego, co może być przydatne, gdy chcesz zastosować spójne style w wielu dokumentach.
+W tym samouczku przyjrzymy się dostarczonemu kodowi źródłowemu C#, aby skopiować style dokumentu Word z dokumentu źródłowego do dokumentu docelowego za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia przenoszenie stylów z jednego dokumentu do drugiego, co może być przydatne, gdy chcesz zastosować spójne style w wielu dokumentach.
 
 ## Krok 1: Konfigurowanie środowiska
 

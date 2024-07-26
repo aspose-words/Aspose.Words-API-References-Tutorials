@@ -16,8 +16,8 @@ Word'ün eski sürümleriyle uyumlu belgeler oluşturmak, görüntüleri sıkı�
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Docx'i Şifreyle Şifrele](./encrypt-docx-with-password/) | Aspose.Words for .NET kullanarak DOCX dosyasını parolayla nasıl şifreleyeceğinizi öğrenin. Belge güvenliği için eğitimi tamamlayın. |
-| [Ooxml Uyumluluğu Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Belgeleri Aspose.Words for .NET ile kaydederken Ooxml Iso 29500_2008_Strict uyumluluğunun nasıl sağlanacağını öğrenin. |
-| [Son Kaydedilen Zaman Özelliğini Güncelle](./update-last-saved-time-property/) | Aspose.Words for .NET ile bir belgeyi kaydederken Son Kaydedilen Zaman özelliğini otomatik olarak nasıl güncelleyeceğinizi öğrenin. |
-| [Eski Kontrol Karakterlerini Koruyun](./keep-legacy-control-chars/) | Aspose.Words for .NET ile bir belgeyi kaydederken eski kontrol karakterlerini nasıl koruyacağınızı öğrenin. |
-| [Sıkıştırma Düzeyini Ayarla](./set-compression-level/) | Aspose.Words for .NET ile bir belgeyi kaydederken sıkıştırma düzeyini nasıl ayarlayacağınızı öğrenin. |
+| [Docx'i Şifreyle Şifrele](./encrypt-docx-with-password/) | Aspose.Words for .NET kullanarak Word belgelerinizi bir parolayla şifreleyerek güvence altına alın. Hassas bilgilerinizi korumak için adım adım kılavuzumuzu izleyin. |
+| [Ooxml Uyumluluğu Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak OOXML uyumluluğunun ISO 29500_2008_Strict ile nasıl sağlanacağını öğrenin. |
+| [Son Kaydedilen Zaman Özelliğini Güncelle](./update-last-saved-time-property/) | Aspose.Words for .NET kullanarak Word belgelerinde son kaydedilen zaman özelliğini nasıl güncelleyeceğinizi öğrenin. Ayrıntılı, adım adım kılavuzumuzu takip edin. |
+| [Eski Kontrol Karakterlerini Koruyun](./keep-legacy-control-chars/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki eski kontrol karakterlerini nasıl koruyacağınızı öğrenin. |
+| [Sıkıştırma Düzeyini Ayarla](./set-compression-level/) | Aspose.Words for .NET kullanarak Word belgelerinde sıkıştırma düzeyini nasıl ayarlayacağınızı öğrenin. Belge depolama alanınızı ve performansınızı optimize etmek için adım adım kılavuzumuzu izleyin. |

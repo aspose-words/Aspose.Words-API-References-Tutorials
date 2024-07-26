@@ -41,7 +41,7 @@ Innan vi kan manipulera ditt dokument måste vi definiera var det finns. Detta �
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till din dokumentmapp. Det är här din Word-fil finns.
+ Byta ut`"YOUR DOCUMENT DIRECTORY"`med sökvägen till din dokumentmapp. Det är här din Word-fil finns.
 
 ## Steg 2: Ladda dokumentet
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Slutsats
 
-Och där har du det! Att ta bort en innehållsförteckning från ett Word-dokument med Aspose.Words för .NET är enkelt när du delar upp det i dessa enkla steg. Detta kraftfulla bibliotek hjälper inte bara till med att ta bort innehållsförteckningar utan kan också hantera en myriad av andra dokumentmanipulationer. Så fortsätt och prova!
+Och där har du det! Att ta bort en innehållsförteckning från ett Word-dokument med Aspose.Words för .NET är enkelt när du delar upp det i dessa enkla steg. Detta kraftfulla bibliotek hjälper inte bara till med att ta bort innehållsförteckningar utan kan också hantera en myriad av andra dokumentmanipulationer. Så varsågod och prova!
 
 ## Vanliga frågor
 

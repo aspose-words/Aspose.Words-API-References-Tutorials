@@ -20,7 +20,7 @@ Innan vi börjar, se till att du har följande förutsättningar:
 - Java Development Kit (JDK) installerat på ditt system
 - Grundläggande kunskaper i Java-programmering
 
-## Steg 1: Kataloginställning
+## Steg 1: Directory Setup
 
 Först måste vi skapa de nödvändiga katalogerna för att organisera våra filer effektivt. Vi skapar kataloger för olika dokumenttyper.
 

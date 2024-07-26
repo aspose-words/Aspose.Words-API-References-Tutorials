@@ -13,5 +13,5 @@ url: /zh/net/programming-with-markdownsaveoptions/
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [导出到 Markdown 并对齐表格内容](./export-into-markdown-with-table-content-alignment/) | 了解如何使用 Aspose.Words for .NET 将具有不同对齐方式的表格内容导出到 Markdown 文件。 |
-| [设置图像文件夹](./set-images-folder/) | 了解如何在使用 Aspose.Words for .NET 导出到 Markdown 时设置图像文件夹。自定义图像的位置以实现更好的组织和集成。|
+| [导出到 Markdown 并对齐表格内容](./export-into-markdown-with-table-content-alignment/) | 了解如何使用 Aspose.Words for .NET 将 Word 文档导出为带有对齐表格的 Markdown。按照我们的分步指南制作完美的 Markdown 表格。 |
+| [设置图像文件夹](./set-images-folder/) | 使用 Aspose.Words for .NET 将 Word 文档转换为具有正确表格对齐的 Markdown。按照我们的详细指南可获得完美结果。 |

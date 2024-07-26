@@ -21,7 +21,7 @@ Um Words Processing mit der Tabelle und den Zellen zu starten, müssen wir ein n
 // Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Erstellen Sie das Dokument und initialisieren Sie den Dokumentgenerator
+//Erstellen Sie das Dokument und initialisieren Sie den Dokumentgenerator
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

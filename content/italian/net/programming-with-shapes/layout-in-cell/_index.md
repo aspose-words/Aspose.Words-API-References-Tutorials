@@ -17,7 +17,7 @@ Per seguire questo tutorial, è necessario disporre di quanto segue:
 - Conoscenza base di C# ed elaborazione testi con documenti Word.
 
 ## Passaggio 1: impostare la directory dei documenti
- Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"`con il percorso effettivo della directory in cui desideri salvare il documento.
+ Inizia impostando il percorso della directory dei documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory in cui desideri salvare il documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Passaggio 3: costruisci la tabella
- Usa il`StartTable`, `EndTable`, `InsertCell` , E`Write` metodi del`DocumentBuilder`oggetto per costruire una tabella. Imposta l'altezza della riga desiderata e la regola dell'altezza utilizzando`RowFormat` proprietà.
+ Usa il`StartTable`, `EndTable`, `InsertCell` , E`Write` metodi del`DocumentBuilder` oggetto per costruire una tabella. Imposta l'altezza della riga desiderata e la regola dell'altezza utilizzando`RowFormat` proprietà.
 
 ```csharp
 builder.StartTable();
@@ -86,7 +86,7 @@ builder.InsertNode(watermark);
 ```
 
 ## Passaggio 7: salva il documento
- Salvare il documento nella directory specificata utilizzando il file`Save` metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithShapes.LayoutInCell.docx".
+ Salvare il documento nella directory specificata utilizzando il file`Save`metodo. Fornire il nome file desiderato con l'estensione file appropriata. In questo esempio, salviamo il documento come "WorkingWithShapes.LayoutInCell.docx".
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);

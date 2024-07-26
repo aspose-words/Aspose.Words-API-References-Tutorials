@@ -2,95 +2,97 @@
 title: Reduzca el tamaño del archivo PDF al no incrustar fuentes principales
 linktitle: Reduzca el tamaño del archivo PDF al no incrustar fuentes principales
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo reducir el tamaño del archivo PDF sin incorporar fuentes principales al convertir documentos de Word a PDF con Aspose.Words para .NET.
+description: Aprenda cómo reducir el tamaño del archivo PDF al no incorporar fuentes principales usando Aspose.Words para .NET. Siga nuestra guía paso a paso para optimizar sus archivos PDF.
 type: docs
 weight: 10
 url: /es/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
+## Introducción
 
-En este tutorial, lo guiaremos a través de los pasos para reducir el tamaño del archivo PDF al no incorporar fuentes principales con Aspose.Words para .NET. Esta función le permite controlar si las fuentes básicas como Arial, Times New Roman, etc. deben incrustarse en el PDF al convertir un documento de Word. Siga los pasos a continuación:
+¿Alguna vez te has rascado la cabeza preguntándote por qué tus archivos PDF son tan grandes? Bueno, no estás solo. Un culpable común es la incorporación de fuentes básicas como Arial y Times New Roman. Afortunadamente, Aspose.Words para .NET tiene una manera ingeniosa de abordar este problema. En este tutorial, le mostraré cómo reducir el tamaño de su archivo PDF evitando la incrustación de estas fuentes principales. ¡Vamos a sumergirnos de lleno!
 
-## Paso 1: cargar el documento
+## Requisitos previos
 
-Comience cargando el documento de Word que desea convertir a PDF:
+Antes de embarcarnos en este emocionante viaje, asegurémonos de que tiene todo lo que necesita. Aquí hay una lista de verificación rápida:
+
+-  Aspose.Words para .NET: asegúrese de tener instalado Aspose.Words para .NET. Si aún no lo tienes, puedes descargarlo.[aquí](https://releases.aspose.com/words/net/).
+- Entorno de desarrollo: necesitará un entorno de desarrollo como Visual Studio.
+- Un documento de Word: usaremos un documento de Word (por ejemplo, "Rendering.docx") para este tutorial.
+- Conocimientos básicos de C#: una comprensión básica de C# le ayudará a seguir adelante.
+
+Muy bien, ahora que estamos listos, ¡entremos en el meollo de la cuestión!
+
+## Importar espacios de nombres
+
+Primero lo primero, importemos los espacios de nombres necesarios. Este paso garantiza que tengamos acceso a todas las funcionalidades de Aspose.Words que necesitamos.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Paso 1: Inicialice su directorio de documentos
+
+Antes de comenzar a manipular nuestro documento, debemos especificar el directorio donde están almacenados nuestros documentos. Esto es esencial para acceder a los archivos.
+
+```csharp
+// La ruta al directorio de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde se encuentra su documento de Word.
+
+## Paso 2: cargue el documento de Word
+
+A continuación, debemos cargar el documento de Word que queremos convertir a PDF. En este ejemplo, utilizamos un documento llamado "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Asegúrese de especificar la ruta correcta a su documento de Word.
+Esta línea de código carga el documento en la memoria, listo para su posterior procesamiento.
 
-## Paso 2: configurar las opciones de conversión de PDF
+## Paso 3: configurar las opciones de guardar PDF
 
-Cree una instancia de la clase PdfSaveOptions y habilite la función básica para evitar la incrustación de fuentes:
+¡Ahora viene la parte mágica! Configuraremos las opciones de guardado de PDF para evitar incrustar fuentes principales. Este es el paso clave que ayuda a reducir el tamaño del archivo PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    UseCoreFonts = true
+};
 ```
 
-Esta opción controla si las fuentes base deben incrustarse en el PDF o no.
+ Configuración`UseCoreFonts` a`true` garantiza que las fuentes principales como Arial y Times New Roman no estén incrustadas en el PDF, lo que reduce significativamente el tamaño del archivo.
 
-## Paso 3: convertir documento a PDF
+## Paso 4: guarde el documento como PDF
 
- Utilizar el`Save` Método para convertir el documento de Word a PDF especificando opciones de conversión:
+Finalmente guardamos el documento de Word como PDF usando las opciones de guardado configuradas. Este paso genera el archivo PDF sin incrustar las fuentes principales.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Asegúrese de especificar la ruta correcta para guardar el PDF convertido.
-
-### Código fuente de ejemplo para evitar incrustar fuentes principales usando Aspose.Words para .NET
-
-Aquí está el código fuente completo para usar la función y evitar la incrustación de fuentes principales con Aspose.Words para .NET:
-
-```csharp
-
-	// La ruta al directorio de documentos.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// El PDF de salida no incluirá fuentes principales como Arial, Times New Roman, etc.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UseCoreFonts = true };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
-
-```
-
-Si sigue estos pasos, podrá controlar fácilmente si las fuentes base deben incrustarse en el PDF al convertir un documento de Word con Aspose.Words para .NET.
-
+¡Y ahí lo tienes! Su archivo PDF ahora se guarda en el directorio especificado sin esas voluminosas fuentes principales.
 
 ## Conclusión
 
-En este tutorial, explicamos cómo reducir el tamaño de un archivo PDF al no incorporar fuentes básicas con Aspose.Words para .NET. Esta función le permite controlar si las fuentes base deben incrustarse en el PDF al convertir un documento de Word. Si sigue los pasos descritos, puede controlar fácilmente la incrustación o no incrustación de fuentes básicas, lo que puede ayudar a reducir el tamaño del archivo PDF y garantizar una mejor compatibilidad y una apariencia consistente del documento en diferentes dispositivos y plataformas. No olvide considerar las consecuencias de no incrustar fuentes base y experimentar para asegurarse de que el documento se muestre como se esperaba.
+Reducir el tamaño del archivo PDF puede ser muy sencillo con Aspose.Words para .NET. Al evitar la incrustación de fuentes principales, puede reducir significativamente el tamaño del archivo, lo que facilita compartir y almacenar sus documentos. Espero que este tutorial haya sido útil y le haya dado una comprensión clara del proceso. Recuerde, ¡pequeños ajustes pueden marcar una gran diferencia!
 
-### Preguntas frecuentes
+## Preguntas frecuentes
 
-#### P: ¿Cuál es la opción de no incrustar fuentes base en un archivo PDF y por qué es importante?
-R: La opción de no incrustar fuentes base en un archivo PDF controla si las fuentes base como Arial, Times New Roman, etc. deben incrustarse en el PDF al convertir un documento de Word. Esto puede ser importante para reducir el tamaño del archivo PDF evitando incluir fuentes comúnmente disponibles en los sistemas de lectura de PDF. También puede ayudar a garantizar una mejor compatibilidad y una apariencia consistente del documento PDF en diferentes dispositivos y plataformas.
+### ¿Por qué debería evitar incrustar fuentes principales en archivos PDF?
+Evitar incrustar fuentes principales reduce el tamaño del archivo, lo que facilita compartirlo y almacenarlo.
 
-#### P: ¿Cómo puedo configurar Aspose.Words para .NET para que no incruste fuentes base en un archivo PDF?
-R: Para configurar Aspose.Words para .NET para que no incruste fuentes principales en un archivo PDF, siga estos pasos:
+### ¿Puedo seguir viendo el PDF correctamente sin las fuentes principales integradas?
+Sí, las fuentes principales como Arial y Times New Roman generalmente están disponibles en la mayoría de los sistemas.
 
- Establezca la ruta del directorio donde se encuentran sus documentos reemplazando`"YOUR DOCUMENTS DIRECTORY"` con la ruta real de su directorio de documentos.
+### ¿Qué pasa si necesito incrustar fuentes personalizadas?
+ Puedes personalizar el`PdfSaveOptions`para incrustar fuentes específicas según sea necesario.
 
- Cargue el documento de Word que desea convertir a PDF usando el`Document` clase y la ruta del documento especificada.
+### ¿Aspose.Words para .NET es de uso gratuito?
+ Aspose.Words para .NET requiere una licencia. Puedes obtener una prueba gratuita[aquí](https://releases.aspose.com/).
 
- Crear una instancia del`PdfSaveOptions` clase y establecer el`UseCoreFonts`propiedad a`true`. Esto evitará la incrustación de fuentes base en el archivo PDF generado.
-
- Utilizar el`Save` método de la`Document` objeto para guardar el documento en formato PDF especificando las opciones de conversión configuradas anteriormente.
-
-#### P: ¿Cuáles son los beneficios de no incrustar fuentes base en un archivo PDF?
-R: Los beneficios de no incrustar fuentes base en un archivo PDF son:
-
-Reducción del tamaño del archivo PDF: al evitar incrustar fuentes comúnmente disponibles como Arial, Times New Roman, etc., se puede reducir el tamaño del archivo PDF, lo que facilita almacenar, compartir y transferir archivos.
-
-Mejor compatibilidad: al utilizar fuentes básicas comúnmente disponibles en los sistemas lectores de PDF, garantiza una mejor compatibilidad y apariencia del documento en diferentes dispositivos y plataformas.
-
-#### P: ¿Cuáles son las consecuencias de no incrustar fuentes base en un archivo PDF?
-R: Las consecuencias de no incrustar fuentes base en un archivo PDF son las siguientes:
-
-Apariencia diferente: si las fuentes base no están disponibles en el sistema donde se abre el PDF, se utilizarán fuentes sustitutas, lo que puede dar como resultado una apariencia diferente a la prevista.
-
-Problemas de legibilidad: las fuentes sustitutas utilizadas pueden no ser tan legibles como las fuentes originales, lo que puede afectar la legibilidad del documento.
+### ¿Dónde puedo encontrar más documentación sobre Aspose.Words para .NET?
+ Puedes encontrar documentación detallada.[aquí](https://reference.aspose.com/words/net/).

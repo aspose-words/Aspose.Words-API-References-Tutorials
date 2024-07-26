@@ -21,7 +21,7 @@ url: /hi/net/programming-with-tables/formatted-table/
 // आपके दस्तावेज़ निर्देशिका का पथ
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// दस्तावेज़ बनाएँ और दस्तावेज़ जनरेटर आरंभ करें
+//दस्तावेज़ बनाएँ और दस्तावेज़ जनरेटर आरंभ करें
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

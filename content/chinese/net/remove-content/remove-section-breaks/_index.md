@@ -2,7 +2,7 @@
 title: 删除 Word 文档中的分节符
 linktitle: 删除 Word 文档中的分节符
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用适用于 .NET 的 Aspose.Words 库删除 Word 文档中的分节符。有效消除可能破坏文档格式的分节符。
+description: 了解如何使用 .NET 的 Aspose.Words 库删除 Word 文档中的分节符。有效消除可能破坏文档格式的分节符。
 type: docs
 weight: 10
 url: /zh/net/remove-content/remove-section-breaks/
@@ -100,7 +100,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 #### 问：如何使用 Aspose.Words 删除文档中的分节符？
 
-答：要删除分节符，您需要反向浏览文档的各个部分，从倒数第二部分开始，然后移至第一部分。在循环内部，您需要将每个部分的内容添加到最后一部分的开头，然后删除复制的部分。以下是示例代码：
+答：要删除分节符，您需要反向浏览文档的各个部分，从倒数第二节开始，然后移至第一节。在循环内部，您需要将每个部分的内容添加到最后一节的开头，然后删除复制的部分。以下是示例代码：
 
 ```csharp
 //从倒数第二节开始循环浏览所有节，然后移至第一节。

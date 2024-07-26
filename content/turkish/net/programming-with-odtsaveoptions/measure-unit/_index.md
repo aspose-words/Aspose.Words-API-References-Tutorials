@@ -2,66 +2,94 @@
 title: Ölçü birimi
 linktitle: Ölçü birimi
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesini ODT'ye dönüştürürken ölçü birimini nasıl belirleyeceğinizi öğrenin.
+description: ODT dönüşümü sırasında belge formatını korumak için Aspose.Words for .NET'te ölçü birimi özelliğini nasıl yapılandıracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-odtsaveoptions/measure-unit/
 ---
+## giriiş
 
-Bir Word belgesini C# uygulamasında OpenDocument Metni (ODT) biçimine dönüştürdüğünüzde ölçülebilir biçimlendirme ve içerik özellikleri için kullanılan ölçü birimini belirtmek isteyebilirsiniz. .NET için Aspose.Words kütüphanesiyle, OdtSaveOptions kaydetme seçeneklerini kullanarak bu işlevselliği kolayca belirleyebilirsiniz. Bu adım adım kılavuzda, OdtSaveOptions'ı kullanarak ölçü birimini belirterek bir Word belgesini ODT'ye dönüştürmek için Aspose.Words for .NET C# kaynak kodunu nasıl kullanacağınız konusunda size yol göstereceğiz.
+Hiç Word belgelerinizi farklı formatlara dönüştürmek zorunda kaldınız mı, ancak düzeniniz için belirli bir ölçü birimine ihtiyaç duydunuz mu? İster inç, ister santimetre veya noktalarla ilgileniyor olun, dönüştürme işlemi sırasında belgenizin bütünlüğünü korumasını sağlamak çok önemlidir. Bu eğitimde Aspose.Words for .NET'te ölçü birimi özelliğinin nasıl yapılandırılacağını anlatacağız. Bu güçlü özellik, ODT (Açık Belge Metni) biçimine dönüştürürken belgenizin biçimlendirmesinin tam olarak ihtiyaç duyduğunuz şekilde korunmasını sağlar.
 
-## Aspose.Words kütüphanesini anlama
+## Önkoşullar
 
-Koda dalmadan önce .NET için Aspose.Words kütüphanesini anlamak önemlidir. Aspose.Words, Word belgelerini .NET dahil farklı platformlarda oluşturmak, düzenlemek, dönüştürmek ve korumak için güçlü bir kütüphanedir. Metin ekleme, biçimlendirmeyi değiştirme, bölüm ekleme ve çok daha fazlası gibi belgeleri değiştirmek için birçok özellik sunar.
+Koda dalmadan önce başlamanız gereken birkaç şey var:
 
-## Word belgesini yükleme
+1. Aspose.Words for .NET: Aspose.Words for .NET'in en son sürümünün kurulu olduğundan emin olun. Henüz sahip değilseniz, adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: C# kodunuzu yazmak ve yürütmek için Visual Studio benzeri bir IDE.
+3. Temel C# Bilgisi: C#'ın temellerini anlamak, öğreticiyi takip etmenize yardımcı olacaktır.
+4. Bir Word Belgesi: Dönüştürme için kullanabileceğiniz örnek bir Word belgesini hazır bulundurun.
 
-İlk adım, ODT'ye dönüştürmek istediğiniz Word belgesini yüklemektir. Belgeyi kaynak dosyadan yüklemek için Document sınıfını kullanın. İşte bir örnek :
+## Ad Alanlarını İçe Aktar
 
-```csharp
-Document doc = new Document(dataDir + "Document.docx");
-```
-
-Bu örnekte, belgeler dizininde bulunan "Document.docx" belgesini yüklüyoruz.
-
-## Yedekleme seçeneklerini yapılandırma
-
-Bir sonraki adım, ODT'ye dönüştürmeye yönelik yedekleme seçeneklerini yapılandırmaktır. OdtSaveOptions sınıfını kullanın ve MeasureUnit özelliğini istediğiniz değere ayarlayın. Örneğin, ölçü birimi olarak inç kullanmak istiyorsanız MeasureUnit'i OdtSaveMeasureUnit.Inches olarak ayarlayın. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
+Kodlamaya başlamadan önce gerekli ad alanlarının içe aktarıldığından emin olalım. Bunları kullanarak yönergeleri kod dosyanızın en üstüne ekleyin:
 
 ```csharp
-OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Yeni bir OdtSaveOptions nesnesi oluşturuyoruz ve MeasureUnit özelliğini istenen değere ayarlıyoruz, bizim durumumuzda OdtSaveMeasureUnit.Inches ölçü birimi olarak inç kullanacak.
+## 1. Adım: Belge Dizininizi Kurun
 
-## Belgeyi ODT'ye dönüştür
-
-Artık kaydetme seçeneklerini yapılandırdığımıza göre belgeyi ODT'ye dönüştürmeye devam edebiliriz. Kaydetme seçeneklerini belirterek dönüştürülen belgeyi ODT biçiminde kaydetmek için Document sınıfının Kaydet yöntemini kullanın. İşte bir örnek :
-
-```csharp
-doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
-```
-
-Bu örnekte, dönüştürülen belgeyi belirtilen kaydetme seçeneklerini kullanarak "WorkingWithOdtSaveOptions.MeasureUnit.odt" olarak kaydediyoruz.
-
-### Aspose.Words for .NET kullanan "Ölçü birimi" işlevine sahip OdtSaveOptions için örnek kaynak kodu
-
-
+Öncelikle belge dizininizin yolunu tanımlamanız gerekir. Burası Word belgenizin bulunduğu ve dönüştürülen dosyanın kaydedileceği yerdir.
 
 ```csharp
 // Belgeler dizininizin yolu
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` Dizininizin gerçek yolu ile. Bu, kodunuzun Word belgenizi nerede bulacağını bilmesini sağlar.
+
+## Adım 2: Word Belgesini Yükleyin
+
+ Daha sonra dönüştürmek istediğiniz Word belgesini yüklemeniz gerekir. Bu, kullanılarak yapılır.`Document` Aspose.Words'ten sınıf.
+
+```csharp
 // Word belgesini yükleyin
 Document doc = new Document(dataDir + "Document.docx");
+```
 
+"Document.docx" adlı Word belgenizin belirtilen dizinde bulunduğundan emin olun.
+
+## 3. Adım: Ölçü Birimini Yapılandırın
+
+ Şimdi ODT dönüşümü için ölçü birimini yapılandıralım. Sihir yapılan yer burasıdır. Biz kuracağız`OdtSaveOptions` ölçü birimi olarak inç kullanmak.
+
+```csharp
 // Yedekleme seçeneklerinin "Ölçü birimi" özelliği ile yapılandırılması
 OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
+```
 
+ Bu örnekte ölçü birimini inç olarak ayarlıyoruz. Ayrıca aşağıdaki gibi diğer birimleri de seçebilirsiniz.`OdtSaveMeasureUnit.Centimeters` veya`OdtSaveMeasureUnit.Points` gereksinimlerinize bağlı olarak.
+
+## Adım 4: Belgeyi ODT'ye Dönüştürün
+
+ Son olarak, yapılandırılmış olanı kullanarak Word belgesini ODT formatına dönüştüreceğiz.`OdtSaveOptions`.
+
+```csharp
 // Belgeyi ODT'ye dönüştürün
 doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
+Bu kod satırı, dönüştürülen belgeyi, uygulanan yeni ölçü birimiyle belirtilen dizine kaydeder.
+
 ## Çözüm
 
-Bu kılavuzda, .NET için Aspose.Words kütüphanesindeki OdtSaveOptions kaydetme seçeneklerini kullanarak ölçü birimini belirterek bir Word belgesinin ODT'ye nasıl dönüştürüleceğini açıkladık. Verilen adımları takip ederek ve verilen C# kaynak kodunu kullanarak bu işlevselliği C# uygulamanıza kolayca uygulayabilirsiniz. ODT'ye dönüştürürken ölçü birimini belirtmek, ortaya çıkan belgenin formatını ve boyutlarını özel ihtiyaçlarınıza göre kontrol etmenize olanak tanır.
+İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'teki ölçü birimi özelliğini kolayca yapılandırarak belgenizin düzeninin dönüştürme sırasında korunmasını sağlayabilirsiniz. İster inç, ister santimetre veya noktalarla çalışıyor olun, bu eğitim size belgenizin biçimlendirmesini nasıl kolaylıkla kontrol altına alacağınızı göstermiştir.
+
+## SSS
+
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için güçlü bir kütüphanedir. Geliştiricilerin Microsoft Word gerektirmeden Word belgelerini oluşturmasına, değiştirmesine, dönüştürmesine ve işlemesine olanak tanır.
+
+### İnç dışında başka ölçü birimleri kullanabilir miyim?
+ Evet, Aspose.Words for .NET santimetre ve nokta gibi diğer ölçü birimlerini destekler. İstediğiniz birimi kullanarak belirtebilirsiniz.`OdtSaveMeasureUnit` numaralandırma.
+
+### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
+ Evet, Aspose.Words for .NET'in ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/).
+
+### Aspose.Words for .NET belgelerini nerede bulabilirim?
+ Aspose.Words for .NET'in kapsamlı belgelerine şu adresten ulaşabilirsiniz:[bu bağlantı](https://reference.aspose.com/words/net/).
+
+### Aspose.Words for .NET için nasıl destek alabilirim?
+ Destek için Aspose.Words forumunu ziyaret edebilirsiniz:[bu bağlantı](https://forum.aspose.com/c/words/8).

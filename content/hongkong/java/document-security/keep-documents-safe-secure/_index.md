@@ -76,7 +76,7 @@ SectionCollection sections = doc.getSections();
 ParagraphCollection paragraphs = sections.get(0).getBody().getParagraphs();
 
 //對文檔進行操作
-//……
+//…
 ```
 
 ## 6. 設定文檔加密

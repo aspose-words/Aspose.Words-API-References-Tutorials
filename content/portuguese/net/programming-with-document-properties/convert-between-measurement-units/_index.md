@@ -99,4 +99,4 @@ Embora você possa usar o Aspose.Words sem licença, alguns recursos avançados 
  Sim, você pode personalizar margens e outras configurações para diferentes seções usando o`Section` aula.
 
 ### Que outros recursos o Aspose.Words oferece?
- Aspose.Words oferece suporte a uma ampla gama de recursos, incluindo conversão de documentos, mala direta e amplas opções de formatação. Verifica a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
+ Aspose.Words oferece suporte a uma ampla gama de recursos, incluindo conversão de documentos, mala direta e extensas opções de formatação. Verifica a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.

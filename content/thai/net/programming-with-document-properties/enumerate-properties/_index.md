@@ -100,7 +100,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 ## คำถามที่พบบ่อย
 
 ### ฉันสามารถเพิ่มคุณสมบัติใหม่ให้กับเอกสารได้หรือไม่?
- ใช่ คุณสามารถเพิ่มคุณสมบัติที่กำหนดเองใหม่ได้โดยใช้`CustomDocumentProperties` ของสะสม.
+ ใช่ คุณสามารถเพิ่มคุณสมบัติแบบกำหนดเองใหม่ได้โดยใช้`CustomDocumentProperties` ของสะสม.
 
 ### Aspose.Words ใช้งานได้ฟรีหรือไม่?
  Aspose.Words เสนอ[ทดลองฟรี](https://releases.aspose.com/) และแตกต่าง[ตัวเลือกการซื้อ](https://purchase.aspose.com/buy).

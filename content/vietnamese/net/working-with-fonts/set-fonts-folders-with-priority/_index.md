@@ -75,6 +75,6 @@ Trả lời: Có, bạn có thể chỉ định nhiều thư mục phông chữ 
 
  Trả lời: Để kiểm tra các thư mục phông chữ được xác định mức độ ưu tiên trong Aspose.Words, bạn có thể sử dụng`GetFolders` phương pháp của`Fonts` class để lấy danh sách các thư mục phông chữ được định cấu hình bao gồm thứ tự ưu tiên của chúng.
 
-#### Câu hỏi: Việc thiết lập các thư mục phông chữ có mức độ ưu tiên trong Aspose.Words có tác dụng gì?
+#### Câu hỏi: Việc đặt mức độ ưu tiên của thư mục phông chữ trong Aspose.Words có tác dụng gì?
 
 Trả lời: Đặt mức độ ưu tiên của các thư mục phông chữ trong Aspose.Words cho phép bạn kiểm soát thứ tự tìm kiếm phông chữ trong tài liệu Word của mình. Điều này giúp bạn đảm bảo rằng phông chữ bạn muốn được sử dụng và tránh các sự cố thay thế phông chữ không mong muốn.

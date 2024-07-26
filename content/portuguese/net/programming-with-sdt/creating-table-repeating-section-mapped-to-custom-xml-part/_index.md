@@ -17,7 +17,7 @@ Para seguir este tutorial, você precisa ter o seguinte:
 - Conhecimento básico de C# e processamento de palavras com documentos Word.
 
 ## Etapa 1: configurar o diretório de documentos
- Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"`com o caminho real para o diretório onde você deseja salvar o documento.
+ Comece configurando o caminho para o diretório do seu documento. Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório onde você deseja salvar o documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Etapa 4: criar uma tabela e uma estrutura de tabela
- Comece a criar uma tabela usando o`StartTable` método do`DocumentBuilder` . Adicione células e conteúdo da tabela usando o`InsertCell`e`Write` métodos.
+Comece a criar uma tabela usando o`StartTable` método do`DocumentBuilder` . Adicione células e conteúdo da tabela usando o`InsertCell`e`Write` métodos.
 
 ```csharp
 Table table = builder.StartTable();
@@ -98,7 +98,7 @@ row.AppendChild(authorSdt);
 ```
 
 ## Etapa 8: salve o documento
- Salve o documento modificado no diretório especificado usando o`Save` método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
+ Salve o documento modificado no diretório especificado usando o`Save`método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");

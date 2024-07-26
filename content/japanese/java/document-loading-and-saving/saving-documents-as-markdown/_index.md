@@ -2,7 +2,7 @@
 title: Aspose.Words for Java でドキュメントを Markdown として保存する
 linktitle: ドキュメントをMarkdownとして保存する
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用して Word 文書を Markdown に変換する方法を学びます。このステップ バイ ステップ ガイドでは、表の配置、画像処理などについて説明します。
+description: Aspose.Words for Java を使用して Word 文書を Markdown に変換する方法を学びます。このステップ バイ ステップ ガイドでは、表の配置、画像の処理などについて説明します。
 type: docs
 weight: 18
 url: /ja/java/document-loading-and-saving/saving-documents-as-markdown/

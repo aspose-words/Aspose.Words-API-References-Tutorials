@@ -9,7 +9,7 @@ url: /tr/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
 ## giriiş
 
-Bir Word belgesinde belirli bir tablo hücresine geçmek göz korkutucu bir görev gibi görünebilir, ancak Aspose.Words for .NET ile bu çok kolay! İster raporları otomatikleştiriyor olun, ister dinamik belgeler oluşturuyor olun, ister yalnızca tablo verilerini programlı olarak işlemek istiyor olun, bu güçlü kitaplık ihtiyacınızı karşılar. Aspose.Words for .NET'i kullanarak bir tablo hücresine nasıl taşınabileceğinizi ve ona nasıl içerik ekleyebileceğinizi inceleyelim.
+Bir Word belgesinde belirli bir tablo hücresine geçmek göz korkutucu bir görev gibi görünebilir, ancak Aspose.Words for .NET ile bu çok kolay! İster raporları otomatikleştiriyor olun, ister dinamik belgeler oluşturuyor olun, ister yalnızca tablo verilerini programlı olarak değiştirmeniz gerekiyor olsun, bu güçlü kitaplık ihtiyacınızı karşılar. Aspose.Words for .NET'i kullanarak bir tablo hücresine nasıl taşınabileceğinizi ve ona nasıl içerik ekleyebileceğinizi inceleyelim.
 
 ## Önkoşullar
 

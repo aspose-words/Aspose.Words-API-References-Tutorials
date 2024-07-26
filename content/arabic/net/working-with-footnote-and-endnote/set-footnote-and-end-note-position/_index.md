@@ -2,7 +2,7 @@
 title: تعيين موضع الحاشية السفلية وموضع الملاحظة النهائية
 linktitle: تعيين موضع الحاشية السفلية وموضع الملاحظة النهائية
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية تعيين موضع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية تعيين موضع الحواشي السفلية والتعليقات الختامية في مستندات Word باستخدام Aspose.Words لـ .NET.
 type: docs
 weight: 10
 url: /ar/net/working-with-footnote-and-endnote/set-footnote-and-end-note-position/

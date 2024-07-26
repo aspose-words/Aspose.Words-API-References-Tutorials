@@ -31,7 +31,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Asegúrese de reemplazar "SU DIRECTORIO DE DOCUMENTOS" con la ruta real a su directorio de documentos.
 
 ## Paso 3: clonación de matriz completa
-continuación, clonaremos toda la tabla y la insertaremos en el documento después del original. Utilice el siguiente código:
+A continuación, clonaremos toda la tabla y la insertaremos en el documento después del original. Utilice el siguiente código:
 
 ```csharp
 // Clonar la matriz
@@ -68,7 +68,7 @@ Asegúrese de especificar la ruta y el nombre de archivo correctos para el docum
 	// Clona la tabla e insértala en el documento después del original.
 	Table tableClone = (Table) table.Clone(true);
 	table.ParentNode.InsertAfter(tableClone, table);
-	//Inserte un párrafo vacío entre las dos tablas,
+	// Inserte un párrafo vacío entre las dos tablas,
 	// o sino se combinarán en uno solo al guardar esto tiene que ver con la validación del documento.
 	table.ParentNode.InsertAfter(new Paragraph(doc), table);
 	doc.Save(dataDir + "WorkingWithTables.CloneCompleteTable.docx");

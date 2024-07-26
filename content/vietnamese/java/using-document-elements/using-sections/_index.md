@@ -94,7 +94,7 @@ public void cloneSection() throws Exception {
 
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã trình bày những kiến thức cơ bản về cách làm việc với các phần trong Aspose.Words for Java. Bạn đã học cách thêm, xóa, nối và sao chép các phần trong tài liệu của mình. Các phần là một tính năng mạnh mẽ cho phép bạn tùy chỉnh bố cục và cấu trúc tài liệu của mình một cách hiệu quả.
+Trong hướng dẫn này, chúng tôi đã trình bày những kiến thức cơ bản về cách làm việc với các phần trong Aspose.Words cho Java. Bạn đã học cách thêm, xóa, nối và sao chép các phần trong tài liệu của mình. Các phần là một tính năng mạnh mẽ cho phép bạn tùy chỉnh bố cục và cấu trúc tài liệu của mình một cách hiệu quả.
 
 ## Câu hỏi thường gặp (FAQ)
 

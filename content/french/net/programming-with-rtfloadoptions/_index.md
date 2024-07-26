@@ -16,4 +16,4 @@ En suivant les didacticiels Aspose.Words pour .NET, vous serez en mesure de bien
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Reconnaître le texte Utf-8](./recognize-utf8-text/) | Apprenez à reconnaître les caractères Utf-8 dans les documents RTF avec Aspose.Words for .NET. Garantir l’intégrité des données. |
+| [Reconnaître le texte Utf-8](./recognize-utf8-text/) | Apprenez à reconnaître le texte UTF-8 dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide détaillé étape par étape. |

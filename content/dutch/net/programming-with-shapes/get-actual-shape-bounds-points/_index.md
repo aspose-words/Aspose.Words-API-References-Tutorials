@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Stap 2: Voeg een afbeeldingsvorm in
- Gebruik de`InsertImage` werkwijze van de`DocumentBuilder`object om een afbeeldingsvorm in het document in te voegen. Geef het pad naar het afbeeldingsbestand op als parameter.
+ Gebruik de`InsertImage` werkwijze van de`DocumentBuilder` object om een afbeeldingsvorm in het document in te voegen. Geef het pad naar het afbeeldingsbestand op als parameter.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

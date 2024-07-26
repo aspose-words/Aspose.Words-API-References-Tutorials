@@ -59,7 +59,7 @@ Aspose.Words for Java で固定レイアウトの HTML ドキュメントを保�
 ### [Aspose.Words for Java でドキュメントから画像を保存する](./saving-images-from-documents/)
 包括的なステップバイステップ ガイドを使用して、Aspose.Words for Java を使用してドキュメントから画像を保存する方法を学びます。形式、圧縮などをカスタマイズします。
 ### [Aspose.Words for Java でドキュメントを Markdown として保存する](./saving-documents-as-markdown/)
-Aspose.Words for Java を使用して Word 文書を Markdown に変換する方法を学びます。このステップ バイ ステップ ガイドでは、表の配置、画像処理などについて説明します。
+Aspose.Words for Java を使用して Word 文書を Markdown に変換する方法を学びます。このステップ バイ ステップ ガイドでは、表の配置、画像の処理などについて説明します。
 ### [Aspose.Words for Java でドキュメントを ODT 形式で保存する](./saving-documents-as-odt-format/)
 Aspose.Words for Java を使用してドキュメントを ODT 形式で保存する方法を学びます。オープンソースのオフィス スイートとの互換性を確保します。 
 ### [Aspose.Words for Java でドキュメントを OOXML 形式で保存する](./saving-documents-as-ooxml-format/)

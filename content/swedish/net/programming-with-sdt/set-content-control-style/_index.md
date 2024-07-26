@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Steg 2: Ladda dokumentet och hämta innehållskontrollen
- Ladda Word-dokumentet med hjälp av`Document` konstruktor, skickar sökvägen till dokumentet som en parameter. Hämta önskad innehållskontroll från dokumentet. I det här exemplet antar vi att innehållskontrollen är den första strukturerade dokumenttaggen i dokumentet.
+ Ladda Word-dokumentet med hjälp av`Document`konstruktor, skickar sökvägen till dokumentet som en parameter. Hämta önskad innehållskontroll från dokumentet. I det här exemplet antar vi att innehållskontrollen är den första strukturerade dokumenttaggen i dokumentet.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -40,7 +40,7 @@ sdt.Style = style;
 ```
 
 ## Steg 4: Spara dokumentet
- Spara det ändrade dokumentet i den angivna katalogen med hjälp av`Save`metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.SetContentControlStyle.docx".
+ Spara det ändrade dokumentet i den angivna katalogen med hjälp av`Save` metod. Ange önskat filnamn med lämplig filtillägg. I det här exemplet sparar vi dokumentet som "WorkingWithSdt.SetContentControlStyle.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");

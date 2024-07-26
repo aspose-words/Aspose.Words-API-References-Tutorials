@@ -16,6 +16,6 @@ Ať už potřebujete generovat sestavy, vytvářet vlastní dokumenty, automatiz
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Rozpoznat formát souboru dokumentu](./detect-file-format/) | Průvodce krok za krokem k detekci formátu souboru dokumentu pomocí Aspose.Words pro .NET. |
-| [Detekce digitálního podpisu v dokumentu aplikace Word](./detect-document-signatures/) | Podrobný průvodce detekcí digitálních podpisů v dokumentu pomocí Aspose.Words for .NET. |
-| [Ověřte šifrovaný dokument Word](./verify-encrypted-document/) | Podrobný průvodce pro ověření, zda je dokument zašifrován pomocí Aspose.Words for .NET. |
+| [Rozpoznat formát souboru dokumentu](./detect-file-format/) | Naučte se, jak detekovat formáty souborů dokumentů pomocí Aspose.Words for .NET, pomocí tohoto komplexního průvodce krok za krokem. |
+| [Detekce digitálního podpisu v dokumentu aplikace Word](./detect-document-signatures/) | Naučte se, jak detekovat digitální podpisy v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí našeho podrobného průvodce. |
+| [Ověřte šifrovaný dokument Word](./verify-encrypted-document/) | V tomto podrobném průvodci se dozvíte, jak ověřit stav šifrování dokumentu aplikace Word pomocí Aspose.Words for .NET. |

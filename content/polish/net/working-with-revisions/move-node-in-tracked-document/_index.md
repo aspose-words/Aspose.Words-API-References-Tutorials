@@ -36,7 +36,7 @@ Zamierzamy włączyć śledzenie wersji w dokumencie.
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 ```
 
-## Krok 3: Przesuń węzeł
+## Krok 3: Przenieś węzeł
 
 Podczas generowania wersji przesuniemy węzeł (akapit) z jednej pozycji na drugą.
 

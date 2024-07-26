@@ -16,4 +16,4 @@ By using the Aspose.Words for .NET tutorials, you will be able to easily manage 
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Saving Images As Wmf](./saving-images-as-wmf/) | Learn how to save images as WMF when converting to RTF with Aspose.Words for .NET. |
+| [Saving Images As Wmf](./saving-images-as-wmf/) | Learn how to save images as WMF in Word documents using Aspose.Words for .NET with our detailed step-by-step guide. Boost your document compatibility and image quality. |

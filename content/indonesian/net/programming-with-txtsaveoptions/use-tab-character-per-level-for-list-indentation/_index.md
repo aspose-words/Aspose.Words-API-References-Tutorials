@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Pada langkah ini, kami membuat yang baru`Document` objek dan yang terkait`DocumentBuilder` obyek. Objek-objek ini akan memungkinkan kita memanipulasi dan menghasilkan dokumen kita.
+ Pada langkah ini, kami membuat yang baru`Document` objek dan yang terkait`DocumentBuilder` obyek. Objek-objek ini akan memungkinkan kita memanipulasi dan menghasilkan dokumen kita.
 
 ## Langkah 3: Membuat daftar dengan tiga tingkat lekukan
 
@@ -100,7 +100,7 @@ Siapkan lingkungan pengembangan Anda dengan menambahkan referensi yang diperluka
 
  Buat yang baru`Document` objek dan yang terkait`DocumentBuilder` obyek.
 
- Menggunakan`DocumentBuilder` untuk membuat daftar dengan beberapa tingkat lekukan menggunakan metode`ApplyNumberDefault()` untuk menerapkan format nomor daftar default,`Writeln()`Dan`Write()` untuk menambahkan item ke daftar, dan`ListIndent()`untuk menambah lekukan di setiap level.
+ Menggunakan`DocumentBuilder`untuk membuat daftar dengan beberapa tingkat lekukan menggunakan metode`ApplyNumberDefault()` untuk menerapkan format nomor daftar default,`Writeln()`Dan`Write()` untuk menambahkan item ke daftar, dan`ListIndent()` untuk menambah lekukan di setiap level.
 
  Konfigurasikan opsi penyimpanan dengan membuat`TxtSaveOptions` objek dan mengatur propertinya`ListIndentation.Count` dengan jumlah karakter tab per level dan`ListIndentation.Character` ke`'\t'` untuk menggunakan karakter tab.
 
@@ -110,7 +110,7 @@ Siapkan lingkungan pengembangan Anda dengan menambahkan referensi yang diperluka
  Ya, Anda dapat menyesuaikan jumlah karakter tab per level untuk indentasi daftar dengan mengubah nilai`ListIndentation.Count` properti di`TxtSaveOptions` kelas. Anda dapat menentukan jumlah karakter tab yang Anda inginkan untuk setiap tingkat indentasi.
 
 #### T: Karakter lain apa yang dapat saya gunakan untuk indentasi daftar dengan Aspose.Words untuk .NET?
- Selain karakter tab, Anda juga dapat menggunakan karakter lain untuk indentasi daftar dengan Aspose.Words untuk .NET. Anda dapat mengatur`ListIndentation.Character` properti ke karakter apa pun yang diinginkan, seperti spasi (`' '`), untuk membuat indentasi daftar.
+Selain karakter tab, Anda juga dapat menggunakan karakter lain untuk indentasi daftar dengan Aspose.Words untuk .NET. Anda dapat mengatur`ListIndentation.Character` properti ke karakter apa pun yang diinginkan, seperti spasi (`' '`), untuk membuat indentasi daftar.
 
 #### T: Apakah Aspose.Words untuk .NET menawarkan fitur lain untuk mengelola daftar?
 Ya, Aspose.Words untuk .NET menawarkan banyak fitur untuk mengelola daftar di dokumen Word. Anda dapat membuat daftar bernomor atau berpoin, mengatur tingkat indentasi, mengkustomisasi gaya daftar, menambahkan item daftar, dan banyak lagi.

@@ -2,66 +2,94 @@
 title: Son Kaydedilen Zaman Özelliğini Güncelle
 linktitle: Son Kaydedilen Zaman Özelliğini Güncelle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir belgeyi kaydederken Son Kaydedilen Zaman özelliğini otomatik olarak nasıl güncelleyeceğinizi öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerinde son kaydedilen zaman özelliğini nasıl güncelleyeceğinizi öğrenin. Ayrıntılı, adım adım kılavuzumuzu takip edin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi kaydederken son tasarruf süresi özelliğini güncellemek için sağlanan C# kaynak kodunu inceleyeceğiz. Bu özellik, oluşturulan belgenin son kaydetme süresi özelliğini otomatik olarak güncellemenize olanak tanır.
+## giriiş
 
-## 1. Adım: Ortamı ayarlama
+Word belgelerinizdeki son kaydedilen zaman özelliğini programlı olarak nasıl takip edeceğinizi hiç merak ettiniz mi? Birden fazla belgeyle çalışıyorsanız ve bunların meta verilerini korumanız gerekiyorsa, son kaydedilen zaman özelliğini güncellemek oldukça kullanışlı olabilir. Bugün size Aspose.Words for .NET'i kullanarak bu süreçte yol göstereceğim. O halde kemerinizi bağlayın ve dalmaya başlayalım!
 
-Başlamadan önce Aspose.Words for .NET ile geliştirme ortamınızı kurduğunuzdan emin olun. Gerekli referansları eklediğinizden ve uygun ad alanlarını içe aktardığınızdan emin olun.
+## Önkoşullar
 
-## Adım 2: Belgeyi yükleme
+Adım adım kılavuza geçmeden önce ihtiyacınız olacak birkaç şey var:
+
+1.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. Eğer yapmadıysanız, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi bir geliştirme ortamı.
+3. Temel C# Bilgisi: C# programlamanın temellerini anlamak faydalı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Başlangıç olarak gerekli ad alanlarını projenize aktardığınızdan emin olun. Bu, Word belgelerini düzenlemek için gereken sınıflara ve yöntemlere erişmenizi sağlayacaktır.
 
 ```csharp
-// Belgeler dizininizin yolu
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
+Şimdi süreci basit adımlara ayıralım. Her adım, Word belgenizdeki son kaydedilen zaman özelliğini güncelleme sürecinde size yol gösterecektir.
+
+## 1. Adım: Belge Dizininizi Kurun
+
+Öncelikle belge dizininizin yolunu belirtmeniz gerekir. Burası mevcut belgenizin saklandığı ve güncellenen belgenin kaydedileceği yerdir.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Dizininizin gerçek yolu ile.
+
+## Adım 2: Word Belgenizi Yükleyin
+
+ Daha sonra güncellemek istediğiniz Word belgesini yükleyin. Bunu bir örneğini oluşturarak yapabilirsiniz.`Document` sınıf ve belgenizin yolunu geçmek.
+
+```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Bu adımda belgeyi aşağıdaki komutu kullanarak yüklüyoruz:`Document` yöntemi ve yüklenecek DOCX dosyasının yolunu iletme.
+ Adı verilen belgenin olduğundan emin olun`Document.docx` Belirtilen dizinde mevcut.
 
-## 3. Adım: OOXML yedekleme seçeneklerini yapılandırma
+## 3. Adım: Kaydetme Seçeneklerini Yapılandırın
+
+ Şimdi bunun bir örneğini oluşturun`OoxmlSaveOptions` sınıf. Bu sınıf, belgenizi Office Açık XML (OOXML) biçiminde kaydetme seçeneklerini belirtmenize olanak tanır. Burada,`UpdateLastSavedTimeProperty` ile`true`.
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
+{
+    UpdateLastSavedTimeProperty = true
+};
 ```
 
- Bu adımda, OOXML kaydetme seçeneklerini kullanarak yapılandırıyoruz.`OoxmlSaveOptions` sınıf. Ayarlayarak son tasarruf süresi özelliğinin otomatik güncellenmesini sağlıyoruz`UpdateLastSavedTimeProperty` ile`true`.
+Bu, Aspose.Words'e belgenin son kaydedilen zaman özelliğini güncellemesini söyler.
 
-## 4. Adım: Belgeyi güncellenmiş özellikle kaydedin
+## 4. Adım: Güncellenen Belgeyi Kaydedin
+
+ Son olarak belgeyi kullanarak kaydedin.`Save` yöntemi`Document` güncellenen belgeyi kaydetmek istediğiniz yolu ve kaydetme seçeneklerini geçen sınıf.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
 ```
 
- Bu son adımda, belgeyi kullanarak kaydediyoruz.`Save` yöntemi ve çıktı dosyasına giden yolu iletmek`.docx` uzantı, belirtilen kaydetme seçenekleriyle birlikte.
-
-Artık bir belgeyi kaydederken son kaydetme süresi özelliğini otomatik olarak güncellemek için kaynak kodunu çalıştırabilirsiniz. Ortaya çıkan dosya, "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx" adıyla belirtilen dizine kaydedilecektir.
-
-### Aspose.Words for .NET kullanarak Son Kaydedilen Zaman Özelliğini Güncelleme için örnek kaynak kodu 
-
-```csharp
-
-// Belge dizininizin yolu
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-Document doc = new Document(dataDir + "Document.docx");
-
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
-
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
-            
-        
-```
+Bu, belgeyi güncellenmiş son kaydedilen zaman özelliğiyle kaydedecektir.
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi kaydederken son kaydetme süresi özelliğinin otomatik olarak güncellenmesi özelliğini araştırdık. Bu özelliği OOXML kaydetme seçenekleriyle etkinleştirerek oluşturulan belgede son kaydetme süresi özelliğinin otomatik olarak güncellenmesini sağlayabilirsiniz.
+İşte buyur! Bu adımları takip ederek Aspose.Words for .NET'i kullanarak Word belgelerinizin son kaydedilen zaman özelliğini kolayca güncelleyebilirsiniz. Bu, özellikle belgelerinizde, belge yönetim sistemleri ve diğer çeşitli uygulamalar için hayati önem taşıyan doğru meta verileri korumak açısından kullanışlıdır.
 
-Son kaydetme süresi özelliğinin güncellenmesi, bir belgedeki değişiklikleri ve sürümleri izlemek için yararlı olabilir. Ayrıca belgenin en son ne zaman kaydedildiğini de takip eder ve bu, çeşitli senaryolarda yararlı olabilir.
+## SSS'ler
 
-Aspose.Words for .NET, esnek ve güçlü yedekleme seçenekleri sunarak Son Yedekleme Süresi özelliğinin otomatik olarak güncellenmesini kolaylaştırır. Oluşturulan dokümanların doğru yedekleme bilgilerine sahip olmasını sağlamak için bu özelliği projelerinize entegre edebilirsiniz.
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, .NET uygulamalarında Word belgeleri oluşturmaya, düzenlemeye ve dönüştürmeye yönelik güçlü bir kitaplıktır.
+
+### Son kaydedilen zaman özelliğini neden güncellemeliyim?
+Kaydedilen son zaman özelliğinin güncellenmesi, belge izleme ve yönetimi için gerekli olan meta verilerin doğru tutulmasına yardımcı olur.
+
+### Aspose.Words for .NET'i kullanarak diğer özellikleri güncelleyebilir miyim?
+Evet, Aspose.Words for .NET başlık, yazar ve konu gibi çeşitli belge özelliklerini güncellemenize olanak tanır.
+
+### Aspose.Words for .NET ücretsiz mi?
+ Aspose.Words for .NET ücretsiz deneme sürümü sunar ancak tam işlevsellik için lisans gereklidir. Lisans alabilirsiniz[Burada](https://purchase.aspose.com/buy).
+
+### Aspose.Words for .NET hakkında daha fazla eğitimi nerede bulabilirim?
+Daha fazla eğitim ve belge bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

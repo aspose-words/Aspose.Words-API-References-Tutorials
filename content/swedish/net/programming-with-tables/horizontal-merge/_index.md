@@ -21,7 +21,7 @@ För att starta ordbehandling med tabellen och cellerna måste vi skapa ett nytt
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Skapa dokumentet och initiera dokumentgeneratorn
+//Skapa dokumentet och initiera dokumentgeneratorn
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

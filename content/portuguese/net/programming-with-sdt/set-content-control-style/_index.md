@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Etapa 2: carregar o documento e recuperar o controle de conteúdo
- Carregue o documento do Word usando o`Document` construtor, passando o caminho para o documento como parâmetro. Recupere o controle de conteúdo desejado do documento. Neste exemplo, assumimos que o controle de conteúdo é a primeira tag de documento estruturada no documento.
+ Carregue o documento do Word usando o`Document`construtor, passando o caminho para o documento como parâmetro. Recupere o controle de conteúdo desejado do documento. Neste exemplo, assumimos que o controle de conteúdo é a primeira tag de documento estruturada no documento.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -40,7 +40,7 @@ sdt.Style = style;
 ```
 
 ## Etapa 4: salve o documento
- Salve o documento modificado no diretório especificado usando o`Save`método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithSdt.SetContentControlStyle.docx".
+ Salve o documento modificado no diretório especificado usando o`Save` método. Forneça o nome de arquivo desejado com a extensão de arquivo apropriada. Neste exemplo, salvamos o documento como "WorkingWithSdt.SetContentControlStyle.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");

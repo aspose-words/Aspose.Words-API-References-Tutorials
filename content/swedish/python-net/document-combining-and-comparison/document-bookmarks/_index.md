@@ -20,7 +20,7 @@ Innan vi går in i att använda Aspose.Words för Python API för att arbeta med
 - Python installerat på din maskin
 - Tillgång till Aspose.Words for Python API
 
-## Installera Aspose.Words för Python
+## Installerar Aspose.Words för Python
 
 För att komma igång måste du installera Aspose.Words for Python-biblioteket. Du kan göra detta med pip, Python-pakethanteraren, med följande kommando:
 
@@ -147,7 +147,7 @@ Ja, bokmärken kan användas i olika dokumentformat, inklusive DOCX, DOC och mer
 
 ### Är det möjligt att extrahera data från bokmärken för analys?
 
-Absolut! Du kan extrahera text och annat innehåll från bokmärken, vilket är särskilt användbart för att generera sammanfattningar eller genomföra ytterligare analyser.
+Absolut! Du kan extrahera text och annat innehåll från bokmärken, vilket är särskilt användbart för att generera sammanfattningar eller göra ytterligare analyser.
 
 ### Var kan jag komma åt Aspose.Words för Python API-dokumentation?
 

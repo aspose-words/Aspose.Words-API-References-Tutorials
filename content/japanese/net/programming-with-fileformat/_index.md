@@ -16,6 +16,6 @@ url: /ja/net/programming-with-fileformat/
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [ドキュメントファイル形式の検出](./detect-file-format/) | Aspose.Words for .NET を使用してドキュメント ファイル形式を検出するためのステップ バイ ステップ ガイド。 |
-| [Word文書のデジタル署名を検出する](./detect-document-signatures/) | Aspose.Words for .NET を使用してドキュメント内のデジタル署名を検出するためのステップバイステップ ガイド。 |
-| [暗号化されたWord文書を検証する](./verify-encrypted-document/) | Aspose.Words for .NET を使用してドキュメントが暗号化されているかどうかを確認するためのステップバイステップ ガイド。 |
+| [ドキュメントファイル形式の検出](./detect-file-format/) | この包括的なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用してドキュメント ファイル形式を検出する方法を学習します。 |
+| [Word文書のデジタル署名を検出する](./detect-document-signatures/) | ステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書内のデジタル署名を検出する方法を学習します。 |
+| [暗号化されたWord文書を検証する](./verify-encrypted-document/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書の暗号化ステータスを確認する方法を学習します。 |

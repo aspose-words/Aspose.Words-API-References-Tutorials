@@ -13,7 +13,7 @@ url: /es/net/split-document/merge-documents/
 
 ## Requisitos previos
 
-Antes de sumergirnos, asegurémonos de que tiene todo lo que necesita:
+Antes de sumergirnos, asegurémonos de que tienes todo lo que necesitas:
 
 1. Conocimientos básicos de C#: debe sentirse cómodo con la sintaxis y los conceptos de C#.
 2.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/) . Si recién estás explorando, puedes comenzar con un[prueba gratis](https://releases.aspose.com/).

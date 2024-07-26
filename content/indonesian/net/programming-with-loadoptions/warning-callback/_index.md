@@ -2,97 +2,105 @@
 title: Panggilan Balik Peringatan Dalam Dokumen Word
 linktitle: Panggilan Balik Peringatan Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menangani peringatan saat memuat dokumen Word menggunakan fungsionalitas panggilan balik dengan Aspose.Words untuk .NET.
+description: Pelajari cara menangkap dan menangani peringatan di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Pastikan pemrosesan dokumen yang kuat.
 type: docs
 weight: 10
 url: /id/net/programming-with-loadoptions/warning-callback/
 ---
-Saat Memproses Kata dengan dokumen Word dalam aplikasi C#, ada gunanya mengetahui peringatan yang dikeluarkan saat memuat dokumen. Dengan pustaka Aspose.Words untuk .NET, Anda dapat dengan mudah menentukan fungsi panggilan balik untuk menangani peringatan saat memuat dokumen menggunakan opsi pemuatan LoadOptions. Dalam panduan langkah demi langkah ini, kami akan memandu Anda tentang cara menggunakan kode sumber Aspose.Words untuk .NET C# untuk memuat dokumen menggunakan fungsi panggilan balik untuk peringatan menggunakan opsi pemuatan LoadOptions.
+## Perkenalan
 
-## Memahami perpustakaan Aspose.Words
+Pernahkah Anda bertanya-tanya bagaimana cara menangkap dan menangani peringatan saat bekerja dengan dokumen Word secara terprogram? Menggunakan Aspose.Words untuk .NET, Anda dapat menerapkan panggilan balik peringatan untuk mengelola potensi masalah yang muncul selama pemrosesan dokumen. Tutorial ini akan memandu Anda melalui proses langkah demi langkah, memastikan Anda memiliki pemahaman komprehensif tentang cara mengonfigurasi dan menggunakan fitur panggilan balik peringatan di proyek Anda.
 
-Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan yang kuat untuk membuat, mengedit, mengonversi, dan melindungi dokumen Word di berbagai platform termasuk .NET. Ia menawarkan banyak fitur untuk memanipulasi dokumen, seperti menyisipkan teks, mengubah format, menambahkan bagian, dan banyak lagi.
+## Prasyarat
 
-## Mengonfigurasi opsi pemuatan
+Sebelum mendalami penerapannya, pastikan Anda memiliki prasyarat berikut:
 
-Langkah pertama adalah mengkonfigurasi opsi pemuatan untuk dokumen kita. Gunakan kelas LoadOptions untuk menentukan parameter pemuatan. Dalam kasus kita, kita perlu menyetel properti WarningCallback ke instance DocumentLoadingWarningCallback. Berikut cara melakukannya:
+- Pengetahuan dasar tentang pemrograman C#
+- Visual Studio diinstal pada mesin Anda
+-  Aspose.Words untuk perpustakaan .NET (Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/))
+-  Lisensi yang valid untuk Aspose.Words (jika Anda tidak memilikinya, dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/))
+
+## Impor Namespace
+
+Untuk memulainya, Anda perlu mengimpor namespace yang diperlukan dalam proyek C# Anda:
 
 ```csharp
-LoadOptions loadOptions = new LoadOptions { WarningCallback = new DocumentLoadingWarningCallback() };
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Loading;
 ```
 
-Kami membuat objek LoadOptions baru dan mengatur properti WarningCallback ke instance DocumentLoadingWarningCallback.
+Mari kita uraikan proses menyiapkan callback peringatan menjadi langkah-langkah yang dapat dikelola.
 
-## Membuat fungsi panggilan balik untuk peringatan
+## Langkah 1: Atur Direktori Dokumen
 
-Sekarang kita perlu membuat kelas yang mengimplementasikan antarmuka IWarningCallback untuk menangani peringatan saat memuat dokumen. Berikut ini contoh kode untuk kelas DocumentLoadingWarningCallback:
-
-```csharp
-public class DocumentLoadingWarningCallback : IWarningCallback
-{
-     public void Warning(WarningInfo info)
-     {
-         // Tangani peringatan di sini
-         Console.WriteLine($"Warning: {info.WarningType}, Description: {info.Description}");
-     }
-}
-```
-
-Di kelas ini, kami memiliki metode Peringatan yang dipanggil setiap kali peringatan dikeluarkan saat memuat dokumen. Anda dapat menyesuaikan metode ini untuk menangani peringatan dengan cara yang sesuai untuk Anda, seperti menyimpannya ke file log atau menampilkannya di konsol.
-
-## Memuat dokumen menggunakan panggilan balik untuk peringatan
-
-Sekarang kita telah mengonfigurasi opsi pemuatan dan membuat fungsi panggilan balik untuk peringatan, kita dapat memuat dokumen menggunakan kelas Dokumen dan menentukan opsi pemuatan. Berikut ini contohnya:
+Pertama, Anda perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda disimpan.
 
 ```csharp
-Document doc = new Document(dataDir + "Document.docx", loadOptions);
-```
-
-Dalam contoh ini, kita memuat dokumen "Document.docx" yang terletak di direktori dokumen menggunakan opsi pemuatan yang ditentukan.
-
-### Contoh kode sumber untuk opsi pemuatan
-
-  LoadOptions dengan fungsionalitas "Peringatan Callback" menggunakan Aspose.Words untuk .NET
-
-```csharp
-// Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
-// Konfigurasikan opsi pemuatan dengan fitur "Peringatan Panggilan Balik".
-LoadOptions loadOptions = new LoadOptions { WarningCallback = new DocumentLoadingWarningCallback() };
+## Langkah 2: Konfigurasikan Opsi Pemuatan dengan Panggilan Balik Peringatan
 
-// Muat dokumen menggunakan fungsi panggilan balik untuk peringatan
+ Selanjutnya, konfigurasikan opsi pemuatan dokumen. Ini melibatkan penciptaan a`LoadOptions` objek dan pengaturannya`WarningCallback` Properti.
+
+```csharp
+LoadOptions loadOptions = new LoadOptions
+{
+    WarningCallback = new DocumentLoadingWarningCallback()
+};
+```
+
+## Langkah 3: Muat Dokumen Menggunakan Fungsi Panggilan Balik
+
+ Sekarang, muat dokumen menggunakan`LoadOptions` objek dikonfigurasi dengan panggilan balik peringatan.
+
+```csharp
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
+```
+
+## Langkah 4: Terapkan Kelas Panggilan Balik Peringatan
+
+ Buat kelas yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan menentukan bagaimana peringatan ditangani selama pemrosesan dokumen.
+
+```csharp
+private class DocumentLoadingWarningCallback : IWarningCallback
+{
+    public void Warning(WarningInfo info)
+    {
+        Console.WriteLine($"Warning: {info.WarningType}");
+        Console.WriteLine($"\tSource: {info.Source}");
+        Console.WriteLine($"\tDescription: {info.Description}");
+        mWarnings.Add(info);
+    }
+
+    public List<WarningInfo> GetWarnings()
+    {
+        return mWarnings;
+    }
+
+    private readonly List<WarningInfo> mWarnings = new List<WarningInfo>();
+}
 ```
 
 ## Kesimpulan
 
-Dalam panduan ini, kami membahas cara memuat dokumen menggunakan fungsi panggilan balik untuk peringatan saat dimuat dengan pustaka Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang disediakan dan menggunakan kode sumber C# yang disediakan, Anda dapat dengan mudah menerapkan fungsi ini di aplikasi C# Anda. Mengelola peringatan saat memuat dokumen memungkinkan Anda mendapat informasi tentang masalah atau peringatan apa pun yang terkait dengan dokumen yang dimuat.
+Dengan mengikuti langkah-langkah ini, Anda dapat mengelola dan menangani peringatan secara efektif saat bekerja dengan dokumen Word menggunakan Aspose.Words untuk .NET. Fitur ini memastikan bahwa Anda dapat secara proaktif mengatasi potensi masalah, menjadikan pemrosesan dokumen Anda lebih kuat dan andal.
 
-### FAQ untuk panggilan balik peringatan di dokumen Word
+## FAQ
 
-Saat memproses dokumen Word di aplikasi C# menggunakan Aspose.Words untuk .NET, Anda mungkin mengalami peringatan selama pemuatan dokumen. Berikut adalah beberapa pertanyaan umum tentang penggunaan fungsi panggilan balik untuk menangani peringatan:
+### Apa tujuan dari panggilan balik peringatan di Aspose.Words untuk .NET?
+Callback peringatan memungkinkan Anda menangkap dan menangani peringatan yang terjadi selama pemrosesan dokumen, membantu Anda mengatasi potensi masalah secara proaktif.
 
-#### T: Mengapa saya harus menggunakan panggilan balik peringatan saat memuat dokumen Word?
+### Bagaimana cara mengatur fitur panggilan balik peringatan?
+ Anda perlu mengkonfigurasi`LoadOptions` dengan`WarningCallback` properti dan mengimplementasikan kelas yang menangani peringatan dengan mengimplementasikan`IWarningCallback` antarmuka.
 
-J: Menggunakan panggilan balik peringatan memungkinkan Anda mengetahui peringatan apa pun yang dikeluarkan selama proses pemuatan dokumen. Peringatan dapat menunjukkan potensi masalah pada dokumen dan membantu Anda mengambil tindakan yang tepat untuk menangani atau mengatasinya.
+### Bisakah saya menggunakan fitur panggilan balik peringatan tanpa lisensi yang valid?
+ Anda dapat menggunakannya dengan versi uji coba gratis, tetapi untuk fungsionalitas penuh, disarankan untuk mendapatkan lisensi yang valid. Anda bisa mendapatkan[izin sementara di sini](https://purchase.aspose.com/temporary-license/).
 
-#### T: Bagaimana cara mengonfigurasi opsi pemuatan untuk menggunakan panggilan balik peringatan?
+### Peringatan seperti apa yang dapat saya harapkan saat memproses dokumen?
+Peringatan dapat mencakup masalah terkait fitur yang tidak didukung, ketidakkonsistenan format, atau masalah khusus dokumen lainnya.
 
- J: Untuk menggunakan panggilan balik peringatan, Anda perlu mengatur`WarningCallback` properti dari`LoadOptions` kelas ke instance kelas yang mengimplementasikan`IWarningCallback` antarmuka.
-
-#### T: Bagaimana cara membuat fungsi panggilan balik untuk menangani peringatan?
-
- J: Untuk membuat fungsi panggilan balik untuk menangani peringatan, Anda perlu membuat kelas yang mengimplementasikan`IWarningCallback` antarmuka. Itu`Warning`metode di kelas ini akan dipanggil setiap kali peringatan dikeluarkan saat memuat dokumen. Anda dapat menyesuaikan metode ini untuk menangani peringatan berdasarkan kebutuhan aplikasi Anda.
-
-#### T: Apa yang dapat saya lakukan dengan informasi peringatan di fungsi panggilan balik?
-
- J: Dalam fungsi panggilan balik, Anda memiliki akses ke`WarningInfo` objek, yang memberikan detail tentang peringatan, seperti jenis dan deskripsinya. Anda dapat mencatat peringatan, menampilkannya kepada pengguna, atau mengambil tindakan lain yang sesuai berdasarkan sifat peringatan tersebut.
-
-#### T: Dapatkah saya menggunakan panggilan balik peringatan yang sama untuk beberapa operasi pemuatan dokumen?
-
-J: Ya, Anda dapat menggunakan kembali panggilan balik peringatan yang sama untuk beberapa operasi pemuatan dokumen. Merupakan praktik yang baik untuk memiliki pendekatan yang konsisten dalam menangani peringatan di seluruh aplikasi Anda.
-
-#### T: Apakah penggunaan panggilan balik peringatan wajib untuk memuat dokumen?
-
-J: Tidak, penggunaan callback peringatan bersifat opsional, namun disarankan untuk menerapkannya untuk mengetahui potensi masalah apa pun pada dokumen yang dimuat.
+### Di mana saya dapat menemukan informasi selengkapnya tentang Aspose.Words untuk .NET?
+ Anda dapat merujuk ke[dokumentasi](https://reference.aspose.com/words/net/)untuk informasi rinci dan contoh.

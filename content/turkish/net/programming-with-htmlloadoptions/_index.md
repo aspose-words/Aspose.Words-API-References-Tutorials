@@ -12,4 +12,4 @@ HTMLLoadOptions ile Kelime İşleme hakkındaki Aspose.Words for .NET eğitimler
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Word Belgesinde Tercih Edilen Kontrol Türü](./preferred-control-type/) | Aspose.Words for .NET ile bir HTML belgesi yüklerken word belgesinde tercih edilen kontrol tipini belirlemek için adım adım kılavuz. |
+| [Word Belgesinde Tercih Edilen Kontrol Türü](./preferred-control-type/) | Aspose.Words for .NET kullanarak bir Word belgesine nasıl birleşik giriş kutusu form alanı ekleyeceğinizi öğrenin. Sorunsuz HTML içerik entegrasyonu için bu adım adım kılavuzu izleyin. |

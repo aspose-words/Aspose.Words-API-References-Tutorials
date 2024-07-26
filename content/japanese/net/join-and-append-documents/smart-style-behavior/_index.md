@@ -9,13 +9,13 @@ url: /ja/net/join-and-append-documents/smart-style-behavior/
 ---
 ## 導入
 
-Word の達人の皆様、こんにちは。スタイルを保ったまま文書を結合するという面倒な作業に巻き込まれたことはありませんか? それぞれ独自のスタイルを持つ 2 つの Word 文書があり、その独特のタッチを失わずに結合する必要がある場合を想像してください。難しいように聞こえますか? さて、今日は Aspose.Words for .NET の魔法の世界に飛び込み、Smart Style Behavior を使用してこれを簡単に実現する方法を紹介します。このチュートリアルが終わる頃には、スタイルに精通した魔術師のように文書を結合するプロになっていることでしょう。
+Word の達人の皆様、こんにちは。スタイルを保ったまま文書を結合するという面倒な作業に巻き込まれたことはありませんか? それぞれに独自のスタイルを持つ 2 つの Word 文書があり、その独特のタッチを失わずに結合する必要がある場合を想像してください。難しいように聞こえますか? さて、今日は Aspose.Words for .NET の魔法の世界に飛び込み、Smart Style Behavior を使用してこれを簡単に実現する方法を紹介します。このチュートリアルが終わる頃には、スタイルに精通した魔術師のように文書を結合するプロになっていることでしょう。
 
 ## 前提条件
 
 このドキュメント結合の冒険に乗り出す前に、必要なものがすべて揃っていることを確認しましょう。
 
--  Aspose.Words for .NET: 最新バージョンであることを確認してください。そうでない場合は、[ダウンロードページ](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: 最新バージョンを入手してください。そうでない場合は、[ダウンロードページ](https://releases.aspose.com/words/net/).
 - 開発環境: Visual Studio など、.NET と互換性のある環境であれば何でも構いません。
 - 2 つの Word 文書: このチュートリアルでは、「Document source.docx」と「Northwind traders.docx」を使用します。
 -  Asposeライセンス: 制限を回避するには、[一時ライセンス](https://purchase.aspose.com/temporary-license/)まだ購入していない場合。

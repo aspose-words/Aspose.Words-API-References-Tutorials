@@ -103,7 +103,7 @@ En este ejemplo, abrimos un documento con campos de combinación, configuramos l
 ```java
 Document doc = new Document("Your Directory Path" + "Table with fields.docx");
 
-// Establecer opciones de limpieza para eliminar campos que contienen
+// Establecer opciones de limpieza para eliminar los campos que los contienen
 doc.getMailMerge().setCleanupOptions(MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS);
 
 // Ejecutar combinación de correspondencia

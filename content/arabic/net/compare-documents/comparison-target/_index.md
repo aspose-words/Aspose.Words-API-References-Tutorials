@@ -59,7 +59,7 @@ Document docA = new Document(dataDir + "DocumentA.docx");
 Document docB = new Document(dataDir + "DocumentB.docx");
 ```
 
-## الخطوة 4: استنساخ المستند
+## الخطوة 4: استنساخ الوثيقة
 
 يشبه الاستنساخ عمل توأم متطابق للمستند الخاص بك. تضمن هذه الخطوة حصولك على نسخة احتياطية للمقارنة مع النسخة الأصلية.
 

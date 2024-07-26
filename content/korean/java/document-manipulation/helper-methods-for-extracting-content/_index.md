@@ -160,6 +160,6 @@ Word 문서에서 콘텐츠를 추출하는 것은 많은 문서 처리 작업�
 
 예, 생성된 문서에서 가져온 노드를 수정하여 추출된 컨텐츠의 형식을 사용자 정의할 수 있습니다. Aspose.Words for Java는 귀하의 요구에 맞는 광범위한 형식 지정 옵션을 제공합니다.
 
-### Aspose.Words for Java에 대한 추가 문서와 예제는 어디서 찾을 수 있나요?
+### Aspose.Words for Java에 대한 추가 문서와 예제는 어디에서 찾을 수 있나요?
 
  Aspose 웹사이트에서 Aspose.Words for Java에 대한 포괄적인 문서와 예제를 찾을 수 있습니다. 방문하다[https://reference.aspose.com/words/java/](https://reference.aspose.com/words/java/) 자세한 문서 및 리소스를 확인하세요.

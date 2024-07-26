@@ -61,7 +61,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ```csharp
 // Um dies zu verhindern, entfernen Sie die Verknüpfungen zwischen Kopf- und Fußzeilen im Quelldokument.
-//daran hindert, die Kopf- und Fußzeilen des Zieldokuments fortzusetzen.
+//daran, die Kopf- und Fußzeilen des Zieldokuments fortzusetzen.
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 ```
 

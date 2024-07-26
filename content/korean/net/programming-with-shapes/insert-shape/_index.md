@@ -17,7 +17,7 @@ url: /ko/net/programming-with-shapes/insert-shape/
 - C# 및 Word 문서를 사용한 단어 처리에 대한 기본 지식.
 
 ## 1단계: 문서 디렉터리 설정
- 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
+ 문서 디렉터리 경로를 설정하는 것부터 시작하세요. 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서를 저장하려는 디렉토리의 실제 경로를 사용하십시오.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## 3단계: 도형 삽입
- 사용`InsertShape` 의 방법`DocumentBuilder`문서에 도형을 삽입하는 개체입니다. 모양 유형, 상대 수평 및 수직 위치, 페이지 크기, 크기 및 배치 유형을 지정합니다. 원하는 경우 모양의 회전 각도를 설정할 수도 있습니다.
+ 사용`InsertShape` 의 방법`DocumentBuilder` 문서에 도형을 삽입하는 개체입니다. 모양 유형, 상대 수평 및 수직 위치, 페이지 크기, 크기 및 배치 유형을 지정합니다. 원하는 경우 모양의 회전 각도를 설정할 수도 있습니다.
 
 ```csharp
 Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.Page, 100,

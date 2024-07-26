@@ -16,5 +16,5 @@ Egal, ob Sie Anfänger oder erfahrener Entwickler sind, diese Tutorials helfen I
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Bereiche löschen Text im Word-Dokument](./ranges-delete-text/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Text in bestimmten Bereichen in einem Word-Dokument löschen. |
-| [Bereiche erhalten Text im Word-Dokument](./ranges-get-text/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET ganz einfach Text aus einem Word-Dokument extrahieren. |
+| [Bereiche löschen Text im Word-Dokument](./ranges-delete-text/) | Erfahren Sie in diesem Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET Text aus einem Bereich in einem Word-Dokument löschen. Perfekt für C#-Entwickler. |
+| [Bereiche erhalten Text im Word-Dokument](./ranges-get-text/) | Extrahieren Sie mühelos Text aus Word-Dokumenten mit Aspose.Words für .NET. Folgen Sie unserer ausführlichen Anleitung, um problemlos loszulegen. |

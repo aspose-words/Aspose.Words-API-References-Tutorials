@@ -54,7 +54,7 @@ Install-Package Aspose.Words
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2. 載入 PDF：使用`Document`Aspose.Words 中的類別來載入 PDF。
+2. 載入 PDF：使用`Document`來自 Aspose.Words 的類別來載入 PDF。
 
     ```csharp
     Document doc = new Document(dataDir + "Pdf Document.pdf");
@@ -74,7 +74,7 @@ Install-Package Aspose.Words
 
 ## 結論
 
-現在你就得到它了！使用 Aspose.Words for .NET 將 PDF 轉換為 JPEG 非常簡單。只需幾行程式碼，您就可以轉換文件並打開一個充滿可能性的世界。無論您是希望簡化工作流程的開發人員還是只是喜歡修改程式碼的開發人員，Aspose.Words 都能滿足您的需求。
+現在你就擁有了！使用 Aspose.Words for .NET 將 PDF 轉換為 JPEG 非常簡單。只需幾行程式碼，您就可以轉換文件並打開一個充滿可能性的世界。無論您是希望簡化工作流程的開發人員還是只是喜歡修改程式碼的開發人員，Aspose.Words 都能滿足您的需求。
 
 ## 常見問題解答
 

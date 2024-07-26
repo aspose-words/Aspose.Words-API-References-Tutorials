@@ -43,7 +43,7 @@ Stellen Sie sicher, dass Sie ein neues oder vorhandenes C#-Projekt in Visual Stu
 
 ## Schritt 2: Aspose.Words-Referenz hinzufügen
 
-Wenn Sie dies noch nicht getan haben, fügen Sie in Ihrem Visual Studio-Projekt einen Verweis auf Aspose.Words hinzu. Gehen Sie dazu folgendermaßen vor:
+Wenn Sie dies noch nicht getan haben, fügen Sie in Ihrem Visual Studio-Projekt einen Verweis auf Aspose.Words hinzu. Gehen Sie dazu wie folgt vor:
    - Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt.
    - „NuGet-Pakete verwalten …“ auswählen
    - Suchen Sie nach „Aspose.Words“ und installieren Sie es in Ihrem Projekt.

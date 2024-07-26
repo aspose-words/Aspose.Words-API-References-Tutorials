@@ -12,7 +12,7 @@ Si buscas imprimir documentos usando Aspose.Words para Java, estás en el lugar 
 
 ## Introducción
 
-Imprimir documentos es una tarea común en muchas aplicaciones. Aspose.Words para Java proporciona una potente API para trabajar con documentos de Word, incluida la capacidad de imprimirlos. En este tutorial, lo guiaremos paso a paso a través del proceso de impresión de un documento de Word.
+Imprimir documentos es una tarea común en muchas aplicaciones. Aspose.Words para Java proporciona una potente API para trabajar con documentos de Word, incluida la capacidad de imprimirlos. En este tutorial, lo guiaremos a través del proceso de impresión de un documento de Word paso a paso.
 
 ## Configurando su entorno
 
@@ -97,7 +97,7 @@ class MultipagePrintDocument implements Printable
         Dimension thumbCount = getThumbCount(mPagesPerSheet, pf);
         // Calcule el índice de la página que se representará a continuación.
         int pagesOnCurrentSheet = (int) (page * (thumbCount.getWidth() * thumbCount.getHeight()));
-        // Si el índice de la página es mayor que el rango total de páginas, entonces no hay nada
+        // Si el índice de la página es mayor que el rango total de páginas, entonces no hay nada.
         // más para renderizar.
         if (pagesOnCurrentSheet > (toPage - fromPage))
             return Printable.NO_SUCH_PAGE;

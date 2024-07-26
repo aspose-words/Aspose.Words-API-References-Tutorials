@@ -91,7 +91,7 @@ foreach (Revision revision in doc.Revisions)
 
 #### Otázka: Jak zkontrolovat, zda revize patří do skupiny v Aspose.Words pro .NET?
 
- A: Použijte`Group` vlastnictvím`Revision` objekt pro kontrolu, zda revize patří do skupiny. Pokud`Group` majetek je`null`, to znamená, že revize nepatří do žádné skupiny.
+ A: Použijte`Group` majetek z`Revision` objekt pro kontrolu, zda revize patří do skupiny. Pokud`Group` majetek je`null`, to znamená, že revize nepatří do žádné skupiny.
 
 ```csharp
 if (revision.Group != null)

@@ -18,7 +18,7 @@ Word 문서를 암호로 보호하는 핵심 사항에 대해 알아보기 전�
 1.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 기타 C# 개발 환경.
 3. 기본 C# 지식: C# 프로그래밍에 대한 기본적인 이해입니다.
-4.  라이선스 Aspose: 다음에서 라이선스를 받으세요.[여기](https://purchase.aspose.com/buy)또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+4.  라이선스 Aspose: 다음에서 라이선스를 받으세요.[여기](https://purchase.aspose.com/buy)또는[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ## 네임스페이스 가져오기
 

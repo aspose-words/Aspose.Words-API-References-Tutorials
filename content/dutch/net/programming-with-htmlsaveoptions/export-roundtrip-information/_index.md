@@ -2,62 +2,84 @@
 title: Retourinformatie exporteren
 linktitle: Retourinformatie exporteren
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het exporteren van retourinformatie bij het opslaan van een document als HTML met Aspose.Words voor .NET.
+description: Leer hoe u retourinformatie kunt exporteren met Aspose.Words voor .NET. Behoud de integriteit en opmaak van uw document tijdens conversies.
 type: docs
 weight: 10
 url: /nl/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u door de C#-broncode om roundtrip-informatie uit een document te exporteren met Aspose.Words voor .NET. Met deze functie kunt u roundtrip-informatie opnemen in het geëxporteerde HTML-bestand, waardoor het gemakkelijker wordt om wijzigingen op te halen die in het originele document zijn aangebracht.
+Welkom in de wondere wereld van Aspose.Words voor .NET! Vandaag duiken we diep in een handige functie die u veel tijd en moeite kan besparen: het exporteren van retourinformatie. Stel je voor dat je een Word-document converteert naar HTML en omgekeerd, zonder cruciale gegevens of opmaak te verliezen. Klinkt als een droom, toch? Nou, het is heel goed mogelijk met Aspose.Words. Zet je schrap en laten we aan deze spannende reis beginnen!
 
-## Stap 1: Projectconfiguratie
+## Vereisten
 
-Maak om te beginnen een nieuw C#-project in uw favoriete IDE. Zorg ervoor dat er in uw project naar de Aspose.Words voor .NET-bibliotheek wordt verwezen.
+Voordat we in de moeren en bouten duiken, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben:
 
-## Stap 2: Het document laden
+1.  Aspose.Words voor .NET: Zorg ervoor dat je de nieuwste versie hebt.[Download het hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Visual Studio of een andere C#-compatibele IDE.
+3. Basiskennis van C#: Het helpt om een beetje bekend te zijn met C# en het .NET-framework.
+4. Licentie: U kunt een tijdelijke licentie gebruiken als u niet over een volledige licentie beschikt. Snap je[hier](https://purchase.aspose.com/temporary-license/).
 
-In deze stap laden we het document dat we willen exporteren. Gebruik de volgende code om het document vanuit een opgegeven map te laden:
+## Naamruimten importeren
+
+Allereerst moeten we de benodigde naamruimten importeren om aan de slag te gaan met Aspose.Words voor .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Laten we het proces nu opsplitsen in beheersbare stappen. Elke stap gaat vergezeld van gedetailleerde uitleg om ervoor te zorgen dat u geen enkele stap mist.
+
+## Stap 1: Stel uw documentenmap in
+
+Eerst moet u het pad naar uw documentenmap instellen. Dit is waar uw Word-document wordt opgeslagen en waar het HTML-bestand wordt opgeslagen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Stap 2: Laad het Word-document
+
+Laad vervolgens het Word-document dat u wilt converteren. Voor deze zelfstudie gebruiken we een document met de naam "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Met deze code wordt een exemplaar gemaakt van`Document` door het document uit de opgegeven map te laden.
+## Stap 3: Configureer HTML-opslagopties
 
-## Stap 3: HTML-back-upopties configureren
-
-Nu gaan we de HTML-opslagopties configureren om de retourinformatie van het document te exporteren. Gebruik de volgende code:
+Dit is waar de magie gebeurt. We moeten de HTML-opslagopties instellen, met name de eigenschap ExportRoundtripInformation inschakelen. Dit zorgt ervoor dat alle retourinformatie tijdens de conversie behouden blijft.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
 ```
 
- Met deze code wordt een exemplaar gemaakt van`HtmlSaveOptions` en stelt de`ExportRoundtripInformation` optie om`true` om retourinformatie op te nemen bij het exporteren.
+## Stap 4: Sla het document op als HTML
 
-## Stap 4: Het document converteren en opslaan naar HTML
-
-Ten slotte zullen we het document naar HTML converteren met behulp van de eerder geconfigureerde HTML-opslagopties. Gebruik de volgende code:
+Sla het document ten slotte op als HTML-bestand met behulp van de geconfigureerde opslagopties. Deze stap zorgt ervoor dat het document alle opmaak en gegevens behoudt wanneer het wordt geconverteerd naar HTML en terug naar Word.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
 ```
 
-Deze code converteert het document naar HTML, inclusief de roundtrip-informatie, en slaat het geëxporteerde HTML-bestand op in de opgegeven map.
+## Conclusie
 
-### Voorbeeldbroncode voor het exporteren van roundtrip-informatie met Aspose.Words voor .NET
+En daar heb je het! Met slechts een paar regels code hebt u met succes roundtrip-informatie van een Word-document naar HTML geëxporteerd met behulp van Aspose.Words voor .NET. Deze krachtige functie zorgt ervoor dat uw documenten hun integriteit en opmaak behouden tijdens conversies, waardoor uw leven veel gemakkelijker wordt.
 
+## Veelgestelde vragen
 
-```csharp
+### Wat is retourinformatie in Aspose.Words?
+Roundtrip-informatie verwijst naar gegevens die de integriteit en opmaak van een document garanderen wanneer het van het ene formaat naar het andere wordt geconverteerd en weer terug.
 
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+### Kan ik Aspose.Words voor .NET gebruiken zonder licentie?
+Ja, u kunt het gebruiken met een tijdelijke licentie die u kunt krijgen[hier](https://purchase.aspose.com/temporary-license/).
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
+### Waar kan ik de nieuwste versie van Aspose.Words voor .NET vinden?
+ U kunt de nieuwste versie downloaden[hier](https://releases.aspose.com/words/net/).
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
+### Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap[hier](https://forum.aspose.com/c/words/8).
 
-```
-
- Zorg ervoor dat u het juiste pad naar de documentenmap opgeeft in het`dataDir` variabel.
+### Is het mogelijk om de opmaak te behouden bij het converteren van Word-documenten naar HTML?
+Ja, door de eigenschap ExportRoundtripInformation in HtmlSaveOptions te gebruiken, kunt u alle opmaak behouden tijdens de conversie.

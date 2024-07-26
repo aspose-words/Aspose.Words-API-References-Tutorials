@@ -2,7 +2,7 @@
 title: ドキュメントのヘッダーとフッターのスタイル
 linktitle: ドキュメントのヘッダーとフッターのスタイル
 second_title: Aspose.Words Java ドキュメント処理 API
-description: この詳細なガイドでは、Aspose.Words for Java を使用してドキュメントのヘッダーとフッターにスタイルを設定する方法を学習します。ステップバイステップの手順とソース コードが含まれています。
+description: この詳細なガイドでは、Aspose.Words for Java を使用してドキュメントのヘッダーとフッターにスタイルを設定する方法を説明します。ステップバイステップの手順とソース コードが含まれています。
 type: docs
 weight: 14
 url: /ja/java/document-styling/document-header-footer-styling/

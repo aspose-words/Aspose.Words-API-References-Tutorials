@@ -28,7 +28,7 @@ Aspose.Words for Java로 워드 프로세싱을 배워보세요. 프로그래밍
 ### [테이블 처리](./table-processing/)
 Aspose.Word for Java를 사용하는 Java 개발자를 위한 강력한 테이블 처리 API를 알아보세요. Word 문서에서 테이블을 만들고, 조작하고, 서식을 지정하세요. 지금 귀하의 문서 처리 애플리케이션을 강화하십시오.
 ### [문서 스타일링](./document-styling/)
-Java 튜토리얼용 Aspose.Words를 사용한 마스터 문서 스타일링. 시각적으로 매력적이고 효율적인 문서를 위한 고급 서식 지정 기술을 알아보세요. 
+Aspose.Words for Java 튜토리얼을 사용한 마스터 문서 스타일링. 시각적으로 매력적이고 효율적인 문서를 위한 고급 서식 지정 기술을 알아보세요. 
 ### [문서 병합](./document-merging/)
 Aspose.Words를 사용하여 Java에서 문서 병합의 가능성을 열어보세요! 자세한 튜토리얼을 통해 효율적인 문서 병합, 워드 프로세싱 및 문서 처리를 배우십시오. 
 ### [문서 변환](./document-converting/)

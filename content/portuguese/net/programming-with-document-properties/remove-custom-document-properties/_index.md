@@ -62,7 +62,7 @@ var customProperties = doc.CustomDocumentProperties;
 
 ### Etapa 2.2: Remover a propriedade específica
 
-Em seguida, remova a propriedade customizada específica por seu nome. Neste exemplo, estamos removendo “Data Autorizada”.
+Em seguida, remova a propriedade customizada específica por seu nome. Neste exemplo, estamos removendo "Data Autorizada".
 
 ```csharp
 customProperties.Remove("Authorized Date");

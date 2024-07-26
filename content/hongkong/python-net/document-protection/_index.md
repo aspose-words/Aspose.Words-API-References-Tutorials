@@ -11,7 +11,7 @@ url: /zh-hant/python-net/document-protection/
 
 ## 使用 Python 保護您的文檔
 
-在這些教學中，開發人員將探索如何利用 Aspose.Words for Python 透過密碼加密來保護文件、限制編輯和管理使用者權限。 Aspose.Words 提供靈活的選項來自訂文件保護設置，確保機密資料保持安全並且只有授權使用者才能存取。
+在這些教學中，開發人員將探索如何利用 Aspose.Words for Python 透過密碼加密來保護文件、限制編輯和管理使用者權限。 Aspose.Words 提供靈活的選項來自訂文件保護設置，確保機密資料保持安全並且只有授權使用者可以存取。
 
 ## 加強文件安全
 

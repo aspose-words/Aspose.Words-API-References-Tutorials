@@ -119,4 +119,4 @@ Aspose.Words for .NET을 사용하여 Word 문서에서 책갈피를 푸는 것�
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
 
- 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 라이센스를 구매하실 수 있습니다[여기](https://purchase.aspose.com/buy) 또는 요청[임시 면허증](https://purchase.aspose.com/temporary-license) 평가 목적으로.
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 라이센스를 구매하실 수 있습니다[여기](https://purchase.aspose.com/buy) 또는 요청[임시면허](https://purchase.aspose.com/temporary-license) 평가 목적으로.

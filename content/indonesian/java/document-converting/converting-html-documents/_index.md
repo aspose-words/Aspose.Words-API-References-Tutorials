@@ -90,7 +90,7 @@ Sangat! Aspose.Words dirancang untuk menangani tugas pemrosesan dokumen berskala
 
 ### Apakah ada persyaratan lisensi untuk menggunakan Aspose.Words?
 
-Ya, Aspose.Words memerlukan lisensi yang valid untuk penggunaan komersial. Anda dapat memperoleh lisensi dari situs Aspose.
+Ya, Aspose.Words memerlukan lisensi yang sah untuk penggunaan komersial. Anda dapat memperoleh lisensi dari situs Aspose.
 
 ### Bisakah saya menyesuaikan proses konversi untuk kebutuhan tertentu?
 

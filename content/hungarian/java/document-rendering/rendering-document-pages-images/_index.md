@@ -25,7 +25,7 @@ Mielőtt elkezdené a kódolást, győződjön meg arról, hogy a következő el
 Kezdjük egy új Java projekt létrehozásával. Használhatja kedvenc Integrált Fejlesztési Környezetét (IDE), vagy a projektet parancssori eszközökkel építheti fel.
 
 ```java
-// Java kód minta új projekt létrehozásához
+// Java-kód minta új projekt létrehozásához
 public class DocumentToImageConversion {
     public static void main(String[] args) {
         // A kódod ide kerül
@@ -35,7 +35,7 @@ public class DocumentToImageConversion {
 
 ## 2. lépés: Töltse be a dokumentumot
 
-Ebben a lépésben betöltjük azt a Word-dokumentumot, amelyet képpé szeretnénk konvertálni. Mindenképpen cserélje ki`"sample.docx"` a dokumentum elérési útjával.
+Ebben a lépésben betöltjük azt a Word-dokumentumot, amelyet képpé szeretnénk konvertálni. Ügyeljen arra, hogy cserélje ki`"sample.docx"` a dokumentum elérési útjával.
 
 ```java
 // Töltse be a Word dokumentumot

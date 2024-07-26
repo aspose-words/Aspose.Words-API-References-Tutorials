@@ -9,7 +9,7 @@ url: /de/net/programming-with-document-options-and-settings/add-japanese-as-edit
 ---
 ## Einführung
 
-Haben Sie schon einmal versucht, ein Dokument zu öffnen und sich in einem Meer aus unlesbarem Text verloren gefühlt, weil die Spracheinstellungen alle falsch waren? Das ist, als würde man versuchen, eine Karte in einer Fremdsprache zu lesen! Wenn Sie mit Dokumenten in verschiedenen Sprachen arbeiten, insbesondere Japanisch, dann ist Aspose.Words für .NET Ihr bevorzugtes Tool. Dieser Artikel führt Sie Schritt für Schritt durch das Hinzufügen von Japanisch als Bearbeitungssprache zu Ihren Dokumenten mit Aspose.Words für .NET. Lassen Sie uns eintauchen und sicherstellen, dass Sie nie wieder in der Übersetzung verloren gehen!
+Haben Sie schon einmal versucht, ein Dokument zu öffnen und sich in einem Meer aus unlesbarem Text verloren, weil die Spracheinstellungen alle falsch waren? Das ist, als würde man versuchen, eine Karte in einer Fremdsprache zu lesen! Wenn Sie mit Dokumenten in verschiedenen Sprachen arbeiten, insbesondere Japanisch, dann ist Aspose.Words für .NET Ihr bevorzugtes Tool. Dieser Artikel führt Sie Schritt für Schritt durch das Hinzufügen von Japanisch als Bearbeitungssprache zu Ihren Dokumenten mit Aspose.Words für .NET. Lassen Sie uns eintauchen und sicherstellen, dass Sie nie wieder in der Übersetzung verloren gehen!
 
 ## Voraussetzungen
 

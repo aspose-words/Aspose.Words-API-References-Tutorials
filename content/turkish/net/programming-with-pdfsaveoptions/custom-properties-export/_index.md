@@ -2,92 +2,88 @@
 title: PDF Belgesinde Özel Özellikleri Dışa Aktarma
 linktitle: PDF Belgesinde Özel Özellikleri Dışa Aktarma
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile belgeleri PDF'ye dönüştürürken özel özellikleri nasıl dışa aktaracağınızı öğrenin.
+description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET kullanarak özel özellikleri bir PDF belgesine nasıl aktaracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgenin özel özelliklerini bir PDF belgesine dışa aktarma adımlarında size yol göstereceğiz. Özel özellikleri dışa aktarmak, oluşturulan PDF belgesine ek bilgiler eklemenizi sağlar. Aşağıdaki adımları takip et:
+Özel özellikleri bir PDF belgesine aktarmak, çeşitli iş ihtiyaçları için inanılmaz derecede yararlı olabilir. İster daha iyi aranabilirlik için meta verileri yönetiyor olun ister kritik bilgileri doğrudan belgelerinize yerleştiriyor olun, Aspose.Words for .NET süreci kusursuz hale getirir. Bu eğitim, bir Word belgesi oluşturma, özel özellikler ekleme ve bunları bu özellikler bozulmadan bir PDF'ye aktarma konusunda size rehberlik edecektir.
 
-## Adım 1: Belge Oluşturma ve Özel Özellikler Ekleme
+## Önkoşullar
 
-Document sınıfının bir örneğini oluşturarak başlayın:
+Koda dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+
+-  Aspose.Words for .NET kuruldu. Henüz yüklemediyseniz indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- Visual Studio gibi bir geliştirme ortamı.
+- Temel C# programlama bilgisi.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle projenize gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları, Word belgelerini işlemek ve bunları PDF olarak dışa aktarmak için gereken sınıfları ve yöntemleri içerir.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Süreci basit, yönetilebilir adımlara ayıralım.
+
+## 1. Adım: Belgeyi Başlatın
+
+Başlamak için yeni bir belge nesnesi oluşturmanız gerekir. Bu nesne, özel özelliklerin eklenmesi ve PDF'ye dışa aktarılması için temel görevi görecektir.
+
+```csharp
+// Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## 2. Adım: Özel özellikler ekleyin
- Daha sonra istediğiniz özel özellikleri ekleyin. Örneğin, "Aspose" değerine sahip bir "Şirket" özelliği eklemek için şunu kullanın:`Add` CustomDocumentProperties koleksiyonunun yöntemi:
+## 2. Adım: Özel Özellikler Ekleme
+
+Daha sonra belgenize özel özellikler ekleyeceksiniz. Bu özellikler şirket adı, yazar veya diğer ilgili bilgiler gibi meta verileri içerebilir.
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-Gerektiği kadar çok sayıda özel özellik ekleyebilirsiniz.
+## 3. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
 
-## 3. Adım: PDF dışa aktarma seçeneklerini ayarlayın
-
-PdfSaveOptions sınıfının bir örneğini oluşturun ve özel özelliklerin nasıl dışa aktarılacağını belirtin:
+ Şimdi, belgeyi dışa aktarırken özel özelliklerin dahil edilmesini sağlamak için PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` class, belgenin PDF olarak nasıl kaydedileceğini kontrol etmek için çeşitli ayarlar sağlar.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    CustomPropertiesExport = PdfCustomPropertiesExport.Standard
+};
 ```
 
-Bu seçenek, PDF'ye dönüştürürken özel özelliklerin dışa aktarılmasını kontrol eder.
+## 4. Adım: Belgeyi PDF olarak kaydedin
 
-## Adım 4: Belgeyi PDF'ye Dönüştürün
-
- Kullan`Save` Dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi:
+ Son olarak belgeyi belirtilen dizine PDF olarak kaydedin.`Save` yöntemi, önceki tüm adımları birleştirir ve dahil edilen özel özelliklere sahip bir PDF oluşturur.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
-
-### Aspose.Words for .NET kullanarak Özel Özellikleri Dışa Aktarma için örnek kaynak kodu
-
-Aspose.Words for .NET kullanarak özel özellikleri bir belgeden dışa aktarmak için gereken kaynak kodun tamamı burada:
-
-
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	doc.CustomDocumentProperties.Add("Company", "Aspose");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
-
-```
-
-Bu adımları izleyerek, Aspose.Words for .NET ile PDF'ye dönüştürürken bir belgenin özel özelliklerini kolayca dışa aktarabilirsiniz.
-
-
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak özel özelliklerin bir belgeden PDF belgesine nasıl aktarılacağını açıkladık. Açıklanan adımları izleyerek, belgenin özel özelliklerini dışa aktararak oluşturulan PDF belgesine kolayca ek bilgiler ekleyebilirsiniz. Özel özellikleri dışa aktararak PDF belgelerinizi kişiselleştirmek ve zenginleştirmek için Aspose.Words for .NET'in özelliklerinden yararlanın.
+Aspose.Words for .NET kullanarak özel özellikleri bir PDF belgesine aktarmak, belge yönetimi yeteneklerinizi büyük ölçüde geliştirebilecek basit bir işlemdir. Bu adımları izleyerek, kritik meta verilerin korunmasını ve erişilebilir olmasını sağlayarak dijital belgelerinizin verimliliğini ve organizasyonunu iyileştirebilirsiniz.
 
-### Sıkça Sorulan Sorular
+## SSS'ler
 
-#### S: Özel özellikleri bir PDF belgesine aktarmak nedir?
-C: Özel özelliklerin bir PDF belgesine aktarılması, oluşturulan PDF belgesine ek bilgilerin eklenmesine olanak tanır. Özel özellikler; etiketler, anahtar kelimeler veya kimlik bilgileri gibi belgenize özel meta verilerdir. Bu özel özellikleri dışa aktararak, PDF belgesini görüntülerken bunları kullanıcıların kullanımına sunabilirsiniz.
+### Bir PDF belgesindeki özel özellikler nelerdir?
+Özel özellikler, bir belgeye eklenen, yazar, şirket adı veya belgeye yerleştirilmesi gereken diğer ilgili verileri içerebilen meta verilerdir.
 
-#### S: Aspose.Words for .NET'i kullanarak bir belgenin özel özelliklerini bir PDF belgesine nasıl aktarabilirim?
-C: Aspose.Words for .NET kullanarak bir belgenin özel özelliklerini PDF belgesine aktarmak için şu adımları izleyin:
+### Özel özellikleri dışa aktarmak için neden Aspose.Words for .NET kullanmalıyım?
+Aspose.Words for .NET, Word belgelerini düzenlemek ve bunları PDF olarak dışa aktarmak için sağlam ve kullanımı kolay bir API sağlayarak özel özelliklerin korunmasını ve erişilebilir olmasını sağlar.
 
- Bir örneğini oluşturun`Document` sınıf.
+### Bir belgeye birden fazla özel özellik ekleyebilir miyim?
+ Evet, bir belgeye birden fazla özel özelliği çağırarak ekleyebilirsiniz.`Add`Eklemek istediğiniz her özellik için yöntem.
 
- İstenilen özel özellikleri kullanarak ekleyin`CustomDocumentProperties` Toplamak. Örneğin, şunu kullanın:`Add` "Aspose" değerine sahip bir "Şirket" özelliği ekleme yöntemi.
+### Aspose.Words for .NET'i kullanarak başka hangi formatlara aktarabilirim?
+Aspose.Words for .NET, DOCX, HTML, EPUB ve çok daha fazlası dahil olmak üzere çeşitli formatlara aktarmayı destekler.
 
- Bir örneğini oluşturun`PdfSaveOptions` sınıfını seçin ve özel özelliklerin nasıl dışa aktarılacağını belirtin.`CustomPropertiesExport` mülk.`PdfCustomPropertiesExport.Standard` değer, özel özellikleri varsayılan ayarlara göre dışa aktarır.
-
- Kullan`Save` yöntemi`Document` Dönüştürme seçeneklerini belirterek belgeyi PDF'ye dönüştürmek için sınıf.
-
-#### S: Bir PDF belgesinin özel özelliklerine nasıl erişebilirim?
-C: Bir PDF belgesinin özel özelliklerine erişmek için belge özelliklerini görüntülemeyi destekleyen uyumlu bir PDF okuyucu kullanabilirsiniz. Adobe Acrobat Reader gibi en yaygın PDF okuyucuları, bir PDF belgesinin meta verilerine ve özelliklerine erişim sağlar. Bu seçenekleri genellikle "Dosya" menüsünde veya belgeye sağ tıklayıp "Özellikler"i seçerek bulabilirsiniz.
+### Sorunla karşılaşırsam nereden destek alabilirim?
+ Destek için şu adresi ziyaret edebilirsiniz:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım için.

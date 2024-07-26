@@ -79,7 +79,7 @@ Tuyệt đối! Aspose.Words for Java được sử dụng rộng rãi để t�
 
 ### 3. Aspose.Words cho Java có hỗ trợ các kiểu nhận xét khác nhau không?
 
-Có, Aspose.Words for Java cung cấp tính linh hoạt trong việc tùy chỉnh các kiểu nhận xét để đáp ứng các yêu cầu cụ thể của bạn.
+Có, Aspose.Words for Java cung cấp tính linh hoạt trong việc tùy chỉnh kiểu nhận xét để đáp ứng các yêu cầu cụ thể của bạn.
 
 ### 4. Có giới hạn nào về độ dài của bình luận không?
 

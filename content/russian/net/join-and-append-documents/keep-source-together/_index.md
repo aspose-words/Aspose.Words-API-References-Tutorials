@@ -2,7 +2,7 @@
 title: Храните исходный код вместе
 linktitle: Храните исходный код вместе
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как объединить документы Word с помощью Aspose.Words для .NET, сохраняя при этом форматирование. Это подробное руководство охватывает все от настройки до запуска.
+description: Узнайте, как объединить документы Word с помощью Aspose.Words для .NET, сохраняя при этом форматирование. Это подробное руководство охватывает все от настройки до выполнения.
 type: docs
 weight: 10
 url: /ru/net/join-and-append-documents/keep-source-together/
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.DocumentBuilder;
 ```
 
-## Шаг 1. Загрузите документы
+## Шаг 1. Загрузите документы
 
  Сначала загрузите исходные и целевые документы в Aspose.Words.`Document` объекты.
 

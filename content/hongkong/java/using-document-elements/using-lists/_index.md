@@ -214,7 +214,7 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
 
 ## 結論
 
-恭喜！您已經了解如何在 Aspose.Words for Java 中有效地使用清單。清單對於組織和呈現文件中的內容至關重要。無論您需要在每個部分重新啟動清單還是指定清單級別，Aspose.Words for Java 都能提供您建立具有專業外觀的文件所需的工具。
+恭喜！您已經了解如何在 Aspose.Words for Java 中有效地使用清單。清單對於組織和呈現文件中的內容至關重要。無論您需要在每個部分重新啟動清單還是指定清單級別，Aspose.Words for Java 都能提供建立具有專業外觀的文件所需的工具。
 
 現在，您可以自信地使用這些功能來增強文件生成和格式化任務。如果您有任何疑問或需要進一步協助，請隨時聯繫[Aspose 社群論壇](https://forum.aspose.com/)為了支持。
 

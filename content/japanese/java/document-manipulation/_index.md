@@ -87,7 +87,7 @@ Aspose.Words for Java でドキュメントを複製および結合する方法�
 ### [Aspose.Words for Java でドキュメントを比較する](./comparing-documents/)
 効率的なドキュメント分析のための強力な Java ライブラリである Aspose.Words for Java でドキュメントを比較する方法を学習します。 
 ### [Aspose.Words for Java でのドキュメントの書式設定](./formatting-documents/)
-弊社の総合ガイドで、Aspose.Words for Java でのドキュメントの書式設定の技術を習得してください。強力な機能を調べて、ドキュメント処理スキルを強化してください。
+包括的なガイドで、Aspose.Words for Java でのドキュメントの書式設定の技術を学習します。強力な機能を調べて、ドキュメント処理スキルを強化します。
 ### [Aspose.Words for Java でのドキュメントの結合と追加](./joining-and-appending-documents/)
 Aspose.Words for Java を使用して、ドキュメントを簡単に結合および追加する方法を学びます。書式設定を保持し、ヘッダーやフッターなどを管理します。
 ### [Aspose.Words for Java でのドキュメント オプションと設定の使用](./using-document-options-and-settings/)

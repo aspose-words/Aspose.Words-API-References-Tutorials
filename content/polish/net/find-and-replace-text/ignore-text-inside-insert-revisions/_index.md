@@ -9,7 +9,7 @@ url: /pl/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 ## Wstęp
 
-W tym obszernym przewodniku zagłębimy się w wykorzystanie Aspose.Words dla .NET do skutecznego zarządzania wersjami dokumentów. Niezależnie od tego, czy jesteś programistą, czy entuzjastą technologii, zrozumienie, jak ignorować tekst we wkładanych wersjach, może usprawnić przepływ pracy podczas przetwarzania dokumentów. Ten samouczek wyposaży Cię w umiejętności niezbędne do wykorzystania zaawansowanych funkcji Aspose.Words do płynnego zarządzania wersjami dokumentów.
+W tym obszernym przewodniku zagłębimy się w wykorzystanie Aspose.Words dla .NET do skutecznego zarządzania wersjami dokumentów. Niezależnie od tego, czy jesteś programistą, czy entuzjastą technologii, zrozumienie, jak ignorować tekst we wstawkach, może usprawnić przepływ pracy w przetwarzaniu dokumentów. Ten samouczek wyposaży Cię w umiejętności niezbędne do wykorzystania zaawansowanych funkcji Aspose.Words do płynnego zarządzania wersjami dokumentów.
 
 ## Warunki wstępne
 

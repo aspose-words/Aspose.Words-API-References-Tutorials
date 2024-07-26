@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 ```
 
 ## 결론
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 VBA 프로젝트를 만드는 방법을 살펴보았습니다. VBA 프로젝트를 만들면 Word 문서에 VBA 코드를 추가하고 사용자 지정할 수 있습니다. 이 기능을 자유롭게 사용하여 작업을 자동화하거나 Word 문서에 사용자 지정 기능을 추가하세요.
+이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 VBA 프로젝트를 만드는 방법을 살펴보았습니다. VBA 프로젝트를 만들면 Word 문서에 VBA 코드를 추가하고 사용자 지정할 수 있습니다. 이 기능을 자유롭게 사용하여 작업을 자동화하거나 Word 문서에 사용자 정의 기능을 추가하세요.
 
 ### FAQ
 

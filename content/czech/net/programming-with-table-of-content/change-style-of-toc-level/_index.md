@@ -1,6 +1,6 @@
 ---
-title: Změňte styl obsahu v dokumentu aplikace Word
-linktitle: Změňte styl obsahu v dokumentu aplikace Word
+title: Změnit styl obsahu v dokumentu aplikace Word
+linktitle: Změnit styl obsahu v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak snadno změnit styl úrovně obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs
@@ -31,7 +31,7 @@ Jakmile je dokument vytvořen, můžete přistupovat ke stylům dokumentu a měn
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-V tomto příkladu používáme vlastnost Styles třídy Document pro přístup ke stylům dokumentu. Dále použijeme identifikátor stylu StyleIdentifier.Toc1 pro přístup ke stylu použitému pro první úroveň obsahu. Nakonec upravíme vlastnost Font.Bold stylu tak, aby byl tučný.
+tomto příkladu používáme vlastnost Styles třídy Document pro přístup ke stylům dokumentu. Dále použijeme identifikátor stylu StyleIdentifier.Toc1 pro přístup ke stylu použitému pro první úroveň obsahu. Nakonec upravíme vlastnost Font.Bold stylu tak, aby byl tučný.
 
 ## Uložte upravený dokument
 
@@ -61,7 +61,7 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Závěr
 
-V této příručce jsme vysvětlili, jak používat Aspose.Words pro .NET ke změně stylu úrovně obsahu dokumentu aplikace Word pomocí poskytnutého zdrojového kódu C#. Podle uvedených kroků můžete snadno přizpůsobit styl obsahu v dokumentech aplikace Word v aplikaci C#. Aspose.Words nabízí obrovskou flexibilitu a výkon pro práci se styly a formátováním vašich dokumentů, což vám umožňuje vytvářet atraktivní a profesionální dokumenty Word.
+této příručce jsme vysvětlili, jak používat Aspose.Words pro .NET ke změně stylu úrovně obsahu dokumentu aplikace Word pomocí poskytnutého zdrojového kódu C#. Podle uvedených kroků můžete snadno přizpůsobit styl obsahu v dokumentech aplikace Word v aplikaci C#. Aspose.Words nabízí obrovskou flexibilitu a výkon pro práci se styly a formátováním vašich dokumentů, což vám umožňuje vytvářet atraktivní a profesionální dokumenty Word.
 
 ### Časté dotazy pro změnu stylu obsahu v dokumentu aplikace Word
 
@@ -75,7 +75,7 @@ A: Aspose.Words for .NET je výkonná knihovna navržená pro zpracování textu
 
 #### Otázka: Jak vytvořím nový dokument aplikace Word pomocí Aspose.Words for .NET?
 
- A: Chcete-li vytvořit nový dokument aplikace Word pomocí Aspose.Words for .NET, můžete použít`Document` třída a její konstruktér. Inicializací nové instance`Document` třídy, můžete vytvořit prázdný dokument. Zde je příklad:
+ A: Chcete-li vytvořit nový dokument aplikace Word pomocí Aspose.Words for .NET, můžete použít`Document` třída a její konstruktér. Inicializací nové instance souboru`Document` třídy, můžete vytvořit prázdný dokument. Zde je příklad:
 
 ```csharp
 Document doc = new Document();
@@ -85,7 +85,7 @@ Tento fragment kódu vytvoří nový prázdný dokument aplikace Word.
 
 #### Otázka: Jak mohu změnit styl konkrétní úrovně v obsahu pomocí Aspose.Words for .NET?
 
- Odpověď: Po načtení dokumentu můžete upravit styl konkrétní úrovně v obsahu tak, že otevřete styly dokumentu a provedete potřebné změny. V Aspose.Words pro .NET můžete použít`Styles` vlastnictvím`Document` třídy pro přístup ke stylům dokumentu a poté upravte požadovaný styl pomocí jeho vlastností. Chcete-li například změnit styl první úrovně obsahu na tučné, můžete použít následující kód:
+ Odpověď: Po načtení dokumentu můžete upravit styl konkrétní úrovně v obsahu tak, že otevřete styly dokumentu a provedete potřebné změny. V Aspose.Words pro .NET můžete použít`Styles` majetek z`Document` třídy pro přístup ke stylům dokumentu a poté upravte požadovaný styl pomocí jeho vlastností. Chcete-li například změnit styl první úrovně obsahu na tučné, můžete použít následující kód:
 
 ```csharp
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### Otázka: Mohu změnit styl více úrovní v obsahu pomocí Aspose.Words for .NET?
 
- Odpověď: Ano, pomocí Aspose.Words for .NET můžete změnit styl více úrovní v obsahu. Chcete-li upravit styl určité úrovně, můžete získat přístup k odpovídajícímu stylu pomocí`Styles` proveďte požadované změny na každé úrovni jednotlivě.
+Odpověď: Ano, pomocí Aspose.Words for .NET můžete změnit styl více úrovní v obsahu. Chcete-li upravit styl určité úrovně, můžete získat přístup k odpovídajícímu stylu pomocí`Styles` a proveďte požadované změny na každé úrovni jednotlivě.
 
 #### Otázka: Jak uložím upravený dokument po změně stylu obsahu pomocí Aspose.Words for .NET?
 
@@ -113,11 +113,11 @@ Odpověď: Ano, kromě změny stylu můžete použít různé změny formátová
 
 #### Otázka: Jak mohu určit vlastní styl pro konkrétní úroveň v obsahu pomocí Aspose.Words for .NET?
 
- A: Chcete-li určit vlastní styl pro konkrétní úroveň v obsahu pomocí Aspose.Words for .NET, můžete vytvořit nový`Style` objektu, nakonfigurujte jeho vlastnosti podle požadovaného stylu a přiřaďte jej na odpovídající úroveň obsahu pomocí`Styles` vlastnictvím`Document` třída. To vám umožní definovat vlastní styl pro konkrétní úroveň na základě vašich požadavků.
+ A: Chcete-li určit vlastní styl pro konkrétní úroveň v obsahu pomocí Aspose.Words for .NET, můžete vytvořit nový`Style` objektu, nakonfigurujte jeho vlastnosti podle požadovaného stylu a přiřaďte jej na odpovídající úroveň obsahu pomocí`Styles` majetek z`Document` třída. To vám umožní definovat vlastní styl pro konkrétní úroveň na základě vašich požadavků.
 
 #### Otázka: Mohu změnit styl obsahu v existujícím dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
- Odpověď: Ano, můžete změnit styl obsahu v existujícím dokumentu aplikace Word pomocí Aspose.Words for .NET. Jednoduše vložte dokument pomocí`Document` třídy, upravte vlastnosti stylu pomocí`Styles` vlastnost a uložte dokument, abyste použili změny.
+Odpověď: Ano, můžete změnit styl obsahu v existujícím dokumentu aplikace Word pomocí Aspose.Words for .NET. Jednoduše vložte dokument pomocí`Document` třídy, upravte vlastnosti stylu pomocí`Styles` vlastnost a uložte dokument, abyste použili změny.
 
 #### Otázka: Podporuje Aspose.Words for .NET změnu jiných stylů a formátování v dokumentech aplikace Word?
 

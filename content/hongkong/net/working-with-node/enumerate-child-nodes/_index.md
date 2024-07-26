@@ -35,7 +35,7 @@ using Aspose.Words;
 Document doc = new Document();
 ```
 
-在此範例中，我們從空白文件開始，但您可以使用以下方式載入現有文件：
+在此範例中，我們從空白文件開始，但您可以使用以下方法載入現有文件：
 
 ```csharp
 Document doc = new Document("path/to/your/document.docx");

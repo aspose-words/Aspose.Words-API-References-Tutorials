@@ -15,7 +15,7 @@ In deze zelfstudie laten we u zien hoe u een Word-document in afzonderlijke pagi
 Om te beginnen geeft u de map voor uw document op en laadt u het document in een Document-object. Hier is hoe:
 
 ```csharp
-//Pad naar de documentenmap.
+// Pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

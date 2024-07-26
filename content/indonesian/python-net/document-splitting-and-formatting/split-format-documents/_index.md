@@ -10,7 +10,7 @@ url: /id/python-net/document-splitting-and-formatting/split-format-documents/
 Di dunia digital yang serba cepat saat ini, mengelola dan memformat dokumen secara efisien sangatlah penting bagi bisnis dan individu. Aspose.Words untuk Python menyediakan API yang kuat dan serbaguna yang memungkinkan Anda memanipulasi dan memformat dokumen dengan mudah. Dalam tutorial ini, kami akan memandu Anda langkah demi langkah tentang cara membagi dan memformat dokumen secara efisien menggunakan Aspose.Words untuk Python. Kami juga akan memberi Anda contoh kode sumber untuk setiap langkah, memastikan bahwa Anda memiliki pemahaman praktis tentang prosesnya.
 
 ## Prasyarat
-Sebelum kita mendalami tutorialnya, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita masuk ke tutorialnya, pastikan Anda memiliki prasyarat berikut:
 - Pemahaman dasar bahasa pemrograman Python.
 -  Menginstal Aspose.Words untuk Python. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/python/).
 - Contoh dokumen untuk pengujian.

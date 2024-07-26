@@ -75,4 +75,4 @@ public class DocumentToImageConverter {
  Aspose.Words for Java поддерживает различные форматы вывода, включая PDF, HTML и другие. Вы можете легко настроить`SaveFormat` в`ImageSaveOptions`конвертировать документы в желаемый формат.
 
 ### Где я могу найти дополнительную документацию и примеры?
- Подробную документацию и примеры кода см. на странице[Справочник по API Aspose.Words для Java](https://reference.aspose.com/words/java/).
+ Подробную документацию и примеры кода можно найти на странице[Справочник по API Aspose.Words для Java](https://reference.aspose.com/words/java/).

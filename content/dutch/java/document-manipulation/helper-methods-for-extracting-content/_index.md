@@ -69,7 +69,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     // Begin met het extraheren van inhoud. Verwerk alle knooppunten op blokniveau en splits specifiek de eerste
     // en laatste knooppunten indien nodig, zodat de alineaopmaak behouden blijft.
     // Deze methode is iets ingewikkelder dan een gewone extractor, omdat we er rekening mee moeten houden
-    // bij het extraheren met behulp van inline knooppunten, velden, bladwijzers, enz., om het nuttig te maken.
+    // bij het extraheren met behulp van inline knooppunten, velden, bladwijzers, enz., om het bruikbaar te maken.
     while (isExtracting) {
         // Kloon het huidige knooppunt en de onderliggende knooppunten om een kopie te verkrijgen.
         Node cloneNode = currNode.deepClone(true);

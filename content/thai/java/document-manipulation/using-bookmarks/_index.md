@@ -78,7 +78,7 @@ showHideBookmarkedContent(doc, "MyBookmark1", false);
 doc.save("Your Directory Path" + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-## ขั้นตอนที่ 6: แกะที่คั่นแถวออก
+## ขั้นตอนที่ 6: แกะที่คั่นแถวออกจากกัน
 
 บุ๊กมาร์กแถวที่ไม่พันกันช่วยให้คุณทำงานกับบุ๊กมาร์กแถวได้อย่างมีประสิทธิภาพมากขึ้น:
 

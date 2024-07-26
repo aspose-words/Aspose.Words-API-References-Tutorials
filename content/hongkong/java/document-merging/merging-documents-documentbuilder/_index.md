@@ -10,7 +10,7 @@ url: /zh-hant/java/document-merging/merging-documents-documentbuilder/
 
 ## 使用 DocumentBuilder 合併文件簡介
 
-在文件處理領域，Aspose.Words for Java 是操作和管理文件的強大工具。其主要功能之一是能夠使用 DocumentBuilder 無縫合併文件。在本逐步指南中，我們將探討如何透過程式碼範例實現此目標，確保您可以利用此功能來增強文件管理工作流程。
+在文件處理領域，Aspose.Words for Java 是操作和管理文件的強大工具。其主要功能之一是能夠使用 DocumentBuilder 無縫合併文件。在本逐步指南中，我們將探索如何透過程式碼範例實現此目標，確保您可以利用此功能來增強文件管理工作流程。
 
 ## 先決條件
 

@@ -17,7 +17,7 @@ url: /el/net/programming-with-sdt/creating-table-repeating-section-mapped-to-cus
 - Βασικές γνώσεις C# και Επεξεργασία λέξεων με έγγραφα Word.
 
 ## Βήμα 1: Ρυθμίστε τον Κατάλογο Εγγράφων
- Ξεκινήστε ρυθμίζοντας τη διαδρομή προς τον κατάλογο εγγράφων σας. Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"`με την πραγματική διαδρομή προς τον κατάλογο όπου θέλετε να αποθηκεύσετε το έγγραφο.
+ Ξεκινήστε ρυθμίζοντας τη διαδρομή προς τον κατάλογο εγγράφων σας. Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"` με την πραγματική διαδρομή προς τον κατάλογο όπου θέλετε να αποθηκεύσετε το έγγραφο.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Βήμα 4: Δημιουργήστε μια δομή πίνακα και πίνακα
- Ξεκινήστε τη δημιουργία ενός πίνακα χρησιμοποιώντας το`StartTable` μέθοδος του`DocumentBuilder` . Προσθέστε κελιά πίνακα και περιεχόμενο χρησιμοποιώντας το`InsertCell`και`Write` μεθόδους.
+Ξεκινήστε τη δημιουργία ενός πίνακα χρησιμοποιώντας το`StartTable` μέθοδος του`DocumentBuilder` . Προσθέστε κελιά πίνακα και περιεχόμενο χρησιμοποιώντας το`InsertCell`και`Write` μεθόδους.
 
 ```csharp
 Table table = builder.StartTable();
@@ -98,7 +98,7 @@ row.AppendChild(authorSdt);
 ```
 
 ## Βήμα 8: Αποθηκεύστε το έγγραφο
- Αποθηκεύστε το τροποποιημένο έγγραφο στον καθορισμένο κατάλογο χρησιμοποιώντας το`Save` μέθοδος. Δώστε το επιθυμητό όνομα αρχείου με την κατάλληλη επέκταση αρχείου. Σε αυτό το παράδειγμα, αποθηκεύουμε το έγγραφο ως "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
+ Αποθηκεύστε το τροποποιημένο έγγραφο στον καθορισμένο κατάλογο χρησιμοποιώντας το`Save`μέθοδος. Δώστε το επιθυμητό όνομα αρχείου με την κατάλληλη επέκταση αρχείου. Σε αυτό το παράδειγμα, αποθηκεύουμε το έγγραφο ως "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");

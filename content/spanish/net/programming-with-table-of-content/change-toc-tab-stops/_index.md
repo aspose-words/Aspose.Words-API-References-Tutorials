@@ -21,7 +21,7 @@ El primer paso es cargar el documento de Word que contiene la tabla de contenido
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-En este ejemplo, cargamos el documento "Tabla de contenido.docx" ubicado en el directorio de documentos.
+En este ejemplo, cargamos el documento "Tabla de contenidos.docx" ubicado en el directorio de documentos.
 
 ## Cambiar pestañas en la tabla de contenido
 
@@ -40,7 +40,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-En este ejemplo, utilizamos un bucle para recorrer cada párrafo del documento. Luego verificamos si el párrafo tiene el formato utilizando los estilos de resultados de la tabla de contenido (TOC). Si es así accedemos a la primera pestaña utilizada en este párrafo y la modificamos quitando la pestaña antigua y añadiendo una nueva pestaña con una posición modificada.
+En este ejemplo, utilizamos un bucle para recorrer cada párrafo del documento. Luego verificamos si el párrafo tiene formato usando los estilos de resultados de la tabla de contenido (TOC). Si es así accedemos a la primera pestaña utilizada en este párrafo y la modificamos quitando la pestaña antigua y añadiendo una nueva pestaña con una posición modificada.
 
 ## Guardar documento modificado
 
@@ -103,7 +103,7 @@ Este fragmento de código carga el documento "Tabla de contenido.docx" ubicado e
 
 #### P: ¿Cómo puedo cambiar las pestañas utilizadas en la tabla de contenido usando Aspose.Words para .NET?
 
- R: Una vez cargado el documento, puede recorrer cada párrafo del documento y comprobar si está formateado utilizando los estilos de resultados de la tabla de contenido (TOC). Si un párrafo tiene el formato de estilo TOC, puede modificar las tabulaciones utilizadas para alinear los números de página. En Aspose.Words para .NET, puede acceder al`ParagraphFormat` propiedad de cada párrafo para recuperar y modificar las tabulaciones. He aquí un ejemplo:
+R: Una vez cargado el documento, puede recorrer cada párrafo del documento y comprobar si está formateado utilizando los estilos de resultados de la tabla de contenido (TOC). Si un párrafo tiene el formato de estilo TOC, puede modificar las tabulaciones utilizadas para alinear los números de página. En Aspose.Words para .NET, puede acceder al`ParagraphFormat` propiedad de cada párrafo para recuperar y modificar las tabulaciones. He aquí un ejemplo:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))

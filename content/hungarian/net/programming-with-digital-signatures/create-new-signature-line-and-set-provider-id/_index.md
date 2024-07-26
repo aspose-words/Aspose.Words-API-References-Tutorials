@@ -9,7 +9,7 @@ url: /hu/net/programming-with-digital-signatures/create-new-signature-line-and-s
 ---
 ## Bevezetés
 
-Sziasztok a technika szerelmesei! Gondolkozott már azon, hogyan lehet programozottan aláírássort hozzáadni a Word-dokumentumokhoz? Nos, ma éppen ebben merülünk el az Aspose.Words for .NET használatával. Ez az útmutató végigvezeti Önt minden lépésen, így egyszerűen létrehozhat egy új aláírási sort, és beállíthatja a szolgáltatói azonosítót a Word-dokumentumokban. Akár automatizálja a dokumentumfeldolgozást, akár csak a munkafolyamat egyszerűsítését szeretné elérni, ez az oktatóanyag mindenre kiterjed.
+Sziasztok, a technika szerelmesei! Gondolkozott már azon, hogyan lehet programozottan aláírássort hozzáadni a Word-dokumentumokhoz? Nos, ma éppen ebben merülünk el az Aspose.Words for .NET használatával. Ez az útmutató végigvezeti Önt minden lépésen, így egyszerűen létrehozhat egy új aláírási sort, és beállíthatja a szolgáltatói azonosítót a Word-dokumentumokban. Akár automatizálja a dokumentumfeldolgozást, akár csak a munkafolyamat egyszerűsítését szeretné elérni, ez az oktatóanyag mindenre kiterjed.
 
 ## Előfeltételek
 
@@ -110,7 +110,7 @@ A dokumentum aláírásához PFX tanúsítványt használunk. Hozzunk létre egy
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
- Mindenképpen cserélje ki`"morzal.pfx"` a tényleges tanúsítványfájljával és`"aw"` a tanúsítvány jelszavával.
+ Ügyeljen arra, hogy cserélje ki`"morzal.pfx"` a tényleges tanúsítványfájljával és`"aw"` a tanúsítvány jelszavával.
 
 ## 7. lépés: Aláírja a dokumentumot
 

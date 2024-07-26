@@ -2,94 +2,87 @@
 title: Verklein de PDF-grootte door ingesloten lettertypen uit te schakelen
 linktitle: Verklein de PDF-grootte door ingesloten lettertypen uit te schakelen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de PDF-grootte kunt verkleinen door het insluiten van Windows-lettertypen uit te schakelen bij het converteren van documenten naar PDF met Aspose.Words voor .NET.
+description: Verklein de PDF-grootte door ingesloten lettertypen uit te schakelen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om uw documenten te optimaliseren voor efficiënte opslag en delen.
 type: docs
 weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u door de stappen om de PDF-grootte te verkleinen door het insluiten van Windows-lettertypen in een PDF-document uit te schakelen met Aspose.Words voor .NET. Door het insluiten van lettertypen uit te schakelen, kunt u de grootte van het gegenereerde PDF-bestand verkleinen. Volg onderstaande stappen:
+Het verkleinen van de grootte van PDF-bestanden kan cruciaal zijn voor efficiënte opslag en snel delen. Een effectieve manier om dit te doen is door ingebedde lettertypen uit te schakelen, vooral wanneer de standaardlettertypen al op de meeste systemen beschikbaar zijn. In deze zelfstudie onderzoeken we hoe u de PDF-grootte kunt verkleinen door ingesloten lettertypen uit te schakelen met Aspose.Words voor .NET. We doorlopen elke stap om ervoor te zorgen dat u dit eenvoudig in uw eigen projecten kunt implementeren.
 
-## Stap 1: Het document laden
+## Vereisten
 
-Begin met het uploaden van het document dat u naar PDF wilt converteren:
+Voordat je in de code duikt, zorg ervoor dat je het volgende hebt:
+
+-  Aspose.Words voor .NET: als u dat nog niet heeft gedaan, downloadt en installeert u het vanaf de[Download link](https://releases.aspose.com/words/net/).
+- Een .NET-ontwikkelomgeving: Visual Studio is een populaire keuze.
+- Een voorbeeld van een Word-document: Zorg ervoor dat u een DOCX-bestand bij de hand heeft dat u naar een PDF wilt converteren.
+
+## Naamruimten importeren
+
+Om aan de slag te gaan, moet u ervoor zorgen dat de benodigde naamruimten in uw project zijn geïmporteerd. Hierdoor hebt u toegang tot de klassen en methoden die nodig zijn voor onze taak.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Laten we het proces opsplitsen in eenvoudige, beheersbare stappen. Elke stap leidt u door de taak en zorgt ervoor dat u begrijpt wat er op elk punt gebeurt.
+
+## Stap 1: Initialiseer uw document
+
+Eerst moeten we het Word-document laden dat u naar een PDF wilt converteren. Dit is waar uw reis begint.
+
+```csharp
+// Het pad naar de documentenmap.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Zorg ervoor dat u het juiste pad naar uw document opgeeft.
+ Hier,`dataDir` is een tijdelijke aanduiding voor de map waarin uw document zich bevindt. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad.
 
-## Stap 2: Stel de PDF-opslagopties in
+## Stap 2: Configureer de PDF-opslagopties
 
-Maak een exemplaar van de klasse PdfSaveOptions en geef op hoe lettertypen moeten worden ingesloten:
+Vervolgens stellen we de PDF-opslagopties in. Hier geven we aan dat we de standaard Windows-lettertypen niet willen insluiten.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
+// De uitvoer-PDF wordt opgeslagen zonder standaard Windows-lettertypen in te sluiten.
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone
+};
 ```
 
-Met deze optie kunt u de integratie van Windows-lettertypen in het gegenereerde PDF-bestand deactiveren.
+ Door in te stellen`FontEmbeddingMode` naar`EmbedNone`, instrueren we Aspose.Words om deze lettertypen niet in de PDF op te nemen, waardoor de bestandsgrootte kleiner wordt.
 
-## Stap 3: Converteer document naar PDF
+## Stap 3: Sla het document op als PDF
 
- Gebruik de`Save` methode om het document naar PDF te converteren, met vermelding van conversieopties:
+Ten slotte slaan we het document op als PDF met behulp van de geconfigureerde opslagopties. Dit is het moment van de waarheid waarop uw DOCX wordt omgezet in een compacte PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-Zorg ervoor dat u het juiste pad opgeeft om de geconverteerde PDF op te slaan.
-
-### Voorbeeldbroncode voor het uitschakelen van het insluiten van Windows-lettertypen met Aspose.Words voor .NET
-
-Hier is de volledige broncode om het insluiten van Windows-lettertypen in een PDF-document met Aspose.Words voor .NET uit te schakelen:
-
-```csharp
-
-	// Het pad naar de documentenmap.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// De uitvoer-PDF wordt opgeslagen zonder standaard Windows-lettertypen in te sluiten.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
-
-```
-Door deze stappen te volgen, kunt u eenvoudig de insluiting van Windows-lettertypen in een PDF-document uitschakelen met Aspose.Words voor .NET.
-
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met uw werkelijke mappad nogmaals. De uitvoer-PDF wordt nu opgeslagen in de opgegeven map zonder ingesloten standaardlettertypen.
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u de grootte van een PDF-bestand kunt verkleinen door het insluiten van Windows-lettertypen uit te schakelen met Aspose.Words voor .NET. Door het insluiten van lettertypen uit te schakelen, kunt u de grootte van het gegenereerde PDF-bestand verkleinen, waardoor het gemakkelijker wordt om bestanden op te slaan, te delen en over te dragen. Het is echter belangrijk op te merken dat het uitschakelen van het insluiten van Windows-lettertypen wijzigingen in het uiterlijk en de opmaak van het uiteindelijke PDF-document kan veroorzaken. Houd rekening met deze gevolgen wanneer u deze functie gebruikt. Ontdek gerust meer functies van Aspose.Words voor .NET om het genereren van uw PDF-bestanden te optimaliseren.
+Door deze stappen te volgen, kunt u de grootte van uw PDF-bestanden aanzienlijk verkleinen. Het uitschakelen van ingesloten lettertypen is een eenvoudige maar effectieve manier om uw documenten lichter en gemakkelijker te delen te maken. Aspose.Words voor .NET maakt dit proces naadloos, zodat u uw bestanden met minimale inspanning kunt optimaliseren.
 
-### Veel Gestelde Vragen
+## Veelgestelde vragen
 
-#### Vraag: Wat is het uitschakelen van het insluiten van Windows-lettertypen in een PDF-document en waarom is dit belangrijk?
-A: Het uitschakelen van het insluiten van Windows-lettertypen in een PDF-document is het proces waarbij wordt voorkomen dat Windows-lettertypen worden opgenomen in het gegenereerde PDF-bestand. Hierdoor wordt de grootte van het PDF-bestand kleiner door ingesloten Windows-lettertypegegevens te verwijderen. Dit kan belangrijk zijn om de grootte van PDF-bestanden te verkleinen, waardoor ze gemakkelijker kunnen worden opgeslagen, gedeeld en sneller worden overgedragen.
+### Waarom moet ik ingesloten lettertypen in een PDF uitschakelen?
+Het uitschakelen van ingesloten lettertypen kan de bestandsgrootte van een PDF aanzienlijk verkleinen, waardoor deze efficiënter wordt opgeslagen en sneller kan worden gedeeld.
 
-#### Vraag: Hoe kan ik het insluiten van Windows-lettertypen in een PDF-document uitschakelen met Aspose.Words voor .NET?
-A: Volg deze stappen om het insluiten van Windows-lettertypen in een PDF-document met Aspose.Words voor .NET uit te schakelen:
+### Zal de PDF nog steeds correct worden weergegeven zonder ingesloten lettertypen?
+Ja, zolang de lettertypen standaard zijn en beschikbaar zijn op het systeem waarop de PDF wordt bekeken, wordt deze correct weergegeven.
 
- Laad het document dat u naar PDF wilt converteren met behulp van de`Document` klasse- en documentpad.
+### Kan ik selectief alleen bepaalde lettertypen in een PDF insluiten?
+Ja, met Aspose.Words voor .NET kunt u aanpassen welke lettertypen zijn ingesloten, waardoor u flexibiliteit krijgt bij het verkleinen van de bestandsgrootte.
 
- Maak een exemplaar van de`PdfSaveOptions` klasse en stel de`FontEmbeddingMode`eigendom aan`PdfFontEmbeddingMode.EmbedNone`. Hierdoor wordt de insluiting van Windows-lettertypen in het gegenereerde PDF-bestand uitgeschakeld.
+### Heb ik Aspose.Words voor .NET nodig om ingesloten lettertypen in PDF's uit te schakelen?
+Ja, Aspose.Words voor .NET biedt de functionaliteit die nodig is om opties voor het insluiten van lettertypen in PDF's te configureren.
 
- Gebruik de`Save` werkwijze van de`Document` object om het document naar PDF te converteren, waarbij u de eerder geconfigureerde conversie-opties opgeeft.
-
-#### Vraag: Wat zijn de voordelen van het uitschakelen van het insluiten van Windows-lettertypen in een PDF-document?
-A: De voordelen van het uitschakelen van het insluiten van Windows-lettertypen in een PDF-document zijn:
-
-Verkleinde PDF-bestandsgrootte: Door het insluiten van Windows-lettertypen uit te schakelen, worden ingesloten Windows-lettertypegegevens verwijderd, waardoor de grootte van het gegenereerde PDF-bestand kleiner wordt.
-
-Gemakkelijker opslaan: Kleinere PDF-bestanden zijn gemakkelijker op te slaan, op te slaan en over te dragen.
-
-Sneller delen en overdragen: Kleinere PDF-bestanden kunnen sneller worden gedeeld en overgedragen, waardoor tijd en middelen worden bespaard.
-
-#### Vraag: Wat zijn de gevolgen van het uitschakelen van het insluiten van Windows-lettertypen in een PDF-document?
-A: Het uitschakelen van de insluiting van Windows-lettertypen in een PDF-document kan tot gevolgen leiden zoals:
-
-Verlies van uiterlijk en opmaak: Als de in het document opgegeven Windows-lettertypen niet beschikbaar zijn op het systeem waarop de PDF wordt geopend, worden vervangende lettertypen gebruikt, wat kan resulteren in een onjuist uiterlijk en een onjuiste opmaak. anders van vorm dan verwacht.
-
-Problemen met de leesbaarheid: als de gebruikte vervangende lettertypen niet zo leesbaar zijn als de originele lettertypen, kan dit de leesbaarheid van de tekst in het PDF-document beïnvloeden.
+### Hoe krijg ik ondersteuning als ik problemen tegenkom?
+ U kunt een bezoek brengen aan de[Helpforum](https://forum.aspose.com/c/words/8) voor hulp bij eventuele problemen die u tegenkomt.

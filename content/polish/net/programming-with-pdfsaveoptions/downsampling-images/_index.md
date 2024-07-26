@@ -2,94 +2,89 @@
 title: Zmniejsz rozmiar dokumentu PDF za pomocą próbkowania obrazów w dół
 linktitle: Zmniejsz rozmiar dokumentu PDF za pomocą próbkowania obrazów w dół
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zmniejszyć rozmiar dokumentu PDF poprzez próbkowanie obrazów w dół podczas konwersji do formatu PDF za pomocą Aspose.Words dla .NET.
+description: Zmniejsz rozmiar dokumentu PDF, próbkując obrazy w dół za pomocą Aspose.Words dla .NET. Zoptymalizuj swoje pliki PDF, aby przyspieszyć przesyłanie i pobieranie.
 type: docs
 weight: 10
 url: /pl/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
+## Wstęp
 
-W tym samouczku przeprowadzimy Cię przez kolejne kroki, aby zmniejszyć rozmiar dokumentu PDF za pomocą próbkowania obrazów w dół podczas konwersji do formatu PDF za pomocą Aspose.Words dla .NET. Zmniejsza to rozmiar wygenerowanego pliku PDF. Wykonaj poniższe kroki:
+Pliki PDF to podstawa w cyfrowym świecie, używana do wszystkiego, od udostępniania dokumentów po tworzenie e-booków. Jednak ich rozmiar może czasami stanowić przeszkodę, szczególnie w przypadku treści bogatych w obrazy. Tutaj właśnie wchodzi w grę próbkowanie obrazów w dół. Zmniejszając rozdzielczość obrazów w pliku PDF, można znacznie zmniejszyć rozmiar pliku bez nadmiernego pogarszania jakości. W tym samouczku omówimy kroki, aby to osiągnąć za pomocą Aspose.Words dla .NET.
 
-## Krok 1: Ładowanie dokumentu
+## Warunki wstępne
 
-Zacznij od przesłania dokumentu, który chcesz przekonwertować do formatu PDF:
+Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz:
+
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli nie, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: dowolne środowisko programistyczne .NET, takie jak Visual Studio.
+3. Podstawowa znajomość języka C#: Pomocne będzie zrozumienie podstaw programowania w języku C#.
+4.  Przykładowy dokument: dokument programu Word (np.`Rendering.docx`) z obrazami do konwersji do formatu PDF.
+
+## Importuj przestrzenie nazw
+
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw. Dodaj je na górze pliku kodu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Podzielmy teraz proces na łatwe do wykonania etapy.
+
+## Krok 1: Załaduj dokument
+
+Pierwszym krokiem jest załadowanie dokumentu Word. W tym miejscu określasz ścieżkę do katalogu dokumentów.
+
+```csharp
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Pamiętaj, aby podać poprawną ścieżkę do swojego dokumentu.
+ tym kroku ładujemy dokument programu Word z określonego katalogu. Pamiętaj o wymianie`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką, w której znajduje się dokument.
 
-## Krok 2: Skonfiguruj opcje zapisywania plików PDF
+## Krok 2: Skonfiguruj opcje próbkowania w dół
 
-Utwórz instancję klasy PdfSaveOptions i ustaw opcje zmniejszania obrazu:
+Następnie musimy skonfigurować opcje próbkowania w dół. Wiąże się to z ustawieniem rozdzielczości i progu rozdzielczości obrazów.
 
 ```csharp
+// Możemy ustawić minimalny próg próbkowania w dół.
+// Ta wartość zapobiegnie próbkowaniu drugiego obrazu w dokumencie wejściowym.
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
+    DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- The`Resolution` Właściwość określa docelową rozdzielczość obrazów i`ResolutionThreshold`Właściwość określa minimalną rozdzielczość, poniżej której obrazy nie będą zmniejszane.
+ Tutaj tworzymy nową instancję`PdfSaveOptions` i ustawienie`Resolution` do 36 DPI i`ResolutionThreshold` do 128 DPI. Oznacza to, że każdy obraz o rozdzielczości wyższej niż 128 DPI będzie próbkowany w dół do 36 DPI.
 
-## Krok 3: Konwertuj dokument na format PDF
+## Krok 3: Zapisz dokument w formacie PDF
 
- Użyj`Save` metoda konwersji dokumentu do formatu PDF określająca opcje zapisu:
+Na koniec zapisujemy dokument jako plik PDF ze skonfigurowanymi opcjami.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
 ```
 
-Upewnij się, że podałeś poprawną ścieżkę do zapisania przekonwertowanego pliku PDF.
-
-### Przykładowy kod źródłowy do próbkowania obrazów przy użyciu Aspose.Words dla .NET
-
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Możemy ustawić minimalny próg próbkowania w dół.
-	// Ta wartość zapobiegnie próbkowaniu drugiego obrazu w dokumencie wejściowym.
-	PdfSaveOptions saveOptions = new PdfSaveOptions
-	{
-		DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
-	};
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
-
-```
-
-Wykonując poniższe kroki, możesz łatwo zmniejszyć rozdzielczość obrazu podczas konwersji do formatu PDF za pomocą Aspose.Words dla .NET.
+W tym ostatnim kroku zapisujemy dokument jako plik PDF w tym samym katalogu z określonymi opcjami próbkowania w dół.
 
 ## Wniosek
 
-tym samouczku wyjaśniliśmy, jak zmniejszyć rozmiar dokumentu PDF za pomocą próbkowania obrazu podczas konwersji do formatu PDF za pomocą Aspose.Words dla .NET. Wykonując opisane kroki, możesz łatwo zmniejszyć rozdzielczość obrazów i rozmiar generowanego pliku PDF. Pamiętaj, aby określić poprawną ścieżkę do dokumentu i odpowiednio skonfigurować opcje próbkowania obrazu. Zmniejszenie rozmiaru pliku PDF ułatwia udostępnianie, przechowywanie i szybkie ładowanie pliku na różnych platformach. Ciesz się korzyściami płynącymi ze zmniejszania rozmiaru dokumentu PDF poprzez próbkowanie obrazu przy użyciu Aspose.Words dla .NET.
+masz to! Udało Ci się zmniejszyć rozmiar pliku PDF, zmniejszając próbkowanie obrazów przy użyciu Aspose.Words dla .NET. To nie tylko ułatwia zarządzanie plikami PDF, ale także pomaga w szybszym przesyłaniu i pobieraniu oraz płynniejszym przeglądaniu.
 
-### Często Zadawane Pytania
+## Często zadawane pytania
 
-#### P: Na czym polega zmniejszenie rozmiaru dokumentu PDF przy próbkowaniu obrazu?
-Odp.: Zmniejszanie rozmiaru dokumentu PDF za pomocą próbkowania obrazu polega na zmniejszeniu rozmiaru wygenerowanego pliku PDF poprzez zmniejszenie rozdzielczości obrazów podczas konwersji do formatu PDF. Optymalizuje to wykorzystanie przestrzeni dyskowej i ułatwia udostępnianie i przesyłanie pliku PDF.
+### Co to jest próbkowanie w dół?
+Próbkowanie w dół to proces zmniejszania rozdzielczości obrazów, co pomaga zmniejszyć rozmiar pliku dokumentów zawierających te obrazy.
 
-#### P: Jak mogę zmniejszyć rozmiar dokumentu PDF za pomocą próbkowania obrazu przy użyciu Aspose.Words dla .NET?
-Odp.: Aby zmniejszyć rozmiar dokumentu PDF za pomocą próbkowania obrazu przy użyciu Aspose.Words dla .NET, wykonaj następujące kroki:
+### Czy próbkowanie w dół wpłynie na jakość obrazów?
+Tak, próbkowanie w dół spowoduje obniżenie jakości obrazu. Jednakże wpływ zależy od stopnia zmniejszenia rozdzielczości. Jest to kompromis pomiędzy rozmiarem pliku a jakością obrazu.
 
- Ustaw ścieżkę katalogu, w którym znajdują się Twoje dokumenty, zastępując`"YOUR DOCUMENTS DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+### Czy mogę wybrać, które obrazy mają być próbkowane w dół?
+ Tak, ustawiając`ResolutionThreshold`możesz kontrolować, które obrazy będą próbkowane w dół w oparciu o ich oryginalną rozdzielczość.
 
- Załaduj dokument, który chcesz przekonwertować do formatu PDF za pomocą`Document` class i określ ścieżkę do dokumentu w określonym katalogu dokumentów.
+### Jaka jest idealna rozdzielczość do próbkowania w dół?
+Idealna rozdzielczość zależy od konkretnych potrzeb. W przypadku obrazów internetowych powszechnie stosuje się rozdzielczość 72 DPI, natomiast w przypadku jakości druku stosuje się wyższą rozdzielczość.
 
- Skonfiguruj opcje zapisywania jako PDF, tworząc instancję pliku`PdfSaveOptions` class i ustawienie opcji próbkowania obrazu za pomocą`DownsampleOptions` nieruchomość. Możesz określić docelową rozdzielczość obrazów za pomocą`Resolution` i ustaw minimalny próg rozdzielczości, powyżej którego obrazy nie będą zmniejszane przy użyciu opcji`ResolutionThreshold` nieruchomość.
-
- Zapisz dokument w formacie PDF za pomocą`Save` metoda`Document` class określając ścieżkę i opcje zapisu.
-
-#### P: Jakie są korzyści ze zmniejszenia rozmiaru dokumentu PDF za pomocą próbkowania obrazu?
-Odp.: Korzyści ze zmniejszenia rozmiaru dokumentu PDF za pomocą próbkowania obrazu są następujące:
-
-Zmniejszony rozmiar pliku PDF: Próbkowanie obrazu zmniejsza rozdzielczość obrazów w dokumencie PDF, co powoduje znaczne zmniejszenie rozmiaru pliku PDF. Ułatwia to udostępnianie i przesyłanie pliku, zwłaszcza pocztą elektroniczną lub online.
-
-Optymalizacja przestrzeni dyskowej: Zmniejszenie rozmiaru pliku PDF pomaga zoptymalizować wykorzystanie przestrzeni dyskowej, zwłaszcza gdy masz wiele plików PDF zawierających obrazy o wysokiej rozdzielczości.
-
-Ulepszenia wydajności: mniejsze pliki PDF ładują się szybciej i można je szybciej otwierać i przeglądać na różnych urządzeniach.
+### Czy Aspose.Words dla .NET jest darmowy?
+ Aspose.Words dla .NET jest produktem komercyjnym, ale możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/) lub złóż wniosek o[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).

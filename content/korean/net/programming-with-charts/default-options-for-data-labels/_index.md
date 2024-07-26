@@ -129,7 +129,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ## FAQ
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
-Aspose.Words를 무료로 사용할 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는[무료 시험판](https://releases.aspose.com/).
+Aspose.Words를 무료로 사용할 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/) 또는[무료 시험판](https://releases.aspose.com/).
 
 ### Aspose.Words에 대한 지원을 받으려면 어떻게 해야 하나요?
  통해 지원을 받으실 수 있습니다.[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8).

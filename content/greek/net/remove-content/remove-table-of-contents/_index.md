@@ -41,7 +41,7 @@ using Aspose.Words.Fields;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"` με τη διαδρομή προς το φάκελο εγγράφων σας. Εδώ βρίσκεται το αρχείο Word σας.
+ Αντικαθιστώ`"YOUR DOCUMENT DIRECTORY"`με τη διαδρομή προς το φάκελο εγγράφων σας. Εδώ βρίσκεται το αρχείο Word σας.
 
 ## Βήμα 2: Φορτώστε το έγγραφο
 

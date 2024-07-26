@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- W tym ostatnim kroku zapisujemy powstały dokument w formacie .docx za pomocą`Save` metodę i przekazanie ścieżki do pliku wyjściowego.
+ tym ostatnim kroku zapisujemy powstały dokument w formacie .docx za pomocą`Save` metodę i przekazanie ścieżki do pliku wyjściowego.
 
 Teraz możesz uruchomić kod źródłowy, aby załadować dokument tekstowy, określając opcje obsługi białych znaków. Powstały dokument zostanie zapisany w określonym katalogu pod nazwą „WorkingWithTxtLoadOptions.HandleSpacesOptions.docx”.
 

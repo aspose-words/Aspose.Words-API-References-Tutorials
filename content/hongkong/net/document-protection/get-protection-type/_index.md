@@ -67,7 +67,7 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功檢索了 Word 文件的保護類型。這對於確保您的文件得到適當保護或僅用於審計目的非常有用。請記住，Aspose.Words 提供了大量其他功能，可以幫助您輕鬆操作 Word 文件。試試一下，祝您編碼愉快！
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功檢索了 Word 文件的保護類型。這對於確保您的文件得到適當保護或僅用於審計目的非常有用。請記住，Aspose.Words 提供了大量其他功能，可以幫助您輕鬆操作 Word 文件。試試一下，祝您編碼愉快！
 
 ## 常見問題解答
 

@@ -82,7 +82,7 @@ Ya, Aspose.Words mendukung penggabungan dokumen berbagai format, termasuk DOCX, 
 Ya, Aspose.Words sepenuhnya mendukung .NET Core, memungkinkan pengembangan lintas platform.
 
 ### Bagaimana cara menangani dokumen berukuran besar secara efisien?
-Aspose.Words menyediakan API yang efisien untuk manipulasi dokumen, dioptimalkan untuk kinerja bahkan dengan dokumen berukuran besar.
+Aspose.Words menyediakan API yang efisien untuk manipulasi dokumen, dioptimalkan untuk kinerja bahkan dengan dokumen besar.
 
 ### Di mana saya dapat menemukan lebih banyak contoh dan dokumentasi?
  Anda dapat menjelajahi lebih banyak contoh dan dokumentasi terperinci di[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/).

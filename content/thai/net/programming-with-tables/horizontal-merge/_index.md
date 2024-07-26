@@ -21,7 +21,7 @@ url: /th/net/programming-with-tables/horizontal-merge/
 // พาธไปยังไดเร็กทอรีเอกสารของคุณ
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// สร้างเอกสารและเริ่มต้นตัวสร้างเอกสาร
+//สร้างเอกสารและเริ่มต้นตัวสร้างเอกสาร
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

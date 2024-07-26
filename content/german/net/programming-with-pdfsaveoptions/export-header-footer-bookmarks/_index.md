@@ -2,35 +2,49 @@
 title: Kopf- und Fußzeilenlesezeichen eines Word-Dokuments in ein PDF-Dokument exportieren
 linktitle: Kopf- und Fußzeilenlesezeichen eines Word-Dokuments in ein PDF-Dokument exportieren
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Exportieren von Kopf- und Fußzeilenlesezeichen aus Word-Dokumenten in PDF-Dokumentlesezeichen mit Aspose.Words für .NET.
+description: Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Kopf- und Fußzeilenlesezeichen aus einem Word-Dokument in PDF exportieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## Einführung
 
-Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zum Exportieren von Lesezeichen aus Kopf- und Fußzeilen von Word-Dokumenten in PDF-Dokumente mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials werden Sie wissen, wie Sie Lesezeichen aus Kopf- und Fußzeilen eines Dokuments exportieren und ein PDF mit den entsprechenden Lesezeichen erstellen.
+Das Konvertieren von Word-Dokumenten in PDF ist eine häufige Aufgabe, insbesondere wenn Sie Dokumente freigeben oder archivieren möchten, während ihre Formatierung erhalten bleibt. Manchmal enthalten diese Dokumente wichtige Lesezeichen in den Kopf- und Fußzeilen. In diesem Tutorial führen wir Sie durch den Prozess des Exportierens dieser Lesezeichen aus einem Word-Dokument in ein PDF mit Aspose.Words für .NET.
 
-Stellen Sie vor dem Start sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Sie finden die Bibliothek und Installationsanweisungen auf der Aspose-Website.
+## Voraussetzungen
 
-## Schritt 1: Dokumentverzeichnis festlegen
+Bevor wir loslegen, stellen Sie sicher, dass Sie Folgendes haben:
 
- Zunächst müssen Sie den Pfad zum Verzeichnis angeben, in dem sich Ihre Dokumente befinden. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
+- Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Richten Sie Ihre Entwicklungsumgebung ein. Sie können Visual Studio oder jede andere .NET-kompatible IDE verwenden.
+- Grundkenntnisse in C#: Um den Codebeispielen folgen zu können, sind Kenntnisse in der C#-Programmierung erforderlich.
+
+## Namespaces importieren
+
+Als Erstes müssen Sie die erforderlichen Namespaces in Ihr C#-Projekt importieren. Fügen Sie diese Zeilen oben in Ihrer Codedatei hinzu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Schritt 2: Dokument hochladen
+Lassen Sie uns den Prozess in leicht verständliche Schritte unterteilen.
 
-Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Lesezeichen in Kopf- und Fußzeilen.docx“ heißt und sich im angegebenen Dokumentverzeichnis befindet.
+## Schritt 1: Initialisieren Sie das Dokument
+
+Der erste Schritt besteht darin, Ihr Word-Dokument zu laden. So geht's:
 
 ```csharp
+// Der Pfad zum Dokumentverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF
+In diesem Schritt geben Sie lediglich den Pfad zu Ihrem Dokumentverzeichnis an und laden das Word-Dokument.
 
- Um Kopf- und Fußzeilen-Lesezeichen zu exportieren, müssen wir die`PdfSaveOptions` Objekt. In diesem Beispiel setzen wir die Standardgliederungsebene für Lesezeichen auf 1 und den Exportmodus für Kopf- und Fußzeilenlesezeichen auf „Erste“.
+## Schritt 2: PDF-Speicheroptionen konfigurieren
+
+Als nächstes müssen Sie die PDF-Speicheroptionen konfigurieren, um sicherzustellen, dass Lesezeichen in den Kopf- und Fußzeilen korrekt exportiert werden.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## Schritt 4: Speichern Sie das Dokument als PDF mit Kopf- und Fußzeilen-Lesezeichen
+ Hier richten wir die`PdfSaveOptions` . Der`DefaultBookmarksOutlineLevel` legt die Gliederungsebene für Lesezeichen fest, und die`HeaderFooterBookmarksExportMode` -Eigenschaft stellt sicher, dass nur das erste Vorkommen von Lesezeichen in Kopf- und Fußzeilen exportiert wird.
 
-Abschließend können wir das Dokument mit den zuvor konfigurierten Speicheroptionen im PDF-Format speichern.
+## Schritt 3: Speichern Sie das Dokument als PDF
+
+Speichern Sie abschließend Ihr Dokument mit den konfigurierten Optionen als PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-Das ist alles! Sie haben erfolgreich Kopf- und Fußzeilenlesezeichen aus einem Dokument exportiert und mit Aspose.Words für .NET ein PDF mit den entsprechenden Lesezeichen erstellt.
-
-### Beispielquellcode zum Exportieren von Kopf- und Fußzeilenlesezeichen mit Aspose.Words für .NET
-
-```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+In diesem Schritt speichern Sie das Dokument mit den von Ihnen konfigurierten Optionen im angegebenen Pfad.
 
 ## Abschluss
 
-In diesem Tutorial haben wir erklärt, wie Sie Kopf- und Fußzeilen-Lesezeichen aus einem Word-Dokument mit Aspose.Words für .NET in ein PDF-Dokument exportieren. Exportierte Lesezeichen ermöglichen eine einfache Navigation und einen schnellen Verweis auf entsprechende Kopf- und Fußzeilen im generierten PDF-Dokument. Befolgen Sie die beschriebenen Schritte, um Kopf- und Fußzeilen-Lesezeichen aus einem Dokument zu exportieren und mit Aspose.Words für .NET ein PDF mit den entsprechenden Lesezeichen zu generieren. Geben Sie unbedingt den richtigen Pfad zu Ihren Dokumenten an und konfigurieren Sie die Speicheroptionen nach Bedarf.
+Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie Lesezeichen aus den Kopf- und Fußzeilen eines Word-Dokuments mit Aspose.Words für .NET problemlos in ein PDF exportieren. Diese Methode stellt sicher, dass wichtige Navigationshilfen in Ihrem Dokument im PDF-Format erhalten bleiben, was den Lesern die Navigation durch Ihr Dokument erleichtert.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-### F: Was bedeutet das Exportieren von Kopf- und Fußzeilenlesezeichen aus einem Word-Dokument in ein PDF-Dokument?
-A: Das Exportieren von Kopf- und Fußzeilen-Lesezeichen aus einem Word-Dokument in ein PDF-Dokument ist eine Funktion zum Beibehalten und Generieren von Lesezeichen im PDF-Dokument aus den Kopf- und Fußzeilen des ursprünglichen Word-Dokuments. Auf diese Weise können Benutzer schnell und einfach durch das PDF-Dokument navigieren, indem sie Lesezeichen verwenden, die den Kopf- und Fußzeilen entsprechen.
+### Kann ich alle Lesezeichen aus dem Word-Dokument als PDF exportieren?
 
-### F: Wie kann ich Aspose.Words für .NET verwenden, um Kopf- und Fußzeilenlesezeichen aus einem Word-Dokument in ein PDF-Dokument zu exportieren?
-A: Um Kopf- und Fußzeilenlesezeichen aus einem Word-Dokument mit Aspose.Words für .NET in ein PDF-Dokument zu exportieren, folgen Sie diesen Schritten:
+ Ja, das können Sie. Im`PdfSaveOptions`, können Sie die Einstellungen anpassen, um bei Bedarf alle Lesezeichen einzuschließen.
 
- Legen Sie den Verzeichnispfad fest, in dem sich Ihre Dokumente befinden, indem Sie ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad Ihres Dokumentverzeichnisses.
+### Was ist, wenn ich Lesezeichen auch aus dem Hauptteil des Dokuments exportieren möchte?
 
- Laden Sie das zu verarbeitende Dokument mit dem`Document` Klasse und geben Sie den Pfad zum Word-Dokument im angegebenen Dokumentverzeichnis an.
+ Sie können die`OutlineOptions` In`PdfSaveOptions` um Lesezeichen aus dem Hauptteil des Dokuments einzuschließen.
 
- Konfigurieren Sie die Optionen zum Speichern als PDF, indem Sie eine Instanz des`PdfSaveOptions` Klasse und Festlegen der entsprechenden Lesezeichenoptionen für Kopf- und Fußzeile.
+### Ist es möglich, die Lesezeichenebenen im PDF anzupassen?
 
- Speichern Sie das Dokument im PDF-Format mit dem`Save` Methode der`Document` Klasse, die den Pfad und die Speicheroptionen angibt.
+ Absolut! Sie können die`DefaultBookmarksOutlineLevel` -Eigenschaft, um verschiedene Gliederungsebenen für Ihre Lesezeichen festzulegen.
 
-### F: Welche Vorteile bietet das Exportieren von Kopf- und Fußzeilenlesezeichen in ein PDF-Dokument?
-A: Der Export von Kopf- und Fußzeilenlesezeichen in ein PDF-Dokument bietet folgende Vorteile:
+### Wie gehe ich mit Dokumenten ohne Lesezeichen um?
 
-Einfache Navigation: Lesezeichen ermöglichen Benutzern die einfache Navigation in einem PDF-Dokument durch Verweisen auf bestimmte Kopf- und Fußzeilen.
+Wenn Ihr Dokument keine Lesezeichen enthält, wird die PDF-Datei ohne Lesezeichenumriss erstellt. Stellen Sie sicher, dass Ihr Dokument Lesezeichen enthält, wenn Sie diese in der PDF-Datei benötigen.
 
-Schnellreferenz: Lesezeichen ermöglichen es Benutzern, relevante Abschnitte des PDF-Dokuments anhand von Kopf- und Fußzeilen schnell zu finden.
+### Kann ich diese Methode für andere Dokumenttypen wie DOCX oder RTF verwenden?
+
+Ja, Aspose.Words für .NET unterstützt verschiedene Dokumenttypen, darunter DOCX, RTF und andere.

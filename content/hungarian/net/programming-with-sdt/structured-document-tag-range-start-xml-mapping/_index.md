@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## 2. lépés: Töltse be a dokumentumot és hozzon létre XML részt
- Töltse be a Word dokumentumot a`Document`konstruktor, paraméterként átadva a dokumentum elérési útját. Hozzon létre egy XML-részt, amely tartalmazza a strukturált dokumentumcímkén belül megjeleníteni kívánt adatokat.
+ Töltse be a Word dokumentumot a`Document` konstruktor, paraméterként átadva a dokumentum elérési útját. Hozzon létre egy XML-részt, amely tartalmazza a strukturált dokumentumcímkén belül megjeleníteni kívánt adatokat.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -42,7 +42,7 @@ sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 ```
 
 ## 4. lépés: Mentse el a dokumentumot
- Mentse el a módosított dokumentumot a megadott könyvtárba a`Save` módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx" néven mentjük.
+ Mentse el a módosított dokumentumot a megadott könyvtárba a`Save`módszer. Adja meg a kívánt fájlnevet a megfelelő fájlkiterjesztéssel. Ebben a példában a dokumentumot "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx" néven mentjük.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Hozzon létre egy StructuredDocumentTag-et, amely megjeleníti a CustomXmlPart rész tartalmát a dokumentumban.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Ha beállítunk egy leképezést a StructuredDocumentTag-hez,
-	//csak a CustomXmlPart azon részét jeleníti meg, amelyre az XPath mutat.
+	// csak a CustomXmlPart azon részét jeleníti meg, amelyre az XPath mutat.
 	// Ez az XPath a CustomXmlPart első "<root>" elemének második "<text>" elemére mutat.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

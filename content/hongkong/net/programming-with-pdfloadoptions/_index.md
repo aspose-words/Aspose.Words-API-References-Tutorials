@@ -16,5 +16,5 @@ url: /zh-hant/net/programming-with-pdfloadoptions/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [載入加密的 PDF](./load-encrypted-pdf/) | 使用 Aspose.Words for .NET 載入加密 PDF 的逐步指南。 |
-| [加載 Pdf 的頁面範圍](./load-page-range-of-pdf/) | 使用 Aspose.Words for .NET 載入特定 PDF 頁面範圍的逐步指南。 |
+| [載入加密的 PDF](./load-encrypted-pdf/) | 透過我們的逐步教學，了解如何使用 Aspose.Words for .NET 載入加密的 PDF。立即掌握 PDF 加密與解密。 |
+| [加載 Pdf 的頁面範圍](./load-page-range-of-pdf/) | 在此全面的逐步教學中，了解如何使用 Aspose.Words for .NET 從 PDF 載入特定頁面範圍。非常適合 .NET 開發人員。 |

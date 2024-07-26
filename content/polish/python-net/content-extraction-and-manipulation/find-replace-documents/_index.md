@@ -10,7 +10,7 @@ url: /pl/python-net/content-extraction-and-manipulation/find-replace-documents/
 
 ## Wprowadzenie do zaawansowanych technik znajdowania i zamieniania w dokumentach programu Word
 
-W dzisiejszym cyfrowym świecie praca z dokumentami jest zadaniem podstawowym. W szczególności dokumenty Word są szeroko stosowane do różnych celów, od tworzenia raportów po pisanie ważnych listów. Jednym z powszechnych wymagań podczas pracy z dokumentami jest konieczność znalezienia i zamiany określonego tekstu lub formatowania w całym dokumencie. Ten artykuł poprowadzi Cię przez zaawansowane techniki wyszukiwania i zamiany w dokumentach programu Word przy użyciu interfejsu API Aspose.Words dla języka Python.
+W dzisiejszym cyfrowym świecie praca z dokumentami jest zadaniem podstawowym. Zwłaszcza dokumenty Word są szeroko stosowane do różnych celów, od tworzenia raportów po pisanie ważnych listów. Jednym z powszechnych wymagań podczas pracy z dokumentami jest konieczność znalezienia i zamiany określonego tekstu lub formatowania w całym dokumencie. Ten artykuł poprowadzi Cię przez zaawansowane techniki wyszukiwania i zamiany w dokumentach programu Word przy użyciu interfejsu API Aspose.Words dla języka Python.
 
 ## Warunki wstępne
 

@@ -2,94 +2,89 @@
 title: Görüntüleri Alt Örnekleme ile PDF Belge Boyutunu Azaltın
 linktitle: Görüntüleri Alt Örnekleme ile PDF Belge Boyutunu Azaltın
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile PDF'ye dönüştürürken görüntüleri altörneklemeyle pdf belge boyutunu nasıl küçülteceğinizi öğrenin.
+description: Aspose.Words for .NET'i kullanarak görüntüleri altörnekleyerek PDF belge boyutunu küçültün. Daha hızlı yükleme ve indirme süreleri için PDF'lerinizi optimize edin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET ile PDF'ye dönüştürürken görüntüleri altörnekleyerek pdf belge boyutunu küçültme adımlarında size yol göstereceğiz. Bu, oluşturulan PDF dosyasının boyutunu azaltır. Aşağıdaki adımları takip et:
+PDF'ler, belge paylaşımından e-Kitap oluşturmaya kadar her şey için kullanılan dijital dünyanın temelini oluşturur. Ancak boyutları, özellikle görsel açısından zengin içerikle uğraşırken bazen engel teşkil edebilir. Burada altörnekleme görüntüleri devreye giriyor. PDF'deki görsellerin çözünürlüğünü azaltarak kaliteden çok fazla ödün vermeden dosya boyutunu önemli ölçüde azaltabilirsiniz. Bu eğitimde Aspose.Words for .NET kullanarak bunu başarmak için gereken adımları inceleyeceğiz.
 
-## 1. Adım: Belgeyi yükleme
+## Önkoşullar
 
-PDF'ye dönüştürmek istediğiniz belgeyi yükleyerek başlayın:
+Koda geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+1.  Aspose.Words for .NET: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Değilse indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi herhangi bir .NET geliştirme ortamı.
+3. Temel C# Bilgisi: C# programlamanın temellerini anlamak faydalı olacaktır.
+4.  Örnek Belge: Bir Word belgesi (örn.`Rendering.docx`) PDF'ye dönüştürülecek resimlerle birlikte.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bunları kod dosyanızın en üstüne ekleyin:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Şimdi süreci yönetilebilir adımlara ayıralım.
+
+## 1. Adım: Belgeyi Yükleyin
+
+İlk adım Word belgenizi yüklemektir. Belge dizininizin yolunu belirttiğiniz yer burasıdır.
+
+```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Belgenizin doğru yolunu belirttiğinizden emin olun.
+Bu adımda, Word belgesini belirtilen dizinden yüklüyoruz. Değiştirdiğinizden emin olun`"YOUR DOCUMENT DIRECTORY"`belgenizin bulunduğu gerçek yolla.
 
-## 2. Adım: PDF kaydetme seçeneklerini yapılandırın
+## Adım 2: Alt Örnekleme Seçeneklerini Yapılandırma
 
-PdfSaveOptions sınıfının bir örneğini oluşturun ve görüntünün boyutunu küçültme seçeneklerini ayarlayın:
+Daha sonra altörnekleme seçeneklerini yapılandırmamız gerekiyor. Bu, görüntüler için çözünürlüğün ve çözünürlük eşiğinin ayarlanmasını içerir.
 
 ```csharp
+// Altörnekleme için minimum bir eşik ayarlayabiliriz.
+// Bu değer, giriş belgesindeki ikinci görüntünün altörneklenmesini önleyecektir.
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
+    DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
-`Resolution` özelliği, görüntülerin hedef çözünürlüğünü ve`ResolutionThreshold`özelliği, görüntülerin küçültülmeyeceği minimum çözünürlüğü belirtir.
+ Burada yeni bir örnek oluşturuyoruz`PdfSaveOptions` ve ayarlanması`Resolution` 36 DPI'ya ve`ResolutionThreshold` 128 DPI'ya kadar. Bu, çözünürlüğü 128 DPI'dan yüksek olan herhangi bir görüntünün 36 DPI'ya alt örnekleneceği anlamına gelir.
 
-## 3. Adım: Belgeyi PDF'ye Dönüştürün
+## 3. Adım: Belgeyi PDF olarak kaydedin
 
- Kullan`Save` kaydetme seçeneklerini belirterek belgeyi PDF'ye dönüştürme yöntemi:
+Son olarak, yapılandırılan seçeneklerle belgeyi PDF olarak kaydediyoruz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
 ```
 
-Dönüştürülen PDF'yi kaydetmek için doğru yolu belirttiğinizden emin olun.
-
-### Aspose.Words for .NET kullanarak Görüntüleri Alt Örneklemek için örnek kaynak kodu
-
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Altörnekleme için minimum bir eşik ayarlayabiliriz.
-	// Bu değer, giriş belgesindeki ikinci görüntünün altörneklenmesini önleyecektir.
-	PdfSaveOptions saveOptions = new PdfSaveOptions
-	{
-		DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
-	};
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
-
-```
-
-Bu adımları izleyerek Aspose.Words for .NET ile PDF'ye dönüştürürken görüntü çözünürlüğünü kolayca azaltabilirsiniz.
+Bu son adımda, belgeyi belirtilen alt örnekleme seçenekleriyle aynı dizine PDF olarak kaydediyoruz.
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak PDF'ye dönüştürürken görüntü örneklemeyle bir PDF belgesinin boyutunun nasıl azaltılacağını açıkladık. Anlatılan adımları takip ederek görsellerin çözünürlüğünü ve oluşturulan PDF dosyasının boyutunu kolaylıkla azaltabilirsiniz. Belgenizin doğru yolunu belirttiğinizden ve görüntü örnekleme seçeneklerini gerektiği gibi yapılandırdığınızdan emin olun. PDF dosya boyutunun küçültülmesi, dosyanın farklı platformlarda paylaşılmasını, saklanmasını ve hızla yüklenmesini kolaylaştırır. Aspose.Words for .NET'i kullanarak görüntü örneklemeyle PDF belge boyutunu küçültmenin avantajlarından yararlanın.
+İşte buyur! Aspose.Words for .NET'i kullanarak görüntüleri altörnekleyerek PDF'nizin boyutunu başarıyla küçülttünüz. Bu yalnızca PDF'lerinizi daha kolay yönetilebilir hale getirmekle kalmaz, aynı zamanda daha hızlı yükleme, indirme ve daha sorunsuz görüntüleme deneyimlerine de yardımcı olur.
 
-### Sıkça Sorulan Sorular
+## SSS'ler
 
-#### S: Görüntü örneklemeyle PDF belgesinin boyutunu küçültmek nedir?
-C: Görüntü Örnekleme ile PDF belge boyutunu küçültmek, PDF'ye dönüştürürken görüntülerin çözünürlüğünü azaltarak oluşturulan PDF dosyasının boyutunu azaltmaktır. Bu, depolama alanı kullanımını optimize eder ve PDF dosyasının paylaşılmasını ve aktarılmasını kolaylaştırır.
+### Alt örnekleme nedir?
+Altörnekleme, görüntülerin çözünürlüğünü azaltma işlemidir ve bu, bu görüntüleri içeren belgelerin dosya boyutunun azaltılmasına yardımcı olur.
 
-#### S: Aspose.Words for .NET'i kullanarak görüntü örneklemeyle PDF belge boyutunu nasıl küçültebilirim?
-C: Aspose.Words for .NET kullanarak görüntü örneklemeyle PDF belge boyutunu küçültmek için şu adımları izleyin:
+### Altörnekleme görüntülerin kalitesini etkiler mi?
+Evet, altörnekleme görüntü kalitesini düşürür. Ancak etki, çözünürlük azalmasının derecesine bağlıdır. Bu, dosya boyutu ile görüntü kalitesi arasındaki bir dengedir.
 
- Belgelerinizin bulunduğu dizin yolunu değiştirerek ayarlayın.`"YOUR DOCUMENTS DIRECTORY"` belge dizininizin gerçek yolu ile.
+### Hangi görüntülerin alt örnekleneceğini seçebilir miyim?
+ Evet, ayarlayarak`ResolutionThreshold`ile hangi görüntülerin orijinal çözünürlüklerine göre altörnekleneceğini kontrol edebilirsiniz.
 
- PDF'ye dönüştürmek istediğiniz belgeyi kullanarak yükleyin.`Document` sınıfını seçin ve belirtilen belgeler dizinindeki belgenin yolunu belirtin.
+### Altörnekleme için ideal çözünürlük nedir?
+İdeal çözünürlük özel ihtiyaçlarınıza bağlıdır. Genellikle web görselleri için 72 DPI kullanılırken, baskı kalitesi için daha yüksek çözünürlükler kullanılır.
 
- Bir örneğini oluşturarak PDF olarak kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` kullanarak görüntü örnekleme seçeneklerini ayarlama ve sınıf oluşturma`DownsampleOptions` mülk. Görüntülerin hedef çözünürlüğünü kullanarak belirleyebilirsiniz.`Resolution` özelliğini kullanın ve görüntülerin ölçeğinin küçültülmeyeceği bir minimum çözünürlük eşiği ayarlayın.`ResolutionThreshold` mülk.
-
- Belgeyi kullanarak PDF formatında kaydedin.`Save` yöntemi`Document` yolu ve kaydetme seçeneklerini belirten sınıf.
-
-#### S: Görüntü örneklemeyle PDF belge boyutunu küçültmenin faydaları nelerdir?
-C: Görüntü örneklemeyle PDF belge boyutunu küçültmenin faydaları şunlardır:
-
-Küçültülmüş PDF dosya boyutu: Görüntü örnekleme, PDF belgesindeki görüntülerin çözünürlüğünü azaltır, bu da PDF dosya boyutunun önemli ölçüde azalmasına neden olur. Bu, dosyayı özellikle e-posta yoluyla veya çevrimiçi olarak paylaşmayı ve aktarmayı kolaylaştırır.
-
-Depolama alanının optimizasyonu: PDF dosyasının boyutunu azaltmak, özellikle yüksek çözünürlüklü görüntüler içeren çok sayıda PDF dosyanız olduğunda, depolama alanı kullanımını optimize etmenize yardımcı olur.
-
-Performans iyileştirmeleri: Daha küçük PDF dosyaları daha hızlı yüklenir ve farklı cihazlarda daha hızlı açılıp görüntülenebilir.
+### Aspose.Words for .NET ücretsiz mi?
+ Aspose.Words for .NET ticari bir üründür ancak ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/) veya başvuruda bulunun[geçici lisans](https://purchase.aspose.com/temporary-license/).

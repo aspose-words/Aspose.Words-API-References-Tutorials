@@ -2,81 +2,88 @@
 title: PDF Belgesinde Son Yazdırılan Özelliği Güncelle
 linktitle: PDF Belgesinde Son Yazdırılan Özelliği Güncelle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile PDF'ye dönüştürürken "Son Basılan" özelliğini güncellemek için adım adım kılavuz.
+description: Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir PDF belgesindeki son yazdırılan özelliği nasıl güncelleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
+## giriiş
 
-Bu makale, Aspose.Words for .NET ile PDF Belgesi güncelleme özelliğinde "Son Yazdırma" özelliğinin nasıl kullanılacağı hakkında adım adım bir kılavuz sağlar. Kodun her bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, PDF'ye dönüştürürken "Son yazdırılan" özelliğini güncelleme seçeneğinin nasıl yapılandırılacağını anlayabileceksiniz.
+Bir PDF belgesindeki son yazdırılan özelliği güncellemek mi istiyorsunuz? Belki çok miktarda belge yönetiyorsunuz ve bunların en son ne zaman yazdırıldığını takip etmeniz gerekiyor. Sebebiniz ne olursa olsun, bu özelliği güncellemek inanılmaz derecede faydalı olabilir ve Aspose.Words for .NET ile bu çok kolay! Bunu nasıl başarabileceğinize bakalım.
 
-Başlamadan önce projenize Aspose.Words for .NET kütüphanesini kurup yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
+## Önkoşullar
 
-## 1. Adım: Belge dizinini tanımlayın
+Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
- Başlamak için belgelerinizin bulunduğu dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
+-  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Henüz yapmadıysanız adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio gibi bir geliştirme ortamı.
+- Temel C# Anlayışı: C#'a biraz aşina olmak faydalı olacaktır.
+- Belge: PDF'ye dönüştürmek ve son yazdırılan özelliği güncellemek istediğiniz bir Word belgesi.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words for .NET'i projenizde kullanmak için gerekli ad alanlarını içe aktarmanız gerekir. İşte bunu nasıl yapacağınız:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Süreci basit, yönetilebilir adımlara ayıralım.
+
+## 1. Adım: Projenizi Kurun
+
+Öncelikle projenizi oluşturalım. Visual Studio'yu açın, yeni bir Konsol Uygulaması (.NET Framework veya .NET Core) oluşturun ve buna "UpdateLastPrintedPropertyPDF" gibi anlamlı bir ad verin.
+
+## Adım 2: Aspose.Words for .NET'i yükleyin
+
+Daha sonra Aspose.Words for .NET paketini kurmanız gerekiyor. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz. Solution Explorer'da projenize sağ tıklayın, "NuGet Paketlerini Yönet"i seçin, "Aspose.Words" ifadesini arayın ve yükleyin.
+
+## 3. Adım: Belgenizi Yükleyin
+
+ Şimdi PDF’ye dönüştürmek istediğiniz Word belgesini yükleyelim. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin yolu ile birlikte.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 2. Adım: Belgeyi yükleyin
-
-Daha sonra işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte belgenin "Rendering.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. Adım: Güncellenmiş "Son Yazdırılan" Özelliğiyle PDF Olarak Kaydetme Seçeneklerini Yapılandırma
+## 4. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
 
- PDF'ye dönüştürürken "Son Basılan" özelliğinin güncellenmesini etkinleştirmek için,`PdfSaveOptions` nesneyi ayarlayın ve`UpdateLastPrintedProperty`mülkiyet`true`.
+ Son yazdırılan özelliği güncellemek için PDF kaydetme seçeneklerini yapılandırmamız gerekir. Yeni bir örneğini oluştur`PdfSaveOptions` ve ayarlayın`UpdateLastPrintedProperty`mülkiyet`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions 
+{ 
+	UpdateLastPrintedProperty = true 
+};
 ```
 
-## 4. Adım: "Son yazdırılan" özelliğinin güncellenmesiyle belgeyi PDF olarak kaydedin
+## Adım 5: Belgeyi PDF olarak kaydedin
 
-Son olarak daha önce yapılandırdığımız kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedebiliriz.
+Son olarak belgeyi güncellenen özellikle birlikte PDF olarak kaydedin. Çıkış yolunu ve kaydetme seçeneklerini belirtin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-Bu kadar ! Aspose.Words for .NET kullanarak bir belgeyi PDF'ye dönüştürürken "Son Basılan" özelliğinin güncellenmesini başarıyla etkinleştirdiniz.
-
-### Aspose.Words for .NET ile "Son Basılan" Özelliği Güncellemek için Örnek Kaynak Kodu
-
-
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
-
-```
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir PDF belgesindeki "Son Basılan" özelliğinin nasıl güncelleneceğini anlattık. Verilen adımları izleyerek, bir belgeyi PDF'ye dönüştürürken "Son Yazdırılan" özelliğini güncelleme seçeneğini kolayca yapılandırabilirsiniz. Belge kullanımını ve ilgili bilgileri takip etmek için bu özelliği kullanın.
+İşte buyur! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir PDF belgesindeki son yazdırılan özelliği kolayca güncelleyebilirsiniz. Bu yöntem, belge yönetimi sürecinizin verimli ve güncel kalmasını sağlar. Bir deneyin ve iş akışınızı nasıl kolaylaştırdığını görün.
 
-### Sıkça Sorulan Sorular
+## SSS'ler
 
-#### S: Bir PDF belgesindeki "Son Yazdırılan" özelliği nedir?
-C: Bir PDF belgesindeki "Son Yazdırılan" özelliği, belgenin en son yazdırıldığı tarih ve saati ifade eder. Bu özellik, belge kullanımı ve yönetimi hakkındaki bilgilerin izlenmesi için yararlı olabilir.
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, .NET uygulamalarındaki belge oluşturma, değiştirme, dönüştürme ve yazdırma dahil belge işleme görevleri için güçlü bir kitaplıktır.
 
-#### S: Bir PDF belgesindeki "Son Basılan" özelliğini Aspose.Words for .NET ile nasıl güncelleyebilirim?
-C: Bir PDF belgesindeki "Son Basılan" özelliğini Aspose.Words for .NET ile güncellemek için şu adımları izleyin:
+### PDF'deki son yazdırılan özelliği neden güncellemelisiniz?
+Son yazdırılan özelliğin güncellenmesi, özellikle belge yazdırmanın sık yapılan bir etkinlik olduğu ortamlarda belge kullanımının izlenmesine yardımcı olur.
 
- Bir örneğini oluşturun`Document` Word belgesinin yolunu belirten sınıf.
+### Aspose.Words for .NET'i kullanarak diğer özellikleri güncelleyebilir miyim?
+Evet, Aspose.Words for .NET yazar, başlık, konu ve daha fazlası gibi çeşitli belge özelliklerini güncellemenize olanak tanır.
 
- Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`UpdateLastPrintedProperty`mülkiyet`true` "Son Basılan" özelliğinin güncellenmesini etkinleştirmek için.
+### Aspose.Words for .NET ücretsiz mi?
+Aspose.Words for .NET, indirebileceğiniz ücretsiz bir deneme sürümü sunuyor[Burada](https://releases.aspose.com/). Uzun süreli kullanım için bir lisans satın almanız gerekir.
 
- Kullan`Save` yöntemi`Document`Kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için sınıf.
-
-#### S: Oluşturulan PDF belgesinde "Son Yazdırılan" özelliğinin güncellenip güncellenmediğini nasıl kontrol edebilirim?
-C: PDF dosyasını Adobe Acrobat Reader gibi uyumlu bir PDF görüntüleyiciyle açıp belge bilgilerini görüntüleyerek oluşturulan PDF belgesinde "Son Yazdırılan" özelliğinin güncellenip güncellenmediğini kontrol edebilirsiniz. Son yazdırmanın tarihi ve saati, PDF belgesinin oluşturulduğu tarih ve saate karşılık gelmelidir.
+### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+Aspose.Words for .NET'te ayrıntılı belgeler bulabilirsiniz.[Burada](https://reference.aspose.com/words/net/).

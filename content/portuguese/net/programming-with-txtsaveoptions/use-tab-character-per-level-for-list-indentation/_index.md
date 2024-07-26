@@ -24,7 +24,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Nesta etapa, criamos um novo`Document` objeto e um associado`DocumentBuilder` objeto. Esses objetos nos permitirão manipular e gerar nosso documento.
+ Nesta etapa, criamos um novo`Document` objeto e um associado`DocumentBuilder` objeto. Esses objetos nos permitirão manipular e gerar nosso documento.
 
 ## Etapa 3: Criando uma lista com três níveis de recuo
 
@@ -100,7 +100,7 @@ Configure seu ambiente de desenvolvimento adicionando as referências necessári
 
  Crie um novo`Document` objeto e um associado`DocumentBuilder` objeto.
 
- Use o`DocumentBuilder` para criar uma lista com vários níveis de recuo usando os métodos`ApplyNumberDefault()` para aplicar o formato de número de lista padrão,`Writeln()`e`Write()` para adicionar itens à lista e`ListIndent()`para incrementar o recuo em cada nível.
+ Use o`DocumentBuilder`para criar uma lista com vários níveis de recuo usando os métodos`ApplyNumberDefault()` para aplicar o formato de número de lista padrão,`Writeln()`e`Write()` para adicionar itens à lista e`ListIndent()` para incrementar o recuo em cada nível.
 
  Configure as opções de salvamento criando um`TxtSaveOptions` objeto e definindo as propriedades`ListIndentation.Count` ao número de caracteres de tabulação por nível e`ListIndentation.Character` para`'\t'` para usar os caracteres de tabulação.
 
@@ -110,7 +110,7 @@ Configure seu ambiente de desenvolvimento adicionando as referências necessári
  Sim, você pode personalizar o número de caracteres de tabulação por nível para recuo da lista alterando o valor do`ListIndentation.Count` propriedade no`TxtSaveOptions` aula. Você pode especificar o número de caracteres de tabulação desejados para cada nível de recuo.
 
 #### P: Que outros caracteres posso usar para recuo de lista com Aspose.Words for .NET?
- Além dos caracteres de tabulação, você também pode usar outros caracteres para recuo de lista com Aspose.Words for .NET. Você pode definir o`ListIndentation.Character` propriedade para qualquer caractere desejado, como espaço (`' '`), para recuar listas.
+Além dos caracteres de tabulação, você também pode usar outros caracteres para recuo de lista com Aspose.Words for .NET. Você pode definir o`ListIndentation.Character` propriedade para qualquer caractere desejado, como espaço (`' '`), para recuar listas.
 
 #### P: O Aspose.Words for .NET oferece algum outro recurso para gerenciar listas?
 Sim, Aspose.Words for .NET oferece muitos recursos para gerenciar listas em documentos do Word. Você pode criar listas numeradas ou com marcadores, definir níveis de recuo, personalizar o estilo das listas, adicionar itens de lista e muito mais.

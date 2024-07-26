@@ -12,5 +12,5 @@ Os tutoriais Aspose.Words for .NET foram projetados para ajudá-lo a dominar o u
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Usar fonte da máquina de destino](./use-font-from-target-machine/) | Aprenda como converter um documento do Word em HTML fixo usando as fontes da máquina de destino com Aspose.Words for .NET. |
-| [Escreva todas as regras CSS em um único arquivo](./write-all-css-rules-in-single-file/) | Aprenda como converter um documento do Word em HTML fixo escrevendo todas as regras CSS em um único arquivo com Aspose.Words for .NET. |
+| [Usar fonte da máquina de destino](./use-font-from-target-machine/) | Aprenda como usar fontes da máquina de destino em seus documentos do Word com Aspose.Words for .NET. Siga nosso guia passo a passo para uma integração perfeita de fontes. |
+| [Escreva todas as regras CSS em um único arquivo](./write-all-css-rules-in-single-file/) | Aprenda como converter documentos do Word em HTML usando Aspose.Words for .NET com todas as regras CSS em um único arquivo para um código mais limpo e manutenção mais fácil. |

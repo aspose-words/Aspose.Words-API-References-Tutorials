@@ -17,7 +17,7 @@ Para seguir este tutorial, necesita tener lo siguiente:
 - Conocimientos básicos de C# y procesamiento de textos con documentos Word.
 
 ## Paso 1: configurar el directorio de documentos
- Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real al directorio donde desea guardar el documento.
+ Comience configurando la ruta a su directorio de documentos. Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real al directorio donde desea guardar el documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Paso 3: construye la mesa
- Utilizar el`StartTable`, `EndTable`, `InsertCell` , y`Write` métodos de la`DocumentBuilder`objeto para construir una mesa. Establezca la altura de fila deseada y la regla de altura usando el`RowFormat` propiedades.
+ Utilizar el`StartTable`, `EndTable`, `InsertCell` , y`Write` métodos de la`DocumentBuilder` objeto para construir una mesa. Establezca la altura de fila deseada y la regla de altura usando el`RowFormat` propiedades.
 
 ```csharp
 builder.StartTable();
@@ -86,7 +86,7 @@ builder.InsertNode(watermark);
 ```
 
 ## Paso 7: guarde el documento
- Guarde el documento en el directorio especificado utilizando el`Save` método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithShapes.LayoutInCell.docx".
+ Guarde el documento en el directorio especificado utilizando el`Save`método. Proporcione el nombre de archivo deseado con la extensión de archivo adecuada. En este ejemplo, guardamos el documento como "WorkingWithShapes.LayoutInCell.docx".
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);

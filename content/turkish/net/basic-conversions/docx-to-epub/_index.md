@@ -62,4 +62,4 @@ Evet, Aspose.Words .NET Core ve .NET Framework'ü tam olarak destekler.
  Ziyaret edin[Aspose.Words for .NET belgeleri](https://reference.aspose.com/words/net/) ayrıntılı örnekler ve API referansı için.
 
 ### Aspose.Words ile ilgili konularda nasıl destek alabilirim?
- Destek için şu adresi ziyaret edin:[Aspose.Words forumu](https://forum.aspose.com/c/words/8) Soru sorabileceğiniz ve toplulukla etkileşime girebileceğiniz yer.
+ Destek için şu adresi ziyaret edin:[Aspose.Words forumu](https://forum.aspose.com/c/words/8) soru sorabileceğiniz ve toplulukla etkileşime girebileceğiniz yer.

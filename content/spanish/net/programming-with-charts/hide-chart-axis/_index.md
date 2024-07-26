@@ -15,7 +15,7 @@ La creación de documentos de Word dinámicos y visualmente atractivos a menudo 
 
 Antes de sumergirnos en el tutorial, asegúrese de tener los siguientes requisitos previos:
 
--  Aspose.Words para .NET: puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: puede descargarlo desde[aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: cualquier IDE que admita el desarrollo .NET, como Visual Studio.
 - .NET Framework: asegúrese de tener .NET Framework instalado en su máquina.
 - Conocimientos básicos de C#: será beneficiosa la familiaridad con el lenguaje de programación C#.

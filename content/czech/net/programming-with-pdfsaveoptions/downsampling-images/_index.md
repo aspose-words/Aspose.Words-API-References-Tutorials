@@ -2,94 +2,89 @@
 title: Zmenšete velikost dokumentu PDF pomocí převzorkování obrázků
 linktitle: Zmenšete velikost dokumentu PDF pomocí převzorkování obrázků
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak zmenšit velikost dokumentu PDF pomocí převzorkování obrázků při převodu do PDF pomocí Aspose.Words for .NET.
+description: Zmenšete velikost dokumentu PDF převzorkováním obrázků pomocí Aspose.Words for .NET. Optimalizujte své soubory PDF pro rychlejší nahrávání a stahování.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
+## Úvod
 
-V tomto tutoriálu vás provedeme kroky ke zmenšení velikosti dokumentu PDF pomocí převzorkování obrázků při převodu do PDF pomocí Aspose.Words for .NET. Tím se zmenší velikost generovaného souboru PDF. Postupujte podle následujících kroků:
+Soubory PDF jsou v digitálním světě základem a používají se ke všemu, od sdílení dokumentů po vytváření elektronických knih. Jejich velikost však může být někdy překážkou, zejména pokud jde o obsah bohatý na obrázky. Zde přichází na řadu převzorkování obrázků. Snížením rozlišení obrázků v PDF můžete výrazně zmenšit velikost souboru, aniž byste příliš ohrozili kvalitu. V tomto tutoriálu si projdeme kroky, jak toho dosáhnout pomocí Aspose.Words for .NET.
 
-## Krok 1: Načtení dokumentu
+## Předpoklady
 
-Začněte nahráním dokumentu, který chcete převést do PDF:
+Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
+
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Jakékoli vývojové prostředí .NET, jako je Visual Studio.
+3. Základní znalost C#: Bude užitečné porozumět základům programování v C#.
+4.  Ukázkový dokument: Dokument aplikace Word (např.`Rendering.docx`) s obrázky pro převod do PDF.
+
+## Importovat jmenné prostory
+
+Nejprve musíte importovat potřebné jmenné prostory. Přidejte tyto v horní části souboru kódu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Nyní si tento proces rozdělíme na zvládnutelné kroky.
+
+## Krok 1: Vložte dokument
+
+Prvním krokem je načtení dokumentu aplikace Word. Zde zadáte cestu k adresáři dokumentů.
+
+```csharp
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Nezapomeňte zadat správnou cestu k dokumentu.
+ tomto kroku načítáme dokument Word ze zadaného adresáře. Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou, kde se váš dokument nachází.
 
-## Krok 2: Nakonfigurujte možnosti uložení PDF
+## Krok 2: Nakonfigurujte možnosti převzorkování
 
-Vytvořte instanci třídy PdfSaveOptions a nastavte možnosti zmenšení obrázku:
+Dále musíme nakonfigurovat možnosti převzorkování. To zahrnuje nastavení rozlišení a prahu rozlišení pro obrázky.
 
 ```csharp
+// Můžeme nastavit minimální práh pro downsampling.
+// Tato hodnota zabrání převzorkování druhého obrázku ve vstupním dokumentu.
 PdfSaveOptions saveOptions = new PdfSaveOptions
 {
-DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
+    DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
 };
 ```
 
- The`Resolution` vlastnost určuje cílové rozlišení obrázků a`ResolutionThreshold`vlastnost určuje minimální rozlišení, pod kterým nebudou obrázky zmenšeny.
+ Zde vytváříme novou instanci`PdfSaveOptions` a nastavení`Resolution` až 36 DPI a`ResolutionThreshold` až 128 DPI. To znamená, že jakýkoli obrázek s rozlišením vyšším než 128 DPI bude převzorkován na 36 DPI.
 
-## Krok 3: Převeďte dokument do PDF
+## Krok 3: Uložte dokument jako PDF
 
- Použijte`Save` způsob převodu dokumentu do PDF s uvedením možností uložení:
+Nakonec dokument uložíme jako PDF s nakonfigurovanými možnostmi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
 ```
 
-Ujistěte se, že jste zadali správnou cestu pro uložení převedeného PDF.
-
-### Příklad zdrojového kódu pro převzorkování obrázků pomocí Aspose.Words pro .NET
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Můžeme nastavit minimální práh pro downsampling.
-	// Tato hodnota zabrání převzorkování druhého obrázku ve vstupním dokumentu.
-	PdfSaveOptions saveOptions = new PdfSaveOptions
-	{
-		DownsampleOptions = { Resolution = 36, ResolutionThreshold = 128 }
-	};
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
-
-```
-
-Pomocí těchto kroků můžete snadno snížit rozlišení obrazu při převodu do PDF pomocí Aspose.Words for .NET.
+V tomto posledním kroku ukládáme dokument jako PDF do stejného adresáře se zadanými možnostmi převzorkování.
 
 ## Závěr
 
-tomto tutoriálu jsme vysvětlili, jak zmenšit velikost dokumentu PDF pomocí vzorkování obrázků při převodu do PDF pomocí Aspose.Words for .NET. Podle popsaných kroků můžete snadno snížit rozlišení obrázků a velikost generovaného souboru PDF. Ujistěte se, že jste zadali správnou cestu k dokumentu a podle potřeby nakonfigurujte možnosti vzorkování obrazu. Zmenšení velikosti souboru PDF usnadňuje sdílení, ukládání a rychlé načítání souboru na různých platformách. Užijte si výhody zmenšení velikosti dokumentu PDF pomocí vzorkování obrázků pomocí Aspose.Words for .NET.
+tady to máte! Úspěšně jste zmenšili velikost svého PDF převzorkováním obrázků pomocí Aspose.Words for .NET. Díky tomu jsou vaše soubory PDF nejen lépe spravovatelné, ale také pomáhá rychleji nahrávat, stahovat a plynuleji sledovat.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co snižuje velikost dokumentu PDF pomocí vzorkování obrázku?
-Odpověď: Zmenšení velikosti dokumentu PDF pomocí vzorkování obrázků znamená zmenšení velikosti generovaného souboru PDF snížením rozlišení obrázků při převodu do PDF. To optimalizuje využití úložného prostoru a usnadňuje sdílení a přenos souboru PDF.
+### Co je to downsampling?
+Převzorkování je proces snižování rozlišení obrázků, který pomáhá zmenšit velikost souboru dokumentů obsahujících tyto obrázky.
 
-#### Otázka: Jak mohu zmenšit velikost dokumentu PDF pomocí vzorkování obrázků pomocí Aspose.Words for .NET?
-Odpověď: Chcete-li zmenšit velikost dokumentu PDF pomocí vzorkování obrázků pomocí Aspose.Words for .NET, postupujte takto:
+### Ovlivní downsampling kvalitu obrázků?
+Ano, převzorkování sníží kvalitu obrazu. Dopad však závisí na stupni snížení rozlišení. Je to kompromis mezi velikostí souboru a kvalitou obrazu.
 
- Nahrazením nastavte cestu k adresáři, kde jsou umístěny vaše dokumenty`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+### Mohu si vybrat, které obrázky převzorkovat?
+ Ano, nastavením`ResolutionThreshold`, můžete ovládat, které obrázky budou převzorkovány na základě jejich původního rozlišení.
 
- Načtěte dokument, který chcete převést do PDF, pomocí`Document` třídy a zadejte cestu k dokumentu v zadaném adresáři dokumentů.
+### Jaké je ideální rozlišení pro downsampling?
+Ideální rozlišení závisí na vašich konkrétních potřebách. Běžně se pro webové obrázky používá 72 DPI, zatímco vyšší rozlišení se používá pro kvalitu tisku.
 
- Nakonfigurujte možnosti uložení jako PDF vytvořením instance souboru`PdfSaveOptions` třídy a nastavením možností vzorkování obrazu pomocí`DownsampleOptions` vlastnictví. Cílové rozlišení obrázků můžete určit pomocí`Resolution` a nastavte minimální práh rozlišení, nad kterým nebudou obrázky zmenšeny pomocí`ResolutionThreshold` vlastnictví.
-
- Uložte dokument ve formátu PDF pomocí`Save` metoda`Document` třída určující cestu a možnosti uložení.
-
-#### Otázka: Jaké jsou výhody zmenšení velikosti dokumentu PDF pomocí vzorkování obrázků?
-Odpověď: Výhody zmenšení velikosti dokumentu PDF pomocí vzorkování obrázků jsou:
-
-Zmenšená velikost souboru PDF: Vzorkování obrázků snižuje rozlišení obrázků v dokumentu PDF, což má za následek výrazné snížení velikosti souboru PDF. To usnadňuje sdílení a přenos souboru, zejména prostřednictvím e-mailu nebo online.
-
-Optimalizace úložného prostoru: Zmenšení velikosti souboru PDF pomáhá optimalizovat využití úložného prostoru, zejména pokud máte mnoho souborů PDF obsahujících obrázky s vysokým rozlišením.
-
-Zlepšení výkonu: Menší soubory PDF se načítají rychleji a lze je rychleji otevřít a prohlížet na různých zařízeních.
+### Je Aspose.Words for .NET zdarma?
+ Aspose.Words for .NET je komerční produkt, ale můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo požádat o a[dočasná licence](https://purchase.aspose.com/temporary-license/).

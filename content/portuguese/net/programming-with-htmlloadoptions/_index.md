@@ -12,4 +12,4 @@ Os tutoriais do Aspose.Words for .NET sobre processamento de palavras com HTMLLo
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Tipo de controle preferido em documento do Word](./preferred-control-type/) | Guia passo a passo para especificar o tipo de controle preferido em um documento Word ao carregar um documento HTML com Aspose.Words for .NET. |
+| [Tipo de controle preferido em documento do Word](./preferred-control-type/) | Aprenda como inserir um campo de formulário de caixa de combinação em um documento do Word usando Aspose.Words for .NET. Siga este guia passo a passo para integração perfeita de conteúdo HTML. |

@@ -55,7 +55,7 @@ is_root: true
 - [การโหลดและบันทึกเอกสาร](./java/document-loading-and-saving/)
 - [การจัดการเอกสาร](./java/document-manipulation/)
 - [การแปลงเอกสารและการส่งออก](./java/document-conversion-and-export/)
-- [ใบอนุญาตและการกำหนดค่า](./java/licensing-and-configuration/)
+- [การออกใบอนุญาตและการกำหนดค่า](./java/licensing-and-configuration/)
 - [การใช้องค์ประกอบเอกสาร](./java/using-document-elements/)
 - [การพิมพ์เอกสาร](./java/printing-documents/)
 - [การแสดงผลเอกสาร](./java/rendering-documents/)

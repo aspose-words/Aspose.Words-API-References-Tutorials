@@ -2,35 +2,49 @@
 title: Word 文書のヘッダー フッター ブックマークを PDF 文書にエクスポートする
 linktitle: Word 文書のヘッダー フッター ブックマークを PDF 文書にエクスポートする
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書のヘッダー フッター ブックマークを PDF 文書のブックマークにエクスポートする手順ガイド。
+description: Aspose.Words for .NET を使用して、Word 文書からヘッダーとフッターのブックマークを PDF にエクスポートする方法をステップバイステップ ガイドで学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
+## 導入
 
-この記事では、Aspose.Words for .NET を使用して Word 文書のヘッダー フッター ブックマークを PDF 文書機能にエクスポートする方法について、ステップ バイ ステップで説明します。コードの各部分を詳しく説明します。このチュートリアルの最後には、文書のヘッダーとフッターからブックマークをエクスポートし、適切なブックマークを含む PDF を生成する方法を理解できるようになります。
+Word 文書を PDF に変換することは、特に文書の書式設定を保持したまま共有またはアーカイブする場合によく行われるタスクです。これらの文書には、ヘッダーとフッター内に重要なブックマークが含まれている場合があります。このチュートリアルでは、Aspose.Words for .NET を使用して、これらのブックマークを Word 文書から PDF にエクスポートするプロセスについて説明します。
 
-開始する前に、プロジェクトに Aspose.Words for .NET ライブラリがインストールされ、構成されていることを確認してください。ライブラリとインストール手順は、Aspose Web サイトで参照できます。
+## 前提条件
 
-## ステップ1: ドキュメントディレクトリを定義する
+始める前に、以下のものを用意しておいてください。
 
-まず、ドキュメントが保存されているディレクトリへのパスを定義する必要があります。`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。
+- Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- 開発環境: 開発環境を設定します。Visual Studio またはその他の .NET 互換 IDE を使用できます。
+- C# の基礎知識: コード例に従うには、C# プログラミングの知識が必要です。
+
+## 名前空間のインポート
+
+まず最初に、C# プロジェクトに必要な名前空間をインポートする必要があります。コード ファイルの先頭に次の行を追加します。
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## ステップ2: ドキュメントをアップロードする
+プロセスをわかりやすいステップに分解してみましょう。
 
-次に、処理するドキュメントを読み込む必要があります。この例では、ドキュメントの名前が「Bookmarks in headers and footers.docx」で、指定されたドキュメント ディレクトリにあると想定しています。
+## ステップ1: ドキュメントを初期化する
+
+最初のステップは、Word 文書を読み込むことです。手順は次のとおりです。
 
 ```csharp
+//ドキュメント ディレクトリへのパス。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-## ステップ3: PDFとして保存オプションを設定する
+この手順では、ドキュメント ディレクトリへのパスを指定して、Word ドキュメントを読み込むだけです。
 
-ヘッダーとフッターのブックマークをエクスポートするには、`PdfSaveOptions`オブジェクト。この例では、既定のブックマーク アウトライン レベルを 1 に設定し、ヘッダーとフッターのブックマークのエクスポート モードを「最初」に設定します。
+## ステップ2: PDF保存オプションを設定する
+
+次に、ヘッダーとフッターのブックマークが正しくエクスポートされるように、PDF 保存オプションを構成する必要があります。
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -38,55 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
-## ステップ4: ヘッダーとフッターのブックマークを付けて文書をPDFとして保存する
+ここでは、`PdfSaveOptions` 。`DefaultBookmarksOutlineLevel`プロパティはブックマークのアウトラインレベルを設定し、`HeaderFooterBookmarksExportMode`プロパティにより、ヘッダーとフッター内のブックマークの最初の出現のみがエクスポートされます。
 
-最後に、以前に設定した保存オプションを使用して、ドキュメントを PDF 形式で保存できます。
+## ステップ3: ドキュメントをPDFとして保存する
+
+最後に、設定したオプションを使用してドキュメントを PDF として保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-これで完了です。Aspose.Words for .NET を使用して、ドキュメントからヘッダーとフッターのブックマークを正常にエクスポートし、適切なブックマークを含む PDF を生成しました。
-
-### Aspose.Words for .NET を使用してヘッダーとフッターのブックマークをエクスポートするためのサンプル ソース コード
-
-```csharp
-
-	//ドキュメント ディレクトリへのパス。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions();
-	saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
-	saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
-
-```
+この手順では、設定したオプションを使用して、指定したパスにドキュメントを保存します。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して、Word 文書から PDF 文書にヘッダーとフッターのブックマークをエクスポートする方法について説明しました。エクスポートされたブックマークを使用すると、生成された PDF 文書内の対応するヘッダーとフッターを簡単にナビゲートしてすばやく参照できます。説明されている手順に従って、Aspose.Words for .NET を使用して文書からヘッダーとフッターのブックマークをエクスポートし、適切なブックマークを含む PDF を生成します。文書への正しいパスを指定し、必要に応じて保存オプションを構成するようにしてください。
+これで完了です。これらの手順に従うと、Aspose.Words for .NET を使用して、Word 文書のヘッダーとフッターからブックマークを PDF に簡単にエクスポートできます。この方法により、文書内の重要なナビゲーション補助が PDF 形式で保持され、読者が文書内を簡単に移動できるようになります。
 
-### よくある質問
+## よくある質問
 
-### Q: Word 文書から PDF 文書にヘッダーとフッターのブックマークをエクスポートするとはどういうことですか?
-A: Word 文書から PDF 文書にヘッダーとフッターのブックマークをエクスポートすると、元の Word 文書のヘッダーとフッターから PDF 文書にブックマークを保存および生成する機能です。これにより、ユーザーはヘッダーとフッターに対応するブックマークを使用して、PDF 文書内をすばやく簡単に移動できます。
+### Word 文書からすべてのブックマークを PDF にエクスポートできますか?
 
-### Q: Aspose.Words for .NET を使用して、ヘッダーとフッターのブックマークを Word 文書から PDF 文書にエクスポートするにはどうすればよいですか?
-A: Aspose.Words for .NET を使用して Word 文書から PDF 文書にヘッダーとフッターのブックマークをエクスポートするには、次の手順に従います。
+はい、できます。`PdfSaveOptions`必要に応じて、すべてのブックマークを含めるように設定を調整できます。
 
-ドキュメントが保存されているディレクトリパスを次のように設定します。`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリの実際のパスを入力します。
+### ドキュメントの本文からもブックマークをエクスポートしたい場合はどうすればよいでしょうか?
 
-処理したい文書をロードします。`Document`クラスを作成し、指定されたドキュメント ディレクトリ内の Word ドキュメントへのパスを指定します。
+設定できるのは`OutlineOptions`で`PdfSaveOptions`ドキュメントの本文からブックマークを含めます。
 
- PDFとして保存オプションを設定するには、`PdfSaveOptions`クラスと適切なヘッダーおよびフッターのブックマーク オプションを設定します。
+### PDF 内のブックマーク レベルをカスタマイズすることは可能ですか?
 
-ドキュメントをPDF形式で保存するには、`Save`方法の`Document`パスと保存オプションを指定するクラス。
+もちろんです！`DefaultBookmarksOutlineLevel`ブックマークに異なるアウトライン レベルを設定するプロパティ。
 
-### Q: ヘッダーとフッターのブックマークを PDF ドキュメントにエクスポートする利点は何ですか?
-A: ヘッダーとフッターのブックマークを PDF ドキュメントにエクスポートする利点は次のとおりです。
+### ブックマークのないドキュメントをどのように処理すればよいですか?
 
-簡単なナビゲーション: ブックマークを使用すると、ユーザーは特定のヘッダーとフッターを参照して PDF ドキュメントを簡単にナビゲートできます。
+ドキュメントにブックマークがない場合、PDF はブックマークのアウトラインなしで生成されます。PDF でブックマークが必要な場合は、ドキュメントにブックマークが含まれていることを確認してください。
 
-クイック リファレンス: ブックマークを使用すると、ユーザーはヘッダーとフッターに基づいて PDF ドキュメントの関連セクションをすばやく見つけることができます。
+### この方法は、DOCX や RTF などの他のドキュメント タイプにも使用できますか?
+
+はい、Aspose.Words for .NET は、DOCX、RTF など、さまざまなドキュメント タイプをサポートしています。

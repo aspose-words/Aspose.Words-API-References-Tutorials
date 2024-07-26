@@ -8,7 +8,7 @@ weight: 10
 url: /nl/net/working-with-formfields/insert-form-fields/
 ---
 
-In deze stapsgewijze zelfstudie begeleiden we u bij het invoegen van formuliervelden, met name een vervolgkeuzeformulierveld, in een Word-document met behulp van Aspose.Words voor .NET. We leggen de meegeleverde C#-broncode uit en laten u zien hoe u deze in uw eigen projecten kunt implementeren.
+In deze stapsgewijze zelfstudie laten we u zien hoe u formuliervelden, met name een vervolgkeuzelijstveld, in een Word-document kunt invoegen met behulp van Aspose.Words voor .NET. We leggen de meegeleverde C#-broncode uit en laten u zien hoe u deze in uw eigen projecten kunt implementeren.
 
  Om aan de slag te gaan, moet u ervoor zorgen dat Aspose.Words voor .NET is geïnstalleerd en ingesteld in uw ontwikkelomgeving. Als u dit nog niet hebt gedaan, downloadt en installeert u de bibliotheek van[Aspose.Releases]https://releases.aspose.com/words/net/.
 

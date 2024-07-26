@@ -42,7 +42,7 @@ builder.Write("Simple text");
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
-### Przykładowy kod źródłowy dla opcji Ustaw znak wyróżnienia czcionki przy użyciu Aspose.Words dla .NET 
+### Przykładowy kod źródłowy dla Ustaw znacznik wyróżnienia czcionki przy użyciu Aspose.Words dla .NET 
 
 ```csharp
 // Ścieżka do katalogu dokumentów

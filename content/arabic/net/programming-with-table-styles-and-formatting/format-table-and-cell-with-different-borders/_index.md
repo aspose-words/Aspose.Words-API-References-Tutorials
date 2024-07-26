@@ -45,7 +45,7 @@ builder.EndRow();
 builder.CellFormat.ClearFormatting();
 builder.InsertCell();
 // قم بإنشاء حدود أكثر سمكًا للخلية الأولى في هذا الصف. سيكون مختلفا
-// نسبة إلى الحدود المحددة للجدول.
+// بالنسبة للحدود المحددة للجدول.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
 builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;

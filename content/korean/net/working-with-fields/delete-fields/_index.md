@@ -16,7 +16,7 @@ url: /ko/net/working-with-fields/delete-fields/
 
 이 튜토리얼을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
-### 소프트웨어 요구사항
+### 소프트웨어 요구 사항
 
 1. Visual Studio: 시스템에 설치 및 구성됩니다.
 2.  .NET용 Aspose.Words: Visual Studio 프로젝트에 다운로드되어 통합되었습니다. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).

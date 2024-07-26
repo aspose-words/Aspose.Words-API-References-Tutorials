@@ -37,7 +37,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 };
 ```
 
- ในขั้นตอนนี้ เรากำหนดค่าตัวเลือกสำหรับการโหลดเอกสาร TXT เราสร้างใหม่`TxtLoadOptions` วัตถุและตั้งค่า`LeadingSpacesOptions`และ`TrailingSpacesOptions` คุณสมบัติที่จะ`TxtLeadingSpacesOptions.Trim`และ`TxtTrailingSpacesOptions.Trim` ตามลำดับ ซึ่งจะเป็นการบอกให้ Aspose.Words ลบช่องว่างนำหน้าและต่อท้ายออกจากบรรทัดเมื่อโหลดเอกสาร
+ ในขั้นตอนนี้ เราจะกำหนดค่าตัวเลือกสำหรับการโหลดเอกสาร TXT เราสร้างใหม่`TxtLoadOptions` วัตถุและตั้งค่า`LeadingSpacesOptions`และ`TrailingSpacesOptions` คุณสมบัติที่จะ`TxtLeadingSpacesOptions.Trim`และ`TxtTrailingSpacesOptions.Trim` ตามลำดับ ซึ่งจะเป็นการบอกให้ Aspose.Words ลบช่องว่างนำหน้าและต่อท้ายออกจากบรรทัดเมื่อโหลดเอกสาร
 
 ## ขั้นตอนที่ 4: การโหลดเอกสาร
 
@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- ในขั้นตอนสุดท้ายนี้ เราจะบันทึกเอกสารผลลัพธ์ในรูปแบบ .docx โดยใช้`Save` วิธีการและส่งเส้นทางไปยังไฟล์ที่ส่งออก
+ในขั้นตอนสุดท้ายนี้ เราจะบันทึกเอกสารผลลัพธ์ในรูปแบบ .docx โดยใช้`Save` วิธีการและส่งเส้นทางไปยังไฟล์ที่ส่งออก
 
 ตอนนี้คุณสามารถรันซอร์สโค้ดเพื่อโหลดเอกสารข้อความโดยระบุตัวเลือกการจัดการช่องว่าง เอกสารผลลัพธ์จะถูกบันทึกในไดเร็กทอรีที่ระบุโดยใช้ชื่อ "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx"
 

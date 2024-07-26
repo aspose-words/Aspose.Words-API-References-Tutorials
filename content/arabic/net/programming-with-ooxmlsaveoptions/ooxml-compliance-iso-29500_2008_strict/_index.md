@@ -2,72 +2,103 @@
 title: توافق Ooxml مع ISO 29500_2008_Strict
 linktitle: توافق Ooxml مع ISO 29500_2008_Strict
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية التأكد من توافق Ooxml Iso 29500_2008_Strict عند حفظ المستندات باستخدام Aspose.Words for .NET.
+description: تعرف على كيفية التأكد من توافق OOXML مع ISO 29500_2008_Strict باستخدام Aspose.Words لـ .NET من خلال هذا الدليل التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_strict/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سنستكشف كود مصدر C# المقدم لضمان توافق Ooxml Iso 29500_2008_Strict عند حفظ مستند باستخدام Aspose.Words for .NET. تضمن هذه الميزة أن المستند الذي تم إنشاؤه يتوافق مع مواصفات ISO 29500_2008_Strict.
+هل أنت مستعد للتعمق في عالم توافق المستندات مع OOXML ISO 29500_2008_Strict؟ لنقم برحلة عبر هذا البرنامج التعليمي الشامل باستخدام Aspose.Words for .NET. سنقوم بتفصيل كل خطوة، مما يجعل من السهل جدًا متابعتها وتنفيذها. لذلك، ربط حزام الأمان، ودعنا نبدأ!
 
-## الخطوة 1: تهيئة البيئة
+## المتطلبات الأساسية
 
-قبل أن تبدأ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من إضافة المراجع الضرورية واستيراد مساحات الأسماء المناسبة.
+قبل أن ننتقل إلى التفاصيل الجوهرية، دعونا نتأكد من أن لديك كل ما تحتاجه:
 
-## الخطوة 2: تحميل الوثيقة
+1.  Aspose.Words for .NET: تأكد من تثبيت Aspose.Words for .NET. إذا لم يكن الأمر كذلك، قم بتنزيله[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: قم بإعداد بيئة التطوير الخاصة بك (على سبيل المثال، Visual Studio).
+3. دليل المستندات: اجعل الدليل جاهزًا حيث يتم تخزين مستندات Word الخاصة بك.
+
+## استيراد مساحات الأسماء
+
+أول الأشياء أولاً، فلنستورد مساحات الأسماء الضرورية. سيضمن هذا إمكانية الوصول إلى جميع وظائف Aspose.Words التي نحتاجها.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+دعونا نقسم العملية إلى خطوات سهلة الهضم لضمان الوضوح وسهولة التنفيذ.
+
+## الخطوة 1: إعداد دليل المستندات
+
+قبل أن نتمكن من البدء في العمل مع المستند، نحتاج إلى تعيين المسار إلى دليل المستند الخاص بك.
 
 ```csharp
 // المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Explanation: يقوم هذا السطر من التعليمات البرمجية بإعداد متغير سلسلة`dataDir` الذي يحمل المسار إلى الدليل حيث يتم تخزين المستندات الخاصة بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي على النظام الخاص بك.
+
+## الخطوة 2: قم بتحميل مستند Word الخاص بك
+
+بعد ذلك، سنقوم بتحميل مستند Word الذي تريد العمل معه.
+
+```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- في هذه الخطوة نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+ توضيح :`Document` يتم استخدام فئة من Aspose.Words لتحميل مستند Word. يتم إنشاء مسار المستند عن طريق التسلسل`dataDir` مع اسم الوثيقة`"Document.docx"`. تأكد من وجود المستند في الدليل المحدد.
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي لـ OOXML
+## الخطوة 3: تحسين المستند لبرنامج Word 2016
+
+لضمان التوافق والأداء الأمثل، نحتاج إلى تحسين المستند لإصدار Word محدد.
 
 ```csharp
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
+```
 
+ شرح: هذا الخط يستدعي`OptimizeFor` الطريقة على`CompatibilityOptions` ملكية`doc` كائن، محدد`MsWordVersion.Word2016` لتحسين المستند لبرنامج Microsoft Word 2016.
+
+## الخطوة 4: اضبط توافق OOXML على ISO 29500_2008_Strict
+
+الآن، لنقم بتعيين مستوى توافق OOXML على ISO 29500_2008_Strict.
+
+```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
- في هذه الخطوة، نقوم بتكوين خيارات حفظ OOXML باستخدام ملف`OptimizeFor`و`OoxmlSaveOptions` طُرق. نقوم بتحسين توافق المستندات مع إصدار Word 2016 باستخدام`OptimizeFor`وتعيين الامتثال ل`Iso29500_2008_Strict` استخدام`Compliance`.
+ شرح: نقوم بإنشاء مثيل لـ`OoxmlSaveOptions` وتعيينها`Compliance`الملكية ل`OoxmlCompliance.Iso29500_2008_Strict`وهذا يضمن حفظ المستند وفقًا لمعايير ISO 29500_2008_Strict.
 
-## الخطوة 4: حفظ المستند باستخدام Ooxml Iso 29500_2008_Strict Compound
+## الخطوة 5: احفظ المستند
+
+وأخيرًا، فلنحفظ المستند باستخدام إعدادات التوافق الجديدة.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx", saveOptions);
 ```
 
- في هذه الخطوة الأخيرة، نقوم بحفظ المستند باستخدام الملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج باستخدام الملف`.docx` الملحق، إلى جانب خيارات الحفظ المحددة.
-
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لضمان توافق Ooxml Iso 29500_2008_Strict عند حفظ مستند. سيتم حفظ الملف الناتج في الدليل المحدد بالاسم "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx".
-
-### نموذج التعليمات البرمجية المصدر لـ Ooxml Compliance Iso 29500_ 2008_ Strict using Aspose.Words for .NET 
-```csharp
-
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-Document doc = new Document(dataDir + "Document.docx");
-
-doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
-
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
-
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx", saveOptions);
-            
-        
-```
+ توضيح :`Save` يتم استدعاء الطريقة على`doc` كائن لحفظ المستند. يتضمن المسار الدليل واسم الملف الجديد`"WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Strict.docx"` ، ويستخدم`saveOptions` قمنا بتكوينها في وقت سابق.
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، اكتشفنا ميزة التوافق الصارم مع Ooxml Iso 29500_2008_Strict عند حفظ مستند باستخدام Aspose.Words for .NET. من خلال تحديد التوافق Iso29500_2008_Strict مع خيارات حفظ Ooxml، فإننا نضمن أن المستند الذي تم إنشاؤه يلبي معايير ISO 29500_2008_Strict.
+ها أنت ذا! لقد نجحت في تكوين مستند Word ليتوافق مع OOXML ISO 29500_2008_Strict باستخدام Aspose.Words لـ .NET. يرشدك هذا الدليل خلال إعداد دليل المستندات، وتحميل المستند، وتحسين Word 2016، وتعيين مستوى التوافق، وحفظ المستند. أنت الآن جاهز للتأكد من أن مستنداتك تلبي أعلى معايير الامتثال بسهولة.
 
-يضمن الامتثال الصارم لـ Ooxml Iso 29500_2008_Strict توافقًا أفضل مع الإصدارات الأحدث من Microsoft Word، مما يضمن الحفاظ على تنسيق المستند وأنماطه ووظائفه. وهذا مهم بشكل خاص عند تبادل المستندات مع مستخدمين آخرين أو عند الأرشفة على المدى الطويل.
+## الأسئلة الشائعة
 
-Aspose.Words for .NET يجعل من السهل ضمان توافق Ooxml Iso 29500_2008_Strict من خلال توفير خيارات نسخ احتياطي مرنة وقوية. يمكنك دمج هذه الوظيفة في مشاريعك للتأكد من أن المستندات التي تم إنشاؤها تلبي أحدث المعايير.
+### لماذا يعد الامتثال لـ OOXML مهمًا؟
+يضمن توافق OOXML أن تكون مستنداتك متوافقة مع الإصدارات المختلفة من Microsoft Word، مما يعمل على تحسين إمكانية الوصول والاتساق.
 
-لا تتردد في استكشاف الميزات الأخرى التي تقدمها Aspose.Words لـ .NET لتحسين التعامل مع المستندات وتحسين سير العمل.
+### هل يمكنني استخدام هذه الطريقة لمستويات الامتثال الأخرى؟
+نعم، يمكنك تعيين مستويات امتثال مختلفة عن طريق تغيير`OoxmlCompliance` الممتلكات في`OoxmlSaveOptions`.
+
+### ماذا يحدث إذا كان مسار المستند غير صحيح؟
+ إذا كان مسار المستند غير صحيح، فسيتم`Document` سوف يرمي المنشئ أ`FileNotFoundException`. التأكد من صحة المسار.
+
+### هل أحتاج إلى التحسين لبرنامج Word 2016؟
+على الرغم من أن التحسين لإصدار معين من Word ليس إلزاميًا، إلا أنه يمكن أن يؤدي إلى تحسين التوافق والأداء.
+
+### أين يمكنني العثور على المزيد من الموارد على Aspose.Words لـ .NET؟
+ يمكنك العثور على المزيد من الموارد والوثائق[هنا](https://reference.aspose.com/words/net/).

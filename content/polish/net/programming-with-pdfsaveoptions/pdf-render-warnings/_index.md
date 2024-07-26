@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## Obsługa ostrzeżeń dotyczących renderowania plików PDF za pomocą Aspose.Words dla .NET
+## Wstęp
 
 Jeśli pracujesz z Aspose.Words dla .NET, zarządzanie ostrzeżeniami o renderowaniu PDF jest istotnym aspektem zapewniającym prawidłowe przetwarzanie i zapisywanie dokumentów. W tym obszernym przewodniku omówimy, jak obsługiwać ostrzeżenia dotyczące renderowania plików PDF za pomocą Aspose.Words. Pod koniec tego samouczka będziesz mieć pełną wiedzę na temat implementowania tej funkcji w projektach .NET.
 
@@ -79,7 +79,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 public class HandleDocumentWarnings : IWarningCallback
 {
     /// <podsumowanie>
-    /// Ta metoda jest wywoływana zawsze, gdy podczas przetwarzania dokumentu wystąpi potencjalny problem.
+    //Ta metoda jest wywoływana zawsze, gdy podczas przetwarzania dokumentu wystąpi potencjalny problem.
     /// </podsumowanie>
     public void Warning(WarningInfo info)
     {

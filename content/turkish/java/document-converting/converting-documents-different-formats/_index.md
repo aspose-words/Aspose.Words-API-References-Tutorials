@@ -2,7 +2,7 @@
 title: Belgeleri Farklı Formatlara Dönüştürme
 linktitle: Belgeleri Farklı Formatlara Dönüştürme
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak belgeleri farklı formatlara nasıl dönüştüreceğinizi öğrenin. Verimli belge dönüştürme için adım adım kılavuz.
+description: Aspose.Words for Java'yı kullanarak belgeleri farklı formatlara nasıl dönüştüreceğinizi öğrenin. Verimli belge dönüşümü için adım adım kılavuz.
 type: docs
 weight: 11
 url: /tr/java/document-converting/converting-documents-different-formats/

@@ -118,4 +118,4 @@ Ja, u kunt gegevens uit een database importeren en een tabel in uw document invu
  Met Aspose.Words voor Java kunt u uw document in verschillende formaten opslaan, waaronder DOCX, PDF, HTML en meer. Gebruik de`Document.save` methode om het gewenste formaat op te geven.
 
 ## Conclusie
-Het maken van tabellen en rijen in documenten met Aspose.Words voor Java is een krachtige mogelijkheid voor documentautomatisering. Met de meegeleverde broncode en begeleiding in deze uitgebreide handleiding bent u goed uitgerust om het potentieel van Aspose.Words voor Java in uw Java-toepassingen te benutten. Of u nu rapporten, documenten of presentaties maakt, de gestructureerde gegevenspresentatie is slechts een codefragment verwijderd.
+Het maken van tabellen en rijen in documenten met Aspose.Words voor Java is een krachtige mogelijkheid voor documentautomatisering. Met de broncode en begeleiding in deze uitgebreide handleiding bent u goed uitgerust om het potentieel van Aspose.Words voor Java in uw Java-toepassingen te benutten. Of u nu rapporten, documenten of presentaties maakt, de gestructureerde gegevenspresentatie is slechts een codefragment verwijderd.

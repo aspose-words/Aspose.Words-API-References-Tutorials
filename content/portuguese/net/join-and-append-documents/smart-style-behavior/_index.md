@@ -120,7 +120,7 @@ E aí está, pessoal! Com essas etapas, você aprendeu como mesclar documentos d
 Sim, você pode repetir o processo para documentos adicionais. Basta carregar cada novo documento e inseri-lo no documento de destino conforme mostrado.
 
 ###  se eu não definir`SmartStyleBehavior` to true?
-Sem esta opção, os estilos do documento de origem poderão não se integrar bem, levando a problemas de formatação.
+Sem esta opção, os estilos do documento de origem podem não se integrar bem, causando problemas de formatação.
 
 ### O Aspose.Words para .NET é gratuito?
  Aspose.Words for .NET é um produto pago, mas você pode experimentá-lo gratuitamente com um[licença temporária](https://purchase.aspose.com/temporary-license/).

@@ -2,94 +2,87 @@
 title: Zmniejsz rozmiar pliku PDF, wyłączając osadzone czcionki
 linktitle: Zmniejsz rozmiar pliku PDF, wyłączając osadzone czcionki
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zmniejszyć rozmiar pliku PDF, wyłączając osadzanie czcionek systemu Windows podczas konwersji dokumentów do formatu PDF za pomocą Aspose.Words dla .NET.
+description: Zmniejsz rozmiar pliku PDF, wyłączając osadzone czcionki za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby zoptymalizować dokumenty pod kątem wydajnego przechowywania i udostępniania.
 type: docs
 weight: 10
 url: /pl/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
+## Wstęp
 
-W tym samouczku przeprowadzimy Cię przez etapy zmniejszania rozmiaru pliku PDF poprzez wyłączenie osadzania czcionek Windows w dokumencie PDF za pomocą Aspose.Words dla .NET. Wyłączając osadzanie czcionek, możesz zmniejszyć rozmiar generowanego pliku PDF. Wykonaj poniższe kroki:
+Zmniejszenie rozmiaru plików PDF może mieć kluczowe znaczenie dla wydajnego przechowywania i szybkiego udostępniania. Skutecznym sposobem na osiągnięcie tego jest wyłączenie czcionek osadzonych, zwłaszcza gdy czcionki standardowe są już dostępne w większości systemów. W tym samouczku przyjrzymy się, jak zmniejszyć rozmiar pliku PDF, wyłączając osadzone czcionki za pomocą Aspose.Words dla .NET. Przeanalizujemy każdy krok, aby mieć pewność, że możesz łatwo wdrożyć to we własnych projektach.
 
-## Krok 1: Ładowanie dokumentu
+## Warunki wstępne
 
-Zacznij od przesłania dokumentu, który chcesz przekonwertować do formatu PDF:
+Zanim zagłębisz się w kod, upewnij się, że masz następujące elementy:
+
+-  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj go z[Link do pobrania](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne .NET: popularnym wyborem jest Visual Studio.
+- Przykładowy dokument programu Word: Przygotuj plik DOCX, który chcesz przekonwertować do formatu PDF.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, upewnij się, że do projektu zaimportowano niezbędne przestrzenie nazw. Dzięki temu mamy dostęp do klas i metod wymaganych do wykonania naszego zadania.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Podzielmy proces na proste, łatwe do wykonania etapy. Każdy krok poprowadzi Cię przez zadanie, upewniając się, że rozumiesz, co się dzieje w każdym momencie.
+
+## Krok 1: Zainicjuj dokument
+
+Najpierw musimy załadować dokument Word, który chcesz przekonwertować na plik PDF. Tutaj zaczyna się Twoja podróż.
+
+```csharp
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Pamiętaj, aby podać poprawną ścieżkę do swojego dokumentu.
+ Tutaj,`dataDir` jest symbolem zastępczym katalogu, w którym znajduje się dokument. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką.
 
-## Krok 2: Ustaw opcje zapisywania plików PDF
+## Krok 2: Skonfiguruj opcje zapisywania plików PDF
 
-Utwórz instancję klasy PdfSaveOptions i określ sposób osadzania czcionek:
+Następnie skonfigurujemy opcje zapisywania plików PDF. W tym miejscu określamy, że nie chcemy osadzać standardowych czcionek systemu Windows.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
+// Wyjściowy plik PDF zostanie zapisany bez osadzania standardowych czcionek systemu Windows.
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone
+};
 ```
 
-Ta opcja umożliwia dezaktywację integracji czcionek Windows w generowanym pliku PDF.
+ Przez ustawienie`FontEmbeddingMode` Do`EmbedNone`, instruujemy Aspose.Words, aby nie umieszczał tych czcionek w pliku PDF, co zmniejszy rozmiar pliku.
 
-## Krok 3: Konwertuj dokument na format PDF
+## Krok 3: Zapisz dokument w formacie PDF
 
- Użyj`Save` metoda konwersji dokumentu do formatu PDF określająca opcje konwersji:
+Na koniec zapisujemy dokument jako plik PDF, korzystając ze skonfigurowanych opcji zapisywania. To jest moment prawdy, w którym Twój DOCX przekształca się w kompaktowy plik PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
-Upewnij się, że podałeś poprawną ścieżkę do zapisania przekonwertowanego pliku PDF.
-
-### Przykładowy kod źródłowy dla opcji Wyłącz osadzanie czcionek Windows przy użyciu Aspose.Words dla .NET
-
-Oto pełny kod źródłowy wyłączający osadzanie czcionek Windows w dokumencie PDF za pomocą Aspose.Words dla .NET:
-
-```csharp
-
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Wyjściowy plik PDF zostanie zapisany bez osadzania standardowych czcionek systemu Windows.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedNone };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
-
-```
-Wykonując te kroki, możesz łatwo wyłączyć osadzanie czcionek Windows w dokumencie PDF za pomocą Aspose.Words dla .NET.
-
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` ponownie z rzeczywistą ścieżką katalogu. Wyjściowy plik PDF zostanie teraz zapisany w określonym katalogu bez osadzonych standardowych czcionek.
 
 ## Wniosek
 
-tym samouczku nauczyliśmy się, jak zmniejszyć rozmiar pliku PDF, wyłączając osadzanie czcionek Windows za pomocą Aspose.Words dla .NET. Wyłączając osadzanie czcionek, można zmniejszyć rozmiar wygenerowanego pliku PDF, co ułatwia przechowywanie, udostępnianie i przesyłanie plików. Należy jednak pamiętać, że wyłączenie osadzania czcionek systemu Windows może spowodować zmiany w wyglądzie i formatowaniu końcowego dokumentu PDF. Korzystając z tej funkcji, należy wziąć pod uwagę te konsekwencje. Zachęcamy do poznania większej liczby funkcji Aspose.Words dla .NET, aby zoptymalizować generowanie plików PDF.
+Wykonując poniższe kroki, możesz znacznie zmniejszyć rozmiar plików PDF. Wyłączenie osadzonych czcionek to prosty, ale skuteczny sposób na uczynienie dokumentów lżejszymi i łatwiejszymi do udostępniania. Aspose.Words dla .NET sprawia, że proces ten przebiega bezproblemowo, zapewniając optymalizację plików przy minimalnym wysiłku.
 
-### Często Zadawane Pytania
+## Często zadawane pytania
 
-#### P: Co powoduje wyłączenie osadzania czcionek systemu Windows w dokumencie PDF i dlaczego jest to ważne?
-Odp.: Wyłączenie osadzania czcionek systemu Windows w dokumencie PDF to proces uniemożliwiający dołączenie czcionek systemu Windows do wygenerowanego pliku PDF. Zmniejsza to rozmiar pliku PDF poprzez usunięcie osadzonych danych czcionek systemu Windows. Może to być ważne przy zmniejszaniu rozmiaru plików PDF, co może ułatwić ich przechowywanie, udostępnianie i szybsze przesyłanie.
+### Dlaczego powinienem wyłączyć osadzone czcionki w pliku PDF?
+Wyłączenie osadzonych czcionek może znacznie zmniejszyć rozmiar pliku PDF, zwiększając efektywność jego przechowywania i szybsze udostępnianie.
 
-#### P: Jak mogę wyłączyć osadzanie czcionek Windows w dokumencie PDF przy użyciu Aspose.Words dla .NET?
-O: Aby wyłączyć osadzanie czcionek Windows w dokumencie PDF za pomocą Aspose.Words dla .NET, wykonaj następujące kroki:
+### Czy plik PDF będzie nadal wyświetlany poprawnie bez osadzonych czcionek?
+Tak, o ile czcionki są standardowe i dostępne w systemie, w którym przeglądany jest plik PDF, będzie on wyświetlany poprawnie.
 
- Załaduj dokument, który chcesz przekonwertować do formatu PDF za pomocą`Document` ścieżka klasy i dokumentu.
+### Czy mogę selektywnie osadzać tylko określone czcionki w pliku PDF?
+Tak, Aspose.Words dla .NET pozwala dostosować, które czcionki są osadzone, zapewniając elastyczność w zmniejszaniu rozmiaru pliku.
 
- Utwórz instancję`PdfSaveOptions` klasę i ustaw`FontEmbeddingMode`własność do`PdfFontEmbeddingMode.EmbedNone`. Wyłącza to osadzanie czcionek systemu Windows w wygenerowanym pliku PDF.
+### Czy potrzebuję Aspose.Words dla .NET, aby wyłączyć osadzone czcionki w plikach PDF?
+Tak, Aspose.Words dla .NET zapewnia funkcjonalność potrzebną do konfiguracji opcji osadzania czcionek w plikach PDF.
 
- Użyj`Save` metoda`Document` obiekt, aby przekonwertować dokument do formatu PDF, określając wcześniej skonfigurowane opcje konwersji.
-
-#### P: Jakie są korzyści z wyłączenia osadzania czcionek systemu Windows w dokumencie PDF?
-O: Korzyści z wyłączenia osadzania czcionek systemu Windows w dokumencie PDF są następujące:
-
-Zmniejszony rozmiar pliku PDF: wyłączenie osadzania czcionek systemu Windows powoduje usunięcie osadzonych danych czcionek systemu Windows, zmniejszając rozmiar wygenerowanego pliku PDF.
-
-Łatwiejsze przechowywanie: mniejsze pliki PDF są łatwiejsze do przechowywania, zapisywania i przesyłania.
-
-Szybsze udostępnianie i przesyłanie: mniejsze pliki PDF można udostępniać i przesyłać szybciej, oszczędzając czas i zasoby.
-
-#### P: Jakie są konsekwencje wyłączenia osadzania czcionek systemu Windows w dokumencie PDF?
-O: Wyłączenie osadzania czcionek systemu Windows w dokumencie PDF może prowadzić do następujących konsekwencji:
-
-Utrata wyglądu i formatowania: Jeżeli czcionki Windows określone w dokumencie nie są dostępne w systemie, w którym otwierany jest plik PDF, zostaną użyte czcionki zastępcze, co może skutkować nieprawidłowym wyglądem i formatowaniem. w kształcie odbiegającym od oczekiwanego.
-
-Problemy z czytelnością: Jeśli użyte czcionki zastępcze nie są tak czytelne jak czcionki oryginalne, może to mieć wpływ na czytelność tekstu w dokumencie PDF.
+### Jak uzyskać pomoc, jeśli napotkam problemy?
+ Możesz odwiedzić[Forum wsparcia](https://forum.aspose.com/c/words/8) o pomoc w rozwiązaniu wszelkich napotkanych problemów.

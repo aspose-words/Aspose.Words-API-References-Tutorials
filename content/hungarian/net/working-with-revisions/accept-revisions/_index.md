@@ -15,7 +15,7 @@ Ebben az oktatóanyagban végigvezetjük a Word-dokumentumok módosításainak e
 Ebben a példában egy dokumentumot hozunk létre, és tartalmat adunk hozzá. Számos bekezdést használunk a változtatások és átdolgozások szemléltetésére. Itt van, hogyan:
 
 ```csharp
-// dokumentumok könyvtár elérési útja.
+// A dokumentumok könyvtár elérési útja.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -55,7 +55,7 @@ Assert.AreEqual(4, paragraphs.Count);
 Assert.True(para.IsDeleteRevision);
 ```
 
-## 4. lépés: Fogadja el a változtatásokat
+## 4. lépés: A változtatások elfogadása
 
 A dokumentum minden módosítását elfogadjuk. Itt van, hogyan:
 

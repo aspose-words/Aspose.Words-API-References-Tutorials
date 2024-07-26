@@ -22,7 +22,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
 ## Krok 2: Vytvořte a naformátujte dokument
- Vytvořte instanci souboru`Document` třída a`DocumentBuilder` třídy k sestavení dokumentu. Použijte`Font` vlastnictvím`DocumentBuilder` pro přístup k vlastnostem formátování písma.
+ Vytvořte instanci souboru`Document` třída a`DocumentBuilder` třídy k sestavení dokumentu. Použijte`Font` majetek z`DocumentBuilder` pro přístup k vlastnostem formátování písma.
 
 ```csharp
 Document doc = new Document();

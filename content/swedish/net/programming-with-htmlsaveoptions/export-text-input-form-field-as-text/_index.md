@@ -2,86 +2,130 @@
 title: Exportera textinmatningsformulärfält som text
 linktitle: Exportera textinmatningsformulärfält som text
 second_title: Aspose.Words Document Processing API
-description: Steg för steg guide för att exportera textinmatningsformulärfält som vanlig text med Aspose.Words för .NET.
+description: Lär dig hur du exporterar textinmatningsformulär som vanlig text med Aspose.Words för .NET med denna omfattande, steg-för-steg-guide.
 type: docs
 weight: 10
 url: /sv/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-text/
 ---
+## Introduktion
 
-I den här handledningen går vi igenom C#-källkoden för att exportera textinmatningsformulär som vanlig text med Aspose.Words för .NET. Med den här funktionen kan du exportera textinmatningsformulär som läsbar text istället för att exportera dem som HTML-inmatningselement.
+Så du dyker in i Aspose.Words-världen för .NET? Fantastiskt val! Om du vill lära dig hur du exporterar ett textinmatningsformulär som text har du kommit rätt. Oavsett om du precis har börjat eller fräscha upp dina kunskaper, kommer den här guiden att gå igenom allt du behöver veta. Låt oss börja, ska vi?
 
-## Steg 1: Projektinställning
+## Förutsättningar
 
-För att komma igång, skapa ett nytt C#-projekt i din favorit-IDE. Se till att Aspose.Words för .NET-biblioteket refereras till i ditt projekt.
+Innan vi dyker in i det nitty-gritty, låt oss se till att du har allt du behöver för att följa med smidigt:
 
-## Steg 2: Ladda dokumentet
+-  Aspose.Words för .NET: Ladda ner och installera den senaste versionen från[här](https://releases.aspose.com/words/net/).
+- IDE: Visual Studio eller någon C#-utvecklingsmiljö.
+- Grundläggande C#-kunskaper: Förståelse av grundläggande C#-syntax och objektorienterade programmeringskoncept.
+- Dokument: Ett exempel på Word-dokument (`Rendering.docx`) med textinmatningsformulärfält.
 
-I det här steget kommer vi att ladda dokumentet för att exportera. Använd följande kod för att ladda dokumentet från en angiven katalog:
+## Importera namnområden
+
+Först och främst måste du importera de nödvändiga namnrymden. Dessa är som byggstenarna som gör att allt fungerar sömlöst.
+
+```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Okej, nu när vi har våra namnutrymmen redo, låt oss hoppa in i handlingen!
+
+## Steg 1: Konfigurera projektet
+
+Innan vi går in i koden, låt oss se till att vårt projekt är korrekt konfigurerat.
+
+## Skapar projektet
+
+1. Öppna Visual Studio: Börja med att öppna Visual Studio eller din föredragna C#-utvecklingsmiljö.
+2.  Skapa ett nytt projekt: Navigera till`File > New > Project` . Välj`Console App (.NET Core)` eller någon annan relevant projekttyp.
+3.  Namnge ditt projekt: Ge ditt projekt ett meningsfullt namn, något liknande`AsposeWordsExportExample`.
+
+## Lägger till Aspose.Words
+
+1.  Hantera NuGet-paket: Högerklicka på ditt projekt i Solution Explorer och välj`Manage NuGet Packages`.
+2.  Sök efter Aspose.Words: I NuGet Package Manager, sök efter`Aspose.Words`.
+3.  Installera Aspose.Words: Klicka på`Install` för att lägga till Aspose.Words-biblioteket till ditt projekt.
+
+## Steg 2: Ladda Word-dokumentet
+
+Nu när vårt projekt är konfigurerat, låt oss ladda Word-dokumentet som innehåller textinmatningsformulärfälten.
+
+1. Specificera dokumentkatalogen: Definiera sökvägen till katalogen där ditt dokument är lagrat.
+2.  Ladda dokumentet: Använd`Document` klass för att ladda ditt Word-dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Denna kod skapar en instans av`Document` genom att ladda dokumentet från den angivna katalogen.
+## Steg 3: Förbered exportkatalogen
 
-## Steg 3: Konfigurera alternativ för HTML-säkerhetskopiering
+Innan vi exporterar, låt oss se till att vår exportkatalog är klar. Det är här vår HTML-fil och bilder kommer att sparas.
 
-Nu kommer vi att konfigurera HTML-sparalternativ för att exportera textinmatningsformulär som vanlig text. Använd följande kod:
+1. Definiera exportkatalogen: Ange sökvägen där de exporterade filerna ska sparas.
+2. Kontrollera och rensa katalogen: Se till att katalogen finns och är tom.
 
 ```csharp
-string imagesDir = Path. Combine(ArtifactsDir, "Images");
+string imagesDir = Path.Combine(dataDir, "Images");
 
-// Den angivna mappen måste finnas och vara tom.
 if (Directory.Exists(imagesDir))
-Directory. Delete(imagesDir, true);
+    Directory.Delete(imagesDir, true);
 
 Directory.CreateDirectory(imagesDir);
+```
 
+## Steg 4: Konfigurera sparalternativ
+
+Här händer magin. Vi måste ställa in våra sparalternativ för att exportera textinmatningsformulärfältet som vanlig text.
+
+1.  Skapa sparalternativ: Initiera ett nytt`HtmlSaveOptions` objekt.
+2.  Ställ in exporttextalternativ: Konfigurera`ExportTextInputFormFieldAsText`egendom till`true`.
+3. Ställ in bildmapp: Definiera mappen där bilderna ska sparas.
+
+```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 {
-ExportTextInputFormFieldAsText = true,
-ImagesFolder = imagesDir
+    ExportTextInputFormFieldAsText = true,
+    ImagesFolder = imagesDir
 };
 ```
 
- Denna kod skapar en instans av`HtmlSaveOptions` och ställer in`ExportTextInputFormFieldAsText` möjlighet att`true` för att exportera textinmatningsformulärfält som vanlig text. Dessutom anger den mappen där de extraherade bilderna kommer att sparas.
+## Steg 5: Spara dokumentet som HTML
 
-## Steg 4: Konvertera och spara dokumentet till HTML
+Slutligen, låt oss spara Word-dokumentet som en HTML-fil med hjälp av våra konfigurerade sparaalternativ.
 
-Slutligen kommer vi att konvertera dokumentet till HTML med hjälp av de HTML-sparalternativ som konfigurerats tidigare. Använd följande kod:
-
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
-```
-
-Den här koden konverterar dokumentet till HTML genom att exportera textinmatningsformulär som vanlig text och sparar den exporterade HTML-filen i den angivna katalogen.
-
-### Exempel på källkod för Exportera textinmatningsformulärfält som text med Aspose.Words för .NET
-
+1. Definiera utdatasökvägen: Ange sökvägen där HTML-filen ska sparas.
+2.  Spara dokumentet: Använd`Save` metod för`Document`klass för att exportera dokumentet.
 
 ```csharp
-
-	// Sökvägen till dokumentkatalogen.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	string imagesDir = Path.Combine(ArtifactsDir, "Images");
-
-	// Den angivna mappen måste finnas och bör vara tom.
-	if (Directory.Exists(imagesDir))
-		Directory.Delete(imagesDir, true);
-
-	Directory.CreateDirectory(imagesDir);
-
-	// Ställ in ett alternativ för att exportera formulärfält som vanlig text, inte som HTML-inmatningselement.
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
-	{
-		ExportTextInputFormFieldAsText = true, ImagesFolder = imagesDir
-	};
-
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportTextInputFormFieldAsText.html", saveOptions);
-
+doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 ```
 
- Var noga med att ange rätt sökväg till dokumentkatalogen i`dataDir` variabel.
+## Slutsats
+
+Och där har du det! Du har framgångsrikt exporterat ett textinmatningsformulärfält som vanlig text med Aspose.Words för .NET. Den här guiden borde ha gett dig en tydlig, steg-för-steg-strategi för att uppnå denna uppgift. Kom ihåg att övning ger färdighet, så fortsätt att experimentera med olika alternativ och inställningar för att se vad du mer kan göra med Aspose.Words.
+
+## FAQ's
+
+### Kan jag exportera andra typer av formulärfält med samma metod?
+
+ Ja, du kan exportera andra typer av formulärfält genom att konfigurera olika egenskaper för`HtmlSaveOptions` klass.
+
+### Vad händer om mitt dokument har bilder?
+
+ Bilderna kommer att sparas i den angivna bildmappen. Se till att ställa in`ImagesFolder` egendom i`HtmlSaveOptions`.
+
+### Behöver jag en licens för Aspose.Words?
+
+ Ja, du kan få en gratis provperiod[här](https://releases.aspose.com/) eller köp en licens[här](https://purchase.aspose.com/buy).
+
+### Kan jag anpassa den exporterade HTML-koden?
+
+ Absolut! Aspose.Words erbjuder olika alternativ för att anpassa HTML-utdata. Referera till[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+
+### Är Aspose.Words kompatibelt med .NET Core?
+
+Ja, Aspose.Words är kompatibelt med .NET Core, .NET Framework och andra .NET-plattformar.

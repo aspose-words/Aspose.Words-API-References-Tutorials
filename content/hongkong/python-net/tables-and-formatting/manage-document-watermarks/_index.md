@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/python-net/tables-and-formatting/manage-document-watermarks/
 ---
 
-水印是文件中微妙而有影響力的元素，增添了一層專業和美感。透過 Aspose.Words for Python，您可以輕鬆建立浮水印並設定浮水印格式，以增強文件的視覺吸引力。本教學將引導您完成使用 Aspose.Words for Python API 為文件新增浮水印的逐步程序。
+水印是文件中微妙而有影響力的元素，增添了一層專業和美感。透過 Aspose.Words for Python，您可以輕鬆建立浮水印並設定浮水印格式，以增強文件的視覺吸引力。本教學將引導您完成使用 Aspose.Words for Python API 為文件新增浮水印的逐步流程。
 
 ## 文件中的浮水印簡介
 

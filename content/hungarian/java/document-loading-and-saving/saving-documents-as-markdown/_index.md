@@ -1,6 +1,6 @@
 ---
 title: Dokumentumok mentése Markdown néven az Aspose.Words for Java programban
-linktitle: Dokumentumok mentése Markdownként
+linktitle: Dokumentumok mentése Markdown néven
 second_title: Aspose.Words Java Document Processing API
 description: Ismerje meg, hogyan konvertálhat Word dokumentumokat Markdown formátumba az Aspose.Words for Java segítségével. Ez a lépésenkénti útmutató a táblázat igazítását, a képkezelést és egyebeket ismerteti.
 type: docs
@@ -76,7 +76,7 @@ doc.save("auto_alignment.md", saveOptions);
 A következőképpen állíthatja be a képek mappát, és mentheti el a dokumentumot képekkel:
 
 ```java
-// Töltse be a képeket tartalmazó dokumentumot
+// Töltsön be képeket tartalmazó dokumentumot
 Document doc = new Document("document_with_images.docx");
 
 // Állítsa be a képek mappa elérési útját
@@ -87,7 +87,7 @@ saveOptions.setImagesFolder("images_folder/");
 doc.save("document_with_images.md", saveOptions);
 ```
 
- Mindenképpen cserélje ki`"document_with_images.docx"` a képeket tartalmazó Word-dokumentum elérési útjával és`"images_folder/"` a mappa tényleges elérési útjával, ahol a képeket tárolják.
+ Ügyeljen arra, hogy cserélje ki`"document_with_images.docx"` a képeket tartalmazó Word-dokumentum elérési útjával és`"images_folder/"` a mappa tényleges elérési útjával, ahol a képeket tárolják.
 
 ## Teljes forráskód dokumentumok mentéséhez Markdown-ként az Aspose.Words for Java-ban
 

@@ -38,7 +38,7 @@ from aspose_words import Document
 doc = Document("document.docx")
 ```
 
-## Navegar por párrafos
+## Navegando por párrafos
 
 Los párrafos son los pilares de cualquier documento. Navegar por los párrafos es esencial para realizar cambios en secciones específicas del contenido:
 

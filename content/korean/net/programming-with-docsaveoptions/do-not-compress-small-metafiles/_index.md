@@ -13,12 +13,12 @@ url: /ko/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 
 ## 전제조건
 
-시작하기 전에 다음 사항을 확인하세요.
+시작하기 전에 다음 사항이 있는지 확인하세요.
 
 -  .NET용 Aspose.Words: 다음에서 최신 버전을 다운로드하고 설치하세요.[여기](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio 또는 기타 호환 가능한 IDE.
 - C#에 대한 기본 이해: C# 프로그래밍 언어 및 .NET 프레임워크에 대한 지식.
--  Aspose 라이선스: Aspose.Words의 잠재력을 최대한 활용하려면[특허](https://purchase.aspose.com/buy) . 다음을 사용할 수도 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+-  Aspose 라이선스: Aspose.Words의 잠재력을 최대한 활용하려면[특허](https://purchase.aspose.com/buy) . 다음을 사용할 수도 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ## 네임스페이스 가져오기
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
 
- 평가용 라이선스 없이 .NET용 Aspose.Words를 사용할 수 있지만 전체 기능을 잠금 해제하려면 라이선스가 필요합니다. 라이센스를 취득하실 수 있습니다[여기](https://purchase.aspose.com/buy)또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+ 평가용 라이선스 없이 .NET용 Aspose.Words를 사용할 수 있지만 전체 기능을 잠금 해제하려면 라이선스가 필요합니다. 라이센스를 취득하실 수 있습니다[여기](https://purchase.aspose.com/buy)또는[임시면허](https://purchase.aspose.com/temporary-license/) 평가를 위해.
 
 ### 내 문서가 PDF/A 표준을 준수하는지 어떻게 확인할 수 있나요?
 

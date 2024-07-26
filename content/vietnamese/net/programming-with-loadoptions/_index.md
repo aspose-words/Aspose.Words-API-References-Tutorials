@@ -14,13 +14,13 @@ Trong các hướng dẫn này, bạn sẽ tìm hiểu cách sử dụng LoadOpt
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Cập nhật các trường bẩn trong tài liệu Word](./update-dirty-fields/) | Tìm hiểu cách tải tài liệu Word bằng cách cập nhật các trường bẩn bằng Aspose.Words cho .NET. |
-| [Tải tài liệu được mã hóa trong Word](./load-encrypted-document/) | Tìm hiểu cách tải và lưu mã hóa trong tài liệu word bằng Aspose.Words cho .NET. |
-| [Chuyển đổi hình dạng sang toán văn phòng](./convert-shape-to-office-math/) | Tìm hiểu cách chuyển đổi hình dạng thành công thức toán Office khi tải lên tài liệu bằng Aspose.Words cho .NET. |
-| [Đặt phiên bản Ms Word](./set-ms-word-version/) | Tìm hiểu cách tải tài liệu bằng phiên bản MS Word được chỉ định bằng Aspose.Words cho .NET. |
-| [Sử dụng thư mục tạm thời trong tài liệu Word](./use-temp-folder/) | Tìm hiểu cách sử dụng thư mục tạm thời khi tải tài liệu lên bằng Aspose.Words cho .NET. |
-| [Cảnh báo gọi lại trong tài liệu Word](./warning-callback/) | Tìm hiểu cách xử lý cảnh báo khi tải tài liệu Word bằng chức năng gọi lại với Aspose.Words cho .NET. |
-| [Tải bằng mã hóa trong tài liệu Word](./load-with-encoding/) | Tìm hiểu cách tải tài liệu có mã hóa được chỉ định trong tài liệu word bằng Aspose.Words cho .NET. |
-| [Bỏ qua hình ảnh Pdf](./skip-pdf-images/) | Tìm hiểu cách tải tài liệu PDF mà không cần tải hình ảnh PDF bằng Aspose.Words cho .NET. |
-| [Chuyển đổi siêu tập tin sang PNG](./convert-metafiles-to-png/) | Tìm hiểu cách chuyển đổi siêu tệp thành hình ảnh PNG khi tải tài liệu lên bằng Aspose.Words cho .NET. |
-| [Tải tệp Chm trong tài liệu Word](./load-chm/) | Tìm hiểu cách tải tệp CHM trong tài liệu word bằng Aspose.Words cho .NET. |
+| [Cập nhật các trường bẩn trong tài liệu Word](./update-dirty-fields/) | Dễ dàng cập nhật các trường bẩn trong tài liệu Word của bạn bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. |
+| [Tải tài liệu được mã hóa trong Word](./load-encrypted-document/) | Tìm hiểu cách tải và lưu tài liệu Word được mã hóa bằng Aspose.Words cho .NET. Bảo mật tài liệu của bạn bằng mật khẩu mới một cách dễ dàng. Hướng dẫn từng bước bao gồm. |
+| [Chuyển đổi hình dạng sang toán văn phòng](./convert-shape-to-office-math/) | Tìm hiểu cách chuyển đổi hình dạng sang Office Math trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn của chúng tôi. Nâng cao định dạng tài liệu của bạn một cách dễ dàng. |
+| [Đặt phiên bản Ms Word](./set-ms-word-version/) | Tìm hiểu cách đặt phiên bản MS Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển muốn hợp lý hóa thao tác tài liệu. |
+| [Sử dụng thư mục tạm thời trong tài liệu Word](./use-temp-folder/) | Tìm hiểu cách nâng cao hiệu suất của các ứng dụng .NET của bạn bằng cách sử dụng thư mục tạm thời trong khi tải tài liệu Word bằng Aspose.Words. |
+| [Cảnh báo gọi lại trong tài liệu Word](./warning-callback/) | Tìm hiểu cách nắm bắt và xử lý cảnh báo trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn từng bước của chúng tôi. Đảm bảo xử lý tài liệu mạnh mẽ. |
+| [Tải bằng mã hóa trong tài liệu Word](./load-with-encoding/) | Tìm hiểu cách tải tài liệu Word với mã hóa cụ thể bằng Aspose.Words cho .NET. Hướng dẫn từng bước với lời giải thích chi tiết. |
+| [Bỏ qua hình ảnh Pdf](./skip-pdf-images/) | Tìm hiểu cách bỏ qua hình ảnh khi tải tài liệu PDF bằng Aspose.Words for .NET. Hãy làm theo hướng dẫn từng bước này để trích xuất văn bản liền mạch. |
+| [Chuyển đổi siêu tập tin sang PNG](./convert-metafiles-to-png/) | Dễ dàng chuyển đổi siêu tệp thành PNG trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Đơn giản hóa việc quản lý tài liệu của bạn. |
+| [Tải tệp Chm trong tài liệu Word](./load-chm/) | Dễ dàng tải tệp CHM vào tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo để hợp nhất tài liệu kỹ thuật của bạn. |

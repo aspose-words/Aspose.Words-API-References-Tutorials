@@ -12,4 +12,4 @@ The Aspose.Words for .NET tutorials on Words Processing with OfficeMath will gui
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Math Equations](./math-equations/) | Learn how to add math equations to your Word documents using Aspose.Words for .NET. |
+| [Math Equations](./math-equations/) | Learn how to configure mathematical equations in Word documents using Aspose.Words for .NET. Step-by-step guide with examples, FAQs, and more. |

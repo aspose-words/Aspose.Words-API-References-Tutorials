@@ -2,92 +2,88 @@
 title: 匯出 PDF 文件中的自訂屬性
 linktitle: 匯出 PDF 文件中的自訂屬性
 second_title: Aspose.Words 文件處理 API
-description: 了解如何在使用 Aspose.Words for .NET 將文件轉換為 PDF 時匯出自訂屬性。
+description: 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 PDF 文件中匯出自訂屬性。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
+## 介紹
 
-在本教學中，我們將引導您完成使用 Aspose.Words for .NET 將文件的自訂屬性匯出到 PDF 文件中的步驟。匯出自訂屬性可讓您在產生的 PDF 文件中包含附加資訊。請依照以下步驟操作：
+在 PDF 文件中匯出自訂屬性對於滿足各種業務需求非常有用。無論您是管理元資料以提高可搜尋性，還是將關鍵資訊直接嵌入到文件中，Aspose.Words for .NET 都能讓流程無縫進行。本教學將指導您建立 Word 文件、新增自訂屬性以及將其匯出到 PDF 並保持這些屬性不變。
 
-## 第 1 步：建立文件並新增自訂屬性
+## 先決條件
 
-首先建立 Document 類別的實例：
+在深入研究程式碼之前，請確保您具備以下條件：
+
+-  Aspose.Words for .NET 已安裝。如果您還沒有安裝，可以下載[這裡](https://releases.aspose.com/words/net/).
+- 像 Visual Studio 這樣的開發環境。
+- C# 程式設計基礎知識。
+
+## 導入命名空間
+
+首先，您需要在專案中匯入必要的命名空間。這些命名空間包含操作 Word 文件並將其匯出為 PDF 所需的類別和方法。
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+讓我們將這個過程分解為簡單、易於管理的步驟。
+
+## 步驟1：初始化文檔
+
+首先，您需要建立一個新的文檔物件。該物件將作為新增自訂屬性和匯出為 PDF 的基礎。
+
+```csharp
+//文檔目錄的路徑。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
 ## 第 2 步：新增自訂屬性
-接下來，新增所需的自訂屬性。例如，若要新增值為“Aspose”的“Company”屬性，請使用`Add`CustomDocumentProperties 集合的方法：
+
+接下來，您將向文件新增自訂屬性。這些屬性可以包括公司名稱、作者或任何其他相關資訊等元資料。
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-您可以根據需要新增任意數量的自訂屬性。
+## 步驟 3：設定 PDF 儲存選項
 
-## 第 3 步：設定 PDF 匯出選項
-
-建立 PdfSaveOptions 類別的實例並指定如何匯出自訂屬性：
+現在，配置 PDF 儲存選項以確保在匯出文件時包含自訂屬性。這`PdfSaveOptions`類別提供了各種設定來控制如何將文件另存為 PDF。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    CustomPropertiesExport = PdfCustomPropertiesExport.Standard
+};
 ```
 
-此選項控制轉換為 PDF 時自訂屬性的匯出。
+## 步驟 4：將文件另存為 PDF
 
-## 步驟 4：將文件轉換為 PDF
-
-使用`Save`將文件轉換為 PDF 的方法，指定轉換選項：
+最後將文檔另存為PDF文件到指定目錄中。這`Save`方法結合了前面的所有步驟並產生包含自訂屬性的 PDF。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-確保指定正確的路徑來儲存轉換後的 PDF。
-
-### 使用 Aspose.Words for .NET 自訂屬性匯出的範例原始程式碼
-
-以下是使用 Aspose.Words for .NET 從文件匯出自訂屬性的完整原始碼：
-
-
-```csharp
-
-	//文檔目錄的路徑。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	doc.CustomDocumentProperties.Add("Company", "Aspose");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
-
-```
-
-透過執行下列步驟，您可以在使用 Aspose.Words for .NET 轉換為 PDF 時輕鬆匯出文件的自訂屬性。
-
-
 ## 結論
 
-在本教學中，我們解釋如何使用 Aspose.Words for .NET 將自訂屬性從文件匯出到 PDF 文件。按照所述的步驟，您可以透過匯出文件的自訂屬性，輕鬆地在產生的 PDF 文件中包含附加資訊。利用 Aspose.Words for .NET 的功能，透過匯出自訂屬性來個人化和豐富您的 PDF 文件。
+使用 Aspose.Words for .NET 匯出 PDF 文件中的自訂屬性是一個簡單的過程，可以大大增強您的文件管理功能。透過執行這些步驟，您可以確保保留和存取關鍵元數據，從而提高數位文件的效率和組織。
 
-### 經常問的問題
+## 常見問題解答
 
-#### Q：什麼是將自訂屬性匯出到 PDF 文件？
-答：將自訂屬性匯出到 PDF 文件允許在產生的 PDF 文件中包含附加資訊。自訂屬性是特定於您的文件的元數據，例如標籤、關鍵字或憑證。透過匯出這些自訂屬性，您可以使用戶在查看 PDF 文件時可以使用它們。
+### PDF 文件中的自訂屬性是什麼？
+自訂屬性是新增至文件中的元數據，其中可以包括作者、公司名稱或需要嵌入文件中的任何其他相關數據等資訊。
 
-#### Q：如何使用 Aspose.Words for .NET 將文件的自訂屬性匯出到 PDF 文件？
-答：若要使用 Aspose.Words for .NET 將文檔的自訂屬性匯出至 PDF 文檔，請依照下列步驟操作：
+### 為什麼應該使用 Aspose.Words for .NET 匯出自訂屬性？
+Aspose.Words for .NET 提供了強大且易於使用的 API，用於操作 Word 文件並將其匯出為 PDF，確保自訂屬性保留並可存取。
 
-建立一個實例`Document`班級。
+### 我可以為文件新增多個自訂屬性嗎？
+是的，您可以透過呼叫以下方法來為文件新增多個自訂屬性`Add`您想要包含的每個屬性的方法。
 
-使用以下命令新增所需的自訂屬性`CustomDocumentProperties`收藏。例如，使用`Add`方法新增值為“Aspose”的“Company”屬性。
+### 使用 Aspose.Words for .NET 還可以匯出哪些其他格式？
+Aspose.Words for .NET 支援匯出為各種格式，包括 DOCX、HTML、EPUB 等。
 
-建立一個實例`PdfSaveOptions`類別並指定如何使用匯出自訂屬性`CustomPropertiesExport`財產。這`PdfCustomPropertiesExport.Standard`value 根據預設設定匯出自訂屬性。
-
-使用`Save`的方法`Document`用於將文件轉換為 PDF 的類，指定轉換選項。
-
-#### Q：如何存取 PDF 文件的自訂屬性？
-答：要存取 PDF 文件的自訂屬性，您可以使用支援檢視文件屬性的相容 PDF 閱讀器。最常見的 PDF 閱讀器（例如 Adobe Acrobat Reader）提供對 PDF 文件的元資料和屬性的存取。您通常可以在“文件”選單下找到這些選項，或者右鍵單擊文件並選擇“屬性”。
+### 如果遇到問題，我可以在哪裡獲得支援？
+如需支持，您可以訪問[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8)尋求幫助。

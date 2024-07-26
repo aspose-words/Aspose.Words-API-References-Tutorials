@@ -18,7 +18,7 @@ url: /ko/net/document-protection/unrestricted-section/
 -  .NET용 Aspose.Words: 아직 수행하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
 - Visual Studio: 또는 기타 .NET 호환 IDE.
 - C#에 대한 기본 이해: C#에 조금 익숙해지면 이 튜토리얼을 쉽게 진행하는 데 도움이 됩니다.
--  Aspose 라이센스:[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 테스트를 위해 필요한 경우.
+-  Aspose 라이센스:[무료 시험판](https://releases.aspose.com/) 아니면[임시면허](https://purchase.aspose.com/temporary-license/) 테스트를 위해 필요한 경우.
 
 ## 네임스페이스 가져오기
 

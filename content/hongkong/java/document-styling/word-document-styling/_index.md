@@ -2,7 +2,7 @@
 title: Word文件樣式
 linktitle: Word文件樣式
 second_title: Aspose.Words Java 文件處理 API
-description: 了解如何使用 Aspose.Words for Java 設計和處理文件！使用原始程式碼範例創建視覺上令人驚嘆的輸出。
+description: 了解如何使用 Aspose.Words for Java 設定樣式和處理文件！使用原始程式碼範例創建視覺上令人驚嘆的輸出。
 type: docs
 weight: 10
 url: /zh-hant/java/document-styling/word-document-styling/
@@ -37,7 +37,7 @@ Aspose.Words for Java 是一個功能強大的函式庫，可讓 Java 開發人�
 ```java
 import com.aspose.words.Document;
 
-//……
+//…
 
 Document doc = new Document();
 ```
@@ -49,7 +49,7 @@ Document doc = new Document();
 ```java
 import com.aspose.words.DocumentBuilder;
 
-//……
+//…
 
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.writeln("Hello, this is my document!");
@@ -62,7 +62,7 @@ builder.writeln("Hello, this is my document!");
 ```java
 import com.aspose.words.ShapeType;
 
-//……
+//…
 
 builder.insertImage("path/to/image.png");
 builder.insertShape(ShapeType.RECTANGLE, 100, 100);
@@ -99,7 +99,7 @@ builder.writeln("Heading 2");
 ```java
 import com.aspose.words.ParagraphAlignment;
 
-//……
+//…
 
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 builder.getParagraphFormat().setFirstLineIndent(20);
@@ -124,7 +124,7 @@ Aspose.Words for Java 可讓您指定文字的字體名稱、大小和樣式。
 ```java
 import com.aspose.words.Font;
 
-//……
+//…
 
 Font font = builder.getFont();
 font.setName("Arial");
@@ -161,7 +161,7 @@ font.setEmboss(true);
 ```java
 import com.aspose.words.ListFormat;
 
-//……
+//…
 
 builder.getListFormat().setList(list);
 builder.writeln("Item 1");
@@ -179,7 +179,7 @@ import com.aspose.words.Table;
 import com.aspose.words.Cell;
 import com.aspose.words.Row;
 
-//……
+//…
 
 Table table = builder.startTable();
 Row row = builder.insertCell();
@@ -210,7 +210,7 @@ Aspose.Words 支援多種可用於文件的內建樣式。
 import com.aspose.words.Style;
 import com.aspose.words.StyleIdentifier;
 
-//……
+//…
 
 Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.HEADING_1);
 style.getFont().setName("Georgia");
@@ -292,7 +292,7 @@ doc.save("output.pdf", SaveFormat.PDF);
 ```java
 import com.aspose.words.PageSetup;
 
-//……
+//…
 
 PageSetup pageSetup = builder.getPageSetup();
 pageSetup.setOrientation(Orientation.LANDSCAPE);
@@ -315,7 +315,7 @@ builder.writeln("Header content goes here");
 ```java
 import com.aspose.words.Shape;
 
-//……
+//…
 
 builder.moveToHeaderFooter(HeaderFooterType.HEADER_PRIMARY);
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);

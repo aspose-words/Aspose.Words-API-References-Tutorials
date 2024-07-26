@@ -170,7 +170,7 @@ Bereinigungsoptionen in Aspose.Words für Java sind Einstellungen, mit denen Sie
 
 ### Wie kann ich das Entfernen von Absätzen mit Satzzeichen aktivieren?
 
- Um das Entfernen von Absätzen mit Satzzeichen zu ermöglichen, können Sie die`cleanupParagraphsWithPunctuationMarks` auf true und geben Sie die Satzzeichen an, die bei der Bereinigung berücksichtigt werden sollen. Auf diese Weise können Sie ein verfeinertes Dokument erstellen, indem Sie unnötige Absätze entfernen, die nur aus Satzzeichen bestehen.
+ Um das Entfernen von Absätzen mit Satzzeichen zu ermöglichen, können Sie die`cleanupParagraphsWithPunctuationMarks` auf „true“ und geben Sie die Satzzeichen an, die bei der Bereinigung berücksichtigt werden sollen. Auf diese Weise können Sie ein verfeinertes Dokument erstellen, indem Sie unnötige Absätze entfernen, die nur aus Satzzeichen bestehen.
 
 ### Kann ich die Bereinigungsoptionen in Aspose.Words für Java anpassen?
 

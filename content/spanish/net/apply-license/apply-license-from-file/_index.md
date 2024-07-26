@@ -9,7 +9,7 @@ url: /es/net/apply-license/apply-license-from-file/
 ---
 ## Introducción
 
-¡Hola! Si te estás sumergiendo en el mundo de Aspose.Words para .NET, te espera una sorpresa. Esta poderosa biblioteca le permite crear, editar y convertir documentos de Word mediante programación. Pero antes de comenzar, es esencial saber cómo aplicar una licencia a un archivo para desbloquear todo su potencial. En esta guía, lo guiaremos a través del proceso paso a paso, asegurándonos de que pueda configurar su licencia de manera rápida y eficiente.
+¡Hola! Si te estás sumergiendo en el mundo de Aspose.Words para .NET, te espera una sorpresa. Esta poderosa biblioteca le permite crear, editar y convertir documentos de Word mediante programación. Pero antes de comenzar, es fundamental saber cómo aplicar una licencia a un archivo para desbloquear todo su potencial. En esta guía, lo guiaremos a través del proceso paso a paso, asegurándonos de que pueda configurar su licencia de manera rápida y eficiente.
 
 ## Requisitos previos
 

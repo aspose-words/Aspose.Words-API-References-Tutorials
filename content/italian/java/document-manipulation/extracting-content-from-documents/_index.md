@@ -153,7 +153,7 @@ for (Field field : doc.getRange().getFields()) {
 ## Estrazione solo testo
 
 ```java
-// Esempio di codice Java per l'estrazione del solo testo
+// Esempio di codice Java per estrarre solo testo
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertField("MERGEFIELD Field");

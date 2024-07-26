@@ -96,7 +96,7 @@ Ez a kód ellenőrzi, hogy az alapértelmezett távolkeleti nyelv japánra van-e
  Igen, a segítségével több nyelvet is hozzáadhat`AddEditingLanguage` módszer minden nyelvhez.
 
 ### Szükségem van licencre az Aspose.Words for .NET használatához?
- Igen, kereskedelmi használatra engedélyre van szüksége. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+ Igen, kereskedelmi használatra engedélyre van szükség. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Milyen egyéb funkciókat kínál az Aspose.Words for .NET?
  Az Aspose.Words for .NET szolgáltatások széles skáláját kínálja, beleértve a dokumentumok generálását, konvertálását, manipulálását és még sok mást. Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.

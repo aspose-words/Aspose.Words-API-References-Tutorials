@@ -2,63 +2,119 @@
 title: Eksportuj czcionki jako Base 64
 linktitle: Eksportuj czcionki jako Base 64
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przewodnik krok po kroku dotyczący eksportowania czcionek bazowych 64 podczas zapisywania dokumentu za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak eksportować czcionki w formacie Base64 przy użyciu Aspose.Words dla .NET w tym szczegółowym samouczku. Upewnij się, że czcionki są osadzone i poprawnie wyświetlane w plikach HTML.
 type: docs
 weight: 10
 url: /pl/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
+## Wstęp
 
-W tym samouczku przeprowadzimy Cię przez kod źródłowy C#, aby wyeksportować czcionki Base 64 za pomocą Aspose.Words dla .NET. Ta funkcja umożliwia eksport czcionek jako dane Base 64 podczas zapisywania dokumentu w formacie HTML.
+Jeśli chodzi o programowe manipulowanie dokumentami programu Word, Aspose.Words dla .NET jest potęgą. Jedną z jego przydatnych funkcji jest eksport czcionek w formacie Base64 w plikach HTML, co zapewnia osadzenie czcionek i ich prawidłowe wyświetlanie w różnych przeglądarkach i systemach. W tym samouczku omówimy, jak możesz to osiągnąć. Czy chcesz, aby czcionki dokumentów programu Word były przyjazne dla Internetu? Zacznijmy!
 
-## Krok 1: Konfiguracja projektu
+## Warunki wstępne
 
-Aby rozpocząć, utwórz nowy projekt C# w swoim ulubionym środowisku IDE. Upewnij się, że w Twoim projekcie znajduje się odwołanie do biblioteki Aspose.Words for .NET.
+Zanim przejdziemy do kodowania, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-## Krok 2: Załaduj dokument
+-  Biblioteka Aspose.Words dla .NET: Możesz ją pobrać z[Wydania Aspose](https://releases.aspose.com/words/net/) strona.
+- Środowisko programistyczne .NET: dowolne środowisko IDE, takie jak Visual Studio, będzie działać idealnie.
+- Podstawowa znajomość języka C#: Nie musisz być profesjonalistą, ale podstawowa znajomość będzie pomocna.
 
-W tym kroku załadujemy dokument do eksportu. Użyj poniższego kodu, aby załadować dokument z określonego katalogu:
+## Importuj przestrzenie nazw
+
+Aby używać Aspose.Words dla .NET, musisz zaimportować niezbędne przestrzenie nazw do swojego kodu C#. Dzięki temu wszystkie klasy i metody będą dostępne do użycia.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Krok 1: Skonfiguruj swój projekt
+
+Na początek skonfigurujmy Twój projekt i zainstalujmy bibliotekę Aspose.Words.
+
+### 1.1 Utwórz nowy projekt
+
+Otwórz program Visual Studio i utwórz nowy projekt aplikacji konsolowej. Nazwij go czymś znaczącym, na przykład „ExportFontsBase64”.
+
+### 1.2 Zainstaluj Aspose.Words
+
+Możesz zainstalować Aspose.Words dla .NET za pomocą Menedżera pakietów NuGet:
+
+1. Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań.
+2. Wybierz „Zarządzaj pakietami NuGet”.
+3. Wyszukaj „Aspose.Words” i zainstaluj go.
+
+Alternatywnie możesz uruchomić następujące polecenie w konsoli Menedżera pakietów:
+
+```sh
+Install-Package Aspose.Words
+```
+
+## Krok 2: Załaduj dokument Word
+
+Teraz, gdy projekt jest już skonfigurowany, załadujmy dokument programu Word, z którego chcesz wyeksportować czcionki.
+
+### 2.1 Zdefiniuj katalog dokumentów
+
+Najpierw zdefiniuj katalog, w którym znajduje się dokument programu Word:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+
+### 2.2 Załaduj dokument
+
+ Następnie załaduj dokument za pomocą`Document` klasa:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Ten kod tworzy instancję`Document` poprzez załadowanie dokumentu z określonego katalogu.
+Upewnij się, że plik „Rendering.docx” znajduje się w określonym katalogu.
 
-## Krok 3: Konfiguracja opcji tworzenia kopii zapasowych HTML
+## Krok 3: Skonfiguruj opcje zapisywania HTML
 
-Teraz skonfigurujemy opcje zapisywania HTML, aby eksportować czcionki podstawowe 64. Użyj następującego kodu:
+ Aby wyeksportować czcionki jako Base64, musimy skonfigurować plik`HtmlSaveOptions`.
+
+
+ Utwórz instancję`HtmlSaveOptions` i ustaw`ExportFontsAsBase64`własność do`true`:
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
 ```
 
- Ten kod tworzy instancję`HtmlSaveOptions` i zestawy`ExportFontsAsBase64` Do`true` aby określić, że czcionki powinny być eksportowane jako dane Base 64 podczas zapisywania jako HTML.
+## Krok 4: Zapisz dokument jako HTML
 
-## Krok 4: Konwertowanie i zapisywanie dokumentu do formatu HTML
+Na koniec zapiszmy dokument ze skonfigurowanymi opcjami.
 
-Na koniec skonwertujemy dokument do formatu HTML, korzystając ze skonfigurowanych wcześniej opcji zapisywania HTML. Użyj następującego kodu:
+
+ Użyj`Save` metoda`Document` klasa, aby zapisać dokument:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
 ```
 
-Ten kod konwertuje dokument do formatu HTML i zapisuje go w pliku z czcionkami wyeksportowanymi jako dane Base 64.
+Ta linia zapisze Twój dokument jako plik HTML z czcionkami wyeksportowanymi w formacie Base64, zapewniając, że zostaną osadzone w kodzie HTML.
 
-### Przykładowy kod źródłowy dla eksportu czcionek jako Base 64 przy użyciu Aspose.Words dla .NET
+## Wniosek
 
-```csharp
+Gratulacje! Pomyślnie wyeksportowałeś czcionki w formacie Base64 z dokumentu Word przy użyciu Aspose.Words dla .NET. Dzięki temu masz pewność, że Twoje czcionki zostaną zachowane i będą poprawnie wyświetlane na różnych platformach. Niezależnie od tego, czy przygotowujesz dokumenty do wyświetlenia w Internecie, czy po prostu zapewniasz zgodność, ta funkcja jest niezwykle przydatna.
 
-	// Ścieżka do katalogu dokumentów.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+## Często zadawane pytania
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
+### Co to jest kodowanie Base64?
+Base64 to metoda kodowania danych binarnych (takich jak czcionki) do formatu tekstowego. Zapewnia to zgodność z formatami tekstowymi, takimi jak HTML.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
+### Dlaczego powinienem używać Base64 dla czcionek w HTML?
+Korzystanie z Base64 zapewnia, że czcionki są osadzone bezpośrednio w kodzie HTML, co pozwala uniknąć problemów z brakującymi plikami czcionek i zapewnia spójne wyświetlanie.
 
-```
+### Czy mogę użyć tej metody do innych zasobów, takich jak obrazy?
+Absolutnie! Aspose.Words dla .NET umożliwia osadzanie różnych zasobów, w tym obrazów, w formacie Base64 w plikach HTML.
 
- Pamiętaj, aby podać poprawną ścieżkę do katalogu dokumentów w pliku`dataDir` zmienny.
+### Co się stanie, jeśli mój dokument zawiera wiele czcionek?
+Bez problemu! Aspose.Words dla .NET osadzi wszystkie czcionki użyte w dokumencie jako Base64 w wynikowym pliku HTML.
 
-Nauczyłeś się teraz, jak eksportować czcionki Base 64 podczas zapisywania dokumentu jako HTML przy użyciu Aspose.Words dla .NET. Postępując zgodnie ze szczegółowym przewodnikiem zawartym w tym samouczku, możesz łatwo bezpiecznie eksportować czcionki i osadzać je w dokumentach HTML.
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
+ Aspose.Words dla .NET jest biblioteką komercyjną. Możesz jednak pobrać bezpłatną wersję próbną ze strony[Wydania Aspose](https://releases.aspose.com/) strona.

@@ -21,7 +21,7 @@ url: /ru/net/programming-with-tables/create-simple-table/
 // Путь к каталогу ваших документов
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Создайте документ и инициализируйте генератор документов.
+//Создайте документ и инициализируйте генератор документов.
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Вызовите следующий метод, чтобы завершить первую строку и начать новую строку
+// Вызовите следующий метод, чтобы завершить первую строку и начать новую строку
 builder. EndRow();
 
 // Строительство первой ячейки второго ряда
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Сигнал о том, что мы закончили построение таблицы.
+	// Сигнал о том, что мы закончили построение таблицы.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

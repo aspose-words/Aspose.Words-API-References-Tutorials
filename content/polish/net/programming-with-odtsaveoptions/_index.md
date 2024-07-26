@@ -16,4 +16,4 @@ Niezależnie od tego, czy potrzebujesz konwertować dokumenty, manipulować tre�
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Jednostka miary](./measure-unit/) | Dowiedz się, jak określić jednostkę miary podczas konwersji dokumentu Word na ODT za pomocą Aspose.Words dla .NET. |
+| [Jednostka miary](./measure-unit/) | Dowiedz się, jak skonfigurować funkcję jednostki miary w Aspose.Words dla .NET, aby zachować formatowanie dokumentu podczas konwersji ODT. |

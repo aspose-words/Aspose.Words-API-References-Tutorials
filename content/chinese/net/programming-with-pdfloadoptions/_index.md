@@ -16,5 +16,5 @@ Aspose.Words for .NET 教程中有关使用 PDFLoadOptions 进行文字处理的
  ## 教程
 | 标题 | 描述 |
 | --- | --- |
-| [加载加密 PDF](./load-encrypted-pdf/) | 使用 Aspose.Words for .NET 加载加密 PDF 的分步指南。 |
-| [加载 PDF 的页面范围](./load-page-range-of-pdf/) | 使用 Aspose.Words for .NET 加载特定 PDF 页面范围的分步指南。 |
+| [加载加密 PDF](./load-encrypted-pdf/) | 通过我们的分步教程学习如何使用 Aspose.Words for .NET 加载加密 PDF。立即掌握 PDF 加密和解密。 |
+| [加载 PDF 的页面范围](./load-page-range-of-pdf/) | 在本全面的分步教程中学习如何使用 Aspose.Words for .NET 从 PDF 加载特定页面范围。非常适合 .NET 开发人员。 |

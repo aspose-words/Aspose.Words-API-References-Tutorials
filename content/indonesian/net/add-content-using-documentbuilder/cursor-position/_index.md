@@ -80,7 +80,7 @@ Untuk kejelasan, mari cetak teks paragraf saat ini ke konsol.
 Console.WriteLine("\nCursor is currently at paragraph: " + curParagraph.GetText());
 ```
 
-Baris kode sederhana ini akan menunjukkan kepada kita di mana posisi kursor dalam dokumen, memberi kita pemahaman yang jelas tentang cara mengontrolnya.
+Baris kode sederhana ini akan menunjukkan kepada kita di mana posisi kursor dalam dokumen, memberi kita pemahaman yang jelas tentang cara mengendalikannya.
 
 ## Langkah 3: Memindahkan Kursor
 

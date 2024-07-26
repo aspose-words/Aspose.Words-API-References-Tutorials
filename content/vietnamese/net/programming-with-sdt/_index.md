@@ -16,13 +16,13 @@ Các mẫu mã được cung cấp trong hướng dẫn sẽ giúp bạn hiểu 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Kiểm soát nội dung loại hộp kiểm](./check-box-type-content-control/) | Tìm hiểu cách tạo Kiểm soát nội dung loại hộp kiểm trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Kiểm soát nội dung loại hộp kiểm](./check-box-type-content-control/) | Tìm hiểu cách thêm Kiểm soát nội dung loại hộp kiểm trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. |
 | [Hộp kiểm trạng thái hiện tại](./current-state-of-check-box/) | Tìm hiểu cách truy xuất và đặt trạng thái hiện tại của điều khiển nội dung hộp kiểm trong tài liệu Word bằng Aspose.Words cho .NET. |
 | [Sửa đổi kiểm soát nội dung](./modify-content-controls/) | Tìm hiểu cách sửa đổi văn bản, danh sách thả xuống và hình ảnh trong điều khiển nội dung trong tài liệu Word bằng Aspose.Words cho .NET. |
 | [Kiểm soát nội dung hộp tổ hợp](./combo-box-content-control/) | Tìm hiểu cách tạo Kiểm soát nội dung hộp tổ hợp trong tài liệu Word bằng Aspose.Words cho .NET. |
 | [Kiểm soát nội dung hộp văn bản có định dạng](./rich-text-box-content-control/) | Tìm hiểu cách tạo điều khiển nội dung hộp văn bản có định dạng trong tài liệu Word bằng cách sử dụng Aspose.Words for .NET cho phép định dạng và tạo kiểu văn bản. |
 | [Đặt màu kiểm soát nội dung](./set-content-control-color/) | Tìm hiểu cách đặt màu của điều khiển nội dung trong tài liệu Word bằng Aspose.Words cho .NET, tùy chỉnh giao diện của nó. |
-| [Kiểm soát nội dung rõ ràng](./clear-contents-control/) | Tìm hiểu cách xóa nội dung của điều khiển trong tài liệu Word bằng Aspose.Words for .NET. |
+| [Kiểm soát nội dung rõ ràng](./clear-contents-control/) | Tìm hiểu cách xóa kiểm soát nội dung trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. |
 | [Liên kết SDT với phần Xml tùy chỉnh](./bind-sdt-to-custom-xml-part/) | Tìm hiểu cách liên kết SDT với Phần Xml tùy chỉnh bằng Aspose.Words cho .NET. |
 | [Đặt kiểu kiểm soát nội dung](./set-content-control-style/) | Tìm hiểu cách đặt kiểu điều khiển nội dung trong tài liệu Word bằng Aspose.Words cho .NET, áp dụng định dạng nhất quán. |
 | [Tạo phần lặp lại bảng được ánh xạ tới phần Xml tùy chỉnh](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Tìm hiểu cách tạo bảng có phần lặp lại được ánh xạ tới CustomXmlPart trong tài liệu Word bằng Aspose.Words cho .NET. |

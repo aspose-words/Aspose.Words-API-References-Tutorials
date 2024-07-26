@@ -58,7 +58,7 @@ Dostosowanie tytułu wykresu może pomóc w zapewnieniu kontekstu wyświetlanych
 chart.Title.Show = true;
 chart.Title.Text = "Line Chart Title";
 chart.Title.Overlay = false;
-// Pamiętaj, że jeśli jako tekst tytułu zostanie określona wartość null lub pusta, wyświetlony zostanie tytuł wygenerowany automatycznie.
+// Należy pamiętać, że jeśli jako tekst tytułu zostanie określona wartość null lub pusta, wyświetlony zostanie tytuł wygenerowany automatycznie.
 ```
 
 ## Krok 4: Dostosuj pozycję legendy

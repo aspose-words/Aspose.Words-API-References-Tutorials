@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- Ở bước cuối cùng này, chúng tôi lưu tài liệu kết quả ở định dạng .docx bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra.
+Ở bước cuối cùng này, chúng tôi lưu tài liệu kết quả ở định dạng .docx bằng cách sử dụng`Save` phương thức và chuyển đường dẫn đến tệp đầu ra.
 
 Bây giờ bạn có thể chạy mã nguồn để tải tài liệu văn bản và xác định hướng văn bản. Tài liệu thu được sẽ được lưu trong thư mục được chỉ định với tên "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
 

@@ -10,7 +10,7 @@ url: /id/java/document-rendering/document-thumbnail-generation/
 
 ## Pengantar Pembuatan Thumbnail Dokumen
 
-Pembuatan thumbnail dokumen melibatkan pembuatan representasi visual miniatur dari sebuah dokumen, sering kali ditampilkan sebagai gambar pratinjau. Hal ini memungkinkan pengguna dengan cepat menilai konten dokumen tanpa membukanya sepenuhnya.
+Pembuatan thumbnail dokumen melibatkan pembuatan representasi visual miniatur dari sebuah dokumen, sering kali ditampilkan sebagai gambar pratinjau. Hal ini memungkinkan pengguna untuk dengan cepat menilai konten dokumen tanpa membukanya sepenuhnya.
 
 ## Prasyarat
 
@@ -60,7 +60,7 @@ stream.writeTo(outputStream);
 
 ## Kesimpulan
 
-Pembuatan gambar mini dokumen menggunakan Aspose.Words untuk Java menawarkan cara yang lancar untuk meningkatkan pengalaman pengguna aplikasi Anda dengan menyediakan pratinjau dokumen yang menarik secara visual. Hal ini dapat sangat bermanfaat dalam sistem manajemen dokumen, platform konten, dan situs web e-commerce.
+Pembuatan gambar mini dokumen menggunakan Aspose.Words untuk Java menawarkan cara yang lancar untuk meningkatkan pengalaman pengguna aplikasi Anda dengan menyediakan pratinjau dokumen yang menarik secara visual. Hal ini dapat sangat bermanfaat dalam sistem manajemen dokumen, platform konten, dan situs web e-niaga.
 
 ## FAQ
 

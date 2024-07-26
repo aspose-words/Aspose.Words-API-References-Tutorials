@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## चरण 2: एक छवि आकार डालें
- उपयोग`InsertImage` की विधि`DocumentBuilder`दस्तावेज़ में छवि आकार सम्मिलित करने के लिए ऑब्जेक्ट। पैरामीटर के रूप में छवि फ़ाइल का पथ प्रदान करें।
+ उपयोग`InsertImage` की विधि`DocumentBuilder` दस्तावेज़ में छवि आकार सम्मिलित करने के लिए ऑब्जेक्ट। पैरामीटर के रूप में छवि फ़ाइल का पथ प्रदान करें।
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

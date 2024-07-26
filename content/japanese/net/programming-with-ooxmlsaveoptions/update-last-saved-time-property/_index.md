@@ -2,66 +2,94 @@
 title: 最終保存時刻プロパティの更新
 linktitle: 最終保存時刻プロパティの更新
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してドキュメントを保存するときに、最終保存時刻プロパティを自動的に更新する方法を学習します。
+description: Aspose.Words for .NET を使用して、Word 文書の最終保存時刻プロパティを更新する方法を学びます。詳細なステップバイステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントを保存するときに、最終保存時刻プロパティを更新するための C# ソース コードについて説明します。この機能を使用すると、生成されたドキュメントの最終保存時刻プロパティを自動的に更新できます。
+## 導入
 
-## ステップ1: 環境の設定
+Word ドキュメントの最終保存時刻プロパティをプログラムで追跡する方法を考えたことはありませんか? 複数のドキュメントを扱っていて、それらのメタデータを維持する必要がある場合、最終保存時刻プロパティを更新すると非常に便利です。今日は、Aspose.Words for .NET を使用してこのプロセスについて説明します。さあ、シートベルトを締めて始めましょう!
 
-始める前に、Aspose.Words for .NET を使用して開発環境をセットアップしていることを確認してください。必要な参照を追加し、適切な名前空間をインポートしたことを確認してください。
+## 前提条件
 
-## ステップ2: ドキュメントの読み込み
+ステップバイステップガイドに進む前に、いくつか必要なものがあります。
+
+1.  Aspose.Words for .NET: Aspose.Words for .NETがインストールされていることを確認してください。まだインストールされていない場合は、[ここからダウンロード](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio のような開発環境。
+3. C# の基礎知識: C# プログラミングの基礎を理解しておくと役立ちます。
+
+## 名前空間のインポート
+
+まず、プロジェクトに必要な名前空間をインポートしてください。これにより、Word 文書の操作に必要なクラスとメソッドにアクセスできるようになります。
 
 ```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
+それでは、プロセスを簡単なステップに分解してみましょう。各ステップでは、Word 文書の最終保存時刻プロパティを更新するプロセスをガイドします。
+
+## ステップ1: ドキュメントディレクトリを設定する
+
+まず、ドキュメント ディレクトリへのパスを指定する必要があります。これは、既存のドキュメントが保存される場所であり、更新されたドキュメントが保存される場所です。
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+交換する`"YOUR DOCUMENT DIRECTORY"`ディレクトリへの実際のパスを入力します。
+
+## ステップ2: Word文書を読み込む
+
+次に、更新したいWord文書を読み込みます。これを行うには、`Document`クラスを作成し、ドキュメントのパスを渡します。
+
+```csharp
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-このステップでは、`Document`メソッドを呼び出して、読み込む DOCX ファイルへのパスを渡します。
+文書名が`Document.docx`指定されたディレクトリに存在します。
 
-## ステップ3: OOXMLバックアップオプションの設定
+## ステップ3: 保存オプションを設定する
+
+さて、インスタンスを作成します`OoxmlSaveOptions`クラス。このクラスでは、Office Open XML (OOXML) 形式でドキュメントを保存するためのオプションを指定できます。ここでは、`UpdateLastSavedTimeProperty`に`true`.
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
+OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
+{
+    UpdateLastSavedTimeProperty = true
+};
 ```
 
-このステップでは、OOXML保存オプションを設定します。`OoxmlSaveOptions`クラス。設定により、最終保存時刻プロパティの自動更新が有効になります。`UpdateLastSavedTimeProperty`に`true`.
+これにより、Aspose.Words はドキュメントの最終保存時刻プロパティを更新します。
 
-## ステップ4: 更新されたプロパティでドキュメントを保存する
+## ステップ4: 更新したドキュメントを保存する
+
+最後に、`Save`方法の`Document`クラスに、更新されたドキュメントを保存するパスと保存オプションを渡します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
 ```
 
-この最後のステップでは、`Save`メソッドを使用し、出力ファイルへのパスを`.docx`拡張子と指定された保存オプションを指定します。
-
-これで、ソース コードを実行して、ドキュメントを保存するときに最終保存時刻プロパティを自動的に更新できるようになりました。結果のファイルは、指定されたディレクトリに「WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx」という名前で保存されます。
-
-### Aspose.Words for .NET を使用して最終保存時刻プロパティを更新するためのサンプル ソース コード 
-
-```csharp
-
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-Document doc = new Document(dataDir + "Document.docx");
-
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { UpdateLastSavedTimeProperty = true };
-
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx", saveOptions);
-            
-        
-```
+これにより、更新された最終保存時刻プロパティを使用してドキュメントが保存されます。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用してドキュメントを保存するときに、最終保存時刻プロパティを自動的に更新する機能について説明しました。OOXML 保存オプションでこの機能を有効にすると、生成されたドキュメントで最終保存時刻プロパティが自動的に更新されるようになります。
+これで完了です。これらの手順に従うと、Aspose.Words for .NET を使用して Word ドキュメントの最終保存時刻プロパティを簡単に更新できます。これは、ドキュメント管理システムやその他のさまざまなアプリケーションにとって非常に重要な、ドキュメント内の正確なメタデータを維持するのに特に役立ちます。
 
-最終保存時刻プロパティを更新すると、ドキュメントの変更やバージョンを追跡するのに役立ちます。また、ドキュメントが最後に保存された日時も追跡されるため、さまざまなシナリオで役立ちます。
+## よくある質問
 
-Aspose.Words for .NET では、柔軟で強力なバックアップ オプションが提供され、最終バックアップ時刻プロパティの自動更新が簡単になります。この機能をプロジェクトに統合して、生成されたドキュメントに正確なバックアップ情報が含まれるようにすることができます。
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、.NET アプリケーションで Word 文書を作成、編集、変換するための強力なライブラリです。
+
+### 最後に保存した時間のプロパティを更新する必要があるのはなぜですか?
+最後に保存された時間のプロパティを更新すると、ドキュメントの追跡と管理に不可欠な正確なメタデータを維持するのに役立ちます。
+
+### Aspose.Words for .NET を使用して他のプロパティを更新できますか?
+はい、Aspose.Words for .NET を使用すると、タイトル、作成者、件名などのさまざまなドキュメント プロパティを更新できます。
+
+### Aspose.Words for .NET は無料ですか?
+ Aspose.Words for .NETは無料トライアルを提供していますが、フル機能を使用するにはライセンスが必要です。ライセンスは[ここ](https://purchase.aspose.com/buy).
+
+### Aspose.Words for .NET に関するその他のチュートリアルはどこで見つかりますか?
+より多くのチュートリアルとドキュメントを見つけることができます[ここ](https://reference.aspose.com/words/net/).

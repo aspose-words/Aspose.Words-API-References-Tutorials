@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Bước 4: Gửi Email
 
- Cuối cùng, gửi email bằng ứng dụng khách SMTP. Định cấu hình máy khách SMTP với chi tiết máy chủ SMTP của bạn và sử dụng`Send` phương pháp gửi tin nhắn.
+ Cuối cùng, gửi email bằng ứng dụng khách SMTP. Định cấu hình máy khách SMTP với chi tiết máy chủ SMTP của bạn và sử dụng`Send` phương thức gửi tin nhắn.
 
 ```csharp
 // Gửi tin nhắn bằng Aspose.Email.

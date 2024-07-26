@@ -7,105 +7,104 @@ type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 ---
+## 介绍
 
-本文提供了有关如何使用 Aspose.Words for .NET 将 wmf 字体缩放为图元文件大小功能来减小 pdf 大小的分步指南。我们将详细解释代码的每个部分。在本教程结束时，您将能够了解如何在转换为 PDF 时启用或禁用 WMF 字体缩放。
+处理 PDF 文件时，尤其是那些由包含 WMF（Windows 图元文件）图形的 Word 文档生成的文件时，大小管理可能成为文档处理的一个重要方面。控制 PDF 大小的一种方法是调整 WMF 字体在文档中的呈现方式。在本教程中，我们将探索如何使用 Aspose.Words for .NET 将 WMF 字体缩放到图元文件大小来减小 PDF 大小。
 
-开始之前，请确保您已在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到该库和安装说明。
+## 先决条件
 
-## 步骤1：定义文档目录
+在开始以下步骤之前，请确保您已准备好以下内容：
 
-首先，您需要定义文档所在目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档目录的实际路径。
+1. Aspose.Words for .NET：请确保您已安装 Aspose.Words 库。如果没有，您可以[点击下载](https://releases.aspose.com/words/net/).
+2. 开发环境：本教程假设您已经建立了 .NET 开发环境（如 Visual Studio），您可以在其中编写和执行 C# 代码。
+3. 对 .NET 编程的基本了解：熟悉基本的 .NET 编程概念和 C# 语法将会有所帮助。
+4. 包含 WMF 图形的 Word 文档：您需要一个包含 WMF 图形的 Word 文档。您可以使用自己的文档或创建一个用于测试的文档。
+
+## 导入命名空间
+
+首先，您需要在 C# 项目中导入必要的命名空间。这样您就可以访问使用 Aspose.Words 所需的类和方法。
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 第 2 步：上传文件
+## 步骤 1：加载 Word 文档
 
-接下来，我们需要加载要处理的文档。在此示例中，我们假设文档名为“WMF with text.docx”，位于指定的文档目录中。
+首先，加载包含 WMF 图形的 Word 文档。使用`Document`来自 Aspose.Words 的类。
 
 ```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+
+//加载文档
 Document doc = new Document(dataDir + "WMF with text.docx");
 ```
 
-## 步骤 3：配置图元文件呈现选项
+这里，`dataDir`是文档目录路径的占位符。我们创建`Document`类，将路径传递给 Word 文件。这会将文档加载到内存中，准备进行进一步处理。
 
-要启用或禁用 WMF 字体缩放到图元文件大小，我们需要配置`MetafileRenderingOptions`对象。在此示例中，我们通过设置`ScaleWmfFontsToMetafileSize`财产`false`.
+## 步骤 2：配置图元文件渲染选项
+
+接下来，您需要配置图元文件渲染选项。具体来说，设置`ScaleWmfFontsToMetafileSize`财产`false`这控制 WMF 字体是否缩放以匹配图元文件大小。
 
 ```csharp
+//创建 MetafileRenderingOptions 的新实例
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 {
-     ScaleWmfFontsToMetafileSize=false
+    ScaleWmfFontsToMetafileSize = false
 };
 ```
 
-## 步骤 4：使用图元文件渲染选项配置另存为 PDF 选项
+这`MetafileRenderingOptions`类提供了有关如何呈现图元文件（如 WMF）的选项。通过设置`ScaleWmfFontsToMetafileSize`到`false`，您正在指示 Aspose.Words 不要根据图元文件大小缩放字体，这有助于减小整体 PDF 大小。
 
-最后，我们可以使用之前配置的元文件渲染选项来配置保存为 PDF 选项。
+## 步骤 3：设置 PDF 保存选项
+
+现在，配置 PDF 保存选项以使用您刚刚设置的图元文件渲染选项。这将告诉 Aspose.Words 在将文档保存为 PDF 时如何处理图元文件。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
+//创建 PdfSaveOptions 的新实例
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    MetafileRenderingOptions = metafileRenderingOptions
+};
 ```
 
-## 步骤 5：使用图元文件渲染选项将文档另存为 PDF
+这`PdfSaveOptions`类允许您指定将文档保存为 PDF 的各种设置。通过分配先前配置的`MetafileRenderingOptions`到`MetafileRenderingOptions`的財產`PdfSaveOptions`，确保文档按照您想要的图元文件渲染设置进行保存。
 
-使用之前配置的保存选项将文档保存为 PDF 格式。
+## 步骤 4：将文档保存为 PDF
+
+最后，使用配置的保存选项将 Word 文档保存为 PDF。这会将所有设置（包括图元文件渲染选项）应用于输出 PDF。
+
 
 ```csharp
+//将文档保存为 PDF
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
 ```
 
-就这样！您已成功启用或禁用转换时 WMF 字体缩放至图元文件大小
-
-使用 Aspose.Words for .NET 的 PDF 文档。
-
-### 使用 Aspose.Words for .NET 将 WMF 字体缩放到图元文件大小的示例源代码
-
-```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "WMF with text.docx");
-
-	MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
-	{
-		ScaleWmfFontsToMetafileSize = false
-	};
-
-	//如果 Aspose.Words 无法正确将某些图元文件记录渲染为矢量图形
-	//然后 Aspose.Words 将该元文件呈现为位图。
-	PdfSaveOptions saveOptions = new PdfSaveOptions { MetafileRenderingOptions = metafileRenderingOptions };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", saveOptions);
-	
-        
-```
+在此步骤中，`Save`方法`Document`类用于将文档导出为 PDF 文件。指定 PDF 的保存路径，以及`PdfSaveOptions`其中包括图元文件渲染设置。
 
 ## 结论
 
-在本教程中，我们解释了如何使用 Aspose.Words for .NET 在 PDF 文档中启用或禁用将 WMF 字体调整为图元文件大小。通过遵循所述步骤，您可以轻松控制在转换为 PDF 文档时是否应调整 WMF 字体的大小以匹配图元文件大小。这可以帮助您减小生成的 PDF 文件的大小并提高渲染性能。请确保指定文档的正确路径并根据需要配置图元文件渲染选项。
+通过将 WMF 字体缩放到图元文件大小，您可以显著减小从 Word 文档生成的 PDF 文件的大小。此技术有助于优化文档存储和分发，而不会影响视觉内容的质量。遵循上述步骤可确保您的 PDF 文件更易于管理且尺寸更紧凑。
 
-### 经常问的问题
+## 常见问题解答
 
-#### 问：在 PDF 文档中将 WMF 字体调整为图元文件大小是什么意思？
-答：将 PDF 文档中的 WMF 字体调整为图元文件大小是一项功能，用于控制在转换为 PDF 文档时是否应将 WMF 字体缩放以匹配图元文件大小。启用此功能后，WMF 字体将缩放以匹配图元文件的大小，这可能会减小生成的 PDF 文档的大小。
+### 什么是 WMF，为什么它对 PDF 大小很重要？
 
-#### 问：如何使用 Aspose.Words for .NET 启用或禁用 PDF 文档中 WMF 字体到图元文件大小的调整？
-答：要使用 Aspose.Words for .NET 在 PDF 文档中启用或禁用将 WMF 字体调整为图元文件大小，请按照以下步骤操作：
+WMF（Windows 图元文件）是 Microsoft Windows 中使用的一种图形格式。它可以包含矢量和位图数据。由于矢量数据可以缩放和操作，因此正确处理它很重要，以避免 PDF 文件不必要地过大。
 
-通过替换来设置文档所在的目录路径`"YOUR DOCUMENT DIRECTORY"`与您的文档目录的实际路径。
+### 将 WMF 字体缩放到图元文件大小会对 PDF 产生什么影响？
 
-使用`Document`类并指定指定文档目录中的 Word 文档的路径。
+将 WMF 字体缩放到图元文件大小可以避免可能增加文件大小的高分辨率字体渲染，从而有助于减小整体 PDF 大小。
 
-通过创建以下实例来配置图元文件渲染选项`MetafileRenderingOptions`类和设置`ScaleWmfFontsToMetafileSize`财产`true`启用 WMF 字体缩放至图元文件大小，或`false`禁用此功能。
+### 我可以将其他图元文件格式与 Aspose.Words 一起使用吗？
 
-通过创建实例来配置另存为 PDF 选项`PdfSaveOptions`类并使用先前配置的元文件渲染选项。
+是的，Aspose.Words 支持各种图元文件格式，除了 WMF 之外，还包括 EMF（增强型图元文件）。
 
-使用`Save`方法`Document`指定路径和保存选项的类。
+### 此技术适用于所有类型的 Word 文档吗？
 
-#### 问：在 PDF 文档中将 WMF 字体调整为图元文件大小有什么好处？
-答：在 PDF 文档中将 WMF 字体调整为图元文件大小的优点是：
+是的，该技术可以应用于任何包含 WMF 图形的 Word 文档，有助于优化生成的 PDF 的大小。
 
-PDF 文件大小缩减：将 WMF 字体调整为图元文件大小可以通过使字体大小适应图元文件的需求来缩减生成的 PDF 文档的大小。
+### 在哪里可以找到有关 Aspose.Words 的更多信息？
 
-改进的性能：通过将 WMF 字体的大小调整到图元文件的尺寸，PDF 文档的渲染可以更快、更高效。
+您可以在以下位置了解有关 Aspose.Words 的更多信息[Aspose.Words 文档](https://reference.aspose.com/words/net/)。如需下载、试用和支持，请访问[Aspose.Words 下载页面](https://releases.aspose.com/words/net/), [购买 Aspose.Words](https://purchase.aspose.com/buy), [免费试用](https://releases.aspose.com/), [临时执照](https://purchase.aspose.com/temporary-license/)， 和[支持](https://forum.aspose.com/c/words/8).

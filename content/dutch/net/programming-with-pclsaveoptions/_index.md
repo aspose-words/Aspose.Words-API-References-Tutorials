@@ -14,4 +14,4 @@ De Aspose.Words voor .NET-tutorials bieden u een waardevolle bron om de krachtig
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Getransformeerde elementen rasteren](./rasterize-transformed-elements/) | Leer hoe u de rasterisatie van getransformeerde elementen kunt uitschakelen bij het converteren naar PCL-indeling met Aspose.Words voor .NET. |
+| [Getransformeerde elementen rasteren](./rasterize-transformed-elements/) | Leer hoe u getransformeerde elementen kunt rasteren bij het converteren van Word-documenten naar PCL-indeling met Aspose.Words voor .NET. Stap-voor-stap handleiding inbegrepen. |

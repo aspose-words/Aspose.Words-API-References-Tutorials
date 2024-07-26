@@ -46,7 +46,7 @@ shape = paragraph.append_shape(aw.drawing.ShapeType.RECTANGLE, aw.drawing.Relati
 
 ## Alakzatok és elrendezések testreszabása
 
-Annak érdekében, hogy a dokumentum vizuálisan lenyűgöző legyen, testreszabhatja az alakzatokat és az elrendezéseket. Vizsgáljuk meg, hogyan változtathatjuk meg téglalapunk színét és helyzetét:
+Annak érdekében, hogy a dokumentum vizuálisan lenyűgöző legyen, testreszabhatja az alakzatokat és az elrendezéseket. Vizsgáljuk meg, hogyan változtathatjuk meg a téglalap színét és helyzetét:
 
 ```python
 # Customize shape properties

@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Krok 3: Dodaj tekstowy znak wodny z określonymi opcjami
 
- Stworzymy instancję`TextWatermarkOptions`class i ustaw żądane opcje tekstowego znaku wodnego.
+ Stworzymy instancję`TextWatermarkOptions` class i ustaw żądane opcje tekstowego znaku wodnego.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()
@@ -74,5 +74,5 @@ Wreszcie możemy zapisać dokument z dodanym tekstowym znakiem wodnym.
 	
 ```
 
-Gratulacje! Nauczyłeś się teraz, jak dodać tekstowy znak wodny z określonymi opcjami przy użyciu Aspose.Words dla .NET.
+Gratulacje! Nauczyłeś się teraz, jak dodawać tekstowy znak wodny z określonymi opcjami przy użyciu Aspose.Words dla .NET.
 

@@ -2,64 +2,112 @@
 title: Använd teckensnitt från målmaskin
 linktitle: Använd teckensnitt från målmaskin
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du konverterar ett Word-dokument till fast HTML med hjälp av målmaskinens teckensnitt med Aspose.Words för .NET.
+description: Lär dig hur du använder teckensnitt från målmaskinen i dina Word-dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för sömlös teckensnittsintegration.
 type: docs
 weight: 10
 url: /sv/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
+## Introduktion
 
-När du konverterar ett Word-dokument till fast HTML i en C#-applikation, kanske du vill använda målmaskinens teckensnitt för att säkerställa att den renderade HTML-koden behåller dokumentets ursprungliga utseende och stil. Med Aspose.Words-biblioteket för .NET kan du enkelt specificera denna funktionalitet med hjälp av HtmlFixedSaveOptions-sparalternativen. I den här steg-för-steg-guiden går vi igenom hur du använder C#-källkoden för Aspose.Words för .NET för att konvertera ett Word-dokument till fast HTML med hjälp av målmaskinens teckensnitt med hjälp av HtmlFixedSaveOptions.
+Är du redo att dyka in i den fascinerande världen av Aspose.Words för .NET? Spänn fast dig, för vi ska ta dig med på en resa genom typsnittens magiska värld. Idag fokuserar vi på hur man använder teckensnitt från målmaskinen när man arbetar med Word-dokument. Den här snygga funktionen ser till att ditt dokument ser ut precis som du tänkt dig, oavsett var det visas. Låt oss börja!
 
-## Förstå Aspose.Words-biblioteket
+## Förutsättningar
 
-Innan du dyker in i koden är det viktigt att förstå Aspose.Words-biblioteket för .NET. Aspose.Words är ett kraftfullt bibliotek för att skapa, redigera, konvertera och skydda Word-dokument på olika plattformar inklusive .NET. Den erbjuder många funktioner för att manipulera dokument, som att infoga text, ändra formatering, lägga till avsnitt och mycket mer.
+Innan vi går in i de snåla detaljerna, låt oss se till att du har allt du behöver:
 
-## Laddar Word-dokumentet
+1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket installerat. Om du inte redan har gjort det kan du ladda ner den[här](https://releases.aspose.com/words/net/).
+2. Utvecklingsmiljö: Du bör ha en .NET-utvecklingsmiljö inställd, till exempel Visual Studio.
+3. Dokument att arbeta med: Ha ett Word-dokument redo för testning. Vi kommer att använda ett dokument som heter "Bullet points with alternative font.docx".
 
-Det första steget är att ladda Word-dokumentet du vill konvertera till fast HTML. Använd klassen Document för att ladda dokumentet från källfilen. Här är ett exempel :
+Nu när vi har täckt grunderna, låt oss dyka in i koden!
 
-```csharp
-Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
-```
+## Importera namnområden
 
-I det här exemplet laddar vi dokumentet "Punktpunkter med alternativt teckensnitt.docx" som finns i dokumentkatalogen.
-
-## Konfigurera alternativ för säkerhetskopiering
-
-Nästa steg är att konfigurera sparalternativen för konvertering till fast HTML. Använd klassen HtmlFixedSaveOptions och ställ in egenskapen UseTargetMachineFonts på true för att tala om för Aspose.Words att använda teckensnitt från måldatorn. Så här gör du:
+Först och främst måste vi importera de nödvändiga namnrymden. Detta är ryggraden i vårt projekt, som förbinder alla prickar.
 
 ```csharp
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Vi skapar ett nytt HtmlFixedSaveOptions-objekt och ställer in UseTargetMachineFonts-egenskapen till true för att använda målmaskinens teckensnitt vid konvertering.
+## Steg 1: Ladda Word-dokumentet
 
-## Fast HTML-dokumentkonvertering
+ Det första steget i vår handledning är att ladda Word-dokumentet. Det är här allt börjar. Vi kommer att använda`Document` klass från Aspose.Words-biblioteket för att uppnå detta.
 
-Nu när vi har konfigurerat sparalternativen kan vi fortsätta att konvertera dokumentet till fast HTML. Använd metoden Spara för klassen Document för att spara det konverterade dokumentet i fast HTML-format genom att ange sparalternativ. Här är ett exempel :
+### Steg 1.1: Definiera dokumentsökvägen
 
-```csharp
-doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
-```
-
-I det här exemplet sparar vi det konverterade dokumentet som "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html" med de angivna sparalternativen.
-
-### Exempel på källkod för HtmlFixedSaveOptions med funktionen "Använd teckensnitt från målmaskin" med Aspose.Words för .NET
+Låt oss börja med att definiera sökvägen till din dokumentkatalog. Det är här ditt Word-dokument finns.
 
 ```csharp
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
+```
 
+### Steg 1.2: Ladda dokumentet
+
+ Nu laddar vi dokumentet med hjälp av`Document` klass.
+
+```csharp
 // Ladda Word-dokumentet
 Document doc = new Document(dataDir + "Bullet points with alternative font.docx");
+```
 
+## Steg 2: Konfigurera sparalternativ
+
+Därefter måste vi konfigurera sparalternativen. Detta steg är avgörande eftersom det säkerställer att teckensnitten som används i ditt dokument är de från målmaskinen.
+
+ Vi skapar en instans av`HtmlFixedSaveOptions` och ställ in`UseTargetMachineFonts`egendom till`true`.
+
+```csharp
 // Konfigurera alternativ för säkerhetskopiering med funktionen "Använd teckensnitt från måldator".
-HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions { UseTargetMachineFonts = true };
+HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
+{
+    UseTargetMachineFonts = true
+};
+```
 
-// Konvertera dokument till fast HTML
+## Steg 3: Spara dokumentet
+
+Slutligen sparar vi dokumentet som en fast HTML-fil. Det är här magin händer!
+
+ Vi kommer att använda`Save` metod för att spara dokumentet med de konfigurerade sparalternativen.
+
+```csharp
+//Konvertera dokument till fast HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
+## Steg 4: Verifiera utdata
+
+Sist men inte minst är det alltid en bra idé att verifiera resultatet. Öppna den sparade HTML-filen och kontrollera om teckensnitten tillämpas korrekt från målmaskinen.
+
+Navigera till katalogen där du sparade HTML-filen och öppna den i en webbläsare.
+
+```csharp
+// Verifiera resultatet genom att öppna HTML-filen
+System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
+```
+
+Och där har du det! Du har framgångsrikt använt teckensnitt från målmaskinen i ditt Word-dokument med Aspose.Words för .NET.
+
 ## Slutsats
 
-den här guiden har vi förklarat hur man konverterar ett Word-dokument till fast HTML med hjälp av målmaskinens teckensnitt med Aspose.Words-biblioteket för .NET. Genom att följa de medföljande stegen och använda den medföljande C#-källkoden kan du enkelt tillämpa den här funktionen i din C#-applikation. Konverteringen till fast HTML med målmaskinens teckensnitt garanterar trogen och konsekvent rendering av dokumentet i HTML-format.
+Genom att använda teckensnitt från målmaskinen säkerställer du att dina Word-dokument ser konsekventa och professionella ut, oavsett var de visas. Aspose.Words för .NET gör denna process enkel och effektiv. Genom att följa den här handledningen har du lärt dig hur du laddar ett dokument, konfigurerar sparaalternativ och sparar dokumentet med önskade teckensnittsinställningar. Glad kodning!
+
+## FAQ's
+
+### Kan jag använda den här metoden med andra dokumentformat?
+Ja, Aspose.Words för .NET stöder olika dokumentformat, och du kan konfigurera liknande sparalternativ för olika format.
+
+### Vad händer om målmaskinen inte har de nödvändiga teckensnitten?
+Om måldatorn inte har de nödvändiga teckensnitten kanske dokumentet inte återges som avsett. Det är alltid en bra idé att bädda in typsnitt vid behov.
+
+### Hur bäddar jag in typsnitt i ett dokument?
+ Inbädda teckensnitt kan göras med hjälp av`FontSettings` klass i Aspose.Words för .NET. Referera till[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+
+### Finns det något sätt att förhandsgranska dokumentet innan du sparar det?
+ Ja, du kan använda`DocumentRenderer` klass för att förhandsgranska dokumentet innan du sparar. Kolla in Aspose.Words för .NET[dokumentation](https://reference.aspose.com/words/net/) för mer information.
+
+### Kan jag anpassa HTML-utdata ytterligare?
+ Absolut! De`HtmlFixedSaveOptions` class tillhandahåller olika egenskaper för att anpassa HTML-utdata. Utforska[dokumentation](https://reference.aspose.com/words/net/) för alla tillgängliga alternativ.

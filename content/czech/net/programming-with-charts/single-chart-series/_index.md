@@ -1,6 +1,6 @@
 ---
-title: Přizpůsobte jednu sérii grafů v grafu
-linktitle: Přizpůsobte jednu sérii grafů v grafu
+title: Přizpůsobte jednu řadu grafů v grafu
+linktitle: Přizpůsobte jednu řadu grafů v grafu
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak přizpůsobit jednotlivé řady grafů v dokumentu aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce pro bezproblémový zážitek.
 type: docs

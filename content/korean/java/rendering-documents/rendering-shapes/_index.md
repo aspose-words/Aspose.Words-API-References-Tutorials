@@ -87,7 +87,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 예, Aspose.Words for Java는 DOCX, PDF, HTML 등을 포함한 광범위한 문서 형식을 지원합니다.
 
-### Q3: Aspose.Words for Java에 사용할 수 있는 라이선스 옵션이 있나요?
+### Q3: Aspose.Words for Java에 사용할 수 있는 라이선스 옵션이 있습니까?
 
  예, 다음 사이트에서 라이선스 옵션을 살펴보고 Aspose.Words for Java를 구매할 수 있습니다.[Aspose 웹 사이트](https://purchase.aspose.com/buy).
 

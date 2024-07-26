@@ -55,4 +55,4 @@ Odp.: Tak, najpopularniejsze edytory Markdown obsługują linijki poziome. Jedna
 
 #### P: Jakie inne elementy mogę utworzyć w Markdown?
 
-O: Oprócz linijek poziomych w Markdown możesz tworzyć tytuły, akapity, listy, łącza, obrazy, tabele i nie tylko.
+O: Oprócz linijek poziomych w Markdown możesz tworzyć tytuły, akapity, listy, linki, obrazy, tabele i nie tylko.

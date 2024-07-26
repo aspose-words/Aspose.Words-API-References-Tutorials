@@ -2,7 +2,7 @@
 title: เริ่มรายการใหม่ในแต่ละส่วน
 linktitle: เริ่มรายการใหม่ในแต่ละส่วน
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: เรียนรู้วิธีรีเซ็ตรายการลำดับเลขไปยังแต่ละส่วนในเอกสาร Word ด้วย Aspose.Words for .NET
+description: เรียนรู้วิธีรีเซ็ตรายการลำดับเลขไปยังแต่ละส่วนในเอกสาร Word ด้วย Aspose.Words สำหรับ .NET
 type: docs
 weight: 10
 url: /th/net/working-with-list/restart-list-at-each-section/

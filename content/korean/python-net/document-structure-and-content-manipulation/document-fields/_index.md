@@ -93,7 +93,7 @@ builder.insert_field('HYPERLINK "https://www.example.com" "저희 웹사이트�
 
 ## 필드 형식 사용자 정의
 
-스위치를 사용하여 필드의 형식을 지정할 수 있습니다.
+필드는 스위치를 사용하여 형식을 지정할 수 있습니다.
 
 ```python
 builder.insert_field('DATE \\@ "MMMM yyyy"')

@@ -30,7 +30,7 @@ using Aspose.Words.Metered;
 
 Muy bien, analicémoslo. Repasaremos el proceso paso a paso para que no te pierdas nada.
 
-## Paso 1: inicializar la clase medida
+## Paso 1: Inicializar la clase medida
 
  Primero lo primero, necesitamos crear una instancia del`Metered` clase. Esta clase es responsable de establecer la licencia medida.
 
@@ -104,7 +104,7 @@ Una licencia medida es un modelo de pago por uso en el que solo paga por el uso 
 Sí, puede utilizar una licencia medida con cualquier proyecto .NET que utilice la biblioteca Aspose.Words para .NET.
 
 ### ¿Qué sucede si las claves de licencia medidas son incorrectas?
-Si las claves son incorrectas, no se aplicará la licencia y su aplicación generará una excepción. Asegúrese de manejar las excepciones para obtener un mensaje de error claro.
+Si las claves son incorrectas, la licencia no se aplicará y su aplicación generará una excepción. Asegúrese de manejar las excepciones para obtener un mensaje de error claro.
 
 ### ¿Cómo verifico que la licencia medida se aplica correctamente?
 Puede verificar la licencia medida realizando cualquier operación en un documento de Word (como imprimir el recuento de páginas) y asegurándose de que se ejecute sin errores de licencia.

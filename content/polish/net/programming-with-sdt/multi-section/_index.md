@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-sdt/multi-section/
 ---
 
-W tym samouczku wyjaśniono, jak pracować z wielosekcyjnymi znacznikami dokumentów o strukturze strukturalnej w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Możesz pobrać i przetworzyć znaczniki sekcji obecne w dokumencie.
+tym samouczku wyjaśniono, jak pracować z wielosekcyjnymi znacznikami dokumentów o strukturze strukturalnej w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Możesz pobrać i przetworzyć znaczniki sekcji obecne w dokumencie.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:

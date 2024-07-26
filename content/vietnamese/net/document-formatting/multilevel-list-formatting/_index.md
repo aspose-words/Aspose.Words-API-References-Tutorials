@@ -52,7 +52,7 @@ builder.Writeln("Item 2");
 
  Trong những dòng này,`ApplyNumberDefault` bắt đầu danh sách được đánh số và`Writeln` thêm các mục vào danh sách.
 
-## Bước 3: Thụt lề cho cấp độ phụ
+## Bước 3: Thụt lề cho cấp độ con
 
  Tiếp theo, để tạo các cấp độ con trong danh sách của mình, bạn sử dụng`ListIndent` phương pháp. Phương thức này thụt lề mục danh sách, biến nó thành cấp độ con của mục trước đó.
 

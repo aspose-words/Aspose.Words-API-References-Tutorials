@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### S: Aspose.Words for .NET'i kullanarak içindekiler tablosundaki birden fazla düzeyin stilini değiştirebilir miyim?
 
- C: Evet, Aspose.Words for .NET'i kullanarak içindekiler tablosundaki birden fazla düzeyin stilini değiştirebilirsiniz. Belirli bir düzeyin stilini değiştirmek için karşılık gelen stile`Styles`özelliği ve her seviyede ayrı ayrı istediğiniz değişiklikleri yapın.
+C: Evet, Aspose.Words for .NET'i kullanarak içindekiler tablosundaki birden fazla düzeyin stilini değiştirebilirsiniz. Belirli bir düzeyin stilini değiştirmek için karşılık gelen stile`Styles` özelliği ve her seviyede ayrı ayrı istediğiniz değişiklikleri yapın.
 
 #### S: Aspose.Words for .NET kullanarak içindekiler tablosunun stilini değiştirdikten sonra değiştirilen belgeyi nasıl kaydederim?
 
@@ -117,7 +117,7 @@ C: Evet, stili değiştirmenin yanı sıra Aspose.Words for .NET'i kullanarak i�
 
 #### S: Mevcut bir Word belgesindeki içindekiler tablosunun stilini Aspose.Words for .NET kullanarak değiştirebilir miyim?
 
- C: Evet, Aspose.Words for .NET'i kullanarak mevcut bir Word belgesindeki içindekiler tablosunun stilini değiştirebilirsiniz. Belgeyi kullanarak yüklemeniz yeterlidir.`Document` sınıfını kullanarak stil özelliklerini değiştirin.`Styles` özelliği seçin ve değişiklikleri uygulamak için belgeyi kaydedin.
+C: Evet, Aspose.Words for .NET'i kullanarak mevcut bir Word belgesindeki içindekiler tablosunun stilini değiştirebilirsiniz. Belgeyi kullanarak yüklemeniz yeterlidir.`Document` sınıfını kullanarak stil özelliklerini değiştirin.`Styles` özelliği seçin ve değişiklikleri uygulamak için belgeyi kaydedin.
 
 #### S: Aspose.Words for .NET, Word belgelerinde diğer stillerin ve formatların değiştirilmesini destekliyor mu?
 

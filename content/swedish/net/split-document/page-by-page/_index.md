@@ -15,7 +15,7 @@ I den här handledningen går vi igenom hur du delar upp ett Word-dokument i ens
 För att komma igång, ange katalogen för ditt dokument och ladda dokumentet i ett dokumentobjekt. Här är hur:
 
 ```csharp
-//Sökväg till dokumentkatalogen.
+// Sökväg till dokumentkatalogen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

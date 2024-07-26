@@ -2,15 +2,31 @@
 title: Xác minh tài liệu Word được mã hóa
 linktitle: Xác minh tài liệu Word được mã hóa
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để xác minh tài liệu word được mã hóa bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách xác minh trạng thái mã hóa của tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này.
 type: docs
 weight: 10
 url: /vi/net/programming-with-fileformat/verify-encrypted-document/
 ---
+## Xác minh tài liệu Word được mã hóa bằng Aspose.Words cho .NET
 
-Bài viết này cung cấp hướng dẫn từng bước về cách sử dụng tính năng Xác minh Tài liệu Word được Mã hóa với Aspose.Words cho .NET. Chúng tôi sẽ giải thích chi tiết từng phần của mã. Khi kết thúc hướng dẫn này, bạn sẽ có thể hiểu cách kiểm tra xem tài liệu có được mã hóa hay không.
+ Bạn đã bao giờ tình cờ gặp một tài liệu Word được mã hóa và tự hỏi làm cách nào để xác minh trạng thái mã hóa của nó theo chương trình chưa? Vâng, bạn thật may mắn! Hôm nay, chúng ta sẽ đi sâu vào một hướng dẫn nhỏ tiện lợi về cách thực hiện điều đó bằng cách sử dụng Aspose.Words cho .NET. Hướng dẫn từng bước này sẽ hướng dẫn bạn mọi thứ bạn cần biết, từ thiết lập môi trường đến chạy mã. Vì vậy, chúng ta hãy bắt đầu, phải không?
 
-Trước khi bắt đầu, hãy đảm bảo bạn đã cài đặt và định cấu hình thư viện Aspose.Words cho .NET trong dự án của mình. Bạn có thể tìm thấy thư viện và hướng dẫn cài đặt trên trang web Aspose.
+## Điều kiện tiên quyết
+
+Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ mình cần. Dưới đây là danh sách kiểm tra nhanh:
+
+-  Thư viện Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+- .NET Framework: Đảm bảo bạn đã cài đặt .NET trên máy của mình.
+- IDE: Môi trường phát triển tích hợp như Visual Studio.
+- Kiến thức cơ bản về C#: Hiểu những kiến thức cơ bản về C# sẽ giúp bạn theo dõi dễ dàng hơn.
+
+## Nhập không gian tên
+
+Để bắt đầu, bạn cần nhập các không gian tên cần thiết. Đây là đoạn mã được yêu cầu:
+
+```csharp
+using Aspose.Words;
+```
 
 ## Bước 1: Xác định thư mục tài liệu
 
@@ -38,50 +54,23 @@ Console.WriteLine(info.IsEncrypted);
 
 Đó là tất cả ! Bạn đã kiểm tra thành công xem tài liệu có được mã hóa bằng Aspose.Words cho .NET hay không.
 
-### Mã nguồn ví dụ để xác minh tài liệu được mã hóa bằng Aspose.Words cho .NET
+## Phần kết luận
 
-```csharp
+ Và bạn có nó rồi đấy! Bạn đã xác minh thành công trạng thái mã hóa của tài liệu Word bằng Aspose.Words cho .NET. Thật ngạc nhiên khi một vài dòng mã có thể khiến cuộc sống của chúng ta dễ dàng hơn nhiều phải không? Nếu bạn có bất kỳ câu hỏi nào hoặc gặp phải bất kỳ vấn đề nào, đừng ngần ngại liên hệ trên[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).
 
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
-	Console.WriteLine(info.IsEncrypted);
-            
-        
-```
+## Câu hỏi thường gặp
 
-## Các câu hỏi thường gặp
+### Aspose.Words cho .NET là gì?
+Aspose.Words for .NET là một thư viện mạnh mẽ cho phép bạn tạo, chỉnh sửa, chuyển đổi và thao tác với các tài liệu Word trong các ứng dụng .NET của mình.
 
-### Hỏi: Các bước để xác minh tài liệu Word được mã hóa là gì?
+### Tôi có thể sử dụng Aspose.Words cho .NET với .NET Core không?
+Có, Aspose.Words for .NET tương thích với cả .NET Framework và .NET Core.
 
-Các bước để xác minh tài liệu Word được mã hóa như sau:
+### Làm cách nào để có được giấy phép tạm thời cho Aspose.Words?
+ Bạn có thể nhận được giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/).
 
-Xác định thư mục tài liệu.
+### Có bản dùng thử miễn phí dành cho Aspose.Words cho .NET không?
+ Có, bạn có thể tải xuống bản dùng thử miễn phí từ[đây](https://releases.aspose.com/).
 
-Phát hiện định dạng tập tin.
-
-Kiểm tra xem tài liệu có được mã hóa hay không.
-
-### Hỏi: Làm cách nào tôi có thể đặt thư mục tài liệu?
- Để đặt thư mục tài liệu, bạn cần thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế của thư mục tài liệu của bạn trong đoạn mã sau:
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-### Q: Làm thế nào để phát hiện định dạng tập tin?
- Bạn có thể dùng`DetectFileFormat` phương pháp của`FileFormatUtil` class để phát hiện thông tin định dạng tập tin. Trong ví dụ sau, chúng tôi giả sử rằng tài liệu được mã hóa có tên là "Encrypted.docx" và nằm trong thư mục tài liệu được chỉ định:
-
-```csharp
-FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx");
-```
-
-### Hỏi: Làm cách nào để kiểm tra xem tài liệu có được mã hóa hay không?
- Bạn có thể dùng`IsEncrypted` tài sản của`FileFormatInfo` đối tượng để kiểm tra xem tài liệu có được mã hóa hay không. Thuộc tính này trả về`true` nếu tài liệu được mã hóa, nếu không nó sẽ trả về`false`. Kết quả được hiển thị trong bảng điều khiển:
-
-```csharp
-Console.WriteLine(info.IsEncrypted);
-```
-
-### Hỏi: Làm cách nào để kiểm tra xem tài liệu có được mã hóa bằng Aspose.Words cho .NET không?
-Bằng cách làm theo các bước được đề cập trong hướng dẫn này và chạy mã nguồn được cung cấp, bạn có thể kiểm tra xem tài liệu có được mã hóa bằng Aspose.Words cho .NET hay không.
+### Tôi có thể tìm thêm ví dụ và tài liệu ở đâu?
+ Bạn có thể tìm thấy tài liệu và ví dụ toàn diện về[Trang tài liệu Aspose.Words cho .NET](https://reference.aspose.com/words/net/).

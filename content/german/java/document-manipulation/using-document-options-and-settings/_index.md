@@ -155,7 +155,7 @@ doc.save("Your Directory Path" + "ShowErrors.docx");
 
 ### Was ist der Zweck der Bereinigung nicht verwendeter Stile und Listen?
 
-Durch das Bereinigen nicht verwendeter Stile und Listen bleibt die Dokumentstruktur sauber und übersichtlich. Dadurch wird unnötiges Durcheinander beseitigt und die Lesbarkeit und Konsistenz des Dokuments verbessert.
+Durch das Bereinigen nicht verwendeter Stile und Listen können Sie eine saubere und organisierte Dokumentstruktur beibehalten. Dadurch wird unnötiges Durcheinander beseitigt und die Lesbarkeit und Konsistenz des Dokuments verbessert.
 
 ### Wie kann ich doppelte Stile aus einem Dokument entfernen?
 

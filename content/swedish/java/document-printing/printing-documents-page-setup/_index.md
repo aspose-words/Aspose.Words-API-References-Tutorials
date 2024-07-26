@@ -32,7 +32,7 @@ För att använda Aspose.Words för Java måste du lägga till biblioteket i dit
 
 2. Lägg till JAR-filen i ditt projekts klassväg.
 
-## Laddar ett dokument
+## Ladda ett dokument
 
 I det här avsnittet tar vi upp hur du laddar ett dokument som du vill skriva ut. Du kan ladda dokument i olika format som DOCX, DOC, RTF och mer.
 

@@ -14,8 +14,8 @@ Tutorial ini juga mencakup konsep dasar manipulasi gambar, termasuk menyisipkan,
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff](./expose-threshold-control-for-tiff-binarization/) | Pelajari cara mengontrol ambang binarisasi TIFF dengan Aspose.Words untuk .NET. Tutorial lengkap untuk kualitas gambar yang lebih baik. |
-| [Dapatkan Rentang Halaman Tiff](./get-tiff-page-range/) | Pelajari cara mengekstrak berbagai halaman TIFF dengan Aspose.Words untuk .NET. Tutorial lengkap untuk file TIFF khusus. |
-| [Format 1Bpp Terindeks](./format-1bpp-indexed/) | Pelajari cara memformat gambar dalam 1 bpp yang diindeks dengan Aspose.Words untuk .NET. Tutorial lengkap untuk gambar dengan kedalaman warna rendah. |
-| [Dapatkan Rentang Halaman JPEG](./get-jpeg-page-range/) | Pelajari cara mendapatkan berbagai halaman JPEG dengan Aspose.Words untuk .NET. Tutorial lengkap untuk mengekstrak gambar khusus. |
-| [Panggilan Balik Penghematan Halaman](./page-saving-callback/) | Pelajari cara menyesuaikan penyimpanan halaman dokumen ke gambar dengan Aspose.Words untuk .NET. |
+| [Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff](./expose-threshold-control-for-tiff-binarization/) | Pelajari cara mengekspos kontrol ambang batas untuk binarisasi TIFF di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. |
+| [Dapatkan Rentang Halaman Tiff](./get-tiff-page-range/) | Pelajari cara mengonversi rentang halaman tertentu dari dokumen Word ke file TIFF menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. |
+| [Format 1Bpp Terindeks](./format-1bpp-indexed/) | Pelajari cara mengonversi dokumen Word menjadi gambar terindeks 1Bpp menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk konversi yang mudah. |
+| [Dapatkan Rentang Halaman JPEG](./get-jpeg-page-range/) | Konversikan halaman tertentu dokumen Word ke JPEG dengan pengaturan khusus menggunakan Aspose.Words untuk .NET. Pelajari cara menyesuaikan kecerahan, kontras, dan resolusi langkah demi langkah. |
+| [Panggilan Balik Penghematan Halaman](./page-saving-callback/) | Pelajari cara menyimpan setiap halaman dokumen Word sebagai gambar PNG terpisah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci. |

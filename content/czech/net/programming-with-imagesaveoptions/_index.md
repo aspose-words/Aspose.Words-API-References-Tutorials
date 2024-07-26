@@ -14,8 +14,8 @@ Výukové programy také pokrývají základní koncepty manipulace s obrázky, 
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Vystavit ovládání prahu pro binarizaci Tiff](./expose-threshold-control-for-tiff-binarization/) | Naučte se ovládat práh binarizace TIFF pomocí Aspose.Words pro .NET. Kompletní návod pro lepší kvalitu obrázků. |
-| [Získejte rozsah stránek Tiff](./get-tiff-page-range/) | Naučte se, jak extrahovat řadu stránek TIFF pomocí Aspose.Words pro .NET. Kompletní návod pro vlastní soubory TIFF. |
-| [Formát 1Bpp Indexováno](./format-1bpp-indexed/) | Naučte se formátovat obrázky v 1 bpp indexované pomocí Aspose.Words pro .NET. Kompletní návod pro obrázky s nízkou barevnou hloubkou. |
-| [Získejte rozsah stránek Jpeg](./get-jpeg-page-range/) | Naučte se, jak získat řadu stránek JPEG pomocí Aspose.Words pro .NET. Kompletní návod pro extrahování vlastních obrázků. |
-| [Zpětné volání pro ukládání stránky](./page-saving-callback/) | Naučte se, jak přizpůsobit ukládání stránek dokumentu do obrázků pomocí Aspose.Words for .NET. |
+| [Vystavit ovládání prahu pro binarizaci Tiff](./expose-threshold-control-for-tiff-binarization/) | Naučte se, jak vystavit kontrolu prahu pro binarizaci TIFF v dokumentech aplikace Word pomocí Aspose.Words pro .NET pomocí tohoto komplexního podrobného průvodce. |
+| [Získejte rozsah stránek Tiff](./get-tiff-page-range/) | V tomto podrobném průvodci se dozvíte, jak převést konkrétní rozsahy stránek z dokumentů aplikace Word na soubory TIFF pomocí Aspose.Words for .NET. |
+| [Formát 1Bpp Indexováno](./format-1bpp-indexed/) | Naučte se, jak převést dokument aplikace Word na indexovaný obrázek 1 Bpp pomocí Aspose.Words for .NET. Pro snadnou konverzi postupujte podle našeho podrobného průvodce. |
+| [Získejte rozsah stránek Jpeg](./get-jpeg-page-range/) | Převeďte konkrétní stránky dokumentů aplikace Word do formátu JPEG s vlastním nastavením pomocí Aspose.Words for .NET. Naučte se krok za krokem nastavovat jas, kontrast a rozlišení. |
+| [Zpětné volání pro ukládání stránky](./page-saving-callback/) | Naučte se uložit každou stránku dokumentu aplikace Word jako samostatný obrázek PNG pomocí Aspose.Words for .NET s naším podrobným průvodcem krok za krokem. |

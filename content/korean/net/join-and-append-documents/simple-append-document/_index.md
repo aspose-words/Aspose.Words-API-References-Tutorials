@@ -81,7 +81,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
  그만큼`AppendDocument` 메서드에는 두 가지 매개변수가 사용됩니다.
-1. 원본 문서: 추가하려는 문서입니다.
+1. 원본 문서: 추가할 문서입니다.
 2.  가져오기 형식 모드: 이 매개변수는 형식을 처리하는 방법을 지정합니다. 여기에서 우리는`KeepSourceFormatting` 원본 문서의 형식을 유지합니다.
 
 ## 6단계: 결합된 문서 저장

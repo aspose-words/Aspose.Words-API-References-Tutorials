@@ -131,7 +131,7 @@ doc.save("output.pdf", saveOptions);
 
 ### ฉันสามารถฝังแบบอักษรใน PDF ที่สร้างโดย Aspose.Words สำหรับ Java ได้หรือไม่
 
- ใช่ คุณสามารถฝังแบบอักษรใน PDF ได้โดยตั้งค่า`setEmbedFullFonts` ตัวเลือกในการ`true` ใน`PdfSaveOptions`- นี่คือตัวอย่าง:
+ ใช่ คุณสามารถฝังแบบอักษรใน PDF ได้โดยการตั้งค่า`setEmbedFullFonts` ตัวเลือกในการ`true` ใน`PdfSaveOptions`- นี่คือตัวอย่าง:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();

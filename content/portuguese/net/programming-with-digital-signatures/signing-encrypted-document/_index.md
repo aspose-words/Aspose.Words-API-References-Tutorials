@@ -67,7 +67,7 @@ SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPass
 
 ## Etapa 5: Carregando o Certificado
 
- Em seguida, carregue seu certificado usando o`CertificateHolder`aula. Isso exigirá o caminho para o seu arquivo .pfx e a senha do certificado.
+ Em seguida, carregue seu certificado usando o`CertificateHolder`aula. Isso exigirá o caminho para o arquivo .pfx e a senha do certificado.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");

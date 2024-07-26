@@ -34,7 +34,7 @@ Agora, vamos dividir o exemplo em várias etapas em formato de guia passo a pass
 
 ## Etapa 1: configure seu projeto
 
-### Criando um novo projeto
+### Criando um Novo Projeto
 
 Abra o Visual Studio e crie um novo projeto C#. Nomeie-o com algo significativo como "OpenTypeFeaturesDemo". Este será o nosso playground para experimentar os recursos OpenType.
 

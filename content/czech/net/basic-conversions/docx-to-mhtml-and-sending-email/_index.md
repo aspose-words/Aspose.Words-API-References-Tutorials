@@ -89,7 +89,7 @@ Gratulujeme! Úspěšně jste převedli dokument DOCX do MHTML a odeslali jej e-
 Ano, Aspose.Words podporuje různé formáty a dokumenty jako DOC, DOCX, RTF a další můžete převádět do MHTML.
 
 ### Jak mohu k e-mailu přidat přílohy?
- Můžete použít`Attachments` vlastnictvím`MailMessage`třídy a přidejte přílohy k e-mailu.
+ Můžete použít`Attachments` majetek z`MailMessage`třídy a přidejte přílohy k e-mailu.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
 Ano, Aspose.Words je kompatibilní s .NET Core. Můžete jej použít i v aplikacích .NET Core.

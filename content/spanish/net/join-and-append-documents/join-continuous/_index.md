@@ -9,7 +9,7 @@ url: /es/net/join-and-append-documents/join-continuous/
 ---
 ## Introducción
 
-¿Está buscando fusionar dos documentos de Word en uno sin interrupciones? Aspose.Words para .NET ofrece una manera fantástica de lograr esto mediante el uso de la función Salto de sección continua. Este tutorial lo guiará paso a paso a través del proceso, asegurándose de que pueda unir documentos fácilmente y sin problemas. ¡Vamos a sumergirnos!
+¿Está buscando fusionar dos documentos de Word en uno sin interrupciones? Aspose.Words para .NET ofrece una manera fantástica de lograr esto mediante el uso de la función Salto de sección continua. Este tutorial lo guiará paso a paso a través del proceso, asegurándole que pueda unir documentos fácilmente y sin ningún problema. ¡Vamos a sumergirnos!
 
 ## Requisitos previos
 
@@ -75,7 +75,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Paso 5: guarde el documento combinado
 
-Finalmente, guardamos el documento combinado en el directorio especificado. Esto completa el proceso de unir los documentos.
+Finalmente, guardamos el documento combinado en el directorio especificado. Esto completa el proceso de unión de los documentos.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");

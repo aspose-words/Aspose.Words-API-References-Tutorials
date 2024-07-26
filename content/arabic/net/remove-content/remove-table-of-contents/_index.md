@@ -41,7 +41,7 @@ using Aspose.Words.Fields;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار إلى مجلد المستندات الخاص بك. هذا هو المكان الذي يوجد فيه ملف Word الخاص بك.
+ يستبدل`"YOUR DOCUMENT DIRECTORY"`مع المسار إلى مجلد المستندات الخاص بك. هذا هو المكان الذي يوجد فيه ملف Word الخاص بك.
 
 ## الخطوة 2: قم بتحميل المستند
 

@@ -9,7 +9,7 @@ url: /it/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 ## introduzione
 
-Pronti a tuffarvi nel mondo della manipolazione dei documenti con Aspose.Words per .NET? Che tu sia uno sviluppatore che desidera automatizzare le attività sui documenti o semplicemente qualcuno curioso di gestire i file di Word a livello di codice, sei nel posto giusto. Oggi esploreremo come mostrare e nascondere il contenuto con segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questa guida passo passo ti renderà un professionista nel controllo della visibilità dei contenuti in base ai segnalibri. Iniziamo!
+Pronti a tuffarvi nel mondo della manipolazione dei documenti con Aspose.Words per .NET? Che tu sia uno sviluppatore che desidera automatizzare le attività sui documenti o semplicemente qualcuno curioso di gestire i file di Word a livello di programmazione, sei nel posto giusto. Oggi esploreremo come mostrare e nascondere il contenuto con segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questa guida passo passo ti renderà un professionista nel controllo della visibilità dei contenuti in base ai segnalibri. Iniziamo!
 
 ## Prerequisiti
 

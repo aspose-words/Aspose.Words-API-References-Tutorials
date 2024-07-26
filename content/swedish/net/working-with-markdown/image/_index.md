@@ -46,7 +46,7 @@ Därefter infogar du en bild i ditt dokument. Så här gör du:
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- Byta ut`"path_to_your_image.jpg"` med den faktiska sökvägen till din bildfil. De`InsertImage` metoden lägger till bilden i ditt dokument.
+ Byta ut`"path_to_your_image.jpg"` med den faktiska sökvägen till din bildfil. De`InsertImage` metoden kommer att lägga till bilden i ditt dokument.
 
 ## Steg 3: Ställ in bildegenskaper
 

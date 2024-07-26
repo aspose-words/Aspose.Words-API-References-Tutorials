@@ -11,13 +11,13 @@ url: /id/net/programming-with-sdt/creating-table-repeating-section-mapped-to-cus
 Tutorial ini menunjukkan cara membuat tabel dengan bagian berulang yang dipetakan ke Bagian Xml Kustom dalam dokumen Word menggunakan Aspose.Words untuk .NET. Bagian berulang memungkinkan Anda menambahkan baris secara dinamis berdasarkan data XML yang disimpan di Bagian Xml Kustom.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
+Untuk mengikuti tutorial ini, Anda perlu memiliki yang berikut ini:
 
 - Aspose.Words untuk perpustakaan .NET diinstal.
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
 
 ## Langkah 1: Siapkan Direktori Dokumen
- Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
+ Mulailah dengan menyiapkan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori tempat Anda ingin menyimpan dokumen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 ```
 
 ## Langkah 4: Buat Tabel dan Struktur Tabel
- Mulailah membuat tabel menggunakan`StartTable` metode`DocumentBuilder` . Tambahkan sel tabel dan konten menggunakan`InsertCell`Dan`Write` metode.
+Mulailah membuat tabel menggunakan`StartTable` metode`DocumentBuilder` . Tambahkan sel tabel dan konten menggunakan`InsertCell`Dan`Write` metode.
 
 ```csharp
 Table table = builder.StartTable();
@@ -98,7 +98,7 @@ row.AppendChild(authorSdt);
 ```
 
 ## Langkah 8: Simpan Dokumen
- Simpan dokumen yang dimodifikasi ke direktori yang ditentukan menggunakan`Save` metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
+ Simpan dokumen yang dimodifikasi ke direktori yang ditentukan menggunakan`Save`metode. Berikan nama file yang diinginkan dengan ekstensi file yang sesuai. Dalam contoh ini, kami menyimpan dokumen sebagai "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");

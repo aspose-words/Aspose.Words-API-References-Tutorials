@@ -2,7 +2,7 @@
 title: Получить разделитель стилей абзацев в документе Word
 linktitle: Получить разделитель стилей абзацев в документе Word
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как идентифицировать и обрабатывать разделители стилей абзацев в документах Word с помощью Aspose.Words for .NET, с помощью этого подробного пошагового руководства.
+description: Узнайте, как идентифицировать и обрабатывать разделители стилей абзацев в документах Word с помощью Aspose.Words для .NET, с помощью этого подробного пошагового руководства.
 type: docs
 weight: 10
 url: /ru/net/document-formatting/get-paragraph-style-separator/

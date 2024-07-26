@@ -22,7 +22,7 @@ Trước khi bắt tay vào viết mã, hãy đảm bảo bạn có mọi thứ 
 
 ## Nhập không gian tên
 
-Trước tiên, hãy đảm bảo rằng dự án của chúng ta đã sẵn sàng. Chúng ta cần nhập các không gian tên cần thiết. Điều này giống như việc chuẩn bị sân khấu trước màn biểu diễn chính.
+Trước tiên, hãy đảm bảo rằng dự án của chúng ta đã sẵn sàng. Chúng ta cần nhập các không gian tên cần thiết. Điều này giống như việc chuẩn bị sân khấu trước màn trình diễn chính.
 
 ```csharp
 using Aspose.Words;
@@ -61,7 +61,7 @@ Bây giờ, hãy thêm một số nội dung ban đầu vào tài liệu của c
 builder.Writeln("sad mad bad");
 ```
 
-Chúng tôi đã thêm một dòng văn bản đơn giản mà chúng tôi sẽ làm việc. Vui lòng tùy chỉnh nội dung này.
+Chúng tôi đã thêm một dòng văn bản đơn giản mà chúng tôi sẽ làm việc. Hãy thoải mái tùy chỉnh nội dung này.
 
 ## Bước 4: Thực hiện thao tác Tìm và Thay thế
 

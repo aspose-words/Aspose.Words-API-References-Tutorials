@@ -2,84 +2,85 @@
 title: Jpeg ページ範囲を取得
 linktitle: Jpeg ページ範囲を取得
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用してさまざまな JPEG ページを取得する方法を学びます。カスタム イメージを抽出するための完全なチュートリアルです。
+description: Aspose.Words for .NET を使用して、Word 文書の特定のページをカスタム設定で JPEG に変換します。明るさ、コントラスト、解像度を段階的に調整する方法を学びます。
 type: docs
 weight: 10
 url: /ja/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 ---
+## 導入
 
-このチュートリアルでは、Aspose.Words for .NET の「JPEG ページの範囲を取得」機能用に提供されている C# ソース コードについて説明します。この機能を使用すると、ドキュメントの特定の範囲のページを JPEG 形式の画像に変換できます。
+Word 文書を画像に変換すると、サムネイルを作成したり、オンラインで文書をプレビューしたり、よりアクセスしやすい形式でコンテンツを共有したりする場合に非常に便利です。Aspose.Words for .NET を使用すると、明るさ、コントラスト、解像度などのさまざまな設定をカスタマイズしながら、Word 文書の特定のページを JPEG 形式に簡単に変換できます。これをステップごとに実現する方法を詳しく見ていきましょう。
 
-## ステップ1: 環境の設定
+## 前提条件
 
-始める前に、Aspose.Words for .NET を使用して開発環境をセットアップしていることを確認してください。必要な参照を追加し、適切な名前空間をインポートしたことを確認してください。
+始める前に、いくつかの準備が必要です:
 
-## ステップ2: ドキュメントの読み込み
+-  Aspose.Words for .NET: Aspose.Words for .NETがインストールされていることを確認してください。[ここからダウンロード](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio のような C# 開発環境。
+- サンプル ドキュメント: 作業に使用する Word ドキュメント。このチュートリアルでは任意の .docx ファイルを使用できます。
+- 基本的な C# の知識: C# プログラミングに精通していること。
+
+準備ができたら、始めましょう!
+
+## 名前空間のインポート
+
+Aspose.Words for .NET を使用するには、コードの先頭に必要な名前空間をインポートする必要があります。これにより、ドキュメント操作に必要なすべてのクラスとメソッドにアクセスできるようになります。
 
 ```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
+## ステップ1: ドキュメントを読み込む
+
+まず、変換したいWord文書を読み込む必要があります。文書の名前が`Rendering.docx`プレースホルダで指定されたディレクトリにあります`YOUR DOCUMENT DIRECTORY`.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-このステップでは、`Document`メソッドを呼び出して、読み込む DOCX ファイルへのパスを渡します。
+このコードはドキュメントへのパスを初期化し、Aspose.Wordsに読み込みます。`Document`物体。
 
-## ステップ3: イメージバックアップオプションを構成する
+## ステップ2: ImageSaveOptionsを設定する
+
+次に、`ImageSaveOptions` JPEG の生成方法を指定します。これには、ページ範囲、画像の明るさ、コントラスト、解像度の設定が含まれます。
 
 ```csharp
 ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
-options. PageSet = new PageSet(0);
-options. ImageBrightness = 0.3f;
-options. ImageContrast = 0.7f;
-options. HorizontalResolution = 72f;
+options.PageSet = new PageSet(0); //最初のページのみ変換する
+options.ImageBrightness = 0.3f;   //明るさを設定する
+options.ImageContrast = 0.7f;     //コントラストを設定する
+options.HorizontalResolution = 72f; //解像度を設定する
 ```
 
-このステップでは、画像のバックアップオプションを設定します。新しい`ImageSaveOptions`希望する保存形式を指定するオブジェクト。ここではJPEG形式の場合は「Jpeg」。また、変換するページの範囲も設定します。`PageSet`最後に、画像の明るさとコントラストを調整します。`ImageBrightness`そして`ImageContrast`それぞれのプロパティで水平解像度を変更します。`HorizontalResolution`財産。
+## ステップ3: ドキュメントをJPEGとして保存する
 
-## ステップ4: 画像のバックアップ
+最後に、定義した設定を使用してドキュメントを JPEG ファイルとして保存します。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
 ```
 
-この最後のステップでは、指定されたページ範囲の画像をJPEG形式で保存します。`Save`メソッドを実行し、指定された保存オプションとともに出力ファイルへのパスを渡します。
-
-これで、ソース コードを実行して、ドキュメント内の特定の範囲のページを JPEG 画像に変換できます。結果のファイルは、指定されたディレクトリに「WorkingWithImageSaveOptions.GetJpegPageRange.jpeg」という名前で保存されます。
-
-### Aspose.Words For .NET を使用して Jpeg ページ範囲を取得するためのサンプル ソース コード
-
-```csharp 
- //ドキュメントディレクトリへのパス
- string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-Document doc = new Document(dataDir + "Rendering.docx");
-
-ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
-
-//ドキュメントの最初のページのみを変換するには、「PageSet」を「0」に設定します。
-options.PageSet = new PageSet(0);
-
-//画像の明るさとコントラストを変更します。
-//どちらも 0 ～ 1 のスケールで、デフォルトでは 0.5 になっています。
-options.ImageBrightness = 0.3f;
-options.ImageContrast = 0.7f;
-
-//水平解像度を変更します。
-//これらのプロパティのデフォルト値は 96.0 (解像度 96dpi) です。
-options.HorizontalResolution = 72f;
-
-doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
-            
-        
-```
+このコードは、`Rendering.docx`指定された明るさ、コントラスト、解像度の設定を持つ JPEG 画像として。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して JPEG ページ範囲を取得する機能について説明しました。保存オプションをカスタマイズしながら、ドキュメントの特定の範囲のページを JPEG 形式の画像に変換する方法を学習しました。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書の特定のページをカスタマイズされた設定で JPEG 画像に変換できました。このプロセスは、Web サイト用の画像を準備する場合や、ドキュメントのプレビューを作成する場合など、さまざまなニーズに合わせてカスタマイズできます。
 
-この機能は、ドキュメントから特定のページを抽出し、JPEG 画像として保存する場合に便利です。また、画像の明るさ、コントラスト、水平解像度を調整して、パーソナライズされた結果を得ることもできます。
+## よくある質問
 
-Aspose.Words for .NET は、ドキュメントの操作と生成のための高度な機能を幅広く提供します。JPEG ページ範囲の取得は、Aspose.Words for .NET が提供する多くの強力なツールの 1 つです。
+### 複数のページを一度に変換できますか?
+はい、ページの範囲を指定するには、`PageSet`不動産の`ImageSaveOptions`.
 
-この機能を Aspose.Words for .NET プロジェクトに自由に統合して、ドキュメントから高品質の JPEG 画像を取得できます。
+### 画質を調整するにはどうすればよいですか?
+ JPEGの品質は、`JpegQuality`不動産の`ImageSaveOptions`.
+
+### 他の画像形式で保存できますか?
+はい、Aspose.WordsはPNG、BMP、TIFFなどのさまざまな画像形式をサポートしています。`SaveFormat`で`ImageSaveOptions`それに応じて。
+
+### 保存する前に画像をプレビューする方法はありますか?
+Aspose.Words には組み込みのプレビュー機能がないため、プレビュー メカニズムを別途実装する必要があります。
+
+### Aspose.Words の一時ライセンスを取得するにはどうすればよいですか?
+リクエストすることができます[一時ライセンスはこちら](https://purchase.aspose.com/temporary-license/).

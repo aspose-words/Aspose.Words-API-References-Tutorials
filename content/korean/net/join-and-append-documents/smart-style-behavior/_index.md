@@ -18,7 +18,7 @@ url: /ko/net/join-and-append-documents/smart-style-behavior/
 -  .NET용 Aspose.Words: 최신 버전인지 확인하세요. 그렇지 않은 경우,[다운로드 페이지](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio와 같은 모든 .NET 호환 환경에서 가능합니다.
 - 두 개의 Word 문서: 이 튜토리얼에서는 "Document source.docx" 및 "Northwind traders.docx"를 사용합니다.
--  Aspose 라이센스: 제한을 피하려면[임시 면허증](https://purchase.aspose.com/temporary-license/)아직 구매하지 않으셨다면.
+-  Aspose 라이센스: 제한을 피하려면[임시면허](https://purchase.aspose.com/temporary-license/)아직 구매하지 않으셨다면.
 
 ### 네임스페이스 가져오기
 
@@ -123,7 +123,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx"
 이 옵션이 없으면 소스 문서의 스타일이 제대로 통합되지 않아 서식 문제가 발생할 수 있습니다.
 
 ### .NET용 Aspose.Words는 무료인가요?
- Aspose.Words for .NET은 유료 제품이지만 다음을 통해 무료로 사용해 볼 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words for .NET은 유료 제품이지만 다음을 통해 무료로 사용해 볼 수 있습니다.[임시면허](https://purchase.aspose.com/temporary-license/).
 
 ### 다른 파일 형식에 이 방법을 사용할 수 있나요?
 이 튜토리얼은 Word 문서(.docx)에만 적용됩니다. 다른 형식의 경우 추가 단계나 다른 방법이 필요할 수 있습니다.

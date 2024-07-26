@@ -54,7 +54,7 @@ Você também pode personalizar outras opções de salvamento de acordo com suas
 Agora que carregamos o documento e configuramos as opções de salvamento RTF, é hora de salvar o documento no formato RTF.
 
 ```java
-// Salve o documento em formato RTF
+// Salve o documento no formato RTF
 
 doc.save("path/to/output.rtf", saveOptions);
 ```

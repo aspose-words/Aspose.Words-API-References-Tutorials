@@ -2,7 +2,7 @@
 title: Insérer un paragraphe dans un document Word
 linktitle: Insérer un paragraphe dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment insérer des paragraphes dans des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre tutoriel détaillé pour une manipulation fluide des documents.
+description: Découvrez comment insérer des paragraphes dans des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre tutoriel détaillé pour une manipulation transparente des documents.
 type: docs
 weight: 10
 url: /fr/net/add-content-using-documentbuilder/insert-paragraph/

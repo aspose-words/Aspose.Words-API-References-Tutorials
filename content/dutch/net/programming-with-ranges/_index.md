@@ -16,5 +16,5 @@ Of u nu een beginner of een ervaren ontwikkelaar bent, deze tutorials helpen u d
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Bereiken Verwijder tekst in Word-document](./ranges-delete-text/) | Leer hoe u tekst in specifieke bereiken in een Word-document verwijdert met Aspose.Words voor .NET. |
-| [Bereiken Krijg tekst in Word-document](./ranges-get-text/) | Leer hoe u eenvoudig tekst uit een Word-document kunt extraheren met Aspose.Words voor .NET. |
+| [Bereiken Verwijder tekst in Word-document](./ranges-delete-text/) | Leer hoe u tekst uit een bereik in een Word-document verwijdert met Aspose.Words voor .NET met deze stapsgewijze zelfstudie. Perfect voor C#-ontwikkelaars. |
+| [Bereiken Krijg tekst in Word-document](./ranges-get-text/) | Extraheer moeiteloos tekst uit Word-documenten met Aspose.Words voor .NET. Volg onze gedetailleerde gids om gemakkelijk aan de slag te gaan. |

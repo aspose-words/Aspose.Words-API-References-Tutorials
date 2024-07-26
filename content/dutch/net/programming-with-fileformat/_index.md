@@ -16,6 +16,6 @@ Of u nu rapporten moet genereren, aangepaste documenten moet maken, Word-documen
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Detecteer het documentbestandsformaat](./detect-file-format/) | Stapsgewijze handleiding voor het detecteren van documentbestandsindelingen met Aspose.Words voor .NET. |
-| [Detecteer digitale handtekening op Word-document](./detect-document-signatures/) | Stapsgewijze handleiding om digitale handtekeningen in een document te detecteren met Aspose.Words voor .NET. |
-| [Controleer het gecodeerde Word-document](./verify-encrypted-document/) | Stapsgewijze handleiding om te verifiëren dat een document is gecodeerd met Aspose.Words voor .NET. |
+| [Detecteer het documentbestandsformaat](./detect-file-format/) | Leer hoe u documentbestandsindelingen kunt detecteren met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze handleiding. |
+| [Detecteer digitale handtekening op Word-document](./detect-document-signatures/) | Leer hoe u digitale handtekeningen in Word-documenten kunt detecteren met Aspose.Words voor .NET met onze stapsgewijze handleiding. |
+| [Controleer het gecodeerde Word-document](./verify-encrypted-document/) | Leer hoe u de coderingsstatus van een Word-document kunt verifiëren met Aspose.Words voor .NET met deze stapsgewijze handleiding. |

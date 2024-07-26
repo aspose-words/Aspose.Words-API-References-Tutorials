@@ -9,7 +9,7 @@ url: /es/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## Introducción
 
-¡Hola, maestros de documentos! ¿Alguna vez te has encontrado inmerso en el código, tratando de descubrir cómo insertar un documento de Word en otro sin problemas? No temas, porque hoy nos sumergimos en el mundo de Aspose.Words para .NET para facilitar esa tarea. Revisaremos una guía detallada paso a paso sobre cómo utilizar esta poderosa biblioteca para insertar documentos en puntos específicos durante una operación de búsqueda y reemplazo. ¿Listo para convertirte en un mago de Aspose.Words? ¡Empecemos!
+¡Hola, maestros de documentos! ¿Alguna vez te has encontrado inmerso en el código, tratando de descubrir cómo insertar un documento de Word en otro sin problemas? No temas, porque hoy nos sumergimos en el mundo de Aspose.Words para .NET para facilitar esa tarea. Revisaremos una guía detallada paso a paso sobre cómo usar esta poderosa biblioteca para insertar documentos en puntos específicos durante una operación de búsqueda y reemplazo. ¿Listo para convertirte en un mago de Aspose.Words? ¡Empecemos!
 
 ## Requisitos previos
 

@@ -2,71 +2,128 @@
 title: أضف بادئة اسم فئة Css
 linktitle: أضف بادئة اسم فئة Css
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: دليل خطوة بخطوة لإضافة بادئة اسم فئة CSS عند تحويل مستند إلى HTML باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إضافة بادئة اسم فئة CSS عند حفظ مستندات Word بتنسيق HTML باستخدام Aspose.Words لـ .NET. تم تضمين دليل خطوة بخطوة ومقتطفات التعليمات البرمجية والأسئلة الشائعة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سنرشدك عبر التعليمات البرمجية المصدر لـ C# لإضافة بادئة اسم فئة CSS باستخدام Aspose.Words for .NET. تتيح لك هذه الميزة إضافة بادئة مخصصة لأسماء فئات CSS التي تم إنشاؤها عند تحويل مستند إلى HTML.
+مرحباً! إذا كنت تغوص في عالم Aspose.Words for .NET، فأنت في مكان رائع. سنستكشف اليوم كيفية إضافة بادئة اسم فئة CSS عند حفظ مستند Word بتنسيق HTML باستخدام Aspose.Words لـ .NET. تعد هذه الميزة مفيدة للغاية عندما تريد تجنب تعارضات أسماء الفئات في ملفات HTML الخاصة بك.
 
-## الخطوة 1: إعداد المشروع
+## المتطلبات الأساسية
 
-للبدء، قم بإنشاء مشروع C# جديد في بيئة التطوير المتكاملة (IDE) المفضلة لديك. تأكد من الإشارة إلى مكتبة Aspose.Words for .NET في مشروعك.
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-## الخطوة 2: تحميل الوثيقة
+-  Aspose.Words for .NET: إذا لم تقم بتثبيته بعد،[قم بتنزيله هنا](https://releases.aspose.com/words/net/).
+- بيئة التطوير: Visual Studio أو أي C# IDE آخر.
+-  مستند Word: سنستخدم مستندًا اسمه`Rendering.docx`. ضعه في دليل المشروع الخاص بك.
 
-في هذه الخطوة، سنقوم بتحميل مستند Word الذي نريد تحويله إلى HTML. استخدم الكود التالي لتحميل المستند:
+## استيراد مساحات الأسماء
+
+أولاً، تأكد من استيراد مساحات الأسماء الضرورية إلى مشروع C# الخاص بك. أضف هذه في أعلى ملف التعليمات البرمجية الخاص بك:
 
 ```csharp
-//المسار إلى دليل المستندات.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+الآن، دعونا نتعمق في الدليل خطوة بخطوة!
+
+## الخطوة 1: قم بإعداد مشروعك
+
+قبل أن نتمكن من البدء بإضافة بادئة اسم فئة CSS، فلنقم بإعداد مشروعنا.
+
+### الخطوة 1.1: إنشاء مشروع جديد
+
+ قم بتشغيل Visual Studio الخاص بك وقم بإنشاء مشروع تطبيق Console جديد. سمها شيئًا جذابًا مثل`AsposeCssPrefixExample`.
+
+### الخطوة 1.2: إضافة Aspose.Words لـ .NET
+
+إذا لم تكن قد قمت بذلك بالفعل، قم بإضافة Aspose.Words for .NET إلى مشروعك عبر NuGet. ما عليك سوى فتح وحدة تحكم NuGet Package Manager وتشغيلها:
+
+```bash
+Install-Package Aspose.Words
+```
+
+عظيم! الآن، نحن جاهزون لبدء البرمجة.
+
+## الخطوة 2: قم بتحميل المستند الخاص بك
+
+أول شيء يتعين علينا القيام به هو تحميل مستند Word الذي نريد تحويله إلى HTML.
+
+### الخطوة 2.1: تحديد مسار المستند
+
+ قم بإعداد المسار إلى دليل المستندات الخاص بك. من أجل هذا البرنامج التعليمي، لنفترض أن المستند الخاص بك موجود في مجلد اسمه`Documents` ضمن دليل المشروع الخاص بك.
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### الخطوة 2.2: قم بتحميل المستند
+
+الآن، لنقم بتحميل المستند باستخدام Aspose.Words:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- يستبدل`"YOUR DOCUMENTS DIRECTORY"` بالمسار الفعلي للدليل الذي يوجد به المستند الخاص بك.
+## الخطوة 3: تكوين خيارات حفظ HTML
 
-## الخطوة 3: قم بتعيين خيارات حفظ HTML
+بعد ذلك، نحتاج إلى تكوين خيارات حفظ HTML لتضمين بادئة اسم فئة CSS.
 
-لنقم الآن بتعيين خيارات حفظ HTML، بما في ذلك نوع ورقة أنماط CSS وبادئة اسم فئة CSS. استخدم الكود التالي:
+### الخطوة 3.1: إنشاء خيارات حفظ HTML
+
+ إنشاء مثيل`HtmlSaveOptions` كائن وقم بتعيين نوع ورقة أنماط CSS عليه`External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
- يقوم هذا الرمز بإنشاء مثيل لـ`HtmlSaveOptions` ومجموعات`CssStyleSheetType` ل`CssStyleSheetType.External` لإنشاء ورقة أنماط CSS خارجية، و`CssClassNamePrefix` ل`"pfx_"` إلى البادئة`"pfx_"` لأسماء فئة CSS.
+### الخطوة 3.2: تعيين بادئة اسم فئة CSS
 
-## الخطوة 4: تحويل وحفظ المستند إلى HTML
+ الآن، دعونا نضع`CssClassNamePrefix` الخاصية إلى البادئة التي تريدها. في هذا المثال سوف نستخدم`"pfx_"`.
 
-وأخيرًا، سنقوم بتحويل المستند إلى HTML باستخدام خيارات حفظ HTML المحددة مسبقًا. استخدم الكود التالي:
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## الخطوة 4: احفظ المستند بتنسيق HTML
+
+وأخيرًا، فلنحفظ المستند كملف HTML مع خياراتنا التي تم تكوينها.
+
+
+حدد مسار ملف HTML الناتج واحفظ المستند.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-يقوم هذا الرمز بتحويل المستند إلى HTML وحفظه في ملف مع إضافة بادئة اسم فئة CSS.
+## الخطوة 5: التحقق من الإخراج
 
-### مثال على التعليمات البرمجية المصدر لإضافة بادئة اسم فئة Css باستخدام Aspose.Words لـ .NET
+ بعد تشغيل مشروعك، انتقل إلى ملف`Documents` مجلد. يجب أن تجد ملف HTML اسمه`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . افتح هذا الملف في محرر نصوص أو متصفح للتحقق من أن فئات CSS لها البادئة`pfx_`.
 
-```csharp
+## خاتمة
 
-	// المسار إلى دليل المستندات.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+وهناك لديك! باتباع هذه الخطوات، تكون قد قمت بنجاح بإضافة بادئة اسم فئة CSS إلى مخرجات HTML الخاصة بك باستخدام Aspose.Words for .NET. يمكن أن تساعدك هذه الميزة البسيطة والقوية في الحفاظ على أنماط نظيفة وخالية من التعارضات في مستندات HTML الخاصة بك.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## الأسئلة الشائعة
 
-```
+### هل يمكنني استخدام بادئة مختلفة لكل عملية حفظ؟
+ نعم، يمكنك تخصيص البادئة في كل مرة تقوم فيها بحفظ مستند عن طريق تغيير`CssClassNamePrefix` ملكية.
 
- تأكد من تحديد مسار المستند الصحيح في ملف`dataDir` عامل.
+### هل تدعم هذه الطريقة CSS المضمنة؟
+ ال`CssClassNamePrefix`الخاصية تعمل مع CSS خارجي. بالنسبة إلى CSS المضمنة، ستحتاج إلى أسلوب مختلف.
 
-لقد تعلمت الآن كيفية إضافة بادئة اسم فئة CSS عند تحويل مستند إلى HTML باستخدام Aspose.Words for .NET. باتباع خطوة الدليل خطوة بخطوة المتوفرة في هذا البرنامج التعليمي، يمكنك تخصيص أسماء فئات CSS في مستندات HTML المحولة.
+### كيف يمكنني تضمين خيارات حفظ HTML أخرى؟
+ يمكنك تكوين خصائص مختلفة`HtmlSaveOptions` لتخصيص مخرجات HTML الخاصة بك. افحص ال[توثيق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
+
+### هل من الممكن حفظ HTML في الدفق؟
+ قطعاً! يمكنك حفظ المستند في دفق عن طريق تمرير كائن الدفق إلى ملف`Save` طريقة.
+
+### كيف يمكنني الحصول على الدعم إذا واجهت مشاكل؟
+ يمكنك الحصول على الدعم من[منتدى Aspose](https://forum.aspose.com/c/words/8).

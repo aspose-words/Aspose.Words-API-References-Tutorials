@@ -2,68 +2,102 @@
 title: Zachowaj starsze znaki kontrolne
 linktitle: Zachowaj starsze znaki kontrolne
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zachować starsze znaki kontrolne podczas zapisywania dokumentu za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak zachować starsze znaki kontrolne w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
+## Wstęp
 
-W tym samouczku przyjrzymy się dostarczonemu kodowi źródłowemu C#, aby zachować starsze znaki sterujące podczas zapisywania dokumentu przy użyciu Aspose.Words dla .NET. Ta funkcja pozwala zachować specjalne znaki sterujące podczas konwertowania lub zapisywania dokumentu.
+Czy zastanawiałeś się kiedyś nad dziwnymi, niewidocznymi znakami kontrolnymi w dokumentach programu Word? Są jak małe, ukryte gremliny, które mogą zepsuć formatowanie i funkcjonalność. Na szczęście Aspose.Words dla .NET zapewnia przydatną funkcję, która pozwala zachować nienaruszone starsze znaki kontrolne podczas zapisywania dokumentów. W tym samouczku szczegółowo omówimy, jak zarządzać tymi znakami kontrolnymi za pomocą Aspose.Words dla .NET. Omówimy to krok po kroku, upewniając się, że po drodze zrozumiesz każdy szczegół. Gotowy żeby zacząć? Zanurzmy się!
 
-## Krok 1: Konfigurowanie środowiska
+## Warunki wstępne
 
-Zanim zaczniesz, upewnij się, że skonfigurowałeś środowisko programistyczne za pomocą Aspose.Words dla .NET. Upewnij się, że dodałeś niezbędne odniesienia i zaimportowałeś odpowiednie przestrzenie nazw.
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
-## Krok 2: Załaduj dokument
+1.  Aspose.Words dla .NET: Pobierz i zainstaluj z[Tutaj](https://releases.aspose.com/words/net/).
+2.  Ważna licencja Aspose: Możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
+3. Środowisko programistyczne: Visual Studio lub dowolne inne IDE obsługujące platformę .NET.
+4. Podstawowa znajomość języka C#: Znajomość języka programowania C# będzie pomocna.
 
-```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+## Importuj przestrzenie nazw
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
-```
-
- W tym kroku ładujemy dokument za pomocą`Document` metodę i przekazanie ścieżki do pliku zawierającego odziedziczone znaki sterujące.
-
-## Krok 3: Konfiguracja opcji tworzenia kopii zapasowych OOXML
+Przed napisaniem kodu musisz zaimportować niezbędne przestrzenie nazw. Dodaj następujące wiersze na górze pliku C#:
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- W tym kroku konfigurujemy opcje zapisywania OOXML, tworząc nowy plik`OoxmlSaveOptions` obiekt. Określamy żądany format zapisu (tutaj`FlatOpc` ) i włącz`KeepLegacyControlChars` opcja zachowania starszych znaków kontrolnych.
+## Krok 1: Konfiguracja projektu
 
-## Krok 4: Zapisywanie dokumentu ze starszymi znakami kontrolnymi
+Najpierw musisz skonfigurować projekt w programie Visual Studio (lub preferowanym środowisku IDE). 
 
-```csharp
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-```
+1. Utwórz nowy projekt C#: Otwórz program Visual Studio i utwórz nowy projekt aplikacji konsolowej C#.
+2. Zainstaluj Aspose.Words dla .NET: Użyj Menedżera pakietów NuGet, aby zainstalować Aspose.Words dla .NET. Kliknij prawym przyciskiem myszy swój projekt w Eksploratorze rozwiązań, wybierz „Zarządzaj pakietami NuGet”, wyszukaj „Aspose.Words” i zainstaluj go.
 
- W ostatnim kroku zapisujemy dokument za pomocą pliku`Save` metodę i przekazanie ścieżki do pliku wyjściowego za pomocą`.docx` rozszerzenie wraz z określonymi opcjami zapisywania.
+## Krok 2: Załaduj swój dokument
 
-Teraz możesz uruchomić kod źródłowy, aby zachować starsze znaki kontrolne podczas zapisywania dokumentu. Wynikowy plik zostanie zapisany w określonym katalogu pod nazwą „WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx”.
+Następnie załadujesz dokument programu Word zawierający starsze znaki sterujące.
 
-### Przykładowy kod źródłowy dla znaków kontrolnych Keep Legacy przy użyciu Aspose.Words dla .NET 
-```csharp
+1. Określ ścieżkę dokumentu: Ustaw ścieżkę do katalogu dokumentów.
+   
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
 
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+2.  Załaduj dokument: Użyj`Document` class, aby załadować dokument.
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```csharp
+   Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+## Krok 3: Skonfiguruj opcje zapisywania
 
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-            
-        
-```
+Teraz skonfigurujmy opcje zapisywania, aby zachować nienaruszone starsze znaki sterujące.
+
+1.  Utwórz Opcje zapisu: Zainicjuj instancję`OoxmlSaveOptions` i ustaw`KeepLegacyControlChars`własność do`true`.
+
+   ```csharp
+   OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)
+   {
+       KeepLegacyControlChars = true
+   };
+   ```
+
+## Krok 4: Zapisz dokument
+
+Na koniec zapisz dokument ze skonfigurowanymi opcjami zapisywania.
+
+1.  Zapisz dokument: Użyj`Save` metoda`Document` class, aby zapisać dokument z określonymi opcjami zapisywania.
+
+   ```csharp
+   doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
+   ```
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy funkcjonalność zachowywania starszych znaków kontrolnych podczas zapisywania dokumentu przy użyciu Aspose.Words dla .NET. Nauczyliśmy się, jak zachować te znaki specjalne, które mogą być ważne dla prawidłowego formatowania lub wyświetlania dokumentu.
+masz to! Wykonując te kroki, możesz mieć pewność, że dotychczasowe znaki kontrolne zostaną zachowane podczas pracy z dokumentami programu Word w Aspose.Words dla .NET. Ta funkcja może uratować życie, szczególnie w przypadku złożonych dokumentów, w których znaki kontrolne odgrywają kluczową rolę. 
 
- Zachowywanie starszych znaków sterujących jest szczególnie przydatne podczas przetwarzania tekstu w dokumentach korzystających ze starszych lub specyficznych funkcji, takich jak specjalne znaki sterujące. Włączając opcję`KeepLegacyControlChars` opcję podczas zapisywania dokumentu, masz pewność, że znaki te zostaną zachowane.
+## Często zadawane pytania
 
-Aspose.Words dla .NET oferuje szereg elastycznych i wydajnych opcji tworzenia kopii zapasowych, aby spełnić Twoje potrzeby w zakresie manipulacji dokumentami. Korzystając z odpowiednich opcji, możesz dostosować proces tworzenia kopii zapasowych tak, aby zachować specyfikę Twoich dokumentów.
+### Co to są starsze znaki kontrolne?
 
-Możesz włączyć tę funkcjonalność do swoich projektów Aspose.Words for .NET, aby zapewnić integralność i zachowanie starszych znaków kontrolnych w swoich dokumentach.
+Starsze znaki sterujące to znaki niedrukowalne używane w starszych dokumentach w celu kontrolowania formatowania i układu.
+
+### Czy mogę usunąć te znaki kontrolne zamiast je zachować?
+
+Tak, możesz użyć Aspose.Words dla .NET, aby w razie potrzeby usunąć lub zastąpić te znaki.
+
+### Czy ta funkcja jest dostępna we wszystkich wersjach Aspose.Words dla .NET?
+
+Ta funkcja jest dostępna w najnowszych wersjach. Aby uzyskać dostęp do wszystkich funkcji, upewnij się, że korzystasz z najnowszej wersji.
+
+### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
+
+ Tak, potrzebujesz ważnej licencji. Możesz uzyskać tymczasową licencję do celów próbnych[Tutaj](https://purchase.aspose.com/temporary-license/).
+
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+
+ Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).
+ 

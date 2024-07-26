@@ -16,6 +16,6 @@ Oavsett om du behöver generera rapporter, skapa anpassade dokument, automatiser
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Upptäck dokumentfilformat](./detect-file-format/) | Steg för steg guide för att upptäcka dokumentfilformat med Aspose.Words för .NET. |
-| [Upptäck digital signatur på Word-dokument](./detect-document-signatures/) | Steg-för-steg-guide för att upptäcka digitala signaturer i ett dokument med Aspose.Words för .NET. |
-| [Verifiera krypterade Word-dokument](./verify-encrypted-document/) | Steg-för-steg-guide för att verifiera att ett dokument är krypterat med Aspose.Words för .NET. |
+| [Upptäck dokumentfilformat](./detect-file-format/) | Lär dig hur du upptäcker dokumentfilformat med Aspose.Words för .NET med denna omfattande, steg-för-steg-guide. |
+| [Upptäck digital signatur på Word-dokument](./detect-document-signatures/) | Lär dig hur du upptäcker digitala signaturer i Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. |
+| [Verifiera krypterade Word-dokument](./verify-encrypted-document/) | Lär dig hur du verifierar krypteringsstatusen för ett Word-dokument med Aspose.Words för .NET med denna steg-för-steg-guide. |

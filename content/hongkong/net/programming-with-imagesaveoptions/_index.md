@@ -14,8 +14,8 @@ url: /zh-hant/net/programming-with-imagesaveoptions/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [公開 Tiff 二值化的閾值控制](./expose-threshold-control-for-tiff-binarization/) | 了解如何使用 Aspose.Words for .NET 控制 TIFF 二值化閾值。獲得更高品質圖像的完整教程。 |
-| [取得 Tiff 頁面範圍](./get-tiff-page-range/) | 了解如何使用 Aspose.Words for .NET 擷取一系列 TIFF 頁面。自訂 TIFF 檔案的完整教學。 |
-| [格式 1Bpp 索引](./format-1bpp-indexed/) | 了解如何格式化使用 Aspose.Words for .NET 索引的 1 bpp 映像。低色彩深度影像的完整教學。 |
-| [取得 Jpeg 頁面範圍](./get-jpeg-page-range/) | 了解如何使用 Aspose.Words for .NET 取得一系列 JPEG 頁面。提取自訂圖像的完整教程。 |
-| [頁面儲存回調](./page-saving-callback/) | 了解如何使用 Aspose.Words for .NET 自訂將文件頁面儲存為圖片。 |
+| [公開 Tiff 二值化的閾值控制](./expose-threshold-control-for-tiff-binarization/) | 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中公開 TIFF 二值化的閾值控制。 |
+| [取得 Tiff 頁面範圍](./get-tiff-page-range/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 將特定頁面範圍從 Word 文件轉換為 TIFF 檔案。 |
+| [格式 1Bpp 索引](./format-1bpp-indexed/) | 了解如何使用 Aspose.Words for .NET 將 Word 文件轉換為 1Bpp 索引圖片。請按照我們的逐步指南輕鬆轉換。 |
+| [取得 Jpeg 頁面範圍](./get-jpeg-page-range/) | 使用 Aspose.Words for .NET 透過自訂設定將 Word 文件的特定頁面轉換為 JPEG。了解如何逐步調整亮度、對比度和解析度。 |
+| [頁面儲存回調](./page-saving-callback/) | 透過我們詳細的逐步指南，學習使用 Aspose.Words for .NET 將 Word 文件的每一頁儲存為單獨的 PNG 圖像。 |

@@ -2,7 +2,7 @@
 title: Mục tiêu so sánh trong tài liệu Word
 linktitle: Mục tiêu so sánh trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Dễ dàng so sánh các tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. Tiết kiệm thời gian và nâng cao độ chính xác trong việc so sánh tài liệu.
+description: Dễ dàng so sánh các tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Tiết kiệm thời gian và nâng cao độ chính xác trong việc so sánh tài liệu.
 type: docs
 weight: 10
 url: /vi/net/compare-documents/comparison-target/

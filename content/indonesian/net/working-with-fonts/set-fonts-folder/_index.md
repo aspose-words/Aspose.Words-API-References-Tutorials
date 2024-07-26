@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /id/net/working-with-fonts/set-fonts-folder/
 ---
-Dalam tutorial ini, kami akan menunjukkan cara mengatur direktori font di Aspose.Words untuk .NET. Anda akan belajar cara menentukan direktori yang berisi font yang digunakan dalam dokumen Word Anda.
+Dalam tutorial ini, kami akan menunjukkan cara mengatur direktori font di Aspose.Words untuk .NET. Anda akan mempelajari cara menentukan direktori yang berisi font yang digunakan dalam dokumen Word Anda.
 
 ## Prasyarat
 Sebelum memulai, pastikan Anda memiliki item berikut:

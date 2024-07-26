@@ -18,7 +18,7 @@ url: /ko/python-net/document-combining-and-comparison/document-bookmarks/
 
 - Python 프로그래밍 언어에 대한 기본 이해
 - 컴퓨터에 Python이 설치되어 있음
-- Python API용 Aspose.Words에 액세스
+- Aspose.Words for Python API에 대한 액세스
 
 ## Python용 Aspose.Words 설치
 

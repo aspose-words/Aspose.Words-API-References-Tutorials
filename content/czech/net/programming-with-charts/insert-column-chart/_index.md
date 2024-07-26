@@ -52,7 +52,7 @@ Chart chart = shape.Chart;
 
 ## Krok 3: Přidejte data do grafu
 
- Přidejte datové řady do grafu pomocí`Series` vlastnictvím`Chart` objekt.
+ Přidejte datové řady do grafu pomocí`Series` majetek z`Chart` objekt.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new string[] { "Category 1", "Category 2" }, new double[] { 1, 2 });

@@ -16,7 +16,7 @@ Ez egy átfogó forrás a Word dokumentumok mezőinek kezeléséhez az Aspose.Wo
 | [Mezőfrissítési kultúraforrás módosítása](./change-field-update-culture-source/) | Mező-frissítési kultúraforrás módosítása: Lépésről lépésre útmutató a kultúraforrás módosításához az Aspose.Words for .NET-ben.|
 | [Adja meg a területi beállítást a mező szintjén](./specify-locale-at-field-level/) | Ismerje meg, hogyan adhat meg mezőszintű lokalizációt Word dokumentumokban az Aspose.Words for .NET segítségével. |
 | [Cserélje ki a hiperhivatkozásokat](./replace-hyperlinks/) | Cserélje le a hiperhivatkozásokat a Word dokumentumokban az Aspose.Words for .NET használatával. Lépésről lépésre szóló utasítások a hiperhivatkozások cseréjéhez. |
-| [Az Egyesítési mezők átnevezése](./rename-merge-fields/) | Ebből az oktatóanyagból megtudhatja, hogyan nevezheti át a dokumentum egyesített mezőit az Aspose.Words for .NET használatával. |
+| [Az egyesítési mezők átnevezése](./rename-merge-fields/) | Ebből az oktatóanyagból megtudhatja, hogyan nevezheti át a dokumentum egyesített mezőit az Aspose.Words for .NET használatával. |
 | [Mező eltávolítása](./remove-field/) | Ebből az útmutatóból megtudhatja, hogyan törölhet egy adott mezőt egy dokumentumban az Aspose.Words for .NET használatával. |
 | [TOA mező beszúrása Dokumentumkészítő nélkül](./insert-toafield-without-document-builder/) | Lépésről lépésre útmutató a TOA mező beszúrásához Document Builder nélkül az Aspose.Words for .NET használatával. |
 | [Beágyazott mezők beszúrása](./insert-nested-fields/) | Ismerje meg, hogyan illeszthet be egyszerűen beágyazott mezőket Word-dokumentumaiba az Aspose.Words for .NET segítségével. |

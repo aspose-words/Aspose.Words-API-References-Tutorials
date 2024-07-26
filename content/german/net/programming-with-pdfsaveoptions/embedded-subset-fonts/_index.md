@@ -2,94 +2,84 @@
 title: Einbetten von Teilmengen von Schriftarten in PDF-Dokumente
 linktitle: Einbetten von Teilmengen von Schriftarten in PDF-Dokumente
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Einbetten von Schriftart-Teilmengen in ein PDF-Dokument mit Aspose.Words für .NET.
+description: Reduzieren Sie die PDF-Dateigröße, indem Sie mit Aspose.Words für .NET nur die erforderlichen Schriftartenuntergruppen einbetten. Folgen Sie unserer Schritt-für-Schritt-Anleitung, um Ihre PDFs effizient zu optimieren.
 type: docs
 weight: 10
 url: /de/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
+## Einführung
 
-Dieser Artikel enthält eine Schritt-für-Schritt-Anleitung zur Verwendung der Funktion zum Einbetten von Schriftart-Teilmengen mit Aspose.Words für .NET. Wir werden jeden Teil des Codes im Detail erklären. Am Ende dieses Tutorials werden Sie wissen, wie Sie Schriftart-Teilmengen in ein Dokument einbetten und ein PDF generieren, das nur die im Dokument verwendeten Glyphen enthält.
+Ist Ihnen schon einmal aufgefallen, dass manche PDF-Dateien viel größer sind als andere, selbst wenn sie ähnliche Inhalte enthalten? Der Übeltäter liegt oft in den Schriftarten. Das Einbetten von Schriftarten in eine PDF-Datei stellt sicher, dass sie auf jedem Gerät gleich aussieht, kann aber auch die Dateigröße aufblähen. Glücklicherweise bietet Aspose.Words für .NET eine praktische Funktion, um nur die erforderlichen Schriftartenuntergruppen einzubetten und so Ihre PDFs schlank und effizient zu halten. Dieses Tutorial führt Sie Schritt für Schritt durch den Vorgang.
 
-Stellen Sie vor dem Start sicher, dass Sie die Aspose.Words für .NET-Bibliothek in Ihrem Projekt installiert und konfiguriert haben. Sie finden die Bibliothek und Installationsanweisungen auf der Aspose-Website.
+## Voraussetzungen
 
-## Schritt 1: Dokumentverzeichnis festlegen
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
- Zunächst müssen Sie den Pfad zum Verzeichnis angeben, in dem sich Ihre Dokumente befinden. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis.
+-  Aspose.Words für .NET: Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/).
+- .NET-Umgebung: Stellen Sie sicher, dass Sie über eine funktionierende .NET-Entwicklungsumgebung verfügen.
+- Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen das Folgen.
+
+## Namespaces importieren
+
+Um Aspose.Words für .NET zu verwenden, müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren. Fügen Sie diese oben in Ihrer C#-Datei hinzu:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## Schritt 2: Dokument hochladen
+## Schritt 1: Dokument laden
 
-Als nächstes müssen wir das Dokument laden, das wir verarbeiten möchten. In diesem Beispiel gehen wir davon aus, dass das Dokument „Rendering.docx“ heißt und sich im angegebenen Dokumentenverzeichnis befindet.
+ Zuerst müssen wir das Word-Dokument laden, das wir in PDF konvertieren möchten. Dies geschieht mit dem`Document` Klasse bereitgestellt durch Aspose.Words.
 
 ```csharp
+// Der Pfad zum Dokumentverzeichnis.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Schritt 3: Konfigurieren Sie die Optionen zum Speichern als PDF
+ Dieser Codeausschnitt lädt das Dokument unter`dataDir` . Achten Sie darauf, zu ersetzen`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokument.
 
- Um ein PDF zu erstellen, das nur die Teilmengen der im Dokument verwendeten Schriftarten enthält, müssen wir die`PdfSaveOptions` Objekt mit dem`EmbedFullFonts` Eigenschaft festgelegt auf`false`.
+## Schritt 2: PDF-Speicheroptionen konfigurieren
+
+ Als nächstes konfigurieren wir die`PdfSaveOptions` um sicherzustellen, dass nur die erforderlichen Schriftuntergruppen eingebettet werden. Durch die Einstellung`EmbedFullFonts` Zu`false`weisen wir Aspose.Words an, nur die im Dokument verwendeten Glyphen einzubetten.
 
 ```csharp
+// Das Ausgabe-PDF enthält Teilmengen der Schriftarten im Dokument.
+// In den PDF-Schriftarten sind nur die im Dokument verwendeten Glyphen enthalten.
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## Schritt 4: Dokument als PDF mit Schriftuntergruppen speichern
+Dieser kleine, aber entscheidende Schritt trägt dazu bei, die PDF-Dateigröße erheblich zu reduzieren.
 
- Abschließend können wir das Dokument unter Verwendung der Schriftuntergruppen als PDF speichern. Geben Sie den Ausgabedateinamen und die`saveOptions` Objekt, das wir im vorherigen Schritt konfiguriert haben.
+## Schritt 3: Speichern Sie das Dokument als PDF
 
-```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-```
-
-Das ist alles! Sie haben erfolgreich Teilmengen von Schriftarten in ein Dokument eingebettet und mit Aspose.Words für .NET ein PDF generiert, das nur die im Dokument verwendeten Glyphen enthält.
-
-### Beispielquellcode zum Einbetten von Schriftart-Subsets mit Aspose.Words für .NET
+ Abschließend speichern wir das Dokument als PDF mit dem`Save` Methode, indem die konfigurierte`PdfSaveOptions`.
 
 ```csharp
-
-	// Der Pfad zum Dokumentverzeichnis.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Das Ausgabe-PDF enthält Teilmengen der Schriftarten im Dokument.
-	// In den PDF-Schriftarten sind nur die im Dokument verwendeten Glyphen enthalten.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);
 ```
+
+ Dieser Code erzeugt eine PDF-Datei mit dem Namen`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf` im angegebenen Verzeichnis, wobei nur die erforderlichen Schriftarten-Untermengen eingebettet sind.
 
 ## Abschluss
 
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Schriftuntergruppen in ein PDF-Dokument einbettet. Das Einbetten von Schriftuntergruppen hilft, die Größe der PDF-Datei zu reduzieren und gleichzeitig das Erscheinungsbild des Dokuments beizubehalten, indem nur die tatsächlich verwendeten Zeichen verwendet werden. Dies gewährleistet eine bessere Kompatibilität und Leistung beim Anzeigen und Drucken der PDF-Datei. Erkunden Sie die Funktionen von Aspose.Words für .NET weiter, um die Generierung Ihrer PDF-Dokumente mit eingebetteten Schriftuntergruppen zu optimieren.
+Und da haben Sie es! Indem Sie diese einfachen Schritte befolgen, können Sie die Größe Ihrer PDF-Dateien effizient reduzieren, indem Sie mit Aspose.Words für .NET nur die erforderlichen Schriftartenuntergruppen einbetten. Dies spart nicht nur Speicherplatz, sondern sorgt auch für schnellere Ladezeiten und eine bessere Leistung, insbesondere bei Dokumenten mit umfangreichen Schriftarten.
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F: Was bedeutet das Einbetten von Schriftarten-Teilmengen in ein PDF-Dokument?
-A: Beim Einbetten von Schriftuntergruppen in ein PDF-Dokument werden nur die im Dokument verwendeten Glyphen und nicht alle vollständigen Schriftarten einbezogen. Dadurch wird die Größe der PDF-Datei reduziert, da nur die Schriftdaten einbezogen werden, die zur Anzeige der tatsächlich im Dokument verwendeten Zeichen erforderlich sind.
+### Warum sollte ich in eine PDF-Datei nur Schriftarten-Untergruppen einbetten?
+Durch das Einbetten nur der erforderlichen Schriftartenuntergruppen kann die PDF-Dateigröße erheblich reduziert werden, ohne das Erscheinungsbild und die Lesbarkeit des Dokuments zu beeinträchtigen.
 
-#### F: Was ist der Unterschied zwischen dem Einbetten vollständiger Schriftarten und dem Einbetten von Schriftartenteilmengen?
-A: Vollständige Schriftarteinbettung bedeutet, dass alle im Dokument verwendeten Schriftarten in die PDF-Datei aufgenommen werden. Dadurch wird sichergestellt, dass das Dokument genau so angezeigt wird, wie es entworfen wurde. Die Größe der PDF-Datei kann jedoch zunehmen. Im Gegensatz dazu enthält die Einbettung von Schriftartuntergruppen nur die im Dokument verwendeten Glyphen. Dadurch wird die Größe der PDF-Datei reduziert, die Möglichkeit, das Erscheinungsbild des Dokuments exakt zu reproduzieren, wenn später zusätzliche Zeichen hinzugefügt werden, ist jedoch eingeschränkt.
+### Kann ich bei Bedarf wieder auf die Einbettung vollständiger Schriftarten zurückgreifen?
+ Ja, das können Sie. Stellen Sie einfach die`EmbedFullFonts`Eigentum an`true` im`PdfSaveOptions`.
 
-#### F: Wie kann ich mit Aspose.Words für .NET Schriftarten-Teilmengen in ein PDF-Dokument einbetten?
-A: Um Schriftarten-Teilmengen mit Aspose.Words für .NET in ein PDF-Dokument einzubetten, folgen Sie diesen Schritten:
+### Unterstützt Aspose.Words für .NET andere PDF-Optimierungsfunktionen?
+Auf jeden Fall! Aspose.Words für .NET bietet eine Reihe von Optionen zur Optimierung von PDFs, einschließlich Bildkomprimierung und Entfernen nicht verwendeter Objekte.
 
- Legen Sie den Dokumentverzeichnispfad fest, indem Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad Ihres Dokumentverzeichnisses.
+### Welche Schriftarten können mit Aspose.Words für .NET eingebettet werden?
+Aspose.Words für .NET unterstützt die Einbettung von Teilmengen für alle im Dokument verwendeten TrueType-Schriftarten.
 
- Laden Sie das zu verarbeitende Dokument mit dem`Document` Klasse und der Dokumentpfad.
-
- Konfigurieren Sie PDF-Speicheroptionen, indem Sie eine Instanz des`PdfSaveOptions` Klasse und Festlegen der`EmbedFullFonts`Eigentum an`false`Dadurch wird sichergestellt, dass nur die im Dokument verwendeten Schriftartenuntergruppen in die PDF-Datei aufgenommen werden.
-
- Speichern Sie das Dokument im PDF-Format mit den eingebetteten Schriftuntergruppen mithilfe des`Save` Methode der`Document` Objekt, das den Namen der Ausgabedatei und die zuvor konfigurierten Speicheroptionen angibt.
-
-#### F: Welche Vorteile bietet das Einbetten von Schriftarten-Untergruppen in ein PDF-Dokument?
-A: Das Einbetten von Schriftarten-Untergruppen in ein PDF-Dokument bietet folgende Vorteile:
-
-Reduzierte PDF-Dateigröße: Durch die Einbeziehung nur der im Dokument verwendeten Glyphen wird die PDF-Dateigröße im Vergleich zum Einbetten vollständiger Schriftarten reduziert.
-
-Beibehaltung des Erscheinungsbilds des Dokuments: Die in der PDF-Datei enthaltenen Schriftarten-Untermengen ermöglichen es, das Erscheinungsbild des Dokuments nur mit den tatsächlich verwendeten Zeichen zu reproduzieren.
-
-Kompatibilität mit den Einschränkungen der Lizenz: Das Einbetten von Schriftarten-Teilmengen kann in Fällen vorzuziehen sein, in denen vollständige Schriftarten aufgrund von Lizenzbeschränkungen nicht legal eingebettet werden können.
+### Wie kann ich überprüfen, welche Schriftarten in meinem PDF eingebettet sind?
+Sie können die PDF-Datei in Adobe Acrobat Reader öffnen und die Eigenschaften unter der Registerkarte „Schriftarten“ überprüfen, um die eingebetteten Schriftarten anzuzeigen.

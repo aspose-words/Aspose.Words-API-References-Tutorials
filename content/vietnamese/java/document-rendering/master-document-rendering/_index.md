@@ -125,7 +125,7 @@ primaryFooter.appendChild(footerPara);
 
 ## Kết xuất tài liệu
 
-Khi bạn đã xử lý và sửa đổi tài liệu, đã đến lúc hiển thị nó thành nhiều định dạng đầu ra khác nhau. Aspose.Words hỗ trợ hiển thị thành PDF, XPS, hình ảnh và các định dạng khác.
+Khi bạn đã xử lý và sửa đổi tài liệu, đã đến lúc hiển thị nó thành nhiều định dạng đầu ra khác nhau. Aspose.Words hỗ trợ hiển thị sang PDF, XPS, hình ảnh và các định dạng khác.
 
 ### Hiển thị sang các định dạng đầu ra khác nhau
 

@@ -20,7 +20,7 @@ Dipnotlar ve son notlar, bir belge içinde ek bilgi sağlamanın bir yolu olarak
 
 2. Alıntı Yönetimi: Kaynaklardan alıntı yapmak için standart bir yol sağlar, belgenizin güvenilirliğini artırır ve okuyucuların sağlanan bilgileri doğrulamasına olanak tanır.
 
-3. Kısa ve Öz Sunum: Ana metinde uzun açıklamalara yer vermek yerine, dipnotlar ve son notlar aracılığıyla, akıcı bir yazı stilini koruyarak açıklamalar ve ayrıntılar verebilirsiniz.
+3. Kısa Sunum: Ana metinde uzun açıklamalara yer vermek yerine, dipnotlar ve son notlar aracılığıyla, akıcı bir yazı stilini koruyarak açıklamalar ve ayrıntılar verebilirsiniz.
 
 ## Aspose.Words for Python ile Dipnot ve Sonnot Ekleme
 
@@ -74,7 +74,7 @@ Dipnotları ve son notları programlı olarak şu şekilde yönetebilirsiniz:
 - Dipnotları kısa ve alakalı tutun
 - Daha kapsamlı açıklamalar için son notları kullanın
 - Tutarlı biçimlendirmeyi koruyun
-- Alıntıların doğruluğunu iki kez kontrol edin
+- Doğruluk için alıntıları iki kez kontrol edin
 
 ## Yaygın Sorunları Giderme
 

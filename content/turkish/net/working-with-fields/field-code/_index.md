@@ -30,7 +30,7 @@ Document doc = new Document(dataDir + "Hyperlinks.docx");
 
 ## 3. Adım: Belge Alanlarına Göz Atın
 
- Bir kullanıyoruz`foreach` Belgede bulunan tüm alanlar arasında geçiş yapmak için döngü.
+ Bir kullanıyoruz`foreach` Belgede bulunan tüm alanlar arasında döngü yapmak için döngü.
 
 ```csharp
 foreach(Field field in doc.Range.Fields)
@@ -69,7 +69,7 @@ Bu, Aspose.Words for .NET ile "Alan Kodunu Al" özelliğinin kullanımına iliş
 
 #### S: Aspose.Words for .NET kullanarak bir Word belgesine nasıl alan ekleyebilirim?
 
- C: Aspose.Words for .NET kullanarak bir Word belgesine alan eklemek için`DocumentBuilder.InsertField` Uygun alan kodunu belirten yöntem. Örneğin şunları kullanabilirsiniz:`builder.InsertField("MERGEFIELD CustomerName")` Belgeye bir birleştirme alanı eklemek için.
+ C: Aspose.Words for .NET kullanarak bir Word belgesine alan eklemek için`DocumentBuilder.InsertField` Uygun alan kodunu belirten yöntem. Örneğin, kullanabilirsiniz`builder.InsertField("MERGEFIELD CustomerName")` Belgeye bir birleştirme alanı eklemek için.
 
 #### S: Aspose.Words for .NET kullanarak bir belgedeki alanları nasıl güncelleyebilirim?
 

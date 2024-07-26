@@ -28,7 +28,7 @@ Aspose.Words for Java 是一個基於 Java 的 API，可讓您有效率地處理
 
 1. 在您最喜歡的整合開發環境 (IDE) 中建立一個新的 Java 專案。
 
-2. 將 Aspose.Words JAR 檔案加入專案的類別路徑。
+2. 將 Aspose.Words JAR 檔案加入到專案的類別路徑中。
 
 3. 在 Java 程式碼中匯入必要的 Aspose.Words 類別。
 

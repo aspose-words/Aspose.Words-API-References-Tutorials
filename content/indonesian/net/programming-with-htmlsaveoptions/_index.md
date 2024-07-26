@@ -16,12 +16,12 @@ Apakah Anda ingin mengonversi dokumen Word ke HTML untuk ditampilkan di web, men
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Ekspor Informasi Pulang Pergi](./export-roundtrip-information/) | Panduan langkah demi langkah untuk mengekspor informasi pulang pergi saat menyimpan dokumen sebagai HTML dengan Aspose.Words untuk .NET. |
-| [Ekspor Font Sebagai Basis 64](./export-fonts-as-base-64/) | Panduan langkah demi langkah untuk mengekspor font base 64 saat menyimpan dokumen dengan Aspose.Words untuk .NET. |
-| [Ekspor Sumber Daya](./export-resources/) | Panduan langkah demi langkah untuk mengekspor sumber daya dokumen saat menyimpan sebagai HTML dengan Aspose.Words untuk .NET. |
+| [Ekspor Informasi Pulang Pergi](./export-roundtrip-information/) | Pelajari cara mengekspor informasi pulang pergi menggunakan Aspose.Words untuk .NET. Pertahankan integritas dan format dokumen Anda selama konversi. |
+| [Ekspor Font Sebagai Basis 64](./export-fonts-as-base-64/) | Pelajari cara mengekspor font sebagai Base64 menggunakan Aspose.Words untuk .NET dalam tutorial mendetail ini. Pastikan font tertanam dan ditampilkan dengan benar dalam file HTML. |
+| [Ekspor Sumber Daya](./export-resources/) | Pelajari cara mengekspor sumber daya seperti CSS dan font sambil menyimpan dokumen Word sebagai HTML menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami. |
 | [Konversi Metafile Ke Emf Atau Wmf](./convert-metafiles-to-emf-or-wmf/) | Panduan langkah demi langkah untuk mengonversi metafile ke format EMF atau WMF saat mengonversi dokumen ke HTML dengan Aspose.Words untuk .NET. |
-| [Konversi Metafile Ke Svg](./convert-metafiles-to-svg/) | Panduan langkah demi langkah untuk mengonversi metafile ke format SVG saat mengonversi dokumen ke HTML dengan Aspose.Words untuk .NET. |
-| [Tambahkan Awalan Nama Kelas Css](./add-css-class-name-prefix/) | Panduan langkah demi langkah untuk menambahkan awalan nama kelas CSS saat mengonversi dokumen ke HTML dengan Aspose.Words untuk .NET. |
-| [Ekspor Url Cid Untuk Sumber Daya Mhtml](./export-cid-urls-for-mhtml-resources/) | Panduan langkah demi langkah untuk mengekspor URL CID sumber daya MHTML saat menyimpan dokumen dengan Aspose.Words untuk .NET. |
-| [Selesaikan Nama Font](./resolve-font-names/) | Panduan langkah demi langkah untuk mengatasi nama font yang hilang saat mengonversi ke HTML dengan Aspose.Words untuk .NET. |
-| [Ekspor Bidang Formulir Input Teks Sebagai Teks](./export-text-input-form-field-as-text/) | Panduan langkah demi langkah untuk mengekspor bidang formulir input teks sebagai teks biasa dengan Aspose.Words untuk .NET. |
+| [Konversi Metafile Ke Svg](./convert-metafiles-to-svg/) | Konversikan metafile ke SVG di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Sempurna untuk pengembang dari semua tingkatan. |
+| [Tambahkan Awalan Nama Kelas Css](./add-css-class-name-prefix/) | Pelajari cara menambahkan awalan nama kelas CSS saat menyimpan dokumen Word sebagai HTML menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah, cuplikan kode, dan FAQ disertakan. |
+| [Ekspor Url Cid Untuk Sumber Daya Mhtml](./export-cid-urls-for-mhtml-resources/) | Pelajari cara mengekspor URL Cid untuk sumber daya MHTML menggunakan Aspose.Words untuk .NET dalam tutorial langkah demi langkah ini. Sempurna untuk pengembang dari semua tingkatan. |
+| [Selesaikan Nama Font](./resolve-font-names/) | Pelajari cara mengatasi nama font di dokumen Word saat mengonversi ke HTML menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah dengan penjelasan mendetail. |
+| [Ekspor Bidang Formulir Input Teks Sebagai Teks](./export-text-input-form-field-as-text/) | Pelajari cara mengekspor bidang formulir masukan teks sebagai teks biasa menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. |

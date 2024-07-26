@@ -2,7 +2,7 @@
 title: Плавающая позиция стола
 linktitle: Плавающая позиция стола
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как расположить таблицу в плавающем положении в документе Word с помощью Aspose.Words для .NET.
+description: Узнайте, как разместить таблицу в плавающем положении в документе Word с помощью Aspose.Words для .NET.
 type: docs
 weight: 10
 url: /ru/net/programming-with-tables/floating-table-position/

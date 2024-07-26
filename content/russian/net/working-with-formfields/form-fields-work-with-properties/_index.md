@@ -50,7 +50,7 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 
 Вот и все! Вы успешно работали со свойствами полей формы в документе Word, используя Aspose.Words для .NET.
 
-### Пример исходного кода для работы с полями формы со свойствами с использованием Aspose.Words для .NET
+### Пример исходного кода для работы полей формы со свойствами с использованием Aspose.Words для .NET
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

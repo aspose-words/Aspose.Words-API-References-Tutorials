@@ -2,59 +2,110 @@
 title: Inhoudsbeheer wissen
 linktitle: Inhoudsbeheer wissen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de inhoud van een besturingselement in een Word-document wist met Aspose.Words voor .NET.
+description: Leer hoe u de inhoudscontrole in een Word-document kunt wissen met Aspose.Words voor .NET met onze stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-sdt/clear-contents-control/
 ---
+## Invoering
 
-Deze tutorial laat zien hoe u de inhoud van een SDT in een Word-document kunt wissen met Aspose.Words voor .NET. Als u de inhoud van een SDT wist, worden alle tekst of onderliggende knooppunten binnen het inhoudsbesturingselement verwijderd.
+Ben je klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag gaan we onderzoeken hoe je de inhoudscontrole in een Word-document kunt wissen met behulp van deze krachtige bibliotheek. Laten we aan de slag gaan met een eenvoudig te volgen, stapsgewijze handleiding!
 
 ## Vereisten
-Om deze tutorial te volgen, heb je het volgende nodig:
 
-- Aspose.Words voor .NET-bibliotheek geïnstalleerd.
-- Basiskennis van C# en woordenverwerking met Word-documenten.
+Voordat we beginnen, zorg ervoor dat u aan de volgende vereisten voldoet:
 
-## Stap 1: Stel de documentmap in
- Begin met het instellen van het pad naar uw documentmap. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar de map waar uw document zich bevindt.
+1.  Aspose.Words voor .NET: Download de bibliotheek van[hier](https://releases.aspose.com/words/net/).
+2. .NET Framework: Zorg ervoor dat .NET Framework op uw computer is geïnstalleerd.
+3. IDE: een geïntegreerde ontwikkelomgeving zoals Visual Studio.
+4. Document: een Word-document met gestructureerde documenttags.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
+Als u aan deze vereisten voldoet, bent u helemaal klaar om te beginnen met coderen.
 
-## Stap 2: Laad het document en haal de StructuredDocumentTag op
- Laad het Word-document met behulp van de`Document` constructor, waarbij het pad naar het document als parameter wordt doorgegeven. Haal vervolgens het gewenste op`StructuredDocumentTag`uit het document. In dit voorbeeld gaan we ervan uit dat de SDT het eerste onderliggende knooppunt in het document is.
+## Naamruimten importeren
 
-```csharp
-Document doc = new Document(dataDir + "Structured document tags.docx");
-StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
-```
-
-## Stap 3: Wis de inhoud van de StructuredDocumentTag
- Wis de inhoud van de SDT met behulp van de`Clear` methode. Hiermee worden alle tekst- of onderliggende knooppunten binnen het inhoudsbesturingselement verwijderd.
+Om Aspose.Words voor .NET te gebruiken, moet u de benodigde naamruimten importeren. Hier is een kort fragment om u op weg te helpen:
 
 ```csharp
-sdt.Clear();
+using Aspose.Words;
+using Aspose.Words.Markup;
 ```
 
-## Stap 4: Sla het document op
- Sla het gewijzigde document op met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.ClearContentsControl.doc".
+Laten we het proces van het wissen van de inhoudscontrole opsplitsen in gedetailleerde stappen.
 
-```csharp
-doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
+## Stap 1: Stel uw project in
+
+Richt eerst uw projectomgeving in.
+
+1. Open Visual Studio: Start Visual Studio of uw favoriete IDE.
+2.  Maak een nieuw project: Ga naar`File` >`New` >`Project`en selecteer een C#-consoletoepassing.
+3. Installeer Aspose.Words voor .NET: Gebruik NuGet Package Manager om Aspose.Words te installeren. Voer de volgende opdracht uit in de Package Manager Console:
+```sh
+Install-Package Aspose.Words
 ```
 
-### Voorbeeldbroncode voor Clear Contents Control met Aspose.Words voor .NET 
+## Stap 2: Laad het document
 
-```csharp
-	// Pad naar uw documentmap
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
+Laten we vervolgens het Word-document laden dat de gestructureerde documenttags bevat.
 
-	Document doc = new Document(dataDir + "Structured document tags.docx");
-	StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
-	sdt.Clear();
-	doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
-```
+1. Pad naar document: definieer het pad naar uw documentmap.
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
+2.  Laad het document: Gebruik de`Document` klasse om uw Word-document te laden.
+   ```csharp
+   Document doc = new Document(dataDir + "Structured document tags.docx");
+   ```
 
-Dat is het! U hebt de inhoud van een StructuredDocumentTag in uw Word-document met succes gewist met Aspose.Words voor .NET.
+## Stap 3: Toegang tot gestructureerde documenttag
+
+Laten we nu toegang krijgen tot de gestructureerde documenttag (SDT) in het document.
+
+1. SDT-knooppunt ophalen: Haal het SDT-knooppunt op uit het document.
+   ```csharp
+   StructuredDocumentTag sdt = (StructuredDocumentTag)doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
+   ```
+
+## Stap 4: Wis de inhoud van SDT
+
+Wis de inhoud van de gestructureerde documenttag.
+
+1.  SDT-inhoud wissen: gebruik de`Clear` methode om de inhoud te verwijderen.
+   ```csharp
+   sdt.Clear();
+   ```
+
+## Stap 5: Sla het document op
+
+Sla ten slotte het gewijzigde document op.
+
+1. Document opslaan: sla het document op met een nieuwe naam om het originele bestand te behouden.
+   ```csharp
+   doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
+   ```
+
+## Conclusie
+
+Gefeliciteerd! U hebt het inhoudsbeheer in een Word-document met succes gewist met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het manipuleren van Word-documenten een fluitje van een cent. Door deze stappen te volgen, kunt u eenvoudig gestructureerde documenttags in uw projecten beheren.
+
+## Veelgestelde vragen
+
+### Wat is Aspose.Words voor .NET?
+
+Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten binnen het .NET-framework.
+
+### Kan ik Aspose.Words gratis gebruiken?
+
+ Aspose.Words biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/).
+
+### Hoe krijg ik ondersteuning voor Aspose.Words?
+
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap[hier](https://forum.aspose.com/c/words/8).
+
+### Wat zijn gestructureerde documenttags?
+
+Gestructureerde documenttags (SDT's) zijn inhoudsbesturingselementen in Word-documenten die fungeren als tijdelijke aanduidingen voor specifieke soorten inhoud.
+
+### Waar kan ik de documentatie voor Aspose.Words vinden?
+
+ De documentatie is beschikbaar[hier](https://reference.aspose.com/words/net/).

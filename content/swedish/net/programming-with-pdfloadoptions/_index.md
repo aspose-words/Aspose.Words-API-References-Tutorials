@@ -16,5 +16,5 @@ Med dessa handledningar kommer du att kunna optimera processen för att ladda PD
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Ladda krypterad pdf](./load-encrypted-pdf/) | Steg-för-steg guide för att ladda en krypterad PDF med Aspose.Words för .NET. |
-| [Ladda sidintervall av pdf](./load-page-range-of-pdf/) | Steg-för-steg-guide för att ladda ett specifikt PDF-sidintervall med Aspose.Words för .NET. |
+| [Ladda krypterad pdf](./load-encrypted-pdf/) | Lär dig hur du laddar krypterade PDF-filer med Aspose.Words för .NET med vår steg-för-steg handledning. Bemästra PDF-kryptering och dekryptering på nolltid. |
+| [Ladda sidintervall av pdf](./load-page-range-of-pdf/) | Lär dig hur du laddar specifika sidintervall från en PDF-fil med Aspose.Words för .NET i denna omfattande, steg-för-steg handledning. Perfekt för .NET-utvecklare. |

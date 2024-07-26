@@ -17,7 +17,7 @@ Az oktatóanyag követéséhez a következőkre van szükség:
 - C# és XML alapismeretek.
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
- Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"`annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
+ Kezdje a dokumentumkönyvtár elérési útjának beállításával. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` annak a könyvtárnak a tényleges elérési útjával, ahová a dokumentumot menteni szeretné.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## 3. lépés: Adjon hozzá egy StructuredDocumentTag-et (SDT) a dokumentumhoz
- Add hozzá a`StructuredDocumentTag` a dokumentumhoz, hogy tartalomvezérlőként szolgáljon. Adja meg a`SdtType` mint`PlainText` és a`MarkupLevel` mint`Block` blokk szintű SDT létrehozásához.
+ Add hozzá a`StructuredDocumentTag` dokumentumhoz, hogy tartalomvezérlőként szolgáljon. Adja meg a`SdtType` mint`PlainText` és a`MarkupLevel` mint`Block` blokk szintű SDT létrehozásához.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

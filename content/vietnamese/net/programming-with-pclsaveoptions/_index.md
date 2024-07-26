@@ -14,4 +14,4 @@ Hướng dẫn Aspose.Words for .NET cung cấp cho bạn một nguồn tài ngu
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Rasterize các phần tử đã chuyển đổi](./rasterize-transformed-elements/) | Tìm hiểu cách tắt tính năng rasterization của các phần tử đã chuyển đổi khi chuyển đổi sang định dạng PCL bằng Aspose.Words cho .NET. |
+| [Rasterize các phần tử đã chuyển đổi](./rasterize-transformed-elements/) | Tìm hiểu cách rasterize các phần tử đã chuyển đổi khi chuyển đổi tài liệu Word sang định dạng PCL bằng Aspose.Words cho .NET. Hướng dẫn từng bước bao gồm. |

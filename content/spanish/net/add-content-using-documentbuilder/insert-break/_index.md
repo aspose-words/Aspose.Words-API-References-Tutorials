@@ -106,7 +106,7 @@ Por último, pero no menos importante, debemos guardar nuestro documento. Aquí 
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-¡Y ahí lo tienes! Creó exitosamente un documento de Word e insertó saltos de página usando Aspose.Words para .NET.
+¡Y ahí lo tienes! Ha creado con éxito un documento de Word e insertado saltos de página usando Aspose.Words para .NET.
 
 ## Conclusión
 

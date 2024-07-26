@@ -2,7 +2,7 @@
 title: Woordenverwerking met lettertypen
 linktitle: Woordenverwerking met lettertypen
 second_title: Aspose.Words-API voor documentverwerking
-description: In de tutorials over Woordenverwerking met lettertypen leert u hoe u met lettertypen in Word kunt werken met Aspose.Words voor .NET. Opmaak, vervangingen, meldingen en meer.
+description: In de zelfstudies Woordenverwerking met lettertypen leert u hoe u met lettertypen in Word kunt werken met Aspose.Words voor .NET. Opmaak, vervangingen, meldingen en meer.
 type: docs
 weight: 420
 url: /nl/net/working-with-fonts/

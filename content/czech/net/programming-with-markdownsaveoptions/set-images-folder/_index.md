@@ -2,60 +2,114 @@
 title: Nastavte složku obrázků
 linktitle: Nastavte složku obrázků
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak nastavit složku obrázků při exportu do Markdown pomocí Aspose.Words for .NET. Upravte umístění obrázků pro lepší organizaci a integraci.
+description: Převeďte dokumenty aplikace Word do formátu Markdown se správným zarovnáním tabulek pomocí Aspose.Words for .NET. Pro dokonalé výsledky postupujte podle našeho podrobného průvodce.
 type: docs
 weight: 10
 url: /cs/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
+## Úvod
 
-Zde je průvodce krok za krokem, který vysvětluje následující zdrojový kód C#, který pomáhá nastavit složku obrázků pro možnosti exportu Markdown pomocí knihovny Aspose.Words pro .NET. Před použitím tohoto kódu se ujistěte, že jste do projektu zahrnuli knihovnu Aspose.Words.
+Chtěli jste někdy exportovat dokument aplikace Word do formátu Markdown a zároveň zajistit, aby byly tabulky a obsah dokonale zarovnány? Aspose.Words for .NET je vaším řešením pro tento úkol. V tomto článku vás provedeme procesem nastavení Aspose.Words, přípravou dokumentu a jeho exportem do Markdown se správným zarovnáním obsahu tabulky. Každý krok rozebereme, aby se dal snadno sledovat a pochopit. Pojďme se tedy ponořit a přeměnit vaše dokumenty Wordu na krásně zarovnané soubory Markdown!
 
-## Krok 1: Nastavte cestu k adresáři dokumentu
+## Předpoklady
+
+Než začneme, ujistěte se, že máte následující:
+
+-  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Platná licence: Získejte bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+- Visual Studio: Nebo jakékoli jiné IDE, které podporuje vývoj .NET.
+- Základní znalost C#: Pochopení programovacího jazyka C#.
+
+## Importovat jmenné prostory
+
+Chcete-li začít, budete muset importovat potřebné jmenné prostory do svého projektu C#. Tyto jmenné prostory vám umožní přístup k funkcím Aspose.Words.
 
 ```csharp
-// Cesta k adresáři dokumentů.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.IO;
 ```
 
-Ujistěte se, že jste zadali správnou cestu k adresáři dokumentů, kde je umístěn dokument obsahující obrázky.
+## Krok 1: Nastavte svůj projekt
 
-## Krok 2: Vložte dokument obsahující obrázky
+Nejprve nastavte svůj .NET projekt ve vašem IDE. Vytvořte novou konzolovou aplikaci a přidejte odkaz na Aspose.Words for .NET.
+
+### 1.1 Vytvořte nový projekt
+
+Otevřete Visual Studio a vytvořte nový projekt aplikace konzoly. Pojmenujte to "MarkdownExporter" nebo něco podobného.
+
+### 1.2 Přidat odkaz Aspose.Words
+
+ Chcete-li přidat Aspose.Words do svého projektu, můžete si stáhnout DLL z[Aspose webové stránky](https://releases.aspose.com/words/net/) a přidejte jej ručně nebo použijte NuGet Package Manager:
+
+```bash
+Install-Package Aspose.Words
+```
+
+## Krok 2: Napište kód pro export jako Markdown
+
+Nyní napíšeme kód pro čtení dokumentu aplikace Word a uložíme jej jako soubor Markdown se správným zarovnáním tabulky.
+
+### 2.1 Definujte cestu k vašemu dokumentu
+
+Nastavte cestu k dokumentu aplikace Word a složku, kam chcete obrázky uložit.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
+```
+
+### 2.2 Vložte dokument
+
+Načtěte dokument aplikace Word pomocí Aspose.Words.
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-Zadaný dokument, který obsahuje obrázky, které chceme exportovat, načteme pomocí možností Markdown.
+### 2.3 Konfigurace možností uložení Markdown
 
-## Krok 3: Nastavte složku obrázků pro možnosti exportu Markdown
+ Nakonfigurujte`MarkdownSaveOptions` určit, kam mají být obrázky uloženy.
 
 ```csharp
-MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
+MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
+{
+    ImagesFolder = dataDir + "Images"
+};
 ```
 
- Vytvoříme instanci`MarkdownSaveOptions` a nastavte cestu ke složce obrázků pomocí`ImagesFolder` vlastnictví. Ujistěte se, že jste zadali správnou cestu ke složce, kam chcete uložit exportované obrázky.
+### 2.4 Uložte dokument jako Markdown
 
-## Krok 4: Uložte dokument pomocí možností exportu Markdown
+ Použijte a`MemoryStream` pro uložení dokumentu ve formátu Markdown.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())
-     doc. Save(stream, saveOptions);
+{
+    doc.Save(stream, saveOptions);
+}
 ```
 
-Dokument uložíme do paměťového toku pomocí zadaných možností exportu Markdown. Tok pak můžete použít k provádění dalších operací, jako je ukládání obsahu Markdown do souboru.
+## Závěr
 
-### Příklad zdrojového kódu pro nastavení složky obrázků pro MarkdownSaveOptions s Aspose.Words pro .NET
+Export dokumentu Word do Markdown se zarovnáním obsahu tabulky pomocí Aspose.Words for .NET je jednoduchý, když budete postupovat podle těchto kroků. Pomocí několika řádků kódu můžete automatizovat proces převodu a zajistit, aby byl váš obsah dobře naformátován. Nyní můžete snadno sdílet své dokumenty ve formátu Markdown s vědomím, že budou vypadat skvěle a zachovají si svou strukturu.
 
-```csharp
-// Cesta k adresáři dokumentů.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+## FAQ
 
-Document doc = new Document(dataDir + "Image bullet points.docx");
+### Mohu používat Aspose.Words pro .NET s jinými programovacími jazyky?
 
-MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
+Ano, Aspose.Words for .NET lze použít s jakýmkoli jazykem kompatibilním s .NET, jako je VB.NET, F# a další.
 
-using (MemoryStream stream = new MemoryStream())
-     doc. Save(stream, saveOptions);
-```
+### Jak získám dočasnou licenci pro Aspose.Words?
 
-Tento zdrojový kód ukazuje, jak načíst dokument, který obsahuje obrázky, a poté nastavit složku obrázků pro možnosti exportu Markdown. Pomocí zadaných možností se pak dokument uloží do paměti. To vám umožní přizpůsobit umístění složky obrázků při exportu obsahu Markdown.
+ Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+
+### Jaké typy dokumentů mohu převést na Markdown?
+
+Můžete převádět různé dokumenty aplikace Word včetně .doc, .docx, .rtf a dalších.
+
+### Existují nějaká omezení ve zkušební verzi Aspose.Words?
+
+Zkušební verze má určitá omezení, jako jsou vodoznaky ve výstupních souborech. Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+
+### Kde najdu další příklady a dokumentaci pro Aspose.Words?
+
+ Podrobnou dokumentaci a příklady naleznete na[Aspose webové stránky](https://reference.aspose.com/words/net/).

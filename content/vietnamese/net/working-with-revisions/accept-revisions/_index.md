@@ -2,7 +2,7 @@
 title: Chấp nhận sửa đổi
 linktitle: Chấp nhận sửa đổi
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chấp nhận bản sửa đổi đối với tài liệu Word bằng Aspose.Words for .NET
+description: Tìm hiểu cách chấp nhận bản sửa đổi đối với tài liệu Word bằng Aspose.Words cho .NET
 type: docs
 weight: 10
 url: /vi/net/working-with-revisions/accept-revisions/
@@ -15,7 +15,7 @@ Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách chấp nh
 Trong ví dụ này, chúng tôi đang tạo một tài liệu và thêm nội dung. Chúng tôi sử dụng một số đoạn văn để minh họa những thay đổi và sửa đổi. Đây là cách thực hiện:
 
 ```csharp
-//Đường dẫn đến thư mục tài liệu.
+// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;

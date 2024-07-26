@@ -2,94 +2,86 @@
 title: Gömülü Arial ve Times Roman Yazı Tiplerini Atlayarak PDF Boyutunu Optimize Edin
 linktitle: Gömülü Arial ve Times Roman Yazı Tiplerini Atlayarak PDF Boyutunu Optimize Edin
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile Arial ve Times Roman yazı tiplerini gömmeden optimize edilmiş PDF oluşturmak için adım adım kılavuz.
+description: Aspose.Words for .NET'i kullanarak gömülü Arial ve Times Roman yazı tiplerini atlayarak PDF boyutunu optimize edin. PDF dosyalarınızı kolaylaştırmak için bu adım adım kılavuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
+## giriiş
 
-Bu makale, Aspose.Words for .NET ile gömülü Arial ve Times Roman yazı tiplerini meta dosya boyutuna atlayarak PDF boyutunu optimize etme özelliğinin nasıl kullanılacağı hakkında adım adım bir kılavuz sağlar. Kodun her bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, bir belgede yazı tipi gömme modu seçeneğini nasıl yapılandıracağınızı ve Arial ve Times Roman yazı tiplerini gömmeden PDF oluşturmayı anlayabileceksiniz.
+Hiç kendinizi PDF dosya boyutunun çok büyük olduğu bir durumda buldunuz mu? Bu, tatile hazırlanırken valizinizin dikiş yerlerinden patladığını fark etmek gibidir. Biraz kilo vermen gerektiğini biliyorsun ama neyden vazgeçiyorsun? PDF dosyalarıyla, özellikle de Word belgelerinden dönüştürülenlerle çalışırken, gömülü yazı tipleri dosya boyutunuzu şişirebilir. Neyse ki Aspose.Words for .NET, PDF'lerinizi sade ve anlamlı tutmak için şık bir çözüm sunuyor. Bu eğitimde, gömülü Arial ve Times Roman yazı tiplerini atlayarak PDF boyutunuzu nasıl optimize edebileceğinizi ele alacağız. Başlayalım!
 
-Başlamadan önce projenize Aspose.Words for .NET kütüphanesini kurup yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
+## Önkoşullar
 
-## 1. Adım: Belge dizinini tanımlayın
+İşin özüne geçmeden önce ihtiyacınız olacak birkaç şey var:
+-  Aspose.Words for .NET: Bu güçlü kütüphanenin kurulu olduğundan emin olun. Değilse, adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+- Temel C# anlayışı: Bu, kod parçacıklarını takip etmenize yardımcı olacaktır.
+- Bir Word belgesi: Süreci göstermek için örnek bir belge kullanacağız. 
 
- Başlamak için belgelerinizin bulunduğu dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarının içe aktarıldığından emin olun. Bu, Aspose.Words işlevlerine erişim için zemin hazırlar.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Tamam, süreci adım adım inceleyelim.
+
+## 1. Adım: Ortamınızı Kurun
+
+Başlamak için geliştirme ortamınızı ayarlamanız gerekir. Favori C# IDE'nizi (Visual Studio gibi) açın ve yeni bir proje oluşturun.
+
+## Adım 2: Word Belgesini Yükleyin
+
+Bir sonraki adım, PDF'ye dönüştürmek istediğiniz Word belgesini yüklemektir. Belgenizin doğru dizinde olduğundan emin olun.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 2. Adım: Belgeyi yükleyin
-
-Daha sonra işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte belgenin "Rendering.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. Adım: Yazı tipi yerleştirmeyle PDF olarak kaydetme seçeneklerini yapılandırın
+ Bu kod parçasında değiştirin`"YOUR DOCUMENT DIRECTORY"` belge dizininizin yolu ile.
 
- Arial ve Times Roman yazı tiplerini oluşturulan PDF'ye yerleştirmeyi atlamak için,`PdfSaveOptions` nesneyi ayarlayın ve`FontEmbeddingMode`mülkiyet`PdfFontEmbeddingMode.EmbedAll`.
+## 3. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
+
+Şimdi, yazı tiplerinin nasıl gömüleceğini kontrol etmek için PDF kaydetme seçeneklerini yapılandırmamız gerekiyor. Varsayılan olarak tüm yazı tipleri gömülüdür ve bu da dosya boyutunu artırabilir. Bu ayarı değiştireceğiz.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll
+};
 ```
 
-## 4. Adım: Belgeyi gömülü yazı tipleri olmadan PDF olarak kaydedin
+## Adım 4: Belgeyi PDF olarak kaydedin
 
-Son olarak daha önce yapılandırdığımız kaydetme seçeneklerini kullanarak belgeyi PDF formatında kaydedebiliriz.
+Son olarak, belirtilen kaydetme seçenekleriyle belgeyi PDF olarak kaydedin. Sihir yapılan yer burasıdır.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-Bu kadar ! Aspose.Words for .NET'i kullanarak Arial ve Times Roman yazı tiplerini gömmeden başarıyla PDF oluşturdunuz.
-
-### Aspose.Words for .NET ile meta dosya boyutunda gömülü Arial ve Times Roman yazı tiplerini atlamak için örnek kaynak kodu
-
-```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
-   
-```
+Bu komut, belgenizi belirtilen dizine "OptimizedPDF.pdf" adlı bir PDF olarak kaydeder.
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak Arial ve Times Roman yazı tiplerinin PDF belgesine yerleştirilmesinin nasıl devre dışı bırakılacağını açıkladık. Belirtilen adımları izleyerek, bu belirli yazı tiplerini gömmeden bir PDF dosyası oluşturabilirsiniz; bu, dosya boyutunun küçültülmesine ve farklı platformlar arasında daha iyi belge uyumluluğu sağlanmasına yardımcı olabilir. Bu özelliği kullanırken yazı tipi yerleştirmeyi devre dışı bırakmanın sonuçlarını dikkate aldığınızdan emin olun. PDF dosyalarınızın oluşturulmasını optimize etmek için Aspose.Words for .NET'in diğer özelliklerini keşfetmekten çekinmeyin.
+İşte buyur! Aspose.Words for .NET kullanarak Arial ve Times Roman yazı tiplerini ekleme işlemini atlayarak PDF dosya boyutunuzu nasıl optimize edeceğinizi öğrendiniz. Bu basit ayar, dosya boyutlarınızı önemli ölçüde azaltarak paylaşmalarını ve saklamalarını kolaylaştırabilir. Bu, PDF'leriniz için spor salonuna gitmek, tüm temel özellikleri korurken gereksiz ağırlıklardan kurtulmak gibidir.
 
-### Sıkça Sorulan Sorular
+## SSS'ler
 
-#### S: Arial ve Times Roman yazı tipinin PDF belgesine yerleştirilmesini devre dışı bırakmak nedir ve neden önemlidir?
-C: Arial ve Times Roman yazı tiplerinin PDF belgesine yerleştirilmesinin devre dışı bırakılması, bu yazı tiplerinin oluşturulan PDF dosyasına dahil edilmemesi işlemidir. Bu, PDF okuyucu sistemlerinde halihazırda yaygın olarak bulunan yazı tiplerini dahil etmekten kaçınarak PDF dosyasının boyutunu azaltmak açısından önemli olabilir. Ayrıca, PDF belgesinin farklı cihazlar ve platformlar arasında daha iyi uyumluluğunun ve tutarlı görünümünün sağlanmasına da yardımcı olabilir.
+### Arial ve Times Roman yazı tiplerini eklemeyi neden atlamalıyım?
+Çoğu sistemde bu yazı tipleri zaten yüklü olduğundan, bu yaygın yazı tiplerini atlamak PDF dosya boyutunuzu azaltabilir.
 
-#### S: Aspose.Words for .NET'i Arial ve Times Roman yazı tiplerini PDF belgesine gömmeyecek şekilde nasıl yapılandırabilirim?
-C: Aspose.Words for .NET'i Arial ve Times Roman yazı tiplerini PDF belgesine yerleştirmeyecek şekilde yapılandırmak için şu adımları izleyin:
+### Bu, PDF'imin görünümünü etkiler mi?
+Hayır, olmayacak. Arial ve Times Roman standart yazı tipleri olduğundan görünüm farklı sistemlerde tutarlı kalır.
 
- Belgelerinizin bulunduğu dizin yolunu değiştirerek ayarlayın.`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+### Diğer yazı tiplerini de yerleştirmeyi atlayabilir miyim?
+Evet, gerekirse diğer yazı tiplerini eklemeyi atlamak için kaydetme seçeneklerini yapılandırabilirsiniz.
 
- İşlemek istediğiniz belgeyi kullanarak yükleyin.`Document` sınıf ve belirtilen belge yolu.
+### Aspose.Words for .NET ücretsiz mi?
+Aspose.Words for .NET, indirebileceğiniz ücretsiz bir deneme sürümü sunuyor[Burada](https://releases.aspose.com/) , ancak tam erişim için bir lisans satın almanız gerekir[Burada](https://purchase.aspose.com/buy).
 
- Bir örneğini oluşturun`PdfSaveOptions` sınıfı seçin ve ayarlayın`FontEmbeddingMode`mülkiyet`PdfFontEmbeddingMode.EmbedAll`. Bu, Arial ve Times Roman dışındaki tüm yazı tiplerini oluşturulan PDF dosyasına gömecektir.
-
- Kullan`Save` yöntemi`Document` Daha önce yapılandırılan kaydetme seçeneklerini belirterek belgeyi PDF formatında kaydetmek için nesneyi seçin.
-
-#### S: Bir PDF belgesine Arial ve Times Roman yazı tipi yerleştirmeyi devre dışı bırakmanın faydaları nelerdir?
-C: Bir PDF belgesine Arial ve Times Roman yazı tipi yerleştirmeyi devre dışı bırakmanın faydaları şunlardır:
-
-PDF dosya boyutunun küçültülmesi: Arial ve Times Roman gibi yaygın olarak bulunan yazı tiplerinin yerleştirilmesinden kaçınılarak, PDF dosya boyutu küçültülebilir, böylece dosyaların saklanması, paylaşılması ve aktarılması daha kolay hale gelir.
-
-Daha iyi uyumluluk: PDF okuyucu sistemlerinde yaygın olarak bulunan yazı tiplerini kullanarak, belgenin farklı cihaz ve platformlarda daha iyi uyumluluğunu ve görünümünü sağlarsınız.
-
-#### S: Arial ve Times Roman yazı tiplerinin bir PDF belgesine yerleştirilmesini devre dışı bırakmanın sonuçları nelerdir?
-C: Arial ve Times Roman yazı tiplerinin PDF belgesine yerleştirilmesinin devre dışı bırakılmasının sonuçları aşağıdaki gibidir:
-
-Farklı görünüm: PDF'nin açıldığı sistemde Arial ve Times Roman yazı tipleri bulunmuyorsa yedek yazı tipleri kullanılacaktır, bu da istenilenden farklı bir görünüme neden olabilir.
-
-Okunabilirlik sorunları: Kullanılan yedek yazı tipleri, orijinal yazı tipleri kadar okunabilir olmayabilir ve bu da belgenin okunabilirliğini etkileyebilir.
+### Aspose.Words for .NET hakkında daha fazla eğitimi nerede bulabilirim?
+ Kapsamlı belgeler ve eğitimler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

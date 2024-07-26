@@ -39,7 +39,7 @@ Mielőtt belemerülne a kódba, állítsa be a dokumentumkönyvtár elérési ú
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENT DIRECTORY"` tényleges elérési úttal, ahová a PDF-dokumentumot menteni szeretné.
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahová a PDF-dokumentumot menteni szeretné.
 
 ## 2. lépés: Hozzon létre egy új dokumentumot
 
@@ -98,4 +98,4 @@ Teljesen! Az Aspose.Words különféle típusú hivatkozásokat támogat, beleé
 
 ### Hol találhatok részletesebb dokumentációt az Aspose.Words for .NET-ről?
 
- A részletes dokumentációt megtalálod[itt](https://reference.aspose.com/words/net/).
+ A részletes dokumentációt megtalálja[itt](https://reference.aspose.com/words/net/).

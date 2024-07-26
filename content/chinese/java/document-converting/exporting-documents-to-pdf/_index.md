@@ -51,7 +51,7 @@ doc.save("output.pdf", saveOptions);
 
 ## 结论
 
-使用 Aspose.Words for Java 将文档导出为 PDF 是一个简单而有效的过程。这个强大的 API 为您提供了轻松自动执行文档转换任务的工具。现在，您可以轻松地以 PDF 格式存档、共享或打印您的文档。
+使用 Aspose.Words for Java 将文档导出为 PDF 是一个简单而有效的过程。这个强大的 API 为您提供了轻松自动执行文档转换任务的工具。现在，您可以轻松地以 PDF 格式存档、共享或打印文档。
 
 ## 常见问题解答
 

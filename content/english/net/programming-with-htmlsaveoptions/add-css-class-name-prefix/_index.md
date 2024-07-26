@@ -2,71 +2,128 @@
 title: Add Css Class Name Prefix
 linktitle: Add Css Class Name Prefix
 second_title: Aspose.Words Document Processing API
-description: Step-by-step guide to add a CSS class name prefix when converting a document to HTML with Aspose.Words for .NET.
+description: Learn how to add a CSS class name prefix when saving Word documents as HTML using Aspose.Words for .NET. Step-by-step guide, code snippets, and FAQs included.
 type: docs
 weight: 10
 url: /net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
+## Introduction
 
-In this tutorial, we will walk you through the C# source code to add a CSS class name prefix with Aspose.Words for .NET. This feature allows you to add a custom prefix to generated CSS class names when converting a document to HTML.
+Welcome! If you're diving into the world of Aspose.Words for .NET, you're in for a treat. Today, we’ll explore how to add a CSS class name prefix when saving a Word document as HTML using Aspose.Words for .NET. This feature is super handy when you want to avoid class name conflicts in your HTML files.
 
-## Step 1: Project Setup
+## Prerequisites
 
-To get started, create a new C# project in your favorite IDE. Make sure the Aspose.Words for .NET library is referenced in your project.
+Before we get started, make sure you have the following:
 
-## Step 2: Loading the document
+- Aspose.Words for .NET: If you haven’t installed it yet, [download it here](https://releases.aspose.com/words/net/).
+- Development Environment: Visual Studio or any other C# IDE.
+- A Word Document: We'll be using a document named `Rendering.docx`. Place it in your project directory.
 
-In this step, we will load the Word document that we want to convert to HTML. Use the following code to load the document:
+## Import Namespaces
+
+First, ensure you have the necessary namespaces imported into your C# project. Add these at the top of your code file:
 
 ```csharp
-// Path to the documents directory.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Now, let's dive into the step-by-step guide!
+
+## Step 1: Set Up Your Project
+
+Before we can start adding a CSS class name prefix, let's set up our project.
+
+### Step 1.1: Create a New Project
+
+Fire up your Visual Studio and create a new Console App project. Name it something catchy like `AsposeCssPrefixExample`.
+
+### Step 1.2: Add Aspose.Words for .NET
+
+If you haven’t already, add Aspose.Words for .NET to your project via NuGet. Simply open the NuGet Package Manager Console and run:
+
+```bash
+Install-Package Aspose.Words
+```
+
+Great! Now, we’re ready to start coding.
+
+## Step 2: Load Your Document
+
+The first thing we need to do is load the Word document we want to convert to HTML.
+
+### Step 2.1: Define the Document Path
+
+Set up the path to your document directory. For the sake of this tutorial, let's assume your document is in a folder named `Documents` within your project directory.
+
+```csharp
+string dataDir = @"C:\YourProject\Documents\";
+```
+
+### Step 2.2: Load the Document
+
+Now, let's load the document using Aspose.Words:
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-Replace `"YOUR DOCUMENTS DIRECTORY"` with the actual path of the directory where your document is located.
+## Step 3: Configure HTML Save Options
 
-## Step 3: Set HTML save options
+Next, we need to configure the HTML save options to include a CSS class name prefix.
 
-Now let's set the HTML save options, including CSS stylesheet type and CSS class name prefix. Use the following code:
+### Step 3.1: Create HTML Save Options
+
+Instantiate the `HtmlSaveOptions` object and set the CSS style sheet type to `External`.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions
 {
-     CssStyleSheetType = CssStyleSheetType.External,
-     CssClassNamePrefix = "pfx_"
+    CssStyleSheetType = CssStyleSheetType.External
 };
 ```
 
-This code creates an instance of `HtmlSaveOptions` and sets `CssStyleSheetType` to `CssStyleSheetType.External` to generate an external CSS style sheet, and `CssClassNamePrefix` to `"pfx_"` to prefix `"pfx_"` to names CSS class.
+### Step 3.2: Set CSS Class Name Prefix
 
-## Step 4: Converting and saving the document to HTML
+Now, let’s set the `CssClassNamePrefix` property to your desired prefix. For this example, we'll use `"pfx_"`.
 
-Finally, we'll convert the document to HTML using the HTML save options defined earlier. Use the following code:
+```csharp
+saveOptions.CssClassNamePrefix = "pfx_";
+```
+
+## Step 4: Save the Document as HTML
+
+Finally, let's save the document as an HTML file with our configured options.
+
+
+Specify the output HTML file path and save the document.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
 ```
 
-This code converts the document to HTML and saves it to a file with the CSS class name prefix added.
+## Step 5: Verify the Output
 
-### Example source code for Add Css Class Name Prefix using Aspose.Words for .NET
+After running your project, navigate to your `Documents` folder. You should find an HTML file named `WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html`. Open this file in a text editor or browser to verify that the CSS classes have the prefix `pfx_`.
 
-```csharp
+## Conclusion
 
-	// The path to the documents directory.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
+And there you have it! By following these steps, you've successfully added a CSS class name prefix to your HTML output using Aspose.Words for .NET. This simple yet powerful feature can help you maintain clean and conflict-free styles in your HTML documents.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions
-	{
-		CssStyleSheetType = CssStyleSheetType.External, CssClassNamePrefix = "pfx_"
-	};
-	
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", saveOptions);
+## FAQ's
 
-```
+### Can I use a different prefix for each save operation?
+Yes, you can customize the prefix each time you save a document by changing the `CssClassNamePrefix` property.
 
-Be sure to specify the correct document path in the `dataDir` variable.
+### Does this method support inline CSS?
+The `CssClassNamePrefix` property works with external CSS. For inline CSS, you'll need a different approach.
 
-You have now learned how to add a CSS class name prefix when converting a document to HTML using Aspose.Words for .NET. Following the step-by-step guide step provided in this tutorial, you can customize the CSS class names in your converted HTML documents.
+### How can I include other HTML save options?
+You can configure various properties of `HtmlSaveOptions` to customize your HTML output. Check the [documentation](https://reference.aspose.com/words/net/) for more details.
+
+### Is it possible to save the HTML to a stream?
+Absolutely! You can save the document to a stream by passing the stream object to the `Save` method.
+
+### How do I get support if I run into issues?
+You can get support from the [Aspose forum](https://forum.aspose.com/c/words/8).

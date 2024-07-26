@@ -17,7 +17,7 @@ Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 - Connaissance de base de C# et XML.
 
 ## Étape 1 : configurer le répertoire de documents
- Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
+ Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Étape 3 : ajouter un StructuredDocumentTag (SDT) au document
- Ajouter un`StructuredDocumentTag` au document pour servir de contrôle de contenu. Spécifie le`SdtType` comme`PlainText` et le`MarkupLevel` comme`Block` pour créer un SDT au niveau du bloc.
+ Ajouter un`StructuredDocumentTag`au document pour servir de contrôle de contenu. Spécifie le`SdtType` comme`PlainText` et le`MarkupLevel` comme`Block` pour créer un SDT au niveau du bloc.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

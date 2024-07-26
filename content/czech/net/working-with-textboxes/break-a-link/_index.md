@@ -26,7 +26,7 @@ TextBox textBox = shape.TextBox;
 
 ## Krok 3: Přerušit odkaz v textovém poli
 
- K přerušení dopředného odkazu v TextBoxu můžeme použít`BreakForwardLink()` metoda. Tato metoda přeruší vazbu na další obrazec v sekvenci. Následující kód ukazuje, jak přerušit dopředný odkaz:
+ K přerušení dopředného odkazu v TextBoxu můžeme použít`BreakForwardLink()` metoda. Tato metoda přeruší vazbu na další tvar v sekvenci. Následující kód ukazuje, jak přerušit dopředný odkaz:
 
 ```csharp
 textBox.BreakForwardLink();
@@ -73,11 +73,11 @@ gratuluji! Nyní jste se naučili, jak přerušit odkazy přesměrování v doku
 
 #### Otázka: Jaká knihovna se používá k přerušení odkazů přesměrování v dokumentu aplikace Word pomocí Aspose.Words for .NET?
 
-Odpověď: Chcete-li přerušit odkazy přesměrování v dokumentu aplikace Word pomocí Aspose.Words pro .NET, použije se knihovna Aspose.Words for .NET.
+Odpověď: Chcete-li přerušit odkazy přesměrování v dokumentu aplikace Word pomocí Aspose.Words pro .NET, použitá knihovna je Aspose.Words pro .NET.
 
 #### Otázka: Jak přerušit přesměrování v textovém poli?
 
- A: Chcete-li přerušit odkaz vpřed v textovém poli, můžete použít`BreakForwardLink()` metoda. Tato metoda přeruší vazbu na další obrazec v sekvenci.
+ A: Chcete-li přerušit odkaz vpřed v textovém poli, můžete použít`BreakForwardLink()` metoda. Tato metoda přeruší vazbu na další tvar v sekvenci.
 
 #### Otázka: Jak přerušit odkaz přesměrování nastavením hodnoty null?
 

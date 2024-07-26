@@ -53,7 +53,7 @@ Ebben az oktatóanyagban megtanultuk, hogyan töltheti le a revíziócsoportokat
 
 #### K: Hogyan lehet dokumentumot feltölteni az Aspose.Words for .NET-be?
 
- V: Használja a`Document` osztályú Aspose.Words .NET-hez a dokumentum fájlból való betöltéséhez. Megadhatja a dokumentum teljes elérési útját.
+ V: Használja a`Document` osztályú Aspose.Words .NET-hez a dokumentum fájlból való betöltéséhez. Megadhatja a teljes dokumentum elérési utat.
 
 ```csharp
 Document doc = new Document("path/to/the/document.docx");
@@ -72,7 +72,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 #### K: Hogyan lehet elérni az Aspose.Words for .NET-ben egy áttekintő csoport szerzőjét?
 
- V: Használja a`Author` tulajdona a`RevisionGroup` tiltakozik a revíziócsoport szerzőjének lekérésére.
+ V: Használja a`Author` tulajdona a`RevisionGroup` tiltakozik a felülvizsgálati csoport szerzőjének lekérésére.
 
 ```csharp
 string author = group.Author;

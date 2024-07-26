@@ -21,7 +21,7 @@ Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách tạo bảng đượ
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Tạo tài liệu và khởi tạo trình tạo tài liệu
+//Tạo tài liệu và khởi tạo trình tạo tài liệu
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

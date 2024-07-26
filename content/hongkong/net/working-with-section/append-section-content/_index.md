@@ -102,7 +102,7 @@ doc.Save("output.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功操作了 Word 文件中的各個部分。本教程涵蓋了創建文件、添加部分以及操作其內容的基礎知識。使用 Aspose.Words，您可以執行更複雜的操作，因此請毫不猶豫地探索[API文件](https://reference.aspose.com/words/net/)以獲得更高級的功能。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功操作了 Word 文件中的各個部分。本教程涵蓋了創建文件、添加部分以及操作其內容的基礎知識。使用 Aspose.Words，您可以執行更複雜的操作，因此請毫不猶豫地探索[API文件](https://reference.aspose.com/words/net/)以獲得更高級的功能。
 
 ## 常見問題解答
 

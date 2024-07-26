@@ -16,7 +16,7 @@ Dokumen Microsoft Word sering kali memerlukan konten dinamis seperti tanggal, pe
 
 ## Memahami Bidang Dokumen Word
 
-Bidang adalah tempat penampung dalam dokumen yang menampilkan data secara dinamis. Mereka dapat digunakan untuk berbagai tujuan seperti menampilkan tanggal saat ini, referensi silang konten, atau melakukan penghitungan.
+Bidang adalah tempat penampung dalam dokumen yang menampilkan data secara dinamis. Mereka dapat digunakan untuk berbagai tujuan seperti menampilkan tanggal saat ini, referensi silang konten, atau melakukan perhitungan.
 
 ## Memasukkan Bidang Sederhana
 

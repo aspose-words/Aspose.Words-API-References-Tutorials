@@ -367,7 +367,7 @@ Aspose.Words untuk Java menawarkan fitur-fitur canggih untuk manipulasi dokumen 
 
 - Jaga agar kode Anda tetap modular dan terorganisir dengan baik untuk memudahkan pemeliharaan.
 - Gunakan komentar untuk menjelaskan logika kompleks dan meningkatkan keterbacaan kode.
-- Lihat dokumentasi Aspose.Words untuk Java secara teratur untuk pembaruan dan sumber daya tambahan.
+- Rujuk dokumentasi Aspose.Words untuk Java secara teratur untuk pembaruan dan sumber daya tambahan.
 
 ## Memecahkan Masalah Umum
 

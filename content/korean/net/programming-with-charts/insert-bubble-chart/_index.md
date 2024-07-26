@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 분명히. 이 가이드에서는 C#을 사용하지만 Aspose.Words for .NET은 VB.NET과 같은 다른 .NET 언어와 호환됩니다.
 
-### .NET용 Aspose.Words의 무료 평가판을 받으려면 어떻게 해야 합니까?
+### .NET용 Aspose.Words 무료 평가판을 받으려면 어떻게 해야 합니까?
 
  다음에서 무료 평가판을 받을 수 있습니다.[웹사이트](https://releases.aspose.com/). 이를 통해 구매하기 전에 기능을 테스트해 볼 수 있습니다.
 

@@ -14,13 +14,13 @@ Dalam tutorial ini, Anda akan mempelajari cara menggunakan LoadOptions untuk mem
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Perbarui Bidang Kotor di Dokumen Word](./update-dirty-fields/) | Pelajari cara memuat dokumen Word dengan memperbarui bidang kotor dengan Aspose.Words untuk .NET. |
-| [Muat Terenkripsi Dalam Dokumen Word](./load-encrypted-document/) | Pelajari cara memuat dan menyimpan dokumen Word yang dienkripsi dengan Aspose.Words untuk .NET. |
-| [Ubah Bentuk Menjadi Matematika Office](./convert-shape-to-office-math/) | Pelajari cara mengonversi bentuk ke rumus matematika Office saat mengunggah dokumen dengan Aspose.Words untuk .NET. |
-| [Atur Versi Ms Word](./set-ms-word-version/) | Pelajari cara memuat dokumen dengan versi MS Word tertentu menggunakan Aspose.Words untuk .NET. |
-| [Gunakan Folder Temp Di Dokumen Word](./use-temp-folder/) | Pelajari cara menggunakan folder sementara saat mengunggah dokumen dengan Aspose.Words untuk .NET. |
-| [Panggilan Balik Peringatan Dalam Dokumen Word](./warning-callback/) | Pelajari cara menangani peringatan saat memuat dokumen Word menggunakan fungsionalitas panggilan balik dengan Aspose.Words untuk .NET. |
-| [Muat Dengan Pengkodean Dalam Dokumen Word](./load-with-encoding/) | Pelajari cara memuat dokumen dengan pengkodean tertentu dalam dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Lewati Gambar Pdf](./skip-pdf-images/) | Pelajari cara memuat dokumen PDF tanpa memuat gambar PDF dengan Aspose.Words untuk .NET. |
-| [Konversi Metafile Ke PNG](./convert-metafiles-to-png/) | Pelajari cara mengonversi metafile ke gambar PNG saat mengunggah dokumen dengan Aspose.Words untuk .NET. |
-| [Muat File Chm Dalam Dokumen Word](./load-chm/) | Pelajari cara memuat file CHM di dokumen Word dengan Aspose.Words untuk .NET. |
+| [Perbarui Bidang Kotor di Dokumen Word](./update-dirty-fields/) | Perbarui bidang kotor di dokumen Word Anda dengan mudah menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. |
+| [Muat Terenkripsi Dalam Dokumen Word](./load-encrypted-document/) | Pelajari cara memuat dan menyimpan dokumen Word terenkripsi menggunakan Aspose.Words untuk .NET. Amankan dokumen Anda dengan kata sandi baru dengan mudah. Panduan langkah demi langkah disertakan. |
+| [Ubah Bentuk Menjadi Matematika Office](./convert-shape-to-office-math/) | Pelajari cara mengonversi bentuk ke Office Math di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan kami. Sempurnakan pemformatan dokumen Anda dengan mudah. |
+| [Atur Versi Ms Word](./set-ms-word-version/) | Pelajari cara mengatur versi MS Word menggunakan Aspose.Words untuk .NET dengan panduan terperinci kami. Sempurna untuk pengembang yang ingin menyederhanakan manipulasi dokumen. |
+| [Gunakan Folder Temp Di Dokumen Word](./use-temp-folder/) | Pelajari cara meningkatkan kinerja aplikasi .NET Anda dengan menggunakan folder sementara saat memuat dokumen Word dengan Aspose.Words. |
+| [Panggilan Balik Peringatan Dalam Dokumen Word](./warning-callback/) | Pelajari cara menangkap dan menangani peringatan di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Pastikan pemrosesan dokumen yang kuat. |
+| [Muat Dengan Pengkodean Dalam Dokumen Word](./load-with-encoding/) | Pelajari cara memuat dokumen Word dengan pengkodean tertentu menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah dengan penjelasan mendetail. |
+| [Lewati Gambar Pdf](./skip-pdf-images/) | Pelajari cara melewati gambar saat memuat dokumen PDF menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah ini untuk ekstraksi teks yang lancar. |
+| [Konversi Metafile Ke PNG](./convert-metafiles-to-png/) | Konversikan metafile ke PNG dengan mudah di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah ini. Sederhanakan pengelolaan dokumen Anda. |
+| [Muat File Chm Dalam Dokumen Word](./load-chm/) | Muat file CHM dengan mudah ke dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah ini. Sempurna untuk menggabungkan dokumentasi teknis Anda. |

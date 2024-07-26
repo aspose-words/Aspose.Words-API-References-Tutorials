@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## Aspose.Words for .NET ile PDF İşleme Uyarılarını İşleme
+## giriiş
 
 Aspose.Words for .NET ile çalışıyorsanız, PDF oluşturma uyarılarını yönetmek, belgelerinizin doğru şekilde işlenmesini ve kaydedilmesini sağlamak için önemli bir husustur. Bu kapsamlı kılavuzda, Aspose.Words kullanarak PDF oluşturma uyarılarının nasıl ele alınacağını açıklayacağız. Bu öğreticinin sonunda, bu özelliği .NET projelerinize nasıl uygulayacağınıza dair net bir anlayışa sahip olacaksınız.
 
@@ -79,7 +79,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 public class HandleDocumentWarnings : IWarningCallback
 {
     /// <özet>
-    /// Bu yöntem, belge işleme sırasında olası bir sorun olduğunda çağrılır.
+    //Bu yöntem, belge işleme sırasında olası bir sorun olduğunda çağrılır.
     /// </özet>
     public void Warning(WarningInfo info)
     {

@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 
 #### Вопрос: Как переименовать объединенные поля в документе Word с помощью Aspose.Words для .NET?
 
- О: Чтобы переименовать объединенные поля в документе Word с помощью Aspose.Words for .NET, вы можете перебирать поля в документе, используя`FieldMergingArgs` класс и используйте`FieldMergingArgs.FieldName` метод переименования поля.
+ О: Чтобы переименовать объединенные поля в документе Word с помощью Aspose.Words for .NET, вы можете перебирать поля в документе, используя команду`FieldMergingArgs` класс и используйте`FieldMergingArgs.FieldName` метод переименования поля.
 
 #### Вопрос: Можно ли переименовать только определенные объединенные поля в документе Word с помощью Aspose.Words for .NET?
 

@@ -72,7 +72,7 @@ doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject
 
 Để kết luận, chúng tôi đã thực hiện hướng dẫn từng bước để chèn đối tượng OLE vào tài liệu Word có gói OLE bằng Aspose.Words cho .NET.
 
-Bằng cách làm theo các bước này, bạn sẽ có thể chèn thành công các đối tượng OLE với các gói OLE vào tài liệu Word của mình bằng Aspose.Words for .NET. Hãy nhớ nhập các tài liệu tham khảo cần thiết và làm theo hướng dẫn cẩn thận để có được kết quả mong muốn.
+Bằng cách làm theo các bước này, bạn sẽ có thể chèn thành công các đối tượng OLE với các gói OLE vào tài liệu Word của mình bằng Aspose.Words cho .NET. Hãy nhớ nhập các tài liệu tham khảo cần thiết và làm theo hướng dẫn cẩn thận để có được kết quả mong muốn.
 
 ### Câu hỏi thường gặp về chèn đối tượng ole vào word bằng gói ole
 

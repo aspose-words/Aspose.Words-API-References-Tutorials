@@ -61,11 +61,11 @@ V tomto tutoriálu jsme viděli, jak používat možnosti načítání s nastave
 
 #### Otázka: Jaká další nastavení písma mohu určit pomocí možností načítání v Aspose.Words?
 
- Odpověď: Kromě zadání výchozího písma můžete také určit další nastavení písma, jako je výchozí kódování, pomocí příslušných vlastností`LoadOptions` třídy, jako je např`DefaultEncoding`.
+ Odpověď: Kromě zadání výchozího písma můžete také určit další nastavení písma, jako je výchozí kódování, pomocí příslušných vlastností`LoadOptions` třídy, jako např`DefaultEncoding`.
 
 #### Otázka: Co se stane, když zadané výchozí písmo není k dispozici při načítání dokumentu?
 
-Odpověď: Pokud zadané výchozí písmo není k dispozici, když je dokument načten v Aspose.Words, použije se pro zobrazení textu v dokumentu náhradní písmo. To může způsobit mírný rozdíl ve vzhledu od původního písma.
+Odpověď: Pokud zadané výchozí písmo není dostupné, když je dokument načten v Aspose.Words, použije se pro zobrazení textu v dokumentu náhradní písmo. To může způsobit mírný rozdíl ve vzhledu od původního písma.
 
 #### Otázka: Mohu zadat různá nastavení písma pro každý nahraný dokument?
 

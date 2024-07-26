@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-Ten kod inicjuje nowy dokument programu Word. Będziesz musiał wymienić`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
+ Ten kod inicjuje nowy dokument programu Word. Będziesz musiał wymienić`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów.
 
 ## Krok 2: Tworzenie obiektu tabeli
 
@@ -71,7 +71,7 @@ Tabela składa się z wierszy i komórek. Dodajmy te elementy krok po kroku.
 // Tutaj moglibyśmy wywołać SureMinimum, aby utworzyć dla nas wiersze i komórki. Ta metoda jest stosowana
 // aby upewnić się, że określony węzeł jest prawidłowy. W takim przypadku prawidłowa tabela powinna zawierać co najmniej jeden wiersz i jedną komórkę.
 // Zamiast tego zajmiemy się tworzeniem wiersza i tabeli samodzielnie.
-//Byłby to najlepszy sposób, aby to zrobić, gdybyśmy tworzyli tabelę wewnątrz algorytmu.
+// Byłby to najlepszy sposób, aby to zrobić, gdybyśmy tworzyli tabelę wewnątrz algorytmu.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

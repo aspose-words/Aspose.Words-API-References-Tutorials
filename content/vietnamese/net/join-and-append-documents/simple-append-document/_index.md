@@ -13,7 +13,7 @@ Này! Bạn đã bao giờ thấy mình cần hợp nhất hai tài liệu Word 
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
 
 1.  Aspose.Words for .NET: Nếu bạn chưa có, hãy tải xuống thư viện từ[đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Bạn có thể sử dụng Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.

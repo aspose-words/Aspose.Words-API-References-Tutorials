@@ -12,4 +12,4 @@ Die Aspose.Words für .NET-Tutorials zur Textverarbeitung mit OfficeMath führen
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Mathematische Gleichungen](./math-equations/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET mathematische Gleichungen zu Ihren Word-Dokumenten hinzufügen. |
+| [Mathematische Gleichungen](./math-equations/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET mathematische Gleichungen in Word-Dokumenten konfigurieren. Schritt-für-Schritt-Anleitung mit Beispielen, FAQs und mehr. |

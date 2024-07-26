@@ -21,7 +21,7 @@ Abychom mohli začít sestavovat tabulku, musíme vytvořit nový dokument a ini
 // Cesta k adresáři vašich dokumentů
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Vytvořte dokument a inicializujte generátor dokumentů
+//Vytvořte dokument a inicializujte generátor dokumentů
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Chcete-li ukončit první řádek a začít nový řádek, zavolejte následující metodu
+// Chcete-li ukončit první řádek a začít nový řádek, zavolejte následující metodu
 builder. EndRow();
 
 // Konstrukce první buňky druhé řady
@@ -99,7 +99,7 @@ Nezapomeňte zadat správnou cestu a název souboru pro výstupní dokument.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Signál, že jsme dokončili stavbu stolu.
+	// Signál, že jsme dokončili stavbu stolu.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

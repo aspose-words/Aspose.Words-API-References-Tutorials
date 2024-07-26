@@ -28,7 +28,7 @@ Ismerje meg, hogyan oszthat fel hatékonyan dokumentumokat az Aspose.Words for J
 ### [Dokumentumok felosztása több fájlra](./splitting-documents-into-multiple-files/)
 Fedezze fel az Aspose.Words for Java erejét a dokumentumok több fájlra osztásáról szóló, lépésről lépésre szóló útmutatónkkal. Szerezzen szakértői betekintést és forráskód-példákat.
 ### [Dokumentumok felosztása HTML oldalakra](./splitting-documents-into-html-pages/)
-Ismerje meg, hogyan oszthat fel Word dokumentumokat HTML-oldalakra az Aspose.Words for Java segítségével. A forráskóddal ellátott, lépésről lépésre bemutatott útmutatónk egyszerűvé és hatékonysá teszi a folyamatot. Kezdje el a dokumentumok konvertálását még ma!
+Ismerje meg, hogyan oszthat fel Word dokumentumokat HTML-oldalakra az Aspose.Words for Java segítségével. A forráskóddal ellátott, lépésről lépésre mutató útmutatónk egyszerűvé és hatékonysá teszi a folyamatot. Kezdje el a dokumentumok konvertálását még ma!
 ### [Dokumentumoldalak szétválasztása](./document-page-separation/)
 Ismerje meg, hogyan hajthat végre dokumentumoldal-szétválasztást az Aspose.Words for Java használatával. Ez az átfogó útmutató lépésről lépésre tartalmaz utasításokat és forráskódot a hatékony dokumentumfeldolgozáshoz.
 ### [Dokumentumtartalom kibontása oldalanként](./extracting-document-content-pages/)

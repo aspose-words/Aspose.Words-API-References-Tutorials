@@ -2,7 +2,7 @@
 title: Verwenden von Fußnoten und Endnoten in Aspose.Words für Java
 linktitle: Verwenden von Fußnoten und Endnoten
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
-description: Erfahren Sie, wie Sie Fußnoten und Endnoten in Aspose.Words für Java effektiv verwenden. Verbessern Sie noch heute Ihre Fähigkeiten zur Dokumentformatierung!
+description: Erfahren Sie, wie Sie Fußnoten und Endnoten in Aspose.Words für Java effektiv nutzen. Verbessern Sie noch heute Ihre Fähigkeiten zur Dokumentformatierung!
 type: docs
 weight: 13
 url: /de/java/using-document-elements/using-footnotes-and-endnotes/

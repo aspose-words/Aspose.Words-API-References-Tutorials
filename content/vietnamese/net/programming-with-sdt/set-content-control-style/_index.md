@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Bước 2: Tải tài liệu và truy xuất Kiểm soát nội dung
- Tải tài liệu Word bằng cách sử dụng`Document` hàm tạo, chuyển đường dẫn đến tài liệu dưới dạng tham số. Truy xuất điều khiển nội dung mong muốn từ tài liệu. Trong ví dụ này, chúng tôi giả định rằng điều khiển nội dung là thẻ tài liệu có cấu trúc đầu tiên trong tài liệu.
+ Tải tài liệu Word bằng cách sử dụng`Document`hàm tạo, chuyển đường dẫn đến tài liệu dưới dạng tham số. Truy xuất điều khiển nội dung mong muốn từ tài liệu. Trong ví dụ này, chúng tôi giả định rằng điều khiển nội dung là thẻ tài liệu có cấu trúc đầu tiên trong tài liệu.
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -40,7 +40,7 @@ sdt.Style = style;
 ```
 
 ## Bước 4: Lưu tài liệu
- Lưu tài liệu đã sửa đổi vào thư mục được chỉ định bằng cách sử dụng`Save`phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithSdt.SetContentControlStyle.docx".
+ Lưu tài liệu đã sửa đổi vào thư mục được chỉ định bằng cách sử dụng`Save` phương pháp. Cung cấp tên tệp mong muốn với phần mở rộng tệp thích hợp. Trong ví dụ này, chúng tôi lưu tài liệu dưới dạng "WorkingWithSdt.SetContentControlStyle.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");

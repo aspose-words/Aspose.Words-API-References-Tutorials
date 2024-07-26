@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh-hant/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-在本教程中，我們將探索為 Aspose.Words for .NET 的「偵測帶有空格的編號」功能提供的 C# 原始碼。此功能可讓您從包含清單編號後面接著空格的文字文件中偵測和建立清單。
+在本教學中，我們將探索為 Aspose.Words for .NET 的「偵測空白編號」功能提供的 C# 原始程式碼。此功能可讓您從包含清單編號後面接著空格的文字文件中偵測和建立清單。
 
 ## 第一步：建構環境
 

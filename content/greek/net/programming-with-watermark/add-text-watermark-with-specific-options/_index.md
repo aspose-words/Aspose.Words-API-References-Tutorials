@@ -28,7 +28,7 @@ Document doc = new Document(MyDir + "Document.docx");
 
 ## Βήμα 3: Προσθέστε υδατογράφημα κειμένου με συγκεκριμένες επιλογές
 
- Θα δημιουργήσουμε ένα παράδειγμα του`TextWatermarkOptions`τάξη και ορίστε τις επιθυμητές επιλογές για το υδατογράφημα κειμένου.
+ Θα δημιουργήσουμε ένα παράδειγμα του`TextWatermarkOptions` τάξη και ορίστε τις επιθυμητές επιλογές για το υδατογράφημα κειμένου.
 
 ```csharp
 TextWatermarkOptions options = new TextWatermarkOptions()

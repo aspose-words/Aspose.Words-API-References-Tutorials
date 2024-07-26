@@ -15,7 +15,7 @@ Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
 - Podstawowa znajomość języka programowania C#
 - Zainstalowana biblioteka Aspose.Words dla .NET
-- Skonfigurowano program Visual Studio lub dowolne inne środowisko programistyczne C#
+- Skonfigurowano program Visual Studio lub dowolne inne środowisko programistyczne języka C#
 
 ## Krok 1: Konfigurowanie środowiska
 

@@ -96,7 +96,7 @@ Aspose.Words for .NET은 C#을 사용하여 프로그래밍 방식으로 Word �
 아니요. 정리가 완료되고 문서가 저장되면 변경 사항을 취소할 수 없습니다. 항상 원본 문서의 백업을 보관하세요.
 
 ### .NET용 Aspose.Words에 대한 라이선스가 필요합니까?
- 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license) 또는[하나 구입](https://purchase.aspose.com/buy).
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시면허](https://purchase.aspose.com/temporary-license) 또는[하나 구입](https://purchase.aspose.com/buy).
 
 ### 자세한 정보와 지원은 어디서 찾을 수 있나요?
  자세한 문서를 찾을 수 있습니다[여기](https://reference.aspose.com/words/net/) 그리고 그 곳으로부터 지원을 받아[포럼을 Aspose](https://forum.aspose.com/c/words/8).

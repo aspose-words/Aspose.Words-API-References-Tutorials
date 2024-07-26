@@ -2,7 +2,7 @@
 title: Tetapkan Bahasa Rusia Sebagai Bahasa Pengeditan Default
 linktitle: Tetapkan Bahasa Rusia Sebagai Bahasa Pengeditan Default
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengatur bahasa Rusia sebagai bahasa pengeditan default di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk instruksi terperinci.
+description: Pelajari cara mengatur bahasa Rusia sebagai bahasa pengeditan default di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk petunjuk rinci.
 type: docs
 weight: 10
 url: /id/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/

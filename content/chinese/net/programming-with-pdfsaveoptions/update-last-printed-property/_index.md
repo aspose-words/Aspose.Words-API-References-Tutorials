@@ -2,81 +2,88 @@
 title: 更新 PDF 文档中的上次打印属性
 linktitle: 更新 PDF 文档中的上次打印属性
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 转换为 PDF 时更新“上次打印”属性的分步指南。
+description: 通过我们的分步指南了解如何使用 Aspose.Words for .NET 更新 PDF 文档中最后打印的属性。
 type: docs
 weight: 10
 url: /zh/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
+## 介绍
 
-本文提供了有关如何使用 Aspose.Words for .NET 的 PDF 文档更新功能中的“上次打印”属性的分步指南。我们将详细解释代码的每个部分。在本教程结束时，您将能够了解如何配置在转换为 PDF 时更新“上次打印”属性的选项。
+您是否希望更新 PDF 文档中的上次打印属性？也许您正在管理大量文档，并且需要跟踪上次打印的时间。无论出于何种原因，更新此属性都非常有用，而且使用 Aspose.Words for .NET，这轻而易举！让我们深入了解如何实现这一点。
 
-开始之前，请确保您已在项目中安装并配置了 Aspose.Words for .NET 库。您可以在 Aspose 网站上找到该库和安装说明。
+## 先决条件
 
-## 步骤1：定义文档目录
+在开始之前，请确保您已满足以下先决条件：
 
-首先，您需要定义文档所在目录的路径。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档目录的实际路径。
+-  Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。如果您还没有安装，可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+- 开发环境：像 Visual Studio 这样的开发环境。
+- 对 C# 的基本了解：熟悉一些 C# 将会很有帮助。
+- 文档：您想要转换为 PDF 并更新最后打印属性的 Word 文档。
+
+## 导入命名空间
+
+要在项目中使用 Aspose.Words for .NET，您需要导入必要的命名空间。操作方法如下：
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+让我们将这个过程分解为简单、易于管理的步骤。
+
+## 步骤 1：设置你的项目
+
+首先，让我们设置您的项目。打开 Visual Studio，创建一个新的控制台应用程序（.NET Framework 或 .NET Core），并将其命名为有意义的名称，例如“UpdateLastPrintedPropertyPDF”。
+
+## 第 2 步：安装 Aspose.Words for .NET
+
+接下来，您需要安装 Aspose.Words for .NET 包。您可以通过 NuGet 包管理器执行此操作。在解决方案资源管理器中右键单击您的项目，选择“管理 NuGet 包”，搜索“Aspose.Words”，然后安装它。
+
+## 步骤 3：加载文档
+
+现在，让我们加载要转换为 PDF 的 Word 文档。替换`"YOUR DOCUMENT DIRECTORY"`以及您的文档的路径。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## 第 2 步：上传文件
-
-接下来，我们需要加载要处理的文档。在此示例中，我们假设文档名为“Rendering.docx”，位于指定的文档目录中。
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 步骤 3：配置保存为 PDF 选项并更新“上次打印”属性
+## 步骤 4：配置 PDF 保存选项
 
-为了在转换为 PDF 时启用更新“上次打印”属性，我们需要配置`PdfSaveOptions`对象并设置`UpdateLastPrintedProperty`财产`true`.
+我们需要配置 PDF 保存选项以更新上次打印的属性。创建一个新的实例`PdfSaveOptions`并设置`UpdateLastPrintedProperty`财产`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
+PdfSaveOptions saveOptions = new PdfSaveOptions 
+{ 
+	UpdateLastPrintedProperty = true 
+};
 ```
 
-## 步骤 4：将文档保存为 PDF，并更新“上次打印”属性
+## 步骤 5：将文档保存为 PDF
 
-最后，我们可以使用之前配置的保存选项将文档保存为 PDF 格式。
+最后，将文档保存为具有更新属性的 PDF。指定输出路径和保存选项。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
 ```
 
-就这样！您已成功启用使用 Aspose.Words for .NET 将文档转换为 PDF 时更新“上次打印”属性。
-
-### 使用 Aspose.Words for .NET 更新“上次打印”属性的示例源代码
-
-
-```csharp
-
-	//文档目录的路径。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { UpdateLastPrintedProperty = true };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOptions);
-
-```
 ## 结论
 
-在本教程中，我们解释了如何使用 Aspose.Words for .NET 更新 PDF 文档中的“上次打印”属性。按照给定的步骤，您可以轻松配置在将文档转换为 PDF 时更新“上次打印”属性的选项。使用此功能可以跟踪文档使用情况和相关信息。
+就这样！按照这些步骤，您可以使用 Aspose.Words for .NET 轻松更新 PDF 文档中最后打印的属性。此方法可确保您的文档管理流程保持高效和最新。尝试一下，看看它如何简化您的工作流程。
 
-### 经常问的问题
+## 常见问题解答
 
-#### 问：PDF 文档中的“上次打印”属性是什么？
-答：PDF 文档中的“上次打印”属性是指文档上次打印的日期和时间。此属性可用于跟踪有关文档使用和管理的信息。
+### 什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个强大的库，用于.NET 应用程序中的文档处理任务，包括创建、修改、转换和打印文档。
 
-#### 问：如何使用 Aspose.Words for .NET 更新 PDF 文档中的“上次打印”属性？
-答：要使用 Aspose.Words for .NET 更新 PDF 文档中的“上次打印”属性，请按照以下步骤操作：
+### 为什么要更新 PDF 中最后打印的属性？
+更新最后打印的属性有助于跟踪文档使用情况，特别是在频繁打印文档的环境中。
 
-创建一个实例`Document`指定 Word 文档路径的类。
+### 我可以使用 Aspose.Words for .NET 更新其他属性吗？
+是的，Aspose.Words for .NET 允许您更新各种文档属性，例如作者、标题、主题等。
 
-创建一个实例`PdfSaveOptions`类并设置`UpdateLastPrintedProperty`财产`true`以启用更新“上次打印”属性。
+### Aspose.Words for .NET 免费吗？
+Aspose.Words for .NET 提供免费试用版，您可以下载[这里](https://releases.aspose.com/)。如需延长使用时间，您需要购买许可证。
 
-使用`Save`方法`Document`通过指定保存选项将文档保存为 PDF 格式。
-
-#### 问：如何检查生成的 PDF 文档中的“上次打印”属性是否已更新？
-答：您可以使用兼容的 PDF 查看器（例如 Adobe Acrobat Reader）打开 PDF 文件并查看文档信息，检查生成的 PDF 文档中的“上次打印”属性是否已更新。上次打印的日期和时间应与 PDF 文档的生成日期和时间相对应。
+### 在哪里可以找到有关 Aspose.Words for .NET 的更多文档？
+您可以找到有关 Aspose.Words for .NET 的详细文档[这里](https://reference.aspose.com/words/net/).

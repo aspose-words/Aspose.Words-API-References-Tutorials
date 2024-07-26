@@ -58,7 +58,7 @@ table.preferred_width = doc.page_width
 
 ## Kolombreedtes aanpassen:
 
- Het goed aanpassen van de kolombreedtes zorgt ervoor dat de tabelinhoud netjes en uniform aansluit. U kunt de breedte van individuele kolommen instellen met behulp van de`set_preferred_width` methode.
+ Het goed aanpassen van de kolombreedtes zorgt ervoor dat de tabelinhoud netjes en uniform past. U kunt de breedte van individuele kolommen instellen met behulp van de`set_preferred_width` methode.
 
 ```python
 # Set preferred width for the first column

@@ -41,7 +41,7 @@ using Aspose.Words.Fields;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- แทนที่`"YOUR DOCUMENT DIRECTORY"` พร้อมเส้นทางไปยังโฟลเดอร์เอกสารของคุณ นี่คือที่ที่ไฟล์ Word ของคุณอยู่
+ แทนที่`"YOUR DOCUMENT DIRECTORY"`พร้อมเส้นทางไปยังโฟลเดอร์เอกสารของคุณ นี่คือที่ที่ไฟล์ Word ของคุณอยู่
 
 ## ขั้นตอนที่ 2: โหลดเอกสาร
 

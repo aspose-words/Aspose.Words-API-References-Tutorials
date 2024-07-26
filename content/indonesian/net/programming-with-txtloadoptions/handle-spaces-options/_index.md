@@ -53,7 +53,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- Pada langkah terakhir ini, kami menyimpan dokumen yang dihasilkan dalam format .docx menggunakan`Save` metode dan meneruskan jalur ke file keluaran.
+Pada langkah terakhir ini, kami menyimpan dokumen yang dihasilkan dalam format .docx menggunakan`Save` metode dan meneruskan jalur ke file keluaran.
 
 Sekarang Anda dapat menjalankan kode sumber untuk memuat dokumen teks dengan menentukan opsi penanganan spasi. Dokumen yang dihasilkan akan disimpan di direktori yang ditentukan dengan nama "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx".
 

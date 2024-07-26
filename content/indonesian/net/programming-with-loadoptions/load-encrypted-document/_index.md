@@ -2,38 +2,36 @@
 title: Muat Terenkripsi Dalam Dokumen Word
 linktitle: Muat Dokumen Terenkripsi di Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara memuat dan menyimpan dokumen Word yang dienkripsi dengan Aspose.Words untuk .NET.
+description: Pelajari cara memuat dan menyimpan dokumen Word terenkripsi menggunakan Aspose.Words untuk .NET. Amankan dokumen Anda dengan kata sandi baru dengan mudah. Panduan langkah demi langkah disertakan.
 type: docs
 weight: 10
 url: /id/net/programming-with-loadoptions/load-encrypted-document/
 ---
-Saat Pemrosesan Kata dengan dokumen Word terenkripsi di aplikasi C#, penting untuk dapat memuatnya dengan benar dengan memberikan kata sandi yang benar. Dengan pustaka Aspose.Words untuk .NET, Anda dapat dengan mudah memuat dokumen Word yang dienkripsi menggunakan opsi pemuatan yang sesuai. Dalam panduan langkah demi langkah ini, kami akan menunjukkan kepada Anda cara menggunakan kode sumber C# Aspose.Words untuk .NET untuk memuat dokumen terenkripsi menggunakan opsi pemuatan LoadOptions.
+## Perkenalan
 
-## Memahami perpustakaan Aspose.Words
+Dalam tutorial ini, Anda akan mempelajari cara memuat dokumen Word terenkripsi dan menyimpannya dengan kata sandi baru menggunakan Aspose.Words untuk .NET. Menangani dokumen terenkripsi sangat penting untuk menjaga keamanan dokumen, terutama ketika menangani informasi sensitif.
 
-Sebelum mendalami kodenya, penting untuk memahami pustaka Aspose.Words untuk .NET. Aspose.Words adalah perpustakaan yang kuat untuk membuat, mengedit, mengonversi, dan melindungi dokumen Word di berbagai platform termasuk .NET. Ia menawarkan banyak fitur untuk memanipulasi dokumen, seperti menyisipkan teks, mengubah format, menambahkan bagian, dan banyak lagi.
+## Prasyarat
 
-## Memuat dokumen terenkripsi
+Sebelum memulai, pastikan Anda memiliki hal berikut:
 
-Langkah pertama adalah mengunggah dokumen terenkripsi menggunakan opsi unggahan yang sesuai. Dalam kasus kami, kami menggunakan kelas Dokumen untuk memuat dokumen dengan menentukan jalur dokumen dan kata sandi. Berikut ini contohnya:
+1.  Aspose.Words untuk perpustakaan .NET diinstal. Anda dapat mengunduhnya dari[Di Sini](https://downloads.aspose.com/words/net).
+2.  Lisensi Aspose yang valid. Anda bisa mendapatkan uji coba gratis atau membelinya[Di Sini](https://purchase.aspose.com/buy).
+3. Visual Studio atau lingkungan pengembangan .NET lainnya.
 
-```csharp
-Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
-```
+## Impor Namespace
 
-Dalam contoh ini, kita memuat dokumen "Encrypted.docx" yang terletak di direktori dokumen menggunakan kata sandi "password".
-
-## Menyimpan dokumen terenkripsi
-
-Setelah mengunggah dokumen terenkripsi, Anda juga dapat menyimpannya dengan menentukan kata sandi baru untuk file keluaran. Dalam contoh kita, kita menggunakan kelas OdtSaveOptions untuk menyimpan dokumen dalam format ODT dengan kata sandi baru. Berikut cara melakukannya:
+Untuk memulai, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek Anda:
 
 ```csharp
-doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-Dalam contoh ini, kami menyimpan dokumen dengan nama "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt" dengan menentukan kata sandi baru "kata sandi baru".
+## Langkah 1: Muat Dokumen Terenkripsi
 
-### Contoh kode sumber untuk LoadOptions dengan fungsionalitas "Muat Dokumen Terenkripsi" menggunakan Aspose.Words untuk .NET
+ Pertama, Anda akan memuat dokumen terenkripsi menggunakan`LoadOptions` kelas. Kelas ini memungkinkan Anda menentukan kata sandi yang diperlukan untuk membuka dokumen.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -41,34 +39,34 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Muat dokumen terenkripsi dengan kata sandi yang ditentukan
 Document doc = new Document(dataDir + "Encrypted.docx", new LoadOptions("password"));
+```
 
-//Simpan dokumen terenkripsi dengan kata sandi baru
+## Langkah 2: Simpan Dokumen dengan Kata Sandi Baru
+
+ Selanjutnya, Anda akan menyimpan dokumen yang dimuat sebagai file ODT, kali ini mengatur kata sandi baru menggunakan`OdtSaveOptions` kelas.
+
+```csharp
+// Simpan dokumen terenkripsi dengan kata sandi baru
 doc.Save(dataDir + "WorkingWithLoadOptions.LoadAndSaveEncryptedOdt.odt", new OdtSaveOptions("newpassword"));
 ```
 
 ## Kesimpulan
 
-Dalam panduan ini, kami menjelaskan cara memuat dan menyimpan dokumen terenkripsi menggunakan perpustakaan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang disediakan dan menggunakan kode sumber C# yang disediakan, Anda dapat dengan mudah menerapkan fungsi ini di aplikasi C# Anda. Mengunggah dokumen terenkripsi menjaga data Anda tetap aman dan memungkinkan Anda bekerja dengan dokumen yang dilindungi di Aspose.Words.
+Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat dengan mudah memuat dan menyimpan dokumen Word terenkripsi dengan Aspose.Words untuk .NET. Hal ini memastikan dokumen Anda tetap aman dan hanya dapat diakses oleh individu yang berwenang.
 
+## FAQ
 
-### FAQ untuk memuat terenkripsi dalam dokumen Word
+### Bisakah saya menggunakan Aspose.Words untuk memuat dan menyimpan format file lain?
+Ya, Aspose.Words mendukung berbagai format file termasuk DOC, DOCX, PDF, HTML, dan banyak lagi.
 
-#### T: Apa yang dimaksud dengan dokumen Word terenkripsi?
+### Bagaimana jika saya lupa kata sandi dokumen terenkripsi?
+Sayangnya, jika Anda lupa kata sandinya, Anda tidak akan dapat memuat dokumen tersebut. Pastikan Anda menyimpan kata sandi dengan aman.
 
-J: Dokumen Word terenkripsi adalah file yang telah dilindungi dengan kata sandi untuk membatasi akses tidak sah. Kata sandi ini diperlukan untuk membuka, melihat, atau mengubah konten dokumen.
+### Apakah mungkin untuk menghapus enkripsi dari dokumen?
+Ya, dengan menyimpan dokumen tanpa menentukan kata sandi, Anda dapat menghapus enkripsi.
 
-#### T: Bagaimana Aspose.Words menangani dokumen terenkripsi dalam aplikasi C#?
+### Bisakah saya menerapkan pengaturan enkripsi yang berbeda?
+Ya, Aspose.Words menyediakan berbagai opsi untuk mengenkripsi dokumen, termasuk menentukan berbagai jenis algoritma enkripsi.
 
-J: Aspose.Words untuk .NET menyediakan alat dan fungsionalitas yang diperlukan untuk memuat dokumen Word terenkripsi dengan menentukan kata sandi yang benar, memastikan akses aman ke file yang dilindungi.
-
-#### T: Bisakah saya mengubah kata sandi dokumen terenkripsi menggunakan Aspose.Words?
-
-J: Tentu saja! Aspose.Words memungkinkan Anda menyimpan dokumen terenkripsi dengan kata sandi baru, memberi Anda fleksibilitas untuk memperbarui kata sandi sesuai kebutuhan.
-
-#### T: Algoritme enkripsi apa yang didukung Aspose.Words?
-
-J: Aspose.Words mendukung berbagai algoritma enkripsi, termasuk Advanced Encryption Standard (AES), yang menjamin perlindungan data yang kuat.
-
-#### T: Apakah Aspose.Words kompatibel dengan format dokumen lain selain Word?
-
-J: Ya, Aspose.Words mendukung beragam format dokumen, termasuk PDF, HTML, EPUB, dan banyak lagi, menjadikannya solusi serbaguna untuk pemrosesan dokumen.
+### Apakah ada batasan ukuran dokumen yang dapat dienkripsi?
+Tidak, Aspose.Words dapat menangani dokumen dengan ukuran berapa pun, tergantung pada keterbatasan memori sistem Anda.

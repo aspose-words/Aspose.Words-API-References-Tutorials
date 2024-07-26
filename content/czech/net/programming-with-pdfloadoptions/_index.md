@@ -16,5 +16,5 @@ Pomocí těchto výukových programů budete schopni optimalizovat proces načí
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Načíst šifrované pdf](./load-encrypted-pdf/) | Podrobný průvodce načtením zašifrovaného PDF pomocí Aspose.Words pro .NET. |
-| [Načíst rozsah stránek Pdf](./load-page-range-of-pdf/) | Podrobný průvodce načtením určitého rozsahu stránek PDF pomocí Aspose.Words pro .NET. |
+| [Načíst šifrované pdf](./load-encrypted-pdf/) | Naučte se načítat šifrované soubory PDF pomocí Aspose.Words for .NET pomocí našeho podrobného návodu. Ovládněte šifrování a dešifrování PDF během okamžiku. |
+| [Načíst rozsah stránek Pdf](./load-page-range-of-pdf/) | Naučte se, jak načíst konkrétní rozsahy stránek z PDF pomocí Aspose.Words for .NET v tomto komplexním, podrobném tutoriálu. Ideální pro .NET vývojáře. |

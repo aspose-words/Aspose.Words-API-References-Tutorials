@@ -31,7 +31,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Certifique-se de substituir "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho real para o diretório de documentos.
 
 ## Etapa 3: Encontre tabela, linha e índice de célula
-seguir, encontraremos os índices de tabela, linha e célula no array usando os métodos fornecidos por Aspose.Words for .NET. Use o seguinte código:
+A seguir, encontraremos os índices de tabela, linha e célula no array usando os métodos fornecidos por Aspose.Words for .NET. Use o seguinte código:
 
 ```csharp
 // Encontre o índice da tabela

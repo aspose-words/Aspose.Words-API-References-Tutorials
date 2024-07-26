@@ -39,7 +39,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- แทนที่`"YOUR DOCUMENT DIRECTORY"`ด้วยเส้นทางจริงที่คุณต้องการบันทึกเอกสาร PDF ของคุณ
+ แทนที่`"YOUR DOCUMENT DIRECTORY"` ด้วยเส้นทางจริงที่คุณต้องการบันทึกเอกสาร PDF ของคุณ
 
 ## ขั้นตอนที่ 2: สร้างเอกสารใหม่
 

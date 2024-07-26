@@ -15,7 +15,7 @@ url: /ko/net/working-with-revisions/accept-revisions/
 이 예에서는 문서를 만들고 콘텐츠를 추가합니다. 우리는 변경 사항과 개정 사항을 설명하기 위해 여러 단락을 사용합니다. 방법은 다음과 같습니다.
 
 ```csharp
-//문서 디렉터리의 경로입니다.
+// 문서 디렉터리의 경로입니다.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document();
 Body body = doc.FirstSection.Body;
@@ -153,7 +153,7 @@ doc.StartTrackRevisions("John Doe", DateTime.Now);
 Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
 ```
 
-#### Q: Aspose.Words for .NET을 사용하여 문서의 모든 변경 사항을 어떻게 수락하나요?
+#### Q: Aspose.Words for .NET을 사용하여 문서의 모든 변경 사항을 어떻게 수락합니까?
 
  답변:`AcceptAllRevisions` 의 방법`Document` 문서에 대한 모든 변경 사항을 수락하는 데 반대합니다.
 

@@ -114,7 +114,7 @@ doc.Save(dataDir + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 
 ## 結論
 
-現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 在 Word 文件中顯示和隱藏新增書籤的內容。無論您是自動化報告、建立範本還是只是修改 Word 文件，這個強大的工具都可以讓文件操作變得輕而易舉。快樂編碼！
+現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 在 Word 文件中顯示和隱藏新增書籤的內容。無論您是自動化報告、建立範本還是只是修改 Word 文件，這個強大的工具都可以讓文件操作變得輕而易舉。快樂編碼！
 
 ## 常見問題解答
 

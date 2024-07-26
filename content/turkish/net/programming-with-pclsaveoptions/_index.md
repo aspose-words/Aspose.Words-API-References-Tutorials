@@ -14,4 +14,4 @@ Aspose.Words for .NET eğitimleri, .NET uygulamalarınızda bu kütüphanenin g�
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Dönüştürülen Öğeleri Rasterleştir](./rasterize-transformed-elements/) | Aspose.Words for .NET ile PCL formatına dönüştürürken dönüştürülen öğelerin rasterleştirilmesini nasıl devre dışı bırakacağınızı öğrenin. |
+| [Dönüştürülen Öğeleri Rasterleştir](./rasterize-transformed-elements/) | Aspose.Words for .NET'i kullanarak Word belgelerini PCL formatına dönüştürürken dönüştürülen öğeleri nasıl rasterleştireceğinizi öğrenin. Adım adım kılavuz dahildir. |

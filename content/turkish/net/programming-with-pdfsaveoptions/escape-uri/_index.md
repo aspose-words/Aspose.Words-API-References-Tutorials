@@ -39,7 +39,7 @@ Koda dalmadan önce belgeler dizininizin yolunu ayarlayın. Dosyalarınızın ka
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`PDF belgenizi kaydetmek istediğiniz asıl yolla.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` PDF belgenizi kaydetmek istediğiniz asıl yolla.
 
 ## Adım 2: Yeni Bir Belge Oluşturun
 

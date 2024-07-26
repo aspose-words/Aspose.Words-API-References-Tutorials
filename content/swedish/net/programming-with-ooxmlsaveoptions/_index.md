@@ -16,8 +16,8 @@ Oavsett om du vill skapa dokument som är kompatibla med äldre versioner av Wor
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Kryptera Docx med lösenord](./encrypt-docx-with-password/) | Lär dig hur du krypterar en DOCX-fil med ett lösenord med Aspose.Words för .NET. Komplett handledning för dokumentsäkerhet. |
-| [Ooxml Compliance Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Lär dig hur du säkerställer Ooxml Iso 29500_2008_Strikt efterlevnad när du sparar dokument med Aspose.Words för .NET. |
-| [Uppdatera egenskapen Senaste sparad tid](./update-last-saved-time-property/) | Lär dig hur du automatiskt uppdaterar egenskapen Last Saved Time när du sparar ett dokument med Aspose.Words för .NET. |
-| [Behåll äldre kontrolltecken](./keep-legacy-control-chars/) | Lär dig hur du bevarar äldre kontrolltecken när du sparar ett dokument med Aspose.Words för .NET. |
-| [Ställ in komprimeringsnivå](./set-compression-level/) | Lär dig hur du ställer in komprimeringsnivån när du sparar ett dokument med Aspose.Words för .NET. |
+| [Kryptera Docx med lösenord](./encrypt-docx-with-password/) | Säkra dina Word-dokument genom att kryptera dem med ett lösenord med Aspose.Words för .NET. Följ vår steg-för-steg-guide för att skydda din känsliga information. |
+| [Ooxml Compliance Iso 29500_2008_Strict](./ooxml-compliance-iso-29500_2008_strict/) | Lär dig hur du säkerställer OOXML-efterlevnad ISO 29500_2008_Strict med Aspose.Words för .NET med denna steg-för-steg-guide. |
+| [Uppdatera egenskapen Senaste sparad tid](./update-last-saved-time-property/) | Lär dig hur du uppdaterar egenskapen för senast sparad tid i Word-dokument med Aspose.Words för .NET. Följ vår detaljerade, steg-för-steg-guide. |
+| [Behåll äldre kontrolltecken](./keep-legacy-control-chars/) | Lär dig hur du bevarar äldre kontrolltecken i Word-dokument med Aspose.Words för .NET med denna steg-för-steg-guide. |
+| [Ställ in komprimeringsnivå](./set-compression-level/) | Lär dig hur du ställer in komprimeringsnivån i Word-dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för att optimera din dokumentlagring och prestanda. |

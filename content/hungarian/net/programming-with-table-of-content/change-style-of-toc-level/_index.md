@@ -23,7 +23,7 @@ Document doc = new Document();
 
 Ebben a példában egy új üres dokumentumot hozunk létre.
 
-## tartalomjegyzék szintjének stílusának megváltoztatása
+## A tartalomjegyzék szintjének stílusának megváltoztatása
 
 A dokumentum létrehozása után hozzáférhet a dokumentumstílusokhoz, és módosíthatja a tartalomjegyzék egy adott szintjéhez használt stílust. Ebben a példában a tartalomjegyzék első szintjéhez használt stílust módosítjuk. Itt van, hogyan:
 
@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### K: Módosíthatom a tartalomjegyzék több szintjének stílusát az Aspose.Words for .NET használatával?
 
- V: Igen, módosíthatja a tartalomjegyzék több szintjének stílusát az Aspose.Words for .NET segítségével. Egy adott szint stílusának módosításához a megfelelő stílust a gombbal érheti el`Styles`tulajdonságot, és minden szinten egyénileg hajtsa végre a kívánt változtatásokat.
+V: Igen, módosíthatja a tartalomjegyzék több szintjének stílusát az Aspose.Words for .NET segítségével. Egy adott szint stílusának módosításához a megfelelő stílust a gombbal érheti el`Styles` tulajdonságot, és minden szinten egyénileg hajtsa végre a kívánt változtatásokat.
 
 #### K: Hogyan menthetem el a módosított dokumentumot, miután megváltoztattam a tartalomjegyzék stílusát az Aspose.Words for .NET használatával?
 
@@ -117,7 +117,7 @@ V: Igen, a stílus megváltoztatása mellett különféle formázási módosít�
 
 #### K: Módosíthatom a tartalomjegyzék stílusát egy meglévő Word-dokumentumban az Aspose.Words for .NET használatával?
 
- V: Igen, megváltoztathatja a tartalomjegyzék stílusát egy meglévő Word-dokumentumban az Aspose.Words for .NET segítségével. Egyszerűen töltse be a dokumentumot a`Document` osztályban módosítsa a stílus tulajdonságait a`Styles` tulajdonságot, és mentse a dokumentumot a módosítások alkalmazásához.
+V: Igen, megváltoztathatja a tartalomjegyzék stílusát egy meglévő Word-dokumentumban az Aspose.Words for .NET segítségével. Egyszerűen töltse be a dokumentumot a`Document` osztályban módosítsa a stílus tulajdonságait a`Styles` tulajdonságot, és mentse a dokumentumot a módosítások alkalmazásához.
 
 #### K: Az Aspose.Words for .NET támogatja más stílusok és formázások megváltoztatását a Word dokumentumokban?
 

@@ -2,7 +2,7 @@
 title: Kenali Dan Substitusi Dalam Pola Penggantian
 linktitle: Kenali Dan Substitusi Dalam Pola Penggantian
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengenali dan mengganti teks dalam pola penggantian menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah dengan contoh mendetail.
+description: Pelajari cara mengenali dan mengganti teks dalam pola penggantian menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah dengan contoh terperinci.
 type: docs
 weight: 10
 url: /id/net/find-and-replace-text/recognize-and-substitutions-within-replacement-patterns/

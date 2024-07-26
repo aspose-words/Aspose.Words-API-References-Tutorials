@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithComments.CommentResolvedAndReplies.docx");
 Recuerde ajustar el código de acuerdo con sus requisitos específicos, incluida la ruta del archivo del documento y personalización adicional.
 
 ## Conclusión
-¡Felicidades! Ha aprendido con éxito cómo resolver comentarios y sus respuestas en un documento de Word usando Aspose.Words para .NET. Si sigue la guía paso a paso y utiliza el código fuente proporcionado, ahora puede administrar la resolución de comentarios y actualizar el estado de los comentarios y sus respuestas según sus requisitos.
+¡Felicidades! Ha aprendido con éxito cómo resolver comentarios y sus respuestas en un documento de Word usando Aspose.Words para .NET. Siguiendo la guía paso a paso y utilizando el código fuente proporcionado, ahora puede administrar la resolución de comentarios y actualizar el estado de los comentarios y sus respuestas según sus requisitos.
 
 La resolución de comentarios ayuda a rastrear y gestionar los comentarios dentro de un documento. Experimente con diferentes estados de comentarios y personalícelos para mejorar los procesos de colaboración y revisión en sus documentos.
 

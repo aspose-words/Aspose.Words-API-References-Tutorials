@@ -63,7 +63,7 @@ Aspose.Words for Java'nın kurulumu basit bir işlemdir. Kitaplığı Java proje
 
 Artık Aspose.Words for Java'yı kurduğumuza göre belgelerimizin güvenliğini sağlamaya geçebiliriz.
 
-## 5. Belgelerin Yüklenmesi ve Erişilmesi
+## 5. Belgeleri Yükleme ve Erişme
 
 Aspose.Words for Java kullanarak belgelerle çalışmak için bunları Java uygulamanıza yüklemeniz gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
@@ -209,7 +209,7 @@ Bu adım adım kılavuzda belge güvenliğinin önemini ve Aspose.Words for Java
 ### Aspose.Words, Word'ün yanı sıra diğer belge formatlarını da destekliyor mu?
    Evet, Aspose.Words PDF, HTML, EPUB ve daha fazlasını içeren çok çeşitli formatları destekler.
 
-### Bir belgeye birden fazla dijital imza eklemek mümkün müdür?
+### Bir belgeye birden fazla dijital imza eklemek mümkün mü?
    Evet, Aspose.Words bir belgeye birden fazla dijital imza eklemenizi sağlar.
 
 ### Aspose.Words belge şifre kurtarmayı destekliyor mu?

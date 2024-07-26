@@ -2,90 +2,105 @@
 title: 檢測 Word 文件上的數位簽名
 linktitle: 檢測 Word 文件上的數位簽名
 second_title: Aspose.Words 文件處理 API
-description: 使用 Aspose.Words for .NET 偵測 Word 文件上的數位簽章的逐步指南。
+description: 透過我們的逐步指南，了解如何使用 Aspose.Words for .NET 偵測 Word 文件中的數位簽章。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-fileformat/detect-document-signatures/
 ---
+## 介紹
 
-本文提供了有關如何透過 Aspose.Words for .NET 使用 Word 文件偵測功能的數位簽章的逐步指南。我們將詳細解釋程式碼的每一部分。在本教學結束時，您將能夠了解如何偵測文件中的數位簽章。
+確保 Word 文件的完整性和真實性至關重要，尤其是在當今的數位時代。實現此目的的一種方法是使用數位簽章。在本教學中，我們將深入探討如何使用 Aspose.Words for .NET 偵測 Word 文件上的數位簽章。我們將涵蓋從基礎知識到逐步指南的所有內容，確保您最終有全面的了解。
 
-在開始之前，請確保您已在專案中安裝並設定了 Aspose.Words for .NET 程式庫。您可以在 Aspose 網站上找到庫和安裝說明。
+## 先決條件
 
-## 步驟1：定義文檔目錄
+在我們開始之前，請確保您已準備好以下內容：
 
-首先，您需要定義文件所在目錄的路徑。代替`"YOUR DOCUMENT DIRECTORY"`與文檔目錄的實際路徑。
+-  Aspose.Words for .NET Library：您可以從[Aspose 發佈頁面](https://releases.aspose.com/words/net/).
+- 開發環境：確保您已設定 .NET 開發環境，例如 Visual Studio。
+- 對 C# 的基本了解：熟悉 C# 程式語言將有助於您順利掌握。
+
+## 導入命名空間
+
+首先，讓我們導入必要的名稱空間。這一點至關重要，因為它使您能夠存取 Aspose.Words for .NET 提供的類別和方法。
 
 ```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+```
+
+## 第 1 步：設定您的項目
+
+在開始檢測數位簽章之前，我們需要設定我們的項目。
+
+### 1.1 建立新項目
+
+開啟 Visual Studio 並建立一個新的控制台應用程式 (.NET Core) 專案。命名它`DigitalSignatureDetector`.
+
+### 1.2 安裝 Aspose.Words for .NET
+
+您需要將 Aspose.Words 新增到您的專案中。您可以透過 NuGet 套件管理器執行此操作：
+
+- 在解決方案資源管理器中以滑鼠右鍵按一下您的專案。
+- 選擇“管理 NuGet 套件”。
+- 搜尋“Aspose.Words”並安裝最新版本。
+
+## 步驟2：新增文檔目錄路徑
+
+現在，我們需要定義儲存文件的目錄路徑。
+
+```csharp
+//文檔目錄的路徑。
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## 第 2 步：偵測數位簽名
+代替`"YOUR DOCUMENT DIRECTORY"`與文檔目錄的實際路徑。
 
-接下來，我們使用`DetectFileFormat`的方法`FileFormatUtil`類別來檢測文件格式資訊。在此範例中，我們假設文件名稱為「Digitallysigned.docx」並且位於指定的文件目錄中。
+## 第三步：偵測文件格式
+
+接下來，我們需要偵測文件的文件格式以確保它是Word文件。
 
 ```csharp
 FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
 ```
 
-## 第 3 步：檢查數位簽名
+這行程式碼檢查名為的文件的文件格式`Digitally signed.docx`.
 
-我們使用以下方法檢查文件是否包含數位簽名`HasDigitalSignature`的財產`FileFormatInfo`目的。如果偵測到數位簽名，我們會顯示一則訊息，指示如果使用 Aspose.Words 開啟/儲存文檔，簽名將會遺失。
+## 第 4 步：檢查數位簽名
+
+現在，讓我們檢查該文件是否有數位簽章。
 
 ```csharp
 if (info.HasDigitalSignature)
 {
-	Console.WriteLine(
-		$"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
-		"they will be lost if you open/save this document with Aspose.Words.");
+    Console.WriteLine(
+        $"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
+        "they will be lost if you open/save this document with Aspose.Words.");
 }
 ```
 
-就這樣 ！您已使用 Aspose.Words for .NET 成功偵測到文件中的數位簽章。
-
-### 使用 Aspose.Words for .NET 偵測文件簽章的範例原始碼
-
-```csharp
-
-	//文檔目錄的路徑。
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Digitally signed.docx");
-
-	if (info.HasDigitalSignature)
-	{
-		Console.WriteLine(
-			$"Document {Path.GetFileName(dataDir + "Digitally signed.docx")} has digital signatures, " +
-			"they will be lost if you open/save this document with Aspose.Words.");
-	}
-	
-        
-```
 ## 結論
 
-本教學為您提供如何使用 Aspose.Words for .NET 的數位簽章偵測功能來偵測 Word 文件上的數位簽章的逐步指南。程式碼的每個部分都進行了詳細解釋，讓您了解如何檢測文件中的數位簽章。
+使用 Aspose.Words for .NET 偵測 Word 文件中的數位簽章是一個簡單的過程。透過執行上述步驟，您可以輕鬆設定項目、偵測文件格式並檢查數位簽章。此功能對於維護文件的完整性和真實性非常寶貴。
 
-### 檢測 Word 文件數位簽章的常見問題解答
+## 常見問題解答
 
-#### 如何使用 Aspose.Words for .NET 偵測 Word 文件中是否有數位簽章？
+### Aspose.Words for .NET 可以在儲存文件時保留數位簽章嗎？
 
-若要使用 Aspose.Words for .NET 偵測 Word 文件上是否有數位簽名，您可以按照教學課程中提供的步驟進行操作。使用`DetectFileFormat`的方法`FileFormatUtil`類別將允許您檢測文件格式資訊。然後你可以檢查`HasDigitalSignature`的財產`FileFormatInfo`物件確定文件是否包含數位簽章。如果偵測到數位簽名，您可以顯示一則訊息，指出如果使用 Aspose.Words 開啟/儲存文檔，簽名將會遺失。
+不，Aspose.Words for .NET 在開啟或儲存文件時不會保留數位簽章。數位簽名將會遺失。
 
-#### 如何指定包含要在其中搜尋數位簽章的文件的目錄？
+### 有沒有辦法偵測文件上的多個數位簽章？
 
-若要指定包含要搜尋數位簽章的文件的目錄，必須修改`dataDir`程式碼中的變數。代替`"YOUR DOCUMENT DIRECTORY"`與文檔目錄的實際路徑。
+是的`HasDigitalSignature`屬性可以表明文件上存在一個或多個數位簽章。
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
+### 如何獲得 Aspose.Words for .NET 的免費試用版？
 
-#### 使用 Aspose.Words 開啟/儲存文件對數位簽章有何影響？
+您可以從以下位置下載免費試用版：[Aspose 發佈頁面](https://releases.aspose.com/).
 
-當您使用 Aspose.Words 開啟或儲存文件時，文件中存在的數位簽章將會遺失。這是由於在使用 Aspose.Words 處理時對文件進行了更改。如果您需要保留數位簽名，則應考慮到這一點並使用其他方法來管理包含數位簽名的文件。
+### 在哪裡可以找到有關 Aspose.Words for .NET 的更多文件？
 
-#### Aspose.Words for .NET 的哪些其他功能可以與數位簽章偵測結合使用？
+您可以在以下位置找到全面的文檔[Aspose 文件頁面](https://reference.aspose.com/words/net/).
 
- Aspose.Words for .NET 提供了多種用於處理和操作 Word 文件的功能。除了偵測數位簽章之外，您還可以使用該程式庫從文件中提取文字、影像或元資料、應用程式格式變更、合併文件、將文件轉換為不同的格式等等。您可以探索[Aspose.Words for .NET API 參考](https://reference.aspose.com/words/net/)發現所有可用的功能並找到最適合您需求的功能。
+### 我可以獲得 Aspose.Words for .NET 支援嗎？
 
-#### 使用 Aspose.Words for .NET 偵測數位簽章有哪些限制？
-
-Aspose.Words for .NET 的數位簽章偵測僅限於偵測文件中是否有簽章。但是，Aspose.Words 不提供驗證數位簽章的真實性或完整性的功能。若要對數位簽章執行更進階的操作，您將需要使用其他專用工具或函式庫。
+是的，您可以獲得來自[Aspose 支援論壇](https://forum.aspose.com/c/words/8).

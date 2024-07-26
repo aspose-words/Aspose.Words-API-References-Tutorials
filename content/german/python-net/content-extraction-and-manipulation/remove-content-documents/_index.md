@@ -74,7 +74,7 @@ for shape in doc.get_child_nodes(aw.NodeType.SHAPE, True):
         shape.remove()
 ```
 
-## Formatierungsstile neu formatieren
+## Neuformatierungsstile
 
 Zum Verfeinern von Inhalten kann auch die Neuformatierung von Stilen gehören. Angenommen, Sie möchten die Schriftart bestimmter Absätze ändern:
 

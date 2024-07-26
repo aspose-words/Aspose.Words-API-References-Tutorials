@@ -17,7 +17,7 @@ Pour suivre ce tutoriel, vous devez disposer des éléments suivants :
 - Connaissance de base de C# et du traitement de mots avec des documents Word.
 
 ## Étape 1 : configurer le répertoire de documents
- Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"`avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
+ Commencez par configurer le chemin d’accès à votre répertoire de documents. Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel du répertoire dans lequel vous souhaitez enregistrer le document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -45,7 +45,7 @@ Définissez la propriété d'ancrage vertical de la forme pour contrôler son al
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
-## Étape 5 : ajouter du contenu à la forme
+## Étape 5 : Ajouter du contenu à la forme
  Utilisez le`MoveTo` méthode du`DocumentBuilder` objet pour déplacer le curseur vers le premier paragraphe de la forme. Ensuite, utilisez le`Write` méthode pour ajouter du contenu à la forme.
 
 ```csharp
@@ -54,7 +54,7 @@ builder.Write("Textbox contents");
 ```
 
 ## Étape 6 : Enregistrez le document
- Enregistrez le document dans le répertoire spécifié à l'aide du`Save`méthode. Fournissez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous le nom « WorkingWithShapes.VerticalAnchor.docx ».
+ Enregistrez le document dans le répertoire spécifié à l'aide du`Save` méthode. Fournissez le nom de fichier souhaité avec l'extension de fichier appropriée. Dans cet exemple, nous enregistrons le document sous le nom « WorkingWithShapes.VerticalAnchor.docx ».
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");

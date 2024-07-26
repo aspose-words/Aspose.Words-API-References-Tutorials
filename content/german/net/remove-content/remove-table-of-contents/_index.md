@@ -41,7 +41,7 @@ Bevor wir Ihr Dokument bearbeiten können, müssen wir seinen Speicherort defini
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Ersetzen`"YOUR DOCUMENT DIRECTORY"` mit dem Pfad zu Ihrem Dokumentordner. Hier befindet sich Ihre Word-Datei.
+ Ersetzen`"YOUR DOCUMENT DIRECTORY"`mit dem Pfad zu Ihrem Dokumentordner. Hier befindet sich Ihre Word-Datei.
 
 ## Schritt 2: Laden Sie das Dokument
 

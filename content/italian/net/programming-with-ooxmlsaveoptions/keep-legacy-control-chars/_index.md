@@ -2,68 +2,102 @@
 title: Mantieni i caratteri di controllo legacy
 linktitle: Mantieni i caratteri di controllo legacy
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come preservare i caratteri di controllo legacy quando salvi un documento con Aspose.Words per .NET.
+description: Scopri come preservare i caratteri di controllo legacy nei documenti Word utilizzando Aspose.Words per .NET con questa guida passo passo.
 type: docs
 weight: 10
 url: /it/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
+## introduzione
 
-In questo tutorial esploreremo il codice sorgente C# fornito per preservare i caratteri di controllo legacy durante il salvataggio di un documento utilizzando Aspose.Words per .NET. Questa funzionalità consente di preservare caratteri di controllo speciali durante la conversione o il salvataggio di un documento.
+Sei mai stato perplesso da quegli strani caratteri di controllo invisibili nei tuoi documenti Word? Sono come piccoli gremlin nascosti che possono rovinare la formattazione e la funzionalità. Fortunatamente, Aspose.Words per .NET fornisce una funzionalità utile per mantenere intatti questi caratteri di controllo legacy durante il salvataggio dei documenti. In questo tutorial, approfondiremo come gestire questi caratteri di controllo utilizzando Aspose.Words per .NET. Lo analizzeremo passo dopo passo, assicurandoti di cogliere ogni dettaglio lungo il percorso. Pronti per iniziare? Immergiamoci!
 
-## Passaggio 1: configurazione dell'ambiente
+## Prerequisiti
 
-Prima di iniziare, assicurati di aver configurato il tuo ambiente di sviluppo con Aspose.Words per .NET. Assicurati di aver aggiunto i riferimenti necessari e importato gli spazi dei nomi appropriati.
+Prima di iniziare, assicurati di avere quanto segue:
 
-## Passaggio 2: caricamento del documento
+1.  Aspose.Words per .NET: scarica e installa da[Qui](https://releases.aspose.com/words/net/).
+2.  Una licenza Aspose valida: è possibile ottenere una licenza temporanea[Qui](https://purchase.aspose.com/temporary-license/).
+3. Ambiente di sviluppo: Visual Studio o qualsiasi altro IDE che supporti .NET.
+4. Conoscenza di base di C#: sarà utile la familiarità con il linguaggio di programmazione C#.
 
-```csharp
-// Percorso della directory dei documenti
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+## Importa spazi dei nomi
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
-```
-
- In questo passaggio, carichiamo il documento utilizzando il file`Document` metodo e passando il percorso al file contenente i caratteri di controllo ereditati.
-
-## Passaggio 3: configurazione delle opzioni di backup OOXML
+Prima di scrivere il codice, devi importare gli spazi dei nomi necessari. Aggiungi le seguenti righe all'inizio del tuo file C#:
 
 ```csharp
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
- In questo passaggio, configuriamo le opzioni di salvataggio OOXML creandone un nuovo`OoxmlSaveOptions` oggetto. Specifichiamo il formato di salvataggio desiderato (qui,`FlatOpc` ) e abilitare il`KeepLegacyControlChars` opzione per mantenere i caratteri di controllo legacy.
+## Passaggio 1: impostazione del progetto
 
-## Passaggio 4: salvataggio del documento con caratteri di controllo legacy
+Innanzitutto, dovrai configurare il tuo progetto in Visual Studio (o il tuo IDE preferito). 
 
-```csharp
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-```
+1. Creare un nuovo progetto C#: aprire Visual Studio e creare un nuovo progetto di applicazione console C#.
+2. Installare Aspose.Words per .NET: utilizzare NuGet Package Manager per installare Aspose.Words per .NET. Fai clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, seleziona "Gestisci pacchetti NuGet", cerca "Aspose.Words" e installalo.
 
- In quest'ultimo passaggio, salviamo il documento utilizzando il file`Save` metodo e passando il percorso del file di output con il metodo`.docx` estensione, insieme alle opzioni di salvataggio specificate.
+## Passaggio 2: carica il documento
 
-Ora puoi eseguire il codice sorgente per preservare i caratteri di controllo legacy durante il salvataggio di un documento. Il file risultante verrà salvato nella directory specificata con il nome "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx".
+Successivamente, caricherai il documento di Word che contiene i caratteri di controllo legacy.
 
-### Codice sorgente di esempio per Keep Legacy Control Chars utilizzando Aspose.Words per .NET 
-```csharp
+1. Specificare il percorso del documento: imposta il percorso della directory dei documenti.
+   
+   ```csharp
+   string dataDir = "YOUR DOCUMENT DIRECTORY";
+   ```
 
-// Percorso della directory dei documenti
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
+2.  Caricare il documento: utilizzare il file`Document` class per caricare il documento.
 
-Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```csharp
+   Document doc = new Document(dataDir + "Legacy control character.doc");
+   ```
 
-OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc) { KeepLegacyControlChars = true };
+## Passaggio 3: configura le opzioni di salvataggio
 
-doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
-            
-        
-```
+Ora configuriamo le opzioni di salvataggio per mantenere intatti i caratteri di controllo legacy.
+
+1.  Crea opzioni di salvataggio: inizializza un'istanza di`OoxmlSaveOptions` e impostare il`KeepLegacyControlChars`proprietà a`true`.
+
+   ```csharp
+   OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FlatOpc)
+   {
+       KeepLegacyControlChars = true
+   };
+   ```
+
+## Passaggio 4: salva il documento
+
+Infine, salva il documento con le opzioni di salvataggio configurate.
+
+1.  Salvare il documento: utilizzare il file`Save` metodo del`Document` classe per salvare il documento con le opzioni di salvataggio specificate.
+
+   ```csharp
+   doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.KeepLegacyControlChars.docx", saveOptions);
+   ```
 
 ## Conclusione
 
-In questo tutorial, abbiamo esplorato la funzionalità di preservare i caratteri di controllo legacy durante il salvataggio di un documento utilizzando Aspose.Words per .NET. Abbiamo imparato come preservare quei caratteri speciali che potrebbero essere importanti per la corretta formattazione o visualizzazione del documento.
+il gioco è fatto! Seguendo questi passaggi, puoi assicurarti che i caratteri di controllo legacy vengano preservati quando lavori con documenti Word in Aspose.Words per .NET. Questa funzionalità può essere un vero toccasana, soprattutto quando si ha a che fare con documenti complessi in cui i caratteri di controllo svolgono un ruolo cruciale. 
 
- La conservazione dei caratteri di controllo legacy è particolarmente utile quando si elaborano testi con documenti che utilizzano funzionalità più vecchie o specifiche, come caratteri di controllo speciali. Abilitando il`KeepLegacyControlChars` opzione durante il salvataggio del documento, ti assicuri che questi caratteri vengano preservati.
+## Domande frequenti
 
-Aspose.Words per .NET offre una gamma di opzioni di backup flessibili e potenti per soddisfare le esigenze di manipolazione dei documenti. Utilizzando le opzioni appropriate, è possibile personalizzare il processo di backup per preservare le caratteristiche specifiche dei propri documenti.
+### Cosa sono i caratteri di controllo legacy?
 
-Sentiti libero di incorporare questa funzionalità nei tuoi progetti Aspose.Words per .NET per garantire l'integrità e la conservazione dei caratteri di controllo legacy nei tuoi documenti.
+I caratteri di controllo legacy sono caratteri non stampabili utilizzati nei documenti più vecchi per controllare la formattazione e il layout.
+
+### Posso rimuovere questi caratteri di controllo invece di mantenerli?
+
+Sì, puoi utilizzare Aspose.Words per .NET per rimuovere o sostituire questi caratteri, se necessario.
+
+### Questa funzionalità è disponibile in tutte le versioni di Aspose.Words per .NET?
+
+Questa funzionalità è disponibile nelle versioni recenti. Assicurati di utilizzare la versione più recente per accedere a tutte le funzionalità.
+
+### Ho bisogno di una licenza per utilizzare Aspose.Words per .NET?
+
+ Sì, è necessaria una licenza valida. È possibile ottenere una licenza temporanea a scopo di valutazione[Qui](https://purchase.aspose.com/temporary-license/).
+
+### Dove posso trovare ulteriore documentazione su Aspose.Words per .NET?
+
+ Puoi trovare documentazione dettagliata[Qui](https://reference.aspose.com/words/net/).
+ 

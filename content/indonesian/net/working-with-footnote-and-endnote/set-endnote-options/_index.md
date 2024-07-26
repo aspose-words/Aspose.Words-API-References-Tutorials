@@ -40,7 +40,7 @@ builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 
 ## Langkah 4: Mengatur Opsi Catatan Akhir
 
- Akses`EndnoteOptions`properti dokumen untuk mengubah opsi catatan akhir. Dalam contoh ini, kami menetapkan aturan restart untuk memulai ulang pada setiap halaman dan posisinya di akhir bagian:
+ Akses`EndnoteOptions`properti dokumen untuk mengubah opsi catatan akhir. Dalam contoh ini, kami menetapkan aturan mulai ulang untuk memulai ulang pada setiap halaman dan posisinya di akhir bagian:
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;

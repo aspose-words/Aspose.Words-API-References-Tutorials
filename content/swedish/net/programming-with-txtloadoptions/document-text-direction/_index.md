@@ -2,7 +2,7 @@
 title: Dokumenttextriktning
 linktitle: Dokumenttextriktning
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du anger textriktning i dina dokument med Aspose.Words för .NET. Förbättra visningen för höger-till-vänster-språk.
+description: Lär dig hur du anger textriktning i dina dokument med Aspose.Words för .NET. Förbättra displayen för höger-till-vänster-språk.
 type: docs
 weight: 10
 url: /sv/net/programming-with-txtloadoptions/document-text-direction/
@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- I detta sista steg sparar vi det resulterande dokumentet i .docx-format med hjälp av`Save` metod och skicka sökvägen till utdatafilen.
+ detta sista steg sparar vi det resulterande dokumentet i .docx-format med hjälp av`Save` metod och skickar sökvägen till utdatafilen.
 
 Nu kan du köra källkoden för att ladda textdokumentet och bestämma textriktningen. Det resulterande dokumentet kommer att sparas i den angivna katalogen med namnet "WorkingWithTxtLoadOptions.DocumentTextDirection.docx".
 

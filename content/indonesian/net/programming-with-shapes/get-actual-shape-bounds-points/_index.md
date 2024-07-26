@@ -11,7 +11,7 @@ url: /id/net/programming-with-shapes/get-actual-shape-bounds-points/
 Tutorial ini menjelaskan cara mengambil batas sebenarnya dari suatu bentuk dalam titik (satuan pengukuran) dalam dokumen Word menggunakan Aspose.Words untuk .NET. Batasnya mewakili ukuran dan posisi bentuk dalam dokumen.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
+Untuk mengikuti tutorial ini, Anda perlu memiliki yang berikut ini:
 
 - Aspose.Words untuk perpustakaan .NET diinstal.
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Langkah 2: Sisipkan Bentuk Gambar
- Menggunakan`InsertImage` metode`DocumentBuilder`objek untuk menyisipkan bentuk gambar ke dalam dokumen. Berikan jalur ke file gambar sebagai parameter.
+ Menggunakan`InsertImage` metode`DocumentBuilder` objek untuk menyisipkan bentuk gambar ke dalam dokumen. Berikan jalur ke file gambar sebagai parameter.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

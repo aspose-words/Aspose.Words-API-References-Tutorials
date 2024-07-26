@@ -30,7 +30,7 @@ string styleName = "";
 StyleCollection styles = doc.Styles;
 ```
 
- Trong bước này, chúng ta truy cập vào bộ sưu tập kiểu của tài liệu bằng cách sử dụng`Styles`tài sản. Bộ sưu tập này chứa tất cả các kiểu có trong tài liệu.
+ Trong bước này, chúng ta truy cập vào bộ sưu tập kiểu của tài liệu bằng cách sử dụng`Styles` tài sản. Bộ sưu tập này chứa tất cả các kiểu có trong tài liệu.
 
 ## Bước 4: Duyệt kiểu
 
@@ -82,7 +82,7 @@ foreach (Style style in styles)
 
 ## Phần kết luận
 
- Trong hướng dẫn này, chúng ta đã học cách truy xuất và truy cập các kiểu có trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách sử dụng`Styles` tài sản của`Document`đối tượng, chúng tôi đã thu được bộ sưu tập các kiểu và lặp qua chúng để hiển thị tên của chúng. Tính năng này cung cấp những hiểu biết sâu sắc có giá trị về các kiểu được sử dụng trong tài liệu và cho phép tùy chỉnh và phân tích sâu hơn.
+ Trong hướng dẫn này, chúng ta đã học cách truy xuất và truy cập các kiểu có trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách sử dụng`Styles` tài sản của`Document` đối tượng, chúng tôi đã thu được bộ sưu tập các kiểu và lặp qua chúng để hiển thị tên của chúng. Tính năng này cung cấp những hiểu biết sâu sắc có giá trị về các kiểu được sử dụng trong tài liệu và cho phép tùy chỉnh và phân tích sâu hơn.
 
 Bằng cách tận dụng API mạnh mẽ của Aspose.Words cho .NET, các nhà phát triển có thể dễ dàng thao tác và làm việc với các kiểu tài liệu, cung cấp khả năng kiểm soát nâng cao đối với việc định dạng và xử lý tài liệu.
 

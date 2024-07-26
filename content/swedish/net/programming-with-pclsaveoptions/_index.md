@@ -14,4 +14,4 @@ Aspose.Words för .NET-handledningarna ger dig en värdefull resurs för att bem
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Rasterisera transformerade element](./rasterize-transformed-elements/) | Lär dig hur du inaktiverar rastrering av transformerade element när du konverterar till PCL-format med Aspose.Words för .NET. |
+| [Rasterisera transformerade element](./rasterize-transformed-elements/) | Lär dig hur du rastrerar transformerade element när du konverterar Word-dokument till PCL-format med Aspose.Words för .NET. Steg-för-steg-guide ingår. |

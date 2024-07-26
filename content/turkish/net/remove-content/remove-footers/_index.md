@@ -88,7 +88,7 @@ foreach (Section section in doc)
 	HeaderFooter footer = section.HeadersFooters[HeaderFooterType.FooterFirst];
 	footer?.Remove();
 
-	// Birincil alt bilgi tek sayfalar için kullanılan alt bilgidir.
+	//Birincil alt bilgi tek sayfalar için kullanılan alt bilgidir.
 	footer = section.HeadersFooters[HeaderFooterType.FooterPrimary];
 	footer?.Remove();
 

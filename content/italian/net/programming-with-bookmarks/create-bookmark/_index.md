@@ -87,7 +87,7 @@ Spiegazione: Ciò garantisce che il segnalibro principale comprenda sia il segna
 
 Configura le opzioni di salvataggio PDF per i segnalibri
 
-Quando salvi il documento come PDF, possiamo configurare le opzioni per includere i segnalibri.
+Quando salviamo il documento come PDF, possiamo configurare le opzioni per includere i segnalibri.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();

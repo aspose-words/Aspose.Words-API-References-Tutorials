@@ -11,7 +11,7 @@ url: /id/net/programming-with-sdt/multi-section/
 Tutorial ini menjelaskan cara bekerja dengan tag dokumen terstruktur multi-bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Anda dapat mengambil dan memproses tag bagian yang ada di dokumen.
 
 ## Prasyarat
-Untuk mengikuti tutorial ini, Anda harus memiliki yang berikut ini:
+Untuk mengikuti tutorial ini, Anda perlu memiliki yang berikut ini:
 
 - Aspose.Words untuk perpustakaan .NET diinstal.
 - Pengetahuan dasar tentang C# dan Pemrosesan Kata dengan dokumen Word.

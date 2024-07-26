@@ -13,5 +13,5 @@ Przetwarzanie słów za pomocą MarkdownSaveOptions to szczegółowe źródło i
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Eksportuj do Markdown z wyrównaniem zawartości tabeli](./export-into-markdown-with-table-content-alignment/) | Dowiedz się, jak eksportować zawartość tabeli z różnymi wyrównaniami do plików Markdown za pomocą Aspose.Words dla .NET. |
-| [Ustaw folder obrazów](./set-images-folder/) | Dowiedz się, jak ustawić folder obrazów podczas eksportowania do Markdown za pomocą Aspose.Words dla .NET. Dostosuj rozmieszczenie obrazów, aby zapewnić lepszą organizację i integrację.|
+| [Eksportuj do Markdown z wyrównaniem zawartości tabeli](./export-into-markdown-with-table-content-alignment/) | Dowiedz się, jak eksportować dokumenty programu Word do Markdown z wyrównanymi tabelami przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać doskonałe tabele Markdown. |
+| [Ustaw folder obrazów](./set-images-folder/) | Konwertuj dokumenty Word do Markdown z odpowiednim wyrównaniem tabeli za pomocą Aspose.Words dla .NET. Aby uzyskać doskonałe rezultaty, postępuj zgodnie z naszym szczegółowym przewodnikiem. |

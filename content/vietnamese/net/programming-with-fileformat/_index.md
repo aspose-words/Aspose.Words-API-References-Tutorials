@@ -16,6 +16,6 @@ Cho dù bạn cần tạo báo cáo, tạo tài liệu tùy chỉnh, tự độn
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Phát hiện định dạng tệp tài liệu](./detect-file-format/) | Hướng dẫn từng bước phát hiện định dạng tệp tài liệu với Aspose.Words cho .NET. |
-| [Phát hiện chữ ký số trên tài liệu Word](./detect-document-signatures/) | Hướng dẫn từng bước để phát hiện chữ ký số trong tài liệu bằng Aspose.Words for .NET. |
-| [Xác minh tài liệu Word được mã hóa](./verify-encrypted-document/) | Hướng dẫn từng bước để xác minh tài liệu được mã hóa bằng Aspose.Words cho .NET. |
+| [Phát hiện định dạng tệp tài liệu](./detect-file-format/) | Tìm hiểu cách phát hiện các định dạng tệp tài liệu bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. |
+| [Phát hiện chữ ký số trên tài liệu Word](./detect-document-signatures/) | Tìm hiểu cách phát hiện chữ ký điện tử trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn từng bước của chúng tôi. |
+| [Xác minh tài liệu Word được mã hóa](./verify-encrypted-document/) | Tìm hiểu cách xác minh trạng thái mã hóa của tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. |

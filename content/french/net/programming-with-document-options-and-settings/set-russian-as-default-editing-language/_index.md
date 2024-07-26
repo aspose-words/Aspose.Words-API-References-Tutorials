@@ -50,7 +50,7 @@ loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian
 
 ## Étape 2 : Charger le document
 
- Ensuite, nous devons charger le document Word en utilisant le`LoadOptions` configuré à l’étape précédente. Cela implique de spécifier le chemin d'accès à votre document et de transmettre le`LoadOptions` exemple à la`Document` constructeur.
+ Ensuite, nous devons charger le document Word en utilisant le`LoadOptions` configuré à l’étape précédente. Cela implique de spécifier le chemin d'accès à votre document et de transmettre le`LoadOptions` exemple au`Document` constructeur.
 
 ### Spécifier le chemin du document
 

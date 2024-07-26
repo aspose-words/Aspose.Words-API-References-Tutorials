@@ -83,7 +83,7 @@ builder.EndRow();
 ```
 
 ## Paso 8: guarde el documento modificado
-Finalmente, guardamos el documento modificado en un archivo. Puede elegir un nombre y una ubicación adecuados para el documento de salida.
+Finalmente, guardamos el documento modificado en un archivo. Puede elegir un nombre y una ubicación apropiados para el documento de salida.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx");
@@ -104,7 +104,7 @@ Table table = builder.StartTable();
 builder.InsertCell();
 // Establezca el estilo de tabla utilizado según el identificador de estilo único.
 table.StyleIdentifier = StyleIdentifier.MediumShading1Accent1;
-// Aplique qué características deben formatearse según el estilo.
+// Aplique qué funciones deben formatearse según el estilo.
 table.StyleOptions =
 	TableStyleOptions.FirstColumn | TableStyleOptions.RowBands | TableStyleOptions.FirstRow;
 table.AutoFit(AutoFitBehavior.AutoFitToContents);

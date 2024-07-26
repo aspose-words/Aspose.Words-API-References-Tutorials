@@ -21,7 +21,7 @@ För att börja bygga tabellen måste vi skapa ett nytt dokument och initiera do
 // Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Skapa dokumentet och initiera dokumentgeneratorn
+//Skapa dokumentet och initiera dokumentgeneratorn
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Anropa följande metod för att avsluta den första raden och starta en ny rad
+// Anropa följande metod för att avsluta den första raden och starta en ny rad
 builder. EndRow();
 
 // Konstruktion av den första cellen i den andra raden
@@ -99,7 +99,7 @@ Var noga med att ange rätt sökväg och filnamn för utdatadokumentet.
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Signalerar att vi har byggt klart bordet.
+	// Signalerar att vi har byggt klart bordet.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

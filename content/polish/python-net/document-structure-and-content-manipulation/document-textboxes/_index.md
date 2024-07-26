@@ -98,7 +98,7 @@ tym przewodniku zbadaliśmy proces ulepszania treści wizualnych za pomocą pól
 
 ### Jak zmienić rozmiar pola tekstowego?
 
- Aby zmienić rozmiar pola tekstowego, możesz dostosować jego właściwości szerokości i wysokości za pomocą`width`I`height` atrybuty.
+ Aby zmienić rozmiar pola tekstowego, możesz dostosować jego właściwości szerokości i wysokości za pomocą opcji`width`I`height` atrybuty.
 
 ### Czy mogę obrócić pole tekstowe?
 

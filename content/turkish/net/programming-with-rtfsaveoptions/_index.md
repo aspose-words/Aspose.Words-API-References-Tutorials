@@ -16,4 +16,4 @@ Aspose.Words for .NET eğitimlerini kullanarak, .NET projelerinizde Word belgele
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Görüntüleri Wmf Olarak Kaydetme](./saving-images-as-wmf/) | Aspose.Words for .NET ile görüntüleri RTF'ye dönüştürürken WMF olarak nasıl kaydedeceğinizi öğrenin. |
+| [Görüntüleri Wmf Olarak Kaydetme](./saving-images-as-wmf/) | Ayrıntılı adım adım kılavuzumuzla Aspose.Words for .NET kullanarak görüntüleri Word belgelerinde WMF olarak nasıl kaydedeceğinizi öğrenin. Belge uyumluluğunuzu ve görüntü kalitenizi artırın. |

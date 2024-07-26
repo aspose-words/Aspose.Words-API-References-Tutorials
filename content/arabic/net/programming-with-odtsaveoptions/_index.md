@@ -16,4 +16,4 @@ url: /ar/net/programming-with-odtsaveoptions/
  ## دروس
 | عنوان | وصف |
 | --- | --- |
-| [وحدة قياس](./measure-unit/) | تعرف على كيفية تحديد وحدة القياس عند تحويل مستند Word إلى ODT باستخدام Aspose.Words لـ .NET. |
+| [وحدة قياس](./measure-unit/) | تعرف على كيفية تكوين ميزة وحدة القياس في Aspose.Words لـ .NET للحفاظ على تنسيق المستند أثناء تحويل ODT. |

@@ -17,7 +17,7 @@ Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
 - Podstawowa znajomość C# i XML.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
- Rozpocznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
+ Rozpocznij od ustawienia ścieżki do katalogu dokumentów. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu, w którym chcesz zapisać dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Krok 3: Dodaj StructuredDocumentTag (SDT) do dokumentu
- Dodać`StructuredDocumentTag` do dokumentu, aby służyć jako kontrola zawartości. Określić`SdtType` Jak`PlainText` i`MarkupLevel` Jak`Block` aby utworzyć SDT na poziomie bloku.
+ Dodać`StructuredDocumentTag`do dokumentu, aby służyć jako kontrola zawartości. Określić`SdtType` Jak`PlainText` i`MarkupLevel` Jak`Block` aby utworzyć SDT na poziomie bloku.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

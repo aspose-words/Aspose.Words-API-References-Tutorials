@@ -177,7 +177,7 @@ for data in dataset:
 ## 最佳实践和技巧
 
 - 通过使用执行不同文档操作任务的函数来保持代码井然有序。
-- 利用异常处理来妥善处理文档处理期间的错误。
+- 利用异常处理来妥善处理文档处理过程中的错误。
 - 检查[Aspose.Words 文档](https://reference.aspose.com/words/python-net/)以获取详细的 API 参考和示例。
 
 ## 结论

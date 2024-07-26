@@ -2,94 +2,84 @@
 title: Alt Küme Yazı Tiplerini PDF Belgesine Göm
 linktitle: Alt Küme Yazı Tiplerini PDF Belgesine Göm
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak yazı tipi alt kümelerini bir PDF belgesine gömmek için adım adım kılavuz.
+description: Aspose.Words for .NET kullanarak yalnızca gerekli yazı tipi alt kümelerini yerleştirerek PDF dosya boyutunu küçültün. PDF'lerinizi verimli bir şekilde optimize etmek için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 ---
+## giriiş
 
-Bu makale, Aspose.Words for .NET ile yazı tipi alt kümesi gömme özelliğinin nasıl kullanılacağı hakkında adım adım bir kılavuz sağlar. Kodun her bölümünü ayrıntılı olarak açıklayacağız. Bu eğitimin sonunda, yazı tipi alt kümelerini bir belgeye nasıl yerleştireceğinizi ve yalnızca belgede kullanılan glifleri içeren bir PDF oluşturmayı anlayabileceksiniz.
+Benzer içeriğe sahip olsalar bile bazı PDF dosyalarının diğerlerinden çok daha büyük olduğunu hiç fark ettiniz mi? Suçlu genellikle yazı tiplerindedir. Yazı tiplerini bir PDF'ye gömmek, her aygıtta aynı görünmesini sağlar ancak aynı zamanda dosya boyutunu da şişirebilir. Neyse ki Aspose.Words for .NET, yalnızca gerekli yazı tipi alt kümelerini gömmek için kullanışlı bir özellik sunarak PDF'lerinizi yalın ve verimli tutar. Bu eğitim size süreç boyunca adım adım rehberlik edecektir.
 
-Başlamadan önce projenize Aspose.Words for .NET kütüphanesini kurup yapılandırdığınızdan emin olun. Kütüphaneyi ve kurulum talimatlarını Aspose web sitesinde bulabilirsiniz.
+## Önkoşullar
 
-## 1. Adım: Belge dizinini tanımlayın
+Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
- Başlamak için belgelerinizin bulunduğu dizinin yolunu tanımlamanız gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgeler dizininizin gerçek yolu ile.
+-  Aspose.Words for .NET: İndirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- .NET Ortamı: Çalışan bir .NET geliştirme ortamına sahip olduğunuzdan emin olun.
+- Temel C# Bilgisi: C# programlamaya aşinalık, takip etmenize yardımcı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words for .NET'i kullanmak için projenize gerekli ad alanlarını içe aktarmanız gerekir. Bunları C# dosyanızın en üstüne ekleyin:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
 ```
 
-## 2. Adım: Belgeyi yükleyin
+## 1. Adım: Belgeyi Yükleyin
 
-Daha sonra işlemek istediğimiz belgeyi yüklememiz gerekiyor. Bu örnekte belgenin "Rendering.docx" olarak adlandırıldığını ve belirtilen belgeler dizininde bulunduğunu varsayıyoruz.
+ Öncelikle PDF'e dönüştürmek istediğimiz Word belgesini yüklememiz gerekiyor. Bu, kullanılarak yapılır.`Document` Aspose.Words tarafından sağlanan sınıf.
 
 ```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. Adım: PDF olarak kaydetme seçeneklerini yapılandırın
+ Bu kod parçacığı şu adreste bulunan belgeyi yükler:`dataDir` . Değiştirdiğinizden emin olun`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolu ile.
 
- Yalnızca belgede kullanılan yazı tiplerinin alt kümelerini içeren bir PDF oluşturmak için,`PdfSaveOptions` ile nesne`EmbedFullFonts` özellik şu şekilde ayarlandı:`false`.
+## 2. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
+
+ Daha sonra, yapılandırıyoruz`PdfSaveOptions` yalnızca gerekli yazı tipi alt kümelerinin gömülmesini sağlamak için. Ayarlayarak`EmbedFullFonts` ile`false`Aspose.Words'e yalnızca belgede kullanılan glifleri yerleştirmesini söyleriz.
 
 ```csharp
+// Çıktı PDF'si, belgedeki yazı tiplerinin alt kümelerini içerecektir.
+// Yalnızca belgede kullanılan glifler PDF yazı tiplerine dahil edilir.
 PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
 ```
 
-## 4. Adım: Belgeyi yazı tipi alt kümeleriyle PDF olarak kaydedin
+Bu küçük ama önemli adım, PDF dosya boyutunun önemli ölçüde azaltılmasına yardımcı olur.
 
- Son olarak yazı tipi alt kümelerini kullanarak belgeyi PDF olarak kaydedebiliriz. Çıktı dosyasının adını ve`saveOptions` önceki adımda yapılandırdığımız nesne.
+## 3. Adım: Belgeyi PDF olarak kaydedin
 
-```csharp
-doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-```
-
-Bu kadar ! Aspose.Words for .NET ile bir belgeye yazı tipi alt kümelerini başarıyla gömdünüz ve yalnızca belgede kullanılan glifleri içeren bir PDF oluşturdunuz.
-
-### Aspose.Words for .NET ile yazı tipi alt kümelerini gömmek için örnek kaynak kodu
+ Son olarak belgeyi PDF olarak kaydediyoruz.`Save` yapılandırılmış yöntemi uygulayarak`PdfSaveOptions`.
 
 ```csharp
-
-	// Belgeler dizininin yolu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	// Çıktı PDF'si, belgedeki yazı tiplerinin alt kümelerini içerecektir.
-	// Yalnızca belgede kullanılan glifler PDF yazı tiplerine dahil edilir.
-	PdfSaveOptions saveOptions = new PdfSaveOptions { EmbedFullFonts = false };
-	
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddSubsetFonts.pdf", saveOptions);
-
+doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions);
 ```
+
+ Bu kod adında bir PDF dosyası oluşturacaktır.`WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf` belirtilen dizinde, yalnızca gerekli yazı tipi alt kümeleri gömülü olarak.
 
 ## Çözüm
 
-Bu eğitimde, Aspose.Words for .NET kullanarak yazı tipi alt kümelerini bir PDF belgesine nasıl yerleştireceğimizi öğrendik. Yazı tipi alt kümelerinin gömülmesi, yalnızca gerçekte kullanılan karakterleri kullanarak belgenin görünümünü korurken PDF dosyasının boyutunun küçültülmesine yardımcı olur. Bu, PDF'yi görüntülerken ve yazdırırken daha iyi uyumluluk ve performans sağlar. Gömülü yazı tipi alt kümeleriyle PDF belgelerinizin oluşturulmasını optimize etmek için Aspose.Words for .NET'in özelliklerini daha fazla keşfetmekten çekinmeyin.
+İşte buyur! Bu basit adımları izleyerek, Aspose.Words for .NET'i kullanarak yalnızca gerekli yazı tipi alt kümelerini gömerek PDF dosyalarınızın boyutunu etkili bir şekilde azaltabilirsiniz. Bu yalnızca depolama alanından tasarruf etmekle kalmaz, aynı zamanda özellikle geniş yazı tiplerine sahip belgeler için daha hızlı yükleme süreleri ve daha iyi performans sağlar.
 
-### Sıkça Sorulan Sorular
+## SSS'ler
 
-#### S: Yazı tipi alt kümelerini PDF belgesine gömmek nedir?
-C: Yazı tipi alt kümelerini bir PDF belgesine gömmek, tüm yazı tiplerini tam olarak dahil etmek yerine yalnızca belgede kullanılan glifleri dahil etme işlemidir. Bu, yalnızca belgede gerçekten kullanılan karakterleri görüntülemek için gereken yazı tipi verilerini dahil ederek PDF dosyasının boyutunu azaltır.
+### Bir PDF'ye neden yalnızca yazı tipi alt kümelerini gömmeliyim?
+Yalnızca gerekli yazı tipi alt kümelerini gömmek, belgenin görünümünden ve okunabilirliğinden ödün vermeden PDF dosya boyutunu önemli ölçüde azaltabilir.
 
-#### S: Fontların tamamını gömmek ile yazı tiplerinin alt kümelerini gömmek arasındaki fark nedir?
-C: Tam yazı tipi gömme, belgede kullanılan tüm yazı tiplerinin PDF dosyasına dahil edilmesi anlamına gelir; bu, belgenin tam olarak tasarlandığı gibi görüntülenmesini sağlar, ancak PDF dosyasının boyutunu artırabilir. Buna karşılık, gömme yazı tipi alt kümeleri yalnızca belgede kullanılan glifleri içerir, böylece PDF dosyasının boyutu küçülür, ancak daha sonra ek karakterler eklenirse belgenin görünümünü tam olarak kopyalama yeteneği sınırlanır.
+### Gerekirse tam yazı tiplerini yerleştirmeye geri dönebilir miyim?
+ Evet yapabilirsin. Basitçe ayarlayın`EmbedFullFonts`mülkiyet`true` içinde`PdfSaveOptions`.
 
-#### S: Aspose.Words for .NET kullanarak yazı tipi alt kümelerini bir PDF belgesine nasıl gömebilirim?
-C: Aspose.Words for .NET kullanarak yazı tipi alt kümelerini bir PDF belgesine gömmek için şu adımları izleyin:
+### Aspose.Words for .NET diğer PDF optimizasyon özelliklerini destekliyor mu?
+Kesinlikle! Aspose.Words for .NET, PDF'leri optimize etmek için görüntü sıkıştırma ve kullanılmayan nesnelerin kaldırılması da dahil olmak üzere çeşitli seçenekler sunar.
 
- Belge dizini yolunu değiştirerek ayarlayın`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+### Aspose.Words for .NET kullanılarak ne tür yazı tipleri alt kümeye gömülebilir?
+Aspose.Words for .NET, belgede kullanılan tüm TrueType yazı tipleri için alt küme yerleştirmeyi destekler.
 
- İşlemek istediğiniz belgeyi kullanarak yükleyin.`Document` sınıf ve belge yolu.
-
- Bir örneğini oluşturarak PDF kaydetme seçeneklerini yapılandırın.`PdfSaveOptions` sınıf ve ayarlama`EmbedFullFonts`mülkiyet`false`Bu, yalnızca belgede kullanılan yazı tipi alt kümelerinin PDF dosyasına dahil edilmesini sağlar.
-
- Belgeyi, yazı tipi alt kümeleri gömülü olarak PDF formatında kaydedin.`Save` yöntemi`Document` çıktı dosyasının adını ve daha önce yapılandırılan kaydetme seçeneklerini belirten nesne.
-
-#### S: Yazı tipi alt kümelerini bir PDF belgesine yerleştirmenin faydaları nelerdir?
-C: Yazı tipi alt kümelerini bir PDF belgesine yerleştirmenin faydaları şunlardır:
-
-Küçültülmüş PDF dosya boyutu: Yalnızca belgede kullanılan gliflerin eklenmesiyle, tam yazı tiplerinin gömülmesine kıyasla PDF dosya boyutu küçültülür.
-
-Belgenin görünümünün korunması: PDF dosyasında bulunan yazı tipi alt kümeleri, yalnızca gerçekte kullanılan karakterleri kullanarak belgenin görünümünü yeniden oluşturmayı mümkün kılar.
-
-Lisans kısıtlamalarına uygunluk: Lisans kısıtlamaları nedeniyle yasal olarak tam yazı tiplerinin eklenemediği durumlarda yazı tiplerinin alt kümelerinin gömülmesi tercih edilebilir.
+### PDF'ime hangi yazı tiplerinin gömülü olduğunu nasıl doğrulayabilirim?
+PDF'yi Adobe Acrobat Reader'da açabilir ve gömülü yazı tiplerini görmek için Yazı Tipleri sekmesi altındaki özellikleri kontrol edebilirsiniz.

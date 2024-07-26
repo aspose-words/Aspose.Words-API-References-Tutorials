@@ -16,4 +16,4 @@ Genom att följa Aspose.Words för .NET tutorials kommer du att grundligt kunna 
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Känna igen Uf-8-text](./recognize-utf8-text/) | Lär dig hur du känner igen Utf-8-tecken i RTF-dokument med Aspose.Words för .NET. Säkerställ dataintegritet. |
+| [Känna igen Uf-8-text](./recognize-utf8-text/) | Lär dig hur du känner igen UTF-8-text i Word-dokument med Aspose.Words för .NET med denna detaljerade, steg-för-steg-guide. |

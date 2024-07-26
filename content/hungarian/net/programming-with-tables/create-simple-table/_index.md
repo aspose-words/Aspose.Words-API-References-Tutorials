@@ -21,7 +21,7 @@ A tábla felépítéséhez új dokumentumot kell létrehoznunk, és inicializál
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Hozzon létre egy dokumentumot, és inicializálja a dokumentumgenerátort
+//Hozzon létre egy dokumentumot, és inicializálja a dokumentumgenerátort
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -43,7 +43,7 @@ builder.Write("Contents of cell 1 of row 1.");
 builder. InsertCell();
 builder.Write("Contents of cell 2 of row 1.");
 
-//Hívja a következő metódust az első sor befejezéséhez és egy új sor indításához
+// Hívja a következő metódust az első sor befejezéséhez és egy új sor indításához
 builder. EndRow();
 
 // A második sor első cellájának felépítése
@@ -61,12 +61,12 @@ builder. EndRow();
 builder. EndTable();
 ```
 
- Itt a dokumentumkészítőt használjuk a táblázat elkészítéséhez lépésről lépésre. Hívással kezdjük`StartTable()` a táblázat inicializálásához, majd használja`InsertCell()` sejtek beillesztésére és`Write()` hogy tartalmat adjon az egyes cellákhoz. Mi is használjuk`EndRow()` egy sor befejezéséhez és egy új sor indításához. Végül felhívjuk`EndTable()` jelezni, hogy a táblázat elkészítése befejeződött.
+ Itt a dokumentumkészítőt használjuk a táblázat elkészítéséhez lépésről lépésre. Hívással kezdjük`StartTable()` a táblázat inicializálásához, majd használja`InsertCell()` sejtek beillesztésére és`Write()` tartalom hozzáadásához az egyes cellákhoz. Mi is használjuk`EndRow()` egy sor befejezéséhez és egy új sor indításához. Végül felhívjuk`EndTable()` jelezni, hogy a táblázat elkészítése befejeződött.
 
 ## 4. lépés: Mentse el a dokumentumot
 Végül meg kell mentenünk
 
-  a dokumentumot a létrehozott táblázattal. Használja a következő kódot:
+  dokumentumot a létrehozott táblázattal. Használja a következő kódot:
 
 ```csharp
 // Mentse el a dokumentumot
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 	builder.InsertCell();
 	builder.Write("Row 2, Cell 2 Content.");
 	builder.EndRow();
-	//Jelezze, hogy befejeztük az asztal felépítését.
+	// Jelezze, hogy befejeztük az asztal felépítését.
 	builder.EndTable();
 	doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 ```

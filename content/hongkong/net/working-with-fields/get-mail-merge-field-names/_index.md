@@ -62,7 +62,7 @@ Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.")
 
 #### Q1：Aspose.Words 中的郵件合併是什麼？
 
-Aspose.Words 中的郵件合併是將外部來源（例如 Excel 電子表格或資料庫）的資料與範本 Word 文件合併以建立個人化文件的過程。這有助於自動產生信件、報告和其他類似文件。
+Aspose.Words 中的郵件合併是將外部來源（例如 Excel 試算表或資料庫）的資料與範本 Word 文件合併以建立個人化文件的過程。這有助於自動產生信件、報告和其他類似文件。
 
 #### 問題 2：如何取得 Word 文件中可用的郵件合併欄位清單？
 

@@ -76,7 +76,7 @@ J: Jenis efek teks DrawingML yang umum digunakan di dokumen Word mencakup bayang
 
 #### T: Bagaimana cara memeriksa warna efek teks DrawingML di dokumen Word?
 
-A: Untuk memeriksa warna efek teks DrawingML di dokumen Word, Anda dapat menggunakan metode yang disediakan oleh Aspose.Words untuk mengakses properti warna efek teks. Dengan cara ini Anda bisa mendapatkan warna yang digunakan untuk efek teks tertentu.
+J: Untuk memeriksa warna efek teks DrawingML di dokumen Word, Anda dapat menggunakan metode yang disediakan oleh Aspose.Words untuk mengakses properti warna efek teks. Dengan cara ini Anda bisa mendapatkan warna yang digunakan untuk efek teks tertentu.
 
 #### T: Apakah mungkin untuk memeriksa efek teks di dokumen Word yang berisi banyak bagian?
 

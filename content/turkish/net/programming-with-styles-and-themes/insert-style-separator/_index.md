@@ -20,7 +20,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Bu adımda yeni bir tane oluşturuyoruz.`Document` nesne ve ilişkili`DocumentBuilder` nesne.
+ Bu adımda yeni bir tane oluşturuyoruz.`Document` nesne ve ilişkili`DocumentBuilder` nesne.
 
 ## 3. Adım: Özel stili oluşturma ve yapılandırma
 
@@ -98,7 +98,7 @@ Ortamı kurmak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu v
 
 #### Özel bir stili nasıl oluşturabilir ve yapılandırabilirim?
 
- Özel bir stil oluşturmak için şunu kullanabilirsiniz:`Styles.Add` yöntemi`Document` nesne. Stil türünü belirtin (örn.`StyleType.Paragraph`) ve stil için bir ad girin. Oluşturulduktan sonra, stil nesnesinin yazı tipi özelliklerini değiştirerek görünümünü yapılandırabilirsiniz.
+ Özel bir stil oluşturmak için şunu kullanabilirsiniz:`Styles.Add` yöntemi`Document` nesne. Stil türünü belirtin (örn.`StyleType.Paragraph`ve stil için bir ad girin. Oluşturulduktan sonra, stil nesnesinin yazı tipi özelliklerini değiştirerek görünümünü yapılandırabilirsiniz.
 
 #### Stil ayırıcıyı nasıl eklerim?
 
@@ -106,7 +106,7 @@ Ortamı kurmak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu v
 
 #### Metnin farklı bölümlerine farklı stilleri nasıl uygulayabilirim?
 
-Ayarlayarak metnin farklı bölümlerine farklı stiller uygulayabilirsiniz.`ParagraphFormat.StyleName` mülkiyeti`DocumentBuilder` nesne. Metni yazmadan önce stil adını istediğiniz stile ayarlayabilirsiniz ve ardından gelen metin buna göre biçimlendirilecektir.
+ Ayarlayarak metnin farklı bölümlerine farklı stiller uygulayabilirsiniz.`ParagraphFormat.StyleName` mülkiyeti`DocumentBuilder` nesne. Metni yazmadan önce stil adını istediğiniz stile ayarlayabilirsiniz ve ardından gelen metin buna göre biçimlendirilecektir.
 
 #### Belgeyi farklı formatlarda kaydedebilir miyim?
 

@@ -12,4 +12,4 @@ Hướng dẫn Aspose.Words for .NET về Xử lý văn bản bằng HTMLLoadOpt
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Loại điều khiển ưa thích trong tài liệu Word](./preferred-control-type/) | Hướng dẫn từng bước để chỉ định loại điều khiển ưu tiên trong tài liệu word khi tải tài liệu HTML bằng Aspose.Words cho .NET. |
+| [Loại điều khiển ưa thích trong tài liệu Word](./preferred-control-type/) | Tìm hiểu cách chèn trường biểu mẫu hộp tổ hợp vào tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước này để tích hợp nội dung HTML liền mạch. |

@@ -13,5 +13,5 @@ MarkdownSaveOptions ile Kelime İşleme, .NET için Aspose.Words kütüphanesini
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Tablo İçeriği Hizalamasıyla Markdown'a Aktarma](./export-into-markdown-with-table-content-alignment/) | Aspose.Words for .NET kullanarak tablo içeriğini farklı hizalamalarla Markdown dosyalarına nasıl aktaracağınızı öğrenin. |
-| [Görüntüler Klasörünü Ayarla](./set-images-folder/) | Aspose.Words for .NET ile Markdown'a dışa aktarırken görüntüler klasörünü nasıl ayarlayacağınızı öğrenin. Daha iyi organizasyon ve entegrasyon için görsellerin yerleşimini özelleştirin.|
+| [Tablo İçeriği Hizalamasıyla Markdown'a Aktarma](./export-into-markdown-with-table-content-alignment/) | Aspose.Words for .NET kullanarak Word belgelerini hizalanmış tablolarla Markdown'a nasıl aktaracağınızı öğrenin. Mükemmel Markdown tabloları için adım adım kılavuzumuzu izleyin. |
+| [Görüntüler Klasörünü Ayarla](./set-images-folder/) | Aspose.Words for .NET'i kullanarak Word belgelerini uygun tablo hizalaması ile Markdown'a dönüştürün. Mükemmel sonuçlar için ayrıntılı kılavuzumuzu izleyin. |

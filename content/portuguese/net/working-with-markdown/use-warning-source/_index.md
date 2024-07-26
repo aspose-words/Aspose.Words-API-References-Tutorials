@@ -9,7 +9,7 @@ url: /pt/net/working-with-markdown/use-warning-source/
 ---
 ## Introdução
 
- Você já teve que gerenciar e formatar documentos de maneira programática? Nesse caso, você provavelmente já enfrentou as complexidades de lidar com diferentes tipos de documentos e garantir que tudo esteja perfeito. Digite Aspose.Words for .NET – uma biblioteca poderosa que simplifica o processamento de documentos. Hoje, vamos nos aprofundar em um recurso específico: usar o`WarningSource`classe para capturar e tratar avisos ao trabalhar com Markdown. Vamos embarcar nesta jornada para dominar o Aspose.Words for .NET!
+ Você já teve que gerenciar e formatar documentos de forma programática? Nesse caso, você provavelmente já enfrentou as complexidades de lidar com diferentes tipos de documentos e garantir que tudo esteja perfeito. Digite Aspose.Words for .NET – uma biblioteca poderosa que simplifica o processamento de documentos. Hoje, vamos nos aprofundar em um recurso específico: usar o`WarningSource`classe para capturar e tratar avisos ao trabalhar com Markdown. Vamos embarcar nesta jornada para dominar o Aspose.Words for .NET!
 
 ## Pré-requisitos
 

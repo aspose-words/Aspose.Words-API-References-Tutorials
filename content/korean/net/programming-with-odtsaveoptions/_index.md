@@ -16,4 +16,4 @@ url: /ko/net/programming-with-odtsaveoptions/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [측정 단위](./measure-unit/) | Aspose.Words for .NET을 사용하여 Word 문서를 ODT로 변환할 때 측정 단위를 지정하는 방법을 알아보세요. |
+| [측정 단위](./measure-unit/) | ODT 변환 중에 문서 형식을 유지하기 위해 Aspose.Words for .NET에서 측정 단위 기능을 구성하는 방법을 알아보세요. |

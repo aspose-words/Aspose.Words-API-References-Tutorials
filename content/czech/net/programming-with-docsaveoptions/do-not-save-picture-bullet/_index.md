@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Dále načtete dokument aplikace Word, který obsahuje odrážky obrázků. Tento dokument bude upraven tak, aby při uložení odstranil odrážky obrázku.
 
 ```csharp
-// Vložte dokument s obrázkovými odrážkami
+// Vložte dokument s odrážkami obrázků
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 

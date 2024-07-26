@@ -74,7 +74,7 @@ J: Konversi bidang di Aspose.Words mengacu pada kemampuan untuk mengubah data da
 
 #### T: Bagaimana cara mengonversi bidang dalam dokumen Word dengan Aspose.Words?
 
-A: Untuk mengonversi bidang dalam dokumen Word dengan Aspose.Words, Anda dapat mengikuti langkah-langkah berikut:
+A: Untuk mengonversi kolom di dokumen Word dengan Aspose.Words, Anda dapat mengikuti langkah-langkah berikut:
 
 1. Impor kelas Dokumen dari namespace Aspose.Words.
 2. Buat instance Dokumen dengan memuat dokumen Anda yang sudah ada.

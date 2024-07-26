@@ -2,68 +2,101 @@
 title: Betűtípusnevek feloldása
 linktitle: Betűtípusnevek feloldása
 second_title: Aspose.Words Document Processing API
-description: Útmutató lépésről lépésre a hiányzó betűtípusnevek megoldásához, amikor az Aspose.Words for .NET segítségével HTML-re konvertál.
+description: Ismerje meg, hogyan lehet feloldani a betűtípusneveket a Word-dokumentumokban, amikor az Aspose.Words for .NET használatával HTML-re konvertál. Lépésről lépésre útmutató részletes magyarázatokkal.
 type: docs
 weight: 10
 url: /hu/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
+## Bevezetés
 
-Ebben az oktatóanyagban végigvezetjük a C# forráskódon, hogy az Aspose.Words for .NET segítségével kijavítsa a hiányzó betűtípusneveket. Ez a funkció lehetővé teszi a hiányzó betűtípusnevek automatikus feloldását, amikor egy dokumentumot HTML formátumba konvertál.
+Szia kódolótárs! Ha valaha is fontproblémákkal küszködött a Word-dokumentumok HTML formátumban történő mentésekor, nincs egyedül. A betűtípusok bonyolultak lehetnek, de ne aggódjon; Fedezlek. Ma azt vizsgáljuk meg, hogyan lehet feloldani a betűtípusneveket a Word-dokumentumokban az Aspose.Words for .NET használatával. Ez az útmutató lépésről lépésre végigvezeti a folyamaton, biztosítva, hogy a betűtípusok HTML formátumban megfelelően nézzenek ki.
 
-## 1. lépés: A projekt beállítása
+## Előfeltételek
 
-A kezdéshez hozzon létre egy új C#-projektet kedvenc IDE-jében. Győződjön meg arról, hogy az Aspose.Words for .NET könyvtárra hivatkozik a projektben.
+Mielőtt elkezdenénk, győződjünk meg arról, hogy rendelkezik-e mindennel, amire szüksége van:
 
-## 2. lépés: A dokumentum betöltése
+1.  Aspose.Words for .NET: Ha még nem tette meg, letöltheti[itt](https://releases.aspose.com/words/net/).
+2.  Érvényes licenc: licencet vásárolhat[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
+3. Alapvető ismeretek a C#-ról és a .NET-ről: Ez az oktatóanyag feltételezi, hogy kényelmesen ismeri az alapvető programozási fogalmakat a C# nyelven.
+4. Visual Studio: Bármely verzió, amely támogatja a .NET-keretrendszert.
 
-Ebben a lépésben betöltjük a feldolgozandó dokumentumot. A következő kóddal töltheti be a dokumentumot egy megadott könyvtárból:
+Most, hogy az előfeltételeinket rendeztük, ugorjunk a cselekvésbe!
+
+## Névterek importálása
+
+Mielőtt elkezdené a kódolást, győződjön meg róla, hogy importálta a szükséges névtereket a projektbe. Ez kulcsfontosságú az Aspose.Words funkcióinak eléréséhez.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1. lépés: A dokumentumkönyvtár beállítása
+
+Először is állítsuk be a dokumentumkönyvtár elérési útját. Itt található a Word-dokumentum, és itt mentheti a kimenetet.
+
+```csharp
+// A dokumentumok könyvtárának elérési útja.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+Magyarázat:
+ Itt,`dataDir` tartalmazza a dokumentumkönyvtár elérési útját. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a rendszer tényleges elérési útjával.
+
+## 2. lépés: A Word-dokumentum betöltése
+
+Ezután be kell töltenünk a feldolgozni kívánt Word dokumentumot. Ennek a dokumentumnak tartalmaznia kell a feloldani kívánt betűtípusokat.
+
+```csharp
 Document doc = new Document(dataDir + "Missing font.docx");
 ```
 
- Ez a kód létrehozza a`Document` a dokumentum betöltésével a megadott könyvtárból.
+Magyarázat:
+ Létrehozunk a`Document` objektumot, és töltse be a "Missing font.docx" nevű Word-dokumentumot`dataDir`.
 
-## 3. lépés: A HTML biztonsági mentési beállítások konfigurálása
+## 3. lépés: HTML mentési beállítások konfigurálása
 
-Most konfiguráljuk a HTML mentési beállításokat, hogy feloldjuk a konverzió során hiányzó betűtípusneveket. Használja a következő kódot:
+Most állítsuk be a dokumentum HTML formátumban való mentésére vonatkozó beállításokat. Itt biztosítjuk a betűtípusnevek helyes feloldását.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 {
-PrettyFormat = true,
-ResolveFontNames=true
+    PrettyFormat = true,
+    ResolveFontNames = true
 };
 ```
 
- Ez a kód létrehozza a`HtmlSaveOptions` és beállítja a`ResolveFontNames` opciót`true` hiányzó betűtípusnevek feloldásához HTML-re konvertáláskor. Továbbá a`PrettyFormat` opcióra van állítva`true` hogy szépen formázott HTML kódot kapjunk.
+Magyarázat:
+ Létrehozunk egy példányt`HtmlSaveOptions` val vel`SaveFormat.Html` . A`PrettyFormat` opció olvashatóbbá teszi a HTML kimenetet, és`ResolveFontNames` biztosítja a betűtípusnevek feloldását.
 
-## 4. lépés: A dokumentum konvertálása és mentése HTML formátumba
+## 4. lépés: A dokumentum mentése HTML-ként
 
-Végül a dokumentumot HTML formátumba konvertáljuk a korábban beállított HTML mentési beállításokkal. Használja a következő kódot:
+Végül a dokumentumot HTML-fájlként mentjük a beállított mentési beállításokkal.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
 ```
 
-Ez a kód a hiányzó betűtípusnevek automatikus feloldásával konvertálja a dokumentumot HTML formátumba, és a konvertált HTML-fájlt a megadott könyvtárba menti.
+Magyarázat:
+ Hívjuk a`Save` módszer a`Document` objektumot, megadva a kimeneti útvonalat és az általunk konfigurált mentési beállításokat. Ez létrehoz egy HTML-fájlt a feloldott betűtípusnevekkel.
 
-### Példa forráskódra a Resolve Font Names with Aspose.Words for .NET programhoz
+## Következtetés
 
-```csharp
+És megvan! Az alábbi lépések követésével sikeresen feloldotta a betűtípusneveket, amikor egy Word-dokumentumot HTML-formátumba konvertál az Aspose.Words for .NET használatával. Ez nem csak a betűtípusok helyes megjelenítését biztosítja, hanem a HTML-kimenetet is csiszolt és professzionális megjelenést kölcsönöz. Boldog kódolást!
 
-	// A dokumentumok könyvtárának elérési útja.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Missing font.docx");
+## GYIK
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
-	{
-		PrettyFormat = true, ResolveFontNames = true
-	};
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, módosítását és konvertálását.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);
+### Hogyan telepíthetem az Aspose.Words for .NET fájlt?
+ Az Aspose.Words for .NET letölthető innen[itt](https://releases.aspose.com/words/net/). Kövesse a dokumentációban található telepítési utasításokat.
 
-```
+### Használhatom az Aspose.Words for .NET-et licenc nélkül?
+ Igen, de ennek lesznek bizonyos korlátai. A teljes funkcionalitás érdekében licencet vásárolhat[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 
- Ügyeljen arra, hogy a dokumentumkönyvtár helyes elérési útját adja meg a`dataDir` változó.
+### Miért nem jelennek meg megfelelően a betűtípusaim a HTML-ben?
+ Ez akkor fordulhat elő, ha a betűtípusok nincsenek megfelelően feloldva az átalakítás során. Használata`ResolveFontNames = true` ban ben`HtmlSaveOptions` segíthet a probléma megoldásában.
+
+### Hol kaphatok támogatást az Aspose.Words for .NET-hez?
+ Támogatást kaphat a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).

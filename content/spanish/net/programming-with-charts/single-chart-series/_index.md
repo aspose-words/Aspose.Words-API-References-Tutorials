@@ -2,7 +2,7 @@
 title: Personalizar series de gráficos únicos en un gráfico
 linktitle: Personalizar series de gráficos únicos en un gráfico
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a personalizar series de gráficos únicos en un documento de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para disfrutar de una experiencia perfecta.
+description: Aprenda a personalizar series de gráficos individuales en un documento de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para disfrutar de una experiencia perfecta.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/single-chart-series/

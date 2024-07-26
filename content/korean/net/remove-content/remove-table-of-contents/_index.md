@@ -41,7 +41,7 @@ using Aspose.Words.Fields;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 폴더의 경로와 함께. 여기에는 Word 파일이 있는 곳입니다.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"`문서 폴더의 경로와 함께. 여기에는 Word 파일이 있는 곳입니다.
 
 ## 2단계: 문서 로드
 
@@ -89,7 +89,7 @@ Aspose.Words for .NET은 문서 조작을 위한 강력한 .NET 라이브러리�
 
 ### 2. Aspose.Words를 무료로 사용할 수 있나요?
 
- 예, Aspose.Words를 다음과 함께 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/).
+ 예, Aspose.Words를 다음과 함께 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시면허](https://purchase.aspose.com/temporary-license/).
 
 ### 3. Aspose.Words를 사용하여 다른 필드를 제거할 수 있습니까?
 

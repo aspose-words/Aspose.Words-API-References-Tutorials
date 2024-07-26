@@ -14,7 +14,7 @@ Dalam tutorial ini, kami akan memandu Anda tentang cara membagi dokumen Word men
 Untuk memulai, tentukan direktori untuk dokumen Anda dan muat dokumen ke dalam objek Dokumen. Begini caranya:
 
 ```csharp
-//Jalur ke direktori dokumen.
+// Jalur ke direktori dokumen.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Rendering.docx");
 ```
@@ -82,4 +82,4 @@ Ya, Anda dapat memilih kriteria berbeda untuk memisahkan dokumen berdasarkan keb
 
 #### Bisakah saya membagi dokumen berdasarkan beberapa kriteria?
 
- Ya, Anda dapat membagi dokumen berdasarkan beberapa kriteria dengan menggabungkan pilihan kriteria yang sesuai. Misalnya, Anda dapat membagi dokumen berdasarkan judul dan halaman dengan mengatur`DocumentSplitCriteria`properti ke`HeadingParagraph | Page`. Ini akan membagi dokumen pada setiap judul dan setiap halaman, membuat bagian-bagian yang lebih kecil berdasarkan kedua kriteria tersebut.
+ Ya, Anda dapat membagi dokumen berdasarkan beberapa kriteria dengan menggabungkan opsi kriteria yang sesuai. Misalnya, Anda dapat membagi dokumen berdasarkan judul dan halaman dengan mengatur`DocumentSplitCriteria`properti ke`HeadingParagraph | Page`. Ini akan membagi dokumen pada setiap judul dan setiap halaman, membuat bagian-bagian yang lebih kecil berdasarkan kedua kriteria tersebut.

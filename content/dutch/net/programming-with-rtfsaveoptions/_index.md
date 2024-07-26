@@ -16,4 +16,4 @@ Door de Aspose.Words voor .NET-tutorials te gebruiken, kunt u eenvoudig Word-doc
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Afbeeldingen opslaan als Wmf](./saving-images-as-wmf/) | Leer hoe u afbeeldingen opslaat als WMF bij het converteren naar RTF met Aspose.Words voor .NET. |
+| [Afbeeldingen opslaan als Wmf](./saving-images-as-wmf/) | Leer hoe u afbeeldingen als WMF in Word-documenten kunt opslaan met Aspose.Words voor .NET met onze gedetailleerde stapsgewijze handleiding. Verbeter uw documentcompatibiliteit en beeldkwaliteit. |

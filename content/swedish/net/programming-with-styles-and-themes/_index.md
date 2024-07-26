@@ -20,4 +20,4 @@ Oavsett om du är nybörjare eller erfaren utvecklare ger Aspose.Words för .NET
 | [Kopiera stilar](./copy-styles/) | Lär dig hur du kopierar stilar mellan dokument med Aspose.Words för .NET. |
 | [Skaffa temaegenskaper](./get-theme-properties/) | Utforska ett dokuments temaegenskaper med Aspose.Words för .NET. Anpassa stilar och färger för en unik look. |
 | [Ställ in temaegenskaper](./set-theme-properties/) | Lär dig att anpassa utseendet på dina dokument genom att ändra temaegenskaper med Aspose.Words för .NET. Få professionella och attraktiva resultat. |
-| [Sätt in stilavskiljare](./insert-style-separator/) | Lär dig att skapa dokument med anpassade stilar och infoga stilavgränsare för exakt, professionell formatering. |
+| [Infoga stilavskiljare](./insert-style-separator/) | Lär dig att skapa dokument med anpassade stilar och infoga stilavgränsare för exakt, professionell formatering. |

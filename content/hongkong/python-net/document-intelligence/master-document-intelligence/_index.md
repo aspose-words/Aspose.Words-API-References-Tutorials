@@ -115,7 +115,7 @@ doc.save("output.docx")
 
 ### 實施文件自動化
 
-使用 Aspose.Words 自動產生文件。這減少了人工幹預，最大限度地減少錯誤並提高效率。以下是如何使用 Aspose.Words 自動產生文件的範例：
+使用 Aspose.Words 自動產生文件。這減少了人工幹預、最大限度地減少錯誤並提高了效率。以下是如何使用 Aspose.Words 自動產生文件的範例：
 
 ```python
 import aspose.words as aw
@@ -283,7 +283,7 @@ else:
 Aspose.Words是一個功能強大的Python函式庫，提供廣泛的文件處理功能。它使用戶能夠以程式設計方式建立、編輯、提取和操作 Word 文檔，使其成為文檔智慧任務的寶貴工具。
 
 ### Aspose.Words 可以處理除 Word 文件 (DOCX) 之外的其他文件格式嗎？
-是的，雖然 Aspose.Words 主要專注於 Word 文件 (DOCX)，但它也可以處理其他格式，例如 RTF（富文本格式）和 ODT（開放文件文字）。
+是的，雖然Aspose.Words主要專注於Word文件（DOCX），但它也可以處理其他格式，例如RTF（富文本格式）和ODT（開放文件文字）。
 
 ### Aspose.Words 與 Python 3.x 版本相容嗎？
 是的，Aspose.Words 與 Python 3.x 版本完全相容，確保使用者可以利用 Python 提供的最新功能和改進。

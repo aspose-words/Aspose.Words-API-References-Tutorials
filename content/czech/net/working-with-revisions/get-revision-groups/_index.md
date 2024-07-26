@@ -72,7 +72,7 @@ foreach(RevisionGroup group in doc.Revisions.Groups)
 
 #### Otázka: Jak získat autora recenzní skupiny v Aspose.Words pro .NET?
 
- A: Použijte`Author` vlastnictvím`RevisionGroup` objekt získat autora revizní skupiny.
+ A: Použijte`Author` majetek z`RevisionGroup` objekt získat autora revizní skupiny.
 
 ```csharp
 string author = group.Author;
@@ -80,7 +80,7 @@ string author = group.Author;
 
 #### Otázka: Jak získat typ revize skupiny revizí v Aspose.Words pro .NET?
 
- A: Použijte`RevisionType` vlastnictvím`RevisionGroup` objekt, abyste získali typ revize skupiny.
+ A: Použijte`RevisionType` majetek z`RevisionGroup` objekt, abyste získali typ revize skupiny.
 
 ```csharp
 string revisionType = group.RevisionType;

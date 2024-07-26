@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-이 코드는 새 Word 문서를 초기화합니다. 교체하셔야 합니다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
+ 이 코드는 새 Word 문서를 초기화합니다. 교체하셔야 합니다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오.
 
 ## 2단계: 테이블 개체 생성
 
@@ -71,7 +71,7 @@ doc.FirstSection.Body.AppendChild(table);
 // 여기서 EnacheMinimum을 호출하여 행과 셀을 생성할 수 있습니다. 이 방법이 사용됩니다
 // 지정된 노드가 유효한지 확인합니다. 이 경우 유효한 테이블에는 최소한 하나의 행과 하나의 셀이 있어야 합니다.
 // 대신 행과 테이블 생성을 직접 처리하겠습니다.
-//알고리즘 내부에 테이블을 생성하는 경우 이것이 가장 좋은 방법입니다.
+// 알고리즘 내부에 테이블을 생성하는 경우 이것이 가장 좋은 방법입니다.
 Row row = new Row(doc);
 row.RowFormat.AllowBreakAcrossPages = true;
 table.AppendChild(row);

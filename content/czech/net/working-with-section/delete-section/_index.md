@@ -18,7 +18,7 @@ Než se vrhneme na to, co potřebujete, ujistěte se, že máte vše, co potřeb
 1. Visual Studio: Ujistěte se, že máte nainstalované Visual Studio. Můžete použít jakoukoli verzi, ale vždy se doporučuje nejnovější.
 2. .NET Framework: Aspose.Words podporuje rozhraní .NET Framework 2.0 nebo vyšší. Ujistěte se, že jej máte nainstalovaný.
 3. Aspose.Words for .NET: Stáhněte si a nainstalujte Aspose.Words for .NET z[tady](https://releases.aspose.com/words/net/).
-4. Základní znalost C#: Základní znalost programování v C# bude přínosem.
+4. Základní znalosti C#: Základní znalost programování v C# bude přínosem.
 
 ## Importovat jmenné prostory
 

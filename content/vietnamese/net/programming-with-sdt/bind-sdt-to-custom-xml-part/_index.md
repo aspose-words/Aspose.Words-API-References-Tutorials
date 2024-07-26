@@ -17,7 +17,7 @@ Hướng dẫn này trình bày cách liên kết Thẻ tài liệu có cấu tr
 - Kiến thức cơ bản về C# và XML.
 
 ## Bước 1: Thiết lập thư mục tài liệu
- Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"`với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
+ Bắt đầu bằng cách thiết lập đường dẫn đến thư mục tài liệu của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục mà bạn muốn lưu tài liệu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Bước 3: Thêm Thẻ tài liệu có cấu trúc (SDT) vào tài liệu
- Thêm một`StructuredDocumentTag` vào tài liệu để đóng vai trò kiểm soát nội dung. Chỉ định la`SdtType` BẰNG`PlainText` và`MarkupLevel` BẰNG`Block` để tạo SDT cấp khối.
+ Thêm một`StructuredDocumentTag`vào tài liệu để đóng vai trò kiểm soát nội dung. Chỉ định la`SdtType` BẰNG`PlainText` và`MarkupLevel` BẰNG`Block` để tạo SDT cấp khối.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

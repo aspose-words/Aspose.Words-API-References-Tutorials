@@ -48,7 +48,7 @@ Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- इस अंतिम चरण में, हम परिणामी दस्तावेज़ को .docx प्रारूप में सहेजते हैं`Save` विधि और आउटपुट फ़ाइल के लिए पथ पारित करना।
+इस अंतिम चरण में, हम परिणामी दस्तावेज़ को .docx प्रारूप में सहेजते हैं`Save` विधि और आउटपुट फ़ाइल के लिए पथ पारित करना।
 
 अब आप टेक्स्ट डॉक्यूमेंट को लोड करने और टेक्स्ट की दिशा निर्धारित करने के लिए सोर्स कोड चला सकते हैं। परिणामी दस्तावेज़ "WorkingWithTxtLoadOptions.DocumentTextDirection.docx" नाम से निर्दिष्ट निर्देशिका में सहेजा जाएगा।
 

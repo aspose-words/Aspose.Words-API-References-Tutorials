@@ -36,7 +36,7 @@ Ces espaces de noms sont essentiels pour créer, manipuler et enregistrer des do
 
 ## Étape 1 : configuration du répertoire de documents
 
-Tout d'abord, nous devons spécifier le répertoire dans lequel nos documents sont stockés. Cela aide Aspose.Words à localiser les fichiers avec lesquels nous voulons travailler.
+Tout d'abord, nous devons spécifier le répertoire dans lequel nos documents sont stockés. Cela aide Aspose.Words à localiser les fichiers avec lesquels nous souhaitons travailler.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

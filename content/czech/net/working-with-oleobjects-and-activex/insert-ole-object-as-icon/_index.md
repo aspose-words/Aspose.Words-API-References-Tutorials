@@ -19,7 +19,7 @@ using Aspose.Words.Drawing;
 ```
 
 ## Krok 2: Vytvořte nový dokument a generátor dokumentů
- V tomto kroku vytvoříme nový dokument pomocí`Document` třídu a tvůrce dokumentů pomocí`DocumentBuilder` třída.
+ V tomto kroku vytvoříme nový dokument pomocí`Document` třída a tvůrce dokumentů pomocí`DocumentBuilder` třída.
 
 ```csharp
 Document doc = new Document();
@@ -72,7 +72,7 @@ using Aspose.Words.Drawing;
 
 #### Otázka: Jak vytvořit nový dokument a generátor dokumentů v Aspose.Words pro .NET?
 
- Odpověď: Můžete vytvořit nový dokument pomocí`Document` třídu a tvůrce dokumentů pomocí`DocumentBuilder`třída. Zde je příklad:
+ Odpověď: Můžete vytvořit nový dokument pomocí`Document` třída a tvůrce dokumentů pomocí`DocumentBuilder`třída. Zde je příklad:
 
 ```csharp
 Document doc = new Document();

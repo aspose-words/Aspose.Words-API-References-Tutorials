@@ -97,7 +97,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## Abschluss
 
-Und da haben Sie es! Mit diesen Schritten haben Sie erfolgreich ein neues Word-Dokument erstellt, eine Signaturzeile hinzugefügt und es mit Aspose.Words für .NET digital signiert. Es ist ein leistungsstarkes Tool, das die Dokumentenautomatisierung zum Kinderspiel macht. Egal, ob Sie mit Verträgen, Vereinbarungen oder anderen formellen Dokumenten arbeiten, diese Methode stellt sicher, dass sie sicher signiert und authentifiziert werden.
+Und da haben Sie es! Mit diesen Schritten haben Sie erfolgreich ein neues Word-Dokument erstellt, eine Signaturzeile hinzugefügt und es mit Aspose.Words für .NET digital signiert. Es ist ein leistungsstarkes Tool, das die Dokumentenautomatisierung zum Kinderspiel macht. Egal, ob Sie mit Verträgen, Vereinbarungen oder anderen formellen Dokumenten arbeiten, diese Methode stellt sicher, dass sie sicher signiert und authentifiziert sind.
 
 ## Häufig gestellte Fragen
 

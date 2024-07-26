@@ -75,7 +75,7 @@ Opanowanie prześledzonych wersji w dokumentach Word przy użyciu Aspose.Words d
 Śledzone wersje w dokumentach programu Word odnoszą się do zmian wprowadzonych w dokumencie, które są widoczne dla innych dzięki znacznikom, często używanym do wspólnego edytowania i recenzowania.
 
 ### Jak mogę zintegrować Aspose.Words for .NET z moim projektem Visual Studio?
-Możesz zintegrować Aspose.Words dla .NET, pobierając bibliotekę ze strony internetowej Aspose i odwołując się do niej w projekcie Visual Studio.
+Możesz zintegrować Aspose.Words dla .NET, pobierając bibliotekę ze strony Aspose i odwołując się do niej w swoim projekcie Visual Studio.
 
 ### Czy mogę programowo cofnąć prześledzone wersje za pomocą Aspose.Words dla .NET?
 Tak, możesz programowo zarządzać prześledzonymi wersjami i przywracać je za pomocą Aspose.Words dla .NET, umożliwiając precyzyjną kontrolę nad przepływami pracy związanymi z edycją dokumentów.

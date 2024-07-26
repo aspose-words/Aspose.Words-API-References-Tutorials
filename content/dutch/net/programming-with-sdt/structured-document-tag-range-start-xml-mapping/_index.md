@@ -24,7 +24,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Stap 2: Laad het document en maak een XML-onderdeel
- Laad het Word-document met behulp van de`Document`constructor, waarbij het pad naar het document als parameter wordt doorgegeven. Maak een XML-onderdeel dat de gegevens bevat die u binnen de gestructureerde documenttag wilt weergeven.
+ Laad het Word-document met behulp van de`Document` constructor, waarbij het pad naar het document als parameter wordt doorgegeven. Maak een XML-onderdeel dat de gegevens bevat die u binnen de gestructureerde documenttag wilt weergeven.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -42,7 +42,7 @@ sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 ```
 
 ## Stap 4: Sla het document op
- Sla het gewijzigde document op in de opgegeven map met behulp van de`Save` methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx".
+ Sla het gewijzigde document op in de opgegeven map met behulp van de`Save`methode. Geef de gewenste bestandsnaam op met de juiste bestandsextensie. In dit voorbeeld slaan we het document op als "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx".
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");
@@ -63,7 +63,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 	// Maak een StructuredDocumentTag die de inhoud van onze CustomXmlPart in het document weergeeft.
 	StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart)doc.GetChild(NodeType.StructuredDocumentTagRangeStart, 0, true);
 	// Als we een mapping instellen voor onze StructuredDocumentTag,
-	//het geeft alleen een deel van de CustomXmlPart weer waarnaar de XPath verwijst.
+	// het geeft alleen een deel van de CustomXmlPart weer waarnaar de XPath verwijst.
 	// Deze XPath zal verwijzen naar het tweede "<text>"-element van het eerste "<root>"-element van onze CustomXmlPart.
 	sdtRangeStart.XmlMapping.SetMapping(xmlPart, "/root[1]/text[2]", null);
 	doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.docx");

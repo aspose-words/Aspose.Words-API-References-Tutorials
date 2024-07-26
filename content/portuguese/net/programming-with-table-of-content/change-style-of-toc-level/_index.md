@@ -67,7 +67,7 @@ Neste guia, explicamos como usar Aspose.Words for .NET para alterar o estilo de 
 
 #### P: Qual é o propósito da funcionalidade "Alterar estilo de toque no documento do Word" no Aspose.Words for .NET?
 
-R: A funcionalidade "Alterar estilo de toque no documento do Word" no Aspose.Words for .NET permite modificar o estilo de um nível específico no índice de um documento do Word. Ele permite que você personalize a aparência e a formatação do índice, como alterar o estilo da fonte, tamanho, cor ou outros aspectos visuais de um nível específico.
+R: A funcionalidade "Alterar estilo de toque no documento do Word" no Aspose.Words for .NET permite modificar o estilo de um nível específico no índice de um documento do Word. Ele permite personalizar a aparência e a formatação do índice, como alterar o estilo da fonte, tamanho, cor ou outros aspectos visuais de um nível específico.
 
 #### P: O que é Aspose.Words para .NET?
 
@@ -95,7 +95,7 @@ doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 
 #### P: Posso alterar o estilo de vários níveis no índice usando Aspose.Words for .NET?
 
- R: Sim, você pode alterar o estilo de vários níveis no índice usando Aspose.Words for .NET. Para modificar o estilo de um nível específico, você pode acessar o estilo correspondente usando o botão`Styles`propriedade e faça as alterações desejadas em cada nível individualmente.
+R: Sim, você pode alterar o estilo de vários níveis no índice usando Aspose.Words for .NET. Para modificar o estilo de um nível específico, você pode acessar o estilo correspondente usando o botão`Styles` propriedade e faça as alterações desejadas em cada nível individualmente.
 
 #### P: Como faço para salvar o documento modificado após alterar o estilo do índice analítico usando Aspose.Words for .NET?
 
@@ -117,7 +117,7 @@ R: Sim, além de alterar o estilo, você pode aplicar várias alterações de fo
 
 #### P: Posso alterar o estilo do índice analítico em um documento do Word existente usando Aspose.Words for .NET?
 
- R: Sim, você pode alterar o estilo do índice em um documento Word existente usando Aspose.Words for .NET. Basta carregar o documento usando o`Document` classe, modifique as propriedades de estilo usando o`Styles` propriedade e salve o documento para aplicar as alterações.
+R: Sim, você pode alterar o estilo do índice em um documento Word existente usando Aspose.Words for .NET. Basta carregar o documento usando o`Document` classe, modifique as propriedades de estilo usando o`Styles` propriedade e salve o documento para aplicar as alterações.
 
 #### P: O Aspose.Words for .NET oferece suporte à alteração de outros estilos e formatação em documentos do Word?
 

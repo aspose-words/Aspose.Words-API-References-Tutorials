@@ -12,4 +12,4 @@ Az Aspose.Words for .NET oktatóanyaga az OfficeMath-szal végzett szövegfeldol
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Matematikai egyenletek](./math-equations/) | Ismerje meg, hogyan adhat matematikai egyenleteket Word-dokumentumaihoz az Aspose.Words for .NET használatával. |
+| [Matematikai egyenletek](./math-equations/) | Ismerje meg, hogyan konfigurálhat matematikai egyenleteket Word dokumentumokban az Aspose.Words for .NET használatával. Lépésről lépésre, példákkal, GYIK-ekkel és sok mással. |

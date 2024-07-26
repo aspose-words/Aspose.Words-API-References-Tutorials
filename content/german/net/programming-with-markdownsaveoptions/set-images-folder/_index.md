@@ -2,60 +2,114 @@
 title: Bilderordner festlegen
 linktitle: Bilderordner festlegen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie den Bilderordner beim Exportieren nach Markdown mit Aspose.Words für .NET festlegen. Passen Sie die Platzierung der Bilder für eine bessere Organisation und Integration an.
+description: Konvertieren Sie Word-Dokumente mit der richtigen Tabellenausrichtung in Markdown mit Aspose.Words für .NET. Folgen Sie unserer ausführlichen Anleitung für perfekte Ergebnisse.
 type: docs
 weight: 10
 url: /de/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
+## Einführung
 
-Hier ist eine Schritt-für-Schritt-Anleitung zur Erklärung des folgenden C#-Quellcodes, der dabei hilft, den Bilderordner für Markdown-Exportoptionen mithilfe der Aspose.Words-Bibliothek für .NET einzurichten. Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek in Ihr Projekt aufgenommen haben, bevor Sie diesen Code verwenden.
+Wollten Sie schon immer Ihr Word-Dokument in das Markdown-Format exportieren und dabei sicherstellen, dass Tabellen und Inhalt perfekt ausgerichtet sind? Aspose.Words für .NET ist Ihre Lösung für diese Aufgabe. In diesem Artikel führen wir Sie durch den Prozess der Einrichtung von Aspose.Words, der Vorbereitung Ihres Dokuments und des Exports in Markdown mit korrekt ausgerichtetem Tabelleninhalt. Wir werden jeden Schritt aufschlüsseln, damit er leicht nachvollziehbar und verständlich ist. Lassen Sie uns also loslegen und Ihre Word-Dokumente in schön ausgerichtete Markdown-Dateien umwandeln!
 
-## Schritt 1: Dokumentverzeichnispfad festlegen
+## Voraussetzungen
+
+Bevor wir beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
+
+-  Aspose.Words für .NET: Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/).
+-  Eine gültige Lizenz: Erhalten Sie eine kostenlose Testversion[Hier](https://releases.aspose.com/) oder eine vorläufige Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
+- Visual Studio: Oder jede andere IDE, die .NET-Entwicklung unterstützt.
+- Grundkenntnisse in C#: Verständnis der Programmiersprache C#.
+
+## Namespaces importieren
+
+Zu Beginn müssen Sie die erforderlichen Namespaces in Ihr C#-Projekt importieren. Diese Namespaces ermöglichen Ihnen den Zugriff auf die Aspose.Words-Funktionalität.
 
 ```csharp
-// Der Pfad zum Dokumentverzeichnis.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+using Aspose.Words;
+using Aspose.Words.Saving;
+using System.IO;
 ```
 
-Geben Sie unbedingt den richtigen Pfad zu Ihrem Dokumentverzeichnis an, in dem sich das Dokument mit den Bildern befindet.
+## Schritt 1: Richten Sie Ihr Projekt ein
 
-## Schritt 2: Laden Sie das Dokument mit den Bildern
+Richten Sie zunächst Ihr .NET-Projekt in Ihrer IDE ein. Erstellen Sie eine neue Konsolenanwendung und fügen Sie einen Verweis auf Aspose.Words für .NET hinzu.
+
+### 1.1 Neues Projekt erstellen
+
+Öffnen Sie Visual Studio und erstellen Sie ein neues Konsolenanwendungsprojekt. Nennen Sie es „MarkdownExporter“ oder etwas Ähnliches.
+
+### 1.2 Aspose.Words-Referenz hinzufügen
+
+ Um Aspose.Words zu Ihrem Projekt hinzuzufügen, können Sie die DLL entweder von der[Aspose-Website](https://releases.aspose.com/words/net/) und fügen Sie es manuell hinzu oder verwenden Sie den NuGet-Paket-Manager:
+
+```bash
+Install-Package Aspose.Words
+```
+
+## Schritt 2: Schreiben Sie den Code zum Exportieren als Markdown
+
+Schreiben wir nun den Code zum Lesen des Word-Dokuments und speichern es als Markdown-Datei mit der richtigen Tabellenausrichtung.
+
+### 2.1 Definieren Sie den Pfad zu Ihrem Dokument
+
+Legen Sie den Pfad zu Ihrem Word-Dokument und den Ordner fest, in dem Sie Bilder speichern möchten.
+
+```csharp
+string dataDir = "YOUR_DOCUMENT_DIRECTORY";
+```
+
+### 2.2 Dokument laden
+
+Laden Sie Ihr Word-Dokument mit Aspose.Words.
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-Wir laden das angegebene Dokument, das die Bilder enthält, die wir mit Markdown-Optionen exportieren möchten.
+### 2.3 Markdown-Speicheroptionen konfigurieren
 
-## Schritt 3: Bilderordner für Markdown-Exportoptionen festlegen
+ Konfigurieren Sie die`MarkdownSaveOptions` um anzugeben, wo Bilder gespeichert werden sollen.
 
 ```csharp
-MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
+MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
+{
+    ImagesFolder = dataDir + "Images"
+};
 ```
 
- Wir erstellen eine Instanz von`MarkdownSaveOptions` und legen Sie den Pfad zum Bilderordner mit dem`ImagesFolder` Eigenschaft. Stellen Sie sicher, dass Sie den richtigen Pfad zu dem Ordner angeben, in dem Sie die exportierten Bilder speichern möchten.
+### 2.4 Speichern Sie das Dokument als Markdown
 
-## Schritt 4: Speichern Sie das Dokument mit Markdown-Exportoptionen
+ Benutze einen`MemoryStream` um das Dokument im Markdown-Format zu speichern.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())
-     doc. Save(stream, saveOptions);
+{
+    doc.Save(stream, saveOptions);
+}
 ```
 
-Wir speichern das Dokument in einem Speicherstream unter Verwendung der angegebenen Markdown-Exportoptionen. Anschließend können Sie den Flow verwenden, um andere Vorgänge auszuführen, z. B. das Speichern von Markdown-Inhalten in einer Datei.
+## Abschluss
 
-### Beispielquellcode zum Festlegen des Bilderordners für MarkdownSaveOptions mit Aspose.Words für .NET
+Wenn Sie diese Schritte befolgen, ist das Exportieren eines Word-Dokuments nach Markdown mit Ausrichtung des Tabelleninhalts mithilfe von Aspose.Words für .NET ganz einfach. Mit ein paar Zeilen Code können Sie den Konvertierungsprozess automatisieren und sicherstellen, dass Ihr Inhalt gut formatiert ist. Jetzt können Sie Ihre Dokumente ganz einfach im Markdown-Format freigeben und dabei sicher sein, dass sie gut aussehen und ihre Struktur beibehalten.
 
-```csharp
-// Der Pfad zum Dokumentverzeichnis.
-string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
+## Häufig gestellte Fragen
 
-Document doc = new Document(dataDir + "Image bullet points.docx");
+### Kann ich Aspose.Words für .NET mit anderen Programmiersprachen verwenden?
 
-MarkdownSaveOptions saveOptions = new MarkdownSaveOptions { ImagesFolder = dataDir + "Images" };
+Ja, Aspose.Words für .NET kann mit jeder .NET-kompatiblen Sprache wie VB.NET, F# und mehr verwendet werden.
 
-using (MemoryStream stream = new MemoryStream())
-     doc. Save(stream, saveOptions);
-```
+### Wie erhalte ich eine temporäre Lizenz für Aspose.Words?
 
-Dieser Quellcode zeigt, wie Sie ein Dokument laden, das Bilder enthält, und dann den Bilderordner für Markdown-Exportoptionen festlegen. Mit den angegebenen Optionen wird das Dokument dann in einem Speicherstream gespeichert. Auf diese Weise können Sie den Speicherort des Bilderordners beim Exportieren von Markdown-Inhalten anpassen.
+ Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
+
+### Welche Dokumenttypen kann ich in Markdown konvertieren?
+
+Sie können verschiedene Word-Dokumente konvertieren, darunter .doc, .docx, .rtf und mehr.
+
+### Gibt es irgendwelche Einschränkungen bei der Testversion von Aspose.Words?
+
+Die Testversion hat einige Einschränkungen, wie z. B. Wasserzeichen in den Ausgabedateien. Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/).
+
+### Wo finde ich weitere Beispiele und Dokumentation für Aspose.Words?
+
+ Eine ausführliche Dokumentation und Beispiele finden Sie auf der[Aspose-Website](https://reference.aspose.com/words/net/).

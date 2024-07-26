@@ -15,7 +15,7 @@ url: /el/net/split-document/by-sections/
 Για να ξεκινήσουμε, πρέπει να καθορίσουμε τον κατάλογο του εγγράφου σας και να φορτώσουμε το έγγραφο σε ένα αντικείμενο Document. Δείτε πώς:
 
 ```csharp
-//Διαδρομή στον κατάλογο εγγράφων.
+// Διαδρομή στον κατάλογο εγγράφων.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(MyDir + "Large document.docx");
 ```

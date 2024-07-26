@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 代替`"YOUR DOCUMENT DIRECTORY"`替换为文档存储的实际路径。很简单，对吧？
 
-## 第 2 步：加载源文档和目标文档
+## 步骤 2：加载源文档和目标文档
 
 接下来，我们需要加载源文档和目标文档。可以将其想象为在计算机上打开两个 Word 文件。
 

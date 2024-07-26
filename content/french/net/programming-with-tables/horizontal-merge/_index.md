@@ -21,7 +21,7 @@ Pour démarrer le traitement de texte avec le tableau et les cellules, nous devo
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Créer le document et initialiser le générateur de documents
+//Créer le document et initialiser le générateur de documents
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```

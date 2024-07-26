@@ -36,7 +36,7 @@ Először is be kell állítania a projektet a Visual Studióban. Ha már késze
 
 1. Nyissa meg a Visual Studiot: Indítsa el a Visual Studio alkalmazást, és hozzon létre egy új C# Console App projektet.
 2.  Nevezze el projektjét: Adjon értelmes nevet a projektjének. Valami hasonló`CloneWordDocumentDemo` megteszi.
-3.  Aspose.Words Reference hozzáadása: Kattintson a jobb gombbal a projektre a Solution Explorerben, és válassza ki`Manage NuGet Packages` , és keressen rá`Aspose.Words`. Telepítse.
+3.  Add Aspose.Words Reference: Kattintson jobb gombbal a projektre a Solution Explorerben, és válassza ki`Manage NuGet Packages` , és keressen rá`Aspose.Words`. Telepítse.
 
 ## 2. lépés: Készítse elő környezetét
 
@@ -49,7 +49,7 @@ Most, hogy a projekt be van állítva, készítsük elő a környezetet:
 
 Itt kezdődik a varázslat. Az eredeti dokumentumot az Aspose.Words használatával töltjük be:
 
-1.  Határozza meg a dokumentumkönyvtár elérési útját: a saját`Program.cs` fájlt, adja meg a dokumentumok könyvtárának elérési útját.
+1.  Határozza meg a dokumentumkönyvtár elérési útját: A saját`Program.cs` fájlt, adja meg a dokumentumok könyvtárának elérési útját.
    
     ```csharp
     string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -89,7 +89,7 @@ Ha minden a helyén van, ideje futtatni a kódot, és látni az eredményeket:
 Végül nézzük meg, hogy a klónozott dokumentumunk megfelel-e az elvárásoknak:
 
 1.  Keresse meg a Dokumentumok könyvtárát: Nyissa meg a`Documents` mappát, és keresse meg a klónozott dokumentumot`CloneAndCombineDocuments.CloningDocument.docx`.
-2.  Nyissa meg a klónozott dokumentumot: Kattintson duplán a Microsoft Wordben való megnyitásához, és ellenőrizze, hogy az eredeti példány pontos másolata-e.`Document.docx`.
+2.  Nyissa meg a klónozott dokumentumot: Kattintson duplán a Microsoft Wordben való megnyitásához, és ellenőrizze, hogy az eredeti példány pontos másolata-e`Document.docx`.
 
 ## Következtetés
 

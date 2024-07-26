@@ -17,7 +17,7 @@ Abyste mohli postupovat podle tohoto návodu, musíte mít následující:
 - Základní znalost C# a XML.
 
 ## Krok 1: Nastavte adresář dokumentů
- Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou k adresáři, kam chcete dokument uložit.
+ Začněte nastavením cesty k adresáři dokumentů. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři, kam chcete dokument uložit.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -32,7 +32,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 ```
 
 ## Krok 3: Přidejte do dokumentu StructuredDocumentTag (SDT).
- Přidat`StructuredDocumentTag` do dokumentu, aby sloužil jako kontrola obsahu. Určete`SdtType` tak jako`PlainText` a`MarkupLevel` tak jako`Block` vytvořit SDT na úrovni bloku.
+ Přidat`StructuredDocumentTag`do dokumentu, aby sloužil jako kontrola obsahu. Určete`SdtType` tak jako`PlainText` a`MarkupLevel` tak jako`Block` vytvořit SDT na úrovni bloku.
 
 ```csharp
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);

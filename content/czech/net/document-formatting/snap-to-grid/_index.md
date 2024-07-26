@@ -130,7 +130,7 @@ Přichytit k mřížce zarovná text a prvky do předdefinované mřížky, čí
 ### Mohu použít Snap to Grid pouze pro určité sekce?
 Ano, můžete povolit možnost Přichytit k mřížce pro konkrétní odstavce nebo oddíly v dokumentu.
 
-### Je k používání Aspose.Words nutná licence?
+### Je pro použití Aspose.Words vyžadována licence?
 Ano, i když pro vyzkoušení můžete použít dočasnou licenci, pro úplný přístup se doporučuje plná licence.
 
 ### Ovlivňuje funkce Přichytit k mřížce výkon dokumentu?

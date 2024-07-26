@@ -2,94 +2,86 @@
 title: Optimalizujte velikost PDF pomocí přeskočení vložených písem Arial & Times Roman
 linktitle: Optimalizujte velikost PDF pomocí přeskočení vložených písem Arial & Times Roman
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce generováním optimalizovaného PDF bez vkládání písem Arial a Times Roman pomocí Aspose.Words pro .NET.
+description: Optimalizujte velikost PDF přeskočením vložených písem Arial a Times Roman pomocí Aspose.Words pro .NET. Postupujte podle tohoto podrobného průvodce a zefektivněte své soubory PDF.
 type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
+## Úvod
 
-Tento článek poskytuje podrobného průvodce, jak používat funkci k optimalizaci velikosti PDF přeskočením vložených písem Arial a Times Roman na velikost metasouboru pomocí Aspose.Words for .NET. Každou část kódu si podrobně vysvětlíme. Na konci tohoto kurzu budete schopni porozumět tomu, jak nakonfigurovat možnost režimu vkládání písem v dokumentu a generovat PDF bez vkládání písem Arial a Times Roman.
+Ocitli jste se někdy v situaci, kdy je váš soubor PDF příliš velký? Je to jako když se sbalíte na dovolenou a zjistíte, že váš kufr praská ve švech. Víte, že potřebujete shodit nějaké to kilo, ale co necháte jít? Při práci se soubory PDF, zejména se soubory převedenými z dokumentů aplikace Word, mohou vložená písma zvětšit velikost souboru. Naštěstí Aspose.Words for .NET poskytuje elegantní řešení, jak udržet vaše PDF štíhlé a průměrné. V tomto tutoriálu se ponoříme do toho, jak optimalizovat velikost PDF přeskočením vložených písem Arial a Times Roman. Začněme!
 
-Než začnete, ujistěte se, že jste ve svém projektu nainstalovali a nakonfigurovali knihovnu Aspose.Words for .NET. Knihovnu a pokyny k instalaci najdete na webu Aspose.
+## Předpoklady
 
-## Krok 1: Definujte adresář dokumentů
+Než se vrhneme na to, co je v pořádku, je několik věcí, které budete potřebovat:
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Pokud ne, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Základní porozumění C#: To vám pomůže sledovat úryvky kódu.
+- Dokument aplikace Word: K demonstraci procesu použijeme vzorový dokument. 
 
- Chcete-li začít, musíte definovat cestu k adresáři, kde jsou umístěny vaše dokumenty. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+## Importovat jmenné prostory
+
+Nejprve se ujistěte, že máte importované potřebné jmenné prostory. Tím se připraví půda pro přístup k funkcím Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Dobře, pojďme si proces rozebrat krok za krokem.
+
+## Krok 1: Nastavte své prostředí
+
+Chcete-li začít, musíte nastavit vývojové prostředí. Otevřete své oblíbené IDE C# (jako Visual Studio) a vytvořte nový projekt.
+
+## Krok 2: Načtěte dokument aplikace Word
+
+Dalším krokem je načtení dokumentu aplikace Word, který chcete převést do formátu PDF. Ujistěte se, že je dokument ve správném adresáři.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-```
-
-## Krok 2: Nahrajte dokument
-
-Dále musíme načíst dokument, který chceme zpracovat. V tomto příkladu předpokládáme, že dokument se nazývá "Rendering.docx" a je umístěn v určeném adresáři dokumentů.
-
-```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Krok 3: Nakonfigurujte možnosti uložení jako PDF s vložením písem
+ V tomto úryvku nahraďte`"YOUR DOCUMENT DIRECTORY"` s cestou k adresáři s dokumenty.
 
- Chcete-li přeskočit vkládání písem Arial a Times Roman do vygenerovaného PDF, musíme nakonfigurovat`PdfSaveOptions` objekt a nastavte`FontEmbeddingMode`majetek do`PdfFontEmbeddingMode.EmbedAll`.
+## Krok 3: Nakonfigurujte možnosti uložení PDF
+
+Nyní musíme nakonfigurovat možnosti uložení PDF, abychom řídili způsob vkládání písem. Ve výchozím nastavení jsou všechna písma vložena, což může zvětšit velikost souboru. Toto nastavení změníme.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll
+};
 ```
 
-## Krok 4: Uložte dokument jako PDF bez vložených písem
+## Krok 4: Uložte dokument jako PDF
 
-Nakonec můžeme dokument uložit ve formátu PDF pomocí dříve nakonfigurovaných možností uložení.
+Nakonec uložte dokument jako PDF se zadanými možnostmi uložení. Tady se děje kouzlo.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
 ```
 
-To je vše ! Úspěšně jste vygenerovali PDF bez vložení písem Arial a Times Roman pomocí Aspose.Words for .NET.
-
-### Příklad zdrojového kódu pro přeskočení vložených písem Arial a Times Roman ve velikosti metasouboru pomocí Aspose.Words for .NET
-
-```csharp
-
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Rendering.docx");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { FontEmbeddingMode = PdfFontEmbeddingMode.EmbedAll };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.SkipEmbeddedArialAndTimesRomanFonts.pdf", saveOptions);
-   
-```
+Tento příkaz uloží váš dokument jako PDF s názvem "OptimizedPDF.pdf" do zadaného adresáře.
 
 ## Závěr
 
-tomto tutoriálu jsme vysvětlili, jak zakázat vkládání písem Arial a Times Roman do dokumentu PDF pomocí Aspose.Words for .NET. Podle uvedených kroků můžete vygenerovat soubor PDF bez vkládání těchto specifických písem, což může pomoci snížit velikost souboru a zajistit lepší kompatibilitu dokumentů na různých platformách. Při používání této funkce nezapomeňte zvážit důsledky zakázání vkládání písem. Neváhejte a prozkoumejte další funkce Aspose.Words for .NET pro optimalizaci generování vašich souborů PDF.
+A tady to máte! Právě jste se naučili, jak optimalizovat velikost souboru PDF přeskočením vkládání písem Arial a Times Roman pomocí Aspose.Words pro .NET. Tato jednoduchá úprava může výrazně zmenšit velikost souborů, což usnadňuje jejich sdílení a ukládání. Je to jako jít do posilovny pro soubory PDF, shodit zbytečnou váhu a přitom zachovat všechny náležitosti nedotčené.
 
-### Často kladené otázky
+## FAQ
 
-#### Otázka: Co zakazuje vkládání písem Arial a Times Roman do dokumentu PDF a proč je to důležité?
-Odpověď: Zakázání vkládání písem Arial a Times Roman do dokumentu PDF znamená, že tato písma nejsou zahrnuta do vygenerovaného souboru PDF. To může být důležité pro zmenšení velikosti souboru PDF tím, že se vyhnete zahrnutí písem, která jsou již běžně dostupná v systémech pro čtení PDF. Může také pomoci zajistit lepší kompatibilitu a konzistentní vzhled dokumentu PDF na různých zařízeních a platformách.
+### Proč bych měl přeskočit vkládání písem Arial a Times Roman?
+Vynechání těchto běžných písem může snížit velikost souboru PDF, protože většina systémů již tato písma má nainstalovaná.
 
-#### Otázka: Jak mohu nakonfigurovat Aspose.Words pro .NET, aby do dokumentu PDF nevkládala písma Arial a Times Roman?
-Odpověď: Chcete-li nakonfigurovat Aspose.Words pro .NET tak, aby do dokumentu PDF nevkládala písma Arial a Times Roman, postupujte takto:
+### Ovlivní to vzhled mého PDF?
+Ne, nebude. Vzhledem k tomu, že Arial a Times Roman jsou standardní písma, zůstává vzhled konzistentní v různých systémech.
 
- Nahrazením nastavte cestu k adresáři, kde jsou umístěny vaše dokumenty`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k adresáři vašich dokumentů.
+### Mohu přeskočit i vkládání jiných písem?
+Ano, můžete nakonfigurovat možnosti uložení tak, aby se v případě potřeby vynechalo vkládání jiných písem.
 
- Vložte dokument, který chcete zpracovat, pomocí`Document` třída a zadaná cesta dokumentu.
+### Je Aspose.Words for .NET zdarma?
+Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/) , ale pro plný přístup je potřeba zakoupit licenci[tady](https://purchase.aspose.com/buy).
 
- Vytvořte instanci souboru`PdfSaveOptions` třídu a nastavte`FontEmbeddingMode`majetek do`PdfFontEmbeddingMode.EmbedAll`. Tím se do vygenerovaného souboru PDF vloží všechna písma kromě Arial a Times Roman.
-
- Použijte`Save` metoda`Document` objekt k uložení dokumentu ve formátu PDF s uvedením dříve nakonfigurovaných možností uložení.
-
-#### Otázka: Jaké jsou výhody deaktivace vkládání písem Arial a Times Roman do dokumentu PDF?
-Odpověď: Výhody deaktivace vkládání písem Arial a Times Roman do dokumentu PDF jsou:
-
-Zmenšení velikosti souboru PDF: Zabráněním vkládání běžně dostupných písem, jako jsou Arial a Times Roman, lze velikost souboru PDF zmenšit, což usnadňuje ukládání, sdílení a přenos souborů.
-
-Lepší kompatibilita: Použitím písem, která jsou běžně dostupná v systémech pro čtení PDF, zajistíte lepší kompatibilitu a vzhled dokumentu na různých zařízeních a platformách.
-
-#### Otázka: Jaké jsou důsledky zakázání vkládání písem Arial a Times Roman do dokumentu PDF?
-Odpověď: Zakázání vkládání písem Arial a Times Roman do dokumentu PDF má následující důsledky:
-
-Odlišný vzhled: Pokud v systému, kde je PDF otevřen, nejsou k dispozici písma Arial a Times Roman, použijí se náhradní písma, což může vést k jinému vzhledu, než bylo zamýšleno.
-
-Problémy s čitelností: Použité náhradní písma nemusí být tak čitelné jako původní písma, což může ovlivnit čitelnost dokumentu.
+### Kde najdu další návody na Aspose.Words pro .NET?
+ Můžete najít komplexní dokumentaci a návody[tady](https://reference.aspose.com/words/net/).

@@ -16,13 +16,13 @@ Az oktatóanyagokban található kódminták segítenek megérteni az SDT-vezér
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Jelölőnégyzet típusa Tartalomvezérlés](./check-box-type-content-control/) | Ismerje meg, hogyan hozhat létre jelölőnégyzet típusú tartalomvezérlőt Word-dokumentumban az Aspose.Words for .NET használatával. |
+| [Jelölőnégyzet típusa Tartalomvezérlés](./check-box-type-content-control/) | Ebből a részletes, lépésenkénti oktatóanyagból megtudhatja, hogyan adhat hozzá jelölőnégyzet típusú tartalomvezérlőt Word-dokumentumokhoz az Aspose.Words for .NET használatával. |
 | [A jelölőnégyzet jelenlegi állapota](./current-state-of-check-box/) | Ismerje meg, hogyan kérheti le és állíthatja be a jelölőnégyzet tartalomvezérlőjének aktuális állapotát egy Word-dokumentumban az Aspose.Words for .NET használatával. |
 | [A tartalomvezérlők módosítása](./modify-content-controls/) | Ismerje meg, hogyan módosíthat szöveget, legördülő listákat és képeket egy Word-dokumentum tartalomvezérlőjén belül az Aspose.Words for .NET segítségével. |
 | [Combo Box Content Control](./combo-box-content-control/) | Ismerje meg, hogyan hozhat létre Combo Box tartalomvezérlőt Word-dokumentumban az Aspose.Words for .NET használatával. |
 | [Rich Text Box Content Control](./rich-text-box-content-control/) | Ismerje meg, hogyan hozhat létre rich text box tartalomvezérlőt Word-dokumentumban az Aspose.Words for .NET segítségével, amely lehetővé teszi a szöveg formázását és stílusát. |
 | [Állítsa be a Tartalomvezérlő színét](./set-content-control-color/) | Ismerje meg, hogyan állíthatja be egy tartalomvezérlő színét egy Word-dokumentumban az Aspose.Words for .NET használatával, testreszabva a megjelenését. |
-| [Tartalomszabályozás törlése](./clear-contents-control/) | Ismerje meg, hogyan törölheti a vezérlőelemek tartalmát egy Word-dokumentumban az Aspose.Words for .NET használatával. |
+| [Tartalomszabályozás törlése](./clear-contents-control/) | A lépésenkénti útmutatónkból megtudhatja, hogyan törölheti a tartalomvezérlést egy Word-dokumentumban az Aspose.Words for .NET használatával. |
 | [Kösse az SDT-t az egyéni Xml-részhez](./bind-sdt-to-custom-xml-part/) | Ismerje meg, hogyan köthet össze SDT-t egy egyéni Xml-részhez az Aspose.Words for .NET használatával. |
 | [Állítsa be a Tartalomvezérlési stílust](./set-content-control-style/) | Ismerje meg, hogyan állíthatja be a tartalomvezérlő stílusát egy Word-dokumentumban az Aspose.Words for .NET használatával, következetes formázást alkalmazva. |
 | [Egyéni Xml-részhez leképezve táblázat ismétlődő szakasz létrehozása](./creating-table-repeating-section-mapped-to-custom-xml-part/) | Ismerje meg, hogyan hozhat létre egy ismétlődő szakaszt egy CustomXmlPart-hoz leképezve egy táblázatot egy Word-dokumentumban az Aspose.Words for .NET használatával. |

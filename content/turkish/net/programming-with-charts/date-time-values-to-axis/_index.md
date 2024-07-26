@@ -103,7 +103,7 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 
 ## Çözüm
 
-Aspose.Words for .NET ile bir belgedeki grafiğin eksenine tarih ve saat değerleri eklemek basit bir işlemdir. Bu öğreticide özetlenen adımları izleyerek, zaman serisi verilerini etkili bir şekilde görselleştiren net ve bilgilendirici grafikler oluşturabilirsiniz. İster rapor, sunum veya ayrıntılı veri sunumu gerektiren herhangi bir belge hazırlıyor olun, Aspose.Words başarılı olmanız için ihtiyacınız olan araçları sağlar.
+Aspose.Words for .NET ile bir belgedeki grafiğin eksenine tarih ve saat değerleri eklemek basit bir işlemdir. Bu öğreticide özetlenen adımları izleyerek, zaman serisi verilerini etkili bir şekilde görselleştiren net ve bilgilendirici grafikler oluşturabilirsiniz. İster raporlar, sunumlar, ister ayrıntılı veri gösterimi gerektiren herhangi bir belge hazırlıyor olun, Aspose.Words başarılı olmanız için ihtiyacınız olan araçları sağlar.
 
 ## SSS'ler
 

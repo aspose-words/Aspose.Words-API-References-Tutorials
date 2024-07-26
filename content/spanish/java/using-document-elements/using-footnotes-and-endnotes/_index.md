@@ -2,7 +2,7 @@
 title: Uso de notas al pie y notas finales en Aspose.Words para Java
 linktitle: Uso de notas al pie y notas finales
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda a utilizar notas al pie y notas al final de forma eficaz en Aspose.Words para Java. ¡Mejore sus habilidades de formato de documentos hoy!
+description: Aprenda a utilizar notas al pie y notas finales de forma eficaz en Aspose.Words para Java. ¡Mejore sus habilidades de formato de documentos hoy!
 type: docs
 weight: 13
 url: /es/java/using-document-elements/using-footnotes-and-endnotes/

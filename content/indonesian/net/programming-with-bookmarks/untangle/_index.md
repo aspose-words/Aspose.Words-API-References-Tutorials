@@ -9,7 +9,7 @@ url: /id/net/programming-with-bookmarks/untangle/
 ---
 ## Perkenalan
 
-Menavigasi dokumen Word secara terprogram bisa seperti menemukan jalan melewati labirin. Anda mungkin menemukan bookmark, judul, tabel, dan elemen lain yang perlu dimanipulasi. Hari ini, kita menyelami tugas umum namun rumit: menguraikan bookmark di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini akan memandu Anda melalui proses langkah demi langkah, memastikan Anda memahami setiap bagian dari perjalanan.
+Menavigasi dokumen Word secara terprogram bisa seperti menemukan jalan melewati labirin. Anda mungkin menemukan bookmark, judul, tabel, dan elemen lain yang perlu dimanipulasi. Hari ini, kita mendalami tugas umum namun rumit: menguraikan bookmark di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini akan memandu Anda melalui proses langkah demi langkah, memastikan Anda memahami setiap bagian dari perjalanan.
 
 ## Prasyarat
 

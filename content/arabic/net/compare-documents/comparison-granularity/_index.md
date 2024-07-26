@@ -99,7 +99,7 @@ builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOpti
 
 #### س: ما هي المستويات المتوفرة لدقة المقارنة في Aspose.Words لـ .NET؟
 
-ج: يوفر Aspose.Words لـ .NET ثلاثة مستويات من دقة المقارنة:
+ج: توفر Aspose.Words لـ .NET ثلاثة مستويات من دقة المقارنة:
 - `Granularity.CharLevel`: يقارن المستندات على مستوى الأحرف.
 - `Granularity.WordLevel`: يقارن المستندات على مستوى الكلمة.
 - `Granularity.BlockLevel`: يقارن المستندات على مستوى الكتلة.

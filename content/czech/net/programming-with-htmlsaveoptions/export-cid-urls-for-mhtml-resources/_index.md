@@ -2,71 +2,107 @@
 title: Export Cid URL pro zdroje Mhtml
 linktitle: Export Cid URL pro zdroje Mhtml
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce exportem CID URL zdrojů MHTML při ukládání dokumentu pomocí Aspose.Words for .NET.
+description: V tomto podrobném kurzu se dozvíte, jak exportovat adresy URL Cid pro zdroje MHTML pomocí Aspose.Words for .NET. Ideální pro vývojáře všech úrovní.
 type: docs
 weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/export-cid-urls-for-mhtml-resources/
 ---
+## Úvod
 
-V tomto tutoriálu vás provedeme zdrojovým kódem C# pro export CID URL pro zdroje MHTML pomocí Aspose.Words pro .NET. Tato funkce umožňuje exportovat CID URL zdrojů MHTML při ukládání dokumentu ve formátu MHTML.
+Jste připraveni zvládnout umění exportu Cid URL pro zdroje MHTML pomocí Aspose.Words pro .NET? Ať už jste zkušený vývojář nebo teprve začínáte, tento komplexní průvodce vás provede každým krokem. Na konci tohoto článku budete mít křišťálově jasnou představu o tom, jak efektivně zacházet s prostředky MHTML v dokumentech aplikace Word. Pojďme se ponořit!
 
-## Krok 1: Nastavení projektu
+## Předpoklady
 
-Chcete-li začít, vytvořte nový projekt C# ve svém oblíbeném IDE. Ujistěte se, že váš projekt odkazuje na knihovnu Aspose.Words for .NET.
+Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-## Krok 2: Načtení dokumentu
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi Aspose.Words pro .NET. Pokud ne, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Vývojové prostředí, jako je Visual Studio.
+- Základní znalost C#: I když vás provedu každým krokem, základní znalost C# bude prospěšná.
 
-V tomto kroku načteme dokument k exportu. K načtení dokumentu ze zadaného adresáře použijte následující kód:
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Tento krok připraví půdu pro náš tutoriál:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Nyní si tento proces rozdělíme do jednoduchých, zvládnutelných kroků. Každý krok bude obsahovat podrobné vysvětlení, abyste mohli bez námahy pokračovat.
+
+## Krok 1: Nastavení vašeho projektu
+
+### Krok 1.1: Vytvořte nový projekt
+Otevřete Visual Studio a vytvořte nový projekt C#. Chcete-li, aby byly věci jednoduché, vyberte šablonu aplikace konzoly.
+
+### Krok 1.2: Přidejte Aspose.Words pro .NET Reference
+Chcete-li používat Aspose.Words pro .NET, musíte přidat odkaz na knihovnu Aspose.Words. Můžete to udělat pomocí Správce balíčků NuGet:
+
+1. Klepněte pravým tlačítkem myši na svůj projekt v Průzkumníku řešení.
+2. Vyberte „Spravovat balíčky NuGet“.
+3. Vyhledejte "Aspose.Words" a nainstalujte jej.
+
+## Krok 2: Načtení dokumentu aplikace Word
+
+### Krok 2.1: Zadejte adresář dokumentů
+Definujte cestu k adresáři dokumentů. Zde se nachází váš dokument aplikace Word.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři.
+
+### Krok 2.2: Vložte dokument
+Načtěte dokument aplikace Word do projektu.
+
+```csharp
 Document doc = new Document(dataDir + "Content-ID.docx");
 ```
 
- Tento kód vytvoří instanci`Document` načtením dokumentu ze zadaného adresáře.
+## Krok 3: Konfigurace možností uložení HTML
 
-## Krok 3: Konfigurace možností zálohování HTML
-
-Nyní nakonfigurujeme možnosti uložení HTML pro export CID URL zdrojů MHTML. Použijte následující kód:
+ Vytvořte instanci`HtmlSaveOptions` upravit, jak bude váš dokument uložen jako MHTML.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Mhtml)
 {
-PrettyFormat = true,
-ExportCidUrlsForMhtmlResources = true
+    PrettyFormat = true,
+    ExportCidUrlsForMhtmlResources = true
 };
 ```
 
- Tento kód vytvoří instanci`HtmlSaveOptions` s formátem uložení nastaveným na MHTML. Umožňuje také export CID URL zdrojů MHTML nastavením`ExportCidUrlsForMhtmlResources` na`true`.
+- `SaveFormat.Mhtml` určuje, že výstupní formát je MHTML.
+- `PrettyFormat = true` zajišťuje, že výstup je úhledně naformátován.
+- `ExportCidUrlsForMhtmlResources = true` umožňuje export Cid URL pro zdroje MHTML.
 
-## Krok 4: Převod a uložení dokumentu do MHTML
+### Krok 4: Uložení dokumentu jako MHTML
 
-Nakonec převedeme dokument do MHTML pomocí dříve nakonfigurovaných možností uložení HTML. Použijte následující kód:
+Krok 4.1: Uložte dokument
+Uložte dokument jako soubor MHTML pomocí nakonfigurovaných možností.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
 ```
 
-Tento kód převede dokument na MHTML a uloží jej do souboru s adresami URL CID exportovaných zdrojů MHTML.
+## Závěr
 
-### Příklad zdrojového kódu pro Export Cid Urls For Mhtml Resources pomocí Aspose.Words for .NET
+Gratulujeme! Úspěšně jste exportovali adresy URL Cid pro zdroje MHTML pomocí Aspose.Words for .NET. Tento výukový program vás provede nastavením projektu, načtením dokumentu aplikace Word, konfigurací možností uložení HTML a uložením dokumentu jako MHTML. Nyní můžete tyto kroky použít na své vlastní projekty a vylepšit úkoly správy dokumentů.
 
-```csharp
+## FAQ
 
-	// Cesta k adresáři dokumentů.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document(dataDir + "Content-ID.docx");
+### Jaký je účel exportu adres URL Cid pro zdroje MHTML?
+Export Cid URL pro zdroje MHTML zajistí, že vložené zdroje ve vašem souboru MHTML budou správně odkazovány, což zlepší přenositelnost a integritu dokumentu.
 
-	HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Mhtml)
-	{
-		PrettyFormat = true, ExportCidUrlsForMhtmlResources = true
-	};
+### Mohu si výstupní formát dále přizpůsobit?
+ Ano, Aspose.Words for .NET nabízí rozsáhlé možnosti přizpůsobení pro ukládání dokumentů. Odkazovat na[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
 
-	doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mhtml", saveOptions);
+### Potřebuji licenci k používání Aspose.Words pro .NET?
+ Ano, k používání Aspose.Words pro .NET potřebujete licenci. Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo zakoupit licenci[tady](https://purchase.aspose.com/buy).
 
-```
+### Mohu tento proces automatizovat pro více dokumentů?
+Absolutně! Můžete vytvořit skript pro automatizaci procesu pro více dokumentů s využitím síly Aspose.Words pro .NET pro efektivní zpracování dávkových operací.
 
- Ujistěte se, že jste zadali správnou cestu k adresáři dokumentů v`dataDir` variabilní.
-
-Nyní jste se naučili, jak exportovat CID URL zdrojů MHTML při ukládání dokumentu ve formátu MHTML pomocí Aspose.Words for .NET. Podle podrobného průvodce uvedeného v tomto kurzu můžete snadno spravovat adresy URL CID v exportovaných dokumentech MHTML.
-
+### Kde mohu získat podporu, pokud narazím na problémy?
+Pokud potřebujete podporu, navštivte fórum podpory Aspose[tady](https://forum.aspose.com/c/words/8) za pomoc od komunity a vývojářů Aspose.

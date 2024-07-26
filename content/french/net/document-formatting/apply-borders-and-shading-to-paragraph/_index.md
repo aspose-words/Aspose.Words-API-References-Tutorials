@@ -2,7 +2,7 @@
 title: Appliquer des bordures et un ombrage au paragraphe dans un document Word
 linktitle: Appliquer des bordures et un ombrage au paragraphe dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Appliquez des bordures et un ombrage aux paragraphes des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour améliorer la mise en forme de votre document.
+description: Appliquez des bordures et un ombrage aux paragraphes des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour améliorer la mise en forme de vos documents.
 type: docs
 weight: 10
 url: /fr/net/document-formatting/apply-borders-and-shading-to-paragraph/
@@ -83,7 +83,7 @@ shading.ForegroundPatternColor = System.Drawing.Color.LightSalmon;
 
 Dans cette étape, nous avons appliqué une texture croisée diagonale avec du corail clair comme couleur de fond et du saumon clair comme couleur de premier plan. C'est comme habiller votre paragraphe avec des vêtements de marque !
 
-## Étape 5 : Ajouter du texte au paragraphe
+## Étape 5 : ajouter du texte au paragraphe
 
 Qu'est-ce qu'un paragraphe sans texte ? Ajoutons un exemple de phrase pour voir notre formatage en action.
 

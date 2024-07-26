@@ -13,7 +13,7 @@ Bạn đã bao giờ thấy mình bị vướng vào mạng lưới các thuộc
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
+Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
 
 1.  Aspose.Words for .NET Thư viện: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
 2. .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework trên máy của mình.

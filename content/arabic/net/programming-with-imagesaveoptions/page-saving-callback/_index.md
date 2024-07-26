@@ -2,91 +2,106 @@
 title: رد الاتصال بحفظ الصفحة
 linktitle: رد الاتصال بحفظ الصفحة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية تخصيص حفظ صفحات المستندات إلى صور باستخدام Aspose.Words لـ .NET.
+description: تعلم كيفية حفظ كل صفحة من مستند Word كصورة PNG منفصلة باستخدام Aspose.Words لـ .NET من خلال دليلنا التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
+## مقدمة
 
-في هذا البرنامج التعليمي، سوف نستكشف التعليمات البرمجية المصدر لـ C# المتوفرة لاستخدام رد الاتصال بحفظ الصفحة مع خيارات حفظ الصور Aspose.Words لـ .NET. تتيح لك هذه الميزة تنفيذ إجراءات مخصصة عند حفظ كل صفحة من المستند كصورة.
+مرحبًا يا من هناك! هل شعرت يومًا بالحاجة إلى حفظ كل صفحة من مستند Word كصور منفصلة؟ ربما تريد تقسيم تقرير كبير إلى عناصر مرئية سهلة الفهم، أو ربما تحتاج إلى إنشاء صور مصغرة للمعاينة. مهما كان السبب، فإن استخدام Aspose.Words for .NET يجعل هذه المهمة سهلة للغاية. في هذا الدليل، سنرشدك خلال عملية إعداد رد اتصال لحفظ الصفحة لحفظ كل صفحة من المستند كصورة PNG فردية. دعونا نتعمق في الأمر!
 
-## الخطوة 1: تهيئة البيئة
+## المتطلبات الأساسية
 
-قبل أن تبدأ، تأكد من إعداد بيئة التطوير الخاصة بك باستخدام Aspose.Words for .NET. تأكد من إضافة المراجع الضرورية واستيراد مساحات الأسماء المناسبة.
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
 
-## الخطوة 2: تحميل الوثيقة
+1.  Aspose.Words for .NET: إذا لم تكن قد قمت بذلك بالفعل، فقم بتنزيله وتثبيته من[هنا](https://releases.aspose.com/words/net/).
+2. Visual Studio: يجب أن يعمل أي إصدار، لكنني سأستخدم Visual Studio 2019 لهذا الدليل.
+3. المعرفة الأساسية بـ C#: ستحتاج إلى فهم أساسي لـ C# للمتابعة.
+
+## استيراد مساحات الأسماء
+
+أولاً، نحتاج إلى استيراد مساحات الأسماء الضرورية. يساعدنا هذا في الوصول إلى الفئات والأساليب المطلوبة دون كتابة مساحة الاسم الكاملة في كل مرة.
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
 
+## الخطوة 1: قم بإعداد دليل المستندات الخاص بك
+
+حسنًا، لنبدأ بتحديد المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي يوجد فيه مستند Word الذي تم إدخاله والمكان الذي سيتم فيه حفظ الصور الناتجة.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## الخطوة 2: قم بتحميل المستند الخاص بك
+
+بعد ذلك، سنقوم بتحميل المستند الذي تريد معالجته. تأكد من وجود المستند ("Rendering.docx") في الدليل المحدد.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- في هذه الخطوة نقوم بتحميل المستند باستخدام ملف`Document` الطريقة وتمرير المسار إلى ملف DOCX للتحميل.
+## الخطوة 3: تكوين خيارات حفظ الصورة
 
-## الخطوة 3: تكوين خيارات النسخ الاحتياطي للصورة
+نحن بحاجة إلى تكوين الخيارات لحفظ الصور. في هذه الحالة، نقوم بحفظ الصفحات كملفات PNG.
 
 ```csharp
 ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
 {
-     PageSet = new PageSet(new PageRange(0, doc.PageCount - 1)),
-     PageSavingCallback = new HandlePageSavingCallback()
+    PageSet = new PageSet(new PageRange(0, doc.PageCount - 1)),
+    PageSavingCallback = new HandlePageSavingCallback()
 };
 ```
 
- في هذه الخطوة، نقوم بتكوين خيارات حفظ الصورة عن طريق إنشاء ملف جديد`ImageSaveOptions` هدف. نحدد تنسيق النسخ الاحتياطي المطلوب، هنا "Png" لتنسيق PNG. نحن نستخدم`PageSet` لتحديد نطاق الصفحات المراد حفظها، هنا من الصفحة الأولى إلى الصفحة الأخيرة من المستند (`doc.PageCount - 1`). نحن أيضا نضع`PageSavingCallback` إلى مثال`HandlePageSavingCallback`، وهي فئة مخصصة للتعامل مع رد الاتصال بحفظ الصفحة.
+ هنا،`PageSet` يحدد نطاق الصفحات المراد حفظها، و`PageSavingCallback` يشير إلى فئة رد الاتصال المخصصة لدينا.
 
 ## الخطوة 4: تنفيذ رد الاتصال بحفظ الصفحة
 
+الآن، دعونا ننفذ فئة رد الاتصال التي تتعامل مع كيفية حفظ كل صفحة.
+
 ```csharp
-public class HandlePageSavingCallback : IPageSavingCallback
+private class HandlePageSavingCallback : IPageSavingCallback
 {
-     public void PageSaving(PageSavingArgs args)
-     {
-         // قم بتنفيذ الإجراءات المخصصة الخاصة بك هنا
-         // يمكنك الوصول إلى معلومات الصفحة من خلال خاصية "args.PageIndex".
-         // يمكنك أيضًا تغيير خيارات الحفظ لكل صفحة على حدة
-     }
+    public void PageSaving(PageSavingArgs args)
+    {
+        args.PageFileName = string.Format(dataDir + "Page_{0}.png", args.PageIndex);
+    }
 }
 ```
 
- في هذه الخطوة نقوم بتنفيذ`HandlePageSavingCallback` الطبقة التي تنفذ`IPageSavingCallback` واجهه المستخدم. يمكنك تخصيص هذه الفئة عن طريق إضافة إجراءاتك المحددة في ملف`PageSaving` طريقة. يمكنك الوصول إلى معلومات الصفحة من خلال`args.PageIndex` ملكية`PageSavingArgs` تم تمرير الكائن كوسيطة.
+ تنفذ هذه الفئة`IPageSavingCallback` واجهة، وداخل`PageSaving` الطريقة، نحدد نمط التسمية لكل صفحة محفوظة.
 
-## الخطوة 5: حفظ الصفحات كصور
+## الخطوة 5: احفظ المستند كصور
+
+وأخيرًا، نقوم بحفظ المستند باستخدام الخيارات التي تم تكوينها.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSaveOptions);
-```
-
- في هذه الخطوة الأخيرة، نقوم بحفظ كل صفحة من المستند كصورة باستخدام ملف`Save` الطريقة وتمرير المسار إلى ملف الإخراج باستخدام الملف`.png` الملحق، بالإضافة إلى خيارات الحفظ المحددة.
-
-يمكنك الآن تشغيل التعليمات البرمجية المصدر لتنفيذ إجراءات مخصصة عند حفظ كل صفحة من المستند كصورة. سيتم حفظ الملف الناتج في الدليل المحدد بالاسم "WorkingWithImageSaveOptions.PageSavingCallback.png".
-
-### نموذج التعليمات البرمجية المصدر لرد الاتصال بحفظ الصفحة باستخدام Aspose.Words لـ .NET
-
-
-```csharp 
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENT DIRECTORY"; 
-
-
-Document doc = new Document(dataDir + "Rendering.docx");
-
-ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
-{
-	PageSet = new PageSet(new PageRange(0, doc.PageCount - 1)),
-	PageSavingCallback = new HandlePageSavingCallback()
-};
-
-doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSaveOptions);
-        
 ```
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، استكشفنا وظيفة رد الاتصال لحفظ الصفحة باستخدام خيارات حفظ الصور Aspose.Words لـ .NET. لقد تعلمنا كيفية تنفيذ إجراءات مخصصة عند حفظ كل صفحة من المستند كصورة.
+وهناك لديك! لقد قمت بنجاح بإعداد رد اتصال لحفظ الصفحة لحفظ كل صفحة من مستند Word كصورة PNG منفصلة باستخدام Aspose.Words for .NET. تعتبر هذه التقنية مفيدة بشكل لا يصدق لمختلف التطبيقات، بدءًا من إنشاء معاينات الصفحة وحتى إنشاء صور فردية للصفحات للتقارير. 
 
-تكون هذه الميزة مفيدة عندما تريد إجراء عمليات محددة على كل صفحة عند التحويل إلى صور. يمكنك الوصول إلى معلومات الصفحة واستخدامها لتخصيص خيارات النسخ الاحتياطي أو إجراء معالجة أخرى خاصة بالصفحة.
+ترميز سعيد!
 
-يقدم Aspose.Words for .NET نطاقًا واسعًا من الميزات المتقدمة لمعالجة المستندات وإنشائها. يعد Save Page Reminder واحدًا من العديد من الأدوات القوية التي توفر لك تخصيص عملية حفظ الصفحات على الصور.
+## الأسئلة الشائعة
+
+### هل يمكنني حفظ الصفحات بتنسيقات أخرى غير PNG؟  
+ نعم، يمكنك حفظ الصفحات بتنسيقات مختلفة مثل JPEG، وBMP، وTIFF عن طريق تغيير ملف`SaveFormat` في`ImageSaveOptions`.
+
+### ماذا لو كنت أرغب في حفظ صفحات محددة فقط؟  
+ يمكنك تحديد الصفحات التي تريد حفظها عن طريق ضبط`PageSet` المعلمة في`ImageSaveOptions`.
+
+### هل من الممكن تخصيص جودة الصورة؟  
+ قطعاً! يمكنك تعيين خصائص مثل`ImageSaveOptions.JpegQuality` للتحكم في جودة الصور الناتجة.
+
+### كيف يمكنني التعامل مع المستندات الكبيرة بكفاءة؟  
+بالنسبة للمستندات الكبيرة، فكر في معالجة الصفحات على دفعات لإدارة استخدام الذاكرة بشكل فعال.
+
+### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words for .NET؟  
+ تفحص ال[توثيق](https://reference.aspose.com/words/net/) للحصول على أدلة وأمثلة شاملة.

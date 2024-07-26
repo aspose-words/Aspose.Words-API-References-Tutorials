@@ -8,7 +8,7 @@ weight: 10
 url: /pl/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 
-tym samouczku wyjaśniono, jak pobrać rzeczywiste granice kształtu w punktach (jednostka miary) w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Granice reprezentują rozmiar i położenie kształtu w dokumencie.
+W tym samouczku wyjaśniono, jak pobrać rzeczywiste granice kształtu w punktach (jednostka miary) w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Granice reprezentują rozmiar i położenie kształtu w dokumencie.
 
 ## Warunki wstępne
 Aby skorzystać z tego samouczka, musisz mieć następujące elementy:
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Krok 2: Wstaw kształt obrazu
- Użyj`InsertImage` metoda`DocumentBuilder`obiekt, aby wstawić kształt obrazu do dokumentu. Podaj ścieżkę do pliku obrazu jako parametr.
+ Użyj`InsertImage` metoda`DocumentBuilder` obiekt, aby wstawić kształt obrazu do dokumentu. Podaj ścieżkę do pliku obrazu jako parametr.
 
 ```csharp
 Shape shape = builder.InsertImage(ImagesDir + "Transparent background logo.png");

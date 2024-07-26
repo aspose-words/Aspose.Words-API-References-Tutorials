@@ -2,92 +2,88 @@
 title: Xuất thuộc tính tùy chỉnh trong tài liệu PDF
 linktitle: Xuất thuộc tính tùy chỉnh trong tài liệu PDF
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách xuất thuộc tính tùy chỉnh khi chuyển đổi tài liệu sang PDF bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách xuất thuộc tính tùy chỉnh trong tài liệu PDF bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi.
 type: docs
 weight: 10
 url: /vi/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn các bước để xuất thuộc tính tùy chỉnh của tài liệu trong tài liệu PDF bằng Aspose.Words cho .NET. Xuất thuộc tính tùy chỉnh cho phép bạn đưa thông tin bổ sung vào tài liệu PDF được tạo. Làm theo các bước dưới đây:
+Xuất các thuộc tính tùy chỉnh trong tài liệu PDF có thể cực kỳ hữu ích cho các nhu cầu kinh doanh khác nhau. Cho dù bạn đang quản lý siêu dữ liệu để có khả năng tìm kiếm tốt hơn hay nhúng thông tin quan trọng trực tiếp vào tài liệu của mình, Aspose.Words for .NET đều giúp quá trình này trở nên liền mạch. Hướng dẫn này sẽ hướng dẫn bạn cách tạo tài liệu Word, thêm thuộc tính tùy chỉnh và xuất chúng thành tệp PDF với các thuộc tính này còn nguyên vẹn.
 
-## Bước 1: Tạo tài liệu và thêm thuộc tính tùy chỉnh
+## Điều kiện tiên quyết
 
-Bắt đầu bằng cách tạo một thể hiện của lớp Document:
+Trước khi đi sâu vào mã, hãy đảm bảo bạn có những điều sau:
+
+-  Đã cài đặt Aspose.Words cho .NET. Nếu bạn chưa cài đặt thì có thể tải về[đây](https://releases.aspose.com/words/net/).
+- Một môi trường phát triển như Visual Studio.
+- Kiến thức cơ bản về lập trình C#.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các không gian tên cần thiết trong dự án của mình. Các không gian tên này chứa các lớp và phương thức cần thiết để thao tác với tài liệu Word và xuất chúng dưới dạng PDF.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+Hãy chia nhỏ quy trình thành các bước đơn giản, dễ quản lý.
+
+## Bước 1: Khởi tạo tài liệu
+
+Để bắt đầu, bạn cần tạo một đối tượng tài liệu mới. Đối tượng này sẽ đóng vai trò là nền tảng để thêm các thuộc tính tùy chỉnh và xuất sang PDF.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
 ## Bước 2: Thêm thuộc tính tùy chỉnh
- Tiếp theo, thêm các thuộc tính tùy chỉnh mong muốn. Ví dụ: để thêm thuộc tính "Công ty" có giá trị "Aspose", hãy sử dụng thuộc tính`Add` phương thức của bộ sưu tập CustomDocumentProperties:
+
+Tiếp theo, bạn sẽ thêm các thuộc tính tùy chỉnh vào tài liệu của mình. Các thuộc tính này có thể bao gồm siêu dữ liệu như tên công ty, tác giả hoặc bất kỳ thông tin liên quan nào khác.
 
 ```csharp
 doc.CustomDocumentProperties.Add("Company", "Aspose");
 ```
 
-Bạn có thể thêm bao nhiêu thuộc tính tùy chỉnh nếu cần.
+## Bước 3: Định cấu hình tùy chọn lưu PDF
 
-## Bước 3: Đặt tùy chọn xuất PDF
-
-Tạo một phiên bản của lớp PdfSaveOptions và chỉ định cách xuất các thuộc tính tùy chỉnh:
+ Bây giờ, hãy định cấu hình các tùy chọn lưu PDF để đảm bảo rằng các thuộc tính tùy chỉnh được bao gồm khi xuất tài liệu. Các`PdfSaveOptions` lớp cung cấp nhiều cài đặt khác nhau để kiểm soát cách lưu tài liệu dưới dạng PDF.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
+PdfSaveOptions saveOptions = new PdfSaveOptions
+{
+    CustomPropertiesExport = PdfCustomPropertiesExport.Standard
+};
 ```
 
-Tùy chọn này kiểm soát việc xuất các thuộc tính tùy chỉnh khi chuyển đổi sang PDF.
+## Bước 4: Lưu tài liệu dưới dạng PDF
 
-## Bước 4: Chuyển đổi tài liệu sang PDF
-
- Sử dụng`Save` phương pháp chuyển đổi tài liệu sang PDF chỉ định các tùy chọn chuyển đổi:
+ Cuối cùng, lưu tài liệu dưới dạng PDF trong thư mục được chỉ định. Các`Save` phương pháp này kết hợp tất cả các bước trước đó và tạo ra một tệp PDF có các thuộc tính tùy chỉnh đi kèm.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
 ```
 
-Đảm bảo chỉ định đường dẫn chính xác để lưu tệp PDF đã chuyển đổi.
-
-### Mã nguồn ví dụ cho Xuất thuộc tính tùy chỉnh bằng Aspose.Words cho .NET
-
-Đây là mã nguồn hoàn chỉnh để xuất các thuộc tính tùy chỉnh từ tài liệu bằng Aspose.Words cho .NET:
-
-
-```csharp
-
-	// Đường dẫn đến thư mục tài liệu.
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-	Document doc = new Document();
-	doc.CustomDocumentProperties.Add("Company", "Aspose");
-
-	PdfSaveOptions saveOptions = new PdfSaveOptions { CustomPropertiesExport = PdfCustomPropertiesExport.Standard };
-
-	doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveOptions);
-
-```
-
-Bằng cách làm theo các bước này, bạn có thể dễ dàng xuất các thuộc tính tùy chỉnh của tài liệu khi chuyển đổi sang PDF bằng Aspose.Words cho .NET.
-
-
 ## Phần kết luận
 
-Trong hướng dẫn này, chúng tôi đã giải thích cách xuất các thuộc tính tùy chỉnh từ tài liệu sang tài liệu PDF bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được mô tả, bạn có thể dễ dàng đưa thông tin bổ sung vào tài liệu PDF được tạo bằng cách xuất các thuộc tính tùy chỉnh của tài liệu. Tận dụng các tính năng của Aspose.Words for .NET để cá nhân hóa và làm phong phú tài liệu PDF của bạn bằng cách xuất các thuộc tính tùy chỉnh.
+Xuất các thuộc tính tùy chỉnh trong tài liệu PDF bằng Aspose.Words cho .NET là một quy trình đơn giản có thể nâng cao đáng kể khả năng quản lý tài liệu của bạn. Bằng cách làm theo các bước này, bạn có thể đảm bảo rằng siêu dữ liệu quan trọng được bảo tồn và có thể truy cập được, cải thiện hiệu quả và tổ chức các tài liệu kỹ thuật số của bạn.
 
-### Các câu hỏi thường gặp
+## Câu hỏi thường gặp
 
-#### Câu hỏi: Xuất thuộc tính tùy chỉnh sang tài liệu PDF là gì?
-Đáp: Việc xuất các thuộc tính tùy chỉnh sang tài liệu PDF cho phép đưa thông tin bổ sung vào tài liệu PDF được tạo. Thuộc tính tùy chỉnh là siêu dữ liệu dành riêng cho tài liệu của bạn, chẳng hạn như thẻ, từ khóa hoặc thông tin xác thực. Bằng cách xuất các thuộc tính tùy chỉnh này, bạn có thể cung cấp chúng cho người dùng khi xem tài liệu PDF.
+### Thuộc tính tùy chỉnh trong tài liệu PDF là gì?
+Thuộc tính tùy chỉnh là siêu dữ liệu được thêm vào tài liệu có thể bao gồm thông tin như tác giả, tên công ty hoặc bất kỳ dữ liệu liên quan nào khác cần được nhúng trong tài liệu.
 
-#### Câu hỏi: Làm cách nào tôi có thể xuất các thuộc tính tùy chỉnh của tài liệu sang tài liệu PDF bằng Aspose.Words cho .NET?
-Trả lời: Để xuất các thuộc tính tùy chỉnh của tài liệu sang tài liệu PDF bằng Aspose.Words cho .NET, hãy làm theo các bước sau:
+### Tại sao tôi nên sử dụng Aspose.Words for .NET để xuất các thuộc tính tùy chỉnh?
+Aspose.Words for .NET cung cấp API mạnh mẽ và dễ sử dụng để thao tác với tài liệu Word và xuất chúng dưới dạng PDF, đảm bảo rằng các thuộc tính tùy chỉnh được giữ nguyên và có thể truy cập được.
 
- Tạo một thể hiện của`Document` lớp học.
+### Tôi có thể thêm nhiều thuộc tính tùy chỉnh vào một tài liệu không?
+ Có, bạn có thể thêm nhiều thuộc tính tùy chỉnh vào tài liệu bằng cách gọi`Add`phương thức cho từng thuộc tính bạn muốn đưa vào.
 
- Thêm các thuộc tính tùy chỉnh mong muốn bằng cách sử dụng`CustomDocumentProperties` bộ sưu tập. Ví dụ, sử dụng`Add` để thêm thuộc tính "Công ty" có giá trị "Aspose".
+### Tôi có thể xuất sang những định dạng nào khác bằng Aspose.Words cho .NET?
+Aspose.Words for .NET hỗ trợ xuất sang nhiều định dạng khác nhau, bao gồm DOCX, HTML, EPUB, v.v.
 
- Tạo một thể hiện của`PdfSaveOptions` lớp và chỉ định cách xuất các thuộc tính tùy chỉnh bằng cách sử dụng`CustomPropertiesExport` tài sản. Các`PdfCustomPropertiesExport.Standard` value xuất các thuộc tính tùy chỉnh theo cài đặt mặc định.
-
- Sử dụng`Save` phương pháp của`Document` lớp để chuyển đổi tài liệu sang PDF chỉ định các tùy chọn chuyển đổi.
-
-#### Hỏi: Làm cách nào tôi có thể truy cập các thuộc tính tùy chỉnh của tài liệu PDF?
-Trả lời: Để truy cập các thuộc tính tùy chỉnh của tài liệu PDF, bạn có thể sử dụng trình đọc PDF tương thích hỗ trợ xem các thuộc tính tài liệu. Hầu hết các trình đọc PDF phổ biến, chẳng hạn như Adobe Acrobat Reader, cung cấp quyền truy cập vào siêu dữ liệu và thuộc tính của tài liệu PDF. Bạn thường có thể tìm thấy các tùy chọn này trong menu "Tệp" hoặc bằng cách nhấp chuột phải vào tài liệu và chọn "Thuộc tính".
+### Tôi có thể nhận hỗ trợ ở đâu nếu gặp vấn đề?
+ Để được hỗ trợ, bạn có thể truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.

@@ -14,4 +14,4 @@ url: /ko/net/programming-with-pclsaveoptions/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [변환된 요소 래스터화](./rasterize-transformed-elements/) | .NET용 Aspose.Words를 사용하여 PCL 형식으로 변환할 때 변환된 요소의 래스터화를 비활성화하는 방법을 알아보세요. |
+| [변환된 요소 래스터화](./rasterize-transformed-elements/) | Aspose.Words for .NET을 사용하여 Word 문서를 PCL 형식으로 변환할 때 변환된 요소를 래스터화하는 방법을 알아보세요. 단계별 가이드가 포함되어 있습니다. |

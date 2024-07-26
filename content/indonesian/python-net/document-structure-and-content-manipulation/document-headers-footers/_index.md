@@ -10,7 +10,7 @@ url: /id/python-net/document-structure-and-content-manipulation/document-headers
 Header dan footer di dokumen Word memainkan peran penting dalam memberikan konteks, pencitraan merek, dan informasi tambahan pada konten Anda. Memanipulasi elemen-elemen ini menggunakan Aspose.Words for Python API dapat meningkatkan tampilan dan fungsionalitas dokumen Anda secara signifikan. Dalam panduan langkah demi langkah ini, kita akan mempelajari cara bekerja dengan header dan footer menggunakan Aspose.Words untuk Python.
 
 
-## Memulai dengan Aspose.Words untuk Python
+## Memulai Aspose.Words untuk Python
 
 Sebelum mendalami manipulasi header dan footer, Anda perlu menyiapkan Aspose.Words untuk Python. Ikuti langkah ini:
 

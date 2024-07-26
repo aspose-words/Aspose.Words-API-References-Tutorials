@@ -41,7 +41,7 @@ Lassen Sie uns den Vorgang nun in leicht verständliche Schritte unterteilen. Am
 
 ### Fügen Sie Aspose.Words zu Ihrem Projekt hinzu
 
- Stellen Sie sicher, dass Sie einen Verweis auf Aspose.Words hinzufügen. Wenn Sie es noch nicht heruntergeladen haben, laden Sie es herunter von[Hier](https://releases.aspose.com/words/net/). Sie können es mit dem NuGet-Paket-Manager zu Ihrem Projekt hinzufügen.
+ Stellen Sie sicher, dass Sie einen Verweis auf Aspose.Words hinzufügen. Wenn Sie es noch nicht heruntergeladen haben, holen Sie es sich hier[Hier](https://releases.aspose.com/words/net/). Sie können es mit dem NuGet-Paket-Manager zu Ihrem Projekt hinzufügen.
 
 ## Schritt 2: Dokument und DocumentBuilder initialisieren
 

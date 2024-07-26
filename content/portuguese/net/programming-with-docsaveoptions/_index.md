@@ -18,4 +18,4 @@ Seguindo estes tutoriais, você aprenderá as melhores práticas para salvar seu
 | --- | --- |
 | [Criptografar documento com senha](./encrypt-document-with-password/) | Aprenda como criptografar um documento com uma senha usando Aspose.Words for .NET neste guia passo a passo detalhado. Proteja suas informações confidenciais sem esforço. |
 | [Não compacte metarquivos pequenos](./do-not-compress-small-metafiles/) | Aprenda como usar o Aspose.Words for .NET para garantir que pequenos metarquivos em documentos do Word não sejam compactados, preservando sua qualidade e integridade. Guia passo a passo incluído. |
-| [Não salve o marcador da imagem](./do-not-save-picture-bullet/) | Saiba como lidar com marcadores de imagens no Aspose.Words for .NET com nosso guia passo a passo. Simplifique o gerenciamento de documentos e crie documentos profissionais do Word sem esforço. |
+| [Não salve o marcador da imagem](./do-not-save-picture-bullet/) | Aprenda como lidar com marcadores de imagens no Aspose.Words for .NET com nosso guia passo a passo. Simplifique o gerenciamento de documentos e crie documentos profissionais do Word sem esforço. |

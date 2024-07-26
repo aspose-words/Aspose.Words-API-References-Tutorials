@@ -42,7 +42,7 @@ textBox. Next = null;
 
 ## Bước 5: Phá vỡ liên kết dẫn đến TextBox
 
- Trong một số trường hợp, chúng ta cần ngắt liên kết dẫn đến hình dạng TextBox. Chúng ta có thể đạt được điều này bằng cách gọi`BreakForwardLink()` phương pháp trên`Previous` biểu mẫu sẽ phá vỡ liên kết đến TextBox. Đây là một ví dụ về cách phá vỡ một liên kết như vậy:
+ Trong một số trường hợp, chúng ta cần ngắt liên kết dẫn đến hình dạng TextBox. Chúng ta có thể đạt được điều này bằng cách gọi`BreakForwardLink()` phương pháp trên`Previous` biểu mẫu sẽ phá vỡ liên kết tới TextBox. Đây là một ví dụ về cách phá vỡ một liên kết như vậy:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
@@ -85,7 +85,7 @@ Xin chúc mừng! Bây giờ bạn đã học cách ngắt các liên kết chuy
 
 #### Hỏi: Làm cách nào để ngắt liên kết dẫn đến TextBox?
 
- Trả lời: Trong một số trường hợp, bạn cần ngắt liên kết dẫn đến TextBox. Bạn có thể đạt được điều này bằng cách gọi`BreakForwardLink()` phương pháp trên`Previous` biểu mẫu sẽ phá vỡ liên kết đến TextBox.
+ Trả lời: Trong một số trường hợp, bạn cần ngắt liên kết dẫn đến TextBox. Bạn có thể đạt được điều này bằng cách gọi`BreakForwardLink()` phương pháp trên`Previous` biểu mẫu sẽ phá vỡ liên kết tới TextBox.
 
 #### Câu hỏi: Chúng tôi có thể ngắt liên kết chuyển hướng trên các phần tử không phải là TextBox không?
 

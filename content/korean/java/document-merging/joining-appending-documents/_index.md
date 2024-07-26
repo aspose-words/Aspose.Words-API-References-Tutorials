@@ -21,7 +21,7 @@ Aspose.Words for Java는 DOC, DOCX, RTF 등을 포함한 다양한 문서 형식
 
 ## 1단계: Java 프로젝트 설정
 
-시작하려면 선호하는 IDE(통합 개발 환경)에서 새 Java 프로젝트를 생성하세요. 프로젝트 종속성에 Aspose.Words 라이브러리를 포함해야 합니다.
+시작하려면 선호하는 IDE(통합 개발 환경)에서 새 Java 프로젝트를 생성하세요. 프로젝트의 종속성에 Aspose.Words 라이브러리를 포함해야 합니다.
 
 ## 2단계: Aspose.Words 초기화
 

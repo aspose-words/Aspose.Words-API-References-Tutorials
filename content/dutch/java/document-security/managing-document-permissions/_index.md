@@ -102,4 +102,4 @@ Het beheren van documentmachtigingen is van cruciaal belang voor het behoud van 
 
 Nu u een goed begrip heeft van het beheren van documentrechten met Aspose.Words voor Java, is het tijd om deze kennis in de praktijk te brengen. Verbeter uw documentbeheerprocessen en beveilig uw gegevens met gemak.
 
-Houd er rekening mee dat documentbeveiliging een continu proces is, dus blijf waakzaam en maak gebruik van de krachtige functies van Aspose.Words voor Java om uw waardevolle documenten te beschermen.
+Vergeet niet dat documentbeveiliging een continu proces is, dus blijf waakzaam en maak gebruik van de krachtige functies van Aspose.Words voor Java om uw waardevolle documenten te beschermen.
