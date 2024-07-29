@@ -16,12 +16,12 @@ By using Aspose.Words for .NET and following these tutorials, you will be able t
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Add Group Shape](./add-group-shape/) | Learn how to add a group shape with multiple shapes to a Word document using Aspose.Words for .NET. |
-| [Insert Shape](./insert-shape/) | Learn how to insert shapes into a Word document using Aspose.Words for .NET. |
-| [Aspect Ratio Locked](./aspect-ratio-locked/) | Learn how to lock or unlock the aspect ratio of a shape in a Word document using Aspose.Words for .NET. |
-| [Layout In Cell](./layout-in-cell/) | Learn how to layout a shape within a table cell in a Word document using Aspose.Words for .NET. |
-| [Add Corners Snipped](./add-corners-snipped/) | Learn how to add a shape with corners snipped to a Word document using Aspose.Words for .NET. |
-| [Get Actual Shape Bounds Points](./get-actual-shape-bounds-points/) | Learn how to retrieve the actual bounds of a shape in points (measurement unit) in a Word document using Aspose.Words for .NET. |
-| [Vertical Anchor](./vertical-anchor/) | Learn how to position a shape vertically within a document using the vertical anchor feature in Aspose.Words for .NET.|
-| [Detect Smart Art Shape](./detect-smart-art-shape/) | Learn how to detect Smart Art shapes in a Word document using Aspose.Words for .NET, identifying graphical representations. |
-| [Update Smart Art Drawing](./update-smart-art-drawing/) | Learn how to update the Smart Art drawing in a Word document using Aspose.Words for .NET. |
+| [Add Group Shape](./add-group-shape/) | Learn how to add group shapes to Word documents using Aspose.Words for .NET with this comprehensive, step-by-step tutorial. |
+| [Insert Shape](./insert-shape/) | Learn how to insert and manipulate shapes in Word documents using Aspose.Words for .NET with our step-by-step guide. |
+| [Aspect Ratio Locked](./aspect-ratio-locked/) | Learn how to lock the aspect ratio of shapes in Word documents using Aspose.Words for .NET. Follow this step-by-step guide to keep your images and shapes proportionate. |
+| [Layout In Cell](./layout-in-cell/) | Learn how to set the layout in cell using Aspose.Words for .NET with this comprehensive, guide. Perfect for developers looking to customize Word documents. |
+| [Add Corners Snipped](./add-corners-snipped/) | Learn how to add a corners snipped shape to your Word documents using Aspose.Words for .NET. This step-by-step guide ensures you can enhance your documents easily. |
+| [Get Actual Shape Bounds Points](./get-actual-shape-bounds-points/) | Discover how to get the actual shape bounds points in Word documents using Aspose.Words for .NET. Learn precise shape manipulation with this detailed guide. |
+| [Vertical Anchor](./vertical-anchor/) | Learn how to set vertical anchor positions for textboxes in Word documents using Aspose.Words for .NET. Easy step-by-step guide included.|
+| [Detect Smart Art Shape](./detect-smart-art-shape/) | Learn how to detect SmartArt shapes in Word documents using Aspose.Words for .NET with this comprehensive, guide. Perfect for automating your document workflow. |
+| [Update Smart Art Drawing](./update-smart-art-drawing/) | Learn how to update Smart Art drawings in Word documents using Aspose.Words for .NET with this step-by-step guide. Ensure your visuals are always accurate. |
