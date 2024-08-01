@@ -2,42 +2,79 @@
 title: Formatted Table
 linktitle: Formatted Table
 second_title: Aspose.Words Document Processing API
-description: Learn how to create a formatted table in a Word document with Aspose.Words for .NET.
+description: Learn how to create and format tables in Word documents using Aspose.Words for .NET with this detailed step-by-step guide.
 type: docs
 weight: 10
 url: /net/programming-with-tables/formatted-table/
 ---
+## Introduction
 
-In this tutorial, we will learn how to create a formatted table in a Word document using Aspose.Words for .NET. We will follow a step by step guide to understand the code and implement this feature. At the end of this tutorial, you will be able to create tables with custom formatting in your Word documents programmatically.
+Creating and formatting tables in Word documents programmatically can seem like a daunting task, but with Aspose.Words for .NET, it becomes straightforward and manageable. In this tutorial, we'll walk you through how to create a formatted table in a Word document using Aspose.Words for .NET. We’ll cover everything from setting up your environment to saving your document with a beautifully formatted table.
 
-## Step 1: Project Setup
-1. Launch Visual Studio and create a new C# project.
-2. Add a reference to the Aspose.Words for .NET library.
+## Prerequisites
 
-## Step 2: Creating the document and initializing the document generator
-To start building the formatted table, we need to create a new document and initialize the document generator. Follow these steps:
+Before diving into the code, let's make sure you have everything you need:
+
+1. Aspose.Words for .NET Library: Download it from [here](https://releases.aspose.com/words/net/).
+2. Development Environment: An IDE like Visual Studio.
+3. .NET Framework: Ensure you have .NET Framework installed on your machine.
+
+## Import Namespaces
+
+Before writing the actual code, you need to import the necessary namespaces:
 
 ```csharp
-// Path to your documents directory
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
 
-// Create the document and initialize the document generator
+## Step 1: Set Up Your Document Directory
+
+First, you need to define the path where your document will be saved.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+Replace `"YOUR DOCUMENT DIRECTORY"` with the actual path where you want to save the document.
+
+## Step 2: Initialize the Document and DocumentBuilder
+
+Now, initialize a new document and a DocumentBuilder object.
+
+```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Be sure to replace "YOUR DOCUMENTS DIRECTORY" with the actual path to your documents directory.
+The `DocumentBuilder` is a helper class that simplifies the process of building documents.
 
-## Step 3: Building the Formatted Table
-Next, we'll build the formatted table using the methods provided by the document builder. Use the following code:
+## Step 3: Start the Table
+
+Next, start creating the table using the `StartTable` method.
 
 ```csharp
-// Begin array construction
-Table table = builder. StartTable();
+Table table = builder.StartTable();
+builder.InsertCell();
+```
 
-// Construction of the table header row
-builder. InsertCell();
-table. LeftIndent = 20.0;
+Inserting a cell is necessary to begin the table.
+
+## Step 4: Apply Table-Wide Formatting
+
+You can apply formatting that affects the entire table. For example, setting the left indent:
+
+```csharp
+table.LeftIndent = 20.0;
+```
+
+## Step 5: Format the Header Row
+
+Set the height, alignment, and other properties for the header row.
+
+```csharp
 builder.RowFormat.Height = 40.0;
 builder.RowFormat.HeightRule = HeightRule.AtLeast;
 builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
@@ -47,126 +84,94 @@ builder.Font.Name = "Arial";
 builder.Font.Bold = true;
 builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
+```
 
-builder. InsertCell();
+In this step, we make the header row stand out by setting a background color, font size, and alignment.
+
+## Step 6: Insert Additional Header Cells
+
+Insert more cells for the header row:
+
+```csharp
+builder.InsertCell();
 builder.Write("Header Row,\n Cell 2");
-
-builder. InsertCell();
+builder.InsertCell();
 builder.CellFormat.Width = 200.0;
 builder.Write("Header Row,\n Cell 3");
+builder.EndRow();
+```
 
-builder. EndRow();
+## Step 7: Format the Body Rows
 
-// Construction of the array body
+After setting up the header, format the body of the table:
+
+```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
 builder.CellFormat.Width = 100.0;
 builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
 builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
-
-builder. InsertCell();
-builder.Font.Size = 12;
-builder.Font.Bold = false;
-builder.Write("Content Line 1, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 1, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 1, Cell
-
-3");
-
-builder. EndRow();
-
-builder. InsertCell();
-builder.CellFormat.Width = 100.0;
-builder.Write("Content Line 2, Cell 1");
-
-builder. InsertCell();
-builder.Write("Content Line 2, Cell 2");
-
-builder. InsertCell();
-builder.CellFormat.Width = 200.0;
-builder.Write("Content Line 2, Cell 3");
-
-builder. EndRow();
-
-// End of array construction
-builder. EndTable();
 ```
 
-Here we use the document builder to build the table step by step. We start by calling `StartTable()` to initialize the table. Then we use `InsertCell()` to insert cells and `Write()` to add content to each cell. We also use different formatting properties to define the formatting of table rows, cells, and text.
+## Step 8: Insert Body Rows
 
-## Step 4: Save the document
-Finally, we need to save the document containing the formatted table. Use the following code:
+Insert the body rows with content:
 
 ```csharp
-// Save the document
+builder.InsertCell();
+builder.Font.Size = 12;
+builder.Font.Bold = false;
+builder.Write("Row 1, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 1, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 1, Cell 3 Content");
+builder.EndRow();
+```
+
+Repeat for additional rows:
+
+```csharp
+builder.InsertCell();
+builder.CellFormat.Width = 100.0;
+builder.Write("Row 2, Cell 1 Content");
+builder.InsertCell();
+builder.Write("Row 2, Cell 2 Content");
+builder.InsertCell();
+builder.CellFormat.Width = 200.0;
+builder.Write("Row 2, Cell 3 Content.");
+builder.EndRow();
+builder.EndTable();
+```
+
+## Step 9: Save the Document
+
+Finally, save the document to the specified directory:
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
 ```
 
-Be sure to specify the correct path and filename for the output document.
-
-### Sample source code for Formatted Table using Aspose.Words for .NET 
-
-```csharp
-	// Path to your document directory 
-	string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-	Document doc = new Document();
-	DocumentBuilder builder = new DocumentBuilder(doc);
-	Table table = builder.StartTable();
-	builder.InsertCell();
-	// Table wide formatting must be applied after at least one row is present in the table.
-	table.LeftIndent = 20.0;
-	// Set height and define the height rule for the header row.
-	builder.RowFormat.Height = 40.0;
-	builder.RowFormat.HeightRule = HeightRule.AtLeast;
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.FromArgb(198, 217, 241);
-	builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-	builder.Font.Size = 16;
-	builder.Font.Name = "Arial";
-	builder.Font.Bold = true;
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Header Row,\n Cell 1");
-	// We don't need to specify this cell's width because it's inherited from the previous cell.
-	builder.InsertCell();
-	builder.Write("Header Row,\n Cell 2");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Header Row,\n Cell 3");
-	builder.EndRow();
-	builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
-	builder.CellFormat.Width = 100.0;
-	builder.CellFormat.VerticalAlignment = CellVerticalAlignment.Center;
-	// Reset height and define a different height rule for table body.
-	builder.RowFormat.Height = 30.0;
-	builder.RowFormat.HeightRule = HeightRule.Auto;
-	builder.InsertCell();
-	// Reset font formatting.
-	builder.Font.Size = 12;
-	builder.Font.Bold = false;
-	builder.Write("Row 1, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 1, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 1, Cell 3 Content");
-	builder.EndRow();
-	builder.InsertCell();
-	builder.CellFormat.Width = 100.0;
-	builder.Write("Row 2, Cell 1 Content");
-	builder.InsertCell();
-	builder.Write("Row 2, Cell 2 Content");
-	builder.InsertCell();
-	builder.CellFormat.Width = 200.0;
-	builder.Write("Row 2, Cell 3 Content.");
-	builder.EndRow();
-	builder.EndTable();
-	doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
-```
+This will create and save a Word document with the formatted table.
 
 ## Conclusion
-In this tutorial, we learned how to create a formatted table in a Word document using Aspose.Words for .NET. By following this step-by-step guide and implementing the provided C# code, you can create custom tables with specific formatting in your Word documents programmatically. This feature allows you to present and structure your data in a visually appealing and organized way.
+
+And there you have it! By following these steps, you can create a well-formatted table in a Word document using Aspose.Words for .NET. This powerful library makes it easy to programmatically manipulate Word documents, saving you time and effort.
+
+## FAQ's
+
+### What is Aspose.Words for .NET?
+Aspose.Words for .NET is a powerful library for creating, editing, and converting Word documents programmatically.
+
+### Can I use different colors for different rows?
+Yes, you can apply different formatting, including colors, to different rows or cells.
+
+### Is Aspose.Words for .NET free?
+Aspose.Words for .NET is a paid library, but you can get a [free trial](https://releases.aspose.com/).
+
+### How do I get support for Aspose.Words for .NET?
+You can get support from the [Aspose community forums](https://forum.aspose.com/c/words/8).
+
+### Can I create other types of documents with Aspose.Words for .NET?
+Yes, Aspose.Words for .NET supports various document formats, including PDF, HTML, and TXT.

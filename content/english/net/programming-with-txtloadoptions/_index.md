@@ -16,6 +16,6 @@ By using Aspose.Words, you can effectively automate Word document processing tas
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Detect Numbering With Whitespaces](./detect-numbering-with-whitespaces/) | Learn how to detect list numbers with white spaces in Aspose.Words for .NET. Improve the structure of your documents with ease. |
-| [Handle Spaces Options](./handle-spaces-options/) | Learn how to manage spaces in your TXT documents with Aspose.Words for .NET. Remove unnecessary spaces and improve readability. |
-| [Document Text Direction](./document-text-direction/) | Learn how to specify text direction in your documents with Aspose.Words for .NET. Improve display for right-to-left languages. Access the full tutorial now. |
+| [Detect Numbering With Whitespaces](./detect-numbering-with-whitespaces/) | Discover how to use Aspose.Words for .NET to detect numbering with whitespaces in plaintext documents and ensure your lists are correctly recognized. |
+| [Handle Spaces Options](./handle-spaces-options/) | Learn how to handle leading and trailing spaces in text documents with Aspose.Words for .NET. This tutorial provides a guide to clean up text formatting. |
+| [Document Text Direction](./document-text-direction/) | Learn how to set document text direction in Word using Aspose.Words for .NET with this step-by-step guide. Perfect for handling right-to-left languages. |

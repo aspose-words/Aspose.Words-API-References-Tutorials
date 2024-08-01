@@ -2,67 +2,86 @@
 title: Row Format Disable Break Across Pages
 linktitle: Row Format Disable Break Across Pages
 second_title: Aspose.Words Document Processing API
-description: Learn how to disable line break for a table across multiple pages in a Word document with Aspose.Words for .NET.
+description: Learn how to disable row breaks across pages in Word documents using Aspose.Words for .NET to maintain table readability and formatting.
 type: docs
 weight: 10
 url: /net/programming-with-tables/row-format-disable-break-across-pages/
 ---
+## Introduction
 
-In this tutorial, we are going to learn how to disable line break of a multi-page table in a Word document using Aspose.Words for .NET. We will follow a step by step guide to understand the code and implement this feature. By the end of this tutorial, you will be able to disable line breaking for all rows in your table in your Word documents.
+When working with tables in Word documents, you might want to ensure that rows do not break across pages, which can be essential for maintaining the readability and formatting of your documents. Aspose.Words for .NET provides an easy way to disable row breaks across pages.
 
-## Step 1: Project Setup
-1. Launch Visual Studio and create a new C# project.
-2. Add a reference to the Aspose.Words for .NET library.
+In this tutorial, we will walk you through the process of disabling row breaks across pages in a Word document using Aspose.Words for .NET.
 
-## Step 2: Loading the document
-To start Words Processing with the document, follow these steps:
+## Prerequisites
 
-```csharp
-// Path to your documents directory
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+Before we begin, ensure you have the following prerequisites:
+- Aspose.Words for .NET library installed.
+- A Word document with a table that spans multiple pages.
 
-// Load the document
-Document doc = new Document(dataDir + "Table spanning two pages.docx");
-```
+## Import Namespaces
 
-Be sure to replace "YOUR DOCUMENTS DIRECTORY" with the actual path to your documents directory and provide the correct file name.
-
-## Step 3: Disable table row break
-Next, we will disable row breaking for all rows in the table. Use the following code:
+First, import the necessary namespaces in your project:
 
 ```csharp
-// Retrieve the table
-Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
-
-// Disable row break for all rows in the table
-foreach(Row row in table.Rows)
-row.RowFormat.AllowBreakAcrossPages = false;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-Here we use the document to fetch the first table and then iterate through all the rows in the table using a foreach loop. Inside the loop, we disable row breaking for each row by setting the `RowFormat.AllowBreakAcrossPages` property to `false`.
+## Step 1: Load the Document
 
-## Step 4: Saving the modified document
-Finally, we need to save the modified document with the table line break disabled. Use the following code:
-
-```csharp
-doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
-```
-
-Be sure to specify the correct path and filename for the output document.
-
-### Sample source code for Row Format Disable Break Across Pages using Aspose.Words for .NET 
+Load the document containing the table that spans multiple pages.
 
 ```csharp
 // Path to your document directory 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table spanning two pages.docx");
+```
+
+## Step 2: Access the Table
+
+Access the first table in the document. This assumes that the table you want to modify is the first table in the document.
+
+```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
+```
+
+## Step 3: Disable Breaking Across Pages for All Rows
+
+Loop through each row in the table and set the `AllowBreakAcrossPages` property to `false`. This ensures that rows will not break across pages.
+
+```csharp
 // Disable breaking across pages for all rows in the table.
 foreach (Row row in table.Rows)
-	row.RowFormat.AllowBreakAcrossPages = false;
+    row.RowFormat.AllowBreakAcrossPages = false;
+```
+
+## Step 4: Save the Document
+
+Save the modified document to your specified directory.
+
+```csharp
 doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ```
 
 ## Conclusion
-In this tutorial, we learned how to disable line break of a multi-page table in a Word document using Aspose.Words for .NET. By following this step-by-step guide and implementing the provided C# code, you can apply this disablement to your tables in your Word documents.
+
+In this tutorial, we demonstrated how to disable row breaks across pages in a Word document using Aspose.Words for .NET. By following the steps outlined above, you can ensure that your table rows remain intact and do not split across pages, maintaining the document's readability and formatting.
+
+## FAQ's
+
+### Can I disable row breaks across pages for a specific row instead of all rows?  
+Yes, you can disable row breaks for specific rows by accessing the desired row and setting its `AllowBreakAcrossPages` property to `false`.
+
+### Does this method work for tables with merged cells?  
+Yes, this method works for tables with merged cells. The property `AllowBreakAcrossPages` applies to the entire row, regardless of cell merging.
+
+### Will this method work if the table is nested inside another table?  
+Yes, you can access and modify nested tables in the same way. Ensure you correctly reference the nested table by its index or other properties.
+
+### How can I check if a row allows breaking across pages?  
+You can check if a row allows breaking across pages by accessing the `AllowBreakAcrossPages` property of the `RowFormat` and checking its value.
+
+### Is there a way to apply this setting to all tables in a document?  
+Yes, you can loop through all tables in the document and apply this setting to each one.

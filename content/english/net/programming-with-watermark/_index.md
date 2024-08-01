@@ -12,4 +12,4 @@ Words Processing with Watermark is a comprehensive resource that walks you throu
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Add Text Watermark With Specific Options](./add-text-watermark-with-specific-options/) | Learn how to add a text watermark with specific options using Aspose.Words for .NET. Step-by-step guide. |
+| [Add Text Watermark With Specific Options](./add-text-watermark-with-specific-options/) | Learn how to add a text watermark with specific options to your Word documents using Aspose.Words for .NET. Customize font, size, color, and layout easily. |
