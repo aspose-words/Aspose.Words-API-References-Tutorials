@@ -12,6 +12,6 @@ Words Processing with Textboxes is a comprehensive resource that takes you step-
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [Create Link In Word](./create-a-link/) | Learn how to create link in word between TextBoxes in a Word document with Aspose.Words for .NET. |
-| [Check Sequence](./check-sequence/) | Learn how to check the sequence of TextBoxes in a Word document with Aspose.Words for .NET. |
-| [Break Forward Link In Word Document](./break-a-link/) | Learn how to break forward links in a Word document with Aspose.Words for .NET. |
+| [Linking Text Boxes in Word](./create-a-link/) | Learn how to create and link text boxes in Word documents using Aspose.Words for .NET. Follow our comprehensive guide for seamless document customization! |
+| [TextBox Sequence Check in Word](./check-sequence/) | Discover how to check the sequence of text boxes in Word documents using Aspose.Words for .NET. Follow our detailed guide to master document flow! |
+| [Break Forward Link In Word Document](./break-a-link/) | Learn how to break forward links in Word document text boxes using Aspose.Words for .NET. Follow our guide for a smoother document management experience. |
