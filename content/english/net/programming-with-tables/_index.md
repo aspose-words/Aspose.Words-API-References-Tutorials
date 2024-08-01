@@ -20,22 +20,22 @@ By following these tutorials, you will be able to fully exploit the table manipu
 | [Clone Complete Table](./clone-complete-table/) | Learn how to clone complete tables in Word documents using Aspose.Words for .NET with this detailed, step-by-step tutorial. |
 | [Finding Index](./finding-index/) | Learn how to find the index of tables, rows, and cells in Word documents using Aspose.Words for .NET with this comprehensive, step-by-step guide. |
 | [Insert Table Directly](./insert-table-directly/) | Learn how to insert tables directly into Word documents using Aspose.Words for .NET. Follow our detailed, step-by-step guide to streamline your document creation. |
-| [Insert Table From Html](./insert-table-from-html/) | Learn how to insert a table from HTML into a Word document with Aspose.Words for .NET. |
+| [Insert Table From Html](./insert-table-from-html/) | Learn how to insert a table from HTML into a Word document using Aspose.Words for .NET. Follow our detailed, guide for seamless document integration. |
 | [Create Simple Table](./create-simple-table/) | Learn how to create a simple table in a Word document using Aspose.Words for .NET with our comprehensive step-by-step guide. |
 | [Formatted Table](./formatted-table/) | Learn how to create and format tables in Word documents using Aspose.Words for .NET with this detailed step-by-step guide. |
-| [Nested Table](./nested-table/) | Learn how to create a nested table in a Word document with Aspose.Words for .NET. |
+| [Nested Table](./nested-table/) | Learn how to create nested tables in Word documents using Aspose.Words for .NET with our guide. Perfect for generating complex document layouts programmatically. |
 | [Combine Rows](./combine-rows/) | Learn how to combine rows from multiple tables into one using Aspose.Words for .NET with our step-by-step guide. |
-| [Split Table](./split-table/) | Learn how to split a table in a Word document using Aspose.Words for .NET. |
-| [Row Format Disable Break Across Pages](./row-format-disable-break-across-pages/) | Learn how to disable line break for a table across multiple pages in a Word document with Aspose.Words for .NET. |
-| [Keep Table Together](./keep-table-together/) | Learn how to hold a table together in a Word document with Aspose.Words for .NET. |
-| [Vertical Merge](./vertical-merge/) | Learn how to vertical merge cells in a table in a Word document using Aspose.Words for .NET. |
+| [Split Table](./split-table/) | Learn how to split tables in Word documents using Aspose.Words for .NET. Our step-by-step guide makes table management easy and efficient. |
+| [Row Format Disable Break Across Pages](./row-format-disable-break-across-pages/) | Learn how to disable row breaks across pages in Word documents using Aspose.Words for .NET to maintain table readability and formatting. |
+| [Keep Table Together](./keep-table-together/) | Learn how to keep tables from breaking across pages in Word documents using Aspose.Words for .NET. Follow our guide to maintain professional, readable documents. |
+| [Vertical Merge](./vertical-merge/) | Master vertical merging in Word tables using Aspose.Words for .NET with this detailed guide. Learn step-by-step instructions for professional document formatting. |
 | [Horizontal Merge](./horizontal-merge/) | Learn how to horizontally merge cells in a Word document using Aspose.Words for .NET with this detailed, step-by-step tutorial. |
 | [Convert To Horizontally Merged Cells](./convert-to-horizontally-merged-cells/) | Convert vertically merged cells to horizontally merged cells in Word documents using Aspose.Words for .NET. Step-by-step guide for a seamless table layout. |
-| [Repeat Rows On Subsequent Pages](./repeat-rows-on-subsequent-pages/) | Learn how to repeat table rows on subsequent pages in a Word document with Aspose.Words for .NET. |
+| [Repeat Rows On Subsequent Pages](./repeat-rows-on-subsequent-pages/) | Learn how to create Word documents with repeating table header rows using Aspose.Words for .NET. Follow this guide to ensure professional and polished documents. |
 | [Auto Fit To Window](./auto-fit-to-page-width/) | Easily auto-fit tables to the window in Word documents using Aspose.Words for .NET with this step-by-step guide. Perfect for cleaner, professional documents. |
 | [Preferred Width Settings](./preferred-width-settings/) | Learn how to create tables with absolute, relative, and automatic width settings in Aspose.Words for .NET with this step-by-step guide. |
-| [Retrieve Preferred Width Type](./retrieve-preferred-width-type/) | Learn how to retrieve the type and preferred width value of a cell in a Word table with Aspose.Words for .NET. |
+| [Retrieve Preferred Width Type](./retrieve-preferred-width-type/) | Learn how to retrieve the preferred width type of table cells in Word documents using Aspose.Words for .NET with our step-by-step guide. |
 | [Get Table Position](./get-table-position/) | Discover how to determine the position of a table in Word documents using Aspose.Words for .NET with our step-by-step guide. |
 | [Get Floating Table Position](./get-floating-table-position/) | Learn how to get floating table positions in Word documents using Aspose.Words for .NET. This detailed, step-by-step guide will walk you through everything you need to know. |
 | [Floating Table Position](./floating-table-position/) | Learn how to control the floating position of tables in Word documents using Aspose.Words for .NET with our detailed, step-by-step guide. |
-| [Set Relative Horizontal Or Vertical Position](./set-relative-horizontal-or-vertical-position/) | Learn how to set the relative horizontal or vertical position of a table in a Word document with Aspose.Words for .NET. |
+| [Set Relative Horizontal Or Vertical Position](./set-relative-horizontal-or-vertical-position/) | Learn how to set relative horizontal and vertical positions for tables in Word documents using Aspose.Words for .NET with this step-by-step guide. |
