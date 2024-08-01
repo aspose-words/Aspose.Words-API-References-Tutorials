@@ -12,9 +12,9 @@ Split Document is a comprehensive resource that explains how to split a document
  ## Tutorials
 | Title | Description |
 | --- | --- |
-| [By Headings Html](./by-headings-html/) | Step-by-step guide to explain the C# source code of the By Heading HTML feature of Aspose.Words for .NET |
-| [By Sections Html](./by-sections-html/) | Learn how to split a Word document into by sections Html using Aspose.Words for .NET with complete code example. |
-| [By Sections](./by-sections/) | Learn how to split a Word document into separate sections using Aspose.Words for .NET with complete code example. |
-| [Page By Page](./page-by-page/) | Step-by-step guide to explain the C# source code of Aspose.Words Page by Page feature for .NET |
+| [Split Word Document By Headings Html](./by-headings-html/) | Learn how to split a Word document by headings into HTML using Aspose.Words for .NET. Follow our detailed, step-by-step guide. |
+| [Split Word Document By Sections HTML](./by-sections-html/) | Learn how to split a Word document by sections into HTML using Aspose.Words for .NET with this detailed, step-by-step guide. |
+| [Split Word Document By Sections](./by-sections/) | Learn how to split a Word document by sections using Aspose.Words for .NET. Follow this detailed, step-by-step guide for efficient document management. |
+| [Split Word Document By Page](./page-by-page/) | Learn how to split a Word document by page using Aspose.Words for .NET with this detailed, step-by-step guide. Perfect for managing large documents efficiently. |
 | [Merge Documents](./merge-documents/) | Step by step guide to explain C# source code of Merge Documents feature of Aspose.Words for .NET |
-| [By Page Range](./by-page-range/) | Easily extract by page range from a Word document using Aspose.Words for .NET Step-by-step guide. |
+| [Split Word Document By Page Range](./by-page-range/) | Learn how to split a Word document by page range using Aspose.Words for .NET with our detailed step-by-step guide. Perfect for developers. |
