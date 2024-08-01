@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /net/remove-content/remove-table-of-contents/
 ---
-## Remove Table of Contents in Word Document Using Aspose.Words for .NET
+## Introduction
 
 Are you tired of dealing with an unwanted Table of Contents (TOC) in your Word documents? We've all been there—sometimes the TOC just isn't necessary. Lucky for you, Aspose.Words for .NET makes it easy to remove a TOC programmatically. In this tutorial, I'll guide you through the process step-by-step, so you can master it in no time. Let’s dive right in!
 
@@ -81,24 +81,24 @@ This line saves your document with the changes made. Replace `"modified-document
 
 And there you have it! Removing a TOC from a Word document using Aspose.Words for .NET is straightforward once you break it down into these simple steps. This powerful library not only helps with removing TOCs but can also handle a myriad of other document manipulations. So, go ahead and give it a try!
 
-## FAQs
+## FAQ's
 
-### 1. What is Aspose.Words for .NET?
+### What is Aspose.Words for .NET?
 
 Aspose.Words for .NET is a robust .NET library for document manipulation, allowing developers to create, modify, and convert Word documents programmatically.
 
-### 2. Can I use Aspose.Words for free?
+### Can I use Aspose.Words for free?
 
 Yes, you can use Aspose.Words with a [free trial](https://releases.aspose.com/) or get a [temporary license](https://purchase.aspose.com/temporary-license/).
 
-### 3. Is it possible to remove other fields using Aspose.Words?
+### Is it possible to remove other fields using Aspose.Words?
 
 Absolutely! You can remove any field by specifying its type in the filter condition.
 
-### 4. Do I need Visual Studio to use Aspose.Words?
+### Do I need Visual Studio to use Aspose.Words?
 
 While Visual Studio is highly recommended for ease of development, you can use any IDE that supports .NET.
 
-### 5. Where can I find more information on Aspose.Words?
+### Where can I find more information on Aspose.Words?
 
 For more detailed documentation, visit the [Aspose.Words for .NET API documentation](https://reference.aspose.com/words/net/).
